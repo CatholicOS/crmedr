@@ -143,13 +143,17 @@ def main():
     for e in reg['entries']:
         if e.get('deprecated') and e.get('subject_la'):
             out['la'][e['id']] = e['subject_la']
+    # Every locale file carries the same complete key set; untranslated
+    # subjects are empty strings awaiting completion.
+    all_ids = sorted(e['id'] for e in reg['entries'])
     i18n = repo_root / 'i18n'
     i18n.mkdir(exist_ok=True)
     for loc in ('la', 'it', 'en'):
+        full = {i: out[loc].get(i, '') for i in all_ids}
         with open(i18n / f'{loc}.json', 'w', encoding='utf-8') as f:
-            json.dump(dict(sorted(out[loc].items())), f, ensure_ascii=False, indent=1)
+            json.dump(full, f, ensure_ascii=False, indent=1)
             f.write('\n')
-        print(loc, len(out[loc]))
+        print(loc, 'keys:', len(full), 'filled:', sum(1 for v in full.values() if v))
 
 
 if __name__ == '__main__':
