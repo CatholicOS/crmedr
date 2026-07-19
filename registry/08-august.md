@@ -1,10 +1,10 @@
 # August
 
-462 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+462 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0801-alphonsus-maria-de-liguori` |  | IT |  |
+| 1 | (1) | `mr:0801-alphonsus-maria-de-liguori` |  | IT |  |
 | 1 | 2 | `mr:0801-septem-fratres-martyres-antiochiae` |  | TR |  |
 | 1 | 3 | `mr:0801-secundinus` |  | IT |  |
 | 1 | 4 | `mr:0801-felix` |  | ES |  |
@@ -23,8 +23,8 @@
 | 1 | 17 | `mr:0801-benvenutus-de-miguel-arahal` | * | ES |  |
 | 1 | 18 | `mr:0801-alexius-sobaszek` | * | DE |  |
 | 1 | 19 | `mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz` | * | PL |  |
-| 2 | 1 | `mr:0802-eusebius` |  | IT |  |
-| 2 | 2 | `mr:0802-petrus-iulianus-eymard` |  | FR |  |
+| 2 | (1) | `mr:0802-eusebius` |  | IT |  |
+| 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR |  |
 | 2 | 3 | `mr:0802-rutilius` |  | TN |  |
 | 2 | 4 | `mr:0802-stephanus-i` |  | IT |  |
 | 2 | 5 | `mr:0802-centolla` |  | ES |  |
@@ -45,7 +45,7 @@
 | 3 | 6 | `mr:0803-salvator-ferrandis-segui` | * | ES |  |
 | 3 | 7 | `mr:0803-alphonsus-lopez-lopez` | * | ES |  |
 | 3 | 8 | `mr:0803-franciscus-bandres-sanchez` | * | ES |  |
-| 4 | 1 | `mr:0804-ioannes-maria-vianney` |  | FR |  |
+| 4 | (1) | `mr:0804-ioannes-maria-vianney` |  | FR |  |
 | 4 | 2 | `mr:0804-aristarchus-thessalonicensis` |  | GR |  |
 | 4 | 3 | `mr:0804-iustinus-et-crescention` |  | IT |  |
 | 4 | 4 | `mr:0804-eleutherius` |  | TR |  |
@@ -59,7 +59,7 @@
 | 4 | 12 | `mr:0804-gundisalvus-gonzalo` | * | ES |  |
 | 4 | 13 | `mr:0804-iosephus-batalla-parramon` | * | ES |  |
 | 4 | 14 | `mr:0804-henricus-krzysztofik` | * | DE |  |
-| 5 | 1 | `mr:0805-dedicatio-basilicae-sanctae-mariae` |  | IT |  |
+| 5 | (1) | `mr:0805-dedicatio-basilicae-sanctae-mariae` |  | IT |  |
 | 5 | 2 | `mr:0805-memmius` |  | FR |  |
 | 5 | 3 | `mr:0805-paridis` |  | IT |  |
 | 5 | 4 | `mr:0805-cassianus` |  | FR |  |
@@ -71,7 +71,7 @@
 | 5 | 10 | `mr:0805-franciscus-zanfredini` | * | IT |  |
 | 5 | 11 | `mr:0805-margarita` |  | IT |  |
 | 5 | 12 | `mr:0805-petrus-michael-noel` | * | FR |  |
-| 6 | 1 | `mr:0806-transfiguratio-domini` |  | PS |  |
+| 6 | (1) | `mr:0806-transfiguratio-domini` |  | PS |  |
 | 6 | 2 | `mr:0806-xystus-ii` |  | IT |  |
 | 6 | 3 | `mr:0806-iustus-et-pastor` |  | ES |  |
 | 6 | 4 | `mr:0806-hormisda` |  | IT |  |
@@ -81,8 +81,8 @@
 | 6 | 8 | `mr:0806-maria-francisca-a-iesu-rubatto` | * | UY |  |
 | 6 | 9 | `mr:0806-carolus-lopez-vidal` | * | ES |  |
 | 6 | 10 | `mr:0806-thaddaeus-dulny` | * | DE |  |
-| 7 | 1 | `mr:0807-xystus-ii-et-socii` |  | IT |  |
-| 7 | 2 | `mr:0807-caietanus-thienaeus` |  | IT |  |
+| 7 | (1) | `mr:0807-xystus-ii-et-socii` |  | IT |  |
+| 7 | (2) | `mr:0807-caietanus-thienaeus` |  | IT |  |
 | 7 | 3 | `mr:0807-afra` |  | DE |  |
 | 7 | 4 | `mr:0807-donatus-aretii` |  | IT |  |
 | 7 | 5 | `mr:0807-donatianus` |  | FR |  |
@@ -97,7 +97,7 @@
 | 7 | 14 | `mr:0807-nicolaus-postgate` | * | GB |  |
 | 7 | 15 | `mr:0807-edmundus-bojanowski` | * | PL |  |
 | 7 | 16 | `mr:0807-michael-de-la-mora` |  | MX |  |
-| 8 | 1 | `mr:0808-dominicus` |  | ES |  |
+| 8 | (1) | `mr:0808-dominicus` |  | ES |  |
 | 8 | 2 | `mr:0808-secundus-et-socii` |  | IT |  |
 | 8 | 3 | `mr:0808-cyriacus-et-socii` |  | IT |  |
 | 8 | 4 | `mr:0808-marinus` |  | TR |  |
@@ -116,7 +116,7 @@
 | 8 | 17 | `mr:0808-antonius-silvestre-moya` | * | ES |  |
 | 8 | 18 | `mr:0808-maria-a-iesu-infante-baldillou-y-bullit-et-socii` | * | ES |  |
 | 8 | 19 | `mr:0808-vladimirus-laskowski` | * | DE |  |
-| 9 | 1 | `mr:0809-teresia-benedicta-a-cruce-stein` |  | PL |  |
+| 9 | (1) | `mr:0809-teresia-benedicta-a-cruce-stein` |  | PL |  |
 | 9 | 2 | `mr:0809-laurentius` |  | IT |  |
 | 9 | 3 | `mr:0809-nathaeus` | * | IE |  |
 | 9 | 4 | `mr:0809-fedliminus` | * | IE |  |
@@ -132,7 +132,7 @@
 | 9 | 14 | `mr:0809-faustinus-oteiza` | * | ES |  |
 | 9 | 15 | `mr:0809-gulielmus-plaza-hernandez` | * | ES |  |
 | 9 | 16 | `mr:0809-germanus-garrigues-hernandez` | * | ES |  |
-| 10 | 1 | `mr:0810-laurentius` |  | IT |  |
+| 10 | (1) | `mr:0810-laurentius` |  | IT |  |
 | 10 | 2 | `mr:0810-martyres-alexandriae` |  | EG |  |
 | 10 | 3 | `mr:0810-blanus` | * | GB |  |
 | 10 | 4 | `mr:0810-archangelus-de-calataphino-piacentini` | * | IT |  |
@@ -141,7 +141,7 @@
 | 10 | 7 | `mr:0810-iosephus-toledo-pellicer` | * | ES |  |
 | 10 | 8 | `mr:0810-ioannes-martorell-soria` | * | ES |  |
 | 10 | 9 | `mr:0810-franciscus-drzewiecki` | * | DE |  |
-| 11 | 1 | `mr:0811-clara` |  | IT |  |
+| 11 | (1) | `mr:0811-clara` |  | IT |  |
 | 11 | 2 | `mr:0811-alexander-carbonarius` |  | TR |  |
 | 11 | 3 | `mr:0811-tiburtius` |  | IT |  |
 | 11 | 4 | `mr:0811-susanna` |  | IT |  |
@@ -157,7 +157,7 @@
 | 11 | 14 | `mr:0811-raphael-alonso-gutierrez` | * | ES |  |
 | 11 | 15 | `mr:0811-michael-domingo-cendra` | * | ES |  |
 | 11 | 16 | `mr:0811-mauritius-tornay` | * | CN |  |
-| 12 | 1 | `mr:0812-ioanna-francisca-fremiot-de-chantal` |  | FR |  |
+| 12 | (1) | `mr:0812-ioanna-francisca-fremiot-de-chantal` |  | FR |  |
 | 12 | 2 | `mr:0812-euplus` |  | IT |  |
 | 12 | 3 | `mr:0812-anicetus-et-photius` |  | TR |  |
 | 12 | 4 | `mr:0812-muredachus` | * | IE |  |
@@ -174,7 +174,7 @@
 | 12 | 15 | `mr:0812-antonius-perulles-estivill` | * | ES |  |
 | 12 | 16 | `mr:0812-florianus-stepniak` | * | DE |  |
 | 12 | 17 | `mr:0812-carolus-leisner` | * | DE |  |
-| 13 | 1 | `mr:0813-pontianus-et-hippolytus` |  | IT |  |
+| 13 | (1) | `mr:0813-pontianus-et-hippolytus` |  | IT |  |
 | 13 | 2 | `mr:0813-cassianus` |  | IT |  |
 | 13 | 3 | `mr:0813-antiochus` |  | FR |  |
 | 13 | 4 | `mr:0813-radegundis` |  | FR |  |
@@ -192,7 +192,7 @@
 | 13 | 16 | `mr:0813-modestus-garcia-martus` | * | ES |  |
 | 13 | 17 | `mr:0813-iosephus-bonet-nadal` | * | ES |  |
 | 13 | 18 | `mr:0813-iacobus-gapp` | * | DE |  |
-| 14 | 1 | `mr:0814-maximilianus-maria-kolbe` |  | PL |  |
+| 14 | (1) | `mr:0814-maximilianus-maria-kolbe` |  | PL |  |
 | 14 | 2 | `mr:0814-ursicinus` |  | HR |  |
 | 14 | 3 | `mr:0814-marcellus` |  | SY |  |
 | 14 | 4 | `mr:0814-eusebius` |  | IT |  |
@@ -204,7 +204,7 @@
 | 14 | 10 | `mr:0814-elisabeth-renzi` | * | IT |  |
 | 14 | 11 | `mr:0814-vincentius-rubiols-castello` | * | ES |  |
 | 14 | 12 | `mr:0814-felix-yuste-cava` | * | ES |  |
-| 15 | 1 | `mr:0815-assumptio-beatae-mariae-virginis` |  |  |  |
+| 15 | (1) | `mr:0815-assumptio-beatae-mariae-virginis` |  |  |  |
 | 15 | 2 | `mr:0815-tarsicius` |  | IT |  |
 | 15 | 3 | `mr:0815-straton-et-socii` |  | TR |  |
 | 15 | 4 | `mr:0815-simplicianus` |  | IT |  |
@@ -225,7 +225,7 @@
 | 15 | 19 | `mr:0815-carmelus-sastre-sastre` | * | ES |  |
 | 15 | 20 | `mr:0815-iacobus-bonet-nadal` | * | ES |  |
 | 15 | 21 | `mr:0815-claudius-granzotto` | * | IT |  |
-| 16 | 1 | `mr:0816-stephanus` |  | HU |  |
+| 16 | (1) | `mr:0816-stephanus` |  | HU |  |
 | 16 | 2 | `mr:0816-arsacius` |  | TR |  |
 | 16 | 3 | `mr:0816-theodorus` |  | CH |  |
 | 16 | 4 | `mr:0816-armagilus` | * | FR |  |
@@ -271,7 +271,7 @@
 | 18 | 14 | `mr:0818-martinus-martinez-pascual` | * | ES |  |
 | 18 | 15 | `mr:0818-vincentius-maria-izquierdo-alcon` | * | ES |  |
 | 18 | 16 | `mr:0818-iacobus` | * | CL |  |
-| 19 | 1 | `mr:0819-ioannes-eudes` |  | FR |  |
+| 19 | (1) | `mr:0819-ioannes-eudes` |  | FR |  |
 | 19 | 2 | `mr:0819-magnus` |  | IT |  |
 | 19 | 3 | `mr:0819-maginus` |  | ES |  |
 | 19 | 4 | `mr:0819-timotheus` |  | PS |  |
@@ -292,7 +292,7 @@
 | 19 | 19 | `mr:0819-franciscus-ibanez-ibanez` | * | ES |  |
 | 19 | 20 | `mr:0819-thomas-sitjar-fortia` | * | ES |  |
 | 19 | 21 | `mr:0819-elvira-a-nativitate-dominae-nostrae-torrentalle-paraire-et-socii` | * | ES |  |
-| 20 | 1 | `mr:0820-bernardus` |  | FR |  |
+| 20 | (1) | `mr:0820-bernardus` |  | FR |  |
 | 20 | 2 | `mr:0820-samuel` |  | IL |  |
 | 20 | 3 | `mr:0820-maximus` |  | FR |  |
 | 20 | 4 | `mr:0820-philibertus` |  | FR |  |
@@ -304,7 +304,7 @@
 | 20 | 10 | `mr:0820-matthias-cardona` | * | ES |  |
 | 20 | 11 | `mr:0820-maria-climent-mateu` | * | ES |  |
 | 20 | 12 | `mr:0820-ladislaus-maczkowski` | * | DE |  |
-| 21 | 1 | `mr:0821-pius-x` |  | IT |  |
+| 21 | (1) | `mr:0821-pius-x` |  | IT |  |
 | 21 | 2 | `mr:0821-agathonicus-et-zoticus` |  | TR |  |
 | 21 | 3 | `mr:0821-cyriaca` |  | IT |  |
 | 21 | 4 | `mr:0821-quadratus` |  | TN |  |
@@ -319,7 +319,7 @@
 | 21 | 13 | `mr:0821-salvator-estrugo-solves` | * | ES |  |
 | 21 | 14 | `mr:0821-raymundus-peiro-victori` | * | ES |  |
 | 21 | 15 | `mr:0821-bruno-zembol` | * | DE |  |
-| 22 | 1 | `mr:0822-maria-regina` |  |  |  |
+| 22 | (1) | `mr:0822-maria-regina` |  |  |  |
 | 22 | 2 | `mr:0822-symphorianus` |  | FR |  |
 | 22 | 3 | `mr:0822-timotheus` |  | IT |  |
 | 22 | 4 | `mr:0822-philippus-benizi` |  | IT |  |
@@ -332,7 +332,7 @@
 | 22 | 11 | `mr:0822-bernardus-peroni` | * | IT |  |
 | 22 | 12 | `mr:0822-elias-leymarie-de-laroche` | * | FR |  |
 | 22 | 13 | `mr:0822-simeon-lukac` | * | UA |  |
-| 23 | 1 | `mr:0823-rosa` |  | PE |  |
+| 23 | (1) | `mr:0823-rosa` |  | PE |  |
 | 23 | 2 | `mr:0823-zachaeus` |  | IL |  |
 | 23 | 3 | `mr:0823-laurentius` |  | IT |  |
 | 23 | 4 | `mr:0823-cyriacus-et-archelaus` |  | IT |  |
@@ -347,7 +347,7 @@
 | 23 | 13 | `mr:0823-ioannes-maria-a-cruce-garcia-mendez` | * | ES |  |
 | 23 | 14 | `mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero` | * | ES |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE |  |
-| 24 | 1 | `mr:0824-bartholomaeus` |  | IL |  |
+| 24 | (1) | `mr:0824-bartholomaeus` |  | IL |  |
 | 24 | 2 | `mr:0824-tatio` |  | TR |  |
 | 24 | 3 | `mr:0824-audoenus` |  | FR |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR |  |
@@ -359,8 +359,8 @@
 | 24 | 10 | `mr:0824-maria-ab-incarnatione-rosal` | * | EC |  |
 | 24 | 11 | `mr:0824-maximianus-binkiewicz` | * | DE |  |
 | 24 | 12 | `mr:0824-ceslaus-jozwiak-et-socii` | * | DE |  |
-| 25 | 1 | `mr:0825-ludovicus-nonus` |  | FR |  |
-| 25 | 2 | `mr:0825-iosephus-de-calasanz` |  | IT |  |
+| 25 | (1) | `mr:0825-ludovicus-nonus` |  | FR |  |
+| 25 | (2) | `mr:0825-iosephus-de-calasanz` |  | IT |  |
 | 25 | 3 | `mr:0825-eusebius-et-socii` |  | IT | Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias. |
 | 25 | 4 | `mr:0825-genesius` |  | FR |  |
 | 25 | 5 | `mr:0825-geruntius` |  | ES |  |
@@ -388,7 +388,7 @@
 | 26 | 13 | `mr:0826-felix-vivet-trabal` | * | ES |  |
 | 26 | 14 | `mr:0826-laurentia-harasymiv` | * | RU |  |
 | 26 | 15 | `mr:0826-maria-beltrame-quattrocchus` | * | IT |  |
-| 27 | 1 | `mr:0827-monica` |  | IT |  |
+| 27 | (1) | `mr:0827-monica` |  | IT |  |
 | 27 | 2 | `mr:0827-rufus` |  | IT |  |
 | 27 | 3 | `mr:0827-marcellinus` |  | RO |  |
 | 27 | 4 | `mr:0827-narnus` |  | IT |  |
@@ -408,7 +408,7 @@
 | 27 | 18 | `mr:0827-ferdinandus-gonzalez-anon` | * | ES |  |
 | 27 | 19 | `mr:0827-raymundus-martus-soriano` | * | ES |  |
 | 27 | 20 | `mr:0827-maria-a-columna-izquierdo-albero` | * | ES |  |
-| 28 | 1 | `mr:0828-augustinus` |  | DZ |  |
+| 28 | (1) | `mr:0828-augustinus` |  | DZ |  |
 | 28 | 2 | `mr:0828-hermes` |  | IT |  |
 | 28 | 3 | `mr:0828-pelagius` |  | CH |  |
 | 28 | 4 | `mr:0828-iulianus` |  | FR |  |
@@ -426,7 +426,7 @@
 | 28 | 16 | `mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt` | * | ES |  |
 | 28 | 17 | `mr:0828-aurelius-ample-alcaide` | * | ES |  |
 | 28 | 18 | `mr:0828-alphonsus-maria-mazurek` | * | PL |  |
-| 29 | 1 | `mr:0829-ioannes-baptista` |  | JO |  |
+| 29 | (1) | `mr:0829-ioannes-baptista` |  | JO |  |
 | 29 | 2 | `mr:0829-basilla` |  | HR |  |
 | 29 | 3 | `mr:0829-sabina` |  | IT |  |
 | 29 | 4 | `mr:0829-adelphus` |  | FR |  |

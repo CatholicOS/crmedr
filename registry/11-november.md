@@ -1,10 +1,10 @@
 # November
 
-387 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+387 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:1101-omnes-sancti` |  |  |  |
+| 1 | (1) | `mr:1101-omnes-sancti` |  |  |  |
 | 1 | 2 | `mr:1101-caesarius` |  | IT |  |
 | 1 | 3 | `mr:1101-benignus` |  | FR |  |
 | 1 | 4 | `mr:1101-austremonius` |  | FR |  |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa` |  | VN |  |
 | 1 | 17 | `mr:1101-rupertus-mayer` | * | DE |  |
 | 1 | 18 | `mr:1101-theodorus-georgius-romzsa` | * | UA |  |
-| 2 | 1 | `mr:1102-omnium-fidelium-defunctorum` |  |  |  |
+| 2 | (1) | `mr:1102-omnium-fidelium-defunctorum` |  |  |  |
 | 2 | 2 | `mr:1102-victorinus` |  | SI |  |
 | 2 | 3 | `mr:1102-iustus` |  | IT |  |
 | 2 | 4 | `mr:1102-carterius-et-socii` |  | TR |  |
@@ -36,7 +36,7 @@
 | 2 | 12 | `mr:1102-margarita-de-lotharingia` | * | FR |  |
 | 2 | 13 | `mr:1102-ioannes-bodey` | * | GB |  |
 | 2 | 14 | `mr:1102-pius-a-sancto-aloysio-campidelli` | * | IT |  |
-| 3 | 1 | `mr:1103-martinus-de-porres` |  | PE |  |
+| 3 | (1) | `mr:1103-martinus-de-porres` |  | PE |  |
 | 3 | 2 | `mr:1103-germanus-et-socii` |  | TR |  |
 | 3 | 3 | `mr:1103-libertinus` | * | IT | Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 3 | 4 | `mr:1103-papulus` | * | FR |  |
@@ -53,7 +53,7 @@
 | 3 | 15 | `mr:1103-simon-balacchi` | * | IT |  |
 | 3 | 16 | `mr:1103-carolus-borromeo` |  | IT |  |
 | 3 | 17 | `mr:1103-petrus-franciscus-neron` |  | VN |  |
-| 4 | 1 | `mr:1104-carolus-borromeo` |  | IT |  |
+| 4 | (1) | `mr:1104-carolus-borromeo` |  | IT |  |
 | 4 | 2 | `mr:1104-vitalis-et-agricola` |  | IT |  |
 | 4 | 3 | `mr:1104-nicandrus` |  | TR |  |
 | 4 | 4 | `mr:1104-pierius` |  | EG |  |
@@ -113,7 +113,7 @@
 | 8 | 6 | `mr:1108-ioannes-duns-scotus` | * | DE |  |
 | 8 | 7 | `mr:1108-maria-crucifixa-satellico` | * | IT |  |
 | 8 | 8 | `mr:1108-iosephus-nguyen` |  | VN |  |
-| 9 | 1 | `mr:1109-dedicatio-basilicae-lateranensis` |  | IT |  |
+| 9 | (1) | `mr:1109-dedicatio-basilicae-lateranensis` |  | IT |  |
 | 9 | 2 | `mr:1109-ursinus` |  | FR |  |
 | 9 | 3 | `mr:1109-agrippinus` |  | IT |  |
 | 9 | 4 | `mr:1109-vito` | * | FR |  |
@@ -127,7 +127,7 @@
 | 9 | 12 | `mr:1109-elisabeth-a-sanctissima-trinitate-catez` | * | FR |  |
 | 9 | 13 | `mr:1109-henricus-hlebowicz` | * | PL |  |
 | 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchus` | * | IT |  |
-| 10 | 1 | `mr:1110-leo-i` |  | IT |  |
+| 10 | (1) | `mr:1110-leo-i` |  | IT |  |
 | 10 | 2 | `mr:1110-demetrianus` |  | IR |  |
 | 10 | 3 | `mr:1110-orestes` |  | TR |  |
 | 10 | 4 | `mr:1110-probus` |  | IT |  |
@@ -136,7 +136,7 @@
 | 10 | 7 | `mr:1110-baudolinus` | * | IT |  |
 | 10 | 8 | `mr:1110-andreas-avellino` |  | IT |  |
 | 10 | 9 | `mr:1110-acisclus-pina-piazuelo` | * | ES |  |
-| 11 | 1 | `mr:1111-martinus` |  | HU |  |
+| 11 | (1) | `mr:1111-martinus` |  | HU |  |
 | 11 | 2 | `mr:1111-menna-mareotidem` |  | EG |  |
 | 11 | 3 | `mr:1111-veranus` |  | FR |  |
 | 11 | 4 | `mr:1111-menna-samnii` |  | IT |  |
@@ -147,7 +147,7 @@
 | 11 | 9 | `mr:1111-marina-de-omura` |  | JP |  |
 | 11 | 10 | `mr:1111-alicia-kotowska` | * | PL |  |
 | 11 | 11 | `mr:1111-vincentius-eugenius-bossilkov` | * | BG |  |
-| 12 | 1 | `mr:1112-iosaphat-kuncewicz` |  | BY |  |
+| 12 | (1) | `mr:1112-iosaphat-kuncewicz` |  | BY |  |
 | 12 | 2 | `mr:1112-nilus` |  | TR |  |
 | 12 | 3 | `mr:1112-macarius` | * | GB |  |
 | 12 | 4 | `mr:1112-hesychius` | * | FR |  |
@@ -190,7 +190,7 @@
 | 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | IL |  |
 | 14 | 11 | `mr:1114-ioannes-liccio` | * | IT |  |
 | 14 | 12 | `mr:1114-stephanus-theodorus-cuenot` |  | VN |  |
-| 15 | 1 | `mr:1115-albertus-magnus` |  | FR |  |
+| 15 | (1) | `mr:1115-albertus-magnus` |  | FR |  |
 | 15 | 2 | `mr:1115-viginti-martyres-hippone-regio` |  | DZ |  |
 | 15 | 3 | `mr:1115-guria` |  | TR |  |
 | 15 | 4 | `mr:1115-felix` | * | IT |  |
@@ -209,8 +209,8 @@
 | 15 | 17 | `mr:1115-iosephus-mkasa-balikuddembe` |  | UG |  |
 | 15 | 18 | `mr:1115-maria-a-passione-de-chappotin-de-neuville` | * | IT |  |
 | 15 | 19 | `mr:1115-raphael-a-sancto-ioseph-kalinowski` |  | PL |  |
-| 16 | 1 | `mr:1116-margarita` |  | HU |  |
-| 16 | 2 | `mr:1116-gertrudis-magna` |  | DE |  |
+| 16 | (1) | `mr:1116-margarita` |  | HU |  |
+| 16 | (2) | `mr:1116-gertrudis-magna` |  | DE |  |
 | 16 | 3 | `mr:1116-augustinus-et-felicitas` |  | IT |  |
 | 16 | 4 | `mr:1116-leocadius-et-lusor` | * | FR |  |
 | 16 | 5 | `mr:1116-eucherius` |  | FR |  |
@@ -219,7 +219,7 @@
 | 16 | 8 | `mr:1116-edmundus-rich` |  | FR |  |
 | 16 | 9 | `mr:1116-agnes` | * | IT |  |
 | 16 | 10 | `mr:1116-eduardus-osbaldeston` | * | GB |  |
-| 17 | 1 | `mr:1117-elisabeth-hungaria` |  | HU |  |
+| 17 | (1) | `mr:1117-elisabeth-hungaria` |  | HU |  |
 | 17 | 2 | `mr:1117-gregorius-neocaesareae` |  | TR |  |
 | 17 | 3 | `mr:1117-alphaeus-et-zachaeus` |  | PS |  |
 | 17 | 4 | `mr:1117-acisclus` |  | ES |  |
@@ -237,7 +237,7 @@
 | 17 | 16 | `mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi` |  | JP |  |
 | 17 | 17 | `mr:1117-lupus-sebastianus-hunot` | * | FR |  |
 | 17 | 18 | `mr:1117-iosaphat-kocylovskyj` | * | UA |  |
-| 18 | 1 | `mr:1118-dedicatio-basilicarum-petri-et-pauli` |  | IT |  |
+| 18 | (1) | `mr:1118-dedicatio-basilicarum-petri-et-pauli` |  | IT |  |
 | 18 | 2 | `mr:1118-romanus` |  | TR |  |
 | 18 | 3 | `mr:1118-patroclus` | * | FR |  |
 | 18 | 4 | `mr:1118-maudetus` | * | FR |  |
@@ -275,14 +275,14 @@
 | 20 | 14 | `mr:1120-maria-fortunata-vitus` | * | IT |  |
 | 20 | 15 | `mr:1120-angela-a-sancto-ioseph-lloret-marti-et-socii` | * | ES |  |
 | 20 | 16 | `mr:1120-maria-a-miraculis-ortells-gimeno` | * | ES |  |
-| 21 | 1 | `mr:1121-praesentatio-beatae-mariae-virginis` |  | IL |  |
+| 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | IL |  |
 | 21 | 2 | `mr:1121-rufus` |  |  |  |
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR |  |
 | 21 | 4 | `mr:1121-agapius` |  | PS |  |
 | 21 | 5 | `mr:1121-gelasius-i` |  | IT |  |
 | 21 | 6 | `mr:1121-maurus-caesenae` |  | IT |  |
 | 21 | 7 | `mr:1121-maria-a-iesu-bono-pastore-de-siedliska` | * | IT |  |
-| 22 | 1 | `mr:1122-caecilia` |  | IT |  |
+| 22 | (1) | `mr:1122-caecilia` |  | IT |  |
 | 22 | 2 | `mr:1122-philemon-colossensis` |  | TR |  |
 | 22 | 3 | `mr:1122-ananias` |  | IR |  |
 | 22 | 4 | `mr:1122-benignus` |  | IT |  |
@@ -291,8 +291,8 @@
 | 22 | 7 | `mr:1122-thomas-reggio` | * | IT |  |
 | 22 | 8 | `mr:1122-petrus-esqueda-ramirez` |  | MX |  |
 | 22 | 9 | `mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner` | * | ES |  |
-| 23 | 1 | `mr:1123-clemens-i` |  | IT |  |
-| 23 | 2 | `mr:1123-columbanus` |  | FR |  |
+| 23 | (1) | `mr:1123-clemens-i` |  | IT |  |
+| 23 | (2) | `mr:1123-columbanus` |  | FR |  |
 | 23 | 3 | `mr:1123-felicitas` |  | IT |  |
 | 23 | 4 | `mr:1123-mustiola` |  | IT |  |
 | 23 | 5 | `mr:1123-sisinnius` |  | TR |  |
@@ -306,7 +306,7 @@
 | 23 | 13 | `mr:1123-caecilia-yu-so-sa` |  | KR |  |
 | 23 | 14 | `mr:1123-michael-augustinus-pro` | * | MX |  |
 | 23 | 15 | `mr:1123-maria-caecilia-cendoya-y-araquistain` | * | ES |  |
-| 24 | 1 | `mr:1124-andreas-dung-lac-et-socii` |  | VN |  |
+| 24 | (1) | `mr:1124-andreas-dung-lac-et-socii` |  | VN |  |
 | 24 | 2 | `mr:1124-chrysogonus` |  | IT |  |
 | 24 | 3 | `mr:1124-firmina` |  | IT |  |
 | 24 | 4 | `mr:1124-protasius` |  | IT |  |
@@ -319,7 +319,7 @@
 | 24 | 11 | `mr:1124-petrus-dumoulin-borie` |  | FR |  |
 | 24 | 12 | `mr:1124-maria-anna-sala` | * | IT |  |
 | 24 | 13 | `mr:1124-nicetha-a-sancta-prudentia-plaja-xifra-et-socii` | * | ES |  |
-| 25 | 1 | `mr:1125-catharina` |  | EG |  |
+| 25 | (1) | `mr:1125-catharina` |  | EG |  |
 | 25 | 2 | `mr:1125-mercurius` |  | TR |  |
 | 25 | 3 | `mr:1125-moyses` |  | IT |  |
 | 25 | 4 | `mr:1125-petrus` |  | EG |  |
@@ -378,7 +378,7 @@
 | 29 | 9 | `mr:1129-dionysius-a-nativitate-berthelot` | * | ID |  |
 | 29 | 10 | `mr:1129-franciscus-antonius-fasani` |  | IT |  |
 | 29 | 11 | `mr:1129-alaphridus-simon-colomina` | * | ES |  |
-| 30 | 1 | `mr:1130-andreas` |  | GR |  |
+| 30 | (1) | `mr:1130-andreas` |  | GR |  |
 | 30 | 2 | `mr:1130-mirocles` |  | IT |  |
 | 30 | 3 | `mr:1130-tugdualus-pabu` | * | FR |  |
 | 30 | 4 | `mr:1130-galganus-guidotti` |  | IT |  |

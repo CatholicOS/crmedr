@@ -1,10 +1,10 @@
 # May
 
-407 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+407 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0501-ioseph` |  |  |  |
+| 1 | (1) | `mr:0501-ioseph` |  |  |  |
 | 1 | 2 | `mr:0501-ieremias` |  | IL |  |
 | 1 | 3 | `mr:0501-andeolus` |  | FR |  |
 | 1 | 4 | `mr:0501-torquatus` |  | ES |  |
@@ -27,7 +27,7 @@
 | 1 | 21 | `mr:0501-ioannes-ludovicus-bonnard` |  | VN |  |
 | 1 | 22 | `mr:0501-richardus-pampuri` |  | IT |  |
 | 1 | 23 | `mr:0501-clemens-septyckyj` | * | RU |  |
-| 2 | 1 | `mr:0502-athanasius` |  | EG |  |
+| 2 | (1) | `mr:0502-athanasius` |  | EG |  |
 | 2 | 2 | `mr:0502-hesperus-et-zoes` |  | TR |  |
 | 2 | 3 | `mr:0502-felix` |  | ES |  |
 | 2 | 4 | `mr:0502-vindemialis` |  | TN |  |
@@ -39,7 +39,7 @@
 | 2 | 10 | `mr:0502-iosephus-nguyen-van-luu` |  | VN |  |
 | 2 | 11 | `mr:0502-iosephus-maria-rubio-peralta` |  | ES |  |
 | 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
-| 3 | 1 | `mr:0503-philippus-et-iacobus` |  | PS |  |
+| 3 | (1) | `mr:0503-philippus-et-iacobus` |  | PS |  |
 | 3 | 2 | `mr:0503-timotheus-et-maura` |  | EG |  |
 | 3 | 3 | `mr:0503-eventius-et-socii` |  | IT |  |
 | 3 | 4 | `mr:0503-iuvenalis` |  | IT |  |
@@ -152,8 +152,8 @@
 | 11 | 10 | `mr:0511-franciscus-de-geronimo` |  | IT |  |
 | 11 | 11 | `mr:0511-ignatius-de-laconi` |  | IT |  |
 | 11 | 12 | `mr:0511-matthaeus-le-van-gam` |  | VN |  |
-| 12 | 1 | `mr:0512-nereus-et-achilleus` |  | IT |  |
-| 12 | 2 | `mr:0512-pancratius` |  | IT |  |
+| 12 | (1) | `mr:0512-nereus-et-achilleus` |  | IT |  |
+| 12 | (2) | `mr:0512-pancratius` |  | IT |  |
 | 12 | 3 | `mr:0512-cyrillus` |  | RO |  |
 | 12 | 4 | `mr:0512-epiphanius` |  | CY |  |
 | 12 | 5 | `mr:0512-philippus` |  | IT |  |
@@ -163,13 +163,13 @@
 | 12 | 9 | `mr:0512-dominicus` |  | ES |  |
 | 12 | 10 | `mr:0512-imelda-lambertini` | * | IT | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 12 | 11 | `mr:0512-ioanna` | * | PT |  |
-| 13 | 1 | `mr:0513-maria-de-fatima` |  | PT |  |
+| 13 | (1) | `mr:0513-maria-de-fatima` |  | PT |  |
 | 13 | 2 | `mr:0513-servatius` |  | NL |  |
 | 13 | 3 | `mr:0513-agnes` | * | FR |  |
 | 13 | 4 | `mr:0513-gemma` | * | IT |  |
 | 13 | 5 | `mr:0513-magdalena-albrici` | * | IT |  |
 | 13 | 6 | `mr:0513-andreas-hubertus-fournet` |  | FR |  |
-| 14 | 1 | `mr:0514-matthias` |  | PS |  |
+| 14 | (1) | `mr:0514-matthias` |  | PS |  |
 | 14 | 2 | `mr:0514-maximus` |  | TR |  |
 | 14 | 3 | `mr:0514-pontius` |  | FR |  |
 | 14 | 4 | `mr:0514-victor-et-corona` |  | SY |  |
@@ -222,7 +222,7 @@
 | 17 | 8 | `mr:0517-iulia-salzano` | * | IT |  |
 | 17 | 9 | `mr:0517-antonia-mesina` | * | IT |  |
 | 17 | 10 | `mr:0517-ivanus-ziatyk` | * | RU |  |
-| 18 | 1 | `mr:0518-ioannes-i` |  | TR |  |
+| 18 | (1) | `mr:0518-ioannes-i` |  | TR |  |
 | 18 | 2 | `mr:0518-felix` |  | HR |  |
 | 18 | 3 | `mr:0518-dioscorus` |  | EG |  |
 | 18 | 4 | `mr:0518-potamon-et-socii` |  | EG |  |
@@ -250,7 +250,7 @@
 | 19 | 14 | `mr:0519-ioannes-baptista-xaverius-loir` | * | FR |  |
 | 19 | 15 | `mr:0519-maria-bernarda-butler` | * | CO |  |
 | 19 | 16 | `mr:0519-iosephus-czempiel` | * | DE |  |
-| 20 | 1 | `mr:0520-bernardinus-senensis` |  | IT |  |
+| 20 | (1) | `mr:0520-bernardinus-senensis` |  | IT |  |
 | 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR |  |
 | 20 | 3 | `mr:0520-aurea` |  | IT |  |
 | 20 | 4 | `mr:0520-baudelius` |  | FR |  |
@@ -265,7 +265,7 @@
 | 20 | 13 | `mr:0520-protasius-chong-kuk-bo` |  | KR |  |
 | 20 | 14 | `mr:0520-archangelus-tadini` | * | IT |  |
 | 20 | 15 | `mr:0520-aloysius-talamoni` | * | IT |  |
-| 21 | 1 | `mr:0521-christophorus-magallanes-et-socii` |  | MX |  |
+| 21 | (1) | `mr:0521-christophorus-magallanes-et-socii` |  | MX |  |
 | 21 | 2 | `mr:0521-timotheus` |  | DZ |  |
 | 21 | 3 | `mr:0521-polyeuctus` |  | TR |  |
 | 21 | 4 | `mr:0521-martyres-alexandriae` |  | EG |  |
@@ -276,7 +276,7 @@
 | 21 | 9 | `mr:0521-hemming` | * | FI |  |
 | 21 | 10 | `mr:0521-ioannes-mopinot` | * | FR |  |
 | 21 | 11 | `mr:0521-carolus-eugenius-de-mazenod` |  | FR |  |
-| 22 | 1 | `mr:0522-rita` |  | IT |  |
+| 22 | (1) | `mr:0522-rita` |  | IT |  |
 | 22 | 2 | `mr:0522-castus-et-aemilius` |  | TN |  |
 | 22 | 3 | `mr:0522-basiliscus` |  | TR |  |
 | 22 | 4 | `mr:0522-iulia` |  | FR |  |
@@ -317,9 +317,9 @@
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA |  |
 | 24 | 11 | `mr:0524-augustinus-yus-kwang-hon` |  | KR |  |
 | 24 | 12 | `mr:0524-hyacinthus` | * | CA |  |
-| 25 | 1 | `mr:0525-beda-venerabilis` |  | GB |  |
-| 25 | 2 | `mr:0525-gregorius-vii` |  | IT |  |
-| 25 | 3 | `mr:0525-maria-magdalena-de-pazzi` |  | IT |  |
+| 25 | (1) | `mr:0525-beda-venerabilis` |  | GB |  |
+| 25 | (2) | `mr:0525-gregorius-vii` |  | IT |  |
+| 25 | (3) | `mr:0525-maria-magdalena-de-pazzi` |  | IT |  |
 | 25 | 4 | `mr:0525-canio` |  | IT |  |
 | 25 | 5 | `mr:0525-dionysius` |  | IT |  |
 | 25 | 6 | `mr:0525-zenobius` |  | IT |  |
@@ -334,7 +334,7 @@
 | 25 | 15 | `mr:0525-dionysius-ssebuggwawo` |  | UG |  |
 | 25 | 16 | `mr:0525-christophorus-magallanes-et-augustinus-caloca` |  | MX |  |
 | 25 | 17 | `mr:0525-nicolaus-cehelskyj` | * | MD |  |
-| 26 | 1 | `mr:0526-philippus-neri` |  | IT |  |
+| 26 | (1) | `mr:0526-philippus-neri` |  | IT |  |
 | 26 | 2 | `mr:0526-eleutherius` |  | IT |  |
 | 26 | 3 | `mr:0526-simetrius` |  | IT |  |
 | 26 | 4 | `mr:0526-felicissima` |  | IT |  |
@@ -351,7 +351,7 @@
 | 26 | 15 | `mr:0526-ioannes` |  | VN |  |
 | 26 | 16 | `mr:0526-andreas-kaggwa` |  | UG |  |
 | 26 | 17 | `mr:0526-pontianus-ngondwe` |  | UG |  |
-| 27 | 1 | `mr:0527-augustinus` |  | GB |  |
+| 27 | (1) | `mr:0527-augustinus` |  | GB |  |
 | 27 | 2 | `mr:0527-iulius` |  | BG |  |
 | 27 | 3 | `mr:0527-restitutus` |  | IT |  |
 | 27 | 4 | `mr:0527-eutropius` |  | FR |  |
@@ -399,7 +399,7 @@
 | 30 | 10 | `mr:0530-matthias-kalemba-mulumba` |  | UG |  |
 | 30 | 11 | `mr:0530-iosephus-marello` |  | IT |  |
 | 30 | 12 | `mr:0530-otho-neururer` | * | DE |  |
-| 31 | 1 | `mr:0531-visitatio-beatae-mariae-virginis` |  | PS |  |
+| 31 | (1) | `mr:0531-visitatio-beatae-mariae-virginis` |  | PS |  |
 | 31 | 2 | `mr:0531-petronilla` |  | IT |  |
 | 31 | 3 | `mr:0531-hermia` |  | TR |  |
 | 31 | 4 | `mr:0531-cantius-et-socii` |  | IT |  |

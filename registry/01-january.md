@@ -1,10 +1,10 @@
 # January
 
-394 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+394 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0101-maria-dei-genetrix` |  |  |  |
+| 1 | (1) | `mr:0101-maria-dei-genetrix` |  |  |  |
 | 1 | 2 | `mr:0101-basilius` |  | TR |  |
 | 1 | 3 | `mr:0101-iustinus` |  | IT |  |
 | 1 | 4 | `mr:0101-almachius` |  | IT |  |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0101-valentinus-paquay` | * | BE |  |
 | 1 | 17 | `mr:0101-sigismundus-gorazdowski` | * | UA |  |
 | 1 | 18 | `mr:0101-marianus-konopinski` | * | DE |  |
-| 2 | 1 | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR |  |
+| 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR |  |
 | 2 | 2 | `mr:0102-telesphorus` |  | IT |  |
 | 2 | 3 | `mr:0102-argeus-et-socii` |  | IT |  |
 | 2 | 4 | `mr:0102-theodorus` | * | FR |  |
@@ -37,7 +37,7 @@
 | 2 | 13 | `mr:0102-stephana-quinzani` | * | IT |  |
 | 2 | 14 | `mr:0102-gulielmus-repin-et-laurentius-batard` | * | FR |  |
 | 2 | 15 | `mr:0102-maria-anna-soureau-blondin` | * | CA |  |
-| 3 | 1 | `mr:0103-nomen-iesu` |  |  |  |
+| 3 | (1) | `mr:0103-nomen-iesu` |  |  |  |
 | 3 | 2 | `mr:0103-antherus` |  | IT |  |
 | 3 | 3 | `mr:0103-theopemptus-et-theona` |  | TR |  |
 | 3 | 4 | `mr:0103-gordius` |  | TR |  |
@@ -73,7 +73,7 @@
 | 5 | 12 | `mr:0105-marcellina-darowska` | * | UA |  |
 | 5 | 13 | `mr:0105-petrus-bonilli` | * | IT |  |
 | 5 | 14 | `mr:0105-genovefa-torres-morales` |  | ES |  |
-| 6 | 1 | `mr:0106-epiphania-domini` |  | PS |  |
+| 6 | (1) | `mr:0106-epiphania-domini` |  | PS |  |
 | 6 | 2 | `mr:0106-iulianus-et-basilissa` |  | EG |  |
 | 6 | 3 | `mr:0106-felix` | * | FR |  |
 | 6 | 4 | `mr:0106-macarius` | * | DE |  |
@@ -84,7 +84,7 @@
 | 6 | 9 | `mr:0106-carolus-de-setia` |  | IT |  |
 | 6 | 10 | `mr:0106-raphaela-maria-a-sacro-corde-porras-ayllon` |  | IT |  |
 | 6 | 11 | `mr:0106-andreas-bessette` | * | CA |  |
-| 7 | 1 | `mr:0107-raymundus-de-penyafort` |  | ES |  |
+| 7 | (1) | `mr:0107-raymundus-de-penyafort` |  | ES |  |
 | 7 | 2 | `mr:0107-polyeuctus` |  | TR |  |
 | 7 | 3 | `mr:0107-lucianus` |  | TR |  |
 | 7 | 4 | `mr:0107-valentinus` | * | DE |  |
@@ -165,7 +165,7 @@
 | 12 | 11 | `mr:0112-petrus-franciscus-jamet` | * | FR |  |
 | 12 | 12 | `mr:0112-antonius-maria-pucci` |  | IT |  |
 | 12 | 13 | `mr:0112-nicolaus-bunkerd-kitbamrung` | * | TH |  |
-| 13 | 1 | `mr:0113-hilarius` |  | FR |  |
+| 13 | (1) | `mr:0113-hilarius` |  | FR |  |
 | 13 | 2 | `mr:0113-hermylius-et-stratonicus` |  | RS |  |
 | 13 | 3 | `mr:0113-agricius` |  | DE |  |
 | 13 | 4 | `mr:0113-remigius` |  | FR |  |
@@ -220,7 +220,7 @@
 | 16 | 12 | `mr:0116-iosephus-vaz` | * | LK |  |
 | 16 | 13 | `mr:0116-iosephus-antonius-tovini` | * | IT |  |
 | 16 | 14 | `mr:0116-ioanna-maria-condesa-lluch` | * | ES |  |
-| 17 | 1 | `mr:0117-antonius` |  | EG |  |
+| 17 | (1) | `mr:0117-antonius` |  | EG |  |
 | 17 | 2 | `mr:0117-speusippus-et-socii` |  | TR |  |
 | 17 | 3 | `mr:0117-iulianus` |  | TR |  |
 | 17 | 4 | `mr:0117-marcellus` |  | FR |  |
@@ -253,8 +253,8 @@
 | 19 | 10 | `mr:0119-remigius` | * | FR |  |
 | 19 | 11 | `mr:0119-arsenius` | * | GR |  |
 | 19 | 12 | `mr:0119-marcellus-spinola-y-maestre` | * | ES |  |
-| 20 | 1 | `mr:0120-fabianus` |  | IT |  |
-| 20 | 2 | `mr:0120-sebastianus` |  | IT |  |
+| 20 | (1) | `mr:0120-fabianus` |  | IT |  |
+| 20 | (2) | `mr:0120-sebastianus` |  | IT |  |
 | 20 | 3 | `mr:0120-ascla` |  | EG |  |
 | 20 | 4 | `mr:0120-neophytus` |  | TR |  |
 | 20 | 5 | `mr:0120-euthymius` |  | PS |  |
@@ -265,7 +265,7 @@
 | 20 | 10 | `mr:0120-stephanus-min-kuk-ka` |  | KR |  |
 | 20 | 11 | `mr:0120-maria-christina-ab-immaculata-brando` | * | IT |  |
 | 20 | 12 | `mr:0120-bernardus` | * | GB |  |
-| 21 | 1 | `mr:0121-agnes` |  | IT |  |
+| 21 | (1) | `mr:0121-agnes` |  | IT |  |
 | 21 | 2 | `mr:0121-publius` |  | GR |  |
 | 21 | 3 | `mr:0121-fructuosus` |  | ES |  |
 | 21 | 4 | `mr:0121-patroclus` |  | FR |  |
@@ -277,7 +277,7 @@
 | 21 | 10 | `mr:0121-iosepha-maria-a-sancta-agnete` | * | ES |  |
 | 21 | 11 | `mr:0121-ioannes-baptista-turpin-du-cormier-et-socii` | * | FR |  |
 | 21 | 12 | `mr:0121-ioannes-yus-yun-il` |  | KR |  |
-| 22 | 1 | `mr:0122-vincentius` |  | ES |  |
+| 22 | (1) | `mr:0122-vincentius` |  | ES |  |
 | 22 | 2 | `mr:0122-valerius` |  | ES |  |
 | 22 | 3 | `mr:0122-gaudentius` |  | IT |  |
 | 22 | 4 | `mr:0122-anastasius` |  | IR |  |
@@ -299,7 +299,7 @@
 | 23 | 5 | `mr:0123-hildephonsus` |  | ES |  |
 | 23 | 6 | `mr:0123-maimbodus` | * | FR |  |
 | 23 | 7 | `mr:0123-andreas-chong-hwa-gyong` |  | KR |  |
-| 24 | 1 | `mr:0124-franciscus-de-sales` |  | CH |  |
+| 24 | (1) | `mr:0124-franciscus-de-sales` |  | CH |  |
 | 24 | 2 | `mr:0124-felicianus` |  | IT |  |
 | 24 | 3 | `mr:0124-sabinianus` |  | FR |  |
 | 24 | 4 | `mr:0124-babyla` |  | TR |  |
@@ -309,7 +309,7 @@
 | 24 | 8 | `mr:0124-maria-poussepin` | * | FR |  |
 | 24 | 9 | `mr:0124-vincentius-lewoniuk-et-socii` | * | PL |  |
 | 24 | 10 | `mr:0124-timotheus-giaccardo` | * | IT |  |
-| 25 | 1 | `mr:0125-conversio-sancti-pauli` |  | SY |  |
+| 25 | (1) | `mr:0125-conversio-sancti-pauli` |  | SY |  |
 | 25 | 2 | `mr:0125-ananias` |  | SY |  |
 | 25 | 3 | `mr:0125-arthematis` | * | IT |  |
 | 25 | 4 | `mr:0125-agileus` |  | TN |  |
@@ -324,7 +324,7 @@
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES |  |
 | 25 | 14 | `mr:0125-maria-antonia-grillo` | * | EG |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE |  |
-| 26 | 1 | `mr:0126-timotheus-et-titus` |  | TR |  |
+| 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR |  |
 | 26 | 2 | `mr:0126-theogenes` |  | DZ |  |
 | 26 | 3 | `mr:0126-paula` |  | PS |  |
 | 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL |  |
@@ -332,7 +332,7 @@
 | 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE |  |
-| 27 | 1 | `mr:0127-angela-merici` |  | IT |  |
+| 27 | (1) | `mr:0127-angela-merici` |  | IT |  |
 | 27 | 2 | `mr:0127-iulianus-sorae` |  | IT |  |
 | 27 | 3 | `mr:0127-iulianus-cenomanum` |  | FR |  |
 | 27 | 4 | `mr:0127-devota` | * | FR |  |
@@ -346,7 +346,7 @@
 | 27 | 12 | `mr:0127-ioannes-maria` |  | UG |  |
 | 27 | 13 | `mr:0127-henricus-de-osso-y-cervello` |  | ES |  |
 | 27 | 14 | `mr:0127-georgius-matulaitis` | * | LT |  |
-| 28 | 1 | `mr:0128-thomas-de-aquino` |  | IT |  |
+| 28 | (1) | `mr:0128-thomas-de-aquino` |  | IT |  |
 | 28 | 2 | `mr:0128-ioannes` |  | FR |  |
 | 28 | 3 | `mr:0128-iacobus` |  | PS |  |
 | 28 | 4 | `mr:0128-iulianus` |  | ES |  |
@@ -384,7 +384,7 @@
 | 30 | 16 | `mr:0130-benedictus-de-maretiolo` | * | BE |  |
 | 30 | 17 | `mr:0130-carmela-garcia-moyon` | * | ES |  |
 | 30 | 18 | `mr:0130-sigismundus-pisarski` | * | PL |  |
-| 31 | 1 | `mr:0131-ioannes-bosco` |  | IT |  |
+| 31 | (1) | `mr:0131-ioannes-bosco` |  | IT |  |
 | 31 | 2 | `mr:0131-victorinus-et-socii` |  | GR |  |
 | 31 | 3 | `mr:0131-metranus` |  | EG |  |
 | 31 | 4 | `mr:0131-cyrus-et-ioannes` |  | EG |  |

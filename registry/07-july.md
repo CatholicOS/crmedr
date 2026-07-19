@@ -1,6 +1,6 @@
 # July
 
-473 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+473 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@
 | 2 | 7 | `mr:0702-ioannes-et-petrus-becchetti` | * | IT |  |
 | 2 | 8 | `mr:0702-bernardinus-realino` |  | IT |  |
 | 2 | 9 | `mr:0702-eugenia-joubert` | * | BE |  |
-| 3 | 1 | `mr:0703-thomas` |  | IN |  |
+| 3 | (1) | `mr:0703-thomas` |  | IN |  |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR |  |
 | 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO |  |
@@ -40,7 +40,7 @@
 | 3 | 10 | `mr:0703-philippus-phan-van-minh` |  | VN |  |
 | 3 | 11 | `mr:0703-maria-anna-mogas-fontcuberta` | * | ES |  |
 | 3 | 12 | `mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi` |  | CN |  |
-| 4 | 1 | `mr:0704-elisabeth` |  | PT |  |
+| 4 | (1) | `mr:0704-elisabeth` |  | PT |  |
 | 4 | 2 | `mr:0704-iucundianus` |  | TN |  |
 | 4 | 3 | `mr:0704-laurianus` |  | FR |  |
 | 4 | 4 | `mr:0704-florentius` | * | FR |  |
@@ -57,7 +57,7 @@
 | 4 | 15 | `mr:0704-caesidius-giacomantonio` |  | CN |  |
 | 4 | 16 | `mr:0704-petrus-georgius-frassati` | * | IT |  |
 | 4 | 17 | `mr:0704-iosephus-kowalski` | * | PL |  |
-| 5 | 1 | `mr:0705-antonius-maria-zaccaria` |  | IT |  |
+| 5 | (1) | `mr:0705-antonius-maria-zaccaria` |  | IT |  |
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT |  |
 | 5 | 3 | `mr:0705-cyprilla` |  | LY |  |
 | 5 | 4 | `mr:0705-athanasius-hierosolymitani` |  | IL |  |
@@ -68,7 +68,7 @@
 | 5 | 9 | `mr:0705-matthaeus-lambert-et-socii` | * | IE |  |
 | 5 | 10 | `mr:0705-georgius-nichols-et-richardus-yaxley` | * | GB |  |
 | 5 | 11 | `mr:0705-teresia-chen-jinxie-et-rosa-chen-aixie` |  | CN |  |
-| 6 | 1 | `mr:0706-maria-goretti` |  | IT |  |
+| 6 | (1) | `mr:0706-maria-goretti` |  | IT |  |
 | 6 | 2 | `mr:0706-cyriaca` | * | TR |  |
 | 6 | 3 | `mr:0706-romulus` |  | IT |  |
 | 6 | 4 | `mr:0706-sisoes-magnus` | * | EG |  |
@@ -112,7 +112,7 @@
 | 8 | 11 | `mr:0708-eugenius-iii` | * | IT |  |
 | 8 | 12 | `mr:0708-mancius-arakus` | * | JP |  |
 | 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN |  |
-| 9 | 1 | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN |  |
+| 9 | (1) | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN |  |
 | 9 | 2 | `mr:0709-ioanna-scopelli` | * | IT |  |
 | 9 | 3 | `mr:0709-hadrianus-fortescue` | * | GB |  |
 | 9 | 4 | `mr:0709-nicolaus-pieck-et-socii` |  | NL |  |
@@ -137,7 +137,7 @@
 | 10 | 12 | `mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert` | * | FR |  |
 | 10 | 13 | `mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu` |  | VN |  |
 | 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY |  |
-| 11 | 1 | `mr:0711-benedictus` |  | IT |  |
+| 11 | (1) | `mr:0711-benedictus` |  | IT |  |
 | 11 | 2 | `mr:0711-pius-i` |  | IT |  |
 | 11 | 3 | `mr:0711-marcianus` |  | TR |  |
 | 11 | 4 | `mr:0711-marciana` |  | DZ |  |
@@ -166,7 +166,7 @@
 | 12 | 12 | `mr:0712-clemens-ignatius-delgado-cebrian` |  | VN |  |
 | 12 | 13 | `mr:0712-agnes-le-thi-thanh` |  | VN |  |
 | 12 | 14 | `mr:0712-petrus-khanh` |  | VN |  |
-| 13 | 1 | `mr:0713-henricus` |  | DE |  |
+| 13 | (1) | `mr:0713-henricus` |  | DE |  |
 | 13 | 2 | `mr:0713-esdra` |  | IQ |  |
 | 13 | 3 | `mr:0713-sila` |  |  |  |
 | 13 | 4 | `mr:0713-serapion` |  | EG |  |
@@ -185,7 +185,7 @@
 | 13 | 17 | `mr:0713-iosephus-wang-guiji` |  | CN |  |
 | 13 | 18 | `mr:0713-marianus-a-iesu-euse-hoyos` | * | CO |  |
 | 13 | 19 | `mr:0713-carolus-emmanuel-rodriguez-santiago` | * | PR |  |
-| 14 | 1 | `mr:0714-camillus-de-lellis` |  | IT |  |
+| 14 | (1) | `mr:0714-camillus-de-lellis` |  | IT |  |
 | 14 | 2 | `mr:0714-optatianus` |  | IT |  |
 | 14 | 3 | `mr:0714-vincentius` | * | BE |  |
 | 14 | 4 | `mr:0714-marchelmus` |  | NL |  |
@@ -197,7 +197,7 @@
 | 14 | 10 | `mr:0714-richardus-langhorne` | * | GB |  |
 | 14 | 11 | `mr:0714-ghebre-michael` | * | ET |  |
 | 14 | 12 | `mr:0714-ioannes-wang-guixin` |  | CN |  |
-| 15 | 1 | `mr:0715-bonaventura` |  | IT |  |
+| 15 | (1) | `mr:0715-bonaventura` |  | IT |  |
 | 15 | 2 | `mr:0715-eutropius-et-socii` |  | IT |  |
 | 15 | 3 | `mr:0715-felix` |  | TN |  |
 | 15 | 4 | `mr:0715-catulinus` |  | TN |  |
@@ -220,7 +220,7 @@
 | 15 | 21 | `mr:0715-anna-maria-javouhey` | * | FR |  |
 | 15 | 22 | `mr:0715-andreas-nguyen-kim-thong-nam` |  | VN |  |
 | 15 | 23 | `mr:0715-antonius-beszta-borowski` | * | PL |  |
-| 16 | 1 | `mr:0716-maria-de-monte-carmelo` |  | IL |  |
+| 16 | (1) | `mr:0716-maria-de-monte-carmelo` |  | IL |  |
 | 16 | 2 | `mr:0716-antiochus` |  | TR |  |
 | 16 | 3 | `mr:0716-athenogenes` |  | TR |  |
 | 16 | 4 | `mr:0716-helerius` | * | JE |  |
@@ -279,7 +279,7 @@
 | 19 | 11 | `mr:0719-ioannes-baptista-zhou-wurui` |  | CN |  |
 | 19 | 12 | `mr:0719-elisabeth-qin-bianzhi` |  | CN |  |
 | 19 | 13 | `mr:0719-achilles-pucha-a-et-hermannus-stepien` | * | PL |  |
-| 20 | 1 | `mr:0720-apollinaris` |  | IT |  |
+| 20 | (1) | `mr:0720-apollinaris` |  | IT |  |
 | 20 | 2 | `mr:0720-elias-thesbita` |  | IL |  |
 | 20 | 3 | `mr:0720-ioseph` |  | PS |  |
 | 20 | 4 | `mr:0720-marina` |  | TR |  |
@@ -296,7 +296,7 @@
 | 20 | 15 | `mr:0720-maria-zhao-guozhus` |  | CN |  |
 | 20 | 16 | `mr:0720-xus-guizi` |  | CN |  |
 | 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-pujalte-y-sanchez-et-francisca-a-corde-iesu-aldea-y-araujo` | * | ES |  |
-| 21 | 1 | `mr:0721-laurentius-de-brundusio` |  | IT |  |
+| 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT |  |
 | 21 | 2 | `mr:0721-victor` |  | FR |  |
 | 21 | 3 | `mr:0721-simeon-salus` |  | SY |  |
 | 21 | 4 | `mr:0721-praxedes` |  | IT |  |
@@ -304,7 +304,7 @@
 | 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR |  |
 | 21 | 7 | `mr:0721-albericus-crescitelli` |  | CN |  |
 | 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN |  |
-| 22 | 1 | `mr:0722-maria-magdalena` |  | PS |  |
+| 22 | (1) | `mr:0722-maria-magdalena` |  | PS |  |
 | 22 | 2 | `mr:0722-platon` |  | TR |  |
 | 22 | 3 | `mr:0722-massilitani` |  | TN |  |
 | 22 | 4 | `mr:0722-cyrillus` |  | TR |  |
@@ -319,7 +319,7 @@
 | 22 | 13 | `mr:0722-iacobus-lombardie` | * | FR |  |
 | 22 | 14 | `mr:0722-anna-wang` |  | CN |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN |  |
-| 23 | 1 | `mr:0723-birgitta` |  | SE |  |
+| 23 | (1) | `mr:0723-birgitta` |  | SE |  |
 | 23 | 2 | `mr:0723-ezechiel` |  | IL |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT |  |
 | 23 | 4 | `mr:0723-severus` |  | TR |  |
@@ -331,7 +331,7 @@
 | 23 | 10 | `mr:0723-petrus-ruiz` | * | ES |  |
 | 23 | 11 | `mr:0723-christinus-gondek` | * | DE |  |
 | 23 | 12 | `mr:0723-basilius-hopko` | * | SK |  |
-| 24 | 1 | `mr:0724-sarbelius-makhluf` |  | LB |  |
+| 24 | (1) | `mr:0724-sarbelius-makhluf` |  | LB |  |
 | 24 | 2 | `mr:0724-christina` |  | IT |  |
 | 24 | 3 | `mr:0724-victorinus` |  | IT |  |
 | 24 | 4 | `mr:0724-fantinus-senior-thaumaturgus` | * | IT |  |
@@ -354,7 +354,7 @@
 | 24 | 21 | `mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii` | * | MX |  |
 | 24 | 22 | `mr:0724-maria-a-mercede-prat` | * | ES |  |
 | 24 | 23 | `mr:0724-xaverius-bordas-piferrer` | * | ES |  |
-| 25 | 1 | `mr:0725-iacobus` |  | PS |  |
+| 25 | (1) | `mr:0725-iacobus` |  | PS |  |
 | 25 | 2 | `mr:0725-christophorus` |  | TR |  |
 | 25 | 3 | `mr:0725-cucuphas` |  | ES |  |
 | 25 | 4 | `mr:0725-valentina-et-socii` |  | PS |  |
@@ -374,7 +374,7 @@
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES |  |
 | 25 | 19 | `mr:0725-deogratias-palacios-et-socii` | * | ES |  |
 | 25 | 20 | `mr:0725-maria-teresia-kowalska` | * | PL |  |
-| 26 | 1 | `mr:0726-ioachim-et-anna` |  | PS |  |
+| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS |  |
 | 26 | 2 | `mr:0726-erastus` |  | GR |  |
 | 26 | 3 | `mr:0726-benedictus` |  | IT |  |
 | 26 | 4 | `mr:0726-austindus` | * | FR |  |
@@ -428,7 +428,7 @@
 | 28 | 12 | `mr:0728-iacobus-hilarius-barbal-cosan` |  | ES |  |
 | 28 | 13 | `mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps` | * | ES |  |
 | 28 | 14 | `mr:0728-alphonsa-ab-immaculata-conceptione-muttathupadathu` | * | IN |  |
-| 29 | 1 | `mr:0729-martha` |  | IL |  |
+| 29 | (1) | `mr:0729-martha` |  | IL |  |
 | 29 | 2 | `mr:0729-lazarus` |  | PS |  |
 | 29 | 3 | `mr:0729-callinicus` |  | TR |  |
 | 29 | 4 | `mr:0729-felix` |  | IT |  |
@@ -444,7 +444,7 @@
 | 29 | 14 | `mr:0729-ioannes-baptista-egozcuezabal-aldaz` | * | ES |  |
 | 29 | 15 | `mr:0729-lucius-martinez-mancebo-et-socii` | * | ES |  |
 | 29 | 16 | `mr:0729-iosephus-de-calasanz-marques` | * | ES |  |
-| 30 | 1 | `mr:0730-petrus-chrysologus` |  | IT |  |
+| 30 | (1) | `mr:0730-petrus-chrysologus` |  | IT |  |
 | 30 | 2 | `mr:0730-abdon-et-sennen` |  | IT |  |
 | 30 | 3 | `mr:0730-iulitta` |  | TR |  |
 | 30 | 4 | `mr:0730-maxima-et-socii` |  | TN |  |
@@ -459,7 +459,7 @@
 | 30 | 13 | `mr:0730-leopoldus-de-castronovo-mandic` |  | IT |  |
 | 30 | 14 | `mr:0730-maria-vincentia-a-sancta-dorothea-chavez-orozco` | * | MX |  |
 | 30 | 15 | `mr:0730-maria-a-iesu-sacramentato-venegas-de-la-torre` |  | MX |  |
-| 31 | 1 | `mr:0731-ignatius-de-loyola` |  | FR |  |
+| 31 | (1) | `mr:0731-ignatius-de-loyola` |  | FR |  |
 | 31 | 2 | `mr:0731-calimerus` |  | IT |  |
 | 31 | 3 | `mr:0731-democritus-et-socii` |  | TR |  |
 | 31 | 4 | `mr:0731-fabius` |  | DZ |  |

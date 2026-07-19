@@ -1,6 +1,6 @@
 # March
 
-331 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+331 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -37,7 +37,7 @@
 | 3 | 14 | `mr:0303-teresia-eustochius-verzeri` |  | IT |  |
 | 3 | 15 | `mr:0303-innocentius-de-berzo-scalvinoni` | * | IT |  |
 | 3 | 16 | `mr:0303-catharina-drexel` |  | US |  |
-| 4 | 1 | `mr:0304-casimirus` |  | PL |  |
+| 4 | (1) | `mr:0304-casimirus` |  | PL |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR |  |
 | 4 | 3 | `mr:0304-basinus` | * | DE |  |
 | 4 | 4 | `mr:0304-appianus` | * | IT |  |
@@ -69,7 +69,7 @@
 | 6 | 9 | `mr:0306-ollegarius` | * | ES |  |
 | 6 | 10 | `mr:0306-rosa` | * | IT |  |
 | 6 | 11 | `mr:0306-coleta-boylet` |  | BE |  |
-| 7 | 1 | `mr:0307-perpetua-et-felicitas` |  | TN |  |
+| 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN |  |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN |  |
 | 7 | 3 | `mr:0307-eubulius` |  | PS |  |
 | 7 | 4 | `mr:0307-basilius-et-socii` |  | GR |  |
@@ -83,7 +83,7 @@
 | 7 | 12 | `mr:0307-ioannes-baptista-nam-chong-sam` |  | KR |  |
 | 7 | 13 | `mr:0307-simeon-berneux` |  | KR |  |
 | 7 | 14 | `mr:0307-leonida-fedorov` | * | RU |  |
-| 8 | 1 | `mr:0308-ioannes-de-deo` |  | ES |  |
+| 8 | (1) | `mr:0308-ioannes-de-deo` |  | ES |  |
 | 8 | 2 | `mr:0308-pontius` |  | TN |  |
 | 8 | 3 | `mr:0308-apollonius-et-philemon` |  | EG |  |
 | 8 | 4 | `mr:0308-provinus` | * | IT |  |
@@ -97,7 +97,7 @@
 | 8 | 12 | `mr:0308-stephanus` | * | FR |  |
 | 8 | 13 | `mr:0308-vincentius-kad-ubek` | * | PL |  |
 | 8 | 14 | `mr:0308-faustinus-miguez` | * | ES |  |
-| 9 | 1 | `mr:0309-francisca` |  | IT |  |
+| 9 | (1) | `mr:0309-francisca` |  | IT |  |
 | 9 | 2 | `mr:0309-quadraginta-milites-sebastem` |  | TR |  |
 | 9 | 3 | `mr:0309-pacianus` |  | ES |  |
 | 9 | 4 | `mr:0309-vitalis-de-castronovo` | * | IT |  |
@@ -176,7 +176,7 @@
 | 16 | 6 | `mr:0316-ioannes-sordi` | * | IT |  |
 | 16 | 7 | `mr:0316-ioannes-amias-et-robertus-dalby` | * | GB |  |
 | 16 | 8 | `mr:0316-ioannes-de-brebeuf` |  | CA |  |
-| 17 | 1 | `mr:0317-patricius` |  | GB |  |
+| 17 | (1) | `mr:0317-patricius` |  | GB |  |
 | 17 | 2 | `mr:0317-alexandria` |  | EG |  |
 | 17 | 3 | `mr:0317-agricola` |  | FR |  |
 | 17 | 4 | `mr:0317-gertrudis` |  | BE |  |
@@ -185,7 +185,7 @@
 | 17 | 7 | `mr:0317-ioannes-sarkander` |  | CZ |  |
 | 17 | 8 | `mr:0317-gabriel-lalemant` |  | CA |  |
 | 17 | 9 | `mr:0317-ioannes-nepomucenus-zegri-y-moreno` | * | ES |  |
-| 18 | 1 | `mr:0318-cyrillus` |  | IL |  |
+| 18 | (1) | `mr:0318-cyrillus` |  | IL |  |
 | 18 | 2 | `mr:0318-alexander` |  | IL |  |
 | 18 | 3 | `mr:0318-frigdianus` |  | IT |  |
 | 18 | 4 | `mr:0318-leobardus` |  | FR |  |
@@ -195,7 +195,7 @@
 | 18 | 8 | `mr:0318-salvator-de-horta-grionesos` |  | IT |  |
 | 18 | 9 | `mr:0318-ioannes-thules` | * | GB |  |
 | 18 | 10 | `mr:0318-salvator-visconti` | * | FR |  |
-| 19 | 1 | `mr:0319-ioseph` |  | PS |  |
+| 19 | (1) | `mr:0319-ioseph` |  | PS |  |
 | 19 | 2 | `mr:0319-ioannes` |  | IT |  |
 | 19 | 3 | `mr:0319-isnardus-de-chiampo` | * | IT |  |
 | 19 | 4 | `mr:0319-andreas-gallerani` | * | IT |  |
@@ -241,7 +241,7 @@
 | 22 | 7 | `mr:0322-nicolaus-owen` |  | GB |  |
 | 22 | 8 | `mr:0322-franciscus-chartier` | * | FR |  |
 | 22 | 9 | `mr:0322-marianus-gorecki-et-bronislaus-komorowski` | * | PL |  |
-| 23 | 1 | `mr:0323-turibius-de-mogrovejo` |  | PE |  |
+| 23 | (1) | `mr:0323-turibius-de-mogrovejo` |  | PE |  |
 | 23 | 2 | `mr:0323-fingar` | * | GB |  |
 | 23 | 3 | `mr:0323-victorianus` |  | TN |  |
 | 23 | 4 | `mr:0323-gualterius` | * | FR |  |
@@ -261,7 +261,7 @@
 | 24 | 6 | `mr:0324-catharina` |  | SE |  |
 | 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus-lopez-caamano` | * | ES |  |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL |  |
-| 25 | 1 | `mr:0325-annuntiatio-domini` |  |  |  |
+| 25 | (1) | `mr:0325-annuntiatio-domini` |  |  |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS |  |
 | 25 | 3 | `mr:0325-dula` |  | TR |  |
 | 25 | 4 | `mr:0325-quirinus` |  | IT |  |
@@ -330,7 +330,7 @@
 | 31 | 1 | `mr:0331-beniamin` |  | IR |  |
 | 31 | 2 | `mr:0331-balbina` |  | IT |  |
 | 31 | 3 | `mr:0331-agilolphus` | * | DE |  |
-| 31 | 4 | `mr:0331-domninus` | * | IT |  |
+| 31 | 4 | `mr:0331-guido` | * | IT |  |
 | 31 | 5 | `mr:0331-ioanna` | * | FR |  |
 | 31 | 6 | `mr:0331-bonaventura-de-foro-livii` | * | IT |  |
 | 31 | 7 | `mr:0331-christophorus-robinson` | * | GB |  |

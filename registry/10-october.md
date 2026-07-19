@@ -1,10 +1,10 @@
 # October
 
-401 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+401 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:1001-teresia-a-iesu-infante` |  | FR |  |
+| 1 | (1) | `mr:1001-teresia-a-iesu-infante` |  | FR |  |
 | 1 | 2 | `mr:1001-piato` |  | FR |  |
 | 1 | 3 | `mr:1001-verissimus-et-socii` |  | PT |  |
 | 1 | 4 | `mr:1001-romanus` |  | TR |  |
@@ -19,7 +19,7 @@
 | 1 | 13 | `mr:1001-florentia-caerols-martinez` | * | ES |  |
 | 1 | 14 | `mr:1001-alvarus-sanjuan-canet` | * | ES |  |
 | 1 | 15 | `mr:1001-antonius-rewera` | * | DE |  |
-| 2 | 1 | `mr:1002-angeli-custodes` |  |  |  |
+| 2 | (1) | `mr:1002-angeli-custodes` |  |  |  |
 | 2 | 2 | `mr:1002-eleutherius` |  | TR |  |
 | 2 | 3 | `mr:1002-saturius` | * | ES |  |
 | 2 | 4 | `mr:1002-leodegarius` |  | FR |  |
@@ -46,7 +46,7 @@
 | 3 | 10 | `mr:1003-adalgottus` | * | CH |  |
 | 3 | 11 | `mr:1003-ambrosius-franciscus-ferro-et-socii` | * | BR |  |
 | 3 | 12 | `mr:1003-crescentius-garcia-pobo` | * | ES |  |
-| 4 | 1 | `mr:1004-franciscus` |  | IT |  |
+| 4 | (1) | `mr:1004-franciscus` |  | IT |  |
 | 4 | 2 | `mr:1004-petronius` |  | IT |  |
 | 4 | 3 | `mr:1004-quintinus` | * | FR |  |
 | 4 | 4 | `mr:1004-aurea` |  | FR |  |
@@ -74,7 +74,7 @@
 | 5 | 18 | `mr:1005-tranquillinus-ubiarco` |  | MX |  |
 | 5 | 19 | `mr:1005-maria-faustina-kowalska` |  | PL |  |
 | 5 | 20 | `mr:1005-marianus-skrzypczak` | * | PL |  |
-| 6 | 1 | `mr:1006-bruno` |  | DE |  |
+| 6 | (1) | `mr:1006-bruno` |  | DE |  |
 | 6 | 2 | `mr:1006-sagaris` |  | TR |  |
 | 6 | 3 | `mr:1006-fideus` |  | FR |  |
 | 6 | 4 | `mr:1006-renatus` |  | IT |  |
@@ -90,7 +90,7 @@
 | 6 | 14 | `mr:1006-maria-rosa-durocher` | * | CA |  |
 | 6 | 15 | `mr:1006-franciscus-tran-van-trung` |  | VN |  |
 | 6 | 16 | `mr:1006-isidorus-a-sancto-ioseph-de-loor` | * | BE |  |
-| 7 | 1 | `mr:1007-maria-de-rosario` |  |  |  |
+| 7 | (1) | `mr:1007-maria-de-rosario` |  |  |  |
 | 7 | 2 | `mr:1007-marcellus` |  | IT |  |
 | 7 | 3 | `mr:1007-iustina` |  | IT |  |
 | 7 | 4 | `mr:1007-sergius-et-bacchus` |  | SY |  |
@@ -107,8 +107,8 @@
 | 8 | 5 | `mr:1008-ragenfredis` | * | FR |  |
 | 8 | 6 | `mr:1008-hugo` | * | IT |  |
 | 8 | 7 | `mr:1008-ioannes-adams-et-socii` | * | GB |  |
-| 9 | 1 | `mr:1009-dionysius-et-socii` |  | FR |  |
-| 9 | 2 | `mr:1009-ioannes-leonardus` |  | IT |  |
+| 9 | (1) | `mr:1009-dionysius-et-socii` |  | FR |  |
+| 9 | (2) | `mr:1009-ioannes-leonardus` |  | IT |  |
 | 9 | 3 | `mr:1009-abraham` |  | IQ |  |
 | 9 | 4 | `mr:1009-diodorus-et-socii` |  | SY |  |
 | 9 | 5 | `mr:1009-domninus-iuliam` |  | IT |  |
@@ -179,7 +179,7 @@
 | 13 | 11 | `mr:1013-chelidona` |  | IT |  |
 | 13 | 12 | `mr:1013-magdalena-panatieri` | * | IT |  |
 | 13 | 13 | `mr:1013-alexandrina-maria-da-costa` | * | PT |  |
-| 14 | 1 | `mr:1014-callistus-i` |  | IT |  |
+| 14 | (1) | `mr:1014-callistus-i` |  | IT |  |
 | 14 | 2 | `mr:1014-lupulus` |  | IT |  |
 | 14 | 3 | `mr:1014-gaudentius` |  | IT |  |
 | 14 | 4 | `mr:1014-donatianus` |  | BE |  |
@@ -192,7 +192,7 @@
 | 14 | 11 | `mr:1014-anna-maria-aranda-riera` | * | ES |  |
 | 14 | 12 | `mr:1014-stanislaus-mysakowski-et-franciscus-ros-aniec` | * | DE |  |
 | 14 | 13 | `mr:1014-romanus-lysko` | * | UA |  |
-| 15 | 1 | `mr:1015-teresia-a-iesu` |  | ES |  |
+| 15 | (1) | `mr:1015-teresia-a-iesu` |  | ES |  |
 | 15 | 2 | `mr:1015-barsen` |  | TR |  |
 | 15 | 3 | `mr:1015-severus` |  | DE |  |
 | 15 | 4 | `mr:1015-thecla` |  | DE |  |
@@ -200,8 +200,8 @@
 | 15 | 6 | `mr:1015-gundisalvus-de-lacobriga` | * | PT |  |
 | 15 | 7 | `mr:1015-magdalena` |  | JP |  |
 | 15 | 8 | `mr:1015-narcissus-baste-baste` | * | ES |  |
-| 16 | 1 | `mr:1016-hedwigis` |  | PL |  |
-| 16 | 2 | `mr:1016-margarita-maria-alacoque` |  | FR |  |
+| 16 | (1) | `mr:1016-hedwigis` |  | PL |  |
+| 16 | (2) | `mr:1016-margarita-maria-alacoque` |  | FR |  |
 | 16 | 3 | `mr:1016-longinus` |  | IL |  |
 | 16 | 4 | `mr:1016-eliphius` |  | FR |  |
 | 16 | 5 | `mr:1016-martinianus-et-saturianus` |  | TN |  |
@@ -217,7 +217,7 @@
 | 16 | 15 | `mr:1016-gerardus-claravallensis` | * | FR |  |
 | 16 | 16 | `mr:1016-gerardus-maiella` |  | IT |  |
 | 16 | 17 | `mr:1016-anicetus-koplinski` | * | PL |  |
-| 17 | 1 | `mr:1017-ignatius` |  | TR |  |
+| 17 | (1) | `mr:1017-ignatius` |  | TR |  |
 | 17 | 2 | `mr:1017-osea` |  | PS |  |
 | 17 | 3 | `mr:1017-rufus-et-zosimus` |  | IT |  |
 | 17 | 4 | `mr:1017-volitani` |  | TN |  |
@@ -236,7 +236,7 @@
 | 17 | 17 | `mr:1017-fidel-fuidio-rodriguez` | * | ES |  |
 | 17 | 18 | `mr:1017-raymundus-stephanus-bou-pascual` | * | ES |  |
 | 17 | 19 | `mr:1017-tarsilla-cordoba-belda` | * | ES |  |
-| 18 | 1 | `mr:1018-lucas` |  | TR |  |
+| 18 | (1) | `mr:1018-lucas` |  | TR |  |
 | 18 | 2 | `mr:1018-asclepiades` |  | TR |  |
 | 18 | 3 | `mr:1018-proculus` |  | IT |  |
 | 18 | 4 | `mr:1018-amabilis` | * | FR |  |
@@ -244,8 +244,8 @@
 | 18 | 6 | `mr:1018-petrus-de-alcantara` |  | ES |  |
 | 18 | 7 | `mr:1018-isaac-jogues` |  | US |  |
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT |  |
-| 19 | 1 | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US |  |
-| 19 | 2 | `mr:1019-paulus-a-cruce` |  | IT |  |
+| 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US |  |
+| 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT |  |
 | 19 | 3 | `mr:1019-ioel` |  | PS |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT |  |
 | 19 | 5 | `mr:1019-asterius` |  | IT |  |
@@ -293,7 +293,7 @@
 | 22 | 9 | `mr:1022-benedictus` | * | FR |  |
 | 22 | 10 | `mr:1022-nunilo-et-alodia` |  | ES |  |
 | 22 | 11 | `mr:1022-donatus-scotus` |  | IT |  |
-| 23 | 1 | `mr:1023-ioannes-de-capestrano` |  | HU |  |
+| 23 | (1) | `mr:1023-ioannes-de-capestrano` |  | HU |  |
 | 23 | 2 | `mr:1023-servandus-et-germanus` |  | ES |  |
 | 23 | 3 | `mr:1023-ioannes-perside` |  | IR |  |
 | 23 | 4 | `mr:1023-theodoretus` |  | TR |  |
@@ -314,7 +314,7 @@
 | 23 | 19 | `mr:1023-hildephonsus-garcia-et-iustinianus-cuesta` | * | ES |  |
 | 23 | 20 | `mr:1023-leonardus-olivera-buera` | * | ES |  |
 | 23 | 21 | `mr:1023-ambrosius-leo-lorente-vicente-et-socii` | * | ES |  |
-| 24 | 1 | `mr:1024-antonius-maria-claret` |  | ES |  |
+| 24 | (1) | `mr:1024-antonius-maria-claret` |  | ES |  |
 | 24 | 2 | `mr:1024-cyriacus-et-claudianus` |  | TR |  |
 | 24 | 3 | `mr:1024-proclus` |  | TR |  |
 | 24 | 4 | `mr:1024-aretha-et-socii` |  | SA |  |
@@ -359,7 +359,7 @@
 | 27 | 5 | `mr:1027-otteranus` | * | GB |  |
 | 27 | 6 | `mr:1027-bartholomaeus-de-bregantia` | * | IT |  |
 | 27 | 7 | `mr:1027-salvator-mollar-ventura` | * | ES |  |
-| 28 | 1 | `mr:1028-simon-et-iudas` |  | PS |  |
+| 28 | (1) | `mr:1028-simon-et-iudas` |  | PS |  |
 | 28 | 2 | `mr:1028-ferrutius` |  | DE |  |
 | 28 | 3 | `mr:1028-fidel` |  | IT |  |
 | 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES |  |

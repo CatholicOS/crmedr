@@ -1,6 +1,6 @@
 # February
 
-322 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+322 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju` |  | KR |  |
 | 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione-michelotti` | * | IT |  |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO |  |
-| 2 | 1 | `mr:0202-praesentatio-domini` |  | IL |  |
+| 2 | (1) | `mr:0202-praesentatio-domini` |  | IL |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR |  |
 | 2 | 3 | `mr:0202-laurentius` |  | GB |  |
 | 2 | 4 | `mr:0202-burchardus` |  | DE |  |
@@ -36,8 +36,8 @@
 | 2 | 12 | `mr:0202-maria-catharina-kasper` | * | DE |  |
 | 2 | 13 | `mr:0202-andreas-carolus-ferrari` | * | IT |  |
 | 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT |  |
-| 3 | 1 | `mr:0203-blasius` |  | TR |  |
-| 3 | 2 | `mr:0203-ansgarius` |  | DE |  |
+| 3 | (1) | `mr:0203-blasius` |  | TR |  |
+| 3 | (2) | `mr:0203-ansgarius` |  | DE |  |
 | 3 | 3 | `mr:0203-simeon-et-anna` |  | IL |  |
 | 3 | 4 | `mr:0203-celerinus` |  | TN |  |
 | 3 | 5 | `mr:0203-leonius` | * | FR |  |
@@ -64,7 +64,7 @@
 | 4 | 11 | `mr:0204-ioannes-speed` | * | GB |  |
 | 4 | 12 | `mr:0204-iosephus-de-leonessa` |  | IT |  |
 | 4 | 13 | `mr:0204-ioannes-de-brito` |  | IN |  |
-| 5 | 1 | `mr:0205-agatha` |  | IT |  |
+| 5 | (1) | `mr:0205-agatha` |  | IT |  |
 | 5 | 2 | `mr:0205-plurimi-martyres-ponto` |  | TR |  |
 | 5 | 3 | `mr:0205-avitus` |  | FR |  |
 | 5 | 4 | `mr:0205-ingenuinus` |  | IT |  |
@@ -76,7 +76,7 @@
 | 5 | 10 | `mr:0205-francisca-meziere` | * | FR |  |
 | 5 | 11 | `mr:0205-elisabeth-canori-mora` | * | IT |  |
 | 5 | 12 | `mr:0205-iesu-mendez` |  | MX |  |
-| 6 | 1 | `mr:0206-paulus-miki-et-socii` |  | JP |  |
+| 6 | (1) | `mr:0206-paulus-miki-et-socii` |  | JP |  |
 | 6 | 2 | `mr:0206-antolianus` |  | FR |  |
 | 6 | 3 | `mr:0206-silvanus` |  | SY |  |
 | 6 | 4 | `mr:0206-dorothea` |  | TR |  |
@@ -109,8 +109,8 @@
 | 7 | 17 | `mr:0207-anselmus-polanco` | * | ES |  |
 | 7 | 18 | `mr:0207-adalbertus-nierychlewski` | * | PL |  |
 | 7 | 19 | `mr:0207-petrus-verhun` | * | RU |  |
-| 8 | 1 | `mr:0208-hieronymus-emiliani` |  | IT |  |
-| 8 | 2 | `mr:0208-iosephina-bakhita` |  | SD |  |
+| 8 | (1) | `mr:0208-hieronymus-emiliani` |  | IT |  |
+| 8 | (2) | `mr:0208-iosephina-bakhita` |  | SD |  |
 | 8 | 3 | `mr:0208-cointha` |  | EG |  |
 | 8 | 4 | `mr:0208-iuventius` |  | IT |  |
 | 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR |  |
@@ -131,7 +131,7 @@
 | 9 | 8 | `mr:0209-alto` | * | DE |  |
 | 9 | 9 | `mr:0209-rainaldus` | * | IT |  |
 | 9 | 10 | `mr:0209-michael-febres-cordero` | * | ES |  |
-| 10 | 1 | `mr:0210-scholastica` |  | IT |  |
+| 10 | (1) | `mr:0210-scholastica` |  | IT |  |
 | 10 | 2 | `mr:0210-chalarampus-et-socii` |  | TR |  |
 | 10 | 3 | `mr:0210-zoticus-et-amantius` |  | IT |  |
 | 10 | 4 | `mr:0210-silvanus` |  | IT |  |
@@ -144,7 +144,7 @@
 | 10 | 11 | `mr:0210-petrus-fremond-et-socii` | * | FR |  |
 | 10 | 12 | `mr:0210-eusebia-palomino-yenes` | * | ES |  |
 | 10 | 13 | `mr:0210-aloysius-stepinac` | * | HR |  |
-| 11 | 1 | `mr:0211-maria-de-lourdes` |  | FR |  |
+| 11 | (1) | `mr:0211-maria-de-lourdes` |  | FR |  |
 | 11 | 2 | `mr:0211-soter` |  | IT |  |
 | 11 | 3 | `mr:0211-plurimi-martyres-numidia` |  | DZ |  |
 | 11 | 4 | `mr:0211-castrensis` |  | IT |  |
@@ -176,7 +176,7 @@
 | 13 | 12 | `mr:0213-eustochius-bellinus` | * | IT |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN |  |
 | 13 | 14 | `mr:0213-paulus-le-van-loc` |  | VN |  |
-| 14 | 1 | `mr:0214-cyrillus` |  | HR |  |
+| 14 | (1) | `mr:0214-cyrillus` |  | HR |  |
 | 14 | 2 | `mr:0214-valentinus` |  | IT |  |
 | 14 | 3 | `mr:0214-vitalis` |  | IT |  |
 | 14 | 4 | `mr:0214-zeno` |  | IT |  |
@@ -204,7 +204,7 @@
 | 16 | 4 | `mr:0216-petrus` | * | IT |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT |  |
-| 17 | 1 | `mr:0217-septem-fundatores-servorum-mariae` |  | IT |  |
+| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT |  |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM |  |
@@ -249,14 +249,14 @@
 | 20 | 6 | `mr:0220-leo` |  | IT |  |
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT |  |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL |  |
-| 21 | 1 | `mr:0221-petrus-damianus` |  | IT |  |
+| 21 | (1) | `mr:0221-petrus-damianus` |  | IT |  |
 | 21 | 2 | `mr:0221-eustatius` |  | TR |  |
 | 21 | 3 | `mr:0221-germanus` | * | CH |  |
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB |  |
 | 21 | 5 | `mr:0221-robertus-southwell` |  | GB |  |
 | 21 | 6 | `mr:0221-natalis-pinot` | * | FR |  |
 | 21 | 7 | `mr:0221-maria-henrica-dominicus` | * | IT |  |
-| 22 | 1 | `mr:0222-cathedra-sancti-petri` |  |  |  |
+| 22 | (1) | `mr:0222-cathedra-sancti-petri` |  |  |  |
 | 22 | 2 | `mr:0222-papias` |  | TR |  |
 | 22 | 3 | `mr:0222-paschasius` |  | FR |  |
 | 22 | 4 | `mr:0222-maximianus` |  | IT |  |
@@ -265,7 +265,7 @@
 | 22 | 7 | `mr:0222-margarita` |  | IT |  |
 | 22 | 8 | `mr:0222-didacus-carvalho` | * | JP |  |
 | 22 | 9 | `mr:0222-maria-a-iesu` | * | IT |  |
-| 23 | 1 | `mr:0223-polycarpus` |  | TR |  |
+| 23 | (1) | `mr:0223-polycarpus` |  | TR |  |
 | 23 | 2 | `mr:0223-sirenus` |  | RS |  |
 | 23 | 3 | `mr:0223-milburga` |  | GB |  |
 | 23 | 4 | `mr:0223-willigisus` | * | DE |  |

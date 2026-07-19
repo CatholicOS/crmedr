@@ -41,6 +41,52 @@ ID_CORRECTIONS = {
     # (entry 9*); the Italian (CEI) edition places him at December 10 (entry
     # 9*). The MMDD anchor follows the Latin print.
     "mr:1210-marcus-antonius-durando": "mr:0610-marcus-antonius-durando",
+    # The elogium's first-named subject is San Guido, abbot; "Domninus" comes
+    # from the place name (Burgi Sancti Domnini, Borgo San Donnino, today
+    # Fidenza). Rule 1: the slug is the first-named subject.
+    "mr:0331-domninus": "mr:0331-guido",
+}
+
+# Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
+# both editions (celebrations with liturgical rank: solemnities, feasts,
+# memorias — including days with two or three memorias). Maps (month, day) ->
+# number of unnumbered leading entries; the printed numbering counts them
+# implicitly, so the workbook entry numbers stay aligned. Derived mechanically
+# from the full-corpus sweep of both OCR layers (July 2026).
+UNNUMBERED_LEADS = {
+    (1, 1): 1, (1, 2): 1, (1, 3): 1, (1, 6): 1, (1, 7): 1, (1, 13): 1,
+    (1, 17): 1, (1, 20): 2, (1, 21): 1, (1, 22): 1, (1, 24): 1, (1, 25): 1,
+    (1, 26): 1, (1, 27): 1, (1, 28): 1, (1, 31): 1, (2, 2): 1, (2, 3): 2,
+    (2, 5): 1, (2, 6): 1, (2, 8): 2, (2, 10): 1, (2, 11): 1, (2, 14): 1,
+    (2, 17): 1, (2, 21): 1, (2, 22): 1, (2, 23): 1, (3, 4): 1, (3, 7): 1,
+    (3, 8): 1, (3, 9): 1, (3, 17): 1, (3, 18): 1, (3, 19): 1, (3, 23): 1,
+    (3, 25): 1, (4, 2): 1, (4, 4): 1, (4, 5): 1, (4, 7): 1, (4, 11): 1,
+    (4, 13): 1, (4, 21): 1, (4, 23): 2, (4, 24): 1, (4, 25): 1, (4, 28): 2,
+    (4, 29): 1, (4, 30): 1, (5, 1): 1, (5, 2): 1, (5, 3): 1, (5, 12): 2,
+    (5, 13): 1, (5, 14): 1, (5, 18): 1, (5, 20): 1, (5, 21): 1, (5, 22): 1,
+    (5, 25): 3, (5, 26): 1, (5, 27): 1, (5, 31): 1, (6, 1): 1, (6, 2): 1,
+    (6, 3): 1, (6, 5): 1, (6, 6): 1, (6, 9): 1, (6, 11): 1, (6, 13): 1,
+    (6, 19): 1, (6, 21): 1, (6, 22): 2, (6, 24): 1, (6, 27): 1, (6, 28): 1,
+    (6, 29): 1, (6, 30): 1, (7, 3): 1, (7, 4): 1, (7, 5): 1, (7, 6): 1,
+    (7, 9): 1, (7, 11): 1, (7, 13): 1, (7, 14): 1, (7, 15): 1, (7, 16): 1,
+    (7, 20): 1, (7, 21): 1, (7, 22): 1, (7, 23): 1, (7, 24): 1, (7, 25): 1,
+    (7, 26): 1, (7, 29): 1, (7, 30): 1, (7, 31): 1, (8, 1): 1, (8, 2): 2,
+    (8, 4): 1, (8, 5): 1, (8, 6): 1, (8, 7): 2, (8, 8): 1, (8, 9): 1,
+    (8, 10): 1, (8, 11): 1, (8, 12): 1, (8, 13): 1, (8, 14): 1, (8, 15): 1,
+    (8, 16): 1, (8, 19): 1, (8, 20): 1, (8, 21): 1, (8, 22): 1, (8, 23): 1,
+    (8, 24): 1, (8, 25): 2, (8, 27): 1, (8, 28): 1, (8, 29): 1, (9, 3): 1,
+    (9, 8): 1, (9, 9): 1, (9, 12): 1, (9, 13): 1, (9, 14): 1, (9, 15): 1,
+    (9, 16): 1, (9, 17): 1, (9, 19): 1, (9, 20): 1, (9, 21): 1, (9, 23): 1,
+    (9, 26): 1, (9, 27): 1, (9, 28): 2, (9, 29): 1, (9, 30): 1, (10, 1): 1,
+    (10, 2): 1, (10, 4): 1, (10, 6): 1, (10, 7): 1, (10, 9): 2, (10, 14): 1,
+    (10, 15): 1, (10, 16): 2, (10, 17): 1, (10, 18): 1, (10, 19): 2, (10, 23): 1,
+    (10, 24): 1, (10, 28): 1, (11, 1): 1, (11, 2): 1, (11, 3): 1, (11, 4): 1,
+    (11, 9): 1, (11, 10): 1, (11, 11): 1, (11, 12): 1, (11, 15): 1, (11, 16): 2,
+    (11, 17): 1, (11, 18): 1, (11, 21): 1, (11, 22): 1, (11, 23): 2, (11, 24): 1,
+    (11, 25): 1, (11, 30): 1, (12, 3): 1, (12, 4): 1, (12, 6): 1, (12, 7): 1,
+    (12, 8): 1, (12, 9): 1, (12, 11): 1, (12, 12): 1, (12, 13): 1, (12, 14): 1,
+    (12, 21): 1, (12, 23): 1, (12, 25): 1, (12, 26): 1, (12, 27): 1, (12, 28): 1,
+    (12, 29): 1, (12, 31): 1,
 }
 
 # Placement overrides: the digitized workbook records the Italian (CEI)
@@ -218,6 +264,9 @@ def extract(workbook_path):
                 row_out["note"] = (row_out.get("note", "") + " " + p_note).strip()
             if mr_id in ENTRY_NOTES:
                 row_out["note"] = (row_out.get("note", "") + " " + ENTRY_NOTES[mr_id]).strip()
+            leads = UNNUMBERED_LEADS.get((row_out["month"], row_out["day"]), 0)
+            if row_out["entry"] is not None and row_out["entry"] <= leads:
+                row_out["unnumbered"] = True
             rows.append(row_out)
 
     # Merge duplicate IDs (the leap-day elogia): keep the Feb 29 placement as
@@ -277,8 +326,11 @@ def write_markdown(entries, repo_root):
             "",
             f"{len(month_entries)} canonical IDs. "
             "`Entry` is the elogium's position within the day in the digitized workbook "
-            "(editio altera 2004); `*` marks asterisked entries; `Country` is the "
-            "ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.",
+            "(editio altera 2004); an entry number in parentheses marks an unnumbered "
+            "header elogium (a drop-cap paragraph for a celebration with liturgical "
+            "rank, counted but not printed as a number); `*` marks asterisked entries; "
+            "`Country` is the ISO 3166-1 alpha-2 code of the modern country of the "
+            "place of the elogium.",
             "",
             "| Day | Entry | ID | * | Country | Notes |",
             "| --- | --- | --- | --- | --- | --- |",
@@ -290,8 +342,14 @@ def write_markdown(entries, repo_root):
                     notes.append(f"also printed at {a['month']}/{a['day']} entry {a['entry']}")
             if e.get("note"):
                 notes.append(e["note"])
+            if e["entry"] is None:
+                entry_cell = "—"
+            elif e.get("unnumbered"):
+                entry_cell = f"({e['entry']})"
+            else:
+                entry_cell = str(e["entry"])
             lines.append(
-                f"| {e['day']} | {e['entry'] if e['entry'] is not None else '—'} "
+                f"| {e['day']} | {entry_cell} "
                 f"| `{e['id']}` | {'*' if e['asterisk'] else ''} "
                 f"| {e['country'] or ''} | {' '.join(notes)} |"
             )

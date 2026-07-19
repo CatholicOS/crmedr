@@ -1,6 +1,6 @@
 # April
 
-374 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+374 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -14,7 +14,7 @@
 | 1 | 8 | `mr:0401-gilbertus` | * | GB |  |
 | 1 | 9 | `mr:0401-ioannes-bretton` | * | GB |  |
 | 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT |  |
-| 2 | 1 | `mr:0402-franciscus-de-paula` |  | IT |  |
+| 2 | (1) | `mr:0402-franciscus-de-paula` |  | IT |  |
 | 2 | 2 | `mr:0402-apphianus` |  | PS |  |
 | 2 | 3 | `mr:0402-theodora` |  | LB |  |
 | 2 | 4 | `mr:0402-abundius` |  | IT |  |
@@ -42,7 +42,7 @@
 | 3 | 10 | `mr:0403-robertus-middleton` | * | GB |  |
 | 3 | 11 | `mr:0403-aloysius-scrosoppi` |  | IT |  |
 | 3 | 12 | `mr:0403-petrus-eduardus-dankowski` | * | PL |  |
-| 4 | 1 | `mr:0404-isidorus` |  | ES |  |
+| 4 | (1) | `mr:0404-isidorus` |  | ES |  |
 | 4 | 2 | `mr:0404-agathopodus` |  | GR |  |
 | 4 | 3 | `mr:0404-ambrosius` |  | IT |  |
 | 4 | 4 | `mr:0404-platon` |  | TR |  |
@@ -52,7 +52,7 @@
 | 4 | 8 | `mr:0404-iosephus-benedictus-dusmet` | * | IT |  |
 | 4 | 9 | `mr:0404-franciscus-marto` | * | PT |  |
 | 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT |  |
-| 5 | 1 | `mr:0405-vincentius-ferrer` |  | FR |  |
+| 5 | (1) | `mr:0405-vincentius-ferrer` |  | FR |  |
 | 5 | 2 | `mr:0405-irenes` |  | GR |  |
 | 5 | 3 | `mr:0405-pherbutha` |  | IR |  |
 | 5 | 4 | `mr:0405-centum-undecim-viri-novem-mulieres-martyres` |  | IR |  |
@@ -77,7 +77,7 @@
 | 6 | 13 | `mr:0406-zephyrinus-agostini` | * | IT |  |
 | 6 | 14 | `mr:0406-michael-rua` | * | IT |  |
 | 6 | 15 | `mr:0406-petrina-morosini` | * | IT |  |
-| 7 | 1 | `mr:0407-ioannes-baptista-de-la-salle` |  | FR |  |
+| 7 | (1) | `mr:0407-ioannes-baptista-de-la-salle` |  | FR |  |
 | 7 | 2 | `mr:0407-hegesippus` |  | IT |  |
 | 7 | 3 | `mr:0407-pelusius` |  | EG |  |
 | 7 | 4 | `mr:0407-theodorus` |  | LY |  |
@@ -126,7 +126,7 @@
 | 10 | 9 | `mr:0410-michael-de-sanctis` |  | ES |  |
 | 10 | 10 | `mr:0410-magdalena-de-canossa` |  | IT |  |
 | 10 | 11 | `mr:0410-bonifatius-zukowski` | * | DE |  |
-| 11 | 1 | `mr:0411-stanislaus` |  | PL |  |
+| 11 | (1) | `mr:0411-stanislaus` |  | PL |  |
 | 11 | 2 | `mr:0411-antipa` |  | TR |  |
 | 11 | 3 | `mr:0411-philippus` |  | GR |  |
 | 11 | 4 | `mr:0411-domnio` |  | HR |  |
@@ -152,7 +152,7 @@
 | 12 | 11 | `mr:0412-teresia-a-iesu-fernandez-solar` |  | CL |  |
 | 12 | 12 | `mr:0412-iosephus-moscati` |  | IT |  |
 | 12 | 13 | `mr:0412-ioseph` |  | MX |  |
-| 13 | 1 | `mr:0413-martinus-i` |  | TR |  |
+| 13 | (1) | `mr:0413-martinus-i` |  | TR |  |
 | 13 | 2 | `mr:0413-carpus-et-thyatirensis` |  | TR |  |
 | 13 | 3 | `mr:0413-ursus` |  | IT |  |
 | 13 | 4 | `mr:0413-hermenegildus` |  | ES |  |
@@ -258,7 +258,7 @@
 | 20 | 18 | `mr:0420-franciscus-page` | * | GB |  |
 | 20 | 19 | `mr:0420-clara-bosatta` | * | IT |  |
 | 20 | 20 | `mr:0420-anastasius-pankiewicz` | * | DE |  |
-| 21 | 1 | `mr:0421-anselmus` |  | IT |  |
+| 21 | (1) | `mr:0421-anselmus` |  | IT |  |
 | 21 | 2 | `mr:0421-apollonius` |  | IT |  |
 | 21 | 3 | `mr:0421-aristus` |  | EG |  |
 | 21 | 4 | `mr:0421-anastasius` |  | EG |  |
@@ -278,8 +278,8 @@
 | 22 | 9 | `mr:0422-opportuna` | * | FR |  |
 | 22 | 10 | `mr:0422-senorina` | * | PT |  |
 | 22 | 11 | `mr:0422-franciscus-venimbeni` | * | IT |  |
-| 23 | 1 | `mr:0423-georgius` |  | IL |  |
-| 23 | 2 | `mr:0423-adalbertus` |  | CZ |  |
+| 23 | (1) | `mr:0423-georgius` |  | IL |  |
+| 23 | (2) | `mr:0423-adalbertus` |  | CZ |  |
 | 23 | 3 | `mr:0423-eulogius` |  | TR |  |
 | 23 | 4 | `mr:0423-marolus` |  | IT |  |
 | 23 | 5 | `mr:0423-gerardus` |  | FR |  |
@@ -288,7 +288,7 @@
 | 23 | 8 | `mr:0423-helena-valentinus` | * | IT |  |
 | 23 | 9 | `mr:0423-teresia-maria-a-cruce-manetti` | * | IT |  |
 | 23 | 10 | `mr:0423-maria-gabriela-sagheddu` | * | IT |  |
-| 24 | 1 | `mr:0424-fidel-de-sigmaringa` |  | CH |  |
+| 24 | (1) | `mr:0424-fidel-de-sigmaringa` |  | CH |  |
 | 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | IL |  |
 | 24 | 3 | `mr:0424-alexander` |  | FR |  |
 | 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR |  |
@@ -301,7 +301,7 @@
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia-pelletier` |  | FR |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT |  |
-| 25 | 1 | `mr:0425-marcus` |  | IL |  |
+| 25 | (1) | `mr:0425-marcus` |  | IL |  |
 | 25 | 2 | `mr:0425-anianus` |  | EG |  |
 | 25 | 3 | `mr:0425-pasicratis-et-valentio` |  | BG |  |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR |  |
@@ -337,8 +337,8 @@
 | 27 | 11 | `mr:0427-nicolaus-roland` | * | FR |  |
 | 27 | 12 | `mr:0427-laurentius-nguyen-van-huong` |  | VN |  |
 | 27 | 13 | `mr:0427-maria-antonia-bandres-y-elosegui` | * | ES |  |
-| 28 | 1 | `mr:0428-petrus-chanel` |  | WF |  |
-| 28 | 2 | `mr:0428-ludovicus-maria-grignion-de-montfort` |  | FR |  |
+| 28 | (1) | `mr:0428-petrus-chanel` |  | WF |  |
+| 28 | (2) | `mr:0428-ludovicus-maria-grignion-de-montfort` |  | FR |  |
 | 28 | 3 | `mr:0428-aphrodisius` |  | FR |  |
 | 28 | 4 | `mr:0428-eusebius-et-socii` |  | TR |  |
 | 28 | 5 | `mr:0428-vitalis` |  | IT |  |
@@ -350,14 +350,14 @@
 | 28 | 11 | `mr:0428-paulus-pham-khac-khoan` |  | VN |  |
 | 28 | 12 | `mr:0428-iosephus-cebula` | * | AT |  |
 | 28 | 13 | `mr:0428-ioanna-beretta-molla` |  | IT |  |
-| 29 | 1 | `mr:0429-catharina-senensis` |  | IT |  |
+| 29 | (1) | `mr:0429-catharina-senensis` |  | IT |  |
 | 29 | 2 | `mr:0429-tychicus` | * |  |  |
 | 29 | 3 | `mr:0429-torpes` |  | IT |  |
 | 29 | 4 | `mr:0429-severus` |  | IT |  |
 | 29 | 5 | `mr:0429-hugo` |  | FR |  |
 | 29 | 6 | `mr:0429-achardus` | * | FR |  |
 | 29 | 7 | `mr:0429-antonius-kim-song-u` |  | KR |  |
-| 30 | 1 | `mr:0430-pius-v` |  | IT |  |
+| 30 | (1) | `mr:0430-pius-v` |  | IT |  |
 | 30 | 2 | `mr:0430-sophia` |  | IT |  |
 | 30 | 3 | `mr:0430-quirinus` |  | IT |  |
 | 30 | 4 | `mr:0430-eutropius` |  | FR |  |

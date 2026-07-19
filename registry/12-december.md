@@ -1,6 +1,6 @@
 # December
 
-300 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+300 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -27,14 +27,14 @@
 | 2 | 7 | `mr:1202-maria-angela-astorch` | * | ES |  |
 | 2 | 8 | `mr:1202-raphael-chylinski` | * | PL |  |
 | 2 | 9 | `mr:1202-ivanus-slezyuk` | * | UA |  |
-| 3 | 1 | `mr:1203-franciscus-xavier` |  | ES |  |
+| 3 | (1) | `mr:1203-franciscus-xavier` |  | ES |  |
 | 3 | 2 | `mr:1203-sophonia` |  | PS |  |
 | 3 | 3 | `mr:1203-cassianus` |  | MA |  |
 | 3 | 4 | `mr:1203-birinus` |  | GB |  |
 | 3 | 5 | `mr:1203-lucius` |  | CH | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT |  |
-| 4 | 1 | `mr:1204-ioannes-damasceni` |  | IL |  |
+| 4 | (1) | `mr:1204-ioannes-damasceni` |  | IL |  |
 | 4 | 2 | `mr:1204-barbara` |  | TR |  |
 | 4 | 3 | `mr:1204-heracla` |  | EG |  |
 | 4 | 4 | `mr:1204-meletius` |  | TR |  |
@@ -60,14 +60,14 @@
 | 5 | 7 | `mr:1205-nicolaus-stensen` | * | DE |  |
 | 5 | 8 | `mr:1205-philippus-rinaldi` | * | IT |  |
 | 5 | 9 | `mr:1205-narcissus-putz` | * | DE |  |
-| 6 | 1 | `mr:1206-nicolaus` |  | TR |  |
+| 6 | (1) | `mr:1206-nicolaus` |  | TR |  |
 | 6 | 2 | `mr:1206-asella` |  | IT |  |
 | 6 | 3 | `mr:1206-martyres-africa` |  | TN |  |
 | 6 | 4 | `mr:1206-obitius` | * | IT |  |
 | 6 | 5 | `mr:1206-petrus-pascual` | * | ES |  |
 | 6 | 6 | `mr:1206-iosephus-nguyen-duy-khang` |  | VN |  |
 | 6 | 7 | `mr:1206-aloysia-maria-frias-canizares` | * | ES |  |
-| 7 | 1 | `mr:1207-ambrosius` |  | IT |  |
+| 7 | (1) | `mr:1207-ambrosius` |  | IT |  |
 | 7 | 2 | `mr:1207-sabinus` |  | IT |  |
 | 7 | 3 | `mr:1207-athenodorus` |  | SY |  |
 | 7 | 4 | `mr:1207-urbanus` |  | IT |  |
@@ -75,7 +75,7 @@
 | 7 | 6 | `mr:1207-fara` |  | FR |  |
 | 7 | 7 | `mr:1207-carolus-garnier` |  | CA |  |
 | 7 | 8 | `mr:1207-maria-iosepha-rossello` |  | IT |  |
-| 8 | 1 | `mr:1208-conceptio-immaculata-beatae-mariae-virginis` |  |  |  |
+| 8 | (1) | `mr:1208-conceptio-immaculata-beatae-mariae-virginis` |  |  |  |
 | 8 | 2 | `mr:1208-macarius` |  | EG |  |
 | 8 | 3 | `mr:1208-eutychianus` |  | IT |  |
 | 8 | 4 | `mr:1208-eucharius` |  | DE |  |
@@ -86,7 +86,7 @@
 | 8 | 9 | `mr:1208-narcissa-a-iesu-martillo-moran` | * | PE |  |
 | 8 | 10 | `mr:1208-iosephus-maria-zabal-blasco` | * | ES |  |
 | 8 | 11 | `mr:1208-aloysius-liguda` | * | DE |  |
-| 9 | 1 | `mr:1209-ioannes-didacus-cuauhtlatoatzin` |  | MX |  |
+| 9 | (1) | `mr:1209-ioannes-didacus-cuauhtlatoatzin` |  | MX |  |
 | 9 | 2 | `mr:1209-leocadia` |  | ES |  |
 | 9 | 3 | `mr:1209-syrus` |  | IT |  |
 | 9 | 4 | `mr:1209-gorgonia` |  | TR |  |
@@ -106,7 +106,7 @@
 | 10 | 8 | `mr:1210-ioannes-roberts` |  | GB |  |
 | 10 | 10 | `mr:1210-gundisalvus-vines-masip` | * | ES |  |
 | 10 | 11 | `mr:1210-antonius-martin-hernandez` | * | ES |  |
-| 11 | 1 | `mr:1211-damasus-i` |  | IT |  |
+| 11 | (1) | `mr:1211-damasus-i` |  | IT |  |
 | 11 | 2 | `mr:1211-victoricus-et-fuscianus` |  | FR |  |
 | 11 | 3 | `mr:1211-sabinus` |  | IT |  |
 | 11 | 4 | `mr:1211-daniel-stylita` |  | TR |  |
@@ -118,7 +118,7 @@
 | 11 | 10 | `mr:1211-arthurus-bell` | * | GB |  |
 | 11 | 11 | `mr:1211-maria-a-columna-villalonga-villalba` | * | ES |  |
 | 11 | 12 | `mr:1211-mirabilia-a-iesu-pidal-y-chico-de-guzman` |  | ES |  |
-| 12 | 1 | `mr:1212-maria-de-guadalupe` |  | MX |  |
+| 12 | (1) | `mr:1212-maria-de-guadalupe` |  | MX |  |
 | 12 | 2 | `mr:1212-alexandrini-epimachi-et-alexander` |  | EG |  |
 | 12 | 3 | `mr:1212-spyridon` |  | CY |  |
 | 12 | 4 | `mr:1212-finnianus` | * | IE |  |
@@ -130,7 +130,7 @@
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT |  |
 | 12 | 11 | `mr:1212-simon-phan` |  | VN | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 12 | 12 | `mr:1212-pius-bartosik` | * | PL |  |
-| 13 | 1 | `mr:1213-lucia` |  | IT |  |
+| 13 | (1) | `mr:1213-lucia` |  | IT |  |
 | 13 | 2 | `mr:1213-aristo` |  | IT |  |
 | 13 | 3 | `mr:1213-antiochus` |  | IT |  |
 | 13 | 4 | `mr:1213-eustratius-et-socii` |  | AM |  |
@@ -141,7 +141,7 @@
 | 13 | 9 | `mr:1213-ioanna-francisca-fremiot-de-chantal` |  | FR |  |
 | 13 | 10 | `mr:1213-antonius-grassus` | * | IT |  |
 | 13 | 11 | `mr:1213-petrus-cho-hwa-so-et-socii` |  | KR |  |
-| 14 | 1 | `mr:1214-ioannes-a-cruce` |  | ES |  |
+| 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES |  |
 | 14 | 2 | `mr:1214-hero-et-socii` |  | EG |  |
 | 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR |  |
 | 14 | 4 | `mr:1214-drosis` |  | TR |  |
@@ -205,7 +205,7 @@
 | 20 | 5 | `mr:1220-dominicus` |  | ES |  |
 | 20 | 6 | `mr:1220-vincentius-romano` | * | IT |  |
 | 20 | 7 | `mr:1220-michael-piaszczynski` | * | DE |  |
-| 21 | 1 | `mr:1221-petrus-canisius` |  | DE |  |
+| 21 | (1) | `mr:1221-petrus-canisius` |  | DE |  |
 | 21 | 2 | `mr:1221-michaea` |  | PS |  |
 | 21 | 3 | `mr:1221-themistocles` |  | TR |  |
 | 21 | 4 | `mr:1221-dominicus-spadafora` | * | IT |  |
@@ -218,7 +218,7 @@
 | 22 | 5 | `mr:1222-hungerus` | * | NL |  |
 | 22 | 6 | `mr:1222-thomas-holland` | * | GB |  |
 | 22 | 7 | `mr:1222-francisca-xaveria-cabrini` |  | US |  |
-| 23 | 1 | `mr:1223-ioannes-de-kety` |  | PL |  |
+| 23 | (1) | `mr:1223-ioannes-de-kety` |  | PL |  |
 | 23 | 2 | `mr:1223-theodulus-et-socii` |  | GR |  |
 | 23 | 3 | `mr:1223-servulus` |  | IT |  |
 | 23 | 4 | `mr:1223-ivo` | * | FR |  |
@@ -238,7 +238,7 @@
 | 24 | 6 | `mr:1224-bartholomaeus-maria-dal-monte` | * | IT |  |
 | 24 | 7 | `mr:1224-paula-elisabeth-cerioli` |  | IT |  |
 | 24 | 8 | `mr:1224-sarbelius-makhluf` |  | LB |  |
-| 25 | 1 | `mr:1225-nativitas-domini` |  | IL |  |
+| 25 | (1) | `mr:1225-nativitas-domini` |  | IL |  |
 | 25 | 2 | `mr:1225-anastasia` |  | HR |  |
 | 25 | 3 | `mr:1225-eugenia` |  | IT |  |
 | 25 | 4 | `mr:1225-iovinus-et-basileus` |  | IT |  |
@@ -247,7 +247,7 @@
 | 25 | 7 | `mr:1225-michael-nakashima` | * | JP |  |
 | 25 | 8 | `mr:1225-maria-ab-apostolis-von-wullenweber` | * | IT |  |
 | 25 | 9 | `mr:1225-albertus-chmielowski` |  | PL |  |
-| 26 | 1 | `mr:1226-stephanus` |  | IL |  |
+| 26 | (1) | `mr:1226-stephanus` |  | IL |  |
 | 26 | 2 | `mr:1226-dionysius` |  | IT |  |
 | 26 | 3 | `mr:1226-zeno` |  | PS |  |
 | 26 | 4 | `mr:1226-zosimus` |  | IT |  |
@@ -255,12 +255,12 @@
 | 26 | 6 | `mr:1226-vincentia-maria-lopez-vicuna` |  | ES |  |
 | 26 | 7 | `mr:1226-agnes-phila-et-lucia-khambang` | * | TH |  |
 | 26 | 8 | `mr:1226-secundus-pollo` | * | ME |  |
-| 27 | 1 | `mr:1227-ioannes` |  | PS |  |
+| 27 | (1) | `mr:1227-ioannes` |  | PS |  |
 | 27 | 2 | `mr:1227-fabiola` | * | IT |  |
 | 27 | 3 | `mr:1227-theodorus` |  | TR |  |
 | 27 | 4 | `mr:1227-alaphridus-parte` | * | ES |  |
 | 27 | 5 | `mr:1227-iosephus-maria-corbin-ferrer` | * | ES |  |
-| 28 | 1 | `mr:1228-innocentes` |  | PS |  |
+| 28 | (1) | `mr:1228-innocentes` |  | PS |  |
 | 28 | 2 | `mr:1228-theona` |  | EG |  |
 | 28 | 3 | `mr:1228-antonius` |  | FR |  |
 | 28 | 4 | `mr:1228-matthias-de-nazareis` | * | IT |  |
@@ -268,7 +268,7 @@
 | 28 | 6 | `mr:1228-gaspar-del-bufalo` |  | IT |  |
 | 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT |  |
 | 28 | 8 | `mr:1228-gregorius-khomysyn` | * | UA |  |
-| 29 | 1 | `mr:1229-thomas-becket` |  | GB |  |
+| 29 | (1) | `mr:1229-thomas-becket` |  | GB |  |
 | 29 | 2 | `mr:1229-david` |  | IL |  |
 | 29 | 3 | `mr:1229-trophimus` |  | FR |  |
 | 29 | 4 | `mr:1229-libosus` |  | TN |  |
@@ -294,7 +294,7 @@
 | 30 | 11 | `mr:1230-margarita-colonna` | * | IT |  |
 | 30 | 12 | `mr:1230-eugenia-ravasco` | * | IT |  |
 | 30 | 13 | `mr:1230-ioannes-maria-boccardo` | * | IT |  |
-| 31 | 1 | `mr:1231-silvester-i` |  | IT |  |
+| 31 | (1) | `mr:1231-silvester-i` |  | IT |  |
 | 31 | 2 | `mr:1231-donata-et-socii` |  | IT |  |
 | 31 | 3 | `mr:1231-columba` |  | FR |  |
 | 31 | 4 | `mr:1231-zoticus` |  | TR |  |

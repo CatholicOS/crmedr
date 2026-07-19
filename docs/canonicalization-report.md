@@ -1,4 +1,4 @@
-# Draft canonical IDs — Martyrologium Romanum (CRMDR working document)
+# Draft canonical IDs — Martyrologium Romanum (CRMEDR working document)
 
 Generated mechanically from the Latin texts (editio altera 2004, 'elaborazione' transcription,
 corrected against the Vatican print where noted). **All IDs are drafts for committee review.**
@@ -250,9 +250,16 @@ the OCR was ambiguous or a claim rested on the absence of a mark.
 
 **Result: zero new asterisk discrepancies.** The 29 documented overrides were
 re-validated on both editions; every other matched entry agrees with the registry.
-Roughly 210 rows are unnumbered in both prints — the drop-cap memoria paragraphs that
-open each day (including second and third memorias sharing a day, e.g. Fabian + Sebastian
-on Jan 20) — and carry no asterisk anywhere, consistent with the registry.
+
+**Unnumbered header eulogies**: 212 entries across 194 days are printed as unnumbered
+drop-cap paragraphs in both editions — the header eulogies for celebrations with
+liturgical rank that open a day (177 days with one, 16 days with two, and May 25 with
+three: Bede + Gregory VII + Mary Magdalene de' Pazzi). The printed numbering counts them
+implicitly, so entry numbers stay aligned. They are marked in the registry with an
+`unnumbered` flag in the JSON and a parenthesized entry number in the monthly tables;
+the per-day counts are derived mechanically from the sweep (`UNNUMBERED_LEADS` in the
+extraction script) and validated against the ranked celebrations of the General Roman
+Calendar. None carries an asterisk anywhere, consistent with the registry.
 
 The sweep did surface four cross-edition **structural** differences (all verified on the
 page scans of both editions):
@@ -275,10 +282,10 @@ places (Aug 25) and leave a gap in others (July 12); the leap-day elogia are pri
 twice with independent numbering in both editions (Feb 28 entries 4–7 = Feb 29 entries
 1–4), as already reflected in the registry.
 
-**Incidental slug flag**: mr:0331-domninus (3/31 voce 4) — the elogium's first-named
-subject is San Guido, abbot; "Domninus" comes from the place name (Burgi Sancti Domníni,
-Borgo San Donnino, today Fidenza). Under rule 1 the slug should arguably be guido (with a
-collision check); left unchanged pending committee review.
+**Slug correction (applied)**: the workbook ID mr:0331-domninus (3/31 voce 4) is
+corrected on extraction to mr:0331-guido — the elogium's first-named subject is San
+Guido, abbot; "Domninus" comes from the place name (Burgi Sancti Domníni, Borgo San
+Donnino, today Fidenza). No collision on the day.
 
 ## Known caveats for the committee
 

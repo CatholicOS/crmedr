@@ -1,10 +1,10 @@
 # June
 
-347 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+347 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0601-iustinus` |  | IT |  |
+| 1 | (1) | `mr:0601-iustinus` |  | IT |  |
 | 1 | 2 | `mr:0601-chariton-et-socii` |  | IT |  |
 | 1 | 3 | `mr:0601-ammon-et-socii` |  | EG |  |
 | 1 | 4 | `mr:0601-ischyrion` |  | EG |  |
@@ -24,7 +24,7 @@
 | 1 | 18 | `mr:0601-iosephus-tuc` |  | VN |  |
 | 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT |  |
 | 1 | 20 | `mr:0601-hannibalis-maria-dus-francia` |  | IT |  |
-| 2 | 1 | `mr:0602-marcellinus` |  | IT |  |
+| 2 | (1) | `mr:0602-marcellinus` |  | IT |  |
 | 2 | 2 | `mr:0602-pothinus` |  | FR |  |
 | 2 | 3 | `mr:0602-erasmus` |  | IT |  |
 | 2 | 4 | `mr:0602-eugenius-i` |  | IT |  |
@@ -33,7 +33,7 @@
 | 2 | 7 | `mr:0602-nicolaus` |  | IT |  |
 | 2 | 8 | `mr:0602-sadochus-et-socii` | * | PL |  |
 | 2 | 9 | `mr:0602-dominicus-ninh` |  | VN |  |
-| 3 | 1 | `mr:0603-carolus-lwanga-et-socii` |  | UG |  |
+| 3 | (1) | `mr:0603-carolus-lwanga-et-socii` |  | UG |  |
 | 3 | 2 | `mr:0603-caecilius` |  | TN |  |
 | 3 | 3 | `mr:0603-hilarius` | * | FR |  |
 | 3 | 4 | `mr:0603-clotildis` |  | FR |  |
@@ -62,7 +62,7 @@
 | 4 | 8 | `mr:0604-franciscus-caracciolo` |  | IT |  |
 | 4 | 9 | `mr:0604-philippus-smaldone` | * | IT |  |
 | 4 | 10 | `mr:0604-antonius-zawistowski` | * | DE |  |
-| 5 | 1 | `mr:0605-bonifatius` |  | NL |  |
+| 5 | (1) | `mr:0605-bonifatius` |  | NL |  |
 | 5 | 2 | `mr:0605-marcianus-et-socii` |  | EG |  |
 | 5 | 3 | `mr:0605-dorotheus` |  | LB |  |
 | 5 | 4 | `mr:0605-illidius` |  | FR |  |
@@ -73,7 +73,7 @@
 | 5 | 9 | `mr:0605-petrus-spano` | * | TR |  |
 | 5 | 10 | `mr:0605-lucas-vu-ba-loan` |  | VN |  |
 | 5 | 11 | `mr:0605-dominicus-toai-et-dominicus-huyen` |  | VN |  |
-| 6 | 1 | `mr:0606-norbertus` |  | FR |  |
+| 6 | (1) | `mr:0606-norbertus` |  | FR |  |
 | 6 | 2 | `mr:0606-artemius-et-paulina` |  | IT |  |
 | 6 | 3 | `mr:0606-bessarion` |  | EG |  |
 | 6 | 4 | `mr:0606-ceratius` | * | FR |  |
@@ -109,7 +109,7 @@
 | 8 | 9 | `mr:0608-maria-a-divino-corde-iesu-droste` | * | PT |  |
 | 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN |  |
 | 8 | 11 | `mr:0608-nicolaus-de-gesturi-medda` | * | IT |  |
-| 9 | 1 | `mr:0609-ephraem` |  | TR |  |
+| 9 | (1) | `mr:0609-ephraem` |  | TR |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT |  |
 | 9 | 3 | `mr:0609-diomedes` |  | TR |  |
 | 9 | 4 | `mr:0609-vincentius` |  | FR |  |
@@ -130,7 +130,7 @@
 | 10 | 8 | `mr:0610-thomas-green` | * | GB |  |
 | 10 | 9 | `mr:0610-eduardus-poppe` | * | BE |  |
 | 10 | — | `mr:0610-marcus-antonius-durando` | * | IT | Entry 9* at June 10 in the Latin editio altera 2004 print (verified on the page scan); the Italian (CEI) edition and the digitized workbook place the elogium at December 10 (entry 9*). |
-| 11 | 1 | `mr:0611-barnabas` |  | IL |  |
+| 11 | (1) | `mr:0611-barnabas` |  | IL |  |
 | 11 | 2 | `mr:0611-maximus` |  | IT |  |
 | 11 | 3 | `mr:0611-rembertus` |  | DE |  |
 | 11 | 4 | `mr:0611-bardo` | * | DE | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
@@ -155,7 +155,7 @@
 | 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio-salvi` | * | IT |  |
 | 12 | 11 | `mr:0612-mercedis-maria-a-iesu-molina` | * | EC |  |
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia-barba` | * | IT |  |
-| 13 | 1 | `mr:0613-antonius` |  | PT |  |
+| 13 | (1) | `mr:0613-antonius` |  | PT |  |
 | 13 | 2 | `mr:0613-felicula` |  | IT |  |
 | 13 | 3 | `mr:0613-achilleus` |  | EG |  |
 | 13 | 4 | `mr:0613-triphyllius` |  | CY |  |
@@ -223,7 +223,7 @@
 | 18 | 6 | `mr:0618-elisabeth` |  | DE |  |
 | 18 | 7 | `mr:0618-hosanna-andreasi` | * | IT |  |
 | 18 | 8 | `mr:0618-gregorius-barbarigo` |  | IT |  |
-| 19 | 1 | `mr:0619-romualdus` |  | IT |  |
+| 19 | (1) | `mr:0619-romualdus` |  | IT |  |
 | 19 | 2 | `mr:0619-gervasius-et-protasius` |  | IT |  |
 | 19 | 3 | `mr:0619-deodatus` | * | FR |  |
 | 19 | 4 | `mr:0619-childomarca` | * | FR |  |
@@ -242,7 +242,7 @@
 | 20 | 6 | `mr:0620-margarita-ball` | * | IE |  |
 | 20 | 7 | `mr:0620-franciscus-pacheco-et-socii` | * | JP |  |
 | 20 | 8 | `mr:0620-thomas-whitbread-et-socii` | * | GB |  |
-| 21 | 1 | `mr:0621-aloysius-gonzaga` |  | IT |  |
+| 21 | (1) | `mr:0621-aloysius-gonzaga` |  | IT |  |
 | 21 | 2 | `mr:0621-mevennus` | * | FR |  |
 | 21 | 3 | `mr:0621-leutfridus` |  | FR |  |
 | 21 | 4 | `mr:0621-radulphus` | * | FR |  |
@@ -251,8 +251,8 @@
 | 21 | 7 | `mr:0621-ioannes-rigby` |  | GB |  |
 | 21 | 8 | `mr:0621-iacobus-morelle-dupas` | * | FR |  |
 | 21 | 9 | `mr:0621-iosephus-isabel-flores` |  | MX |  |
-| 22 | 1 | `mr:0622-paulinus` |  | FR |  |
-| 22 | 2 | `mr:0622-ioannes-fisher` |  | GB |  |
+| 22 | (1) | `mr:0622-paulinus` |  | FR |  |
+| 22 | (2) | `mr:0622-ioannes-fisher` |  | GB |  |
 | 22 | 3 | `mr:0622-flavius-clemens` |  | IT |  |
 | 22 | 4 | `mr:0622-albanus` |  | GB |  |
 | 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB |  |
@@ -269,7 +269,7 @@
 | 23 | 8 | `mr:0623-thomas-garnet` |  | GB |  |
 | 23 | 9 | `mr:0623-iosephus-cafasso` |  | IT |  |
 | 23 | 10 | `mr:0623-maria-raphaela-cimatti` | * | IT |  |
-| 24 | 1 | `mr:0624-ioannes-baptista` |  | PS |  |
+| 24 | (1) | `mr:0624-ioannes-baptista` |  | PS |  |
 | 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT |  |
 | 24 | 3 | `mr:0624-simplicius` |  | FR |  |
 | 24 | 4 | `mr:0624-agoardus-et-agilbertus` |  | FR |  |
@@ -309,7 +309,7 @@
 | 26 | 15 | `mr:0626-nicolaus-konrad` | * | UA |  |
 | 26 | 16 | `mr:0626-andreas-iscak` | * | UA |  |
 | 26 | 17 | `mr:0626-iosephus-maria-escriva-de-balaguer` |  | IT |  |
-| 27 | 1 | `mr:0627-cyrillus` |  | EG |  |
+| 27 | (1) | `mr:0627-cyrillus` |  | EG |  |
 | 27 | 2 | `mr:0627-guddenes` |  | TN |  |
 | 27 | 3 | `mr:0627-zoilus` |  | ES |  |
 | 27 | 4 | `mr:0627-samson` |  | TR |  |
@@ -319,7 +319,7 @@
 | 27 | 8 | `mr:0627-thomas-toan` |  | VN |  |
 | 27 | 9 | `mr:0627-margarita-bays` | * | CH |  |
 | 27 | 10 | `mr:0627-ludovica-teresia-montaignac-de-chauvance` | * | FR |  |
-| 28 | 1 | `mr:0628-irenaeus` |  | TR |  |
+| 28 | (1) | `mr:0628-irenaeus` |  | TR |  |
 | 28 | 2 | `mr:0628-plutarchus-et-socii` |  | EG |  |
 | 28 | 3 | `mr:0628-paulus-i` |  | IT |  |
 | 28 | 4 | `mr:0628-argimirus` |  | ES |  |
@@ -329,14 +329,14 @@
 | 28 | 8 | `mr:0628-lucia-wang-cheng-et-socii` |  | CN |  |
 | 28 | 9 | `mr:0628-maria-du-zhaozhi` |  | CN |  |
 | 28 | 10 | `mr:0628-severianus-baranyk-et-ioachim-senkivskyj` | * | UA |  |
-| 29 | 1 | `mr:0629-petrus-et-paulus-simon` |  | IT |  |
+| 29 | (1) | `mr:0629-petrus-et-paulus-simon` |  | IT |  |
 | 29 | 2 | `mr:0629-syrus` |  | IT |  |
 | 29 | 3 | `mr:0629-cassius` |  | IT |  |
 | 29 | 4 | `mr:0629-hemma` | * | AT |  |
 | 29 | 5 | `mr:0629-raymundus-lullus` | * | ES |  |
 | 29 | 6 | `mr:0629-paulus-wu-juan` |  | CN |  |
 | 29 | 7 | `mr:0629-maria-du-tianshi` |  | CN |  |
-| 30 | 1 | `mr:0630-sancta-romana-ecclesia` |  | IT |  |
+| 30 | (1) | `mr:0630-sancta-romana-ecclesia` |  | IT |  |
 | 30 | 2 | `mr:0630-basilides` |  | EG |  |
 | 30 | 3 | `mr:0630-martialis` |  | FR |  |
 | 30 | 4 | `mr:0630-bertichramnus` | * | FR |  |

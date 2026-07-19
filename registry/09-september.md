@@ -1,6 +1,6 @@
 # September
 
-441 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
+441 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium.
 
 | Day | Entry | ID | * | Country | Notes |
 | --- | --- | --- | --- | --- | --- |
@@ -34,7 +34,7 @@
 | 2 | 13 | `mr:0902-ingridis-elofsdotter` | * | SE |  |
 | 2 | 14 | `mr:0902-ioannes-maria-du-lau-et-socii` | * | FR |  |
 | 2 | 15 | `mr:0902-petrus-iacobus-maria-vitalis-et-socii` | * | FR |  |
-| 3 | 1 | `mr:0903-gregorius-magnus` |  | TR |  |
+| 3 | (1) | `mr:0903-gregorius-magnus` |  | TR |  |
 | 3 | 2 | `mr:0903-phoebes` |  | GR |  |
 | 3 | 3 | `mr:0903-basilissa` |  | TR |  |
 | 3 | 4 | `mr:0903-sandalius` |  | ES |  |
@@ -108,7 +108,7 @@
 | 7 | 19 | `mr:0907-ioannes-baptista-mazzucconi` | * | PG |  |
 | 7 | 20 | `mr:0907-eugenia-picco` | * | IT |  |
 | 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz-lloret-marco` | * | ES |  |
-| 8 | 1 | `mr:0908-nativitas-beatae-mariae-virginis` |  |  |  |
+| 8 | (1) | `mr:0908-nativitas-beatae-mariae-virginis` |  |  |  |
 | 8 | 2 | `mr:0908-hadrianus` |  | TR |  |
 | 8 | 3 | `mr:0908-faustus-et-socii` |  | EG |  |
 | 8 | 4 | `mr:0908-isaac` |  | TR |  |
@@ -128,7 +128,7 @@
 | 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-ruano-garcia-et-maria-a-doloribus-a-sancta-eulalia-puig-bonany` | * | ES |  |
 | 8 | 19 | `mr:0908-adamus-bargielski` | * | DE |  |
 | 8 | 20 | `mr:0908-ladislaus-b-adzinski` | * | DE |  |
-| 9 | 1 | `mr:0909-petrus-claver` |  | CO |  |
+| 9 | (1) | `mr:0909-petrus-claver` |  | CO |  |
 | 9 | 2 | `mr:0909-gorgonius` |  | IT |  |
 | 9 | 3 | `mr:0909-hyacinthus` |  | IT |  |
 | 9 | 4 | `mr:0909-ciaranus` |  | IE |  |
@@ -165,7 +165,7 @@
 | 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN |  |
 | 11 | 14 | `mr:0911-petrus-de-alcantara-villanueva-larrayoz` | * | ES |  |
 | 11 | 15 | `mr:0911-iosephus-maria-segura-penades` | * | ES |  |
-| 12 | 1 | `mr:0912-nomen-mariae` |  |  |  |
+| 12 | (1) | `mr:0912-nomen-mariae` |  |  |  |
 | 12 | 2 | `mr:0912-autonomus` |  | TR |  |
 | 12 | 3 | `mr:0912-cronidis-et-socii` |  | EG |  |
 | 12 | 4 | `mr:0912-albeus` | * | IE |  |
@@ -173,7 +173,7 @@
 | 12 | 6 | `mr:0912-apollinaris-franco` | * | JP |  |
 | 12 | 7 | `mr:0912-petrus-sulpitius-christophorus-faverge` | * | FR |  |
 | 12 | 8 | `mr:0912-franciscus-ch` |  | KR |  |
-| 13 | 1 | `mr:0913-ioannes` |  | TR |  |
+| 13 | (1) | `mr:0913-ioannes` |  | TR |  |
 | 13 | 2 | `mr:0913-iulianus` |  | TR |  |
 | 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | IL |  |
 | 13 | 4 | `mr:0913-litorius` |  | FR |  |
@@ -186,7 +186,7 @@
 | 13 | 11 | `mr:0913-maria-a-iesu-lopez-de-rivas` | * | ES |  |
 | 13 | 12 | `mr:0913-claudius-dumonet` | * | FR |  |
 | 13 | 13 | `mr:0913-aurelius-maria-villalon-acebron` | * | ES |  |
-| 14 | 1 | `mr:0914-exaltatio-sanctae-crucis` |  |  |  |
+| 14 | (1) | `mr:0914-exaltatio-sanctae-crucis` |  |  |  |
 | 14 | 2 | `mr:0914-cornelius` |  | IT |  |
 | 14 | 3 | `mr:0914-cyprianus` |  | TN |  |
 | 14 | 4 | `mr:0914-maternus` |  | DE |  |
@@ -196,7 +196,7 @@
 | 14 | 8 | `mr:0914-notburga` | * | IT |  |
 | 14 | 9 | `mr:0914-claudius-laplace` | * | FR |  |
 | 14 | 10 | `mr:0914-gabriel-taurinus-dufresse` |  | CN |  |
-| 15 | 1 | `mr:0915-maria-perdolens` |  |  |  |
+| 15 | (1) | `mr:0915-maria-perdolens` |  |  |  |
 | 15 | 2 | `mr:0915-nicomedes` |  | IT |  |
 | 15 | 3 | `mr:0915-valerianus` |  | FR |  |
 | 15 | 4 | `mr:0915-straton-et-socii` |  | RO |  |
@@ -213,7 +213,7 @@
 | 15 | 15 | `mr:0915-paschalis-penades-jornet` | * | ES |  |
 | 15 | 16 | `mr:0915-ladislaus-miegon` | * | DE |  |
 | 15 | 17 | `mr:0915-paulus-manna` | * | IT |  |
-| 16 | 1 | `mr:0916-cornelius-et-cyprianus` |  | IT |  |
+| 16 | (1) | `mr:0916-cornelius-et-cyprianus` |  | IT |  |
 | 16 | 2 | `mr:0916-euphemia` |  | TR |  |
 | 16 | 3 | `mr:0916-abundius-et-socii` |  | IT |  |
 | 16 | 4 | `mr:0916-victor-et-socii` |  | IT |  |
@@ -231,7 +231,7 @@
 | 16 | 16 | `mr:0916-andreas-kim-tae-gon` |  | KR |  |
 | 16 | 17 | `mr:0916-ignatius-casanovas` | * | ES |  |
 | 16 | 18 | `mr:0916-laureanus-ferrer-cardet` | * | ES |  |
-| 17 | 1 | `mr:0917-robertus-bellarmino` |  | IT |  |
+| 17 | (1) | `mr:0917-robertus-bellarmino` |  | IT |  |
 | 17 | 2 | `mr:0917-satyrus` |  | IT |  |
 | 17 | 3 | `mr:0917-lambertus` |  | BE |  |
 | 17 | 4 | `mr:0917-rodingus` | * | FR |  |
@@ -261,7 +261,7 @@
 | 18 | 13 | `mr:0918-ferdinandus-garcia-sendra-et-iosephus-garcia-mas` | * | ES |  |
 | 18 | 14 | `mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez` | * | MS |  |
 | 18 | 15 | `mr:0918-iosephus-kut` | * | DE |  |
-| 19 | 1 | `mr:0919-ianuarius` |  | IT |  |
+| 19 | (1) | `mr:0919-ianuarius` |  | IT |  |
 | 19 | 2 | `mr:0919-trophimus` |  | TR |  |
 | 19 | 3 | `mr:0919-peleus-et-nilus` |  | PS |  |
 | 19 | 4 | `mr:0919-eustochius` |  | FR |  |
@@ -280,7 +280,7 @@
 | 19 | 17 | `mr:0919-hyacinthus-hoyuelos-gonzalez` | * | ES |  |
 | 19 | 18 | `mr:0919-francisca-cuallado-baixauli` | * | ES |  |
 | 19 | 19 | `mr:0919-maria-a-iesu-de-la-yglesia-y-de-varo-et-socii` | * | ES |  |
-| 20 | 1 | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR |  |
+| 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR |  |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT |  |
 | 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR |  |
@@ -290,7 +290,7 @@
 | 20 | 8 | `mr:0920-ioannes-carolus-cornay` |  | VN |  |
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR |  |
 | 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX |  |
-| 21 | 1 | `mr:0921-matthaeus` |  | PS |  |
+| 21 | (1) | `mr:0921-matthaeus` |  | PS |  |
 | 21 | 2 | `mr:0921-iona` |  | PS |  |
 | 21 | 3 | `mr:0921-quadratus` |  | GR |  |
 | 21 | 4 | `mr:0921-pamphilus` |  | IT |  |
@@ -322,7 +322,7 @@
 | 22 | 15 | `mr:0922-vincentius-pelufo-corts` | * | ES |  |
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES |  |
-| 23 | 1 | `mr:0923-pius-de-pietrelcina-forgione` |  | IT |  |
+| 23 | (1) | `mr:0923-pius-de-pietrelcina-forgione` |  | IT |  |
 | 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS |  |
 | 23 | 3 | `mr:0923-linus` |  | IT |  |
 | 23 | 4 | `mr:0923-sossius` |  | IT |  |
@@ -365,7 +365,7 @@
 | 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU |  |
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES |  |
 | 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren` | * | ES |  |
-| 26 | 1 | `mr:0926-cosmas-et-damianus` |  | TR |  |
+| 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR |  |
 | 26 | 2 | `mr:0926-gedeon` |  | IL |  |
 | 26 | 3 | `mr:0926-senator` |  | IT |  |
 | 26 | 4 | `mr:0926-eusebius` |  | IT |  |
@@ -383,7 +383,7 @@
 | 26 | 16 | `mr:0926-bonaventura-esteve-flors` | * | ES |  |
 | 26 | 17 | `mr:0926-maria-jorda-botella` | * | ES |  |
 | 26 | 18 | `mr:0926-leo-legua-martus` | * | ES |  |
-| 27 | 1 | `mr:0927-vincentius-de-paul` |  | FR |  |
+| 27 | (1) | `mr:0927-vincentius-de-paul` |  | FR |  |
 | 27 | 2 | `mr:0927-caius` |  | IT |  |
 | 27 | 3 | `mr:0927-florentinus` |  | FR |  |
 | 27 | 4 | `mr:0927-hiltrudis` |  | FR |  |
@@ -394,8 +394,8 @@
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR |  |
 | 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna` | * | ES |  |
 | 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES |  |
-| 28 | 1 | `mr:0928-venceslaus` |  | CZ |  |
-| 28 | 2 | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH |  |
+| 28 | (1) | `mr:0928-venceslaus` |  | CZ |  |
+| 28 | (2) | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR |  |
 | 28 | 4 | `mr:0928-chariton` |  | PS |  |
 | 28 | 5 | `mr:0928-zama` |  | IT |  |
@@ -413,7 +413,7 @@
 | 28 | 17 | `mr:0928-amalia-abad-casasempere` | * | ES |  |
 | 28 | 18 | `mr:0928-iosephus-tarrats-comaposada` | * | ES |  |
 | 28 | 19 | `mr:0928-nicetas-budka` | * | KZ |  |
-| 29 | 1 | `mr:0929-michael-et-socii` |  | IT |  |
+| 29 | (1) | `mr:0929-michael-et-socii` |  | IT |  |
 | 29 | 2 | `mr:0929-euthychius` |  | TR |  |
 | 29 | 3 | `mr:0929-ripsime-et-socii` |  | AM |  |
 | 29 | 4 | `mr:0929-fraternus` |  | FR |  |
@@ -431,7 +431,7 @@
 | 29 | 16 | `mr:0929-paulus-bori-puig` | * | ES |  |
 | 29 | 17 | `mr:0929-darius-hernandez-morato` | * | ES |  |
 | 29 | 18 | `mr:0929-franciscus-de-paula-castello` | * | ES |  |
-| 30 | 1 | `mr:0930-hieronymus` |  | HR |  |
+| 30 | (1) | `mr:0930-hieronymus` |  | HR |  |
 | 30 | 2 | `mr:0930-antoninus` |  | IT |  |
 | 30 | 3 | `mr:0930-ursus-et-victor` |  | CH |  |
 | 30 | 4 | `mr:0930-gregorius-illuminator` |  | AM |  |
