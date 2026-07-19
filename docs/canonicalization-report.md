@@ -347,6 +347,30 @@ nation, `registry/key` = a CatholicOS registry key. All of this is a draft for
 committee review, to be decided together with the namespace prefixes of the three
 registries (`mr:` / `circ:` / `icl:`).
 
+## Deprecated IDs from historical editions (draft)
+
+The digitization of the public-domain **1749 (Benedict XIV) edition** in the
+[martyrology-api](https://github.com/CatholicOS/martyrology-api) was mechanically
+aligned against this registry (July 2026): of its 2,938 elogia, 1,688 matched a
+current ID on the same calendar day and 103 on a different day (saints repositioned by
+the post-conciliar reform — e.g. Telesphorus Jan 5 → Jan 2, Simeon Stylites Jan 5 →
+Jul 27), using name-stem and text-similarity evidence with per-match method and score
+recorded in the edition's `alignment.json`.
+
+The remaining **1,147 elogia with no identified counterpart in the editio altera 2004
+received coined canonical IDs with `deprecated: true`**, listed in
+`data/deprecated_ids.json` and merged into the registry (`entry_count` now counts
+`current_count` + `deprecated_count`). Their `MMDD` anchors the placement in the
+edition named by `attested_in`; their slugs are mechanical extracts from the 1749
+text (often still genitive, e.g. mr:0101-martinae; octaves and vigils prefixed
+octava-/vigilia-).
+
+**Caveats**: both the alignment and the deprecated status are mechanical drafts. Some
+"deprecated" entries may in fact have a 2004 counterpart the matcher missed (heavily
+rewritten texts); some low-score matches may be wrong. The committee review path is:
+confirm high-score matches, adjudicate the low-score band, and re-classify false
+deprecations as merges into current IDs.
+
 ## Known caveats for the committee
 
 - Rare genitives with no safe rule remain in genitive form (single-occurrence Greek
