@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:0601-ioannes-baptista-vernoy-de-montjournal` | * | FR |  |
 | 1 | 18 | `mr:0601-iosephus-tuc` |  | VN |  |
 | 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT |  |
-| 1 | 20 | `mr:0601-hannibalis-maria-dus-francia` |  | IT |  |
+| 1 | 20 | `mr:0601-hannibalis-maria-di-francia` |  | IT |  |
 | 2 | (1) | `mr:0602-marcellinus` |  | IT |  |
 | 2 | 2 | `mr:0602-pothinus` |  | FR |  |
 | 2 | 3 | `mr:0602-erasmus` |  | IT |  |
@@ -166,7 +166,7 @@
 | 13 | 9 | `mr:0613-aventinus` | * | FR |  |
 | 13 | 10 | `mr:0613-fandila` |  | ES |  |
 | 13 | 11 | `mr:0613-gerardus` | * | FR |  |
-| 13 | 12 | `mr:0613-augustinus-phan-viet-huy-et-nicolaus-buus-viet-the` |  | VN |  |
+| 13 | 12 | `mr:0613-augustinus-phan-viet-huy-et-nicolaus-bui-viet-the` |  | VN |  |
 | 13 | 13 | `mr:0613-maria-anna-biernacka` | * | PL |  |
 | 14 | 1 | `mr:0614-elisaeus` |  | PS |  |
 | 14 | 2 | `mr:0614-protus` |  | IT |  |
@@ -348,6 +348,6 @@
 | 30 | 10 | `mr:0630-philippus-powell` | * | GB |  |
 | 30 | 11 | `mr:0630-ianuarius-maria-sarnelli` | * | IT |  |
 | 30 | 12 | `mr:0630-vincentius` |  | VN |  |
-| 30 | 13 | `mr:0630-raymundus-lus-quanzhen-et-petrus-lus-quanhui` |  | CN |  |
+| 30 | 13 | `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui` |  | CN |  |
 | 30 | 14 | `mr:0630-zeno-kovalyk` | * | UA |  |
 | 30 | 15 | `mr:0630-basilius-velyckovskyj` | * | CA |  |

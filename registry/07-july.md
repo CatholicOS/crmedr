@@ -288,13 +288,13 @@
 | 20 | 7 | `mr:0720-vulmarus` |  | FR |  |
 | 20 | 8 | `mr:0720-paulus` |  | ES |  |
 | 20 | 9 | `mr:0720-bernardus` | * | DE |  |
-| 20 | 10 | `mr:0720-magdalena-yus-yong-hui-et-socii` |  | KR |  |
+| 20 | 10 | `mr:0720-magdalena-yi-yong-hui-et-socii` |  | KR |  |
 | 20 | 11 | `mr:0720-iosephus-maria-diaz-sanjurjo` |  | VN |  |
 | 20 | 12 | `mr:0720-leo-ignatius-mangin-et-paulus-denn` |  | CN |  |
 | 20 | 13 | `mr:0720-petrus-zhou-rixin` |  | CN |  |
 | 20 | 14 | `mr:0720-maria-fu-guilin` |  | CN |  |
 | 20 | 15 | `mr:0720-maria-zhao-guozhus` |  | CN |  |
-| 20 | 16 | `mr:0720-xus-guizi` |  | CN |  |
+| 20 | 16 | `mr:0720-xi-guizi` |  | CN |  |
 | 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-pujalte-y-sanchez-et-francisca-a-corde-iesu-aldea-y-araujo` | * | ES |  |
 | 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT |  |
 | 21 | 2 | `mr:0721-victor` |  | FR |  |

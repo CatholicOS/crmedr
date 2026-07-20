@@ -196,7 +196,7 @@
 | 19 | 2 | `mr:1219-gregorius` |  | FR |  |
 | 19 | 3 | `mr:1219-gulielmus-de-fenolis` | * | IT |  |
 | 19 | 4 | `mr:1219-urbanus-v` | * | FR |  |
-| 19 | 5 | `mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-buus-van-uy` |  | VN |  |
+| 19 | 5 | `mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy` |  | VN |  |
 | 19 | 6 | `mr:1219-maria-eva-de-providentia-noiszewska-et-maria-martha-de-iesu-wolowsk` | * | PL |  |
 | 20 | 1 | `mr:1220-zephyrinus` |  | IT |  |
 | 20 | 2 | `mr:1220-liberalis` |  | IT |  |

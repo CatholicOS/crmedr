@@ -119,11 +119,11 @@
 | 9 | 6 | `mr:0109-iulia-della-rena` | * | IT |  |
 | 9 | 7 | `mr:0109-antonius-fatati` | * | IT |  |
 | 9 | 8 | `mr:0109-maria-teresia-a-iesu-le-clerc` | * | FR |  |
-| 9 | 9 | `mr:0109-agatha-yus` |  | KR |  |
+| 9 | 9 | `mr:0109-agatha-yi` |  | KR |  |
 | 9 | 10 | `mr:0109-iosephus-pawlowski-et-casimirus-grelewskus` | * | DE |  |
 | 10 | 1 | `mr:0110-miltiades` |  | IT |  |
 | 10 | 2 | `mr:0110-paulus` |  | EG |  |
-| 10 | 3 | `mr:0110-gregorius` |  | TR |  |
+| 10 | 3 | `mr:0110-gregorius-nyssenus` |  | TR |  |
 | 10 | 4 | `mr:0110-ioannes` |  | IL |  |
 | 10 | 5 | `mr:0110-petronius` | * | FR |  |
 | 10 | 6 | `mr:0110-marcianus` |  | TR |  |
@@ -136,7 +136,7 @@
 | 10 | 13 | `mr:0110-gulielmus` |  | FR |  |
 | 10 | 14 | `mr:0110-gundisalvus` | * | PT |  |
 | 10 | 15 | `mr:0110-gregorius-x` | * | IT |  |
-| 10 | 16 | `mr:0110-aegidius-dus-bello` | * | IT |  |
+| 10 | 16 | `mr:0110-aegidius-di-bello` | * | IT |  |
 | 10 | 17 | `mr:0110-anna-ab-angelis-monteagudo` | * | PE |  |
 | 10 | 18 | `mr:0110-francisca-salesia-aviat` |  | IT |  |
 | 10 | 19 | `mr:0110-maria-a-doloribus-rodriguez-sopena` | * | ES |  |
@@ -276,7 +276,7 @@
 | 21 | 9 | `mr:0121-albanus-roe` |  | GB |  |
 | 21 | 10 | `mr:0121-iosepha-maria-a-sancta-agnete` | * | ES |  |
 | 21 | 11 | `mr:0121-ioannes-baptista-turpin-du-cormier-et-socii` | * | FR |  |
-| 21 | 12 | `mr:0121-ioannes-yus-yun-il` |  | KR |  |
+| 21 | 12 | `mr:0121-ioannes-yi-yun-il` |  | KR |  |
 | 22 | (1) | `mr:0122-vincentius` |  | ES |  |
 | 22 | 2 | `mr:0122-valerius` |  | ES |  |
 | 22 | 3 | `mr:0122-gaudentius` |  | IT |  |

@@ -315,7 +315,7 @@
 | 24 | 8 | `mr:0524-simeon-stylita` |  | SY |  |
 | 24 | 9 | `mr:0524-philippus` | * | IT |  |
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA |  |
-| 24 | 11 | `mr:0524-augustinus-yus-kwang-hon` |  | KR |  |
+| 24 | 11 | `mr:0524-augustinus-yi-kwang-hon` |  | KR |  |
 | 24 | 12 | `mr:0524-hyacinthus` | * | CA |  |
 | 25 | (1) | `mr:0525-beda-venerabilis` |  | GB |  |
 | 25 | (2) | `mr:0525-gregorius-vii` |  | IT |  |

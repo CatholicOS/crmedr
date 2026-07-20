@@ -327,7 +327,7 @@
 | 25 | 6 | `mr:1125-maurinus` | * | FR |  |
 | 25 | 7 | `mr:1125-beatrix-de-ornacieux` | * | FR |  |
 | 25 | 8 | `mr:1125-elisabeth-achler-bona` | * | DE |  |
-| 25 | 9 | `mr:1125-petrus-yus-ho-yong` |  | KR |  |
+| 25 | 9 | `mr:1125-petrus-yi-ho-yong` |  | KR |  |
 | 25 | 10 | `mr:1125-hyacinthus-serrano-lopez` | * | MX |  |
 | 26 | 1 | `mr:1126-siricius` |  | IT |  |
 | 26 | 2 | `mr:1126-alypius` |  | TR |  |

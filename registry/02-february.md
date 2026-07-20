@@ -72,7 +72,7 @@
 | 5 | 6 | `mr:0205-caesarius` | * | IT |  |
 | 5 | 7 | `mr:0205-albuinus` |  | IT |  |
 | 5 | 8 | `mr:0205-adalheidis` | * | DE |  |
-| 5 | 9 | `mr:0205-paulus-mikus-et-socii` |  | JP |  |
+| 5 | 9 | `mr:0205-paulus-miki-et-socii` |  | JP |  |
 | 5 | 10 | `mr:0205-francisca-meziere` | * | FR |  |
 | 5 | 11 | `mr:0205-elisabeth-canori-mora` | * | IT |  |
 | 5 | 12 | `mr:0205-iesu-mendez` |  | MX |  |
@@ -239,7 +239,7 @@
 | 19 | 8 | `mr:0219-conradus-de-placentia-confalonieri` | * | IT |  |
 | 19 | 9 | `mr:0219-alvarus` | * | ES |  |
 | 19 | 10 | `mr:0219-elisabeth-picenardi` | * | IT |  |
-| 19 | 11 | `mr:0219-lucia-yus-zhenmei` |  | CN |  |
+| 19 | 11 | `mr:0219-lucia-yi-zhenmei` |  | CN |  |
 | 19 | 12 | `mr:0219-iosephus-zaplata` | * | DE |  |
 | 20 | 1 | `mr:0220-serapion` |  | EG |  |
 | 20 | 2 | `mr:0220-quinque-martyres-tyri` |  | LB |  |

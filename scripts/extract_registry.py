@@ -62,6 +62,29 @@ ID_CORRECTIONS = {
     "mr:1014-stanislaus-mysakowski-et-franciscus-ros-aniec": "mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec",
     "mr:1216-honoratus-de-bia-a-podlaska-kazminsky": "mr:1216-honoratus-de-biala-podlaska-kazminsky",
     "mr:1219-maria-eva-de-providentia-noiszewska-et-maria-martha-de-iesu-wo-owsk": "mr:1219-maria-eva-de-providentia-noiszewska-et-maria-martha-de-iesu-wolowsk",
+    # Short romanized surnames were latinized in the workbook slugs by stripping
+    # the final vowel and appending -us (Di -> dus, Li -> lus, Yi -> yus,
+    # Xi -> xus, Bùi -> buus, Miki -> mikus). Rule: surnames are not latinized,
+    # so the romanized form is preserved as printed in the elogium. (The Feb 6
+    # Paul Miki memorial is already corrected above; mr:0205 is the Feb 5 pridie
+    # anticipation the earlier correction missed.)
+    "mr:0109-agatha-yus": "mr:0109-agatha-yi",
+    "mr:0110-aegidius-dus-bello": "mr:0110-aegidius-di-bello",
+    "mr:0121-ioannes-yus-yun-il": "mr:0121-ioannes-yi-yun-il",
+    "mr:0205-paulus-mikus-et-socii": "mr:0205-paulus-miki-et-socii",
+    "mr:0219-lucia-yus-zhenmei": "mr:0219-lucia-yi-zhenmei",
+    "mr:0524-augustinus-yus-kwang-hon": "mr:0524-augustinus-yi-kwang-hon",
+    "mr:0601-hannibalis-maria-dus-francia": "mr:0601-hannibalis-maria-di-francia",
+    "mr:0613-augustinus-phan-viet-huy-et-nicolaus-buus-viet-the": "mr:0613-augustinus-phan-viet-huy-et-nicolaus-bui-viet-the",
+    "mr:0630-raymundus-lus-quanzhen-et-petrus-lus-quanhui": "mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui",
+    "mr:0720-magdalena-yus-yong-hui-et-socii": "mr:0720-magdalena-yi-yong-hui-et-socii",
+    "mr:0720-xus-guizi": "mr:0720-xi-guizi",
+    "mr:1125-petrus-yus-ho-yong": "mr:1125-petrus-yi-ho-yong",
+    "mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-buus-van-uy": "mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy",
+    # Byname disambiguation: Gregory of Nyssa (well known by that byname)
+    # shares Jan 10 with Pope Gregory X (mr:0110-gregorius-x). Rule 1's bare
+    # first-named subject "gregorius" is ambiguous here, so the byname is kept.
+    "mr:0110-gregorius": "mr:0110-gregorius-nyssenus",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
