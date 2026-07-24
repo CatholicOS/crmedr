@@ -361,8 +361,11 @@ The remaining **1,219 elogia with no identified counterpart in the editio altera
 received coined canonical IDs with `deprecated: true`**, listed in
 `data/deprecated_ids.json` and merged into the registry (`entry_count` now counts
 `current_count` + `deprecated_count`). Their `MMDD` anchors the placement in the
-edition named by `attested_in`, and each carries a `subject_la` (the extracted
-first-named subject in nominative display form).
+edition named by `attested_in`. The Latin subject for every ID (current and
+deprecated) lives in `i18n/la.json`, the single source of truth for subjects;
+each deprecated entry additionally carries a `country` (ISO 3166-1 alpha-2 of the
+modern country of the elogium's place, or `null`), inferred from its elogium as
+for current entries.
 
 Coined slugs follow the registry's own rules: **nominative lemma** of the first-named
 subject (genitives converted via an empirical genitive→nominative dictionary mined
