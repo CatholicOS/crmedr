@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 5857,
+  "entry_count": 6082,
   "current_count": 4639,
-  "deprecated_count": 1218,
+  "deprecated_count": 1443,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -37448,6 +37448,15 @@
       "subject_la": "Sanctus Magnus"
     },
     {
+      "id": "mr:0101-euphrosyna",
+      "month": 1,
+      "day": 1,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Euphrosyna"
+    },
+    {
       "id": "mr:0102-octava-sancti-stephani-protomartyris",
       "month": 1,
       "day": 2,
@@ -37482,6 +37491,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Beatus Isidorus"
+    },
+    {
+      "id": "mr:0102-siridion",
+      "month": 1,
+      "day": 2,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Siridion"
     },
     {
       "id": "mr:0103-octava-sancti-joannis-apostoli",
@@ -37556,6 +37574,15 @@
       "subject_la": "Sanctus Mavilus"
     },
     {
+      "id": "mr:0104-aquilinus-et-socii",
+      "month": 1,
+      "day": 4,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Aquilinus et socii"
+    },
+    {
       "id": "mr:0105-vigilia-epiphaniae-domini",
       "month": 1,
       "day": 5,
@@ -37572,6 +37599,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Martyres Aegypto"
+    },
+    {
+      "id": "mr:0105-apollinaris",
+      "month": 1,
+      "day": 5,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Apollinaris"
     },
     {
       "id": "mr:0106-in-africa-commemoratio",
@@ -37754,6 +37790,15 @@
       "subject_la": "Sanctus Melchiadis"
     },
     {
+      "id": "mr:0111-anastasius-et-socii",
+      "month": 1,
+      "day": 11,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Anastasius et socii"
+    },
+    {
       "id": "mr:0112-tatiana",
       "month": 1,
       "day": 12,
@@ -37842,6 +37887,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Viventius"
+    },
+    {
+      "id": "mr:0113-glaphyra",
+      "month": 1,
+      "day": 13,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Glaphyra"
     },
     {
       "id": "mr:0114-hilarius",
@@ -37961,6 +38015,15 @@
       "subject_la": "Sanctus Marcellus Primus"
     },
     {
+      "id": "mr:0116-priscilla",
+      "month": 1,
+      "day": 16,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Priscilla"
+    },
+    {
       "id": "mr:0117-diodorus-et-marianus",
       "month": 1,
       "day": 17,
@@ -37968,6 +38031,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Diodorus et Marianus"
+    },
+    {
+      "id": "mr:0117-antonius-merulus-et-ioannes",
+      "month": 1,
+      "day": 17,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beati Antonius, Merulus et Ioannes"
     },
     {
       "id": "mr:0118-moseus-et-ammonius",
@@ -37986,6 +38058,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Athenogenes"
+    },
+    {
+      "id": "mr:0118-cathedra-petri-romae",
+      "month": 1,
+      "day": 18,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Cathedra sancti Petri Apostoli Romae"
     },
     {
       "id": "mr:0119-canutus",
@@ -38087,6 +38168,15 @@
       "subject_la": "Sanctus Ildefonsus"
     },
     {
+      "id": "mr:0123-martyrius",
+      "month": 1,
+      "day": 23,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Martyrius"
+    },
+    {
       "id": "mr:0124-timotheus",
       "month": 1,
       "day": 24,
@@ -38159,6 +38249,15 @@
       "subject_la": "Sancti Datius et Reatrus"
     },
     {
+      "id": "mr:0127-dativus-et-socii",
+      "month": 1,
+      "day": 27,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Dativus et socii"
+    },
+    {
       "id": "mr:0128-petrus-nolascus",
       "month": 1,
       "day": 28,
@@ -38211,6 +38310,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Leonida"
+    },
+    {
+      "id": "mr:0128-valerius",
+      "month": 1,
+      "day": 28,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Valerius"
     },
     {
       "id": "mr:0129-franciscus-salesius",
@@ -38276,6 +38384,24 @@
       "subject_la": "Sanctus Barsis"
     },
     {
+      "id": "mr:0130-felix",
+      "month": 1,
+      "day": 30,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Felix Papa"
+    },
+    {
+      "id": "mr:0130-savina",
+      "month": 1,
+      "day": 30,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Savina"
+    },
+    {
       "id": "mr:0131-tharsicius-et-socii",
       "month": 1,
       "day": 31,
@@ -38312,6 +38438,15 @@
       "subject_la": "Sanctus Ignatius"
     },
     {
+      "id": "mr:0201-ephraem",
+      "month": 2,
+      "day": 1,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Ephraem"
+    },
+    {
       "id": "mr:0202-purificatio-beatae-mariae-virginis",
       "month": 2,
       "day": 2,
@@ -38328,6 +38463,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Fortunatius et socii"
+    },
+    {
+      "id": "mr:0202-apronianus",
+      "month": 2,
+      "day": 2,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Apronianus"
     },
     {
       "id": "mr:0203-celerinus-africa",
@@ -38373,6 +38517,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Aquilinus et socii"
+    },
+    {
+      "id": "mr:0204-rembertus",
+      "month": 2,
+      "day": 4,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Rembertus"
     },
     {
       "id": "mr:0205-franciscus-ordinem",
@@ -38573,6 +38726,24 @@
       "subject_la": "Sanctus Calocerus"
     },
     {
+      "id": "mr:0211-desiderius",
+      "month": 2,
+      "day": 11,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Desiderius"
+    },
+    {
+      "id": "mr:0211-ionas",
+      "month": 2,
+      "day": 11,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Ionas"
+    },
+    {
       "id": "mr:0212-septem-martyres-sanctorum",
       "month": 2,
       "day": 12,
@@ -38609,6 +38780,24 @@
       "subject_la": "Sancta Eulalia"
     },
     {
+      "id": "mr:0212-modestus",
+      "month": 2,
+      "day": 12,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Modestus"
+    },
+    {
+      "id": "mr:0212-gaudentius",
+      "month": 2,
+      "day": 12,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Gaudentius"
+    },
+    {
       "id": "mr:0213-agabus-propheta",
       "month": 2,
       "day": 13,
@@ -38634,6 +38823,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctae Fusca"
+    },
+    {
+      "id": "mr:0213-licinius",
+      "month": 2,
+      "day": 13,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Licinius"
     },
     {
       "id": "mr:0214-valentinus-interamnae",
@@ -38699,6 +38897,15 @@
       "subject_la": "Sancta Agapis"
     },
     {
+      "id": "mr:0215-iosephus",
+      "month": 2,
+      "day": 15,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Iosephus"
+    },
+    {
       "id": "mr:0216-onesimus",
       "month": 2,
       "day": 16,
@@ -38706,6 +38913,42 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Beatus Onesimus"
+    },
+    {
+      "id": "mr:0216-translatio-iulianae",
+      "month": 2,
+      "day": 16,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sanctae Iulianae"
+    },
+    {
+      "id": "mr:0216-porphyrius",
+      "month": 2,
+      "day": 16,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Porphyrius et Seleucus"
+    },
+    {
+      "id": "mr:0216-gregorius-x",
+      "month": 2,
+      "day": 16,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Gregorius Papa Decimus"
+    },
+    {
+      "id": "mr:0216-faustinus",
+      "month": 2,
+      "day": 16,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Faustinus"
     },
     {
       "id": "mr:0217-faustinus",
@@ -38888,6 +39131,24 @@
       "subject_la": "Sanctus Felix"
     },
     {
+      "id": "mr:0221-maximianus",
+      "month": 2,
+      "day": 21,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Maximianus"
+    },
+    {
+      "id": "mr:0221-paterius",
+      "month": 2,
+      "day": 21,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Paterius"
+    },
+    {
       "id": "mr:0222-petrus-damianus-cardinalis",
       "month": 2,
       "day": 22,
@@ -39041,6 +39302,15 @@
       "subject_la": "Sanctus Cyprianus"
     },
     {
+      "id": "mr:0224-inventio-capitis-ioannis-baptistae",
+      "month": 2,
+      "day": 24,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Inventio capitis sancti Ioannis Baptistae"
+    },
+    {
       "id": "mr:0225-victorinus-et-socii",
       "month": 2,
       "day": 25,
@@ -39185,6 +39455,15 @@
       "subject_la": "Sancta Antonina"
     },
     {
+      "id": "mr:0301-translatio-herculani",
+      "month": 3,
+      "day": 1,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Herculani"
+    },
+    {
       "id": "mr:0302-martyres-romae",
       "month": 3,
       "day": 2,
@@ -39210,6 +39489,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Paulus et socii"
+    },
+    {
+      "id": "mr:0302-octoginta-martyres-campania",
+      "month": 3,
+      "day": 2,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Octoginta Martyres"
     },
     {
       "id": "mr:0303-hemiterius-et-cheledonius",
@@ -39255,6 +39543,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Basilius"
+    },
+    {
+      "id": "mr:0306-perpetua-et-felicitas",
+      "month": 3,
+      "day": 6,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Perpetua et Felicitas"
     },
     {
       "id": "mr:0307-paulus-pelusii",
@@ -39309,6 +39606,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Gregorius"
+    },
+    {
+      "id": "mr:0309-cyrillus-et-methodius",
+      "month": 3,
+      "day": 9,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Cyrillus et Methodius"
     },
     {
       "id": "mr:0310-quadraginta",
@@ -39374,6 +39680,15 @@
       "subject_la": "Sancti Gorgonius et Firmus"
     },
     {
+      "id": "mr:0311-petrus",
+      "month": 3,
+      "day": 11,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Petrus"
+    },
+    {
       "id": "mr:0312-mamilianus",
       "month": 3,
       "day": 12,
@@ -39426,6 +39741,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Euphrasia"
+    },
+    {
+      "id": "mr:0313-nicephorus",
+      "month": 3,
+      "day": 13,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Nicephorus"
     },
     {
       "id": "mr:0314-leo",
@@ -39534,6 +39858,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Agapitus"
+    },
+    {
+      "id": "mr:0316-patricius",
+      "month": 3,
+      "day": 16,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Patricius"
     },
     {
       "id": "mr:0317-joseph",
@@ -39662,6 +39995,15 @@
       "subject_la": "Sanctus Zacharia"
     },
     {
+      "id": "mr:0322-catharina",
+      "month": 3,
+      "day": 22,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Catharina"
+    },
+    {
       "id": "mr:0323-fidel",
       "month": 3,
       "day": 23,
@@ -39723,6 +40065,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Julianus"
+    },
+    {
+      "id": "mr:0323-benedictus",
+      "month": 3,
+      "day": 23,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Benedictus"
     },
     {
       "id": "mr:0324-festum-sancti-gabrielis-archangeli",
@@ -39896,6 +40247,24 @@
       "subject_la": "Sancti Rogatus et Successus"
     },
     {
+      "id": "mr:0328-xystus-iii",
+      "month": 3,
+      "day": 28,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Xystus Tertius"
+    },
+    {
+      "id": "mr:0328-speus",
+      "month": 3,
+      "day": 28,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Speus"
+    },
+    {
       "id": "mr:0329-iona-et-barachisius",
       "month": 3,
       "day": 29,
@@ -39903,6 +40272,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Iona et Barachisius"
+    },
+    {
+      "id": "mr:0329-secundus",
+      "month": 3,
+      "day": 29,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Secundus"
     },
     {
       "id": "mr:0330-quirinus-tribunus",
@@ -39932,6 +40310,15 @@
       "subject_la": "Sanctus Amos Propheta"
     },
     {
+      "id": "mr:0331-theodulus",
+      "month": 3,
+      "day": 31,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Theodulus, Anesius, Felix, Cornelia et socii"
+    },
+    {
       "id": "mr:0401-quinctianus-et-irenaeus",
       "month": 4,
       "day": 1,
@@ -39948,6 +40335,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Urbanus"
+    },
+    {
+      "id": "mr:0403-burgundofara",
+      "month": 4,
+      "day": 3,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Burgundofara"
+    },
+    {
+      "id": "mr:0403-benedictus",
+      "month": 4,
+      "day": 3,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Benedictus"
     },
     {
       "id": "mr:0404-zosimus-a",
@@ -40004,6 +40409,24 @@
       "subject_la": "Sancti Platonidis"
     },
     {
+      "id": "mr:0406-marcellinus",
+      "month": 4,
+      "day": 6,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Marcellinus"
+    },
+    {
+      "id": "mr:0406-caelestinus",
+      "month": 4,
+      "day": 6,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Caelestinus Primus"
+    },
+    {
       "id": "mr:0407-cyriacus",
       "month": 4,
       "day": 7,
@@ -40020,6 +40443,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Saturninus"
+    },
+    {
+      "id": "mr:0407-epiphanius",
+      "month": 4,
+      "day": 7,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Epiphanius et socii"
+    },
+    {
+      "id": "mr:0407-aphraates",
+      "month": 4,
+      "day": 7,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Aphraates"
     },
     {
       "id": "mr:0408-aedesius",
@@ -40047,6 +40488,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Concessa"
+    },
+    {
+      "id": "mr:0408-redemptus",
+      "month": 4,
+      "day": 8,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Redemptus"
     },
     {
       "id": "mr:0409-maria-cleopha",
@@ -40083,6 +40533,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Septem Virgines"
+    },
+    {
+      "id": "mr:0409-translatio-monicae",
+      "month": 4,
+      "day": 9,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio corporis sanctae Monicae"
     },
     {
       "id": "mr:0410-ezechiel-propheta",
@@ -40175,6 +40634,15 @@
       "subject_la": "Sanctus Ardalio"
     },
     {
+      "id": "mr:0414-domnina",
+      "month": 4,
+      "day": 14,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Domnina"
+    },
+    {
       "id": "mr:0415-basilissa-et-anastasia",
       "month": 4,
       "day": 15,
@@ -40247,6 +40715,15 @@
       "subject_la": "Sanctus Corebus Praefectus"
     },
     {
+      "id": "mr:0418-calocerus",
+      "month": 4,
+      "day": 18,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Calocerus"
+    },
+    {
       "id": "mr:0419-timo",
       "month": 4,
       "day": 19,
@@ -40301,6 +40778,15 @@
       "subject_la": "Sanctus Ursmarus"
     },
     {
+      "id": "mr:0419-crescentius",
+      "month": 4,
+      "day": 19,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Crescentius"
+    },
+    {
       "id": "mr:0420-victor-et-socii",
       "month": 4,
       "day": 20,
@@ -40308,6 +40794,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Victor et socii"
+    },
+    {
+      "id": "mr:0420-theotimus",
+      "month": 4,
+      "day": 20,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Theotimus"
     },
     {
       "id": "mr:0421-arator-et-socii",
@@ -40409,6 +40904,15 @@
       "subject_la": "Sancti Evodius et socii"
     },
     {
+      "id": "mr:0425-philo",
+      "month": 4,
+      "day": 25,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Philo et Agathopus"
+    },
+    {
       "id": "mr:0426-marcellinus",
       "month": 4,
       "day": 26,
@@ -40470,6 +40974,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Theophilus"
+    },
+    {
+      "id": "mr:0427-anastasius",
+      "month": 4,
+      "day": 27,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Anastasius"
     },
     {
       "id": "mr:0428-paulus-a-cruce",
@@ -40598,6 +41111,15 @@
       "subject_la": "Sancti Orentius et Patientia"
     },
     {
+      "id": "mr:0501-grata",
+      "month": 5,
+      "day": 1,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Grata"
+    },
+    {
       "id": "mr:0502-saturninus-et-socii",
       "month": 5,
       "day": 2,
@@ -40605,6 +41127,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Saturninus et socii"
+    },
+    {
+      "id": "mr:0502-secundus",
+      "month": 5,
+      "day": 2,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Secundus"
     },
     {
       "id": "mr:0503-crucis-dominica",
@@ -40715,6 +41246,15 @@
       "subject_la": "Sanctus Godehardus"
     },
     {
+      "id": "mr:0504-curcodomus",
+      "month": 5,
+      "day": 4,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Curcodomus"
+    },
+    {
       "id": "mr:0505-pius-quintus",
       "month": 5,
       "day": 5,
@@ -40749,6 +41289,33 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Irenaeus et socii"
+    },
+    {
+      "id": "mr:0505-eulogius",
+      "month": 5,
+      "day": 5,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Eulogius"
+    },
+    {
+      "id": "mr:0505-theodorus",
+      "month": 5,
+      "day": 5,
+      "entry": 12,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Theodorus"
+    },
+    {
+      "id": "mr:0505-conversio-sancti-augustini",
+      "month": 5,
+      "day": 5,
+      "entry": 15,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Conversio sancti Augustini"
     },
     {
       "id": "mr:0506-joannis-apostolus-et-evangelista",
@@ -40841,6 +41408,15 @@
       "subject_la": "Sanctus Petrus"
     },
     {
+      "id": "mr:0507-translatio-sancti-stephani",
+      "month": 5,
+      "day": 7,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Stephani Protomartyris"
+    },
+    {
       "id": "mr:0508-michael-archangelus",
       "month": 5,
       "day": 8,
@@ -40920,6 +41496,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Hieronymus"
+    },
+    {
+      "id": "mr:0509-translatio-sancti-nicolai",
+      "month": 5,
+      "day": 9,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Nicolai Episcopi"
     },
     {
       "id": "mr:0510-antoninus",
@@ -41012,6 +41597,15 @@
       "subject_la": "Sanctus Anastasius"
     },
     {
+      "id": "mr:0512-dionysius",
+      "month": 5,
+      "day": 12,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Dionysius"
+    },
+    {
       "id": "mr:0513-robertus-bellarmino",
       "month": 5,
       "day": 13,
@@ -41057,6 +41651,24 @@
       "subject_la": "Sancta Glyceria"
     },
     {
+      "id": "mr:0513-ioannes-silentiarius",
+      "month": 5,
+      "day": 13,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Ioannes Silentiarius"
+    },
+    {
+      "id": "mr:0513-petrus-regalatus",
+      "month": 5,
+      "day": 13,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Petrus Regalatus"
+    },
+    {
       "id": "mr:0514-bonifatius",
       "month": 5,
       "day": 14,
@@ -41064,6 +41676,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Bonifatius"
+    },
+    {
+      "id": "mr:0514-paschalis",
+      "month": 5,
+      "day": 14,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Paschalis Papa"
+    },
+    {
+      "id": "mr:0514-pomponius",
+      "month": 5,
+      "day": 14,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Pomponius"
     },
     {
       "id": "mr:0515-joannis-baptista-de-la",
@@ -41111,6 +41741,15 @@
       "subject_la": "Sancti Aquilinus et Victorianus"
     },
     {
+      "id": "mr:0516-maxima",
+      "month": 5,
+      "day": 16,
+      "entry": 12,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Maxima"
+    },
+    {
       "id": "mr:0517-paschalis",
       "month": 5,
       "day": 17,
@@ -41136,6 +41775,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Solocho"
+    },
+    {
+      "id": "mr:0517-torpes",
+      "month": 5,
+      "day": 17,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Torpes"
     },
     {
       "id": "mr:0518-venantius",
@@ -41201,6 +41849,15 @@
       "subject_la": "Sanctus Ivo"
     },
     {
+      "id": "mr:0519-pudens",
+      "month": 5,
+      "day": 19,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Pudens"
+    },
+    {
       "id": "mr:0520-plautilla",
       "month": 5,
       "day": 20,
@@ -41255,6 +41912,15 @@
       "subject_la": "Sancti Nicostratus et Antiochus"
     },
     {
+      "id": "mr:0521-episcopi-et-presbyteri-alexandriae",
+      "month": 5,
+      "day": 21,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Episcopi et Presbyteri"
+    },
+    {
       "id": "mr:0522-faustinus-et-socii",
       "month": 5,
       "day": 22,
@@ -41291,6 +41957,15 @@
       "subject_la": "Sanctus Fulcus"
     },
     {
+      "id": "mr:0522-helena",
+      "month": 5,
+      "day": 22,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Helena"
+    },
+    {
       "id": "mr:0523-epitacius-et-basileus",
       "month": 5,
       "day": 23,
@@ -41307,6 +41982,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Martyru"
+    },
+    {
+      "id": "mr:0523-mercurialis",
+      "month": 5,
+      "day": 23,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Mercurialis"
     },
     {
       "id": "mr:0524-meletius",
@@ -41370,6 +42054,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Maria Jacobus"
+    },
+    {
+      "id": "mr:0525-translatio-sancti-francisci",
+      "month": 5,
+      "day": 25,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Francisci"
     },
     {
       "id": "mr:0526-quadratus-apostolorum",
@@ -41471,6 +42164,15 @@
       "subject_la": "Sanctus Justus"
     },
     {
+      "id": "mr:0528-podius",
+      "month": 5,
+      "day": 28,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Podius"
+    },
+    {
       "id": "mr:0529-maria-magdalena-de-pazzis",
       "month": 5,
       "day": 29,
@@ -41516,6 +42218,24 @@
       "subject_la": "Sanctus Procopius"
     },
     {
+      "id": "mr:0529-maximus",
+      "month": 5,
+      "day": 29,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Maximus"
+    },
+    {
+      "id": "mr:0529-eleutherius",
+      "month": 5,
+      "day": 29,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Eleutherius"
+    },
+    {
       "id": "mr:0530-felix-primus",
       "month": 5,
       "day": 30,
@@ -41559,6 +42279,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Lupicinus"
+    },
+    {
+      "id": "mr:0531-angela-merici",
+      "month": 5,
+      "day": 31,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Angela Merici"
+    },
+    {
+      "id": "mr:0531-paschasius",
+      "month": 5,
+      "day": 31,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Paschasius"
     },
     {
       "id": "mr:0601-angela-mericus",
@@ -41705,6 +42443,15 @@
       "subject_la": "Sancta Saturnina"
     },
     {
+      "id": "mr:0604-alexander",
+      "month": 6,
+      "day": 4,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Alexander"
+    },
+    {
       "id": "mr:0605-florentius-et-socii",
       "month": 6,
       "day": 5,
@@ -41712,6 +42459,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Florentius et socii"
+    },
+    {
+      "id": "mr:0605-zenais",
+      "month": 6,
+      "day": 5,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Zenais, Cyria, Valeria et Marcia"
     },
     {
       "id": "mr:0606-philippus",
@@ -41804,6 +42560,24 @@
       "subject_la": "Sanctus Sallustianus"
     },
     {
+      "id": "mr:0608-calliopa",
+      "month": 6,
+      "day": 8,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Calliopa"
+    },
+    {
+      "id": "mr:0608-victorinus",
+      "month": 6,
+      "day": 8,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Victorinus"
+    },
+    {
       "id": "mr:0609-pelagia",
       "month": 6,
       "day": 9,
@@ -41876,6 +42650,24 @@
       "subject_la": "In Africa sanct"
     },
     {
+      "id": "mr:0610-maurinus",
+      "month": 6,
+      "day": 10,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Maurinus"
+    },
+    {
+      "id": "mr:0610-asterius",
+      "month": 6,
+      "day": 10,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Asterius"
+    },
+    {
       "id": "mr:0611-joannis",
       "month": 6,
       "day": 11,
@@ -41892,6 +42684,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Felix et Fortunatus"
+    },
+    {
+      "id": "mr:0611-translatio-gregorii-nazianzeni",
+      "month": 6,
+      "day": 11,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Gregorii Nazianzeni"
     },
     {
       "id": "mr:0612-joannis",
@@ -41930,6 +42731,24 @@
       "subject_la": "Sanctus Olympius"
     },
     {
+      "id": "mr:0612-amphion",
+      "month": 6,
+      "day": 12,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Amphion"
+    },
+    {
+      "id": "mr:0613-aquilina",
+      "month": 6,
+      "day": 13,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Aquilina"
+    },
+    {
       "id": "mr:0614-basilius",
       "month": 6,
       "day": 14,
@@ -41937,6 +42756,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Basilius"
+    },
+    {
+      "id": "mr:0614-quinctianus",
+      "month": 6,
+      "day": 14,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Quinctianus"
     },
     {
       "id": "mr:0615-vitus-et-socii",
@@ -42065,6 +42893,15 @@
       "subject_la": "Sanctus Ursicinus"
     },
     {
+      "id": "mr:0619-zosimus",
+      "month": 6,
+      "day": 19,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Zosimus"
+    },
+    {
       "id": "mr:0620-silverius",
       "month": 6,
       "day": 20,
@@ -42155,6 +42992,15 @@
       "subject_la": "Sanctus Urciscenus"
     },
     {
+      "id": "mr:0621-martinus",
+      "month": 6,
+      "day": 21,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Martinus"
+    },
+    {
       "id": "mr:0622-paulinus-nolam",
       "month": 6,
       "day": 22,
@@ -42227,6 +43073,15 @@
       "subject_la": "Sanctus Zeno"
     },
     {
+      "id": "mr:0623-ioannes",
+      "month": 6,
+      "day": 23,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Joannes"
+    },
+    {
       "id": "mr:0624-plurimi-martyres-romae",
       "month": 6,
       "day": 24,
@@ -42243,6 +43098,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Viginti Martyres"
+    },
+    {
+      "id": "mr:0624-ioannes-therestus",
+      "month": 6,
+      "day": 24,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Joannes Therestus"
     },
     {
       "id": "mr:0625-sosipatris",
@@ -42279,6 +43143,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Febronia"
+    },
+    {
+      "id": "mr:0626-perseveranda",
+      "month": 6,
+      "day": 26,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Perseveranda"
     },
     {
       "id": "mr:0627-crescens",
@@ -42335,6 +43208,15 @@
       "subject_la": "Sanctus Paulus Primus"
     },
     {
+      "id": "mr:0628-leo-ii",
+      "month": 6,
+      "day": 28,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Leo Secundus"
+    },
+    {
       "id": "mr:0629-apostolorum-petrus-et-paulus",
       "month": 6,
       "day": 29,
@@ -42369,6 +43251,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Syri"
+    },
+    {
+      "id": "mr:0629-benedicta",
+      "month": 6,
+      "day": 29,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Benedicta"
     },
     {
       "id": "mr:0630-paulus-apostolus",
@@ -42407,6 +43298,15 @@
       "subject_la": "Sancti Caius et Leo"
     },
     {
+      "id": "mr:0630-ostianus",
+      "month": 6,
+      "day": 30,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Ostianus"
+    },
+    {
       "id": "mr:0701-octava-nativitatis-sancti-joannis",
       "month": 7,
       "day": 1,
@@ -42441,6 +43341,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Gallus"
+    },
+    {
+      "id": "mr:0701-rumoldus",
+      "month": 7,
+      "day": 1,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Rumoldus"
+    },
+    {
+      "id": "mr:0701-theobaldus",
+      "month": 7,
+      "day": 1,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Theobaldus"
     },
     {
       "id": "mr:0702-maria",
@@ -42506,6 +43424,15 @@
       "subject_la": "Sanctus Hyacinthus"
     },
     {
+      "id": "mr:0703-dathus",
+      "month": 7,
+      "day": 3,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Dathus"
+    },
+    {
       "id": "mr:0704-oseeet-aggaeus-prophetarum",
       "month": 7,
       "day": 4,
@@ -42540,6 +43467,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Theodorus"
+    },
+    {
+      "id": "mr:0704-translatio-martini",
+      "month": 7,
+      "day": 4,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Martinus"
     },
     {
       "id": "mr:0705-zoa",
@@ -42585,6 +43521,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Numerianus"
+    },
+    {
+      "id": "mr:0705-michael-a-sanctis",
+      "month": 7,
+      "day": 5,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Michael a Sanctis"
+    },
+    {
+      "id": "mr:0705-philomena",
+      "month": 7,
+      "day": 5,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Philomena"
     },
     {
       "id": "mr:0706-octava-sanctorum-apostolorum-petri",
@@ -42666,6 +43620,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Illidius"
+    },
+    {
+      "id": "mr:0707-petrus-fourier",
+      "month": 7,
+      "day": 7,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Petrus Fourier"
     },
     {
       "id": "mr:0708-elisabeth",
@@ -42794,6 +43757,15 @@
       "subject_la": "Sancti Savinus et Cyprianus"
     },
     {
+      "id": "mr:0711-sabinus",
+      "month": 7,
+      "day": 11,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Sabinus"
+    },
+    {
       "id": "mr:0712-in-cypro-beat",
       "month": 7,
       "day": 12,
@@ -42902,6 +43874,15 @@
       "subject_la": "Sanctus Antiochus"
     },
     {
+      "id": "mr:0715-inventio-rosaliae",
+      "month": 7,
+      "day": 15,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Rosalia"
+    },
+    {
       "id": "mr:0716-valentinus",
       "month": 7,
       "day": 16,
@@ -42938,6 +43919,15 @@
       "subject_la": "Sanctus Vitalianus"
     },
     {
+      "id": "mr:0716-hilarinus",
+      "month": 7,
+      "day": 16,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Hilarinus"
+    },
+    {
       "id": "mr:0717-generosus",
       "month": 7,
       "day": 17,
@@ -42954,6 +43944,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Theodota"
+    },
+    {
+      "id": "mr:0717-translatio-marinae",
+      "month": 7,
+      "day": 17,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Marina"
     },
     {
       "id": "mr:0718-camillus-de-lellis",
@@ -42999,6 +43998,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Felix"
+    },
+    {
+      "id": "mr:0719-arsenius",
+      "month": 7,
+      "day": 19,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Arsenius"
     },
     {
       "id": "mr:0720-hieronymus-aemilianus",
@@ -43053,6 +44061,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Flavianus Secundus"
+    },
+    {
+      "id": "mr:0720-severa",
+      "month": 7,
+      "day": 20,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Severa"
     },
     {
       "id": "mr:0721-daniel-propheta",
@@ -43118,6 +44135,15 @@
       "subject_la": "Sanctus Theophilus Praetoris"
     },
     {
+      "id": "mr:0722-iosephus",
+      "month": 7,
+      "day": 22,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Iosephus"
+    },
+    {
       "id": "mr:0723-rasyphus",
       "month": 7,
       "day": 23,
@@ -43163,6 +44189,15 @@
       "subject_la": "Sancti Plurimi Martyres"
     },
     {
+      "id": "mr:0723-romula",
+      "month": 7,
+      "day": 23,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Romula, Redempta et Herundo"
+    },
+    {
       "id": "mr:0724-vigilia-sancti-jacobi-apostoli",
       "month": 7,
       "day": 24,
@@ -43206,6 +44241,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctae Niceta et Aquilina"
+    },
+    {
+      "id": "mr:0724-ursicinus",
+      "month": 7,
+      "day": 24,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Ursicinus"
     },
     {
       "id": "mr:0725-paulus",
@@ -43307,6 +44351,15 @@
       "subject_la": "Beatus Aetherius"
     },
     {
+      "id": "mr:0727-hermolaus",
+      "month": 7,
+      "day": 27,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Hermolaus, Hermippus et Hermocrates"
+    },
+    {
       "id": "mr:0728-eustathius",
       "month": 7,
       "day": 28,
@@ -43323,6 +44376,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Acatius"
+    },
+    {
+      "id": "mr:0728-innocentius-i",
+      "month": 7,
+      "day": 28,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Innocentius Primus"
+    },
+    {
+      "id": "mr:0728-peregrinus",
+      "month": 7,
+      "day": 28,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Peregrinus"
     },
     {
       "id": "mr:0729-olavus-norvegia",
@@ -43359,6 +44430,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Faustinus"
+    },
+    {
+      "id": "mr:0729-seraphina",
+      "month": 7,
+      "day": 29,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Seraphina"
     },
     {
       "id": "mr:0730-rufinus",
@@ -43404,6 +44484,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Quinquaginta Martyres"
+    },
+    {
+      "id": "mr:0731-firmus",
+      "month": 7,
+      "day": 31,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Firmus"
     },
     {
       "id": "mr:0801-petrus-apostolus",
@@ -43550,6 +44639,15 @@
       "subject_la": "Sancti Monachi Indos"
     },
     {
+      "id": "mr:0803-marana-et-cyra",
+      "month": 8,
+      "day": 3,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Marana et Cyra"
+    },
+    {
       "id": "mr:0804-perpetua",
       "month": 8,
       "day": 4,
@@ -43584,6 +44682,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Agabius"
+    },
+    {
+      "id": "mr:0804-protasius",
+      "month": 8,
+      "day": 4,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Protasius"
     },
     {
       "id": "mr:0805-viginti-martyres-romae",
@@ -43694,6 +44801,15 @@
       "subject_la": "Sanctus Hormisda"
     },
     {
+      "id": "mr:0808-myron",
+      "month": 8,
+      "day": 8,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Myron"
+    },
+    {
       "id": "mr:0809-vigilia-sancti-laurentii-martyris",
       "month": 8,
       "day": 9,
@@ -43773,6 +44889,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctae Bassa et socii"
+    },
+    {
+      "id": "mr:0810-deusdedit",
+      "month": 8,
+      "day": 10,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Deusdedit"
+    },
+    {
+      "id": "mr:0811-digna",
+      "month": 8,
+      "day": 11,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Digna"
     },
     {
       "id": "mr:0812-clara",
@@ -43856,6 +44990,15 @@
       "subject_la": "Sanctus Callistus"
     },
     {
+      "id": "mr:0814-demetrius",
+      "month": 8,
+      "day": 14,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Demetrius"
+    },
+    {
       "id": "mr:0815-alipius",
       "month": 8,
       "day": 15,
@@ -43919,6 +45062,15 @@
       "subject_la": "Beatus Rochus"
     },
     {
+      "id": "mr:0816-serena",
+      "month": 8,
+      "day": 16,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Serena"
+    },
+    {
       "id": "mr:0817-octava-sancti-laurentii-martyris",
       "month": 8,
       "day": 17,
@@ -43953,6 +45105,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Paulus"
+    },
+    {
+      "id": "mr:0817-anastasius",
+      "month": 8,
+      "day": 17,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Anastasius"
     },
     {
       "id": "mr:0818-joannis-et-crispus-presbyteri",
@@ -44027,6 +45188,15 @@
       "subject_la": "Sanctus Rufinus"
     },
     {
+      "id": "mr:0819-thecla-et-agapius",
+      "month": 8,
+      "day": 19,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Thecla et Agapius"
+    },
+    {
       "id": "mr:0820-lucius-senator",
       "month": 8,
       "day": 20,
@@ -44088,6 +45258,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Anastasius"
+    },
+    {
+      "id": "mr:0821-bonosus-et-maximianus",
+      "month": 8,
+      "day": 21,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Bonosus et Maximianus"
+    },
+    {
+      "id": "mr:0821-paternus",
+      "month": 8,
+      "day": 21,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Paternus"
     },
     {
       "id": "mr:0822-octava-assumptionis-beatae-mariae",
@@ -44270,6 +45458,15 @@
       "subject_la": "Sancta Aurea"
     },
     {
+      "id": "mr:0824-patricius",
+      "month": 8,
+      "day": 24,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Patricius"
+    },
+    {
       "id": "mr:0825-ludovicus-noni",
       "month": 8,
       "day": 25,
@@ -44385,6 +45582,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Rufinus"
+    },
+    {
+      "id": "mr:0826-felix",
+      "month": 8,
+      "day": 26,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Felix"
     },
     {
       "id": "mr:0827-josephus-calasanctius",
@@ -44504,6 +45710,15 @@
       "subject_la": "Sanctus Sebbus"
     },
     {
+      "id": "mr:0829-sabina-tricassino",
+      "month": 8,
+      "day": 29,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Sabina"
+    },
+    {
       "id": "mr:0830-rosa",
       "month": 8,
       "day": 30,
@@ -44547,6 +45762,33 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Optatus"
+    },
+    {
+      "id": "mr:0831-caesidius-et-socii",
+      "month": 8,
+      "day": 31,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Caesidius et socii"
+    },
+    {
+      "id": "mr:0831-amatus",
+      "month": 8,
+      "day": 31,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Amatus"
+    },
+    {
+      "id": "mr:0831-bonajuncta",
+      "month": 8,
+      "day": 31,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Bonajuncta"
     },
     {
       "id": "mr:0901-donatus",
@@ -44747,6 +45989,24 @@
       "subject_la": "Sancti Theodorus et socii"
     },
     {
+      "id": "mr:0904-candida-iunior",
+      "month": 9,
+      "day": 4,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Candida Iunior"
+    },
+    {
+      "id": "mr:0904-rosa",
+      "month": 9,
+      "day": 4,
+      "entry": 12,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beata Rosa"
+    },
+    {
       "id": "mr:0905-laurentius-justinianus",
       "month": 9,
       "day": 5,
@@ -44819,13 +46079,22 @@
       "subject_la": "Sancti Cottidus et Eugenius"
     },
     {
-      "id": "mr:0907-joannis",
+      "id": "mr:0906-petronius",
+      "month": 9,
+      "day": 6,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Petronius"
+    },
+    {
+      "id": "mr:0907-ioannes",
       "month": 9,
       "day": 7,
       "entry": 2,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "subject_la": "Beatus Joannis"
+      "subject_la": "Beatus Ioannes"
     },
     {
       "id": "mr:0907-eupsychius",
@@ -44844,6 +46113,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sed iterum comprehensus"
+    },
+    {
+      "id": "mr:0907-pamphilus",
+      "month": 9,
+      "day": 7,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Pamphilus"
+    },
+    {
+      "id": "mr:0907-hadrianus-iii",
+      "month": 9,
+      "day": 7,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Hadrianus III"
     },
     {
       "id": "mr:0908-ammon-et-socii",
@@ -44954,6 +46241,15 @@
       "subject_la": "Sanctus Petrus"
     },
     {
+      "id": "mr:0910-hilarus",
+      "month": 9,
+      "day": 10,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Hilarus"
+    },
+    {
       "id": "mr:0911-aemilianus",
       "month": 9,
       "day": 11,
@@ -44961,6 +46257,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Aemilianus"
+    },
+    {
+      "id": "mr:0911-vincentius",
+      "month": 9,
+      "day": 11,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Vincentius"
     },
     {
       "id": "mr:0912-juventius",
@@ -44979,6 +46284,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Sacerdos"
+    },
+    {
+      "id": "mr:0912-curonotus",
+      "month": 9,
+      "day": 12,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Curonotus"
+    },
+    {
+      "id": "mr:0912-silvinus",
+      "month": 9,
+      "day": 12,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Silvinus"
     },
     {
       "id": "mr:0913-philippus",
@@ -45008,6 +46331,15 @@
       "subject_la": "Sancti Crescentianus et socii"
     },
     {
+      "id": "mr:0914-cerealis",
+      "month": 9,
+      "day": 14,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Cerealis et Sallustia"
+    },
+    {
       "id": "mr:0915-octava-nativitatis-beatae-mariae",
       "month": 9,
       "day": 15,
@@ -45033,6 +46365,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Porphyrius"
+    },
+    {
+      "id": "mr:0915-melitina",
+      "month": 9,
+      "day": 15,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Melitina"
+    },
+    {
+      "id": "mr:0915-eutropia",
+      "month": 9,
+      "day": 15,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Eutropia"
     },
     {
       "id": "mr:0916-lucia",
@@ -45143,6 +46493,15 @@
       "subject_la": "Sancta Agathoclia"
     },
     {
+      "id": "mr:0917-theodora",
+      "month": 9,
+      "day": 17,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Theodora"
+    },
+    {
       "id": "mr:0918-sophia-et-irene",
       "month": 9,
       "day": 18,
@@ -45242,6 +46601,24 @@
       "subject_la": "Sanctus Isacius"
     },
     {
+      "id": "mr:0921-meletius",
+      "month": 9,
+      "day": 21,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Meletius"
+    },
+    {
+      "id": "mr:0921-iphigenia",
+      "month": 9,
+      "day": 21,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Iphigenia"
+    },
+    {
       "id": "mr:0922-thoma-a-villa-nova",
       "month": 9,
       "day": 22,
@@ -45296,6 +46673,15 @@
       "subject_la": "Sanctae Xantippa et Polyxena"
     },
     {
+      "id": "mr:0923-paternus",
+      "month": 9,
+      "day": 23,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Paternus"
+    },
+    {
       "id": "mr:0924-festum-beatae-mariae-virginis",
       "month": 9,
       "day": 24,
@@ -45341,6 +46727,15 @@
       "subject_la": "Sancti Quadraginta Martyres"
     },
     {
+      "id": "mr:0924-geremarus",
+      "month": 9,
+      "day": 24,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Geremarus"
+    },
+    {
       "id": "mr:0925-herculanus",
       "month": 9,
       "day": 25,
@@ -45357,6 +46752,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Bardomianus Eucarpus"
+    },
+    {
+      "id": "mr:0925-aurelia",
+      "month": 9,
+      "day": 25,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Aurelia et Neomisia"
     },
     {
       "id": "mr:0926-cyprianus-et-iustina",
@@ -45384,6 +46788,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Vigilius"
+    },
+    {
+      "id": "mr:0926-amantius",
+      "month": 9,
+      "day": 26,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Amantius"
     },
     {
       "id": "mr:0927-marcus",
@@ -45476,6 +46889,15 @@
       "subject_la": "Sanctus Salomon"
     },
     {
+      "id": "mr:0928-silvinus",
+      "month": 9,
+      "day": 28,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Silvinus"
+    },
+    {
       "id": "mr:0929-dada",
       "month": 9,
       "day": 29,
@@ -45492,6 +46914,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Gudelia"
+    },
+    {
+      "id": "mr:0929-grimoaldus",
+      "month": 9,
+      "day": 29,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Grimoaldus"
     },
     {
       "id": "mr:0930-leopardus",
@@ -45557,6 +46988,24 @@
       "subject_la": "Sanctus Modestus Sardus"
     },
     {
+      "id": "mr:1002-gerinus",
+      "month": 10,
+      "day": 2,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Gerinus"
+    },
+    {
+      "id": "mr:1002-thomas",
+      "month": 10,
+      "day": 2,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Thomas"
+    },
+    {
       "id": "mr:1003-teresia-a-jesu-infante",
       "month": 10,
       "day": 3,
@@ -45618,6 +47067,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Firmatus et Flaviana"
+    },
+    {
+      "id": "mr:1005-marcellinus",
+      "month": 10,
+      "day": 5,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Marcellinus"
+    },
+    {
+      "id": "mr:1005-galla",
+      "month": 10,
+      "day": 5,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Galla"
     },
     {
       "id": "mr:1006-marcellus-et-socii",
@@ -45683,6 +47150,15 @@
       "subject_la": "Sanctus Helanus"
     },
     {
+      "id": "mr:1007-translatio-birgittae",
+      "month": 10,
+      "day": 7,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Birgitta"
+    },
+    {
       "id": "mr:1008-birgitta",
       "month": 10,
       "day": 8,
@@ -45726,6 +47202,33 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctae Palatiatis et Laurentia"
+    },
+    {
+      "id": "mr:1008-demetrius",
+      "month": 10,
+      "day": 8,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Demetrius"
+    },
+    {
+      "id": "mr:1008-artemon",
+      "month": 10,
+      "day": 8,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Artemon"
+    },
+    {
+      "id": "mr:1009-andronicus",
+      "month": 10,
+      "day": 9,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Andronicus et Athanasia"
     },
     {
       "id": "mr:1010-franciscus-borgia",
@@ -45800,6 +47303,15 @@
       "subject_la": "Sanctus Aemilianus"
     },
     {
+      "id": "mr:1011-placidia",
+      "month": 10,
+      "day": 11,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Placidia"
+    },
+    {
       "id": "mr:1012-evagrius-et-priscianus",
       "month": 10,
       "day": 12,
@@ -45825,6 +47337,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Mona"
+    },
+    {
+      "id": "mr:1012-salvinus",
+      "month": 10,
+      "day": 12,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Salvinus"
+    },
+    {
+      "id": "mr:1012-eustachius",
+      "month": 10,
+      "day": 12,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Eustachius"
     },
     {
       "id": "mr:1013-eduardus",
@@ -45935,6 +47465,24 @@
       "subject_la": "Sanctus Agileus"
     },
     {
+      "id": "mr:1015-antiochus",
+      "month": 10,
+      "day": 15,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Antiochus"
+    },
+    {
+      "id": "mr:1015-aurelia",
+      "month": 10,
+      "day": 15,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Aurelia"
+    },
+    {
       "id": "mr:1016-bercharius",
       "month": 10,
       "day": 16,
@@ -45987,6 +47535,42 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Florentinus"
+    },
+    {
+      "id": "mr:1016-victor-iii",
+      "month": 10,
+      "day": 16,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Victor III"
+    },
+    {
+      "id": "mr:1017-heron",
+      "month": 10,
+      "day": 17,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Heron"
+    },
+    {
+      "id": "mr:1017-mamelta",
+      "month": 10,
+      "day": 17,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Mamelta"
+    },
+    {
+      "id": "mr:1017-victor",
+      "month": 10,
+      "day": 17,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Victor"
     },
     {
       "id": "mr:1018-paulus-a-cruce-romae",
@@ -46106,6 +47690,24 @@
       "subject_la": "Sanctus Felicianus"
     },
     {
+      "id": "mr:1020-georgius",
+      "month": 10,
+      "day": 20,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Georgius et Aurelius"
+    },
+    {
+      "id": "mr:1020-irene",
+      "month": 10,
+      "day": 20,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Irene"
+    },
+    {
       "id": "mr:1022-maria-salome",
       "month": 10,
       "day": 22,
@@ -46205,6 +47807,15 @@
       "subject_la": "Sancti Felix et socii"
     },
     {
+      "id": "mr:1024-marcus",
+      "month": 10,
+      "day": 24,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Marcus"
+    },
+    {
       "id": "mr:1025-marcellinus",
       "month": 10,
       "day": 25,
@@ -46223,6 +47834,24 @@
       "subject_la": "Sancti Protus et Ianuarius"
     },
     {
+      "id": "mr:1025-milites-quadraginta-sex",
+      "month": 10,
+      "day": 25,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti quadraginta sex milites"
+    },
+    {
+      "id": "mr:1025-bonifatius",
+      "month": 10,
+      "day": 25,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Bonifatius"
+    },
+    {
       "id": "mr:1026-fulcus-papiae",
       "month": 10,
       "day": 26,
@@ -46239,6 +47868,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Quadragesimus Subdiaconus"
+    },
+    {
+      "id": "mr:1026-quodvultdeus",
+      "month": 10,
+      "day": 26,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Quodvultdeus"
+    },
+    {
+      "id": "mr:1026-bernwardus",
+      "month": 10,
+      "day": 26,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Bernwardus"
     },
     {
       "id": "mr:1027-vigilia-sanctorum-apostolorum-simonis",
@@ -46302,6 +47949,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Cyrilla"
+    },
+    {
+      "id": "mr:1028-gaudiosus",
+      "month": 10,
+      "day": 28,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Gaudiosus"
     },
     {
       "id": "mr:1029-episcoporum-maximilianus",
@@ -46428,6 +48084,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Alfonsus Rodriguez Coadjutoris"
+    },
+    {
+      "id": "mr:1031-nemesius",
+      "month": 10,
+      "day": 31,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Nemesius et Lucilla"
     },
     {
       "id": "mr:1101-festivitas-omnium-sanctorum-quam",
@@ -46646,6 +48311,15 @@
       "subject_la": "Sanctus Magnus"
     },
     {
+      "id": "mr:1105-laetus",
+      "month": 11,
+      "day": 5,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Laetus"
+    },
+    {
       "id": "mr:1106-decem-martyres-theopoli",
       "month": 11,
       "day": 6,
@@ -46736,6 +48410,15 @@
       "subject_la": "Sanctus Alexander"
     },
     {
+      "id": "mr:1109-imago-salvatoris",
+      "month": 11,
+      "day": 9,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Commemoratio Imaginis Salvatoris"
+    },
+    {
       "id": "mr:1110-tryphon-et-socii",
       "month": 11,
       "day": 10,
@@ -46797,6 +48480,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Leo"
+    },
+    {
+      "id": "mr:1110-theoctiste",
+      "month": 11,
+      "day": 10,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Theoctiste"
     },
     {
       "id": "mr:1111-menna-agyptius",
@@ -46869,6 +48561,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Paternus"
+    },
+    {
+      "id": "mr:1112-rufus",
+      "month": 11,
+      "day": 12,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Rufus"
     },
     {
       "id": "mr:1113-didacus",
@@ -46952,6 +48653,15 @@
       "subject_la": "Sanctus Eugenius"
     },
     {
+      "id": "mr:1115-luperius",
+      "month": 11,
+      "day": 15,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Luperius"
+    },
+    {
       "id": "mr:1116-gertrudis",
       "month": 11,
       "day": 16,
@@ -46997,6 +48707,15 @@
       "subject_la": "Sanctus Dionysius"
     },
     {
+      "id": "mr:1117-eugenius",
+      "month": 11,
+      "day": 17,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Eugenius"
+    },
+    {
       "id": "mr:1118-eodem-die-sanc",
       "month": 11,
       "day": 18,
@@ -47024,6 +48743,15 @@
       "subject_la": "Sanctus Thoma"
     },
     {
+      "id": "mr:1118-translatio-frigdiani",
+      "month": 11,
+      "day": 18,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sancti Frigdiani"
+    },
+    {
       "id": "mr:1119-elisabeth",
       "month": 11,
       "day": 19,
@@ -47049,6 +48777,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Faustus"
+    },
+    {
+      "id": "mr:1119-azas",
+      "month": 11,
+      "day": 19,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Azas et socii"
     },
     {
       "id": "mr:1120-felix-valesius",
@@ -47085,6 +48822,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Agapius"
+    },
+    {
+      "id": "mr:1120-bassus",
+      "month": 11,
+      "day": 20,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Bassus et socii"
     },
     {
       "id": "mr:1121-celsus-et-clemens",
@@ -47141,6 +48887,33 @@
       "subject_la": "Sanctus Maurus"
     },
     {
+      "id": "mr:1122-maurus",
+      "month": 11,
+      "day": 22,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Maurus"
+    },
+    {
+      "id": "mr:1122-marcus",
+      "month": 11,
+      "day": 22,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Marcus et Stephanus"
+    },
+    {
+      "id": "mr:1123-ioannes-bonus",
+      "month": 11,
+      "day": 23,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Ioannes Bonus"
+    },
+    {
       "id": "mr:1124-joannis-a-cruce",
       "month": 11,
       "day": 24,
@@ -47175,6 +48948,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Felicissimus"
+    },
+    {
+      "id": "mr:1125-erasmus",
+      "month": 11,
+      "day": 25,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Erasmus"
+    },
+    {
+      "id": "mr:1125-iucunda",
+      "month": 11,
+      "day": 25,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Iucunda"
     },
     {
       "id": "mr:1126-silvester",
@@ -47267,6 +49058,15 @@
       "subject_la": "Sanctus Rufi"
     },
     {
+      "id": "mr:1128-gregorius-iii",
+      "month": 11,
+      "day": 28,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Gregorius Tertius"
+    },
+    {
       "id": "mr:1129-vigilia-sancti-andreae-apostoli",
       "month": 11,
       "day": 29,
@@ -47292,6 +49092,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Paramo et Sociorum"
+    },
+    {
+      "id": "mr:1129-blasius",
+      "month": 11,
+      "day": 29,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Blasius et Demetrius"
     },
     {
       "id": "mr:1130-castulus-et-euprepitis",
@@ -47337,6 +49146,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Troja"
+    },
+    {
+      "id": "mr:1130-zosimus",
+      "month": 11,
+      "day": 30,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Beatus Zosimus"
     },
     {
       "id": "mr:1201-diodorus-et-marianus",
@@ -47411,6 +49229,15 @@
       "subject_la": "Sanctus Ursicinus"
     },
     {
+      "id": "mr:1201-natalia",
+      "month": 12,
+      "day": 1,
+      "entry": 13,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Natalia"
+    },
+    {
       "id": "mr:1202-petrus",
       "month": 12,
       "day": 2,
@@ -47483,6 +49310,15 @@
       "subject_la": "Sanctus Silvanus"
     },
     {
+      "id": "mr:1202-evasius",
+      "month": 12,
+      "day": 2,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Evasius"
+    },
+    {
       "id": "mr:1203-claudius",
       "month": 12,
       "day": 3,
@@ -47510,6 +49346,15 @@
       "subject_la": "Sancti Ambicus Victor et Julius"
     },
     {
+      "id": "mr:1203-galganus",
+      "month": 12,
+      "day": 3,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Galganus"
+    },
+    {
       "id": "mr:1204-petrus-chrysologus",
       "month": 12,
       "day": 4,
@@ -47526,6 +49371,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancti Theophanes et Sociorum"
+    },
+    {
+      "id": "mr:1204-maruthas",
+      "month": 12,
+      "day": 4,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Maruthas"
     },
     {
       "id": "mr:1205-bassus",
@@ -47562,6 +49416,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Anastasius Martyrus"
+    },
+    {
+      "id": "mr:1205-crispina",
+      "month": 12,
+      "day": 5,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Crispina"
+    },
+    {
+      "id": "mr:1205-nicetius",
+      "month": 12,
+      "day": 5,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Nicetius"
     },
     {
       "id": "mr:1206-polychronius",
@@ -47625,6 +49497,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Servus"
+    },
+    {
+      "id": "mr:1207-martinus",
+      "month": 12,
+      "day": 7,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Martinus"
     },
     {
       "id": "mr:1208-sophronius",
@@ -47762,6 +49643,15 @@
       "subject_la": "Sanctus Deusdedit"
     },
     {
+      "id": "mr:1210-translatio-sacrae-domus-lauretanae",
+      "month": 12,
+      "day": 10,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Translatio sacrae Domus Lauretanae"
+    },
+    {
       "id": "mr:1211-traso",
       "month": 12,
       "day": 11,
@@ -47816,6 +49706,15 @@
       "subject_la": "Sancti Maxentius et socii"
     },
     {
+      "id": "mr:1212-ammonaria",
+      "month": 12,
+      "day": 12,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctae Ammonaria et sociae"
+    },
+    {
       "id": "mr:1214-drusus-et-socii",
       "month": 12,
       "day": 14,
@@ -47852,6 +49751,15 @@
       "subject_la": "Sanctus Viator"
     },
     {
+      "id": "mr:1214-matronianus",
+      "month": 12,
+      "day": 14,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Matronianus"
+    },
+    {
       "id": "mr:1215-octava-conceptionis-immaculatae-beatae",
       "month": 12,
       "day": 15,
@@ -47886,6 +49794,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sancta Christiana"
+    },
+    {
+      "id": "mr:1215-consecratio-eusebii",
+      "month": 12,
+      "day": 15,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Ordinatio sancti Eusebii Vercellensis"
     },
     {
       "id": "mr:1216-eusebius",
@@ -47931,6 +49848,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Beatus Ado"
+    },
+    {
+      "id": "mr:1216-irenion",
+      "month": 12,
+      "day": 16,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Irenion"
     },
     {
       "id": "mr:1217-lazarus",
@@ -47996,6 +49922,15 @@
       "subject_la": "Sanctus Auxentius"
     },
     {
+      "id": "mr:1218-theotimus-et-basilianus",
+      "month": 12,
+      "day": 18,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Theotimus et Basilianus"
+    },
+    {
       "id": "mr:1219-timotheus",
       "month": 12,
       "day": 19,
@@ -48041,6 +49976,15 @@
       "subject_la": "Sanctae Meuris et Thea"
     },
     {
+      "id": "mr:1219-adiutus",
+      "month": 12,
+      "day": 19,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Adiutus"
+    },
+    {
       "id": "mr:1220-vigilia-sancti-thomae-apostoli",
       "month": 12,
       "day": 20,
@@ -48077,13 +50021,22 @@
       "subject_la": "Sanctus Julius"
     },
     {
-      "id": "mr:1221-thoma-apostolus",
+      "id": "mr:1220-dominicus-brixiae",
+      "month": 12,
+      "day": 20,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Dominicus"
+    },
+    {
+      "id": "mr:1221-thomas-apostolus",
       "month": 12,
       "day": 21,
       "entry": 1,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "subject_la": "Beatus Thoma Apostolus"
+      "subject_la": "Beatus Thomas Apostolus"
     },
     {
       "id": "mr:1221-petrus-canisius-friburgi",
@@ -48113,6 +50066,15 @@
       "subject_la": "Sancti Ioannes et Festus"
     },
     {
+      "id": "mr:1221-severinus",
+      "month": 12,
+      "day": 21,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Severinus"
+    },
+    {
       "id": "mr:1222-demetrius-et-socii",
       "month": 12,
       "day": 22,
@@ -48129,6 +50091,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Zeno"
+    },
+    {
+      "id": "mr:1222-flavianus",
+      "month": 12,
+      "day": 22,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Flavianus"
     },
     {
       "id": "mr:1223-victoria",
@@ -48221,6 +50192,15 @@
       "subject_la": "Sanctus Petrus Nolascus"
     },
     {
+      "id": "mr:1225-martyres-nicomediae",
+      "month": 12,
+      "day": 25,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancti Martyres Nicomedienses"
+    },
+    {
       "id": "mr:1226-marinus",
       "month": 12,
       "day": 26,
@@ -48246,6 +50226,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Maximus"
+    },
+    {
+      "id": "mr:1227-nicarete",
+      "month": 12,
+      "day": 27,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sancta Nicarete"
     },
     {
       "id": "mr:1228-eutychius-et-domitianus",
@@ -48282,6 +50271,33 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Domnio"
+    },
+    {
+      "id": "mr:1228-troadius",
+      "month": 12,
+      "day": 28,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Troadius"
+    },
+    {
+      "id": "mr:1228-caesarius",
+      "month": 12,
+      "day": 28,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Caesarius"
+    },
+    {
+      "id": "mr:1228-theodorus",
+      "month": 12,
+      "day": 28,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Theodorus"
     },
     {
       "id": "mr:1229-thoma",
@@ -48345,6 +50361,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "subject_la": "Sanctus Eugenius"
+    },
+    {
+      "id": "mr:1230-liberius",
+      "month": 12,
+      "day": 30,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "subject_la": "Sanctus Liberius"
     },
     {
       "id": "mr:1231-stephanus-pontianus-attalus",
