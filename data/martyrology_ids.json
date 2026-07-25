@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6082,
+  "entry_count": 6081,
   "current_count": 4639,
-  "deprecated_count": 1443,
+  "deprecated_count": 1442,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -40031,7 +40031,7 @@
       "country": "IL"
     },
     {
-      "id": "mr:0323-itemcoronae-sanctonim-martyrum",
+      "id": "mr:0323-domitius-et-socii",
       "month": 3,
       "day": 23,
       "entry": 5,
@@ -40184,7 +40184,7 @@
       "country": "IT"
     },
     {
-      "id": "mr:0326-b",
+      "id": "mr:0326-braulius",
       "month": 3,
       "day": 26,
       "entry": 8,
@@ -45143,7 +45143,7 @@
       "country": "HR"
     },
     {
-      "id": "mr:0818-clara-v",
+      "id": "mr:0818-clara",
       "month": 8,
       "day": 18,
       "entry": 8,
@@ -46101,15 +46101,6 @@
       "month": 9,
       "day": 7,
       "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "TR"
-    },
-    {
-      "id": "mr:0907-sed-iterum-comprehensus",
-      "month": 9,
-      "day": 7,
-      "entry": 4,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR"
