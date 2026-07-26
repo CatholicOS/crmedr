@@ -424,3 +424,63 @@ tightly coupled and edition-independent.
   1-in-corpus Latin epithet may remain unconverted while surnames are protected.
 - The namespace prefix `mr:` and the anchor-edition choice are placeholders for
   committee decision; changing either is a mechanical rewrite.
+
+## Identifier durability
+
+Several corrections recorded above changed identifiers that had already shipped. Each was
+right as an editorial decision, and each was cheap only because these IDs are still drafts;
+the same events after normativity would cost every citation of the affected ID. The cases are
+collected here with their remedied form under a machine-readable canonical identifier — the
+shape argued in "Identifier Durability: Machine-Readable Canonical IRIs" (CDCF
+foundation-docs, `research/identifier-durability-opaque-canonical-iris.md`), which carries the
+argument and is not restated here.
+
+### The recorded cases
+
+- **The slug named the wrong thing.** `mr:0323-itemcoronae-sanctonim-martyrum` became
+  `mr:0323-domitius-et-socii`, the slug having "captured the intro words 'Item coronae
+  sanct[or]um Martyrum'" rather than the first-named subject. The same commit renamed
+  `mr:0326-b` to `mr:0326-braulius` and `mr:0818-clara-v` to `mr:0818-clara`, and removed
+  `mr:0907-sed-iterum-comprehensus`, an OCR mid-sentence fragment (commit `afb5a70`).
+- **The anchor moved.** `mr:1210-marcus-antonius-durando` became
+  `mr:0610-marcus-antonius-durando`: the Latin editio altera 2004 places Bl. Marcantonio
+  Durando at June 10, the Italian (CEI) edition of the same book at December 10 (see
+  "Full-corpus asterisk sweep" above; `ID_CORRECTIONS` in `scripts/extract_registry.py`). The
+  `MMDD` segment states a per-edition fact, so it moves whenever the anchor edition is
+  reconsidered — though the subject, which the scheme declares edition-independent, did not
+  change at all.
+- **A folding bug reached shipped slugs.** Polish ł is precomposed and NFKD never decomposes
+  it, so the fold dropped it: `mr:0308-vincentius-kad-ubek` and nine siblings were renamed
+  (`mr:0308-vincentius-kadlubek` and so on) under the stated policy that "IDs are drafts
+  pending committee review, so renamed in place with no deprecated-alias" (commit `d6439bd`).
+
+A fourth appears under "Deprecated IDs from historical editions" above: 271 coined group
+eulogies took a place name instead of the first-named subject (`mr:0103-martyres-cilicia` for
+what is in fact Zosimus and Athanasius), of which 17 were de-coined onto current IDs.
+
+### The remedied form
+
+Under a machine-readable canonical identifier — _opaque_ in the literature's term — none of
+those events touches the identifier. The identity is minted once; every string this registry
+has ever published for it, current and superseded alike, is kept as a permanent alias; and the
+reading a canonist needs comes from the labels beside it:
+
+```text
+id:       RqT4mXbz9Ns3HcLdF7kQp2v   # illustrative only — not a minted value
+aliases:  mr:0610-marcus-antonius-durando   # current slug, kept forever
+          mr:1210-marcus-antonius-durando   # superseded anchor, still resolves
+labels:   "Beatus Marcus Antonius Durando"@la
+          "Beato Marco Antonio Durando"@it
+          "Blessed Marcantonio Durando"@en
+```
+
+The mechanism is this repository's own, generalized. `data/deprecated_ids.json` already carries
+superseded identifiers as first-class records (`deprecated: true` plus an `attested_in`
+edition, asserted never to collide with a current ID), and `i18n/{la,it,en}.json` already carry
+the identical complete key set for every ID, current and deprecated — so a subject is already
+namable in three languages without any identifier changing. Two adjustments finish the job: a
+superseded slug becomes a permanent alias resolving to its identity rather than a deprecation,
+and the correction maps in `scripts/extract_registry.py` record alias additions rather than
+renames. The slugs are kept forever _and_ the canonical ID never drifts — both, not one at the
+expense of the other. The last caveat above is the measure of it: under this shape, changing
+the `mr:` prefix or the anchor edition adds an alias instead of rewriting the registry.
