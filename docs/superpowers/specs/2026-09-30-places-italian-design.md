@@ -51,9 +51,8 @@ Same machinery as the Latin (`base_copy`, one character to one, case kept):
     festa, solennità, dormizione*. The list includes *anniversario*, since ",
     anniversario della morte di …" renders *natalis*, and *martirio* for *passio*.
     "Parimenti si commemorano" renders *Item commemorantur*.
-  - `MISSPELLED_STOP_WORDS_IT`: *desposizione* and *comemorazione*, as found in the
-    CEI text, each with its entry. They have **not** been verified against the CEI
-    print, and the comment says so.
+  - The printed misprints of a stop word recorded in `data/misprints.json` (see
+    below) count as that stop word: *desposizione* and *comemorazione*.
 - **Comma segments.** The phrase is split at commas, and the first segment is always
   kept. Each later segment is kept, in order, until the first one that fails:
   - it is **cut** if it is a time or relative clause: it starts with *dove*, *da
@@ -74,6 +73,44 @@ Same machinery as the Latin (`base_copy`, one character to one, case kept):
   wordier than the Latin: 84 exceed 12 words, and none exceeds 20.
 
 The Latin extraction and every existing `la` are unchanged.
+
+## Misprints in the printed editions
+
+Misprints found in the 2004 prints are recorded as data, so that a frontend showing
+an elogium can attach a footnote ("sic: printed *betárum* for *beatárum*"). The
+record is a new file, `data/misprints.json`:
+
+```json
+{
+  "$comment": "…",
+  "misprints": [
+    { "id": "mr:0927-francisca-xaveria-fenollosa-alcayna",
+      "edition": "martyrologium_romanum_2004",
+      "printed": "betárum", "intended": "beatárum",
+      "verified": "page image and OCR layer (print 11*)" },
+    { "id": "mr:1013-comganus", "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "desposizione", "intended": "deposizione", "verified": "print" },
+    { "id": "mr:1014-venantius", "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "comemorazione", "intended": "commemorazione", "verified": "print" }
+  ]
+}
+```
+
+- `edition` is the CLBDR edition ID used by `martyrology-texts`.
+- `printed` and `intended` are single words, so they carry no elogium text beyond
+  the word itself. `printed` must occur **exactly once** in that entry's text, so a
+  frontend can locate it without offsets.
+- Entries are sorted by `id`, then `edition`.
+- `scripts/extract_places.py` reads this file instead of the hard-coded
+  `MISPRINTED_STOP_WORDS`. For each edition's language, a misprint whose
+  `intended` word (accent-stripped, lowercased) is a stop word makes its `printed`
+  word a stop word too. It asserts that every recorded misprint is a current ID and
+  that `printed` occurs exactly once in the text of the named edition.
+- `docs/canonicalization-report.md` logs the two Italian misprints next to
+  *betárum*.
+- The file is hand-maintained. It isn't merged into `data/martyrology_ids.json`,
+  since misprints are a fact about a printed edition, not about the eulogy's
+  identity.
 
 ## Report
 
@@ -96,7 +133,9 @@ The Latin extraction and every existing `la` are unchanged.
 - every `it` is at most 20 words;
 - a bare back-reference's `it` equals its root's `it`, or is absent when the root
   has none;
-- curated `it` passes the same checks, in `validate_curated`.
+- curated `it` passes the same checks, in `validate_curated`;
+- every misprint record is well formed (the keys above, a current ID, one of the two
+  2004 editions) and its `printed` word occurs exactly once in that text.
 
 ## Tests
 
@@ -112,7 +151,9 @@ The Latin extraction and every existing `la` are unchanged.
   root's `it`; no `it` when the Italian has no phrase;
 - validation: a non-verbatim or overlong `it` is rejected, and so is a mismatched
   `it` on a bare back-reference;
-- the report lists both mismatch sections.
+- the report lists both mismatch sections;
+- misprints: a printed misprint of a stop word ends the phrase in its language
+  only; a record whose `printed` word is missing or occurs twice is rejected.
 
 The 5-word overlap scan covers the tests against both the Latin and the Italian
 texts.
@@ -129,7 +170,7 @@ Each problem found becomes a rule fix with a test.
 
 ## Documentation
 
-- AGENTS.md and README.md: the exception names both editions, and `places[].it` is
-  described.
+- AGENTS.md and README.md: the exception names both editions, and `places[].it` and
+  `data/misprints.json` are described.
 - `docs/canonicalization-report.md` (Places): the `it` key, its extraction rule, and
   the counts.
