@@ -62,3 +62,5 @@ The goal is to establish a unified, canonical identifier system for the eulogies
 ## License
 
 The data and documentation in this repository are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). See [`LICENSE`](LICENSE) for the full legal code.
+
+The source code in [`scripts/`](scripts/) and [`tests/`](tests/) is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See [`scripts/LICENSE`](scripts/LICENSE) and [`tests/LICENSE`](tests/LICENSE).
