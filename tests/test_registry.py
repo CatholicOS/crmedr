@@ -66,6 +66,21 @@ class RegistryPlacesTest(unittest.TestCase):
         self.assertEqual(r.add_places(once, PLACES), once)
         self.assertNotIn("places", r.add_places([dict(ENTRY)], {})[0])
 
+    def test_add_places_drops_a_stale_key(self):
+        once = r.add_places([dict(ENTRY)], PLACES)
+        self.assertNotIn("places", r.add_places(once, {})[0])
+
+    def test_place_roles_must_match_typology(self):
+        r.check_place_roles(PLACES, {"mr:0101-fictitius": "dies_natalis"})
+        with self.assertRaisesRegex(AssertionError, "extract_places"):
+            r.check_place_roles(PLACES, {"mr:0101-fictitius": "depositio"})
+        curated = {"mr:0101-fictitius": [{"role": "birth", "la": "Fictia", "source": "curated"}]}
+        r.check_place_roles(curated, {"mr:0101-fictitius": "depositio"})   # curated roles are free
+
+    def test_recovery_mentions_both_files(self):
+        self.assertRegex(r.RECOVERY, r"(?s)typology\.json.*places\.json.*extract_registry.*"
+                                     r"extract_typology.*extract_places.*extract_registry")
+
     def test_load_places(self):
         with tempfile.TemporaryDirectory() as d:
             self.assertEqual(r.load_places(Path(d), {"mr:0101-fictitius"}), {})

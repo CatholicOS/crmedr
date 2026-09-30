@@ -25,6 +25,15 @@ from pathlib import Path
 
 from extract_subjects import fold
 
+# extract_typology.py and extract_places.py read the current IDs from the
+# registry, and extract_places.py reads data/typology.json, so after an ID
+# change everything is regenerated in this order.
+RECOVERY = (
+    "To recover: move data/typology.json aside, move data/places.json aside, "
+    "run scripts/extract_registry.py, then scripts/extract_typology.py, "
+    "then scripts/extract_places.py, then scripts/extract_registry.py again."
+)
+
 VALUES = [
     "dies_natalis", "depositio", "translatio", "inventio",
     "dedicatio", "ordinatio", "celebratio", "commemoratio",

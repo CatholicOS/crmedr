@@ -22,7 +22,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from extract_typology import load_texts
+from extract_typology import RECOVERY, load_texts
 
 ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "ministry"]
 ROLE_OF_TYPOLOGY = {
@@ -49,6 +49,12 @@ STOP_WORDS = {
     # "Sanctissimi Nominis ..." opens a feast; lowercase it would be a title.
     "sanctissimi", "sanctissimae", "sanctissimæ",
 }
+# Misprints of a stop word in the Latin editio altera 2004 itself (verified
+# on the page image and its OCR layer), with the entry where each occurs.
+MISPRINTED_STOP_WORDS = {
+    "betarum": "mr:0927-francisca-xaveria-fenollosa-alcayna",  # print 11*, for "beatarum"
+}
+STOP_WORDS |= set(MISPRINTED_STOP_WORDS)
 WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿæœÆŒ]+")
 TRIM = " ,;: "
 # A comma followed by a relative pronoun, a reign ("sub N. imperatore") or a
@@ -117,7 +123,8 @@ def lead_items(order, texts, typology, *, not_a_place):
     """Opening-place items by ID, and the IDs of back-references with no
     earlier place on their day. A bare back-reference takes the `la` of the
     last place named that day and names that entry in `via`; an extended
-    one keeps its own phrase and names its antecedent in `via`."""
+    one keeps its own phrase and names its antecedent in `via` (and is
+    reported as unresolved when it has none)."""
     items, unresolved, last = {}, [], {}
     for mrid, month, day in order:
         phrase = None if mrid in not_a_place else opening_phrase(texts[mrid])
@@ -134,8 +141,12 @@ def lead_items(order, texts, typology, *, not_a_place):
             item.update(la=root_la, source="lead", via=root)
         else:
             item.update(la=la, source="lead")
-            if kind == "extend" and day_key in last:
-                item["via"] = last[day_key][1]
+            if kind == "extend":
+                if day_key in last:
+                    item["via"] = last[day_key][1]
+                else:
+                    # No antecedent: keep the printed phrase, but report it.
+                    unresolved.append(mrid)
             # A later bare back-reference means "at the place just named",
             # which is this one (for an extend, its own printed phrase).
             last[day_key] = (la, mrid)
@@ -176,9 +187,11 @@ CUES = {
 }
 
 
-def cue_roles(text):
+def cue_matches(text):
+    """{role: [matched cue words]} for the cues outside the opening phrase."""
     rest = base_copy(text).lower()[len(opening_phrase(text) or ""):]
-    return sorted(role for role, cue in CUES.items() if cue.search(rest))
+    found = {role: sorted({m.group(0) for m in cue.finditer(rest)}) for role, cue in CUES.items()}
+    return {role: words for role, words in sorted(found.items()) if words}
 
 
 # Opening places over MAX_WORDS that are still pure place designations.
@@ -188,6 +201,31 @@ LONG_LEAD_OK = {
     "mr:0721-gabriel-pergaud": "a prison ship at anchor off Rochefort",
     "mr:0827-ioannes-baptista-de-souzy": "a prison ship at anchor off Rochefort",
 }
+
+
+# Print-only entries (no workbook entry number) and the slot they occupy in
+# the Latin print, so that back-references resolve in print order.
+PRINT_POSITION = {
+    "mr:0104-abrunculus": 2,
+    "mr:0610-marcus-antonius-durando": 9,
+}
+
+
+def print_order(entries, positions=PRINT_POSITION):
+    """(id, month, day) in print order. An entry with no number takes the
+    slot just before the entry currently numbered like its printed position;
+    an unknown one goes last in its day."""
+    def slot(e):
+        if e["entry"] is not None:
+            return e["entry"]
+        return positions[e["id"]] - 0.5 if e["id"] in positions else float("inf")
+    ordered = sorted(entries, key=lambda e: (e["month"], e["day"], slot(e)))
+    return [(e["id"], e["month"], e["day"]) for e in ordered]
+
+
+def check_typology(typology, current_ids):
+    assert set(typology) == set(current_ids), (
+        "data/typology.json does not match the current IDs. " + RECOVERY)
 
 
 def build(order, texts, typology, curated, *, not_a_place):
@@ -204,10 +242,12 @@ def build(order, texts, typology, curated, *, not_a_place):
         "no_place": [mrid for mrid, _, _ in order if mrid not in places],
         "long": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
                  if mrid in leads and len(leads[mrid]["la"].split()) > MAX_WORDS],
-        "candidates": {mrid: cue_roles(texts[mrid]) for mrid, _, _ in order if cue_roles(texts[mrid])},
+        "candidates": {mrid: cues for mrid, cues in
+                       ((mrid, cue_matches(texts[mrid])) for mrid, _, _ in order) if cues},
         "comma": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
                   if mrid in leads and "," in leads[mrid]["la"]],
         "curated_ids": set(curated),
+        "day_of": {mrid: (month, day) for mrid, month, day in order},
     }
 
 
@@ -219,9 +259,17 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
     for mrid, items in places.items():
         for it in items:
             assert it["role"] in ROLES, f"{mrid}: unknown role {it['role']!r}"
-            # A bare back-reference quotes the `via` entry; every other la its own text.
-            assert it["la"] in texts[mrid] or ("via" in it and it["la"] in texts[it["via"]]), (
-                f"{mrid}: la is not verbatim: {it['la']!r}")
+            if "via" in it:
+                via = it["via"]
+                assert via in texts, f"{mrid}: via {via} has no text"
+                assert result["day_of"].get(via) == result["day_of"].get(mrid), (
+                    f"{mrid}: via {via} is not on the same day")
+                if it["la"] not in texts[mrid]:
+                    # A bare back-reference takes its root's opening place.
+                    root = places.get(via, [{}])[0].get("la")
+                    assert it["la"] == root, f"{mrid}: la is not the root {via}'s la: {it['la']!r}"
+            else:
+                assert it["la"] in texts[mrid], f"{mrid}: la is not verbatim: {it['la']!r}"
             if it["source"] == "lead":
                 leads[mrid] = it
                 expected = ROLE_OF_TYPOLOGY[typology[mrid]]
@@ -242,6 +290,10 @@ def render_json(places):
         "places": dict(sorted(places.items())),
     }
     return json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+
+
+def _cue_cell(cues):
+    return "; ".join(f"{role} ({', '.join(words)})" for role, words in cues.items())
 
 
 def render_report(result):
@@ -268,7 +320,8 @@ def render_report(result):
         "",
         "*Ibidem* or bare *Item* with no earlier place on the same day.",
         "",
-        *([f"- `{m}`" for m in result["unresolved"]] or ["None."]),
+        *([f"- `{m}`" + (" (kept its own phrase)" if m in places else "") for m in result["unresolved"]]
+          or ["None."]),
         "",
         "## Opening places over 12 words",
         "",
@@ -285,10 +338,10 @@ def render_report(result):
         "Entries whose text holds a role cue outside the opening place. Add the "
         "places they state to `data/places_curated.json`.",
         "",
-        "| ID | Cued roles | Curated |",
+        "| ID | Cued roles (cue words) | Curated |",
         "| --- | --- | --- |",
-        *[f"| `{m}` | {', '.join(rs)} | {'yes' if m in result['curated_ids'] else ''} |"
-          for m, rs in result["candidates"].items()],
+        *[f"| `{m}` | {_cue_cell(cues)} | {'yes' if m in result['curated_ids'] else ''} |"
+          for m, cues in result["candidates"].items()],
         "",
         "## Entries with no place",
         "",
@@ -304,14 +357,16 @@ def main():
     repo_root = Path(sys.argv[2]) if len(sys.argv) > 2 else Path(__file__).resolve().parent.parent
     with open(repo_root / "data" / "martyrology_ids.json", encoding="utf-8") as f:
         entries = json.load(f)["entries"]
-    current = sorted((e for e in entries if not e.get("deprecated")),
-                     key=lambda e: (e["month"], e["day"], e["entry"] is None, e["entry"] or 0))
-    order = [(e["id"], e["month"], e["day"]) for e in current]
+    order = print_order([e for e in entries if not e.get("deprecated")])
     deprecated = {e["id"] for e in entries if e.get("deprecated")}
     with open(repo_root / "data" / "typology.json", encoding="utf-8") as f:
         typology = json.load(f)["typology"]
+    check_typology(typology, {m for m, _, _ in order})
+    curated = {}
     curated_path = repo_root / "data" / "places_curated.json"
-    curated = json.load(open(curated_path, encoding="utf-8")) if curated_path.exists() else {}
+    if curated_path.exists():
+        with open(curated_path, encoding="utf-8") as f:
+            curated = json.load(f)
     texts = load_texts(texts_repo)
     result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE)
     validate(result, texts, {m for m, _, _ in order}, deprecated, typology, curated, long_ok=LONG_LEAD_OK)

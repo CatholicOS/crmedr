@@ -126,11 +126,22 @@ Then:
 - `NOT_A_PLACE` lists openings that are not places (`mr:0101-maria-dei-genetrix`:
   "In octava Nativitatis Domini…", a time phrase), each with the reason.
 - *Ibidem* followed by more words ("Ibidem in coemeterio …") keeps its printed
-  phrase and records the antecedent in `via`.
-- `via` always names the entry whose printed phrase supplies `la`, i.e. the root of
-  a chain of back-references.
+  phrase and records the antecedent in `via`. With no antecedent on its day it
+  keeps its phrase and is listed as unresolved. A later bare back-reference on the
+  same day refers to it.
+- `via` means two things. For a bare back-reference, it names the entry whose
+  opening place `la` repeats (the last place named that day). For an extended
+  *Ibidem*, it names the antecedent the phrase builds on, while `la` is the
+  entry's own printed phrase. `validate()` checks that `via` is on the same day
+  and, for a bare back-reference, that `la` equals that entry's own `la`.
+- Back-references resolve in print order. The two print-only entries without a
+  workbook number take their printed slot (`PRINT_POSITION`: 0104-abrunculus at
+  2, 0610-marcus-antonius-durando at 9).
+- A misprint of a stop word in the 2004 print itself counts as that stop word
+  (`MISPRINTED_STOP_WORDS`: *betárum* for *beatárum* at 0927-francisca-xaveria-
+  fenollosa-alcayna, print 11\*).
 
-On the 2004 Latin, 4,260 entries get an opening place; 3 back-references stay
+On the 2004 Latin, 4,261 entries get an opening place; 3 back-references stay
 unresolved; 548 entries are curation candidates.
 
 ## Curated body places
@@ -168,7 +179,8 @@ workbook ─> scripts/extract_registry.py <── reads data/places.json ──�
   - opening places over 12 words, with their `la` (these are allowed only through
     the allow-list, see Checks);
   - **curation candidates**: entries whose text holds a role cue outside the opening
-    place, listed by ID and cue word only, and marked once curated. The cues are
+    place, listed by ID with each cued role and the cue words matched (e.g.
+    `birth (oriundus); ministry (episcopus tungrensis)`), and marked once curated. The cues are
     *natus, nata, ortus, orta, oriundus, oriunda* → `birth`; *episcopus/episcopi
     …ensis*, *sedem* → `ministry`; *sepultus, sepulta, tumulatus, tumulata* →
     `burial`; *obiit, obdormivit, defunctus, defuncta, occubuit* → `death`.

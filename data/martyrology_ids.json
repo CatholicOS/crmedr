@@ -54346,7 +54346,14 @@
       "entry": 11,
       "asterisk": true,
       "country": "ES",
-      "typology": "dies_natalis"
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "In vico Gilet in pago Valentíno item in Hispánia",
+          "source": "lead"
+        }
+      ]
     },
     {
       "id": "mr:0928-venceslaus",
