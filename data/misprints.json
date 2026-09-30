@@ -1,0 +1,26 @@
+{
+  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology. printed occurs exactly once in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. Hand-maintained; see docs/canonicalization-report.md.",
+  "misprints": [
+    {
+      "id": "mr:0927-francisca-xaveria-fenollosa-alcayna",
+      "edition": "martyrologium_romanum_2004",
+      "printed": "betárum",
+      "intended": "beatárum",
+      "verified": "page image and OCR layer (print 11*)"
+    },
+    {
+      "id": "mr:1013-comganus",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "desposizione",
+      "intended": "deposizione",
+      "verified": "print"
+    },
+    {
+      "id": "mr:1014-venantius",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "comemorazione",
+      "intended": "commemorazione",
+      "verified": "print"
+    }
+  ]
+}

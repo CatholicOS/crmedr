@@ -49,12 +49,6 @@ STOP_WORDS = {
     # "Sanctissimi Nominis ..." opens a feast; lowercase it would be a title.
     "sanctissimi", "sanctissimae", "sanctissimæ",
 }
-# Misprints of a stop word in the Latin editio altera 2004 itself (verified
-# on the page image and its OCR layer), with the entry where each occurs.
-MISPRINTED_STOP_WORDS = {
-    "betarum": "mr:0927-francisca-xaveria-fenollosa-alcayna",  # print 11*, for "beatarum"
-}
-STOP_WORDS |= set(MISPRINTED_STOP_WORDS)
 WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿæœÆŒ]+")
 TRIM = " ,;: "
 # A comma followed by a relative pronoun, a reign ("sub N. imperatore") or a
@@ -66,6 +60,9 @@ CLAUSE = re.compile(
 # ", eodem die et anno" (on the same day and year) is not part of the place.
 TIME_TAIL = re.compile(r",?\s*eodem die(?: et anno)?$")
 BACK_REFS = {"Ibidem", "Item"}
+EDITION_LA = "martyrologium_romanum_2004"
+EDITION_IT = "martyrologium_romanum_2004_it_IT"
+MISPRINT_KEYS = {"id", "edition", "printed", "intended", "verified"}
 
 
 def _base(c):
@@ -79,11 +76,11 @@ def base_copy(text):
     return "".join(_base(c) for c in text)
 
 
-def opening_phrase(text):
+def opening_phrase(text, stop_words=STOP_WORDS):
     copy = base_copy(text)
     for i, m in enumerate(WORD.finditer(copy)):
         w = m.group(0)
-        if w.lower() in STOP_WORDS and (w[0].islower() or i == 0):
+        if w.lower() in stop_words and (w[0].islower() or i == 0):
             phrase = text[:m.start()].strip(TRIM)
             break
     else:
@@ -119,7 +116,7 @@ NOT_A_PLACE = {
 }
 
 
-def lead_items(order, texts, typology, *, not_a_place):
+def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
     """Opening-place items by ID, and the IDs of back-references with no
     earlier place on their day. A bare back-reference takes the `la` of the
     last place named that day and names that entry in `via`; an extended
@@ -127,7 +124,7 @@ def lead_items(order, texts, typology, *, not_a_place):
     reported as unresolved when it has none)."""
     items, unresolved, last = {}, [], {}
     for mrid, month, day in order:
-        phrase = None if mrid in not_a_place else opening_phrase(texts[mrid])
+        phrase = None if mrid in not_a_place else opening_phrase(texts[mrid], stop_words)
         if phrase is None:
             continue
         kind, la = split_lead(phrase)
@@ -187,9 +184,9 @@ CUES = {
 }
 
 
-def cue_matches(text):
+def cue_matches(text, stop_words=STOP_WORDS):
     """{role: [matched cue words]} for the cues outside the opening phrase."""
-    rest = base_copy(text).lower()[len(opening_phrase(text) or ""):]
+    rest = base_copy(text).lower()[len(opening_phrase(text, stop_words) or ""):]
     found = {role: sorted({m.group(0) for m in cue.finditer(rest)}) for role, cue in CUES.items()}
     return {role: words for role, words in sorted(found.items()) if words}
 
@@ -228,8 +225,45 @@ def check_typology(typology, current_ids):
         "data/typology.json does not match the current IDs. " + RECOVERY)
 
 
-def build(order, texts, typology, curated, *, not_a_place):
-    leads, unresolved = lead_items(order, texts, typology, not_a_place=not_a_place)
+def load_misprints(repo_root):
+    """Verified print misprints (data/misprints.json). Missing file: none."""
+    path = repo_root / "data" / "misprints.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f)["misprints"]
+
+
+def validate_misprints(misprints, texts_by_edition, current_ids):
+    errors = []
+    for r in misprints:
+        if set(r) != MISPRINT_KEYS:
+            errors.append(f"misprint record keys must be {sorted(MISPRINT_KEYS)}: {sorted(r)}")
+            continue
+        if r["id"] not in current_ids:
+            errors.append(f"{r['id']}: not a current ID")
+            continue
+        if r["edition"] not in texts_by_edition:
+            errors.append(f"{r['id']}: unknown edition {r['edition']!r}")
+            continue
+        count = texts_by_edition[r["edition"]].get(r["id"], "").count(r["printed"])
+        if count != 1:
+            errors.append(f"{r['id']}: {r['printed']!r} occurs {count} times in {r['edition']}")
+    keys = [(r.get("id"), r.get("edition")) for r in misprints]
+    if keys != sorted(keys, key=lambda k: (str(k[0]), str(k[1]))):
+        errors.append("misprint records must be sorted by id, then edition")
+    return errors
+
+
+def misprint_stop_words(misprints, edition, stop_words):
+    """Printed misprints (accent-stripped, lowercase) of a stop word in `edition`."""
+    fold = lambda w: base_copy(w).lower()
+    return {fold(r["printed"]) for r in misprints
+            if r["edition"] == edition and fold(r["intended"]) in stop_words}
+
+
+def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS):
+    leads, unresolved = lead_items(order, texts, typology, not_a_place=not_a_place, stop_words=stop_words)
     places = {}
     for mrid, _, _ in order:
         items = [leads[mrid]] if mrid in leads else []
@@ -243,7 +277,7 @@ def build(order, texts, typology, curated, *, not_a_place):
         "long": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
                  if mrid in leads and len(leads[mrid]["la"].split()) > MAX_WORDS],
         "candidates": {mrid: cues for mrid, cues in
-                       ((mrid, cue_matches(texts[mrid])) for mrid, _, _ in order) if cues},
+                       ((mrid, cue_matches(texts[mrid], stop_words)) for mrid, _, _ in order) if cues},
         "comma": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
                   if mrid in leads and "," in leads[mrid]["la"]],
         "curated_ids": set(curated),
@@ -362,13 +396,19 @@ def main():
     with open(repo_root / "data" / "typology.json", encoding="utf-8") as f:
         typology = json.load(f)["typology"]
     check_typology(typology, {m for m, _, _ in order})
+    misprints = load_misprints(repo_root)
     curated = {}
     curated_path = repo_root / "data" / "places_curated.json"
     if curated_path.exists():
         with open(curated_path, encoding="utf-8") as f:
             curated = json.load(f)
     texts = load_texts(texts_repo)
-    result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE)
+    texts_it = load_texts(texts_repo, EDITION_IT)
+    errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it},
+                                {m for m, _, _ in order})
+    assert not errors, "invalid data/misprints.json:\n" + "\n".join(errors)
+    stop_words = STOP_WORDS | misprint_stop_words(misprints, EDITION_LA, STOP_WORDS)
+    result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words)
     validate(result, texts, {m for m, _, _ in order}, deprecated, typology, curated, long_ok=LONG_LEAD_OK)
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")

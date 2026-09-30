@@ -64,8 +64,9 @@ class OpeningPhraseTest(unittest.TestCase):
         self.assertEqual(p.opening_phrase("Fictopoli, in Fictia, sancti Ficti."), "Fictopoli, in Fictia")
 
     def test_printed_misprint_of_an_honorific_ends_the_phrase(self):
-        self.assertEqual(p.opening_phrase("In vico Ficto item in Fictia, betárum mártyrum Fictarum."),
-                         "In vico Ficto item in Fictia")
+        text = "In vico Ficto item in Fictia, betárum mártyrum Fictarum."
+        self.assertIsNone(p.opening_phrase(text))
+        self.assertEqual(p.opening_phrase(text, p.STOP_WORDS | {"betarum"}), "In vico Ficto item in Fictia")
 
     def test_no_stop_word_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Fictis transactis temporibus Fictus nascitur."))
@@ -166,6 +167,56 @@ class PrintOrderTest(unittest.TestCase):
 
     def test_known_print_positions(self):
         self.assertEqual(p.PRINT_POSITION, {"mr:0104-abrunculus": 2, "mr:0610-marcus-antonius-durando": 9})
+
+
+MISPRINTS = [
+    {"id": "mr:0101-a", "edition": "martyrologium_romanum_2004", "printed": "betárum",
+     "intended": "beatárum", "verified": "print"},
+    {"id": "mr:0101-b", "edition": "martyrologium_romanum_2004_it_IT", "printed": "desposizione",
+     "intended": "deposizione", "verified": "print"},
+]
+MTEXTS = {
+    "martyrologium_romanum_2004": {"mr:0101-a": "Fictopoli, betárum Fictarum.", "mr:0101-b": "Fictopoli, sancti Ficti."},
+    "martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fictopoli, beate Fitte.", "mr:0101-b": "A Fictopoli, desposizione di san Fitto."},
+}
+
+
+class MisprintTest(unittest.TestCase):
+    def test_valid_records(self):
+        self.assertEqual(p.validate_misprints(MISPRINTS, MTEXTS, {"mr:0101-a", "mr:0101-b"}), [])
+
+    def test_invalid_records(self):
+        ids = {"mr:0101-a", "mr:0101-b"}
+        bad = [dict(MISPRINTS[0], printed="betorum")]                          # not in the text
+        self.assertTrue(p.validate_misprints(bad, MTEXTS, ids))
+        twice = {**MTEXTS, "martyrologium_romanum_2004": {"mr:0101-a": "betárum, betárum."}}
+        self.assertTrue(p.validate_misprints(MISPRINTS[:1], twice, ids))      # occurs twice
+        self.assertTrue(p.validate_misprints([dict(MISPRINTS[0], edition="x")], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints([dict(MISPRINTS[0], id="mr:0102-z")], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints([{"id": "mr:0101-a"}], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints(list(reversed(MISPRINTS)), MTEXTS, ids))   # unsorted
+
+    def test_stop_words_per_edition(self):
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, p.STOP_WORDS), {"betarum"})
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, {"sancti"}), set())
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_IT, {"deposizione"}), {"desposizione"})
+
+    def test_load_misprints(self):
+        import json, tempfile
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(p.load_misprints(Path(d)), [])
+            (Path(d) / "data").mkdir()
+            (Path(d) / "data" / "misprints.json").write_text(json.dumps({"misprints": MISPRINTS}), encoding="utf-8")
+            self.assertEqual(p.load_misprints(Path(d)), MISPRINTS)
+
+    def test_repository_file_is_valid_shape(self):
+        import json
+        path = Path(__file__).resolve().parent.parent / "data" / "misprints.json"
+        records = json.load(open(path, encoding="utf-8"))["misprints"]
+        self.assertEqual([(r["id"], r["edition"]) for r in records],
+                         sorted((r["id"], r["edition"]) for r in records))
+        self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
+        self.assertEqual({r["printed"] for r in records}, {"betárum", "desposizione", "comemorazione"})
 
 
 class CuratedTest(unittest.TestCase):
