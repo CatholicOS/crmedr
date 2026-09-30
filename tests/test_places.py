@@ -38,6 +38,12 @@ class OpeningPhraseTest(unittest.TestCase):
                          "Fictopoli item in Fictia")
         self.assertEqual(p.opening_phrase("Ibídem, eódem die et anno, beáti Ficti."), "Ibídem")
 
+    def test_item_before_a_commemoration_means_also_not_a_place(self):
+        self.assertIsNone(p.opening_phrase("Item commemorátio sancti Fictitii, episcopi."))
+        self.assertIsNone(p.opening_phrase("Item commemorántur plurimi Ficti."))
+        self.assertEqual(p.opening_phrase("Item, sancti Fictitii, episcopi."), "Item")
+        self.assertEqual(p.opening_phrase("Ibídem commemorátio sancti Fictitii."), "Ibídem")
+
     def test_no_stop_word_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Fictis transactis temporibus Fictus nascitur."))
 
@@ -128,6 +134,70 @@ class CueTest(unittest.TestCase):
         text = "Fictopoli, sancti Ficti, qui in Fictonia natus, episcopus Fictensis, ibi obiit."
         self.assertEqual(p.cue_roles(text), ["birth", "death", "ministry"])
         self.assertEqual(p.cue_roles("Fictopoli, sancti Ficti, martyris."), [])
+
+
+class BuildTest(unittest.TestCase):
+    ORDER = [("mr:0101-a", 1, 1), ("mr:0101-b", 1, 1), ("mr:0101-e", 1, 1)]
+    TX = {
+        "mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus est.",
+        "mr:0101-b": "Ibídem, beáti Ficti B.",
+        "mr:0101-e": "Sancti Fictitii E., episcopi.",
+    }
+    TY = {"mr:0101-a": "dies_natalis", "mr:0101-b": "depositio", "mr:0101-e": "celebratio"}
+    CUR = {"mr:0101-a": [{"role": "birth", "la": "in Fictonia"}]}
+
+    def build(self, curated=None):
+        return p.build(self.ORDER, self.TX, self.TY, self.CUR if curated is None else curated, not_a_place={})
+
+    def test_build(self):
+        r = self.build()
+        self.assertEqual(r["places"]["mr:0101-a"], [
+            {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"},
+            {"role": "birth", "la": "in Fictonia", "source": "curated"},
+        ])
+        self.assertEqual(r["no_place"], ["mr:0101-e"])
+        self.assertEqual(r["candidates"], {"mr:0101-a": ["birth"]})
+        self.assertEqual(r["curated_ids"], {"mr:0101-a"})
+
+    def test_validate(self):
+        ids = set(self.TX)
+        r = self.build()
+        p.validate(r, self.TX, ids, {"mr:0199-old"}, self.TY, self.CUR, long_ok={})
+        bad = self.build()
+        bad["places"]["mr:0101-a"][0]["role"] = "burial"   # disagrees with typology
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+        bad = self.build()
+        bad["places"]["mr:0101-b"][0]["la"] = "Fictlandia"   # not verbatim in the via text
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+        with self.assertRaises(AssertionError):
+            p.validate(r, self.TX, ids, {"mr:0101-a"}, self.TY, self.CUR, long_ok={})
+        with self.assertRaises(AssertionError):
+            p.validate(r, self.TX, ids, set(), self.TY, {"mr:0101-a": [{"role": "x", "la": "y"}]}, long_ok={})
+
+    def test_long_lead_needs_allow_list(self):
+        tx = {"mr:0101-a": " ".join(["In Fictia"] * 7) + ", sancti Ficti."}
+        order, ty = [("mr:0101-a", 1, 1)], {"mr:0101-a": "dies_natalis"}
+        r = p.build(order, tx, ty, {}, not_a_place={})
+        self.assertEqual([k for k, _ in r["long"]], ["mr:0101-a"])
+        with self.assertRaises(AssertionError):
+            p.validate(r, tx, {"mr:0101-a"}, set(), ty, {}, long_ok={})
+        p.validate(r, tx, {"mr:0101-a"}, set(), ty, {}, long_ok={"mr:0101-a": "reason"})
+
+    def test_render_json(self):
+        import json
+        out = json.loads(p.render_json(self.build()["places"]))
+        self.assertEqual(out["roles"], p.ROLES)
+        self.assertEqual(list(out["places"]), ["mr:0101-a", "mr:0101-b"])
+
+    def test_report(self):
+        report = p.render_report(self.build())
+        self.assertIn("| death | 1 |", report)
+        self.assertIn("## Curation candidates", report)
+        self.assertIn("| `mr:0101-a` | birth | yes |", report)
+        self.assertIn("`mr:0101-e`", report)
+        self.assertNotIn("Fictitii", report)
 
 
 if __name__ == "__main__":
