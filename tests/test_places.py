@@ -110,6 +110,18 @@ class LeadItemsTest(unittest.TestCase):
         self.assertEqual(items["mr:0101-d"],
                          {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead", "via": "mr:0101-a"})
 
+    def test_bare_back_reference_after_an_extended_one_uses_it(self):
+        order = [("mr:0103-a", 1, 3), ("mr:0103-d", 1, 3), ("mr:0103-x", 1, 3)]
+        texts = {
+            "mr:0103-a": "Fictopoli in Fictia, sancti Fictitii A.",
+            "mr:0103-d": "Ibídem in cœmetério Ficti, sancti Ficti D.",
+            "mr:0103-x": "Ibídem, sanctæ Fictæ X.",
+        }
+        items, _ = p.lead_items(order, texts, {k: "dies_natalis" for k in texts}, not_a_place={})
+        self.assertEqual(items["mr:0103-d"]["via"], "mr:0103-a")
+        self.assertEqual(items["mr:0103-x"],
+                         {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead", "via": "mr:0103-d"})
+
     def test_no_place_and_unresolved_first_of_day(self):
         items, unresolved = self.run_leads()
         self.assertNotIn("mr:0101-e", items)
@@ -136,6 +148,12 @@ class CuratedTest(unittest.TestCase):
 
     def test_verbatim_item_is_valid(self):
         self.assertEqual(self.errors([{"role": "birth", "la": "in Fictonia"}]), [])
+
+    def test_empty_la_is_rejected(self):
+        for la in ("", "   "):
+            errors = self.errors([{"role": "birth", "la": la}])
+            self.assertEqual(len(errors), 1)
+            self.assertIn("empty", errors[0])
 
     def test_invalid_items(self):
         self.assertTrue(self.errors([{"role": "birth", "la": "in Fictlandia"}]))

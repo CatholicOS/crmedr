@@ -115,8 +115,9 @@ NOT_A_PLACE = {
 
 def lead_items(order, texts, typology, *, not_a_place):
     """Opening-place items by ID, and the IDs of back-references with no
-    earlier place on their day. `via` names the entry whose printed phrase
-    supplies `la`."""
+    earlier place on their day. A bare back-reference takes the `la` of the
+    last place named that day and names that entry in `via`; an extended
+    one keeps its own phrase and names its antecedent in `via`."""
     items, unresolved, last = {}, [], {}
     for mrid, month, day in order:
         phrase = None if mrid in not_a_place else opening_phrase(texts[mrid])
@@ -135,8 +136,9 @@ def lead_items(order, texts, typology, *, not_a_place):
             item.update(la=la, source="lead")
             if kind == "extend" and day_key in last:
                 item["via"] = last[day_key][1]
-            if kind == "place":
-                last[day_key] = (la, mrid)
+            # A later bare back-reference means "at the place just named",
+            # which is this one (for an extend, its own printed phrase).
+            last[day_key] = (la, mrid)
         items[mrid] = item
     return items, unresolved
 
@@ -153,6 +155,9 @@ def validate_curated(curated, texts, current_ids, leads):
                 continue
             if it["role"] not in ROLES:
                 errors.append(f"{mrid}: unknown role {it['role']!r}")
+            if not isinstance(it["la"], str) or not it["la"].strip():
+                errors.append(f"{mrid}: la is empty")
+                continue
             if it["la"] not in texts[mrid]:
                 errors.append(f"{mrid}: la is not verbatim in the elogium: {it['la']!r}")
             if len(it["la"].split()) > MAX_WORDS:
