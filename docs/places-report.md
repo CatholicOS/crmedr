@@ -49,10 +49,8 @@ Check that the part after each comma is still a place designation.
 
 Curation candidates: some are places the Latin rule missed.
 
-- `mr:0101-maria-dei-genetrix`: Nell’ottava del Natale del Signore e nel giorno della sua Circoncisione
 - `mr:0220-eucherius`: A Sint-Truiden nel Brabante in Austrasia, nell’odierno Belgio
 - `mr:0307-satyrus-et-socii`: a Cartagine, nell’odierna Tunisia
-- `mr:0310-macarius`: Nello stesso giorno
 - `mr:0724-christina-mirabilis`: A Sint-Truiden in Brabante, nell’odierno Belgio
 - `mr:0818-albertus-hurtado-cruchaga`: A Santiago nel Cile
 - `mr:1130-stephanus-fanus`: A Lanceston in Inghilterra

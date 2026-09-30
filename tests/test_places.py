@@ -229,6 +229,16 @@ class ItalianPhraseTest(unittest.TestCase):
     def test_capitalized_saint_in_a_place_name_stays(self):
         self.assertEqual(p.italian_phrase("A San Fittorino nelle Fittie, beato Fitto."), "A San Fittorino nelle Fittie")
 
+    def test_lowercase_saint_after_a_preposition_is_part_of_the_place(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli presso san Fittino, san Fitto, papa."),
+                         "A Fittopoli presso san Fittino")
+        self.assertEqual(p.italian_phrase("Nel monastero di sant’Ilario presso Fittopoli, beato Fitto."),
+                         "Nel monastero di sant’Ilario presso Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli san Fitto, vescovo."), "A Fittopoli")
+
+    def test_time_opening_is_not_a_place(self):
+        self.assertIsNone(p.italian_phrase("Nello stesso giorno, san Fitto."))
+
     def test_capitalized_stop_word_at_start_means_no_phrase(self):
         self.assertIsNone(p.italian_phrase("Memoria di san Fitto, vescovo."))
         self.assertIsNone(p.italian_phrase("Parimenti si commemorano i santi Fitti."))
@@ -325,6 +335,18 @@ class ItalianAlignmentTest(unittest.TestCase):
         r = p.build([("mr:0105-a", 1, 5)], tx, {"mr:0105-a": "dies_natalis"}, ok, not_a_place={}, texts_it=it)
         self.assertEqual(r["places"]["mr:0105-a"][1],
                          {"role": "birth", "la": "in Fictonia", "it": "in Fittonia", "source": "curated"})
+
+    def test_it_ending_in_a_function_word_is_rejected(self):
+        it = {"mr:0105-a": "A Fittopoli presso, san Fitto A.", "mr:0105-b": "Nello stesso luogo, beato Fitto B."}
+        r = self.build(it=it)
+        self.assertEqual(r["places"]["mr:0105-a"][0]["it"], "A Fittopoli presso")
+        with self.assertRaisesRegex(AssertionError, "ends in"):
+            p.validate(r, self.TX, set(self.TX), set(), self.TY, {}, long_ok={}, texts_it=it)
+
+    def test_not_a_place_is_not_listed_as_italian_only(self):
+        r = p.build(self.ORDER, self.TX, self.TY, {}, not_a_place={"mr:0105-e": "a time phrase"},
+                    texts_it=self.IT)
+        self.assertEqual(r["it_only"], [])
 
     def test_report_sections(self):
         report = p.render_report(self.build())

@@ -133,6 +133,19 @@ LOCATIVE_IT = {
 CUT_IT = re.compile(
     r"^(?:dove|da lui|che|chiamat\w*|sotto)\b|\banni (?:dopo|piu tardi)\b|^(?:nello stesso )?giorno e anno\b")
 BACK_REFS_IT = {"nello stesso luogo", "nella stessa citta"}
+# Openings that name a time, not a place.
+TIME_OPENINGS_IT = {"nello stesso giorno"}
+HONORIFICS_IT = {"san", "sant", "santo", "santa", "santi", "sante",
+                 "beato", "beata", "beati", "beate", "santissimo", "santissima"}
+# The CEI edition prints some church and monastery names lowercase ("presso
+# san Pietro", "monastero di sant'Elia"): an honorific directly after one of
+# these, with no punctuation between, belongs to the place name.
+PREPOSITIONS_IT = {
+    "a", "ad", "di", "da", "in", "presso", "verso", "nel", "nella", "nello", "del",
+    "della", "dello", "dei", "degli", "delle", "al", "alla", "sul", "sulla",
+}
+# A phrase ending in one of these was cut inside a place name.
+FUNCTION_WORDS_IT = PREPOSITIONS_IT | {"il", "lo", "la", "i", "gli", "le", "e"}
 MAX_WORDS_IT = 20
 
 
@@ -142,12 +155,18 @@ def italian_phrase(text, stop_words=STOP_WORDS_IT):
     if not text:
         return None
     copy = base_copy(text)
-    for i, m in enumerate(WORD.finditer(copy)):
+    words = list(WORD.finditer(copy))
+    for i, m in enumerate(words):
         w = m.group(0)
         if w.lower() in stop_words and (w[0].islower() or i == 0):
+            if i and w.lower() in HONORIFICS_IT and words[i - 1].group(0).lower() in PREPOSITIONS_IT \
+                    and not copy[words[i - 1].end():m.start()].strip(" ’'"):
+                continue
             phrase = text[:m.start()].strip(TRIM)
             break
     else:
+        return None
+    if base_copy(phrase).lower() in TIME_OPENINGS_IT:
         return None
     segments = phrase.split(",")
     kept = segments[0]
@@ -344,7 +363,7 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
         for mrid, _, _ in order:
             phrase = italian_phrase(texts_it.get(mrid), stop_words_it)
             if mrid not in leads:
-                if phrase:
+                if phrase and mrid not in not_a_place:
                     it_only.append((mrid, phrase))
                 continue
             item = leads[mrid]
@@ -400,6 +419,9 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
             if "it" in it:
                 assert texts_it is not None, f"{mrid}: it present but no Italian texts given"
                 assert len(it["it"].split()) <= MAX_WORDS_IT, f"{mrid}: it has more than {MAX_WORDS_IT} words"
+                last = WORD.findall(base_copy(it["it"]).lower())[-1:]
+                assert not (last and last[0] in FUNCTION_WORDS_IT), (
+                    f"{mrid}: it ends in {last[0]!r}, cut inside a place name: {it['it']!r}")
                 bare = "via" in it and it["la"] not in texts[mrid]
                 if bare:
                     root = places.get(it["via"], [{}])[0].get("it")
