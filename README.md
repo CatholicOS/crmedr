@@ -58,3 +58,7 @@ The texts of the eulogies of the Roman Martyrology — in Latin and in the vario
 ## Work in Progress
 
 The goal is to establish a unified, canonical identifier system for the eulogies of the Roman Martyrology that can serve as a reference for interoperability between different liturgical applications — martyrology readers, liturgical calendar APIs such as the [Liturgical Calendar API](https://github.com/Liturgical-Calendar/LiturgicalCalendarAPI), and digital editions — in the same way that the [CLEDR](https://github.com/CatholicOS/cledr) does for liturgical celebrations of the Roman Missal.
+
+## License
+
+The data and documentation in this repository are licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/) (CC BY-NC-ND 4.0). See [`LICENSE`](LICENSE) for the full legal code.
