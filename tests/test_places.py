@@ -223,7 +223,7 @@ class ItalianPhraseTest(unittest.TestCase):
     def test_lowercase_honorific_and_markers_end_the_phrase(self):
         self.assertEqual(p.italian_phrase("A Fittopoli in Fittia, san Fitto, vescovo."), "A Fittopoli in Fittia")
         self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, beata Fitta."), "Nel cenobio di Fittaco")
-        self.assertEqual(p.italian_phrase("A Fittopoli, anniversario della morte di san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, anniversario della nascita al cielo del beato Fitto."), "A Fittopoli")
         self.assertEqual(p.italian_phrase("A Fittopoli, martirio dei santi Fitti."), "A Fittopoli")
 
     def test_capitalized_saint_in_a_place_name_stays(self):
@@ -252,7 +252,8 @@ class ItalianPhraseTest(unittest.TestCase):
         self.assertIsNone(p.italian_phrase("Nello stesso luogo, san Fitto."))
         self.assertIsNone(p.italian_phrase("Nella stessa città, beata Fitta."))
         self.assertIsNone(p.italian_phrase("Sempre nello stesso luogo, san Fitto."))
-        self.assertIsNone(p.italian_phrase("Nello stesso luogo, nello stesso giorno e anno, beati Fitti."))
+        self.assertIsNone(p.italian_phrase("Nello stesso luogo, dieci anni dopo, sante Fitte."))
+        self.assertEqual(p.italian_phrase("A Fittopoli, giorno e anno, sante Fitte."), "A Fittopoli")
 
     def test_no_text(self):
         self.assertIsNone(p.italian_phrase(None))

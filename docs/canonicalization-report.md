@@ -363,20 +363,32 @@ it has no opening place.
 whose text holds a role cue. A later step resolves each distinct place to a
 Wikidata item and a modern country (#12).
 
+Each place may also carry `it`: the same place designation quoted from the Italian
+(CEI) edition, which often gives the modern name and country ("A Ramosch in Rezia,
+nel territorio dell'odierna Svizzera") — a hint for resolving the modern place, not
+a verified fact (see the country-code corrections above). The Latin decides whether
+a place exists; a bare Latin back-reference takes its root's `it`. In the Italian
+phrase a comma segment is kept only when it is a locative or a modern-country
+hint, and a leading *Sempre / Ancora* ("also") is dropped.
+
 An opening place is cut at a comma that starts a relative clause (*quod, quam,
 quo, qui, quae*), a reign (*sub N. imperatore*) or a time phrase (*in eadem
 persecutione*, "… post annis"), since only the place designation is quoted.
 
 Counts: 4,261 entries with places, 3 unresolved back-references (two *Ibidem* after
 a memorial whose place is stated only in its body, and one bare *Item* after an
-"Item commemoratio" entry), 548 curation candidates.
+"Item commemoratio" entry), 548 curation candidates; 4,257 places with an Italian phrase.
 
-**Misprint in the editio altera 2004 (print-verified)**: September 27, entry 11\*
-(mr:0927-francisca-xaveria-fenollosa-alcayna) is printed "betárum mártyrum" for
-*beatárum* (the subjects are women, Franciscae Xaveriae … et Herminiae). Verified
-on the page image and in its OCR layer; the transcription reproduces the print.
-`scripts/extract_places.py` treats the misprint as the honorific
-(`MISPRINTED_STOP_WORDS`), so the entry keeps its opening place.
+**Misprints in the 2004 prints (verified)**, recorded in `data/misprints.json` for
+footnoting when the texts are displayed; place extraction treats each as the word
+intended:
+- Latin editio altera, September 27, entry 11\* (mr:0927-francisca-xaveria-fenollosa-alcayna):
+  "betárum mártyrum" for *beatárum* (the subjects are women), verified on the page
+  image and in its OCR layer.
+- Italian (CEI) edition, October 13 (mr:1013-comganus): "desposizione" for
+  *deposizione*.
+- Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for
+  *commemorazione*.
 
 ## Post-2004 official variations
 
