@@ -43,7 +43,7 @@
 | 3 | 5 | `mr:1103-valentinus` |  | IT |  |
 | 3 | 6 | `mr:1103-guenael` | * | FR |  |
 | 3 | 7 | `mr:1103-silvia` |  | IT |  |
-| 3 | 8 | `mr:1103-pirminus` |  | FR |  |
+| 3 | 8 | `mr:1103-pirminus` |  | DE |  |
 | 3 | 9 | `mr:1103-ioannicius` |  | TR |  |
 | 3 | 10 | `mr:1103-odrada` | * | NL | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 3 | 11 | `mr:1103-ermengaudius` |  | ES |  |
@@ -190,7 +190,7 @@
 | 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | IL |  |
 | 14 | 11 | `mr:1114-ioannes-liccio` | * | IT |  |
 | 14 | 12 | `mr:1114-stephanus-theodorus-cuenot` |  | VN |  |
-| 15 | (1) | `mr:1115-albertus-magnus` |  | FR |  |
+| 15 | (1) | `mr:1115-albertus-magnus` |  | DE |  |
 | 15 | 2 | `mr:1115-viginti-martyres-hippone-regio` |  | DZ |  |
 | 15 | 3 | `mr:1115-guria` |  | TR |  |
 | 15 | 4 | `mr:1115-felix` | * | IT |  |
@@ -292,7 +292,7 @@
 | 22 | 8 | `mr:1122-petrus-esqueda-ramirez` |  | MX |  |
 | 22 | 9 | `mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner` | * | ES |  |
 | 23 | (1) | `mr:1123-clemens-i` |  | IT |  |
-| 23 | (2) | `mr:1123-columbanus` |  | FR |  |
+| 23 | (2) | `mr:1123-columbanus` |  | IT |  |
 | 23 | 3 | `mr:1123-felicitas` |  | IT |  |
 | 23 | 4 | `mr:1123-mustiola` |  | IT |  |
 | 23 | 5 | `mr:1123-sisinnius` |  | TR |  |
@@ -316,7 +316,7 @@
 | 24 | 8 | `mr:1124-flora-et-maria` |  | ES |  |
 | 24 | 9 | `mr:1124-albertus-lovaniensis` |  | FR |  |
 | 24 | 10 | `mr:1124-balsamus` | * | IT |  |
-| 24 | 11 | `mr:1124-petrus-dumoulin-borie` |  | FR |  |
+| 24 | 11 | `mr:1124-petrus-dumoulin-borie` |  | VN |  |
 | 24 | 12 | `mr:1124-maria-anna-sala` | * | IT |  |
 | 24 | 13 | `mr:1124-nicetha-a-sancta-prudentia-plaja-xifra-et-socii` | * | ES |  |
 | 25 | (1) | `mr:1125-catharina` |  | EG |  |
@@ -328,7 +328,7 @@
 | 25 | 7 | `mr:1125-beatrix-de-ornacieux` | * | FR |  |
 | 25 | 8 | `mr:1125-elisabeth-achler-bona` | * | DE |  |
 | 25 | 9 | `mr:1125-petrus-yi-ho-yong` |  | KR |  |
-| 25 | 10 | `mr:1125-hyacinthus-serrano-lopez` | * | MX |  |
+| 25 | 10 | `mr:1125-hyacinthus-serrano-lopez` | * | ES |  |
 | 26 | 1 | `mr:1126-siricius` |  | IT |  |
 | 26 | 2 | `mr:1126-alypius` |  | TR |  |
 | 26 | 3 | `mr:1126-conradus` |  | DE |  |

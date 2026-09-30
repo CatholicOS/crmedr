@@ -242,6 +242,49 @@ LATIN_PLAIN = {
     "mr:1212-simon-phan": 11,
 }
 
+# Country codes the workbook got wrong (issue #8). `country` is the modern
+# country of the place of the elogium: the place-lead when there is one,
+# otherwise the place of death. The actual location wins over the printed
+# text when the text names the wrong modern country. Most workbook errors come
+# from homonymous places resolved to the wrong country (Guadalajara, Eger,
+# Nizza, Montserrat → MS, the British overseas territory).
+COUNTRY_CORRECTIONS = {
+    "mr:0131-eusebius": "AT",  # Viktorsberg near Rankweil, Vorarlberg
+    "mr:0217-evermodus": "DE",  # Ratzeburg
+    "mr:0615-isfridus": "DE",  # Ratzeburg
+    "mr:0715-ansuerus": "DE",  # Ratzeburg
+    "mr:1212-vicelinus": "DE",  # Neumünster
+    "mr:1115-albertus-magnus": "DE",  # no place-lead; died in Cologne
+    "mr:0714-hroznata": "CZ",  # Starý Kynšperk near Cheb (Eger), Bohemia
+    "mr:0626-iosephus-maria-robles": "MX",  # near Guadalajara, Jalisco
+    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii": "ES",  # Guadalajara, Spain
+    "mr:0830-ioachim-ferrer-adell": "ES",  # Castellón de la Plana
+    "mr:1125-hyacinthus-serrano-lopez": "ES",  # Puebla de Híjar near Teruel
+    "mr:0825-maria-a-transitu-iesu-sacramenti": "AR",  # Córdoba, Argentina
+    "mr:0320-nicetas": "AL",  # Pojani (Apollonia)
+    "mr:0731-ignatius-de-loyola": "IT",  # no place-lead; died in Rome
+    "mr:0226-paula-a-sancto-iosepho-de-calasanz-montal-fornes": "ES",  # Olesa de Montserrat
+    "mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez": "ES",  # Montserrat, Catalonia
+    "mr:0707-petrus-to-rot": "PG",  # Rakunai, New Britain
+    "mr:0514-maria-dominica-mazzarello": "IT",  # Nizza Monferrato, not Nice
+    "mr:0626-andreas-hyacinthus-longhin": "IT",  # Treviso
+    "mr:1225-anastasia": "IT",  # place-lead "A Roma" (Sirmium is in Serbia)
+    "mr:1011-meinardus": "LV",  # Ikšķile near Riga
+    "mr:0622-paulinus": "IT",  # no place-lead; Nola
+    "mr:1123-columbanus": "IT",  # no place-lead; died at Bobbio
+    "mr:0716-reinildis": "BE",  # Saintes, Hainaut
+    "mr:0706-goaris": "DE",  # Sankt Goar
+    "mr:1103-pirminus": "DE",  # Hornbach
+    "mr:0724-ludovica": "CH",  # Orbe, Vaud
+    "mr:0921-franciscus-jaccard": "VN",  # Quảng Trị
+    "mr:1124-petrus-dumoulin-borie": "VN",  # Đồng Hới
+    "mr:0504-florianus": "AT",  # Lorch/Enns (text says "odierna Germania")
+    "mr:0304-casimirus": "BY",  # died at Grodno (text says "in Lituania")
+    "mr:0603-morandus": "FR",  # Altkirch, Alsace (text says "odierna Svizzera")
+    "mr:0827-gebhardus": "DE",  # Petershausen, Konstanz (text says "odierna Svizzera")
+    "mr:0913-amatus-broili": "FR",  # died at Breuil-sur-le-Lys; Sion is only his see
+}
+
 ASTERISK_OVERRIDES = {}
 for _id, _n in LATIN_ASTERISKED.items():
     ASTERISK_OVERRIDES[_id] = (
@@ -320,6 +363,7 @@ def extract(workbook_path):
             country = iso[paese] if paese else None
             mr_id = str(mr_id).strip()
             mr_id = ID_CORRECTIONS.get(mr_id, mr_id)
+            country = COUNTRY_CORRECTIONS.get(mr_id, country)
             row_out = {
                 "id": mr_id,
                 "month": month_index,

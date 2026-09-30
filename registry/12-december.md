@@ -124,7 +124,7 @@
 | 12 | 4 | `mr:1212-finnianus` | * | IE |  |
 | 12 | 5 | `mr:1212-corentinus` | * | FR |  |
 | 12 | 6 | `mr:1212-israel` | * | FR |  |
-| 12 | 7 | `mr:1212-vicelinus` | * | FR |  |
+| 12 | 7 | `mr:1212-vicelinus` | * | DE |  |
 | 12 | 8 | `mr:1212-bartholus-buonpedoni` | * | IT |  |
 | 12 | 9 | `mr:1212-conradus-de-ophyda` | * | IT |  |
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT |  |
@@ -239,7 +239,7 @@
 | 24 | 7 | `mr:1224-paula-elisabeth-cerioli` |  | IT |  |
 | 24 | 8 | `mr:1224-sarbelius-makhluf` |  | LB |  |
 | 25 | (1) | `mr:1225-nativitas-domini` |  | IL |  |
-| 25 | 2 | `mr:1225-anastasia` |  | HR |  |
+| 25 | 2 | `mr:1225-anastasia` |  | IT |  |
 | 25 | 3 | `mr:1225-eugenia` |  | IT |  |
 | 25 | 4 | `mr:1225-iovinus-et-basileus` |  | IT |  |
 | 25 | 5 | `mr:1225-petrus-venerabilis` | * | FR |  |

@@ -371,7 +371,7 @@
 | 25 | 10 | `mr:0825-thomas-cantelupe` |  | IT |  |
 | 25 | 11 | `mr:0825-michael-carvalho` | * | JP |  |
 | 25 | 12 | `mr:0825-paulus-ioannes-charles` | * | FR |  |
-| 25 | 13 | `mr:0825-maria-a-transitu-iesu-sacramenti` | * | ES |  |
+| 25 | 13 | `mr:0825-maria-a-transitu-iesu-sacramenti` | * | AR |  |
 | 25 | 14 | `mr:0825-aloysius-urbano-lanaspa` | * | ES |  |
 | 26 | 1 | `mr:0826-melchisedech` |  | PS |  |
 | 26 | 2 | `mr:0826-maximilianus` |  | IT |  |
@@ -396,7 +396,7 @@
 | 27 | 6 | `mr:0827-licerius` |  | FR |  |
 | 27 | 7 | `mr:0827-caesarius` |  | FR |  |
 | 27 | 8 | `mr:0827-ioannes` |  | IT |  |
-| 27 | 9 | `mr:0827-gebhardus` | * | CH |  |
+| 27 | 9 | `mr:0827-gebhardus` | * | DE |  |
 | 27 | 10 | `mr:0827-guarinus` | * | FR |  |
 | 27 | 11 | `mr:0827-amadeus` | * | CH |  |
 | 27 | 12 | `mr:0827-angelus-conti` | * | IT |  |
@@ -456,7 +456,7 @@
 | 30 | 10 | `mr:0830-ioannes-iuvenalis-ancina` | * | IT |  |
 | 30 | 11 | `mr:0830-maria-rafols` | * | ES |  |
 | 30 | 12 | `mr:0830-didacus-ventaja-milan` | * | ES |  |
-| 30 | 13 | `mr:0830-ioachim-ferrer-adell` | * | MX |  |
+| 30 | 13 | `mr:0830-ioachim-ferrer-adell` | * | ES |  |
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES |  |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT |  |
 | 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | IL |  |

@@ -53,7 +53,7 @@
 | 3 | 12 | `mr:0503-maria-leonia-paradis` | * | CA |  |
 | 4 | 1 | `mr:0504-agapius-et-secundinus` |  | DZ |  |
 | 4 | 2 | `mr:0504-antonina` |  | TR |  |
-| 4 | 3 | `mr:0504-florianus` |  | DE |  |
+| 4 | 3 | `mr:0504-florianus` |  | AT |  |
 | 4 | 4 | `mr:0504-silvanus-et-socii` |  | PS |  |
 | 4 | 5 | `mr:0504-ladislaus-de-gielniow` | * | PL |  |
 | 4 | 6 | `mr:0504-ioannes-houghton-et-socii` |  | GB |  |
@@ -183,7 +183,7 @@
 | 14 | 12 | `mr:0514-aegidius-de-vaozela` | * | PT |  |
 | 14 | 13 | `mr:0514-theodora-guerin` | * | US |  |
 | 14 | 14 | `mr:0514-michael-garicoits` |  | FR |  |
-| 14 | 15 | `mr:0514-maria-dominica-mazzarello` |  | FR |  |
+| 14 | 15 | `mr:0514-maria-dominica-mazzarello` |  | IT |  |
 | 15 | 1 | `mr:0515-petrus-et-socii` |  | TR |  |
 | 15 | 2 | `mr:0515-cassius-et-victorinus` |  | FR |  |
 | 15 | 3 | `mr:0515-simplicius` |  | IT |  |
