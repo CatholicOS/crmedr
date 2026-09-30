@@ -128,5 +128,48 @@ class XrefTest(unittest.TestCase):
         self.assertEqual(unresolved, [])
 
 
+class OutputTest(unittest.TestCase):
+    CURRENT = {"mr:0101-fictitius": (1, 1), "mr:0102-alius": (1, 2)}
+    TEXTS = {
+        "mr:0101-fictitius": "Romae, depositio sancti Fictitii, cuius memoria cras agitur.",
+        "mr:0102-alius": "Memoria sancti Alii, episcopi.",
+    }
+
+    def test_build(self):
+        r = t.build(self.CURRENT, self.TEXTS, feast_ids=set(), overrides={})
+        self.assertEqual(r["typology"], {"mr:0101-fictitius": "depositio", "mr:0102-alius": "celebratio"})
+        self.assertEqual(r["rules"]["mr:0102-alius"], "off-day:mr:0101-fictitius")
+        self.assertEqual(r["multi"], {"mr:0101-fictitius": ["depositio", "memoria"]})
+
+    def test_validate_rejects_bad_data(self):
+        ids = set(self.CURRENT)
+        good = {"mr:0101-fictitius": "depositio", "mr:0102-alius": "celebratio"}
+        t.validate(good, ids, {"mr:0103-vetus"}, feast_ids=set(), overrides={})
+        with self.assertRaises(AssertionError):
+            t.validate({"mr:0101-fictitius": "depositio"}, ids, set(), feast_ids=set(), overrides={})
+        with self.assertRaises(AssertionError):
+            t.validate({**good, "mr:0102-alius": "festum"}, ids, set(), feast_ids=set(), overrides={})
+        with self.assertRaises(AssertionError):
+            t.validate(good, ids, set(), feast_ids=set(), overrides={"mr:9999-nemo": "depositio"})
+        with self.assertRaises(AssertionError):
+            t.validate(good, ids, set(), feast_ids={"mr:9999-nemo"}, overrides={})
+        with self.assertRaises(AssertionError):
+            t.validate(good, ids, {"mr:0101-fictitius"}, feast_ids=set(), overrides={})
+
+    def test_render_json_is_sorted_and_complete(self):
+        import json
+        out = json.loads(t.render_json({"mr:0102-b": "depositio", "mr:0101-a": "dies_natalis"}))
+        self.assertEqual(out["values"], t.VALUES)
+        self.assertEqual(list(out["typology"]), ["mr:0101-a", "mr:0102-b"])
+
+    def test_report_has_ids_but_no_text(self):
+        r = t.build(self.CURRENT, self.TEXTS, feast_ids=set(), overrides={})
+        report = t.render_report(r)
+        self.assertIn("`mr:0102-alius`", report)
+        self.assertIn("| depositio | 1 |", report)
+        self.assertNotIn("Fictitii", report)
+        self.assertNotIn("episcopi", report)
+
+
 if __name__ == "__main__":
     unittest.main()
