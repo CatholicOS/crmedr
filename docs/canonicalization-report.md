@@ -375,9 +375,17 @@ An opening place is cut at a comma that starts a relative clause (*quod, quam,
 quo, qui, quae*), a reign (*sub N. imperatore*) or a time phrase (*in eadem
 persecutione*, "… post annis"), since only the place designation is quoted.
 
-Counts: 4,261 entries with places, 3 unresolved back-references (two *Ibidem* after
-a memorial whose place is stated only in its body, and one bare *Item* after an
-"Item commemoratio" entry), 548 curation candidates; 4,257 places with an Italian phrase.
+A place named after a saint can open the elogium with a capitalized honorific
+("Sancti Trudonis Fani in Brabantia" = Sint-Truiden, "Sancti Iacobi in Chilia" =
+Santiago): when the first word after the first comma is a lowercase honorific or
+marker ("…, transitus sancti N."), the text before that comma is the place, not a
+drop-cap memorial. In the Italian phrase a naming clause ("chiamata poi Saint
+Albans") is kept, as its Latin counterpart is ("postea ab eo Oswestria nuncupato").
+
+Counts: 4,266 entries with places (4,265 opening places and 1 curated), 3 unresolved
+back-references (two *Ibidem* after a memorial whose place is stated only in its
+body, and one bare *Item* after an "Item commemoratio" entry), 548 curation
+candidates; 4,262 places with an Italian phrase.
 
 **Misprints in the 2004 prints (verified)**, recorded in `data/misprints.json` for
 footnoting when the texts are displayed; place extraction treats each as the word

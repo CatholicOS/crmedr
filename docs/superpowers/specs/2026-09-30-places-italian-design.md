@@ -70,7 +70,7 @@ Same machinery as the Latin (`base_copy`, one character to one, case kept):
   Latin back-reference takes the root's `it` anyway, so the Italian side never needs
   its own `via`.
 - **Length.** At most 20 words (`MAX_WORDS_IT`). Italian place designations are
-  wordier than the Latin: 84 exceed 12 words, and none exceeds 20.
+  wordier than the Latin: 83 exceed 12 words, and none exceeds 20.
 
 The Latin extraction and every existing `la` are unchanged.
 
@@ -120,7 +120,9 @@ record is a new file, `data/misprints.json`:
 - **Latin places without an Italian phrase**: IDs only, currently 4.
   `mr:0104-abrunculus` is absent from the CEI edition, and three Italian texts lack
   a lowercase honorific.
-- **Italian places without a Latin place**: ID and `it` phrase, currently about 10.
+- **Italian places without a Latin place**: ID and `it` phrase. After the follow-ups in
+  #18 only one remains (`mr:0307-satyrus-et-socii`, a Latin *Ibidem* whose root states
+  its place only in its body).
   They are curation candidates, and some are real Latin gaps. A Latin place name
   that starts with a capitalized saint ("Sancti Trudonis fani" = Sint-Truiden,
   "Sancti Iacobi" = Santiago) is read as "no place" by the Latin rule.

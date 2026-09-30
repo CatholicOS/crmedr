@@ -21,6 +21,14 @@ class OpeningPhraseTest(unittest.TestCase):
             p.opening_phrase("In monasterio Sancti Ficti ad Fictum flumen, depositio beati Fictitii."),
             "In monasterio Sancti Ficti ad Fictum flumen")
 
+    def test_place_name_opening_with_a_capitalized_saint(self):
+        self.assertEqual(p.opening_phrase("Sancti Fictitii Fani in Fictia, transitus sancti Ficti."),
+                         "Sancti Fictitii Fani in Fictia")
+        self.assertEqual(p.opening_phrase("Sancti Fictii in Fictonia, beati Fictitii, presbyteri."),
+                         "Sancti Fictii in Fictonia")
+        self.assertIsNone(p.opening_phrase("Sancti Fictitii, episcopi, qui sancti Ficti discipulus fuit."))
+        self.assertIsNone(p.opening_phrase("Sanctorum martyrum Fictorum, quorum passio fertur."))
+
     def test_capitalized_stop_word_at_start_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Sancti Fictitii, episcopi."))
         self.assertIsNone(p.opening_phrase("Memória sancti Fictitii, episcopi."))
@@ -100,18 +108,22 @@ class LeadItemsTest(unittest.TestCase):
         return p.lead_items(order, TEXTS, TYP, not_a_place=not_a_place or {})
 
     def test_place_and_back_references(self):
-        items, unresolved = self.run_leads()
+        items, unresolved, _ = self.run_leads()
         self.assertEqual(items["mr:0101-a"], {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"})
         self.assertEqual(items["mr:0101-b"],
                          {"role": "burial", "la": "Fictopoli in Fictia", "source": "lead", "via": "mr:0101-a"})
 
+    def test_bare_back_references_are_reported_explicitly(self):
+        _, _, bare = self.run_leads()
+        self.assertEqual(bare, {"mr:0101-b", "mr:0101-c"})      # d is an extended Ibidem, not bare
+
     def test_chain_points_to_the_root(self):
-        items, _ = self.run_leads()
+        items, _, _ = self.run_leads()
         self.assertEqual(items["mr:0101-c"]["via"], "mr:0101-a")
         self.assertEqual(items["mr:0101-c"]["la"], "Fictopoli in Fictia")
 
     def test_extended_ibidem_keeps_its_phrase(self):
-        items, _ = self.run_leads()
+        items, _, _ = self.run_leads()
         self.assertEqual(items["mr:0101-d"],
                          {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead", "via": "mr:0101-a"})
 
@@ -122,13 +134,13 @@ class LeadItemsTest(unittest.TestCase):
             "mr:0103-d": "Ibídem in cœmetério Ficti, sancti Ficti D.",
             "mr:0103-x": "Ibídem, sanctæ Fictæ X.",
         }
-        items, _ = p.lead_items(order, texts, {k: "dies_natalis" for k in texts}, not_a_place={})
+        items, _, _ = p.lead_items(order, texts, {k: "dies_natalis" for k in texts}, not_a_place={})
         self.assertEqual(items["mr:0103-d"]["via"], "mr:0103-a")
         self.assertEqual(items["mr:0103-x"],
                          {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead", "via": "mr:0103-d"})
 
     def test_no_place_and_unresolved_first_of_day(self):
-        items, unresolved = self.run_leads()
+        items, unresolved, _ = self.run_leads()
         self.assertNotIn("mr:0101-e", items)
         self.assertNotIn("mr:0102-f", items)
         self.assertEqual(unresolved, ["mr:0102-f"])
@@ -136,17 +148,17 @@ class LeadItemsTest(unittest.TestCase):
     def test_extended_back_reference_without_antecedent_is_kept_and_reported(self):
         order = [("mr:0104-d", 1, 4)]
         texts = {"mr:0104-d": "Ibídem in cœmetério Ficti, sancti Ficti D."}
-        items, unresolved = p.lead_items(order, texts, {"mr:0104-d": "dies_natalis"}, not_a_place={})
+        items, unresolved, _ = p.lead_items(order, texts, {"mr:0104-d": "dies_natalis"}, not_a_place={})
         self.assertEqual(items["mr:0104-d"], {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead"})
         self.assertEqual(unresolved, ["mr:0104-d"])
 
     def test_not_a_place(self):
-        items, _ = self.run_leads(not_a_place={"mr:0102-g": "a time phrase"})
+        items, _, _ = self.run_leads(not_a_place={"mr:0102-g": "a time phrase"})
         self.assertNotIn("mr:0102-g", items)
 
     def test_every_typology_maps_to_a_role(self):
         for value, role in p.ROLE_OF_TYPOLOGY.items():
-            items, _ = p.lead_items([("mr:0101-a", 1, 1)], TEXTS, {"mr:0101-a": value}, not_a_place={})
+            items, _, _ = p.lead_items([("mr:0101-a", 1, 1)], TEXTS, {"mr:0101-a": value}, not_a_place={})
             self.assertEqual(items["mr:0101-a"]["role"], role)
             self.assertIn(role, p.ROLES)
 
@@ -271,6 +283,22 @@ class ItalianPhraseTest(unittest.TestCase):
         self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, da lui fondato, san Fitto."), "Nel cenobio di Fittaco")
         self.assertEqual(p.italian_phrase("A Fittopoli, trecentosei santi martiri."), "A Fittopoli")
 
+    def test_naming_clause_is_kept(self):
+        self.assertEqual(p.italian_phrase("In località Fittia, chiamata poi Fittopoli, in Fittonia, san Fitto."),
+                         "In località Fittia, chiamata poi Fittopoli, in Fittonia")
+
+    def test_more_locative_openers(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli, a tre miglia da Fittia, san Fitto."),
+                         "A Fittopoli, a tre miglia da Fittia")
+        self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, sull’isola di Fitta, beato Fitto."),
+                         "Nel cenobio di Fittaco, sull’isola di Fitta")
+        self.assertEqual(p.italian_phrase("A Fittopoli, dal lato del Fittone, beato Fitto."),
+                         "A Fittopoli, dal lato del Fittone")
+
+    def test_year_or_hatred_of_the_faith_is_cut(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli, nel 1597, san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, in odio alla fede, beati Fitti."), "A Fittopoli")
+
     def test_sempre_and_back_references(self):
         self.assertEqual(p.italian_phrase("Sempre a Fittopoli, san Fitto."), "a Fittopoli")
         self.assertEqual(p.italian_phrase("Ancora a Fittopoli, beato Fitto."), "a Fittopoli")
@@ -362,6 +390,15 @@ class ItalianAlignmentTest(unittest.TestCase):
         r = p.build(self.ORDER, self.TX, self.TY, {}, not_a_place={"mr:0105-e": "a time phrase"},
                     texts_it=self.IT)
         self.assertEqual(r["it_only"], [])
+
+    def test_curated_entry_is_not_listed_as_italian_only(self):
+        cur = {"mr:0105-e": [{"role": "death", "la": "Fictitii", "it": "A Fittocastro"}]}
+        r = self.build(curated=cur)
+        self.assertEqual(r["it_only"], [])
+
+    def test_json_comment_mentions_it(self):
+        import json
+        self.assertIn("(it)", json.loads(p.render_json({}))["$comment"])
 
     def test_report_sections(self):
         report = p.render_report(self.build())
@@ -465,6 +502,17 @@ class BuildTest(unittest.TestCase):
         bad["places"]["mr:0101-b"][0]["via"] = "mr:0101-zz"      # via with no text
         with self.assertRaisesRegex(AssertionError, "mr:0101-zz"):
             p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+
+    def test_extended_back_reference_la_must_be_verbatim(self):
+        order = [("mr:0103-a", 1, 3), ("mr:0103-d", 1, 3)]
+        tx = {"mr:0103-a": "Fictopoli in Fictia, sancti Fictitii A.",
+              "mr:0103-d": "Ibídem in cœmetério Ficti, sancti Ficti D."}
+        ty = {k: "dies_natalis" for k in tx}
+        r = p.build(order, tx, ty, {}, not_a_place={})
+        p.validate(r, tx, set(tx), set(), ty, {}, long_ok={})
+        r["places"]["mr:0103-d"][0]["la"] = "Ibídem in cœmetério Fictonis"
+        with self.assertRaisesRegex(AssertionError, "not verbatim"):
+            p.validate(r, tx, set(tx), set(), ty, {}, long_ok={})
 
     def test_report_marks_kept_extended_back_reference(self):
         tx = {"mr:0104-d": "Ibídem in cœmetério Ficti, sancti Ficti D."}

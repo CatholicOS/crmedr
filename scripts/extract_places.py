@@ -51,6 +51,11 @@ STOP_WORDS = {
     # "Sanctissimi Nominis ..." opens a feast; lowercase it would be a title.
     "sanctissimi", "sanctissimae", "sanctissimæ",
 }
+# Honorifics among the stop words. A text that opens with a capitalized one
+# is a drop-cap memorial ("Sancti N., episcopi, ...") -- unless the first word
+# after the first comma is a lowercase stop word: then the opening is a place
+# named after a saint ("Sancti Trudonis Fani in Brabantia, transitus sancti N.").
+HONORIFICS_LA = {w for w in STOP_WORDS if w.startswith(("sanct", "beat")) and not w.startswith("sanctissim")}
 WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿæœÆŒ]+")
 TRIM = " ,;: "
 # A comma followed by a relative pronoun, a reign ("sub N. imperatore") or a
@@ -81,8 +86,22 @@ def base_copy(text):
     return "".join(_base(c) for c in text)
 
 
+def _saint_named_place(text, copy, stop_words):
+    first = WORD.match(copy)
+    comma = copy.find(",")
+    if not first or not first.group(0)[0].isupper() or first.group(0).lower() not in HONORIFICS_LA or comma < 0:
+        return None
+    after = WORD.search(copy, comma)
+    if after and after.group(0)[0].islower() and after.group(0).lower() in stop_words:
+        return text[:comma].strip(TRIM)
+    return None
+
+
 def opening_phrase(text, stop_words=STOP_WORDS):
     copy = base_copy(text)
+    place = _saint_named_place(text, copy, stop_words)
+    if place:
+        return place
     for i, m in enumerate(WORD.finditer(copy)):
         w = m.group(0)
         if w.lower() in stop_words and (w[0].islower() or i == 0):
@@ -132,9 +151,14 @@ LOCATIVE_IT = {
     "in", "nel", "nella", "nello", "nell", "nei", "negli", "nelle",
     "presso", "vicino", "sul", "sulla", "sulle", "sui", "al", "alla", "ai",
     "lungo", "tra", "fra", "ora", "oggi", "attualmente", "sempre", "ancora",
+    "a", "ad", "all", "sull", "dal", "dall",
+    # a naming clause ("chiamata poi Saint Albans") is part of the place, as
+    # in the Latin ("postea ab eo Oswestria nuncupato")
+    "chiamata", "chiamato",
 }
 CUT_IT = re.compile(
-    r"^(?:dove|da lui|che|chiamat\w*|sotto)\b|\banni (?:dopo|piu tardi)\b|^(?:nello stesso )?giorno e anno\b")
+    r"^(?:dove|da lui|che|sotto|in odio)\b|\banni (?:dopo|piu tardi)\b|^(?:nello stesso )?giorno e anno\b"
+    r"|^\w+ \d")
 BACK_REFS_IT = {"nello stesso luogo", "nella stessa citta"}
 # Openings that name a time, not a place.
 TIME_OPENINGS_IT = {"nello stesso giorno"}
@@ -194,11 +218,12 @@ NOT_A_PLACE = {
 
 def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
     """Opening-place items by ID, and the IDs of back-references with no
-    earlier place on their day. A bare back-reference takes the `la` of the
+    earlier place on their day, and the IDs of the bare back-references. A
+    bare back-reference takes the `la` of the
     last place named that day and names that entry in `via`; an extended
     one keeps its own phrase and names its antecedent in `via` (and is
     reported as unresolved when it has none)."""
-    items, unresolved, last = {}, [], {}
+    items, unresolved, last, bare = {}, [], {}, set()
     for mrid, month, day in order:
         phrase = None if mrid in not_a_place else opening_phrase(texts[mrid], stop_words)
         if phrase is None:
@@ -212,6 +237,7 @@ def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
                 continue
             root_la, root = last[day_key]
             item.update(la=root_la, source="lead", via=root)
+            bare.add(mrid)
         else:
             item.update(la=la, source="lead")
             if kind == "extend":
@@ -224,7 +250,7 @@ def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
             # which is this one (for an extend, its own printed phrase).
             last[day_key] = (la, mrid)
         items[mrid] = item
-    return items, unresolved
+    return items, unresolved, bare
 
 
 def validate_curated(curated, texts, current_ids, leads, texts_it=None):
@@ -363,17 +389,18 @@ def with_it(item, it):
 
 def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS,
           texts_it=None, stop_words_it=STOP_WORDS_IT):
-    leads, unresolved = lead_items(order, texts, typology, not_a_place=not_a_place, stop_words=stop_words)
+    leads, unresolved, bare = lead_items(order, texts, typology, not_a_place=not_a_place,
+                                         stop_words=stop_words)
     no_it, it_only = [], []
     if texts_it is not None:
         for mrid, _, _ in order:
             phrase = italian_phrase(texts_it.get(mrid), stop_words_it)
             if mrid not in leads:
-                if phrase and mrid not in not_a_place:
+                if phrase and mrid not in not_a_place and mrid not in curated:
                     it_only.append((mrid, phrase))
                 continue
             item = leads[mrid]
-            if "via" in item and item["la"] not in texts[mrid]:
+            if mrid in bare:
                 phrase = leads[item["via"]].get("it")   # a bare back-reference takes its root's it
             if phrase:
                 leads[mrid] = with_it(item, phrase)
@@ -401,6 +428,7 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
         "day_of": {mrid: (month, day) for mrid, month, day in order},
         "no_it": no_it,
         "it_only": it_only,
+        "bare": bare,
     }
 
 def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok, texts_it=None):
@@ -416,10 +444,12 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
                 assert via in texts, f"{mrid}: via {via} has no text"
                 assert result["day_of"].get(via) == result["day_of"].get(mrid), (
                     f"{mrid}: via {via} is not on the same day")
-                if it["la"] not in texts[mrid]:
+                if it["source"] == "lead" and mrid in result["bare"]:
                     # A bare back-reference takes its root's opening place.
                     root = places.get(via, [{}])[0].get("la")
                     assert it["la"] == root, f"{mrid}: la is not the root {via}'s la: {it['la']!r}"
+                else:
+                    assert it["la"] in texts[mrid], f"{mrid}: la is not verbatim: {it['la']!r}"
             else:
                 assert it["la"] in texts[mrid], f"{mrid}: la is not verbatim: {it['la']!r}"
             if "it" in it:
@@ -428,13 +458,12 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
                 last = WORD.findall(base_copy(it["it"]).lower())[-1:]
                 assert not (last and last[0] in FUNCTION_WORDS_IT), (
                     f"{mrid}: it ends in {last[0]!r}, cut inside a place name: {it['it']!r}")
-                bare = "via" in it and it["la"] not in texts[mrid]
-                if bare:
+                if it["source"] == "lead" and mrid in result["bare"]:
                     root = places.get(it["via"], [{}])[0].get("it")
                     assert it["it"] == root, f"{mrid}: it is not the root {it['via']}'s it: {it['it']!r}"
                 else:
                     assert it["it"] in texts_it.get(mrid, ""), f"{mrid}: it is not verbatim: {it['it']!r}"
-            elif "via" in it and it["la"] not in texts[mrid]:
+            elif it["source"] == "lead" and mrid in result["bare"]:
                 root = places.get(it["via"], [{}])[0]
                 assert "it" not in root, f"{mrid}: bare back-reference lacks its root's it"
             if it["source"] == "lead":
@@ -450,7 +479,8 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
 def render_json(places):
     out = {
         "$comment": "Places stated by each current eulogy: the place designation as printed "
-                    "in the Latin editio altera 2004 (la) and its role. Generated by "
+                    "in the Latin editio altera 2004 (la), the same place in the Italian (CEI) "
+                    "edition where it has one (it), and its role. Generated by "
                     "scripts/extract_places.py; see docs/canonicalization-report.md (Places). "
                     "Draft pending committee review.",
         "roles": ROLES,
