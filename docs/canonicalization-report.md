@@ -287,6 +287,25 @@ corrected on extraction to mr:0331-guido — the elogium's first-named subject i
 Guido, abbot; "Domninus" comes from the place name (Burgi Sancti Domníni, Borgo San
 Donnino, today Fidenza). No collision on the day.
 
+## Country-code corrections (September 2026)
+
+`country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the
+elogium: the place-lead when there is one, otherwise the place of death. When the
+printed text names the wrong modern country, the actual location wins. A review of
+the elogia against their codes (issue #8) found **34 wrong codes**, now corrected
+on extraction via `COUNTRY_CORRECTIONS` in `scripts/extract_registry.py`. Most
+errors come from a homonymous place resolved to the wrong country: Guadalajara
+(Jalisco vs. Castile), Eger (Cheb in Bohemia vs. Hungary), Nizza Monferrato vs.
+Nice, and Catalan Montserrat coded `MS` (the British overseas territory). Four
+corrections go against the printed text: mr:0504-florianus → AT (Lorch/Enns; the
+text says "nell'odierna Germania"), mr:0304-casimirus → BY (Grodno; the text says
+"in Lituania"), mr:0603-morandus → FR (Altkirch in Alsace) and mr:0827-gebhardus →
+DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
+are left as they are: mr:1011-philippus stays `PS` (Caesarea Maritima), because
+the workbook uses `PS` for the whole Holy Land (90 current entries) and changing
+one entry would break that convention. mr:0814-arnulphus stays `BE` (Oudenburg),
+although the text says "Altenburg nelle Fiandre, ora in Germania".
+
 ## Post-2004 official variations
 
 The Dicastery's page for the Martyrologium Romanum

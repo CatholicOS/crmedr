@@ -37,7 +37,7 @@
 | 3 | 14 | `mr:0303-teresia-eustochius-verzeri` |  | IT |  |
 | 3 | 15 | `mr:0303-innocentius-de-berzo-scalvinoni` | * | IT |  |
 | 3 | 16 | `mr:0303-catharina-drexel` |  | US |  |
-| 4 | (1) | `mr:0304-casimirus` |  | PL |  |
+| 4 | (1) | `mr:0304-casimirus` |  | BY |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR |  |
 | 4 | 3 | `mr:0304-basinus` | * | DE |  |
 | 4 | 4 | `mr:0304-appianus` | * | IT |  |
@@ -210,7 +210,7 @@
 | 20 | 4 | `mr:0320-martinus` | * | PT |  |
 | 20 | 5 | `mr:0320-cuthbertus` |  | GB |  |
 | 20 | 6 | `mr:0320-vulframnus` |  | FR |  |
-| 20 | 7 | `mr:0320-nicetas` |  | GR |  |
+| 20 | 7 | `mr:0320-nicetas` |  | AL |  |
 | 20 | 8 | `mr:0320-sabas` |  | PS |  |
 | 20 | 9 | `mr:0320-ambrosius-sansedoni` | * | IT |  |
 | 20 | 10 | `mr:0320-ioannes-nepomucenus` |  | CZ |  |

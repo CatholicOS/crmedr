@@ -394,7 +394,7 @@
 | 31 | 8 | `mr:0131-marcella` |  | IT |  |
 | 31 | 9 | `mr:0131-maedhoc` | * | IE |  |
 | 31 | 10 | `mr:0131-waldus` | * | FR |  |
-| 31 | 11 | `mr:0131-eusebius` | * | DE |  |
+| 31 | 11 | `mr:0131-eusebius` | * | AT |  |
 | 31 | 12 | `mr:0131-ludovica-albertoni` | * | IT |  |
 | 31 | 13 | `mr:0131-franciscus-xaverius-maria-bianchi` |  | IT |  |
 | 31 | 14 | `mr:0131-augustinus-pak-chong-won-et-socii` |  | KR |  |

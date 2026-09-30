@@ -43,7 +43,7 @@
 | 3 | 8 | `mr:0603-genesius` | * | FR |  |
 | 3 | 9 | `mr:0603-isaac` |  | ES |  |
 | 3 | 10 | `mr:0603-davinus` |  | IT |  |
-| 3 | 11 | `mr:0603-morandus` | * | CH |  |
+| 3 | 11 | `mr:0603-morandus` | * | FR |  |
 | 3 | 12 | `mr:0603-andreas-caccioli` | * | IT |  |
 | 3 | 13 | `mr:0603-maria-de-cadossa` | * | IT |  |
 | 3 | 14 | `mr:0603-franciscus-ingleby` | * | GB |  |
@@ -183,7 +183,7 @@
 | 15 | 6 | `mr:0615-lotharius` | * | FR |  |
 | 15 | 7 | `mr:0615-benildis` |  | ES |  |
 | 15 | 8 | `mr:0615-bernardus-de-menthone` |  | IT |  |
-| 15 | 9 | `mr:0615-isfridus` | * | FR |  |
+| 15 | 9 | `mr:0615-isfridus` | * | DE |  |
 | 15 | 10 | `mr:0615-thomas-scryven` | * | GB |  |
 | 15 | 11 | `mr:0615-petrus-snow` | * | GB |  |
 | 15 | 12 | `mr:0615-germana` |  | FR |  |
@@ -251,7 +251,7 @@
 | 21 | 7 | `mr:0621-ioannes-rigby` |  | GB |  |
 | 21 | 8 | `mr:0621-iacobus-morelle-dupas` | * | FR |  |
 | 21 | 9 | `mr:0621-iosephus-isabel-flores` |  | MX |  |
-| 22 | (1) | `mr:0622-paulinus` |  | FR |  |
+| 22 | (1) | `mr:0622-paulinus` |  | IT |  |
 | 22 | (2) | `mr:0622-ioannes-fisher` |  | GB |  |
 | 22 | 3 | `mr:0622-flavius-clemens` |  | IT |  |
 | 22 | 4 | `mr:0622-albanus` |  | GB |  |
@@ -304,8 +304,8 @@
 | 26 | 10 | `mr:0626-raymundus-petiniaud-de-jourgnac` | * | FR |  |
 | 26 | 11 | `mr:0626-magdalena-fontaine-et-socii` | * | FR |  |
 | 26 | 12 | `mr:0626-iosephus-ma-taishun` | * | IT |  |
-| 26 | 13 | `mr:0626-iosephus-maria-robles` |  | CN |  |
-| 26 | 14 | `mr:0626-andreas-hyacinthus-longhin` |  | MX |  |
+| 26 | 13 | `mr:0626-iosephus-maria-robles` |  | MX |  |
+| 26 | 14 | `mr:0626-andreas-hyacinthus-longhin` |  | IT |  |
 | 26 | 15 | `mr:0626-nicolaus-konrad` | * | UA |  |
 | 26 | 16 | `mr:0626-andreas-iscak` | * | UA |  |
 | 26 | 17 | `mr:0626-iosephus-maria-escriva-de-balaguer` |  | IT |  |

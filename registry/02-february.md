@@ -213,7 +213,7 @@
 | 17 | 7 | `mr:0217-finanus` | * | GB |  |
 | 17 | 8 | `mr:0217-silvinus` |  | FR |  |
 | 17 | 9 | `mr:0217-constabilis` | * | IT |  |
-| 17 | 10 | `mr:0217-evermodus` | * | FR |  |
+| 17 | 10 | `mr:0217-evermodus` | * | DE |  |
 | 17 | 11 | `mr:0217-lucas-belludi` | * | IT |  |
 | 17 | 12 | `mr:0217-petrus-yu-chong-nyul` |  | KR |  |
 | 17 | 13 | `mr:0217-antonius-leszczewicz` | * | PL |  |
@@ -302,7 +302,7 @@
 | 26 | 5 | `mr:0226-victor` |  | FR |  |
 | 26 | 6 | `mr:0226-andreas` |  | IT |  |
 | 26 | 7 | `mr:0226-robertus-drury` | * | GB |  |
-| 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz-montal-fornes` |  | MS |  |
+| 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz-montal-fornes` |  | ES |  |
 | 26 | 9 | `mr:0226-pietatis-a-cruce-ortiz-real` | * | ES |  |
 | 27 | 1 | `mr:0227-iulianus-et-eunus` |  | EG |  |
 | 27 | 2 | `mr:0227-besa` |  | EG |  |

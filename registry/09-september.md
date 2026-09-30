@@ -182,7 +182,7 @@
 | 13 | 7 | `mr:0913-maurilius` |  | FR |  |
 | 13 | 8 | `mr:0913-amatus-vosegos` |  | FR |  |
 | 13 | 9 | `mr:0913-venerius` |  | IT |  |
-| 13 | 10 | `mr:0913-amatus-broili` |  | CH |  |
+| 13 | 10 | `mr:0913-amatus-broili` |  | FR |  |
 | 13 | 11 | `mr:0913-maria-a-iesu-lopez-de-rivas` | * | ES |  |
 | 13 | 12 | `mr:0913-claudius-dumonet` | * | FR |  |
 | 13 | 13 | `mr:0913-aurelius-maria-villalon-acebron` | * | ES |  |
@@ -259,7 +259,7 @@
 | 18 | 11 | `mr:0918-david-okelo-et-gildus-irwa` | * | UG |  |
 | 18 | 12 | `mr:0918-carolus-erana-guruceta` | * | ES |  |
 | 18 | 13 | `mr:0918-ferdinandus-garcia-sendra-et-iosephus-garcia-mas` | * | ES |  |
-| 18 | 14 | `mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez` | * | MS |  |
+| 18 | 14 | `mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez` | * | ES |  |
 | 18 | 15 | `mr:0918-iosephus-kut` | * | DE |  |
 | 19 | (1) | `mr:0919-ianuarius` |  | IT |  |
 | 19 | 2 | `mr:0919-trophimus` |  | TR |  |
@@ -302,7 +302,7 @@
 | 21 | 10 | `mr:0921-gerulphus` | * | BE |  |
 | 21 | 11 | `mr:0921-maura` | * | FR |  |
 | 21 | 12 | `mr:0921-marcus-de-mutina-scalabrini` | * | IT |  |
-| 21 | 13 | `mr:0921-franciscus-jaccard` |  | FR |  |
+| 21 | 13 | `mr:0921-franciscus-jaccard` |  | VN |  |
 | 21 | 14 | `mr:0921-laurentius-imbert` |  | KR |  |
 | 21 | 15 | `mr:0921-vincentius-galbis-girones` | * | ES |  |
 | 22 | 1 | `mr:0922-emerita` |  | IT |  |

@@ -74,7 +74,7 @@
 | 6 | 4 | `mr:0706-sisoes-magnus` | * | EG |  |
 | 6 | 5 | `mr:0706-palladius` | * | GB |  |
 | 6 | 6 | `mr:0706-monenna` | * | IE |  |
-| 6 | 7 | `mr:0706-goaris` |  | FR |  |
+| 6 | 7 | `mr:0706-goaris` |  | DE |  |
 | 6 | 8 | `mr:0706-iustus` | * | FR |  |
 | 6 | 9 | `mr:0706-thomas-more` |  | GB |  |
 | 6 | 10 | `mr:0706-thomas-alfield` | * | GB |  |
@@ -97,7 +97,7 @@
 | 7 | 12 | `mr:0707-antoninus-fantosati` |  | CN |  |
 | 7 | 13 | `mr:0707-marcus-ji-tianxiang` |  | CN |  |
 | 7 | 14 | `mr:0707-maria-guo-lizhus` |  | CN |  |
-| 7 | 15 | `mr:0707-petrus-to-rot` | * | GB |  |
+| 7 | 15 | `mr:0707-petrus-to-rot` | * | PG |  |
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT |  |
 | 8 | 2 | `mr:0708-glyceria` |  | TR |  |
@@ -189,7 +189,7 @@
 | 14 | 2 | `mr:0714-optatianus` |  | IT |  |
 | 14 | 3 | `mr:0714-vincentius` | * | BE |  |
 | 14 | 4 | `mr:0714-marchelmus` |  | NL |  |
-| 14 | 5 | `mr:0714-hroznata` | * | HU |  |
+| 14 | 5 | `mr:0714-hroznata` | * | CZ |  |
 | 14 | 6 | `mr:0714-tuscana` | * | IT |  |
 | 14 | 7 | `mr:0714-angelina-de-marsciano` | * | IT |  |
 | 14 | 8 | `mr:0714-gaspar-de-bono` | * | ES |  |
@@ -209,7 +209,7 @@
 | 15 | 10 | `mr:0715-iosephus` |  | GR |  |
 | 15 | 11 | `mr:0715-athanasius` |  | IT |  |
 | 15 | 12 | `mr:0715-vladimirus` |  | UA |  |
-| 15 | 13 | `mr:0715-ansuerus` | * | FR |  |
+| 15 | 13 | `mr:0715-ansuerus` | * | DE |  |
 | 15 | 14 | `mr:0715-david` | * | SE |  |
 | 15 | 15 | `mr:0715-ceslaus` | * | PL |  |
 | 15 | 16 | `mr:0715-bernardus` | * | IT |  |
@@ -225,7 +225,7 @@
 | 16 | 3 | `mr:0716-athenogenes` |  | TR |  |
 | 16 | 4 | `mr:0716-helerius` | * | JE |  |
 | 16 | 5 | `mr:0716-monulphus-et-gondulphus` | * | NL |  |
-| 16 | 6 | `mr:0716-reinildis` |  | FR |  |
+| 16 | 6 | `mr:0716-reinildis` |  | BE |  |
 | 16 | 7 | `mr:0716-sisenandus` |  | ES |  |
 | 16 | 8 | `mr:0716-irmengardis` | * | DE |  |
 | 16 | 9 | `mr:0716-simon-da-costa` | * | PT |  |
@@ -345,13 +345,13 @@
 | 24 | 12 | `mr:0724-ioannes-de-tossiniano-tavelli` | * | IT |  |
 | 24 | 13 | `mr:0724-translatio-trium-magorum` |  | DE |  |
 | 24 | 14 | `mr:0724-antonius-torriani` | * | IT |  |
-| 24 | 15 | `mr:0724-ludovica` | * | FR |  |
+| 24 | 15 | `mr:0724-ludovica` | * | CH |  |
 | 24 | 16 | `mr:0724-nicolaus-garlick-et-socii` | * | GB |  |
 | 24 | 17 | `mr:0724-iosephus-lambton` | * | GB |  |
 | 24 | 18 | `mr:0724-ioannes-boste` |  | GB |  |
 | 24 | 19 | `mr:0724-iosephus-fernandez` |  | VN |  |
 | 24 | 20 | `mr:0724-modestinus-a-iesu-et-maria-mazzarello` | * | IT |  |
-| 24 | 21 | `mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii` | * | MX |  |
+| 24 | 21 | `mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii` | * | ES |  |
 | 24 | 22 | `mr:0724-maria-a-mercede-prat` | * | ES |  |
 | 24 | 23 | `mr:0724-xaverius-bordas-piferrer` | * | ES |  |
 | 25 | (1) | `mr:0725-iacobus` |  | PS |  |
@@ -459,7 +459,7 @@
 | 30 | 13 | `mr:0730-leopoldus-de-castronovo-mandic` |  | IT |  |
 | 30 | 14 | `mr:0730-maria-vincentia-a-sancta-dorothea-chavez-orozco` | * | MX |  |
 | 30 | 15 | `mr:0730-maria-a-iesu-sacramentato-venegas-de-la-torre` |  | MX |  |
-| 31 | (1) | `mr:0731-ignatius-de-loyola` |  | FR |  |
+| 31 | (1) | `mr:0731-ignatius-de-loyola` |  | IT |  |
 | 31 | 2 | `mr:0731-calimerus` |  | IT |  |
 | 31 | 3 | `mr:0731-democritus-et-socii` |  | TR |  |
 | 31 | 4 | `mr:0731-fabius` |  | DZ |  |

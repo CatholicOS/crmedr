@@ -148,7 +148,7 @@
 | 11 | 9 | `mr:1011-gummarius` |  | BE |  |
 | 11 | 10 | `mr:1011-bruno` | * | DE |  |
 | 11 | 11 | `mr:1011-gaudentius` | * | PL |  |
-| 11 | 12 | `mr:1011-meinardus` | * | DE |  |
+| 11 | 12 | `mr:1011-meinardus` | * | LV |  |
 | 11 | 13 | `mr:1011-iacobus-de-ulma-griesinger` | * | IT |  |
 | 11 | 14 | `mr:1011-alexander-sauli` |  | IT |  |
 | 11 | 15 | `mr:1011-petrus-le-tuy` |  | VN |  |
