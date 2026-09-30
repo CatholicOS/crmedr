@@ -34,7 +34,8 @@ class RegistryTypologyTest(unittest.TestCase):
             (Path(d) / "data").mkdir()
             (Path(d) / "data" / "typology.json").write_text(
                 json.dumps({"typology": {"mr:0101-other": "depositio"}}), encoding="utf-8")
-            with self.assertRaises(AssertionError):
+            with self.assertRaisesRegex(AssertionError, r"(?s)move data/typology\.json aside.*"
+                                        r"extract_registry\.py.*extract_typology\.py.*extract_registry\.py"):
                 r.load_typology(Path(d), {"mr:0101-fictitius"})
 
     def test_markdown_has_typology_column(self):

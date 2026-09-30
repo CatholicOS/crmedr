@@ -106,14 +106,29 @@ TYPOLOGY_OVERRIDES = {
 }
 
 
+# An honorific right after one of these nouns is part of a place name
+# ("in monasterio sancti N.", "in vico sancti N."), not the subject's.
+PLACE_NOUNS = {
+    "monasterio", "monasterium", "cenobio", "cenobium", "ecclesia", "ecclesiam",
+    "basilica", "basilicam", "laura", "oppido", "vico", "pago", "loco", "fano",
+    "fanum", "burgo", "burgi", "insula", "castro", "castello", "cella", "eremo",
+    "urbe", "civitate", "porta", "via", "monte", "montem", "colle", "collem",
+}
+# A marker right after these names the event of a neighbouring day
+# ("postridie dedicationis"), not of this one.
+NEIGHBOUR_DAYS = {"postridie", "pridie"}
+
+
 def lead(words):
-    # A relative pronoun before the first honorific belongs to the place
-    # phrase ("via quae ... dicitur", "quod condiderat"), not to the body.
+    # A relative pronoun before the subject's honorific belongs to the place
+    # phrase ("via quae ... dicitur", "in monasterio sancti N., quod
+    # condiderat"), not to the body.
     out, seen_honorific = [], False
-    for w in words[:LEAD_MAX_WORDS]:
+    for i, w in enumerate(words[:LEAD_MAX_WORDS]):
         if w in RELATIVES and seen_honorific:
             break
-        seen_honorific = seen_honorific or w in HONORIFICS
+        if w in HONORIFICS and not (i and words[i - 1] in PLACE_NOUNS):
+            seen_honorific = True
         out.append(w)
     return out
 
@@ -121,7 +136,8 @@ def lead(words):
 def lead_marker(folded):
     words = lead(folded.split())
     for i, w in enumerate(words):
-        if w in MARKERS and not (i and words[i - 1] in HONORIFICS):
+        prev = words[i - 1] if i else None
+        if w in MARKERS and prev not in HONORIFICS and prev not in NEIGHBOUR_DAYS:
             return w
     return None
 

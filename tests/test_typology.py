@@ -66,8 +66,13 @@ class ClassifyTest(unittest.TestCase):
                          ("celebratio", "override"))
 
     def test_day_after_a_dedication_is_not_dedicatio(self):
-        self.assertNotEqual(cls("Memoria sancti Fictitii, postridie dedicationis basilicae Fictensis.")[1],
-                            "dedication-day")
+        value, rule = cls("Memoria sancti Fictitii, postridie dedicationis basilicae Fictensis.")
+        self.assertNotEqual(value, "dedicatio")
+        self.assertNotIn(rule, ("dedication-day", "marker:dedicationis"))
+
+    def test_relative_clause_after_place_honorific_does_not_cut_lead(self):
+        self.assertEqual(cls("In monasterio sancti Ficti, quod condidit, depositio beati Fictitii, abbatis."),
+                         ("depositio", "marker:depositio"))
 
     def test_precedence(self):
         text = "Romae, depositio sancti Fictitii."

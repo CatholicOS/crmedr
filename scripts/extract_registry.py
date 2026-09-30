@@ -435,8 +435,12 @@ def load_typology(repo_root, current_ids):
     if not path.exists():
         return {}
     typology = json.load(open(path, encoding="utf-8"))["typology"]
+    # extract_typology.py reads the current IDs from the registry, so after an
+    # ID change the registry must be regenerated once without typology.
     assert set(typology) == set(current_ids), (
-        "data/typology.json is stale: rerun scripts/extract_typology.py")
+        "data/typology.json does not match the current IDs. To recover: "
+        "move data/typology.json aside, run scripts/extract_registry.py, "
+        "run scripts/extract_typology.py, then run scripts/extract_registry.py again.")
     return typology
 
 

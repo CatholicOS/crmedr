@@ -33,7 +33,7 @@ One value per current entry, from this closed set:
 
 | Value | Meaning |
 | --- | --- |
-| `dies_natalis` | The actual day of death or martyrdom (*natalis*, *passio*, *transitus*, or no marker) |
+| `dies_natalis` | The day of death or martyrdom (*natalis*, *passio*, *transitus*), or the fallback when the text states no other event |
 | `depositio` | Burial |
 | `translatio` | Moving of relics |
 | `inventio` | Finding of relics (no 2004 instances; kept for other editions) |
@@ -42,10 +42,13 @@ One value per current entry, from this closed set:
 | `celebratio` | The date is fixed by a liturgical celebration, not by an event: feasts of the Lord and of Mary, Cathedra Petri, Exaltatio Crucis, the Angels, All Saints, and saints' memorials placed away from their death day |
 | `commemoratio` | Commemoration with no event behind the date: Old Testament figures, *commemoratio sancti N.*, All Souls |
 
-`dies_natalis` therefore always means the saint's actual death day. When the
-calendar memorial falls on another day (for example, mr:1228-franciscus-de-sales is
-`dies_natalis` and mr:0124-franciscus-de-sales is `celebratio`), a filter on
-`dies_natalis` returns exactly one date per saint.
+When the calendar memorial falls away from the death day, the memorial gets the
+value of what its own date marks: mr:1228-franciscus-de-sales is `dies_natalis`,
+and mr:0124-franciscus-de-sales is `depositio`, because the cross-reference names
+the burial at Annecy. `dies_natalis` is also the fallback when the text states no
+other event, so it can hold a traditional or unknown date (e.g. text-silent
+memorials such as mr:0319-ioseph). A filter on `dies_natalis` is therefore not
+guaranteed to return exactly one actual death date per saint.
 
 ## Classification rules
 
@@ -91,11 +94,14 @@ form (*sancte*, *beate*). The first rule that matches wins:
    rule 5 gives them `dedicatio`, `translatio` and `commemoratio`.
 5. **Marker in the lead.** The lead is the first 25 folded words, cut at the
    first relative pronoun (*qui, que, quod, quorum, quarum, cuius, quibus, quos,
-   quas, quem, quam*) that follows an honorific, which starts the body. A relative
-   pronoun before any honorific belongs to the place phrase ("via quae … dicitur"). The first marker word in the lead
-   decides the value, unless it directly follows an honorific (*sancti, sancte,
-   sanctorum, sanctarum, beati, beate, beatorum, beatarum, domini*). In that
-   position it is a name, e.g. "beati natalis pinot". The marker words are
+   quas, quem, quam*) that follows the subject's honorific, which starts the body.
+   A relative pronoun before it belongs to the place phrase ("via quae …
+   dicitur", "in monasterio sancti N., quod condidit"): an honorific right after a
+   place noun (*monasterio, cenobio, ecclesia, basilica, oppido, vico, …*) is part
+   of a place name. The first marker word in the lead decides the value, unless it
+   directly follows an honorific (*sancti, sancte, sanctorum, sanctarum, beati,
+   beate, beatorum, beatarum, domini*), where it is a name, e.g. "beati natalis
+   pinot", or *postridie / pridie*, where it names a neighbouring day's event. The marker words are
    *depositio(nis)*, *translatio(nis)*, *inventio(nis)*, *dedicatio(nis)*,
    *ordinatio(nis)* and *commemoratio*, each mapping to its own value, and
    *natalis*, *passio* and *transitus*, which map to `dies_natalis`. The
