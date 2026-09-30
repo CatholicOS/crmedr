@@ -50,5 +50,85 @@ class OpeningPhraseTest(unittest.TestCase):
         self.assertEqual(p.split_lead("Fictopoli in Fictia"), ("place", "Fictopoli in Fictia"))
 
 
+DAY1 = [("mr:0101-a", 1, 1), ("mr:0101-b", 1, 1), ("mr:0101-c", 1, 1), ("mr:0101-d", 1, 1), ("mr:0101-e", 1, 1)]
+TEXTS = {
+    "mr:0101-a": "Fictopoli in Fictia, sancti Fictitii A.",
+    "mr:0101-b": "Ibídem, beáti Ficti B.",
+    "mr:0101-c": "Ibídem, sanctæ Fictæ C.",
+    "mr:0101-d": "Ibídem in cœmetério Ficti, sancti Ficti D.",
+    "mr:0101-e": "Sancti Fictitii E., episcopi.",
+    "mr:0102-f": "Item, sancti Ficti F.",
+    "mr:0102-g": "In octava Ficti, sancti Ficti G.",
+}
+TYP = {k: "dies_natalis" for k in TEXTS}
+TYP["mr:0101-b"] = "depositio"
+
+
+class LeadItemsTest(unittest.TestCase):
+    def run_leads(self, order=None, not_a_place=None):
+        order = order or DAY1 + [("mr:0102-f", 1, 2), ("mr:0102-g", 1, 2)]
+        return p.lead_items(order, TEXTS, TYP, not_a_place=not_a_place or {})
+
+    def test_place_and_back_references(self):
+        items, unresolved = self.run_leads()
+        self.assertEqual(items["mr:0101-a"], {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"})
+        self.assertEqual(items["mr:0101-b"],
+                         {"role": "burial", "la": "Fictopoli in Fictia", "source": "lead", "via": "mr:0101-a"})
+
+    def test_chain_points_to_the_root(self):
+        items, _ = self.run_leads()
+        self.assertEqual(items["mr:0101-c"]["via"], "mr:0101-a")
+        self.assertEqual(items["mr:0101-c"]["la"], "Fictopoli in Fictia")
+
+    def test_extended_ibidem_keeps_its_phrase(self):
+        items, _ = self.run_leads()
+        self.assertEqual(items["mr:0101-d"],
+                         {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead", "via": "mr:0101-a"})
+
+    def test_no_place_and_unresolved_first_of_day(self):
+        items, unresolved = self.run_leads()
+        self.assertNotIn("mr:0101-e", items)
+        self.assertNotIn("mr:0102-f", items)
+        self.assertEqual(unresolved, ["mr:0102-f"])
+
+    def test_not_a_place(self):
+        items, _ = self.run_leads(not_a_place={"mr:0102-g": "a time phrase"})
+        self.assertNotIn("mr:0102-g", items)
+
+    def test_every_typology_maps_to_a_role(self):
+        for value, role in p.ROLE_OF_TYPOLOGY.items():
+            items, _ = p.lead_items([("mr:0101-a", 1, 1)], TEXTS, {"mr:0101-a": value}, not_a_place={})
+            self.assertEqual(items["mr:0101-a"]["role"], role)
+            self.assertIn(role, p.ROLES)
+
+
+class CuratedTest(unittest.TestCase):
+    TEXT = {"mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus est."}
+    LEADS = {"mr:0101-a": {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}}
+
+    def errors(self, items, mrid="mr:0101-a"):
+        return p.validate_curated({mrid: items}, self.TEXT, {"mr:0101-a"}, self.LEADS)
+
+    def test_verbatim_item_is_valid(self):
+        self.assertEqual(self.errors([{"role": "birth", "la": "in Fictonia"}]), [])
+
+    def test_invalid_items(self):
+        self.assertTrue(self.errors([{"role": "birth", "la": "in Fictlandia"}]))
+        self.assertTrue(self.errors([{"role": "nativity", "la": "in Fictonia"}]))
+        self.assertTrue(self.errors([{"role": "death", "la": "Fictopoli in Fictia"}]))
+        self.assertTrue(self.errors([{"role": "birth", "la": "in Fictonia", "note": "x"}]))
+        self.assertTrue(self.errors([{"role": "birth", "la": "in Fictonia"}], mrid="mr:0102-x"))
+        long_text = {"mr:0101-a": "Fictopoli, sancti Ficti, " + " ".join(["in Fictia"] * 7) + "."}
+        self.assertTrue(p.validate_curated({"mr:0101-a": [{"role": "birth", "la": " ".join(["in Fictia"] * 7)}]},
+                                           long_text, {"mr:0101-a"}, {}))
+
+
+class CueTest(unittest.TestCase):
+    def test_cues_outside_the_opening_phrase(self):
+        text = "Fictopoli, sancti Ficti, qui in Fictonia natus, episcopus Fictensis, ibi obiit."
+        self.assertEqual(p.cue_roles(text), ["birth", "death", "ministry"])
+        self.assertEqual(p.cue_roles("Fictopoli, sancti Ficti, martyris."), [])
+
+
 if __name__ == "__main__":
     unittest.main()
