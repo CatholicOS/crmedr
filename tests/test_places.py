@@ -219,6 +219,50 @@ class MisprintTest(unittest.TestCase):
         self.assertEqual({r["printed"] for r in records}, {"betárum", "desposizione", "comemorazione"})
 
 
+class ItalianPhraseTest(unittest.TestCase):
+    def test_lowercase_honorific_and_markers_end_the_phrase(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli in Fittia, san Fitto, vescovo."), "A Fittopoli in Fittia")
+        self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, beata Fitta."), "Nel cenobio di Fittaco")
+        self.assertEqual(p.italian_phrase("A Fittopoli, anniversario della morte di san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, martirio dei santi Fitti."), "A Fittopoli")
+
+    def test_capitalized_saint_in_a_place_name_stays(self):
+        self.assertEqual(p.italian_phrase("A San Fittorino nelle Fittie, beato Fitto."), "A San Fittorino nelle Fittie")
+
+    def test_capitalized_stop_word_at_start_means_no_phrase(self):
+        self.assertIsNone(p.italian_phrase("Memoria di san Fitto, vescovo."))
+        self.assertIsNone(p.italian_phrase("Parimenti si commemorano i santi Fitti."))
+
+    def test_modern_hints_after_a_comma_are_kept(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli in Fittia, nell’odierna Fittonia, san Fitto."),
+                         "A Fittopoli in Fittia, nell’odierna Fittonia")
+        self.assertEqual(p.italian_phrase("A Fittopoli, ora in Fittonia, sempre in Fittia, beato Fitto."),
+                         "A Fittopoli, ora in Fittonia, sempre in Fittia")
+
+    def test_clauses_after_a_comma_are_cut(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli, dove si era rifugiato, san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, trent’anni più tardi, beato Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, sotto il medesimo re, beato Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, da lui fondato, san Fitto."), "Nel cenobio di Fittaco")
+        self.assertEqual(p.italian_phrase("A Fittopoli, trecentosei santi martiri."), "A Fittopoli")
+
+    def test_sempre_and_back_references(self):
+        self.assertEqual(p.italian_phrase("Sempre a Fittopoli, san Fitto."), "a Fittopoli")
+        self.assertEqual(p.italian_phrase("Ancora a Fittopoli, beato Fitto."), "a Fittopoli")
+        self.assertIsNone(p.italian_phrase("Nello stesso luogo, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nella stessa città, beata Fitta."))
+        self.assertIsNone(p.italian_phrase("Sempre nello stesso luogo, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nello stesso luogo, nello stesso giorno e anno, beati Fitti."))
+
+    def test_no_text(self):
+        self.assertIsNone(p.italian_phrase(None))
+        self.assertIsNone(p.italian_phrase(""))
+
+    def test_misprinted_stop_word(self):
+        text = "A Fittopoli in Fittia desposizione di san Fitto."
+        self.assertEqual(p.italian_phrase(text, p.STOP_WORDS_IT | {"desposizione"}), "A Fittopoli in Fittia")
+
+
 class CuratedTest(unittest.TestCase):
     TEXT = {"mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus est."}
     LEADS = {"mr:0101-a": {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}}

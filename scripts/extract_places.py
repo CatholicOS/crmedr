@@ -110,6 +110,60 @@ def split_lead(phrase):
     return "place", phrase
 
 
+# Italian (CEI 2004). Same rule as the Latin: a stop word counts when it is
+# lowercase or opens the text. "anniversario (della morte)" renders natalis,
+# "martirio" passio, "Parimenti si commemorano" Item commemorantur.
+STOP_WORDS_IT = {
+    "san", "sant", "santo", "santa", "santi", "sante",
+    "beato", "beata", "beati", "beate", "santissimo", "santissima",
+    "memoria", "commemorazione", "commemorano", "parimenti",
+    "deposizione", "traslazione", "natale", "anniversario", "martirio",
+    "passione", "transito", "dedicazione", "festa", "solennita", "dormizione",
+}
+# A comma segment is kept when it opens with one of these (a locative or a
+# modern-country hint such as ", nell'odierna Turchia"), unless it is a
+# relative or time clause (CUT_IT).
+LOCATIVE_IT = {
+    "in", "nel", "nella", "nello", "nell", "nei", "negli", "nelle",
+    "presso", "vicino", "sul", "sulla", "sulle", "sui", "al", "alla", "ai",
+    "lungo", "tra", "fra", "ora", "oggi", "attualmente", "sempre", "ancora",
+}
+CUT_IT = re.compile(
+    r"^(?:dove|da lui|che|chiamat\w*|sotto)\b|\banni (?:dopo|piu tardi)\b|^(?:nello stesso )?giorno e anno\b")
+BACK_REFS_IT = {"nello stesso luogo", "nella stessa citta"}
+MAX_WORDS_IT = 20
+
+
+def italian_phrase(text, stop_words=STOP_WORDS_IT):
+    """The Italian opening phrase, or None when there is none or it is a
+    bare back-reference ("Nello stesso luogo")."""
+    if not text:
+        return None
+    copy = base_copy(text)
+    for i, m in enumerate(WORD.finditer(copy)):
+        w = m.group(0)
+        if w.lower() in stop_words and (w[0].islower() or i == 0):
+            phrase = text[:m.start()].strip(TRIM)
+            break
+    else:
+        return None
+    segments = phrase.split(",")
+    kept = segments[0]
+    for seg in segments[1:]:
+        s = base_copy(seg).strip().lower()
+        first = WORD.match(s)
+        if not s or CUT_IT.search(s) or not first or first.group(0) not in LOCATIVE_IT:
+            break
+        kept += "," + seg
+    kept = kept.strip(TRIM)
+    adverb = re.match(r"(?:Sempre|Ancora)\s+", base_copy(kept))
+    if adverb:
+        kept = kept[adverb.end():]
+    if base_copy(kept).lower() in BACK_REFS_IT:
+        return None
+    return kept or None
+
+
 # Openings that look like a place but are not.
 NOT_A_PLACE = {
     "mr:0101-maria-dei-genetrix": "a time phrase (the octave of Christmas), not a place",
