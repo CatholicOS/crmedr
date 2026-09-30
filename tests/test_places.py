@@ -63,6 +63,10 @@ class OpeningPhraseTest(unittest.TestCase):
         # a locative after a comma is part of the place
         self.assertEqual(p.opening_phrase("Fictopoli, in Fictia, sancti Ficti."), "Fictopoli, in Fictia")
 
+    def test_printed_misprint_of_an_honorific_ends_the_phrase(self):
+        self.assertEqual(p.opening_phrase("In vico Ficto item in Fictia, betárum mártyrum Fictarum."),
+                         "In vico Ficto item in Fictia")
+
     def test_no_stop_word_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Fictis transactis temporibus Fictus nascitur."))
 
@@ -128,6 +132,13 @@ class LeadItemsTest(unittest.TestCase):
         self.assertNotIn("mr:0102-f", items)
         self.assertEqual(unresolved, ["mr:0102-f"])
 
+    def test_extended_back_reference_without_antecedent_is_kept_and_reported(self):
+        order = [("mr:0104-d", 1, 4)]
+        texts = {"mr:0104-d": "Ibídem in cœmetério Ficti, sancti Ficti D."}
+        items, unresolved = p.lead_items(order, texts, {"mr:0104-d": "dies_natalis"}, not_a_place={})
+        self.assertEqual(items["mr:0104-d"], {"role": "death", "la": "Ibídem in cœmetério Ficti", "source": "lead"})
+        self.assertEqual(unresolved, ["mr:0104-d"])
+
     def test_not_a_place(self):
         items, _ = self.run_leads(not_a_place={"mr:0102-g": "a time phrase"})
         self.assertNotIn("mr:0102-g", items)
@@ -137,6 +148,24 @@ class LeadItemsTest(unittest.TestCase):
             items, _ = p.lead_items([("mr:0101-a", 1, 1)], TEXTS, {"mr:0101-a": value}, not_a_place={})
             self.assertEqual(items["mr:0101-a"]["role"], role)
             self.assertIn(role, p.ROLES)
+
+
+class PrintOrderTest(unittest.TestCase):
+    def test_print_only_entry_takes_its_printed_slot(self):
+        entries = [
+            {"id": "mr:0104-x", "month": 1, "day": 4, "entry": 1},
+            {"id": "mr:0104-y", "month": 1, "day": 4, "entry": 2},
+            {"id": "mr:0104-late", "month": 1, "day": 4, "entry": None},
+            {"id": "mr:0104-unknown", "month": 1, "day": 4, "entry": None},
+            {"id": "mr:0103-z", "month": 1, "day": 3, "entry": 5},
+        ]
+        order = p.print_order(entries, positions={"mr:0104-late": 2})
+        self.assertEqual([m for m, _, _ in order],
+                         ["mr:0103-z", "mr:0104-x", "mr:0104-late", "mr:0104-y", "mr:0104-unknown"])
+        self.assertEqual(order[0], ("mr:0103-z", 1, 3))
+
+    def test_known_print_positions(self):
+        self.assertEqual(p.PRINT_POSITION, {"mr:0104-abrunculus": 2, "mr:0610-marcus-antonius-durando": 9})
 
 
 class CuratedTest(unittest.TestCase):
@@ -169,8 +198,9 @@ class CuratedTest(unittest.TestCase):
 class CueTest(unittest.TestCase):
     def test_cues_outside_the_opening_phrase(self):
         text = "Fictopoli, sancti Ficti, qui in Fictonia natus, episcopus Fictensis, ibi obiit."
-        self.assertEqual(p.cue_roles(text), ["birth", "death", "ministry"])
-        self.assertEqual(p.cue_roles("Fictopoli, sancti Ficti, martyris."), [])
+        self.assertEqual(p.cue_matches(text),
+                         {"birth": ["natus"], "death": ["obiit"], "ministry": ["episcopus fictensis"]})
+        self.assertEqual(p.cue_matches("Fictopoli, sancti Ficti, martyris."), {})
 
 
 class BuildTest(unittest.TestCase):
@@ -193,7 +223,8 @@ class BuildTest(unittest.TestCase):
             {"role": "birth", "la": "in Fictonia", "source": "curated"},
         ])
         self.assertEqual(r["no_place"], ["mr:0101-e"])
-        self.assertEqual(r["candidates"], {"mr:0101-a": ["birth"]})
+        self.assertEqual(r["candidates"], {"mr:0101-a": {"birth": ["natus"]}})
+        self.assertEqual(r["day_of"]["mr:0101-b"], (1, 1))
         self.assertEqual(r["curated_ids"], {"mr:0101-a"})
 
     def test_validate(self):
@@ -212,6 +243,31 @@ class BuildTest(unittest.TestCase):
             p.validate(r, self.TX, ids, {"mr:0101-a"}, self.TY, self.CUR, long_ok={})
         with self.assertRaises(AssertionError):
             p.validate(r, self.TX, ids, set(), self.TY, {"mr:0101-a": [{"role": "x", "la": "y"}]}, long_ok={})
+
+    def test_validate_ties_via_to_its_entry(self):
+        ids = set(self.TX)
+        bad = self.build()
+        bad["places"]["mr:0101-b"][0]["la"] = "Fictia"          # in the via text, but not the root's la
+        with self.assertRaisesRegex(AssertionError, "root"):
+            p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+        bad = self.build()
+        bad["day_of"]["mr:0101-a"] = (1, 2)                       # via on another day
+        with self.assertRaisesRegex(AssertionError, "same day"):
+            p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+        bad = self.build()
+        bad["places"]["mr:0101-b"][0]["via"] = "mr:0101-zz"      # via with no text
+        with self.assertRaisesRegex(AssertionError, "mr:0101-zz"):
+            p.validate(bad, self.TX, ids, set(), self.TY, self.CUR, long_ok={})
+
+    def test_report_marks_kept_extended_back_reference(self):
+        tx = {"mr:0104-d": "Ibídem in cœmetério Ficti, sancti Ficti D."}
+        r = p.build([("mr:0104-d", 1, 4)], tx, {"mr:0104-d": "dies_natalis"}, {}, not_a_place={})
+        self.assertIn("- `mr:0104-d` (kept its own phrase)", p.render_report(r))
+
+    def test_check_typology_coverage(self):
+        p.check_typology({"mr:0101-a": "dies_natalis"}, {"mr:0101-a"})
+        with self.assertRaisesRegex(AssertionError, "move data/typology.json aside"):
+            p.check_typology({"mr:0101-a": "dies_natalis"}, {"mr:0101-a", "mr:0101-b"})
 
     def test_long_lead_needs_allow_list(self):
         tx = {"mr:0101-a": " ".join(["In Fictia"] * 7) + ", sancti Ficti."}
@@ -240,7 +296,7 @@ class BuildTest(unittest.TestCase):
         report = p.render_report(self.build())
         self.assertIn("| death | 1 |", report)
         self.assertIn("## Curation candidates", report)
-        self.assertIn("| `mr:0101-a` | birth | yes |", report)
+        self.assertIn("| `mr:0101-a` | birth (natus) | yes |", report)
         self.assertIn("`mr:0101-e`", report)
         self.assertNotIn("Fictitii", report)
 

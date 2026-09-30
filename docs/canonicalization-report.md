@@ -367,9 +367,16 @@ An opening place is cut at a comma that starts a relative clause (*quod, quam,
 quo, qui, quae*), a reign (*sub N. imperatore*) or a time phrase (*in eadem
 persecutione*, "… post annis"), since only the place designation is quoted.
 
-Counts: 4,260 entries with places, 3 unresolved back-references (two *Ibidem* after
+Counts: 4,261 entries with places, 3 unresolved back-references (two *Ibidem* after
 a memorial whose place is stated only in its body, and one bare *Item* after an
 "Item commemoratio" entry), 548 curation candidates.
+
+**Misprint in the editio altera 2004 (print-verified)**: September 27, entry 11\*
+(mr:0927-francisca-xaveria-fenollosa-alcayna) is printed "betárum mártyrum" for
+*beatárum* (the subjects are women, Franciscae Xaveriae … et Herminiae). Verified
+on the page image and in its OCR layer; the transcription reproduces the print.
+`scripts/extract_places.py` treats the misprint as the honorific
+(`MISPRINTED_STOP_WORDS`), so the entry keeps its opening place.
 
 ## Post-2004 official variations
 
