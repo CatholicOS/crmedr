@@ -86,7 +86,21 @@ FEAST_IDS = {
 }
 
 # Hand decisions that override the rules, one per line with the reason.
-TYPOLOGY_OVERRIDES = {}
+TYPOLOGY_OVERRIDES = {
+    # Unnumbered lead memorials that open with the name, not "Memoria", so the
+    # cross-reference from the dies natalis finds no candidate.
+    "mr:0807-xystus-ii-et-socii": "celebratio",  # passio at 0806 ("memoria cras")
+    "mr:1019-ioannes-de-brebeuf-et-socii": "celebratio",  # group memorial; deaths on other days
+    "mr:1116-gertrudis-magna": "celebratio",  # natalis at 1117 ("memoria pridie")
+    # "Hac die depositio corporis ... celebratur/colitur" after the lead.
+    "mr:0121-agnes": "depositio",
+    "mr:1014-callistus-i": "depositio",
+    "mr:1123-clemens-i": "depositio",
+    # Died "pridie Nonas aprilis"; honoured on the day he took up his see.
+    "mr:1207-ambrosius": "ordinatio",
+    # "Sollemnitas Nativitatis": the date marks the birth, not the death.
+    "mr:0624-ioannes-baptista": "celebratio",
+}
 
 
 def lead(words):
