@@ -51,47 +51,57 @@ calendar memorial falls on another day (for example, mr:1228-franciscus-de-sales
 
 The text is the Latin editio altera 2004 (`martyrology-texts`,
 `data/editions/martyrologium_romanum_2004/*.json`). It is matched after
-accent-folding and lowercasing (æ→ae, œ→oe), using the same folding as
-`extract_subjects.py`. The first rule that matches wins:
+accent-folding and lowercasing with `fold()` from `extract_subjects.py`
+(æ/œ→e, j→i, punctuation→space). Word lists are therefore written in folded
+form (*sancte*, *beate*). The first rule that matches wins:
 
 1. **Override.** `TYPOLOGY_OVERRIDES[id]`, one line per ID with a comment giving
    the reason.
-2. **Off-day memorial → `celebratio`.** The elogium opens with
-   *memoria / festum / sollemnitas*, and another 2004 elogium of the same subject
-   says *cuius / eius / quorum / earum memoria* with a date expression (*cras*,
-   *postridie*, *pridie*, *die N mensis*) that resolves to this entry's date.
-   Subjects are matched on `i18n/la.json`. If the date expression can't be
-   resolved, the entry is listed in the report and not auto-tagged by this rule.
-3. **Feast of a mystery or object → `celebratio`.** The entry is in `FEAST_IDS`:
-   entries whose object is a mystery of the Lord, a Marian feast or title, the
-   angels, or another celebration that isn't a person's life event. The list is
-   explicit, one ID per line, and is built during implementation by reviewing
-   (a) the 99 elogia that open with *memoria / festum / sollemnitas* and
-   (b) the Marian-title and angel entries that don't open that way. Known members
-   include the celebrations among the manual feast overrides in
-   `docs/canonicalization-report.md` (e.g. epiphania-domini,
-   cathedra-sancti-petri, transfiguratio-domini,
-   assumptio-beatae-mariae-virginis, exaltatio-sanctae-crucis, angeli-custodes,
-   omnes-sancti, nativitas-domini) and entries such as 0211-maria-de-lourdes,
-   0513-maria-de-fatima, 0716-maria-de-monte-carmelo, 1007-maria-de-rosario and
-   0929-michael-et-socii (the archangels). It excludes persons, the dedications
-   (rule 4 → `dedicatio`), translatio-trium-magorum (rule 4 → `translatio`),
-   omnium-fidelium-defunctorum and avi-iesu-christi (→ `commemoratio`).
-4. **Marker in the opening clause.** The opening clause is the text before the
-   subject's name: the text before the first *sancti / sanctae / sanctorum /
-   beati / beatae / beatorum / domini / beatae mariae*, or the first sentence
-   when there is no such word. A marker there
-   decides the value: *depositio*, *translatio*, *inventio*, *dedicatio*,
-   *ordinatio* and *commemoratio* map to their own values, and *natalis*,
-   *passio* and *transitus* → `dies_natalis`. Markers later in the text (e.g.
-   "cuius memoria … agitur") never count.
+2. **Off-day memorial.** Another 2004 elogium says *cuius / eius / quorum /
+   earum memoria* followed by a date expression: *cras / crastina die /
+   postridie* (+1), *perendie / biduo post* (+2), *pridie* (−1), *hodie* (0), or an
+   ordinal day with a month genitive (*die vigesima quarta ianuarii*,
+   *vicesimo septembris*). The target is the entry on that date with the same
+   slug as the source. If there is none, it is the single entry on that date
+   whose lead holds *memoria / festum / sollemnitas*. The target gets
+   `celebratio`, unless the cross-reference names the event of that day
+   (*die depositionis* → `depositio`, *die ordinationis* → `ordinatio`,
+   *die translationis* → `translatio`). A cross-reference with no resolvable
+   date, or with no single target, is listed in the report and tags nothing.
+3. **Feast of a mystery or object → `celebratio`.** The entry is in `FEAST_IDS`,
+   an explicit list of 26 IDs. Its object is a mystery of the Lord, a Marian feast
+   or title, the angels, the Chair of Peter, the Conversion of Paul, the Holy
+   Cross or All Saints: 0101-maria-dei-genetrix, 0103-nomen-iesu,
+   0106-epiphania-domini, 0125-conversio-sancti-pauli, 0202-praesentatio-domini,
+   0211-maria-de-lourdes, 0222-cathedra-sancti-petri, 0325-annuntiatio-domini,
+   0513-maria-de-fatima, 0531-visitatio-beatae-mariae-virginis,
+   0716-maria-de-monte-carmelo, 0806-transfiguratio-domini,
+   0815-assumptio-beatae-mariae-virginis, 0822-maria-regina,
+   0908-nativitas-beatae-mariae-virginis, 0912-nomen-mariae,
+   0914-exaltatio-sanctae-crucis, 0915-maria-perdolens, 0929-michael-et-socii,
+   1002-angeli-custodes, 1007-maria-de-rosario, 1101-omnes-sancti,
+   1121-praesentatio-beatae-mariae-virginis,
+   1208-conceptio-immaculata-beatae-mariae-virginis, 1212-maria-de-guadalupe,
+   1225-nativitas-domini. The dedications, translatio-trium-magorum,
+   omnium-fidelium-defunctorum and avi-iesu-christi are deliberately left out:
+   rule 4 gives them `dedicatio`, `translatio` and `commemoratio`.
+4. **Marker in the lead.** The lead is the first 25 folded words, cut at the
+   first relative pronoun (*qui, que, quod, quorum, quarum, cuius, quibus, quos,
+   quas, quem, quam*), which starts the body. The first marker word in the lead
+   decides the value, unless it directly follows an honorific (*sancti, sancte,
+   sanctorum, sanctarum, beati, beate, beatorum, beatarum, domini*). In that
+   position it is a name, e.g. "beati natalis pinot". The marker words are
+   *depositio(nis)*, *translatio(nis)*, *inventio(nis)*, *dedicatio(nis)*,
+   *ordinatio(nis)* and *commemoratio*, each mapping to its own value, and
+   *natalis*, *passio* and *transitus*, which map to `dies_natalis`. The
+   genitive forms catch "festum dedicationis …" and "in die depositionis eius".
 5. **Default → `dies_natalis`.** This is the unmarked 2004 convention
    ("Place, sancti N., title"), and about 84% of entries fall here.
 
-A survey of the 2004 Latin gives the expected marker counts: commemoratio 325,
-memoria 116, transitus 90, passio 90, depositio 78, natalis 40, festum 25,
-sollemnitas 9, translatio 5, dedicatio 4. 48 entries carry more than one marker,
-and all of them go into the report for hand review.
+A simulation of rule 4 alone on the 2004 Latin gives: default 4,023,
+commemoratio 324, passio 88, transitus 86, depositio 73, natalis 34,
+dedicatio 6, translatio 5. Entries that carry more than one marker word anywhere
+in the text (48) all go into the report for hand review.
 
 ## Pipeline
 
