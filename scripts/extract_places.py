@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 """Extract the places stated by each current eulogy (Latin editio altera 2004).
 
-Each place is quoted exactly as printed (`la`) and given a role. Place
-designations are factual and may be quoted; no other elogium text is stored.
+Each place is quoted exactly as printed in the Latin editio altera (`la`) and,
+where the Italian (CEI) edition has it, in Italian (`it`), and given a role.
+Place designations are factual and may be quoted; no other elogium text is
+stored.
 The opening place is extracted automatically and its role comes from
 data/typology.json; places in the body come from data/places_curated.json.
 Documented in docs/canonicalization-report.md ("Places").
@@ -205,15 +207,15 @@ def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
     return items, unresolved
 
 
-def validate_curated(curated, texts, current_ids, leads):
+def validate_curated(curated, texts, current_ids, leads, texts_it=None):
     errors = []
     for mrid, entries in curated.items():
         if mrid not in current_ids:
             errors.append(f"{mrid}: not a current ID")
             continue
         for it in entries:
-            if set(it) != {"role", "la"}:
-                errors.append(f"{mrid}: curated item keys must be role and la: {sorted(it)}")
+            if set(it) not in ({"role", "la"}, {"role", "la", "it"}):
+                errors.append(f"{mrid}: curated item keys must be role, la and optionally it: {sorted(it)}")
                 continue
             if it["role"] not in ROLES:
                 errors.append(f"{mrid}: unknown role {it['role']!r}")
@@ -226,8 +228,14 @@ def validate_curated(curated, texts, current_ids, leads):
                 errors.append(f"{mrid}: la has more than {MAX_WORDS} words")
             if mrid in leads and it["la"] == leads[mrid]["la"]:
                 errors.append(f"{mrid}: la repeats the opening place")
+            if "it" in it:
+                if not isinstance(it["it"], str) or not it["it"].strip():
+                    errors.append(f"{mrid}: it is empty")
+                elif it["it"] not in (texts_it or {}).get(mrid, ""):
+                    errors.append(f"{mrid}: it is not verbatim in the Italian elogium: {it['it']!r}")
+                elif len(it["it"].split()) > MAX_WORDS_IT:
+                    errors.append(f"{mrid}: it has more than {MAX_WORDS_IT} words")
     return errors
-
 
 # Role cues in the body, used only to list curation candidates.
 CUES = {
@@ -316,12 +324,42 @@ def misprint_stop_words(misprints, edition, stop_words):
             if r["edition"] == edition and fold(r["intended"]) in stop_words}
 
 
-def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS):
+def with_it(item, it):
+    """item with `it` inserted right after `la` (key order is output order)."""
+    out = {}
+    for k, v in item.items():
+        if k == "it":
+            continue
+        out[k] = v
+        if k == "la":
+            out["it"] = it
+    return out
+
+
+def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS,
+          texts_it=None, stop_words_it=STOP_WORDS_IT):
     leads, unresolved = lead_items(order, texts, typology, not_a_place=not_a_place, stop_words=stop_words)
+    no_it, it_only = [], []
+    if texts_it is not None:
+        for mrid, _, _ in order:
+            phrase = italian_phrase(texts_it.get(mrid), stop_words_it)
+            if mrid not in leads:
+                if phrase:
+                    it_only.append((mrid, phrase))
+                continue
+            item = leads[mrid]
+            if "via" in item and item["la"] not in texts[mrid]:
+                phrase = leads[item["via"]].get("it")   # a bare back-reference takes its root's it
+            if phrase:
+                leads[mrid] = with_it(item, phrase)
+            else:
+                no_it.append(mrid)
     places = {}
     for mrid, _, _ in order:
         items = [leads[mrid]] if mrid in leads else []
-        items += [{"role": it["role"], "la": it["la"], "source": "curated"} for it in curated.get(mrid, [])]
+        for it in curated.get(mrid, []):
+            cur = {"role": it["role"], "la": it["la"], "source": "curated"}
+            items.append(with_it(cur, it["it"]) if "it" in it else cur)
         if items:
             places[mrid] = items
     return {
@@ -336,10 +374,11 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
                   if mrid in leads and "," in leads[mrid]["la"]],
         "curated_ids": set(curated),
         "day_of": {mrid: (month, day) for mrid, month, day in order},
+        "no_it": no_it,
+        "it_only": it_only,
     }
 
-
-def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok):
+def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok, texts_it=None):
     places = result["places"]
     assert set(places) <= set(current_ids), f"non-current IDs: {sorted(set(places) - set(current_ids))}"
     assert not set(places) & set(deprecated_ids), "deprecated IDs must not have places"
@@ -358,13 +397,25 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
                     assert it["la"] == root, f"{mrid}: la is not the root {via}'s la: {it['la']!r}"
             else:
                 assert it["la"] in texts[mrid], f"{mrid}: la is not verbatim: {it['la']!r}"
+            if "it" in it:
+                assert texts_it is not None, f"{mrid}: it present but no Italian texts given"
+                assert len(it["it"].split()) <= MAX_WORDS_IT, f"{mrid}: it has more than {MAX_WORDS_IT} words"
+                bare = "via" in it and it["la"] not in texts[mrid]
+                if bare:
+                    root = places.get(it["via"], [{}])[0].get("it")
+                    assert it["it"] == root, f"{mrid}: it is not the root {it['via']}'s it: {it['it']!r}"
+                else:
+                    assert it["it"] in texts_it.get(mrid, ""), f"{mrid}: it is not verbatim: {it['it']!r}"
+            elif "via" in it and it["la"] not in texts[mrid]:
+                root = places.get(it["via"], [{}])[0]
+                assert "it" not in root, f"{mrid}: bare back-reference lacks its root's it"
             if it["source"] == "lead":
                 leads[mrid] = it
                 expected = ROLE_OF_TYPOLOGY[typology[mrid]]
                 assert it["role"] == expected, f"{mrid}: lead role {it['role']} != {expected} from typology"
     too_long = [mrid for mrid, _ in result["long"] if mrid not in long_ok]
     assert not too_long, f"opening places over {MAX_WORDS} words, not in LONG_LEAD_OK: {too_long}"
-    errors = validate_curated(curated, texts, set(current_ids), leads)
+    errors = validate_curated(curated, texts, set(current_ids), leads, texts_it)
     assert not errors, "invalid curated places:\n" + "\n".join(errors)
 
 
@@ -398,7 +449,8 @@ def render_report(result):
         "## Counts",
         "",
         f"{len(places)} entries with at least one place; "
-        f"{source_counts['lead']} opening places, {source_counts['curated']} curated places.",
+        f"{source_counts['lead']} opening places, {source_counts['curated']} curated places; "
+        f"{sum(1 for it in items if 'it' in it)} with an Italian phrase.",
         "",
         "| Role | Places |",
         "| --- | --- |",
@@ -420,6 +472,16 @@ def render_report(result):
         "Check that the part after each comma is still a place designation.",
         "",
         *([f"- `{m}`: {la}" for m, la in result["comma"]] or ["None."]),
+        "",
+        "## Latin places without an Italian phrase",
+        "",
+        ", ".join(f"`{m}`" for m in result.get("no_it", [])) or "None.",
+        "",
+        "## Italian places without a Latin place",
+        "",
+        "Curation candidates: some are places the Latin rule missed.",
+        "",
+        *([f"- `{m}`: {it}" for m, it in result.get("it_only", [])] or ["None."]),
         "",
         "## Curation candidates",
         "",
@@ -462,12 +524,17 @@ def main():
                                 {m for m, _, _ in order})
     assert not errors, "invalid data/misprints.json:\n" + "\n".join(errors)
     stop_words = STOP_WORDS | misprint_stop_words(misprints, EDITION_LA, STOP_WORDS)
-    result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words)
-    validate(result, texts, {m for m, _, _ in order}, deprecated, typology, curated, long_ok=LONG_LEAD_OK)
+    stop_words_it = STOP_WORDS_IT | misprint_stop_words(misprints, EDITION_IT, STOP_WORDS_IT)
+    result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words,
+                   texts_it=texts_it, stop_words_it=stop_words_it)
+    validate(result, texts, {m for m, _, _ in order}, deprecated, typology, curated,
+             long_ok=LONG_LEAD_OK, texts_it=texts_it)
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")
     print(f"{len(result['places'])} entries with places; {len(result['unresolved'])} unresolved "
-          f"back-references; {len(result['candidates'])} curation candidates")
+          f"back-references; {len(result['candidates'])} curation candidates; "
+          f"{sum(1 for its in result['places'].values() for it in its if 'it' in it)} with it; "
+          f"{len(result['no_it'])} without it; {len(result['it_only'])} Italian-only")
 
 
 if __name__ == "__main__":

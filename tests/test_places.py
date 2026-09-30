@@ -263,6 +263,80 @@ class ItalianPhraseTest(unittest.TestCase):
         self.assertEqual(p.italian_phrase(text, p.STOP_WORDS_IT | {"desposizione"}), "A Fittopoli in Fittia")
 
 
+class ItalianAlignmentTest(unittest.TestCase):
+    ORDER = [("mr:0105-a", 1, 5), ("mr:0105-b", 1, 5), ("mr:0105-c", 1, 5), ("mr:0105-e", 1, 5)]
+    TX = {
+        "mr:0105-a": "Fictopoli in Fictia, sancti Fictitii A.",
+        "mr:0105-b": "Ibídem, beáti Ficti B.",
+        "mr:0105-c": "Ficticastro, sancti Ficti C.",
+        "mr:0105-e": "Sancti Fictitii E.",
+    }
+    IT = {
+        "mr:0105-a": "A Fittopoli in Fittia, ora in Fittonia, san Fitto A.",
+        "mr:0105-b": "Nello stesso luogo, beato Fitto B.",
+        "mr:0105-e": "A Fittocastro, san Fitto E.",
+    }
+    TY = {k: "dies_natalis" for k in TX}
+
+    def build(self, it=None, curated=None):
+        return p.build(self.ORDER, self.TX, self.TY, curated or {}, not_a_place={},
+                       texts_it=self.IT if it is None else it)
+
+    def test_alignment(self):
+        r = self.build()
+        a, b = r["places"]["mr:0105-a"][0], r["places"]["mr:0105-b"][0]
+        self.assertEqual(list(a), ["role", "la", "it", "source"])
+        self.assertEqual(a["it"], "A Fittopoli in Fittia, ora in Fittonia")
+        self.assertEqual(list(b), ["role", "la", "it", "source", "via"])
+        self.assertEqual(b["it"], a["it"])                           # bare Latin back-reference: root's it
+        self.assertNotIn("it", r["places"]["mr:0105-c"][0])        # no Italian text
+        self.assertEqual(r["no_it"], ["mr:0105-c"])
+        self.assertEqual(r["it_only"], [("mr:0105-e", "A Fittocastro")])
+
+    def test_root_without_it(self):
+        r = self.build(it={"mr:0105-b": "Nello stesso luogo, beato Fitto B."})
+        self.assertNotIn("it", r["places"]["mr:0105-a"][0])
+        self.assertNotIn("it", r["places"]["mr:0105-b"][0])
+        p.validate(r, self.TX, set(self.TX), set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+
+    def test_validate_it(self):
+        ids = set(self.TX)
+        r = self.build()
+        p.validate(r, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        bad = self.build(); bad["places"]["mr:0105-a"][0]["it"] = "A Fittonia"            # not verbatim
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        bad = self.build(); bad["places"]["mr:0105-b"][0]["it"] = "Nello stesso luogo"    # not the root's it
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        long_it = {"mr:0105-a": " ".join(["A Fittia"] * 11) + ", san Fitto."}
+        bad = self.build(it=long_it)
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=long_it)
+
+    def test_curated_it(self):
+        tx = {"mr:0105-a": "Fictopoli, sancti Ficti, qui in Fictonia natus est."}
+        it = {"mr:0105-a": "A Fittopoli, san Fitto, nato in Fittonia."}
+        ok = {"mr:0105-a": [{"role": "birth", "la": "in Fictonia", "it": "in Fittonia"}]}
+        self.assertEqual(p.validate_curated(ok, tx, {"mr:0105-a"}, {}, it), [])
+        bad = {"mr:0105-a": [{"role": "birth", "la": "in Fictonia", "it": "in Fittlandia"}]}
+        self.assertTrue(p.validate_curated(bad, tx, {"mr:0105-a"}, {}, it))
+        r = p.build([("mr:0105-a", 1, 5)], tx, {"mr:0105-a": "dies_natalis"}, ok, not_a_place={}, texts_it=it)
+        self.assertEqual(r["places"]["mr:0105-a"][1],
+                         {"role": "birth", "la": "in Fictonia", "it": "in Fittonia", "source": "curated"})
+
+    def test_report_sections(self):
+        report = p.render_report(self.build())
+        self.assertIn("## Latin places without an Italian phrase", report)
+        self.assertIn("`mr:0105-c`", report)
+        self.assertIn("## Italian places without a Latin place", report)
+        self.assertIn("- `mr:0105-e`: A Fittocastro", report)
+
+    def test_without_italian_texts_nothing_changes(self):
+        r = p.build(self.ORDER, self.TX, self.TY, {}, not_a_place={})
+        self.assertFalse(any("it" in it for its in r["places"].values() for it in its))
+
+
 class CuratedTest(unittest.TestCase):
     TEXT = {"mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus est."}
     LEADS = {"mr:0101-a": {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}}
