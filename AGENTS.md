@@ -8,7 +8,7 @@ CRMEDR (Common Roman Martyrology Eulogy Data Repository) is a **data repository*
 
 **The copyrighted eulogy texts are deliberately absent.** Only the non-copyrightable structural registry (IDs + placement facts) lives here. Never add eulogy body texts. Citation-length incipits appear only in `docs/canonicalization-report.md`, to identify entries.
 
-**One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (`data/places.json`). No other elogium text is stored. `scripts/extract_places.py` enforces this: every `la` must appear verbatim in its elogium and be at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry).
+**One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (`data/places.json`). No other elogium text is stored. `scripts/extract_places.py` enforces part of this in code: every `la` must appear verbatim in its elogium and be at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry), and an opening place is cut at a comma that starts a relative, reign or time clause. It cannot tell every narrative phrase from a place, so `docs/places-report.md` lists each opening place that still contains a comma for review.
 
 All IDs are **drafts pending committee review**. The `mr:` namespace prefix and the 2004 anchor-edition choice are placeholders; changing either is a mechanical rewrite.
 

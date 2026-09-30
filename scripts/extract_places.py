@@ -45,10 +45,18 @@ STOP_WORDS = {
     "beatus", "beata", "beati", "beatae", "beatæ", "beatorum", "beatarum",
     "depositio", "translatio", "inventio", "dedicatio", "ordinatio",
     "natalis", "passio", "transitus", "commemoratio", "commemorantur",
-    "memoria", "festum", "sollemnitas",
+    "memoria", "festum", "sollemnitas", "dormitio",
+    # "Sanctissimi Nominis ..." opens a feast; lowercase it would be a title.
+    "sanctissimi", "sanctissimae", "sanctissimæ",
 }
 WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿæœÆŒ]+")
 TRIM = " ,;: "
+# A comma followed by a relative pronoun, a reign ("sub N. imperatore") or a
+# time phrase starts a clause that is not part of the place; the phrase is
+# cut there (it must stay verbatim, so the clause is never removed from the
+# middle).
+CLAUSE = re.compile(
+    r",\s*(?:(?:quod|quam|quo|qui|quae|quæ|sub)\b|in eadem persecutione\b|(?:[a-z]+ )+post annis\b)")
 # ", eodem die et anno" (on the same day and year) is not part of the place.
 TIME_TAIL = re.compile(r",?\s*eodem die(?: et anno)?$")
 BACK_REFS = {"Ibidem", "Item"}
@@ -78,6 +86,9 @@ def opening_phrase(text):
     # same place": there is no opening place.
     if base_copy(phrase) == "Item" and w.lower().startswith("commemora"):
         return None
+    clause = CLAUSE.search(base_copy(phrase))
+    if clause:
+        phrase = phrase[:clause.start()].strip(TRIM)
     tail = TIME_TAIL.search(base_copy(phrase))
     if tail:
         phrase = phrase[:tail.start()].strip(TRIM)
@@ -189,6 +200,8 @@ def build(order, texts, typology, curated, *, not_a_place):
         "long": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
                  if mrid in leads and len(leads[mrid]["la"].split()) > MAX_WORDS],
         "candidates": {mrid: cue_roles(texts[mrid]) for mrid, _, _ in order if cue_roles(texts[mrid])},
+        "comma": [(mrid, leads[mrid]["la"]) for mrid, _, _ in order
+                  if mrid in leads and "," in leads[mrid]["la"]],
         "curated_ids": set(curated),
     }
 
@@ -255,6 +268,12 @@ def render_report(result):
         "## Opening places over 12 words",
         "",
         *([f"- `{m}`: {la}" for m, la in result["long"]] or ["None."]),
+        "",
+        "## Opening places with a comma",
+        "",
+        "Check that the part after each comma is still a place designation.",
+        "",
+        *([f"- `{m}`: {la}" for m, la in result["comma"]] or ["None."]),
         "",
         "## Curation candidates",
         "",

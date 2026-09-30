@@ -44,6 +44,25 @@ class OpeningPhraseTest(unittest.TestCase):
         self.assertEqual(p.opening_phrase("Item, sancti Fictitii, episcopi."), "Item")
         self.assertEqual(p.opening_phrase("Ibídem commemorátio sancti Fictitii."), "Ibídem")
 
+    def test_more_stop_words(self):
+        self.assertEqual(p.opening_phrase("Apud Fictopolim, dormítio sanctæ Fictæ."), "Apud Fictopolim")
+        self.assertIsNone(p.opening_phrase("Sanctíssimi Nóminis Ficti, quod fictum est."))
+        self.assertEqual(p.opening_phrase("In ecclesia Sanctíssimæ Fictitatis, sancti Ficti."),
+                         "In ecclesia Sanctíssimæ Fictitatis")
+
+    def test_clause_after_a_comma_is_cut(self):
+        self.assertEqual(p.opening_phrase("In monasterio Fictensi, quod condiderat, in Fictia, sancti Ficti."),
+                         "In monasterio Fictensi")
+        self.assertEqual(p.opening_phrase("Fictopoli in Fictia, sub Fictio imperatore, sanctorum Fictorum."),
+                         "Fictopoli in Fictia")
+        self.assertEqual(p.opening_phrase("In loco Ficto, in eádem persecutióne, beatorum Fictorum."),
+                         "In loco Ficto")
+        self.assertEqual(p.opening_phrase("Ibídem, octo post annis, beati Ficti."), "Ibídem")
+        self.assertEqual(p.opening_phrase("Ibídem, Fictorni, decem et septem post annis, beati Ficti."),
+                         "Ibídem, Fictorni")
+        # a locative after a comma is part of the place
+        self.assertEqual(p.opening_phrase("Fictopoli, in Fictia, sancti Ficti."), "Fictopoli, in Fictia")
+
     def test_no_stop_word_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Fictis transactis temporibus Fictus nascitur."))
 
@@ -190,6 +209,14 @@ class BuildTest(unittest.TestCase):
         out = json.loads(p.render_json(self.build()["places"]))
         self.assertEqual(out["roles"], p.ROLES)
         self.assertEqual(list(out["places"]), ["mr:0101-a", "mr:0101-b"])
+
+    def test_report_flags_comma_clauses(self):
+        tx = {"mr:0101-a": "Fictopoli, Fictorni, sancti Ficti."}
+        r = p.build([("mr:0101-a", 1, 1)], tx, {"mr:0101-a": "dies_natalis"}, {}, not_a_place={})
+        report = p.render_report(r)
+        self.assertIn("## Opening places with a comma", report)
+        self.assertIn("- `mr:0101-a`: Fictopoli, Fictorni", report)
+        self.assertEqual(r["comma"], [("mr:0101-a", "Fictopoli, Fictorni")])
 
     def test_report(self):
         report = p.render_report(self.build())

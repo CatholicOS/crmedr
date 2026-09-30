@@ -117,6 +117,10 @@ Then:
   same day has no earlier entry with an opening place, there is no place, and the
   entry is listed in the report as unresolved.
 - A trailing ", eodem die et anno" (on the same day and year) is stripped.
+- The phrase is cut at a comma that starts a relative clause (*quod, quam, quo,
+  qui, quae*), a reign (*sub …*) or a time phrase (*in eadem persecutione*,
+  "… post annis"). *dormitio* and *sanctissimi / sanctissimae* are stop words too.
+  The report lists every opening place that still contains a comma.
 - A bare *Item* followed by *commemoratio / commemorantur* means "also, the
   commemoration of", not "at the same place": there is no opening place.
 - `NOT_A_PLACE` lists openings that are not places (`mr:0101-maria-dei-genetrix`:
@@ -126,7 +130,7 @@ Then:
 - `via` always names the entry whose printed phrase supplies `la`, i.e. the root of
   a chain of back-references.
 
-On the 2004 Latin, 4,261 entries get an opening place; 3 back-references stay
+On the 2004 Latin, 4,260 entries get an opening place; 3 back-references stay
 unresolved; 548 entries are curation candidates.
 
 ## Curated body places

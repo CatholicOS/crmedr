@@ -363,8 +363,13 @@ it has no opening place.
 whose text holds a role cue. A later step resolves each distinct place to a
 Wikidata item and a modern country (#12).
 
-Counts: 4,261 entries with places, 3 unresolved back-references (an *Ibidem* after
-a memorial whose place is stated only in its body), 548 curation candidates.
+An opening place is cut at a comma that starts a relative clause (*quod, quam,
+quo, qui, quae*), a reign (*sub N. imperatore*) or a time phrase (*in eadem
+persecutione*, "… post annis"), since only the place designation is quoted.
+
+Counts: 4,260 entries with places, 3 unresolved back-references (two *Ibidem* after
+a memorial whose place is stated only in its body, and one bare *Item* after an
+"Item commemoratio" entry), 548 curation candidates.
 
 ## Post-2004 official variations
 

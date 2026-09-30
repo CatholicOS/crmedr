@@ -5035,7 +5035,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Apud Béthlehem Iudæ, dormítio",
+          "la": "Apud Béthlehem Iudæ",
           "source": "lead"
         }
       ]
@@ -28162,7 +28162,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Ibídem, trigínta post annis",
+          "la": "Londínii in Anglia",
           "source": "lead",
           "via": "mr:0530-lucas-kirby"
         }
@@ -33342,7 +33342,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Alexandríæ in Ægýpto, sub Septímio Sevéro imperatóre",
+          "la": "Alexandríæ in Ægýpto",
           "source": "lead"
         }
       ]
@@ -38814,7 +38814,7 @@
       "places": [
         {
           "role": "death",
-          "la": "In loco Carabanchel Bajo apud Matrítum item in Hispánia, in eádem persecutióne",
+          "la": "In loco Carabanchel Bajo apud Matrítum item in Hispánia",
           "source": "lead"
         }
       ]
@@ -46116,7 +46116,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Ibídem, sub eádem regína",
+          "la": "Eboráci in Anglia",
           "source": "lead",
           "via": "mr:0822-thomas-percy"
         }
@@ -47194,7 +47194,7 @@
       "places": [
         {
           "role": "burial",
-          "la": "In monastério Petrishusénsi, quod condíderat, in Suévia",
+          "la": "In monastério Petrishusénsi",
           "source": "lead"
         }
       ]
@@ -50797,13 +50797,6 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
-      "places": [
-        {
-          "role": "cult",
-          "la": "Sanctíssimi Nóminis",
-          "source": "lead"
-        }
-      ],
       "unnumbered": true
     },
     {
@@ -56386,7 +56379,7 @@
       "places": [
         {
           "role": "death",
-          "la": "In Cartúsia Arvériæ in Burgúndia, quam fundáverat",
+          "la": "In Cartúsia Arvériæ in Burgúndia",
           "source": "lead"
         }
       ]
@@ -67083,7 +67076,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Ibídem, octo post annis",
+          "la": "Eboráci in Anglia",
           "source": "lead",
           "via": "mr:1129-eduardus-burden"
         }
@@ -68682,7 +68675,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Graii in Burgúndia, quo exsul se recéperat",
+          "la": "Graii in Burgúndia",
           "source": "lead"
         }
       ]
@@ -68858,7 +68851,7 @@
       "places": [
         {
           "role": "death",
-          "la": "Ibídem, Tybúrni, decem et novem post annis",
+          "la": "Ibídem, Tybúrni",
           "source": "lead",
           "via": "mr:1210-polydorus-plasden-et-eustatius-white"
         }
