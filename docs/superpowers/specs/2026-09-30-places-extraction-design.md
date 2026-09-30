@@ -116,9 +116,18 @@ Then:
 - *Ibidem*, or *Item* alone, resolves to the previous place (see Data shape). If the
   same day has no earlier entry with an opening place, there is no place, and the
   entry is listed in the report as unresolved.
+- A trailing ", eodem die et anno" (on the same day and year) is stripped.
+- A bare *Item* followed by *commemoratio / commemorantur* means "also, the
+  commemoration of", not "at the same place": there is no opening place.
+- `NOT_A_PLACE` lists openings that are not places (`mr:0101-maria-dei-genetrix`:
+  "In octava Nativitatis Domini…", a time phrase), each with the reason.
+- *Ibidem* followed by more words ("Ibidem in coemeterio …") keeps its printed
+  phrase and records the antecedent in `via`.
+- `via` always names the entry whose printed phrase supplies `la`, i.e. the root of
+  a chain of back-references.
 
-A survey of the 2004 Latin gives about 3,460 entries with a real opening place, about
-2,165 distinct phrases, and about 170 *Item / Ibidem* back-references.
+On the 2004 Latin, 4,261 entries get an opening place; 3 back-references stay
+unresolved; 548 entries are curation candidates.
 
 ## Curated body places
 

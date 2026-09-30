@@ -8,6 +8,8 @@ CRMEDR (Common Roman Martyrology Eulogy Data Repository) is a **data repository*
 
 **The copyrighted eulogy texts are deliberately absent.** Only the non-copyrightable structural registry (IDs + placement facts) lives here. Never add eulogy body texts. Citation-length incipits appear only in `docs/canonicalization-report.md`, to identify entries.
 
+**One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (`data/places.json`). No other elogium text is stored. `scripts/extract_places.py` enforces this: every `la` must appear verbatim in its elogium and be at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry).
+
 All IDs are **drafts pending committee review**. The `mr:` namespace prefix and the 2004 anchor-edition choice are placeholders; changing either is a mechanical rewrite.
 
 ## The identifier scheme
@@ -29,6 +31,8 @@ All generator scripts read **private source repositories** that hold the copyrig
 
 3. **`scripts/extract_typology.py`** reads `data/martyrology_ids.json` plus the private `CatholicOS/martyrology-texts` repo (Latin editio altera 2004) and writes `data/typology.json` (what each current eulogy's date marks) and `docs/typology-report.md`. `extract_registry.py` merges `data/typology.json` into the registry after `country`.
    - Run: `python3 scripts/extract_typology.py /path/to/martyrology-texts` (stdlib only)
+4. **`scripts/extract_places.py`** reads `data/martyrology_ids.json`, `data/typology.json`, `data/places_curated.json` and the private `martyrology-texts` repo (Latin editio altera 2004), and writes `data/places.json` (the places each current eulogy states, with roles) and `docs/places-report.md` (including the curation candidates). `extract_registry.py` merges `data/places.json` after `typology`.
+   - Run: `python3 scripts/extract_places.py /path/to/martyrology-texts` (stdlib only)
 
 ### Invariants the pipeline enforces (preserve these when editing)
 
@@ -45,6 +49,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `PLACEMENT_OVERRIDES` / `ENTRY_NOTES` / `LATIN_ASTERISKED` / `LATIN_PLAIN` — where the Latin editio altera print differs from the Italian (CEI) edition the workbook digitized; the registry follows the **Latin print** and each carries a `note`
 - `PRINT_ONLY_ENTRIES` — entries in the Latin print but absent from the workbook
 - `TYPOLOGY_OVERRIDES` / `FEAST_IDS` in `scripts/extract_typology.py` — hand typology decisions and the explicit list of celebrations (feasts of the Lord and of Mary, etc.)
+- `data/places_curated.json` — hand-entered body places (birth, see, burial or death elsewhere); `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
 
 The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
 

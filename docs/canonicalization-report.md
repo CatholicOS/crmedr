@@ -339,6 +339,33 @@ typology yet. Memorials whose text doesn't say what their date marks keep
 `dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas, mr:0726-ioachim-et-anna,
 mr:0827-monica), pending committee review.
 
+## Places (September 2026)
+
+Current entries may carry `places`: the places the elogium states, each quoted
+exactly as printed in the Latin editio altera 2004 (`la`) and given a role:
+`death`, `burial`, `translation`, `dedication`, `cult` (where the saint is
+venerated or commemorated), `birth`, `ministry` (see or field of work). Place
+designations are factual and are the one piece of elogium text the repository
+quotes.
+
+The **opening place** is extracted by `scripts/extract_places.py`: the text before
+the first lowercase honorific or marker word (the print capitalizes a saint inside
+a place name, "in monasterio Sancti N.", but not the subject's honorific), without
+a trailing "eodem die et anno". Its role follows `typology` (dies_natalis → death,
+depositio → burial, translatio/inventio → translation, dedicatio → dedication,
+ordinatio → ministry, celebratio/commemoratio → cult). A leading *Item* is dropped;
+*Ibidem* and a bare *Item* take the place of the nearest earlier entry of the same
+day, named in `via`. "Item commemoratio …" means "also, the commemoration of", so
+it has no opening place.
+
+**Body places** (birth, see, burial or death elsewhere) are hand-curated in
+`data/places_curated.json`; `docs/places-report.md` lists the candidate entries
+whose text holds a role cue. A later step resolves each distinct place to a
+Wikidata item and a modern country (#12).
+
+Counts: 4,261 entries with places, 3 unresolved back-references (an *Ibidem* after
+a memorial whose place is stated only in its body), 548 curation candidates.
+
 ## Post-2004 official variations
 
 The Dicastery's page for the Martyrologium Romanum

@@ -34,9 +34,9 @@ class OpeningPhraseTest(unittest.TestCase):
         self.assertEqual(p.opening_phrase("Fictopoli, translátio sancti Ficti."), "Fictopoli")
 
     def test_time_tail_is_stripped(self):
-        self.assertEqual(p.opening_phrase("Fictopoli item in Fictia, eódem die et anno, beáti Ficti."),
+        self.assertEqual(p.opening_phrase("Fictopoli item in Fictia, eódem die et anno, sanctárum Fictarum."),
                          "Fictopoli item in Fictia")
-        self.assertEqual(p.opening_phrase("Ibídem, eódem die et anno, beáti Ficti."), "Ibídem")
+        self.assertEqual(p.opening_phrase("Ibídem, eódem die, sanctárum Fictarum."), "Ibídem")
 
     def test_item_before_a_commemoration_means_also_not_a_place(self):
         self.assertIsNone(p.opening_phrase("Item commemorátio sancti Fictitii, episcopi."))
