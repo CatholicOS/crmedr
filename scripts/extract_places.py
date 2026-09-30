@@ -65,6 +65,9 @@ BACK_REFS = {"Ibidem", "Item"}
 EDITION_LA = "martyrologium_romanum_2004"
 EDITION_IT = "martyrologium_romanum_2004_it_IT"
 MISPRINT_KEYS = {"id", "edition", "printed", "intended", "verified"}
+# A misprint is recorded as the misprinted word, or as the shortest phrase (up
+# to three words) that makes it unique in the text ("un Inghilterra").
+MISPRINT_MAX_WORDS = 3
 
 
 def _base(c):
@@ -327,7 +330,12 @@ def validate_misprints(misprints, texts_by_edition, current_ids):
         if r["edition"] not in texts_by_edition:
             errors.append(f"{r['id']}: unknown edition {r['edition']!r}")
             continue
-        count = texts_by_edition[r["edition"]].get(r["id"], "").count(r["printed"])
+        if not all(isinstance(r[k], str) and 1 <= len(r[k].split()) <= MISPRINT_MAX_WORDS
+                   for k in ("printed", "intended")):
+            errors.append(f"{r['id']}: printed and intended must be 1 to {MISPRINT_MAX_WORDS} words")
+            continue
+        count = len(re.findall(r"(?<![\w’'])" + re.escape(r["printed"]) + r"(?![\w’'])",
+                               texts_by_edition[r["edition"]].get(r["id"], "")))
         if count != 1:
             errors.append(f"{r['id']}: {r['printed']!r} occurs {count} times in {r['edition']}")
     keys = [(r.get("id"), r.get("edition")) for r in misprints]

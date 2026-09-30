@@ -50,7 +50,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `PRINT_ONLY_ENTRIES` — entries in the Latin print but absent from the workbook
 - `TYPOLOGY_OVERRIDES` / `FEAST_IDS` in `scripts/extract_typology.py` — hand typology decisions and the explicit list of celebrations (feasts of the Lord and of Mary, etc.)
 - `data/places_curated.json` — hand-entered body places (birth, see, burial or death elsewhere); `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
-- `data/misprints.json` — verified misprints in the printed 2004 editions (Latin and Italian), one word each; they also count as stop words in place extraction
+- `data/misprints.json` — verified misprints in the printed 2004 editions (Latin and Italian), one word (or a phrase of up to three words) each; they also count as stop words in place extraction
 
 The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
 

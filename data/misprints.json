@@ -1,12 +1,54 @@
 {
-  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology. printed occurs exactly once in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. Hand-maintained; see docs/canonicalization-report.md.",
+  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology. printed (the misprinted word, or the shortest phrase of up to three words that makes it unique) occurs exactly once, as whole words, in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. Hand-maintained; see docs/canonicalization-report.md.",
   "misprints": [
+    {
+      "id": "mr:0305-phoca",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "nell’odiena",
+      "intended": "nell’odierna",
+      "verified": "print"
+    },
+    {
+      "id": "mr:0704-ioannes-cornelius",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "un Inghilterra",
+      "intended": "in Inghilterra",
+      "verified": "print"
+    },
+    {
+      "id": "mr:0906-bertrandus-de-garrigues",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "Mel",
+      "intended": "Nel",
+      "verified": "print"
+    },
+    {
+      "id": "mr:0917-ioannes-ventura-solsona",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "vicno",
+      "intended": "vicino",
+      "verified": "print"
+    },
+    {
+      "id": "mr:0922-mauritius-et-socii",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "nell territorio",
+      "intended": "nel territorio",
+      "verified": "print"
+    },
     {
       "id": "mr:0927-francisca-xaveria-fenollosa-alcayna",
       "edition": "martyrologium_romanum_2004",
       "printed": "betárum",
       "intended": "beatárum",
       "verified": "page image and OCR layer (print 11*)"
+    },
+    {
+      "id": "mr:1007-ioannes-hunot",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "prospicente",
+      "intended": "prospiciente",
+      "verified": "print"
     },
     {
       "id": "mr:1013-comganus",

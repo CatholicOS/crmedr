@@ -196,6 +196,17 @@ class MisprintTest(unittest.TestCase):
         self.assertTrue(p.validate_misprints([{"id": "mr:0101-a"}], MTEXTS, ids))
         self.assertTrue(p.validate_misprints(list(reversed(MISPRINTS)), MTEXTS, ids))   # unsorted
 
+    def test_whole_word_count_and_short_phrases(self):
+        ids = {"mr:0101-a"}
+        texts = {"martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fittopoli nell territorio dell’odierna Fittia, nell Fittonia."}}
+        rec = lambda printed: [{"id": "mr:0101-a", "edition": "martyrologium_romanum_2004_it_IT",
+                                "printed": printed, "intended": "x", "verified": "print"}]
+        self.assertEqual(p.validate_misprints(rec("nell territorio"), texts, ids), [])
+        self.assertTrue(p.validate_misprints(rec("nell"), texts, ids))                 # 2 whole-word hits
+        self.assertEqual(p.validate_misprints(rec("dell’odierna"), texts, ids), [])    # elision is part of the word
+        self.assertTrue(p.validate_misprints(rec("Fitt"), texts, ids))                 # a substring is not a word
+        self.assertTrue(p.validate_misprints(rec("A Fittopoli nell territorio"), texts, ids))   # over 3 words
+
     def test_stop_words_per_edition(self):
         self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, p.STOP_WORDS), {"betarum"})
         self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, {"sancti"}), set())
@@ -216,7 +227,9 @@ class MisprintTest(unittest.TestCase):
         self.assertEqual([(r["id"], r["edition"]) for r in records],
                          sorted((r["id"], r["edition"]) for r in records))
         self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
-        self.assertEqual({r["printed"] for r in records}, {"betárum", "desposizione", "comemorazione"})
+        self.assertEqual({r["printed"] for r in records},
+                         {"betárum", "desposizione", "comemorazione", "Mel", "nell territorio",
+                          "nell’odiena", "un Inghilterra", "vicno", "prospicente"})
 
 
 class ItalianPhraseTest(unittest.TestCase):

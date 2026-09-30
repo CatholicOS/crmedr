@@ -97,9 +97,10 @@ record is a new file, `data/misprints.json`:
 ```
 
 - `edition` is the CLBDR edition ID used by `martyrology-texts`.
-- `printed` and `intended` are single words, so they carry no elogium text beyond
-  the word itself. `printed` must occur **exactly once** in that entry's text, so a
-  frontend can locate it without offsets.
+- `printed` and `intended` are single words, or the shortest phrase of up to three
+  words that makes the misprint unique ("un Inghilterra" for "in Inghilterra"), so
+  they carry almost no elogium text. `printed` must occur **exactly once**, matched
+  as whole words, in that entry's text, so a frontend can locate it without offsets.
 - Entries are sorted by `id`, then `edition`.
 - `scripts/extract_places.py` reads this file instead of the hard-coded
   `MISPRINTED_STOP_WORDS`. For each edition's language, a misprint whose

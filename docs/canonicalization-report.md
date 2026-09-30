@@ -389,6 +389,18 @@ intended:
   *deposizione*.
 - Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for
   *commemorazione*.
+- Italian (CEI) edition, also inside quoted place designations (`places[].it` keeps
+  the printed form):
+  - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
+  - July 4 (mr:0704-ioannes-cornelius): "un Inghilterra" for *in Inghilterra*;
+  - September 6 (mr:0906-bertrandus-de-garrigues): "Mel" for *Nel*;
+  - September 17 (mr:0917-ioannes-ventura-solsona): "vicno" for *vicino*;
+  - September 22 (mr:0922-mauritius-et-socii): "nell territorio" for *nel territorio*;
+  - October 7 (mr:1007-ioannes-hunot): "prospicente" for *prospiciente*.
+
+A record holds the misprinted word, or the shortest phrase of up to three words that
+makes it unique in the text ("un Inghilterra"); it occurs exactly once there, as whole
+words.
 
 ## Post-2004 official variations
 
