@@ -47,5 +47,34 @@ class RegistryTypologyTest(unittest.TestCase):
         self.assertIn("`Typology`", md)
 
 
+PLACES = {"mr:0101-fictitius": [{"role": "death", "la": "Fictopoli", "source": "lead"}]}
+
+
+class RegistryPlacesTest(unittest.TestCase):
+    def test_add_places_after_typology(self):
+        e = r.add_typology([dict(ENTRY)], {"mr:0101-fictitius": "depositio"})
+        out = r.add_places(e, PLACES)
+        self.assertEqual(list(out[0]), ["id", "month", "day", "entry", "asterisk", "country",
+                                        "typology", "places", "note"])
+
+    def test_add_places_without_typology_goes_after_country(self):
+        out = r.add_places([dict(ENTRY)], PLACES)
+        self.assertEqual(list(out[0])[5:7], ["country", "places"])
+
+    def test_add_places_is_idempotent_and_skips_placeless(self):
+        once = r.add_places([dict(ENTRY)], PLACES)
+        self.assertEqual(r.add_places(once, PLACES), once)
+        self.assertNotIn("places", r.add_places([dict(ENTRY)], {})[0])
+
+    def test_load_places(self):
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(r.load_places(Path(d), {"mr:0101-fictitius"}), {})
+            (Path(d) / "data").mkdir()
+            (Path(d) / "data" / "places.json").write_text(json.dumps({"places": PLACES}), encoding="utf-8")
+            self.assertEqual(r.load_places(Path(d), {"mr:0101-fictitius", "mr:0102-x"}), PLACES)
+            with self.assertRaisesRegex(AssertionError, "move data/places.json aside"):
+                r.load_places(Path(d), {"mr:0102-x"})
+
+
 if __name__ == "__main__":
     unittest.main()
