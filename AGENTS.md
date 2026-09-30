@@ -8,7 +8,7 @@ CRMEDR (Common Roman Martyrology Eulogy Data Repository) is a **data repository*
 
 **The copyrighted eulogy texts are deliberately absent.** Only the non-copyrightable structural registry (IDs + placement facts) lives here. Never add eulogy body texts. Citation-length incipits appear only in `docs/canonicalization-report.md`, to identify entries.
 
-**One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (`data/places.json`). No other elogium text is stored. `scripts/extract_places.py` enforces part of this in code: every `la` must appear verbatim in its elogium and be at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry), and an opening place is cut at a comma that starts a relative, reign or time clause. It cannot tell every narrative phrase from a place, so `docs/places-report.md` lists each opening place that still contains a comma for review.
+**One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (Latin editio typica altera 2004) and `places[].it` (Italian CEI edition 2004) in `data/places.json`. No other text of either edition is stored. `scripts/extract_places.py` enforces part of this in code: every `la` / `it` must appear verbatim in its elogium, `la` at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry) and `it` at most 20, and an opening place is cut at a comma that starts a clause. It cannot tell every narrative phrase from a place, so `docs/places-report.md` lists each Latin opening place that still contains a comma for review.
 
 All IDs are **drafts pending committee review**. The `mr:` namespace prefix and the 2004 anchor-edition choice are placeholders; changing either is a mechanical rewrite.
 
@@ -50,6 +50,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `PRINT_ONLY_ENTRIES` — entries in the Latin print but absent from the workbook
 - `TYPOLOGY_OVERRIDES` / `FEAST_IDS` in `scripts/extract_typology.py` — hand typology decisions and the explicit list of celebrations (feasts of the Lord and of Mary, etc.)
 - `data/places_curated.json` — hand-entered body places (birth, see, burial or death elsewhere); `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
+- `data/misprints.json` — verified misprints in the printed 2004 editions (Latin and Italian), one word (or a phrase of up to three words) each; they also count as stop words in place extraction
 
 The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
 

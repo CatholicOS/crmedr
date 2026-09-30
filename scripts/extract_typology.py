@@ -358,8 +358,8 @@ def render_report(result):
     return "\n".join(lines) + "\n"
 
 
-def load_texts(texts_repo):
-    folder = texts_repo / "data" / "editions" / "martyrologium_romanum_2004"
+def load_texts(texts_repo, edition="martyrologium_romanum_2004"):
+    folder = texts_repo / "data" / "editions" / edition
     texts = {}
     for month in range(1, 13):
         with open(folder / f"{month:02d}.json", encoding="utf-8") as f:

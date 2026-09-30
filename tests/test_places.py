@@ -64,8 +64,9 @@ class OpeningPhraseTest(unittest.TestCase):
         self.assertEqual(p.opening_phrase("Fictopoli, in Fictia, sancti Ficti."), "Fictopoli, in Fictia")
 
     def test_printed_misprint_of_an_honorific_ends_the_phrase(self):
-        self.assertEqual(p.opening_phrase("In vico Ficto item in Fictia, betárum mártyrum Fictarum."),
-                         "In vico Ficto item in Fictia")
+        text = "In vico Ficto item in Fictia, betárum mártyrum Fictarum."
+        self.assertIsNone(p.opening_phrase(text))
+        self.assertEqual(p.opening_phrase(text, p.STOP_WORDS | {"betarum"}), "In vico Ficto item in Fictia")
 
     def test_no_stop_word_means_no_place(self):
         self.assertIsNone(p.opening_phrase("Fictis transactis temporibus Fictus nascitur."))
@@ -166,6 +167,212 @@ class PrintOrderTest(unittest.TestCase):
 
     def test_known_print_positions(self):
         self.assertEqual(p.PRINT_POSITION, {"mr:0104-abrunculus": 2, "mr:0610-marcus-antonius-durando": 9})
+
+
+MISPRINTS = [
+    {"id": "mr:0101-a", "edition": "martyrologium_romanum_2004", "printed": "betárum",
+     "intended": "beatárum", "verified": "print"},
+    {"id": "mr:0101-b", "edition": "martyrologium_romanum_2004_it_IT", "printed": "desposizione",
+     "intended": "deposizione", "verified": "print"},
+]
+MTEXTS = {
+    "martyrologium_romanum_2004": {"mr:0101-a": "Fictopoli, betárum Fictarum.", "mr:0101-b": "Fictopoli, sancti Ficti."},
+    "martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fictopoli, beate Fitte.", "mr:0101-b": "A Fictopoli, desposizione di san Fitto."},
+}
+
+
+class MisprintTest(unittest.TestCase):
+    def test_valid_records(self):
+        self.assertEqual(p.validate_misprints(MISPRINTS, MTEXTS, {"mr:0101-a", "mr:0101-b"}), [])
+
+    def test_invalid_records(self):
+        ids = {"mr:0101-a", "mr:0101-b"}
+        bad = [dict(MISPRINTS[0], printed="betorum")]                          # not in the text
+        self.assertTrue(p.validate_misprints(bad, MTEXTS, ids))
+        twice = {**MTEXTS, "martyrologium_romanum_2004": {"mr:0101-a": "betárum, betárum."}}
+        self.assertTrue(p.validate_misprints(MISPRINTS[:1], twice, ids))      # occurs twice
+        self.assertTrue(p.validate_misprints([dict(MISPRINTS[0], edition="x")], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints([dict(MISPRINTS[0], id="mr:0102-z")], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints([{"id": "mr:0101-a"}], MTEXTS, ids))
+        self.assertTrue(p.validate_misprints(list(reversed(MISPRINTS)), MTEXTS, ids))   # unsorted
+
+    def test_whole_word_count_and_short_phrases(self):
+        ids = {"mr:0101-a"}
+        texts = {"martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fittopoli nell territorio dell’odierna Fittia, nell Fittonia."}}
+        rec = lambda printed: [{"id": "mr:0101-a", "edition": "martyrologium_romanum_2004_it_IT",
+                                "printed": printed, "intended": "x", "verified": "print"}]
+        self.assertEqual(p.validate_misprints(rec("nell territorio"), texts, ids), [])
+        self.assertTrue(p.validate_misprints(rec("nell"), texts, ids))                 # 2 whole-word hits
+        self.assertEqual(p.validate_misprints(rec("dell’odierna"), texts, ids), [])    # elision is part of the word
+        self.assertTrue(p.validate_misprints(rec("Fitt"), texts, ids))                 # a substring is not a word
+        self.assertTrue(p.validate_misprints(rec("A Fittopoli nell territorio"), texts, ids))   # over 3 words
+
+    def test_stop_words_per_edition(self):
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, p.STOP_WORDS), {"betarum"})
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, {"sancti"}), set())
+        self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_IT, {"deposizione"}), {"desposizione"})
+
+    def test_load_misprints(self):
+        import json, tempfile
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(p.load_misprints(Path(d)), [])
+            (Path(d) / "data").mkdir()
+            (Path(d) / "data" / "misprints.json").write_text(json.dumps({"misprints": MISPRINTS}), encoding="utf-8")
+            self.assertEqual(p.load_misprints(Path(d)), MISPRINTS)
+
+    def test_repository_file_is_valid_shape(self):
+        import json
+        path = Path(__file__).resolve().parent.parent / "data" / "misprints.json"
+        records = json.load(open(path, encoding="utf-8"))["misprints"]
+        self.assertEqual([(r["id"], r["edition"]) for r in records],
+                         sorted((r["id"], r["edition"]) for r in records))
+        self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
+        self.assertEqual({r["printed"] for r in records},
+                         {"betárum", "desposizione", "comemorazione", "Mel", "nell territorio",
+                          "nell’odiena", "un Inghilterra", "vicno", "prospicente"})
+
+
+class ItalianPhraseTest(unittest.TestCase):
+    def test_lowercase_honorific_and_markers_end_the_phrase(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli in Fittia, san Fitto, vescovo."), "A Fittopoli in Fittia")
+        self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, beata Fitta."), "Nel cenobio di Fittaco")
+        self.assertEqual(p.italian_phrase("A Fittopoli, anniversario della nascita al cielo del beato Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, martirio dei santi Fitti."), "A Fittopoli")
+
+    def test_capitalized_saint_in_a_place_name_stays(self):
+        self.assertEqual(p.italian_phrase("A San Fittorino nelle Fittie, beato Fitto."), "A San Fittorino nelle Fittie")
+
+    def test_lowercase_saint_after_a_preposition_is_part_of_the_place(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli presso san Fittino, san Fitto, papa."),
+                         "A Fittopoli presso san Fittino")
+        self.assertEqual(p.italian_phrase("Nel monastero di sant’Ilario presso Fittopoli, beato Fitto."),
+                         "Nel monastero di sant’Ilario presso Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli san Fitto, vescovo."), "A Fittopoli")
+
+    def test_time_opening_is_not_a_place(self):
+        self.assertIsNone(p.italian_phrase("Nello stesso giorno, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Sempre nello stesso giorno, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nello stesso giorno, trent’anni dopo, san Fitto."))
+
+    def test_capitalized_stop_word_at_start_means_no_phrase(self):
+        self.assertIsNone(p.italian_phrase("Memoria di san Fitto, vescovo."))
+        self.assertIsNone(p.italian_phrase("Parimenti si commemorano i santi Fitti."))
+
+    def test_modern_hints_after_a_comma_are_kept(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli in Fittia, nell’odierna Fittonia, san Fitto."),
+                         "A Fittopoli in Fittia, nell’odierna Fittonia")
+        self.assertEqual(p.italian_phrase("A Fittopoli, ora in Fittonia, sempre in Fittia, beato Fitto."),
+                         "A Fittopoli, ora in Fittonia, sempre in Fittia")
+
+    def test_clauses_after_a_comma_are_cut(self):
+        self.assertEqual(p.italian_phrase("A Fittopoli, dove si era rifugiato, san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, trent’anni più tardi, beato Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, sotto il medesimo re, beato Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, da lui fondato, san Fitto."), "Nel cenobio di Fittaco")
+        self.assertEqual(p.italian_phrase("A Fittopoli, trecentosei santi martiri."), "A Fittopoli")
+
+    def test_sempre_and_back_references(self):
+        self.assertEqual(p.italian_phrase("Sempre a Fittopoli, san Fitto."), "a Fittopoli")
+        self.assertEqual(p.italian_phrase("Ancora a Fittopoli, beato Fitto."), "a Fittopoli")
+        self.assertIsNone(p.italian_phrase("Nello stesso luogo, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nella stessa città, beata Fitta."))
+        self.assertIsNone(p.italian_phrase("Sempre nello stesso luogo, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nello stesso luogo, dieci anni dopo, sante Fitte."))
+        self.assertEqual(p.italian_phrase("A Fittopoli, giorno e anno, sante Fitte."), "A Fittopoli")
+
+    def test_no_text(self):
+        self.assertIsNone(p.italian_phrase(None))
+        self.assertIsNone(p.italian_phrase(""))
+
+    def test_misprinted_stop_word(self):
+        text = "A Fittopoli in Fittia desposizione di san Fitto."
+        self.assertEqual(p.italian_phrase(text, p.STOP_WORDS_IT | {"desposizione"}), "A Fittopoli in Fittia")
+
+
+class ItalianAlignmentTest(unittest.TestCase):
+    ORDER = [("mr:0105-a", 1, 5), ("mr:0105-b", 1, 5), ("mr:0105-c", 1, 5), ("mr:0105-e", 1, 5)]
+    TX = {
+        "mr:0105-a": "Fictopoli in Fictia, sancti Fictitii A.",
+        "mr:0105-b": "Ibídem, beáti Ficti B.",
+        "mr:0105-c": "Ficticastro, sancti Ficti C.",
+        "mr:0105-e": "Sancti Fictitii E.",
+    }
+    IT = {
+        "mr:0105-a": "A Fittopoli in Fittia, ora in Fittonia, san Fitto A.",
+        "mr:0105-b": "Nello stesso luogo, beato Fitto B.",
+        "mr:0105-e": "A Fittocastro, san Fitto E.",
+    }
+    TY = {k: "dies_natalis" for k in TX}
+
+    def build(self, it=None, curated=None):
+        return p.build(self.ORDER, self.TX, self.TY, curated or {}, not_a_place={},
+                       texts_it=self.IT if it is None else it)
+
+    def test_alignment(self):
+        r = self.build()
+        a, b = r["places"]["mr:0105-a"][0], r["places"]["mr:0105-b"][0]
+        self.assertEqual(list(a), ["role", "la", "it", "source"])
+        self.assertEqual(a["it"], "A Fittopoli in Fittia, ora in Fittonia")
+        self.assertEqual(list(b), ["role", "la", "it", "source", "via"])
+        self.assertEqual(b["it"], a["it"])                           # bare Latin back-reference: root's it
+        self.assertNotIn("it", r["places"]["mr:0105-c"][0])        # no Italian text
+        self.assertEqual(r["no_it"], ["mr:0105-c"])
+        self.assertEqual(r["it_only"], [("mr:0105-e", "A Fittocastro")])
+
+    def test_root_without_it(self):
+        r = self.build(it={"mr:0105-b": "Nello stesso luogo, beato Fitto B."})
+        self.assertNotIn("it", r["places"]["mr:0105-a"][0])
+        self.assertNotIn("it", r["places"]["mr:0105-b"][0])
+        p.validate(r, self.TX, set(self.TX), set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+
+    def test_validate_it(self):
+        ids = set(self.TX)
+        r = self.build()
+        p.validate(r, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        bad = self.build(); bad["places"]["mr:0105-a"][0]["it"] = "A Fittonia"            # not verbatim
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        bad = self.build(); bad["places"]["mr:0105-b"][0]["it"] = "Nello stesso luogo"    # not the root's it
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=self.IT)
+        long_it = {"mr:0105-a": " ".join(["A Fittia"] * 11) + ", san Fitto."}
+        bad = self.build(it=long_it)
+        with self.assertRaises(AssertionError):
+            p.validate(bad, self.TX, ids, set(), self.TY, {}, long_ok={}, texts_it=long_it)
+
+    def test_curated_it(self):
+        tx = {"mr:0105-a": "Fictopoli, sancti Ficti, qui in Fictonia natus est."}
+        it = {"mr:0105-a": "A Fittopoli, san Fitto, nato in Fittonia."}
+        ok = {"mr:0105-a": [{"role": "birth", "la": "in Fictonia", "it": "in Fittonia"}]}
+        self.assertEqual(p.validate_curated(ok, tx, {"mr:0105-a"}, {}, it), [])
+        bad = {"mr:0105-a": [{"role": "birth", "la": "in Fictonia", "it": "in Fittlandia"}]}
+        self.assertTrue(p.validate_curated(bad, tx, {"mr:0105-a"}, {}, it))
+        r = p.build([("mr:0105-a", 1, 5)], tx, {"mr:0105-a": "dies_natalis"}, ok, not_a_place={}, texts_it=it)
+        self.assertEqual(r["places"]["mr:0105-a"][1],
+                         {"role": "birth", "la": "in Fictonia", "it": "in Fittonia", "source": "curated"})
+
+    def test_it_ending_in_a_function_word_is_rejected(self):
+        it = {"mr:0105-a": "A Fittopoli presso, san Fitto A.", "mr:0105-b": "Nello stesso luogo, beato Fitto B."}
+        r = self.build(it=it)
+        self.assertEqual(r["places"]["mr:0105-a"][0]["it"], "A Fittopoli presso")
+        with self.assertRaisesRegex(AssertionError, "ends in"):
+            p.validate(r, self.TX, set(self.TX), set(), self.TY, {}, long_ok={}, texts_it=it)
+
+    def test_not_a_place_is_not_listed_as_italian_only(self):
+        r = p.build(self.ORDER, self.TX, self.TY, {}, not_a_place={"mr:0105-e": "a time phrase"},
+                    texts_it=self.IT)
+        self.assertEqual(r["it_only"], [])
+
+    def test_report_sections(self):
+        report = p.render_report(self.build())
+        self.assertIn("## Latin places without an Italian phrase", report)
+        self.assertIn("`mr:0105-c`", report)
+        self.assertIn("## Italian places without a Latin place", report)
+        self.assertIn("- `mr:0105-e`: A Fittocastro", report)
+
+    def test_without_italian_texts_nothing_changes(self):
+        r = p.build(self.ORDER, self.TX, self.TY, {}, not_a_place={})
+        self.assertFalse(any("it" in it for its in r["places"].values() for it in its))
 
 
 class CuratedTest(unittest.TestCase):
