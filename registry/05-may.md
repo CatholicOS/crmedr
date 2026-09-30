@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0501-ioseph` |  |  | dies_natalis |  |
+| 1 | (1) | `mr:0501-ioseph` |  |  | celebratio |  |
 | 1 | 2 | `mr:0501-ieremias` |  | IL | commemoratio |  |
 | 1 | 3 | `mr:0501-andeolus` |  | FR | dies_natalis |  |
 | 1 | 4 | `mr:0501-torquatus` |  | ES | commemoratio |  |
@@ -153,7 +153,7 @@
 | 11 | 11 | `mr:0511-ignatius-de-laconi` |  | IT | dies_natalis |  |
 | 11 | 12 | `mr:0511-matthaeus-le-van-gam` |  | VN | dies_natalis |  |
 | 12 | (1) | `mr:0512-nereus-et-achilleus` |  | IT | dies_natalis |  |
-| 12 | (2) | `mr:0512-pancratius` |  | IT | dies_natalis |  |
+| 12 | (2) | `mr:0512-pancratius` |  | IT | depositio |  |
 | 12 | 3 | `mr:0512-cyrillus` |  | RO | dies_natalis |  |
 | 12 | 4 | `mr:0512-epiphanius` |  | CY | dies_natalis |  |
 | 12 | 5 | `mr:0512-philippus` |  | IT | dies_natalis |  |

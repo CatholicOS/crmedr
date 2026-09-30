@@ -69,11 +69,11 @@ form (*sancte*, *beate*). The first rule that matches wins:
    *die translationis* → `translatio`). A cross-reference with no resolvable
    date, or with no single target, is listed in the report and tags nothing.
 3. **Feast of a mystery or object → `celebratio`.** The entry is in `FEAST_IDS`,
-   an explicit list of 26 IDs. Its object is a mystery of the Lord, a Marian feast
+   an explicit list of 27 IDs. Its object is a mystery of the Lord, a Marian feast
    or title, the angels, the Chair of Peter, the Conversion of Paul, the Holy
    Cross or All Saints: 0101-maria-dei-genetrix, 0103-nomen-iesu,
    0106-epiphania-domini, 0125-conversio-sancti-pauli, 0202-praesentatio-domini,
-   0211-maria-de-lourdes, 0222-cathedra-sancti-petri, 0325-annuntiatio-domini,
+   0211-maria-de-lourdes, 0222-cathedra-sancti-petri, 0325-annuntiatio-domini, 0501-ioseph (Joseph the Worker, a title feast),
    0513-maria-de-fatima, 0531-visitatio-beatae-mariae-virginis,
    0716-maria-de-monte-carmelo, 0806-transfiguratio-domini,
    0815-assumptio-beatae-mariae-virginis, 0822-maria-regina,
@@ -87,7 +87,8 @@ form (*sancte*, *beate*). The first rule that matches wins:
    rule 4 gives them `dedicatio`, `translatio` and `commemoratio`.
 4. **Marker in the lead.** The lead is the first 25 folded words, cut at the
    first relative pronoun (*qui, que, quod, quorum, quarum, cuius, quibus, quos,
-   quas, quem, quam*), which starts the body. The first marker word in the lead
+   quas, quem, quam*) that follows an honorific, which starts the body. A relative
+   pronoun before any honorific belongs to the place phrase ("via quae … dicitur"). The first marker word in the lead
    decides the value, unless it directly follows an honorific (*sancti, sancte,
    sanctorum, sanctarum, beati, beate, beatorum, beatarum, domini*). In that
    position it is a name, e.g. "beati natalis pinot". The marker words are
@@ -107,7 +108,7 @@ in the text (48) all go into the report for hand review.
 
 ```
 martyrology-texts (LA 2004) ─┐
-i18n/la.json ────────────────┼─> scripts/extract_typology.py ─> data/typology.json
+                             ├─> scripts/extract_typology.py ─> data/typology.json
 data/martyrology_ids.json ───┘        (rules + TYPOLOGY_OVERRIDES)   docs/typology-report.md
                                                                         │
 workbook ─> scripts/extract_registry.py  <── reads data/typology.json ──┘

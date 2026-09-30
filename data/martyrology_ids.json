@@ -12892,7 +12892,7 @@
       "entry": 1,
       "asterisk": false,
       "country": null,
-      "typology": "dies_natalis",
+      "typology": "celebratio",
       "unnumbered": true
     },
     {
@@ -14238,7 +14238,7 @@
       "entry": 2,
       "asterisk": false,
       "country": "IT",
-      "typology": "dies_natalis",
+      "typology": "depositio",
       "unnumbered": true
     },
     {
@@ -21485,7 +21485,7 @@
       "entry": 3,
       "asterisk": false,
       "country": "TN",
-      "typology": "dies_natalis"
+      "typology": "depositio"
     },
     {
       "id": "mr:0715-catulinus",
@@ -27559,7 +27559,7 @@
       "entry": 9,
       "asterisk": true,
       "country": "DE",
-      "typology": "dies_natalis"
+      "typology": "depositio"
     },
     {
       "id": "mr:0827-guarinus",

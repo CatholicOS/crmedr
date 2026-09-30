@@ -199,7 +199,7 @@
 | 14 | 12 | `mr:0714-ioannes-wang-guixin` |  | CN | dies_natalis |  |
 | 15 | (1) | `mr:0715-bonaventura` |  | IT | depositio |  |
 | 15 | 2 | `mr:0715-eutropius-et-socii` |  | IT | dies_natalis |  |
-| 15 | 3 | `mr:0715-felix` |  | TN | dies_natalis |  |
+| 15 | 3 | `mr:0715-felix` |  | TN | depositio |  |
 | 15 | 4 | `mr:0715-catulinus` |  | TN | commemoratio |  |
 | 15 | 5 | `mr:0715-philippus` |  | EG | dies_natalis |  |
 | 15 | 6 | `mr:0715-abudemius` |  | TR | dies_natalis |  |

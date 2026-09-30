@@ -323,12 +323,12 @@ Tags are derived from the Latin editio altera 2004 by
 applies wins: hand overrides (`TYPOLOGY_OVERRIDES`); off-day memorials, resolved
 from the "cuius memoria … agitur" cross-references on the dies natalis; the
 explicit `FEAST_IDS`; the first marker word in the lead of the elogium (before
-the first relative pronoun, and not directly after an honorific, where it is a
-name); otherwise `dies_natalis`, the unmarked convention of the 2004 edition.
+the first relative pronoun that follows an honorific, and not directly after an
+honorific, where it is a name); otherwise `dies_natalis`, the unmarked convention of the 2004 edition.
 `docs/typology-report.md` lists every tag other than `dies_natalis` with the rule
 that produced it.
 
-Counts: dies_natalis 4,167, commemoratio 324, depositio 77, celebratio 60,
+Counts: dies_natalis 4,163, commemoratio 324, depositio 80, celebratio 61,
 dedicatio 4, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
 typology yet. Memorials whose text doesn't say what their date marks keep
 `dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas, mr:0726-ioachim-et-anna,

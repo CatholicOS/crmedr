@@ -47,6 +47,12 @@ class ClassifyTest(unittest.TestCase):
         self.assertEqual(cls("In monasterio sancti Ficti, depositio beati Fictitii, abbatis."),
                          ("depositio", "marker:depositio"))
 
+    def test_relative_pronoun_in_place_phrase_does_not_cut_lead(self):
+        self.assertEqual(cls("Fictopoli, via quae Ficta dicitur, depositio sancti Fictitii."),
+                         ("depositio", "marker:depositio"))
+        self.assertEqual(cls("In monasterio Fictensi, quod condidit, translatio beati Fictitii."),
+                         ("translatio", "marker:translatio"))
+
     def test_precedence(self):
         text = "Romae, depositio sancti Fictitii."
         self.assertEqual(cls(text, feast_ids={"mr:0101-fictitius"}), ("celebratio", "feast"))
@@ -70,34 +76,34 @@ class XrefTest(unittest.TestCase):
     def test_relative_days_cross_month_and_leap_day(self):
         self.assertEqual(t.resolve_xref(fold("natalis sancti Ficti, cuius memoria cras agitur."), 1, 31),
                          ((2, 1), None))
-        self.assertEqual(t.resolve_xref(fold("natalis sancti Ficti, cuius memoria pridie huius diei agitur."), 3, 1),
+        self.assertEqual(t.resolve_xref(fold("natalis sancti Ficti, eius memoria pridie huius diei colitur."), 3, 1),
                          ((2, 29), None))
-        self.assertEqual(t.resolve_xref(fold("passio sancti Ficti, eius memoria perendie celebratur."), 9, 14),
+        self.assertEqual(t.resolve_xref(fold("passio sancti Ficti, eius memoria perendie colitur."), 9, 14),
                          ((9, 16), None))
-        self.assertEqual(t.resolve_xref(fold("quorum memoria hodie celebratur."), 9, 20), ((9, 20), None))
+        self.assertEqual(t.resolve_xref(fold("quorum memoria hodie colitur."), 9, 20), ((9, 20), None))
 
     def test_ordinal_dates(self):
-        self.assertEqual(t.resolve_xref(fold("cuius memoria die vigesima quarta mensis iulii celebratur."), 12, 24),
-                         ((7, 24), None))
-        self.assertEqual(t.resolve_xref(fold("cuius memoria die undevicesima octobris agitur."), 12, 7),
-                         ((10, 19), None))
+        self.assertEqual(t.resolve_xref(fold("cuius memoria die vigesima tertia mensis iunii colitur."), 12, 24),
+                         ((6, 23), None))
+        self.assertEqual(t.resolve_xref(fold("cuius memoria die undevicesima novembris colitur."), 12, 7),
+                         ((11, 19), None))
 
     def test_event_named_by_the_cross_reference(self):
         self.assertEqual(
-            t.resolve_xref(fold("cuius memoria agitur die depositionis Annecii, vigesimo quarto ianuarii."), 12, 28),
-            ((1, 24), "depositio"))
+            t.resolve_xref(fold("cuius memoria colitur die depositionis Fictopoli, vigesimo quinto martii."), 12, 28),
+            ((3, 25), "depositio"))
         self.assertEqual(
-            t.resolve_xref(fold("cuius memoria die tertia septembris, scilicet die ordinationis eius, recolitur."), 3, 12),
-            ((9, 3), "ordinatio"))
+            t.resolve_xref(fold("cuius memoria die quinta maii, nempe die ordinationis, colitur."), 3, 12),
+            ((5, 5), "ordinatio"))
 
     def test_unresolvable(self):
-        self.assertIsNone(t.resolve_xref(fold("eius memoria fideliter servatur."), 7, 20))
+        self.assertIsNone(t.resolve_xref(fold("eius memoria pie servatur."), 7, 20))
         self.assertIsNone(t.resolve_xref(fold("cuius memoria die tricesima februarii agitur."), 1, 1))
         self.assertIsNone(t.resolve_xref(fold("Romae, sancti Ficti."), 1, 1))
 
     def test_find_targets(self):
         e = {
-            "mr:1228-fictitius": (12, 28, fold("natalis sancti Fictitii, cuius memoria die vigesima quarta ianuarii agitur.")),
+            "mr:1228-fictitius": (12, 28, fold("natalis sancti Fictitii, cuius memoria die vicesima quarta ianuarii colitur.")),
             "mr:0124-fictitius": (1, 24, fold("Romae, sancti Fictitii.")),
             "mr:0124-alius": (1, 24, fold("Memoria sancti Alii.")),
             # same slug beats the memoria-headed candidate
@@ -109,7 +115,7 @@ class XrefTest(unittest.TestCase):
             "mr:0502-a": (5, 2, fold("Memoria sancti A.")),
             "mr:0502-b": (5, 2, fold("Memoria sancti B.")),
             # no date
-            "mr:0720-elias": (7, 20, fold("Commemoratio sancti Eliae, cuius memoria fideliter servatur.")),
+            "mr:0720-elias": (7, 20, fold("Commemoratio sancti Fictii, cuius memoria pie servatur.")),
         }
         targets, unresolved = t.find_offday_targets(e)
         self.assertEqual(targets, {
@@ -120,7 +126,7 @@ class XrefTest(unittest.TestCase):
 
     def test_hodie_never_targets_the_source(self):
         e = {
-            "mr:0920-source": (9, 20, fold("Seuli, sanctorum martyrum, quorum memoria hodie celebratur.")),
+            "mr:0920-source": (9, 20, fold("Fictopoli, sanctorum martyrum, quorum memoria hodie colitur.")),
             "mr:0920-caput": (9, 20, fold("Memoria sanctorum Capitis et sociorum.")),
         }
         targets, unresolved = t.find_offday_targets(e)
@@ -161,6 +167,16 @@ class OutputTest(unittest.TestCase):
         out = json.loads(t.render_json({"mr:0102-b": "depositio", "mr:0101-a": "dies_natalis"}))
         self.assertEqual(out["values"], t.VALUES)
         self.assertEqual(list(out["typology"]), ["mr:0101-a", "mr:0102-b"])
+
+    def test_report_lists_default_entries_with_event_word_outside_lead(self):
+        current = {"mr:0103-tertius": (1, 3)}
+        texts = {"mr:0103-tertius": "Romae, sancti Tertii, cuius translatio mense fictio colitur."}
+        r = t.build(current, texts, feast_ids=set(), overrides={})
+        self.assertEqual(r["typology"], {"mr:0103-tertius": "dies_natalis"})
+        self.assertEqual(r["hidden"], {"mr:0103-tertius": ["translatio"]})
+        report = t.render_report(r)
+        self.assertIn("## Default entries with an event word outside the lead", report)
+        self.assertIn("| `mr:0103-tertius` | translatio |", report)
 
     def test_report_has_ids_but_no_text(self):
         r = t.build(self.CURRENT, self.TEXTS, feast_ids=set(), overrides={})

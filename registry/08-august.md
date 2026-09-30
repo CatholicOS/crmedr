@@ -396,7 +396,7 @@
 | 27 | 6 | `mr:0827-licerius` |  | FR | dies_natalis |  |
 | 27 | 7 | `mr:0827-caesarius` |  | FR | dies_natalis |  |
 | 27 | 8 | `mr:0827-ioannes` |  | IT | dies_natalis |  |
-| 27 | 9 | `mr:0827-gebhardus` | * | DE | dies_natalis |  |
+| 27 | 9 | `mr:0827-gebhardus` | * | DE | depositio |  |
 | 27 | 10 | `mr:0827-guarinus` | * | FR | dies_natalis |  |
 | 27 | 11 | `mr:0827-amadeus` | * | CH | dies_natalis |  |
 | 27 | 12 | `mr:0827-angelus-conti` | * | IT | dies_natalis |  |

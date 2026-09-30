@@ -65,6 +65,7 @@ FEAST_IDS = {
     "mr:0211-maria-de-lourdes",
     "mr:0222-cathedra-sancti-petri",
     "mr:0325-annuntiatio-domini",
+    "mr:0501-ioseph",  # Joseph the Worker: a title feast, not an event
     "mr:0513-maria-de-fatima",
     "mr:0531-visitatio-beatae-mariae-virginis",
     "mr:0716-maria-de-monte-carmelo",
@@ -92,22 +93,26 @@ TYPOLOGY_OVERRIDES = {
     "mr:0807-xystus-ii-et-socii": "celebratio",  # passio at 0806 ("memoria cras")
     "mr:1019-ioannes-de-brebeuf-et-socii": "celebratio",  # group memorial; deaths on other days
     "mr:1116-gertrudis-magna": "celebratio",  # natalis at 1117 ("memoria pridie")
-    # "Hac die depositio corporis ... celebratur/colitur" after the lead.
+    # The text states, after the lead, that the burial is kept on this day.
     "mr:0121-agnes": "depositio",
     "mr:1014-callistus-i": "depositio",
     "mr:1123-clemens-i": "depositio",
-    # Died "pridie Nonas aprilis"; honoured on the day he took up his see.
+    "mr:0512-pancratius": "depositio",
+    # Died in April; the text says he is honoured on the day he took up his see.
     "mr:1207-ambrosius": "ordinatio",
-    # "Sollemnitas Nativitatis": the date marks the birth, not the death.
+    # A solemnity of his nativity: the date marks the birth, not the death.
     "mr:0624-ioannes-baptista": "celebratio",
 }
 
 
 def lead(words):
-    out = []
+    # A relative pronoun before the first honorific belongs to the place
+    # phrase ("via quae ... dicitur", "quod condiderat"), not to the body.
+    out, seen_honorific = [], False
     for w in words[:LEAD_MAX_WORDS]:
-        if w in RELATIVES:
+        if w in RELATIVES and seen_honorific:
             break
+        seen_honorific = seen_honorific or w in HONORIFICS
         out.append(w)
     return out
 
@@ -122,6 +127,17 @@ def lead_marker(folded):
 
 def has_feast_head(folded):
     return any(w in FEAST_HEADS for w in lead(folded.split()))
+
+
+# Words naming an event other than death; used to surface default-tagged
+# entries that mention one outside the lead.
+EVENT_WORDS = {w for w, v in MARKERS.items() if v not in ("dies_natalis",)}
+
+
+def event_words_outside_lead(folded):
+    words = folded.split()
+    rest = words[len(lead(words)):]
+    return sorted({_BASE[w] for w in rest if w in EVENT_WORDS})
 
 
 def markers_in(folded):
@@ -233,8 +249,10 @@ def build(current, texts, *, feast_ids, overrides):
         typology[mrid], rules[mrid] = classify(
             mrid, folded[mrid], offday=offday, feast_ids=feast_ids, overrides=overrides)
     multi = {mrid: markers_in(f) for mrid, f in sorted(folded.items()) if len(markers_in(f)) > 1}
+    hidden = {mrid: event_words_outside_lead(folded[mrid]) for mrid in sorted(current)
+              if rules[mrid] == "default" and event_words_outside_lead(folded[mrid])}
     return {"typology": typology, "rules": rules, "offday": offday,
-            "unresolved": unresolved, "multi": multi}
+            "unresolved": unresolved, "multi": multi, "hidden": hidden}
 
 
 def validate(typology, current_ids, deprecated_ids, *, feast_ids, overrides):
@@ -290,6 +308,12 @@ def render_report(result):
         "## Unresolved cross-references",
         "",
         *([f"- `{k}`: {why}" for k, why in result["unresolved"]] or ["None."]),
+        "",
+        "## Default entries with an event word outside the lead",
+        "",
+        "| ID | Event words |",
+        "| --- | --- |",
+        *([f"| `{k}` | {', '.join(ws)} |" for k, ws in result["hidden"].items()] or ["None."]),
         "",
         "## Entries with several marker words",
         "",
