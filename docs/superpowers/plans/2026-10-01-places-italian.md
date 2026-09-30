@@ -709,8 +709,8 @@ Expected: `4261 entries with places; 3 unresolved back-references; 548 curation 
 ```bash
 python3 - <<'EOF'
 import json, subprocess
-old = json.loads(subprocess.run(["git", "show", "HEAD:data/places.json"], capture_output=True, text=True).stdout)["places"]
-new = json.load(open("data/places.json"))["places"]
+old = json.loads(subprocess.run(["git", "show", "HEAD:data/places.json"], capture_output=True, text=True, encoding="utf-8").stdout)["places"]
+new = json.load(open("data/places.json", encoding="utf-8"))["places"]
 strip = lambda d: {k: [{f: v for f, v in it.items() if f != "it"} for it in its] for k, its in d.items()}
 assert strip(new) == old, "an la or item changed"
 print("only it added")
@@ -724,7 +724,7 @@ Expected: `only it added`.
 ```bash
 python3 - <<'EOF'
 import json, re
-pl = json.load(open("data/places.json"))["places"]
+pl = json.load(open("data/places.json", encoding="utf-8"))["places"]
 its = [(k, it["it"]) for k, v in pl.items() for it in v if "it" in it]
 print("with comma:"); [print(" ", k, "|", s) for k, s in its if "," in s]
 print("over 16 words:"); [print(" ", k, "|", s) for k, s in its if len(s.split()) > 16]
@@ -768,9 +768,9 @@ typ, pl = r.load_typology(root, ids), r.load_places(root, ids)
 r.check_place_roles(pl, typ)
 cur = r.add_places(r.add_typology(cur, typ), pl)
 r.write_json(cur, dep, root); r.write_markdown(cur, root)
-new = json.load(open("data/martyrology_ids.json"))
+new = json.load(open("data/martyrology_ids.json", encoding="utf-8"))
 assert {e["id"]: e["places"] for e in new["entries"] if "places" in e} == pl
-old = json.loads(subprocess.run(["git", "show", "HEAD:data/martyrology_ids.json"], capture_output=True, text=True).stdout)
+old = json.loads(subprocess.run(["git", "show", "HEAD:data/martyrology_ids.json"], capture_output=True, text=True, encoding="utf-8").stdout)
 strip = lambda d: [{k: ([{f: v for f, v in it.items() if f != "it"} for it in val] if k == "places" else val)
                     for k, val in e.items()} for e in d["entries"]]
 assert strip(new) == strip(old)
@@ -848,7 +848,7 @@ for ed in ("martyrologium_romanum_2004", "martyrologium_romanum_2004_it_IT"):
     for v in t.load_texts(Path("../martyrology-texts"), ed).values():
         w = fold(v).split(); grams.update(" ".join(w[i:i+5]) for i in range(len(w) - 4))
 for f in ["tests/test_places.py", "tests/test_registry.py", "tests/test_typology.py"]:
-    w = fold(open(f).read()).split()
+    w = fold(open(f, encoding="utf-8").read()).split()
     print(f, sorted({" ".join(w[i:i+5]) for i in range(len(w) - 4)} & grams))
 EOF
 ```

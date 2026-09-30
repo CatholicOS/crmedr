@@ -251,6 +251,8 @@ class ItalianPhraseTest(unittest.TestCase):
 
     def test_time_opening_is_not_a_place(self):
         self.assertIsNone(p.italian_phrase("Nello stesso giorno, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Sempre nello stesso giorno, san Fitto."))
+        self.assertIsNone(p.italian_phrase("Nello stesso giorno, trent’anni dopo, san Fitto."))
 
     def test_capitalized_stop_word_at_start_means_no_phrase(self):
         self.assertIsNone(p.italian_phrase("Memoria di san Fitto, vescovo."))

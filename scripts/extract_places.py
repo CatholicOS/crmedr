@@ -169,8 +169,6 @@ def italian_phrase(text, stop_words=STOP_WORDS_IT):
             break
     else:
         return None
-    if base_copy(phrase).lower() in TIME_OPENINGS_IT:
-        return None
     segments = phrase.split(",")
     kept = segments[0]
     for seg in segments[1:]:
@@ -183,7 +181,7 @@ def italian_phrase(text, stop_words=STOP_WORDS_IT):
     adverb = re.match(r"(?:Sempre|Ancora)\s+", base_copy(kept))
     if adverb:
         kept = kept[adverb.end():]
-    if base_copy(kept).lower() in BACK_REFS_IT:
+    if base_copy(kept).lower() in BACK_REFS_IT | TIME_OPENINGS_IT:
         return None
     return kept or None
 
