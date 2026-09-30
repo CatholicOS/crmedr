@@ -413,7 +413,7 @@
 | 28 | 17 | `mr:0928-amalia-abad-casasempere` | * | ES | dies_natalis |  |
 | 28 | 18 | `mr:0928-iosephus-tarrats-comaposada` | * | ES | dies_natalis |  |
 | 28 | 19 | `mr:0928-nicetas-budka` | * | KZ | dies_natalis |  |
-| 29 | (1) | `mr:0929-michael-et-socii` |  | IT | celebratio |  |
+| 29 | (1) | `mr:0929-michael-et-socii` |  | IT | dedicatio |  |
 | 29 | 2 | `mr:0929-euthychius` |  | TR | dies_natalis |  |
 | 29 | 3 | `mr:0929-ripsime-et-socii` |  | AM | dies_natalis |  |
 | 29 | 4 | `mr:0929-fraternus` |  | FR | dies_natalis |  |

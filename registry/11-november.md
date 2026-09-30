@@ -307,7 +307,7 @@
 | 23 | 14 | `mr:1123-michael-augustinus-pro` | * | MX | dies_natalis |  |
 | 23 | 15 | `mr:1123-maria-caecilia-cendoya-y-araquistain` | * | ES | dies_natalis |  |
 | 24 | (1) | `mr:1124-andreas-dung-lac-et-socii` |  | VN | celebratio |  |
-| 24 | 2 | `mr:1124-chrysogonus` |  | IT | commemoratio |  |
+| 24 | 2 | `mr:1124-chrysogonus` |  | IT | dedicatio |  |
 | 24 | 3 | `mr:1124-firmina` |  | IT | dies_natalis |  |
 | 24 | 4 | `mr:1124-protasius` |  | IT | dies_natalis |  |
 | 24 | 5 | `mr:1124-romanus` |  | FR | dies_natalis |  |

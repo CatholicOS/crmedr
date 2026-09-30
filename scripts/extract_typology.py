@@ -54,8 +54,10 @@ _BASE.update({w: w for w in FEAST_HEADS})
 
 # Celebrations whose object is a mystery of the Lord, a Marian feast or
 # title, the angels, the Chair of Peter, the Conversion of Paul, the Holy
-# Cross or All Saints. Dedications, the translation of the Magi, All Souls and
-# the ancestors of Christ are deliberately absent: their lead marker decides.
+# Cross or All Saints. Dedications (incl. the Archangels, kept "in die
+# dedicationis"), the translation of the Magi, All Souls and the ancestors of
+# Christ are deliberately absent: the dedication-day rule or their lead marker
+# decides.
 FEAST_IDS = {
     "mr:0101-maria-dei-genetrix",
     "mr:0103-nomen-iesu",
@@ -76,7 +78,6 @@ FEAST_IDS = {
     "mr:0912-nomen-mariae",
     "mr:0914-exaltatio-sanctae-crucis",
     "mr:0915-maria-perdolens",
-    "mr:0929-michael-et-socii",
     "mr:1002-angeli-custodes",
     "mr:1007-maria-de-rosario",
     "mr:1101-omnes-sancti",
@@ -144,9 +145,17 @@ def markers_in(folded):
     return sorted({_BASE[w] for w in folded.split() if w in _BASE})
 
 
+# The text says this date is the anniversary of a church's dedication
+# ("in die dedicationis", "die anniversaria dedicationis"), even when the
+# elogium is a saint's feast. "Postridie dedicationis" (the day after) is not.
+DEDICATION_DAY = re.compile(r"\bdie (?:anniversaria )?dedicationis\b")
+
+
 def classify(mrid, folded, *, offday, feast_ids, overrides):
     if mrid in overrides:
         return overrides[mrid], "override"
+    if DEDICATION_DAY.search(" ".join(folded.split())):
+        return "dedicatio", "dedication-day"
     if mrid in offday:
         value, source = offday[mrid]
         return value, f"off-day:{source}"

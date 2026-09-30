@@ -53,6 +53,22 @@ class ClassifyTest(unittest.TestCase):
         self.assertEqual(cls("In monasterio Fictensi, quod condidit, translatio beati Fictitii."),
                          ("translatio", "marker:translatio"))
 
+    def test_dedication_day_is_dedicatio(self):
+        self.assertEqual(cls("Festum sancti Fictitii in die dedicationis basilicae Fictensis."),
+                         ("dedicatio", "dedication-day"))
+        self.assertEqual(cls("Fictopoli, commemoratio sancti Fictitii, qui die anniversaria dedicationis ecclesiae colitur."),
+                         ("dedicatio", "dedication-day"))
+        # It outranks FEAST_IDS, but not a hand override.
+        self.assertEqual(cls("Festum sancti Fictitii in die dedicationis basilicae.", feast_ids={"mr:0101-fictitius"}),
+                         ("dedicatio", "dedication-day"))
+        self.assertEqual(cls("Festum sancti Fictitii in die dedicationis basilicae.",
+                             overrides={"mr:0101-fictitius": "celebratio"}),
+                         ("celebratio", "override"))
+
+    def test_day_after_a_dedication_is_not_dedicatio(self):
+        self.assertNotEqual(cls("Memoria sancti Fictitii, postridie dedicationis basilicae Fictensis.")[1],
+                            "dedication-day")
+
     def test_precedence(self):
         text = "Romae, depositio sancti Fictitii."
         self.assertEqual(cls(text, feast_ids={"mr:0101-fictitius"}), ("celebratio", "feast"))

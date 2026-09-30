@@ -312,7 +312,9 @@ Each current entry carries `typology`: **what the date of the elogium marks**.
 Liturgical rank (*sollemnitas / festum / memoria*) is a different axis and is not
 recorded here. Values: `dies_natalis` (the actual day of death or martyrdom),
 `depositio` (burial), `translatio` (moving of relics), `inventio` (finding of
-relics), `dedicatio` (dedication of a church or altar), `ordinatio` (episcopal
+relics), `dedicatio` (dedication of a church or altar, including a saint's feast kept on
+the anniversary of the dedication of a church in their honour, "in die
+dedicationis"), `ordinatio` (episcopal
 ordination), `celebratio` (the date is fixed by a liturgical celebration, not by
 an event: feasts of the Lord and of Mary, the Chair of Peter, the Holy Cross,
 the Angels, All Saints, and saints' memorials placed away from their death day)
@@ -320,7 +322,8 @@ and `commemoratio` (a commemoration with no event behind the date).
 
 Tags are derived from the Latin editio altera 2004 by
 `scripts/extract_typology.py` into `data/typology.json`. The first rule that
-applies wins: hand overrides (`TYPOLOGY_OVERRIDES`); off-day memorials, resolved
+applies wins: hand overrides (`TYPOLOGY_OVERRIDES`); a dedication day stated in
+the text ("in die dedicationis", "die anniversaria dedicationis"); off-day memorials, resolved
 from the "cuius memoria … agitur" cross-references on the dies natalis; the
 explicit `FEAST_IDS`; the first marker word in the lead of the elogium (before
 the first relative pronoun that follows an honorific, and not directly after an
@@ -328,8 +331,8 @@ honorific, where it is a name); otherwise `dies_natalis`, the unmarked conventio
 `docs/typology-report.md` lists every tag other than `dies_natalis` with the rule
 that produced it.
 
-Counts: dies_natalis 4,163, commemoratio 324, depositio 80, celebratio 61,
-dedicatio 4, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
+Counts: dies_natalis 4,163, commemoratio 323, depositio 80, celebratio 60,
+dedicatio 6, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
 typology yet. Memorials whose text doesn't say what their date marks keep
 `dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas, mr:0726-ioachim-et-anna,
 mr:0827-monica), pending committee review.

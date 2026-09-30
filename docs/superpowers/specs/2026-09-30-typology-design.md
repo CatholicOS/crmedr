@@ -37,7 +37,7 @@ One value per current entry, from this closed set:
 | `depositio` | Burial |
 | `translatio` | Moving of relics |
 | `inventio` | Finding of relics (no 2004 instances; kept for other editions) |
-| `dedicatio` | Dedication of a church or altar |
+| `dedicatio` | Dedication of a church or altar, including a saint's feast kept on the anniversary of the dedication of a church in their honour ("in die dedicationis") |
 | `ordinatio` | Episcopal ordination (no 2004 instances; kept for other editions) |
 | `celebratio` | The date is fixed by a liturgical celebration, not by an event: feasts of the Lord and of Mary, Cathedra Petri, Exaltatio Crucis, the Angels, All Saints, and saints' memorials placed away from their death day |
 | `commemoratio` | Commemoration with no event behind the date: Old Testament figures, *commemoratio sancti N.*, All Souls |
@@ -57,7 +57,11 @@ form (*sancte*, *beate*). The first rule that matches wins:
 
 1. **Override.** `TYPOLOGY_OVERRIDES[id]`, one line per ID with a comment giving
    the reason.
-2. **Off-day memorial.** Another 2004 elogium says *cuius / eius / quorum /
+2. **Dedication day → `dedicatio`.** The text says the date is the anniversary of
+   a church's dedication: *in die dedicationis* or *die anniversaria
+   dedicationis* (e.g. 0929-michael-et-socii, 1124-chrysogonus). *Postridie
+   dedicationis*, the day after, does not count (0914, 1121).
+3. **Off-day memorial.** Another 2004 elogium says *cuius / eius / quorum /
    earum memoria* followed by a date expression: *cras / crastina die /
    postridie* (+1), *perendie / biduo post* (+2), *pridie* (−1), *hodie* (0), or an
    ordinal day with a month genitive (*die vigesima quarta ianuarii*,
@@ -68,8 +72,8 @@ form (*sancte*, *beate*). The first rule that matches wins:
    (*die depositionis* → `depositio`, *die ordinationis* → `ordinatio`,
    *die translationis* → `translatio`). A cross-reference with no resolvable
    date, or with no single target, is listed in the report and tags nothing.
-3. **Feast of a mystery or object → `celebratio`.** The entry is in `FEAST_IDS`,
-   an explicit list of 27 IDs. Its object is a mystery of the Lord, a Marian feast
+4. **Feast of a mystery or object → `celebratio`.** The entry is in `FEAST_IDS`,
+   an explicit list of 26 IDs. Its object is a mystery of the Lord, a Marian feast
    or title, the angels, the Chair of Peter, the Conversion of Paul, the Holy
    Cross or All Saints: 0101-maria-dei-genetrix, 0103-nomen-iesu,
    0106-epiphania-domini, 0125-conversio-sancti-pauli, 0202-praesentatio-domini,
@@ -78,14 +82,14 @@ form (*sancte*, *beate*). The first rule that matches wins:
    0716-maria-de-monte-carmelo, 0806-transfiguratio-domini,
    0815-assumptio-beatae-mariae-virginis, 0822-maria-regina,
    0908-nativitas-beatae-mariae-virginis, 0912-nomen-mariae,
-   0914-exaltatio-sanctae-crucis, 0915-maria-perdolens, 0929-michael-et-socii,
+   0914-exaltatio-sanctae-crucis, 0915-maria-perdolens,
    1002-angeli-custodes, 1007-maria-de-rosario, 1101-omnes-sancti,
    1121-praesentatio-beatae-mariae-virginis,
    1208-conceptio-immaculata-beatae-mariae-virginis, 1212-maria-de-guadalupe,
    1225-nativitas-domini. The dedications, translatio-trium-magorum,
    omnium-fidelium-defunctorum and avi-iesu-christi are deliberately left out:
-   rule 4 gives them `dedicatio`, `translatio` and `commemoratio`.
-4. **Marker in the lead.** The lead is the first 25 folded words, cut at the
+   rule 5 gives them `dedicatio`, `translatio` and `commemoratio`.
+5. **Marker in the lead.** The lead is the first 25 folded words, cut at the
    first relative pronoun (*qui, que, quod, quorum, quarum, cuius, quibus, quos,
    quas, quem, quam*) that follows an honorific, which starts the body. A relative
    pronoun before any honorific belongs to the place phrase ("via quae … dicitur"). The first marker word in the lead
@@ -96,10 +100,10 @@ form (*sancte*, *beate*). The first rule that matches wins:
    *ordinatio(nis)* and *commemoratio*, each mapping to its own value, and
    *natalis*, *passio* and *transitus*, which map to `dies_natalis`. The
    genitive forms catch "festum dedicationis …" and "in die depositionis eius".
-5. **Default → `dies_natalis`.** This is the unmarked 2004 convention
+6. **Default → `dies_natalis`.** This is the unmarked 2004 convention
    ("Place, sancti N., title"), and about 84% of entries fall here.
 
-A simulation of rule 4 alone on the 2004 Latin gives: default 4,023,
+A simulation of the lead-marker rule alone on the 2004 Latin gives: default 4,023,
 commemoratio 324, passio 88, transitus 86, depositio 73, natalis 34,
 dedicatio 6, translatio 5. Entries that carry more than one marker word anywhere
 in the text (48) all go into the report for hand review.
