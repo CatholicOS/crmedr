@@ -126,3 +126,85 @@ def classify(mrid, folded, *, offday, feast_ids, overrides):
     if word:
         return MARKERS[word], f"marker:{word}"
     return "dies_natalis", "default"
+
+
+# Off-day memorials: an elogium on the dies natalis points to the day its
+# memorial is celebrated ("cuius memoria cras agitur", "... die vigesima
+# quarta ianuarii ..."). That target elogium marks a liturgical celebration,
+# unless the cross-reference names the event of that day.
+XREF = re.compile(r"\b(?:cuius|eius|quorum|earum)\s+(?:memoria|festum|sollemnitas)\b")
+XREF_WINDOW = 12
+RELATIVE_DAYS = {
+    "cras": 1, "crastina": 1, "postridie": 1,
+    "perendie": 2, "biduo": 2,
+    "pridie": -1, "hodie": 0,
+}
+MONTHS = {
+    "ianuarii": 1, "februarii": 2, "martii": 3, "aprilis": 4, "maii": 5, "iunii": 6,
+    "iulii": 7, "augusti": 8, "septembris": 9, "octobris": 10, "novembris": 11, "decembris": 12,
+}
+_ORDINAL_STEMS = [
+    ("prim", 1), ("secund", 2), ("terti", 3), ("quart", 4), ("quint", 5),
+    ("sext", 6), ("septim", 7), ("octav", 8), ("non", 9), ("decim", 10),
+    ("undecim", 11), ("duodecim", 12), ("duodevicesim", 18), ("duodevigesim", 18),
+    ("undevicesim", 19), ("undevigesim", 19), ("vicesim", 20), ("vigesim", 20),
+    ("tricesim", 30), ("trigesim", 30),
+]
+# Compound ordinals are summed: "vigesima quarta" = 24, "tertia decima" = 13.
+ORDINALS = {stem + end: n for stem, n in _ORDINAL_STEMS for end in ("a", "ae", "o", "us", "um", "i")}
+EVENT_OF_DAY = {"depositionis": "depositio", "ordinationis": "ordinatio", "translationis": "translatio"}
+LEAP_YEAR = 2000  # date arithmetic that admits Feb 29
+
+
+def resolve_xref(folded, month, day):
+    m = XREF.search(folded)
+    if not m:
+        return None
+    words = folded[m.end():].split()[:XREF_WINDOW]
+    event = next((EVENT_OF_DAY[w] for w in words if w in EVENT_OF_DAY), None)
+    for i, w in enumerate(words):
+        if w in RELATIVE_DAYS:
+            target = date(LEAP_YEAR, month, day) + timedelta(days=RELATIVE_DAYS[w])
+            return (target.month, target.day), event
+        if w in MONTHS:
+            j, n = i - 1, 0
+            if j >= 0 and words[j] == "mensis":
+                j -= 1
+            while j >= 0 and words[j] in ORDINALS:
+                n += ORDINALS[words[j]]
+                j -= 1
+            try:
+                date(LEAP_YEAR, MONTHS[w], n)
+            except ValueError:
+                return None
+            return (MONTHS[w], n), event
+    return None
+
+
+def _slug(mrid):
+    return mrid.split("-", 1)[1]
+
+
+def find_offday_targets(entries):
+    by_date = defaultdict(list)
+    for mrid, (month, day, _) in entries.items():
+        by_date[(month, day)].append(mrid)
+    targets, unresolved = {}, []
+    for mrid, (month, day, folded) in sorted(entries.items()):
+        if not XREF.search(folded):
+            continue
+        hit = resolve_xref(folded, month, day)
+        if hit is None:
+            unresolved.append((mrid, "no resolvable date"))
+            continue
+        when, event = hit
+        candidates = [c for c in by_date.get(when, []) if c != mrid]
+        same = [c for c in candidates if _slug(c) == _slug(mrid)]
+        headed = [c for c in candidates if has_feast_head(entries[c][2])]
+        pick = same if len(same) == 1 else headed if len(headed) == 1 else []
+        if not pick:
+            unresolved.append((mrid, f"{when[0]:02d}/{when[1]:02d}: {len(same)} same-slug, "
+                                     f"{len(headed)} memoria/festum/sollemnitas candidates"))
+            continue
+        targets[pick[0]] = (event or "celebratio", mrid)
+    return targets, unresolved
