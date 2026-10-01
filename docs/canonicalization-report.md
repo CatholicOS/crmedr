@@ -17,11 +17,15 @@ Rules applied, in order:
 3. Papal ordinals rendered as roman numerals (pius-x, clemens-i); non-papal regnal
    ordinals remain Latin adjectives (ludovicus-nonus).
 4. Cognomento epithets appended (petrus-chrysologus, albertus-magnus).
-5. Two named subjects: both joined (cosmas-et-damianus). Three or more, or explicit
-   'et sociorum': first-named + et-socii (paulus-miki-et-socii).
+5. Two named subjects: both joined (cosmas-et-damianus), the second by its full name
+   (ioannes-fisher-et-thomas-more). Three or more, or explicit 'et sociorum' or other
+   companions (*et decem martyrum*): first-named + et-socii (paulus-miki-et-socii).
 6. Marian titles: maria + invocation (maria-de-lourdes, maria-de-guadalupe).
 7. Christological/liturgical feasts: manual override slugs (see below).
-8. Anonymous groups: class + number + place, mechanically (quadraginta-milites-sebastem).
+8. Anonymous groups: [number-]class-<place in the genitive>, "the martyrs *of* X"
+   (quadraginta-milites-sebastes, martyres-alexandriae); a group known by a name or a
+   demonym takes that name in the nominative plural (martyres-scillitani,
+   monachi-abrahamitae).
 9. Same-slug collisions within a day: the day's lead keeps the bare slug; numbered
    entries take the place of death; ordinals as last resort.
 
@@ -71,9 +75,9 @@ mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
 mr:1119-eudo (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
 
 Plain in the Latin print, asterisked in the CEI edition (6):
-mr:0323-rebecca-de-himlaya (11.), mr:0812-iacobus (11., Nam Định martyrs),
-mr:0821-iosephus (11., Hưng Yên), mr:1201-domnolus (5.), mr:1203-lucius (5., Chur),
-mr:1212-simon-phan (11., Phan Đắc Hòa).
+mr:0323-rebecca-de-himlaya (11.), mr:0812-iacobus-do-mai-nam-et-socii (11., Nam Định martyrs),
+mr:0821-iosephus-dang-dinh-vien (11., Hưng Yên), mr:1201-domnolus (5.), mr:1203-lucius (5., Chur),
+mr:1212-simon-phan-dac-hoa (11., Phan Đắc Hòa).
 
 **Slug correction**: the workbook ID mr:0206-paulus-mikus-et-socii is corrected on
 extraction to mr:0206-paulus-miki-et-socii — surnames are not latinized unless an
@@ -123,51 +127,51 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
 
 - mr:0114-monachi-raithi
   - *Incipit:* Commemorátio sanctórum monachórum, qui Raíthi et…
-- mr:0205-plurimi-martyres-ponto
+- mr:0205-plurimi-martyres-ponti
   - *Incipit:* In Ponto, commemorátio plurimórum sanctórum mártyrum…
 - mr:0208-martyres-monachi-dii-constantinopolitani
   - *Incipit:* Commemorátio sanctórum mártyrum monachórum monastérii Dii…
 - mr:0209-plurimi-martyres-alexandriae
   - *Incipit:* Item Alexandríæ, pássio plurimórum sanctórum mártyrum,…
-- mr:0211-plurimi-martyres-numidia
+- mr:0211-plurimi-martyres-numidiae
   - *Incipit:* Commemorátio plurimórum sanctórum mártyrum, qui in…
-- mr:0212-martyres-carthagine
+- mr:0212-martyres-abitinenses
   - *Incipit:* Carthágine, commemorátio sanctórum mártyrum Abitinénsium, qui,…
-- mr:0219-monachi-martyres-palaestina
+- mr:0219-monachi-martyres-palaestinae
   - *Incipit:* Commemorátio sanctórum monachórum et aliórum mártyrum,…
 - mr:0220-quinque-martyres-tyri
   - *Incipit:* Commemorátio beatórum quinque mártyrum, qui, sub…
 - mr:0228-presbyteri-diaconi-plurimi-alexandriae
   - *Incipit:* Commemorátio sanctórum presbyterórum, diaconórum et aliórum…
-- mr:0306-quadraginta-duo-martyres-syria
+- mr:0306-quadraginta-duo-martyres-syriae
   - *Incipit:* In Sýria, pássio sanctórum quadragínta duórum…
-- mr:0309-quadraginta-milites-sebastem
+- mr:0309-quadraginta-milites-sebastes
   - *Incipit:* Apud Sebástem in Arménia, pássio sanctórum…
-- mr:0330-plurimi-martyres-constantinopoli
+- mr:0330-plurimi-martyres-constantinopolis
   - *Incipit:* Commemorátio sanctórum plurimórum mártyrum, qui Constantinópoli,…
 - mr:0405-centum-undecim-viri-novem-mulieres-martyres
   - *Incipit:* Item, commemorátio centum úndecim virórum ac…
-- mr:0405-martyres-regiis
+- mr:0405-martyres-regiarum
   - *Incipit:* Régiis in Mauretánia, pássio sanctórum mártyrum,…
-- mr:0407-ducenti-milites-martyres-sinope
+- mr:0407-ducenti-milites-martyres-sinopes
   - *Incipit:* Sinópe in Ponto, sanctórum ducentórum mílitum…
-- mr:0509-martyres-trecenti-decem-perside
+- mr:0509-trecenti-decem-martyres-persidis
   - *Incipit:* In Pérside, sanctórum mártyrum trecentórum et…
-- mr:0516-quadraginta-quattuor-monachi-palaestina
+- mr:0516-quadraginta-quattuor-monachi-palaestinae
   - *Incipit:* In Palæstína, pássio sanctórum quadragínta quáttuor…
 - mr:0521-martyres-alexandriae
   - *Incipit:* Commemorátio sanctórum mártyrum utriúsque sexus, quos…
-- mr:0523-martyres-cappadocia
+- mr:0523-martyres-cappadociae
   - *Incipit:* Commemorátio sanctórum mártyrum, qui in Cappadócia…
-- mr:0523-martyres-mesopotamia
+- mr:0523-martyres-mesopotamiae
   - *Incipit:* Item commemorátio sanctórum mártyrum, qui eódem…
-- mr:0524-triginta-octo-martyres-philippopoli
+- mr:0524-triginta-octo-martyres-philippopolis
   - *Incipit:* Commemorátio sanctórum trigínta et octo mártyrum,…
-- mr:0708-monachi-constantinopoli
+- mr:0708-monachi-abrahamitae
   - *Incipit:* Constantinópoli, pássio sanctórum monachórum Abrahamitárum, qui,…
 - mr:0801-septem-fratres-martyres-antiochiae
   - *Incipit:* Commemorátio passiónis sanctórum septem fratrum mártyrum,…
-- mr:0809-martyres-constantinopoli
+- mr:0809-martyres-constantinopolis
   - *Incipit:* Constantinópoli, commemorátio sanctórum mártyrum, qui, cum…
 - mr:0810-martyres-alexandriae
   - *Incipit:* Commemorátio sanctórum mártyrum, qui Alexandríæ in…
@@ -175,25 +179,25 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
   - *Incipit:* Hydrúnti in Apúlia, beatórum fere octingentórum…
 - mr:0830-sexaginta-martyres-coloniae-sufetanae
   - *Incipit:* Commemorátio sanctórum sexagínta mártyrum, qui, Colóniæ…
-- mr:1005-martyres-treviris
+- mr:1005-martyres-trevirorum
   - *Incipit:* Tréviris in Gállia Bélgica, commemorátio sanctórum…
-- mr:1010-septem-martyres-presbyteri-septam
+- mr:1010-daniel-et-socii
   - *Incipit:* Apud Septam in Mauritánia Tingitána, pássio…
-- mr:1012-martyres-confessores-quattuor-sexaginta-africa
+- mr:1012-martyres-et-confessores-africae
   - *Incipit:* Commemorátio sanctórum mártyrum et fídei confessórum…
-- mr:1021-virgines-coloniam-agrippinam
+- mr:1021-virgines-coloniae-agrippinae
   - *Incipit:* Apud Colóniam Agrippínam in Germánia, commemorátio…
-- mr:1113-martyres-africa
+- mr:1113-arcadius-et-socii
   - *Incipit:* In Africa, commemorátio sanctórum mártyrum hispanórum…
-- mr:1115-viginti-martyres-hippone-regio
+- mr:1115-viginti-martyres-hipponis-regii
   - *Incipit:* Hippóne Régio in Numídia, sanctórum vigínti…
-- mr:1119-mulieres-virgines-viduae-quadraginta-martyres-heracleae
+- mr:1119-quadraginta-martyres-heracleae
   - *Incipit:* Heracléæ in Thrácia, sanctárum mulíerum, vírginum…
-- mr:1206-martyres-africa
+- mr:1206-martyres-africae
   - *Incipit:* In Africa, commemorátio sanctórum mártyrum, témpore…
 - mr:1216-plurimae-virgines-africa
   - *Incipit:* Commemorátio plurimárum sanctárum vírginum, quæ, in…
-- mr:1217-quinquaginta-milites-eleutheropoli
+- mr:1217-quinquaginta-milites-eleutheropolis
   - *Incipit:* Eleutherópoli in Palæstína, pássio sanctórum quinquagínta…
 - mr:1222-triginta-martyres-romae
   - *Incipit:* Romæ via Labicána in cœmetério ad…
@@ -308,7 +312,7 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0130-benedictus-de-maretiolo | mr:0130-columba-marmion | Bl. Columba Marmion |
 | mr:0205-caesarius | mr:0205-sabas-iunior | St Sabas the Younger |
 | mr:0212-cornelius | mr:0212-benedictus-anianensis | St Benedict of Aniane |
-| mr:0320-sabas | mr:0320-viginti-monachi-palaestina | the twenty monks of Mar Saba (rule 8) |
+| mr:0320-sabas | mr:0320-viginti-monachi-palaestinae | the twenty monks of Mar Saba (rule 8) |
 | mr:0330-iulianus | mr:0330-iulius-alvarez | St Julius Álvarez |
 | mr:0406-maria | mr:0406-catharina-de-pallantia | Bl. Catherine of Pallanza |
 | mr:0412-ioseph | mr:0412-david-uribe | St David Uribe |
@@ -386,7 +390,7 @@ the slugs.
 | mr:0705-athanasius-hierosolymitani | mr:0705-athanasius-hierosolymitanus |
 | mr:0712-ioannes-gualberti | mr:0712-ioannes-gualbertus |
 | mr:0713-myropis | mr:0713-myrope |
-| mr:0713-ludovicus-armandi-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam |
+| mr:0713-ludovicus-armandi-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
 | mr:0828-carolus-arnaldi-hanus | mr:0828-carolus-arnaldus-hanus |
 | mr:0831-raymundus-nonnati | mr:0831-raymundus-nonnatus |
 | mr:0904-caletricis | mr:0904-caletricus |
@@ -402,6 +406,268 @@ the slugs.
 | mr:0417-robertus-molismensi | mr:0417-robertus-molismensis |
 | mr:0918-ferreolus-galliae-viennensi | mr:0918-ferreolus-viennensis |
 | mr:0401-hugo-cisterciensi-bonae | mr:0401-hugo-bonaevallensis |
+
+**Multi-subject, truncated and group slugs (applied, October 2026, #40)**: 236 slugs
+renamed (not deprecated), each in `ID_CORRECTIONS`; the Latin, Italian and English
+subjects follow the slugs.
+- 110 eulogies of a pair (*sanctórum [mártyrum] X … et Y*) and 82 of three or more had
+  kept only the first-named subject; they take `-et-<second>` or `-et-socii` (rule 5).
+  A companion named only by relation (mr:0626-salvius, "and his disciple") gives no
+  second name and is kept. mr:0823-laurentius was a place-lead slug ("in the cemetery of
+  St Lawrence"); its subjects are Abundius and Irenaeus.
+- 14 single-subject slugs were cut short at a letter the fold did not decompose — the
+  Vietnamese Đ, or the apostrophe of a Korean name (mr:0309-petrus-ch, *Ch’oe*). The
+  full name is kept, every word of a multi-word surname included; Đ folds to `d`, a
+  parenthetical alternate name is dropped (mr:0821-iosephus-dang-dinh-vien, *(Niên)*).
+  The same completion is applied to the first name of five multi-subject slugs above.
+- 30 anonymous-group slugs follow rule 8 as revised: the place in the genitive
+  (*Sebastem* → *sebastes*, *Carthagine* → the named group *martyres-abitinenses*),
+  `martyres-` for a demonym group (mr:0717-scillitani → mr:0717-martyres-scillitani),
+  and mr:0630-sancta-romana-ecclesia → mr:0630-protomartyres-sanctae-romanae-ecclesiae,
+  whose subject is the protomartyrs, not the Church.
+
+<details><summary>Workbook-to-corrected table (236)</summary>
+
+| Previous ID | Corrected ID |
+| --- | --- |
+| mr:0108-theophilus | mr:0108-theophilus-et-helladius |
+| mr:0109-agatha-yi | mr:0109-agatha-yi-et-teresia-kim |
+| mr:0112-tigrius | mr:0112-tigrius-et-eutropius |
+| mr:0113-gumesindus | mr:0113-gumesindus-et-servusdei |
+| mr:0123-clemens | mr:0123-clemens-et-agathangelus |
+| mr:0124-gulielmus-ireland | mr:0124-gulielmus-ireland-et-ioannes-grove |
+| mr:0125-praeiectus | mr:0125-praeiectus-et-amarinus |
+| mr:0129-sarbelius | mr:0129-sarbelius-et-bebaia |
+| mr:0201-conorus-o-devany | mr:0201-conorus-o-devany-et-patricius-o-lougham |
+| mr:0204-philea | mr:0204-philea-et-philoromus |
+| mr:0206-dorothea | mr:0206-dorothea-et-theophilus |
+| mr:0207-anselmus-polanco | mr:0207-anselmus-polanco-et-philippus-ripoll |
+| mr:0207-iacobus-sales | mr:0207-iacobus-sales-et-gulielmus-saultemouche |
+| mr:0214-cyrillus | mr:0214-cyrillus-et-methodius |
+| mr:0225-aloysius-versiglia | mr:0225-aloysius-versiglia-et-callistus-caravario |
+| mr:0303-marinus | mr:0303-marinus-et-asterius |
+| mr:0309-petrus-ch | mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un |
+| mr:0311-marcus-chong-ui-ba | mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong |
+| mr:0313-rudericus | mr:0313-rudericus-et-salomon |
+| mr:0316-hilarius | mr:0316-hilarius-et-tatianus |
+| mr:0318-ioannes-thules | mr:0318-ioannes-thules-et-rogerius-wrenno |
+| mr:0326-montanus | mr:0326-montanus-et-maxima |
+| mr:0402-didacus-aloysius-de-san-vitores | mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod |
+| mr:0403-robertus-middleton | mr:0403-robertus-middleton-et-thurstanus-hunt |
+| mr:0404-agathopodus | mr:0404-agathopodus-et-theodulus |
+| mr:0407-eduardus-oldcorne | mr:0407-eduardus-oldcorne-et-radulphus-ashley |
+| mr:0417-petrus | mr:0417-petrus-et-hermogenes |
+| mr:0420-franciscus-page | mr:0420-franciscus-page-et-robertus-watkinson |
+| mr:0502-vindemialis | mr:0502-vindemialis-et-longinus |
+| mr:0506-marianus | mr:0506-marianus-et-iacobus |
+| mr:0519-ioannes-de-cetina | mr:0519-ioannes-de-cetina-et-petrus-de-duenas |
+| mr:0522-petrus-ab-assumptione | mr:0522-petrus-ab-assumptione-et-ioannes-baptista-machado |
+| mr:0526-ioannes | mr:0526-ioannes-doan-trinh-hoan-et-matthaeus-nguyen-van-phuong |
+| mr:0527-barbara-kim | mr:0527-barbara-kim-et-barbara-yi |
+| mr:0530-gulielmus-scott | mr:0530-gulielmus-scott-et-richardus-newport |
+| mr:0531-robertus-thorpe | mr:0531-robertus-thorpe-et-thomas-watkinson |
+| mr:0602-marcellinus | mr:0602-marcellinus-et-petrus |
+| mr:0604-antonius-zawistowski | mr:0604-antonius-zawistowski-et-stanislaus-starowieyski |
+| mr:0610-thomas-green | mr:0610-thomas-green-et-gualterius-pierson |
+| mr:0615-petrus-snow | mr:0615-petrus-snow-et-radulphus-grimston |
+| mr:0622-ioannes-fisher | mr:0622-ioannes-fisher-et-thomas-more |
+| mr:0625-dominicus-henares | mr:0625-dominicus-henares-et-franciscus-do-minh-chieu |
+| mr:0626-nicolaus-konrad | mr:0626-nicolaus-konrad-et-vladimirus-pryjma |
+| mr:0629-maria-du-tianshi | mr:0629-maria-du-tianshi-et-magdalena-du-fengju |
+| mr:0701-ioannes-baptista-duverneuil | mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie |
+| mr:0707-antoninus-fantosati | mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro |
+| mr:0707-rogerius-dickinson | mr:0707-rogerius-dickinson-et-radulphus-milner |
+| mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert | mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert-et-agnes-a-iesu-de-romillon |
+| mr:0711-placidus | mr:0711-placidus-et-sigisbertus |
+| mr:0713-ludovicus-armandus-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
+| mr:0716-andreas-de-soveral | mr:0716-andreas-de-soveral-et-dominicus-carvalho |
+| mr:0716-ioannes-sugar | mr:0716-ioannes-sugar-et-robertus-grissold |
+| mr:0716-lang-yangzhi | mr:0716-lang-yangzhi-et-paulus-lang-fu |
+| mr:0716-nicolaus-savouret | mr:0716-nicolaus-savouret-et-claudius-beguignot |
+| mr:0717-zoerardus | mr:0717-zoerardus-et-benedictus |
+| mr:0719-elisabeth-qin-bianzhi | mr:0719-elisabeth-qin-bianzhi-et-simon-qin-chunfu |
+| mr:0722-philippus-evans | mr:0722-philippus-evans-et-ioannes-lloyd |
+| mr:0723-petrus-ruiz | mr:0723-petrus-ruiz-de-los-panos-et-iosephus-sala-pico |
+| mr:0726-eduardus-thwing | mr:0726-eduardus-thwing-et-robertus-nutter |
+| mr:0726-marcellus-gaucherius-labigne-de-reignefort | mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere |
+| mr:0726-vincentius-pinilla | mr:0726-vincentius-pinilla-et-emmanuel-martin-sierra |
+| mr:0728-emmanuel-segura | mr:0728-emmanuel-segura-et-david-carlos |
+| mr:0729-lazarus | mr:0729-lazarus-et-maria |
+| mr:0731-dionysius-vicente-ramos | mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa |
+| mr:0731-petrus | mr:0731-petrus-doan-cong-quy-et-emmanuel-phung |
+| mr:0801-dominicus-nguyen-van-hanh | mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due |
+| mr:0803-alphonsus-lopez-lopez | mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador |
+| mr:0809-faustinus-oteiza | mr:0809-faustinus-oteiza-et-florentinus-felipe |
+| mr:0810-franciscus-drzewiecki | mr:0810-franciscus-drzewiecki-et-eduardus-grzymala |
+| mr:0812-florianus-stepniak | mr:0812-florianus-stepniak-et-iosephus-straszewski |
+| mr:0813-patricius-o-healy | mr:0813-patricius-o-healy-et-connus-o-rourke |
+| mr:0814-dominicus-ibanez-de-erquicia | mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon |
+| mr:0817-iacobus-kyuhei-gorobioye-tomonaga | mr:0817-iacobus-kyuhei-gorobioye-tomonaga-et-michael-kurobioye |
+| mr:0823-florentinus-perez-romero | mr:0823-florentinus-perez-romero-et-urbanus-gil-saez |
+| mr:0823-laurentius | mr:0823-abundius-et-irenaeus |
+| mr:0827-ioannes-baptista-de-souzy | mr:0827-ioannes-baptista-de-souzy-et-udalricus-guillaume |
+| mr:0829-ioannes-de-perusia | mr:0829-ioannes-de-perusia-et-petrus-de-saxoferrato |
+| mr:0830-didacus-ventaja-milan | mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos |
+| mr:0905-petrus-nguyen-van-tu | mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh |
+| mr:0907-festus | mr:0907-festus-et-desiderius |
+| mr:0907-randulphus-corby | mr:0907-randulphus-corby-et-ioannes-duckett |
+| mr:0915-emila | mr:0915-emila-et-ieremias |
+| mr:0916-rogellus | mr:0916-rogellus-et-servusdei |
+| mr:0921-franciscus-jaccard | mr:0921-franciscus-jaccard-et-thomas-tran-van-thien |
+| mr:0921-vincentius-galbis-girones | mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia |
+| mr:0922-vincentius-pelufo-corts | mr:0922-vincentius-pelufo-corts-et-iosepha-moscardo-montalva |
+| mr:0924-gulielmus-spenser | mr:0924-gulielmus-spenser-et-robertus-hardesty |
+| mr:0927-iosephus-fenollosa-alcayna | mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches |
+| mr:0929-paulus-bori-puig | mr:0929-paulus-bori-puig-et-vincentius-sales-genoves |
+| mr:1002-franciscus-carceller | mr:1002-franciscus-carceller-et-isidorus-bover-oliver |
+| mr:1010-eulampius | mr:1010-eulampius-et-eulampia |
+| mr:1016-amandus | mr:1016-amandus-et-iunianus |
+| mr:1016-anicetus-koplinski | mr:1016-anicetus-koplinski-et-iosephus-jankowski |
+| mr:1019-lucas-alphonsus-gorda | mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye |
+| mr:1022-philippus | mr:1022-philippus-et-hermes |
+| mr:1023-ioannes-perside | mr:1023-ioannes-et-iacobus |
+| mr:1025-martyrius | mr:1025-martyrius-et-marcianus |
+| mr:1103-valentinus | mr:1103-valentinus-et-hilarius |
+| mr:1104-nicandrus | mr:1104-nicandrus-et-hermes |
+| mr:1110-narses | mr:1110-narses-et-iosephus |
+| mr:1113-florentius | mr:1113-florentius-et-amantius |
+| mr:1115-guria | mr:1115-guria-et-samona |
+| mr:1115-marinus | mr:1115-marinus-et-anianus |
+| mr:1119-elisaeus-garcia | mr:1119-elisaeus-garcia-et-alexander-planas-sauri |
+| mr:1126-hugo-taylor | mr:1126-hugo-taylor-et-marmaducus-bowes |
+| mr:1126-thomas | mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen |
+| mr:1129-dionysius-a-nativitate-berthelot | mr:1129-dionysius-a-nativitate-berthelot-et-redemptus-a-cruce-rodriguez |
+| mr:1210-antonius-martin-hernandez | mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo |
+| mr:1210-edmundus-gennings | mr:1210-edmundus-gennings-et-swithinus-wells |
+| mr:1229-henricus-ioannes-requena | mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher |
+| mr:0121-fructuosus | mr:0121-fructuosus-et-socii |
+| mr:0128-agatha-lin-zhao | mr:0128-agatha-lin-zhao-et-socii |
+| mr:0201-paulus-hong-yong-ju | mr:0201-paulus-hong-yong-ju-et-socii |
+| mr:0215-isicus | mr:0215-isicus-et-socii |
+| mr:0304-christophorus-bales | mr:0304-christophorus-bales-et-socii |
+| mr:0307-simeon-berneux | mr:0307-simeon-berneux-et-socii |
+| mr:0312-mygdo | mr:0312-mygdo-et-socii |
+| mr:0313-macedonius | mr:0313-macedonius-et-socii |
+| mr:0323-victorianus | mr:0323-victorianus-et-socii |
+| mr:0330-antonius-daveluy | mr:0330-antonius-daveluy-et-socii |
+| mr:0401-venantius | mr:0401-venantius-et-socii |
+| mr:0407-theodorus | mr:0407-theodorus-et-socii |
+| mr:0416-optatus | mr:0416-optatus-et-socii |
+| mr:0417-donnanus | mr:0417-donnanus-et-socii |
+| mr:0417-elias | mr:0417-elias-et-socii |
+| mr:0428-paulus-pham-khac-khoan | mr:0428-paulus-pham-khac-khoan-et-socii |
+| mr:0430-amator | mr:0430-amator-et-socii |
+| mr:0501-torquatus | mr:0501-torquatus-et-socii |
+| mr:0524-augustinus-yi-kwang-hon | mr:0524-augustinus-yi-kwang-hon-et-socii |
+| mr:0529-gulielmus-arnaud | mr:0529-gulielmus-arnaud-et-socii |
+| mr:0529-sisinnius | mr:0529-sisinnius-et-socii |
+| mr:0601-alphonsus-navarrete | mr:0601-alphonsus-navarrete-et-socii |
+| mr:0601-ischyrion | mr:0601-ischyrion-et-socii |
+| mr:0602-pothinus | mr:0602-pothinus-et-socii |
+| mr:0607-petrus | mr:0607-petrus-et-socii |
+| mr:0614-anastasius | mr:0614-anastasius-et-socii |
+| mr:0616-aureus | mr:0616-aureus-et-socii |
+| mr:0616-dominicus-nguyen | mr:0616-dominicus-nguyen-et-socii |
+| mr:0629-paulus-wu-juan | mr:0629-paulus-wu-juan-et-socii |
+| mr:0702-liberatus | mr:0702-liberatus-et-socii |
+| mr:0704-gulielmus-andleby | mr:0704-gulielmus-andleby-et-socii |
+| mr:0704-ioannes-cornelius | mr:0704-ioannes-cornelius-et-socii |
+| mr:0713-alexander | mr:0713-alexander-et-socii |
+| mr:0715-catulinus | mr:0715-catulinus-et-socii |
+| mr:0715-philippus | mr:0715-philippus-et-socii |
+| mr:0716-reinildis | mr:0716-reinildis-et-socii |
+| mr:0720-maria-zhao-guozhus | mr:0720-maria-zhao-guozhi-et-socii |
+| mr:0722-anna-wang | mr:0722-anna-wang-et-socii |
+| mr:0725-fridericus-rubio-alvarez | mr:0725-fridericus-rubio-alvarez-et-socii |
+| mr:0725-petrus-a-corde-redondo | mr:0725-petrus-a-corde-redondo-et-socii |
+| mr:0727-georgius | mr:0727-georgius-et-socii |
+| mr:0729-ludovicus-bertran | mr:0729-ludovicus-bertran-et-socii |
+| mr:0730-iosephus-maria-muro-sanmiguel | mr:0730-iosephus-maria-muro-sanmiguel-et-socii |
+| mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz | mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz-et-socii |
+| mr:0804-iosephus-batalla-parramon | mr:0804-iosephus-batalla-parramon-et-socii |
+| mr:0807-martinus-a-sancto-felice-woodcock | mr:0807-martinus-a-sancto-felice-woodcock-et-socii |
+| mr:0810-claudius-iosephus-jouffret-de-bonnefont | mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii |
+| mr:0812-iacobus | mr:0812-iacobus-do-mai-nam-et-socii |
+| mr:0812-porcarius | mr:0812-porcarius-et-socii |
+| mr:0815-aloysius-batis-sainz | mr:0815-aloysius-batis-sainz-et-socii |
+| mr:0816-simon-bokusai-kyota | mr:0816-simon-bokusai-kyota-et-socii |
+| mr:0821-bassa | mr:0821-bassa-et-socii |
+| mr:0821-bernardus | mr:0821-bernardus-et-socii |
+| mr:0823-constantinus-carbonell-sempere | mr:0823-constantinus-carbonell-sempere-et-socii |
+| mr:0825-michael-carvalho | mr:0825-michael-carvalho-et-socii |
+| mr:0827-marcellinus | mr:0827-marcellinus-et-socii |
+| mr:0901-petrus-rivera | mr:0901-petrus-rivera-et-socii |
+| mr:0907-marcus-crisini | mr:0907-marcus-crisini-et-socii |
+| mr:0907-thomas-tsuji | mr:0907-thomas-tsuji-et-socii |
+| mr:0908-thomas-palaser | mr:0908-thomas-palaser-et-socii |
+| mr:0911-gaspar-koteda | mr:0911-gaspar-koteda-et-socii |
+| mr:0912-apollinaris-franco | mr:0912-apollinaris-franco-et-socii |
+| mr:0916-laureanus-ferrer-cardet | mr:0916-laureanus-ferrer-cardet-et-socii |
+| mr:0921-laurentius-imbert | mr:0921-laurentius-imbert-et-socii |
+| mr:0923-sophia-ximenez-ximenez | mr:0923-sophia-ximenez-ximenez-et-socii |
+| mr:0925-ioannes-petrus-bengoa-aranguren | mr:0925-ioannes-petrus-bengoa-aranguren-et-socii |
+| mr:0928-ioannes-shozaburo | mr:0928-ioannes-shozaburo-et-socii |
+| mr:1010-septem-martyres-presbyteri-septam | mr:1010-daniel-et-socii |
+| mr:1018-proculus | mr:1018-proculus-et-socii |
+| mr:1025-maria-teresia-ferragud-roig | mr:1025-maria-teresia-ferragud-roig-et-socii |
+| mr:1028-franciscus-serrano | mr:1028-franciscus-serrano-et-socii |
+| mr:1101-petrus-paulus-navarro | mr:1101-petrus-paulus-navarro-et-socii |
+| mr:1108-iosephus-nguyen | mr:1108-iosephus-nguyen-dinh-nghi-et-socii |
+| mr:1113-martyres-africa | mr:1113-arcadius-et-socii |
+| mr:1115-hugo-faringdon | mr:1115-hugo-faringdon-et-socii |
+| mr:1115-richardus-whiting | mr:1115-richardus-whiting-et-socii |
+| mr:1118-leonardus-kimura | mr:1118-leonardus-kimura-et-socii |
+| mr:1122-salvator-lilli | mr:1122-salvator-lilli-et-socii |
+| mr:1124-petrus-dumoulin-borie | mr:1124-petrus-dumoulin-borie-et-socii |
+| mr:1204-franciscus-galvez | mr:1204-franciscus-galvez-et-socii |
+| mr:1209-richardus | mr:1209-richardus-de-los-rios-fabregat-et-socii |
+| mr:1222-chaeremon | mr:1222-chaeremon-et-socii |
+| mr:0509-iosephus | mr:0509-iosephus-do-quang-hien |
+| mr:0522-michael-ho | mr:0522-michael-ho-dinh-hy |
+| mr:0525-petrus | mr:0525-petrus-doan-van-van |
+| mr:0603-petrus | mr:0603-petrus-dong |
+| mr:0617-petrus | mr:0617-petrus-da |
+| mr:0630-vincentius | mr:0630-vincentius-do-yen |
+| mr:0703-iosephus-nguyen | mr:0703-iosephus-nguyen-dinh-uyen |
+| mr:0718-dominicus-nicolaus | mr:0718-dominicus-nicolaus-dinh-dat |
+| mr:0821-iosephus | mr:0821-iosephus-dang-dinh-vien |
+| mr:0912-franciscus-ch | mr:0912-franciscus-choe-kyong-hwan |
+| mr:1021-petrus-yu-tae-ch | mr:1021-petrus-yu-tae-chol |
+| mr:1024-iosephus-le | mr:1024-iosephus-le-dang-thi |
+| mr:1028-ioannes | mr:1028-ioannes-dat |
+| mr:1212-simon-phan | mr:1212-simon-phan-dac-hoa |
+| mr:0212-martyres-carthagine | mr:0212-martyres-abitinenses |
+| mr:0219-monachi-martyres-palaestina | mr:0219-monachi-martyres-palaestinae |
+| mr:0306-quadraginta-duo-martyres-syria | mr:0306-quadraginta-duo-martyres-syriae |
+| mr:0309-quadraginta-milites-sebastem | mr:0309-quadraginta-milites-sebastes |
+| mr:0320-viginti-monachi-palaestina | mr:0320-viginti-monachi-palaestinae |
+| mr:0321-alexandrini | mr:0321-martyres-alexandrini |
+| mr:0330-plurimi-martyres-constantinopoli | mr:0330-plurimi-martyres-constantinopolis |
+| mr:0405-martyres-regiis | mr:0405-martyres-regiarum |
+| mr:0407-ducenti-milites-martyres-sinope | mr:0407-ducenti-milites-martyres-sinopes |
+| mr:0509-martyres-trecenti-decem-perside | mr:0509-trecenti-decem-martyres-persidis |
+| mr:0516-quadraginta-quattuor-monachi-palaestina | mr:0516-quadraginta-quattuor-monachi-palaestinae |
+| mr:0523-martyres-cappadocia | mr:0523-martyres-cappadociae |
+| mr:0524-triginta-octo-martyres-philippopoli | mr:0524-triginta-octo-martyres-philippopolis |
+| mr:0630-sancta-romana-ecclesia | mr:0630-protomartyres-sanctae-romanae-ecclesiae |
+| mr:0708-monachi-constantinopoli | mr:0708-monachi-abrahamitae |
+| mr:0717-scillitani | mr:0717-martyres-scillitani |
+| mr:0722-massilitani | mr:0722-martyres-massilitani |
+| mr:0809-martyres-constantinopoli | mr:0809-martyres-constantinopolis |
+| mr:0818-massa-candida | mr:0818-martyres-massae-candidae |
+| mr:1005-martyres-treviris | mr:1005-martyres-trevirorum |
+| mr:1012-martyres-confessores-quattuor-sexaginta-africa | mr:1012-martyres-et-confessores-africae |
+| mr:1017-volitani | mr:1017-martyres-volitani |
+| mr:1021-virgines-coloniam-agrippinam | mr:1021-virgines-coloniae-agrippinae |
+| mr:1115-viginti-martyres-hippone-regio | mr:1115-viginti-martyres-hipponis-regii |
+| mr:1119-mulieres-virgines-viduae-quadraginta-martyres-heracleae | mr:1119-quadraginta-martyres-heracleae |
+| mr:1206-martyres-africa | mr:1206-martyres-africae |
+| mr:1217-quinquaginta-milites-eleutheropoli | mr:1217-quinquaginta-milites-eleutheropolis |
+| mr:0523-martyres-mesopotamia | mr:0523-martyres-mesopotamiae |
+| mr:0205-plurimi-martyres-ponto | mr:0205-plurimi-martyres-ponti |
+| mr:0211-plurimi-martyres-numidia | mr:0211-plurimi-martyres-numidiae |
+
+</details>
 
 ## Country-code corrections (September 2026)
 
@@ -516,8 +782,8 @@ intended:
 - Italian (CEI) edition, also inside quoted place designations (`places[].it` keeps
   the printed form):
   - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
-  - July 4 (mr:0704-ioannes-cornelius): "un Inghilterra" for *in Inghilterra*;
-  - August 7, entry 13\* (mr:0807-martinus-a-sancto-felice-woodcock): "Inghiltera" for
+  - July 4 (mr:0704-ioannes-cornelius-et-socii): "un Inghilterra" for *in Inghilterra*;
+  - August 7, entry 13\* (mr:0807-martinus-a-sancto-felice-woodcock-et-socii): "Inghiltera" for
     *Inghilterra*;
   - September 6 (mr:0906-bertrandus-de-garrigues): "Mel" for *Nel*;
   - September 17 (mr:0917-ioannes-ventura-solsona): "vicno" for *vicino*;

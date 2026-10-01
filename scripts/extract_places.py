@@ -305,7 +305,7 @@ LONG_LEAD_OK = {
     "mr:0420-anastasius-pankiewicz": "a route between two camps (Dachau to Hartheim near Linz)",
     "mr:0514-theodora-guerin": "a village name plus its state and country",
     "mr:0721-gabriel-pergaud": "a prison ship at anchor off Rochefort",
-    "mr:0827-ioannes-baptista-de-souzy": "a prison ship at anchor off Rochefort",
+    "mr:0827-ioannes-baptista-de-souzy-et-udalricus-guillaume": "a prison ship at anchor off Rochefort",
 }
 
 

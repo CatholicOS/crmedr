@@ -118,6 +118,29 @@ class IdCorrectionsAppliedTest(unittest.TestCase):
     def test_stephanus_fanus_is_corrected(self):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:1130-stephanus-fanus"), "mr:1130-cuthbertus-mayne")
 
+class MultiSubjectSlugs40Test(unittest.TestCase):
+    """#40: a slug naming two or more subjects goes with a plural Latin subject."""
+
+    # "et" inside a religious name or a feast title, not a second subject.
+    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria-mazzarello",
+                 "mr:1118-dedicatio-basilicarum-petri-et-pauli"}
+
+    def test_corrections_present(self):
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:1115-guria"), "mr:1115-guria-et-samona")
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:0821-iosephus"), "mr:0821-iosephus-dang-dinh-vien")
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:0320-sabas"), "mr:0320-viginti-monachi-palaestinae")
+
+    def test_multi_subject_ids_have_plural_latin_subjects(self):
+        root = Path(__file__).resolve().parent.parent
+        la = json.load(open(root / "i18n" / "la.json", encoding="utf-8"))
+        entries = json.load(open(root / "data" / "martyrology_ids.json", encoding="utf-8"))["entries"]
+        singular = sorted(e["id"] for e in entries
+                          if not e.get("deprecated") and "-et-" in e["id"]
+                          and e["id"] not in self.NOT_MULTI
+                          and la[e["id"]].split()[0] not in ("Sancti", "Sanctae", "Beati", "Beatae"))
+        self.assertEqual(singular, [])
+
+
 class PlaceLeadCorrections25Test(unittest.TestCase):
     """#25: Leonard's deprecated ID became current; three deprecated IDs were coined."""
 

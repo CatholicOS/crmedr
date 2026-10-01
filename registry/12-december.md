@@ -48,7 +48,7 @@
 | 4 | 12 | `mr:1204-osmundus` |  | GB | dies_natalis |  |
 | 4 | 13 | `mr:1204-bernardus` |  | IT | dies_natalis |  |
 | 4 | 14 | `mr:1204-petrus-pectinarius` | * | IT | dies_natalis |  |
-| 4 | 15 | `mr:1204-franciscus-galvez` | * | JP | dies_natalis |  |
+| 4 | 15 | `mr:1204-franciscus-galvez-et-socii` | * | JP | dies_natalis |  |
 | 4 | 16 | `mr:1204-adolphus-kolping` | * | DE | dies_natalis |  |
 | 4 | 17 | `mr:1204-ioannes-calabria` |  | IT | dies_natalis |  |
 | 5 | 1 | `mr:1205-crispina-thagorensis` |  | DZ | dies_natalis |  |
@@ -62,7 +62,7 @@
 | 5 | 9 | `mr:1205-narcissus-putz` | * | DE | dies_natalis |  |
 | 6 | (1) | `mr:1206-nicolaus` |  | TR | dies_natalis |  |
 | 6 | 2 | `mr:1206-asella` |  | IT | commemoratio |  |
-| 6 | 3 | `mr:1206-martyres-africa` |  | TN | commemoratio |  |
+| 6 | 3 | `mr:1206-martyres-africae` |  | TN | commemoratio |  |
 | 6 | 4 | `mr:1206-obitius` | * | IT | dies_natalis |  |
 | 6 | 5 | `mr:1206-petrus-pascual` | * | ES | dies_natalis |  |
 | 6 | 6 | `mr:1206-iosephus-nguyen-duy-khang` |  | VN | dies_natalis |  |
@@ -95,17 +95,17 @@
 | 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis |  |
 | 9 | 8 | `mr:1209-bernardus-maria-a-iesu-silvestrelli` | * | IT | dies_natalis |  |
 | 9 | 9 | `mr:1209-iosephus-ferrer-esteve` | * | ES | dies_natalis |  |
-| 9 | 10 | `mr:1209-richardus` | * | ES | dies_natalis |  |
+| 9 | 10 | `mr:1209-richardus-de-los-rios-fabregat-et-socii` | * | ES | dies_natalis |  |
 | 10 | 1 | `mr:1210-eulalia` |  | ES | dies_natalis |  |
 | 10 | 2 | `mr:1210-maurus` |  | IT | dies_natalis |  |
 | 10 | 3 | `mr:1210-gemellus` |  | TR | dies_natalis |  |
 | 10 | 4 | `mr:1210-gregorius-iii` |  | IT | dies_natalis |  |
 | 10 | 5 | `mr:1210-lucas-de-insula` | * | IT | dies_natalis |  |
-| 10 | 6 | `mr:1210-edmundus-gennings` |  | GB | dies_natalis |  |
+| 10 | 6 | `mr:1210-edmundus-gennings-et-swithinus-wells` |  | GB | dies_natalis |  |
 | 10 | 7 | `mr:1210-polydorus-plasden-et-eustatius-white` |  | GB | dies_natalis |  |
 | 10 | 8 | `mr:1210-ioannes-roberts` |  | GB | dies_natalis |  |
 | 10 | 10 | `mr:1210-gundisalvus-vines-masip` | * | ES | dies_natalis |  |
-| 10 | 11 | `mr:1210-antonius-martin-hernandez` | * | ES | dies_natalis |  |
+| 10 | 11 | `mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo` | * | ES | dies_natalis |  |
 | 11 | (1) | `mr:1211-damasus-i` |  | IT | dies_natalis |  |
 | 11 | 2 | `mr:1211-victoricus-et-fuscianus` |  | FR | dies_natalis |  |
 | 11 | 3 | `mr:1211-sabinus` |  | IT | dies_natalis |  |
@@ -128,7 +128,7 @@
 | 12 | 8 | `mr:1212-bartholus-buonpedoni` | * | IT | dies_natalis |  |
 | 12 | 9 | `mr:1212-conradus-de-ophyda` | * | IT | dies_natalis |  |
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT | commemoratio |  |
-| 12 | 11 | `mr:1212-simon-phan` |  | VN | dies_natalis | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 12 | 11 | `mr:1212-simon-phan-dac-hoa` |  | VN | dies_natalis | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 12 | 12 | `mr:1212-pius-bartosik` | * | PL | dies_natalis |  |
 | 13 | (1) | `mr:1213-lucia` |  | IT | dies_natalis |  |
 | 13 | 2 | `mr:1213-aristo` |  | IT | dies_natalis |  |
@@ -175,7 +175,7 @@
 | 16 | 11 | `mr:1216-honoratus-de-biala-podlaska-kazminsky` | * | PL | dies_natalis |  |
 | 16 | 12 | `mr:1216-philippus-siphong-onphitak` | * | TH | dies_natalis |  |
 | 17 | 1 | `mr:1217-modestus` |  | IL | dies_natalis |  |
-| 17 | 2 | `mr:1217-quinquaginta-milites-eleutheropoli` |  | PS | dies_natalis |  |
+| 17 | 2 | `mr:1217-quinquaginta-milites-eleutheropolis` |  | PS | dies_natalis |  |
 | 17 | 3 | `mr:1217-iudicael` | * | FR | dies_natalis |  |
 | 17 | 4 | `mr:1217-begga` |  | BE | dies_natalis |  |
 | 17 | 5 | `mr:1217-sturmius` |  | DE | dies_natalis |  |
@@ -211,7 +211,7 @@
 | 21 | 4 | `mr:1221-dominicus-spadafora` | * | IT | dies_natalis |  |
 | 21 | 5 | `mr:1221-andreas-dung-lac-et-petrus-truong-van-thi` |  | VN | dies_natalis |  |
 | 21 | 6 | `mr:1221-petrus-friedhofen` | * | DE | dies_natalis |  |
-| 22 | 1 | `mr:1222-chaeremon` |  | EG | commemoratio |  |
+| 22 | 1 | `mr:1222-chaeremon-et-socii` |  | EG | commemoratio |  |
 | 22 | 2 | `mr:1222-ischyrion` |  | EG | commemoratio |  |
 | 22 | 3 | `mr:1222-triginta-martyres-romae` |  | IT | dies_natalis |  |
 | 22 | 4 | `mr:1222-quadraginta-tres-monachi-raithi` |  | EG | dies_natalis |  |
@@ -279,7 +279,7 @@
 | 29 | 9 | `mr:1229-gulielmus-howard` | * | GB | dies_natalis |  |
 | 29 | 10 | `mr:1229-benedicta-hyon-kyong-nyon-et-socii` |  | KR | dies_natalis |  |
 | 29 | 11 | `mr:1229-iosephus-aparicio-sanz` | * | ES | dies_natalis |  |
-| 29 | 12 | `mr:1229-henricus-ioannes-requena` | * | ES | dies_natalis |  |
+| 29 | 12 | `mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher` | * | ES | dies_natalis |  |
 | 29 | 13 | `mr:1229-ioannes-baptista-ferreres-boluda` | * | ES | dies_natalis |  |
 | 30 | 1 | `mr:1230-felix-i` |  | IT | depositio |  |
 | 30 | 2 | `mr:1230-hermes` |  | BG | dies_natalis |  |
