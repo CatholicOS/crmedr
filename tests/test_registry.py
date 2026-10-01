@@ -1,4 +1,5 @@
 import json
+import re
 import sys
 import tempfile
 import unittest
@@ -102,6 +103,17 @@ class IdCorrectionsAppliedTest(unittest.TestCase):
         text = "\n".join((root / f).read_text(encoding="utf-8") for f in files)
         leftovers = sorted(old for old in r.ID_CORRECTIONS if f'"{old}"' in text)
         self.assertEqual(leftovers, [])
+
+    def test_registry_markdown_ids_are_canonical(self):
+        """The month tables are checked too: every ID they show is in the registry."""
+        root = Path(__file__).resolve().parent.parent
+        canonical = {e["id"] for e in json.load(open(root / "data" / "martyrology_ids.json",
+                                                      encoding="utf-8"))["entries"]}
+        shown = set()
+        for path in sorted((root / "registry").glob("*.md")):
+            shown.update(re.findall(r"`(mr:[^`]+)`", path.read_text(encoding="utf-8")))
+        self.assertTrue(shown)
+        self.assertEqual(sorted(shown - canonical), [])
 
     def test_stephanus_fanus_is_corrected(self):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:1130-stephanus-fanus"), "mr:1130-cuthbertus-mayne")
