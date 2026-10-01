@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6081,
+  "entry_count": 6083,
   "current_count": 4639,
-  "deprecated_count": 1442,
+  "deprecated_count": 1444,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -6229,7 +6229,7 @@
       ]
     },
     {
-      "id": "mr:0130-benedictus-de-maretiolo",
+      "id": "mr:0130-columba-marmion",
       "month": 1,
       "day": 30,
       "entry": 16,
@@ -7580,7 +7580,7 @@
       ]
     },
     {
-      "id": "mr:0205-caesarius",
+      "id": "mr:0205-sabas-iunior",
       "month": 2,
       "day": 5,
       "entry": 6,
@@ -9019,7 +9019,7 @@
       "typology": "commemoratio"
     },
     {
-      "id": "mr:0212-cornelius",
+      "id": "mr:0212-benedictus-anianensis",
       "month": 2,
       "day": 12,
       "entry": 3,
@@ -15213,7 +15213,7 @@
       "typology": "commemoratio"
     },
     {
-      "id": "mr:0320-sabas",
+      "id": "mr:0320-viginti-monachi-palaestina",
       "month": 3,
       "day": 20,
       "entry": 8,
@@ -17058,7 +17058,7 @@
       ]
     },
     {
-      "id": "mr:0330-iulianus",
+      "id": "mr:0330-iulius-alvarez",
       "month": 3,
       "day": 30,
       "entry": 14,
@@ -18357,7 +18357,7 @@
       ]
     },
     {
-      "id": "mr:0406-maria",
+      "id": "mr:0406-catharina-de-pallantia",
       "month": 4,
       "day": 6,
       "entry": 11,
@@ -19648,7 +19648,7 @@
       ]
     },
     {
-      "id": "mr:0412-ioseph",
+      "id": "mr:0412-david-uribe",
       "month": 4,
       "day": 12,
       "entry": 13,
@@ -19726,7 +19726,7 @@
       ]
     },
     {
-      "id": "mr:0413-maria-de-capella",
+      "id": "mr:0413-ida-boloniensis",
       "month": 4,
       "day": 13,
       "entry": 5,
@@ -21081,7 +21081,7 @@
       ]
     },
     {
-      "id": "mr:0419-bertinus",
+      "id": "mr:0419-bernardus-paenitens",
       "month": 4,
       "day": 19,
       "entry": 7,
@@ -22476,7 +22476,7 @@
       ]
     },
     {
-      "id": "mr:0426-isidorus-de-duenas",
+      "id": "mr:0426-raphael-arnaiz-baron",
       "month": 4,
       "day": 26,
       "entry": 9,
@@ -23855,7 +23855,7 @@
       ]
     },
     {
-      "id": "mr:0502-gallus",
+      "id": "mr:0502-wiborada",
       "month": 5,
       "day": 2,
       "entry": 6,
@@ -25126,7 +25126,7 @@
       ]
     },
     {
-      "id": "mr:0508-maria-della-serra",
+      "id": "mr:0508-angelus-de-massatio",
       "month": 5,
       "day": 8,
       "entry": 13,
@@ -28523,7 +28523,7 @@
       ]
     },
     {
-      "id": "mr:0524-hyacinthus",
+      "id": "mr:0524-ludovicus-zephyrinus-moreau",
       "month": 5,
       "day": 24,
       "entry": 12,
@@ -28920,7 +28920,7 @@
       ]
     },
     {
-      "id": "mr:0526-papulus",
+      "id": "mr:0526-berengarius",
       "month": 5,
       "day": 26,
       "entry": 8,
@@ -28954,7 +28954,7 @@
       ]
     },
     {
-      "id": "mr:0526-franciscus-patrizus",
+      "id": "mr:0526-franciscus-patrizi",
       "month": 5,
       "day": 26,
       "entry": 10,
@@ -30765,7 +30765,7 @@
       ]
     },
     {
-      "id": "mr:0603-maria-de-cadossa",
+      "id": "mr:0603-conus",
       "month": 6,
       "day": 3,
       "entry": 13,
@@ -33957,7 +33957,7 @@
       ]
     },
     {
-      "id": "mr:0620-iacobus-fodiensi",
+      "id": "mr:0620-ioannes-de-mateola",
       "month": 6,
       "day": 20,
       "entry": 3,
@@ -36786,7 +36786,7 @@
       ]
     },
     {
-      "id": "mr:0705-maria-de-terreto",
+      "id": "mr:0705-thomas",
       "month": 7,
       "day": 5,
       "entry": 7,
@@ -41921,7 +41921,7 @@
       "typology": "commemoratio"
     },
     {
-      "id": "mr:0726-benedictus",
+      "id": "mr:0726-simeon",
       "month": 7,
       "day": 26,
       "entry": 3,
@@ -49089,7 +49089,7 @@
       ]
     },
     {
-      "id": "mr:0823-philippus",
+      "id": "mr:0823-antonius-de-hieracio",
       "month": 8,
       "day": 23,
       "entry": 9,
@@ -67947,7 +67947,7 @@
       ]
     },
     {
-      "id": "mr:1114-maria-de-gualdo-mazocca",
+      "id": "mr:1114-ioannes-de-tupharia",
       "month": 11,
       "day": 14,
       "entry": 7,
@@ -67964,7 +67964,7 @@
       ]
     },
     {
-      "id": "mr:1114-maria",
+      "id": "mr:1114-siardus",
       "month": 11,
       "day": 14,
       "entry": 8,
@@ -70483,7 +70483,7 @@
       ]
     },
     {
-      "id": "mr:1126-bonaventura",
+      "id": "mr:1126-leonardus-a-portu-mauritio",
       "month": 11,
       "day": 26,
       "entry": 11,
@@ -72158,7 +72158,7 @@
       ]
     },
     {
-      "id": "mr:1205-petrus-de-aquara",
+      "id": "mr:1205-lucidus",
       "month": 12,
       "day": 5,
       "entry": 3,
@@ -72920,7 +72920,7 @@
       ]
     },
     {
-      "id": "mr:1210-nicolaus-de-viotorito",
+      "id": "mr:1210-lucas-de-insula",
       "month": 12,
       "day": 10,
       "entry": 5,
@@ -78752,6 +78752,15 @@
       "country": "IL"
     },
     {
+      "id": "mr:0320-photina-et-socii",
+      "month": 3,
+      "day": 20,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null
+    },
+    {
       "id": "mr:0320-septem-martyres-amisi",
       "month": 3,
       "day": 20,
@@ -78939,6 +78948,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "SY"
+    },
+    {
+      "id": "mr:0324-pigmenius",
+      "month": 3,
+      "day": 24,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT"
     },
     {
       "id": "mr:0325-annuntiatio-beatissimae-virginis-genitricis",
@@ -84170,6 +84188,15 @@
       "country": null
     },
     {
+      "id": "mr:0823-philippus-benizi",
+      "month": 8,
+      "day": 23,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0823-restitutus-et-socii",
       "month": 8,
       "day": 23,
@@ -87795,15 +87822,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
-    },
-    {
-      "id": "mr:1126-leonardus-a-portu-mauritio",
-      "month": 11,
-      "day": 26,
-      "entry": 9,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "IT"
     },
     {
       "id": "mr:1126-basolus",

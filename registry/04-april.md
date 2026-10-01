@@ -72,7 +72,7 @@
 | 6 | 8 | `mr:0406-philaretus` | * | IT | dies_natalis |  |
 | 6 | 9 | `mr:0406-gulielmus` |  | DK | dies_natalis |  |
 | 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis |  |
-| 6 | 11 | `mr:0406-maria` | * | IT | dies_natalis |  |
+| 6 | 11 | `mr:0406-catharina-de-pallantia` | * | IT | dies_natalis |  |
 | 6 | 12 | `mr:0406-paulus-le-bao-tinh` |  | VN | dies_natalis |  |
 | 6 | 13 | `mr:0406-zephyrinus-agostini` | * | IT | dies_natalis |  |
 | 6 | 14 | `mr:0406-michael-rua` | * | IT | dies_natalis |  |
@@ -151,12 +151,12 @@
 | 12 | 10 | `mr:0412-laurentius` | * | PT | dies_natalis |  |
 | 12 | 11 | `mr:0412-teresia-a-iesu-fernandez-solar` |  | CL | dies_natalis |  |
 | 12 | 12 | `mr:0412-iosephus-moscati` |  | IT | dies_natalis |  |
-| 12 | 13 | `mr:0412-ioseph` |  | MX | dies_natalis |  |
+| 12 | 13 | `mr:0412-david-uribe` |  | MX | dies_natalis |  |
 | 13 | (1) | `mr:0413-martinus-i` |  | TR | dies_natalis |  |
 | 13 | 2 | `mr:0413-carpus-et-thyatirensis` |  | TR | dies_natalis |  |
 | 13 | 3 | `mr:0413-ursus` |  | IT | dies_natalis |  |
 | 13 | 4 | `mr:0413-hermenegildus` |  | ES | dies_natalis |  |
-| 13 | 5 | `mr:0413-maria-de-capella` | * | FR | dies_natalis |  |
+| 13 | 5 | `mr:0413-ida-boloniensis` | * | FR | dies_natalis |  |
 | 13 | 6 | `mr:0413-caradocus` | * | GB | dies_natalis |  |
 | 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  |
 | 13 | 8 | `mr:0413-albertinus` | * | IT | dies_natalis |  |
@@ -236,7 +236,7 @@
 | 19 | 4 | `mr:0419-geroldus` | * | DE | dies_natalis |  |
 | 19 | 5 | `mr:0419-aelphegus` |  | GB | dies_natalis |  |
 | 19 | 6 | `mr:0419-leo-ix` |  | IT | dies_natalis |  |
-| 19 | 7 | `mr:0419-bertinus` | * | FR | dies_natalis |  |
+| 19 | 7 | `mr:0419-bernardus-paenitens` | * | FR | dies_natalis |  |
 | 19 | 8 | `mr:0419-iacobus-duckett` | * | GB | dies_natalis |  |
 | 20 | 1 | `mr:0420-anicetus` |  | IT | dies_natalis |  |
 | 20 | 2 | `mr:0420-sulpicius-et-servitianus` |  | IT | commemoratio |  |
@@ -321,7 +321,7 @@
 | 26 | 6 | `mr:0426-gulielmus-et-peregrinus` | * | IT | dies_natalis |  |
 | 26 | 7 | `mr:0426-dominicus-et-gregorius` | * | ES | dies_natalis |  |
 | 26 | 8 | `mr:0426-stephanus` | * | RU | depositio |  |
-| 26 | 9 | `mr:0426-isidorus-de-duenas` | * | ES | dies_natalis |  |
+| 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  |
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |
 | 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio |  |

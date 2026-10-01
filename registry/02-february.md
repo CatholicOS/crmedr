@@ -69,7 +69,7 @@
 | 5 | 3 | `mr:0205-avitus` |  | FR | dies_natalis |  |
 | 5 | 4 | `mr:0205-ingenuinus` |  | IT | dies_natalis |  |
 | 5 | 5 | `mr:0205-lucas` | * | IT | dies_natalis |  |
-| 5 | 6 | `mr:0205-caesarius` | * | IT | dies_natalis |  |
+| 5 | 6 | `mr:0205-sabas-iunior` | * | IT | dies_natalis |  |
 | 5 | 7 | `mr:0205-albuinus` |  | IT | commemoratio |  |
 | 5 | 8 | `mr:0205-adalheidis` | * | DE | dies_natalis |  |
 | 5 | 9 | `mr:0205-paulus-miki-et-socii` |  | JP | dies_natalis |  |
@@ -157,7 +157,7 @@
 | 11 | 11 | `mr:0211-tobias-borras-romeu` | * | ES | dies_natalis |  |
 | 12 | 1 | `mr:0212-martyres-carthagine` |  | TN | commemoratio |  |
 | 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  |
-| 12 | 3 | `mr:0212-cornelius` |  | DE | dies_natalis |  |
+| 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |
 | 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  |
 | 12 | 5 | `mr:0212-humbelina` | * | FR | dies_natalis |  |
 | 12 | 6 | `mr:0212-ludanus` | * | FR | dies_natalis |  |

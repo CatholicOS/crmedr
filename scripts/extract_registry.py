@@ -114,6 +114,41 @@ ID_CORRECTIONS = {
     # "Sancti Stephani Fanum" is Launceston; the subject is St Cuthbert Mayne
     # (surnames are not latinized).
     "mr:1130-stephanus-fanus": "mr:1130-cuthbertus-mayne",
+    # #25: fifteen more place-name-lead slugs, found by comparing each slug with the
+    # saints named in its opening place (data/places.json). The opening place is a
+    # monastery, convent, town or district named after a saint; the subject is the
+    # first lowercase sancti/beati after it.
+    "mr:0130-benedictus-de-maretiolo": "mr:0130-columba-marmion",
+    "mr:0212-cornelius": "mr:0212-benedictus-anianensis",
+    "mr:0330-iulianus": "mr:0330-iulius-alvarez",
+    "mr:0412-ioseph": "mr:0412-david-uribe",
+    # "paenitens" keeps him apart from the better-known Bernards.
+    "mr:0419-bertinus": "mr:0419-bernardus-paenitens",
+    "mr:0426-isidorus-de-duenas": "mr:0426-raphael-arnaiz-baron",
+    "mr:0502-gallus": "mr:0502-wiborada",
+    "mr:0524-hyacinthus": "mr:0524-ludovicus-zephyrinus-moreau",
+    "mr:0526-papulus": "mr:0526-berengarius",
+    "mr:0620-iacobus-fodiensi": "mr:0620-ioannes-de-mateola",
+    "mr:0726-benedictus": "mr:0726-simeon",
+    "mr:0823-philippus": "mr:0823-antonius-de-hieracio",
+    "mr:1205-petrus-de-aquara": "mr:1205-lucidus",
+    # "episcopi Insulae": St Luke, bishop of Isola (Capo Rizzuto).
+    "mr:1210-nicolaus-de-viotorito": "mr:1210-lucas-de-insula",
+    # #25, found by a second scan (the subject after a place named after a saint,
+    # mostly a monastery of St Mary).
+    "mr:0205-caesarius": "mr:0205-sabas-iunior",
+    "mr:0406-maria": "mr:0406-catharina-de-pallantia",
+    # Another Ida (of Vallis Rosarum) is mr:0413-ida.
+    "mr:0413-maria-de-capella": "mr:0413-ida-boloniensis",
+    "mr:0508-maria-della-serra": "mr:0508-angelus-de-massatio",
+    "mr:0603-maria-de-cadossa": "mr:0603-conus",
+    "mr:0705-maria-de-terreto": "mr:0705-thomas",
+    "mr:1114-maria": "mr:1114-siardus",
+    "mr:1114-maria-de-gualdo-mazocca": "mr:1114-ioannes-de-tupharia",
+    # The twenty monks of the laura of St Sabas: an anonymous group (rule 8).
+    "mr:0320-sabas": "mr:0320-viginti-monachi-palaestina",
+    # Over-latinized surname: Bl. Francesco Patrizi (#25).
+    "mr:0526-franciscus-patrizus": "mr:0526-franciscus-patrizi",
     # Same place-name-lead bug, but the true subject already had a (wrongly)
     # deprecated ID at the same day: Postel (d. 1846) and Hildegard both have
     # 2004 elogia, so they are current, not attested-only-in-history. The
@@ -121,6 +156,10 @@ ID_CORRECTIONS = {
     # current place-slug entries re-slugged to the proper subject.
     "mr:0716-salvator-visconti": "mr:0716-maria-magdalena-postel",
     "mr:0917-rupertus": "mr:0917-hildegardis",
+    # #25: the convent "Sancti Bonaventurae in Palatino" gave the slug; the subject,
+    # St Leonard of Port Maurice, already had a deprecated ID on the day (attested
+    # in 1749), which becomes current.
+    "mr:1126-bonaventura": "mr:1126-leonardus-a-portu-mauritio",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

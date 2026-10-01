@@ -32,7 +32,7 @@
 | 2 | 3 | `mr:0502-felix` |  | ES | dies_natalis |  |
 | 2 | 4 | `mr:0502-vindemialis` |  | TN | commemoratio |  |
 | 2 | 5 | `mr:0502-waldebertus` | * | FR | dies_natalis |  |
-| 2 | 6 | `mr:0502-gallus` |  | CH | dies_natalis |  |
+| 2 | 6 | `mr:0502-wiborada` |  | CH | dies_natalis |  |
 | 2 | 7 | `mr:0502-nicolaus-hermansson` | * | SE | dies_natalis |  |
 | 2 | 8 | `mr:0502-antoninus` |  | IT | dies_natalis |  |
 | 2 | 9 | `mr:0502-gulielmus-tirry` | * | IE | dies_natalis |  |
@@ -108,7 +108,7 @@
 | 8 | 10 | `mr:0508-metro` | * | IT | dies_natalis |  |
 | 8 | 11 | `mr:0508-wiro` |  | NL | dies_natalis |  |
 | 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  |
-| 8 | 13 | `mr:0508-maria-della-serra` | * | IT | dies_natalis |  |
+| 8 | 13 | `mr:0508-angelus-de-massatio` | * | IT | dies_natalis |  |
 | 8 | 14 | `mr:0508-aloysius-rabata` | * | IT | dies_natalis |  |
 | 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino-symon-de-longprey` | * | CA | dies_natalis |  |
 | 8 | 16 | `mr:0508-ulrica-nisch` | * | DE | dies_natalis |  |
@@ -316,7 +316,7 @@
 | 24 | 9 | `mr:0524-philippus` | * | IT | dies_natalis |  |
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA | dies_natalis |  |
 | 24 | 11 | `mr:0524-augustinus-yi-kwang-hon` |  | KR | dies_natalis |  |
-| 24 | 12 | `mr:0524-hyacinthus` | * | CA | dies_natalis |  |
+| 24 | 12 | `mr:0524-ludovicus-zephyrinus-moreau` | * | CA | dies_natalis |  |
 | 25 | (1) | `mr:0525-beda-venerabilis` |  | GB | dies_natalis |  |
 | 25 | (2) | `mr:0525-gregorius-vii` |  | IT | dies_natalis |  |
 | 25 | (3) | `mr:0525-maria-magdalena-de-pazzi` |  | IT | dies_natalis |  |
@@ -341,9 +341,9 @@
 | 26 | 5 | `mr:0526-priscus` |  | FR | dies_natalis |  |
 | 26 | 6 | `mr:0526-augustinus` |  | GB | depositio |  |
 | 26 | 7 | `mr:0526-desiderius` |  | FR | dies_natalis |  |
-| 26 | 8 | `mr:0526-papulus` | * | FR | dies_natalis |  |
+| 26 | 8 | `mr:0526-berengarius` | * | FR | dies_natalis |  |
 | 26 | 9 | `mr:0526-lambertus` | * | FR | dies_natalis |  |
-| 26 | 10 | `mr:0526-franciscus-patrizus` | * | IT | dies_natalis |  |
+| 26 | 10 | `mr:0526-franciscus-patrizi` | * | IT | dies_natalis |  |
 | 26 | 11 | `mr:0526-andreas-franchi` | * | IT | dies_natalis |  |
 | 26 | 12 | `mr:0526-maria-anna-a-iesu-de-paredes` |  | EC | dies_natalis |  |
 | 26 | 13 | `mr:0526-petrus-sans` |  | CN | dies_natalis |  |

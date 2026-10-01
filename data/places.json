@@ -2745,19 +2745,19 @@
         "source": "lead"
       }
     ],
-    "mr:0130-benedictus-de-maretiolo": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Benedícti de Maretíolo item in Bélgio",
-        "it": "Nel monastero di San Benedetto a Maredsous sempre in Belgio",
-        "source": "lead"
-      }
-    ],
     "mr:0130-carmela-garcia-moyon": [
       {
         "role": "death",
         "la": "In vico Torrent in Hispánia",
         "it": "Nel villaggio di Torrent in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0130-columba-marmion": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Benedícti de Maretíolo item in Bélgio",
+        "it": "Nel monastero di San Benedetto a Maredsous sempre in Belgio",
         "source": "lead"
       }
     ],
@@ -3417,14 +3417,6 @@
         "source": "lead"
       }
     ],
-    "mr:0205-caesarius": [
-      {
-        "role": "death",
-        "la": "Romæ in monastério Sancti Cæsárii",
-        "it": "A Roma nel monastero di San Cesario",
-        "source": "lead"
-      }
-    ],
     "mr:0205-elisabeth-canori-mora": [
       {
         "role": "death",
@@ -3478,6 +3470,14 @@
         "role": "cult",
         "la": "In Ponto",
         "it": "Nel Ponto",
+        "source": "lead"
+      }
+    ],
+    "mr:0205-sabas-iunior": [
+      {
+        "role": "death",
+        "la": "Romæ in monastério Sancti Cæsárii",
+        "it": "A Roma nel monastero di San Cesario",
         "source": "lead"
       }
     ],
@@ -4067,7 +4067,7 @@
         "source": "lead"
       }
     ],
-    "mr:0212-cornelius": [
+    "mr:0212-benedictus-anianensis": [
       {
         "role": "death",
         "la": "In monastério Sancti Cornélii ad Indam in Germánia",
@@ -6885,19 +6885,19 @@
         "source": "lead"
       }
     ],
-    "mr:0320-sabas": [
-      {
-        "role": "death",
-        "la": "In laura Sancti Sabæ in Palæstína",
-        "it": "Nel monastero di Mar Saba in Palestina",
-        "source": "lead"
-      }
-    ],
     "mr:0320-urbicius": [
       {
         "role": "death",
         "la": "Metis in Gállia Bélgica",
         "it": "A Metz nella Gallia belgica, nell’odierna Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0320-viginti-monachi-palaestina": [
+      {
+        "role": "death",
+        "la": "In laura Sancti Sabæ in Palæstína",
+        "it": "Nel monastero di Mar Saba in Palestina",
         "source": "lead"
       }
     ],
@@ -7597,7 +7597,7 @@
         "source": "lead"
       }
     ],
-    "mr:0330-iulianus": [
+    "mr:0330-iulius-alvarez": [
       {
         "role": "death",
         "la": "In pago Sancti Iuliáni territórii Guadalaiarénsis in México",
@@ -8166,6 +8166,14 @@
         "source": "lead"
       }
     ],
+    "mr:0406-catharina-de-pallantia": [
+      {
+        "role": "death",
+        "la": "In monastério Sanctæ Maríæ ad Sacrum Montem supra Varésium in Langobárdia",
+        "it": "Nel monastero di Santa Maria al Sacro Monte sopra Varese",
+        "source": "lead"
+      }
+    ],
     "mr:0406-eutychius": [
       {
         "role": "death",
@@ -8195,14 +8203,6 @@
         "role": "death",
         "la": "Sírmii in Pannónia",
         "it": "A Srijem in Pannonia, nell’odierna Croazia",
-        "source": "lead"
-      }
-    ],
-    "mr:0406-maria": [
-      {
-        "role": "death",
-        "la": "In monastério Sanctæ Maríæ ad Sacrum Montem supra Varésium in Langobárdia",
-        "it": "Nel monastero di Santa Maria al Sacro Monte sopra Varese",
         "source": "lead"
       }
     ],
@@ -8761,19 +8761,19 @@
         "source": "lead"
       }
     ],
+    "mr:0412-david-uribe": [
+      {
+        "role": "death",
+        "la": "In pago Sancti Ioseph territórii Chilpancingénsis in México",
+        "it": "Nei pressi di San José nella regione di Chilpancinga in Messico",
+        "source": "lead"
+      }
+    ],
     "mr:0412-erkembodo": [
       {
         "role": "death",
         "la": "In pago Pontívo Gálliæ",
         "it": "Nel territorio di Ponthieu in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0412-ioseph": [
-      {
-        "role": "death",
-        "la": "In pago Sancti Ioseph territórii Chilpancingénsis in México",
-        "it": "Nei pressi di San José nella regione di Chilpancinga in Messico",
         "source": "lead"
       }
     ],
@@ -8881,6 +8881,14 @@
         "source": "lead"
       }
     ],
+    "mr:0413-ida-boloniensis": [
+      {
+        "role": "death",
+        "la": "In monastério Sanctæ Maríæ de Capélla prope Vastum in pago Gálliæ Boloniénsi",
+        "it": "Nel monastero di Santa Maria presso Wast nella regione di Boulogne in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0413-ioannes-lockwood-et-eduardus-catherick": [
       {
         "role": "death",
@@ -8894,14 +8902,6 @@
         "role": "death",
         "la": "Tiférni Tiberíni in Umbria",
         "it": "A Città di Castello in Umbria",
-        "source": "lead"
-      }
-    ],
-    "mr:0413-maria-de-capella": [
-      {
-        "role": "death",
-        "la": "In monastério Sanctæ Maríæ de Capélla prope Vastum in pago Gálliæ Boloniénsi",
-        "it": "Nel monastero di Santa Maria presso Wast nella regione di Boulogne in Francia",
         "source": "lead"
       }
     ],
@@ -9452,7 +9452,7 @@
         "source": "lead"
       }
     ],
-    "mr:0419-bertinus": [
+    "mr:0419-bernardus-paenitens": [
       {
         "role": "death",
         "la": "Apud monastérium Sancti Bertíni in pago Taruannénsi Gálliæ",
@@ -10085,14 +10085,6 @@
         "source": "lead"
       }
     ],
-    "mr:0426-isidorus-de-duenas": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Isidóri de Dueñas in Hispánia",
-        "it": "Nel monastero di Sant’Isidoro di Dueñas in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0426-iulius-junyer-padern": [
       {
         "role": "death",
@@ -10114,6 +10106,14 @@
         "role": "death",
         "la": "In pago Gabiénsi via Prænestína miliário tricésimo ab Urbe",
         "it": "Nel territorio di Gabi al trentesimo miglio della via Prenestina",
+        "source": "lead"
+      }
+    ],
+    "mr:0426-raphael-arnaiz-baron": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Isidóri de Dueñas in Hispánia",
+        "it": "Nel monastero di Sant’Isidoro di Dueñas in Spagna",
         "source": "lead"
       }
     ],
@@ -10725,14 +10725,6 @@
         "source": "lead"
       }
     ],
-    "mr:0502-gallus": [
-      {
-        "role": "death",
-        "la": "In pago Sancti Galli in regióne Helvetiórum",
-        "it": "Nel territorio di San Gallo nell’odierna Svizzera",
-        "source": "lead"
-      }
-    ],
     "mr:0502-gulielmus-tirry": [
       {
         "role": "death",
@@ -10778,6 +10770,14 @@
         "role": "death",
         "la": "Luxóvii in Burgúndia",
         "it": "A Luxeuil in Burgundia, in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0502-wiborada": [
+      {
+        "role": "death",
+        "la": "In pago Sancti Galli in regióne Helvetiórum",
+        "it": "Nel territorio di San Gallo nell’odierna Svizzera",
         "source": "lead"
       }
     ],
@@ -11237,6 +11237,14 @@
         "source": "lead"
       }
     ],
+    "mr:0508-angelus-de-massatio": [
+      {
+        "role": "death",
+        "la": "In monastério Sanctæ Maríæ della Serra item in Picéno",
+        "it": "Nel monastero di Santa Maria della Serra nelle Marche",
+        "source": "lead"
+      }
+    ],
     "mr:0508-antonius-bajewski": [
       {
         "role": "death",
@@ -11299,14 +11307,6 @@
         "role": "death",
         "la": "In Quebéco Cánadæ província",
         "it": "Nel Québec in Canada",
-        "source": "lead"
-      }
-    ],
-    "mr:0508-maria-della-serra": [
-      {
-        "role": "death",
-        "la": "In monastério Sanctæ Maríæ della Serra item in Picéno",
-        "it": "Nel monastero di Santa Maria della Serra nelle Marche",
         "source": "lead"
       }
     ],
@@ -12777,19 +12777,19 @@
         "source": "lead"
       }
     ],
-    "mr:0524-hyacinthus": [
-      {
-        "role": "death",
-        "la": "In urbe Sancti Hyacínthi in Cánada",
-        "it": "Nella città di Saint-Hyacinthe in Canada",
-        "source": "lead"
-      }
-    ],
     "mr:0524-ioannes-de-prado": [
       {
         "role": "death",
         "la": "In Maróchio",
         "it": "In Marocco",
+        "source": "lead"
+      }
+    ],
+    "mr:0524-ludovicus-zephyrinus-moreau": [
+      {
+        "role": "death",
+        "la": "In urbe Sancti Hyacínthi in Cánada",
+        "it": "Nella città di Saint-Hyacinthe in Canada",
         "source": "lead"
       }
     ],
@@ -12969,6 +12969,14 @@
         "source": "lead"
       }
     ],
+    "mr:0526-berengarius": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Pápuli in Gállia",
+        "it": "Nel monastero di Saint-Papoul in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0526-desiderius": [
       {
         "role": "death",
@@ -12993,7 +13001,7 @@
         "source": "lead"
       }
     ],
-    "mr:0526-franciscus-patrizus": [
+    "mr:0526-franciscus-patrizi": [
       {
         "role": "death",
         "la": "Senis in Etrúria",
@@ -13030,14 +13038,6 @@
         "role": "death",
         "la": "Quiti in Æquatória",
         "it": "A Quito in Ecuador",
-        "source": "lead"
-      }
-    ],
-    "mr:0526-papulus": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Pápuli in Gállia",
-        "it": "Nel monastero di Saint-Papoul in Francia",
         "source": "lead"
       }
     ],
@@ -13786,6 +13786,14 @@
         "source": "lead"
       }
     ],
+    "mr:0603-conus": [
+      {
+        "role": "death",
+        "la": "In cœnóbio Sanctæ Maríæ de Cadóssa in Lucánia",
+        "it": "Nel cenobio di Santa Maria di Cadossa in Lucania",
+        "source": "lead"
+      }
+    ],
     "mr:0603-davinus": [
       {
         "role": "death",
@@ -13855,14 +13863,6 @@
         "role": "death",
         "la": "Magdúni ad Lígerim in território Aurelianénsi item Gálliæ",
         "it": "A Mehun-sur-Loire nel territorio di Orléans sempre in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0603-maria-de-cadossa": [
-      {
-        "role": "death",
-        "la": "In cœnóbio Sanctæ Maríæ de Cadóssa in Lucánia",
-        "it": "Nel cenobio di Santa Maria di Cadossa in Lucania",
         "source": "lead"
       }
     ],
@@ -15315,7 +15315,7 @@
         "source": "lead"
       }
     ],
-    "mr:0620-iacobus-fodiensi": [
+    "mr:0620-ioannes-de-mateola": [
       {
         "role": "death",
         "la": "In monastério Sancti Iacóbi Fodiénsi in Apúlia",
@@ -16550,14 +16550,6 @@
         "source": "lead"
       }
     ],
-    "mr:0705-maria-de-terreto": [
-      {
-        "role": "death",
-        "la": "In monastério Sanctæ Maríæ de Terréto prope Rhégium Iúlii in Calábria",
-        "it": "Nel monastero di Santa Maria di Terreto vicino a Reggio Calabria",
-        "source": "lead"
-      }
-    ],
     "mr:0705-martha": [
       {
         "role": "death",
@@ -16587,6 +16579,14 @@
         "role": "death",
         "la": "Prope vicum Huangeryin apud Ningjinxian Sinárum Hebei provínciæ",
         "it": "Presso il villaggio di Huangeryin vicino a Ningjinxian nella provincia dello Hebei in Cina",
+        "source": "lead"
+      }
+    ],
+    "mr:0705-thomas": [
+      {
+        "role": "death",
+        "la": "In monastério Sanctæ Maríæ de Terréto prope Rhégium Iúlii in Calábria",
+        "it": "Nel monastero di Santa Maria di Terreto vicino a Reggio Calabria",
         "source": "lead"
       }
     ],
@@ -18874,14 +18874,6 @@
         "source": "lead"
       }
     ],
-    "mr:0726-benedictus": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Benedícti ad Padum in agro Mantuáno",
-        "it": "Nel monastero di San Benedetto Po nei pressi di Mantova",
-        "source": "lead"
-      }
-    ],
     "mr:0726-camilla-gentili": [
       {
         "role": "death",
@@ -18959,6 +18951,14 @@
         "role": "death",
         "la": "Arausióne item in Gállia",
         "it": "A Orange sempre in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0726-simeon": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Benedícti ad Padum in agro Mantuáno",
+        "it": "Nel monastero di San Benedetto Po nei pressi di Mantova",
         "source": "lead"
       }
     ],
@@ -22007,6 +22007,14 @@
         "source": "lead"
       }
     ],
+    "mr:0823-antonius-de-hieracio": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Philíppi prope Locros in Calábria inferióre",
+        "it": "Nel monastero di San Filippo vicino a Locri in Calabria",
+        "source": "lead"
+      }
+    ],
     "mr:0823-claudius-et-socii": [
       {
         "role": "death",
@@ -22092,14 +22100,6 @@
         "role": "death",
         "la": "Novis in Mœsia Inferióre",
         "it": "A Sistov in Mesia, nell’odierna Bulgaria",
-        "source": "lead"
-      }
-    ],
-    "mr:0823-philippus": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Philíppi prope Locros in Calábria inferióre",
-        "it": "Nel monastero di San Filippo vicino a Locri in Calabria",
         "source": "lead"
       }
     ],
@@ -30500,6 +30500,14 @@
         "source": "lead"
       }
     ],
+    "mr:1114-ioannes-de-tupharia": [
+      {
+        "role": "death",
+        "la": "In cœnóbio Sanctæ Maríæ de Gualdo Mazocca prope Campum Bassum in Itália",
+        "it": "Nel cenobio di Santa Maria di Gualdo Mazocca vicino a Campobasso",
+        "source": "lead"
+      }
+    ],
     "mr:1114-ioannes-liccio": [
       {
         "role": "death",
@@ -30513,22 +30521,6 @@
         "role": "death",
         "la": "Augæ in Normánnia",
         "it": "A Eu nella Normandia, in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:1114-maria": [
-      {
-        "role": "death",
-        "la": "In Horto Sanctæ Maríæ in Frísia",
-        "it": "A Malgarten in Frisia, nell’odierna Olanda",
-        "source": "lead"
-      }
-    ],
-    "mr:1114-maria-de-gualdo-mazocca": [
-      {
-        "role": "death",
-        "la": "In cœnóbio Sanctæ Maríæ de Gualdo Mazocca prope Campum Bassum in Itália",
-        "it": "Nel cenobio di Santa Maria di Gualdo Mazocca vicino a Campobasso",
         "source": "lead"
       }
     ],
@@ -30553,6 +30545,14 @@
         "role": "death",
         "la": "Icósii in Africa septemtrionáli",
         "it": "Ad Algeri nell’Africa settentrionale",
+        "source": "lead"
+      }
+    ],
+    "mr:1114-siardus": [
+      {
+        "role": "death",
+        "la": "In Horto Sanctæ Maríæ in Frísia",
+        "it": "A Malgarten in Frisia, nell’odierna Olanda",
         "source": "lead"
       }
     ],
@@ -31588,14 +31588,6 @@
         "source": "lead"
       }
     ],
-    "mr:1126-bonaventura": [
-      {
-        "role": "death",
-        "la": "Romæ in convéntu Sancti Bonaventúræ in Palatíno",
-        "it": "A Roma nel convento di San Bonaventura sul Palatino",
-        "source": "lead"
-      }
-    ],
     "mr:1126-caietana-sterni": [
       {
         "role": "death",
@@ -31641,6 +31633,14 @@
         "role": "death",
         "la": "Romæ",
         "it": "A Roma",
+        "source": "lead"
+      }
+    ],
+    "mr:1126-leonardus-a-portu-mauritio": [
+      {
+        "role": "death",
+        "la": "Romæ in convéntu Sancti Bonaventúræ in Palatíno",
+        "it": "A Roma nel convento di San Bonaventura sul Palatino",
         "source": "lead"
       }
     ],
@@ -32429,6 +32429,14 @@
         "source": "lead"
       }
     ],
+    "mr:1205-lucidus": [
+      {
+        "role": "death",
+        "la": "In cœnóbio Sancti Petri de Aquára in Lucánia",
+        "it": "Nel cenobio di San Pietro di Aquara in Campania",
+        "source": "lead"
+      }
+    ],
     "mr:1205-narcissus-putz": [
       {
         "role": "death",
@@ -32442,14 +32450,6 @@
         "role": "death",
         "la": "Sveríni in Megalopolitána Germániæ regióne",
         "it": "A Schwerin nella regione di Mecklenburg in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:1205-petrus-de-aquara": [
-      {
-        "role": "death",
-        "la": "In cœnóbio Sancti Petri de Aquára in Lucánia",
-        "it": "Nel cenobio di San Pietro di Aquara in Campania",
         "source": "lead"
       }
     ],
@@ -32773,19 +32773,19 @@
         "via": "mr:1210-polydorus-plasden-et-eustatius-white"
       }
     ],
+    "mr:1210-lucas-de-insula": [
+      {
+        "role": "death",
+        "la": "In monastério Sancti Nicolái de Viotoríto in Calábria",
+        "it": "Nel monastero di San Nicola di Viotorito in Calabria",
+        "source": "lead"
+      }
+    ],
     "mr:1210-maurus": [
       {
         "role": "death",
         "la": "Romæ in cœmetério Trasónis via Salária Nova",
         "it": "A Roma nel cimitero di Trasone sulla via Salaria nuova",
-        "source": "lead"
-      }
-    ],
-    "mr:1210-nicolaus-de-viotorito": [
-      {
-        "role": "death",
-        "la": "In monastério Sancti Nicolái de Viotoríto in Calábria",
-        "it": "Nel monastero di San Nicola di Viotorito in Calabria",
         "source": "lead"
       }
     ],

@@ -53,7 +53,7 @@
 | 4 | 17 | `mr:1204-ioannes-calabria` |  | IT | dies_natalis |  |
 | 5 | 1 | `mr:1205-crispina-thagorensis` |  | DZ | dies_natalis |  |
 | 5 | 2 | `mr:1205-sabas` |  | IL | dies_natalis |  |
-| 5 | 3 | `mr:1205-petrus-de-aquara` | * | IT | dies_natalis |  |
+| 5 | 3 | `mr:1205-lucidus` | * | IT | dies_natalis |  |
 | 5 | 4 | `mr:1205-geraldus` | * | PT | commemoratio |  |
 | 5 | 5 | `mr:1205-bartholomaeus-fanti` | * | IT | dies_natalis |  |
 | 5 | 6 | `mr:1205-ioannes-almond` |  | GB | dies_natalis |  |
@@ -100,7 +100,7 @@
 | 10 | 2 | `mr:1210-maurus` |  | IT | dies_natalis |  |
 | 10 | 3 | `mr:1210-gemellus` |  | TR | dies_natalis |  |
 | 10 | 4 | `mr:1210-gregorius-iii` |  | IT | dies_natalis |  |
-| 10 | 5 | `mr:1210-nicolaus-de-viotorito` | * | IT | dies_natalis |  |
+| 10 | 5 | `mr:1210-lucas-de-insula` | * | IT | dies_natalis |  |
 | 10 | 6 | `mr:1210-edmundus-gennings` |  | GB | dies_natalis |  |
 | 10 | 7 | `mr:1210-polydorus-plasden-et-eustatius-white` |  | GB | dies_natalis |  |
 | 10 | 8 | `mr:1210-ioannes-roberts` |  | GB | dies_natalis |  |

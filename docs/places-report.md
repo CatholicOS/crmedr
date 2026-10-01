@@ -97,7 +97,7 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0129-valerius` | ministry (sedem) |  |
 | `mr:0129-aphraates` | birth (natus) |  |
 | `mr:0130-paulus-ho-hyob` | death (occubuit) |  |
-| `mr:0130-benedictus-de-maretiolo` | birth (natus) |  |
+| `mr:0130-columba-marmion` | birth (natus) |  |
 | `mr:0131-abraham` | ministry (episcopi arbelensis) |  |
 | `mr:0131-waldus` | ministry (episcopi ebroicensis) |  |
 | `mr:0131-eusebius` | birth (natus) |  |

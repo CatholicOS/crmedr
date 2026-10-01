@@ -2556,6 +2556,15 @@
   "country": "IL"
  },
  {
+  "id": "mr:0320-photina-et-socii",
+  "month": 3,
+  "day": 20,
+  "entry": 4,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1749",
+  "country": null
+ },
+ {
   "id": "mr:0320-septem-martyres-amisi",
   "month": 3,
   "day": 20,
@@ -2743,6 +2752,15 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": "SY"
+ },
+ {
+  "id": "mr:0324-pigmenius",
+  "month": 3,
+  "day": 24,
+  "entry": 3,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1914_en_unofficial",
+  "country": "IT"
  },
  {
   "id": "mr:0325-annuntiatio-beatissimae-virginis-genitricis",
@@ -7974,6 +7992,15 @@
   "country": null
  },
  {
+  "id": "mr:0823-philippus-benizi",
+  "month": 8,
+  "day": 23,
+  "entry": 2,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1749",
+  "country": "IT"
+ },
+ {
   "id": "mr:0823-restitutus-et-socii",
   "month": 8,
   "day": 23,
@@ -11599,15 +11626,6 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR"
- },
- {
-  "id": "mr:1126-leonardus-a-portu-mauritio",
-  "month": 11,
-  "day": 26,
-  "entry": 9,
-  "deprecated": true,
-  "attested_in": "martyrologium_romanum_1749",
-  "country": "IT"
  },
  {
   "id": "mr:1126-basolus",
