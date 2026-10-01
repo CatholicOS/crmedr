@@ -25,6 +25,9 @@ USER_AGENT = "crmedr-gazetteer/1.0 (https://github.com/CatholicOS/crmedr)"
 PLACE_ROOTS = ("Q486972", "Q56061", "Q44613", "Q16970", "Q839954", "Q23442", "Q8502",
                "Q82794", "Q1620908", "Q3024240", "Q35509", "Q23413", "Q6256")
 RETRY_CODES = {429, 500, 502, 503, 504}
+# Countries that places' P17 names but that carry no P297 themselves: the
+# Netherlands (Q55) is the constituent country; NL sits on the Kingdom (Q29999).
+EXTRA_COUNTRY_ISO = {"Q55": "NL"}
 
 
 class WikidataError(Exception):
@@ -152,7 +155,7 @@ class Wikidata:
         if self._iso is None:
             query = "SELECT ?c ?iso WHERE { ?c wdt:P297 ?iso }"
             data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"}))
-            self._iso = {}
+            self._iso = dict(EXTRA_COUNTRY_ISO)
             for b in data["results"]["bindings"]:
                 self._iso.setdefault(b["c"]["value"].rsplit("/", 1)[1], b["iso"]["value"])
         return self._iso

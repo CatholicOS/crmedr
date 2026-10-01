@@ -211,6 +211,11 @@ class ClientTest(unittest.TestCase):
         self.assertEqual(fetched, [])
         self.assertEqual(sum(1 for u in self.fetch.calls if "P297" in u), 1)
 
+    def test_netherlands_constituent_country_maps_to_nl(self):
+        self.fetch.entities["Q8"] = raw_entity("Q8", it=("Fictadam",), p17=[snak("P17", "Q55")])
+        self.fetch.searches["Fictadam"] = ["Q8"]
+        self.assertEqual(self.client.candidates("Fictadam")[0]["country"], "NL")
+
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})
         self.assertEqual(self.client.region_countries("Fictistan"), {"FX"})
