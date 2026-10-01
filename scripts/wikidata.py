@@ -206,10 +206,14 @@ class Wikidata:
         return self._enrich([summarize(raw)])[0] if raw else None
 
     def region_coords(self, text):
-        """Coordinates of the non-country items with that exact Italian name."""
+        """Coordinates of the non-country items with that exact Italian name. A
+        country's name ("Francia") has none: the country check covers it, and
+        hamlets that share the name must not set a distance."""
         name = fold(text)
-        return [c["coords"] for c in self.candidates(text)
-                if name in c["names_it"] and not c["iso_self"] and c["coords"]]
+        named = [c for c in self.candidates(text) if name in c["names_it"]]
+        if any(c["iso_self"] for c in named):
+            return []
+        return [c["coords"] for c in named if c["coords"]]
 
     def region_countries(self, text):
         name = fold(text)

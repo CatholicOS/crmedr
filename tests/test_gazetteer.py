@@ -40,12 +40,22 @@ class ParseItalianTest(unittest.TestCase):
         self.assertEqual(p["claims"], ["DE"])
 
     def test_claim_forms(self):
-        for it in ("A Fictopoli in Fictia, ora in Francia", "A Fictopoli sempre in Francia",
-                   "A Fictopoli ancora in Francia", "A Fictopoli nel territorio dell’attuale Francia",
-                   "A Fictopoli in Fictia, in Francia", "A Fictopoli nell’attuale Francia"):
+        for it in ("A Fictopoli in Fictia, ora in Francia", "A Fictopoli in Fictia, oggi in Francia",
+                   "A Fictopoli nel territorio dell’attuale Francia", "A Fictopoli nell’attuale Francia",
+                   "A Fictopoli in Fictia, nell’odierna Francia"):
             self.assertEqual(gt.parse_italian(it)["claims"], ["FR"], it)
         self.assertEqual(gt.parse_italian("Presso Fictopoli nel Fictiense, nell’odierno Belgio")["claims"], ["BE"])
         self.assertEqual(gt.parse_italian("A Fictopoli nel Fictiense, ora Viet Nam")["claims"], ["VN"])
+
+    def test_a_bare_country_name_is_a_region_not_a_claim(self):
+        # "in Siria" may name the ancient region; only explicit modern wording is a claim.
+        for it in ("A Fictopoli sempre in Francia", "A Fictopoli ancora in Francia",
+                   "A Fictopoli in Fictia, in Francia", "A Fictopoli in Francia"):
+            p = gt.parse_italian(it)
+            self.assertEqual(p["claims"], [], it)
+            self.assertIn("Francia", p["regions"], it)
+        p = gt.parse_italian("A Fictopoli nell’antica Armenia")
+        self.assertEqual((p["claims"], p["regions"]), ([], ["Armenia"]))
 
     def test_site_heads(self):
         self.assertEqual(gt.parse_italian("Nel monastero di Fictiaco in Fictia")["heads"],
@@ -251,6 +261,11 @@ class ClientTest(unittest.TestCase):
         self.assertEqual(list(cache.glob("*.tmp")), [])
         self.assertTrue(all(json.loads(f.read_text(encoding="utf-8")) is not None for f in cache.glob("*.json")))
 
+    def test_region_coords_skip_a_country_name(self):
+        self.fetch.entities["Q9"] = raw_entity("Q9", it=("Fictistan",), p17=[snak("P17", "Q100")], coords=(1.0, 2.0))
+        self.fetch.searches["Fictistan"] = ["Q100", "Q9"]
+        self.assertEqual(self.client.region_coords("Fictistan"), [])
+
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})
         self.assertEqual(self.client.region_countries("Fictistan"), {"FX"})
@@ -430,6 +445,13 @@ class EvaluateTest(unittest.TestCase):
         self.assertIsNone(r["auto"])
         self.assertIn("country: TA is not an ISO 3166-1 alpha-2 code", r["failed"])
 
+    def test_a_bare_country_name_is_checked_as_a_region(self):
+        r = bg.evaluate("Fictiochíæ in Sýria", item("Ad Fictiochia in Siria"),
+                        [cand("Q1", it=["Fictiochia"], la=["Fictiochia"], country="TR")], lambda t: {"SY"})
+        self.assertIsNone(r["auto"])
+        self.assertEqual(r["claims"], [])
+        self.assertIn("country: region 'Siria' is not in TR", r["failed"])
+
     def test_no_single_country(self):
         r = bg.evaluate("Fictópoli", item("A Fictopoli"),
                         [cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country=None, countries=["FX", "FY"])],
@@ -462,6 +484,15 @@ INDEX = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurre
          "Altrópoli": {"it": [], "occurrences": ["mr:0102-b"], "lead_countries": {}}}
 
 
+class DeriveTextSaysTest(unittest.TestCase):
+    def test_only_explicit_claims_that_disagree(self):
+        its = ["Ad Fictiochia di Fictia, nell’odierna Turchia", "Ad Fictiochia di Fictia, oggi in Turchia",
+               "Ad Fictiochia in Siria"]
+        self.assertEqual(bg.derive_text_says(its, "TR"), [])
+        self.assertEqual(bg.derive_text_says(its, "SY"), [
+            {"country": "TR", "it": its[0]}, {"country": "TR", "it": its[1]}])
+
+
 class ValidateTest(unittest.TestCase):
     def good(self):
         return {"Fictópoli": {"wikidata": "Q1", "label": "Fictopolis", "country": "FR", "status": "reviewed",
@@ -488,10 +519,16 @@ class ValidateTest(unittest.TestCase):
              "text_says"),
             ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "auto", "extra": 1},
              "keys"),
+            # FR differs from the explicit "nell’odierna Germania": text_says is required
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "reviewed"}, "text_says"),
         ]
         for la, entry, word in cases:
             errors = bg.validate({la: entry}, INDEX)
             self.assertTrue(errors and word in errors[0], (la, entry, errors))
+
+    def test_text_says_absent_when_the_text_agrees(self):
+        good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": "DE", "status": "reviewed"}}
+        self.assertEqual(bg.validate(good, INDEX), [])
 
     def test_key_both_decided_and_queued(self):
         errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Fictópoli"}])
@@ -570,6 +607,13 @@ class ProposeTest(unittest.TestCase):
         self.assertEqual(op["suggested"], {"wikidata": "Q3", "country": "IT"})
         self.assertEqual((op["reasoning"], op["confidence"]), ("r", "high"))
         self.assertEqual(len(op["candidates"]), 2)
+
+    def test_a_kept_suggestion_loses_its_text_says(self):
+        review = bg.new_changeset([{"op": "resolve_place", "id": "Altropoli", "candidates": [],
+                                    "suggested": {"wikidata": "Q3", "country": "IT",
+                                                  "text_says": [{"country": "SY", "it": "A Altropoli"}]}}])
+        bg.propose({}, review, self.index, self.client)
+        self.assertEqual(review["operations"][0]["suggested"], {"wikidata": "Q3", "country": "IT"})
 
     def test_disagreeing_suggestion_keeps_the_place_queued(self):
         review = bg.new_changeset([{"op": "resolve_place", "id": "Fictopoli", "candidates": [],
@@ -663,7 +707,7 @@ class ApplyTest(unittest.TestCase):
 
     def test_accept_uses_suggestion(self):
         n, gaz, review = self.run_apply(op("Fictópoli", "accept", [self.c2, self.c1],
-                                           suggested={"wikidata": "Q1", "country": "FR", "text_says": self.says}))
+                                           suggested={"wikidata": "Q1", "country": "FR"}))
         self.assertEqual(n, 1)
         self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q1", "label": "Fictopolis", "country": "FR",
                                             "status": "reviewed", "text_says": self.says})
@@ -679,6 +723,12 @@ class ApplyTest(unittest.TestCase):
                                       edited={"wikidata": "Q2"}))
         self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q2", "label": "Fictopolis Nova", "country": "DE",
                                             "status": "reviewed"})
+
+    def test_text_says_is_derived_not_taken_from_the_decision(self):
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1, self.c2],
+                                      suggested={"wikidata": "Q1", "country": "FR", "text_says": []},
+                                      edited={"wikidata": "Q1", "country": "IT", "text_says": []}))
+        self.assertEqual(gaz["Fictópoli"]["text_says"], self.says)
 
     def test_edit_to_item_not_in_candidates_is_fetched(self):
         _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q7", "country": "IT"}))
@@ -742,7 +792,7 @@ class VerifySuggestionsTest(unittest.TestCase):
             o["confidence"] = "sure"
         errors, warnings = bg.verify_suggestions(review, INDEX, self.client)
         text = "\n".join(errors)
-        for word in ("no such item", "not an ISO", "text_says", "confidence"):
+        for word in ("no such item", "not an ISO", "confidence"):
             self.assertIn(word, text)
         self.assertTrue(any("differs from the item's country FR" in w for w in warnings))
 
