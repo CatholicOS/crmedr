@@ -106,5 +106,17 @@ class IdCorrectionsAppliedTest(unittest.TestCase):
     def test_stephanus_fanus_is_corrected(self):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:1130-stephanus-fanus"), "mr:1130-cuthbertus-mayne")
 
+class PlaceLeadCorrections25Test(unittest.TestCase):
+    """#25: Leonard's deprecated ID became current; three deprecated IDs were coined."""
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        self.assertFalse(entries["mr:1126-leonardus-a-portu-mauritio"].get("deprecated"))
+        for mr_id in ("mr:0320-photina-et-socii", "mr:0823-philippus-benizi", "mr:0324-pigmenius"):
+            self.assertTrue(entries[mr_id]["deprecated"], mr_id)
+        self.assertEqual(r.ID_CORRECTIONS["mr:1126-bonaventura"], "mr:1126-leonardus-a-portu-mauritio")
+
+
 if __name__ == "__main__":
     unittest.main()

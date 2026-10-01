@@ -381,7 +381,7 @@
 | 30 | 13 | `mr:0130-thomas-khuong` |  | VN | dies_natalis |  |
 | 30 | 14 | `mr:0130-david-galvan` |  | MX | dies_natalis |  |
 | 30 | 15 | `mr:0130-mucianus-maria-wiaux` | * | BE | dies_natalis |  |
-| 30 | 16 | `mr:0130-benedictus-de-maretiolo` | * | BE | dies_natalis |  |
+| 30 | 16 | `mr:0130-columba-marmion` | * | BE | dies_natalis |  |
 | 30 | 17 | `mr:0130-carmela-garcia-moyon` | * | ES | dies_natalis |  |
 | 30 | 18 | `mr:0130-sigismundus-pisarski` | * | PL | dies_natalis |  |
 | 31 | (1) | `mr:0131-ioannes-bosco` |  | IT | dies_natalis |  |

@@ -340,7 +340,7 @@
 | 23 | 6 | `mr:0823-claudius-et-socii` |  | TR | dies_natalis |  |
 | 23 | 7 | `mr:0823-flavianus` |  | FR | dies_natalis |  |
 | 23 | 8 | `mr:0823-eugenius` | * | IE | dies_natalis |  |
-| 23 | 9 | `mr:0823-philippus` | * | IT | dies_natalis |  |
+| 23 | 9 | `mr:0823-antonius-de-hieracio` | * | IT | dies_natalis |  |
 | 23 | 10 | `mr:0823-ioannes-bourdon` | * | FR | dies_natalis |  |
 | 23 | 11 | `mr:0823-constantinus-carbonell-sempere` | * | ES | dies_natalis |  |
 | 23 | 12 | `mr:0823-florentinus-perez-romero` | * | ES | dies_natalis |  |

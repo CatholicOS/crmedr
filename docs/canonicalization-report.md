@@ -295,6 +295,64 @@ the first-named subject, St Cuthbert Mayne; surnames are not latinized. The `la`
 earlier slug fixes (#5) this is a rename, not a deprecation. No collision on the day;
 the only other Cuthbert is mr:0320-cuthbertus.
 
+**Slug corrections (applied, October 2026, #25)**: 24 more workbook IDs had been
+coined from the saint named in the opening place (a monastery, convent, town or
+district named after a saint, often a monastery of St Mary), not from the subject,
+which is the first lowercase *sancti/beati* after the place. They were found by
+comparing each slug with the saints named in its opening place, then with the
+subject after any place named after a saint. Renamed (not deprecated), each in
+`ID_CORRECTIONS`:
+
+| Workbook ID | Corrected ID | Subject |
+| --- | --- | --- |
+| mr:0130-benedictus-de-maretiolo | mr:0130-columba-marmion | Bl. Columba Marmion |
+| mr:0205-caesarius | mr:0205-sabas-iunior | St Sabas the Younger |
+| mr:0212-cornelius | mr:0212-benedictus-anianensis | St Benedict of Aniane |
+| mr:0320-sabas | mr:0320-viginti-monachi-palaestina | the twenty monks of Mar Saba (rule 8) |
+| mr:0330-iulianus | mr:0330-iulius-alvarez | St Julius Álvarez |
+| mr:0406-maria | mr:0406-catharina-de-pallantia | Bl. Catherine of Pallanza |
+| mr:0412-ioseph | mr:0412-david-uribe | St David Uribe |
+| mr:0413-maria-de-capella | mr:0413-ida-boloniensis | Bl. Ida of Boulogne (another Ida is mr:0413-ida) |
+| mr:0419-bertinus | mr:0419-bernardus-paenitens | Bl. Bernard the Penitent |
+| mr:0426-isidorus-de-duenas | mr:0426-raphael-arnaiz-baron | Bl. Raphael Arnáiz Barón |
+| mr:0502-gallus | mr:0502-wiborada | St Wiborada |
+| mr:0508-maria-della-serra | mr:0508-angelus-de-massatio | Bl. Angelo of Massaccio |
+| mr:0524-hyacinthus | mr:0524-ludovicus-zephyrinus-moreau | Bl. Louis-Zéphirin Moreau |
+| mr:0526-papulus | mr:0526-berengarius | St Berengar |
+| mr:0603-maria-de-cadossa | mr:0603-conus | St Conus |
+| mr:0620-iacobus-fodiensi | mr:0620-ioannes-de-mateola | St John of Matera (printed *de Matéola*) |
+| mr:0705-maria-de-terreto | mr:0705-thomas | St Thomas, abbot |
+| mr:0726-benedictus | mr:0726-simeon | St Simeon of Polirone |
+| mr:0823-philippus | mr:0823-antonius-de-hieracio | St Anthony of Gerace |
+| mr:1114-maria | mr:1114-siardus | St Siard |
+| mr:1114-maria-de-gualdo-mazocca | mr:1114-ioannes-de-tupharia | Bl. John of Tufara |
+| mr:1205-petrus-de-aquara | mr:1205-lucidus | St Lucidus |
+| mr:1210-nicolaus-de-viotorito | mr:1210-lucas-de-insula | St Luke, bishop of Isola |
+
+mr:1126-bonaventura (from "in convéntu Sancti Bonaventúræ") is St Leonard of Port
+Maurice, who already had a deprecated ID on the day, attested in 1749:
+mr:1126-leonardus-a-portu-mauritio. As for Postel and Hildegard, that ID becomes
+current and the deprecated entry is removed; the 1749 and 1914 texts already carry
+it. The 2004 Latin prints *Leonárdi de Portu Maurítio*; the ID keeps the older
+*a Portu Mauritio* so that one ID spans the three editions. mr:0526-franciscus-patrizus
+(a latinized surname) is corrected to mr:0526-franciscus-patrizi.
+
+The wrong 2004 IDs had also misled the alignment of the historical editions
+(martyrology-api), which is corrected there: the 1749 and 1914 eulogies of St Photina
+and companions (20 March) and the 1749 feast of St Philip Benizi (23 August) had been
+aligned to mr:0320-sabas and mr:0823-philippus; the 1914 Pigmenius (24 March, "in the
+time of Julian the Apostate") to mr:0330-iulianus. Three deprecated IDs are coined:
+mr:0320-photina-et-socii (1749), mr:0823-philippus-benizi (1749) and mr:0324-pigmenius
+(1914 English); the 1914 Philip Benizi (23 August) is aligned to mr:0822-philippus-benizi.
+
+The subjects follow the 2004 texts, each language its own edition (the Latin and the
+Italian sometimes differ in *sanctus/beatus*). The same review corrected subjects
+that had been taken from the place too: 19 Latin honorifics (e.g. mr:0726-camilla-gentili,
+"Sanctus Camilla" -> "Beata Camilla Gentili"; mr:0104-christiana-menabuoi, from "In
+Sancta Cruce", is *beata*), 16 Latin honorifics of the wrong gender or number
+("Sanctus Agnes", "Sanctus Scillitani"), 14 Italian subjects that were the place
+("Santa Croce in Val d’Arno") and 4 English ones that named the place's saint.
+
 ## Country-code corrections (September 2026)
 
 `country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the

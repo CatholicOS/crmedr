@@ -45,7 +45,7 @@
 | 3 | 10 | `mr:0603-davinus` |  | IT | dies_natalis |  |
 | 3 | 11 | `mr:0603-morandus` | * | FR | dies_natalis |  |
 | 3 | 12 | `mr:0603-andreas-caccioli` | * | IT | dies_natalis |  |
-| 3 | 13 | `mr:0603-maria-de-cadossa` | * | IT | dies_natalis |  |
+| 3 | 13 | `mr:0603-conus` | * | IT | dies_natalis |  |
 | 3 | 14 | `mr:0603-franciscus-ingleby` | * | GB | dies_natalis |  |
 | 3 | 15 | `mr:0603-ioannes-grande` |  | ES | dies_natalis |  |
 | 3 | 16 | `mr:0603-carolus-renatus-collas-du-bignon` | * | FR | dies_natalis |  |
@@ -236,7 +236,7 @@
 | 19 | 11 | `mr:0619-remigius-isore-et-modestus-andlauer` |  | CN | dies_natalis |  |
 | 20 | 1 | `mr:0620-methodius` |  | GR | commemoratio |  |
 | 20 | 2 | `mr:0620-gobanus` | * | FR | dies_natalis |  |
-| 20 | 3 | `mr:0620-iacobus-fodiensi` | * | IT | dies_natalis |  |
+| 20 | 3 | `mr:0620-ioannes-de-mateola` | * | IT | dies_natalis |  |
 | 20 | 4 | `mr:0620-margarita-ebner` | * | DE | dies_natalis |  |
 | 20 | 5 | `mr:0620-dermitius-o-hurley` | * | IE | dies_natalis |  |
 | 20 | 6 | `mr:0620-margarita-ball` | * | IE | commemoratio |  |

@@ -184,8 +184,8 @@
 | 14 | 4 | `mr:1114-dubricius` | * | GB | dies_natalis |  |
 | 14 | 5 | `mr:1114-ioannes` | * | HR | dies_natalis |  |
 | 14 | 6 | `mr:1114-laurentius-o-toole` |  | FR | dies_natalis |  |
-| 14 | 7 | `mr:1114-maria-de-gualdo-mazocca` | * | IT | dies_natalis |  |
-| 14 | 8 | `mr:1114-maria` | * | NL | dies_natalis |  |
+| 14 | 7 | `mr:1114-ioannes-de-tupharia` | * | IT | dies_natalis |  |
+| 14 | 8 | `mr:1114-siardus` | * | NL | dies_natalis |  |
 | 14 | 9 | `mr:1114-serapion` | * | TN | dies_natalis |  |
 | 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | IL | dies_natalis |  |
 | 14 | 11 | `mr:1114-ioannes-liccio` | * | IT | dies_natalis |  |
@@ -339,7 +339,7 @@
 | 26 | 8 | `mr:1126-delphina` | * | FR | dies_natalis |  |
 | 26 | 9 | `mr:1126-hugo-taylor` | * | GB | dies_natalis |  |
 | 26 | 10 | `mr:1126-humilis-pirozzo` |  | IT | dies_natalis |  |
-| 26 | 11 | `mr:1126-bonaventura` |  | IT | dies_natalis |  |
+| 26 | 11 | `mr:1126-leonardus-a-portu-mauritio` |  | IT | dies_natalis |  |
 | 26 | 12 | `mr:1126-thomas` |  | VN | dies_natalis |  |
 | 26 | 13 | `mr:1126-caietana-sterni` | * | IT | dies_natalis |  |
 | 26 | 14 | `mr:1126-iacobus-alberione` | * | IT | dies_natalis |  |

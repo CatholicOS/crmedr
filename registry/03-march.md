@@ -211,7 +211,7 @@
 | 20 | 5 | `mr:0320-cuthbertus` |  | GB | dies_natalis |  |
 | 20 | 6 | `mr:0320-vulframnus` |  | FR | depositio |  |
 | 20 | 7 | `mr:0320-nicetas` |  | AL | commemoratio |  |
-| 20 | 8 | `mr:0320-sabas` |  | PS | dies_natalis |  |
+| 20 | 8 | `mr:0320-viginti-monachi-palaestina` |  | PS | dies_natalis |  |
 | 20 | 9 | `mr:0320-ambrosius-sansedoni` | * | IT | dies_natalis |  |
 | 20 | 10 | `mr:0320-ioannes-nepomucenus` |  | CZ | dies_natalis |  |
 | 20 | 11 | `mr:0320-baptista-spagnoli` | * | IT | dies_natalis |  |
@@ -325,7 +325,7 @@
 | 30 | 11 | `mr:0330-antonius-daveluy` |  | KR | dies_natalis |  |
 | 30 | 12 | `mr:0330-ludovicus-de-casaurea-palmentieri` | * | IT | dies_natalis |  |
 | 30 | 13 | `mr:0330-leonardus-murialdo` |  | IT | dies_natalis |  |
-| 30 | 14 | `mr:0330-iulianus` |  | MX | dies_natalis |  |
+| 30 | 14 | `mr:0330-iulius-alvarez` |  | MX | dies_natalis |  |
 | 30 | 15 | `mr:0330-maria-restituta-kafka` | * | AT | dies_natalis |  |
 | 31 | 1 | `mr:0331-beniamin` |  | IR | dies_natalis |  |
 | 31 | 2 | `mr:0331-balbina` |  | IT | commemoratio |  |

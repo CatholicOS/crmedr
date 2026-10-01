@@ -63,7 +63,7 @@
 | 5 | 4 | `mr:0705-athanasius-hierosolymitani` |  | IL | commemoratio |  |
 | 5 | 5 | `mr:0705-dometius-medicus` |  | TR | commemoratio |  |
 | 5 | 6 | `mr:0705-martha` | * | SY | dies_natalis |  |
-| 5 | 7 | `mr:0705-maria-de-terreto` | * | IT | dies_natalis |  |
+| 5 | 7 | `mr:0705-thomas` | * | IT | dies_natalis |  |
 | 5 | 8 | `mr:0705-athanasius` | * | GR | dies_natalis |  |
 | 5 | 9 | `mr:0705-matthaeus-lambert-et-socii` | * | IE | dies_natalis |  |
 | 5 | 10 | `mr:0705-georgius-nichols-et-richardus-yaxley` | * | GB | dies_natalis |  |
@@ -376,7 +376,7 @@
 | 25 | 20 | `mr:0725-maria-teresia-kowalska` | * | PL | dies_natalis |  |
 | 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis |  |
 | 26 | 2 | `mr:0726-erastus` |  | GR | commemoratio |  |
-| 26 | 3 | `mr:0726-benedictus` |  | IT | dies_natalis |  |
+| 26 | 3 | `mr:0726-simeon` |  | IT | dies_natalis |  |
 | 26 | 4 | `mr:0726-austindus` | * | FR | dies_natalis |  |
 | 26 | 5 | `mr:0726-evangelista-et-peregrinus` | * | IT | dies_natalis |  |
 | 26 | 6 | `mr:0726-hugo-de-actis` | * | IT | dies_natalis |  |
