@@ -120,6 +120,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Andégavi in Gállia": {
+      "wikidata": "Q38380",
+      "label": "Angers",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Angelópoli in México": {
       "wikidata": "Q125293",
       "label": "Heroica Puebla de Zaragoza",
@@ -131,6 +137,12 @@
       "label": "Annecy",
       "country": "FR",
       "status": "auto"
+    },
+    "Antiochíæ in Sýria": {
+      "wikidata": "Q200441",
+      "label": "Antioch",
+      "country": "TR",
+      "status": "reviewed"
     },
     "Anágniæ in Campánia": {
       "wikidata": "Q116404",
@@ -150,6 +162,12 @@
       "country": "SY",
       "status": "auto"
     },
+    "Aprilíaci apud Andégavum in Gállia": {
+      "wikidata": "Q791403",
+      "label": "Avrillé",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Apud Aquínum in Látio": {
       "wikidata": "Q116415",
       "label": "Aquino",
@@ -167,6 +185,12 @@
       "label": "Benevento",
       "country": "IT",
       "status": "auto"
+    },
+    "Apud Biturígas in Aquitánia": {
+      "wikidata": "Q132404",
+      "label": "Bourges",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Apud Camerínum in Picéno Itáliæ": {
       "wikidata": "Q73489",
@@ -366,6 +390,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Arvérnæ in Aquitánia": {
+      "wikidata": "Q42168",
+      "label": "Clermont-Ferrand",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Arímini ad litus Flamíniæ": {
       "wikidata": "Q13369",
       "label": "Rimini",
@@ -426,11 +456,41 @@
       "country": "FR",
       "status": "auto"
     },
+    "Augustodúni in Gállia Lugdunénsi": {
+      "wikidata": "Q190827",
+      "label": "Autun",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Augústæ Prætóriæ in Alpibus Graiis": {
+      "wikidata": "Q3367",
+      "label": "Aosta",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "Augústæ Taurinórum in Itália": {
+      "wikidata": "Q495",
+      "label": "Turin",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "Augústæ Taurinórum in Subalpínis": {
+      "wikidata": "Q495",
+      "label": "Turin",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Aureliáni in Gállia": {
       "wikidata": "Q6548",
       "label": "Orléans",
       "country": "FR",
       "status": "auto"
+    },
+    "Autissiodóri in Gállia Lugdunénsi": {
+      "wikidata": "Q167600",
+      "label": "Auxerre",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Auximi in Picéno Itáliæ": {
       "wikidata": "Q124554",
@@ -455,6 +515,12 @@
       "label": "Bamberg",
       "country": "DE",
       "status": "auto"
+    },
+    "Barbástri prope Oscam in Aragónia Hispániæ": {
+      "wikidata": "Q502975",
+      "label": "Barbastro",
+      "country": "ES",
+      "status": "reviewed"
     },
     "Barcinóne in Cataláunia Hispániæ": {
       "wikidata": "Q1492",
@@ -533,6 +599,12 @@
       "label": "Bisignano",
       "country": "IT",
       "status": "auto"
+    },
+    "Biturígis in Aquitánia": {
+      "wikidata": "Q132404",
+      "label": "Bourges",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Bonaerópoli in Argentína": {
       "wikidata": "Q1486",
@@ -810,6 +882,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Colóniæ Agrippínæ in Germánia": {
+      "wikidata": "Q365",
+      "label": "Cologne",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Comi in Itália": {
       "wikidata": "Q1308",
       "label": "Como",
@@ -839,6 +917,12 @@
       "label": "Alcalá de Henares",
       "country": "ES",
       "status": "auto"
+    },
+    "Constantinópoli": {
+      "wikidata": "Q16869",
+      "label": "Constantinople",
+      "country": "TR",
+      "status": "reviewed"
     },
     "Constántiæ in Néustria": {
       "wikidata": "Q202565",
@@ -930,6 +1014,12 @@
       "country": "EG",
       "status": "auto"
     },
+    "Cálari in Sardínia": {
+      "wikidata": "Q1897",
+      "label": "Cagliari",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Cállii in Picéno Itáliæ": {
       "wikidata": "Q190514",
       "label": "Cagli",
@@ -984,11 +1074,35 @@
       "country": "ME",
       "status": "auto"
     },
+    "Cæsaraugústæ in Hispánia Tarraconénsi": {
+      "wikidata": "Q10305",
+      "label": "Zaragoza",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Cæsaromági in Anglia": {
       "wikidata": "Q210985",
       "label": "Chelmsford",
       "country": "GB",
       "status": "auto"
+    },
+    "Cæsaréæ in Cappadócia": {
+      "wikidata": "Q48338",
+      "label": "Kayseri",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Cæsaréæ in Mauretánia": {
+      "wikidata": "Q1309531",
+      "label": "Caesarea of Mauretania",
+      "country": "DZ",
+      "status": "reviewed"
+    },
+    "Cæsaréæ in Palæstína": {
+      "wikidata": "Q319242",
+      "label": "Caesarea Maritima",
+      "country": "PS",
+      "status": "reviewed"
     },
     "Cæsénæ in Flamínia": {
       "wikidata": "Q6662",
@@ -1097,6 +1211,12 @@
       "label": "Dijon",
       "country": "FR",
       "status": "auto"
+    },
+    "Doróstori in Mœsia": {
+      "wikidata": "Q182428",
+      "label": "Silistra",
+      "country": "BG",
+      "status": "reviewed"
     },
     "Dresdæ in Germánia": {
       "wikidata": "Q1731",
@@ -1386,6 +1506,12 @@
       "country": "TR",
       "status": "auto"
     },
+    "Hanóii in Tunquíno": {
+      "wikidata": "Q1858",
+      "label": "Hanoi",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "Hasseléti prope Traiéctum Mosæ in Bélgio": {
       "wikidata": "Q58780",
       "label": "Hasselt",
@@ -1403,6 +1529,12 @@
       "label": "Hereford",
       "country": "GB",
       "status": "auto"
+    },
+    "Hierosólymæ": {
+      "wikidata": "Q1218",
+      "label": "Jerusalem",
+      "country": "PS",
+      "status": "reviewed"
     },
     "Hildésiæ in Saxónia Germániæ": {
       "wikidata": "Q3185",
@@ -1458,6 +1590,12 @@
       "country": "TR",
       "status": "auto"
     },
+    "In Africa": {
+      "wikidata": "Q181238",
+      "label": "Africa",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "In Anatólia": {
       "wikidata": "Q51614",
       "label": "Anatolia",
@@ -1505,6 +1643,12 @@
       "label": "Bavaria",
       "country": "DE",
       "status": "auto"
+    },
+    "In Británnia Minóre": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
     },
     "In Burgúndia": {
       "wikidata": "Q1173",
@@ -1656,6 +1800,12 @@
       "country": "TR",
       "status": "auto"
     },
+    "In Pérside": {
+      "wikidata": "Q3746183",
+      "label": "Persis",
+      "country": "IR",
+      "status": "reviewed"
+    },
     "In Quebéco Cánadæ província": {
       "wikidata": "Q176",
       "label": "Quebec",
@@ -1680,6 +1830,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "In Scótia": {
+      "wikidata": "Q22",
+      "label": "Scotland",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "In Sicília": {
       "wikidata": "Q1460",
       "label": "Sicily",
@@ -1703,6 +1859,12 @@
       "label": "Veneto",
       "country": "IT",
       "status": "auto"
+    },
+    "In campo exítii Oświęcim seu Auschwitz prope Cracóviam in Polónia": {
+      "wikidata": "Q7341",
+      "label": "Auschwitz",
+      "country": "PL",
+      "status": "reviewed"
     },
     "In castro Blávio territórii Burdigalénsis in Aquitánia": {
       "wikidata": "Q202562",
@@ -1770,6 +1932,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "In monastério Cavénsi in Campánia": {
+      "wikidata": "Q55673962",
+      "label": "Abbey of La Trinità della Cava",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "In pago Rapóllæ in Lucánia": {
       "wikidata": "Q52644",
       "label": "Rapolla",
@@ -1787,6 +1955,12 @@
       "label": "Kirov",
       "country": "RU",
       "status": "auto"
+    },
+    "In urbe Nam Ðịnh in Tunquíno": {
+      "wikidata": "Q33682",
+      "label": "Nam Định",
+      "country": "VN",
+      "status": "reviewed"
     },
     "In vico Cristólio territórii Parisiénsis": {
       "wikidata": "Q46135",
@@ -1854,6 +2028,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Intra castra detentiónis Dacháni prope Monáchium Baváriæ in Germánia": {
+      "wikidata": "Q151198",
+      "label": "Dachau concentration camp",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Iúliæ Valéntiæ in pago Viennénsi Gálliæ": {
       "wikidata": "Q8848",
       "label": "Valence",
@@ -1895,6 +2075,12 @@
       "label": "Kyoto",
       "country": "JP",
       "status": "auto"
+    },
+    "Lancástriæ in Anglia": {
+      "wikidata": "Q205905",
+      "label": "Lancaster",
+      "country": "GB",
+      "status": "reviewed"
     },
     "Lancástriæ item in Anglia": {
       "wikidata": "Q205905",
@@ -2190,6 +2376,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Meliténe in Arménia": {
+      "wikidata": "Q1101969",
+      "label": "Melitene",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Messánæ in Sicília": {
       "wikidata": "Q13666",
       "label": "Messina",
@@ -2201,6 +2393,18 @@
       "label": "Messina",
       "country": "IT",
       "status": "auto"
+    },
+    "Metis in Austrásia": {
+      "wikidata": "Q22690",
+      "label": "Metz",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Metis in Gállia Bélgica": {
+      "wikidata": "Q22690",
+      "label": "Metz",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Metis item in Bélgica": {
       "wikidata": "Q22690",
@@ -2297,6 +2501,12 @@
       "label": "Modena",
       "country": "IT",
       "status": "auto"
+    },
+    "Nagasákii in Iapónia": {
+      "wikidata": "Q38234",
+      "label": "Nagasaki",
+      "country": "JP",
+      "status": "reviewed"
     },
     "Nancéii in Gállia": {
       "wikidata": "Q40898",
@@ -2669,6 +2879,18 @@
       "label": "Huy",
       "country": "BE",
       "status": "auto"
+    },
+    "Prope Monáchium Baváriæ in Germánia": {
+      "wikidata": "Q1726",
+      "label": "Munich",
+      "country": "DE",
+      "status": "reviewed"
+    },
+    "Prope Monáchium Baváriæ in Germánia intra castra detentiónis Dacháni": {
+      "wikidata": "Q151198",
+      "label": "Dachau concentration camp",
+      "country": "DE",
+      "status": "reviewed"
     },
     "Putéolis in Campánia": {
       "wikidata": "Q72425",
@@ -3138,6 +3360,12 @@
       "country": "ES",
       "status": "auto"
     },
+    "Salisbúrgi in Bavária": {
+      "wikidata": "Q34713",
+      "label": "Salzburg",
+      "country": "AT",
+      "status": "reviewed"
+    },
     "Salmánticæ in Hispánia": {
       "wikidata": "Q15695",
       "label": "Salamanca",
@@ -3228,11 +3456,29 @@
       "country": "IT",
       "status": "auto"
     },
+    "Senis in Etrúria": {
+      "wikidata": "Q2751",
+      "label": "Siena",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "Septémpedæ in Picéno Itáliæ": {
+      "wikidata": "Q94955",
+      "label": "San Severino Marche",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Serviliáni in Picéno Itáliæ": {
       "wikidata": "Q59300",
       "label": "Servigliano",
       "country": "IT",
       "status": "auto"
+    },
+    "Seuli in Coréa": {
+      "wikidata": "Q8684",
+      "label": "Seoul",
+      "country": "KR",
+      "status": "reviewed"
     },
     "Signæ apud Floréntiam in Etrúria": {
       "wikidata": "Q82869",
@@ -3414,6 +3660,18 @@
       "country": "IT",
       "status": "auto"
     },
+    "Thessalonícæ in Macedónia": {
+      "wikidata": "Q17151",
+      "label": "Thessaloniki",
+      "country": "GR",
+      "status": "reviewed"
+    },
+    "Tiférni Tiberíni in Umbria": {
+      "wikidata": "Q20413",
+      "label": "Città di Castello",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Tlaxcálæ in México": {
       "wikidata": "Q82681",
       "label": "Tlaxcala",
@@ -3504,11 +3762,41 @@
       "country": "IT",
       "status": "auto"
     },
+    "Tréviris in Gállia Bélgica": {
+      "wikidata": "Q3138",
+      "label": "Trier",
+      "country": "DE",
+      "status": "reviewed"
+    },
+    "Tréviris in Rhenánia Austrásiæ": {
+      "wikidata": "Q3138",
+      "label": "Trier",
+      "country": "DE",
+      "status": "reviewed"
+    },
+    "Tudérti in Umbria": {
+      "wikidata": "Q20579",
+      "label": "Todi",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Turiasóne in Hispánia Tarraconénsi": {
       "wikidata": "Q639412",
       "label": "Tarazona",
       "country": "ES",
       "status": "auto"
+    },
+    "Turónis in Gállia Lugdunénsi": {
+      "wikidata": "Q288",
+      "label": "Tours",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Turónis in Néustria": {
+      "wikidata": "Q288",
+      "label": "Tours",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Tyrnáviæ in Slováchia": {
       "wikidata": "Q26175",
@@ -3684,11 +3972,23 @@
       "country": "FR",
       "status": "auto"
     },
+    "Viénnæ in Burgúndia": {
+      "wikidata": "Q26849",
+      "label": "Vienne",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Viénnæ in Burgúndia Gálliæ": {
       "wikidata": "Q26849",
       "label": "Vienne",
       "country": "FR",
       "status": "auto"
+    },
+    "Viénnæ in Gállia Lugdunénsi": {
+      "wikidata": "Q26849",
+      "label": "Vienne",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Vérulis in Látio Itáliæ": {
       "wikidata": "Q42466",
