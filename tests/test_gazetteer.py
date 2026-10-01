@@ -239,6 +239,18 @@ class ClientTest(unittest.TestCase):
         self.fetch.searches["Fictadam"] = ["Q8"]
         self.assertEqual(self.client.candidates("Fictadam")[0]["country"], "NL")
 
+    def test_cache_writes_are_atomic(self):
+        cache = Path(self.tmp.name)
+        with mock.patch("wikidata.os.replace", side_effect=KeyboardInterrupt):
+            with self.assertRaises(KeyboardInterrupt):
+                self.client.candidates("Fictopoli")
+        self.assertEqual(list(cache.glob("*.json")), [])
+        self.assertEqual(list(cache.glob("*.tmp")), [])
+        self.client.candidates("Fictopoli")
+        self.assertTrue(list(cache.glob("*.json")))
+        self.assertEqual(list(cache.glob("*.tmp")), [])
+        self.assertTrue(all(json.loads(f.read_text(encoding="utf-8")) is not None for f in cache.glob("*.json")))
+
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})
         self.assertEqual(self.client.region_countries("Fictistan"), {"FX"})

@@ -10,6 +10,8 @@ See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
 import hashlib
 import http.client
 import json
+import os
+import tempfile
 import time
 import urllib.error
 import urllib.parse
@@ -33,6 +35,20 @@ EXTRA_COUNTRY_ISO = {"Q55": "NL"}
 
 class WikidataError(Exception):
     pass
+
+
+def _write_atomic(path, text):
+    """Write to a temporary file beside `path`, then move it into place, so an
+    interrupted run never leaves a truncated cache file."""
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=path.name + ".", suffix=".tmp")
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as f:
+            f.write(text)
+        os.replace(tmp, path)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+        raise
 
 
 def _retry_after(headers, attempt):
@@ -124,7 +140,7 @@ class Wikidata:
         if path.exists():
             return json.loads(path.read_text(encoding="utf-8"))
         data = self.fetch(url)
-        path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        _write_atomic(path, json.dumps(data, ensure_ascii=False))
         return data
 
     def _api(self, **params):
@@ -156,7 +172,7 @@ class Wikidata:
             data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"}))
             found = {b["c"]["value"].rsplit("/", 1)[1] for b in data["results"]["bindings"]}
             self._types.update({c: c in found for c in unknown})
-            self._types_path.write_text(json.dumps(self._types, sort_keys=True), encoding="utf-8")
+            _write_atomic(self._types_path, json.dumps(self._types, sort_keys=True))
         return {c for c in classes if self._types[c]}
 
     def _country_iso(self):
