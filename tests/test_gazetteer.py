@@ -394,3 +394,107 @@ class RenderJsonTest(unittest.TestCase):
         self.assertEqual(list(out["places"]), ["Alpha", "Zeta"])
         self.assertEqual(list(out["places"]["Zeta"]), ["wikidata", "label", "country", "status"])
         self.assertEqual(out["statuses"], bg.STATUSES)
+
+
+class FakeClient:
+    def __init__(self, by_text, regions=None, fail_on=()):
+        self.by_text, self.regions, self.fail_on = by_text, regions or {}, set(fail_on)
+
+    def candidates(self, text):
+        if text in self.fail_on:
+            raise wd.WikidataError("boom")
+        return [dict(c) for c in self.by_text.get(text, [])]
+
+    def candidate(self, qid):
+        for cs in self.by_text.values():
+            for c in cs:
+                if c["wikidata"] == qid:
+                    return dict(c)
+        return None
+
+    def region_countries(self, text):
+        return self.regions.get(text, set())
+
+
+def index_of(**places):
+    return {la: {"it": list(its), "occurrences": [f"mr:01{n:02d}-x"], "lead_countries": {}}
+            for n, (la, its) in enumerate(places.items(), 1)}
+
+
+class ProposeTest(unittest.TestCase):
+    def setUp(self):
+        self.client = FakeClient({
+            "Fictopoli": [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])],
+            "Altropoli": [cand("Q2", it=["Altropoli"]), cand("Q3", it=["Altropoli"])],
+        })
+        self.index = index_of(Fictopoli=["A Fictopoli"], Altropoli=["A Altropoli"])
+
+    def test_auto_and_queue(self):
+        gaz, review = {}, bg.new_changeset([])
+        self.assertEqual(bg.propose(gaz, review, self.index, self.client), [])
+        self.assertEqual(gaz, {"Fictopoli": {"wikidata": "Q1", "label": "Q1", "country": "FX", "status": "auto"}})
+        [op] = review["operations"]
+        self.assertEqual(op["op"], "resolve_place")
+        self.assertEqual(op["id"], "Altropoli")
+        self.assertEqual(op["la"], "Altropoli")
+        self.assertEqual(op["it"], ["A Altropoli"])
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q2", "Q3"])
+        self.assertIsNone(op["decision"])
+        self.assertEqual(review["schema"], "crmedr-changeset/v1")
+        self.assertEqual(review["base"], {"edition": "2004", "registry": "data/places.json"})
+
+    def test_existing_keys_untouched(self):
+        gaz = {"Fictopoli": {"wikidata": "Q42", "label": "Other", "country": "FY", "status": "reviewed"}}
+        review = bg.new_changeset([])
+        bg.propose(gaz, review, self.index, self.client)
+        self.assertEqual(gaz["Fictopoli"]["wikidata"], "Q42")
+        self.assertNotIn("Fictopoli", [op["id"] for op in review["operations"]])
+
+    def test_suggestions_kept_on_rerun(self):
+        review = bg.new_changeset([{"op": "resolve_place", "id": "Altropoli", "candidates": [],
+                                    "suggested": {"wikidata": "Q3", "country": "FX"},
+                                    "reasoning": "r", "confidence": "high"}])
+        bg.propose({}, review, self.index, self.client)
+        [op] = review["operations"]
+        self.assertEqual(op["suggested"], {"wikidata": "Q3", "country": "FX"})
+        self.assertEqual((op["reasoning"], op["confidence"]), ("r", "high"))
+        self.assertEqual(len(op["candidates"]), 2)
+
+    def test_network_failure_leaves_place_unprocessed(self):
+        client = FakeClient(self.client.by_text, fail_on={"Altropoli"})
+        gaz, review = {}, bg.new_changeset([])
+        failed = bg.propose(gaz, review, self.index, client)
+        self.assertEqual(failed, [("Altropoli", "boom")])
+        self.assertIn("Fictopoli", gaz)
+        self.assertNotIn("Altropoli", gaz)
+        self.assertEqual(review["operations"], [])
+
+    def test_ops_sorted_by_occurrences_then_la(self):
+        index = index_of(Beta=["A Beta"], Alfa=["A Alfa"])
+        index["Beta"]["occurrences"] = ["mr:0101-a", "mr:0102-b"]
+        review = bg.new_changeset([])
+        bg.propose({}, review, index, FakeClient({}))
+        self.assertEqual([op["id"] for op in review["operations"]], ["Beta", "Alfa"])
+
+    def test_gather_candidates_dedupes_across_variants(self):
+        client = FakeClient({"Fictopoli": [cand("Q1")], "monastero di Fictiaco": [cand("Q5")],
+                             "Fictiaco": [cand("Q5"), cand("Q1")]})
+        got = bg.gather_candidates({"it": ["A Fictopoli", "Nel monastero di Fictiaco"]}, client)
+        self.assertEqual([c["wikidata"] for c in got], ["Q1", "Q5"])
+
+
+class ReportTest(unittest.TestCase):
+    def test_report_sections(self):
+        index = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"],
+                               "lead_countries": {"mr:0101-a": "DE"}},
+                 "Altrópoli": {"it": ["A Altropoli"], "occurrences": ["mr:0102-b"], "lead_countries": {}}}
+        gaz = {"Fictópoli": {"wikidata": "Q1", "label": "Fictopolis", "country": "FR", "status": "reviewed",
+                             "text_says": [{"country": "DE", "it": "A Fictopoli, nell’odierna Germania"}]}}
+        ops = [{"op": "resolve_place", "id": "Altrópoli", "occurrences": ["mr:0102-b"], "failed": ["no candidates found"]}]
+        md = bg.render_report(gaz, index, ops, not_processed=[("Gamma", "boom")])
+        self.assertIn("| reviewed | 1 |", md)
+        self.assertIn("1 awaiting review", md)
+        self.assertIn("| Altrópoli | 1 | no candidates found |", md)
+        self.assertIn("| Fictópoli | FR | DE |", md)
+        self.assertIn("| `mr:0101-a` | Fictópoli | DE | FR |", md)
+        self.assertIn("Gamma", md)
