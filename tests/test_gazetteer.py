@@ -756,3 +756,48 @@ class CommittedGazetteerTest(unittest.TestCase):
         gazetteer, review, index = bg.load_state(REPO)
         self.assertEqual(bg.validate(gazetteer, index, review["operations"]), [])
         self.assertEqual(set(gazetteer) | {op["id"] for op in review["operations"]}, set(index))
+
+
+class PruneNonPlacesTest(unittest.TestCase):
+    """Candidates that are neither a place type nor located (films, songs,
+    people, surnames, schools named after a city) are not offered for review."""
+
+    def test_evaluate_does_not_publish_non_places_without_coordinates(self):
+        film = cand("Q2", it=["Fictopoli"], place=False)
+        university = dict(cand("Q3", it=["Fictopoli"], place=False), coords=[45.0, 9.0])
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [cand("Q1", it=["Fictopoli"]), film, university],
+                        regions)
+        self.assertEqual({c["wikidata"] for c in r["candidates"]}, {"Q1", "Q3"})
+
+    def test_non_places_do_not_use_up_the_candidate_slots(self):
+        junk = [cand(f"Q{i}", it=["Fictopoli"], place=False) for i in range(20)]
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), junk + [cand("Q99", it=["Altro"])], regions)
+        self.assertEqual([c["wikidata"] for c in r["candidates"]], ["Q99"])
+
+    def test_diagnosis_still_sees_pruned_candidates(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [cand("Q2", it=["Fictopoli"], place=False)], regions)
+        self.assertEqual(r["candidates"], [])
+        self.assertIn("type: the item is not a place", r["failed"])
+
+    def test_propose_keeps_the_suggested_candidate_even_if_not_a_place(self):
+        province = cand("Q9", it=["Altropoli"], place=False)
+        client = FakeClient({"Altropoli": [cand("Q2", it=["Altropoli"]), province]})
+        index = index_of(Altropoli=["A Altropoli"])
+        review = bg.new_changeset([dict(op("Altropoli", None, [province]),
+                                        suggested={"wikidata": "Q9", "country": "IT"})])
+        bg.propose({}, review, index, client)
+        [o] = review["operations"]
+        self.assertIn("Q9", [c["wikidata"] for c in o["candidates"]])
+
+    def test_prune_queue_keeps_places_located_items_and_the_suggestion(self):
+        place = bg.published(cand("Q1"), ["it", "type"])
+        located = dict(bg.published(cand("Q3", place=False), ["it"]), coords=[45.0, 9.0])
+        film = bg.published(cand("Q2", place=False), ["it"])
+        province = bg.published(cand("Q9", place=False), [])
+        review = bg.new_changeset([
+            dict(op("Fictópoli", None), candidates=[place, film, located]),
+            dict(op("Altrópoli", None), candidates=[province, film], suggested={"wikidata": "Q9", "country": "IT"}),
+        ])
+        self.assertEqual(bg.prune_queue(review), 2)
+        self.assertEqual([[c["wikidata"] for c in o["candidates"]] for o in review["operations"]],
+                         [["Q1", "Q3"], ["Q9"]])

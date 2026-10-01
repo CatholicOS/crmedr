@@ -18,6 +18,7 @@ Usage:
   python3 build_gazetteer.py verify-suggestions [repo_root]   (network)
   python3 build_gazetteer.py apply <exported.json> [repo_root]
   python3 build_gazetteer.py check [repo_root]
+  python3 build_gazetteer.py prune [repo_root]   drop non-place candidates from the queue
 
 Standard library only. Reads no private sources.
 """
@@ -80,6 +81,26 @@ def published(candidate, evidence):
     out = {k: candidate[k] for k in PUBLISHED_KEYS}
     out["evidence"] = evidence
     return out
+
+
+def plausible(published_candidate, suggested=None):
+    """Worth offering for review: a place type, or at least a location. A name
+    search also returns films, songs, people, surnames and schools named after
+    a city; none of those is ever the answer. The suggestion is always kept —
+    some real places (Roman provinces, historical kingdoms) have neither."""
+    return ("type" in published_candidate["evidence"] or bool(published_candidate.get("coords"))
+            or published_candidate["wikidata"] == suggested)
+
+
+def prune_queue(review):
+    """Drop implausible candidates from every queued op; return how many."""
+    dropped = 0
+    for op in review["operations"]:
+        suggested = (op.get("suggested") or {}).get("wikidata")
+        kept = [c for c in op.get("candidates", []) if plausible(c, suggested)]
+        dropped += len(op.get("candidates", [])) - len(kept)
+        op["candidates"] = kept
+    return dropped
 
 
 def auto_entry(candidate):
@@ -157,7 +178,8 @@ def evaluate(la, item, candidates, region_countries, region_coords=lambda region
             if not best[1]["type"]:
                 failed.append("type: the item is not a place")
     return {"auto": passing[0][0] if len(passing) == 1 else None,
-            "candidates": [published(s[0], s[3]) for s in scored[:MAX_CANDIDATES]],
+            # Diagnosed against every candidate above; only plausible ones are offered.
+            "candidates": [c for c in (published(s[0], s[3]) for s in scored) if plausible(c)][:MAX_CANDIDATES],
             "failed": failed, "claims": claims}
 
 
@@ -230,6 +252,12 @@ def make_op(la, item, result, old):
     for key in ("suggested", "reasoning", "confidence"):
         if old and key in old:
             op[key] = old[key]
+    # The suggestion may be pruned from a fresh search as implausible; carry it over.
+    suggested = (op.get("suggested") or {}).get("wikidata")
+    if suggested and all(c["wikidata"] != suggested for c in op["candidates"]):
+        kept = next((c for c in old.get("candidates", []) if c["wikidata"] == suggested), None)
+        if kept:
+            op["candidates"] = op["candidates"] + [kept]
     op["decision"] = None
     op["edited"] = None
     return op
@@ -456,7 +484,7 @@ def verify_suggestions(review, index, client):
 
 
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
     exported = None
@@ -467,6 +495,11 @@ def main(argv):
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
     gazetteer, review, index = load_state(repo_root)
     client = Wikidata(repo_root / ".cache" / "wikidata")
+    if cmd == "prune":
+        dropped = prune_queue(review)
+        write_state(repo_root, gazetteer, review, index)
+        print(f"{dropped} non-place candidates dropped; {len(review['operations'])} queued")
+        return 0
     if cmd == "check":
         errors = validate(gazetteer, index, review["operations"])
         print("\n".join(errors) or f"ok: {len(gazetteer)} places decided, {len(review['operations'])} queued")
