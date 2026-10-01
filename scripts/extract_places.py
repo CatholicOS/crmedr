@@ -158,7 +158,8 @@ LOCATIVE_IT = {
 }
 CUT_IT = re.compile(
     r"^(?:dove|da lui|che|sotto|in odio)\b|\banni (?:dopo|piu tardi)\b|^(?:nello stesso )?giorno e anno\b"
-    r"|^\w+ \d")
+    # a year (", nel 1597", ", nell'anno 1597"), not a distance (", al 120 miglio")
+    r"|\b\d{3,4}\b(?! (?:miglio|miglia|km|chilometri|metri|passi)\b)")
 BACK_REFS_IT = {"nello stesso luogo", "nella stessa citta"}
 # Openings that name a time, not a place.
 TIME_OPENINGS_IT = {"nello stesso giorno"}

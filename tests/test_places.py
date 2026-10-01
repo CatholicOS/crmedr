@@ -290,6 +290,10 @@ class ItalianPhraseTest(unittest.TestCase):
     def test_more_locative_openers(self):
         self.assertEqual(p.italian_phrase("A Fittopoli, a tre miglia da Fittia, san Fitto."),
                          "A Fittopoli, a tre miglia da Fittia")
+        self.assertEqual(p.italian_phrase("A Fittopoli, a 3 miglia da Fittia, san Fitto."),
+                         "A Fittopoli, a 3 miglia da Fittia")
+        self.assertEqual(p.italian_phrase("A Fittopoli, al 120 miglio della via Fittia, san Fitto."),
+                         "A Fittopoli, al 120 miglio della via Fittia")
         self.assertEqual(p.italian_phrase("Nel cenobio di Fittaco, sull’isola di Fitta, beato Fitto."),
                          "Nel cenobio di Fittaco, sull’isola di Fitta")
         self.assertEqual(p.italian_phrase("A Fittopoli, dal lato del Fittone, beato Fitto."),
@@ -297,6 +301,7 @@ class ItalianPhraseTest(unittest.TestCase):
 
     def test_year_or_hatred_of_the_faith_is_cut(self):
         self.assertEqual(p.italian_phrase("A Fittopoli, nel 1597, san Fitto."), "A Fittopoli")
+        self.assertEqual(p.italian_phrase("A Fittopoli, nell’anno 1597, san Fitto."), "A Fittopoli")
         self.assertEqual(p.italian_phrase("A Fittopoli, in odio alla fede, beati Fitti."), "A Fittopoli")
 
     def test_sempre_and_back_references(self):
