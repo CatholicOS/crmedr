@@ -10467,7 +10467,15 @@
       "entry": 5,
       "asterisk": false,
       "country": "BE",
-      "typology": "dies_natalis"
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "Sancti Trudónis Fani in Brabántia Austrásiæ",
+          "it": "A Sint-Truiden nel Brabante in Austrasia, nell’odierno Belgio",
+          "source": "lead"
+        }
+      ]
     },
     {
       "id": "mr:0220-leo",
@@ -34246,7 +34254,7 @@
         {
           "role": "death",
           "la": "Verulámii in Británnia",
-          "it": "In località Verulam",
+          "it": "In località Verulam, chiamata poi Saint Albans, in Inghilterra",
           "source": "lead"
         }
       ]
@@ -41328,7 +41336,15 @@
       "entry": 10,
       "asterisk": true,
       "country": "BE",
-      "typology": "dies_natalis"
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "Sancti Trudónis Fani in Brabántia",
+          "it": "A Sint-Truiden in Brabante, nell’odierno Belgio",
+          "source": "lead"
+        }
+      ]
     },
     {
       "id": "mr:0724-kinga",
@@ -44605,7 +44621,7 @@
         {
           "role": "death",
           "la": "In loco Maserfield póstea ab eo Oswéstria nuncupáto in agro Angliæ Salopiénsi",
-          "it": "In località Maserfield",
+          "it": "In località Maserfield, chiamata poi dal suo nome Oswestry, nello Shrewsbury in Inghilterra",
           "source": "lead"
         }
       ]
@@ -47946,7 +47962,15 @@
       "entry": 16,
       "asterisk": true,
       "country": "CL",
-      "typology": "dies_natalis"
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "Sancti Iacóbi in Chília",
+          "it": "A Santiago nel Cile",
+          "source": "lead"
+        }
+      ]
     },
     {
       "id": "mr:0819-ioannes-eudes",
@@ -71224,7 +71248,15 @@
       "entry": 7,
       "asterisk": false,
       "country": "GB",
-      "typology": "dies_natalis"
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "Sancti Stéphani Fani in Anglia",
+          "it": "A Lanceston in Inghilterra",
+          "source": "lead"
+        }
+      ]
     },
     {
       "id": "mr:1130-alexander-crow",
@@ -71826,7 +71858,15 @@
       "entry": 2,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Nicomedíæ",
+          "it": "A Nicomedia",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1204-heracla",
