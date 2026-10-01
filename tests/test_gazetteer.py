@@ -801,3 +801,39 @@ class PruneNonPlacesTest(unittest.TestCase):
         self.assertEqual(bg.prune_queue(review), 2)
         self.assertEqual([[c["wikidata"] for c in o["candidates"]] for o in review["operations"]],
                          [["Q1", "Q3"], ["Q9"]])
+
+
+class SuggestionEvidenceTest(unittest.TestCase):
+    """verify-suggestions evaluates the suggested item instead of publishing it
+    with no evidence, so the reviewer sees why it is (or is not) plausible."""
+
+    def setUp(self):
+        self.client = FakeClient({"x": [cand("Q7", it=["Fictopoli"], la=["Fictopolis"], country="DE")]})
+
+    def suggested_op(self, candidates):
+        o = op("Fictópoli", None, suggested={"wikidata": "Q7", "country": "DE"})
+        o["candidates"], o["confidence"] = candidates, "high"
+        return o
+
+    def evidence(self, review):
+        [c] = [c for c in review["operations"][0]["candidates"] if c["wikidata"] == "Q7"]
+        return c["evidence"]
+
+    def test_appended_suggestion_is_evaluated(self):
+        review = bg.new_changeset([self.suggested_op([])])
+        self.assertEqual(bg.verify_suggestions(review, INDEX, self.client), ([], []))
+        self.assertEqual(self.evidence(review), ["it", "la", "country", "type"])
+
+    def test_suggestion_with_empty_evidence_is_backfilled_in_place(self):
+        other = bg.published(cand("Q1"), ["type"])
+        stale = bg.published(cand("Q7", country="DE"), [])
+        review = bg.new_changeset([self.suggested_op([other, stale])])
+        bg.verify_suggestions(review, INDEX, self.client)
+        self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], ["Q1", "Q7"])
+        self.assertEqual(self.evidence(review), ["it", "la", "country", "type"])
+
+    def test_suggestion_with_evidence_is_left_alone(self):
+        kept = bg.published(cand("Q7", country="DE"), ["type"])
+        review = bg.new_changeset([self.suggested_op([kept])])
+        bg.verify_suggestions(review, INDEX, self.client)
+        self.assertEqual(self.evidence(review), ["type"])
