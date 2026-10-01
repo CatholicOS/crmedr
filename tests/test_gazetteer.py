@@ -552,7 +552,7 @@ class ProposeTest(unittest.TestCase):
         self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q2", "Q3"])
         self.assertIsNone(op["decision"])
         self.assertEqual(review["schema"], "crmedr-changeset/v1")
-        self.assertEqual(review["base"], {"edition": "2004", "registry": "data/places.json"})
+        self.assertEqual(review["base"], {"edition": "martyrologium_romanum_2004", "registry": "data/places.json"})
 
     def test_existing_keys_untouched(self):
         gaz = {"Fictopoli": {"wikidata": "Q42", "label": "Other", "country": "FY", "status": "reviewed"}}
