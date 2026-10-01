@@ -42,7 +42,7 @@ SITE_IT = re.compile(
 # Words before the name in a region or modern-country segment.
 SEGMENT_PREFIX_IT = re.compile(
     r"^(?:(?:il|lo|la|i|gli|le)\s+|l')?(?:(?:territorio|regione)\s+(?:di\s+|del\s+|della\s+|dell'|d'))?"
-    r"(?:(?:odiern[oa]|attuale)\s+)?")
+    r"(?:(?:odiern[oa]|attuale|antic[oa])\s+)?")
 
 
 def _dedupe(xs):

@@ -6,6 +6,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import gazetteer_text as gt  # noqa: E402
 
+REPO = Path(__file__).resolve().parent.parent
+
 
 class FoldTest(unittest.TestCase):
     def test_fold(self):
@@ -56,6 +58,10 @@ class ParseItalianTest(unittest.TestCase):
         p = gt.parse_italian("All’ancora in mare davanti a Fictopoli sulla costa fittizia")
         self.assertEqual(p["heads"], [])
         self.assertEqual(p["regions"], [])
+
+    def test_antica_before_a_region(self):
+        self.assertEqual(gt.parse_italian("A Fictopoli nell’antica Fictia")["regions"], ["Fictia"])
+        self.assertEqual(gt.parse_italian("A Fictopoli nell’antico Fictiense")["regions"], ["Fictiense"])
 
     def test_vicino_a_is_a_connector_and_a_lead(self):
         p = gt.parse_italian("Vicino a Fictopoli presso Fictaria in Fictia")
@@ -255,7 +261,7 @@ class HttpGetTest(unittest.TestCase):
 import build_gazetteer as bg  # noqa: E402
 
 
-def cand(qid, it=(), la=(), country="FX", countries=None, place=True, p9314=False, label=None):
+def cand(qid, it=(), la=(), country="IT", countries=None, place=True, p9314=False, label=None):
     return {"wikidata": qid, "label": label or qid, "description": "", "names_it": sorted(gt.fold(x) for x in it),
             "la": list(la), "p9314": p9314, "country_qids": [], "iso_self": None,
             "country": country, "countries": countries if countries is not None else ([country] if country else []),
@@ -266,7 +272,7 @@ def item(*its, occ=("mr:0101-fictus",)):
     return {"it": list(its), "occurrences": list(occ), "lead_countries": {}}
 
 
-REGIONS = {"Fictia": {"FX"}, "Fictiense": {"FX"}, "Altrofictia": {"FY"}}
+REGIONS = {"Fictia": {"IT"}, "Fictiense": {"IT"}, "Altrofictia": {"FY"}}
 
 
 def regions(text):
@@ -311,14 +317,14 @@ class EvaluateTest(unittest.TestCase):
 
     def test_homonyms_go_to_review(self):
         r = bg.evaluate("Fictópoli", item("A Fictopoli"), [
-            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="FX"),
-            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="FY")], regions)
+            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="IT"),
+            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="IT")], regions)
         self.assertIsNone(r["auto"])
         self.assertIn("2 candidates pass every rule", r["failed"])
 
     def test_region_separates_homonyms(self):
         r = bg.evaluate("Fictópoli in Altrofíctia", item("A Fictopoli in Altrofictia"), [
-            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="FX"),
+            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="IT"),
             cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="FY")], regions)
         self.assertEqual(r["auto"]["wikidata"], "Q2")
 
@@ -333,7 +339,22 @@ class EvaluateTest(unittest.TestCase):
         r = bg.evaluate("Fictópoli", item(it), [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
         self.assertIsNone(r["auto"])
         self.assertEqual(r["claims"], [{"country": "DE", "it": it}])
-        self.assertIn("country: the Italian says DE, the item is in FX", r["failed"])
+        self.assertIn("country: the Italian says DE, the item is in IT", r["failed"])
+
+    def test_bare_italian_implies_italy(self):
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="HR")], regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("country: the Italian names no region or country (in the CEI edition: Italy); "
+                      "the item is in HR", r["failed"])
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="IT")], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+
+    def test_bare_italian_naming_a_country_item(self):
+        country = dict(cand("Q1", it=["Fictistan"], la=["Fictistania"], country="FX"), iso_self="FX")
+        r = bg.evaluate("In Fictistánia", item("In Fictistan"), [country], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
 
     def test_no_single_country(self):
         r = bg.evaluate("Fictópoli", item("A Fictopoli"),
@@ -346,7 +367,7 @@ class EvaluateTest(unittest.TestCase):
         r = bg.evaluate("Fictópoli", item("A Fictopoli in Nowhere"),
                         [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
         self.assertIsNone(r["auto"])
-        self.assertIn("country: region 'Nowhere' is not in FX", r["failed"])
+        self.assertIn("country: region 'Nowhere' is not in IT", r["failed"])
 
     def test_no_italian_and_no_candidates(self):
         self.assertEqual(bg.evaluate("Fictópoli", item(), [], regions)["failed"],
@@ -448,7 +469,7 @@ class ProposeTest(unittest.TestCase):
     def test_auto_and_queue(self):
         gaz, review = {}, bg.new_changeset([])
         self.assertEqual(bg.propose(gaz, review, self.index, self.client), [])
-        self.assertEqual(gaz, {"Fictopoli": {"wikidata": "Q1", "label": "Q1", "country": "FX", "status": "auto"}})
+        self.assertEqual(gaz, {"Fictopoli": {"wikidata": "Q1", "label": "Q1", "country": "IT", "status": "auto"}})
         [op] = review["operations"]
         self.assertEqual(op["op"], "resolve_place")
         self.assertEqual(op["id"], "Altropoli")
@@ -468,11 +489,11 @@ class ProposeTest(unittest.TestCase):
 
     def test_suggestions_kept_on_rerun(self):
         review = bg.new_changeset([{"op": "resolve_place", "id": "Altropoli", "candidates": [],
-                                    "suggested": {"wikidata": "Q3", "country": "FX"},
+                                    "suggested": {"wikidata": "Q3", "country": "IT"},
                                     "reasoning": "r", "confidence": "high"}])
         bg.propose({}, review, self.index, self.client)
         [op] = review["operations"]
-        self.assertEqual(op["suggested"], {"wikidata": "Q3", "country": "FX"})
+        self.assertEqual(op["suggested"], {"wikidata": "Q3", "country": "IT"})
         self.assertEqual((op["reasoning"], op["confidence"]), ("r", "high"))
         self.assertEqual(len(op["candidates"]), 2)
 
@@ -484,6 +505,17 @@ class ProposeTest(unittest.TestCase):
         self.assertIn("Fictopoli", gaz)
         self.assertNotIn("Altropoli", gaz)
         self.assertEqual(review["operations"], [])
+
+    def test_forced_review_is_never_auto(self):
+        gaz, review = {}, bg.new_changeset([])
+        bg.propose(gaz, review, self.index, self.client, force_review={"Fictopoli": "the Latin names another Fictopoli"})
+        self.assertNotIn("Fictopoli", gaz)
+        op = next(o for o in review["operations"] if o["id"] == "Fictopoli")
+        self.assertIn("forced review: the Latin names another Fictopoli", op["failed"])
+        self.assertEqual(op["candidates"][0]["wikidata"], "Q1")
+
+    def test_force_review_keys_are_places(self):
+        self.assertTrue(set(bg.FORCE_REVIEW) <= set(bg.load_state(REPO)[2]))
 
     def test_ops_sorted_by_occurrences_then_la(self):
         index = index_of(Beta=["A Beta"], Alfa=["A Alfa"])
@@ -623,7 +655,6 @@ class VerifySuggestionsTest(unittest.TestCase):
         self.assertTrue(any("differs from the item's country FR" in w for w in warnings))
 
 
-REPO = Path(__file__).resolve().parent.parent
 
 
 class CommittedGazetteerTest(unittest.TestCase):

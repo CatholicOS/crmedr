@@ -37,6 +37,15 @@ QID = re.compile(r"^Q[1-9]\d*$")
 SCHEMA = "crmedr-changeset/v1"
 MAX_CANDIDATES = 10
 CONFIDENCES = {"high", "medium", "low"}
+# Places that pass the evidence bar but are known to be wrong, because both the
+# Italian and Wikidata point to another place than the Latin names. They always
+# go to review, with the reason shown in the op.
+FORCE_REVIEW = {
+    # mr:0303-winwaloeus: Cornubia Armoricae is Cornouaille in Brittany
+    # (Landevennec, FR); the Italian prints "Nella Cornovaglia in Inghilterra".
+    "In Cornúbia Armóricæ": "the Latin names Cornouaille in Brittany (Armorica), "
+                            "not Cornwall; the Italian says Inghilterra",
+}
 PUBLISHED_KEYS = ["wikidata", "label", "description", "country", "countries", "la", "p9314", "coords", "types"]
 
 
@@ -77,6 +86,10 @@ def _checks(c, parsed, noms, claims, region_sets):
         for claim in sorted(claims):
             if claim != c["country"]:
                 country_problems.append(f"the Italian says {claim}, the item is in {c['country']}")
+        if parsed and not claims and not region_sets and not c.get("iso_self") and c["country"] != "IT":
+            # The CEI edition names no region or country for places in Italy.
+            country_problems.append("the Italian names no region or country (in the CEI edition: "
+                                    f"Italy); the item is in {c['country']}")
         for region, isos in region_sets.items():
             if c["country"] not in isos:
                 country_problems.append(f"region '{region}' is not in {c['country']}")
@@ -204,7 +217,7 @@ def _sort_ops(ops):
     return sorted(ops, key=lambda op: (-len(op.get("occurrences", [])), op["id"]))
 
 
-def propose(gazetteer, review, index, client):
+def propose(gazetteer, review, index, client, force_review=FORCE_REVIEW):
     ops = {op["id"]: op for op in review["operations"]}
     not_processed = []
     for la in sorted(index):
@@ -215,6 +228,9 @@ def propose(gazetteer, review, index, client):
         except WikidataError as e:
             not_processed.append((la, str(e)))
             continue
+        if la in force_review:
+            result["auto"] = None
+            result["failed"].append("forced review: " + force_review[la])
         if result["auto"]:
             gazetteer[la] = auto_entry(result["auto"])
             ops.pop(la, None)
