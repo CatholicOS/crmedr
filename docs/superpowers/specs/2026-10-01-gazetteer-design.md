@@ -77,10 +77,15 @@ inside a city phrase are not resolved separately; they remain visible in `la`.
   Land); reconciling them is sub-project 3's cross-check. Absent when unresolved.
 - **`status`**: `auto` (passed the evidence bar), `reviewed` (a person accepted or
   edited it), `unresolved` (a person decided there is no suitable item).
-- **`text_says`** (optional): a list of `{country, it}`, one per Italian wording of
-  this place that names a modern country other than `country`. `it` is the Italian
-  phrase verbatim, so sub-project 3 can attach the note to exactly the items whose
-  `it` matches. Only wrong **countries** go here.
+- **`text_says`** (optional): a list of `{country, it}`, one per **explicit
+  modern-country claim** of an Italian wording of this place ("nell’odierna X",
+  "oggi in X", see Candidate search) that names a country other than `country`.
+  `it` is the Italian phrase verbatim, so sub-project 3 can attach the note to
+  exactly the items whose `it` matches. It is **derived**, never chosen: given the
+  place's Italian phrases and its `country`, it is computed (`derive_text_says`),
+  and `validate()` requires it to equal the derivation. When the explicit claims
+  agree with the place (Antioch: three phrases say "oggi in Turchia", one says only
+  "in Siria"), there is nothing to record. Only wrong **countries** go here.
 - **`note`** (optional): free text; required for `unresolved`. Wrong regions or
   misnamed cities in the text are recorded here.
 - **Places awaiting review have no key.** Every key in the file is a decision.
@@ -134,7 +139,7 @@ as not processed and left for the next run; it is never written as `auto` or
 ### `verify-suggestions` (network)
 
 Claude (approach 3) works through the change-set in batches and writes into each op
-`suggested: {wikidata, country, text_says?}`, `reasoning` and `confidence`
+`suggested: {wikidata, country}`, `reasoning` and `confidence`
 (`high | medium | low`). This subcommand then checks every suggestion: the QID
 exists; if it is not among the candidates, it is fetched and added (so the UI shows
 its evidence); and a suggested `country` that differs from the item's single current
@@ -145,9 +150,10 @@ suggestion never makes a place `auto`.
 
 Reads the decisions exported from martyrology-frontend:
 - `accept` → `reviewed`, from `suggested` (or the top candidate when there is none);
-- `edit` → `reviewed`, from `edited.wikidata`, `edited.country`,
-  `edited.text_says` (fields not given fall back to `suggested`, then to the
-  chosen item's own label and P17);
+- `edit` → `reviewed`, from `edited.wikidata` and `edited.country` (fields not
+  given fall back to `suggested`, then to the chosen item's own label and P17);
+- in both cases `text_says` is derived from the place's Italian phrases and the
+  final country; a `text_says` in the decision is ignored;
 - `reject` → `unresolved`, with `edited.reason` as `note` (required).
 
 `label` comes from the candidate data in the op, or is fetched if the reviewer
@@ -166,10 +172,14 @@ report is regenerated.
   ("Coziba").
 - **Region.** The rest of each phrase after the connector: Latin *in Anglia*, *in
   pago …*; Italian "in Inghilterra", "nelle Fiandre".
-- **Modern-country claim.** Italian "nell’odierna X", "nell’attuale X", "ora in X",
-  "oggi in X", "in territorio dell’odierna X", and a trailing ", in X" where X is a
-  country name. Country names map to ISO codes through an embedded Italian-name
-  table.
+- **Modern-country claim.** Only explicit modern wording: Italian "nell’odierna X",
+  "nell’odierno X", "nell’attuale X", "ora in X", "ora X", "oggi in X", "nel territorio
+  dell’odierna X", where X is a country name (an embedded Italian-name table maps it
+  to an ISO code). A bare country name ("in Siria", "sempre in Francia", ", in
+  Francia", "nell’antica Armenia") is a **region**, since it may name the ancient
+  region: it is checked as a region for `auto`, but it is never a claim and never
+  becomes `text_says`. A region that is itself a country name has no distance check
+  (the country check covers it).
 - **Latin nominatives.** From the Latin head word, after folding accents and
   ligatures: locative and ablative endings mapped to candidate nominatives
   (*-æ/-ae → -a*; *-i → -um, -us, -ium*; *-is → -a, -ae, -i*; *-o → -um, -us*;
@@ -247,8 +257,7 @@ always go to review.
       "countries": ["AT"], "la": ["Lauriacum"], "p9314": false,
       "coords": [48.21, 14.47], "types": ["Q3957"], "evidence": ["it", "la", "type"] }
   ],
-  "suggested": { "wikidata": "Q…", "country": "AT",
-                 "text_says": [{ "country": "DE", "it": "A Lorch nel Norico ripense, nell’odierna Germania" }] },
+  "suggested": { "wikidata": "Q…", "country": "AT" },
   "reasoning": "Lauriacum is Enns/Lorch in Upper Austria …",
   "confidence": "high",
   "decision": null,
@@ -260,8 +269,9 @@ always go to review.
 - `candidates` are ranked by evidence count, then by search rank. `country` is the
   single current P17 or `null`; `countries` lists all current P17 values (ISO codes);
   `types` are the P31 QIDs.
-- The frontend extends `EditedFields` with `wikidata`, `country`, `text_says`
-  (`reason` already exists) and treats `resolve_place` as adjudicable.
+- The frontend extends `EditedFields` with `wikidata` and `country` (`reason` already
+  exists) and treats `resolve_place` as adjudicable. It shows the `text_says` that
+  will be derived for the chosen country, read-only.
 - The phrases quoted are place designations only, within the quoting exception.
 
 ## Report: `docs/gazetteer-report.md`
@@ -282,8 +292,8 @@ the same validation on the committed file:
 - `label` and `country` are present unless `unresolved`; `country` is in the
   embedded ISO 3166-1 alpha-2 set;
 - `unresolved` has a `note`;
-- every `text_says[].it` is an `it` of an item with that `la`, and its `country`
-  differs from the gazetteer entry's own `country`;
+- `text_says` equals the derivation from the place's Italian phrases and the entry's
+  `country` (absent when that is empty);
 - no key is both in `gazetteer.json` and an op in `gazetteer_review.json`.
 
 ## Tests

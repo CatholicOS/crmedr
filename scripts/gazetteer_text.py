@@ -48,6 +48,18 @@ SEGMENT_PREFIX_IT = re.compile(
     r"(?:(?:odiern[oa]|attuale|antic[oa])\s+)?")
 
 
+MODERN_IT = re.compile(r"odiern|attuale")
+
+
+def _follows_modern(s, cuts, i):
+    """'ora in X', 'oggi in X': the cut before 'in' is 'ora' or 'oggi' with
+    nothing between them."""
+    if i == 0:
+        return False
+    prev = cuts[i - 1]
+    return prev.group(0).strip() in ("ora", "oggi") and not s[prev.end():cuts[i].start()].strip(" ,")
+
+
 def _dedupe(xs):
     return list(dict.fromkeys(x for x in xs if x))
 
@@ -71,11 +83,16 @@ def parse_italian(it):
     for i, cut in enumerate(cuts):
         end = cuts[i + 1].start() if i + 1 < len(cuts) else len(s)
         seg = s[cut.end():end].strip(" ,")
-        seg = seg[SEGMENT_PREFIX_IT.match(seg).end():].strip()
+        prefix = SEGMENT_PREFIX_IT.match(seg).group(0)
+        seg = seg[len(prefix):].strip()
         if not seg:
             continue
+        # Only explicit modern wording states a modern country ("nell'odierna X",
+        # "oggi in X", "ora X"); a bare "in Siria" may name the ancient region.
+        explicit = MODERN_IT.search(prefix) or (cut.group(0).strip() in ("ora", "oggi")
+                                               or _follows_modern(s, cuts, i))
         iso = country_of(seg)
-        if iso:
+        if iso and explicit:
             claims.append(iso)
         elif seg[0].isupper():
             regions.append(seg)

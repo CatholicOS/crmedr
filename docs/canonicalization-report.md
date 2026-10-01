@@ -447,9 +447,13 @@ goes to the review change-set `data/gazetteer_review.json` and is decided in
 martyrology-frontend (`reviewed`, or `unresolved` with a note). Places awaiting
 review have no key.
 
-Where the printed Italian names the wrong modern country, the actual location
-wins and the entry records the printed claim in `text_says`, with the Italian
-phrase it comes from (e.g. Lorch/Enns, "nell'odierna Germania", is in Austria).
+Where the printed Italian explicitly names the wrong modern country ("nell'odierna
+X", "oggi in X", "ora in X"), the actual location wins and the entry records the
+printed claim in `text_says`, with the Italian phrase it comes from (e.g.
+Lorch/Enns, "nell'odierna Germania", is in Austria). It is derived from the
+phrases and the place's country, not chosen. A bare "in Siria" or "in Armenia" is
+not such a claim, since it may name the ancient region: for Antioch three phrases
+say "oggi in Turchia" and one says only "in Siria", and nothing is recorded.
 
 ## Post-2004 official variations
 

@@ -103,6 +103,13 @@ def prune_queue(review):
     return dropped
 
 
+def derive_text_says(its, country):
+    """The explicit modern-country claims of a place's Italian phrases that name
+    another country than the one the place lies in, one per phrase and claim."""
+    return [{"country": claim, "it": it} for it in its for claim in parse_italian(it)["claims"]
+            if claim != country]
+
+
 def auto_entry(candidate):
     return {"wikidata": candidate["wikidata"], "label": candidate["label"],
             "country": candidate["country"], "status": "auto"}
@@ -224,11 +231,10 @@ def validate(gazetteer, index, review_ops=()):
             errors.append(f"{where}: missing label")
         if e.get("country") not in ISO_CODES:
             errors.append(f"{where}: country {e.get('country')!r} is not an ISO 3166-1 alpha-2 code")
-        for ts in e.get("text_says", []):
-            if set(ts) != {"country", "it"} or ts["it"] not in index[la]["it"] \
-                    or ts["country"] not in ISO_CODES or ts["country"] == e.get("country"):
-                errors.append(f"{where}: bad text_says {ts!r} (it must be one of the place's Italian "
-                              f"phrases, country an ISO code other than the entry's)")
+        expected = derive_text_says(index[la]["it"], e.get("country"))
+        if e.get("text_says", []) != expected:
+            errors.append(f"{where}: text_says {e.get('text_says', [])!r} is not the one derived from "
+                          f"the Italian phrases and country {e.get('country')}: {expected!r}")
     for op in review_ops:
         if op.get("id") in gazetteer:
             errors.append(f"gazetteer {op['id']!r}: decided but also queued in data/gazetteer_review.json")
@@ -266,6 +272,9 @@ def make_op(la, item, result, old):
     for key in ("suggested", "reasoning", "confidence"):
         if old and key in old:
             op[key] = old[key]
+    # text_says is derived when the place is decided; a suggestion carries none.
+    if op.get("suggested") and "text_says" in op["suggested"]:
+        op["suggested"] = {k: v for k, v in op["suggested"].items() if k != "text_says"}
     # The suggestion may be pruned from a fresh search as implausible; carry it over.
     suggested = (op.get("suggested") or {}).get("wikidata")
     if suggested and all(c["wikidata"] != suggested for c in op["candidates"]):
@@ -399,7 +408,7 @@ def write_state(repo_root, gazetteer, review, index, not_processed=()):
         render_report(gazetteer, index, review["operations"], not_processed), encoding="utf-8")
 
 
-def _resolve(op, client):
+def _resolve(op, client, its):
     """The entry for one decided op, or an error message."""
     la, decision = op["id"], op["decision"]
     suggested, edited = op.get("suggested") or {}, op.get("edited") or {}
@@ -424,8 +433,8 @@ def _resolve(op, client):
         or chosen.get("country")
     if not country:
         return None, f"{la!r}: {qid} needs a country (no single current P17; use edit)"
-    text_says = edit["text_says"] if "text_says" in edit else \
-        (suggested.get("text_says") if from_suggestion else None)
+    # Derived from the place's Italian and the final country, never taken from the decision.
+    text_says = derive_text_says(its, country)
     entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
     if text_says:
         entry["text_says"] = text_says
@@ -448,7 +457,7 @@ def apply_decisions(gazetteer, review, exported, index, client):
         if la in gazetteer:
             errors.append(f"{la!r}: already decided in data/gazetteer.json")
             continue
-        entry, error = _resolve(op, client)
+        entry, error = _resolve(op, client, index[la]["it"])
         if error:
             errors.append(error)
         else:
@@ -501,10 +510,6 @@ def verify_suggestions(review, index, client):
         elif item and item.get("country") and item["country"] != s["country"]:
             warnings.append(f"{la!r}: suggested country {s['country']} differs from the item's country "
                             f"{item['country']}; check the reasoning")
-        its = index.get(la, {}).get("it", [])
-        for ts in s.get("text_says", []):
-            if set(ts) != {"country", "it"} or ts["it"] not in its or ts["country"] == s.get("country"):
-                errors.append(f"{la!r}: bad text_says {ts!r}")
     return errors, warnings
 
 
