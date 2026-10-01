@@ -72,12 +72,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Amaséæ in Hellespónto": {
-      "wikidata": "Q170532",
-      "label": "Amasya",
-      "country": "TR",
-      "status": "auto"
-    },
     "Amaséæ in Ponto": {
       "wikidata": "Q170532",
       "label": "Amasya",
@@ -174,12 +168,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Apud Budam in Hungária": {
-      "wikidata": "Q193478",
-      "label": "Buda",
-      "country": "HU",
-      "status": "auto"
-    },
     "Apud Camerínum in Picéno Itáliæ": {
       "wikidata": "Q73489",
       "label": "Camerino",
@@ -240,12 +228,6 @@
       "country": "GB",
       "status": "auto"
     },
-    "Apud Línciam in Austria": {
-      "wikidata": "Q41329",
-      "label": "Linz",
-      "country": "AT",
-      "status": "auto"
-    },
     "Apud Matrítum in Hispánia": {
       "wikidata": "Q2807",
       "label": "Madrid",
@@ -256,12 +238,6 @@
       "wikidata": "Q490",
       "label": "Milan",
       "country": "IT",
-      "status": "auto"
-    },
-    "Apud Mogúntiam in Rhenánia Austrásiæ": {
-      "wikidata": "Q1720",
-      "label": "Mainz",
-      "country": "DE",
       "status": "auto"
     },
     "Apud Nuscum in Hirpínia": {
@@ -276,12 +252,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Apud Parísios in Gállia": {
-      "wikidata": "Q90",
-      "label": "Paris",
-      "country": "FR",
-      "status": "auto"
-    },
     "Apud Pictávium in Aquitánia": {
       "wikidata": "Q6616",
       "label": "Poitiers",
@@ -292,12 +262,6 @@
       "wikidata": "Q13396",
       "label": "Rieti",
       "country": "IT",
-      "status": "auto"
-    },
-    "Apud Rothómagum in Néustria": {
-      "wikidata": "Q30974",
-      "label": "Rouen",
-      "country": "FR",
       "status": "auto"
     },
     "Apud Stylum in Calábria": {
@@ -399,18 +363,6 @@
     "Ariáni in Hirpínia": {
       "wikidata": "Q55000",
       "label": "Ariano Irpino",
-      "country": "IT",
-      "status": "auto"
-    },
-    "Armi prope Rhégium Iúlii in Calábria": {
-      "wikidata": "Q268113",
-      "label": "Armo",
-      "country": "IT",
-      "status": "auto"
-    },
-    "Arétii in Etrúria": {
-      "wikidata": "Q13378",
-      "label": "Arezzo",
       "country": "IT",
       "status": "auto"
     },
@@ -886,12 +838,6 @@
       "wikidata": "Q46940",
       "label": "Alcalá de Henares",
       "country": "ES",
-      "status": "auto"
-    },
-    "Conseráni in Aquitánia": {
-      "wikidata": "Q1179",
-      "label": "Aquitaine",
-      "country": "FR",
       "status": "auto"
     },
     "Constántiæ in Néustria": {
@@ -1434,12 +1380,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Hadrianópoli in Paphlagónia": {
-      "wikidata": "Q43387",
-      "label": "Edirne",
-      "country": "TR",
-      "status": "auto"
-    },
     "Hadrianópoli in Thrácia": {
       "wikidata": "Q43387",
       "label": "Edirne",
@@ -1512,28 +1452,10 @@
       "country": "ES",
       "status": "auto"
     },
-    "Ibídem in cœmetério Generósæ": {
-      "wikidata": "Q220",
-      "label": "Rome",
-      "country": "IT",
-      "status": "auto"
-    },
     "Icónii in Lycaónia": {
       "wikidata": "Q79857",
       "label": "Konya",
       "country": "TR",
-      "status": "auto"
-    },
-    "Icósii in Africa septemtrionáli": {
-      "wikidata": "Q3561",
-      "label": "Algiers",
-      "country": "DZ",
-      "status": "auto"
-    },
-    "Illérdæ item in Hispánia": {
-      "wikidata": "Q15090",
-      "label": "Lleida",
-      "country": "ES",
       "status": "auto"
     },
     "In Anatólia": {
@@ -1782,12 +1704,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "In agro Rothomagénsi in Gállia": {
-      "wikidata": "Q30974",
-      "label": "Rouen",
-      "country": "FR",
-      "status": "auto"
-    },
     "In castro Blávio territórii Burdigalénsis in Aquitánia": {
       "wikidata": "Q202562",
       "label": "Blaye",
@@ -1836,12 +1752,6 @@
       "country": "CA",
       "status": "auto"
     },
-    "In fínibus Lugdunénsibus in Gállia": {
-      "wikidata": "Q456",
-      "label": "Lyon",
-      "country": "FR",
-      "status": "auto"
-    },
     "In loco Calafell prope Tarracónem ad oram Hispániæ": {
       "wikidata": "Q983637",
       "label": "Calafell",
@@ -1860,64 +1770,10 @@
       "country": "IT",
       "status": "auto"
     },
-    "In monastério Heidenheiménsi in Bavária": {
-      "wikidata": "Q3185",
-      "label": "Hildesheim",
-      "country": "DE",
-      "status": "auto"
-    },
-    "In pago Friburgénsi in Helvétia": {
-      "wikidata": "Q36378",
-      "label": "Fribourg",
-      "country": "CH",
-      "status": "auto"
-    },
-    "In pago Gálliæ Valentinénsi": {
-      "wikidata": "Q8848",
-      "label": "Valence",
-      "country": "FR",
-      "status": "auto"
-    },
-    "In pago Pictaviénsi in Aquitánia": {
-      "wikidata": "Q6616",
-      "label": "Poitiers",
-      "country": "FR",
-      "status": "auto"
-    },
     "In pago Rapóllæ in Lucánia": {
       "wikidata": "Q52644",
       "label": "Rapolla",
       "country": "IT",
-      "status": "auto"
-    },
-    "In pago Rothomagénsi Néustriæ": {
-      "wikidata": "Q30974",
-      "label": "Rouen",
-      "country": "FR",
-      "status": "auto"
-    },
-    "In pago Sancti Galli in regióne Helvetiórum": {
-      "wikidata": "Q25607",
-      "label": "St. Gallen",
-      "country": "CH",
-      "status": "auto"
-    },
-    "In pago Valentíno item in Hispánia": {
-      "wikidata": "Q8818",
-      "label": "Valencia",
-      "country": "ES",
-      "status": "auto"
-    },
-    "In regióne Aberdonénsi Scótiæ": {
-      "wikidata": "Q36405",
-      "label": "Aberdeen",
-      "country": "GB",
-      "status": "auto"
-    },
-    "In território Lugdunénsi in Gállia": {
-      "wikidata": "Q456",
-      "label": "Lyon",
-      "country": "FR",
       "status": "auto"
     },
     "In urbe Gondar in Æthiópia": {
@@ -2050,18 +1906,6 @@
       "wikidata": "Q200030",
       "label": "Latakia",
       "country": "SY",
-      "status": "auto"
-    },
-    "Laude Pompéia in Ligúria": {
-      "wikidata": "Q6244",
-      "label": "Lodi",
-      "country": "IT",
-      "status": "auto"
-    },
-    "Laude Pompéia item in Langobárdia": {
-      "wikidata": "Q6244",
-      "label": "Lodi",
-      "country": "IT",
       "status": "auto"
     },
     "Laudúni in Gállia": {
@@ -2224,12 +2068,6 @@
       "wikidata": "Q1229422",
       "label": "Lampsacus",
       "country": "TR",
-      "status": "auto"
-    },
-    "Lýciæ in Apúlia": {
-      "wikidata": "Q13386",
-      "label": "Lecce",
-      "country": "IT",
       "status": "auto"
     },
     "Malbódii in Néustria": {
@@ -2410,12 +2248,6 @@
       "wikidata": "Q2742",
       "label": "Münster",
       "country": "DE",
-      "status": "auto"
-    },
-    "Monte Pessuláno in Província Gálliæ": {
-      "wikidata": "Q6441",
-      "label": "Montpellier",
-      "country": "FR",
       "status": "auto"
     },
     "Monticiáni apud Senas in Etrúria": {
@@ -2778,12 +2610,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Plebe in México": {
-      "wikidata": "Q125293",
-      "label": "Heroica Puebla de Zaragoza",
-      "country": "MX",
-      "status": "auto"
-    },
     "Pontídæ in pago Bergoménsi Langobárdiæ": {
       "wikidata": "Q101433",
       "label": "Pontida",
@@ -2842,24 +2668,6 @@
       "wikidata": "Q207095",
       "label": "Huy",
       "country": "BE",
-      "status": "auto"
-    },
-    "Prope Monáchium Baváriæ in Germánia": {
-      "wikidata": "Q1726",
-      "label": "Munich",
-      "country": "DE",
-      "status": "auto"
-    },
-    "Prope Monáchium Baváriæ in Germánia in castris detentiónis Dacháni": {
-      "wikidata": "Q1726",
-      "label": "Munich",
-      "country": "DE",
-      "status": "auto"
-    },
-    "Prope Valéntiam in Hispánia": {
-      "wikidata": "Q8818",
-      "label": "Valencia",
-      "country": "ES",
       "status": "auto"
     },
     "Putéolis in Campánia": {
@@ -2956,12 +2764,6 @@
       "wikidata": "Q13396",
       "label": "Rieti",
       "country": "IT",
-      "status": "auto"
-    },
-    "Rhenáugiæ apud Helvétios": {
-      "wikidata": "Q67534",
-      "label": "Rheinau",
-      "country": "CH",
       "status": "auto"
     },
     "Rhégii Iúlii in Calábria": {
@@ -3702,12 +3504,6 @@
       "country": "IT",
       "status": "auto"
     },
-    "Tréviris in Germánia": {
-      "wikidata": "Q3138",
-      "label": "Trier",
-      "country": "DE",
-      "status": "auto"
-    },
     "Turiasóne in Hispánia Tarraconénsi": {
       "wikidata": "Q639412",
       "label": "Tarazona",
@@ -3766,18 +3562,6 @@
       "wikidata": "Q175081",
       "label": "Gap",
       "country": "FR",
-      "status": "auto"
-    },
-    "Varsáviæ in Polónia": {
-      "wikidata": "Q270",
-      "label": "Warsaw",
-      "country": "PL",
-      "status": "auto"
-    },
-    "Varsáviæ item in Polónia": {
-      "wikidata": "Q270",
-      "label": "Warsaw",
-      "country": "PL",
       "status": "auto"
     },
     "Venétiis": {
@@ -3910,12 +3694,6 @@
       "wikidata": "Q42466",
       "label": "Veroli",
       "country": "IT",
-      "status": "auto"
-    },
-    "Zagábriæ in Croátia": {
-      "wikidata": "Q1435",
-      "label": "Zagreb",
-      "country": "HR",
       "status": "auto"
     },
     "in Hibérnia, in cella eius nómine vocáta": {
