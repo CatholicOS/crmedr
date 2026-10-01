@@ -33,7 +33,7 @@ class ParseItalianTest(unittest.TestCase):
 
     def test_claim_forms(self):
         for it in ("A Fictopoli in Fictia, ora in Francia", "A Fictopoli sempre in Francia",
-                   "A Fictopoli ancora in Francia", "A Fictopoli nel territorio dell’odierna Francia",
+                   "A Fictopoli ancora in Francia", "A Fictopoli nel territorio dell’attuale Francia",
                    "A Fictopoli in Fictia, in Francia", "A Fictopoli nell’attuale Francia"):
             self.assertEqual(gt.parse_italian(it)["claims"], ["FR"], it)
         self.assertEqual(gt.parse_italian("Presso Fictopoli nel Fictiense, nell’odierno Belgio")["claims"], ["BE"])
@@ -55,7 +55,7 @@ class ParseItalianTest(unittest.TestCase):
                          ["Fictopoli di Fictaria"])
 
     def test_lowercase_head_dropped_and_lowercase_region_ignored(self):
-        p = gt.parse_italian("All’ancora in mare davanti a Fictopoli sulla costa fittizia")
+        p = gt.parse_italian("In nave al largo di Fictopoli sulla costa fittizia")
         self.assertEqual(p["heads"], [])
         self.assertEqual(p["regions"], [])
 
@@ -329,7 +329,7 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(r["auto"]["wikidata"], "Q2")
 
     def test_every_italian_variant_must_match(self):
-        r = bg.evaluate("Fictópoli", item("A Fictopoli", "All’ancora in mare davanti a Fictopoli"),
+        r = bg.evaluate("Fictópoli", item("A Fictopoli", "In nave al largo di Fictopoli"),
                         [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
         self.assertIsNone(r["auto"])
         self.assertIn("no item has the Italian name of every variant", r["failed"])
