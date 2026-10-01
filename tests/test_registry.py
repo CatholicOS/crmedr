@@ -91,5 +91,20 @@ class RegistryPlacesTest(unittest.TestCase):
                 r.load_places(Path(d), {"mr:0102-x"})
 
 
+
+class IdCorrectionsAppliedTest(unittest.TestCase):
+    """No workbook ID that ID_CORRECTIONS replaces may survive in the data."""
+
+    def test_no_corrected_source_id_remains(self):
+        root = Path(__file__).resolve().parent.parent
+        files = ["data/martyrology_ids.json", "data/typology.json", "data/places.json",
+                 "i18n/la.json", "i18n/it.json", "i18n/en.json"]
+        text = "\n".join((root / f).read_text(encoding="utf-8") for f in files)
+        leftovers = sorted(old for old in r.ID_CORRECTIONS if f'"{old}"' in text)
+        self.assertEqual(leftovers, [])
+
+    def test_stephanus_fanus_is_corrected(self):
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:1130-stephanus-fanus"), "mr:1130-cuthbertus-mayne")
+
 if __name__ == "__main__":
     unittest.main()
