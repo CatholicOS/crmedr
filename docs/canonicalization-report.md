@@ -517,6 +517,8 @@ intended:
   the printed form):
   - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
   - July 4 (mr:0704-ioannes-cornelius): "un Inghilterra" for *in Inghilterra*;
+  - August 7, entry 13\* (mr:0807-martinus-a-sancto-felice-woodcock): "Inghiltera" for
+    *Inghilterra*;
   - September 6 (mr:0906-bertrandus-de-garrigues): "Mel" for *Nel*;
   - September 17 (mr:0917-ioannes-ventura-solsona): "vicno" for *vicino*;
   - September 22 (mr:0922-mauritius-et-socii): "nell territorio" for *nel territorio*;
