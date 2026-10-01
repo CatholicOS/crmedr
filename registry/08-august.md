@@ -421,7 +421,7 @@
 | 28 | 11 | `mr:0828-gulielmus-dean-et-socii` | * | GB | dies_natalis |  |
 | 28 | 12 | `mr:0828-edmundus-arrowsmith` |  | GB | dies_natalis |  |
 | 28 | 13 | `mr:0828-iuniperus-serra` | * | US | dies_natalis |  |
-| 28 | 14 | `mr:0828-carolus-arnaldi-hanus` | * | FR | dies_natalis |  |
+| 28 | 14 | `mr:0828-carolus-arnaldus-hanus` | * | FR | dies_natalis |  |
 | 28 | 15 | `mr:0828-ioachima-de-vedruna` |  | ES | dies_natalis |  |
 | 28 | 16 | `mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt` | * | ES | dies_natalis |  |
 | 28 | 17 | `mr:0828-aurelius-ample-alcaide` | * | ES | dies_natalis |  |
@@ -463,6 +463,6 @@
 | 31 | 2 | `mr:0831-aristidis` |  | GR | dies_natalis |  |
 | 31 | 3 | `mr:0831-paulinus` |  | DE | dies_natalis |  |
 | 31 | 4 | `mr:0831-aidanus` |  | GB | dies_natalis |  |
-| 31 | 5 | `mr:0831-raymundus-nonnati` |  | ES | dies_natalis |  |
+| 31 | 5 | `mr:0831-raymundus-nonnatus` |  | ES | dies_natalis |  |
 | 31 | 6 | `mr:0831-andreas-de-burgo-sancti-sepulcri` | * | IT | dies_natalis |  |
 | 31 | 7 | `mr:0831-edmigius-primo-rodriguez-et-socii` | * | ES | dies_natalis |  |

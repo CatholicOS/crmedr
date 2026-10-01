@@ -353,6 +353,56 @@ Sancta Cruce", is *beata*), 16 Latin honorifics of the wrong gender or number
 ("Sanctus Agnes", "Sanctus Scillitani"), 14 Italian subjects that were the place
 ("Santa Croce in Val d’Arno") and 4 English ones that named the place's saint.
 
+**Slug corrections (applied, October 2026, #33)**: 34 slugs had been coined from a
+Latin **genitive** instead of the subject's nominative lemma (rule 1), from a misread
+byname, or from a truncated name. The 2004 Latin prints the subject in the genitive
+(*beáti Notkéri Bálbuli*); declined Latin words carry a stress accent there, which the
+scan used to tell them from modern surnames (Fatati, Régis, Sanchís), left as printed.
+Ablatives inside religious names (*a Vírgine Perdolénti*) and the place-locative
+disambiguators (mr:0213-stephanus-lugduni, mr:0403-ioannes-neapoli) are kept.
+mr:0603-ioannes-vigesimi-iii follows the papal-ordinal form (mr:0110-gregorius-x);
+mr:0727-dormientium-ephesi becomes a rule-8 group, mr:0727-septem-dormientes-ephesi;
+in mr:1212-alexandrini-epimachi-et-alexander "Alexandrinorum" is "of Alexandria", not a
+person. Renamed (not deprecated), each in `ID_CORRECTIONS`; the Latin subjects follow
+the slugs.
+
+| Workbook ID | Corrected ID |
+| --- | --- |
+| mr:0406-notkerus-balbuli | mr:0406-notkerus-balbulus |
+| mr:0727-dormientium-ephesi | mr:0727-septem-dormientes-ephesi |
+| mr:0413-carpus-et-thyatirensis | mr:0413-carpus-et-socii |
+| mr:0724-bor-et-gleb | mr:0724-boris-et-gleb |
+| mr:0110-petrus-urseoli | mr:0110-petrus-urseolus |
+| mr:0125-arthematis | mr:0125-arthemas |
+| mr:0129-gilda-sapientis | mr:0129-gilda-sapiens |
+| mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-pietas-a-cruce-ortiz-real |
+| mr:0307-paulus-simplicis | mr:0307-paulus-simplex |
+| mr:0424-gulielmus-firmati | mr:0424-gulielmus-firmatus |
+| mr:0425-pasicratis-et-valentio | mr:0425-pasicrates-et-valentio |
+| mr:0426-paschasius-radberti | mr:0426-paschasius-radbertus |
+| mr:0505-sacerdotis | mr:0505-sacerdos |
+| mr:0522-humilitatis | mr:0522-humilitas |
+| mr:0603-ioannes-vigesimi-iii | mr:0603-ioannes-xxiii |
+| mr:0705-athanasius-hierosolymitani | mr:0705-athanasius-hierosolymitanus |
+| mr:0712-ioannes-gualberti | mr:0712-ioannes-gualbertus |
+| mr:0713-myropis | mr:0713-myrope |
+| mr:0713-ludovicus-armandi-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam |
+| mr:0828-carolus-arnaldi-hanus | mr:0828-carolus-arnaldus-hanus |
+| mr:0831-raymundus-nonnati | mr:0831-raymundus-nonnatus |
+| mr:0904-caletricis | mr:0904-caletricus |
+| mr:0911-sacerdotis | mr:0911-sacerdos |
+| mr:0914-ioannes-chrysostomi | mr:0914-ioannes-chrysostomus |
+| mr:0916-martinus-sacerdotis | mr:0916-martinus-sacerdos |
+| mr:1115-caius-coreani | mr:1115-caius-coreanus |
+| mr:1120-gregorius-decapolitani | mr:1120-gregorius-decapolitanus |
+| mr:1128-papinianus-vitensis-et-mansuetus-urusitani | mr:1128-papinianus-vitensis-et-mansuetus-urusitanus |
+| mr:1128-iacobus-piceni | mr:1128-iacobus-picenus |
+| mr:1204-ioannes-damasceni | mr:1204-ioannes-damascenus |
+| mr:1212-alexandrini-epimachi-et-alexander | mr:1212-epimachus-et-alexander |
+| mr:0417-robertus-molismensi | mr:0417-robertus-molismensis |
+| mr:0918-ferreolus-galliae-viennensi | mr:0918-ferreolus-viennensis |
+| mr:0401-hugo-cisterciensi-bonae | mr:0401-hugo-bonaevallensis |
+
 ## Country-code corrections (September 2026)
 
 `country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the

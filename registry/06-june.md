@@ -51,7 +51,7 @@
 | 3 | 16 | `mr:0603-carolus-renatus-collas-du-bignon` | * | FR | dies_natalis |  |
 | 3 | 17 | `mr:0603-petrus` |  | VN | dies_natalis |  |
 | 3 | 18 | `mr:0603-didacus-oddi` | * | IT | dies_natalis |  |
-| 3 | 19 | `mr:0603-ioannes-vigesimi-iii` | * | IT | dies_natalis |  |
+| 3 | 19 | `mr:0603-ioannes-xxiii` | * | IT | dies_natalis |  |
 | 4 | 1 | `mr:0604-quirinus` |  | HU | dies_natalis |  |
 | 4 | 2 | `mr:0604-metrophanes` |  | TR | dies_natalis |  |
 | 4 | 3 | `mr:0604-optatus` |  | DZ | commemoratio |  |

@@ -303,7 +303,7 @@
 | 26 | 6 | `mr:0226-andreas` |  | IT | dies_natalis |  |
 | 26 | 7 | `mr:0226-robertus-drury` | * | GB | dies_natalis |  |
 | 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz-montal-fornes` |  | ES | dies_natalis |  |
-| 26 | 9 | `mr:0226-pietatis-a-cruce-ortiz-real` | * | ES | dies_natalis |  |
+| 26 | 9 | `mr:0226-pietas-a-cruce-ortiz-real` | * | ES | dies_natalis |  |
 | 27 | 1 | `mr:0227-iulianus-et-eunus` |  | EG | commemoratio |  |
 | 27 | 2 | `mr:0227-besa` |  | EG | dies_natalis |  |
 | 27 | 3 | `mr:0227-honorina` | * | FR | dies_natalis |  |

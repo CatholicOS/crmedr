@@ -60,7 +60,7 @@
 | 5 | (1) | `mr:0705-antonius-maria-zaccaria` |  | IT | dies_natalis |  |
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT | dies_natalis |  |
 | 5 | 3 | `mr:0705-cyprilla` |  | LY | dies_natalis |  |
-| 5 | 4 | `mr:0705-athanasius-hierosolymitani` |  | IL | commemoratio |  |
+| 5 | 4 | `mr:0705-athanasius-hierosolymitanus` |  | IL | commemoratio |  |
 | 5 | 5 | `mr:0705-dometius-medicus` |  | TR | commemoratio |  |
 | 5 | 6 | `mr:0705-martha` | * | SY | dies_natalis |  |
 | 5 | 7 | `mr:0705-thomas` | * | IT | dies_natalis |  |
@@ -157,7 +157,7 @@
 | 12 | 3 | `mr:0712-nabor-et-felix` |  | DZ | dies_natalis |  |
 | 12 | 4 | `mr:0712-paternianus` |  | IT | dies_natalis |  |
 | 12 | 5 | `mr:0712-viventiolus` |  | FR | dies_natalis |  |
-| 12 | 6 | `mr:0712-ioannes-gualberti` |  | IT | dies_natalis |  |
+| 12 | 6 | `mr:0712-ioannes-gualbertus` |  | IT | dies_natalis |  |
 | 12 | 7 | `mr:0712-leo` | * | IT | dies_natalis |  |
 | 12 | 8 | `mr:0712-david-gunston` | * | GB | dies_natalis |  |
 | 12 | 9 | `mr:0712-ioannes-jones` |  | GB | dies_natalis |  |
@@ -170,13 +170,13 @@
 | 13 | 2 | `mr:0713-esdra` |  | IQ | commemoratio |  |
 | 13 | 3 | `mr:0713-sila` |  |  | commemoratio |  |
 | 13 | 4 | `mr:0713-serapion` |  | EG | dies_natalis |  |
-| 13 | 5 | `mr:0713-myropis` |  | GR | dies_natalis |  |
+| 13 | 5 | `mr:0713-myrope` |  | GR | dies_natalis |  |
 | 13 | 6 | `mr:0713-alexander` |  | TR | dies_natalis |  |
 | 13 | 7 | `mr:0713-eugenius` |  | FR | dies_natalis |  |
 | 13 | 8 | `mr:0713-turiavus` |  | FR | dies_natalis |  |
 | 13 | 9 | `mr:0713-iacobus-de-voragine` | * | IT | dies_natalis |  |
 | 13 | 10 | `mr:0713-thomas-tunstal` | * | GB | dies_natalis |  |
-| 13 | 11 | `mr:0713-ludovicus-armandi-iosephus-adam` | * | FR | dies_natalis |  |
+| 13 | 11 | `mr:0713-ludovicus-armandus-iosephus-adam` | * | FR | dies_natalis |  |
 | 13 | 12 | `mr:0713-magdalena-a-matre-dei-verchiere-et-socii` | * | FR | dies_natalis |  |
 | 13 | 13 | `mr:0713-emmanuel-le-van-phung` |  | VN | dies_natalis |  |
 | 13 | 14 | `mr:0713-clelia-barbieri` |  | IT | dies_natalis |  |
@@ -338,7 +338,7 @@
 | 24 | 5 | `mr:0724-euphrasia` |  | EG | dies_natalis |  |
 | 24 | 6 | `mr:0724-declanus` | * | IE | dies_natalis |  |
 | 24 | 7 | `mr:0724-sigolena` | * | FR | dies_natalis |  |
-| 24 | 8 | `mr:0724-bor-et-gleb` |  | RU | dies_natalis |  |
+| 24 | 8 | `mr:0724-boris-et-gleb` |  | RU | dies_natalis |  |
 | 24 | 9 | `mr:0724-balduinus` | * | IT | dies_natalis |  |
 | 24 | 10 | `mr:0724-christina-mirabilis` | * | BE | dies_natalis |  |
 | 24 | 11 | `mr:0724-kinga` |  | PL | dies_natalis |  |
@@ -392,7 +392,7 @@
 | 26 | 16 | `mr:0726-vincentius-pinilla` | * | ES | dies_natalis |  |
 | 26 | 17 | `mr:0726-titus-brandsma` | * | DE | dies_natalis |  |
 | 26 | 18 | `mr:0726-georgius-preca` | * | MT | dies_natalis |  |
-| 27 | 1 | `mr:0727-dormientium-ephesi` |  | TR | commemoratio |  |
+| 27 | 1 | `mr:0727-septem-dormientes-ephesi` |  | TR | commemoratio |  |
 | 27 | 2 | `mr:0727-pantaleon` |  | TR | dies_natalis |  |
 | 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  |
 | 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis |  |
