@@ -178,26 +178,36 @@ report is regenerated.
   `wbgetentities` for the candidates' `it`/`la`/`en` labels and aliases, P17 (with
   qualifiers, so ended statements are excluded), P31, P9314 and P625. Regions are
   searched the same way.
+- **Current P17.** A P17 statement is current when its rank is not `deprecated` and
+  it has no end time (P582); if any current statement has `preferred` rank, only
+  the preferred ones count. Country items map to ISO codes through their P297.
 
 ## The evidence bar for `auto`
 
 A place is `auto` only if exactly one candidate meets **all** of:
 
 1. **Italian name**: its Italian label or an Italian alias equals the head toponym
-   of **every** Italian variant of the place (accents and case ignored). If more
-   than one candidate does, the place goes to review (homonyms: Guadalajara,
-   Córdoba).
+   of **every** Italian variant of the place (accents and case ignored). Several
+   items often share a name (a town, a school, a hamlet: all "Bressanone"); the
+   other rules separate them, and if more than one candidate passes **all** rules
+   the place goes to review (homonyms: Guadalajara, Córdoba).
 2. **Latin name**: a `la` label or alias equals one of the Latin nominatives, or the
    item has a P9314 (Latin Place Names ID) value.
 3. **Country**: the item has exactly one current P17 (no end time), and
    - every modern-country claim in the Italian names that country, and
-   - every stated region (Latin or Italian) resolves, by the same search, to an item
-     whose single current P17 is that country, or to that country itself.
+   - every region stated in the Italian resolves, by the same search, to at least
+     one item with that exact Italian name whose current P17 is that country, or
+     that is that country. (Latin regions are not checked: places without Italian
+     never pass rule 1, and the Italian region renders the Latin one.)
    With no region and no claim, only the single current P17 is required.
-4. **Type**: one of its P31 values is in the script's allow-list (human
-   settlement, city, town, village, municipality, administrative territorial
-   entity, monastery, abbey, church building, archaeological site, island, mountain,
-   region and their usual subclasses as listed explicitly in the script).
+4. **Type**: one of its P31 values is, through `P279*` (subclass of), one of the
+   root classes listed in the script: human settlement (Q486972), administrative
+   territorial entity (Q56061), monastery (Q44613), church building (Q16970),
+   archaeological site (Q839954), island (Q23442), mountain (Q8502), region
+   (Q82794), historical region (Q1620908), historical country (Q3024240), cave
+   (Q35509), castle (Q23413), country (Q6256). Each class is checked once with a SPARQL `ASK` and
+   cached. This keeps out a person, a school, a film or a ship named like the
+   place.
 5. **No disagreement**: no `text_says` would be needed. Any disagreement between the
    text and the item's country is decided by a person.
 
@@ -221,7 +231,7 @@ always go to review.
   "candidates": [
     { "wikidata": "Q…", "label": "Enns", "description": "…", "country": "AT",
       "countries": ["AT"], "la": ["Lauriacum"], "p9314": false,
-      "coords": [48.21, 14.47], "types": ["town"], "evidence": ["it", "la", "type"] }
+      "coords": [48.21, 14.47], "types": ["Q3957"], "evidence": ["it", "la", "type"] }
   ],
   "suggested": { "wikidata": "Q…", "country": "AT",
                  "text_says": [{ "country": "DE", "it": "A Lorch nel Norico ripense, nell’odierna Germania" }] },
@@ -234,7 +244,8 @@ always go to review.
 
 - `id` is the `la` (the frontend's `opId` uses `id`).
 - `candidates` are ranked by evidence count, then by search rank. `country` is the
-  single current P17 or `null`; `countries` lists all current P17 values.
+  single current P17 or `null`; `countries` lists all current P17 values (ISO codes);
+  `types` are the P31 QIDs.
 - The frontend extends `EditedFields` with `wikidata`, `country`, `text_says`
   (`reason` already exists) and treats `resolve_place` as adjudicable.
 - The phrases quoted are place designations only, within the quoting exception.
