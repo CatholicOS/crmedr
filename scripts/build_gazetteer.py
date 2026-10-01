@@ -238,7 +238,7 @@ def make_op(la, item, result, old):
 def new_changeset(operations):
     return {"schema": SCHEMA, "generated_by": "scripts/build_gazetteer.py",
             "generated_at": datetime.date.today().isoformat(),
-            "base": {"edition": "2004", "registry": "data/places.json"},
+            "base": {"edition": "martyrologium_romanum_2004", "registry": "data/places.json"},
             "operations": operations}
 
 
