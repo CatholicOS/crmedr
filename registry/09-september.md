@@ -18,7 +18,7 @@
 | 1 | 12 | `mr:0901-ioanna` | * | IT | dies_natalis |  |
 | 1 | 13 | `mr:0901-christinus-roca-huguet-et-socii` | * | ES | dies_natalis |  |
 | 1 | 14 | `mr:0901-alphonsus-sebastia-vinals` | * | ES | dies_natalis |  |
-| 1 | 15 | `mr:0901-petrus-rivera` | * | ES | dies_natalis |  |
+| 1 | 15 | `mr:0901-petrus-rivera-et-socii` | * | ES | dies_natalis |  |
 | 2 | 1 | `mr:0902-zeno` |  | TR | dies_natalis |  |
 | 2 | 2 | `mr:0902-theodota` |  | TR | dies_natalis |  |
 | 2 | 3 | `mr:0902-habib` |  | TR | dies_natalis |  |
@@ -74,7 +74,7 @@
 | 5 | 6 | `mr:0905-ioannes-bonus-de-siponto` | * | HR | dies_natalis |  |
 | 5 | 7 | `mr:0905-gulielmus-browne` | * | GB | dies_natalis |  |
 | 5 | 8 | `mr:0905-florentius-dumontet-de-cardaillac` | * | FR | dies_natalis |  |
-| 5 | 9 | `mr:0905-petrus-nguyen-van-tu` |  | VN | dies_natalis |  |
+| 5 | 9 | `mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh` |  | VN | dies_natalis |  |
 | 5 | 10 | `mr:0905-teresia-gonhxa-bojaxhiu` | * | IN | dies_natalis |  |
 | 6 | 1 | `mr:0906-zacharias` |  | IL | commemoratio |  |
 | 6 | 2 | `mr:0906-onesiphorus` |  | TR | commemoratio |  |
@@ -89,7 +89,7 @@
 | 6 | 11 | `mr:0906-michael-czartoryskus` | * | PL | dies_natalis |  |
 | 7 | 1 | `mr:0907-regina` |  | FR | dies_natalis |  |
 | 7 | 2 | `mr:0907-sozon` |  | TR | dies_natalis |  |
-| 7 | 3 | `mr:0907-festus` |  | IT | dies_natalis |  |
+| 7 | 3 | `mr:0907-festus-et-desiderius` |  | IT | dies_natalis |  |
 | 7 | 4 | `mr:0907-evurtius` |  | FR | dies_natalis |  |
 | 7 | 5 | `mr:0907-gratus` | * | IT | dies_natalis |  |
 | 7 | 6 | `mr:0907-memorius-et-socii` |  | FR | dies_natalis |  |
@@ -101,9 +101,9 @@
 | 7 | 12 | `mr:0907-gauzlinus` | * | FR | dies_natalis |  |
 | 7 | 13 | `mr:0907-ioannes-laudensis` | * | IT | dies_natalis |  |
 | 7 | 14 | `mr:0907-stephanus-de-castellione` | * | FR | dies_natalis |  |
-| 7 | 15 | `mr:0907-marcus-crisini` |  | SK | dies_natalis |  |
-| 7 | 16 | `mr:0907-thomas-tsuji` | * | JP | dies_natalis |  |
-| 7 | 17 | `mr:0907-randulphus-corby` | * | GB | dies_natalis |  |
+| 7 | 15 | `mr:0907-marcus-crisini-et-socii` |  | SK | dies_natalis |  |
+| 7 | 16 | `mr:0907-thomas-tsuji-et-socii` | * | JP | dies_natalis |  |
+| 7 | 17 | `mr:0907-randulphus-corby-et-ioannes-duckett` | * | GB | dies_natalis |  |
 | 7 | 18 | `mr:0907-claudius-barnabas-laurent-de-mascloux-et-franciscus` | * | FR | dies_natalis |  |
 | 7 | 19 | `mr:0907-ioannes-baptista-mazzucconi` | * | PG | dies_natalis |  |
 | 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  |
@@ -117,7 +117,7 @@
 | 8 | 7 | `mr:0908-petrus-de-chavanon` | * | FR | dies_natalis |  |
 | 8 | 8 | `mr:0908-seraphina-sforza` | * | IT | dies_natalis |  |
 | 8 | 9 | `mr:0908-thomas-de-villanova` |  | ES | dies_natalis |  |
-| 8 | 10 | `mr:0908-thomas-palaser` | * | GB | dies_natalis |  |
+| 8 | 10 | `mr:0908-thomas-palaser-et-socii` | * | GB | dies_natalis |  |
 | 8 | 11 | `mr:0908-petrus-claver` |  | CO | dies_natalis |  |
 | 8 | 12 | `mr:0908-antonius-a-sancto-bonaventura-et-socii` | * | JP | dies_natalis |  |
 | 8 | 13 | `mr:0908-fridericus-ozanam` | * | FR | dies_natalis |  |
@@ -159,7 +159,7 @@
 | 11 | 7 | `mr:0911-adelphius` | * | FR | dies_natalis |  |
 | 11 | 8 | `mr:0911-leudinus` | * | FR | dies_natalis |  |
 | 11 | 9 | `mr:0911-elias-speleota` | * | IT | dies_natalis |  |
-| 11 | 10 | `mr:0911-gaspar-koteda` | * | JP | dies_natalis |  |
+| 11 | 10 | `mr:0911-gaspar-koteda-et-socii` | * | JP | dies_natalis |  |
 | 11 | 11 | `mr:0911-bonaventura-de-barcinone-gran` | * | IT | dies_natalis |  |
 | 11 | 12 | `mr:0911-franciscus-mayaudon` | * | FR | dies_natalis |  |
 | 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN | dies_natalis |  |
@@ -170,9 +170,9 @@
 | 12 | 3 | `mr:0912-cronidis-et-socii` |  | EG | dies_natalis |  |
 | 12 | 4 | `mr:0912-albeus` | * | IE | dies_natalis |  |
 | 12 | 5 | `mr:0912-guido` |  | BE | dies_natalis |  |
-| 12 | 6 | `mr:0912-apollinaris-franco` | * | JP | dies_natalis |  |
+| 12 | 6 | `mr:0912-apollinaris-franco-et-socii` | * | JP | dies_natalis |  |
 | 12 | 7 | `mr:0912-petrus-sulpitius-christophorus-faverge` | * | FR | dies_natalis |  |
-| 12 | 8 | `mr:0912-franciscus-ch` |  | KR | dies_natalis |  |
+| 12 | 8 | `mr:0912-franciscus-choe-kyong-hwan` |  | KR | dies_natalis |  |
 | 13 | (1) | `mr:0913-ioannes` |  | TR | celebratio |  |
 | 13 | 2 | `mr:0913-iulianus` |  | TR | dies_natalis |  |
 | 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | IL | dedicatio |  |
@@ -204,7 +204,7 @@
 | 15 | 6 | `mr:0915-alpinus` |  | FR | dies_natalis |  |
 | 15 | 7 | `mr:0915-aprus` |  | FR | dies_natalis |  |
 | 15 | 8 | `mr:0915-aichadrus` |  | FR | dies_natalis |  |
-| 15 | 9 | `mr:0915-emila` |  | ES | dies_natalis |  |
+| 15 | 9 | `mr:0915-emila-et-ieremias` |  | ES | dies_natalis |  |
 | 15 | 10 | `mr:0915-rolandus-de-medicis` | * | IT | dies_natalis |  |
 | 15 | 11 | `mr:0915-catharina-fieschi` |  | IT | dies_natalis |  |
 | 15 | 12 | `mr:0915-camillus-costanzo` | * | JP | dies_natalis |  |
@@ -219,7 +219,7 @@
 | 16 | 4 | `mr:0916-victor-et-socii` |  | IT | dies_natalis |  |
 | 16 | 5 | `mr:0916-priscus` | * | IT | dies_natalis |  |
 | 16 | 6 | `mr:0916-ninianus` |  | GB | commemoratio |  |
-| 16 | 7 | `mr:0916-rogellus` |  | ES | dies_natalis |  |
+| 16 | 7 | `mr:0916-rogellus-et-servusdei` |  | ES | dies_natalis |  |
 | 16 | 8 | `mr:0916-ludmilla` | * | CZ | dies_natalis |  |
 | 16 | 9 | `mr:0916-editha` |  | GB | dies_natalis |  |
 | 16 | 10 | `mr:0916-victor-iii` | * | IT | dies_natalis |  |
@@ -230,7 +230,7 @@
 | 16 | 15 | `mr:0916-ioannes-macias` |  | PE | dies_natalis |  |
 | 16 | 16 | `mr:0916-andreas-kim-tae-gon` |  | KR | dies_natalis |  |
 | 16 | 17 | `mr:0916-ignatius-casanovas` | * | ES | dies_natalis |  |
-| 16 | 18 | `mr:0916-laureanus-ferrer-cardet` | * | ES | dies_natalis |  |
+| 16 | 18 | `mr:0916-laureanus-ferrer-cardet-et-socii` | * | ES | dies_natalis |  |
 | 17 | (1) | `mr:0917-robertus-bellarmino` |  | IT | dies_natalis |  |
 | 17 | 2 | `mr:0917-satyrus` |  | IT | depositio |  |
 | 17 | 3 | `mr:0917-lambertus` |  | BE | dies_natalis |  |
@@ -302,9 +302,9 @@
 | 21 | 10 | `mr:0921-gerulphus` | * | BE | dies_natalis |  |
 | 21 | 11 | `mr:0921-maura` | * | FR | dies_natalis |  |
 | 21 | 12 | `mr:0921-marcus-de-mutina-scalabrini` | * | IT | dies_natalis |  |
-| 21 | 13 | `mr:0921-franciscus-jaccard` |  | VN | dies_natalis |  |
-| 21 | 14 | `mr:0921-laurentius-imbert` |  | KR | dies_natalis |  |
-| 21 | 15 | `mr:0921-vincentius-galbis-girones` | * | ES | dies_natalis |  |
+| 21 | 13 | `mr:0921-franciscus-jaccard-et-thomas-tran-van-thien` |  | VN | dies_natalis |  |
+| 21 | 14 | `mr:0921-laurentius-imbert-et-socii` |  | KR | dies_natalis |  |
+| 21 | 15 | `mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia` | * | ES | dies_natalis |  |
 | 22 | 1 | `mr:0922-emerita` |  | IT | commemoratio |  |
 | 22 | 2 | `mr:0922-mauritius-et-socii` |  | CH | dies_natalis |  |
 | 22 | 3 | `mr:0922-basilla` |  | IT | depositio |  |
@@ -319,7 +319,7 @@
 | 22 | 12 | `mr:0922-paulus-chong-ha-sang-et-augustinus-yu-chin-gil` |  | KR | dies_natalis |  |
 | 22 | 13 | `mr:0922-carolus-navarro` | * | ES | dies_natalis |  |
 | 22 | 14 | `mr:0922-germanus-gozalvo-andreu` | * | ES | dies_natalis |  |
-| 22 | 15 | `mr:0922-vincentius-pelufo-corts` | * | ES | dies_natalis |  |
+| 22 | 15 | `mr:0922-vincentius-pelufo-corts-et-iosepha-moscardo-montalva` | * | ES | dies_natalis |  |
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES | dies_natalis |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES | dies_natalis |  |
 | 23 | (1) | `mr:0923-pius-de-pietrelcina-forgione` |  | IT | dies_natalis |  |
@@ -335,7 +335,7 @@
 | 23 | 11 | `mr:0923-maria-aemilia-tavernier` | * | CA | dies_natalis |  |
 | 23 | 12 | `mr:0923-gulielmus-way` | * | GB | dies_natalis |  |
 | 23 | 13 | `mr:0923-vincentius-ballester-far` | * | ES | dies_natalis |  |
-| 23 | 14 | `mr:0923-sophia-ximenez-ximenez` | * | ES | dies_natalis |  |
+| 23 | 14 | `mr:0923-sophia-ximenez-ximenez-et-socii` | * | ES | dies_natalis |  |
 | 23 | 15 | `mr:0923-bernardina-jablonska` | * | PL | dies_natalis |  |
 | 23 | 16 | `mr:0923-iosephus-stanek` | * | PL | dies_natalis |  |
 | 24 | 1 | `mr:0924-anatolius` |  | IT | dies_natalis |  |
@@ -345,7 +345,7 @@
 | 24 | 5 | `mr:0924-isarnus` | * | FR | dies_natalis |  |
 | 24 | 6 | `mr:0924-gerardus-sagredo` |  | HU | dies_natalis |  |
 | 24 | 7 | `mr:0924-dalmatius-moner` | * | ES | dies_natalis |  |
-| 24 | 8 | `mr:0924-gulielmus-spenser` | * | GB | dies_natalis |  |
+| 24 | 8 | `mr:0924-gulielmus-spenser-et-robertus-hardesty` | * | GB | dies_natalis |  |
 | 24 | 9 | `mr:0924-antonius-gonzalez` |  | JP | dies_natalis |  |
 | 24 | 10 | `mr:0924-pacificus-de-sancto-severino` |  | IT | dies_natalis |  |
 | 24 | 11 | `mr:0924-antonius-martinus-slomsek` | * | SI | dies_natalis |  |
@@ -364,7 +364,7 @@
 | 25 | 8 | `mr:0925-ermenphridus` | * | FR | dies_natalis |  |
 | 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU | dies_natalis |  |
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |
-| 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren` | * | ES | dies_natalis |  |
+| 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |
 | 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis |  |
 | 26 | 2 | `mr:0926-gedeon` |  | IL | commemoratio |  |
 | 26 | 3 | `mr:0926-senator` |  | IT | dies_natalis |  |
@@ -392,7 +392,7 @@
 | 27 | 7 | `mr:0927-elzearus-de-sabran` |  | FR | dies_natalis |  |
 | 27 | 8 | `mr:0927-laurentius-de-ripafracta` | * | IT | dies_natalis |  |
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR | dies_natalis |  |
-| 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna` | * | ES | dies_natalis |  |
+| 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches` | * | ES | dies_natalis |  |
 | 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES | dies_natalis |  |
 | 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  |
 | 28 | (2) | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH | dies_natalis |  |
@@ -408,7 +408,7 @@
 | 28 | 12 | `mr:0928-leoba` |  | DE | dies_natalis |  |
 | 28 | 13 | `mr:0928-bernardinus-de-feltria-tomitano` | * | IT | dies_natalis |  |
 | 28 | 14 | `mr:0928-simon-de-rojas` |  | ES | dies_natalis |  |
-| 28 | 15 | `mr:0928-ioannes-shozaburo` | * | JP | dies_natalis |  |
+| 28 | 15 | `mr:0928-ioannes-shozaburo-et-socii` | * | JP | dies_natalis |  |
 | 28 | 16 | `mr:0928-franciscus-xaverius-ponsa-casallarch` | * | ES | dies_natalis |  |
 | 28 | 17 | `mr:0928-amalia-abad-casasempere` | * | ES | dies_natalis |  |
 | 28 | 18 | `mr:0928-iosephus-tarrats-comaposada` | * | ES | dies_natalis |  |
@@ -428,7 +428,7 @@
 | 29 | 13 | `mr:0929-michael-de-aozaraza-et-socii` |  | JP | dies_natalis |  |
 | 29 | 14 | `mr:0929-renatus-goupil` |  | US | dies_natalis |  |
 | 29 | 15 | `mr:0929-iacobus-mestre-iborra` | * | ES | dies_natalis |  |
-| 29 | 16 | `mr:0929-paulus-bori-puig` | * | ES | dies_natalis |  |
+| 29 | 16 | `mr:0929-paulus-bori-puig-et-vincentius-sales-genoves` | * | ES | dies_natalis |  |
 | 29 | 17 | `mr:0929-darius-hernandez-morato` | * | ES | dies_natalis |  |
 | 29 | 18 | `mr:0929-franciscus-de-paula-castello` | * | ES | dies_natalis |  |
 | 30 | (1) | `mr:0930-hieronymus` |  | HR | dies_natalis |  |
