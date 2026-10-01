@@ -17,7 +17,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-from gazetteer_text import fold
+from gazetteer_text import convention, fold
 
 API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
@@ -190,9 +190,13 @@ class Wikidata:
         countries = self._country_iso()
         places = self._place_types([t for s in summaries for t in s["types"]])
         for s in summaries:
-            s["countries"] = [countries.get(q) or q for q in s["country_qids"]]
+            s["countries"] = [convention(countries.get(q)) if countries.get(q) else q for q in s["country_qids"]]
             s["country"] = s["countries"][0] if len(s["countries"]) == 1 and countries.get(
                 s["country_qids"][0]) else None
+            # A territory with its own ISO code (Réunion, Guam) is its country, though
+            # P17 names the sovereign state.
+            if s["iso_self"]:
+                s["country"] = convention(s["iso_self"])
             s["place_type"] = any(t in places for t in s["types"])
         return summaries
 
@@ -221,6 +225,6 @@ class Wikidata:
         for c in self.candidates(text):
             if name in c["names_it"]:
                 if c["iso_self"]:
-                    out.add(c["iso_self"])
+                    out.add(convention(c["iso_self"]))
                 out.update(x for x in c["countries"] if len(x) == 2)
         return out
