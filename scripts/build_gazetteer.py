@@ -306,6 +306,104 @@ def write_state(repo_root, gazetteer, review, index, not_processed=()):
         render_report(gazetteer, index, review["operations"], not_processed), encoding="utf-8")
 
 
+def _resolve(op, client):
+    """The entry for one decided op, or an error message."""
+    la, decision = op["id"], op["decision"]
+    suggested, edited = op.get("suggested") or {}, op.get("edited") or {}
+    if decision == "reject":
+        reason = (edited.get("reason") or "").strip()
+        if not reason:
+            return None, f"{la!r}: reject needs a reason (edited.reason)"
+        return {"wikidata": None, "status": "unresolved", "note": reason}, None
+    if decision not in ("accept", "edit"):
+        return None, f"{la!r}: unknown decision {decision!r}"
+    candidates = op.get("candidates", [])
+    qid = (edited.get("wikidata") if decision == "edit" else None) or suggested.get("wikidata") \
+        or (candidates[0]["wikidata"] if candidates else None)
+    if not qid or not QID.match(qid):
+        return None, f"{la!r}: no item chosen"
+    chosen = next((c for c in candidates if c["wikidata"] == qid), None) or client.candidate(qid)
+    if chosen is None:
+        return None, f"{la!r}: no such item {qid}"
+    from_suggestion = suggested.get("wikidata") == qid
+    edit = edited if decision == "edit" else {}
+    country = edit.get("country") or (suggested.get("country") if from_suggestion else None) \
+        or chosen.get("country")
+    if not country:
+        return None, f"{la!r}: {qid} needs a country (no single current P17; use edit)"
+    text_says = edit["text_says"] if "text_says" in edit else \
+        (suggested.get("text_says") if from_suggestion else None)
+    entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
+    if text_says:
+        entry["text_says"] = text_says
+    if edit.get("reason"):
+        entry["note"] = edit["reason"]
+    return entry, None
+
+
+def apply_decisions(gazetteer, review, exported, index, client):
+    if exported.get("schema") != SCHEMA:
+        raise ValueError(f"not a {SCHEMA} document")
+    decided, errors = {}, []
+    for op in exported.get("operations", []):
+        if op.get("op") != "resolve_place" or op.get("decision") is None:
+            continue
+        la = op["id"]
+        if la not in index:
+            errors.append(f"{la!r}: not a place in data/places.json")
+            continue
+        if la in gazetteer:
+            errors.append(f"{la!r}: already decided in data/gazetteer.json")
+            continue
+        entry, error = _resolve(op, client)
+        if error:
+            errors.append(error)
+        else:
+            decided[la] = entry
+    if not errors:
+        trial = dict(gazetteer, **decided)
+        errors = validate({la: trial[la] for la in decided}, index)
+    if errors:
+        raise ValueError("no decision applied:\n" + "\n".join(errors))
+    gazetteer.update(decided)
+    review["operations"] = [op for op in review["operations"] if op["id"] not in decided]
+    return len(decided)
+
+
+def verify_suggestions(review, index, client):
+    errors, warnings = [], []
+    for op in review["operations"]:
+        s = op.get("suggested")
+        if not s:
+            continue
+        la = op["id"]
+        if op.get("confidence") not in CONFIDENCES:
+            errors.append(f"{la!r}: confidence {op.get('confidence')!r} not in {sorted(CONFIDENCES)}")
+        qid = s.get("wikidata")
+        item = None
+        if not isinstance(qid, str) or not QID.match(qid):
+            errors.append(f"{la!r}: suggested wikidata {qid!r} is not a QID")
+        else:
+            item = next((c for c in op.get("candidates", []) if c["wikidata"] == qid), None)
+            if item is None:
+                item = client.candidate(qid)
+                if item is None:
+                    errors.append(f"{la!r}: no such item {qid}")
+                else:
+                    item = published(item, [])
+                    op.setdefault("candidates", []).append(item)
+        if s.get("country") not in ISO_CODES:
+            errors.append(f"{la!r}: suggested country {s.get('country')!r} is not an ISO code")
+        elif item and item.get("country") and item["country"] != s["country"]:
+            warnings.append(f"{la!r}: suggested country {s['country']} differs from the item's country "
+                            f"{item['country']}; check the reasoning")
+        its = index.get(la, {}).get("it", [])
+        for ts in s.get("text_says", []):
+            if set(ts) != {"country", "it"} or ts["it"] not in its or ts["country"] == s.get("country"):
+                errors.append(f"{la!r}: bad text_says {ts!r}")
+    return errors, warnings
+
+
 def main(argv):
     if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check"}:
         sys.exit(__doc__)
@@ -329,7 +427,18 @@ def main(argv):
         print(f"{len(index)} places; {auto} auto; {len(review['operations'])} awaiting review; "
               f"{len(not_processed)} not processed")
         return 1 if not_processed else 0
-    raise NotImplementedError(cmd)  # verify-suggestions and apply: Task 5
+    if cmd == "verify-suggestions":
+        errors, warnings = verify_suggestions(review, index, client)
+        write_state(repo_root, gazetteer, review, index)
+        print("\n".join(["ERROR " + e for e in errors] + ["CHECK " + w for w in warnings]) or "ok")
+        return 1 if errors else 0
+    try:
+        n = apply_decisions(gazetteer, review, json.loads(exported.read_text(encoding="utf-8")), index, client)
+    except ValueError as e:
+        sys.exit(str(e))
+    write_state(repo_root, gazetteer, review, index)
+    print(f"{n} decisions applied; {len(review['operations'])} awaiting review")
+    return 0
 
 
 if __name__ == "__main__":

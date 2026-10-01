@@ -498,3 +498,110 @@ class ReportTest(unittest.TestCase):
         self.assertIn("| Fictópoli | FR | DE |", md)
         self.assertIn("| `mr:0101-a` | Fictópoli | DE | FR |", md)
         self.assertIn("Gamma", md)
+
+
+def op(la, decision, candidates=(), suggested=None, edited=None):
+    o = {"op": "resolve_place", "id": la, "la": la, "it": INDEX.get(la, {}).get("it", []),
+         "candidates": [bg.published(c, []) for c in candidates], "decision": decision, "edited": edited}
+    if suggested:
+        o["suggested"] = suggested
+    return o
+
+
+class ApplyTest(unittest.TestCase):
+    def setUp(self):
+        self.c1 = cand("Q1", label="Fictopolis", country="FR")
+        self.c2 = cand("Q2", label="Fictopolis Nova", country="DE")
+        self.client = FakeClient({"x": [self.c1, self.c2, cand("Q7", label="Septima", country="IT")]})
+        self.says = [{"country": "DE", "it": "A Fictopoli, nell’odierna Germania"}]
+
+    def run_apply(self, *ops, gaz=None):
+        gaz = {} if gaz is None else gaz
+        review = bg.new_changeset([dict(o, decision=None, edited=None) for o in ops])
+        n = bg.apply_decisions(gaz, review, bg.new_changeset(list(ops)), INDEX, self.client)
+        return n, gaz, review
+
+    def test_accept_uses_suggestion(self):
+        n, gaz, review = self.run_apply(op("Fictópoli", "accept", [self.c2, self.c1],
+                                           suggested={"wikidata": "Q1", "country": "FR", "text_says": self.says}))
+        self.assertEqual(n, 1)
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q1", "label": "Fictopolis", "country": "FR",
+                                            "status": "reviewed", "text_says": self.says})
+        self.assertEqual(review["operations"], [])
+
+    def test_accept_without_suggestion_takes_top_candidate(self):
+        _, gaz, _ = self.run_apply(op("Fictópoli", "accept", [self.c1, self.c2]))
+        self.assertEqual(gaz["Fictópoli"]["wikidata"], "Q1")
+
+    def test_edit_to_other_item_does_not_inherit_suggestion(self):
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1, self.c2],
+                                      suggested={"wikidata": "Q1", "country": "FR", "text_says": self.says},
+                                      edited={"wikidata": "Q2"}))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q2", "label": "Fictopolis Nova", "country": "DE",
+                                            "status": "reviewed"})
+
+    def test_edit_to_item_not_in_candidates_is_fetched(self):
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q7", "country": "IT"}))
+        self.assertEqual(gaz["Fictópoli"]["label"], "Septima")
+
+    def test_reject_is_unresolved(self):
+        _, gaz, _ = self.run_apply(op("Altrópoli", "reject", edited={"reason": "no item for the hill"}))
+        self.assertEqual(gaz["Altrópoli"], {"wikidata": None, "status": "unresolved", "note": "no item for the hill"})
+
+    def test_undecided_ops_stay(self):
+        n, gaz, review = self.run_apply(op("Fictópoli", None, [self.c1]))
+        self.assertEqual((n, gaz), (0, {}))
+        self.assertEqual([o["id"] for o in review["operations"]], ["Fictópoli"])
+
+    def test_all_errors_reported_and_nothing_written(self):
+        gaz = {}
+        ops = [op("Fictópoli", "accept", [cand("Q9", country=None, countries=["FR", "IT"])]),
+               op("Altrópoli", "reject", edited={})]
+        review = bg.new_changeset([dict(o, decision=None) for o in ops])
+        with self.assertRaises(ValueError) as cm:
+            bg.apply_decisions(gaz, review, bg.new_changeset(ops), INDEX, self.client)
+        self.assertIn("needs a country", str(cm.exception))
+        self.assertIn("needs a reason", str(cm.exception))
+        self.assertEqual(gaz, {})
+        self.assertEqual(len(review["operations"]), 2)
+
+    def test_already_decided_and_unknown_place(self):
+        gaz = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": "FR", "status": "auto"}}
+        with self.assertRaises(ValueError) as cm:
+            self.run_apply(op("Fictópoli", "accept", [self.c1]), op("Ignota", "accept", [self.c1]), gaz=gaz)
+        self.assertIn("already decided", str(cm.exception))
+        self.assertIn("not a place", str(cm.exception))
+
+    def test_unknown_qid(self):
+        with self.assertRaises(ValueError) as cm:
+            self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q404"}))
+        self.assertIn("no such item", str(cm.exception))
+
+
+class VerifySuggestionsTest(unittest.TestCase):
+    def setUp(self):
+        self.client = FakeClient({"x": [cand("Q1", it=["Fictopoli"], country="FR"),
+                                        cand("Q7", label="Septima", country="IT")]})
+
+    def test_missing_suggested_item_added_to_candidates(self):
+        review = bg.new_changeset([op("Fictópoli", None, [cand("Q1", country="FR")],
+                                      suggested={"wikidata": "Q7", "country": "IT"})])
+        review["operations"][0]["confidence"] = "medium"
+        errors, warnings = bg.verify_suggestions(review, INDEX, self.client)
+        self.assertEqual((errors, warnings), ([], []))
+        self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], ["Q1", "Q7"])
+
+    def test_errors_and_warnings(self):
+        review = bg.new_changeset([
+            op("Fictópoli", None, suggested={"wikidata": "Q404", "country": "FR"}),
+            op("Altrópoli", None, suggested={"wikidata": "Q1", "country": "XX"}),
+        ])
+        review["operations"].append(op("Fictópoli", None, suggested={
+            "wikidata": "Q1", "country": "DE", "text_says": [{"country": "DE", "it": "nope"}]}))
+        for o in review["operations"]:
+            o["confidence"] = "sure"
+        errors, warnings = bg.verify_suggestions(review, INDEX, self.client)
+        text = "\n".join(errors)
+        for word in ("no such item", "not an ISO", "text_says", "confidence"):
+            self.assertIn(word, text)
+        self.assertTrue(any("differs from the item's country FR" in w for w in warnings))
