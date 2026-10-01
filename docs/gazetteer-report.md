@@ -68,7 +68,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Colóniæ Agrippínæ in Germánia | 4 | latin: no Latin label, alias or P9314 matches |
 | Cálari in Sardínia | 4 | latin: no Latin label, alias or P9314 matches |
 | Cæsaraugústæ in Hispánia Tarraconénsi | 4 | 2 candidates pass every rule |
-| Edéssæ in Osrhoéne | 4 | country: the Italian says SY, the item is in TR; country: region 'Osroene' is not in TR |
+| Edéssæ in Osrhoéne | 4 | country: region 'Osroene' is not in TR; country: region 'Siria' is not in TR |
 | Eugúbii in Umbria | 4 | latin: no Latin label, alias or P9314 matches |
 | Fori Lívii in Æmília | 4 | latin: no Latin label, alias or P9314 matches |
 | Hierápoli in Phrýgia | 4 | no item has the Italian name of every variant |
@@ -79,7 +79,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In vico Picadero de Paterna in pago Valentíno Hispániæ | 4 | no item has the Italian name of every variant |
 | Myræ in Lýcia | 4 | country: the Italian says TR, the item is in IT; country: region 'Licia' is not in IT; region: the item is 1770 km from 'Licia' |
 | Naziánzi in Cappadócia | 4 | latin: no Latin label, alias or P9314 matches |
-| Sebáste in Arménia | 4 | latin: no Latin label, alias or P9314 matches; country: the Italian says AM, the item is in TR |
+| Sebáste in Arménia | 4 | latin: no Latin label, alias or P9314 matches; country: region 'Armenia' is not in TR |
 | Sýnnade in Phrýgia | 4 | no item has the Italian name of every variant |
 | Trecis in Gállia Lugdunénsi | 4 | country: region 'Gallia lugdunense' is not in FR |
 | Urbevéti in Túscia | 4 | latin: no Latin label, alias or P9314 matches |
@@ -171,7 +171,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Cománæ in Ponto | 2 | latin: no Latin label, alias or P9314 matches |
 | Dertósæ in Hispánia | 2 | latin: no Latin label, alias or P9314 matches |
 | Doráti in pago Lemovicénsi Aquitániæ | 2 | latin: no Latin label, alias or P9314 matches |
-| Edéssæ in Sýria | 2 | country: the Italian says SY, the item is in TR |
+| Edéssæ in Sýria | 2 | country: region 'Siria' is not in TR |
 | Erenéi in pago Meduáno Gálliæ | 2 | latin: no Latin label, alias or P9314 matches |
 | Fori Semprónii in Picéno Itáliæ | 2 | latin: no Latin label, alias or P9314 matches |
 | Foroiúlii in Venétia | 2 | latin: no Latin label, alias or P9314 matches |
@@ -251,7 +251,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Pérgami in Asia | 2 | country: region 'Asia' is not in TR |
 | Remis in Gállia Bélgica | 2 | country: region 'Gallia belgica' is not in FR |
 | Romæ in cœmetério ad duas lauros via Labicána miliário tértio | 2 | no candidates found |
-| Rosícæ in Polónia | 2 | latin: no Latin label, alias or P9314 matches; country: the Italian says PL, the item is in RS |
+| Rosícæ in Polónia | 2 | latin: no Latin label, alias or P9314 matches; country: region 'Polonia' is not in RS |
 | Rothómagi in Gállia Lugdunénsi | 2 | country: region 'Gallia lugdunense' is not in FR |
 | Ruthénis in Aquitánia | 2 | latin: no Latin label, alias or P9314 matches |
 | Sachsenhúsæ in Germánia | 2 | latin: no Latin label, alias or P9314 matches |
@@ -264,7 +264,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Sóphiæ in Bulgária | 2 | latin: no Latin label, alias or P9314 matches |
 | Tabennési in Thebáide Ægýpti | 2 | no item has the Italian name of every variant |
 | Thevéste in Numídia | 2 | country: region 'Numidia' is not in DZ |
-| Tingi in Mauretánia | 2 | country: the Italian says MR, the item is in MA |
+| Tingi in Mauretánia | 2 | country: region 'Mauritania' is not in MA |
 | Traiécti Mosæ in Brabántia Austrásiæ | 2 | country: region 'Austrasia' is not in NL; country: region 'Brabante' is not in NL |
 | Tulli in Gállia Bélgica | 2 | no item has the Italian name of every variant |
 | Tulli in Lotharíngia | 2 | country: region 'Lotaringia' is not in FR |
@@ -387,7 +387,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Apud Casínum | 1 | latin: no Latin label, alias or P9314 matches |
 | Apud Cenómanum in Gállia Lugdunénsi | 1 | country: region 'Gallia lugdunense' is not in FR |
 | Apud Cervum Frígidum territórii Meldénsis in Gállia | 1 | no item has the Italian name of every variant |
-| Apud Chersonésum | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says GR, the item is in IT |
+| Apud Chersonésum | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Grecia' is not in IT |
 | Apud Colóniam Agrippínam in Germánia | 1 | latin: no Latin label, alias or P9314 matches |
 | Apud Constantinópolim | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in TR |
 | Apud Conímbriam in Lusitánia | 1 | latin: no Latin label, alias or P9314 matches |
@@ -445,7 +445,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Apud Sanctum Frediánum prope Pisas in Etrúria | 1 | latin: no Latin label, alias or P9314 matches |
 | Apud Saxoferrátum in Picéno Itáliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Apud Scetim Ægýpti montem | 1 | no candidates found |
-| Apud Sebástem in Arménia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says AM, the item is in TR |
+| Apud Sebástem in Arménia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Armenia' is not in TR |
 | Apud Septam in Mauritánia Tingitána | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says MA, the item is in ES |
 | Apud Septémpedam item in Picéno | 1 | latin: no Latin label, alias or P9314 matches |
 | Apud Smyrnam in Asia | 1 | latin: no Latin label, alias or P9314 matches |
@@ -540,9 +540,9 @@ In `data/gazetteer_review.json`, most frequent first.
 | Azogýreæ in Creta | 1 | no candidates found |
 | Barcinóne | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in ES |
 | Barkíngæ in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
-| Basti in Lusitánia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says PT, the item is in IT |
+| Basti in Lusitánia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Portogallo' is not in IT |
 | Bathnis item in Osrhoéne | 1 | no item has the Italian name of every variant |
-| Batáviæ in Surinámia | 1 | country: the Italian says SR, the item is in NL |
+| Batáviæ in Surinámia | 1 | the suggestion (Q1135383) disagrees with the item that passes every rule (Q850526) |
 | Belli Loci in pago Cadurcénsi in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
 | Bellomarísci in Cámbria | 1 | latin: no Latin label, alias or P9314 matches |
 | Belísiæ in Brabántia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says BE, the item is in DE; country: region 'Brabante' is not in DE; region: the item is 523 km from 'Brabante' |
@@ -574,14 +574,14 @@ In `data/gazetteer_review.json`, most frequent first.
 | Burgi Andéoli in pago Vivariénsi Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Burgi Sancti Antónii in Subalpínis | 1 | latin: no Latin label, alias or P9314 matches |
 | Burgi Sancti Domníni in agro Parménsi | 1 | latin: no Latin label, alias or P9314 matches |
-| Burgis in Vétere Castélla Hispániæ regióne | 1 | 2 candidates pass every rule |
+| Burgis in Vétere Castélla Hispániæ regióne | 1 | 3 candidates pass every rule |
 | Busséti in território Fidentíno in Æmília | 1 | latin: no Latin label, alias or P9314 matches |
 | Bálnei in Flamínia | 1 | latin: no Latin label, alias or P9314 matches |
 | Bíngii in Austrásia ad Rhenum flumen prope Mogúntiam | 1 | latin: no Latin label, alias or P9314 matches |
 | Búdriæ in Flamínia | 1 | latin: no Latin label, alias or P9314 matches |
 | Cabillóni in Burgúndia | 1 | country: region 'Burgundia' is not in FR |
 | Cabillóni in Gállia Lugdunénsi | 1 | country: region 'Gallia lugdunense' is not in FR |
-| Calcúttæ in India | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says IN, the item is in US |
+| Calcúttæ in India | 1 | latin: no Latin label, alias or P9314 matches; country: region 'India' is not in US |
 | Calerógæ in Castélla Hispániæ regióne | 1 | latin: no Latin label, alias or P9314 matches |
 | Calerógæ item in Castélla | 1 | latin: no Latin label, alias or P9314 matches |
 | Calydóne Pisídiæ | 1 | no candidates found |
@@ -598,8 +598,8 @@ In `data/gazetteer_review.json`, most frequent first.
 | Cardóne ad Moséllam in território Trevirórum | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); region: the item has no coordinates to check against 'Mosella'; region: the item has no coordinates to check against 'Treviri'; type: the item is not a place |
 | Carléoli in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
 | Carpentoráte in Província | 1 | latin: no Latin label, alias or P9314 matches |
-| Carthágine Neogranaténsi in Colúmbia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says CO, the item is in ES |
-| Carthágine Nova in Colúmbia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says CO, the item is in ES |
+| Carthágine Neogranaténsi in Colúmbia | 1 | latin: no Latin label, alias or P9314 matches |
+| Carthágine Nova in Colúmbia | 1 | latin: no Latin label, alias or P9314 matches |
 | Cassíliæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | Castanéti in Etrúria | 1 | latin: no Latin label, alias or P9314 matches |
 | Castellodúni prope Carnútum in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
@@ -622,7 +622,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Classe apud Ravénnam in Flamínia | 1 | latin: no Latin label, alias or P9314 matches |
 | Claudiópoli in Honoríade | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Onoriade' is not in TR |
 | Clippíaci in agro Parisiénsi | 1 | latin: no Latin label, alias or P9314 matches |
-| Clocériæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says IE, the item is in GB |
+| Clocériæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | Clonárdiæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); type: the item is not a place |
 | Colcéstriæ in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
 | Coltibóni in Etrúria | 1 | no candidates found |
@@ -658,7 +658,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Cæsaréæ Cappadóciæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says TR, the item is in IL; country: region 'Cappadocia' is not in IL; region: the item is 686 km from 'Cappadocia' |
 | Céstriæ in Mércia Angliæ | 1 | country: region 'Mercia' is not in GB |
 | Cíbalis in Pannónia | 1 | no candidates found |
-| Córdubæ in Argentína | 1 | country: the Italian says AR, the item is in ES |
+| Córdubæ in Argentína | 1 | country: region 'Argentina' is not in ES |
 | Darlintónii item in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
 | Denónii in Hannónia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Hainault' is not in FR |
 | Dernáchi in Rhenánia Germániæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -672,18 +672,18 @@ In `data/gazetteer_review.json`, most frequent first.
 | Docci apud Frísios | 1 | latin: no Latin label, alias or P9314 matches; region: the item is 919 km from 'Frisoni' |
 | Doli in Británnia Minóre | 1 | latin: no Latin label, alias or P9314 matches |
 | Doli in território Bituricénsi Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
-| Dolíche in Sýria | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says SY, the item is in TR |
+| Dolíche in Sýria | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Siria' is not in TR |
 | Domnipétræ in território Bisuntíno in Burgúndia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Burgundia' is not in FR |
 | Dryópoli in Francónia | 1 | latin: no Latin label, alias or P9314 matches |
 | Dumbláni in Scótia | 1 | no item has the Italian name of every variant |
 | Dumnóci in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
 | Duácæ Gállicæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
-| Dériæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says IE, the item is in GB |
+| Dériæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | Eboræ in Lusitánia | 1 | 2 candidates pass every rule |
 | Eboríaci in pago Meldénsi Aquitániæ | 1 | no candidates found |
 | Eboríaci in pago Meldénsi in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
 | Ebrodúni in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
-| Edéssæ in Osrhoéne Mesopotámiæ | 1 | country: the Italian says SY, the item is in TR |
+| Edéssæ in Osrhoéne Mesopotámiæ | 1 | country: region 'Siria' is not in TR |
 | Egmúndæ in Frísia | 1 | latin: no Latin label, alias or P9314 matches |
 | Eleutherópoli in Palæstína | 1 | latin: no Latin label, alias or P9314 matches |
 | Elizátii prope Argentorátum in Lotharíngia Germániæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Lotaringia' is not in FR |
@@ -691,8 +691,8 @@ In `data/gazetteer_review.json`, most frequent first.
 | Elphíni in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | Elvæ in Cámbria | 1 | latin: no Latin label, alias or P9314 matches |
 | Emmetsbúrgi in Terra Maríæ e Civitátibus Fœderátis Américæ Septemtrionális | 1 | latin: no Latin label, alias or P9314 matches; region: the item is 1572 km from 'Maryland' |
-| Eméritæ in Hispánia | 1 | country: the Italian says ES, the item is in MX |
-| Eméritæ in Lusitánia | 1 | country: the Italian says ES, the item is in MX |
+| Eméritæ in Hispánia | 1 | country: region 'Spagna' is not in MX |
+| Eméritæ in Lusitánia | 1 | country: region 'Spagna' is not in MX |
 | Epternáci in Austrásia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Austrasia' is not in LU |
 | Epériis in Slováchia | 1 | latin: no Latin label, alias or P9314 matches |
 | Eréssi in Lesbo ínsula | 1 | no item has the Italian name of every variant |
@@ -804,7 +804,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In Valle Susingénsi apud Helvétios | 1 | no candidates found |
 | In Vascónia | 1 | latin: no Latin label, alias or P9314 matches |
 | In Vestínis Itáliæ | 1 | latin: no Latin label, alias or P9314 matches |
-| In Villa Regáli apud Valéntiam in Hispánia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says ES, the item is in AR; country: region 'Valencia' is not in AR; region: the item is 5079 km from 'Valencia' |
+| In Villa Regáli apud Valéntiam in Hispánia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Valencia' is not in AR; country: region 'Spagna' is not in AR; region: the item is 5079 km from 'Valencia' |
 | In Vindunéta ínsula apud Nannétes in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
 | In Vétere Laura prope Béthlehem Palæstínæ | 1 | no item has the Italian name of every variant |
 | In Werda Rheni ínsula in Saxónia | 1 | latin: no Latin label, alias or P9314 matches |
@@ -865,7 +865,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In civitáte Lachine in Quebecénsi província Cánadæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In civitáte Leonénsi in Británnia Armórica | 1 | latin: no Latin label, alias or P9314 matches |
 | In civitáte Los Andes in Chília | 1 | latin: no Latin label, alias or P9314 matches |
-| In civitáte Los Reyes in Perúvia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says PE, the item is in MX |
+| In civitáte Los Reyes in Perúvia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Perù' is not in MX |
 | In civitáte Majdanek prope Lublínum in Polónia | 1 | latin: no Latin label, alias or P9314 matches |
 | In civitáte Manzanares in Nova Castélla Hispániæ regióne | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Nuova Castiglia' is not in ES |
 | In civitáte Moerzeke-lez-Termonde prope Gandávum in Bélgio | 1 | no candidates found |
@@ -970,11 +970,11 @@ In `data/gazetteer_review.json`, most frequent first.
 | In loco Qua Linh in Tunquíno | 1 | no candidates found |
 | In loco Quxian in Sichuan província Sinárum | 1 | no item has the Italian name of every variant |
 | In loco Rivolta d’Adda pagi Creménsis in Itália | 1 | latin: no Latin label, alias or P9314 matches |
-| In loco Roma in Basutolándia in Africa Austráli | 1 | country: the Italian says LS, the item is in IT; country: region 'Africa australe' is not in IT; region: the item is 7615 km from 'Africa australe' |
+| In loco Roma in Basutolándia in Africa Austráli | 1 | country: region 'Lesotho' is not in IT; country: region 'Africa australe' is not in IT; region: the item is 7615 km from 'Africa australe' |
 | In loco Sai-Nam-Hte in Coréa | 1 | no candidates found |
 | In loco Sai-Nam-Hte item in Coréa | 1 | no candidates found |
 | In loco Sancto Domínico Xagacía in México | 1 | no item has the Italian name of every variant |
-| In loco Sancto Vincéntio prope Birovéscam in Castélla Hispániæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says ES, the item is in SV; country: region 'Briviesca' is not in SV; country: region 'Castiglia' is not in SV; region: the item is 8619 km from 'Briviesca'; region: the item is 8582 km from 'Castiglia' |
+| In loco Sancto Vincéntio prope Birovéscam in Castélla Hispániæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Briviesca' is not in SV; country: region 'Castiglia' is not in SV; country: region 'Spagna' is not in SV; region: the item is 8619 km from 'Briviesca'; region: the item is 8582 km from 'Castiglia' |
 | In loco Shuangzhong apud Jixian in Hebei Sinárum província | 1 | no item has the Italian name of every variant |
 | In loco Stutthof prope Gedánum in Polónia | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); region: the item has no coordinates to check against 'Danzica'; type: the item is not a place |
 | In loco Stáry Kynsperk prope Egram in Bohémia | 1 | no item has the Italian name of every variant |
@@ -1032,7 +1032,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In monastério Eliénsi in Anglia orientáli | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Inghilterra orientale' is not in GB |
 | In monastério Ellwangénsi in Bavária | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Ettenheiménsi in Bádena regióne | 1 | latin: no Latin label, alias or P9314 matches |
-| In monastério Exiliénsi in Castélla Hispániæ regióne | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says ES, the item is in IT |
+| In monastério Exiliénsi in Castélla Hispániæ regióne | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Faucénsi in Bavária | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Fiscamnénsi in Normánnia | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Fontanellénsi in Néustria | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1100,7 +1100,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In monastério Sancti Philíppi prope Locros in Calábria inferióre | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Sancti Pápuli in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Sanctæ Maríæ ad Sacrum Montem supra Varésium in Langobárdia | 1 | no candidates found |
-| In monastério Sanctæ Maríæ de Capélla prope Vastum in pago Gálliæ Boloniénsi | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says FR, the item is in AL; country: region 'Wast' is not in AL; country: region 'Boulogne' is not in AL; region: the item is 1495 km from 'Wast'; region: the item is 1714 km from 'Boulogne' |
+| In monastério Sanctæ Maríæ de Capélla prope Vastum in pago Gálliæ Boloniénsi | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Wast' is not in AL; country: region 'Boulogne' is not in AL; country: region 'Francia' is not in AL; region: the item is 1495 km from 'Wast'; region: the item is 1714 km from 'Boulogne' |
 | In monastério Sanctæ Maríæ de Terréto prope Rhégium Iúlii in Calábria | 1 | no candidates found |
 | In monastério Sanctæ Maríæ della Serra item in Picéno | 1 | no item has the Italian name of every variant |
 | In monastério Sanctíssimæ Trinitátis in Mosquénsi Rússiæ regióne | 1 | no candidates found |
@@ -1111,7 +1111,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In monastério Stabulénsi in Brabántia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Brabante' is not in BE |
 | In monastério Stirpénsi pagi Lemovicénsis Gálliæ | 1 | no item has the Italian name of every variant |
 | In monastério Tamlachténsi in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
-| In monastério Tironiénsi apud Carnútum in Gállia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says FR, the item is in ID; country: region 'Chartres' is not in ID; region: the item is 12157 km from 'Chartres' |
+| In monastério Tironiénsi apud Carnútum in Gállia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Chartres' is not in ID; country: region 'Francia' is not in ID; region: the item is 12157 km from 'Chartres' |
 | In monastério Transfiguratiónis Móscuæ in Rússia | 1 | no candidates found |
 | In monastério Trebnicénsi in Silésia | 1 | latin: no Latin label, alias or P9314 matches |
 | In monastério Vabrénsi in pago Ruthenénsi Aquitániæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1214,7 +1214,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In pago Ruthenénsi item in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
 | In pago Sagiénsi in Néustria | 1 | latin: no Latin label, alias or P9314 matches |
 | In pago Sancti Galli in regióne Helvetiórum | 1 | latin: no Latin label, alias or P9314 matches |
-| In pago Sancti Ioseph territórii Chilpancingénsis in México | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says MX, the item is in CR; country: region 'Chilpancinga' is not in CR |
+| In pago Sancti Ioseph territórii Chilpancingénsis in México | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Chilpancinga' is not in CR; country: region 'Messico' is not in CR |
 | In pago Sancti Iuliáni territórii Guadalaiarénsis in México | 1 | latin: no Latin label, alias or P9314 matches |
 | In pago Sancti Salvatóris Vicecómitis in Normánnia Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In pago Sanctæ Iúliæ in Subalpínis Itáliæ | 1 | no candidates found |
@@ -1267,7 +1267,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In sórdida actuária ante litus Rupifórtii in Gállia constitúta | 1 | no candidates found |
 | In sórdido navígio áncoris deligáto in salo ante Rupifórtium in Gállia | 1 | no candidates found |
 | In sórdido navígio áncoris deligáto prope Rupifórtium ad oram Gálliæ | 1 | no candidates found |
-| In território Armacháno in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says IE, the item is in GB |
+| In território Armacháno in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | In território Arvérno Aquitániæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In território Aurelianénsi Gálliæ Lugdunénsis | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Gallia lugdunense' is not in FR |
 | In território Bisuntíno Germániæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1315,9 +1315,9 @@ In `data/gazetteer_review.json`, most frequent first.
 | In urbe Oropesa apud Castáliam ad litus Hispániæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In urbe Qingyan in Guizhou Sinárum província | 1 | no item has the Italian name of every variant |
 | In urbe Sancti Hyacínthi in Cánada | 1 | latin: no Latin label, alias or P9314 matches |
-| In urbe Sancto Cárolo in Missúria e Civitátibus Fœderátis Américæ Septemtrionális | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says US, the item is in FR; country: region 'Missouri' is not in FR; region: the item is 951 km from 'Missouri'; type: the item is not a place |
+| In urbe Sancto Cárolo in Missúria e Civitátibus Fœderátis Américæ Septemtrionális | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Missouri' is not in FR; country: region 'Stati Uniti d’America' is not in FR; region: the item is 951 km from 'Missouri'; type: the item is not a place |
 | In urbe Sendaiénsi in Iapónia | 1 | latin: no Latin label, alias or P9314 matches |
-| In urbe Sillery in Quebéco Cánadæ província | 1 | country: the Italian says CA, the item is in FR; country: region 'Québec' is not in FR; region: the item is 5130 km from 'Québec' |
+| In urbe Sillery in Quebéco Cánadæ província | 1 | country: region 'Québec' is not in FR; region: the item is 5130 km from 'Québec' |
 | In urbe Stanisławów in Polónia | 1 | latin: no Latin label, alias or P9314 matches |
 | In urbe Tang Gia item in Tunquíno | 1 | no item has the Italian name of every variant |
 | In urbe Teocaltitlán in México | 1 | no candidates found |
@@ -1365,7 +1365,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In vico Fanjiazhuang apud Wujiao in Hebei Sinárum província | 1 | no candidates found |
 | In vico Foro in Subalpínis | 1 | latin: no Latin label, alias or P9314 matches |
 | In vico Garraf in pago Valentíno Hispániæ | 1 | latin: no Latin label, alias or P9314 matches |
-| In vico Gars prope Monáchium Baváriæ in Germánia | 1 | country: the Italian says DE, the item is in FR; country: region 'Monaco di Baviera' is not in FR; region: the item is 601 km from 'Monaco di Baviera' |
+| In vico Gars prope Monáchium Baváriæ in Germánia | 1 | country: region 'Monaco di Baviera' is not in FR; country: region 'Germania' is not in FR; region: the item is 601 km from 'Monaco di Baviera' |
 | In vico Gata de Gorgos in pago Lucentíno Hispániæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In vico Genovés in pago Valentíno item in Hispánia | 1 | latin: no Latin label, alias or P9314 matches |
 | In vico Gilet in eódem pago Hispániæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1469,7 +1469,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In óppido Berezwecz apud civitátem Głębokie in Polónia | 1 | no item has the Italian name of every variant |
 | In óppido Bielsk Podlaski in Polónia | 1 | latin: no Latin label, alias or P9314 matches |
 | In óppido Borowikowszczyzna in Polónia | 1 | no item has the Italian name of every variant |
-| In óppido Borysów in Polónia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says PL, the item is in BY |
+| In óppido Borysów in Polónia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Polonia' is not in BY |
 | In óppido Carrión de Calatrava prope Civitátem Regálem item in Hispánia | 1 | latin: no Latin label, alias or P9314 matches |
 | In óppido Castelserás prope Terúlium item in Hispánia | 1 | latin: no Latin label, alias or P9314 matches |
 | In óppido Catatlán territórii Guadalaiarénsis in México | 1 | no candidates found |
@@ -1478,7 +1478,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | In óppido Cupramontana in Picéno Itáliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | In óppido Daliucun apud Wuyi item in eádem província | 1 | no candidates found |
 | In óppido Dechao item in Hebei | 1 | no item has the Italian name of every variant |
-| In óppido Dolinka prope Caragándam in Cazastánia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says KZ, the item is in SK; country: region 'Karaganda' is not in SK; region: the item is 3860 km from 'Karaganda' |
+| In óppido Dolinka prope Caragándam in Cazastánia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Karaganda' is not in SK; country: region 'Kazakistan' is not in SK; region: the item is 3860 km from 'Karaganda' |
 | In óppido Działdowo item in Polónia | 1 | latin: no Latin label, alias or P9314 matches |
 | In óppido Fiobbio di Albino prope Bérgomum in Itália | 1 | no candidates found |
 | In óppido Fuencarral prope Matrítum in Hispánia | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1540,7 +1540,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Laóniæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | Ledóne Salinário in monte Iura Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Legióne in Británnia Minóre | 1 | latin: no Latin label, alias or P9314 matches |
-| Legióne in Nicarágua | 1 | country: the Italian says NI, the item is in ES |
+| Legióne in Nicarágua | 1 | country: region 'Nicaragua' is not in ES |
 | Leiglínii in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); type: the item is not a place |
 | Lemelléfæ in Africa | 1 | no item has the Italian name of every variant |
 | Leocátæ in Sicília | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1628,7 +1628,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Nassóniæ in Brabántia Austrásiæ | 1 | country: region 'Brabante' is not in BE |
 | Negránæ in Arábia | 1 | no item has the Italian name of every variant |
 | Nemáusi in Gállia Narbonénsi | 1 | country: region 'Gallia narbonense' is not in FR |
-| Nicópoli in Arménia | 1 | country: the Italian says AM, the item is in BG |
+| Nicópoli in Arménia | 1 | country: region 'Armenia' is not in BG |
 | Nigri Monastérii in Hério ínsula item ad oram Aquitániæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Nivedúni ad Danúbium in Scýthia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Scizia' is not in RO |
 | Nivéllæ in Brabántia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Brabante' is not in BE |
@@ -1685,7 +1685,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Polítii in Sicília | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); region: the item has no coordinates to check against 'Sicilia'; type: the item is not a place |
 | Polýboti in Phrýgia | 1 | no item has the Italian name of every variant |
 | Pompéiis apud Neápolim in Itália | 1 | 2 candidates pass every rule |
-| Portu Calénsi in Lusitánia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says PT, the item is in ES; type: the item is not a place |
+| Portu Calénsi in Lusitánia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Portogallo' is not in ES; type: the item is not a place |
 | Primiliáni ad Mare prope Barcinónem in Hispánia | 1 | latin: no Latin label, alias or P9314 matches |
 | Probatópoli in Suévia | 1 | latin: no Latin label, alias or P9314 matches |
 | Prope Asséricum in Vestínis | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1700,7 +1700,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Prope Montem Baróchium in Picéno Itáliæ | 1 | no candidates found |
 | Prope Monáchium Baváriæ in Germánia in castris detentiónis Dacháni | 1 | latin: no Latin label, alias or P9314 matches |
 | Prope Ocram in Aprútio | 1 | latin: no Latin label, alias or P9314 matches |
-| Prope Ptolemáidem in Palæstína | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Akko' is not in LY; country: region 'Palestina' is not in LY; region: the item is 1320 km from 'Akko'; region: the item is 1340 km from 'Palestina' |
+| Prope Ptolemáidem in Palæstína | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Akko' is not in LY; country: region 'Palestina' is not in LY; region: the item is 1320 km from 'Akko' |
 | Prope Ramerúde in agro Trecénsi item Néustriæ | 1 | no item has the Italian name of every variant |
 | Prope Rossánum in Calábria | 1 | latin: no Latin label, alias or P9314 matches |
 | Prope Spiram in Rhenánia Austrásiæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -1758,7 +1758,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Ruéthis in Suévia | 1 | latin: no Latin label, alias or P9314 matches |
 | Régii in Província Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Régiis in Mauretánia | 1 | no item has the Italian name of every variant |
-| Róssiæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says IE, the item is in US |
+| Róssiæ in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Irlanda' is not in US |
 | Sabáriæ in Pannónia | 1 | no candidates found |
 | Sacilínii in Gállia Bélgica | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Gallia belgica' is not in FR |
 | Sacónii apud Helvétios | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says CH, the item is in DE |
@@ -1769,10 +1769,10 @@ In `data/gazetteer_review.json`, most frequent first.
 | Sali in Província Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Saliónii in pago Santonénsi in Aquitánia | 1 | latin: no Latin label, alias or P9314 matches |
 | Salséte in India | 1 | no item has the Italian name of every variant |
-| Saltu in província Quebecénsi Cánadæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says CA, the item is in FR; country: region 'Québec' is not in FR; region: the item is 5544 km from 'Québec' |
+| Saltu in província Quebecénsi Cánadæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Québec' is not in FR; region: the item is 5544 km from 'Québec' |
 | Saludécii in Picéno Itáliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Samaríæ seu Sebáste in Palæstína | 1 | no candidates found |
-| Sancti Iacóbi in Chília | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says CL, the item is in ES |
+| Sancti Iacóbi in Chília | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Cile' is not in ES |
 | Sancti Stéphani Fani in Anglia | 1 | no candidates found |
 | Sancti Trudónis Fani in Brabántia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Brabante' is not in BE |
 | Sancti Trudónis Fani in Brabántia Austrásiæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Brabante' is not in BE; country: region 'Austrasia' is not in BE |
@@ -1845,7 +1845,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Tréviris in Germánia | 1 | latin: no Latin label, alias or P9314 matches |
 | Tréviris in Rhenánia Lotharíngiæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Lorena' is not in DE |
 | Trípoli in Phœnícia | 1 | country: the Italian says LB, the item is in LY; country: region 'Fenicia' is not in LY; region: the item is 2049 km from 'Fenicia' |
-| Tudis in Gallǽcia Hispániæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says ES, the item is in PH; country: region 'Galizia' is not in PH; region: the item is 9293 km from 'Galizia' |
+| Tudis in Gallǽcia Hispániæ | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Galizia' is not in PH; country: region 'Spagna' is not in PH; region: the item is 9293 km from 'Galizia' |
 | Tulcániæ in Æquatória | 1 | latin: no Latin label, alias or P9314 matches |
 | Tulli in Austrásia | 1 | country: region 'Austrasia' is not in FR |
 | Tulli prope Nancéium item in Gállia Lugdunénsi | 1 | country: region 'Gallia lugdunense' is not in FR |
@@ -1895,7 +1895,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Villæ Francæ in pago Ruthenénsi Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Villæ Magnæ apud Floréntiam in Etrúria | 1 | latin: no Latin label, alias or P9314 matches |
 | Villæ Nóvæ prope Aveniónem in Gállia | 1 | latin: no Latin label, alias or P9314 matches |
-| Villæ Regális Infántum in pago Castellionénsi item in Hispánia | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian says ES, the item is in AR; country: region 'Castellón de la Plana' is not in AR; region: the item is 10234 km from 'Castellón de la Plana' |
+| Villæ Regális Infántum in pago Castellionénsi item in Hispánia | 1 | latin: no Latin label, alias or P9314 matches; country: region 'Castellón de la Plana' is not in AR; country: region 'Spagna' is not in AR; region: the item is 10234 km from 'Castellón de la Plana' |
 | Viltóniæ in Anglia | 1 | latin: no Latin label, alias or P9314 matches |
 | Vinnipégæ in Manitóba Canadénsi província | 1 | country: region 'Stato di Manitoba' is not in CA |
 | Viremúdæ in Northúmbria | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); region: the item has no coordinates to check against 'Northumbria'; region: the item has no coordinates to check against 'Inghilterra'; type: the item is not a place |
