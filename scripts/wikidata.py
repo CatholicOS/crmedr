@@ -8,6 +8,7 @@ See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
 """
 
 import hashlib
+import http.client
 import json
 import time
 import urllib.error
@@ -34,6 +35,11 @@ class WikidataError(Exception):
     pass
 
 
+def _retry_after(headers, attempt):
+    value = (headers or {}).get("Retry-After")
+    return int(value) if value and value.isdigit() else 2 ** attempt
+
+
 def http_get(url, retries=6, sleep=time.sleep):
     for attempt in range(retries):
         req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
@@ -43,9 +49,10 @@ def http_get(url, retries=6, sleep=time.sleep):
         except urllib.error.HTTPError as e:
             if e.code not in RETRY_CODES:
                 raise WikidataError(f"HTTP {e.code} for {url}") from e
-            sleep(int((e.headers or {}).get("Retry-After") or 2 ** attempt))
+            sleep(_retry_after(e.headers, attempt))
             continue
-        except (urllib.error.URLError, TimeoutError):
+        except (OSError, http.client.HTTPException, ValueError):
+            # URLError, timeouts, resets, truncated bodies, an HTML error page.
             sleep(2 ** attempt)
             continue
         if isinstance(data, dict) and "error" in data:
@@ -91,6 +98,9 @@ def summarize(raw):
         "names_it": sorted({fold(n) for n in _names(raw, "it")}),
         "la": sorted(set(_names(raw, "la"))),
         "p9314": bool(claims.get("P9314")),
+        # The Latin Place Names slug ("m/moguntiae") is the place's Latin form.
+        "p9314_names": sorted({t for c in claims.get("P9314", []) if isinstance(_value(c), str)
+                               for t in fold(_value(c).split("/", 1)[-1]).split("-") if t}),
         "country_qids": current_country_qids(claims),
         "iso_self": p297[0] if p297 else None,
         "coords": [coords["latitude"], coords["longitude"]] if coords else None,
@@ -178,6 +188,12 @@ class Wikidata:
     def candidate(self, qid):
         raw = self._entities([qid]).get(qid)
         return self._enrich([summarize(raw)])[0] if raw else None
+
+    def region_coords(self, text):
+        """Coordinates of the non-country items with that exact Italian name."""
+        name = fold(text)
+        return [c["coords"] for c in self.candidates(text)
+                if name in c["names_it"] and not c["iso_self"] and c["coords"]]
 
     def region_countries(self, text):
         name = fold(text)

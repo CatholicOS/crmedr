@@ -18,7 +18,10 @@ def fold(s):
 
 
 _COUNTRY = {fold(k): v for k, v in COUNTRY_IT.items()}
-ISO_CODES = frozenset(COUNTRY_IT.values())
+# Wikidata's P297 also holds withdrawn and reserved codes; Jersey has no Italian
+# label in the query. XK (Kosovo) is user-assigned but kept, since Wikidata uses it.
+NOT_ASSIGNED = {"AN", "CP", "CQ", "DD", "DG", "PC", "YU"}
+ISO_CODES = frozenset(set(COUNTRY_IT.values()) - NOT_ASSIGNED | {"JE"})
 
 
 def country_of(name):
@@ -94,13 +97,19 @@ LATIN_ENDINGS = [
 
 
 def latin_nominatives(la):
+    """Nominatives of the head words: the capitalized words before the first
+    connector (in, prope, apud...); a region named after it is not the place."""
     out = set()
+    started = False
     for word in WORD_LA.findall(la):
-        if not word[0].isupper():
-            continue
         w = fold(word)
         if w in LEAD_LA:
+            if started:
+                break
             continue
+        if not word[0].isupper():
+            continue
+        started = True
         out.add(w)
         for ending, noms in LATIN_ENDINGS:
             if w.endswith(ending) and len(w) > len(ending) + 1:

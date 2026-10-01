@@ -430,14 +430,16 @@ alpha-2), with no registry conventions applied. Reconciling it with each entry's
 
 A place is `auto` only when exactly one Wikidata candidate passes every rule:
 its Italian label or alias is the head toponym of every Italian phrase of the
-place; a Latin label or alias matches a nominative of the Latin, or it has a Latin
-Place Names ID (P9314); it has one current country (P17), which agrees with every
+place; a Latin label or alias matches a nominative of the Latin head word, or its
+Latin Place Names ID (P9314) slug is that word's form; it has one current country (P17), which agrees with every
 modern country the Italian names and every region it states; and it is a place
 (P31 through P279* to settlement, administrative entity, monastery, church,
 archaeological site, island, mountain, region, cave, castle or country). When no
 Italian phrase of the place names a region or country, the item must be in Italy
 (the CEI edition names none for Italian places), unless it is itself a country;
-this keeps foreign namesakes out (Ragusa in Sicily is not Dubrovnik).
+this keeps foreign namesakes out (Ragusa in Sicily is not Dubrovnik). A stated
+region with coordinates must lie within 500 km of the place (Hadrianopolis in
+Paphlagonia is not Edirne).
 `FORCE_REVIEW` in `scripts/build_gazetteer.py` lists places that pass every rule
 but are known to be wrong because the Italian and Wikidata agree on another place
 (*In Cornúbia Armóricæ* is Cornouaille in Brittany, not Cornwall). Every other place

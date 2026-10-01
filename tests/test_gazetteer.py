@@ -20,6 +20,14 @@ class FoldTest(unittest.TestCase):
         self.assertIn("DE", gt.ISO_CODES)
 
 
+class IsoCodesTest(unittest.TestCase):
+    def test_official_codes_only(self):
+        self.assertIn("JE", gt.ISO_CODES)
+        for withdrawn in ("AN", "CP", "CQ", "DD", "DG", "PC", "YU"):
+            self.assertNotIn(withdrawn, gt.ISO_CODES)
+        self.assertEqual(len(gt.ISO_CODES - {"XK"}), 249)
+
+
 class ParseItalianTest(unittest.TestCase):
     def test_plain_place_and_region(self):
         p = gt.parse_italian("A Fictopoli in Fictia")
@@ -77,6 +85,14 @@ class LatinNominativesTest(unittest.TestCase):
         self.assertIn("fictanum", gt.latin_nominatives("Fictáni"))
         self.assertIn("fictago", gt.latin_nominatives("Fictágine"))
         self.assertIn("fictii", gt.latin_nominatives("Fictiis"))
+
+    def test_only_the_head_words_before_a_connector(self):
+        noms = gt.latin_nominatives("Fictópoli in Fíctia")
+        self.assertIn("fictopolis", noms)
+        self.assertNotIn("fictia", noms)
+        self.assertNotIn("altropolis", gt.latin_nominatives("Ficti prope Altrópoli in Fíctia"))
+        self.assertIn("fictum", gt.latin_nominatives("Ficti prope Altrópoli in Fíctia"))
+        self.assertEqual(gt.latin_nominatives("Fictópoli apud Sanctum Fictum") & {"fictus", "sanctus"}, set())
 
     def test_skips_lowercase_and_lead_words(self):
         noms = gt.latin_nominatives("In monastério Fictiacénsi")
@@ -150,6 +166,7 @@ class SummarizeTest(unittest.TestCase):
         self.assertEqual(s["country_qids"], ["Q100"])
         self.assertIsNone(s["iso_self"])
         self.assertEqual(s["coords"], [1.5, 2.5])
+        self.assertEqual(s["p9314_names"], ["fictopoli"])
         self.assertEqual(s["types"], ["Q486972"])
 
     def test_label_falls_back_to_italian(self):
@@ -251,6 +268,19 @@ class HttpGetTest(unittest.TestCase):
             with self.assertRaises(wd.WikidataError):
                 wd.http_get("https://example/u", sleep=lambda s: None)
 
+    def test_connection_reset_bad_json_and_date_retry_after_are_retried(self):
+        import http.client
+        ok = mock.MagicMock()
+        ok.__enter__.return_value = io.BytesIO(json.dumps({"x": 1}).encode())
+        html = mock.MagicMock()
+        html.__enter__.return_value = io.BytesIO(b"<html>busy</html>")
+        dated = urllib.error.HTTPError("u", 503, "down", {"Retry-After": "Wed, 21 Oct 2026 07:28:00 GMT"}, None)
+        sleeps = []
+        with mock.patch("wikidata.urllib.request.urlopen",
+                        side_effect=[http.client.RemoteDisconnected("bye"), ConnectionResetError(), html, dated, ok]):
+            self.assertEqual(wd.http_get("https://example/u", sleep=sleeps.append), {"x": 1})
+        self.assertEqual(len(sleeps), 4)
+
     def test_gives_up(self):
         err = urllib.error.HTTPError("u", 503, "down", {}, None)
         with mock.patch("wikidata.urllib.request.urlopen", side_effect=[err] * 3):
@@ -263,7 +293,7 @@ import build_gazetteer as bg  # noqa: E402
 
 def cand(qid, it=(), la=(), country="IT", countries=None, place=True, p9314=False, label=None):
     return {"wikidata": qid, "label": label or qid, "description": "", "names_it": sorted(gt.fold(x) for x in it),
-            "la": list(la), "p9314": p9314, "country_qids": [], "iso_self": None,
+            "la": list(la), "p9314": p9314, "p9314_names": [], "country_qids": [], "iso_self": None,
             "country": country, "countries": countries if countries is not None else ([country] if country else []),
             "coords": None, "types": ["Q486972"], "place_type": place}
 
@@ -272,7 +302,7 @@ def item(*its, occ=("mr:0101-fictus",)):
     return {"it": list(its), "occurrences": list(occ), "lead_countries": {}}
 
 
-REGIONS = {"Fictia": {"IT"}, "Fictiense": {"IT"}, "Altrofictia": {"FY"}}
+REGIONS = {"Fictia": {"IT"}, "Fictiense": {"IT"}, "Altrofictia": {"ES"}}
 
 
 def regions(text):
@@ -302,11 +332,6 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(r["failed"], [])
         self.assertEqual(r["candidates"][0]["evidence"], ["it", "la", "country", "type"])
 
-    def test_p9314_satisfies_latin(self):
-        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [cand("Q1", it=["Fictopoli"], p9314=True)], regions)
-        self.assertEqual(r["auto"]["wikidata"], "Q1")
-        self.assertIn("p9314", r["candidates"][0]["evidence"])
-
     def test_other_items_with_the_name_filtered_by_other_rules(self):
         r = bg.evaluate("Fictópoli", item("A Fictopoli"), [
             cand("Q2", it=["Fictopoli"], place=False),                # a school
@@ -325,7 +350,7 @@ class EvaluateTest(unittest.TestCase):
     def test_region_separates_homonyms(self):
         r = bg.evaluate("Fictópoli in Altrofíctia", item("A Fictopoli in Altrofictia"), [
             cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="IT"),
-            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="FY")], regions)
+            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="ES")], regions)
         self.assertEqual(r["auto"]["wikidata"], "Q2")
 
     def test_every_italian_variant_must_match(self):
@@ -352,9 +377,46 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(r["auto"]["wikidata"], "Q1")
 
     def test_bare_italian_naming_a_country_item(self):
-        country = dict(cand("Q1", it=["Fictistan"], la=["Fictistania"], country="FX"), iso_self="FX")
+        country = dict(cand("Q1", it=["Fictistan"], la=["Fictistania"], country="FR"), iso_self="FR")
         r = bg.evaluate("In Fictistánia", item("In Fictistan"), [country], regions)
         self.assertEqual(r["auto"]["wikidata"], "Q1")
+
+    def test_p9314_alone_is_not_latin_evidence(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [cand("Q1", it=["Fictopoli"], p9314=True)], regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("p9314", r["candidates"][0]["evidence"])
+        self.assertNotIn("la", r["candidates"][0]["evidence"])
+
+    def test_p9314_slug_matching_the_latin_head_counts(self):
+        c = dict(cand("Q1", it=["Fictopoli"]), p9314=True, p9314_names=["fictopoliuae"])
+        r = bg.evaluate("Fictopolívæ", item("A Fictopoli"), [c], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+        r = bg.evaluate("Altrópoli", item("A Fictopoli"), [c], regions)
+        self.assertIsNone(r["auto"])
+
+    def test_place_far_from_the_stated_region(self):
+        far = dict(cand("Q1", it=["Fictopoli"], la=["Fictopolis"]), coords=[45.0, 8.0])
+        near = dict(far, coords=[38.5, 16.0])
+        coords = {"Fictia": [[38.1, 15.6]]}
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli in Fictia"), [far], regions, coords.get)
+        self.assertIsNone(r["auto"])
+        self.assertTrue(any(f.startswith("region: the item is") and "from 'Fictia'" in f for f in r["failed"]))
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli in Fictia"), [near], regions, coords.get)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+
+    def test_region_without_coordinates_is_not_checked_but_candidate_without_is(self):
+        c = dict(cand("Q1", it=["Fictopoli"], la=["Fictopolis"]), coords=None)
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli in Fictia"), [c], regions, lambda r: [])
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli in Fictia"), [c], regions,
+                        lambda r: [[38.1, 15.6]])
+        self.assertIsNone(r["auto"])
+
+    def test_country_must_be_an_iso_code(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli in Fictia"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="TA")], lambda t: {"TA"})
+        self.assertIsNone(r["auto"])
+        self.assertIn("country: TA is not an ISO 3166-1 alpha-2 code", r["failed"])
 
     def test_no_single_country(self):
         r = bg.evaluate("Fictópoli", item("A Fictopoli"),
@@ -496,6 +558,24 @@ class ProposeTest(unittest.TestCase):
         self.assertEqual(op["suggested"], {"wikidata": "Q3", "country": "IT"})
         self.assertEqual((op["reasoning"], op["confidence"]), ("r", "high"))
         self.assertEqual(len(op["candidates"]), 2)
+
+    def test_disagreeing_suggestion_keeps_the_place_queued(self):
+        review = bg.new_changeset([{"op": "resolve_place", "id": "Fictopoli", "candidates": [],
+                                    "suggested": {"wikidata": "Q9", "country": "IT"},
+                                    "reasoning": "r", "confidence": "high"}])
+        gaz = {}
+        bg.propose(gaz, review, self.index, self.client)
+        self.assertNotIn("Fictopoli", gaz)
+        op = next(o for o in review["operations"] if o["id"] == "Fictopoli")
+        self.assertEqual(op["suggested"]["wikidata"], "Q9")
+        self.assertIn("the suggestion (Q9) disagrees with the item that passes every rule (Q1)", op["failed"])
+
+    def test_agreeing_suggestion_lets_the_place_become_auto(self):
+        review = bg.new_changeset([{"op": "resolve_place", "id": "Fictopoli", "candidates": [],
+                                    "suggested": {"wikidata": "Q1", "country": "IT"}}])
+        gaz = {}
+        bg.propose(gaz, review, self.index, self.client)
+        self.assertEqual(gaz["Fictopoli"]["status"], "auto")
 
     def test_network_failure_leaves_place_unprocessed(self):
         client = FakeClient(self.client.by_text, fail_on={"Altropoli"})

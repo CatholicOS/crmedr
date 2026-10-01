@@ -120,7 +120,8 @@ access. Subcommands:
      ranked candidates and the rules that failed.
 3. Never modify or remove an existing key in `gazetteer.json`. Existing ops in the
    change-set keep their `suggested`, `reasoning` and `confidence`; only their
-   candidate lists are refreshed.
+   candidate lists are refreshed. A queued place whose suggestion names another
+   item than the one that passes every rule stays queued.
 4. Regenerate the report.
 
 Wikidata responses are cached under `.cache/wikidata/` (added to `.gitignore`), keyed by
@@ -193,8 +194,11 @@ A place is `auto` only if exactly one candidate meets **all** of:
    items often share a name (a town, a school, a hamlet: all "Bressanone"); the
    other rules separate them, and if more than one candidate passes **all** rules
    the place goes to review (homonyms: Guadalajara, Córdoba).
-2. **Latin name**: a `la` label or alias equals one of the Latin nominatives, or the
-   item has a P9314 (Latin Place Names ID) value.
+2. **Latin name**: a `la` label or alias equals one of the Latin nominatives of the
+   **head** (the capitalized words before the first connector *in, prope, apud…*),
+   or a word of the item's P9314 (Latin Place Names ID) slug, such as `m/moguntiae`,
+   is one of those forms (*u* for *v*). A P9314 that matches nothing is shown as
+   evidence but does not pass the rule.
 3. **Country**: the item has exactly one current P17 (no end time), and
    - every modern-country claim in the Italian names that country, and
    - every region stated in the Italian resolves, by the same search, to at least
@@ -204,6 +208,9 @@ A place is `auto` only if exactly one candidate meets **all** of:
    With no region and no claim in any Italian variant, the country must be `IT`
    (the CEI edition names no region for Italian places) unless the item is itself a
    country (it has P297). *antico/antica* before a region name is skipped.
+   The country must be in the ISO set. Every stated region that has non-country
+   items with that Italian name and coordinates must have one within 500 km of the
+   item (`MAX_REGION_KM`); an item without coordinates then fails.
 4. **Type**: one of its P31 values is, through `P279*` (subclass of), one of the
    root classes listed in the script: human settlement (Q486972), administrative
    territorial entity (Q56061), monastery (Q44613), church building (Q16970),

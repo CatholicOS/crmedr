@@ -24,6 +24,7 @@ Standard library only. Reads no private sources.
 
 import datetime
 import json
+import math
 import re
 import sys
 from pathlib import Path
@@ -46,6 +47,10 @@ FORCE_REVIEW = {
     "In Cornúbia Armóricæ": "the Latin names Cornouaille in Brittany (Armorica), "
                             "not Cornwall; the Italian says Inghilterra",
 }
+# A place must lie this close to a stated region (a non-country item with
+# coordinates and that Italian name). Measured on the first run: right places lie
+# within 400 km of their region's point; wrong namesakes 700 km or more away.
+MAX_REGION_KM = 500
 PUBLISHED_KEYS = ["wikidata", "label", "description", "country", "countries", "la", "p9314", "coords", "types"]
 
 
@@ -65,6 +70,12 @@ def place_index(places, entries):
             for la, v in index.items()}
 
 
+def km(a, b):
+    lat1, lon1, lat2, lon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
+    return 6371 * 2 * math.asin(math.sqrt(h))
+
+
 def published(candidate, evidence):
     out = {k: candidate[k] for k in PUBLISHED_KEYS}
     out["evidence"] = evidence
@@ -76,11 +87,16 @@ def auto_entry(candidate):
             "country": candidate["country"], "status": "auto"}
 
 
-def _checks(c, parsed, noms, claims, region_sets):
+def _checks(c, parsed, noms, claims, region_sets, region_points):
     it_ok = bool(parsed) and all(any(fold(h) in c["names_it"] for h in p["heads"]) for p in parsed)
-    la_ok = c["p9314"] or any(fold(x) in noms for x in c["la"])
+    # P9314 counts only when its slug is a form of the Latin head (u for v).
+    u_noms = {n.replace("v", "u") for n in noms}
+    la_ok = any(fold(x) in noms for x in c["la"]) or \
+        any(t.replace("v", "u") in u_noms for t in c.get("p9314_names", []))
     country_problems = []
-    if c["country"] is None:
+    if c["country"] is not None and c["country"] not in ISO_CODES:
+        country_problems.append(f"{c['country']} is not an ISO 3166-1 alpha-2 code")
+    elif c["country"] is None:
         country_problems.append("the item has no single current country (" + ", ".join(c["countries"]) + ")")
     else:
         for claim in sorted(claims):
@@ -93,18 +109,31 @@ def _checks(c, parsed, noms, claims, region_sets):
         for region, isos in region_sets.items():
             if c["country"] not in isos:
                 country_problems.append(f"region '{region}' is not in {c['country']}")
-    return {"it": it_ok, "la": la_ok, "country": not country_problems, "type": c["place_type"]}, country_problems
+    region_problems = []
+    for region, points in region_points.items():
+        if not points:
+            continue
+        if not c.get("coords"):
+            region_problems.append(f"region: the item has no coordinates to check against '{region}'")
+            continue
+        d = min(km(c["coords"], p) for p in points)
+        if d > MAX_REGION_KM:
+            region_problems.append(f"region: the item is {d:.0f} km from '{region}'")
+    ok = {"it": it_ok, "la": la_ok, "country": not country_problems and not region_problems,
+          "type": c["place_type"]}
+    return ok, ["country: " + p for p in country_problems] + region_problems
 
 
-def evaluate(la, item, candidates, region_countries):
+def evaluate(la, item, candidates, region_countries, region_coords=lambda region: []):
     parsed = [parse_italian(it) for it in item["it"]]
     claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
     regions = list(dict.fromkeys(r for p in parsed for r in p["regions"]))
     region_sets = {r: region_countries(r) for r in regions} if candidates else {}
+    region_points = {r: region_coords(r) for r in regions} if candidates else {}
     noms = latin_nominatives(la)
     scored = []
     for rank, c in enumerate(candidates):
-        ok, problems = _checks(c, parsed, noms, {x["country"] for x in claims}, region_sets)
+        ok, problems = _checks(c, parsed, noms, {x["country"] for x in claims}, region_sets, region_points)
         evidence = [k for k in ("it", "la", "country", "type") if ok[k]] + (["p9314"] if c["p9314"] else [])
         scored.append((c, ok, problems, evidence, rank))
     scored.sort(key=lambda s: (-sum(s[1].values()), s[4]))
@@ -124,7 +153,7 @@ def evaluate(la, item, candidates, region_countries):
             best = named[0] if named else scored[0]
             if not best[1]["la"]:
                 failed.append("latin: no Latin label, alias or P9314 matches")
-            failed += ["country: " + p for p in best[2]]
+            failed += best[2]
             if not best[1]["type"]:
                 failed.append("type: the item is not a place")
     return {"auto": passing[0][0] if len(passing) == 1 else None,
@@ -224,13 +253,19 @@ def propose(gazetteer, review, index, client, force_review=FORCE_REVIEW):
         if la in gazetteer:
             continue
         try:
-            result = evaluate(la, index[la], gather_candidates(index[la], client), client.region_countries)
+            result = evaluate(la, index[la], gather_candidates(index[la], client), client.region_countries,
+                              getattr(client, "region_coords", lambda region: []))
         except WikidataError as e:
             not_processed.append((la, str(e)))
             continue
         if la in force_review:
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[la])
+        suggested = (ops.get(la, {}).get("suggested") or {}).get("wikidata")
+        if result["auto"] and suggested and suggested != result["auto"]["wikidata"]:
+            result["failed"].append(f"the suggestion ({suggested}) disagrees with the item that passes "
+                                    f"every rule ({result['auto']['wikidata']})")
+            result["auto"] = None
         if result["auto"]:
             gazetteer[la] = auto_entry(result["auto"])
             ops.pop(la, None)
