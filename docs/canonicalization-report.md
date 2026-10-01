@@ -434,7 +434,13 @@ place; a Latin label or alias matches a nominative of the Latin, or it has a Lat
 Place Names ID (P9314); it has one current country (P17), which agrees with every
 modern country the Italian names and every region it states; and it is a place
 (P31 through P279* to settlement, administrative entity, monastery, church,
-archaeological site, island, mountain, region, cave, castle or country). Every other place
+archaeological site, island, mountain, region, cave, castle or country). When no
+Italian phrase of the place names a region or country, the item must be in Italy
+(the CEI edition names none for Italian places), unless it is itself a country;
+this keeps foreign namesakes out (Ragusa in Sicily is not Dubrovnik).
+`FORCE_REVIEW` in `scripts/build_gazetteer.py` lists places that pass every rule
+but are known to be wrong because the Italian and Wikidata agree on another place
+(*In Cornúbia Armóricæ* is Cornouaille in Brittany, not Cornwall). Every other place
 goes to the review change-set `data/gazetteer_review.json` and is decided in
 martyrology-frontend (`reviewed`, or `unresolved` with a note). Places awaiting
 review have no key.

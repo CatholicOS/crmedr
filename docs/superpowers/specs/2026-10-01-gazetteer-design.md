@@ -180,7 +180,9 @@ report is regenerated.
   searched the same way.
 - **Current P17.** A P17 statement is current when its rank is not `deprecated` and
   it has no end time (P582); if any current statement has `preferred` rank, only
-  the preferred ones count. Country items map to ISO codes through their P297.
+  the preferred ones count. Country items map to ISO codes through their P297 (one cached SPARQL query), plus
+  `EXTRA_COUNTRY_ISO` for countries that P17 names without a P297 (Q55, the
+  Netherlands → NL).
 
 ## The evidence bar for `auto`
 
@@ -199,7 +201,9 @@ A place is `auto` only if exactly one candidate meets **all** of:
      one item with that exact Italian name whose current P17 is that country, or
      that is that country. (Latin regions are not checked: places without Italian
      never pass rule 1, and the Italian region renders the Latin one.)
-   With no region and no claim, only the single current P17 is required.
+   With no region and no claim in any Italian variant, the country must be `IT`
+   (the CEI edition names no region for Italian places) unless the item is itself a
+   country (it has P297). *antico/antica* before a region name is skipped.
 4. **Type**: one of its P31 values is, through `P279*` (subclass of), one of the
    root classes listed in the script: human settlement (Q486972), administrative
    territorial entity (Q56061), monastery (Q44613), church building (Q16970),
@@ -208,7 +212,10 @@ A place is `auto` only if exactly one candidate meets **all** of:
    (Q35509), castle (Q23413), country (Q6256). Each class is checked once with a SPARQL `ASK` and
    cached. This keeps out a person, a school, a film or a ship named like the
    place.
-5. **No disagreement**: no `text_says` would be needed. Any disagreement between the
+5. **Not forced to review**: `FORCE_REVIEW` (in the script, each with a comment)
+   lists places that pass but are known to be wrong because the Italian and
+   Wikidata agree on another place than the Latin names.
+6. **No disagreement**: no `text_says` would be needed. Any disagreement between the
    text and the item's country is decided by a person.
 
 Places with no Italian variant (the 4 items without `it`) cannot meet rule 1 and
