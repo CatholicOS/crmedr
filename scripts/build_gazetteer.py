@@ -1,0 +1,496 @@
+#!/usr/bin/env python3
+"""Resolve each place designation in data/places.json to a Wikidata item.
+
+Each distinct `la` is resolved once to a Wikidata QID, a modern label and the
+place's actual modern country. A place is `auto` only when exactly one
+candidate passes every rule of the evidence bar; every other place goes to the
+review change-set (crmedr-changeset/v1, op `resolve_place`) for
+martyrology-frontend, and comes back through `apply` as `reviewed` or
+`unresolved`. Places awaiting review have no key in data/gazetteer.json.
+See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
+
+  data/gazetteer.json          {la: {wikidata, label, country, status, ...}}
+  data/gazetteer_review.json   the review change-set
+  docs/gazetteer-report.md     progress, text_says, country preview
+
+Usage:
+  python3 build_gazetteer.py propose [repo_root]              (network)
+  python3 build_gazetteer.py verify-suggestions [repo_root]   (network)
+  python3 build_gazetteer.py apply <exported.json> [repo_root]
+  python3 build_gazetteer.py check [repo_root]
+
+Standard library only. Reads no private sources.
+"""
+
+import datetime
+import json
+import math
+import re
+import sys
+from pathlib import Path
+
+from gazetteer_text import ISO_CODES, fold, latin_nominatives, parse_italian
+from wikidata import Wikidata, WikidataError
+
+STATUSES = ["auto", "reviewed", "unresolved"]
+ENTRY_KEYS = ["wikidata", "label", "country", "status", "text_says", "note"]
+QID = re.compile(r"^Q[1-9]\d*$")
+SCHEMA = "crmedr-changeset/v1"
+MAX_CANDIDATES = 10
+CONFIDENCES = {"high", "medium", "low"}
+# Places that pass the evidence bar but are known to be wrong, because both the
+# Italian and Wikidata point to another place than the Latin names. They always
+# go to review, with the reason shown in the op.
+FORCE_REVIEW = {
+    # mr:0303-winwaloeus: Cornubia Armoricae is Cornouaille in Brittany
+    # (Landevennec, FR); the Italian prints "Nella Cornovaglia in Inghilterra".
+    "In Cornúbia Armóricæ": "the Latin names Cornouaille in Brittany (Armorica), "
+                            "not Cornwall; the Italian says Inghilterra",
+}
+# A place must lie this close to a stated region (a non-country item with
+# coordinates and that Italian name). Measured on the first run: right places lie
+# within 400 km of their region's point; wrong namesakes 700 km or more away.
+MAX_REGION_KM = 500
+PUBLISHED_KEYS = ["wikidata", "label", "description", "country", "countries", "la", "p9314", "coords", "types"]
+
+
+def place_index(places, entries):
+    country = {e["id"]: e.get("country") for e in entries}
+    index = {}
+    for mr_id, items in places.items():
+        for it in items:
+            slot = index.setdefault(it["la"], {"it": set(), "occurrences": set(), "lead_countries": {}})
+            if "it" in it:
+                slot["it"].add(it["it"])
+            slot["occurrences"].add(mr_id)
+            if it["source"] == "lead":
+                slot["lead_countries"][mr_id] = country.get(mr_id)
+    return {la: {"it": sorted(v["it"]), "occurrences": sorted(v["occurrences"]),
+                 "lead_countries": dict(sorted(v["lead_countries"].items()))}
+            for la, v in index.items()}
+
+
+def km(a, b):
+    lat1, lon1, lat2, lon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
+    return 6371 * 2 * math.asin(math.sqrt(h))
+
+
+def published(candidate, evidence):
+    out = {k: candidate[k] for k in PUBLISHED_KEYS}
+    out["evidence"] = evidence
+    return out
+
+
+def auto_entry(candidate):
+    return {"wikidata": candidate["wikidata"], "label": candidate["label"],
+            "country": candidate["country"], "status": "auto"}
+
+
+def _checks(c, parsed, noms, claims, region_sets, region_points):
+    it_ok = bool(parsed) and all(any(fold(h) in c["names_it"] for h in p["heads"]) for p in parsed)
+    # P9314 counts only when its slug is a form of the Latin head (u for v).
+    u_noms = {n.replace("v", "u") for n in noms}
+    la_ok = any(fold(x) in noms for x in c["la"]) or \
+        any(t.replace("v", "u") in u_noms for t in c.get("p9314_names", []))
+    country_problems = []
+    if c["country"] is not None and c["country"] not in ISO_CODES:
+        country_problems.append(f"{c['country']} is not an ISO 3166-1 alpha-2 code")
+    elif c["country"] is None:
+        country_problems.append("the item has no single current country (" + ", ".join(c["countries"]) + ")")
+    else:
+        for claim in sorted(claims):
+            if claim != c["country"]:
+                country_problems.append(f"the Italian says {claim}, the item is in {c['country']}")
+        if parsed and not claims and not region_sets and not c.get("iso_self") and c["country"] != "IT":
+            # The CEI edition names no region or country for places in Italy.
+            country_problems.append("the Italian names no region or country (in the CEI edition: "
+                                    f"Italy); the item is in {c['country']}")
+        for region, isos in region_sets.items():
+            if c["country"] not in isos:
+                country_problems.append(f"region '{region}' is not in {c['country']}")
+    region_problems = []
+    for region, points in region_points.items():
+        if not points:
+            continue
+        if not c.get("coords"):
+            region_problems.append(f"region: the item has no coordinates to check against '{region}'")
+            continue
+        d = min(km(c["coords"], p) for p in points)
+        if d > MAX_REGION_KM:
+            region_problems.append(f"region: the item is {d:.0f} km from '{region}'")
+    ok = {"it": it_ok, "la": la_ok, "country": not country_problems and not region_problems,
+          "type": c["place_type"]}
+    return ok, ["country: " + p for p in country_problems] + region_problems
+
+
+def evaluate(la, item, candidates, region_countries, region_coords=lambda region: []):
+    parsed = [parse_italian(it) for it in item["it"]]
+    claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
+    regions = list(dict.fromkeys(r for p in parsed for r in p["regions"]))
+    region_sets = {r: region_countries(r) for r in regions} if candidates else {}
+    region_points = {r: region_coords(r) for r in regions} if candidates else {}
+    noms = latin_nominatives(la)
+    scored = []
+    for rank, c in enumerate(candidates):
+        ok, problems = _checks(c, parsed, noms, {x["country"] for x in claims}, region_sets, region_points)
+        evidence = [k for k in ("it", "la", "country", "type") if ok[k]] + (["p9314"] if c["p9314"] else [])
+        scored.append((c, ok, problems, evidence, rank))
+    scored.sort(key=lambda s: (-sum(s[1].values()), s[4]))
+    passing = [s for s in scored if all(s[1].values())]
+    failed = []
+    if not parsed:
+        failed.append("no Italian phrase")
+    if not candidates:
+        failed.append("no candidates found")
+    if len(passing) > 1:
+        failed.append(f"{len(passing)} candidates pass every rule")
+    elif not passing and scored:
+        named = [s for s in scored if s[1]["it"]]
+        if parsed and not named:
+            failed.append("no item has the Italian name of every variant")
+        else:
+            best = named[0] if named else scored[0]
+            if not best[1]["la"]:
+                failed.append("latin: no Latin label, alias or P9314 matches")
+            failed += best[2]
+            if not best[1]["type"]:
+                failed.append("type: the item is not a place")
+    return {"auto": passing[0][0] if len(passing) == 1 else None,
+            "candidates": [published(s[0], s[3]) for s in scored[:MAX_CANDIDATES]],
+            "failed": failed, "claims": claims}
+
+
+def validate(gazetteer, index, review_ops=()):
+    errors = []
+    for la, e in gazetteer.items():
+        where = f"gazetteer {la!r}"
+        if la not in index:
+            errors.append(f"{where}: not a place in data/places.json (remove or re-key it)")
+            continue
+        if set(e) - set(ENTRY_KEYS):
+            errors.append(f"{where}: unknown keys {sorted(set(e) - set(ENTRY_KEYS))}")
+        status = e.get("status")
+        if status not in STATUSES:
+            errors.append(f"{where}: status {status!r} not in {STATUSES}")
+            continue
+        if status == "unresolved":
+            if e.get("wikidata") is not None:
+                errors.append(f"{where}: unresolved needs wikidata null")
+            if not e.get("note"):
+                errors.append(f"{where}: unresolved needs a note")
+            if "label" in e or "country" in e or "text_says" in e:
+                errors.append(f"{where}: unresolved has no label, country or text_says")
+            continue
+        if not isinstance(e.get("wikidata"), str) or not QID.match(e["wikidata"]):
+            errors.append(f"{where}: wikidata {e.get('wikidata')!r} is not a QID")
+        if not e.get("label"):
+            errors.append(f"{where}: missing label")
+        if e.get("country") not in ISO_CODES:
+            errors.append(f"{where}: country {e.get('country')!r} is not an ISO 3166-1 alpha-2 code")
+        for ts in e.get("text_says", []):
+            if set(ts) != {"country", "it"} or ts["it"] not in index[la]["it"] \
+                    or ts["country"] not in ISO_CODES or ts["country"] == e.get("country"):
+                errors.append(f"{where}: bad text_says {ts!r} (it must be one of the place's Italian "
+                              f"phrases, country an ISO code other than the entry's)")
+    for op in review_ops:
+        if op.get("id") in gazetteer:
+            errors.append(f"gazetteer {op['id']!r}: decided but also queued in data/gazetteer_review.json")
+    return errors
+
+
+def render_json(gazetteer):
+    out = {
+        "$comment": "Each place designation of data/places.json (key: the Latin as printed) resolved "
+                    "to a Wikidata item, its label and the place's actual modern country (ISO 3166-1 "
+                    "alpha-2). status: auto (passed the evidence bar), reviewed (decided by a person), "
+                    "unresolved (no suitable item). text_says: the modern country a printed Italian "
+                    "phrase names wrongly. Places awaiting review are absent. Generated by "
+                    "scripts/build_gazetteer.py; see docs/canonicalization-report.md (Gazetteer). "
+                    "Draft pending committee review.",
+        "statuses": STATUSES,
+        "places": {la: {k: e[k] for k in ENTRY_KEYS if k in e} for la, e in sorted(gazetteer.items())},
+    }
+    return json.dumps(out, ensure_ascii=False, indent=2) + "\n"
+
+
+def gather_candidates(item, client):
+    seen = {}
+    for it in item["it"]:
+        for head in parse_italian(it)["heads"]:
+            for c in client.candidates(head):
+                seen.setdefault(c["wikidata"], c)
+    return list(seen.values())
+
+
+def make_op(la, item, result, old):
+    op = {"op": "resolve_place", "id": la, "la": la, "it": item["it"],
+          "occurrences": item["occurrences"], "claims": result["claims"],
+          "failed": result["failed"], "candidates": result["candidates"]}
+    for key in ("suggested", "reasoning", "confidence"):
+        if old and key in old:
+            op[key] = old[key]
+    op["decision"] = None
+    op["edited"] = None
+    return op
+
+
+def new_changeset(operations):
+    return {"schema": SCHEMA, "generated_by": "scripts/build_gazetteer.py",
+            "generated_at": datetime.date.today().isoformat(),
+            "base": {"edition": "2004", "registry": "data/places.json"},
+            "operations": operations}
+
+
+def _sort_ops(ops):
+    return sorted(ops, key=lambda op: (-len(op.get("occurrences", [])), op["id"]))
+
+
+def propose(gazetteer, review, index, client, force_review=FORCE_REVIEW):
+    ops = {op["id"]: op for op in review["operations"]}
+    not_processed = []
+    for la in sorted(index):
+        if la in gazetteer:
+            continue
+        try:
+            result = evaluate(la, index[la], gather_candidates(index[la], client), client.region_countries,
+                              getattr(client, "region_coords", lambda region: []))
+        except WikidataError as e:
+            not_processed.append((la, str(e)))
+            continue
+        if la in force_review:
+            result["auto"] = None
+            result["failed"].append("forced review: " + force_review[la])
+        suggested = (ops.get(la, {}).get("suggested") or {}).get("wikidata")
+        if result["auto"] and suggested and suggested != result["auto"]["wikidata"]:
+            result["failed"].append(f"the suggestion ({suggested}) disagrees with the item that passes "
+                                    f"every rule ({result['auto']['wikidata']})")
+            result["auto"] = None
+        if result["auto"]:
+            gazetteer[la] = auto_entry(result["auto"])
+            ops.pop(la, None)
+        else:
+            ops[la] = make_op(la, index[la], result, ops.get(la))
+    review["operations"] = _sort_ops(ops.values())
+    review["generated_at"] = datetime.date.today().isoformat()
+    return not_processed
+
+
+def _cell(s):
+    return str(s).replace("|", "\\|")
+
+
+def render_report(gazetteer, index, review_ops, not_processed=()):
+    counts = {s: sum(1 for e in gazetteer.values() if e["status"] == s) for s in STATUSES}
+    text_says = [(la, e["country"], ts["country"]) for la, e in sorted(gazetteer.items())
+                 for ts in e.get("text_says", [])]
+    preview = [(mr_id, la, reg, gazetteer[la]["country"]) for la in sorted(index) if la in gazetteer
+               and gazetteer[la].get("country") for mr_id, reg in index[la]["lead_countries"].items()
+               if reg and reg != gazetteer[la]["country"]]
+    lines = [
+        "# Gazetteer report",
+        "",
+        "Generated by `scripts/build_gazetteer.py`. It holds place designations, IDs and "
+        "Wikidata QIDs only.",
+        "",
+        "## Progress",
+        "",
+        f"{len(index)} distinct places; {len(gazetteer)} decided; {len(review_ops)} awaiting review"
+        + (f"; {len(not_processed)} not processed (network)" if not_processed else "") + ".",
+        "",
+        "| Status | Places |",
+        "| --- | --- |",
+        *[f"| {s} | {counts[s]} |" for s in STATUSES],
+        "",
+        "## Awaiting review",
+        "",
+        "In `data/gazetteer_review.json`, most frequent first.",
+        "",
+        "| Place | Occurrences | Why not auto |",
+        "| --- | --- | --- |",
+        *[f"| {_cell(op['id'])} | {len(op.get('occurrences', []))} | {_cell('; '.join(op.get('failed', [])))} |"
+          for op in review_ops],
+        "",
+        "## The text names another country (text_says)",
+        "",
+        "| Place | Country | The text says |",
+        "| --- | --- | --- |",
+        *([f"| {_cell(la)} | {c} | {t} |" for la, c, t in text_says] or ["| | | |"]),
+        "",
+        "## Preview: registry country differs from the opening place",
+        "",
+        "For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Holy "
+        "Land) show up here too.",
+        "",
+        "| ID | Place | Registry | Gazetteer |",
+        "| --- | --- | --- | --- |",
+        *([f"| `{m}` | {_cell(la)} | {r} | {g} |" for m, la, r, g in preview] or ["| | | | |"]),
+    ]
+    if not_processed:
+        lines += ["", "## Not processed (network)", "",
+                  *[f"- {_cell(la)}: {_cell(err)}" for la, err in not_processed]]
+    return "\n".join(lines) + "\n"
+
+
+def _read_json(path, default):
+    return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
+
+
+def load_state(repo_root):
+    data = repo_root / "data"
+    places = json.loads((data / "places.json").read_text(encoding="utf-8"))["places"]
+    entries = json.loads((data / "martyrology_ids.json").read_text(encoding="utf-8"))["entries"]
+    gazetteer = _read_json(data / "gazetteer.json", {"places": {}})["places"]
+    review = _read_json(data / "gazetteer_review.json", new_changeset([]))
+    return gazetteer, review, place_index(places, entries)
+
+
+def write_state(repo_root, gazetteer, review, index, not_processed=()):
+    errors = validate(gazetteer, index, review["operations"])
+    if errors:
+        sys.exit("invalid gazetteer:\n" + "\n".join(errors))
+    data = repo_root / "data"
+    (data / "gazetteer.json").write_text(render_json(gazetteer), encoding="utf-8")
+    (data / "gazetteer_review.json").write_text(
+        json.dumps(review, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    (repo_root / "docs" / "gazetteer-report.md").write_text(
+        render_report(gazetteer, index, review["operations"], not_processed), encoding="utf-8")
+
+
+def _resolve(op, client):
+    """The entry for one decided op, or an error message."""
+    la, decision = op["id"], op["decision"]
+    suggested, edited = op.get("suggested") or {}, op.get("edited") or {}
+    if decision == "reject":
+        reason = (edited.get("reason") or "").strip()
+        if not reason:
+            return None, f"{la!r}: reject needs a reason (edited.reason)"
+        return {"wikidata": None, "status": "unresolved", "note": reason}, None
+    if decision not in ("accept", "edit"):
+        return None, f"{la!r}: unknown decision {decision!r}"
+    candidates = op.get("candidates", [])
+    qid = (edited.get("wikidata") if decision == "edit" else None) or suggested.get("wikidata") \
+        or (candidates[0]["wikidata"] if candidates else None)
+    if not qid or not QID.match(qid):
+        return None, f"{la!r}: no item chosen"
+    chosen = next((c for c in candidates if c["wikidata"] == qid), None) or client.candidate(qid)
+    if chosen is None:
+        return None, f"{la!r}: no such item {qid}"
+    from_suggestion = suggested.get("wikidata") == qid
+    edit = edited if decision == "edit" else {}
+    country = edit.get("country") or (suggested.get("country") if from_suggestion else None) \
+        or chosen.get("country")
+    if not country:
+        return None, f"{la!r}: {qid} needs a country (no single current P17; use edit)"
+    text_says = edit["text_says"] if "text_says" in edit else \
+        (suggested.get("text_says") if from_suggestion else None)
+    entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
+    if text_says:
+        entry["text_says"] = text_says
+    if edit.get("reason"):
+        entry["note"] = edit["reason"]
+    return entry, None
+
+
+def apply_decisions(gazetteer, review, exported, index, client):
+    if exported.get("schema") != SCHEMA:
+        raise ValueError(f"not a {SCHEMA} document")
+    decided, errors = {}, []
+    for op in exported.get("operations", []):
+        if op.get("op") != "resolve_place" or op.get("decision") is None:
+            continue
+        la = op["id"]
+        if la not in index:
+            errors.append(f"{la!r}: not a place in data/places.json")
+            continue
+        if la in gazetteer:
+            errors.append(f"{la!r}: already decided in data/gazetteer.json")
+            continue
+        entry, error = _resolve(op, client)
+        if error:
+            errors.append(error)
+        else:
+            decided[la] = entry
+    if not errors:
+        trial = dict(gazetteer, **decided)
+        errors = validate({la: trial[la] for la in decided}, index)
+    if errors:
+        raise ValueError("no decision applied:\n" + "\n".join(errors))
+    gazetteer.update(decided)
+    review["operations"] = [op for op in review["operations"] if op["id"] not in decided]
+    return len(decided)
+
+
+def verify_suggestions(review, index, client):
+    errors, warnings = [], []
+    for op in review["operations"]:
+        s = op.get("suggested")
+        if not s:
+            continue
+        la = op["id"]
+        if op.get("confidence") not in CONFIDENCES:
+            errors.append(f"{la!r}: confidence {op.get('confidence')!r} not in {sorted(CONFIDENCES)}")
+        qid = s.get("wikidata")
+        item = None
+        if not isinstance(qid, str) or not QID.match(qid):
+            errors.append(f"{la!r}: suggested wikidata {qid!r} is not a QID")
+        else:
+            item = next((c for c in op.get("candidates", []) if c["wikidata"] == qid), None)
+            if item is None:
+                item = client.candidate(qid)
+                if item is None:
+                    errors.append(f"{la!r}: no such item {qid}")
+                else:
+                    item = published(item, [])
+                    op.setdefault("candidates", []).append(item)
+        if s.get("country") not in ISO_CODES:
+            errors.append(f"{la!r}: suggested country {s.get('country')!r} is not an ISO code")
+        elif item and item.get("country") and item["country"] != s["country"]:
+            warnings.append(f"{la!r}: suggested country {s['country']} differs from the item's country "
+                            f"{item['country']}; check the reasoning")
+        its = index.get(la, {}).get("it", [])
+        for ts in s.get("text_says", []):
+            if set(ts) != {"country", "it"} or ts["it"] not in its or ts["country"] == s.get("country"):
+                errors.append(f"{la!r}: bad text_says {ts!r}")
+    return errors, warnings
+
+
+def main(argv):
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check"}:
+        sys.exit(__doc__)
+    cmd, rest = argv[0], argv[1:]
+    exported = None
+    if cmd == "apply":
+        if not rest:
+            sys.exit(__doc__)
+        exported, rest = Path(rest[0]), rest[1:]
+    repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
+    gazetteer, review, index = load_state(repo_root)
+    client = Wikidata(repo_root / ".cache" / "wikidata")
+    if cmd == "check":
+        errors = validate(gazetteer, index, review["operations"])
+        print("\n".join(errors) or f"ok: {len(gazetteer)} places decided, {len(review['operations'])} queued")
+        return 1 if errors else 0
+    if cmd == "propose":
+        not_processed = propose(gazetteer, review, index, client)
+        write_state(repo_root, gazetteer, review, index, not_processed)
+        auto = sum(1 for e in gazetteer.values() if e["status"] == "auto")
+        print(f"{len(index)} places; {auto} auto; {len(review['operations'])} awaiting review; "
+              f"{len(not_processed)} not processed")
+        return 1 if not_processed else 0
+    if cmd == "verify-suggestions":
+        errors, warnings = verify_suggestions(review, index, client)
+        write_state(repo_root, gazetteer, review, index)
+        print("\n".join(["ERROR " + e for e in errors] + ["CHECK " + w for w in warnings]) or "ok")
+        return 1 if errors else 0
+    try:
+        n = apply_decisions(gazetteer, review, json.loads(exported.read_text(encoding="utf-8")), index, client)
+    except ValueError as e:
+        sys.exit(str(e))
+    write_state(repo_root, gazetteer, review, index)
+    print(f"{n} decisions applied; {len(review['operations'])} awaiting review")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
