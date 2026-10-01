@@ -38,7 +38,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 
 ### Invariants the pipeline enforces (preserve these when editing)
 
-- **Every `i18n/*.json` file carries the identical complete key set** (all IDs, current + deprecated). Untranslated subjects are empty strings, never missing keys. `la.json` is fully filled; `it.json`/`en.json` are partial and mechanically extracted, awaiting translators.
+- **Every `i18n/*.json` file carries the identical complete key set** (all IDs, current + deprecated). Untranslated subjects are empty strings, never missing keys. `la.json` is fully filled; `it.json`/`en.json` are mechanically extracted and hand-reviewed (#25, #31); a rerun of `extract_subjects.py` overwrites curated values, so diff its output rather than committing it.
 - **IDs are unique** across current + deprecated (asserted at the end of `extract_registry.py`).
 - **Deprecated IDs must not collide with current IDs** (asserted in `load_deprecated`); each has `deprecated: true` and an `attested_in` edition.
 - **Subject and slug are edition-independent and tightly coupled**: the eulogy text may change between editions, but the subject and canonical ID do not. Entry number, asterisk marker, and calendar placement are per-edition attributes, *not* part of identity.

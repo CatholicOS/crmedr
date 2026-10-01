@@ -23,6 +23,9 @@ Generation rules (all draft, committee review expected):
   marker opens the text. Feast-type subjects and entries whose extraction
   failed are omitted, to be completed by translators.
 
+A full rerun overwrites curated values (the deprecated IDs' subjects, and hand
+corrections such as #20, #25, #31): diff the output and keep the curated ones.
+
 Requires the PRIVATE CatholicOS/martyrology-texts repository for the 2004
 texts.
 
@@ -47,11 +50,25 @@ GROUPS_M = {'martyres', 'milites', 'monachi', 'fratres', 'presbyteri', 'diaconi'
             'socii', 'confessores', 'pueri', 'sancti'}
 GROUPS_F = {'virgines', 'mulieres', 'viduae', 'moniales'}
 MARKER_LA = re.compile(r'\b([Ss]anct|[Bb]eat)[a-zA-ZÀ-ſ]*')
-IT_M = re.compile(r"\b(santi|sante|santo|santa|san|sant'|sant’|beati|beate|beato|beata)\s+"
+# "sant’" is elided onto the name with no space ("sant’Eutizio").
+# Only the honorific is case-insensitive: the name must start with a capital
+# ("una santa vita" is not a subject).
+IT_M = re.compile(r"\b((?i:sant['’]|santi|sante|santo|santa|san|beati|beate|beato|beata))(?:(?<=['’])|\s+)"
                   r"([A-ZÀ-Ý][\w'’\-]+(?:\s+(?:e|da|di|de'|del|della|dei)\s+"
-                  r"[A-ZÀ-Ý][\w'’\-]+|\s+[A-ZÀ-Ý][\w'’\-]+){0,3})", re.I)
-EN_M = re.compile(r"\b(Saints|Saint|St\.|Blesseds|Blessed)\s+([A-Z][\w'\-]+"
-                  r"(?:\s+(?:of|the|de|and)\s+[A-Z][\w'\-]+|\s+[A-Z][\w'\-]+){0,3})")
+                  r"[A-ZÀ-Ý][\w'’\-]+|\s+[A-ZÀ-Ý][\w'’\-]+){0,3})")
+# The English text writes the subject's honorific in lowercase ("At Lviv,
+# blessed Sigismund ..."), and a saint named in a place, church or order with a
+# capital ("at Saint Paul's"): both are matched; the choice is made below.
+EN_M = re.compile(r"\b(Saints|Saint|St\.|Blesseds|Blessed|saints|saint|blessed)\s+"
+                  r"([A-ZÀ-Ý][\w'’\-]+(?:\s+(?:of|the|de|and)\s+[A-ZÀ-Ý][\w'’\-]+|\s+[A-ZÀ-Ý][\w'’\-]+){0,3})")
+LA_MENTION = re.compile(r"\b([Ss]anct|[Bb]eat)[a-zæœ]*\s+(?=[A-Z])")
+# A saint named to date the eulogy ("tempore sancti Gregorii papae") or to place
+# it ("apud sanctum Petrum") is not its subject, although his honorific is
+# lowercase too.
+NOT_SUBJECT_LA = {"tempore", "temporibus", "aetate", "ætate", "sub", "apud", "ad", "iuxta", "prope"}
+# The same time phrases in the translations ("al tempo di san Gregorio",
+# "in the time of Saint Gregory"): such a mention never matches the slug loosely.
+TEMPORAL_VERN = re.compile(r"\b(?:tempo|tempi|sotto|regno|time|times|reign|under)\b(?:\s+\w+){0,2}\s*$", re.I)
 
 
 # Precomposed Latin letters whose diacritic is a stroke/bar rather than a
@@ -108,22 +125,63 @@ def la_subject(mrid, text):
     return ('Beatus ' if base == 'Beat' else 'Sanctus ') + name
 
 
-def vern_subject(mrid, text, pat):
+def latin_subject_index(la_text):
+    """Index of the subject among the saints the Latin names: the first one with a
+    lowercase honorific (saints inside place names are capitalized), or a
+    drop-cap heading at the start."""
+    from extract_places import base_copy
+    text = base_copy(la_text or '')
+    mentions = list(LA_MENTION.finditer(text))
+    for i, m in enumerate(mentions):
+        if i == 0 and m.start() == 0:
+            return i
+        before = re.findall(r"[A-Za-zæœ]+", text[:m.start()])
+        if m.group(1)[0].islower() and not (before and before[-1].lower() in NOT_SUBJECT_LA):
+            return i
+    return None
+
+
+def vern_subject(mrid, text, pat, la_text=None):
+    """The subject of a vernacular text: the honorific mention whose name matches
+    the slug; failing that, the mention in the Latin subject's position (the
+    translations name the saints in the same order); failing that, a drop-cap
+    heading. A saint named only in a place, church or order is never taken: in
+    Italian such honorifics are capitalized mid-text and are skipped."""
     if not text:
         return None
-    m = pat.search(text)
-    if not m:
+    mentions = list(pat.finditer(text))
+    if not mentions:
         return None
     first_slug = mrid.split('-', 1)[1].split('-')[0]
-    nf = fold(m.group(2)).split()
-    if not nf:
-        return None
-    ok = any(w[:4] == first_slug[:4] or SequenceMatcher(None, w, first_slug).ratio() >= 0.5
-             for w in nf) or m.start() < 60
-    if not ok:
-        return None
-    hon = m.group(1)
-    return f'{hon[0].upper()}{hon[1:]} {m.group(2)}'.strip()
+
+    def fmt(m):
+        hon = m.group(1)
+        sep = '' if hon.endswith(("'", '’')) else ' '
+        return f'{hon[0].upper()}{hon[1:]}{sep}{m.group(2)}'.strip()
+
+    def exact(m):
+        return any(w[:4] == first_slug[:4] for w in fold(m.group(2)).split())
+
+    def fuzzy(m):
+        return any(SequenceMatcher(None, w, first_slug).ratio() >= 0.5 for w in fold(m.group(2)).split())
+
+    italian = pat is IT_M
+    i = latin_subject_index(la_text) if la_text else None
+    # An exact match on the slug's first letters counts anywhere. A loose one is
+    # needed too (the Italian spells Cipriano, Leone, Pellegrino for cyprianus,
+    # leo, peregrinus), but never on a saint who only dates the eulogy.
+    for m in mentions:
+        if italian and m.start() > 0 and m.group(1)[0].isupper():
+            continue
+        if exact(m) or (fuzzy(m) and not TEMPORAL_VERN.search(text[:m.start()])):
+            return fmt(m)
+    if i is not None and i < len(mentions):
+        m = mentions[i]
+        if not (italian and m.start() > 0 and m.group(1)[0].isupper()):
+            return fmt(m)
+    if mentions[0].start() == 0:
+        return fmt(mentions[0])
+    return None
 
 
 def main():
@@ -144,10 +202,11 @@ def main():
     out = {'la': {}, 'it': {}, 'en': {}}
     for e in current:
         out['la'][e['id']] = la_subject(e['id'], tex['la'].get(e['id'], ''))
-        s = vern_subject(e['id'], tex['it'].get(e['id'], ''), IT_M)
+        la_text = tex['la'].get(e['id'], '')
+        s = vern_subject(e['id'], tex['it'].get(e['id'], ''), IT_M, la_text)
         if s:
             out['it'][e['id']] = s
-        s = vern_subject(e['id'], tex['en'].get(e['id'], ''), EN_M)
+        s = vern_subject(e['id'], tex['en'].get(e['id'], ''), EN_M, la_text)
         if s:
             out['en'][e['id']] = s
     for e in reg['entries']:
