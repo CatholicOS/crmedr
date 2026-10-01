@@ -234,3 +234,163 @@ class HttpGetTest(unittest.TestCase):
         with mock.patch("wikidata.urllib.request.urlopen", side_effect=[err] * 3):
             with self.assertRaises(wd.WikidataError):
                 wd.http_get("https://example/u", retries=3, sleep=lambda s: None)
+
+
+import build_gazetteer as bg  # noqa: E402
+
+
+def cand(qid, it=(), la=(), country="FX", countries=None, place=True, p9314=False, label=None):
+    return {"wikidata": qid, "label": label or qid, "description": "", "names_it": sorted(gt.fold(x) for x in it),
+            "la": list(la), "p9314": p9314, "country_qids": [], "iso_self": None,
+            "country": country, "countries": countries if countries is not None else ([country] if country else []),
+            "coords": None, "types": ["Q486972"], "place_type": place}
+
+
+def item(*its, occ=("mr:0101-fictus",)):
+    return {"it": list(its), "occurrences": list(occ), "lead_countries": {}}
+
+
+REGIONS = {"Fictia": {"FX"}, "Fictiense": {"FX"}, "Altrofictia": {"FY"}}
+
+
+def regions(text):
+    return REGIONS.get(text, set())
+
+
+class PlaceIndexTest(unittest.TestCase):
+    def test_index(self):
+        places = {
+            "mr:0102-b": [{"role": "death", "la": "Fictópoli", "it": "A Fictopoli", "source": "lead"}],
+            "mr:0101-a": [{"role": "death", "la": "Fictópoli", "it": "A Fictopoli in Fictia", "source": "lead"},
+                          {"role": "birth", "la": "in Fíctia", "source": "curated"}],
+        }
+        entries = [{"id": "mr:0101-a", "country": "FX"}, {"id": "mr:0102-b", "country": "FY"}]
+        idx = bg.place_index(places, entries)
+        self.assertEqual(idx["Fictópoli"], {"it": ["A Fictopoli", "A Fictopoli in Fictia"],
+                                           "occurrences": ["mr:0101-a", "mr:0102-b"],
+                                           "lead_countries": {"mr:0101-a": "FX", "mr:0102-b": "FY"}})
+        self.assertEqual(idx["in Fíctia"], {"it": [], "occurrences": ["mr:0101-a"], "lead_countries": {}})
+
+
+class EvaluateTest(unittest.TestCase):
+    def test_single_candidate_passing_all_is_auto(self):
+        r = bg.evaluate("Fictópoli in Fíctia", item("A Fictopoli in Fictia"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+        self.assertEqual(r["failed"], [])
+        self.assertEqual(r["candidates"][0]["evidence"], ["it", "la", "country", "type"])
+
+    def test_p9314_satisfies_latin(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [cand("Q1", it=["Fictopoli"], p9314=True)], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+        self.assertIn("p9314", r["candidates"][0]["evidence"])
+
+    def test_other_items_with_the_name_filtered_by_other_rules(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [
+            cand("Q2", it=["Fictopoli"], place=False),                # a school
+            cand("Q3", it=["Fictopoli"]),                             # a hamlet, no Latin name
+            cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+        self.assertEqual(r["candidates"][0]["wikidata"], "Q1")
+
+    def test_homonyms_go_to_review(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), [
+            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="FX"),
+            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="FY")], regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("2 candidates pass every rule", r["failed"])
+
+    def test_region_separates_homonyms(self):
+        r = bg.evaluate("Fictópoli in Altrofíctia", item("A Fictopoli in Altrofictia"), [
+            cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country="FX"),
+            cand("Q2", it=["Fictopoli"], la=["Fictopolis"], country="FY")], regions)
+        self.assertEqual(r["auto"]["wikidata"], "Q2")
+
+    def test_every_italian_variant_must_match(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli", "All’ancora in mare davanti a Fictopoli"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("no item has the Italian name of every variant", r["failed"])
+
+    def test_claim_against_country_goes_to_review_with_claims(self):
+        it = "A Fictopoli in Fictia, nell’odierna Germania"
+        r = bg.evaluate("Fictópoli", item(it), [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
+        self.assertIsNone(r["auto"])
+        self.assertEqual(r["claims"], [{"country": "DE", "it": it}])
+        self.assertIn("country: the Italian says DE, the item is in FX", r["failed"])
+
+    def test_no_single_country(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"], country=None, countries=["FX", "FY"])],
+                        regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("country: the item has no single current country (FX, FY)", r["failed"])
+
+    def test_unresolvable_region(self):
+        r = bg.evaluate("Fictópoli", item("A Fictopoli in Nowhere"),
+                        [cand("Q1", it=["Fictopoli"], la=["Fictopolis"])], regions)
+        self.assertIsNone(r["auto"])
+        self.assertIn("country: region 'Nowhere' is not in FX", r["failed"])
+
+    def test_no_italian_and_no_candidates(self):
+        self.assertEqual(bg.evaluate("Fictópoli", item(), [], regions)["failed"],
+                         ["no Italian phrase", "no candidates found"])
+
+    def test_candidates_capped_and_ranked(self):
+        cands = [cand(f"Q{i}", it=["Altro"]) for i in range(20)] + [cand("Q99", it=["Fictopoli"])]
+        r = bg.evaluate("Fictópoli", item("A Fictopoli"), cands, regions)
+        self.assertEqual(len(r["candidates"]), bg.MAX_CANDIDATES)
+        self.assertEqual(r["candidates"][0]["wikidata"], "Q99")
+        self.assertEqual(set(r["candidates"][0]),
+                         {"wikidata", "label", "description", "country", "countries", "la", "p9314",
+                          "coords", "types", "evidence"})
+
+
+INDEX = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"],
+                       "lead_countries": {"mr:0101-a": "FR"}},
+         "Altrópoli": {"it": [], "occurrences": ["mr:0102-b"], "lead_countries": {}}}
+
+
+class ValidateTest(unittest.TestCase):
+    def good(self):
+        return {"Fictópoli": {"wikidata": "Q1", "label": "Fictopolis", "country": "FR", "status": "reviewed",
+                              "text_says": [{"country": "DE", "it": "A Fictopoli, nell’odierna Germania"}]},
+                "Altrópoli": {"wikidata": None, "status": "unresolved", "note": "no item"}}
+
+    def test_good(self):
+        self.assertEqual(bg.validate(self.good(), INDEX), [])
+
+    def test_errors(self):
+        cases = [
+            ("Ignota", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "auto"}, "not a place"),
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "maybe"}, "status"),
+            ("Fictópoli", {"wikidata": "1", "label": "x", "country": "FR", "status": "auto"}, "QID"),
+            ("Fictópoli", {"wikidata": None, "label": "x", "country": "FR", "status": "auto"}, "QID"),
+            ("Fictópoli", {"wikidata": "Q1", "country": "FR", "status": "auto"}, "label"),
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "XX", "status": "auto"}, "country"),
+            ("Altrópoli", {"wikidata": None, "status": "unresolved"}, "note"),
+            ("Altrópoli", {"wikidata": "Q1", "status": "unresolved", "note": "n"}, "null"),
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "auto",
+                           "text_says": [{"country": "DE", "it": "not a variant"}]}, "text_says"),
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "DE", "status": "auto",
+                           "text_says": [{"country": "DE", "it": "A Fictopoli, nell’odierna Germania"}]},
+             "text_says"),
+            ("Fictópoli", {"wikidata": "Q1", "label": "x", "country": "FR", "status": "auto", "extra": 1},
+             "keys"),
+        ]
+        for la, entry, word in cases:
+            errors = bg.validate({la: entry}, INDEX)
+            self.assertTrue(errors and word in errors[0], (la, entry, errors))
+
+    def test_key_both_decided_and_queued(self):
+        errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Fictópoli"}])
+        self.assertTrue(any("also queued" in e for e in errors))
+
+
+class RenderJsonTest(unittest.TestCase):
+    def test_key_order_and_sorting(self):
+        out = json.loads(bg.render_json({"Zeta": {"status": "auto", "country": "FR", "label": "Z", "wikidata": "Q2"},
+                                         "Alpha": {"note": "n", "status": "unresolved", "wikidata": None}}))
+        self.assertEqual(list(out["places"]), ["Alpha", "Zeta"])
+        self.assertEqual(list(out["places"]["Zeta"]), ["wikidata", "label", "country", "status"])
+        self.assertEqual(out["statuses"], bg.STATUSES)
