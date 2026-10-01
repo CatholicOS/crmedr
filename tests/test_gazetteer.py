@@ -161,6 +161,10 @@ class FakeFetch:
         self.calls.append(url)
         from urllib.parse import parse_qs, urlparse
         q = parse_qs(urlparse(url).query)
+        if "query" in q and "P297" in q["query"][0]:
+            return {"results": {"bindings": [
+                {"c": {"value": "http://www.wikidata.org/entity/" + i}, "iso": {"value": wd.summarize(raw)["iso_self"]}}
+                for i, raw in self.entities.items() if wd.summarize(raw)["iso_self"]]}}
         if "query" in q:
             found = [c for c in self.place_classes if f"wd:{c} " in q["query"][0]]
             return {"results": {"bindings": [{"c": {"value": "http://www.wikidata.org/entity/" + c}}
@@ -199,6 +203,13 @@ class ClientTest(unittest.TestCase):
         again = wd.Wikidata(Path(self.tmp.name), fetch=self.fetch)
         again.candidates("Fictopoli")
         self.assertEqual(len(self.fetch.calls), n)
+
+    def test_country_iso_from_one_cached_query(self):
+        self.client.candidates("Fictopoli")
+        self.client.candidates("Fictia")
+        fetched = [u for u in self.fetch.calls if "wbgetentities" in u and "Q100" in u]
+        self.assertEqual(fetched, [])
+        self.assertEqual(sum(1 for u in self.fetch.calls if "P297" in u), 1)
 
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})
@@ -605,3 +616,15 @@ class VerifySuggestionsTest(unittest.TestCase):
         for word in ("no such item", "not an ISO", "text_says", "confidence"):
             self.assertIn(word, text)
         self.assertTrue(any("differs from the item's country FR" in w for w in warnings))
+
+
+REPO = Path(__file__).resolve().parent.parent
+
+
+class CommittedGazetteerTest(unittest.TestCase):
+    def test_committed_files_validate(self):
+        if not (REPO / "data" / "gazetteer.json").exists():
+            self.skipTest("no data/gazetteer.json yet")
+        gazetteer, review, index = bg.load_state(REPO)
+        self.assertEqual(bg.validate(gazetteer, index, review["operations"]), [])
+        self.assertEqual(set(gazetteer) | {op["id"] for op in review["operations"]}, set(index))

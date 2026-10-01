@@ -101,6 +101,7 @@ class Wikidata:
         self.cache_dir = cache_dir
         self.fetch = fetch
         self.cache_dir.mkdir(parents=True, exist_ok=True)
+        self._iso = None
         self._types_path = cache_dir / "place_types.json"
         self._types = (json.loads(self._types_path.read_text(encoding="utf-8"))
                        if self._types_path.exists() else {})
@@ -145,9 +146,19 @@ class Wikidata:
             self._types_path.write_text(json.dumps(self._types, sort_keys=True), encoding="utf-8")
         return {c for c in classes if self._types[c]}
 
+    def _country_iso(self):
+        # One query for every country code, instead of fetching each country's
+        # (very large) entity per search.
+        if self._iso is None:
+            query = "SELECT ?c ?iso WHERE { ?c wdt:P297 ?iso }"
+            data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"}))
+            self._iso = {}
+            for b in data["results"]["bindings"]:
+                self._iso.setdefault(b["c"]["value"].rsplit("/", 1)[1], b["iso"]["value"])
+        return self._iso
+
     def _enrich(self, summaries):
-        qids = sorted({q for s in summaries for q in s["country_qids"]})
-        countries = {q: summarize(raw)["iso_self"] for q, raw in self._entities(qids).items()}
+        countries = self._country_iso()
         places = self._place_types([t for s in summaries for t in s["types"]])
         for s in summaries:
             s["countries"] = [countries.get(q) or q for q in s["country_qids"]]
