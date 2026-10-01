@@ -40,6 +40,33 @@ class VernacularSubjectTest(unittest.TestCase):
         it = "A Fictopoli, beato Fictitio, che condusse una santa vita."
         self.assertEqual([m.group(2) for m in s.IT_M.finditer(it)], ["Fictitio"])
 
+    LA_TEMPORE = "Fictópoli, témpore sancti Gregórii papæ, sancti Guillélmi, abbátis."
+    IT_TEMPORE = "A Fictopoli, al tempo di san Gregorio papa, san Guglielmo, abate."
+    EN_TEMPORE = "At Fictopolis, in the time of Saint Gregory the pope, Saint William, abbot."
+
+    def test_temporal_reference_is_not_the_subject(self):
+        # Neither name matches the slug: the Latin position decides, and the saint
+        # in "tempore sancti ..." only dates the eulogy.
+        self.assertEqual(s.latin_subject_index(self.LA_TEMPORE), 1)
+        self.assertEqual(s.vern_subject("mr:0101-ignotus", self.IT_TEMPORE, s.IT_M, self.LA_TEMPORE),
+                         "San Guglielmo")
+        self.assertEqual(s.vern_subject("mr:0101-ignotus", self.EN_TEMPORE, s.EN_M, self.LA_TEMPORE),
+                         "Saint William")
+
+    def test_fuzzy_slug_match_only_at_the_subject_position(self):
+        # "egregius" is fuzzily like "Gregorio" but names neither saint.
+        self.assertEqual(s.vern_subject("mr:0101-egregius", self.IT_TEMPORE, s.IT_M, self.LA_TEMPORE),
+                         "San Guglielmo")
+        self.assertEqual(s.vern_subject("mr:0101-egregius", self.EN_TEMPORE, s.EN_M, self.LA_TEMPORE),
+                         "Saint William")
+
+    def test_exact_slug_prefix_still_wins_anywhere(self):
+        # No Latin to align with: an exact four-letter match on the slug decides.
+        en = "At Fictopolis, in the time of Saint Gregory the pope, Saint Fictitius, abbot."
+        it = "A Fictopoli, al tempo di san Gregorio papa, san Fictizio, abate."
+        self.assertEqual(s.vern_subject("mr:0101-fictitius", en, s.EN_M), "Saint Fictitius")
+        self.assertEqual(s.vern_subject("mr:0101-fictitius", it, s.IT_M), "San Fictizio")
+
     def test_drop_cap_heading(self):
         self.assertEqual(s.vern_subject("mr:0101-fictitius", "San Fittizio, vescovo.", s.IT_M), "San Fittizio")
 

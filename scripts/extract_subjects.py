@@ -62,6 +62,13 @@ IT_M = re.compile(r"\b((?i:sant['’]|santi|sante|santo|santa|san|beati|beate|be
 EN_M = re.compile(r"\b(Saints|Saint|St\.|Blesseds|Blessed|saints|saint|blessed)\s+"
                   r"([A-ZÀ-Ý][\w'’\-]+(?:\s+(?:of|the|de|and)\s+[A-ZÀ-Ý][\w'’\-]+|\s+[A-ZÀ-Ý][\w'’\-]+){0,3})")
 LA_MENTION = re.compile(r"\b([Ss]anct|[Bb]eat)[a-zæœ]*\s+(?=[A-Z])")
+# A saint named to date the eulogy ("tempore sancti Gregorii papae") or to place
+# it ("apud sanctum Petrum") is not its subject, although his honorific is
+# lowercase too.
+NOT_SUBJECT_LA = {"tempore", "temporibus", "aetate", "ætate", "sub", "apud", "ad", "iuxta", "prope"}
+# The same time phrases in the translations ("al tempo di san Gregorio",
+# "in the time of Saint Gregory"): such a mention never matches the slug loosely.
+TEMPORAL_VERN = re.compile(r"\b(?:tempo|tempi|sotto|regno|time|times|reign|under)\b(?:\s+\w+){0,2}\s*$", re.I)
 
 
 # Precomposed Latin letters whose diacritic is a stroke/bar rather than a
@@ -123,9 +130,13 @@ def latin_subject_index(la_text):
     lowercase honorific (saints inside place names are capitalized), or a
     drop-cap heading at the start."""
     from extract_places import base_copy
-    mentions = list(LA_MENTION.finditer(base_copy(la_text or '')))
+    text = base_copy(la_text or '')
+    mentions = list(LA_MENTION.finditer(text))
     for i, m in enumerate(mentions):
-        if (i == 0 and m.start() == 0) or m.group(1)[0].islower():
+        if i == 0 and m.start() == 0:
+            return i
+        before = re.findall(r"[A-Za-zæœ]+", text[:m.start()])
+        if m.group(1)[0].islower() and not (before and before[-1].lower() in NOT_SUBJECT_LA):
             return i
     return None
 
@@ -148,17 +159,22 @@ def vern_subject(mrid, text, pat, la_text=None):
         sep = '' if hon.endswith(("'", '’')) else ' '
         return f'{hon[0].upper()}{hon[1:]}{sep}{m.group(2)}'.strip()
 
-    def names_slug(m):
-        return any(w[:4] == first_slug[:4] or SequenceMatcher(None, w, first_slug).ratio() >= 0.5
-                   for w in fold(m.group(2)).split())
+    def exact(m):
+        return any(w[:4] == first_slug[:4] for w in fold(m.group(2)).split())
+
+    def fuzzy(m):
+        return any(SequenceMatcher(None, w, first_slug).ratio() >= 0.5 for w in fold(m.group(2)).split())
 
     italian = pat is IT_M
+    i = latin_subject_index(la_text) if la_text else None
+    # An exact match on the slug's first letters counts anywhere. A loose one is
+    # needed too (the Italian spells Cipriano, Leone, Pellegrino for cyprianus,
+    # leo, peregrinus), but never on a saint who only dates the eulogy.
     for m in mentions:
         if italian and m.start() > 0 and m.group(1)[0].isupper():
             continue
-        if names_slug(m):
+        if exact(m) or (fuzzy(m) and not TEMPORAL_VERN.search(text[:m.start()])):
             return fmt(m)
-    i = latin_subject_index(la_text) if la_text else None
     if i is not None and i < len(mentions):
         m = mentions[i]
         if not (italian and m.start() > 0 and m.group(1)[0].isupper()):
