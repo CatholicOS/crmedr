@@ -1,0 +1,109 @@
+"""Parse the place phrases of data/places.json for the gazetteer.
+
+Pure functions, standard library only: the Italian head toponyms, regions and
+modern-country claims of an Italian (CEI) place phrase, and the candidate
+nominatives of a Latin one. See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
+"""
+
+import re
+import unicodedata
+
+from countries_it import COUNTRY_IT
+
+
+def fold(s):
+    s = "".join(c for c in unicodedata.normalize("NFKD", s) if not unicodedata.combining(c))
+    s = s.replace("’", "'").replace("æ", "ae").replace("Æ", "Ae").replace("œ", "oe").replace("Œ", "Oe")
+    return " ".join(s.lower().split())
+
+
+_COUNTRY = {fold(k): v for k, v in COUNTRY_IT.items()}
+ISO_CODES = frozenset(COUNTRY_IT.values())
+
+
+def country_of(name):
+    return _COUNTRY.get(fold(name))
+
+
+# The preposition that opens an Italian place phrase ("A", "Presso", "Nell’").
+LEAD_IT = re.compile(
+    r"^(?:(?:nei pressi di|vicino al|vicino alla|vicino a|presso|nella|nelle|nello|negli|nel|nei"
+    r"|sulla|sulle|sul|sui|alla|al|ad|a|in|da)\s+|(?:nei pressi d|vicino all|nell|sull|all)')",
+    re.IGNORECASE)
+# Where the head toponym ends and a region or modern-country note begins.
+CONNECTOR_IT = re.compile(
+    r",|\s(?:in|nel|nella|nelle|nello|nei|negli|presso|vicino a|vicino al|vicino alla|sul|sulla|sulle"
+    r"|sui|sempre|ancora|ora|oggi|lungo|tra|fra|nei pressi di)(?=\s)|\s(?:nell|sull|all)'")
+# A site noun before the proper name ("monastero di X", "località X").
+SITE_IT = re.compile(
+    r"^(?:localit[àa]\s+|(?:citt[àa]|cittadina|territorio|isola|monastero|eremo|abbazia|villaggio"
+    r"|fortezza|regione|diocesi|castello|borgo|villa|contrada|frazione)\b[^,]*?\s"
+    r"(?:di\s+|del\s+|della\s+|dell'|d'))(?=[A-ZÀ-ÖØ-Þ])")
+# Words before the name in a region or modern-country segment.
+SEGMENT_PREFIX_IT = re.compile(
+    r"^(?:(?:il|lo|la|i|gli|le)\s+|l')?(?:(?:territorio|regione)\s+(?:di\s+|del\s+|della\s+|dell'|d'))?"
+    r"(?:(?:odiern[oa]|attuale)\s+)?")
+
+
+def _dedupe(xs):
+    return list(dict.fromkeys(x for x in xs if x))
+
+
+def parse_italian(it):
+    s = it.replace("’", "'").strip()
+    m = LEAD_IT.match(s)
+    if m:
+        s = s[m.end():]
+    cuts = list(CONNECTOR_IT.finditer(s))
+    head = (s[:cuts[0].start()] if cuts else s).strip(" ,")
+    heads = []
+    if head:
+        site_text = head[0].lower() + head[1:]
+        site = SITE_IT.match(site_text)
+        if site:
+            heads = [site_text, site_text[site.end():].strip()]
+        elif head[0].isupper():
+            heads = [head]
+    regions, claims = [], []
+    for i, cut in enumerate(cuts):
+        end = cuts[i + 1].start() if i + 1 < len(cuts) else len(s)
+        seg = s[cut.end():end].strip(" ,")
+        seg = seg[SEGMENT_PREFIX_IT.match(seg).end():].strip()
+        if not seg:
+            continue
+        iso = country_of(seg)
+        if iso:
+            claims.append(iso)
+        elif seg[0].isupper():
+            regions.append(seg)
+    return {"heads": _dedupe(h.replace("'", "’") for h in heads),
+            "regions": _dedupe(r.replace("'", "’") for r in regions),
+            "claims": _dedupe(claims)}
+
+
+LEAD_LA = {"in", "ad", "apud", "prope", "iuxta", "item", "ibidem", "inter", "sub", "super", "circa"}
+WORD_LA = re.compile(r"[^\W\d_]+")
+# Ending of a locative or ablative -> endings of the nominatives it may come from.
+# This only adds evidence, so a missing form sends the place to review.
+LATIN_ENDINGS = [
+    ("ibus", ("es", "a")), ("ine", ("o",)), ("one", ("o",)), ("ae", ("a", "ae")),
+    ("ii", ("ium", "ius", "ii")), ("is", ("a", "ae", "i", "is", "um", "us")),
+    ("i", ("um", "us", "ium", "i", "is", "a")), ("o", ("um", "us", "o", "a")),
+    ("e", ("is", "e", "es")), ("a", ("a",)),
+]
+
+
+def latin_nominatives(la):
+    out = set()
+    for word in WORD_LA.findall(la):
+        if not word[0].isupper():
+            continue
+        w = fold(word)
+        if w in LEAD_LA:
+            continue
+        out.add(w)
+        for ending, noms in LATIN_ENDINGS:
+            if w.endswith(ending) and len(w) > len(ending) + 1:
+                stem = w[: -len(ending)]
+                out.update(stem + n for n in noms)
+    return out
