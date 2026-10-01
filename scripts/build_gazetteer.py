@@ -145,9 +145,8 @@ def _checks(c, parsed, noms, claims, region_sets, region_points):
     return ok, ["country: " + p for p in country_problems] + region_problems
 
 
-def evaluate(la, item, candidates, region_countries, region_coords=lambda region: []):
-    parsed = [parse_italian(it) for it in item["it"]]
-    claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
+def _score(la, parsed, claims, candidates, region_countries, region_coords):
+    """(candidate, ok, problems, evidence, rank) per candidate, best first."""
     regions = list(dict.fromkeys(r for p in parsed for r in p["regions"]))
     region_sets = {r: region_countries(r) for r in regions} if candidates else {}
     region_points = {r: region_coords(r) for r in regions} if candidates else {}
@@ -158,6 +157,21 @@ def evaluate(la, item, candidates, region_countries, region_coords=lambda region
         evidence = [k for k in ("it", "la", "country", "type") if ok[k]] + (["p9314"] if c["p9314"] else [])
         scored.append((c, ok, problems, evidence, rank))
     scored.sort(key=lambda s: (-sum(s[1].values()), s[4]))
+    return scored
+
+
+def candidate_evidence(la, item, candidate, region_countries, region_coords=lambda region: []):
+    """The evidence evaluate() would give this one candidate for this place."""
+    parsed = [parse_italian(it) for it in item["it"]]
+    claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
+    [scored] = _score(la, parsed, claims, [candidate], region_countries, region_coords)
+    return scored[3]
+
+
+def evaluate(la, item, candidates, region_countries, region_coords=lambda region: []):
+    parsed = [parse_italian(it) for it in item["it"]]
+    claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
+    scored = _score(la, parsed, claims, candidates, region_countries, region_coords)
     passing = [s for s in scored if all(s[1].values())]
     failed = []
     if not parsed:
@@ -463,14 +477,25 @@ def verify_suggestions(review, index, client):
         if not isinstance(qid, str) or not QID.match(qid):
             errors.append(f"{la!r}: suggested wikidata {qid!r} is not a QID")
         else:
-            item = next((c for c in op.get("candidates", []) if c["wikidata"] == qid), None)
-            if item is None:
-                item = client.candidate(qid)
-                if item is None:
-                    errors.append(f"{la!r}: no such item {qid}")
+            candidates = op.setdefault("candidates", [])
+            pos = next((i for i, c in enumerate(candidates) if c["wikidata"] == qid), None)
+            item = candidates[pos] if pos is not None else None
+            # A suggestion not found by the search, or added before its evidence was
+            # computed, is evaluated like any searched candidate.
+            if item is None or not item["evidence"]:
+                raw = client.candidate(qid)
+                if raw is None:
+                    if item is None:
+                        errors.append(f"{la!r}: no such item {qid}")
                 else:
-                    item = published(item, [])
-                    op.setdefault("candidates", []).append(item)
+                    evidence = (candidate_evidence(la, index[la], raw, client.region_countries,
+                                                   getattr(client, "region_coords", lambda region: []))
+                                if la in index else [])
+                    item = published(raw, evidence)
+                    if pos is None:
+                        candidates.append(item)
+                    else:
+                        candidates[pos] = item
         if s.get("country") not in ISO_CODES:
             errors.append(f"{la!r}: suggested country {s.get('country')!r} is not an ISO code")
         elif item and item.get("country") and item["country"] != s["country"]:
