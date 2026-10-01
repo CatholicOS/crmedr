@@ -73,8 +73,15 @@ inside a city phrase are not resolved separately; they remain visible in `la`.
 - **`country`**: ISO 3166-1 alpha-2 of the place's **actual** modern country. From
   the item's single current P17, or set by a reviewer when P17 is missing, has
   several current values (Jerusalem) or the place is a historical region (*Bithynia*
-  → `TR`). No workbook conventions are applied here (e.g. `PS` for the whole Holy
-  Land); reconciling them is sub-project 3's cross-check. Absent when unresolved.
+  → `TR`). Two conventions apply (decided in review, October 2026):
+  - **the Holy Land is `PS`**, as in the registry's own `country`. `COUNTRY_CONVENTIONS`
+    maps `IL` to `PS` for candidates, regions and the Italian claims alike, so "nell’odierno
+    Israele" yields no `text_says`;
+  - **a dependent territory with its own ISO code takes that code** (Réunion `RE`,
+    Guam `GU`, Puerto Rico `PR`); the Wikidata item says which state it belongs to. An
+    item carrying its own P297 takes it automatically; a town inside such a territory is
+    set by the reviewer, since P17 names the sovereign state.
+  Absent when unresolved.
 - **`status`**: `auto` (passed the evidence bar), `reviewed` (a person accepted or
   edited it), `unresolved` (a person decided there is no suitable item).
 - **`text_says`** (optional): a list of `{country, it}`, one per **explicit

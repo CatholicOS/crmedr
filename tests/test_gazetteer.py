@@ -14,6 +14,7 @@ class FoldTest(unittest.TestCase):
         self.assertEqual(gt.fold("  Fictópoli  Ǽquæ  Nell’ "), "fictopoli aequae nell'")
 
     def test_country_of(self):
+        self.assertEqual(gt.country_of("Israele"), "PS")  # the registry's Holy Land convention
         self.assertEqual(gt.country_of("Francia"), "FR")
         self.assertEqual(gt.country_of("viet nam"), "VN")
         self.assertIsNone(gt.country_of("Fictia"))
@@ -265,6 +266,18 @@ class ClientTest(unittest.TestCase):
         self.fetch.entities["Q9"] = raw_entity("Q9", it=("Fictistan",), p17=[snak("P17", "Q100")], coords=(1.0, 2.0))
         self.fetch.searches["Fictistan"] = ["Q100", "Q9"]
         self.assertEqual(self.client.region_coords("Fictistan"), [])
+
+    def test_a_territory_item_keeps_its_own_code(self):
+        self.fetch.entities["Q7"] = raw_entity("Q7", it=("Fictaria",), p17=[snak("P17", "Q100")], p297="FY")
+        self.fetch.searches["Fictaria"] = ["Q7"]
+        self.assertEqual(self.client.candidates("Fictaria")[0]["country"], "FY")
+
+    def test_holy_land_convention(self):
+        self.fetch.entities["Q801"] = raw_entity("Q801", it=("Israele",), p297="IL", p31=("Q6256",))
+        self.fetch.entities["Q8"] = raw_entity("Q8", it=("Fictaroth",), p17=[snak("P17", "Q801")])
+        self.fetch.searches["Fictaroth"] = ["Q8"]
+        c = self.client.candidates("Fictaroth")[0]
+        self.assertEqual((c["country"], c["countries"]), ("PS", ["PS"]))
 
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})

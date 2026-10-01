@@ -532,9 +532,10 @@ Each distinct place designation (the `la` of `data/places.json`) is resolved onc
 in `data/gazetteer.json` to the most specific place that has a stable Wikidata
 item, usually the settlement or territory: *Romæ apud sanctum Petrum* resolves to
 Rome; a monastery resolves to its own item when Wikidata has one. Each entry has
-the QID, the item's label and the place's **actual** modern country (ISO 3166-1
-alpha-2), with no registry conventions applied. Reconciling it with each entry's
-`country` is a later step.
+the QID, the item's label and the place's modern country (ISO 3166-1 alpha-2), with
+two conventions: the whole Holy Land is `PS`, as in the registry's own `country`, and
+a dependent territory with its own code takes it (Réunion `RE`, Guam `GU`, Puerto
+Rico `PR`). Reconciling it with each entry's `country` is a later step.
 
 A place is `auto` only when exactly one Wikidata candidate passes every rule:
 its Italian label or alias is the head toponym of every Italian phrase of the

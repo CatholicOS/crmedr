@@ -24,8 +24,18 @@ NOT_ASSIGNED = {"AN", "CP", "CQ", "DD", "DG", "PC", "YU"}
 ISO_CODES = frozenset(set(COUNTRY_IT.values()) - NOT_ASSIGNED | {"JE"})
 
 
+# The registry's conventions for a place's country (#12 review): the whole Holy
+# Land is PS, as for the registry's own `country`.
+COUNTRY_CONVENTIONS = {"IL": "PS"}
+
+
+def convention(iso):
+    return COUNTRY_CONVENTIONS.get(iso, iso)
+
+
 def country_of(name):
-    return _COUNTRY.get(fold(name))
+    iso = _COUNTRY.get(fold(name))
+    return convention(iso) if iso else None
 
 
 # The preposition that opens an Italian place phrase ("A", "Presso", "Nell’").
