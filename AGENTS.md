@@ -33,6 +33,8 @@ All generator scripts read **private source repositories** that hold the copyrig
    - Run: `python3 scripts/extract_typology.py /path/to/martyrology-texts` (stdlib only)
 4. **`scripts/extract_places.py`** reads `data/martyrology_ids.json`, `data/typology.json`, `data/places_curated.json` and the private `martyrology-texts` repo (Latin editio altera 2004), and writes `data/places.json` (the places each current eulogy states, with roles) and `docs/places-report.md` (including the curation candidates). `extract_registry.py` merges `data/places.json` after `typology`.
    - Run: `python3 scripts/extract_places.py /path/to/martyrology-texts` (stdlib only)
+5. **`scripts/build_gazetteer.py`** resolves each distinct place designation in `data/places.json` to a Wikidata item, a label and the place's actual modern country, and writes `data/gazetteer.json`, the review change-set `data/gazetteer_review.json` (`crmedr-changeset/v1`, op `resolve_place`, reviewed in martyrology-frontend) and `docs/gazetteer-report.md`. Unlike the other generators it reads no private sources but **needs network access** (Wikidata, cached in `.cache/wikidata/`). A place is `auto` only when exactly one candidate passes the evidence bar; otherwise it waits in the change-set and has no key in `gazetteer.json`.
+   - Run: `python3 scripts/build_gazetteer.py propose`; after review in martyrology-frontend, `python3 scripts/build_gazetteer.py apply <exported.json>`; `verify-suggestions` checks suggested QIDs; `check` validates offline (stdlib only)
 
 ### Invariants the pipeline enforces (preserve these when editing)
 
@@ -51,6 +53,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `TYPOLOGY_OVERRIDES` / `FEAST_IDS` in `scripts/extract_typology.py` — hand typology decisions and the explicit list of celebrations (feasts of the Lord and of Mary, etc.)
 - `data/places_curated.json` — hand-entered body places (birth, see, burial or death elsewhere); `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
 - `data/misprints.json` — verified misprints in the printed 2004 editions (Latin and Italian), one word (or a phrase of up to three words) each; they also count as stop words in place extraction
+- `data/gazetteer.json` — `reviewed` and `unresolved` entries are human decisions; `propose` never changes an existing key. Fix a wrong place by editing its entry (keeping the validation rules), or delete the key and rerun `propose` to queue it again.
 
 The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
 
