@@ -131,7 +131,7 @@
 | 10 | 8 | `mr:0110-domitianus` | * | TR | dies_natalis |  |
 | 10 | 9 | `mr:0110-agathon` |  | IT | depositio |  |
 | 10 | 10 | `mr:0110-arcontius` | * | FR | dies_natalis |  |
-| 10 | 11 | `mr:0110-petrus-urseoli` |  | IT | dies_natalis |  |
+| 10 | 11 | `mr:0110-petrus-urseolus` |  | IT | dies_natalis |  |
 | 10 | 12 | `mr:0110-benincasa` | * | IT | dies_natalis |  |
 | 10 | 13 | `mr:0110-gulielmus` |  | FR | dies_natalis |  |
 | 10 | 14 | `mr:0110-gundisalvus` | * | PT | dies_natalis |  |
@@ -311,7 +311,7 @@
 | 24 | 10 | `mr:0124-timotheus-giaccardo` | * | IT | dies_natalis |  |
 | 25 | (1) | `mr:0125-conversio-sancti-pauli` |  | SY | celebratio |  |
 | 25 | 2 | `mr:0125-ananias` |  | SY | commemoratio |  |
-| 25 | 3 | `mr:0125-arthematis` | * | IT | dies_natalis |  |
+| 25 | 3 | `mr:0125-arthemas` | * | IT | dies_natalis |  |
 | 25 | 4 | `mr:0125-agileus` |  | TN | dies_natalis |  |
 | 25 | 5 | `mr:0125-gregorius` |  | TR | dies_natalis |  |
 | 25 | 6 | `mr:0125-bretannion` |  | RO | commemoratio |  |
@@ -362,7 +362,7 @@
 | 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis |  |
 | 29 | 5 | `mr:0129-valerius` |  | DE | dies_natalis |  |
 | 29 | 6 | `mr:0129-aphraates` |  | TR | dies_natalis |  |
-| 29 | 7 | `mr:0129-gilda-sapientis` | * | FR | dies_natalis |  |
+| 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  |
 | 29 | 8 | `mr:0129-sulpicius-severus` |  | FR | dies_natalis |  |
 | 29 | 9 | `mr:0129-villana-de-bottis` | * | IT | dies_natalis |  |
 | 29 | 10 | `mr:0129-boleslava-maria-lament` | * | PL | dies_natalis |  |

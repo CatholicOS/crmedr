@@ -73,7 +73,7 @@
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |
 | 7 | 3 | `mr:0307-eubulius` |  | PS | dies_natalis |  |
 | 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis |  |
-| 7 | 5 | `mr:0307-paulus-simplicis` |  | EG | dies_natalis |  |
+| 7 | 5 | `mr:0307-paulus-simplex` |  | EG | dies_natalis |  |
 | 7 | 6 | `mr:0307-gaudiosus` |  | IT | dies_natalis |  |
 | 7 | 7 | `mr:0307-ardo-smaragdus` | * | FR | dies_natalis |  |
 | 7 | 8 | `mr:0307-paulus` |  | TR | dies_natalis |  |

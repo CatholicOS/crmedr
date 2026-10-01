@@ -55,7 +55,7 @@
 | 4 | 1 | `mr:0904-moyses` |  | EG | commemoratio |  |
 | 4 | 2 | `mr:0904-marcellus` |  | FR | dies_natalis |  |
 | 4 | 3 | `mr:0904-bonifatius-i` |  | IT | depositio |  |
-| 4 | 4 | `mr:0904-caletricis` | * | FR | dies_natalis |  |
+| 4 | 4 | `mr:0904-caletricus` | * | FR | dies_natalis |  |
 | 4 | 5 | `mr:0904-ida` | * | DE | dies_natalis |  |
 | 4 | 6 | `mr:0904-fredaldus` | * | FR | dies_natalis |  |
 | 4 | 7 | `mr:0904-irmgardis` | * | DE | dies_natalis |  |
@@ -154,7 +154,7 @@
 | 11 | 2 | `mr:0911-felix-et-regula` | * | CH | dies_natalis |  |
 | 11 | 3 | `mr:0911-paphnutius` |  | EG | commemoratio |  |
 | 11 | 4 | `mr:0911-patiens` |  | FR | dies_natalis |  |
-| 11 | 5 | `mr:0911-sacerdotis` |  | FR | dies_natalis |  |
+| 11 | 5 | `mr:0911-sacerdos` |  | FR | dies_natalis |  |
 | 11 | 6 | `mr:0911-daniel` | * | GB | dies_natalis |  |
 | 11 | 7 | `mr:0911-adelphius` | * | FR | dies_natalis |  |
 | 11 | 8 | `mr:0911-leudinus` | * | FR | dies_natalis |  |
@@ -190,7 +190,7 @@
 | 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  |
 | 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  |
 | 14 | 4 | `mr:0914-maternus` |  | DE | dies_natalis |  |
-| 14 | 5 | `mr:0914-ioannes-chrysostomi` |  | TR | dies_natalis |  |
+| 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  |
 | 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |
 | 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  |
@@ -224,7 +224,7 @@
 | 16 | 9 | `mr:0916-editha` |  | GB | dies_natalis |  |
 | 16 | 10 | `mr:0916-victor-iii` | * | IT | dies_natalis |  |
 | 16 | 11 | `mr:0916-vitalis` | * | FR | dies_natalis |  |
-| 16 | 12 | `mr:0916-martinus-sacerdotis` | * | ES | dies_natalis |  |
+| 16 | 12 | `mr:0916-martinus-sacerdos` | * | ES | dies_natalis |  |
 | 16 | 13 | `mr:0916-ludovicus-aleman` | * | FR | dies_natalis |  |
 | 16 | 14 | `mr:0916-dominicus-shobioye-et-michael-timonoya` | * | JP | dies_natalis |  |
 | 16 | 15 | `mr:0916-ioannes-macias` |  | PE | dies_natalis |  |
@@ -248,7 +248,7 @@
 | 17 | 15 | `mr:0917-sigismundus-sajna` | * | PL | dies_natalis |  |
 | 18 | 1 | `mr:0918-oceanus` |  | TR | dies_natalis |  |
 | 18 | 2 | `mr:0918-ariadna` |  | TR | dies_natalis |  |
-| 18 | 3 | `mr:0918-ferreolus-galliae-viennensi` |  | FR | dies_natalis |  |
+| 18 | 3 | `mr:0918-ferreolus-viennensis` |  | FR | dies_natalis |  |
 | 18 | 4 | `mr:0918-eustorgius` |  | IT | dies_natalis |  |
 | 18 | 5 | `mr:0918-senarius` | * | FR | dies_natalis |  |
 | 18 | 6 | `mr:0918-ferreolus-lemovici` | * | FR | dies_natalis |  |

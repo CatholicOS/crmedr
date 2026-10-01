@@ -66,7 +66,7 @@
 | 5 | 6 | `mr:0505-nicetius` |  | FR | dies_natalis |  |
 | 5 | 7 | `mr:0505-geruntius` |  | IT | dies_natalis |  |
 | 5 | 8 | `mr:0505-maurontus` | * | FR | dies_natalis |  |
-| 5 | 9 | `mr:0505-sacerdotis` |  | FR | dies_natalis |  |
+| 5 | 9 | `mr:0505-sacerdos` |  | FR | dies_natalis |  |
 | 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis |  |
 | 5 | 11 | `mr:0505-leo` | * | IT | dies_natalis |  |
 | 5 | 12 | `mr:0505-avertinus` | * | FR | dies_natalis |  |
@@ -285,7 +285,7 @@
 | 22 | 7 | `mr:0522-lupus` | * | FR | dies_natalis |  |
 | 22 | 8 | `mr:0522-ioannes` | * | IT | dies_natalis |  |
 | 22 | 9 | `mr:0522-atto` |  | IT | dies_natalis |  |
-| 22 | 10 | `mr:0522-humilitatis` | * | IT | dies_natalis |  |
+| 22 | 10 | `mr:0522-humilitas` | * | IT | dies_natalis |  |
 | 22 | 11 | `mr:0522-ioannes-forest` | * | GB | dies_natalis |  |
 | 22 | 12 | `mr:0522-petrus-ab-assumptione` | * | JP | dies_natalis |  |
 | 22 | 13 | `mr:0522-matthias-de-arima` | * | JP | dies_natalis |  |

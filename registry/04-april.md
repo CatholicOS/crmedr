@@ -10,7 +10,7 @@
 | 1 | 4 | `mr:0401-valericus` |  | FR | dies_natalis |  |
 | 1 | 5 | `mr:0401-celsus` |  | IE | dies_natalis |  |
 | 1 | 6 | `mr:0401-hugo-gratianopoli` |  | FR | dies_natalis |  |
-| 1 | 7 | `mr:0401-hugo-cisterciensi-bonae` | * | FR | dies_natalis |  |
+| 1 | 7 | `mr:0401-hugo-bonaevallensis` | * | FR | dies_natalis |  |
 | 1 | 8 | `mr:0401-gilbertus` | * | GB | dies_natalis |  |
 | 1 | 9 | `mr:0401-ioannes-bretton` | * | GB | dies_natalis |  |
 | 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  |
@@ -68,7 +68,7 @@
 | 6 | 4 | `mr:0406-winebaldus` | * | FR | dies_natalis |  |
 | 6 | 5 | `mr:0406-prudentius` | * | FR | dies_natalis |  |
 | 6 | 6 | `mr:0406-methodius` |  | CZ | dies_natalis |  |
-| 6 | 7 | `mr:0406-notkerus-balbuli` | * | CH | dies_natalis |  |
+| 6 | 7 | `mr:0406-notkerus-balbulus` | * | CH | dies_natalis |  |
 | 6 | 8 | `mr:0406-philaretus` | * | IT | dies_natalis |  |
 | 6 | 9 | `mr:0406-gulielmus` |  | DK | dies_natalis |  |
 | 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis |  |
@@ -153,7 +153,7 @@
 | 12 | 12 | `mr:0412-iosephus-moscati` |  | IT | dies_natalis |  |
 | 12 | 13 | `mr:0412-david-uribe` |  | MX | dies_natalis |  |
 | 13 | (1) | `mr:0413-martinus-i` |  | TR | dies_natalis |  |
-| 13 | 2 | `mr:0413-carpus-et-thyatirensis` |  | TR | dies_natalis |  |
+| 13 | 2 | `mr:0413-carpus-et-socii` |  | TR | dies_natalis |  |
 | 13 | 3 | `mr:0413-ursus` |  | IT | dies_natalis |  |
 | 13 | 4 | `mr:0413-hermenegildus` |  | ES | dies_natalis |  |
 | 13 | 5 | `mr:0413-ida-boloniensis` | * | FR | dies_natalis |  |
@@ -207,7 +207,7 @@
 | 17 | 7 | `mr:0417-donnanus` | * | GB | dies_natalis |  |
 | 17 | 8 | `mr:0417-elias` |  | ES | dies_natalis |  |
 | 17 | 9 | `mr:0417-robertus-casae` |  | FR | dies_natalis |  |
-| 17 | 10 | `mr:0417-robertus-molismensi` |  | FR | dies_natalis |  |
+| 17 | 10 | `mr:0417-robertus-molismensis` |  | FR | dies_natalis |  |
 | 17 | 11 | `mr:0417-iacobus-de-cerqueto` | * | IT | dies_natalis |  |
 | 17 | 12 | `mr:0417-clara-gambacorti` | * | IT | dies_natalis |  |
 | 17 | 13 | `mr:0417-maria-anna-a-iesu-navarro-de-guevara` | * | ES | dies_natalis |  |
@@ -297,13 +297,13 @@
 | 24 | 7 | `mr:0424-mellitus` |  | GB | dies_natalis |  |
 | 24 | 8 | `mr:0424-wilfridus` |  | GB | dies_natalis |  |
 | 24 | 9 | `mr:0424-egbertus` |  | GB | dies_natalis |  |
-| 24 | 10 | `mr:0424-gulielmus-firmati` | * | FR | dies_natalis |  |
+| 24 | 10 | `mr:0424-gulielmus-firmatus` | * | FR | dies_natalis |  |
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia-pelletier` |  | FR | dies_natalis |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  |
 | 25 | (1) | `mr:0425-marcus` |  | IL | dies_natalis |  |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |
-| 25 | 3 | `mr:0425-pasicratis-et-valentio` |  | BG | dies_natalis |  |
+| 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis |  |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR | dies_natalis |  |
 | 25 | 5 | `mr:0425-stephanus` |  | TR | dies_natalis |  |
 | 25 | 6 | `mr:0425-clarentius` |  | FR | dies_natalis |  |
@@ -317,7 +317,7 @@
 | 26 | 2 | `mr:0426-primitivus` |  | IT | dies_natalis |  |
 | 26 | 3 | `mr:0426-basileus` |  | TR | dies_natalis |  |
 | 26 | 4 | `mr:0426-richarius` |  | FR | dies_natalis |  |
-| 26 | 5 | `mr:0426-paschasius-radberti` |  | FR | dies_natalis |  |
+| 26 | 5 | `mr:0426-paschasius-radbertus` |  | FR | dies_natalis |  |
 | 26 | 6 | `mr:0426-gulielmus-et-peregrinus` | * | IT | dies_natalis |  |
 | 26 | 7 | `mr:0426-dominicus-et-gregorius` | * | ES | dies_natalis |  |
 | 26 | 8 | `mr:0426-stephanus` | * | RU | depositio |  |

@@ -203,7 +203,7 @@
 | 15 | 11 | `mr:1115-hugo-faringdon` | * | GB | dies_natalis |  |
 | 15 | 12 | `mr:1115-richardus-whiting` | * | GB | dies_natalis |  |
 | 15 | 13 | `mr:1115-lucia-broccadelli` | * | IT | dies_natalis |  |
-| 15 | 14 | `mr:1115-caius-coreani` | * | JP | dies_natalis |  |
+| 15 | 14 | `mr:1115-caius-coreanus` | * | JP | dies_natalis |  |
 | 15 | 15 | `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` |  | PY | dies_natalis |  |
 | 15 | 16 | `mr:1115-iosephus-pignatelli` |  | IT | dies_natalis |  |
 | 15 | 17 | `mr:1115-iosephus-mkasa-balikuddembe` |  | UG | dies_natalis |  |
@@ -267,7 +267,7 @@
 | 20 | 6 | `mr:1120-dorus` | * | IT | dies_natalis |  |
 | 20 | 7 | `mr:1120-silvester` |  | FR | dies_natalis |  |
 | 20 | 8 | `mr:1120-hippolytus` | * | FR | dies_natalis |  |
-| 20 | 9 | `mr:1120-gregorius-decapolitani` |  | TR | dies_natalis |  |
+| 20 | 9 | `mr:1120-gregorius-decapolitanus` |  | TR | dies_natalis |  |
 | 20 | 10 | `mr:1120-edmundus` |  | GB | dies_natalis |  |
 | 20 | 11 | `mr:1120-bernwardus` |  | DE | dies_natalis |  |
 | 20 | 12 | `mr:1120-cyprianus` | * | IT | dies_natalis |  |
@@ -359,10 +359,10 @@
 | 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  |
 | 27 | 15 | `mr:1127-bronislaus-kostowski` | * | DE | dies_natalis |  |
 | 28 | 1 | `mr:1128-irenarchus` |  | TR | dies_natalis |  |
-| 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitani` |  | TN | commemoratio |  |
+| 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitanus` |  | TN | commemoratio |  |
 | 28 | 3 | `mr:1128-stephanus` |  | TR | dies_natalis |  |
 | 28 | 4 | `mr:1128-theodora` | * | IT | dies_natalis |  |
-| 28 | 5 | `mr:1128-iacobus-piceni` |  | IT | depositio |  |
+| 28 | 5 | `mr:1128-iacobus-picenus` |  | IT | depositio |  |
 | 28 | 6 | `mr:1128-iacobus-thomson` | * | GB | dies_natalis |  |
 | 28 | 7 | `mr:1128-andreas-tran-van-trong` |  | VN | dies_natalis |  |
 | 28 | 8 | `mr:1128-ioannes-iesu-adradas-gonzalo-et-socii` | * | ES | dies_natalis |  |

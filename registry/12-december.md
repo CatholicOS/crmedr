@@ -34,7 +34,7 @@
 | 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB | dies_natalis |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |
-| 4 | (1) | `mr:1204-ioannes-damasceni` |  | IL | dies_natalis |  |
+| 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis |  |
 | 4 | 2 | `mr:1204-barbara` |  | TR | commemoratio |  |
 | 4 | 3 | `mr:1204-heracla` |  | EG | dies_natalis |  |
 | 4 | 4 | `mr:1204-meletius` |  | TR | dies_natalis |  |
@@ -119,7 +119,7 @@
 | 11 | 11 | `mr:1211-maria-a-columna-villalonga-villalba` | * | ES | dies_natalis |  |
 | 11 | 12 | `mr:1211-mirabilia-a-iesu-pidal-y-chico-de-guzman` |  | ES | dies_natalis |  |
 | 12 | (1) | `mr:1212-maria-de-guadalupe` |  | MX | celebratio |  |
-| 12 | 2 | `mr:1212-alexandrini-epimachi-et-alexander` |  | EG | commemoratio |  |
+| 12 | 2 | `mr:1212-epimachus-et-alexander` |  | EG | commemoratio |  |
 | 12 | 3 | `mr:1212-spyridon` |  | CY | dies_natalis |  |
 | 12 | 4 | `mr:1212-finnianus` | * | IE | dies_natalis |  |
 | 12 | 5 | `mr:1212-corentinus` | * | FR | dies_natalis |  |

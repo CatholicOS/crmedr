@@ -149,6 +149,43 @@ ID_CORRECTIONS = {
     "mr:0320-sabas": "mr:0320-viginti-monachi-palaestina",
     # Over-latinized surname: Bl. Francesco Patrizi (#25).
     "mr:0526-franciscus-patrizus": "mr:0526-franciscus-patrizi",
+    # #33: slugs coined from a Latin genitive, a misread byname or a truncated name;
+    # the slug is the subject's nominative lemma (rule 1), a papal ordinal as a
+    # Roman numeral, an anonymous group by rule 8.
+    "mr:0406-notkerus-balbuli": "mr:0406-notkerus-balbulus",
+    "mr:0727-dormientium-ephesi": "mr:0727-septem-dormientes-ephesi",
+    "mr:0413-carpus-et-thyatirensis": "mr:0413-carpus-et-socii",
+    "mr:0724-bor-et-gleb": "mr:0724-boris-et-gleb",
+    "mr:0110-petrus-urseoli": "mr:0110-petrus-urseolus",
+    "mr:0125-arthematis": "mr:0125-arthemas",
+    "mr:0129-gilda-sapientis": "mr:0129-gilda-sapiens",
+    "mr:0226-pietatis-a-cruce-ortiz-real": "mr:0226-pietas-a-cruce-ortiz-real",
+    "mr:0307-paulus-simplicis": "mr:0307-paulus-simplex",
+    "mr:0424-gulielmus-firmati": "mr:0424-gulielmus-firmatus",
+    "mr:0425-pasicratis-et-valentio": "mr:0425-pasicrates-et-valentio",
+    "mr:0426-paschasius-radberti": "mr:0426-paschasius-radbertus",
+    "mr:0505-sacerdotis": "mr:0505-sacerdos",
+    "mr:0522-humilitatis": "mr:0522-humilitas",
+    "mr:0603-ioannes-vigesimi-iii": "mr:0603-ioannes-xxiii",
+    "mr:0705-athanasius-hierosolymitani": "mr:0705-athanasius-hierosolymitanus",
+    "mr:0712-ioannes-gualberti": "mr:0712-ioannes-gualbertus",
+    "mr:0713-myropis": "mr:0713-myrope",
+    "mr:0713-ludovicus-armandi-iosephus-adam": "mr:0713-ludovicus-armandus-iosephus-adam",
+    "mr:0828-carolus-arnaldi-hanus": "mr:0828-carolus-arnaldus-hanus",
+    "mr:0831-raymundus-nonnati": "mr:0831-raymundus-nonnatus",
+    "mr:0904-caletricis": "mr:0904-caletricus",
+    "mr:0911-sacerdotis": "mr:0911-sacerdos",
+    "mr:0914-ioannes-chrysostomi": "mr:0914-ioannes-chrysostomus",
+    "mr:0916-martinus-sacerdotis": "mr:0916-martinus-sacerdos",
+    "mr:1115-caius-coreani": "mr:1115-caius-coreanus",
+    "mr:1120-gregorius-decapolitani": "mr:1120-gregorius-decapolitanus",
+    "mr:1128-papinianus-vitensis-et-mansuetus-urusitani": "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus",
+    "mr:1128-iacobus-piceni": "mr:1128-iacobus-picenus",
+    "mr:1204-ioannes-damasceni": "mr:1204-ioannes-damascenus",
+    "mr:1212-alexandrini-epimachi-et-alexander": "mr:1212-epimachus-et-alexander",
+    "mr:0417-robertus-molismensi": "mr:0417-robertus-molismensis",
+    "mr:0918-ferreolus-galliae-viennensi": "mr:0918-ferreolus-viennensis",
+    "mr:0401-hugo-cisterciensi-bonae": "mr:0401-hugo-bonaevallensis",
     # Same place-name-lead bug, but the true subject already had a (wrongly)
     # deprecated ID at the same day: Postel (d. 1846) and Hildegard both have
     # 2004 elogia, so they are current, not attested-only-in-history. The
