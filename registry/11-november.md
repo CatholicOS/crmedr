@@ -384,7 +384,7 @@
 | 30 | 4 | `mr:1130-galganus-guidotti` |  | IT | dies_natalis |  |
 | 30 | 5 | `mr:1130-ioannes-de-vercellis-garbella` | * | FR | dies_natalis |  |
 | 30 | 6 | `mr:1130-fridericus` | * | DE | dies_natalis |  |
-| 30 | 7 | `mr:1130-stephanus-fanus` |  | GB | dies_natalis |  |
+| 30 | 7 | `mr:1130-cuthbertus-mayne` |  | GB | dies_natalis |  |
 | 30 | 8 | `mr:1130-alexander-crow` | * | GB | dies_natalis |  |
 | 30 | 9 | `mr:1130-thaddaeus-liu-ruiting` |  | CN | dies_natalis |  |
 | 30 | 10 | `mr:1130-iosephus-marchand` |  | VN | dies_natalis |  |

@@ -287,6 +287,14 @@ corrected on extraction to mr:0331-guido — the elogium's first-named subject i
 Guido, abbot; "Domninus" comes from the place name (Burgi Sancti Domníni, Borgo San
 Donnino, today Fidenza). No collision on the day.
 
+**Slug correction (applied, October 2026, #20)**: the workbook ID
+mr:1130-stephanus-fanus (11/30) is corrected on extraction to mr:1130-cuthbertus-mayne.
+The slug had been coined from the place, "Sancti Stephani Fanum" (Launceston), not from
+the first-named subject, St Cuthbert Mayne; surnames are not latinized. The `la` and
+`en` subjects, which had been derived from the bad slug, are corrected too. As with the
+earlier slug fixes (#5) this is a rename, not a deprecation. No collision on the day;
+the only other Cuthbert is mr:0320-cuthbertus.
+
 ## Country-code corrections (September 2026)
 
 `country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the

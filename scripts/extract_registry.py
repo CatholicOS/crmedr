@@ -111,6 +111,9 @@ ID_CORRECTIONS = {
     "mr:0928-felix-de-codines": "mr:0928-franciscus-xaverius-ponsa-casallarch",
     "mr:1025-antonius": "mr:1025-thaddaeus-machar",
     "mr:1101-sepulcrus": "mr:1101-rainerius-aretinus",
+    # "Sancti Stephani Fanum" is Launceston; the subject is St Cuthbert Mayne
+    # (surnames are not latinized).
+    "mr:1130-stephanus-fanus": "mr:1130-cuthbertus-mayne",
     # Same place-name-lead bug, but the true subject already had a (wrongly)
     # deprecated ID at the same day: Postel (d. 1846) and Hildegard both have
     # 2004 elogia, so they are current, not attested-only-in-history. The
