@@ -775,6 +775,12 @@ intended:
 - Latin editio altera, September 27, entry 11\* (mr:0927-francisca-xaveria-fenollosa-alcayna):
   "betárum mártyrum" for *beatárum* (the subjects are women), verified on the page
   image and in its OCR layer.
+- Latin editio altera and Italian (CEI) edition, October 4, entry 8\*
+  (mr:1004-alaphridus-pellicer-munoz), also inside the quoted place designation
+  (`places[].la` and `places[].it` keep the printed form): "Bellrreguart" for
+  *Bellreguart* in the Latin (the Spanish name) and for *Bellreguard* in the Italian
+  (the Valencian, official name, as in the English translation); the CEI edition
+  copied the Latin typo.
 - Italian (CEI) edition, October 13 (mr:1013-comganus): "desposizione" for
   *deposizione*.
 - Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for

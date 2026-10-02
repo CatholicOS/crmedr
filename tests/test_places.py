@@ -259,7 +259,8 @@ class MisprintTest(unittest.TestCase):
         self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
         self.assertEqual({r["printed"] for r in records},
                          {"betárum", "desposizione", "comemorazione", "Mel", "nell territorio",
-                          "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente"})
+                          "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
+                          "Bellrreguart"})
 
 
 class ItalianPhraseTest(unittest.TestCase):
