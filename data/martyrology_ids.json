@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6265,
+  "entry_count": 6264,
   "current_count": 4640,
-  "deprecated_count": 1625,
+  "deprecated_count": 1624,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -81540,13 +81540,14 @@
       "country": "IT"
     },
     {
-      "id": "mr:0504-triginta-martyres-inmetallo",
+      "id": "mr:0504-triginta-novem-martyres-phaenonis",
       "month": 5,
       "day": 4,
       "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": "JO"
+      "country": "JO",
+      "note": "The 1749 and 1914 editions print the thirty-nine martyrs of the mines of Phaeno as a eulogy of their own, after that of Silvanus of Gaza; the 2004 edition commemorates them together with him in mr:0504-silvanus-et-socii."
     },
     {
       "id": "mr:0504-paulinus",
@@ -81601,18 +81602,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
-    },
-    {
-      "id": "mr:0504-triginta-novem-martyres",
-      "month": 5,
-      "day": 4,
-      "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1914_en_unofficial",
-      "country": null,
-      "same_eulogy": [
-        "mr:0523-martyru"
-      ]
     },
     {
       "id": "mr:0505-pius-quintus",
@@ -82431,16 +82420,13 @@
       "country": "ES"
     },
     {
-      "id": "mr:0523-martyru",
+      "id": "mr:0523-quinctianus-et-socii",
       "month": 5,
       "day": 23,
       "entry": 4,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": null,
-      "same_eulogy": [
-        "mr:0504-triginta-novem-martyres"
-      ]
+      "country": null
     },
     {
       "id": "mr:0523-mercurialis",
