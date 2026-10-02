@@ -431,6 +431,10 @@ ID_CORRECTIONS = {
     "mr:1119-mulieres-virgines-viduae-quadraginta-martyres-heracleae": "mr:1119-quadraginta-martyres-heracleae",
     "mr:1206-martyres-africa": "mr:1206-martyres-africae",
     "mr:1217-quinquaginta-milites-eleutheropoli": "mr:1217-quinquaginta-milites-eleutheropolis",
+    # #47: St Eleutherius of Tournai is told apart from the other Eleutherii of
+    # February 20 (Constantinople and Persia, deprecated IDs of the 1749 edition) by
+    # his see. Kept in sync with CatholicOS/martyrology-texts.
+    "mr:0220-eleutherius": "mr:0220-eleutherius-tornaci",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

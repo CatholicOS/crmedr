@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6063,
+  "entry_count": 6064,
   "current_count": 4640,
-  "deprecated_count": 1423,
+  "deprecated_count": 1424,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -10507,7 +10507,7 @@
       ]
     },
     {
-      "id": "mr:0220-eleutherius",
+      "id": "mr:0220-eleutherius-tornaci",
       "month": 2,
       "day": 20,
       "entry": 4,
@@ -78130,13 +78130,23 @@
       "country": "CY"
     },
     {
-      "id": "mr:0220-eleutherius-pe",
+      "id": "mr:0220-eleutherius-constantinopoli",
+      "month": 2,
+      "day": 20,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
+      "id": "mr:0220-eleutherius-et-socii",
       "month": 2,
       "day": 20,
       "entry": 3,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": "IR"
+      "country": "IR",
+      "note": "The 1749 edition names Eleutherius, bishop, and 128 others in Persia on February 20; probably the eulogy of Sadoth, bishop, and 128 companions (mr:0218-sadoth-et-socii): same place, king (Sapor), number and refusal to adore the sun (#47)."
     },
     {
       "id": "mr:0220-potamius-et-nemesius",
