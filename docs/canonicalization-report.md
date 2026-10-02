@@ -794,6 +794,15 @@ A record holds the misprinted word, or the shortest phrase of up to three words 
 makes it unique in the text ("un Inghilterra"); it occurs exactly once there, as whole
 words.
 
+**Duplicated entries (verified)**, recorded under `duplicated_entries` in the same
+file: an edition prints a whole eulogy a second time on another day. The copy has no
+identity of its own and is left out of the texts and the registry; the record names
+the eulogy, the edition, the day of the copy and the numbered entry it precedes.
+- Italian (CEI) edition, April 6 (p. 305): the drop-cap eulogy of St Vincent Ferrer
+  (mr:0405-vincentius-ferrer, April 5) is repeated word for word as an unnumbered
+  header before entry 1. April 6 is numbered from 1 as usual, so its numbering is
+  unaffected.
+
 ### Gazetteer (October 2026)
 
 Each distinct place designation (the `la` of `data/places.json`) is resolved once

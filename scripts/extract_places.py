@@ -73,6 +73,9 @@ MISPRINT_KEYS = {"id", "edition", "printed", "intended", "verified"}
 # A misprint is recorded as the misprinted word, or as the shortest phrase (up
 # to three words) that makes it unique in the text ("un Inghilterra").
 MISPRINT_MAX_WORDS = 3
+# A whole eulogy printed a second time on another day (an entry-level print error):
+# the duplicated eulogy's ID, the edition, and where the copy is printed.
+DUPLICATED_ENTRY_KEYS = {"id", "edition", "month", "day", "before_entry", "verified"}
 
 
 def _base(c):
@@ -343,6 +346,48 @@ def load_misprints(repo_root):
         return json.load(f)["misprints"]
 
 
+def load_duplicated_entries(repo_root):
+    """Eulogies a printed edition repeats on another day (data/misprints.json)."""
+    path = repo_root / "data" / "misprints.json"
+    if not path.exists():
+        return []
+    with open(path, encoding="utf-8") as f:
+        return json.load(f).get("duplicated_entries", [])
+
+
+def validate_duplicated_entries(records, entries, texts_by_edition):
+    """Each record names a current eulogy present in the edition's texts under its
+    own day, and a printed position on another day within that day's numbering."""
+    errors = []
+    current = {e["id"]: e for e in entries if not e.get("deprecated")}
+    for r in records:
+        if set(r) != DUPLICATED_ENTRY_KEYS:
+            errors.append(f"duplicated-entry record keys must be {sorted(DUPLICATED_ENTRY_KEYS)}: {sorted(r)}")
+            continue
+        e = current.get(r["id"])
+        if e is None:
+            errors.append(f"{r['id']}: not a current ID")
+            continue
+        if r["edition"] not in texts_by_edition:
+            errors.append(f"{r['id']}: unknown edition {r['edition']!r}")
+            continue
+        if r["id"] not in texts_by_edition[r["edition"]]:
+            errors.append(f"{r['id']}: no text in {r['edition']}")
+        if (r["month"], r["day"]) == (e["month"], e["day"]):
+            errors.append(f"{r['id']}: the copy must be printed on another day than the eulogy's own")
+            continue
+        numbered = [x for x in current.values()
+                    if (x["month"], x["day"]) == (r["month"], r["day"]) and not x.get("unnumbered")]
+        if not numbered:
+            errors.append(f"{r['id']}: no entries on {r['month']}/{r['day']}")
+        elif not isinstance(r["before_entry"], int) or not 1 <= r["before_entry"] <= len(numbered) + 1:
+            errors.append(f"{r['id']}: before_entry must be 1 to {len(numbered) + 1} on {r['month']}/{r['day']}")
+    keys = [(r.get("id"), r.get("edition")) for r in records]
+    if keys != sorted(keys, key=lambda k: (str(k[0]), str(k[1]))):
+        errors.append("duplicated-entry records must be sorted by id, then edition")
+    return errors
+
+
 def validate_misprints(misprints, texts_by_edition, current_ids):
     errors = []
     for r in misprints:
@@ -581,6 +626,8 @@ def main():
     texts_it = load_texts(texts_repo, EDITION_IT)
     errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it},
                                 {m for m, _, _ in order})
+    errors += validate_duplicated_entries(load_duplicated_entries(repo_root), entries,
+                                          {EDITION_LA: texts, EDITION_IT: texts_it})
     assert not errors, "invalid data/misprints.json:\n" + "\n".join(errors)
     stop_words = STOP_WORDS | misprint_stop_words(misprints, EDITION_LA, STOP_WORDS)
     stop_words_it = STOP_WORDS_IT | misprint_stop_words(misprints, EDITION_IT, STOP_WORDS_IT)
