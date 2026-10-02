@@ -988,9 +988,9 @@ The remaining **1,219 elogia with no identified counterpart in the editio altera
 received coined canonical IDs with `deprecated: true`**, listed in
 `data/deprecated_ids.json` and merged into the registry. A subsequent alignment of
 the public-domain **1914 unofficial English edition** coined a further **225**
-deprecated IDs (`attested_in: martyrologium_romanum_1914_en_unofficial`); the registry
-now holds **6,082** entries (`entry_count` = `current_count` + `deprecated_count`) —
-**4,639 current + 1,443 deprecated**. Their `MMDD` anchors the placement in the
+deprecated IDs (`attested_in: martyrologium_romanum_1914_en_unofficial`). After later
+corrections (#25, #44, #45) the registry holds **6,063** entries (`entry_count` =
+`current_count` + `deprecated_count`) — **4,640 current + 1,423 deprecated**. Their `MMDD` anchors the placement in the
 edition named by `attested_in`. The Latin subject for every ID (current and
 deprecated) lives in `i18n/la.json`, the single source of truth for subjects;
 each deprecated entry additionally carries a `country` (ISO 3166-1 alpha-2 of the

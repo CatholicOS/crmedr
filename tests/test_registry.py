@@ -156,15 +156,23 @@ class PlaceLeadCorrections25Test(unittest.TestCase):
 class DeprecatedSameEulogy45Test(unittest.TestCase):
     """#45: a deprecated ID that is the same eulogy as a current ID is removed."""
 
+    # Kept deprecated: a separate eulogy, and same-day homonyms (see the report).
+    KEPT = {"mr:0827-rufus-et-carpophorus", "mr:0124-timotheus", "mr:0513-maria",
+            "mr:0629-maria", "mr:0917-franciscus"}
+
     def test_registry(self):
         root = Path(__file__).resolve().parent.parent
         entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
-        for gone, current in (("mr:0211-maria", "mr:0211-maria-de-lourdes"),
-                              ("mr:0731-ignatius", "mr:0731-ignatius-de-loyola"),
-                              ("mr:0615-vitus-et-socii", "mr:0615-vitus")):
+        # The removal mapping is the report's #45 table.
+        report = (root / "docs" / "canonicalization-report.md").read_text(encoding="utf-8")
+        table = report.split("| Removed deprecated ID | Current ID |", 1)[1].split("\n\n", 1)[0]
+        mapping = re.findall(r"^\| (mr:\S+) \| (mr:\S+) \|$", table, re.M)
+        self.assertEqual(len(mapping), 21)
+        for gone, current in mapping:
             self.assertNotIn(gone, entries)
             self.assertFalse(entries[current].get("deprecated"), current)
-        self.assertTrue(entries["mr:0827-rufus-et-carpophorus"]["deprecated"])
+        for mr_id in self.KEPT:
+            self.assertTrue(entries[mr_id]["deprecated"], mr_id)
 
 
 class PerEditionPlacementsTest(unittest.TestCase):
