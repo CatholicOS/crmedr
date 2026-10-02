@@ -175,6 +175,21 @@ class DeprecatedSameEulogy45Test(unittest.TestCase):
             self.assertTrue(entries[mr_id]["deprecated"], mr_id)
 
 
+class February20Test(unittest.TestCase):
+    """#47: the Eleutherii of February 20."""
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        self.assertEqual(r.ID_CORRECTIONS["mr:0220-eleutherius"], "mr:0220-eleutherius-tornaci")
+        self.assertFalse(entries["mr:0220-eleutherius-tornaci"].get("deprecated"))
+        for gone in ("mr:0220-eleutherius", "mr:0220-eleutherius-pe"):
+            self.assertNotIn(gone, entries)
+        for dep in ("mr:0220-eleutherius-constantinopoli", "mr:0220-eleutherius-et-socii"):
+            self.assertTrue(entries[dep]["deprecated"], dep)
+        self.assertIn("mr:0218-sadoth-et-socii", entries["mr:0220-eleutherius-et-socii"]["note"])
+
+
 class PerEditionPlacementsTest(unittest.TestCase):
     """Per-edition differences from the main (Latin print) placement."""
 

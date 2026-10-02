@@ -244,7 +244,7 @@
 | 20 | 1 | `mr:0220-serapion` |  | EG | commemoratio |  |  |
 | 20 | 2 | `mr:0220-quinque-martyres-tyri` |  | LB | commemoratio |  |  |
 | 20 | 3 | `mr:0220-tyrannion` |  | TR | commemoratio |  |  |
-| 20 | 4 | `mr:0220-eleutherius` |  | BE | dies_natalis |  |  |
+| 20 | 4 | `mr:0220-eleutherius-tornaci` |  | BE | dies_natalis |  |  |
 | 20 | 5 | `mr:0220-eucherius` |  | BE | dies_natalis |  |  |
 | 20 | 6 | `mr:0220-leo` |  | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  |  |
