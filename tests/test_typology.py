@@ -210,3 +210,20 @@ class OutputTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class NoLatinTextTest(unittest.TestCase):
+    def test_twin_text_fills_in(self):
+        entries = [
+            {"id": "mr:0610-x", "month": 6, "day": 10, "same_eulogy": ["mr:1210-x"]},
+            {"id": "mr:1210-x", "month": 12, "day": 10, "same_eulogy": ["mr:0610-x"]},
+            {"id": "mr:0101-y", "month": 1, "day": 1},
+        ]
+        got = t.latin_texts(entries, {"mr:0610-x": "Augustae Taurinorum, beati X.", "mr:0101-y": "Romae."})
+        self.assertEqual(got["mr:1210-x"], "Augustae Taurinorum, beati X.")
+        self.assertEqual(got["mr:0101-y"], "Romae.")
+
+    def test_cei_only_eulogies_have_typology_overrides(self):
+        self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0712-proclus-et-hilarion"], "dies_natalis")
+        self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0825-eusebius-et-socii"], "depositio")
+        self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0709-maria-a-iesu-crucifixo-petkovic"], "dies_natalis")

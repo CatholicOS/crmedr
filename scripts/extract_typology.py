@@ -98,6 +98,11 @@ FEAST_IDS = {
 
 # Hand decisions that override the rules, one per line with the reason.
 TYPOLOGY_OVERRIDES = {
+    # Printed only in the CEI edition, so there is no Latin 2004 text to read the
+    # typology from; values as tagged from the former Latin texts.
+    "mr:0712-proclus-et-hilarion": "dies_natalis",
+    "mr:0825-eusebius-et-socii": "depositio",
+    "mr:0709-maria-a-iesu-crucifixo-petkovic": "dies_natalis",
     # Unnumbered lead memorials that open with the name, not "Memoria", so the
     # cross-reference from the dies natalis finds no candidate.
     "mr:0807-xystus-ii-et-socii": "celebratio",  # passio at 0806 ("memoria cras")
@@ -367,6 +372,20 @@ def load_texts(texts_repo, edition="martyrologium_romanum_2004"):
     return texts
 
 
+def latin_texts(entries, texts):
+    """The Latin 2004 texts, plus, for a current eulogy the Latin print files
+    under another day's ID, its `same_eulogy` twin's text."""
+    out = dict(texts)
+    for e in entries:
+        if e.get("deprecated") or e["id"] in out:
+            continue
+        for twin in e.get("same_eulogy", []):
+            if twin in texts:
+                out[e["id"]] = texts[twin]
+                break
+    return out
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
@@ -376,9 +395,11 @@ def main():
         entries = json.load(f)["entries"]
     current = {e["id"]: (e["month"], e["day"]) for e in entries if not e.get("deprecated")}
     deprecated = {e["id"] for e in entries if e.get("deprecated")}
-    texts = load_texts(texts_repo)
-    missing = sorted(set(current) - set(texts))
+    texts = latin_texts(entries, load_texts(texts_repo))
+    missing = sorted(set(current) - set(texts) - set(TYPOLOGY_OVERRIDES))
     assert not missing, f"no Latin 2004 text for: {missing}"
+    for mrid in set(current) - set(texts):
+        texts[mrid] = ""  # typology comes from TYPOLOGY_OVERRIDES
     result = build(current, texts, feast_ids=FEAST_IDS, overrides=TYPOLOGY_OVERRIDES)
     validate(result["typology"], set(current), deprecated,
              feast_ids=FEAST_IDS, overrides=TYPOLOGY_OVERRIDES)

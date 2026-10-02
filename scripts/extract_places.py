@@ -24,7 +24,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from extract_typology import RECOVERY, load_texts
+from extract_typology import RECOVERY, latin_texts, load_texts
 
 ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "ministry"]
 ROLE_OF_TYPOLOGY = {
@@ -312,23 +312,10 @@ LONG_LEAD_OK = {
 }
 
 
-# Print-only entries (no workbook entry number) and the slot they occupy in
-# the Latin print, so that back-references resolve in print order.
-PRINT_POSITION = {
-    "mr:0104-abrunculus": 2,
-    "mr:0610-marcus-antonius-durando": 9,
-}
-
-
-def print_order(entries, positions=PRINT_POSITION):
-    """(id, month, day) in print order. An entry with no number takes the
-    slot just before the entry currently numbered like its printed position;
-    an unknown one goes last in its day."""
-    def slot(e):
-        if e["entry"] is not None:
-            return e["entry"]
-        return positions[e["id"]] - 0.5 if e["id"] in positions else float("inf")
-    ordered = sorted(entries, key=lambda e: (e["month"], e["day"], slot(e)))
+def print_order(entries):
+    """(id, month, day) in print order; an entry with no number goes last in its day."""
+    ordered = sorted(entries, key=lambda e: (e["month"], e["day"],
+                                             e["entry"] if e["entry"] is not None else float("inf")))
     return [(e["id"], e["month"], e["day"]) for e in ordered]
 
 
@@ -624,6 +611,12 @@ def main():
             curated = json.load(f)
     texts = load_texts(texts_repo)
     texts_it = load_texts(texts_repo, EDITION_IT)
+    # The CEI files the June Durando's Italian text under mr:1210: give the
+    # June ID its same_eulogy twin's text.
+    texts_it = latin_texts(entries, texts_it)
+    # Places are read from the Latin 2004 text: a eulogy the Latin print lacks
+    # (printed only in the CEI) has none.
+    latin_order = [o for o in order if o[0] in texts]
     errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it},
                                 {m for m, _, _ in order})
     errors += validate_duplicated_entries(load_duplicated_entries(repo_root), entries,
@@ -631,9 +624,9 @@ def main():
     assert not errors, "invalid data/misprints.json:\n" + "\n".join(errors)
     stop_words = STOP_WORDS | misprint_stop_words(misprints, EDITION_LA, STOP_WORDS)
     stop_words_it = STOP_WORDS_IT | misprint_stop_words(misprints, EDITION_IT, STOP_WORDS_IT)
-    result = build(order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words,
+    result = build(latin_order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words,
                    texts_it=texts_it, stop_words_it=stop_words_it)
-    validate(result, texts, {m for m, _, _ in order}, deprecated, typology, curated,
+    validate(result, texts, {m for m, _, _ in latin_order}, deprecated, typology, curated,
              long_ok=LONG_LEAD_OK, texts_it=texts_it)
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")

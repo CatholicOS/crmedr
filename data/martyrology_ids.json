@@ -2,8 +2,8 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6083,
-  "current_count": 4639,
+  "entry_count": 6084,
+  "current_count": 4640,
   "deprecated_count": 1444,
   "entries": [
     {
@@ -734,10 +734,32 @@
       ]
     },
     {
-      "id": "mr:0104-gregorius",
+      "id": "mr:0104-abrunculus",
       "month": 1,
       "day": 4,
       "entry": 2,
+      "asterisk": true,
+      "country": "FR",
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "Arvérnæ in Aquitánia",
+          "source": "lead"
+        }
+      ],
+      "note": "Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition, from Mons. Barba's Word transcription, and from the digitized workbook.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "absent": true
+        }
+      }
+    },
+    {
+      "id": "mr:0104-gregorius",
+      "month": 1,
+      "day": 4,
+      "entry": 3,
       "asterisk": false,
       "country": "FR",
       "typology": "dies_natalis",
@@ -748,13 +770,18 @@
           "it": "A Digione in Burgundia, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 2
+        }
+      }
     },
     {
       "id": "mr:0104-ferreolus",
       "month": 1,
       "day": 4,
-      "entry": 3,
+      "entry": 4,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -766,13 +793,19 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 3,
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0104-rigomerus",
       "month": 1,
       "day": 4,
-      "entry": 4,
+      "entry": 5,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -784,13 +817,19 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 4,
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0104-rigobertus",
       "month": 1,
       "day": 4,
-      "entry": 5,
+      "entry": 6,
       "asterisk": false,
       "country": "FR",
       "typology": "dies_natalis",
@@ -801,13 +840,18 @@
           "it": "A Reims sempre in Neustria, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 5
+        }
+      }
     },
     {
       "id": "mr:0104-pharaildis",
       "month": 1,
       "day": 4,
-      "entry": 6,
+      "entry": 7,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -819,13 +863,19 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 6,
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0104-angela",
       "month": 1,
       "day": 4,
-      "entry": 7,
+      "entry": 8,
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
@@ -836,13 +886,18 @@
           "it": "A Foligno in Umbria",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 7
+        }
+      }
     },
     {
       "id": "mr:0104-christiana-menabuoi",
       "month": 1,
       "day": 4,
-      "entry": 8,
+      "entry": 9,
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
@@ -853,13 +908,18 @@
           "it": "A Santa Croce in Val d’Arno in Toscana",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 8
+        }
+      }
     },
     {
       "id": "mr:0104-thomas-plumtree",
       "month": 1,
       "day": 4,
-      "entry": 9,
+      "entry": 10,
       "asterisk": true,
       "country": "GB",
       "typology": "dies_natalis",
@@ -870,13 +930,18 @@
           "it": "A Durham in Inghilterra",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 9
+        }
+      }
     },
     {
       "id": "mr:0104-elisabeth-anna-seton",
       "month": 1,
       "day": 4,
-      "entry": 10,
+      "entry": 11,
       "asterisk": false,
       "country": "US",
       "typology": "dies_natalis",
@@ -887,30 +952,18 @@
           "it": "A Emmetsburg nel Maryland negli Stati Uniti d’America",
           "source": "lead"
         }
-      ]
-    },
-    {
-      "id": "mr:0104-abrunculus",
-      "month": 1,
-      "day": 4,
-      "entry": null,
-      "asterisk": true,
-      "country": "FR",
-      "typology": "dies_natalis",
-      "places": [
-        {
-          "role": "death",
-          "la": "Arvérnæ in Aquitánia",
-          "source": "lead"
-        }
       ],
-      "note": "Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition, from Mons. Barba's Word transcription, and from the digitized workbook."
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 10
+        }
+      }
     },
     {
       "id": "mr:0104-emmanuel-gonzalez-garcia",
       "month": 1,
       "day": 4,
-      "entry": null,
+      "entry": 12,
       "asterisk": true,
       "country": "ES",
       "typology": "dies_natalis",
@@ -922,7 +975,12 @@
           "source": "lead"
         }
       ],
-      "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition and in Mons. Barba's Word transcription; absent from the digitized workbook. Bl. Manuel González García was canonized in 2016: status change with no ID change."
+      "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition and in Mons. Barba's Word transcription; absent from the digitized workbook. Bl. Manuel González García was canonized in 2016: status change with no ID change.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 11
+        }
+      }
     },
     {
       "id": "mr:0105-syncletica",
@@ -4780,7 +4838,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (15*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (15*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0123-severianus-et-aquila",
@@ -15869,7 +15932,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:0323-methodius-dominicus-trcka",
@@ -23972,7 +24040,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0503-philippus-et-iacobus",
@@ -26005,7 +26078,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0512-ioanna",
@@ -28409,7 +28487,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0524-donatianus-et-rogatianus",
@@ -32155,27 +32238,10 @@
       ]
     },
     {
-      "id": "mr:0610-eduardus-poppe",
-      "month": 6,
-      "day": 10,
-      "entry": 9,
-      "asterisk": true,
-      "country": "BE",
-      "typology": "dies_natalis",
-      "places": [
-        {
-          "role": "death",
-          "la": "In civitáte Moerzeke-lez-Termonde prope Gandávum in Bélgio",
-          "it": "Nella città di Moerzeke-lez-Termonde vicino a Gand in Belgio",
-          "source": "lead"
-        }
-      ]
-    },
-    {
       "id": "mr:0610-marcus-antonius-durando",
       "month": 6,
       "day": 10,
-      "entry": null,
+      "entry": 9,
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
@@ -32187,7 +32253,37 @@
           "source": "lead"
         }
       ],
-      "note": "Entry 9* at June 10 in the Latin editio altera 2004 print (verified on the page scan); the Italian (CEI) edition and the digitized workbook place the elogium at December 10 (entry 9*)."
+      "note": "Entry 9* at June 10 in the Latin editio altera 2004 print (verified on the page scan); the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando).",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "absent": true
+        }
+      },
+      "same_eulogy": [
+        "mr:1210-marcus-antonius-durando"
+      ]
+    },
+    {
+      "id": "mr:0610-eduardus-poppe",
+      "month": 6,
+      "day": 10,
+      "entry": 10,
+      "asterisk": true,
+      "country": "BE",
+      "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "death",
+          "la": "In civitáte Moerzeke-lez-Termonde prope Gandávum in Bélgio",
+          "it": "Nella città di Moerzeke-lez-Termonde vicino a Gand in Belgio",
+          "source": "lead"
+        }
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 9
+        }
+      }
     },
     {
       "id": "mr:0611-barnabas",
@@ -32249,7 +32345,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0611-aleydis",
@@ -34592,7 +34693,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0624-theodgarus",
@@ -37767,15 +37873,15 @@
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
-      "places": [
-        {
-          "role": "death",
-          "la": "Romæ",
-          "it": "A Roma",
-          "source": "lead"
+      "note": "Entry 11* at July 9 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003.",
+      "editions": {
+        "martyrologium_romanum_2004": {
+          "absent": true
+        },
+        "martyrologium_romanum_2004_en_unofficial": {
+          "absent": true
         }
-      ],
-      "note": "Entry 11* at July 9 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003."
+      }
     },
     {
       "id": "mr:0710-felix-et-philippus",
@@ -38092,7 +38198,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0711-drostanus",
@@ -38272,15 +38383,15 @@
       "asterisk": false,
       "country": "TR",
       "typology": "dies_natalis",
-      "places": [
-        {
-          "role": "death",
-          "la": "Ancýræ in Galátia",
-          "it": "Ad Ankara in Galazia nell’odierna Turchia",
-          "source": "lead"
+      "note": "Entry 1 at July 12 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered.",
+      "editions": {
+        "martyrologium_romanum_2004": {
+          "absent": true
+        },
+        "martyrologium_romanum_2004_en_unofficial": {
+          "absent": true
         }
-      ],
-      "note": "Entry 1 at July 12 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered."
+      }
     },
     {
       "id": "mr:0712-fortunatus-et-hermagora",
@@ -40136,7 +40247,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0719-epaphra",
@@ -43132,7 +43248,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0730-mannis-guzman",
@@ -44016,7 +44137,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0802-petrus",
@@ -44944,7 +45070,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0807-iordanus-forzate",
@@ -46263,7 +46394,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:0812-victoria-diez-y-bustos-de-molina",
@@ -48682,7 +48818,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:0821-victoria-rasoamanarivo",
@@ -49432,21 +49573,21 @@
       "asterisk": false,
       "country": "IT",
       "typology": "depositio",
-      "places": [
-        {
-          "role": "burial",
-          "la": "Romæ via Aurélia miliário sexto",
-          "it": "A Roma, al sesto miglio della via Aurelia",
-          "source": "lead"
+      "note": "Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias.",
+      "editions": {
+        "martyrologium_romanum_2004": {
+          "absent": true
+        },
+        "martyrologium_romanum_2004_en_unofficial": {
+          "absent": true
         }
-      ],
-      "note": "Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias."
+      }
     },
     {
       "id": "mr:0825-genesius",
       "month": 8,
       "day": 25,
-      "entry": 4,
+      "entry": 3,
       "asterisk": false,
       "country": "FR",
       "typology": "dies_natalis",
@@ -49457,13 +49598,18 @@
           "it": "Ad Arles nella Provenza in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 4
+        }
+      }
     },
     {
       "id": "mr:0825-geruntius",
       "month": 8,
       "day": 25,
-      "entry": 5,
+      "entry": 4,
       "asterisk": false,
       "country": "ES",
       "typology": "dies_natalis",
@@ -49474,13 +49620,18 @@
           "it": "A Santiponce vicino a Siviglia nell’Andalusia in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 5
+        }
+      }
     },
     {
       "id": "mr:0825-severus",
       "month": 8,
       "day": 25,
-      "entry": 6,
+      "entry": 5,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -49491,13 +49642,18 @@
           "it": "Ad Agde nella Gallia narbonense, ora in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 6
+        }
+      }
     },
     {
       "id": "mr:0825-mena",
       "month": 8,
       "day": 25,
-      "entry": 7,
+      "entry": 6,
       "asterisk": false,
       "country": "TR",
       "typology": "dies_natalis",
@@ -49508,13 +49664,18 @@
           "it": "A Costantinopoli",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 7
+        }
+      }
     },
     {
       "id": "mr:0825-aredius",
       "month": 8,
       "day": 25,
-      "entry": 8,
+      "entry": 7,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -49525,13 +49686,18 @@
           "it": "Ad Attane nel territorio di Limoges in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 8
+        }
+      }
     },
     {
       "id": "mr:0825-gregorius",
       "month": 8,
       "day": 25,
-      "entry": 9,
+      "entry": 8,
       "asterisk": false,
       "country": "NL",
       "typology": "dies_natalis",
@@ -49542,13 +49708,18 @@
           "it": "A Utrecht in Austrasia, nel territorio dell’odierna Olanda",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 9
+        }
+      }
     },
     {
       "id": "mr:0825-thomas-cantelupe",
       "month": 8,
       "day": 25,
-      "entry": 10,
+      "entry": 9,
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
@@ -49559,13 +49730,18 @@
           "it": "Presso Montefiascone nel Lazio",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 10
+        }
+      }
     },
     {
       "id": "mr:0825-michael-carvalho-et-socii",
       "month": 8,
       "day": 25,
-      "entry": 11,
+      "entry": 10,
       "asterisk": true,
       "country": "JP",
       "typology": "dies_natalis",
@@ -49576,13 +49752,18 @@
           "it": "A Shimabara in Giappone",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 11
+        }
+      }
     },
     {
       "id": "mr:0825-paulus-ioannes-charles",
       "month": 8,
       "day": 25,
-      "entry": 12,
+      "entry": 11,
       "asterisk": true,
       "country": "FR",
       "typology": "dies_natalis",
@@ -49593,13 +49774,18 @@
           "it": "In una sordida galera ancorata al largo di Rochefort in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 12
+        }
+      }
     },
     {
       "id": "mr:0825-maria-a-transitu-iesu-sacramenti",
       "month": 8,
       "day": 25,
-      "entry": 13,
+      "entry": 12,
       "asterisk": true,
       "country": "AR",
       "typology": "dies_natalis",
@@ -49610,13 +49796,18 @@
           "it": "A Córdova in Argentina",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 13
+        }
+      }
     },
     {
       "id": "mr:0825-aloysius-urbano-lanaspa",
       "month": 8,
       "day": 25,
-      "entry": 14,
+      "entry": 13,
       "asterisk": true,
       "country": "ES",
       "typology": "dies_natalis",
@@ -49627,7 +49818,12 @@
           "it": "A Valencia in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 14
+        }
+      }
     },
     {
       "id": "mr:0826-melchisedech",
@@ -53383,7 +53579,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:0910-nemesius",
@@ -62862,7 +63063,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1021-maurontus",
@@ -63997,7 +64203,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1026-sigebaldus",
@@ -65536,7 +65747,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1103-papulus",
@@ -65656,7 +65872,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1103-ermengaudius",
@@ -68913,7 +69134,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1118-odo",
@@ -69110,7 +69336,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1119-simon",
@@ -71436,7 +71667,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:1201-agericus",
@@ -71805,7 +72041,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:1203-eduardus-coleman",
@@ -72989,10 +73230,31 @@
       ]
     },
     {
+      "id": "mr:1210-marcus-antonius-durando",
+      "month": 12,
+      "day": 10,
+      "entry": 9,
+      "asterisk": true,
+      "country": "IT",
+      "typology": "dies_natalis",
+      "note": "The CEI's placement (10 December, entry 9*) of the same eulogy the Latin print and the English edition give at 10 June (mr:0610-marcus-antonius-durando).",
+      "editions": {
+        "martyrologium_romanum_2004": {
+          "absent": true
+        },
+        "martyrologium_romanum_2004_en_unofficial": {
+          "absent": true
+        }
+      },
+      "same_eulogy": [
+        "mr:0610-marcus-antonius-durando"
+      ]
+    },
+    {
       "id": "mr:1210-gundisalvus-vines-masip",
       "month": 12,
       "day": 10,
-      "entry": 10,
+      "entry": 9,
       "asterisk": true,
       "country": "ES",
       "typology": "dies_natalis",
@@ -73003,13 +73265,18 @@
           "it": "Nel villaggio di Vallés nel territorio di Valencia in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 10
+        }
+      }
     },
     {
       "id": "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo",
       "month": 12,
       "day": 10,
-      "entry": 11,
+      "entry": 10,
       "asterisk": true,
       "country": "ES",
       "typology": "dies_natalis",
@@ -73020,7 +73287,12 @@
           "it": "Nel villaggio di Picadero de Paterna nello stesso territorio",
           "source": "lead"
         }
-      ]
+      ],
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "entry": 11
+        }
+      }
     },
     {
       "id": "mr:1211-damasus-i",
@@ -73390,7 +73662,12 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk."
+      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": true
+        }
+      }
     },
     {
       "id": "mr:1212-pius-bartosik",
@@ -73862,7 +74139,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1215-maria-victoria-fornari",
@@ -75928,7 +76210,12 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk."
+      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "editions": {
+        "martyrologium_romanum_2004_it_IT": {
+          "asterisk": false
+        }
+      }
     },
     {
       "id": "mr:1230-rainerius",

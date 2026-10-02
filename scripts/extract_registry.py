@@ -38,10 +38,6 @@ MONTH_NAMES_EN = [
 # well-known Latin form exists: "Miki" is a Japanese surname with no such form.
 ID_CORRECTIONS = {
     "mr:0206-paulus-mikus-et-socii": "mr:0206-paulus-miki-et-socii",
-    # The Latin editio altera 2004 places Bl. Marcantonio Durando at June 10
-    # (entry 9*); the Italian (CEI) edition places him at December 10 (entry
-    # 9*). The MMDD anchor follows the Latin print.
-    "mr:1210-marcus-antonius-durando": "mr:0610-marcus-antonius-durando",
     # The elogium's first-named subject is San Guido, abbot; "Domninus" comes
     # from the place name (Burgi Sancti Domnini, Borgo San Donnino, today
     # Fidenza). Rule 1: the slug is the first-named subject.
@@ -482,21 +478,19 @@ UNNUMBERED_LEADS = {
 # Placement overrides: the digitized workbook records the Italian (CEI)
 # placement, but the anchor edition (the Latin editio altera 2004 print)
 # places the elogium on a different day. Maps corrected ID -> (month, day,
-# entry, note). `entry` is None because the workbook has no row for the
-# anchor-edition day.
-PLACEMENT_OVERRIDES = {
-    "mr:0610-marcus-antonius-durando": (
-        6, 10, None,
-        "Entry 9* at June 10 in the Latin editio altera 2004 print (verified "
-        "on the page scan); the Italian (CEI) edition and the digitized "
-        "workbook place the elogium at December 10 (entry 9*).",
-    ),
-}
+# entry, note). None remain: a eulogy printed on different days in different
+# editions now has one ID per day (see SAME_EULOGY).
+PLACEMENT_OVERRIDES = {}
 
 # Entries present in the Italian (CEI) edition and the digitized workbook but
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
+    "mr:1210-marcus-antonius-durando": (
+        "The CEI's placement (10 December, entry 9*) of the same eulogy the "
+        "Latin print and the English edition give at 10 June "
+        "(mr:0610-marcus-antonius-durando)."
+    ),
     "mr:0712-proclus-et-hilarion": (
         "Entry 1 at July 12 in the Italian (CEI) edition; absent from the "
         "Latin editio altera 2004 print, whose July 12 numbering begins at 2 "
@@ -627,18 +621,19 @@ PRINT_ONLY_ENTRIES = [
         "id": "mr:0104-abrunculus",
         "month": 1,
         "day": 4,
-        "entry": None,
+        "entry": 2,
         "asterisk": True,
         "country": "FR",
         "note": "Entry 2* in the Latin editio altera 2004 print; absent from "
                 "the Italian (CEI) edition, from Mons. Barba's Word "
                 "transcription, and from the digitized workbook.",
+        "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
     {
         "id": "mr:0104-emmanuel-gonzalez-garcia",
         "month": 1,
         "day": 4,
-        "entry": None,
+        "entry": 12,
         "asterisk": True,
         "country": "ES",
         "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in "
@@ -646,8 +641,161 @@ PRINT_ONLY_ENTRIES = [
                 "transcription; absent from the digitized workbook. "
                 "Bl. Manuel González García was canonized in 2016: status "
                 "change with no ID change.",
+        "editions": {"martyrologium_romanum_2004_it_IT": {"entry": 11}},
+    },
+    {
+        "id": "mr:0610-marcus-antonius-durando",
+        "month": 6,
+        "day": 10,
+        "entry": 9,
+        "asterisk": True,
+        "country": "IT",
+        "note": "Entry 9* at June 10 in the Latin editio altera 2004 print "
+                "(verified on the page scan); the Italian (CEI) edition prints "
+                "the same eulogy at December 10, entry 9* "
+                "(mr:1210-marcus-antonius-durando).",
+        "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
 ]
+
+# The 2004-family editions. The registry's main placement is the Latin print;
+# `editions` records where another edition differs (see
+# docs/canonicalization-report.md, Per-edition placements).
+EDITION_LA = "martyrologium_romanum_2004"
+EDITION_IT = "martyrologium_romanum_2004_it_IT"
+EDITION_EN = "martyrologium_romanum_2004_en_unofficial"
+EDITIONS_2004 = (EDITION_LA, EDITION_IT, EDITION_EN)
+OVERRIDE_KEYS = {"entry", "asterisk", "unnumbered", "absent"}
+
+# The Latin print's entry number where it differs from the CEI's (= the
+# workbook's), verified on the print's text layer.
+LATIN_RENUMBERING = {
+    # January 4: Abrunculus (2*) is printed only in the Latin.
+    "mr:0104-gregorius": 3,
+    "mr:0104-ferreolus": 4,
+    "mr:0104-rigomerus": 5,
+    "mr:0104-rigobertus": 6,
+    "mr:0104-pharaildis": 7,
+    "mr:0104-angela": 8,
+    "mr:0104-christiana-menabuoi": 9,
+    "mr:0104-thomas-plumtree": 10,
+    "mr:0104-elisabeth-anna-seton": 11,
+    # June 10: Durando (9*) is printed only in the Latin.
+    "mr:0610-eduardus-poppe": 10,
+    # August 25: Eusebius and companions (CEI 3) is not in the Latin, which renumbers.
+    "mr:0825-genesius": 3,
+    "mr:0825-geruntius": 4,
+    "mr:0825-severus": 5,
+    "mr:0825-mena": 6,
+    "mr:0825-aredius": 7,
+    "mr:0825-gregorius": 8,
+    "mr:0825-thomas-cantelupe": 9,
+    "mr:0825-michael-carvalho-et-socii": 10,
+    "mr:0825-paulus-ioannes-charles": 11,
+    "mr:0825-maria-a-transitu-iesu-sacramenti": 12,
+    "mr:0825-aloysius-urbano-lanaspa": 13,
+    # December 10: Durando (CEI 9*) is not in the Latin, which renumbers.
+    "mr:1210-gundisalvus-vines-masip": 9,
+    "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo": 10,
+}
+
+# Eulogies printed only in the CEI edition (absent from the Latin print and
+# from the English translation of it).
+CEI_ONLY = {
+    "mr:0712-proclus-et-hilarion",
+    "mr:0825-eusebius-et-socii",
+    "mr:0709-maria-a-iesu-crucifixo-petkovic",
+    "mr:1210-marcus-antonius-durando",
+}
+
+# One eulogy printed on different days by different editions: one ID per day,
+# linked both ways as `same_eulogy`.
+SAME_EULOGY = {
+    "mr:0610-marcus-antonius-durando": "mr:1210-marcus-antonius-durando",
+}
+
+
+def edition_overrides(mr_id, *, entry, asterisk, cei_entry, cei_asterisk):
+    """How the 2004-family editions differ from a eulogy's main (Latin print)
+    placement: the CEI's own number and asterisk where they differ, and absence
+    from the Latin and English for a CEI-only eulogy."""
+    out = {}
+    cei = {}
+    if cei_entry != entry:
+        cei["entry"] = cei_entry
+    if cei_asterisk != asterisk:
+        cei["asterisk"] = cei_asterisk
+    if cei:
+        out[EDITION_IT] = cei
+    if mr_id in CEI_ONLY:
+        out[EDITION_LA] = {"absent": True}
+        out[EDITION_EN] = {"absent": True}
+    return out
+
+
+def link_same_eulogy(entries, pairs=SAME_EULOGY):
+    """Record each pair in `same_eulogy` on both entries (idempotent)."""
+    by_id = {e["id"]: e for e in entries}
+    for a, b in pairs.items():
+        for src, dst in ((a, b), (b, a)):
+            if src in by_id:
+                links = by_id[src].setdefault("same_eulogy", [])
+                if dst not in links:
+                    links.append(dst)
+
+
+def _placement(e, edition):
+    """(entry, unnumbered) as `edition` prints `e`, or None if it does not."""
+    o = e.get("editions", {}).get(edition, {})
+    if o.get("absent"):
+        return None
+    return o.get("entry", e["entry"]), o.get("unnumbered", e.get("unnumbered", False))
+
+
+def validate_editions(entries):
+    """Errors in the per-edition data: unknown editions or keys, overrides that
+    repeat the main value, one-sided or same-day `same_eulogy` links, and two
+    numbered entries with the same number on one day of one edition."""
+    errors = []
+    by_id = {e["id"]: e for e in entries}
+    for e in entries:
+        for edition, o in e.get("editions", {}).items():
+            if edition not in EDITIONS_2004:
+                errors.append(f"{e['id']}: unknown edition {edition}")
+            for k, v in o.items():
+                if k not in OVERRIDE_KEYS:
+                    errors.append(f"{e['id']}: unknown override key {k} for {edition}")
+                elif k == "absent" and v is not True:
+                    errors.append(f"{e['id']}: absent must be true for {edition}")
+                elif k != "absent" and v == e.get(k, False if k == "unnumbered" else None):
+                    errors.append(f"{e['id']}: {k} override repeats the main value for {edition}")
+        for other in e.get("same_eulogy", []):
+            t = by_id.get(other)
+            if t is None:
+                errors.append(f"{e['id']}: same_eulogy names unknown {other}")
+                continue
+            if (t["month"], t["day"]) == (e["month"], e["day"]):
+                errors.append(f"{e['id']}: same_eulogy {other} is on the same day")
+            if e["id"] not in t.get("same_eulogy", []):
+                errors.append(f"{e['id']}: same_eulogy {other} does not link back")
+    for edition in EDITIONS_2004:
+        seen = {}
+        for e in entries:
+            if e.get("deprecated"):
+                continue
+            placed = _placement(e, edition)
+            if placed is None:
+                continue
+            entry, unnumbered = placed
+            if entry is None or unnumbered:
+                continue
+            key = (e["month"], e["day"], entry)
+            if key in seen:
+                errors.append(f"{e['month']}/{e['day']} entry {entry} in {edition}: "
+                              f"{seen[key]} and {e['id']}")
+            else:
+                seen[key] = e["id"]
+    return errors
 
 # The four leap-day elogia are printed twice (Feb 28 and Feb 29) and carry a
 # single identity each, anchored at 0229. The Feb 29 placement is primary;
@@ -692,14 +840,23 @@ def extract(workbook_path):
                 "asterisk": asterisk == "*",
                 "country": country,
             }
+            # The workbook records the CEI's number and asterisk; the main
+            # placement follows the Latin print.
+            cei_entry, cei_asterisk = row_out["entry"], row_out["asterisk"]
             if mr_id in ASTERISK_OVERRIDES:
                 row_out["asterisk"], row_out["note"] = ASTERISK_OVERRIDES[mr_id]
             if mr_id in PLACEMENT_OVERRIDES:
                 p_month, p_day, p_entry, p_note = PLACEMENT_OVERRIDES[mr_id]
                 row_out.update(month=p_month, day=p_day, entry=p_entry)
                 row_out["note"] = (row_out.get("note", "") + " " + p_note).strip()
+            if mr_id in LATIN_RENUMBERING:
+                row_out["entry"] = LATIN_RENUMBERING[mr_id]
             if mr_id in ENTRY_NOTES:
                 row_out["note"] = (row_out.get("note", "") + " " + ENTRY_NOTES[mr_id]).strip()
+            overrides = edition_overrides(mr_id, entry=row_out["entry"], asterisk=row_out["asterisk"],
+                                          cei_entry=cei_entry, cei_asterisk=cei_asterisk)
+            if overrides:
+                row_out["editions"] = overrides
             leads = UNNUMBERED_LEADS.get((row_out["month"], row_out["day"]), 0)
             if row_out["entry"] is not None and row_out["entry"] <= leads:
                 row_out["unnumbered"] = True
@@ -730,6 +887,14 @@ def extract(workbook_path):
             entries.append(row)
 
     entries.extend(PRINT_ONLY_ENTRIES)
+    entries = [dict(e) for e in entries]  # PRINT_ONLY_ENTRIES are module constants: copy
+    link_same_eulogy(entries)
+    for e in entries:  # `editions` and `same_eulogy` are the last keys of an entry
+        for k in ("editions", "same_eulogy"):
+            if k in e:
+                e[k] = e.pop(k)
+    errors = validate_editions(entries)
+    assert not errors, "per-edition placements:\n" + "\n".join(errors)
     entries.sort(key=lambda e: (e["month"], e["day"], e["entry"] is None, e["entry"] or 0))
     return entries
 
@@ -852,16 +1017,19 @@ def write_markdown(entries, repo_root):
             f"# {month_name}",
             "",
             f"{len(month_entries)} canonical IDs. "
-            "`Entry` is the elogium's position within the day in the digitized workbook "
-            "(editio altera 2004); an entry number in parentheses marks an unnumbered "
+            "`Entry` is the elogium's entry number within the day in the Latin "
+            "editio altera 2004 print; an entry number in parentheses marks an unnumbered "
             "header elogium (a drop-cap paragraph for a celebration with liturgical "
             "rank, counted but not printed as a number); `*` marks asterisked entries; "
             "`Country` is the ISO 3166-1 alpha-2 code of the modern country of the "
             "place of the elogium; `Typology` is what the date of the elogium marks "
-            "(see docs/canonicalization-report.md, Typology).",
+            "(see docs/canonicalization-report.md, Typology). "
+            "`Editions` lists where another 2004-family edition differs from this row "
+            "(the Latin print): its own entry number or asterisk, or `absent`; "
+            "`same as` names the same eulogy printed on another day.",
             "",
-            "| Day | Entry | ID | * | Country | Typology | Notes |",
-            "| --- | --- | --- | --- | --- | --- | --- |",
+            "| Day | Entry | ID | * | Country | Typology | Editions | Notes |",
+            "| --- | --- | --- | --- | --- | --- | --- | --- |",
         ]
         for e in month_entries:
             notes = []
@@ -876,10 +1044,17 @@ def write_markdown(entries, repo_root):
                 entry_cell = f"({e['entry']})"
             else:
                 entry_cell = str(e["entry"])
+            short = {EDITION_LA: "Latin", EDITION_IT: "CEI", EDITION_EN: "English"}
+            diffs = []
+            for edition, o in e.get("editions", {}).items():
+                parts = ["absent" if k == "absent" else f"{k} {v}" for k, v in o.items()]
+                diffs.append(f"{short[edition]}: {', '.join(parts)}")
+            diffs += [f"same as `{x}`" for x in e.get("same_eulogy", [])]
             lines.append(
                 f"| {e['day']} | {entry_cell} "
                 f"| `{e['id']}` | {'*' if e['asterisk'] else ''} "
-                f"| {e['country'] or ''} | {e.get('typology') or ''} | {' '.join(notes)} |"
+                f"| {e['country'] or ''} | {e.get('typology') or ''} "
+                f"| {'; '.join(diffs)} | {' '.join(notes)} |"
             )
         path = reg_dir / f"{month_index:02d}-{month_name.lower()}.md"
         path.write_text("\n".join(lines) + "\n", encoding="utf-8")

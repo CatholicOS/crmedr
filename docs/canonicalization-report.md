@@ -40,10 +40,11 @@ ONE identity each, anchored at 0229; the Feb 28 rows bear the same ID:
 
 **Entries absent from the "with IDs" workbook** (both present in the parallel-texts
 workbook, whose reviewer comments document their numbering across editions):
-- mr:0104-abrunculus — entry 2* in the Latin print, absent from the Italian (CEI)
-  edition and from Mons. Barba's Word transcription
-- mr:0104-emmanuel-gonzalez-garcia — entry 12* in the Latin print, numbered 11* in the
-  Italian (CEI) edition and in Mons. Barba's Word transcription (Bl. M. González García,
+- mr:0104-abrunculus — entry 2* in the Latin print (its entry is now 2 in the registry),
+  absent from the Italian (CEI) edition and from Mons. Barba's Word transcription
+- mr:0104-emmanuel-gonzalez-garcia — entry 12* in the Latin print (entry 12 in the
+  registry), numbered 11* in the Italian (CEI) edition (`editions` entry 11) and in Mons.
+  Barba's Word transcription (Bl. M. González García,
   canonized 2016: status change with no ID change, as intended)
 
 **Per-edition asterisk discrepancies (29)**: the registry follows the Latin print; each
@@ -268,10 +269,11 @@ Calendar. None carries an asterisk anywhere, consistent with the registry.
 The sweep did surface four cross-edition **structural** differences (all verified on the
 page scans of both editions):
 
-- **mr:0610-marcus-antonius-durando** (formerly mr:1210-…): the Latin editio altera 2004
-  places Bl. Marcantonio Durando at June 10 (entry 9\*); the Italian (CEI) edition places
-  him at December 10 (entry 9\*). The MMDD anchor follows the Latin print, so the ID
-  changes to mr:0610-marcus-antonius-durando.
+- **mr:0610-marcus-antonius-durando** / **mr:1210-marcus-antonius-durando**: the Latin
+  editio altera 2004 (and the English edition) place Bl. Marcantonio Durando at June 10
+  (entry 9\*); the Italian (CEI) edition places him at December 10 (entry 9\*). The one
+  eulogy has two IDs, each anchored to its own day: `mr:0610-…` (Latin print, English) and
+  `mr:1210-…` (CEI), linked as `same_eulogy`. See "Per-edition placements".
 - **mr:0712-proclus-et-hilarion**: entry 1 at July 12 in the CEI edition; absent from the
   Latin print, whose July 12 numbering begins at 2 with the gap left unrenumbered.
 - **mr:0825-eusebius-et-socii**: entry 3 at August 25 in the CEI edition; absent from the
@@ -668,6 +670,36 @@ subjects follow the slugs.
 | mr:0211-plurimi-martyres-numidia | mr:0211-plurimi-martyres-numidiae |
 
 </details>
+
+## Per-edition placements
+
+An entry's main placement (`month`, `day`, `entry`, `asterisk`) follows the Latin editio
+altera 2004 print. Where another edition differs, the entry carries an `editions` object
+keyed by edition ID (`martyrologium_romanum_2004`, `martyrologium_romanum_2004_it_IT`,
+`martyrologium_romanum_2004_en_unofficial`), holding only the differences: `entry` (that
+edition's own number), `asterisk` (that edition's own marker) and `absent: true` (the
+edition does not print the eulogy at all) and `unnumbered` (that edition prints it
+without a number). `same_eulogy` lists the IDs of the same
+eulogy printed on a different day in another edition (a symmetric link).
+
+Four days are numbered differently in the Latin print and in the CEI edition (56 current
+entries carry `editions`):
+
+- **4 January**: Abrunculus is 2 (absent from the CEI), so Gregorius is 3 (CEI 2) ...
+  Emmanuel González García 12 (CEI 11).
+- **10 June**: Durando is 9 (absent from the CEI at this day; the CEI has it at 10
+  December), so Eduardus Poppe is 10 (CEI 9).
+- **25 August**: Eusebius et socii is 3 in the CEI only (absent from the Latin print and
+  the English edition), so Genesius is 3 (CEI 4) ... Aloysius Urbano Lanaspa 13 (CEI 14).
+- **10 December**: Durando is 9 in the CEI only (absent from the Latin print and the
+  English edition), so Gundisalvus Vines Masip is 9 (CEI 10) and Antonius Martin Hernandez
+  et Augustinus Garcia Calvo 10 (CEI 11).
+
+26 existing IDs changed entry number on those days (the only new ID is
+mr:1210-marcus-antonius-durando). The 29 asterisk discrepancies between the Latin print
+and the CEI (see the sweep above) are recorded as CEI overrides (`editions` ->
+`martyrologium_romanum_2004_it_IT` -> `asterisk`); the explanatory notes remain on the
+entries.
 
 ## Country-code corrections (September 2026)
 
