@@ -190,6 +190,30 @@ class February20Test(unittest.TestCase):
         self.assertIn("mr:0218-sadoth-et-socii", entries["mr:0220-eleutherius-et-socii"]["note"])
 
 
+class CrossDayEulogies49Test(unittest.TestCase):
+    """#49: a eulogy printed on another day has its own ID there, linked by same_eulogy."""
+
+    def test_link_deprecated_twins(self):
+        cur = [{"id": "mr:0601-x", "month": 6, "day": 1, "entry": 1, "asterisk": False}]
+        dep = [{"id": "mr:1220-x", "month": 12, "day": 20, "entry": 6, "deprecated": True,
+                "same_eulogy": ["mr:0601-x"]}]
+        r.link_deprecated_twins(cur, dep)
+        r.link_deprecated_twins(cur, dep)
+        self.assertEqual(cur[0]["same_eulogy"], ["mr:1220-x"])
+        self.assertEqual(r.validate_editions(cur + dep), [])
+        dep[0]["same_eulogy"] = ["mr:1220-y"]
+        self.assertTrue(any("unknown" in e for e in r.validate_editions(cur + dep)))
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = json.load(open(root / "data" / "martyrology_ids.json"))["entries"]
+        by_id = {e["id"]: e for e in entries}
+        self.assertEqual(r.validate_editions(entries), [])
+        self.assertEqual(by_id["mr:1220-ammon-et-socii"]["same_eulogy"], ["mr:0601-ammon-et-socii"])
+        self.assertIn("mr:1220-ammon-et-socii", by_id["mr:0601-ammon-et-socii"]["same_eulogy"])
+        self.assertNotIn("same_eulogy", by_id["mr:1209-valeria"])  # another saint, no 2004 eulogy
+
+
 class PerEditionPlacementsTest(unittest.TestCase):
     """Per-edition differences from the main (Latin print) placement."""
 

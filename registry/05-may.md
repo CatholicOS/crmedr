@@ -103,8 +103,8 @@
 | 8 | 5 | `mr:0508-gibrianus` | * | FR | dies_natalis |  |  |
 | 8 | 6 | `mr:0508-desideratus` | * | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:0508-martinus` |  | FR | dies_natalis |  |  |
-| 8 | 8 | `mr:0508-bonifatius-iv` |  | IT | dies_natalis |  |  |
-| 8 | 9 | `mr:0508-benedictus-ii` |  | IT | dies_natalis |  |  |
+| 8 | 8 | `mr:0508-bonifatius-iv` |  | IT | dies_natalis | same as `mr:0525-bonifatius-iv` |  |
+| 8 | 9 | `mr:0508-benedictus-ii` |  | IT | dies_natalis | same as `mr:0507-benedictus-ii` |  |
 | 8 | 10 | `mr:0508-metro` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0508-wiro` |  | NL | dies_natalis |  |  |
 | 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  |  |
@@ -115,7 +115,7 @@
 | 8 | 17 | `mr:0508-antonius-bajewski` | * | PL | dies_natalis |  |  |
 | 9 | 1 | `mr:0509-isaias` |  | PS | commemoratio |  |  |
 | 9 | 2 | `mr:0509-herma` |  | PS | commemoratio |  |  |
-| 9 | 3 | `mr:0509-pachomius` |  | EG | dies_natalis |  |  |
+| 9 | 3 | `mr:0509-pachomius` |  | EG | dies_natalis | same as `mr:0514-pachomius` |  |
 | 9 | 4 | `mr:0509-trecenti-decem-martyres-persidis` |  | IR | dies_natalis |  |  |
 | 9 | 5 | `mr:0509-dionysius` |  | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:0509-geruntius` |  | IT | dies_natalis |  |  |
@@ -271,7 +271,7 @@
 | 21 | 4 | `mr:0521-martyres-alexandriae` |  | EG | commemoratio |  |  |
 | 21 | 5 | `mr:0521-paternus` | * | FR | commemoratio |  |  |
 | 21 | 6 | `mr:0521-hospicius` |  | FR | dies_natalis |  |  |
-| 21 | 7 | `mr:0521-mancius` |  | PT | dies_natalis |  |  |
+| 21 | 7 | `mr:0521-mancius` |  | PT | dies_natalis | same as `mr:0515-mancius` |  |
 | 21 | 8 | `mr:0521-theobaldus` | * | FR | dies_natalis |  |  |
 | 21 | 9 | `mr:0521-hemming` | * | FI | dies_natalis |  |  |
 | 21 | 10 | `mr:0521-ioannes-mopinot` | * | FR | dies_natalis |  |  |
@@ -312,7 +312,7 @@
 | 24 | 5 | `mr:0524-donatianus-et-rogatianus` |  | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0524-triginta-octo-martyres-philippopolis` |  | BG | commemoratio |  |  |
 | 24 | 7 | `mr:0524-vincentius` |  | FR | dies_natalis |  |  |
-| 24 | 8 | `mr:0524-simeon-stylita` |  | SY | dies_natalis |  |  |
+| 24 | 8 | `mr:0524-simeon-stylita` |  | SY | dies_natalis | same as `mr:0903-simeon-stylita` |  |
 | 24 | 9 | `mr:0524-philippus` | * | IT | dies_natalis |  |  |
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA | dies_natalis |  |  |
 | 24 | 11 | `mr:0524-augustinus-yi-kwang-hon-et-socii` |  | KR | dies_natalis |  |  |
@@ -340,7 +340,7 @@
 | 26 | 4 | `mr:0526-felicissima` |  | IT | dies_natalis |  |  |
 | 26 | 5 | `mr:0526-priscus` |  | FR | dies_natalis |  |  |
 | 26 | 6 | `mr:0526-augustinus` |  | GB | depositio |  |  |
-| 26 | 7 | `mr:0526-desiderius` |  | FR | dies_natalis |  |  |
+| 26 | 7 | `mr:0526-desiderius` |  | FR | dies_natalis | same as `mr:0523-desiderius-viennensis` |  |
 | 26 | 8 | `mr:0526-berengarius` | * | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:0526-lambertus` | * | FR | dies_natalis |  |  |
 | 26 | 10 | `mr:0526-franciscus-patrizi` | * | IT | dies_natalis |  |  |
@@ -355,7 +355,7 @@
 | 27 | 2 | `mr:0527-iulius` |  | BG | dies_natalis |  |  |
 | 27 | 3 | `mr:0527-restitutus` |  | IT | dies_natalis |  |  |
 | 27 | 4 | `mr:0527-eutropius` |  | FR | dies_natalis |  |  |
-| 27 | 5 | `mr:0527-bruno` |  | DE | dies_natalis |  |  |
+| 27 | 5 | `mr:0527-bruno` |  | DE | dies_natalis | same as `mr:0517-bruno` |  |
 | 27 | 6 | `mr:0527-gausbertus` | * | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0527-edmundus-duke-et-socii` | * | GB | dies_natalis |  |  |
 | 27 | 8 | `mr:0527-barbara-kim-et-barbara-yi` |  | KR | dies_natalis |  |  |
@@ -375,11 +375,11 @@
 | 28 | 12 | `mr:0528-paulus-hanh` |  | VN | dies_natalis |  |  |
 | 28 | 13 | `mr:0528-ladislaus-demski` | * | DE | dies_natalis |  |  |
 | 28 | 14 | `mr:0528-antonius-iulianus-nowowiejski` | * | PL | dies_natalis |  |  |
-| 29 | 1 | `mr:0529-hesychius` |  | TR | dies_natalis |  |  |
+| 29 | 1 | `mr:0529-hesychius` |  | TR | dies_natalis | same as `mr:1118-hesychius` |  |
 | 29 | 2 | `mr:0529-maximinus` |  | DE | dies_natalis |  |  |
 | 29 | 3 | `mr:0529-sisinnius-et-socii` |  | IT | dies_natalis |  |  |
-| 29 | 4 | `mr:0529-exsuperantius` |  | IT | dies_natalis |  |  |
-| 29 | 5 | `mr:0529-senator` |  | IT | dies_natalis |  |  |
+| 29 | 4 | `mr:0529-exsuperantius` |  | IT | dies_natalis | same as `mr:0530-exsuperantius` |  |
+| 29 | 5 | `mr:0529-senator` |  | IT | dies_natalis | same as `mr:0528-senator` |  |
 | 29 | 6 | `mr:0529-gerardus` | * | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:0529-bona` | * | IT | dies_natalis |  |  |
 | 29 | 8 | `mr:0529-gulielmus-arnaud-et-socii` | * | FR | dies_natalis |  |  |
@@ -390,7 +390,7 @@
 | 30 | 1 | `mr:0530-gabinus` |  | IT | dies_natalis |  |  |
 | 30 | 2 | `mr:0530-basilius-et-emmelia` |  | TR | dies_natalis |  |  |
 | 30 | 3 | `mr:0530-anastasius` |  | IT | dies_natalis |  |  |
-| 30 | 4 | `mr:0530-dympna` |  | BE | dies_natalis |  |  |
+| 30 | 4 | `mr:0530-dympna` |  | BE | dies_natalis | same as `mr:0515-dympna` |  |
 | 30 | 5 | `mr:0530-hubertus` |  | BE | dies_natalis |  |  |
 | 30 | 6 | `mr:0530-ferdinandus-iii` |  | ES | dies_natalis |  |  |
 | 30 | 7 | `mr:0530-ioanna` |  | FR | dies_natalis |  |  |

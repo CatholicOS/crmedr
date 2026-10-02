@@ -48,7 +48,7 @@
 | 4 | 9 | `mr:0304-ioannes-antonius-farina` | * | IT | dies_natalis |  |  |
 | 4 | 10 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | * | PL | dies_natalis |  |  |
 | 5 | 1 | `mr:0305-theophilus` |  | PS | commemoratio |  |  |
-| 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis |  |  |
+| 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
 | 5 | 3 | `mr:0305-lucius` |  | IT | depositio |  |  |
 | 5 | 4 | `mr:0305-phoca` |  | TR | dies_natalis |  |  |
 | 5 | 5 | `mr:0305-hadrianus` |  | PS | dies_natalis |  |  |
@@ -62,7 +62,7 @@
 | 6 | 2 | `mr:0306-victorinus` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0306-quiriacus` |  | DE | dies_natalis |  |  |
 | 6 | 4 | `mr:0306-evagrius` |  | TR | commemoratio |  |  |
-| 6 | 5 | `mr:0306-iulianus` |  | ES | dies_natalis |  |  |
+| 6 | 5 | `mr:0306-iulianus` |  | ES | dies_natalis | same as `mr:0308-iulianus` |  |
 | 6 | 6 | `mr:0306-fridolinus` |  | CH | dies_natalis |  |  |
 | 6 | 7 | `mr:0306-chrodegangus` |  | FR | dies_natalis |  |  |
 | 6 | 8 | `mr:0306-quadraginta-duo-martyres-syriae` |  | SY | dies_natalis |  |  |
@@ -72,7 +72,7 @@
 | 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis |  |  |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |  |
 | 7 | 3 | `mr:0307-eubulius` |  | PS | dies_natalis |  |  |
-| 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis |  |  |
+| 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis | same as `mr:0304-basilius-et-socii` |  |
 | 7 | 5 | `mr:0307-paulus-simplex` |  | EG | dies_natalis |  |  |
 | 7 | 6 | `mr:0307-gaudiosus` |  | IT | dies_natalis |  |  |
 | 7 | 7 | `mr:0307-ardo-smaragdus` | * | FR | dies_natalis |  |  |
@@ -89,7 +89,7 @@
 | 8 | 4 | `mr:0308-provinus` | * | IT | dies_natalis |  |  |
 | 8 | 5 | `mr:0308-senanus` | * | IE | dies_natalis |  |  |
 | 8 | 6 | `mr:0308-felix` |  | GB | dies_natalis |  |  |
-| 8 | 7 | `mr:0308-theophilactus` |  | TR | dies_natalis |  |  |
+| 8 | 7 | `mr:0308-theophilactus` |  | TR | dies_natalis | same as `mr:0307-theophilactus` |  |
 | 8 | 8 | `mr:0308-humfridus` | * | FR | dies_natalis |  |  |
 | 8 | 9 | `mr:0308-litiphridus` | * | IT | dies_natalis |  |  |
 | 8 | 10 | `mr:0308-duthacus` | * | GB | depositio |  |  |
@@ -108,13 +108,13 @@
 | 10 | 1 | `mr:0310-caius-et-alexander` |  | TR | commemoratio |  |  |
 | 10 | 2 | `mr:0310-victor` |  | TN | commemoratio |  |  |
 | 10 | 3 | `mr:0310-macarius` |  | IL | commemoratio |  |  |
-| 10 | 4 | `mr:0310-simplicius` |  | IT | dies_natalis |  |  |
+| 10 | 4 | `mr:0310-simplicius` |  | IT | dies_natalis | same as `mr:0302-simplicius` |  |
 | 10 | 5 | `mr:0310-droctoveus` |  | FR | dies_natalis |  |  |
 | 10 | 6 | `mr:0310-attala` |  | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0310-ioannes-ogilvie` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  |  |
 | 10 | 9 | `mr:0310-elias-a-succursu-nieves-del-castillo` | * | MX | dies_natalis |  |  |
-| 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis |  |  |
+| 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
 | 11 | 2 | `mr:0311-trophimus-et-thalus` |  | SY | dies_natalis |  |  |
 | 11 | 3 | `mr:0311-constantinus` | * | GB | dies_natalis |  |  |
 | 11 | 4 | `mr:0311-sophronius` |  | IL | dies_natalis |  |  |
@@ -153,8 +153,8 @@
 | 13 | 10 | `mr:0313-agnellus-de-pisis` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0313-francisca-trehet` | * | FR | dies_natalis |  |  |
 | 14 | 1 | `mr:0314-alexander` |  | GR | dies_natalis |  |  |
-| 14 | 2 | `mr:0314-lazarus` |  | IT | dies_natalis |  |  |
-| 14 | 3 | `mr:0314-leobinus` |  | FR | dies_natalis |  |  |
+| 14 | 2 | `mr:0314-lazarus` |  | IT | dies_natalis | same as `mr:0211-lazarus` |  |
+| 14 | 3 | `mr:0314-leobinus` |  | FR | dies_natalis | same as `mr:0915-leobinus` |  |
 | 14 | 4 | `mr:0314-mathildis` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0314-paulina` | * | DE | dies_natalis |  |  |
 | 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  |  |
@@ -188,8 +188,8 @@
 | 18 | (1) | `mr:0318-cyrillus` |  | IL | dies_natalis |  |  |
 | 18 | 2 | `mr:0318-alexander` |  | IL | commemoratio |  |  |
 | 18 | 3 | `mr:0318-frigdianus` |  | IT | dies_natalis |  |  |
-| 18 | 4 | `mr:0318-leobardus` |  | FR | dies_natalis |  |  |
-| 18 | 5 | `mr:0318-braulio` |  | ES | dies_natalis |  |  |
+| 18 | 4 | `mr:0318-leobardus` |  | FR | dies_natalis | same as `mr:0118-leobardus` |  |
+| 18 | 5 | `mr:0318-braulio` |  | ES | dies_natalis | same as `mr:0326-braulio` |  |
 | 18 | 6 | `mr:0318-eduardus` |  | GB | dies_natalis |  |  |
 | 18 | 7 | `mr:0318-anselmus` |  | IT | dies_natalis |  |  |
 | 18 | 8 | `mr:0318-salvator-de-horta-grionesos` |  | IT | dies_natalis |  |  |
@@ -258,7 +258,7 @@
 | 24 | 3 | `mr:0324-maccarthemus` | * | IE | dies_natalis |  |  |
 | 24 | 4 | `mr:0324-severus` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0324-ioannes-a-baculo` | * | IT | dies_natalis |  |  |
-| 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis |  |  |
+| 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
 | 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus-lopez-caamano` | * | ES | dies_natalis |  |  |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
 | 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio |  |  |
@@ -285,7 +285,7 @@
 | 26 | 4 | `mr:0326-eutychius` |  | EG | commemoratio |  |  |
 | 26 | 5 | `mr:0326-petrus` |  | TR | dies_natalis |  |  |
 | 26 | 6 | `mr:0326-bercharius` |  | FR | dies_natalis |  |  |
-| 26 | 7 | `mr:0326-barontius-et-desiderius` |  | IT | dies_natalis |  |  |
+| 26 | 7 | `mr:0326-barontius-et-desiderius` |  | IT | dies_natalis | same as `mr:0325-barontius-et-desiderius` |  |
 | 26 | 8 | `mr:0326-liudgerus` |  | DE | dies_natalis |  |  |
 | 26 | 9 | `mr:0326-magdalena-catharina-morano` | * | IT | dies_natalis |  |  |
 | 27 | 1 | `mr:0327-rupertus` |  | AT | dies_natalis |  |  |
@@ -294,11 +294,11 @@
 | 27 | 4 | `mr:0327-franciscus-faa` | * | IT | dies_natalis |  |  |
 | 28 | 1 | `mr:0328-castor` |  | TR | dies_natalis |  |  |
 | 28 | 2 | `mr:0328-priscus-et-socii` |  | PS | commemoratio |  |  |
-| 28 | 3 | `mr:0328-cyrillus` |  | LB | dies_natalis |  |  |
+| 28 | 3 | `mr:0328-cyrillus` |  | LB | dies_natalis | same as `mr:0329-cyrillus` |  |
 | 28 | 4 | `mr:0328-proterius` |  | EG | dies_natalis |  |  |
 | 28 | 5 | `mr:0328-gunthramnus` |  | FR | depositio |  |  |
 | 28 | 6 | `mr:0328-hilarion` |  | GR | dies_natalis |  |  |
-| 28 | 7 | `mr:0328-stephanus-harding` |  | FR | dies_natalis |  |  |
+| 28 | 7 | `mr:0328-stephanus-harding` |  | FR | dies_natalis | same as `mr:0417-stephanus-harding` |  |
 | 28 | 8 | `mr:0328-conus` | * | IT | dies_natalis |  |  |
 | 28 | 9 | `mr:0328-antonius-patrizus` | * | IT | dies_natalis |  |  |
 | 28 | 10 | `mr:0328-ioanna-maria-de-maille` | * | FR | dies_natalis |  |  |

@@ -61,7 +61,7 @@
 | 5 | 5 | `mr:1005-placidus` |  | IT | commemoratio |  |  |
 | 5 | 6 | `mr:1005-hieronymus` | * | FR | dies_natalis |  |  |
 | 5 | 7 | `mr:1005-meinulphus` | * | DE | dies_natalis |  |  |
-| 5 | 8 | `mr:1005-froilanus` |  | ES | commemoratio |  |  |
+| 5 | 8 | `mr:1005-froilanus` |  | ES | commemoratio | same as `mr:1003-froilanus` |  |
 | 5 | 9 | `mr:1005-attilanus` |  | ES | commemoratio |  |  |
 | 5 | 10 | `mr:1005-petrus-de-foro-cornelii` | * | IT | dies_natalis |  |  |
 | 5 | 11 | `mr:1005-flora` | * | FR | commemoratio |  |  |
@@ -102,7 +102,7 @@
 | 7 | 10 | `mr:1007-iosephus-llosa-balaguer` | * | ES | dies_natalis |  |  |
 | 8 | 1 | `mr:1008-pelagia` |  | TR | dies_natalis |  |  |
 | 8 | 2 | `mr:1008-reparata` |  |  | commemoratio |  |  |
-| 8 | 3 | `mr:1008-felix` |  | IT | dies_natalis |  |  |
+| 8 | 3 | `mr:1008-felix` |  | IT | dies_natalis | same as `mr:0714-felix` |  |
 | 8 | 4 | `mr:1008-evodius` |  | FR | dies_natalis |  |  |
 | 8 | 5 | `mr:1008-ragenfredis` | * | FR | dies_natalis |  |  |
 | 8 | 6 | `mr:1008-hugo` | * | IT | dies_natalis |  |  |
@@ -110,7 +110,7 @@
 | 9 | (1) | `mr:1009-dionysius-et-socii` |  | FR | dies_natalis |  |  |
 | 9 | (2) | `mr:1009-ioannes-leonardus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:1009-abraham` |  | IQ | commemoratio |  |  |
-| 9 | 4 | `mr:1009-diodorus-et-socii` |  | SY | dies_natalis |  |  |
+| 9 | 4 | `mr:1009-diodorus-et-socii` |  | SY | dies_natalis | same as `mr:0911-diodorus-et-socii` |  |
 | 9 | 5 | `mr:1009-domninus-iuliam` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:1009-publia` |  | TR | commemoratio |  |  |
 | 9 | 7 | `mr:1009-sabinus` | * | FR | dies_natalis |  |  |
@@ -131,7 +131,7 @@
 | 10 | 8 | `mr:1010-tancha` | * | FR | dies_natalis |  |  |
 | 10 | 9 | `mr:1010-paulinus` |  | GB | dies_natalis |  |  |
 | 10 | 10 | `mr:1010-telchildis` | * | FR | dies_natalis |  |  |
-| 10 | 11 | `mr:1010-daniel-et-socii` |  | MA | dies_natalis |  |  |
+| 10 | 11 | `mr:1010-daniel-et-socii` |  | MA | dies_natalis | same as `mr:1013-daniel-et-socii` |  |
 | 10 | 12 | `mr:1010-ioannes` |  | GB | dies_natalis |  |  |
 | 10 | 13 | `mr:1010-daniel-comboni` |  | SD | dies_natalis |  |  |
 | 10 | 14 | `mr:1010-angela-maria-truszkowska` | * | PL | dies_natalis |  |  |
@@ -140,7 +140,7 @@
 | 11 | 1 | `mr:1011-philippus` |  | PS | commemoratio |  |  |
 | 11 | 2 | `mr:1011-tharacus-et-socii` |  | TR | dies_natalis |  |  |
 | 11 | 3 | `mr:1011-nicasius-et-socii` |  | FR | commemoratio |  |  |
-| 11 | 4 | `mr:1011-sanctinus` |  | FR | dies_natalis |  |  |
+| 11 | 4 | `mr:1011-sanctinus` |  | FR | dies_natalis | same as `mr:0922-sanctinus` |  |
 | 11 | 5 | `mr:1011-sarmata` |  | EG | commemoratio |  |  |
 | 11 | 6 | `mr:1011-firminus` |  | FR | dies_natalis |  |  |
 | 11 | 7 | `mr:1011-canicus` |  | IE | dies_natalis |  |  |
@@ -200,9 +200,9 @@
 | 15 | 6 | `mr:1015-gundisalvus-de-lacobriga` | * | PT | dies_natalis |  |  |
 | 15 | 7 | `mr:1015-magdalena` |  | JP | dies_natalis |  |  |
 | 15 | 8 | `mr:1015-narcissus-baste-baste` | * | ES | dies_natalis |  |  |
-| 16 | (1) | `mr:1016-hedwigis` |  | PL | celebratio |  |  |
+| 16 | (1) | `mr:1016-hedwigis` |  | PL | celebratio | same as `mr:1017-hedwigis` |  |
 | 16 | (2) | `mr:1016-margarita-maria-alacoque` |  | FR | celebratio |  |  |
-| 16 | 3 | `mr:1016-longinus` |  | IL | commemoratio |  |  |
+| 16 | 3 | `mr:1016-longinus` |  | IL | commemoratio | same as `mr:0315-longinus` |  |
 | 16 | 4 | `mr:1016-eliphius` |  | FR | dies_natalis |  |  |
 | 16 | 5 | `mr:1016-martinianus-et-saturianus` |  | TN | commemoratio |  |  |
 | 16 | 6 | `mr:1016-amandus-et-iunianus` |  | FR | dies_natalis |  |  |
@@ -219,9 +219,9 @@
 | 16 | 17 | `mr:1016-anicetus-koplinski-et-iosephus-jankowski` | * | PL | dies_natalis |  |  |
 | 17 | (1) | `mr:1017-ignatius` |  | TR | dies_natalis |  |  |
 | 17 | 2 | `mr:1017-osea` |  | PS | commemoratio |  |  |
-| 17 | 3 | `mr:1017-rufus-et-zosimus` |  | IT | commemoratio |  |  |
+| 17 | 3 | `mr:1017-rufus-et-zosimus` |  | IT | commemoratio | same as `mr:1218-rufus-et-zosimus` |  |
 | 17 | 4 | `mr:1017-martyres-volitani` |  | TN | dies_natalis |  |  |
-| 17 | 5 | `mr:1017-ioannes` |  | EG | dies_natalis |  |  |
+| 17 | 5 | `mr:1017-ioannes` |  | EG | dies_natalis | same as `mr:0327-ioannes` |  |
 | 17 | 6 | `mr:1017-dulcidius` | * | FR | dies_natalis |  |  |
 | 17 | 7 | `mr:1017-florentius` |  | FR | dies_natalis |  |  |
 | 17 | 8 | `mr:1017-gilbertus` | * | FR | dies_natalis |  |  |
@@ -248,8 +248,8 @@
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
 | 19 | 3 | `mr:1019-ioel` |  | PS | commemoratio |  |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT | commemoratio |  |  |
-| 19 | 5 | `mr:1019-asterius` |  | IT | dies_natalis |  |  |
-| 19 | 6 | `mr:1019-sabinianus-et-potentianus` |  | FR | commemoratio |  |  |
+| 19 | 5 | `mr:1019-asterius` |  | IT | dies_natalis | same as `mr:1021-asterius` |  |
+| 19 | 6 | `mr:1019-sabinianus-et-potentianus` |  | FR | commemoratio | same as `mr:1231-sabinianus-et-potentianus` |  |
 | 19 | 7 | `mr:1019-varus` |  | EG | dies_natalis |  |  |
 | 19 | 8 | `mr:1019-gratus` | * | FR | commemoratio |  |  |
 | 19 | 9 | `mr:1019-ethbinus` |  | FR | dies_natalis |  |  |
@@ -260,11 +260,11 @@
 | 19 | 14 | `mr:1019-philippus-howard` |  | GB | dies_natalis |  |  |
 | 19 | 15 | `mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye` |  | JP | dies_natalis |  |  |
 | 19 | 16 | `mr:1019-agnes-a-iesu-galand` | * | FR | dies_natalis |  |  |
-| 20 | 1 | `mr:1020-cornelius` |  | PS | commemoratio |  |  |
+| 20 | 1 | `mr:1020-cornelius` |  | PS | commemoratio | same as `mr:0202-cornelius` |  |
 | 20 | 2 | `mr:1020-caprasius` |  | FR | dies_natalis |  |  |
 | 20 | 3 | `mr:1020-sindulphus` |  | FR | dies_natalis |  |  |
 | 20 | 4 | `mr:1020-vitalis` | * | AT | dies_natalis |  |  |
-| 20 | 5 | `mr:1020-andreas` |  | TR | dies_natalis |  |  |
+| 20 | 5 | `mr:1020-andreas` |  | TR | dies_natalis | same as `mr:1017-andreas` |  |
 | 20 | 6 | `mr:1020-aderaldus` | * | FR | dies_natalis |  |  |
 | 20 | 7 | `mr:1020-adelina` | * | FR | dies_natalis |  |  |
 | 20 | 8 | `mr:1020-iacobus-strepa` | * | UA | dies_natalis |  |  |
@@ -352,8 +352,8 @@
 | 26 | 11 | `mr:1026-fulcus` |  | IT | dies_natalis |  |  |
 | 26 | 12 | `mr:1026-damianus-furcheri` | * | IT | dies_natalis |  |  |
 | 26 | 13 | `mr:1026-bonaventura-de-potentia` | * | IT | dies_natalis |  |  |
-| 27 | 1 | `mr:1027-evaristus` |  | IT | dies_natalis |  |  |
-| 27 | 2 | `mr:1027-thrasea` |  | TR | dies_natalis |  |  |
+| 27 | 1 | `mr:1027-evaristus` |  | IT | dies_natalis | same as `mr:1026-evaristus` |  |
+| 27 | 2 | `mr:1027-thrasea` |  | TR | dies_natalis | same as `mr:1005-thrasea` |  |
 | 27 | 3 | `mr:1027-namatius` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:1027-gaudiosus` |  | IT | depositio |  |  |
 | 27 | 5 | `mr:1027-otteranus` | * | GB | dies_natalis |  |  |
@@ -364,7 +364,7 @@
 | 28 | 3 | `mr:1028-fidel` |  | IT | dies_natalis |  |  |
 | 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis |  |  |
 | 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  |  |
-| 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis |  |  |
+| 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis | same as `mr:0111-salvius-ambiani` |  |
 | 28 | 7 | `mr:1028-faro` |  | FR | dies_natalis |  |  |
 | 28 | 8 | `mr:1028-germanus` | * | FR | commemoratio |  |  |
 | 28 | 9 | `mr:1028-franciscus-serrano-et-socii` |  | CN | dies_natalis |  |  |
@@ -374,14 +374,14 @@
 | 28 | 13 | `mr:1028-iosephus-ruiz-bruixola` | * | ES | dies_natalis |  |  |
 | 29 | 1 | `mr:1029-felicianus` |  | TN | dies_natalis |  |  |
 | 29 | 2 | `mr:1029-narcissus` |  | IL | commemoratio |  |  |
-| 29 | 3 | `mr:1029-honoratus` |  | IT | dies_natalis |  |  |
+| 29 | 3 | `mr:1029-honoratus` |  | IT | dies_natalis | same as `mr:1028-honoratus` |  |
 | 29 | 4 | `mr:1029-zenobius` |  | LB | dies_natalis |  |  |
-| 29 | 5 | `mr:1029-abraham` |  | TR | dies_natalis |  |  |
+| 29 | 5 | `mr:1029-abraham` |  | TR | dies_natalis | same as `mr:0316-abraham` |  |
 | 29 | 6 | `mr:1029-theodarius` |  | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:1029-colmanus` | * | IE | dies_natalis |  |  |
 | 29 | 8 | `mr:1029-dodo` | * | FR | dies_natalis |  |  |
 | 29 | 9 | `mr:1029-caietanus-errico` | * | IT | dies_natalis |  |  |
-| 30 | 1 | `mr:1030-marcianus` |  | IT | dies_natalis |  |  |
+| 30 | 1 | `mr:1030-marcianus` |  | IT | dies_natalis | same as `mr:0614-marcianus` |  |
 | 30 | 2 | `mr:1030-serapion` |  | TR | commemoratio |  |  |
 | 30 | 3 | `mr:1030-eutropia` |  | EG | dies_natalis |  |  |
 | 30 | 4 | `mr:1030-marcellus` |  | MA | dies_natalis |  |  |
@@ -403,5 +403,5 @@
 | 31 | 6 | `mr:1031-christophorus-de-romaniola` | * | FR | dies_natalis |  |  |
 | 31 | 7 | `mr:1031-thomas-de-florentia-bellaci` | * | IT | dies_natalis |  |  |
 | 31 | 8 | `mr:1031-dominicus-collins` | * | IE | dies_natalis |  |  |
-| 31 | 9 | `mr:1031-alphonsus-rodriguez` |  | ES | dies_natalis |  |  |
+| 31 | 9 | `mr:1031-alphonsus-rodriguez` |  | ES | dies_natalis | same as `mr:1030-alphonsus-rodriguez` |  |
 | 31 | 10 | `mr:1031-leo-nowakowski` | * | PL | dies_natalis |  |  |

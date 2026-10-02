@@ -102,7 +102,7 @@
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
 | 8 | 2 | `mr:0708-glyceria` |  | TR | dies_natalis |  |  |
 | 8 | 3 | `mr:0708-procopius` |  | PS | dies_natalis |  |  |
-| 8 | 4 | `mr:0708-pancratius` |  | IT | dies_natalis |  |  |
+| 8 | 4 | `mr:0708-pancratius` |  | IT | dies_natalis | same as `mr:0403-pancratius` |  |
 | 8 | 5 | `mr:0708-auspicius` |  | FR | dies_natalis |  |  |
 | 8 | 6 | `mr:0708-disibodus` | * | DE | dies_natalis |  |  |
 | 8 | 7 | `mr:0708-landrada` | * | BE | dies_natalis |  |  |
@@ -239,7 +239,7 @@
 | 16 | 17 | `mr:0716-teresia-zhang-hezhi` |  | CN | dies_natalis |  |  |
 | 17 | 1 | `mr:0717-martyres-scillitani` |  | TN | dies_natalis |  |  |
 | 17 | 2 | `mr:0717-hyacinthus` |  | TR | dies_natalis |  |  |
-| 17 | 3 | `mr:0717-iusta-et-rufina` |  | ES | dies_natalis |  |  |
+| 17 | 3 | `mr:0717-iusta-et-rufina` |  | ES | dies_natalis | same as `mr:0719-iusta-et-rufina` |  |
 | 17 | 4 | `mr:0717-marcellina` |  | IT | dies_natalis |  |  |
 | 17 | 5 | `mr:0717-alexius` |  | IT | dies_natalis |  |  |
 | 17 | 6 | `mr:0717-theodosius` |  | FR | dies_natalis |  |  |
@@ -267,7 +267,7 @@
 | 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  |  |
 | 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
-| 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis |  |  |
+| 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
 | 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  |  |
 | 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  |  |
 | 19 | 5 | `mr:0719-symmachus` |  | IT | dies_natalis |  |  |
@@ -283,7 +283,7 @@
 | 20 | 2 | `mr:0720-elias-thesbita` |  | IL | commemoratio |  |  |
 | 20 | 3 | `mr:0720-ioseph` |  | PS | commemoratio |  |  |
 | 20 | 4 | `mr:0720-marina` |  | TR | dies_natalis |  |  |
-| 20 | 5 | `mr:0720-frumentius` |  | ET | dies_natalis |  |  |
+| 20 | 5 | `mr:0720-frumentius` |  | ET | dies_natalis | same as `mr:1027-frumentius` |  |
 | 20 | 6 | `mr:0720-aurelius` |  | TN | dies_natalis |  |  |
 | 20 | 7 | `mr:0720-vulmarus` |  | FR | dies_natalis |  |  |
 | 20 | 8 | `mr:0720-paulus` |  | ES | dies_natalis |  |  |
@@ -298,7 +298,7 @@
 | 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-pujalte-y-sanchez-et-francisca-a-corde-iesu-aldea-y-araujo` | * | ES | dies_natalis |  |  |
 | 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT | celebratio |  |  |
 | 21 | 2 | `mr:0721-victor` |  | FR | dies_natalis |  |  |
-| 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis |  |  |
+| 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis | same as `mr:0701-simeon-salus` |  |
 | 21 | 4 | `mr:0721-praxedes` |  | IT | commemoratio |  |  |
 | 21 | 5 | `mr:0721-arbogastus` |  | FR | dies_natalis |  |  |
 | 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  |  |
@@ -396,7 +396,7 @@
 | 27 | 2 | `mr:0727-pantaleon` |  | TR | dies_natalis |  |  |
 | 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis |  |  |
-| 27 | 5 | `mr:0727-simeon` |  | TR | dies_natalis |  |  |
+| 27 | 5 | `mr:0727-simeon` |  | TR | dies_natalis | same as `mr:0105-simeon` |  |
 | 27 | 6 | `mr:0727-ursus` | * | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0727-ecclesius` | * | IT | dies_natalis |  |  |
 | 27 | 8 | `mr:0727-galactorius` | * | FR | dies_natalis |  |  |

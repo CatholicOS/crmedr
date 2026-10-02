@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:0601-iustinus` |  | IT | dies_natalis |  |  |
 | 1 | 2 | `mr:0601-chariton-et-socii` |  | IT | dies_natalis |  |  |
-| 1 | 3 | `mr:0601-ammon-et-socii` |  | EG | dies_natalis |  |  |
+| 1 | 3 | `mr:0601-ammon-et-socii` |  | EG | dies_natalis | same as `mr:1220-ammon-et-socii` |  |
 | 1 | 4 | `mr:0601-ischyrion-et-socii` |  | EG | dies_natalis |  |  |
 | 1 | 5 | `mr:0601-proculus` |  | IT | dies_natalis |  |  |
 | 1 | 6 | `mr:0601-fortunatus` |  | IT | dies_natalis |  |  |
@@ -75,7 +75,7 @@
 | 5 | 11 | `mr:0605-dominicus-toai-et-dominicus-huyen` |  | VN | dies_natalis |  |  |
 | 6 | (1) | `mr:0606-norbertus` |  | FR | dies_natalis |  |  |
 | 6 | 2 | `mr:0606-artemius-et-paulina` |  | IT | dies_natalis |  |  |
-| 6 | 3 | `mr:0606-bessarion` |  | EG | dies_natalis |  |  |
+| 6 | 3 | `mr:0606-bessarion` |  | EG | dies_natalis | same as `mr:0617-bessarion` |  |
 | 6 | 4 | `mr:0606-ceratius` | * | FR | dies_natalis |  |  |
 | 6 | 5 | `mr:0606-eustorgius-secundus` |  | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0606-iarlathus` | * | IE | dies_natalis |  |  |
@@ -111,7 +111,7 @@
 | 8 | 11 | `mr:0608-nicolaus-de-gesturi-medda` | * | IT | dies_natalis |  |  |
 | 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis |  |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  |  |
-| 9 | 3 | `mr:0609-diomedes` |  | TR | dies_natalis |  |  |
+| 9 | 3 | `mr:0609-diomedes` |  | TR | dies_natalis | same as `mr:0816-diomedes` |  |
 | 9 | 4 | `mr:0609-vincentius` |  | FR | dies_natalis |  |  |
 | 9 | 5 | `mr:0609-maximianus` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:0609-columba` |  | GB | dies_natalis |  |  |
@@ -131,7 +131,7 @@
 | 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | Entry 9* at June 10 in the Latin editio altera 2004 print (verified on the page scan); the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando). |
 | 10 | 10 | `mr:0610-eduardus-poppe` | * | BE | dies_natalis | CEI: entry 9 |  |
 | 11 | (1) | `mr:0611-barnabas` |  | IL | dies_natalis |  |  |
-| 11 | 2 | `mr:0611-maximus` |  | IT | dies_natalis |  |  |
+| 11 | 2 | `mr:0611-maximus` |  | IT | dies_natalis | same as `mr:0610-maximus` |  |
 | 11 | 3 | `mr:0611-rembertus` |  | DE | dies_natalis |  |  |
 | 11 | 4 | `mr:0611-bardo` | * | DE | dies_natalis | CEI: asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 11 | 5 | `mr:0611-aleydis` | * | BE | dies_natalis |  |  |
@@ -157,10 +157,10 @@
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia-barba` | * | IT | dies_natalis |  |  |
 | 13 | (1) | `mr:0613-antonius` |  | PT | dies_natalis |  |  |
 | 13 | 2 | `mr:0613-felicula` |  | IT | dies_natalis |  |  |
-| 13 | 3 | `mr:0613-achilleus` |  | EG | dies_natalis |  |  |
+| 13 | 3 | `mr:0613-achilleus` |  | EG | dies_natalis | same as `mr:1107-achilleus` |  |
 | 13 | 4 | `mr:0613-triphyllius` |  | CY | dies_natalis |  |  |
 | 13 | 5 | `mr:0613-cetheus` |  | IT | dies_natalis |  |  |
-| 13 | 6 | `mr:0613-eulogius` |  | EG | dies_natalis |  |  |
+| 13 | 6 | `mr:0613-eulogius` |  | EG | dies_natalis | same as `mr:0913-eulogius` |  |
 | 13 | 7 | `mr:0613-psalmodius` | * | FR | dies_natalis |  |  |
 | 13 | 8 | `mr:0613-ragnebertus` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0613-aventinus` | * | FR | dies_natalis |  |  |
@@ -227,14 +227,14 @@
 | 19 | 2 | `mr:0619-gervasius-et-protasius` |  | IT | commemoratio |  |  |
 | 19 | 3 | `mr:0619-deodatus` | * | FR | dies_natalis |  |  |
 | 19 | 4 | `mr:0619-childomarca` | * | FR | dies_natalis |  |  |
-| 19 | 5 | `mr:0619-lambertus` |  | ES | dies_natalis |  |  |
+| 19 | 5 | `mr:0619-lambertus` |  | ES | dies_natalis | same as `mr:0416-lambertus` |  |
 | 19 | 6 | `mr:0619-gerlandus` | * | IT | translatio |  |  |
 | 19 | 7 | `mr:0619-iuliana-falconieri` |  | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:0619-michaelina` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0619-sebastianus-newdigate-et-socii` | * | GB | dies_natalis |  |  |
 | 19 | 10 | `mr:0619-thomas-woodhouse` | * | GB | dies_natalis |  |  |
 | 19 | 11 | `mr:0619-remigius-isore-et-modestus-andlauer` |  | CN | dies_natalis |  |  |
-| 20 | 1 | `mr:0620-methodius` |  | GR | commemoratio |  |  |
+| 20 | 1 | `mr:0620-methodius` |  | GR | commemoratio | same as `mr:0918-methodius` |  |
 | 20 | 2 | `mr:0620-gobanus` | * | FR | dies_natalis |  |  |
 | 20 | 3 | `mr:0620-ioannes-de-mateola` | * | IT | dies_natalis |  |  |
 | 20 | 4 | `mr:0620-margarita-ebner` | * | DE | dies_natalis |  |  |
@@ -255,8 +255,8 @@
 | 22 | (2) | `mr:0622-ioannes-fisher-et-thomas-more` |  | GB | dies_natalis |  |  |
 | 22 | 3 | `mr:0622-flavius-clemens` |  | IT | commemoratio |  |  |
 | 22 | 4 | `mr:0622-albanus` |  | GB | dies_natalis |  |  |
-| 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB | dies_natalis |  |  |
-| 22 | 6 | `mr:0622-eusebius` |  | SY | dies_natalis |  |  |
+| 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB | dies_natalis | same as `mr:0701-iulius-et-aaron` |  |
+| 22 | 6 | `mr:0622-eusebius` |  | SY | dies_natalis | same as `mr:0621-eusebius` |  |
 | 22 | 7 | `mr:0622-nicetas` |  | RS | commemoratio |  |  |
 | 22 | 8 | `mr:0622-innocentius-v` | * | IT | dies_natalis |  |  |
 | 23 | 1 | `mr:0623-nicomedia` |  | TR | commemoratio |  |  |
@@ -342,8 +342,8 @@
 | 30 | 4 | `mr:0630-bertichramnus` | * | FR | dies_natalis |  |  |
 | 30 | 5 | `mr:0630-erentrudis` | * | AT | dies_natalis |  |  |
 | 30 | 6 | `mr:0630-theobaldus` |  | IT | dies_natalis |  |  |
-| 30 | 7 | `mr:0630-ladislaus` |  | SK | dies_natalis |  |  |
-| 30 | 8 | `mr:0630-otho` |  | DE | dies_natalis |  |  |
+| 30 | 7 | `mr:0630-ladislaus` |  | SK | dies_natalis | same as `mr:0627-ladislaus` |  |
+| 30 | 8 | `mr:0630-otho` |  | DE | dies_natalis | same as `mr:0702-otho` |  |
 | 30 | 9 | `mr:0630-adolphus` | * | DE | dies_natalis |  |  |
 | 30 | 10 | `mr:0630-philippus-powell` | * | GB | dies_natalis |  |  |
 | 30 | 11 | `mr:0630-ianuarius-maria-sarnelli` | * | IT | dies_natalis |  |  |

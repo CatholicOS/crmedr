@@ -25,10 +25,10 @@
 | 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio |  |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0202-laurentius` |  | GB | dies_natalis |  |  |
-| 2 | 4 | `mr:0202-burchardus` |  | DE | dies_natalis |  |  |
+| 2 | 4 | `mr:0202-burchardus` |  | DE | dies_natalis | same as `mr:1014-burchardus` |  |
 | 2 | 5 | `mr:0202-simon-de-cassia-fidati` | * | IT | dies_natalis |  |  |
 | 2 | 6 | `mr:0202-petrus-cambiani-de-ruffia` | * | IT | dies_natalis |  |  |
-| 2 | 7 | `mr:0202-catharina-de-ricci` |  | IT | dies_natalis |  |  |
+| 2 | 7 | `mr:0202-catharina-de-ricci` |  | IT | dies_natalis | same as `mr:0213-catharina-de-ricci` |  |
 | 2 | 8 | `mr:0202-ioanna-de-lestonnac` |  | FR | dies_natalis |  |  |
 | 2 | 9 | `mr:0202-nicolaus-saggio-de-langobardis` | * | IT | dies_natalis |  |  |
 | 2 | 10 | `mr:0202-stephanus-bellesini` | * | IT | dies_natalis |  |  |
@@ -150,7 +150,7 @@
 | 11 | 4 | `mr:0211-castrensis` |  | IT | dies_natalis |  |  |
 | 11 | 5 | `mr:0211-secundinus` | * | IT | dies_natalis |  |  |
 | 11 | 6 | `mr:0211-severinus` |  | FR | dies_natalis |  |  |
-| 11 | 7 | `mr:0211-gregorius-ii` |  | IT | depositio |  |  |
+| 11 | 7 | `mr:0211-gregorius-ii` |  | IT | depositio | same as `mr:0213-gregorius-ii` |  |
 | 11 | 8 | `mr:0211-paschalis-i` |  | IT | depositio |  |  |
 | 11 | 9 | `mr:0211-ardanus` | * | FR | dies_natalis |  |  |
 | 11 | 10 | `mr:0211-petrus-maldonado` |  | MX | dies_natalis |  |  |
@@ -217,9 +217,9 @@
 | 17 | 11 | `mr:0217-lucas-belludi` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:0217-petrus-yu-chong-nyul` |  | KR | dies_natalis |  |  |
 | 17 | 13 | `mr:0217-antonius-leszczewicz` | * | PL | dies_natalis |  |  |
-| 18 | 1 | `mr:0218-sadoth-et-socii` |  | IR | dies_natalis |  |  |
+| 18 | 1 | `mr:0218-sadoth-et-socii` |  | IR | dies_natalis | same as `mr:0220-sadoth-et-socii` |  |
 | 18 | 2 | `mr:0218-helladius` |  | ES | dies_natalis |  |  |
-| 18 | 3 | `mr:0218-tarasius` |  | TR | dies_natalis |  |  |
+| 18 | 3 | `mr:0218-tarasius` |  | TR | dies_natalis | same as `mr:0225-tarasius` |  |
 | 18 | 4 | `mr:0218-angilbertus` | * | FR | dies_natalis |  |  |
 | 18 | 5 | `mr:0218-theotonius` | * | PT | dies_natalis |  |  |
 | 18 | 6 | `mr:0218-ioannes-faesulani-angelicus` | * | IT | dies_natalis |  |  |

@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:0101-sigismundus-gorazdowski` | * | UA | dies_natalis |  |  |
 | 1 | 18 | `mr:0101-marianus-konopinski` | * | DE | dies_natalis |  |  |
 | 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR | celebratio |  |  |
-| 2 | 2 | `mr:0102-telesphorus` |  | IT | depositio |  |  |
+| 2 | 2 | `mr:0102-telesphorus` |  | IT | depositio | same as `mr:0105-telesphorus` |  |
 | 2 | 3 | `mr:0102-argeus-et-socii` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0102-theodorus` | * | FR | dies_natalis |  |  |
 | 2 | 5 | `mr:0102-bladulphus` | * | IT | dies_natalis |  |  |
@@ -60,7 +60,7 @@
 | 4 | 11 | `mr:0104-elisabeth-anna-seton` |  | US | dies_natalis | CEI: entry 10 |  |
 | 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition and in Mons. Barba's Word transcription; absent from the digitized workbook. Bl. Manuel González García was canonized in 2016: status change with no ID change. |
 | 5 | 1 | `mr:0105-syncletica` |  | EG | dies_natalis |  |  |
-| 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis |  |  |
+| 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis | same as `mr:0322-deogratias` |  |
 | 5 | 3 | `mr:0105-aemiliana` |  | IT | commemoratio |  |  |
 | 5 | 4 | `mr:0105-convoio` | * | FR | dies_natalis |  |  |
 | 5 | 5 | `mr:0105-eduardus-confessor` |  | GB | dies_natalis |  |  |
@@ -177,7 +177,7 @@
 | 13 | 10 | `mr:0113-veronica-de-binasco-negroni` | * | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:0113-dominicus-pham-trong-kham-et-lucas-thin` |  | VN | dies_natalis |  |  |
 | 13 | 12 | `mr:0113-aemilius-szramek` | * | DE | dies_natalis |  |  |
-| 14 | 1 | `mr:0114-potitus` |  | BG | commemoratio |  |  |
+| 14 | 1 | `mr:0114-potitus` |  | BG | commemoratio | same as `mr:0113-potitus` |  |
 | 14 | 2 | `mr:0114-glycerius` |  | TR | dies_natalis |  |  |
 | 14 | 3 | `mr:0114-felix` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0114-monachi-raithi` |  | EG | commemoratio |  |  |
@@ -222,8 +222,8 @@
 | 16 | 14 | `mr:0116-ioanna-maria-condesa-lluch` | * | ES | dies_natalis |  |  |
 | 17 | (1) | `mr:0117-antonius` |  | EG | dies_natalis |  |  |
 | 17 | 2 | `mr:0117-speusippus-et-socii` |  | TR | dies_natalis |  |  |
-| 17 | 3 | `mr:0117-iulianus` |  | TR | commemoratio |  |  |
-| 17 | 4 | `mr:0117-marcellus` |  | FR | dies_natalis |  |  |
+| 17 | 3 | `mr:0117-iulianus` |  | TR | commemoratio | same as `mr:0114-iulianus` |  |
+| 17 | 4 | `mr:0117-marcellus` |  | FR | dies_natalis | same as `mr:0409-marcellus` |  |
 | 17 | 5 | `mr:0117-sulpicius-pius` |  | FR | dies_natalis |  |  |
 | 17 | 6 | `mr:0117-gamelbertus` | * | DE | dies_natalis |  |  |
 | 17 | 7 | `mr:0117-rosselina` | * | FR | dies_natalis |  |  |
@@ -245,11 +245,11 @@
 | 19 | 2 | `mr:0119-pontianus` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0119-marius-et-socii` |  | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:0119-macarius-magnus` |  | EG | commemoratio |  |  |
-| 19 | 5 | `mr:0119-macarius-alexandrinus` |  | EG | commemoratio |  |  |
+| 19 | 5 | `mr:0119-macarius-alexandrinus` |  | EG | commemoratio | same as `mr:0102-macarius-alexandrinus` |  |
 | 19 | 6 | `mr:0119-bassianus` |  | IT | commemoratio |  |  |
-| 19 | 7 | `mr:0119-liberata-et-faustina` |  | IT | dies_natalis |  |  |
+| 19 | 7 | `mr:0119-liberata-et-faustina` |  | IT | dies_natalis | same as `mr:0118-liberata` |  |
 | 19 | 8 | `mr:0119-launomarus` | * | FR | dies_natalis |  |  |
-| 19 | 9 | `mr:0119-ioannes` |  | IT | dies_natalis |  |  |
+| 19 | 9 | `mr:0119-ioannes` |  | IT | dies_natalis | same as `mr:0112-ioannes` |  |
 | 19 | 10 | `mr:0119-remigius` | * | FR | dies_natalis |  |  |
 | 19 | 11 | `mr:0119-arsenius` | * | GR | dies_natalis |  |  |
 | 19 | 12 | `mr:0119-marcellus-spinola-y-maestre` | * | ES | dies_natalis |  |  |
@@ -315,7 +315,7 @@
 | 25 | 4 | `mr:0125-agileus` |  | TN | dies_natalis |  |  |
 | 25 | 5 | `mr:0125-gregorius` |  | TR | dies_natalis |  |  |
 | 25 | 6 | `mr:0125-bretannion` |  | RO | commemoratio |  |  |
-| 25 | 7 | `mr:0125-palaemon` |  | EG | dies_natalis |  |  |
+| 25 | 7 | `mr:0125-palaemon` |  | EG | dies_natalis | same as `mr:0111-palaemon` |  |
 | 25 | 8 | `mr:0125-praeiectus-et-amarinus` |  | FR | dies_natalis |  |  |
 | 25 | 9 | `mr:0125-poppo` |  | FR | dies_natalis |  |  |
 | 25 | 10 | `mr:0125-henricus-suso` | * | DE | dies_natalis |  |  |
@@ -369,7 +369,7 @@
 | 30 | 1 | `mr:0130-matthias` |  | IL | dies_natalis |  |  |
 | 30 | 2 | `mr:0130-barsimaeus` |  | TR | dies_natalis |  |  |
 | 30 | 3 | `mr:0130-martina` |  | IT | commemoratio |  |  |
-| 30 | 4 | `mr:0130-bathildis` |  | FR | dies_natalis |  |  |
+| 30 | 4 | `mr:0130-bathildis` |  | FR | dies_natalis | same as `mr:0126-bathildis` |  |
 | 30 | 5 | `mr:0130-aldegundis` |  | FR | dies_natalis |  |  |
 | 30 | 6 | `mr:0130-armentarius` |  | IT | dies_natalis |  |  |
 | 30 | 7 | `mr:0130-theophilus-iuvenis` |  | CY | dies_natalis |  |  |

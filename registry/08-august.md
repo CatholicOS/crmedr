@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0801-alphonsus-maria-de-liguori` |  | IT | dies_natalis |  |  |
+| 1 | (1) | `mr:0801-alphonsus-maria-de-liguori` |  | IT | dies_natalis | same as `mr:0802-alphonsus-maria-de-liguori` |  |
 | 1 | 2 | `mr:0801-septem-fratres-martyres-antiochiae` |  | TR | commemoratio |  |  |
 | 1 | 3 | `mr:0801-secundinus` |  | IT | dies_natalis |  |  |
 | 1 | 4 | `mr:0801-felix` |  | ES | dies_natalis |  |  |
@@ -27,7 +27,7 @@
 | 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR | celebratio |  |  |
 | 2 | 3 | `mr:0802-rutilius` |  | TN | commemoratio |  |  |
 | 2 | 4 | `mr:0802-stephanus-i` |  | IT | dies_natalis |  |  |
-| 2 | 5 | `mr:0802-centolla` |  | ES | dies_natalis |  |  |
+| 2 | 5 | `mr:0802-centolla` |  | ES | dies_natalis | same as `mr:0813-centolla` |  |
 | 2 | 6 | `mr:0802-maximus` |  | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0802-serenus` | * | FR | dies_natalis |  |  |
 | 2 | 8 | `mr:0802-betharius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
@@ -69,7 +69,7 @@
 | 5 | 8 | `mr:0805-viator` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0805-oswaldus` |  | GB | dies_natalis |  |  |
 | 5 | 10 | `mr:0805-franciscus-zanfredini` | * | IT | dies_natalis |  |  |
-| 5 | 11 | `mr:0805-margarita` |  | IT | dies_natalis |  |  |
+| 5 | 11 | `mr:0805-margarita` |  | IT | dies_natalis | same as `mr:0827-margarita` |  |
 | 5 | 12 | `mr:0805-petrus-michael-noel` | * | FR | dies_natalis |  |  |
 | 6 | (1) | `mr:0806-transfiguratio-domini` |  | PS | celebratio |  |  |
 | 6 | 2 | `mr:0806-xystus-ii` |  | IT | dies_natalis |  |  |
@@ -83,7 +83,7 @@
 | 6 | 10 | `mr:0806-thaddaeus-dulny` | * | DE | dies_natalis |  |  |
 | 7 | (1) | `mr:0807-xystus-ii-et-socii` |  | IT | celebratio |  |  |
 | 7 | (2) | `mr:0807-caietanus-thienaeus` |  | IT | dies_natalis |  |  |
-| 7 | 3 | `mr:0807-afra` |  | DE | dies_natalis |  |  |
+| 7 | 3 | `mr:0807-afra` |  | DE | dies_natalis | same as `mr:0805-afra` |  |
 | 7 | 4 | `mr:0807-donatus-aretii` |  | IT | dies_natalis |  |  |
 | 7 | 5 | `mr:0807-donatianus` |  | FR | dies_natalis |  |  |
 | 7 | 6 | `mr:0807-victricius` |  | FR | dies_natalis |  |  |
@@ -97,11 +97,11 @@
 | 7 | 14 | `mr:0807-nicolaus-postgate` | * | GB | dies_natalis |  |  |
 | 7 | 15 | `mr:0807-edmundus-bojanowski` | * | PL | dies_natalis |  |  |
 | 7 | 16 | `mr:0807-michael-de-la-mora` |  | MX | dies_natalis |  |  |
-| 8 | (1) | `mr:0808-dominicus` |  | ES | celebratio |  |  |
+| 8 | (1) | `mr:0808-dominicus` |  | ES | celebratio | same as `mr:0804-dominicus` |  |
 | 8 | 2 | `mr:0808-secundus-et-socii` |  | IT | dies_natalis |  |  |
 | 8 | 3 | `mr:0808-cyriacus-et-socii` |  | IT | dies_natalis |  |  |
 | 8 | 4 | `mr:0808-marinus` |  | TR | dies_natalis |  |  |
-| 8 | 5 | `mr:0808-eusebius` |  | IT | dies_natalis |  |  |
+| 8 | 5 | `mr:0808-eusebius` |  | IT | dies_natalis | same as `mr:0812-eusebius` |  |
 | 8 | 6 | `mr:0808-severus` |  | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:0808-mummolus` | * | FR | dies_natalis |  |  |
 | 8 | 8 | `mr:0808-aemilianus` |  | TR | dies_natalis |  |  |
@@ -206,8 +206,8 @@
 | 14 | 12 | `mr:0814-felix-yuste-cava` | * | ES | dies_natalis |  |  |
 | 15 | (1) | `mr:0815-assumptio-beatae-mariae-virginis` |  |  | celebratio |  |  |
 | 15 | 2 | `mr:0815-tarsicius` |  | IT | commemoratio |  |  |
-| 15 | 3 | `mr:0815-straton-et-socii` |  | TR | dies_natalis |  |  |
-| 15 | 4 | `mr:0815-simplicianus` |  | IT | dies_natalis |  |  |
+| 15 | 3 | `mr:0815-straton-et-socii` |  | TR | dies_natalis | same as `mr:0817-straton-et-socii` |  |
+| 15 | 4 | `mr:0815-simplicianus` |  | IT | dies_natalis | same as `mr:0816-simplicianus` |  |
 | 15 | 5 | `mr:0815-alypius` |  | DZ | commemoratio |  |  |
 | 15 | 6 | `mr:0815-altfridus` | * | DE | dies_natalis |  |  |
 | 15 | 7 | `mr:0815-stephanus` | * | HU | dies_natalis |  |  |
@@ -244,7 +244,7 @@
 | 16 | 17 | `mr:0816-gabriel-sanchis-mompo` | * | ES | dies_natalis |  |  |
 | 17 | 1 | `mr:0817-myron` |  | TR | dies_natalis |  |  |
 | 17 | 2 | `mr:0817-mamas` |  | TR | dies_natalis |  |  |
-| 17 | 3 | `mr:0817-eusebius` |  | IT | dies_natalis |  |  |
+| 17 | 3 | `mr:0817-eusebius` |  | IT | dies_natalis | same as `mr:0926-eusebius-papa` |  |
 | 17 | 4 | `mr:0817-iero` | * | NL | dies_natalis |  |  |
 | 17 | 5 | `mr:0817-elias-iunior` | * | GR | dies_natalis |  |  |
 | 17 | 6 | `mr:0817-nicolaus-politi` | * | IT | dies_natalis |  |  |
@@ -261,7 +261,7 @@
 | 18 | 4 | `mr:0818-helena` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0818-firminus` |  | FR | dies_natalis |  |  |
 | 18 | 6 | `mr:0818-eonius` | * | FR | dies_natalis |  |  |
-| 18 | 7 | `mr:0818-macarius` |  | TR | dies_natalis |  |  |
+| 18 | 7 | `mr:0818-macarius` |  | TR | dies_natalis | same as `mr:0401-macarius` |  |
 | 18 | 8 | `mr:0818-leonardus` | * | IT | dies_natalis |  |  |
 | 18 | 9 | `mr:0818-rainaldus-de-concoregio` | * | IT | dies_natalis |  |  |
 | 18 | 10 | `mr:0818-paula-montaldi` | * | IT | dies_natalis |  |  |
@@ -273,7 +273,7 @@
 | 18 | 16 | `mr:0818-albertus-hurtado-cruchaga` | * | CL | dies_natalis |  |  |
 | 19 | (1) | `mr:0819-ioannes-eudes` |  | FR | dies_natalis |  |  |
 | 19 | 2 | `mr:0819-magnus` |  | IT | dies_natalis |  |  |
-| 19 | 3 | `mr:0819-maginus` |  | ES | dies_natalis |  |  |
+| 19 | 3 | `mr:0819-maginus` |  | ES | dies_natalis | same as `mr:0825-maginus` |  |
 | 19 | 4 | `mr:0819-timotheus` |  | PS | dies_natalis |  |  |
 | 19 | 5 | `mr:0819-andreas-et-socii` |  | TR | dies_natalis |  |  |
 | 19 | 6 | `mr:0819-xystus-iii` |  | IT | depositio |  |  |
@@ -312,7 +312,7 @@
 | 21 | 6 | `mr:0821-luxorius` |  | IT | dies_natalis |  |  |
 | 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  |  |
 | 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  |  |
-| 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis |  |  |
+| 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |
 | 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 21 | 12 | `mr:0821-victoria-rasoamanarivo` | * | MG | dies_natalis |  |  |
@@ -351,7 +351,7 @@
 | 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  |  |
 | 24 | 3 | `mr:0824-audoenus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR | dies_natalis |  |  |
-| 24 | 5 | `mr:0824-rosa` |  | PE | dies_natalis |  |  |
+| 24 | 5 | `mr:0824-rosa` |  | PE | dies_natalis | same as `mr:0826-rosa` |  |
 | 24 | 6 | `mr:0824-andreas-fardeau` | * | FR | dies_natalis |  |  |
 | 24 | 7 | `mr:0824-ioanna-antida-thouret` |  | IT | dies_natalis |  |  |
 | 24 | 8 | `mr:0824-aemilia-de-vialar` |  | FR | dies_natalis |  |  |
@@ -378,7 +378,7 @@
 | 26 | 3 | `mr:0826-anastasius` |  | HR | dies_natalis |  |  |
 | 26 | 4 | `mr:0826-victor` |  | DZ | dies_natalis |  |  |
 | 26 | 5 | `mr:0826-alexander` |  | IT | dies_natalis |  |  |
-| 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis |  |  |
+| 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis | same as `mr:0816-eleutherius` |  |
 | 26 | 7 | `mr:0826-iacobus-retouret` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0826-ioanna-elisabeth-bichier` |  | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:0826-maria-a-iesu-crucifixo-baouardy` | * | PS | dies_natalis |  |  |
@@ -413,11 +413,11 @@
 | 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  |  |
 | 28 | 4 | `mr:0828-iulianus` |  | FR | dies_natalis |  |  |
 | 28 | 5 | `mr:0828-alexander` |  | TR | dies_natalis |  |  |
-| 28 | 6 | `mr:0828-restitutus` |  | TN | dies_natalis |  |  |
+| 28 | 6 | `mr:0828-restitutus` |  | TN | dies_natalis | same as `mr:1209-restitutus` |  |
 | 28 | 7 | `mr:0828-vicinius` | * | IT | dies_natalis |  |  |
 | 28 | 8 | `mr:0828-vivianus` |  | FR | dies_natalis |  |  |
 | 28 | 9 | `mr:0828-moyses-aethiopis` |  | EG | dies_natalis |  |  |
-| 28 | 10 | `mr:0828-florentina` |  | ES | dies_natalis |  |  |
+| 28 | 10 | `mr:0828-florentina` |  | ES | dies_natalis | same as `mr:0620-florentina` |  |
 | 28 | 11 | `mr:0828-gulielmus-dean-et-socii` | * | GB | dies_natalis |  |  |
 | 28 | 12 | `mr:0828-edmundus-arrowsmith` |  | GB | dies_natalis |  |  |
 | 28 | 13 | `mr:0828-iuniperus-serra` | * | US | dies_natalis |  |  |

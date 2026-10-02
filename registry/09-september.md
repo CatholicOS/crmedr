@@ -21,12 +21,12 @@
 | 1 | 15 | `mr:0901-petrus-rivera-et-socii` | * | ES | dies_natalis |  |  |
 | 2 | 1 | `mr:0902-zeno` |  | TR | dies_natalis |  |  |
 | 2 | 2 | `mr:0902-theodota` |  | TR | dies_natalis |  |  |
-| 2 | 3 | `mr:0902-habib` |  | TR | dies_natalis |  |  |
+| 2 | 3 | `mr:0902-habib` |  | TR | dies_natalis | same as `mr:1115-habib` |  |
 | 2 | 4 | `mr:0902-antoninus` |  | SY | dies_natalis |  |  |
 | 2 | 5 | `mr:0902-prosperus` | * | ES | dies_natalis |  |  |
 | 2 | 6 | `mr:0902-iustus` |  | FR | depositio |  |  |
 | 2 | 7 | `mr:0902-nonnosus` |  | IT | dies_natalis |  |  |
-| 2 | 8 | `mr:0902-syagrius` |  | FR | dies_natalis |  |  |
+| 2 | 8 | `mr:0902-syagrius` |  | FR | dies_natalis | same as `mr:0827-syagrius` |  |
 | 2 | 9 | `mr:0902-agricola` | * | FR | dies_natalis |  |  |
 | 2 | 10 | `mr:0902-elpidius` |  | IT | dies_natalis |  |  |
 | 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  |  |
@@ -112,7 +112,7 @@
 | 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio |  |  |
 | 8 | 3 | `mr:0908-faustus-et-socii` |  | EG | dies_natalis |  |  |
 | 8 | 4 | `mr:0908-isaac` |  | TR | dies_natalis |  |  |
-| 8 | 5 | `mr:0908-sergius-i` |  | IT | depositio |  |  |
+| 8 | 5 | `mr:0908-sergius-i` |  | IT | depositio | same as `mr:0909-sergius-i` |  |
 | 8 | 6 | `mr:0908-corbinianus` |  | DE | dies_natalis |  |  |
 | 8 | 7 | `mr:0908-petrus-de-chavanon` | * | FR | dies_natalis |  |  |
 | 8 | 8 | `mr:0908-seraphina-sforza` | * | IT | dies_natalis |  |  |
@@ -247,7 +247,7 @@
 | 17 | 14 | `mr:0917-timotheus-valero-perez` | * | ES | dies_natalis |  |  |
 | 17 | 15 | `mr:0917-sigismundus-sajna` | * | PL | dies_natalis |  |  |
 | 18 | 1 | `mr:0918-oceanus` |  | TR | dies_natalis |  |  |
-| 18 | 2 | `mr:0918-ariadna` |  | TR | dies_natalis |  |  |
+| 18 | 2 | `mr:0918-ariadna` |  | TR | dies_natalis | same as `mr:0917-ariadna` |  |
 | 18 | 3 | `mr:0918-ferreolus-viennensis` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:0918-eustorgius` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0918-senarius` | * | FR | dies_natalis |  |  |
@@ -266,7 +266,7 @@
 | 19 | 3 | `mr:0919-peleus-et-nilus` |  | PS | dies_natalis |  |  |
 | 19 | 4 | `mr:0919-eustochius` |  | FR | dies_natalis |  |  |
 | 19 | 5 | `mr:0919-sequanus` |  | FR | dies_natalis |  |  |
-| 19 | 6 | `mr:0919-marianus` |  | FR | dies_natalis |  |  |
+| 19 | 6 | `mr:0919-marianus` |  | FR | dies_natalis | same as `mr:0819-marianus` |  |
 | 19 | 7 | `mr:0919-goericus` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0919-theodorus` |  | GB | dies_natalis |  |  |
 | 19 | 9 | `mr:0919-pomposa` |  | ES | dies_natalis |  |  |
@@ -283,7 +283,7 @@
 | 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  |  |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR | dies_natalis |  |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
-| 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis |  |  |
+| 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-asianus` |  |
 | 20 | 5 | `mr:0920-adelpretus` | * | IT | dies_natalis |  |  |
 | 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  |  |
 | 20 | 7 | `mr:0920-franciscus-de-posadas` | * | ES | dies_natalis |  |  |
@@ -341,13 +341,13 @@
 | 24 | 1 | `mr:0924-anatolius` |  | IT | dies_natalis |  |  |
 | 24 | 2 | `mr:0924-andochius-et-socii` |  | FR | dies_natalis |  |  |
 | 24 | 3 | `mr:0924-rusticus` |  | FR | dies_natalis |  |  |
-| 24 | 4 | `mr:0924-lupus` |  | FR | dies_natalis |  |  |
+| 24 | 4 | `mr:0924-lupus` |  | FR | dies_natalis | same as `mr:0925-lupus` |  |
 | 24 | 5 | `mr:0924-isarnus` | * | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0924-gerardus-sagredo` |  | HU | dies_natalis |  |  |
 | 24 | 7 | `mr:0924-dalmatius-moner` | * | ES | dies_natalis |  |  |
 | 24 | 8 | `mr:0924-gulielmus-spenser-et-robertus-hardesty` | * | GB | dies_natalis |  |  |
 | 24 | 9 | `mr:0924-antonius-gonzalez` |  | JP | dies_natalis |  |  |
-| 24 | 10 | `mr:0924-pacificus-de-sancto-severino` |  | IT | dies_natalis |  |  |
+| 24 | 10 | `mr:0924-pacificus-de-sancto-severino` |  | IT | dies_natalis | same as `mr:0925-pacificus-de-sancto-severino` |  |
 | 24 | 11 | `mr:0924-antonius-martinus-slomsek` | * | SI | dies_natalis |  |  |
 | 24 | 12 | `mr:0924-columba-gabriel` | * | IT | dies_natalis |  |  |
 | 24 | 13 | `mr:0924-iosephus-raymundus-paschalis-ferrer-botella` | * | ES | dies_natalis |  |  |
@@ -365,7 +365,7 @@
 | 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU | dies_natalis |  |  |
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |  |
 | 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
-| 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis |  |  |
+| 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis | same as `mr:0927-cosmas-et-damianus` |  |
 | 26 | 2 | `mr:0926-gedeon` |  | IL | commemoratio |  |  |
 | 26 | 3 | `mr:0926-senator` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0926-eusebius` |  | IT | commemoratio |  |  |
@@ -398,7 +398,7 @@
 | 28 | (2) | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH | dies_natalis |  |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis |  |  |
 | 28 | 4 | `mr:0928-chariton` |  | PS | dies_natalis |  |  |
-| 28 | 5 | `mr:0928-zama` |  | IT | dies_natalis |  |  |
+| 28 | 5 | `mr:0928-zama` |  | IT | dies_natalis | same as `mr:0124-zama` |  |
 | 28 | 6 | `mr:0928-exsuperius` |  | FR | dies_natalis |  |  |
 | 28 | 7 | `mr:0928-eustochius` |  | PS | commemoratio |  |  |
 | 28 | 8 | `mr:0928-salonius` |  | CH | dies_natalis |  |  |
