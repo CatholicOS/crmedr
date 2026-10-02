@@ -1017,8 +1017,8 @@ def write_markdown(entries, repo_root):
             f"# {month_name}",
             "",
             f"{len(month_entries)} canonical IDs. "
-            "`Entry` is the elogium's position within the day in the digitized workbook "
-            "(editio altera 2004); an entry number in parentheses marks an unnumbered "
+            "`Entry` is the elogium's entry number within the day in the Latin "
+            "editio altera 2004 print; an entry number in parentheses marks an unnumbered "
             "header elogium (a drop-cap paragraph for a celebration with liturgical "
             "rank, counted but not printed as a number); `*` marks asterisked entries; "
             "`Country` is the ISO 3166-1 alpha-2 code of the modern country of the "

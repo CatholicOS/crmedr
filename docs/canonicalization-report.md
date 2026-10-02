@@ -678,7 +678,8 @@ altera 2004 print. Where another edition differs, the entry carries an `editions
 keyed by edition ID (`martyrologium_romanum_2004`, `martyrologium_romanum_2004_it_IT`,
 `martyrologium_romanum_2004_en_unofficial`), holding only the differences: `entry` (that
 edition's own number), `asterisk` (that edition's own marker) and `absent: true` (the
-edition does not print the eulogy at all). `same_eulogy` lists the IDs of the same
+edition does not print the eulogy at all) and `unnumbered` (that edition prints it
+without a number). `same_eulogy` lists the IDs of the same
 eulogy printed on a different day in another edition (a symmetric link).
 
 Four days are numbered differently in the Latin print and in the CEI edition (56 current
@@ -697,7 +698,8 @@ entries carry `editions`):
 26 existing IDs changed entry number on those days (the only new ID is
 mr:1210-marcus-antonius-durando). The 29 asterisk discrepancies between the Latin print
 and the CEI (see the sweep above) are recorded as CEI overrides (`editions` ->
-`martyrologium_romanum_2004_it_IT` -> `asterisk`), not as notes on the main placement.
+`martyrologium_romanum_2004_it_IT` -> `asterisk`); the explanatory notes remain on the
+entries.
 
 ## Country-code corrections (September 2026)
 

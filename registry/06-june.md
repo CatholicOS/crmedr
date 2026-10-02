@@ -1,6 +1,6 @@
 # June
 
-347 canonical IDs. `Entry` is the elogium's position within the day in the digitized workbook (editio altera 2004); an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium; `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
+347 canonical IDs. `Entry` is the elogium's entry number within the day in the Latin editio altera 2004 print; an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium; `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
