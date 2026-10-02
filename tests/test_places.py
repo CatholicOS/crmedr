@@ -172,13 +172,13 @@ class PrintOrderTest(unittest.TestCase):
             {"id": "mr:0104-unknown", "month": 1, "day": 4, "entry": None},
             {"id": "mr:0103-z", "month": 1, "day": 3, "entry": 5},
         ]
-        order = p.print_order(entries, positions={"mr:0104-late": 2})
+        order = p.print_order(entries)
         self.assertEqual([m for m, _, _ in order],
-                         ["mr:0103-z", "mr:0104-x", "mr:0104-late", "mr:0104-y", "mr:0104-unknown"])
+                         ["mr:0103-z", "mr:0104-x", "mr:0104-y", "mr:0104-late", "mr:0104-unknown"])
         self.assertEqual(order[0], ("mr:0103-z", 1, 3))
 
-    def test_known_print_positions(self):
-        self.assertEqual(p.PRINT_POSITION, {"mr:0104-abrunculus": 2, "mr:0610-marcus-antonius-durando": 9})
+    def test_no_print_positions_table(self):
+        self.assertFalse(hasattr(p, "PRINT_POSITION"))
 
 
 MISPRINTS = [

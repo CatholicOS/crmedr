@@ -40,6 +40,14 @@ import unicodedata
 from difflib import SequenceMatcher
 from pathlib import Path
 
+# Printed only in the CEI edition, so there is no Latin 2004 text to take the
+# honorific from; subjects as generated from the former Latin texts.
+LA_SUBJECT_OVERRIDES = {
+    "mr:0712-proclus-et-hilarion": "Sancti Proclus et Hilarion",
+    "mr:0825-eusebius-et-socii": "Sancti Eusebius et socii",
+    "mr:0709-maria-a-iesu-crucifixo-petkovic": "Beata Maria a Iesu Crucifixo Petkovic",
+}
+
 ROMAN = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xxiii'}
 FEASTS = {'nativitas', 'epiphania', 'annuntiatio', 'praesentatio', 'visitatio', 'assumptio',
           'exaltatio', 'dedicatio', 'conversio', 'cathedra', 'transfiguratio', 'conceptio',
@@ -199,9 +207,12 @@ def main():
         for m in range(1, 13):
             tex[loc].update(json.load(open(texts_repo / 'data' / 'editions' / folder / f'{m:02d}.json',
                                            encoding='utf-8')))
+    # Imported here: extract_typology imports `fold` from this module.
+    from extract_typology import latin_texts
+    tex['la'] = latin_texts(reg['entries'], tex['la'])
     out = {'la': {}, 'it': {}, 'en': {}}
     for e in current:
-        out['la'][e['id']] = la_subject(e['id'], tex['la'].get(e['id'], ''))
+        out['la'][e['id']] = LA_SUBJECT_OVERRIDES.get(e['id']) or la_subject(e['id'], tex['la'].get(e['id'], ''))
         la_text = tex['la'].get(e['id'], '')
         s = vern_subject(e['id'], tex['it'].get(e['id'], ''), IT_M, la_text)
         if s:

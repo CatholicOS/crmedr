@@ -73,3 +73,12 @@ class VernacularSubjectTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LatinSubjectOverridesTest(unittest.TestCase):
+    def test_cei_only_eulogies_keep_their_latin_subjects(self):
+        self.assertEqual(s.LA_SUBJECT_OVERRIDES, {
+            "mr:0712-proclus-et-hilarion": "Sancti Proclus et Hilarion",
+            "mr:0825-eusebius-et-socii": "Sancti Eusebius et socii",
+            "mr:0709-maria-a-iesu-crucifixo-petkovic": "Beata Maria a Iesu Crucifixo Petkovic",
+        })
