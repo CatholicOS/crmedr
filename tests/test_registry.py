@@ -153,6 +153,20 @@ class PlaceLeadCorrections25Test(unittest.TestCase):
         self.assertEqual(r.ID_CORRECTIONS["mr:1126-bonaventura"], "mr:1126-leonardus-a-portu-mauritio")
 
 
+class DeprecatedSameEulogy45Test(unittest.TestCase):
+    """#45: a deprecated ID that is the same eulogy as a current ID is removed."""
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        for gone, current in (("mr:0211-maria", "mr:0211-maria-de-lourdes"),
+                              ("mr:0731-ignatius", "mr:0731-ignatius-de-loyola"),
+                              ("mr:0615-vitus-et-socii", "mr:0615-vitus")):
+            self.assertNotIn(gone, entries)
+            self.assertFalse(entries[current].get("deprecated"), current)
+        self.assertTrue(entries["mr:0827-rufus-et-carpophorus"]["deprecated"])
+
+
 class PerEditionPlacementsTest(unittest.TestCase):
     """Per-edition differences from the main (Latin print) placement."""
 
