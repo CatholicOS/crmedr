@@ -1084,7 +1084,7 @@ eulogy is directed to, in nominative display form — stored per language in
 strings for untranslated subjects. The Latin file is fully filled (honorific from the
 sanctity marker of the 2004 text, suppressed for feasts, pluralized for pairs and
 groups; name from the slug; deprecated IDs from their historical-edition extraction).
-The Italian (4,638 filled) and English (5,943 filled) files are partial extractions
+The Italian (4,779 filled) and English (6,130 filled) files are partial extractions
 from the 2004-edition texts (English also drawing deprecated subjects from the aligned
 1914 edition), kept only when verified against the slug, and await translator
 completion. Subject and slug are
