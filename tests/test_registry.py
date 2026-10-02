@@ -43,8 +43,8 @@ class RegistryTypologyTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             r.write_markdown(r.add_typology([dict(ENTRY)], {"mr:0101-fictitius": "depositio"}), Path(d))
             md = (Path(d) / "registry" / "01-january.md").read_text(encoding="utf-8")
-        self.assertIn("| Day | Entry | ID | * | Country | Typology | Notes |", md)
-        self.assertIn("| 1 | 1 | `mr:0101-fictitius` |  | IT | depositio | n |", md)
+        self.assertIn("| Day | Entry | ID | * | Country | Typology | Editions | Notes |", md)
+        self.assertIn("| 1 | 1 | `mr:0101-fictitius` |  | IT | depositio |  | n |", md)
         self.assertIn("`Typology`", md)
 
 
@@ -151,6 +151,88 @@ class PlaceLeadCorrections25Test(unittest.TestCase):
         for mr_id in ("mr:0320-photina-et-socii", "mr:0823-philippus-benizi", "mr:0324-pigmenius"):
             self.assertTrue(entries[mr_id]["deprecated"], mr_id)
         self.assertEqual(r.ID_CORRECTIONS["mr:1126-bonaventura"], "mr:1126-leonardus-a-portu-mauritio")
+
+
+class PerEditionPlacementsTest(unittest.TestCase):
+    """Per-edition differences from the main (Latin print) placement."""
+
+    def test_overrides_record_cei_differences(self):
+        self.assertEqual(
+            r.edition_overrides("mr:0104-gregorius", entry=3, asterisk=False, cei_entry=2, cei_asterisk=False),
+            {r.EDITION_IT: {"entry": 2}})
+        self.assertEqual(
+            r.edition_overrides("mr:0104-ferreolus", entry=4, asterisk=True, cei_entry=3, cei_asterisk=False),
+            {r.EDITION_IT: {"entry": 3, "asterisk": False}})
+        self.assertEqual(
+            r.edition_overrides("mr:0101-fictitius", entry=1, asterisk=False, cei_entry=1, cei_asterisk=False), {})
+
+    def test_cei_only_eulogies_are_absent_from_latin_and_english(self):
+        self.assertEqual(
+            r.edition_overrides("mr:0712-proclus-et-hilarion", entry=1, asterisk=False, cei_entry=1, cei_asterisk=False),
+            {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
+
+    def test_tables(self):
+        self.assertEqual(r.LATIN_RENUMBERING["mr:0104-gregorius"], 3)
+        self.assertEqual(r.LATIN_RENUMBERING["mr:0104-elisabeth-anna-seton"], 11)
+        self.assertEqual(r.LATIN_RENUMBERING["mr:0610-eduardus-poppe"], 10)
+        self.assertEqual(r.LATIN_RENUMBERING["mr:0825-genesius"], 3)
+        self.assertEqual(r.LATIN_RENUMBERING["mr:0825-aloysius-urbano-lanaspa"], 13)
+        self.assertEqual(r.LATIN_RENUMBERING["mr:1210-gundisalvus-vines-masip"], 9)
+        self.assertEqual(r.CEI_ONLY, {"mr:0712-proclus-et-hilarion", "mr:0825-eusebius-et-socii",
+                                      "mr:0709-maria-a-iesu-crucifixo-petkovic", "mr:1210-marcus-antonius-durando"})
+        self.assertEqual(r.SAME_EULOGY, {"mr:0610-marcus-antonius-durando": "mr:1210-marcus-antonius-durando"})
+        self.assertNotIn("mr:1210-marcus-antonius-durando", r.ID_CORRECTIONS)
+        self.assertNotIn("mr:0610-marcus-antonius-durando", r.PLACEMENT_OVERRIDES)
+        print_only = {e["id"]: e for e in r.PRINT_ONLY_ENTRIES}
+        self.assertEqual(print_only["mr:0104-abrunculus"]["entry"], 2)
+        self.assertEqual(print_only["mr:0104-abrunculus"]["editions"], {r.EDITION_IT: {"absent": True}})
+        self.assertEqual(print_only["mr:0104-emmanuel-gonzalez-garcia"]["entry"], 12)
+        self.assertEqual(print_only["mr:0104-emmanuel-gonzalez-garcia"]["editions"], {r.EDITION_IT: {"entry": 11}})
+        self.assertEqual(print_only["mr:0610-marcus-antonius-durando"]["entry"], 9)
+        self.assertEqual(print_only["mr:0610-marcus-antonius-durando"]["editions"], {r.EDITION_IT: {"absent": True}})
+
+    def test_link_same_eulogy_is_symmetric_and_idempotent(self):
+        entries = [{"id": "mr:0610-x", "month": 6, "day": 10}, {"id": "mr:1210-x", "month": 12, "day": 10}]
+        r.link_same_eulogy(entries, {"mr:0610-x": "mr:1210-x"})
+        r.link_same_eulogy(entries, {"mr:0610-x": "mr:1210-x"})
+        self.assertEqual(entries[0]["same_eulogy"], ["mr:1210-x"])
+        self.assertEqual(entries[1]["same_eulogy"], ["mr:0610-x"])
+
+    def _day(self):
+        return [
+            {"id": "mr:0825-a", "month": 8, "day": 25, "entry": 1, "asterisk": False, "unnumbered": True},
+            {"id": "mr:0825-b", "month": 8, "day": 25, "entry": 2, "asterisk": False, "unnumbered": True},
+            {"id": "mr:0825-c", "month": 8, "day": 25, "entry": 3, "asterisk": False,
+             "editions": {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}}},
+            {"id": "mr:0825-d", "month": 8, "day": 25, "entry": 3, "asterisk": False,
+             "editions": {r.EDITION_IT: {"entry": 4}}},
+        ]
+
+    def test_valid_day_with_unnumbered_memorias(self):
+        self.assertEqual(r.validate_editions(self._day()), [])
+
+    def test_numbering_clash_within_an_edition(self):
+        day = self._day()
+        del day[3]["editions"]  # the CEI would print both c and d as 3
+        errors = r.validate_editions(day)
+        self.assertTrue(any("8/25" in e and r.EDITION_IT in e for e in errors), errors)
+
+    def test_bad_overrides(self):
+        day = self._day()
+        day[3]["editions"] = {"martyrologium_romanum_1749": {"entry": 4}}
+        self.assertTrue(any("unknown edition" in e for e in r.validate_editions(day)))
+        day[3]["editions"] = {r.EDITION_IT: {"day": 26}}
+        self.assertTrue(any("unknown override key" in e for e in r.validate_editions(day)))
+        day[3]["editions"] = {r.EDITION_IT: {"entry": 3}}
+        self.assertTrue(any("repeats the main value" in e for e in r.validate_editions(day)))
+
+    def test_same_eulogy_must_link_back_on_another_day(self):
+        one = [{"id": "mr:0610-x", "month": 6, "day": 10, "entry": 1, "asterisk": False, "same_eulogy": ["mr:1210-x"]},
+               {"id": "mr:1210-x", "month": 12, "day": 10, "entry": 1, "asterisk": False}]
+        self.assertTrue(any("link back" in e for e in r.validate_editions(one)))
+        missing = [{"id": "mr:0610-x", "month": 6, "day": 10, "entry": 1, "asterisk": False, "same_eulogy": ["mr:1210-y"]}]
+        self.assertTrue(any("unknown" in e for e in r.validate_editions(missing)))
+
 
 
 if __name__ == "__main__":
