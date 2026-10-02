@@ -486,6 +486,11 @@ PLACEMENT_OVERRIDES = {}
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
+    "mr:1210-marcus-antonius-durando": (
+        "The CEI's placement (10 December, entry 9*) of the same eulogy the "
+        "Latin print and the English edition give at 10 June "
+        "(mr:0610-marcus-antonius-durando)."
+    ),
     "mr:0712-proclus-et-hilarion": (
         "Entry 1 at July 12 in the Italian (CEI) edition; absent from the "
         "Latin editio altera 2004 print, whose July 12 numbering begins at 2 "

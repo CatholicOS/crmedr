@@ -24,7 +24,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from extract_typology import RECOVERY, load_texts
+from extract_typology import RECOVERY, latin_texts, load_texts
 
 ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "ministry"]
 ROLE_OF_TYPOLOGY = {
@@ -611,6 +611,9 @@ def main():
             curated = json.load(f)
     texts = load_texts(texts_repo)
     texts_it = load_texts(texts_repo, EDITION_IT)
+    # The CEI files the June Durando's Italian text under mr:1210: give the
+    # June ID its same_eulogy twin's text.
+    texts_it = latin_texts(entries, texts_it)
     # Places are read from the Latin 2004 text: a eulogy the Latin print lacks
     # (printed only in the CEI) has none.
     latin_order = [o for o in order if o[0] in texts]
