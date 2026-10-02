@@ -490,6 +490,11 @@ PLACEMENT_OVERRIDES = {}
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
+    "mr:0410-beda": (
+        "The unofficial English 2004 edition mistranslates the subject as \"Saint Peter the "
+        "Younger\"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda "
+        "il Giovane. The English subject follows the Latin."
+    ),
     "mr:1210-marcus-antonius-durando": (
         "The CEI's placement (10 December, entry 9*) of the same eulogy the "
         "Latin print and the English edition give at 10 June "
