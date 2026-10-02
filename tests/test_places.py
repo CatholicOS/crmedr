@@ -229,6 +229,7 @@ class MisprintTest(unittest.TestCase):
         self.assertEqual(p.validate_duplicated_entries([rec], entries, texts), [])
         self.assertEqual(p.validate_duplicated_entries([dict(rec, before_entry=3)], entries, texts), [])
         self.assertTrue(p.validate_duplicated_entries([dict(rec, before_entry=4)], entries, texts))  # past the day's end
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, before_entry=True)], entries, texts))  # a bool is not an int
         self.assertTrue(p.validate_duplicated_entries([dict(rec, day=1)], entries, texts))           # its own day
         self.assertTrue(p.validate_duplicated_entries([dict(rec, day=3)], entries, texts))           # an empty day
         self.assertTrue(p.validate_duplicated_entries([dict(rec, id="mr:0101-z")], entries, texts))

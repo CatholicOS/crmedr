@@ -380,7 +380,7 @@ def validate_duplicated_entries(records, entries, texts_by_edition):
                     if (x["month"], x["day"]) == (r["month"], r["day"]) and not x.get("unnumbered")]
         if not numbered:
             errors.append(f"{r['id']}: no entries on {r['month']}/{r['day']}")
-        elif not isinstance(r["before_entry"], int) or not 1 <= r["before_entry"] <= len(numbered) + 1:
+        elif type(r["before_entry"]) is not int or not 1 <= r["before_entry"] <= len(numbered) + 1:
             errors.append(f"{r['id']}: before_entry must be 1 to {len(numbered) + 1} on {r['month']}/{r['day']}")
     keys = [(r.get("id"), r.get("edition")) for r in records]
     if keys != sorted(keys, key=lambda k: (str(k[0]), str(k[1]))):
