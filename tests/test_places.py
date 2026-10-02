@@ -219,6 +219,24 @@ class MisprintTest(unittest.TestCase):
         self.assertTrue(p.validate_misprints(rec("Fitt"), texts, ids))                 # a substring is not a word
         self.assertTrue(p.validate_misprints(rec("A Fittopoli nell territorio"), texts, ids))   # over 3 words
 
+    def test_duplicated_entries(self):
+        entries = [{"id": "mr:0101-a", "month": 1, "day": 1, "unnumbered": True},
+                   {"id": "mr:0102-x", "month": 1, "day": 2},
+                   {"id": "mr:0102-y", "month": 1, "day": 2}]
+        texts = {"martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fictopoli, san Fitto."}}
+        rec = {"id": "mr:0101-a", "edition": "martyrologium_romanum_2004_it_IT",
+               "month": 1, "day": 2, "before_entry": 1, "verified": "print"}
+        self.assertEqual(p.validate_duplicated_entries([rec], entries, texts), [])
+        self.assertEqual(p.validate_duplicated_entries([dict(rec, before_entry=3)], entries, texts), [])
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, before_entry=4)], entries, texts))  # past the day's end
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, before_entry=True)], entries, texts))  # a bool is not an int
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, day=1)], entries, texts))           # its own day
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, day=3)], entries, texts))           # an empty day
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, id="mr:0101-z")], entries, texts))
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, edition="x")], entries, texts))
+        self.assertTrue(p.validate_duplicated_entries([dict(rec, id="mr:0102-x", day=1)], entries, texts))  # no text
+        self.assertTrue(p.validate_duplicated_entries([{"id": "mr:0101-a"}], entries, texts))
+
     def test_stop_words_per_edition(self):
         self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, p.STOP_WORDS), {"betarum"})
         self.assertEqual(p.misprint_stop_words(MISPRINTS, p.EDITION_LA, {"sancti"}), set())
