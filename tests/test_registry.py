@@ -190,6 +190,22 @@ class February20Test(unittest.TestCase):
         self.assertIn("mr:0218-sadoth-et-socii", entries["mr:0220-eleutherius-et-socii"]["note"])
 
 
+class DeprecatedSameEulogy49Test(unittest.TestCase):
+    """#49: 42 more deprecated IDs that are the same eulogy as a current ID are removed."""
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        report = (root / "docs" / "canonicalization-report.md").read_text(encoding="utf-8")
+        section = report.split("**More deprecated IDs merged into current IDs", 1)[1]
+        table = section.split("| Removed deprecated ID | Current ID |", 1)[1].split("\n\n", 1)[0]
+        mapping = re.findall(r"^\| (mr:\S+) \| (mr:\S+) \|$", table, re.M)
+        self.assertEqual(len(mapping), 42)
+        for gone, current in mapping:
+            self.assertNotIn(gone, entries)
+            self.assertFalse(entries[current].get("deprecated"), current)
+
+
 class CrossDayEulogies49Test(unittest.TestCase):
     """#49: a eulogy printed on another day has its own ID there, linked by same_eulogy."""
 
