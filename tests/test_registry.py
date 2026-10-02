@@ -234,6 +234,42 @@ class PerEditionPlacementsTest(unittest.TestCase):
         self.assertTrue(any("unknown" in e for e in r.validate_editions(missing)))
 
 
+class PerEditionPlacementsDataTest(unittest.TestCase):
+    """The regenerated registry holds the 2004 editions' own placements."""
+
+    @classmethod
+    def setUpClass(cls):
+        root = Path(__file__).resolve().parent.parent
+        cls.e = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+
+    def test_january_4(self):
+        self.assertEqual((self.e["mr:0104-abrunculus"]["entry"], self.e["mr:0104-abrunculus"]["editions"]),
+                         (2, {r.EDITION_IT: {"absent": True}}))
+        self.assertEqual((self.e["mr:0104-gregorius"]["entry"], self.e["mr:0104-gregorius"]["editions"]),
+                         (3, {r.EDITION_IT: {"entry": 2}}))
+        self.assertEqual(self.e["mr:0104-emmanuel-gonzalez-garcia"]["entry"], 12)
+
+    def test_durando_has_one_id_per_day(self):
+        june, dec = self.e["mr:0610-marcus-antonius-durando"], self.e["mr:1210-marcus-antonius-durando"]
+        self.assertEqual((june["entry"], june["same_eulogy"]), (9, ["mr:1210-marcus-antonius-durando"]))
+        self.assertEqual((dec["entry"], dec["same_eulogy"]), (9, ["mr:0610-marcus-antonius-durando"]))
+        self.assertEqual(dec["editions"], {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
+        self.assertEqual(self.e["mr:1210-gundisalvus-vines-masip"]["editions"], {r.EDITION_IT: {"entry": 10}})
+
+    def test_august_25(self):
+        self.assertEqual(self.e["mr:0825-genesius"]["entry"], 3)
+        self.assertEqual(self.e["mr:0825-eusebius-et-socii"]["editions"],
+                         {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
+
+    def test_asterisk_discrepancies_are_cei_overrides(self):
+        self.assertEqual(self.e["mr:0104-ferreolus"]["editions"], {r.EDITION_IT: {"entry": 3, "asterisk": False}})
+        with_asterisk_override = [i for i, x in self.e.items() if "asterisk" in x.get("editions", {}).get(r.EDITION_IT, {})]
+        # One CEI asterisk override per verified discrepancy (29 per the report).
+        self.assertEqual(sorted(with_asterisk_override), sorted(r.ASTERISK_OVERRIDES))
+
+    def test_valid(self):
+        self.assertEqual(r.validate_editions(list(self.e.values())), [])
+
 
 if __name__ == "__main__":
     unittest.main()
