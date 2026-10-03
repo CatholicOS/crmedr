@@ -180,6 +180,8 @@ class Apostles56Test(unittest.TestCase):
         for cid in ("mr:0425-marcus-evangelista", "mr:1018-lucas-evangelista"):
             self.assertIn(cid, ids)
             self.assertRegex(la[cid], r"Evangelista$")
+        en = json.load(open(root / "i18n" / "en.json", encoding="utf-8"))
+        self.assertEqual(en["mr:1018-lucas-evangelista"], "Saint Luke the Evangelist")
 
 
 class RegistryIntegrityTest(unittest.TestCase):
