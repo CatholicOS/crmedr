@@ -359,7 +359,7 @@
 | 27 | 5 | `mr:1027-otteranus` | * | GB | dies_natalis |  |  |
 | 27 | 6 | `mr:1027-bartholomaeus-de-bregantia` | * | IT | commemoratio |  |  |
 | 27 | 7 | `mr:1027-salvator-mollar-ventura` | * | ES | dies_natalis |  |  |
-| 28 | (1) | `mr:1028-simon-et-iudas` |  | PS | dies_natalis |  |  |
+| 28 | (1) | `mr:1028-simon-et-iudas-apostoli` |  | PS | dies_natalis |  |  |
 | 28 | 2 | `mr:1028-ferrutius` |  | DE | dies_natalis |  |  |
 | 28 | 3 | `mr:1028-fidelis` |  | IT | dies_natalis |  |  |
 | 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis |  |  |

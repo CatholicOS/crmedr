@@ -329,7 +329,7 @@
 | 28 | 8 | `mr:0628-lucia-wang-cheng-et-socii` |  | CN | dies_natalis |  |  |
 | 28 | 9 | `mr:0628-maria-du-zhaozhi` |  | CN | dies_natalis |  |  |
 | 28 | 10 | `mr:0628-severianus-baranyk-et-ioachim-senkivskyj` | * | UA | dies_natalis |  |  |
-| 29 | (1) | `mr:0629-petrus-et-paulus` |  | IT | dies_natalis |  |  |
+| 29 | (1) | `mr:0629-petrus-et-paulus-apostoli` |  | IT | dies_natalis |  |  |
 | 29 | 2 | `mr:0629-syrus` |  | IT | dies_natalis |  |  |
 | 29 | 3 | `mr:0629-cassius` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0629-hemma` | * | AT | dies_natalis |  |  |

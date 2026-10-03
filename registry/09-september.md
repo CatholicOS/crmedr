@@ -290,7 +290,7 @@
 | 20 | 8 | `mr:0920-ioannes-carolus-cornay` |  | VN | dies_natalis |  |  |
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR | dies_natalis |  |  |
 | 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  |  |
-| 21 | (1) | `mr:0921-matthaeus` |  | PS | dies_natalis |  |  |
+| 21 | (1) | `mr:0921-matthaeus-apostolus` |  | PS | dies_natalis |  |  |
 | 21 | 2 | `mr:0921-ionas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:0921-quadratus` |  | GR | commemoratio |  |  |
 | 21 | 4 | `mr:0921-pamphilus` |  | IT | dies_natalis |  |  |

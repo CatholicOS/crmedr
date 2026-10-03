@@ -39,7 +39,7 @@
 | 2 | 10 | `mr:0502-iosephus-nguyen-van-luu` |  | VN | dies_natalis |  |  |
 | 2 | 11 | `mr:0502-iosephus-maria-rubio-peralta` |  | ES | dies_natalis |  |  |
 | 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
-| 3 | (1) | `mr:0503-philippus-et-iacobus` |  | PS | dies_natalis |  |  |
+| 3 | (1) | `mr:0503-philippus-et-iacobus-apostoli` |  | PS | dies_natalis |  |  |
 | 3 | 2 | `mr:0503-timotheus-et-maura` |  | EG | dies_natalis |  |  |
 | 3 | 3 | `mr:0503-eventius-et-socii` |  | IT | dies_natalis |  |  |
 | 3 | 4 | `mr:0503-iuvenalis` |  | IT | dies_natalis |  |  |
@@ -169,7 +169,7 @@
 | 13 | 4 | `mr:0513-gemma` | * | IT | dies_natalis |  |  |
 | 13 | 5 | `mr:0513-magdalena-albrici` | * | IT | dies_natalis |  |  |
 | 13 | 6 | `mr:0513-andreas-hubertus-fournet` |  | FR | dies_natalis |  |  |
-| 14 | (1) | `mr:0514-matthias` |  | PS | dies_natalis |  |  |
+| 14 | (1) | `mr:0514-matthias-apostolus` |  | PS | dies_natalis |  |  |
 | 14 | 2 | `mr:0514-maximus` |  | TR | dies_natalis |  |  |
 | 14 | 3 | `mr:0514-pontius` |  | FR | dies_natalis |  |  |
 | 14 | 4 | `mr:0514-victor-et-corona` |  | SY | dies_natalis |  |  |

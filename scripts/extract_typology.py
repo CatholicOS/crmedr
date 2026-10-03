@@ -71,10 +71,10 @@ FEAST_IDS = {
     "mr:0101-maria-dei-genetrix",
     "mr:0103-nomen-iesu",
     "mr:0106-epiphania-domini",
-    "mr:0125-conversio-sancti-pauli",
+    "mr:0125-conversio-pauli-apostoli",
     "mr:0202-praesentatio-domini",
     "mr:0211-maria-de-lourdes",
-    "mr:0222-cathedra-sancti-petri",
+    "mr:0222-cathedra-petri-apostoli",
     "mr:0325-annuntiatio-domini",
     "mr:0501-ioseph",  # Joseph the Worker: a title feast, not an event
     "mr:0513-maria-de-fatima",

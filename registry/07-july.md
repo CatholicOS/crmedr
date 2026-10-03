@@ -28,7 +28,7 @@
 | 2 | 7 | `mr:0702-ioannes-et-petrus-becchetti` | * | IT | commemoratio |  |  |
 | 2 | 8 | `mr:0702-bernardinus-realino` |  | IT | dies_natalis |  |  |
 | 2 | 9 | `mr:0702-eugenia-joubert` | * | BE | dies_natalis |  |  |
-| 3 | (1) | `mr:0703-thomas` |  | IN | dies_natalis |  |  |
+| 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis |  |  |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY | commemoratio |  |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  |  |
@@ -354,7 +354,7 @@
 | 24 | 21 | `mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii` | * | ES | dies_natalis |  |  |
 | 24 | 22 | `mr:0724-maria-a-mercede-prat` | * | ES | dies_natalis |  |  |
 | 24 | 23 | `mr:0724-xaverius-bordas-piferrer` | * | ES | dies_natalis |  |  |
-| 25 | (1) | `mr:0725-iacobus` |  | PS | dies_natalis |  |  |
+| 25 | (1) | `mr:0725-iacobus-apostolus` |  | PS | dies_natalis |  |  |
 | 25 | 2 | `mr:0725-christophorus` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0725-cucuphas` |  | ES | dies_natalis |  |  |
 | 25 | 4 | `mr:0725-valentina-et-socii` |  | PS | dies_natalis |  |  |

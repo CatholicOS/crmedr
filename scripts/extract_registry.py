@@ -441,7 +441,7 @@ ID_CORRECTIONS = {
     # -propheta (-prophetissa, -rex-et-propheta) in the nominative.
     "mr:0905-v": "mr:0905-quintus",
     "mr:0809-laurentius": "mr:0809-romanus",
-    "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus",
+    "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus-apostoli",
     "mr:1028-fidel": "mr:1028-fidelis",
     "mr:0424-fidel-de-sigmaringa": "mr:0424-fidelis-de-sigmaringa",
     "mr:0408-agabus": "mr:0408-agabus-propheta",
@@ -466,6 +466,21 @@ ID_CORRECTIONS = {
     "mr:1221-michaea": "mr:1221-michaeas-propheta",
     "mr:1229-david": "mr:1229-david-rex-et-propheta",
     "mr:0203-simeon-et-anna": "mr:0203-simeon-et-anna-prophetissa",
+
+    # #56: the apostles keep -apostolus / -apostoli (Paul too), and feast phrases drop
+    # the honorific (cathedra-petri-apostoli, conversio-pauli-apostoli).
+    "mr:0125-conversio-sancti-pauli": "mr:0125-conversio-pauli-apostoli",
+    "mr:0222-cathedra-sancti-petri": "mr:0222-cathedra-petri-apostoli",
+    "mr:0503-philippus-et-iacobus": "mr:0503-philippus-et-iacobus-apostoli",
+    "mr:0514-matthias": "mr:0514-matthias-apostolus",
+    "mr:0703-thomas": "mr:0703-thomas-apostolus",
+    "mr:0725-iacobus": "mr:0725-iacobus-apostolus",
+    "mr:0824-bartholomaeus": "mr:0824-bartholomaeus-apostolus",
+    "mr:0921-matthaeus": "mr:0921-matthaeus-apostolus",
+    "mr:1028-simon-et-iudas": "mr:1028-simon-et-iudas-apostoli",
+    "mr:1118-dedicatio-basilicarum-petri-et-pauli": "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
+    "mr:1130-andreas": "mr:1130-andreas-apostolus",
+    "mr:1227-ioannes": "mr:1227-ioannes-apostolus",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
