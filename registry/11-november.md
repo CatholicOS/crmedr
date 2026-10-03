@@ -15,7 +15,7 @@
 | 1 | 9 | `mr:1101-vigor` |  | FR | dies_natalis |  |  |
 | 1 | 10 | `mr:1101-licinius` |  | FR | dies_natalis |  |  |
 | 1 | 11 | `mr:1101-maturinus` |  | FR | dies_natalis |  |  |
-| 1 | 12 | `mr:1101-audomarus` |  | FR | dies_natalis |  |  |
+| 1 | 12 | `mr:1101-audomarus` |  | FR | dies_natalis | same as `mr:0909-audomarus` |  |
 | 1 | 13 | `mr:1101-rainerius-aretinus` | * | IT | dies_natalis |  |  |
 | 1 | 14 | `mr:1101-nonius-alvarez-pereira` | * | PT | dies_natalis |  |  |
 | 1 | 15 | `mr:1101-petrus-paulus-navarro-et-socii` | * | JP | dies_natalis |  |  |
@@ -180,7 +180,7 @@
 | 13 | 19 | `mr:1113-petrus-vicev-et-socii` | * | BG | dies_natalis |  |  |
 | 14 | 1 | `mr:1114-theodotus` |  | TR | dies_natalis |  |  |
 | 14 | 2 | `mr:1114-hypatius` |  | TR | dies_natalis |  |  |
-| 14 | 3 | `mr:1114-rufus` |  | FR | dies_natalis |  |  |
+| 14 | 3 | `mr:1114-rufus` |  | FR | dies_natalis | same as `mr:1112-rufus` |  |
 | 14 | 4 | `mr:1114-dubricius` | * | GB | dies_natalis |  |  |
 | 14 | 5 | `mr:1114-ioannes` | * | HR | dies_natalis |  |  |
 | 14 | 6 | `mr:1114-laurentius-o-toole` |  | FR | dies_natalis |  |  |

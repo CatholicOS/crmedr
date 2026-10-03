@@ -69,7 +69,7 @@
 | 6 | 9 | `mr:0306-ollegarius` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0306-rosa` | * | IT | dies_natalis |  |  |
 | 6 | 11 | `mr:0306-coleta-boylet` |  | BE | dies_natalis |  |  |
-| 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis |  |  |
+| 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis | same as `mr:0306-perpetua-et-felicitas` |  |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |  |
 | 7 | 3 | `mr:0307-eubulius` |  | PS | dies_natalis |  |  |
 | 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis | same as `mr:0304-basilius-et-socii` |  |

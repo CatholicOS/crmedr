@@ -181,7 +181,7 @@
 | 15 | 2 | `mr:0415-crescens` |  | TR | dies_natalis |  |  |
 | 15 | 3 | `mr:0415-maro` |  | IT | dies_natalis |  |  |
 | 15 | 4 | `mr:0415-abundius` |  | IT | commemoratio | same as `mr:0414-abundius` |  |
-| 15 | 5 | `mr:0415-paternus` |  | FR | depositio | same as `mr:0416-paternus` |  |
+| 15 | 5 | `mr:0415-paternus` |  | FR | depositio | same as `mr:0416-paternus`; same as `mr:0923-paternus` |  |
 | 15 | 6 | `mr:0415-ortarius` | * | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0415-caesar-de-bus` | * | FR | dies_natalis |  |  |
 | 15 | 8 | `mr:0415-damianus-de-veuster` | * | US | dies_natalis |  |  |
@@ -217,7 +217,7 @@
 | 18 | 2 | `mr:0418-pusicius` |  | IR | dies_natalis |  |  |
 | 18 | 3 | `mr:0418-eusebius` | * | IT | dies_natalis |  |  |
 | 18 | 4 | `mr:0418-lasreanus` | * | IE | dies_natalis |  |  |
-| 18 | 5 | `mr:0418-ursmarus` |  | BE | dies_natalis |  |  |
+| 18 | 5 | `mr:0418-ursmarus` |  | BE | dies_natalis | same as `mr:0419-ursmarus` |  |
 | 18 | 6 | `mr:0418-anthusa` |  | TR | dies_natalis |  |  |
 | 18 | 7 | `mr:0418-athanasia` |  | GR | dies_natalis | same as `mr:0814-athanasia` |  |
 | 18 | 8 | `mr:0418-ioannes-isaurus` |  | GR | dies_natalis |  |  |

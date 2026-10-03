@@ -28,7 +28,7 @@
 | 2 | 2 | `mr:0602-pothinus-et-socii` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0602-erasmus` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0602-eugenius-i` |  | IT | dies_natalis |  |  |
-| 2 | 5 | `mr:0602-nicephorus` |  | TR | dies_natalis |  |  |
+| 2 | 5 | `mr:0602-nicephorus` |  | TR | dies_natalis | same as `mr:0313-nicephorus` |  |
 | 2 | 6 | `mr:0602-guido` | * | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0602-nicolaus` |  | IT | dies_natalis |  |  |
 | 2 | 8 | `mr:0602-sadochus-et-socii` | * | PL | dies_natalis |  |  |
@@ -205,7 +205,7 @@
 | 17 | 1 | `mr:0617-blastus-et-diogenes` |  | IT | dies_natalis |  |  |
 | 17 | 2 | `mr:0617-isaurus-et-socii` |  | AL | dies_natalis |  |  |
 | 17 | 3 | `mr:0617-nicandrus-et-marcianus` |  | BG | dies_natalis |  |  |
-| 17 | 4 | `mr:0617-antidius` |  | FR | dies_natalis |  |  |
+| 17 | 4 | `mr:0617-antidius` |  | FR | dies_natalis | same as `mr:0625-antidius` |  |
 | 17 | 5 | `mr:0617-hypatius` |  | TR | dies_natalis |  |  |
 | 17 | 6 | `mr:0617-hervaeus` | * | FR | dies_natalis |  |  |
 | 17 | 7 | `mr:0617-avitus` |  | FR | dies_natalis |  |  |

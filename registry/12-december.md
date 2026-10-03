@@ -71,7 +71,7 @@
 | 7 | 2 | `mr:1207-sabinus` |  | IT | dies_natalis |  |  |
 | 7 | 3 | `mr:1207-athenodorus` |  | SY | dies_natalis |  |  |
 | 7 | 4 | `mr:1207-urbanus` |  | IT | dies_natalis |  |  |
-| 7 | 5 | `mr:1207-ioannes-silentiarius` |  | PS | dies_natalis |  |  |
+| 7 | 5 | `mr:1207-ioannes-silentiarius` |  | PS | dies_natalis | same as `mr:0513-ioannes-silentiarius` |  |
 | 7 | 6 | `mr:1207-fara` |  | FR | dies_natalis |  |  |
 | 7 | 7 | `mr:1207-carolus-garnier` |  | CA | dies_natalis |  |  |
 | 7 | 8 | `mr:1207-maria-iosepha-rossello` |  | IT | dies_natalis |  |  |
@@ -287,7 +287,7 @@
 | 30 | 3 | `mr:1230-anysius` |  | GR | commemoratio |  |  |
 | 30 | 4 | `mr:1230-perpetuus` |  | FR | dies_natalis | same as `mr:0408-perpetuus` |  |
 | 30 | 5 | `mr:1230-iucundus` | * | IT | dies_natalis |  |  |
-| 30 | 6 | `mr:1230-geremarus` |  | FR | dies_natalis |  |  |
+| 30 | 6 | `mr:1230-geremarus` |  | FR | dies_natalis | same as `mr:0924-geremarus` |  |
 | 30 | 7 | `mr:1230-egwinus` | * | GB | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 30 | 8 | `mr:1230-rainerius` |  | IT | dies_natalis |  |  |
 | 30 | 9 | `mr:1230-rogerius` | * | IT | dies_natalis |  |  |
