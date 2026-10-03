@@ -29,7 +29,8 @@ Rules applied, in order:
    demonym takes that name in the nominative plural (martyres-scillitani,
    monachi-abrahamitae).
 9. Same-slug collisions within a day: the day's lead keeps the bare slug; numbered
-   entries take the place of death; ordinals as last resort.
+   entries take the place of death (or see, in the genitive) or an epithet; never a number
+   (mr:0408-dionysius-2 became mr:0408-dionysius-corinthi, #59).
 
 ## Special identity decisions
 
@@ -946,7 +947,8 @@ The two evangelists who were not apostles keep their epithet the same way (#59):
 mr:0425-marcus-evangelista, mr:1018-lucas-evangelista. The 1749 and 1914 translation of St Mark,
 coined as a person (mr:0131-marcus-evangelista), becomes the feast phrase
 mr:0131-translatio-marci-evangelistae. mr:0116-marcellus-primus becomes mr:0116-marcellus-i: papal
-ordinals are roman numerals (rule 3). In a feast naming several saints, only the first-named keeps
+ordinals are roman numerals (rule 3). The last numeric disambiguator, mr:0408-dionysius-2, becomes
+mr:0408-dionysius-corinthi (rule 9). In a feast naming several saints, only the first-named keeps
 the epithet, so as not to lengthen the slug (mr:0509-translatio-andreae-apostoli-lucae-et-timothei).
 
 ## Country-code corrections (September 2026)

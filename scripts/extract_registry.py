@@ -488,6 +488,8 @@ ID_CORRECTIONS = {
 
     # #59: papal ordinals are roman numerals (rule 3).
     "mr:0116-marcellus-primus": "mr:0116-marcellus-i",
+    # a same-day namesake takes his see, not a number (rule 9)
+    "mr:0408-dionysius-2": "mr:0408-dionysius-corinthi",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

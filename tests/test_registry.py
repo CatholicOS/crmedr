@@ -200,6 +200,8 @@ class RegistryIntegrityTest(unittest.TestCase):
         for lang in ("la", "it", "en"):
             keys = json.load(open(root / "i18n" / f"{lang}.json", encoding="utf-8"))
             self.assertEqual(set(keys), set(ids), lang)
+        # Same-day namesakes take a place or an epithet, never a number (rule 9, #59).
+        self.assertEqual([i for i in ids if any(t.isdigit() for t in i.split("-", 1)[1].split("-"))], [])
 
 
 class PlaceLeadCorrections25Test(unittest.TestCase):
