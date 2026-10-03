@@ -86,7 +86,7 @@
 | 6 | 11 | `mr:0606-falco` | * | IT | dies_natalis |  |  |
 | 6 | 12 | `mr:0606-gilbertus` | * | FR | dies_natalis |  |  |
 | 6 | 13 | `mr:0606-bertrandus` | * | IT | dies_natalis |  |  |
-| 6 | 14 | `mr:0606-laurentius-de-villamagna-de-masculis` | * | IT | dies_natalis |  |  |
+| 6 | 14 | `mr:0606-laurentius-de-villamagna` | * | IT | dies_natalis |  |  |
 | 6 | 15 | `mr:0606-gulielmus-greenwood` | * | GB | dies_natalis |  |  |
 | 6 | 16 | `mr:0606-marcellinus-champagnat` |  | FR | dies_natalis |  |  |
 | 6 | 17 | `mr:0606-petrus-dung-et-petrus-thuan` |  | VN | dies_natalis |  |  |
@@ -106,9 +106,9 @@
 | 8 | 6 | `mr:0608-gulielmus-fitzherbert` |  | GB | dies_natalis |  |  |
 | 8 | 7 | `mr:0608-ioannes-davy` | * | GB | dies_natalis |  |  |
 | 8 | 8 | `mr:0608-iacobus-berthieu` | * | MG | dies_natalis |  |  |
-| 8 | 9 | `mr:0608-maria-a-divino-corde-iesu-droste` | * | PT | dies_natalis |  |  |
+| 8 | 9 | `mr:0608-maria-a-divino-corde-iesu` | * | PT | dies_natalis |  |  |
 | 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  |  |
-| 8 | 11 | `mr:0608-nicolaus-de-gesturi-medda` | * | IT | dies_natalis |  |  |
+| 8 | 11 | `mr:0608-nicolaus-de-gesturi` | * | IT | dies_natalis |  |  |
 | 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis |  |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0609-diomedes` |  | TR | dies_natalis | same as `mr:0816-diomedes` |  |
@@ -138,8 +138,8 @@
 | 11 | 6 | `mr:0611-parisius` |  | IT | dies_natalis |  |  |
 | 11 | 7 | `mr:0611-iolenta` | * | PL | dies_natalis |  |  |
 | 11 | 8 | `mr:0611-stephanus-bandelli` | * | IT | dies_natalis |  |  |
-| 11 | 9 | `mr:0611-ioannes-a-sancto-facundo-gonzalez-de-castrillo` |  | ES | dies_natalis | same as `mr:0612-ioannes-a-sancto-facundo` |  |
-| 11 | 10 | `mr:0611-rosa-francisca-maria-a-doloribus-molas-vallve` |  | ES | dies_natalis |  |  |
+| 11 | 9 | `mr:0611-ioannes-a-sancto-facundo` |  | ES | dies_natalis | same as `mr:0612-ioannes-a-sancto-facundo` |  |
+| 11 | 10 | `mr:0611-rosa-francisca-maria-a-doloribus` |  | ES | dies_natalis |  |  |
 | 11 | 11 | `mr:0611-paula-frassinetti` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0611-maria-schinina` | * | IT | dies_natalis |  |  |
 | 11 | 13 | `mr:0611-ignatius-maloyan` | * | TR | dies_natalis |  |  |
@@ -152,9 +152,9 @@
 | 12 | 7 | `mr:0612-placidus` | * | IT | dies_natalis |  |  |
 | 12 | 8 | `mr:0612-florida-cevoli` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:0612-gaspar-bertonus` |  | IT | dies_natalis |  |  |
-| 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio-salvi` | * | IT | dies_natalis |  |  |
-| 12 | 11 | `mr:0612-mercedis-maria-a-iesu-molina` | * | EC | dies_natalis |  |  |
-| 12 | 12 | `mr:0612-maria-candida-ab-eucharistia-barba` | * | IT | dies_natalis |  |  |
+| 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  |  |
+| 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  |  |
+| 12 | 12 | `mr:0612-maria-candida-ab-eucharistia` | * | IT | dies_natalis |  |  |
 | 13 | (1) | `mr:0613-antonius` |  | PT | dies_natalis |  |  |
 | 13 | 2 | `mr:0613-felicula` |  | IT | dies_natalis |  |  |
 | 13 | 3 | `mr:0613-achilleus` |  | EG | dies_natalis | same as `mr:1107-achilleus` |  |

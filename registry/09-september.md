@@ -48,7 +48,7 @@
 | 3 | 12 | `mr:0903-chrodogangus` | * | FR | dies_natalis |  |  |
 | 3 | 13 | `mr:0903-guala` | * | IT | dies_natalis |  |  |
 | 3 | 14 | `mr:0903-bartholomaeus-gutierrez-et-socii` | * | JP | dies_natalis |  |  |
-| 3 | 15 | `mr:0903-birgitta-a-iesu-morello` | * | IT | dies_natalis |  |  |
+| 3 | 15 | `mr:0903-birgitta-a-iesu` | * | IT | dies_natalis |  |  |
 | 3 | 16 | `mr:0903-andreas-abel-alricy-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | 17 | `mr:0903-ioannes-baptista-bottex-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | 18 | `mr:0903-ioannes-pak-hu-ja-et-socii` |  | KR | dies_natalis |  |  |
@@ -107,7 +107,7 @@
 | 7 | 18 | `mr:0907-claudius-barnabas-laurent-de-mascloux-et-franciscus` | * | FR | dies_natalis |  |  |
 | 7 | 19 | `mr:0907-ioannes-baptista-mazzucconi` | * | PG | dies_natalis |  |  |
 | 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  |  |
-| 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz-lloret-marco` | * | ES | dies_natalis |  |  |
+| 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz` | * | ES | dies_natalis |  |  |
 | 8 | (1) | `mr:0908-nativitas-beatae-mariae-virginis` |  |  | celebratio |  |  |
 | 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio | same as `mr:0304-hadrianus-et-socii` |  |
 | 8 | 3 | `mr:0908-faustus-et-socii` |  | EG | dies_natalis |  |  |
@@ -125,7 +125,7 @@
 | 8 | 15 | `mr:0908-marinus-blanes-giner` | * | ES | dies_natalis |  |  |
 | 8 | 16 | `mr:0908-ismael-escrihuela-esteve` | * | ES | dies_natalis |  |  |
 | 8 | 17 | `mr:0908-paschalis-fortuno-almela` | * | ES | dies_natalis |  |  |
-| 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-ruano-garcia-et-maria-a-doloribus-a-sancta-eulalia-puig-bonany` | * | ES | dies_natalis |  |  |
+| 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia` | * | ES | dies_natalis |  |  |
 | 8 | 19 | `mr:0908-adamus-bargielski` | * | DE | dies_natalis |  |  |
 | 8 | 20 | `mr:0908-ladislaus-bladzinski` | * | DE | dies_natalis |  |  |
 | 9 | (1) | `mr:0909-petrus-claver` |  | CO | celebratio |  |  |
@@ -160,10 +160,10 @@
 | 11 | 8 | `mr:0911-leudinus` | * | FR | dies_natalis |  |  |
 | 11 | 9 | `mr:0911-elias-speleota` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0911-gaspar-koteda-et-socii` | * | JP | dies_natalis |  |  |
-| 11 | 11 | `mr:0911-bonaventura-de-barcinone-gran` | * | IT | dies_natalis |  |  |
+| 11 | 11 | `mr:0911-bonaventura-de-barcinone` | * | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0911-franciscus-mayaudon` | * | FR | dies_natalis |  |  |
 | 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN | dies_natalis |  |  |
-| 11 | 14 | `mr:0911-petrus-de-alcantara-villanueva-larrayoz` | * | ES | dies_natalis |  |  |
+| 11 | 14 | `mr:0911-petrus-de-alcantara` | * | ES | dies_natalis |  |  |
 | 11 | 15 | `mr:0911-iosephus-maria-segura-penades` | * | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:0912-nomen-mariae` |  |  | celebratio |  |  |
 | 12 | 2 | `mr:0912-autonomus` |  | TR | dies_natalis |  |  |
@@ -183,7 +183,7 @@
 | 13 | 8 | `mr:0913-amatus-vosegos` |  | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0913-venerius` |  | IT | dies_natalis |  |  |
 | 13 | 10 | `mr:0913-amatus-broili` |  | FR | dies_natalis |  |  |
-| 13 | 11 | `mr:0913-maria-a-iesu-lopez-de-rivas` | * | ES | dies_natalis |  |  |
+| 13 | 11 | `mr:0913-maria-a-iesu` | * | ES | dies_natalis |  |  |
 | 13 | 12 | `mr:0913-claudius-dumonet` | * | FR | dies_natalis |  |  |
 | 13 | 13 | `mr:0913-aurelius-maria-villalon-acebron` | * | ES | dies_natalis |  |  |
 | 14 | (1) | `mr:0914-exaltatio-sanctae-crucis` |  |  | celebratio |  |  |
@@ -279,7 +279,7 @@
 | 19 | 16 | `mr:0919-maria-gulielma-aemilia-de-rodat` |  | FR | dies_natalis |  |  |
 | 19 | 17 | `mr:0919-hyacinthus-hoyuelos-gonzalez` | * | ES | dies_natalis |  |  |
 | 19 | 18 | `mr:0919-francisca-cuallado-baixauli` | * | ES | dies_natalis |  |  |
-| 19 | 19 | `mr:0919-maria-a-iesu-de-la-yglesia-y-de-varo-et-socii` | * | ES | dies_natalis |  |  |
+| 19 | 19 | `mr:0919-maria-a-iesu-et-socii` | * | ES | dies_natalis |  |  |
 | 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  |  |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR | dies_natalis |  |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
@@ -301,7 +301,7 @@
 | 21 | 9 | `mr:0921-landelinus` | * | DE | dies_natalis |  |  |
 | 21 | 10 | `mr:0921-gerulphus` | * | BE | dies_natalis |  |  |
 | 21 | 11 | `mr:0921-maura` | * | FR | dies_natalis |  |  |
-| 21 | 12 | `mr:0921-marcus-de-mutina-scalabrini` | * | IT | dies_natalis |  |  |
+| 21 | 12 | `mr:0921-marcus-de-mutina` | * | IT | dies_natalis |  |  |
 | 21 | 13 | `mr:0921-franciscus-jaccard-et-thomas-tran-van-thien` |  | VN | dies_natalis |  |  |
 | 21 | 14 | `mr:0921-laurentius-imbert-et-socii` |  | KR | dies_natalis |  |  |
 | 21 | 15 | `mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia` | * | ES | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 22 | 7 | `mr:0922-salaberga` |  | FR | dies_natalis |  |  |
 | 22 | 8 | `mr:0922-emmerammus` |  | DE | dies_natalis |  |  |
 | 22 | 9 | `mr:0922-otho` | * | FR | dies_natalis |  |  |
-| 22 | 10 | `mr:0922-ignatius-de-sandone-belvisotti` |  | IT | dies_natalis |  |  |
+| 22 | 10 | `mr:0922-ignatius-de-sandone` |  | IT | dies_natalis |  |  |
 | 22 | 11 | `mr:0922-iosephus-marchandon` | * | FR | dies_natalis |  |  |
 | 22 | 12 | `mr:0922-paulus-chong-ha-sang-et-augustinus-yu-chin-gil` |  | KR | dies_natalis |  |  |
 | 22 | 13 | `mr:0922-carolus-navarro` | * | ES | dies_natalis |  |  |
@@ -322,7 +322,7 @@
 | 22 | 15 | `mr:0922-vincentius-pelufo-corts-et-iosepha-moscardo-montalva` | * | ES | dies_natalis |  |  |
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES | dies_natalis |  |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES | dies_natalis |  |  |
-| 23 | (1) | `mr:0923-pius-de-pietrelcina-forgione` |  | IT | dies_natalis |  |  |
+| 23 | (1) | `mr:0923-pius-de-pietrelcina` |  | IT | dies_natalis |  |  |
 | 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-zacharias` |  |
 | 23 | 3 | `mr:0923-linus` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0923-sossius` |  | IT | dies_natalis |  |  |
@@ -376,7 +376,7 @@
 | 26 | 9 | `mr:0926-teresia-couderc` |  | FR | dies_natalis |  |  |
 | 26 | 10 | `mr:0926-gaspar-stanggassinger` | * | DE | dies_natalis |  |  |
 | 26 | 11 | `mr:0926-aloysius-tezza` | * | PE | dies_natalis |  |  |
-| 26 | 12 | `mr:0926-maria-a-refugio-rosat-balasch-et-maria-a-calvario-romero-clariana` | * | ES | dies_natalis |  |  |
+| 26 | 12 | `mr:0926-maria-a-refugio-et-maria-a-calvario` | * | ES | dies_natalis |  |  |
 | 26 | 13 | `mr:0926-raphael-pardo-molina` | * | ES | dies_natalis |  |  |
 | 26 | 14 | `mr:0926-crescentia-valls-espi` | * | ES | dies_natalis |  |  |
 | 26 | 15 | `mr:0926-maria-ab-oblivione-noguera-albelda` | * | ES | dies_natalis |  |  |
@@ -395,7 +395,7 @@
 | 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches` | * | ES | dies_natalis |  |  |
 | 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  |  |
-| 28 | (2) | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH | dies_natalis |  |  |
+| 28 | (2) | `mr:0928-laurentius-ruiz-et-socii` |  | PH | dies_natalis |  |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis | same as `mr:0928-marcus-et-socii` |  |
 | 28 | 4 | `mr:0928-chariton` |  | PS | dies_natalis |  |  |
 | 28 | 5 | `mr:0928-zama` |  | IT | dies_natalis | same as `mr:0124-zama` |  |
@@ -406,7 +406,7 @@
 | 28 | 10 | `mr:0928-annemundus` | * | FR | dies_natalis |  |  |
 | 28 | 11 | `mr:0928-chunialdus-et-gisilarius` | * | AT | dies_natalis |  |  |
 | 28 | 12 | `mr:0928-leoba` |  | DE | dies_natalis |  |  |
-| 28 | 13 | `mr:0928-bernardinus-de-feltria-tomitano` | * | IT | dies_natalis |  |  |
+| 28 | 13 | `mr:0928-bernardinus-de-feltria` | * | IT | dies_natalis |  |  |
 | 28 | 14 | `mr:0928-simon-de-rojas` |  | ES | dies_natalis |  |  |
 | 28 | 15 | `mr:0928-ioannes-shozaburo-et-socii` | * | JP | dies_natalis |  |  |
 | 28 | 16 | `mr:0928-franciscus-xaverius-ponsa-casallarch` | * | ES | dies_natalis |  |  |

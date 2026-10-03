@@ -93,7 +93,7 @@
 | 9 | 5 | `mr:1209-cyprianus` |  | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:1209-liborius-wagner` | * | DE | dies_natalis |  |  |
 | 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis |  |  |
-| 9 | 8 | `mr:1209-bernardus-maria-a-iesu-silvestrelli` | * | IT | dies_natalis |  |  |
+| 9 | 8 | `mr:1209-bernardus-maria-a-iesu` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:1209-iosephus-ferrer-esteve` | * | ES | dies_natalis |  |  |
 | 9 | 10 | `mr:1209-richardus-de-los-rios-fabregat-et-socii` | * | ES | dies_natalis |  |  |
 | 10 | 1 | `mr:1210-eulalia` |  | ES | dies_natalis |  |  |
@@ -118,7 +118,7 @@
 | 11 | 9 | `mr:1211-martinus-lumbreras-peralta-et-melchior-sanchez-perez` | * | JP | dies_natalis |  |  |
 | 11 | 10 | `mr:1211-arthurus-bell` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:1211-maria-a-columna-villalonga-villalba` | * | ES | dies_natalis |  |  |
-| 11 | 12 | `mr:1211-mirabilia-a-iesu-pidal-y-chico-de-guzman` |  | ES | dies_natalis |  |  |
+| 11 | 12 | `mr:1211-mirabilia-a-iesu` |  | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:1212-maria-de-guadalupe` |  | MX | celebratio |  |  |
 | 12 | 2 | `mr:1212-epimachus-et-alexander` |  | EG | commemoratio |  |  |
 | 12 | 3 | `mr:1212-spyridon` |  | CY | dies_natalis | same as `mr:1214-spiridion` |  |
@@ -171,9 +171,9 @@
 | 16 | 6 | `mr:1216-adalheidis` |  | FR | dies_natalis |  |  |
 | 16 | 7 | `mr:1216-macarius-de-collesano` | * | IT | dies_natalis |  |  |
 | 16 | 8 | `mr:1216-sebastianus-de-madiis` | * | IT | commemoratio |  |  |
-| 16 | 9 | `mr:1216-maria-ab-angelis-fontanella` | * | IT | dies_natalis |  |  |
+| 16 | 9 | `mr:1216-maria-ab-angelis` | * | IT | dies_natalis |  |  |
 | 16 | 10 | `mr:1216-clemens-marchisio` | * | IT | dies_natalis |  |  |
-| 16 | 11 | `mr:1216-honoratus-de-biala-podlaska-kazminsky` | * | PL | dies_natalis |  |  |
+| 16 | 11 | `mr:1216-honoratus-kazminsky` | * | PL | dies_natalis |  |  |
 | 16 | 12 | `mr:1216-philippus-siphong-onphitak` | * | TH | dies_natalis |  |  |
 | 17 | 1 | `mr:1217-modestus` |  | IL | dies_natalis |  |  |
 | 17 | 2 | `mr:1217-quinquaginta-milites-eleutheropolis` |  | PS | dies_natalis |  |  |
@@ -184,7 +184,7 @@
 | 17 | 7 | `mr:1217-wiwina` |  | BE | dies_natalis |  |  |
 | 17 | 8 | `mr:1217-ioannes-de-matha` |  | IT | dies_natalis | same as `mr:0208-ioannes-de-matha` |  |
 | 17 | 9 | `mr:1217-iosephus-manyanet-y-vives` |  | ES | dies_natalis |  |  |
-| 17 | 10 | `mr:1217-mathildis-a-sacro-corde-tellez-robles` | * | ES | dies_natalis |  |  |
+| 17 | 10 | `mr:1217-mathildis-a-sacro-corde` | * | ES | dies_natalis |  |  |
 | 17 | 11 | `mr:1217-hyacinthus-cormier` | * | IT | dies_natalis |  |  |
 | 18 | 1 | `mr:1218-malachias-propheta` |  | IQ | commemoratio |  |  |
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
@@ -198,7 +198,7 @@
 | 19 | 3 | `mr:1219-gulielmus-de-fenolis` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:1219-urbanus-v` | * | FR | dies_natalis |  |  |
 | 19 | 5 | `mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy` |  | VN | dies_natalis |  |  |
-| 19 | 6 | `mr:1219-maria-eva-de-providentia-noiszewska-et-maria-martha-de-iesu-wolowsk` | * | PL | dies_natalis |  |  |
+| 19 | 6 | `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu` | * | PL | dies_natalis |  |  |
 | 20 | 1 | `mr:1220-zephyrinus` |  | IT | depositio |  |  |
 | 20 | 2 | `mr:1220-liberalis` |  | IT | dies_natalis |  |  |
 | 20 | 3 | `mr:1220-philogonius` |  | TR | dies_natalis |  |  |
@@ -228,7 +228,7 @@
 | 23 | 7 | `mr:1223-ioannes-stone` |  | GB | commemoratio |  |  |
 | 23 | 8 | `mr:1223-nicolaus-factor` | * | ES | dies_natalis |  |  |
 | 23 | 9 | `mr:1223-maria-margarita` |  | CA | dies_natalis |  |  |
-| 23 | 10 | `mr:1223-antonius-a-sancta-anna-galvao-de-franca` | * | BR | dies_natalis |  |  |
+| 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  |  |
 | 23 | 11 | `mr:1223-iosephus-cho-yun-ho` |  | KR | dies_natalis |  |  |
 | 23 | 12 | `mr:1223-paulus-melendez-gonzalo` | * | ES | dies_natalis |  |  |
 | 24 | 1 | `mr:1224-avi-iesu-christi` |  | PS | commemoratio |  |  |
@@ -246,7 +246,7 @@
 | 25 | 5 | `mr:1225-petrus-venerabilis` | * | FR | dies_natalis |  |  |
 | 25 | 6 | `mr:1225-bentivolius-de-bonis` | * | IT | dies_natalis |  |  |
 | 25 | 7 | `mr:1225-michael-nakashima` | * | JP | dies_natalis |  |  |
-| 25 | 8 | `mr:1225-maria-ab-apostolis-von-wullenweber` | * | IT | dies_natalis |  |  |
+| 25 | 8 | `mr:1225-maria-ab-apostolis` | * | IT | dies_natalis |  |  |
 | 25 | 9 | `mr:1225-albertus-chmielowski` |  | PL | dies_natalis |  |  |
 | 26 | (1) | `mr:1226-stephanus` |  | IL | dies_natalis |  |  |
 | 26 | 2 | `mr:1226-dionysius` |  | IT | dies_natalis |  |  |

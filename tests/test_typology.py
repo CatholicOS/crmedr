@@ -226,4 +226,4 @@ class NoLatinTextTest(unittest.TestCase):
     def test_cei_only_eulogies_have_typology_overrides(self):
         self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0712-proclus-et-hilarion"], "dies_natalis")
         self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0825-eusebius-et-socii"], "depositio")
-        self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0709-maria-a-iesu-crucifixo-petkovic"], "dies_natalis")
+        self.assertEqual(t.TYPOLOGY_OVERRIDES["mr:0709-maria-a-iesu-crucifixo"], "dies_natalis")

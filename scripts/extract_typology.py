@@ -102,7 +102,7 @@ TYPOLOGY_OVERRIDES = {
     # typology from; values as tagged from the former Latin texts.
     "mr:0712-proclus-et-hilarion": "dies_natalis",
     "mr:0825-eusebius-et-socii": "depositio",
-    "mr:0709-maria-a-iesu-crucifixo-petkovic": "dies_natalis",
+    "mr:0709-maria-a-iesu-crucifixo": "dies_natalis",
     # Unnumbered lead memorials that open with the name, not "Memoria", so the
     # cross-reference from the dies natalis finds no candidate.
     "mr:0807-xystus-ii-et-socii": "celebratio",  # passio at 0806 ("memoria cras")
