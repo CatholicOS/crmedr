@@ -258,7 +258,7 @@ class MisprintTest(unittest.TestCase):
                          sorted((r["id"], r["edition"]) for r in records))
         self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
         self.assertEqual({r["printed"] for r in records},
-                         {"betárum", "desposizione", "comemorazione", "Mel", "nell territorio",
+                         {"betárum", "Marcellino", "desposizione", "comemorazione", "Mel", "nell territorio",
                           "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
                           "Bellrreguart"})
 
