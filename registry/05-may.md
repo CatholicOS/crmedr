@@ -110,7 +110,7 @@
 | 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  |  |
 | 8 | 13 | `mr:0508-angelus-de-massatio` | * | IT | dies_natalis |  |  |
 | 8 | 14 | `mr:0508-aloysius-rabata` | * | IT | dies_natalis |  |  |
-| 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino-symon-de-longprey` | * | CA | dies_natalis |  |  |
+| 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino` | * | CA | dies_natalis |  |  |
 | 8 | 16 | `mr:0508-ulrica-nisch` | * | DE | dies_natalis |  |  |
 | 8 | 17 | `mr:0508-antonius-bajewski` | * | PL | dies_natalis |  |  |
 | 9 | 1 | `mr:0509-isaias-propheta` |  | PS | commemoratio | same as `mr:0706-isaias-propheta` |  |
@@ -124,7 +124,7 @@
 | 9 | 9 | `mr:0509-benincasa-de-monte-politiano` | * | IT | dies_natalis |  |  |
 | 9 | 10 | `mr:0509-thomas-pickering` | * | GB | dies_natalis |  |  |
 | 9 | 11 | `mr:0509-iosephus-do-quang-hien` |  | VN | dies_natalis |  |  |
-| 9 | 12 | `mr:0509-maria-teresia-a-iesu-gerhardinger` | * | DE | dies_natalis |  |  |
+| 9 | 12 | `mr:0509-maria-teresia-a-iesu` | * | DE | dies_natalis |  |  |
 | 9 | 13 | `mr:0509-stephanus-grelewskus` | * | DE | dies_natalis |  |  |
 | 10 | 1 | `mr:0510-iob` |  | JO | commemoratio |  |  |
 | 10 | 2 | `mr:0510-dioscoridis` |  | TR | dies_natalis |  |  |
@@ -243,7 +243,7 @@
 | 19 | 7 | `mr:0519-ivo` |  | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0519-augustinus-novellus` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0519-ioannes-de-cetina-et-petrus-de-duenas` | * | ES | dies_natalis |  |  |
-| 19 | 10 | `mr:0519-ioannes-a-sancto-dominico-martinez` | * | JP | dies_natalis |  |  |
+| 19 | 10 | `mr:0519-ioannes-a-sancto-dominico` | * | JP | dies_natalis |  |  |
 | 19 | 11 | `mr:0519-petrus-wright` | * | GB | dies_natalis |  |  |
 | 19 | 12 | `mr:0519-theophilus-de-curia` |  | IT | dies_natalis |  |  |
 | 19 | 13 | `mr:0519-crispinus-de-viterbio` |  | IT | dies_natalis |  |  |
@@ -409,5 +409,5 @@
 | 31 | 8 | `mr:0531-robertus-thorpe-et-thomas-watkinson` | * | GB | dies_natalis |  |  |
 | 31 | 9 | `mr:0531-nicolaus-barre` | * | FR | dies_natalis |  |  |
 | 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  |  |
-| 31 | 11 | `mr:0531-marianus-de-roccacasale-di-nicolantonio` | * | IT | dies_natalis |  |  |
+| 31 | 11 | `mr:0531-marianus-de-roccacasale` | * | IT | dies_natalis |  |  |
 | 31 | 12 | `mr:0531-noe-mawaggali` |  | UG | dies_natalis |  |  |

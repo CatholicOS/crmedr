@@ -123,7 +123,7 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
 
     # "et" inside a religious name, a feast title or two titles of one subject, not a
     # second subject.
-    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria-mazzarello",
+    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria",
                  "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
                  "mr:1229-david-rex-et-propheta"}
 
@@ -321,7 +321,7 @@ class PerEditionPlacementsTest(unittest.TestCase):
         self.assertEqual(r.LATIN_RENUMBERING["mr:0825-aloysius-urbano-lanaspa"], 13)
         self.assertEqual(r.LATIN_RENUMBERING["mr:1210-gundisalvus-vines-masip"], 9)
         self.assertEqual(r.CEI_ONLY, {"mr:0712-proclus-et-hilarion", "mr:0825-eusebius-et-socii",
-                                      "mr:0709-maria-a-iesu-crucifixo-petkovic", "mr:1210-marcus-antonius-durando"})
+                                      "mr:0709-maria-a-iesu-crucifixo", "mr:1210-marcus-antonius-durando"})
         self.assertEqual(r.SAME_EULOGY, {"mr:0610-marcus-antonius-durando": "mr:1210-marcus-antonius-durando"})
         self.assertNotIn("mr:1210-marcus-antonius-durando", r.ID_CORRECTIONS)
         self.assertNotIn("mr:0610-marcus-antonius-durando", r.PLACEMENT_OVERRIDES)
