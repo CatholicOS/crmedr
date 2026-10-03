@@ -91,7 +91,7 @@
 | 6 | 11 | `mr:1106-theobaldus` | * | FR | dies_natalis |  |  |
 | 6 | 12 | `mr:1106-christina-stumbelensis` | * | DE | dies_natalis |  |  |
 | 7 | 1 | `mr:1107-prosdocimus` |  | IT | dies_natalis |  |  |
-| 7 | 2 | `mr:1107-athenodorus` |  | TR | dies_natalis |  |  |
+| 7 | 2 | `mr:1107-athenodorus` |  | TR | dies_natalis | same as `mr:1018-athenodorus` |  |
 | 7 | 3 | `mr:1107-amaranthus` |  | FR | commemoratio |  |  |
 | 7 | 4 | `mr:1107-hiero-et-socii` |  | TR | dies_natalis |  |  |
 | 7 | 5 | `mr:1107-herculanus` |  | IT | dies_natalis |  |  |
@@ -129,7 +129,7 @@
 | 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
 | 10 | (1) | `mr:1110-leo-i` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:1110-demetrianus` |  | IR | dies_natalis |  |  |
-| 10 | 3 | `mr:1110-orestes` |  | TR | dies_natalis |  |  |
+| 10 | 3 | `mr:1110-orestes` |  | TR | dies_natalis | same as `mr:1109-orestes` |  |
 | 10 | 4 | `mr:1110-probus` |  | IT | dies_natalis |  |  |
 | 10 | 5 | `mr:1110-narses-et-iosephus` |  | IR | dies_natalis |  |  |
 | 10 | 6 | `mr:1110-iustus` |  | GB | dies_natalis |  |  |
@@ -142,7 +142,7 @@
 | 11 | 4 | `mr:1111-menna-samnii` |  | IT | commemoratio |  |  |
 | 11 | 5 | `mr:1111-ioannes-eleemosynarius` |  | CY | dies_natalis |  |  |
 | 11 | 6 | `mr:1111-bertuinus` | * | BE | dies_natalis |  |  |
-| 11 | 7 | `mr:1111-theodorus-studita` |  | TR | dies_natalis |  |  |
+| 11 | 7 | `mr:1111-theodorus-studita` |  | TR | dies_natalis | same as `mr:1112-theodorus-studita` |  |
 | 11 | 8 | `mr:1111-bartholomaeus` |  | IT | dies_natalis |  |  |
 | 11 | 9 | `mr:1111-marina-de-omura` |  | JP | dies_natalis |  |  |
 | 11 | 10 | `mr:1111-alicia-kotowska` | * | PL | dies_natalis |  |  |
@@ -210,7 +210,7 @@
 | 15 | 18 | `mr:1115-maria-a-passione-de-chappotin-de-neuville` | * | IT | dies_natalis |  |  |
 | 15 | 19 | `mr:1115-raphael-a-sancto-ioseph-kalinowski` |  | PL | dies_natalis |  |  |
 | 16 | (1) | `mr:1116-margarita` |  | HU | dies_natalis |  |  |
-| 16 | (2) | `mr:1116-gertrudis-magna` |  | DE | celebratio |  |  |
+| 16 | (2) | `mr:1116-gertrudis-magna` |  | DE | celebratio | same as `mr:1115-gertrudis-magna` |  |
 | 16 | 3 | `mr:1116-augustinus-et-felicitas` |  | IT | dies_natalis |  |  |
 | 16 | 4 | `mr:1116-leocadius-et-lusor` | * | FR | commemoratio |  |  |
 | 16 | 5 | `mr:1116-eucherius` |  | FR | dies_natalis |  |  |
@@ -259,8 +259,8 @@
 | 19 | 8 | `mr:1119-mechtildis` | * | DE | dies_natalis |  |  |
 | 19 | 9 | `mr:1119-iacobus-benfatti` | * | IT | dies_natalis |  |  |
 | 19 | 10 | `mr:1119-elisaeus-garcia-et-alexander-planas-sauri` | * | ES | dies_natalis |  |  |
-| 20 | 1 | `mr:1120-basilius` |  | TR | dies_natalis |  |  |
-| 20 | 2 | `mr:1120-crispinus` |  | ES | dies_natalis |  |  |
+| 20 | 1 | `mr:1120-basilius` |  | TR | dies_natalis | same as `mr:1127-basilius` |  |
+| 20 | 2 | `mr:1120-crispinus` |  | ES | dies_natalis | same as `mr:1119-crispinus` |  |
 | 20 | 3 | `mr:1120-dasius` |  | BG | dies_natalis |  |  |
 | 20 | 4 | `mr:1120-octavius-et-socii` |  | IT | dies_natalis |  |  |
 | 20 | 5 | `mr:1120-theonestus` | * | IT | dies_natalis |  |  |
@@ -285,21 +285,21 @@
 | 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis |  |  |
 | 22 | 2 | `mr:1122-philemon-colossensis` |  | TR | commemoratio |  |  |
 | 22 | 3 | `mr:1122-ananias` |  | IR | dies_natalis |  |  |
-| 22 | 4 | `mr:1122-benignus` |  | IT | dies_natalis |  |  |
+| 22 | 4 | `mr:1122-benignus` |  | IT | dies_natalis | same as `mr:1120-benignus` |  |
 | 22 | 5 | `mr:1122-pragmatius` |  | FR | dies_natalis |  |  |
 | 22 | 6 | `mr:1122-salvator-lilli-et-socii` | * | TR | dies_natalis |  |  |
 | 22 | 7 | `mr:1122-thomas-reggio` | * | IT | dies_natalis |  |  |
 | 22 | 8 | `mr:1122-petrus-esqueda-ramirez` |  | MX | dies_natalis |  |  |
 | 22 | 9 | `mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner` | * | ES | dies_natalis |  |  |
 | 23 | (1) | `mr:1123-clemens-i` |  | IT | depositio |  |  |
-| 23 | (2) | `mr:1123-columbanus` |  | IT | dies_natalis |  |  |
+| 23 | (2) | `mr:1123-columbanus` |  | IT | dies_natalis | same as `mr:1121-columbanus` |  |
 | 23 | 3 | `mr:1123-felicitas` |  | IT | dies_natalis |  |  |
 | 23 | 4 | `mr:1123-mustiola` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:1123-sisinnius` |  | TR | dies_natalis |  |  |
 | 23 | 6 | `mr:1123-clemens` | * | FR | commemoratio |  |  |
 | 23 | 7 | `mr:1123-lucretia` |  | ES | dies_natalis |  |  |
 | 23 | 8 | `mr:1123-amphilochius` |  | TR | dies_natalis |  |  |
-| 23 | 9 | `mr:1123-severinus` |  | FR | dies_natalis |  |  |
+| 23 | 9 | `mr:1123-severinus` |  | FR | dies_natalis | same as `mr:1127-severinus` |  |
 | 23 | 10 | `mr:1123-gregorius` |  | IT | dies_natalis |  |  |
 | 23 | 11 | `mr:1123-trudo` |  | BE | dies_natalis |  |  |
 | 23 | 12 | `mr:1123-margarita-de-sabaudia` | * | IT | dies_natalis |  |  |
@@ -379,7 +379,7 @@
 | 29 | 10 | `mr:1129-franciscus-antonius-fasani` |  | IT | dies_natalis |  |  |
 | 29 | 11 | `mr:1129-alaphridus-simon-colomina` | * | ES | dies_natalis |  |  |
 | 30 | (1) | `mr:1130-andreas` |  | GR | dies_natalis |  |  |
-| 30 | 2 | `mr:1130-mirocles` |  | IT | dies_natalis |  |  |
+| 30 | 2 | `mr:1130-mirocles` |  | IT | dies_natalis | same as `mr:1203-mirocles` |  |
 | 30 | 3 | `mr:1130-tugdualus-pabu` | * | FR | dies_natalis |  |  |
 | 30 | 4 | `mr:1130-galganus-guidotti` |  | IT | dies_natalis |  |  |
 | 30 | 5 | `mr:1130-ioannes-de-vercellis-garbella` | * | FR | dies_natalis |  |  |

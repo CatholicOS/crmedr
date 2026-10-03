@@ -7,8 +7,10 @@ corrected against the Vatican print where noted). **All IDs are drafts for commi
 
 `mr:MMDD-slug` — MMDD anchors the entry's placement in the editio altera 2004;
 the slug is the Latin nominative lemma of the first-named subject, ASCII-folded,
-lowercase, honorific-free (no sanctus/beatus). Each edition's actual entry number,
-asterisk, and placement are per-edition attributes, not part of the identity.
+lowercase, honorific-free (no sanctus/beatus). The day is part of the identity: `MMDD`
+is the day an edition prints the eulogy. Each edition's position within the day (entry
+number, asterisk, unnumbered) is a per-edition attribute, not part of the identity; a
+eulogy printed on another day has its own ID there, linked by `same_eulogy` (#49).
 
 Rules applied, in order:
 1. Personal names extracted after the first sanctity marker (sancti/beatae/sanctorum...);
@@ -759,6 +761,89 @@ eulogies of the day under the wrong ID.
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy
   (mr:1029-zenobius).
 
+**Eulogies printed on another day (applied, October 2026, #49)**: the day is part of the
+identity. The 1749 and 1914 alignments had keyed 331 eulogies (211 distinct, read one by
+one against the 2004 text) to an ID of another day. Each now has an ID of the day it is
+printed on:
+- 131 are the same eulogy as the 2004 one, moved: a new deprecated ID on the historical
+  day with the 2004 slug (mr:1220-ammon-et-socii for mr:0601-ammon-et-socii), linked to it
+  both ways by `same_eulogy`; 6 more 1914 eulogies link the same way to a deprecated 1749
+  ID of another day.
+- 9 are another saint who has a 2004 eulogy on another day (Stephen Harding, John Francis
+  Regis, John of Lycopolis, the martyrs of Ceuta, ...): a new deprecated ID with the
+  saint's own slug, linked to that eulogy.
+- 54 are another saint, a namesake the aligner had matched (Liberata of Como had been
+  keyed to mr:0427-liberalis), with no 2004 eulogy: a new deprecated ID, no link.
+- 9 are an ID of the same day (Anselm of Lucca, Hilary of Arles, Landelin, Nilus, Albert
+  of Trapani, Hesperus and Zoe, Pope Eutychian, Philip Benizi's 1749 ID, and the 1914
+  Christmas proclamation, which the OCR had split in two): re-keyed, no new ID.
+- Two garbled 1749 IDs are re-minted. mr:0523-martyru is Quinctianus, Lucius and Julian of
+  Africa, whom the 1914 alignment had keyed to the different current eulogy
+  mr:0523-lucius-et-socii (Lucius, Montanus and companions of Carthage): both editions now
+  key mr:0523-quinctianus-et-socii. mr:0504-triginta-martyres-inmetallo is the thirty-nine
+  martyrs of the mines of Phaeno, a eulogy of its own in 1749 and 1914 after that of Silvanus
+  of Gaza, with whom the 2004 edition commemorates them (mr:0504-silvanus-et-socii): both
+  editions now key mr:0504-triginta-novem-martyres-phaenonis (rule 8), with a note.
+
+A slug already taken on the day takes a place or byname (mr:0111-salvius-ambiani,
+mr:0524-vincentius-portuensis, mr:0926-eusebius-papa). The deprecated entries carry their
+links in `data/deprecated_ids.json`; `extract_registry.py` records each link back on the
+counterpart and validates every link (another day, both ways). The full table is in #49.
+
+**More deprecated IDs merged into current IDs (applied, October 2026, #49)**: 42 more
+1749 eulogies had a coined deprecated ID although they are the same eulogy as a current ID
+on the same day, whose slug the deprecated one extends or declines (mr:0413-ursi for
+mr:0413-ursus, Ursus of Ravenna; mr:0525-leo-in for mr:0525-leo). They are the merges the
+deprecated-ID sweep's audit had accepted, each read again against the 2004 text. As in #45,
+each deprecated entry is removed and the 1749 text (and the 1914 one, where printed) is
+re-keyed to the current ID. The 1749 texts of mr:0518-ericus and mr:0528-iustus still carry
+the following eulogies of their day, run in by the OCR.
+
+| Removed deprecated ID | Current ID |
+| --- | --- |
+| mr:0110-paulus-thebaide | mr:0110-paulus |
+| mr:0114-datius-mediolani | mr:0114-datius |
+| mr:0115-maurus-in | mr:0115-maurus |
+| mr:0116-marcellus-primus-romae | mr:0116-marcellus-primus |
+| mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
+| mr:0312-petrus-ibidem | mr:0312-petrus |
+| mr:0413-ursi | mr:0413-ursus |
+| mr:0422-caji | mr:0422-caius |
+| mr:0425-marcus-evangelista-hic | mr:0425-marcus |
+| mr:0510-job-propheta | mr:0510-iob |
+| mr:0518-ericus-upsali | mr:0518-ericus |
+| mr:0519-ivo-lohaneti | mr:0519-ivo |
+| mr:0525-leo-in | mr:0525-leo |
+| mr:0528-justus | mr:0528-iustus |
+| mr:0629-syri | mr:0629-syrus |
+| mr:0720-paulus-cordubae | mr:0720-paulus |
+| mr:0729-olavus-norvegia | mr:0729-olavus |
+| mr:0729-lupi | mr:0729-lupus |
+| mr:0730-ursi | mr:0730-ursus |
+| mr:0731-fabius-caesareae | mr:0731-fabius |
+| mr:0816-rochus-montem | mr:0816-rochus |
+| mr:0819-magnus-anagniae | mr:0819-magnus |
+| mr:0823-luppus-item | mr:0823-luppus |
+| mr:0825-ludovicus-noni | mr:0825-ludovicus-nonus |
+| mr:0827-rufi | mr:0827-rufus |
+| mr:0829-sebbus-anglia | mr:0829-sebbus |
+| mr:0901-lupi | mr:0901-lupus |
+| mr:0903-gregorius-magnus-item | mr:0903-gregorius-magnus |
+| mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
+| mr:0923-lini | mr:0923-linus |
+| mr:0927-caji | mr:0927-caius |
+| mr:1006-fideus-agenni | mr:1006-fideus |
+| mr:1007-marcus-romae | mr:1007-marcus |
+| mr:1016-lullus-moguntiae | mr:1016-lullus |
+| mr:1022-donatus-scotus-tuscia | mr:1022-donatus-scotus |
+| mr:1026-fulcus-papiae | mr:1026-fulcus |
+| mr:1102-justus | mr:1102-iustus |
+| mr:1110-justus | mr:1110-iustus |
+| mr:1209-syri | mr:1209-syrus |
+| mr:1209-petrus-fourier-graji | mr:1209-petrus-fourier |
+| mr:1216-ado-viennae | mr:1216-ado |
+| mr:1221-petrus-canisius-friburgi | mr:1221-petrus-canisius |
+
 ## Country-code corrections (September 2026)
 
 `country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the
@@ -1012,8 +1097,8 @@ received coined canonical IDs with `deprecated: true`**, listed in
 `data/deprecated_ids.json` and merged into the registry. A subsequent alignment of
 the public-domain **1914 unofficial English edition** coined a further **225**
 deprecated IDs (`attested_in: martyrologium_romanum_1914_en_unofficial`). After later
-corrections (#25, #44, #45, #47) the registry holds **6,064** entries (`entry_count` =
-`current_count` + `deprecated_count`) — **4,640 current + 1,424 deprecated**. Their `MMDD` anchors the placement in the
+corrections (#25, #44, #45, #47, #49) the registry holds **6,222** entries (`entry_count` =
+`current_count` + `deprecated_count`) — **4,640 current + 1,582 deprecated**. Their `MMDD` anchors the placement in the
 edition named by `attested_in`. The Latin subject for every ID (current and
 deprecated) lives in `i18n/la.json`, the single source of truth for subjects;
 each deprecated entry additionally carries a `country` (ISO 3166-1 alpha-2 of the
@@ -1056,11 +1141,11 @@ low-score band, and re-classify any remaining false deprecations as merges into 
 
 Every canonical ID carries a **subject** — the saint, blessed or celebration the
 eulogy is directed to, in nominative display form — stored per language in
-[`i18n/`](../i18n/) (generated by `scripts/extract_subjects.py`). All locale files carry the identical complete key set (all 6,064 IDs), with empty
+[`i18n/`](../i18n/) (generated by `scripts/extract_subjects.py`). All locale files carry the identical complete key set (all 6,222 IDs), with empty
 strings for untranslated subjects. The Latin file is fully filled (honorific from the
 sanctity marker of the 2004 text, suppressed for feasts, pluralized for pairs and
 groups; name from the slug; deprecated IDs from their historical-edition extraction).
-The Italian (4,638 filled) and English (5,943 filled) files are partial extractions
+The Italian (4,779 filled) and English (6,112 filled) files are partial extractions
 from the 2004-edition texts (English also drawing deprecated subjects from the aligned
 1914 edition), kept only when verified against the slug, and await translator
 completion. Subject and slug are

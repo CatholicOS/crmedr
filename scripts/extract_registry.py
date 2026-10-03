@@ -490,6 +490,11 @@ PLACEMENT_OVERRIDES = {}
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
+    "mr:0410-beda": (
+        "The unofficial English 2004 edition mistranslates the subject as \"Saint Peter the "
+        "Younger\"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda "
+        "il Giovane. The English subject follows the Latin."
+    ),
     "mr:1210-marcus-antonius-durando": (
         "The CEI's placement (10 December, entry 9*) of the same eulogy the "
         "Latin print and the English edition give at 10 June "
@@ -746,6 +751,23 @@ def link_same_eulogy(entries, pairs=SAME_EULOGY):
                 links = by_id[src].setdefault("same_eulogy", [])
                 if dst not in links:
                     links.append(dst)
+
+
+def link_deprecated_twins(entries, deprecated):
+    """A deprecated eulogy printed by a historical edition on another day than
+    its counterpart names that counterpart (current or deprecated) in its
+    `same_eulogy` (data/deprecated_ids.json); record the link back on the
+    counterpart (idempotent), keeping `same_eulogy` an entry's last key."""
+    by_id = {e["id"]: e for e in entries + deprecated}
+    for d in deprecated:
+        for other in d.get("same_eulogy", []):
+            t = by_id.get(other)
+            if t is None:
+                continue  # reported by validate_editions
+            links = t.setdefault("same_eulogy", [])
+            if d["id"] not in links:
+                links.append(d["id"])
+            t["same_eulogy"] = t.pop("same_eulogy")
 
 
 def _placement(e, edition):
@@ -1077,6 +1099,9 @@ def main():
     entries = add_typology(entries, typology)
     entries = add_places(entries, places)
     deprecated = load_deprecated(repo_root, {e["id"] for e in entries})
+    link_deprecated_twins(entries, deprecated)
+    errors = validate_editions(entries + deprecated)
+    assert not errors, "same_eulogy links:\n" + "\n".join(errors)
     path = write_json(entries, deprecated, repo_root)
     write_markdown(entries, repo_root)
     ids = [e["id"] for e in entries] + [e["id"] for e in deprecated]

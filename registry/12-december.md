@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:1201-castritianus` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:1201-florentia` | * | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:1201-leontius` | * | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 1 | 6 | `mr:1201-agericus` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:1201-eligius` |  | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:1201-antonius-bonfadini` | * | IT | dies_natalis |  |  |
@@ -43,7 +43,7 @@
 | 4 | 7 | `mr:1204-sigiramnus` | * | FR | dies_natalis |  |  |
 | 4 | 8 | `mr:1204-adrehildis` | * | FR | dies_natalis |  |  |
 | 4 | 9 | `mr:1204-sola` | * | DE | dies_natalis |  |  |
-| 4 | 10 | `mr:1204-ioannes-thaumaturgus` |  | TR | dies_natalis |  |  |
+| 4 | 10 | `mr:1204-ioannes-thaumaturgus` |  | TR | dies_natalis | same as `mr:1205-ioannes-thaumaturgus` |  |
 | 4 | 11 | `mr:1204-anno` |  | DE | dies_natalis |  |  |
 | 4 | 12 | `mr:1204-osmundus` |  | GB | dies_natalis |  |  |
 | 4 | 13 | `mr:1204-bernardus` |  | IT | dies_natalis |  |  |
@@ -144,7 +144,7 @@
 | 13 | 11 | `mr:1213-petrus-cho-hwa-so-et-socii` |  | KR | dies_natalis |  |  |
 | 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES | dies_natalis |  |  |
 | 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  |  |
-| 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR | dies_natalis |  |  |
+| 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR | dies_natalis | same as `mr:0128-thyrsus-et-socii` |  |
 | 14 | 4 | `mr:1214-drosis` |  | TR | dies_natalis |  |  |
 | 14 | 5 | `mr:1214-ares-et-socii` |  | PS | dies_natalis |  |  |
 | 14 | 6 | `mr:1214-pompeius` |  | IT | dies_natalis |  |  |
@@ -242,7 +242,7 @@
 | 25 | (1) | `mr:1225-nativitas-domini` |  | IL | celebratio |  |  |
 | 25 | 2 | `mr:1225-anastasia` |  | IT | commemoratio |  |  |
 | 25 | 3 | `mr:1225-eugenia` |  | IT | dies_natalis |  |  |
-| 25 | 4 | `mr:1225-iovinus-et-basileus` |  | IT | dies_natalis |  |  |
+| 25 | 4 | `mr:1225-iovinus-et-basileus` |  | IT | dies_natalis | same as `mr:0302-iovinus-et-basileus` |  |
 | 25 | 5 | `mr:1225-petrus-venerabilis` | * | FR | dies_natalis |  |  |
 | 25 | 6 | `mr:1225-bentivolius-de-bonis` | * | IT | dies_natalis |  |  |
 | 25 | 7 | `mr:1225-michael-nakashima` | * | JP | dies_natalis |  |  |
@@ -252,7 +252,7 @@
 | 26 | 2 | `mr:1226-dionysius` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:1226-zeno` |  | PS | commemoratio |  |  |
 | 26 | 4 | `mr:1226-zosimus` |  | IT | depositio |  |  |
-| 26 | 5 | `mr:1226-euthymius` |  | TR | dies_natalis |  |  |
+| 26 | 5 | `mr:1226-euthymius` |  | TR | dies_natalis | same as `mr:0311-euthymius` |  |
 | 26 | 6 | `mr:1226-vincentia-maria-lopez-vicuna` |  | ES | dies_natalis |  |  |
 | 26 | 7 | `mr:1226-agnes-phila-et-lucia-khambang` | * | TH | dies_natalis |  |  |
 | 26 | 8 | `mr:1226-secundus-pollo` | * | ME | dies_natalis |  |  |
@@ -273,7 +273,7 @@
 | 29 | 2 | `mr:1229-david` |  | IL | commemoratio |  |  |
 | 29 | 3 | `mr:1229-trophimus` |  | FR | dies_natalis |  |  |
 | 29 | 4 | `mr:1229-libosus` |  | TN | dies_natalis |  |  |
-| 29 | 5 | `mr:1229-martinianus` |  | IT | dies_natalis |  |  |
+| 29 | 5 | `mr:1229-martinianus` |  | IT | dies_natalis | same as `mr:0102-martinianus` |  |
 | 29 | 6 | `mr:1229-marcellus` |  | TR | dies_natalis |  |  |
 | 29 | 7 | `mr:1229-ebrulfus` |  | FR | dies_natalis |  |  |
 | 29 | 8 | `mr:1229-gerardus-cagnoli` | * | IT | dies_natalis |  |  |
@@ -283,9 +283,9 @@
 | 29 | 12 | `mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher` | * | ES | dies_natalis |  |  |
 | 29 | 13 | `mr:1229-ioannes-baptista-ferreres-boluda` | * | ES | dies_natalis |  |  |
 | 30 | 1 | `mr:1230-felix-i` |  | IT | depositio |  |  |
-| 30 | 2 | `mr:1230-hermes` |  | BG | dies_natalis |  |  |
+| 30 | 2 | `mr:1230-hermes` |  | BG | dies_natalis | same as `mr:1231-hermes` |  |
 | 30 | 3 | `mr:1230-anysius` |  | GR | commemoratio |  |  |
-| 30 | 4 | `mr:1230-perpetuus` |  | FR | dies_natalis |  |  |
+| 30 | 4 | `mr:1230-perpetuus` |  | FR | dies_natalis | same as `mr:0408-perpetuus` |  |
 | 30 | 5 | `mr:1230-iucundus` | * | IT | dies_natalis |  |  |
 | 30 | 6 | `mr:1230-geremarus` |  | FR | dies_natalis |  |  |
 | 30 | 7 | `mr:1230-egwinus` | * | GB | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
@@ -302,6 +302,6 @@
 | 31 | 5 | `mr:1231-melania` |  | PS | dies_natalis |  |  |
 | 31 | 6 | `mr:1231-barbatianus` |  | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:1231-marius` | * | CH | dies_natalis |  |  |
-| 31 | 8 | `mr:1231-ioannes-franciscus-regis` |  | FR | dies_natalis |  |  |
+| 31 | 8 | `mr:1231-ioannes-franciscus-regis` |  | FR | dies_natalis | same as `mr:0616-ioannes-franciscus-regis` |  |
 | 31 | 9 | `mr:1231-alanus-de-solminihac` | * | FR | dies_natalis |  |  |
 | 31 | 10 | `mr:1231-catharina-laboure` |  | FR | dies_natalis |  |  |
