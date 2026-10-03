@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6222,
+  "entry_count": 6288,
   "current_count": 4640,
-  "deprecated_count": 1582,
+  "deprecated_count": 1648,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -401,6 +401,9 @@
           "it": "A Milano",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0110-ioannes-bonus"
       ]
     },
     {
@@ -649,6 +652,9 @@
           "it": "A Pario in Ellesponto, nell’odierna Turchia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0103-cyrinus-et-socii"
       ]
     },
     {
@@ -3077,6 +3083,9 @@
           "it": "A Clermont-Ferrand nella regione dell’Aquitania, in Francia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0114-euphrasius-africae"
       ]
     },
     {
@@ -5967,6 +5976,9 @@
           "it": "Ad Antiochia di Siria, oggi in Turchia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0125-iuventinus-et-maximus"
       ]
     },
     {
@@ -7659,6 +7671,9 @@
           "it": "A Sabiona nella Rezia, oggi nel Tirolo",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0205-genuinus-et-albuinus"
       ]
     },
     {
@@ -7710,6 +7725,9 @@
           "it": "A Bressanone nell’Alto Adige",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0205-genuinus-et-albuinus"
       ]
     },
     {
@@ -9904,7 +9922,8 @@
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "note": "On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID."
     },
     {
       "id": "mr:0217-theodorus-tiro",
@@ -11937,6 +11956,9 @@
           "it": "A Roma presso San Paolo sulla via Ostiense",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0225-felix-iii"
       ]
     },
     {
@@ -17672,6 +17694,9 @@
           "it": "Nel monastero di Luxeuil nella Burgundia sempre in territorio francese",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0329-eustasius-luxovii"
       ]
     },
     {
@@ -26421,6 +26446,9 @@
           "it": "Sull’isola di Chio, nel mare Egeo",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0515-isidorus-chii"
       ]
     },
     {
@@ -28397,6 +28425,9 @@
           "it": "A Cartagine, nell’odierna Tunisia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0224-montanus-et-socii"
       ]
     },
     {
@@ -48802,6 +48833,9 @@
           "it": "A Siena",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0821-bernardus-ptolomaeus"
       ]
     },
     {
@@ -52237,6 +52271,9 @@
           "it": "Sul monte Titano vicino a Rimini",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0904-marinus"
       ]
     },
     {
@@ -52706,6 +52743,9 @@
           "it": "A Capua in Campania",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0905-quinctius-et-socii"
       ]
     },
     {
@@ -54731,6 +54771,9 @@
           "it": "A Gumenek nel Ponto, nell’odierna Turchia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0127-ioannes-chrysostomus"
       ]
     },
     {
@@ -56937,7 +56980,10 @@
       "entry": 2,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "same_eulogy": [
+        "mr:1105-zacharias"
+      ]
     },
     {
       "id": "mr:0923-linus",
@@ -58144,6 +58190,9 @@
           "it": "A Chiliadu in Pisidia, nell’odierna Turchia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:0928-marcus-et-socii"
       ]
     },
     {
@@ -60651,7 +60700,10 @@
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "same_eulogy": [
+        "mr:1010-ioannes-leonardus"
+      ]
     },
     {
       "id": "mr:1009-abraham",
@@ -62882,7 +62934,10 @@
       "entry": 3,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "same_eulogy": [
+        "mr:0713-ioel-et-esdra"
+      ]
     },
     {
       "id": "mr:1019-ptolomaeus-et-lucius",
@@ -65243,6 +65298,9 @@
           "it": "A Cuma in Campania",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:1030-maximus-apameae"
       ]
     },
     {
@@ -66015,6 +66073,9 @@
           "it": "Nel monastero di Chiaravalle in Borgogna, ora in Francia",
           "source": "lead"
         }
+      ],
+      "same_eulogy": [
+        "mr:1103-malachias"
       ]
     },
     {
@@ -67594,7 +67655,10 @@
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "same_eulogy": [
+        "mr:0411-leo-i"
+      ]
     },
     {
       "id": "mr:1110-demetrianus",
@@ -72487,7 +72551,10 @@
       "asterisk": false,
       "country": "IL",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "same_eulogy": [
+        "mr:0506-ioannes-damascenus"
+      ]
     },
     {
       "id": "mr:1204-barbara",
@@ -77063,6 +77130,19 @@
       "country": "TR"
     },
     {
+      "id": "mr:0103-cyrinus-et-socii",
+      "month": 1,
+      "day": 3,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR",
+      "same_eulogy": [
+        "mr:0103-theogenes"
+      ],
+      "note": "The 2004 edition reduces the eulogy to the sole Theogenes"
+    },
+    {
       "id": "mr:0104-octava-sanctorum-innocentium-martyrum",
       "month": 1,
       "day": 4,
@@ -77339,6 +77419,18 @@
       "country": "FR"
     },
     {
+      "id": "mr:0110-ioannes-bonus",
+      "month": 1,
+      "day": 10,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0102-ioannes-bonus"
+      ]
+    },
+    {
       "id": "mr:0111-melchiadis",
       "month": 1,
       "day": 11,
@@ -77549,15 +77641,6 @@
       "country": "EG"
     },
     {
-      "id": "mr:0114-gregorius-thaumaturgus",
-      "month": 1,
-      "day": 14,
-      "entry": 8,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "TR"
-    },
-    {
       "id": "mr:0114-iulianus",
       "month": 1,
       "day": 14,
@@ -77568,6 +77651,28 @@
       "same_eulogy": [
         "mr:0117-iulianus"
       ]
+    },
+    {
+      "id": "mr:0114-euphrasius-africae",
+      "month": 1,
+      "day": 14,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null,
+      "same_eulogy": [
+        "mr:0114-euphrasius"
+      ],
+      "note": "The historical editions commemorate a bishop Euphrasius in Africa on this day; the 2004 edition's eulogy of the day is Euphrasius, bishop of Clermont (mr:0114-euphrasius). The two are keyed apart and linked as the same eulogy, whose subject the 2004 edition changed."
+    },
+    {
+      "id": "mr:0114-macrina",
+      "month": 1,
+      "day": 14,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
     },
     {
       "id": "mr:0115-paulus",
@@ -77876,6 +77981,18 @@
       "country": null
     },
     {
+      "id": "mr:0125-iuventinus-et-maximus",
+      "month": 1,
+      "day": 25,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR",
+      "same_eulogy": [
+        "mr:0129-iuventinus-et-maximinus"
+      ]
+    },
+    {
       "id": "mr:0126-polycarpus",
       "month": 1,
       "day": 26,
@@ -77922,6 +78039,18 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": null
+    },
+    {
+      "id": "mr:0127-ioannes-chrysostomus",
+      "month": 1,
+      "day": 27,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null,
+      "same_eulogy": [
+        "mr:0914-ioannes-chrysostomus"
+      ]
     },
     {
       "id": "mr:0128-petrus-nolascus",
@@ -78122,6 +78251,15 @@
       ]
     },
     {
+      "id": "mr:0131-saturninus-et-socii",
+      "month": 1,
+      "day": 31,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "EG"
+    },
+    {
       "id": "mr:0201-ignatius",
       "month": 2,
       "day": 1,
@@ -78218,6 +78356,15 @@
       "country": "DE"
     },
     {
+      "id": "mr:0203-laurentinus-et-socii",
+      "month": 2,
+      "day": 3,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TN"
+    },
+    {
       "id": "mr:0204-andrea-corsinus",
       "month": 2,
       "day": 4,
@@ -78261,6 +78408,20 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG"
+    },
+    {
+      "id": "mr:0205-genuinus-et-albuinus",
+      "month": 2,
+      "day": 5,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0205-ingenuinus",
+        "mr:0205-albuinus"
+      ],
+      "note": "The 1914 English fuses the eulogies of Ingenuinus and Albuinus of Brixen, which the 1749 edition and the 2004 edition print separately (mr:0205-ingenuinus, mr:0205-albuinus); it is linked to both."
     },
     {
       "id": "mr:0206-titi",
@@ -78317,6 +78478,15 @@
       "country": "TR"
     },
     {
+      "id": "mr:0207-plurimi-martyres-phrygiae",
+      "month": 2,
+      "day": 7,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
       "id": "mr:0208-joannis-de-matha",
       "month": 2,
       "day": 8,
@@ -78353,15 +78523,6 @@
       "country": "IR"
     },
     {
-      "id": "mr:0208-petrus-cardinalis",
-      "month": 2,
-      "day": 8,
-      "entry": 12,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "IT"
-    },
-    {
       "id": "mr:0209-cyrillus",
       "month": 2,
       "day": 9,
@@ -78387,6 +78548,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR"
+    },
+    {
+      "id": "mr:0209-alexander-et-socii",
+      "month": 2,
+      "day": 9,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
     },
     {
       "id": "mr:0210-decem-milites-ibidem",
@@ -78503,7 +78673,7 @@
       "id": "mr:0212-modestus",
       "month": 2,
       "day": 12,
-      "entry": 3,
+      "entry": 2,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
@@ -78512,10 +78682,19 @@
       "id": "mr:0212-gaudentius",
       "month": 2,
       "day": 12,
-      "entry": 7,
+      "entry": 6,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:0212-modestus-et-iulianus",
+      "month": 2,
+      "day": 12,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TN"
     },
     {
       "id": "mr:0213-agabus-propheta",
@@ -78578,6 +78757,15 @@
       ]
     },
     {
+      "id": "mr:0213-iulianus",
+      "month": 2,
+      "day": 13,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "FR"
+    },
+    {
       "id": "mr:0214-valentinus-interamnae",
       "month": 2,
       "day": 14,
@@ -78609,6 +78797,15 @@
       "month": 2,
       "day": 14,
       "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "EG"
+    },
+    {
+      "id": "mr:0214-cyrio-et-socii",
+      "month": 2,
+      "day": 14,
+      "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG"
@@ -78693,6 +78890,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:0216-iulianus-et-socii",
+      "month": 2,
+      "day": 16,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "EG"
     },
     {
       "id": "mr:0217-faustinus",
@@ -78933,10 +79139,10 @@
       "country": "EG"
     },
     {
-      "id": "mr:0223-matthia-apostolus",
+      "id": "mr:0222-martyres-arabiae",
       "month": 2,
-      "day": 23,
-      "entry": 1,
+      "day": 22,
+      "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": null
@@ -78945,7 +79151,7 @@
       "id": "mr:0223-vigilia-sancti-matthiae-apostoli",
       "month": 2,
       "day": 23,
-      "entry": 2,
+      "entry": 1,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": null
@@ -78954,7 +79160,7 @@
       "id": "mr:0223-petrus-damianus",
       "month": 2,
       "day": 23,
-      "entry": 3,
+      "entry": 2,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -78963,7 +79169,7 @@
       "id": "mr:0223-duo-martyres-ibidem",
       "month": 2,
       "day": 23,
-      "entry": 6,
+      "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -78972,7 +79178,7 @@
       "id": "mr:0223-martha",
       "month": 2,
       "day": 23,
-      "entry": 7,
+      "entry": 6,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES"
@@ -78981,7 +79187,7 @@
       "id": "mr:0223-lazarus",
       "month": 2,
       "day": 23,
-      "entry": 8,
+      "entry": 7,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR"
@@ -78990,7 +79196,7 @@
       "id": "mr:0223-felix",
       "month": 2,
       "day": 23,
-      "entry": 9,
+      "entry": 8,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -78999,7 +79205,7 @@
       "id": "mr:0223-polycarpus-romae",
       "month": 2,
       "day": 23,
-      "entry": 10,
+      "entry": 9,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -79008,7 +79214,7 @@
       "id": "mr:0223-florentius",
       "month": 2,
       "day": 23,
-      "entry": 11,
+      "entry": 10,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES"
@@ -79017,7 +79223,7 @@
       "id": "mr:0223-silvestro-papabaptizata",
       "month": 2,
       "day": 23,
-      "entry": 12,
+      "entry": 11,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -79050,13 +79256,16 @@
       "country": "TR"
     },
     {
-      "id": "mr:0224-cyprianus",
+      "id": "mr:0224-montanus-et-socii",
       "month": 2,
       "day": 24,
       "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": null
+      "country": null,
+      "same_eulogy": [
+        "mr:0523-lucius-et-socii"
+      ]
     },
     {
       "id": "mr:0224-inventio-capitis-ioannis-baptistae",
@@ -79104,6 +79313,18 @@
       "country": "TR",
       "same_eulogy": [
         "mr:0218-tarasius"
+      ]
+    },
+    {
+      "id": "mr:0225-felix-iii",
+      "month": 2,
+      "day": 25,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0301-felix-iii"
       ]
     },
     {
@@ -79341,6 +79562,15 @@
       ]
     },
     {
+      "id": "mr:0304-nongenti-martyres-romae",
+      "month": 3,
+      "day": 4,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0305-eusebius-palatinus",
       "month": 3,
       "day": 5,
@@ -79560,6 +79790,15 @@
       "country": "FR"
     },
     {
+      "id": "mr:0311-constantinus-carthaginis",
+      "month": 3,
+      "day": 11,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TN"
+    },
+    {
       "id": "mr:0312-mamilianus",
       "month": 3,
       "day": 12,
@@ -79705,6 +79944,15 @@
       "same_eulogy": [
         "mr:1016-longinus"
       ]
+    },
+    {
+      "id": "mr:0315-speciosus",
+      "month": 3,
+      "day": 15,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT"
     },
     {
       "id": "mr:0316-cyriacus",
@@ -80289,6 +80537,18 @@
       "country": "TR"
     },
     {
+      "id": "mr:0329-eustasius-luxovii",
+      "month": 3,
+      "day": 29,
+      "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "FR",
+      "same_eulogy": [
+        "mr:0402-eustasius"
+      ]
+    },
+    {
       "id": "mr:0330-quirinus-tribunus",
       "month": 3,
       "day": 30,
@@ -80425,6 +80685,15 @@
       "same_eulogy": [
         "mr:0401-agapis-et-chionia"
       ]
+    },
+    {
+      "id": "mr:0403-evagrius-et-benignus",
+      "month": 4,
+      "day": 3,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "RO"
     },
     {
       "id": "mr:0404-zosimus-a",
@@ -80667,6 +80936,15 @@
       ]
     },
     {
+      "id": "mr:0409-demetrius-et-socii",
+      "month": 4,
+      "day": 9,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0410-ezechiel-propheta",
       "month": 4,
       "day": 10,
@@ -80692,6 +80970,18 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR"
+    },
+    {
+      "id": "mr:0411-leo-i",
+      "month": 4,
+      "day": 11,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null,
+      "same_eulogy": [
+        "mr:1110-leo-i"
+      ]
     },
     {
       "id": "mr:0412-bracari-in-lusitania",
@@ -81015,6 +81305,15 @@
       ]
     },
     {
+      "id": "mr:0421-apollo-et-socii",
+      "month": 4,
+      "day": 21,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
       "id": "mr:0422-apellis-et-lucius",
       "month": 4,
       "day": 22,
@@ -81076,6 +81375,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0424-bova-et-doda",
+      "month": 4,
+      "day": 24,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "FR"
     },
     {
       "id": "mr:0425-petrum",
@@ -81250,6 +81558,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG"
+    },
+    {
+      "id": "mr:0428-marcus",
+      "month": 4,
+      "day": 28,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
     },
     {
       "id": "mr:0429-petrus",
@@ -81586,6 +81903,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0505-sacerdos-sagunti",
+      "month": 5,
+      "day": 5,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "ES"
+    },
+    {
       "id": "mr:0506-joannis-apostolus-et-evangelista",
       "month": 5,
       "day": 6,
@@ -81638,6 +81964,18 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0506-ioannes-damascenus",
+      "month": 5,
+      "day": 6,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "SY",
+      "same_eulogy": [
+        "mr:1204-ioannes-damascenus"
+      ]
     },
     {
       "id": "mr:0507-stanislaus",
@@ -81889,6 +82227,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0511-sisinius-et-socii",
+      "month": 5,
+      "day": 11,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0512-dionysius",
       "month": 5,
       "day": 12,
@@ -82000,6 +82347,15 @@
       ]
     },
     {
+      "id": "mr:0514-bonifatius-tarsi",
+      "month": 5,
+      "day": 14,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
       "id": "mr:0515-joannis-baptista-de-la",
       "month": 5,
       "day": 15,
@@ -82039,6 +82395,18 @@
       "country": "BE",
       "same_eulogy": [
         "mr:0530-dympna"
+      ]
+    },
+    {
+      "id": "mr:0515-isidorus-chii",
+      "month": 5,
+      "day": 15,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "GR",
+      "same_eulogy": [
+        "mr:0514-isidorus"
       ]
     },
     {
@@ -82136,6 +82504,24 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0518-felix-spoleti",
+      "month": 5,
+      "day": 18,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
+      "id": "mr:0518-potamon",
+      "month": 5,
+      "day": 18,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "EG"
     },
     {
       "id": "mr:0519-petrus-de-morono",
@@ -82387,6 +82773,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0524-translatio-sancti-dominici",
+      "month": 5,
+      "day": 24,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT"
+    },
+    {
       "id": "mr:0525-urbanus-primus",
       "month": 5,
       "day": 25,
@@ -82490,6 +82885,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
+    },
+    {
+      "id": "mr:0527-restituta",
+      "month": 5,
+      "day": 27,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
     },
     {
       "id": "mr:0528-augustinus",
@@ -82757,6 +83161,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0601-pamphilus",
+      "month": 6,
+      "day": 1,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IL"
     },
     {
       "id": "mr:0603-pergentinus-et-laurentinus",
@@ -83506,6 +83919,15 @@
       "country": "FR"
     },
     {
+      "id": "mr:0622-ioannes",
+      "month": 6,
+      "day": 22,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0623-vigilia-nativitatis-sancti-joannis",
       "month": 6,
       "day": 23,
@@ -83576,6 +83998,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:0624-orentius-et-socii",
+      "month": 6,
+      "day": 24,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "TR"
     },
     {
       "id": "mr:0625-sosipatris",
@@ -84187,6 +84618,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0708-auspicius-treviris",
+      "month": 7,
+      "day": 8,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "DE"
+    },
+    {
       "id": "mr:0709-decem-martyres-romae",
       "month": 7,
       "day": 9,
@@ -84203,15 +84643,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "GR"
-    },
-    {
-      "id": "mr:0709-augustinus",
-      "month": 7,
-      "day": 9,
-      "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "NL"
     },
     {
       "id": "mr:0709-anatolia-et-audacis",
@@ -84340,6 +84771,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0712-paternianus-bononiae",
+      "month": 7,
+      "day": 12,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0713-anacletus",
       "month": 7,
       "day": 13,
@@ -84347,6 +84787,18 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0713-ioel-et-esdra",
+      "month": 7,
+      "day": 13,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "PS",
+      "same_eulogy": [
+        "mr:1019-ioel"
+      ]
     },
     {
       "id": "mr:0714-bonaventura",
@@ -84433,6 +84885,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0715-felix-papiae",
+      "month": 7,
+      "day": 15,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:0716-valentinus",
       "month": 7,
       "day": 16,
@@ -84476,6 +84937,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:0716-eustathius",
+      "month": 7,
+      "day": 16,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
     },
     {
       "id": "mr:0717-generosus",
@@ -84827,6 +85297,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
+    },
+    {
+      "id": "mr:0724-victor-et-socii",
+      "month": 7,
+      "day": 24,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "ES"
     },
     {
       "id": "mr:0725-paulus",
@@ -85217,15 +85696,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
-    },
-    {
-      "id": "mr:0804-novem-martyres-perside",
-      "month": 8,
-      "day": 4,
-      "entry": 5,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "IR"
     },
     {
       "id": "mr:0804-agabius",
@@ -85960,6 +86430,18 @@
       "country": "IT"
     },
     {
+      "id": "mr:0821-bernardus-ptolomaeus",
+      "month": 8,
+      "day": 21,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0820-bernardus-tolomei"
+      ]
+    },
+    {
       "id": "mr:0822-octava-assumptionis-beatae-mariae",
       "month": 8,
       "day": 22,
@@ -86159,6 +86641,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
+    },
+    {
+      "id": "mr:0824-eutychius",
+      "month": 8,
+      "day": 24,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": null
     },
     {
       "id": "mr:0825-nemesius",
@@ -86371,22 +86862,19 @@
       ]
     },
     {
-      "id": "mr:0828-bonifatius-et-thecla",
-      "month": 8,
-      "day": 28,
-      "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "TN",
-      "same_eulogy": [
-        "mr:0830-bonifatius-et-thecla"
-      ]
-    },
-    {
       "id": "mr:0828-fortunatus-et-socii",
       "month": 8,
       "day": 28,
       "entry": 6,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
+      "id": "mr:0828-septiminus-et-socii",
+      "month": 8,
+      "day": 28,
+      "entry": 3,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
@@ -86473,10 +86961,7 @@
       "entry": 6,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
-      "country": "TN",
-      "same_eulogy": [
-        "mr:0828-bonifatius-et-thecla"
-      ]
+      "country": "TN"
     },
     {
       "id": "mr:0831-robustianus-et-marcus",
@@ -86743,6 +87228,27 @@
       "country": "IT"
     },
     {
+      "id": "mr:0904-marcellus-treviris",
+      "month": 9,
+      "day": 4,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "DE"
+    },
+    {
+      "id": "mr:0904-marinus",
+      "month": 9,
+      "day": 4,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0903-marinus"
+      ]
+    },
+    {
       "id": "mr:0905-laurentius-justinianus",
       "month": 9,
       "day": 5,
@@ -86795,6 +87301,19 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES"
+    },
+    {
+      "id": "mr:0905-quinctius-et-socii",
+      "month": 9,
+      "day": 5,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0905-v"
+      ],
+      "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-v, see #52)."
     },
     {
       "id": "mr:0906-faustus-et-macarius",
@@ -86869,6 +87388,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:0907-augustalis",
+      "month": 9,
+      "day": 7,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "FR"
+    },
+    {
       "id": "mr:0908-ammon-et-socii",
       "month": 9,
       "day": 8,
@@ -86894,6 +87422,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "PS"
+    },
+    {
+      "id": "mr:0908-timotheus-et-faustus",
+      "month": 9,
+      "day": 8,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
     },
     {
       "id": "mr:0909-severianus",
@@ -87104,6 +87641,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
+    },
+    {
+      "id": "mr:0913-ligorius",
+      "month": 9,
+      "day": 13,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null
     },
     {
       "id": "mr:0914-crescentius",
@@ -87427,6 +87973,15 @@
       ]
     },
     {
+      "id": "mr:0920-dionysius-et-privatus",
+      "month": 9,
+      "day": 20,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
       "id": "mr:0921-isacius",
       "month": 9,
       "day": 21,
@@ -87527,6 +88082,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
+    },
+    {
+      "id": "mr:0923-thecla",
+      "month": 9,
+      "day": 23,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
     },
     {
       "id": "mr:0924-festum-beatae-mariae-virginis",
@@ -87797,6 +88361,19 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
+    },
+    {
+      "id": "mr:0928-marcus-et-socii",
+      "month": 9,
+      "day": 28,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR",
+      "same_eulogy": [
+        "mr:0928-alphaeus-et-socii"
+      ],
+      "note": "The 2004 edition drops Mark and leads with the three brothers."
     },
     {
       "id": "mr:0929-dada",
@@ -88075,6 +88652,15 @@
       "country": "SE"
     },
     {
+      "id": "mr:1007-marcellus-et-apuleius",
+      "month": 10,
+      "day": 7,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:1008-birgitta",
       "month": 10,
       "day": 8,
@@ -88147,6 +88733,15 @@
       "country": "FR"
     },
     {
+      "id": "mr:1008-pelagia-paenitens",
+      "month": 10,
+      "day": 8,
+      "entry": 11,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IL"
+    },
+    {
       "id": "mr:1009-andronicus",
       "month": 10,
       "day": 9,
@@ -88192,6 +88787,18 @@
       "country": "IT"
     },
     {
+      "id": "mr:1010-ioannes-leonardus",
+      "month": 10,
+      "day": 10,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:1009-ioannes-leonardus"
+      ]
+    },
+    {
       "id": "mr:1011-festum-maternitatis-beatae-mariae",
       "month": 10,
       "day": 11,
@@ -88235,6 +88842,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:1011-anastasius-et-socii",
+      "month": 10,
+      "day": 11,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null
     },
     {
       "id": "mr:1012-evagrius-et-priscianus",
@@ -88310,6 +88926,15 @@
       "same_eulogy": [
         "mr:1010-daniel-et-socii"
       ]
+    },
+    {
+      "id": "mr:1013-colmannus",
+      "month": 10,
+      "day": 13,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "AT"
     },
     {
       "id": "mr:1014-carponius-evaristus-et-priscianus",
@@ -88489,7 +89114,7 @@
       "id": "mr:1017-mamelta",
       "month": 10,
       "day": 17,
-      "entry": 5,
+      "entry": 4,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IR"
@@ -88498,7 +89123,7 @@
       "id": "mr:1017-victor",
       "month": 10,
       "day": 17,
-      "entry": 8,
+      "entry": 7,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
@@ -88804,21 +89429,21 @@
       "country": "IT"
     },
     {
-      "id": "mr:1025-milites-quadraginta-sex",
+      "id": "mr:1025-bonifatius",
       "month": 10,
       "day": 25,
-      "entry": 2,
+      "entry": 7,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
     },
     {
-      "id": "mr:1025-bonifatius",
+      "id": "mr:1025-quadraginta-sex-milites-romae",
       "month": 10,
       "day": 25,
-      "entry": 8,
+      "entry": 4,
       "deprecated": true,
-      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "attested_in": "martyrologium_romanum_1749",
       "country": "IT"
     },
     {
@@ -89002,6 +89627,15 @@
       "country": "GR"
     },
     {
+      "id": "mr:1029-hyacinthus-et-socii",
+      "month": 10,
+      "day": 29,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:1030-pontianus",
       "month": 10,
       "day": 30,
@@ -89077,6 +89711,19 @@
       ]
     },
     {
+      "id": "mr:1030-maximus-apameae",
+      "month": 10,
+      "day": 30,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "TR",
+      "same_eulogy": [
+        "mr:1030-maximus"
+      ],
+      "note": "The historical editions place Maximus at Apamea, 2004 at Cumae: keyed apart and matched, as Euphrasius on 0114."
+    },
+    {
       "id": "mr:1031-vigilia-omnium-sanctorum",
       "month": 10,
       "day": 31,
@@ -89113,6 +89760,15 @@
       "country": "IT"
     },
     {
+      "id": "mr:1031-ampliatus-et-socii",
+      "month": 10,
+      "day": 31,
+      "entry": 2,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
+    },
+    {
       "id": "mr:1101-festivitas-omnium-sanctorum-quam",
       "month": 11,
       "day": 1,
@@ -89129,15 +89785,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IR"
-    },
-    {
-      "id": "mr:1101-caesarius-tarracinae",
-      "month": 11,
-      "day": 1,
-      "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "IT"
     },
     {
       "id": "mr:1101-maria",
@@ -89158,10 +89805,19 @@
       "country": "TR"
     },
     {
+      "id": "mr:1101-caesarius-et-socii",
+      "month": 11,
+      "day": 1,
+      "entry": 5,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "SY"
+    },
+    {
       "id": "mr:1102-publius-et-socii",
       "month": 11,
       "day": 2,
-      "entry": 7,
+      "entry": 6,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": null
@@ -89170,7 +89826,7 @@
       "id": "mr:1102-eustochius",
       "month": 11,
       "day": 2,
-      "entry": 8,
+      "entry": 7,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR"
@@ -89179,7 +89835,7 @@
       "id": "mr:1102-theodotus",
       "month": 11,
       "day": 2,
-      "entry": 9,
+      "entry": 8,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "SY"
@@ -89228,6 +89884,18 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
+    },
+    {
+      "id": "mr:1103-malachias",
+      "month": 11,
+      "day": 3,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "FR",
+      "same_eulogy": [
+        "mr:1102-malachia"
+      ]
     },
     {
       "id": "mr:1104-felix-valesius",
@@ -89327,6 +89995,27 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR"
+    },
+    {
+      "id": "mr:1105-zacharias",
+      "month": 11,
+      "day": 5,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": null,
+      "same_eulogy": [
+        "mr:0923-zacharias-et-elisabeth"
+      ]
+    },
+    {
+      "id": "mr:1105-dominator",
+      "month": 11,
+      "day": 5,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
     },
     {
       "id": "mr:1106-decem-martyres-theopoli",
@@ -89929,6 +90618,15 @@
       ]
     },
     {
+      "id": "mr:1120-simplicius",
+      "month": 11,
+      "day": 20,
+      "entry": 12,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT"
+    },
+    {
       "id": "mr:1121-celsus-et-clemens",
       "month": 11,
       "day": 21,
@@ -90118,6 +90816,15 @@
       "entry": 5,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
+      "country": "TR"
+    },
+    {
+      "id": "mr:1126-stylianus",
+      "month": 11,
+      "day": 26,
+      "entry": 10,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "TR"
     },
     {
@@ -90436,7 +91143,7 @@
       "id": "mr:1202-evasius",
       "month": 12,
       "day": 2,
-      "entry": 10,
+      "entry": 9,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
@@ -90562,15 +91269,6 @@
       "country": null
     },
     {
-      "id": "mr:1205-crispina",
-      "month": 12,
-      "day": 5,
-      "entry": 2,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1914_en_unofficial",
-      "country": "DZ"
-    },
-    {
       "id": "mr:1205-nicetius",
       "month": 12,
       "day": 5,
@@ -90590,6 +91288,15 @@
       "same_eulogy": [
         "mr:1204-ioannes-thaumaturgus"
       ]
+    },
+    {
+      "id": "mr:1205-iulius-et-socii",
+      "month": 12,
+      "day": 5,
+      "entry": 3,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "DZ"
     },
     {
       "id": "mr:1206-polychronius",
@@ -90784,15 +91491,6 @@
       "country": "IT"
     },
     {
-      "id": "mr:1210-eulalia-emeritae",
-      "month": 12,
-      "day": 10,
-      "entry": 7,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": "ES"
-    },
-    {
       "id": "mr:1210-sindulphus",
       "month": 12,
       "day": 10,
@@ -90818,6 +91516,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:1210-iulia",
+      "month": 12,
+      "day": 10,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "ES"
     },
     {
       "id": "mr:1211-traso",
@@ -91156,6 +91863,15 @@
       "country": "FR"
     },
     {
+      "id": "mr:1219-fausta",
+      "month": 12,
+      "day": 19,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1914_en_unofficial",
+      "country": "IT"
+    },
+    {
       "id": "mr:1220-vigilia-sancti-thomae-apostoli",
       "month": 12,
       "day": 20,
@@ -91211,6 +91927,15 @@
       "same_eulogy": [
         "mr:0601-ammon-et-socii"
       ]
+    },
+    {
+      "id": "mr:1220-liberatus-et-baiulus",
+      "month": 12,
+      "day": 20,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "IT"
     },
     {
       "id": "mr:1221-thomas-apostolus",
@@ -91360,19 +92085,10 @@
       "country": "TR"
     },
     {
-      "id": "mr:1225-quodsequitur-legitur-in",
-      "month": 12,
-      "day": 25,
-      "entry": 3,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1749",
-      "country": null
-    },
-    {
       "id": "mr:1225-petrus-nolascus",
       "month": 12,
       "day": 25,
-      "entry": 5,
+      "entry": 3,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES"
@@ -91381,7 +92097,7 @@
       "id": "mr:1225-martyres-nicomediae",
       "month": 12,
       "day": 25,
-      "entry": 5,
+      "entry": 4,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "TR"
@@ -91565,6 +92281,15 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT"
+    },
+    {
+      "id": "mr:1230-anysia",
+      "month": 12,
+      "day": 30,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1749",
+      "country": "GR"
     },
     {
       "id": "mr:1231-stephanus-pontianus-attalus",

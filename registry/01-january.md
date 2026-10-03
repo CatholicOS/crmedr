@@ -27,7 +27,7 @@
 | 2 | 3 | `mr:0102-argeus-et-socii` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0102-theodorus` | * | FR | dies_natalis |  |  |
 | 2 | 5 | `mr:0102-bladulphus` | * | IT | dies_natalis |  |  |
-| 2 | 6 | `mr:0102-ioannes-bonus` |  | IT | dies_natalis |  |  |
+| 2 | 6 | `mr:0102-ioannes-bonus` |  | IT | dies_natalis | same as `mr:0110-ioannes-bonus` |  |
 | 2 | 7 | `mr:0102-vincentianus` | * | FR | dies_natalis |  |  |
 | 2 | 8 | `mr:0102-mainchinus` | * | IE | dies_natalis |  |  |
 | 2 | 9 | `mr:0102-adalhardus` |  | FR | dies_natalis |  |  |
@@ -42,7 +42,7 @@
 | 3 | 3 | `mr:0103-theopemptus-et-theona` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0103-gordius` |  | TR | dies_natalis |  |  |
 | 3 | 5 | `mr:0103-daniel` |  | IT | commemoratio |  |  |
-| 3 | 6 | `mr:0103-theogenes` |  | TR | dies_natalis |  |  |
+| 3 | 6 | `mr:0103-theogenes` |  | TR | dies_natalis | same as `mr:0103-cyrinus-et-socii` |  |
 | 3 | 7 | `mr:0103-florentius` |  | FR | dies_natalis |  |  |
 | 3 | 8 | `mr:0103-genovefa` |  | FR | depositio |  |  |
 | 3 | 9 | `mr:0103-lucianus` | * | IT | dies_natalis |  |  |
@@ -183,7 +183,7 @@
 | 14 | 4 | `mr:0114-monachi-raithi` |  | EG | commemoratio |  |  |
 | 14 | 5 | `mr:0114-nino` |  | GE | dies_natalis |  |  |
 | 14 | 6 | `mr:0114-firminus` | * | FR | dies_natalis |  |  |
-| 14 | 7 | `mr:0114-euphrasius` | * | FR | dies_natalis |  |  |
+| 14 | 7 | `mr:0114-euphrasius` | * | FR | dies_natalis | same as `mr:0114-euphrasius-africae` |  |
 | 14 | 8 | `mr:0114-datius` |  | IT | depositio |  |  |
 | 14 | 9 | `mr:0114-fulgentius` | * | ES | dies_natalis |  |  |
 | 14 | 10 | `mr:0114-odo-novariensis` | * | IT | dies_natalis |  |  |
@@ -359,7 +359,7 @@
 | 29 | 1 | `mr:0129-sarbelius-et-bebaia` |  | TR | dies_natalis |  |  |
 | 29 | 2 | `mr:0129-papias-et-maurus` |  | IT | dies_natalis |  |  |
 | 29 | 3 | `mr:0129-constantius` |  | IT | dies_natalis |  |  |
-| 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis |  |  |
+| 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis | same as `mr:0125-iuventinus-et-maximus` |  |
 | 29 | 5 | `mr:0129-valerius` |  | DE | dies_natalis |  |  |
 | 29 | 6 | `mr:0129-aphraates` |  | TR | dies_natalis |  |  |
 | 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  |  |

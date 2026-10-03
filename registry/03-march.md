@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0301-felix-iii` |  | IT | dies_natalis |  |  |
+| 1 | 1 | `mr:0301-felix-iii` |  | IT | dies_natalis | same as `mr:0225-felix-iii` |  |
 | 1 | 2 | `mr:0301-albinus` |  | FR | dies_natalis |  |  |
 | 1 | 3 | `mr:0301-david` |  | GB | dies_natalis |  |  |
 | 1 | 4 | `mr:0301-siviardus` |  | FR | dies_natalis |  |  |

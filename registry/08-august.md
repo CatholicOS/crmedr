@@ -297,7 +297,7 @@
 | 20 | 3 | `mr:0820-maximus` |  | FR | dies_natalis |  |  |
 | 20 | 4 | `mr:0820-philibertus` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0820-leovigildus-et-christophorus` |  | ES | dies_natalis |  |  |
-| 20 | 6 | `mr:0820-bernardus-tolomei` | * | IT | dies_natalis |  |  |
+| 20 | 6 | `mr:0820-bernardus-tolomei` | * | IT | dies_natalis | same as `mr:0821-bernardus-ptolomaeus` |  |
 | 20 | 7 | `mr:0820-ludovicus-franciscus-le-brun-et-gervasius-brunel` | * | FR | dies_natalis |  |  |
 | 20 | 8 | `mr:0820-maria-de-mattias` |  | IT | dies_natalis |  |  |
 | 20 | 9 | `mr:0820-pius-x` |  | IT | dies_natalis |  |  |

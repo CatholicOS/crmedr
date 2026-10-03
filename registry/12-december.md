@@ -34,7 +34,7 @@
 | 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB | dies_natalis |  |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
-| 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis |  |  |
+| 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis | same as `mr:0506-ioannes-damascenus` |  |
 | 4 | 2 | `mr:1204-barbara` |  | TR | commemoratio |  |  |
 | 4 | 3 | `mr:1204-heracla` |  | EG | dies_natalis |  |  |
 | 4 | 4 | `mr:1204-meletius` |  | TR | dies_natalis |  |  |

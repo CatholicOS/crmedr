@@ -39,7 +39,7 @@
 | 3 | 3 | `mr:0903-basilissa` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0903-sandalius` |  | ES | dies_natalis |  |  |
 | 3 | 5 | `mr:0903-mansuetus` |  | FR | dies_natalis |  |  |
-| 3 | 6 | `mr:0903-marinus` |  | IT | dies_natalis |  |  |
+| 3 | 6 | `mr:0903-marinus` |  | IT | dies_natalis | same as `mr:0904-marinus` |  |
 | 3 | 7 | `mr:0903-macanisius` | * | IE | dies_natalis |  |  |
 | 3 | 8 | `mr:0903-auxanus` |  | IT | dies_natalis |  |  |
 | 3 | 9 | `mr:0903-vitalianus` | * | IT | dies_natalis |  |  |
@@ -67,7 +67,7 @@
 | 4 | 13 | `mr:0904-franciscus-sendra-ivars` | * | ES | dies_natalis |  |  |
 | 4 | 14 | `mr:0904-bernardus-bieda-grau` | * | ES | dies_natalis |  |  |
 | 5 | 1 | `mr:0905-acontus-et-socii` |  | IT | dies_natalis |  |  |
-| 5 | 2 | `mr:0905-v` |  | IT | dies_natalis |  |  |
+| 5 | 2 | `mr:0905-v` |  | IT | dies_natalis | same as `mr:0905-quinctius-et-socii` |  |
 | 5 | 3 | `mr:0905-urbanus-et-socii` |  | TR | dies_natalis |  |  |
 | 5 | 4 | `mr:0905-bertinus` |  | FR | dies_natalis |  |  |
 | 5 | 5 | `mr:0905-alpertus` | * | IT | dies_natalis |  |  |
@@ -190,7 +190,7 @@
 | 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  |  |
 | 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  |  |
 | 14 | 4 | `mr:0914-maternus` |  | DE | dies_natalis |  |  |
-| 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis |  |  |
+| 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  |  |
 | 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |  |
 | 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  |  |
@@ -323,7 +323,7 @@
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES | dies_natalis |  |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES | dies_natalis |  |  |
 | 23 | (1) | `mr:0923-pius-de-pietrelcina-forgione` |  | IT | dies_natalis |  |  |
-| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio |  |  |
+| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-zacharias` |  |
 | 23 | 3 | `mr:0923-linus` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0923-sossius` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0923-constantius` |  | IT | commemoratio |  |  |
@@ -396,7 +396,7 @@
 | 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  |  |
 | 28 | (2) | `mr:0928-laurentius-de-manila-ruiz-et-socii` |  | PH | dies_natalis |  |  |
-| 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis |  |  |
+| 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis | same as `mr:0928-marcus-et-socii` |  |
 | 28 | 4 | `mr:0928-chariton` |  | PS | dies_natalis |  |  |
 | 28 | 5 | `mr:0928-zama` |  | IT | dies_natalis | same as `mr:0124-zama` |  |
 | 28 | 6 | `mr:0928-exsuperius` |  | FR | dies_natalis |  |  |
