@@ -236,7 +236,7 @@
 | 17 | 17 | `mr:1017-fidel-fuidio-rodriguez` | * | ES | dies_natalis |  |  |
 | 17 | 18 | `mr:1017-raymundus-stephanus-bou-pascual` | * | ES | dies_natalis |  |  |
 | 17 | 19 | `mr:1017-tarsilla-cordoba-belda` | * | ES | dies_natalis |  |  |
-| 18 | (1) | `mr:1018-lucas` |  | TR | dies_natalis |  |  |
+| 18 | (1) | `mr:1018-lucas-evangelista` |  | TR | dies_natalis |  |  |
 | 18 | 2 | `mr:1018-asclepiades` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:1018-proculus-et-socii` |  | IT | dies_natalis |  |  |
 | 18 | 4 | `mr:1018-amabilis` | * | FR | dies_natalis |  |  |

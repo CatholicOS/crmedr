@@ -176,6 +176,12 @@ class Apostles56Test(unittest.TestCase):
             self.assertIn(cid, ids)
             self.assertRegex(la[cid], r"Apostol(us|i)$")
         self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
+        # #59: the evangelists who were not apostles
+        for cid in ("mr:0425-marcus-evangelista", "mr:1018-lucas-evangelista"):
+            self.assertIn(cid, ids)
+            self.assertRegex(la[cid], r"Evangelista$")
+        en = json.load(open(root / "i18n" / "en.json", encoding="utf-8"))
+        self.assertEqual(en["mr:1018-lucas-evangelista"], "Saint Luke the Evangelist")
 
 
 class RegistryIntegrityTest(unittest.TestCase):
@@ -194,6 +200,8 @@ class RegistryIntegrityTest(unittest.TestCase):
         for lang in ("la", "it", "en"):
             keys = json.load(open(root / "i18n" / f"{lang}.json", encoding="utf-8"))
             self.assertEqual(set(keys), set(ids), lang)
+        # Same-day namesakes take a place or an epithet, never a number (rule 9, #59).
+        self.assertEqual([i for i in ids if any(t.isdigit() for t in i.split("-", 1)[1].split("-"))], [])
 
 
 class PlaceLeadCorrections25Test(unittest.TestCase):

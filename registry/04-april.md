@@ -92,7 +92,7 @@
 | 7 | 13 | `mr:0407-maria-assumpta-pallotta` | * | CN | dies_natalis |  |  |
 | 8 | 1 | `mr:0408-agabus-propheta` |  | PS | commemoratio |  |  |
 | 8 | 2 | `mr:0408-herodion-et-socii` |  | PS | commemoratio |  |  |
-| 8 | 3 | `mr:0408-dionysius-2` |  | GR | dies_natalis |  |  |
+| 8 | 3 | `mr:0408-dionysius-corinthi` |  | GR | dies_natalis |  |  |
 | 8 | 4 | `mr:0408-timotheus-et-socii` |  | TR | dies_natalis | same as `mr:0406-timotheus-et-diogenes` |  |
 | 8 | 5 | `mr:0408-dionysius-alexandriae` |  | EG | dies_natalis |  |  |
 | 8 | 6 | `mr:0408-amantius` |  | IT | dies_natalis |  |  |
@@ -301,7 +301,7 @@
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia-pelletier` |  | FR | dies_natalis |  |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  |  |
-| 25 | (1) | `mr:0425-marcus` |  | IL | dies_natalis |  |  |
+| 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  |  |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` |  |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR | dies_natalis |  |  |
