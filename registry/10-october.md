@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:1001-teresia-a-iesu-infante` |  | FR | celebratio |  |  |
+| 1 | (1) | `mr:1001-teresia-a-iesu-infante` |  | FR | celebratio | same as `mr:1003-teresia-a-iesu-infante` |  |
 | 1 | 2 | `mr:1001-piato` |  | FR | dies_natalis |  |  |
 | 1 | 3 | `mr:1001-verissimus-et-socii` |  | PT | dies_natalis |  |  |
 | 1 | 4 | `mr:1001-romanus` |  | TR | dies_natalis |  |  |
@@ -54,7 +54,7 @@
 | 4 | 6 | `mr:1004-henricus-morant-pellicer` | * | ES | dies_natalis |  |  |
 | 4 | 7 | `mr:1004-iosephus-canet-giner` | * | ES | dies_natalis |  |  |
 | 4 | 8 | `mr:1004-alaphridus-pellicer-munoz` | * | ES | dies_natalis |  |  |
-| 5 | 1 | `mr:1005-martyres-trevirorum` |  | DE | commemoratio |  |  |
+| 5 | 1 | `mr:1005-martyres-trevirorum` |  | DE | commemoratio | same as `mr:1006-martyres-trevirorum` |  |
 | 5 | 2 | `mr:1005-charitina` |  | TR | dies_natalis |  |  |
 | 5 | 3 | `mr:1005-mamlacha` |  | IR | commemoratio |  |  |
 | 5 | 4 | `mr:1005-apollinaris` |  | FR | dies_natalis |  |  |
@@ -158,7 +158,7 @@
 | 12 | 2 | `mr:1012-domnina` |  | TR | dies_natalis |  |  |
 | 12 | 3 | `mr:1012-martyres-et-confessores-africae` |  | TN | commemoratio |  |  |
 | 12 | 4 | `mr:1012-opilio` | * | IT | dies_natalis |  |  |
-| 12 | 5 | `mr:1012-felix-iv` |  | IT | dies_natalis |  |  |
+| 12 | 5 | `mr:1012-felix-iv` |  | IT | dies_natalis | same as `mr:0130-felix-iv`; same as `mr:0922-felix-iv` |  |
 | 12 | 6 | `mr:1012-maximilianus` |  | AT | dies_natalis |  |  |
 | 12 | 7 | `mr:1012-rotobaldus` | * | IT | dies_natalis |  |  |
 | 12 | 8 | `mr:1012-seraphinus-de-monte-granario-de-nicola` |  | IT | dies_natalis |  |  |
@@ -193,7 +193,7 @@
 | 14 | 12 | `mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec` | * | DE | dies_natalis |  |  |
 | 14 | 13 | `mr:1014-romanus-lysko` | * | UA | dies_natalis |  |  |
 | 15 | (1) | `mr:1015-teresia-a-iesu` |  | ES | dies_natalis |  |  |
-| 15 | 2 | `mr:1015-barsen` |  | TR | commemoratio |  |  |
+| 15 | 2 | `mr:1015-barsen` |  | TR | commemoratio | same as `mr:0130-barses` |  |
 | 15 | 3 | `mr:1015-severus` |  | DE | dies_natalis |  |  |
 | 15 | 4 | `mr:1015-thecla` |  | DE | dies_natalis |  |  |
 | 15 | 5 | `mr:1015-hedwigis` |  | PL | dies_natalis |  |  |
@@ -246,7 +246,7 @@
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis |  |  |
 | 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
-| 19 | 3 | `mr:1019-ioel-propheta` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdra` |  |
+| 19 | 3 | `mr:1019-ioel-propheta` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdras-prophetae` |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT | commemoratio |  |  |
 | 19 | 5 | `mr:1019-asterius` |  | IT | dies_natalis | same as `mr:1021-asterius` |  |
 | 19 | 6 | `mr:1019-sabinianus-et-potentianus` |  | FR | commemoratio | same as `mr:1231-sabinianus-et-potentianus` |  |
@@ -293,7 +293,7 @@
 | 22 | 9 | `mr:1022-benedictus` | * | FR | dies_natalis |  |  |
 | 22 | 10 | `mr:1022-nunilo-et-alodia` |  | ES | dies_natalis |  |  |
 | 22 | 11 | `mr:1022-donatus-scotus` |  | IT | dies_natalis |  |  |
-| 23 | (1) | `mr:1023-ioannes-de-capestrano` |  | HU | dies_natalis |  |  |
+| 23 | (1) | `mr:1023-ioannes-de-capestrano` |  | HU | dies_natalis | same as `mr:0328-ioannes-de-capistrano` |  |
 | 23 | 2 | `mr:1023-servandus-et-germanus` |  | ES | dies_natalis |  |  |
 | 23 | 3 | `mr:1023-ioannes-et-iacobus` |  | IR | dies_natalis |  |  |
 | 23 | 4 | `mr:1023-theodoretus` |  | TR | dies_natalis |  |  |
@@ -362,7 +362,7 @@
 | 28 | (1) | `mr:1028-simon-et-iudas-apostoli` |  | PS | dies_natalis |  |  |
 | 28 | 2 | `mr:1028-ferrutius` |  | DE | dies_natalis |  |  |
 | 28 | 3 | `mr:1028-fidelis` |  | IT | dies_natalis |  |  |
-| 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis |  |  |
+| 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis | same as `mr:1027-vincentius-et-socii` |  |
 | 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  |  |
 | 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis | same as `mr:0111-salvius-ambiani` |  |
 | 28 | 7 | `mr:1028-faro` |  | FR | dies_natalis |  |  |

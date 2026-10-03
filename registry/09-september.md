@@ -59,7 +59,7 @@
 | 4 | 5 | `mr:0904-ida` | * | DE | dies_natalis |  |  |
 | 4 | 6 | `mr:0904-fredaldus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:0904-irmgardis` | * | DE | dies_natalis |  |  |
-| 4 | 8 | `mr:0904-rosalia` |  | IT | dies_natalis |  |  |
+| 4 | 8 | `mr:0904-rosalia` |  | IT | dies_natalis | same as `mr:0715-inventio-corporis-rosaliae` |  |
 | 4 | 9 | `mr:0904-catharina-mattei` | * | IT | dies_natalis |  |  |
 | 4 | 10 | `mr:0904-scipio-hieronymus-brigeat-de-lambert` | * | FR | dies_natalis |  |  |
 | 4 | 11 | `mr:0904-maria` | * | CA | dies_natalis |  |  |
@@ -109,14 +109,14 @@
 | 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  |  |
 | 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz-lloret-marco` | * | ES | dies_natalis |  |  |
 | 8 | (1) | `mr:0908-nativitas-beatae-mariae-virginis` |  |  | celebratio |  |  |
-| 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio |  |  |
+| 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio | same as `mr:0304-hadrianus-et-socii` |  |
 | 8 | 3 | `mr:0908-faustus-et-socii` |  | EG | dies_natalis |  |  |
 | 8 | 4 | `mr:0908-isaac` |  | TR | dies_natalis |  |  |
 | 8 | 5 | `mr:0908-sergius-i` |  | IT | depositio | same as `mr:0909-sergius-i` |  |
 | 8 | 6 | `mr:0908-corbinianus` |  | DE | dies_natalis |  |  |
 | 8 | 7 | `mr:0908-petrus-de-chavanon` | * | FR | dies_natalis |  |  |
 | 8 | 8 | `mr:0908-seraphina-sforza` | * | IT | dies_natalis |  |  |
-| 8 | 9 | `mr:0908-thomas-de-villanova` |  | ES | dies_natalis |  |  |
+| 8 | 9 | `mr:0908-thomas-de-villanova` |  | ES | dies_natalis | same as `mr:0922-thomas-a-villa-nova` |  |
 | 8 | 10 | `mr:0908-thomas-palaser-et-socii` | * | GB | dies_natalis |  |  |
 | 8 | 11 | `mr:0908-petrus-claver` |  | CO | dies_natalis |  |  |
 | 8 | 12 | `mr:0908-antonius-a-sancto-bonaventura-et-socii` | * | JP | dies_natalis |  |  |
@@ -283,7 +283,7 @@
 | 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  |  |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR | dies_natalis |  |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
-| 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-asianus` |  |
+| 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-andreas` |  |
 | 20 | 5 | `mr:0920-adelpretus` | * | IT | dies_natalis |  |  |
 | 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  |  |
 | 20 | 7 | `mr:0920-franciscus-de-posadas` | * | ES | dies_natalis |  |  |

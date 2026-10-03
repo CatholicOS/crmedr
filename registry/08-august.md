@@ -27,7 +27,7 @@
 | 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR | celebratio |  |  |
 | 2 | 3 | `mr:0802-rutilius` |  | TN | commemoratio |  |  |
 | 2 | 4 | `mr:0802-stephanus-i` |  | IT | dies_natalis |  |  |
-| 2 | 5 | `mr:0802-centolla` |  | ES | dies_natalis | same as `mr:0813-centolla` |  |
+| 2 | 5 | `mr:0802-centolla` |  | ES | dies_natalis | same as `mr:0813-centolla-et-helena` |  |
 | 2 | 6 | `mr:0802-maximus` |  | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0802-serenus` | * | FR | dies_natalis |  |  |
 | 2 | 8 | `mr:0802-betharius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
@@ -157,7 +157,7 @@
 | 11 | 14 | `mr:0811-raphael-alonso-gutierrez` | * | ES | dies_natalis |  |  |
 | 11 | 15 | `mr:0811-michael-domingo-cendra` | * | ES | dies_natalis |  |  |
 | 11 | 16 | `mr:0811-mauritius-tornay` | * | CN | dies_natalis |  |  |
-| 12 | (1) | `mr:0812-ioanna-francisca-fremiot-de-chantal` |  | FR | celebratio |  |  |
+| 12 | (1) | `mr:0812-ioanna-francisca-fremiot-de-chantal` |  | FR | celebratio | same as `mr:0821-ioanna-francisca-fremiot-de-chantal` |  |
 | 12 | 2 | `mr:0812-euplus` |  | IT | dies_natalis |  |  |
 | 12 | 3 | `mr:0812-anicetus-et-photius` |  | TR | dies_natalis |  |  |
 | 12 | 4 | `mr:0812-muredachus` | * | IE | dies_natalis |  |  |
@@ -256,7 +256,7 @@
 | 17 | 12 | `mr:0817-natalis-hilarius-le-conte` | * | FR | dies_natalis |  |  |
 | 17 | 13 | `mr:0817-henricus-canadell` | * | ES | dies_natalis |  |  |
 | 18 | 1 | `mr:0818-agapitus` |  | IT | dies_natalis |  |  |
-| 18 | 2 | `mr:0818-martyres-massae-candidae` |  | TN | dies_natalis |  |  |
+| 18 | 2 | `mr:0818-martyres-massae-candidae` |  | TN | dies_natalis | same as `mr:0824-martyres-massae-candidae` |  |
 | 18 | 3 | `mr:0818-leo` |  | TR | dies_natalis |  |  |
 | 18 | 4 | `mr:0818-helena` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0818-firminus` |  | FR | dies_natalis |  |  |
@@ -304,8 +304,8 @@
 | 20 | 10 | `mr:0820-matthias-cardona` | * | ES | dies_natalis |  |  |
 | 20 | 11 | `mr:0820-maria-climent-mateu` | * | ES | dies_natalis |  |  |
 | 20 | 12 | `mr:0820-ladislaus-maczkowski` | * | DE | dies_natalis |  |  |
-| 21 | (1) | `mr:0821-pius-x` |  | IT | celebratio |  |  |
-| 21 | 2 | `mr:0821-agathonicus-et-zoticus` |  | TR | dies_natalis |  |  |
+| 21 | (1) | `mr:0821-pius-x` |  | IT | celebratio | same as `mr:0903-pius-x` |  |
+| 21 | 2 | `mr:0821-agathonicus-et-zoticus` |  | TR | dies_natalis | same as `mr:0822-agathonicus-et-socii` |  |
 | 21 | 3 | `mr:0821-cyriaca` |  | IT | dies_natalis |  |  |
 | 21 | 4 | `mr:0821-quadratus` |  | TN | dies_natalis |  |  |
 | 21 | 5 | `mr:0821-euprepius` |  | IT | dies_natalis |  |  |
@@ -319,7 +319,7 @@
 | 21 | 13 | `mr:0821-salvator-estrugo-solves` | * | ES | dies_natalis |  |  |
 | 21 | 14 | `mr:0821-raymundus-peiro-victori` | * | ES | dies_natalis |  |  |
 | 21 | 15 | `mr:0821-bruno-zembol` | * | DE | dies_natalis |  |  |
-| 22 | (1) | `mr:0822-maria-regina` |  |  | celebratio |  |  |
+| 22 | (1) | `mr:0822-maria-regina` |  |  | celebratio | same as `mr:0531-festum-beatae-mariae-virginis-reginae` |  |
 | 22 | 2 | `mr:0822-symphorianus` |  | FR | dies_natalis |  |  |
 | 22 | 3 | `mr:0822-timotheus` |  | IT | dies_natalis |  |  |
 | 22 | 4 | `mr:0822-philippus-benizi` |  | IT | dies_natalis |  |  |
@@ -360,7 +360,7 @@
 | 24 | 11 | `mr:0824-maximianus-binkiewicz` | * | DE | dies_natalis |  |  |
 | 24 | 12 | `mr:0824-ceslaus-jozwiak-et-socii` | * | DE | dies_natalis |  |  |
 | 25 | (1) | `mr:0825-ludovicus-nonus` |  | FR | dies_natalis |  |  |
-| 25 | (2) | `mr:0825-iosephus-de-calasanz` |  | IT | dies_natalis |  |  |
+| 25 | (2) | `mr:0825-iosephus-de-calasanz` |  | IT | dies_natalis | same as `mr:0827-iosephus-calasanctius` |  |
 | 25 | 3 | `mr:0825-eusebius-et-socii` |  | IT | depositio | Latin: absent; English: absent | Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias. |
 | 25 | 3 | `mr:0825-genesius` |  | FR | dies_natalis | CEI: entry 4 |  |
 | 25 | 4 | `mr:0825-geruntius` |  | ES | dies_natalis | CEI: entry 5 |  |
@@ -459,10 +459,10 @@
 | 30 | 13 | `mr:0830-ioachim-ferrer-adell` | * | ES | dies_natalis |  |  |
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES | dies_natalis |  |  |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT | dies_natalis |  |  |
-| 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | IL | commemoratio |  |  |
+| 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | IL | commemoratio | same as `mr:0317-ioseph` |  |
 | 31 | 2 | `mr:0831-aristidis` |  | GR | dies_natalis |  |  |
 | 31 | 3 | `mr:0831-paulinus` |  | DE | dies_natalis |  |  |
 | 31 | 4 | `mr:0831-aidanus` |  | GB | dies_natalis |  |  |
-| 31 | 5 | `mr:0831-raymundus-nonnatus` |  | ES | dies_natalis |  |  |
+| 31 | 5 | `mr:0831-raymundus-nonnatus` |  | ES | dies_natalis | same as `mr:0826-raymundus-nonnatus` |  |
 | 31 | 6 | `mr:0831-andreas-de-burgo-sancti-sepulcri` | * | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:0831-edmigius-primo-rodriguez-et-socii` | * | ES | dies_natalis |  |  |

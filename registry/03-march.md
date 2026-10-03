@@ -49,7 +49,7 @@
 | 4 | 10 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | * | PL | dies_natalis |  |  |
 | 5 | 1 | `mr:0305-theophilus` |  | PS | commemoratio |  |  |
 | 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
-| 5 | 3 | `mr:0305-lucius` |  | IT | depositio |  |  |
+| 5 | 3 | `mr:0305-lucius` |  | IT | depositio | same as `mr:0304-lucius-i` |  |
 | 5 | 4 | `mr:0305-phoca` |  | TR | dies_natalis |  |  |
 | 5 | 5 | `mr:0305-hadrianus` |  | PS | dies_natalis |  |  |
 | 5 | 6 | `mr:0305-gerasimus` |  | PS | dies_natalis |  |  |
@@ -98,7 +98,7 @@
 | 8 | 13 | `mr:0308-vincentius-kadlubek` | * | PL | dies_natalis |  |  |
 | 8 | 14 | `mr:0308-faustinus-miguez` | * | ES | dies_natalis |  |  |
 | 9 | (1) | `mr:0309-francisca` |  | IT | dies_natalis |  |  |
-| 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis |  |  |
+| 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis | same as `mr:0310-quadraginta-milites-sebastes` |  |
 | 9 | 3 | `mr:0309-pacianus` |  | ES | dies_natalis |  |  |
 | 9 | 4 | `mr:0309-vitalis-de-castronovo` | * | IT | dies_natalis |  |  |
 | 9 | 5 | `mr:0309-bruno` |  | CZ | dies_natalis |  |  |
@@ -160,7 +160,7 @@
 | 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  |  |
 | 14 | 7 | `mr:0314-iacobus-cusmano` | * | IT | dies_natalis |  |  |
 | 15 | 1 | `mr:0315-menignus` |  | TR | dies_natalis |  |  |
-| 15 | 2 | `mr:0315-zacharias` |  | IT | dies_natalis |  |  |
+| 15 | 2 | `mr:0315-zacharias` |  | IT | dies_natalis | same as `mr:0322-zacharias` |  |
 | 15 | 3 | `mr:0315-leocritia` |  | ES | dies_natalis |  |  |
 | 15 | 4 | `mr:0315-sisebutus` | * | ES | dies_natalis |  |  |
 | 15 | 5 | `mr:0315-gulielmus-hart` |  | GB | dies_natalis |  |  |
@@ -213,7 +213,7 @@
 | 20 | 7 | `mr:0320-nicetas` |  | AL | commemoratio |  |  |
 | 20 | 8 | `mr:0320-viginti-monachi-palaestinae` |  | PS | dies_natalis |  |  |
 | 20 | 9 | `mr:0320-ambrosius-sansedoni` | * | IT | dies_natalis |  |  |
-| 20 | 10 | `mr:0320-ioannes-nepomucenus` |  | CZ | dies_natalis |  |  |
+| 20 | 10 | `mr:0320-ioannes-nepomucenus` |  | CZ | dies_natalis | same as `mr:0516-ioannes-nepomucenus` |  |
 | 20 | 11 | `mr:0320-baptista-spagnoli` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0320-hippolytus-galantini` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:0320-ioanna-veron` | * | FR | dies_natalis |  |  |

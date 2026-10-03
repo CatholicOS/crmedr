@@ -34,9 +34,9 @@
 | 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB | dies_natalis |  |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
-| 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis | same as `mr:0506-ioannes-damascenus` |  |
+| 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis | same as `mr:0327-ioannes-damascenus`; same as `mr:0506-ioannes-damascenus` |  |
 | 4 | 2 | `mr:1204-barbara` |  | TR | commemoratio |  |  |
-| 4 | 3 | `mr:1204-heracla` |  | EG | dies_natalis |  |  |
+| 4 | 3 | `mr:1204-heracla` |  | EG | dies_natalis | same as `mr:0714-heracla` |  |
 | 4 | 4 | `mr:1204-meletius` |  | TR | dies_natalis |  |  |
 | 4 | 5 | `mr:1204-felix` |  | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:1204-aprus` | * | FR | dies_natalis |  |  |
@@ -121,7 +121,7 @@
 | 11 | 12 | `mr:1211-mirabilia-a-iesu-pidal-y-chico-de-guzman` |  | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:1212-maria-de-guadalupe` |  | MX | celebratio |  |  |
 | 12 | 2 | `mr:1212-epimachus-et-alexander` |  | EG | commemoratio |  |  |
-| 12 | 3 | `mr:1212-spyridon` |  | CY | dies_natalis |  |  |
+| 12 | 3 | `mr:1212-spyridon` |  | CY | dies_natalis | same as `mr:1214-spiridion` |  |
 | 12 | 4 | `mr:1212-finnianus` | * | IE | dies_natalis |  |  |
 | 12 | 5 | `mr:1212-corentinus` | * | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:1212-israel` | * | FR | dies_natalis |  |  |
@@ -142,7 +142,7 @@
 | 13 | 9 | `mr:1213-ioanna-francisca-fremiot-de-chantal` |  | FR | dies_natalis |  |  |
 | 13 | 10 | `mr:1213-antonius-grassus` | * | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:1213-petrus-cho-hwa-so-et-socii` |  | KR | dies_natalis |  |  |
-| 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES | dies_natalis |  |  |
+| 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES | dies_natalis | same as `mr:1124-ioannes-a-cruce` |  |
 | 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  |  |
 | 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR | dies_natalis | same as `mr:0128-thyrsus-et-socii` |  |
 | 14 | 4 | `mr:1214-drosis` |  | TR | dies_natalis |  |  |
@@ -182,7 +182,7 @@
 | 17 | 5 | `mr:1217-sturmius` |  | DE | dies_natalis |  |  |
 | 17 | 6 | `mr:1217-christophorus-de-collesano` | * | IT | dies_natalis |  |  |
 | 17 | 7 | `mr:1217-wiwina` |  | BE | dies_natalis |  |  |
-| 17 | 8 | `mr:1217-ioannes-de-matha` |  | IT | dies_natalis |  |  |
+| 17 | 8 | `mr:1217-ioannes-de-matha` |  | IT | dies_natalis | same as `mr:0208-ioannes-de-matha` |  |
 | 17 | 9 | `mr:1217-iosephus-manyanet-y-vives` |  | ES | dies_natalis |  |  |
 | 17 | 10 | `mr:1217-mathildis-a-sacro-corde-tellez-robles` | * | ES | dies_natalis |  |  |
 | 17 | 11 | `mr:1217-hyacinthus-cormier` | * | IT | dies_natalis |  |  |
@@ -235,7 +235,7 @@
 | 24 | 2 | `mr:1224-delphinus` |  | FR | dies_natalis |  |  |
 | 24 | 3 | `mr:1224-tarsilla` |  | IT | commemoratio |  |  |
 | 24 | 4 | `mr:1224-irmina` |  | DE | dies_natalis |  |  |
-| 24 | 5 | `mr:1224-ioannes-de-kety` |  | PL | dies_natalis |  |  |
+| 24 | 5 | `mr:1224-ioannes-de-kety` |  | PL | dies_natalis | same as `mr:1020-ioannes-cantius` |  |
 | 24 | 6 | `mr:1224-bartholomaeus-maria-dal-monte` | * | IT | dies_natalis |  |  |
 | 24 | 7 | `mr:1224-paula-elisabeth-cerioli` |  | IT | dies_natalis |  |  |
 | 24 | 8 | `mr:1224-sarbelius-makhluf` |  | LB | dies_natalis |  |  |
@@ -282,7 +282,7 @@
 | 29 | 11 | `mr:1229-iosephus-aparicio-sanz` | * | ES | dies_natalis |  |  |
 | 29 | 12 | `mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher` | * | ES | dies_natalis |  |  |
 | 29 | 13 | `mr:1229-ioannes-baptista-ferreres-boluda` | * | ES | dies_natalis |  |  |
-| 30 | 1 | `mr:1230-felix-i` |  | IT | depositio |  |  |
+| 30 | 1 | `mr:1230-felix-i` |  | IT | depositio | same as `mr:0530-felix-i` |  |
 | 30 | 2 | `mr:1230-hermes` |  | BG | dies_natalis | same as `mr:1231-hermes` |  |
 | 30 | 3 | `mr:1230-anysius` |  | GR | commemoratio |  |  |
 | 30 | 4 | `mr:1230-perpetuus` |  | FR | dies_natalis | same as `mr:0408-perpetuus` |  |

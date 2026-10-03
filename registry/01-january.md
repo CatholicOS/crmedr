@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0101-maria-dei-genetrix` |  |  | celebratio |  |  |
+| 1 | (1) | `mr:0101-maria-dei-genetrix` |  |  | celebratio | same as `mr:1011-maternitas-beatae-mariae-virginis` |  |
 | 1 | 2 | `mr:0101-basilius` |  | TR | depositio |  |  |
 | 1 | 3 | `mr:0101-iustinus` |  | IT | commemoratio |  |  |
 | 1 | 4 | `mr:0101-almachius` |  | IT | dies_natalis |  |  |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0101-valentinus-paquay` | * | BE | dies_natalis |  |  |
 | 1 | 17 | `mr:0101-sigismundus-gorazdowski` | * | UA | dies_natalis |  |  |
 | 1 | 18 | `mr:0101-marianus-konopinski` | * | DE | dies_natalis |  |  |
-| 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR | celebratio |  |  |
+| 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR | celebratio | same as `mr:0509-gregorius-nazianzenus`; same as `mr:0614-basilius-magnus` |  |
 | 2 | 2 | `mr:0102-telesphorus` |  | IT | depositio | same as `mr:0105-telesphorus` |  |
 | 2 | 3 | `mr:0102-argeus-et-socii` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0102-theodorus` | * | FR | dies_natalis |  |  |
@@ -79,7 +79,7 @@
 | 6 | 4 | `mr:0106-macarius` | * | DE | dies_natalis |  |  |
 | 6 | 5 | `mr:0106-raymundus-de-penyafort` |  | ES | dies_natalis |  |  |
 | 6 | 6 | `mr:0106-petrus-thomas` | * | CY | dies_natalis |  |  |
-| 6 | 7 | `mr:0106-andreas-corsini` |  | IT | dies_natalis |  |  |
+| 6 | 7 | `mr:0106-andreas-corsini` |  | IT | dies_natalis | same as `mr:0204-andreas-corsini` |  |
 | 6 | 8 | `mr:0106-ioannes-de-ribera` |  | ES | dies_natalis |  |  |
 | 6 | 9 | `mr:0106-carolus-de-setia` |  | IT | dies_natalis |  |  |
 | 6 | 10 | `mr:0106-raphaela-maria-a-sacro-corde-porras-ayllon` |  | IT | dies_natalis |  |  |
@@ -109,7 +109,7 @@
 | 8 | 9 | `mr:0108-erhardus` |  | DE | dies_natalis |  |  |
 | 8 | 10 | `mr:0108-gudila` | * | BE | dies_natalis |  |  |
 | 8 | 11 | `mr:0108-albertus` | * | IE | dies_natalis |  |  |
-| 8 | 12 | `mr:0108-laurentius-giustiniani` |  | IT | dies_natalis |  |  |
+| 8 | 12 | `mr:0108-laurentius-giustiniani` |  | IT | dies_natalis | same as `mr:0905-laurentius-iustinianus` |  |
 | 8 | 13 | `mr:0108-eduardus-waterson` | * | GB | dies_natalis |  |  |
 | 9 | 1 | `mr:0109-marcellinus` |  | IT | dies_natalis |  |  |
 | 9 | 2 | `mr:0109-hadrianus` | * | GB | dies_natalis |  |  |
@@ -121,7 +121,7 @@
 | 9 | 8 | `mr:0109-maria-teresia-a-iesu-le-clerc` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0109-agatha-yi-et-teresia-kim` |  | KR | dies_natalis |  |  |
 | 9 | 10 | `mr:0109-iosephus-pawlowski-et-casimirus-grelewskus` | * | DE | dies_natalis |  |  |
-| 10 | 1 | `mr:0110-miltiades` |  | IT | dies_natalis |  |  |
+| 10 | 1 | `mr:0110-miltiades` |  | IT | dies_natalis | same as `mr:1210-melchiades` |  |
 | 10 | 2 | `mr:0110-paulus` |  | EG | dies_natalis |  |  |
 | 10 | 3 | `mr:0110-gregorius-nyssenus` |  | TR | dies_natalis |  |  |
 | 10 | 4 | `mr:0110-ioannes` |  | IL | dies_natalis |  |  |
@@ -168,7 +168,7 @@
 | 13 | (1) | `mr:0113-hilarius` |  | FR | dies_natalis |  |  |
 | 13 | 2 | `mr:0113-hermylius-et-stratonicus` |  | RS | dies_natalis |  |  |
 | 13 | 3 | `mr:0113-agricius` |  | DE | dies_natalis |  |  |
-| 13 | 4 | `mr:0113-remigius` |  | FR | depositio |  |  |
+| 13 | 4 | `mr:0113-remigius` |  | FR | depositio | same as `mr:1001-remigius` |  |
 | 13 | 5 | `mr:0113-kentigernus` | * | GB | dies_natalis |  |  |
 | 13 | 6 | `mr:0113-petrus` |  | SY | dies_natalis |  |  |
 | 13 | 7 | `mr:0113-gumesindus-et-servusdei` |  | ES | dies_natalis |  |  |
@@ -222,7 +222,7 @@
 | 16 | 14 | `mr:0116-ioanna-maria-condesa-lluch` | * | ES | dies_natalis |  |  |
 | 17 | (1) | `mr:0117-antonius` |  | EG | dies_natalis |  |  |
 | 17 | 2 | `mr:0117-speusippus-et-socii` |  | TR | dies_natalis |  |  |
-| 17 | 3 | `mr:0117-iulianus` |  | TR | commemoratio | same as `mr:0114-iulianus` |  |
+| 17 | 3 | `mr:0117-iulianus` |  | TR | commemoratio | same as `mr:0114-iulianus`; same as `mr:1018-iulianus-saba` |  |
 | 17 | 4 | `mr:0117-marcellus` |  | FR | dies_natalis | same as `mr:0409-marcellus` |  |
 | 17 | 5 | `mr:0117-sulpicius-pius` |  | FR | dies_natalis |  |  |
 | 17 | 6 | `mr:0117-gamelbertus` | * | DE | dies_natalis |  |  |
@@ -324,7 +324,7 @@
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES | dies_natalis |  |  |
 | 25 | 14 | `mr:0125-maria-antonia-grillo` | * | EG | dies_natalis |  |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE | dies_natalis |  |  |
-| 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis |  |  |
+| 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis | same as `mr:0206-titus` |  |
 | 26 | 2 | `mr:0126-theogenes` |  | DZ | dies_natalis |  |  |
 | 26 | 3 | `mr:0126-paula` |  | PS | dies_natalis |  |  |
 | 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL | dies_natalis |  |  |
@@ -332,7 +332,7 @@
 | 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE | dies_natalis |  |  |
-| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis |  |  |
+| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0601-angela-merici` |  |
 | 27 | 2 | `mr:0127-iulianus-sorae` |  | IT | commemoratio |  |  |
 | 27 | 3 | `mr:0127-iulianus-cenomanum` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0127-devota` | * | FR | commemoratio |  |  |
