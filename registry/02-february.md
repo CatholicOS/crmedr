@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
 | 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione` | * | IT | dies_natalis |  |  |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  |  |
-| 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio |  |  |
+| 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio | same as `mr:0202-purificatio-beatae-mariae-virginis` |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0202-laurentius` |  | GB | dies_natalis |  |  |
 | 2 | 4 | `mr:0202-burchardus` |  | DE | dies_natalis | same as `mr:1014-burchardus` |  |
@@ -109,7 +109,7 @@
 | 7 | 17 | `mr:0207-anselmus-polanco-et-philippus-ripoll` | * | ES | dies_natalis |  |  |
 | 7 | 18 | `mr:0207-adalbertus-nierychlewski` | * | PL | dies_natalis |  |  |
 | 7 | 19 | `mr:0207-petrus-verhun` | * | RU | dies_natalis |  |  |
-| 8 | (1) | `mr:0208-hieronymus-emiliani` |  | IT | dies_natalis |  |  |
+| 8 | (1) | `mr:0208-hieronymus-emiliani` |  | IT | dies_natalis | same as `mr:0720-hieronymus-aemilianus` |  |
 | 8 | (2) | `mr:0208-iosephina-bakhita` |  | SD | dies_natalis |  |  |
 | 8 | 3 | `mr:0208-cointha` |  | EG | commemoratio |  |  |
 | 8 | 4 | `mr:0208-iuventius` |  | IT | dies_natalis | same as `mr:0912-iuventius` |  |
@@ -187,7 +187,7 @@
 | 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  |  |
 | 14 | 10 | `mr:0214-ioannes-baptista-a-conceptione` |  | ES | dies_natalis |  |  |
 | 14 | 11 | `mr:0214-vincentius-vilar-david` | * | ES | dies_natalis |  |  |
-| 15 | 1 | `mr:0215-onesimus` |  |  | commemoratio |  |  |
+| 15 | 1 | `mr:0215-onesimus` |  |  | commemoratio | same as `mr:0216-onesimus` |  |
 | 15 | 2 | `mr:0215-faustinus-et-iovita` |  | IT | dies_natalis |  |  |
 | 15 | 3 | `mr:0215-isicus-et-socii` |  | TR | dies_natalis |  |  |
 | 15 | 4 | `mr:0215-georgia` |  | FR | dies_natalis |  |  |
@@ -209,7 +209,7 @@
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |
 | 17 | 5 | `mr:0217-fintanus` |  | IE | dies_natalis |  |  |
-| 17 | 6 | `mr:0217-flavianus` |  | TR | commemoratio |  |  |
+| 17 | 6 | `mr:0217-flavianus` |  | TR | commemoratio | same as `mr:0218-flavianus` |  |
 | 17 | 7 | `mr:0217-finanus` | * | GB | dies_natalis |  |  |
 | 17 | 8 | `mr:0217-silvinus` |  | FR | depositio |  |  |
 | 17 | 9 | `mr:0217-constabilis` | * | IT | dies_natalis |  |  |
@@ -229,7 +229,7 @@
 | 18 | 10 | `mr:0218-ioannes-petrus-neel` |  | CN | dies_natalis |  |  |
 | 18 | 11 | `mr:0218-gertrudis-comensoli` | * | IT | dies_natalis |  |  |
 | 18 | 12 | `mr:0218-georgius-kaszyra` | * | PL | dies_natalis |  |  |
-| 19 | 1 | `mr:0219-quodvultdeus` |  | IT | depositio |  |  |
+| 19 | 1 | `mr:0219-quodvultdeus` |  | IT | depositio | same as `mr:1026-quodvultdeus` |  |
 | 19 | 2 | `mr:0219-monachi-martyres-palaestinae` |  | PS | commemoratio |  |  |
 | 19 | 3 | `mr:0219-mansuetus` |  | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:0219-barbatus` |  | IT | dies_natalis |  |  |
@@ -249,7 +249,7 @@
 | 20 | 6 | `mr:0220-leo` |  | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  |  |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL | dies_natalis |  |  |
-| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio |  |  |
+| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` |  |
 | 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  |  |
 | 21 | 3 | `mr:0221-germanus` | * | CH | dies_natalis |  |  |
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB | dies_natalis |  |  |
@@ -259,7 +259,7 @@
 | 22 | (1) | `mr:0222-cathedra-petri-apostoli` |  |  | celebratio |  |  |
 | 22 | 2 | `mr:0222-papias` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0222-paschasius` |  | FR | dies_natalis |  |  |
-| 22 | 4 | `mr:0222-maximianus` |  | IT | dies_natalis |  |  |
+| 22 | 4 | `mr:0222-maximianus` |  | IT | dies_natalis | same as `mr:0221-maximianus` |  |
 | 22 | 5 | `mr:0222-petrus-damianus` |  | IT | dies_natalis |  |  |
 | 22 | 6 | `mr:0222-isabella` | * | FR | dies_natalis |  |  |
 | 22 | 7 | `mr:0222-margarita` |  | IT | dies_natalis |  |  |
@@ -282,7 +282,7 @@
 | 24 | 5 | `mr:0224-marcus-de-marconi` | * | IT | dies_natalis |  |  |
 | 24 | 6 | `mr:0224-iosepha-naval-girbes` | * | ES | dies_natalis |  |  |
 | 24 | 7 | `mr:0224-thomas-maria-fusco` | * | IT | dies_natalis |  |  |
-| 25 | 1 | `mr:0225-nestor` |  | TR | dies_natalis |  |  |
+| 25 | 1 | `mr:0225-nestor` |  | TR | dies_natalis | same as `mr:0226-nestor` |  |
 | 25 | 2 | `mr:0225-caesarius` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0225-aldetrudis` | * | FR | dies_natalis |  |  |
 | 25 | 4 | `mr:0225-waldburgis` |  | DE | dies_natalis |  |  |
@@ -322,7 +322,7 @@
 | 28 | 3 | `mr:0228-marana-et-cyra` |  | SY | commemoratio |  |  |
 | 28 | 8 | `mr:0228-daniel-brottier` | * | FR | dies_natalis |  |  |
 | 28 | 9 | `mr:0228-timotheus-trojanowski` | * | PL | dies_natalis |  |  |
-| 29 | 1 | `mr:0229-hilarius` |  | IT | depositio |  | also printed at 2/28 entry 4 |
+| 29 | 1 | `mr:0229-hilarius` |  | IT | depositio | same as `mr:0228-hilarus` | also printed at 2/28 entry 4 |
 | 29 | 2 | `mr:0229-oswaldus` |  | GB | dies_natalis |  | also printed at 2/28 entry 5 |
 | 29 | 3 | `mr:0229-antonia-de-florentia` | * | IT | dies_natalis |  | also printed at 2/28 entry 6 |
 | 29 | 4 | `mr:0229-augustus-chapdelaine` |  | CN | dies_natalis |  | also printed at 2/28 entry 7 |

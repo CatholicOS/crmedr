@@ -185,7 +185,7 @@
 | 13 | 17 | `mr:0713-iosephus-wang-guiji` |  | CN | dies_natalis |  |  |
 | 13 | 18 | `mr:0713-marianus-a-iesu-euse-hoyos` | * | CO | dies_natalis |  |  |
 | 13 | 19 | `mr:0713-carolus-emmanuel-rodriguez-santiago` | * | PR | dies_natalis |  |  |
-| 14 | (1) | `mr:0714-camillus-de-lellis` |  | IT | dies_natalis |  |  |
+| 14 | (1) | `mr:0714-camillus-de-lellis` |  | IT | dies_natalis | same as `mr:0718-camillus-de-lellis` |  |
 | 14 | 2 | `mr:0714-optatianus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0714-vincentius` | * | BE | dies_natalis |  |  |
 | 14 | 4 | `mr:0714-marchelmus` |  | NL | dies_natalis |  |  |
@@ -374,7 +374,7 @@
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES | dies_natalis |  |  |
 | 25 | 19 | `mr:0725-deogratias-palacios-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 20 | `mr:0725-maria-teresia-kowalska` | * | PL | dies_natalis |  |  |
-| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis | same as `mr:0320-ioachim`; same as `mr:0816-ioachim` |  |
+| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis | same as `mr:0320-ioachim`; same as `mr:0726-anna`; same as `mr:0816-ioachim` |  |
 | 26 | 2 | `mr:0726-erastus` |  | GR | commemoratio |  |  |
 | 26 | 3 | `mr:0726-simeon` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0726-austindus` | * | FR | dies_natalis |  |  |
@@ -463,7 +463,7 @@
 | 31 | 2 | `mr:0731-calimerus` |  | IT | dies_natalis |  |  |
 | 31 | 3 | `mr:0731-democritus-et-socii` |  | TR | dies_natalis |  |  |
 | 31 | 4 | `mr:0731-fabius` |  | DZ | dies_natalis |  |  |
-| 31 | 5 | `mr:0731-tertullinus` |  | IT | dies_natalis |  |  |
+| 31 | 5 | `mr:0731-tertullinus` |  | IT | dies_natalis | same as `mr:0804-tertullinus` |  |
 | 31 | 6 | `mr:0731-germanus` |  | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:0731-petrus-chrysologus` |  | IT | dies_natalis | same as `mr:1202-petrus-chrysologus` |  |
 | 31 | 8 | `mr:0731-helena` |  | SE | dies_natalis |  |  |

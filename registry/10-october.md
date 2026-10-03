@@ -100,7 +100,7 @@
 | 7 | 8 | `mr:1007-martinus-cid` | * | ES | dies_natalis |  |  |
 | 7 | 9 | `mr:1007-ioannes-hunot` | * | FR | dies_natalis |  |  |
 | 7 | 10 | `mr:1007-iosephus-llosa-balaguer` | * | ES | dies_natalis |  |  |
-| 8 | 1 | `mr:1008-pelagia` |  | TR | dies_natalis |  |  |
+| 8 | 1 | `mr:1008-pelagia` |  | TR | dies_natalis | same as `mr:0609-pelagia` |  |
 | 8 | 2 | `mr:1008-reparata` |  |  | commemoratio |  |  |
 | 8 | 3 | `mr:1008-felix` |  | IT | dies_natalis | same as `mr:0714-felix` |  |
 | 8 | 4 | `mr:1008-evodius` |  | FR | dies_natalis |  |  |
@@ -137,7 +137,7 @@
 | 10 | 14 | `mr:1010-angela-maria-truszkowska` | * | PL | dies_natalis |  |  |
 | 10 | 15 | `mr:1010-leo-wetmanski` | * | PL | dies_natalis |  |  |
 | 10 | 16 | `mr:1010-eduardus-detkens` | * | AT | dies_natalis |  |  |
-| 11 | 1 | `mr:1011-philippus` |  | PS | commemoratio |  |  |
+| 11 | 1 | `mr:1011-philippus` |  | PS | commemoratio | same as `mr:0606-philippus` |  |
 | 11 | 2 | `mr:1011-tharacus-et-socii` |  | TR | dies_natalis |  |  |
 | 11 | 3 | `mr:1011-nicasius-et-socii` |  | FR | commemoratio |  |  |
 | 11 | 4 | `mr:1011-sanctinus` |  | FR | dies_natalis | same as `mr:0922-sanctinus` |  |
@@ -241,7 +241,7 @@
 | 18 | 3 | `mr:1018-proculus-et-socii` |  | IT | dies_natalis |  |  |
 | 18 | 4 | `mr:1018-amabilis` | * | FR | dies_natalis |  |  |
 | 18 | 5 | `mr:1018-mono` | * | BE | dies_natalis |  |  |
-| 18 | 6 | `mr:1018-petrus-de-alcantara` |  | ES | dies_natalis |  |  |
+| 18 | 6 | `mr:1018-petrus-de-alcantara` |  | ES | dies_natalis | same as `mr:1019-petrus-de-alcantara` |  |
 | 18 | 7 | `mr:1018-isaac-jogues` |  | US | dies_natalis |  |  |
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis |  |  |
 | 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
@@ -305,7 +305,7 @@
 | 23 | 10 | `mr:1023-ignatius` |  | TR | dies_natalis |  |  |
 | 23 | 11 | `mr:1023-ethelfleda` | * | GB | dies_natalis |  |  |
 | 23 | 12 | `mr:1023-allucius` | * | IT | dies_natalis |  |  |
-| 23 | 13 | `mr:1023-ioannes-bonus` | * | IT | dies_natalis |  |  |
+| 23 | 13 | `mr:1023-ioannes-bonus` | * | IT | dies_natalis | same as `mr:1123-ioannes-bonus` |  |
 | 23 | 14 | `mr:1023-ioannes-angelus-porro` | * | IT | dies_natalis |  |  |
 | 23 | 15 | `mr:1023-thomas-thwing` | * | GB | dies_natalis |  |  |
 | 23 | 16 | `mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii` | * | FR | dies_natalis |  |  |
@@ -355,7 +355,7 @@
 | 27 | 1 | `mr:1027-evaristus` |  | IT | dies_natalis | same as `mr:1026-evaristus` |  |
 | 27 | 2 | `mr:1027-thrasea` |  | TR | dies_natalis | same as `mr:1005-thrasea` |  |
 | 27 | 3 | `mr:1027-namatius` | * | FR | dies_natalis |  |  |
-| 27 | 4 | `mr:1027-gaudiosus` |  | IT | depositio |  |  |
+| 27 | 4 | `mr:1027-gaudiosus` |  | IT | depositio | same as `mr:1028-gaudiosus` |  |
 | 27 | 5 | `mr:1027-otteranus` | * | GB | dies_natalis |  |  |
 | 27 | 6 | `mr:1027-bartholomaeus-de-bregantia` | * | IT | commemoratio |  |  |
 | 27 | 7 | `mr:1027-salvator-mollar-ventura` | * | ES | dies_natalis |  |  |
