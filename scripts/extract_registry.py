@@ -546,6 +546,11 @@ ENTRY_NOTES = {
         "cognoménto Iúvenis, Italian (CEI) detto il Giovane); \"the Younger\" is the conventional "
         "English epithet, which the English subject follows."
     ),
+    "mr:0212-antonius-caulea": (
+        "The unofficial English 2004 edition dates him \"under Emperor Leo III the Isaurian\"; the "
+        "Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is "
+        "Leo VI the Wise."
+    ),
     "mr:0410-beda": (
         "The unofficial English 2004 edition mistranslates the subject as \"Saint Peter the "
         "Younger\"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda "

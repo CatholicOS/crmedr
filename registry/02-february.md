@@ -158,7 +158,7 @@
 | 12 | 1 | `mr:0212-martyres-abitinenses` |  | TN | commemoratio |  |  |
 | 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  |  |
 | 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |  |
-| 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  |  |
+| 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  | The unofficial English 2004 edition dates him "under Emperor Leo III the Isaurian"; the Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the Wise. |
 | 12 | 5 | `mr:0212-humbelina` | * | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:0212-ludanus` | * | FR | dies_natalis |  |  |
 | 12 | 7 | `mr:0212-thomas-hemmerford-et-socii` | * | GB | dies_natalis |  |  |
