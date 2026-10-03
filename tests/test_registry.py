@@ -310,6 +310,18 @@ class PerEditionPlacementsTest(unittest.TestCase):
         missing = [{"id": "mr:0610-x", "month": 6, "day": 10, "entry": 1, "asterisk": False, "same_eulogy": ["mr:1210-y"]}]
         self.assertTrue(any("unknown" in e for e in r.validate_editions(missing)))
 
+    def test_same_day_same_eulogy_only_with_a_deprecated_id(self):
+        """#51: a historical eulogy whose subject the 2004 edition changed keeps its own ID and is
+        linked to the current one on the same day (Circumcisio Domini / Maria Dei Genetrix)."""
+        cur = {"id": "mr:0101-maria-dei-genetrix", "month": 1, "day": 1, "entry": 1, "asterisk": False,
+               "same_eulogy": ["mr:0101-circumcisio-domini"]}
+        dep = {"id": "mr:0101-circumcisio-domini", "month": 1, "day": 1, "entry": 1, "deprecated": True,
+               "attested_in": "martyrologium_romanum_1749", "same_eulogy": ["mr:0101-maria-dei-genetrix"]}
+        self.assertEqual(r.validate_editions([cur, dep]), [])
+        two = [{"id": "mr:0101-a", "month": 1, "day": 1, "entry": 1, "asterisk": False, "same_eulogy": ["mr:0101-b"]},
+               {"id": "mr:0101-b", "month": 1, "day": 1, "entry": 2, "asterisk": False, "same_eulogy": ["mr:0101-a"]}]
+        self.assertTrue(any("same day" in e for e in r.validate_editions(two)))
+
 
 class PerEditionPlacementsDataTest(unittest.TestCase):
     """The regenerated registry holds the 2004 editions' own placements."""

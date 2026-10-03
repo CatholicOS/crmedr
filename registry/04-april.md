@@ -20,7 +20,7 @@
 | 2 | 4 | `mr:0402-abundius` |  | IT | dies_natalis |  |  |
 | 2 | 5 | `mr:0402-victor` |  | IT | dies_natalis |  |  |
 | 2 | 6 | `mr:0402-nicetius` |  | FR | dies_natalis |  |  |
-| 2 | 7 | `mr:0402-eustasius` |  | FR | dies_natalis |  |  |
+| 2 | 7 | `mr:0402-eustasius` |  | FR | dies_natalis | same as `mr:0329-eustasius-luxovii` |  |
 | 2 | 8 | `mr:0402-ioannes-paine` |  | GB | dies_natalis |  |  |
 | 2 | 9 | `mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod` | * | GU | dies_natalis |  |  |
 | 2 | 10 | `mr:0402-leopoldus-de-gaiche` | * | IT | dies_natalis |  |  |

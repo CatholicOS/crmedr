@@ -108,7 +108,7 @@
 | 8 | 6 | `mr:1008-hugo` | * | IT | dies_natalis |  |  |
 | 8 | 7 | `mr:1008-ioannes-adams-et-socii` | * | GB | dies_natalis |  |  |
 | 9 | (1) | `mr:1009-dionysius-et-socii` |  | FR | dies_natalis |  |  |
-| 9 | (2) | `mr:1009-ioannes-leonardus` |  | IT | dies_natalis |  |  |
+| 9 | (2) | `mr:1009-ioannes-leonardus` |  | IT | dies_natalis | same as `mr:1010-ioannes-leonardus` |  |
 | 9 | 3 | `mr:1009-abraham` |  | IQ | commemoratio |  |  |
 | 9 | 4 | `mr:1009-diodorus-et-socii` |  | SY | dies_natalis | same as `mr:0911-diodorus-et-socii` |  |
 | 9 | 5 | `mr:1009-domninus-iuliam` |  | IT | dies_natalis |  |  |
@@ -246,7 +246,7 @@
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis |  |  |
 | 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
-| 19 | 3 | `mr:1019-ioel` |  | PS | commemoratio |  |  |
+| 19 | 3 | `mr:1019-ioel` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdra` |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT | commemoratio |  |  |
 | 19 | 5 | `mr:1019-asterius` |  | IT | dies_natalis | same as `mr:1021-asterius` |  |
 | 19 | 6 | `mr:1019-sabinianus-et-potentianus` |  | FR | commemoratio | same as `mr:1231-sabinianus-et-potentianus` |  |
@@ -386,7 +386,7 @@
 | 30 | 3 | `mr:1030-eutropia` |  | EG | dies_natalis |  |  |
 | 30 | 4 | `mr:1030-marcellus` |  | MA | dies_natalis |  |  |
 | 30 | 5 | `mr:1030-claudius-et-socii` |  | ES | dies_natalis |  |  |
-| 30 | 6 | `mr:1030-maximus` |  | IT | dies_natalis |  |  |
+| 30 | 6 | `mr:1030-maximus` |  | IT | dies_natalis | same as `mr:1030-maximus-apameae` |  |
 | 30 | 7 | `mr:1030-germanus` |  | IT | dies_natalis |  |  |
 | 30 | 8 | `mr:1030-gerardus` |  | IT | dies_natalis |  |  |
 | 30 | 9 | `mr:1030-benvenuta-boiani` | * | IT | dies_natalis |  |  |

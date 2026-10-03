@@ -67,10 +67,10 @@
 | 5 | (1) | `mr:0205-agatha` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0205-plurimi-martyres-ponti` |  | TR | commemoratio |  |  |
 | 5 | 3 | `mr:0205-avitus` |  | FR | dies_natalis |  |  |
-| 5 | 4 | `mr:0205-ingenuinus` |  | IT | dies_natalis |  |  |
+| 5 | 4 | `mr:0205-ingenuinus` |  | IT | dies_natalis | same as `mr:0205-genuinus-et-albuinus` |  |
 | 5 | 5 | `mr:0205-lucas` | * | IT | dies_natalis |  |  |
 | 5 | 6 | `mr:0205-sabas-iunior` | * | IT | dies_natalis |  |  |
-| 5 | 7 | `mr:0205-albuinus` |  | IT | commemoratio |  |  |
+| 5 | 7 | `mr:0205-albuinus` |  | IT | commemoratio | same as `mr:0205-genuinus-et-albuinus` |  |
 | 5 | 8 | `mr:0205-adalheidis` | * | DE | dies_natalis |  |  |
 | 5 | 9 | `mr:0205-paulus-miki-et-socii` |  | JP | dies_natalis |  |  |
 | 5 | 10 | `mr:0205-francisca-meziere` | * | FR | dies_natalis |  |  |
@@ -204,7 +204,7 @@
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  |  |
-| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis |  |  |
+| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis |  | On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |

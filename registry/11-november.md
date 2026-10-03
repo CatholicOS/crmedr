@@ -32,7 +32,7 @@
 | 2 | 8 | `mr:1102-ambrosius` |  | CH | dies_natalis |  |  |
 | 2 | 9 | `mr:1102-winefrida` |  | GB | dies_natalis |  |  |
 | 2 | 10 | `mr:1102-georgius` |  | FR | dies_natalis |  |  |
-| 2 | 11 | `mr:1102-malachia` |  | FR | depositio |  |  |
+| 2 | 11 | `mr:1102-malachia` |  | FR | depositio | same as `mr:1103-malachias` |  |
 | 2 | 12 | `mr:1102-margarita-de-lotharingia` | * | FR | dies_natalis |  |  |
 | 2 | 13 | `mr:1102-ioannes-bodey` | * | GB | dies_natalis |  |  |
 | 2 | 14 | `mr:1102-pius-a-sancto-aloysio-campidelli` | * | IT | dies_natalis |  |  |
@@ -127,7 +127,7 @@
 | 9 | 12 | `mr:1109-elisabeth-a-sanctissima-trinitate-catez` | * | FR | dies_natalis |  |  |
 | 9 | 13 | `mr:1109-henricus-hlebowicz` | * | PL | dies_natalis |  |  |
 | 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
-| 10 | (1) | `mr:1110-leo-i` |  | IT | dies_natalis |  |  |
+| 10 | (1) | `mr:1110-leo-i` |  | IT | dies_natalis | same as `mr:0411-leo-i` |  |
 | 10 | 2 | `mr:1110-demetrianus` |  | IR | dies_natalis |  |  |
 | 10 | 3 | `mr:1110-orestes` |  | TR | dies_natalis | same as `mr:1109-orestes` |  |
 | 10 | 4 | `mr:1110-probus` |  | IT | dies_natalis |  |  |

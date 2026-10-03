@@ -173,7 +173,7 @@
 | 14 | 2 | `mr:0514-maximus` |  | TR | dies_natalis |  |  |
 | 14 | 3 | `mr:0514-pontius` |  | FR | dies_natalis |  |  |
 | 14 | 4 | `mr:0514-victor-et-corona` |  | SY | dies_natalis |  |  |
-| 14 | 5 | `mr:0514-isidorus` |  | GR | dies_natalis |  |  |
+| 14 | 5 | `mr:0514-isidorus` |  | GR | dies_natalis | same as `mr:0515-isidorus-chii` |  |
 | 14 | 6 | `mr:0514-felix-et-fortunatus` |  | IT | dies_natalis |  |  |
 | 14 | 7 | `mr:0514-iusta-et-heredina` |  | IT | commemoratio |  |  |
 | 14 | 8 | `mr:0514-aprunculus` | * | FR | dies_natalis |  |  |
@@ -292,7 +292,7 @@
 | 22 | 14 | `mr:0522-michael-ho-dinh-hy` |  | VN | dies_natalis |  |  |
 | 22 | 15 | `mr:0522-dominicus-ngon` |  | VN | dies_natalis |  |  |
 | 22 | 16 | `mr:0522-maria-dominica-brun-barbantini` | * | IT | dies_natalis |  |  |
-| 23 | 1 | `mr:0523-lucius-et-socii` |  | TN | dies_natalis |  |  |
+| 23 | 1 | `mr:0523-lucius-et-socii` |  | TN | dies_natalis | same as `mr:0224-montanus-et-socii` |  |
 | 23 | 2 | `mr:0523-martyres-cappadociae` |  | TR | commemoratio |  |  |
 | 23 | 3 | `mr:0523-martyres-mesopotamiae` |  | IQ | commemoratio |  |  |
 | 23 | 4 | `mr:0523-ephebus` |  | IT | dies_natalis |  |  |

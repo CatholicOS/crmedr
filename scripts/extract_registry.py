@@ -490,6 +490,11 @@ PLACEMENT_OVERRIDES = {}
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
+    "mr:0217-septem-fundatores-servorum-mariae": (
+        "On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of "
+        "the seven founders; the 2004 edition commemorates the seven founders together. The "
+        "historical eulogy is kept under this ID."
+    ),
     "mr:0410-beda": (
         "The unofficial English 2004 edition mistranslates the subject as \"Saint Peter the "
         "Younger\"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda "
@@ -780,8 +785,9 @@ def _placement(e, edition):
 
 def validate_editions(entries):
     """Errors in the per-edition data: unknown editions or keys, overrides that
-    repeat the main value, one-sided or same-day `same_eulogy` links, and two
-    numbered entries with the same number on one day of one edition."""
+    repeat the main value, one-sided `same_eulogy` links or same-day ones between
+    two current IDs, and two numbered entries with the same number on one day of
+    one edition."""
     errors = []
     by_id = {e["id"]: e for e in entries}
     for e in entries:
@@ -800,7 +806,12 @@ def validate_editions(entries):
             if t is None:
                 errors.append(f"{e['id']}: same_eulogy names unknown {other}")
                 continue
-            if (t["month"], t["day"]) == (e["month"], e["day"]):
+            # Same day: allowed only from a deprecated ID, a historical eulogy whose
+            # subject the 2004 edition changed (renamed celebration, reduced group,
+            # corrected saint), keyed apart and matched (#51).
+            if (t["month"], t["day"]) == (e["month"], e["day"]) and not (
+                e.get("deprecated") or t.get("deprecated")
+            ):
                 errors.append(f"{e['id']}: same_eulogy {other} is on the same day")
             if e["id"] not in t.get("same_eulogy", []):
                 errors.append(f"{e['id']}: same_eulogy {other} does not link back")
