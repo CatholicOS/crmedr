@@ -189,6 +189,7 @@ class RegistryIntegrityTest(unittest.TestCase):
         dep = [e["id"] for e in json.load(open(root / "data" / "deprecated_ids.json", encoding="utf-8"))]
         self.assertEqual(len(dep), len(set(dep)))
         self.assertEqual(reg["entry_count"], len(ids))
+        self.assertEqual(reg["current_count"], sum(1 for e in reg["entries"] if not e.get("deprecated")))
         self.assertEqual(reg["deprecated_count"], len(dep))
         for lang in ("la", "it", "en"):
             keys = json.load(open(root / "i18n" / f"{lang}.json", encoding="utf-8"))
