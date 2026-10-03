@@ -168,14 +168,14 @@
 | 13 | 11 | `mr:0613-gerardus` | * | FR | dies_natalis |  |  |
 | 13 | 12 | `mr:0613-augustinus-phan-viet-huy-et-nicolaus-bui-viet-the` |  | VN | dies_natalis |  |  |
 | 13 | 13 | `mr:0613-maria-anna-biernacka` | * | PL | dies_natalis |  |  |
-| 14 | 1 | `mr:0614-elisaeus` |  | PS | commemoratio |  |  |
+| 14 | 1 | `mr:0614-elisaeus-propheta` |  | PS | commemoratio |  |  |
 | 14 | 2 | `mr:0614-protus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0614-valerius-et-rufinus` |  | FR | dies_natalis |  |  |
 | 14 | 4 | `mr:0614-fortunatus` | * | IT | dies_natalis |  |  |
 | 14 | 5 | `mr:0614-aetherius` |  | FR | dies_natalis |  |  |
 | 14 | 6 | `mr:0614-methodius` |  | TR | dies_natalis |  |  |
 | 14 | 7 | `mr:0614-anastasius-et-socii` |  | ES | dies_natalis |  |  |
-| 15 | 1 | `mr:0615-amos` |  | IL | commemoratio |  |  |
+| 15 | 1 | `mr:0615-amos-propheta` |  | IL | commemoratio |  |  |
 | 15 | 2 | `mr:0615-hesychius` |  | BG | dies_natalis |  |  |
 | 15 | 3 | `mr:0615-vitus` |  | IT | dies_natalis |  |  |
 | 15 | 4 | `mr:0615-abraham` |  | FR | dies_natalis |  |  |
@@ -329,7 +329,7 @@
 | 28 | 8 | `mr:0628-lucia-wang-cheng-et-socii` |  | CN | dies_natalis |  |  |
 | 28 | 9 | `mr:0628-maria-du-zhaozhi` |  | CN | dies_natalis |  |  |
 | 28 | 10 | `mr:0628-severianus-baranyk-et-ioachim-senkivskyj` | * | UA | dies_natalis |  |  |
-| 29 | (1) | `mr:0629-petrus-et-paulus-simon` |  | IT | dies_natalis |  |  |
+| 29 | (1) | `mr:0629-petrus-et-paulus` |  | IT | dies_natalis |  |  |
 | 29 | 2 | `mr:0629-syrus` |  | IT | dies_natalis |  |  |
 | 29 | 3 | `mr:0629-cassius` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0629-hemma` | * | AT | dies_natalis |  |  |

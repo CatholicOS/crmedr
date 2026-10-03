@@ -117,7 +117,7 @@
 | 8 | 18 | `mr:0808-maria-a-iesu-infante-baldillou-y-bullit-et-socii` | * | ES | dies_natalis |  |  |
 | 8 | 19 | `mr:0808-vladimirus-laskowski` | * | DE | dies_natalis |  |  |
 | 9 | (1) | `mr:0809-teresia-benedicta-a-cruce-stein` |  | PL | dies_natalis |  |  |
-| 9 | 2 | `mr:0809-laurentius` |  | IT | dies_natalis |  |  |
+| 9 | 2 | `mr:0809-romanus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0809-nathaeus` | * | IE | dies_natalis |  |  |
 | 9 | 4 | `mr:0809-fedliminus` | * | IE | dies_natalis |  |  |
 | 9 | 5 | `mr:0809-martyres-constantinopolis` |  | TR | commemoratio |  |  |
@@ -293,7 +293,7 @@
 | 19 | 20 | `mr:0819-thomas-sitjar-fortia` | * | ES | dies_natalis |  |  |
 | 19 | 21 | `mr:0819-elvira-a-nativitate-dominae-nostrae-torrentalle-paraire-et-socii` | * | ES | dies_natalis |  |  |
 | 20 | (1) | `mr:0820-bernardus` |  | FR | dies_natalis |  |  |
-| 20 | 2 | `mr:0820-samuel` |  | IL | commemoratio |  |  |
+| 20 | 2 | `mr:0820-samuel-propheta` |  | IL | commemoratio |  |  |
 | 20 | 3 | `mr:0820-maximus` |  | FR | dies_natalis |  |  |
 | 20 | 4 | `mr:0820-philibertus` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0820-leovigildus-et-christophorus` |  | ES | dies_natalis |  |  |

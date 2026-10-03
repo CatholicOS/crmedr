@@ -5,7 +5,7 @@
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:0501-ioseph` |  |  | celebratio |  |  |
-| 1 | 2 | `mr:0501-ieremias` |  | IL | commemoratio |  |  |
+| 1 | 2 | `mr:0501-ieremias-propheta` |  | IL | commemoratio |  |  |
 | 1 | 3 | `mr:0501-andeolus` |  | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:0501-torquatus-et-socii` |  | ES | commemoratio |  |  |
 | 1 | 5 | `mr:0501-amator` |  | FR | dies_natalis |  |  |
@@ -113,7 +113,7 @@
 | 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino-symon-de-longprey` | * | CA | dies_natalis |  |  |
 | 8 | 16 | `mr:0508-ulrica-nisch` | * | DE | dies_natalis |  |  |
 | 8 | 17 | `mr:0508-antonius-bajewski` | * | PL | dies_natalis |  |  |
-| 9 | 1 | `mr:0509-isaias` |  | PS | commemoratio |  |  |
+| 9 | 1 | `mr:0509-isaias-propheta` |  | PS | commemoratio |  |  |
 | 9 | 2 | `mr:0509-herma` |  | PS | commemoratio |  |  |
 | 9 | 3 | `mr:0509-pachomius` |  | EG | dies_natalis | same as `mr:0514-pachomius` |  |
 | 9 | 4 | `mr:0509-trecenti-decem-martyres-persidis` |  | IR | dies_natalis |  |  |

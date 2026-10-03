@@ -90,7 +90,7 @@
 | 7 | 11 | `mr:0407-eduardus-oldcorne-et-radulphus-ashley` | * | GB | dies_natalis |  |  |
 | 7 | 12 | `mr:0407-petrus-nguyen-van-luu` |  | VN | dies_natalis |  |  |
 | 7 | 13 | `mr:0407-maria-assumpta-pallotta` | * | CN | dies_natalis |  |  |
-| 8 | 1 | `mr:0408-agabus` |  | PS | commemoratio |  |  |
+| 8 | 1 | `mr:0408-agabus-propheta` |  | PS | commemoratio |  |  |
 | 8 | 2 | `mr:0408-herodion-et-socii` |  | PS | commemoratio |  |  |
 | 8 | 3 | `mr:0408-dionysius-2` |  | GR | dies_natalis |  |  |
 | 8 | 4 | `mr:0408-timotheus-et-socii` |  | TR | dies_natalis | same as `mr:0406-timotheus-et-socii` |  |
@@ -288,7 +288,7 @@
 | 23 | 8 | `mr:0423-helena-valentinus` | * | IT | dies_natalis |  |  |
 | 23 | 9 | `mr:0423-teresia-maria-a-cruce-manetti` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0423-maria-gabriela-sagheddu` | * | IT | dies_natalis |  |  |
-| 24 | (1) | `mr:0424-fidel-de-sigmaringa` |  | CH | dies_natalis |  |  |
+| 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
 | 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | IL | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis |  |  |

@@ -218,7 +218,7 @@
 | 16 | 16 | `mr:1016-gerardus-maiella` |  | IT | dies_natalis |  |  |
 | 16 | 17 | `mr:1016-anicetus-koplinski-et-iosephus-jankowski` | * | PL | dies_natalis |  |  |
 | 17 | (1) | `mr:1017-ignatius` |  | TR | dies_natalis |  |  |
-| 17 | 2 | `mr:1017-osea` |  | PS | commemoratio |  |  |
+| 17 | 2 | `mr:1017-osee-propheta` |  | PS | commemoratio |  |  |
 | 17 | 3 | `mr:1017-rufus-et-zosimus` |  | IT | commemoratio | same as `mr:1218-rufus-et-zosimus` |  |
 | 17 | 4 | `mr:1017-martyres-volitani` |  | TN | dies_natalis |  |  |
 | 17 | 5 | `mr:1017-ioannes` |  | EG | dies_natalis | same as `mr:0327-ioannes` |  |
@@ -246,7 +246,7 @@
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis |  |  |
 | 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
-| 19 | 3 | `mr:1019-ioel` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdra` |  |
+| 19 | 3 | `mr:1019-ioel-propheta` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdra` |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT | commemoratio |  |  |
 | 19 | 5 | `mr:1019-asterius` |  | IT | dies_natalis | same as `mr:1021-asterius` |  |
 | 19 | 6 | `mr:1019-sabinianus-et-potentianus` |  | FR | commemoratio | same as `mr:1231-sabinianus-et-potentianus` |  |
@@ -361,7 +361,7 @@
 | 27 | 7 | `mr:1027-salvator-mollar-ventura` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:1028-simon-et-iudas` |  | PS | dies_natalis |  |  |
 | 28 | 2 | `mr:1028-ferrutius` |  | DE | dies_natalis |  |  |
-| 28 | 3 | `mr:1028-fidel` |  | IT | dies_natalis |  |  |
+| 28 | 3 | `mr:1028-fidelis` |  | IT | dies_natalis |  |  |
 | 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis |  |  |
 | 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  |  |
 | 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis | same as `mr:0111-salvius-ambiani` |  |

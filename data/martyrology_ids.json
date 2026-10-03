@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6316,
+  "entry_count": 6315,
   "current_count": 4640,
-  "deprecated_count": 1676,
+  "deprecated_count": 1675,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -7171,7 +7171,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0203-simeon-et-anna",
+      "id": "mr:0203-simeon-et-anna-prophetissa",
       "month": 2,
       "day": 3,
       "entry": 3,
@@ -18849,7 +18849,7 @@
       ]
     },
     {
-      "id": "mr:0408-agabus",
+      "id": "mr:0408-agabus-propheta",
       "month": 4,
       "day": 8,
       "entry": 1,
@@ -22170,7 +22170,7 @@
       ]
     },
     {
-      "id": "mr:0424-fidel-de-sigmaringa",
+      "id": "mr:0424-fidelis-de-sigmaringa",
       "month": 4,
       "day": 24,
       "entry": 1,
@@ -23661,7 +23661,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0501-ieremias",
+      "id": "mr:0501-ieremias-propheta",
       "month": 5,
       "day": 1,
       "entry": 2,
@@ -25467,7 +25467,7 @@
       ]
     },
     {
-      "id": "mr:0509-isaias",
+      "id": "mr:0509-isaias-propheta",
       "month": 5,
       "day": 9,
       "entry": 1,
@@ -33161,7 +33161,7 @@
       ]
     },
     {
-      "id": "mr:0614-elisaeus",
+      "id": "mr:0614-elisaeus-propheta",
       "month": 6,
       "day": 14,
       "entry": 1,
@@ -33280,7 +33280,7 @@
       ]
     },
     {
-      "id": "mr:0615-amos",
+      "id": "mr:0615-amos-propheta",
       "month": 6,
       "day": 15,
       "entry": 1,
@@ -35832,7 +35832,7 @@
       ]
     },
     {
-      "id": "mr:0629-petrus-et-paulus-simon",
+      "id": "mr:0629-petrus-et-paulus",
       "month": 6,
       "day": 29,
       "entry": 1,
@@ -40745,7 +40745,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0720-elias-thesbita",
+      "id": "mr:0720-elias-thesbita-propheta",
       "month": 7,
       "day": 20,
       "entry": 2,
@@ -41394,7 +41394,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0723-ezechiel",
+      "id": "mr:0723-ezechiel-propheta",
       "month": 7,
       "day": 23,
       "entry": 2,
@@ -45851,7 +45851,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0809-laurentius",
+      "id": "mr:0809-romanus",
       "month": 8,
       "day": 9,
       "entry": 2,
@@ -48778,7 +48778,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0820-samuel",
+      "id": "mr:0820-samuel-propheta",
       "month": 8,
       "day": 20,
       "entry": 2,
@@ -52501,7 +52501,7 @@
       ]
     },
     {
-      "id": "mr:0904-moyses",
+      "id": "mr:0904-moyses-propheta",
       "month": 9,
       "day": 4,
       "entry": 1,
@@ -52748,7 +52748,7 @@
       ]
     },
     {
-      "id": "mr:0905-v",
+      "id": "mr:0905-quintus",
       "month": 9,
       "day": 5,
       "entry": 2,
@@ -52904,7 +52904,7 @@
       ]
     },
     {
-      "id": "mr:0906-zacharias",
+      "id": "mr:0906-zacharias-propheta",
       "month": 9,
       "day": 6,
       "entry": 1,
@@ -56463,7 +56463,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0921-iona",
+      "id": "mr:0921-ionas-propheta",
       "month": 9,
       "day": 21,
       "entry": 2,
@@ -62502,7 +62502,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1017-osea",
+      "id": "mr:1017-osee-propheta",
       "month": 10,
       "day": 17,
       "entry": 2,
@@ -62947,7 +62947,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1019-ioel",
+      "id": "mr:1019-ioel-propheta",
       "month": 10,
       "day": 19,
       "entry": 3,
@@ -64882,7 +64882,7 @@
       ]
     },
     {
-      "id": "mr:1028-fidel",
+      "id": "mr:1028-fidelis",
       "month": 10,
       "day": 28,
       "entry": 3,
@@ -69709,7 +69709,7 @@
       ]
     },
     {
-      "id": "mr:1119-abdia",
+      "id": "mr:1119-abdias-propheta",
       "month": 11,
       "day": 19,
       "entry": 1,
@@ -72075,7 +72075,7 @@
       ]
     },
     {
-      "id": "mr:1201-nahum",
+      "id": "mr:1201-nahum-propheta",
       "month": 12,
       "day": 1,
       "entry": 1,
@@ -72314,7 +72314,7 @@
       ]
     },
     {
-      "id": "mr:1202-habacuc",
+      "id": "mr:1202-habacuc-propheta",
       "month": 12,
       "day": 2,
       "entry": 1,
@@ -72469,7 +72469,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1203-sophonia",
+      "id": "mr:1203-sophonias-propheta",
       "month": 12,
       "day": 3,
       "entry": 2,
@@ -74714,7 +74714,7 @@
       ]
     },
     {
-      "id": "mr:1216-aggaeus",
+      "id": "mr:1216-aggaeus-propheta",
       "month": 12,
       "day": 16,
       "entry": 1,
@@ -75089,7 +75089,7 @@
       ]
     },
     {
-      "id": "mr:1218-malachia",
+      "id": "mr:1218-malachias-propheta",
       "month": 12,
       "day": 18,
       "entry": 1,
@@ -75431,7 +75431,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1221-michaea",
+      "id": "mr:1221-michaeas-propheta",
       "month": 12,
       "day": 21,
       "entry": 2,
@@ -76409,7 +76409,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1229-david",
+      "id": "mr:1229-david-rex-et-propheta",
       "month": 12,
       "day": 29,
       "entry": 2,
@@ -84975,7 +84975,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "PS",
       "same_eulogy": [
-        "mr:1019-ioel"
+        "mr:1019-ioel-propheta"
       ]
     },
     {
@@ -86096,15 +86096,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
-    },
-    {
-      "id": "mr:0809-romanus",
-      "month": 8,
-      "day": 9,
-      "entry": 2,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1914_en_unofficial",
-      "country": "IT"
     },
     {
       "id": "mr:0809-ioannes-baptista-maria-vianney",
@@ -87516,9 +87507,9 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0905-v"
+        "mr:0905-quintus"
       ],
-      "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-v, see #52)."
+      "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-quintus, see #52)."
     },
     {
       "id": "mr:0906-faustus-et-macarius",

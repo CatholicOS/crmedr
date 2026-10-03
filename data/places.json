@@ -3265,7 +3265,7 @@
         "source": "lead"
       }
     ],
-    "mr:0203-simeon-et-anna": [
+    "mr:0203-simeon-et-anna-prophetissa": [
       {
         "role": "cult",
         "la": "Hierosólymæ",
@@ -14794,7 +14794,7 @@
         "source": "lead"
       }
     ],
-    "mr:0614-elisaeus": [
+    "mr:0614-elisaeus-propheta": [
       {
         "role": "cult",
         "la": "Samaríæ seu Sebáste in Palæstína",
@@ -20477,14 +20477,6 @@
         "source": "lead"
       }
     ],
-    "mr:0809-laurentius": [
-      {
-        "role": "death",
-        "la": "Romæ in cœmetério",
-        "it": "A Roma nel cimitero di san Lorenzo sulla via Tiburtina",
-        "source": "lead"
-      }
-    ],
     "mr:0809-martyres-constantinopolis": [
       {
         "role": "cult",
@@ -20506,6 +20498,14 @@
         "role": "death",
         "la": "Londínii in Anglia",
         "it": "A Londra in Inghilterra",
+        "source": "lead"
+      }
+    ],
+    "mr:0809-romanus": [
+      {
+        "role": "death",
+        "la": "Romæ in cœmetério",
+        "it": "A Roma nel cimitero di san Lorenzo sulla via Tiburtina",
         "source": "lead"
       }
     ],
@@ -23497,6 +23497,14 @@
         "source": "lead"
       }
     ],
+    "mr:0905-quintus": [
+      {
+        "role": "death",
+        "la": "Cápuæ in Campánia",
+        "it": "A Capua in Campania",
+        "source": "lead"
+      }
+    ],
     "mr:0905-teresia-gonhxa-bojaxhiu": [
       {
         "role": "death",
@@ -23510,14 +23518,6 @@
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
         "it": "A Nicomedia in Bitinia, nell’odierna Turchia",
-        "source": "lead"
-      }
-    ],
-    "mr:0905-v": [
-      {
-        "role": "death",
-        "la": "Cápuæ in Campánia",
-        "it": "A Capua in Campania",
         "source": "lead"
       }
     ],
@@ -28835,7 +28835,7 @@
         "source": "lead"
       }
     ],
-    "mr:1028-fidel": [
+    "mr:1028-fidelis": [
       {
         "role": "death",
         "la": "Apud Comum in Gállia Cisalpína",

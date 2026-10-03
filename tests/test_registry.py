@@ -121,9 +121,11 @@ class IdCorrectionsAppliedTest(unittest.TestCase):
 class MultiSubjectSlugs40Test(unittest.TestCase):
     """#40: a slug naming two or more subjects goes with a plural Latin subject."""
 
-    # "et" inside a religious name or a feast title, not a second subject.
+    # "et" inside a religious name, a feast title or two titles of one subject, not a
+    # second subject.
     NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria-mazzarello",
-                 "mr:1118-dedicatio-basilicarum-petri-et-pauli"}
+                 "mr:1118-dedicatio-basilicarum-petri-et-pauli",
+                 "mr:1229-david-rex-et-propheta"}
 
     def test_corrections_present(self):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:1115-guria"), "mr:1115-guria-et-samona")
@@ -139,6 +141,26 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
                           and e["id"] not in self.NOT_MULTI
                           and la[e["id"]].split()[0] not in ("Sancti", "Sanctae", "Beati", "Beatae"))
         self.assertEqual(singular, [])
+
+
+class CurrentIdFixes52Test(unittest.TestCase):
+    """#52: current slugs that misnamed the eulogy, and prophets keeping -propheta."""
+
+    def test_corrections_present(self):
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:0905-v"), "mr:0905-quintus")
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:0809-laurentius"), "mr:0809-romanus")
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:1017-osea"), "mr:1017-osee-propheta")
+
+    def test_prophets_say_so_in_slug_and_subject(self):
+        root = Path(__file__).resolve().parent.parent
+        la = json.load(open(root / "i18n" / "la.json", encoding="utf-8"))
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json", encoding="utf-8"))["entries"]}
+        for cid in ("mr:0615-amos-propheta", "mr:1218-malachias-propheta", "mr:1229-david-rex-et-propheta",
+                    "mr:0203-simeon-et-anna-prophetissa"):
+            self.assertIn(cid, entries)
+            self.assertRegex(la[cid], r"Prophet(a|issa)$")
+        # the 1914 deprecated twin of St Romanus merged into the renamed current ID
+        self.assertFalse(entries["mr:0809-romanus"].get("deprecated"))
 
 
 class PlaceLeadCorrections25Test(unittest.TestCase):

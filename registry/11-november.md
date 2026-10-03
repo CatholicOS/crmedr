@@ -249,7 +249,7 @@
 | 18 | 10 | `mr:1118-grimoaldus-a-purificatione-santamaria` | * | IT | dies_natalis |  |  |
 | 18 | 11 | `mr:1118-carolina-kozka` | * | PL | dies_natalis |  |  |
 | 18 | 12 | `mr:1118-maria-a-refugio-hinojosa-y-naveros-et-socii` | * | ES | dies_natalis |  |  |
-| 19 | 1 | `mr:1119-abdia` |  | IL | commemoratio |  |  |
+| 19 | 1 | `mr:1119-abdias-propheta` |  | IL | commemoratio |  |  |
 | 19 | 2 | `mr:1119-maximus` |  | TR | dies_natalis |  |  |
 | 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  |  |
 | 19 | 4 | `mr:1119-barlaam` |  | TR | dies_natalis |  |  |
