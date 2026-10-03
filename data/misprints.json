@@ -1,6 +1,20 @@
 {
-  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology. printed (the misprinted word, or the shortest phrase of up to three words that makes it unique) occurs exactly once, as whole words, in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. duplicated_entries records a whole eulogy that an edition prints a second time on another day (month/day, before the numbered entry before_entry); the copy is left out of the texts. Hand-maintained; see docs/canonicalization-report.md.",
+  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology (and the unofficial English 2004 text). printed (the misprinted word, or the shortest phrase of up to three words that makes it unique) occurs exactly once, as whole words, in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. duplicated_entries records a whole eulogy that an edition prints a second time on another day (month/day, before the numbered entry before_entry); the copy is left out of the texts. Hand-maintained; see docs/canonicalization-report.md.",
   "misprints": [
+    {
+      "id": "mr:0116-marcellus-i",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "Marcellino",
+      "intended": "Marcello",
+      "verified": "curator (the Latin print has sancti Marcelli Primi)"
+    },
+    {
+      "id": "mr:0212-antonius-caulea",
+      "edition": "martyrologium_romanum_2004_en_unofficial",
+      "printed": "Caulphæ",
+      "intended": "Cauleas",
+      "verified": "curator (the Latin print has cognoménto Cauléæ, the Italian detto Cauléas)"
+    },
     {
       "id": "mr:0305-phoca",
       "edition": "martyrologium_romanum_2004_it_IT",
