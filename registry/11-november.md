@@ -79,7 +79,7 @@
 | 5 | 13 | `mr:1105-bernardus-lichtenberg` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1105-gregorius-lakota` | * | RU | dies_natalis |  |  |
 | 6 | 1 | `mr:1106-felix` |  | TN | dies_natalis |  |  |
-| 6 | 2 | `mr:1106-paulus` |  | TR | commemoratio |  |  |
+| 6 | 2 | `mr:1106-paulus` |  | TR | commemoratio | same as `mr:0607-paulus` |  |
 | 6 | 3 | `mr:1106-melanius` |  | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:1106-iltutus` | * | GB | dies_natalis |  |  |
 | 6 | 5 | `mr:1106-leonardus` |  | FR | dies_natalis |  |  |
@@ -164,7 +164,7 @@
 | 13 | 3 | `mr:1113-brictius` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:1113-arcadius-et-socii` |  | TN | commemoratio |  |  |
 | 13 | 5 | `mr:1113-leonianus` | * | FR | dies_natalis |  |  |
-| 13 | 6 | `mr:1113-quinctianus` |  | FR | dies_natalis |  |  |
+| 13 | 6 | `mr:1113-quinctianus` |  | FR | dies_natalis | same as `mr:0614-quinctianus` |  |
 | 13 | 7 | `mr:1113-florentius-et-amantius` | * | IT | commemoratio |  |  |
 | 13 | 8 | `mr:1113-dalmatius` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:1113-himerius` | * | CH | dies_natalis |  |  |
@@ -209,7 +209,7 @@
 | 15 | 17 | `mr:1115-iosephus-mkasa-balikuddembe` |  | UG | dies_natalis |  |  |
 | 15 | 18 | `mr:1115-maria-a-passione` | * | IT | dies_natalis |  |  |
 | 15 | 19 | `mr:1115-raphael-kalinowski` |  | PL | dies_natalis |  |  |
-| 16 | (1) | `mr:1116-margarita` |  | HU | dies_natalis |  |  |
+| 16 | (1) | `mr:1116-margarita` |  | HU | dies_natalis | same as `mr:0610-margarita` |  |
 | 16 | (2) | `mr:1116-gertrudis-magna` |  | DE | celebratio | same as `mr:1115-gertrudis-magna` |  |
 | 16 | 3 | `mr:1116-augustinus-et-felicitas` |  | IT | dies_natalis |  |  |
 | 16 | 4 | `mr:1116-leocadius-et-lusor` | * | FR | commemoratio |  |  |
@@ -219,7 +219,7 @@
 | 16 | 8 | `mr:1116-edmundus-rich` |  | FR | dies_natalis |  |  |
 | 16 | 9 | `mr:1116-agnes` | * | IT | dies_natalis |  |  |
 | 16 | 10 | `mr:1116-eduardus-osbaldeston` | * | GB | dies_natalis |  |  |
-| 17 | (1) | `mr:1117-elisabeth-hungaria` |  | HU | dies_natalis |  |  |
+| 17 | (1) | `mr:1117-elisabeth-hungaria` |  | HU | dies_natalis | same as `mr:1119-elisabeth` |  |
 | 17 | 2 | `mr:1117-gregorius-neocaesareae` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:1117-alphaeus-et-zachaeus` |  | PS | dies_natalis |  |  |
 | 17 | 4 | `mr:1117-acisclus` |  | ES | dies_natalis |  |  |
@@ -269,7 +269,7 @@
 | 20 | 8 | `mr:1120-hippolytus` | * | FR | dies_natalis |  |  |
 | 20 | 9 | `mr:1120-gregorius-decapolitanus` |  | TR | dies_natalis |  |  |
 | 20 | 10 | `mr:1120-edmundus` |  | GB | dies_natalis |  |  |
-| 20 | 11 | `mr:1120-bernwardus` |  | DE | dies_natalis |  |  |
+| 20 | 11 | `mr:1120-bernwardus` |  | DE | dies_natalis | same as `mr:1026-bernwardus` |  |
 | 20 | 12 | `mr:1120-cyprianus` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:1120-franciscus-xaverius-can` |  | VN | dies_natalis |  |  |
 | 20 | 14 | `mr:1120-maria-fortunata-vitus` | * | IT | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | IL | celebratio |  |  |
 | 21 | 2 | `mr:1121-rufus` |  |  | commemoratio |  |  |
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR | dies_natalis |  |  |
-| 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis |  |  |
+| 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` |  |
 | 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis |  |  |
 | 21 | 7 | `mr:1121-maria-a-iesu-bono-pastore` | * | IT | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 24 | 6 | `mr:1124-colmanus` | * | IE | dies_natalis |  |  |
 | 24 | 7 | `mr:1124-portianus` |  | FR | dies_natalis |  |  |
 | 24 | 8 | `mr:1124-flora-et-maria` |  | ES | dies_natalis |  |  |
-| 24 | 9 | `mr:1124-albertus-lovaniensis` |  | FR | dies_natalis |  |  |
+| 24 | 9 | `mr:1124-albertus-lovaniensis` |  | FR | dies_natalis | same as `mr:1121-albertus` |  |
 | 24 | 10 | `mr:1124-balsamus` | * | IT | dies_natalis |  |  |
 | 24 | 11 | `mr:1124-petrus-dumoulin-borie-et-socii` |  | VN | dies_natalis |  |  |
 | 24 | 12 | `mr:1124-maria-anna-sala` | * | IT | dies_natalis |  |  |
@@ -322,7 +322,7 @@
 | 25 | (1) | `mr:1125-catharina` |  | EG | dies_natalis |  |  |
 | 25 | 2 | `mr:1125-mercurius` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:1125-moyses` |  | IT | commemoratio |  |  |
-| 25 | 4 | `mr:1125-petrus` |  | EG | dies_natalis |  |  |
+| 25 | 4 | `mr:1125-petrus` |  | EG | dies_natalis | same as `mr:1126-petrus` |  |
 | 25 | 5 | `mr:1125-marculus` |  | DZ | dies_natalis |  |  |
 | 25 | 6 | `mr:1125-maurinus` | * | FR | dies_natalis |  |  |
 | 25 | 7 | `mr:1125-beatrix-de-ornacieux` | * | FR | dies_natalis |  |  |

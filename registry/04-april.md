@@ -94,7 +94,7 @@
 | 8 | 2 | `mr:0408-herodion-et-socii` |  | PS | commemoratio |  |  |
 | 8 | 3 | `mr:0408-dionysius-corinthi` |  | GR | dies_natalis |  |  |
 | 8 | 4 | `mr:0408-timotheus-et-socii` |  | TR | dies_natalis | same as `mr:0406-timotheus-et-diogenes` |  |
-| 8 | 5 | `mr:0408-dionysius-alexandriae` |  | EG | dies_natalis |  |  |
+| 8 | 5 | `mr:0408-dionysius-alexandriae` |  | EG | dies_natalis | same as `mr:1117-dionysius` |  |
 | 8 | 6 | `mr:0408-amantius` |  | IT | dies_natalis |  |  |
 | 8 | 7 | `mr:0408-clemens-de-auximo` | * | IT | dies_natalis |  |  |
 | 8 | 8 | `mr:0408-iulianus-a-sancto-augustino` | * | ES | dies_natalis |  |  |
@@ -324,7 +324,7 @@
 | 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  |  |
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |  |
-| 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio |  |  |
+| 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio | same as `mr:0218-simeon` |  |
 | 27 | 2 | `mr:0427-pollio` |  | HR | dies_natalis |  |  |
 | 27 | 3 | `mr:0427-theodorus` |  | EG | dies_natalis |  |  |
 | 27 | 4 | `mr:0427-liberalis` | * | IT | dies_natalis |  |  |

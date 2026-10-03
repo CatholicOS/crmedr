@@ -130,7 +130,7 @@
 | 12 | 1 | `mr:0312-maximilianus` |  | DZ | dies_natalis |  |  |
 | 12 | 2 | `mr:0312-mygdo-et-socii` |  | TR | commemoratio |  |  |
 | 12 | 3 | `mr:0312-petrus` |  | TR | dies_natalis |  |  |
-| 12 | 4 | `mr:0312-innocentius-i` |  | IT | depositio |  |  |
+| 12 | 4 | `mr:0312-innocentius-i` |  | IT | depositio | same as `mr:0728-innocentius-i` |  |
 | 12 | 5 | `mr:0312-paulus-aurelianus` |  | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:0312-gregorius-i-magnus` |  | IT | depositio |  |  |
 | 12 | 7 | `mr:0312-theophanes-chronographus` |  | TR | depositio |  |  |
@@ -145,7 +145,7 @@
 | 13 | 2 | `mr:0313-sabinus` |  | EG | dies_natalis |  |  |
 | 13 | 3 | `mr:0313-christina` |  | IR | dies_natalis |  |  |
 | 13 | 4 | `mr:0313-pientius` | * | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0313-leander` |  | ES | dies_natalis |  |  |
+| 13 | 5 | `mr:0313-leander` |  | ES | dies_natalis | same as `mr:0227-leander` |  |
 | 13 | 6 | `mr:0313-eldradus` | * | IT | dies_natalis |  |  |
 | 13 | 7 | `mr:0313-rudericus-et-salomon` |  | ES | dies_natalis |  |  |
 | 13 | 8 | `mr:0313-ansovinus` |  | IT | dies_natalis |  |  |
@@ -261,7 +261,7 @@
 | 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
 | 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus` | * | ES | dies_natalis |  |  |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
-| 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio |  |  |
+| 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio | same as `mr:0325-annuntiatio-beatissimae-virginis-genitricis` |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS | commemoratio |  |  |
 | 25 | 3 | `mr:0325-dula` |  | TR | dies_natalis |  |  |
 | 25 | 4 | `mr:0325-quirinus` |  | IT | dies_natalis |  |  |
@@ -284,7 +284,7 @@
 | 26 | 3 | `mr:0326-montanus-et-maxima` |  | HR | dies_natalis |  |  |
 | 26 | 4 | `mr:0326-eutychius` |  | EG | commemoratio |  |  |
 | 26 | 5 | `mr:0326-petrus` |  | TR | dies_natalis |  |  |
-| 26 | 6 | `mr:0326-bercharius` |  | FR | dies_natalis |  |  |
+| 26 | 6 | `mr:0326-bercharius` |  | FR | dies_natalis | same as `mr:1016-bercharius` |  |
 | 26 | 7 | `mr:0326-barontius-et-desiderius` |  | IT | dies_natalis | same as `mr:0325-barontius-et-desiderius` |  |
 | 26 | 8 | `mr:0326-liudgerus` |  | DE | dies_natalis |  |  |
 | 26 | 9 | `mr:0326-magdalena-catharina-morano` | * | IT | dies_natalis |  |  |

@@ -130,7 +130,7 @@
 | 10 | 2 | `mr:0510-dioscoridis` |  | TR | dies_natalis |  |  |
 | 10 | 3 | `mr:0510-alphius-et-socii` |  | IT | dies_natalis |  |  |
 | 10 | 4 | `mr:0510-gordianus` |  | IT | dies_natalis |  |  |
-| 10 | 5 | `mr:0510-iv-et-v` |  | IT | commemoratio |  |  |
+| 10 | 5 | `mr:0510-iv-et-v` |  | IT | commemoratio | same as `mr:0510-quartus-et-quinctus` |  |
 | 10 | 6 | `mr:0510-comgallus` | * | IE | dies_natalis |  |  |
 | 10 | 7 | `mr:0510-cataldus` |  | IT | dies_natalis |  |  |
 | 10 | 8 | `mr:0510-solongia` | * | FR | dies_natalis |  |  |
@@ -251,7 +251,7 @@
 | 19 | 15 | `mr:0519-maria-bernarda-butler` | * | CO | dies_natalis |  |  |
 | 19 | 16 | `mr:0519-iosephus-czempiel` | * | DE | dies_natalis |  |  |
 | 20 | (1) | `mr:0520-bernardinus-senensis` |  | IT | dies_natalis |  |  |
-| 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR | commemoratio |  |  |
+| 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR | commemoratio | same as `mr:0803-lydia` |  |
 | 20 | 3 | `mr:0520-aurea` |  | IT | dies_natalis |  |  |
 | 20 | 4 | `mr:0520-baudelius` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0520-thalalaeus` |  | TR | dies_natalis |  |  |

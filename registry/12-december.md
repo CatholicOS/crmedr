@@ -64,7 +64,7 @@
 | 6 | 2 | `mr:1206-asella` |  | IT | commemoratio |  |  |
 | 6 | 3 | `mr:1206-martyres-africae` |  | TN | commemoratio |  |  |
 | 6 | 4 | `mr:1206-obitius` | * | IT | dies_natalis |  |  |
-| 6 | 5 | `mr:1206-petrus-pascual` | * | ES | dies_natalis |  |  |
+| 6 | 5 | `mr:1206-petrus-pascual` | * | ES | dies_natalis | same as `mr:1023-petrus-paschasius` |  |
 | 6 | 6 | `mr:1206-iosephus-nguyen-duy-khang` |  | VN | dies_natalis |  |  |
 | 6 | 7 | `mr:1206-aloysia-maria-frias-canizares` | * | ES | dies_natalis |  |  |
 | 7 | (1) | `mr:1207-ambrosius` |  | IT | ordinatio |  |  |
@@ -99,7 +99,7 @@
 | 10 | 1 | `mr:1210-eulalia` |  | ES | dies_natalis |  |  |
 | 10 | 2 | `mr:1210-maurus` |  | IT | dies_natalis |  |  |
 | 10 | 3 | `mr:1210-gemellus` |  | TR | dies_natalis |  |  |
-| 10 | 4 | `mr:1210-gregorius-iii` |  | IT | dies_natalis |  |  |
+| 10 | 4 | `mr:1210-gregorius-iii` |  | IT | dies_natalis | same as `mr:1128-gregorius-iii` |  |
 | 10 | 5 | `mr:1210-lucas-de-insula` | * | IT | dies_natalis |  |  |
 | 10 | 6 | `mr:1210-edmundus-gennings-et-swithinus-wells` |  | GB | dies_natalis |  |  |
 | 10 | 7 | `mr:1210-polydorus-plasden-et-eustatius-white` |  | GB | dies_natalis |  |  |

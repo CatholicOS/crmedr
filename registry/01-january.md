@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0101-maria-dei-genetrix` |  |  | celebratio | same as `mr:1011-maternitas-beatae-mariae-virginis` |  |
+| 1 | (1) | `mr:0101-maria-dei-genetrix` |  |  | celebratio | same as `mr:0101-circumcisio-domini`; same as `mr:1011-maternitas-beatae-mariae-virginis` |  |
 | 1 | 2 | `mr:0101-basilius` |  | TR | depositio |  |  |
 | 1 | 3 | `mr:0101-iustinus` |  | IT | commemoratio |  |  |
 | 1 | 4 | `mr:0101-almachius` |  | IT | dies_natalis |  |  |
@@ -135,7 +135,7 @@
 | 10 | 12 | `mr:0110-benincasa` | * | IT | dies_natalis |  |  |
 | 10 | 13 | `mr:0110-gulielmus` |  | FR | dies_natalis |  |  |
 | 10 | 14 | `mr:0110-gundisalvus` | * | PT | dies_natalis |  |  |
-| 10 | 15 | `mr:0110-gregorius-x` | * | IT | dies_natalis |  |  |
+| 10 | 15 | `mr:0110-gregorius-x` | * | IT | dies_natalis | same as `mr:0216-gregorius-x` |  |
 | 10 | 16 | `mr:0110-aegidius-di-bello` | * | IT | dies_natalis |  |  |
 | 10 | 17 | `mr:0110-anna-ab-angelis` | * | PE | dies_natalis |  |  |
 | 10 | 18 | `mr:0110-francisca-salesia-aviat` |  | IT | dies_natalis |  |  |
@@ -300,7 +300,7 @@
 | 23 | 6 | `mr:0123-maimbodus` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0123-andreas-chong-hwa-gyong` |  | KR | dies_natalis |  |  |
 | 24 | (1) | `mr:0124-franciscus-de-sales` |  | CH | depositio |  |  |
-| 24 | 2 | `mr:0124-felicianus` |  | IT | dies_natalis |  |  |
+| 24 | 2 | `mr:0124-felicianus` |  | IT | dies_natalis | same as `mr:1020-felicianus` |  |
 | 24 | 3 | `mr:0124-sabinianus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0124-babyla` |  | TR | dies_natalis |  |  |
 | 24 | 5 | `mr:0124-exsuperantius` |  | IT | dies_natalis |  |  |

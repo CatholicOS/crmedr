@@ -222,7 +222,7 @@
 | 16 | 7 | `mr:0916-rogellus-et-servusdei` |  | ES | dies_natalis |  |  |
 | 16 | 8 | `mr:0916-ludmilla` | * | CZ | dies_natalis |  |  |
 | 16 | 9 | `mr:0916-editha` |  | GB | dies_natalis |  |  |
-| 16 | 10 | `mr:0916-victor-iii` | * | IT | dies_natalis |  |  |
+| 16 | 10 | `mr:0916-victor-iii` | * | IT | dies_natalis | same as `mr:1016-victor-iii` |  |
 | 16 | 11 | `mr:0916-vitalis` | * | FR | dies_natalis |  |  |
 | 16 | 12 | `mr:0916-martinus-sacerdos` | * | ES | dies_natalis |  |  |
 | 16 | 13 | `mr:0916-ludovicus-aleman` | * | FR | dies_natalis |  |  |
@@ -383,7 +383,7 @@
 | 26 | 16 | `mr:0926-bonaventura-esteve-flors` | * | ES | dies_natalis |  |  |
 | 26 | 17 | `mr:0926-maria-jorda-botella` | * | ES | dies_natalis |  |  |
 | 26 | 18 | `mr:0926-leo-legua-martus` | * | ES | dies_natalis |  |  |
-| 27 | (1) | `mr:0927-vincentius-de-paul` |  | FR | dies_natalis |  |  |
+| 27 | (1) | `mr:0927-vincentius-de-paul` |  | FR | dies_natalis | same as `mr:0719-vincentius-a-paulo` |  |
 | 27 | 2 | `mr:0927-caius` |  | IT | dies_natalis |  |  |
 | 27 | 3 | `mr:0927-florentinus` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0927-hiltrudis` |  | FR | dies_natalis |  |  |

@@ -141,7 +141,7 @@
 | 10 | 7 | `mr:0810-iosephus-toledo-pellicer` | * | ES | dies_natalis |  |  |
 | 10 | 8 | `mr:0810-ioannes-martorell-soria` | * | ES | dies_natalis |  |  |
 | 10 | 9 | `mr:0810-franciscus-drzewiecki-et-eduardus-grzymala` | * | DE | dies_natalis |  |  |
-| 11 | (1) | `mr:0811-clara` |  | IT | dies_natalis |  |  |
+| 11 | (1) | `mr:0811-clara` |  | IT | dies_natalis | same as `mr:0812-clara` |  |
 | 11 | 2 | `mr:0811-alexander-carbonarius` |  | TR | dies_natalis |  |  |
 | 11 | 3 | `mr:0811-tiburtius` |  | IT | dies_natalis |  |  |
 | 11 | 4 | `mr:0811-susanna` |  | IT | commemoratio |  |  |
@@ -174,7 +174,7 @@
 | 12 | 15 | `mr:0812-antonius-perulles-estivill` | * | ES | dies_natalis |  |  |
 | 12 | 16 | `mr:0812-florianus-stepniak-et-iosephus-straszewski` | * | DE | dies_natalis |  |  |
 | 12 | 17 | `mr:0812-carolus-leisner` | * | DE | dies_natalis |  |  |
-| 13 | (1) | `mr:0813-pontianus-et-hippolytus` |  | IT | dies_natalis |  |  |
+| 13 | (1) | `mr:0813-pontianus-et-hippolytus` |  | IT | dies_natalis | same as `mr:1030-pontianus`; same as `mr:1119-pontianus` |  |
 | 13 | 2 | `mr:0813-cassianus` |  | IT | dies_natalis |  |  |
 | 13 | 3 | `mr:0813-antiochus` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:0813-radegundis` |  | FR | dies_natalis |  |  |
@@ -197,7 +197,7 @@
 | 14 | 3 | `mr:0814-marcellus` |  | SY | dies_natalis |  |  |
 | 14 | 4 | `mr:0814-eusebius` |  | IT | dies_natalis |  |  |
 | 14 | 5 | `mr:0814-fachananus` | * | IE | dies_natalis |  |  |
-| 14 | 6 | `mr:0814-arnulphus` |  | BE | dies_natalis |  |  |
+| 14 | 6 | `mr:0814-arnulphus` |  | BE | dies_natalis | same as `mr:0815-arnulphus` |  |
 | 14 | 7 | `mr:0814-sanctus-de-urbino` | * | IT | dies_natalis |  |  |
 | 14 | 8 | `mr:0814-octingenti-martyres-hydrunti` | * | IT | dies_natalis |  |  |
 | 14 | 9 | `mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon` |  | JP | dies_natalis |  |  |
