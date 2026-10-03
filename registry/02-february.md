@@ -256,7 +256,7 @@
 | 21 | 5 | `mr:0221-robertus-southwell` |  | GB | dies_natalis |  |  |
 | 21 | 6 | `mr:0221-natalis-pinot` | * | FR | dies_natalis |  |  |
 | 21 | 7 | `mr:0221-maria-henrica-dominicus` | * | IT | dies_natalis |  |  |
-| 22 | (1) | `mr:0222-cathedra-sancti-petri` |  |  | celebratio |  |  |
+| 22 | (1) | `mr:0222-cathedra-petri-apostoli` |  |  | celebratio |  |  |
 | 22 | 2 | `mr:0222-papias` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0222-paschasius` |  | FR | dies_natalis |  |  |
 | 22 | 4 | `mr:0222-maximianus` |  | IT | dies_natalis |  |  |

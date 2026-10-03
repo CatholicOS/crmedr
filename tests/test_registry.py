@@ -124,7 +124,7 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
     # "et" inside a religious name, a feast title or two titles of one subject, not a
     # second subject.
     NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria-mazzarello",
-                 "mr:1118-dedicatio-basilicarum-petri-et-pauli",
+                 "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
                  "mr:1229-david-rex-et-propheta"}
 
     def test_corrections_present(self):
@@ -161,6 +161,21 @@ class CurrentIdFixes52Test(unittest.TestCase):
             self.assertRegex(la[cid], r"Prophet(a|issa)$")
         # the 1914 deprecated twin of St Romanus merged into the renamed current ID
         self.assertFalse(entries["mr:0809-romanus"].get("deprecated"))
+
+
+class Apostles56Test(unittest.TestCase):
+    """#56: apostles keep -apostolus / -apostoli; feast phrases drop the honorific."""
+
+    def test_apostles_and_feasts(self):
+        root = Path(__file__).resolve().parent.parent
+        la = json.load(open(root / "i18n" / "la.json", encoding="utf-8"))
+        ids = {e["id"] for e in json.load(open(root / "data" / "martyrology_ids.json", encoding="utf-8"))["entries"]}
+        for cid in ("mr:0514-matthias-apostolus", "mr:1028-simon-et-iudas-apostoli",
+                    "mr:0629-petrus-et-paulus-apostoli", "mr:0125-conversio-pauli-apostoli",
+                    "mr:0222-cathedra-petri-apostoli"):
+            self.assertIn(cid, ids)
+            self.assertRegex(la[cid], r"Apostol(us|i)$")
+        self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
 
 
 class PlaceLeadCorrections25Test(unittest.TestCase):

@@ -256,7 +256,7 @@
 | 26 | 6 | `mr:1226-vincentia-maria-lopez-vicuna` |  | ES | dies_natalis |  |  |
 | 26 | 7 | `mr:1226-agnes-phila-et-lucia-khambang` | * | TH | dies_natalis |  |  |
 | 26 | 8 | `mr:1226-secundus-pollo` | * | ME | dies_natalis |  |  |
-| 27 | (1) | `mr:1227-ioannes` |  | PS | dies_natalis |  |  |
+| 27 | (1) | `mr:1227-ioannes-apostolus` |  | PS | dies_natalis |  |  |
 | 27 | 2 | `mr:1227-fabiola` | * | IT | commemoratio |  |  |
 | 27 | 3 | `mr:1227-theodorus` |  | TR | dies_natalis |  |  |
 | 27 | 4 | `mr:1227-alaphridus-parte` | * | ES | dies_natalis |  |  |

@@ -309,7 +309,7 @@
 | 24 | 8 | `mr:0124-maria-poussepin` | * | FR | dies_natalis |  |  |
 | 24 | 9 | `mr:0124-vincentius-lewoniuk-et-socii` | * | PL | dies_natalis |  |  |
 | 24 | 10 | `mr:0124-timotheus-giaccardo` | * | IT | dies_natalis |  |  |
-| 25 | (1) | `mr:0125-conversio-sancti-pauli` |  | SY | celebratio |  |  |
+| 25 | (1) | `mr:0125-conversio-pauli-apostoli` |  | SY | celebratio |  |  |
 | 25 | 2 | `mr:0125-ananias` |  | SY | commemoratio |  |  |
 | 25 | 3 | `mr:0125-arthemas` | * | IT | dies_natalis |  |  |
 | 25 | 4 | `mr:0125-agileus` |  | TN | dies_natalis |  |  |

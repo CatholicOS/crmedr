@@ -94,10 +94,10 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
 - mr:0101-maria-dei-genetrix  (1/1 voce 1)
 - mr:0103-nomen-iesu  (1/3 voce 1)
 - mr:0106-epiphania-domini  (1/6 voce 1)
-- mr:0125-conversio-sancti-pauli  (1/25 voce 1)
+- mr:0125-conversio-pauli-apostoli  (1/25 voce 1)
 - mr:0202-praesentatio-domini  (2/2 voce 1)
 - mr:0217-septem-fundatores-servorum-mariae  (2/17 voce 1)
-- mr:0222-cathedra-sancti-petri  (2/22 voce 1)
+- mr:0222-cathedra-petri-apostoli  (2/22 voce 1)
 - mr:0320-archippus  (3/20 voce 1)
 - mr:0325-annuntiatio-domini  (3/25 voce 1)
 - mr:0325-bonus-latro  (3/25 voce 2)
@@ -120,7 +120,7 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
 - mr:1101-omnes-sancti  (11/1 voce 1)
 - mr:1102-omnium-fidelium-defunctorum  (11/2 voce 1)
 - mr:1109-dedicatio-basilicae-lateranensis  (11/9 voce 1)
-- mr:1118-dedicatio-basilicarum-petri-et-pauli  (11/18 voce 1)
+- mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum  (11/18 voce 1)
 - mr:1121-praesentatio-beatae-mariae-virginis  (11/21 voce 1)
 - mr:1208-conceptio-immaculata-beatae-mariae-virginis  (12/8 voce 1)
 - mr:1224-avi-iesu-christi  (12/24 voce 1)
@@ -902,7 +902,7 @@ repositories (`ID_CORRECTIONS` keeps them on regeneration):
   mr:0809-laurentius → mr:0809-romanus (the slug had taken the cemetery's name, *in
   coemeterio sancti Laurentii*; the eulogy is St Romanus, so the 1914 deprecated
   mr:0809-romanus, the same eulogy, merges into it); mr:0629-petrus-et-paulus-simon →
-  mr:0629-petrus-et-paulus (*Simon* opens the next sentence); mr:1028-fidel →
+  mr:0629-petrus-et-paulus (*Simon* opens the next sentence; -apostoli since #56); mr:1028-fidel →
   mr:1028-fidelis and mr:0424-fidel-de-sigmaringa → mr:0424-fidelis-de-sigmaringa (the
   genitive stem for the nominative).
 - **Prophets** keep the word in the slug, `-propheta` (`-prophetae` for two or more), so that
@@ -912,6 +912,19 @@ repositories (`ID_CORRECTIONS` keeps them on regeneration):
   Agabus of the New Testament, mr:1229-david-rex-et-propheta (*regis et prophetae*) and
   mr:0203-simeon-et-anna-prophetissa (only Anna is called *prophetissa*). The Latin subject
   follows ("Sanctus Amos Propheta"). Deprecated prophet IDs follow the same rule in #51.
+
+**Apostles and feast phrases (applied, October 2026, #56)**: as for the prophets, the
+apostles keep the epithet in the slug, `-apostolus` (`-apostoli` for two), in the nominative:
+the twelve, Matthias, and Paul, whom the Martyrology calls *Apostolus*
+(mr:0514-matthias-apostolus, mr:1028-simon-et-iudas-apostoli,
+mr:0629-petrus-et-paulus-apostoli). A feast phrase keeps the print's epithet in the
+genitive, but, like every other slug, drops the honorific *sancti/sanctae/sanctorum*:
+mr:0125-conversio-pauli-apostoli, mr:0222-cathedra-petri-apostoli,
+mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum. The honorific stays where it is
+part of a name: a church's (mr:0805-dedicatio-basilicae-sanctae-mariae), the Holy Cross
+(mr:0914-exaltatio-sanctae-crucis), All Saints (*omnium sanctorum*). The Latin subject keeps
+the printed form ("Cathedra Sancti Petri Apostoli"). Thirteen current IDs are renamed;
+the deprecated feast and apostle IDs follow in #51.
 
 ## Country-code corrections (September 2026)
 
@@ -962,7 +975,7 @@ that produced it.
 Counts: dies_natalis 4,163, commemoratio 323, depositio 80, celebratio 60,
 dedicatio 6, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
 typology yet. Memorials whose text doesn't say what their date marks keep
-`dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas, mr:0726-ioachim-et-anna,
+`dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas-apostolus, mr:0726-ioachim-et-anna,
 mr:0827-monica), pending committee review.
 
 ## Places (September 2026)

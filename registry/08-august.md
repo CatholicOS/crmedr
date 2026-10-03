@@ -347,7 +347,7 @@
 | 23 | 13 | `mr:0823-ioannes-maria-a-cruce-garcia-mendez` | * | ES | dies_natalis |  |  |
 | 23 | 14 | `mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero` | * | ES | dies_natalis |  |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE | dies_natalis |  |  |
-| 24 | (1) | `mr:0824-bartholomaeus` |  | IL | dies_natalis |  |  |
+| 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis |  |  |
 | 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  |  |
 | 24 | 3 | `mr:0824-audoenus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR | dies_natalis |  |  |

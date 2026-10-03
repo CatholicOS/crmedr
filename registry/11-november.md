@@ -237,7 +237,7 @@
 | 17 | 16 | `mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi` |  | JP | dies_natalis |  |  |
 | 17 | 17 | `mr:1117-lupus-sebastianus-hunot` | * | FR | dies_natalis |  |  |
 | 17 | 18 | `mr:1117-iosaphat-kocylovskyj` | * | UA | dies_natalis |  |  |
-| 18 | (1) | `mr:1118-dedicatio-basilicarum-petri-et-pauli` |  | IT | dedicatio |  |  |
+| 18 | (1) | `mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum` |  | IT | dedicatio |  |  |
 | 18 | 2 | `mr:1118-romanus` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:1118-patroclus` | * | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:1118-maudetus` | * | FR | dies_natalis |  |  |
@@ -378,7 +378,7 @@
 | 29 | 9 | `mr:1129-dionysius-a-nativitate-berthelot-et-redemptus-a-cruce-rodriguez` | * | ID | dies_natalis |  |  |
 | 29 | 10 | `mr:1129-franciscus-antonius-fasani` |  | IT | dies_natalis |  |  |
 | 29 | 11 | `mr:1129-alaphridus-simon-colomina` | * | ES | dies_natalis |  |  |
-| 30 | (1) | `mr:1130-andreas` |  | GR | dies_natalis |  |  |
+| 30 | (1) | `mr:1130-andreas-apostolus` |  | GR | dies_natalis |  |  |
 | 30 | 2 | `mr:1130-mirocles` |  | IT | dies_natalis | same as `mr:1203-mirocles` |  |
 | 30 | 3 | `mr:1130-tugdualus-pabu` | * | FR | dies_natalis |  |  |
 | 30 | 4 | `mr:1130-galganus-guidotti` |  | IT | dies_natalis |  |  |
