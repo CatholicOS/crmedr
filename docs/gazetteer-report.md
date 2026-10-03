@@ -1886,7 +1886,7 @@ For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Ho
 | `mr:0110-ioannes` | Hierosólymæ | IL | PS |
 | `mr:0126-xenophon-et-maria` | Hierosólymæ | IL | PS |
 | `mr:0130-matthias` | Hierosólymæ | IL | PS |
-| `mr:0203-simeon-et-anna` | Hierosólymæ | IL | PS |
+| `mr:0203-simeon-et-anna-prophetissa` | Hierosólymæ | IL | PS |
 | `mr:0311-sophronius` | Hierosólymæ | IL | PS |
 | `mr:0424-maria-cleopha-et-salome` | Hierosólymæ | IL | PS |
 | `mr:0427-simeon` | Hierosólymæ | IL | PS |

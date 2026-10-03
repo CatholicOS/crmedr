@@ -52,7 +52,7 @@
 | 3 | 16 | `mr:0903-andreas-abel-alricy-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | 17 | `mr:0903-ioannes-baptista-bottex-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | 18 | `mr:0903-ioannes-pak-hu-ja-et-socii` |  | KR | dies_natalis |  |  |
-| 4 | 1 | `mr:0904-moyses` |  | EG | commemoratio |  |  |
+| 4 | 1 | `mr:0904-moyses-propheta` |  | EG | commemoratio |  |  |
 | 4 | 2 | `mr:0904-marcellus` |  | FR | dies_natalis |  |  |
 | 4 | 3 | `mr:0904-bonifatius-i` |  | IT | depositio |  |  |
 | 4 | 4 | `mr:0904-caletricus` | * | FR | dies_natalis |  |  |
@@ -67,7 +67,7 @@
 | 4 | 13 | `mr:0904-franciscus-sendra-ivars` | * | ES | dies_natalis |  |  |
 | 4 | 14 | `mr:0904-bernardus-bieda-grau` | * | ES | dies_natalis |  |  |
 | 5 | 1 | `mr:0905-acontus-et-socii` |  | IT | dies_natalis |  |  |
-| 5 | 2 | `mr:0905-v` |  | IT | dies_natalis | same as `mr:0905-quinctius-et-socii` |  |
+| 5 | 2 | `mr:0905-quintus` |  | IT | dies_natalis | same as `mr:0905-quinctius-et-socii` |  |
 | 5 | 3 | `mr:0905-urbanus-et-socii` |  | TR | dies_natalis |  |  |
 | 5 | 4 | `mr:0905-bertinus` |  | FR | dies_natalis |  |  |
 | 5 | 5 | `mr:0905-alpertus` | * | IT | dies_natalis |  |  |
@@ -76,7 +76,7 @@
 | 5 | 8 | `mr:0905-florentius-dumontet-de-cardaillac` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh` |  | VN | dies_natalis |  |  |
 | 5 | 10 | `mr:0905-teresia-gonhxa-bojaxhiu` | * | IN | dies_natalis |  |  |
-| 6 | 1 | `mr:0906-zacharias` |  | IL | commemoratio |  |  |
+| 6 | 1 | `mr:0906-zacharias-propheta` |  | IL | commemoratio |  |  |
 | 6 | 2 | `mr:0906-onesiphorus` |  | TR | commemoratio |  |  |
 | 6 | 3 | `mr:0906-donatianus-et-socii` |  | TN | commemoratio |  |  |
 | 6 | 4 | `mr:0906-eleutherius` |  | IT | dies_natalis |  |  |
@@ -291,7 +291,7 @@
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR | dies_natalis |  |  |
 | 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  |  |
 | 21 | (1) | `mr:0921-matthaeus` |  | PS | dies_natalis |  |  |
-| 21 | 2 | `mr:0921-iona` |  | PS | commemoratio |  |  |
+| 21 | 2 | `mr:0921-ionas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:0921-quadratus` |  | GR | commemoratio |  |  |
 | 21 | 4 | `mr:0921-pamphilus` |  | IT | dies_natalis |  |  |
 | 21 | 5 | `mr:0921-alexander` |  | IT | dies_natalis |  |  |

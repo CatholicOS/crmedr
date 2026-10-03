@@ -280,7 +280,7 @@
 | 19 | 12 | `mr:0719-elisabeth-qin-bianzhi-et-simon-qin-chunfu` |  | CN | dies_natalis |  |  |
 | 19 | 13 | `mr:0719-achilles-puchala-et-hermannus-stepien` | * | PL | dies_natalis |  |  |
 | 20 | (1) | `mr:0720-apollinaris` |  | IT | celebratio |  |  |
-| 20 | 2 | `mr:0720-elias-thesbita` |  | IL | commemoratio |  |  |
+| 20 | 2 | `mr:0720-elias-thesbita-propheta` |  | IL | commemoratio |  |  |
 | 20 | 3 | `mr:0720-ioseph` |  | PS | commemoratio |  |  |
 | 20 | 4 | `mr:0720-marina` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0720-frumentius` |  | ET | dies_natalis | same as `mr:1027-frumentius` |  |
@@ -320,7 +320,7 @@
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
 | 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis |  |  |
-| 23 | 2 | `mr:0723-ezechiel` |  | IL | commemoratio |  |  |
+| 23 | 2 | `mr:0723-ezechiel-propheta` |  | IL | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  |  |
 | 23 | 5 | `mr:0723-ioannes-cassianus` | * | FR | dies_natalis |  |  |

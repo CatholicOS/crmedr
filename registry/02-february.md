@@ -38,7 +38,7 @@
 | 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT | dies_natalis |  |  |
 | 3 | (1) | `mr:0203-blasius` |  | TR | dies_natalis |  |  |
 | 3 | (2) | `mr:0203-ansgarius` |  | DE | dies_natalis |  |  |
-| 3 | 3 | `mr:0203-simeon-et-anna` |  | IL | commemoratio |  |  |
+| 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio |  |  |
 | 3 | 4 | `mr:0203-celerinus` |  | TN | dies_natalis |  |  |
 | 3 | 5 | `mr:0203-leonius` | * | FR | dies_natalis |  |  |
 | 3 | 6 | `mr:0203-teridius-et-remedius` |  | FR | dies_natalis |  |  |

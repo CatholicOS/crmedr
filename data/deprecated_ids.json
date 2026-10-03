@@ -7973,7 +7973,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "PS",
   "same_eulogy": [
-   "mr:1019-ioel"
+   "mr:1019-ioel-propheta"
   ]
  },
  {
@@ -9094,15 +9094,6 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR"
- },
- {
-  "id": "mr:0809-romanus",
-  "month": 8,
-  "day": 9,
-  "entry": 2,
-  "deprecated": true,
-  "attested_in": "martyrologium_romanum_1914_en_unofficial",
-  "country": "IT"
  },
  {
   "id": "mr:0809-ioannes-baptista-maria-vianney",
@@ -10514,9 +10505,9 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0905-v"
+   "mr:0905-quintus"
   ],
-  "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-v, see #52)."
+  "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-quintus, see #52)."
  },
  {
   "id": "mr:0906-faustus-et-macarius",

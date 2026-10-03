@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:1201-nahum` |  | PS | commemoratio |  |  |
+| 1 | 1 | `mr:1201-nahum-propheta` |  | PS | commemoratio |  |  |
 | 1 | 2 | `mr:1201-castritianus` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:1201-florentia` | * | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:1201-leontius` | * | FR | dies_natalis |  |  |
@@ -18,7 +18,7 @@
 | 1 | 12 | `mr:1201-casimirus-sykulski` | * | PL | dies_natalis |  |  |
 | 1 | 13 | `mr:1201-liduina-meneguzzi` | * | ET | dies_natalis |  |  |
 | 1 | 14 | `mr:1201-clementina-nengapeta-anuarite` | * | CG | dies_natalis |  |  |
-| 2 | 1 | `mr:1202-habacuc` |  | PS | commemoratio |  |  |
+| 2 | 1 | `mr:1202-habacuc-propheta` |  | PS | commemoratio |  |  |
 | 2 | 2 | `mr:1202-bibiana` |  | IT | dies_natalis |  |  |
 | 2 | 3 | `mr:1202-pimenius` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:1202-chromatius` |  | IT | dies_natalis |  |  |
@@ -28,7 +28,7 @@
 | 2 | 8 | `mr:1202-raphael-chylinski` | * | PL | dies_natalis |  |  |
 | 2 | 9 | `mr:1202-ivanus-slezyuk` | * | UA | dies_natalis |  |  |
 | 3 | (1) | `mr:1203-franciscus-xavier` |  | ES | dies_natalis |  |  |
-| 3 | 2 | `mr:1203-sophonia` |  | PS | commemoratio |  |  |
+| 3 | 2 | `mr:1203-sophonias-propheta` |  | PS | commemoratio |  |  |
 | 3 | 3 | `mr:1203-cassianus` |  | MA | dies_natalis |  |  |
 | 3 | 4 | `mr:1203-birinus` |  | GB | depositio |  |  |
 | 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
@@ -163,7 +163,7 @@
 | 15 | 5 | `mr:1215-virginia-centurione-bracelli` |  | IT | dies_natalis |  |  |
 | 15 | 6 | `mr:1215-maria-crucifixa-de-rosa` |  | IT | dies_natalis |  |  |
 | 15 | 7 | `mr:1215-carolus-steeb` | * | IT | dies_natalis |  |  |
-| 16 | 1 | `mr:1216-aggaeus` |  | PS | commemoratio |  |  |
+| 16 | 1 | `mr:1216-aggaeus-propheta` |  | PS | commemoratio |  |  |
 | 16 | 2 | `mr:1216-plurimae-virgines-africa` |  | TN | commemoratio |  |  |
 | 16 | 3 | `mr:1216-beanus` |  | IE | dies_natalis |  |  |
 | 16 | 4 | `mr:1216-everardus` | * | FR | dies_natalis |  |  |
@@ -186,7 +186,7 @@
 | 17 | 9 | `mr:1217-iosephus-manyanet-y-vives` |  | ES | dies_natalis |  |  |
 | 17 | 10 | `mr:1217-mathildis-a-sacro-corde-tellez-robles` | * | ES | dies_natalis |  |  |
 | 17 | 11 | `mr:1217-hyacinthus-cormier` | * | IT | dies_natalis |  |  |
-| 18 | 1 | `mr:1218-malachia` |  | IQ | commemoratio |  |  |
+| 18 | 1 | `mr:1218-malachias-propheta` |  | IQ | commemoratio |  |  |
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
 | 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:1218-flannanus` | * | IE | dies_natalis |  |  |
@@ -207,7 +207,7 @@
 | 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:1220-michael-piaszczynski` | * | DE | dies_natalis |  |  |
 | 21 | (1) | `mr:1221-petrus-canisius` |  | DE | dies_natalis |  |  |
-| 21 | 2 | `mr:1221-michaea` |  | PS | commemoratio |  |  |
+| 21 | 2 | `mr:1221-michaeas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:1221-themistocles` |  | TR | dies_natalis |  |  |
 | 21 | 4 | `mr:1221-dominicus-spadafora` | * | IT | dies_natalis |  |  |
 | 21 | 5 | `mr:1221-andreas-dung-lac-et-petrus-truong-van-thi` |  | VN | dies_natalis |  |  |
@@ -270,7 +270,7 @@
 | 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT | dies_natalis |  |  |
 | 28 | 8 | `mr:1228-gregorius-khomysyn` | * | UA | dies_natalis |  |  |
 | 29 | (1) | `mr:1229-thomas-becket` |  | GB | dies_natalis |  |  |
-| 29 | 2 | `mr:1229-david` |  | IL | commemoratio |  |  |
+| 29 | 2 | `mr:1229-david-rex-et-propheta` |  | IL | commemoratio |  |  |
 | 29 | 3 | `mr:1229-trophimus` |  | FR | dies_natalis |  |  |
 | 29 | 4 | `mr:1229-libosus` |  | TN | dies_natalis |  |  |
 | 29 | 5 | `mr:1229-martinianus` |  | IT | dies_natalis | same as `mr:0102-martinianus` |  |

@@ -435,6 +435,37 @@ ID_CORRECTIONS = {
     # February 20 (Constantinople and Persia, deprecated IDs of the 1749 edition) by
     # his see. Kept in sync with CatholicOS/martyrology-texts.
     "mr:0220-eleutherius": "mr:0220-eleutherius-tornaci",
+
+    # #52: slugs that misnamed the 2004 eulogy (a truncated name, the cemetery's name,
+    # the next sentence's word, a genitive stem), and the prophets, which keep
+    # -propheta (-prophetissa, -rex-et-propheta) in the nominative.
+    "mr:0905-v": "mr:0905-quintus",
+    "mr:0809-laurentius": "mr:0809-romanus",
+    "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus",
+    "mr:1028-fidel": "mr:1028-fidelis",
+    "mr:0424-fidel-de-sigmaringa": "mr:0424-fidelis-de-sigmaringa",
+    "mr:0408-agabus": "mr:0408-agabus-propheta",
+    "mr:0501-ieremias": "mr:0501-ieremias-propheta",
+    "mr:0509-isaias": "mr:0509-isaias-propheta",
+    "mr:0614-elisaeus": "mr:0614-elisaeus-propheta",
+    "mr:0615-amos": "mr:0615-amos-propheta",
+    "mr:0720-elias-thesbita": "mr:0720-elias-thesbita-propheta",
+    "mr:0723-ezechiel": "mr:0723-ezechiel-propheta",
+    "mr:0820-samuel": "mr:0820-samuel-propheta",
+    "mr:0904-moyses": "mr:0904-moyses-propheta",
+    "mr:0906-zacharias": "mr:0906-zacharias-propheta",
+    "mr:0921-iona": "mr:0921-ionas-propheta",
+    "mr:1017-osea": "mr:1017-osee-propheta",
+    "mr:1019-ioel": "mr:1019-ioel-propheta",
+    "mr:1119-abdia": "mr:1119-abdias-propheta",
+    "mr:1201-nahum": "mr:1201-nahum-propheta",
+    "mr:1202-habacuc": "mr:1202-habacuc-propheta",
+    "mr:1203-sophonia": "mr:1203-sophonias-propheta",
+    "mr:1216-aggaeus": "mr:1216-aggaeus-propheta",
+    "mr:1218-malachia": "mr:1218-malachias-propheta",
+    "mr:1221-michaea": "mr:1221-michaeas-propheta",
+    "mr:1229-david": "mr:1229-david-rex-et-propheta",
+    "mr:0203-simeon-et-anna": "mr:0203-simeon-et-anna-prophetissa",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
