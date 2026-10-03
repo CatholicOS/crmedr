@@ -112,7 +112,7 @@
 | 8 | (1) | `mr:0208-hieronymus-emiliani` |  | IT | dies_natalis |  |  |
 | 8 | (2) | `mr:0208-iosephina-bakhita` |  | SD | dies_natalis |  |  |
 | 8 | 3 | `mr:0208-cointha` |  | EG | commemoratio |  |  |
-| 8 | 4 | `mr:0208-iuventius` |  | IT | dies_natalis |  |  |
+| 8 | 4 | `mr:0208-iuventius` |  | IT | dies_natalis | same as `mr:0912-iuventius` |  |
 | 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR | commemoratio |  |  |
 | 8 | 6 | `mr:0208-iacutus` | * | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:0208-honoratus` |  | IT | depositio |  |  |
@@ -151,7 +151,7 @@
 | 11 | 5 | `mr:0211-secundinus` | * | IT | dies_natalis |  |  |
 | 11 | 6 | `mr:0211-severinus` |  | FR | dies_natalis |  |  |
 | 11 | 7 | `mr:0211-gregorius-ii` |  | IT | depositio | same as `mr:0213-gregorius-ii` |  |
-| 11 | 8 | `mr:0211-paschalis-i` |  | IT | depositio |  |  |
+| 11 | 8 | `mr:0211-paschalis-i` |  | IT | depositio | same as `mr:0514-paschalis-i` |  |
 | 11 | 9 | `mr:0211-ardanus` | * | FR | dies_natalis |  |  |
 | 11 | 10 | `mr:0211-petrus-maldonado` |  | MX | dies_natalis |  |  |
 | 11 | 11 | `mr:0211-tobias-borras-romeu` | * | ES | dies_natalis |  |  |
@@ -176,7 +176,7 @@
 | 13 | 12 | `mr:0213-eustochius-bellinus` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
 | 13 | 14 | `mr:0213-paulus-le-van-loc` |  | VN | dies_natalis |  |  |
-| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis |  |  |
+| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0707-cyrillus-et-methodius` |  |
 | 14 | 2 | `mr:0214-valentinus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0214-vitalis` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0214-zeno` |  | IT | dies_natalis |  |  |
@@ -204,7 +204,7 @@
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  |  |
-| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis |  | On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
+| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |

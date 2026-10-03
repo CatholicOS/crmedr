@@ -166,7 +166,7 @@
 | 12 | 12 | `mr:0712-clemens-ignatius-delgado-cebrian` |  | VN | dies_natalis |  |  |
 | 12 | 13 | `mr:0712-agnes-le-thi-thanh` |  | VN | dies_natalis |  |  |
 | 12 | 14 | `mr:0712-petrus-khanh` |  | VN | dies_natalis |  |  |
-| 13 | (1) | `mr:0713-henricus` |  | DE | dies_natalis |  |  |
+| 13 | (1) | `mr:0713-henricus` |  | DE | dies_natalis | same as `mr:0715-henricus` |  |
 | 13 | 2 | `mr:0713-esdra` |  | IQ | commemoratio |  |  |
 | 13 | 3 | `mr:0713-sila` |  |  | commemoratio |  |  |
 | 13 | 4 | `mr:0713-serapion` |  | EG | dies_natalis |  |  |
@@ -374,7 +374,7 @@
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES | dies_natalis |  |  |
 | 25 | 19 | `mr:0725-deogratias-palacios-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 20 | `mr:0725-maria-teresia-kowalska` | * | PL | dies_natalis |  |  |
-| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis |  |  |
+| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis | same as `mr:0320-ioachim`; same as `mr:0816-ioachim` |  |
 | 26 | 2 | `mr:0726-erastus` |  | GR | commemoratio |  |  |
 | 26 | 3 | `mr:0726-simeon` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0726-austindus` | * | FR | dies_natalis |  |  |
@@ -395,13 +395,13 @@
 | 27 | 1 | `mr:0727-septem-dormientes-ephesi` |  | TR | commemoratio |  |  |
 | 27 | 2 | `mr:0727-pantaleon` |  | TR | dies_natalis |  |  |
 | 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  |  |
-| 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis |  |  |
+| 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis | same as `mr:0406-caelestinus-i` |  |
 | 27 | 5 | `mr:0727-simeon` |  | TR | dies_natalis | same as `mr:0105-simeon` |  |
 | 27 | 6 | `mr:0727-ursus` | * | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0727-ecclesius` | * | IT | dies_natalis |  |  |
 | 27 | 8 | `mr:0727-galactorius` | * | FR | dies_natalis |  |  |
 | 27 | 9 | `mr:0727-anthusa` |  | TR | dies_natalis |  |  |
-| 27 | 10 | `mr:0727-georgius-et-socii` |  | ES | dies_natalis |  |  |
+| 27 | 10 | `mr:0727-georgius-et-socii` |  | ES | dies_natalis | same as `mr:1020-georgius-et-aurelius` |  |
 | 27 | 11 | `mr:0727-clemens` | * | MK | dies_natalis |  |  |
 | 27 | 12 | `mr:0727-bertholdus` | * | AT | dies_natalis |  |  |
 | 27 | 13 | `mr:0727-raymundus-palmerio` | * | IT | dies_natalis |  |  |
@@ -436,7 +436,7 @@
 | 29 | 6 | `mr:0729-lupus` |  | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:0729-prosperus` |  | FR | dies_natalis |  |  |
 | 29 | 8 | `mr:0729-olavus` |  | NO | dies_natalis |  |  |
-| 29 | 9 | `mr:0729-urbanus-ii` | * | IT | dies_natalis |  |  |
+| 29 | 9 | `mr:0729-urbanus-ii` | * | IT | dies_natalis | same as `mr:0819-urbanus-ii` |  |
 | 29 | 10 | `mr:0729-gulielmus-pinchon` |  | FR | dies_natalis |  |  |
 | 29 | 11 | `mr:0729-ludovicus-bertran-et-socii` | * | JP | dies_natalis |  |  |
 | 29 | 12 | `mr:0729-carolus-nicolaus-antonius-ancel` | * | FR | dies_natalis |  |  |
@@ -465,7 +465,7 @@
 | 31 | 4 | `mr:0731-fabius` |  | DZ | dies_natalis |  |  |
 | 31 | 5 | `mr:0731-tertullinus` |  | IT | dies_natalis |  |  |
 | 31 | 6 | `mr:0731-germanus` |  | IT | dies_natalis |  |  |
-| 31 | 7 | `mr:0731-petrus-chrysologus` |  | IT | dies_natalis |  |  |
+| 31 | 7 | `mr:0731-petrus-chrysologus` |  | IT | dies_natalis | same as `mr:1202-petrus-chrysologus` |  |
 | 31 | 8 | `mr:0731-helena` |  | SE | dies_natalis |  |  |
 | 31 | 9 | `mr:0731-ioannes-columbini` | * | IT | dies_natalis |  |  |
 | 31 | 10 | `mr:0731-everardus-hanse` | * | GB | dies_natalis |  |  |

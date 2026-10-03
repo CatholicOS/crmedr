@@ -44,7 +44,7 @@
 | 3 | 6 | `mr:1103-guenael` | * | FR | dies_natalis |  |  |
 | 3 | 7 | `mr:1103-silvia` |  | IT | commemoratio |  |  |
 | 3 | 8 | `mr:1103-pirminus` |  | DE | depositio |  |  |
-| 3 | 9 | `mr:1103-ioannicius` |  | TR | dies_natalis |  |  |
+| 3 | 9 | `mr:1103-ioannicius` |  | TR | dies_natalis | same as `mr:1104-ioannicius` |  |
 | 3 | 10 | `mr:1103-odrada` | * | NL | depositio | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 3 | 11 | `mr:1103-ermengaudius` |  | ES | dies_natalis |  |  |
 | 3 | 12 | `mr:1103-berardus` | * | IT | dies_natalis |  |  |
@@ -131,7 +131,7 @@
 | 10 | 2 | `mr:1110-demetrianus` |  | IR | dies_natalis |  |  |
 | 10 | 3 | `mr:1110-orestes` |  | TR | dies_natalis | same as `mr:1109-orestes` |  |
 | 10 | 4 | `mr:1110-probus` |  | IT | dies_natalis |  |  |
-| 10 | 5 | `mr:1110-narses-et-iosephus` |  | IR | dies_natalis |  |  |
+| 10 | 5 | `mr:1110-narses-et-iosephus` |  | IR | dies_natalis | same as `mr:1120-nersa-et-socii` |  |
 | 10 | 6 | `mr:1110-iustus` |  | GB | dies_natalis |  |  |
 | 10 | 7 | `mr:1110-baudolinus` | * | IT | dies_natalis |  |  |
 | 10 | 8 | `mr:1110-andreas-avellino` |  | IT | dies_natalis |  |  |
@@ -140,14 +140,14 @@
 | 11 | 2 | `mr:1111-menna-mareotidem` |  | EG | dies_natalis |  |  |
 | 11 | 3 | `mr:1111-veranus` |  | FR | commemoratio |  |  |
 | 11 | 4 | `mr:1111-menna-samnii` |  | IT | commemoratio |  |  |
-| 11 | 5 | `mr:1111-ioannes-eleemosynarius` |  | CY | dies_natalis |  |  |
+| 11 | 5 | `mr:1111-ioannes-eleemosynarius` |  | CY | dies_natalis | same as `mr:0123-ioannes-eleemosynarius` |  |
 | 11 | 6 | `mr:1111-bertuinus` | * | BE | dies_natalis |  |  |
 | 11 | 7 | `mr:1111-theodorus-studita` |  | TR | dies_natalis | same as `mr:1112-theodorus-studita` |  |
 | 11 | 8 | `mr:1111-bartholomaeus` |  | IT | dies_natalis |  |  |
 | 11 | 9 | `mr:1111-marina-de-omura` |  | JP | dies_natalis |  |  |
 | 11 | 10 | `mr:1111-alicia-kotowska` | * | PL | dies_natalis |  |  |
 | 11 | 11 | `mr:1111-vincentius-eugenius-bossilkov` | * | BG | dies_natalis |  |  |
-| 12 | (1) | `mr:1112-iosaphat-kuncewicz` |  | BY | dies_natalis |  |  |
+| 12 | (1) | `mr:1112-iosaphat-kuncewicz` |  | BY | dies_natalis | same as `mr:1114-iosaphat` |  |
 | 12 | 2 | `mr:1112-nilus` |  | TR | dies_natalis |  |  |
 | 12 | 3 | `mr:1112-macarius` | * | GB | dies_natalis |  |  |
 | 12 | 4 | `mr:1112-hesychius` | * | FR | dies_natalis |  |  |
@@ -237,7 +237,7 @@
 | 17 | 16 | `mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi` |  | JP | dies_natalis |  |  |
 | 17 | 17 | `mr:1117-lupus-sebastianus-hunot` | * | FR | dies_natalis |  |  |
 | 17 | 18 | `mr:1117-iosaphat-kocylovskyj` | * | UA | dies_natalis |  |  |
-| 18 | (1) | `mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum` |  | IT | dedicatio |  |  |
+| 18 | (1) | `mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum` |  | IT | dedicatio | same as `mr:1210-dedicatio-basilicae-sancti-pauli-apostoli` |  |
 | 18 | 2 | `mr:1118-romanus` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:1118-patroclus` | * | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:1118-maudetus` | * | FR | dies_natalis |  |  |
@@ -259,7 +259,7 @@
 | 19 | 8 | `mr:1119-mechtildis` | * | DE | dies_natalis |  |  |
 | 19 | 9 | `mr:1119-iacobus-benfatti` | * | IT | dies_natalis |  |  |
 | 19 | 10 | `mr:1119-elisaeus-garcia-et-alexander-planas-sauri` | * | ES | dies_natalis |  |  |
-| 20 | 1 | `mr:1120-basilius` |  | TR | dies_natalis | same as `mr:1127-basilius` |  |
+| 20 | 1 | `mr:1120-basilius` |  | TR | dies_natalis | same as `mr:1127-basileus-et-socii` |  |
 | 20 | 2 | `mr:1120-crispinus` |  | ES | dies_natalis | same as `mr:1119-crispinus` |  |
 | 20 | 3 | `mr:1120-dasius` |  | BG | dies_natalis |  |  |
 | 20 | 4 | `mr:1120-octavius-et-socii` |  | IT | dies_natalis |  |  |
@@ -358,7 +358,7 @@
 | 27 | 13 | `mr:1127-bernardinus-de-fossa-amici` | * | IT | dies_natalis |  |  |
 | 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  |  |
 | 27 | 15 | `mr:1127-bronislaus-kostowski` | * | DE | dies_natalis |  |  |
-| 28 | 1 | `mr:1128-irenarchus` |  | TR | dies_natalis |  |  |
+| 28 | 1 | `mr:1128-irenarchus` |  | TR | dies_natalis | same as `mr:1127-irenarchus-et-socii` |  |
 | 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitanus` |  | TN | commemoratio |  |  |
 | 28 | 3 | `mr:1128-stephanus` |  | TR | dies_natalis |  |  |
 | 28 | 4 | `mr:1128-theodora` | * | IT | dies_natalis |  |  |

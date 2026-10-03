@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0601-iustinus` |  | IT | dies_natalis |  |  |
+| 1 | (1) | `mr:0601-iustinus` |  | IT | dies_natalis | same as `mr:0413-iustinus`; same as `mr:0414-iustinus` |  |
 | 1 | 2 | `mr:0601-chariton-et-socii` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:0601-ammon-et-socii` |  | EG | dies_natalis | same as `mr:1220-ammon-et-socii` |  |
 | 1 | 4 | `mr:0601-ischyrion-et-socii` |  | EG | dies_natalis |  |  |
@@ -138,7 +138,7 @@
 | 11 | 6 | `mr:0611-parisius` |  | IT | dies_natalis |  |  |
 | 11 | 7 | `mr:0611-iolenta` | * | PL | dies_natalis |  |  |
 | 11 | 8 | `mr:0611-stephanus-bandelli` | * | IT | dies_natalis |  |  |
-| 11 | 9 | `mr:0611-ioannes-a-sancto-facundo-gonzalez-de-castrillo` |  | ES | dies_natalis |  |  |
+| 11 | 9 | `mr:0611-ioannes-a-sancto-facundo-gonzalez-de-castrillo` |  | ES | dies_natalis | same as `mr:0612-ioannes-a-sancto-facundo` |  |
 | 11 | 10 | `mr:0611-rosa-francisca-maria-a-doloribus-molas-vallve` |  | ES | dies_natalis |  |  |
 | 11 | 11 | `mr:0611-paula-frassinetti` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0611-maria-schinina` | * | IT | dies_natalis |  |  |

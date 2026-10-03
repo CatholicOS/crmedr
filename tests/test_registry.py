@@ -178,6 +178,24 @@ class Apostles56Test(unittest.TestCase):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
 
 
+class RegistryIntegrityTest(unittest.TestCase):
+    """Every ID once, the header counts right, and the i18n key sets equal to the registry."""
+
+    def test_unique_ids_counts_and_i18n(self):
+        root = Path(__file__).resolve().parent.parent
+        reg = json.load(open(root / "data" / "martyrology_ids.json", encoding="utf-8"))
+        ids = [e["id"] for e in reg["entries"]]
+        self.assertEqual(len(ids), len(set(ids)))
+        dep = [e["id"] for e in json.load(open(root / "data" / "deprecated_ids.json", encoding="utf-8"))]
+        self.assertEqual(len(dep), len(set(dep)))
+        self.assertEqual(reg["entry_count"], len(ids))
+        self.assertEqual(reg["current_count"], sum(1 for e in reg["entries"] if not e.get("deprecated")))
+        self.assertEqual(reg["deprecated_count"], len(dep))
+        for lang in ("la", "it", "en"):
+            keys = json.load(open(root / "i18n" / f"{lang}.json", encoding="utf-8"))
+            self.assertEqual(set(keys), set(ids), lang)
+
+
 class PlaceLeadCorrections25Test(unittest.TestCase):
     """#25: Leonard's deprecated ID became current; three deprecated IDs were coined."""
 
@@ -194,8 +212,10 @@ class DeprecatedSameEulogy45Test(unittest.TestCase):
     """#45: a deprecated ID that is the same eulogy as a current ID is removed."""
 
     # Kept deprecated: a separate eulogy, and same-day homonyms (see the report).
-    KEPT = {"mr:0827-rufus-et-carpophorus", "mr:0124-timotheus", "mr:0513-maria",
-            "mr:0629-maria", "mr:0917-franciscus"}
+    # #51 re-minted two garbled slugs: mr:0513-maria, mr:0917-franciscus.
+    KEPT = {"mr:0827-rufus-et-carpophorus", "mr:0124-timotheus",
+            "mr:0513-dedicatio-sanctae-mariae-ad-martyres", "mr:0629-maria",
+            "mr:0917-impressio-stigmatum-francisci"}
 
     def test_registry(self):
         root = Path(__file__).resolve().parent.parent
