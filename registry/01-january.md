@@ -372,7 +372,7 @@
 | 30 | 4 | `mr:0130-bathildis` |  | FR | dies_natalis | same as `mr:0126-bathildis` |  |
 | 30 | 5 | `mr:0130-aldegundis` |  | FR | dies_natalis |  |  |
 | 30 | 6 | `mr:0130-armentarius` |  | IT | dies_natalis |  |  |
-| 30 | 7 | `mr:0130-theophilus-iuvenis` |  | CY | dies_natalis |  |  |
+| 30 | 7 | `mr:0130-theophilus-iuvenis` |  | CY | dies_natalis |  | The unofficial English 2004 edition renders the cognomen as "the Youth" (Latin cognoménto Iúvenis, Italian (CEI) detto il Giovane); "the Younger" is the conventional English epithet, which the English subject follows. |
 | 30 | 8 | `mr:0130-adelelmus` | * | ES | dies_natalis |  |  |
 | 30 | 9 | `mr:0130-franciscus-taylor` | * | IE | dies_natalis |  |  |
 | 30 | 10 | `mr:0130-hyacintha-mariscotti` |  | IT | dies_natalis |  |  |

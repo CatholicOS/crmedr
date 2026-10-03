@@ -1260,11 +1260,20 @@ eulogy is directed to, in nominative display form — stored per language in
 strings for untranslated subjects. The Latin file is fully filled (honorific from the
 sanctity marker of the 2004 text, suppressed for feasts, pluralized for pairs and
 groups; name from the slug; deprecated IDs from their historical-edition extraction).
-The Italian (4,779 filled) and English (6,182 filled) files are partial extractions
+The Italian (4,822 filled) and English (6,184 filled) files are partial extractions
 from the 2004-edition texts (English also drawing deprecated subjects from the aligned
 1914 edition), kept only when verified against the slug, and await translator
 completion. Subject and slug are
 tightly coupled and edition-independent.
+
+**Complete vernacular subjects (October 2026, #61).** Many English and Italian subjects had kept only the bare name
+("Saint Paul" for Paul of the Cross, "Saint Gregory" for Gregory of Nyssa, "Saint Peter" for the Chair of Peter).
+In a reviewed pass, 415 labels were completed with what tells the subject apart: a byname or place ("Saint Gregory of
+Nyssa"), a papal ordinal ("Saint Pius V"), a feast's own name ("The Chair of Saint Peter the Apostle"), and the
+epithets the IDs now carry ("Saint Amos the Prophet", "Saint Thomas the Apostle", "Saint Mark the Evangelist"; in
+Italian "Sant’Amos Profeta"). English labels use the conventional English names of the prophets (Hosea, Haggai, not
+Osee, Aggaeus). Two curator notes record where the unofficial English text errs: "the Youth" for Theophilus the
+Younger, and "Leo III the Isaurian" for Leo VI in the eulogy of Anthony Cauleas.
 
 **Review of the Italian and English subjects (October 2026, #31).** The extraction
 had taken the first saint named anywhere in the text when it fell within its first 60
