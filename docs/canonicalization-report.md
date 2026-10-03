@@ -804,7 +804,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0110-paulus-thebaide | mr:0110-paulus |
 | mr:0114-datius-mediolani | mr:0114-datius |
 | mr:0115-maurus-in | mr:0115-maurus |
-| mr:0116-marcellus-primus-romae | mr:0116-marcellus-primus |
+| mr:0116-marcellus-primus-romae | mr:0116-marcellus-i |
 | mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
 | mr:0312-petrus-ibidem | mr:0312-petrus |
 | mr:0413-ursi | mr:0413-ursus |
@@ -945,7 +945,8 @@ the deprecated feast and apostle IDs follow in #51.
 The two evangelists who were not apostles keep their epithet the same way (#59):
 mr:0425-marcus-evangelista, mr:1018-lucas-evangelista. The 1749 and 1914 translation of St Mark,
 coined as a person (mr:0131-marcus-evangelista), becomes the feast phrase
-mr:0131-translatio-marci-evangelistae. In a feast naming several saints, only the first-named keeps
+mr:0131-translatio-marci-evangelistae. mr:0116-marcellus-primus becomes mr:0116-marcellus-i: papal
+ordinals are roman numerals (rule 3). In a feast naming several saints, only the first-named keeps
 the epithet, so as not to lengthen the slug (mr:0509-translatio-andreae-apostoli-lucae-et-timothei).
 
 ## Country-code corrections (September 2026)

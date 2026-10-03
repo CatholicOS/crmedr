@@ -79,7 +79,7 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0115-ablebertus` | ministry (episcopi cameracensis) |  |
 | `mr:0115-bonitus` | death (obiit) |  |
 | `mr:0115-petrus-de-castronovo` | death (occubuit) |  |
-| `mr:0116-marcellus-primus` | death (obiit) |  |
+| `mr:0116-marcellus-i` | death (obiit) |  |
 | `mr:0118-volusianus` | ministry (episcopi turonensis) |  |
 | `mr:0120-sebastianus` | birth (oriundus) |  |
 | `mr:0120-euthymius` | death (obiit) |  |

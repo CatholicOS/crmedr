@@ -485,6 +485,9 @@ ID_CORRECTIONS = {
     # #59: the evangelists Mark and Luke keep -evangelista.
     "mr:0425-marcus": "mr:0425-marcus-evangelista",
     "mr:1018-lucas": "mr:1018-lucas-evangelista",
+
+    # #59: papal ordinals are roman numerals (rule 3).
+    "mr:0116-marcellus-primus": "mr:0116-marcellus-i",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

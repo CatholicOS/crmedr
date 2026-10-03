@@ -206,7 +206,7 @@
 | 15 | 15 | `mr:0115-franciscus-fernandez-de-capillas` |  | CN | dies_natalis |  |  |
 | 15 | 16 | `mr:0115-arnoldus-janssen` |  | NL | dies_natalis |  |  |
 | 15 | 17 | `mr:0115-nicolaus-gross` | * | DE | dies_natalis |  |  |
-| 16 | 1 | `mr:0116-marcellus-primus` |  | IT | depositio |  |  |
+| 16 | 1 | `mr:0116-marcellus-i` |  | IT | depositio |  |  |
 | 16 | 2 | `mr:0116-danax` | * | AL | dies_natalis |  |  |
 | 16 | 3 | `mr:0116-mela` |  | EG | dies_natalis |  |  |
 | 16 | 4 | `mr:0116-honoratus` |  | FR | dies_natalis |  |  |
