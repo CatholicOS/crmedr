@@ -269,7 +269,7 @@
 | 23 | 2 | `mr:0223-sirenus` |  | RS | dies_natalis |  |  |
 | 23 | 3 | `mr:0223-milburga` |  | GB | dies_natalis |  |  |
 | 23 | 4 | `mr:0223-willigisus` | * | DE | dies_natalis |  |  |
-| 23 | 5 | `mr:0223-ioannes` |  | IT | dies_natalis |  |  |
+| 23 | 5 | `mr:0223-ioannes` |  | IT | dies_natalis | same as `mr:0224-ioannes-theristes` |  |
 | 23 | 6 | `mr:0223-raphaela-de-villalonga-ybarra` | * | ES | dies_natalis |  |  |
 | 23 | 7 | `mr:0223-nicolaus-tabouillot` | * | FR | dies_natalis |  |  |
 | 23 | 8 | `mr:0223-iosephina-vannini` | * | IT | dies_natalis |  |  |

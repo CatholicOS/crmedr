@@ -67,7 +67,7 @@
 | 5 | 7 | `mr:0505-geruntius` |  | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0505-maurontus` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0505-sacerdos` |  | FR | dies_natalis |  |  |
-| 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis |  |  |
+| 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis | same as `mr:0504-godehardus` |  |
 | 5 | 11 | `mr:0505-leo` | * | IT | dies_natalis |  |  |
 | 5 | 12 | `mr:0505-avertinus` | * | FR | dies_natalis |  |  |
 | 5 | 13 | `mr:0505-angelus` |  | IT | dies_natalis |  |  |
