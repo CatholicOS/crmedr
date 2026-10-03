@@ -69,6 +69,7 @@ TIME_TAIL = re.compile(r",?\s*eodem die(?: et anno)?$")
 BACK_REFS = {"Ibidem", "Item"}
 EDITION_LA = "martyrologium_romanum_2004"
 EDITION_IT = "martyrologium_romanum_2004_it_IT"
+EDITION_EN = "martyrologium_romanum_2004_en_unofficial"
 MISPRINT_KEYS = {"id", "edition", "printed", "intended", "verified"}
 # A misprint is recorded as the misprinted word, or as the shortest phrase (up
 # to three words) that makes it unique in the text ("un Inghilterra").
@@ -617,7 +618,9 @@ def main():
     # Places are read from the Latin 2004 text: a eulogy the Latin print lacks
     # (printed only in the CEI) has none.
     latin_order = [o for o in order if o[0] in texts]
-    errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it},
+    # The unofficial English 2004 edition's misprints are checked too (not used for places).
+    texts_en = load_texts(texts_repo, EDITION_EN)
+    errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it, EDITION_EN: texts_en},
                                 {m for m, _, _ in order})
     errors += validate_duplicated_entries(load_duplicated_entries(repo_root), entries,
                                           {EDITION_LA: texts, EDITION_IT: texts_it})

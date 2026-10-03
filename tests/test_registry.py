@@ -123,7 +123,7 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
 
     # "et" inside a religious name, a feast title or two titles of one subject, not a
     # second subject.
-    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria-mazzarello",
+    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria",
                  "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
                  "mr:1229-david-rex-et-propheta"}
 
@@ -176,6 +176,12 @@ class Apostles56Test(unittest.TestCase):
             self.assertIn(cid, ids)
             self.assertRegex(la[cid], r"Apostol(us|i)$")
         self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
+        # #59: the evangelists who were not apostles
+        for cid in ("mr:0425-marcus-evangelista", "mr:1018-lucas-evangelista"):
+            self.assertIn(cid, ids)
+            self.assertRegex(la[cid], r"Evangelista$")
+        en = json.load(open(root / "i18n" / "en.json", encoding="utf-8"))
+        self.assertEqual(en["mr:1018-lucas-evangelista"], "Saint Luke the Evangelist")
 
 
 class RegistryIntegrityTest(unittest.TestCase):
@@ -194,6 +200,8 @@ class RegistryIntegrityTest(unittest.TestCase):
         for lang in ("la", "it", "en"):
             keys = json.load(open(root / "i18n" / f"{lang}.json", encoding="utf-8"))
             self.assertEqual(set(keys), set(ids), lang)
+        # Same-day namesakes take a place or an epithet, never a number (rule 9, #59).
+        self.assertEqual([i for i in ids if any(t.isdigit() for t in i.split("-", 1)[1].split("-"))], [])
 
 
 class PlaceLeadCorrections25Test(unittest.TestCase):
@@ -313,7 +321,7 @@ class PerEditionPlacementsTest(unittest.TestCase):
         self.assertEqual(r.LATIN_RENUMBERING["mr:0825-aloysius-urbano-lanaspa"], 13)
         self.assertEqual(r.LATIN_RENUMBERING["mr:1210-gundisalvus-vines-masip"], 9)
         self.assertEqual(r.CEI_ONLY, {"mr:0712-proclus-et-hilarion", "mr:0825-eusebius-et-socii",
-                                      "mr:0709-maria-a-iesu-crucifixo-petkovic", "mr:1210-marcus-antonius-durando"})
+                                      "mr:0709-maria-a-iesu-crucifixo", "mr:1210-marcus-antonius-durando"})
         self.assertEqual(r.SAME_EULOGY, {"mr:0610-marcus-antonius-durando": "mr:1210-marcus-antonius-durando"})
         self.assertNotIn("mr:1210-marcus-antonius-durando", r.ID_CORRECTIONS)
         self.assertNotIn("mr:0610-marcus-antonius-durando", r.PLACEMENT_OVERRIDES)

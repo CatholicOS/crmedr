@@ -29,7 +29,8 @@ Rules applied, in order:
    demonym takes that name in the nominative plural (martyres-scillitani,
    monachi-abrahamitae).
 9. Same-slug collisions within a day: the day's lead keeps the bare slug; numbered
-   entries take the place of death; ordinals as last resort.
+   entries take the place of death (or see, in the genitive) or an epithet; never a number
+   (mr:0408-dionysius-2 became mr:0408-dionysius-corinthi, #59).
 
 ## Special identity decisions
 
@@ -281,7 +282,7 @@ page scans of both editions):
 - **mr:0825-eusebius-et-socii**: entry 3 at August 25 in the CEI edition; absent from the
   Latin print, where the numbered entries begin at 3 (Genesius) after the two unnumbered
   memorias (Louis IX, Joseph Calasanz).
-- **mr:0709-maria-a-iesu-crucifixo-petkovic**: entry 11\* at July 9 in the CEI edition;
+- **mr:0709-maria-a-iesu-crucifixo**: entry 11\* at July 9 in the CEI edition;
   absent from the Latin print, whose July 9 ends at entry 10\*. (Bl. Marija Petković was
   beatified on 6 June 2003.)
 
@@ -383,7 +384,7 @@ the slugs.
 | mr:0110-petrus-urseoli | mr:0110-petrus-urseolus |
 | mr:0125-arthematis | mr:0125-arthemas |
 | mr:0129-gilda-sapientis | mr:0129-gilda-sapiens |
-| mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-pietas-a-cruce-ortiz-real |
+| mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-pietas-a-cruce |
 | mr:0307-paulus-simplicis | mr:0307-paulus-simplex |
 | mr:0424-gulielmus-firmati | mr:0424-gulielmus-firmatus |
 | mr:0425-pasicratis-et-valentio | mr:0425-pasicrates-et-valentio |
@@ -481,7 +482,7 @@ subjects follow the slugs.
 | mr:0701-ioannes-baptista-duverneuil | mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie |
 | mr:0707-antoninus-fantosati | mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro |
 | mr:0707-rogerius-dickinson | mr:0707-rogerius-dickinson-et-radulphus-milner |
-| mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert | mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert-et-agnes-a-iesu-de-romillon |
+| mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert | mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu |
 | mr:0711-placidus | mr:0711-placidus-et-sigisbertus |
 | mr:0713-ludovicus-armandus-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
 | mr:0716-andreas-de-soveral | mr:0716-andreas-de-soveral-et-dominicus-carvalho |
@@ -540,7 +541,7 @@ subjects follow the slugs.
 | mr:1119-elisaeus-garcia | mr:1119-elisaeus-garcia-et-alexander-planas-sauri |
 | mr:1126-hugo-taylor | mr:1126-hugo-taylor-et-marmaducus-bowes |
 | mr:1126-thomas | mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen |
-| mr:1129-dionysius-a-nativitate-berthelot | mr:1129-dionysius-a-nativitate-berthelot-et-redemptus-a-cruce-rodriguez |
+| mr:1129-dionysius-a-nativitate-berthelot | mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce |
 | mr:1210-antonius-martin-hernandez | mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo |
 | mr:1210-edmundus-gennings | mr:1210-edmundus-gennings-et-swithinus-wells |
 | mr:1229-henricus-ioannes-requena | mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher |
@@ -583,13 +584,13 @@ subjects follow the slugs.
 | mr:0720-maria-zhao-guozhus | mr:0720-maria-zhao-guozhi-et-socii |
 | mr:0722-anna-wang | mr:0722-anna-wang-et-socii |
 | mr:0725-fridericus-rubio-alvarez | mr:0725-fridericus-rubio-alvarez-et-socii |
-| mr:0725-petrus-a-corde-redondo | mr:0725-petrus-a-corde-redondo-et-socii |
+| mr:0725-petrus-a-corde-redondo | mr:0725-petrus-a-corde-et-socii |
 | mr:0727-georgius | mr:0727-georgius-et-socii |
 | mr:0729-ludovicus-bertran | mr:0729-ludovicus-bertran-et-socii |
 | mr:0730-iosephus-maria-muro-sanmiguel | mr:0730-iosephus-maria-muro-sanmiguel-et-socii |
-| mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz | mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz-et-socii |
+| mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz | mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii |
 | mr:0804-iosephus-batalla-parramon | mr:0804-iosephus-batalla-parramon-et-socii |
-| mr:0807-martinus-a-sancto-felice-woodcock | mr:0807-martinus-a-sancto-felice-woodcock-et-socii |
+| mr:0807-martinus-a-sancto-felice-woodcock | mr:0807-ioannes-woodcock-et-socii |
 | mr:0810-claudius-iosephus-jouffret-de-bonnefont | mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii |
 | mr:0812-iacobus | mr:0812-iacobus-do-mai-nam-et-socii |
 | mr:0812-porcarius | mr:0812-porcarius-et-socii |
@@ -804,12 +805,12 @@ the following eulogies of their day, run in by the OCR.
 | mr:0110-paulus-thebaide | mr:0110-paulus |
 | mr:0114-datius-mediolani | mr:0114-datius |
 | mr:0115-maurus-in | mr:0115-maurus |
-| mr:0116-marcellus-primus-romae | mr:0116-marcellus-primus |
+| mr:0116-marcellus-primus-romae | mr:0116-marcellus-i |
 | mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
 | mr:0312-petrus-ibidem | mr:0312-petrus |
 | mr:0413-ursi | mr:0413-ursus |
 | mr:0422-caji | mr:0422-caius |
-| mr:0425-marcus-evangelista-hic | mr:0425-marcus |
+| mr:0425-marcus-evangelista-hic | mr:0425-marcus-evangelista |
 | mr:0510-job-propheta | mr:0510-iob |
 | mr:0518-ericus-upsali | mr:0518-ericus |
 | mr:0519-ivo-lohaneti | mr:0519-ivo |
@@ -885,7 +886,7 @@ remaining same-eulogy links and notes follow in later parts of #51.
 **Run-in eulogies split (applied, October 2026, #51 part 2)**: the OCR of both historical
 editions had lost the paragraph break between eulogies, so one key held two or more of them
 (406 keys: 336 in 1749, 70 in 1914; mr:1224-vigilia-nativitatis-domini held the vigil and
-John of Kęty, mr:0424-maria-a-sancta-euphrasia-pelletier held Bova and Doda, Euphrasia
+John of Kęty, mr:0424-maria-a-sancta-euphrasia held Bova and Doda, Euphrasia
 Pelletier and the Conversion of Augustine). Each key is cut where the next eulogy begins,
 and each part takes the ID of its eulogy: the ID the other edition already gives it, a
 current ID of the day, or a new deprecated ID (28). Where the key's own eulogy is
@@ -942,6 +943,21 @@ part of a name: a church's (mr:0805-dedicatio-basilicae-sanctae-mariae), the Hol
 (mr:0914-exaltatio-sanctae-crucis), All Saints (*omnium sanctorum*). The Latin subject keeps
 the printed form ("Cathedra Sancti Petri Apostoli"). Thirteen current IDs are renamed;
 the deprecated feast and apostle IDs follow in #51.
+The two evangelists who were not apostles keep their epithet the same way (#59):
+mr:0425-marcus-evangelista, mr:1018-lucas-evangelista. The 1749 and 1914 translation of St Mark,
+coined as a person (mr:0131-marcus-evangelista), becomes the feast phrase
+mr:0131-translatio-marci-evangelistae. mr:0116-marcellus-primus becomes mr:0116-marcellus-i: papal
+ordinals are roman numerals (rule 3). The last numeric disambiguator, mr:0408-dionysius-2, becomes
+mr:0408-dionysius-corinthi (rule 9). In a feast naming several saints, only the first-named keeps
+the epithet, so as not to lengthen the slug (mr:0509-translatio-andreae-apostoli-lucae-et-timothei).
+
+**One name form per saint (applied, October 2026, #63)**: an ID names the saint the way they are
+conventionally known, in one form: the religious name, with its title or place left uninflected
+(rule 2; mr:0923-pius-de-pietrelcina, mr:0809-teresia-benedicta-a-cruce, mr:0808-maria-a-cruce), or
+the given name and surname (mr:0730-leopoldus-mandic), never a mix of the two. When a surname is
+used, no place is needed unless ambiguity remains. Surnames that contain *de*, *la* or *y* stay
+whole (Galvão de França, Jarrige de la Morélie). 153 current IDs are renamed after a reviewed table
+(85 candidates already used one form and keep theirs); their Latin subjects follow.
 
 ## Country-code corrections (September 2026)
 
@@ -1063,7 +1079,7 @@ intended:
   the printed form):
   - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
   - July 4 (mr:0704-ioannes-cornelius-et-socii): "un Inghilterra" for *in Inghilterra*;
-  - August 7, entry 13\* (mr:0807-martinus-a-sancto-felice-woodcock-et-socii): "Inghiltera" for
+  - August 7, entry 13\* (mr:0807-ioannes-woodcock-et-socii): "Inghiltera" for
     *Inghilterra*;
   - September 6 (mr:0906-bertrandus-de-garrigues): "Mel" for *Nel*;
   - September 17 (mr:0917-ioannes-ventura-solsona): "vicno" for *vicino*;

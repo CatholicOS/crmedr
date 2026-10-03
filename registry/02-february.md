@@ -20,13 +20,13 @@
 | 1 | 14 | `mr:0201-henricus-morse` |  | GB | dies_natalis |  |  |
 | 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  |  |
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
-| 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione-michelotti` | * | IT | dies_natalis |  |  |
+| 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione` | * | IT | dies_natalis |  |  |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  |  |
 | 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio |  |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0202-laurentius` |  | GB | dies_natalis |  |  |
 | 2 | 4 | `mr:0202-burchardus` |  | DE | dies_natalis | same as `mr:1014-burchardus` |  |
-| 2 | 5 | `mr:0202-simon-de-cassia-fidati` | * | IT | dies_natalis |  |  |
+| 2 | 5 | `mr:0202-simon-de-cassia` | * | IT | dies_natalis |  |  |
 | 2 | 6 | `mr:0202-petrus-cambiani-de-ruffia` | * | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0202-catharina-de-ricci` |  | IT | dies_natalis | same as `mr:0213-catharina-de-ricci` |  |
 | 2 | 8 | `mr:0202-ioanna-de-lestonnac` |  | FR | dies_natalis |  |  |
@@ -48,7 +48,7 @@
 | 3 | 10 | `mr:0203-berlindis` | * | BE | dies_natalis |  |  |
 | 3 | 11 | `mr:0203-helinandus` | * | FR | commemoratio |  |  |
 | 3 | 12 | `mr:0203-ioannes-nelson` | * | GB | dies_natalis |  |  |
-| 3 | 13 | `mr:0203-maria-a-sancto-ignatio-thevenet` |  | FR | dies_natalis |  |  |
+| 3 | 13 | `mr:0203-maria-a-sancto-ignatio` |  | FR | dies_natalis |  |  |
 | 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  |  |
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius` |  | IT | dies_natalis |  |  |
@@ -101,10 +101,10 @@
 | 7 | 9 | `mr:0207-antonius-de-stronconio` | * | IT | dies_natalis |  |  |
 | 7 | 10 | `mr:0207-thomas-sherwood` | * | GB | dies_natalis |  |  |
 | 7 | 11 | `mr:0207-iacobus-sales-et-gulielmus-saultemouche` | * | FR | dies_natalis |  |  |
-| 7 | 12 | `mr:0207-aegidius-maria-a-sancto-ioseph-pontillo` |  | IT | dies_natalis |  |  |
-| 7 | 13 | `mr:0207-ioannes-de-triora-lantrua` |  | CN | dies_natalis |  |  |
+| 7 | 12 | `mr:0207-aegidius-maria-a-sancto-ioseph` |  | IT | dies_natalis |  |  |
+| 7 | 13 | `mr:0207-ioannes-de-triora` |  | CN | dies_natalis |  |  |
 | 7 | 14 | `mr:0207-rosalia-rendu` | * | FR | dies_natalis |  |  |
-| 7 | 15 | `mr:0207-maria-a-providentia-smet` | * | FR | dies_natalis |  |  |
+| 7 | 15 | `mr:0207-maria-a-providentia` | * | FR | dies_natalis |  |  |
 | 7 | 16 | `mr:0207-pius-ix` | * | IT | dies_natalis |  |  |
 | 7 | 17 | `mr:0207-anselmus-polanco-et-philippus-ripoll` | * | ES | dies_natalis |  |  |
 | 7 | 18 | `mr:0207-adalbertus-nierychlewski` | * | PL | dies_natalis |  |  |
@@ -185,7 +185,7 @@
 | 14 | 7 | `mr:0214-auxentius` |  | TR | dies_natalis |  |  |
 | 14 | 8 | `mr:0214-nostrianus` | * | IT | commemoratio |  |  |
 | 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  |  |
-| 14 | 10 | `mr:0214-ioannes-baptista-a-conceptione-garcia` |  | ES | dies_natalis |  |  |
+| 14 | 10 | `mr:0214-ioannes-baptista-a-conceptione` |  | ES | dies_natalis |  |  |
 | 14 | 11 | `mr:0214-vincentius-vilar-david` | * | ES | dies_natalis |  |  |
 | 15 | 1 | `mr:0215-onesimus` |  |  | commemoratio |  |  |
 | 15 | 2 | `mr:0215-faustinus-et-iovita` |  | IT | dies_natalis |  |  |
@@ -236,7 +236,7 @@
 | 19 | 5 | `mr:0219-georgius` | * | FR | dies_natalis |  |  |
 | 19 | 6 | `mr:0219-proclus` | * | IT | dies_natalis |  |  |
 | 19 | 7 | `mr:0219-bonifatius` | * | BE | depositio |  |  |
-| 19 | 8 | `mr:0219-conradus-de-placentia-confalonieri` | * | IT | dies_natalis |  |  |
+| 19 | 8 | `mr:0219-conradus-confalonieri` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0219-alvarus` | * | ES | commemoratio |  |  |
 | 19 | 10 | `mr:0219-elisabeth-picenardi` | * | IT | dies_natalis |  |  |
 | 19 | 11 | `mr:0219-lucia-yi-zhenmei` |  | CN | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 24 | 1 | `mr:0224-evetius` |  | TR | dies_natalis |  |  |
 | 24 | 2 | `mr:0224-modestus` |  | DE | dies_natalis |  |  |
 | 24 | 3 | `mr:0224-ethelbertus` |  | GB | dies_natalis |  |  |
-| 24 | 4 | `mr:0224-constantius-de-fabriano-servoli` | * | IT | dies_natalis |  |  |
+| 24 | 4 | `mr:0224-constantius-de-fabriano` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0224-marcus-de-marconi` | * | IT | dies_natalis |  |  |
 | 24 | 6 | `mr:0224-iosepha-naval-girbes` | * | ES | dies_natalis |  |  |
 | 24 | 7 | `mr:0224-thomas-maria-fusco` | * | IT | dies_natalis |  |  |
@@ -302,8 +302,8 @@
 | 26 | 5 | `mr:0226-victor` |  | FR | dies_natalis |  |  |
 | 26 | 6 | `mr:0226-andreas` |  | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0226-robertus-drury` | * | GB | dies_natalis |  |  |
-| 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz-montal-fornes` |  | ES | dies_natalis |  |  |
-| 26 | 9 | `mr:0226-pietas-a-cruce-ortiz-real` | * | ES | dies_natalis |  |  |
+| 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz` |  | ES | dies_natalis |  |  |
+| 26 | 9 | `mr:0226-pietas-a-cruce` | * | ES | dies_natalis |  |  |
 | 27 | 1 | `mr:0227-iulianus-et-eunus` |  | EG | commemoratio |  |  |
 | 27 | 2 | `mr:0227-besa` |  | EG | dies_natalis |  |  |
 | 27 | 3 | `mr:0227-honorina` | * | FR | dies_natalis |  |  |
@@ -313,10 +313,10 @@
 | 27 | 7 | `mr:0227-lucas` | * | IT | dies_natalis |  |  |
 | 27 | 8 | `mr:0227-anna-line` |  | GB | dies_natalis |  |  |
 | 27 | 9 | `mr:0227-gulielmus-richardson` | * | GB | dies_natalis |  |  |
-| 27 | 10 | `mr:0227-francisca-anna-a-virgine-perdolenti-cirer-carbonell` | * | ES | dies_natalis |  |  |
-| 27 | 11 | `mr:0227-gabriel-a-virgine-perdolenti-possenti` | * | IT | dies_natalis |  |  |
-| 27 | 12 | `mr:0227-maria-a-iesu-deluil-martiny` | * | FR | dies_natalis |  |  |
-| 27 | 13 | `mr:0227-maria-a-caritate-spiritus-sancti-brader` | * | CO | dies_natalis |  |  |
+| 27 | 10 | `mr:0227-francisca-anna-a-virgine-perdolenti` | * | ES | dies_natalis |  |  |
+| 27 | 11 | `mr:0227-gabriel-a-virgine-perdolenti` | * | IT | dies_natalis |  |  |
+| 27 | 12 | `mr:0227-maria-a-iesu` | * | FR | dies_natalis |  |  |
+| 27 | 13 | `mr:0227-maria-a-caritate-spiritus-sancti` | * | CO | dies_natalis |  |  |
 | 28 | 1 | `mr:0228-presbyteri-diaconi-plurimi-alexandriae` |  | EG | commemoratio |  |  |
 | 28 | 2 | `mr:0228-romanus` |  | FR | depositio |  |  |
 | 28 | 3 | `mr:0228-marana-et-cyra` |  | SY | commemoratio |  |  |

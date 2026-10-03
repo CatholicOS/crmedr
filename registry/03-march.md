@@ -20,7 +20,7 @@
 | 2 | 3 | `mr:0302-lucas-casali-de-nicosia` | * | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0302-agnes` |  | CZ | dies_natalis |  |  |
 | 2 | 5 | `mr:0302-carolus-bonus` | * | BE | dies_natalis |  |  |
-| 2 | 6 | `mr:0302-angela-a-cruce-guerrero-gonzalez` |  | ES | dies_natalis |  |  |
+| 2 | 6 | `mr:0302-angela-a-cruce` |  | ES | dies_natalis |  |  |
 | 3 | 1 | `mr:0303-marinus-et-asterius` |  | PS | dies_natalis |  |  |
 | 3 | 2 | `mr:0303-emetherius-et-cheledonius` |  | ES | dies_natalis |  |  |
 | 3 | 3 | `mr:0303-cleonicus-et-eutropius` |  | TR | dies_natalis |  |  |
@@ -35,7 +35,7 @@
 | 3 | 12 | `mr:0303-liberatus-weiss-et-socii` | * | ET | dies_natalis |  |  |
 | 3 | 13 | `mr:0303-petrus-renatus-rogue` | * | FR | dies_natalis |  |  |
 | 3 | 14 | `mr:0303-teresia-eustochius-verzeri` |  | IT | dies_natalis |  |  |
-| 3 | 15 | `mr:0303-innocentius-de-berzo-scalvinoni` | * | IT | dies_natalis |  |  |
+| 3 | 15 | `mr:0303-innocentius-de-berzo` | * | IT | dies_natalis |  |  |
 | 3 | 16 | `mr:0303-catharina-drexel` |  | US | dies_natalis |  |  |
 | 4 | (1) | `mr:0304-casimirus` |  | BY | dies_natalis |  |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR | dies_natalis |  |  |
@@ -56,8 +56,8 @@
 | 5 | 7 | `mr:0305-kieranus` | * | IE | dies_natalis |  |  |
 | 5 | 8 | `mr:0305-virgilius` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0305-christophorus-macassoli` | * | IT | dies_natalis |  |  |
-| 5 | 10 | `mr:0305-ieremias-de-valachia-kostistik` | * | IT | dies_natalis |  |  |
-| 5 | 11 | `mr:0305-ioannes-iosephus-a-cruce-calosirto` |  | IT | dies_natalis |  |  |
+| 5 | 10 | `mr:0305-ieremias-de-valachia` | * | IT | dies_natalis |  |  |
+| 5 | 11 | `mr:0305-ioannes-iosephus-a-cruce` |  | IT | dies_natalis |  |  |
 | 6 | 1 | `mr:0306-marcianus` |  | IT | dies_natalis |  |  |
 | 6 | 2 | `mr:0306-victorinus` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0306-quiriacus` |  | DE | dies_natalis |  |  |
@@ -113,7 +113,7 @@
 | 10 | 6 | `mr:0310-attala` |  | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0310-ioannes-ogilvie` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  |  |
-| 10 | 9 | `mr:0310-elias-a-succursu-nieves-del-castillo` | * | MX | dies_natalis |  |  |
+| 10 | 9 | `mr:0310-elias-a-succursu` | * | MX | dies_natalis |  |  |
 | 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
 | 11 | 2 | `mr:0311-trophimus-et-thalus` |  | SY | dies_natalis |  |  |
 | 11 | 3 | `mr:0311-constantinus` | * | GB | dies_natalis |  |  |
@@ -122,7 +122,7 @@
 | 11 | 6 | `mr:0311-benedictus` |  | IT | depositio |  |  |
 | 11 | 7 | `mr:0311-oengus-culdeus` | * | IE | dies_natalis |  |  |
 | 11 | 8 | `mr:0311-eulogius` |  | ES | dies_natalis |  |  |
-| 11 | 9 | `mr:0311-ioannes-baptista-de-fabriano-righi` | * | IT | dies_natalis |  |  |
+| 11 | 9 | `mr:0311-ioannes-baptista-de-fabriano` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0311-thomas-atkinson` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:0311-ioannes-kearney` | * | IE | dies_natalis |  |  |
 | 11 | 12 | `mr:0311-dominicus-cam` |  | VN | dies_natalis |  |  |
@@ -192,16 +192,16 @@
 | 18 | 5 | `mr:0318-braulio` |  | ES | dies_natalis | same as `mr:0326-braulio` |  |
 | 18 | 6 | `mr:0318-eduardus` |  | GB | dies_natalis |  |  |
 | 18 | 7 | `mr:0318-anselmus` |  | IT | dies_natalis |  |  |
-| 18 | 8 | `mr:0318-salvator-de-horta-grionesos` |  | IT | dies_natalis |  |  |
+| 18 | 8 | `mr:0318-salvator-de-horta` |  | IT | dies_natalis |  |  |
 | 18 | 9 | `mr:0318-ioannes-thules-et-rogerius-wrenno` | * | GB | dies_natalis |  |  |
 | 18 | 10 | `mr:0318-martha-le-bouteiller` | * | FR | dies_natalis |  |  |
 | 19 | (1) | `mr:0319-ioseph` |  | PS | dies_natalis |  |  |
 | 19 | 2 | `mr:0319-ioannes` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0319-isnardus-de-chiampo` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:0319-andreas-gallerani` | * | IT | dies_natalis |  |  |
-| 19 | 5 | `mr:0319-ioannes-de-parma-buralli` | * | IT | dies_natalis |  |  |
+| 19 | 5 | `mr:0319-ioannes-de-parma` | * | IT | dies_natalis |  |  |
 | 19 | 6 | `mr:0319-sibyllina-biscossi` | * | IT | dies_natalis |  |  |
-| 19 | 7 | `mr:0319-marcus-de-marchio-de-montegallo` | * | IT | dies_natalis |  |  |
+| 19 | 7 | `mr:0319-marcus-de-montegallo` | * | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:0319-narcissus-turchan` | * | DE | dies_natalis |  |  |
 | 19 | 9 | `mr:0319-marcellus-callo` | * | AT | dies_natalis |  |  |
 | 20 | 1 | `mr:0320-archippus` |  |  | commemoratio |  |  |
@@ -217,8 +217,8 @@
 | 20 | 11 | `mr:0320-baptista-spagnoli` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0320-hippolytus-galantini` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:0320-ioanna-veron` | * | FR | dies_natalis |  |  |
-| 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph-palau-y-quer` | * | ES | dies_natalis |  |  |
-| 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu-sancho-de-guerra` |  | ES | dies_natalis |  |  |
+| 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph` | * | ES | dies_natalis |  |  |
+| 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu` |  | ES | dies_natalis |  |  |
 | 20 | 16 | `mr:0320-iosephus-bilczewski` | * | UA | dies_natalis |  |  |
 | 21 | 1 | `mr:0321-serapion` |  | EG | dies_natalis |  |  |
 | 21 | 2 | `mr:0321-martyres-alexandrini` |  | EG | commemoratio |  |  |
@@ -259,7 +259,7 @@
 | 24 | 4 | `mr:0324-severus` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0324-ioannes-a-baculo` | * | IT | dies_natalis |  |  |
 | 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
-| 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus-lopez-caamano` | * | ES | dies_natalis |  |  |
+| 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus` | * | ES | dies_natalis |  |  |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
 | 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio |  |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS | commemoratio |  |  |
@@ -320,10 +320,10 @@
 | 30 | 6 | `mr:0330-zosimus` |  | IT | dies_natalis |  |  |
 | 30 | 7 | `mr:0330-osburga` | * | GB | dies_natalis |  |  |
 | 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  |  |
-| 30 | 9 | `mr:0330-petrus-de-vallisoleto-regalado` |  | ES | dies_natalis |  |  |
+| 30 | 9 | `mr:0330-petrus-regalado` |  | ES | dies_natalis |  |  |
 | 30 | 10 | `mr:0330-amadeus` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0330-antonius-daveluy-et-socii` |  | KR | dies_natalis |  |  |
-| 30 | 12 | `mr:0330-ludovicus-de-casaurea-palmentieri` | * | IT | dies_natalis |  |  |
+| 30 | 12 | `mr:0330-ludovicus-de-casaurea` | * | IT | dies_natalis |  |  |
 | 30 | 13 | `mr:0330-leonardus-murialdo` |  | IT | dies_natalis |  |  |
 | 30 | 14 | `mr:0330-iulius-alvarez` |  | MX | dies_natalis |  |  |
 | 30 | 15 | `mr:0330-maria-restituta-kafka` | * | AT | dies_natalis |  |  |

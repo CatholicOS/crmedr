@@ -45,7 +45,7 @@ from pathlib import Path
 LA_SUBJECT_OVERRIDES = {
     "mr:0712-proclus-et-hilarion": "Sancti Proclus et Hilarion",
     "mr:0825-eusebius-et-socii": "Sancti Eusebius et socii",
-    "mr:0709-maria-a-iesu-crucifixo-petkovic": "Beata Maria a Iesu Crucifixo Petkovic",
+    "mr:0709-maria-a-iesu-crucifixo": "Beata Maria a Iesu Crucifixo Petkovic",
 }
 
 ROMAN = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xxiii'}
