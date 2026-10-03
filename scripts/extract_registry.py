@@ -481,6 +481,10 @@ ID_CORRECTIONS = {
     "mr:1118-dedicatio-basilicarum-petri-et-pauli": "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
     "mr:1130-andreas": "mr:1130-andreas-apostolus",
     "mr:1227-ioannes": "mr:1227-ioannes-apostolus",
+
+    # #59: the evangelists Mark and Luke keep -evangelista.
+    "mr:0425-marcus": "mr:0425-marcus-evangelista",
+    "mr:1018-lucas": "mr:1018-lucas-evangelista",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

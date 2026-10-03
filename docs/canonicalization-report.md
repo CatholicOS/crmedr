@@ -809,7 +809,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0312-petrus-ibidem | mr:0312-petrus |
 | mr:0413-ursi | mr:0413-ursus |
 | mr:0422-caji | mr:0422-caius |
-| mr:0425-marcus-evangelista-hic | mr:0425-marcus |
+| mr:0425-marcus-evangelista-hic | mr:0425-marcus-evangelista |
 | mr:0510-job-propheta | mr:0510-iob |
 | mr:0518-ericus-upsali | mr:0518-ericus |
 | mr:0519-ivo-lohaneti | mr:0519-ivo |
@@ -942,6 +942,8 @@ part of a name: a church's (mr:0805-dedicatio-basilicae-sanctae-mariae), the Hol
 (mr:0914-exaltatio-sanctae-crucis), All Saints (*omnium sanctorum*). The Latin subject keeps
 the printed form ("Cathedra Sancti Petri Apostoli"). Thirteen current IDs are renamed;
 the deprecated feast and apostle IDs follow in #51.
+The two evangelists who were not apostles keep their epithet the same way (#59):
+mr:0425-marcus-evangelista, mr:1018-lucas-evangelista.
 
 ## Country-code corrections (September 2026)
 

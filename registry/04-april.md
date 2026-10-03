@@ -301,7 +301,7 @@
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia-pelletier` |  | FR | dies_natalis |  |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  |  |
-| 25 | (1) | `mr:0425-marcus` |  | IL | dies_natalis |  |  |
+| 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  |  |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` |  |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR | dies_natalis |  |  |

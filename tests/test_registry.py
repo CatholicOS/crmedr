@@ -176,6 +176,10 @@ class Apostles56Test(unittest.TestCase):
             self.assertIn(cid, ids)
             self.assertRegex(la[cid], r"Apostol(us|i)$")
         self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
+        # #59: the evangelists who were not apostles
+        for cid in ("mr:0425-marcus-evangelista", "mr:1018-lucas-evangelista"):
+            self.assertIn(cid, ids)
+            self.assertRegex(la[cid], r"Evangelista$")
 
 
 class RegistryIntegrityTest(unittest.TestCase):
