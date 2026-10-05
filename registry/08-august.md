@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:0801-alphonsus-maria-de-liguori` |  | IT | dies_natalis | same as `mr:0802-alphonsus-maria-de-liguori` |  |
 | 1 | 2 | `mr:0801-septem-fratres-martyres-antiochiae` |  | TR | commemoratio |  |  |
-| 1 | 3 | `mr:0801-secundinus` |  | IT | dies_natalis |  |  |
+| 1 | 3 | `mr:0801-secundinus` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "al tredicesimo miglio" (the thirteenth mile of the Via Prenestina) where the Latin has "miliário tricésimo" (the thirtieth). |
 | 1 | 4 | `mr:0801-felix` |  | ES | dies_natalis |  |  |
 | 1 | 5 | `mr:0801-eusebius` |  | IT | dies_natalis | same as `mr:1216-eusebius` |  |
 | 1 | 6 | `mr:0801-exsuperius` | * | FR | dies_natalis |  |  |

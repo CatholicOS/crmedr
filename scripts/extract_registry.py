@@ -871,6 +871,12 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0801-secundinus": {
+        EDITION_IT: (
+            "Translation error: \"al tredicesimo miglio\" (the thirteenth mile of the Via "
+            "Prenestina) where the Latin has \"miliário tricésimo\" (the thirtieth)."
+        ),
+    },
     "mr:0217-septem-fundatores-servorum-mariae": {
         EDITION_1749: (
             "This edition prints the eulogy of Alexius Falconieri alone, one of the seven "
