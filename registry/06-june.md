@@ -281,7 +281,7 @@
 | 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  |  |
 | 25 | 1 | `mr:0625-maximus` |  | IT | dies_natalis |  |  |
 | 25 | 2 | `mr:0625-prosperus-aquitanus` |  | FR | commemoratio |  |  |
-| 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  | The 1914 English mistranslates the Latin 'Apud Rhegium' (Reggio) as 'Riez'. The 1749 eulogy also conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer. |
+| 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'. 1749 Latin: This eulogy conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer. |
 | 25 | 4 | `mr:0625-tigridis` | * | FR | dies_natalis |  |  |
 | 25 | 5 | `mr:0625-molochus` | * | GB | dies_natalis |  |  |
 | 25 | 6 | `mr:0625-eurosia` | * | ES | dies_natalis |  |  |

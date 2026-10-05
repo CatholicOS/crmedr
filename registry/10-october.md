@@ -223,7 +223,7 @@
 | 17 | 4 | `mr:1017-martyres-volitani` |  | TN | dies_natalis |  |  |
 | 17 | 5 | `mr:1017-ioannes` |  | EG | dies_natalis | same as `mr:0327-ioannes` |  |
 | 17 | 6 | `mr:1017-dulcidius` | * | FR | dies_natalis |  |  |
-| 17 | 7 | `mr:1017-florentius` |  | FR | dies_natalis |  | 1914 English translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus. |
+| 17 | 7 | `mr:1017-florentius` |  | FR | dies_natalis |  | 1914 English: Translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus. |
 | 17 | 8 | `mr:1017-gilbertus` | * | FR | dies_natalis |  |  |
 | 17 | 9 | `mr:1017-balthasar-ravaschieri-de-clavario` | * | IT | dies_natalis |  |  |
 | 17 | 10 | `mr:1017-richardus-gwyn` |  | GB | dies_natalis |  |  |

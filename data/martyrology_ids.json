@@ -3952,7 +3952,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: Latin 'In monasterio Lutrensi, in Burgundia' (Lure, Burgundy), not Brittany."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'In monasterio Lutrensi, in Burgundia' is Lure, in Burgundy, not Brittany."
+      }
     },
     {
       "id": "mr:0118-beatrix-estensis",
@@ -5586,11 +5588,13 @@
       "country": "IT",
       "typology": "dies_natalis",
       "unnumbered": true,
-      "note": "1914 English translation error: Latin Brixia is Brescia, not Brixen.",
       "same_eulogy": [
         "mr:0531-angela-merici",
         "mr:0601-angela-merici"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin Brixia is Brescia, not Brixen."
+      }
     },
     {
       "id": "mr:0127-iulianus-sorae",
@@ -9683,7 +9687,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin is Antoninus, not Antonius/Anthony."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin is Antoninus, not Antonius (Anthony)."
+      }
     },
     {
       "id": "mr:0214-ioannes-baptista-a-conceptione",
@@ -23298,7 +23304,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
+      }
     },
     {
       "id": "mr:0428-pamphilus",
@@ -30101,7 +30109,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English says 'Maximus'."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English says 'Maximus'."
+      }
     },
     {
       "id": "mr:0529-sisinnius-et-socii",
@@ -35356,7 +35366,10 @@
           "source": "lead"
         }
       ],
-      "note": "The 1914 English mistranslates the Latin 'Apud Rhegium' (Reggio) as 'Riez'. The 1749 eulogy also conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'.",
+        "martyrologium_romanum_1749": "This eulogy conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer."
+      }
     },
     {
       "id": "mr:0625-tigridis",
@@ -36921,10 +36934,12 @@
       "country": "IN",
       "typology": "dies_natalis",
       "unnumbered": true,
-      "note": "1914 English translation error: Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona.",
       "same_eulogy": [
         "mr:1221-thomas-apostolus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona."
+      }
     },
     {
       "id": "mr:0703-anatolius-laodiceae",
@@ -38265,7 +38280,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: Latin 'Eugenii Papae Tertii' is Eugenius III."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III."
+      }
     },
     {
       "id": "mr:0708-mancius-arakus",
@@ -40916,7 +40933,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English typo: 'Marcina' for Macrina."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Misprint: 'Marcina' for Macrina."
+      }
     },
     {
       "id": "mr:0719-dius-thaumaturgus",
@@ -49505,7 +49524,9 @@
           "source": "lead"
         }
       ],
-      "note": "The 1749 text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies."
+      "edition_notes": {
+        "martyrologium_romanum_1749": "This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies."
+      }
     },
     {
       "id": "mr:0821-sidonius-apollinaris",
@@ -50122,7 +50143,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian)."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian)."
+      }
     },
     {
       "id": "mr:0824-audoenus",
@@ -51210,7 +51233,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
+      }
     },
     {
       "id": "mr:0828-iulianus",
@@ -51499,7 +51524,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
+      }
     },
     {
       "id": "mr:0829-sabina",
@@ -63096,7 +63123,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 English translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus."
+      }
     },
     {
       "id": "mr:1017-gilbertus",
@@ -66477,7 +66506,9 @@
       "asterisk": false,
       "country": "SI",
       "typology": "commemoratio",
-      "note": "1914 English translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not Poitiers."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not Poitiers."
+      }
     },
     {
       "id": "mr:1102-iustus",
@@ -75746,7 +75777,9 @@
           "source": "lead"
         }
       ],
-      "note": "1914 misprints Gatianus as 'Gratian' and Fabianus as 'Fabrian'."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
+      }
     },
     {
       "id": "mr:1218-flannanus",
@@ -78484,7 +78517,9 @@
       "same_eulogy": [
         "mr:0710-canutus"
       ],
-      "note": "Note for the 1914 English: \"whose birthday is the 7th of this month\" seems to be an error, as this would point to Canute Lavard (mr:0107-canutus-lavard), who was not a king"
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "\"Whose birthday is the 7th of this month\" seems to be an error, as this would point to Canute Lavard (mr:0107-canutus-lavard), who was not a king."
+      }
     },
     {
       "id": "mr:0119-paulus-et-socii",
@@ -83114,7 +83149,9 @@
       "same_eulogy": [
         "mr:0511-mocius"
       ],
-      "note": "1914 English translation error: the English has 'Lucius' where the Latin has 'Mucii'."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: 'Lucius' where the Latin has 'Mucii'."
+      }
     },
     {
       "id": "mr:0513-martyres-alexandriae",
@@ -87886,7 +87923,9 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
-      "note": "The 1914 text is the rewritten eulogy of the Twelve Brothers of Benevento and does not name Donatus or Felix; it succeeds the 1749 eulogy, which mentions the twelve brothers' feast and Benevento, but its subject differs."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "This text is the rewritten eulogy of the Twelve Brothers of Benevento and does not name Donatus or Felix; it succeeds the 1749 eulogy, which mentions the twelve brothers' feast and Benevento, but its subject differs."
+      }
     },
     {
       "id": "mr:0901-anna-prophetissa",
@@ -88551,7 +88590,9 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": null,
-      "note": "The 1914 English joins the Octave and the Seven Sorrows in one sentence, with no clean point to split it; the Seven Sorrows half corresponds to mr:0915-maria-perdolens."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "This text joins the Octave and the Seven Sorrows in one sentence, with no clean point to split it; the Seven Sorrows half corresponds to mr:0915-maria-perdolens."
+      }
     },
     {
       "id": "mr:0915-maximus-et-socii",
@@ -88966,7 +89007,9 @@
       "same_eulogy": [
         "mr:0415-paternus"
       ],
-      "note": "1914 English mistranslation: the 1749 Latin calls him 'Episcopi Abrincensis et Confessoris', not a martyr."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the 1749 Latin calls him 'Episcopi Abrincensis et Confessoris', not a martyr."
+      }
     },
     {
       "id": "mr:0923-thecla",
@@ -90216,7 +90259,9 @@
       "same_eulogy": [
         "mr:0124-felicianus"
       ],
-      "note": "1914 English translation error: the Latin is a translation of relics (Translatio), not a birthday."
+      "edition_notes": {
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin is a translation of relics (Translatio), not a birthday."
+      }
     },
     {
       "id": "mr:1020-georgius-et-aurelius",

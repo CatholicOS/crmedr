@@ -232,7 +232,7 @@
 | 18 | 2 | `mr:0118-cosconius-et-socii` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:0118-volusianus` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:0118-prisca` |  | IT | commemoratio |  |  |
-| 18 | 5 | `mr:0118-deicolus` |  | FR | dies_natalis |  | 1914 English translation error: Latin 'In monasterio Lutrensi, in Burgundia' (Lure, Burgundy), not Brittany. |
+| 18 | 5 | `mr:0118-deicolus` |  | FR | dies_natalis |  | 1914 English: Translation error: the Latin 'In monasterio Lutrensi, in Burgundia' is Lure, in Burgundy, not Brittany. |
 | 18 | 6 | `mr:0118-beatrix-estensis` | * | IT | dies_natalis |  |  |
 | 18 | 7 | `mr:0118-margarita` |  | HU | dies_natalis |  |  |
 | 18 | 8 | `mr:0118-facius` | * | IT | dies_natalis |  |  |
@@ -332,7 +332,7 @@
 | 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE | dies_natalis |  |  |
-| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0531-angela-merici`; same as `mr:0601-angela-merici` | 1914 English translation error: Latin Brixia is Brescia, not Brixen. |
+| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0531-angela-merici`; same as `mr:0601-angela-merici` | 1914 English: Translation error: the Latin Brixia is Brescia, not Brixen. |
 | 27 | 2 | `mr:0127-iulianus-sorae` |  | IT | commemoratio |  |  |
 | 27 | 3 | `mr:0127-iulianus-cenomanum` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0127-devota` | * | FR | commemoratio |  |  |

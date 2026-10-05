@@ -731,73 +731,15 @@ ENTRY_NOTES = {
         "Bl. Marija Petković was beatified on 6 June 2003."
     ),
     # 1749/1914 source errors and identity remarks found in the #51 audit (set 6, reviewed).
-    "mr:0118-deicolus": (
-        "1914 English translation error: Latin 'In monasterio Lutrensi, in Burgundia' (Lure, "
-        "Burgundy), not Brittany."
-    ),
-    "mr:0127-angela-merici": (
-        "1914 English translation error: Latin Brixia is Brescia, not Brixen."
-    ),
-    "mr:0214-antoninus": (
-        "1914 English translation error: the Latin is Antoninus, not Antonius/Anthony."
-    ),
-    "mr:0428-prudentius": (
-        "1914 English translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
-    ),
-    "mr:0529-maximinus": (
-        "1914 English translation error: the Latin has 'Maximini' (Maximinus of Trier), but the "
-        "English says 'Maximus'."
-    ),
-    "mr:0625-prosperus": (
-        "The 1914 English mistranslates the Latin 'Apud Rhegium' (Reggio) as 'Riez'. The 1749 "
-        "eulogy also conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian "
-        "writer."
-    ),
-    "mr:0703-thomas-apostolus": (
-        "1914 English translation error: Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona."
-    ),
-    "mr:0708-eugenius-iii": (
-        "1914 English translation error: Latin 'Eugenii Papae Tertii' is Eugenius III."
-    ),
-    "mr:0719-macrina": (
-        "1914 English typo: 'Marcina' for Macrina."
-    ),
-    "mr:0821-privatus": (
-        "The 1749 text joins the opening of Privatus's eulogy to the body of the eulogy of "
-        "Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English "
-        "prints both eulogies."
-    ),
-    "mr:0824-tatio": (
-        "1914 English translation error: 'Domitian' where the Latin has 'persecutione "
-        "Diocletiani' (Diocletian)."
-    ),
-    "mr:0828-pelagius": (
-        "1914 English translation error: the Latin 'Constantiae, in Germania' is Konstanz, not "
-        "Coutances."
-    ),
-    "mr:0829-basilla": (
-        "1914 English translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
-    ),
     "mr:1003-candida": (
         "The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has "
         "Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of "
         "the same commemoration."
     ),
-    "mr:1017-florentius": (
-        "1914 English translation error: the Latin (and the 2004 entry) name Florentius, not "
-        "Florentinus."
-    ),
-    "mr:1102-victorinus": (
-        "1914 English translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), "
-        "not Poitiers."
-    ),
     "mr:1105-theotimus-et-socii": (
         "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition "
         "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
         "companions."
-    ),
-    "mr:1218-gatianus": (
-        "1914 misprints Gatianus as 'Gratian' and Fabianus as 'Fabrian'."
     ),
 }
 
@@ -959,6 +901,110 @@ EDITION_IT = "martyrologium_romanum_2004_it_IT"
 EDITION_EN = "martyrologium_romanum_2004_en_unofficial"
 EDITIONS_2004 = (EDITION_LA, EDITION_IT, EDITION_EN)
 OVERRIDE_KEYS = {"entry", "asterisk", "unnumbered", "absent"}
+# The historical editions (their texts live in martyrology-api).
+EDITION_1749 = "martyrologium_romanum_1749"
+EDITION_1914 = "martyrologium_romanum_1914_en_unofficial"
+EDITION_LABELS = {
+    EDITION_LA: "2004 Latin", EDITION_IT: "2004 Italian", EDITION_EN: "2004 English",
+    EDITION_1749: "1749 Latin", EDITION_1914: "1914 English",
+}
+
+# A curator's note that concerns one edition's text only (a mistranslation, a
+# misprint, a dropped line): `edition_notes` on the entry, shown with that
+# edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
+# Deprecated IDs carry theirs in data/deprecated_ids.json.
+EDITION_NOTES = {
+    "mr:0118-deicolus": {
+        EDITION_1914: (
+            "Translation error: the Latin 'In monasterio Lutrensi, in Burgundia' is Lure, in "
+            "Burgundy, not Brittany."
+        ),
+    },
+    "mr:0127-angela-merici": {
+        EDITION_1914: (
+            "Translation error: the Latin Brixia is Brescia, not Brixen."
+        ),
+    },
+    "mr:0214-antoninus": {
+        EDITION_1914: (
+            "Translation error: the Latin is Antoninus, not Antonius (Anthony)."
+        ),
+    },
+    "mr:0428-prudentius": {
+        EDITION_1914: (
+            "Translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
+        ),
+    },
+    "mr:0529-maximinus": {
+        EDITION_1914: (
+            "Translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English "
+            "says 'Maximus'."
+        ),
+    },
+    "mr:0625-prosperus": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'."
+        ),
+        EDITION_1749: (
+            "This eulogy conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian "
+            "writer."
+        ),
+    },
+    "mr:0703-thomas-apostolus": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona."
+        ),
+    },
+    "mr:0708-eugenius-iii": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III."
+        ),
+    },
+    "mr:0719-macrina": {
+        EDITION_1914: (
+            "Misprint: 'Marcina' for Macrina."
+        ),
+    },
+    "mr:0821-privatus": {
+        EDITION_1749: (
+            "This text joins the opening of Privatus's eulogy to the body of the eulogy of "
+            "Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English "
+            "prints both eulogies."
+        ),
+    },
+    "mr:0824-tatio": {
+        EDITION_1914: (
+            "Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' "
+            "(Diocletian)."
+        ),
+    },
+    "mr:0828-pelagius": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
+        ),
+    },
+    "mr:0829-basilla": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
+        ),
+    },
+    "mr:1017-florentius": {
+        EDITION_1914: (
+            "Translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus."
+        ),
+    },
+    "mr:1102-victorinus": {
+        EDITION_1914: (
+            "Translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not "
+            "Poitiers."
+        ),
+    },
+    "mr:1218-gatianus": {
+        EDITION_1914: (
+            "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
+        ),
+    },
+}
 
 # The Latin print's entry number where it differs from the CEI's (= the
 # workbook's), verified on the print's text layer.
@@ -1070,6 +1116,11 @@ def validate_editions(entries):
     errors = []
     by_id = {e["id"]: e for e in entries}
     for e in entries:
+        for edition, n in e.get("edition_notes", {}).items():
+            if edition not in EDITION_LABELS:
+                errors.append(f"{e['id']}: edition_notes for unknown edition {edition}")
+            elif not isinstance(n, str) or not n.strip():
+                errors.append(f"{e['id']}: empty edition_notes for {edition}")
         for edition, o in e.get("editions", {}).items():
             if edition not in EDITIONS_2004:
                 errors.append(f"{e['id']}: unknown edition {edition}")
@@ -1169,6 +1220,8 @@ def extract(workbook_path):
                 row_out["entry"] = LATIN_RENUMBERING[mr_id]
             if mr_id in ENTRY_NOTES:
                 row_out["note"] = (row_out.get("note", "") + " " + ENTRY_NOTES[mr_id]).strip()
+            if mr_id in EDITION_NOTES:
+                row_out["edition_notes"] = dict(EDITION_NOTES[mr_id])
             overrides = edition_overrides(mr_id, entry=row_out["entry"], asterisk=row_out["asterisk"],
                                           cei_entry=cei_entry, cei_asterisk=cei_asterisk)
             if overrides:
@@ -1354,6 +1407,8 @@ def write_markdown(entries, repo_root):
                     notes.append(f"also printed at {a['month']}/{a['day']} entry {a['entry']}")
             if e.get("note"):
                 notes.append(e["note"])
+            for edition, n in e.get("edition_notes", {}).items():
+                notes.append(f"{EDITION_LABELS[edition]}: {n}")
             if e["entry"] is None:
                 entry_cell = "—"
             elif e.get("unnumbered"):

@@ -343,7 +343,7 @@
 | 28 | 4 | `mr:0428-eusebius-et-socii` |  | TR | dies_natalis |  |  |
 | 28 | 5 | `mr:0428-vitalis` |  | IT | commemoratio |  |  |
 | 28 | 6 | `mr:0428-maximus-et-socii` |  | BG | dies_natalis |  |  |
-| 28 | 7 | `mr:0428-prudentius` |  | ES | dies_natalis |  | 1914 English translation error: the Latin has 'Episcopi et Confessoris', not a martyr. |
+| 28 | 7 | `mr:0428-prudentius` |  | ES | dies_natalis |  | 1914 English: Translation error: the Latin has 'Episcopi et Confessoris', not a martyr. |
 | 28 | 8 | `mr:0428-pamphilus` |  | IT | depositio |  |  |
 | 28 | 9 | `mr:0428-luchesius` | * | IT | dies_natalis |  |  |
 | 28 | 10 | `mr:0428-maria-ludovica-a-iesu` | * | FR | dies_natalis |  |  |

@@ -28,7 +28,7 @@
 | 2 | 7 | `mr:0702-ioannes-et-petrus-becchetti` | * | IT | commemoratio |  |  |
 | 2 | 8 | `mr:0702-bernardinus-realino` |  | IT | dies_natalis |  |  |
 | 2 | 9 | `mr:0702-eugenia-joubert` | * | BE | dies_natalis |  |  |
-| 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis | same as `mr:1221-thomas-apostolus` | 1914 English translation error: Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona. |
+| 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis | same as `mr:1221-thomas-apostolus` | 1914 English: Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona. |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY | commemoratio |  |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  |  |
@@ -109,7 +109,7 @@
 | 8 | 8 | `mr:0708-kilianus` |  | DE | dies_natalis |  |  |
 | 8 | 9 | `mr:0708-monachi-abrahamitae` |  | TR | dies_natalis |  |  |
 | 8 | 10 | `mr:0708-hadrianus-iii` | * | IT | dies_natalis | same as `mr:0907-hadrianus-iii` |  |
-| 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  | 1914 English translation error: Latin 'Eugenii Papae Tertii' is Eugenius III. |
+| 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III. |
 | 8 | 12 | `mr:0708-mancius-arakus` | * | JP | dies_natalis |  |  |
 | 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN | dies_natalis |  |  |
 | 9 | (1) | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN | dies_natalis |  |  |
@@ -268,7 +268,7 @@
 | 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
-| 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English typo: 'Marcina' for Macrina. |
+| 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
 | 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  |  |
 | 19 | 5 | `mr:0719-symmachus` |  | IT | dies_natalis |  |  |
 | 19 | 6 | `mr:0719-aurea` |  | ES | dies_natalis |  |  |

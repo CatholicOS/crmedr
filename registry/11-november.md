@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:1101-rupertus-mayer` | * | DE | dies_natalis |  |  |
 | 1 | 18 | `mr:1101-theodorus-georgius-romzsa` | * | UA | dies_natalis |  |  |
 | 2 | (1) | `mr:1102-omnium-fidelium-defunctorum` |  |  | commemoratio |  |  |
-| 2 | 2 | `mr:1102-victorinus` |  | SI | commemoratio |  | 1914 English translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not Poitiers. |
+| 2 | 2 | `mr:1102-victorinus` |  | SI | commemoratio |  | 1914 English: Translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not Poitiers. |
 | 2 | 3 | `mr:1102-iustus` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:1102-carterius-et-socii` |  | TR | dies_natalis |  |  |
 | 2 | 5 | `mr:1102-acindynus-et-socii` |  | IR | dies_natalis |  |  |

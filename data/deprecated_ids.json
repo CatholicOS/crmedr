@@ -850,7 +850,9 @@
   "same_eulogy": [
    "mr:0710-canutus"
   ],
-  "note": "Note for the 1914 English: \"whose birthday is the 7th of this month\" seems to be an error, as this would point to Canute Lavard (mr:0107-canutus-lavard), who was not a king"
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "\"Whose birthday is the 7th of this month\" seems to be an error, as this would point to Canute Lavard (mr:0107-canutus-lavard), who was not a king."
+  }
  },
  {
   "id": "mr:0119-paulus-et-socii",
@@ -5480,7 +5482,9 @@
   "same_eulogy": [
    "mr:0511-mocius"
   ],
-  "note": "1914 English translation error: the English has 'Lucius' where the Latin has 'Mucii'."
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "Translation error: 'Lucius' where the Latin has 'Mucii'."
+  }
  },
  {
   "id": "mr:0513-martyres-alexandriae",
@@ -10252,7 +10256,9 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
-  "note": "The 1914 text is the rewritten eulogy of the Twelve Brothers of Benevento and does not name Donatus or Felix; it succeeds the 1749 eulogy, which mentions the twelve brothers' feast and Benevento, but its subject differs."
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "This text is the rewritten eulogy of the Twelve Brothers of Benevento and does not name Donatus or Felix; it succeeds the 1749 eulogy, which mentions the twelve brothers' feast and Benevento, but its subject differs."
+  }
  },
  {
   "id": "mr:0901-anna-prophetissa",
@@ -10917,7 +10923,9 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": null,
-  "note": "The 1914 English joins the Octave and the Seven Sorrows in one sentence, with no clean point to split it; the Seven Sorrows half corresponds to mr:0915-maria-perdolens."
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "This text joins the Octave and the Seven Sorrows in one sentence, with no clean point to split it; the Seven Sorrows half corresponds to mr:0915-maria-perdolens."
+  }
  },
  {
   "id": "mr:0915-maximus-et-socii",
@@ -11332,7 +11340,9 @@
   "same_eulogy": [
    "mr:0415-paternus"
   ],
-  "note": "1914 English mistranslation: the 1749 Latin calls him 'Episcopi Abrincensis et Confessoris', not a martyr."
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "Translation error: the 1749 Latin calls him 'Episcopi Abrincensis et Confessoris', not a martyr."
+  }
  },
  {
   "id": "mr:0923-thecla",
@@ -12582,7 +12592,9 @@
   "same_eulogy": [
    "mr:0124-felicianus"
   ],
-  "note": "1914 English translation error: the Latin is a translation of relics (Translatio), not a birthday."
+  "edition_notes": {
+   "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin is a translation of relics (Translatio), not a birthday."
+  }
  },
  {
   "id": "mr:1020-georgius-et-aurelius",

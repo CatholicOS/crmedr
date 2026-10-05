@@ -188,7 +188,7 @@
 | 17 | 11 | `mr:1217-hyacinthus-cormier` | * | IT | dies_natalis |  |  |
 | 18 | 1 | `mr:1218-malachias-propheta` |  | IQ | commemoratio |  |  |
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
-| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | 1914 misprints Gatianus as 'Gratian' and Fabianus as 'Fabrian'. |
+| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | 1914 English: Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus. |
 | 18 | 4 | `mr:1218-flannanus` | * | IE | dies_natalis |  |  |
 | 18 | 5 | `mr:1218-winebaldus` | * | DE | dies_natalis |  |  |
 | 18 | 6 | `mr:1218-paulus-nguyen-van-my-et-petrus-truong-van` |  | VN | dies_natalis |  |  |

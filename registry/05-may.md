@@ -376,7 +376,7 @@
 | 28 | 13 | `mr:0528-ladislaus-demski` | * | DE | dies_natalis |  |  |
 | 28 | 14 | `mr:0528-antonius-iulianus-nowowiejski` | * | PL | dies_natalis |  |  |
 | 29 | 1 | `mr:0529-hesychius` |  | TR | dies_natalis | same as `mr:1118-hesychius` |  |
-| 29 | 2 | `mr:0529-maximinus` |  | DE | dies_natalis |  | 1914 English translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English says 'Maximus'. |
+| 29 | 2 | `mr:0529-maximinus` |  | DE | dies_natalis |  | 1914 English: Translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English says 'Maximus'. |
 | 29 | 3 | `mr:0529-sisinnius-et-socii` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0529-exsuperantius` |  | IT | dies_natalis | same as `mr:0530-exsuperantius` |  |
 | 29 | 5 | `mr:0529-senator` |  | IT | dies_natalis | same as `mr:0528-senator` |  |

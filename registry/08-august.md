@@ -311,7 +311,7 @@
 | 21 | 5 | `mr:0821-euprepius` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0821-luxorius` |  | IT | dies_natalis |  |  |
 | 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  |  |
-| 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | The 1749 text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
+| 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | 1749 Latin: This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
 | 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |
 | 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
@@ -348,7 +348,7 @@
 | 23 | 14 | `mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero` | * | ES | dies_natalis |  |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE | dies_natalis |  |  |
 | 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis |  |  |
-| 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  | 1914 English translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian). |
+| 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  | 1914 English: Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian). |
 | 24 | 3 | `mr:0824-audoenus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR | dies_natalis |  |  |
 | 24 | 5 | `mr:0824-rosa` |  | PE | dies_natalis | same as `mr:0826-rosa`; same as `mr:0830-rosa` |  |
@@ -410,7 +410,7 @@
 | 27 | 20 | `mr:0827-maria-a-columna-izquierdo-albero` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0828-augustinus` |  | DZ | dies_natalis |  |  |
 | 28 | 2 | `mr:0828-hermes` |  | IT | dies_natalis |  |  |
-| 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  | 1914 English translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. |
+| 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  | 1914 English: Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. |
 | 28 | 4 | `mr:0828-iulianus` |  | FR | dies_natalis |  |  |
 | 28 | 5 | `mr:0828-alexander` |  | TR | dies_natalis |  |  |
 | 28 | 6 | `mr:0828-restitutus` |  | TN | dies_natalis | same as `mr:1209-restitutus` |  |
@@ -427,7 +427,7 @@
 | 28 | 17 | `mr:0828-aurelius-ample-alcaide` | * | ES | dies_natalis |  |  |
 | 28 | 18 | `mr:0828-alphonsus-maria-mazurek` | * | PL | dies_natalis |  |  |
 | 29 | (1) | `mr:0829-ioannes-baptista` |  | JO | dies_natalis |  |  |
-| 29 | 2 | `mr:0829-basilla` |  | HR | dies_natalis |  | 1914 English translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna. |
+| 29 | 2 | `mr:0829-basilla` |  | HR | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna. |
 | 29 | 3 | `mr:0829-sabina` |  | IT | commemoratio |  |  |
 | 29 | 4 | `mr:0829-adelphus` |  | FR | dies_natalis |  |  |
 | 29 | 5 | `mr:0829-victor` | * | FR | dies_natalis |  |  |

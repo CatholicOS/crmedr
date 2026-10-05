@@ -927,10 +927,12 @@ counterpart is uncertain carry a note instead (mr:0123-agathangelus).
 
 **Links and notes (applied, October 2026, #51 part 5)**: the last set of the audit links
 historical eulogies to the eulogy they continue on another day or under another subject, and
-records the errors of the sources as curator notes. Most notes are errors of the unofficial
-1914 English against the 1749 Latin (Brixia rendered Brixen at mr:0127-angela-merici, Domitian
-for Diocletian at mr:0824-tatio, Pettau rendered Poitiers at mr:1102-victorinus); the notes of
-current IDs are kept in `ENTRY_NOTES`. Three Latin subjects are corrected (Sancta Fides,
+records the errors of the sources as curator notes. An error of one edition's text is a note on
+that edition only, in the new `edition_notes` field (`EDITION_NOTES` for current IDs): most are
+errors of the unofficial 1914 English against the 1749 Latin (Brixia rendered Brixen at
+mr:0127-angela-merici, Domitian for Diocletian at mr:0824-tatio, Pettau rendered Poitiers at
+mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-privatus). Remarks on
+the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida. Three Latin subjects are corrected (Sancta Fides,
 Sancta Marina, Sanctus Ioannes Therestus).
 
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four

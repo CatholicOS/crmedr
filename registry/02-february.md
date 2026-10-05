@@ -184,7 +184,7 @@
 | 14 | 6 | `mr:0214-eleuchadius` |  | IT | dies_natalis |  |  |
 | 14 | 7 | `mr:0214-auxentius` |  | TR | dies_natalis |  |  |
 | 14 | 8 | `mr:0214-nostrianus` | * | IT | commemoratio |  |  |
-| 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  | 1914 English translation error: the Latin is Antoninus, not Antonius/Anthony. |
+| 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  | 1914 English: Translation error: the Latin is Antoninus, not Antonius (Anthony). |
 | 14 | 10 | `mr:0214-ioannes-baptista-a-conceptione` |  | ES | dies_natalis |  |  |
 | 14 | 11 | `mr:0214-vincentius-vilar-david` | * | ES | dies_natalis |  |  |
 | 15 | 1 | `mr:0215-onesimus` |  |  | commemoratio | same as `mr:0216-onesimus` |  |
