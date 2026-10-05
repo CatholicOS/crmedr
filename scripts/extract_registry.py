@@ -803,7 +803,7 @@ for _id, _n in LATIN_PLAIN.items():
     ASTERISK_OVERRIDES[_id] = (
         False,
         f"Plain entry ({_n}., no asterisk) in the Latin editio altera 2004 "
-        "print, visually verified on the page scan; the Italian (CEI) edition "
+        "print; the Italian (CEI) edition "
         "marks the entry with an asterisk.",
     )
 
@@ -820,8 +820,7 @@ PRINT_ONLY_ENTRIES = [
         "asterisk": True,
         "country": "FR",
         "note": "Entry 2* in the Latin editio altera 2004 print; absent from "
-                "the Italian (CEI) edition, from Mons. Barba's Word "
-                "transcription, and from the digitized workbook.",
+                "the Italian (CEI) edition.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
     {
@@ -832,10 +831,8 @@ PRINT_ONLY_ENTRIES = [
         "asterisk": True,
         "country": "ES",
         "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in "
-                "the Italian (CEI) edition and in Mons. Barba's Word "
-                "transcription; absent from the digitized workbook. "
-                "Bl. Manuel González García was canonized in 2016: status "
-                "change with no ID change.",
+                "the Italian (CEI) edition. Manuel González García, blessed in "
+                "the 2004 editions, was canonized in 2016.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"entry": 11}},
     },
     {
@@ -845,8 +842,8 @@ PRINT_ONLY_ENTRIES = [
         "entry": 9,
         "asterisk": True,
         "country": "IT",
-        "note": "Entry 9* at June 10 in the Latin editio altera 2004 print "
-                "(verified on the page scan); the Italian (CEI) edition prints "
+        "note": "Entry 9* at June 10 in the Latin editio altera 2004 print; "
+                "the Italian (CEI) edition prints "
                 "the same eulogy at December 10, entry 9* "
                 "(mr:1210-marcus-antonius-durando).",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
@@ -877,8 +874,7 @@ EDITION_NOTES = {
     "mr:0217-septem-fundatores-servorum-mariae": {
         EDITION_1749: (
             "This edition prints the eulogy of Alexius Falconieri alone, one of the seven "
-            "founders; the 2004 edition commemorates the seven founders together. The historical "
-            "eulogy is kept under this ID."
+            "founders; the 2004 edition commemorates the seven founders together."
         ),
     },
     "mr:0709-maria-a-iesu-crucifixo": {

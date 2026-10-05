@@ -167,7 +167,7 @@
 | 12 | 8 | `mr:0812-carolus-meehan` | * | GB | dies_natalis |  |  |
 | 12 | 9 | `mr:0812-innocentius-xi` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0812-petrus-jarrige-de-la-morelie-de-puyredon` | * | FR | dies_natalis |  |  |
-| 12 | 11 | `mr:0812-iacobus-do-mai-nam-et-socii` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 12 | 11 | `mr:0812-iacobus-do-mai-nam-et-socii` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 12 | 12 | `mr:0812-victoria-diez-y-bustos-de-molina` | * | ES | dies_natalis |  |  |
 | 12 | 13 | `mr:0812-flavius-argueso-gonzalez` | * | ES | dies_natalis |  |  |
 | 12 | 14 | `mr:0812-sebastianus-calvo-martinez-et-socii` | * | ES | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | 1749 Latin: This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
 | 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |
-| 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 21 | 12 | `mr:0821-victoria-rasoamanarivo` | * | MG | dies_natalis |  |  |
 | 21 | 13 | `mr:0821-salvator-estrugo-solves` | * | ES | dies_natalis |  |  |
 | 21 | 14 | `mr:0821-raymundus-peiro-victori` | * | ES | dies_natalis |  |  |
