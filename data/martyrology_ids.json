@@ -10025,10 +10025,12 @@
       "country": "IT",
       "typology": "dies_natalis",
       "unnumbered": true,
-      "note": "On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID.",
       "same_eulogy": [
         "mr:0212-septem-fundatores-servorum-mariae"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_1749": "This edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID."
+      }
     },
     {
       "id": "mr:0217-theodorus-tiro",
@@ -38495,7 +38497,6 @@
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
-      "note": "Entry 11* at July 9 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003.",
       "editions": {
         "martyrologium_romanum_2004": {
           "absent": true
@@ -38503,6 +38504,9 @@
         "martyrologium_romanum_2004_en_unofficial": {
           "absent": true
         }
+      },
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003."
       }
     },
     {
@@ -39011,7 +39015,6 @@
       "asterisk": false,
       "country": "TR",
       "typology": "dies_natalis",
-      "note": "Entry 1 at July 12 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered.",
       "editions": {
         "martyrologium_romanum_2004": {
           "absent": true
@@ -39019,6 +39022,9 @@
         "martyrologium_romanum_2004_en_unofficial": {
           "absent": true
         }
+      },
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered."
       }
     },
     {
@@ -50358,7 +50364,6 @@
       "asterisk": false,
       "country": "IT",
       "typology": "depositio",
-      "note": "Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias.",
       "editions": {
         "martyrologium_romanum_2004": {
           "absent": true
@@ -50366,6 +50371,9 @@
         "martyrologium_romanum_2004_en_unofficial": {
           "absent": true
         }
+      },
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias."
       }
     },
     {
@@ -74376,7 +74384,6 @@
       "asterisk": true,
       "country": "IT",
       "typology": "dies_natalis",
-      "note": "The CEI's placement (10 December, entry 9*) of the same eulogy the Latin print and the English edition give at 10 June (mr:0610-marcus-antonius-durando).",
       "editions": {
         "martyrologium_romanum_2004": {
           "absent": true
@@ -74387,7 +74394,10 @@
       },
       "same_eulogy": [
         "mr:0610-marcus-antonius-durando"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "The Latin print and the English edition give this eulogy at 10 June (mr:0610-marcus-antonius-durando)."
+      }
     },
     {
       "id": "mr:1210-gundisalvus-vines-masip",

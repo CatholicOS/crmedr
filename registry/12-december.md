@@ -104,7 +104,7 @@
 | 10 | 6 | `mr:1210-edmundus-gennings-et-swithinus-wells` |  | GB | dies_natalis |  |  |
 | 10 | 7 | `mr:1210-polydorus-plasden-et-eustatius-white` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:1210-ioannes-roberts` |  | GB | dies_natalis |  |  |
-| 10 | 9 | `mr:1210-marcus-antonius-durando` | * | IT | dies_natalis | Latin: absent; English: absent; same as `mr:0610-marcus-antonius-durando` | The CEI's placement (10 December, entry 9*) of the same eulogy the Latin print and the English edition give at 10 June (mr:0610-marcus-antonius-durando). |
+| 10 | 9 | `mr:1210-marcus-antonius-durando` | * | IT | dies_natalis | Latin: absent; English: absent; same as `mr:0610-marcus-antonius-durando` | 2004 Italian: The Latin print and the English edition give this eulogy at 10 June (mr:0610-marcus-antonius-durando). |
 | 10 | 9 | `mr:1210-gundisalvus-vines-masip` | * | ES | dies_natalis | CEI: entry 10 |  |
 | 10 | 10 | `mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo` | * | ES | dies_natalis | CEI: entry 11 |  |
 | 11 | (1) | `mr:1211-damasus-i` |  | IT | dies_natalis |  |  |

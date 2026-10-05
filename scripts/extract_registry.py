@@ -690,31 +690,6 @@ PLACEMENT_OVERRIDES = {}
 # absent from the Latin editio altera 2004 print (all verified on the page
 # scans of both editions, July 2026).
 ENTRY_NOTES = {
-    "mr:0217-septem-fundatores-servorum-mariae": (
-        "On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of "
-        "the seven founders; the 2004 edition commemorates the seven founders together. The "
-        "historical eulogy is kept under this ID."
-    ),
-    "mr:1210-marcus-antonius-durando": (
-        "The CEI's placement (10 December, entry 9*) of the same eulogy the "
-        "Latin print and the English edition give at 10 June "
-        "(mr:0610-marcus-antonius-durando)."
-    ),
-    "mr:0712-proclus-et-hilarion": (
-        "Entry 1 at July 12 in the Italian (CEI) edition; absent from the "
-        "Latin editio altera 2004 print, whose July 12 numbering begins at 2 "
-        "with the gap left unrenumbered."
-    ),
-    "mr:0825-eusebius-et-socii": (
-        "Entry 3 at August 25 in the Italian (CEI) edition; absent from the "
-        "Latin editio altera 2004 print, where the day's numbered entries "
-        "begin at 3 (Genesius) after the two unnumbered memorias."
-    ),
-    "mr:0709-maria-a-iesu-crucifixo": (
-        "Entry 11* at July 9 in the Italian (CEI) edition; absent from the "
-        "Latin editio altera 2004 print, whose July 9 ends at entry 10*. "
-        "Bl. Marija Petković was beatified on 6 June 2003."
-    ),
     # 1749/1914 source errors and identity remarks found in the #51 audit (set 6, reviewed).
     "mr:1003-candida": (
         "The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has "
@@ -899,6 +874,37 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0217-septem-fundatores-servorum-mariae": {
+        EDITION_1749: (
+            "This edition prints the eulogy of Alexius Falconieri alone, one of the seven "
+            "founders; the 2004 edition commemorates the seven founders together. The historical "
+            "eulogy is kept under this ID."
+        ),
+    },
+    "mr:0709-maria-a-iesu-crucifixo": {
+        EDITION_IT: (
+            "Absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. "
+            "Marija Petković was beatified on 6 June 2003."
+        ),
+    },
+    "mr:0712-proclus-et-hilarion": {
+        EDITION_IT: (
+            "Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 "
+            "with the gap left unrenumbered."
+        ),
+    },
+    "mr:0825-eusebius-et-socii": {
+        EDITION_IT: (
+            "Absent from the Latin editio altera 2004 print, where the day's numbered entries "
+            "begin at 3 (Genesius) after the two unnumbered memorias."
+        ),
+    },
+    "mr:1210-marcus-antonius-durando": {
+        EDITION_IT: (
+            "The Latin print and the English edition give this eulogy at 10 June "
+            "(mr:0610-marcus-antonius-durando)."
+        ),
+    },
     "mr:0130-theophilus-iuvenis": {
         EDITION_EN: (
             "Renders the cognomen as \"the Youth\" (Latin cognoménto Iúvenis, Italian (CEI) detto "

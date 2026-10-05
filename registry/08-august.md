@@ -361,7 +361,7 @@
 | 24 | 12 | `mr:0824-ceslaus-jozwiak-et-socii` | * | DE | dies_natalis |  |  |
 | 25 | (1) | `mr:0825-ludovicus-nonus` |  | FR | dies_natalis |  |  |
 | 25 | (2) | `mr:0825-iosephus-de-calasanz` |  | IT | dies_natalis | same as `mr:0827-iosephus-calasanctius` |  |
-| 25 | 3 | `mr:0825-eusebius-et-socii` |  | IT | depositio | Latin: absent; English: absent | Entry 3 at August 25 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias. |
+| 25 | 3 | `mr:0825-eusebius-et-socii` |  | IT | depositio | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, where the day's numbered entries begin at 3 (Genesius) after the two unnumbered memorias. |
 | 25 | 3 | `mr:0825-genesius` |  | FR | dies_natalis | CEI: entry 4 |  |
 | 25 | 4 | `mr:0825-geruntius` |  | ES | dies_natalis | CEI: entry 5 |  |
 | 25 | 5 | `mr:0825-severus` | * | FR | dies_natalis | CEI: entry 6 |  |

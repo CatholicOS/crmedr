@@ -450,6 +450,7 @@ class EditionNotes51Test(unittest.TestCase):
         self.assertIn(r.EDITION_1749, entries["mr:0821-privatus"]["edition_notes"])
         self.assertIn("Peter the Younger", entries["mr:0410-beda"]["edition_notes"][r.EDITION_EN])
         self.assertNotIn("mr:0410-beda", r.ENTRY_NOTES)
+        self.assertIn(r.EDITION_IT, entries["mr:0712-proclus-et-hilarion"]["edition_notes"])
         # current IDs keep theirs in EDITION_NOTES, so a regeneration keeps them
         for mr_id, e in entries.items():
             if e.get("edition_notes") and not e.get("deprecated"):

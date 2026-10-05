@@ -122,7 +122,7 @@
 | 9 | 8 | `mr:0709-gregorius-grassus-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 9 | `mr:0709-paulina-a-corde-iesu-agonizante` |  | BR | dies_natalis |  |  |
 | 9 | 10 | `mr:0709-fidel-chijnacki` | * | DE | dies_natalis |  |  |
-| 9 | 11 | `mr:0709-maria-a-iesu-crucifixo` | * | IT | dies_natalis | Latin: absent; English: absent | Entry 11* at July 9 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003. |
+| 9 | 11 | `mr:0709-maria-a-iesu-crucifixo` | * | IT | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003. |
 | 10 | 1 | `mr:0710-felix-et-philippus` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:0710-rufina-et-secunda` |  | IT | dies_natalis |  |  |
 | 10 | 3 | `mr:0710-anatolia-et-victoria` |  | IT | dies_natalis | same as `mr:1223-victoria` |  |
@@ -152,7 +152,7 @@
 | 11 | 13 | `mr:0711-thomas-benstead-et-thomas-sprott` | * | GB | commemoratio |  |  |
 | 11 | 14 | `mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii` | * | FR | dies_natalis |  |  |
 | 11 | 15 | `mr:0711-anna-an-xinzhi-et-socii` |  | CN | dies_natalis |  |  |
-| 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | Entry 1 at July 12 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
+| 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
 | 12 | 2 | `mr:0712-fortunatus-et-hermagora` |  | IT | dies_natalis |  |  |
 | 12 | 3 | `mr:0712-nabor-et-felix` |  | DZ | dies_natalis |  |  |
 | 12 | 4 | `mr:0712-paternianus` |  | IT | dies_natalis |  |  |
