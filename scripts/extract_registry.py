@@ -695,21 +695,6 @@ ENTRY_NOTES = {
         "the seven founders; the 2004 edition commemorates the seven founders together. The "
         "historical eulogy is kept under this ID."
     ),
-    "mr:0130-theophilus-iuvenis": (
-        "The unofficial English 2004 edition renders the cognomen as \"the Youth\" (Latin "
-        "cognoménto Iúvenis, Italian (CEI) detto il Giovane); \"the Younger\" is the conventional "
-        "English epithet, which the English subject follows."
-    ),
-    "mr:0212-antonius-caulea": (
-        "The unofficial English 2004 edition dates him \"under Emperor Leo III the Isaurian\"; the "
-        "Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is "
-        "Leo VI the Wise."
-    ),
-    "mr:0410-beda": (
-        "The unofficial English 2004 edition mistranslates the subject as \"Saint Peter the "
-        "Younger\"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda "
-        "il Giovane. The English subject follows the Latin."
-    ),
     "mr:1210-marcus-antonius-durando": (
         "The CEI's placement (10 December, entry 9*) of the same eulogy the "
         "Latin print and the English edition give at 10 June "
@@ -914,6 +899,27 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0130-theophilus-iuvenis": {
+        EDITION_EN: (
+            "Renders the cognomen as \"the Youth\" (Latin cognoménto Iúvenis, Italian (CEI) detto "
+            "il Giovane); \"the Younger\" is the conventional English epithet, which the English "
+            "subject follows."
+        ),
+    },
+    "mr:0212-antonius-caulea": {
+        EDITION_EN: (
+            "Translation error: \"under Emperor Leo III the Isaurian\", where the Latin print has "
+            "Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the "
+            "Wise."
+        ),
+    },
+    "mr:0410-beda": {
+        EDITION_EN: (
+            "Translation error: \"Saint Peter the Younger\" for the subject; the Latin print has "
+            "sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject "
+            "follows the Latin."
+        ),
+    },
     "mr:0118-deicolus": {
         EDITION_1914: (
             "Translation error: the Latin 'In monasterio Lutrensi, in Burgundia' is Lure, in "

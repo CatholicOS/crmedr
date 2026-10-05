@@ -118,7 +118,7 @@
 | 10 | 1 | `mr:0410-terentius-et-socii` |  | TN | dies_natalis |  |  |
 | 10 | 2 | `mr:0410-apollonius` |  | EG | dies_natalis |  |  |
 | 10 | 3 | `mr:0410-palladius` | * | FR | dies_natalis |  |  |
-| 10 | 4 | `mr:0410-beda` | * | IT | dies_natalis |  | The unofficial English 2004 edition mistranslates the subject as "Saint Peter the Younger"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject follows the Latin. |
+| 10 | 4 | `mr:0410-beda` | * | IT | dies_natalis |  | 2004 English: Translation error: "Saint Peter the Younger" for the subject; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject follows the Latin. |
 | 10 | 5 | `mr:0410-macarius` |  | BE | dies_natalis |  |  |
 | 10 | 6 | `mr:0410-fulbertus` | * | FR | dies_natalis |  |  |
 | 10 | 7 | `mr:0410-antonius-neyrot` | * | TN | dies_natalis |  |  |
