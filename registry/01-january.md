@@ -48,7 +48,7 @@
 | 3 | 9 | `mr:0103-lucianus` | * | IT | dies_natalis |  |  |
 | 3 | 10 | `mr:0103-cyriacus-elias-chavara` | * | IN | dies_natalis |  |  |
 | 4 | 1 | `mr:0104-hermes-et-caius` |  | RO | dies_natalis |  |  |
-| 4 | 2 | `mr:0104-abrunculus` | * | FR | dies_natalis | CEI: absent | Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition, from Mons. Barba's Word transcription, and from the digitized workbook. |
+| 4 | 2 | `mr:0104-abrunculus` | * | FR | dies_natalis | CEI: absent | Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition. |
 | 4 | 3 | `mr:0104-gregorius` |  | FR | dies_natalis | CEI: entry 2 |  |
 | 4 | 4 | `mr:0104-ferreolus` | * | FR | dies_natalis | CEI: entry 3, asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 4 | 5 | `mr:0104-rigomerus` | * | FR | dies_natalis | CEI: entry 4, asterisk False | Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
@@ -58,7 +58,7 @@
 | 4 | 9 | `mr:0104-christiana-menabuoi` | * | IT | dies_natalis | CEI: entry 8 |  |
 | 4 | 10 | `mr:0104-thomas-plumtree` | * | GB | dies_natalis | CEI: entry 9 |  |
 | 4 | 11 | `mr:0104-elisabeth-anna-seton` |  | US | dies_natalis | CEI: entry 10 |  |
-| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition and in Mons. Barba's Word transcription; absent from the digitized workbook. Bl. Manuel González García was canonized in 2016: status change with no ID change. |
+| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition. Manuel González García, blessed in the 2004 editions, was canonized in 2016. |
 | 5 | 1 | `mr:0105-syncletica` |  | EG | dies_natalis |  |  |
 | 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis | same as `mr:0322-deogratias` |  |
 | 5 | 3 | `mr:0105-aemiliana` |  | IT | commemoratio |  |  |

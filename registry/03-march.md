@@ -251,7 +251,7 @@
 | 23 | 8 | `mr:0323-petrus-higgins` | * | IE | dies_natalis |  |  |
 | 23 | 9 | `mr:0323-iosephus-oriol` |  | ES | dies_natalis |  |  |
 | 23 | 10 | `mr:0323-annuntiata-cocchetti` | * | IT | dies_natalis |  |  |
-| 23 | 11 | `mr:0323-rebecca-de-himlaya` |  | LB | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 23 | 11 | `mr:0323-rebecca-de-himlaya` |  | LB | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 23 | 12 | `mr:0323-methodius-dominicus-trcka` | * | SK | dies_natalis |  |  |
 | 24 | 1 | `mr:0324-timolaus-et-socii` |  | PS | dies_natalis |  |  |
 | 24 | 2 | `mr:0324-secundulus` |  | DZ | dies_natalis |  |  |

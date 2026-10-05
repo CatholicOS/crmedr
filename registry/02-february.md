@@ -204,7 +204,7 @@
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  |  |
-| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | 1749 Latin: This edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
+| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | 1749 Latin: This edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |

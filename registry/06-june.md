@@ -128,7 +128,7 @@
 | 10 | 6 | `mr:0610-henricus-de-bauzano` | * | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0610-ioannes-dominicus` | * | HU | dies_natalis |  |  |
 | 10 | 8 | `mr:0610-thomas-green-et-gualterius-pierson` | * | GB | dies_natalis |  |  |
-| 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | Entry 9* at June 10 in the Latin editio altera 2004 print (verified on the page scan); the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando). |
+| 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | Entry 9* at June 10 in the Latin editio altera 2004 print; the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando). |
 | 10 | 10 | `mr:0610-eduardus-poppe` | * | BE | dies_natalis | CEI: entry 9 |  |
 | 11 | (1) | `mr:0611-barnabas` |  | IL | dies_natalis |  |  |
 | 11 | 2 | `mr:0611-maximus` |  | IT | dies_natalis | same as `mr:0610-maximus` |  |

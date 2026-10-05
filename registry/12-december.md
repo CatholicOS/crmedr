@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:1201-castritianus` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:1201-florentia` | * | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:1201-leontius` | * | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 1 | 6 | `mr:1201-agericus` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:1201-eligius` |  | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:1201-antonius-bonfadini` | * | IT | dies_natalis |  |  |
@@ -31,7 +31,7 @@
 | 3 | 2 | `mr:1203-sophonias-propheta` |  | PS | commemoratio |  |  |
 | 3 | 3 | `mr:1203-cassianus` |  | MA | dies_natalis |  |  |
 | 3 | 4 | `mr:1203-birinus` |  | GB | depositio |  |  |
-| 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB | dies_natalis |  |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
 | 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis | same as `mr:0327-ioannes-damascenus`; same as `mr:0506-ioannes-damascenus` |  |
@@ -129,7 +129,7 @@
 | 12 | 8 | `mr:1212-bartholus-buonpedoni` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:1212-conradus-de-ophyda` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT | commemoratio |  |  |
-| 12 | 11 | `mr:1212-simon-phan-dac-hoa` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print, visually verified on the page scan; the Italian (CEI) edition marks the entry with an asterisk. |
+| 12 | 11 | `mr:1212-simon-phan-dac-hoa` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
 | 12 | 12 | `mr:1212-pius-bartosik` | * | PL | dies_natalis |  |  |
 | 13 | (1) | `mr:1213-lucia` |  | IT | dies_natalis |  |  |
 | 13 | 2 | `mr:1213-aristo` |  | IT | dies_natalis |  |  |
