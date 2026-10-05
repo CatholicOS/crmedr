@@ -63,7 +63,7 @@
 | 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis | same as `mr:0322-deogratias` |  |
 | 5 | 3 | `mr:0105-aemiliana` |  | IT | commemoratio |  |  |
 | 5 | 4 | `mr:0105-convoio` | * | FR | dies_natalis |  |  |
-| 5 | 5 | `mr:0105-eduardus-confessor` |  | GB | dies_natalis |  |  |
+| 5 | 5 | `mr:0105-eduardus-confessor` |  | GB | dies_natalis | same as `mr:1013-eduardus` |  |
 | 5 | 6 | `mr:0105-gerlacus` | * | NL | dies_natalis |  |  |
 | 5 | 7 | `mr:0105-rogerius` | * | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0105-franciscus-peltier-et-socii` | * | FR | dies_natalis |  |  |
@@ -77,7 +77,7 @@
 | 6 | 2 | `mr:0106-iulianus-et-basilissa` |  | EG | dies_natalis |  |  |
 | 6 | 3 | `mr:0106-felix` | * | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:0106-macarius` | * | DE | dies_natalis |  |  |
-| 6 | 5 | `mr:0106-raymundus-de-penyafort` |  | ES | dies_natalis |  |  |
+| 6 | 5 | `mr:0106-raymundus-de-penyafort` |  | ES | dies_natalis | same as `mr:0123-raymundus-de-penafort` |  |
 | 6 | 6 | `mr:0106-petrus-thomas` | * | CY | dies_natalis |  |  |
 | 6 | 7 | `mr:0106-andreas-corsini` |  | IT | dies_natalis | same as `mr:0204-andreas-corsini` |  |
 | 6 | 8 | `mr:0106-ioannes-de-ribera` |  | ES | dies_natalis |  |  |
@@ -123,7 +123,7 @@
 | 9 | 10 | `mr:0109-iosephus-pawlowski-et-casimirus-grelewskus` | * | DE | dies_natalis |  |  |
 | 10 | 1 | `mr:0110-miltiades` |  | IT | dies_natalis | same as `mr:1210-melchiades` |  |
 | 10 | 2 | `mr:0110-paulus` |  | EG | dies_natalis |  |  |
-| 10 | 3 | `mr:0110-gregorius-nyssenus` |  | TR | dies_natalis |  |  |
+| 10 | 3 | `mr:0110-gregorius-nyssenus` |  | TR | dies_natalis | same as `mr:0309-gregorius` |  |
 | 10 | 4 | `mr:0110-ioannes` |  | IL | dies_natalis |  |  |
 | 10 | 5 | `mr:0110-petronius` | * | FR | dies_natalis |  |  |
 | 10 | 6 | `mr:0110-marcianus` |  | TR | dies_natalis |  |  |
@@ -232,7 +232,7 @@
 | 18 | 2 | `mr:0118-cosconius-et-socii` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:0118-volusianus` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:0118-prisca` |  | IT | commemoratio |  |  |
-| 18 | 5 | `mr:0118-deicolus` |  | FR | dies_natalis |  |  |
+| 18 | 5 | `mr:0118-deicolus` |  | FR | dies_natalis |  | 1914 English translation error: Latin 'In monasterio Lutrensi, in Burgundia' (Lure, Burgundy), not Brittany. |
 | 18 | 6 | `mr:0118-beatrix-estensis` | * | IT | dies_natalis |  |  |
 | 18 | 7 | `mr:0118-margarita` |  | HU | dies_natalis |  |  |
 | 18 | 8 | `mr:0118-facius` | * | IT | dies_natalis |  |  |
@@ -255,17 +255,17 @@
 | 19 | 12 | `mr:0119-marcellus-spinola-y-maestre` | * | ES | dies_natalis |  |  |
 | 20 | (1) | `mr:0120-fabianus` |  | IT | dies_natalis |  |  |
 | 20 | (2) | `mr:0120-sebastianus` |  | IT | dies_natalis |  |  |
-| 20 | 3 | `mr:0120-ascla` |  | EG | dies_natalis |  |  |
+| 20 | 3 | `mr:0120-ascla` |  | EG | dies_natalis | same as `mr:0123-ascla` |  |
 | 20 | 4 | `mr:0120-neophytus` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0120-euthymius` |  | PS | dies_natalis |  |  |
-| 20 | 6 | `mr:0120-wulfstanus` |  | GB | dies_natalis |  |  |
+| 20 | 6 | `mr:0120-wulfstanus` |  | GB | dies_natalis | same as `mr:0119-wulstanus` |  |
 | 20 | 7 | `mr:0120-benedictus-ricasoli` | * | IT | dies_natalis |  |  |
 | 20 | 8 | `mr:0120-henricus` | * | FI | dies_natalis |  |  |
 | 20 | 9 | `mr:0120-eustochius-calafato` |  | IT | dies_natalis |  |  |
 | 20 | 10 | `mr:0120-stephanus-min-kuk-ka` |  | KR | dies_natalis |  |  |
 | 20 | 11 | `mr:0120-maria-christina-ab-immaculata` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0120-cyprianus-iwene-tansi` | * | GB | dies_natalis |  |  |
-| 21 | (1) | `mr:0121-agnes` |  | IT | depositio |  |  |
+| 21 | (1) | `mr:0121-agnes` |  | IT | depositio | same as `mr:0128-agnes` |  |
 | 21 | 2 | `mr:0121-publius` |  | GR | commemoratio |  |  |
 | 21 | 3 | `mr:0121-fructuosus-et-socii` |  | ES | dies_natalis |  |  |
 | 21 | 4 | `mr:0121-patroclus` |  | FR | dies_natalis |  |  |
@@ -299,7 +299,7 @@
 | 23 | 5 | `mr:0123-hildephonsus` |  | ES | dies_natalis |  |  |
 | 23 | 6 | `mr:0123-maimbodus` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0123-andreas-chong-hwa-gyong` |  | KR | dies_natalis |  |  |
-| 24 | (1) | `mr:0124-franciscus-de-sales` |  | CH | depositio |  |  |
+| 24 | (1) | `mr:0124-franciscus-de-sales` |  | CH | depositio | same as `mr:0129-franciscus-salesius` |  |
 | 24 | 2 | `mr:0124-felicianus` |  | IT | dies_natalis | same as `mr:1020-felicianus` |  |
 | 24 | 3 | `mr:0124-sabinianus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0124-babyla` |  | TR | dies_natalis |  |  |
@@ -324,7 +324,7 @@
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES | dies_natalis |  |  |
 | 25 | 14 | `mr:0125-maria-antonia-grillo` | * | EG | dies_natalis |  |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE | dies_natalis |  |  |
-| 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis | same as `mr:0206-titus` |  |
+| 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis | same as `mr:0124-timotheus`; same as `mr:0206-titus` |  |
 | 26 | 2 | `mr:0126-theogenes` |  | DZ | dies_natalis |  |  |
 | 26 | 3 | `mr:0126-paula` |  | PS | dies_natalis |  |  |
 | 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL | dies_natalis |  |  |
@@ -332,7 +332,7 @@
 | 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE | dies_natalis |  |  |
-| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0601-angela-merici` |  |
+| 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0531-angela-merici`; same as `mr:0601-angela-merici` | 1914 English translation error: Latin Brixia is Brescia, not Brixen. |
 | 27 | 2 | `mr:0127-iulianus-sorae` |  | IT | commemoratio |  |  |
 | 27 | 3 | `mr:0127-iulianus-cenomanum` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0127-devota` | * | FR | commemoratio |  |  |
@@ -361,7 +361,7 @@
 | 29 | 3 | `mr:0129-constantius` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis | same as `mr:0125-iuventinus-et-maximus` |  |
 | 29 | 5 | `mr:0129-valerius` |  | DE | dies_natalis |  |  |
-| 29 | 6 | `mr:0129-aphraates` |  | TR | dies_natalis |  |  |
+| 29 | 6 | `mr:0129-aphraates` |  | TR | dies_natalis | same as `mr:0407-aphraates` |  |
 | 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  |  |
 | 29 | 8 | `mr:0129-sulpicius-severus` |  | FR | dies_natalis |  |  |
 | 29 | 9 | `mr:0129-villana-de-bottis` | * | IT | dies_natalis |  |  |

@@ -154,7 +154,7 @@
 | 11 | 2 | `mr:0911-felix-et-regula` | * | CH | dies_natalis |  |  |
 | 11 | 3 | `mr:0911-paphnutius` |  | EG | commemoratio |  |  |
 | 11 | 4 | `mr:0911-patiens` |  | FR | dies_natalis |  |  |
-| 11 | 5 | `mr:0911-sacerdos` |  | FR | dies_natalis |  |  |
+| 11 | 5 | `mr:0911-sacerdos` |  | FR | dies_natalis | same as `mr:0912-sacerdos` |  |
 | 11 | 6 | `mr:0911-daniel` | * | GB | dies_natalis |  |  |
 | 11 | 7 | `mr:0911-adelphius` | * | FR | dies_natalis |  |  |
 | 11 | 8 | `mr:0911-leudinus` | * | FR | dies_natalis |  |  |
@@ -206,7 +206,7 @@
 | 15 | 8 | `mr:0915-aichadrus` |  | FR | dies_natalis |  |  |
 | 15 | 9 | `mr:0915-emila-et-ieremias` |  | ES | dies_natalis |  |  |
 | 15 | 10 | `mr:0915-rolandus-de-medicis` | * | IT | dies_natalis |  |  |
-| 15 | 11 | `mr:0915-catharina-fieschi` |  | IT | dies_natalis |  |  |
+| 15 | 11 | `mr:0915-catharina-fieschi` |  | IT | dies_natalis | same as `mr:0322-catharina` |  |
 | 15 | 12 | `mr:0915-camillus-costanzo` | * | JP | dies_natalis |  |  |
 | 15 | 13 | `mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis` | * | MX | dies_natalis |  |  |
 | 15 | 14 | `mr:0915-antonius-maria-schwartz` | * | AT | dies_natalis |  |  |
@@ -231,7 +231,7 @@
 | 16 | 16 | `mr:0916-andreas-kim-tae-gon` |  | KR | dies_natalis |  |  |
 | 16 | 17 | `mr:0916-ignatius-casanovas` | * | ES | dies_natalis |  |  |
 | 16 | 18 | `mr:0916-laureanus-ferrer-cardet-et-socii` | * | ES | dies_natalis |  |  |
-| 17 | (1) | `mr:0917-robertus-bellarmino` |  | IT | dies_natalis |  |  |
+| 17 | (1) | `mr:0917-robertus-bellarmino` |  | IT | dies_natalis | same as `mr:0513-robertus-bellarmino` |  |
 | 17 | 2 | `mr:0917-satyrus` |  | IT | depositio |  |  |
 | 17 | 3 | `mr:0917-lambertus` |  | BE | dies_natalis |  |  |
 | 17 | 4 | `mr:0917-rodingus` | * | FR | dies_natalis |  |  |
@@ -323,7 +323,7 @@
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES | dies_natalis |  |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES | dies_natalis |  |  |
 | 23 | (1) | `mr:0923-pius-de-pietrelcina` |  | IT | dies_natalis |  |  |
-| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-zacharias` |  |
+| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-elisabeth`; same as `mr:1105-zacharias` |  |
 | 23 | 3 | `mr:0923-linus` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0923-sossius` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0923-constantius` |  | IT | commemoratio |  |  |

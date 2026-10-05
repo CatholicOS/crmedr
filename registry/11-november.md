@@ -11,7 +11,7 @@
 | 1 | 5 | `mr:1101-marcellus` |  | FR | dies_natalis |  |  |
 | 1 | 6 | `mr:1101-romulus` | * | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:1101-severinus` |  | IT | dies_natalis |  |  |
-| 1 | 8 | `mr:1101-magnus` |  | IT | dies_natalis |  |  |
+| 1 | 8 | `mr:1101-magnus` |  | IT | dies_natalis | same as `mr:1105-magnus` |  |
 | 1 | 9 | `mr:1101-vigor` |  | FR | dies_natalis |  |  |
 | 1 | 10 | `mr:1101-licinius` |  | FR | dies_natalis |  |  |
 | 1 | 11 | `mr:1101-maturinus` |  | FR | dies_natalis |  |  |
@@ -23,14 +23,14 @@
 | 1 | 17 | `mr:1101-rupertus-mayer` | * | DE | dies_natalis |  |  |
 | 1 | 18 | `mr:1101-theodorus-georgius-romzsa` | * | UA | dies_natalis |  |  |
 | 2 | (1) | `mr:1102-omnium-fidelium-defunctorum` |  |  | commemoratio |  |  |
-| 2 | 2 | `mr:1102-victorinus` |  | SI | commemoratio |  |  |
+| 2 | 2 | `mr:1102-victorinus` |  | SI | commemoratio |  | 1914 English translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not Poitiers. |
 | 2 | 3 | `mr:1102-iustus` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:1102-carterius-et-socii` |  | TR | dies_natalis |  |  |
 | 2 | 5 | `mr:1102-acindynus-et-socii` |  | IR | dies_natalis |  |  |
 | 2 | 6 | `mr:1102-domninus` |  | FR | dies_natalis |  |  |
 | 2 | 7 | `mr:1102-marcianus` |  | TR | commemoratio |  |  |
 | 2 | 8 | `mr:1102-ambrosius` |  | CH | dies_natalis |  |  |
-| 2 | 9 | `mr:1102-winefrida` |  | GB | dies_natalis |  |  |
+| 2 | 9 | `mr:1102-winefrida` |  | GB | dies_natalis | same as `mr:1103-wenefrida` |  |
 | 2 | 10 | `mr:1102-georgius` |  | FR | dies_natalis |  |  |
 | 2 | 11 | `mr:1102-malachia` |  | FR | depositio | same as `mr:1103-malachias` |  |
 | 2 | 12 | `mr:1102-margarita-de-lotharingia` | * | FR | dies_natalis |  |  |
@@ -65,7 +65,7 @@
 | 4 | 10 | `mr:1104-felix-de-valois` | * | FR | dies_natalis |  |  |
 | 4 | 11 | `mr:1104-francisca-de-ambosia` | * | FR | dies_natalis |  |  |
 | 5 | 1 | `mr:1105-domninus` |  | PS | dies_natalis |  |  |
-| 5 | 2 | `mr:1105-theotimus-et-socii` |  | PS | commemoratio |  |  |
+| 5 | 2 | `mr:1105-theotimus-et-socii` |  | PS | commemoratio |  | In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions. |
 | 5 | 3 | `mr:1105-marcus` | * | IT | dies_natalis |  |  |
 | 5 | 4 | `mr:1105-fibicius` |  | DE | dies_natalis |  |  |
 | 5 | 5 | `mr:1105-guethnocus` | * | FR | dies_natalis |  |  |
@@ -156,7 +156,7 @@
 | 12 | 7 | `mr:1112-lebuinus` |  | NL | dies_natalis |  |  |
 | 12 | 8 | `mr:1112-benedictus-et-socii` |  | PL | dies_natalis |  |  |
 | 12 | 9 | `mr:1112-ioannes-cini` | * | IT | dies_natalis |  |  |
-| 12 | 10 | `mr:1112-didacus` |  | ES | dies_natalis |  |  |
+| 12 | 10 | `mr:1112-didacus` |  | ES | dies_natalis | same as `mr:1113-didacus` |  |
 | 12 | 11 | `mr:1112-margaritus-flores` |  | MX | dies_natalis |  |  |
 | 12 | 12 | `mr:1112-iosephus-medes-ferris` | * | ES | dies_natalis |  |  |
 | 13 | 1 | `mr:1113-antoninus-et-socii` |  | PS | dies_natalis |  |  |
@@ -280,9 +280,9 @@
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR | dies_natalis |  |  |
 | 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` |  |
 | 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  |  |
-| 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis |  |  |
+| 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis | same as `mr:0120-maurus` |  |
 | 21 | 7 | `mr:1121-maria-a-iesu-bono-pastore` | * | IT | dies_natalis |  |  |
-| 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis |  |  |
+| 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis | same as `mr:0916-caecilia` |  |
 | 22 | 2 | `mr:1122-philemon-colossensis` |  | TR | commemoratio |  |  |
 | 22 | 3 | `mr:1122-ananias` |  | IR | dies_natalis |  |  |
 | 22 | 4 | `mr:1122-benignus` |  | IT | dies_natalis | same as `mr:1120-benignus` |  |

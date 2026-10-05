@@ -109,7 +109,7 @@
 | 8 | 9 | `mr:0608-maria-a-divino-corde-iesu` | * | PT | dies_natalis |  |  |
 | 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  |  |
 | 8 | 11 | `mr:0608-nicolaus-de-gesturi` | * | IT | dies_natalis |  |  |
-| 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis |  |  |
+| 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis | same as `mr:0618-ephraem` |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0609-diomedes` |  | TR | dies_natalis | same as `mr:0816-diomedes` |  |
 | 9 | 4 | `mr:0609-vincentius` |  | FR | dies_natalis |  |  |
@@ -270,10 +270,10 @@
 | 23 | 9 | `mr:0623-iosephus-cafasso` |  | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0623-maria-raphaela-cimatti` | * | IT | dies_natalis |  |  |
 | 24 | (1) | `mr:0624-ioannes-baptista` |  | PS | celebratio |  |  |
-| 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis |  |  |
+| 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis | same as `mr:0623-ioannes` |  |
 | 24 | 3 | `mr:0624-simplicius` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0624-agoardus-et-agilbertus` |  | FR | dies_natalis |  |  |
-| 24 | 5 | `mr:0624-rumoldus` |  | BE | dies_natalis |  |  |
+| 24 | 5 | `mr:0624-rumoldus` |  | BE | dies_natalis | same as `mr:0701-rumoldus` |  |
 | 24 | 6 | `mr:0624-theodulfus` |  | BE | dies_natalis |  |  |
 | 24 | 7 | `mr:0624-gohardus` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 24 | 8 | `mr:0624-theodgarus` | * | DK | dies_natalis |  |  |
@@ -281,7 +281,7 @@
 | 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  |  |
 | 25 | 1 | `mr:0625-maximus` |  | IT | dies_natalis |  |  |
 | 25 | 2 | `mr:0625-prosperus-aquitanus` |  | FR | commemoratio |  |  |
-| 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  |  |
+| 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  | The 1914 English mistranslates the Latin 'Apud Rhegium' (Reggio) as 'Riez'. The 1749 eulogy also conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer. |
 | 25 | 4 | `mr:0625-tigridis` | * | FR | dies_natalis |  |  |
 | 25 | 5 | `mr:0625-molochus` | * | GB | dies_natalis |  |  |
 | 25 | 6 | `mr:0625-eurosia` | * | ES | dies_natalis |  |  |
@@ -309,7 +309,7 @@
 | 26 | 15 | `mr:0626-nicolaus-konrad-et-vladimirus-pryjma` | * | UA | dies_natalis |  |  |
 | 26 | 16 | `mr:0626-andreas-iscak` | * | UA | dies_natalis |  |  |
 | 26 | 17 | `mr:0626-iosephus-maria-escriva-de-balaguer` |  | IT | dies_natalis |  |  |
-| 27 | (1) | `mr:0627-cyrillus` |  | EG | dies_natalis |  |  |
+| 27 | (1) | `mr:0627-cyrillus` |  | EG | dies_natalis | same as `mr:0128-cyrillus` |  |
 | 27 | 2 | `mr:0627-guddenes` |  | TN | dies_natalis |  |  |
 | 27 | 3 | `mr:0627-zoilus` |  | ES | dies_natalis |  |  |
 | 27 | 4 | `mr:0627-samson` |  | TR | dies_natalis |  |  |
@@ -336,12 +336,12 @@
 | 29 | 5 | `mr:0629-raymundus-lullus` | * | ES | dies_natalis |  |  |
 | 29 | 6 | `mr:0629-paulus-wu-juan-et-socii` |  | CN | dies_natalis |  |  |
 | 29 | 7 | `mr:0629-maria-du-tianshi-et-magdalena-du-fengju` |  | CN | dies_natalis |  |  |
-| 30 | (1) | `mr:0630-protomartyres-sanctae-romanae-ecclesiae` |  | IT | dies_natalis |  |  |
+| 30 | (1) | `mr:0630-protomartyres-sanctae-romanae-ecclesiae` |  | IT | dies_natalis | same as `mr:0624-plurimi-martyres-romae` |  |
 | 30 | 2 | `mr:0630-basilides` |  | EG | dies_natalis |  |  |
 | 30 | 3 | `mr:0630-martialis` |  | FR | dies_natalis |  |  |
 | 30 | 4 | `mr:0630-bertichramnus` | * | FR | dies_natalis |  |  |
 | 30 | 5 | `mr:0630-erentrudis` | * | AT | dies_natalis |  |  |
-| 30 | 6 | `mr:0630-theobaldus` |  | IT | dies_natalis |  |  |
+| 30 | 6 | `mr:0630-theobaldus` |  | IT | dies_natalis | same as `mr:0701-theobaldus` |  |
 | 30 | 7 | `mr:0630-ladislaus` |  | SK | dies_natalis | same as `mr:0627-ladislaus` |  |
 | 30 | 8 | `mr:0630-otho` |  | DE | dies_natalis | same as `mr:0702-otho` |  |
 | 30 | 9 | `mr:0630-adolphus` | * | DE | dies_natalis |  |  |

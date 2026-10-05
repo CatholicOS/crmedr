@@ -925,6 +925,14 @@ mr:0510-iv-et-v). mr:0220-sadoth-et-socii (1914) keeps its ID, as mr:0220-eleuth
 (1749) keeps the name it prints (#47), and the two are linked. Four deprecated IDs whose
 counterpart is uncertain carry a note instead (mr:0123-agathangelus).
 
+**Links and notes (applied, October 2026, #51 part 5)**: the last set of the audit links
+historical eulogies to the eulogy they continue on another day or under another subject, and
+records the errors of the sources as curator notes. Most notes are errors of the unofficial
+1914 English against the 1749 Latin (Brixia rendered Brixen at mr:0127-angela-merici, Domitian
+for Diocletian at mr:0824-tatio, Pettau rendered Poitiers at mr:1102-victorinus); the notes of
+current IDs are kept in `ENTRY_NOTES`. Three Latin subjects are corrected (Sancta Fides,
+Sancta Marina, Sanctus Ioannes Therestus).
+
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (`ID_CORRECTIONS` keeps them on regeneration):
 - Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);

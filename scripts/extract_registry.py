@@ -730,6 +730,75 @@ ENTRY_NOTES = {
         "Latin editio altera 2004 print, whose July 9 ends at entry 10*. "
         "Bl. Marija Petković was beatified on 6 June 2003."
     ),
+    # 1749/1914 source errors and identity remarks found in the #51 audit (set 6, reviewed).
+    "mr:0118-deicolus": (
+        "1914 English translation error: Latin 'In monasterio Lutrensi, in Burgundia' (Lure, "
+        "Burgundy), not Brittany."
+    ),
+    "mr:0127-angela-merici": (
+        "1914 English translation error: Latin Brixia is Brescia, not Brixen."
+    ),
+    "mr:0214-antoninus": (
+        "1914 English translation error: the Latin is Antoninus, not Antonius/Anthony."
+    ),
+    "mr:0428-prudentius": (
+        "1914 English translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
+    ),
+    "mr:0529-maximinus": (
+        "1914 English translation error: the Latin has 'Maximini' (Maximinus of Trier), but the "
+        "English says 'Maximus'."
+    ),
+    "mr:0625-prosperus": (
+        "The 1914 English mistranslates the Latin 'Apud Rhegium' (Reggio) as 'Riez'. The 1749 "
+        "eulogy also conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian "
+        "writer."
+    ),
+    "mr:0703-thomas-apostolus": (
+        "1914 English translation error: Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona."
+    ),
+    "mr:0708-eugenius-iii": (
+        "1914 English translation error: Latin 'Eugenii Papae Tertii' is Eugenius III."
+    ),
+    "mr:0719-macrina": (
+        "1914 English typo: 'Marcina' for Macrina."
+    ),
+    "mr:0821-privatus": (
+        "The 1749 text joins the opening of Privatus's eulogy to the body of the eulogy of "
+        "Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English "
+        "prints both eulogies."
+    ),
+    "mr:0824-tatio": (
+        "1914 English translation error: 'Domitian' where the Latin has 'persecutione "
+        "Diocletiani' (Diocletian)."
+    ),
+    "mr:0828-pelagius": (
+        "1914 English translation error: the Latin 'Constantiae, in Germania' is Konstanz, not "
+        "Coutances."
+    ),
+    "mr:0829-basilla": (
+        "1914 English translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
+    ),
+    "mr:1003-candida": (
+        "The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has "
+        "Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of "
+        "the same commemoration."
+    ),
+    "mr:1017-florentius": (
+        "1914 English translation error: the Latin (and the 2004 entry) name Florentius, not "
+        "Florentinus."
+    ),
+    "mr:1102-victorinus": (
+        "1914 English translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), "
+        "not Poitiers."
+    ),
+    "mr:1105-theotimus-et-socii": (
+        "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition "
+        "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
+        "companions."
+    ),
+    "mr:1218-gatianus": (
+        "1914 misprints Gatianus as 'Gratian' and Fabianus as 'Fabrian'."
+    ),
 }
 
 # Asterisk overrides where the digitized workbook follows the Italian (CEI)

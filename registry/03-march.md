@@ -15,7 +15,7 @@
 | 1 | 9 | `mr:0301-christophorus-de-mediolano` | * | IT | commemoratio |  |  |
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |
 | 1 | 11 | `mr:0301-agnes-cao-kuiying` |  | CN | dies_natalis |  |  |
-| 2 | 1 | `mr:0302-troadius` |  | TR | dies_natalis |  |  |
+| 2 | 1 | `mr:0302-troadius` |  | TR | dies_natalis | same as `mr:1228-troadius` |  |
 | 2 | 2 | `mr:0302-ceadda` |  | GB | dies_natalis |  |  |
 | 2 | 3 | `mr:0302-lucas-casali-de-nicosia` | * | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0302-agnes` |  | CZ | dies_natalis |  |  |
@@ -101,7 +101,7 @@
 | 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis | same as `mr:0310-quadraginta-milites-sebastes` |  |
 | 9 | 3 | `mr:0309-pacianus` |  | ES | dies_natalis |  |  |
 | 9 | 4 | `mr:0309-vitalis-de-castronovo` | * | IT | dies_natalis |  |  |
-| 9 | 5 | `mr:0309-bruno` |  | CZ | dies_natalis |  |  |
+| 9 | 5 | `mr:0309-bruno` |  | CZ | dies_natalis | same as `mr:0619-bonifatius` |  |
 | 9 | 6 | `mr:0309-catharina` |  | IT | dies_natalis |  |  |
 | 9 | 7 | `mr:0309-dominicus-savio` |  | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un` |  | KR | dies_natalis |  |  |
@@ -312,7 +312,7 @@
 | 29 | 5 | `mr:0329-gulielmus-tempier` | * | FR | dies_natalis |  |  |
 | 29 | 6 | `mr:0329-ludolphus` | * | DE | dies_natalis |  |  |
 | 29 | 7 | `mr:0329-ioannes-hambley` | * | GB | commemoratio |  |  |
-| 30 | 1 | `mr:0330-secundus` |  | IT | dies_natalis |  |  |
+| 30 | 1 | `mr:0330-secundus` |  | IT | dies_natalis | same as `mr:0329-secundus` |  |
 | 30 | 2 | `mr:0330-domninus` |  | GR | dies_natalis |  |  |
 | 30 | 3 | `mr:0330-regulus` |  | FR | dies_natalis |  |  |
 | 30 | 4 | `mr:0330-plurimi-martyres-constantinopolis` |  | TR | commemoratio |  |  |
