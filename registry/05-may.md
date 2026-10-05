@@ -34,12 +34,12 @@
 | 2 | 5 | `mr:0502-waldebertus` | * | FR | dies_natalis |  |  |
 | 2 | 6 | `mr:0502-wiborada` |  | CH | dies_natalis |  |  |
 | 2 | 7 | `mr:0502-nicolaus-hermansson` | * | SE | dies_natalis |  |  |
-| 2 | 8 | `mr:0502-antoninus` |  | IT | dies_natalis |  |  |
+| 2 | 8 | `mr:0502-antoninus` |  | IT | dies_natalis | same as `mr:0510-antoninus` |  |
 | 2 | 9 | `mr:0502-gulielmus-tirry` | * | IE | dies_natalis |  |  |
 | 2 | 10 | `mr:0502-iosephus-nguyen-van-luu` |  | VN | dies_natalis |  |  |
 | 2 | 11 | `mr:0502-iosephus-maria-rubio-peralta` |  | ES | dies_natalis |  |  |
 | 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
-| 3 | (1) | `mr:0503-philippus-et-iacobus-apostoli` |  | PS | dies_natalis | same as `mr:0511-philippus-et-iacobus-apostoli` |  |
+| 3 | (1) | `mr:0503-philippus-et-iacobus-apostoli` |  | PS | dies_natalis | same as `mr:0501-philippus-et-iacobus`; same as `mr:0511-philippus-et-iacobus-apostoli` |  |
 | 3 | 2 | `mr:0503-timotheus-et-maura` |  | EG | dies_natalis |  |  |
 | 3 | 3 | `mr:0503-eventius-et-socii` |  | IT | dies_natalis |  |  |
 | 3 | 4 | `mr:0503-iuvenalis` |  | IT | dies_natalis |  |  |
@@ -66,7 +66,7 @@
 | 5 | 6 | `mr:0505-nicetius` |  | FR | dies_natalis |  |  |
 | 5 | 7 | `mr:0505-geruntius` |  | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0505-maurontus` | * | FR | dies_natalis |  |  |
-| 5 | 9 | `mr:0505-sacerdos` |  | FR | dies_natalis |  |  |
+| 5 | 9 | `mr:0505-sacerdos` |  | FR | dies_natalis | same as `mr:0504-sacerdos` |  |
 | 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis | same as `mr:0504-godehardus` |  |
 | 5 | 11 | `mr:0505-leo` | * | IT | dies_natalis |  |  |
 | 5 | 12 | `mr:0505-avertinus` | * | FR | dies_natalis |  |  |
@@ -77,10 +77,10 @@
 | 5 | 17 | `mr:0505-gregorius-frackowiak` | * | DE | dies_natalis |  |  |
 | 6 | 1 | `mr:0506-lucius-cyrenaeus` |  | LY | commemoratio |  |  |
 | 6 | 2 | `mr:0506-marianus-et-iacobus` |  | DZ | dies_natalis | same as `mr:0430-marianus-et-iacobus` |  |
-| 6 | 3 | `mr:0506-venerius` |  | IT | dies_natalis |  |  |
+| 6 | 3 | `mr:0506-venerius` |  | IT | dies_natalis | same as `mr:0504-venerius` |  |
 | 6 | 4 | `mr:0506-benedicta` |  | IT | dies_natalis |  |  |
 | 6 | 5 | `mr:0506-eadbertus` |  | GB | dies_natalis |  |  |
-| 6 | 6 | `mr:0506-petrus-nolasco` |  | ES | dies_natalis |  |  |
+| 6 | 6 | `mr:0506-petrus-nolasco` |  | ES | dies_natalis | same as `mr:1225-petrus-nolascus` |  |
 | 6 | 7 | `mr:0506-bartholomaeus-pucci-franceschi` | * | IT | dies_natalis |  |  |
 | 6 | 8 | `mr:0506-eduardus-jones-et-antonius-middleton` | * | GB | dies_natalis |  |  |
 | 6 | 9 | `mr:0506-franciscus-de-montmorency-laval` | * | CA | dies_natalis |  |  |
@@ -117,7 +117,7 @@
 | 9 | 2 | `mr:0509-herma` |  | PS | commemoratio |  |  |
 | 9 | 3 | `mr:0509-pachomius` |  | EG | dies_natalis | same as `mr:0514-pachomius` |  |
 | 9 | 4 | `mr:0509-trecenti-decem-martyres-persidis` |  | IR | dies_natalis |  |  |
-| 9 | 5 | `mr:0509-dionysius` |  | FR | dies_natalis |  |  |
+| 9 | 5 | `mr:0509-dionysius` |  | FR | dies_natalis | same as `mr:0508-dionysius` |  |
 | 9 | 6 | `mr:0509-geruntius` |  | IT | dies_natalis |  |  |
 | 9 | 7 | `mr:0509-beatus` | * | FR | dies_natalis |  |  |
 | 9 | 8 | `mr:0509-fortis-gabrielli` | * | IT | dies_natalis |  |  |
@@ -142,7 +142,7 @@
 | 10 | 14 | `mr:0510-henricus-rebuschini` | * | IT | dies_natalis |  |  |
 | 11 | 1 | `mr:0511-maiulus` |  | TN | dies_natalis |  |  |
 | 11 | 2 | `mr:0511-anthimus` |  | IT | dies_natalis |  |  |
-| 11 | 3 | `mr:0511-mocius` |  | TR | dies_natalis |  |  |
+| 11 | 3 | `mr:0511-mocius` |  | TR | dies_natalis | same as `mr:0513-mucius` |  |
 | 11 | 4 | `mr:0511-mamertus` |  | FR | dies_natalis |  |  |
 | 11 | 5 | `mr:0511-gengulfus` |  | FR | dies_natalis |  |  |
 | 11 | 6 | `mr:0511-maiolus` |  | FR | dies_natalis |  |  |
@@ -193,7 +193,7 @@
 | 15 | 7 | `mr:0515-severinus` |  | IT | dies_natalis |  |  |
 | 15 | 8 | `mr:0515-rupertus` | * | DE | dies_natalis |  |  |
 | 15 | 9 | `mr:0515-witesindus` |  | ES | commemoratio |  |  |
-| 15 | 10 | `mr:0515-isidorus` |  | ES | dies_natalis |  |  |
+| 15 | 10 | `mr:0515-isidorus` |  | ES | dies_natalis | same as `mr:0510-isidorus-agricola` |  |
 | 15 | 11 | `mr:0515-andreas-abellon` | * | FR | dies_natalis |  |  |
 | 16 | 1 | `mr:0516-felix-et-gennadius` |  | TN | commemoratio |  |  |
 | 16 | 2 | `mr:0516-florentius-et-diocletianus` |  | IT | dies_natalis |  |  |
@@ -298,7 +298,7 @@
 | 23 | 4 | `mr:0523-ephebus` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0523-desiderius` |  | FR | dies_natalis |  |  |
 | 23 | 6 | `mr:0523-eutychius` |  | IT | commemoratio |  |  |
-| 23 | 7 | `mr:0523-speus` |  | IT | dies_natalis |  |  |
+| 23 | 7 | `mr:0523-speus` |  | IT | dies_natalis | same as `mr:0328-speus` |  |
 | 23 | 8 | `mr:0523-honoratus` | * | IT | commemoratio |  |  |
 | 23 | 9 | `mr:0523-syagrius` | * | FR | dies_natalis |  |  |
 | 23 | 10 | `mr:0523-michael` |  | TR | dies_natalis |  |  |
@@ -317,9 +317,9 @@
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA | dies_natalis |  |  |
 | 24 | 11 | `mr:0524-augustinus-yi-kwang-hon-et-socii` |  | KR | dies_natalis |  |  |
 | 24 | 12 | `mr:0524-ludovicus-zephyrinus-moreau` | * | CA | dies_natalis |  |  |
-| 25 | (1) | `mr:0525-beda-venerabilis` |  | GB | dies_natalis |  |  |
+| 25 | (1) | `mr:0525-beda-venerabilis` |  | GB | dies_natalis | same as `mr:0527-beda-venerabilis` |  |
 | 25 | (2) | `mr:0525-gregorius-vii` |  | IT | dies_natalis |  |  |
-| 25 | (3) | `mr:0525-maria-magdalena-de-pazzi` |  | IT | dies_natalis |  |  |
+| 25 | (3) | `mr:0525-maria-magdalena-de-pazzi` |  | IT | dies_natalis | same as `mr:0529-maria-magdalena-de-pazzis` |  |
 | 25 | 4 | `mr:0525-canio` |  | IT | dies_natalis |  |  |
 | 25 | 5 | `mr:0525-dionysius` |  | IT | commemoratio |  |  |
 | 25 | 6 | `mr:0525-zenobius` |  | IT | dies_natalis |  |  |
@@ -351,7 +351,7 @@
 | 26 | 15 | `mr:0526-ioannes-doan-trinh-hoan-et-matthaeus-nguyen-van-phuong` |  | VN | dies_natalis |  |  |
 | 26 | 16 | `mr:0526-andreas-kaggwa` |  | UG | dies_natalis |  |  |
 | 26 | 17 | `mr:0526-pontianus-ngondwe` |  | UG | dies_natalis |  |  |
-| 27 | (1) | `mr:0527-augustinus` |  | GB | celebratio |  |  |
+| 27 | (1) | `mr:0527-augustinus` |  | GB | celebratio | same as `mr:0528-augustinus` |  |
 | 27 | 2 | `mr:0527-iulius` |  | BG | dies_natalis |  |  |
 | 27 | 3 | `mr:0527-restitutus` |  | IT | dies_natalis |  |  |
 | 27 | 4 | `mr:0527-eutropius` |  | FR | dies_natalis |  |  |
@@ -376,7 +376,7 @@
 | 28 | 13 | `mr:0528-ladislaus-demski` | * | DE | dies_natalis |  |  |
 | 28 | 14 | `mr:0528-antonius-iulianus-nowowiejski` | * | PL | dies_natalis |  |  |
 | 29 | 1 | `mr:0529-hesychius` |  | TR | dies_natalis | same as `mr:1118-hesychius` |  |
-| 29 | 2 | `mr:0529-maximinus` |  | DE | dies_natalis |  |  |
+| 29 | 2 | `mr:0529-maximinus` |  | DE | dies_natalis |  | 1914 English: Translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English says 'Maximus'. |
 | 29 | 3 | `mr:0529-sisinnius-et-socii` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0529-exsuperantius` |  | IT | dies_natalis | same as `mr:0530-exsuperantius` |  |
 | 29 | 5 | `mr:0529-senator` |  | IT | dies_natalis | same as `mr:0528-senator` |  |

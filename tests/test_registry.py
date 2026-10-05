@@ -427,3 +427,36 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EditionNotes51Test(unittest.TestCase):
+    """#51: a source error of one edition is a note on that edition only (`edition_notes`)."""
+
+    def test_validation(self):
+        base = {"id": "mr:0101-x", "month": 1, "day": 1, "entry": 1}
+        ok = dict(base, edition_notes={r.EDITION_1914: "Translation error."})
+        self.assertEqual(r.validate_editions([ok]), [])
+        bad_ed = dict(base, edition_notes={"martyrologium_romanum_1900": "x"})
+        self.assertTrue(any("edition_notes" in e for e in r.validate_editions([bad_ed])))
+        empty = dict(base, edition_notes={r.EDITION_1749: ""})
+        self.assertTrue(any("edition_notes" in e for e in r.validate_editions([empty])))
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        angela = entries["mr:0127-angela-merici"]
+        self.assertIn("Brescia", angela["edition_notes"][r.EDITION_1914])
+        self.assertNotIn("Brescia", angela.get("note", ""))
+        self.assertIn(r.EDITION_1749, entries["mr:0821-privatus"]["edition_notes"])
+        self.assertIn("Peter the Younger", entries["mr:0410-beda"]["edition_notes"][r.EDITION_EN])
+        self.assertNotIn("mr:0410-beda", r.ENTRY_NOTES)
+        self.assertIn(r.EDITION_IT, entries["mr:0712-proclus-et-hilarion"]["edition_notes"])
+        # current IDs keep theirs in EDITION_NOTES, so a regeneration keeps them
+        for mr_id, e in entries.items():
+            if e.get("edition_notes") and not e.get("deprecated"):
+                self.assertEqual(e["edition_notes"], r.EDITION_NOTES[mr_id], mr_id)
+
+    def test_markdown_names_the_edition(self):
+        md = (Path(__file__).resolve().parent.parent / "registry" / "01-january.md").read_text(encoding="utf-8")
+        row = next(line for line in md.splitlines() if "mr:0127-angela-merici" in line)
+        self.assertIn("1914 English: ", row)

@@ -35,8 +35,8 @@
 | 2 | 14 | `mr:1002-maria-guadalupe-ricart-olmos` | * | ES | dies_natalis |  |  |
 | 2 | 15 | `mr:1002-maria-antonina-kratochwil` | * | PL | dies_natalis |  |  |
 | 3 | 1 | `mr:1003-dionysius-areopagita` |  | GR | commemoratio |  |  |
-| 3 | 2 | `mr:1003-candida` |  | IT | dies_natalis |  |  |
-| 3 | 3 | `mr:1003-faustus-et-socii` |  | EG | commemoratio |  |  |
+| 3 | 2 | `mr:1003-candida` |  | IT | dies_natalis |  | The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of the same commemoration. |
+| 3 | 3 | `mr:1003-faustus-et-socii` |  | EG | commemoratio | same as `mr:1004-caius-et-socii` |  |
 | 3 | 4 | `mr:1003-hesychius` |  | PS | commemoratio |  |  |
 | 3 | 5 | `mr:1003-maximianus` |  | DZ | commemoratio |  |  |
 | 3 | 6 | `mr:1003-cyprianus` | * | FR | dies_natalis |  |  |
@@ -91,7 +91,7 @@
 | 6 | 15 | `mr:1006-franciscus-tran-van-trung` |  | VN | dies_natalis |  |  |
 | 6 | 16 | `mr:1006-isidorus-a-sancto-ioseph` | * | BE | dies_natalis |  |  |
 | 7 | (1) | `mr:1007-maria-de-rosario` |  |  | celebratio |  |  |
-| 7 | 2 | `mr:1007-marcellus` |  | IT | dies_natalis |  |  |
+| 7 | 2 | `mr:1007-marcellus` |  | IT | dies_natalis | same as `mr:1006-marcellus-et-socii` |  |
 | 7 | 3 | `mr:1007-iustina` |  | IT | dies_natalis |  |  |
 | 7 | 4 | `mr:1007-sergius-et-bacchus` |  | SY | dies_natalis |  |  |
 | 7 | 5 | `mr:1007-marcus` |  | IT | dies_natalis |  |  |
@@ -217,13 +217,13 @@
 | 16 | 15 | `mr:1016-gerardus-claravallensis` | * | FR | dies_natalis |  |  |
 | 16 | 16 | `mr:1016-gerardus-maiella` |  | IT | dies_natalis |  |  |
 | 16 | 17 | `mr:1016-anicetus-koplinski-et-iosephus-jankowski` | * | PL | dies_natalis |  |  |
-| 17 | (1) | `mr:1017-ignatius` |  | TR | dies_natalis |  |  |
+| 17 | (1) | `mr:1017-ignatius` |  | TR | dies_natalis | same as `mr:1217-ignatius`; same as `mr:1220-ignatius` |  |
 | 17 | 2 | `mr:1017-osee-propheta` |  | PS | commemoratio |  |  |
 | 17 | 3 | `mr:1017-rufus-et-zosimus` |  | IT | commemoratio | same as `mr:1218-rufus-et-zosimus` |  |
 | 17 | 4 | `mr:1017-martyres-volitani` |  | TN | dies_natalis |  |  |
 | 17 | 5 | `mr:1017-ioannes` |  | EG | dies_natalis | same as `mr:0327-ioannes` |  |
 | 17 | 6 | `mr:1017-dulcidius` | * | FR | dies_natalis |  |  |
-| 17 | 7 | `mr:1017-florentius` |  | FR | dies_natalis |  |  |
+| 17 | 7 | `mr:1017-florentius` |  | FR | dies_natalis |  | 1914 English: Translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus. |
 | 17 | 8 | `mr:1017-gilbertus` | * | FR | dies_natalis |  |  |
 | 17 | 9 | `mr:1017-balthasar-ravaschieri-de-clavario` | * | IT | dies_natalis |  |  |
 | 17 | 10 | `mr:1017-richardus-gwyn` |  | GB | dies_natalis |  |  |
@@ -243,7 +243,7 @@
 | 18 | 5 | `mr:1018-mono` | * | BE | dies_natalis |  |  |
 | 18 | 6 | `mr:1018-petrus-de-alcantara` |  | ES | dies_natalis | same as `mr:1019-petrus-de-alcantara` |  |
 | 18 | 7 | `mr:1018-isaac-jogues` |  | US | dies_natalis |  |  |
-| 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis |  |  |
+| 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis | same as `mr:0428-paulus-a-cruce` |  |
 | 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
 | 19 | 3 | `mr:1019-ioel-propheta` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdras-prophetae` |  |

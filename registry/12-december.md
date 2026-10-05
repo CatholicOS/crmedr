@@ -22,12 +22,12 @@
 | 2 | 2 | `mr:1202-bibiana` |  | IT | dies_natalis |  |  |
 | 2 | 3 | `mr:1202-pimenius` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:1202-chromatius` |  | IT | dies_natalis |  |  |
-| 2 | 5 | `mr:1202-silverius` |  | IT | dies_natalis |  |  |
+| 2 | 5 | `mr:1202-silverius` |  | IT | dies_natalis | same as `mr:0620-silverius` |  |
 | 2 | 6 | `mr:1202-ioannes-ruysbroeck` | * | BE | dies_natalis |  |  |
 | 2 | 7 | `mr:1202-maria-angela-astorch` | * | ES | dies_natalis |  |  |
 | 2 | 8 | `mr:1202-raphael-chylinski` | * | PL | dies_natalis |  |  |
 | 2 | 9 | `mr:1202-ivanus-slezyuk` | * | UA | dies_natalis |  |  |
-| 3 | (1) | `mr:1203-franciscus-xavier` |  | ES | dies_natalis |  |  |
+| 3 | (1) | `mr:1203-franciscus-xavier` |  | ES | dies_natalis | same as `mr:1202-franciscus-xaverius` |  |
 | 3 | 2 | `mr:1203-sophonias-propheta` |  | PS | commemoratio |  |  |
 | 3 | 3 | `mr:1203-cassianus` |  | MA | dies_natalis |  |  |
 | 3 | 4 | `mr:1203-birinus` |  | GB | depositio |  |  |
@@ -72,12 +72,12 @@
 | 7 | 3 | `mr:1207-athenodorus` |  | SY | dies_natalis |  |  |
 | 7 | 4 | `mr:1207-urbanus` |  | IT | dies_natalis |  |  |
 | 7 | 5 | `mr:1207-ioannes-silentiarius` |  | PS | dies_natalis | same as `mr:0513-ioannes-silentiarius` |  |
-| 7 | 6 | `mr:1207-fara` |  | FR | dies_natalis |  |  |
+| 7 | 6 | `mr:1207-fara` |  | FR | dies_natalis | same as `mr:0403-burgundofara` |  |
 | 7 | 7 | `mr:1207-carolus-garnier` |  | CA | dies_natalis |  |  |
 | 7 | 8 | `mr:1207-maria-iosepha-rossello` |  | IT | dies_natalis |  |  |
 | 8 | (1) | `mr:1208-conceptio-immaculata-beatae-mariae-virginis` |  |  | celebratio |  |  |
 | 8 | 2 | `mr:1208-macarius` |  | EG | commemoratio |  |  |
-| 8 | 3 | `mr:1208-eutychianus` |  | IT | depositio |  |  |
+| 8 | 3 | `mr:1208-eutychianus` |  | IT | depositio | same as `mr:1207-eutychianus` |  |
 | 8 | 4 | `mr:1208-eucharius` |  | DE | dies_natalis |  |  |
 | 8 | 5 | `mr:1208-patapius` |  | EG | commemoratio |  |  |
 | 8 | 6 | `mr:1208-romaricus` |  | FR | dies_natalis |  |  |
@@ -92,7 +92,7 @@
 | 9 | 4 | `mr:1209-gorgonia` |  | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:1209-cyprianus` |  | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:1209-liborius-wagner` | * | DE | dies_natalis |  |  |
-| 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis |  |  |
+| 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis | same as `mr:0707-petrus-fourier` |  |
 | 9 | 8 | `mr:1209-bernardus-maria-a-iesu` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:1209-iosephus-ferrer-esteve` | * | ES | dies_natalis |  |  |
 | 9 | 10 | `mr:1209-richardus-de-los-rios-fabregat-et-socii` | * | ES | dies_natalis |  |  |
@@ -104,7 +104,7 @@
 | 10 | 6 | `mr:1210-edmundus-gennings-et-swithinus-wells` |  | GB | dies_natalis |  |  |
 | 10 | 7 | `mr:1210-polydorus-plasden-et-eustatius-white` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:1210-ioannes-roberts` |  | GB | dies_natalis |  |  |
-| 10 | 9 | `mr:1210-marcus-antonius-durando` | * | IT | dies_natalis | Latin: absent; English: absent; same as `mr:0610-marcus-antonius-durando` | The CEI's placement (10 December, entry 9*) of the same eulogy the Latin print and the English edition give at 10 June (mr:0610-marcus-antonius-durando). |
+| 10 | 9 | `mr:1210-marcus-antonius-durando` | * | IT | dies_natalis | Latin: absent; English: absent; same as `mr:0610-marcus-antonius-durando` | 2004 Italian: The Latin print and the English edition give this eulogy at 10 June (mr:0610-marcus-antonius-durando). |
 | 10 | 9 | `mr:1210-gundisalvus-vines-masip` | * | ES | dies_natalis | CEI: entry 10 |  |
 | 10 | 10 | `mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo` | * | ES | dies_natalis | CEI: entry 11 |  |
 | 11 | (1) | `mr:1211-damasus-i` |  | IT | dies_natalis |  |  |
@@ -188,25 +188,25 @@
 | 17 | 11 | `mr:1217-hyacinthus-cormier` | * | IT | dies_natalis |  |  |
 | 18 | 1 | `mr:1218-malachias-propheta` |  | IQ | commemoratio |  |  |
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
-| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  |  |
+| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | 1914 English: Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus. |
 | 18 | 4 | `mr:1218-flannanus` | * | IE | dies_natalis |  |  |
 | 18 | 5 | `mr:1218-winebaldus` | * | DE | dies_natalis |  |  |
 | 18 | 6 | `mr:1218-paulus-nguyen-van-my-et-petrus-truong-van` |  | VN | dies_natalis |  |  |
 | 18 | 7 | `mr:1218-nemesia-valle` | * | IT | dies_natalis |  |  |
-| 19 | 1 | `mr:1219-anastasius-i` |  | IT | depositio |  |  |
+| 19 | 1 | `mr:1219-anastasius-i` |  | IT | depositio | same as `mr:0427-anastasius` |  |
 | 19 | 2 | `mr:1219-gregorius` |  | FR | dies_natalis |  |  |
 | 19 | 3 | `mr:1219-gulielmus-de-fenolis` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:1219-urbanus-v` | * | FR | dies_natalis |  |  |
 | 19 | 5 | `mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy` |  | VN | dies_natalis |  |  |
 | 19 | 6 | `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu` | * | PL | dies_natalis |  |  |
-| 20 | 1 | `mr:1220-zephyrinus` |  | IT | depositio |  |  |
+| 20 | 1 | `mr:1220-zephyrinus` |  | IT | depositio | same as `mr:0826-zephyrinus` |  |
 | 20 | 2 | `mr:1220-liberalis` |  | IT | dies_natalis |  |  |
 | 20 | 3 | `mr:1220-philogonius` |  | TR | dies_natalis |  |  |
 | 20 | 4 | `mr:1220-ursicinus` | * | CH | dies_natalis |  |  |
 | 20 | 5 | `mr:1220-dominicus` |  | ES | dies_natalis |  |  |
 | 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:1220-michael-piaszczynski` | * | DE | dies_natalis |  |  |
-| 21 | (1) | `mr:1221-petrus-canisius` |  | DE | dies_natalis |  |  |
+| 21 | (1) | `mr:1221-petrus-canisius` |  | DE | dies_natalis | same as `mr:0427-petrus-canisius` |  |
 | 21 | 2 | `mr:1221-michaeas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:1221-themistocles` |  | TR | dies_natalis |  |  |
 | 21 | 4 | `mr:1221-dominicus-spadafora` | * | IT | dies_natalis |  |  |

@@ -38,7 +38,7 @@
 | 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT | dies_natalis |  |  |
 | 3 | (1) | `mr:0203-blasius` |  | TR | dies_natalis |  |  |
 | 3 | (2) | `mr:0203-ansgarius` |  | DE | dies_natalis |  |  |
-| 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio |  |  |
+| 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio | same as `mr:1008-simeon` |  |
 | 3 | 4 | `mr:0203-celerinus` |  | TN | dies_natalis |  |  |
 | 3 | 5 | `mr:0203-leonius` | * | FR | dies_natalis |  |  |
 | 3 | 6 | `mr:0203-teridius-et-remedius` |  | FR | dies_natalis |  |  |
@@ -155,10 +155,10 @@
 | 11 | 9 | `mr:0211-ardanus` | * | FR | dies_natalis |  |  |
 | 11 | 10 | `mr:0211-petrus-maldonado` |  | MX | dies_natalis |  |  |
 | 11 | 11 | `mr:0211-tobias-borras-romeu` | * | ES | dies_natalis |  |  |
-| 12 | 1 | `mr:0212-martyres-abitinenses` |  | TN | commemoratio |  |  |
+| 12 | 1 | `mr:0212-martyres-abitinenses` |  | TN | commemoratio | same as `mr:0211-saturninus-et-socii` |  |
 | 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  |  |
 | 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |  |
-| 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  | The unofficial English 2004 edition dates him "under Emperor Leo III the Isaurian"; the Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the Wise. |
+| 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  | 2004 English: Translation error: "under Emperor Leo III the Isaurian", where the Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the Wise. |
 | 12 | 5 | `mr:0212-humbelina` | * | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:0212-ludanus` | * | FR | dies_natalis |  |  |
 | 12 | 7 | `mr:0212-thomas-hemmerford-et-socii` | * | GB | dies_natalis |  |  |
@@ -176,7 +176,7 @@
 | 13 | 12 | `mr:0213-eustochius-bellinus` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
 | 13 | 14 | `mr:0213-paulus-le-van-loc` |  | VN | dies_natalis |  |  |
-| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0707-cyrillus-et-methodius` |  |
+| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0309-cyrillus-et-methodius`; same as `mr:0707-cyrillus-et-methodius` |  |
 | 14 | 2 | `mr:0214-valentinus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0214-vitalis` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0214-zeno` |  | IT | dies_natalis |  |  |
@@ -184,7 +184,7 @@
 | 14 | 6 | `mr:0214-eleuchadius` |  | IT | dies_natalis |  |  |
 | 14 | 7 | `mr:0214-auxentius` |  | TR | dies_natalis |  |  |
 | 14 | 8 | `mr:0214-nostrianus` | * | IT | commemoratio |  |  |
-| 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  |  |
+| 14 | 9 | `mr:0214-antoninus` |  | IT | dies_natalis |  | 1914 English: Translation error: the Latin is Antoninus, not Antonius (Anthony). |
 | 14 | 10 | `mr:0214-ioannes-baptista-a-conceptione` |  | ES | dies_natalis |  |  |
 | 14 | 11 | `mr:0214-vincentius-vilar-david` | * | ES | dies_natalis |  |  |
 | 15 | 1 | `mr:0215-onesimus` |  |  | commemoratio | same as `mr:0216-onesimus` |  |
@@ -200,11 +200,11 @@
 | 15 | 11 | `mr:0215-claudius-la-colombiere` |  | FR | dies_natalis |  |  |
 | 16 | 1 | `mr:0216-iuliana` |  | IT | dies_natalis |  |  |
 | 16 | 2 | `mr:0216-elias-et-socii` |  | PS | dies_natalis |  |  |
-| 16 | 3 | `mr:0216-marutha` |  | IR | dies_natalis |  |  |
+| 16 | 3 | `mr:0216-marutha` |  | IR | dies_natalis | same as `mr:1204-maruthas` |  |
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  |  |
-| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | On this day the 1749 edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
+| 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | 1749 Latin: This edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. The historical eulogy is kept under this ID. |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |
@@ -265,7 +265,7 @@
 | 22 | 7 | `mr:0222-margarita` |  | IT | dies_natalis |  |  |
 | 22 | 8 | `mr:0222-didacus-carvalho` | * | JP | dies_natalis |  |  |
 | 22 | 9 | `mr:0222-maria-a-iesu` | * | IT | dies_natalis |  |  |
-| 23 | (1) | `mr:0223-polycarpus` |  | TR | dies_natalis |  |  |
+| 23 | (1) | `mr:0223-polycarpus` |  | TR | dies_natalis | same as `mr:0126-polycarpus` |  |
 | 23 | 2 | `mr:0223-sirenus` |  | RS | dies_natalis |  |  |
 | 23 | 3 | `mr:0223-milburga` |  | GB | dies_natalis |  |  |
 | 23 | 4 | `mr:0223-willigisus` | * | DE | dies_natalis |  |  |

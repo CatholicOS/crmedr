@@ -28,19 +28,19 @@
 | 2 | 7 | `mr:0702-ioannes-et-petrus-becchetti` | * | IT | commemoratio |  |  |
 | 2 | 8 | `mr:0702-bernardinus-realino` |  | IT | dies_natalis |  |  |
 | 2 | 9 | `mr:0702-eugenia-joubert` | * | BE | dies_natalis |  |  |
-| 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis |  |  |
+| 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis | same as `mr:1221-thomas-apostolus` | 1914 English: Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona. |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY | commemoratio |  |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  |  |
 | 3 | 5 | `mr:0703-heliodorus` |  | IT | dies_natalis |  |  |
 | 3 | 6 | `mr:0703-anatolius-constantinopoli` | * | TR | dies_natalis |  |  |
-| 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis |  |  |
+| 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis | same as `mr:0628-leo-ii` |  |
 | 3 | 8 | `mr:0703-raymundus-gayrard` | * | FR | dies_natalis |  |  |
 | 3 | 9 | `mr:0703-iosephus-nguyen-dinh-uyen` |  | VN | dies_natalis |  |  |
 | 3 | 10 | `mr:0703-philippus-phan-van-minh` |  | VN | dies_natalis |  |  |
 | 3 | 11 | `mr:0703-maria-anna-mogas-fontcuberta` | * | ES | dies_natalis |  |  |
 | 3 | 12 | `mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi` |  | CN | dies_natalis |  |  |
-| 4 | (1) | `mr:0704-elisabeth` |  | PT | dies_natalis |  |  |
+| 4 | (1) | `mr:0704-elisabeth` |  | PT | dies_natalis | same as `mr:0708-elisabeth` |  |
 | 4 | 2 | `mr:0704-iucundianus` |  | TN | dies_natalis |  |  |
 | 4 | 3 | `mr:0704-laurianus` |  | FR | dies_natalis |  |  |
 | 4 | 4 | `mr:0704-florentius` | * | FR | dies_natalis |  |  |
@@ -100,7 +100,7 @@
 | 7 | 15 | `mr:0707-petrus-to-rot` | * | PG | dies_natalis |  |  |
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI | dies_natalis |  |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
-| 8 | 2 | `mr:0708-glyceria` |  | TR | dies_natalis |  |  |
+| 8 | 2 | `mr:0708-glyceria` |  | TR | dies_natalis | same as `mr:0513-glyceria` |  |
 | 8 | 3 | `mr:0708-procopius` |  | PS | dies_natalis |  |  |
 | 8 | 4 | `mr:0708-pancratius` |  | IT | dies_natalis | same as `mr:0403-pancratius` |  |
 | 8 | 5 | `mr:0708-auspicius` |  | FR | dies_natalis |  |  |
@@ -108,8 +108,8 @@
 | 8 | 7 | `mr:0708-landrada` | * | BE | dies_natalis |  |  |
 | 8 | 8 | `mr:0708-kilianus` |  | DE | dies_natalis |  |  |
 | 8 | 9 | `mr:0708-monachi-abrahamitae` |  | TR | dies_natalis |  |  |
-| 8 | 10 | `mr:0708-hadrianus-iii` | * | IT | dies_natalis |  |  |
-| 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  |  |
+| 8 | 10 | `mr:0708-hadrianus-iii` | * | IT | dies_natalis | same as `mr:0907-hadrianus-iii` |  |
+| 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III. |
 | 8 | 12 | `mr:0708-mancius-arakus` | * | JP | dies_natalis |  |  |
 | 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN | dies_natalis |  |  |
 | 9 | (1) | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN | dies_natalis |  |  |
@@ -122,10 +122,10 @@
 | 9 | 8 | `mr:0709-gregorius-grassus-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 9 | `mr:0709-paulina-a-corde-iesu-agonizante` |  | BR | dies_natalis |  |  |
 | 9 | 10 | `mr:0709-fidel-chijnacki` | * | DE | dies_natalis |  |  |
-| 9 | 11 | `mr:0709-maria-a-iesu-crucifixo` | * | IT | dies_natalis | Latin: absent; English: absent | Entry 11* at July 9 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003. |
+| 9 | 11 | `mr:0709-maria-a-iesu-crucifixo` | * | IT | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003. |
 | 10 | 1 | `mr:0710-felix-et-philippus` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:0710-rufina-et-secunda` |  | IT | dies_natalis |  |  |
-| 10 | 3 | `mr:0710-anatolia-et-victoria` |  | IT | dies_natalis |  |  |
+| 10 | 3 | `mr:0710-anatolia-et-victoria` |  | IT | dies_natalis | same as `mr:1223-victoria` |  |
 | 10 | 4 | `mr:0710-ianuarius-et-marinus` |  | TN | dies_natalis |  |  |
 | 10 | 5 | `mr:0710-apollonius-sardensis` |  | TR | dies_natalis |  |  |
 | 10 | 6 | `mr:0710-leontius-et-socii` |  | TR | dies_natalis |  |  |
@@ -133,7 +133,7 @@
 | 10 | 8 | `mr:0710-pascharius` | * | FR | dies_natalis |  |  |
 | 10 | 9 | `mr:0710-amalberga` |  | BE | dies_natalis |  |  |
 | 10 | 10 | `mr:0710-petrus-vincioli` | * | IT | dies_natalis |  |  |
-| 10 | 11 | `mr:0710-canutus` |  | DK | dies_natalis |  |  |
+| 10 | 11 | `mr:0710-canutus` |  | DK | dies_natalis | same as `mr:0119-canutus` |  |
 | 10 | 12 | `mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu` | * | FR | dies_natalis |  |  |
 | 10 | 13 | `mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu` |  | VN | dies_natalis |  |  |
 | 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  |  |
@@ -152,7 +152,7 @@
 | 11 | 13 | `mr:0711-thomas-benstead-et-thomas-sprott` | * | GB | commemoratio |  |  |
 | 11 | 14 | `mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii` | * | FR | dies_natalis |  |  |
 | 11 | 15 | `mr:0711-anna-an-xinzhi-et-socii` |  | CN | dies_natalis |  |  |
-| 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | Entry 1 at July 12 in the Italian (CEI) edition; absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
+| 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
 | 12 | 2 | `mr:0712-fortunatus-et-hermagora` |  | IT | dies_natalis |  |  |
 | 12 | 3 | `mr:0712-nabor-et-felix` |  | DZ | dies_natalis |  |  |
 | 12 | 4 | `mr:0712-paternianus` |  | IT | dies_natalis |  |  |
@@ -197,7 +197,7 @@
 | 14 | 10 | `mr:0714-richardus-langhorne` | * | GB | dies_natalis |  |  |
 | 14 | 11 | `mr:0714-ghebre-michael` | * | ET | dies_natalis |  |  |
 | 14 | 12 | `mr:0714-ioannes-wang-guixin` |  | CN | dies_natalis |  |  |
-| 15 | (1) | `mr:0715-bonaventura` |  | IT | depositio |  |  |
+| 15 | (1) | `mr:0715-bonaventura` |  | IT | depositio | same as `mr:0714-bonaventura` |  |
 | 15 | 2 | `mr:0715-eutropius-et-socii` |  | IT | dies_natalis |  |  |
 | 15 | 3 | `mr:0715-felix` |  | TN | depositio |  |  |
 | 15 | 4 | `mr:0715-catulinus-et-socii` |  | TN | commemoratio |  |  |
@@ -268,7 +268,7 @@
 | 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
-| 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  |  |
+| 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
 | 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  |  |
 | 19 | 5 | `mr:0719-symmachus` |  | IT | dies_natalis |  |  |
 | 19 | 6 | `mr:0719-aurea` |  | ES | dies_natalis |  |  |
@@ -319,7 +319,7 @@
 | 22 | 13 | `mr:0722-iacobus-lombardie` | * | FR | dies_natalis |  |  |
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
-| 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis |  |  |
+| 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis | same as `mr:1008-birgitta` |  |
 | 23 | 2 | `mr:0723-ezechiel-propheta` |  | IL | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  |  |
@@ -358,7 +358,7 @@
 | 25 | 2 | `mr:0725-christophorus` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0725-cucuphas` |  | ES | dies_natalis |  |  |
 | 25 | 4 | `mr:0725-valentina-et-socii` |  | PS | dies_natalis |  |  |
-| 25 | 5 | `mr:0725-olympias` |  | TR | dies_natalis |  |  |
+| 25 | 5 | `mr:0725-olympias` |  | TR | dies_natalis | same as `mr:1217-olympias` |  |
 | 25 | 6 | `mr:0725-magnericus` |  | DE | dies_natalis |  |  |
 | 25 | 7 | `mr:0725-beatus-et-bantus` | * | DE | dies_natalis |  |  |
 | 25 | 8 | `mr:0725-glodesindis` | * | FR | dies_natalis |  |  |
@@ -429,7 +429,7 @@
 | 28 | 13 | `mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps` | * | ES | dies_natalis |  |  |
 | 28 | 14 | `mr:0728-alphonsa-ab-immaculata-conceptione` | * | IN | dies_natalis |  |  |
 | 29 | (1) | `mr:0729-martha` |  | IL | dies_natalis |  |  |
-| 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio |  |  |
+| 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio | same as `mr:1217-lazarus` |  |
 | 29 | 3 | `mr:0729-callinicus` |  | TR | dies_natalis |  |  |
 | 29 | 4 | `mr:0729-felix` |  | IT | dies_natalis |  |  |
 | 29 | 5 | `mr:0729-simplicius-et-socii` |  | IT | dies_natalis |  |  |
@@ -444,7 +444,7 @@
 | 29 | 14 | `mr:0729-ioannes-baptista-egozcuezabal-aldaz` | * | ES | dies_natalis |  |  |
 | 29 | 15 | `mr:0729-lucius-martinez-mancebo-et-socii` | * | ES | dies_natalis |  |  |
 | 29 | 16 | `mr:0729-iosephus-de-calasanz-marques` | * | ES | dies_natalis |  |  |
-| 30 | (1) | `mr:0730-petrus-chrysologus` |  | IT | celebratio |  |  |
+| 30 | (1) | `mr:0730-petrus-chrysologus` |  | IT | celebratio | same as `mr:1204-petrus-chrysologus` |  |
 | 30 | 2 | `mr:0730-abdon-et-sennen` |  | IT | dies_natalis |  |  |
 | 30 | 3 | `mr:0730-iulitta` |  | TR | dies_natalis |  |  |
 | 30 | 4 | `mr:0730-maxima-et-socii` |  | TN | dies_natalis |  |  |

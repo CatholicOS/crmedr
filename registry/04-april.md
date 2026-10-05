@@ -48,7 +48,7 @@
 | 4 | 4 | `mr:0404-platon` |  | TR | dies_natalis |  |  |
 | 4 | 5 | `mr:0404-petrus` | * | FR | dies_natalis |  |  |
 | 4 | 6 | `mr:0404-gulielmus-cuffitelli` | * | IT | dies_natalis |  |  |
-| 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis |  |  |
+| 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis | same as `mr:0403-benedictus` |  |
 | 4 | 8 | `mr:0404-iosephus-benedictus-dusmet` | * | IT | dies_natalis |  |  |
 | 4 | 9 | `mr:0404-franciscus-marto` | * | PT | dies_natalis |  |  |
 | 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT | dies_natalis |  |  |
@@ -71,7 +71,7 @@
 | 6 | 7 | `mr:0406-notkerus-balbulus` | * | CH | dies_natalis |  |  |
 | 6 | 8 | `mr:0406-philaretus` | * | IT | dies_natalis |  |  |
 | 6 | 9 | `mr:0406-gulielmus` |  | DK | dies_natalis |  |  |
-| 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis |  |  |
+| 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis | same as `mr:0429-petrus` |  |
 | 6 | 11 | `mr:0406-catharina-de-pallantia` | * | IT | dies_natalis |  |  |
 | 6 | 12 | `mr:0406-paulus-le-bao-tinh` |  | VN | dies_natalis |  |  |
 | 6 | 13 | `mr:0406-zephyrinus-agostini` | * | IT | dies_natalis |  |  |
@@ -102,7 +102,7 @@
 | 8 | 10 | `mr:0408-augustus-czartoryskus` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  |  |
 | 9 | 1 | `mr:0409-maximus` |  | EG | dies_natalis |  |  |
-| 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis |  |  |
+| 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis | same as `mr:0408-aedesius` |  |
 | 9 | 3 | `mr:0409-demetrius` |  | HR | dies_natalis |  |  |
 | 9 | 4 | `mr:0409-eupsychius` |  | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:0409-liborius` |  | FR | dies_natalis | same as `mr:0723-liborius` |  |
@@ -118,15 +118,15 @@
 | 10 | 1 | `mr:0410-terentius-et-socii` |  | TN | dies_natalis |  |  |
 | 10 | 2 | `mr:0410-apollonius` |  | EG | dies_natalis |  |  |
 | 10 | 3 | `mr:0410-palladius` | * | FR | dies_natalis |  |  |
-| 10 | 4 | `mr:0410-beda` | * | IT | dies_natalis |  | The unofficial English 2004 edition mistranslates the subject as "Saint Peter the Younger"; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject follows the Latin. |
+| 10 | 4 | `mr:0410-beda` | * | IT | dies_natalis |  | 2004 English: Translation error: "Saint Peter the Younger" for the subject; the Latin print has sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject follows the Latin. |
 | 10 | 5 | `mr:0410-macarius` |  | BE | dies_natalis |  |  |
 | 10 | 6 | `mr:0410-fulbertus` | * | FR | dies_natalis |  |  |
 | 10 | 7 | `mr:0410-antonius-neyrot` | * | TN | dies_natalis |  |  |
 | 10 | 8 | `mr:0410-marcus-de-bononia` | * | IT | dies_natalis |  |  |
-| 10 | 9 | `mr:0410-michael-de-sanctis` |  | ES | dies_natalis |  |  |
+| 10 | 9 | `mr:0410-michael-de-sanctis` |  | ES | dies_natalis | same as `mr:0705-michael-a-sanctis` |  |
 | 10 | 10 | `mr:0410-magdalena-de-canossa` |  | IT | dies_natalis |  |  |
 | 10 | 11 | `mr:0410-bonifatius-zukowski` | * | DE | dies_natalis |  |  |
-| 11 | (1) | `mr:0411-stanislaus` |  | PL | dies_natalis |  |  |
+| 11 | (1) | `mr:0411-stanislaus` |  | PL | dies_natalis | same as `mr:0507-stanislaus`; same as `mr:0508-stanislaus` |  |
 | 11 | 2 | `mr:0411-antipa` |  | TR | commemoratio |  |  |
 | 11 | 3 | `mr:0411-philippus` |  | GR | commemoratio |  |  |
 | 11 | 4 | `mr:0411-domnio` |  | HR | dies_natalis |  |  |
@@ -213,7 +213,7 @@
 | 17 | 13 | `mr:0417-maria-anna-a-iesu` | * | ES | dies_natalis |  |  |
 | 17 | 14 | `mr:0417-henricus-heath` | * | GB | dies_natalis |  |  |
 | 17 | 15 | `mr:0417-catharina-tekakwitha` | * | CA | dies_natalis |  |  |
-| 18 | 1 | `mr:0418-hermogenes-et-elpidius` |  | TR | dies_natalis |  |  |
+| 18 | 1 | `mr:0418-hermogenes-et-elpidius` |  | TR | dies_natalis | same as `mr:0419-hermogenes-et-socii` |  |
 | 18 | 2 | `mr:0418-pusicius` |  | IR | dies_natalis |  |  |
 | 18 | 3 | `mr:0418-eusebius` | * | IT | dies_natalis |  |  |
 | 18 | 4 | `mr:0418-lasreanus` | * | IE | dies_natalis |  |  |
@@ -230,7 +230,7 @@
 | 18 | 15 | `mr:0418-iosephus-moreau` | * | FR | dies_natalis |  |  |
 | 18 | 16 | `mr:0418-sabina-petrilli` | * | IT | dies_natalis |  |  |
 | 18 | 17 | `mr:0418-romanus-archutowski` | * | PL | dies_natalis |  |  |
-| 19 | 1 | `mr:0419-mappalicus` |  | TN | dies_natalis |  |  |
+| 19 | 1 | `mr:0419-mappalicus` |  | TN | dies_natalis | same as `mr:0417-mappalicus` |  |
 | 19 | 2 | `mr:0419-martha` |  | IR | dies_natalis |  |  |
 | 19 | 3 | `mr:0419-georgius` |  | TR | dies_natalis |  |  |
 | 19 | 4 | `mr:0419-geroldus` | * | DE | dies_natalis |  |  |
@@ -238,7 +238,7 @@
 | 19 | 6 | `mr:0419-leo-ix` |  | IT | dies_natalis |  |  |
 | 19 | 7 | `mr:0419-bernardus-paenitens` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0419-iacobus-duckett` | * | GB | dies_natalis |  |  |
-| 20 | 1 | `mr:0420-anicetus` |  | IT | dies_natalis |  |  |
+| 20 | 1 | `mr:0420-anicetus` |  | IT | dies_natalis | same as `mr:0417-anicetus` |  |
 | 20 | 2 | `mr:0420-sulpicius-et-servitianus` |  | IT | commemoratio |  |  |
 | 20 | 3 | `mr:0420-secundinus` |  | ES | dies_natalis | same as `mr:0521-secundinus` |  |
 | 20 | 4 | `mr:0420-marcellinus` |  | FR | dies_natalis |  |  |
@@ -291,11 +291,11 @@
 | 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
 | 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | IL | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander` |  | FR | dies_natalis |  |  |
-| 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis |  |  |
+| 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus` |  |
 | 24 | 5 | `mr:0424-gregorius` |  | ES | dies_natalis |  |  |
 | 24 | 6 | `mr:0424-deodatus` | * | FR | dies_natalis |  |  |
 | 24 | 7 | `mr:0424-mellitus` |  | GB | dies_natalis |  |  |
-| 24 | 8 | `mr:0424-wilfridus` |  | GB | dies_natalis |  |  |
+| 24 | 8 | `mr:0424-wilfridus` |  | GB | dies_natalis | same as `mr:1012-walfridus` |  |
 | 24 | 9 | `mr:0424-egbertus` |  | GB | dies_natalis |  |  |
 | 24 | 10 | `mr:0424-gulielmus-firmatus` | * | FR | dies_natalis |  |  |
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia` |  | FR | dies_natalis |  |  |
@@ -325,7 +325,7 @@
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |  |
 | 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio | same as `mr:0218-simeon` |  |
-| 27 | 2 | `mr:0427-pollio` |  | HR | dies_natalis |  |  |
+| 27 | 2 | `mr:0427-pollio` |  | HR | dies_natalis | same as `mr:0428-pollio` |  |
 | 27 | 3 | `mr:0427-theodorus` |  | EG | dies_natalis |  |  |
 | 27 | 4 | `mr:0427-liberalis` | * | IT | dies_natalis |  |  |
 | 27 | 5 | `mr:0427-mauganus` | * | GB | dies_natalis |  |  |
@@ -343,16 +343,16 @@
 | 28 | 4 | `mr:0428-eusebius-et-socii` |  | TR | dies_natalis |  |  |
 | 28 | 5 | `mr:0428-vitalis` |  | IT | commemoratio |  |  |
 | 28 | 6 | `mr:0428-maximus-et-socii` |  | BG | dies_natalis |  |  |
-| 28 | 7 | `mr:0428-prudentius` |  | ES | dies_natalis |  |  |
+| 28 | 7 | `mr:0428-prudentius` |  | ES | dies_natalis |  | 1914 English: Translation error: the Latin has 'Episcopi et Confessoris', not a martyr. |
 | 28 | 8 | `mr:0428-pamphilus` |  | IT | depositio |  |  |
 | 28 | 9 | `mr:0428-luchesius` | * | IT | dies_natalis |  |  |
 | 28 | 10 | `mr:0428-maria-ludovica-a-iesu` | * | FR | dies_natalis |  |  |
 | 28 | 11 | `mr:0428-paulus-pham-khac-khoan-et-socii` |  | VN | dies_natalis |  |  |
 | 28 | 12 | `mr:0428-iosephus-cebula` | * | AT | dies_natalis |  |  |
 | 28 | 13 | `mr:0428-ioanna-beretta-molla` |  | IT | dies_natalis |  |  |
-| 29 | (1) | `mr:0429-catharina-senensis` |  | IT | dies_natalis |  |  |
+| 29 | (1) | `mr:0429-catharina-senensis` |  | IT | dies_natalis | same as `mr:0430-catharina-senensis` |  |
 | 29 | 2 | `mr:0429-tychicus` | * |  | commemoratio |  |  |
-| 29 | 3 | `mr:0429-torpes` |  | IT | dies_natalis |  |  |
+| 29 | 3 | `mr:0429-torpes` |  | IT | dies_natalis | same as `mr:0517-torpes` |  |
 | 29 | 4 | `mr:0429-severus` |  | IT | dies_natalis | same as `mr:0430-severus` |  |
 | 29 | 5 | `mr:0429-hugo` |  | FR | dies_natalis |  |  |
 | 29 | 6 | `mr:0429-achardus` | * | FR | dies_natalis |  |  |
@@ -365,7 +365,7 @@
 | 30 | 6 | `mr:0430-donatus` |  | GR | dies_natalis |  |  |
 | 30 | 7 | `mr:0430-laurentius` |  | IT | dies_natalis |  |  |
 | 30 | 8 | `mr:0430-mercurialis` |  | IT | dies_natalis |  |  |
-| 30 | 9 | `mr:0430-pomponius` |  | IT | dies_natalis |  |  |
+| 30 | 9 | `mr:0430-pomponius` |  | IT | dies_natalis | same as `mr:0514-pomponius` |  |
 | 30 | 10 | `mr:0430-petrus-levita` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0430-augulus` | * | FR | dies_natalis |  |  |
 | 30 | 12 | `mr:0430-earconwaldus` |  | GB | dies_natalis |  |  |
