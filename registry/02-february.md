@@ -8,17 +8,17 @@
 | 1 | 2 | `mr:0201-severus` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:0201-paulus` |  | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:0201-brigida` |  | IE | dies_natalis |  |  |
-| 1 | 5 | `mr:0201-ursus` | * | IT | dies_natalis |  |  |
-| 1 | 6 | `mr:0201-agrippanus` | * | FR | dies_natalis |  |  |
+| 1 | 5 | `mr:0201-ursus` | * | IT | dies_natalis |  | 2004 English: Translation error: "In the Alps of Greece" where the Latin has "Augústæ Prætóriæ in Alpibus Graiis" (at Aosta in the Graian Alps). |
+| 1 | 6 | `mr:0201-agrippanus` | * | FR | dies_natalis |  | 2004 English: Translation error: "returning to Rome from the borders of Velacum" where the Latin has "Roma ad fines Velacórum revértens" (returning from Rome to the Velay). |
 | 1 | 7 | `mr:0201-sigisbertus` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0201-raymundus` | * | ES | dies_natalis |  |  |
-| 1 | 9 | `mr:0201-ioannes` | * | FR | dies_natalis |  |  |
+| 1 | 9 | `mr:0201-ioannes` | * | FR | dies_natalis |  | 2004 English: Translation error: "a man of justice and mercy" where the Latin has "miræ austeritátis et iustítiæ" (of wonderful austerity and justice). Translation error: "transferred the episcopal see to Aleth" where the Latin has "sedem episcopálem Alethénsem eódem tránstulit" (moved the see of Aleth here, to Saint-Malo). |
 | 1 | 10 | `mr:0201-reginaldus-aurelianensis` | * | FR | dies_natalis |  |  |
 | 1 | 11 | `mr:0201-viridiana` | * | IT | dies_natalis |  |  |
-| 1 | 12 | `mr:0201-andreas-de-comitibus-signiae` | * | IT | dies_natalis |  |  |
-| 1 | 13 | `mr:0201-conorus-o-devany-et-patricius-o-lougham` | * | IE | dies_natalis |  |  |
+| 1 | 12 | `mr:0201-andreas-de-comitibus-signiae` | * | IT | dies_natalis |  | 2004 English: Translation error: "Counts of Signore" where the Latin has "de Comítibus Sígniæ" (the Counts of Segni). |
+| 1 | 13 | `mr:0201-conorus-o-devany-et-patricius-o-lougham` | * | IE | dies_natalis |  | 2004 English: Translation error: "bishop of Dungannon and Connor" where the Latin has "epíscopi Dunénsis et Connorénsis" (of Down and Connor). Translation error: "both of the Order of Friars Minor" where the Latin gives "ex Ordine Fratrum Minórum" to the bishop alone. |
 | 1 | 14 | `mr:0201-henricus-morse` |  | GB | dies_natalis |  |  |
-| 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  |  |
+| 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "In April, near Angers" where the Latin has "Aprilíaci apud Andégavum" (at Avrillé near Angers). |
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
 | 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione` | * | IT | dies_natalis |  |  |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  |  |
@@ -52,7 +52,7 @@
 | 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  |  |
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius` |  | IT | dies_natalis |  |  |
-| 4 | 2 | `mr:0204-papias-et-socii` |  | TR | dies_natalis |  |  |
+| 4 | 2 | `mr:0204-papias-et-socii` |  | TR | dies_natalis |  | 2004 English: Translation error: "In Pamphylia" omits "Perge", the city named in the Latin. Translation error: "Papirius" where the Latin has "Pápiæ" (Papias). |
 | 4 | 3 | `mr:0204-philea-et-philoromus` |  | EG | dies_natalis |  |  |
 | 4 | 4 | `mr:0204-isidorus` |  | EG | dies_natalis |  |  |
 | 4 | 5 | `mr:0204-aventinus-castelloduni` | * | FR | dies_natalis |  |  |
@@ -60,7 +60,7 @@
 | 4 | 7 | `mr:0204-rabanus-maurus` |  | DE | dies_natalis |  |  |
 | 4 | 8 | `mr:0204-nicolaus-studita` | * | TR | dies_natalis |  |  |
 | 4 | 9 | `mr:0204-gilbertus` |  | GB | dies_natalis |  |  |
-| 4 | 10 | `mr:0204-ioanna-de-valois` |  | FR | dies_natalis |  |  |
+| 4 | 10 | `mr:0204-ioanna-de-valois` |  | FR | dies_natalis |  | 2004 English: Translation error: "finding no way to resolve her marriage bond" where the Latin has "vínculo matrimónii nullo declaráto" (her marriage having been declared null). |
 | 4 | 11 | `mr:0204-ioannes-speed` | * | GB | dies_natalis |  |  |
 | 4 | 12 | `mr:0204-iosephus-de-leonessa` |  | IT | dies_natalis |  |  |
 | 4 | 13 | `mr:0204-ioannes-de-brito` |  | IN | dies_natalis |  |  |
@@ -68,15 +68,15 @@
 | 5 | 2 | `mr:0205-plurimi-martyres-ponti` |  | TR | commemoratio |  |  |
 | 5 | 3 | `mr:0205-avitus` |  | FR | dies_natalis |  |  |
 | 5 | 4 | `mr:0205-ingenuinus` |  | IT | dies_natalis | same as `mr:0205-genuinus-et-albuinus` |  |
-| 5 | 5 | `mr:0205-lucas` | * | IT | dies_natalis |  |  |
-| 5 | 6 | `mr:0205-sabas-iunior` | * | IT | dies_natalis |  |  |
+| 5 | 5 | `mr:0205-lucas` | * | IT | dies_natalis |  | 2004 English: Translation error: "Lucretius" where the Latin has "Lucæ" (Luke). |
+| 5 | 6 | `mr:0205-sabas-iunior` | * | IT | dies_natalis |  | 2004 English: Translation error: "Saint Crescentius" where the Latin has "Sancti Cæsárii" (Saint Caesarius). |
 | 5 | 7 | `mr:0205-albuinus` |  | IT | commemoratio | same as `mr:0205-genuinus-et-albuinus` |  |
 | 5 | 8 | `mr:0205-adalheidis` | * | DE | dies_natalis |  |  |
-| 5 | 9 | `mr:0205-paulus-miki-et-socii` |  | JP | dies_natalis |  |  |
+| 5 | 9 | `mr:0205-paulus-miki-et-socii` |  | JP | dies_natalis |  | 2004 English: Translation error: "celebrated today" where the Latin has "cras" (tomorrow). |
 | 5 | 10 | `mr:0205-francisca-meziere` | * | FR | dies_natalis |  |  |
 | 5 | 11 | `mr:0205-elisabeth-canori-mora` | * | IT | dies_natalis |  |  |
 | 5 | 12 | `mr:0205-iesu-mendez` |  | MX | dies_natalis |  |  |
-| 6 | (1) | `mr:0206-paulus-miki-et-socii` |  | JP | celebratio |  |  |
+| 6 | (1) | `mr:0206-paulus-miki-et-socii` |  | JP | celebratio |  | 2004 English: Translation error: "eighteen laypeople" where the Latin has "septem et decem" (seventeen). |
 | 6 | 2 | `mr:0206-antolianus` |  | FR | dies_natalis |  |  |
 | 6 | 3 | `mr:0206-silvanus` |  | SY | commemoratio |  |  |
 | 6 | 4 | `mr:0206-dorothea-et-theophilus` |  | TR | dies_natalis |  |  |
@@ -96,7 +96,7 @@
 | 7 | 4 | `mr:0207-iuliana` |  | IT | dies_natalis |  |  |
 | 7 | 5 | `mr:0207-laurentius` | * | IT | dies_natalis |  |  |
 | 7 | 6 | `mr:0207-richardus` |  | IT | depositio |  |  |
-| 7 | 7 | `mr:0207-lucas-iunior` |  | GR | dies_natalis |  |  |
+| 7 | 7 | `mr:0207-lucas-iunior` |  | GR | dies_natalis |  | 2004 English: Translation error: "Lucerius the Younger" where the Latin has "Lucæ Iunióris" (Luke the Younger). |
 | 7 | 8 | `mr:0207-riccerius` | * | IT | dies_natalis |  |  |
 | 7 | 9 | `mr:0207-antonius-de-stronconio` | * | IT | dies_natalis |  |  |
 | 7 | 10 | `mr:0207-thomas-sherwood` | * | GB | dies_natalis |  |  |
@@ -120,7 +120,7 @@
 | 8 | 9 | `mr:0208-paulus` |  | FR | dies_natalis |  |  |
 | 8 | 10 | `mr:0208-petrus-igneus` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0208-stephanus` |  | FR | dies_natalis |  |  |
-| 8 | 12 | `mr:0208-iosephina-gabriela-bonino` | * | IT | dies_natalis |  |  |
+| 8 | 12 | `mr:0208-iosephina-gabriela-bonino` | * | IT | dies_natalis |  | 2004 English: Translation error: "Savona" where the Latin has "Saviliáni" (Savigliano). |
 | 9 | 1 | `mr:0209-apollonia` |  | EG | commemoratio |  |  |
 | 9 | 2 | `mr:0209-plurimi-martyres-alexandriae` |  | EG | dies_natalis |  |  |
 | 9 | 3 | `mr:0209-primus-et-donatus` |  | DZ | commemoratio |  |  |
@@ -160,13 +160,13 @@
 | 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |  |
 | 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  | 2004 English: Translation error: "under Emperor Leo III the Isaurian", where the Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the Wise. |
 | 12 | 5 | `mr:0212-humbelina` | * | FR | dies_natalis |  |  |
-| 12 | 6 | `mr:0212-ludanus` | * | FR | dies_natalis |  |  |
+| 12 | 6 | `mr:0212-ludanus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Lucian" where the Latin has "Lúdani" (Ludan). |
 | 12 | 7 | `mr:0212-thomas-hemmerford-et-socii` | * | GB | dies_natalis |  |  |
 | 13 | 1 | `mr:0213-martinianus` |  | GR | dies_natalis |  |  |
 | 13 | 2 | `mr:0213-castor-aquitanus` | * | DE | dies_natalis |  |  |
 | 13 | 3 | `mr:0213-benignus` |  | IT | dies_natalis |  |  |
 | 13 | 4 | `mr:0213-stephanus-lugduni` |  | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0213-stephanus-reate` |  | IT | commemoratio |  |  |
+| 13 | 5 | `mr:0213-stephanus-reate` |  | IT | commemoratio |  | 2004 English: Editorial error: a bracketed sentence about angels at his death is added, and "sicut sanctus Gregórius papa Magnus scripsit" (as Saint Gregory the Great wrote) is omitted. |
 | 13 | 6 | `mr:0213-gosbertus` | * | DE | dies_natalis |  |  |
 | 13 | 7 | `mr:0213-guimera` | * | FR | dies_natalis |  |  |
 | 13 | 8 | `mr:0213-fulcranus` | * | FR | dies_natalis |  |  |
@@ -180,7 +180,7 @@
 | 14 | 2 | `mr:0214-valentinus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0214-vitalis` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0214-zeno` |  | IT | dies_natalis |  |  |
-| 14 | 5 | `mr:0214-bassianus-et-socii` |  | EG | commemoratio |  |  |
+| 14 | 5 | `mr:0214-bassianus-et-socii` |  | EG | commemoratio |  | 2004 English: Translation error: "Pratus" where the Latin has "Proti" (Protus). |
 | 14 | 6 | `mr:0214-eleuchadius` |  | IT | dies_natalis |  |  |
 | 14 | 7 | `mr:0214-auxentius` |  | TR | dies_natalis |  |  |
 | 14 | 8 | `mr:0214-nostrianus` | * | IT | commemoratio |  |  |
@@ -191,7 +191,7 @@
 | 15 | 2 | `mr:0215-faustinus-et-iovita` |  | IT | dies_natalis |  |  |
 | 15 | 3 | `mr:0215-isicus-et-socii` |  | TR | dies_natalis |  |  |
 | 15 | 4 | `mr:0215-georgia` |  | FR | dies_natalis |  |  |
-| 15 | 5 | `mr:0215-quinidius` |  | FR | dies_natalis |  |  |
+| 15 | 5 | `mr:0215-quinidius` |  | FR | dies_natalis |  | 2004 English: Translation error: "Quininus" where the Latin has "Quinídii" (Quinidius). |
 | 15 | 6 | `mr:0215-severus` |  | IT | dies_natalis |  |  |
 | 15 | 7 | `mr:0215-decorosus` |  | IT | dies_natalis |  |  |
 | 15 | 8 | `mr:0215-walfridus` | * | IT | dies_natalis |  |  |
@@ -209,7 +209,7 @@
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
 | 17 | 4 | `mr:0217-mesrobus` |  | AM | dies_natalis |  |  |
 | 17 | 5 | `mr:0217-fintanus` |  | IE | dies_natalis |  |  |
-| 17 | 6 | `mr:0217-flavianus` |  | TR | commemoratio | same as `mr:0218-flavianus` |  |
+| 17 | 6 | `mr:0217-flavianus` |  | TR | commemoratio | same as `mr:0218-flavianus` | 2004 English: Translation error: "from the violence of the assault" is added; the Latin says only "brevi póstea vitam finívit" (he died shortly afterward). |
 | 17 | 7 | `mr:0217-finanus` | * | GB | dies_natalis |  |  |
 | 17 | 8 | `mr:0217-silvinus` |  | FR | depositio |  |  |
 | 17 | 9 | `mr:0217-constabilis` | * | IT | dies_natalis |  |  |
@@ -249,7 +249,7 @@
 | 20 | 6 | `mr:0220-leo` |  | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  |  |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL | dies_natalis |  |  |
-| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` | 2004 Italian: Translation omission: the sentence "Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit" (his death took place at Faenza on the following day) is not rendered. |
+| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` | 2004 Italian: Translation omission: the sentence "Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit" (his death took place at Faenza on the following day) is not rendered. 2004 English: Translation error: "on a holy day" where the Latin has "crástina die" (on the following day). |
 | 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  |  |
 | 21 | 3 | `mr:0221-germanus` | * | CH | dies_natalis |  |  |
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB | dies_natalis |  |  |
@@ -264,7 +264,7 @@
 | 22 | 6 | `mr:0222-isabella` | * | FR | dies_natalis |  |  |
 | 22 | 7 | `mr:0222-margarita` |  | IT | dies_natalis |  |  |
 | 22 | 8 | `mr:0222-didacus-carvalho` | * | JP | dies_natalis |  |  |
-| 22 | 9 | `mr:0222-maria-a-iesu` | * | IT | dies_natalis |  |  |
+| 22 | 9 | `mr:0222-maria-a-iesu` | * | IT | dies_natalis |  | 2004 English: Translation error: the clause "terrénam peregrinatiónem iter ad pátriam fáciens pie conclúsit" (she piously ended her earthly pilgrimage while journeying home) is omitted. |
 | 23 | (1) | `mr:0223-polycarpus` |  | TR | dies_natalis | same as `mr:0126-polycarpus` |  |
 | 23 | 2 | `mr:0223-sirenus` |  | RS | dies_natalis |  |  |
 | 23 | 3 | `mr:0223-milburga` |  | GB | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 27 | 8 | `mr:0227-anna-line` |  | GB | dies_natalis |  |  |
 | 27 | 9 | `mr:0227-gulielmus-richardson` | * | GB | dies_natalis |  |  |
 | 27 | 10 | `mr:0227-francisca-anna-a-virgine-perdolenti` | * | ES | dies_natalis |  |  |
-| 27 | 11 | `mr:0227-gabriel-a-virgine-perdolenti` | * | IT | dies_natalis |  |  |
+| 27 | 11 | `mr:0227-gabriel-a-virgine-perdolenti` | * | IT | dies_natalis |  | 2004 English: Translation error: "On the island of the Abruzzi" where the Latin has "Insulæ in Aprútio" (at Isola del Gran Sasso, in the Abruzzi). |
 | 27 | 12 | `mr:0227-maria-a-iesu` | * | FR | dies_natalis |  |  |
 | 27 | 13 | `mr:0227-maria-a-caritate-spiritus-sancti` | * | CO | dies_natalis |  |  |
 | 28 | 1 | `mr:0228-presbyteri-diaconi-plurimi-alexandriae` |  | EG | commemoratio |  |  |

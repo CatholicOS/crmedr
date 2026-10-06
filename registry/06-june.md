@@ -60,7 +60,7 @@
 | 4 | 6 | `mr:0604-nicolaus-et-tranus` | * | IT | dies_natalis |  |  |
 | 4 | 7 | `mr:0604-pacificus-ramati` | * | IT | dies_natalis |  |  |
 | 4 | 8 | `mr:0604-franciscus-caracciolo` |  | IT | dies_natalis |  |  |
-| 4 | 9 | `mr:0604-philippus-smaldone` | * | IT | dies_natalis |  |  |
+| 4 | 9 | `mr:0604-philippus-smaldone` | * | IT | dies_natalis |  | 2004 English: Translation error: "deaf and mute" where the Latin has "surdórum ac cæcórum" (the deaf and the blind). |
 | 4 | 10 | `mr:0604-antonius-zawistowski-et-stanislaus-starowieyski` | * | DE | dies_natalis |  |  |
 | 5 | (1) | `mr:0605-bonifatius` |  | NL | dies_natalis |  |  |
 | 5 | 2 | `mr:0605-marcianus-et-socii` |  | EG | dies_natalis |  |  |
@@ -91,7 +91,7 @@
 | 6 | 16 | `mr:0606-marcellinus-champagnat` |  | FR | dies_natalis |  |  |
 | 6 | 17 | `mr:0606-petrus-dung-et-petrus-thuan` |  | VN | dies_natalis |  |  |
 | 6 | 18 | `mr:0606-raphael-guizar-valencia` | * | MX | dies_natalis |  |  |
-| 6 | 19 | `mr:0606-innocentius-guz` | * | DE | dies_natalis |  |  |
+| 6 | 19 | `mr:0606-innocentius-guz` | * | DE | dies_natalis |  | 2004 English: Translation error: "followers of contrary opinions and religions ... was detained by the guards" where the Latin has "opiniónum hóminum et religiónis adversárum" (ideologies hostile to man and religion) and "a vigílibus ... trucidátus est" (murdered by the guards). |
 | 7 | 1 | `mr:0607-colmanus` | * | IE | dies_natalis |  |  |
 | 7 | 2 | `mr:0607-petrus-et-socii` |  | ES | dies_natalis |  |  |
 | 7 | 3 | `mr:0607-robertus` |  | GB | dies_natalis |  |  |
@@ -143,7 +143,7 @@
 | 11 | 11 | `mr:0611-paula-frassinetti` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0611-maria-schinina` | * | IT | dies_natalis |  |  |
 | 11 | 13 | `mr:0611-ignatius-maloyan` | * | TR | dies_natalis |  |  |
-| 12 | 1 | `mr:0612-basilides` |  | IT | dies_natalis |  |  |
+| 12 | 1 | `mr:0612-basilides` |  | IT | dies_natalis |  | 2004 English: Translation error: "Loreto" where the Latin has "Lórii" (Lorium, on the Via Aurelia). |
 | 12 | 2 | `mr:0612-onuphrius` |  | EG | dies_natalis |  |  |
 | 12 | 3 | `mr:0612-leo-iii` |  | IT | dies_natalis |  |  |
 | 12 | 4 | `mr:0612-odulphus` | * | NL | dies_natalis |  |  |
@@ -233,7 +233,7 @@
 | 19 | 8 | `mr:0619-michaelina` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0619-sebastianus-newdigate-et-socii` | * | GB | dies_natalis |  |  |
 | 19 | 10 | `mr:0619-thomas-woodhouse` | * | GB | dies_natalis |  |  |
-| 19 | 11 | `mr:0619-remigius-isore-et-modestus-andlauer` |  | CN | dies_natalis |  |  |
+| 19 | 11 | `mr:0619-remigius-isore-et-modestus-andlauer` |  | CN | dies_natalis |  | 2004 English: Translation error: "Science City" where the Latin has "civitátem Scienscienénsem" (the city of Xianxian). |
 | 20 | 1 | `mr:0620-methodius` |  | GR | commemoratio | same as `mr:0918-methodius` |  |
 | 20 | 2 | `mr:0620-gobanus` | * | FR | dies_natalis |  |  |
 | 20 | 3 | `mr:0620-ioannes-de-mateola` | * | IT | dies_natalis |  |  |
@@ -263,13 +263,13 @@
 | 23 | 2 | `mr:0623-ediltrudis` |  | GB | dies_natalis |  |  |
 | 23 | 3 | `mr:0623-bilius` | * | FR | dies_natalis |  |  |
 | 23 | 4 | `mr:0623-lanfrancus` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "san Lanfranco" where the Latin has "beati Lanfranci" (Blessed). |
-| 23 | 5 | `mr:0623-walherus` | * | BE | dies_natalis |  |  |
+| 23 | 5 | `mr:0623-walherus` | * | BE | dies_natalis |  | 2004 English: Translation error: "while still bearing the tonsure of Remigius" where the Latin has "remígii tonsa mactátus" (killed with an oar). |
 | 23 | 6 | `mr:0623-maria` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0623-petrus-iacobus-de-pisauro` | * | IT | dies_natalis |  |  |
 | 23 | 8 | `mr:0623-thomas-garnet` |  | GB | dies_natalis |  |  |
 | 23 | 9 | `mr:0623-iosephus-cafasso` |  | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0623-maria-raphaela-cimatti` | * | IT | dies_natalis |  |  |
-| 24 | (1) | `mr:0624-ioannes-baptista` |  | PS | celebratio |  |  |
+| 24 | (1) | `mr:0624-ioannes-baptista` |  | PS | celebratio |  | 2004 English: Translation error: "was filled with the Holy Spirit" (of John) where the Latin has "matris, Spíritu Sancto replétæ" (his mother, filled with the Holy Spirit). |
 | 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis | same as `mr:0623-ioannes` |  |
 | 24 | 3 | `mr:0624-simplicius` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0624-agoardus-et-agilbertus` |  | FR | dies_natalis |  |  |
@@ -286,7 +286,7 @@
 | 25 | 5 | `mr:0625-molochus` | * | GB | dies_natalis |  |  |
 | 25 | 6 | `mr:0625-eurosia` | * | ES | dies_natalis |  |  |
 | 25 | 7 | `mr:0625-adalbertus` |  | NL | dies_natalis |  |  |
-| 25 | 8 | `mr:0625-salomon` | * | FR | dies_natalis |  |  |
+| 25 | 8 | `mr:0625-salomon` | * | FR | dies_natalis |  | 2004 English: Translation error: "attacked" where the Latin has "obcæcátus" (blinded). |
 | 25 | 9 | `mr:0625-gulielmus` |  | IT | dies_natalis |  |  |
 | 25 | 10 | `mr:0625-ioannes-hispanus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" (Burgundy) where the Latin has "in Sabaudia" (Savoy). |
 | 25 | 11 | `mr:0625-dorothea-montaviensis` | * | PL | dies_natalis |  |  |
@@ -297,7 +297,7 @@
 | 26 | 3 | `mr:0626-deodatus` | * | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0626-maxentius` |  | FR | dies_natalis |  |  |
 | 26 | 5 | `mr:0626-david` |  | GR | dies_natalis |  |  |
-| 26 | 6 | `mr:0626-salvius` |  | FR | dies_natalis |  |  |
+| 26 | 6 | `mr:0626-salvius` |  | FR | dies_natalis |  | 2004 English: Translation error: "Valence" where the Latin has "Valentiánam" (Valenciennes). |
 | 26 | 7 | `mr:0626-pelagius` |  | ES | dies_natalis |  |  |
 | 26 | 8 | `mr:0626-radulphus` |  | IT | dies_natalis |  |  |
 | 26 | 9 | `mr:0626-anthelmus` |  | FR | dies_natalis |  |  |
@@ -329,7 +329,7 @@
 | 28 | 8 | `mr:0628-lucia-wang-cheng-et-socii` |  | CN | dies_natalis |  |  |
 | 28 | 9 | `mr:0628-maria-du-zhaozhi` |  | CN | dies_natalis |  |  |
 | 28 | 10 | `mr:0628-severianus-baranyk-et-ioachim-senkivskyj` | * | UA | dies_natalis |  |  |
-| 29 | (1) | `mr:0629-petrus-et-paulus-apostoli` |  | IT | dies_natalis |  |  |
+| 29 | (1) | `mr:0629-petrus-et-paulus-apostoli` |  | IT | dies_natalis |  | 2004 English: Translation error: "confessed [Christ] on the Via Ostiensis" where the Latin has "via Ostiénsi confóssus" (pierced on the Ostian Way). |
 | 29 | 2 | `mr:0629-syrus` |  | IT | dies_natalis |  |  |
 | 29 | 3 | `mr:0629-cassius` |  | IT | dies_natalis |  |  |
 | 29 | 4 | `mr:0629-hemma` | * | AT | dies_natalis |  |  |

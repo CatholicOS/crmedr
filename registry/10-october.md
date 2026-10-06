@@ -5,7 +5,7 @@
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:1001-teresia-a-iesu-infante` |  | FR | celebratio | same as `mr:1003-teresia-a-iesu-infante` |  |
-| 1 | 2 | `mr:1001-piato` |  | FR | dies_natalis |  |  |
+| 1 | 2 | `mr:1001-piato` |  | FR | dies_natalis |  | 2004 English: Translation error: "Saint-Piat" where the Latin has "Sacilínii" (Seclin). |
 | 1 | 3 | `mr:1001-verissimus-et-socii` |  | PT | dies_natalis |  |  |
 | 1 | 4 | `mr:1001-romanus` |  | TR | dies_natalis |  |  |
 | 1 | 5 | `mr:1001-nicetius` |  | DE | dies_natalis |  |  |
@@ -22,7 +22,7 @@
 | 2 | (1) | `mr:1002-angeli-custodes` |  |  | celebratio |  |  |
 | 2 | 2 | `mr:1002-eleutherius` |  | TR | dies_natalis |  |  |
 | 2 | 3 | `mr:1002-saturius` | * | ES | dies_natalis |  |  |
-| 2 | 4 | `mr:1002-leodegarius` |  | FR | dies_natalis |  |  |
+| 2 | 4 | `mr:1002-leodegarius` |  | FR | dies_natalis |  | 2004 English: Translation error: "mutilated" where the Latin has "excæcátum" (blinded). |
 | 2 | 5 | `mr:1002-beregisus` | * | BE | dies_natalis |  |  |
 | 2 | 6 | `mr:1002-ursicinus` | * | CH | dies_natalis |  |  |
 | 2 | 7 | `mr:1002-theophilus` |  | TR | commemoratio |  |  |
@@ -50,22 +50,22 @@
 | 4 | 2 | `mr:1004-petronius` |  | IT | dies_natalis |  |  |
 | 4 | 3 | `mr:1004-quintinus` | * | FR | dies_natalis |  |  |
 | 4 | 4 | `mr:1004-aurea` |  | FR | dies_natalis |  |  |
-| 4 | 5 | `mr:1004-franciscus-xaverius-seelos` | * | US | dies_natalis |  |  |
+| 4 | 5 | `mr:1004-franciscus-xaverius-seelos` | * | US | dies_natalis |  | 2004 English: Translation error: "northern United States" where the Latin has the United States of North America (Louisiana is in the south). |
 | 4 | 6 | `mr:1004-henricus-morant-pellicer` | * | ES | dies_natalis |  |  |
 | 4 | 7 | `mr:1004-iosephus-canet-giner` | * | ES | dies_natalis |  |  |
 | 4 | 8 | `mr:1004-alaphridus-pellicer-munoz` | * | ES | dies_natalis |  |  |
 | 5 | 1 | `mr:1005-martyres-trevirorum` |  | DE | commemoratio | same as `mr:1006-martyres-trevirorum` |  |
 | 5 | 2 | `mr:1005-charitina` |  | TR | dies_natalis |  |  |
 | 5 | 3 | `mr:1005-mamlacha` |  | IR | commemoratio |  |  |
-| 5 | 4 | `mr:1005-apollinaris` |  | FR | dies_natalis |  |  |
+| 5 | 4 | `mr:1005-apollinaris` |  | FR | dies_natalis |  | 2004 English: Translation error: "Saint-Julien-en-Vienne" where the Latin has "Iúliæ Valéntiæ" (Valence). |
 | 5 | 5 | `mr:1005-placidus` |  | IT | commemoratio |  |  |
 | 5 | 6 | `mr:1005-hieronymus` | * | FR | dies_natalis |  |  |
 | 5 | 7 | `mr:1005-meinulphus` | * | DE | dies_natalis |  |  |
 | 5 | 8 | `mr:1005-froilanus` |  | ES | commemoratio | same as `mr:1003-froilanus` |  |
 | 5 | 9 | `mr:1005-attilanus` |  | ES | commemoratio |  |  |
-| 5 | 10 | `mr:1005-petrus-de-foro-cornelii` | * | IT | dies_natalis |  |  |
+| 5 | 10 | `mr:1005-petrus-de-foro-cornelii` | * | IT | dies_natalis |  | 2004 English: Translation error: "Foraz Cornelii" where the Latin has "de Foro Cornélii" (of Imola). |
 | 5 | 11 | `mr:1005-flora` | * | FR | commemoratio |  |  |
-| 5 | 12 | `mr:1005-sanctus` | * | IT | dies_natalis |  |  |
+| 5 | 12 | `mr:1005-sanctus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Corneto" where the Latin has "Coræ" (Cori). |
 | 5 | 13 | `mr:1005-raymundus-de-vineis` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1005-matthaeus-carreri` | * | IT | dies_natalis |  |  |
 | 5 | 15 | `mr:1005-gulielmus-hartley-et-ioannes-hewett` | * | GB | dies_natalis |  |  |
@@ -117,7 +117,7 @@
 | 9 | 8 | `mr:1009-domninus-tiferni-tiberini` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:1009-gislenus` |  | BE | dies_natalis |  |  |
 | 9 | 10 | `mr:1009-deusdedit` |  | IT | dies_natalis |  |  |
-| 9 | 11 | `mr:1009-guntherus` | * | CZ | depositio |  |  |
+| 9 | 11 | `mr:1009-guntherus` | * | CZ | depositio |  | 2004 English: Translation error: "Braunau" where the Latin has "Brennóviæ" (Břevnov). |
 | 9 | 12 | `mr:1009-bernardus-ruthenensis` | * | FR | dies_natalis |  |  |
 | 9 | 13 | `mr:1009-ludovicus-bertran` |  | ES | dies_natalis |  |  |
 | 9 | 14 | `mr:1009-innocentius-ab-immaculata-et-socii` |  | ES | dies_natalis |  |  |
@@ -183,7 +183,7 @@
 | 14 | 2 | `mr:1014-lupulus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:1014-gaudentius` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:1014-donatianus` |  | BE | commemoratio |  |  |
-| 14 | 5 | `mr:1014-fortunatus` |  | IT | dies_natalis |  |  |
+| 14 | 5 | `mr:1014-fortunatus` |  | IT | dies_natalis |  | 2004 English: Translation error: "prisoners" where the Latin has "ægrótis" (the sick). |
 | 14 | 6 | `mr:1014-manechildis` | * | FR | dies_natalis |  |  |
 | 14 | 7 | `mr:1014-venantius` | * | IT | commemoratio |  |  |
 | 14 | 8 | `mr:1014-angadrisma` | * | FR | dies_natalis |  |  |
@@ -229,8 +229,8 @@
 | 17 | 10 | `mr:1017-richardus-gwyn` |  | GB | dies_natalis |  |  |
 | 17 | 11 | `mr:1017-petrus-a-nativitate` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:1017-margarita-maria-alacoque` |  | FR | dies_natalis |  |  |
-| 17 | 13 | `mr:1017-iacobus-burin` | * | FR | dies_natalis |  |  |
-| 17 | 14 | `mr:1017-maria-natalia-a-sancto-ludovico-et-socii` | * | FR | dies_natalis |  |  |
+| 17 | 13 | `mr:1017-iacobus-burin` | * | FR | dies_natalis |  | 2004 English: Translation error: "La Vallée de Guyon" where the Latin has "Vallis Guidónis" (Laval). |
+| 17 | 14 | `mr:1017-maria-natalia-a-sancto-ludovico-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Valence" where the Latin has "Valentiánæ" (Valenciennes). |
 | 17 | 15 | `mr:1017-isidorus-gagelin` |  | VN | dies_natalis |  |  |
 | 17 | 16 | `mr:1017-contardus-ferrini` | * | IT | dies_natalis |  |  |
 | 17 | 17 | `mr:1017-fidel-fuidio-rodriguez` | * | ES | dies_natalis |  |  |
@@ -283,7 +283,7 @@
 | 21 | 11 | `mr:1021-petrus-yu-tae-chol` |  | KR | dies_natalis |  |  |
 | 21 | 12 | `mr:1021-laura-montoya-y-upegui` | * | CO | dies_natalis |  |  |
 | 22 | 1 | `mr:1022-marcus` |  | IL | commemoratio |  |  |
-| 22 | 2 | `mr:1022-abercius` |  | TR | dies_natalis |  |  |
+| 22 | 2 | `mr:1022-abercius` |  | TR | dies_natalis |  | 2004 English: Translation error: "led the faith ... and to have nourished it" where the Latin has "fidem ... conduxísse et ... enutrivísse" (that faith led him and nourished him). |
 | 22 | 3 | `mr:1022-philippus-et-hermes` |  | TR | dies_natalis |  |  |
 | 22 | 4 | `mr:1022-mallonus` |  | FR | dies_natalis |  |  |
 | 22 | 5 | `mr:1022-valerius` | * | FR | dies_natalis |  |  |
@@ -347,7 +347,7 @@
 | 26 | 6 | `mr:1026-cedda` | * | GB | dies_natalis |  |  |
 | 26 | 7 | `mr:1026-eata` | * | GB | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 26 | 8 | `mr:1026-sigebaldus` | * | FR | dies_natalis |  |  |
-| 26 | 9 | `mr:1026-witta` | * | DE | depositio |  |  |
+| 26 | 9 | `mr:1026-witta` | * | DE | depositio |  | 2004 English: Translation error: "Wigbert" where the Latin has "Wittæ" (Witta). |
 | 26 | 10 | `mr:1026-beanus` | * | GB | dies_natalis |  |  |
 | 26 | 11 | `mr:1026-fulcus` |  | IT | dies_natalis |  |  |
 | 26 | 12 | `mr:1026-damianus-furcheri` | * | IT | dies_natalis |  |  |
@@ -357,18 +357,18 @@
 | 27 | 3 | `mr:1027-namatius` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:1027-gaudiosus` |  | IT | depositio | same as `mr:1028-gaudiosus` |  |
 | 27 | 5 | `mr:1027-otteranus` | * | GB | dies_natalis |  |  |
-| 27 | 6 | `mr:1027-bartholomaeus-de-bregantia` | * | IT | commemoratio |  |  |
+| 27 | 6 | `mr:1027-bartholomaeus-de-bregantia` | * | IT | commemoratio |  | 2004 English: Translation error: "Bragança" where the Latin has "de Bregántia" (Breganze, near Vicenza). |
 | 27 | 7 | `mr:1027-salvator-mollar-ventura` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:1028-simon-et-iudas-apostoli` |  | PS | dies_natalis |  |  |
 | 28 | 2 | `mr:1028-ferrutius` |  | DE | dies_natalis |  |  |
 | 28 | 3 | `mr:1028-fidelis` |  | IT | dies_natalis |  |  |
 | 28 | 4 | `mr:1028-vincentius-et-socii` |  | ES | dies_natalis | same as `mr:1027-vincentius-et-socii` |  |
-| 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  |  |
+| 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  | 2004 English: Translation error: "twice clothed in white" where the Latin has "albis indútus" (clothed in white). |
 | 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis | same as `mr:0111-salvius-ambiani` |  |
 | 28 | 7 | `mr:1028-faro` |  | FR | dies_natalis |  |  |
 | 28 | 8 | `mr:1028-germanus` | * | FR | commemoratio |  | 2004 Italian: Translation error: "nella Borgogna" (in Burgundy) where the Latin has "in Sabáudia" (in Savoy). |
 | 28 | 9 | `mr:1028-franciscus-serrano-et-socii` |  | CN | dies_natalis |  |  |
-| 28 | 10 | `mr:1028-ioannes-dat` |  | VN | dies_natalis |  |  |
+| 28 | 10 | `mr:1028-ioannes-dat` |  | VN | dies_natalis |  | 2004 English: Translation error: "John Baptist" where the Latin has "Ioánnis Ðạt" (John Đạt). |
 | 28 | 11 | `mr:1028-rodericus-aguilar` |  | MX | dies_natalis |  |  |
 | 28 | 12 | `mr:1028-salvator-damianus-enguix-gares` | * | ES | dies_natalis |  |  |
 | 28 | 13 | `mr:1028-iosephus-ruiz-bruixola` | * | ES | dies_natalis |  |  |
@@ -380,7 +380,7 @@
 | 29 | 6 | `mr:1029-theodarius` |  | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:1029-colmanus` | * | IE | dies_natalis |  |  |
 | 29 | 8 | `mr:1029-dodo` | * | FR | dies_natalis |  |  |
-| 29 | 9 | `mr:1029-caietanus-errico` | * | IT | dies_natalis |  |  |
+| 29 | 9 | `mr:1029-caietanus-errico` | * | IT | dies_natalis |  | 2004 English: Translation error: the place "Secundiliáni" (Secondigliano) is omitted; only "Near Naples" is given. |
 | 30 | 1 | `mr:1030-marcianus` |  | IT | dies_natalis | same as `mr:0614-marcianus` |  |
 | 30 | 2 | `mr:1030-serapion` |  | TR | commemoratio |  |  |
 | 30 | 3 | `mr:1030-eutropia` |  | EG | dies_natalis |  |  |

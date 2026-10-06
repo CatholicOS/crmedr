@@ -23,7 +23,7 @@
 | 2 | 2 | `mr:0702-liberatus-et-socii` |  | TN | commemoratio |  |  |
 | 2 | 3 | `mr:0702-monegundis` |  | FR | dies_natalis |  |  |
 | 2 | 4 | `mr:0702-swithinus` |  | GB | dies_natalis |  |  |
-| 2 | 5 | `mr:0702-lidanus` | * | IT | dies_natalis |  |  |
+| 2 | 5 | `mr:0702-lidanus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Settimo" where the Latin has "Sétiæ" (Sezze). |
 | 2 | 6 | `mr:0702-petrus-de-luxemburgo` | * | FR | dies_natalis |  |  |
 | 2 | 7 | `mr:0702-ioannes-et-petrus-becchetti` | * | IT | commemoratio |  |  |
 | 2 | 8 | `mr:0702-bernardinus-realino` |  | IT | dies_natalis |  |  |
@@ -31,7 +31,7 @@
 | 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis | same as `mr:1221-thomas-apostolus` | 1914 English: Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona. |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY | commemoratio |  |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR | dies_natalis |  |  |
-| 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  |  |
+| 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  | 2004 English: Translation error: "Mysia" where the Latin has "Mœsia" (Moesia, on the Danube). |
 | 3 | 5 | `mr:0703-heliodorus` |  | IT | dies_natalis |  |  |
 | 3 | 6 | `mr:0703-anatolius-constantinopoli` | * | TR | dies_natalis |  |  |
 | 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis | same as `mr:0628-leo-ii` |  |
@@ -66,9 +66,9 @@
 | 5 | 7 | `mr:0705-thomas` | * | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0705-athanasius` | * | GR | dies_natalis |  |  |
 | 5 | 9 | `mr:0705-matthaeus-lambert-et-socii` | * | IE | dies_natalis |  |  |
-| 5 | 10 | `mr:0705-georgius-nichols-et-richardus-yaxley` | * | GB | dies_natalis |  |  |
+| 5 | 10 | `mr:0705-georgius-nichols-et-richardus-yaxley` | * | GB | dies_natalis |  | 2004 English: Translation error: "condemned to death by beheading" where the Latin has "cápite damnáti" (condemned to death); they were hanged. |
 | 5 | 11 | `mr:0705-teresia-chen-jinxie-et-rosa-chen-aixie` |  | CN | dies_natalis |  |  |
-| 6 | (1) | `mr:0706-maria-goretti` |  | IT | dies_natalis |  |  |
+| 6 | (1) | `mr:0706-maria-goretti` |  | IT | dies_natalis |  | 2004 English: Translation error: "confessed [attested to her faith] by [through the] blows of a dagger" where the Latin has "pugiónis íctibus confóssa" (stabbed with blows of a dagger). |
 | 6 | 2 | `mr:0706-cyriaca` | * | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0706-romulus` |  | IT | dies_natalis |  |  |
 | 6 | 4 | `mr:0706-sisoes-magnus` | * | EG | dies_natalis |  |  |
@@ -143,7 +143,7 @@
 | 11 | 4 | `mr:0711-marciana` |  | DZ | dies_natalis |  |  |
 | 11 | 5 | `mr:0711-leontius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
 | 11 | 6 | `mr:0711-drostanus` | * | GB | dies_natalis |  |  |
-| 11 | 7 | `mr:0711-placidus-et-sigisbertus` | * | CH | dies_natalis |  |  |
+| 11 | 7 | `mr:0711-placidus-et-sigisbertus` | * | CH | dies_natalis |  | 2004 English: Translation error: "the former ... founded" where the Latin has "alter" (the other, Sigisbert) as founder and "prior" (Placidus) as the martyr. |
 | 11 | 8 | `mr:0711-hidulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Treviri" (bishop of Trier) where the Latin has "chorepíscopus Tréviris" (chorbishop at Trier). |
 | 11 | 9 | `mr:0711-abundius` |  | ES | dies_natalis |  |  |
 | 11 | 10 | `mr:0711-olga` |  | UA | dies_natalis |  |  |
@@ -157,7 +157,7 @@
 | 12 | 3 | `mr:0712-nabor-et-felix` |  | DZ | dies_natalis |  |  |
 | 12 | 4 | `mr:0712-paternianus` |  | IT | dies_natalis |  |  |
 | 12 | 5 | `mr:0712-viventiolus` |  | FR | dies_natalis |  |  |
-| 12 | 6 | `mr:0712-ioannes-gualbertus` |  | IT | dies_natalis |  |  |
+| 12 | 6 | `mr:0712-ioannes-gualbertus` |  | IT | dies_natalis |  | 2004 English: Translation error: "the Valley of the Umbra" where the Latin has "Valle Umbrósa" (Vallombrosa). |
 | 12 | 7 | `mr:0712-leo` | * | IT | dies_natalis |  |  |
 | 12 | 8 | `mr:0712-david-gunston` | * | GB | dies_natalis |  |  |
 | 12 | 9 | `mr:0712-ioannes-jones` |  | GB | dies_natalis |  |  |
@@ -212,7 +212,7 @@
 | 15 | 13 | `mr:0715-ansuerus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (in Alsace) where the Latin has "in Holsátia" (in Holstein). |
 | 15 | 14 | `mr:0715-david` | * | SE | dies_natalis |  |  |
 | 15 | 15 | `mr:0715-ceslaus` | * | PL | dies_natalis |  |  |
-| 15 | 16 | `mr:0715-bernardus` | * | IT | dies_natalis |  |  |
+| 15 | 16 | `mr:0715-bernardus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Mont Cenis" where the Latin has "Monte Calério" (Moncalieri). |
 | 15 | 17 | `mr:0715-ignatius-de-azevedo-et-socii` | * | BR | dies_natalis |  |  |
 | 15 | 18 | `mr:0715-pompilius-maria-pirrotti` |  | IT | dies_natalis |  |  |
 | 15 | 19 | `mr:0715-michael-bernardus-marchand` | * | FR | dies_natalis |  |  |
@@ -233,7 +233,7 @@
 | 16 | 11 | `mr:0716-ioannes-sugar-et-robertus-grissold` | * | GB | dies_natalis |  |  |
 | 16 | 12 | `mr:0716-andreas-de-soveral-et-dominicus-carvalho` | * | BR | dies_natalis |  |  |
 | 16 | 13 | `mr:0716-nicolaus-savouret-et-claudius-beguignot` | * | FR | dies_natalis |  |  |
-| 16 | 14 | `mr:0716-amata-a-iesu-et-socii` | * | FR | dies_natalis |  |  |
+| 16 | 14 | `mr:0716-amata-a-iesu-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Anne-Marie of Jesus" where the Latin has "Amátæ a Iesu" (Aimée of Jesus). |
 | 16 | 15 | `mr:0716-maria-magdalena-postel` |  | FR | dies_natalis |  |  |
 | 16 | 16 | `mr:0716-lang-yangzhi-et-paulus-lang-fu` |  | CN | dies_natalis |  |  |
 | 16 | 17 | `mr:0716-teresia-zhang-hezhi` |  | CN | dies_natalis |  |  |
@@ -244,7 +244,7 @@
 | 17 | 5 | `mr:0717-alexius` |  | IT | dies_natalis |  |  |
 | 17 | 6 | `mr:0717-theodosius` |  | FR | dies_natalis |  |  |
 | 17 | 7 | `mr:0717-ennodius` |  | IT | dies_natalis |  |  |
-| 17 | 8 | `mr:0717-fredegandus` | * | BE | dies_natalis |  |  |
+| 17 | 8 | `mr:0717-fredegandus` | * | BE | dies_natalis |  | 2004 English: Translation error: "Tournai" where the Latin has "Turníni" (Deurne), and "southern Brabant" where it has "Brabántia Austrásiæ". |
 | 17 | 9 | `mr:0717-kenelmus` | * | GB | dies_natalis |  |  |
 | 17 | 10 | `mr:0717-leo-iv` |  | IT | dies_natalis |  |  |
 | 17 | 11 | `mr:0717-colmanus` |  | AT | dies_natalis |  |  |
@@ -252,8 +252,8 @@
 | 17 | 13 | `mr:0717-hedwigis` |  | PL | dies_natalis |  |  |
 | 17 | 14 | `mr:0717-teresia-a-sancto-augustino-et-socii` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Marta Maddalena Claudina" where the Latin has "Maríæ Magdalénæ Claudínæ" (Marie-Madeleine-Claudine). |
 | 17 | 15 | `mr:0717-petrus-liu-ziyu` |  | CN | dies_natalis |  |  |
-| 17 | 16 | `mr:0717-paulus-gojdich` | * | SK | dies_natalis |  |  |
-| 18 | 1 | `mr:0718-symphorosa-et-socii` |  | IT | commemoratio |  |  |
+| 17 | 16 | `mr:0717-paulus-gojdich` | * | SK | dies_natalis |  | 2004 English: Translation error: "Prešov" where the Latin has "Leopoldópoli" (Leopoldov). |
+| 18 | 1 | `mr:0718-symphorosa-et-socii` |  | IT | commemoratio |  | 2004 English: Translation error: "her seven sons" where the Latin has "septem sociórum" (seven companions). |
 | 18 | 2 | `mr:0718-maternus` |  | IT | dies_natalis |  |  |
 | 18 | 3 | `mr:0718-aemilianus` |  | BG | dies_natalis |  |  |
 | 18 | 4 | `mr:0718-philastrius` |  | IT | dies_natalis |  |  |
@@ -284,24 +284,24 @@
 | 20 | 3 | `mr:0720-ioseph` |  | PS | commemoratio |  |  |
 | 20 | 4 | `mr:0720-marina` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0720-frumentius` |  | ET | dies_natalis | same as `mr:1027-frumentius` |  |
-| 20 | 6 | `mr:0720-aurelius` |  | TN | dies_natalis |  |  |
-| 20 | 7 | `mr:0720-vulmarus` |  | FR | dies_natalis |  |  |
+| 20 | 6 | `mr:0720-aurelius` |  | TN | dies_natalis |  | 2004 English: Translation error: "moved the episcopal seat from the place of the idol" where the Latin "simulácri deæ Cæléstis loco collocávit" means he set it in the place of the idol. |
+| 20 | 7 | `mr:0720-vulmarus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Bologna" where the Latin "in pago Bononiénsi Gálliæ" is the district of Boulogne. |
 | 20 | 8 | `mr:0720-paulus` |  | ES | dies_natalis |  |  |
 | 20 | 9 | `mr:0720-bernardus` | * | DE | dies_natalis |  |  |
-| 20 | 10 | `mr:0720-magdalena-yi-yong-hui-et-socii` |  | KR | dies_natalis |  |  |
+| 20 | 10 | `mr:0720-magdalena-yi-yong-hui-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "virgins" where the Latin has "vírginis" (singular, of Mary Wŏn Kwi-im only). |
 | 20 | 11 | `mr:0720-iosephus-maria-diaz-sanjurjo` |  | VN | dies_natalis |  |  |
-| 20 | 12 | `mr:0720-leo-ignatius-mangin-et-paulus-denn` |  | CN | dies_natalis |  |  |
+| 20 | 12 | `mr:0720-leo-ignatius-mangin-et-paulus-denn` |  | CN | dies_natalis |  | 2004 English: Translation error: "Yingxian" sect where the Latin has "sectæ «Yihetuan»" (the Boxers). |
 | 20 | 13 | `mr:0720-petrus-zhou-rixin` |  | CN | dies_natalis |  |  |
 | 20 | 14 | `mr:0720-maria-fu-guilin` |  | CN | dies_natalis |  |  |
 | 20 | 15 | `mr:0720-maria-zhao-guozhi-et-socii` |  | CN | commemoratio |  |  |
 | 20 | 16 | `mr:0720-xi-guizi` |  | CN | commemoratio |  |  |
-| 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu` | * | ES | dies_natalis |  |  |
+| 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu` | * | ES | dies_natalis |  | 2004 English: Translation error: the clause "et paulo post plumbis in via transfóssæ" (and shortly afterwards shot in the street) is omitted. |
 | 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT | celebratio |  |  |
 | 21 | 2 | `mr:0721-victor` |  | FR | dies_natalis |  |  |
 | 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis | same as `mr:0701-simeon-salus` | 2004 Italian: Translation error: "presso il lago di Mareotide in Egitto" where the Latin has "apud Asphaltitem lacum" (the Dead Sea). |
 | 21 | 4 | `mr:0721-praxedes` |  | IT | commemoratio |  |  |
 | 21 | 5 | `mr:0721-arbogastus` |  | FR | dies_natalis |  |  |
-| 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  |  |
+| 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  | 2004 English: Translation error: "Lugduni" where the Latin has "beáti" (blessed). |
 | 21 | 7 | `mr:0721-albericus-crescitelli` |  | CN | dies_natalis |  |  |
 | 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  |  |
 | 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  |  |
@@ -322,7 +322,7 @@
 | 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis | same as `mr:1008-birgitta` |  |
 | 23 | 2 | `mr:0723-ezechiel-propheta` |  | IL | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT | commemoratio |  |  |
-| 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  |  |
+| 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  | 2004 English: Translation error: "Bizerte in Tunisia" where the Latin has "Bízyæ in Thrácia" (Vize in Thrace). |
 | 23 | 5 | `mr:0723-ioannes-cassianus` | * | FR | dies_natalis |  |  |
 | 23 | 6 | `mr:0723-valerianus` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0723-ioanna` | * | IT | dies_natalis |  |  |
@@ -394,7 +394,7 @@
 | 26 | 18 | `mr:0726-georgius-preca` | * | MT | dies_natalis |  |  |
 | 27 | 1 | `mr:0727-septem-dormientes-ephesi` |  | TR | commemoratio |  |  |
 | 27 | 2 | `mr:0727-pantaleon` |  | TR | dies_natalis |  |  |
-| 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  |  |
+| 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Salins-les-Bains" where the Latin "Ledóne Salinário" is Lons-le-Saunier. |
 | 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis | same as `mr:0406-caelestinus-i` |  |
 | 27 | 5 | `mr:0727-simeon` |  | TR | dies_natalis | same as `mr:0105-simeon` |  |
 | 27 | 6 | `mr:0727-ursus` | * | FR | dies_natalis |  |  |

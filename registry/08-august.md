@@ -11,7 +11,7 @@
 | 1 | 5 | `mr:0801-eusebius` |  | IT | dies_natalis | same as `mr:1216-eusebius` |  |
 | 1 | 6 | `mr:0801-exsuperius` | * | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:0801-severus` | * | FR | dies_natalis |  |  |
-| 1 | 8 | `mr:0801-friardus-et-secundellus` | * | FR | dies_natalis |  |  |
+| 1 | 8 | `mr:0801-friardus-et-secundellus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Friard and Secundellus, deacons" where the Latin has "Friárdi et Secundélli diáconi" (only Secundellus was a deacon). |
 | 1 | 9 | `mr:0801-ionatus` | * | FR | dies_natalis |  |  |
 | 1 | 10 | `mr:0801-ethelwoldus` |  | GB | depositio |  |  |
 | 1 | 11 | `mr:0801-emericus-de-quart` | * | IT | dies_natalis |  |  |
@@ -48,21 +48,21 @@
 | 4 | (1) | `mr:0804-ioannes-maria-vianney` |  | FR | dies_natalis |  |  |
 | 4 | 2 | `mr:0804-aristarchus-thessalonicensis` |  | GR | commemoratio |  |  |
 | 4 | 3 | `mr:0804-iustinus-et-crescention` |  | IT | dies_natalis |  |  |
-| 4 | 4 | `mr:0804-eleutherius` |  | TR | dies_natalis |  |  |
-| 4 | 5 | `mr:0804-ia` |  | IR | dies_natalis |  |  |
+| 4 | 4 | `mr:0804-eleutherius` |  | TR | dies_natalis |  | 2004 English: Translation error: "Tarsus" where the Latin has "Társiæ" (Tarsia, in Bithynia; Tarsus is in Cilicia). |
+| 4 | 5 | `mr:0804-ia` |  | IR | dies_natalis |  | 2004 English: Translation error: "Saint Ira" where the Latin has "sanctæ Iæ" (Saint Ia). |
 | 4 | 6 | `mr:0804-euphronius` |  | FR | commemoratio |  |  |
 | 4 | 7 | `mr:0804-onuphrius` | * | IT | dies_natalis |  |  |
 | 4 | 8 | `mr:0804-rainerius` | * | HR | dies_natalis |  |  |
 | 4 | 9 | `mr:0804-caecilia` | * | IT | dies_natalis |  |  |
 | 4 | 10 | `mr:0804-gulielmus-horne` | * | GB | dies_natalis |  |  |
-| 4 | 11 | `mr:0804-fridericus-janssoone` | * | CA | dies_natalis |  |  |
+| 4 | 11 | `mr:0804-fridericus-janssoone` | * | CA | dies_natalis |  | 2004 English: Translation error: "Mariannhill" where the Latin has "Marianópoli" (Montreal). |
 | 4 | 12 | `mr:0804-gundisalvus-gonzalo` | * | ES | dies_natalis |  |  |
 | 4 | 13 | `mr:0804-iosephus-batalla-parramon-et-socii` | * | ES | dies_natalis |  |  |
 | 4 | 14 | `mr:0804-henricus-krzysztofik` | * | DE | dies_natalis |  |  |
 | 5 | (1) | `mr:0805-dedicatio-basilicae-sanctae-mariae` |  | IT | dedicatio |  |  |
 | 5 | 2 | `mr:0805-memmius` |  | FR | dies_natalis |  |  |
 | 5 | 3 | `mr:0805-paridis` |  | IT | dies_natalis |  |  |
-| 5 | 4 | `mr:0805-cassianus` |  | FR | dies_natalis |  |  |
+| 5 | 4 | `mr:0805-cassianus` |  | FR | dies_natalis |  | 2004 English: Translation error: "At Lyon" where the Latin has "Augustodúni" (Autun). |
 | 5 | 5 | `mr:0805-nonna` |  | TR | dies_natalis |  |  |
 | 5 | 6 | `mr:0805-emigdius` |  | IT | dies_natalis |  |  |
 | 5 | 7 | `mr:0805-venantius` | * | FR | dies_natalis |  |  |
@@ -98,7 +98,7 @@
 | 7 | 15 | `mr:0807-edmundus-bojanowski` | * | PL | dies_natalis |  |  |
 | 7 | 16 | `mr:0807-michael-de-la-mora` |  | MX | dies_natalis |  |  |
 | 8 | (1) | `mr:0808-dominicus` |  | ES | celebratio | same as `mr:0804-dominicus` |  |
-| 8 | 2 | `mr:0808-secundus-et-socii` |  | IT | dies_natalis |  |  |
+| 8 | 2 | `mr:0808-secundus-et-socii` |  | IT | dies_natalis |  | 2004 English: Translation error: the place "Albáni" (at Albano) is omitted. |
 | 8 | 3 | `mr:0808-cyriacus-et-socii` |  | IT | dies_natalis | same as `mr:0316-cyriacus` |  |
 | 8 | 4 | `mr:0808-marinus` |  | TR | dies_natalis |  |  |
 | 8 | 5 | `mr:0808-eusebius` |  | IT | dies_natalis | same as `mr:0812-eusebius` |  |
@@ -135,7 +135,7 @@
 | 10 | (1) | `mr:0810-laurentius` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:0810-martyres-alexandriae` |  | EG | commemoratio |  |  |
 | 10 | 3 | `mr:0810-blanus` | * | GB | dies_natalis |  |  |
-| 10 | 4 | `mr:0810-archangelus-de-calataphino` | * | IT | dies_natalis |  |  |
+| 10 | 4 | `mr:0810-archangelus-de-calataphino` | * | IT | dies_natalis |  | 2004 English: Translation error: "of Calataphim near Piacenza" where the Latin has "de Calataphíno Piacentini" (of Calatafimi, surnamed Piacentini). |
 | 10 | 5 | `mr:0810-augustinus-ota` | * | JP | dies_natalis |  |  |
 | 10 | 6 | `mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii` | * | FR | dies_natalis |  |  |
 | 10 | 7 | `mr:0810-iosephus-toledo-pellicer` | * | ES | dies_natalis |  |  |
@@ -191,7 +191,7 @@
 | 13 | 15 | `mr:0813-ioannes-agramunt` | * | ES | dies_natalis |  |  |
 | 13 | 16 | `mr:0813-modestus-garcia-martus` | * | ES | dies_natalis |  |  |
 | 13 | 17 | `mr:0813-iosephus-bonet-nadal` | * | ES | dies_natalis |  |  |
-| 13 | 18 | `mr:0813-iacobus-gapp` | * | DE | dies_natalis |  |  |
+| 13 | 18 | `mr:0813-iacobus-gapp` | * | DE | dies_natalis |  | 2004 English: Translation error: "Gibraltar" where the Latin has "in Gálliam" (France). |
 | 14 | (1) | `mr:0814-maximilianus-maria-kolbe` |  | PL | dies_natalis |  |  |
 | 14 | 2 | `mr:0814-ursicinus` |  | HR | dies_natalis |  |  |
 | 14 | 3 | `mr:0814-marcellus` |  | SY | dies_natalis |  |  |
@@ -225,7 +225,7 @@
 | 15 | 19 | `mr:0815-carmelus-sastre-sastre` | * | ES | dies_natalis |  |  |
 | 15 | 20 | `mr:0815-iacobus-bonet-nadal` | * | ES | dies_natalis |  |  |
 | 15 | 21 | `mr:0815-claudius-granzotto` | * | IT | dies_natalis |  |  |
-| 16 | (1) | `mr:0816-stephanus` |  | HU | celebratio | same as `mr:0902-stephanus` |  |
+| 16 | (1) | `mr:0816-stephanus` |  | HU | celebratio | same as `mr:0902-stephanus` | 2004 English: Translation error: "being Alba Regalis just and peaceful ... at in Hungary" where the Latin has "iustus et pacíficus ... donec Albæ Regáli in Hungária" (just and peaceful ... until, at Székesfehérvár in Hungary); and "churches" where the Latin has "ópibus" (wealth). |
 | 16 | 2 | `mr:0816-arsacius` |  | TR | commemoratio |  |  |
 | 16 | 3 | `mr:0816-theodorus` |  | CH | dies_natalis |  |  |
 | 16 | 4 | `mr:0816-armagilus` | * | FR | dies_natalis |  |  |
@@ -245,7 +245,7 @@
 | 17 | 1 | `mr:0817-myron` |  | TR | dies_natalis |  |  |
 | 17 | 2 | `mr:0817-mamas` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0817-eusebius` |  | IT | dies_natalis | same as `mr:0926-eusebius-papa` |  |
-| 17 | 4 | `mr:0817-iero` | * | NL | dies_natalis |  |  |
+| 17 | 4 | `mr:0817-iero` | * | NL | dies_natalis |  | 2004 English: Translation error: "Jerome" where the Latin has "Ierónis" (Iero, Jeron), a different name. |
 | 17 | 5 | `mr:0817-elias-iunior` | * | GR | dies_natalis |  |  |
 | 17 | 6 | `mr:0817-nicolaus-politi` | * | IT | dies_natalis |  |  |
 | 17 | 7 | `mr:0817-albertus` | * | IT | dies_natalis |  |  |
@@ -256,7 +256,7 @@
 | 17 | 12 | `mr:0817-natalis-hilarius-le-conte` | * | FR | dies_natalis |  |  |
 | 17 | 13 | `mr:0817-henricus-canadell` | * | ES | dies_natalis |  |  |
 | 18 | 1 | `mr:0818-agapitus` |  | IT | dies_natalis |  |  |
-| 18 | 2 | `mr:0818-martyres-massae-candidae` |  | TN | dies_natalis | same as `mr:0824-martyres-massae-candidae` |  |
+| 18 | 2 | `mr:0818-martyres-massae-candidae` |  | TN | dies_natalis | same as `mr:0824-martyres-massae-candidae` | 2004 English: Translation error: "drawn more frequently like fish into the net" where the Latin has "crebrióres píscibus" (more numerous than the fish drawn into the net). |
 | 18 | 3 | `mr:0818-leo` |  | TR | dies_natalis |  |  |
 | 18 | 4 | `mr:0818-helena` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0818-firminus` |  | FR | dies_natalis |  |  |
@@ -291,7 +291,7 @@
 | 19 | 18 | `mr:0819-ezechiel-moreno-diaz` |  | ES | dies_natalis |  |  |
 | 19 | 19 | `mr:0819-franciscus-ibanez-ibanez` | * | ES | dies_natalis |  |  |
 | 19 | 20 | `mr:0819-thomas-sitjar-fortia` | * | ES | dies_natalis |  |  |
-| 19 | 21 | `mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii` | * | ES | dies_natalis |  |  |
+| 19 | 21 | `mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "Nativity of Our Lord Torrente Paraira" where the Latin has "Nativitáte Dóminæ Nostræ Torrentallé Paraire" (Our Lady). |
 | 20 | (1) | `mr:0820-bernardus` |  | FR | dies_natalis |  |  |
 | 20 | 2 | `mr:0820-samuel-propheta` |  | IL | commemoratio |  |  |
 | 20 | 3 | `mr:0820-maximus` |  | FR | dies_natalis |  |  |
@@ -303,7 +303,7 @@
 | 20 | 9 | `mr:0820-pius-x` |  | IT | dies_natalis |  |  |
 | 20 | 10 | `mr:0820-matthias-cardona` | * | ES | dies_natalis |  |  |
 | 20 | 11 | `mr:0820-maria-climent-mateu` | * | ES | dies_natalis |  |  |
-| 20 | 12 | `mr:0820-ladislaus-maczkowski` | * | DE | dies_natalis |  |  |
+| 20 | 12 | `mr:0820-ladislaus-maczkowski` | * | DE | dies_natalis |  | 2004 English: Translation error: "defended the dignity of human and Christian faith" where the Latin has "fidem coram persecutóribus humánæ et christiánæ dignitátis" (the faith, before the persecutors of human and Christian dignity). |
 | 21 | (1) | `mr:0821-pius-x` |  | IT | celebratio | same as `mr:0903-pius-x` |  |
 | 21 | 2 | `mr:0821-agathonicus-et-zoticus` |  | TR | dies_natalis | same as `mr:0822-agathonicus-et-socii` |  |
 | 21 | 3 | `mr:0821-cyriaca` |  | IT | dies_natalis |  |  |
@@ -333,7 +333,7 @@
 | 22 | 12 | `mr:0822-elias-leymarie-de-laroche` | * | FR | dies_natalis |  |  |
 | 22 | 13 | `mr:0822-simeon-lukac` | * | UA | dies_natalis |  |  |
 | 23 | (1) | `mr:0823-rosa` |  | PE | celebratio |  |  |
-| 23 | 2 | `mr:0823-zachaeus` |  | IL | commemoratio |  |  |
+| 23 | 2 | `mr:0823-zachaeus` |  | IL | commemoratio |  | 2004 English: Translation error: "Zacharias" where the Latin has "Zachǽi" (Zacchaeus). |
 | 23 | 3 | `mr:0823-abundius-et-irenaeus` |  | IT | dies_natalis |  |  |
 | 23 | 4 | `mr:0823-cyriacus-et-archelaus` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0823-luppus` |  | BG | dies_natalis |  |  |
@@ -376,7 +376,7 @@
 | 26 | 1 | `mr:0826-melchisedech` |  | PS | commemoratio |  |  |
 | 26 | 2 | `mr:0826-maximilianus` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:0826-anastasius` |  | HR | dies_natalis |  |  |
-| 26 | 4 | `mr:0826-victor` |  | DZ | dies_natalis |  |  |
+| 26 | 4 | `mr:0826-victor` |  | DZ | dies_natalis |  | 2004 English: Translation error: "sentenced to death by beheading" where the Latin has "cápite damnátus" (condemned to death). |
 | 26 | 5 | `mr:0826-alexander` |  | IT | dies_natalis |  |  |
 | 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis | same as `mr:0816-eleutherius` |  |
 | 26 | 7 | `mr:0826-iacobus-retouret` | * | FR | dies_natalis |  |  |
@@ -392,12 +392,12 @@
 | 27 | 2 | `mr:0827-rufus` |  | IT | dies_natalis |  |  |
 | 27 | 3 | `mr:0827-marcellinus-et-socii` |  | RO | dies_natalis |  |  |
 | 27 | 4 | `mr:0827-narnus` |  | IT | dies_natalis |  |  |
-| 27 | 5 | `mr:0827-poemen` |  | EG | dies_natalis |  |  |
+| 27 | 5 | `mr:0827-poemen` |  | EG | dies_natalis |  | 2004 English: Translation error: "Phermeus" where the Latin has "Pœmenis" (Poemen). |
 | 27 | 6 | `mr:0827-licerius` |  | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0827-caesarius` |  | FR | dies_natalis |  |  |
 | 27 | 8 | `mr:0827-ioannes` |  | IT | dies_natalis |  |  |
 | 27 | 9 | `mr:0827-gebhardus` | * | DE | depositio |  | 2004 Italian: Translation error: "nel territorio dell’odierna Svizzera" where the Latin has "in Suevia" (Swabia); Petershausen at Constance is in Germany. |
-| 27 | 10 | `mr:0827-guarinus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" where the Latin has "Sabaudiae" (in Savoy). |
+| 27 | 10 | `mr:0827-guarinus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" where the Latin has "Sabaudiae" (in Savoy). 2004 English: Translation error: "Hautecombe" where the Latin has "monastério Alpénsi" (Aulps). |
 | 27 | 11 | `mr:0827-amadeus` | * | CH | dies_natalis |  |  |
 | 27 | 12 | `mr:0827-angelus-conti` | * | IT | dies_natalis |  |  |
 | 27 | 13 | `mr:0827-rogerius-cadwallador` | * | GB | dies_natalis |  |  |
@@ -445,8 +445,8 @@
 | 29 | 17 | `mr:0829-sancia-szymkowiak` | * | PL | dies_natalis |  |  |
 | 29 | 18 | `mr:0829-teresia-bracco` | * | IT | dies_natalis |  |  |
 | 30 | 1 | `mr:0830-felix-et-adauctus` |  | IT | dies_natalis |  |  |
-| 30 | 2 | `mr:0830-sexaginta-martyres-coloniae-sufetanae` |  | TN | commemoratio |  |  |
-| 30 | 3 | `mr:0830-pammachius` |  | IT | commemoratio |  |  |
+| 30 | 2 | `mr:0830-sexaginta-martyres-coloniae-sufetanae` |  | TN | commemoratio |  | 2004 English: Translation error: "were burned" where the Latin has "cæsi sunt" (were slain). |
+| 30 | 3 | `mr:0830-pammachius` |  | IT | commemoratio |  | 2004 English: Translation error: "Titulus Crescentianus" where the Latin has "títulus Cælimontánus" (the title on the Caelian Hill). |
 | 30 | 4 | `mr:0830-agilus` | * | FR | dies_natalis |  |  |
 | 30 | 5 | `mr:0830-fiacrius` |  | FR | dies_natalis |  |  |
 | 30 | 6 | `mr:0830-fantinus` | * | GR | dies_natalis |  |  |

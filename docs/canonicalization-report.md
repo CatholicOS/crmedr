@@ -945,6 +945,15 @@ diffúdit at mr:0612-laurentius-maria-a-sancto-francisco-xaverio, in `data/mispr
 Italian's rank of a feast for the patrons of Italy and of Europe (Festa for Memoria) is its own
 calendar, not an error. The findings of lower confidence await review.
 
+**The unofficial English 2004 against the Latin 2004 (October 2026)**: the same reading of the
+unofficial English, with the Italian as a second witness. Its high-confidence errors are curator
+notes on the English: "rebuilt" for aedificare, Gallia Lugdunensis rendered "Lyon France",
+look-alike places (Pontoise rendered Pont-Sainte-Maxence, Senlis rendered Autun), senses reversed
+(mr:1022-abercius, mr:0720-aurelius), misreadings ("confessed" for confossa at
+mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius). Faults of the digitized copy
+rather than of the translation (footnote markers left in the text, an encoding slip of "d",
+broken words, run-in eulogies) are corrected in the texts, not noted.
+
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (`ID_CORRECTIONS` keeps them on regeneration):
 - Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);
