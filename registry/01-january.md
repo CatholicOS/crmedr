@@ -19,7 +19,7 @@
 | 1 | 13 | `mr:0101-iosephus-maria-tomasi` | * | IT | dies_natalis |  |  |
 | 1 | 14 | `mr:0101-ioannes-et-renatus-lego` | * | FR | dies_natalis |  |  |
 | 1 | 15 | `mr:0101-vincentius-maria-strambi` | * | IT | dies_natalis |  |  |
-| 1 | 16 | `mr:0101-valentinus-paquay` | * | BE | dies_natalis |  |  |
+| 1 | 16 | `mr:0101-valentinus-paquay` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "vicino a Tongeren" where the Latin has "prope Traiéctum Mosæ" (near Maastricht). |
 | 1 | 17 | `mr:0101-sigismundus-gorazdowski` | * | UA | dies_natalis |  |  |
 | 1 | 18 | `mr:0101-marianus-konopinski` | * | DE | dies_natalis |  |  |
 | 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR | celebratio | same as `mr:0509-gregorius-nazianzenus`; same as `mr:0614-basilius-magnus` |  |
@@ -148,7 +148,7 @@
 | 11 | 6 | `mr:0111-honorata` |  | IT | translatio |  |  |
 | 11 | 7 | `mr:0111-theodosius` |  | PS | dies_natalis |  |  |
 | 11 | 8 | `mr:0111-paulinus` | * | IT | dies_natalis |  |  |
-| 11 | 9 | `mr:0111-bernardus-scammacca` | * | IT | dies_natalis |  |  |
+| 11 | 9 | `mr:0111-bernardus-scammacca` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "Bernardino" where the Latin has "Bernárdi" (Bernardo). |
 | 11 | 10 | `mr:0111-gulielmus-carter` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:0111-thomas-de-cora` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0111-franciscus-rogaczewski` | * | PL | dies_natalis |  |  |
@@ -258,7 +258,7 @@
 | 20 | 3 | `mr:0120-ascla` |  | EG | dies_natalis | same as `mr:0123-ascla` |  |
 | 20 | 4 | `mr:0120-neophytus` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0120-euthymius` |  | PS | dies_natalis |  |  |
-| 20 | 6 | `mr:0120-wulfstanus` |  | GB | dies_natalis | same as `mr:0119-wulstanus` |  |
+| 20 | 6 | `mr:0120-wulfstanus` |  | GB | dies_natalis | same as `mr:0119-wulstanus` | 2004 Italian: Translation error: "condannare la venalità" (condemning venality) where the Latin has "in venalícia exprobránda" (condemning the slave trade). |
 | 20 | 7 | `mr:0120-benedictus-ricasoli` | * | IT | dies_natalis |  |  |
 | 20 | 8 | `mr:0120-henricus` | * | FI | dies_natalis |  |  |
 | 20 | 9 | `mr:0120-eustochius-calafato` |  | IT | dies_natalis |  |  |
@@ -328,7 +328,7 @@
 | 26 | 2 | `mr:0126-theogenes` |  | DZ | dies_natalis |  |  |
 | 26 | 3 | `mr:0126-paula` |  | PS | dies_natalis |  |  |
 | 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL | dies_natalis |  |  |
-| 26 | 5 | `mr:0126-albericus` | * | FR | dies_natalis |  |  |
+| 26 | 5 | `mr:0126-albericus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Neumünster" where the Latin has "Novum Monastérium" (the New Monastery, that is Cîteaux). |
 | 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE | dies_natalis |  |  |
@@ -340,7 +340,7 @@
 | 27 | 6 | `mr:0127-vitalianus` |  | IT | depositio |  |  |
 | 27 | 7 | `mr:0127-theodoricus` | * | FR | dies_natalis |  |  |
 | 27 | 8 | `mr:0127-gilduinus` | * | FR | dies_natalis |  |  |
-| 27 | 9 | `mr:0127-ioannes` | * | FR | dies_natalis |  |  |
+| 27 | 9 | `mr:0127-ioannes` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "sede episcopale di Maurienne" where the Latin has "sedem Morinénsem" (the see of the Morini, that is Thérouanne). |
 | 27 | 10 | `mr:0127-manfredus-settala` | * | IT | dies_natalis |  |  |
 | 27 | 11 | `mr:0127-rosalia-du-verdier-de-la-soriniere` | * | FR | dies_natalis |  |  |
 | 27 | 12 | `mr:0127-ioannes-maria` |  | UG | dies_natalis |  |  |

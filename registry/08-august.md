@@ -6,7 +6,7 @@
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:0801-alphonsus-maria-de-liguori` |  | IT | dies_natalis | same as `mr:0802-alphonsus-maria-de-liguori` |  |
 | 1 | 2 | `mr:0801-septem-fratres-martyres-antiochiae` |  | TR | commemoratio |  |  |
-| 1 | 3 | `mr:0801-secundinus` |  | IT | dies_natalis |  |  |
+| 1 | 3 | `mr:0801-secundinus` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "al tredicesimo miglio" (the thirteenth mile of the Via Prenestina) where the Latin has "miliário tricésimo" (the thirtieth). |
 | 1 | 4 | `mr:0801-felix` |  | ES | dies_natalis |  |  |
 | 1 | 5 | `mr:0801-eusebius` |  | IT | dies_natalis | same as `mr:1216-eusebius` |  |
 | 1 | 6 | `mr:0801-exsuperius` | * | FR | dies_natalis |  |  |
@@ -125,7 +125,7 @@
 | 9 | 7 | `mr:0809-ioannes-de-salerno` | * | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0809-ioannes-de-firmo` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:0809-richardus-bere` | * | GB | dies_natalis |  |  |
-| 9 | 10 | `mr:0809-claudius-richard` | * | FR | dies_natalis |  |  |
+| 9 | 10 | `mr:0809-claudius-richard` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "dal monastero di Metz" where the Latin "e Mediáno monastério" is the abbey of Moyenmoutier. |
 | 9 | 11 | `mr:0809-candida-maria-a-iesu` | * | ES | dies_natalis |  |  |
 | 9 | 12 | `mr:0809-florentinus-asensio-barroso` | * | ES | dies_natalis |  |  |
 | 9 | 13 | `mr:0809-ruben-a-iesu-lopez-aguilar-et-socii` | * | ES | dies_natalis |  |  |
@@ -143,7 +143,7 @@
 | 10 | 9 | `mr:0810-franciscus-drzewiecki-et-eduardus-grzymala` | * | DE | dies_natalis |  |  |
 | 11 | (1) | `mr:0811-clara` |  | IT | dies_natalis | same as `mr:0812-clara` |  |
 | 11 | 2 | `mr:0811-alexander-carbonarius` |  | TR | dies_natalis |  |  |
-| 11 | 3 | `mr:0811-tiburtius` |  | IT | dies_natalis |  |  |
+| 11 | 3 | `mr:0811-tiburtius` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "san Tiburzio" omits the title "martire" given in the Latin ("sancti Tibúrtii, mártyris"). |
 | 11 | 4 | `mr:0811-susanna` |  | IT | commemoratio |  |  |
 | 11 | 5 | `mr:0811-rufinus` |  | IT | dies_natalis |  |  |
 | 11 | 6 | `mr:0811-cassianus` | * | IT | dies_natalis |  |  |
@@ -178,7 +178,7 @@
 | 13 | 2 | `mr:0813-cassianus` |  | IT | dies_natalis |  |  |
 | 13 | 3 | `mr:0813-antiochus` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:0813-radegundis` |  | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0813-maximus-confessor` |  | TR | dies_natalis |  |  |
+| 13 | 5 | `mr:0813-maximus-confessor` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nella regione di Lesghistan" where the Latin has "in Lazícam regiónem" (Lazica, in western Georgia). |
 | 13 | 6 | `mr:0813-vigbertus` |  | DE | dies_natalis |  |  |
 | 13 | 7 | `mr:0813-gertrudis` | * | DE | dies_natalis |  |  |
 | 13 | 8 | `mr:0813-patricius-o-healy-et-connus-o-rourke` | * | IE | dies_natalis |  |  |
@@ -197,7 +197,7 @@
 | 14 | 3 | `mr:0814-marcellus` |  | SY | dies_natalis |  |  |
 | 14 | 4 | `mr:0814-eusebius` |  | IT | dies_natalis |  |  |
 | 14 | 5 | `mr:0814-fachananus` | * | IE | dies_natalis |  |  |
-| 14 | 6 | `mr:0814-arnulphus` |  | BE | dies_natalis | same as `mr:0815-arnulphus` |  |
+| 14 | 6 | `mr:0814-arnulphus` |  | BE | dies_natalis | same as `mr:0815-arnulphus` | 2004 Italian: Translation error: "Altenburg nelle Fiandre, ora in Germania" where the Latin "Aldenbúrgi in Flándria" is Oudenburg in Flanders, in present-day Belgium. |
 | 14 | 7 | `mr:0814-sanctus-de-urbino` | * | IT | dies_natalis |  |  |
 | 14 | 8 | `mr:0814-octingenti-martyres-hydrunti` | * | IT | dies_natalis |  |  |
 | 14 | 9 | `mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon` |  | JP | dies_natalis |  |  |
@@ -310,7 +310,7 @@
 | 21 | 4 | `mr:0821-quadratus` |  | TN | dies_natalis |  |  |
 | 21 | 5 | `mr:0821-euprepius` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0821-luxorius` |  | IT | dies_natalis |  |  |
-| 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  |  |
+| 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  | 2004 Italian: Translation error: "a Edessa nell’antica Siria" where the Latin has "Edessae in Hellade" (Edessa in Greece, in Macedonia). |
 | 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | 1749 Latin: This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
 | 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |
@@ -380,7 +380,7 @@
 | 26 | 5 | `mr:0826-alexander` |  | IT | dies_natalis |  |  |
 | 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis | same as `mr:0816-eleutherius` |  |
 | 26 | 7 | `mr:0826-iacobus-retouret` | * | FR | dies_natalis |  |  |
-| 26 | 8 | `mr:0826-ioanna-elisabeth-bichier` |  | FR | dies_natalis |  |  |
+| 26 | 8 | `mr:0826-ioanna-elisabeth-bichier` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Puy-en-Vélay" where the Latin has "Podii apud Pictavium" (La Puye, near Poitiers). |
 | 26 | 9 | `mr:0826-maria-a-iesu-crucifixo` | * | PS | dies_natalis |  |  |
 | 26 | 10 | `mr:0826-teresia-jornet-ibars` |  | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0826-ambrosius-valls-matamales` | * | ES | dies_natalis |  |  |
@@ -396,8 +396,8 @@
 | 27 | 6 | `mr:0827-licerius` |  | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0827-caesarius` |  | FR | dies_natalis |  |  |
 | 27 | 8 | `mr:0827-ioannes` |  | IT | dies_natalis |  |  |
-| 27 | 9 | `mr:0827-gebhardus` | * | DE | depositio |  |  |
-| 27 | 10 | `mr:0827-guarinus` | * | FR | dies_natalis |  |  |
+| 27 | 9 | `mr:0827-gebhardus` | * | DE | depositio |  | 2004 Italian: Translation error: "nel territorio dell’odierna Svizzera" where the Latin has "in Suevia" (Swabia); Petershausen at Constance is in Germany. |
+| 27 | 10 | `mr:0827-guarinus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" where the Latin has "Sabaudiae" (in Savoy). |
 | 27 | 11 | `mr:0827-amadeus` | * | CH | dies_natalis |  |  |
 | 27 | 12 | `mr:0827-angelus-conti` | * | IT | dies_natalis |  |  |
 | 27 | 13 | `mr:0827-rogerius-cadwallador` | * | GB | dies_natalis |  |  |
@@ -410,7 +410,7 @@
 | 27 | 20 | `mr:0827-maria-a-columna-izquierdo-albero` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0828-augustinus` |  | DZ | dies_natalis |  |  |
 | 28 | 2 | `mr:0828-hermes` |  | IT | dies_natalis |  |  |
-| 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  | 1914 English: Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. |
+| 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  | 1914 English: Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. 2004 Italian: Translation error: "nell’odierna Svizzera" where the Latin has "in Suevia" (Swabia); Constance is in Germany. |
 | 28 | 4 | `mr:0828-iulianus` |  | FR | dies_natalis |  |  |
 | 28 | 5 | `mr:0828-alexander` |  | TR | dies_natalis |  |  |
 | 28 | 6 | `mr:0828-restitutus` |  | TN | dies_natalis | same as `mr:1209-restitutus` |  |
@@ -435,7 +435,7 @@
 | 29 | 7 | `mr:0829-medericus` |  | FR | dies_natalis |  |  |
 | 29 | 8 | `mr:0829-ioannes-de-perusia-et-petrus-de-saxoferrato` | * | ES | dies_natalis |  |  |
 | 29 | 9 | `mr:0829-bronislava` | * | PL | dies_natalis |  |  |
-| 29 | 10 | `mr:0829-richardus-herst` | * | GB | dies_natalis |  |  |
+| 29 | 10 | `mr:0829-richardus-herst` | * | GB | dies_natalis |  | 2004 Latin: Error: "sub Iacobo rege Primo" (under James I), but Richard Herst was executed in 1628, under Charles I. |
 | 29 | 11 | `mr:0829-ludovicus-vulfilacius-huppy` | * | FR | dies_natalis |  |  |
 | 29 | 12 | `mr:0829-edmundus-ignatius-rice` | * | IE | dies_natalis |  |  |
 | 29 | 13 | `mr:0829-ioanna-jugan` | * | FR | dies_natalis |  |  |
@@ -455,7 +455,7 @@
 | 30 | 9 | `mr:0830-margarita-ward` |  | GB | dies_natalis |  |  |
 | 30 | 10 | `mr:0830-ioannes-iuvenalis-ancina` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0830-maria-rafols` | * | ES | dies_natalis |  |  |
-| 30 | 12 | `mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos` | * | ES | dies_natalis |  |  |
+| 30 | 12 | `mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Cadice" (Cádiz) where the Latin has "Guadicensis" (of Guadix). |
 | 30 | 13 | `mr:0830-ioachim-ferrer-adell` | * | ES | dies_natalis |  |  |
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES | dies_natalis |  |  |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT | dies_natalis |  |  |

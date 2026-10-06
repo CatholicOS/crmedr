@@ -871,6 +871,550 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0101-valentinus-paquay": {
+        EDITION_IT: (
+            "Translation error: \"vicino a Tongeren\" where the Latin has \"prope Traiéctum Mosæ\" "
+            "(near Maastricht)."
+        ),
+    },
+    "mr:0111-bernardus-scammacca": {
+        EDITION_IT: (
+            "Translation error: \"Bernardino\" where the Latin has \"Bernárdi\" (Bernardo)."
+        ),
+    },
+    "mr:0120-wulfstanus": {
+        EDITION_IT: (
+            "Translation error: \"condannare la venalità\" (condemning venality) where the Latin "
+            "has \"in venalícia exprobránda\" (condemning the slave trade)."
+        ),
+    },
+    "mr:0126-albericus": {
+        EDITION_IT: (
+            "Translation error: \"Neumünster\" where the Latin has \"Novum Monastérium\" (the New "
+            "Monastery, that is Cîteaux)."
+        ),
+    },
+    "mr:0127-ioannes": {
+        EDITION_IT: (
+            "Translation error: \"sede episcopale di Maurienne\" where the Latin has \"sedem "
+            "Morinénsem\" (the see of the Morini, that is Thérouanne)."
+        ),
+    },
+    "mr:0208-martyres-monachi-dii-constantinopolitani": {
+        EDITION_IT: (
+            "Translation error: \"monastero di Dio\" (monastery of God) where the Latin has "
+            "\"monastérii Dii\" (the monastery of Dius, named after its founder)."
+        ),
+    },
+    "mr:0212-meletius": {
+        EDITION_IT: (
+            "Translation error: \"mandato dall’esilio\" (sent from exile) where the Latin has "
+            "\"exsílio afféctus est\" (was sent into exile)."
+        ),
+    },
+    "mr:0217-evermodus": {
+        EDITION_IT: (
+            "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" "
+            "(Holstein)."
+        ),
+    },
+    "mr:0219-bonifatius": {
+        EDITION_IT: (
+            "Translation error: \"tra i monaci cistercensi\" (among Cistercian monks) where the "
+            "Latin has \"apud moniáles Cisterciénses\" (among Cistercian nuns)."
+        ),
+    },
+    "mr:0220-eucherius": {
+        EDITION_IT: (
+            "Translation error: \"dal re Carlo Martello\" (by King Charles Martel) where the Latin "
+            "has \"duce\" (duke); Charles Martel was never king."
+        ),
+    },
+    "mr:0221-petrus-damianus": {
+        EDITION_IT: (
+            "Translation omission: the sentence \"Ipsíus autem tránsitus Favéntiæ in Flamínia "
+            "crástina die evénit\" (his death took place at Faenza on the following day) is not "
+            "rendered."
+        ),
+    },
+    "mr:0223-raphaela-de-villalonga-ybarra": {
+        EDITION_IT: (
+            "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia\" "
+            "(the Basque Country)."
+        ),
+    },
+    "mr:0229-augustus-chapdelaine": {
+        EDITION_IT: (
+            "Translation error: \"Agostino\" (Augustine) for the Latin \"Augústi\" (Auguste, "
+            "Augusto)."
+        ),
+    },
+    "mr:0302-angela-a-cruce": {
+        EDITION_IT: (
+            "Translation omission: the title \"vergine\" (Latin \"vírginis\") is missing after the "
+            "name."
+        ),
+    },
+    "mr:0302-ceadda": {
+        EDITION_IT: (
+            "Translation error: \"dell’Anglia meridionale\" (southern Anglia) where the Latin has "
+            "\"Mediterraneórum Anglórum\" (the Middle Angles)."
+        ),
+    },
+    "mr:0303-winwaloeus": {
+        EDITION_IT: (
+            "Translation error: \"Nella Cornovaglia in Inghilterra\" (Cornwall in England) where "
+            "the Latin has \"In Cornúbia Armóricæ\" (Cornouaille in Brittany, where Landévennec "
+            "lies)."
+        ),
+    },
+    "mr:0306-fridolinus": {
+        EDITION_IT: (
+            "Translation error: \"due monasteri\" (two monasteries) where the Latin has \"duplex "
+            "monastérium\" (a double monastery)."
+        ),
+    },
+    "mr:0307-basilius-et-socii": {
+        EDITION_IT: (
+            "Translation error: \"in Grecia\" (in Greece) for \"Chersonésum\", which is Cherson in "
+            "the Crimea."
+        ),
+    },
+    "mr:0314-eva-montis-cornelius": {
+        EDITION_IT: (
+            "Translation error: \"monaca di clausura nel monastero di San Martino\" (an enclosed "
+            "nun in the monastery) where the Latin has \"reclúsæ prope cœnóbium Sancti Martíni\" (a "
+            "recluse near the monastery of Saint Martin)."
+        ),
+    },
+    "mr:0320-franciscus-a-iesu-maria-ioseph": {
+        EDITION_IT: (
+            "Translation error: \"dove morì abbandonato a se stesso\" (where he died, abandoned) "
+            "where the Latin says only that he was banished there, \"ab ómnibus derelíctus\" "
+            "(abandoned by all); he died at Tarragona."
+        ),
+    },
+    "mr:0320-maria-iosepha-a-corde-iesu": {
+        EDITION_IT: (
+            "Translation error: \"nella Guascogna\" (Gascony, in France) where the Latin has \"in "
+            "Vascónia Hispániæ\" (the Basque Country of Spain)."
+        ),
+    },
+    "mr:0328-hilarion": {
+        EDITION_IT: (
+            "Translation error: \"nell’odierna Grecia\" for the Bithynian Mount Olympus, which is "
+            "in Asia Minor (modern Turkey)."
+        ),
+    },
+    "mr:0418-idesbaldus": {
+        EDITION_IT: (
+            "Translation error: \"nel monastero di Down\" where the Latin has \"Dunénse monastérium\" "
+            "(the Abbey of the Dunes, Ten Duinen, in Flanders)."
+        ),
+    },
+    "mr:0427-ioannes": {
+        EDITION_IT: (
+            "Translation error: \"nel mare Egeo\" (in the Aegean Sea) where the Latin has \"in "
+            "Propóntide\" (the Propontis, i.e. the Sea of Marmara)."
+        ),
+    },
+    "mr:0427-zita": {
+        EDITION_IT: (
+            "Translation error: \"fu per dodici anni domestica\" (a domestic for twelve years) "
+            "where the Latin has \"duodénnis\" (at twelve years of age she entered service, "
+            "remaining in it until death)."
+        ),
+    },
+    "mr:0505-godehardus": {
+        EDITION_IT: (
+            "Translation error: \"succeduto a san Bernardo\" where the Latin has \"sancto Bernwárdo\" "
+            "(Saint Bernward, his predecessor at Hildesheim)."
+        ),
+    },
+    "mr:0507-gisella": {
+        EDITION_IT: (
+            "Translation error: \"spogliatasi di tutti i suoi beni\" (having stripped herself) "
+            "where the Latin has \"ómnibus facultátibus spoliáta\" (despoiled of all her goods)."
+        ),
+    },
+    "mr:0513-andreas-hubertus-fournet": {
+        EDITION_IT: (
+            "Translation error: \"Puy-en-Vélay\" where the Latin has \"Pódii in pago Pictaviénsi\" "
+            "(La Puye, near Poitiers)."
+        ),
+    },
+    "mr:0516-simon-stock": {
+        EDITION_IT: (
+            "Translation error: \"beato Simone Stock\" where the Latin has \"sancti Simónis Stock\" "
+            "(Saint)."
+        ),
+    },
+    "mr:0522-lupus": {
+        EDITION_IT: (
+            "Translation error: \"monastero di Solesme\" where the Latin has \"monastérii "
+            "Solemníaci\" (the monastery of Solignac, near Limoges)."
+        ),
+    },
+    "mr:0522-quiteria": {
+        EDITION_IT: (
+            "Translation error: \"Aire-sur-le-Lys\" where the Latin has \"pago Aturénsi\" (the "
+            "district of Aire-sur-l'Adour, in Aquitaine)."
+        ),
+    },
+    "mr:0615-isfridus": {
+        EDITION_IT: (
+            "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" "
+            "(Holstein), the region of Ratzeburg."
+        ),
+    },
+    "mr:0617-teresia": {
+        EDITION_IT: (
+            "Translation error: \"A Ourem\" where the Latin has \"Lorvanii\" (Lorvão, the monastery "
+            "she founded)."
+        ),
+    },
+    "mr:0623-lanfrancus": {
+        EDITION_IT: (
+            "Translation error: \"san Lanfranco\" where the Latin has \"beati Lanfranci\" (Blessed)."
+        ),
+    },
+    "mr:0625-ioannes-hispanus": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" (Burgundy) where the Latin has \"in Sabaudia\" "
+            "(Savoy)."
+        ),
+    },
+    "mr:0701-ignatius-falzon": {
+        EDITION_IT: (
+            "Translation error: \"sacerdote\" (priest) where the Latin has \"cléricus\" (a cleric); "
+            "Blessed Ignatius Falzon was never ordained a priest."
+        ),
+    },
+    "mr:0704-bonifatius": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in "
+            "Savoy); Hautecombe and Lake Bourget are in Savoy."
+        ),
+    },
+    "mr:0706-palladius": {
+        EDITION_IT: (
+            "Translation error: \"morì in Inghilterra\" (died in England) where the Latin has "
+            "\"ibídem óbiit\" (died there, in Scotland)."
+        ),
+    },
+    "mr:0708-auspicius": {
+        EDITION_IT: (
+            "Translation error: \"Tulle\" where the Latin has \"Tulli\" (Toul, in Gallia Belgica)."
+        ),
+    },
+    "mr:0711-hidulphus": {
+        EDITION_IT: (
+            "Translation error: \"vescovo di Treviri\" (bishop of Trier) where the Latin has "
+            "\"chorepíscopus Tréviris\" (chorbishop at Trier)."
+        ),
+    },
+    "mr:0715-ansuerus": {
+        EDITION_IT: (
+            "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in "
+            "Holstein)."
+        ),
+    },
+    "mr:0716-helerius": {
+        EDITION_IT: (
+            "Translation error: \"nel Mare del Nord\" (in the North Sea) where the Latin has \"in "
+            "mari Británnico\" (in the British Sea, the English Channel)."
+        ),
+    },
+    "mr:0717-teresia-a-sancto-augustino-et-socii": {
+        EDITION_IT: (
+            "Translation error: \"Marta Maddalena Claudina\" where the Latin has \"Maríæ Magdalénæ "
+            "Claudínæ\" (Marie-Madeleine-Claudine)."
+        ),
+    },
+    "mr:0721-simeon-salus": {
+        EDITION_IT: (
+            "Translation error: \"presso il lago di Mareotide in Egitto\" where the Latin has \"apud "
+            "Asphaltitem lacum\" (the Dead Sea)."
+        ),
+    },
+    "mr:0724-boris-et-gleb": {
+        EDITION_IT: (
+            "Translation error: \"sul fiume Don\" where the Latin has \"ad Altam flumen\" (the river "
+            "Alta)."
+        ),
+    },
+    "mr:0727-raymundus-palmerio": {
+        EDITION_IT: (
+            "Translation error: \"la moglie e il figlio\" (one son) where the Latin has \"uxore et "
+            "filiis\" (wife and children)."
+        ),
+    },
+    "mr:0809-claudius-richard": {
+        EDITION_IT: (
+            "Translation error: \"dal monastero di Metz\" where the Latin \"e Mediáno monastério\" is "
+            "the abbey of Moyenmoutier."
+        ),
+    },
+    "mr:0811-tiburtius": {
+        EDITION_IT: (
+            "Translation error: \"san Tiburzio\" omits the title \"martire\" given in the Latin "
+            "(\"sancti Tibúrtii, mártyris\")."
+        ),
+    },
+    "mr:0813-maximus-confessor": {
+        EDITION_IT: (
+            "Translation error: \"nella regione di Lesghistan\" where the Latin has \"in Lazícam "
+            "regiónem\" (Lazica, in western Georgia)."
+        ),
+    },
+    "mr:0814-arnulphus": {
+        EDITION_IT: (
+            "Translation error: \"Altenburg nelle Fiandre, ora in Germania\" where the Latin "
+            "\"Aldenbúrgi in Flándria\" is Oudenburg in Flanders, in present-day Belgium."
+        ),
+    },
+    "mr:0821-bassa-et-socii": {
+        EDITION_IT: (
+            "Translation error: \"a Edessa nell’antica Siria\" where the Latin has \"Edessae in "
+            "Hellade\" (Edessa in Greece, in Macedonia)."
+        ),
+    },
+    "mr:0826-ioanna-elisabeth-bichier": {
+        EDITION_IT: (
+            "Translation error: \"Puy-en-Vélay\" where the Latin has \"Podii apud Pictavium\" (La "
+            "Puye, near Poitiers)."
+        ),
+    },
+    "mr:0827-gebhardus": {
+        EDITION_IT: (
+            "Translation error: \"nel territorio dell’odierna Svizzera\" where the Latin has \"in "
+            "Suevia\" (Swabia); Petershausen at Constance is in Germany."
+        ),
+    },
+    "mr:0827-guarinus": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" where the Latin has \"Sabaudiae\" (in Savoy)."
+        ),
+    },
+    "mr:0828-pelagius": {
+        'martyrologium_romanum_1914_en_unofficial': (
+            "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
+        ),
+        EDITION_IT: (
+            "Translation error: \"nell’odierna Svizzera\" where the Latin has \"in Suevia\" (Swabia); "
+            "Constance is in Germany."
+        ),
+    },
+    "mr:0829-richardus-herst": {
+        EDITION_LA: (
+            "Error: \"sub Iacobo rege Primo\" (under James I), but Richard Herst was executed in "
+            "1628, under Charles I."
+        ),
+    },
+    "mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos": {
+        EDITION_IT: (
+            "Translation error: \"vescovo di Cadice\" (Cádiz) where the Latin has \"Guadicensis\" (of "
+            "Guadix)."
+        ),
+    },
+    "mr:0903-rimagilus": {
+        EDITION_IT: (
+            "Translation error: \"Solesmes\" where the Latin has \"Sollemniacénse\" (Solignac, where "
+            "Remaclus was abbot before founding Stavelot and Malmedy)."
+        ),
+    },
+    "mr:0905-bertinus": {
+        EDITION_IT: (
+            "Translation error: \"fu deposto insieme a san Mummolino\" (buried together with Saint "
+            "Mummolinus) where the Latin says the monastery was founded together with Saint "
+            "Mummolinus."
+        ),
+    },
+    "mr:0906-bertrandus-de-garrigues": {
+        EDITION_IT: (
+            "Translation error: \"san Bertrando\" (Saint) where the Latin has \"beáti Bertrándi\" "
+            "(Blessed)."
+        ),
+    },
+    "mr:0909-franciscus-garate-aranguren": {
+        EDITION_IT: (
+            "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia "
+            "Hispániæ\" (the Basque Country of Spain)."
+        ),
+    },
+    "mr:0911-ioannes-gabriel-perboyre": {
+        EDITION_IT: (
+            "Translation error: \"provincia dello Hebei\" where the Latin has \"provínciæ Hubei\" "
+            "(Hubei, where Wuchang lies)."
+        ),
+    },
+    "mr:0913-claudius-dumonet": {
+        EDITION_IT: (
+            "Translation error: \"artigiano\" (craftsman) where the Latin has \"magíster ártium\" "
+            "(Master of Arts)."
+        ),
+    },
+    "mr:0914-petrus": {
+        EDITION_IT: (
+            "Translation error: \"Beauvale\" where the Latin has \"Bellævallénsi\" (Bellevaux, near "
+            "Besançon)."
+        ),
+    },
+    "mr:0920-iosephus-maria-de-yermo-y-parres": {
+        EDITION_IT: (
+            "Translation error: \"beato\" where the Latin has \"sancti\" (Saint); he was canonized in "
+            "2000."
+        ),
+    },
+    "mr:0928-venceslaus": {
+        EDITION_IT: (
+            "Translation error: \"dalla zia paterna Ludmilla\" (his paternal aunt) where the Latin "
+            "has \"ab ávia sancta Ludmílla\" (his grandmother, Saint Ludmila)."
+        ),
+    },
+    "mr:1014-dominicus": {
+        EDITION_IT: (
+            "Translation error: \"discepolo di san Damiano\" where the Latin has \"sancti Petri "
+            "Damiáni discípulus\" (a disciple of Saint Peter Damian)."
+        ),
+    },
+    "mr:1019-ioannes-de-brebeuf-et-socii": {
+        EDITION_IT: (
+            "Translation error: \"oggi in Canada\" (today in Canada) where the Latin has \"tunc in "
+            "território Canadénsi\" (then in Canadian territory); Ossernenon lies in present-day "
+            "New York State, USA."
+        ),
+    },
+    "mr:1023-ethelfleda": {
+        EDITION_IT: (
+            "Translation error: \"A Ramsey\" where the Latin has \"Rumeséiæ\" (Romsey)."
+        ),
+    },
+    "mr:1023-ignatius": {
+        EDITION_IT: (
+            "Translation error: \"imperatore Barda\" (the emperor Bardas) where the Latin has "
+            "\"Bardam Cǽsarem\" (Bardas the Caesar)."
+        ),
+    },
+    "mr:1023-severinus": {
+        EDITION_IT: (
+            "Translation error: \"san Severo\" where the Latin has \"sancti Severíni\" (Saint "
+            "Severinus)."
+        ),
+    },
+    "mr:1023-theodoretus": {
+        EDITION_IT: (
+            "Translation error: \"imperatore d’Oriente\" (emperor of the East) where the Latin has "
+            "\"cómite Oriéntis\" (Count of the East)."
+        ),
+    },
+    "mr:1025-recaredus-centelles-abad": {
+        EDITION_IT: (
+            "Translation error: \"Riccardo\" where the Latin has \"Recarédi\" (Recaredo)."
+        ),
+    },
+    "mr:1028-germanus": {
+        EDITION_IT: (
+            "Translation error: \"nella Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" "
+            "(in Savoy)."
+        ),
+    },
+    "mr:1030-marcellus": {
+        EDITION_IT: (
+            "Translation error: \"la vita stessa\" (his very life) where the Latin has \"ipsam "
+            "vitem\" (his vine staff, the centurion's badge)."
+        ),
+    },
+    "mr:1105-bertilla": {
+        EDITION_IT: (
+            "Translation error: \"monastero di Calais\" where the Latin has \"cœnóbio Calénsi\" (the "
+            "monastery of Chelles, near Meaux)."
+        ),
+    },
+    "mr:1108-godefridus": {
+        EDITION_IT: (
+            "Translation error: \"per un quinquennio\" (for five years) where the Latin has \"a "
+            "quinquénnio\" (from the age of five)."
+        ),
+    },
+    "mr:1114-siardus": {
+        EDITION_IT: (
+            "Translation error: \"Malgarten\" where the Latin has \"Horto Sanctæ Maríæ\" "
+            "(Mariëngaarde, in Friesland)."
+        ),
+    },
+    "mr:1126-pontius-falciniacensis": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in "
+            "Savoy)."
+        ),
+    },
+    "mr:1202-chromatius": {
+        EDITION_IT: (
+            "Translation error: \"chiostri d’Italia\" (the cloisters of Italy) where the Latin has "
+            "\"Itáliæ claustris\" (the defensive barriers of Italy breached by Alaric)."
+        ),
+    },
+    "mr:1202-silverius": {
+        EDITION_IT: (
+            "Translation error: \"Palmarola in Liguria\" where the Latin \"ínsula Palmária\" is "
+            "Palmarola in the Pontine Islands, off Lazio, not in Liguria."
+        ),
+    },
+    "mr:1212-vicelinus": {
+        EDITION_IT: (
+            "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in "
+            "Holstein)."
+        ),
+    },
+    "mr:1214-hero-et-socii": {
+        EDITION_IT: (
+            "Translation error: \"morì fatto a brandelli\" (died torn to pieces) where the Latin "
+            "has \"différri præcépit\" (the judge ordered him to be put off, sparing him)."
+        ),
+    },
+    "mr:1216-aggaeus-propheta": {
+        EDITION_IT: (
+            "Translation error: \"re di Giuda\" (king of Judah) where the Latin has \"ducis Iudæ\" "
+            "(leader of Judah); Zerubbabel was governor, not king."
+        ),
+    },
+    "mr:1218-winebaldus": {
+        EDITION_IT: (
+            "Translation error: \"Hildesheim\" where the Latin has \"Heidenheiménsi\" (Heidenheim), "
+            "the monastery Saint Winebald founded."
+        ),
+    },
+    "mr:1223-paulus-melendez-gonzalo": {
+        EDITION_IT: (
+            "Translation error: the title \"beato\" is omitted before \"Paolo Meléndez Gonzalo\"; the "
+            "Latin has \"beáti Pauli\"."
+        ),
+    },
+    "mr:1224-avi-iesu-christi": {
+        EDITION_IT: (
+            "Translation error: \"figlio di Adamo\" is omitted after \"figlio di Abramo\"; the Latin "
+            "has \"fílii Abraham, fílii Adam\"."
+        ),
+    },
+    "mr:1226-stephanus": {
+        EDITION_IT: (
+            "Translation error: \"seduto\" (seated) where the Latin has \"stantem\" (standing), as in "
+            "Acts 7:55-56."
+        ),
+    },
+    "mr:1227-iosephus-maria-corbin-ferrer": {
+        EDITION_IT: (
+            "Translation error: the title \"martire\" is omitted after \"Giuseppe Maria Corbin "
+            "Ferrer\"; the Latin has \"mártyris\"."
+        ),
+    },
+    "mr:0801-secundinus": {
+        EDITION_IT: (
+            "Translation error: \"al tredicesimo miglio\" (the thirteenth mile of the Via "
+            "Prenestina) where the Latin has \"miliário tricésimo\" (the thirtieth)."
+        ),
+    },
     "mr:0217-septem-fundatores-servorum-mariae": {
         EDITION_1749: (
             "This edition prints the eulogy of Alexius Falconieri alone, one of the seven "
@@ -984,11 +1528,6 @@ EDITION_NOTES = {
         EDITION_1914: (
             "Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' "
             "(Diocletian)."
-        ),
-    },
-    "mr:0828-pelagius": {
-        EDITION_1914: (
-            "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
         ),
     },
     "mr:0829-basilla": {

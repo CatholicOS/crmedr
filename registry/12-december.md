@@ -21,8 +21,8 @@
 | 2 | 1 | `mr:1202-habacuc-propheta` |  | PS | commemoratio |  |  |
 | 2 | 2 | `mr:1202-bibiana` |  | IT | dies_natalis |  |  |
 | 2 | 3 | `mr:1202-pimenius` |  | IT | dies_natalis |  |  |
-| 2 | 4 | `mr:1202-chromatius` |  | IT | dies_natalis |  |  |
-| 2 | 5 | `mr:1202-silverius` |  | IT | dies_natalis | same as `mr:0620-silverius` |  |
+| 2 | 4 | `mr:1202-chromatius` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "chiostri d’Italia" (the cloisters of Italy) where the Latin has "Itáliæ claustris" (the defensive barriers of Italy breached by Alaric). |
+| 2 | 5 | `mr:1202-silverius` |  | IT | dies_natalis | same as `mr:0620-silverius` | 2004 Italian: Translation error: "Palmarola in Liguria" where the Latin "ínsula Palmária" is Palmarola in the Pontine Islands, off Lazio, not in Liguria. |
 | 2 | 6 | `mr:1202-ioannes-ruysbroeck` | * | BE | dies_natalis |  |  |
 | 2 | 7 | `mr:1202-maria-angela-astorch` | * | ES | dies_natalis |  |  |
 | 2 | 8 | `mr:1202-raphael-chylinski` | * | PL | dies_natalis |  |  |
@@ -125,7 +125,7 @@
 | 12 | 4 | `mr:1212-finnianus` | * | IE | dies_natalis |  |  |
 | 12 | 5 | `mr:1212-corentinus` | * | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:1212-israel` | * | FR | dies_natalis |  |  |
-| 12 | 7 | `mr:1212-vicelinus` | * | DE | dies_natalis |  |  |
+| 12 | 7 | `mr:1212-vicelinus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (in Alsace) where the Latin has "in Holsátia" (in Holstein). |
 | 12 | 8 | `mr:1212-bartholus-buonpedoni` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:1212-conradus-de-ophyda` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT | commemoratio |  |  |
@@ -143,7 +143,7 @@
 | 13 | 10 | `mr:1213-antonius-grassus` | * | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:1213-petrus-cho-hwa-so-et-socii` |  | KR | dies_natalis |  |  |
 | 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES | dies_natalis | same as `mr:1124-ioannes-a-cruce` |  |
-| 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  |  |
+| 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  | 2004 Italian: Translation error: "morì fatto a brandelli" (died torn to pieces) where the Latin has "différri præcépit" (the judge ordered him to be put off, sparing him). |
 | 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR | dies_natalis | same as `mr:0128-thyrsus-et-socii` |  |
 | 14 | 4 | `mr:1214-drosis` |  | TR | dies_natalis |  |  |
 | 14 | 5 | `mr:1214-ares-et-socii` |  | PS | dies_natalis |  |  |
@@ -163,7 +163,7 @@
 | 15 | 5 | `mr:1215-virginia-centurione-bracelli` |  | IT | dies_natalis |  |  |
 | 15 | 6 | `mr:1215-maria-crucifixa-de-rosa` |  | IT | dies_natalis |  |  |
 | 15 | 7 | `mr:1215-carolus-steeb` | * | IT | dies_natalis |  |  |
-| 16 | 1 | `mr:1216-aggaeus-propheta` |  | PS | commemoratio |  |  |
+| 16 | 1 | `mr:1216-aggaeus-propheta` |  | PS | commemoratio |  | 2004 Italian: Translation error: "re di Giuda" (king of Judah) where the Latin has "ducis Iudæ" (leader of Judah); Zerubbabel was governor, not king. |
 | 16 | 2 | `mr:1216-plurimae-virgines-africa` |  | TN | commemoratio |  |  |
 | 16 | 3 | `mr:1216-beanus` |  | IE | dies_natalis |  |  |
 | 16 | 4 | `mr:1216-everardus` | * | FR | dies_natalis |  |  |
@@ -190,7 +190,7 @@
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
 | 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | 1914 English: Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus. |
 | 18 | 4 | `mr:1218-flannanus` | * | IE | dies_natalis |  |  |
-| 18 | 5 | `mr:1218-winebaldus` | * | DE | dies_natalis |  |  |
+| 18 | 5 | `mr:1218-winebaldus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "Hildesheim" where the Latin has "Heidenheiménsi" (Heidenheim), the monastery Saint Winebald founded. |
 | 18 | 6 | `mr:1218-paulus-nguyen-van-my-et-petrus-truong-van` |  | VN | dies_natalis |  |  |
 | 18 | 7 | `mr:1218-nemesia-valle` | * | IT | dies_natalis |  |  |
 | 19 | 1 | `mr:1219-anastasius-i` |  | IT | depositio | same as `mr:0427-anastasius` |  |
@@ -230,8 +230,8 @@
 | 23 | 9 | `mr:1223-maria-margarita` |  | CA | dies_natalis |  |  |
 | 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  |  |
 | 23 | 11 | `mr:1223-iosephus-cho-yun-ho` |  | KR | dies_natalis |  |  |
-| 23 | 12 | `mr:1223-paulus-melendez-gonzalo` | * | ES | dies_natalis |  |  |
-| 24 | 1 | `mr:1224-avi-iesu-christi` |  | PS | commemoratio |  |  |
+| 23 | 12 | `mr:1223-paulus-melendez-gonzalo` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "beato" is omitted before "Paolo Meléndez Gonzalo"; the Latin has "beáti Pauli". |
+| 24 | 1 | `mr:1224-avi-iesu-christi` |  | PS | commemoratio |  | 2004 Italian: Translation error: "figlio di Adamo" is omitted after "figlio di Abramo"; the Latin has "fílii Abraham, fílii Adam". |
 | 24 | 2 | `mr:1224-delphinus` |  | FR | dies_natalis |  |  |
 | 24 | 3 | `mr:1224-tarsilla` |  | IT | commemoratio |  |  |
 | 24 | 4 | `mr:1224-irmina` |  | DE | dies_natalis |  |  |
@@ -248,7 +248,7 @@
 | 25 | 7 | `mr:1225-michael-nakashima` | * | JP | dies_natalis |  |  |
 | 25 | 8 | `mr:1225-maria-ab-apostolis` | * | IT | dies_natalis |  |  |
 | 25 | 9 | `mr:1225-albertus-chmielowski` |  | PL | dies_natalis |  |  |
-| 26 | (1) | `mr:1226-stephanus` |  | IL | dies_natalis |  |  |
+| 26 | (1) | `mr:1226-stephanus` |  | IL | dies_natalis |  | 2004 Italian: Translation error: "seduto" (seated) where the Latin has "stantem" (standing), as in Acts 7:55-56. |
 | 26 | 2 | `mr:1226-dionysius` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:1226-zeno` |  | PS | commemoratio |  |  |
 | 26 | 4 | `mr:1226-zosimus` |  | IT | depositio |  |  |
@@ -260,7 +260,7 @@
 | 27 | 2 | `mr:1227-fabiola` | * | IT | commemoratio |  |  |
 | 27 | 3 | `mr:1227-theodorus` |  | TR | dies_natalis |  |  |
 | 27 | 4 | `mr:1227-alaphridus-parte` | * | ES | dies_natalis |  |  |
-| 27 | 5 | `mr:1227-iosephus-maria-corbin-ferrer` | * | ES | dies_natalis |  |  |
+| 27 | 5 | `mr:1227-iosephus-maria-corbin-ferrer` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "martire" is omitted after "Giuseppe Maria Corbin Ferrer"; the Latin has "mártyris". |
 | 28 | (1) | `mr:1228-innocentes` |  | PS | dies_natalis |  |  |
 | 28 | 2 | `mr:1228-theona` |  | EG | dies_natalis |  |  |
 | 28 | 3 | `mr:1228-antonius` |  | FR | commemoratio |  |  |

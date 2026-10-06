@@ -273,7 +273,10 @@
           "it": "Ad Hasselt vicino a Tongeren in Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"vicino a Tongeren\" where the Latin has \"prope Traiéctum Mosæ\" (near Maastricht)."
+      }
     },
     {
       "id": "mr:0101-sigismundus-gorazdowski",
@@ -2537,7 +2540,10 @@
           "it": "A Catania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Bernardino\" where the Latin has \"Bernárdi\" (Bernardo)."
+      }
     },
     {
       "id": "mr:0111-gulielmus-carter",
@@ -4381,7 +4387,10 @@
       ],
       "same_eulogy": [
         "mr:0119-wulstanus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"condannare la venalità\" (condemning venality) where the Latin has \"in venalícia exprobránda\" (condemning the slave trade)."
+      }
     },
     {
       "id": "mr:0120-benedictus-ricasoli",
@@ -5526,7 +5535,10 @@
           "it": "A Cîteaux in Borgogna, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Neumünster\" where the Latin has \"Novum Monastérium\" (the New Monastery, that is Cîteaux)."
+      }
     },
     {
       "id": "mr:0126-augustinus-erlandsson",
@@ -5730,7 +5742,10 @@
           "it": "A Thérouanne sempre in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"sede episcopale di Maurienne\" where the Latin has \"sedem Morinénsem\" (the see of the Morini, that is Thérouanne)."
+      }
     },
     {
       "id": "mr:0127-manfredus-settala",
@@ -8511,7 +8526,10 @@
       "entry": 5,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"monastero di Dio\" (monastery of God) where the Latin has \"monastérii Dii\" (the monastery of Dius, named after its founder)."
+      }
     },
     {
       "id": "mr:0208-iacutus",
@@ -9222,7 +9240,10 @@
       "entry": 2,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"mandato dall’esilio\" (sent from exile) where the Latin has \"exsílio afféctus est\" (was sent into exile)."
+      }
     },
     {
       "id": "mr:0212-benedictus-anianensis",
@@ -10178,7 +10199,10 @@
           "it": "A Ratzeburg nell’Alsazia, ora in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" (Holstein)."
+      }
     },
     {
       "id": "mr:0217-lucas-belludi",
@@ -10553,7 +10577,10 @@
           "it": "A La Chambre nei pressi di Bruxelles nel Brabante, nell’odierno Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"tra i monaci cistercensi\" (among Cistercian monks) where the Latin has \"apud moniáles Cisterciénses\" (among Cistercian nuns)."
+      }
     },
     {
       "id": "mr:0219-conradus-confalonieri",
@@ -10715,7 +10742,10 @@
           "it": "A Sint-Truiden nel Brabante in Austrasia, nell’odierno Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"dal re Carlo Martello\" (by King Charles Martel) where the Latin has \"duce\" (duke); Charles Martel was never king."
+      }
     },
     {
       "id": "mr:0220-leo",
@@ -10779,7 +10809,10 @@
       "unnumbered": true,
       "same_eulogy": [
         "mr:0223-petrus-damianus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation omission: the sentence \"Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit\" (his death took place at Faenza on the following day) is not rendered."
+      }
     },
     {
       "id": "mr:0221-eustatius",
@@ -11124,7 +11157,10 @@
           "it": "A Bilbao nella Guascogna in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia\" (the Basque Country)."
+      }
     },
     {
       "id": "mr:0223-nicolaus-tabouillot",
@@ -12070,7 +12106,10 @@
           "day": 28,
           "entry": 7
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Agostino\" (Augustine) for the Latin \"Augústi\" (Auguste, Augusto)."
+      }
     },
     {
       "id": "mr:0301-felix-iii",
@@ -12297,7 +12336,10 @@
           "it": "A Lichfield in Inghilterra",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"dell’Anglia meridionale\" (southern Anglia) where the Latin has \"Mediterraneórum Anglórum\" (the Middle Angles)."
+      }
     },
     {
       "id": "mr:0302-lucas-casali-de-nicosia",
@@ -12364,7 +12406,10 @@
           "it": "A Siviglia in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation omission: the title \"vergine\" (Latin \"vírginis\") is missing after the name."
+      }
     },
     {
       "id": "mr:0303-marinus-et-asterius",
@@ -12449,7 +12494,10 @@
           "it": "Nella Cornovaglia in Inghilterra",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Nella Cornovaglia in Inghilterra\" (Cornwall in England) where the Latin has \"In Cornúbia Armóricæ\" (Cornouaille in Brittany, where Landévennec lies)."
+      }
     },
     {
       "id": "mr:0303-arthellaidis",
@@ -13081,7 +13129,10 @@
           "it": "A Säckingen nel territorio dell’odierna Svizzera",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"due monasteri\" (two monasteries) where the Latin has \"duplex monastérium\" (a double monastery)."
+      }
     },
     {
       "id": "mr:0306-chrodegangus",
@@ -13225,7 +13276,10 @@
       ],
       "same_eulogy": [
         "mr:0304-basilius-et-socii"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"in Grecia\" (in Greece) for \"Chersonésum\", which is Cherson in the Crimea."
+      }
     },
     {
       "id": "mr:0307-paulus-simplex",
@@ -14668,7 +14722,10 @@
           "it": "A Liegi in Lotaringia, nell’odierno Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"monaca di clausura nel monastero di San Martino\" (an enclosed nun in the monastery) where the Latin has \"reclúsæ prope cœnóbium Sancti Martíni\" (a recluse near the monastery of Saint Martin)."
+      }
     },
     {
       "id": "mr:0314-iacobus-cusmano",
@@ -15647,7 +15704,10 @@
           "it": "A Tarragona in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"dove morì abbandonato a se stesso\" (where he died, abandoned) where the Latin says only that he was banished there, \"ab ómnibus derelíctus\" (abandoned by all); he died at Tarragona."
+      }
     },
     {
       "id": "mr:0320-maria-iosepha-a-corde-iesu",
@@ -15664,7 +15724,10 @@
           "it": "A Bilbao nella Guascogna in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Guascogna\" (Gascony, in France) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
+      }
     },
     {
       "id": "mr:0320-iosephus-bilczewski",
@@ -16958,7 +17021,10 @@
           "it": "Presso il monte Olimpo in Bitinia, nell’odierna Grecia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’odierna Grecia\" for the Bithynian Mount Olympus, which is in Asia Minor (modern Turkey)."
+      }
     },
     {
       "id": "mr:0328-stephanus-harding",
@@ -21282,7 +21348,10 @@
           "it": "A Bruges nelle Fiandre, nell’odierno Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel monastero di Down\" where the Latin has \"Dunénse monastérium\" (the Abbey of the Dunes, Ten Duinen, in Flanders)."
+      }
     },
     {
       "id": "mr:0418-galdinus",
@@ -23087,7 +23156,10 @@
           "it": "Sull’isola di Afusia in Propontide, nel mare Egeo",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel mare Egeo\" (in the Aegean Sea) where the Latin has \"in Propóntide\" (the Propontis, i.e. the Sea of Marmara)."
+      }
     },
     {
       "id": "mr:0427-zita",
@@ -23104,7 +23176,10 @@
           "it": "A Lucca",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"fu per dodici anni domestica\" (a domestic for twelve years) where the Latin has \"duodénnis\" (at twelve years of age she entered service, remaining in it until death)."
+      }
     },
     {
       "id": "mr:0427-petrus-ermengol",
@@ -24953,7 +25028,10 @@
       ],
       "same_eulogy": [
         "mr:0504-godehardus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"succeduto a san Bernardo\" where the Latin has \"sancto Bernwárdo\" (Saint Bernward, his predecessor at Hildesheim)."
+      }
     },
     {
       "id": "mr:0505-leo",
@@ -25362,7 +25440,10 @@
           "it": "Nel monastero di Niedernburg nella Baviera, in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"spogliatasi di tutti i suoi beni\" (having stripped herself) where the Latin has \"ómnibus facultátibus spoliáta\" (despoiled of all her goods)."
+      }
     },
     {
       "id": "mr:0507-antonius",
@@ -26658,7 +26739,10 @@
           "it": "A Puy-en-Vélay nella regione di Poitiers in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Puy-en-Vélay\" where the Latin has \"Pódii in pago Pictaviénsi\" (La Puye, near Poitiers)."
+      }
     },
     {
       "id": "mr:0514-matthias-apostolus",
@@ -27333,7 +27417,10 @@
           "it": "A Bordeaux nella Guascogna, in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"beato Simone Stock\" where the Latin has \"sancti Simónis Stock\" (Saint)."
+      }
     },
     {
       "id": "mr:0516-andreas-bobola",
@@ -28526,7 +28613,10 @@
           "it": "Nel territorio di Aire-sur-le-Lys nella regione dell’Aquitania, in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Aire-sur-le-Lys\" where the Latin has \"pago Aturénsi\" (the district of Aire-sur-l'Adour, in Aquitaine)."
+      }
     },
     {
       "id": "mr:0522-ausonius",
@@ -28560,7 +28650,10 @@
           "it": "A Limoges ancora in Aquitania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"monastero di Solesme\" where the Latin has \"monastérii Solemníaci\" (the monastery of Solignac, near Limoges)."
+      }
     },
     {
       "id": "mr:0522-ioannes",
@@ -33745,7 +33838,10 @@
           "it": "A Ratzeburg nell’Alsazia, ora in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" (Holstein), the region of Ratzeburg."
+      }
     },
     {
       "id": "mr:0615-thomas-scryven",
@@ -34207,7 +34303,10 @@
           "it": "A Ourem in Portogallo",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"A Ourem\" where the Latin has \"Lorvanii\" (Lorvão, the monastery she founded)."
+      }
     },
     {
       "id": "mr:0617-petrus-gambacorta",
@@ -35053,7 +35152,10 @@
           "it": "A Pavia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"san Lanfranco\" where the Latin has \"beati Lanfranci\" (Blessed)."
+      }
     },
     {
       "id": "mr:0623-walherus",
@@ -35496,7 +35598,10 @@
           "it": "Nella Certosa de Le Réposoir in Borgogna, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"in Borgogna\" (Burgundy) where the Latin has \"in Sabaudia\" (Savoy)."
+      }
     },
     {
       "id": "mr:0625-dorothea-montaviensis",
@@ -36735,7 +36840,10 @@
           "it": "A La Valletta nell’isola di Malta",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"sacerdote\" (priest) where the Latin has \"cléricus\" (a cleric); Blessed Ignatius Falzon was never ordained a priest."
+      }
     },
     {
       "id": "mr:0701-zhang-huailu",
@@ -37286,7 +37394,10 @@
           "it": "Nel monastero di Hautecombe presso il lago di Bourget in Borgogna, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in Savoy); Hautecombe and Lake Bourget are in Savoy."
+      }
     },
     {
       "id": "mr:0704-ioannes-de-vespiniano",
@@ -37664,7 +37775,10 @@
           "it": "In Scozia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"morì in Inghilterra\" (died in England) where the Latin has \"ibídem óbiit\" (died there, in Scotland)."
+      }
     },
     {
       "id": "mr:0706-monenna",
@@ -38182,7 +38296,10 @@
           "it": "A Tulle nella Gallia belgica, ora in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Tulle\" where the Latin has \"Tulli\" (Toul, in Gallia Belgica)."
+      }
     },
     {
       "id": "mr:0708-disibodus",
@@ -38886,7 +39003,10 @@
           "it": "Nel monastero di Moyenmoutier sui monti Vosgi, in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"vescovo di Treviri\" (bishop of Trier) where the Latin has \"chorepíscopus Tréviris\" (chorbishop at Trier)."
+      }
     },
     {
       "id": "mr:0711-abundius",
@@ -39968,7 +40088,10 @@
           "it": "A Ratzeburg nell’Alsazia, ora in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in Holstein)."
+      }
     },
     {
       "id": "mr:0715-david",
@@ -40191,7 +40314,10 @@
           "it": "Nell’isola di Jersey nel Mare del Nord",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel Mare del Nord\" (in the North Sea) where the Latin has \"in mari Británnico\" (in the British Sea, the English Channel)."
+      }
     },
     {
       "id": "mr:0716-monulphus-et-gondulphus",
@@ -40637,7 +40763,10 @@
           "it": "A Parigi in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Marta Maddalena Claudina\" where the Latin has \"Maríæ Magdalénæ Claudínæ\" (Marie-Madeleine-Claudine)."
+      }
     },
     {
       "id": "mr:0717-petrus-liu-ziyu",
@@ -41433,7 +41562,10 @@
       ],
       "same_eulogy": [
         "mr:0701-simeon-salus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"presso il lago di Mareotide in Egitto\" where the Latin has \"apud Asphaltitem lacum\" (the Dead Sea)."
+      }
     },
     {
       "id": "mr:0721-praxedes",
@@ -42087,7 +42219,10 @@
           "it": "In Russia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"sul fiume Don\" where the Latin has \"ad Altam flumen\" (the river Alta)."
+      }
     },
     {
       "id": "mr:0724-balduinus",
@@ -43197,7 +43332,10 @@
           "it": "A Piacenza",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"la moglie e il figlio\" (one son) where the Latin has \"uxore et filiis\" (wife and children)."
+      }
     },
     {
       "id": "mr:0727-nevolonus",
@@ -44438,7 +44576,10 @@
           "it": "A Roma al tredicesimo miglio della via Prenestina",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"al tredicesimo miglio\" (the thirteenth mile of the Via Prenestina) where the Latin has \"miliário tricésimo\" (the thirtieth)."
+      }
     },
     {
       "id": "mr:0801-felix",
@@ -46424,7 +46565,10 @@
           "it": "In una sordida galera ancorata nel mare al largo di Rochefort in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"dal monastero di Metz\" where the Latin \"e Mediáno monastério\" is the abbey of Moyenmoutier."
+      }
     },
     {
       "id": "mr:0809-candida-maria-a-iesu",
@@ -46711,7 +46855,10 @@
           "it": "A Roma al terzo miglio della via Labicana nel cimitero ad Duas Lauros",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"san Tiburzio\" omits the title \"martire\" given in the Latin (\"sancti Tibúrtii, mártyris\")."
+      }
     },
     {
       "id": "mr:0811-susanna",
@@ -47306,7 +47453,10 @@
           "it": "Nella fortezza di Schemaris presso la riva del fiume Tzkhenis Dsqali sulle montagne del Caucaso",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella regione di Lesghistan\" where the Latin has \"in Lazícam regiónem\" (Lazica, in western Georgia)."
+      }
     },
     {
       "id": "mr:0813-vigbertus",
@@ -47625,7 +47775,10 @@
       ],
       "same_eulogy": [
         "mr:0815-arnulphus"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Altenburg nelle Fiandre, ora in Germania\" where the Latin \"Aldenbúrgi in Flándria\" is Oudenburg in Flanders, in present-day Belgium."
+      }
     },
     {
       "id": "mr:0814-sanctus-de-urbino",
@@ -49518,7 +49671,10 @@
       "entry": 7,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"a Edessa nell’antica Siria\" where the Latin has \"Edessae in Hellade\" (Edessa in Greece, in Macedonia)."
+      }
     },
     {
       "id": "mr:0821-privatus",
@@ -50747,7 +50903,10 @@
           "it": "A Puy-en-Vélay presso Poitiers sempre in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Puy-en-Vélay\" where the Latin has \"Podii apud Pictavium\" (La Puye, near Poitiers)."
+      }
     },
     {
       "id": "mr:0826-maria-a-iesu-crucifixo",
@@ -51015,7 +51174,10 @@
           "it": "Nel monastero di Petershausen",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel territorio dell’odierna Svizzera\" where the Latin has \"in Suevia\" (Swabia); Petershausen at Constance is in Germany."
+      }
     },
     {
       "id": "mr:0827-guarinus",
@@ -51032,7 +51194,10 @@
           "it": "Nel monastero di Aulps in Borgogna, nell’odierna Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"in Borgogna\" where the Latin has \"Sabaudiae\" (in Savoy)."
+      }
     },
     {
       "id": "mr:0827-amadeus",
@@ -51248,7 +51413,8 @@
         }
       ],
       "edition_notes": {
-        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
+        "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances.",
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’odierna Svizzera\" where the Latin has \"in Suevia\" (Swabia); Constance is in Germany."
       }
     },
     {
@@ -51676,7 +51842,10 @@
           "it": "A Lancaster in Inghilterra",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Error: \"sub Iacobo rege Primo\" (under James I), but Richard Herst was executed in 1628, under Charles I."
+      }
     },
     {
       "id": "mr:0829-ludovicus-vulfilacius-huppy",
@@ -52008,7 +52177,10 @@
           "it": "Ad Almería sempre in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"vescovo di Cadice\" (Cádiz) where the Latin has \"Guadicensis\" (of Guadix)."
+      }
     },
     {
       "id": "mr:0830-ioachim-ferrer-adell",
@@ -52851,7 +53023,10 @@
           "it": "Nel monastero di Stavelot nel Brabante, nell’odierno Belgio",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Solesmes\" where the Latin has \"Sollemniacénse\" (Solignac, where Remaclus was abbot before founding Stavelot and Malmedy)."
+      }
     },
     {
       "id": "mr:0903-aigulphus-et-socii",
@@ -53292,7 +53467,10 @@
           "it": "Nel territorio di Thérouanne nelle Fiandre, ora in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"fu deposto insieme a san Mummolino\" (buried together with Saint Mummolinus) where the Latin says the monastery was founded together with Saint Mummolinus."
+      }
     },
     {
       "id": "mr:0905-alpertus",
@@ -53506,7 +53684,10 @@
           "it": "Mel monastero cistercense di Bouchet vicino a Orange nella Provenza in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"san Bertrando\" (Saint) where the Latin has \"beáti Bertrándi\" (Blessed)."
+      }
     },
     {
       "id": "mr:0906-didacus-llorca-llopis",
@@ -54425,6 +54606,9 @@
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
         }
+      },
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
       }
     },
     {
@@ -54837,7 +55021,10 @@
           "it": "Nella città di Wuchang nella provincia dello Hebei in Cina",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"provincia dello Hebei\" where the Latin has \"provínciæ Hubei\" (Hubei, where Wuchang lies)."
+      }
     },
     {
       "id": "mr:0911-petrus-de-alcantara",
@@ -55197,7 +55384,10 @@
           "it": "In una galera all’ancora nel mare di Rochefort sulla costa francese",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"artigiano\" (craftsman) where the Latin has \"magíster ártium\" (Master of Arts)."
+      }
     },
     {
       "id": "mr:0913-aurelius-maria-villalon-acebron",
@@ -55312,7 +55502,10 @@
           "it": "Nel monastero di Beauvale nel territorio di Besançon in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Beauvale\" where the Latin has \"Bellævallénsi\" (Bellevaux, near Besançon)."
+      }
     },
     {
       "id": "mr:0914-albertus",
@@ -56961,7 +57154,10 @@
           "it": "A Puebla in Messico",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"beato\" where the Latin has \"sancti\" (Saint); he was canonized in 2000."
+      }
     },
     {
       "id": "mr:0921-matthaeus-apostolus",
@@ -58697,7 +58893,10 @@
       "asterisk": false,
       "country": "CZ",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"dalla zia paterna Ludmilla\" (his paternal aunt) where the Latin has \"ab ávia sancta Ludmílla\" (his grandmother, Saint Ludmila)."
+      }
     },
     {
       "id": "mr:0928-laurentius-ruiz-et-socii",
@@ -62557,7 +62756,10 @@
           "it": "A San Severino nelle Marche",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"discepolo di san Damiano\" where the Latin has \"sancti Petri Damiáni discípulus\" (a disciple of Saint Peter Damian)."
+      }
     },
     {
       "id": "mr:1014-iacobus-laigneau-de-langellerie",
@@ -63488,7 +63690,10 @@
       "asterisk": false,
       "country": "US",
       "typology": "celebratio",
-      "unnumbered": true
+      "unnumbered": true,
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"oggi in Canada\" (today in Canada) where the Latin has \"tunc in território Canadénsi\" (then in Canadian territory); Ossernenon lies in present-day New York State, USA."
+      }
     },
     {
       "id": "mr:1019-paulus-a-cruce",
@@ -64350,7 +64555,10 @@
           "it": "Ad Antiochia in Siria",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"imperatore d’Oriente\" (emperor of the East) where the Latin has \"cómite Oriéntis\" (Count of the East)."
+      }
     },
     {
       "id": "mr:1023-severinus",
@@ -64367,7 +64575,10 @@
           "it": "A Colonia in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"san Severo\" where the Latin has \"sancti Severíni\" (Saint Severinus)."
+      }
     },
     {
       "id": "mr:1023-severinus-boetius",
@@ -64452,7 +64663,10 @@
           "it": "A Costantinopoli",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"imperatore Barda\" (the emperor Bardas) where the Latin has \"Bardam Cǽsarem\" (Bardas the Caesar)."
+      }
     },
     {
       "id": "mr:1023-ethelfleda",
@@ -64469,7 +64683,10 @@
           "it": "A Ramsey in Inghilterra",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"A Ramsey\" where the Latin has \"Rumeséiæ\" (Romsey)."
+      }
     },
     {
       "id": "mr:1023-allucius",
@@ -65043,7 +65260,10 @@
           "it": "Nella cittadina di Nules vicino a Tortosa in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Riccardo\" where the Latin has \"Recarédi\" (Recaredo)."
+      }
     },
     {
       "id": "mr:1025-maria-teresia-ferragud-roig-et-socii",
@@ -65550,7 +65770,10 @@
           "it": "Ad Annecy nella Borgogna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in Savoy)."
+      }
     },
     {
       "id": "mr:1028-franciscus-serrano-et-socii",
@@ -65849,7 +66072,10 @@
           "it": "A Tangeri in Mauritania, nell’odierno Marocco",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"la vita stessa\" (his very life) where the Latin has \"ipsam vitem\" (his vine staff, the centurion's badge)."
+      }
     },
     {
       "id": "mr:1030-claudius-et-socii",
@@ -67297,7 +67523,10 @@
           "it": "Nel monastero di Calais presso Meaux nella Gallia lugdunense, sempre in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"monastero di Calais\" where the Latin has \"cœnóbio Calénsi\" (the monastery of Chelles, near Meaux)."
+      }
     },
     {
       "id": "mr:1105-geraldus",
@@ -67967,7 +68196,10 @@
           "it": "A Soissons in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"per un quinquennio\" (for five years) where the Latin has \"a quinquénnio\" (from the age of five)."
+      }
     },
     {
       "id": "mr:1108-ioannes-duns-scotus",
@@ -69258,7 +69490,10 @@
           "it": "A Malgarten in Frisia, nell’odierna Olanda",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Malgarten\" where the Latin has \"Horto Sanctæ Maríæ\" (Mariëngaarde, in Friesland)."
+      }
     },
     {
       "id": "mr:1114-serapion",
@@ -71747,7 +71982,10 @@
           "it": "Nel monastero dei Canonici Regolari di Sixt in Borgogna, ora in Francia",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in Savoy)."
+      }
     },
     {
       "id": "mr:1126-silvester-gozzolini",
@@ -72998,7 +73236,10 @@
           "it": "Ad Aquileia in Friuli",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"chiostri d’Italia\" (the cloisters of Italy) where the Latin has \"Itáliæ claustris\" (the defensive barriers of Italy breached by Alaric)."
+      }
     },
     {
       "id": "mr:1202-silverius",
@@ -73018,7 +73259,10 @@
       ],
       "same_eulogy": [
         "mr:0620-silverius"
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Palmarola in Liguria\" where the Latin \"ínsula Palmária\" is Palmarola in the Pontine Islands, off Lazio, not in Liguria."
+      }
     },
     {
       "id": "mr:1202-ioannes-ruysbroeck",
@@ -74745,7 +74989,10 @@
           "it": "A Neumünster nell’Alsazia in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in Holstein)."
+      }
     },
     {
       "id": "mr:1212-bartholus-buonpedoni",
@@ -75046,7 +75293,10 @@
           "it": "Ad Alessandria d’Egitto",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"morì fatto a brandelli\" (died torn to pieces) where the Latin has \"différri præcépit\" (the judge ordered him to be put off, sparing him)."
+      }
     },
     {
       "id": "mr:1214-thyrsus-et-socii",
@@ -75380,7 +75630,10 @@
       "entry": 1,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"re di Giuda\" (king of Judah) where the Latin has \"ducis Iudæ\" (leader of Judah); Zerubbabel was governor, not king."
+      }
     },
     {
       "id": "mr:1216-plurimae-virgines-africa",
@@ -75829,7 +76082,10 @@
           "it": "Nel monastero di Hildesheim nella Baviera, in Germania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"Hildesheim\" where the Latin has \"Heidenheiménsi\" (Heidenheim), the monastery Saint Winebald founded."
+      }
     },
     {
       "id": "mr:1218-paulus-nguyen-van-my-et-petrus-truong-van",
@@ -76479,7 +76735,10 @@
           "la": "In pago Valentíno Hispániæ",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: the title \"beato\" is omitted before \"Paolo Meléndez Gonzalo\"; the Latin has \"beáti Pauli\"."
+      }
     },
     {
       "id": "mr:1224-avi-iesu-christi",
@@ -76488,7 +76747,10 @@
       "entry": 1,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"figlio di Adamo\" is omitted after \"figlio di Abramo\"; the Latin has \"fílii Abraham, fílii Adam\"."
+      }
     },
     {
       "id": "mr:1224-delphinus",
@@ -76769,7 +77031,10 @@
       "asterisk": false,
       "country": "IL",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"seduto\" (seated) where the Latin has \"stantem\" (standing), as in Acts 7:55-56."
+      }
     },
     {
       "id": "mr:1226-dionysius",
@@ -76953,7 +77218,10 @@
           "it": "In una galera all’ancora sempre al largo di Santander in Spagna",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: the title \"martire\" is omitted after \"Giuseppe Maria Corbin Ferrer\"; the Latin has \"mártyris\"."
+      }
     },
     {
       "id": "mr:1228-innocentes",

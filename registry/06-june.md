@@ -183,7 +183,7 @@
 | 15 | 6 | `mr:0615-lotharius` | * | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0615-benildis` |  | ES | dies_natalis |  |  |
 | 15 | 8 | `mr:0615-bernardus-de-menthone` |  | IT | dies_natalis |  |  |
-| 15 | 9 | `mr:0615-isfridus` | * | DE | dies_natalis |  |  |
+| 15 | 9 | `mr:0615-isfridus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (Alsace) where the Latin has "in Holsátia" (Holstein), the region of Ratzeburg. |
 | 15 | 10 | `mr:0615-thomas-scryven` | * | GB | dies_natalis |  |  |
 | 15 | 11 | `mr:0615-petrus-snow-et-radulphus-grimston` | * | GB | dies_natalis |  |  |
 | 15 | 12 | `mr:0615-germana` |  | FR | dies_natalis |  |  |
@@ -210,7 +210,7 @@
 | 17 | 6 | `mr:0617-hervaeus` | * | FR | dies_natalis |  |  |
 | 17 | 7 | `mr:0617-avitus` |  | FR | dies_natalis |  |  |
 | 17 | 8 | `mr:0617-rainerius` |  | IT | dies_natalis |  |  |
-| 17 | 9 | `mr:0617-teresia` | * | PT | dies_natalis |  |  |
+| 17 | 9 | `mr:0617-teresia` | * | PT | dies_natalis |  | 2004 Italian: Translation error: "A Ourem" where the Latin has "Lorvanii" (Lorvão, the monastery she founded). |
 | 17 | 10 | `mr:0617-petrus-gambacorta` | * | IT | dies_natalis |  |  |
 | 17 | 11 | `mr:0617-paulus-burali` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:0617-philippus-papon` | * | FR | dies_natalis |  |  |
@@ -262,7 +262,7 @@
 | 23 | 1 | `mr:0623-nicomedia` |  | TR | commemoratio |  |  |
 | 23 | 2 | `mr:0623-ediltrudis` |  | GB | dies_natalis |  |  |
 | 23 | 3 | `mr:0623-bilius` | * | FR | dies_natalis |  |  |
-| 23 | 4 | `mr:0623-lanfrancus` | * | IT | dies_natalis |  |  |
+| 23 | 4 | `mr:0623-lanfrancus` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "san Lanfranco" where the Latin has "beati Lanfranci" (Blessed). |
 | 23 | 5 | `mr:0623-walherus` | * | BE | dies_natalis |  |  |
 | 23 | 6 | `mr:0623-maria` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0623-petrus-iacobus-de-pisauro` | * | IT | dies_natalis |  |  |
@@ -288,7 +288,7 @@
 | 25 | 7 | `mr:0625-adalbertus` |  | NL | dies_natalis |  |  |
 | 25 | 8 | `mr:0625-salomon` | * | FR | dies_natalis |  |  |
 | 25 | 9 | `mr:0625-gulielmus` |  | IT | dies_natalis |  |  |
-| 25 | 10 | `mr:0625-ioannes-hispanus` | * | FR | dies_natalis |  |  |
+| 25 | 10 | `mr:0625-ioannes-hispanus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" (Burgundy) where the Latin has "in Sabaudia" (Savoy). |
 | 25 | 11 | `mr:0625-dorothea-montaviensis` | * | PL | dies_natalis |  |  |
 | 25 | 12 | `mr:0625-maria-lhuillier` | * | FR | dies_natalis |  |  |
 | 25 | 13 | `mr:0625-dominicus-henares-et-franciscus-do-minh-chieu` |  | VN | dies_natalis |  |  |

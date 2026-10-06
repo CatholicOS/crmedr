@@ -222,7 +222,7 @@
 | 18 | 7 | `mr:0418-athanasia` |  | GR | dies_natalis | same as `mr:0814-athanasia` |  |
 | 18 | 8 | `mr:0418-ioannes-isaurus` |  | GR | dies_natalis |  |  |
 | 18 | 9 | `mr:0418-perfectus` |  | ES | dies_natalis |  |  |
-| 18 | 10 | `mr:0418-idesbaldus` | * | BE | dies_natalis |  |  |
+| 18 | 10 | `mr:0418-idesbaldus` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "nel monastero di Down" where the Latin has "Dunénse monastérium" (the Abbey of the Dunes, Ten Duinen, in Flanders). |
 | 18 | 11 | `mr:0418-galdinus` |  | IT | dies_natalis |  |  |
 | 18 | 12 | `mr:0418-andreas` | * | IT | dies_natalis |  |  |
 | 18 | 13 | `mr:0418-andreas-hibernon` | * | ES | dies_natalis |  |  |
@@ -329,8 +329,8 @@
 | 27 | 3 | `mr:0427-theodorus` |  | EG | dies_natalis |  |  |
 | 27 | 4 | `mr:0427-liberalis` | * | IT | dies_natalis |  |  |
 | 27 | 5 | `mr:0427-mauganus` | * | GB | dies_natalis |  |  |
-| 27 | 6 | `mr:0427-ioannes` |  | TR | dies_natalis |  |  |
-| 27 | 7 | `mr:0427-zita` | * | IT | dies_natalis |  |  |
+| 27 | 6 | `mr:0427-ioannes` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nel mare Egeo" (in the Aegean Sea) where the Latin has "in Propóntide" (the Propontis, i.e. the Sea of Marmara). |
+| 27 | 7 | `mr:0427-zita` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "fu per dodici anni domestica" (a domestic for twelve years) where the Latin has "duodénnis" (at twelve years of age she entered service, remaining in it until death). |
 | 27 | 8 | `mr:0427-petrus-ermengol` | * | ES | dies_natalis |  |  |
 | 27 | 9 | `mr:0427-iacobus-de-iadere` | * | IT | dies_natalis |  |  |
 | 27 | 10 | `mr:0427-catharina` | * | ME | dies_natalis |  |  |

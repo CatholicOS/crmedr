@@ -43,7 +43,7 @@
 | 3 | 7 | `mr:0903-macanisius` | * | IE | dies_natalis |  |  |
 | 3 | 8 | `mr:0903-auxanus` |  | IT | dies_natalis |  |  |
 | 3 | 9 | `mr:0903-vitalianus` | * | IT | dies_natalis |  |  |
-| 3 | 10 | `mr:0903-rimagilus` | * | BE | dies_natalis |  |  |
+| 3 | 10 | `mr:0903-rimagilus` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "Solesmes" where the Latin has "Sollemniacénse" (Solignac, where Remaclus was abbot before founding Stavelot and Malmedy). |
 | 3 | 11 | `mr:0903-aigulphus-et-socii` |  | FR | dies_natalis |  |  |
 | 3 | 12 | `mr:0903-chrodogangus` | * | FR | dies_natalis |  |  |
 | 3 | 13 | `mr:0903-guala` | * | IT | dies_natalis |  |  |
@@ -69,7 +69,7 @@
 | 5 | 1 | `mr:0905-acontus-et-socii` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0905-quintus` |  | IT | dies_natalis | same as `mr:0905-quinctius-et-socii` |  |
 | 5 | 3 | `mr:0905-urbanus-et-socii` |  | TR | dies_natalis |  |  |
-| 5 | 4 | `mr:0905-bertinus` |  | FR | dies_natalis |  |  |
+| 5 | 4 | `mr:0905-bertinus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "fu deposto insieme a san Mummolino" (buried together with Saint Mummolinus) where the Latin says the monastery was founded together with Saint Mummolinus. |
 | 5 | 5 | `mr:0905-alpertus` | * | IT | dies_natalis |  |  |
 | 5 | 6 | `mr:0905-ioannes-bonus-de-siponto` | * | HR | dies_natalis |  |  |
 | 5 | 7 | `mr:0905-gulielmus-browne` | * | GB | dies_natalis |  |  |
@@ -83,7 +83,7 @@
 | 6 | 5 | `mr:0906-cagnoaldus` | * | FR | dies_natalis |  |  |
 | 6 | 6 | `mr:0906-bega` | * | GB | dies_natalis |  |  |
 | 6 | 7 | `mr:0906-magnus` | * | DE | dies_natalis |  |  |
-| 6 | 8 | `mr:0906-bertrandus-de-garrigues` | * | FR | commemoratio |  |  |
+| 6 | 8 | `mr:0906-bertrandus-de-garrigues` | * | FR | commemoratio |  | 2004 Italian: Translation error: "san Bertrando" (Saint) where the Latin has "beáti Bertrándi" (Blessed). |
 | 6 | 9 | `mr:0906-didacus-llorca-llopis` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0906-paschalis-torres-lloret` | * | ES | dies_natalis |  |  |
 | 6 | 11 | `mr:0906-michael-czartoryskus` | * | PL | dies_natalis |  |  |
@@ -137,7 +137,7 @@
 | 9 | 7 | `mr:0909-georgius-douglas` | * | GB | dies_natalis |  |  |
 | 9 | 8 | `mr:0909-petrus-bonhomme` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0909-iacobus-desideratus-laval` | * | MU | dies_natalis |  |  |
-| 9 | 10 | `mr:0909-franciscus-garate-aranguren` | * | ES | dies_natalis | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 9 | 10 | `mr:0909-franciscus-garate-aranguren` | * | ES | dies_natalis | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. 2004 Italian: Translation error: "nella Guascogna" (Gascony) where the Latin has "in Vascónia Hispániæ" (the Basque Country of Spain). |
 | 10 | 1 | `mr:0910-nemesius` |  | EG | dies_natalis |  |  |
 | 10 | 2 | `mr:0910-nemesianus-et-socii` |  | TN | commemoratio |  |  |
 | 10 | 3 | `mr:0910-pulcheria` |  | TR | dies_natalis |  |  |
@@ -162,7 +162,7 @@
 | 11 | 10 | `mr:0911-gaspar-koteda-et-socii` | * | JP | dies_natalis |  |  |
 | 11 | 11 | `mr:0911-bonaventura-de-barcinone` | * | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0911-franciscus-mayaudon` | * | FR | dies_natalis |  |  |
-| 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN | dies_natalis |  |  |
+| 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN | dies_natalis |  | 2004 Italian: Translation error: "provincia dello Hebei" where the Latin has "provínciæ Hubei" (Hubei, where Wuchang lies). |
 | 11 | 14 | `mr:0911-petrus-de-alcantara` | * | ES | dies_natalis |  |  |
 | 11 | 15 | `mr:0911-iosephus-maria-segura-penades` | * | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:0912-nomen-mariae` |  |  | celebratio |  |  |
@@ -184,14 +184,14 @@
 | 13 | 9 | `mr:0913-venerius` |  | IT | dies_natalis |  |  |
 | 13 | 10 | `mr:0913-amatus-broili` |  | FR | dies_natalis |  |  |
 | 13 | 11 | `mr:0913-maria-a-iesu` | * | ES | dies_natalis |  |  |
-| 13 | 12 | `mr:0913-claudius-dumonet` | * | FR | dies_natalis |  |  |
+| 13 | 12 | `mr:0913-claudius-dumonet` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "artigiano" (craftsman) where the Latin has "magíster ártium" (Master of Arts). |
 | 13 | 13 | `mr:0913-aurelius-maria-villalon-acebron` | * | ES | dies_natalis |  |  |
 | 14 | (1) | `mr:0914-exaltatio-sanctae-crucis` |  |  | celebratio |  |  |
 | 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  |  |
 | 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  |  |
 | 14 | 4 | `mr:0914-maternus` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
-| 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  |  |
+| 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Beauvale" where the Latin has "Bellævallénsi" (Bellevaux, near Besançon). |
 | 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |  |
 | 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  |  |
 | 14 | 9 | `mr:0914-claudius-laplace` | * | FR | dies_natalis |  |  |
@@ -289,7 +289,7 @@
 | 20 | 7 | `mr:0920-franciscus-de-posadas` | * | ES | dies_natalis |  |  |
 | 20 | 8 | `mr:0920-ioannes-carolus-cornay` |  | VN | dies_natalis |  |  |
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR | dies_natalis |  |  |
-| 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  |  |
+| 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  | 2004 Italian: Translation error: "beato" where the Latin has "sancti" (Saint); he was canonized in 2000. |
 | 21 | (1) | `mr:0921-matthaeus-apostolus` |  | PS | dies_natalis |  |  |
 | 21 | 2 | `mr:0921-ionas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:0921-quadratus` |  | GR | commemoratio |  |  |
@@ -394,7 +394,7 @@
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR | dies_natalis |  |  |
 | 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches` | * | ES | dies_natalis |  |  |
 | 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES | dies_natalis |  |  |
-| 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  |  |
+| 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  | 2004 Italian: Translation error: "dalla zia paterna Ludmilla" (his paternal aunt) where the Latin has "ab ávia sancta Ludmílla" (his grandmother, Saint Ludmila). |
 | 28 | (2) | `mr:0928-laurentius-ruiz-et-socii` |  | PH | dies_natalis |  |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis | same as `mr:0928-marcus-et-socii` |  |
 | 28 | 4 | `mr:0928-chariton` |  | PS | dies_natalis |  |  |

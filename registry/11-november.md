@@ -69,7 +69,7 @@
 | 5 | 3 | `mr:1105-marcus` | * | IT | dies_natalis |  |  |
 | 5 | 4 | `mr:1105-fibicius` |  | DE | dies_natalis |  |  |
 | 5 | 5 | `mr:1105-guethnocus` | * | FR | dies_natalis |  |  |
-| 5 | 6 | `mr:1105-bertilla` | * | FR | dies_natalis |  |  |
+| 5 | 6 | `mr:1105-bertilla` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "monastero di Calais" where the Latin has "cœnóbio Calénsi" (the monastery of Chelles, near Meaux). |
 | 5 | 7 | `mr:1105-geraldus` | * | FR | dies_natalis |  |  |
 | 5 | 8 | `mr:1105-gomida-keumurgian` | * | TR | dies_natalis |  |  |
 | 5 | 9 | `mr:1105-dominicus-mau` |  | VN | dies_natalis |  |  |
@@ -109,7 +109,7 @@
 | 8 | 2 | `mr:1108-clarus` |  | FR | dies_natalis |  |  |
 | 8 | 3 | `mr:1108-deusdedit-i` |  | IT | dies_natalis |  |  |
 | 8 | 4 | `mr:1108-willehadus` |  | DE | dies_natalis |  |  |
-| 8 | 5 | `mr:1108-godefridus` |  | FR | depositio |  |  |
+| 8 | 5 | `mr:1108-godefridus` |  | FR | depositio |  | 2004 Italian: Translation error: "per un quinquennio" (for five years) where the Latin has "a quinquénnio" (from the age of five). |
 | 8 | 6 | `mr:1108-ioannes-duns-scotus` | * | DE | dies_natalis |  |  |
 | 8 | 7 | `mr:1108-maria-crucifixa-satellico` | * | IT | dies_natalis |  |  |
 | 8 | 8 | `mr:1108-iosephus-nguyen-dinh-nghi-et-socii` |  | VN | dies_natalis |  |  |
@@ -185,7 +185,7 @@
 | 14 | 5 | `mr:1114-ioannes` | * | HR | dies_natalis |  |  |
 | 14 | 6 | `mr:1114-laurentius-o-toole` |  | FR | dies_natalis |  |  |
 | 14 | 7 | `mr:1114-ioannes-de-tupharia` | * | IT | dies_natalis |  |  |
-| 14 | 8 | `mr:1114-siardus` | * | NL | dies_natalis |  |  |
+| 14 | 8 | `mr:1114-siardus` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "Malgarten" where the Latin has "Horto Sanctæ Maríæ" (Mariëngaarde, in Friesland). |
 | 14 | 9 | `mr:1114-serapion` | * | TN | dies_natalis |  |  |
 | 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | IL | dies_natalis |  |  |
 | 14 | 11 | `mr:1114-ioannes-liccio` | * | IT | dies_natalis |  |  |
@@ -334,7 +334,7 @@
 | 26 | 3 | `mr:1126-conradus` |  | DE | dies_natalis |  |  |
 | 26 | 4 | `mr:1126-nicon` |  | GR | dies_natalis |  |  |
 | 26 | 5 | `mr:1126-bellinus` |  | IT | dies_natalis |  |  |
-| 26 | 6 | `mr:1126-pontius-falciniacensis` | * | FR | dies_natalis |  |  |
+| 26 | 6 | `mr:1126-pontius-falciniacensis` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" (in Burgundy) where the Latin has "in Sabáudia" (in Savoy). |
 | 26 | 7 | `mr:1126-silvester-gozzolini` |  | IT | dies_natalis |  |  |
 | 26 | 8 | `mr:1126-delphina` | * | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:1126-hugo-taylor-et-marmaducus-bowes` | * | GB | dies_natalis |  |  |

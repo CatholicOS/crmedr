@@ -187,7 +187,7 @@
 | 14 | 6 | `mr:1014-manechildis` | * | FR | dies_natalis |  |  |
 | 14 | 7 | `mr:1014-venantius` | * | IT | commemoratio |  |  |
 | 14 | 8 | `mr:1014-angadrisma` | * | FR | dies_natalis |  |  |
-| 14 | 9 | `mr:1014-dominicus` | * | IT | dies_natalis |  |  |
+| 14 | 9 | `mr:1014-dominicus` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "discepolo di san Damiano" where the Latin has "sancti Petri Damiáni discípulus" (a disciple of Saint Peter Damian). |
 | 14 | 10 | `mr:1014-iacobus-laigneau-de-langellerie` | * | FR | dies_natalis |  |  |
 | 14 | 11 | `mr:1014-anna-maria-aranda-riera` | * | ES | dies_natalis |  |  |
 | 14 | 12 | `mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec` | * | DE | dies_natalis |  |  |
@@ -244,7 +244,7 @@
 | 18 | 6 | `mr:1018-petrus-de-alcantara` |  | ES | dies_natalis | same as `mr:1019-petrus-de-alcantara` |  |
 | 18 | 7 | `mr:1018-isaac-jogues` |  | US | dies_natalis |  |  |
 | 18 | 8 | `mr:1018-paulus-a-cruce` |  | IT | dies_natalis | same as `mr:0428-paulus-a-cruce` |  |
-| 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  |  |
+| 19 | (1) | `mr:1019-ioannes-de-brebeuf-et-socii` |  | US | celebratio |  | 2004 Italian: Translation error: "oggi in Canada" (today in Canada) where the Latin has "tunc in território Canadénsi" (then in Canadian territory); Ossernenon lies in present-day New York State, USA. |
 | 19 | (2) | `mr:1019-paulus-a-cruce` |  | IT | celebratio |  |  |
 | 19 | 3 | `mr:1019-ioel-propheta` |  | PS | commemoratio | same as `mr:0713-ioel-et-esdras-prophetae` |  |
 | 19 | 4 | `mr:1019-ptolomaeus-et-lucius` |  | IT | commemoratio |  |  |
@@ -296,14 +296,14 @@
 | 23 | (1) | `mr:1023-ioannes-de-capestrano` |  | HU | dies_natalis | same as `mr:0328-ioannes-de-capistrano` |  |
 | 23 | 2 | `mr:1023-servandus-et-germanus` |  | ES | dies_natalis |  |  |
 | 23 | 3 | `mr:1023-ioannes-et-iacobus` |  | IR | dies_natalis |  |  |
-| 23 | 4 | `mr:1023-theodoretus` |  | TR | dies_natalis |  |  |
-| 23 | 5 | `mr:1023-severinus` |  | DE | commemoratio |  |  |
+| 23 | 4 | `mr:1023-theodoretus` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "imperatore d’Oriente" (emperor of the East) where the Latin has "cómite Oriéntis" (Count of the East). |
+| 23 | 5 | `mr:1023-severinus` |  | DE | commemoratio |  | 2004 Italian: Translation error: "san Severo" where the Latin has "sancti Severíni" (Saint Severinus). |
 | 23 | 6 | `mr:1023-severinus-boetius` | * | IT | commemoratio |  |  |
 | 23 | 7 | `mr:1023-ioannes-syracusis` | * | IT | dies_natalis |  |  |
 | 23 | 8 | `mr:1023-romanus` |  | FR | dies_natalis |  |  |
 | 23 | 9 | `mr:1023-benedictus` |  | FR | dies_natalis |  |  |
-| 23 | 10 | `mr:1023-ignatius` |  | TR | dies_natalis |  |  |
-| 23 | 11 | `mr:1023-ethelfleda` | * | GB | dies_natalis |  |  |
+| 23 | 10 | `mr:1023-ignatius` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "imperatore Barda" (the emperor Bardas) where the Latin has "Bardam Cǽsarem" (Bardas the Caesar). |
+| 23 | 11 | `mr:1023-ethelfleda` | * | GB | dies_natalis |  | 2004 Italian: Translation error: "A Ramsey" where the Latin has "Rumeséiæ" (Romsey). |
 | 23 | 12 | `mr:1023-allucius` | * | IT | dies_natalis |  |  |
 | 23 | 13 | `mr:1023-ioannes-bonus` | * | IT | dies_natalis | same as `mr:1123-ioannes-bonus` |  |
 | 23 | 14 | `mr:1023-ioannes-angelus-porro` | * | IT | dies_natalis |  |  |
@@ -337,7 +337,7 @@
 | 25 | 9 | `mr:1025-maurus` | * | HU | dies_natalis |  |  |
 | 25 | 10 | `mr:1025-bernardus-calbo` | * | ES | dies_natalis |  |  |
 | 25 | 11 | `mr:1025-thaddaeus-machar` | * | IT | dies_natalis |  |  |
-| 25 | 12 | `mr:1025-recaredus-centelles-abad` | * | ES | dies_natalis |  |  |
+| 25 | 12 | `mr:1025-recaredus-centelles-abad` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "Riccardo" where the Latin has "Recarédi" (Recaredo). |
 | 25 | 13 | `mr:1025-maria-teresia-ferragud-roig-et-socii` | * | ES | dies_natalis |  |  |
 | 26 | 1 | `mr:1026-lucianus-et-marcianus` |  | TR | dies_natalis |  |  |
 | 26 | 2 | `mr:1026-rogatianus` |  | TN | commemoratio |  |  |
@@ -366,7 +366,7 @@
 | 28 | 5 | `mr:1028-genesius` | * | FR | dies_natalis |  |  |
 | 28 | 6 | `mr:1028-salvius` |  | FR | dies_natalis | same as `mr:0111-salvius-ambiani` |  |
 | 28 | 7 | `mr:1028-faro` |  | FR | dies_natalis |  |  |
-| 28 | 8 | `mr:1028-germanus` | * | FR | commemoratio |  |  |
+| 28 | 8 | `mr:1028-germanus` | * | FR | commemoratio |  | 2004 Italian: Translation error: "nella Borgogna" (in Burgundy) where the Latin has "in Sabáudia" (in Savoy). |
 | 28 | 9 | `mr:1028-franciscus-serrano-et-socii` |  | CN | dies_natalis |  |  |
 | 28 | 10 | `mr:1028-ioannes-dat` |  | VN | dies_natalis |  |  |
 | 28 | 11 | `mr:1028-rodericus-aguilar` |  | MX | dies_natalis |  |  |
@@ -384,7 +384,7 @@
 | 30 | 1 | `mr:1030-marcianus` |  | IT | dies_natalis | same as `mr:0614-marcianus` |  |
 | 30 | 2 | `mr:1030-serapion` |  | TR | commemoratio |  |  |
 | 30 | 3 | `mr:1030-eutropia` |  | EG | dies_natalis |  |  |
-| 30 | 4 | `mr:1030-marcellus` |  | MA | dies_natalis |  |  |
+| 30 | 4 | `mr:1030-marcellus` |  | MA | dies_natalis |  | 2004 Italian: Translation error: "la vita stessa" (his very life) where the Latin has "ipsam vitem" (his vine staff, the centurion's badge). |
 | 30 | 5 | `mr:1030-claudius-et-socii` |  | ES | dies_natalis |  |  |
 | 30 | 6 | `mr:1030-maximus` |  | IT | dies_natalis | same as `mr:1030-maximus-apameae` |  |
 | 30 | 7 | `mr:1030-germanus` |  | IT | dies_natalis |  |  |
