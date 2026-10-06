@@ -871,6 +871,1143 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0920-andreas-kim-tae-gon-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"ten of whom are commemorated on this day\" where the Latin says "
+            "that all one hundred and three martyrs are celebrated together on this day."
+        ),
+    },
+    "mr:0926-sebastianus-nam-i-gwan-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"twelve martyrs\" where the Latin has \"novem sociórum, mártyrum\" "
+            "(nine companions, martyrs: ten in all)."
+        ),
+    },
+    "mr:1124-balsamus": {
+        EDITION_EN: (
+            "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin "
+            "continues \"ætátis suæ cum sapiéntia et prudéntia múnere suo functus est\" (of his "
+            "time, he discharged his office with wisdom and prudence)."
+        ),
+    },
+    "mr:0104-thomas-plumtree": {
+        EDITION_EN: (
+            "Translation error: \"choosing the noose over the axe\" where the Latin \"láquei pœnam "
+            "... pro vita máluit\" says he preferred the noose to his life."
+        ),
+    },
+    "mr:0107-canutus-lavard": {
+        EDITION_EN: (
+            "Translation error: \"martyr\" is added; the Latin does not call him a martyr."
+        ),
+    },
+    "mr:0108-laurentius-giustiniani": {
+        EDITION_EN: (
+            "Translation error: \"the wisdom of reform and doctrine\" where the Latin has \"doctrína "
+            "ætérnæ sapiéntiæ\" (the teaching of eternal wisdom)."
+        ),
+    },
+    "mr:0110-francisca-salesia-aviat": {
+        EDITION_EN: (
+            "Translation error: \"Francis de Sales\" where the Latin \"Francíscæ Salésiæ\" is the "
+            "feminine Frances de Sales."
+        ),
+    },
+    "mr:0112-arcadius": {
+        EDITION_EN: (
+            "Translation error: the city is omitted; the Latin has \"Cæsaréæ in Mauretánia\" (at "
+            "Caesarea in Mauretania)."
+        ),
+    },
+    "mr:0113-iutta": {
+        EDITION_EN: (
+            "Translation error: \"Lutgardis\" where the Latin has \"Iuttæ\" (Jutta, or Ivetta, of "
+            "Huy)."
+        ),
+    },
+    "mr:0117-rosselina": {
+        EDITION_EN: (
+            "Translation error: \"Forcalquier\" where the Latin has \"Forum Iúlii\" (Fréjus)."
+        ),
+    },
+    "mr:0119-launomarus": {
+        EDITION_EN: (
+            "Translation error: \"the monastery of Corbie\" where the Latin has \"monastérii "
+            "Corbionénsis\" (Corbion)."
+        ),
+    },
+    "mr:0120-benedictus-ricasoli": {
+        EDITION_EN: (
+            "Translation error: \"Coltevalenza\" where the Latin has \"Coltibóni\" (Coltibuono)."
+        ),
+    },
+    "mr:0121-ioannes-yi-yun-il": {
+        EDITION_EN: (
+            "Translation error: \"one of the last victims\" where the Latin has \"última ... "
+            "víctima\" (the last victim)."
+        ),
+    },
+    "mr:0124-exsuperantius": {
+        EDITION_EN: (
+            "Translation error: adds \"who faithfully shepherded his people and is venerated for "
+            "his holiness and pastoral zeal\", which is not in the Latin."
+        ),
+    },
+    "mr:0124-felicianus": {
+        EDITION_EN: (
+            "Translation error: adds \"a faithful guardian of the flock entrusted to him\", which "
+            "is not in the Latin."
+        ),
+    },
+    "mr:0124-sabinianus": {
+        EDITION_EN: (
+            "Translation error: adds \"who bore witness to Christ through the shedding of his "
+            "blood\", which is not in the Latin."
+        ),
+    },
+    "mr:0127-theodoricus": {
+        EDITION_EN: (
+            "Translation error: \"Ternand\" where the Latin has \"Ternodóri\" (Tonnerre)."
+        ),
+    },
+    "mr:0130-carmela-garcia-moyon": {
+        EDITION_EN: (
+            "Translation error: omits \"violáta\": she was violated before being burned alive."
+        ),
+    },
+    "mr:0131-eusebius": {
+        EDITION_EN: (
+            "Translation error: \"Regensburg\" where the Latin has \"Rangvílam\" (Rankweil)."
+        ),
+    },
+    "mr:0131-marcella": {
+        EDITION_EN: (
+            "Translation error: \"Marcellina\" where the Latin has \"Marcéllæ\" (Marcella)."
+        ),
+    },
+    "mr:0131-waldus": {
+        EDITION_EN: (
+            "Translation error: \"Constance\" where the Latin has \"Constantiénsi\" (Coutances)."
+        ),
+    },
+    "mr:0201-agrippanus": {
+        EDITION_EN: (
+            "Translation error: \"returning to Rome from the borders of Velacum\" where the Latin "
+            "has \"Roma ad fines Velacórum revértens\" (returning from Rome to the Velay)."
+        ),
+    },
+    "mr:0201-andreas-de-comitibus-signiae": {
+        EDITION_EN: (
+            "Translation error: \"Counts of Signore\" where the Latin has \"de Comítibus Sígniæ\" "
+            "(the Counts of Segni)."
+        ),
+    },
+    "mr:0201-conorus-o-devany-et-patricius-o-lougham": {
+        EDITION_EN: (
+            "Translation error: \"bishop of Dungannon and Connor\" where the Latin has \"epíscopi "
+            "Dunénsis et Connorénsis\" (of Down and Connor). Translation error: \"both of the Order "
+            "of Friars Minor\" where the Latin gives \"ex Ordine Fratrum Minórum\" to the bishop "
+            "alone."
+        ),
+    },
+    "mr:0201-ioannes": {
+        EDITION_EN: (
+            "Translation error: \"a man of justice and mercy\" where the Latin has \"miræ "
+            "austeritátis et iustítiæ\" (of wonderful austerity and justice). Translation error: "
+            "\"transferred the episcopal see to Aleth\" where the Latin has \"sedem episcopálem "
+            "Alethénsem eódem tránstulit\" (moved the see of Aleth here, to Saint-Malo)."
+        ),
+    },
+    "mr:0201-maria-anna-vaillot-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"In April, near Angers\" where the Latin has \"Aprilíaci apud "
+            "Andégavum\" (at Avrillé near Angers)."
+        ),
+    },
+    "mr:0201-ursus": {
+        EDITION_EN: (
+            "Translation error: \"In the Alps of Greece\" where the Latin has \"Augústæ Prætóriæ in "
+            "Alpibus Graiis\" (at Aosta in the Graian Alps)."
+        ),
+    },
+    "mr:0204-ioanna-de-valois": {
+        EDITION_EN: (
+            "Translation error: \"finding no way to resolve her marriage bond\" where the Latin has "
+            "\"vínculo matrimónii nullo declaráto\" (her marriage having been declared null)."
+        ),
+    },
+    "mr:0204-papias-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"In Pamphylia\" omits \"Perge\", the city named in the Latin. "
+            "Translation error: \"Papirius\" where the Latin has \"Pápiæ\" (Papias)."
+        ),
+    },
+    "mr:0205-lucas": {
+        EDITION_EN: (
+            "Translation error: \"Lucretius\" where the Latin has \"Lucæ\" (Luke)."
+        ),
+    },
+    "mr:0205-paulus-miki-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"celebrated today\" where the Latin has \"cras\" (tomorrow)."
+        ),
+    },
+    "mr:0205-sabas-iunior": {
+        EDITION_EN: (
+            "Translation error: \"Saint Crescentius\" where the Latin has \"Sancti Cæsárii\" (Saint "
+            "Caesarius)."
+        ),
+    },
+    "mr:0206-paulus-miki-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"eighteen laypeople\" where the Latin has \"septem et decem\" "
+            "(seventeen)."
+        ),
+    },
+    "mr:0207-lucas-iunior": {
+        EDITION_EN: (
+            "Translation error: \"Lucerius the Younger\" where the Latin has \"Lucæ Iunióris\" (Luke "
+            "the Younger)."
+        ),
+    },
+    "mr:0208-iosephina-gabriela-bonino": {
+        EDITION_EN: (
+            "Translation error: \"Savona\" where the Latin has \"Saviliáni\" (Savigliano)."
+        ),
+    },
+    "mr:0212-ludanus": {
+        EDITION_EN: (
+            "Translation error: \"Lucian\" where the Latin has \"Lúdani\" (Ludan)."
+        ),
+    },
+    "mr:0213-stephanus-reate": {
+        EDITION_EN: (
+            "Editorial error: a bracketed sentence about angels at his death is added, and \"sicut "
+            "sanctus Gregórius papa Magnus scripsit\" (as Saint Gregory the Great wrote) is "
+            "omitted."
+        ),
+    },
+    "mr:0214-bassianus-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
+        ),
+    },
+    "mr:0215-quinidius": {
+        EDITION_EN: (
+            "Translation error: \"Quininus\" where the Latin has \"Quinídii\" (Quinidius)."
+        ),
+    },
+    "mr:0217-flavianus": {
+        EDITION_EN: (
+            "Translation error: \"from the violence of the assault\" is added; the Latin says only "
+            "\"brevi póstea vitam finívit\" (he died shortly afterward)."
+        ),
+    },
+    "mr:0221-petrus-damianus": {
+        EDITION_IT: (
+            "Translation omission: the sentence \"Ipsíus autem tránsitus Favéntiæ in Flamínia "
+            "crástina die evénit\" (his death took place at Faenza on the following day) is not "
+            "rendered."
+        ),
+        EDITION_EN: (
+            "Translation error: \"on a holy day\" where the Latin has \"crástina die\" (on the "
+            "following day)."
+        ),
+    },
+    "mr:0222-maria-a-iesu": {
+        EDITION_EN: (
+            "Translation error: the clause \"terrénam peregrinatiónem iter ad pátriam fáciens pie "
+            "conclúsit\" (she piously ended her earthly pilgrimage while journeying home) is "
+            "omitted."
+        ),
+    },
+    "mr:0227-gabriel-a-virgine-perdolenti": {
+        EDITION_EN: (
+            "Translation error: \"On the island of the Abruzzi\" where the Latin has \"Insulæ in "
+            "Aprútio\" (at Isola del Gran Sasso, in the Abruzzi)."
+        ),
+    },
+    "mr:0301-albinus": {
+        EDITION_EN: (
+            "Translation error: \"Gallia Lugdunensis Lugdunum\" where the Latin has only \"in Gállia "
+            "Lugdunénsi\" (in Gallia Lugdunensis)."
+        ),
+    },
+    "mr:0301-leo-lucas": {
+        EDITION_EN: (
+            "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luca, known as Leoluca)."
+        ),
+    },
+    "mr:0302-angela-a-cruce": {
+        EDITION_IT: (
+            "Translation omission: the title \"vergine\" (Latin \"vírginis\") is missing after the "
+            "name."
+        ),
+        EDITION_EN: (
+            "Translation error: the title \"virgin\" (\"vírginis\") is omitted."
+        ),
+    },
+    "mr:0303-petrus-renatus-rogue": {
+        EDITION_EN: (
+            "Translation error: \"Daron\" where the Latin has \"Dariórigi\" (Vannes)."
+        ),
+    },
+    "mr:0309-francisca": {
+        EDITION_EN: (
+            "Translation error: \"among the offerings\" where the Latin has \"inter oblátas\" (among "
+            "the Oblates)."
+        ),
+    },
+    "mr:0311-dominicus-cam": {
+        EDITION_EN: (
+            "Translation error: \"Thieu Tri\" where the Latin has \"Tự Ðức\"."
+        ),
+    },
+    "mr:0312-aloysius-orione": {
+        EDITION_EN: (
+            "Translation error: \"Tortona\" where the Latin has \"Matútæ\" (Sanremo)."
+        ),
+    },
+    "mr:0312-iosephus-zhang-dapeng": {
+        EDITION_EN: (
+            "Translation error: \"the outcasts\" where the Latin has \"ægrótis\" (the sick)."
+        ),
+    },
+    "mr:0318-martha-le-bouteiller": {
+        EDITION_EN: (
+            "Translation error: \"Saint Savior at Vicoigne\" where the Latin has \"Sancti Salvatóris "
+            "Vicecómitis\" (Saint-Sauveur-le-Vicomte)."
+        ),
+    },
+    "mr:0320-ioanna-veron": {
+        EDITION_EN: (
+            "Translation error: \"Érines in the district of Meudon\" where the Latin has \"Erenéi in "
+            "pago Meduáno\" (Ernée, in Mayenne)."
+        ),
+    },
+    "mr:0321-ioannes": {
+        EDITION_EN: (
+            "Translation error: \"Saint-Julien of Valence\" where the Latin \"Iúliæ Valéntiæ\" is "
+            "simply Valence. Translation error: \"truly ruined\" where the Latin has \"ære dírutos\" "
+            "(ruined by debt)."
+        ),
+    },
+    "mr:0323-gualterius": {
+        EDITION_EN: (
+            "Translation error: \"Pont-Sainte-Maxence\" where the Latin has \"Pontísaræ\" (Pontoise)."
+        ),
+    },
+    "mr:0323-victorianus-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"of Aghlab origin\" where the Latin has \"Aquæregénsium\" (of Aquae "
+            "Regiae)."
+        ),
+    },
+    "mr:0324-didacus-iosephus-de-gadibus": {
+        EDITION_EN: (
+            "Translation error: \"Andújar\" where the Latin has \"Arúndæ\" (Ronda)."
+        ),
+    },
+    "mr:0325-everardus": {
+        EDITION_EN: (
+            "Translation error: \"Petershausen\" where the Latin has \"Probatópoli\" (Schaffhausen)."
+        ),
+    },
+    "mr:0330-regulus": {
+        EDITION_EN: (
+            "Translation error: \"Autun\" where the Latin has \"Augustómagi\" (Senlis)."
+        ),
+    },
+    "mr:0409-acacius": {
+        EDITION_EN: (
+            "Translation error: \"to ransom Persian captives, and the clergy from dreadful "
+            "tortures, even melted them down\" where the Latin has \"pro rediméndis Persis captívis "
+            "ac diris tortis supplíciis clerum conflávit\" (to ransom Persian captives cruelly "
+            "tortured, he gathered the clergy)."
+        ),
+    },
+    "mr:0409-aedesius": {
+        EDITION_EN: (
+            "Translation error: \"virgins consecrated to a goddess\" where the Latin has \"vírgines "
+            "Deo dicátas\" (virgins consecrated to God)."
+        ),
+    },
+    "mr:0409-liborius": {
+        EDITION_EN: (
+            "Translation error: \"Saint Liberius\" where the Latin has \"sancti Libórii\" (Saint "
+            "Liborius)."
+        ),
+    },
+    "mr:0413-margarita": {
+        EDITION_EN: (
+            "Translation error: \"born Greek\" where the Latin has \"cæca nata\" (born blind)."
+        ),
+    },
+    "mr:0415-ortarius": {
+        EDITION_EN: (
+            "Translation error: \"Saint Ouen (Ortarius)\" where the Latin has \"sancti Ortárii\" "
+            "(Saint Ortarius); Ouen is a different saint."
+        ),
+    },
+    "mr:0415-paternus": {
+        EDITION_EN: (
+            "Translation error: \"Séez\" where the Latin has \"Sescíaci\" (Scissy, in the district of "
+            "Coutances)."
+        ),
+    },
+    "mr:0417-simeon": {
+        EDITION_EN: (
+            "Translation error: \"Sapor, Second King of the Persians\" where the Latin has \"Sápore "
+            "Persárum rege Secúndo\" (Sapor II, King of the Persians)."
+        ),
+    },
+    "mr:0421-conradus-de-parzham": {
+        EDITION_EN: (
+            "Translation error: \"Hohenwart\" where the Latin has \"Hodíngis\" (Altötting)."
+        ),
+    },
+    "mr:0422-senorina": {
+        EDITION_EN: (
+            "Translation error: \"Badajoz\" where the Latin has \"Basti\" (Basto, in Portugal)."
+        ),
+    },
+    "mr:0425-marcus-evangelista": {
+        EDITION_EN: (
+            "Translation error: \"blessed Peter, his son\" where the Latin has \"ab illo fílius "
+            "nuncupátus\" (called son by him, that is, by Peter)."
+        ),
+    },
+    "mr:0501-arigius": {
+        EDITION_EN: (
+            "Translation error: \"Vence\" where the Latin has \"Vapínci\" (Gap)."
+        ),
+    },
+    "mr:0506-benedicta": {
+        EDITION_EN: (
+            "Translation error: \"whom she especially loved above all others\" where the Latin has "
+            "\"cui máxime præ céteris dilécta erat\" (by whom she was loved above all others)."
+        ),
+    },
+    "mr:0506-eduardus-jones-et-antonius-middleton": {
+        EDITION_EN: (
+            "Translation error: \"hanged on pitchforks\" where the Latin has \"furcis suspénsi sunt\" "
+            "(hanged on gallows)."
+        ),
+    },
+    "mr:0510-gulielmus": {
+        EDITION_EN: (
+            "Translation error: \"Pont-Sainte-Maxence\" where the Latin has \"Pontísaræ\" (Pontoise)."
+        ),
+    },
+    "mr:0516-peregrinus": {
+        EDITION_EN: (
+            "Translation error: \"Autun\" where the Latin has \"Autissiodorénsi\" (Auxerre)."
+        ),
+    },
+    "mr:0516-simon-stock": {
+        EDITION_IT: (
+            "Translation error: \"beato Simone Stock\" where the Latin has \"sancti Simónis Stock\" "
+            "(Saint)."
+        ),
+        EDITION_EN: (
+            "Translation error: \"blessed Simon Stock\" where the Latin has \"sancti Simónis Stock\" "
+            "(Saint)."
+        ),
+    },
+    "mr:0520-aurea": {
+        EDITION_EN: (
+            "Translation error: \"Aurore\" where the Latin has \"Aureæ\" (Aurea)."
+        ),
+    },
+    "mr:0520-protasius-chong-kuk-bo": {
+        EDITION_EN: (
+            "Translation error: \"Chong Kuk-ho\" where the Latin has \"Chong Kuk-bo\"."
+        ),
+    },
+    "mr:0528-paulus-hanh": {
+        EDITION_EN: (
+            "Translation error: \"led a gang in the marketplace\" where the Latin has \"manípulum "
+            "furum ducébat\" (led a band of thieves)."
+        ),
+    },
+    "mr:0530-hubertus": {
+        EDITION_EN: (
+            "Translation error: \"Saint Robert\" where the Latin has \"sancti Hubérti\" (Saint "
+            "Hubert)."
+        ),
+    },
+    "mr:0531-felix-amoroso": {
+        EDITION_EN: (
+            "Translation error: \"Erice\" where the Latin has \"Hérbitæ\" (Nicosia)."
+        ),
+    },
+    "mr:0604-philippus-smaldone": {
+        EDITION_EN: (
+            "Translation error: \"deaf and mute\" where the Latin has \"surdórum ac cæcórum\" (the "
+            "deaf and the blind)."
+        ),
+    },
+    "mr:0606-innocentius-guz": {
+        EDITION_EN: (
+            "Translation error: \"followers of contrary opinions and religions ... was detained by "
+            "the guards\" where the Latin has \"opiniónum hóminum et religiónis adversárum\" "
+            "(ideologies hostile to man and religion) and \"a vigílibus ... trucidátus est\" "
+            "(murdered by the guards)."
+        ),
+    },
+    "mr:0612-basilides": {
+        EDITION_EN: (
+            "Translation error: \"Loreto\" where the Latin has \"Lórii\" (Lorium, on the Via "
+            "Aurelia)."
+        ),
+    },
+    "mr:0619-remigius-isore-et-modestus-andlauer": {
+        EDITION_EN: (
+            "Translation error: \"Science City\" where the Latin has \"civitátem Scienscienénsem\" "
+            "(the city of Xianxian)."
+        ),
+    },
+    "mr:0623-walherus": {
+        EDITION_EN: (
+            "Translation error: \"while still bearing the tonsure of Remigius\" where the Latin has "
+            "\"remígii tonsa mactátus\" (killed with an oar)."
+        ),
+    },
+    "mr:0624-ioannes-baptista": {
+        EDITION_EN: (
+            "Translation error: \"was filled with the Holy Spirit\" (of John) where the Latin has "
+            "\"matris, Spíritu Sancto replétæ\" (his mother, filled with the Holy Spirit)."
+        ),
+    },
+    "mr:0625-salomon": {
+        EDITION_EN: (
+            "Translation error: \"attacked\" where the Latin has \"obcæcátus\" (blinded)."
+        ),
+    },
+    "mr:0626-salvius": {
+        EDITION_EN: (
+            "Translation error: \"Valence\" where the Latin has \"Valentiánam\" (Valenciennes)."
+        ),
+    },
+    "mr:0629-petrus-et-paulus-apostoli": {
+        EDITION_EN: (
+            "Translation error: \"confessed [Christ] on the Via Ostiensis\" where the Latin has "
+            "\"via Ostiénsi confóssus\" (pierced on the Ostian Way)."
+        ),
+    },
+    "mr:0702-lidanus": {
+        EDITION_EN: (
+            "Translation error: \"Settimo\" where the Latin has \"Sétiæ\" (Sezze)."
+        ),
+    },
+    "mr:0703-marcus-et-mocianus": {
+        EDITION_EN: (
+            "Translation error: \"Mysia\" where the Latin has \"Mœsia\" (Moesia, on the Danube)."
+        ),
+    },
+    "mr:0705-georgius-nichols-et-richardus-yaxley": {
+        EDITION_EN: (
+            "Translation error: \"condemned to death by beheading\" where the Latin has \"cápite "
+            "damnáti\" (condemned to death); they were hanged."
+        ),
+    },
+    "mr:0706-maria-goretti": {
+        EDITION_EN: (
+            "Translation error: \"confessed [attested to her faith] by [through the] blows of a "
+            "dagger\" where the Latin has \"pugiónis íctibus confóssa\" (stabbed with blows of a "
+            "dagger)."
+        ),
+    },
+    "mr:0711-placidus-et-sigisbertus": {
+        EDITION_EN: (
+            "Translation error: \"the former ... founded\" where the Latin has \"alter\" (the other, "
+            "Sigisbert) as founder and \"prior\" (Placidus) as the martyr."
+        ),
+    },
+    "mr:0712-ioannes-gualbertus": {
+        EDITION_EN: (
+            "Translation error: \"the Valley of the Umbra\" where the Latin has \"Valle Umbrósa\" "
+            "(Vallombrosa)."
+        ),
+    },
+    "mr:0715-bernardus": {
+        EDITION_EN: (
+            "Translation error: \"Mont Cenis\" where the Latin has \"Monte Calério\" (Moncalieri)."
+        ),
+    },
+    "mr:0716-amata-a-iesu-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Anne-Marie of Jesus\" where the Latin has \"Amátæ a Iesu\" (Aimée "
+            "of Jesus)."
+        ),
+    },
+    "mr:0717-fredegandus": {
+        EDITION_EN: (
+            "Translation error: \"Tournai\" where the Latin has \"Turníni\" (Deurne), and \"southern "
+            "Brabant\" where it has \"Brabántia Austrásiæ\"."
+        ),
+    },
+    "mr:0717-paulus-gojdich": {
+        EDITION_EN: (
+            "Translation error: \"Prešov\" where the Latin has \"Leopoldópoli\" (Leopoldov)."
+        ),
+    },
+    "mr:0718-symphorosa-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"her seven sons\" where the Latin has \"septem sociórum\" (seven "
+            "companions)."
+        ),
+    },
+    "mr:0720-aurelius": {
+        EDITION_EN: (
+            "Translation error: \"moved the episcopal seat from the place of the idol\" where the "
+            "Latin \"simulácri deæ Cæléstis loco collocávit\" means he set it in the place of the "
+            "idol."
+        ),
+    },
+    "mr:0720-leo-ignatius-mangin-et-paulus-denn": {
+        EDITION_EN: (
+            "Translation error: \"Yingxian\" sect where the Latin has \"sectæ «Yihetuan»\" (the "
+            "Boxers)."
+        ),
+    },
+    "mr:0720-magdalena-yi-yong-hui-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"virgins\" where the Latin has \"vírginis\" (singular, of Mary Wŏn "
+            "Kwi-im only)."
+        ),
+    },
+    "mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu": {
+        EDITION_EN: (
+            "Translation error: the clause \"et paulo post plumbis in via transfóssæ\" (and shortly "
+            "afterwards shot in the street) is omitted."
+        ),
+    },
+    "mr:0720-vulmarus": {
+        EDITION_EN: (
+            "Translation error: \"Bologna\" where the Latin \"in pago Bononiénsi Gálliæ\" is the "
+            "district of Boulogne."
+        ),
+    },
+    "mr:0721-gabriel-pergaud": {
+        EDITION_EN: (
+            "Translation error: \"Lugduni\" where the Latin has \"beáti\" (blessed)."
+        ),
+    },
+    "mr:0723-severus": {
+        EDITION_EN: (
+            "Translation error: \"Bizerte in Tunisia\" where the Latin has \"Bízyæ in Thrácia\" (Vize "
+            "in Thrace)."
+        ),
+    },
+    "mr:0727-desideratus": {
+        EDITION_EN: (
+            "Translation error: \"Salins-les-Bains\" where the Latin \"Ledóne Salinário\" is "
+            "Lons-le-Saunier."
+        ),
+    },
+    "mr:0801-friardus-et-secundellus": {
+        EDITION_EN: (
+            "Translation error: \"Friard and Secundellus, deacons\" where the Latin has \"Friárdi et "
+            "Secundélli diáconi\" (only Secundellus was a deacon)."
+        ),
+    },
+    "mr:0804-eleutherius": {
+        EDITION_EN: (
+            "Translation error: \"Tarsus\" where the Latin has \"Társiæ\" (Tarsia, in Bithynia; "
+            "Tarsus is in Cilicia)."
+        ),
+    },
+    "mr:0804-fridericus-janssoone": {
+        EDITION_EN: (
+            "Translation error: \"Mariannhill\" where the Latin has \"Marianópoli\" (Montreal)."
+        ),
+    },
+    "mr:0804-ia": {
+        EDITION_EN: (
+            "Translation error: \"Saint Ira\" where the Latin has \"sanctæ Iæ\" (Saint Ia)."
+        ),
+    },
+    "mr:0805-cassianus": {
+        EDITION_EN: (
+            "Translation error: \"At Lyon\" where the Latin has \"Augustodúni\" (Autun)."
+        ),
+    },
+    "mr:0808-secundus-et-socii": {
+        EDITION_EN: (
+            "Translation error: the place \"Albáni\" (at Albano) is omitted."
+        ),
+    },
+    "mr:0810-archangelus-de-calataphino": {
+        EDITION_EN: (
+            "Translation error: \"of Calataphim near Piacenza\" where the Latin has \"de Calataphíno "
+            "Piacentini\" (of Calatafimi, surnamed Piacentini)."
+        ),
+    },
+    "mr:0813-iacobus-gapp": {
+        EDITION_EN: (
+            "Translation error: \"Gibraltar\" where the Latin has \"in Gálliam\" (France)."
+        ),
+    },
+    "mr:0816-stephanus": {
+        EDITION_EN: (
+            "Translation error: \"being Alba Regalis just and peaceful ... at in Hungary\" where "
+            "the Latin has \"iustus et pacíficus ... donec Albæ Regáli in Hungária\" (just and "
+            "peaceful ... until, at Székesfehérvár in Hungary); and \"churches\" where the Latin "
+            "has \"ópibus\" (wealth)."
+        ),
+    },
+    "mr:0817-iero": {
+        EDITION_EN: (
+            "Translation error: \"Jerome\" where the Latin has \"Ierónis\" (Iero, Jeron), a different "
+            "name."
+        ),
+    },
+    "mr:0818-martyres-massae-candidae": {
+        EDITION_EN: (
+            "Translation error: \"drawn more frequently like fish into the net\" where the Latin "
+            "has \"crebrióres píscibus\" (more numerous than the fish drawn into the net)."
+        ),
+    },
+    "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Nativity of Our Lord Torrente Paraira\" where the Latin has "
+            "\"Nativitáte Dóminæ Nostræ Torrentallé Paraire\" (Our Lady)."
+        ),
+    },
+    "mr:0820-ladislaus-maczkowski": {
+        EDITION_EN: (
+            "Translation error: \"defended the dignity of human and Christian faith\" where the "
+            "Latin has \"fidem coram persecutóribus humánæ et christiánæ dignitátis\" (the faith, "
+            "before the persecutors of human and Christian dignity)."
+        ),
+    },
+    "mr:0823-zachaeus": {
+        EDITION_EN: (
+            "Translation error: \"Zacharias\" where the Latin has \"Zachǽi\" (Zacchaeus)."
+        ),
+    },
+    "mr:0826-victor": {
+        EDITION_EN: (
+            "Translation error: \"sentenced to death by beheading\" where the Latin has \"cápite "
+            "damnátus\" (condemned to death)."
+        ),
+    },
+    "mr:0827-guarinus": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" where the Latin has \"Sabaudiae\" (in Savoy)."
+        ),
+        EDITION_EN: (
+            "Translation error: \"Hautecombe\" where the Latin has \"monastério Alpénsi\" (Aulps)."
+        ),
+    },
+    "mr:0827-poemen": {
+        EDITION_EN: (
+            "Translation error: \"Phermeus\" where the Latin has \"Pœmenis\" (Poemen)."
+        ),
+    },
+    "mr:0830-pammachius": {
+        EDITION_EN: (
+            "Translation error: \"Titulus Crescentianus\" where the Latin has \"títulus "
+            "Cælimontánus\" (the title on the Caelian Hill)."
+        ),
+    },
+    "mr:0830-sexaginta-martyres-coloniae-sufetanae": {
+        EDITION_EN: (
+            "Translation error: \"were burned\" where the Latin has \"cæsi sunt\" (were slain)."
+        ),
+    },
+    "mr:0902-albertus-et-vitus": {
+        EDITION_EN: (
+            "Translation error: \"Ponte\" where the Latin has \"Pontídæ\" (Pontida). Translation "
+            "error: \"forsook the military service of Christ\" where the Latin has \"milítiam "
+            "Christi armis honoribúsque sǽculi præpósuit\" (preferred the service of Christ to the "
+            "arms and honours of the world)."
+        ),
+    },
+    "mr:0902-antoninus": {
+        EDITION_EN: (
+            "Translation error: \"the twentieth year of the reign\" where the Latin has \"vicésimo "
+            "ætátis anno\" (in the twentieth year of his age)."
+        ),
+    },
+    "mr:0902-brochardus": {
+        EDITION_EN: (
+            "Translation error: \"spring of Elisha\" where the Latin has \"fontem Elíæ\" (the spring "
+            "of Elijah)."
+        ),
+    },
+    "mr:0902-theodota": {
+        EDITION_EN: (
+            "Translation error: \"Nicomedia\" where the Latin has \"Nicǽæ\" (Nicaea)."
+        ),
+    },
+    "mr:0903-andreas-abel-alricy-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"after having confessed the faith on the previous day\" where the "
+            "Latin has \"post pridiánam cædem\" (after the previous day's massacre)."
+        ),
+    },
+    "mr:0903-guala": {
+        EDITION_EN: (
+            "Translation error: \"Gualterus\" where the Latin has \"Guálæ\" (Guala)."
+        ),
+    },
+    "mr:0904-catharina-mattei": {
+        EDITION_EN: (
+            "Translation error: \"Carmagnola\" where the Latin has \"Caramániæ\" (Caramagna)."
+        ),
+    },
+    "mr:0904-iosephus-paschalis-carda-saporta": {
+        EDITION_EN: (
+            "Translation error: \"near Castile\" where the Latin has \"apud Castáliam\" (near "
+            "Castellón)."
+        ),
+    },
+    "mr:0907-eugenia-picco": {
+        EDITION_EN: (
+            "Translation error: the eulogy is broken off and an editorial comment disputing it is "
+            "added after \"wholly devoted to the will of God\"; the Latin simply states that she "
+            "\"dignitátem mulíerum promóvit\" (promoted the dignity of women)."
+        ),
+    },
+    "mr:0908-antonius-a-sancto-bonaventura-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"seven of whom were martyrs\" where the Latin has \"vigínti "
+            "sociórum, mártyrum, quorum céteri láici\" (twenty companions, martyrs, the rest of "
+            "them laymen)."
+        ),
+    },
+    "mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia": {
+        EDITION_EN: (
+            "Translation error: \"Burjasot\" where the Latin has \"Buñol\"."
+        ),
+    },
+    "mr:0909-maria-euthymia-uffing": {
+        EDITION_EN: (
+            "Translation error: \"At a monastery\" where the Latin has \"Monastérii\" (at Münster)."
+        ),
+    },
+    "mr:0910-iacobus-gagnot": {
+        EDITION_EN: (
+            "Translation error: \"On the rafts of the pontoon\" where the Latin has \"In æquóribus "
+            "ponti\" (on the waters of the sea)."
+        ),
+    },
+    "mr:0913-aemilianus": {
+        EDITION_EN: (
+            "Translation error: \"Yzeures-sur-Creuse (ancient Juliacum)\" where the Latin has "
+            "\"Iúliæ Valéntiæ\" (Valence)."
+        ),
+    },
+    "mr:0913-dedicatio-basilicarum-hierosolymis": {
+        EDITION_EN: (
+            "Translation error: \"ordered to be rebuilt\" where the Latin has \"ædificári vóluit\" "
+            "(built)."
+        ),
+    },
+    "mr:0913-litorius": {
+        EDITION_EN: (
+            "Translation error: \"the first to rebuild a church\" where the Latin has \"ecclésiam "
+            "ædificávit\" (built)."
+        ),
+    },
+    "mr:0914-notburga": {
+        EDITION_EN: (
+            "Translation error: \"blessed Notburga\" where the Latin has \"sanctæ Notbúrgæ\" (Saint "
+            "Notburga)."
+        ),
+    },
+    "mr:0920-iosephus-maria-de-yermo-y-parres": {
+        EDITION_IT: (
+            "Translation error: \"beato\" where the Latin has \"sancti\" (Saint); he was canonized in "
+            "2000."
+        ),
+        EDITION_EN: (
+            "Translation error: \"blessed\" where the Latin has \"sancti\" (Saint)."
+        ),
+    },
+    "mr:0920-thomas-johnson": {
+        EDITION_EN: (
+            "Translation error: \"with some of his fellow brothers\" where the Latin has \"nonus ex "
+            "número confrátrum\" (the ninth of his confreres to die)."
+        ),
+    },
+    "mr:0921-cadocus": {
+        EDITION_EN: (
+            "Translation error: \"Llantwit Major\" where the Latin has \"Lancarvanénsi\" "
+            "(Llancarfan)."
+        ),
+    },
+    "mr:0923-maria-aemilia-tavernier": {
+        EDITION_EN: (
+            "Translation error: \"Marieville\" where the Latin has \"Marianópoli\" (Montreal)."
+        ),
+    },
+    "mr:0929-adelricus": {
+        EDITION_EN: (
+            "Translation error: \"Reichenau\" where the Latin has \"ínsula Augia lacus Turicénsis\" "
+            "(Ufnau in Lake Zurich)."
+        ),
+    },
+    "mr:1001-piato": {
+        EDITION_EN: (
+            "Translation error: \"Saint-Piat\" where the Latin has \"Sacilínii\" (Seclin)."
+        ),
+    },
+    "mr:1002-leodegarius": {
+        EDITION_EN: (
+            "Translation error: \"mutilated\" where the Latin has \"excæcátum\" (blinded)."
+        ),
+    },
+    "mr:1004-franciscus-xaverius-seelos": {
+        EDITION_EN: (
+            "Translation error: \"northern United States\" where the Latin has the United States of "
+            "North America (Louisiana is in the south)."
+        ),
+    },
+    "mr:1005-apollinaris": {
+        EDITION_EN: (
+            "Translation error: \"Saint-Julien-en-Vienne\" where the Latin has \"Iúliæ Valéntiæ\" "
+            "(Valence)."
+        ),
+    },
+    "mr:1005-petrus-de-foro-cornelii": {
+        EDITION_EN: (
+            "Translation error: \"Foraz Cornelii\" where the Latin has \"de Foro Cornélii\" (of "
+            "Imola)."
+        ),
+    },
+    "mr:1005-sanctus": {
+        EDITION_EN: (
+            "Translation error: \"Corneto\" where the Latin has \"Coræ\" (Cori)."
+        ),
+    },
+    "mr:1009-guntherus": {
+        EDITION_EN: (
+            "Translation error: \"Braunau\" where the Latin has \"Brennóviæ\" (Břevnov)."
+        ),
+    },
+    "mr:1014-fortunatus": {
+        EDITION_EN: (
+            "Translation error: \"prisoners\" where the Latin has \"ægrótis\" (the sick)."
+        ),
+    },
+    "mr:1017-iacobus-burin": {
+        EDITION_EN: (
+            "Translation error: \"La Vallée de Guyon\" where the Latin has \"Vallis Guidónis\" "
+            "(Laval)."
+        ),
+    },
+    "mr:1017-maria-natalia-a-sancto-ludovico-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Valence\" where the Latin has \"Valentiánæ\" (Valenciennes)."
+        ),
+    },
+    "mr:1022-abercius": {
+        EDITION_EN: (
+            "Translation error: \"led the faith ... and to have nourished it\" where the Latin has "
+            "\"fidem ... conduxísse et ... enutrivísse\" (that faith led him and nourished him)."
+        ),
+    },
+    "mr:1026-witta": {
+        EDITION_EN: (
+            "Translation error: \"Wigbert\" where the Latin has \"Wittæ\" (Witta)."
+        ),
+    },
+    "mr:1027-bartholomaeus-de-bregantia": {
+        EDITION_EN: (
+            "Translation error: \"Bragança\" where the Latin has \"de Bregántia\" (Breganze, near "
+            "Vicenza)."
+        ),
+    },
+    "mr:1028-genesius": {
+        EDITION_EN: (
+            "Translation error: \"twice clothed in white\" where the Latin has \"albis indútus\" "
+            "(clothed in white)."
+        ),
+    },
+    "mr:1028-ioannes-dat": {
+        EDITION_EN: (
+            "Translation error: \"John Baptist\" where the Latin has \"Ioánnis Ðạt\" (John Đạt)."
+        ),
+    },
+    "mr:1029-caietanus-errico": {
+        EDITION_EN: (
+            "Translation error: the place \"Secundiliáni\" (Secondigliano) is omitted; only \"Near "
+            "Naples\" is given."
+        ),
+    },
+    "mr:1101-rainerius-aretinus": {
+        EDITION_EN: (
+            "Translation error: \"Città della Pieve\" where the Latin has \"Burgi Sancti Sepúlcri\" "
+            "(Sansepolcro)."
+        ),
+    },
+    "mr:1105-domninus": {
+        EDITION_EN: (
+            "Translation error: \"banished to Phoenicia\" where the Latin has \"ad metálla "
+            "Phænénsia\" (to the mines of Phaeno)."
+        ),
+    },
+    "mr:1106-paulus": {
+        EDITION_EN: (
+            "Translation error: \"and martyr\" is added; the Latin has only \"epíscopi "
+            "Constantinopolitáni\"."
+        ),
+    },
+    "mr:1108-godefridus": {
+        EDITION_IT: (
+            "Translation error: \"per un quinquennio\" (for five years) where the Latin has \"a "
+            "quinquénnio\" (from the age of five)."
+        ),
+        EDITION_EN: (
+            "Translation error: \"from the age of fifteen\" where the Latin has \"a quinquénnio\" "
+            "(from the age of five)."
+        ),
+    },
+    "mr:1108-maria-crucifixa-satellico": {
+        EDITION_EN: (
+            "Translation error: \"Montegranaro\" where the Latin has \"Monte Novo\" (Montenovo, today "
+            "Ostra Vetere)."
+        ),
+    },
+    "mr:1112-benedictus-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Vistula\" where the Latin has \"Vartam flúvium\" (the Warta)."
+        ),
+    },
+    "mr:1113-antoninus-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"Galerius Maximian\" where the Latin has \"Galério Maximíno\" "
+            "(Galerius Maximinus)."
+        ),
+    },
+    "mr:1115-maria-a-passione": {
+        EDITION_EN: (
+            "Translation error: \"Savona\" where the Latin has \"Matútæ\" (Sanremo)."
+        ),
+    },
+    "mr:1117-lupus-sebastianus-hunot": {
+        EDITION_EN: (
+            "Translation error: \"on the reefs of the bridge\" where the Latin has \"in æquóribus "
+            "ponti ad litus\" (in the waters of the sea off the shore)."
+        ),
+    },
+    "mr:1118-grimoaldus-a-purificatione": {
+        EDITION_EN: (
+            "Translation error: \"Ferentino\" where the Latin has \"Fabratériæ\" (Ceccano)."
+        ),
+    },
+    "mr:1119-elisaeus-garcia-et-alexander-planas-sauri": {
+        EDITION_EN: (
+            "Translation error: \"Garray\" where the Latin has \"Garraf\"."
+        ),
+    },
+    "mr:1121-maurus-caesenae": {
+        EDITION_EN: (
+            "Translation error: \"Cresson in Umbria\" where the Latin has \"Cæsénæ in Flamínia\" "
+            "(Cesena in Flaminia)."
+        ),
+    },
+    "mr:1126-pontius-falciniacensis": {
+        EDITION_IT: (
+            "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in "
+            "Savoy)."
+        ),
+        EDITION_EN: (
+            "Translation error: \"Sées\" where the Latin has \"Sisiénsi\" (Sixt)."
+        ),
+    },
+    "mr:1127-eusicius": {
+        EDITION_EN: (
+            "Translation error: \"at the foot of Mount Cari\" where the Latin has \"ad Cari "
+            "crepídinem\" (on the bank of the Cher)."
+        ),
+    },
+    "mr:1127-gulstanus": {
+        EDITION_EN: (
+            "Translation error: \"Belle-Île\" where the Latin has \"in loco Bello Visu\" "
+            "(Beauvoir-sur-Mer)."
+        ),
+    },
+    "mr:1201-florentia": {
+        EDITION_EN: (
+            "Translation error: \"Florentina\" where the Latin has \"Floréntiæ\" (Florentia)."
+        ),
+    },
+    "mr:1201-liduina-meneguzzi": {
+        EDITION_EN: (
+            "Translation error: \"Hélène Angela\" where the Latin has \"Helísæ Angelæ\" (Elisa "
+            "Angela)."
+        ),
+    },
+    "mr:1207-fara": {
+        EDITION_EN: (
+            "Translation error: \"Évry\" where the Latin has \"Eboríaci\" (Faremoutiers)."
+        ),
+    },
+    "mr:1209-iosephus-ferrer-esteve": {
+        EDITION_EN: (
+            "Translation error: \"Poor Schools\" where the Latin has \"Scholárum Piárum\" (Pious "
+            "Schools)."
+        ),
+    },
+    "mr:1209-liborius-wagner": {
+        EDITION_EN: (
+            "Translation error: \"Liberius\" where the Latin has \"Libórii\" (Liborius)."
+        ),
+    },
+    "mr:1212-epimachus-et-alexander": {
+        EDITION_EN: (
+            "Translation error: \"without hearing them\" and \"their constancy also be conquered\" "
+            "where the Latin means the judge feared that, even after unheard-of tortures, he "
+            "would be conquered by their constancy."
+        ),
+    },
+    "mr:1216-clemens-marchisio": {
+        EDITION_EN: (
+            "Translation error: \"Riva presso Chieri\" where the Latin has \"Ripæ Albæ\" (Rivalba)."
+        ),
+    },
+    "mr:1217-sturmius": {
+        EDITION_EN: (
+            "Translation error: \"rebuilt\" where the Latin has \"ædificándum curávit\" (had it "
+            "built)."
+        ),
+    },
+    "mr:1226-zeno": {
+        EDITION_EN: (
+            "Translation error: \"rebuilt a basilica with his kinsmen\" where the Latin says he "
+            "built a basilica for his cousins the martyrs."
+        ),
+    },
+    "mr:1228-franciscus-de-sales": {
+        EDITION_EN: (
+            "Translation error: \"the day of his death at Annecy\" where the Latin has \"die "
+            "depositiónis\" (the day of his burial)."
+        ),
+    },
+    "mr:1229-ebrulfus": {
+        EDITION_EN: (
+            "Translation error: \"Ouche\" where the Latin has \"Oximi\" (Exmes)."
+        ),
+    },
+    "mr:1229-libosus": {
+        EDITION_EN: (
+            "Translation error: \"Liberius\" where the Latin has \"Libósi\" (Libosus)."
+        ),
+    },
+    "mr:1230-geremarus": {
+        EDITION_EN: (
+            "Translation error: \"Flavigny\" where the Latin has \"Fláviæ\" (Fly)."
+        ),
+    },
+    "mr:1231-barbatianus": {
+        EDITION_EN: (
+            "Translation error: \"Barbatus\" where the Latin has \"Barbatiáni\" (Barbatian)."
+        ),
+    },
     "mr:0101-valentinus-paquay": {
         EDITION_IT: (
             "Translation error: \"vicino a Tongeren\" where the Latin has \"prope Traiéctum Mosæ\" "
@@ -930,13 +2067,6 @@ EDITION_NOTES = {
             "has \"duce\" (duke); Charles Martel was never king."
         ),
     },
-    "mr:0221-petrus-damianus": {
-        EDITION_IT: (
-            "Translation omission: the sentence \"Ipsíus autem tránsitus Favéntiæ in Flamínia "
-            "crástina die evénit\" (his death took place at Faenza on the following day) is not "
-            "rendered."
-        ),
-    },
     "mr:0223-raphaela-de-villalonga-ybarra": {
         EDITION_IT: (
             "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia\" "
@@ -947,12 +2077,6 @@ EDITION_NOTES = {
         EDITION_IT: (
             "Translation error: \"Agostino\" (Augustine) for the Latin \"Augústi\" (Auguste, "
             "Augusto)."
-        ),
-    },
-    "mr:0302-angela-a-cruce": {
-        EDITION_IT: (
-            "Translation omission: the title \"vergine\" (Latin \"vírginis\") is missing after the "
-            "name."
         ),
     },
     "mr:0302-ceadda": {
@@ -1041,12 +2165,6 @@ EDITION_NOTES = {
         EDITION_IT: (
             "Translation error: \"Puy-en-Vélay\" where the Latin has \"Pódii in pago Pictaviénsi\" "
             "(La Puye, near Poitiers)."
-        ),
-    },
-    "mr:0516-simon-stock": {
-        EDITION_IT: (
-            "Translation error: \"beato Simone Stock\" where the Latin has \"sancti Simónis Stock\" "
-            "(Saint)."
         ),
     },
     "mr:0522-lupus": {
@@ -1191,11 +2309,6 @@ EDITION_NOTES = {
             "Suevia\" (Swabia); Petershausen at Constance is in Germany."
         ),
     },
-    "mr:0827-guarinus": {
-        EDITION_IT: (
-            "Translation error: \"in Borgogna\" where the Latin has \"Sabaudiae\" (in Savoy)."
-        ),
-    },
     "mr:0828-pelagius": {
         'martyrologium_romanum_1914_en_unofficial': (
             "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
@@ -1258,12 +2371,6 @@ EDITION_NOTES = {
         EDITION_IT: (
             "Translation error: \"Beauvale\" where the Latin has \"Bellævallénsi\" (Bellevaux, near "
             "Besançon)."
-        ),
-    },
-    "mr:0920-iosephus-maria-de-yermo-y-parres": {
-        EDITION_IT: (
-            "Translation error: \"beato\" where the Latin has \"sancti\" (Saint); he was canonized in "
-            "2000."
         ),
     },
     "mr:0928-venceslaus": {
@@ -1331,22 +2438,10 @@ EDITION_NOTES = {
             "monastery of Chelles, near Meaux)."
         ),
     },
-    "mr:1108-godefridus": {
-        EDITION_IT: (
-            "Translation error: \"per un quinquennio\" (for five years) where the Latin has \"a "
-            "quinquénnio\" (from the age of five)."
-        ),
-    },
     "mr:1114-siardus": {
         EDITION_IT: (
             "Translation error: \"Malgarten\" where the Latin has \"Horto Sanctæ Maríæ\" "
             "(Mariëngaarde, in Friesland)."
-        ),
-    },
-    "mr:1126-pontius-falciniacensis": {
-        EDITION_IT: (
-            "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in "
-            "Savoy)."
         ),
     },
     "mr:1202-chromatius": {

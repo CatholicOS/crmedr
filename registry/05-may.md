@@ -14,7 +14,7 @@
 | 1 | 8 | `mr:0501-sigismundus` |  | CH | depositio |  |  |
 | 1 | 9 | `mr:0501-marculphus` | * | FR | dies_natalis |  |  |
 | 1 | 10 | `mr:0501-asaphus` |  | GB | dies_natalis |  |  |
-| 1 | 11 | `mr:0501-arigius` | * | FR | dies_natalis |  |  |
+| 1 | 11 | `mr:0501-arigius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Vence" where the Latin has "Vapínci" (Gap). |
 | 1 | 12 | `mr:0501-theodardus` | * | FR | dies_natalis |  |  |
 | 1 | 13 | `mr:0501-aldebrandus` | * | IT | dies_natalis |  |  |
 | 1 | 14 | `mr:0501-maphalda` | * | PT | dies_natalis |  |  |
@@ -78,11 +78,11 @@
 | 6 | 1 | `mr:0506-lucius-cyrenaeus` |  | LY | commemoratio |  |  |
 | 6 | 2 | `mr:0506-marianus-et-iacobus` |  | DZ | dies_natalis | same as `mr:0430-marianus-et-iacobus` |  |
 | 6 | 3 | `mr:0506-venerius` |  | IT | dies_natalis | same as `mr:0504-venerius` |  |
-| 6 | 4 | `mr:0506-benedicta` |  | IT | dies_natalis |  |  |
+| 6 | 4 | `mr:0506-benedicta` |  | IT | dies_natalis |  | 2004 English: Translation error: "whom she especially loved above all others" where the Latin has "cui máxime præ céteris dilécta erat" (by whom she was loved above all others). |
 | 6 | 5 | `mr:0506-eadbertus` |  | GB | dies_natalis |  |  |
 | 6 | 6 | `mr:0506-petrus-nolasco` |  | ES | dies_natalis | same as `mr:1225-petrus-nolascus` |  |
 | 6 | 7 | `mr:0506-bartholomaeus-pucci-franceschi` | * | IT | dies_natalis |  |  |
-| 6 | 8 | `mr:0506-eduardus-jones-et-antonius-middleton` | * | GB | dies_natalis |  |  |
+| 6 | 8 | `mr:0506-eduardus-jones-et-antonius-middleton` | * | GB | dies_natalis |  | 2004 English: Translation error: "hanged on pitchforks" where the Latin has "furcis suspénsi sunt" (hanged on gallows). |
 | 6 | 9 | `mr:0506-franciscus-de-montmorency-laval` | * | CA | dies_natalis |  |  |
 | 6 | 10 | `mr:0506-maria-catharina-troianus` | * | EG | dies_natalis |  |  |
 | 6 | 11 | `mr:0506-anna-rosa-gattorno` | * | IT | dies_natalis |  |  |
@@ -134,7 +134,7 @@
 | 10 | 6 | `mr:0510-comgallus` | * | IE | dies_natalis |  |  |
 | 10 | 7 | `mr:0510-cataldus` |  | IT | dies_natalis |  |  |
 | 10 | 8 | `mr:0510-solongia` | * | FR | dies_natalis |  |  |
-| 10 | 9 | `mr:0510-gulielmus` | * | FR | dies_natalis |  |  |
+| 10 | 9 | `mr:0510-gulielmus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Pont-Sainte-Maxence" where the Latin has "Pontísaræ" (Pontoise). |
 | 10 | 10 | `mr:0510-beatrix-estensis` | * | IT | dies_natalis |  |  |
 | 10 | 11 | `mr:0510-nicolaus-albergati` | * | IT | dies_natalis | same as `mr:0509-nicolaus-albergati` |  |
 | 10 | 12 | `mr:0510-ioannes-de-abula` |  | ES | dies_natalis |  |  |
@@ -198,7 +198,7 @@
 | 16 | 1 | `mr:0516-felix-et-gennadius` |  | TN | commemoratio |  |  |
 | 16 | 2 | `mr:0516-florentius-et-diocletianus` |  | IT | dies_natalis |  |  |
 | 16 | 3 | `mr:0516-abda-et-ebediesus` |  | IR | dies_natalis |  |  |
-| 16 | 4 | `mr:0516-peregrinus` |  | FR | dies_natalis |  |  |
+| 16 | 4 | `mr:0516-peregrinus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Autun" where the Latin has "Autissiodorénsi" (Auxerre). |
 | 16 | 5 | `mr:0516-possidius` |  | DZ | commemoratio |  |  |
 | 16 | 6 | `mr:0516-fidolus` |  | FR | dies_natalis |  |  |
 | 16 | 7 | `mr:0516-brendanus` |  | IE | dies_natalis |  |  |
@@ -208,7 +208,7 @@
 | 16 | 11 | `mr:0516-germerius` | * | FR | dies_natalis |  |  |
 | 16 | 12 | `mr:0516-ubaldus` |  | IT | dies_natalis |  |  |
 | 16 | 13 | `mr:0516-adamus` | * | IT | dies_natalis |  |  |
-| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). |
+| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). 2004 English: Translation error: "blessed Simon Stock" where the Latin has "sancti Simónis Stock" (Saint). |
 | 16 | 15 | `mr:0516-andreas-bobola` |  | PL | dies_natalis |  |  |
 | 16 | 16 | `mr:0516-michael-wozniak` | * | DE | dies_natalis |  |  |
 | 16 | 17 | `mr:0516-vitalis-vladimirus-bajrak` | * | UA | dies_natalis |  |  |
@@ -252,7 +252,7 @@
 | 19 | 16 | `mr:0519-iosephus-czempiel` | * | DE | dies_natalis |  |  |
 | 20 | (1) | `mr:0520-bernardinus-senensis` |  | IT | dies_natalis |  |  |
 | 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR | commemoratio | same as `mr:0803-lydia` |  |
-| 20 | 3 | `mr:0520-aurea` |  | IT | dies_natalis |  |  |
+| 20 | 3 | `mr:0520-aurea` |  | IT | dies_natalis |  | 2004 English: Translation error: "Aurore" where the Latin has "Aureæ" (Aurea). |
 | 20 | 4 | `mr:0520-baudelius` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0520-thalalaeus` |  | TR | dies_natalis |  |  |
 | 20 | 6 | `mr:0520-luciferus` | * | IT | dies_natalis |  |  |
@@ -262,7 +262,7 @@
 | 20 | 10 | `mr:0520-theodorus` |  | IT | dies_natalis |  |  |
 | 20 | 11 | `mr:0520-guido-de-gherardesca` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0520-columba` | * | IT | dies_natalis |  |  |
-| 20 | 13 | `mr:0520-protasius-chong-kuk-bo` |  | KR | dies_natalis |  |  |
+| 20 | 13 | `mr:0520-protasius-chong-kuk-bo` |  | KR | dies_natalis |  | 2004 English: Translation error: "Chong Kuk-ho" where the Latin has "Chong Kuk-bo". |
 | 20 | 14 | `mr:0520-archangelus-tadini` | * | IT | dies_natalis |  |  |
 | 20 | 15 | `mr:0520-aloysius-talamoni` | * | IT | dies_natalis |  |  |
 | 21 | (1) | `mr:0521-christophorus-magallanes-et-socii` |  | MX | dies_natalis |  |  |
@@ -372,7 +372,7 @@
 | 28 | 9 | `mr:0528-margarita-pole` | * | GB | dies_natalis |  |  |
 | 28 | 10 | `mr:0528-maria-bartholomaea-bagnesi` | * | IT | dies_natalis |  |  |
 | 28 | 11 | `mr:0528-thomas-ford-et-socii` | * | GB | dies_natalis |  |  |
-| 28 | 12 | `mr:0528-paulus-hanh` |  | VN | dies_natalis |  |  |
+| 28 | 12 | `mr:0528-paulus-hanh` |  | VN | dies_natalis |  | 2004 English: Translation error: "led a gang in the marketplace" where the Latin has "manípulum furum ducébat" (led a band of thieves). |
 | 28 | 13 | `mr:0528-ladislaus-demski` | * | DE | dies_natalis |  |  |
 | 28 | 14 | `mr:0528-antonius-iulianus-nowowiejski` | * | PL | dies_natalis |  |  |
 | 29 | 1 | `mr:0529-hesychius` |  | TR | dies_natalis | same as `mr:1118-hesychius` |  |
@@ -391,7 +391,7 @@
 | 30 | 2 | `mr:0530-basilius-et-emmelia` |  | TR | dies_natalis |  |  |
 | 30 | 3 | `mr:0530-anastasius` |  | IT | dies_natalis |  |  |
 | 30 | 4 | `mr:0530-dympna` |  | BE | dies_natalis | same as `mr:0515-dympna` |  |
-| 30 | 5 | `mr:0530-hubertus` |  | BE | dies_natalis | same as `mr:1103-hubertus` |  |
+| 30 | 5 | `mr:0530-hubertus` |  | BE | dies_natalis | same as `mr:1103-hubertus` | 2004 English: Translation error: "Saint Robert" where the Latin has "sancti Hubérti" (Saint Hubert). |
 | 30 | 6 | `mr:0530-ferdinandus-iii` |  | ES | dies_natalis |  |  |
 | 30 | 7 | `mr:0530-ioanna` |  | FR | dies_natalis |  |  |
 | 30 | 8 | `mr:0530-lucas-kirby` |  | GB | dies_natalis |  |  |
@@ -408,6 +408,6 @@
 | 31 | 7 | `mr:0531-baptista-varano` | * | IT | dies_natalis |  |  |
 | 31 | 8 | `mr:0531-robertus-thorpe-et-thomas-watkinson` | * | GB | dies_natalis |  |  |
 | 31 | 9 | `mr:0531-nicolaus-barre` | * | FR | dies_natalis |  |  |
-| 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  |  |
+| 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  | 2004 English: Translation error: "Erice" where the Latin has "Hérbitæ" (Nicosia). |
 | 31 | 11 | `mr:0531-marianus-de-roccacasale` | * | IT | dies_natalis |  |  |
 | 31 | 12 | `mr:0531-noe-mawaggali` |  | UG | dies_natalis |  |  |

@@ -102,11 +102,11 @@
 | 8 | 10 | `mr:0408-augustus-czartoryskus` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  |  |
 | 9 | 1 | `mr:0409-maximus` |  | EG | dies_natalis |  |  |
-| 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis | same as `mr:0408-aedesius` |  |
+| 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis | same as `mr:0408-aedesius` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
 | 9 | 3 | `mr:0409-demetrius` |  | HR | dies_natalis |  |  |
 | 9 | 4 | `mr:0409-eupsychius` |  | TR | dies_natalis |  |  |
-| 9 | 5 | `mr:0409-liborius` |  | FR | dies_natalis | same as `mr:0723-liborius` |  |
-| 9 | 6 | `mr:0409-acacius` |  | TR | dies_natalis |  |  |
+| 9 | 5 | `mr:0409-liborius` |  | FR | dies_natalis | same as `mr:0723-liborius` | 2004 English: Translation error: "Saint Liberius" where the Latin has "sancti Libórii" (Saint Liborius). |
+| 9 | 6 | `mr:0409-acacius` |  | TR | dies_natalis |  | 2004 English: Translation error: "to ransom Persian captives, and the clergy from dreadful tortures, even melted them down" where the Latin has "pro rediméndis Persis captívis ac diris tortis supplíciis clerum conflávit" (to ransom Persian captives cruelly tortured, he gathered the clergy). |
 | 9 | 7 | `mr:0409-valdetrudis` |  | BE | dies_natalis |  |  |
 | 9 | 8 | `mr:0409-hugo` |  | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0409-casilda` | * | ES | dies_natalis |  |  |
@@ -160,7 +160,7 @@
 | 13 | 6 | `mr:0413-caradocus` | * | GB | dies_natalis |  |  |
 | 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  |  |
 | 13 | 8 | `mr:0413-albertinus` | * | IT | dies_natalis |  |  |
-| 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  |  |
+| 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
 | 13 | 10 | `mr:0413-franciscus-dickenson-et-milo-gerard` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0413-ioannes-lockwood-et-eduardus-catherick` | * | GB | dies_natalis |  |  |
 | 13 | 12 | `mr:0413-scubilio-rousseau` | * | FR | dies_natalis |  |  |
@@ -181,8 +181,8 @@
 | 15 | 2 | `mr:0415-crescens` |  | TR | dies_natalis |  |  |
 | 15 | 3 | `mr:0415-maro` |  | IT | dies_natalis |  |  |
 | 15 | 4 | `mr:0415-abundius` |  | IT | commemoratio | same as `mr:0414-abundius` |  |
-| 15 | 5 | `mr:0415-paternus` |  | FR | depositio | same as `mr:0416-paternus`; same as `mr:0923-paternus` |  |
-| 15 | 6 | `mr:0415-ortarius` | * | FR | dies_natalis |  |  |
+| 15 | 5 | `mr:0415-paternus` |  | FR | depositio | same as `mr:0416-paternus`; same as `mr:0923-paternus` | 2004 English: Translation error: "Séez" where the Latin has "Sescíaci" (Scissy, in the district of Coutances). |
+| 15 | 6 | `mr:0415-ortarius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Ouen (Ortarius)" where the Latin has "sancti Ortárii" (Saint Ortarius); Ouen is a different saint. |
 | 15 | 7 | `mr:0415-caesar-de-bus` | * | FR | dies_natalis |  |  |
 | 15 | 8 | `mr:0415-damianus-de-veuster` | * | US | dies_natalis |  |  |
 | 16 | 1 | `mr:0416-leonides-et-socii` |  | GR | dies_natalis |  |  |
@@ -199,7 +199,7 @@
 | 16 | 12 | `mr:0416-petrus-delepine-et-socii` | * | FR | dies_natalis |  |  |
 | 16 | 13 | `mr:0416-maria-bernarda-soubirous` |  | FR | dies_natalis |  |  |
 | 17 | 1 | `mr:0417-petrus-et-hermogenes` |  | TR | dies_natalis |  |  |
-| 17 | 2 | `mr:0417-simeon` |  | IR | dies_natalis | same as `mr:0421-simeon` |  |
+| 17 | 2 | `mr:0417-simeon` |  | IR | dies_natalis | same as `mr:0421-simeon` | 2004 English: Translation error: "Sapor, Second King of the Persians" where the Latin has "Sápore Persárum rege Secúndo" (Sapor II, King of the Persians). |
 | 17 | 3 | `mr:0417-symeon` |  | IQ | dies_natalis | same as `mr:0422-plurimi-martyres-persidis` |  |
 | 17 | 4 | `mr:0417-innocentius` |  | IT | dies_natalis |  |  |
 | 17 | 5 | `mr:0417-acacius` |  | TR | dies_natalis |  |  |
@@ -265,7 +265,7 @@
 | 21 | 5 | `mr:0421-maelrubius` | * | GB | dies_natalis |  |  |
 | 21 | 6 | `mr:0421-ioannes-saziari` | * | IT | dies_natalis |  |  |
 | 21 | 7 | `mr:0421-bartholomaeus-cerveri` | * | IT | dies_natalis |  |  |
-| 21 | 8 | `mr:0421-conradus-de-parzham` |  | DE | dies_natalis |  |  |
+| 21 | 8 | `mr:0421-conradus-de-parzham` |  | DE | dies_natalis |  | 2004 English: Translation error: "Hohenwart" where the Latin has "Hodíngis" (Altötting). |
 | 21 | 9 | `mr:0421-romanus-adame` |  | MX | dies_natalis |  |  |
 | 22 | 1 | `mr:0422-soter` |  | IT | dies_natalis |  |  |
 | 22 | 2 | `mr:0422-epipodius` |  | FR | dies_natalis |  |  |
@@ -276,7 +276,7 @@
 | 22 | 7 | `mr:0422-leo` |  | FR | dies_natalis |  |  |
 | 22 | 8 | `mr:0422-theodorus` |  | TR | dies_natalis |  |  |
 | 22 | 9 | `mr:0422-opportuna` | * | FR | dies_natalis |  |  |
-| 22 | 10 | `mr:0422-senorina` | * | PT | dies_natalis |  |  |
+| 22 | 10 | `mr:0422-senorina` | * | PT | dies_natalis |  | 2004 English: Translation error: "Badajoz" where the Latin has "Basti" (Basto, in Portugal). |
 | 22 | 11 | `mr:0422-franciscus-venimbeni` | * | IT | dies_natalis |  |  |
 | 23 | (1) | `mr:0423-georgius` |  | IL | dies_natalis |  |  |
 | 23 | (2) | `mr:0423-adalbertus` |  | CZ | dies_natalis |  |  |
@@ -301,7 +301,7 @@
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia` |  | FR | dies_natalis |  |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  |  |
-| 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  |  |
+| 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  | 2004 English: Translation error: "blessed Peter, his son" where the Latin has "ab illo fílius nuncupátus" (called son by him, that is, by Peter). |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` |  |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR | dies_natalis |  |  |

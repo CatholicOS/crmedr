@@ -20,17 +20,17 @@
 | 1 | 14 | `mr:0901-alphonsus-sebastia-vinals` | * | ES | dies_natalis |  |  |
 | 1 | 15 | `mr:0901-petrus-rivera-et-socii` | * | ES | dies_natalis |  |  |
 | 2 | 1 | `mr:0902-zeno` |  | TR | dies_natalis |  |  |
-| 2 | 2 | `mr:0902-theodota` |  | TR | dies_natalis |  |  |
+| 2 | 2 | `mr:0902-theodota` |  | TR | dies_natalis |  | 2004 English: Translation error: "Nicomedia" where the Latin has "Nicǽæ" (Nicaea). |
 | 2 | 3 | `mr:0902-habib` |  | TR | dies_natalis | same as `mr:1115-habib` |  |
-| 2 | 4 | `mr:0902-antoninus` |  | SY | dies_natalis |  |  |
+| 2 | 4 | `mr:0902-antoninus` |  | SY | dies_natalis |  | 2004 English: Translation error: "the twentieth year of the reign" where the Latin has "vicésimo ætátis anno" (in the twentieth year of his age). |
 | 2 | 5 | `mr:0902-prosperus` | * | ES | dies_natalis |  |  |
 | 2 | 6 | `mr:0902-iustus` |  | FR | depositio |  |  |
 | 2 | 7 | `mr:0902-nonnosus` |  | IT | dies_natalis |  |  |
 | 2 | 8 | `mr:0902-syagrius` |  | FR | dies_natalis | same as `mr:0827-syagrius` |  |
 | 2 | 9 | `mr:0902-agricola` | * | FR | dies_natalis |  |  |
 | 2 | 10 | `mr:0902-elpidius` |  | IT | dies_natalis |  |  |
-| 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  |  |
-| 2 | 12 | `mr:0902-brochardus` | * | PS | dies_natalis |  |  |
+| 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ponte" where the Latin has "Pontídæ" (Pontida). Translation error: "forsook the military service of Christ" where the Latin has "milítiam Christi armis honoribúsque sǽculi præpósuit" (preferred the service of Christ to the arms and honours of the world). |
+| 2 | 12 | `mr:0902-brochardus` | * | PS | dies_natalis |  | 2004 English: Translation error: "spring of Elisha" where the Latin has "fontem Elíæ" (the spring of Elijah). |
 | 2 | 13 | `mr:0902-ingridis-elofsdotter` | * | SE | dies_natalis |  |  |
 | 2 | 14 | `mr:0902-ioannes-maria-du-lau-et-socii` | * | FR | dies_natalis |  |  |
 | 2 | 15 | `mr:0902-petrus-iacobus-maria-vitalis-et-socii` | * | FR | dies_natalis |  |  |
@@ -46,10 +46,10 @@
 | 3 | 10 | `mr:0903-rimagilus` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "Solesmes" where the Latin has "Sollemniacénse" (Solignac, where Remaclus was abbot before founding Stavelot and Malmedy). |
 | 3 | 11 | `mr:0903-aigulphus-et-socii` |  | FR | dies_natalis |  |  |
 | 3 | 12 | `mr:0903-chrodogangus` | * | FR | dies_natalis |  |  |
-| 3 | 13 | `mr:0903-guala` | * | IT | dies_natalis |  |  |
+| 3 | 13 | `mr:0903-guala` | * | IT | dies_natalis |  | 2004 English: Translation error: "Gualterus" where the Latin has "Guálæ" (Guala). |
 | 3 | 14 | `mr:0903-bartholomaeus-gutierrez-et-socii` | * | JP | dies_natalis |  |  |
 | 3 | 15 | `mr:0903-birgitta-a-iesu` | * | IT | dies_natalis |  |  |
-| 3 | 16 | `mr:0903-andreas-abel-alricy-et-socii` | * | FR | dies_natalis |  |  |
+| 3 | 16 | `mr:0903-andreas-abel-alricy-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "after having confessed the faith on the previous day" where the Latin has "post pridiánam cædem" (after the previous day's massacre). |
 | 3 | 17 | `mr:0903-ioannes-baptista-bottex-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | 18 | `mr:0903-ioannes-pak-hu-ja-et-socii` |  | KR | dies_natalis |  |  |
 | 4 | 1 | `mr:0904-moyses-propheta` |  | EG | commemoratio |  |  |
@@ -60,10 +60,10 @@
 | 4 | 6 | `mr:0904-fredaldus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:0904-irmgardis` | * | DE | dies_natalis |  |  |
 | 4 | 8 | `mr:0904-rosalia` |  | IT | dies_natalis | same as `mr:0715-inventio-corporis-rosaliae` |  |
-| 4 | 9 | `mr:0904-catharina-mattei` | * | IT | dies_natalis |  |  |
+| 4 | 9 | `mr:0904-catharina-mattei` | * | IT | dies_natalis |  | 2004 English: Translation error: "Carmagnola" where the Latin has "Caramániæ" (Caramagna). |
 | 4 | 10 | `mr:0904-scipio-hieronymus-brigeat-de-lambert` | * | FR | dies_natalis |  |  |
 | 4 | 11 | `mr:0904-maria` | * | CA | dies_natalis |  |  |
-| 4 | 12 | `mr:0904-iosephus-paschalis-carda-saporta` | * | ES | dies_natalis |  |  |
+| 4 | 12 | `mr:0904-iosephus-paschalis-carda-saporta` | * | ES | dies_natalis |  | 2004 English: Translation error: "near Castile" where the Latin has "apud Castáliam" (near Castellón). |
 | 4 | 13 | `mr:0904-franciscus-sendra-ivars` | * | ES | dies_natalis |  |  |
 | 4 | 14 | `mr:0904-bernardus-bieda-grau` | * | ES | dies_natalis |  |  |
 | 5 | 1 | `mr:0905-acontus-et-socii` |  | IT | dies_natalis |  |  |
@@ -106,7 +106,7 @@
 | 7 | 17 | `mr:0907-randulphus-corby-et-ioannes-duckett` | * | GB | dies_natalis |  |  |
 | 7 | 18 | `mr:0907-claudius-barnabas-laurent-de-mascloux-et-franciscus` | * | FR | dies_natalis |  |  |
 | 7 | 19 | `mr:0907-ioannes-baptista-mazzucconi` | * | PG | dies_natalis |  |  |
-| 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  |  |
+| 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  | 2004 English: Translation error: the eulogy is broken off and an editorial comment disputing it is added after "wholly devoted to the will of God"; the Latin simply states that she "dignitátem mulíerum promóvit" (promoted the dignity of women). |
 | 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz` | * | ES | dies_natalis |  |  |
 | 8 | (1) | `mr:0908-nativitas-beatae-mariae-virginis` |  |  | celebratio |  |  |
 | 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio | same as `mr:0304-hadrianus-et-socii` |  |
@@ -119,13 +119,13 @@
 | 8 | 9 | `mr:0908-thomas-de-villanova` |  | ES | dies_natalis | same as `mr:0922-thomas-a-villa-nova` |  |
 | 8 | 10 | `mr:0908-thomas-palaser-et-socii` | * | GB | dies_natalis |  |  |
 | 8 | 11 | `mr:0908-petrus-claver` |  | CO | dies_natalis |  |  |
-| 8 | 12 | `mr:0908-antonius-a-sancto-bonaventura-et-socii` | * | JP | dies_natalis |  |  |
+| 8 | 12 | `mr:0908-antonius-a-sancto-bonaventura-et-socii` | * | JP | dies_natalis |  | 2004 English: Translation error: "seven of whom were martyrs" where the Latin has "vigínti sociórum, mártyrum, quorum céteri láici" (twenty companions, martyrs, the rest of them laymen). |
 | 8 | 13 | `mr:0908-fridericus-ozanam` | * | FR | dies_natalis |  |  |
 | 8 | 14 | `mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii` | * | ES | dies_natalis |  |  |
 | 8 | 15 | `mr:0908-marinus-blanes-giner` | * | ES | dies_natalis |  |  |
 | 8 | 16 | `mr:0908-ismael-escrihuela-esteve` | * | ES | dies_natalis |  |  |
 | 8 | 17 | `mr:0908-paschalis-fortuno-almela` | * | ES | dies_natalis |  |  |
-| 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia` | * | ES | dies_natalis |  |  |
+| 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia` | * | ES | dies_natalis |  | 2004 English: Translation error: "Burjasot" where the Latin has "Buñol". |
 | 8 | 19 | `mr:0908-adamus-bargielski` | * | DE | dies_natalis |  |  |
 | 8 | 20 | `mr:0908-ladislaus-bladzinski` | * | DE | dies_natalis |  |  |
 | 9 | (1) | `mr:0909-petrus-claver` |  | CO | celebratio |  |  |
@@ -133,7 +133,7 @@
 | 9 | 3 | `mr:0909-hyacinthus` |  | IT | dies_natalis |  |  |
 | 9 | 4 | `mr:0909-ciaranus` |  | IE | dies_natalis |  |  |
 | 9 | 5 | `mr:0909-maria-de-la-cabeza` | * | ES | dies_natalis |  |  |
-| 9 | 6 | `mr:0909-maria-euthymia-uffing` | * | DE | dies_natalis |  |  |
+| 9 | 6 | `mr:0909-maria-euthymia-uffing` | * | DE | dies_natalis |  | 2004 English: Translation error: "At a monastery" where the Latin has "Monastérii" (at Münster). |
 | 9 | 7 | `mr:0909-georgius-douglas` | * | GB | dies_natalis |  |  |
 | 9 | 8 | `mr:0909-petrus-bonhomme` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0909-iacobus-desideratus-laval` | * | MU | dies_natalis |  |  |
@@ -149,7 +149,7 @@
 | 10 | 9 | `mr:0910-nicolaus` |  | IT | dies_natalis |  |  |
 | 10 | 10 | `mr:0910-sebastianus-kimura-et-socii` | * | JP | dies_natalis |  |  |
 | 10 | 11 | `mr:0910-ambrosius-eduardus-barlow` |  | GB | dies_natalis |  |  |
-| 10 | 12 | `mr:0910-iacobus-gagnot` | * | FR | dies_natalis |  |  |
+| 10 | 12 | `mr:0910-iacobus-gagnot` | * | FR | dies_natalis |  | 2004 English: Translation error: "On the rafts of the pontoon" where the Latin has "In æquóribus ponti" (on the waters of the sea). |
 | 11 | 1 | `mr:0911-protus-et-hyacinthus` |  | IT | depositio |  |  |
 | 11 | 2 | `mr:0911-felix-et-regula` | * | CH | dies_natalis |  |  |
 | 11 | 3 | `mr:0911-paphnutius` |  | EG | commemoratio |  |  |
@@ -175,9 +175,9 @@
 | 12 | 8 | `mr:0912-franciscus-choe-kyong-hwan` |  | KR | dies_natalis |  |  |
 | 13 | (1) | `mr:0913-ioannes` |  | TR | celebratio |  |  |
 | 13 | 2 | `mr:0913-iulianus` |  | TR | dies_natalis |  |  |
-| 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | IL | dedicatio |  |  |
-| 13 | 4 | `mr:0913-litorius` |  | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0913-aemilianus` |  | FR | dies_natalis |  |  |
+| 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | IL | dedicatio |  | 2004 English: Translation error: "ordered to be rebuilt" where the Latin has "ædificári vóluit" (built). |
+| 13 | 4 | `mr:0913-litorius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the first to rebuild a church" where the Latin has "ecclésiam ædificávit" (built). |
+| 13 | 5 | `mr:0913-aemilianus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Yzeures-sur-Creuse (ancient Juliacum)" where the Latin has "Iúliæ Valéntiæ" (Valence). |
 | 13 | 6 | `mr:0913-marcellinus` |  | TN | dies_natalis |  |  |
 | 13 | 7 | `mr:0913-maurilius` |  | FR | dies_natalis |  |  |
 | 13 | 8 | `mr:0913-amatus-vosegos` |  | FR | dies_natalis |  |  |
@@ -193,7 +193,7 @@
 | 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Beauvale" where the Latin has "Bellævallénsi" (Bellevaux, near Besançon). |
 | 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |  |
-| 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  |  |
+| 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  | 2004 English: Translation error: "blessed Notburga" where the Latin has "sanctæ Notbúrgæ" (Saint Notburga). |
 | 14 | 9 | `mr:0914-claudius-laplace` | * | FR | dies_natalis |  |  |
 | 14 | 10 | `mr:0914-gabriel-taurinus-dufresse` |  | CN | dies_natalis |  |  |
 | 15 | (1) | `mr:0915-maria-perdolens` |  |  | celebratio |  |  |
@@ -280,16 +280,16 @@
 | 19 | 17 | `mr:0919-hyacinthus-hoyuelos-gonzalez` | * | ES | dies_natalis |  |  |
 | 19 | 18 | `mr:0919-francisca-cuallado-baixauli` | * | ES | dies_natalis |  |  |
 | 19 | 19 | `mr:0919-maria-a-iesu-et-socii` | * | ES | dies_natalis |  |  |
-| 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  |  |
+| 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  | 2004 English: Translation error: "ten of whom are commemorated on this day" where the Latin says that all one hundred and three martyrs are celebrated together on this day. |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR | dies_natalis |  |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
 | 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-andreas` |  |
 | 20 | 5 | `mr:0920-adelpretus` | * | IT | dies_natalis |  |  |
-| 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  |  |
+| 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  | 2004 English: Translation error: "with some of his fellow brothers" where the Latin has "nonus ex número confrátrum" (the ninth of his confreres to die). |
 | 20 | 7 | `mr:0920-franciscus-de-posadas` | * | ES | dies_natalis |  |  |
 | 20 | 8 | `mr:0920-ioannes-carolus-cornay` |  | VN | dies_natalis |  |  |
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR | dies_natalis |  |  |
-| 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  | 2004 Italian: Translation error: "beato" where the Latin has "sancti" (Saint); he was canonized in 2000. |
+| 20 | 10 | `mr:0920-iosephus-maria-de-yermo-y-parres` |  | MX | dies_natalis |  | 2004 Italian: Translation error: "beato" where the Latin has "sancti" (Saint); he was canonized in 2000. 2004 English: Translation error: "blessed" where the Latin has "sancti" (Saint). |
 | 21 | (1) | `mr:0921-matthaeus-apostolus` |  | PS | dies_natalis |  |  |
 | 21 | 2 | `mr:0921-ionas-propheta` |  | PS | commemoratio |  |  |
 | 21 | 3 | `mr:0921-quadratus` |  | GR | commemoratio |  |  |
@@ -297,7 +297,7 @@
 | 21 | 5 | `mr:0921-alexander` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0921-eusebius-et-socii` |  | PS | dies_natalis |  |  |
 | 21 | 7 | `mr:0921-castor` | * | FR | dies_natalis |  |  |
-| 21 | 8 | `mr:0921-cadocus` | * | GB | dies_natalis |  |  |
+| 21 | 8 | `mr:0921-cadocus` | * | GB | dies_natalis |  | 2004 English: Translation error: "Llantwit Major" where the Latin has "Lancarvanénsi" (Llancarfan). |
 | 21 | 9 | `mr:0921-landelinus` | * | DE | dies_natalis |  |  |
 | 21 | 10 | `mr:0921-gerulphus` | * | BE | dies_natalis |  |  |
 | 21 | 11 | `mr:0921-maura` | * | FR | dies_natalis |  |  |
@@ -332,7 +332,7 @@
 | 23 | 8 | `mr:0923-petrus-acotanto` | * | IT | dies_natalis |  |  |
 | 23 | 9 | `mr:0923-helena-duglioli-dall-olio` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0923-christophorus-et-socii` | * | MX | dies_natalis |  |  |
-| 23 | 11 | `mr:0923-maria-aemilia-tavernier` | * | CA | dies_natalis |  |  |
+| 23 | 11 | `mr:0923-maria-aemilia-tavernier` | * | CA | dies_natalis |  | 2004 English: Translation error: "Marieville" where the Latin has "Marianópoli" (Montreal). |
 | 23 | 12 | `mr:0923-gulielmus-way` | * | GB | dies_natalis |  |  |
 | 23 | 13 | `mr:0923-vincentius-ballester-far` | * | ES | dies_natalis |  |  |
 | 23 | 14 | `mr:0923-sophia-ximenez-ximenez-et-socii` | * | ES | dies_natalis |  |  |
@@ -372,7 +372,7 @@
 | 26 | 5 | `mr:0926-stephanus-de-rossano` | * | IT | dies_natalis |  |  |
 | 26 | 6 | `mr:0926-nilus-iunior` |  | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0926-lucia-de-calata-hieronis` | * | IT | dies_natalis |  |  |
-| 26 | 8 | `mr:0926-sebastianus-nam-i-gwan-et-socii` |  | KR | dies_natalis |  |  |
+| 26 | 8 | `mr:0926-sebastianus-nam-i-gwan-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "twelve martyrs" where the Latin has "novem sociórum, mártyrum" (nine companions, martyrs: ten in all). |
 | 26 | 9 | `mr:0926-teresia-couderc` |  | FR | dies_natalis |  |  |
 | 26 | 10 | `mr:0926-gaspar-stanggassinger` | * | DE | dies_natalis |  |  |
 | 26 | 11 | `mr:0926-aloysius-tezza` | * | PE | dies_natalis |  |  |
@@ -419,7 +419,7 @@
 | 29 | 4 | `mr:0929-fraternus` |  | FR | dies_natalis |  |  |
 | 29 | 5 | `mr:0929-quiriacus` |  | PS | dies_natalis |  |  |
 | 29 | 6 | `mr:0929-liudwinus` | * | DE | depositio |  |  |
-| 29 | 7 | `mr:0929-adelricus` | * | CH | dies_natalis |  |  |
+| 29 | 7 | `mr:0929-adelricus` | * | CH | dies_natalis |  | 2004 English: Translation error: "Reichenau" where the Latin has "ínsula Augia lacus Turicénsis" (Ufnau in Lake Zurich). |
 | 29 | 8 | `mr:0929-mauritius` | * | FR | dies_natalis |  |  |
 | 29 | 9 | `mr:0929-ioannes-de-monte-mirabili` | * | FR | dies_natalis |  |  |
 | 29 | 10 | `mr:0929-carolus-de-blesis` | * | FR | dies_natalis |  |  |
