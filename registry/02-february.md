@@ -113,7 +113,7 @@
 | 8 | (2) | `mr:0208-iosephina-bakhita` |  | SD | dies_natalis |  |  |
 | 8 | 3 | `mr:0208-cointha` |  | EG | commemoratio |  |  |
 | 8 | 4 | `mr:0208-iuventius` |  | IT | dies_natalis | same as `mr:0912-iuventius` |  |
-| 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR | commemoratio |  |  |
+| 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR | commemoratio |  | 2004 Italian: Translation error: "monastero di Dio" (monastery of God) where the Latin has "monastérii Dii" (the monastery of Dius, named after its founder). |
 | 8 | 6 | `mr:0208-iacutus` | * | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:0208-honoratus` |  | IT | depositio |  |  |
 | 8 | 8 | `mr:0208-nicetius` | * | FR | dies_natalis |  |  |
@@ -156,7 +156,7 @@
 | 11 | 10 | `mr:0211-petrus-maldonado` |  | MX | dies_natalis |  |  |
 | 11 | 11 | `mr:0211-tobias-borras-romeu` | * | ES | dies_natalis |  |  |
 | 12 | 1 | `mr:0212-martyres-abitinenses` |  | TN | commemoratio | same as `mr:0211-saturninus-et-socii` |  |
-| 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  |  |
+| 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  | 2004 Italian: Translation error: "mandato dall’esilio" (sent from exile) where the Latin has "exsílio afféctus est" (was sent into exile). |
 | 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |  |
 | 12 | 4 | `mr:0212-antonius-caulea` |  | TR | dies_natalis |  | 2004 English: Translation error: "under Emperor Leo III the Isaurian", where the Latin print has Leónis imperatóris Sexti and the Italian (CEI) Leone VI: the emperor is Leo VI the Wise. |
 | 12 | 5 | `mr:0212-humbelina` | * | FR | dies_natalis |  |  |
@@ -213,7 +213,7 @@
 | 17 | 7 | `mr:0217-finanus` | * | GB | dies_natalis |  |  |
 | 17 | 8 | `mr:0217-silvinus` |  | FR | depositio |  |  |
 | 17 | 9 | `mr:0217-constabilis` | * | IT | dies_natalis |  |  |
-| 17 | 10 | `mr:0217-evermodus` | * | DE | dies_natalis |  |  |
+| 17 | 10 | `mr:0217-evermodus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (Alsace) where the Latin has "in Holsátia" (Holstein). |
 | 17 | 11 | `mr:0217-lucas-belludi` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:0217-petrus-yu-chong-nyul` |  | KR | dies_natalis |  |  |
 | 17 | 13 | `mr:0217-antonius-leszczewicz` | * | PL | dies_natalis |  |  |
@@ -235,7 +235,7 @@
 | 19 | 4 | `mr:0219-barbatus` |  | IT | dies_natalis |  |  |
 | 19 | 5 | `mr:0219-georgius` | * | FR | dies_natalis |  |  |
 | 19 | 6 | `mr:0219-proclus` | * | IT | dies_natalis |  |  |
-| 19 | 7 | `mr:0219-bonifatius` | * | BE | depositio |  |  |
+| 19 | 7 | `mr:0219-bonifatius` | * | BE | depositio |  | 2004 Italian: Translation error: "tra i monaci cistercensi" (among Cistercian monks) where the Latin has "apud moniáles Cisterciénses" (among Cistercian nuns). |
 | 19 | 8 | `mr:0219-conradus-confalonieri` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0219-alvarus` | * | ES | commemoratio |  |  |
 | 19 | 10 | `mr:0219-elisabeth-picenardi` | * | IT | dies_natalis |  |  |
@@ -245,11 +245,11 @@
 | 20 | 2 | `mr:0220-quinque-martyres-tyri` |  | LB | commemoratio |  |  |
 | 20 | 3 | `mr:0220-tyrannion` |  | TR | commemoratio |  |  |
 | 20 | 4 | `mr:0220-eleutherius-tornaci` |  | BE | dies_natalis |  |  |
-| 20 | 5 | `mr:0220-eucherius` |  | BE | dies_natalis |  |  |
+| 20 | 5 | `mr:0220-eucherius` |  | BE | dies_natalis |  | 2004 Italian: Translation error: "dal re Carlo Martello" (by King Charles Martel) where the Latin has "duce" (duke); Charles Martel was never king. |
 | 20 | 6 | `mr:0220-leo` |  | IT | dies_natalis |  |  |
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  |  |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL | dies_natalis |  |  |
-| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` |  |
+| 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` | 2004 Italian: Translation omission: the sentence "Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit" (his death took place at Faenza on the following day) is not rendered. |
 | 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  |  |
 | 21 | 3 | `mr:0221-germanus` | * | CH | dies_natalis |  |  |
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB | dies_natalis |  |  |
@@ -270,7 +270,7 @@
 | 23 | 3 | `mr:0223-milburga` |  | GB | dies_natalis |  |  |
 | 23 | 4 | `mr:0223-willigisus` | * | DE | dies_natalis |  |  |
 | 23 | 5 | `mr:0223-ioannes` |  | IT | dies_natalis | same as `mr:0224-ioannes-theristes` |  |
-| 23 | 6 | `mr:0223-raphaela-de-villalonga-ybarra` | * | ES | dies_natalis |  |  |
+| 23 | 6 | `mr:0223-raphaela-de-villalonga-ybarra` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony) where the Latin has "in Vascónia" (the Basque Country). |
 | 23 | 7 | `mr:0223-nicolaus-tabouillot` | * | FR | dies_natalis |  |  |
 | 23 | 8 | `mr:0223-iosephina-vannini` | * | IT | dies_natalis |  |  |
 | 23 | 9 | `mr:0223-ludovicus-mzyk` | * | PL | dies_natalis |  |  |
@@ -325,4 +325,4 @@
 | 29 | 1 | `mr:0229-hilarius` |  | IT | depositio | same as `mr:0228-hilarus` | also printed at 2/28 entry 4 |
 | 29 | 2 | `mr:0229-oswaldus` |  | GB | dies_natalis |  | also printed at 2/28 entry 5 |
 | 29 | 3 | `mr:0229-antonia-de-florentia` | * | IT | dies_natalis |  | also printed at 2/28 entry 6 |
-| 29 | 4 | `mr:0229-augustus-chapdelaine` |  | CN | dies_natalis |  | also printed at 2/28 entry 7 |
+| 29 | 4 | `mr:0229-augustus-chapdelaine` |  | CN | dies_natalis |  | also printed at 2/28 entry 7 2004 Italian: Translation error: "Agostino" (Augustine) for the Latin "Augústi" (Auguste, Augusto). |

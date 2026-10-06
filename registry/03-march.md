@@ -16,16 +16,16 @@
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |
 | 1 | 11 | `mr:0301-agnes-cao-kuiying` |  | CN | dies_natalis |  |  |
 | 2 | 1 | `mr:0302-troadius` |  | TR | dies_natalis | same as `mr:1228-troadius` |  |
-| 2 | 2 | `mr:0302-ceadda` |  | GB | dies_natalis |  |  |
+| 2 | 2 | `mr:0302-ceadda` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "dell’Anglia meridionale" (southern Anglia) where the Latin has "Mediterraneórum Anglórum" (the Middle Angles). |
 | 2 | 3 | `mr:0302-lucas-casali-de-nicosia` | * | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0302-agnes` |  | CZ | dies_natalis |  |  |
 | 2 | 5 | `mr:0302-carolus-bonus` | * | BE | dies_natalis |  |  |
-| 2 | 6 | `mr:0302-angela-a-cruce` |  | ES | dies_natalis |  |  |
+| 2 | 6 | `mr:0302-angela-a-cruce` |  | ES | dies_natalis |  | 2004 Italian: Translation omission: the title "vergine" (Latin "vírginis") is missing after the name. |
 | 3 | 1 | `mr:0303-marinus-et-asterius` |  | PS | dies_natalis |  |  |
 | 3 | 2 | `mr:0303-emetherius-et-cheledonius` |  | ES | dies_natalis |  |  |
 | 3 | 3 | `mr:0303-cleonicus-et-eutropius` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0303-titianus` |  | IT | dies_natalis |  |  |
-| 3 | 5 | `mr:0303-winwaloeus` |  | GB | dies_natalis |  |  |
+| 3 | 5 | `mr:0303-winwaloeus` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "Nella Cornovaglia in Inghilterra" (Cornwall in England) where the Latin has "In Cornúbia Armóricæ" (Cornouaille in Brittany, where Landévennec lies). |
 | 3 | 6 | `mr:0303-arthellaidis` | * | IT | dies_natalis |  |  |
 | 3 | 7 | `mr:0303-anselmus` | * | IT | dies_natalis |  |  |
 | 3 | 8 | `mr:0303-cunegundis` |  | DE | dies_natalis |  |  |
@@ -63,7 +63,7 @@
 | 6 | 3 | `mr:0306-quiriacus` |  | DE | dies_natalis |  |  |
 | 6 | 4 | `mr:0306-evagrius` |  | TR | commemoratio |  |  |
 | 6 | 5 | `mr:0306-iulianus` |  | ES | dies_natalis | same as `mr:0308-iulianus` |  |
-| 6 | 6 | `mr:0306-fridolinus` |  | CH | dies_natalis |  |  |
+| 6 | 6 | `mr:0306-fridolinus` |  | CH | dies_natalis |  | 2004 Italian: Translation error: "due monasteri" (two monasteries) where the Latin has "duplex monastérium" (a double monastery). |
 | 6 | 7 | `mr:0306-chrodegangus` |  | FR | dies_natalis |  |  |
 | 6 | 8 | `mr:0306-quadraginta-duo-martyres-syriae` |  | SY | dies_natalis |  |  |
 | 6 | 9 | `mr:0306-ollegarius` | * | ES | dies_natalis |  |  |
@@ -72,7 +72,7 @@
 | 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis | same as `mr:0306-perpetua-et-felicitas` |  |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |  |
 | 7 | 3 | `mr:0307-eubulius` |  | PS | dies_natalis |  |  |
-| 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis | same as `mr:0304-basilius-et-socii` |  |
+| 7 | 4 | `mr:0307-basilius-et-socii` |  | GR | dies_natalis | same as `mr:0304-basilius-et-socii` | 2004 Italian: Translation error: "in Grecia" (in Greece) for "Chersonésum", which is Cherson in the Crimea. |
 | 7 | 5 | `mr:0307-paulus-simplex` |  | EG | dies_natalis |  |  |
 | 7 | 6 | `mr:0307-gaudiosus` |  | IT | dies_natalis |  |  |
 | 7 | 7 | `mr:0307-ardo-smaragdus` | * | FR | dies_natalis |  |  |
@@ -157,7 +157,7 @@
 | 14 | 3 | `mr:0314-leobinus` |  | FR | dies_natalis | same as `mr:0915-leobinus` |  |
 | 14 | 4 | `mr:0314-mathildis` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0314-paulina` | * | DE | dies_natalis |  |  |
-| 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  |  |
+| 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "monaca di clausura nel monastero di San Martino" (an enclosed nun in the monastery) where the Latin has "reclúsæ prope cœnóbium Sancti Martíni" (a recluse near the monastery of Saint Martin). |
 | 14 | 7 | `mr:0314-iacobus-cusmano` | * | IT | dies_natalis |  |  |
 | 15 | 1 | `mr:0315-menignus` |  | TR | dies_natalis |  |  |
 | 15 | 2 | `mr:0315-zacharias` |  | IT | dies_natalis | same as `mr:0322-zacharias` |  |
@@ -217,8 +217,8 @@
 | 20 | 11 | `mr:0320-baptista-spagnoli` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0320-hippolytus-galantini` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:0320-ioanna-veron` | * | FR | dies_natalis |  |  |
-| 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph` | * | ES | dies_natalis |  |  |
-| 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu` |  | ES | dies_natalis |  |  |
+| 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "dove morì abbandonato a se stesso" (where he died, abandoned) where the Latin says only that he was banished there, "ab ómnibus derelíctus" (abandoned by all); he died at Tarragona. |
+| 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu` |  | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony, in France) where the Latin has "in Vascónia Hispániæ" (the Basque Country of Spain). |
 | 20 | 16 | `mr:0320-iosephus-bilczewski` | * | UA | dies_natalis |  |  |
 | 21 | 1 | `mr:0321-serapion` |  | EG | dies_natalis |  |  |
 | 21 | 2 | `mr:0321-martyres-alexandrini` |  | EG | commemoratio |  |  |
@@ -297,7 +297,7 @@
 | 28 | 3 | `mr:0328-cyrillus` |  | LB | dies_natalis | same as `mr:0329-cyrillus` |  |
 | 28 | 4 | `mr:0328-proterius` |  | EG | dies_natalis |  |  |
 | 28 | 5 | `mr:0328-gunthramnus` |  | FR | depositio |  |  |
-| 28 | 6 | `mr:0328-hilarion` |  | GR | dies_natalis |  |  |
+| 28 | 6 | `mr:0328-hilarion` |  | GR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Grecia" for the Bithynian Mount Olympus, which is in Asia Minor (modern Turkey). |
 | 28 | 7 | `mr:0328-stephanus-harding` |  | FR | dies_natalis | same as `mr:0417-stephanus-harding` |  |
 | 28 | 8 | `mr:0328-conus` | * | IT | dies_natalis |  |  |
 | 28 | 9 | `mr:0328-antonius-patrizus` | * | IT | dies_natalis |  |  |

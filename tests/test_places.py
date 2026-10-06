@@ -260,7 +260,7 @@ class MisprintTest(unittest.TestCase):
         self.assertEqual({r["printed"] for r in records},
                          {"betárum", "Marcellino", "Caulphæ", "desposizione", "comemorazione", "Mel", "nell territorio",
                           "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
-                          "Bellrreguart"})
+                          "Bellrreguart", "dístulit"})
 
 
 class ItalianPhraseTest(unittest.TestCase):

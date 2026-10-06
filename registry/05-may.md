@@ -67,7 +67,7 @@
 | 5 | 7 | `mr:0505-geruntius` |  | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0505-maurontus` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0505-sacerdos` |  | FR | dies_natalis | same as `mr:0504-sacerdos` |  |
-| 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis | same as `mr:0504-godehardus` |  |
+| 5 | 10 | `mr:0505-godehardus` |  | DE | dies_natalis | same as `mr:0504-godehardus` | 2004 Italian: Translation error: "succeduto a san Bernardo" where the Latin has "sancto Bernwárdo" (Saint Bernward, his predecessor at Hildesheim). |
 | 5 | 11 | `mr:0505-leo` | * | IT | dies_natalis |  |  |
 | 5 | 12 | `mr:0505-avertinus` | * | FR | dies_natalis |  |  |
 | 5 | 13 | `mr:0505-angelus` |  | IT | dies_natalis |  |  |
@@ -91,7 +91,7 @@
 | 7 | 2 | `mr:0507-flavius-et-socii` |  | TR | dies_natalis |  |  |
 | 7 | 3 | `mr:0507-cenericus` | * | FR | dies_natalis |  |  |
 | 7 | 4 | `mr:0507-ioannes` |  | GB | dies_natalis |  |  |
-| 7 | 5 | `mr:0507-gisella` | * | DE | dies_natalis |  |  |
+| 7 | 5 | `mr:0507-gisella` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "spogliatasi di tutti i suoi beni" (having stripped herself) where the Latin has "ómnibus facultátibus spoliáta" (despoiled of all her goods). |
 | 7 | 6 | `mr:0507-antonius` | * | UA | dies_natalis |  |  |
 | 7 | 7 | `mr:0507-albertus-de-bergomo` | * | IT | dies_natalis |  |  |
 | 7 | 8 | `mr:0507-rosa-venerini` | * | IT | dies_natalis |  |  |
@@ -168,7 +168,7 @@
 | 13 | 3 | `mr:0513-agnes` | * | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:0513-gemma` | * | IT | dies_natalis |  |  |
 | 13 | 5 | `mr:0513-magdalena-albrici` | * | IT | dies_natalis |  |  |
-| 13 | 6 | `mr:0513-andreas-hubertus-fournet` |  | FR | dies_natalis |  |  |
+| 13 | 6 | `mr:0513-andreas-hubertus-fournet` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Puy-en-Vélay" where the Latin has "Pódii in pago Pictaviénsi" (La Puye, near Poitiers). |
 | 14 | (1) | `mr:0514-matthias-apostolus` |  | PS | dies_natalis | same as `mr:0224-matthias-apostolus` |  |
 | 14 | 2 | `mr:0514-maximus` |  | TR | dies_natalis |  |  |
 | 14 | 3 | `mr:0514-pontius` |  | FR | dies_natalis |  |  |
@@ -208,7 +208,7 @@
 | 16 | 11 | `mr:0516-germerius` | * | FR | dies_natalis |  |  |
 | 16 | 12 | `mr:0516-ubaldus` |  | IT | dies_natalis |  |  |
 | 16 | 13 | `mr:0516-adamus` | * | IT | dies_natalis |  |  |
-| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  |  |
+| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). |
 | 16 | 15 | `mr:0516-andreas-bobola` |  | PL | dies_natalis |  |  |
 | 16 | 16 | `mr:0516-michael-wozniak` | * | DE | dies_natalis |  |  |
 | 16 | 17 | `mr:0516-vitalis-vladimirus-bajrak` | * | UA | dies_natalis |  |  |
@@ -280,9 +280,9 @@
 | 22 | 2 | `mr:0522-castus-et-aemilius` |  | TN | dies_natalis |  |  |
 | 22 | 3 | `mr:0522-basiliscus` |  | TR | dies_natalis |  |  |
 | 22 | 4 | `mr:0522-iulia` |  | FR | commemoratio |  |  |
-| 22 | 5 | `mr:0522-quiteria` | * | FR | dies_natalis |  |  |
+| 22 | 5 | `mr:0522-quiteria` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Aire-sur-le-Lys" where the Latin has "pago Aturénsi" (the district of Aire-sur-l'Adour, in Aquitaine). |
 | 22 | 6 | `mr:0522-ausonius` |  | FR | dies_natalis |  |  |
-| 22 | 7 | `mr:0522-lupus` | * | FR | dies_natalis |  |  |
+| 22 | 7 | `mr:0522-lupus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "monastero di Solesme" where the Latin has "monastérii Solemníaci" (the monastery of Solignac, near Limoges). |
 | 22 | 8 | `mr:0522-ioannes` | * | IT | dies_natalis |  |  |
 | 22 | 9 | `mr:0522-atto` |  | IT | dies_natalis |  |  |
 | 22 | 10 | `mr:0522-humilitas` | * | IT | dies_natalis |  |  |
