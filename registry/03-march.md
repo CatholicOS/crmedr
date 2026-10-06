@@ -10,7 +10,7 @@
 | 1 | 4 | `mr:0301-siviardus` |  | FR | dies_natalis |  |  |
 | 1 | 5 | `mr:0301-suitbertus` |  | DE | dies_natalis |  |  |
 | 1 | 6 | `mr:0301-leo` |  | FR | dies_natalis |  |  |
-| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luke). |
+| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
 | 1 | 8 | `mr:0301-rudesindus` | * | ES | dies_natalis |  |  |
 | 1 | 9 | `mr:0301-christophorus-de-mediolano` | * | IT | commemoratio |  |  |
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |

@@ -1135,7 +1135,7 @@ EDITION_NOTES = {
     },
     "mr:0301-leo-lucas": {
         EDITION_EN: (
-            "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luke)."
+            "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luca, known as Leoluca)."
         ),
     },
     "mr:0302-angela-a-cruce": {
