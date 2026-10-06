@@ -280,7 +280,7 @@
 | 19 | 17 | `mr:0919-hyacinthus-hoyuelos-gonzalez` | * | ES | dies_natalis |  |  |
 | 19 | 18 | `mr:0919-francisca-cuallado-baixauli` | * | ES | dies_natalis |  |  |
 | 19 | 19 | `mr:0919-maria-a-iesu-et-socii` | * | ES | dies_natalis |  |  |
-| 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  |  |
+| 20 | (1) | `mr:0920-andreas-kim-tae-gon-et-socii` |  | KR | celebratio |  | 2004 English: Translation error: "ten of whom are commemorated on this day" where the Latin says that all one hundred and three martyrs are celebrated together on this day. |
 | 20 | 2 | `mr:0920-dorymedon` |  | TR | dies_natalis |  |  |
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
 | 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-andreas` |  |
@@ -372,7 +372,7 @@
 | 26 | 5 | `mr:0926-stephanus-de-rossano` | * | IT | dies_natalis |  |  |
 | 26 | 6 | `mr:0926-nilus-iunior` |  | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0926-lucia-de-calata-hieronis` | * | IT | dies_natalis |  |  |
-| 26 | 8 | `mr:0926-sebastianus-nam-i-gwan-et-socii` |  | KR | dies_natalis |  |  |
+| 26 | 8 | `mr:0926-sebastianus-nam-i-gwan-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "twelve martyrs" where the Latin has "novem sociórum, mártyrum" (nine companions, martyrs: ten in all). |
 | 26 | 9 | `mr:0926-teresia-couderc` |  | FR | dies_natalis |  |  |
 | 26 | 10 | `mr:0926-gaspar-stanggassinger` | * | DE | dies_natalis |  |  |
 | 26 | 11 | `mr:0926-aloysius-tezza` | * | PE | dies_natalis |  |  |

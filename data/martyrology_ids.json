@@ -57413,7 +57413,10 @@
       "asterisk": false,
       "country": "KR",
       "typology": "celebratio",
-      "unnumbered": true
+      "unnumbered": true,
+      "edition_notes": {
+        "martyrologium_romanum_2004_en_unofficial": "Translation error: \"ten of whom are commemorated on this day\" where the Latin says that all one hundred and three martyrs are celebrated together on this day."
+      }
     },
     {
       "id": "mr:0920-dorymedon",
@@ -58954,7 +58957,10 @@
           "it": "A Seul in Corea",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_en_unofficial": "Translation error: \"twelve martyrs\" where the Latin has \"novem sociórum, mártyrum\" (nine companions, martyrs: ten in all)."
+      }
     },
     {
       "id": "mr:0926-teresia-couderc",
@@ -72173,7 +72179,10 @@
           "it": "Nel monastero di Cava de’ Tirreni in Campania",
           "source": "lead"
         }
-      ]
+      ],
+      "edition_notes": {
+        "martyrologium_romanum_2004_en_unofficial": "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin continues \"ætátis suæ cum sapiéntia et prudéntia múnere suo functus est\" (of his time, he discharged his office with wisdom and prudence)."
+      }
     },
     {
       "id": "mr:1124-petrus-dumoulin-borie-et-socii",

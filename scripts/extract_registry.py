@@ -871,6 +871,25 @@ EDITION_LABELS = {
 # edition alone; `note` (ENTRY_NOTES) is for remarks about the eulogy itself.
 # Deprecated IDs carry theirs in data/deprecated_ids.json.
 EDITION_NOTES = {
+    "mr:0920-andreas-kim-tae-gon-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"ten of whom are commemorated on this day\" where the Latin says "
+            "that all one hundred and three martyrs are celebrated together on this day."
+        ),
+    },
+    "mr:0926-sebastianus-nam-i-gwan-et-socii": {
+        EDITION_EN: (
+            "Translation error: \"twelve martyrs\" where the Latin has \"novem sociórum, mártyrum\" "
+            "(nine companions, martyrs: ten in all)."
+        ),
+    },
+    "mr:1124-balsamus": {
+        EDITION_EN: (
+            "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin "
+            "continues \"ætátis suæ cum sapiéntia et prudéntia múnere suo functus est\" (of his "
+            "time, he discharged his office with wisdom and prudence)."
+        ),
+    },
     "mr:0104-thomas-plumtree": {
         EDITION_EN: (
             "Translation error: \"choosing the noose over the axe\" where the Latin \"láquei pœnam "

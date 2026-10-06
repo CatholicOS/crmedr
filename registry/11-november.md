@@ -315,7 +315,7 @@
 | 24 | 7 | `mr:1124-portianus` |  | FR | dies_natalis |  |  |
 | 24 | 8 | `mr:1124-flora-et-maria` |  | ES | dies_natalis |  |  |
 | 24 | 9 | `mr:1124-albertus-lovaniensis` |  | FR | dies_natalis | same as `mr:1121-albertus` |  |
-| 24 | 10 | `mr:1124-balsamus` | * | IT | dies_natalis |  |  |
+| 24 | 10 | `mr:1124-balsamus` | * | IT | dies_natalis |  | 2004 English: Omission: the text breaks off after "amid troubles and conflicts"; the Latin continues "ætátis suæ cum sapiéntia et prudéntia múnere suo functus est" (of his time, he discharged his office with wisdom and prudence). |
 | 24 | 11 | `mr:1124-petrus-dumoulin-borie-et-socii` |  | VN | dies_natalis |  |  |
 | 24 | 12 | `mr:1124-maria-anna-sala` | * | IT | dies_natalis |  |  |
 | 24 | 13 | `mr:1124-nicetha-a-sancta-prudentia-et-socii` | * | ES | dies_natalis |  |  |
