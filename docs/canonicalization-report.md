@@ -935,6 +935,16 @@ mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-priva
 the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida. Three Latin subjects are corrected (Sancta Fides,
 Sancta Marina, Sanctus Ioannes Therestus).
 
+**The Italian 2004 against the Latin 2004 (October 2026)**: every eulogy of the Italian (CEI)
+edition was read against the Latin print. The discrepancies of substance found with high
+confidence are curator notes on the edition that errs, published for review: on the Italian
+(Holsatia rendered Alsazia at mr:0217-evermodus, Vasconia rendered Guascogna at
+mr:0223-raphaela-de-villalonga-ybarra, Christ "seduto" for "stantem" at mr:1226-stephanus) or,
+twice, on the Latin (sub Iacobo rege Primo at mr:0829-richardus-herst; the misprint dístulit for
+diffúdit at mr:0612-laurentius-maria-a-sancto-francisco-xaverio, in `data/misprints.json`). The
+Italian's rank of a feast for the patrons of Italy and of Europe (Festa for Memoria) is its own
+calendar, not an error. The findings of lower confidence await review.
+
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (`ID_CORRECTIONS` keeps them on regeneration):
 - Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);
