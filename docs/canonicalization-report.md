@@ -1255,11 +1255,14 @@ deprecated IDs (`attested_in: martyrologium_romanum_1914_en_unofficial`). The
 **1630 (Urban VIII) edition**, Baronius's annotated Vatican printing, was then
 transcribed from a two-pass proofread TEI (October 2026) and aligned Latin-to-Latin
 against the IDs of each day (its 1749 and 2004 texts, or the subject name for IDs
-attested only in the 1914 English): of its 2,797 elogia, 2,776 matched an ID of the same
-day, 15 were settled by reviewed overrides (spelling variants the matcher missed, such
-as the 1630 *Lucinius* of Angers under the 1914-attested `mr:0213-licinius`), and **6
-received new deprecated IDs** (`attested_in: martyrologium_romanum_1630`): eulogies that
-1630 prints on another day than any other edition (`mr:0105-domnio`, `mr:0714-henricus`,
+attested only in the 1914 English; an ID's name must be in the text): of its 2,812
+elogia, 2,770 matched an ID of the same day and 42 were settled by reviewed overrides —
+spelling variants and other names of the same subject the name check rejects (the 1630
+*Lucinius* of Angers under the 1914-attested `mr:0213-licinius`, now linked to
+`mr:1101-licinius`; *Peregrinus* under `mr:0613-cetheus`, *Dominica* under
+`mr:0706-cyriaca`, *Margarita* under `mr:0720-marina`). **6 of these IDs are new
+deprecated IDs** (`attested_in: martyrologium_romanum_1630`): eulogies that 1630 prints
+on another day than any other edition (`mr:0105-domnio`, `mr:0714-henricus`,
 `mr:0816-hyacinthus`, `mr:0820-stephanus`, `mr:0824-vigilia-bartholomaei-apostoli`,
 `mr:0825-bartholomaeus-apostolus`), each with its twins' slug and linked by `same_eulogy`.
 After later corrections (#25, #44, #45, #47, #49, #51, #52, #56) the registry holds **6,256** entries (`entry_count` =
