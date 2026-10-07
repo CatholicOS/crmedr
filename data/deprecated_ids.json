@@ -280,6 +280,18 @@
   ]
  },
  {
+  "id": "mr:0105-domnio",
+  "month": 1,
+  "day": 5,
+  "entry": 4,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": "IT",
+  "same_eulogy": [
+   "mr:0716-domnio"
+  ]
+ },
+ {
   "id": "mr:0106-martyres-africae",
   "month": 1,
   "day": 6,
@@ -1779,7 +1791,10 @@
   "entry": 7,
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
-  "country": "FR"
+  "country": "FR",
+  "same_eulogy": [
+   "mr:1101-licinius"
+  ]
  },
  {
   "id": "mr:0213-gregorius-ii",
@@ -8106,6 +8121,19 @@
   ]
  },
  {
+  "id": "mr:0714-henricus",
+  "month": 7,
+  "day": 14,
+  "entry": 8,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": "DE",
+  "same_eulogy": [
+   "mr:0713-henricus",
+   "mr:0715-henricus"
+  ]
+ },
+ {
   "id": "mr:0715-henricus",
   "month": 7,
   "day": 15,
@@ -9403,6 +9431,19 @@
   ]
  },
  {
+  "id": "mr:0816-hyacinthus",
+  "month": 8,
+  "day": 16,
+  "entry": 1,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": "PL",
+  "same_eulogy": [
+   "mr:0815-hyacinthus",
+   "mr:0817-hyacinthus"
+  ]
+ },
+ {
   "id": "mr:0817-octava-laurentii",
   "month": 8,
   "day": 17,
@@ -9596,6 +9637,19 @@
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT"
+ },
+ {
+  "id": "mr:0820-stephanus",
+  "month": 8,
+  "day": 20,
+  "entry": 9,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": "HU",
+  "same_eulogy": [
+   "mr:0816-stephanus",
+   "mr:0902-stephanus"
+  ]
  },
  {
   "id": "mr:0821-ioanna-francisca-fremiot-de-chantal",
@@ -9877,6 +9931,18 @@
   "country": null
  },
  {
+  "id": "mr:0824-vigilia-bartholomaei-apostoli",
+  "month": 8,
+  "day": 24,
+  "entry": 1,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": null,
+  "same_eulogy": [
+   "mr:0823-vigilia-bartholomaei-apostoli"
+  ]
+ },
+ {
   "id": "mr:0825-nemesius-et-lucilla",
   "month": 8,
   "day": 25,
@@ -9925,6 +9991,18 @@
   "country": "ES",
   "same_eulogy": [
    "mr:0819-maginus"
+  ]
+ },
+ {
+  "id": "mr:0825-bartholomaeus-apostolus",
+  "month": 8,
+  "day": 25,
+  "entry": 1,
+  "deprecated": true,
+  "attested_in": "martyrologium_romanum_1630",
+  "country": "IL",
+  "same_eulogy": [
+   "mr:0824-bartholomaeus-apostolus"
   ]
  },
  {
