@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6250,
+  "entry_count": 6257,
   "current_count": 4640,
-  "deprecated_count": 1610,
+  "deprecated_count": 1617,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -39649,6 +39649,7 @@
       "typology": "dies_natalis",
       "unnumbered": true,
       "same_eulogy": [
+        "mr:0714-henricus",
         "mr:0715-henricus"
       ]
     },
@@ -48342,6 +48343,7 @@
         }
       ],
       "same_eulogy": [
+        "mr:0816-hyacinthus",
         "mr:0817-hyacinthus"
       ]
     },
@@ -48574,13 +48576,14 @@
       "asterisk": false,
       "country": "HU",
       "typology": "celebratio",
-      "unnumbered": true,
-      "same_eulogy": [
-        "mr:0902-stephanus"
-      ],
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"being Alba Regalis just and peaceful ... at in Hungary\" where the Latin has \"iustus et pacíficus ... donec Albæ Regáli in Hungária\" (just and peaceful ... until, at Székesfehérvár in Hungary); and \"churches\" where the Latin has \"ópibus\" (wealth)."
-      }
+      },
+      "unnumbered": true,
+      "same_eulogy": [
+        "mr:0820-stephanus",
+        "mr:0902-stephanus"
+      ]
     },
     {
       "id": "mr:0816-arsacius",
@@ -50644,7 +50647,10 @@
       "asterisk": false,
       "country": "IL",
       "typology": "dies_natalis",
-      "unnumbered": true
+      "unnumbered": true,
+      "same_eulogy": [
+        "mr:0825-bartholomaeus-apostolus"
+      ]
     },
     {
       "id": "mr:0824-tatio",
@@ -78799,6 +78805,18 @@
       ]
     },
     {
+      "id": "mr:0105-domnio",
+      "month": 1,
+      "day": 5,
+      "entry": 4,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0716-domnio"
+      ]
+    },
+    {
       "id": "mr:0106-martyres-africae",
       "month": 1,
       "day": 6,
@@ -80332,6 +80350,16 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
+    },
+    {
+      "id": "mr:0213-lucinius-andegavorum",
+      "month": 2,
+      "day": 13,
+      "entry": 7,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "FR",
+      "note": "Bishop of Angers (Andegavi), printed in the 1630 edition only; absent from the 1749 and 2004 editions."
     },
     {
       "id": "mr:0214-valentinus-interamnae",
@@ -86625,6 +86653,19 @@
       ]
     },
     {
+      "id": "mr:0714-henricus",
+      "month": 7,
+      "day": 14,
+      "entry": 8,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "DE",
+      "same_eulogy": [
+        "mr:0713-henricus",
+        "mr:0715-henricus"
+      ]
+    },
+    {
       "id": "mr:0715-henricus",
       "month": 7,
       "day": 15,
@@ -86633,7 +86674,8 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "DE",
       "same_eulogy": [
-        "mr:0713-henricus"
+        "mr:0713-henricus",
+        "mr:0714-henricus"
       ]
     },
     {
@@ -86691,7 +86733,10 @@
       "entry": 7,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": "IT"
+      "country": "IT",
+      "same_eulogy": [
+        "mr:0105-domnio"
+      ]
     },
     {
       "id": "mr:0716-vitalianus",
@@ -87922,6 +87967,19 @@
       ]
     },
     {
+      "id": "mr:0816-hyacinthus",
+      "month": 8,
+      "day": 16,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "PL",
+      "same_eulogy": [
+        "mr:0815-hyacinthus",
+        "mr:0817-hyacinthus"
+      ]
+    },
+    {
       "id": "mr:0817-octava-laurentii",
       "month": 8,
       "day": 17,
@@ -87939,7 +87997,8 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "PL",
       "same_eulogy": [
-        "mr:0815-hyacinthus"
+        "mr:0815-hyacinthus",
+        "mr:0816-hyacinthus"
       ]
     },
     {
@@ -88117,6 +88176,19 @@
       "country": "IT"
     },
     {
+      "id": "mr:0820-stephanus",
+      "month": 8,
+      "day": 20,
+      "entry": 9,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "HU",
+      "same_eulogy": [
+        "mr:0816-stephanus",
+        "mr:0902-stephanus"
+      ]
+    },
+    {
       "id": "mr:0821-ioanna-francisca-fremiot-de-chantal",
       "month": 8,
       "day": 21,
@@ -88267,7 +88339,10 @@
       "entry": 1,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": null
+      "country": null,
+      "same_eulogy": [
+        "mr:0824-vigilia-bartholomaei-apostoli"
+      ]
     },
     {
       "id": "mr:0823-philippus-benizi",
@@ -88396,6 +88471,18 @@
       "country": null
     },
     {
+      "id": "mr:0824-vigilia-bartholomaei-apostoli",
+      "month": 8,
+      "day": 24,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": null,
+      "same_eulogy": [
+        "mr:0823-vigilia-bartholomaei-apostoli"
+      ]
+    },
+    {
       "id": "mr:0825-nemesius-et-lucilla",
       "month": 8,
       "day": 25,
@@ -88444,6 +88531,18 @@
       "country": "ES",
       "same_eulogy": [
         "mr:0819-maginus"
+      ]
+    },
+    {
+      "id": "mr:0825-bartholomaeus-apostolus",
+      "month": 8,
+      "day": 25,
+      "entry": 1,
+      "deprecated": true,
+      "attested_in": "martyrologium_romanum_1630",
+      "country": "IL",
+      "same_eulogy": [
+        "mr:0824-bartholomaeus-apostolus"
       ]
     },
     {
@@ -88824,7 +88923,8 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "HU",
       "same_eulogy": [
-        "mr:0816-stephanus"
+        "mr:0816-stephanus",
+        "mr:0820-stephanus"
       ]
     },
     {

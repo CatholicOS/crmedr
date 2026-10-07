@@ -859,11 +859,12 @@ EDITION_EN = "martyrologium_romanum_2004_en_unofficial"
 EDITIONS_2004 = (EDITION_LA, EDITION_IT, EDITION_EN)
 OVERRIDE_KEYS = {"entry", "asterisk", "unnumbered", "absent"}
 # The historical editions (their texts live in martyrology-api).
+EDITION_1630 = "martyrologium_romanum_1630"
 EDITION_1749 = "martyrologium_romanum_1749"
 EDITION_1914 = "martyrologium_romanum_1914_en_unofficial"
 EDITION_LABELS = {
     EDITION_LA: "2004 Latin", EDITION_IT: "2004 Italian", EDITION_EN: "2004 English",
-    EDITION_1749: "1749 Latin", EDITION_1914: "1914 English",
+    EDITION_1630: "1630 Latin", EDITION_1749: "1749 Latin", EDITION_1914: "1914 English",
 }
 
 # A curator's note that concerns one edition's text only (a mistranslation, a

@@ -211,7 +211,7 @@
 | 15 | 5 | `mr:0815-alypius` |  | DZ | commemoratio |  |  |
 | 15 | 6 | `mr:0815-altfridus` | * | DE | dies_natalis |  |  |
 | 15 | 7 | `mr:0815-stephanus` | * | HU | dies_natalis |  |  |
-| 15 | 8 | `mr:0815-hyacinthus` |  | PL | dies_natalis | same as `mr:0817-hyacinthus` |  |
+| 15 | 8 | `mr:0815-hyacinthus` |  | PL | dies_natalis | same as `mr:0816-hyacinthus`; same as `mr:0817-hyacinthus` |  |
 | 15 | 9 | `mr:0815-haymo-taparelli` | * | IT | dies_natalis |  |  |
 | 15 | 10 | `mr:0815-iuliana-de-busto-arsitio` | * | IT | dies_natalis |  |  |
 | 15 | 11 | `mr:0815-stanislaus-kostka` |  | IT | dies_natalis |  |  |
@@ -225,7 +225,7 @@
 | 15 | 19 | `mr:0815-carmelus-sastre-sastre` | * | ES | dies_natalis |  |  |
 | 15 | 20 | `mr:0815-iacobus-bonet-nadal` | * | ES | dies_natalis |  |  |
 | 15 | 21 | `mr:0815-claudius-granzotto` | * | IT | dies_natalis |  |  |
-| 16 | (1) | `mr:0816-stephanus` |  | HU | celebratio | same as `mr:0902-stephanus` | 2004 English: Translation error: "being Alba Regalis just and peaceful ... at in Hungary" where the Latin has "iustus et pacíficus ... donec Albæ Regáli in Hungária" (just and peaceful ... until, at Székesfehérvár in Hungary); and "churches" where the Latin has "ópibus" (wealth). |
+| 16 | (1) | `mr:0816-stephanus` |  | HU | celebratio | same as `mr:0820-stephanus`; same as `mr:0902-stephanus` | 2004 English: Translation error: "being Alba Regalis just and peaceful ... at in Hungary" where the Latin has "iustus et pacíficus ... donec Albæ Regáli in Hungária" (just and peaceful ... until, at Székesfehérvár in Hungary); and "churches" where the Latin has "ópibus" (wealth). |
 | 16 | 2 | `mr:0816-arsacius` |  | TR | commemoratio |  |  |
 | 16 | 3 | `mr:0816-theodorus` |  | CH | dies_natalis |  |  |
 | 16 | 4 | `mr:0816-armagilus` | * | FR | dies_natalis |  |  |
@@ -347,7 +347,7 @@
 | 23 | 13 | `mr:0823-ioannes-maria-a-cruce` | * | ES | dies_natalis |  |  |
 | 23 | 14 | `mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero` | * | ES | dies_natalis |  |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE | dies_natalis |  |  |
-| 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis |  |  |
+| 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis | same as `mr:0825-bartholomaeus-apostolus` |  |
 | 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  | 1914 English: Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian). |
 | 24 | 3 | `mr:0824-audoenus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR | dies_natalis |  |  |
