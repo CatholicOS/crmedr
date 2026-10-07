@@ -13,7 +13,7 @@
 | 1 | 7 | `mr:1101-severinus` |  | IT | dies_natalis |  |  |
 | 1 | 8 | `mr:1101-magnus` |  | IT | dies_natalis | same as `mr:1105-magnus` |  |
 | 1 | 9 | `mr:1101-vigor` |  | FR | dies_natalis |  |  |
-| 1 | 10 | `mr:1101-licinius` |  | FR | dies_natalis |  |  |
+| 1 | 10 | `mr:1101-licinius` |  | FR | dies_natalis | same as `mr:0213-licinius` |  |
 | 1 | 11 | `mr:1101-maturinus` |  | FR | dies_natalis |  |  |
 | 1 | 12 | `mr:1101-audomarus` |  | FR | dies_natalis | same as `mr:0909-audomarus` |  |
 | 1 | 13 | `mr:1101-rainerius-aretinus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Città della Pieve" where the Latin has "Burgi Sancti Sepúlcri" (Sansepolcro). |

@@ -1791,7 +1791,10 @@
   "entry": 7,
   "deprecated": true,
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
-  "country": "FR"
+  "country": "FR",
+  "same_eulogy": [
+   "mr:1101-licinius"
+  ]
  },
  {
   "id": "mr:0213-gregorius-ii",
