@@ -2,9 +2,9 @@
   "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
-  "entry_count": 6257,
+  "entry_count": 6256,
   "current_count": 4640,
-  "deprecated_count": 1617,
+  "deprecated_count": 1616,
   "entries": [
     {
       "id": "mr:0101-maria-dei-genetrix",
@@ -80350,16 +80350,6 @@
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR"
-    },
-    {
-      "id": "mr:0213-lucinius-andegavorum",
-      "month": 2,
-      "day": 13,
-      "entry": 7,
-      "deprecated": true,
-      "attested_in": "martyrologium_romanum_1630",
-      "country": "FR",
-      "note": "Bishop of Angers (Andegavi), printed in the 1630 edition only; absent from the 1749 and 2004 editions."
     },
     {
       "id": "mr:0214-valentinus-interamnae",
