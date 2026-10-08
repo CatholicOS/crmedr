@@ -762,6 +762,20 @@ eulogies of the day under the wrong ID.
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy
   (mr:1029-zenobius).
 
+**The Ursulines of Orange, July 9 (applied, October 2026, #77)**: the Latin 2004 prints
+*beatárum Melániæ et Maríæ Annæ Magdalénæ de Guilhermier atque Maríæ Annæ Margarítæ ab
+Angelis de Rocher*. The other Orange eulogies give the baptismal name in brackets after the
+religious name (*Agnétis a Iesu (Sýlviæ) de Romillon*), and "et" stands where that bracket
+would be: Melania is the religious name of Maria Anna Magdalena de Guilhermier (Sister
+Sainte-Mélanie), and the eulogy commemorates two martyrs, guillotined at Orange on 9 July 1794.
+The workbook ID, mr:0709-melania-et-maria-anna-magdalena-de-guilhermier, had taken the one
+woman for the pair and left out the second. It becomes
+mr:0709-melania-et-maria-anna-margarita-ab-angelis, named by the religious names like
+mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu (`ID_CORRECTIONS`, kept identical to
+CatholicOS/martyrology-texts). Edition notes record the error in the Latin, the unofficial
+English ("Mélanie and Mary Anne Magdalen") and the CEI ("Melania Marianna, Maddalena de
+Guilhermier").
+
 **Eulogies printed on another day (applied, October 2026, #49)**: the day is part of the
 identity. The 1749 and 1914 alignments had keyed 331 eulogies (211 distinct, read one by
 one against the 2004 text) to an ID of another day. Each now has an ID of the day it is
@@ -1327,6 +1341,21 @@ epithets the IDs now carry ("Saint Amos the Prophet", "Saint Thomas the Apostle"
 Italian "Sant’Amos Profeta"). English labels use the conventional English names of the prophets (Hosea, Haggai, not
 Osee, Aggaeus). Two curator notes record where the unofficial English text errs: "the Youth" for Theophilus the
 Younger, and "Leo III the Isaurian" for Leo VI in the eulogy of Anthony Cauleas.
+
+**Italian subject labels (October 2026, #75).** 537 Italian labels are corrected. Every `-et-socii` eulogy now
+follows the Latin "Sancti N. et socii": plural honorific, the first-named subject, "e compagni" ("e compagne" for
+women), with no count ("e dodici compagni") and no second name ("Santi Caritone e compagni"); 181 of the 297 labels
+change, 166 of which had lost the "e compagni". A descriptor before a name is dropped ("Santi martiri Vittorino" -> "Santi Vittorino"),
+except in anonymous groups ("Santi martiri Scillitani"). Names cut at a particle are completed ("San Luigi Maria
+Grignion de Montfort", not "… Grignion de"), as are surnames the slug carries ("Beata Maria Teresa Fasce"), but a
+religious-name label does not gain the surname the slug leaves out (rule of one name form). The CEI prints a stress
+mark on the names it Italianizes (Argéo, Teógene, Sant’Ágabo): it is not their spelling and is removed (Argeo);
+final accents (Gesù, Natività) and the accents of names left untranslated (García, Brébeuf, Nguyễn), which the Latin
+text prints the same way, are kept. Also corrected: 16 pair labels that had lost their second name ("Santi Cornelio
+e Cipriano"), 16 Vietnamese names garbled in an earlier copy of the CEI text ("Nguyñên" -> "Nguyễn"), and 9 labels
+taken from the wrong words (mr:0302-agnes "Santa Chiara nel monastero da lei" -> "Sant’Agnese"). `extract_subjects.py`
+now runs a name on through surname particles, skips a bracketed baptismal name and a leading descriptor, and
+normalizes each Italian label with `it_label`.
 
 **Review of the Italian and English subjects (October 2026, #31).** The extraction
 had taken the first saint named anywhere in the text when it fell within its first 60

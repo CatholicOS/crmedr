@@ -435,6 +435,11 @@ ID_CORRECTIONS = {
     # February 20 (Constantinople and Persia, deprecated IDs of the 1749 edition) by
     # his see. Kept in sync with CatholicOS/martyrology-texts.
     "mr:0220-eleutherius": "mr:0220-eleutherius-tornaci",
+    # #77: the 2004 Latin's "et" splits Sister Mélanie (Maria Anna Magdalena de
+    # Guilhermier) in two; the eulogy's second martyr is Maria Anna Margarita ab
+    # Angelis de Rocher. Named by the religious names, like mr:0710. Kept in sync
+    # with CatholicOS/martyrology-texts.
+    "mr:0709-melania-et-maria-anna-magdalena-de-guilhermier": "mr:0709-melania-et-maria-anna-margarita-ab-angelis",
 
     # #52: slugs that misnamed the 2004 eulogy (a truncated name, the cemetery's name,
     # the next sentence's word, a genitive stem), and the prophets, which keep
@@ -2645,6 +2650,21 @@ EDITION_NOTES = {
     "mr:1218-gatianus": {
         EDITION_1914: (
             "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
+        ),
+    },
+    "mr:0709-melania-et-maria-anna-margarita-ab-angelis": {
+        EDITION_LA: (
+            "Error: \"Melániæ et Maríæ Annæ Magdalénæ de Guilhermier\" makes two martyrs of one: "
+            "Melania is the religious name of Maria Anna Magdalena de Guilhermier. The eulogy "
+            "commemorates two Ursulines, she and Maria Anna Margarita ab Angelis de Rocher."
+        ),
+        EDITION_IT: (
+            "Translation error: \"Melania Marianna, Maddalena de Guilhermier\" divides one name "
+            "in two: Melania is the religious name of Marianna Maddalena de Guilhermier."
+        ),
+        EDITION_EN: (
+            "Translation error: \"Mélanie and Mary Anne Magdalen de Guilhermier\" makes two martyrs "
+            "of one: Mélanie is the religious name of Mary Anne Magdalen de Guilhermier."
         ),
     },
 }

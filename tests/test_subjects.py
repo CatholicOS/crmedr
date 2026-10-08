@@ -82,3 +82,67 @@ class LatinSubjectOverridesTest(unittest.TestCase):
             "mr:0825-eusebius-et-socii": "Sancti Eusebius et socii",
             "mr:0709-maria-a-iesu-crucifixo": "Beata Maria a Iesu Crucifixo Petkovic",
         })
+
+
+class ItalianLabelTest(unittest.TestCase):
+    """#75: names cut at a particle, the -et-socii form, CEI stress marks."""
+
+    def test_name_runs_through_surname_particles(self):
+        it = "A Fictopoli, beato Giovanni Battista Fittizio du Fictier de la Fictière, sacerdote."
+        self.assertEqual(s.vern_subject("mr:0101-ioannes-baptista-fictitius", it, s.IT_M),
+                         "Beato Giovanni Battista Fittizio du Fictier de la Fictière")
+
+    def test_bracketed_baptismal_name_and_descriptor_are_skipped(self):
+        it = "A Fictopoli, beati martiri Edmigio (Isidoro) Primo Fittizio e compagni, martiri."
+        self.assertEqual(s.vern_subject("mr:0101-edmigius-primo-fictitius-et-socii", it, s.IT_M),
+                         "Beati Edmigio Primo Fittizio")
+
+    def test_stress_marks_are_removed_from_italianized_names(self):
+        self.assertEqual(s.it_label("mr:0101-fictitius", "San Fittízio", la_text="sancti Fictítii"),
+                         "San Fittizio")
+        self.assertEqual(s.it_label("mr:0101-fictitius", "Sant’Ágabo", la_text="sancti Ágabi"), "Sant’Agabo")
+
+    def test_spelling_accents_are_kept(self):
+        # Final accents are Italian spelling; a surname the Latin prints too is foreign spelling.
+        self.assertEqual(s.it_label("mr:0101-maria-a-iesu", "Beata Maria di Gesù García",
+                                    la_text="beátae Maríae a Iesu García"), "Beata Maria di Gesù García")
+
+    def test_et_socii_takes_e_compagni(self):
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Santi Fittizio"), "Santi Fittizio e compagni")
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Santi martiri Fittizio e dodici compagni"),
+                         "Santi Fittizio e compagni")
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Sant’Fittizio e Altrone"),
+                         "Santi Fittizio e compagni")
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Beato Fittizio"), "Beati Fittizio e compagni")
+
+    def test_et_socii_women_take_e_compagne(self):
+        self.assertEqual(s.it_label("mr:0101-fictitia-et-socii", "Beata Fittizia"), "Beate Fittizia e compagne")
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Beati Fittizio",
+                                    "beati Fittizio e cinque compagne, martiri."), "Beati Fittizio e compagne")
+
+    def test_elided_honorific_takes_the_companions_gender(self):
+        self.assertEqual(s.it_label("mr:0101-agnes-et-socii", "Sant’Agnese", "sant’Agnese e compagne, vergini."),
+                         "Sante Agnese e compagne")
+        self.assertEqual(s.it_label("mr:0101-andreas-et-socii", "Sant’Andrea e compagni"),
+                         "Santi Andrea e compagni")
+
+    def test_singular_and_feminine_descriptors_are_skipped(self):
+        it = "A Fictopoli, passione del santo martire Giovanni Fittizio, sacerdote."
+        self.assertEqual(s.vern_subject("mr:0101-ioannes-fictitius", it, s.IT_M), "Santo Giovanni Fittizio")
+        self.assertEqual(s.it_label("mr:0101-ioannes-fictitius", "Santo Giovanni Fittizio"), "San Giovanni Fittizio")
+        it = "A Fictopoli, sante sorelle Fittizia e Altrona, vergini."
+        self.assertEqual(s.vern_subject("mr:0101-fictitia-et-altrona", it, s.IT_M), "Sante Fittizia e Altrona")
+
+    def test_religious_name_with_e_is_not_cut(self):
+        self.assertEqual(s.it_label("mr:0101-fictitius-a-iesu-et-socii", "Beati Fittizio di Gesù e Maria"),
+                         "Beati Fittizio di Gesù e Maria e compagni")
+
+    def test_descriptor_before_a_name_is_dropped(self):
+        self.assertEqual(s.it_label("mr:0101-fictitius-et-altro", "Santi martiri Fittizio e Altrone"),
+                         "Santi Fittizio e Altrone")
+        self.assertEqual(s.it_label("mr:0101-ioannes-fictitius", "Santo martire Giovanni Fittizio"),
+                         "San Giovanni Fittizio")
+
+    def test_group_keeps_its_noun(self):
+        self.assertEqual(s.it_label("mr:0101-martyres-fictitiani", "Santi martiri Fittiziani"),
+                         "Santi martiri Fittiziani")

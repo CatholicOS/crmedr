@@ -117,7 +117,7 @@
 | 9 | 3 | `mr:0709-hadrianus-fortescue` | * | GB | dies_natalis |  |  |
 | 9 | 4 | `mr:0709-nicolaus-pieck-et-socii` |  | NL | dies_natalis |  |  |
 | 9 | 5 | `mr:0709-veronica-giuliani` |  | IT | dies_natalis |  |  |
-| 9 | 6 | `mr:0709-melania-et-maria-anna-magdalena-de-guilhermier` | * | FR | dies_natalis |  |  |
+| 9 | 6 | `mr:0709-melania-et-maria-anna-margarita-ab-angelis` | * | FR | dies_natalis |  | 2004 Latin: Error: "Melániæ et Maríæ Annæ Magdalénæ de Guilhermier" makes two martyrs of one: Melania is the religious name of Maria Anna Magdalena de Guilhermier. The eulogy commemorates two Ursulines, she and Maria Anna Margarita ab Angelis de Rocher. 2004 Italian: Translation error: "Melania Marianna, Maddalena de Guilhermier" divides one name in two: Melania is the religious name of Marianna Maddalena de Guilhermier. 2004 English: Translation error: "Mélanie and Mary Anne Magdalen de Guilhermier" makes two martyrs of one: Mélanie is the religious name of Mary Anne Magdalen de Guilhermier. |
 | 9 | 7 | `mr:0709-ioachim-he-kaizhi` |  | CN | dies_natalis |  |  |
 | 9 | 8 | `mr:0709-gregorius-grassus-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 9 | `mr:0709-paulina-a-corde-iesu-agonizante` |  | BR | dies_natalis |  |  |

@@ -61,9 +61,16 @@ MARKER_LA = re.compile(r'\b([Ss]anct|[Bb]eat)[a-zA-ZÀ-ſ]*')
 # "sant’" is elided onto the name with no space ("sant’Eutizio").
 # Only the honorific is case-insensitive: the name must start with a capital
 # ("una santa vita" is not a subject).
+# A name runs on through the particles of a surname or religious name ("de la
+# Salle", "Jarrige de la Morélie du Breuil", "dell’Immacolata", "d’Andalò").
+IT_PARTICLE = r"(?:e|ed|da|di|de'|del|della|dei|de\s+la|de\s+las|de\s+los|de|du|des|van\s+der|van|von|y)"
+IT_WORD = r"(?:d['’]|dell['’])?[A-ZÀ-ÖØ-ÞĐŁŚŠŽŻČĆ][\w'’\-]+"
+# A descriptor between honorific and name ("beati martiri Pietro Delépine") is
+# not part of the subject.
+IT_DESCRIPTORS = r"(?:martiri|martire|fratelli|sorelle|vescovi|monaci|vergini|sacerdoti|coniugi|sposi)"
+IT_DESCRIPTOR = rf"(?:{IT_DESCRIPTORS}\s+)*"
 IT_M = re.compile(r"\b((?i:sant['’]|santi|sante|santo|santa|san|beati|beate|beato|beata))(?:(?<=['’])|\s+)"
-                  r"([A-ZÀ-Ý][\w'’\-]+(?:\s+(?:e|da|di|de'|del|della|dei)\s+"
-                  r"[A-ZÀ-Ý][\w'’\-]+|\s+[A-ZÀ-Ý][\w'’\-]+){0,3})")
+                  rf"{IT_DESCRIPTOR}({IT_WORD}(?:(?:\s+{IT_PARTICLE})+\s+{IT_WORD}|\s+{IT_WORD}){{0,6}})")
 # The English text writes the subject's honorific in lowercase ("At Lviv,
 # blessed Sigismund ..."), and a saint named in a place, church or order with a
 # capital ("at Saint Paul's"): both are matched; the choice is made below.
@@ -157,6 +164,9 @@ def vern_subject(mrid, text, pat, la_text=None):
     Italian such honorifics are capitalized mid-text and are skipped."""
     if not text:
         return None
+    if pat is IT_M:
+        # A religious name's baptismal name in brackets: "Edmigio (Isidoro) Primo".
+        text = re.sub(r"\s*\([^)]*\)", '', text)
     mentions = list(pat.finditer(text))
     if not mentions:
         return None
@@ -192,6 +202,69 @@ def vern_subject(mrid, text, pat, la_text=None):
     return None
 
 
+IT_PLURAL = {'san': 'Santi', 'santo': 'Santi', 'sant’': 'Santi', "sant'": 'Santi', 'santa': 'Sante',
+             'beato': 'Beati', 'beata': 'Beate'}
+IT_HONORIFIC = re.compile(r"^(Sant['’]|Santi|Sante|Santo|Santa|San|Beati|Beate|Beato|Beata)(?:(?<=['’])|\s+)")
+STRESS = {'\u0300', '\u0301'}
+# Names the Latin text prints undeclined with the same stress mark (places,
+# Italian surnames, indeclinables), so the test in strip_stress keeps them.
+IT_STRESS_MARKED = {'Aozaráza', 'Aríma', 'Cetína', 'Deusdédit', 'Himláya', 'Láconi', 'Mánaen', 'Maryáhb',
+                    'Nicosía', 'Ricásoli', 'Rúain', 'Ruíz', 'Sérvoli', 'Victorí'}
+# A descriptor before a named subject ("santi martiri Vittorino", "beati
+# fratelli Giovanni e Renato Lego") is not part of the subject.
+IT_LEAD_DESCRIPTOR = re.compile(rf"^(?:{IT_DESCRIPTORS}\s+)+(?=[A-ZÀ-ÖØ-ÞĐŁŚŠŽŻČĆ])")
+
+
+def strip_stress(word, keep):
+    """The CEI prints a stress mark on names it Italianizes (Argéo, Teógene,
+    Sant’Ágabo), which is not their spelling. Removed from a non-final vowel,
+    unless the word is a name left untranslated: one the Latin text prints too
+    (García, Brébeuf, Nguyễn; the Latin declines the names it translates) or the
+    English prints with the same accent. Final accents are Italian spelling
+    (Gesù, Natività) and are kept."""
+    out = []
+    for part in re.split(r"([’'\-])", word):
+        if not part or part in "’'-" or part not in IT_STRESS_MARKED and (
+                fold(part).strip() in keep['la'] or part in keep['en']):
+            out.append(part)
+            continue
+        d = unicodedata.normalize('NFD', part)
+        last = max(i for i, c in enumerate(d) if not unicodedata.combining(c))
+        out.append(unicodedata.normalize('NFC', ''.join(
+            c for i, c in enumerate(d) if not (c in STRESS and i < last))))
+    return ''.join(out)
+
+
+def it_label(mrid, label, text='', en='', la_text=''):
+    """Normalize an Italian subject: stress marks off (strip_stress); for an
+    -et-socii eulogy the Latin form "Sancti N. et socii": plural honorific, the
+    first-named subject only, no count ("e dodici compagni"), then "e compagni",
+    or "e compagne" for women. A descriptor before a name is dropped from any
+    label ("santi martiri Vittorino")."""
+    if not label:
+        return label
+    # Without a Latin text (printed only in the CEI edition), the slug's words.
+    keep = {'la': set(fold(la_text).split()) if la_text else set(mrid.split('-', 1)[1].split('-')),
+            'en': set(re.findall(r"\w+", en or ''))}
+    label = ' '.join(strip_stress(w, keep) for w in label.split(' '))
+    m = IT_HONORIFIC.match(label)
+    if not m:
+        return label
+    hon, name = m.group(1), label[m.end():]
+    if not set(mrid.split('-', 1)[1].split('-')) & (GROUPS_M | GROUPS_F) - {'socii'}:  # "santi martiri Scillitani"
+        name = IT_LEAD_DESCRIPTOR.sub('', name)
+    if hon == 'Santo' and not re.match(r"S[^aeiou]|Z", name):    # santo martire Giovanni
+        hon = 'Sant’' if re.match(r"[AEIOUÀ-Ü]", name) else 'San'
+    if not mrid.endswith('-et-socii'):
+        return f"{hon}{'' if hon.endswith(('’', "'")) else ' '}{name}"
+    female = hon in ('Santa', 'Sante', 'Beata', 'Beate') or bool(re.search(r'\bcompagne\b', label)) or \
+        bool(re.search(r'\bcompagne\b', text or '') and not re.search(r'\bcompagni\b', text or ''))
+    # "Sant’" is either gender: women's evidence makes it "Sante" (Sant’Agnese e compagne).
+    hon = 'Sante' if female and hon in ('Sant’', "Sant'") else IT_PLURAL.get(hon.lower(), hon)
+    name = re.split(r",|\s+ed?\s+(?!Maria\b)", name)[0]         # N. e compagni / e N2 (not "Gesù e Maria")
+    return f"{hon} {name.strip()} e {'compagne' if female else 'compagni'}"
+
+
 def main():
     if len(sys.argv) < 2:
         sys.exit(__doc__)
@@ -214,12 +287,13 @@ def main():
     for e in current:
         out['la'][e['id']] = LA_SUBJECT_OVERRIDES.get(e['id']) or la_subject(e['id'], tex['la'].get(e['id'], ''))
         la_text = tex['la'].get(e['id'], '')
-        s = vern_subject(e['id'], tex['it'].get(e['id'], ''), IT_M, la_text)
-        if s:
-            out['it'][e['id']] = s
         s = vern_subject(e['id'], tex['en'].get(e['id'], ''), EN_M, la_text)
         if s:
             out['en'][e['id']] = s
+        s = vern_subject(e['id'], tex['it'].get(e['id'], ''), IT_M, la_text)
+        if s:
+            out['it'][e['id']] = it_label(e['id'], s, tex['it'].get(e['id'], ''),
+                                         out['en'].get(e['id'], ''), la_text)
     for e in reg['entries']:
         if e.get('deprecated') and e.get('subject_la'):
             out['la'][e['id']] = e['subject_la']
