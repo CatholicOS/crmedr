@@ -74,5 +74,50 @@ class FootnoteNamesTest(unittest.TestCase):
         self.assertEqual(pt.footnote_names("Cf. Acta Sanctorum."), ([], ["Cf. Acta Sanctorum."]))
 
 
+LEXICON = {pt.name_key(w): w for w in
+           ["Paulus", "Ioannes", "Leo", "Felix", "Clemens", "Agatha", "Basilius", "Miki", "Chong", "Ha", "Sang",
+            "Petrus", "Brito", "Iacobus"]}
+
+
+class NominativeTest(unittest.TestCase):
+    def test_declensions_resolved_by_the_lexicon(self):
+        self.assertEqual(pt.nominative("Pauli", LEXICON), "Paulus")
+        self.assertEqual(pt.nominative("Ioánnis", LEXICON), "Ioannes")
+        self.assertEqual(pt.nominative("Leónis", LEXICON), "Leo")
+        self.assertEqual(pt.nominative("Felícis", LEXICON), "Felix")
+        self.assertEqual(pt.nominative("Cleméntis", LEXICON), "Clemens")
+        self.assertEqual(pt.nominative("Ágathæ", LEXICON), "Agatha")
+        self.assertEqual(pt.nominative("Basílii", LEXICON), "Basilius")
+
+    def test_an_undeclined_name_is_itself(self):
+        self.assertEqual(pt.nominative("Miki", LEXICON), "Miki")
+
+    def test_unknown_or_ambiguous_is_none(self):
+        self.assertIsNone(pt.nominative("Fictiánis", LEXICON))
+        both = dict(LEXICON, **{pt.name_key("Paulius"): "Paulius"})  # Pauli: Paulus or Paulius
+        self.assertIsNone(pt.nominative("Pauli", both))
+
+
+class TextCompanionsTest(unittest.TestCase):
+    def test_the_opening_group_of_names(self):
+        names, uncertain = pt.text_companions(
+            "Romæ, sanctórum mártyrum Pauli, Ioánnis et Leónis, qui sub Diocletiáno passi sunt.", LEXICON)
+        self.assertEqual(names, ["Paulus", "Ioannes", "Leo"])
+        self.assertEqual(uncertain, [])
+
+    def test_multiword_names_particles_and_et_sociorum(self):
+        names, _ = pt.text_companions(
+            "In Corea, sanctórum Pauli Chong Ha Sang et Ioánnis de Brito et sociórum.", LEXICON)
+        self.assertEqual(names, ["Paulus Chong Ha Sang", "Ioannes de Brito"])
+
+    def test_an_uncertain_form_is_reported_not_guessed(self):
+        names, uncertain = pt.text_companions("Sanctórum Pauli et Fictiánis, mártyrum.", LEXICON)
+        self.assertEqual(names, ["Paulus"])
+        self.assertEqual(uncertain, ["Fictiánis"])
+
+    def test_no_plural_honorific_reads_nothing(self):
+        self.assertEqual(pt.text_companions("Romæ, sancti Pauli, mártyris.", LEXICON), ([], []))
+
+
 if __name__ == "__main__":
     unittest.main()

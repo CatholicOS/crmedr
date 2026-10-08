@@ -132,3 +132,82 @@ def footnote_names(text):
                 # A lowercase segment ("presbyteri ex Ordine...", "eius filius") describes the
                 # names before it: dropped.
     return names, skipped
+
+# Genitive ending -> the nominative endings it may come from (personal names).
+# Longest first; the lexicon of known names chooses among them.
+GENITIVE_ENDINGS = [
+    ("entis", ("ens",)), ("antis", ("ans",)), ("onis", ("o",)), ("inis", ("o", "en")),
+    ("icis", ("ix", "ex")), ("ocis", ("ox",)), ("itis", ("es",)), ("ii", ("ius",)),
+    ("ae", ("a",)), ("is", ("is", "es", "s")), ("i", ("us", "ius")), ("us", ("us",)),
+]
+PLURAL_HONORIFIC = re.compile(r"\b(?:sanct|beat)(?:orum|arum)\b")
+# Lowercase words between the honorific and the names ("sanctorum martyrum Pauli").
+NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "monachorum", "fratrum",
+                    "sororum", "coniugum", "confessorum", "diaconorum", "puerorum", "militum", "sacerdotum"}
+
+
+def nominative(word, lexicon):
+    """The nominative of a genitive name, when exactly one possibility is a known name."""
+    key = name_key(word)
+    found = {lexicon[key]} if key in lexicon else set()
+    for ending, noms in GENITIVE_ENDINGS:
+        if key.endswith(ending) and len(key) > len(ending) + 1:
+            stem = key[: -len(ending)]
+            found |= {lexicon[stem + n] for n in noms if stem + n in lexicon}
+            break
+    return found.pop() if len(found) == 1 else None
+
+
+def text_companions(text, lexicon):
+    """The names after a plural honorific at the head of a eulogy ("sanctorum
+    martyrum A, B et C"), as nominatives; forms not surely converted are
+    returned apart, as printed."""
+    if not PLURAL_HONORIFIC.search(fold(text)):
+        return [], []
+    words = WORD.findall(text)
+    fwords = [fold(w) for w in words]
+    start = next(i for i, w in enumerate(fwords) if PLURAL_HONORIFIC.fullmatch(w)) + 1
+    while start < len(words) and fwords[start] in NAME_DESCRIPTORS:
+        start += 1
+    names, uncertain, current, after_particle = [], [], [], False
+    tail = text.split(words[start - 1], 1)[1] if start > 0 else text
+
+    def close():
+        if current:
+            names.append(" ".join(current))
+            current.clear()
+
+    for token in re.findall(r"[^\W\d_][\w'’\-]*|[,.;:]", tail):
+        if token in ",.;:":
+            close()
+            after_particle = False
+            if token != ",":
+                break
+            continue
+        f = fold(token)
+        if f == "et":
+            close()
+            after_particle = False
+            continue
+        if f in ("sociorum", "sociarum"):
+            break
+        if token[0].islower() and f not in PARTICLES:
+            if f in NAME_DESCRIPTORS and not current:
+                continue
+            break
+        if token[0].islower():
+            current.append(token)
+            after_particle = True
+            continue
+        if after_particle:
+            current.append(token)  # a surname after a particle is not declined
+            continue
+        nom = nominative(token, lexicon)
+        if nom is None:
+            uncertain.append(token)  # the whole name is dropped, never half-written
+            current.clear()
+            after_particle = False
+            continue
+        current.append(nom)
+    close()
+    return names, uncertain
