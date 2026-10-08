@@ -255,6 +255,22 @@ class February20Test(unittest.TestCase):
         self.assertIn("mr:0218-sadoth-et-socii", entries["mr:0220-eleutherius-et-socii"]["note"])
 
 
+class OrangeUrsulinesJuly9Test(unittest.TestCase):
+    """#77: Sister Melania (Maria Anna Magdalena de Guilhermier) is one martyr; the
+    second is Maria Anna Margarita ab Angelis de Rocher."""
+
+    def test_registry(self):
+        root = Path(__file__).resolve().parent.parent
+        old, new = ("mr:0709-melania-et-maria-anna-magdalena-de-guilhermier",
+                    "mr:0709-melania-et-maria-anna-margarita-ab-angelis")
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        self.assertEqual(r.ID_CORRECTIONS[old], new)
+        self.assertNotIn(old, entries)
+        self.assertEqual(set(entries[new]["edition_notes"]), {r.EDITION_LA, r.EDITION_IT, r.EDITION_EN})
+        la = json.load(open(root / "i18n" / "la.json"))
+        self.assertEqual(la[new], "Beatae Melania et Maria Anna Margarita ab Angelis")
+
+
 class DeprecatedSameEulogy49Test(unittest.TestCase):
     """#49: 42 more deprecated IDs that are the same eulogy as a current ID are removed."""
 
