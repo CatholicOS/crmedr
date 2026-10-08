@@ -10,6 +10,7 @@ import re
 from gazetteer_text import fold
 
 HONORIFICS = {"sanctus", "sancta", "sancti", "sanctae", "beatus", "beata", "beati", "beatae"}
+PLURAL_HONORIFICS = {"sancti", "sanctae", "beati", "beatae"}
 COMPANION_WORDS = {"socii", "sociae"}
 
 # The eulogies of the Blessed Virgin Mary: one person, "Maria", whatever the
@@ -23,9 +24,10 @@ MARIAN_IDS = {
     "mr:1007-maria-de-rosario", "mr:1121-praesentatio-beatae-mariae-virginis",
     "mr:1208-conceptio-immaculata-beatae-mariae-virginis", "mr:1212-maria-de-guadalupe",
 }
-# Celebrations that commemorate a saint but whose subject opens without an
-# honorific.
+# Subjects decided by hand: celebrations that commemorate a saint but open without
+# an honorific, and a subject whose title is not part of the name.
 FEAST_PERSONS = {
+    "mr:1229-david-rex-et-propheta": ["David"],
     "mr:0125-conversio-pauli-apostoli": ["Paulus"],
     "mr:0222-cathedra-petri-apostoli": ["Petrus"],
     "mr:0325-bonus-latro": ["Bonus Latro"],
@@ -56,7 +58,7 @@ GROUP_IDS = {
 # An ID whose slug opens with a number or a group word names a group
 # ("mr:0205-plurimi-martyres-ponti", "mr:0220-quinque-martyres-tyri").
 GROUP_HEADS = {
-    "plurimi", "martyres", "milites", "monachi", "virgines", "presbyteri", "innocentes",
+    "plurimi", "plurimae", "protomartyres", "martyres", "milites", "monachi", "virgines", "presbyteri", "innocentes",
     "duo", "tres", "quattuor", "quinque", "sex", "septem", "octo", "novem", "decem", "undecim", "duodecim",
     "tredecim", "quattuordecim", "quindecim", "sedecim", "septendecim", "duodeviginti", "undeviginti",
     "viginti", "triginta", "quadraginta", "quinquaginta", "sexaginta", "septuaginta", "octoginta",
@@ -81,12 +83,21 @@ def subject_names(mrid, subject):
     words = subject.split()
     if not words or fold(words[0]) not in HONORIFICS:
         return []
+    if fold(words[0]) not in PLURAL_HONORIFICS:
+        return [" ".join(words[1:])]  # one person: "Modestinus a Iesu et Maria" is a religious name
     parts = re.split(r",\s*|\s+et\s+", " ".join(words[1:]))
     return [p.strip() for p in parts if p.strip() and fold(p.strip()) not in COMPANION_WORDS]
 
 # Lowercase words inside a name, kept only when a capitalized word follows.
 PARTICLES = {"de", "a", "ab", "van", "von", "di", "da", "du", "la", "le", "y", "dos", "das", "del", "der",
-             "den", "ten", "ter", "e"}
+             "den", "ten", "ter", "e", "los", "las", "el"}
+# Words that may come before a name in a footnote segment ("sancti episcopi Aloysius...",
+# "necnon Maria...", "filii eius Dominicus").
+LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia", "filiae", "eius", "eorum",
+                       "earum", "episcopi", "episcopus", "presbyteri", "presbyter", "sacerdotes", "sacerdos",
+                       "diaconi", "diaconus", "religiosi", "religiosae", "laici", "laicus", "catechistae",
+                       "catechista", "uxor", "coniux", "coniuges", "frater", "fratres", "soror", "sorores",
+                       "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae"}
 FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
 WORD = re.compile(r"[^\W\d_][\w'’\-]*")
 
@@ -102,7 +113,7 @@ def _name_at_start(segment):
     """The name a segment opens with, or None: capitalized words, and runs of
     particles followed by a capitalized word, up to the first other lowercase word."""
     words = segment.split()
-    while words and fold(words[0]) in HONORIFICS:
+    while words and fold(words[0]) in HONORIFICS | LEADING_DESCRIPTORS:
         words = words[1:]
     if not words or not words[0][:1].isupper():
         return None  # "e Societate Iesu" describes the name before it
@@ -115,11 +126,35 @@ def _name_at_start(segment):
             out.append(bare)
         elif fold(bare) in PARTICLES and _particle_run(words, i):
             out.append(bare)
+        elif fold(bare) == "et" and JESUS_AND_MARY.search(" ".join(out)) and \
+                i + 1 < len(words) and fold(words[i + 1]).startswith("mari"):
+            out.append(bare)  # inside a religious name: "Maria a Iesu et Maria"
         else:
             break
         if w[-1] in ".,;:":
             break
     return " ".join(out) or None
+
+
+def without_parentheses(text):
+    """The text without its parenthetical asides ("Nguyen Van (Doan) Xuyen" -> "Nguyen Van Xuyen")."""
+    return re.sub(r"\s*\([^)]*\)", "", text)
+
+
+# A religious name "of Jesus and Mary" ("Maria Daniela a Iesu et Maria Immaculata"): its "et" joins
+# no two persons. Other "a ... et ..." pairs are two ("Thomas a Sancto Hyacintho et Antonius...").
+JESUS_AND_MARY = re.compile(r"\b(?:a|ab)\s+(?:\S+\s+)*Iesu$")
+
+
+def _split_et(segment):
+    """A segment's names joined by "et", except inside a religious name ("Maria a Iesu et Maria")."""
+    parts = []
+    for part in re.split(r"\s+et\s+", segment):
+        if parts and JESUS_AND_MARY.search(parts[-1]) and fold(part).startswith("mari"):
+            parts[-1] += " et " + part
+        else:
+            parts.append(part)
+    return parts
 
 
 def footnote_names(text):
@@ -128,19 +163,25 @@ def footnote_names(text):
     if not m:
         return [], [text]
     names, skipped = [], []
-    body = text[m.end():].strip().rstrip(".")
+    body = without_parentheses(text[m.end():]).strip().rstrip(".")
     for group in body.split(";"):
-        segments = [s.strip() for s in group.split(",")]
-        for seg in segments:
-            # "Michael Kozaki et Thomas": two names in one segment.
-            for part in re.split(r"\s+et\s+", seg):
-                part = part.strip()
-                if not part:
-                    continue
-                name = _name_at_start(part)
+        singles = []  # positions in names of the one-word names just before, in this group
+        for seg in (s.strip() for s in group.split(",")):
+            parts = [p.strip() for p in _split_et(seg) if p.strip()]
+            read = [(_name_at_start(p), p) for p in parts]
+            # "Ioanna, Magdalena et Petrina Sailland": first names sharing the last one's surname.
+            if len(read) > 1 and read[0][0] and len(read[0][0].split()) == 1 and \
+                    read[-1][0] and len(read[-1][0].split()) > 1:
+                skipped += [names[i] for i in singles] + [seg]
+                for i in reversed(singles):
+                    del names[i]
+                singles = []
+                continue
+            for name, part in read:
                 if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
                 elif name:
+                    singles = singles + [len(names)] if len(name.split()) == 1 else []
                     names.append(name)
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
@@ -148,18 +189,23 @@ def footnote_names(text):
                 # names before it: dropped.
     return names, skipped
 
+
 # Genitive ending -> the nominative endings it may come from (personal names).
 # Longest first; the lexicon of known names chooses among them.
 GENITIVE_ENDINGS = [
     ("entis", ("ens",)), ("antis", ("ans",)), ("onis", ("o", "on")), ("inis", ("o", "en")),
     ("elis", ("el",)), ("idis", ("id", "is")),
     ("icis", ("ix", "ex")), ("ocis", ("ox",)), ("itis", ("es",)), ("ii", ("ius",)),
-    ("ae", ("a",)), ("is", ("is", "es", "s")), ("i", ("us", "ius")), ("us", ("us",)),
+    ("ae", ("a", "as")), ("is", ("is", "es", "s")), ("i", ("us", "ius")), ("us", ("us",)),
 ]
 PLURAL_HONORIFIC = re.compile(r"\b(?:sanct|beat)(?:orum|arum)\b")
 # Lowercase words between the honorific and the names ("sanctorum martyrum Pauli").
 NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "monachorum", "fratrum",
-                    "sororum", "coniugum", "confessorum", "diaconorum", "puerorum", "militum", "sacerdotum"}
+                    "sororum", "coniugum", "confessorum", "diaconorum", "puerorum", "militum", "sacerdotum",
+                    # the singular, between two names ("Thomae Bosgrave, presbyteri, et Patricii...")
+                    "presbyteri", "episcopi", "diaconi", "monachi", "sacerdotis", "virginis", "martyris",
+                    "religiosi", "laici", "catechistae", "abbatis", "eremitae", "monialis", "fratris",
+                    "sororis", "matris", "patris", "filii", "filiae", "uxoris", "viri", "coniugis"}
 
 
 def nominative(word, lexicon):
@@ -222,6 +268,9 @@ def text_companions(text, lexicon):
         if token[0].islower() and f not in PARTICLES:
             if f in NAME_DESCRIPTORS and not current:
                 continue
+            if current:
+                uncertain.append(" ".join(current))  # broken off ("Xysti papae Secundi"): not written
+                current.clear()
             break
         if token[0].islower():
             if not current:

@@ -191,3 +191,19 @@ class ValidateTest(unittest.TestCase):
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Nemo": {"wikidata": "Q1", "status": "auto"}}}, INDEX))
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": None, "status": "unresolved"}}}, INDEX))
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "x", "status": "auto"}}}, INDEX))
+
+
+class NameMatchReviewTest(unittest.TestCase):
+    """Final review: a 4-letter prefix matched different names."""
+
+    def test_different_names_sharing_a_prefix_do_not_match(self):
+        for latin, other in [("Ia", "Iacobus"), ("Leo", "Leontius"), ("Iulia", "Iulianus"), ("Victor", "Victoria"),
+                             ("Felix", "Felicitas"), ("Paulus", "Paulinus"), ("Marcus", "Marcellinus"),
+                             ("Petrus", "Petronilla"), ("Innocentius IV", "Innocent Iustus")]:
+            self.assertFalse(bp.name_matches(latin, [other]), (latin, other))
+
+    def test_latin_and_vernacular_forms_of_one_name_still_match(self):
+        for latin, other in [("Paulus Miki", "Paul Miki"), ("Basilius", "Saint Basil"), ("Ioannes de Brito", "John de Brito"),
+                             ("Petrus", "Saint Peter"), ("Leo", "Leo"), ("Innocentius IV", "Innocent IV"),
+                             ("Caecilia", "Cecilia"), ("Augustinus", "Augustine")]:
+            self.assertTrue(bp.name_matches(latin, [other]), (latin, other))

@@ -164,6 +164,13 @@ class ValidateTest(unittest.TestCase):
             FOOT, {"mr:0206-paulus-miki-et-socii"}))
 
 
+class ValidateParenthesesTest(unittest.TestCase):
+    def test_a_name_read_across_a_parenthesis_is_printed(self):
+        foot = {"mr:1124-x-et-socii": [{"mark": "1", "after": "x", "text": "Quorum nomina: Dominicus Nguyen Van (Doan) Xuyen."}]}
+        self.assertEqual(ep.validate({"mr:1124-x-et-socii": [{"name": "Dominicus Nguyen Van Xuyen", "where": {"footnote": 1}}]},
+                                     foot, {"mr:1124-x-et-socii"}), [])
+
+
 class RenderTest(unittest.TestCase):
     def test_json_shape(self):
         import json
@@ -232,6 +239,85 @@ class FirstRunFindingsTest(unittest.TestCase):
             "Compéndii, sanctárum Teresiæ a Sancto Augustíno, Fictiánæ Secúndæ et Maríæ Annæ, vírginum.", lex)
         self.assertEqual(names, ["Teresia a Sancto Augustino", "Maria Anna"])
         self.assertEqual(uncertain, ["Fictiánæ"])
+
+
+class ReviewFindingsTest(unittest.TestCase):
+    """Found by the final review on the real data; each a name written wrong, twice, or not at all."""
+
+    # 1: a name the read breaks off is reported, never written half; a genitive in -ae is ambiguous
+    def test_a_name_broken_off_is_reported_not_written(self):
+        lex = {pt.name_key(w): w for w in ["Richardus", "Iulianus", "Xystus", "Ioannes", "Cornelius"]}
+        names, uncertain = pt.text_companions("Valéntiæ, beatórum Richárdi de los Ríos Fabregat et Iuliáni, mártyrum.", lex)
+        self.assertEqual(names, ["Richardus de los Ríos Fabregat", "Iulianus"])
+        names, uncertain = pt.text_companions("Romæ, sanctórum Xysti papæ Secúndi et sociórum.", lex)
+        self.assertEqual(names, [])
+        self.assertEqual(uncertain, ["Xystus"])
+
+    def test_andreae_is_ambiguous_between_andrea_and_andreas(self):
+        lex = {pt.name_key(w): w for w in ["Andrea", "Andreas"]}
+        self.assertIsNone(pt.nominative("Andréæ", lex))
+
+    # 2: "a Iesu et Maria" is one religious name; shared surnames are reported
+    def test_et_inside_a_religious_name_does_not_split(self):
+        names, _ = pt.footnote_names("Quarum nomina: Maria Raymunda a Iesu et Maria Kukolowicz, Anna Rosa.")
+        self.assertEqual(names, ["Maria Raymunda a Iesu et Maria Kukolowicz", "Anna Rosa"])
+
+    def test_two_religious_names_joined_by_et_are_two_persons(self):
+        names, _ = pt.footnote_names(
+            "Quorum nomina: Thomas a Sancto Hyacintho et Antonius a Sancto Dominico, Maria Daniela a Iesu et Maria Immaculata Jozwik.")
+        self.assertEqual(names, ["Thomas a Sancto Hyacintho", "Antonius a Sancto Dominico",
+                                 "Maria Daniela a Iesu et Maria Immaculata Jozwik"])
+
+    def test_first_names_sharing_a_surname_are_reported(self):
+        names, skipped = pt.footnote_names(
+            "Quarum nomina: Ioanna, Magdalena et Petrina Sailland d'Espinatz, sorores; Maria et Renata Grillard; Anna Rosa.")
+        self.assertEqual(names, ["Anna Rosa"])
+        self.assertEqual(skipped, ["Ioanna", "Magdalena et Petrina Sailland d'Espinatz", "Maria et Renata Grillard"])
+
+    # 3: groups, and a singular honorific never splits
+    def test_more_groups_and_singular_subjects(self):
+        self.assertEqual(pt.subject_names("mr:1216-plurimae-virgines-africa", "Sanctae Plurimae Virgines Africa"), [])
+        self.assertEqual(pt.subject_names("mr:0630-protomartyres-sanctae-romanae-ecclesiae",
+                                          "Sancti Protomartyres Sanctae Romanae Ecclesiae"), [])
+        self.assertEqual(pt.subject_names("mr:0724-modestinus-a-iesu-et-maria", "Beatus Modestinus a Iesu et Maria"),
+                         ["Modestinus a Iesu et Maria"])
+        self.assertEqual(pt.subject_names("mr:1229-david-rex-et-propheta", "Sanctus David Rex et Propheta"), ["David"])
+
+    # 5: descriptors before a name, parentheses inside it, descriptors between names in the text
+    def test_a_name_after_a_leading_descriptor_is_read(self):
+        names, _ = pt.footnote_names(
+            "Quorum nomina: sancti episcopi Aloysius Versiglia, presbyteri Caesidius Giacomantonio, "
+            "necnon Maria a Pace, atque Agatha Lin; filii eius Dominicus, religiosi e Societate Iesu.")
+        self.assertEqual(names, ["Aloysius Versiglia", "Caesidius Giacomantonio", "Maria a Pace", "Agatha Lin", "Dominicus"])
+
+    def test_parentheses_do_not_cut_a_name(self):
+        names, _ = pt.footnote_names("Quorum nomina: Dominicus Nguyen Van (Doan) Xuyen, Maria (Clara) Nanetti.")
+        self.assertEqual(names, ["Dominicus Nguyen Van Xuyen", "Maria Nanetti"])
+
+    def test_a_singular_descriptor_between_names_in_the_text_is_skipped(self):
+        lex = {pt.name_key(w): w for w in ["Thomas", "Bosgrave", "Patricius", "Salmon"]}
+        names, _ = pt.text_companions("Dorcestriæ, beatórum Thomæ Bosgrave, presbýteri, et Patrícii Salmon, mártyrum.", lex)
+        self.assertEqual(names, ["Thomas Bosgrave", "Patricius Salmon"])
+
+    # 7: the report never quotes the print
+    def test_the_report_quotes_no_printed_form(self):
+        import extract_persons as ep
+        report = ep.render_report({"mr:0101-x-et-socii": [{"name": "X", "where": "text"}]},
+                                  {"mr:0101-x-et-socii": {"uncertain": ["Accúrsii"], "skipped": ["beatæ Teresiæ"],
+                                                          "socii_without_names": True}})
+        self.assertNotIn("Accúrsii", report)
+        self.assertNotIn("Teresiæ", report)
+        self.assertIn("mr:0101-x-et-socii", report)
+
+
+class SamePersonTest(unittest.TestCase):
+    # 4: a fuller or shorter form of a subject is the same person, in the subject's form
+    def test_a_footnote_name_extending_a_subject_is_not_added(self):
+        import extract_persons as ep
+        foot = [{"mark": "1", "after": "x", "text": "Quarum nomina: Rosalia Clotildis a Sancta Pelagia Bes, Anna Rosa."}]
+        persons, _ = ep.eulogy_persons("mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii",
+                                       "Beatae Rosalia Clotildis a Sancta Pelagia et sociae", "…", foot, {}, {})
+        self.assertEqual([p["name"] for p in persons], ["Rosalia Clotildis a Sancta Pelagia", "Anna Rosa"])
 
 
 if __name__ == "__main__":

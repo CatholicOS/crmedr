@@ -50,6 +50,7 @@ NAME_EQUIVALENTS = {
     "carolus": {"charles", "carlo", "carlos", "karl"},
     "aegidius": {"giles", "egidio", "gilles"},
     "iosephus": {"joseph", "giuseppe", "jose", "josef"},
+    "petrus": {"peter", "pietro", "pierre", "pedro", "pieter", "piotr"},
 }
 # The same table in name_key form ("John" -> "iohn", "Giovanni" -> "giouanni"), for comparing.
 _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVALENTS.items()}
@@ -62,16 +63,30 @@ def _tokens(s):
     return [t for t in name_key(s).split() if len(t) > 1 and t not in TITLE_WORDS]
 
 
+# A Latin ending, and the endings its vernacular forms may have instead (Paulus: Paul,
+# Paolo; Augustinus: Augustine; Basilius: Basil; Caecilia: Cecilia). A name without
+# one of these endings matches only itself: Leo is not Leontius, Victor not Victoria.
+LATIN_ENDINGS = [("ius", {"", "io", "ius", "e"}), ("us", {"", "o", "e", "us"}), ("ia", {"ia", "ie", "a", "e", "y"}),
+                 ("a", {"a", "e", ""}), ("es", {"es", "", "e", "i"}), ("is", {"is", "", "e"}), ("um", {"um", ""})]
+
+
 def _same(latin, other):
+    """The same name: equal, equivalents, or one stem with a Latin and a vernacular ending."""
     if other in _EQUIVALENTS.get(latin, ()):
         return True
-    n = min(4, len(latin), len(other))
-    return latin[:n] == other[:n]
+    latin, other = latin.replace("ae", "e").replace("oe", "e"), other.replace("ae", "e").replace("oe", "e")
+    if latin == other:
+        return True
+    for ending, vernacular in LATIN_ENDINGS:
+        if latin.endswith(ending) and len(latin) - len(ending) >= 2:
+            stem = latin[: -len(ending)]
+            return any(other == stem + v for v in vernacular)
+    return False
 
 
 def name_matches(name, candidate_names):
-    """The Latin name and one of the item's names have the same words, each pair
-    sharing its first four letters (or being equivalents): Paulus Miki = Paul Miki."""
+    """The Latin name and one of the item's names have the same words, pair by pair
+    (see _same): Paulus Miki = Paul Miki."""
     latin = [t for t in _tokens(name) if t not in {"de", "a", "ab", "la", "y"}]
     for other in candidate_names:
         words = [t for t in _tokens(other) if t not in {"de", "di", "da", "la", "y", "van", "von"}]
