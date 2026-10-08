@@ -67,7 +67,8 @@ IT_PARTICLE = r"(?:e|ed|da|di|de'|del|della|dei|de\s+la|de\s+las|de\s+los|de|du|
 IT_WORD = r"(?:d['’]|dell['’])?[A-ZÀ-ÖØ-ÞĐŁŚŠŽŻČĆ][\w'’\-]+"
 # A descriptor between honorific and name ("beati martiri Pietro Delépine") is
 # not part of the subject.
-IT_DESCRIPTOR = r"(?:(?:martiri|fratelli|vescovi|monaci|vergini|sacerdoti|coniugi|sposi)\s+)*"
+IT_DESCRIPTORS = r"(?:martiri|martire|fratelli|sorelle|vescovi|monaci|vergini|sacerdoti|coniugi|sposi)"
+IT_DESCRIPTOR = rf"(?:{IT_DESCRIPTORS}\s+)*"
 IT_M = re.compile(r"\b((?i:sant['’]|santi|sante|santo|santa|san|beati|beate|beato|beata))(?:(?<=['’])|\s+)"
                   rf"{IT_DESCRIPTOR}({IT_WORD}(?:(?:\s+{IT_PARTICLE})+\s+{IT_WORD}|\s+{IT_WORD}){{0,6}})")
 # The English text writes the subject's honorific in lowercase ("At Lviv,
@@ -211,7 +212,7 @@ IT_STRESS_MARKED = {'Aozaráza', 'Aríma', 'Cetína', 'Deusdédit', 'Himláya', 
                     'Nicosía', 'Ricásoli', 'Rúain', 'Ruíz', 'Sérvoli', 'Victorí'}
 # A descriptor before a named subject ("santi martiri Vittorino", "beati
 # fratelli Giovanni e Renato Lego") is not part of the subject.
-IT_LEAD_DESCRIPTOR = re.compile(r"^(?:(?:martiri|martire|fratelli|sorelle|vescovi|monaci|vergini|sacerdoti|coniugi|sposi)\s+)+(?=[A-ZÀ-ÖØ-ÞĐŁŚŠŽŻČĆ])")
+IT_LEAD_DESCRIPTOR = re.compile(rf"^(?:{IT_DESCRIPTORS}\s+)+(?=[A-ZÀ-ÖØ-ÞĐŁŚŠŽŻČĆ])")
 
 
 def strip_stress(word, keep):
@@ -256,9 +257,10 @@ def it_label(mrid, label, text='', en='', la_text=''):
         hon = 'Sant’' if re.match(r"[AEIOUÀ-Ü]", name) else 'San'
     if not mrid.endswith('-et-socii'):
         return f"{hon}{'' if hon.endswith(('’', "'")) else ' '}{name}"
-    hon = IT_PLURAL.get(hon.lower(), hon)
-    female = hon in ('Sante', 'Beate') or bool(re.search(r'\bcompagne\b', label)) or \
+    female = hon in ('Santa', 'Sante', 'Beata', 'Beate') or bool(re.search(r'\bcompagne\b', label)) or \
         bool(re.search(r'\bcompagne\b', text or '') and not re.search(r'\bcompagni\b', text or ''))
+    # "Sant’" is either gender: women's evidence makes it "Sante" (Sant’Agnese e compagne).
+    hon = 'Sante' if female and hon in ('Sant’', "Sant'") else IT_PLURAL.get(hon.lower(), hon)
     name = re.split(r",|\s+ed?\s+(?!Maria\b)", name)[0]         # N. e compagni / e N2 (not "Gesù e Maria")
     return f"{hon} {name.strip()} e {'compagne' if female else 'compagni'}"
 

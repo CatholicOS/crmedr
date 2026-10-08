@@ -120,6 +120,19 @@ class ItalianLabelTest(unittest.TestCase):
         self.assertEqual(s.it_label("mr:0101-fictitius-et-socii", "Beati Fittizio",
                                     "beati Fittizio e cinque compagne, martiri."), "Beati Fittizio e compagne")
 
+    def test_elided_honorific_takes_the_companions_gender(self):
+        self.assertEqual(s.it_label("mr:0101-agnes-et-socii", "Sant’Agnese", "sant’Agnese e compagne, vergini."),
+                         "Sante Agnese e compagne")
+        self.assertEqual(s.it_label("mr:0101-andreas-et-socii", "Sant’Andrea e compagni"),
+                         "Santi Andrea e compagni")
+
+    def test_singular_and_feminine_descriptors_are_skipped(self):
+        it = "A Fictopoli, passione del santo martire Giovanni Fittizio, sacerdote."
+        self.assertEqual(s.vern_subject("mr:0101-ioannes-fictitius", it, s.IT_M), "Santo Giovanni Fittizio")
+        self.assertEqual(s.it_label("mr:0101-ioannes-fictitius", "Santo Giovanni Fittizio"), "San Giovanni Fittizio")
+        it = "A Fictopoli, sante sorelle Fittizia e Altrona, vergini."
+        self.assertEqual(s.vern_subject("mr:0101-fictitia-et-altrona", it, s.IT_M), "Sante Fittizia e Altrona")
+
     def test_religious_name_with_e_is_not_cut(self):
         self.assertEqual(s.it_label("mr:0101-fictitius-a-iesu-et-socii", "Beati Fittizio di Gesù e Maria"),
                          "Beati Fittizio di Gesù e Maria e compagni")
