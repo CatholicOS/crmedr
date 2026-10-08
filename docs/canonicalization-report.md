@@ -1328,6 +1328,21 @@ Italian "Sant’Amos Profeta"). English labels use the conventional English name
 Osee, Aggaeus). Two curator notes record where the unofficial English text errs: "the Youth" for Theophilus the
 Younger, and "Leo III the Isaurian" for Leo VI in the eulogy of Anthony Cauleas.
 
+**Italian subject labels (October 2026, #75).** 537 Italian labels are corrected. Every `-et-socii` eulogy now
+follows the Latin "Sancti N. et socii": plural honorific, the first-named subject, "e compagni" ("e compagne" for
+women), with no count ("e dodici compagni") and no second name ("Santi Caritone e compagni"); 181 of the 297 labels
+change, 166 of which had lost the "e compagni". A descriptor before a name is dropped ("Santi martiri Vittorino" -> "Santi Vittorino"),
+except in anonymous groups ("Santi martiri Scillitani"). Names cut at a particle are completed ("San Luigi Maria
+Grignion de Montfort", not "… Grignion de"), as are surnames the slug carries ("Beata Maria Teresa Fasce"), but a
+religious-name label does not gain the surname the slug leaves out (rule of one name form). The CEI prints a stress
+mark on the names it Italianizes (Argéo, Teógene, Sant’Ágabo): it is not their spelling and is removed (Argeo);
+final accents (Gesù, Natività) and the accents of names left untranslated (García, Brébeuf, Nguyễn), which the Latin
+text prints the same way, are kept. Also corrected: 16 pair labels that had lost their second name ("Santi Cornelio
+e Cipriano"), 16 Vietnamese names garbled in an earlier copy of the CEI text ("Nguyñên" -> "Nguyễn"), and 9 labels
+taken from the wrong words (mr:0302-agnes "Santa Chiara nel monastero da lei" -> "Sant’Agnese"). `extract_subjects.py`
+now runs a name on through surname particles, skips a bracketed baptismal name and a leading descriptor, and
+normalizes each Italian label with `it_label`.
+
 **Review of the Italian and English subjects (October 2026, #31).** The extraction
 had taken the first saint named anywhere in the text when it fell within its first 60
 characters, which is usually a saint in the opening place, a church or an order ("San
