@@ -72,3 +72,63 @@ def subject_names(mrid, subject):
         return []
     parts = re.split(r",\s*|\s+et\s+", " ".join(words[1:]))
     return [p.strip() for p in parts if p.strip() and fold(p.strip()) not in COMPANION_WORDS]
+
+# Lowercase words inside a name, kept only when a capitalized word follows.
+PARTICLES = {"de", "a", "ab", "van", "von", "di", "da", "du", "la", "le", "y", "dos", "das", "del", "der",
+             "den", "ten", "ter", "e"}
+FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
+WORD = re.compile(r"[^\W\d_][\w'’\-]*")
+
+
+def _particle_run(words, i):
+    """Whether words[i:] is one or more particles followed by a capitalized word ("de la Parilla")."""
+    while i < len(words) and fold(words[i].strip(".,;:")) in PARTICLES:
+        i += 1
+    return 0 < i < len(words) and words[i][:1].isupper()
+
+
+def _name_at_start(segment):
+    """The name a segment opens with, or None: capitalized words, and runs of
+    particles followed by a capitalized word, up to the first other lowercase word."""
+    words = segment.split()
+    while words and fold(words[0]) in HONORIFICS:
+        words = words[1:]
+    out = []
+    for i, w in enumerate(words):
+        bare = w.strip(".,;:")
+        if not bare:
+            break
+        if bare[0].isupper():
+            out.append(bare)
+        elif fold(bare) in PARTICLES and _particle_run(words, i):
+            out.append(bare)
+        else:
+            break
+        if w[-1] in ".,;:":
+            break
+    return " ".join(out) or None
+
+
+def footnote_names(text):
+    """The names a footnote list gives, in order, and the segments not read."""
+    m = FOOTNOTE_OPENING.match(text)
+    if not m:
+        return [], [text]
+    names, skipped = [], []
+    body = text[m.end():].strip().rstrip(".")
+    for group in body.split(";"):
+        segments = [s.strip() for s in group.split(",")]
+        for seg in segments:
+            # "Michael Kozaki et Thomas": two names in one segment.
+            for part in re.split(r"\s+et\s+", seg):
+                part = part.strip()
+                if not part:
+                    continue
+                name = _name_at_start(part)
+                if name:
+                    names.append(name)
+                elif part[:1].isupper() or part[:1].isdigit():
+                    skipped.append(part)
+                # A lowercase segment ("presbyteri ex Ordine...", "eius filius") describes the
+                # names before it: dropped.
+    return names, skipped

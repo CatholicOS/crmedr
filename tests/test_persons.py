@@ -46,5 +46,33 @@ class SubjectNamesTest(unittest.TestCase):
                          ["Maria de Mattias"])
 
 
+class FootnoteNamesTest(unittest.TestCase):
+    def test_openings_groups_descriptors_and_particles(self):
+        names, skipped = pt.footnote_names(
+            "Quorum nomina: sancti Ioannes de Goto Soan, Iacobus Kisai, religiosi e Societate Iesu; "
+            "Martinus ab Ascensione Aguirre, Franciscus Blanco, presbyteri ex Ordine Fratrum Minorum; "
+            "Michael Kozaki et Thomas, eius filius, neophytae.")
+        self.assertEqual(names, ["Ioannes de Goto Soan", "Iacobus Kisai", "Martinus ab Ascensione Aguirre",
+                                 "Franciscus Blanco", "Michael Kozaki", "Thomas"])
+        self.assertEqual(skipped, [])
+
+    def test_other_openings_and_accents(self):
+        self.assertEqual(pt.footnote_names("Quarum nómina: beatae Maria Fortunata Viti, Anna Rosa.")[0],
+                         ["Maria Fortunata Viti", "Anna Rosa"])
+        self.assertEqual(pt.footnote_names("Inter quos: Petrus Fictus, presbyter.")[0], ["Petrus Fictus"])
+
+    def test_a_particle_that_is_a_latin_word_keeps_the_name(self):
+        self.assertEqual(pt.footnote_names("Quorum nomina: Franciscus a Sancto Michaele de la Parilla.")[0],
+                         ["Franciscus a Sancto Michaele de la Parilla"])
+
+    def test_a_segment_without_a_name_is_reported_not_written(self):
+        names, skipped = pt.footnote_names("Quorum nomina: Petrus Fictus; 3 alii.")
+        self.assertEqual(names, ["Petrus Fictus"])
+        self.assertEqual(skipped, ["3 alii"])
+
+    def test_no_opening_reads_nothing(self):
+        self.assertEqual(pt.footnote_names("Cf. Acta Sanctorum."), ([], ["Cf. Acta Sanctorum."]))
+
+
 if __name__ == "__main__":
     unittest.main()
