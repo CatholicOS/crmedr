@@ -57,6 +57,10 @@ _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVAL
 # Persons that pass the evidence bar but are known to be wrong: always reviewed.
 FORCE_REVIEW = {}
 SEARCH_LANGUAGES = ("la", "it", "en")
+# After this many persons in a row whose lookups failed (Wikidata lagged or down), a
+# run stops asking: the rest are "not processed", for the next run, instead of each
+# waiting out its own retries.
+MAX_CONSECUTIVE_FAILURES = 5
 
 
 def _tokens(s):
@@ -190,16 +194,22 @@ def _decided(items, person):
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     ops = {op["id"]: op for op in review["operations"]}
     not_processed = []
+    failures = 0
     for key in sorted(index):
         person = index[key]
         if _decided(items, person):
             ops.pop(key, None)
             continue
+        if failures >= MAX_CONSECUTIVE_FAILURES:
+            not_processed.append((key, "skipped: Wikidata unavailable"))
+            continue
         try:
             result = evaluate(person, gather(person, client))
         except WikidataError as e:
             not_processed.append((key, str(e)))
+            failures += 1
             continue
+        failures = 0
         if key in force_review:
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[key])

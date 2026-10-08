@@ -207,3 +207,17 @@ class NameMatchReviewTest(unittest.TestCase):
                              ("Petrus", "Saint Peter"), ("Leo", "Leo"), ("Innocentius IV", "Innocent IV"),
                              ("Caecilia", "Cecilia"), ("Augustinus", "Augustine")]:
             self.assertTrue(bp.name_matches(latin, [other]), (latin, other))
+
+
+class LagBreakerTest(unittest.TestCase):
+    def test_propose_stops_early_after_consecutive_failures_and_leaves_the_rest_unprocessed(self):
+        index = {f"mr:0101-x|N{i}": dict(PERSON, name=f"N{i}") for i in range(20)}
+        client = FakeClient(fail={f"N{i}" for i in range(20)})
+        calls = []
+        orig = client.person_candidates
+        client.person_candidates = lambda name, languages=(): calls.append(name) or orig(name, languages)
+        items, review = {}, bp.new_changeset([])
+        out = bp.propose(items, review, index, client)
+        self.assertEqual(len(out), 20)                  # every person reported as not processed
+        self.assertEqual(len(calls), bp.MAX_CONSECUTIVE_FAILURES)  # but only the first few asked
+        self.assertEqual(items, {})
