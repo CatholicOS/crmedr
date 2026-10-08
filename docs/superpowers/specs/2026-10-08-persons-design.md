@@ -31,7 +31,7 @@ In scope here:
 - `scripts/extract_persons.py`, `data/persons.json`, `data/persons_curated.json`,
   `docs/persons-report.md`.
 - `scripts/build_person_items.py`, `data/person_items.json`,
-  `data/person_items_review.json`, the report's identification section.
+  `data/person_items_review.json`, `docs/person-items-report.md`.
 - The `resolve_person` op of `crmedr-changeset/v1`, defined here so both repositories share
   it, and the review card for it in martyrology-frontend (a separate PR there).
 - Tests and documentation (AGENTS.md, README).
@@ -130,7 +130,11 @@ Run: `python3 scripts/extract_persons.py /path/to/martyrology-texts`
 
 - A subject counts only if it opens with an honorific: *Sanctus, Sancta, Sancti, Sanctae,
   Beatus, Beata, Beati, Beatae*. Celebrations without one (feasts of the Lord, dedications)
-  name no person.
+  name no person. Celebrations that commemorate a saint without opening with an honorific
+  (*Conversio Sancti Pauli Apostoli*, *Cathedra Sancti Petri Apostoli*, *Bonus Latro*) are
+  listed in `FEAST_PERSONS`. Subjects that carry an honorific but name a group (*Sancti
+  Innocentes*, *Sancti Quadraginta Milites Sebastes*) are listed in `GROUP_IDS` and name no
+  person.
 - Strip the honorific; split on ` et ` and `, `; drop *socii* / *sociae*.
 - Marian subjects become one person, *Maria*, through `MARIAN_IDS` (a commented constant of
   the eulogies whose subject is the Blessed Virgin), never by splitting their subject.
@@ -160,9 +164,10 @@ For every *et socii* eulogy without a curated entry, footnote or not (a eulogy c
 companions in its text and list the rest in its footnote), read the opening group of names in
 the text: after the genitive plural honorific (*sanctorum, beatorum*,
 optionally followed by *martyrum, virginum, …*), the names up to the first word that is not a
-name, a particle, `,` or *et*. Convert each from the genitive to the nominative with the
-declension rules of `extract_subjects.py` (the rules that turn the first subject's genitive
-into `la.json`'s nominative). A conversion with more than one possible nominative, or none,
+name, a particle, `,` or *et*. Convert each from the genitive to the nominative with a table
+of genitive endings (`GENITIVE_ENDINGS` in `scripts/persons_text.py`); a form is converted only
+when exactly one of its possible nominatives is a known name (the lexicon of the names in
+`i18n/la.json`'s subjects and in the footnotes). A conversion with more than one possible nominative, or none,
 is not written: it goes to the report as uncertain, for a curated entry. Names found here come
 before the footnote's, and a name in both is listed once, as in the text.
 
@@ -178,7 +183,7 @@ before the footnote's, and a name in both is listed once, as in the text.
 ### Report: `docs/persons-report.md`
 
 Counts (eulogies, persons, by where); *et socii* eulogies where no companion was found;
-uncertain nominatives; footnote segments not parsed; then the identification section (below).
+uncertain nominatives; footnote segments not parsed.
 
 ## Identification: `scripts/build_person_items.py`
 
@@ -195,7 +200,7 @@ User-Agent, `maxlag` etiquette and retries). Subcommands mirror `build_gazetteer
 3. Never modify or remove an existing decision. Existing ops keep their `suggested`,
    `reasoning` and `confidence`; only their candidates are refreshed.
 4. A person whose lookups fail is listed as not processed and left for the next run.
-5. Regenerate the report's identification section.
+5. Write `docs/person-items-report.md`.
 
 ### Candidate search
 
