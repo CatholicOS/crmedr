@@ -58,3 +58,136 @@ class PersonSearchTest(unittest.TestCase):
         searched = [u for u in calls if "wbsearchentities" in u]
         self.assertEqual(len(searched), 3)
         self.assertTrue(any("language=la" in u for u in searched))
+
+import build_person_items as bp  # noqa: E402
+
+
+def cand(qid, names, died="1597-02-05", statuses=("Q43115",), human=True):
+    return {"wikidata": qid, "label": names[0], "description": "", "names": list(names), "human": human,
+            "statuses": list(statuses), "born": None, "died": died, "feast": []}
+
+
+PERSON = {"eulogy": "mr:0206-paulus-miki-et-socii", "name": "Paulus Miki", "day": "02-05",
+          "typology": "dies_natalis", "subject": "Sancti Paulus Miki et socii", "where": "text",
+          "companions": ["Ioannes de Goto Soan"]}
+
+
+class NameMatchTest(unittest.TestCase):
+    def test_latin_and_vernacular_forms(self):
+        self.assertTrue(bp.name_matches("Paulus Miki", ["Paul Miki"]))
+        self.assertTrue(bp.name_matches("Basilius", ["Saint Basil"]))
+        self.assertTrue(bp.name_matches("Ioannes de Brito", ["John de Brito"]))  # NAME_EQUIVALENTS
+        self.assertFalse(bp.name_matches("Paulus Miki", ["Peter Miki"]))
+        self.assertFalse(bp.name_matches("Basilius", ["Basil the Great"]))
+
+
+class EvaluateTest(unittest.TestCase):
+    def test_one_passing_candidate_is_auto(self):
+        r = bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"]), cand("Q2", ["Paul Miki"], human=False)])
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+
+    def test_a_death_on_another_day_blocks_auto(self):
+        r = bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died="1597-03-05")])
+        self.assertIsNone(r["auto"])
+        self.assertTrue(any("death" in f for f in r["failed"]))
+
+    def test_two_passing_candidates_queue(self):
+        r = bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"]), cand("Q2", ["Paul Miki"])])
+        self.assertIsNone(r["auto"])
+
+    def test_the_death_rule_applies_only_to_dies_natalis(self):
+        r = bp.evaluate(dict(PERSON, typology="translatio"), [cand("Q1", ["Paul Miki"], died="1597")])
+        self.assertEqual(r["auto"]["wikidata"], "Q1")
+
+    def test_no_status_fails(self):
+        r = bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], statuses=())])
+        self.assertIsNone(r["auto"])
+
+
+class FakeClient:
+    def __init__(self, by_name=None, by_qid=None, fail=()):
+        self.by_name, self.by_qid, self.fail = by_name or {}, by_qid or {}, set(fail)
+
+    def person_candidates(self, name, languages=("la", "it", "en")):
+        if name in self.fail:
+            raise bp.WikidataError("boom")
+        return [dict(c) for c in self.by_name.get(name, [])]
+
+    def person(self, qid):
+        return self.by_qid.get(qid)
+
+
+INDEX = {"mr:0206-paulus-miki-et-socii|Paulus Miki": PERSON,
+         "mr:0206-paulus-miki-et-socii|Thomas Kozaki": dict(PERSON, name="Thomas Kozaki", where={"footnote": 1})}
+
+
+class ProposeApplyTest(unittest.TestCase):
+    def test_propose_writes_auto_queues_the_rest_and_keeps_decisions(self):
+        items = {"mr:0206-paulus-miki-et-socii": {}}
+        review = bp.new_changeset([])
+        client = FakeClient({"Paulus Miki": [cand("Q1", ["Paul Miki"])], "Thomas Kozaki": []})
+        not_processed = bp.propose(items, review, INDEX, client)
+        self.assertEqual(not_processed, [])
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"]["Paulus Miki"], {"wikidata": "Q1", "status": "auto"})
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0206-paulus-miki-et-socii|Thomas Kozaki"])
+        op = review["operations"][0]
+        self.assertEqual(op["op"], "resolve_person")
+        self.assertEqual(op["where"], {"footnote": 1})
+        # A rerun never changes a decision.
+        items["mr:0206-paulus-miki-et-socii"]["Paulus Miki"] = {"wikidata": "Q9", "status": "reviewed"}
+        bp.propose(items, review, INDEX, client)
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"]["Paulus Miki"]["wikidata"], "Q9")
+
+    def test_a_failed_lookup_is_not_processed(self):
+        items, review = {}, bp.new_changeset([])
+        out = bp.propose(items, review, INDEX, FakeClient(fail={"Paulus Miki", "Thomas Kozaki"}))
+        self.assertEqual(len(out), 2)
+        self.assertEqual(items, {})
+        self.assertEqual(review["operations"], [])
+
+    def test_apply_accept_edit_reject(self):
+        items = {}
+        review = bp.new_changeset([])
+        # Thomas's only candidate has no saint status, so both persons queue.
+        bp.propose(items, review, INDEX, FakeClient({"Paulus Miki": [],
+                                                     "Thomas Kozaki": [cand("Q7", ["Thomas Kozaki"], statuses=())]}))
+        exported = json.loads(json.dumps(review))
+        for op in exported["operations"]:
+            if op["name"] == "Paulus Miki":
+                op["decision"], op["edited"] = "edit", {"wikidata": "Q380649"}
+            else:
+                op["decision"], op["edited"] = "reject", {"reason": "No item"}
+        client = FakeClient(by_qid={"Q380649": cand("Q380649", ["Paul Miki"])})
+        self.assertEqual(bp.apply_decisions(items, review, exported, INDEX, client), 2)
+        e = items["mr:0206-paulus-miki-et-socii"]
+        self.assertEqual(e["Paulus Miki"], {"wikidata": "Q380649", "status": "reviewed"})
+        self.assertEqual(e["Thomas Kozaki"], {"wikidata": None, "status": "unresolved", "note": "No item"})
+        self.assertEqual(review["operations"], [])
+
+    def test_apply_refuses_an_edit_that_is_not_a_saint(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, INDEX, FakeClient({"Paulus Miki": [], "Thomas Kozaki": []}))
+        exported = json.loads(json.dumps(review))
+        exported["operations"][0]["decision"] = "edit"
+        exported["operations"][0]["edited"] = {"wikidata": "Q42"}
+        with self.assertRaises(ValueError):
+            bp.apply_decisions(items, review, exported, INDEX,
+                               FakeClient(by_qid={"Q42": cand("Q42", ["Douglas Adams"], statuses=())}))
+
+    def test_reject_needs_a_reason(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, INDEX, FakeClient({"Paulus Miki": [], "Thomas Kozaki": []}))
+        exported = json.loads(json.dumps(review))
+        exported["operations"][0]["decision"] = "reject"
+        exported["operations"][0]["edited"] = {"reason": " "}
+        with self.assertRaises(ValueError):
+            bp.apply_decisions(items, review, exported, INDEX, FakeClient())
+
+
+class ValidateTest(unittest.TestCase):
+    def test_validate(self):
+        good = {"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "Q1", "status": "auto"}}}
+        self.assertEqual(bp.validate(good, INDEX), [])
+        self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Nemo": {"wikidata": "Q1", "status": "auto"}}}, INDEX))
+        self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": None, "status": "unresolved"}}}, INDEX))
+        self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "x", "status": "auto"}}}, INDEX))
