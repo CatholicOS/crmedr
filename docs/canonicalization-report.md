@@ -762,6 +762,20 @@ eulogies of the day under the wrong ID.
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy
   (mr:1029-zenobius).
 
+**The Ursulines of Orange, July 9 (applied, October 2026, #77)**: the Latin 2004 prints
+*beatárum Melániæ et Maríæ Annæ Magdalénæ de Guilhermier atque Maríæ Annæ Margarítæ ab
+Angelis de Rocher*. The other Orange eulogies give the baptismal name in brackets after the
+religious name (*Agnétis a Iesu (Sýlviæ) de Romillon*), and "et" stands where that bracket
+would be: Melania is the religious name of Maria Anna Magdalena de Guilhermier (Sister
+Sainte-Mélanie), and the eulogy commemorates two martyrs, guillotined at Orange on 9 July 1794.
+The workbook ID, mr:0709-melania-et-maria-anna-magdalena-de-guilhermier, had taken the one
+woman for the pair and left out the second. It becomes
+mr:0709-melania-et-maria-anna-margarita-ab-angelis, named by the religious names like
+mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu (`ID_CORRECTIONS`, kept identical to
+CatholicOS/martyrology-texts). Edition notes record the error in the Latin, the unofficial
+English ("Mélanie and Mary Anne Magdalen") and the CEI ("Melania Marianna, Maddalena de
+Guilhermier").
+
 **Eulogies printed on another day (applied, October 2026, #49)**: the day is part of the
 identity. The 1749 and 1914 alignments had keyed 331 eulogies (211 distinct, read one by
 one against the 2004 text) to an ID of another day. Each now has an ID of the day it is
