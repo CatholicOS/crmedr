@@ -125,6 +125,35 @@ def summarize(raw):
     }
 
 
+def _date(claims, prop):
+    """The first dated value of `prop` as YYYY, YYYY-MM or YYYY-MM-DD by its precision."""
+    for c in claims.get(prop, []):
+        v = _value(c)
+        if isinstance(v, dict) and "time" in v:
+            t, p = v["time"].lstrip("+"), v.get("precision", 9)
+            return t[:10] if p >= 11 else t[:7] if p == 10 else t[:4]
+    return None
+
+
+def summarize_person(raw):
+    claims = raw.get("claims", {})
+    labels = raw.get("labels", {})
+    descs = raw.get("descriptions", {})
+    ids = lambda prop: list(dict.fromkeys(_value(c)["id"] for c in claims.get(prop, [])  # noqa: E731
+                                          if isinstance(_value(c), dict) and "id" in _value(c)))
+    return {
+        "wikidata": raw["id"],
+        "label": next((labels[lang]["value"] for lang in ("en", "it", "la") if lang in labels), raw["id"]),
+        "description": next((descs[lang]["value"] for lang in ("en", "it") if lang in descs), ""),
+        "names": sorted({n for lang in ("la", "it", "en") for n in _names(raw, lang)}),
+        "human": "Q5" in ids("P31"),
+        "statuses": ids("P411"),
+        "born": _date(claims, "P569"),
+        "died": _date(claims, "P570"),
+        "feast": ids("P841"),
+    }
+
+
 class Wikidata:
     def __init__(self, cache_dir, fetch=http_get):
         self.cache_dir = cache_dir
@@ -147,8 +176,8 @@ class Wikidata:
         params.update(format="json", maxlag="5")
         return self._get(API + "?" + urllib.parse.urlencode(params))
 
-    def _search(self, text, limit=10):
-        data = self._api(action="wbsearchentities", search=text, language="it", uselang="it",
+    def _search(self, text, limit=10, language="it"):
+        data = self._api(action="wbsearchentities", search=text, language=language, uselang=language,
                          type="item", limit=str(limit))
         return [x["id"] for x in data.get("search", [])]
 
@@ -208,6 +237,15 @@ class Wikidata:
     def candidate(self, qid):
         raw = self._entities([qid]).get(qid)
         return self._enrich([summarize(raw)])[0] if raw else None
+
+    def person_candidates(self, name, languages=("la", "it", "en")):
+        qids = list(dict.fromkeys(q for lang in languages for q in self._search(name, language=lang)))
+        raws = self._entities(qids)
+        return [summarize_person(raws[q]) for q in qids if q in raws]
+
+    def person(self, qid):
+        raw = self._entities([qid]).get(qid)
+        return summarize_person(raw) if raw else None
 
     def region_coords(self, text):
         """Coordinates of the non-country items with that exact Italian name. A
