@@ -53,6 +53,17 @@ GROUP_IDS = {
     "mr:1222-quadraginta-tres-monachi-raithi", "mr:1228-innocentes",
 }
 
+# An ID whose slug opens with a number or a group word names a group
+# ("mr:0205-plurimi-martyres-ponti", "mr:0220-quinque-martyres-tyri").
+GROUP_HEADS = {
+    "plurimi", "martyres", "milites", "monachi", "virgines", "presbyteri", "innocentes",
+    "duo", "tres", "quattuor", "quinque", "sex", "septem", "octo", "novem", "decem", "undecim", "duodecim",
+    "tredecim", "quattuordecim", "quindecim", "sedecim", "septendecim", "duodeviginti", "undeviginti",
+    "viginti", "triginta", "quadraginta", "quinquaginta", "sexaginta", "septuaginta", "octoginta",
+    "nonaginta", "centum", "ducenti", "trecenti", "quadringenti", "quingenti", "sescenti", "septingenti",
+    "octingenti", "nongenti", "mille",
+}
+
 
 def name_key(s):
     """A name compared across spellings: accents, case, i/j and u/v folded."""
@@ -65,7 +76,7 @@ def subject_names(mrid, subject):
         return ["Maria"]
     if mrid in FEAST_PERSONS:
         return list(FEAST_PERSONS[mrid])
-    if mrid in GROUP_IDS:
+    if mrid in GROUP_IDS or mrid.split("-", 1)[1].split("-")[0] in GROUP_HEADS:
         return []
     words = subject.split()
     if not words or fold(words[0]) not in HONORIFICS:
@@ -93,6 +104,8 @@ def _name_at_start(segment):
     words = segment.split()
     while words and fold(words[0]) in HONORIFICS:
         words = words[1:]
+    if not words or not words[0][:1].isupper():
+        return None  # "e Societate Iesu" describes the name before it
     out = []
     for i, w in enumerate(words):
         bare = w.strip(".,;:")
@@ -125,7 +138,9 @@ def footnote_names(text):
                 if not part:
                     continue
                 name = _name_at_start(part)
-                if name:
+                if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
+                    skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
+                elif name:
                     names.append(name)
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
@@ -136,7 +151,8 @@ def footnote_names(text):
 # Genitive ending -> the nominative endings it may come from (personal names).
 # Longest first; the lexicon of known names chooses among them.
 GENITIVE_ENDINGS = [
-    ("entis", ("ens",)), ("antis", ("ans",)), ("onis", ("o",)), ("inis", ("o", "en")),
+    ("entis", ("ens",)), ("antis", ("ans",)), ("onis", ("o", "on")), ("inis", ("o", "en")),
+    ("elis", ("el",)), ("idis", ("id", "is")),
     ("icis", ("ix", "ex")), ("ocis", ("ox",)), ("itis", ("es",)), ("ii", ("ius",)),
     ("ae", ("a",)), ("is", ("is", "es", "s")), ("i", ("us", "ius")), ("us", ("us",)),
 ]
@@ -147,15 +163,25 @@ NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "mon
 
 
 def nominative(word, lexicon):
-    """The nominative of a genitive name, when exactly one possibility is a known name."""
+    """The nominative of a genitive name, when exactly one possibility is a known name.
+    A declined nominative wins over the word itself: "Mariae" is known too, from
+    religious names ("a Sacro Corde Mariae"), but the genitive of a person is Maria."""
     key = name_key(word)
-    found = {lexicon[key]} if key in lexicon else set()
+    found = _declined(key, lexicon) or ({lexicon[key]} if key in lexicon else set())
+    return found.pop() if len(found) == 1 else None
+
+
+def _genitive_ending(key):
+    return any(key.endswith(e) and len(key) > len(e) + 1 for e, _ in GENITIVE_ENDINGS)
+
+
+def _declined(key, lexicon):
+    """The known nominatives a genitive (in name_key form) may come from."""
     for ending, noms in GENITIVE_ENDINGS:
         if key.endswith(ending) and len(key) > len(ending) + 1:
             stem = key[: -len(ending)]
-            found |= {lexicon[stem + n] for n in noms if stem + n in lexicon}
-            break
-    return found.pop() if len(found) == 1 else None
+            return {lexicon[stem + n] for n in noms if stem + n in lexicon}
+    return set()
 
 
 def text_companions(text, lexicon):
@@ -169,7 +195,7 @@ def text_companions(text, lexicon):
     start = next(i for i, w in enumerate(fwords) if PLURAL_HONORIFIC.fullmatch(w)) + 1
     while start < len(words) and fwords[start] in NAME_DESCRIPTORS:
         start += 1
-    names, uncertain, current, after_particle = [], [], [], False
+    names, uncertain, current, after_particle, skipping = [], [], [], False, False
     tail = text.split(words[start - 1], 1)[1] if start > 0 else text
 
     def close():
@@ -180,14 +206,16 @@ def text_companions(text, lexicon):
     for token in re.findall(r"[^\W\d_][\w'’\-]*|[,.;:]", tail):
         if token in ",.;:":
             close()
-            after_particle = False
+            after_particle = skipping = False
             if token != ",":
                 break
             continue
         f = fold(token)
         if f == "et":
             close()
-            after_particle = False
+            after_particle = skipping = False
+            continue
+        if skipping:
             continue
         if f in ("sociorum", "sociarum"):
             break
@@ -196,17 +224,30 @@ def text_companions(text, lexicon):
                 continue
             break
         if token[0].islower():
+            if not current:
+                skipping = True  # "e Societate Iesu" describes the name before it
+                continue
             current.append(token)
             after_particle = True
             continue
+        if after_particle and (_declined(name_key(token), lexicon) or
+                               (_genitive_ending(name_key(token)) and name_key(token) not in lexicon)):
+            # A genitive after a religious name ("Teresiae a Sancto Augustino Mariae Magdalenae
+            # Lidoine"), known or not: where one name ends is not sure, so the whole is reported.
+            uncertain.append(" ".join(current + [token]))
+            current.clear()
+            after_particle, skipping = False, True
+            continue
         if after_particle:
-            current.append(token)  # a surname after a particle is not declined
+            # Not declined after a particle ("a Sancto Augustino"): the known spelling, without
+            # the print's stress accents, else as printed.
+            current.append(lexicon.get(name_key(token), token))
             continue
         nom = nominative(token, lexicon)
         if nom is None:
             uncertain.append(token)  # the whole name is dropped, never half-written
             current.clear()
-            after_particle = False
+            after_particle, skipping = False, True
             continue
         current.append(nom)
     close()

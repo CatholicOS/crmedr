@@ -119,5 +119,120 @@ class TextCompanionsTest(unittest.TestCase):
         self.assertEqual(pt.text_companions("Romæ, sancti Pauli, mártyris.", LEXICON), ([], []))
 
 
+import extract_persons as ep  # noqa: E402
+
+FOOT = {"mr:0206-paulus-miki-et-socii": [{"mark": "2", "after": "x", "text":
+        "Quorum nomina: sancti Ioannes de Goto Soan, Paulus Miki; Thomas, eius filius."}]}
+
+
+class EulogyPersonsTest(unittest.TestCase):
+    def test_subjects_then_text_then_footnote_without_repeats(self):
+        lex = ep.build_lexicon({"mr:0206-paulus-miki-et-socii": "Sancti Paulus Miki et socii"}, FOOT)
+        persons, issues = ep.eulogy_persons(
+            "mr:0206-paulus-miki-et-socii", "Sancti Paulus Miki et socii",
+            "Nagasákii, sanctórum mártyrum Pauli Miki et sociórum.", FOOT["mr:0206-paulus-miki-et-socii"],
+            lex, {})
+        self.assertEqual(persons, [
+            {"name": "Paulus Miki", "where": "text"},
+            {"name": "Ioannes de Goto Soan", "where": {"footnote": 1}},
+            {"name": "Thomas", "where": {"footnote": 1}},
+        ])
+        self.assertEqual(issues, {"uncertain": [], "skipped": [], "socii_without_names": False})
+
+    def test_a_curated_entry_replaces_extraction(self):
+        persons, _ = ep.eulogy_persons("mr:1003-duo-ewaldi", "Duo Ewaldi", "…", [], {},
+                                       {"mr:1003-duo-ewaldi": [{"name": "Ewaldus", "where": "text"}]})
+        self.assertEqual(persons, [{"name": "Ewaldus", "where": "text"}])
+
+    def test_et_socii_with_no_names_found_is_flagged(self):
+        _, issues = ep.eulogy_persons("mr:0101-x-et-socii", "Sancti X et socii", "Romæ, sancti X et sociórum.",
+                                      [], {}, {})
+        self.assertTrue(issues["socii_without_names"])
+
+
+class ValidateTest(unittest.TestCase):
+    def test_rejects_bad_data(self):
+        good = {"mr:0206-paulus-miki-et-socii": [{"name": "Ioannes de Goto Soan", "where": {"footnote": 1}}]}
+        self.assertEqual(ep.validate(good, FOOT, {"mr:0206-paulus-miki-et-socii"}), [])
+        self.assertTrue(ep.validate({"mr:9999-nemo": [{"name": "Nemo", "where": "text"}]}, {}, set()))
+        self.assertTrue(ep.validate({"mr:0206-paulus-miki-et-socii": [
+            {"name": "Petrus Fictus", "where": {"footnote": 1}}]}, FOOT, {"mr:0206-paulus-miki-et-socii"}))
+        self.assertTrue(ep.validate({"mr:0206-paulus-miki-et-socii": [
+            {"name": "Thomas", "where": {"footnote": 2}}]}, FOOT, {"mr:0206-paulus-miki-et-socii"}))
+        self.assertTrue(ep.validate({"mr:0206-paulus-miki-et-socii": [
+            {"name": "Thomas", "where": "text"}, {"name": "Thomas", "where": {"footnote": 1}}]},
+            FOOT, {"mr:0206-paulus-miki-et-socii"}))
+
+
+class RenderTest(unittest.TestCase):
+    def test_json_shape(self):
+        import json
+        doc = json.loads(ep.render_json({"mr:0101-basilius": [{"name": "Basilius", "where": "text"}]}))
+        self.assertIn("$comment", doc)
+        self.assertEqual(doc["editions"]["martyrologium_romanum_2004"]["mr:0101-basilius"][0]["name"], "Basilius")
+
+
+class FirstRunFindingsTest(unittest.TestCase):
+    """Found by the first run on the 2004 texts."""
+
+    def test_a_name_never_opens_with_a_particle(self):
+        names, skipped = pt.footnote_names(
+            "Quorum nomina: Ioannes Fictus, e Congregatione Missionis; Paulus Alter, e Societate Iesu.")
+        self.assertEqual(names, ["Ioannes Fictus", "Paulus Alter"])
+        self.assertEqual(skipped, [])
+
+    def test_a_religious_name_run_into_a_genitive_name_is_reported(self):
+        lex = {pt.name_key(w): w for w in ["Teresia", "Sancto", "Augustino", "Maria", "Magdalena", "Rosa"]}
+        names, uncertain = pt.text_companions(
+            "Arausióne, beatárum Teresiæ a Sancto Augustíno Maríæ Magdalénæ Lidoine et Rosæ, vírginum.", lex)
+        self.assertEqual(names, ["Rosa"])
+        self.assertEqual(uncertain, ["Teresia a Sancto Augustino Maríæ"])
+
+    def test_hebrew_names_decline_too(self):
+        lex = {pt.name_key(w): w for w in ["Michael", "Samuel", "Simeon", "David", "Leo"]}
+        self.assertEqual(pt.nominative("Michaélis", lex), "Michael")
+        self.assertEqual(pt.nominative("Samuélis", lex), "Samuel")
+        self.assertEqual(pt.nominative("Simeónis", lex), "Simeon")
+        self.assertEqual(pt.nominative("Davídis", lex), "David")
+        self.assertEqual(pt.nominative("Leónis", lex), "Leo")
+
+    def test_an_unknown_genitive_after_a_particle_is_reported(self):
+        lex = {pt.name_key(w): w for w in ["Maria", "Columna", "Martinez", "Ioannes", "Brito"]}
+        names, uncertain = pt.text_companions(
+            "Valéntiæ, beatárum Maríæ a Columna Iacóbæ Martinez et Ioánnis de Brito, mártyrum.", lex)
+        self.assertEqual(names, ["Ioannes de Brito"])
+        self.assertEqual(uncertain, ["Maria a Columna Iacóbæ"])
+
+    def test_a_footnote_name_printed_in_the_genitive_is_reported(self):
+        names, skipped = pt.footnote_names(
+            "Quarum nomina: Teresiæ Henricæ ab Annuntiatione Faurie, Mariæ; Anna Rosa.")
+        self.assertEqual(names, ["Anna Rosa"])
+        self.assertEqual(skipped, ["Teresiæ Henricæ ab Annuntiatione Faurie", "Mariæ"])
+
+    def test_a_descriptor_after_a_comma_starts_no_name_in_the_text(self):
+        lex = {pt.name_key(w): w for w in ["Michael", "Carvalho", "Petrus"]}
+        names, _ = pt.text_companions("Nagasákii, beatórum Michaélis Carvalho, e Societáte Iesu, et Petri.", lex)
+        self.assertEqual(names, ["Michael Carvalho", "Petrus"])
+
+    def test_groups_named_by_a_number_or_plurimi_name_no_one(self):
+        self.assertEqual(pt.subject_names("mr:0205-plurimi-martyres-ponti", "Sancti Plurimi Martyres Ponti"), [])
+        self.assertEqual(pt.subject_names("mr:0220-quinque-martyres-tyri", "Sancti Quinque Martyres Tyri"), [])
+        self.assertEqual(pt.subject_names("mr:0814-octingenti-martyres-hydrunti", "Sancti Octingenti Martyres Hydrunti"), [])
+        self.assertEqual(pt.subject_names("mr:0407-ducenti-milites-martyres-sinopes",
+                                          "Sancti Ducenti Milites Martyres Sinopes"), [])
+
+    def test_the_declined_nominative_wins_over_a_known_genitive(self):
+        lex = {pt.name_key(w): w for w in ["Maria", "Mariae", "Franciscus", "Francisci"]}
+        self.assertEqual(pt.nominative("Maríæ", lex), "Maria")
+        self.assertEqual(pt.nominative("Francísci", lex), "Franciscus")
+
+    def test_an_uncertain_word_drops_its_whole_name_and_known_words_keep_their_spelling(self):
+        lex = {pt.name_key(w): w for w in ["Teresia", "Sancto", "Augustino", "Maria", "Anna"]}
+        names, uncertain = pt.text_companions(
+            "Compéndii, sanctárum Teresiæ a Sancto Augustíno, Fictiánæ Secúndæ et Maríæ Annæ, vírginum.", lex)
+        self.assertEqual(names, ["Teresia a Sancto Augustino", "Maria Anna"])
+        self.assertEqual(uncertain, ["Fictiánæ"])
+
+
 if __name__ == "__main__":
     unittest.main()
