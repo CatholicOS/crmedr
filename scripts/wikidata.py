@@ -11,6 +11,7 @@ import hashlib
 import http.client
 import json
 import os
+import re
 import tempfile
 import time
 import urllib.error
@@ -31,6 +32,12 @@ RETRY_CODES = {429, 500, 502, 503, 504}
 # Countries that places' P17 names but that carry no P297 themselves: the
 # Netherlands (Q55) is the constituent country; NL sits on the Kingdom (Q29999).
 EXTRA_COUNTRY_ISO = {"Q55": "NL"}
+
+# The interface languages of martyrology-frontend, for the reader's person popups.
+DETAIL_LANGS = ("en", "it", "fr", "de", "es", "pt")
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+# P1480 (sourcing circumstances) = circa.
+CIRCA = "Q5727902"
 
 
 class WikidataError(Exception):
@@ -154,6 +161,34 @@ def summarize_person(raw):
     }
 
 
+# Wikidata time precision: 9 year (10 month and 11 day read as the year), 8 decade, 7 century.
+LIFE_PRECISION = {8: "decade", 7: "century"}
+YEAR = re.compile(r"([+-]?)(\d+)-")
+
+
+def life_date(claims, prop):
+    """The best dated value of `prop` for the reader: its year (negative before
+    Christ), its precision ("year", "decade" or "century") and whether a P1480
+    qualifier says circa. Preferred statements first, deprecated ones never, and
+    one coarser than a century skipped; None when nothing is left. Unlike _date,
+    which the review cards use, it keeps precision and circa apart."""
+    ranked = sorted((c for c in claims.get(prop, []) if c.get("rank") != "deprecated"),
+                    key=lambda c: c.get("rank") != "preferred")
+    for c in ranked:
+        v = _value(c)
+        if not (isinstance(v, dict) and "time" in v):
+            continue
+        p = v.get("precision", 9)
+        m = YEAR.match(v["time"])
+        if p < 7 or not m:
+            continue
+        quals = c.get("qualifiers", {}).get("P1480", [])
+        circa = any((q.get("datavalue", {}).get("value") or {}).get("id") == CIRCA for q in quals)
+        year = int(m.group(2)) * (-1 if m.group(1) == "-" else 1)
+        return {"year": year, "precision": "year" if p >= 9 else LIFE_PRECISION[p], "circa": circa}
+    return None
+
+
 class Wikidata:
     def __init__(self, cache_dir, fetch=http_get):
         self.cache_dir = cache_dir
@@ -246,6 +281,47 @@ class Wikidata:
     def person(self, qid):
         raw = self._entities([qid]).get(qid)
         return summarize_person(raw) if raw else None
+
+    def details_entities(self, qids):
+        """For the reader's popups: descriptions, claims and Wikipedia sitelinks in
+        the interface languages, by QID. Labels are not asked: the frontend's
+        persons snapshot already has them."""
+        out = {}
+        for i in range(0, len(qids), 50):
+            data = self._api(action="wbgetentities", ids="|".join(qids[i:i + 50]),
+                             props="descriptions|claims|sitelinks", languages="|".join(DETAIL_LANGS),
+                             sitefilter="|".join(f"{lang}wiki" for lang in DETAIL_LANGS))
+            for qid, raw in data.get("entities", {}).items():
+                if "missing" not in raw:
+                    out[qid] = raw
+        return out
+
+    def commons_files(self, files):
+        """Commons' extmetadata (author, license) for each file name as P18 gives
+        it, without "File:"; a missing file is left out."""
+        out = {}
+        for i in range(0, len(files), 50):
+            titles = "|".join("File:" + f for f in files[i:i + 50])
+            data = self._get(COMMONS_API + "?" + urllib.parse.urlencode(
+                {"action": "query", "titles": titles, "prop": "imageinfo", "iiprop": "extmetadata",
+                 "redirects": "1", "format": "json", "maxlag": "5"}))
+            query = data.get("query", {})
+            # a title the API normalized or redirected maps back to every name that led to it
+            sources = {}
+            for r in query.get("redirects", []) + query.get("normalized", []):
+                sources.setdefault(r["to"].removeprefix("File:"), []).append(r["from"].removeprefix("File:"))
+            for page in query.get("pages", {}).values():
+                info = page.get("imageinfo")
+                if info:
+                    names, todo = set(), [page["title"].removeprefix("File:")]
+                    while todo:
+                        name = todo.pop()
+                        if name not in names:
+                            names.add(name)
+                            todo.extend(sources.get(name, []))
+                    for name in names & set(files[i:i + 50]):
+                        out[name] = info[0].get("extmetadata", {})
+        return out
 
     def region_coords(self, text):
         """Coordinates of the non-country items with that exact Italian name. A
