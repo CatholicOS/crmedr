@@ -306,17 +306,21 @@ class Wikidata:
                 {"action": "query", "titles": titles, "prop": "imageinfo", "iiprop": "extmetadata",
                  "redirects": "1", "format": "json", "maxlag": "5"}))
             query = data.get("query", {})
-            # a title the API normalized or redirected maps back to the name as given
-            asked = {r["to"].removeprefix("File:"): r["from"].removeprefix("File:") for r in query.get("redirects", [])}
-            asked.update({n["to"].removeprefix("File:"): n["from"].removeprefix("File:")
-                          for n in query.get("normalized", [])})
+            # a title the API normalized or redirected maps back to every name that led to it
+            sources = {}
+            for r in query.get("redirects", []) + query.get("normalized", []):
+                sources.setdefault(r["to"].removeprefix("File:"), []).append(r["from"].removeprefix("File:"))
             for page in query.get("pages", {}).values():
                 info = page.get("imageinfo")
                 if info:
-                    name = page["title"].removeprefix("File:")
-                    for _ in range(2):
-                        name = asked.get(name, name)
-                    out[name] = info[0].get("extmetadata", {})
+                    names, todo = set(), [page["title"].removeprefix("File:")]
+                    while todo:
+                        name = todo.pop()
+                        if name not in names:
+                            names.add(name)
+                            todo.extend(sources.get(name, []))
+                    for name in names & set(files[i:i + 50]):
+                        out[name] = info[0].get("extmetadata", {})
         return out
 
     def region_coords(self, text):

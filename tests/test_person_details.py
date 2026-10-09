@@ -89,6 +89,20 @@ class DetailsClientTest(unittest.TestCase):
             self.assertEqual(client.commons_files(["Old.jpg"]), {"Old.jpg": {"LicenseShortName": {"value": "CC0"}}})
             self.assertIn("redirects=1", urls[0])
 
+    def test_every_name_that_resolves_to_one_page_gets_its_credits(self):
+        meta = {"LicenseShortName": {"value": "CC0"}}
+
+        def fetch(url):
+            return {"query": {"normalized": [{"from": "File:Some_file.jpg", "to": "File:Some file.jpg"}],
+                              "redirects": [{"from": "Old.jpg", "to": "New.jpg"},
+                                            {"from": "File:Some file.jpg", "to": "File:New.jpg"}],
+                              "pages": {"7": {"title": "File:New.jpg", "imageinfo": [{"extmetadata": meta}]}}}}
+
+        with tempfile.TemporaryDirectory() as d:
+            client = wd.Wikidata(Path(d), fetch=fetch)
+            self.assertEqual(client.commons_files(["Old.jpg", "New.jpg", "Some_file.jpg"]),
+                             {"Old.jpg": meta, "New.jpg": meta, "Some_file.jpg": meta})
+
 
 RAW = {
     "id": "Q19546",
