@@ -221,3 +221,17 @@ class LagBreakerTest(unittest.TestCase):
         self.assertEqual(len(out), 20)                  # every person reported as not processed
         self.assertEqual(len(calls), bp.MAX_CONSECUTIVE_FAILURES)  # but only the first few asked
         self.assertEqual(items, {})
+
+
+class SanctityTitlesTest(unittest.TestCase):
+    """The round trip found saints Wikidata records by an Eastern or ancient title (Telemachus: Reverend Martyr)."""
+
+    def test_saints_by_title_pass_the_status_rule(self):
+        for title in ["Q4377390", "Q2993173", "Q1349880", "Q18344276", "Q3332786", "Q2032316"]:
+            r = bp.evaluate(dict(PERSON, typology="translatio"), [cand("Q1", ["Paul Miki"], statuses=(title,))])
+            self.assertIsNotNone(r["auto"], title)
+
+    def test_venerable_and_servant_of_god_do_not(self):
+        for title in ["Q12774503", "Q51619", "Q869974"]:
+            r = bp.evaluate(dict(PERSON, typology="translatio"), [cand("Q1", ["Paul Miki"], statuses=(title,))])
+            self.assertIsNone(r["auto"], title)

@@ -35,8 +35,12 @@ STATUSES = ["auto", "reviewed", "unresolved"]
 QID = re.compile(r"^Q[1-9]\d*$")
 CONFIDENCES = {"high", "medium", "low"}
 MAX_CANDIDATES = 10
-# Wikidata's canonization statuses (P411) of a saint or a blessed.
-SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287"}
+# Wikidata's canonization statuses (P411) of a saint or a blessed: saint, Catholic saint,
+# canonized saint, blessed, and the titles Wikidata gives ancient and Eastern saints
+# instead (Telemachus is a "Reverend Martyr"): hieromartyr, Reverend Martyr, thaumaturge,
+# pre-congregation saint, great martyr, passion bearer. Not Venerable or Servant of God.
+SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
+                  "Q2993173", "Q4377390", "Q1349880", "Q18344276", "Q3332786", "Q2032316"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
                "blessed", "the", "of", "sanctus", "sancta", "beatus"}
