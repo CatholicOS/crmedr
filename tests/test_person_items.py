@@ -270,3 +270,17 @@ class UserPolicyTest(unittest.TestCase):
                    force_review={"mr:0206-paulus-miki-et-socii|Paulus Miki": "a namesake"})
         self.assertEqual(items, {})
         self.assertIn("forced review: a namesake", review["operations"][0]["failed"])
+
+
+class EditNeedsAQidTest(unittest.TestCase):
+    def test_an_edit_without_a_qid_is_an_error_not_the_suggestion(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, INDEX, FakeClient({"Paulus Miki": [cand("Q7", ["Paul Miki"], statuses=())],
+                                                     "Thomas Kozaki": []}))
+        exported = json.loads(json.dumps(review))
+        op = next(o for o in exported["operations"] if o["name"] == "Paulus Miki")
+        op["suggested"] = {"wikidata": "Q380649"}
+        op["decision"], op["edited"] = "edit", {}
+        with self.assertRaisesRegex(ValueError, "no item chosen"):
+            bp.apply_decisions(items, review, exported, INDEX,
+                               FakeClient(by_qid={"Q380649": cand("Q380649", ["Paul Miki"])}))

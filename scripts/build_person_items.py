@@ -63,6 +63,15 @@ FORCE_REVIEW = {
     # The only "Valentinus" candidate passing is the Valentine of 14 February; the 7 January
     # eulogy is another (a commemoratio, so no death date could tell them apart).
     "mr:0107-valentinus|Valentinus": "the item is the Valentine of 14 February, not this eulogy's",
+    # One-word names of undated eulogies that matched a famous namesake (CatholicOS/crmedr#79 review);
+    # Simon Peter's alias "Simeon" matched both Simeons.
+    "mr:0203-simeon-et-anna-prophetissa|Simeon": "the eulogy's Simeon is the prophet of the Presentation, not Saint Peter",
+    "mr:0427-simeon|Simeon": "the eulogy's Simeon is the bishop of Jerusalem, not Saint Peter",
+    "mr:0206-paulus-miki-et-socii|Thomas": "a Japanese martyr, not Thomas the Apostle",
+    "mr:0206-paulus-miki-et-socii|Bonaventura": "a Japanese martyr, not Saint Bonaventure",
+    "mr:0212-martyres-abitinenses|Maria": "an Abitinian martyr, not the Blessed Virgin",
+    "mr:1003-faustus-et-socii|Petrus": "a companion of Faustus, not Saint Peter",
+    "mr:1003-faustus-et-socii|Caius": "a companion of Faustus, not Pope Caius",
 }
 SEARCH_LANGUAGES = ("la", "it", "en")
 # After this many persons in a row whose lookups failed (Wikidata lagged or down), a
@@ -257,8 +266,9 @@ def _resolve(op, client):
     if decision not in ("accept", "edit"):
         return None, f"{key}: unknown decision {decision!r}"
     candidates = op.get("candidates", [])
-    qid = (edited.get("wikidata") if decision == "edit" else None) or suggested.get("wikidata") \
-        or (candidates[0]["wikidata"] if candidates else None)
+    # An edit names its item; only an accept falls back to the suggestion or the top candidate.
+    qid = edited.get("wikidata") if decision == "edit" else (
+        suggested.get("wikidata") or (candidates[0]["wikidata"] if candidates else None))
     if not qid or not QID.match(qid):
         return None, f"{key}: no item chosen"
     chosen = next((c for c in candidates if c["wikidata"] == qid), None) or client.person(qid)

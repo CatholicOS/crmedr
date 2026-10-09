@@ -51116,6 +51116,256 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0203-simeon-et-anna-prophetissa|Simeon",
+      "eulogy": "mr:0203-simeon-et-anna-prophetissa",
+      "day": "02-03",
+      "typology": "commemoratio",
+      "subject": "Sancti Simeon et Anna Prophetissa",
+      "name": "Simeon",
+      "where": "text",
+      "companions": [
+        "Anna Prophetissa"
+      ],
+      "failed": [
+        "forced review: the eulogy's Simeon is the prophet of the Presentation, not Saint Peter"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q33923",
+          "label": "Saint Peter",
+          "description": "apostle of Jesus Christ",
+          "names": [
+            "Apostle Peter",
+            "Apostolo Pietro",
+            "Cephas",
+            "Kipa",
+            "Papa Pietro",
+            "Peter",
+            "Peter the Apostle",
+            "Peter, the Apostle, Saint",
+            "Petrus",
+            "Pietro",
+            "Pietro apostolo",
+            "Pope Peter",
+            "Saint Peter",
+            "Saint Peter the Apostle",
+            "San Pietro",
+            "San Pietro apostolo",
+            "Sanctus Petrus",
+            "Shimon",
+            "Shimoun Bar Younah",
+            "Simeon",
+            "Simon",
+            "Simon Petrus",
+            "Simon Pietro",
+            "St Peter",
+            "St. Peter"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": "-000",
+          "died": "0065",
+          "feast": [
+            "Q2659"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11893508",
+          "label": "Simeon",
+          "description": "Russian orthodox priest (1929–1998)",
+          "names": [
+            "Simeon"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1929-02-02",
+          "died": "1998-09-21",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q18222237",
+          "label": "Simeon of Beth-Arsam",
+          "description": "bishop of Beth-Arsam (-548)",
+          "names": [
+            "Simeon",
+            "Simeon of Beth-Arsam",
+            "Simeone di Bet Arsam"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0450",
+          "died": "0548",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q192264",
+          "label": "Simeon I of Bulgaria",
+          "description": "Bulgarian Tsar who ruled from 893 to 927",
+          "names": [
+            "Simeon",
+            "Simeon I of Bulgaria",
+            "Simeone I di Bulgaria",
+            "Simeone I il Grande"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0863",
+          "died": "0927-05-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q297102",
+          "label": "Simeon of Moscow",
+          "description": "Prince of Moscow and Grand Prince of Vladimir (1316-1353)",
+          "names": [
+            "Semyon",
+            "Simeon",
+            "Simeon Ioannis filius Superbus",
+            "Simeon Iwanowitsch",
+            "Simeon Moscoviensis",
+            "Simeon of Moscow",
+            "Simeone di Russia"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1316-09-07",
+          "died": "1353-04-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q345205",
+          "label": "Simeon",
+          "description": "in the Gospel according to Luke, a man who meets Mary, Joseph, and baby Jesus (Luke 2:25–35)",
+          "names": [
+            "S",
+            "San Simeone il Giusto",
+            "San Simeone il Vecchio",
+            "San Simone profeta",
+            "Sim",
+            "Simeon",
+            "Simeon at the Temple",
+            "Simeon the God-receiver",
+            "Simeone il Giusto",
+            "Simeone il Vecchio",
+            "St. Simeon"
+          ],
+          "human": false,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0100",
+          "feast": [
+            "Q2313"
+          ],
+          "evidence": [
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q4419603",
+          "label": "Simeon",
+          "description": "Czech Orthodox bishop (1926–2024)",
+          "names": [
+            "Archbishop Simeon",
+            "Simeon"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1926-02-12",
+          "died": "2024-03-19",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q544321",
+          "label": "Simon of Trent",
+          "description": "Italian decanonizated saint",
+          "names": [
+            "San Simonino",
+            "Simeon",
+            "Simon of Trent",
+            "Simone Lorfendorf",
+            "Simone Unverdorben",
+            "Simonino di Trento"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1472",
+          "died": "1475-03-21",
+          "feast": [
+            "Q2453"
+          ],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q114239301",
+          "label": "Simeón",
+          "description": "family name",
+          "names": [
+            "Simeón"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12514943",
+          "label": "Simeon",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Simeon"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0203-teridius-et-remedius|Remedius",
       "eulogy": "mr:0203-teridius-et-remedius",
       "day": "02-03",
@@ -55204,6 +55454,350 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0206-paulus-miki-et-socii|Bonaventura",
+      "eulogy": "mr:0206-paulus-miki-et-socii",
+      "day": "02-06",
+      "typology": "celebratio",
+      "subject": "Sancti Paulus Miki et socii",
+      "name": "Bonaventura",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Paulus Miki",
+        "Ioannes de Goto Soan",
+        "Iacobus Kisai",
+        "Petrus Baptista Blázquez",
+        "Martinus ab Ascensione Aguirre",
+        "Franciscus Blanco",
+        "Philippus a Iesu de Las Casas",
+        "Gundisalvus García",
+        "Franciscus a Sancto Michaele de la Parilla",
+        "Leo Karasuma",
+        "Petrus Sukejiro",
+        "Cosmas Takeya",
+        "Paulus Ibaraki",
+        "Thomas Dangi",
+        "Paulus Suzuki",
+        "Ludovicus Ibaraki",
+        "Antonius",
+        "Michael Kozaki",
+        "Thomas",
+        "Gabriel",
+        "Ioannes Kinuya",
+        "Matthias",
+        "Franciscus de Meako",
+        "Ioachim Sakakibara",
+        "Franciscus Adauctus"
+      ],
+      "failed": [
+        "forced review: a Japanese martyr, not Saint Bonaventure"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q43746",
+          "label": "Bonaventure",
+          "description": "Franciscan, bishop, cardinal, Doctor of the Church, Catholic saint (1221–1274)",
+          "names": [
+            "Bonaventura",
+            "Bonaventura da Bagnorea",
+            "Bonaventura da Bagnoregio",
+            "Bonaventura di Bagnoregio",
+            "Bonaventure",
+            "Giovanni Fidanza",
+            "Giovanni di Fidanza",
+            "Saint Bonaventura",
+            "Saint Bonaventure",
+            "Saint Bonaventure O.F.M.",
+            "San Bonaventura",
+            "San Bonaventura da Bagnoregio",
+            "Sanctus Bonaventura",
+            "Sanctus Bonaventura de Balneoregio",
+            "Seraphic Doctor",
+            "St. Bonaventura",
+            "shën Bonaventura da Bagnoregio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "1221",
+          "died": "1274-07-15",
+          "feast": [
+            "Q2686"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108313555",
+          "label": "Bonaventura",
+          "description": "predicatore e agitatore religioso italiano",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1482",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108478626",
+          "label": "Bonaventura",
+          "description": "bishop of the Roman Catholic Church",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108573346",
+          "label": "Bonaventura",
+          "description": "bishop of Mariana",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q112441190",
+          "label": "Bonaventura",
+          "description": "",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1626",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q123358009",
+          "label": "Bonaventura",
+          "description": "",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1800-04-10",
+          "died": "1877-10-09",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q125318544",
+          "label": "Bonaventura",
+          "description": "master builder",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q605860",
+          "label": "Bonaventura Peeters the Elder",
+          "description": "Flemish painter (1614-1652)",
+          "names": [
+            "Aventura Peters",
+            "B Peters",
+            "B Pieters",
+            "B. Peeters",
+            "B. Peters",
+            "B. Petersen",
+            "B. Petres",
+            "B. Pieters",
+            "B. Péters",
+            "B. V. Peeters",
+            "B. v. Peters",
+            "B.Peeters",
+            "B.^Tre^R Petters",
+            "B^Tre^R Peeters",
+            "Banaventure Peeters",
+            "Ben. Peters",
+            "Benavento Peters",
+            "Benev. Peters",
+            "Benevento Peeters",
+            "Benevento Peters",
+            "Benvenuto Peters",
+            "Bon Aventure Pieters",
+            "Bon Peters",
+            "Bon Pieters",
+            "Bon Pietersz",
+            "Bon. Peeters",
+            "Bon. Peters",
+            "Bon. Petersen",
+            "Bon. Péters",
+            "Bon: Peters",
+            "Bona Ventura Peters",
+            "Bona van Thura Peeters",
+            "Bona. Peters",
+            "Bonadventure Peters",
+            "Bonav. Peeters",
+            "Bonav. Peters",
+            "Bonav. Petersen",
+            "Bonav. Pieters",
+            "Bonavant Peters",
+            "Bonavantuur Peter",
+            "Bonavent. Peeters",
+            "Bonavent. Peters",
+            "Bonaventer",
+            "Bonaventer Miesters",
+            "Bonaventer Peeters",
+            "Bonaventer Peters",
+            "Bonaventuer Peter",
+            "Bonaventuer Peters",
+            "Bonaventur Peeters",
+            "Bonaventur Pieters",
+            "Bonaventura",
+            "Bonaventura (I) Peeters",
+            "Bonaventura I Peeters",
+            "Bonaventura Pators",
+            "Bonaventura Peeters",
+            "Bonaventura Peeters (I)",
+            "Bonaventura Peeters D. Ä.",
+            "Bonaventura Peeters I",
+            "Bonaventura Peeters il Vecchio",
+            "Bonaventura Peeters the Elder",
+            "Bonaventura Petas",
+            "Bonaventura Peters",
+            "Bonaventura Petersen",
+            "Bonaventura Petters",
+            "Bonaventura Pieters",
+            "Bonaventura Poters",
+            "Bonaventura, I Peeters",
+            "Bonaventure Maesters",
+            "Bonaventure Peeters",
+            "Bonaventure Peteers",
+            "Bonaventure Peter",
+            "Bonaventure Peters",
+            "Bonaventure Petersis",
+            "Bonaventure Petters",
+            "Bonaventure Pieters",
+            "Bonaventure Péters",
+            "Bonaventuro",
+            "Bonaventurus Peters",
+            "Bonaventuur Peeters",
+            "Bonavontura Peeters",
+            "Bonnaventura Peters",
+            "Bonnaventure Peter",
+            "Bonnaventure Peters",
+            "Bonnaventure. Peters",
+            "Bonne Aventure Peeters",
+            "Bonv. Peters",
+            "Bonvaventure Peeters",
+            "Bovan. Peeters",
+            "Bow Peters",
+            "Buonaventura Pieters",
+            "Buonaventure",
+            "Buonaventure Peeters",
+            "M. Peters Olandese",
+            "Mr. B. Peters",
+            "Old Peters",
+            "Peeters",
+            "Peter",
+            "Peter Bonaventura",
+            "Peter Bonaventura Peters",
+            "Peters",
+            "Peters of Antwerp",
+            "Petters",
+            "Pieters",
+            "bon aventure Pieters",
+            "bonaventum peters",
+            "bonaventura peters",
+            "peeters bonaventura"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1614-07-23",
+          "died": "1652-07-25",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q68143",
+          "label": "Ernst August Friedrich Klingemann",
+          "description": "German writer (1777-1831)",
+          "names": [
+            "Bonaventura",
+            "Bonawentura",
+            "Ernst August Friedrich Klingemann"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1777-08-31",
+          "died": "1831-01-25",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108313597",
+          "label": "Bonaventura",
+          "description": "",
+          "names": [
+            "Bonaventura"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0206-paulus-miki-et-socii|Franciscus Adauctus",
       "eulogy": "mr:0206-paulus-miki-et-socii",
       "day": "02-06",
@@ -56461,6 +57055,267 @@
         "no candidate found"
       ],
       "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0206-paulus-miki-et-socii|Thomas",
+      "eulogy": "mr:0206-paulus-miki-et-socii",
+      "day": "02-06",
+      "typology": "celebratio",
+      "subject": "Sancti Paulus Miki et socii",
+      "name": "Thomas",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Paulus Miki",
+        "Ioannes de Goto Soan",
+        "Iacobus Kisai",
+        "Petrus Baptista Blázquez",
+        "Martinus ab Ascensione Aguirre",
+        "Franciscus Blanco",
+        "Philippus a Iesu de Las Casas",
+        "Gundisalvus García",
+        "Franciscus a Sancto Michaele de la Parilla",
+        "Leo Karasuma",
+        "Petrus Sukejiro",
+        "Cosmas Takeya",
+        "Paulus Ibaraki",
+        "Thomas Dangi",
+        "Paulus Suzuki",
+        "Ludovicus Ibaraki",
+        "Antonius",
+        "Michael Kozaki",
+        "Bonaventura",
+        "Gabriel",
+        "Ioannes Kinuya",
+        "Matthias",
+        "Franciscus de Meako",
+        "Ioachim Sakakibara",
+        "Franciscus Adauctus"
+      ],
+      "failed": [
+        "forced review: a Japanese martyr, not Thomas the Apostle"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q43669",
+          "label": "Thomas the Apostle",
+          "description": "one of the Twelve Apostles in the New Testament",
+          "names": [
+            "Apostle, Saint Didymos Judas Thomas",
+            "Apostle, Saint Thomas",
+            "Didymos",
+            "Didymus",
+            "Doubting Thomas",
+            "Saint Thomas",
+            "Saint Thomas the Apostle",
+            "San Tommaso",
+            "San Tommaso Apostolo",
+            "Sanctus Thomas Apostolus",
+            "St. Thomas",
+            "St. Thomas the Apostle",
+            "Te'oma",
+            "Thomas",
+            "Thomas Apostolus",
+            "Thomas the Apostle",
+            "Tommaso",
+            "Tommaso Didimo",
+            "Tommaso apostolo",
+            "the Apostle, Saint Thomas"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0001",
+          "died": "0072-07-03",
+          "feast": [
+            "Q2699",
+            "Q2928",
+            "Q617085"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q249183",
+          "label": "Thomas, 2nd Earl of Lancaster",
+          "description": "English noble (1278-1322)",
+          "names": [
+            "Thomas",
+            "Thomas Plantagenet, 2nd Earl of Lancaster",
+            "Thomas of Lancaster",
+            "Thomas, 2nd Earl of Lancaster",
+            "Tommaso Plantageneto"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1278",
+          "died": "1322-03-22",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q313838",
+          "label": "Thomas the Slav",
+          "description": "Byzantine military commander (c. 760–823)",
+          "names": [
+            "Thomas",
+            "Thomas Slavus",
+            "Thomas the Slav",
+            "Tommaso lo Slavo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0800",
+          "died": "0823",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q316120",
+          "label": "Thomas Schütte",
+          "description": "German artist (born 1954)",
+          "names": [
+            "Thomas",
+            "Thomas Schutte",
+            "Thomas Schütte",
+            "Thomas Shütte"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1954-11-16",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3498229",
+          "label": "Thomas",
+          "description": "bishop of Finland",
+          "names": [
+            "Thomas",
+            "Verner Thomas (–1248) Thomas de Abo (1400–) Thomé"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1150",
+          "died": "1248",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q514935",
+          "label": "John Meurig Thomas",
+          "description": "Welsh chemist (1932–2020)",
+          "names": [
+            "J M Thomas",
+            "J Thomas",
+            "J. M. Thomas",
+            "J. Thomas",
+            "J.M. Thomas",
+            "JM Thomas",
+            "John M Thomas",
+            "John M. Thomas",
+            "John Meurig Thomas",
+            "Sir John Meurig Thomas",
+            "Sir John Meurig Thomas FRS",
+            "Thomas"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1932-12-15",
+          "died": "2020-11-13",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12339189",
+          "label": "Thomas",
+          "description": "1985 debut studio album by Thomas Helmig",
+          "names": [
+            "Thomas"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1413324",
+          "label": "Thomas",
+          "description": "family name",
+          "names": [
+            "Thomas"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q15299374",
+          "label": "Thomas",
+          "description": "crater on Venus",
+          "names": [
+            "Thomas"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16428906",
+          "label": "Thomas",
+          "description": "male given name",
+          "names": [
+            "Thomas"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null
     },
@@ -66155,6 +67010,323 @@
           "died": null,
           "feast": [],
           "evidence": []
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Maria",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Maria",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Felice",
+        "Hilarione",
+        "Dativus",
+        "Sanator",
+        "Felix",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "forced review: an Abitinian martyr, not the Blessed Virgin"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q345",
+          "label": "Mary",
+          "description": "mother of Jesus Christ",
+          "names": [
+            "Beata Vergine",
+            "Beata Vergine Maria",
+            "Blessed Mother",
+            "Blessed Virgin",
+            "Blessed Virgin Mary",
+            "God-Bearer",
+            "Holy Mary",
+            "Holy Virgin",
+            "Immaculate Mary",
+            "Madonna",
+            "Maria",
+            "Maria Mater Dei",
+            "Maria Mater Iesu",
+            "Maria di Nazareth",
+            "Maria vergine",
+            "Maria virgo",
+            "Maria, madre di Gesù",
+            "Mary",
+            "Mary the Virgin",
+            "Mary, Mother of our Lord",
+            "Mary, mother of Jesus",
+            "Maryam",
+            "Miriam",
+            "Most Blessed",
+            "Mother of God",
+            "Mother of Jesus",
+            "Mīryām",
+            "Notre Dame",
+            "Our Lady",
+            "Queen of the Universe",
+            "Saint Mary",
+            "Santa Maria",
+            "St Mary the Virgin",
+            "The Blessed Mother",
+            "The Blessed Virgin",
+            "The Blessed Virgin Mary",
+            "The Madonna",
+            "Theotokos",
+            "Vergine Maria",
+            "Virgin God-Bearer",
+            "Virgin Mary",
+            "the Virgin Mary"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": "-001",
+          "died": "0048",
+          "feast": [
+            "Q2774"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q115472",
+          "label": "Marie Bonaparte",
+          "description": "French author and psychoanalyst (1882-1962)",
+          "names": [
+            "A. E. Narjani",
+            "Maria",
+            "Maria Bonaparte",
+            "Marie Bonaparte",
+            "Princess Marie Bonaparte"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1882-07-02",
+          "died": "1962-09-21",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1291385",
+          "label": "Maria",
+          "description": "Roman empress, wife of Honorius",
+          "names": [
+            "Maria"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0385",
+          "died": "0407-02",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q157073",
+          "label": "Mary of Burgundy",
+          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
+          "names": [
+            "Maria",
+            "Maria di Borgogna",
+            "Maria van Bourgondië",
+            "Mary I the Rich",
+            "Mary of Burgundy"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1457-02-13",
+          "died": "1482-03-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q235377",
+          "label": "Mary of Clopas",
+          "description": "one of the women present at the crucifixion of Jesus",
+          "names": [
+            "Maria",
+            "Maria Cleofe",
+            "Maria di Cleofa",
+            "Maria di Cleopa",
+            "Maria di Giacobbe",
+            "Maria di Giacomo",
+            "Mary of Clopas",
+            "Santa Maria di Cleofa"
+          ],
+          "human": false,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "-010",
+          "died": "0001",
+          "feast": [
+            "Q2529",
+            "Q2583"
+          ],
+          "evidence": [
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q236293",
+          "label": "Marie of France, Countess of Champagne",
+          "description": "countess of Champagne (1145-1198)",
+          "names": [
+            "Maria",
+            "Maria Franciae",
+            "Maria di Champagne",
+            "Maria di Francia",
+            "Marie de France",
+            "Marie of France",
+            "Marie of France, Countess of Champagne"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1145",
+          "died": "1198-03-11",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q57666",
+          "label": "Marie of Romania",
+          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
+          "names": [
+            "Maria",
+            "Maria Alexandra Victoria Edinburgensis",
+            "Maria di Sassonia-Coburgo-Gotha",
+            "Maria of Romania",
+            "Maria of Saxe-Coburg and Gotha",
+            "Maria, Queen of Romania",
+            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
+            "Marie of Edinburgh",
+            "Marie of Edinburgh, Queen of Romania",
+            "Marie of Romania",
+            "Marie of Saxe-Coburg and Gotha",
+            "Marie, Queen of Romania",
+            "Princess Marie of Edinburgh",
+            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
+            "Queen Maria of Romania",
+            "Queen Marie of Romania"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1875-10-29",
+          "died": "1938-07-18",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1579913",
+          "label": "Maria",
+          "description": "municipality in Gaspésie, Quebec, Canada",
+          "names": [
+            "Maria",
+            "Maria, Quebec"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q174343",
+          "label": "Maria",
+          "description": "municipality of the Philippines in the province of Siquijor",
+          "names": [
+            "Maria",
+            "Municipality of Maria"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q18088640",
+          "label": "María",
+          "description": "female given name (María)",
+          "names": [
+            "María"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
         }
       ],
       "decision": null,
@@ -163148,6 +164320,254 @@
           "died": null,
           "feast": [],
           "evidence": []
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0427-simeon|Simeon",
+      "eulogy": "mr:0427-simeon",
+      "day": "04-27",
+      "typology": "commemoratio",
+      "subject": "Sanctus Simeon",
+      "name": "Simeon",
+      "where": "text",
+      "companions": [],
+      "failed": [
+        "forced review: the eulogy's Simeon is the bishop of Jerusalem, not Saint Peter"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q33923",
+          "label": "Saint Peter",
+          "description": "apostle of Jesus Christ",
+          "names": [
+            "Apostle Peter",
+            "Apostolo Pietro",
+            "Cephas",
+            "Kipa",
+            "Papa Pietro",
+            "Peter",
+            "Peter the Apostle",
+            "Peter, the Apostle, Saint",
+            "Petrus",
+            "Pietro",
+            "Pietro apostolo",
+            "Pope Peter",
+            "Saint Peter",
+            "Saint Peter the Apostle",
+            "San Pietro",
+            "San Pietro apostolo",
+            "Sanctus Petrus",
+            "Shimon",
+            "Shimoun Bar Younah",
+            "Simeon",
+            "Simon",
+            "Simon Petrus",
+            "Simon Pietro",
+            "St Peter",
+            "St. Peter"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": "-000",
+          "died": "0065",
+          "feast": [
+            "Q2659"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11893508",
+          "label": "Simeon",
+          "description": "Russian orthodox priest (1929–1998)",
+          "names": [
+            "Simeon"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1929-02-02",
+          "died": "1998-09-21",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q18222237",
+          "label": "Simeon of Beth-Arsam",
+          "description": "bishop of Beth-Arsam (-548)",
+          "names": [
+            "Simeon",
+            "Simeon of Beth-Arsam",
+            "Simeone di Bet Arsam"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0450",
+          "died": "0548",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q192264",
+          "label": "Simeon I of Bulgaria",
+          "description": "Bulgarian Tsar who ruled from 893 to 927",
+          "names": [
+            "Simeon",
+            "Simeon I of Bulgaria",
+            "Simeone I di Bulgaria",
+            "Simeone I il Grande"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0863",
+          "died": "0927-05-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q297102",
+          "label": "Simeon of Moscow",
+          "description": "Prince of Moscow and Grand Prince of Vladimir (1316-1353)",
+          "names": [
+            "Semyon",
+            "Simeon",
+            "Simeon Ioannis filius Superbus",
+            "Simeon Iwanowitsch",
+            "Simeon Moscoviensis",
+            "Simeon of Moscow",
+            "Simeone di Russia"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1316-09-07",
+          "died": "1353-04-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q345205",
+          "label": "Simeon",
+          "description": "in the Gospel according to Luke, a man who meets Mary, Joseph, and baby Jesus (Luke 2:25–35)",
+          "names": [
+            "S",
+            "San Simeone il Giusto",
+            "San Simeone il Vecchio",
+            "San Simone profeta",
+            "Sim",
+            "Simeon",
+            "Simeon at the Temple",
+            "Simeon the God-receiver",
+            "Simeone il Giusto",
+            "Simeone il Vecchio",
+            "St. Simeon"
+          ],
+          "human": false,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0100",
+          "feast": [
+            "Q2313"
+          ],
+          "evidence": [
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q4419603",
+          "label": "Simeon",
+          "description": "Czech Orthodox bishop (1926–2024)",
+          "names": [
+            "Archbishop Simeon",
+            "Simeon"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1926-02-12",
+          "died": "2024-03-19",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q544321",
+          "label": "Simon of Trent",
+          "description": "Italian decanonizated saint",
+          "names": [
+            "San Simonino",
+            "Simeon",
+            "Simon of Trent",
+            "Simone Lorfendorf",
+            "Simone Unverdorben",
+            "Simonino di Trento"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1472",
+          "died": "1475-03-21",
+          "feast": [
+            "Q2453"
+          ],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q114239301",
+          "label": "Simeón",
+          "description": "family name",
+          "names": [
+            "Simeón"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12514943",
+          "label": "Simeon",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Simeon"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
         }
       ],
       "decision": null,
@@ -465753,6 +467173,278 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:1003-faustus-et-socii|Caius",
+      "eulogy": "mr:1003-faustus-et-socii",
+      "day": "10-03",
+      "typology": "commemoratio",
+      "subject": "Sancti Faustus et socii",
+      "name": "Caius",
+      "where": "text",
+      "companions": [
+        "Faustus",
+        "Petrus",
+        "Paulus",
+        "Eusebius",
+        "Chaeremon",
+        "Lucius"
+      ],
+      "failed": [
+        "forced review: a companion of Faustus, not Pope Caius"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q160882",
+          "label": "Caius",
+          "description": "pope of the Catholic Church from 283 to 296",
+          "names": [
+            "C. C.f.",
+            "Caius",
+            "Caius I",
+            "Pope Caius",
+            "Sanctus Caius PP.",
+            "papa Caio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": null,
+          "died": "0296-04-22",
+          "feast": [
+            "Q2526"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q123676407",
+          "label": "Jean Ferdinand Caius",
+          "description": "French botanist and university teacher (1877-1944)",
+          "names": [
+            "Caius",
+            "Fr. Jean Ferdinand Caius S.J.",
+            "J. F. Caius",
+            "Jean Ferdinand Caius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1877",
+          "died": "1944-07-27",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2441699",
+          "label": "Caius",
+          "description": "ealry 3rd-century Christian author",
+          "names": [
+            "Caio",
+            "Caius",
+            "Caius Presbyter",
+            "Caius, Presbyter of Rome",
+            "Gaio",
+            "Gaius",
+            "Gaius Presbyter"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0200",
+          "died": "0300",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q313439",
+          "label": "Gaius",
+          "description": "Roman jurist (2nd century AD)",
+          "names": [
+            "Caio",
+            "Caius",
+            "Gaio",
+            "Gaius",
+            "Gaius Iurisconsultus",
+            "Gaius, iur.,"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0120",
+          "died": "0180",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q705081",
+          "label": "Caius Welcker",
+          "description": "Dutch footballer (1885-1939)",
+          "names": [
+            "Caius",
+            "Caius Welcker",
+            "Jan Herman \"Caius\" Welcker"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1885-07-09",
+          "died": "1939-02-13",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q10133",
+          "label": "Suetonius",
+          "description": "late 1st/early 2nd-century Roman historian",
+          "names": [
+            "C. Suetonius Tranquillus",
+            "Caius Suetonius Tranquillus",
+            "Gaio Svetonio Tranquillo",
+            "Gaius Suetonius Tranquillus",
+            "Gaius Suetonius Tranquillus Biographus",
+            "Sueton",
+            "Suetone",
+            "Suetone Tranquile",
+            "Suetonio",
+            "Suetonius",
+            "Suétone",
+            "Sveton",
+            "Svetonio",
+            "Tranquillus Suetonius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0070",
+          "died": "0126",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1026023",
+          "label": "Caius",
+          "description": "male given name",
+          "names": [
+            "Caius",
+            "Caius (first name)",
+            "Caius (given name)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12723271",
+          "label": "Caius Iacob",
+          "description": "Romanian politician and mathematician (1912-1992)",
+          "names": [
+            "Caius Iacob"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1912-03-29",
+          "died": "1992-02-06",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1405",
+          "label": "Augustus",
+          "description": "first emperor of the Roman Empire and founder of the Julio-Claudian dynasty",
+          "names": [
+            "Augusto",
+            "Augustus",
+            "Augustus Caesar",
+            "Caesar Octavianus",
+            "Caio Giulio Cesare Ottaviano",
+            "Caio Giulio Cesare Ottaviano Augusto",
+            "Caius Julius Cæsar Octavianus",
+            "Caius Octavius",
+            "Caius Octavius Thurinus",
+            "Cesare Augusto",
+            "Gaio Cesare Ottaviano Augusto",
+            "Gaio Giulio Cesare Ottaviano",
+            "Gaio Giulio Cesare Ottaviano Augusto",
+            "Gaio Ottavio Turino",
+            "Gaius Caesar",
+            "Gaius Iulius Caesar Octavianus",
+            "Gaius Julius Caesar",
+            "Gaius Julius Caesar Augustus",
+            "Gaius Julius Caesar Octavianus",
+            "Gaius Julius Caesar Octavianus Augustus",
+            "Gaius Octavian",
+            "Gaius Octavius Caepias",
+            "Gaius Octavius Thurinus",
+            "Giulio Cesare Ottaviano",
+            "Imperator Caesar Divi F. Augustus",
+            "Imperator Caesar Divi Filius Augustus",
+            "Imperator Caesar Divi f. Augustus",
+            "Imperator Gaius Julius Caesar Octavianus Divi Filius Augustus",
+            "Octavian",
+            "Octavianus",
+            "Octavius Caesar",
+            "Ottaviano",
+            "Ottaviano Augusto",
+            "Γάϊος Ὀκταούιος",
+            "Καῖσαρ Σεβαστός θεός"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "-006",
+          "died": "0014-08-19",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q163079",
+          "label": "Catullus",
+          "description": "lyric Latin poet of the Roman Republic",
+          "names": [
+            "Caio Valerio Catullo",
+            "Caius Valerius Catullus",
+            "Catullo",
+            "Catullus",
+            "Gaio Valerio Catullo",
+            "Gaius Valerius Catullus",
+            "Valerio Catullo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "-008",
+          "died": "-005",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:1003-faustus-et-socii|Chaeremon",
       "eulogy": "mr:1003-faustus-et-socii",
       "day": "10-03",
@@ -466606,6 +468298,234 @@
           "statuses": [],
           "born": null,
           "died": "0476-09-04",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:1003-faustus-et-socii|Petrus",
+      "eulogy": "mr:1003-faustus-et-socii",
+      "day": "10-03",
+      "typology": "commemoratio",
+      "subject": "Sancti Faustus et socii",
+      "name": "Petrus",
+      "where": "text",
+      "companions": [
+        "Faustus",
+        "Caius",
+        "Paulus",
+        "Eusebius",
+        "Chaeremon",
+        "Lucius"
+      ],
+      "failed": [
+        "forced review: a companion of Faustus, not Saint Peter"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q33923",
+          "label": "Saint Peter",
+          "description": "apostle of Jesus Christ",
+          "names": [
+            "Apostle Peter",
+            "Apostolo Pietro",
+            "Cephas",
+            "Kipa",
+            "Papa Pietro",
+            "Peter",
+            "Peter the Apostle",
+            "Peter, the Apostle, Saint",
+            "Petrus",
+            "Pietro",
+            "Pietro apostolo",
+            "Pope Peter",
+            "Saint Peter",
+            "Saint Peter the Apostle",
+            "San Pietro",
+            "San Pietro apostolo",
+            "Sanctus Petrus",
+            "Shimon",
+            "Shimoun Bar Younah",
+            "Simeon",
+            "Simon",
+            "Simon Petrus",
+            "Simon Pietro",
+            "St Peter",
+            "St. Peter"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": "-000",
+          "died": "0065",
+          "feast": [
+            "Q2659"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q105541754",
+          "label": "Pierre",
+          "description": "roman catholic bishop (Geneva)",
+          "names": [
+            "Pierre",
+            "Pierre of Cessons",
+            "Pierre of Geneva",
+            "Pierre of Sessons"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q106214010",
+          "label": "Petrus",
+          "description": "",
+          "names": [
+            "Petrus",
+            "Petrus archiepiscopus Ruthenus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q107658259",
+          "label": "Petrus",
+          "description": "",
+          "names": [
+            "Petrus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1575",
+          "died": "1655",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108436812",
+          "label": "Pierre",
+          "description": "bishop of Skopje",
+          "names": [
+            "Pierre"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108451549",
+          "label": "Pedro",
+          "description": "Roman Catholic Bishop of Palencia",
+          "names": [
+            "Pedro"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108480082",
+          "label": "Petrus",
+          "description": "roman-catholic bishop of triocala",
+          "names": [
+            "Petrus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546787",
+          "label": "Pedro",
+          "description": "archbishop of the Roman Catholic Church",
+          "names": [
+            "Pedro"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1348",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546827",
+          "label": "Petrus",
+          "description": "bishop of Krbava",
+          "names": [
+            "Petrus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108554514",
+          "label": "Petrus",
+          "description": "bishop of Vladimir (Wlodzimierz)",
+          "names": [
+            "Petrus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [],
           "evidence": [
             "human",
