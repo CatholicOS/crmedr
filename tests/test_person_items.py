@@ -284,3 +284,35 @@ class EditNeedsAQidTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "no item chosen"):
             bp.apply_decisions(items, review, exported, INDEX,
                                FakeClient(by_qid={"Q380649": cand("Q380649", ["Paul Miki"])}))
+
+
+class SharedItemTest(unittest.TestCase):
+    """The user's ruling after the #79 review: an item matched in several eulogies through a one-word
+    name is usually a famous namesake, so none of those matches is automatic."""
+
+    def _index(self):
+        und = dict(PERSON, typology="commemoratio")
+        return {"mr:0802-eusebius|Eusebius": dict(und, eulogy="mr:0802-eusebius", name="Eusebius"),
+                "mr:0926-eusebius|Eusebius": dict(und, eulogy="mr:0926-eusebius", name="Eusebius"),
+                "mr:0101-x|Eusebius Fictus": dict(und, eulogy="mr:0101-x", name="Eusebius Fictus"),
+                "mr:0103-y|Gordius": dict(und, eulogy="mr:0103-y", name="Gordius")}
+
+    def test_a_one_word_name_whose_item_is_matched_elsewhere_is_queued(self):
+        items, review = {}, bp.new_changeset([])
+        client = FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])], "Eusebius Fictus": [cand("Q1", ["Eusebius Fictus"])],
+                             "Gordius": [cand("Q2", ["Gordius"])]})
+        bp.propose(items, review, self._index(), client)
+        queued = {op["id"]: op for op in review["operations"]}
+        self.assertIn("mr:0802-eusebius|Eusebius", queued)
+        self.assertIn("mr:0926-eusebius|Eusebius", queued)
+        self.assertIn("matched in another eulogy", queued["mr:0802-eusebius|Eusebius"]["failed"][-1])
+        self.assertEqual(items["mr:0101-x"]["Eusebius Fictus"]["wikidata"], "Q1")  # a full name stays automatic
+        self.assertEqual(items["mr:0103-y"]["Gordius"]["wikidata"], "Q2")          # matched once: automatic
+
+    def test_an_existing_automatic_match_counts_too(self):
+        items = {"mr:0802-eusebius": {"Eusebius": {"wikidata": "Q1", "status": "auto"}}}
+        review = bp.new_changeset([])
+        index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius|Eusebius"}
+        index["mr:0802-eusebius|Eusebius"] = self._index()["mr:0802-eusebius|Eusebius"]
+        bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
+        self.assertIn("mr:0926-eusebius|Eusebius", {op["id"] for op in review["operations"]})

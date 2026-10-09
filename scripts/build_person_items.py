@@ -218,10 +218,30 @@ def _decided(items, person):
     return person["name"] in items.get(person["eulogy"], {})
 
 
+def _one_word(name):
+    return len(name.split()) == 1
+
+
+def _shared_items(items, index, pending):
+    """The items matched automatically, through a one-word name, in more than one eulogy: a famous
+    namesake, usually (Augustine of Hippo for Augustine of Canterbury). The user's ruling after the
+    CatholicOS/crmedr#79 review: none of those matches is automatic."""
+    eulogies = {}
+    for mrid, persons in items.items():
+        for name, e in persons.items():
+            if e.get("status") == "auto" and _one_word(name):
+                eulogies.setdefault(e["wikidata"], set()).add(mrid)
+    for key, result in pending.items():
+        if _one_word(index[key]["name"]):
+            eulogies.setdefault(result["auto"]["wikidata"], set()).add(index[key]["eulogy"])
+    return {qid for qid, ms in eulogies.items() if len(ms) > 1}
+
+
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     ops = {op["id"]: op for op in review["operations"]}
     not_processed = []
     failures = 0
+    pending = {}  # automatic results, written once it is known which items are shared
     for key in sorted(index):
         person = index[key]
         if _decided(items, person):
@@ -241,11 +261,19 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[key])
         if result["auto"]:
-            items.setdefault(person["eulogy"], {})[person["name"]] = {"wikidata": result["auto"]["wikidata"],
-                                                                     "status": "auto"}
-            ops.pop(key, None)
+            pending[key] = result
         else:
             ops[key] = make_op(key, person, result, ops.get(key))
+    shared = _shared_items(items, index, pending)
+    for key, result in pending.items():
+        person, qid = index[key], result["auto"]["wikidata"]
+        if _one_word(person["name"]) and qid in shared:
+            result["failed"].append(f"the same item ({qid}) is matched in another eulogy through a one-word name: "
+                                    "a namesake?")
+            ops[key] = make_op(key, person, result, ops.get(key))
+        else:
+            items.setdefault(person["eulogy"], {})[person["name"]] = {"wikidata": qid, "status": "auto"}
+            ops.pop(key, None)
     review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
     review["generated_at"] = datetime.date.today().isoformat()
     return not_processed
