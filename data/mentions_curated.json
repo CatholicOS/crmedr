@@ -1,0 +1,4 @@
+{
+  "$comment": "Curators' corrections to data/mentions.json: for each eulogy listed, its complete list of mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a reviewed change-set (docs/mentions-changeset.md), or by hand.",
+  "editions": {}
+}

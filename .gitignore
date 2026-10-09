@@ -2,3 +2,6 @@ __pycache__/
 *.pyc
 .superpowers/
 .cache/
+
+# Quotes the 2004 texts: written by extract_mentions.py --review (and exported from the Review page) outside the repository, never committed.
+mentions-review*.json
