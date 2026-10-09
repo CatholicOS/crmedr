@@ -232,6 +232,11 @@ For other typologies there is no date to check; their `auto` matches are listed 
 into `FORCE_REVIEW`, with a comment. A run stops asking after five persons in a row whose lookups
 failed (Wikidata lagged), leaving the rest for the next run.
 
+An item matched automatically in more than one eulogy through a one-word name is usually a famous
+namesake (Augustine of Hippo had matched Augustine of Canterbury's days): none of those matches is
+`auto`; they are queued with the reason shown (decided 2026-10-09, after the review of
+CatholicOS/crmedr#79).
+
 ### `verify-suggestions` (network)
 
 As for the gazetteer: Claude may fill `suggested: {wikidata}`, `reasoning` and `confidence`
