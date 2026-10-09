@@ -223,18 +223,21 @@ def _one_word(name):
 
 
 def _shared_items(items, index, pending):
-    """The items matched automatically, through a one-word name, in more than one eulogy: a famous
-    namesake, usually (Augustine of Hippo for Augustine of Canterbury). The user's ruling after the
-    CatholicOS/crmedr#79 review: none of those matches is automatic."""
+    """The items matched in more than one eulogy, by any decided or pending match, whatever the
+    name. A one-word name matched to such an item is usually a famous namesake (Augustine of Hippo
+    for Augustine of Canterbury): the user's ruling after the CatholicOS/crmedr#79 review is that
+    none of those one-word matches is automatic."""
     eulogies = {}
     for mrid, persons in items.items():
-        for name, e in persons.items():
-            if e.get("status") == "auto" and _one_word(name):
+        for e in persons.values():
+            if e.get("wikidata"):
                 eulogies.setdefault(e["wikidata"], set()).add(mrid)
     for key, result in pending.items():
-        if _one_word(index[key]["name"]):
-            eulogies.setdefault(result["auto"]["wikidata"], set()).add(index[key]["eulogy"])
+        eulogies.setdefault(result["auto"]["wikidata"], set()).add(index[key]["eulogy"])
     return {qid for qid, ms in eulogies.items() if len(ms) > 1}
+
+
+SHARED = "the same item ({qid}) is matched in another eulogy, and this name is one word: a namesake?"
 
 
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
@@ -265,11 +268,26 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         else:
             ops[key] = make_op(key, person, result, ops.get(key))
     shared = _shared_items(items, index, pending)
+    # propose withdraws its own automatic one-word matches of a shared item; a curator's
+    # decision (reviewed, unresolved) it never touches.
+    for key, person in index.items():
+        e = items.get(person["eulogy"], {}).get(person["name"])
+        if not (e and e["status"] == "auto" and _one_word(person["name"]) and e["wikidata"] in shared):
+            continue
+        try:
+            result = evaluate(person, gather(person, client))
+        except WikidataError as err:
+            not_processed.append((key, str(err)))
+            continue
+        result["failed"].append(SHARED.format(qid=e["wikidata"]))
+        del items[person["eulogy"]][person["name"]]
+        if not items[person["eulogy"]]:
+            del items[person["eulogy"]]
+        ops[key] = make_op(key, person, result, ops.get(key))
     for key, result in pending.items():
         person, qid = index[key], result["auto"]["wikidata"]
         if _one_word(person["name"]) and qid in shared:
-            result["failed"].append(f"the same item ({qid}) is matched in another eulogy through a one-word name: "
-                                    "a namesake?")
+            result["failed"].append(SHARED.format(qid=qid))
             ops[key] = make_op(key, person, result, ops.get(key))
         else:
             items.setdefault(person["eulogy"], {})[person["name"]] = {"wikidata": qid, "status": "auto"}

@@ -315,4 +315,26 @@ class SharedItemTest(unittest.TestCase):
         index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius|Eusebius"}
         index["mr:0802-eusebius|Eusebius"] = self._index()["mr:0802-eusebius|Eusebius"]
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
-        self.assertIn("mr:0926-eusebius|Eusebius", {op["id"] for op in review["operations"]})
+        queued = {op["id"] for op in review["operations"]}
+        self.assertIn("mr:0926-eusebius|Eusebius", queued)
+        # The existing automatic match is withdrawn too (#79 review): none of them is automatic.
+        self.assertIn("mr:0802-eusebius|Eusebius", queued)
+        self.assertNotIn("mr:0802-eusebius", items)
+
+    def test_a_full_name_match_elsewhere_queues_the_one_word_match(self):
+        und = dict(PERSON, typology="commemoratio")
+        index = {"mr:0526-augustinus|Augustinus": dict(und, eulogy="mr:0526-augustinus", name="Augustinus"),
+                 "mr:0828-augustinus|Aurelius Augustinus": dict(und, eulogy="mr:0828-augustinus", name="Aurelius Augustinus")}
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, index, FakeClient({"Augustinus": [cand("Q8018", ["Augustinus"])],
+                                                     "Aurelius Augustinus": [cand("Q8018", ["Aurelius Augustinus"])]}))
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0526-augustinus|Augustinus"])
+        self.assertEqual(items["mr:0828-augustinus"]["Aurelius Augustinus"]["wikidata"], "Q8018")
+
+    def test_a_curators_decision_is_never_withdrawn(self):
+        items = {"mr:0802-eusebius": {"Eusebius": {"wikidata": "Q1", "status": "reviewed"}}}
+        review = bp.new_changeset([])
+        index = {"mr:0802-eusebius|Eusebius": self._index()["mr:0802-eusebius|Eusebius"],
+                 "mr:0926-eusebius|Eusebius": self._index()["mr:0926-eusebius|Eusebius"]}
+        bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
+        self.assertEqual(items["mr:0802-eusebius"]["Eusebius"]["status"], "reviewed")

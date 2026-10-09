@@ -113,8 +113,9 @@ given, after the same checks, in place of what it would extract for that eulogy.
   `unresolved`: a curator found no item (`wikidata: null`, `note` required).
 - A person with no key here is not yet decided: queued in the review change-set, or not
   processed.
-- `propose` never changes or removes a key; a curator does, by editing the entry or deleting
-  it and rerunning `propose`.
+- `propose` never changes or removes a curator's decision (`reviewed`, `unresolved`); a curator
+  does, by editing the entry or deleting it and rerunning `propose`. Its own `auto` entries it
+  withdraws only under the shared-item rule (below).
 
 ## Extraction: `scripts/extract_persons.py`
 
@@ -232,10 +233,11 @@ For other typologies there is no date to check; their `auto` matches are listed 
 into `FORCE_REVIEW`, with a comment. A run stops asking after five persons in a row whose lookups
 failed (Wikidata lagged), leaving the rest for the next run.
 
-An item matched automatically in more than one eulogy through a one-word name is usually a famous
-namesake (Augustine of Hippo had matched Augustine of Canterbury's days): none of those matches is
-`auto`; they are queued with the reason shown (decided 2026-10-09, after the review of
-CatholicOS/crmedr#79).
+An item matched in more than one eulogy (by any decided or automatic match, whatever the name) is,
+for a one-word name, usually a famous namesake (Augustine of Hippo had matched Augustine of
+Canterbury's days): no one-word match of such an item is `auto`; they are queued with the reason
+shown, and `propose` withdraws its own earlier `auto` entries of the kind (decided 2026-10-09,
+after the review of CatholicOS/crmedr#79). Full-name matches stay automatic.
 
 ### `verify-suggestions` (network)
 
