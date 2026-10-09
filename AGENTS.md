@@ -10,6 +10,8 @@ CRMEDR (Common Roman Martyrology Eulogy Data Repository) is a **data repository*
 
 **One exception: place designations.** Place designations are factual and may be quoted verbatim in `places[].la` (Latin editio typica altera 2004) and `places[].it` (Italian CEI edition 2004) in `data/places.json`. No other text of either edition is stored. `scripts/extract_places.py` enforces part of this in code: every `la` / `it` must appear verbatim in its elogium, `la` at most 12 words (longer opening places need a commented `LONG_LEAD_OK` entry) and `it` at most 20, and an opening place is cut at a comma that starts a clause. It cannot tell every narrative phrase from a place, so `docs/places-report.md` lists each Latin opening place that still contains a comma for review.
 
+**Names are facts too.** The saints and blessed a eulogy commemorates are stored in `data/persons.json` as Latin nominative names; the forms as printed (often genitive) are read to check them and never stored.
+
 All IDs are **drafts pending committee review**. The `mr:` namespace prefix and the 2004 anchor-edition choice are placeholders; changing either is a mechanical rewrite.
 
 ## The identifier scheme
@@ -35,6 +37,10 @@ All generator scripts read **private source repositories** that hold the copyrig
    - Run: `python3 scripts/extract_places.py /path/to/martyrology-texts` (stdlib only)
 5. **`scripts/build_gazetteer.py`** resolves each distinct place designation in `data/places.json` to a Wikidata item, a label and the place's actual modern country, and writes `data/gazetteer.json`, the review change-set `data/gazetteer_review.json` (`crmedr-changeset/v1`, op `resolve_place`, reviewed in martyrology-frontend) and `docs/gazetteer-report.md`. Unlike the other generators it reads no private sources but **needs network access** (Wikidata, cached in `.cache/wikidata/`). A place is `auto` only when exactly one candidate passes the evidence bar; otherwise it waits in the change-set and has no key in `gazetteer.json`.
    - Run: `python3 scripts/build_gazetteer.py propose`; after review in martyrology-frontend, `python3 scripts/build_gazetteer.py apply <exported.json>`; `verify-suggestions` checks suggested QIDs; `check` validates offline (stdlib only)
+6. **`scripts/extract_persons.py`** reads `data/martyrology_ids.json`, `i18n/la.json`, `data/persons_curated.json` and the private `martyrology-texts` repo (Latin editio altera 2004 texts and footnotes), and writes `data/persons.json` (the saints and blessed each current eulogy commemorates: the Latin nominative name and where it is printed, the text or the nth footnote) and `docs/persons-report.md`. Names are stored as facts; no text is. Hand decisions: `MARIAN_IDS`, `FEAST_PERSONS`, `GROUP_IDS` in `scripts/persons_text.py`, and `data/persons_curated.json`.
+   - Run: `python3 scripts/extract_persons.py /path/to/martyrology-texts` (stdlib only)
+7. **`scripts/build_person_items.py`** identifies each person with a Wikidata item and writes `data/person_items.json`, the review change-set `data/person_items_review.json` (`crmedr-changeset/v1`, op `resolve_person`, reviewed in martyrology-frontend) and `docs/person-items-report.md`. Like the gazetteer it needs network access (cached in `.cache/wikidata/`); a person is `auto` only when exactly one candidate passes the evidence bar.
+   - Run: `python3 scripts/build_person_items.py propose`; after review, `python3 scripts/build_person_items.py apply <exported.json>`; `verify-suggestions` checks suggested QIDs; `check` validates offline
 
 ### Invariants the pipeline enforces (preserve these when editing)
 
@@ -54,6 +60,7 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `data/places_curated.json` — hand-entered body places (birth, see, burial or death elsewhere); `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
 - `data/misprints.json` — verified misprints in the printed 2004 editions (Latin and Italian) and the unofficial English 2004 text, one word (or a phrase of up to three words) each; they also count as stop words in place extraction. `duplicated_entries` there records a whole eulogy an edition prints again on another day (the copy is not in the texts)
 - `data/gazetteer.json` — `reviewed` and `unresolved` entries are human decisions; `propose` never changes an existing key. Fix a wrong place by editing its entry (keeping the validation rules), or delete the key and rerun `propose` to queue it again. A wrong `auto` place that no general rule can catch goes into `FORCE_REVIEW` in `scripts/build_gazetteer.py`, with a comment.
+- `MARIAN_IDS` / `FEAST_PERSONS` / `GROUP_IDS` / `GROUP_HEADS` in `scripts/persons_text.py`, `data/persons_curated.json`, and `FORCE_REVIEW` / `NAME_EQUIVALENTS` in `scripts/build_person_items.py` — the persons' hand decisions
 
 The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
 
