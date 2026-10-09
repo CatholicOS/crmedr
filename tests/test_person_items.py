@@ -235,3 +235,38 @@ class SanctityTitlesTest(unittest.TestCase):
         for title in ["Q12774503", "Q51619", "Q869974"]:
             r = bp.evaluate(dict(PERSON, typology="translatio"), [cand("Q1", ["Paul Miki"], statuses=(title,))])
             self.assertIsNone(r["auto"], title)
+
+
+class UserPolicyTest(unittest.TestCase):
+    """The user's rulings after the first full run (2026-10-09)."""
+
+    def test_a_death_date_known_to_the_month_counts_when_the_month_matches(self):
+        self.assertIsNotNone(bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died="1597-02")])["auto"])
+
+    def test_a_year_only_death_date_does_not_count(self):
+        # A eulogy has no year: a year can be checked against nothing (the user's ruling after the
+        # sample: Zacharias matched the biblical prophet, Papias Papias of Hierapolis).
+        self.assertIsNone(bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died="1597")])["auto"])
+
+    def test_a_coarse_date_that_contradicts_or_no_date_does_not(self):
+        self.assertIsNone(bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died="1597-03")])["auto"])
+        self.assertIsNone(bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died=None)])["auto"])
+        self.assertIsNone(bp.evaluate(PERSON, [cand("Q1", ["Paul Miki"], died="1597-02-06")])["auto"])
+
+    def test_the_report_lists_automatic_matches_without_a_date_check(self):
+        index = {"mr:0107-valentinus|Valentinus": dict(PERSON, eulogy="mr:0107-valentinus", name="Valentinus",
+                                                       typology="commemoratio"),
+                 "mr:0206-paulus-miki-et-socii|Paulus Miki": PERSON}
+        items = {"mr:0107-valentinus": {"Valentinus": {"wikidata": "Q1", "status": "auto"}},
+                 "mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "Q2", "status": "auto"}}}
+        report = bp.render_report(items, index, [])
+        self.assertIn("mr:0107-valentinus|Valentinus: Q1", report)
+        self.assertNotIn("Paulus Miki: Q2", report)
+
+    def test_a_forced_person_is_queued_even_when_one_candidate_passes(self):
+        items, review = {}, bp.new_changeset([])
+        index = {"mr:0206-paulus-miki-et-socii|Paulus Miki": PERSON}
+        bp.propose(items, review, index, FakeClient({"Paulus Miki": [cand("Q1", ["Paul Miki"])]}),
+                   force_review={"mr:0206-paulus-miki-et-socii|Paulus Miki": "a namesake"})
+        self.assertEqual(items, {})
+        self.assertIn("forced review: a namesake", review["operations"][0]["failed"])

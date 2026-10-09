@@ -59,7 +59,11 @@ NAME_EQUIVALENTS = {
 # The same table in name_key form ("John" -> "iohn", "Giovanni" -> "giouanni"), for comparing.
 _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVALENTS.items()}
 # Persons that pass the evidence bar but are known to be wrong: always reviewed.
-FORCE_REVIEW = {}
+FORCE_REVIEW = {
+    # The only "Valentinus" candidate passing is the Valentine of 14 February; the 7 January
+    # eulogy is another (a commemoratio, so no death date could tell them apart).
+    "mr:0107-valentinus|Valentinus": "the item is the Valentine of 14 February, not this eulogy's",
+}
 SEARCH_LANGUAGES = ("la", "it", "en")
 # After this many persons in a row whose lookups failed (Wikidata lagged or down), a
 # run stops asking: the rest are "not processed", for the next run, instead of each
@@ -111,10 +115,20 @@ def evidence(person, c):
         ev.append("status")
     if name_matches(person["name"], c.get("names", []) + [c.get("label", "")]):
         ev.append("name")
-    died = c.get("died") or ""
-    if person["typology"] == "dies_natalis" and len(died) == 10 and died[5:] == person["day"]:
+    if person["typology"] == "dies_natalis" and _death_agrees(c.get("died") or "", person["day"]):
         ev.append("death")
     return ev
+
+
+def _death_agrees(died, day):
+    """A death date on the eulogy's day (MM-DD), or, when Wikidata knows only the month, in its
+    month (the user's ruling, 2026-10-09). A year alone can be checked against nothing, since a
+    eulogy has no year, and does not count; nor does no date."""
+    if len(died) == 10:
+        return died[5:] == day
+    if len(died) == 7:
+        return died[5:] == day[:2]
+    return False
 
 
 def _required(person):
@@ -342,6 +356,14 @@ def render_report(items, index, ops, not_processed=()):
              f"- Persons: {len(index)}",
              *(f"- {s}: {counts[s]}" for s in STATUSES),
              f"- Queued for review: {len(ops)}", f"- Not processed (lookup failed): {len(not_processed)}", ""]
+    # The user's ruling (2026-10-09): automatic matches of eulogies that do not mark a death
+    # stay automatic, listed here for a curator to scan; a wrong one goes into FORCE_REVIEW.
+    undated = sorted(f"{key}: {items[p['eulogy']][p['name']]['wikidata']}" for key, p in index.items()
+                     if p["typology"] != "dies_natalis"
+                     and items.get(p["eulogy"], {}).get(p["name"], {}).get("status") == "auto")
+    lines += [f"## Automatic without a date check, to scan ({len(undated)})", "",
+              "Eulogies that do not mark the day of death: name, status and a single candidate decided.", ""]
+    lines += [f"- {x}" for x in undated] + [""]
     if not_processed:
         lines += ["## Not processed", ""] + [f"- {k}: {e}" for k, e in not_processed] + [""]
     return "\n".join(lines)

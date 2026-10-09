@@ -214,14 +214,23 @@ User-Agent, `maxlag` etiquette and retries). Subcommands mirror `build_gazetteer
 A candidate passes when all hold:
 - P31 includes human (Q5);
 - P411 is a status of saint or blessed (`SAINT_STATUSES`, a commented constant of the QIDs
-  Wikidata uses: saint, Catholic saint, blessed);
+  Wikidata uses: saint, Catholic saint, canonized saint, blessed, and the titles it gives ancient
+  and Eastern saints instead: hieromartyr, Reverend Martyr, thaumaturge, pre-congregation saint,
+  great martyr, passion bearer; not Venerable or Servant of God);
 - a label or alias in `la`, `it` or `en` matches the name, compared folded (accents, case,
   `i`/`j`, `u`/`v`, `ae`/`æ`);
-- when the eulogy's typology is `dies_natalis`: P570's month and day equal the eulogy's day
-  (a P570 with day precision; a coarser date fails this rule).
+- when the eulogy's typology is `dies_natalis`: P570's month and day equal the eulogy's day, or,
+  for a P570 known only to the month, its month equals the eulogy's month. A year alone fails:
+  a eulogy has no year to check it against (decided 2026-10-09, after a sample of year-only
+  matches named a famous namesake for a third of one-word names).
+
+For other typologies there is no date to check; their `auto` matches are listed in
+`docs/person-items-report.md` for a curator to scan (decided 2026-10-09), and a wrong one goes into
+`FORCE_REVIEW`.
 
 `auto` needs exactly one passing candidate. A wrong `auto` that no general rule catches goes
-into `FORCE_REVIEW`, with a comment.
+into `FORCE_REVIEW`, with a comment. A run stops asking after five persons in a row whose lookups
+failed (Wikidata lagged), leaving the rest for the next run.
 
 ### `verify-suggestions` (network)
 
