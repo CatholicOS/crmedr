@@ -887,6 +887,9 @@
       "mr:0111-petrus-apselamus": [
         {
           "name": "Petrus Apselamus",
+          "also": [
+            "Petrus Balsamus"
+          ],
           "where": "text"
         }
       ],
@@ -2657,6 +2660,9 @@
       "mr:0131-maedhoc": [
         {
           "name": "Maedhoc",
+          "also": [
+            "Aidanus"
+          ],
           "where": "text"
         }
       ],
@@ -3603,6 +3609,9 @@
       "mr:0206-renula": [
         {
           "name": "Renula",
+          "also": [
+            "Reinildis"
+          ],
           "where": "text"
         }
       ],
@@ -4079,12 +4088,9 @@
         },
         {
           "name": "Dativus",
-          "where": {
-            "footnote": 1
-          }
-        },
-        {
-          "name": "Sanator",
+          "also": [
+            "Sanator"
+          ],
           "where": {
             "footnote": 1
           }
@@ -4128,12 +4134,18 @@
         },
         {
           "name": "Maximianus",
+          "also": [
+            "Maximus"
+          ],
           "where": {
             "footnote": 1
           }
         },
         {
           "name": "Telica",
+          "also": [
+            "Tazelita"
+          ],
           "where": {
             "footnote": 1
           }
@@ -6525,6 +6537,9 @@
       "mr:0316-ioannes-sordi": [
         {
           "name": "Ioannes Sordi",
+          "also": [
+            "Ioannes Cacciafronte"
+          ],
           "where": "text"
         }
       ],
@@ -11359,6 +11374,9 @@
       "mr:0515-caleb": [
         {
           "name": "Caleb",
+          "also": [
+            "Elésbaan"
+          ],
           "where": "text"
         }
       ],
@@ -12913,6 +12931,9 @@
       "mr:0530-matthias-kalemba-mulumba": [
         {
           "name": "Matthias Kalemba Mulumba",
+          "also": [
+            "Matthias Kalemba Fortis"
+          ],
           "where": "text"
         }
       ],
@@ -14118,6 +14139,9 @@
       "mr:0609-columba": [
         {
           "name": "Columba",
+          "also": [
+            "Colum Cille"
+          ],
           "where": "text"
         }
       ],
@@ -14392,6 +14416,9 @@
       "mr:0613-cetheus": [
         {
           "name": "Cetheus",
+          "also": [
+            "Peregrinus"
+          ],
           "where": "text"
         }
       ],
@@ -18965,6 +18992,9 @@
       "mr:0720-marina": [
         {
           "name": "Marina",
+          "also": [
+            "Margarita"
+          ],
           "where": "text"
         }
       ],
@@ -19439,6 +19469,9 @@
       "mr:0724-kinga": [
         {
           "name": "Kinga",
+          "also": [
+            "Cunegundis"
+          ],
           "where": "text"
         }
       ],
@@ -22371,6 +22404,9 @@
       "mr:0817-mamas": [
         {
           "name": "Mamas",
+          "also": [
+            "Mames"
+          ],
           "where": "text"
         }
       ],
@@ -24321,6 +24357,9 @@
         },
         {
           "name": "Claudius Cayx",
+          "also": [
+            "Claudius Dumas"
+          ],
           "where": {
             "footnote": 1
           }
@@ -24645,6 +24684,9 @@
         },
         {
           "name": "Lupus Thomas",
+          "also": [
+            "Lupus Bonnotte"
+          ],
           "where": {
             "footnote": 1
           }
@@ -25077,6 +25119,9 @@
         },
         {
           "name": "Ioannes Franciscus Maria Benoît",
+          "also": [
+            "Ioannes Franciscus Maria Vourlat"
+          ],
           "where": {
             "footnote": 1
           }
@@ -27403,6 +27448,9 @@
       "mr:0919-goericus": [
         {
           "name": "Goericus",
+          "also": [
+            "Abbo"
+          ],
           "where": "text"
         }
       ],
@@ -30460,6 +30508,9 @@
       "mr:1011-gaudentius": [
         {
           "name": "Gaudentius",
+          "also": [
+            "Radzim"
+          ],
           "where": "text"
         }
       ],
@@ -31792,6 +31843,9 @@
       "mr:1026-witta": [
         {
           "name": "Witta",
+          "also": [
+            "Albuinus"
+          ],
           "where": "text"
         }
       ],
@@ -32508,6 +32562,9 @@
       "mr:1104-emericus": [
         {
           "name": "Emericus",
+          "also": [
+            "Henricus"
+          ],
           "where": "text"
         }
       ],
@@ -33446,6 +33503,9 @@
       "mr:1115-hugo-faringdon-et-socii": [
         {
           "name": "Hugo Faringdon",
+          "also": [
+            "Hugo Cook"
+          ],
           "where": "text"
         }
       ],

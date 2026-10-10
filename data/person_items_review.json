@@ -45037,12 +45037,50 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Maedhoc",
       "name": "Maedhoc",
+      "also": [
+        "Aidanus"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "status: the best candidate (Q208700) fails it",
+        "name: the best candidate (Q208700) fails it",
+        "death: the best candidate (Q208700) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q208700",
+          "label": "Aiden McGeady",
+          "description": "Irish association football player (born 1986)",
+          "names": [
+            "Aidanus McGeady",
+            "Aiden John McGeady",
+            "Aiden McGeady"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1986-04-04",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q28027974",
+          "label": "Aidanus, King of Scotland (575-610)",
+          "description": "painting by Jacob Jacobsz de Wet II",
+          "names": [
+            "Aidanus, King of Scotland (575-610)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null
     },
@@ -58701,6 +58739,9 @@
       "typology": "dies_natalis",
       "subject": "Sancta Renula",
       "name": "Renula",
+      "also": [
+        "Reinildis"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -58731,6 +58772,106 @@
             "status",
             "name"
           ]
+        },
+        {
+          "wikidata": "Q463631",
+          "label": "Reineldis",
+          "description": "Belgian saint",
+          "names": [
+            "Raineldis",
+            "Reineldis",
+            "Reinilde di Saints",
+            "Santa Reinilde"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0630",
+          "died": "0700",
+          "feast": [
+            "Q2731",
+            "Q541946"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q113835731",
+          "label": "Reinildis Hartmann",
+          "description": "",
+          "names": [
+            "Reinildis Hartmann"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q133396205",
+          "label": "Q133396205",
+          "description": "",
+          "names": [],
+          "human": true,
+          "statuses": [],
+          "born": "1948",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q140158723",
+          "label": "Q140158723",
+          "description": "",
+          "names": [],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q2914279",
+          "label": "Reinildis van Ditzhuyzen",
+          "description": "Dutch writer",
+          "names": [
+            "Reinildis van Ditzhuyzen"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1948-03-23",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q56478170",
+          "label": "Saint Reineldis of Saintes",
+          "description": "Devotional Print; Made by Anonymous",
+          "names": [
+            "Saint Reineldis of Saintes"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -65676,7 +65817,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Rogatianus",
@@ -65911,7 +66051,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -65986,7 +66125,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66273,7 +66411,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66348,7 +66485,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66600,7 +66736,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66824,7 +66959,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66949,6 +67083,9 @@
       "typology": "commemoratio",
       "subject": "Sancti Martyres Abitinenses",
       "name": "Dativus",
+      "also": [
+        "Sanator"
+      ],
       "where": {
         "footnote": 1
       },
@@ -66957,7 +67094,6 @@
         "Felice",
         "Maria",
         "Hilarione",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -66995,10 +67131,26 @@
         "Berectina"
       ],
       "failed": [
-        "human: the best candidate (Q145599) fails it",
-        "status: the best candidate (Q145599) fails it"
+        "human: the best candidate (Q113368449) fails it",
+        "status: the best candidate (Q113368449) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q113368449",
+          "label": "Sanator",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Sanator"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
         {
           "wikidata": "Q145599",
           "label": "dative case",
@@ -67011,6 +67163,24 @@
             "dative case",
             "dativo",
             "dativus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q22609268",
+          "label": "Sanator",
+          "description": "unincorporated community in Custer County, South Dakota, US",
+          "names": [
+            "Sanator",
+            "Sanator, SD",
+            "Sanator, South Dakota"
           ],
           "human": false,
           "statuses": [],
@@ -67039,6 +67209,36 @@
           "evidence": [
             "name"
           ]
+        },
+        {
+          "wikidata": "Q112237789",
+          "label": "Sanatorium «Anthropocene Retreat»",
+          "description": "2020 video game",
+          "names": [
+            "Sanatorium «Anthropocene Retreat»"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q11591976",
+          "label": "Fushouling station",
+          "description": "Beijing Subway station under renovation",
+          "names": [
+            "Fushouling station",
+            "Sanatorium station",
+            "Station 52"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
         },
         {
           "wikidata": "Q1172621",
@@ -67081,25 +67281,14 @@
           "evidence": []
         },
         {
-          "wikidata": "Q2470506",
-          "label": "ethical dative",
-          "description": "form of the dative case applied to pronouns; used (in Latin and some other languages, but rare in English) to show a certain interest felt by the person indicated; e.g. \"you\" in \"I'll rhyme you so eight years together\" (Shakespeare)",
+          "wikidata": "Q14956906",
+          "label": "Sanatorium Sosnovy Bor",
+          "description": "human settlement in Polyanskoe Rural Settlement, Vyborgsky District, Leningrad Oblast, Russia",
           "names": [
-            "dativus ethicus",
-            "ethical dative"
+            "Halila",
+            "Sanatorium Sosnovy Bor",
+            "Sanatory Sosnovy Bor"
           ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q85971792",
-          "label": "Q85971792",
-          "description": "",
-          "names": [],
           "human": false,
           "statuses": [],
           "born": null,
@@ -67128,7 +67317,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Ampelius",
         "Rogatianus",
@@ -67382,7 +67570,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -67649,7 +67836,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -67885,7 +68071,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Emeritus",
         "Ampelius",
         "Rogatianus",
@@ -68169,7 +68354,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Emeritus",
         "Ampelius",
         "Rogatianus",
@@ -68453,7 +68637,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Emeritus",
         "Ampelius",
         "Rogatianus",
@@ -68736,7 +68919,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -68810,7 +68992,6 @@
         "Felice",
         "Maria",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -68871,7 +69052,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -69100,7 +69280,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -69251,7 +69430,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -69401,7 +69579,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -69660,7 +69837,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -69909,7 +70085,6 @@
         "Felice",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -70227,7 +70402,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -70487,7 +70661,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -70738,6 +70911,9 @@
       "typology": "commemoratio",
       "subject": "Sancti Martyres Abitinenses",
       "name": "Maximianus",
+      "also": [
+        "Maximus"
+      ],
       "where": {
         "footnote": 1
       },
@@ -70747,7 +70923,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -70784,15 +70959,167 @@
         "Berectina"
       ],
       "failed": [
-        "status: the best candidate (Q108452147) fails it"
+        "2 candidates pass every rule: Q4276098, Q206842"
       ],
       "candidates": [
+        {
+          "wikidata": "Q206842",
+          "label": "Maximus the Confessor",
+          "description": "Christian monk, theologian, scholar and saint (c. 580 - 662)",
+          "names": [
+            "Massimo Confessore",
+            "Massimo il Confessore",
+            "Maximus Confessor",
+            "Maximus Confessor Theologus",
+            "Maximus Constantinopolitanus",
+            "Maximus Homologetes",
+            "Maximus of Constantinople",
+            "Maximus the Confessor",
+            "Maximus the Theologian",
+            "Saint Maximus",
+            "San Massimo il Confessore"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q2354129"
+          ],
+          "born": "0579",
+          "died": "0662-08-13",
+          "feast": [
+            "Q2776",
+            "Q2273"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q4276098",
+          "label": "Maximus of Padua",
+          "description": "bishop of Padua",
+          "names": [
+            "Massimo di Padova",
+            "Maximus",
+            "Maximus of Padua",
+            "San Massimo",
+            "San Massimo di Padova"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": null,
+          "died": "0166",
+          "feast": [
+            "Q2785"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q106968428",
+          "label": "Maximus",
+          "description": "son of Maximinus Daza",
+          "names": [
+            "Massimo",
+            "Maximus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0305",
+          "died": "0313",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
         {
           "wikidata": "Q108452147",
           "label": "Maximianus",
           "description": "Roman Catholic archbishop",
           "names": [
             "Maximianus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q117487942",
+          "label": "Maximus",
+          "description": "Roman silversmith (vascularius) active in Sirmium in the early 4th century",
+          "names": [
+            "Maximus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11938206",
+          "label": "Maximus of Epirus",
+          "description": "rhetorician (4th century?)",
+          "names": [
+            "Massimo",
+            "Massimo di Epiro",
+            "Maximus",
+            "Maximus Byzantius",
+            "Maximus Epirota",
+            "Maximus Rhetor",
+            "Maximus of Epirus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q120987076",
+          "label": "Maximus",
+          "description": "Belgian bassist",
+          "names": [
+            "Maximus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1977-06-15",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q128826006",
+          "label": "Maximus",
+          "description": "Roman Governor of Britannica Inferior, c. 225",
+          "names": [
+            "Maximus"
           ],
           "human": true,
           "statuses": [],
@@ -70822,122 +71149,11 @@
           ]
         },
         {
-          "wikidata": "Q172168",
-          "label": "Galerius",
-          "description": "Roman emperor (250-311)",
+          "wikidata": "Q16673552",
+          "label": "Maximus",
+          "description": "Prefect of Egypt",
           "names": [
-            "Armentarius",
-            "Caius Gaius Galerius Valerius Maximianus Augustus",
-            "Caius Gaius Galerius Valerius Maximianus Caesar",
-            "Caius Galerius Valerius, Emperor of Rome Maximianus",
-            "Emperor of Rome Galerios",
-            "Emperor of Rome Galerius",
-            "Gaio Galerio Valerio Massimiano",
-            "Gaios Galerios Oualerios, Emperor of Rome Maximianos",
-            "Gaius Galerius Valerius Maximianus",
-            "Gaius Galerius Valerius, Emperor of Rome Maximianus",
-            "Gaius Galerius Valerius, Emperor of Rome Maximinus",
-            "Gaius Valerius Maximianus Galerius",
-            "Galerio",
-            "Galerio Massimiano",
-            "Galerius",
-            "Galerius Maximinus",
-            "Galerius Valerius Maximianus",
-            "Herculianus",
-            "Iovius",
-            "Iovivs",
-            "Jovius",
-            "Maximianus",
-            "Maximinus",
-            "Valerius Maximus Galerius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0250",
-          "died": "0311-05-05",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q211396",
-          "label": "Magnus Maximus",
-          "description": "late 4th-century Roman emperor of Britain and usurper of the West",
-          "names": [
-            "Dominus Noster Magnus Maximus Pius Felix Augustus",
-            "Emperor Flavius Clemens Maximus, Governor of Britain 370, Emperor of Rome 383",
-            "Macsen Wledig",
-            "Magno Clemente Massimo",
-            "Magno Massimo",
-            "Magnus Maximus",
-            "Massimo Magno Clemente",
-            "Maximianus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0335",
-          "died": "0388-08-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q46768",
-          "label": "Maximian",
-          "description": "Roman emperor",
-          "names": [
-            "Herculius",
-            "Marco Aurelio Massimiano",
-            "Marco Aurelio Valerio Massimiano \"Erculeo\"",
-            "Marcus Aurelius Valerius Maximianus",
-            "Massimiano",
-            "Massimiano Erculeo",
-            "Massimiano Erculio",
-            "Maximian",
-            "Maximianus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0240",
-          "died": "0310-07",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q553067",
-          "label": "Maximianus",
-          "description": "6th-century Roman poet",
-          "names": [
-            "Massimiano",
-            "Massimiano Etrusco",
-            "Maximianus",
-            "Maximianus Etruscus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0500",
-          "died": "0600",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q86741740",
-          "label": "Maximianos",
-          "description": "domesticus to Aetius",
-          "names": [
-            "Massimiano",
-            "Maximianos",
-            "Maximianus"
+            "Maximus"
           ],
           "human": true,
           "statuses": [],
@@ -70946,55 +71162,6 @@
           "feast": [],
           "evidence": [
             "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q10578716",
-          "label": "Maximianus",
-          "description": "genus of insects",
-          "names": [
-            "Maximianus"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q113026796",
-          "label": "Maximianus",
-          "description": "ancient Roman cognomen and agnomen",
-          "names": [
-            "Maximianus",
-            "Maximianvs"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q45188364",
-          "label": "Maximianus",
-          "description": "dictionary entry",
-          "names": [
-            "Maximianus"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
             "name"
           ]
         }
@@ -71019,7 +71186,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -71094,7 +71260,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -71325,7 +71490,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -71583,7 +71747,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -71658,7 +71821,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -71911,7 +72073,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -72081,7 +72242,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -72251,7 +72411,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -72420,7 +72579,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -72618,7 +72776,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -72800,231 +72957,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0212-martyres-abitinenses|Sanator",
-      "eulogy": "mr:0212-martyres-abitinenses",
-      "day": "02-12",
-      "typology": "commemoratio",
-      "subject": "Sancti Martyres Abitinenses",
-      "name": "Sanator",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Saturninus",
-        "Felice",
-        "Maria",
-        "Hilarione",
-        "Dativus",
-        "Felix",
-        "Emeritus",
-        "Ampelius",
-        "Rogatianus",
-        "Quintus",
-        "Maximianus",
-        "Telica",
-        "Rogatus",
-        "Ianuarius",
-        "Cassianus",
-        "Victorianus",
-        "Vincentius",
-        "Cæcilianus",
-        "Restituta",
-        "Prima",
-        "Eva",
-        "Givalius",
-        "Pomponia",
-        "Secunda",
-        "Ianuaria",
-        "Saturnina",
-        "Martinus",
-        "Clautus",
-        "Margarita",
-        "Maior",
-        "Honorata",
-        "Regiola",
-        "Victorinus",
-        "Pelusius",
-        "Faustus",
-        "Dacianus",
-        "Matrona",
-        "Cæcilia",
-        "Victoria",
-        "Berectina"
-      ],
-      "failed": [
-        "human: the best candidate (Q113368449) fails it",
-        "status: the best candidate (Q113368449) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q113368449",
-          "label": "Sanator",
-          "description": "Wikimedia disambiguation page",
-          "names": [
-            "Sanator"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q22609268",
-          "label": "Sanator",
-          "description": "unincorporated community in Custer County, South Dakota, US",
-          "names": [
-            "Sanator",
-            "Sanator, SD",
-            "Sanator, South Dakota"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q112237789",
-          "label": "Sanatorium «Anthropocene Retreat»",
-          "description": "2020 video game",
-          "names": [
-            "Sanatorium «Anthropocene Retreat»"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q11591976",
-          "label": "Fushouling station",
-          "description": "Beijing Subway station under renovation",
-          "names": [
-            "Fushouling station",
-            "Sanatorium station",
-            "Station 52"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q14956906",
-          "label": "Sanatorium Sosnovy Bor",
-          "description": "human settlement in Polyanskoe Rural Settlement, Vyborgsky District, Leningrad Oblast, Russia",
-          "names": [
-            "Halila",
-            "Sanatorium Sosnovy Bor",
-            "Sanatory Sosnovy Bor"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q16917",
-          "label": "hospital",
-          "description": "health care facility",
-          "names": [
-            "hospital",
-            "hospital facility",
-            "medical centre",
-            "medical facility",
-            "nosocomio",
-            "ospedale",
-            "policlinico",
-            "sanatorio",
-            "valetudinarium"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q19387560",
-          "label": "Sanatorium",
-          "description": "2005 debut solo studio album by John Ivar Bye",
-          "names": [
-            "Sanatorium"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q2220224",
-          "label": "Bellevue Sanatorium",
-          "description": "former sanatorium in Kreuzlingen in the canton of Thurgau, Switzerland",
-          "names": [
-            "Bellevue Sanatorium",
-            "Sanatorio Bellevue"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q2297889",
-          "label": "The Hour-Glass Sanatorium",
-          "description": "1973 film by Wojciech Jerzy Has",
-          "names": [
-            "Clessidra",
-            "Hour-Glass Sanatorium",
-            "La clessidra",
-            "The Hour-Glass Sanatorium",
-            "The Sandglass"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q24617054",
-          "label": "Sanatorio regina Elena",
-          "description": "building in Legnano, Italy",
-          "names": [
-            "Sanatorio regina Elena"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0212-martyres-abitinenses|Saturninus",
       "eulogy": "mr:0212-martyres-abitinenses",
       "day": "02-12",
@@ -73039,7 +72971,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -73303,7 +73234,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -73537,7 +73467,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -73761,6 +73690,9 @@
       "typology": "commemoratio",
       "subject": "Sancti Martyres Abitinenses",
       "name": "Telica",
+      "also": [
+        "Tazelita"
+      ],
       "where": {
         "footnote": 1
       },
@@ -73770,7 +73702,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -73978,7 +73909,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -74268,7 +74198,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -74475,7 +74404,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -111312,6 +111240,9 @@
       "typology": "dies_natalis",
       "subject": "Beatus Ioannes Sordi",
       "name": "Ioannes Sordi",
+      "also": [
+        "Ioannes Cacciafronte"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -197182,6 +197113,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Caleb",
       "name": "Caleb",
+      "also": [
+        "Elésbaan"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -226352,6 +226286,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Matthias Kalemba Mulumba",
       "name": "Matthias Kalemba Mulumba",
+      "also": [
+        "Matthias Kalemba Fortis"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -256353,6 +256290,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Cetheus",
       "name": "Cetheus",
+      "also": [
+        "Peregrinus"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -256388,6 +256328,186 @@
             "human",
             "status",
             "death"
+          ]
+        },
+        {
+          "wikidata": "Q3898934",
+          "label": "Pellegrino delle Alpi",
+          "description": "",
+          "names": [
+            "Pellegrino delle Alpi",
+            "Pellegrinus",
+            "Peregrinus",
+            "San Pellegrino delle Alpi"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0643",
+          "feast": [
+            "Q2788"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q644057",
+          "label": "Vincent of Lérins",
+          "description": "5th-century saint and theologian",
+          "names": [
+            "Peregrinus",
+            "Saint Vincent of Lérins",
+            "Vincent of Lerins",
+            "Vincent of Lérins",
+            "Vincentius Lerinensis",
+            "Vincentius Lerinensis Scriptor ecclesiasticus",
+            "Vincenzo di Lerino"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0500",
+          "died": "0445",
+          "feast": [
+            "Q2584"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12773646",
+          "label": "Peregrinus",
+          "description": "Slovak builder",
+          "names": [
+            "Peregrinus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q135510061",
+          "label": "Peregrinus",
+          "description": "",
+          "names": [
+            "Peregrinus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1200",
+          "died": "1300",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2070389",
+          "label": "Peregrinus",
+          "description": "Italian painter",
+          "names": [
+            "Pellegrino Di Giovanni Di Antonio",
+            "Pellegrino di Giovanni",
+            "Pellegrino di Giovanni di Antonio",
+            "Peregrinus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1400",
+          "died": "1437",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q474691",
+          "label": "Peregrine of Opole",
+          "description": "Polish Dominican theologien",
+          "names": [
+            "Peregrine of Opole",
+            "Peregrinus",
+            "Peregrinus Oppoliensis",
+            "Peregrinus Vratislaviensis",
+            "Peregrinus de Oppeln",
+            "Peregryn z Opola"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1260",
+          "died": "1335",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q66372584",
+          "label": "Pelegrinus",
+          "description": "scultore italiano attivo a Verona tra il XI e il XII secolo",
+          "names": [
+            "Pelegrinus",
+            "Peregrinus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q96278901",
+          "label": "Peregrinus",
+          "description": "archbishop of the Roman Catholic Church",
+          "names": [
+            "Peregrinus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1224",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q140146955",
+          "label": "Peregrinus",
+          "description": "work by Johannes Geiler von Kaysersberg",
+          "names": [
+            "Peregrinus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
           ]
         }
       ],
@@ -332661,13 +332781,41 @@
       "typology": "dies_natalis",
       "subject": "Sancta Marina",
       "name": "Marina",
+      "also": [
+        "Margarita"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q108807762) fails it",
-        "death: the best candidate (Q108807762) fails it"
+        "death: the best candidate (Q2610800) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q2610800",
+          "label": "Margaretha of Louvain",
+          "description": "character in legend of Leuven",
+          "names": [
+            "Margaret of Louvain",
+            "Margaretha of Louvain",
+            "Margaretula Lovaniensis",
+            "Margarita",
+            "Margherita di Lovanio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1207",
+          "died": "1225-09-02",
+          "feast": [
+            "Q2857"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
         {
           "wikidata": "Q108807762",
           "label": "Marina",
@@ -332703,6 +332851,86 @@
           ]
         },
         {
+          "wikidata": "Q130357475",
+          "label": "Margarita",
+          "description": "mother of Aitone Doria",
+          "names": [
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q130683699",
+          "label": "Margarita",
+          "description": "mother of Cneia Gay",
+          "names": [
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q135631",
+          "label": "Margherita of Savoy",
+          "description": "Queen of Italy from 1878 to 1900",
+          "names": [
+            "Königin Margarete Italien",
+            "Margaret of Savoy",
+            "Margarita",
+            "Margarita Maria Teresia Ioanna",
+            "Margherita di Savoia",
+            "Margherita of Italy",
+            "Margherita of Savoy",
+            "Queen consort of Umberto I Margherita",
+            "Queen, consort of Umberto I, King of Italy Margherita",
+            "Regina Margherita",
+            "regina d'Italia Margherita di Savoia",
+            "reine d'Italie Marguerite de Savoie"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1851-11-20",
+          "died": "1926-01-04",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q15918957",
+          "label": "Margarita",
+          "description": "Hong Kong film actress",
+          "names": [
+            "Ha Wa",
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1935-05-09",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
           "wikidata": "Q17210257",
           "label": "Marina",
           "description": "Japanese AV idol",
@@ -332713,6 +332941,34 @@
           "statuses": [],
           "born": "1988-07-20",
           "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q190058",
+          "label": "Margaret of Valois-Angoulême",
+          "description": "queen consort of Navarre (1492–1549)",
+          "names": [
+            "Margaret de Valois Queen of Navarre",
+            "Margaret of Angoulême",
+            "Margaret of Navarre",
+            "Margaret of Valois-Angoulême",
+            "Margarita",
+            "Margherita d'Angouleme",
+            "Margherita d'Angoulême",
+            "Margherita di Navarra principessa di Angoulème e regina di Navarra",
+            "Marguerite d'Angoulême",
+            "Marguerite de Navarre",
+            "Marguerite de Valois-Angoulême",
+            "Marguerite d’Angoulême"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1492-04-11",
+          "died": "1549-12-21",
           "feast": [],
           "evidence": [
             "human",
@@ -332740,124 +332996,6 @@
           "feast": [],
           "evidence": [
             "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q234174",
-          "label": "Marina Diamandis",
-          "description": "British singer",
-          "names": [
-            "MARINA",
-            "Marina",
-            "Marina & the Diamonds",
-            "Marina Diamandis",
-            "Marina L. Diamandis",
-            "Marina Lambrini Diamandis",
-            "Marina and the Diamonds",
-            "Marina et Adamantes"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1985-10-10",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q25444596",
-          "label": "Marina",
-          "description": "",
-          "names": [
-            "Marina"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0403-02",
-          "died": "0449-08-03",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1027927",
-          "label": "Marina",
-          "description": "municipality and settlement in Split-Dalmatia County, Croatia",
-          "names": [
-            "Bosiolina",
-            "Bossoglina",
-            "Marina"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1120708",
-          "label": "Marina",
-          "description": "female given name",
-          "names": [
-            "Marina",
-            "Marina (first name)",
-            "Marina (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q11766734",
-          "label": "marine painting",
-          "description": "genre in painting",
-          "names": [
-            "marina",
-            "marina (pittura)",
-            "marine",
-            "marine painting",
-            "maritime painting",
-            "paesaggio marino",
-            "paesaggio marittimo",
-            "sea landscape",
-            "seascape",
-            "seascapes"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q136960",
-          "label": "Q136960",
-          "description": "asteroid",
-          "names": [
-            "Marina"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
             "name"
           ]
         }
@@ -374564,6 +374702,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Mamas",
       "name": "Mamas",
+      "also": [
+        "Mames"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -402180,6 +402321,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Ioannes Maria Du Lau et socii",
       "name": "Claudius Cayx",
+      "also": [
+        "Claudius Dumas"
+      ],
       "where": {
         "footnote": 1
       },
@@ -408529,6 +408673,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Ioannes Maria Du Lau et socii",
       "name": "Lupus Thomas",
+      "also": [
+        "Lupus Bonnotte"
+      ],
       "where": {
         "footnote": 1
       },
@@ -416350,6 +416497,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Andreas Abel Alricy et socii",
       "name": "Ioannes Franciscus Maria Benoît",
+      "also": [
+        "Ioannes Franciscus Maria Vourlat"
+      ],
       "where": {
         "footnote": 1
       },
@@ -454499,6 +454649,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Goericus",
       "name": "Goericus",
+      "also": [
+        "Abbo"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -454531,6 +454684,180 @@
             "status",
             "name"
           ]
+        },
+        {
+          "wikidata": "Q16148061",
+          "label": "Abbo",
+          "description": "French priest",
+          "names": [
+            "Abbo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0900",
+          "died": "0937",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q17310107",
+          "label": "Abbo",
+          "description": "bishop of Verdun",
+          "names": [
+            "Abbo",
+            "Abbo of Verdun"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0700",
+          "died": "0716",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q306658",
+          "label": "Abbo of Fleury",
+          "description": "monk and abbot of Fleury Abbey (c.945-1004)",
+          "names": [
+            "Abbo Floriacensis",
+            "Abbo de Fleury",
+            "Abbo of Fleury",
+            "Abbo, Abbot of Fleury",
+            "Abbon of Fleury",
+            "Abbone di Fleury",
+            "Saint Abbon",
+            "Sant'Abbone di Fleury",
+            "St. Abbo",
+            "St. Abbon"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0945",
+          "died": "1004-11-13",
+          "feast": [
+            "Q2984"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q9138019",
+          "label": "Abbo",
+          "description": "",
+          "names": [
+            "Abbo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0100",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q110463350",
+          "label": "Arbeitsgemeinschaft Berlin-Brandenburgischer Ornithologen (ABBO)",
+          "description": "working group",
+          "names": [
+            "ABBO",
+            "Arbeitsgemeinschaft Berlin-Brandenburgischer Ornithologen (ABBO)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q139394677",
+          "label": "Abbo Kindcentra",
+          "description": "organisation for primary education in North Brabant, the Netherlands",
+          "names": [
+            "Abbo",
+            "Abbo Kindcentra"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q306759",
+          "label": "Abbott Handerson Thayer",
+          "description": "American artist (1849-1921)",
+          "names": [
+            "A. H. Thayer",
+            "A.H. Thayer",
+            "Abbot H. Thayer",
+            "Abbot Handerson Thayer",
+            "Abbot Thayer",
+            "Abbott H. Thayer",
+            "Abbott Handerson Thayer",
+            "Abbott Henderson Thayer",
+            "Abbott Thayer",
+            "Thayer",
+            "thayer abbott henderson"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1849-08-12",
+          "died": "1921-05-29",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q37249777",
+          "label": "Abbo",
+          "description": "family name",
+          "names": [
+            "Abbo"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q103163",
+          "label": "abbot",
+          "description": "religious title, superior of a community of monks, often an abbey",
+          "names": [
+            "abate",
+            "abbas",
+            "abbot"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -499222,6 +499549,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Gaudentius",
       "name": "Gaudentius",
+      "also": [
+        "Radzim"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -537934,189 +538264,209 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Emericus",
       "name": "Emericus",
+      "also": [
+        "Henricus"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q112424559) fails it",
-        "death: the best candidate (Q112424559) fails it"
+        "death: the best candidate (Q103556) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q112424559",
-          "label": "Emericus",
-          "description": "",
+          "wikidata": "Q103556",
+          "label": "Henry II, Holy Roman Emperor",
+          "description": "Holy Roman Emperor from 1014 to 1024",
           "names": [
-            "Emericus"
+            "Enrico II del Sacro Romano Impero",
+            "Enrico II il Santo",
+            "Enrico II, Sacro Romano Imperatore",
+            "Enrico IV di Baviera",
+            "Heinrich II, Holy Roman Emperor",
+            "Henricus II",
+            "Henry II",
+            "Henry II, Holy Roman Emperor",
+            "Holy Roman Emperor Heinrich II",
+            "Holy Roman Emperor Henry II",
+            "Imperatore Enrico II",
+            "Saint Henry",
+            "Sant'Enrico II"
           ],
           "human": true,
-          "statuses": [],
-          "born": "1685",
-          "died": "1760",
-          "feast": [],
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0973-05-06",
+          "died": "1024-07-13",
+          "feast": [
+            "Q2687"
+          ],
           "evidence": [
             "human",
+            "status",
             "name"
           ]
         },
         {
-          "wikidata": "Q1290095",
-          "label": "Imre Somogyi",
-          "description": "Hungarian writer, poet and Baptist minister (1894-1951)",
-          "names": [
-            "Emericus",
-            "Imre Somogyi"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1894-10-13",
-          "died": "1951-09-14",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q86953",
-          "label": "Emeric, King of Hungary",
-          "description": "Hungarian king (1174-1204)",
-          "names": [
-            "Emeric, King of Hungary",
-            "Emerico d'Ungheria",
-            "Emericus",
-            "Emericus Hungariae"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1174-09-30",
-          "died": "1204-11-30",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115820388",
-          "label": "Emericus Diericx",
+          "wikidata": "Q104840142",
+          "label": "Henricus",
           "description": "",
           "names": [
-            "Emericus Diericx"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1825-10-24",
-          "died": "1865-01-29",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q115829827",
-          "label": "Emericus Goossens",
-          "description": "",
-          "names": [
-            "Emericus Goossens"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1754",
-          "died": "1835-07-21",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q1233273",
-          "label": "Imre Perényi",
-          "description": "Palatine of Hungary, Ban of Croatia, fiancé of Anne of Bohemia and Hungary",
-          "names": [
-            "Emericus Perenius",
-            "Imre Perenyi",
-            "Imre Perényi"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1499",
-          "died": "1519-02-05",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q123897902",
-          "label": "Emericus Renwarin",
-          "description": "Indonesian politician (born 1962)",
-          "names": [
-            "Emericus Renwarin"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1962-05-15",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q126477901",
-          "label": "Emericus Sylvius",
-          "description": "Emericus Sylvius, a correspondent of Philipp Melanchthon",
-          "names": [
-            "Emericus Silvius",
-            "Emericus Sylvius",
-            "Emmerich Silvius"
+            "Henricus"
           ],
           "human": true,
           "statuses": [],
           "born": null,
-          "died": "1580",
+          "died": "1658",
           "feast": [],
           "evidence": [
-            "human"
+            "human",
+            "name"
           ]
         },
         {
-          "wikidata": "Q1335493",
-          "label": "Emericus Quincken",
-          "description": "",
+          "wikidata": "Q105378",
+          "label": "Henry the Lion",
+          "description": "Welf dynasty, Duke of Saxony, as Henry III, and Duke of Bavaria, as Henry XII (1129-1195)",
           "names": [
-            "Emericus Quincken"
+            "Enrico III di Sassonia",
+            "Enrico III, Duca di Sassonia",
+            "Enrico XII di Baviera",
+            "Enrico il Leone",
+            "Henricus",
+            "Henricus Leo",
+            "Henry III",
+            "Henry XII",
+            "Henry the Lion"
           ],
           "human": true,
           "statuses": [],
-          "born": "1639",
-          "died": "1707-09-18",
+          "born": "1129",
+          "died": "1195-08-06",
           "feast": [],
           "evidence": [
-            "human"
+            "human",
+            "name"
           ]
         },
         {
-          "wikidata": "Q153818",
-          "label": "Emmerich Kálmán",
-          "description": "Hungarian-born composer of operettas (1882–1953)",
+          "wikidata": "Q108450415",
+          "label": "Henricus",
+          "description": "catholic bishop",
           "names": [
-            "Emerich Kalman",
-            "Emericus Kálmán",
-            "Emmerich Kalman",
-            "Emmerich Kálman",
-            "Emmerich Kálmán",
-            "Imre Kalman",
-            "Imre Koppstein",
-            "Kálmán Imre"
+            "Henricus"
           ],
           "human": true,
           "statuses": [],
-          "born": "1882-10-24",
-          "died": "1953-10-30",
+          "born": null,
+          "died": "1381-11-15",
           "feast": [],
           "evidence": [
-            "human"
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108463763",
+          "label": "Enrico",
+          "description": "catholic archbishop",
+          "names": [
+            "Enrico"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108480369",
+          "label": "Enrico",
+          "description": "catholic bishop",
+          "names": [
+            "Enrico"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546752",
+          "label": "Enrico",
+          "description": "roman-catholic bishop",
+          "names": [
+            "Enrico"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546857",
+          "label": "Heinrich",
+          "description": "bishop of Reval",
+          "names": [
+            "Heinrich"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1315-04-25",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108573114",
+          "label": "Enrico",
+          "description": "catholic  bishop",
+          "names": [
+            "Enrico"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1269-10-21",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108576249",
+          "label": "Enrico",
+          "description": "bishop of Milos",
+          "names": [
+            "Enrico"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
           ]
         }
       ],
@@ -559178,6 +559528,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Hugo Faringdon et socii",
       "name": "Hugo Faringdon",
+      "also": [
+        "Hugo Cook"
+      ],
       "where": "text",
       "companions": [],
       "failed": [

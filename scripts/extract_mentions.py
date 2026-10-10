@@ -26,6 +26,7 @@ Standard library only.
 import datetime
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -34,6 +35,40 @@ from pathlib import Path
 from extract_typology import load_texts
 from mentions_text import back_ref_span, find_person, find_place, free, from_utf16, partial_span, utf16
 from persons_text import name_key, person_key
+
+
+# The other name printed right after a person: "Kingae seu Cunegundis", "Dativus, qui et Sanator".
+CONNECTIVE = re.compile(r"\s*,?\s*(?:seu|vel|sive|qui\s+et|qu(?:ae|æ)\s+et)\s+", re.I)
+NAME_WORD = re.compile(r"[^\W\d_][\w'’\-]*")
+SPACES = re.compile(r"[ \t]+")
+# The name printed right before a variant a person was found under: "Mamántis seu" before "Mamétis".
+NAME_BEFORE = re.compile(r"([^\W\d_][\w'’\-]*)\s*,?\s*(?:seu|vel|sive|qui\s+et|qu(?:ae|æ)\s+et)\s+$", re.I)
+
+
+def with_variant(src, span, taken):
+    """A person's span widened over the other name printed right after it (its capitalized words),
+    unless those words are taken by another mention."""
+    m = CONNECTIVE.match(src, span[1])
+    if not m:
+        return span
+    end, pos = None, m.end()
+    while (w := NAME_WORD.match(src, pos)) and w.group(0)[0].isupper():
+        end = w.end()
+        gap = SPACES.match(src, end)
+        if not gap:
+            break
+        pos = gap.end()
+    wide = (span[0], end) if end else span
+    return wide if wide == span or free((span[1], wide[1]), taken) else span
+
+
+def with_name_before(src, span, taken):
+    """A span found under a person's other name, widened back over the name printed before it
+    ("Mamántis seu Mamétis"), unless that word is taken by another mention."""
+    m = NAME_BEFORE.search(src, 0, span[0])
+    if not m or not m.group(1)[0].isupper() or not free((m.start(), span[0]), taken):
+        return span
+    return (m.start(), span[1])
 
 
 def where_key(where):
@@ -110,45 +145,84 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         last[group(p)] = max(last.get(group(p), 1), p.get("n", 1))
     # A name is decided when any of its persons is: its persons keep their n order among themselves.
     decided = {name_key(p["name"]) for p in persons if person_qid(person_key(p))}
-    # Longer first by the folded name, so spellings of one name ("Æmilia", "Aemilia") sort together.
-    for p in sorted(persons, key=lambda p: (-len(name_key(p["name"])), name_key(p["name"]) not in decided,
-                                            p.get("n", 1))):
-        name, where = p["name"], p["where"]
+    def again(p, names):
+        """Further free matches of the person's `names` after the last person of the name in a place:
+        the same person named twice, or a stem match on another word. The curator decides."""
+        name, where, src = p["name"], p["where"], source(p["where"])
         nth = {"n": p["n"]} if "n" in p else {}
-        src = source(where)
-        if src is None:
-            continue  # extract_persons.py validates footnote numbers
+        while found := next((f for f in (find_person(src, nm, spans("place", where) + spans("person", where))
+                                         for nm in names) if f), None):
+            spans("person", where).append(found[0])  # later names are not proposed over it
+            ask("add_mention", "person", where, found[0],
+                f"{name} matched again: mark it if it names this person once more", name=name, **nth)
+
+    def place(p, found, under):
+        name, where, src = p["name"], p["where"], source(p["where"])
         both = spans("place", where) + spans("person", where)
-        found = find_person(src, name, both)
-        if found:
-            span, how, _ = found
-            add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
-            if p.get("n", 1) == last[group(p)]:
-                # Matched again after the last person of the name: the same person named twice,
-                # or a stem match on another word. The curator decides.
-                while again := find_person(src, name, spans("place", where) + spans("person", where)):
-                    spans("person", where).append(again[0])  # later names are not proposed over it
-                    ask("add_mention", "person", where, again[0],
-                        f"{name} matched again: mark it if it names this person once more", name=name, **nth)
-            continue
+        span, how, _ = found
+        if p.get("also"):
+            span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
+            if under != name:
+                span = with_name_before(src, span, both)  # found as "Mametis": from "Mamantis seu"
+        add("person", where, span, how, name=name, **({"n": p["n"]} if "n" in p else {}),
+            qid=person_qid(person_key(p)))
+
+    def not_found(p):
+        name, where, src = p["name"], p["where"], source(p["where"])
+        nth = {"n": p["n"]} if "n" in p else {}
+        both = spans("place", where) + spans("person", where)
         inside = find_person(src, name, spans("person", where))
         if inside:
             spans("person", where).append(inside[0])  # later names are not proposed over it
-            place = next(x for x in mentions if x["kind"] == "place" and x["where"] == where
-                         and not free(inside[0], [(x["start"], x["end"])]))
+            place_ = next(x for x in mentions if x["kind"] == "place" and x["where"] == where
+                          and not free(inside[0], [(x["start"], x["end"])]))
             ask("add_mention", "person", where, inside[0], f"{name} is named inside a place phrase, which was kept",
                 name=name, **nth)
-            key = (where_key(where), place["start"])
+            key = (where_key(where), place_["start"])
             if key in removals:  # one remove_mention per place, naming every person in it
                 removals[key][1].append(name)
                 removals[key][0]["reasoning"] = ("the place phrase contains the persons "
                                                  + ", ".join(removals[key][1]))
             else:
-                ask("remove_mention", "place", where, (place["start"], place["end"]),
+                ask("remove_mention", "place", where, (place_["start"], place_["end"]),
                     f"the place phrase contains the person {name}")
                 removals[key] = (review[-1], [name])
-            continue
+            return
         ask("add_mention", "person", where, partial_span(src, name, both), f"{name} was not found", name=name, **nth)
+
+    # Every person by their main name first, longer names first, then their other names: a variant
+    # never takes the words of a person of that name ("Maximianus seu Maximus" and a Maximus).
+    # Longer first by the folded name, so spellings of one name ("Æmilia", "Aemilia") sort together.
+    order = [p for p in sorted(persons, key=lambda p: (-len(name_key(p["name"])), name_key(p["name"]) not in decided,
+                                                         p.get("n", 1)))
+             if source(p["where"]) is not None]  # extract_persons.py validates footnote numbers
+    placed, later = [], []
+    for p in order:
+        found = find_person(source(p["where"]), p["name"], spans("place", p["where"]) + spans("person", p["where"]))
+        if not found:
+            if p.get("also"):
+                later.append(p)  # tried under their other names once every main name is placed
+            else:
+                not_found(p)
+            continue
+        place(p, found, p["name"])
+        placed.append(p)
+        if p.get("n", 1) == last[group(p)]:
+            again(p, [p["name"]])
+    for p in later:
+        both = spans("place", p["where"]) + spans("person", p["where"])
+        found, under = next(((f, nm) for nm in p.get("also", []) if (f := find_person(source(p["where"]), nm, both))),
+                            (None, None))
+        if not found:
+            not_found(p)
+            continue
+        place(p, found, under)
+        placed.append(p)
+        if p.get("n", 1) == last[group(p)]:
+            again(p, [p["name"]])
+    for p in placed:  # the other names' further matches, once every person has their own words
+        if p.get("also") and p.get("n", 1) == last[group(p)]:
+            again(p, p["also"])
 
     mentions.sort(key=mention_order)
     return mentions, review, hows

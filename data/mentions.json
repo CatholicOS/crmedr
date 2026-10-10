@@ -2808,8 +2808,8 @@
           "kind": "person",
           "where": "text",
           "start": 29,
-          "end": 55,
-          "check": "ffb5bef8",
+          "end": 67,
+          "check": "a9c8c0fb",
           "name": "Petrus Apselamus",
           "qid": "Q2577177"
         }
@@ -7877,8 +7877,8 @@
           "kind": "person",
           "where": "text",
           "start": 26,
-          "end": 32,
-          "check": "82372783",
+          "end": 43,
+          "check": "cfdcf010",
           "name": "Maedhoc",
           "qid": null
         }
@@ -10291,8 +10291,8 @@
           "kind": "person",
           "where": "text",
           "start": 49,
-          "end": 55,
-          "check": "03078739",
+          "end": 69,
+          "check": "7e7a288d",
           "name": "Renula",
           "qid": null
         }
@@ -11704,20 +11704,9 @@
             "footnote": 1
           },
           "start": 143,
-          "end": 150,
-          "check": "48eaef84",
-          "name": "Dativus",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
-          "start": 159,
           "end": 166,
-          "check": "883a67f1",
-          "name": "Sanator",
+          "check": "213f6ea7",
+          "name": "Dativus",
           "qid": null
         },
         {
@@ -11793,8 +11782,8 @@
             "footnote": 1
           },
           "start": 241,
-          "end": 251,
-          "check": "74de7e69",
+          "end": 263,
+          "check": "bed3d421",
           "name": "Maximianus",
           "qid": null
         },
@@ -11804,8 +11793,8 @@
             "footnote": 1
           },
           "start": 265,
-          "end": 271,
-          "check": "3146fbef",
+          "end": 284,
+          "check": "c7648b0e",
           "name": "Telica",
           "qid": null
         },
@@ -18713,8 +18702,8 @@
           "kind": "person",
           "where": "text",
           "start": 26,
-          "end": 39,
-          "check": "0e3f08cf",
+          "end": 56,
+          "check": "1be15526",
           "name": "Ioannes Sordi",
           "qid": null
         }
@@ -32925,8 +32914,8 @@
           "kind": "person",
           "where": "text",
           "start": 20,
-          "end": 25,
-          "check": "d72b3a0f",
+          "end": 38,
+          "check": "a64c4052",
           "name": "Caleb",
           "qid": null
         }
@@ -37421,8 +37410,8 @@
           "kind": "person",
           "where": "text",
           "start": 26,
-          "end": 61,
-          "check": "08079684",
+          "end": 72,
+          "check": "3d705575",
           "name": "Matthias Kalemba Mulumba",
           "qid": null
         }
@@ -40491,8 +40480,8 @@
           "kind": "person",
           "where": "text",
           "start": 32,
-          "end": 39,
-          "check": "4a842836",
+          "end": 55,
+          "check": "971f2a56",
           "name": "Columba",
           "qid": "Q236326"
         }
@@ -41425,8 +41414,8 @@
           "kind": "person",
           "where": "text",
           "start": 19,
-          "end": 25,
-          "check": "2a883691",
+          "end": 39,
+          "check": "fa53f389",
           "name": "Cetheus",
           "qid": null
         }
@@ -53497,8 +53486,8 @@
           "kind": "person",
           "where": "text",
           "start": 29,
-          "end": 35,
-          "check": "6e0a5120",
+          "end": 49,
+          "check": "99e6662f",
           "name": "Marina",
           "qid": null
         }
@@ -54640,8 +54629,8 @@
           "kind": "person",
           "where": "text",
           "start": 43,
-          "end": 48,
-          "check": "9c9dbd5d",
+          "end": 63,
+          "check": "78a320fc",
           "name": "Kinga",
           "qid": "Q233012"
         }
@@ -62859,6 +62848,15 @@
           "end": 21,
           "check": "ab364a39",
           "qid": "Q48338"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
+          "end": 50,
+          "check": "6c197418",
+          "name": "Mamas",
+          "qid": null
         }
       ],
       "mr:0817-myron": [
@@ -67980,8 +67978,8 @@
             "footnote": 1
           },
           "start": 293,
-          "end": 306,
-          "check": "3923bd26",
+          "end": 316,
+          "check": "bbab5754",
           "name": "Claudius Cayx",
           "qid": null
         },
@@ -68574,8 +68572,8 @@
             "footnote": 1
           },
           "start": 1829,
-          "end": 1841,
-          "check": "c7d74883",
+          "end": 1854,
+          "check": "70223e8e",
           "name": "Lupus Thomas",
           "qid": null
         },
@@ -69295,8 +69293,8 @@
             "footnote": 1
           },
           "start": 67,
-          "end": 98,
-          "check": "48a16c71",
+          "end": 110,
+          "check": "87cbe506",
           "name": "Ioannes Franciscus Maria Benoît",
           "qid": null
         },
@@ -75387,8 +75385,8 @@
           "kind": "person",
           "where": "text",
           "start": 27,
-          "end": 34,
-          "check": "0d434420",
+          "end": 46,
+          "check": "77918dc3",
           "name": "Goericus",
           "qid": null
         }
@@ -83244,8 +83242,8 @@
           "kind": "person",
           "where": "text",
           "start": 26,
-          "end": 35,
-          "check": "7c9ab11d",
+          "end": 46,
+          "check": "617ffb77",
           "name": "Gaudentius",
           "qid": null
         }
@@ -87263,8 +87261,8 @@
           "kind": "person",
           "where": "text",
           "start": 58,
-          "end": 63,
-          "check": "0455f277",
+          "end": 75,
+          "check": "ba10a08a",
           "name": "Witta",
           "qid": "Q882924"
         }
@@ -89236,8 +89234,8 @@
           "kind": "person",
           "where": "text",
           "start": 39,
-          "end": 46,
-          "check": "397180e0",
+          "end": 58,
+          "check": "882beb2a",
           "name": "Emericus",
           "qid": null
         }
@@ -92076,8 +92074,8 @@
           "kind": "person",
           "where": "text",
           "start": 37,
-          "end": 54,
-          "check": "63bac7c3",
+          "end": 63,
+          "check": "7921e1b7",
           "name": "Hugo Faringdon",
           "qid": null
         }

@@ -110,6 +110,20 @@ LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia"
 # Words that mark a person as another of a name just listed, before or after it: "alius Felix",
 # "Rogatianus alius", "Iulia altera", "Theodori alterius" (the genitive, in a eulogy's text).
 REPEAT_WORDS = {"alius", "alia", "alter", "altera", "alterius", "adhuc"}
+# Words that give another name of the person just named: "Maximianus seu Maximus", "Telica vel
+# Tazelita"; a footnote segment "qui et Sanator" gives one too (VARIANT_OPENING).
+VARIANT_WORDS = {"seu", "vel", "sive"}
+VARIANT_INSIDE = re.compile(r"\s+(?:seu|vel|sive)\s+", re.I)
+VARIANT_OPENING = re.compile(r"^(?:qui|quae|quæ)\s+et\s+", re.I)
+# "Dativus qui et Sanator" inside a segment, or in a eulogy's text before a capitalized name: read as "seu".
+QUI_ET = re.compile(r"\s+(?:qui|quae|quæ)\s+et\s+(?=[^\W\d_])", re.I)
+
+
+def full_variant(name, variant):
+    """A variant as a whole name: one with fewer words than the name stands for its last words
+    ("Ioannes Sordi" seu "Cacciafronte" is "Ioannes Cacciafronte")."""
+    words, alt = name.split(), variant.split()
+    return " ".join(words[:max(0, len(words) - len(alt))] + alt)
 FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
 WORD = re.compile(r"[^\W\d_][\w'’\-]*")
 
@@ -169,11 +183,22 @@ def _split_et(segment):
     return parts
 
 
-def footnote_names(text, printed_twice=None, marked=None):
+def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=None):
     """The names a footnote list gives, in order, and the segments not read. A name printed twice
     in a row with no word marking another person ("alius") is read once, and appended to
     `printed_twice` when given: probably a misprint, for a curator's note. The positions (in the
-    names) of those marked as another person of a name are appended to `marked` when given."""
+    names) of those marked as another person of a name are appended to `marked` when given; a
+    name's other names (after seu, vel, sive, or a segment "qui et X") go in `variants`,
+    {position in names: [names]}, and the names whose other name could not be read in `unread`,
+    when given."""
+
+    def other_name(alt):
+        """Record `alt`, another name of the name read last, or report it unread."""
+        name = _name_at_start(alt)
+        if name and variants is not None:
+            variants.setdefault(len(names) - 1, []).append(name)
+        elif not name and unread is not None:
+            unread.append(names[-1])
     m = FOOTNOTE_OPENING.match(text)
     if not m:
         return [], [text]
@@ -183,7 +208,24 @@ def footnote_names(text, printed_twice=None, marked=None):
     for group in body.split(";"):
         singles = []  # positions in names of the one-word names just before, in this group
         for seg in (s.strip() for s in group.split(",")):
-            parts = [p.strip() for p in _split_et(seg) if p.strip()]
+            opening = VARIANT_OPENING.match(seg)
+            if opening:
+                # "Dativus, qui et Sanator [et Victor]": another name of the person just read, then
+                # any names after it.
+                rest = [p.strip() for p in _split_et(seg[opening.end():]) if p.strip()]
+                if rest and last is not None:
+                    other_name(rest[0])
+                seg = " et ".join(rest[1:])
+                if not seg:
+                    continue
+            # "Maximianus seu Maximus [sive Maximinus] [et Felix]": each part's other names, apart from its
+            # name ("Dativus qui et Sanator" reads as "seu").
+            seg = QUI_ET.sub(" seu ", seg)
+            parts, alts = [], []
+            for p in (p.strip() for p in _split_et(seg) if p.strip()):
+                own, *alt = VARIANT_INSIDE.split(p)
+                parts.append(own)
+                alts.append(alt)
             read = [(_name_at_start(p), p) for p in parts]
             # "Ioanna, Magdalena et Petrina Sailland": first names sharing the last one's surname.
             if len(read) > 1 and read[0][0] and len(read[0][0].split()) == 1 and \
@@ -193,7 +235,7 @@ def footnote_names(text, printed_twice=None, marked=None):
                     del names[i]
                 singles = []
                 continue
-            for name, part in read:
+            for k, (name, part) in enumerate(read):
                 if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
                     last = None
@@ -208,6 +250,8 @@ def footnote_names(text, printed_twice=None, marked=None):
                         marked.append(len(names))
                     names.append(name)
                     last = name
+                    for alt in alts[k]:
+                        other_name(alt)
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
                     last = None
@@ -258,11 +302,13 @@ def _declined(key, lexicon):
     return set()
 
 
-def text_companions(text, lexicon, marked=None):
+def text_companions(text, lexicon, marked=None, variants=None, unread=None):
     """The names after a plural honorific at the head of a eulogy ("sanctorum
     martyrum A, B et C"), as nominatives; forms not surely converted are
     returned apart, as printed. The positions (in the names) of those marked as
-    another person of a name ("Theodori alterius") are appended to `marked` when given."""
+    another person of a name ("Theodori alterius") are appended to `marked` when given. A name's
+    other names (after seu, vel or sive) go in `variants`, {position in names: [names]}, and the
+    names whose other name could not be read in `unread`, when given."""
     if not PLURAL_HONORIFIC.search(fold(text)):
         return [], []
     words = WORD.findall(text)
@@ -271,12 +317,19 @@ def text_companions(text, lexicon, marked=None):
     while start < len(words) and fwords[start] in NAME_DESCRIPTORS:
         start += 1
     names, uncertain, current, after_particle, skipping = [], [], [], False, False
+    variant_of = None  # the position of the name the words being read are another name of
     tail = text.split(words[start - 1], 1)[1] if start > 0 else text
+    tail = QUI_ET.sub(" seu ", tail)  # "Dativi qui et Felicis": another name, as after "seu"
 
     def close():
+        nonlocal variant_of
         if current:
-            names.append(" ".join(current))
+            if variant_of is None:
+                names.append(" ".join(current))
+            elif variants is not None:
+                variants.setdefault(variant_of, []).append(" ".join(current))
             current.clear()
+        variant_of = None
 
     for token in re.findall(r"[^\W\d_][\w'’\-]*|[,.;:]", tail):
         if token in ",.;:":
@@ -295,6 +348,10 @@ def text_companions(text, lexicon, marked=None):
         if f in ("sociorum", "sociarum"):
             break
         if token[0].islower() and f not in PARTICLES:
+            if f in VARIANT_WORDS and (current or names):
+                close()
+                variant_of = len(names) - 1  # "Marinae seu Margaritae": another name of hers
+                continue
             if f in REPEAT_WORDS and current:
                 close()  # "Theodori alterius": another Theodorus
                 if marked is not None:
@@ -328,8 +385,15 @@ def text_companions(text, lexicon, marked=None):
             current.append(lexicon.get(name_key(token), token))
             continue
         nom = nominative(token, lexicon)
+        if nom is None and variant_of is not None and not _genitive_ending(name_key(token)):
+            nom = token  # an undeclined other name ("Sordi seu Cacciafronte"), as printed
         if nom is None:
-            uncertain.append(token)  # the whole name is dropped, never half-written
+            if variant_of is not None:
+                if unread is not None:
+                    unread.append(names[variant_of])  # the other name is not guessed
+                variant_of = None
+            else:
+                uncertain.append(token)  # the whole name is dropped, never half-written
             current.clear()
             after_particle, skipping = False, True
             continue

@@ -122,8 +122,9 @@ def evidence(person, c):
         ev.append("human")
     if SAINT_STATUSES & set(c.get("statuses", [])):
         ev.append("status")
-    if name_matches(person["name"], c.get("names", []) + [c.get("label", "")]):
-        ev.append("name")
+    names = c.get("names", []) + [c.get("label", "")]
+    if any(name_matches(nm, names) for nm in [person["name"], *person.get("also", [])]):
+        ev.append("name")  # under any of the person's names
     if person["typology"] == "dies_natalis" and _death_agrees(c.get("died") or "", person["day"]):
         ev.append("death")
     return ev
@@ -176,7 +177,9 @@ def search_terms(name):
 
 def gather(person, client):
     seen = {}
-    for term in search_terms(person["name"]):
+    # Each of the person's names: Kinga is also sought as Cunegundis.
+    terms = dict.fromkeys(t for nm in [person["name"], *person.get("also", [])] for t in search_terms(nm))
+    for term in terms:
         for c in client.person_candidates(term, SEARCH_LANGUAGES):
             seen.setdefault(c["wikidata"], c)
     return list(seen.values())
@@ -189,7 +192,8 @@ def person_index(persons_doc, entries, typology, subjects):
         e = by_id[mrid]
         for p in persons:
             out[f"{mrid}|{person_key(p)}"] = {
-                "eulogy": mrid, "name": p["name"], **({"n": p["n"]} if "n" in p else {}), "where": p["where"],
+                "eulogy": mrid, "name": p["name"], **({"n": p["n"]} if "n" in p else {}),
+                **({"also": p["also"]} if "also" in p else {}), "where": p["where"],
                 "day": f"{e['month']:02d}-{e['day']:02d}", "typology": typology.get(mrid),
                 "subject": subjects.get(mrid, ""),
                 # Each other name once: a repeated name is one companion to search with.
@@ -206,7 +210,7 @@ def new_changeset(operations):
 
 def make_op(key, person, result, old):
     op = {"op": "resolve_person", "id": key, **{k: person[k] for k in
-          ("eulogy", "day", "typology", "subject", "name", "n", "where", "companions") if k in person},
+          ("eulogy", "day", "typology", "subject", "name", "n", "also", "where", "companions") if k in person},
           "failed": result["failed"], "candidates": result["candidates"]}
     for k in ("suggested", "reasoning", "confidence"):
         if old and k in old:
@@ -261,6 +265,14 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     not_processed = []
     failures = 0
     pending = {}  # automatic results, written once it is known which items are shared
+
+    def keep(key, person):
+        """A queued op not looked up this time takes the person's details (other names, companions)
+        and keeps its candidates and reasons."""
+        if key in ops:
+            old = ops[key]
+            ops[key] = make_op(key, person, {"failed": old["failed"], "candidates": old["candidates"]}, old)
+
     for key in sorted(index):
         person = index[key]
         if _decided(items, person):
@@ -268,12 +280,14 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             continue
         if failures >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((key, "skipped: Wikidata unavailable"))
+            keep(key, person)
             continue
         try:
             result = evaluate(person, gather(person, client))
         except WikidataError as e:
             not_processed.append((key, str(e)))
             failures += 1
+            keep(key, person)
             continue
         failures = 0
         if key in force_review:
