@@ -26,7 +26,7 @@ import re
 import sys
 from pathlib import Path
 
-from persons_text import name_key
+from persons_text import name_key, person_key
 from wikidata import Wikidata, WikidataError
 
 EDITION = "martyrologium_romanum_2004"
@@ -188,11 +188,12 @@ def person_index(persons_doc, entries, typology, subjects):
     for mrid, persons in persons_doc["editions"][EDITION].items():
         e = by_id[mrid]
         for p in persons:
-            out[f"{mrid}|{p['name']}"] = {
-                "eulogy": mrid, "name": p["name"], "where": p["where"],
+            out[f"{mrid}|{person_key(p)}"] = {
+                "eulogy": mrid, "name": p["name"], **({"n": p["n"]} if "n" in p else {}), "where": p["where"],
                 "day": f"{e['month']:02d}-{e['day']:02d}", "typology": typology.get(mrid),
                 "subject": subjects.get(mrid, ""),
-                "companions": [q["name"] for q in persons if q["name"] != p["name"]],
+                # Each other name once: a repeated name is one companion to search with.
+                "companions": list(dict.fromkeys(q["name"] for q in persons if q["name"] != p["name"])),
             }
     return out
 
@@ -205,7 +206,7 @@ def new_changeset(operations):
 
 def make_op(key, person, result, old):
     op = {"op": "resolve_person", "id": key, **{k: person[k] for k in
-          ("eulogy", "day", "typology", "subject", "name", "where", "companions")},
+          ("eulogy", "day", "typology", "subject", "name", "n", "where", "companions") if k in person},
           "failed": result["failed"], "candidates": result["candidates"]}
     for k in ("suggested", "reasoning", "confidence"):
         if old and k in old:
@@ -215,7 +216,7 @@ def make_op(key, person, result, old):
 
 
 def _decided(items, person):
-    return person["name"] in items.get(person["eulogy"], {})
+    return person_key(person) in items.get(person["eulogy"], {})
 
 
 def _one_word(name):
@@ -238,6 +239,20 @@ def _shared_items(items, index, pending):
 
 
 SHARED = "the same item ({qid}) is matched in another eulogy, and this name is one word: a namesake?"
+SAME_EULOGY = "the same item ({qid}) is matched for another person of this eulogy"
+
+
+def _holders(items, extra=()):
+    """Who holds each item within a eulogy, {(eulogy, QID): {person keys}}: the decisions in
+    `items`, plus `extra` (eulogy, person key, QID) triples not written yet."""
+    out = {}
+    for mrid, persons in items.items():
+        for key, e in persons.items():
+            if e.get("wikidata"):
+                out.setdefault((mrid, e["wikidata"]), set()).add(key)
+    for mrid, key, qid in extra:
+        out.setdefault((mrid, qid), set()).add(key)
+    return out
 
 
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
@@ -271,7 +286,7 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     # propose withdraws its own automatic one-word matches of a shared item; a curator's
     # decision (reviewed, unresolved) it never touches.
     for key, person in index.items():
-        e = items.get(person["eulogy"], {}).get(person["name"])
+        e = items.get(person["eulogy"], {}).get(person_key(person))
         if not (e and e["status"] == "auto" and _one_word(person["name"]) and e["wikidata"] in shared):
             continue
         try:
@@ -280,17 +295,22 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             not_processed.append((key, str(err)))
             continue
         result["failed"].append(SHARED.format(qid=e["wikidata"]))
-        del items[person["eulogy"]][person["name"]]
+        del items[person["eulogy"]][person_key(person)]
         if not items[person["eulogy"]]:
             del items[person["eulogy"]]
         ops[key] = make_op(key, person, result, ops.get(key))
+    held = _holders(items, [(index[k]["eulogy"], person_key(index[k]), r["auto"]["wikidata"])
+                            for k, r in pending.items()])
     for key, result in pending.items():
         person, qid = index[key], result["auto"]["wikidata"]
-        if _one_word(person["name"]) and qid in shared:
+        if len(held[(person["eulogy"], qid)]) > 1:
+            result["failed"].append(SAME_EULOGY.format(qid=qid))
+            ops[key] = make_op(key, person, result, ops.get(key))
+        elif _one_word(person["name"]) and qid in shared:
             result["failed"].append(SHARED.format(qid=qid))
             ops[key] = make_op(key, person, result, ops.get(key))
         else:
-            items.setdefault(person["eulogy"], {})[person["name"]] = {"wikidata": qid, "status": "auto"}
+            items.setdefault(person["eulogy"], {})[person_key(person)] = {"wikidata": qid, "status": "auto"}
             ops.pop(key, None)
     review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
     review["generated_at"] = datetime.date.today().isoformat()
@@ -342,10 +362,15 @@ def apply_decisions(items, review, exported, index, client):
             errors.append(error)
         else:
             decided[key] = entry
+    held = _holders(items, [(index[k]["eulogy"], person_key(index[k]), e["wikidata"])
+                            for k, e in decided.items() if e["wikidata"]])
+    for (mrid, qid), keys in sorted(held.items()):
+        if len(keys) > 1:
+            errors.append(f"{mrid}: {qid} would be the item of more than one person ({', '.join(sorted(keys))})")
     if errors:
         raise ValueError("no decision applied:\n" + "\n".join(errors))
     for key, entry in decided.items():
-        items.setdefault(index[key]["eulogy"], {})[index[key]["name"]] = entry
+        items.setdefault(index[key]["eulogy"], {})[person_key(index[key])] = entry
     review["operations"] = [op for op in review["operations"] if op["id"] not in decided]
     return len(decided)
 
@@ -378,7 +403,7 @@ def validate(items, index, ops=()):
     errors = []
     names = {}
     for key, p in index.items():
-        names.setdefault(p["eulogy"], set()).add(p["name"])
+        names.setdefault(p["eulogy"], set()).add(person_key(p))
     for mrid, persons in items.items():
         for name, e in persons.items():
             where = f"{mrid}|{name}"
@@ -391,6 +416,9 @@ def validate(items, index, ops=()):
                     errors.append(f"{where}: unresolved needs wikidata null and a note")
             elif not isinstance(e.get("wikidata"), str) or not QID.match(e["wikidata"]):
                 errors.append(f"{where}: wikidata {e.get('wikidata')!r} is not a QID")
+    for (mrid, qid), keys in sorted(_holders(items).items()):
+        if len(keys) > 1:
+            errors.append(f"{mrid}: {qid} is the item of more than one person ({', '.join(sorted(keys))})")
     for op in ops:
         if op["id"] not in index:
             errors.append(f"{op['id']}: queued but not a person of data/persons.json")
@@ -414,9 +442,9 @@ def render_report(items, index, ops, not_processed=()):
              f"- Queued for review: {len(ops)}", f"- Not processed (lookup failed): {len(not_processed)}", ""]
     # The user's ruling (2026-10-09): automatic matches of eulogies that do not mark a death
     # stay automatic, listed here for a curator to scan; a wrong one goes into FORCE_REVIEW.
-    undated = sorted(f"{key}: {items[p['eulogy']][p['name']]['wikidata']}" for key, p in index.items()
+    undated = sorted(f"{key}: {items[p['eulogy']][person_key(p)]['wikidata']}" for key, p in index.items()
                      if p["typology"] != "dies_natalis"
-                     and items.get(p["eulogy"], {}).get(p["name"], {}).get("status") == "auto")
+                     and items.get(p["eulogy"], {}).get(person_key(p), {}).get("status") == "auto")
     lines += [f"## Automatic without a date check, to scan ({len(undated)})", "",
               "Eulogies that do not mark the day of death: name, status and a single candidate decided.", ""]
     lines += [f"- {x}" for x in undated] + [""]
