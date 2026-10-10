@@ -4096,6 +4096,13 @@
           }
         },
         {
+          "name": "Felix",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Emeritus",
           "where": {
             "footnote": 1
@@ -4127,6 +4134,13 @@
         },
         {
           "name": "Telica",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Rogatianus",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -4186,7 +4200,21 @@
           }
         },
         {
+          "name": "Rogatianus",
+          "n": 3,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Givalius",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Rogatus",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -4223,6 +4251,13 @@
         },
         {
           "name": "Clautus",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Felix",
+          "n": 3,
           "where": {
             "footnote": 1
           }
@@ -4295,6 +4330,27 @@
         },
         {
           "name": "Berectina",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Secunda",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Matrona",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ianuaria",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -13308,13 +13364,34 @@
           }
         },
         {
+          "name": "Iulia",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Ausona",
           "where": {
             "footnote": 1
           }
         },
         {
+          "name": "Æmilia",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Iamnica",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Pompeia",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -17260,6 +17337,12 @@
           }
         },
         {
+          "name": "Ioannes Zhang Huan",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Patricius Dong Bodi",
           "where": {
             "footnote": 1
@@ -18143,6 +18226,13 @@
         },
         {
           "name": "Dominicus Fernandes",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes Fernandes",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -26026,6 +26116,13 @@
           "where": {
             "footnote": 1
           }
+        },
+        {
+          "name": "Dominicus",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
         }
       ],
       "mr:0908-fridericus-ozanam": [
@@ -26380,6 +26477,13 @@
           }
         },
         {
+          "name": "Maria",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Dominicus Yamada",
           "where": {
             "footnote": 1
@@ -26398,7 +26502,21 @@
           }
         },
         {
+          "name": "Maria",
+          "n": 3,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Agnes",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Maria",
+          "n": 4,
           "where": {
             "footnote": 1
           }
@@ -27907,6 +28025,13 @@
         },
         {
           "name": "Magdalena Hŏ Kye-im",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Lucia Kim",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -32546,6 +32671,20 @@
         {
           "name": "Paulus",
           "where": "text"
+        },
+        {
+          "name": "Theodorus",
+          "n": 2,
+          "where": "text"
+        },
+        {
+          "name": "Ioannes",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes",
+          "n": 2,
+          "where": "text"
         }
       ],
       "mr:1106-severus": [
@@ -34692,6 +34831,13 @@
           }
         },
         {
+          "name": "Iosephus Tuân",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Iosephus Túc",
           "where": {
             "footnote": 1
@@ -36760,6 +36906,20 @@
           }
         },
         {
+          "name": "Ioannes",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Paulus",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Photinus",
           "where": {
             "footnote": 1
@@ -36784,6 +36944,13 @@
           }
         },
         {
+          "name": "Ioannes",
+          "n": 3,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Stephanus",
           "where": {
             "footnote": 1
@@ -36791,6 +36958,20 @@
         },
         {
           "name": "Theodorus",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes",
+          "n": 4,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Theodorus",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -36808,7 +36989,28 @@
           }
         },
         {
+          "name": "Georgius",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Sergius",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Georgius",
+          "n": 3,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Theodorus",
+          "n": 3,
           "where": {
             "footnote": 1
           }
@@ -36820,7 +37022,42 @@
           }
         },
         {
+          "name": "Ioannes",
+          "n": 5,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Zitas",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Philoxenus",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Georgius",
+          "n": 4,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes",
+          "n": 6,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Georgius",
+          "n": 5,
           "where": {
             "footnote": 1
           }
@@ -36838,13 +37075,90 @@
           }
         },
         {
+          "name": "Ioannes",
+          "n": 7,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Theodorus",
+          "n": 4,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Sergius",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Georgius",
+          "n": 6,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Thomas",
           "where": {
             "footnote": 1
           }
         },
         {
+          "name": "Stephanus",
+          "n": 2,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Conon",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Theodorus",
+          "n": 5,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Paulus",
+          "n": 3,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes",
+          "n": 8,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Georgius",
+          "n": 7,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes",
+          "n": 9,
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ioannes",
+          "n": 10,
           "where": {
             "footnote": 1
           }

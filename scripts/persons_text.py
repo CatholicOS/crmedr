@@ -72,6 +72,13 @@ def name_key(s):
     return " ".join(fold(s).replace("j", "i").replace("v", "u").replace("'", " ").split())
 
 
+def person_key(p):
+    """A person's key within their eulogy: the name, or "name#n" for the nth person of a
+    name the eulogy repeats (n from 2; a person without n is the first)."""
+    name, n = p.get("name"), p.get("n", 1)
+    return name if n == 1 else f"{name}#{n}"
+
+
 def subject_names(mrid, subject):
     """The persons a subject of i18n/la.json names, honorific-free, in order."""
     if mrid in MARIAN_IDS:
@@ -97,7 +104,12 @@ LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia"
                        "earum", "episcopi", "episcopus", "presbyteri", "presbyter", "sacerdotes", "sacerdos",
                        "diaconi", "diaconus", "religiosi", "religiosae", "laici", "laicus", "catechistae",
                        "catechista", "uxor", "coniux", "coniuges", "frater", "fratres", "soror", "sorores",
-                       "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae"}
+                       "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae",
+                       # another of a name just listed: "alius Felix", "adhuc Rogatianus alius"
+                       "alius", "alia", "alter", "altera", "adhuc"}
+# Words that mark a person as another of a name just listed, before or after it: "alius Felix",
+# "Rogatianus alius", "Iulia altera", "Theodori alterius" (the genitive, in a eulogy's text).
+REPEAT_WORDS = {"alius", "alia", "alter", "altera", "alterius", "adhuc"}
 FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
 WORD = re.compile(r"[^\W\d_][\w'’\-]*")
 
@@ -157,12 +169,16 @@ def _split_et(segment):
     return parts
 
 
-def footnote_names(text):
-    """The names a footnote list gives, in order, and the segments not read."""
+def footnote_names(text, printed_twice=None, marked=None):
+    """The names a footnote list gives, in order, and the segments not read. A name printed twice
+    in a row with no word marking another person ("alius") is read once, and appended to
+    `printed_twice` when given: probably a misprint, for a curator's note. The positions (in the
+    names) of those marked as another person of a name are appended to `marked` when given."""
     m = FOOTNOTE_OPENING.match(text)
     if not m:
         return [], [text]
     names, skipped = [], []
+    last = None  # the name read just before this one, in a row
     body = without_parentheses(text[m.end():]).strip().rstrip(".")
     for group in body.split(";"):
         singles = []  # positions in names of the one-word names just before, in this group
@@ -180,11 +196,23 @@ def footnote_names(text):
             for name, part in read:
                 if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
+                    last = None
                 elif name:
+                    is_marked = any(fold(w.strip(".,;:")) in REPEAT_WORDS for w in part.split())
+                    if not is_marked and last is not None and name_key(name) == name_key(last):
+                        if printed_twice is not None:
+                            printed_twice.append(name)
+                        continue  # printed twice in a row, no "alius": one person
                     singles = singles + [len(names)] if len(name.split()) == 1 else []
+                    if is_marked and marked is not None:
+                        marked.append(len(names))
                     names.append(name)
+                    last = name
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
+                    last = None
+                else:
+                    last = None
                 # A lowercase segment ("presbyteri ex Ordine...", "eius filius") describes the
                 # names before it: dropped.
     return names, skipped
@@ -230,10 +258,11 @@ def _declined(key, lexicon):
     return set()
 
 
-def text_companions(text, lexicon):
+def text_companions(text, lexicon, marked=None):
     """The names after a plural honorific at the head of a eulogy ("sanctorum
     martyrum A, B et C"), as nominatives; forms not surely converted are
-    returned apart, as printed."""
+    returned apart, as printed. The positions (in the names) of those marked as
+    another person of a name ("Theodori alterius") are appended to `marked` when given."""
     if not PLURAL_HONORIFIC.search(fold(text)):
         return [], []
     words = WORD.findall(text)
@@ -266,6 +295,12 @@ def text_companions(text, lexicon):
         if f in ("sociorum", "sociarum"):
             break
         if token[0].islower() and f not in PARTICLES:
+            if f in REPEAT_WORDS and current:
+                close()  # "Theodori alterius": another Theodorus
+                if marked is not None:
+                    marked.append(len(names) - 1)
+                skipping = True
+                continue
             if f in NAME_DESCRIPTORS and not current:
                 continue
             if current:

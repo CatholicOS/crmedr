@@ -52,31 +52,54 @@ def _same_person(a, b):
 
 def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     if mrid in curated:
-        return [dict(p) for p in curated[mrid]], {"uncertain": [], "skipped": [], "socii_without_names": False}
-    persons, seen = [], set()
+        return [dict(p) for p in curated[mrid]], {"uncertain": [], "skipped": [], "printed_twice": [],
+                                                  "socii_without_names": False}
+    persons = []
+    first = {}  # name_key -> where the name was first listed
+    count = {}  # name_key -> the persons of that name so far
+    listed = {}  # (name_key, footnote) -> its occurrences in that footnote's list so far
     subjects = subject_names(mrid, subject)
 
-    def add(name, where):
+    def add(name, where, marked=False):
         # A fuller or shorter form of a subject is the subject, in the subject's form.
-        if name_key(name) in seen or any(_same_person(name, s) for s in subjects if s != name):
+        if any(_same_person(name, s) for s in subjects if s != name):
             return
-        seen.add(name_key(name))
-        persons.append({"name": name, "where": where})
+        key = name_key(name)
+        if where == "text":
+            if key in first and not marked:
+                return  # named again in the text: the same person, unless marked ("Theodori alterius")
+        else:
+            here = (key, where["footnote"])
+            listed[here] = listed.get(here, 0) + 1
+            # A name listed before (the text, an earlier footnote) is that person again the first time
+            # this list names it, unless marked ("alius Felix"); any other occurrence in one list is
+            # another person of that name.
+            if key in first and first[key] != where and listed[here] == 1 and not marked:
+                return
+        first.setdefault(key, where)
+        count[key] = count.get(key, 0) + 1
+        p = {"name": name}
+        if count[key] > 1:
+            p["n"] = count[key]
+        p["where"] = where
+        persons.append(p)
 
     for n in subjects:
         add(n, "text")
-    uncertain, skipped = [], []
+    uncertain, skipped, printed_twice = [], [], []
     socii = mrid.endswith("-et-socii")
     if socii:
-        names, uncertain = text_companions(text or "", lexicon)
-        for n in names:
-            add(n, "text")
+        marks = []
+        names, uncertain = text_companions(text or "", lexicon, marked=marks)
+        for i, n in enumerate(names):
+            add(n, "text", marked=i in marks)
     for i, f in enumerate(footnotes, start=1):
-        names, bad = footnote_names(f["text"])
+        marks = []
+        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks)
         skipped += bad
-        for n in names:
-            add(n, {"footnote": i})
-    return persons, {"uncertain": uncertain, "skipped": skipped,
+        for j, n in enumerate(names):
+            add(n, {"footnote": i}, marked=j in marks)
+    return persons, {"uncertain": uncertain, "skipped": skipped, "printed_twice": printed_twice,
                      "socii_without_names": socii and len(persons) <= len(subjects)}
 
 
@@ -91,9 +114,18 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
             errors.append(f"{mrid}: not a current ID")
             continue
         notes = footnotes_by_id.get(mrid, [])
-        keys = [name_key(p["name"]) for p in persons]
-        if len(set(keys)) != len(keys):
-            errors.append(f"{mrid}: a name appears twice")
+        numbered = {}  # name_key -> the n of each of its persons
+        for p in persons:
+            n = p.get("n", 1)
+            if "n" in p and (type(n) is not int or n < 2):
+                errors.append(f"{mrid}: {p['name']!r} has n {n!r}: n is an integer from 2, absent for the first")
+                continue
+            if "#" in p["name"]:
+                errors.append(f"{mrid}: {p['name']!r} contains '#', which separates a person key's n")
+            numbered.setdefault(name_key(p["name"]), []).append(n)
+        for key, ns in numbered.items():
+            if sorted(ns) != list(range(1, len(ns) + 1)):
+                errors.append(f"{mrid}: the persons named {key!r} are numbered {sorted(ns)}, not 1, 2, 3…")
         for p in persons:
             where = p["where"]
             if where == "text":
@@ -113,7 +145,7 @@ def render_json(persons_by_id):
     return json.dumps(doc, ensure_ascii=False, indent=2) + "\n"
 
 
-def render_report(persons_by_id, issues):
+def render_report(persons_by_id, issues, noted=frozenset()):
     """Counts and the eulogies to review, by ID: the printed forms are not quoted."""
     total = sum(len(v) for v in persons_by_id.values())
     in_notes = sum(1 for v in persons_by_id.values() for p in v if p["where"] != "text")
@@ -126,6 +158,10 @@ def render_report(persons_by_id, issues):
          [f"{m}: {len(i['uncertain'])}" for m, i in issues.items() if i["uncertain"]]),
         ("Eulogies with footnote segments not read (add a curated entry)",
          [f"{m}: {len(i['skipped'])}" for m, i in issues.items() if i["skipped"]]),
+        ("Names printed twice in a row in a footnote list, counted once (probably a misprint: "
+         "add a 2004 Latin note in EDITION_NOTES of scripts/extract_registry.py)",
+         [f"{m}: {name} ({'noted' if m in noted else 'needs a curator note'})"
+          for m, i in issues.items() for name in i.get("printed_twice", [])]),
     ]
     for title, items in sections:
         lines += [f"## {title} ({len(items)})", ""] + [f"- {x}" for x in items] + [""]
@@ -165,7 +201,9 @@ def main():
     if errors:
         sys.exit("invalid persons:\n" + "\n".join(errors))
     (repo_root / "data" / "persons.json").write_text(render_json(persons_by_id), encoding="utf-8")
-    (repo_root / "docs" / "persons-report.md").write_text(render_report(persons_by_id, issues), encoding="utf-8")
+    noted = {e["id"] for e in current if EDITION in (e.get("edition_notes") or {})}
+    (repo_root / "docs" / "persons-report.md").write_text(render_report(persons_by_id, issues, noted),
+                                                          encoding="utf-8")
     total = sum(len(v) for v in persons_by_id.values())
     print(f"wrote data/persons.json: {total} persons in {len(persons_by_id)} eulogies; {len(issues)} to review")
 

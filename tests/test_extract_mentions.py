@@ -114,12 +114,14 @@ class EulogyMentionsTest(unittest.TestCase):
         _, review, _ = mentions_of("Romæ, sancti Nemo.", persons=[{"name": "Felix", "where": "text"}])
         self.assertEqual((review[0]["start"], review[0]["end"], review[0]["form"]), (None, None, None))
 
-    def test_an_ambiguous_match_is_marked_and_reviewed(self):
+    def test_a_further_match_is_proposed_as_the_same_person_and_nothing_is_removed(self):
         text = "Romæ, sanctórum Felícis presbýteri et Felícis diáconi."
         ms, review, _ = mentions_of(text, persons=[{"name": "Felix", "where": "text"}])
-        self.assertEqual(len(ms), 1)
-        self.assertEqual((review[0]["op"], review[0]["kind"], review[0]["start"]),
-                         ("remove_mention", "person", ms[0]["start"]))
+        second = text.index("Felícis", text.index("Felícis") + 1)
+        self.assertEqual([(m["start"], m["name"]) for m in ms], [(text.index("Felícis"), "Felix")])
+        self.assertEqual([(r["op"], r["kind"], r["start"], r["name"]) for r in review],
+                         [("add_mention", "person", second, "Felix")])
+        self.assertNotIn("n", review[0])
 
     def test_an_unfound_place_is_reviewed(self):
         ms, review, _ = mentions_of("Romæ, beáti Nemo.", [{"role": "death", "la": "Londínii in Anglia",
@@ -130,6 +132,66 @@ class EulogyMentionsTest(unittest.TestCase):
 
     def test_where_key(self):
         self.assertEqual((em.where_key("text"), em.where_key({"footnote": 2})), ("text", "footnote:2"))
+
+
+class RepeatedNamesTest(unittest.TestCase):
+    NOTE = "Quorum nómina: Felix, Emeritus; álius Felix, Rogatus; Felix."
+
+    def test_persons_of_one_name_take_its_matches_in_order(self):
+        persons = [{"name": "Felix", "where": {"footnote": 1}}, {"name": "Felix", "n": 2, "where": {"footnote": 1}},
+                   {"name": "Felix", "n": 3, "where": {"footnote": 1}}]
+        ms, review, _ = mentions_of("Romæ.", persons=persons, notes=[self.NOTE], qids={"Felix#2": "Q2"})
+        starts = [i for i in range(len(self.NOTE)) if self.NOTE.startswith("Felix", i)]
+        self.assertEqual([(m["start"], m.get("n"), m["qid"]) for m in ms],
+                         [(starts[0], None, None), (starts[1], 2, "Q2"), (starts[2], 3, None)])
+        self.assertEqual(list(ms[1]), ["kind", "where", "start", "end", "form", "name", "n", "qid"])
+        self.assertEqual(review, [])
+
+    def test_a_decided_second_person_does_not_take_the_first_match(self):
+        persons = [{"name": "Felix", "where": {"footnote": 1}}, {"name": "Felix", "n": 2, "where": {"footnote": 1}}]
+        ms, _, _ = mentions_of("Romæ.", persons=persons, notes=[self.NOTE], qids={"Felix#2": "Q2"})
+        self.assertEqual([m.get("n") for m in sorted(ms, key=lambda m: m["start"])], [None, 2])
+
+    def test_a_match_after_the_last_person_of_a_name_is_proposed_as_that_person(self):
+        persons = [{"name": "Felix", "where": {"footnote": 1}}, {"name": "Felix", "n": 2, "where": {"footnote": 1}}]
+        ms, review, _ = mentions_of("Romæ.", persons=persons, notes=[self.NOTE])
+        third = self.NOTE.rindex("Felix")
+        self.assertEqual(len(ms), 2)
+        self.assertEqual([(r["op"], r["start"], r["name"], r["n"]) for r in review],
+                         [("add_mention", third, "Felix", 2)])
+        self.assertIn("matched again", review[0]["reasoning"])
+
+    def test_a_footnote_person_of_the_name_does_not_hide_a_further_match_in_the_text(self):
+        # Felix (the subject, in the text) and another Felix in a footnote: the text's last person of the
+        # name is Felix 1, so the text's second "Felícis" is proposed as him.
+        text = "Romæ, sanctórum Felícis et Felícis."
+        persons = [{"name": "Felix", "where": "text"}, {"name": "Felix", "n": 2, "where": {"footnote": 1}}]
+        ms, review, _ = mentions_of(text, persons=persons, notes=["Quorum nómina: álius Felix, Victor."])
+        self.assertEqual([(m["where"], m.get("n")) for m in ms], [("text", None), ({"footnote": 1}, 2)])
+        self.assertEqual([(r["op"], r["where"], r["start"], r["name"], r.get("n")) for r in review],
+                         [("add_mention", "text", text.rindex("Felícis"), "Felix", None)])
+
+    def test_a_further_match_found_at_another_step_is_proposed_too(self):
+        # The first match is verbatim, the second only by stem: still a further match of the name.
+        text = "Romæ, sanctus Felix, mártyr; ídem Felícis memória."
+        ms, review, _ = mentions_of(text, persons=[{"name": "Felix", "where": "text"}])
+        self.assertEqual([m["form"] for m in ms], ["Felix"])
+        self.assertEqual([(r["op"], r["form"]) for r in review], [("add_mention", "Felícis")])
+
+    def test_spellings_of_one_name_are_one_name(self):
+        # Two martyrs whose names differ only in their accents: name_key folds them together, so
+        # extract_persons numbers the second, and each keeps its own words.
+        note = "Quorum nómina: Iosephus Tuấn, Petrus, Iosephus Tuân."
+        persons = [{"name": "Iosephus Tuấn", "where": {"footnote": 1}},
+                   {"name": "Iosephus Tuân", "n": 2, "where": {"footnote": 1}}]
+        # Spellings of one name may differ in length ("Æmilia", "Aemilia"): still placed in n order.
+        aemiliae = [{"name": "Æmilia", "where": {"footnote": 1}}, {"name": "Aemilia", "n": 2, "where": {"footnote": 1}}]
+        ms = mentions_of("Romæ.", persons=aemiliae, notes=["Quorum nómina: Æmilia, Petrus, Æmilia."])[0]
+        self.assertEqual([m.get("n") for m in ms], [None, 2])
+        for qids in ({}, {"Iosephus Tuân#2": "Q2"}):
+            ms, review, _ = mentions_of("Romæ.", persons=persons, notes=[note], qids=qids)
+            self.assertEqual([(m["form"], m.get("n")) for m in ms], [("Iosephus Tuấn", None), ("Iosephus Tuân", 2)])
+            self.assertEqual(review, [])
 
 
 ED = "martyrologium_romanum_2004"
@@ -161,6 +223,17 @@ class BuildEditionTest(unittest.TestCase):
         self.assertEqual(out["mr:0101-basilius"], [{"kind": "person", "where": "text", "start": s, "end": s + 7,
                                                     "form": "Basilíi", "name": "Basilius", "qid": "Q19546"}])
         self.assertEqual(counts["found"][("person", True, "curated")], 1)
+
+    def test_a_curated_second_person_takes_the_qid_decided_for_its_key(self):
+        text = "Romæ, sanctórum Felícis et Felícis."
+        s = text.rindex("Felícis")
+        curated = {"mr:0101-felix": [{"kind": "person", "where": "text", "start": s, "end": s + 7,
+                                      "check": em.check("Felícis"), "name": "Felix", "n": 2, "qid": None}]}
+        out, _, _ = em.build_edition("la", {"mr:0101-felix": text}, {}, {}, {}, {},
+                                     {"mr:0101-felix": {"Felix": {"wikidata": "Q1", "status": "auto"},
+                                                        "Felix#2": {"wikidata": "Q2", "status": "auto"}}},
+                                     curated)
+        self.assertEqual([(m["n"], m["qid"]) for m in out["mr:0101-felix"]], [(2, "Q2")])
 
     def test_a_curated_span_whose_check_fails_is_an_error(self):
         s = BASIL_TEXT.index("Basilíi")
@@ -225,6 +298,14 @@ class RenderTest(unittest.TestCase):
         m = doc["editions"]["ed"]["mr:x"][0]
         self.assertEqual((m["start"], m["end"], m["check"]), (3, 7, em.check("Nemo")))
         self.assertEqual(list(m), ["kind", "where", "start", "end", "check", "name", "qid"])
+
+    def test_a_second_person_keeps_n_in_the_file(self):
+        text = "Romæ, sanctórum Felícis et Felícis."
+        s = text.rindex("Felícis")
+        m = {"kind": "person", "where": "text", "start": s, "end": s + 7, "form": "Felícis", "name": "Felix", "n": 2,
+             "qid": None}
+        self.assertEqual(list(em.to_file(m, text)), ["kind", "where", "start", "end", "check", "name", "n", "qid"])
+        self.assertEqual(em.from_file(em.to_file(m, text), text), m)
 
     def test_report(self):
         _, _, counts = em.build_edition("la", {"mr:0101-basilius": BASIL_TEXT}, {}, PLACES, PERSONS, GAZ, ITEMS, {})
@@ -326,6 +407,15 @@ class ReviewOpsTest(unittest.TestCase):
         self.assertEqual(len(set(ids)), 2)
         self.assertEqual(ids[0], f"{ED}|mr:x|text|0")
         self.assertEqual(ids[1], f"{ED}|mr:x|text|0|add_mention")
+
+    def test_an_add_for_a_second_person_carries_n_and_a_spanless_one_ends_its_id_with_the_key(self):
+        notes = "Quorum nómina: Paulus et Ioánnes."
+        review = {"mr:x": [{"op": "add_mention", "kind": "person", "where": {"footnote": 1}, "start": None,
+                            "end": None, "form": None, "name": "Felix", "n": 2, "reasoning": "Felix was not found"}]}
+        op = em.review_ops(ED, review, lambda e, m, w: notes)[0]
+        self.assertEqual(op["id"], f"{ED}|mr:x|footnote:1|Felix#2")
+        self.assertEqual((op["name"], op["n"]), ("Felix", 2))
+        self.assertEqual(list(op)[9:11], ["name", "n"])
 
     def test_a_remove_has_a_kind_and_no_edited(self):
         review = {"mr:x": [{"op": "remove_mention", "kind": "place", "where": "text", "start": 0, "end": 4,
@@ -518,6 +608,15 @@ class ApplyDecisionsTest(unittest.TestCase):
         # The added mention waits for apply to check it against the texts.
         self.assertEqual((curated[ED]["mr:x"][1]["form"], "check" in curated[ED]["mr:x"][1]), ("Nemí", False))
         self.assertEqual(len(self.MENTIONS[ED]["mr:x"]), 2)  # the input is not changed
+
+    def test_an_added_second_person_keeps_n(self):
+        exported = {"operations": [self.op("add_mention", kind="person", name="Nemo", n=2, start=13, end=20,
+                                           form="Nemínis")]}
+        mentions = {ED: {"mr:x": [stored("place", 0, 4, "Romæ", qid="Q220")]}}
+        curated = {}
+        em.apply_decisions(curated, mentions, exported)
+        added = curated[ED]["mr:x"][1]
+        self.assertEqual((added["name"], added["n"]), ("Nemo", 2))
 
     def test_set_span_with_an_edit(self):
         exported = {"operations": [self.op("set_span", "edit", kind="place", **{"from": {"start": 0, "end": 4},

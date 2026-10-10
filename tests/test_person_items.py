@@ -338,3 +338,100 @@ class SharedItemTest(unittest.TestCase):
                  "mr:0926-eusebius|Eusebius": self._index()["mr:0926-eusebius|Eusebius"]}
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
         self.assertEqual(items["mr:0802-eusebius"]["Eusebius"]["status"], "reviewed")
+
+
+class RepeatedNamesTest(unittest.TestCase):
+    """Two persons of one name in one eulogy (2026-10-10 spec)."""
+
+    DOC = {"editions": {"martyrologium_romanum_2004": {"mr:0212-x": [
+        {"name": "Felix", "where": {"footnote": 1}}, {"name": "Felix", "n": 2, "where": {"footnote": 1}},
+        {"name": "Secunda", "where": {"footnote": 1}}, {"name": "Secunda", "n": 2, "where": {"footnote": 1}}]}}}
+    ENTRIES = [{"id": "mr:0212-x", "month": 2, "day": 12}]
+
+    def index(self):
+        return bp.person_index(self.DOC, self.ENTRIES, {"mr:0212-x": "dies_natalis"}, {"mr:0212-x": "Sancti X"})
+
+    def test_the_index_keys_a_second_person_by_name_and_n(self):
+        index = self.index()
+        self.assertEqual(sorted(index), ["mr:0212-x|Felix", "mr:0212-x|Felix#2", "mr:0212-x|Secunda",
+                                         "mr:0212-x|Secunda#2"])
+        self.assertEqual(index["mr:0212-x|Felix#2"]["n"], 2)
+        self.assertNotIn("n", index["mr:0212-x|Felix"])
+        self.assertEqual(index["mr:0212-x|Felix#2"]["companions"], ["Secunda"])
+
+    def test_propose_decides_and_queues_each_person_under_its_key(self):
+        items, review = {}, bp.new_changeset([])
+        client = FakeClient({"Felix": [cand("Q1", ["Felix"], died="0304-02-12")], "Secunda": []})
+        bp.propose(items, review, self.index(), client)
+        # Both Felixes matched the same item: neither is automatic.
+        queued = {op["id"]: op for op in review["operations"]}
+        self.assertIn("mr:0212-x|Felix#2", queued)
+        self.assertIn("mr:0212-x|Felix", queued)
+        self.assertEqual(queued["mr:0212-x|Felix#2"]["n"], 2)
+        self.assertEqual(list(queued["mr:0212-x|Felix#2"])[5:8], ["subject", "name", "n"])
+        self.assertIn("another person of this eulogy", queued["mr:0212-x|Felix#2"]["failed"][-1])
+        self.assertNotIn("mr:0212-x", items)
+
+    def test_an_item_already_decided_for_another_person_of_the_eulogy_is_not_automatic(self):
+        items = {"mr:0212-x": {"Felix": {"wikidata": "Q1", "status": "reviewed"}}}
+        review = bp.new_changeset([])
+        bp.propose(items, review, self.index(), FakeClient({"Felix": [cand("Q1", ["Felix"], died="0304-02-12")],
+                                                            "Secunda": []}))
+        self.assertIn("mr:0212-x|Felix#2", {op["id"] for op in review["operations"]})
+        self.assertEqual(items["mr:0212-x"], {"Felix": {"wikidata": "Q1", "status": "reviewed"}})
+
+    def test_apply_writes_a_second_person_under_its_key(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, self.index(), FakeClient({"Felix": [], "Secunda": []}))
+        exported = json.loads(json.dumps(review))
+        for op in exported["operations"]:
+            if op["id"] == "mr:0212-x|Felix#2":
+                op["decision"], op["edited"] = "edit", {"wikidata": "Q2"}
+        bp.apply_decisions(items, review, exported, self.index(), FakeClient(by_qid={"Q2": cand("Q2", ["Felix"])}))
+        self.assertEqual(items, {"mr:0212-x": {"Felix#2": {"wikidata": "Q2", "status": "reviewed"}}})
+
+    def test_apply_refuses_one_item_for_two_persons_of_a_eulogy(self):
+        client = FakeClient(by_qid={"Q2": cand("Q2", ["Felix"])})
+        # Within one change-set:
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, self.index(), FakeClient({"Felix": [], "Secunda": []}))
+        exported = json.loads(json.dumps(review))
+        for op in exported["operations"]:
+            if op["name"] == "Felix":
+                op["decision"], op["edited"] = "edit", {"wikidata": "Q2"}
+        with self.assertRaises(ValueError) as e:
+            bp.apply_decisions(items, review, exported, self.index(), client)
+        self.assertIn("Q2", str(e.exception))
+        self.assertEqual(items, {})
+        # Against a decision already in the file:
+        items = {"mr:0212-x": {"Felix": {"wikidata": "Q2", "status": "reviewed"}}}
+        exported["operations"] = [op for op in exported["operations"] if op["id"] == "mr:0212-x|Felix#2"]
+        with self.assertRaises(ValueError):
+            bp.apply_decisions(items, review, exported, self.index(), client)
+        self.assertEqual(items, {"mr:0212-x": {"Felix": {"wikidata": "Q2", "status": "reviewed"}}})
+
+    def test_check_accepts_a_second_person_and_reports_a_shared_item(self):
+        index = self.index()
+        self.assertEqual(bp.validate({"mr:0212-x": {"Felix#2": {"wikidata": "Q2", "status": "auto"}}}, index), [])
+        self.assertTrue(bp.validate({"mr:0212-x": {"Felix#3": {"wikidata": "Q3", "status": "auto"}}}, index))
+        errors = bp.validate({"mr:0212-x": {"Felix": {"wikidata": "Q2", "status": "auto"},
+                                            "Felix#2": {"wikidata": "Q2", "status": "reviewed"}}}, index)
+        self.assertTrue(any("Q2" in e for e in errors))
+
+    def test_the_report_reads_a_second_persons_own_decision(self):
+        index = bp.person_index(self.DOC, self.ENTRIES, {"mr:0212-x": "commemoratio"}, {"mr:0212-x": "Sancti X"})
+        items = {"mr:0212-x": {"Felix": {"wikidata": "Q1", "status": "reviewed"},
+                               "Felix#2": {"wikidata": "Q2", "status": "auto"}}}
+        report = bp.render_report(items, index, [])
+        self.assertIn("mr:0212-x|Felix#2: Q2", report)
+        self.assertNotIn("mr:0212-x|Felix: Q1", report)  # reviewed: not an automatic match
+
+    def test_propose_drops_a_queued_op_whose_person_is_gone(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, self.index(), FakeClient({"Felix": [], "Secunda": []}))
+        self.assertIn("mr:0212-x|Secunda#2", {op["id"] for op in review["operations"]})
+        # The list is corrected: there is one Secunda after all.
+        index = {k: v for k, v in self.index().items() if k != "mr:0212-x|Secunda#2"}
+        bp.propose(items, review, index, FakeClient({"Felix": [], "Secunda": []}))
+        self.assertNotIn("mr:0212-x|Secunda#2", {op["id"] for op in review["operations"]})
+        self.assertEqual(bp.validate(items, index, review["operations"]), [])
