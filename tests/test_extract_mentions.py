@@ -161,6 +161,23 @@ class RepeatedNamesTest(unittest.TestCase):
                          [("add_mention", third, "Felix", 2)])
         self.assertIn("matched again", review[0]["reasoning"])
 
+    def test_a_footnote_person_of_the_name_does_not_hide_a_further_match_in_the_text(self):
+        # Felix (the subject, in the text) and another Felix in a footnote: the text's last person of the
+        # name is Felix 1, so the text's second "Felícis" is proposed as him.
+        text = "Romæ, sanctórum Felícis et Felícis."
+        persons = [{"name": "Felix", "where": "text"}, {"name": "Felix", "n": 2, "where": {"footnote": 1}}]
+        ms, review, _ = mentions_of(text, persons=persons, notes=["Quorum nómina: álius Felix, Victor."])
+        self.assertEqual([(m["where"], m.get("n")) for m in ms], [("text", None), ({"footnote": 1}, 2)])
+        self.assertEqual([(r["op"], r["where"], r["start"], r["name"], r.get("n")) for r in review],
+                         [("add_mention", "text", text.rindex("Felícis"), "Felix", None)])
+
+    def test_a_further_match_found_at_another_step_is_proposed_too(self):
+        # The first match is verbatim, the second only by stem: still a further match of the name.
+        text = "Romæ, sanctus Felix, mártyr; ídem Felícis memória."
+        ms, review, _ = mentions_of(text, persons=[{"name": "Felix", "where": "text"}])
+        self.assertEqual([m["form"] for m in ms], ["Felix"])
+        self.assertEqual([(r["op"], r["form"]) for r in review], [("add_mention", "Felícis")])
+
     def test_spellings_of_one_name_are_one_name(self):
         # Two martyrs whose names differ only in their accents: name_key folds them together, so
         # extract_persons numbers the second, and each keeps its own words.

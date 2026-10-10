@@ -169,10 +169,11 @@ def _split_et(segment):
     return parts
 
 
-def footnote_names(text, printed_twice=None):
+def footnote_names(text, printed_twice=None, marked=None):
     """The names a footnote list gives, in order, and the segments not read. A name printed twice
     in a row with no word marking another person ("alius") is read once, and appended to
-    `printed_twice` when given: probably a misprint, for a curator's note."""
+    `printed_twice` when given: probably a misprint, for a curator's note. The positions (in the
+    names) of those marked as another person of a name are appended to `marked` when given."""
     m = FOOTNOTE_OPENING.match(text)
     if not m:
         return [], [text]
@@ -197,12 +198,14 @@ def footnote_names(text, printed_twice=None):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
                     last = None
                 elif name:
-                    marked = any(fold(w.strip(".,;:")) in REPEAT_WORDS for w in part.split())
-                    if not marked and last is not None and name_key(name) == name_key(last):
+                    is_marked = any(fold(w.strip(".,;:")) in REPEAT_WORDS for w in part.split())
+                    if not is_marked and last is not None and name_key(name) == name_key(last):
                         if printed_twice is not None:
                             printed_twice.append(name)
                         continue  # printed twice in a row, no "alius": one person
                     singles = singles + [len(names)] if len(name.split()) == 1 else []
+                    if is_marked and marked is not None:
+                        marked.append(len(names))
                     names.append(name)
                     last = name
                 elif part[:1].isupper() or part[:1].isdigit():

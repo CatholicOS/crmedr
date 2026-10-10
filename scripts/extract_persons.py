@@ -72,8 +72,9 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
             here = (key, where["footnote"])
             listed[here] = listed.get(here, 0) + 1
             # A name listed before (the text, an earlier footnote) is that person again the first time
-            # this list names it; any other occurrence in one list is another person of that name.
-            if key in first and first[key] != where and listed[here] == 1:
+            # this list names it, unless marked ("alius Felix"); any other occurrence in one list is
+            # another person of that name.
+            if key in first and first[key] != where and listed[here] == 1 and not marked:
                 return
         first.setdefault(key, where)
         count[key] = count.get(key, 0) + 1
@@ -93,10 +94,11 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
         for i, n in enumerate(names):
             add(n, "text", marked=i in marks)
     for i, f in enumerate(footnotes, start=1):
-        names, bad = footnote_names(f["text"], printed_twice=printed_twice)
+        marks = []
+        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks)
         skipped += bad
-        for n in names:
-            add(n, {"footnote": i})
+        for j, n in enumerate(names):
+            add(n, {"footnote": i}, marked=j in marks)
     return persons, {"uncertain": uncertain, "skipped": skipped, "printed_twice": printed_twice,
                      "socii_without_names": socii and len(persons) <= len(subjects)}
 

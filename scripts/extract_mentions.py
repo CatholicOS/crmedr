@@ -102,9 +102,12 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         add("place", "text", span, how, qid=place_qid(item["la"]))
 
     # Persons share a name by name_key, as extract_persons.py numbers them ("Tuấn", "Tuân").
-    last = {}  # name_key -> the highest n among the persons of that name
+    def group(p):
+        return name_key(p["name"]), where_key(p["where"])
+
+    last = {}  # (name_key, where) -> the highest n among the persons of that name printed there
     for p in persons:
-        last[name_key(p["name"])] = max(last.get(name_key(p["name"]), 1), p.get("n", 1))
+        last[group(p)] = max(last.get(group(p), 1), p.get("n", 1))
     # A name is decided when any of its persons is: its persons keep their n order among themselves.
     decided = {name_key(p["name"]) for p in persons if person_qid(person_key(p))}
     # Longer first by the folded name, so spellings of one name ("Æmilia", "Aemilia") sort together.
@@ -118,9 +121,9 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         both = spans("place", where) + spans("person", where)
         found = find_person(src, name, both)
         if found:
-            span, how, more = found
+            span, how, _ = found
             add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
-            if more and p.get("n", 1) == last[name_key(name)]:
+            if p.get("n", 1) == last[group(p)]:
                 # Matched again after the last person of the name: the same person named twice,
                 # or a stem match on another word. The curator decides.
                 while again := find_person(src, name, spans("place", where) + spans("person", where)):
