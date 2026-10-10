@@ -11736,6 +11736,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 181,
+          "end": 186,
+          "check": "f6b6aad7",
+          "name": "Felix",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 188,
           "end": 196,
           "check": "8a5d9712",
@@ -11795,6 +11807,18 @@
           "end": 271,
           "check": "3146fbef",
           "name": "Telica",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 292,
+          "end": 302,
+          "check": "fb035b69",
+          "name": "Rogatianus",
+          "n": 2,
           "qid": null
         },
         {
@@ -11901,10 +11925,34 @@
           "where": {
             "footnote": 1
           },
+          "start": 401,
+          "end": 411,
+          "check": "fb035b69",
+          "name": "Rogatianus",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 419,
           "end": 427,
           "check": "a8a2fcd3",
           "name": "Givalius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 429,
+          "end": 436,
+          "check": "258971cc",
+          "name": "Rogatus",
+          "n": 2,
           "qid": null
         },
         {
@@ -11971,6 +12019,18 @@
           "end": 495,
           "check": "6e43a498",
           "name": "Clautus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 497,
+          "end": 502,
+          "check": "f6b6aad7",
+          "name": "Felix",
+          "n": 3,
           "qid": null
         },
         {
@@ -12103,6 +12163,42 @@
           "end": 648,
           "check": "d8adb700",
           "name": "Berectina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 650,
+          "end": 657,
+          "check": "1d31437c",
+          "name": "Secunda",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 659,
+          "end": 666,
+          "check": "eaffaaa4",
+          "name": "Matrona",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 668,
+          "end": 676,
+          "check": "2500f19d",
+          "name": "Ianuaria",
+          "n": 2,
           "qid": null
         }
       ],
@@ -38514,6 +38610,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 419,
+          "end": 424,
+          "check": "c1d10bba",
+          "name": "Iulia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 433,
           "end": 439,
           "check": "9d910fdb",
@@ -38525,10 +38633,34 @@
           "where": {
             "footnote": 1
           },
+          "start": 441,
+          "end": 447,
+          "check": "320b27f3",
+          "name": "Æmilia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 456,
           "end": 463,
           "check": "607707ca",
           "name": "Iamnica",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 465,
+          "end": 472,
+          "check": "51e9078e",
+          "name": "Pompeia",
+          "n": 2,
           "qid": null
         },
         {
@@ -48720,6 +48852,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 464,
+          "end": 482,
+          "check": "4dedb2c2",
+          "name": "Ioannes Zhang Huan",
+          "qid": "Q4515453"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 484,
           "end": 503,
           "check": "43c73255",
@@ -51290,9 +51433,10 @@
             "footnote": 1
           },
           "start": 267,
-          "end": 274,
-          "check": "e4c19351",
-          "name": "Ioannes",
+          "end": 284,
+          "check": "640d26ad",
+          "name": "Ioannes Fernandes",
+          "n": 2,
           "qid": null
         },
         {
@@ -51568,6 +51712,17 @@
           "end": 742,
           "check": "a914da9b",
           "name": "Ioannes de San Martín",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 758,
+          "end": 765,
+          "check": "e4c19351",
+          "name": "Ioannes",
           "qid": null
         }
       ],
@@ -71650,6 +71805,18 @@
           "check": "d722f8ba",
           "name": "Franciscus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 464,
+          "end": 473,
+          "check": "6454ad4d",
+          "name": "Dominicus",
+          "n": 2,
+          "qid": null
         }
       ],
       "mr:0908-corbinianus": [
@@ -72708,6 +72875,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 827,
+          "end": 832,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 844,
           "end": 860,
           "check": "d589e9e2",
@@ -72741,10 +72920,34 @@
           "where": {
             "footnote": 1
           },
+          "start": 953,
+          "end": 958,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 987,
           "end": 992,
           "check": "ad7d81ea",
           "name": "Agnes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1020,
+          "end": 1025,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 4,
           "qid": null
         },
         {
@@ -76448,6 +76651,18 @@
           "check": "2e4d2ecb",
           "name": "Magdalena Hŏ Kye-im",
           "qid": "Q11766038"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1949,
+          "end": 1958,
+          "check": "28e3690c",
+          "name": "Lucia Kim",
+          "n": 2,
+          "qid": null
         },
         {
           "kind": "person",
@@ -95103,6 +95318,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 2090,
+          "end": 2111,
+          "check": "4af1710b",
+          "name": "Emmanuel Lê Văn Phụng",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 2113,
           "end": 2137,
           "check": "f43192df",
@@ -95163,6 +95390,18 @@
           "check": "9d8fdd6a",
           "name": "Iosephus Phạm Trọng Tả",
           "qid": "Q11731134"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2267,
+          "end": 2280,
+          "check": "40e7def2",
+          "name": "Iosephus Tuân",
+          "n": 2,
+          "qid": null
         },
         {
           "kind": "person",
@@ -100879,6 +101118,30 @@
           "where": {
             "footnote": 1
           },
+          "start": 42,
+          "end": 49,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 57,
+          "end": 63,
+          "check": "0a94e7ea",
+          "name": "Paulus",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 65,
           "end": 73,
           "check": "41398f0a",
@@ -100923,6 +101186,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 102,
+          "end": 109,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 111,
           "end": 120,
           "check": "b2062605",
@@ -100938,6 +101213,30 @@
           "end": 131,
           "check": "32d8522d",
           "name": "Theodorus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 133,
+          "end": 140,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 4,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 148,
+          "end": 157,
+          "check": "32d8522d",
+          "name": "Theodorus",
+          "n": 2,
           "qid": null
         },
         {
@@ -100967,10 +101266,46 @@
           "where": {
             "footnote": 1
           },
+          "start": 208,
+          "end": 216,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 218,
           "end": 225,
           "check": "8c8be18f",
           "name": "Sergius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 233,
+          "end": 241,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 249,
+          "end": 258,
+          "check": "32d8522d",
+          "name": "Theodorus",
+          "n": 3,
           "qid": null
         },
         {
@@ -100989,10 +101324,70 @@
           "where": {
             "footnote": 1
           },
+          "start": 276,
+          "end": 283,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 5,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 285,
+          "end": 290,
+          "check": "3bb8f11b",
+          "name": "Zitas",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 292,
           "end": 302,
           "check": "f1de21f8",
           "name": "Philoxenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 310,
+          "end": 318,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 4,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 326,
+          "end": 333,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 6,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 341,
+          "end": 349,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 5,
           "qid": null
         },
         {
@@ -101022,6 +101417,54 @@
           "where": {
             "footnote": 1
           },
+          "start": 403,
+          "end": 410,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 7,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 412,
+          "end": 421,
+          "check": "32d8522d",
+          "name": "Theodorus",
+          "n": 4,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 423,
+          "end": 430,
+          "check": "8c8be18f",
+          "name": "Sergius",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 432,
+          "end": 440,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 6,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 442,
           "end": 448,
           "check": "5dfcf9ef",
@@ -101033,10 +101476,94 @@
           "where": {
             "footnote": 1
           },
+          "start": 450,
+          "end": 459,
+          "check": "b2062605",
+          "name": "Stephanus",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 461,
           "end": 466,
           "check": "9a26a1f9",
           "name": "Conon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 474,
+          "end": 483,
+          "check": "32d8522d",
+          "name": "Theodorus",
+          "n": 5,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 485,
+          "end": 491,
+          "check": "0a94e7ea",
+          "name": "Paulus",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 499,
+          "end": 506,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 8,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 514,
+          "end": 522,
+          "check": "1f003cb5",
+          "name": "Georgius",
+          "n": 7,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 530,
+          "end": 537,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 9,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 545,
+          "end": 552,
+          "check": "e4c19351",
+          "name": "Ioannes",
+          "n": 10,
           "qid": null
         },
         {
