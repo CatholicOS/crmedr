@@ -161,6 +161,21 @@ class RepeatedNamesTest(unittest.TestCase):
                          [("add_mention", third, "Felix", 2)])
         self.assertIn("matched again", review[0]["reasoning"])
 
+    def test_spellings_of_one_name_are_one_name(self):
+        # Two martyrs whose names differ only in their accents: name_key folds them together, so
+        # extract_persons numbers the second, and each keeps its own words.
+        note = "Quorum nómina: Iosephus Tuấn, Petrus, Iosephus Tuân."
+        persons = [{"name": "Iosephus Tuấn", "where": {"footnote": 1}},
+                   {"name": "Iosephus Tuân", "n": 2, "where": {"footnote": 1}}]
+        # Spellings of one name may differ in length ("Æmilia", "Aemilia"): still placed in n order.
+        aemiliae = [{"name": "Æmilia", "where": {"footnote": 1}}, {"name": "Aemilia", "n": 2, "where": {"footnote": 1}}]
+        ms = mentions_of("Romæ.", persons=aemiliae, notes=["Quorum nómina: Æmilia, Petrus, Æmilia."])[0]
+        self.assertEqual([m.get("n") for m in ms], [None, 2])
+        for qids in ({}, {"Iosephus Tuân#2": "Q2"}):
+            ms, review, _ = mentions_of("Romæ.", persons=persons, notes=[note], qids=qids)
+            self.assertEqual([(m["form"], m.get("n")) for m in ms], [("Iosephus Tuấn", None), ("Iosephus Tuân", 2)])
+            self.assertEqual(review, [])
+
 
 ED = "martyrologium_romanum_2004"
 PLACES = {"mr:0101-basilius": [BASIL_PLACE], "mr:0102-nemo": [{"role": "death", "la": "Romæ", "source": "lead"}]}

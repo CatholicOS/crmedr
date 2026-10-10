@@ -33,7 +33,7 @@ from pathlib import Path
 
 from extract_typology import load_texts
 from mentions_text import back_ref_span, find_person, find_place, free, from_utf16, partial_span, utf16
-from persons_text import person_key
+from persons_text import name_key, person_key
 
 
 def where_key(where):
@@ -101,12 +101,15 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             continue
         add("place", "text", span, how, qid=place_qid(item["la"]))
 
-    last = {}  # name -> the highest n among the persons of that name
+    # Persons share a name by name_key, as extract_persons.py numbers them ("Tuấn", "Tuân").
+    last = {}  # name_key -> the highest n among the persons of that name
     for p in persons:
-        last[p["name"]] = max(last.get(p["name"], 1), p.get("n", 1))
+        last[name_key(p["name"])] = max(last.get(name_key(p["name"]), 1), p.get("n", 1))
     # A name is decided when any of its persons is: its persons keep their n order among themselves.
-    decided = {p["name"] for p in persons if person_qid(person_key(p))}
-    for p in sorted(persons, key=lambda p: (-len(p["name"]), p["name"] not in decided, p.get("n", 1))):
+    decided = {name_key(p["name"]) for p in persons if person_qid(person_key(p))}
+    # Longer first by the folded name, so spellings of one name ("Æmilia", "Aemilia") sort together.
+    for p in sorted(persons, key=lambda p: (-len(name_key(p["name"])), name_key(p["name"]) not in decided,
+                                            p.get("n", 1))):
         name, where = p["name"], p["where"]
         nth = {"n": p["n"]} if "n" in p else {}
         src = source(where)
@@ -117,7 +120,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         if found:
             span, how, more = found
             add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
-            if more and p.get("n", 1) == last[name]:
+            if more and p.get("n", 1) == last[name_key(name)]:
                 # Matched again after the last person of the name: the same person named twice,
                 # or a stem match on another word. The curator decides.
                 while again := find_person(src, name, spans("place", where) + spans("person", where)):
