@@ -121,6 +121,13 @@ class FindPersonTest(unittest.TestCase):
         found = mt.find_person(text, "Nema Fictina d'Nemo")
         self.assertEqual(span_text(text, found), "Nemæ Fictínæ d’Nemo")
 
+    def test_in_order_takes_the_first_printed_match_at_either_step(self):
+        text = "Romæ, sanctórum Felícis et Felix."
+        found = mt.find_person(text, "Felix", in_order=True)
+        self.assertEqual((span_text(text, found), found[1], found[2]), ("Felícis", "stem", True))
+        found = mt.find_person(text, "Felix", [found[0]], in_order=True)
+        self.assertEqual((span_text(text, found), found[1], found[2]), ("Felix", "verbatim", False))
+
     def test_not_found(self):
         self.assertIsNone(mt.find_person("Romæ, sancti Nemo.", "Felix"))
 

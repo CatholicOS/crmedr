@@ -198,7 +198,9 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
              if source(p["where"]) is not None]  # extract_persons.py validates footnote numbers
     placed, later = [], []
     for p in order:
-        found = find_person(source(p["where"]), p["name"], spans("place", p["where"]) + spans("person", p["where"]))
+        # Persons of one name take its matches in print order, whatever their case ("Felíce", then "Felix").
+        found = find_person(source(p["where"]), p["name"], spans("place", p["where"]) + spans("person", p["where"]),
+                            in_order=last[group(p)] > 1)
         if not found:
             if p.get("also"):
                 later.append(p)  # tried under their other names once every main name is placed

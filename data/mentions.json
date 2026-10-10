@@ -11670,11 +11670,22 @@
           "where": {
             "footnote": 1
           },
+          "start": 73,
+          "end": 90,
+          "check": "d1a78acf",
+          "name": "Saturninus iunior",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 94,
           "end": 100,
           "check": "2e279f06",
-          "name": "Felice",
-          "qid": "Q2182480"
+          "name": "Felix",
+          "qid": null
         },
         {
           "kind": "person",
@@ -11695,7 +11706,7 @@
           "start": 123,
           "end": 132,
           "check": "8bc83c86",
-          "name": "Hilarione",
+          "name": "Hilarion",
           "qid": null
         },
         {
@@ -11718,6 +11729,7 @@
           "end": 173,
           "check": "f6b6aad7",
           "name": "Felix",
+          "n": 2,
           "qid": null
         },
         {
@@ -11729,7 +11741,7 @@
           "end": 186,
           "check": "f6b6aad7",
           "name": "Felix",
-          "n": 2,
+          "n": 3,
           "qid": null
         },
         {
@@ -12016,10 +12028,9 @@
             "footnote": 1
           },
           "start": 497,
-          "end": 502,
-          "check": "f6b6aad7",
-          "name": "Felix",
-          "n": 3,
+          "end": 509,
+          "check": "9470a119",
+          "name": "Felix iunior",
           "qid": null
         },
         {
@@ -80992,9 +81003,9 @@
             "footnote": 1
           },
           "start": 60,
-          "end": 75,
-          "check": "ccb10b16",
-          "name": "Antonius Vilela",
+          "end": 82,
+          "check": "772b4315",
+          "name": "Antonius Vilela iunior",
           "qid": null
         },
         {

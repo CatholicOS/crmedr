@@ -238,13 +238,17 @@ def _gaps(matched):
     return matched.count("(") + matched.count("cognomento")
 
 
-def find_person(text, name, taken=()):
+def find_person(text, name, taken=(), in_order=False):
     """The first free span of a person's name in `text`, how it was found
     ("verbatim", "stem", "gap"), and whether another free span matched at the
     same step; None when the name is not found. A match must open with a capital
-    letter, so a common word is never marked ("pius" before "Pius")."""
+    letter, so a common word is never marked ("pius" before "Pius"). With
+    `in_order`, the first match in print whether verbatim or by stem, for persons
+    of one name printed in different cases ("cum ... Felíce", then "Felix")."""
     folded, index = fold_map(text)
-    for how, pattern in name_patterns(name):
+    patterns = name_patterns(name)
+    verbatim = patterns[0][1]
+    for how, pattern in patterns[1:] if in_order else patterns:
         spans = []
         for m in re.finditer(pattern, folded):
             if how == "gap" and _gaps(m.group(0)) > 1:
@@ -255,6 +259,10 @@ def find_person(text, name, taken=()):
             if text[span[0]].isupper() and free(span, taken):
                 spans.append(span)
         if spans:
+            if in_order and how == "stem":
+                start, end = spans[0]
+                if re.fullmatch(verbatim, fold_map(text[start:end])[0]):
+                    how = "verbatim"
             return spans[0], how, len(spans) > 1
     return None
 

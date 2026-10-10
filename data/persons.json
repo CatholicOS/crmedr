@@ -4069,7 +4069,13 @@
           }
         },
         {
-          "name": "Felice",
+          "name": "Saturninus iunior",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Felix",
           "where": {
             "footnote": 1
           }
@@ -4081,7 +4087,7 @@
           }
         },
         {
-          "name": "Hilarione",
+          "name": "Hilarion",
           "where": {
             "footnote": 1
           }
@@ -4097,13 +4103,14 @@
         },
         {
           "name": "Felix",
+          "n": 2,
           "where": {
             "footnote": 1
           }
         },
         {
           "name": "Felix",
-          "n": 2,
+          "n": 3,
           "where": {
             "footnote": 1
           }
@@ -4268,8 +4275,7 @@
           }
         },
         {
-          "name": "Felix",
-          "n": 3,
+          "name": "Felix iunior",
           "where": {
             "footnote": 1
           }
@@ -29735,7 +29741,7 @@
           }
         },
         {
-          "name": "Antonius Vilela",
+          "name": "Antonius Vilela iunior",
           "where": {
             "footnote": 1
           }
