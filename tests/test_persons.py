@@ -400,6 +400,28 @@ class VariantsTest(unittest.TestCase):
         self.assertIn("- mr:0817-mamas: Mamas", report)
         self.assertNotIn("Mamétis", report)
 
+    def test_a_curated_variant_corrects_an_extracted_spelling(self):
+        import extract_persons as ep
+        by_id = {"mr:0515-caleb": [{"name": "Caleb", "also": ["Elésbaan"], "where": "text"}]}
+        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0515-caleb": {"Caleb": ["Elesbaan"]}}), [])
+        self.assertEqual(by_id["mr:0515-caleb"][0]["also"], ["Elesbaan"])
+        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb": {"Caleb": ["Abba", "Abba"]}}))
+        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb": ["Abba"]}))
+
+    def test_an_unread_footnote_variant_is_reported(self):
+        import extract_persons as ep
+        foot = [{"mark": "1", "after": "x", "text": "Quorum nomina: Eligius Herque seu du Roule, Felix."}]
+        persons, issues = ep.eulogy_persons("mr:0903-x-et-socii", "", "…", foot, {}, {})
+        self.assertEqual([p["name"] for p in persons], ["Eligius Herque", "Felix"])
+        self.assertEqual(issues["variants_unread"], ["Eligius Herque"])
+
+    def test_a_name_after_the_variant_in_one_segment_is_kept(self):
+        variants = {}
+        names, skipped = pt.footnote_names(
+            "Quorum nomina: Maximianus seu Maximus et Felix, Dativus, qui et Sanator et Victor.", variants=variants)
+        self.assertEqual((names, skipped), (["Maximianus", "Felix", "Dativus", "Victor"], []))
+        self.assertEqual(variants, {0: ["Maximus"], 2: ["Sanator"]})
+
 
 class SamePersonTest(unittest.TestCase):
     # 4: a fuller or shorter form of a subject is the same person, in the subject's form

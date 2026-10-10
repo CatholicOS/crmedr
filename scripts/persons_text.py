@@ -181,13 +181,22 @@ def _split_et(segment):
     return parts
 
 
-def footnote_names(text, printed_twice=None, marked=None, variants=None):
+def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=None):
     """The names a footnote list gives, in order, and the segments not read. A name printed twice
     in a row with no word marking another person ("alius") is read once, and appended to
     `printed_twice` when given: probably a misprint, for a curator's note. The positions (in the
     names) of those marked as another person of a name are appended to `marked` when given; a
     name's other names (after seu, vel, sive, or a segment "qui et X") go in `variants`,
-    {position in names: [names]}, when given."""
+    {position in names: [names]}, and the names whose other name could not be read in `unread`,
+    when given."""
+
+    def other_name(alt):
+        """Record `alt`, another name of the name read last, or report it unread."""
+        name = _name_at_start(alt)
+        if name and variants is not None:
+            variants.setdefault(len(names) - 1, []).append(name)
+        elif not name and unread is not None:
+            unread.append(names[-1])
     m = FOOTNOTE_OPENING.match(text)
     if not m:
         return [], [text]
@@ -199,14 +208,20 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None):
         for seg in (s.strip() for s in group.split(",")):
             opening = VARIANT_OPENING.match(seg)
             if opening:
-                # "Dativus, qui et Sanator": another name of the person just read.
-                alt = _name_at_start(seg[opening.end():])
-                if alt and last is not None and variants is not None:
-                    variants.setdefault(len(names) - 1, []).append(alt)
-                continue
-            seg, *alts = VARIANT_INSIDE.split(seg, maxsplit=1)
-            before = len(names)
-            parts = [p.strip() for p in _split_et(seg) if p.strip()]
+                # "Dativus, qui et Sanator [et Victor]": another name of the person just read, then
+                # any names after it.
+                rest = [p.strip() for p in _split_et(seg[opening.end():]) if p.strip()]
+                if rest and last is not None:
+                    other_name(rest[0])
+                seg = " et ".join(rest[1:])
+                if not seg:
+                    continue
+            # "Maximianus seu Maximus [et Felix]": each part's other name, apart from its name.
+            parts, alts = [], []
+            for p in (p.strip() for p in _split_et(seg) if p.strip()):
+                own, *alt = VARIANT_INSIDE.split(p, maxsplit=1)
+                parts.append(own)
+                alts.append(alt[0] if alt else None)
             read = [(_name_at_start(p), p) for p in parts]
             # "Ioanna, Magdalena et Petrina Sailland": first names sharing the last one's surname.
             if len(read) > 1 and read[0][0] and len(read[0][0].split()) == 1 and \
@@ -216,7 +231,7 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None):
                     del names[i]
                 singles = []
                 continue
-            for name, part in read:
+            for k, (name, part) in enumerate(read):
                 if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
                     last = None
@@ -231,6 +246,8 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None):
                         marked.append(len(names))
                     names.append(name)
                     last = name
+                    if alts[k] is not None:
+                        other_name(alts[k])
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
                     last = None
@@ -238,9 +255,6 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None):
                     last = None
                 # A lowercase segment ("presbyteri ex Ordine...", "eius filius") describes the
                 # names before it: dropped.
-            alt = _name_at_start(alts[0]) if alts else None
-            if alt and len(names) > before and variants is not None:
-                variants.setdefault(len(names) - 1, []).append(alt)  # "Maximianus seu Maximus"
     return names, skipped
 
 

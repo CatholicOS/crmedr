@@ -79,9 +79,13 @@ def text_variants(text, name, lexicon):
 
 
 def _with_also(p, variants):
-    """The person with `variants` added to `also`, in order, without repeats or their own name;
-    keys in the order name, n, also, where."""
-    also = list(dict.fromkeys(v for v in [*p.get("also", []), *variants] if name_key(v) != name_key(p["name"])))
+    """The person with `variants` added to `also`, in order, without repeats (by name_key, the
+    first spelling kept) or their own name; keys in the order name, n, also, where."""
+    seen, also = {name_key(p["name"])}, []
+    for v in [*p.get("also", []), *variants]:
+        if name_key(v) not in seen:
+            seen.add(name_key(v))
+            also.append(v)
     out = {k: v for k, v in p.items() if k not in ("also", "where")}
     if also:
         out["also"] = also
@@ -129,7 +133,7 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
 
     for n in subjects:
         add(n, "text")
-    uncertain, skipped, printed_twice, unread_text = [], [], [], []
+    uncertain, skipped, printed_twice, unread_text = [], [], [], []  # unread_text: text and footnotes
     socii = mrid.endswith("-et-socii")
     if socii:
         marks, tvars = [], {}
@@ -138,7 +142,8 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
             add(n, "text", marked=i in marks, also=[full_variant(n, v) for v in tvars.get(i, [])])
     for i, f in enumerate(footnotes, start=1):
         marks, fvars = [], {}
-        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks, variants=fvars)
+        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks, variants=fvars,
+                                    unread=unread_text)
         skipped += bad
         for j, n in enumerate(names):
             add(n, {"footnote": i}, marked=j in marks, also=[full_variant(n, v) for v in fvars.get(j, [])])
@@ -209,6 +214,9 @@ def apply_curated_variants(persons_by_id, curated):
     for mrid, by_key in curated.items():
         if mrid.startswith("$"):
             continue
+        if not isinstance(by_key, dict):
+            errors.append(f"{mrid}: expected {{person key: [names]}}")
+            continue
         persons = persons_by_id.get(mrid, [])
         for key, names in by_key.items():
             i = next((i for i, p in enumerate(persons) if person_key(p) == key), None)
@@ -220,7 +228,13 @@ def apply_curated_variants(persons_by_id, curated):
                     and name_key(v) != name_key(persons[i]["name"]) for v in names):
                 errors.append(f"{mrid}: {key!r}: variants must be a list of other names, without '#'")
                 continue
-            persons[i] = _with_also(persons[i], names)
+            if len({name_key(v) for v in names}) != len(names):
+                errors.append(f"{mrid}: {key!r}: a variant is listed twice")
+                continue
+            # A curated spelling replaces an extracted one of the same name ("Elesbaan" for "Elésbaan").
+            curated_keys = {name_key(v) for v in names}
+            kept = [v for v in persons[i].get("also", []) if name_key(v) not in curated_keys]
+            persons[i] = _with_also({**persons[i], "also": kept}, names)
     return errors
 
 

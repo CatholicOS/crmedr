@@ -225,6 +225,17 @@ class VariantsTest(unittest.TestCase):
         ms, _, _ = mentions_of(text, persons=[{"name": "Mamas", "also": ["Mames"], "where": "text"}])
         self.assertEqual([m["form"] for m in ms], ["Mamántis seu Mamétis"])
 
+    def test_a_variant_never_takes_the_words_of_a_person_of_that_name(self):
+        text = "Romæ, sanctórum Maximiáni et Maximi."
+        persons = [{"name": "Maximianus", "also": ["Maximus"], "where": "text"}, {"name": "Maximus", "where": "text"}]
+        ms, review, _ = mentions_of(text, persons=persons)
+        self.assertEqual([(m["form"], m["name"]) for m in ms], [("Maximiáni", "Maximianus"), ("Maximi", "Maximus")])
+        self.assertEqual(review, [])
+        text = "Cæsaréæ, sancti Mamántis et Mamétis."
+        persons = [{"name": "Mamas", "also": ["Mames"], "where": "text"}, {"name": "Mames", "where": "text"}]
+        ms, _, _ = mentions_of(text, persons=persons)
+        self.assertEqual([(m["form"], m["name"]) for m in ms], [("Mamétis", "Mames")])
+
     def test_a_footnote_mark_spans_qui_et(self):
         note = "Quorum nómina: Dativus, qui et Sanator, Felix."
         ms, _, _ = mentions_of("Romæ.", persons=[{"name": "Dativus", "also": ["Sanator"], "where": {"footnote": 1}}],
