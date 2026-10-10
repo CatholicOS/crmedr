@@ -26,6 +26,7 @@ Standard library only.
 import datetime
 import hashlib
 import json
+import re
 import subprocess
 import sys
 from collections import Counter
@@ -34,6 +35,29 @@ from pathlib import Path
 from extract_typology import load_texts
 from mentions_text import back_ref_span, find_person, find_place, free, from_utf16, partial_span, utf16
 from persons_text import name_key, person_key
+
+
+# The other name printed right after a person: "Kingae seu Cunegundis", "Dativus, qui et Sanator".
+CONNECTIVE = re.compile(r"\s*,?\s*(?:seu|vel|sive|qui\s+et|qu(?:ae|æ)\s+et)\s+", re.I)
+NAME_WORD = re.compile(r"[^\W\d_][\w'’\-]*")
+SPACES = re.compile(r"[ \t]+")
+
+
+def with_variant(src, span, taken):
+    """A person's span widened over the other name printed right after it (its capitalized words),
+    unless those words are taken by another mention."""
+    m = CONNECTIVE.match(src, span[1])
+    if not m:
+        return span
+    end, pos = None, m.end()
+    while (w := NAME_WORD.match(src, pos)) and w.group(0)[0].isupper():
+        end = w.end()
+        gap = SPACES.match(src, end)
+        if not gap:
+            break
+        pos = gap.end()
+    wide = (span[0], end) if end else span
+    return wide if wide == span or free((span[1], wide[1]), taken) else span
 
 
 def where_key(where):
@@ -119,14 +143,18 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         if src is None:
             continue  # extract_persons.py validates footnote numbers
         both = spans("place", where) + spans("person", where)
-        found = find_person(src, name, both)
+        names = [name, *p.get("also", [])]
+        found = next((f for f in (find_person(src, nm, both) for nm in names) if f), None)
         if found:
             span, how, _ = found
+            if p.get("also"):
+                span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
             add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
             if p.get("n", 1) == last[group(p)]:
                 # Matched again after the last person of the name: the same person named twice,
                 # or a stem match on another word. The curator decides.
-                while again := find_person(src, name, spans("place", where) + spans("person", where)):
+                while again := next((f for f in (find_person(src, nm, spans("place", where) + spans("person", where))
+                                                 for nm in names) if f), None):
                     spans("person", where).append(again[0])  # later names are not proposed over it
                     ask("add_mention", "person", where, again[0],
                         f"{name} matched again: mark it if it names this person once more", name=name, **nth)

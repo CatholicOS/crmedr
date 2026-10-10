@@ -194,6 +194,37 @@ class RepeatedNamesTest(unittest.TestCase):
             self.assertEqual(review, [])
 
 
+class VariantsTest(unittest.TestCase):
+    def test_a_mark_spans_the_name_and_its_variant(self):
+        text = "In Polónia, sanctæ Kingæ seu Cunegúndis, vírginis."
+        ms, review, _ = mentions_of(text, persons=[{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
+        self.assertEqual([m["form"] for m in ms], ["Kingæ seu Cunegúndis"])
+        self.assertEqual(review, [])
+
+    def test_a_person_printed_only_under_a_variant_is_marked(self):
+        text = "Romæ, sanctæ Cunegúndis, vírginis."
+        ms, _, _ = mentions_of(text, persons=[{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
+        self.assertEqual([(m["form"], m["name"]) for m in ms], [("Cunegúndis", "Kinga")])
+
+    def test_the_main_name_is_matched_before_a_variant(self):
+        text = "Romæ, sanctæ Margarítæ, et sanctæ Marínæ, vírginum."
+        ms, _, _ = mentions_of(text, persons=[{"name": "Marina", "also": ["Margarita"], "where": "text"}])
+        self.assertEqual([m["form"] for m in ms], ["Marínæ"])
+
+    def test_a_variant_already_marked_is_not_covered_twice(self):
+        text = "Romæ, sanctórum Dativi seu Sanatóris et Sanatóris."
+        persons = [{"name": "Sanator", "where": "text"}, {"name": "Dativus", "also": ["Sanator"], "where": "text"}]
+        ms, _, _ = mentions_of(text, persons=persons)
+        self.assertEqual(sorted(m["form"] for m in ms), ["Dativi", "Sanatóris"])
+        self.assertEqual(em.validate({"ed": {"mr:x": ms}}, lambda e, m, w: text), [])
+
+    def test_a_footnote_mark_spans_qui_et(self):
+        note = "Quorum nómina: Dativus, qui et Sanator, Felix."
+        ms, _, _ = mentions_of("Romæ.", persons=[{"name": "Dativus", "also": ["Sanator"], "where": {"footnote": 1}}],
+                               notes=[note])
+        self.assertEqual([m["form"] for m in ms], ["Dativus, qui et Sanator"])
+
+
 ED = "martyrologium_romanum_2004"
 PLACES = {"mr:0101-basilius": [BASIL_PLACE], "mr:0102-nemo": [{"role": "death", "la": "Romæ", "source": "lead"}]}
 PERSONS = {"mr:0101-basilius": [{"name": "Basilius", "where": "text"}]}
