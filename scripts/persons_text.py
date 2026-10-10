@@ -68,8 +68,9 @@ GROUP_HEADS = {
 
 
 def name_key(s):
-    """A name compared across spellings: accents, case, i/j and u/v folded."""
-    return " ".join(fold(s).replace("j", "i").replace("v", "u").replace("'", " ").split())
+    """A name compared across spellings: accents, case, i/j and u/v folded, an apostrophe or a hyphen
+    read as a space ("Hu-jae", "Hu Jae")."""
+    return " ".join(fold(s).replace("j", "i").replace("v", "u").replace("'", " ").replace("-", " ").split())
 
 
 def person_key(p):
