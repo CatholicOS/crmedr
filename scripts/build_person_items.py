@@ -256,7 +256,8 @@ def _holders(items, extra=()):
 
 
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
-    ops = {op["id"]: op for op in review["operations"]}
+    # A queued op whose person is no longer in persons.json (a corrected list) is dropped: it was undecided.
+    ops = {op["id"]: op for op in review["operations"] if op["id"] in index}
     not_processed = []
     failures = 0
     pending = {}  # automatic results, written once it is known which items are shared

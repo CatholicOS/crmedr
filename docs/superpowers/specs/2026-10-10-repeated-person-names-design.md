@@ -72,6 +72,17 @@ name, and `extract_persons.py` checks that it doesn't.
   found among the subjects, the companions in the text, or an earlier footnote is not listed
   again the first time a footnote list names it (the subject named once more in a footnote).
   A further occurrence in that same list (*Felix, Victor, alius Felix*) is another person.
+- **A name printed twice in a row in a footnote list, with no *alius*, counts once.** It is
+  probably a misprint ("Emmanuel Lê Văn Phụng, Emmanuel Lê Văn Phụng" in
+  `mr:1124-andreas-dung-lac-et-socii`, which the book's index lists once). `docs/persons-report.md`
+  lists each such name, "noted" when the eulogy has a 2004 Latin note in `EDITION_NOTES`
+  (`scripts/extract_registry.py`), else "needs a curator note".
+- **In the text, a repeat marked as another person is another person:** *alter, altera, alius* or
+  the genitive *alterius* after a name ("Theodóri, Theodóri alteríus" in
+  `mr:1106-callinicus-et-socii`) ends that name and numbers the next `n`. Unmarked, a repeat in the
+  text is still the same person.
+- When a corrected list drops a person, `build_person_items.py propose` drops that person's queued
+  (undecided) review op.
 - As now, names are compared by `name_key`, and `_same_person` folds a fuller or shorter form of
   a subject into the subject.
 - `persons_curated.json` entries may carry `n`, to merge two entries into one person or to split

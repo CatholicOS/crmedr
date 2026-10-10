@@ -137,7 +137,7 @@ class EulogyPersonsTest(unittest.TestCase):
             {"name": "Ioannes de Goto Soan", "where": {"footnote": 1}},
             {"name": "Thomas", "where": {"footnote": 1}},
         ])
-        self.assertEqual(issues, {"uncertain": [], "skipped": [], "socii_without_names": False})
+        self.assertEqual(issues, {"uncertain": [], "skipped": [], "printed_twice": [], "socii_without_names": False})
 
     def test_a_curated_entry_replaces_extraction(self):
         persons, _ = ep.eulogy_persons("mr:1003-duo-ewaldi", "Duo Ewaldi", "…", [], {},
@@ -372,6 +372,44 @@ class RepeatedNamesTest(unittest.TestCase):
         persons, _ = ep.eulogy_persons("mr:0101-x-et-socii", "", "…", foot, {}, {})
         self.assertEqual(persons, [{"name": "Felix", "where": {"footnote": 1}},
                                    {"name": "Felix", "n": 2, "where": {"footnote": 2}}])
+
+    def test_a_name_printed_twice_in_a_row_without_alius_counts_once_and_is_reported(self):
+        twice = []
+        names, skipped = pt.footnote_names("Quorum nomina: Dominicus Toai, Emmanuel Le Phung, Emmanuel Le Phung, "
+                                           "Felix; alius Felix, Rogatianus, Rogatianus alius.", printed_twice=twice)
+        self.assertEqual(names, ["Dominicus Toai", "Emmanuel Le Phung", "Felix", "Felix", "Rogatianus", "Rogatianus"])
+        self.assertEqual((skipped, twice), ([], ["Emmanuel Le Phung"]))
+
+    def test_a_marked_repeat_in_the_text_is_read_and_marked(self):
+        lex = {pt.name_key(w): w for w in ["Theodorus", "Ioannes", "Petrus"]}
+        marked = []
+        names, uncertain = pt.text_companions(
+            "Hierosólymæ, sanctórum Theodóri, Theodóri alteríus, Ioánnis, Ioánnis alteríus et Petri, mártyrum.",
+            lex, marked=marked)
+        self.assertEqual((names, uncertain), (["Theodorus", "Theodorus", "Ioannes", "Ioannes", "Petrus"], []))
+        self.assertEqual(marked, [1, 3])
+
+    def test_a_marked_repeat_in_the_text_is_another_person(self):
+        import extract_persons as ep
+        lex = {pt.name_key(w): w for w in ["Callinicus", "Theodorus", "Ioannes"]}
+        persons, issues = ep.eulogy_persons(
+            "mr:1106-callinicus-et-socii", "Sancti Callinicus et socii",
+            "Hierosólymæ, sanctórum Calliníci, Theodóri, Theodóri alteríus et Ioánnis, mártyrum.", [], lex, {})
+        self.assertEqual(persons, [{"name": "Callinicus", "where": "text"}, {"name": "Theodorus", "where": "text"},
+                                   {"name": "Theodorus", "n": 2, "where": "text"}, {"name": "Ioannes", "where": "text"}])
+        self.assertEqual(issues["printed_twice"], [])
+
+    def test_a_name_printed_twice_is_an_issue_for_the_report(self):
+        import extract_persons as ep
+        foot = [{"mark": "1", "after": "x", "text": "Quorum nomina: Emmanuel Le Phung, Emmanuel Le Phung, Felix."}]
+        persons, issues = ep.eulogy_persons("mr:1124-x-et-socii", "", "…", foot, {}, {})
+        self.assertEqual([p["name"] for p in persons], ["Emmanuel Le Phung", "Felix"])
+        self.assertEqual(issues["printed_twice"], ["Emmanuel Le Phung"])
+        report = ep.render_report({"mr:1124-x-et-socii": persons}, {"mr:1124-x-et-socii": issues}, noted=set())
+        self.assertIn("mr:1124-x-et-socii: Emmanuel Le Phung (needs a curator note)", report)
+        report = ep.render_report({"mr:1124-x-et-socii": persons}, {"mr:1124-x-et-socii": issues},
+                                  noted={"mr:1124-x-et-socii"})
+        self.assertIn("mr:1124-x-et-socii: Emmanuel Le Phung (noted)", report)
 
     def test_the_numbering_of_a_name_is_checked(self):
         import extract_persons as ep

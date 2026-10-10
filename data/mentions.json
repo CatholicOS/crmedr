@@ -89741,6 +89741,35 @@
           "check": "f3a47691",
           "name": "Paulus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 77,
+          "end": 85,
+          "check": "ae047d07",
+          "name": "Theodorus",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 103,
+          "check": "5aa55de9",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 105,
+          "end": 112,
+          "check": "5aa55de9",
+          "name": "Ioannes",
+          "n": 2,
+          "qid": null
         }
       ],
       "mr:1106-christina-stumbelensis": [
@@ -95311,18 +95340,6 @@
           "end": 2088,
           "check": "4af1710b",
           "name": "Emmanuel Lê Văn Phụng",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
-          "start": 2090,
-          "end": 2111,
-          "check": "4af1710b",
-          "name": "Emmanuel Lê Văn Phụng",
-          "n": 2,
           "qid": null
         },
         {

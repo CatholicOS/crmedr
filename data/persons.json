@@ -32671,6 +32671,20 @@
         {
           "name": "Paulus",
           "where": "text"
+        },
+        {
+          "name": "Theodorus",
+          "n": 2,
+          "where": "text"
+        },
+        {
+          "name": "Ioannes",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes",
+          "n": 2,
+          "where": "text"
         }
       ],
       "mr:1106-severus": [
@@ -34776,13 +34790,6 @@
         },
         {
           "name": "Emmanuel Lê Văn Phụng",
-          "where": {
-            "footnote": 1
-          }
-        },
-        {
-          "name": "Emmanuel Lê Văn Phụng",
-          "n": 2,
           "where": {
             "footnote": 1
           }

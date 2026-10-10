@@ -540535,7 +540535,8 @@
         "Theodorus",
         "Stephanus",
         "Petrus",
-        "Paulus"
+        "Paulus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q3566236) fails it"
@@ -540751,7 +540752,8 @@
         "Theodorus",
         "Stephanus",
         "Petrus",
-        "Paulus"
+        "Paulus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q970582) fails it"
@@ -540957,6 +540959,449 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:1106-callinicus-et-socii|Ioannes",
+      "eulogy": "mr:1106-callinicus-et-socii",
+      "day": "11-06",
+      "typology": "dies_natalis",
+      "subject": "Sancti Callinicus et socii",
+      "name": "Ioannes",
+      "where": "text",
+      "companions": [
+        "Callinicus",
+        "Himerius",
+        "Theodorus",
+        "Stephanus",
+        "Petrus",
+        "Paulus"
+      ],
+      "failed": [
+        "death: the best candidate (Q328804) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q328804",
+          "label": "John the Evangelist",
+          "description": "author of the Gospel of John; traditionally identified with John the Apostle of Jesus, John of Patmos (author of Revelation), and John the Presbyter",
+          "names": [
+            "Evangelista Giovanni",
+            "Giovanni",
+            "Giovanni Evangelista",
+            "Giovanni evangelista",
+            "Giovanni evangelista ed apostolo",
+            "Giovanni il teologo",
+            "Ioannes",
+            "Ioannes Evangelista",
+            "John",
+            "John the Evangelist",
+            "Saint John the Evangelist",
+            "San Giovanni Apostolo ed Evangelista",
+            "San Giovanni evangelista",
+            "San Giovanni il Teologo",
+            "Sanctus Ioannes Evangelista",
+            "Sanctus Ioannis Evangelista",
+            "St John the Evangelist",
+            "St. John the Evangelist"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0010",
+          "died": "0098",
+          "feast": [
+            "Q2800",
+            "Q2555",
+            "Q2885"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108304",
+          "label": "Giovanni Zarrella",
+          "description": "Italian-German singer and television presenter",
+          "names": [
+            "Gio",
+            "Giovanni",
+            "Giovanni Zarrella"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1978-03-04",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546789",
+          "label": "Giovanni",
+          "description": "bishop of the  roman-catholic church",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108554520",
+          "label": "Giovanni",
+          "description": "bishop of Patti e Lipari",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108573379",
+          "label": "Giovanni",
+          "description": "Roman Catholic clergyman",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1348",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108585557",
+          "label": "Giovanni",
+          "description": "archbishop of Corfù",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108588382",
+          "label": "Giovanni",
+          "description": "bishop of Ales (Uselli) and Lavello",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108588533",
+          "label": "Giovanni",
+          "description": "bishop of Rapolla and Lavello",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108589655",
+          "label": "Giovanni",
+          "description": "catholic bishop (ch-id: giovanoe)",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109786795",
+          "label": "Joao",
+          "description": "person identified in the Museu da Pessoa collection",
+          "names": [
+            "Joao"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1976-11-30",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:1106-callinicus-et-socii|Ioannes#2",
+      "eulogy": "mr:1106-callinicus-et-socii",
+      "day": "11-06",
+      "typology": "dies_natalis",
+      "subject": "Sancti Callinicus et socii",
+      "name": "Ioannes",
+      "n": 2,
+      "where": "text",
+      "companions": [
+        "Callinicus",
+        "Himerius",
+        "Theodorus",
+        "Stephanus",
+        "Petrus",
+        "Paulus"
+      ],
+      "failed": [
+        "death: the best candidate (Q328804) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q328804",
+          "label": "John the Evangelist",
+          "description": "author of the Gospel of John; traditionally identified with John the Apostle of Jesus, John of Patmos (author of Revelation), and John the Presbyter",
+          "names": [
+            "Evangelista Giovanni",
+            "Giovanni",
+            "Giovanni Evangelista",
+            "Giovanni evangelista",
+            "Giovanni evangelista ed apostolo",
+            "Giovanni il teologo",
+            "Ioannes",
+            "Ioannes Evangelista",
+            "John",
+            "John the Evangelist",
+            "Saint John the Evangelist",
+            "San Giovanni Apostolo ed Evangelista",
+            "San Giovanni evangelista",
+            "San Giovanni il Teologo",
+            "Sanctus Ioannes Evangelista",
+            "Sanctus Ioannis Evangelista",
+            "St John the Evangelist",
+            "St. John the Evangelist"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0010",
+          "died": "0098",
+          "feast": [
+            "Q2800",
+            "Q2555",
+            "Q2885"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108304",
+          "label": "Giovanni Zarrella",
+          "description": "Italian-German singer and television presenter",
+          "names": [
+            "Gio",
+            "Giovanni",
+            "Giovanni Zarrella"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1978-03-04",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546789",
+          "label": "Giovanni",
+          "description": "bishop of the  roman-catholic church",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108554520",
+          "label": "Giovanni",
+          "description": "bishop of Patti e Lipari",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108573379",
+          "label": "Giovanni",
+          "description": "Roman Catholic clergyman",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1348",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108585557",
+          "label": "Giovanni",
+          "description": "archbishop of Corfù",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108588382",
+          "label": "Giovanni",
+          "description": "bishop of Ales (Uselli) and Lavello",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108588533",
+          "label": "Giovanni",
+          "description": "bishop of Rapolla and Lavello",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108589655",
+          "label": "Giovanni",
+          "description": "catholic bishop (ch-id: giovanoe)",
+          "names": [
+            "Giovanni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109786795",
+          "label": "Joao",
+          "description": "person identified in the Museu da Pessoa collection",
+          "names": [
+            "Joao"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1976-11-30",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:1106-callinicus-et-socii|Paulus",
       "eulogy": "mr:1106-callinicus-et-socii",
       "day": "11-06",
@@ -540969,7 +541414,8 @@
         "Himerius",
         "Theodorus",
         "Stephanus",
-        "Petrus"
+        "Petrus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q1379816) fails it"
@@ -541254,7 +541700,8 @@
         "Himerius",
         "Theodorus",
         "Stephanus",
-        "Paulus"
+        "Paulus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q33923) fails it"
@@ -541481,7 +541928,8 @@
         "Himerius",
         "Theodorus",
         "Petrus",
-        "Paulus"
+        "Paulus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q134666) fails it"
@@ -541727,7 +542175,317 @@
         "Himerius",
         "Stephanus",
         "Petrus",
-        "Paulus"
+        "Paulus",
+        "Ioannes"
+      ],
+      "failed": [
+        "death: the best candidate (Q12759994) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q12759994",
+          "label": "Theodorus of Perge",
+          "description": "",
+          "names": [
+            "Teodoro di Perge",
+            "Theodorus",
+            "Theodorus of Perge"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0200",
+          "died": "0220",
+          "feast": [
+            "Q2523",
+            "Q2891"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1399073",
+          "label": "Theodoros of Edessa",
+          "description": "",
+          "names": [
+            "Teodoro di Edessa",
+            "Theodoros of Edessa",
+            "Theodorus",
+            "Theodorus of Edessa"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0800",
+          "died": "0848",
+          "feast": [
+            "Q2726"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16327337",
+          "label": "Theodorus of Cyrene",
+          "description": "",
+          "names": [
+            "Feodor av Kyrenia",
+            "Teodoro di Cirena",
+            "Theodore of Cyrene",
+            "Theodorus",
+            "Theodorus of Cyrene"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2698"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3523949",
+          "label": "Theudère du Dauphiné",
+          "description": "Christian monk, abbot and hermit",
+          "names": [
+            "Teodorus",
+            "Theodorus",
+            "Theudarius",
+            "Theudere du Dauphine",
+            "Theudère du Dauphiné"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2951"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q37599",
+          "label": "Theodore of Amasea",
+          "description": "Anatolian saint",
+          "names": [
+            "Holy Theodore",
+            "Holy Theodorus",
+            "S Theodorus",
+            "S Theodorus Martyr",
+            "S Theodorus de Amasea",
+            "Saint Theodore",
+            "Saint Theodore Martyr",
+            "Saint Theodore Tiro",
+            "Saint Theodore Tyro",
+            "Saint Theodore of Amasea",
+            "Saint Theodore the Martyr",
+            "Saint Theodore the Recruit",
+            "Saint Theodorus",
+            "Saint Theodorus Martyr",
+            "Saint Theodorus Tiro",
+            "Saint Theodorus Tyro",
+            "Saint Theodorus of Amasea",
+            "Saint Theodorus the Martyr",
+            "Saint Theodorus the Recruit",
+            "San Teodoro d'Amasea",
+            "San Teodoro di Amasea",
+            "Sanctus Theodorus",
+            "Sanctus Theodorus Martyr",
+            "Sanctus Theodorus de Amasea",
+            "St Theodore",
+            "St Theodore Martyr",
+            "St Theodore Tiro",
+            "St Theodore Tyro",
+            "St Theodore of Amasea",
+            "St Theodore the Martyr",
+            "St Theodore the Recruit",
+            "St Theodorus",
+            "St Theodorus Martyr",
+            "St Theodorus Tiro",
+            "St Theodorus Tyro",
+            "St Theodorus of Amasea",
+            "St Theodorus the Martyr",
+            "St Theodorus the Recruit",
+            "Teodoro Tiro",
+            "Teodoro Tirone",
+            "Teodoro di Amasea",
+            "Theodore",
+            "Theodore Martyr",
+            "Theodore Tiro",
+            "Theodore of Amasea",
+            "Theodore the Martyr",
+            "Theodore the Recruit",
+            "Theodorus",
+            "Theodorus Apamensis",
+            "Theodorus Martyr",
+            "Theodorus Tiro",
+            "Theodorus Tyro",
+            "Theodorus de Amasea",
+            "Theodorus of Amasea",
+            "Theodorus the Martyr"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3332786",
+            "Q123110154"
+          ],
+          "born": "0300",
+          "died": "0306-02-17",
+          "feast": [
+            "Q2341",
+            "Q2991"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q770191",
+          "label": "Theodoros of Tabenna",
+          "description": "Egyptian monk (-368)",
+          "names": [
+            "Teodoro di Tabenissi",
+            "Theodoros of Tabenna",
+            "Theodorus",
+            "Theodorus Tabennensis",
+            "Theodorus Tabennesiota",
+            "Theodorus of Tabenissi",
+            "Theodorus of Tabennese",
+            "Theodorus van Tabennisi"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q12774503"
+          ],
+          "born": "0314",
+          "died": "0368",
+          "feast": [
+            "Q2659",
+            "Q2533"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109007196",
+          "label": "Theodorus",
+          "description": "1st-century ancient Roman sculptor",
+          "names": [
+            "Teodoro",
+            "Theodorus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q125846838",
+          "label": "Theodorus",
+          "description": "ancient Greek lexicographer",
+          "names": [
+            "Theodorus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1293419",
+          "label": "Theodorus",
+          "description": "Roman consul 505 AD",
+          "names": [
+            "Flavius Theodorus",
+            "Teodoro",
+            "Theodorus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0450",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16767045",
+          "label": "Theodorus",
+          "description": "4th-century Roman usurper",
+          "names": [
+            "Teodoro",
+            "Theodorus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0400",
+          "died": "0371",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:1106-callinicus-et-socii|Theodorus#2",
+      "eulogy": "mr:1106-callinicus-et-socii",
+      "day": "11-06",
+      "typology": "dies_natalis",
+      "subject": "Sancti Callinicus et socii",
+      "name": "Theodorus",
+      "n": 2,
+      "where": "text",
+      "companions": [
+        "Callinicus",
+        "Himerius",
+        "Stephanus",
+        "Petrus",
+        "Paulus",
+        "Ioannes"
       ],
       "failed": [
         "death: the best candidate (Q12759994) fails it"
@@ -576636,165 +577394,6 @@
       "typology": "celebratio",
       "subject": "Sancti Andreas Dung Lac et socii",
       "name": "Emmanuel Lê Văn Phụng",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Andreas Dung Lac",
-        "Clemens Ignatius Delgado Cebrián",
-        "Dominicus Henares",
-        "Hieronymus Hermosilla",
-        "Iosephus Maria Díaz Sanjurjo",
-        "Melchior García Sanpedro",
-        "Petrus Dumoulin-Borie",
-        "Valentinus Berrio Ochoa",
-        "Augustinus Schoeffler",
-        "Bernardus Vũ Văn Duệ",
-        "Dominicus Cẩm",
-        "Dominicus Mậu",
-        "Dominicus Nguyễn Văn Xuyên",
-        "Dominicus Nguyễn Văn Hạnh",
-        "Dominicus Trạch",
-        "Dominicus Tước",
-        "Emmanuel Nguyễn Văn Triệu",
-        "Franciscus Gil de Federich",
-        "Franciscus Jaccard",
-        "Hyacinthus Castañeda",
-        "Iacobus Đỗ Mai Năm",
-        "Ioannes Carolus Cornay",
-        "Ioannes Đạt",
-        "Ioannes Đoàn Trinh Hoan",
-        "Ioannes Ludovicus Bonnard",
-        "Ioannes Theophanes Vénard",
-        "Iosephus Đặng Đình Viên",
-        "Iosephus Đỗ Quang Hiền",
-        "Iosephus Fernández",
-        "Iosephus Marchand",
-        "Iosephus Nguyễn Đình Nghi",
-        "Iosephus Tuấn",
-        "Isidorus Gagelin",
-        "Laurentius Nguyễn Văn Hưởng",
-        "Lucas Vũ Bá Loan",
-        "Martinus Tạ Đức Thịnh",
-        "Matthæus Alonso de Leziniana",
-        "Paulus Lê Bảo Tịnh",
-        "Paulus Lê-Văn-Lộc",
-        "Paulus Nguyễn Ngân",
-        "Paulus Phạm Khắc Khoan",
-        "Petrus Almato Ribeira",
-        "Petrus Đoàn Công Quý",
-        "Petrus Franciscus Néron",
-        "Petrus Khanh",
-        "Petrus Lê Tùy",
-        "Petrus Nguyễn Bá Tuân",
-        "Petrus Nguyễn Văn Lựu",
-        "Petrus Nguyễn Văn Tự",
-        "Petrus Trưởng Văn Thi",
-        "Philippus Phan Văn Minh",
-        "Thomas Đinh Viết Dụ",
-        "Thomas Khuông",
-        "Vincentius Đỗ Yến",
-        "Vincentius Lê Quang Liêm",
-        "Vincentius Nguyễn Thế Điểm",
-        "Andreas Nguyễn Kim Thông Nam",
-        "Antonius Nguyễn Hữu Quỳnh",
-        "Dominicus Bùi Văn Úy",
-        "Franciscus Xaverius Cần",
-        "Franciscus Xaverius Hà Trọng Mậu",
-        "Ioannes Baptista Đinh Văn Thành",
-        "Iosephus Nguyễn Đình Uyển",
-        "Iosephus Nguyễn Duy Khang",
-        "Iosephus Nguyễn Văn Lựu",
-        "Matthæus Nguyễn Văn Phượng",
-        "Paulus Nguyễn Văn Mỹ",
-        "Petrus Đoàn Văn Vân",
-        "Petrus Nguyễn Khắc Tự",
-        "Petrus Nguyễn Văn Hiếu",
-        "Petrus Trưởng Văn Đường",
-        "Petrus Vũ Văn Truật",
-        "Thomas Toán",
-        "Agnes Lê Thị Thành",
-        "Andreas Tường",
-        "Andreas Trần Văn Trông",
-        "Antonius Nguyễn Đích",
-        "Augustinus Nguyễn Văn Mới",
-        "Augustinus Phan Viết Huy",
-        "Dominicus Huyên",
-        "Dominicus Mạo",
-        "Dominicus Ngôn",
-        "Dominicus Nguyên",
-        "Dominicus Nhi",
-        "Dominicus Nicolaus Đinh Đạt",
-        "Dominicus Ninh",
-        "Dominicus Phạm Trọng Khảm",
-        "Dominicus Toại",
-        "Franciscus Đỗ Minh Chiểu",
-        "Franciscus Trần Văn Trung",
-        "Ioannes Baptista Cơn",
-        "Iosephus Hoàng Lưởng Cảnh",
-        "Iosephus Lê Đăng Thị",
-        "Iosephus Phạm Trọng Tả",
-        "Iosephus Tuân",
-        "Iosephus Túc",
-        "Lucas Thìn",
-        "Martinus Thọ",
-        "Matthæus Lê Văn Gẫm",
-        "Michael Hồ Đình Hy",
-        "Michael Nguyễn Huy Mỹ",
-        "Nicolaus Bùi Viết Thể",
-        "Paulus Hạnh",
-        "Paulus Tống Viết Bường",
-        "Petrus Đa",
-        "Petrus Đông",
-        "Petrus Dũng",
-        "Petrus Thuần",
-        "Petrus Võ Đăng Khoa",
-        "Simon Phan Đắc Hòa",
-        "Stephanus Nguyễn Văn Vinh",
-        "Thomas Nguyễn Văn Đệ",
-        "Thomas Trần Văn Thiện",
-        "Vincentius Đưởng",
-        "Vincentius Tường"
-      ],
-      "failed": [
-        "name: the best candidate (Q11696788) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11696788",
-          "label": "Emanueli Le Van Phung",
-          "description": "",
-          "names": [
-            "Emanueli Le Van Phung"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1796",
-          "died": "1859-07-31",
-          "feast": [
-            "Q3022"
-          ],
-          "evidence": [
-            "human",
-            "status"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1124-andreas-dung-lac-et-socii|Emmanuel Lê Văn Phụng#2",
-      "eulogy": "mr:1124-andreas-dung-lac-et-socii",
-      "day": "11-24",
-      "typology": "celebratio",
-      "subject": "Sancti Andreas Dung Lac et socii",
-      "name": "Emmanuel Lê Văn Phụng",
-      "n": 2,
       "where": {
         "footnote": 1
       },

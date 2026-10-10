@@ -425,3 +425,13 @@ class RepeatedNamesTest(unittest.TestCase):
         report = bp.render_report(items, index, [])
         self.assertIn("mr:0212-x|Felix#2: Q2", report)
         self.assertNotIn("mr:0212-x|Felix: Q1", report)  # reviewed: not an automatic match
+
+    def test_propose_drops_a_queued_op_whose_person_is_gone(self):
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, self.index(), FakeClient({"Felix": [], "Secunda": []}))
+        self.assertIn("mr:0212-x|Secunda#2", {op["id"] for op in review["operations"]})
+        # The list is corrected: there is one Secunda after all.
+        index = {k: v for k, v in self.index().items() if k != "mr:0212-x|Secunda#2"}
+        bp.propose(items, review, index, FakeClient({"Felix": [], "Secunda": []}))
+        self.assertNotIn("mr:0212-x|Secunda#2", {op["id"] for op in review["operations"]})
+        self.assertEqual(bp.validate(items, index, review["operations"]), [])
