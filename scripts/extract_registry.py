@@ -889,6 +889,15 @@ EDITION_NOTES = {
             "(nine companions, martyrs: ten in all)."
         ),
     },
+    "mr:1124-andreas-dung-lac-et-socii": {
+        EDITION_LA: (
+            "Misprint: footnote 1 prints \"Emmanuel Lê Văn Phụng\" twice in a row; he is one martyr, "
+            "listed once in the index of names. The list also seems to leave out Bishop Stephanus "
+            "Theodorus Cuénot, one of the 117 martyrs canonized together: with Andreas Dũng Lạc it "
+            "names 116, and the index gives Cuénot only his own day (14 November), though martyrs "
+            "with a day of their own, such as Emmanuel Lê Văn Phụng (13 July), are listed here too."
+        ),
+    },
     "mr:1124-balsamus": {
         EDITION_EN: (
             "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin "

@@ -306,7 +306,7 @@
 | 23 | 13 | `mr:1123-caecilia-yu-so-sa` |  | KR | dies_natalis |  |  |
 | 23 | 14 | `mr:1123-michael-augustinus-pro` | * | MX | dies_natalis |  |  |
 | 23 | 15 | `mr:1123-maria-caecilia-cendoya-y-araquistain` | * | ES | dies_natalis |  |  |
-| 24 | (1) | `mr:1124-andreas-dung-lac-et-socii` |  | VN | celebratio |  |  |
+| 24 | (1) | `mr:1124-andreas-dung-lac-et-socii` |  | VN | celebratio |  | 2004 Latin: Misprint: footnote 1 prints "Emmanuel Lê Văn Phụng" twice in a row; he is one martyr, listed once in the index of names. The list also seems to leave out Bishop Stephanus Theodorus Cuénot, one of the 117 martyrs canonized together: with Andreas Dũng Lạc it names 116, and the index gives Cuénot only his own day (14 November), though martyrs with a day of their own, such as Emmanuel Lê Văn Phụng (13 July), are listed here too. |
 | 24 | 2 | `mr:1124-chrysogonus` |  | IT | dedicatio |  |  |
 | 24 | 3 | `mr:1124-firmina` |  | IT | dies_natalis |  |  |
 | 24 | 4 | `mr:1124-protasius` |  | IT | dies_natalis |  |  |
