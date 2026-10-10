@@ -1,4 +1,790 @@
 {
   "$comment": "Curators' corrections to data/mentions.json: for each eulogy listed, its complete list of mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a reviewed change-set (docs/mentions-changeset.md), or by hand.",
-  "editions": {}
+  "editions": {
+    "martyrologium_romanum_2004": {
+      "mr:0110-gregorius-nyssenus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "30ff2bb3",
+          "qid": "Q3563362"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 36,
+          "check": "d308b470",
+          "name": "Gregorius Nyssenus",
+          "qid": null
+        }
+      ],
+      "mr:0113-gumesindus-et-servusdei": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "44f170aa",
+          "qid": "Q5818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 68,
+          "check": "08602e81",
+          "name": "Gumesindus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 85,
+          "end": 93,
+          "check": "2b57f70f",
+          "name": "Servusdei",
+          "qid": null
+        }
+      ],
+      "mr:0116-danax": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "c2705404",
+          "qid": "Q159610"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 35,
+          "check": "43c640ca",
+          "name": "Danax",
+          "qid": null
+        }
+      ],
+      "mr:0126-xenophon-et-maria": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 11,
+          "check": "0859ee56",
+          "qid": "Q1218"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 33,
+          "check": "10ffffb2",
+          "name": "Xenophon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
+          "end": 42,
+          "check": "ace1b9f6",
+          "name": "Maria",
+          "qid": null
+        }
+      ],
+      "mr:0127-iulianus-cenomanum": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 35,
+          "check": "71961ea3",
+          "qid": "Q1476"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
+          "end": 51,
+          "check": "b6d7829f",
+          "name": "Iulianus Cenomanum",
+          "qid": null
+        }
+      ],
+      "mr:0127-iulianus-sorae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 13,
+          "check": "07966fac",
+          "qid": "Q117382"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 42,
+          "check": "b6d7829f",
+          "name": "Iulianus Sorae",
+          "qid": null
+        }
+      ],
+      "mr:0202-catharina-de-ricci": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 16,
+          "check": "bbc51928",
+          "qid": "Q13377"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 44,
+          "check": "85fa225e",
+          "name": "Catharina de Ricci",
+          "qid": null
+        }
+      ],
+      "mr:0203-simeon-et-anna-prophetissa": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 11,
+          "check": "0859ee56",
+          "qid": "Q1218"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 36,
+          "end": 44,
+          "check": "4839c55f",
+          "name": "Simeon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 48,
+          "end": 52,
+          "check": "ba595d01",
+          "name": "Anna Prophetissa",
+          "qid": null
+        }
+      ],
+      "mr:0204-aventinus-castelloduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 37,
+          "check": "2912890d",
+          "qid": "Q181886"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 64,
+          "check": "f6e42aee",
+          "name": "Aventinus Castelloduni",
+          "qid": null
+        }
+      ],
+      "mr:0204-aventinus-trecis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 27,
+          "check": "fe77e638",
+          "qid": "Q5489"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 36,
+          "end": 44,
+          "check": "f6e42aee",
+          "name": "Aventinus Trecis",
+          "qid": null
+        }
+      ],
+      "mr:0205-sabas-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 33,
+          "check": "c97480cc",
+          "qid": "Q220"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 42,
+          "end": 46,
+          "check": "9fda72ab",
+          "name": "Sabas Iunior",
+          "qid": null
+        }
+      ],
+      "mr:0212-benedictus-anianensis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 50,
+          "check": "5fc1b0a6",
+          "qid": "Q152432"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 78,
+          "check": "3e567f6d",
+          "name": "Benedictus Anianensis",
+          "qid": null
+        }
+      ],
+      "mr:0213-stephanus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 17,
+          "check": "5e38d61b",
+          "qid": "Q456"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 34,
+          "check": "4e3edf00",
+          "name": "Stephanus Lugduni",
+          "qid": null
+        }
+      ],
+      "mr:0213-stephanus-reate": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 15,
+          "check": "a26298b9",
+          "qid": "Q13396"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
+          "end": 45,
+          "check": "4e3edf00",
+          "name": "Stephanus Reate",
+          "qid": null
+        }
+      ],
+      "mr:0219-conradus-confalonieri": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 15,
+          "check": "b83d643d",
+          "qid": "Q487174"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 56,
+          "check": "9fe79e5e",
+          "name": "Conradus Confalonieri",
+          "qid": null
+        }
+      ],
+      "mr:0303-iacobinus-de-canepacci": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 23,
+          "check": "3e1ef82b",
+          "qid": "Q5990"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 53,
+          "check": "0d36d1b4",
+          "name": "Iacobinus de Canepacci",
+          "qid": null
+        }
+      ],
+      "mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 26,
+          "check": "fbd010da",
+          "qid": "Q18097"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 38,
+          "end": 55,
+          "check": "df7853fd",
+          "name": "Petrus Choe Hyong",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 89,
+          "check": "b11cdb2e",
+          "name": "Ioannes Baptista Chon Chang Un",
+          "qid": null
+        }
+      ],
+      "mr:0319-marcus-de-montegallo": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "1d40804b",
+          "qid": "Q6537"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 56,
+          "check": "b8a06b03",
+          "name": "Marcus de Montegallo",
+          "qid": null
+        }
+      ],
+      "mr:0325-bonus-latro": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 13,
+          "end": 28,
+          "check": "f6b16ade",
+          "name": "Bonus Latro",
+          "qid": null
+        }
+      ],
+      "mr:0327-panacea-de-muzzi": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 42,
+          "check": "2928b8a4",
+          "qid": "Q25179"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 50,
+          "end": 67,
+          "check": "75db4d33",
+          "name": "Panacea de Muzzi",
+          "qid": null
+        }
+      ],
+      "mr:0330-petrus-regalado": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "23d4a898",
+          "qid": "Q6461012"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 47,
+          "end": 76,
+          "check": "fa4b24e7",
+          "name": "Petrus Regalado",
+          "qid": null
+        }
+      ],
+      "mr:0401-hugo-bonaevallensis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 59,
+          "check": "75a5c0ca",
+          "qid": "Q1354285"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 74,
+          "check": "a19a1724",
+          "name": "Hugo Bonaevallensis",
+          "qid": null
+        }
+      ],
+      "mr:0401-hugo-gratianopoli": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "53d9c3fe",
+          "qid": "Q1289"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "a19a1724",
+          "name": "Hugo Gratianopoli",
+          "qid": null
+        }
+      ],
+      "mr:0403-ioannes-neapoli": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "122c9886",
+          "qid": "Q2634"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 35,
+          "check": "5aa55de9",
+          "name": "Ioannes Neapoli",
+          "qid": null
+        }
+      ],
+      "mr:0403-ioannes-pinnae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 22,
+          "check": "62bc0a92",
+          "qid": "Q83226"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
+          "end": 37,
+          "check": "5aa55de9",
+          "name": "Ioannes Pinnae",
+          "qid": null
+        }
+      ],
+      "mr:0408-agabus-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 35,
+          "check": "f1f3c33e",
+          "name": "Agabus Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0408-dionysius-alexandriae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "a63ffb0d",
+          "qid": "Q87"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 37,
+          "check": "23513ec8",
+          "name": "Dionysius Alexandriae",
+          "qid": null
+        }
+      ],
+      "mr:0408-dionysius-corinthi": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 12,
+          "end": 20,
+          "check": "23513ec8",
+          "name": "Dionysius Corinthi",
+          "qid": null
+        }
+      ],
+      "mr:0413-ida-boloniensis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 76,
+          "check": "da8dd881",
+          "qid": "Q1023291"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 87,
+          "check": "001866e3",
+          "name": "Ida Boloniensis",
+          "qid": null
+        }
+      ],
+      "mr:0417-robertus-casae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 46,
+          "check": "c54a3135",
+          "qid": "Q2820769"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 62,
+          "check": "6285a103",
+          "name": "Robertus Casae",
+          "qid": null
+        }
+      ],
+      "mr:0417-robertus-molismensis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 34,
+          "check": "d3739123",
+          "qid": "Q334044"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 50,
+          "check": "6285a103",
+          "name": "Robertus Molismensis",
+          "qid": null
+        }
+      ],
+      "mr:0419-bernardus-paenitens": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 58,
+          "check": "9f98efd4",
+          "qid": "Q334144"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 96,
+          "check": "34b7e698",
+          "name": "Bernardus Paenitens",
+          "qid": null
+        }
+      ],
+      "mr:0423-georgius-suellis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "87828a19",
+          "qid": "Q285220"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 48,
+          "check": "0375b47a",
+          "name": "Georgius Suellis",
+          "qid": null
+        }
+      ],
+      "mr:0425-marcus-evangelista": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 32,
+          "check": "db37e0e7",
+          "name": "Marcus Evangelista",
+          "qid": null
+        }
+      ],
+      "mr:0501-ieremias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 37,
+          "check": "88c08844",
+          "name": "Ieremias Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0503-philippus-et-iacobus-apostoli": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 35,
+          "check": "a0a04950",
+          "name": "Iacobus Apostoli",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 57,
+          "end": 66,
+          "check": "25f03014",
+          "name": "Philippus",
+          "qid": null
+        }
+      ],
+      "mr:0505-sacerdos": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "314e3475",
+          "qid": "Q45656"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
+          "end": 40,
+          "check": "9288bfb8",
+          "name": "Sacerdos",
+          "qid": null
+        }
+      ],
+      "mr:0509-isaias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 35,
+          "check": "e1934836",
+          "name": "Isaias Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0514-matthias-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 31,
+          "check": "5c7f1c04",
+          "name": "Matthias Apostolus",
+          "qid": null
+        }
+      ],
+      "mr:0525-maria-magdalena-de-pazzi": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 7,
+          "end": 32,
+          "check": "a612d098",
+          "name": "Maria Magdalena de Pazzi",
+          "qid": null
+        }
+      ],
+      "mr:0614-elisaeus-propheta": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 32,
+          "check": "4044c93e",
+          "qid": "Q1757438"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 60,
+          "check": "6b4a2240",
+          "name": "Elisaeus Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0615-amos-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 34,
+          "check": "6169db65",
+          "name": "Amos Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0629-petrus-et-paulus-apostoli": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 48,
+          "check": "f3a47691",
+          "name": "Paulus Apostoli",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 164,
+          "end": 170,
+          "check": "c9c2aab1",
+          "name": "Petrus",
+          "qid": null
+        }
+      ]
+    }
+  }
 }
