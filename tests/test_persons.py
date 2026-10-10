@@ -310,6 +310,38 @@ class ReviewFindingsTest(unittest.TestCase):
         self.assertIn("mr:0101-x-et-socii", report)
 
 
+class VariantsTest(unittest.TestCase):
+    """A person known by more than one name (2026-10-10 name-variants spec)."""
+
+    def test_full_variant(self):
+        self.assertEqual(pt.full_variant("Mamas", "Mames"), "Mames")
+        self.assertEqual(pt.full_variant("Ioannes Sordi", "Cacciafronte"), "Ioannes Cacciafronte")
+        self.assertEqual(pt.full_variant("Ioannes Cayx", "Ioannes Dumas"), "Ioannes Dumas")
+
+    def test_footnote_variants_after_seu_vel_and_qui_et(self):
+        variants = {}
+        names, skipped = pt.footnote_names(
+            "Quorum nomina: Dativus, qui et Sanator, Felix; Maximianus seu Maximus, Telica vel Tazelita, Victor.",
+            variants=variants)
+        self.assertEqual(names, ["Dativus", "Felix", "Maximianus", "Telica", "Victor"])
+        self.assertEqual(skipped, [])
+        self.assertEqual(variants, {0: ["Sanator"], 2: ["Maximus"], 3: ["Tazelita"]})
+
+    def test_qui_et_with_no_name_before_adds_nothing(self):
+        variants = {}
+        names, _ = pt.footnote_names("Quorum nomina: qui et Sanator, Felix.", variants=variants)
+        self.assertEqual((names, variants), (["Felix"], {}))
+
+    def test_text_companion_variants_and_unread_ones(self):
+        lex = {pt.name_key(w): w for w in ["Marina", "Margarita", "Theodorus", "Petrus"]}
+        variants, unread = {}, []
+        names, uncertain = pt.text_companions(
+            "Romæ, sanctórum Marínæ seu Margarítæ, Theodóri seu Ficténtis et Petri, mártyrum.", lex,
+            variants=variants, unread=unread)
+        self.assertEqual((names, uncertain), (["Marina", "Theodorus", "Petrus"], []))
+        self.assertEqual((variants, unread), ({0: ["Margarita"]}, ["Theodorus"]))
+
+
 class SamePersonTest(unittest.TestCase):
     # 4: a fuller or shorter form of a subject is the same person, in the subject's form
     def test_a_footnote_name_extending_a_subject_is_not_added(self):
