@@ -33,6 +33,7 @@ from pathlib import Path
 
 from extract_typology import load_texts
 from mentions_text import back_ref_span, find_person, find_place, free, from_utf16, partial_span, utf16
+from persons_text import person_key
 
 
 def where_key(where):
@@ -60,7 +61,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
     overlap. Longer names are placed before shorter ones, so a name inside a
     longer name ("Nema" in "Nemardus a Fictura Nema") is not marked there; of two
     names as long (two spellings of one person, "Num Ka" and "Nŭm-ka"), one with
-    a decided item first.
+    a decided item first; persons sharing a name, in `n` order.
     """
     mentions, review, hows = [], [], []
     taken = {"place": {}, "person": {}}
@@ -100,18 +101,29 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             continue
         add("place", "text", span, how, qid=place_qid(item["la"]))
 
-    for p in sorted(persons, key=lambda p: (-len(p["name"]), person_qid(p["name"]) is None)):
+    last = {}  # name -> the highest n among the persons of that name
+    for p in persons:
+        last[p["name"]] = max(last.get(p["name"], 1), p.get("n", 1))
+    # A name is decided when any of its persons is: its persons keep their n order among themselves.
+    decided = {p["name"] for p in persons if person_qid(person_key(p))}
+    for p in sorted(persons, key=lambda p: (-len(p["name"]), p["name"] not in decided, p.get("n", 1))):
         name, where = p["name"], p["where"]
+        nth = {"n": p["n"]} if "n" in p else {}
         src = source(where)
         if src is None:
             continue  # extract_persons.py validates footnote numbers
         both = spans("place", where) + spans("person", where)
         found = find_person(src, name, both)
         if found:
-            span, how, ambiguous = found
-            add("person", where, span, how, name=name, qid=person_qid(name))
-            if ambiguous:
-                ask("remove_mention", "person", where, span, f"{name} matched more than once; this is the first match")
+            span, how, more = found
+            add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
+            if more and p.get("n", 1) == last[name]:
+                # Matched again after the last person of the name: the same person named twice,
+                # or a stem match on another word. The curator decides.
+                while again := find_person(src, name, spans("place", where) + spans("person", where)):
+                    spans("person", where).append(again[0])  # later names are not proposed over it
+                    ask("add_mention", "person", where, again[0],
+                        f"{name} matched again: mark it if it names this person once more", name=name, **nth)
             continue
         inside = find_person(src, name, spans("person", where))
         if inside:
@@ -119,7 +131,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             place = next(x for x in mentions if x["kind"] == "place" and x["where"] == where
                          and not free(inside[0], [(x["start"], x["end"])]))
             ask("add_mention", "person", where, inside[0], f"{name} is named inside a place phrase, which was kept",
-                name=name)
+                name=name, **nth)
             key = (where_key(where), place["start"])
             if key in removals:  # one remove_mention per place, naming every person in it
                 removals[key][1].append(name)
@@ -130,7 +142,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
                     f"the place phrase contains the person {name}")
                 removals[key] = (review[-1], [name])
             continue
-        ask("add_mention", "person", where, partial_span(src, name, both), f"{name} was not found", name=name)
+        ask("add_mention", "person", where, partial_span(src, name, both), f"{name} was not found", name=name, **nth)
 
     mentions.sort(key=mention_order)
     return mentions, review, hows
@@ -183,17 +195,19 @@ def from_file(m, src):
            "form": words if words and check(words) == m.get("check") else None}
     if m["kind"] == "person":
         out["name"] = m.get("name")
+        if "n" in m:
+            out["n"] = m["n"]
     out["qid"] = m.get("qid")
     return out
 
 
 def curated_mention(m, items, lang, place_qid, person_qid, source):
     """A curated mention as an internal one, its QID copied from the decisions: a
-    person's by name; a place's from the eulogy's place whose printed form it is,
+    person's by its key (name, or name#n); a place's from the eulogy's place whose printed form it is,
     else from its only place."""
     out = from_file(m, source(m["where"]))
     if m["kind"] == "person":
-        out["qid"] = person_qid(m.get("name"))
+        out["qid"] = person_qid(person_key(out))
     else:
         item = next((it for it in items if out["form"] is not None and it.get(lang) == out["form"]),
                     items[0] if len(items) == 1 else None)
@@ -219,8 +233,8 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
             continue
         decided = person_items.get(mrid, {})
 
-        def person_qid(name, decided=decided):
-            return decided.get(name, {}).get("wikidata")
+        def person_qid(key, decided=decided):
+            return decided.get(key, {}).get("wikidata")
 
         if mrid in curated:
             ms = [curated_mention(m, items, lang, place_qid, person_qid,
@@ -278,6 +292,8 @@ def to_file(m, src):
            "check": check(m["form"])}
     if m["kind"] == "person":
         out["name"] = m["name"]
+        if "n" in m:
+            out["n"] = m["n"]
     out["qid"] = m["qid"]
     return out
 
@@ -354,10 +370,10 @@ def context(src, start, end):
 
 
 def op_key(r):
-    """What ends a spanless op's id: the person's name, or the place's QID (one place
+    """What ends a spanless op's id: the person's key (name, or name#n), or the place's QID (one place
     per eulogy, so unique); "place" for a place without a QID."""
     if r["kind"] == "person":
-        return r.get("name")
+        return person_key(r)
     return r.get("qid") or "place"
 
 
@@ -382,6 +398,8 @@ def review_ops(edition, review_by_id, source):
                   "start": start, "end": end, "form": r["form"], "kind": r["kind"]}
             if r["op"] == "add_mention" and r["kind"] == "person":
                 op["name"] = r["name"]
+                if "n" in r:
+                    op["n"] = r["n"]
             op.update(context=ctx, context_start=utf16(src, at), reasoning=r["reasoning"], decision=None)
             if r["op"] == "add_mention":
                 op["edited"] = None
@@ -486,6 +504,8 @@ def apply_decisions(curated_editions, mentions_editions, exported):
             m = {"kind": op["kind"], "where": where, **span}
             if op["kind"] == "person":
                 m["name"] = op["name"]
+                if op.get("n"):
+                    m["n"] = op["n"]
             m["qid"] = None  # copied from the decisions at extraction
             current.append(m)
         else:
