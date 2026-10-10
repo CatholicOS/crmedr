@@ -100,9 +100,9 @@ name, and `extract_persons.py` checks that it doesn't.
   the match is a stem match on another word.
 - **A mention carries `n`** when it is 2 or more, beside `name`. Its `qid` comes from
   `person_items.json` under the person key.
-- **Change-set ops** (`add_mention`, `set_span`) for a person carry `n` when it is 2 or more.
-  `apply` copies it onto the mention it writes into `mentions_curated.json`, and
-  `curated_mention` looks the QID up by the person key.
+- **Change-set ops:** an `add_mention` for a person carries `n` when it is 2 or more, and `apply`
+  copies it onto the mention it writes into `mentions_curated.json`. A `set_span` moves a mark
+  and keeps its `name` and `n`. `curated_mention` looks the QID up by the person key.
 - The `remove_mention` a place phrase gets when a person is named inside it is unchanged.
 
 ## Identification: `scripts/build_person_items.py`
@@ -130,14 +130,15 @@ name, and `extract_persons.py` checks that it doesn't.
   - the QID, for an identified person (as now);
   - `name:<name>`, for an unidentified person with `n = 1`, so unidentified namesakes in
     different eulogies still share a heading (as now);
-  - `name:<eulogy>:<name>#<n>`, for an unidentified person with `n ≥ 2`, a heading of their own.
+  - `name:<name>#<n>@<eulogy>`, for an unidentified person with `n ≥ 2`, a heading of their own.
 
   So two unidentified Felixes of one footnote are two headings, and each gets their line. The
-  headings sort by name, then by key, which puts the first Felix first.
+  headings sort by name, then by key; `name:Felix` is a prefix of `name:Felix#2@…`, so the first
+  Felix comes first.
 - **Review card** (`resolve_person`): `ResolvePersonOp` gains an optional `n`. The card shows the
   ordinal beside the name ("Felix — the 2nd of this name in this eulogy"), in all six locales.
-- **Mention ops**: `AddMentionOp` and `SetSpanOp` gain an optional `n`. The mention card shows
-  the same ordinal beside the name.
+- **Mention ops**: `AddMentionOp` gains an optional `n`. The mention card shows the same ordinal
+  beside the name.
 
 ## Rollout
 
