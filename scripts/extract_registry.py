@@ -889,6 +889,12 @@ EDITION_NOTES = {
             "(nine companions, martyrs: ten in all)."
         ),
     },
+    "mr:1124-andreas-dung-lac-et-socii": {
+        EDITION_LA: (
+            "Misprint: footnote 1 prints \"Emmanuel Lê Văn Phụng\" twice in a row; he is one martyr, "
+            "listed once in the index of names."
+        ),
+    },
     "mr:1124-balsamus": {
         EDITION_EN: (
             "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin "

@@ -72037,7 +72037,10 @@
       "asterisk": false,
       "country": "VN",
       "typology": "celebratio",
-      "unnumbered": true
+      "unnumbered": true,
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Misprint: footnote 1 prints \"Emmanuel Lê Văn Phụng\" twice in a row; he is one martyr, listed once in the index of names."
+      }
     },
     {
       "id": "mr:1124-chrysogonus",
