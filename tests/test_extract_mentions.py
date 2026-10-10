@@ -178,6 +178,15 @@ class RepeatedNamesTest(unittest.TestCase):
         self.assertEqual([m["form"] for m in ms], ["Felix"])
         self.assertEqual([(r["op"], r["form"]) for r in review], [("add_mention", "Felícis")])
 
+    def test_persons_of_one_name_take_its_matches_in_printed_order_whatever_the_case(self):
+        # Felix 1 is printed in the ablative ("cum ... Felice"), before Felix 2 in the nominative: each
+        # person of the name takes the next match in print, not the verbatim one first (issue #81).
+        note = "Quorum nómina: Saturninus cum filio, id est Felíce; Dativus, Felix."
+        persons = [{"name": "Felix", "where": {"footnote": 1}}, {"name": "Felix", "n": 2, "where": {"footnote": 1}}]
+        ms, review, _ = mentions_of("Romæ.", persons=persons, notes=[note])
+        self.assertEqual([(m["form"], m.get("n")) for m in ms], [("Felíce", None), ("Felix", 2)])
+        self.assertEqual(review, [])
+
     def test_spellings_of_one_name_are_one_name(self):
         # Two martyrs whose names differ only in their accents: name_key folds them together, so
         # extract_persons numbers the second, and each keeps its own words.

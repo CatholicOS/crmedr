@@ -106,7 +106,16 @@ LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia"
                        "catechista", "uxor", "coniux", "coniuges", "frater", "fratres", "soror", "sorores",
                        "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae",
                        # another of a name just listed: "alius Felix", "adhuc Rogatianus alius"
-                       "alius", "alia", "alter", "altera", "adhuc"}
+                       "alius", "alia", "alter", "altera", "adhuc",
+                       # the children a list gives after "cum quattuor filiis": "id est Saturnino..."
+                       "id", "est", "scilicet", "videlicet"}
+# A lowercase word that is part of the name before it: "Felix iunior", "Antonius Vilela iunior".
+EPITHETS = {"iunior", "senior"}
+ABLATIVE_EPITHETS = {"iuniore": "iunior", "seniore": "senior"}  # "Saturnino iuniore", after cum
+# The preposition that puts the names after it in the ablative, to the end of the list's group:
+# "Saturninus, presbyter, cum quattuor filiis, id est Saturnino iuniore et Felice..." (issue #81).
+# Others (a/ab, de, ex/e) open a religious name or a description ("ex Ordine Prædicatorum"), never names.
+ABLATIVE_PREPOSITIONS = {"cum"}
 # Words that mark a person as another of a name just listed, before or after it: "alius Felix",
 # "Rogatianus alius", "Iulia altera", "Theodori alterius" (the genitive, in a eulogy's text).
 REPEAT_WORDS = {"alius", "alia", "alter", "altera", "alterius", "adhuc"}
@@ -150,6 +159,8 @@ def _name_at_start(segment):
             break
         if bare[0].isupper():
             out.append(bare)
+        elif out and (fold(bare) in EPITHETS or fold(bare) in ABLATIVE_EPITHETS):
+            out.append(bare)  # "Felix iunior", or "Saturnino iuniore" after cum
         elif fold(bare) in PARTICLES and _particle_run(words, i):
             out.append(bare)
         elif fold(bare) == "et" and JESUS_AND_MARY.search(" ".join(out)) and \
@@ -183,14 +194,15 @@ def _split_et(segment):
     return parts
 
 
-def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=None):
+def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=None, lexicon=None):
     """The names a footnote list gives, in order, and the segments not read. A name printed twice
     in a row with no word marking another person ("alius") is read once, and appended to
     `printed_twice` when given: probably a misprint, for a curator's note. The positions (in the
     names) of those marked as another person of a name are appended to `marked` when given; a
     name's other names (after seu, vel, sive, or a segment "qui et X") go in `variants`,
     {position in names: [names]}, and the names whose other name could not be read in `unread`,
-    when given."""
+    when given. Names printed after "cum" are ablatives, read as nominatives that `lexicon` knows;
+    one it does not confirm (or with no lexicon) is not read."""
 
     def other_name(alt):
         """Record `alt`, another name of the name read last, or report it unread."""
@@ -207,7 +219,9 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
     body = without_parentheses(text[m.end():]).strip().rstrip(".")
     for group in body.split(";"):
         singles = []  # positions in names of the one-word names just before, in this group
+        ablative = False  # after "cum", to the end of the group
         for seg in (s.strip() for s in group.split(",")):
+            after_cum = any(w in ABLATIVE_PREPOSITIONS for w in seg.split())
             opening = VARIANT_OPENING.match(seg)
             if opening:
                 # "Dativus, qui et Sanator [et Victor]": another name of the person just read, then
@@ -227,9 +241,14 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
                 parts.append(own)
                 alts.append(alt)
             read = [(_name_at_start(p), p) for p in parts]
+            if ablative:
+                # "id est Saturnino iuniore": the nominative, or the printed name reported, never written.
+                unsure = [name for name, _ in read if name and not _ablative_name(name, lexicon)]
+                read = [(_ablative_name(name, lexicon) if name else None, name if name in unsure else p)
+                        for name, p in read]
             # "Ioanna, Magdalena et Petrina Sailland": first names sharing the last one's surname.
-            if len(read) > 1 and read[0][0] and len(read[0][0].split()) == 1 and \
-                    read[-1][0] and len(read[-1][0].split()) > 1:
+            if len(read) > 1 and read[0][0] and _name_words(read[0][0]) == 1 and \
+                    read[-1][0] and _name_words(read[-1][0]) > 1:
                 skipped += [names[i] for i in singles] + [seg]
                 for i in reversed(singles):
                     del names[i]
@@ -245,21 +264,27 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
                         if printed_twice is not None:
                             printed_twice.append(name)
                         continue  # printed twice in a row, no "alius": one person
-                    singles = singles + [len(names)] if len(name.split()) == 1 else []
+                    singles = singles + [len(names)] if _name_words(name) == 1 else []
                     if is_marked and marked is not None:
                         marked.append(len(names))
                     names.append(name)
                     last = name
                     for alt in alts[k]:
                         other_name(alt)
-                elif part[:1].isupper() or part[:1].isdigit():
+                elif part[:1].isupper() or part[:1].isdigit() or (ablative and part in unsure):
                     skipped.append(part)
                     last = None
                 else:
                     last = None
                 # A lowercase segment ("presbyteri ex Ordine...", "eius filius") describes the
                 # names before it: dropped.
+            ablative = ablative or after_cum
     return names, skipped
+
+
+def _name_words(name):
+    """The words of a name, its epithet ("iunior") apart."""
+    return sum(1 for w in name.split() if fold(w) not in EPITHETS)
 
 
 # Genitive ending -> the nominative endings it may come from (personal names).
@@ -300,6 +325,39 @@ def _declined(key, lexicon):
             stem = key[: -len(ending)]
             return {lexicon[stem + n] for n in noms if stem + n in lexicon}
     return set()
+
+
+# Ablative ending -> the nominative endings it may come from (personal names), longest first,
+# as GENITIVE_ENDINGS: "Felice" Felix, "Hilarione" Hilarion, "Saturnino" Saturninus.
+ABLATIVE_ENDINGS = [
+    ("ente", ("ens",)), ("ante", ("ans",)), ("ione", ("io", "ion")), ("one", ("o", "on")), ("ine", ("o", "en")),
+    ("ice", ("ix", "ex")), ("oce", ("ox",)), ("ide", ("is", "id")), ("ete", ("es",)), ("ate", ("as",)),
+    ("ore", ("or",)), ("ele", ("el",)), ("io", ("ius",)), ("o", ("us", "o")), ("e", ("is", "es", "e")),
+    ("a", ("a", "as")),
+]
+
+
+def ablative_nominative(word, lexicon):
+    """The nominative of an ablative name, when exactly one possibility is a known name; an epithet
+    ("iuniore") by its own nominative. None otherwise: the form is not guessed."""
+    key = name_key(word)
+    if key in ABLATIVE_EPITHETS:
+        return ABLATIVE_EPITHETS[key]
+    for ending, noms in ABLATIVE_ENDINGS:
+        if key.endswith(ending) and len(key) > len(ending) + 1:
+            stem = key[: -len(ending)]
+            found = {lexicon[stem + n] for n in noms if stem + n in lexicon}
+            if found:
+                return found.pop() if len(found) == 1 else None
+    return None
+
+
+def _ablative_name(name, lexicon):
+    """A name printed in the ablative as a nominative, every word converted ("Saturnino iuniore"
+    Saturninus iunior), or None when a word is not surely converted."""
+    words = [w if not w[:1].isupper() and fold(w) in PARTICLES else ablative_nominative(w, lexicon or {})
+             for w in name.split()]
+    return None if None in words else " ".join(words)
 
 
 def text_companions(text, lexicon, marked=None, variants=None, unread=None):

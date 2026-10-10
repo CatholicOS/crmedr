@@ -153,7 +153,7 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     for i, f in enumerate(footnotes, start=1):
         marks, fvars = [], {}
         names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks, variants=fvars,
-                                    unread=unread_text)
+                                    unread=unread_text, lexicon=lexicon)
         skipped += bad
         for j, n in enumerate(names):
             add(n, {"footnote": i}, marked=j in marks, also=[full_variant(n, v) for v in fvars.get(j, [])])
@@ -211,8 +211,11 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
             if not isinstance(n, int) or not 1 <= n <= len(notes):
                 errors.append(f"{mrid}: {p['name']!r} in footnote {n}, which the eulogy does not have")
                 continue
-            words, name = _words(without_parentheses(notes[n - 1]["text"])), _words(p["name"])
-            if not any(words[i:i + len(name)] == name for i in range(len(words))):
+            printed = without_parentheses(notes[n - 1]["text"])
+            words, name = _words(printed), _words(p["name"])
+            # As printed, or declined after "cum" ("Saturnino iuniore" for Saturninus iunior).
+            if not any(words[i:i + len(name)] == name for i in range(len(words))) and \
+                    not find_person(printed, p["name"]):
                 errors.append(f"{mrid}: {p['name']!r} is not printed in footnote {n}")
     return errors
 

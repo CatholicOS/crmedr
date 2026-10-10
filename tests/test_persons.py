@@ -591,5 +591,58 @@ class RepeatedNamesTest(unittest.TestCase):
         self.assertTrue(errors([dict(f1, name="Felix#2")]))          # # is the key's separator
 
 
+class AblativeNamesTest(unittest.TestCase):
+    """Names a footnote list prints after "cum" are ablatives (issue #81)."""
+
+    LEX = {pt.name_key(w): w for w in ["Saturninus", "Felix", "Maria", "Hilarion", "Dativus"]}
+    ABITINA = ("Quorum nomina: sancti Saturninus, presbyter, cum quattuor filiis, id est Saturnino iuniore et "
+               "Felice, lectoribus, Maria et Hilarione, infante; Dativus, qui et Sanator, Felix; alius Felix, "
+               "Felix iunior.")
+
+    def test_names_after_cum_are_read_as_nominatives(self):
+        names, skipped = pt.footnote_names(self.ABITINA, lexicon=self.LEX)
+        self.assertEqual(names, ["Saturninus", "Saturninus iunior", "Felix", "Maria", "Hilarion", "Dativus",
+                                 "Felix", "Felix", "Felix iunior"])
+        self.assertEqual(skipped, [])
+
+    def test_an_ablative_not_confirmed_by_the_lexicon_is_reported_not_written(self):
+        names, skipped = pt.footnote_names(self.ABITINA, lexicon={})
+        self.assertEqual(names[:2], ["Saturninus", "Dativus"])
+        self.assertEqual(skipped, ["Saturnino iuniore", "Felice", "Maria", "Hilarione"])
+        # Without a lexicon (as when the lexicon itself is built), nothing after "cum" is written.
+        names, _ = pt.footnote_names(self.ABITINA)
+        self.assertNotIn("Felice", names)
+        self.assertNotIn("Hilarione", names)
+
+    def test_the_ablative_ends_with_its_group(self):
+        names, _ = pt.footnote_names("Quorum nomina: Petrus cum filio, id est Paulo; Ioannes, Hilario.",
+                                     lexicon={pt.name_key(w): w for w in ["Paulus", "Hilario", "Petrus"]})
+        self.assertEqual(names, ["Petrus", "Paulus", "Ioannes", "Hilario"])
+
+    def test_ablative_endings(self):
+        lex = {pt.name_key(w): w for w in ["Felix", "Hilarion", "Victor", "Gregorius", "Agnes", "Florens", "Maria"]}
+        self.assertEqual([pt.ablative_nominative(w, lex) for w in
+                          ["Felice", "Hilarione", "Victore", "Gregorio", "Agnete", "Florente", "Maria", "Nemine"]],
+                         ["Felix", "Hilarion", "Victor", "Gregorius", "Agnes", "Florens", "Maria", None])
+        self.assertEqual(pt.ablative_nominative("iuniore", {}), "iunior")
+
+    def test_iunior_is_part_of_a_name(self):
+        names, _ = pt.footnote_names("Quorum nomina: Antonius Vilela Cid, Antonius Vilela iunior et filia eius, "
+                                     "Felix senior.")
+        self.assertEqual(names, ["Antonius Vilela Cid", "Antonius Vilela iunior", "Felix senior"])
+
+    def test_the_abitinian_felixes_are_numbered_in_printed_order(self):
+        import extract_persons as ep
+        foot = [{"mark": "1", "after": "x", "text": self.ABITINA}]
+        persons, issues = ep.eulogy_persons("mr:0212-martyres-abitinenses", "Sancti martyres Abitinenses", "…",
+                                            foot, self.LEX, {})
+        self.assertEqual([pt.person_key(p) for p in persons],
+                         ["Saturninus", "Saturninus iunior", "Felix", "Maria", "Hilarion", "Dativus", "Felix#2",
+                          "Felix#3", "Felix iunior"])
+        self.assertEqual(issues["skipped"], [])
+        self.assertEqual(ep.validate({"mr:0212-martyres-abitinenses": persons}, {"mr:0212-martyres-abitinenses": foot},
+                                     {"mr:0212-martyres-abitinenses"}), [])
+
+
 if __name__ == "__main__":
     unittest.main()
