@@ -45833,6 +45833,15 @@
           "end": 15,
           "check": "e2623090",
           "qid": "Q16869"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 24,
+          "end": 32,
+          "check": "ad4782ba",
+          "name": "Anatolius Constantinopoli",
+          "qid": null
         }
       ],
       "mr:0703-anatolius-laodiceae": [
@@ -45843,6 +45852,15 @@
           "end": 17,
           "check": "a71c07ab",
           "qid": "Q200030"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 47,
+          "check": "ad4782ba",
+          "name": "Anatolius Laodiceae",
+          "qid": null
         }
       ],
       "mr:0703-heliodorus": [
@@ -46032,6 +46050,17 @@
           "check": "d4031425",
           "name": "Raymundus Gayrard",
           "qid": null
+        }
+      ],
+      "mr:0703-thomas-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 29,
+          "check": "3f3d2856",
+          "name": "Thomas Apostolus",
+          "qid": "Q43669"
         }
       ],
       "mr:0704-andreas-cretensis": [
@@ -50710,6 +50739,15 @@
           "end": 14,
           "check": "b459f549",
           "qid": "Q160483"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 30,
+          "check": "7f310b34",
+          "name": "Myrope",
+          "qid": null
         }
       ],
       "mr:0713-paulus-liu-jinde": [
@@ -53314,6 +53352,17 @@
           "qid": null
         }
       ],
+      "mr:0720-elias-thesbita-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 33,
+          "check": "5dacd37b",
+          "name": "Elias Thesbita Propheta",
+          "qid": null
+        }
+      ],
       "mr:0720-frumentius": [
         {
           "kind": "place",
@@ -54105,6 +54154,17 @@
           "qid": null
         }
       ],
+      "mr:0723-ezechiel-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 40,
+          "check": "c04b2387",
+          "name": "Ezechiel Propheta",
+          "qid": null
+        }
+      ],
       "mr:0723-germanus-a-iesu-et-socii": [
         {
           "kind": "place",
@@ -54121,6 +54181,15 @@
           "end": 112,
           "check": "f2b7e1d8",
           "name": "Germanus a Iesu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 116,
+          "end": 148,
+          "check": "3972ae33",
+          "name": "Maria Emmanuel Perez Gimenez",
           "qid": null
         },
         {
@@ -55007,6 +55076,17 @@
           "qid": null
         }
       ],
+      "mr:0725-iacobus-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 30,
+          "check": "76d91bd8",
+          "name": "Iacobus Apostolus",
+          "qid": null
+        }
+      ],
       "mr:0725-ioannes-soreth": [
         {
           "kind": "place",
@@ -55110,6 +55190,15 @@
           "end": 21,
           "check": "8e6f9506",
           "qid": "Q209349"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
+          "end": 50,
+          "check": "577dc521",
+          "name": "Olympias",
+          "qid": "Q1609579"
         }
       ],
       "mr:0725-petrus-a-corde-et-socii": [
@@ -55128,6 +55217,15 @@
           "end": 68,
           "check": "b176bea2",
           "name": "Petrus a Corde",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 137,
+          "end": 181,
+          "check": "e1bfe986",
+          "name": "Benedictus a Virgine del Villar Solano Ruiz",
           "qid": null
         }
       ],
@@ -57019,6 +57117,15 @@
           "end": 17,
           "check": "0237769d",
           "qid": "Q617"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 65,
+          "check": "c7ed3468",
+          "name": "Leopoldus Mandic",
+          "qid": null
         }
       ],
       "mr:0730-mannis-guzman": [
@@ -57542,6 +57649,17 @@
           "check": "67d2bebc",
           "name": "Alexius Sobaszek",
           "qid": null
+        }
+      ],
+      "mr:0801-alphonsus-maria-de-liguori": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 15,
+          "end": 41,
+          "check": "95d421ca",
+          "name": "Alphonsus Maria de Liguori",
+          "qid": "Q273334"
         }
       ],
       "mr:0801-benvenutus-de-miguel-arahal": [
@@ -58548,6 +58666,15 @@
           "end": 10,
           "check": "2da01e03",
           "qid": "Q3746183"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 19,
+          "end": 21,
+          "check": "b7461bac",
+          "name": "Ia",
+          "qid": null
         }
       ],
       "mr:0804-ioannes-maria-vianney": [
@@ -59158,6 +59285,15 @@
           "end": 17,
           "check": "afd4a292",
           "qid": "Q13378"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 32,
+          "check": "2d0f0ce6",
+          "name": "Donatus Aretii",
+          "qid": null
         }
       ],
       "mr:0807-donatus-vesontione": [
@@ -59168,6 +59304,15 @@
           "end": 23,
           "check": "0b6f122a",
           "qid": "Q37776"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 32,
+          "end": 38,
+          "check": "2d0f0ce6",
+          "name": "Donatus Vesontione",
+          "qid": null
         }
       ],
       "mr:0807-edmundus-bojanowski": [
@@ -59197,6 +59342,15 @@
           "end": 20,
           "check": "7d4128b9",
           "qid": "Q205905"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 73,
+          "check": "7d7664fc",
+          "name": "Ioannes Woodcock",
+          "qid": null
         }
       ],
       "mr:0807-iordanus-forzate": [
@@ -64061,6 +64215,17 @@
           "qid": "Q43739"
         }
       ],
+      "mr:0820-samuel-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 38,
+          "check": "998c8fd6",
+          "name": "Samuel Propheta",
+          "qid": null
+        }
+      ],
       "mr:0821-agathonicus-et-zoticus": [
         {
           "kind": "place",
@@ -64958,6 +65123,17 @@
           "qid": "Q651657"
         }
       ],
+      "mr:0824-bartholomaeus-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 35,
+          "check": "e873d5ce",
+          "name": "Bartholomaeus Apostolus",
+          "qid": null
+        }
+      ],
       "mr:0824-ceslaus-jozwiak-et-socii": [
         {
           "kind": "place",
@@ -65588,6 +65764,15 @@
           "end": 17,
           "check": "926ce0f0",
           "qid": "Q23067"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 53,
+          "check": "de148bfd",
+          "name": "Teresia Jornet Ibars",
+          "qid": null
         }
       ],
       "mr:0826-victor": [
@@ -65693,6 +65878,15 @@
           "end": 17,
           "check": "a9ed8775",
           "qid": "Q161491"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 53,
+          "check": "e08a2c63",
+          "name": "Dominicus Barberi",
+          "qid": "Q740904"
         }
       ],
       "mr:0827-ferdinandus-gonzalez-anon": [
@@ -66696,6 +66890,15 @@
           "end": 23,
           "check": "94accad0",
           "qid": "Q647"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 59,
+          "check": "10318270",
+          "name": "Ioanna Jugan",
+          "qid": null
         }
       ],
       "mr:0829-ioannes-baptista": [
