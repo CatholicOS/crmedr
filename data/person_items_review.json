@@ -68350,6 +68350,84 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Felix iunior",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Felix iunior",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "status: the best candidate (Q16711447) fails it",
+        "name: the best candidate (Q16711447) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q16711447",
+          "label": "Felix Iuniorinus Polemius",
+          "description": "",
+          "names": [
+            "Felix Iuniorinus Polemius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0212-martyres-abitinenses|Felix#2",
       "eulogy": "mr:0212-martyres-abitinenses",
       "day": "02-12",
@@ -73459,6 +73537,66 @@
           ]
         }
       ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Saturninus iunior",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Saturninus iunior",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -111497,8 +111635,7 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q3768461) fails it",
-        "name: the best candidate (Q3768461) fails it"
+        "status: the best candidate (Q3768461) fails it"
       ],
       "candidates": [
         {
@@ -111519,6 +111656,7 @@
           "feast": [],
           "evidence": [
             "human",
+            "name",
             "death"
           ]
         },
@@ -197370,10 +197508,45 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q25438998) fails it",
-        "death: the best candidate (Q25438998) fails it"
+        "death: the best candidate (Q705378) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q705378",
+          "label": "Kaléb",
+          "description": "king of Aksum from 514 to 542",
+          "names": [
+            "Elesbaan",
+            "Elesboam",
+            "Eleshaah",
+            "Ella Asbeha",
+            "Ellesboas",
+            "Ellestheaeus",
+            "Hellesthaeus",
+            "Hellestheaeus",
+            "Kaleb",
+            "Kaleb di Axum",
+            "Kaléb",
+            "King Alaasbaha the ||",
+            "King Kaleb",
+            "Saint Elesbaan",
+            "St. Elesbaan"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0450",
+          "died": "0540",
+          "feast": [
+            "Q2956"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
         {
           "wikidata": "Q25438998",
           "label": "John T.D. Caleb",
@@ -197537,22 +197710,6 @@
           "feast": [],
           "evidence": [
             "human"
-          ]
-        },
-        {
-          "wikidata": "Q3650584",
-          "label": "Caleb",
-          "description": "male given name",
-          "names": [
-            "Caleb"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
           ]
         }
       ],
@@ -375012,6 +375169,22 @@
           ]
         },
         {
+          "wikidata": "Q109515026",
+          "label": "Mamés",
+          "description": "male given name",
+          "names": [
+            "Mamés"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
           "wikidata": "Q114712303",
           "label": "Mamas",
           "description": "2022 song by Anne Wilson and Hillary Scott",
@@ -375063,6 +375236,22 @@
           ]
         },
         {
+          "wikidata": "Q76009971",
+          "label": "Mames",
+          "description": "family name",
+          "names": [
+            "Mames"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
           "wikidata": "Q96653572",
           "label": "Mamas",
           "description": "male given name",
@@ -375079,56 +375268,27 @@
           ]
         },
         {
+          "wikidata": "Q1045638",
+          "label": "cabbage moth",
+          "description": "species of insect",
+          "names": [
+            "Barathra brassicae",
+            "Mamestra brassicae",
+            "cabbage moth"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
           "wikidata": "Q110272156",
           "label": "Mamas 3 (Pauly-Wissowa)",
           "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
           "names": [
             "Mamas 3 (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q12035179",
-          "label": "Mamas & Papas",
-          "description": "2010 film by Alice Nellis",
-          "names": [
-            "Mamas & Papas"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q1270510",
-          "label": "Mamasani County",
-          "description": "county in Fars, Iran",
-          "names": [
-            "Mamasani County",
-            "shahrestān di Mamasani"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q15347",
-          "label": "Mamasa",
-          "description": "regency in West Sulawesi Province, Indonesia",
-          "names": [
-            "Mamasa",
-            "Mamasa Regency",
-            "Reggenza di Mamasa"
           ],
           "human": false,
           "statuses": [],
@@ -484480,6 +484640,42 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:1003-ambrosius-franciscus-ferro-et-socii|Antonius Vilela iunior",
+      "eulogy": "mr:1003-ambrosius-franciscus-ferro-et-socii",
+      "day": "10-03",
+      "typology": "dies_natalis",
+      "subject": "Beati Ambrosius Franciscus Ferro et socii",
+      "name": "Antonius Vilela iunior",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Ambrosius Franciscus Ferro",
+        "Antonius Baracho",
+        "Antonius Vilela Cid",
+        "Didacus Pereira",
+        "Emmanuel Rodrigues Moura",
+        "Francisci Dias",
+        "Franciscus de Bastos",
+        "Franciscus Mendes Pereira",
+        "Ioannes da Silveira",
+        "Ioannes Lostau Navarro",
+        "Ioannes Martins",
+        "Iosephus",
+        "Matthæus Moreira",
+        "Simon Correia",
+        "Stephanus Machado de Miranda",
+        "Vincentius de Souza Pereira"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:1003-ambrosius-franciscus-ferro-et-socii|Didacus Pereira",
       "eulogy": "mr:1003-ambrosius-franciscus-ferro-et-socii",
       "day": "10-03",
@@ -559749,10 +559945,27 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "name: the best candidate (Q1897597) fails it",
-        "death: the best candidate (Q1897597) fails it"
+        "status: the best candidate (Q138757967) fails it",
+        "death: the best candidate (Q138757967) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q138757967",
+          "label": "Hugo Cook",
+          "description": "British racing driver (born 2004)",
+          "names": [
+            "Hugo Cook"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
         {
           "wikidata": "Q1897597",
           "label": "Hugh Cook Faringdon",
