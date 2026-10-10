@@ -463,3 +463,13 @@ class VariantsTest(unittest.TestCase):
         cands = bp.gather(person, Client())
         self.assertIn("Cunegundis", searched)
         self.assertEqual(bp.evaluate(person, cands)["auto"]["wikidata"], "Q1")
+
+    def test_a_queued_op_takes_the_persons_details_even_when_the_lookup_fails(self):
+        index = self.index()
+        review = bp.new_changeset([])
+        bp.propose({}, review, {k: dict(v, also=[]) for k, v in index.items()}, FakeClient({"Kinga": []}))
+        before = review["operations"][0]
+        bp.propose({}, review, index, FakeClient(fail={"Kinga", "Cunegundis"}))
+        op = review["operations"][0]
+        self.assertEqual(op["also"], ["Cunegundis"])
+        self.assertEqual((op["candidates"], op["failed"]), (before["candidates"], before["failed"]))

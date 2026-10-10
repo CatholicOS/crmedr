@@ -265,6 +265,14 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     not_processed = []
     failures = 0
     pending = {}  # automatic results, written once it is known which items are shared
+
+    def keep(key, person):
+        """A queued op not looked up this time takes the person's details (other names, companions)
+        and keeps its candidates and reasons."""
+        if key in ops:
+            old = ops[key]
+            ops[key] = make_op(key, person, {"failed": old["failed"], "candidates": old["candidates"]}, old)
+
     for key in sorted(index):
         person = index[key]
         if _decided(items, person):
@@ -272,12 +280,14 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             continue
         if failures >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((key, "skipped: Wikidata unavailable"))
+            keep(key, person)
             continue
         try:
             result = evaluate(person, gather(person, client))
         except WikidataError as e:
             not_processed.append((key, str(e)))
             failures += 1
+            keep(key, person)
             continue
         failures = 0
         if key in force_review:

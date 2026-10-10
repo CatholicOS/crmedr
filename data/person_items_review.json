@@ -73690,6 +73690,9 @@
       "typology": "commemoratio",
       "subject": "Sancti Martyres Abitinenses",
       "name": "Telica",
+      "also": [
+        "Tazelita"
+      ],
       "where": {
         "footnote": 1
       },
@@ -73699,7 +73702,6 @@
         "Maria",
         "Hilarione",
         "Dativus",
-        "Sanator",
         "Felix",
         "Emeritus",
         "Ampelius",
@@ -111238,6 +111240,9 @@
       "typology": "dies_natalis",
       "subject": "Beatus Ioannes Sordi",
       "name": "Ioannes Sordi",
+      "also": [
+        "Ioannes Cacciafronte"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -197108,6 +197113,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Caleb",
       "name": "Caleb",
+      "also": [
+        "Elésbaan"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -226278,6 +226286,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Matthias Kalemba Mulumba",
       "name": "Matthias Kalemba Mulumba",
+      "also": [
+        "Matthias Kalemba Fortis"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -374691,6 +374702,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Mamas",
       "name": "Mamas",
+      "also": [
+        "Mames"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -402307,6 +402321,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Ioannes Maria Du Lau et socii",
       "name": "Claudius Cayx",
+      "also": [
+        "Claudius Dumas"
+      ],
       "where": {
         "footnote": 1
       },
@@ -408656,6 +408673,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Ioannes Maria Du Lau et socii",
       "name": "Lupus Thomas",
+      "also": [
+        "Lupus Bonnotte"
+      ],
       "where": {
         "footnote": 1
       },
@@ -416477,6 +416497,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Andreas Abel Alricy et socii",
       "name": "Ioannes Franciscus Maria Benoît",
+      "also": [
+        "Ioannes Franciscus Maria Vourlat"
+      ],
       "where": {
         "footnote": 1
       },
@@ -499526,6 +499549,9 @@
       "typology": "dies_natalis",
       "subject": "Sanctus Gaudentius",
       "name": "Gaudentius",
+      "also": [
+        "Radzim"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -559502,6 +559528,9 @@
       "typology": "dies_natalis",
       "subject": "Beati Hugo Faringdon et socii",
       "name": "Hugo Faringdon",
+      "also": [
+        "Hugo Cook"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
