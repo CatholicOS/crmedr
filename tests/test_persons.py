@@ -137,7 +137,8 @@ class EulogyPersonsTest(unittest.TestCase):
             {"name": "Ioannes de Goto Soan", "where": {"footnote": 1}},
             {"name": "Thomas", "where": {"footnote": 1}},
         ])
-        self.assertEqual(issues, {"uncertain": [], "skipped": [], "printed_twice": [], "socii_without_names": False})
+        self.assertEqual(issues, {"uncertain": [], "skipped": [], "printed_twice": [], "variants_unread": [],
+                                  "socii_without_names": False})
 
     def test_a_curated_entry_replaces_extraction(self):
         persons, _ = ep.eulogy_persons("mr:1003-duo-ewaldi", "Duo Ewaldi", "…", [], {},
@@ -340,6 +341,64 @@ class VariantsTest(unittest.TestCase):
             variants=variants, unread=unread)
         self.assertEqual((names, uncertain), (["Marina", "Theodorus", "Petrus"], []))
         self.assertEqual((variants, unread), ({0: ["Margarita"]}, ["Theodorus"]))
+
+    def test_footnote_variants_become_also_and_qui_et_is_no_person(self):
+        import extract_persons as ep
+        foot = [{"mark": "1", "after": "x", "text": "Quorum nomina: Dativus, qui et Sanator, Maximianus seu Maximus."}]
+        persons, issues = ep.eulogy_persons("mr:0212-x-et-socii", "", "…", foot, {}, {})
+        self.assertEqual(persons, [
+            {"name": "Dativus", "also": ["Sanator"], "where": {"footnote": 1}},
+            {"name": "Maximianus", "also": ["Maximus"], "where": {"footnote": 1}},
+        ])
+        self.assertEqual(issues["variants_unread"], [])
+
+    def test_a_text_subjects_variant_after_seu(self):
+        import extract_persons as ep
+        lex = {pt.name_key(w): w for w in ["Ioannes", "Kinga", "Cunegundis"]}
+        persons, _ = ep.eulogy_persons("mr:0316-ioannes-sordi", "Sanctus Ioannes Sordi",
+                                       "Mántuæ, sancti Ioánnis Sordi seu Cacciafronte, epíscopi.", [], lex, {})
+        self.assertEqual(persons, [{"name": "Ioannes Sordi", "also": ["Ioannes Cacciafronte"], "where": "text"}])
+        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+                                       "In Polónia, sanctæ Kingæ seu Cunegúndis, vírginis.", [], lex, {})
+        self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
+
+    def test_an_unread_text_variant_is_an_issue_not_a_guess(self):
+        import extract_persons as ep
+        # Found as "Theodóri"; "Ficténtis" is a genitive the lexicon does not know: reported, not guessed.
+        # (Mamas himself is not found at all, "Mamántis" being irregular: his variant is curated, Task 5.)
+        lex = {pt.name_key("Theodorus"): "Theodorus"}
+        persons, issues = ep.eulogy_persons("mr:0101-theodorus", "Sanctus Theodorus",
+                                            "Romæ, sancti Theodóri seu Ficténtis, mártyris.", [], lex, {})
+        self.assertEqual((persons, issues["variants_unread"]), ([{"name": "Theodorus", "where": "text"}], ["Theodorus"]))
+
+    def test_curated_variants_are_added_and_checked(self):
+        import extract_persons as ep
+        by_id = {"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}
+        self.assertEqual(ep.apply_curated_variants(by_id, {"$comment": "x", "mr:0817-mamas": {"Mamas": ["Mames"]}}), [])
+        self.assertEqual(by_id["mr:0817-mamas"], [{"name": "Mamas", "also": ["Mames"], "where": "text"}])
+        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0817-mamas": {"Mamas": ["Mames"]}}), [])  # no repeat
+        self.assertEqual(by_id["mr:0817-mamas"][0]["also"], ["Mames"])
+        for bad in ({"mr:0817-mamas": {"Nemo": ["X"]}}, {"mr:9999-x": {"Mamas": ["X"]}},
+                    {"mr:0817-mamas": {"Mamas": ["Mamas"]}}, {"mr:0817-mamas": {"Mamas": ["Mam#es"]}},
+                    {"mr:0817-mamas": {"Mamas": [""]}}, {"mr:0817-mamas": {"Mamas": "Mames"}}):
+            self.assertTrue(ep.apply_curated_variants({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}, bad), bad)
+
+    def test_validate_checks_also(self):
+        import extract_persons as ep
+        foot = {"mr:0212-x": [{"mark": "1", "after": "x", "text": "Quorum nomina: Dativus, qui et Sanator."}]}
+        d = {"name": "Dativus", "where": {"footnote": 1}}
+        ok = ep.validate({"mr:0212-x": [dict(d, also=["Sanator"])]}, foot, {"mr:0212-x"})
+        self.assertEqual(ok, [])
+        for also in ([], ["Dativus"], ["Sanator", "Sanator"], ["Sa#nator"], "Sanator"):
+            self.assertTrue(ep.validate({"mr:0212-x": [dict(d, also=also)]}, foot, {"mr:0212-x"}), also)
+
+    def test_the_report_lists_unread_variants_without_the_printed_form(self):
+        import extract_persons as ep
+        report = ep.render_report({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]},
+                                  {"mr:0817-mamas": {"uncertain": [], "skipped": [], "printed_twice": [],
+                                                     "variants_unread": ["Mamas"], "socii_without_names": False}})
+        self.assertIn("- mr:0817-mamas: Mamas", report)
+        self.assertNotIn("Mamétis", report)
 
 
 class SamePersonTest(unittest.TestCase):

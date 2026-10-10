@@ -17,12 +17,15 @@ Standard library only.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
 from extract_typology import latin_texts, load_texts
 from gazetteer_text import fold
-from persons_text import WORD, footnote_names, name_key, subject_names, text_companions, without_parentheses
+from mentions_text import find_person
+from persons_text import (WORD, _genitive_ending, footnote_names, full_variant, name_key, nominative, person_key,
+                          subject_names, text_companions, without_parentheses)
 
 EDITION = "martyrologium_romanum_2004"
 COMMENT = ("The saints and blessed each eulogy commemorates, by edition: the Latin nominative name "
@@ -50,56 +53,107 @@ def _same_person(a, b):
     return n > 0 and x[:n] == y[:n]
 
 
+# The other name printed right after a person in the text: "Mamántis seu Mamétis".
+VARIANT_AFTER = re.compile(r"\s*,?\s*(?:seu|vel|sive)\s+((?:[^\W\d_][\w'’\-]*)(?:\s+[^\W\d_][\w'’\-]*)*)")
+
+
+def text_variants(text, name, lexicon):
+    """A text person's other name printed right after them, as a whole nominative name, and
+    whether one is printed but could not be read (a genitive the lexicon does not know). The
+    variant's capitalized words only; an undeclined word ("Cacciafronte") is taken as printed."""
+    found = find_person(text or "", name)
+    if not found:
+        return [], False
+    m = VARIANT_AFTER.match(text, found[0][1])
+    if not m:
+        return [], False
+    words = []
+    for w in m.group(1).split():
+        if not w[:1].isupper():
+            break
+        nom = nominative(w, lexicon)
+        if nom is None and _genitive_ending(name_key(w)):
+            return [], True
+        words.append(nom or w)
+    return ([full_variant(name, " ".join(words))] if words else []), False
+
+
+def _with_also(p, variants):
+    """The person with `variants` added to `also`, in order, without repeats or their own name;
+    keys in the order name, n, also, where."""
+    also = list(dict.fromkeys(v for v in [*p.get("also", []), *variants] if name_key(v) != name_key(p["name"])))
+    out = {k: v for k, v in p.items() if k not in ("also", "where")}
+    if also:
+        out["also"] = also
+    out["where"] = p["where"]
+    return out
+
+
 def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     if mrid in curated:
         return [dict(p) for p in curated[mrid]], {"uncertain": [], "skipped": [], "printed_twice": [],
-                                                  "socii_without_names": False}
+                                                  "variants_unread": [], "socii_without_names": False}
     persons = []
     first = {}  # name_key -> where the name was first listed
     count = {}  # name_key -> the persons of that name so far
     listed = {}  # (name_key, footnote) -> its occurrences in that footnote's list so far
+    holder = {}  # name_key -> the position of the first person of that name
     subjects = subject_names(mrid, subject)
 
-    def add(name, where, marked=False):
+    def add(name, where, marked=False, also=()):
         # A fuller or shorter form of a subject is the subject, in the subject's form.
         if any(_same_person(name, s) for s in subjects if s != name):
             return
         key = name_key(name)
         if where == "text":
-            if key in first and not marked:
-                return  # named again in the text: the same person, unless marked ("Theodori alterius")
+            same = key in first and not marked  # named again in the text, unless marked ("Theodori alterius")
         else:
             here = (key, where["footnote"])
             listed[here] = listed.get(here, 0) + 1
             # A name listed before (the text, an earlier footnote) is that person again the first time
             # this list names it, unless marked ("alius Felix"); any other occurrence in one list is
             # another person of that name.
-            if key in first and first[key] != where and listed[here] == 1 and not marked:
-                return
+            same = key in first and first[key] != where and listed[here] == 1 and not marked
+        if same:
+            if also and key in holder:
+                persons[holder[key]] = _with_also(persons[holder[key]], also)  # the other names follow him
+            return
         first.setdefault(key, where)
         count[key] = count.get(key, 0) + 1
         p = {"name": name}
         if count[key] > 1:
             p["n"] = count[key]
         p["where"] = where
-        persons.append(p)
+        holder.setdefault(key, len(persons))
+        persons.append(_with_also(p, also))
 
     for n in subjects:
         add(n, "text")
-    uncertain, skipped, printed_twice = [], [], []
+    uncertain, skipped, printed_twice, unread_text = [], [], [], []
     socii = mrid.endswith("-et-socii")
     if socii:
-        marks = []
-        names, uncertain = text_companions(text or "", lexicon, marked=marks)
+        marks, tvars = [], {}
+        names, uncertain = text_companions(text or "", lexicon, marked=marks, variants=tvars, unread=unread_text)
         for i, n in enumerate(names):
-            add(n, "text", marked=i in marks)
+            add(n, "text", marked=i in marks, also=[full_variant(n, v) for v in tvars.get(i, [])])
     for i, f in enumerate(footnotes, start=1):
-        marks = []
-        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks)
+        marks, fvars = [], {}
+        names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks, variants=fvars)
         skipped += bad
         for j, n in enumerate(names):
-            add(n, {"footnote": i}, marked=j in marks)
+            add(n, {"footnote": i}, marked=j in marks, also=[full_variant(n, v) for v in fvars.get(j, [])])
+    # The other name printed right after a person in the text ("Kingae seu Cunegundis").
+    variants_unread = list(dict.fromkeys(unread_text))
+    for i, p in enumerate(persons):
+        if p["where"] != "text":
+            continue
+        found, unread = text_variants(text, p["name"], lexicon)
+        if found:
+            persons[i] = _with_also(p, found)
+        elif unread and not p.get("also") and p["name"] not in variants_unread:
+            variants_unread.append(p["name"])
     return persons, {"uncertain": uncertain, "skipped": skipped, "printed_twice": printed_twice,
+                     "variants_unread": variants_unread,
                      "socii_without_names": socii and len(persons) <= len(subjects)}
 
 
@@ -122,6 +176,14 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
                 continue
             if "#" in p["name"]:
                 errors.append(f"{mrid}: {p['name']!r} contains '#', which separates a person key's n")
+            if "also" in p:
+                also = p["also"]
+                if (not isinstance(also, list) or not also
+                        or any(not isinstance(v, str) or not v.strip() or "#" in v
+                               or name_key(v) == name_key(p["name"]) for v in also)
+                        or len({name_key(v) for v in also}) != len(also)):
+                    errors.append(f"{mrid}: {p['name']!r} has a bad also {also!r}: other names, each once, "
+                                  "never their own, without '#'")
             numbered.setdefault(name_key(p["name"]), []).append(n)
         for key, ns in numbered.items():
             if sorted(ns) != list(range(1, len(ns) + 1)):
@@ -137,6 +199,28 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
             words, name = _words(without_parentheses(notes[n - 1]["text"])), _words(p["name"])
             if not any(words[i:i + len(name)] == name for i in range(len(words))):
                 errors.append(f"{mrid}: {p['name']!r} is not printed in footnote {n}")
+    return errors
+
+
+def apply_curated_variants(persons_by_id, curated):
+    """Adds data/persons_variants_curated.json ({eulogy: {person key: [names]}}) to the persons'
+    `also`, in order and without repeats; it never replaces a eulogy's persons. Returns the errors."""
+    errors = []
+    for mrid, by_key in curated.items():
+        if mrid.startswith("$"):
+            continue
+        persons = persons_by_id.get(mrid, [])
+        for key, names in by_key.items():
+            i = next((i for i, p in enumerate(persons) if person_key(p) == key), None)
+            if i is None:
+                errors.append(f"{mrid}: {key!r} is not a person of this eulogy")
+                continue
+            if not isinstance(names, list) or not all(
+                    isinstance(v, str) and v.strip() and "#" not in v
+                    and name_key(v) != name_key(persons[i]["name"]) for v in names):
+                errors.append(f"{mrid}: {key!r}: variants must be a list of other names, without '#'")
+                continue
+            persons[i] = _with_also(persons[i], names)
     return errors
 
 
@@ -162,6 +246,9 @@ def render_report(persons_by_id, issues, noted=frozenset()):
          "add a 2004 Latin note in EDITION_NOTES of scripts/extract_registry.py)",
          [f"{m}: {name} ({'noted' if m in noted else 'needs a curator note'})"
           for m, i in issues.items() for name in i.get("printed_twice", [])]),
+        ("Persons whose other name (after seu, vel or sive) was not read: add it in "
+         "data/persons_variants_curated.json",
+         [f"{m}: {name}" for m, i in issues.items() for name in i.get("variants_unread", [])]),
     ]
     for title, items in sections:
         lines += [f"## {title} ({len(items)})", ""] + [f"- {x}" for x in items] + [""]
@@ -197,6 +284,16 @@ def main():
             persons_by_id[e["id"]] = persons
         if any(iss.values()):
             issues[e["id"]] = iss
+    variants_path = repo_root / "data" / "persons_variants_curated.json"
+    curated_variants = json.loads(variants_path.read_text(encoding="utf-8")) if variants_path.exists() else {}
+    variant_errors = apply_curated_variants(persons_by_id, curated_variants)
+    if variant_errors:
+        sys.exit("invalid curated variants:\n" + "\n".join(variant_errors))
+    # A variant curated since is no longer unread; a eulogy left without an issue is not listed.
+    for mrid, iss in issues.items():
+        named = {p["name"] for p in persons_by_id.get(mrid, []) if p.get("also")}
+        iss["variants_unread"] = [n for n in iss.get("variants_unread", []) if n not in named]
+    issues = {mrid: iss for mrid, iss in issues.items() if any(iss.values())}
     errors = validate(persons_by_id, footnotes, {e["id"] for e in current})
     if errors:
         sys.exit("invalid persons:\n" + "\n".join(errors))

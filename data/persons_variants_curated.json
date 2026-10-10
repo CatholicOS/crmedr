@@ -1,0 +1,4 @@
+{
+  "$comment": "Curators' other names for persons of data/persons.json: {eulogy: {person key (name, or name#n): [other names as Latin nominatives, in printed order]}}. Added to the extracted variants (also) by scripts/extract_persons.py; it never replaces a eulogy's persons. See docs/superpowers/specs/2026-10-10-name-variants-design.md.",
+  "mr:0817-mamas": { "Mamas": ["Mames"] }
+}
