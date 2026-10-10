@@ -53,29 +53,39 @@ def _same_person(a, b):
     return n > 0 and x[:n] == y[:n]
 
 
-# The other name printed right after a person in the text: "Mamántis seu Mamétis".
-VARIANT_AFTER = re.compile(r"\s*,?\s*(?:seu|vel|sive)\s+((?:[^\W\d_][\w'’\-]*)(?:\s+[^\W\d_][\w'’\-]*)*)")
+# An other name printed right after a person in the text: "Mamántis seu Mamétis", "Dativi, qui et Felicis".
+VARIANT_AFTER = re.compile(r"\s*,?\s*(?:seu|vel|sive|(?:qui|quae|quæ)\s+et)\s+", re.I)
+NAME_WORD = re.compile(r"[^\W\d_][\w'’\-]*")
+SPACES = re.compile(r"[ \t]+")
 
 
 def text_variants(text, name, lexicon):
-    """A text person's other name printed right after them, as a whole nominative name, and
-    whether one is printed but could not be read (a genitive the lexicon does not know). The
-    variant's capitalized words only; an undeclined word ("Cacciafronte") is taken as printed."""
+    """A text person's other names printed right after them, each after its own connective ("X seu
+    Y sive Z"), as whole nominative names, and whether one is printed but could not be read (a
+    genitive the lexicon does not know). Each variant is its capitalized words; an undeclined word
+    ("Cacciafronte") is taken as printed."""
     found = find_person(text or "", name)
     if not found:
         return [], False
-    m = VARIANT_AFTER.match(text, found[0][1])
-    if not m:
-        return [], False
-    words = []
-    for w in m.group(1).split():
-        if not w[:1].isupper():
+    out, unread, pos = [], False, found[0][1]
+    while m := VARIANT_AFTER.match(text, pos):
+        words, end, at = [], None, m.end()
+        while (w := NAME_WORD.match(text, at)) and w.group(0)[0].isupper():
+            words.append(w.group(0))
+            end = w.end()
+            gap = SPACES.match(text, end)
+            if not gap:
+                break
+            at = gap.end()
+        if not words:
             break
-        nom = nominative(w, lexicon)
-        if nom is None and _genitive_ending(name_key(w)):
-            return [], True
-        words.append(nom or w)
-    return ([full_variant(name, " ".join(words))] if words else []), False
+        noms = [nominative(w, lexicon) or (w if not _genitive_ending(name_key(w)) else None) for w in words]
+        if None in noms:
+            unread = True
+        else:
+            out.append(full_variant(name, " ".join(noms)))
+        pos = end
+    return out, unread
 
 
 def _with_also(p, variants):
@@ -155,7 +165,7 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
         found, unread = text_variants(text, p["name"], lexicon)
         if found:
             persons[i] = _with_also(p, found)
-        elif unread and not p.get("also") and p["name"] not in variants_unread:
+        if unread and p["name"] not in variants_unread:
             variants_unread.append(p["name"])
     return persons, {"uncertain": uncertain, "skipped": skipped, "printed_twice": printed_twice,
                      "variants_unread": variants_unread,
@@ -238,6 +248,18 @@ def apply_curated_variants(persons_by_id, curated):
     return errors
 
 
+def resolve_unread(persons_by_id, issues, curated):
+    """The issues with each unread other name left out once a curator has given that person's other
+    names in data/persons_variants_curated.json; a eulogy left without an issue is dropped."""
+    out = {}
+    for mrid, iss in issues.items():
+        cured = {key.split("#")[0] for key in (curated.get(mrid) or {})}
+        iss = {**iss, "variants_unread": [n for n in iss.get("variants_unread", []) if n not in cured]}
+        if any(iss.values()):
+            out[mrid] = iss
+    return out
+
+
 def render_json(persons_by_id):
     doc = {"$comment": COMMENT, "editions": {EDITION: persons_by_id}}
     return json.dumps(doc, ensure_ascii=False, indent=2) + "\n"
@@ -303,11 +325,7 @@ def main():
     variant_errors = apply_curated_variants(persons_by_id, curated_variants)
     if variant_errors:
         sys.exit("invalid curated variants:\n" + "\n".join(variant_errors))
-    # A variant curated since is no longer unread; a eulogy left without an issue is not listed.
-    for mrid, iss in issues.items():
-        named = {p["name"] for p in persons_by_id.get(mrid, []) if p.get("also")}
-        iss["variants_unread"] = [n for n in iss.get("variants_unread", []) if n not in named]
-    issues = {mrid: iss for mrid, iss in issues.items() if any(iss.values())}
+    issues = resolve_unread(persons_by_id, issues, curated_variants)
     errors = validate(persons_by_id, footnotes, {e["id"] for e in current})
     if errors:
         sys.exit("invalid persons:\n" + "\n".join(errors))

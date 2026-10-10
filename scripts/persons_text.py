@@ -115,6 +115,8 @@ REPEAT_WORDS = {"alius", "alia", "alter", "altera", "alterius", "adhuc"}
 VARIANT_WORDS = {"seu", "vel", "sive"}
 VARIANT_INSIDE = re.compile(r"\s+(?:seu|vel|sive)\s+", re.I)
 VARIANT_OPENING = re.compile(r"^(?:qui|quae|quæ)\s+et\s+", re.I)
+# "Dativus qui et Sanator" inside a segment, or in a eulogy's text before a capitalized name: read as "seu".
+QUI_ET = re.compile(r"\s+(?:qui|quae|quæ)\s+et\s+(?=[^\W\d_])", re.I)
 
 
 def full_variant(name, variant):
@@ -216,12 +218,14 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
                 seg = " et ".join(rest[1:])
                 if not seg:
                     continue
-            # "Maximianus seu Maximus [et Felix]": each part's other name, apart from its name.
+            # "Maximianus seu Maximus [sive Maximinus] [et Felix]": each part's other names, apart from its
+            # name ("Dativus qui et Sanator" reads as "seu").
+            seg = QUI_ET.sub(" seu ", seg)
             parts, alts = [], []
             for p in (p.strip() for p in _split_et(seg) if p.strip()):
-                own, *alt = VARIANT_INSIDE.split(p, maxsplit=1)
+                own, *alt = VARIANT_INSIDE.split(p)
                 parts.append(own)
-                alts.append(alt[0] if alt else None)
+                alts.append(alt)
             read = [(_name_at_start(p), p) for p in parts]
             # "Ioanna, Magdalena et Petrina Sailland": first names sharing the last one's surname.
             if len(read) > 1 and read[0][0] and len(read[0][0].split()) == 1 and \
@@ -246,8 +250,8 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
                         marked.append(len(names))
                     names.append(name)
                     last = name
-                    if alts[k] is not None:
-                        other_name(alts[k])
+                    for alt in alts[k]:
+                        other_name(alt)
                 elif part[:1].isupper() or part[:1].isdigit():
                     skipped.append(part)
                     last = None
@@ -315,6 +319,7 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None):
     names, uncertain, current, after_particle, skipping = [], [], [], False, False
     variant_of = None  # the position of the name the words being read are another name of
     tail = text.split(words[start - 1], 1)[1] if start > 0 else text
+    tail = QUI_ET.sub(" seu ", tail)  # "Dativi qui et Felicis": another name, as after "seu"
 
     def close():
         nonlocal variant_of

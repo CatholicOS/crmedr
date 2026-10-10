@@ -422,6 +422,42 @@ class VariantsTest(unittest.TestCase):
         self.assertEqual((names, skipped), (["Maximianus", "Felix", "Dativus", "Victor"], []))
         self.assertEqual(variants, {0: ["Maximus"], 2: ["Sanator"]})
 
+    def test_qui_et_inline_and_in_the_text_and_after_a_printed_form(self):
+        import extract_persons as ep
+        variants = {}
+        names, _ = pt.footnote_names("Quorum nomina: Dativus qui et Sanator, Felix.", variants=variants)
+        self.assertEqual((names, variants), (["Dativus", "Felix"], {0: ["Sanator"]}))
+        lex = {pt.name_key(w): w for w in ["Dativus", "Felix", "Petrus"]}
+        variants = {}
+        names, _ = pt.text_companions("Romæ, sanctórum Datívi qui et Felícis, et Petri, mártyrum.", lex,
+                                      variants=variants)
+        self.assertEqual((names, variants), (["Dativus", "Petrus"], {0: ["Felix"]}))
+        persons, _ = ep.eulogy_persons("mr:0101-dativus", "Sanctus Dativus",
+                                       "Romæ, sancti Datívi, qui et Felícis, mártyris.", [], lex, {})
+        self.assertEqual(persons, [{"name": "Dativus", "also": ["Felix"], "where": "text"}])
+
+    def test_every_connective_gives_another_name(self):
+        import extract_persons as ep
+        variants = {}
+        names, _ = pt.footnote_names("Quorum nomina: Telica vel Tazelita seu Tazelitus, Felix.", variants=variants)
+        self.assertEqual((names, variants), (["Telica", "Felix"], {0: ["Tazelita", "Tazelitus"]}))
+        lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis", "Cunegunda"]}
+        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+                                       "In Polónia, sanctæ Kingæ seu Cunegúndis sive Cunegúndæ, vírginis.", [], lex, {})
+        self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis", "Cunegunda"], "where": "text"}])
+
+    def test_an_unread_variant_stays_reported_until_curated_for_that_person(self):
+        import extract_persons as ep
+        lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis"]}
+        persons, issues = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+                                            "In Polónia, sanctæ Kingæ seu Cunegúndis sive Ficténtis, vírginis.",
+                                            [], lex, {})
+        self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
+        self.assertEqual(issues["variants_unread"], ["Kinga"])  # Cunegundis read, Ficténtis not
+        by_id, all_issues = {"mr:0724-kinga": persons}, {"mr:0724-kinga": issues}
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {}), {"mr:0724-kinga": issues})
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {"mr:0724-kinga": {"Kinga": ["Fictens"]}}), {})
+
 
 class SamePersonTest(unittest.TestCase):
     # 4: a fuller or shorter form of a subject is the same person, in the subject's form
