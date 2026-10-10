@@ -320,5 +320,21 @@ class SamePersonTest(unittest.TestCase):
         self.assertEqual([p["name"] for p in persons], ["Rosalia Clotildis a Sancta Pelagia", "Anna Rosa"])
 
 
+class RepeatedNamesTest(unittest.TestCase):
+    """Persons who share a name in one eulogy (2026-10-10 spec)."""
+
+    def test_person_key(self):
+        self.assertEqual(pt.person_key({"name": "Felix", "where": "text"}), "Felix")
+        self.assertEqual(pt.person_key({"name": "Felix", "n": 2, "where": "text"}), "Felix#2")
+        self.assertIsNone(pt.person_key({"kind": "place"}))
+
+    def test_a_name_after_alius_or_adhuc_is_read(self):
+        names, skipped = pt.footnote_names(
+            "Quorum nomina: Felix; alius Felix, Emeritus; Rogatianus, alius Rogatianus, adhuc Rogatianus alius, "
+            "Iulia altera.")
+        self.assertEqual(names, ["Felix", "Felix", "Emeritus", "Rogatianus", "Rogatianus", "Rogatianus", "Iulia"])
+        self.assertEqual(skipped, [])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -72,6 +72,13 @@ def name_key(s):
     return " ".join(fold(s).replace("j", "i").replace("v", "u").replace("'", " ").split())
 
 
+def person_key(p):
+    """A person's key within their eulogy: the name, or "name#n" for the nth person of a
+    name the eulogy repeats (n from 2; a person without n is the first)."""
+    name, n = p.get("name"), p.get("n", 1)
+    return name if n == 1 else f"{name}#{n}"
+
+
 def subject_names(mrid, subject):
     """The persons a subject of i18n/la.json names, honorific-free, in order."""
     if mrid in MARIAN_IDS:
@@ -97,7 +104,9 @@ LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia"
                        "earum", "episcopi", "episcopus", "presbyteri", "presbyter", "sacerdotes", "sacerdos",
                        "diaconi", "diaconus", "religiosi", "religiosae", "laici", "laicus", "catechistae",
                        "catechista", "uxor", "coniux", "coniuges", "frater", "fratres", "soror", "sorores",
-                       "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae"}
+                       "virgo", "virgines", "monachi", "monachus", "moniales", "seminarista", "seminaristae",
+                       # another of a name just listed: "alius Felix", "adhuc Rogatianus alius"
+                       "alius", "alia", "alter", "altera", "adhuc"}
 FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
 WORD = re.compile(r"[^\W\d_][\w'’\-]*")
 
