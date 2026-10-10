@@ -56,6 +56,7 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     persons = []
     first = {}  # name_key -> where the name was first listed
     count = {}  # name_key -> the persons of that name so far
+    listed = {}  # (name_key, footnote) -> its occurrences in that footnote's list so far
     subjects = subject_names(mrid, subject)
 
     def add(name, where):
@@ -63,10 +64,16 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
         if any(_same_person(name, s) for s in subjects if s != name):
             return
         key = name_key(name)
-        # Named again in the text, or after the text or another footnote: the same person.
-        # Named again in the same footnote's list: another person of that name.
-        if key in first and (where == "text" or first[key] != where):
-            return
+        if where == "text":
+            if key in first:
+                return  # named again in the text: the same person
+        else:
+            here = (key, where["footnote"])
+            listed[here] = listed.get(here, 0) + 1
+            # A name listed before (the text, an earlier footnote) is that person again the first time
+            # this list names it; any other occurrence in one list is another person of that name.
+            if key in first and first[key] != where and listed[here] == 1:
+                return
         first.setdefault(key, where)
         count[key] = count.get(key, 0) + 1
         p = {"name": name}

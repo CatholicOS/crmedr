@@ -70,7 +70,8 @@ name, and `extract_persons.py` checks that it doesn't.
   *altera*.
 - **Across the text and the footnotes, a repeat is the same person, as now.** A name already
   found among the subjects, the companions in the text, or an earlier footnote is not listed
-  again (the subject named once more in a footnote).
+  again the first time a footnote list names it (the subject named once more in a footnote).
+  A further occurrence in that same list (*Felix, Victor, alius Felix*) is another person.
 - As now, names are compared by `name_key`, and `_same_person` folds a fuller or shorter form of
   a subject into the subject.
 - `persons_curated.json` entries may carry `n`, to merge two entries into one person or to split

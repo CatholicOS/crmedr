@@ -359,6 +359,20 @@ class RepeatedNamesTest(unittest.TestCase):
         self.assertEqual(persons, [{"name": "Paulus Miki", "where": "text"},
                                    {"name": "Thomas", "where": {"footnote": 1}}])
 
+    def test_a_repeat_in_a_footnote_list_is_another_person_even_when_the_name_was_listed_before(self):
+        import extract_persons as ep
+        # The subject Felix, named again in the footnote list, then "alius Felix": another person.
+        foot = [{"mark": "1", "after": "x", "text": "Quorum nomina: Felix, Victor, alius Felix."}]
+        persons, _ = ep.eulogy_persons("mr:0101-felix-et-socii", "Sancti Felix et socii", "…", foot, {}, {})
+        self.assertEqual(persons, [{"name": "Felix", "where": "text"}, {"name": "Victor", "where": {"footnote": 1}},
+                                   {"name": "Felix", "n": 2, "where": {"footnote": 1}}])
+        # Felix in footnote 1, then "Felix, alius Felix" in footnote 2: the first is him again, the second another.
+        foot = [{"mark": "1", "after": "x", "text": "Quorum nomina: Felix."},
+                {"mark": "2", "after": "y", "text": "Quorum nomina: Felix, alius Felix."}]
+        persons, _ = ep.eulogy_persons("mr:0101-x-et-socii", "", "…", foot, {}, {})
+        self.assertEqual(persons, [{"name": "Felix", "where": {"footnote": 1}},
+                                   {"name": "Felix", "n": 2, "where": {"footnote": 2}}])
+
     def test_the_numbering_of_a_name_is_checked(self):
         import extract_persons as ep
         foot = {"mr:0212-x": [{"mark": "1", "after": "x", "text": "Quorum nomina: Felix; alius Felix; Felix."}]}
