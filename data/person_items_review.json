@@ -32266,47 +32266,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0121-ioannes-yi-yun-il|Ioannes Yi Yun Il",
-      "eulogy": "mr:0121-ioannes-yi-yun-il",
-      "day": "01-21",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Ioannes Yi Yun Il",
-      "name": "Ioannes Yi Yun Il",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q6265151) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q6265151",
-          "label": "John Yi Yun-il",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "John Yi Yun-il"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "1823",
-          "died": "1867-01-21",
-          "feast": [
-            "Q2273",
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0121-iosepha-maria-a-sancta-agnete|Iosepha Maria a Sancta Agnete",
       "eulogy": "mr:0121-iosepha-maria-a-sancta-agnete",
       "day": "01-21",
@@ -43764,55 +43723,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0131-augustinus-pak-chong-won-et-socii|Augustinus Pak Chong Won",
-      "eulogy": "mr:0131-augustinus-pak-chong-won-et-socii",
-      "day": "01-31",
-      "typology": "dies_natalis",
-      "subject": "Sancti Augustinus Pak Chong Won et socii",
-      "name": "Augustinus Pak Chong Won",
-      "where": "text",
-      "companions": [
-        "Augustinus Pak Chŏng-wŏn",
-        "Petrus Hong Pyŏng-ju",
-        "Maria Yi In-dŏg",
-        "Magdalena Son So-byŏg",
-        "Agatha Yi Kyŏng-i",
-        "Agatha Kwŏn Chin-i"
-      ],
-      "failed": [
-        "name: the best candidate (Q4342305) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4342305",
-          "label": "Augustin Pak Chong-wŏn",
-          "description": "Korean martyr, catholic saint (1793–1840)",
-          "names": [
-            "Augustin Pak Chong-won",
-            "Augustin Pak Chong-wŏn"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1793",
-          "died": "1840-01-31",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0131-augustinus-pak-chong-won-et-socii|Magdalena Son So-byŏg",
       "eulogy": "mr:0131-augustinus-pak-chong-won-et-socii",
       "day": "01-31",
@@ -43824,7 +43734,6 @@
       },
       "companions": [
         "Augustinus Pak Chong Won",
-        "Augustinus Pak Chŏng-wŏn",
         "Petrus Hong Pyŏng-ju",
         "Maria Yi In-dŏg",
         "Agatha Yi Kyŏng-i",
@@ -43874,7 +43783,6 @@
       },
       "companions": [
         "Augustinus Pak Chong Won",
-        "Augustinus Pak Chŏng-wŏn",
         "Petrus Hong Pyŏng-ju",
         "Magdalena Son So-byŏg",
         "Agatha Yi Kyŏng-i",
@@ -49786,51 +49694,6 @@
         "no candidate found"
       ],
       "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-paulus-hong-yong-ju-et-socii|Paulus Hong Yong Ju",
-      "eulogy": "mr:0201-paulus-hong-yong-ju-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Sancti Paulus Hong Yong Ju et socii",
-      "name": "Paulus Hong Yong Ju",
-      "where": "text",
-      "companions": [
-        "Paulus Hong Yŏng-ju",
-        "Ioannes Yi Mun-u"
-      ],
-      "failed": [
-        "name: the best candidate (Q580681) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q580681",
-          "label": "Paul Hong Yŏng-ju",
-          "description": "Korean martyr, catholic saint (1802–1840)",
-          "names": [
-            "Paul Hong Yong-ju",
-            "Paul Hong Yŏng-ju"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1802",
-          "died": "1840-02-01",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
       "decision": null,
       "edited": null
     },
@@ -81628,48 +81491,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0217-petrus-yu-chong-nyul|Petrus Yu Chong Nyul",
-      "eulogy": "mr:0217-petrus-yu-chong-nyul",
-      "day": "02-17",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Petrus Yu Chong Nyul",
-      "name": "Petrus Yu Chong Nyul",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q11818271) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11818271",
-          "label": "Peter Yu Chŏng-nyul",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "Peter Yu Chong-nyul",
-            "Peter Yu Chŏng-nyul"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1836",
-          "died": "1866-02-17",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0217-silvinus|Silvinus",
       "eulogy": "mr:0217-silvinus",
       "day": "02-17",
@@ -105423,51 +105244,6 @@
         "no candidate found"
       ],
       "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong|Alexius U Se Yong",
-      "eulogy": "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong",
-      "day": "03-11",
-      "typology": "dies_natalis",
-      "subject": "Sancti Marcus Chong Ui Bae et Alexius U Se Yong",
-      "name": "Alexius U Se Yong",
-      "where": "text",
-      "companions": [
-        "Marcus Chong Ui Bae"
-      ],
-      "failed": [
-        "name: the best candidate (Q9146987) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q9146987",
-          "label": "Alexius U Se-yŏng",
-          "description": "koran martyr, catholic saint",
-          "names": [
-            "Alexius U Se-Yong",
-            "Alexius U Se-yong",
-            "Alexius U Se-yŏng"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1845",
-          "died": "1866-03-11",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
       "decision": null,
       "edited": null
     },
@@ -174822,51 +174598,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0429-antonius-kim-song-u|Antonius Kim Song U",
-      "eulogy": "mr:0429-antonius-kim-song-u",
-      "day": "04-29",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Antonius Kim Song U",
-      "name": "Antonius Kim Song U",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q11686417) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11686417",
-          "label": "Anthony Kim Sŏng-u",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "Anthony Kim Song-u",
-            "Anthony Kim Sŏng-u",
-            "Antonio Kim Song-u"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287",
-            "Q43115"
-          ],
-          "born": "1794",
-          "died": "1841-04-29",
-          "feast": [
-            "Q2892",
-            "Q2535"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0429-hugo|Hugo",
       "eulogy": "mr:0429-hugo",
       "day": "04-29",
@@ -181638,48 +181369,6 @@
           "died": null,
           "feast": [],
           "evidence": []
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0503-maria-leonia-paradis|Maria Leonia Paradis",
-      "eulogy": "mr:0503-maria-leonia-paradis",
-      "day": "05-03",
-      "typology": "dies_natalis",
-      "subject": "Beata Maria Leonia Paradis",
-      "name": "Maria Leonia Paradis",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q3292109) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q3292109",
-          "label": "Marie-Léonie Paradis",
-          "description": "Canadian Catholic religious nun, master of novices and saint (1840-1912)",
-          "names": [
-            "Alodie-Virginie Paradis",
-            "Marie-Leonie Paradis",
-            "Marie-Léonie Paradis"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287"
-          ],
-          "born": "1840-05-12",
-          "died": "1912-05-03",
-          "feast": [
-            "Q2549"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
         }
       ],
       "decision": null,
@@ -206982,48 +206671,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0520-protasius-chong-kuk-bo|Protasius Chong Kuk Bo",
-      "eulogy": "mr:0520-protasius-chong-kuk-bo",
-      "day": "05-20",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Protasius Chong Kuk Bo",
-      "name": "Protasius Chong Kuk Bo",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q11827906) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11827906",
-          "label": "Protasius Chŏng Kuk-bo",
-          "description": "Korean martyr, Catholic saint",
-          "names": [
-            "Protasius Chong Kuk-bo",
-            "Protasius Chŏng Kuk-bo"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1799",
-          "died": "1839-05-20",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0520-thalalaeus|Thalalaeus",
       "eulogy": "mr:0520-thalalaeus",
       "day": "05-20",
@@ -214938,7 +214585,6 @@
       },
       "companions": [
         "Augustinus Yi Kwang Hon",
-        "Augustinus Yi Kwang-hŏn",
         "Damianus Nam Myŏng-hyŏg",
         "Magdalena Kim Ŏ-bi",
         "Barbara Han A-gi",
@@ -214988,59 +214634,6 @@
       "name": "Augustinus Yi Kwang Hon",
       "where": "text",
       "companions": [
-        "Augustinus Yi Kwang-hŏn",
-        "Damianus Nam Myŏng-hyŏg",
-        "Magdalena Kim Ŏ-bi",
-        "Barbara Han A-gi",
-        "Anna Pak A-gi",
-        "Agatha Yi So-sa",
-        "Lucia Pak Hŭi-sun",
-        "Petrus Kwon Tŭ-gin"
-      ],
-      "failed": [
-        "name: the best candidate (Q4260678) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4260678",
-          "label": "Augustyn Yi Kwang-hŏn",
-          "description": "Korean martyr",
-          "names": [
-            "Agostino Yi Kwang-hŏn",
-            "Augustyn Yi Kwang-hŏn"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1787",
-          "died": "1839-05-24",
-          "feast": [
-            "Q2690",
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0524-augustinus-yi-kwang-hon-et-socii|Augustinus Yi Kwang-hŏn",
-      "eulogy": "mr:0524-augustinus-yi-kwang-hon-et-socii",
-      "day": "05-24",
-      "typology": "dies_natalis",
-      "subject": "Sancti Augustinus Yi Kwang Hon et socii",
-      "name": "Augustinus Yi Kwang-hŏn",
-      "where": "text",
-      "companions": [
-        "Augustinus Yi Kwang Hon",
         "Damianus Nam Myŏng-hyŏg",
         "Magdalena Kim Ŏ-bi",
         "Barbara Han A-gi",
@@ -215095,7 +214688,6 @@
       },
       "companions": [
         "Augustinus Yi Kwang Hon",
-        "Augustinus Yi Kwang-hŏn",
         "Magdalena Kim Ŏ-bi",
         "Barbara Han A-gi",
         "Anna Pak A-gi",
@@ -215123,7 +214715,6 @@
       },
       "companions": [
         "Augustinus Yi Kwang Hon",
-        "Augustinus Yi Kwang-hŏn",
         "Damianus Nam Myŏng-hyŏg",
         "Barbara Han A-gi",
         "Anna Pak A-gi",
@@ -215151,7 +214742,6 @@
       },
       "companions": [
         "Augustinus Yi Kwang Hon",
-        "Augustinus Yi Kwang-hŏn",
         "Damianus Nam Myŏng-hyŏg",
         "Magdalena Kim Ŏ-bi",
         "Barbara Han A-gi",
@@ -218994,48 +218584,6 @@
         "no candidate found"
       ],
       "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0526-iosephus-chang-song-jib|Iosephus Chang Song Jib",
-      "eulogy": "mr:0526-iosephus-chang-song-jib",
-      "day": "05-26",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Iosephus Chang Song Jib",
-      "name": "Iosephus Chang Song Jib",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q11268815) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11268815",
-          "label": "Joseph Chang Sŏng-jib",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "Joseph Chang Song-jib",
-            "Joseph Chang Sŏng-jib"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1786",
-          "died": "1839-05-26",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
       "decision": null,
       "edited": null
     },
@@ -318860,7 +318408,6 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "name: the best candidate (Q2745308) fails it",
         "death: the best candidate (Q2745308) fails it"
       ],
       "candidates": [
@@ -318885,7 +318432,8 @@
           "feast": [],
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ]
         }
       ],
@@ -332906,7 +332454,6 @@
       "where": "text",
       "companions": [
         "Magdalena Yi Yong Hui",
-        "Magdalena Yi Yŏng-hŭi",
         "Teresia Yi Mae-im",
         "Martha Kim Sŏng-im",
         "Rosa Kim"
@@ -333001,55 +332548,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0720-magdalena-yi-yong-hui-et-socii|Magdalena Yi Yong Hui",
-      "eulogy": "mr:0720-magdalena-yi-yong-hui-et-socii",
-      "day": "07-20",
-      "typology": "dies_natalis",
-      "subject": "Sancti Magdalena Yi Yong Hui et socii",
-      "name": "Magdalena Yi Yong Hui",
-      "where": "text",
-      "companions": [
-        "Magdalena Yi Yŏng-hŭi",
-        "Teresia Yi Mae-im",
-        "Martha Kim Sŏng-im",
-        "Lucia Kim",
-        "Rosa Kim"
-      ],
-      "failed": [
-        "name: the best candidate (Q11766122) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11766122",
-          "label": "Magdalene Yi Yŏng-hŭi",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "Magdalene Yi Yong-hui",
-            "Magdalene Yi Yŏng-hŭi"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1808",
-          "died": "1839-07-20",
-          "feast": [
-            "Q2728",
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0720-magdalena-yi-yong-hui-et-socii|Rosa Kim",
       "eulogy": "mr:0720-magdalena-yi-yong-hui-et-socii",
       "day": "07-20",
@@ -333059,7 +332557,6 @@
       "where": "text",
       "companions": [
         "Magdalena Yi Yong Hui",
-        "Magdalena Yi Yŏng-hŭi",
         "Teresia Yi Mae-im",
         "Martha Kim Sŏng-im",
         "Lucia Kim"
@@ -333106,7 +332603,6 @@
       "where": "text",
       "companions": [
         "Magdalena Yi Yong Hui",
-        "Magdalena Yi Yŏng-hŭi",
         "Martha Kim Sŏng-im",
         "Lucia Kim",
         "Rosa Kim"
@@ -335068,6 +334564,23 @@
           ]
         },
         {
+          "wikidata": "Q130335626",
+          "label": "Maria-Magdalena",
+          "description": "actress",
+          "names": [
+            "Maria-Magdalena"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
           "wikidata": "Q75413922",
           "label": "Maria Magdalena",
           "description": "(died 1766)",
@@ -335081,6 +334594,22 @@
           "feast": [],
           "evidence": [
             "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108415762",
+          "label": "Maria-Magdalena",
+          "description": "female given name",
+          "names": [
+            "Maria-Magdalena"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
             "name"
           ]
         },
@@ -335114,22 +334643,6 @@
           "feast": [],
           "evidence": [
             "name"
-          ]
-        },
-        {
-          "wikidata": "Q130335626",
-          "label": "Maria-Magdalena",
-          "description": "actress",
-          "names": [
-            "Maria-Magdalena"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
           ]
         },
         {
@@ -335187,25 +334700,6 @@
           "label": "Mary Magdalene",
           "description": "painting by Alfred Stevens",
           "names": [
-            "Maria Maddalena",
-            "Maria Magdalena",
-            "Mary Magdalene"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1896126",
-          "label": "Maria Magdalena",
-          "description": "2000 film directed by Raffaele Mertes",
-          "names": [
-            "Gli amici di Gesù - Maria Maddalena",
             "Maria Maddalena",
             "Maria Magdalena",
             "Mary Magdalene"
@@ -422018,18 +421512,17 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0903-ioannes-pak-hu-ja-et-socii|Augustini Yi Kwang-hŏn",
-      "eulogy": "mr:0903-ioannes-pak-hu-ja-et-socii",
+      "id": "mr:0903-ioannes-pak-hu-jae-et-socii|Augustini Yi Kwang-hŏn",
+      "eulogy": "mr:0903-ioannes-pak-hu-jae-et-socii",
       "day": "09-03",
       "typology": "dies_natalis",
-      "subject": "Sancti Ioannes Pak Hu Ja et socii",
+      "subject": "Sancti Ioannes Pak Hu Jae et socii",
       "name": "Augustini Yi Kwang-hŏn",
       "where": {
         "footnote": 1
       },
       "companions": [
-        "Ioannes Pak Hu Ja",
-        "Ioannes Pak Hu-jae",
+        "Ioannes Pak Hu Jae",
         "Maria Pak Kun-a-gi Hui-sun",
         "Barbara Kwŏn-hŭi",
         "Barbara Yi Chŏng-hŭi",
@@ -422046,70 +421539,17 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0903-ioannes-pak-hu-ja-et-socii|Barbara Kwŏn-hŭi",
-      "eulogy": "mr:0903-ioannes-pak-hu-ja-et-socii",
+      "id": "mr:0903-ioannes-pak-hu-jae-et-socii|Damiani Nam Myŏng-hyŏg",
+      "eulogy": "mr:0903-ioannes-pak-hu-jae-et-socii",
       "day": "09-03",
       "typology": "dies_natalis",
-      "subject": "Sancti Ioannes Pak Hu Ja et socii",
-      "name": "Barbara Kwŏn-hŭi",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Ioannes Pak Hu Ja",
-        "Ioannes Pak Hu-jae",
-        "Maria Pak Kun-a-gi Hui-sun",
-        "Augustini Yi Kwang-hŏn",
-        "Barbara Yi Chŏng-hŭi",
-        "Maria Yi Yŏn-hŭi",
-        "Damiani Nam Myŏng-hyŏg",
-        "Agnes Kim Hyo-ju"
-      ],
-      "failed": [
-        "name: the best candidate (Q9165465) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q9165465",
-          "label": "Barbara Kwon Hui",
-          "description": "koran martyr, catholic saint",
-          "names": [
-            "Barbara Kwon Hui"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1794",
-          "died": "1839-09-03",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0903-ioannes-pak-hu-ja-et-socii|Damiani Nam Myŏng-hyŏg",
-      "eulogy": "mr:0903-ioannes-pak-hu-ja-et-socii",
-      "day": "09-03",
-      "typology": "dies_natalis",
-      "subject": "Sancti Ioannes Pak Hu Ja et socii",
+      "subject": "Sancti Ioannes Pak Hu Jae et socii",
       "name": "Damiani Nam Myŏng-hyŏg",
       "where": {
         "footnote": 1
       },
       "companions": [
-        "Ioannes Pak Hu Ja",
-        "Ioannes Pak Hu-jae",
+        "Ioannes Pak Hu Jae",
         "Maria Pak Kun-a-gi Hui-sun",
         "Barbara Kwŏn-hŭi",
         "Augustini Yi Kwang-hŏn",
@@ -422126,68 +421566,17 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0903-ioannes-pak-hu-ja-et-socii|Ioannes Pak Hu Ja",
-      "eulogy": "mr:0903-ioannes-pak-hu-ja-et-socii",
+      "id": "mr:0903-ioannes-pak-hu-jae-et-socii|Maria Pak Kun-a-gi Hui-sun",
+      "eulogy": "mr:0903-ioannes-pak-hu-jae-et-socii",
       "day": "09-03",
       "typology": "dies_natalis",
-      "subject": "Sancti Ioannes Pak Hu Ja et socii",
-      "name": "Ioannes Pak Hu Ja",
-      "where": "text",
-      "companions": [
-        "Ioannes Pak Hu-jae",
-        "Maria Pak Kun-a-gi Hui-sun",
-        "Barbara Kwŏn-hŭi",
-        "Augustini Yi Kwang-hŏn",
-        "Barbara Yi Chŏng-hŭi",
-        "Maria Yi Yŏn-hŭi",
-        "Damiani Nam Myŏng-hyŏg",
-        "Agnes Kim Hyo-ju"
-      ],
-      "failed": [
-        "name: the best candidate (Q11718611) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q11718611",
-          "label": "John Pak Hu-jae",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "John Pak Hu-jae"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1790",
-          "died": "1839-09-03",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0903-ioannes-pak-hu-ja-et-socii|Maria Pak Kun-a-gi Hui-sun",
-      "eulogy": "mr:0903-ioannes-pak-hu-ja-et-socii",
-      "day": "09-03",
-      "typology": "dies_natalis",
-      "subject": "Sancti Ioannes Pak Hu Ja et socii",
+      "subject": "Sancti Ioannes Pak Hu Jae et socii",
       "name": "Maria Pak Kun-a-gi Hui-sun",
       "where": {
         "footnote": 1
       },
       "companions": [
-        "Ioannes Pak Hu Ja",
-        "Ioannes Pak Hu-jae",
+        "Ioannes Pak Hu Jae",
         "Barbara Kwŏn-hŭi",
         "Augustini Yi Kwang-hŏn",
         "Barbara Yi Chŏng-hŭi",
@@ -457916,149 +457305,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0920-andreas-kim-tae-gon-et-socii|Barbara Kwŏn-hŭi",
-      "eulogy": "mr:0920-andreas-kim-tae-gon-et-socii",
-      "day": "09-20",
-      "typology": "celebratio",
-      "subject": "Sancti Andreas Kim Tae Gon et socii",
-      "name": "Barbara Kwŏn-hŭi",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Andreas Kim Tae Gon",
-        "Simeon Berneux",
-        "Antonius Daveluy",
-        "Laurentius Imbert",
-        "Iustus Ranfer de Bretenières",
-        "Ludovicus Beaulieu",
-        "Petrus Henricus Dorie",
-        "Petrus Maubant",
-        "Iacobus Chastan",
-        "Petrus Aumaître",
-        "Martinus Lucas Huin",
-        "Ioannes Yi Yun-il",
-        "Andreas Chong Hwa-gyŏng",
-        "Stephanus Min Kŭk-ka",
-        "Paulus Hŏ Hyŏb",
-        "Augustinus Pak Chŏng-wŏn",
-        "Petrus Hong Pyŏng-ju",
-        "Paulus Hong Yŏng-ju",
-        "Iosephus Chang Chu-gi",
-        "Thomas Son Cha-sŏn",
-        "Lucas Hwang Sŏk-tu",
-        "Damianus Nam Myŏng-hyŏg",
-        "Franciscus Ch’oe Kyŏng-hwan",
-        "Carolus Hyon Sŏng-mun",
-        "Laurentius Han I-hyŏng",
-        "Petrus Nam Kyŏng-mun",
-        "Augustinus Yu Chin-gil",
-        "Petrus Yi Ho-yŏng",
-        "Petrus Sŏn Sŏn-ji",
-        "Benedicta Hyŏn Kyŏng-nyŏn",
-        "Petrus Ch’oe Ch’ang-hŭb",
-        "Agatha Yi",
-        "Maria Yi In-dŏg",
-        "Barbara Yi",
-        "Maria Wŏn Kwi-im",
-        "Teresia Kim Im-i",
-        "Columba Kim Hyo-im",
-        "Magdalena Cho",
-        "Elisabeth Chŏng Chŏng-hye",
-        "Teresia Kim",
-        "Barbara Kim",
-        "Susanna U Sur-im",
-        "Agatha Yi Kan-nan",
-        "Magdalena Pak Pong-sŏn",
-        "Perpetua Hong Kŭm-ju",
-        "Catharina Yi",
-        "Cæcilia Yu So-sa",
-        "Barbara Cho Chŭng-i",
-        "Magdalena Han Yŏng-i",
-        "Magdalena Son So-byŏg",
-        "Agatha Yi Kyŏng-i",
-        "Agatha Kwŏn Chin-i",
-        "Ioannes Yi Mun-u",
-        "Barbara Ch’oe Yŏng-i",
-        "Petrus Yu Chŏng-nyul",
-        "Ioannes Baptista Nam Chong-sam",
-        "Ioannes Baptista Chŏn Chang-un",
-        "Petrus Ch’oe Hyŏng",
-        "Marcus Chŏng Ui-bae",
-        "Alexius U Se-yŏng",
-        "Antonius Kim Sŏng-u",
-        "Protasius Chong Kuk-bo",
-        "Augustinus Yi Kwang-hŏn",
-        "Agatha Kim A-gi",
-        "Magdalena Kim Ŏ-bi",
-        "Barbara Han A-gi",
-        "Anna Pak A-gi",
-        "Agatha Yi So-sa",
-        "Lucia Pak Hŭi-sun",
-        "Petrus Kwon Tŭ-gin",
-        "Iosephus Chang Sŏng-jib",
-        "Magdalena Yi Yŏng-hŭi",
-        "Teresia Yi Mae-im",
-        "Martha Kim Sŏng-im",
-        "Lucia Kim",
-        "Rosa Kim",
-        "Anna Kim Chang-gŭm",
-        "Ioannes Baptista Yi Kwang-nyol",
-        "Ioannes Pak Hu-jae",
-        "Maria Pak Kun-a-gi Hui-sun",
-        "Barbara Yi Chŏng-hŭi",
-        "Maria Yi Yŏn-hŭi",
-        "Agnes Kim Hyo-ju",
-        "Catharina Chŏng Ch’ŏr-yŏm",
-        "Iosephus Im Ch’i-baeg",
-        "Sebastianus Nam I-gwan",
-        "Ignatius Kim Che-jun",
-        "Carolus Cho Shin-ch’ŏl",
-        "Iulitta Kim",
-        "Agatha Chŏn Kyŏng-hyŏb",
-        "Magdalena Hŏ Kye-im",
-        "Petrus Yu Taech’ol",
-        "Petrus Cho Hwa-sŏ",
-        "Petrus Yi Myŏng-sŏ",
-        "Bartholomæus Chŏng Mun-ho",
-        "Iosephus Petrus Han Chae-kwon",
-        "Petrus Chŏng Won-ji",
-        "Iosephus Cho Yun-ho",
-        "Barbara Ko Sun-i",
-        "Magdalena Yi Yŏng-dŏg"
-      ],
-      "failed": [
-        "name: the best candidate (Q9165465) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q9165465",
-          "label": "Barbara Kwon Hui",
-          "description": "koran martyr, catholic saint",
-          "names": [
-            "Barbara Kwon Hui"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1794",
-          "died": "1839-09-03",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0920-andreas-kim-tae-gon-et-socii|Bartholomæus Chŏng Mun-ho",
       "eulogy": "mr:0920-andreas-kim-tae-gon-et-socii",
       "day": "09-20",
@@ -463591,7 +462837,6 @@
       },
       "companions": [
         "Laurentius Han I Hyong",
-        "Laurentius Han I-hyŏng",
         "Petrus Nam Kyŏng-mun",
         "Teresia Kim Im-i",
         "Susanna U Sur-im",
@@ -463618,7 +462863,6 @@
       },
       "companions": [
         "Laurentius Han I Hyong",
-        "Laurentius Han I-hyŏng",
         "Petrus Nam Kyŏng-mun",
         "Teresia Kim Im-i",
         "Susanna U Sur-im",
@@ -463642,32 +462886,6 @@
       "name": "Laurentius Han I Hyong",
       "where": "text",
       "companions": [
-        "Laurentius Han I-hyŏng",
-        "Petrus Nam Kyŏng-mun",
-        "Teresia Kim Im-i",
-        "Susanna U Sur-im",
-        "Agatha Yi Kan-nan",
-        "Catharina Chŏng Ch’ŏr-yŏm",
-        "Iosephus Im Ch’i-baeg"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0920-laurentius-han-i-hyong-et-socii|Laurentius Han I-hyŏng",
-      "eulogy": "mr:0920-laurentius-han-i-hyong-et-socii",
-      "day": "09-20",
-      "typology": "dies_natalis",
-      "subject": "Sancti Laurentius Han I Hyong et socii",
-      "name": "Laurentius Han I-hyŏng",
-      "where": "text",
-      "companions": [
-        "Laurentius Han I Hyong",
         "Petrus Nam Kyŏng-mun",
         "Teresia Kim Im-i",
         "Susanna U Sur-im",
@@ -463695,7 +462913,6 @@
       },
       "companions": [
         "Laurentius Han I Hyong",
-        "Laurentius Han I-hyŏng",
         "Petrus Nam Kyŏng-mun",
         "Susanna U Sur-im",
         "Agatha Yi Kan-nan",
@@ -473753,7 +472970,6 @@
       },
       "companions": [
         "Sebastianus Nam I Gwan",
-        "Sebastianus Nam I-gwan",
         "Ignatius Kim Che-jun",
         "Carolus Cho Shin-ch’ŏl",
         "Columba Kim Hyo-im",
@@ -473807,7 +473023,6 @@
       },
       "companions": [
         "Sebastianus Nam I Gwan",
-        "Sebastianus Nam I-gwan",
         "Ignatius Kim Che-jun",
         "Columba Kim Hyo-im",
         "Magdalena Pak Pong-sŏn",
@@ -473836,7 +473051,6 @@
       },
       "companions": [
         "Sebastianus Nam I Gwan",
-        "Sebastianus Nam I-gwan",
         "Carolus Cho Shin-ch’ŏl",
         "Columba Kim Hyo-im",
         "Magdalena Pak Pong-sŏn",
@@ -473889,7 +473103,6 @@
       },
       "companions": [
         "Sebastianus Nam I Gwan",
-        "Sebastianus Nam I-gwan",
         "Ignatius Kim Che-jun",
         "Carolus Cho Shin-ch’ŏl",
         "Columba Kim Hyo-im",
@@ -473918,7 +473131,6 @@
       },
       "companions": [
         "Sebastianus Nam I Gwan",
-        "Sebastianus Nam I-gwan",
         "Ignatius Kim Che-jun",
         "Carolus Cho Shin-ch’ŏl",
         "Columba Kim Hyo-im",
@@ -473953,57 +473165,6 @@
             "human",
             "status",
             "name"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0926-sebastianus-nam-i-gwan-et-socii|Sebastianus Nam I Gwan",
-      "eulogy": "mr:0926-sebastianus-nam-i-gwan-et-socii",
-      "day": "09-26",
-      "typology": "dies_natalis",
-      "subject": "Sancti Sebastianus Nam I Gwan et socii",
-      "name": "Sebastianus Nam I Gwan",
-      "where": "text",
-      "companions": [
-        "Sebastianus Nam I-gwan",
-        "Ignatius Kim Che-jun",
-        "Carolus Cho Shin-ch’ŏl",
-        "Columba Kim Hyo-im",
-        "Magdalena Pak Pong-sŏn",
-        "Perpetua Hong Kŭm-ju",
-        "Iulitta Kim",
-        "Agatha Chŏn Kyŏng-hyŏb",
-        "Magdalena Hŏ Kye-im"
-      ],
-      "failed": [
-        "name: the best candidate (Q9334767) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q9334767",
-          "label": "Sebastian Nam I-gwan",
-          "description": "Korean martyr, catholic saint",
-          "names": [
-            "Sebastian Nam I-gwan"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1780",
-          "died": "1839-09-26",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
           ]
         }
       ],
@@ -515105,7 +514266,6 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "name: the best candidate (Q1050694) fails it",
         "death: the best candidate (Q1050694) fails it"
       ],
       "candidates": [
@@ -515128,7 +514288,8 @@
           ],
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ]
         }
       ],
@@ -588955,52 +588116,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1124-petrus-dumoulin-borie-et-socii|Petrus Dumoulin Borie",
-      "eulogy": "mr:1124-petrus-dumoulin-borie-et-socii",
-      "day": "11-24",
-      "typology": "dies_natalis",
-      "subject": "Sancti Petrus Dumoulin Borie et socii",
-      "name": "Petrus Dumoulin Borie",
-      "where": "text",
-      "companions": [
-        "Petrus Dumoulin-Borie"
-      ],
-      "failed": [
-        "name: the best candidate (Q568014) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q568014",
-          "label": "Pierre Dumoulin-Borie",
-          "description": "French Roman Catholic missionary priest (1808–1838)",
-          "names": [
-            "Pierre Borie",
-            "Pierre Dumoulin-Borie",
-            "Pierre-Rose-Ursule Dumoulin-Borie"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287",
-            "Q123110154"
-          ],
-          "born": "1808-02-20",
-          "died": "1838-11-24",
-          "feast": [
-            "Q3022"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:1124-portianus|Portianus",
       "eulogy": "mr:1124-portianus",
       "day": "11-24",
@@ -590624,7 +589739,6 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "name: the best candidate (Q11818269) fails it",
         "death: the best candidate (Q11818269) fails it"
       ],
       "candidates": [
@@ -590648,7 +589762,8 @@
           ],
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ]
         }
       ],
@@ -609921,7 +609036,6 @@
       },
       "companions": [
         "Petrus Cho Hwa So",
-        "Petrus Cho Hwa-sŏ",
         "Petrus Yi Myŏng-sŏ",
         "Petrus Sŏn Sŏn-ji",
         "Iosephus Petrus Han Chae-kwon",
@@ -609947,7 +609061,6 @@
       },
       "companions": [
         "Petrus Cho Hwa So",
-        "Petrus Cho Hwa-sŏ",
         "Petrus Yi Myŏng-sŏ",
         "Bartholomæus Chŏng Mun-ho",
         "Petrus Sŏn Sŏn-ji",
@@ -609957,54 +609070,6 @@
         "no candidate found"
       ],
       "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1213-petrus-cho-hwa-so-et-socii|Petrus Cho Hwa So",
-      "eulogy": "mr:1213-petrus-cho-hwa-so-et-socii",
-      "day": "12-13",
-      "typology": "dies_natalis",
-      "subject": "Sancti Petrus Cho Hwa So et socii",
-      "name": "Petrus Cho Hwa So",
-      "where": "text",
-      "companions": [
-        "Petrus Cho Hwa-sŏ",
-        "Petrus Yi Myŏng-sŏ",
-        "Bartholomæus Chŏng Mun-ho",
-        "Petrus Sŏn Sŏn-ji",
-        "Iosephus Petrus Han Chae-kwon",
-        "Petrus Chŏng Won-ji"
-      ],
-      "failed": [
-        "name: the best candidate (Q4516988) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4516988",
-          "label": "Peter Cho Hwa-sŏ",
-          "description": "",
-          "names": [
-            "Peter Cho Hwa-sŏ"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1815",
-          "died": "1866-12-13",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
       "decision": null,
       "edited": null
     },
@@ -627309,47 +626374,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1223-iosephus-cho-yun-ho|Iosephus Cho Yun Ho",
-      "eulogy": "mr:1223-iosephus-cho-yun-ho",
-      "day": "12-23",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Iosephus Cho Yun Ho",
-      "name": "Iosephus Cho Yun Ho",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "name: the best candidate (Q4516993) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4516993",
-          "label": "Joseph Cho Yun-ho",
-          "description": "Korean martyr, catholic saint (1848–1866)",
-          "names": [
-            "Joseph Cho Yun-ho"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1848",
-          "died": "1866-12-23",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:1223-ivo|Ivo",
       "eulogy": "mr:1223-ivo",
       "day": "12-23",
@@ -631194,7 +630218,6 @@
       },
       "companions": [
         "Benedicta Hyon Kyong Nyon",
-        "Benedicta Hyon Kyŏng-nyŏn",
         "Petrus Ch’oe Ch’ang-hŭb",
         "Barbara Cho Chŭng-i",
         "Magdalena Han Yŏng-i",
@@ -631220,59 +630243,6 @@
       "name": "Benedicta Hyon Kyong Nyon",
       "where": "text",
       "companions": [
-        "Benedicta Hyon Kyŏng-nyŏn",
-        "Petrus Ch’oe Ch’ang-hŭb",
-        "Barbara Cho Chŭng-i",
-        "Magdalena Han Yŏng-i",
-        "Elisabeth Chŏng Chŏng-hye",
-        "Pauli Chŏng Hasang",
-        "Barbara Ko Sun-i",
-        "Augustini Pak Chong-wŏn",
-        "Magdalena Yi Yŏng-dŏg"
-      ],
-      "failed": [
-        "name: the best candidate (Q4502874) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4502874",
-          "label": "Benedicta Hyŏng Kyŏng-nyŏn",
-          "description": "Korean martyr, catholic saint (1794–1839)",
-          "names": [
-            "Benedicta Hyong Kyong-nyon",
-            "Benedicta Hyŏng Kyŏng-nyŏn"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1794",
-          "died": "1839-12-29",
-          "feast": [
-            "Q2892"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1229-benedicta-hyon-kyong-nyon-et-socii|Benedicta Hyon Kyŏng-nyŏn",
-      "eulogy": "mr:1229-benedicta-hyon-kyong-nyon-et-socii",
-      "day": "12-29",
-      "typology": "dies_natalis",
-      "subject": "Sancti Benedicta Hyon Kyong Nyon et socii",
-      "name": "Benedicta Hyon Kyŏng-nyŏn",
-      "where": "text",
-      "companions": [
-        "Benedicta Hyon Kyong Nyon",
         "Petrus Ch’oe Ch’ang-hŭb",
         "Barbara Cho Chŭng-i",
         "Magdalena Han Yŏng-i",
@@ -631327,7 +630297,6 @@
       },
       "companions": [
         "Benedicta Hyon Kyong Nyon",
-        "Benedicta Hyon Kyŏng-nyŏn",
         "Petrus Ch’oe Ch’ang-hŭb",
         "Barbara Cho Chŭng-i",
         "Magdalena Han Yŏng-i",
@@ -631381,7 +630350,6 @@
       },
       "companions": [
         "Benedicta Hyon Kyong Nyon",
-        "Benedicta Hyon Kyŏng-nyŏn",
         "Petrus Ch’oe Ch’ang-hŭb",
         "Barbara Cho Chŭng-i",
         "Magdalena Han Yŏng-i",
