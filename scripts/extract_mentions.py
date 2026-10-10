@@ -41,6 +41,8 @@ from persons_text import name_key, person_key
 CONNECTIVE = re.compile(r"\s*,?\s*(?:seu|vel|sive|qui\s+et|qu(?:ae|æ)\s+et)\s+", re.I)
 NAME_WORD = re.compile(r"[^\W\d_][\w'’\-]*")
 SPACES = re.compile(r"[ \t]+")
+# The name printed right before a variant a person was found under: "Mamántis seu" before "Mamétis".
+NAME_BEFORE = re.compile(r"([^\W\d_][\w'’\-]*)\s*,?\s*(?:seu|vel|sive|qui\s+et|qu(?:ae|æ)\s+et)\s+$", re.I)
 
 
 def with_variant(src, span, taken):
@@ -58,6 +60,15 @@ def with_variant(src, span, taken):
         pos = gap.end()
     wide = (span[0], end) if end else span
     return wide if wide == span or free((span[1], wide[1]), taken) else span
+
+
+def with_name_before(src, span, taken):
+    """A span found under a person's other name, widened back over the name printed before it
+    ("Mamántis seu Mamétis"), unless that word is taken by another mention."""
+    m = NAME_BEFORE.search(src, 0, span[0])
+    if not m or not m.group(1)[0].isupper() or not free((m.start(), span[0]), taken):
+        return span
+    return (m.start(), span[1])
 
 
 def where_key(where):
@@ -144,11 +155,13 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             continue  # extract_persons.py validates footnote numbers
         both = spans("place", where) + spans("person", where)
         names = [name, *p.get("also", [])]
-        found = next((f for f in (find_person(src, nm, both) for nm in names) if f), None)
+        found, under = next(((f, nm) for nm in names if (f := find_person(src, nm, both))), (None, None))
         if found:
             span, how, _ = found
             if p.get("also"):
                 span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
+                if under != name:
+                    span = with_name_before(src, span, both)  # found as "Mametis": from "Mamantis seu"
             add("person", where, span, how, name=name, **nth, qid=person_qid(person_key(p)))
             if p.get("n", 1) == last[group(p)]:
                 # Matched again after the last person of the name: the same person named twice,
