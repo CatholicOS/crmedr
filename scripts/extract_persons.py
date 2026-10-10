@@ -53,15 +53,27 @@ def _same_person(a, b):
 def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     if mrid in curated:
         return [dict(p) for p in curated[mrid]], {"uncertain": [], "skipped": [], "socii_without_names": False}
-    persons, seen = [], set()
+    persons = []
+    first = {}  # name_key -> where the name was first listed
+    count = {}  # name_key -> the persons of that name so far
     subjects = subject_names(mrid, subject)
 
     def add(name, where):
         # A fuller or shorter form of a subject is the subject, in the subject's form.
-        if name_key(name) in seen or any(_same_person(name, s) for s in subjects if s != name):
+        if any(_same_person(name, s) for s in subjects if s != name):
             return
-        seen.add(name_key(name))
-        persons.append({"name": name, "where": where})
+        key = name_key(name)
+        # Named again in the text, or after the text or another footnote: the same person.
+        # Named again in the same footnote's list: another person of that name.
+        if key in first and (where == "text" or first[key] != where):
+            return
+        first.setdefault(key, where)
+        count[key] = count.get(key, 0) + 1
+        p = {"name": name}
+        if count[key] > 1:
+            p["n"] = count[key]
+        p["where"] = where
+        persons.append(p)
 
     for n in subjects:
         add(n, "text")
@@ -91,9 +103,18 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
             errors.append(f"{mrid}: not a current ID")
             continue
         notes = footnotes_by_id.get(mrid, [])
-        keys = [name_key(p["name"]) for p in persons]
-        if len(set(keys)) != len(keys):
-            errors.append(f"{mrid}: a name appears twice")
+        numbered = {}  # name_key -> the n of each of its persons
+        for p in persons:
+            n = p.get("n", 1)
+            if "n" in p and (type(n) is not int or n < 2):
+                errors.append(f"{mrid}: {p['name']!r} has n {n!r}: n is an integer from 2, absent for the first")
+                continue
+            if "#" in p["name"]:
+                errors.append(f"{mrid}: {p['name']!r} contains '#', which separates a person key's n")
+            numbered.setdefault(name_key(p["name"]), []).append(n)
+        for key, ns in numbered.items():
+            if sorted(ns) != list(range(1, len(ns) + 1)):
+                errors.append(f"{mrid}: the persons named {key!r} are numbered {sorted(ns)}, not 1, 2, 3…")
         for p in persons:
             where = p["where"]
             if where == "text":
