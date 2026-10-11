@@ -96,6 +96,12 @@ class FindPersonTest(unittest.TestCase):
         found = mt.find_person(text, "Nemardus Fictor")
         self.assertEqual(span_text(text, found), "Nemárdi, cognoménto Fictóris")
 
+    def test_a_third_declension_in_os(self):
+        # sacerdos, sacerdotis; nepos, nepotis.
+        text = "Seguntíni, sancti Martíni, cognoménto Sacerdótis, epíscopi."
+        found = mt.find_person(text, "Martinus Sacerdos")
+        self.assertEqual(span_text(text, found), "Martíni, cognoménto Sacerdótis")
+
     def test_only_one_gap(self):
         self.assertIsNone(mt.find_person("Romæ, beáti Petri (Ioánnis) Magni (Pauli) Nemínis.", "Petrus Magnus Nemo"))
 

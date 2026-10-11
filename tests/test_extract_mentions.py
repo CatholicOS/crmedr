@@ -204,11 +204,28 @@ class RepeatedNamesTest(unittest.TestCase):
 
 
 class VariantsTest(unittest.TestCase):
-    def test_a_mark_spans_the_name_and_its_variant(self):
+    def test_a_name_and_its_variant_are_two_pieces_of_one_person(self):
+        # A mark covers name words only: "seu" is left unmarked, both pieces are Kinga.
         text = "In Polónia, sanctæ Kingæ seu Cunegúndis, vírginis."
-        ms, review, _ = mentions_of(text, persons=[{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
-        self.assertEqual([m["form"] for m in ms], ["Kingæ seu Cunegúndis"])
+        ms, review, hows = mentions_of(text, persons=[{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
+        self.assertEqual([(m["form"], m["name"]) for m in ms], [("Kingæ", "Kinga"), ("Cunegúndis", "Kinga")])
         self.assertEqual(review, [])
+        self.assertEqual(len([h for h in hows if h[0] == "person"]), 1)  # one person found, in two pieces
+
+    def test_a_name_across_cognomento_is_marked_without_it(self):
+        text = "In monastério Horténsi, tránsitus sancti Martíni, cognoménto Sacerdótis, qui epíscopus."
+        ms, review, _ = mentions_of(text, persons=[{"name": "Martinus Sacerdos", "where": "text"}])
+        self.assertEqual([(m["form"], m["name"]) for m in ms],
+                         [("Martíni", "Martinus Sacerdos"), ("Sacerdótis", "Martinus Sacerdos")])
+        self.assertEqual(review, [])
+        self.assertEqual(em.validate({"ed": {"mr:x": ms}}, lambda e, m, w: text), [])
+
+    def test_a_byname_with_its_own_variant_is_three_pieces(self):
+        text = "Constantinópoli, sancti Petri, cognoménto Apselámi seu Bálsami, presbýteri."
+        ms, _, _ = mentions_of(text, persons=[{"name": "Petrus Apselamus", "also": ["Petrus Balsamus"],
+                                               "where": "text"}])
+        self.assertEqual([m["form"] for m in ms], ["Petri", "Apselámi", "Bálsami"])
+        self.assertEqual({m["name"] for m in ms}, {"Petrus Apselamus"})
 
     def test_a_person_printed_only_under_a_variant_is_marked(self):
         text = "Romæ, sanctæ Cunegúndis, vírginis."
@@ -232,7 +249,7 @@ class VariantsTest(unittest.TestCase):
         # covers the whole phrase.
         text = "Cæsaréæ, sancti Mamántis seu Mamétis, mártyris."
         ms, _, _ = mentions_of(text, persons=[{"name": "Mamas", "also": ["Mames"], "where": "text"}])
-        self.assertEqual([m["form"] for m in ms], ["Mamántis seu Mamétis"])
+        self.assertEqual([m["form"] for m in ms], ["Mamántis", "Mamétis"])
 
     def test_a_variant_never_takes_the_words_of_a_person_of_that_name(self):
         text = "Romæ, sanctórum Maximiáni et Maximi."
@@ -245,11 +262,11 @@ class VariantsTest(unittest.TestCase):
         ms, _, _ = mentions_of(text, persons=persons)
         self.assertEqual([(m["form"], m["name"]) for m in ms], [("Mamétis", "Mames")])
 
-    def test_a_footnote_mark_spans_qui_et(self):
+    def test_a_footnote_mark_leaves_qui_et_out(self):
         note = "Quorum nómina: Dativus, qui et Sanator, Felix."
         ms, _, _ = mentions_of("Romæ.", persons=[{"name": "Dativus", "also": ["Sanator"], "where": {"footnote": 1}}],
                                notes=[note])
-        self.assertEqual([m["form"] for m in ms], ["Dativus, qui et Sanator"])
+        self.assertEqual([m["form"] for m in ms], ["Dativus", "Sanator"])
 
 
 ED = "martyrologium_romanum_2004"

@@ -140,6 +140,8 @@ def _declined(word):
         return [(word[:-2], ["es", "is", "i", "em", "e", "ae"]), (word[:-1] + "t", ["is", "i", "em", "e"])]
     if word.endswith("or"):
         return [(word, ["", "is", "i", "em", "e"])]
+    if word.endswith("os"):  # a t stem: Sacerdos, Sacerdotis; Nepos, Nepotis
+        return [(word, [""]), (word[:-2] + "ot", ["is", "i", "em", "e"])]
     if word.endswith("ns"):
         return [(word[:-1] + "t", ["is", "i", "em", "e"])]
     if word.endswith("am"):  # Abraham, Abrahae

@@ -62,6 +62,22 @@ def with_variant(src, span, taken):
     return wide if wide == span or free((span[1], wide[1]), taken) else span
 
 
+# What joins two names of one person in print, left out of their marks: "Martíni, cognoménto
+# Sacerdótis", "Kingæ seu Cunegúndis", "Dativus, qui et Sanator".
+JOINER = re.compile(r"\s*,?\s+(?:cogn[oó]m[eé]nto|seu|vel|sive|qu(?:i|ae|æ)\s+et)\s+", re.I)
+
+
+def name_pieces(src, span):
+    """A person's span as the spans of its name words, cut where a joiner stands between two names of
+    the person, the joiner and the comma before it left out."""
+    pieces, at = [], span[0]
+    for m in JOINER.finditer(src, span[0], span[1]):
+        pieces.append((at, m.start()))
+        at = m.end()
+    pieces.append((at, span[1]))
+    return [(a, b) for a, b in pieces if b > a]
+
+
 def with_name_before(src, span, taken):
     """A span found under a person's other name, widened back over the name printed before it
     ("Mamántis seu Mamétis"), unless that word is taken by another mention."""
@@ -115,7 +131,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
              "form": source(where)[span[0]:span[1]], **extra}
         mentions.append(m)
         spans(kind, where).append(span)
-        hows.append((kind, where == "text", how))
+        if how:  # a person's further pieces (name_pieces) count once, with the first
+            hows.append((kind, where == "text", how))
         return m
 
     def ask(op, kind, where, span, reasoning, **extra):
@@ -164,8 +181,10 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
             if under != name:
                 span = with_name_before(src, span, both)  # found as "Mametis": from "Mamantis seu"
-        add("person", where, span, how, name=name, **({"n": p["n"]} if "n" in p else {}),
-            qid=person_qid(person_key(p)))
+        # Two names of the person printed together are marked as pieces, the joiner left out.
+        for i, piece in enumerate(name_pieces(src, span)):
+            add("person", where, piece, how if i == 0 else None, name=name, **({"n": p["n"]} if "n" in p else {}),
+                qid=person_qid(person_key(p)))
 
     def not_found(p):
         name, where, src = p["name"], p["where"], source(p["where"])

@@ -1167,8 +1167,17 @@
           "kind": "person",
           "where": "text",
           "start": 27,
+          "end": 34,
+          "check": "c581f001",
+          "name": "Eduardus Confessor",
+          "qid": "Q130005"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 47,
           "end": 58,
-          "check": "08aa288a",
+          "check": "b70fd0b2",
           "name": "Eduardus Confessor",
           "qid": "Q130005"
         }
@@ -1612,8 +1621,17 @@
           "kind": "person",
           "where": "text",
           "start": 43,
+          "end": 49,
+          "check": "2f72e583",
+          "name": "Canutus Lavard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
           "end": 68,
-          "check": "42eb2ca3",
+          "check": "62af1f64",
           "name": "Canutus Lavard",
           "qid": null
         }
@@ -2153,8 +2171,17 @@
           "kind": "person",
           "where": "text",
           "start": 36,
+          "end": 45,
+          "check": "401e4455",
+          "name": "Eustratius Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 58,
           "end": 69,
-          "check": "10dfea32",
+          "check": "9d02d70f",
           "name": "Eustratius Thaumaturgus",
           "qid": null
         }
@@ -2808,8 +2835,26 @@
           "kind": "person",
           "where": "text",
           "start": 29,
+          "end": 34,
+          "check": "17dcbf66",
+          "name": "Petrus Apselamus",
+          "qid": "Q2577177"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 47,
+          "end": 55,
+          "check": "919a519d",
+          "name": "Petrus Apselamus",
+          "qid": "Q2577177"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
           "end": 67,
-          "check": "a9c8c0fb",
+          "check": "feb8fb5f",
           "name": "Petrus Apselamus",
           "qid": "Q2577177"
         }
@@ -3721,8 +3766,17 @@
           "kind": "person",
           "where": "text",
           "start": 23,
+          "end": 29,
+          "check": "a0a04950",
+          "name": "Iacobus Eleemosynarius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 42,
           "end": 55,
-          "check": "0bf48e6a",
+          "check": "0e13c04f",
           "name": "Iacobus Eleemosynarius",
           "qid": null
         }
@@ -4339,8 +4393,17 @@
           "kind": "person",
           "where": "text",
           "start": 36,
+          "end": 44,
+          "check": "cfc88a03",
+          "name": "Sulpicius Pius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 57,
           "end": 60,
-          "check": "ee494e07",
+          "check": "7cb20f0c",
           "name": "Sulpicius Pius",
           "qid": null
         }
@@ -4765,8 +4828,17 @@
           "kind": "person",
           "where": "text",
           "start": 20,
+          "end": 27,
+          "check": "7b2b6b23",
+          "name": "Macarius Alexandrinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
           "end": 51,
-          "check": "acd153f4",
+          "check": "13610954",
           "name": "Macarius Alexandrinus",
           "qid": null
         }
@@ -7156,8 +7228,17 @@
           "kind": "person",
           "where": "text",
           "start": 28,
+          "end": 33,
+          "check": "6e0d7060",
+          "name": "Gilda Sapiens",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
           "end": 55,
-          "check": "a7e87f40",
+          "check": "0e3314ca",
           "name": "Gilda Sapiens",
           "qid": null
         }
@@ -7612,8 +7693,17 @@
           "kind": "person",
           "where": "text",
           "start": 14,
+          "end": 23,
+          "check": "f045fbce",
+          "name": "Theophilus Iuvenis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 36,
           "end": 43,
-          "check": "0b71626b",
+          "check": "cc1fba74",
           "name": "Theophilus Iuvenis",
           "qid": null
         }
@@ -7877,8 +7967,17 @@
           "kind": "person",
           "where": "text",
           "start": 26,
+          "end": 32,
+          "check": "82372783",
+          "name": "Maedhoc",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
           "end": 43,
-          "check": "cfdcf010",
+          "check": "7ab6a3dc",
           "name": "Maedhoc",
           "qid": null
         }
@@ -9576,8 +9675,17 @@
           "kind": "person",
           "where": "text",
           "start": 39,
+          "end": 45,
+          "check": "5f0a20db",
+          "name": "Rabanus Maurus",
+          "qid": "Q160441"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 58,
           "end": 63,
-          "check": "633a3604",
+          "check": "4e0549e8",
           "name": "Rabanus Maurus",
           "qid": "Q160441"
         }
@@ -10291,8 +10399,17 @@
           "kind": "person",
           "where": "text",
           "start": 49,
+          "end": 55,
+          "check": "03078739",
+          "name": "Renula",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
           "end": 69,
-          "check": "7e7a288d",
+          "check": "bb96a3dc",
           "name": "Renula",
           "qid": null
         }
@@ -10882,8 +10999,17 @@
           "kind": "person",
           "where": "text",
           "start": 23,
+          "end": 28,
+          "check": "17dcbf66",
+          "name": "Petrus Igneus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
           "end": 46,
-          "check": "e917d567",
+          "check": "8472a048",
           "name": "Petrus Igneus",
           "qid": null
         }
@@ -11582,8 +11708,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 31,
+          "check": "3210df5c",
+          "name": "Antonius Caulea",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
           "end": 50,
-          "check": "ffe13d3f",
+          "check": "093b23ac",
           "name": "Antonius Caulea",
           "qid": null
         }
@@ -11715,8 +11850,19 @@
             "footnote": 1
           },
           "start": 143,
+          "end": 150,
+          "check": "48eaef84",
+          "name": "Dativus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 159,
           "end": 166,
-          "check": "213f6ea7",
+          "check": "883a67f1",
           "name": "Dativus",
           "qid": null
         },
@@ -11794,8 +11940,19 @@
             "footnote": 1
           },
           "start": 241,
+          "end": 251,
+          "check": "74de7e69",
+          "name": "Maximianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 256,
           "end": 263,
-          "check": "bed3d421",
+          "check": "86d3f425",
           "name": "Maximianus",
           "qid": null
         },
@@ -11805,8 +11962,19 @@
             "footnote": 1
           },
           "start": 265,
+          "end": 271,
+          "check": "3146fbef",
+          "name": "Telica",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 276,
           "end": 284,
-          "check": "c7648b0e",
+          "check": "4b39feb0",
           "name": "Telica",
           "qid": null
         },
@@ -13434,8 +13602,17 @@
           "kind": "person",
           "where": "text",
           "start": 12,
+          "end": 28,
+          "check": "8614c2d7",
+          "name": "Ioannes Faesulani Angelicus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
           "end": 49,
-          "check": "dd8bcbda",
+          "check": "58727db8",
           "name": "Ioannes Faesulani Angelicus",
           "qid": null
         }
@@ -16766,8 +16943,17 @@
           "kind": "person",
           "where": "text",
           "start": 33,
+          "end": 38,
+          "check": "f3a47691",
+          "name": "Paulus Simplex",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
           "end": 60,
-          "check": "bf110fb1",
+          "check": "33b2d434",
           "name": "Paulus Simplex",
           "qid": null
         }
@@ -17635,8 +17821,17 @@
           "kind": "person",
           "where": "text",
           "start": 47,
+          "end": 51,
+          "check": "92f3fba4",
+          "name": "Oengus Culdeus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
           "end": 70,
-          "check": "db96525e",
+          "check": "19ac4652",
           "name": "Oengus Culdeus",
           "qid": null
         }
@@ -17834,8 +18029,17 @@
           "kind": "person",
           "where": "text",
           "start": 43,
+          "end": 62,
+          "check": "e00fdb8d",
+          "name": "Gregorius I Magnus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
           "end": 80,
-          "check": "d7ba099d",
+          "check": "091df908",
           "name": "Gregorius I Magnus",
           "qid": null
         }
@@ -18050,8 +18254,17 @@
           "kind": "person",
           "where": "text",
           "start": 64,
+          "end": 74,
+          "check": "2fd579a9",
+          "name": "Theophanes Chronographus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 87,
           "end": 99,
-          "check": "8d30a1f4",
+          "check": "d8015f8f",
           "name": "Theophanes Chronographus",
           "qid": null
         }
@@ -18713,8 +18926,17 @@
           "kind": "person",
           "where": "text",
           "start": 26,
+          "end": 39,
+          "check": "0e3f08cf",
+          "name": "Ioannes Sordi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
           "end": 56,
-          "check": "1be15526",
+          "check": "7cb4d66a",
           "name": "Ioannes Sordi",
           "qid": null
         }
@@ -19635,8 +19857,17 @@
           "kind": "person",
           "where": "text",
           "start": 31,
+          "end": 37,
+          "check": "a0a04950",
+          "name": "Iacobus Confessor",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 50,
           "end": 61,
-          "check": "a198fdf5",
+          "check": "b70fd0b2",
           "name": "Iacobus Confessor",
           "qid": null
         }
@@ -22349,8 +22580,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 31,
+          "check": "9c97236f",
+          "name": "Iosephus Hymnographus",
+          "qid": "Q2282958"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
           "end": 55,
-          "check": "de14ccee",
+          "check": "57c96b38",
           "name": "Iosephus Hymnographus",
           "qid": "Q2282958"
         }
@@ -32887,8 +33127,17 @@
           "kind": "person",
           "where": "text",
           "start": 29,
+          "end": 37,
+          "check": "7877c6f1",
+          "name": "Achilleus Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 50,
           "end": 61,
-          "check": "63921f37",
+          "check": "9d02d70f",
           "name": "Achilleus Thaumaturgus",
           "qid": null
         }
@@ -32925,8 +33174,17 @@
           "kind": "person",
           "where": "text",
           "start": 20,
+          "end": 25,
+          "check": "d72b3a0f",
+          "name": "Caleb",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
           "end": 38,
-          "check": "a64c4052",
+          "check": "675d93b9",
           "name": "Caleb",
           "qid": null
         }
@@ -33884,8 +34142,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 33,
+          "check": "0bb18033",
+          "name": "Augustinus Novellus",
+          "qid": "Q385253"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
           "end": 53,
-          "check": "f8974c98",
+          "check": "16b5a3d1",
           "name": "Augustinus Novellus",
           "qid": "Q385253"
         }
@@ -37421,8 +37688,26 @@
           "kind": "person",
           "where": "text",
           "start": 26,
+          "end": 41,
+          "check": "136b80fe",
+          "name": "Matthias Kalemba Mulumba",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 61,
+          "check": "26842a32",
+          "name": "Matthias Kalemba Mulumba",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 66,
           "end": 72,
-          "check": "3d705575",
+          "check": "8c2cd173",
           "name": "Matthias Kalemba Mulumba",
           "qid": null
         }
@@ -40491,8 +40776,17 @@
           "kind": "person",
           "where": "text",
           "start": 32,
+          "end": 39,
+          "check": "4a842836",
+          "name": "Columba",
+          "qid": "Q236326"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
           "end": 55,
-          "check": "971f2a56",
+          "check": "854cfa50",
           "name": "Columba",
           "qid": "Q236326"
         }
@@ -41425,8 +41719,17 @@
           "kind": "person",
           "where": "text",
           "start": 19,
+          "end": 25,
+          "check": "2a883691",
+          "name": "Cetheus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
           "end": 39,
-          "check": "fa53f389",
+          "check": "3d3e261d",
           "name": "Cetheus",
           "qid": null
         }
@@ -44005,8 +44308,17 @@
           "kind": "person",
           "where": "text",
           "start": 43,
+          "end": 50,
+          "check": "5aa55de9",
+          "name": "Ioannes Hispanus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
           "end": 70,
-          "check": "b3273355",
+          "check": "0e3e060a",
           "name": "Ioannes Hispanus",
           "qid": null
         }
@@ -46239,8 +46551,17 @@
           "kind": "person",
           "where": "text",
           "start": 40,
+          "end": 47,
+          "check": "5aa55de9",
+          "name": "Ioannes Cornelius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
           "end": 68,
-          "check": "d3f2a7b1",
+          "check": "697df2d1",
           "name": "Ioannes Cornelius",
           "qid": null
         }
@@ -46443,8 +46764,17 @@
           "kind": "person",
           "where": "text",
           "start": 25,
+          "end": 32,
+          "check": "d1dbfc04",
+          "name": "Dometius Medicus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
           "end": 51,
-          "check": "e474bd48",
+          "check": "f97604b8",
           "name": "Dometius Medicus",
           "qid": null
         }
@@ -46795,8 +47125,17 @@
           "kind": "person",
           "where": "text",
           "start": 18,
+          "end": 24,
+          "check": "4543f7ea",
+          "name": "Sisoes Magnus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
           "end": 42,
-          "check": "178a87cb",
+          "check": "091df908",
           "name": "Sisoes Magnus",
           "qid": null
         }
@@ -53107,8 +53446,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 27,
+          "check": "4356e3c8",
+          "name": "Dius Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
           "end": 51,
-          "check": "16cd0754",
+          "check": "9d02d70f",
           "name": "Dius Thaumaturgus",
           "qid": null
         }
@@ -53546,8 +53894,17 @@
           "kind": "person",
           "where": "text",
           "start": 29,
+          "end": 35,
+          "check": "6e0a5120",
+          "name": "Marina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
           "end": 49,
-          "check": "99e6662f",
+          "check": "5ce2210e",
           "name": "Marina",
           "qid": null
         }
@@ -53775,8 +54132,17 @@
           "kind": "person",
           "where": "text",
           "start": 29,
+          "end": 37,
+          "check": "4839c55f",
+          "name": "Simeon Salus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 50,
           "end": 54,
-          "check": "6d072ddc",
+          "check": "0f19fb69",
           "name": "Simeon Salus",
           "qid": null
         }
@@ -54557,8 +54923,17 @@
           "kind": "person",
           "where": "text",
           "start": 41,
+          "end": 50,
+          "check": "97b298c2",
+          "name": "Christina Mirabilis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
           "end": 72,
-          "check": "a3e4540a",
+          "check": "85dfd3a5",
           "name": "Christina Mirabilis",
           "qid": null
         }
@@ -54614,8 +54989,17 @@
           "kind": "person",
           "where": "text",
           "start": 29,
+          "end": 45,
+          "check": "db126881",
+          "name": "Fantinus Senior Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 58,
           "end": 69,
-          "check": "1ff2dacc",
+          "check": "9d02d70f",
           "name": "Fantinus Senior Thaumaturgus",
           "qid": null
         }
@@ -54709,8 +55093,17 @@
           "kind": "person",
           "where": "text",
           "start": 43,
+          "end": 48,
+          "check": "9c9dbd5d",
+          "name": "Kinga",
+          "qid": "Q233012"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
           "end": 63,
-          "check": "78a320fc",
+          "check": "f6377d46",
           "name": "Kinga",
           "qid": "Q233012"
         }
@@ -57218,8 +57611,17 @@
           "kind": "person",
           "where": "text",
           "start": 7,
+          "end": 12,
+          "check": "17dcbf66",
+          "name": "Petrus Chrysologus",
+          "qid": "Q328742"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
           "end": 35,
-          "check": "8f6bc5fd",
+          "check": "deda525b",
           "name": "Petrus Chrysologus",
           "qid": "Q328742"
         }
@@ -60429,8 +60831,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 33,
+          "check": "08f6e486",
+          "name": "Alexander Carbonarius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
           "end": 56,
-          "check": "0a74d96b",
+          "check": "3b00356d",
           "name": "Alexander Carbonarius",
           "qid": null
         }
@@ -62657,8 +63068,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 33,
+          "check": "09d6ee91",
+          "name": "Laurentius Loricatus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
           "end": 54,
-          "check": "de17965d",
+          "check": "4b883fb3",
           "name": "Laurentius Loricatus",
           "qid": null
         }
@@ -63018,8 +63438,17 @@
           "kind": "person",
           "where": "text",
           "start": 30,
+          "end": 38,
+          "check": "df5b1c28",
+          "name": "Mamas",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
           "end": 50,
-          "check": "6c197418",
+          "check": "d27f2188",
           "name": "Mamas",
           "qid": null
         }
@@ -68192,8 +68621,19 @@
             "footnote": 1
           },
           "start": 293,
+          "end": 306,
+          "check": "3923bd26",
+          "name": "Claudius Cayx",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 311,
           "end": 316,
-          "check": "bbab5754",
+          "check": "6536006b",
           "name": "Claudius Cayx",
           "qid": null
         },
@@ -68786,8 +69226,19 @@
             "footnote": 1
           },
           "start": 1829,
+          "end": 1841,
+          "check": "c7d74883",
+          "name": "Lupus Thomas",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1846,
           "end": 1854,
-          "check": "70223e8e",
+          "check": "dff92ee6",
           "name": "Lupus Thomas",
           "qid": null
         },
@@ -69507,8 +69958,19 @@
             "footnote": 1
           },
           "start": 67,
+          "end": 98,
+          "check": "48a16c71",
+          "name": "Ioannes Franciscus Maria Benoît",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 103,
           "end": 110,
-          "check": "87cbe506",
+          "check": "2361fbd0",
           "name": "Ioannes Franciscus Maria Benoît",
           "qid": null
         },
@@ -73444,8 +73906,17 @@
           "kind": "person",
           "where": "text",
           "start": 44,
+          "end": 48,
+          "check": "04908eeb",
+          "name": "Elias Speleota",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 61,
           "end": 69,
-          "check": "1eac1330",
+          "check": "a2d7e74b",
           "name": "Elias Speleota",
           "qid": null
         }
@@ -74899,6 +75370,15 @@
           "check": "084388bd",
           "name": "Martinus Sacerdos",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 92,
+          "check": "9288bfb8",
+          "name": "Martinus Sacerdos",
+          "qid": null
         }
       ],
       "mr:0916-ninianus": [
@@ -75758,8 +76238,17 @@
           "kind": "person",
           "where": "text",
           "start": 27,
+          "end": 34,
+          "check": "0d434420",
+          "name": "Goericus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
           "end": 46,
-          "check": "77918dc3",
+          "check": "407398ad",
           "name": "Goericus",
           "qid": null
         }
@@ -80621,8 +81110,17 @@
           "kind": "person",
           "where": "text",
           "start": 19,
+          "end": 27,
+          "check": "d308b470",
+          "name": "Gregorius Illuminator",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
           "end": 53,
-          "check": "0acd778b",
+          "check": "1ae69ce8",
           "name": "Gregorius Illuminator",
           "qid": null
         }
@@ -82407,8 +82905,17 @@
           "kind": "person",
           "where": "text",
           "start": 26,
+          "end": 33,
+          "check": "5aa55de9",
+          "name": "Ioannes Xenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
           "end": 50,
-          "check": "7d6c31e5",
+          "check": "31ad2d1d",
           "name": "Ioannes Xenus",
           "qid": null
         }
@@ -82722,8 +83229,17 @@
           "kind": "person",
           "where": "text",
           "start": 55,
+          "end": 62,
+          "check": "084388bd",
+          "name": "Martinus Cid",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
           "end": 78,
-          "check": "90734f2a",
+          "check": "6d57834d",
           "name": "Martinus Cid",
           "qid": null
         }
@@ -83671,8 +84187,17 @@
           "kind": "person",
           "where": "text",
           "start": 26,
+          "end": 35,
+          "check": "7c9ab11d",
+          "name": "Gaudentius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
           "end": 46,
-          "check": "617ffb77",
+          "check": "ec848a10",
           "name": "Gaudentius",
           "qid": null
         }
@@ -87690,8 +88215,17 @@
           "kind": "person",
           "where": "text",
           "start": 58,
+          "end": 63,
+          "check": "0455f277",
+          "name": "Witta",
+          "qid": "Q882924"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
           "end": 75,
-          "check": "ba10a08a",
+          "check": "c9b012d0",
           "name": "Witta",
           "qid": "Q882924"
         }
@@ -89663,8 +90197,17 @@
           "kind": "person",
           "where": "text",
           "start": 39,
+          "end": 46,
+          "check": "397180e0",
+          "name": "Emericus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
           "end": 58,
-          "check": "882beb2a",
+          "check": "2e529ff2",
           "name": "Emericus",
           "qid": null
         }
@@ -92380,8 +92923,17 @@
           "kind": "person",
           "where": "text",
           "start": 7,
+          "end": 14,
+          "check": "7f3529cb",
+          "name": "Albertus Magnus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
           "end": 32,
-          "check": "7d8991ca",
+          "check": "091df908",
           "name": "Albertus Magnus",
           "qid": null
         }
@@ -92503,8 +93055,17 @@
           "kind": "person",
           "where": "text",
           "start": 37,
+          "end": 54,
+          "check": "63bac7c3",
+          "name": "Hugo Faringdon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
           "end": 63,
-          "check": "7921e1b7",
+          "check": "7f4a1e5b",
           "name": "Hugo Faringdon",
           "qid": null
         }
@@ -92855,8 +93416,17 @@
           "kind": "person",
           "where": "text",
           "start": 7,
+          "end": 16,
+          "check": "d32eed41",
+          "name": "Gertrudis Magna",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
           "end": 34,
-          "check": "7ac9e34b",
+          "check": "552210b1",
           "name": "Gertrudis Magna",
           "qid": null
         }
@@ -96439,8 +97009,17 @@
           "kind": "person",
           "where": "text",
           "start": 25,
+          "end": 41,
+          "check": "3265003e",
+          "name": "Elisabeth Achler Bona",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
           "end": 58,
-          "check": "6326e98c",
+          "check": "4ea27a93",
           "name": "Elisabeth Achler Bona",
           "qid": null
         }
@@ -97027,8 +97606,17 @@
           "kind": "person",
           "where": "text",
           "start": 19,
+          "end": 25,
+          "check": "a0a04950",
+          "name": "Iacobus Intercisus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 38,
           "end": 47,
-          "check": "3e165720",
+          "check": "ec37ad4d",
           "name": "Iacobus Intercisus",
           "qid": null
         }
@@ -98097,8 +98685,17 @@
           "kind": "person",
           "where": "text",
           "start": 28,
+          "end": 36,
+          "check": "44f5d702",
+          "name": "Tugdualus Pabu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 49,
           "end": 53,
-          "check": "326e3401",
+          "check": "725fbd79",
           "name": "Tugdualus Pabu",
           "qid": null
         }
@@ -98822,8 +99419,17 @@
           "kind": "person",
           "where": "text",
           "start": 28,
+          "end": 35,
+          "check": "5aa55de9",
+          "name": "Ioannes Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 48,
           "end": 59,
-          "check": "fc70274f",
+          "check": "9d02d70f",
           "name": "Ioannes Thaumaturgus",
           "qid": null
         }
@@ -100075,8 +100681,17 @@
           "kind": "person",
           "where": "text",
           "start": 24,
+          "end": 32,
+          "check": "a3b10b3c",
+          "name": "Daniel Stylita",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
           "end": 52,
-          "check": "5416607d",
+          "check": "177c924e",
           "name": "Daniel Stylita",
           "qid": null
         }
@@ -102816,8 +103431,17 @@
           "kind": "person",
           "where": "text",
           "start": 28,
+          "end": 35,
+          "check": "ad8b724c",
+          "name": "Nicolaus Factor",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 48,
           "end": 56,
-          "check": "3475dad9",
+          "check": "e6d20af3",
           "name": "Nicolaus Factor",
           "qid": null
         }
