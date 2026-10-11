@@ -481,11 +481,11 @@ ID_CORRECTIONS = {
     "mr:0703-thomas": "mr:0703-thomas-apostolus",
     "mr:0725-iacobus": "mr:0725-iacobus-apostolus",
     "mr:0824-bartholomaeus": "mr:0824-bartholomaeus-apostolus",
-    "mr:0921-matthaeus": "mr:0921-matthaeus-apostolus",
+    "mr:0921-matthaeus": "mr:0921-matthaeus-apostolus-et-evangelista",
     "mr:1028-simon-et-iudas": "mr:1028-simon-et-iudas-apostoli",
     "mr:1118-dedicatio-basilicarum-petri-et-pauli": "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
     "mr:1130-andreas": "mr:1130-andreas-apostolus",
-    "mr:1227-ioannes": "mr:1227-ioannes-apostolus",
+    "mr:1227-ioannes": "mr:1227-ioannes-apostolus-et-evangelista",
 
     # #59: the evangelists Mark and Luke keep -evangelista.
     "mr:0425-marcus": "mr:0425-marcus-evangelista",
@@ -650,6 +650,9 @@ ID_CORRECTIONS = {
     "mr:0926-gedeon": "mr:0926-gedeon-iudex",
     "mr:0826-melchisedech": "mr:0826-melchisedech-rex-et-sacerdos",
     "mr:0701-aaron": "mr:0701-aaron-sacerdos",
+    # Matthew and John keep both titles the 2004 Latin gives them: "Apóstoli et Evangelístæ".
+    "mr:0921-matthaeus-apostolus": "mr:0921-matthaeus-apostolus-et-evangelista",
+    "mr:1227-ioannes-apostolus": "mr:1227-ioannes-apostolus-et-evangelista",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

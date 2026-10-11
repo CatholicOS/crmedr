@@ -100,6 +100,11 @@ only Old Testament patriarch in the 1630, 1749, 1914 and 2004 editions), mr:0926
 Dei altíssimi*) and mr:0701-aaron-sacerdos (*sacérdos Véteris Testaménti*). Their Latin subjects
 carry the title (Sanctus Abraham Patriarcha); the person is named without it (Abraham).
 
+**Apostles and evangelists**: Matthew and John, whom the 2004 Latin calls *Apóstoli et
+Evangelístæ*, keep both titles: mr:0921-matthaeus-apostolus-et-evangelista and
+mr:1227-ioannes-apostolus-et-evangelista. Their persons stay Matthaeus Apostolus and Ioannes
+Apostolus, as the other apostles.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 
