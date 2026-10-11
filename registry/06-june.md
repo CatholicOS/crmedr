@@ -128,12 +128,12 @@
 | 10 | 6 | `mr:0610-henricus-de-bauzano` | * | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0610-ioannes-dominicus` | * | HU | dies_natalis |  |  |
 | 10 | 8 | `mr:0610-thomas-green-et-gualterius-pierson` | * | GB | dies_natalis |  |  |
-| 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | Entry 9* at June 10 in the Latin editio altera 2004 print; the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando). |
+| 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | 2004 Latin: The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando). 2004 English: The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando). |
 | 10 | 10 | `mr:0610-eduardus-poppe` | * | BE | dies_natalis | CEI: entry 9 |  |
 | 11 | (1) | `mr:0611-barnabas` |  | IL | dies_natalis |  |  |
 | 11 | 2 | `mr:0611-maximus` |  | IT | dies_natalis | same as `mr:0610-maximus` |  |
 | 11 | 3 | `mr:0611-rembertus` |  | DE | dies_natalis |  |  |
-| 11 | 4 | `mr:0611-bardo` | * | DE | dies_natalis | CEI: asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 11 | 4 | `mr:0611-bardo` | * | DE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
 | 11 | 5 | `mr:0611-aleydis` | * | BE | dies_natalis |  |  |
 | 11 | 6 | `mr:0611-parisius` |  | IT | dies_natalis |  |  |
 | 11 | 7 | `mr:0611-iolenta` | * | PL | dies_natalis |  |  |
@@ -275,7 +275,7 @@
 | 24 | 4 | `mr:0624-agoardus-et-agilbertus` |  | FR | dies_natalis |  |  |
 | 24 | 5 | `mr:0624-rumoldus` |  | BE | dies_natalis | same as `mr:0701-rumoldus` |  |
 | 24 | 6 | `mr:0624-theodulfus` |  | BE | dies_natalis |  |  |
-| 24 | 7 | `mr:0624-gohardus` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 24 | 7 | `mr:0624-gohardus` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 24 | 8 | `mr:0624-theodgarus` | * | DK | dies_natalis |  |  |
 | 24 | 9 | `mr:0624-iosephus-yuan-zaide` |  | CN | dies_natalis |  |  |
 | 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  |  |

@@ -48,17 +48,17 @@
 | 3 | 9 | `mr:0103-lucianus` | * | IT | dies_natalis |  |  |
 | 3 | 10 | `mr:0103-cyriacus-elias-chavara` | * | IN | dies_natalis |  |  |
 | 4 | 1 | `mr:0104-hermes-et-caius` |  | RO | dies_natalis |  |  |
-| 4 | 2 | `mr:0104-abrunculus` | * | FR | dies_natalis | CEI: absent | Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition. |
+| 4 | 2 | `mr:0104-abrunculus` | * | FR | dies_natalis | CEI: absent | 2004 Latin: Not printed in the Italian (CEI) edition. 2004 English: Not printed in the Italian (CEI) edition. |
 | 4 | 3 | `mr:0104-gregorius` |  | FR | dies_natalis | CEI: entry 2 |  |
-| 4 | 4 | `mr:0104-ferreolus` | * | FR | dies_natalis | CEI: entry 3, asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
-| 4 | 5 | `mr:0104-rigomerus` | * | FR | dies_natalis | CEI: entry 4, asterisk False | Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 4 | 4 | `mr:0104-ferreolus` | * | FR | dies_natalis | CEI: entry 3, asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
+| 4 | 5 | `mr:0104-rigomerus` | * | FR | dies_natalis | CEI: entry 4, asterisk False | 2004 Latin: Asterisked here (entry 5*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (5*). |
 | 4 | 6 | `mr:0104-rigobertus` |  | FR | dies_natalis | CEI: entry 5 |  |
-| 4 | 7 | `mr:0104-pharaildis` | * | FR | dies_natalis | CEI: entry 6, asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 4 | 7 | `mr:0104-pharaildis` | * | FR | dies_natalis | CEI: entry 6, asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 4 | 8 | `mr:0104-angela` | * | IT | dies_natalis | CEI: entry 7 |  |
 | 4 | 9 | `mr:0104-christiana-menabuoi` | * | IT | dies_natalis | CEI: entry 8 |  |
 | 4 | 10 | `mr:0104-thomas-plumtree` | * | GB | dies_natalis | CEI: entry 9 | 2004 English: Translation error: "choosing the noose over the axe" where the Latin "láquei pœnam ... pro vita máluit" says he preferred the noose to his life. |
 | 4 | 11 | `mr:0104-elisabeth-anna-seton` |  | US | dies_natalis | CEI: entry 10 |  |
-| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition. Manuel González García, blessed in the 2004 editions, was canonized in 2016. |
+| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Manuel González García, blessed in the 2004 editions, was canonized in 2016. |
 | 5 | 1 | `mr:0105-syncletica` |  | EG | dies_natalis |  |  |
 | 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis | same as `mr:0322-deogratias` |  |
 | 5 | 3 | `mr:0105-aemiliana` |  | IT | commemoratio |  |  |
@@ -291,7 +291,7 @@
 | 22 | 12 | `mr:0122-gulielmus-iosephus-chaminade` | * | FR | dies_natalis |  |  |
 | 22 | 13 | `mr:0122-laura-vicuna` | * | AR | dies_natalis |  |  |
 | 22 | 14 | `mr:0122-iosephus-nascimbeni` | * | IT | dies_natalis |  |  |
-| 22 | 15 | `mr:0122-ladislaus-batthyany-strattmann` | * | AT | dies_natalis | CEI: asterisk False | Asterisked entry (15*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 22 | 15 | `mr:0122-ladislaus-batthyany-strattmann` | * | AT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 15*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (15*). |
 | 23 | 1 | `mr:0123-severianus-et-aquila` |  | DZ | dies_natalis |  |  |
 | 23 | 2 | `mr:0123-emerentiana` |  | IT | dies_natalis |  |  |
 | 23 | 3 | `mr:0123-clemens-et-agathangelus` |  | TR | dies_natalis |  |  |

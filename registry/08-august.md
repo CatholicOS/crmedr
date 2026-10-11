@@ -30,7 +30,7 @@
 | 2 | 5 | `mr:0802-centolla` |  | ES | dies_natalis | same as `mr:0813-centolla-et-helena` |  |
 | 2 | 6 | `mr:0802-maximus` |  | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0802-serenus` | * | FR | dies_natalis |  |  |
-| 2 | 8 | `mr:0802-betharius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 2 | 8 | `mr:0802-betharius` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 8*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (8*). |
 | 2 | 9 | `mr:0802-petrus` | * | ES | dies_natalis |  |  |
 | 2 | 10 | `mr:0802-ioanna` | * | ES | commemoratio |  |  |
 | 2 | 11 | `mr:0802-philippus-a-iesu-munarriz-azcona-et-socii` | * | ES | dies_natalis |  |  |
@@ -87,7 +87,7 @@
 | 7 | 4 | `mr:0807-donatus-aretii` |  | IT | dies_natalis |  |  |
 | 7 | 5 | `mr:0807-donatianus` |  | FR | dies_natalis |  |  |
 | 7 | 6 | `mr:0807-victricius` |  | FR | dies_natalis |  |  |
-| 7 | 7 | `mr:0807-donatus-vesontione` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 7 | 7 | `mr:0807-donatus-vesontione` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 7 | 8 | `mr:0807-iordanus-forzate` | * | IT | dies_natalis |  |  |
 | 7 | 9 | `mr:0807-albertus-de-abbatibus` | * | IT | dies_natalis |  |  |
 | 7 | 10 | `mr:0807-albertus` | * | IT | dies_natalis |  |  |
@@ -167,7 +167,7 @@
 | 12 | 8 | `mr:0812-carolus-meehan` | * | GB | dies_natalis |  |  |
 | 12 | 9 | `mr:0812-innocentius-xi` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0812-petrus-jarrige-de-la-morelie-de-puyredon` | * | FR | dies_natalis |  |  |
-| 12 | 11 | `mr:0812-iacobus-do-mai-nam-et-socii` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
+| 12 | 11 | `mr:0812-iacobus-do-mai-nam-et-socii` |  | VN | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). |
 | 12 | 12 | `mr:0812-victoria-diez-y-bustos-de-molina` | * | ES | dies_natalis |  |  |
 | 12 | 13 | `mr:0812-flavius-argueso-gonzalez` | * | ES | dies_natalis |  |  |
 | 12 | 14 | `mr:0812-sebastianus-calvo-martinez-et-socii` | * | ES | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | 1749 Latin: This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
 | 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |
-| 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
+| 21 | 11 | `mr:0821-iosephus-dang-dinh-vien` |  | VN | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). |
 | 21 | 12 | `mr:0821-victoria-rasoamanarivo` | * | MG | dies_natalis |  |  |
 | 21 | 13 | `mr:0821-salvator-estrugo-solves` | * | ES | dies_natalis |  |  |
 | 21 | 14 | `mr:0821-raymundus-peiro-victori` | * | ES | dies_natalis |  |  |

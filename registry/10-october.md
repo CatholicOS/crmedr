@@ -277,7 +277,7 @@
 | 21 | 5 | `mr:1021-severinus` |  | FR | dies_natalis |  |  |
 | 21 | 6 | `mr:1021-cilinia` |  | FR | dies_natalis |  |  |
 | 21 | 7 | `mr:1021-viator` |  | FR | commemoratio |  |  |
-| 21 | 8 | `mr:1021-wendelinus` | * | DE | dies_natalis | CEI: asterisk False | Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 21 | 8 | `mr:1021-wendelinus` | * | DE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 8*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (8*). |
 | 21 | 9 | `mr:1021-maurontus` | * | FR | dies_natalis |  |  |
 | 21 | 10 | `mr:1021-petrus-capucci` | * | IT | dies_natalis |  |  |
 | 21 | 11 | `mr:1021-petrus-yu-tae-chol` |  | KR | dies_natalis |  |  |
@@ -345,7 +345,7 @@
 | 26 | 4 | `mr:1026-rusticus` |  | FR | dies_natalis |  |  |
 | 26 | 5 | `mr:1026-aptonius` | * | FR | commemoratio |  |  |
 | 26 | 6 | `mr:1026-cedda` | * | GB | dies_natalis |  |  |
-| 26 | 7 | `mr:1026-eata` | * | GB | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 26 | 7 | `mr:1026-eata` | * | GB | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 26 | 8 | `mr:1026-sigebaldus` | * | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:1026-witta` | * | DE | depositio |  | 2004 English: Translation error: "Wigbert" where the Latin has "Wittæ" (Witta). |
 | 26 | 10 | `mr:1026-beanus` | * | GB | dies_natalis |  |  |

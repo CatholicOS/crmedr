@@ -141,7 +141,7 @@
 | 11 | 2 | `mr:0711-pius-i` |  | IT | commemoratio |  |  |
 | 11 | 3 | `mr:0711-marcianus` |  | TR | dies_natalis |  |  |
 | 11 | 4 | `mr:0711-marciana` |  | DZ | dies_natalis |  |  |
-| 11 | 5 | `mr:0711-leontius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 11 | 5 | `mr:0711-leontius` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 5*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (5*). |
 | 11 | 6 | `mr:0711-drostanus` | * | GB | dies_natalis |  |  |
 | 11 | 7 | `mr:0711-placidus-et-sigisbertus` | * | CH | dies_natalis |  | 2004 English: Translation error: "the former ... founded" where the Latin has "alter" (the other, Sigisbert) as founder and "prior" (Placidus) as the martyr. |
 | 11 | 8 | `mr:0711-hidulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Treviri" (bishop of Trier) where the Latin has "chorepíscopus Tréviris" (chorbishop at Trier). |
@@ -265,7 +265,7 @@
 | 18 | 10 | `mr:0718-simon-de-lipnica` | * | PL | dies_natalis |  |  |
 | 18 | 11 | `mr:0718-ioannes-baptista-de-bruxelles` | * | FR | dies_natalis |  |  |
 | 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  |  |
-| 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 13*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (13*). |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
 | 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
@@ -449,7 +449,7 @@
 | 30 | 3 | `mr:0730-iulitta` |  | TR | dies_natalis |  |  |
 | 30 | 4 | `mr:0730-maxima-et-socii` |  | TN | dies_natalis |  |  |
 | 30 | 5 | `mr:0730-ursus` |  | FR | dies_natalis |  |  |
-| 30 | 6 | `mr:0730-godeleva` | * | BE | dies_natalis | CEI: asterisk False | Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 30 | 6 | `mr:0730-godeleva` | * | BE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
 | 30 | 7 | `mr:0730-mannis-guzman` | * | ES | commemoratio |  |  |
 | 30 | 8 | `mr:0730-eduardus-powell-et-socii` | * | GB | dies_natalis |  |  |
 | 30 | 9 | `mr:0730-iosephus-yuan-gengyin` |  | CN | dies_natalis |  |  |

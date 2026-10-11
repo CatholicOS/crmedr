@@ -38,7 +38,7 @@
 | 2 | 9 | `mr:0502-gulielmus-tirry` | * | IE | dies_natalis |  |  |
 | 2 | 10 | `mr:0502-iosephus-nguyen-van-luu` |  | VN | dies_natalis |  |  |
 | 2 | 11 | `mr:0502-iosephus-maria-rubio-peralta` |  | ES | dies_natalis |  |  |
-| 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 12*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (12*). |
 | 3 | (1) | `mr:0503-philippus-et-iacobus-apostoli` |  | PS | dies_natalis | same as `mr:0501-philippus-et-iacobus`; same as `mr:0511-philippus-et-iacobus-apostoli` |  |
 | 3 | 2 | `mr:0503-timotheus-et-maura` |  | EG | dies_natalis |  |  |
 | 3 | 3 | `mr:0503-eventius-et-socii` |  | IT | dies_natalis |  |  |
@@ -161,7 +161,7 @@
 | 12 | 7 | `mr:0512-rictrudis` | * | FR | dies_natalis |  |  |
 | 12 | 8 | `mr:0512-germanus` |  | TR | dies_natalis |  |  |
 | 12 | 9 | `mr:0512-dominicus` |  | ES | dies_natalis |  |  |
-| 12 | 10 | `mr:0512-imelda-lambertini` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 12 | 10 | `mr:0512-imelda-lambertini` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). |
 | 12 | 11 | `mr:0512-ioanna` | * | PT | dies_natalis |  |  |
 | 13 | (1) | `mr:0513-maria-de-fatima` |  | PT | celebratio |  |  |
 | 13 | 2 | `mr:0513-servatius` |  | NL | dies_natalis |  |  |
@@ -308,7 +308,7 @@
 | 24 | 1 | `mr:0524-manaen` |  | TR | commemoratio |  |  |
 | 24 | 2 | `mr:0524-ioanna` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0524-zoellus` |  | TR | dies_natalis |  |  |
-| 24 | 4 | `mr:0524-servulus` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 24 | 4 | `mr:0524-servulus` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
 | 24 | 5 | `mr:0524-donatianus-et-rogatianus` |  | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0524-triginta-octo-martyres-philippopolis` |  | BG | commemoratio |  |  |
 | 24 | 7 | `mr:0524-vincentius` |  | FR | dies_natalis |  |  |

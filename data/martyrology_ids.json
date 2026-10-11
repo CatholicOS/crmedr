@@ -768,7 +768,10 @@
           "source": "lead"
         }
       ],
-      "note": "Entry 2* in the Latin editio altera 2004 print; absent from the Italian (CEI) edition.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Not printed in the Italian (CEI) edition.",
+        "martyrologium_romanum_2004_en_unofficial": "Not printed in the Italian (CEI) edition."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "absent": true
@@ -813,7 +816,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (4*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "entry": 3,
@@ -837,7 +843,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 5*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (5*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "entry": 4,
@@ -883,7 +892,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (7*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "entry": 6,
@@ -998,7 +1010,7 @@
           "source": "lead"
         }
       ],
-      "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in the Italian (CEI) edition. Manuel González García, blessed in the 2004 editions, was canonized in 2016.",
+      "note": "Manuel González García, blessed in the 2004 editions, was canonized in 2016.",
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "entry": 11
@@ -4955,7 +4967,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (15*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 15*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (15*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -16405,7 +16420,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (11.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -24729,7 +24747,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 12*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (12*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -26828,7 +26849,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (10*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -29286,7 +29310,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (4*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -33125,7 +33152,10 @@
           "source": "lead"
         }
       ],
-      "note": "Entry 9* at June 10 in the Latin editio altera 2004 print; the Italian (CEI) edition prints the same eulogy at December 10, entry 9* (mr:1210-marcus-antonius-durando).",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando).",
+        "martyrologium_romanum_2004_en_unofficial": "The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "absent": true
@@ -33220,7 +33250,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (4*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -35619,7 +35652,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (7*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -39216,7 +39252,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 5*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (5*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -41313,7 +41352,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 13*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (13*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -44388,7 +44430,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (6*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -45298,7 +45343,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 8*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (8*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -46249,7 +46297,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (7*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -47605,7 +47656,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (11.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -50110,7 +50164,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (11.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -55017,14 +55074,14 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
         }
-      },
-      "edition_notes": {
-        "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
       }
     },
     {
@@ -64719,7 +64776,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (8*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 8*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (8*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -65883,7 +65943,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (7*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -67499,7 +67562,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 3*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (3*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -67627,7 +67693,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (10*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -70966,7 +71035,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (6*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -71171,7 +71243,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (6*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -73566,7 +73641,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (5.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -73958,7 +74036,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (5.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -75627,7 +75708,10 @@
           "source": "lead"
         }
       ],
-      "note": "Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one.",
+        "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (11.)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": true
@@ -76113,7 +76197,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 3*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (3*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false
@@ -78262,7 +78349,10 @@
           "source": "lead"
         }
       ],
-      "note": "Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk.",
+      "edition_notes": {
+        "martyrologium_romanum_2004": "Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk.",
+        "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (7*)."
+      },
       "editions": {
         "martyrologium_romanum_2004_it_IT": {
           "asterisk": false

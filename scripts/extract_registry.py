@@ -800,20 +800,9 @@ COUNTRY_CORRECTIONS = {
     "mr:0913-amatus-broili": "FR",  # died at Breuil-sur-le-Lys; Sion is only his see
 }
 
-ASTERISK_OVERRIDES = {}
-for _id, _n in LATIN_ASTERISKED.items():
-    ASTERISK_OVERRIDES[_id] = (
-        True,
-        f"Asterisked entry ({_n}*) in the Latin editio altera 2004 print; "
-        "the Italian (CEI) edition carries no asterisk.",
-    )
-for _id, _n in LATIN_PLAIN.items():
-    ASTERISK_OVERRIDES[_id] = (
-        False,
-        f"Plain entry ({_n}., no asterisk) in the Latin editio altera 2004 "
-        "print; the Italian (CEI) edition "
-        "marks the entry with an asterisk.",
-    )
+# The Latin print's asterisk where the CEI's differs; each difference is a note on both editions
+# (PLACEMENT_EDITION_NOTES, after EDITION_NOTES).
+ASTERISK_OVERRIDES = {_id: True for _id in LATIN_ASTERISKED} | {_id: False for _id in LATIN_PLAIN}
 
 # Entries present in the editio altera 2004 print but absent from the
 # digitized "with IDs" workbook (see docs/canonicalization-report.md). Both
@@ -827,8 +816,6 @@ PRINT_ONLY_ENTRIES = [
         "entry": 2,
         "asterisk": True,
         "country": "FR",
-        "note": "Entry 2* in the Latin editio altera 2004 print; absent from "
-                "the Italian (CEI) edition.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
     {
@@ -838,9 +825,8 @@ PRINT_ONLY_ENTRIES = [
         "entry": 12,
         "asterisk": True,
         "country": "ES",
-        "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in "
-                "the Italian (CEI) edition. Manuel González García, blessed in "
-                "the 2004 editions, was canonized in 2016.",
+        # Its CEI number (11*) follows from Abrunculus's absence there, as for the day's whole series.
+        "note": "Manuel González García, blessed in the 2004 editions, was canonized in 2016.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"entry": 11}},
     },
     {
@@ -850,10 +836,6 @@ PRINT_ONLY_ENTRIES = [
         "entry": 9,
         "asterisk": True,
         "country": "IT",
-        "note": "Entry 9* at June 10 in the Latin editio altera 2004 print; "
-                "the Italian (CEI) edition prints "
-                "the same eulogy at December 10, entry 9* "
-                "(mr:1210-marcus-antonius-durando).",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
 ]
@@ -2690,7 +2672,41 @@ EDITION_NOTES = {
         for edition, printed in ((EDITION_LA, "Palénæ in Calábria"), (EDITION_IT, "A Palena in Calabria"),
                                  (EDITION_EN, "At Palena in Calabria"))
     },
+    # Printed in the Latin and the English, not in the CEI (PRINT_ONLY_ENTRIES).
+    "mr:0104-abrunculus": {
+        EDITION_LA: "Not printed in the Italian (CEI) edition.",
+        EDITION_EN: "Not printed in the Italian (CEI) edition.",
+    },
+    "mr:0610-marcus-antonius-durando": {
+        EDITION_LA: "The Italian (CEI) edition prints this eulogy at 10 December "
+                    "(mr:1210-marcus-antonius-durando).",
+        EDITION_EN: "The Italian (CEI) edition prints this eulogy at 10 December "
+                    "(mr:1210-marcus-antonius-durando).",
+    },
 }
+
+# Where the Latin print and the CEI differ on an entry's asterisk, a note on each edition's page
+# says what the other prints. Which edition is right (a correction of the Latin, or a legitimate
+# departure from it) is left to the experts.
+PLACEMENT_EDITION_NOTES = {}
+for _id, _n in LATIN_ASTERISKED.items():
+    PLACEMENT_EDITION_NOTES[_id] = {
+        EDITION_LA: f"Asterisked here (entry {_n}*); the Italian (CEI) edition prints the entry "
+                    "without an asterisk.",
+        EDITION_IT: f"Printed here without an asterisk; the Latin editio altera prints the entry "
+                    f"with one ({_n}*).",
+    }
+for _id, _n in LATIN_PLAIN.items():
+    PLACEMENT_EDITION_NOTES[_id] = {
+        EDITION_LA: f"Printed here without an asterisk (entry {_n}.); the Italian (CEI) edition marks "
+                    "the entry with one.",
+        EDITION_IT: f"Asterisked here; the Latin editio altera prints the entry without an asterisk "
+                    f"({_n}.).",
+    }
+for _id, _notes in PLACEMENT_EDITION_NOTES.items():
+    _others = EDITION_NOTES.get(_id, {})
+    EDITION_NOTES[_id] = {ed: " ".join(n for n in (_notes.get(ed), _others.get(ed)) if n)
+                          for ed in EDITIONS_2004 if _notes.get(ed) or _others.get(ed)}
 
 # The Latin print's entry number where it differs from the CEI's (= the
 # workbook's), verified on the print's text layer.
@@ -2897,7 +2913,7 @@ def extract(workbook_path):
             # placement follows the Latin print.
             cei_entry, cei_asterisk = row_out["entry"], row_out["asterisk"]
             if mr_id in ASTERISK_OVERRIDES:
-                row_out["asterisk"], row_out["note"] = ASTERISK_OVERRIDES[mr_id]
+                row_out["asterisk"] = ASTERISK_OVERRIDES[mr_id]
             if mr_id in PLACEMENT_OVERRIDES:
                 p_month, p_day, p_entry, p_note = PLACEMENT_OVERRIDES[mr_id]
                 row_out.update(month=p_month, day=p_day, entry=p_entry)
@@ -2906,8 +2922,6 @@ def extract(workbook_path):
                 row_out["entry"] = LATIN_RENUMBERING[mr_id]
             if mr_id in ENTRY_NOTES:
                 row_out["note"] = (row_out.get("note", "") + " " + ENTRY_NOTES[mr_id]).strip()
-            if mr_id in EDITION_NOTES:
-                row_out["edition_notes"] = dict(EDITION_NOTES[mr_id])
             overrides = edition_overrides(mr_id, entry=row_out["entry"], asterisk=row_out["asterisk"],
                                           cei_entry=cei_entry, cei_asterisk=cei_asterisk)
             if overrides:
@@ -2943,6 +2957,9 @@ def extract(workbook_path):
 
     entries.extend(PRINT_ONLY_ENTRIES)
     entries = [dict(e) for e in entries]  # PRINT_ONLY_ENTRIES are module constants: copy
+    for e in entries:
+        if e["id"] in EDITION_NOTES:
+            e["edition_notes"] = dict(EDITION_NOTES[e["id"]])
     link_same_eulogy(entries)
     for e in entries:  # `editions` and `same_eulogy` are the last keys of an entry
         for k in ("editions", "same_eulogy"):

@@ -38,14 +38,14 @@
 | 2 | 14 | `mr:1102-pius-a-sancto-aloysio` | * | IT | dies_natalis |  |  |
 | 3 | (1) | `mr:1103-martinus-de-porres` |  | PE | dies_natalis |  |  |
 | 3 | 2 | `mr:1103-germanus-et-socii` |  | TR | dies_natalis |  |  |
-| 3 | 3 | `mr:1103-libertinus` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 3 | 3 | `mr:1103-libertinus` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 3*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (3*). |
 | 3 | 4 | `mr:1103-papulus` | * | FR | dies_natalis |  |  |
 | 3 | 5 | `mr:1103-valentinus-et-hilarius` |  | IT | dies_natalis |  |  |
 | 3 | 6 | `mr:1103-guenael` | * | FR | dies_natalis |  |  |
 | 3 | 7 | `mr:1103-silvia` |  | IT | commemoratio |  |  |
 | 3 | 8 | `mr:1103-pirminus` |  | DE | depositio |  |  |
 | 3 | 9 | `mr:1103-ioannicius` |  | TR | dies_natalis | same as `mr:1104-ioannicius` |  |
-| 3 | 10 | `mr:1103-odrada` | * | NL | depositio | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 3 | 10 | `mr:1103-odrada` | * | NL | depositio | CEI: asterisk False | 2004 Latin: Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). |
 | 3 | 11 | `mr:1103-ermengaudius` |  | ES | dies_natalis |  |  |
 | 3 | 12 | `mr:1103-berardus` | * | IT | dies_natalis |  |  |
 | 3 | 13 | `mr:1103-alpaidis` | * | FR | dies_natalis |  |  |
@@ -242,7 +242,7 @@
 | 18 | 3 | `mr:1118-patroclus` | * | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:1118-maudetus` | * | FR | dies_natalis |  |  |
 | 18 | 5 | `mr:1118-romacharius` | * | FR | dies_natalis |  |  |
-| 18 | 6 | `mr:1118-theofredus` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 18 | 6 | `mr:1118-theofredus` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
 | 18 | 7 | `mr:1118-odo` |  | FR | dies_natalis |  |  |
 | 18 | 8 | `mr:1118-leonardus-kimura-et-socii` | * | JP | dies_natalis |  |  |
 | 18 | 9 | `mr:1118-philippina-duchesne` |  | US | dies_natalis |  |  |
@@ -254,7 +254,7 @@
 | 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  |  |
 | 19 | 4 | `mr:1119-barlaam` |  | TR | dies_natalis |  |  |
 | 19 | 5 | `mr:1119-quadraginta-martyres-heracleae` |  | TR | dies_natalis |  |  |
-| 19 | 6 | `mr:1119-eudo` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 19 | 6 | `mr:1119-eudo` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
 | 19 | 7 | `mr:1119-simon` | * | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:1119-mechtildis` | * | DE | dies_natalis |  |  |
 | 19 | 9 | `mr:1119-iacobus-benfatti` | * | IT | dies_natalis |  |  |
