@@ -105,6 +105,12 @@ Evangelístæ*, keep both titles: mr:0921-matthaeus-apostolus-et-evangelista and
 mr:1227-ioannes-apostolus-et-evangelista. Their persons stay Matthaeus Apostolus and Ioannes
 Apostolus, as the other apostles.
 
+**A pair of martyrs** (#95): the eulogy of 27 September (entry 11) names two martyrs, Francisca
+Xaveria Fenollosa Alcayna and Herminia Martínez Amigó:
+mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo. Its Latin prints the
+honorific misprinted (*betárum*, in data/misprints.json); the subject is Beatae, as printed in the
+Italian (*beate martiri*).
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 
@@ -1134,7 +1140,7 @@ candidates; 4,262 places with an Italian phrase.
 **Misprints in the 2004 prints (verified)**, recorded in `data/misprints.json` for
 footnoting when the texts are displayed; place extraction treats each as the word
 intended:
-- Latin editio altera, September 27, entry 11\* (mr:0927-francisca-xaveria-fenollosa-alcayna):
+- Latin editio altera, September 27, entry 11\* (mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo):
   "betárum mártyrum" for *beatárum* (the subjects are women), verified on the page
   image and in its OCR layer.
 - Latin editio altera and Italian (CEI) edition, October 4, entry 8\*

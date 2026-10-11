@@ -653,6 +653,8 @@ ID_CORRECTIONS = {
     # Matthew and John keep both titles the 2004 Latin gives them: "Apóstoli et Evangelístæ".
     "mr:0921-matthaeus-apostolus": "mr:0921-matthaeus-apostolus-et-evangelista",
     "mr:1227-ioannes-apostolus": "mr:1227-ioannes-apostolus-et-evangelista",
+    # #95: the eulogy names two martyrs, Francisca Xaveria Fenollosa Alcayna and Herminia Martínez Amigó.
+    "mr:0927-francisca-xaveria-fenollosa-alcayna": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

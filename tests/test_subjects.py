@@ -75,6 +75,41 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class LatinSubjectTest(unittest.TestCase):
+    def test_accented_honorific(self):
+        # crmedr#95: "beátæ" is Beata, not the "Sanctus" of an honorific not found.
+        text = "Apud Rhédones in Gállia, beátæ Maríæ a Cruce (Ioánnæ) Jugan, vírginis."
+        self.assertEqual(s.la_subject("mr:0829-ioanna-jugan", text), "Beata Ioanna Jugan")
+
+    def test_gender_from_the_printed_honorific(self):
+        self.assertEqual(s.la_subject("mr:0603-conus", "In monastério Sanctæ Maríæ de Cadóssa, sancti Coni, mónachi."),
+                         "Sanctus Conus")
+        self.assertEqual(s.la_subject("mr:0312-fina", "Apud oppidum Sancti Geminiáni, beátæ Finæ, vírginis."),
+                         "Beata Fina")
+
+    def test_another_saint_named_first_is_not_the_subject(self):
+        text = "Romæ apud sanctum Damiánum sanctæ Agnétis, vírginis et mártyris."
+        self.assertEqual(s.la_subject("mr:1116-agnes", text), "Sancta Agnes")
+
+    def test_a_noun_may_stand_between_honorific_and_name(self):
+        text = "In Coréa, sanctárum mártyrum Ágathæ Yi, vírginis, et Terésiæ Kim, víduæ."
+        self.assertEqual(s.la_subject("mr:0109-agatha-yi-et-teresia-kim", text), "Sanctae Agatha Yi et Teresia Kim")
+
+    def test_the_id_gives_the_number(self):
+        # The honorific agrees with the first name; the companions make the subject plural.
+        text = "In Gállia, beáti Petri Iacóbi Maríæ Vitális, presbýteri, et sociórum."
+        self.assertEqual(s.la_subject("mr:0902-petrus-iacobus-maria-vitalis-et-socii", text),
+                         "Beati Petrus Iacobus Maria Vitalis et socii")
+        # Two titles of one person are not a pair.
+        text = "Commemorátio sancti David, regis et prophétæ."
+        self.assertEqual(s.la_subject("mr:1229-david-rex-et-propheta", text), "Sanctus David Rex et Propheta")
+
+    def test_sancti_in_a_place_name_is_not_a_group(self):
+        text = "In óppido Burgi Sancti Sepúlcri, beáti Ubáldi, presbýteri."
+        self.assertEqual(s.la_subject("mr:0409-ubaldus-de-burgo-sancti-sepulcri", text),
+                         "Beatus Ubaldus de Burgo Sancti Sepulcri")
+
+
 class LatinSubjectOverridesTest(unittest.TestCase):
     def test_cei_only_eulogies_keep_their_latin_subjects(self):
         self.assertEqual(s.LA_SUBJECT_OVERRIDES, {

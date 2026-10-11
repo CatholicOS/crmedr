@@ -393,7 +393,7 @@
 | 27 | 8 | `mr:0927-laurentius-de-ripafracta` | * | IT | dies_natalis |  |  |
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR | dies_natalis |  |  |
 | 27 | 10 | `mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches` | * | ES | dies_natalis |  |  |
-| 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna` | * | ES | dies_natalis |  |  |
+| 27 | 11 | `mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0928-venceslaus` |  | CZ | dies_natalis |  | 2004 Italian: Translation error: "dalla zia paterna Ludmilla" (his paternal aunt) where the Latin has "ab ávia sancta Ludmílla" (his grandmother, Saint Ludmila). |
 | 28 | (2) | `mr:0928-laurentius-ruiz-et-socii` |  | PH | dies_natalis |  |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis | same as `mr:0928-marcus-et-socii` |  |
