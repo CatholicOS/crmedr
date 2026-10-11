@@ -102,6 +102,31 @@ class FindPersonTest(unittest.TestCase):
         found = mt.find_person(text, "Martinus Sacerdos")
         self.assertEqual(span_text(text, found), "Martíni, cognoménto Sacerdótis")
 
+    def test_a_name_with_its_titles_after_a_comma(self):
+        for text, name, words in [
+            ("Commemorátio sancti Abrahæ, patriárchæ et ómnium credéntium patris.", "Abraham Patriarcha",
+             "Abrahæ, patriárchæ"),
+            ("Commemorátio sancti David, regis et prophétæ, qui, fílius Iesse.", "David Rex et Propheta",
+             "David, regis et prophétæ"),
+            ("Festum sancti Ioánnis, Apóstoli et Evangelístæ, qui, fílius Zebedǽi.", "Ioannes Apostolus et Evangelista",
+             "Ioánnis, Apóstoli et Evangelístæ"),
+            ("Festum sancti Lucæ, Evangélistæ, qui, ut fertur.", "Lucas Evangelista", "Lucæ, Evangélistæ"),
+        ]:
+            found = mt.find_person(text, name)
+            self.assertEqual((span_text(text, found), found[1]), (words, "titled"), name)
+
+    def test_a_name_whose_titles_are_not_printed_after_it_is_found_alone(self):
+        text = "Commemorátio sancti Gedeónis, ex tribu Manásse, qui iudex fuit in Israel."
+        found = mt.find_person(text, "Gedeon Iudex")
+        self.assertEqual((span_text(text, found), found[1]), ("Gedeónis", "untitled"))
+        text = "Festum sanctórum Philíppi et Iacóbi, Apostolórum."
+        self.assertEqual(span_text(text, mt.find_person(text, "Iacobus Apostolus")), "Iacóbi")
+
+    def test_a_name_that_is_itself_a_title_word_is_not_cut(self):
+        # Sacerdos of Lyon, Martinus Sacerdos: a surname, not a title of a name before it.
+        text = "Lugdúni, sancti Sacerdótis, epíscopi."
+        self.assertEqual(span_text(text, mt.find_person(text, "Sacerdos")), "Sacerdótis")
+
     def test_only_one_gap(self):
         self.assertIsNone(mt.find_person("Romæ, beáti Petri (Ioánnis) Magni (Pauli) Nemínis.", "Petrus Magnus Nemo"))
 

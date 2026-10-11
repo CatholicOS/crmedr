@@ -12,6 +12,7 @@ from gazetteer_text import fold
 HONORIFICS = {"sanctus", "sancta", "sancti", "sanctae", "beatus", "beata", "beati", "beatae"}
 PLURAL_HONORIFICS = {"sancti", "sanctae", "beati", "beatae"}
 COMPANION_WORDS = {"socii", "sociae"}
+PLURAL_TITLES = {"Apostoli": "Apostolus", "Prophetae": "Propheta", "Evangelistae": "Evangelista"}
 
 # The eulogies of the Blessed Virgin Mary: one person, "Maria", whatever the
 # title (Lourdes, Fatima, Regina, Perdolens...). Other Marias are themselves
@@ -24,18 +25,12 @@ MARIAN_IDS = {
     "mr:1007-maria-de-rosario", "mr:1121-praesentatio-beatae-mariae-virginis",
     "mr:1208-conceptio-immaculata-beatae-mariae-virginis", "mr:1212-maria-de-guadalupe",
 }
-# Subjects decided by hand: celebrations that commemorate a saint but open without
-# an honorific, and a subject whose title is not part of the name.
+# Subjects decided by hand: celebrations that commemorate a saint but open without an honorific
+# ("Conversio Sancti Pauli Apostoli": Paulus Apostolus, titled as the apostles are).
 FEAST_PERSONS = {
-    "mr:1229-david-rex-et-propheta": ["David"],
-    "mr:0125-conversio-pauli-apostoli": ["Paulus"],
-    "mr:0222-cathedra-petri-apostoli": ["Petrus"],
+    "mr:0125-conversio-pauli-apostoli": ["Paulus Apostolus"],
+    "mr:0222-cathedra-petri-apostoli": ["Petrus Apostolus"],
     "mr:0325-bonus-latro": ["Bonus Latro"],
-    # The title in the subject is not part of the name, as for David rex et propheta.
-    "mr:1009-abraham-patriarcha": ["Abraham"],
-    "mr:0926-gedeon-iudex": ["Gedeon"],
-    "mr:0826-melchisedech-rex-et-sacerdos": ["Melchisedech"],
-    "mr:0701-aaron-sacerdos": ["Aaron"],
 }
 # Subjects with an honorific that name a group, not persons: its members are
 # indexed only where a footnote names them.
@@ -98,8 +93,14 @@ def subject_names(mrid, subject):
         return []
     if fold(words[0]) not in PLURAL_HONORIFICS:
         return [" ".join(words[1:])]  # one person: "Modestinus a Iesu et Maria" is a religious name
-    parts = re.split(r",\s*|\s+et\s+", " ".join(words[1:]))
-    return [p.strip() for p in parts if p.strip() and fold(p.strip()) not in COMPANION_WORDS]
+    parts = [p.strip() for p in re.split(r",\s*|\s+et\s+", " ".join(words[1:]))
+             if p.strip() and fold(p.strip()) not in COMPANION_WORDS]
+    # "Philippus et Iacobus Apostoli": the plural title is each one's own ("Philippus Apostolus").
+    title = PLURAL_TITLES.get(parts[-1].split()[-1]) if parts else None
+    if title and len(parts) > 1:
+        parts[-1] = parts[-1].rsplit(" ", 1)[0]
+        parts = [f"{p} {title}" for p in parts]
+    return parts
 
 # Lowercase words inside a name, kept only when a capitalized word follows.
 PARTICLES = {"de", "a", "ab", "van", "von", "di", "da", "du", "la", "le", "y", "dos", "das", "del", "der",
