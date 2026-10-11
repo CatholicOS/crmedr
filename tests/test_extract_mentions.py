@@ -511,6 +511,16 @@ class ReviewOpsTest(unittest.TestCase):
         op = em.review_ops(ED, review, lambda e, m, w: text)[0]
         self.assertIn("González", op["context"])
 
+    def test_a_persons_add_shows_the_clause_to_its_end(self):
+        # A printed name much longer than the person's (a religious name between): the card runs to the comma.
+        text = ("Medellíni in Colúmbia, beátæ Láuræ a Sancta Catharína Senénsi Montoya y Upegui, vírginis, "
+                "quæ Congregatiónem Sorórum Missionariárum fundávit.")
+        s = text.index("Láuræ")
+        review = {"mr:x": [{"op": "add_mention", "kind": "person", "where": "text", "start": s, "end": s + 5,
+                            "form": "Láuræ", "name": "Laura Montoya y Upegui", "reasoning": "not found"}]}
+        op = em.review_ops(ED, review, lambda e, m, w: text)[0]
+        self.assertIn("Upegui,", op["context"])
+
     def test_the_context_is_words_around_the_span(self):
         text = "Alpha beta gamma delta " * 6 + "Nemo" + " epsilon zeta eta theta" * 6
         s = text.index("Nemo")
@@ -694,6 +704,15 @@ class ApplyDecisionsTest(unittest.TestCase):
         # The added mention waits for apply to check it against the texts.
         self.assertEqual((curated[ED]["mr:x"][1]["form"], "check" in curated[ED]["mr:x"][1]), ("Nemí", False))
         self.assertEqual(len(self.MENTIONS[ED]["mr:x"]), 2)  # the input is not changed
+
+    def test_a_rejection_curates_the_eulogy_as_it_stands(self):
+        # So the proposal it rejects is not made again; the eulogy's marks are kept.
+        exported = {"operations": [self.op("add_mention", "reject", kind="person", name="Nemo", start=30, end=35,
+                                           form="Nemo")]}
+        curated = {}
+        applied, errors = em.apply_decisions(curated, self.MENTIONS, exported)
+        self.assertEqual((applied, errors), (0, []))
+        self.assertEqual(curated[ED]["mr:x"], self.MENTIONS[ED]["mr:x"])
 
     def test_an_added_second_person_keeps_n(self):
         exported = {"operations": [self.op("add_mention", kind="person", name="Nemo", n=2, start=13, end=20,

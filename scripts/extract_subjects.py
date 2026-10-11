@@ -126,7 +126,7 @@ def display_from_slug(mrid):
     for p in mrid.split('-', 1)[1].split('-'):
         if p in ROMAN:
             out.append(p.upper())
-        elif p in ('et', 'de', 'a', 'socii'):
+        elif p in ('et', 'de', 'a', 'socii', 'y'):  # Spanish "y": "Montoya y Upegui"
             out.append(p)
         else:
             out.append(p.capitalize())

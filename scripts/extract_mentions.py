@@ -451,6 +451,7 @@ def texts_commit(texts_repo):
 
 SCHEMA = "crmedr-changeset/v1"
 CONTEXT_WIDTH = 40
+MAX_CLAUSE = 160  # at most this many characters after a person's span, to the clause's end
 
 
 def _read(path, default=None):
@@ -491,7 +492,13 @@ def review_ops(edition, review_by_id, source):
             else:
                 # A person's add may cover only the name's first word (found in part): the context runs
                 # on long enough for the curator to select the whole name ("Ioséphi … González").
-                after = max(CONTEXT_WIDTH, 2 * len(r.get("name") or "")) if r["kind"] == "person" else CONTEXT_WIDTH
+                # It runs at least to the end of the clause: a printed name may be much longer than the
+                # person's ("Láuræ a Sancta Catharína Senénsi Montoya y Upegui").
+                after = CONTEXT_WIDTH
+                if r["kind"] == "person":
+                    clause = re.search(r"[,;.:]", src[r["end"]:])
+                    after = max(CONTEXT_WIDTH, 2 * len(r.get("name") or ""),
+                                min(MAX_CLAUSE, clause.start() + 2 if clause else 0))  # past ", "
                 ctx, at = context(src, r["start"], r["end"], after)
                 start, end = utf16(src, r["start"]), utf16(src, r["end"])
             key = op_key(r) if start is None else start
@@ -587,20 +594,24 @@ def _same(m, where, start, end):
 
 def apply_decisions(curated_editions, mentions_editions, exported):
     """Apply the accepted (or edited) mention operations of `exported`, in UTF-16
-    offsets. Each eulogy an operation touches starts from its curated entry, else
+    offsets; a rejected one curates its eulogy as it stands, so it is not proposed again. Each eulogy an operation touches starts from its curated entry, else
     from data/mentions.json, and is written back into `curated_editions`. A mention
     an operation adds or moves carries the operation's `form` and no `check` until
     `apply` checks it against the texts. Returns how many operations were applied,
     and the errors."""
     applied, errors = 0, []
     for op in exported.get("operations", []):
-        if op.get("op") not in MENTION_OPS or op.get("decision") not in ("accept", "edit"):
+        if op.get("op") not in MENTION_OPS or op.get("decision") not in ("accept", "edit", "reject"):
             continue
         edition, mrid, where = op["edition"], op["eulogy"], op["where"]
         tag = op.get("id") or f"{edition} {mrid}"
         edited = (op.get("edited") or {}) if op["decision"] == "edit" else {}
         by_id = curated_editions.setdefault(edition, {})
         current = [dict(m) for m in by_id.get(mrid, mentions_editions.get(edition, {}).get(mrid, []))]
+        if op["decision"] == "reject":
+            # The eulogy is curated as it stands, so the rejected proposal is not made again.
+            by_id.setdefault(mrid, sorted(current, key=mention_order))
+            continue
         if op["op"] == "add_mention":
             span = {k: edited.get(k, op.get(k)) for k in ("start", "end", "form")}
             if span["start"] is None or span["end"] is None or not span["form"]:
