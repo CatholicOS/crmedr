@@ -464170,23 +464170,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0921-matthaeus-apostolus-et-evangelista|Matthaeus Apostolus",
-      "eulogy": "mr:0921-matthaeus-apostolus-et-evangelista",
-      "day": "09-21",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Matthaeus Apostolus et Evangelista",
-      "name": "Matthaeus Apostolus",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0921-pamphilus|Pamphilus",
       "eulogy": "mr:0921-pamphilus",
       "day": "09-21",
@@ -628626,23 +628609,6 @@
       "typology": "dies_natalis",
       "subject": "Beatus Alaphridus Parte",
       "name": "Alaphridus Parte",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1227-ioannes-apostolus-et-evangelista|Ioannes Apostolus",
-      "eulogy": "mr:1227-ioannes-apostolus-et-evangelista",
-      "day": "12-27",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Ioannes Apostolus et Evangelista",
-      "name": "Ioannes Apostolus",
       "where": "text",
       "companions": [],
       "failed": [
