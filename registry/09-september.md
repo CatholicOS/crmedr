@@ -366,7 +366,7 @@
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |  |
 | 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
 | 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis | same as `mr:0927-cosmas-et-damianus` |  |
-| 26 | 2 | `mr:0926-gedeon` |  | IL | commemoratio |  |  |
+| 26 | 2 | `mr:0926-gedeon-iudex` |  | IL | commemoratio |  |  |
 | 26 | 3 | `mr:0926-senator` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0926-eusebius` |  | IT | commemoratio |  |  |
 | 26 | 5 | `mr:0926-stephanus-de-rossano` | * | IT | dies_natalis |  |  |

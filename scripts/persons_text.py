@@ -31,6 +31,11 @@ FEAST_PERSONS = {
     "mr:0125-conversio-pauli-apostoli": ["Paulus"],
     "mr:0222-cathedra-petri-apostoli": ["Petrus"],
     "mr:0325-bonus-latro": ["Bonus Latro"],
+    # The title in the subject is not part of the name, as for David rex et propheta.
+    "mr:1009-abraham-patriarcha": ["Abraham"],
+    "mr:0926-gedeon-iudex": ["Gedeon"],
+    "mr:0826-melchisedech-rex-et-sacerdos": ["Melchisedech"],
+    "mr:0701-aaron-sacerdos": ["Aaron"],
 }
 # Subjects with an honorific that name a group, not persons: its members are
 # indexed only where a footnote names them.

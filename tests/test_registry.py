@@ -125,7 +125,7 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
     # second subject.
     NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria",
                  "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
-                 "mr:1229-david-rex-et-propheta"}
+                 "mr:1229-david-rex-et-propheta", "mr:0826-melchisedech-rex-et-sacerdos"}
 
     def test_corrections_present(self):
         self.assertEqual(r.ID_CORRECTIONS.get("mr:1115-guria"), "mr:1115-guria-et-samona")

@@ -643,6 +643,13 @@ ID_CORRECTIONS = {
     # #84: the Korean given name of St John Pak Hu-jae is printed undeclined
     # ("Ioánnis Pak Hu-jae"); its -ae is not a Latin genitive ending.
     "mr:0903-ioannes-pak-hu-ja-et-socii": "mr:0903-ioannes-pak-hu-jae-et-socii",
+    # Old Testament figures keep their title in the ID, as the prophets (-propheta), the
+    # apostles (-apostolus) and mr:1229-david-rex-et-propheta: the 2004 Latin calls Abraham
+    # patriarcha, Gideon iudex, Melchizedek rex et sacerdos, Aaron sacerdos.
+    "mr:1009-abraham": "mr:1009-abraham-patriarcha",
+    "mr:0926-gedeon": "mr:0926-gedeon-iudex",
+    "mr:0826-melchisedech": "mr:0826-melchisedech-rex-et-sacerdos",
+    "mr:0701-aaron": "mr:0701-aaron-sacerdos",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

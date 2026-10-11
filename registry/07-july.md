@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0701-aaron` |  | PS | commemoratio |  |  |
+| 1 | 1 | `mr:0701-aaron-sacerdos` |  | PS | commemoratio |  |  |
 | 1 | 2 | `mr:0701-martinus` |  | FR | dies_natalis |  |  |
 | 1 | 3 | `mr:0701-domitianus` |  | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:0701-theodoricus` |  | FR | dies_natalis |  |  |
