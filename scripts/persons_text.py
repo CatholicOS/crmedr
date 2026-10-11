@@ -14,9 +14,9 @@ PLURAL_HONORIFICS = {"sancti", "sanctae", "beati", "beatae"}
 COMPANION_WORDS = {"socii", "sociae"}
 PLURAL_TITLES = {"Apostoli": "Apostolus", "Prophetae": "Propheta", "Evangelistae": "Evangelista"}
 
-# The eulogies of the Blessed Virgin Mary: one person, "Maria", whatever the
-# title (Lourdes, Fatima, Regina, Perdolens...). Other Marias are themselves
-# (mr:0909-maria-de-la-cabeza, mr:0820-maria-de-mattias...).
+# The celebrations of the Blessed Virgin Mary: the person is named by the celebration, its
+# subject as it stands ("Beata Maria Virgo de Lourdes", "Visitatio beatae Mariae Virginis").
+# Other Marias are themselves (mr:0909-maria-de-la-cabeza, mr:0820-maria-de-mattias...).
 MARIAN_IDS = {
     "mr:0101-maria-dei-genetrix", "mr:0211-maria-de-lourdes", "mr:0513-maria-de-fatima",
     "mr:0531-visitatio-beatae-mariae-virginis", "mr:0716-maria-de-monte-carmelo",
@@ -83,7 +83,7 @@ def person_key(p):
 def subject_names(mrid, subject):
     """The persons a subject of i18n/la.json names, honorific-free, in order."""
     if mrid in MARIAN_IDS:
-        return ["Maria"]
+        return [subject]
     if mrid in FEAST_PERSONS:
         return list(FEAST_PERSONS[mrid])
     if mrid in GROUP_IDS or mrid.split("-", 1)[1].split("-")[0] in GROUP_HEADS:

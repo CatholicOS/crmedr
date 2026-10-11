@@ -1711,275 +1711,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0101-maria-dei-genetrix|Maria",
+      "id": "mr:0101-maria-dei-genetrix|Sancta Maria Dei Genetrix",
       "eulogy": "mr:0101-maria-dei-genetrix",
       "day": "01-01",
       "typology": "celebratio",
       "subject": "Sancta Maria Dei Genetrix",
-      "name": "Maria",
+      "name": "Sancta Maria Dei Genetrix",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -64390,275 +64133,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0211-maria-de-lourdes|Maria",
+      "id": "mr:0211-maria-de-lourdes|Beata Maria Virgo de Lourdes",
       "eulogy": "mr:0211-maria-de-lourdes",
       "day": "02-11",
       "typology": "celebratio",
-      "subject": "Beata Maria de Lourdes",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo de Lourdes",
+      "name": "Beata Maria Virgo de Lourdes",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -194423,270 +193909,38 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0513-maria-de-fatima|Maria",
+      "id": "mr:0513-maria-de-fatima|Beata Maria Virgo de Fatima",
       "eulogy": "mr:0513-maria-de-fatima",
       "day": "05-13",
       "typology": "celebratio",
-      "subject": "Beata Maria de Fatima",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo de Fatima",
+      "name": "Beata Maria Virgo de Fatima",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q719524) fails it",
+        "status: the best candidate (Q719524) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q719524",
+          "label": "Our Lady of Fátima",
+          "description": "title for the Virgin Mary due to her alleged apparitions to three shepherd children at Fátima, Portugal",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
+            "Beata Maria Virgo de Fatima",
+            "Madonna di Fatima",
+            "Nostra Signora di Fatima",
+            "Our Lady of Fatima",
+            "Our Lady of Fátima",
+            "Our Lady of the Holy Rosary of Fátima"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [
-            "Q2774"
+            "Q2560"
           ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
           "evidence": [
             "name"
           ]
@@ -226928,270 +226182,46 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0531-visitatio-beatae-mariae-virginis|Maria",
+      "id": "mr:0531-visitatio-beatae-mariae-virginis|Visitatio beatae Mariae Virginis",
       "eulogy": "mr:0531-visitatio-beatae-mariae-virginis",
       "day": "05-31",
       "typology": "celebratio",
-      "subject": "Visitatio Beatae Mariae Virginis",
-      "name": "Maria",
+      "subject": "Visitatio beatae Mariae Virginis",
+      "name": "Visitatio beatae Mariae Virginis",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q691810) fails it",
+        "status: the best candidate (Q691810) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q691810",
+          "label": "Visitation",
+          "description": "Christian story of Mary visiting Elizabeth",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
+            "Madonna della Visitazione",
+            "Maria SS. della Visitazione",
+            "Maria Santissima della Visitazione",
+            "The Visitation of the Blessed Mary",
+            "Visitatio Beatae Mariae Virginis",
+            "Visitation",
+            "Visitation of the Blessed Mary",
+            "Visitazione",
+            "Visitazione della Beata Vergine",
+            "Visitazione della Beata Vergine Maria",
+            "Visitazione della Vergine",
+            "Visitazione di Maria"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [
-            "Q2774"
+            "Q65679763",
+            "Q2591",
+            "Q2697"
           ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
           "evidence": [
             "name"
           ]
@@ -325067,275 +324097,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0716-maria-de-monte-carmelo|Maria",
+      "id": "mr:0716-maria-de-monte-carmelo|Beata Maria Virgo de Monte Carmelo",
       "eulogy": "mr:0716-maria-de-monte-carmelo",
       "day": "07-16",
       "typology": "celebratio",
-      "subject": "Beata Maria de Monte Carmelo",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo de Monte Carmelo",
+      "name": "Beata Maria Virgo de Monte Carmelo",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -345155,7 +343928,7 @@
         "Lazarus"
       ],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "forced review: Mary of Bethany, the sister of Lazarus, not the Blessed Virgin"
       ],
       "candidates": [
         {
@@ -369521,231 +368294,79 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0815-assumptio-beatae-mariae-virginis|Maria",
+      "id": "mr:0815-assumptio-beatae-mariae-virginis|Assumptio beatae Mariae Virginis",
       "eulogy": "mr:0815-assumptio-beatae-mariae-virginis",
       "day": "08-15",
       "typology": "celebratio",
-      "subject": "Assumptio Beatae Mariae Virginis",
-      "name": "Maria",
+      "subject": "Assumptio beatae Mariae Virginis",
+      "name": "Assumptio beatae Mariae Virginis",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q111075900) fails it",
+        "status: the best candidate (Q111075900) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q111075900",
+          "label": "The Assumption of the Virgin",
+          "description": "painting by Rubens (Kunstpalast)",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assunzione di Maria",
+            "The Assumption of the Virgin"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q162691",
+          "label": "Assumption of Mary",
+          "description": "the bodily taking up of the Virgin Mary into Heaven at the end of her earthly life, dogma of the Catholic Church",
+          "names": [
+            "Assumptio Beatae Mariae",
+            "Assumptio Beatae Mariae Virginis",
+            "Assumptio Beatae Virginis",
+            "Assumptio Mariae",
+            "Assumption of Mary",
+            "Assumption of the Virgin",
+            "Assumption of the Virgin Mary",
+            "Assunta",
+            "Assunzione",
+            "Assunzione di Maria",
+            "Beata Vergine Assunta",
+            "Maria Assunta",
+            "the Assumption"
           ],
-          "born": "-001",
-          "died": "0048",
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [
             "Q2774"
           ],
           "evidence": [
-            "human",
-            "status",
             "name"
           ]
         },
         {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
+          "wikidata": "Q1899740",
+          "label": "Assumption of the Virgin",
+          "description": "painting by Titian in Venice",
           "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assumption",
+            "Assumption of the Virgin",
+            "Assumption of the Virgin Mary",
+            "Assunta",
+            "Assunta dei Frari",
+            "Frari Assumption"
           ],
           "human": false,
           "statuses": [],
@@ -369757,12 +368378,14 @@
           ]
         },
         {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
+          "wikidata": "Q2067336",
+          "label": "Assumption of the Virgin",
+          "description": "altarpiece by Peter Paul Rubens in the Cathedral of Our Lady, Antwerp",
           "names": [
-            "Maria",
-            "Municipality of Maria"
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assumption of the Virgin",
+            "Assumption of the Virgin Mary",
+            "Assunzione della Vergine"
           ],
           "human": false,
           "statuses": [],
@@ -369774,11 +368397,108 @@
           ]
         },
         {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
+          "wikidata": "Q21600873",
+          "label": "Tree of Jesse",
+          "description": "painting by Absolon Stumme",
           "names": [
-            "María"
+            "Adorazione del Bambino",
+            "Assumptio Beatæ Mariæ Virginis",
+            "Tree of Jesse"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q27971970",
+          "label": "Assumption of the Virgin Mary",
+          "description": "painting by Guercino (Giovanni Francesco Barbieri). 1591-1666",
+          "names": [
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assumption of the Virgin",
+            "Assumption of the Virgin Mary",
+            "Assunzione della Vergine",
+            "Assunzione di Maria"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q29838779",
+          "label": "The Assumption of Virgin Mary",
+          "description": "painting by Guido Reni in the Alte Pinakothek",
+          "names": [
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assunzione di Maria",
+            "The Assumption of Virgin Mary"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3627381",
+          "label": "Panciatichi Assumption",
+          "description": "painting by Andrea del Sarto",
+          "names": [
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assunta Panciatichi",
+            "Panciatichi Assumption"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3627401",
+          "label": "Assumption of the Virgin",
+          "description": "painting by Rosso Fiorentino",
+          "names": [
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assumption of the Virgin",
+            "Assunzione della Vergine (Rosso Fiorentino)",
+            "Assunzione di Maria"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q430277",
+          "label": "Assumption of the Virgin",
+          "description": "painting by Andrea del Castagno in the Gemäldegalerie Berlin",
+          "names": [
+            "Assumptio Beatæ Mariæ Virginis",
+            "Assumption of the Virgin",
+            "Assunta fra quattro angeli, s. Giuliano e s. Miniato",
+            "Assunzione della Vergine tra i santi Miniato e Giuliano",
+            "Assunzione di Nostra Donna con due figure"
           ],
           "human": false,
           "statuses": [],
@@ -380596,270 +379316,40 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0822-maria-regina|Maria",
+      "id": "mr:0822-maria-regina|Beata Maria Virgo Regina",
       "eulogy": "mr:0822-maria-regina",
       "day": "08-22",
       "typology": "celebratio",
-      "subject": "Beata Maria Regina",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo Regina",
+      "name": "Beata Maria Virgo Regina",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q1358870) fails it",
+        "status: the best candidate (Q1358870) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q1358870",
+          "label": "Queen of Heaven",
+          "description": "Christian devotion of Mary",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
+            "Beata Maria Virgo Regina",
+            "Beata Vergine Maria Regina",
+            "Maria Regina",
+            "Mary Queen of Heaven",
+            "Queen of Heaven",
+            "Regina Coeli",
+            "Regina caeli",
+            "Regina coeli"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [
-            "Q2774"
+            "Q2828"
           ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
           "evidence": [
             "name"
           ]
@@ -431026,270 +429516,49 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0908-nativitas-beatae-mariae-virginis|Maria",
+      "id": "mr:0908-nativitas-beatae-mariae-virginis|Nativitas beatae Mariae Virginis",
       "eulogy": "mr:0908-nativitas-beatae-mariae-virginis",
       "day": "09-08",
       "typology": "celebratio",
-      "subject": "Nativitas Beatae Mariae Virginis",
-      "name": "Maria",
+      "subject": "Nativitas beatae Mariae Virginis",
+      "name": "Nativitas beatae Mariae Virginis",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q501107) fails it",
+        "status: the best candidate (Q501107) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q501107",
+          "label": "Nativity of Mary",
+          "description": "feast day",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
+            "Maria Bambina",
+            "Maria nascente",
+            "Nascita della Vergine",
+            "Nativitas Beatae Mariae Virginis",
+            "Nativitas Mariae",
+            "Nativity of Mary",
+            "Nativity of the Mother of God",
+            "Nativity of the Theotokos",
+            "Natività della Beata Vergine",
+            "Natività della Tuttasanta Deìpara",
+            "Natività della Vergine",
+            "Natività di Maria",
+            "Natività di Maria Santissima",
+            "Natività di Maria Vergine",
+            "Santa Maria Nascente",
+            "birth of Mary",
+            "natività della Beata Vergine Maria"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
           "feast": [
-            "Q2774"
+            "Q2850"
           ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
           "evidence": [
             "name"
           ]
@@ -442877,275 +441146,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0912-nomen-mariae|Maria",
+      "id": "mr:0912-nomen-mariae|Sanctissimum Nomen beatae Virginis Mariae",
       "eulogy": "mr:0912-nomen-mariae",
       "day": "09-12",
       "typology": "celebratio",
-      "subject": "Nomen Mariae",
-      "name": "Maria",
+      "subject": "Sanctissimum Nomen beatae Virginis Mariae",
+      "name": "Sanctissimum Nomen beatae Virginis Mariae",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -446636,275 +444648,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0915-maria-perdolens|Maria",
+      "id": "mr:0915-maria-perdolens|Beata Maria Virgo Perdolens",
       "eulogy": "mr:0915-maria-perdolens",
       "day": "09-15",
       "typology": "celebratio",
-      "subject": "Beata Maria Perdolens",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo Perdolens",
+      "name": "Beata Maria Virgo Perdolens",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -490794,275 +488549,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1007-maria-de-rosario|Maria",
+      "id": "mr:1007-maria-de-rosario|Beata Maria Virgo de Rosario",
       "eulogy": "mr:1007-maria-de-rosario",
       "day": "10-07",
       "typology": "celebratio",
-      "subject": "Beata Maria de Rosario",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo de Rosario",
+      "name": "Beata Maria Virgo de Rosario",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -567143,273 +564641,41 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1121-praesentatio-beatae-mariae-virginis|Maria",
+      "id": "mr:1121-praesentatio-beatae-mariae-virginis|Praesentatio beatae Mariae Virginis",
       "eulogy": "mr:1121-praesentatio-beatae-mariae-virginis",
       "day": "11-21",
       "typology": "celebratio",
-      "subject": "Praesentatio Beatae Mariae Virginis",
-      "name": "Maria",
+      "subject": "Praesentatio beatae Mariae Virginis",
+      "name": "Praesentatio beatae Mariae Virginis",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q1124234) fails it",
+        "status: the best candidate (Q1124234) fails it",
+        "name: the best candidate (Q1124234) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q1124234",
+          "label": "Presentation of Mary",
+          "description": "liturgical feast",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
+            "Ingresso al Tempio della Tuttasanta Deìpara",
+            "Ingresso della Madre di Dio al Tempio",
+            "Praesentatio Dei Genetricis",
+            "Praesentatio Mariae",
+            "Presentation of Mary",
+            "Presentazione della Beata Vergine Maria",
+            "Presentazione di Maria",
+            "Presentazione di Maria al tempio",
+            "The Presentation of the Blessed Virgin Mary"
           ],
           "human": false,
           "statuses": [],
           "born": null,
           "died": null,
           "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
+          "evidence": []
         }
       ],
       "decision": null,
@@ -600030,275 +597296,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1208-conceptio-immaculata-beatae-mariae-virginis|Maria",
+      "id": "mr:1208-conceptio-immaculata-beatae-mariae-virginis|Conceptio Immaculata beatae Mariae Virginis",
       "eulogy": "mr:1208-conceptio-immaculata-beatae-mariae-virginis",
       "day": "12-08",
       "typology": "celebratio",
-      "subject": "Conceptio Immaculata Beatae Mariae Virginis",
-      "name": "Maria",
+      "subject": "Conceptio Immaculata beatae Mariae Virginis",
+      "name": "Conceptio Immaculata beatae Mariae Virginis",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
-          "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-010",
-          "died": "0001",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -604610,271 +601619,44 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1212-maria-de-guadalupe|Maria",
+      "id": "mr:1212-maria-de-guadalupe|Beata Maria Virgo de Guadalupe",
       "eulogy": "mr:1212-maria-de-guadalupe",
       "day": "12-12",
       "typology": "celebratio",
-      "subject": "Beata Maria de Guadalupe",
-      "name": "Maria",
+      "subject": "Beata Maria Virgo de Guadalupe",
+      "name": "Beata Maria Virgo de Guadalupe",
       "where": "text",
       "companions": [],
       "failed": [
-        "the same item (Q345) is matched in another eulogy, and this name is one word: a namesake?"
+        "human: the best candidate (Q31877) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q345",
-          "label": "Mary",
-          "description": "mother of Jesus Christ",
+          "wikidata": "Q31877",
+          "label": "Our Lady of Guadalupe",
+          "description": "title of the Virgin Mary as she appeared to an Indigenous man in Mexico in December 1531",
           "names": [
-            "Beata Vergine",
-            "Beata Vergine Maria",
-            "Blessed Mother",
-            "Blessed Virgin",
-            "Blessed Virgin Mary",
-            "God-Bearer",
-            "Holy Mary",
-            "Holy Virgin",
-            "Immaculate Mary",
-            "Madonna",
-            "Maria",
-            "Maria Mater Dei",
-            "Maria Mater Iesu",
-            "Maria di Nazareth",
-            "Maria vergine",
-            "Maria virgo",
-            "Maria, madre di Gesù",
-            "Mary",
-            "Mary the Virgin",
-            "Mary, Mother of our Lord",
-            "Mary, mother of Jesus",
-            "Maryam",
-            "Miriam",
-            "Most Blessed",
-            "Mother of God",
-            "Mother of Jesus",
-            "Mīryām",
-            "Notre Dame",
-            "Our Lady",
-            "Queen of the Universe",
-            "Saint Mary",
-            "Santa Maria",
-            "St Mary the Virgin",
-            "The Blessed Mother",
-            "The Blessed Virgin",
-            "The Blessed Virgin Mary",
-            "The Madonna",
-            "Theotokos",
-            "Vergine Maria",
-            "Virgin God-Bearer",
-            "Virgin Mary",
-            "the Virgin Mary"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-001",
-          "died": "0048",
-          "feast": [
-            "Q2774"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115472",
-          "label": "Marie Bonaparte",
-          "description": "French author and psychoanalyst (1882-1962)",
-          "names": [
-            "A. E. Narjani",
-            "Maria",
-            "Maria Bonaparte",
-            "Marie Bonaparte",
-            "Princess Marie Bonaparte"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1882-07-02",
-          "died": "1962-09-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1291385",
-          "label": "Maria",
-          "description": "Roman empress, wife of Honorius",
-          "names": [
-            "Maria"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0385",
-          "died": "0407-02",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
+            "Apparizioni di Guadalupe",
+            "Beata Maria Virgo de Guadalupe",
+            "Domina Nostra Guadalupensis",
+            "Nostra Signora di Guadalupe",
+            "Our Lady of Guadalupe",
+            "Our Lady of Guadalupe (Tepeyac)",
+            "Our Lady of Guadalupe, Mexico",
+            "Our Lady of Guadalupe, Tepeyac",
+            "Virgin of Guadalupe"
           ],
           "human": false,
           "statuses": [
             "Q43115"
           ],
-          "born": "-010",
-          "died": "0001",
+          "born": null,
+          "died": null,
           "feast": [
-            "Q2529",
-            "Q2583"
+            "Q2369"
           ],
           "evidence": [
             "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q236293",
-          "label": "Marie of France, Countess of Champagne",
-          "description": "countess of Champagne (1145-1198)",
-          "names": [
-            "Maria",
-            "Maria Franciae",
-            "Maria di Champagne",
-            "Maria di Francia",
-            "Marie de France",
-            "Marie of France",
-            "Marie of France, Countess of Champagne"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1145",
-          "died": "1198-03-11",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q57666",
-          "label": "Marie of Romania",
-          "description": "last Queen consort of Romania (1875-1938; r. 1914-1927)",
-          "names": [
-            "Maria",
-            "Maria Alexandra Victoria Edinburgensis",
-            "Maria di Sassonia-Coburgo-Gotha",
-            "Maria of Romania",
-            "Maria of Saxe-Coburg and Gotha",
-            "Maria, Queen of Romania",
-            "Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Marie of Edinburgh",
-            "Marie of Edinburgh, Queen of Romania",
-            "Marie of Romania",
-            "Marie of Saxe-Coburg and Gotha",
-            "Marie, Queen of Romania",
-            "Princess Marie of Edinburgh",
-            "Princess Marie Alexandra Victoria of Saxe-Coburg and Gotha",
-            "Queen Maria of Romania",
-            "Queen Marie of Romania"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1875-10-29",
-          "died": "1938-07-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q174343",
-          "label": "Maria",
-          "description": "municipality of the Philippines in the province of Siquijor",
-          "names": [
-            "Maria",
-            "Municipality of Maria"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18088640",
-          "label": "María",
-          "description": "female given name (María)",
-          "names": [
-            "María"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
             "name"
           ]
         }

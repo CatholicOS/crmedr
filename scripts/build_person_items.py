@@ -70,6 +70,8 @@ FORCE_REVIEW = {
     "mr:0206-paulus-miki-et-socii|Thomas": "a Japanese martyr, not Thomas the Apostle",
     "mr:0206-paulus-miki-et-socii|Bonaventura": "a Japanese martyr, not Saint Bonaventure",
     "mr:0212-martyres-abitinenses|Maria": "an Abitinian martyr, not the Blessed Virgin",
+    # Kept from Q345 by the Marian celebrations' "Maria" until they were named by the celebration.
+    "mr:0729-lazarus-et-maria|Maria": "Mary of Bethany, the sister of Lazarus, not the Blessed Virgin",
     "mr:1003-faustus-et-socii|Petrus": "a companion of Faustus, not Saint Peter",
     "mr:1003-faustus-et-socii|Caius": "a companion of Faustus, not Pope Caius",
 }
