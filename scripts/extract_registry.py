@@ -655,6 +655,8 @@ ID_CORRECTIONS = {
     "mr:1227-ioannes-apostolus": "mr:1227-ioannes-apostolus-et-evangelista",
     # #95: the eulogy names two martyrs, Francisca Xaveria Fenollosa Alcayna and Herminia Martínez Amigó.
     "mr:0927-francisca-xaveria-fenollosa-alcayna": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo",
+    # #113: the feast of the three archangels, not a saint and his companions.
+    "mr:0929-michael-et-socii": "mr:0929-michael-gabriel-et-raphael-archangeli",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in

@@ -111,6 +111,11 @@ mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo. Its Lati
 honorific misprinted (*betárum*, in data/misprints.json); the subject is Beatae, as printed in the
 Italian (*beate martiri*).
 
+**The archangels** (#113): the eulogy of 29 September is the feast of Michael, Gabriel and
+Raphael, *archangelórum*, not a saint and his companions: mr:0929-michael-gabriel-et-raphael-archangeli.
+Its persons carry the title, as the apostles do: Michael Archangelus, Gabriel Archangelus, Raphael
+Archangelus.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 

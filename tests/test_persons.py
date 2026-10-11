@@ -708,6 +708,9 @@ class TitledPersonsTest(unittest.TestCase):
                          ["Philippus Apostolus", "Iacobus Apostolus"])
         self.assertEqual(pt.subject_names("mr:0704-osee-et-aggaeus-prophetae", "Sancti Osee et Aggaeus Prophetae"),
                          ["Osee Propheta", "Aggaeus Propheta"])
+        self.assertEqual(pt.subject_names("mr:0929-michael-gabriel-et-raphael-archangeli",
+                                          "Sancti Michael, Gabriel et Raphael Archangeli"),
+                         ["Michael Archangelus", "Gabriel Archangelus", "Raphael Archangelus"])
 
     def test_feasts_of_an_apostle_name_him_with_his_title(self):
         self.assertEqual(pt.subject_names("mr:0125-conversio-pauli-apostoli", "Conversio Sancti Pauli Apostoli"),
