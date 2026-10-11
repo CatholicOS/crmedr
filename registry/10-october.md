@@ -44,7 +44,7 @@
 | 3 | 8 | `mr:1003-utho` | * | DE | dies_natalis |  |  |
 | 3 | 9 | `mr:1003-gerardus` |  | BE | dies_natalis |  |  |
 | 3 | 10 | `mr:1003-adalgottus` | * | CH | dies_natalis |  |  |
-| 3 | 11 | `mr:1003-ambrosius-franciscus-ferro-et-socii` | * | BR | dies_natalis |  |  |
+| 3 | 11 | `mr:1003-ambrosius-franciscus-ferro-et-socii` | * | BR | dies_natalis |  | The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed in the 2004 editions, were canonized on 15 October 2017. |
 | 3 | 12 | `mr:1003-crescentius-garcia-pobo` | * | ES | dies_natalis |  |  |
 | 4 | (1) | `mr:1004-franciscus` |  | IT | dies_natalis |  |  |
 | 4 | 2 | `mr:1004-petronius` |  | IT | dies_natalis |  |  |
@@ -69,8 +69,8 @@
 | 5 | 13 | `mr:1005-raymundus-de-vineis` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1005-matthaeus-carreri` | * | IT | dies_natalis |  |  |
 | 5 | 15 | `mr:1005-gulielmus-hartley-et-ioannes-hewett` | * | GB | dies_natalis |  |  |
-| 5 | 16 | `mr:1005-anna-schaffer` | * | DE | dies_natalis |  |  |
-| 5 | 17 | `mr:1005-bartholomaeus-longo` | * | IT | dies_natalis |  |  |
+| 5 | 16 | `mr:1005-anna-schaffer` | * | DE | dies_natalis |  | Anna Schäffer, blessed in the 2004 editions, was canonized on 21 October 2012. |
+| 5 | 17 | `mr:1005-bartholomaeus-longo` | * | IT | dies_natalis |  | Bartolo Longo, blessed in the 2004 editions, was canonized on 19 October 2025. |
 | 5 | 18 | `mr:1005-tranquillinus-ubiarco` |  | MX | dies_natalis |  |  |
 | 5 | 19 | `mr:1005-maria-faustina-kowalska` |  | PL | dies_natalis |  |  |
 | 5 | 20 | `mr:1005-marianus-skrzypczak` | * | PL | dies_natalis |  |  |
@@ -281,7 +281,7 @@
 | 21 | 9 | `mr:1021-maurontus` | * | FR | dies_natalis |  |  |
 | 21 | 10 | `mr:1021-petrus-capucci` | * | IT | dies_natalis |  |  |
 | 21 | 11 | `mr:1021-petrus-yu-tae-chol` |  | KR | dies_natalis |  |  |
-| 21 | 12 | `mr:1021-laura-montoya-y-upegui` | * | CO | dies_natalis |  |  |
+| 21 | 12 | `mr:1021-laura-montoya-y-upegui` | * | CO | dies_natalis |  | Laura of St Catherine of Siena Montoya y Upegui, blessed in the 2004 editions, was canonized on 12 May 2013. |
 | 22 | 1 | `mr:1022-marcus` |  | IL | commemoratio |  |  |
 | 22 | 2 | `mr:1022-abercius` |  | TR | dies_natalis |  | 2004 English: Translation error: "led the faith ... and to have nourished it" where the Latin has "fidem ... conduxísse et ... enutrivísse" (that faith led him and nourished him). |
 | 22 | 3 | `mr:1022-philippus-et-hermes` |  | TR | dies_natalis |  |  |
@@ -324,7 +324,7 @@
 | 24 | 8 | `mr:1024-maglorius` |  | FR | dies_natalis |  |  |
 | 24 | 9 | `mr:1024-fromundus` | * | FR | dies_natalis |  |  |
 | 24 | 10 | `mr:1024-iosephus-le-dang-thi` |  | VN | dies_natalis |  |  |
-| 24 | 11 | `mr:1024-aloysius-guanella` | * | IT | dies_natalis |  |  |
+| 24 | 11 | `mr:1024-aloysius-guanella` | * | IT | dies_natalis |  | Luigi Guanella, blessed in the 2004 editions, was canonized on 23 October 2011. |
 | 24 | 12 | `mr:1024-iosephus-baldo` | * | IT | dies_natalis |  |  |
 | 25 | 1 | `mr:1025-chrysanthus-et-daria` |  | IT | dies_natalis |  |  |
 | 25 | 2 | `mr:1025-crispinus-et-crispinianus` |  | FR | dies_natalis |  |  |
@@ -380,7 +380,7 @@
 | 29 | 6 | `mr:1029-theodarius` |  | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:1029-colmanus` | * | IE | dies_natalis |  |  |
 | 29 | 8 | `mr:1029-dodo` | * | FR | dies_natalis |  |  |
-| 29 | 9 | `mr:1029-caietanus-errico` | * | IT | dies_natalis |  | 2004 English: Translation error: the place "Secundiliáni" (Secondigliano) is omitted; only "Near Naples" is given. |
+| 29 | 9 | `mr:1029-caietanus-errico` | * | IT | dies_natalis |  | Gaetano Errico, blessed in the 2004 editions, was canonized on 12 October 2008. 2004 English: Translation error: the place "Secundiliáni" (Secondigliano) is omitted; only "Near Naples" is given. |
 | 30 | 1 | `mr:1030-marcianus` |  | IT | dies_natalis | same as `mr:0614-marcianus` |  |
 | 30 | 2 | `mr:1030-serapion` |  | TR | commemoratio |  |  |
 | 30 | 3 | `mr:1030-eutropia` |  | EG | dies_natalis |  |  |
@@ -392,7 +392,7 @@
 | 30 | 9 | `mr:1030-benvenuta-boiani` | * | IT | dies_natalis |  |  |
 | 30 | 10 | `mr:1030-ioannes-slade` | * | GB | dies_natalis |  |  |
 | 30 | 11 | `mr:1030-terentius-albertus-o-brien` | * | IE | dies_natalis |  |  |
-| 30 | 12 | `mr:1030-angelus` | * | IT | dies_natalis |  |  |
+| 30 | 12 | `mr:1030-angelus` | * | IT | dies_natalis |  | Angelo of Acri, blessed in the 2004 editions, was canonized on 15 October 2017. |
 | 30 | 13 | `mr:1030-ioannes-michael-langevin` | * | FR | dies_natalis |  |  |
 | 30 | 14 | `mr:1030-alexius-zaryckyj` | * | KZ | dies_natalis |  |  |
 | 31 | 1 | `mr:1031-epimachius-pelusiota` |  | EG | dies_natalis |  |  |

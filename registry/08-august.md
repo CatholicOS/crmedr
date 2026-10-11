@@ -16,7 +16,7 @@
 | 1 | 10 | `mr:0801-ethelwoldus` |  | GB | depositio |  |  |
 | 1 | 11 | `mr:0801-emericus-de-quart` | * | IT | dies_natalis |  |  |
 | 1 | 12 | `mr:0801-ioannes-bufalarus` | * | IT | dies_natalis |  |  |
-| 1 | 13 | `mr:0801-petrus-favre` | * | IT | dies_natalis |  |  |
+| 1 | 13 | `mr:0801-petrus-favre` | * | IT | dies_natalis |  | Peter Faber, blessed in the 2004 editions, was canonized on 17 December 2013. |
 | 1 | 14 | `mr:0801-thomas-welbourne` | * | GB | dies_natalis |  |  |
 | 1 | 15 | `mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due` | * | VN | dies_natalis |  |  |
 | 1 | 16 | `mr:0801-petrus-iulianus-eymard` |  | FR | dies_natalis |  |  |
@@ -78,7 +78,7 @@
 | 6 | 5 | `mr:0806-octavianus` | * | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0806-schecelinus` | * | LU | dies_natalis |  |  |
 | 6 | 7 | `mr:0806-dominicus` |  | IT | dies_natalis |  |  |
-| 6 | 8 | `mr:0806-maria-francisca-a-iesu` | * | UY | dies_natalis |  |  |
+| 6 | 8 | `mr:0806-maria-francisca-a-iesu` | * | UY | dies_natalis |  | Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 6 | 9 | `mr:0806-carolus-lopez-vidal` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0806-thaddaeus-dulny` | * | DE | dies_natalis |  |  |
 | 7 | (1) | `mr:0807-xystus-ii-et-socii` |  | IT | celebratio |  |  |
@@ -110,8 +110,8 @@
 | 8 | 11 | `mr:0808-ioannes-felton` | * | GB | dies_natalis |  |  |
 | 8 | 12 | `mr:0808-ioannes-fingley` | * | GB | dies_natalis |  |  |
 | 8 | 13 | `mr:0808-paulus-ke-tingzhu` |  | CN | dies_natalis |  |  |
-| 8 | 14 | `mr:0808-bonifatia-rodriguez-castro` | * | ES | dies_natalis |  |  |
-| 8 | 15 | `mr:0808-maria-a-cruce` | * | AU | dies_natalis |  |  |
+| 8 | 14 | `mr:0808-bonifatia-rodriguez-castro` | * | ES | dies_natalis |  | Bonifacia Rodríguez de Castro, blessed in the 2004 editions, was canonized on 23 October 2011. |
+| 8 | 15 | `mr:0808-maria-a-cruce` | * | AU | dies_natalis |  | Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 8 | 16 | `mr:0808-maria-margarita-caiani` | * | IT | dies_natalis |  |  |
 | 8 | 17 | `mr:0808-antonius-silvestre-moya` | * | ES | dies_natalis |  |  |
 | 8 | 18 | `mr:0808-maria-a-iesu-infante-et-socii` | * | ES | dies_natalis |  |  |
@@ -126,7 +126,7 @@
 | 9 | 8 | `mr:0809-ioannes-de-firmo` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:0809-richardus-bere` | * | GB | dies_natalis |  |  |
 | 9 | 10 | `mr:0809-claudius-richard` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "dal monastero di Metz" where the Latin "e Mediáno monastério" is the abbey of Moyenmoutier. |
-| 9 | 11 | `mr:0809-candida-maria-a-iesu` | * | ES | dies_natalis |  |  |
+| 9 | 11 | `mr:0809-candida-maria-a-iesu` | * | ES | dies_natalis |  | Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 9 | 12 | `mr:0809-florentinus-asensio-barroso` | * | ES | dies_natalis |  |  |
 | 9 | 13 | `mr:0809-ruben-a-iesu-lopez-aguilar-et-socii` | * | ES | dies_natalis |  |  |
 | 9 | 14 | `mr:0809-faustinus-oteiza-et-florentinus-felipe` | * | ES | dies_natalis |  |  |
@@ -199,7 +199,7 @@
 | 14 | 5 | `mr:0814-fachananus` | * | IE | dies_natalis |  |  |
 | 14 | 6 | `mr:0814-arnulphus` |  | BE | dies_natalis | same as `mr:0815-arnulphus` | 2004 Italian: Translation error: "Altenburg nelle Fiandre, ora in Germania" where the Latin "Aldenbúrgi in Flándria" is Oudenburg in Flanders, in present-day Belgium. |
 | 14 | 7 | `mr:0814-sanctus-de-urbino` | * | IT | dies_natalis |  |  |
-| 14 | 8 | `mr:0814-octingenti-martyres-hydrunti` | * | IT | dies_natalis |  |  |
+| 14 | 8 | `mr:0814-octingenti-martyres-hydrunti` | * | IT | dies_natalis |  | Antonio Primaldo and his companions, the martyrs of Otranto, blessed in the 2004 editions, were canonized on 12 May 2013. |
 | 14 | 9 | `mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon` |  | JP | dies_natalis |  |  |
 | 14 | 10 | `mr:0814-elisabeth-renzi` | * | IT | dies_natalis |  |  |
 | 14 | 11 | `mr:0814-vincentius-rubiols-castello` | * | ES | dies_natalis |  |  |
@@ -270,7 +270,7 @@
 | 18 | 13 | `mr:0818-iacobus-falgarona-vilanova-et-athanasius-vidaurreta-labra` | * | ES | dies_natalis |  |  |
 | 18 | 14 | `mr:0818-martinus-martinez-pascual` | * | ES | dies_natalis |  |  |
 | 18 | 15 | `mr:0818-vincentius-maria-izquierdo-alcon` | * | ES | dies_natalis |  |  |
-| 18 | 16 | `mr:0818-albertus-hurtado-cruchaga` | * | CL | dies_natalis |  |  |
+| 18 | 16 | `mr:0818-albertus-hurtado-cruchaga` | * | CL | dies_natalis |  | Alberto Hurtado Cruchaga, blessed in the 2004 editions, was canonized on 23 October 2005. |
 | 19 | (1) | `mr:0819-ioannes-eudes` |  | FR | dies_natalis |  |  |
 | 19 | 2 | `mr:0819-magnus` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0819-maginus` |  | ES | dies_natalis | same as `mr:0825-maginus` |  |
@@ -297,7 +297,7 @@
 | 20 | 3 | `mr:0820-maximus` |  | FR | dies_natalis |  |  |
 | 20 | 4 | `mr:0820-philibertus` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0820-leovigildus-et-christophorus` |  | ES | dies_natalis |  |  |
-| 20 | 6 | `mr:0820-bernardus-tolomei` | * | IT | dies_natalis | same as `mr:0821-bernardus-ptolomaeus` |  |
+| 20 | 6 | `mr:0820-bernardus-tolomei` | * | IT | dies_natalis | same as `mr:0821-bernardus-ptolomaeus` | Bernardo Tolomei, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 20 | 7 | `mr:0820-ludovicus-franciscus-le-brun-et-gervasius-brunel` | * | FR | dies_natalis |  |  |
 | 20 | 8 | `mr:0820-maria-de-mattias` |  | IT | dies_natalis |  |  |
 | 20 | 9 | `mr:0820-pius-x` |  | IT | dies_natalis |  |  |
@@ -381,7 +381,7 @@
 | 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis | same as `mr:0816-eleutherius` |  |
 | 26 | 7 | `mr:0826-iacobus-retouret` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0826-ioanna-elisabeth-bichier` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Puy-en-Vélay" where the Latin has "Podii apud Pictavium" (La Puye, near Poitiers). |
-| 26 | 9 | `mr:0826-maria-a-iesu-crucifixo` | * | PS | dies_natalis |  |  |
+| 26 | 9 | `mr:0826-maria-a-iesu-crucifixo` | * | PS | dies_natalis |  | Mary of Jesus Crucified (Mariam Baouardy), blessed in the 2004 editions, was canonized on 17 May 2015. |
 | 26 | 10 | `mr:0826-teresia-jornet-ibars` |  | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0826-ambrosius-valls-matamales` | * | ES | dies_natalis |  |  |
 | 26 | 12 | `mr:0826-petrus-max-ginestar` | * | ES | dies_natalis |  |  |
@@ -420,7 +420,7 @@
 | 28 | 10 | `mr:0828-florentina` |  | ES | dies_natalis | same as `mr:0620-florentina` |  |
 | 28 | 11 | `mr:0828-gulielmus-dean-et-socii` | * | GB | dies_natalis |  |  |
 | 28 | 12 | `mr:0828-edmundus-arrowsmith` |  | GB | dies_natalis |  |  |
-| 28 | 13 | `mr:0828-iuniperus-serra` | * | US | dies_natalis |  |  |
+| 28 | 13 | `mr:0828-iuniperus-serra` | * | US | dies_natalis |  | Junípero Serra, blessed in the 2004 editions, was canonized on 23 September 2015. |
 | 28 | 14 | `mr:0828-carolus-arnaldus-hanus` | * | FR | dies_natalis |  |  |
 | 28 | 15 | `mr:0828-ioachima-de-vedruna` |  | ES | dies_natalis |  |  |
 | 28 | 16 | `mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt` | * | ES | dies_natalis |  |  |
@@ -438,7 +438,7 @@
 | 29 | 10 | `mr:0829-richardus-herst` | * | GB | dies_natalis |  | 2004 Latin: Error: "sub Iacobo rege Primo" (under James I), but Richard Herst was executed in 1628, under Charles I. |
 | 29 | 11 | `mr:0829-ludovicus-vulfilacius-huppy` | * | FR | dies_natalis |  |  |
 | 29 | 12 | `mr:0829-edmundus-ignatius-rice` | * | IE | dies_natalis |  |  |
-| 29 | 13 | `mr:0829-ioanna-jugan` | * | FR | dies_natalis |  |  |
+| 29 | 13 | `mr:0829-ioanna-jugan` | * | FR | dies_natalis |  | Jeanne Jugan (Marie de la Croix), blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 29 | 14 | `mr:0829-constantinus-fernandez-alvarez` | * | ES | dies_natalis |  |  |
 | 29 | 15 | `mr:0829-franciscus-monzon-romeo` | * | ES | dies_natalis |  |  |
 | 29 | 16 | `mr:0829-dominicus-jedrzejewski` | * | DE | dies_natalis |  |  |

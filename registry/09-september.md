@@ -32,7 +32,7 @@
 | 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ponte" where the Latin has "Pontídæ" (Pontida). Translation error: "forsook the military service of Christ" where the Latin has "milítiam Christi armis honoribúsque sǽculi præpósuit" (preferred the service of Christ to the arms and honours of the world). |
 | 2 | 12 | `mr:0902-brochardus` | * | PS | dies_natalis |  | 2004 English: Translation error: "spring of Elisha" where the Latin has "fontem Elíæ" (the spring of Elijah). |
 | 2 | 13 | `mr:0902-ingridis-elofsdotter` | * | SE | dies_natalis |  |  |
-| 2 | 14 | `mr:0902-ioannes-maria-du-lau-et-socii` | * | FR | dies_natalis |  |  |
+| 2 | 14 | `mr:0902-ioannes-maria-du-lau-et-socii` | * | FR | dies_natalis |  | Salomon Leclercq, one of these martyrs, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 2 | 15 | `mr:0902-petrus-iacobus-maria-vitalis-et-socii` | * | FR | dies_natalis |  |  |
 | 3 | (1) | `mr:0903-gregorius-magnus` |  | TR | ordinatio |  |  |
 | 3 | 2 | `mr:0903-phoebes` |  | GR | commemoratio |  |  |
@@ -242,7 +242,7 @@
 | 17 | 9 | `mr:0917-petrus-de-arbues` |  | ES | dies_natalis |  |  |
 | 17 | 10 | `mr:0917-emmanuel-nguyen-van-trieu` |  | VN | dies_natalis |  |  |
 | 17 | 11 | `mr:0917-franciscus-maria-de-camporosso` |  | IT | dies_natalis |  |  |
-| 17 | 12 | `mr:0917-sigismundus-felix-felinski` | * | PL | dies_natalis |  |  |
+| 17 | 12 | `mr:0917-sigismundus-felix-felinski` | * | PL | dies_natalis |  | Zygmunt Szczęsny Feliński, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 17 | 13 | `mr:0917-ioannes-ventura-solsona` | * | ES | dies_natalis |  |  |
 | 17 | 14 | `mr:0917-timotheus-valero-perez` | * | ES | dies_natalis |  |  |
 | 17 | 15 | `mr:0917-sigismundus-sajna` | * | PL | dies_natalis |  |  |
@@ -331,7 +331,7 @@
 | 23 | 7 | `mr:0923-andreas-et-socii` |  | TN | dies_natalis |  |  |
 | 23 | 8 | `mr:0923-petrus-acotanto` | * | IT | dies_natalis |  |  |
 | 23 | 9 | `mr:0923-helena-duglioli-dall-olio` | * | IT | dies_natalis |  |  |
-| 23 | 10 | `mr:0923-christophorus-et-socii` | * | MX | dies_natalis |  |  |
+| 23 | 10 | `mr:0923-christophorus-et-socii` | * | MX | dies_natalis |  | Cristóbal, Antonio and Juan, the child martyrs of Tlaxcala, blessed in the 2004 editions, were canonized on 15 October 2017. |
 | 23 | 11 | `mr:0923-maria-aemilia-tavernier` | * | CA | dies_natalis |  | 2004 English: Translation error: "Marieville" where the Latin has "Marianópoli" (Montreal). |
 | 23 | 12 | `mr:0923-gulielmus-way` | * | GB | dies_natalis |  |  |
 | 23 | 13 | `mr:0923-vincentius-ballester-far` | * | ES | dies_natalis |  |  |

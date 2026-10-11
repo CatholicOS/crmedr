@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0601-alphonsus-navarrete-et-socii` | * | JP | dies_natalis |  |  |
 | 1 | 17 | `mr:0601-ioannes-baptista-vernoy-de-montjournal` | * | FR | dies_natalis |  |  |
 | 1 | 18 | `mr:0601-iosephus-tuc` |  | VN | dies_natalis |  |  |
-| 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT | dies_natalis |  |  |
+| 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT | dies_natalis |  | Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022. |
 | 1 | 20 | `mr:0601-hannibalis-maria-di-francia` |  | IT | dies_natalis |  |  |
 | 2 | (1) | `mr:0602-marcellinus-et-petrus` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0602-pothinus-et-socii` |  | FR | dies_natalis |  |  |
@@ -51,7 +51,7 @@
 | 3 | 16 | `mr:0603-carolus-renatus-collas-du-bignon` | * | FR | dies_natalis |  |  |
 | 3 | 17 | `mr:0603-petrus-dong` |  | VN | dies_natalis |  |  |
 | 3 | 18 | `mr:0603-didacus-oddi` | * | IT | dies_natalis |  |  |
-| 3 | 19 | `mr:0603-ioannes-xxiii` | * | IT | dies_natalis |  |  |
+| 3 | 19 | `mr:0603-ioannes-xxiii` | * | IT | dies_natalis |  | Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his optional memorial was inscribed in the General Roman Calendar on 11 October. |
 | 4 | 1 | `mr:0604-quirinus` |  | HU | dies_natalis |  |  |
 | 4 | 2 | `mr:0604-metrophanes` |  | TR | dies_natalis |  |  |
 | 4 | 3 | `mr:0604-optatus` |  | DZ | commemoratio |  |  |
@@ -60,7 +60,7 @@
 | 4 | 6 | `mr:0604-nicolaus-et-tranus` | * | IT | dies_natalis |  |  |
 | 4 | 7 | `mr:0604-pacificus-ramati` | * | IT | dies_natalis |  |  |
 | 4 | 8 | `mr:0604-franciscus-caracciolo` |  | IT | dies_natalis |  |  |
-| 4 | 9 | `mr:0604-philippus-smaldone` | * | IT | dies_natalis |  | 2004 English: Translation error: "deaf and mute" where the Latin has "surdórum ac cæcórum" (the deaf and the blind). |
+| 4 | 9 | `mr:0604-philippus-smaldone` | * | IT | dies_natalis |  | Filippo Smaldone, blessed in the 2004 editions, was canonized on 15 October 2006. 2004 English: Translation error: "deaf and mute" where the Latin has "surdórum ac cæcórum" (the deaf and the blind). |
 | 4 | 10 | `mr:0604-antonius-zawistowski-et-stanislaus-starowieyski` | * | DE | dies_natalis |  |  |
 | 5 | (1) | `mr:0605-bonifatius` |  | NL | dies_natalis |  |  |
 | 5 | 2 | `mr:0605-marcianus-et-socii` |  | EG | dies_natalis |  |  |
@@ -90,7 +90,7 @@
 | 6 | 15 | `mr:0606-gulielmus-greenwood` | * | GB | dies_natalis |  |  |
 | 6 | 16 | `mr:0606-marcellinus-champagnat` |  | FR | dies_natalis |  |  |
 | 6 | 17 | `mr:0606-petrus-dung-et-petrus-thuan` |  | VN | dies_natalis |  |  |
-| 6 | 18 | `mr:0606-raphael-guizar-valencia` | * | MX | dies_natalis |  |  |
+| 6 | 18 | `mr:0606-raphael-guizar-valencia` | * | MX | dies_natalis |  | Rafael Guízar Valencia, blessed in the 2004 editions, was canonized on 15 October 2006. |
 | 6 | 19 | `mr:0606-innocentius-guz` | * | DE | dies_natalis |  | 2004 English: Translation error: "followers of contrary opinions and religions ... was detained by the guards" where the Latin has "opiniónum hóminum et religiónis adversárum" (ideologies hostile to man and religion) and "a vigílibus ... trucidátus est" (murdered by the guards). |
 | 7 | 1 | `mr:0607-colmanus` | * | IE | dies_natalis |  |  |
 | 7 | 2 | `mr:0607-petrus-et-socii` |  | ES | dies_natalis |  |  |
@@ -105,9 +105,9 @@
 | 8 | 5 | `mr:0608-clodulphus` |  | FR | dies_natalis |  |  |
 | 8 | 6 | `mr:0608-gulielmus-fitzherbert` |  | GB | dies_natalis |  |  |
 | 8 | 7 | `mr:0608-ioannes-davy` | * | GB | dies_natalis |  |  |
-| 8 | 8 | `mr:0608-iacobus-berthieu` | * | MG | dies_natalis |  |  |
+| 8 | 8 | `mr:0608-iacobus-berthieu` | * | MG | dies_natalis |  | Jacques Berthieu, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 8 | 9 | `mr:0608-maria-a-divino-corde-iesu` | * | PT | dies_natalis |  |  |
-| 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  |  |
+| 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  | Mariam Thresia Chiramel Mankidiyan, blessed in the 2004 editions, was canonized on 13 October 2019. |
 | 8 | 11 | `mr:0608-nicolaus-de-gesturi` | * | IT | dies_natalis |  |  |
 | 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis | same as `mr:0618-ephraem` |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  |  |
@@ -117,7 +117,7 @@
 | 9 | 6 | `mr:0609-columba` |  | GB | dies_natalis |  |  |
 | 9 | 7 | `mr:0609-richardus` |  | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0609-robertus-salt` | * | GB | dies_natalis |  |  |
-| 9 | 9 | `mr:0609-iosephus-anchieta` | * | BR | dies_natalis |  |  |
+| 9 | 9 | `mr:0609-iosephus-anchieta` | * | BR | dies_natalis |  | José de Anchieta, blessed in the 2004 editions, was canonized on 3 April 2014. |
 | 9 | 10 | `mr:0609-iosephus-imbert` | * | FR | dies_natalis |  |  |
 | 9 | 11 | `mr:0609-anna-maria-taigi` | * | IT | dies_natalis |  |  |
 | 10 | 1 | `mr:0610-censurius` |  | FR | dies_natalis |  |  |
@@ -142,7 +142,7 @@
 | 11 | 10 | `mr:0611-rosa-francisca-maria-a-doloribus` |  | ES | dies_natalis |  |  |
 | 11 | 11 | `mr:0611-paula-frassinetti` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0611-maria-schinina` | * | IT | dies_natalis |  |  |
-| 11 | 13 | `mr:0611-ignatius-maloyan` | * | TR | dies_natalis |  |  |
+| 11 | 13 | `mr:0611-ignatius-maloyan` | * | TR | dies_natalis |  | Ignatius Maloyan, blessed in the 2004 editions, was canonized on 19 October 2025. |
 | 12 | 1 | `mr:0612-basilides` |  | IT | dies_natalis |  | 2004 English: Translation error: "Loreto" where the Latin has "Lórii" (Lorium, on the Via Aurelia). |
 | 12 | 2 | `mr:0612-onuphrius` |  | EG | dies_natalis |  |  |
 | 12 | 3 | `mr:0612-leo-iii` |  | IT | dies_natalis |  |  |
@@ -187,7 +187,7 @@
 | 15 | 10 | `mr:0615-thomas-scryven` | * | GB | dies_natalis |  |  |
 | 15 | 11 | `mr:0615-petrus-snow-et-radulphus-grimston` | * | GB | dies_natalis |  |  |
 | 15 | 12 | `mr:0615-germana` |  | FR | dies_natalis |  |  |
-| 15 | 13 | `mr:0615-aloysius-maria-palazzolo` | * | IT | dies_natalis |  |  |
+| 15 | 13 | `mr:0615-aloysius-maria-palazzolo` | * | IT | dies_natalis |  | Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 15 | 14 | `mr:0615-barbara-cui-lianzhi` |  | CN | dies_natalis |  |  |
 | 16 | 1 | `mr:0616-quiricus-et-iulitta` |  |  | commemoratio |  |  |
 | 16 | 2 | `mr:0616-ferreolus-et-ferrutius` |  | FR | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 24 | 7 | `mr:0624-gohardus` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 24 | 8 | `mr:0624-theodgarus` | * | DK | dies_natalis |  |  |
 | 24 | 9 | `mr:0624-iosephus-yuan-zaide` |  | CN | dies_natalis |  |  |
-| 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  |  |
+| 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  | María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013. |
 | 25 | 1 | `mr:0625-maximus` |  | IT | dies_natalis |  |  |
 | 25 | 2 | `mr:0625-prosperus-aquitanus` |  | FR | commemoratio |  |  |
 | 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'. 1749 Latin: This eulogy conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer. |
@@ -317,9 +317,9 @@
 | 27 | 6 | `mr:0627-arialdus` | * | IT | dies_natalis |  |  |
 | 27 | 7 | `mr:0627-benvenutus-de-eugubio` | * | IT | dies_natalis |  |  |
 | 27 | 8 | `mr:0627-thomas-toan` |  | VN | dies_natalis |  |  |
-| 27 | 9 | `mr:0627-margarita-bays` | * | CH | dies_natalis |  |  |
+| 27 | 9 | `mr:0627-margarita-bays` | * | CH | dies_natalis |  | Marguerite Bays, blessed in the 2004 editions, was canonized on 13 October 2019. |
 | 27 | 10 | `mr:0627-ludovica-teresia-montaignac-de-chauvance` | * | FR | dies_natalis |  |  |
-| 28 | (1) | `mr:0628-irenaeus` |  | TR | dies_natalis |  |  |
+| 28 | (1) | `mr:0628-irenaeus` |  | TR | dies_natalis |  | Irenaeus was declared a Doctor of the Church on 21 January 2022. |
 | 28 | 2 | `mr:0628-plutarchus-et-socii` |  | EG | dies_natalis |  |  |
 | 28 | 3 | `mr:0628-paulus-i` |  | IT | dies_natalis |  |  |
 | 28 | 4 | `mr:0628-argimirus` |  | ES | dies_natalis |  |  |

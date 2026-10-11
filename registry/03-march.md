@@ -45,7 +45,7 @@
 | 4 | 6 | `mr:0304-humbertus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:0304-christophorus-bales-et-socii` | * | GB | dies_natalis |  |  |
 | 4 | 8 | `mr:0304-placida-viel` | * | FR | dies_natalis |  |  |
-| 4 | 9 | `mr:0304-ioannes-antonius-farina` | * | IT | dies_natalis |  |  |
+| 4 | 9 | `mr:0304-ioannes-antonius-farina` | * | IT | dies_natalis |  | Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 4 | 10 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | * | PL | dies_natalis |  |  |
 | 5 | 1 | `mr:0305-theophilus` |  | PS | commemoratio |  |  |
 | 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
@@ -96,7 +96,7 @@
 | 8 | 11 | `mr:0308-veremundus` | * | ES | dies_natalis |  |  |
 | 8 | 12 | `mr:0308-stephanus` | * | FR | dies_natalis |  |  |
 | 8 | 13 | `mr:0308-vincentius-kadlubek` | * | PL | dies_natalis |  |  |
-| 8 | 14 | `mr:0308-faustinus-miguez` | * | ES | dies_natalis |  |  |
+| 8 | 14 | `mr:0308-faustinus-miguez` | * | ES | dies_natalis |  | Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017. |
 | 9 | (1) | `mr:0309-francisca` |  | IT | dies_natalis |  | 2004 English: Translation error: "among the offerings" where the Latin has "inter oblátas" (among the Oblates). |
 | 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis | same as `mr:0310-quadraginta-milites-sebastes` |  |
 | 9 | 3 | `mr:0309-pacianus` |  | ES | dies_natalis |  |  |
@@ -112,7 +112,7 @@
 | 10 | 5 | `mr:0310-droctoveus` |  | FR | dies_natalis |  |  |
 | 10 | 6 | `mr:0310-attala` |  | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0310-ioannes-ogilvie` |  | GB | dies_natalis |  |  |
-| 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  |  |
+| 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  | Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 10 | 9 | `mr:0310-elias-a-succursu` | * | MX | dies_natalis |  |  |
 | 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
 | 11 | 2 | `mr:0311-trophimus-et-thalus` |  | SY | dies_natalis |  |  |
@@ -167,7 +167,7 @@
 | 15 | 6 | `mr:0315-ludovica-de-marillac` |  | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0315-clemens-maria-hofbauer` |  | AT | dies_natalis |  |  |
 | 15 | 8 | `mr:0315-ioannes-adalbertus-balicki` | * | PL | dies_natalis |  |  |
-| 15 | 9 | `mr:0315-artemidis-zatti` | * | AR | dies_natalis |  |  |
+| 15 | 9 | `mr:0315-artemidis-zatti` | * | AR | dies_natalis |  | Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022. |
 | 16 | 1 | `mr:0316-hilarius-et-tatianus` |  | IT | dies_natalis |  |  |
 | 16 | 2 | `mr:0316-papa` |  | TR | dies_natalis |  |  |
 | 16 | 3 | `mr:0316-iulianus` |  | TR | dies_natalis |  |  |
@@ -219,7 +219,7 @@
 | 20 | 13 | `mr:0320-ioanna-veron` | * | FR | dies_natalis |  | 2004 English: Translation error: "Érines in the district of Meudon" where the Latin has "Erenéi in pago Meduáno" (Ernée, in Mayenne). |
 | 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "dove morì abbandonato a se stesso" (where he died, abandoned) where the Latin says only that he was banished there, "ab ómnibus derelíctus" (abandoned by all); he died at Tarragona. |
 | 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu` |  | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony, in France) where the Latin has "in Vascónia Hispániæ" (the Basque Country of Spain). |
-| 20 | 16 | `mr:0320-iosephus-bilczewski` | * | UA | dies_natalis |  |  |
+| 20 | 16 | `mr:0320-iosephus-bilczewski` | * | UA | dies_natalis |  | Józef Bilczewski, blessed in the 2004 editions, was canonized on 23 October 2005. |
 | 21 | 1 | `mr:0321-serapion` |  | EG | dies_natalis |  |  |
 | 21 | 2 | `mr:0321-martyres-alexandrini` |  | EG | commemoratio |  |  |
 | 21 | 3 | `mr:0321-lupicinus` |  | FR | dies_natalis |  |  |
@@ -323,7 +323,7 @@
 | 30 | 9 | `mr:0330-petrus-regalado` |  | ES | dies_natalis |  |  |
 | 30 | 10 | `mr:0330-amadeus` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0330-antonius-daveluy-et-socii` |  | KR | dies_natalis |  |  |
-| 30 | 12 | `mr:0330-ludovicus-de-casaurea` | * | IT | dies_natalis |  |  |
+| 30 | 12 | `mr:0330-ludovicus-de-casaurea` | * | IT | dies_natalis |  | Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 30 | 13 | `mr:0330-leonardus-murialdo` |  | IT | dies_natalis |  |  |
 | 30 | 14 | `mr:0330-iulius-alvarez` |  | MX | dies_natalis |  |  |
 | 30 | 15 | `mr:0330-maria-restituta-kafka` | * | AT | dies_natalis |  |  |

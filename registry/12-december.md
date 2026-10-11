@@ -83,7 +83,7 @@
 | 8 | 6 | `mr:1208-romaricus` |  | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:1208-theobaldus-de-marliaco` | * | FR | dies_natalis |  |  |
 | 8 | 8 | `mr:1208-natalis-chabanel` |  | CA | dies_natalis |  |  |
-| 8 | 9 | `mr:1208-narcissa-a-iesu-martillo-moran` | * | PE | dies_natalis |  |  |
+| 8 | 9 | `mr:1208-narcissa-a-iesu-martillo-moran` | * | PE | dies_natalis |  | Narcisa de Jesús Martillo Morán, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 8 | 10 | `mr:1208-iosephus-maria-zabal-blasco` | * | ES | dies_natalis |  |  |
 | 8 | 11 | `mr:1208-aloysius-liguda` | * | DE | dies_natalis |  |  |
 | 9 | (1) | `mr:1209-ioannes-didacus-cuauhtlatoatzin` |  | MX | dies_natalis |  |  |
@@ -204,7 +204,7 @@
 | 20 | 3 | `mr:1220-philogonius` |  | TR | dies_natalis |  |  |
 | 20 | 4 | `mr:1220-ursicinus` | * | CH | dies_natalis |  |  |
 | 20 | 5 | `mr:1220-dominicus` |  | ES | dies_natalis |  |  |
-| 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  |  |
+| 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  | Vincenzo Romano, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 20 | 7 | `mr:1220-michael-piaszczynski` | * | DE | dies_natalis |  |  |
 | 21 | (1) | `mr:1221-petrus-canisius` |  | DE | dies_natalis | same as `mr:0427-petrus-canisius` |  |
 | 21 | 2 | `mr:1221-michaeas-propheta` |  | PS | commemoratio |  |  |
@@ -228,7 +228,7 @@
 | 23 | 7 | `mr:1223-ioannes-stone` |  | GB | commemoratio |  |  |
 | 23 | 8 | `mr:1223-nicolaus-factor` | * | ES | dies_natalis |  |  |
 | 23 | 9 | `mr:1223-maria-margarita` |  | CA | dies_natalis |  |  |
-| 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  |  |
+| 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  | Anthony of St Anne Galvão, blessed in the 2004 editions, was canonized on 11 May 2007. |
 | 23 | 11 | `mr:1223-iosephus-cho-yun-ho` |  | KR | dies_natalis |  |  |
 | 23 | 12 | `mr:1223-paulus-melendez-gonzalo` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "beato" is omitted before "Paolo Meléndez Gonzalo"; the Latin has "beáti Pauli". |
 | 24 | 1 | `mr:1224-avi-iesu-christi` |  | PS | commemoratio |  | 2004 Italian: Translation error: "figlio di Adamo" is omitted after "figlio di Abramo"; the Latin has "fílii Abraham, fílii Adam". |
@@ -267,7 +267,7 @@
 | 28 | 4 | `mr:1228-matthias-de-nazareis` | * | IT | dies_natalis |  |  |
 | 28 | 5 | `mr:1228-franciscus-de-sales` |  | FR | dies_natalis |  | 2004 English: Translation error: "the day of his death at Annecy" where the Latin has "die depositiónis" (the day of his burial). |
 | 28 | 6 | `mr:1228-gaspar-del-bufalo` |  | IT | dies_natalis |  |  |
-| 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT | dies_natalis |  |  |
+| 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT | dies_natalis |  | Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 28 | 8 | `mr:1228-gregorius-khomysyn` | * | UA | dies_natalis |  |  |
 | 29 | (1) | `mr:1229-thomas-becket` |  | GB | dies_natalis |  |  |
 | 29 | 2 | `mr:1229-david-rex-et-propheta` |  | IL | commemoratio |  |  |

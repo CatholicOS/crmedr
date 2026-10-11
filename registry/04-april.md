@@ -13,7 +13,7 @@
 | 1 | 7 | `mr:0401-hugo-bonaevallensis` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0401-gilbertus` | * | GB | dies_natalis |  |  |
 | 1 | 9 | `mr:0401-ioannes-bretton` | * | GB | dies_natalis |  |  |
-| 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  |  |
+| 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  | Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 2 | (1) | `mr:0402-franciscus-de-paula` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0402-apphianus` |  | PS | dies_natalis |  |  |
 | 2 | 3 | `mr:0402-theodora` |  | LB | dies_natalis |  |  |
@@ -22,11 +22,11 @@
 | 2 | 6 | `mr:0402-nicetius` |  | FR | dies_natalis |  |  |
 | 2 | 7 | `mr:0402-eustasius` |  | FR | dies_natalis | same as `mr:0329-eustasius-luxovii` |  |
 | 2 | 8 | `mr:0402-ioannes-paine` |  | GB | dies_natalis |  |  |
-| 2 | 9 | `mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod` | * | GU | dies_natalis |  |  |
+| 2 | 9 | `mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod` | * | GU | dies_natalis |  | Pedro Calungsod, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 2 | 10 | `mr:0402-leopoldus-de-gaiche` | * | IT | dies_natalis |  |  |
 | 2 | 11 | `mr:0402-dominicus-tuoc` |  | VN | dies_natalis |  |  |
 | 2 | 12 | `mr:0402-elisabeth-vendramini` | * | IT | dies_natalis |  |  |
-| 2 | 13 | `mr:0402-franciscus-coll` | * | ES | dies_natalis |  |  |
+| 2 | 13 | `mr:0402-franciscus-coll` | * | ES | dies_natalis |  | Francisco Coll y Guitart, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 2 | 14 | `mr:0402-gulielmus-apor` | * | HU | dies_natalis |  |  |
 | 2 | 15 | `mr:0402-nicolaus-carneckyj` | * | UA | dies_natalis |  |  |
 | 2 | 16 | `mr:0402-maria-a-sancto-ioseph` | * | VE | dies_natalis |  |  |
@@ -50,8 +50,8 @@
 | 4 | 6 | `mr:0404-gulielmus-cuffitelli` | * | IT | dies_natalis |  |  |
 | 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis | same as `mr:0403-benedictus` |  |
 | 4 | 8 | `mr:0404-iosephus-benedictus-dusmet` | * | IT | dies_natalis |  |  |
-| 4 | 9 | `mr:0404-franciscus-marto` | * | PT | dies_natalis |  |  |
-| 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT | dies_natalis |  |  |
+| 4 | 9 | `mr:0404-franciscus-marto` | * | PT | dies_natalis |  | Francisco Marto, blessed in the 2004 editions, was canonized on 13 May 2017. |
+| 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT | dies_natalis |  | Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005. |
 | 5 | (1) | `mr:0405-vincentius-ferrer` |  | FR | dies_natalis |  |  |
 | 5 | 2 | `mr:0405-irenes` |  | GR | dies_natalis |  |  |
 | 5 | 3 | `mr:0405-pherbutha` |  | IR | dies_natalis |  |  |
@@ -137,7 +137,7 @@
 | 11 | 9 | `mr:0411-angelus-de-clavasio` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0411-georgius-gervase` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:0411-gemma-galganus` |  | IT | dies_natalis |  |  |
-| 11 | 12 | `mr:0411-helena-guerra` | * | IT | dies_natalis |  |  |
+| 11 | 12 | `mr:0411-helena-guerra` | * | IT | dies_natalis |  | Elena Guerra, blessed in the 2004 editions, was canonized on 20 October 2024. |
 | 11 | 13 | `mr:0411-sympronianus-ducki` | * | PL | dies_natalis |  |  |
 | 12 | 1 | `mr:0412-vissia` |  | IT | dies_natalis |  |  |
 | 12 | 2 | `mr:0412-iulius-i` |  | IT | depositio |  |  |
@@ -160,7 +160,7 @@
 | 13 | 6 | `mr:0413-caradocus` | * | GB | dies_natalis |  |  |
 | 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  |  |
 | 13 | 8 | `mr:0413-albertinus` | * | IT | dies_natalis |  |  |
-| 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
+| 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021. 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
 | 13 | 10 | `mr:0413-franciscus-dickenson-et-milo-gerard` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0413-ioannes-lockwood-et-eduardus-catherick` | * | GB | dies_natalis |  |  |
 | 13 | 12 | `mr:0413-scubilio-rousseau` | * | FR | dies_natalis |  |  |
@@ -183,8 +183,8 @@
 | 15 | 4 | `mr:0415-abundius` |  | IT | commemoratio | same as `mr:0414-abundius` |  |
 | 15 | 5 | `mr:0415-paternus` |  | FR | depositio | same as `mr:0416-paternus`; same as `mr:0923-paternus` | 2004 English: Translation error: "Séez" where the Latin has "Sescíaci" (Scissy, in the district of Coutances). |
 | 15 | 6 | `mr:0415-ortarius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Ouen (Ortarius)" where the Latin has "sancti Ortárii" (Saint Ortarius); Ouen is a different saint. |
-| 15 | 7 | `mr:0415-caesar-de-bus` | * | FR | dies_natalis |  |  |
-| 15 | 8 | `mr:0415-damianus-de-veuster` | * | US | dies_natalis |  |  |
+| 15 | 7 | `mr:0415-caesar-de-bus` | * | FR | dies_natalis |  | César de Bus, blessed in the 2004 editions, was canonized on 15 May 2022. |
+| 15 | 8 | `mr:0415-damianus-de-veuster` | * | US | dies_natalis |  | Damien de Veuster, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 16 | 1 | `mr:0416-leonides-et-socii` |  | GR | dies_natalis |  |  |
 | 16 | 2 | `mr:0416-optatus-et-socii` |  | ES | commemoratio |  |  |
 | 16 | 3 | `mr:0416-engratia` |  | ES | commemoratio |  |  |
@@ -212,7 +212,7 @@
 | 17 | 12 | `mr:0417-clara-gambacorti` | * | IT | dies_natalis |  |  |
 | 17 | 13 | `mr:0417-maria-anna-a-iesu` | * | ES | dies_natalis |  |  |
 | 17 | 14 | `mr:0417-henricus-heath` | * | GB | dies_natalis |  |  |
-| 17 | 15 | `mr:0417-catharina-tekakwitha` | * | CA | dies_natalis |  |  |
+| 17 | 15 | `mr:0417-catharina-tekakwitha` | * | CA | dies_natalis |  | Kateri Tekakwitha, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 18 | 1 | `mr:0418-hermogenes-et-elpidius` |  | TR | dies_natalis | same as `mr:0419-hermogenes-et-socii` |  |
 | 18 | 2 | `mr:0418-pusicius` |  | IR | dies_natalis |  |  |
 | 18 | 3 | `mr:0418-eusebius` | * | IT | dies_natalis |  |  |
@@ -300,7 +300,7 @@
 | 24 | 10 | `mr:0424-gulielmus-firmatus` | * | FR | dies_natalis |  |  |
 | 24 | 11 | `mr:0424-maria-a-sancta-euphrasia` |  | FR | dies_natalis |  |  |
 | 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |  |
-| 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  |  |
+| 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  | Maria Elisabeth Hesselblad, blessed in the 2004 editions, was canonized on 5 June 2016. |
 | 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  | 2004 English: Translation error: "blessed Peter, his son" where the Latin has "ab illo fílius nuncupátus" (called son by him, that is, by Peter). |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` |  |
@@ -312,7 +312,7 @@
 | 25 | 9 | `mr:0425-bonifatius-valperga` | * | IT | dies_natalis |  |  |
 | 25 | 10 | `mr:0425-robertus-anderton-et-gulielmus-marsden` | * | GB | dies_natalis |  |  |
 | 25 | 11 | `mr:0425-petrus-de-betancur` |  | GT | dies_natalis |  |  |
-| 25 | 12 | `mr:0425-ioannes-piamarta` | * | IT | dies_natalis |  |  |
+| 25 | 12 | `mr:0425-ioannes-piamarta` | * | IT | dies_natalis |  | Giovanni Battista Piamarta, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 26 | 1 | `mr:0426-cletus` |  | IT | commemoratio |  |  |
 | 26 | 2 | `mr:0426-primitivus` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:0426-basileus` |  | TR | dies_natalis |  |  |
@@ -321,7 +321,7 @@
 | 26 | 6 | `mr:0426-gulielmus-et-peregrinus` | * | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0426-dominicus-et-gregorius` | * | ES | dies_natalis |  |  |
 | 26 | 8 | `mr:0426-stephanus` | * | RU | depositio |  |  |
-| 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  |  |
+| 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  | Rafael Arnáiz Barón, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |  |
 | 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio | same as `mr:0218-simeon` |  |
@@ -374,7 +374,7 @@
 | 30 | 15 | `mr:0430-adiutor` | * | FR | dies_natalis |  |  |
 | 30 | 16 | `mr:0430-gulielmus-southerne` | * | GB | dies_natalis |  |  |
 | 30 | 17 | `mr:0430-benedictus-de-urbino` | * | IT | dies_natalis |  |  |
-| 30 | 18 | `mr:0430-maria-ab-incarnatione` | * | CA | dies_natalis |  |  |
+| 30 | 18 | `mr:0430-maria-ab-incarnatione` | * | CA | dies_natalis |  | Marie of the Incarnation Guyart, blessed in the 2004 editions, was canonized on 3 April 2014. |
 | 30 | 19 | `mr:0430-iosephus-benedictus-cottolengo` |  | IT | dies_natalis |  |  |
 | 30 | 20 | `mr:0430-iosephus-tuan` |  | VN | dies_natalis |  |  |
 | 30 | 21 | `mr:0430-paulina-von-mallinckrodt` | * | DE | dies_natalis |  |  |
