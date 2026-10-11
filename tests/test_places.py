@@ -270,9 +270,10 @@ class MisprintTest(unittest.TestCase):
         records = json.load(open(path, encoding="utf-8"))["misprints"]
         self.assertEqual([(r["id"], r["edition"]) for r in records],
                          sorted((r["id"], r["edition"]) for r in records))
-        self.assertTrue(all(set(r) == p.MISPRINT_KEYS for r in records))
+        self.assertTrue(all(p.MISPRINT_KEYS <= set(r) <= p.MISPRINT_KEYS | p.MISPRINT_OPTIONAL_KEYS for r in records))
         self.assertEqual({r["printed"] for r in records},
                          {"betárum", "Marcellino", "Caulphæ", "desposizione", "comemorazione", "Mel", "nell territorio",
+                          "e maria", "compagn",
                           "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
                           "Bellrreguart", "dístulit",
                           "BalĐinucci", "Bdu N9", "EaSaint", "EuchariSaint", "FerĐinand", "Hdi Duding", "ReaĐing", "Vil", "accorĐing", "beheaĐing", "builĐings", "carĐinals", "defenĐing", "founĐing", "kinson", "leaSaint", "outstanĐing", "preceĐing", "prieSaint", "reaĐing", "rebuilĐing", "shedĐing", "spreaĐing", "tala"})
