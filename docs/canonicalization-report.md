@@ -1051,8 +1051,8 @@ Sancto Ioseph (Ioséphi) Kalinowski*. The ID is minted from the **secular name a
 (mr:1115-raphael-kalinowski becomes mr:1115-ioseph-kalinowski), and the religious name, Raphael a
 Sancto Ioseph Kalinowski, is kept as an alternative form of the person
 (`data/persons_variants_curated.json`). The secular name is preferred because it is less likely to
-collide (religious names repeat across congregations and centuries: many a *Maria a Iesu*, *Teresia a
-Iesu*, *Ioannes a Cruce*), it is generally shorter (no title or place: *a Sancto Ioseph*, *ab
+collide (religious names repeat across congregations and centuries: three current IDs are *maria-a-iesu*,
+three *maria-ab-incarnatione*), it is generally shorter (no title or place: *a Sancto Ioseph*, *ab
 Immaculata Conceptione*), and it is less obscure: the surname and baptismal name are what records,
 biographies and Wikidata use. The exception is a religious name so widely used that the
 saint is known by it (mr:0923-pius-de-pietrelcina): that one keeps the ID, and the secular name is
