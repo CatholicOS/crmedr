@@ -2679,6 +2679,17 @@ EDITION_NOTES = {
             "of one: Mélanie is the religious name of Mary Anne Magdalen de Guilhermier."
         ),
     },
+    # Bl. Falco of Palena: all three 2004 editions set Palena in Calabria.
+    "mr:0809-falcus": {
+        edition: (
+            f"Error: \"{printed}\": Palena is in Abruzzo (province of Chieti), not in Calabria. "
+            "Falco, a Basilian monk, came from Taverna in Calabria and lived as a hermit in "
+            "Abruzzo; he died at Palena, where he is buried and venerated as its patron. His "
+            "Calabrian origin probably accounts for the error."
+        )
+        for edition, printed in ((EDITION_LA, "Palénæ in Calábria"), (EDITION_IT, "A Palena in Calabria"),
+                                 (EDITION_EN, "At Palena in Calabria"))
+    },
 }
 
 # The Latin print's entry number where it differs from the CEI's (= the
