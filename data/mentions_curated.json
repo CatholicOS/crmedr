@@ -1233,6 +1233,986 @@
           "name": "Ioanna Jugan",
           "qid": null
         }
+      ],
+      "mr:0904-caletricus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "feb1aa3e",
+          "qid": "Q130272"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 38,
+          "check": "5b213404",
+          "name": "Caletricus",
+          "qid": null
+        }
+      ],
+      "mr:0904-moyses-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 36,
+          "check": "35dc33ff",
+          "name": "Moyses Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0906-zacharias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 38,
+          "check": "207012bb",
+          "name": "Zacharias Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0907-sozon": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 22,
+          "check": "2d5b457d",
+          "qid": "Q656954"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 39,
+          "check": "7f713bf0",
+          "name": "Sozon",
+          "qid": null
+        }
+      ],
+      "mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 45,
+          "check": "417bc496",
+          "qid": "Q10400"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 102,
+          "check": "6bcb8025",
+          "name": "Iosephus Caecilius Rodriguez Gonzalez",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 145,
+          "check": "358c3bac",
+          "name": "Theodemirus Ioachim Hadrianus Sainz Sainz",
+          "qid": null
+        }
+      ],
+      "mr:0910-sebastianus-kimura-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "8d58355b",
+          "qid": "Q38234"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 48,
+          "check": "338cfb57",
+          "name": "Sebastianus Kimura",
+          "qid": "Q16185936"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 85,
+          "check": "e22334df",
+          "name": "Franciscus Morales",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 36,
+          "check": "6c8600e6",
+          "name": "Angelus Orsucci",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 38,
+          "end": 55,
+          "check": "df841ccc",
+          "name": "Alphonsus de Mena",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 57,
+          "end": 96,
+          "check": "7cdbf3a7",
+          "name": "Iosephus a Sancto Hyacintho de Salvanés",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 98,
+          "end": 116,
+          "check": "f7281497",
+          "name": "Hyacinthus Orfanel",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 159,
+          "end": 178,
+          "check": "d71c2662",
+          "name": "Dominicus a Rosario",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 182,
+          "end": 189,
+          "check": "86f4266d",
+          "name": "Alexius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 218,
+          "end": 241,
+          "check": "30b2179c",
+          "name": "Richardus a Sancta Anna",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 245,
+          "end": 260,
+          "check": "e1ec85cb",
+          "name": "Petrus de Abula",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 306,
+          "end": 333,
+          "check": "52be5c91",
+          "name": "Vincentius a Sancto Iosepho",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 363,
+          "end": 378,
+          "check": "a4b92380",
+          "name": "Carolus Spínola",
+          "qid": "Q2266240"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 414,
+          "end": 431,
+          "check": "6e5f49f8",
+          "name": "Gundisalvus Fusai",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 433,
+          "end": 447,
+          "check": "facac15c",
+          "name": "Antonius Kiuni",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 449,
+          "end": 465,
+          "check": "1ad91ee7",
+          "name": "Thomas a Rosario",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 467,
+          "end": 482,
+          "check": "6ecd6730",
+          "name": "Thomas Akahoshi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 484,
+          "end": 496,
+          "check": "dbbc352b",
+          "name": "Petrus Sampo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 498,
+          "end": 512,
+          "check": "abe05775",
+          "name": "Michael Shumpo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 514,
+          "end": 530,
+          "check": "023ff938",
+          "name": "Ludovicus Kawara",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 532,
+          "end": 547,
+          "check": "c9e70a2c",
+          "name": "Ioannes Chugoku",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 579,
+          "end": 593,
+          "check": "2f1b1ba0",
+          "name": "Leo de Satsuma",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 595,
+          "end": 611,
+          "check": "0f1c7ad9",
+          "name": "Lucia de Freitas",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 613,
+          "end": 627,
+          "check": "a2111142",
+          "name": "Antonius Sanga",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 644,
+          "end": 653,
+          "check": "691fb402",
+          "name": "Magdalena",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 665,
+          "end": 682,
+          "check": "3c3049e2",
+          "name": "Antonius Coreanus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 699,
+          "end": 704,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 743,
+          "end": 748,
+          "check": "e61438bc",
+          "name": "Petro",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 750,
+          "end": 765,
+          "check": "eb8b868d",
+          "name": "Paulus Nagaishi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 769,
+          "end": 775,
+          "check": "e013f326",
+          "name": "Thecla",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 803,
+          "end": 808,
+          "check": "e61438bc",
+          "name": "Petro",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 810,
+          "end": 823,
+          "check": "51301aa6",
+          "name": "Paulus Tanaka",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 827,
+          "end": 832,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 844,
+          "end": 860,
+          "check": "d589e9e2",
+          "name": "Dominicus Yamada",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 864,
+          "end": 869,
+          "check": "8df830a8",
+          "name": "Clara",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 881,
+          "end": 899,
+          "check": "d36f8bb4",
+          "name": "Isabella Fernández",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 953,
+          "end": 958,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 3,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 987,
+          "end": 992,
+          "check": "ad7d81ea",
+          "name": "Agnes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1020,
+          "end": 1025,
+          "check": "9ff18ebe",
+          "name": "Maria",
+          "n": 4,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1054,
+          "end": 1068,
+          "check": "2e5a35ea",
+          "name": "Dominica Ogata",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1070,
+          "end": 1083,
+          "check": "f328d48b",
+          "name": "Maria Tanaura",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1085,
+          "end": 1094,
+          "check": "61ef6e23",
+          "name": "Apollonia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1098,
+          "end": 1107,
+          "check": "a72aefec",
+          "name": "Catharina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1116,
+          "end": 1132,
+          "check": "8aeb3407",
+          "name": "Dominicus Nakano",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1163,
+          "end": 1193,
+          "check": "0c0497be",
+          "name": "Bartholomæus Kawano Shichiemon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1195,
+          "end": 1217,
+          "check": "51a6474b",
+          "name": "Damianus Yamichi Tanda",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1233,
+          "end": 1240,
+          "check": "f089eaef",
+          "name": "Michael",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1242,
+          "end": 1257,
+          "check": "56de7439",
+          "name": "Thomas Shichiro",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1259,
+          "end": 1273,
+          "check": "4f816c71",
+          "name": "Rufus Ishimoto",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1275,
+          "end": 1294,
+          "check": "3df31d6c",
+          "name": "Clemens Vom",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1310,
+          "end": 1318,
+          "check": "e0c6277f",
+          "name": "Antonius",
+          "qid": null
+        }
+      ],
+      "mr:0911-protus-et-hyacinthus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 44,
+          "check": "a2fb2e7a",
+          "qid": "Q220"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
+          "end": 80,
+          "check": "615202e6",
+          "name": "Protus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 93,
+          "check": "001baa01",
+          "name": "Hyacinthus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 235,
+          "end": 244,
+          "check": "001baa01",
+          "name": "Hyacinthus",
+          "qid": null
+        }
+      ],
+      "mr:0911-sacerdos": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "17800f17",
+          "qid": "Q90"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
+          "end": 47,
+          "check": "9288bfb8",
+          "name": "Sacerdos",
+          "qid": null
+        }
+      ],
+      "mr:0912-franciscus-choe-kyong-hwan": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 14,
+          "check": "b48c7e4f",
+          "qid": "Q8684"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 49,
+          "check": "5db8ab1f",
+          "name": "Franciscus Choe Kyong Hwan",
+          "qid": null
+        }
+      ],
+      "mr:0913-amatus-broili": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 32,
+          "check": "72e87cf1",
+          "qid": "Q549999"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 56,
+          "check": "1b36f3ab",
+          "name": "Amatus Broili",
+          "qid": null
+        }
+      ],
+      "mr:0913-amatus-vosegos": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 24,
+          "check": "62780a2b",
+          "qid": "Q187843"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 38,
+          "check": "1b36f3ab",
+          "name": "Amatus Vosegos",
+          "qid": null
+        }
+      ],
+      "mr:0916-laureanus-ferrer-cardet-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 50,
+          "check": "aafeb5ee",
+          "qid": "Q1993027"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 105,
+          "check": "ca558624",
+          "name": "Laureanus Ferrer Cardet",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 154,
+          "check": "def54448",
+          "name": "Benedictus Emmanuel Ferrer Jorda",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 158,
+          "end": 192,
+          "check": "1d285454",
+          "name": "Bernardinus Paulus Martinez Robles",
+          "qid": null
+        }
+      ],
+      "mr:0916-martinus-sacerdos": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 43,
+          "check": "9f9c07af",
+          "qid": "Q939186"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 69,
+          "check": "084388bd",
+          "name": "Martinus Sacerdos",
+          "qid": null
+        }
+      ],
+      "mr:0916-rogellus-et-servusdei": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "44f170aa",
+          "qid": "Q5818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 66,
+          "check": "5ff56d39",
+          "name": "Rogellus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 124,
+          "check": "32323286",
+          "name": "Servusdei",
+          "qid": null
+        }
+      ],
+      "mr:0918-ferreolus-lemovici": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "314e3475",
+          "qid": "Q45656"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
+          "end": 38,
+          "check": "6eaa4bf4",
+          "name": "Ferreolus Lemovici",
+          "qid": null
+        }
+      ],
+      "mr:0918-ferreolus-viennensis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 24,
+          "check": "2e63aee5",
+          "qid": "Q26849"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 41,
+          "check": "6eaa4bf4",
+          "name": "Ferreolus Viennensis",
+          "qid": null
+        }
+      ],
+      "mr:0920-dorymedon": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "d9d1b637",
+          "qid": "Q616079"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 39,
+          "check": "0630cbce",
+          "name": "Dorymedon",
+          "qid": null
+        }
+      ],
+      "mr:0921-ionas-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 34,
+          "check": "3db3dd38",
+          "name": "Ionas Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0921-matthaeus-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 46,
+          "check": "f5c2d7e8",
+          "name": "Matthaeus Apostolus",
+          "qid": null
+        }
+      ],
+      "mr:0923-zacharias-et-elisabeth": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 31,
+          "check": "d1c26515",
+          "name": "Zacharias",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 44,
+          "check": "b8ca03be",
+          "name": "Elisabeth",
+          "qid": "Q75141"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 108,
+          "check": "b8ca03be",
+          "name": "Elisabeth",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 231,
+          "end": 240,
+          "check": "76ebaaf2",
+          "name": "Zacharias",
+          "qid": null
+        }
+      ],
+      "mr:0929-ripsime-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 23,
+          "check": "a4d53f2e",
+          "qid": "Q183394"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 43,
+          "check": "10a3b82c",
+          "name": "Ripsime",
+          "qid": null
+        }
       ]
     }
   }
