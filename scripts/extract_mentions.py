@@ -193,8 +193,9 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
     # Every person by their main name first, longer names first, then their other names: a variant
     # never takes the words of a person of that name ("Maximianus seu Maximus" and a Maximus).
     # Longer first by the folded name, so spellings of one name ("Æmilia", "Aemilia") sort together.
+    # Of spellings of one person ("Num Ka", "Nŭm-ka"), the one decided itself first.
     order = [p for p in sorted(persons, key=lambda p: (-len(name_key(p["name"])), name_key(p["name"]) not in decided,
-                                                         p.get("n", 1)))
+                                                         p.get("n", 1), not person_qid(person_key(p))))
              if source(p["where"]) is not None]  # extract_persons.py validates footnote numbers
     placed, later = [], []
     for p in order:

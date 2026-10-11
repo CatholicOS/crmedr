@@ -51,7 +51,7 @@
 | 3 | 15 | `mr:0903-birgitta-a-iesu` | * | IT | dies_natalis |  |  |
 | 3 | 16 | `mr:0903-andreas-abel-alricy-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "after having confessed the faith on the previous day" where the Latin has "post pridiánam cædem" (after the previous day's massacre). |
 | 3 | 17 | `mr:0903-ioannes-baptista-bottex-et-socii` | * | FR | dies_natalis |  |  |
-| 3 | 18 | `mr:0903-ioannes-pak-hu-ja-et-socii` |  | KR | dies_natalis |  |  |
+| 3 | 18 | `mr:0903-ioannes-pak-hu-jae-et-socii` |  | KR | dies_natalis |  |  |
 | 4 | 1 | `mr:0904-moyses-propheta` |  | EG | commemoratio |  |  |
 | 4 | 2 | `mr:0904-marcellus` |  | FR | dies_natalis |  |  |
 | 4 | 3 | `mr:0904-bonifatius-i` |  | IT | depositio |  |  |

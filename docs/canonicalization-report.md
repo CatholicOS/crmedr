@@ -87,6 +87,11 @@ mr:1212-simon-phan-dac-hoa (11., Phan Đắc Hòa).
 extraction to mr:0206-paulus-miki-et-socii — surnames are not latinized unless an
 already well-known Latin form exists (rule 5's example shows the intended form).
 
+**Slug correction (#84)**: the workbook ID mr:0903-ioannes-pak-hu-ja-et-socii is corrected
+to mr:0903-ioannes-pak-hu-jae-et-socii. The print declines only *Ioánnis* and leaves the
+Korean given name *Hu-jae* (박후재) as it is; its final *-ae* was read as a Latin genitive.
+The Latin subject follows the other Korean subjects: Sancti Ioannes Pak Hu Jae et socii.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 

@@ -13,6 +13,11 @@ class NameKeyTest(unittest.TestCase):
         self.assertEqual(pt.name_key("Vincentius"), pt.name_key("Uincentius"))
         self.assertEqual(pt.name_key("Cæcilia"), "caecilia")
 
+    def test_a_hyphen_is_a_space(self):
+        # The subject "Ioannes Pak Hu Jae" is the printed "Ioánnis Pak Hu-jae" (#84).
+        self.assertEqual(pt.name_key("Ioannes Pak Hu-jae"), pt.name_key("Ioannes Pak Hu Jae"))
+        self.assertEqual(pt.name_key("Augustinus Yi Kwang-hŏn"), "augustinus yi kwang hon")
+
 
 class SubjectNamesTest(unittest.TestCase):
     def test_single_and_pair(self):

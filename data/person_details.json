@@ -1129,6 +1129,37 @@
       "es": "Juan de Dukla"
     }
   },
+  "Q59071": {
+    "description": {
+      "en": "Franciscan (friar minor) and reformer",
+      "it": "religioso e sacerdote spagnolo",
+      "fr": "saint chrétien",
+      "es": "santo de la Iglesia Católica"
+    },
+    "born": {
+      "year": 1390,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1456,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "San Pedro Regalado - Santa Maria del Pi - Barcelona 2014.JPG",
+      "author": "José Luiz",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Peter de Regalado",
+      "it": "Pietro Regalado",
+      "fr": "Pierre Regalado",
+      "es": "Pedro Regalado",
+      "pt": "Pedro Regalado"
+    }
+  },
   "Q60619": {
     "description": {
       "en": "German catholic priest (1813-1865)",
@@ -10537,6 +10568,40 @@
       "pt": "Hegésipo"
     }
   },
+  "Q503235": {
+    "description": {
+      "en": "Cistercian abbot (1024–1111)",
+      "it": "abate francese",
+      "fr": "fondateur d'abbayes et saint catholique",
+      "de": "Benediktiner-Abt, Ordensreformer und Mitbegründer des Zisterzienserordens",
+      "es": "uno de los fundadores de la Orden del Císter en Francia",
+      "pt": "Santo francês"
+    },
+    "born": {
+      "year": 1027,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 1111,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Robert of Molesme.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Robert of Molesme",
+      "it": "Roberto di Molesme",
+      "fr": "Robert de Molesme",
+      "de": "Robert von Molesme",
+      "es": "Roberto de Molesmes",
+      "pt": "Roberto de Molesme"
+    }
+  },
   "Q504518": {
     "description": {
       "en": "7th-century Anglo-Saxon bishop, monk, hermit and saint (635–687)",
@@ -10632,7 +10697,7 @@
   },
   "Q506645": {
     "description": {
-      "en": "Bishop of Rochester; Archbishop of York; Saint",
+      "en": "Bishop of Rochester; Archbishop of York; Christian saint",
       "it": "vescovo e santo inglese",
       "fr": "évêque d'York, puis de Rochester",
       "de": "Bischof von York",
@@ -11403,7 +11468,7 @@
   "Q559236": {
     "description": {
       "en": "Catholic saint, bishop and missionary (1831–1881)",
-      "it": "missionario e vescovo cattolico italiano (1831-1881)",
+      "it": "missionario, vescovo e santo cattolico italiano (1831-1881)",
       "fr": "saint, évêque et missionnaire catholique",
       "de": "katholischer Priester und Ordensgründer (1831-1881)"
     },
@@ -13186,6 +13251,38 @@
       "de": "Aldhelm von Sherborne",
       "es": "Aldhelmo de Sherborne",
       "pt": "Adelmo"
+    }
+  },
+  "Q712214": {
+    "description": {
+      "en": "Benedictine monk and reformer",
+      "it": "monaco visigoto",
+      "de": "Klostergründer",
+      "es": "monje benedictino franco (750-821)"
+    },
+    "born": {
+      "year": 750,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 821,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Benedict of Aniane, Sant-Guilhem-1-Benet (cropped).jpg",
+      "author": "Baldiri",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "wikipedia": {
+      "en": "Benedict of Aniane",
+      "it": "Benedetto d'Aniane",
+      "fr": "Benoît d'Aniane",
+      "de": "Benedikt von Aniane",
+      "es": "Benito de Aniane",
+      "pt": "Bento de Aniane"
     }
   },
   "Q713402": {
@@ -19519,6 +19616,39 @@
       "fr": "Louis Beaulieu"
     }
   },
+  "Q3292109": {
+    "description": {
+      "en": "Canadian Catholic religious nun, master of novices and saint (1840-1912)",
+      "it": "religiosa canadese",
+      "fr": "religieuse, éducatrice, fondatrice d'ordre et sainte catholique",
+      "de": "kanadische Novizenmeisterin",
+      "es": "religiosa canadiense",
+      "pt": "freira católica franco-canadense"
+    },
+    "born": {
+      "year": 1840,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1912,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Marie-Léonie Paradis, 1872.jpg",
+      "author": "Centre Marie-Léonie Paradis",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Marie-Léonie Paradis",
+      "it": "Marie-Léonie Paradis",
+      "fr": "Marie-Léonie Paradis",
+      "es": "Marie-Léonie Paradis",
+      "pt": "Marie-Léonie Paradis"
+    }
+  },
   "Q3293239": {
     "description": {
       "en": "Japanese martyr",
@@ -21129,7 +21259,7 @@
   },
   "Q4225032": {
     "description": {
-      "en": "koran martyr, catholic saint (1798–1839)",
+      "en": "Korean martyr, catholic saint (1798–1839)",
       "fr": "martyre catholique coréenne, sainte"
     },
     "born": {
@@ -22661,7 +22791,7 @@
   },
   "Q9141897": {
     "description": {
-      "en": "koran martyr, catholic saint (1790–1839)",
+      "en": "Korean martyr, catholic saint (1790–1839)",
       "fr": "martyre coréenne, sainte catholique"
     },
     "born": {
@@ -22681,7 +22811,7 @@
   },
   "Q9141916": {
     "description": {
-      "en": "koran martyr, catholic saint (1819–1840)",
+      "en": "Korean martyr, catholic saint (1819–1840)",
       "fr": "martyre en Corée, sainte"
     },
     "born": {
@@ -22722,7 +22852,7 @@
   },
   "Q9141962": {
     "description": {
-      "en": "koran martyr, catholic saint (1824–1840)",
+      "en": "Korean martyr, catholic saint (1824–1840)",
       "fr": "laïque catholique, martyre coréenne, sainte"
     },
     "born": {
@@ -22762,7 +22892,7 @@
   },
   "Q9146987": {
     "description": {
-      "en": "koran martyr, catholic saint"
+      "en": "Korean martyr, catholic saint"
     },
     "born": {
       "year": 1845,
@@ -22779,7 +22909,7 @@
   },
   "Q9155300": {
     "description": {
-      "en": "koran martyr, catholic saint"
+      "en": "Korean martyr, catholic saint"
     },
     "born": {
       "year": 1789,
@@ -22830,9 +22960,26 @@
       "fr": "Barbara Kim"
     }
   },
+  "Q9165465": {
+    "description": {
+      "en": "Korean martyr, catholic saint"
+    },
+    "born": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1839,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q9165663": {
     "description": {
-      "en": "koran martyr, catholic saint",
+      "en": "Korean martyr, catholic saint",
       "fr": "martyre coréenne, sainte"
     },
     "born": {
@@ -23275,7 +23422,7 @@
   },
   "Q11684592": {
     "description": {
-      "en": "koran martyr, catholic saint",
+      "en": "Korean martyr, catholic saint",
       "fr": "chrétienne coréenne, martyre, sainte"
     },
     "born": {

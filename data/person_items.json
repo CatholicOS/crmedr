@@ -252,6 +252,12 @@
         "status": "auto"
       }
     },
+    "mr:0121-ioannes-yi-yun-il": {
+      "Ioannes Yi Yun Il": {
+        "wikidata": "Q6265151",
+        "status": "auto"
+      }
+    },
     "mr:0122-barnardus": {
       "Barnardus": {
         "wikidata": "Q1284483",
@@ -451,12 +457,12 @@
         "wikidata": "Q11684592",
         "status": "auto"
       },
-      "Augustinus Pak Chŏng-wŏn": {
-        "wikidata": "Q4342305",
-        "status": "auto"
-      },
       "Petrus Hong Pyŏng-ju": {
         "wikidata": "Q4499736",
+        "status": "auto"
+      },
+      "Augustinus Pak Chong Won": {
+        "wikidata": "Q4342305",
         "status": "auto"
       }
     },
@@ -489,7 +495,7 @@
         "wikidata": "Q4260706",
         "status": "auto"
       },
-      "Paulus Hong Yŏng-ju": {
+      "Paulus Hong Yong Ju": {
         "wikidata": "Q580681",
         "status": "auto"
       }
@@ -812,6 +818,12 @@
         "status": "auto"
       }
     },
+    "mr:0217-petrus-yu-chong-nyul": {
+      "Petrus Yu Chong Nyul": {
+        "wikidata": "Q11818271",
+        "status": "auto"
+      }
+    },
     "mr:0217-theodorus-tiro": {
       "Theodorus Tiro": {
         "wikidata": "Q37599",
@@ -1099,6 +1111,12 @@
     "mr:0310-simplicius": {
       "Simplicius": {
         "wikidata": "Q168741",
+        "status": "auto"
+      }
+    },
+    "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong": {
+      "Alexius U Se Yong": {
+        "wikidata": "Q9146987",
         "status": "auto"
       }
     },
@@ -1778,6 +1796,12 @@
         "status": "auto"
       }
     },
+    "mr:0429-antonius-kim-song-u": {
+      "Antonius Kim Song U": {
+        "wikidata": "Q11686417",
+        "status": "auto"
+      }
+    },
     "mr:0429-catharina-senensis": {
       "Catharina Senensis": {
         "wikidata": "Q229190",
@@ -1865,6 +1889,12 @@
     "mr:0503-ansfridus": {
       "Ansfridus": {
         "wikidata": "Q569687",
+        "status": "auto"
+      }
+    },
+    "mr:0503-maria-leonia-paradis": {
+      "Maria Leonia Paradis": {
+        "wikidata": "Q3292109",
         "status": "auto"
       }
     },
@@ -2088,6 +2118,12 @@
         "status": "auto"
       }
     },
+    "mr:0520-protasius-chong-kuk-bo": {
+      "Protasius Chong Kuk Bo": {
+        "wikidata": "Q11827906",
+        "status": "auto"
+      }
+    },
     "mr:0521-ioannes-mopinot": {
       "Ioannes Mopinot": {
         "wikidata": "Q112612929",
@@ -2159,6 +2195,12 @@
     "mr:0526-ioannes-doan-trinh-hoan-et-matthaeus-nguyen-van-phuong": {
       "Ioannes Doan Trinh Hoan": {
         "wikidata": "Q11719619",
+        "status": "auto"
+      }
+    },
+    "mr:0526-iosephus-chang-song-jib": {
+      "Iosephus Chang Song Jib": {
+        "wikidata": "Q11268815",
         "status": "auto"
       }
     },
@@ -3035,12 +3077,12 @@
       }
     },
     "mr:0720-magdalena-yi-yong-hui-et-socii": {
-      "Magdalena Yi Yŏng-hŭi": {
-        "wikidata": "Q11766122",
-        "status": "auto"
-      },
       "Martha Kim Sŏng-im": {
         "wikidata": "Q11770581",
+        "status": "auto"
+      },
+      "Magdalena Yi Yong Hui": {
+        "wikidata": "Q11766122",
         "status": "auto"
       }
     },
@@ -3798,7 +3840,7 @@
         "status": "auto"
       }
     },
-    "mr:0903-ioannes-pak-hu-ja-et-socii": {
+    "mr:0903-ioannes-pak-hu-jae-et-socii": {
       "Agnes Kim Hyo-ju": {
         "wikidata": "Q9142291",
         "status": "auto"
@@ -3807,12 +3849,16 @@
         "wikidata": "Q9165663",
         "status": "auto"
       },
-      "Ioannes Pak Hu-jae": {
+      "Maria Yi Yŏn-hŭi": {
+        "wikidata": "Q11769243",
+        "status": "auto"
+      },
+      "Ioannes Pak Hu Jae": {
         "wikidata": "Q11718611",
         "status": "auto"
       },
-      "Maria Yi Yŏn-hŭi": {
-        "wikidata": "Q11769243",
+      "Barbara Kwŏn-hŭi": {
+        "wikidata": "Q9165465",
         "status": "auto"
       }
     },
@@ -4272,6 +4318,10 @@
       "Susanna U Sur-im": {
         "wikidata": "Q9392173",
         "status": "auto"
+      },
+      "Barbara Kwŏn-hŭi": {
+        "wikidata": "Q9165465",
+        "status": "auto"
       }
     },
     "mr:0920-iosephus-maria-de-yermo-y-parres": {
@@ -4395,7 +4445,7 @@
         "wikidata": "Q11815721",
         "status": "auto"
       },
-      "Sebastianus Nam I-gwan": {
+      "Sebastianus Nam I Gwan": {
         "wikidata": "Q9334767",
         "status": "auto"
       }
@@ -5271,7 +5321,7 @@
       }
     },
     "mr:1124-petrus-dumoulin-borie-et-socii": {
-      "Petrus Dumoulin-Borie": {
+      "Petrus Dumoulin Borie": {
         "wikidata": "Q568014",
         "status": "auto"
       }
@@ -5535,10 +5585,6 @@
       }
     },
     "mr:1213-petrus-cho-hwa-so-et-socii": {
-      "Petrus Cho Hwa-sŏ": {
-        "wikidata": "Q4516988",
-        "status": "auto"
-      },
       "Petrus Chŏng Won-ji": {
         "wikidata": "Q11817380",
         "status": "auto"
@@ -5549,6 +5595,10 @@
       },
       "Petrus Yi Myŏng-sŏ": {
         "wikidata": "Q11818270",
+        "status": "auto"
+      },
+      "Petrus Cho Hwa So": {
+        "wikidata": "Q4516988",
         "status": "auto"
       }
     },
@@ -5657,6 +5707,12 @@
     "mr:1223-ioannes-stone": {
       "Ioannes Stone": {
         "wikidata": "Q2072791",
+        "status": "auto"
+      }
+    },
+    "mr:1223-iosephus-cho-yun-ho": {
+      "Iosephus Cho Yun Ho": {
+        "wikidata": "Q4516993",
         "status": "auto"
       }
     },
