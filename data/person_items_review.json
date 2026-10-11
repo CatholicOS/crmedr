@@ -473093,6 +473093,47 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo|Herminia Martinez Amigo",
+      "eulogy": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo",
+      "day": "09-27",
+      "typology": "dies_natalis",
+      "subject": "Beatae Francisca Xaveria Fenollosa Alcayna et Herminia Martinez Amigo",
+      "name": "Herminia Martinez Amigo",
+      "where": "text",
+      "companions": [
+        "Francisca Xaveria Fenollosa Alcayna"
+      ],
+      "failed": [
+        "death: the best candidate (Q9291663) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q9291663",
+          "label": "Herminia Martínez Amigó",
+          "description": "",
+          "names": [
+            "Herminia Martinez Amigo",
+            "Herminia Martínez Amigó"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1887-07-31",
+          "died": "1936-09-26",
+          "feast": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0927-ioannes-baptista-laborier-du-vivier|Ioannes Baptista Laborier Du Vivier",
       "eulogy": "mr:0927-ioannes-baptista-laborier-du-vivier",
       "day": "09-27",
