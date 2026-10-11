@@ -483,6 +483,17 @@ class ReviewOpsTest(unittest.TestCase):
         self.assertNotIn("edited", op)
         self.assertNotIn("name", op)
 
+    def test_a_persons_add_shows_enough_text_after_it_for_the_whole_name(self):
+        # Found in part ("Ioséphi"): the card must show the rest of the name to select it (#91 review).
+        text = ("Almériæ ad litus Vandalíciæ Hispániæ regiónis, beatórum Ioséphi Cæcílii (Bonifátii) "
+                "Rodríguez González, Theodemíri Ióachim, mártyrum.")
+        s = text.index("Ioséphi")
+        review = {"mr:x": [{"op": "add_mention", "kind": "person", "where": "text", "start": s, "end": s + 7,
+                            "form": "Ioséphi", "name": "Iosephus Caecilius Bonifatius Rodriguez Gonzalez",
+                            "reasoning": "not found"}]}
+        op = em.review_ops(ED, review, lambda e, m, w: text)[0]
+        self.assertIn("González", op["context"])
+
     def test_the_context_is_words_around_the_span(self):
         text = "Alpha beta gamma delta " * 6 + "Nemo" + " epsilon zeta eta theta" * 6
         s = text.index("Nemo")
