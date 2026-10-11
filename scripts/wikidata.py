@@ -22,6 +22,9 @@ from gazetteer_text import convention, fold
 
 API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
+# Declared in every query: the Blazegraph endpoint predefines them, QLever's (WDQS v2) does not.
+PREFIXES = ("PREFIX wd: <http://www.wikidata.org/entity/>\n"
+            "PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n")
 USER_AGENT = "crmedr-gazetteer/1.0 (https://github.com/CatholicOS/crmedr)"
 # human settlement, administrative territorial entity, monastery, church building,
 # archaeological site, island, mountain, region, historical region, historical
@@ -231,7 +234,7 @@ class Wikidata:
         if unknown:
             roots = " ".join("wd:" + r for r in PLACE_ROOTS)
             values = " ".join("wd:" + c + " " for c in unknown)
-            query = (f"SELECT DISTINCT ?c WHERE {{ VALUES ?c {{ {values}}} "
+            query = PREFIXES + (f"SELECT DISTINCT ?c WHERE {{ VALUES ?c {{ {values}}} "
                      f"?c wdt:P279* ?r . VALUES ?r {{ {roots} }} }}")
             data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"}))
             found = {b["c"]["value"].rsplit("/", 1)[1] for b in data["results"]["bindings"]}
@@ -243,7 +246,7 @@ class Wikidata:
         # One query for every country code, instead of fetching each country's
         # (very large) entity per search.
         if self._iso is None:
-            query = "SELECT ?c ?iso WHERE { ?c wdt:P297 ?iso }"
+            query = PREFIXES + "SELECT ?c ?iso WHERE { ?c wdt:P297 ?iso }"
             data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": query, "format": "json"}))
             self._iso = dict(EXTRA_COUNTRY_ISO)
             for b in data["results"]["bindings"]:

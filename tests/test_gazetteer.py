@@ -209,6 +209,23 @@ class FakeFetch:
         return {"entities": {i: self.entities.get(i, {"id": i, "missing": ""}) for i in ids}}
 
 
+class SparqlPrefixesTest(unittest.TestCase):
+    def test_every_query_declares_its_prefixes(self):
+        # WDQS v2 (QLever) predefines no prefix: a query must declare wd: and wdt: itself.
+        import re
+        from urllib.parse import parse_qs, urlparse
+        with tempfile.TemporaryDirectory() as tmp:
+            fetch = FakeFetch({}, {})
+            client = wd.Wikidata(Path(tmp), fetch=fetch)
+            client._place_types(["Q486972"])
+            client._country_iso()
+        queries = [parse_qs(urlparse(u).query)["query"][0] for u in fetch.calls if "query=" in u]
+        self.assertEqual(len(queries), 2)
+        for q in queries:
+            for prefix in set(re.findall(r"\b(wdt?):[A-Z]", q)):
+                self.assertIn(f"PREFIX {prefix}: <", q)
+
+
 class ClientTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
