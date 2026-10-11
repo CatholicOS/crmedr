@@ -28216,7 +28216,10 @@
       ],
       "mr:0921-matthaeus-apostolus-et-evangelista": [
         {
-          "name": "Matthaeus Apostolus",
+          "name": "Matthaeus Apostolus et Evangelista",
+          "also": [
+            "Levi"
+          ],
           "where": "text"
         }
       ],
@@ -37685,7 +37688,7 @@
       ],
       "mr:1227-ioannes-apostolus-et-evangelista": [
         {
-          "name": "Ioannes Apostolus",
+          "name": "Ioannes Apostolus et Evangelista",
           "where": "text"
         }
       ],

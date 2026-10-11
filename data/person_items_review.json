@@ -464170,18 +464170,207 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0921-matthaeus-apostolus-et-evangelista|Matthaeus Apostolus",
+      "id": "mr:0921-matthaeus-apostolus-et-evangelista|Matthaeus Apostolus et Evangelista",
       "eulogy": "mr:0921-matthaeus-apostolus-et-evangelista",
       "day": "09-21",
       "typology": "dies_natalis",
       "subject": "Sanctus Matthaeus Apostolus et Evangelista",
-      "name": "Matthaeus Apostolus",
+      "name": "Matthaeus Apostolus et Evangelista",
+      "also": [
+        "Levi"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "status: the best candidate (Q16965395) fails it",
+        "death: the best candidate (Q16965395) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q16965395",
+          "label": "Claude Lévi",
+          "description": "French biologist and zoologist",
+          "names": [
+            "C. Levi",
+            "C. Lévi",
+            "Claude Levi",
+            "Claude Lévi",
+            "Lévi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1922-12-20",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3133516",
+          "label": "Herbert Walter Levi",
+          "description": "American arachnologist (1921–2014)",
+          "names": [
+            "H. W. Levi",
+            "Herb Levi",
+            "Herb W. Levi",
+            "Herbert W. Levi",
+            "Herbert Walter Levi",
+            "Levi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1921-01-02",
+          "died": "2014-11-03",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q6535499",
+          "label": "Levi Roots",
+          "description": "musician",
+          "names": [
+            "Levi Roots",
+            "levi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1958-06-24",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1073667",
+          "label": "Laevi",
+          "description": "ancient Ligurian people",
+          "names": [
+            "Laevi",
+            "Levi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1111810",
+          "label": "Levi",
+          "description": "male given name",
+          "names": [
+            "Levi",
+            "Levi (first name)",
+            "Levi (given name)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16458527",
+          "label": "Levi",
+          "description": "family name",
+          "names": [
+            "Levi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16707860",
+          "label": "Tribe of Levi",
+          "description": "group of people described in the Bible",
+          "names": [
+            "Levi",
+            "Levi (tribus)",
+            "Levites",
+            "Tribe of Levi",
+            "tribù di Levi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q18443521",
+          "label": "Levi",
+          "description": "human settlement in Italy",
+          "names": [
+            "Levi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q191123",
+          "label": "Levi Eshkol",
+          "description": "Israeli politician, a founder of the Israeli Labor Party and Prime Minister (1895-1969)",
+          "names": [
+            "Levi Eschol",
+            "Levi Eshkol",
+            "Levi Shkolnik"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1895-10-25",
+          "died": "1969-02-26",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q215512",
+          "label": "Levi",
+          "description": "in Genesis, the third son of Jacob and a brother of Joseph",
+          "names": [
+            "Leui",
+            "Levi",
+            "Levy"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": "-156",
+          "died": "-142",
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null
     },
@@ -628637,12 +628826,12 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1227-ioannes-apostolus-et-evangelista|Ioannes Apostolus",
+      "id": "mr:1227-ioannes-apostolus-et-evangelista|Ioannes Apostolus et Evangelista",
       "eulogy": "mr:1227-ioannes-apostolus-et-evangelista",
       "day": "12-27",
       "typology": "dies_natalis",
       "subject": "Sanctus Ioannes Apostolus et Evangelista",
-      "name": "Ioannes Apostolus",
+      "name": "Ioannes Apostolus et Evangelista",
       "where": "text",
       "companions": [],
       "failed": [

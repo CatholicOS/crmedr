@@ -2153,7 +2153,16 @@
           "start": 14,
           "end": 46,
           "check": "f5c2d7e8",
-          "name": "Matthaeus Apostolus",
+          "name": "Matthaeus Apostolus et Evangelista",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
+          "end": 57,
+          "check": "8b49a459",
+          "name": "Matthaeus Apostolus et Evangelista",
           "qid": null
         }
       ],
