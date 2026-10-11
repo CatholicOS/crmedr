@@ -41,10 +41,11 @@ class SubjectNamesTest(unittest.TestCase):
         self.assertEqual(pt.subject_names("mr:0309-quadraginta-milites-sebastes",
                                           "Sancti Quadraginta Milites Sebastes"), [])
 
-    def test_the_virgin_is_maria_and_other_marias_are_themselves(self):
-        self.assertEqual(pt.subject_names("mr:0211-maria-de-lourdes", "Beata Maria de Lourdes"), ["Maria"])
+    def test_the_virgin_is_named_by_the_celebration_and_other_marias_are_themselves(self):
+        self.assertEqual(pt.subject_names("mr:0211-maria-de-lourdes", "Beata Maria Virgo de Lourdes"),
+                         ["Beata Maria Virgo de Lourdes"])
         self.assertEqual(pt.subject_names("mr:0815-assumptio-beatae-mariae-virginis",
-                                          "Assumptio Beatae Mariae Virginis"), ["Maria"])
+                                          "Assumptio beatae Mariae Virginis"), ["Assumptio beatae Mariae Virginis"])
         self.assertEqual(pt.subject_names("mr:0909-maria-de-la-cabeza", "Beata Maria de La Cabeza"),
                          ["Maria de La Cabeza"])
         self.assertEqual(pt.subject_names("mr:0820-maria-de-mattias", "Sancta Maria de Mattias"),

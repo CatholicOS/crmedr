@@ -48,6 +48,25 @@ LA_SUBJECT_OVERRIDES = {
     "mr:0709-maria-a-iesu-crucifixo": "Beata Maria a Iesu Crucifixo Petkovic",
 }
 
+# The celebrations of the Blessed Virgin Mary, titled as printed ("Beátæ Maríæ Vírginis de Lourdes",
+# "Festum Visitatiónis beátæ Maríæ Vírginis"), not from the slug.
+LA_MARIAN_SUBJECTS = {
+    "mr:0101-maria-dei-genetrix": "Sancta Maria Dei Genetrix",
+    "mr:0211-maria-de-lourdes": "Beata Maria Virgo de Lourdes",
+    "mr:0513-maria-de-fatima": "Beata Maria Virgo de Fatima",
+    "mr:0531-visitatio-beatae-mariae-virginis": "Visitatio beatae Mariae Virginis",
+    "mr:0716-maria-de-monte-carmelo": "Beata Maria Virgo de Monte Carmelo",
+    "mr:0815-assumptio-beatae-mariae-virginis": "Assumptio beatae Mariae Virginis",
+    "mr:0822-maria-regina": "Beata Maria Virgo Regina",
+    "mr:0908-nativitas-beatae-mariae-virginis": "Nativitas beatae Mariae Virginis",
+    "mr:0912-nomen-mariae": "Sanctissimum Nomen beatae Virginis Mariae",
+    "mr:0915-maria-perdolens": "Beata Maria Virgo Perdolens",
+    "mr:1007-maria-de-rosario": "Beata Maria Virgo de Rosario",
+    "mr:1121-praesentatio-beatae-mariae-virginis": "Praesentatio beatae Mariae Virginis",
+    "mr:1208-conceptio-immaculata-beatae-mariae-virginis": "Conceptio Immaculata beatae Mariae Virginis",
+    "mr:1212-maria-de-guadalupe": "Beata Maria Virgo de Guadalupe",
+}
+
 ROMAN = {'i', 'ii', 'iii', 'iv', 'v', 'vi', 'vii', 'viii', 'ix', 'x', 'xi', 'xii', 'xiii', 'xxiii'}
 FEASTS = {'nativitas', 'epiphania', 'annuntiatio', 'praesentatio', 'visitatio', 'assumptio',
           'exaltatio', 'dedicatio', 'conversio', 'cathedra', 'transfiguratio', 'conceptio',
@@ -353,7 +372,7 @@ def main():
             tex['la'][mp['id']] = tex['la'][mp['id']].replace(mp['printed'], mp['intended'], 1)
     out = {'la': {}, 'it': {}, 'en': {}}
     for e in current:
-        out['la'][e['id']] = LA_SUBJECT_OVERRIDES.get(e['id']) or la_subject(e['id'], tex['la'].get(e['id'], ''))
+        out['la'][e['id']] = LA_SUBJECT_OVERRIDES.get(e['id']) or LA_MARIAN_SUBJECTS.get(e['id']) or la_subject(e['id'], tex['la'].get(e['id'], ''))
         la_text = tex['la'].get(e['id'], '')
         s = vern_subject(e['id'], tex['en'].get(e['id'], ''), EN_M, la_text)
         if s:
