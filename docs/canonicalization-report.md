@@ -92,6 +92,14 @@ to mr:0903-ioannes-pak-hu-jae-et-socii. The print declines only *Ioánnis* and l
 Korean given name *Hu-jae* (박후재) as it is; its final *-ae* was read as a Latin genitive.
 The Latin subject follows the other Korean subjects: Sancti Ioannes Pak Hu Jae et socii.
 
+**Old Testament titles**: as the prophets keep `-propheta`, the apostles `-apostolus` and
+mr:1229-david-rex-et-propheta its titles, four Old Testament figures keep the title the 2004
+Latin gives them: mr:1009-abraham-patriarcha (*patriárchæ et ómnium credéntium patris*; the
+only Old Testament patriarch in the 1630, 1749, 1914 and 2004 editions), mr:0926-gedeon-iudex
+(*qui iudex fuit in Israel*), mr:0826-melchisedech-rex-et-sacerdos (*regis Salem et sacerdótis
+Dei altíssimi*) and mr:0701-aaron-sacerdos (*sacérdos Véteris Testaménti*). Their Latin subjects
+carry the title (Sanctus Abraham Patriarcha); the person is named without it (Abraham).
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 

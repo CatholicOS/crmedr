@@ -109,7 +109,7 @@
 | 8 | 7 | `mr:1008-ioannes-adams-et-socii` | * | GB | dies_natalis |  |  |
 | 9 | (1) | `mr:1009-dionysius-et-socii` |  | FR | dies_natalis |  |  |
 | 9 | (2) | `mr:1009-ioannes-leonardus` |  | IT | dies_natalis | same as `mr:1010-ioannes-leonardus` |  |
-| 9 | 3 | `mr:1009-abraham` |  | IQ | commemoratio |  |  |
+| 9 | 3 | `mr:1009-abraham-patriarcha` |  | IQ | commemoratio |  |  |
 | 9 | 4 | `mr:1009-diodorus-et-socii` |  | SY | dies_natalis | same as `mr:0911-diodorus-et-socii` |  |
 | 9 | 5 | `mr:1009-domninus-iuliam` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:1009-publia` |  | TR | commemoratio |  |  |

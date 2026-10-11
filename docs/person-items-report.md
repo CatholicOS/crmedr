@@ -187,7 +187,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:1005-froilanus|Froilanus: Q3393948
 - mr:1006-magnus|Magnus: Q566085
 - mr:1008-reparata|Reparata: Q451820
-- mr:1009-abraham|Abraham: Q1296747
+- mr:1009-abraham-patriarcha|Abraham: Q1296747
 - mr:1010-pinytus|Pinytus: Q937426
 - mr:1011-nicasius-et-socii|Nicasius: Q3339549
 - mr:1013-romulus|Romulus: Q1114706
