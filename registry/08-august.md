@@ -121,7 +121,7 @@
 | 9 | 3 | `mr:0809-nathaeus` | * | IE | dies_natalis |  |  |
 | 9 | 4 | `mr:0809-fedliminus` | * | IE | dies_natalis |  |  |
 | 9 | 5 | `mr:0809-martyres-constantinopolis` |  | TR | commemoratio |  |  |
-| 9 | 6 | `mr:0809-falcus` | * | IT | dies_natalis |  |  |
+| 9 | 6 | `mr:0809-falcus` | * | IT | dies_natalis |  | 2004 Latin: Error: "Palénæ in Calábria": Palena is in Abruzzo (province of Chieti), not in Calabria. Falco, a Basilian monk, came from Taverna in Calabria and lived as a hermit in Abruzzo; he died at Palena, where he is buried and venerated as its patron. His Calabrian origin probably accounts for the error. 2004 Italian: Error: "A Palena in Calabria": Palena is in Abruzzo (province of Chieti), not in Calabria. Falco, a Basilian monk, came from Taverna in Calabria and lived as a hermit in Abruzzo; he died at Palena, where he is buried and venerated as its patron. His Calabrian origin probably accounts for the error. 2004 English: Error: "At Palena in Calabria": Palena is in Abruzzo (province of Chieti), not in Calabria. Falco, a Basilian monk, came from Taverna in Calabria and lived as a hermit in Abruzzo; he died at Palena, where he is buried and venerated as its patron. His Calabrian origin probably accounts for the error. |
 | 9 | 7 | `mr:0809-ioannes-de-salerno` | * | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0809-ioannes-de-firmo` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:0809-richardus-bere` | * | GB | dies_natalis |  |  |
