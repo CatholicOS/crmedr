@@ -231,6 +231,9 @@ def _paren_ok(printed):
 # or not right after the name at all ("Gedeónis, ex tribu Manásse, qui iudex fuit").
 TITLES = {fold_map(t)[0] for t in ("apostolus", "evangelista", "propheta", "patriarcha", "rex", "sacerdos", "iudex")}
 TITLE_FORMS = {"rex": "(?:rex|regis|regi|regem|rege)"}
+# Names whose last word is a title word but a surname ("Martíni, cognoménto Sacerdótis"): never cut
+# to the name alone, so a bare "Martíni" is not taken for him.
+SURNAME_TITLES = {fold_map(n)[0] for n in ("Martinus Sacerdos",)}
 
 
 def _titles(words):
@@ -254,7 +257,7 @@ def name_patterns(name):
     out = [("verbatim", r"\b" + SEP.join(map(re.escape, words)) + r"\b"),
            ("stem", r"\b" + SEP.join(stems)),
            ("gap", r"\b" + WIDE_GAP.join(stems))]
-    base, titles = _titles(words)
+    base, titles = _titles(words) if " ".join(words) not in SURNAME_TITLES else ([], [])
     if titles:
         named = SEP.join(_word_pattern(w, last=i == len(base) - 1) for i, w in enumerate(base))
         titled = r"\s+et\s+".join(TITLE_FORMS.get(t) or _forms(t) for t in titles)

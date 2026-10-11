@@ -127,6 +127,11 @@ class FindPersonTest(unittest.TestCase):
         text = "Lugdúni, sancti Sacerdótis, epíscopi."
         self.assertEqual(span_text(text, mt.find_person(text, "Sacerdos")), "Sacerdótis")
 
+    def test_a_surname_that_is_a_title_word_is_not_dropped(self):
+        # Martinus, cognomento Sacerdos: "Martíni" alone is not him.
+        self.assertIsNone(mt.find_person("Romæ, sancti Martíni, epíscopi.", "Martinus Sacerdos"))
+        self.assertEqual([how for how, _ in mt.name_patterns("Martinus Sacerdos")], ["verbatim", "stem", "gap"])
+
     def test_only_one_gap(self):
         self.assertIsNone(mt.find_person("Romæ, beáti Petri (Ioánnis) Magni (Pauli) Nemínis.", "Petrus Magnus Nemo"))
 
