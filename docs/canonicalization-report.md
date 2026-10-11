@@ -16,6 +16,9 @@ Rules applied, in order:
 1. Personal names extracted after the first sanctity marker (sancti/beatae/sanctorum...);
    genitive converted to nominative by declension rules + a curated irregular map.
 2. Religious-name titles after a/de remain uninflected (teresia-a-iesu, ignatius-de-loyola).
+   A consecrated person printed with a secular name in parentheses is named by that secular name
+   and the surname, unless the religious name is the one the saint is known by (see "Secular
+   name first", #116).
 3. Papal ordinals rendered as roman numerals (pius-x, clemens-i); non-papal regnal
    ordinals remain Latin adjectives (ludovicus-nonus).
 4. Cognomento epithets appended (petrus-chrysologus, albertus-magnus).
@@ -1041,6 +1044,19 @@ the given name and surname (mr:0730-leopoldus-mandic), never a mix of the two. W
 used, no place is needed unless ambiguity remains. Surnames that contain *de*, *la* or *y* stay
 whole (Galvão de França, Jarrige de la Morélie). 153 current IDs are renamed after a reviewed table
 (85 candidates already used one form and keep theirs); their Latin subjects follow.
+
+**Secular name first (October 2026, #116)**: the 2004 Latin often prints a consecrated person
+with both names, the secular (baptismal) one in parentheses in the middle: *sancti Raphaélis a
+Sancto Ioseph (Ioséphi) Kalinowski*. The ID is minted from the **secular name and the surname**
+(mr:1115-raphael-kalinowski becomes mr:1115-ioseph-kalinowski), and the religious name, Raphael a
+Sancto Ioseph Kalinowski, is kept as an alternative form of the person
+(`data/persons_variants_curated.json`). The exception is a religious name so widely used that the
+saint is known by it (mr:0923-pius-de-pietrelcina): that one keeps the ID, and the secular name is
+the alternative form. Either way the ID uses one form, never a mix (`raphael-kalinowski` mixes the
+religious given name with the secular surname). This refines the rule above, which allowed either
+form. A parenthesized name that is not a secular name, such as the alternative reading of a
+Vietnamese or Korean name (*Phạm Trọng (Án) Khảm*), is not concerned. 198 current IDs are under
+review (#116).
 
 ## Country-code corrections (September 2026)
 

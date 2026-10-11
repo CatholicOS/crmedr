@@ -16,7 +16,7 @@ All IDs are **drafts pending committee review**. The `mr:` namespace prefix and 
 
 ## The identifier scheme
 
-`mr:MMDD-slug` — `MMDD` anchors the eulogy's placement in the editio altera 2004; `slug` is the Latin nominative lemma of the eulogy's **first-named subject**, ASCII-folded, lowercase, honorific-free (no *sanctus*/*beatus*). Multi-subject eulogies: `-et-<second>` for a pair, `-et-socii` for three or more; only genuinely anonymous groups take a `[number-]class-<place in the genitive>` slug (`mr:0309-quadraginta-milites-sebastes`), or `martyres-` plus the name of a group known by one (`mr:0717-martyres-scillitani`). The full derivation rules, feast overrides, leap-day identity decisions and collision resolutions are in `docs/canonicalization-report.md`.
+`mr:MMDD-slug` — `MMDD` anchors the eulogy's placement in the editio altera 2004; `slug` is the Latin nominative lemma of the eulogy's **first-named subject**, ASCII-folded, lowercase, honorific-free (no *sanctus*/*beatus*). A consecrated person printed with a secular name in parentheses (*Raphaélis a Sancto Ioseph (Ioséphi) Kalinowski*) is named by the secular name and surname (`mr:1115-ioseph-kalinowski`), the religious name kept as an alternative form, unless the religious name is the one the saint is known by. Multi-subject eulogies: `-et-<second>` for a pair, `-et-socii` for three or more; only genuinely anonymous groups take a `[number-]class-<place in the genitive>` slug (`mr:0309-quadraginta-milites-sebastes`), or `martyres-` plus the name of a group known by one (`mr:0717-martyres-scillitani`). The full derivation rules, feast overrides, leap-day identity decisions and collision resolutions are in `docs/canonicalization-report.md`.
 
 ## Architecture: the generation pipeline
 
