@@ -474236,6 +474236,66 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0929-michael-gabriel-et-raphael-archangeli|Gabriel Archangelus",
+      "eulogy": "mr:0929-michael-gabriel-et-raphael-archangeli",
+      "day": "09-29",
+      "typology": "dedicatio",
+      "subject": "Sancti Michael, Gabriel et Raphael Archangeli",
+      "name": "Gabriel Archangelus",
+      "where": "text",
+      "companions": [
+        "Michael Archangelus",
+        "Raphael Archangelus"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0929-michael-gabriel-et-raphael-archangeli|Michael Archangelus",
+      "eulogy": "mr:0929-michael-gabriel-et-raphael-archangeli",
+      "day": "09-29",
+      "typology": "dedicatio",
+      "subject": "Sancti Michael, Gabriel et Raphael Archangeli",
+      "name": "Michael Archangelus",
+      "where": "text",
+      "companions": [
+        "Gabriel Archangelus",
+        "Raphael Archangelus"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0929-michael-gabriel-et-raphael-archangeli|Raphael Archangelus",
+      "eulogy": "mr:0929-michael-gabriel-et-raphael-archangeli",
+      "day": "09-29",
+      "typology": "dedicatio",
+      "subject": "Sancti Michael, Gabriel et Raphael Archangeli",
+      "name": "Raphael Archangelus",
+      "where": "text",
+      "companions": [
+        "Michael Archangelus",
+        "Gabriel Archangelus"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0929-nicolaus-de-furca-palena|Nicolaus de Furca Palena",
       "eulogy": "mr:0929-nicolaus-de-furca-palena",
       "day": "09-29",
