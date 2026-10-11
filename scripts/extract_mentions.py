@@ -438,14 +438,14 @@ def _read(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
-def context(src, start, end):
+def context(src, start, end, after=CONTEXT_WIDTH):
     """The words around a span and the code-point offset at which they start in
-    `src`: about CONTEXT_WIDTH characters either side, cut at spaces."""
+    `src`: about CONTEXT_WIDTH characters before it and `after` after it, cut at spaces."""
     a = max(0, start - CONTEXT_WIDTH)
     if a > 0:
         space = src.find(" ", a, start)
         a = space + 1 if space >= 0 else a
-    b = min(len(src), end + CONTEXT_WIDTH)
+    b = min(len(src), end + after)
     if b < len(src):
         space = src.rfind(" ", end, b)
         b = space if space > end else b
@@ -470,7 +470,10 @@ def review_ops(edition, review_by_id, source):
             if r["start"] is None:
                 ctx, at, start, end = src, 0, None, None
             else:
-                ctx, at = context(src, r["start"], r["end"])
+                # A person's add may cover only the name's first word (found in part): the context runs
+                # on long enough for the curator to select the whole name ("Ioséphi … González").
+                after = max(CONTEXT_WIDTH, 2 * len(r.get("name") or "")) if r["kind"] == "person" else CONTEXT_WIDTH
+                ctx, at = context(src, r["start"], r["end"], after)
                 start, end = utf16(src, r["start"]), utf16(src, r["end"])
             key = op_key(r) if start is None else start
             op_id = f"{edition}|{mrid}|{where_key(r['where'])}|{key}"
