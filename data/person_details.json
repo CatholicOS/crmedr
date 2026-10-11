@@ -469,6 +469,40 @@
       "pt": "Papa Clemente I"
     }
   },
+  "Q43669": {
+    "description": {
+      "en": "one of the Twelve Apostles in the New Testament",
+      "it": "apostolo di Gesù",
+      "fr": "apôtre",
+      "de": "Apostel bzw. Jünger, der Jesus drei Jahre lang begleitete",
+      "es": "apóstol de Jesús (f. 72)",
+      "pt": "Apóstolo de Jesus"
+    },
+    "born": {
+      "year": 1,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 72,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "The Incredulity of Saint Thomas-Caravaggio (1601-2).jpg",
+      "author": "Caravaggio",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Thomas the Apostle",
+      "it": "Tommaso (apostolo)",
+      "fr": "Thomas (apôtre)",
+      "de": "Thomas (Apostel)",
+      "es": "Tomás el Apóstol",
+      "pt": "Tomé, o Apóstolo"
+    }
+  },
   "Q43720": {
     "description": {
       "en": "Pope of the Catholic Church from 1846 to 1878",
@@ -6109,6 +6143,25 @@
       "pt": "Hilda de Whitby"
     }
   },
+  "Q257607": {
+    "description": {
+      "en": "French martyr"
+    },
+    "born": {
+      "year": 1722,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1792,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Claudius Franciscus Gagnières des Granges"
+    }
+  },
   "Q258369": {
     "description": {
       "en": "eleventh-century Benedictine monk",
@@ -6499,6 +6552,40 @@
       "de": "Susanna von Rom",
       "es": "Susana de Roma",
       "pt": "Susana de Roma"
+    }
+  },
+  "Q273334": {
+    "description": {
+      "en": "Italian Catholic bishop and saint (1696-1787)",
+      "it": "vescovo cattolico, dottore della Chiesa e compositore italiano",
+      "fr": "saint catholique",
+      "de": "Ordensgründer, Kirchenlehrer und Heiliger der katholischen Kirche",
+      "es": "religioso, obispo católico, compositor, jurista, teólogo y filósofo italiano",
+      "pt": "bispo católico italiano que se destacou como escritor espiritual, filósofo escolástico e teólogo"
+    },
+    "born": {
+      "year": 1696,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1787,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Liguori.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "wikipedia": {
+      "en": "Alphonsus Liguori",
+      "it": "Alfonso Maria de' Liguori",
+      "fr": "Alphonse de Liguori",
+      "de": "Alfonso Maria de’ Liguori",
+      "es": "Alfonso María de Ligorio",
+      "pt": "Afonso de Ligório"
     }
   },
   "Q273335": {
@@ -13761,6 +13848,39 @@
       "es": "Gisleno de Hainaut"
     }
   },
+  "Q740904": {
+    "description": {
+      "en": "Italian theologian (1792–1849)",
+      "it": "sacerdote italiano",
+      "fr": "religieu italien (1792-1849) béatifié",
+      "de": "italienischer Missionar",
+      "es": "teólogo italiano"
+    },
+    "born": {
+      "year": 1792,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1849,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Dominic Barberi painting.jpg",
+      "author": "Unknown painter",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Dominic Barberi",
+      "it": "Domenico della Madre di Dio",
+      "fr": "Dominique Barberi",
+      "de": "Dominic Barberi",
+      "es": "Domingo de la Madre de Dios",
+      "pt": "Domenico Barberi"
+    }
+  },
   "Q740907": {
     "description": {
       "en": "bishop of Benevento",
@@ -16724,6 +16844,39 @@
       "en": "Opportuna of Montreuil",
       "fr": "Opportune de Montreuil",
       "de": "Opportuna von Sées"
+    }
+  },
+  "Q1609579": {
+    "description": {
+      "en": "Eastern Orthodox saint",
+      "it": "santa greca antica",
+      "fr": "sainte chrétienne",
+      "de": "Diakonin und Äbtissin",
+      "es": "figura destacada del cristianismo primitivo"
+    },
+    "born": {
+      "year": 368,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 408,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Olimpiada diakonissa.jpg",
+      "author": null,
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Olympias the Deaconess",
+      "it": "Olimpia di Nicomedia",
+      "fr": "Olympiade (sainte)",
+      "de": "Olympias von Konstantinopel",
+      "es": "Olimpia la diaconisa",
+      "pt": "Olímpia, a Diaconisa"
     }
   },
   "Q1632445": {
