@@ -6398,9 +6398,9 @@
           "kind": "person",
           "where": "text",
           "start": 27,
-          "end": 32,
-          "check": "f3a47691",
-          "name": "Paulus",
+          "end": 42,
+          "check": "0aadd218",
+          "name": "Paulus Apostolus",
           "qid": null
         }
       ],
@@ -14175,10 +14175,10 @@
         {
           "kind": "person",
           "where": "text",
-          "start": 66,
-          "end": 72,
-          "check": "c9c2aab1",
-          "name": "Petrus",
+          "start": 23,
+          "end": 38,
+          "check": "2ccee727",
+          "name": "Petrus Apostolus",
           "qid": "Q33923"
         }
       ],
@@ -30490,7 +30490,7 @@
           "start": 29,
           "end": 35,
           "check": "a0a04950",
-          "name": "Iacobus Apostoli",
+          "name": "Iacobus Apostolus",
           "qid": null
         },
         {
@@ -30499,7 +30499,7 @@
           "start": 57,
           "end": 66,
           "check": "25f03014",
-          "name": "Philippus",
+          "name": "Philippus Apostolus",
           "qid": null
         }
       ],
@@ -45299,7 +45299,7 @@
           "start": 43,
           "end": 48,
           "check": "f3a47691",
-          "name": "Paulus Apostoli",
+          "name": "Paulus Apostolus",
           "qid": null
         },
         {
@@ -45308,7 +45308,7 @@
           "start": 164,
           "end": 170,
           "check": "c9c2aab1",
-          "name": "Petrus",
+          "name": "Petrus Apostolus",
           "qid": null
         }
       ],
@@ -45632,7 +45632,7 @@
           "start": 20,
           "end": 25,
           "check": "324a17d2",
-          "name": "Aaron",
+          "name": "Aaron Sacerdos",
           "qid": null
         }
       ],
@@ -66162,7 +66162,7 @@
           "start": 20,
           "end": 32,
           "check": "af1a5839",
-          "name": "Melchisedech",
+          "name": "Melchisedech Rex et Sacerdos",
           "qid": null
         }
       ],
@@ -79547,7 +79547,7 @@
           "start": 20,
           "end": 28,
           "check": "414a50db",
-          "name": "Gedeon",
+          "name": "Gedeon Iudex",
           "qid": null
         }
       ],
@@ -83421,9 +83421,9 @@
           "kind": "person",
           "where": "text",
           "start": 20,
-          "end": 26,
-          "check": "9065ddd7",
-          "name": "Abraham",
+          "end": 38,
+          "check": "eec1e039",
+          "name": "Abraham Patriarcha",
           "qid": "Q1296747"
         }
       ],
@@ -86005,6 +86005,17 @@
           "qid": "Q588832"
         }
       ],
+      "mr:1018-lucas-evangelista": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 31,
+          "check": "7c0946c6",
+          "name": "Lucas Evangelista",
+          "qid": null
+        }
+      ],
       "mr:1018-mono": [
         {
           "kind": "place",
@@ -86213,6 +86224,17 @@
           "check": "418551ee",
           "name": "Isaac Jogues",
           "qid": "Q588832"
+        }
+      ],
+      "mr:1019-ioel-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 36,
+          "check": "7cc40112",
+          "name": "Ioel Propheta",
+          "qid": null
         }
       ],
       "mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye": [
@@ -88579,7 +88601,16 @@
           "start": 17,
           "end": 24,
           "check": "704e5b26",
-          "name": "Simon",
+          "name": "Simon Apostolus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 32,
+          "check": "bff7a252",
+          "name": "Iudas Apostolus",
           "qid": null
         }
       ],
@@ -94097,6 +94128,17 @@
           "qid": null
         }
       ],
+      "mr:1119-abdias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 35,
+          "check": "f30fae2b",
+          "name": "Abdias Propheta",
+          "qid": null
+        }
+      ],
       "mr:1119-barlaam": [
         {
           "kind": "place",
@@ -98416,6 +98458,17 @@
           "qid": null
         }
       ],
+      "mr:1130-andreas-apostolus": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 30,
+          "check": "5f321c20",
+          "name": "Andreas Apostolus",
+          "qid": null
+        }
+      ],
       "mr:1130-cuthbertus-mayne": [
         {
           "kind": "place",
@@ -98928,6 +98981,17 @@
           "qid": null
         }
       ],
+      "mr:1201-nahum-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 35,
+          "check": "cb6815d3",
+          "name": "Nahum Propheta",
+          "qid": null
+        }
+      ],
       "mr:1201-richardus-langley": [
         {
           "kind": "place",
@@ -98982,6 +99046,17 @@
           "end": 37,
           "check": "7637c73f",
           "name": "Chromatius",
+          "qid": null
+        }
+      ],
+      "mr:1202-habacuc-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 37,
+          "check": "099f5ffc",
+          "name": "Habacuc Propheta",
           "qid": null
         }
       ],
@@ -99202,6 +99277,17 @@
           "end": 43,
           "check": "a1e702ad",
           "name": "Lucius",
+          "qid": null
+        }
+      ],
+      "mr:1203-sophonias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 38,
+          "check": "6a2b1992",
+          "name": "Sophonias Propheta",
           "qid": null
         }
       ],
@@ -101846,6 +101932,17 @@
           "qid": null
         }
       ],
+      "mr:1216-aggaeus-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 35,
+          "check": "e7674a3b",
+          "name": "Aggaeus Propheta",
+          "qid": null
+        }
+      ],
       "mr:1216-beanus": [
         {
           "kind": "place",
@@ -102757,6 +102854,17 @@
           "qid": "Q1382073"
         }
       ],
+      "mr:1218-malachias-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 38,
+          "check": "e0d066b0",
+          "name": "Malachias Propheta",
+          "qid": null
+        }
+      ],
       "mr:1218-namphamo-et-socii": [
         {
           "kind": "place",
@@ -103151,6 +103259,17 @@
           "end": 53,
           "check": "c2f6094c",
           "name": "Dominicus Spadafora",
+          "qid": null
+        }
+      ],
+      "mr:1221-michaeas-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 36,
+          "check": "12a837ae",
+          "name": "Michaeas Propheta",
           "qid": null
         }
       ],
@@ -103991,6 +104110,17 @@
           "qid": "Q163275"
         }
       ],
+      "mr:1227-ioannes-apostolus-et-evangelista": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 14,
+          "end": 46,
+          "check": "2b80b04e",
+          "name": "Ioannes Apostolus et Evangelista",
+          "qid": null
+        }
+      ],
       "mr:1227-iosephus-maria-corbin-ferrer": [
         {
           "kind": "place",
@@ -104266,9 +104396,9 @@
           "kind": "person",
           "where": "text",
           "start": 20,
-          "end": 25,
-          "check": "a6b54c20",
-          "name": "David",
+          "end": 44,
+          "check": "829caaf4",
+          "name": "David Rex et Propheta",
           "qid": null
         }
       ],

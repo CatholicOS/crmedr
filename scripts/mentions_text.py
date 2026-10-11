@@ -226,14 +226,44 @@ def _paren_ok(printed):
     return all(len(p) <= MAX_PAREN for p in re.findall(r"\([^)]*\)", printed))
 
 
+# The titles a person's name may end with ("Abraham Patriarcha", "David Rex et Propheta"): the
+# print sets them after a comma, lowercase or not ("Abrahæ, patriárchæ", "David, regis et prophétæ"),
+# or not right after the name at all ("Gedeónis, ex tribu Manásse, qui iudex fuit").
+TITLES = {fold_map(t)[0] for t in ("apostolus", "evangelista", "propheta", "patriarcha", "rex", "sacerdos", "iudex")}
+TITLE_FORMS = {"rex": "(?:rex|regis|regi|regem|rege)"}
+# Names whose last word is a title word but a surname ("Martíni, cognoménto Sacerdótis"): never cut
+# to the name alone, so a bare "Martíni" is not taken for him.
+SURNAME_TITLES = {fold_map(n)[0] for n in ("Martinus Sacerdos",)}
+
+
+def _titles(words):
+    """A folded name's words as (name, titles): the titles it ends with, joined by "et", after at least
+    one word of name; ([], []) when it ends with none."""
+    k = len(words)
+    while k > 1 and words[k - 1] in TITLES:
+        k -= 1
+        if k > 1 and words[k - 1] == "et" and words[k - 2] in TITLES:
+            k -= 1
+    titles = [w for w in words[k:] if w != "et"]
+    return (words[:k], titles) if titles else ([], [])
+
+
 def name_patterns(name):
     """How a name is looked for, in order: ("verbatim", the name folded), ("stem",
-    its words by stem), ("gap", by stem across one parenthesis or cognomento phrase)."""
+    its words by stem), ("gap", by stem across one parenthesis or cognomento phrase); and for a name
+    ending in titles, ("titled", the name, a comma, its titles) and ("untitled", the name alone)."""
     words = [fold_map(w)[0] for w in name.split()]
     stems = [_word_pattern(w, last=i == len(words) - 1) for i, w in enumerate(words)]
-    return [("verbatim", r"\b" + SEP.join(map(re.escape, words)) + r"\b"),
-            ("stem", r"\b" + SEP.join(stems)),
-            ("gap", r"\b" + WIDE_GAP.join(stems))]
+    out = [("verbatim", r"\b" + SEP.join(map(re.escape, words)) + r"\b"),
+           ("stem", r"\b" + SEP.join(stems)),
+           ("gap", r"\b" + WIDE_GAP.join(stems))]
+    base, titles = _titles(words) if " ".join(words) not in SURNAME_TITLES else ([], [])
+    if titles:
+        named = SEP.join(_word_pattern(w, last=i == len(base) - 1) for i, w in enumerate(base))
+        titled = r"\s+et\s+".join(TITLE_FORMS.get(t) or _forms(t) for t in titles)
+        out += [("titled", r"\b" + named + r"\s*,\s*" + titled + r"(?![\w'\-])"),
+                ("untitled", r"\b" + named)]
+    return out
 
 
 def _gaps(matched):

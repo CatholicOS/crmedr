@@ -34,7 +34,7 @@ class SubjectNamesTest(unittest.TestCase):
     def test_celebrations_name_no_one_unless_listed(self):
         self.assertEqual(pt.subject_names("mr:1225-nativitas-domini", "Nativitas Domini"), [])
         self.assertEqual(pt.subject_names("mr:0125-conversio-pauli-apostoli", "Conversio Sancti Pauli Apostoli"),
-                         ["Paulus"])
+                         ["Paulus Apostolus"])
 
     def test_groups_name_no_one(self):
         self.assertEqual(pt.subject_names("mr:1228-innocentes", "Sancti Innocentes"), [])
@@ -287,7 +287,8 @@ class ReviewFindingsTest(unittest.TestCase):
                                           "Sancti Protomartyres Sanctae Romanae Ecclesiae"), [])
         self.assertEqual(pt.subject_names("mr:0724-modestinus-a-iesu-et-maria", "Beatus Modestinus a Iesu et Maria"),
                          ["Modestinus a Iesu et Maria"])
-        self.assertEqual(pt.subject_names("mr:1229-david-rex-et-propheta", "Sanctus David Rex et Propheta"), ["David"])
+        self.assertEqual(pt.subject_names("mr:1229-david-rex-et-propheta", "Sanctus David Rex et Propheta"),
+                         ["David Rex et Propheta"])
 
     # 5: descriptors before a name, parentheses inside it, descriptors between names in the text
     def test_a_name_after_a_leading_descriptor_is_read(self):
@@ -687,6 +688,31 @@ class Issue89And92Test(unittest.TestCase):
 def ep_fuller(a, b):
     import extract_persons as ep
     return ep._fuller(a, b)
+
+
+
+class TitledPersonsTest(unittest.TestCase):
+    """Persons carry their titles: apostles, evangelists, prophets and the Old Testament figures."""
+
+    def test_the_old_testament_persons_carry_their_titles(self):
+        self.assertEqual(pt.subject_names("mr:1009-abraham-patriarcha", "Sanctus Abraham Patriarcha"),
+                         ["Abraham Patriarcha"])
+        self.assertEqual(pt.subject_names("mr:1229-david-rex-et-propheta", "Sanctus David Rex et Propheta"),
+                         ["David Rex et Propheta"])
+        self.assertEqual(pt.subject_names("mr:0826-melchisedech-rex-et-sacerdos",
+                                          "Sanctus Melchisedech Rex et Sacerdos"), ["Melchisedech Rex et Sacerdos"])
+
+    def test_a_plural_title_is_each_persons_own(self):
+        self.assertEqual(pt.subject_names("mr:0503-philippus-et-iacobus-apostoli", "Sancti Philippus et Iacobus Apostoli"),
+                         ["Philippus Apostolus", "Iacobus Apostolus"])
+        self.assertEqual(pt.subject_names("mr:0704-osee-et-aggaeus-prophetae", "Sancti Osee et Aggaeus Prophetae"),
+                         ["Osee Propheta", "Aggaeus Propheta"])
+
+    def test_feasts_of_an_apostle_name_him_with_his_title(self):
+        self.assertEqual(pt.subject_names("mr:0125-conversio-pauli-apostoli", "Conversio Sancti Pauli Apostoli"),
+                         ["Paulus Apostolus"])
+        self.assertEqual(pt.subject_names("mr:0222-cathedra-petri-apostoli", "Cathedra Sancti Petri Apostoli"),
+                         ["Petrus Apostolus"])
 
 
 if __name__ == "__main__":

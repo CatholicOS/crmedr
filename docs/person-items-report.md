@@ -57,7 +57,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0215-onesimus|Onesimus: Q319568
 - mr:0219-quodvultdeus|Quodvultdeus: Q608506
 - mr:0221-petrus-damianus|Petrus Damianus: Q258369
-- mr:0222-cathedra-petri-apostoli|Petrus: Q33923
+- mr:0222-cathedra-petri-apostoli|Petrus Apostolus: Q33923
 - mr:0228-marana-et-cyra|Cyra: Q54592123
 - mr:0228-marana-et-cyra|Marana: Q54592083
 - mr:0312-innocentius-i|Innocentius I: Q134694
@@ -187,7 +187,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:1005-froilanus|Froilanus: Q3393948
 - mr:1006-magnus|Magnus: Q566085
 - mr:1008-reparata|Reparata: Q451820
-- mr:1009-abraham-patriarcha|Abraham: Q1296747
+- mr:1009-abraham-patriarcha|Abraham Patriarcha: Q1296747
 - mr:1010-pinytus|Pinytus: Q937426
 - mr:1011-nicasius-et-socii|Nicasius: Q3339549
 - mr:1013-romulus|Romulus: Q1114706

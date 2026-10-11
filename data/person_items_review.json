@@ -36438,278 +36438,33 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0125-conversio-pauli-apostoli|Paulus",
+      "id": "mr:0125-conversio-pauli-apostoli|Paulus Apostolus",
       "eulogy": "mr:0125-conversio-pauli-apostoli",
       "day": "01-25",
       "typology": "celebratio",
       "subject": "Conversio Sancti Pauli Apostoli",
-      "name": "Paulus",
+      "name": "Paulus Apostolus",
       "where": "text",
       "companions": [],
       "failed": [
-        "2 candidates pass every rule: Q9200, Q1379816"
+        "human: the best candidate (Q124383165) fails it",
+        "status: the best candidate (Q124383165) fails it",
+        "name: the best candidate (Q124383165) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q1379816",
-          "label": "Paul of Narbonne",
-          "description": "Gallo-Roman saint",
+          "wikidata": "Q124383165",
+          "label": "Portrait of Paul the Apostle",
+          "description": "1500-1599, print, engraving process",
           "names": [
-            "Paolo di Narbona",
-            "Paul of Narbonne",
-            "Paulus",
-            "San Paolo di Narbona"
+            "Portrait of Paul the Apostle"
           ],
-          "human": true,
-          "statuses": [
-            "Q43115",
-            "Q3464126"
-          ],
-          "born": "0300",
-          "died": "0300",
-          "feast": [
-            "Q2435"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q9200",
-          "label": "Paul the Apostle",
-          "description": "Early Christian apostle and missionary (c. AD 5 – c. 64/65)",
-          "names": [
-            "Apostle Paul",
-            "Paolo",
-            "Paolo apostolo",
-            "Paolo di Tarso",
-            "Paul",
-            "Paul of Tarsus",
-            "Paul the Apostle",
-            "Paulos",
-            "Paulus",
-            "Paulus Tarsensis",
-            "Paulus of Tarsus",
-            "Paulus the Apostle",
-            "Saint Paul",
-            "Saint Paul the Apostle",
-            "Saint Paulus",
-            "Saul",
-            "Saul of Tarsus",
-            "Saulo",
-            "Saulus",
-            "Saulus Tarsensis",
-            "Sha'ûl",
-            "St Paul",
-            "St. Paul",
-            "The Apostle Paul",
-            "apostolo Paolo",
-            "san Paolo",
-            "Šā'ûl"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154",
-            "Q43412"
-          ],
-          "born": "0005",
-          "died": "0066",
-          "feast": [
-            "Q2659",
-            "Q2688",
-            "Q2325",
-            "Q2279",
-            "Q3027"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108481974",
-          "label": "Paulus",
-          "description": "Roman Catholic patriarch",
-          "names": [
-            "Paulus"
-          ],
-          "human": true,
+          "human": false,
           "statuses": [],
           "born": null,
           "died": null,
           "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q109010097",
-          "label": "Paulus",
-          "description": "Italian marble worker who lived between the 11th and 12th centuries",
-          "names": [
-            "Paolo",
-            "Paulus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1080",
-          "died": "1130",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q132711",
-          "label": "Paul V",
-          "description": "233rd pope of the Roman Catholic Church from 1605 to 1621",
-          "names": [
-            "Camille Borghèse",
-            "Camillo Borghese",
-            "Camillo Borghèse",
-            "Camillus Borghese",
-            "Camillus Burghesius",
-            "Paolo V",
-            "Paul V",
-            "Paul V. Papst",
-            "Paulus PP. V",
-            "Paulus V",
-            "Pope Paul V",
-            "Pope Paulus V",
-            "papa Borghese",
-            "papa Paolo V",
-            "pape Paul V"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1552-09-17",
-          "died": "1621-01-28",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q155394",
-          "label": "Paul of Greece",
-          "description": "King of Greece from 1947 to 1964",
-          "names": [
-            "King Paul I of Greece",
-            "King Paul of Greece",
-            "King Pavlos I of Greece",
-            "Paolo I Re degli Elleni",
-            "Paolo I di Grecia",
-            "Paolo di Grecia",
-            "Paul I of Greece",
-            "Paul of Greece",
-            "Paulus",
-            "Pavlos I of Greece"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1901-12-14",
-          "died": "1964-03-06",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q16320597",
-          "label": "Paulus",
-          "description": "abbot of the Benedictine monastery in Münsterschwarzach from 1503 to 1505",
-          "names": [
-            "Paulus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1500",
-          "died": "1505-03-30",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q16975",
-          "label": "Paul VI",
-          "description": "pope of the Catholic Church from 1963 to 1978 (1897–1978)",
-          "names": [
-            "Ioannes Baptista Henricus Antonius Maria Montini",
-            "Ioannes Baptista Montini",
-            "Jan Baptist Montini",
-            "Paolo VI",
-            "Paul VI",
-            "Paulus PP. VI",
-            "Paulus VI",
-            "Pope Paul VI",
-            "Saint Paul VI",
-            "San Paolo VI",
-            "Sanctus Paulus PP. VI",
-            "Sanctus Paulus VI",
-            "papa Paolo VI"
-          ],
-          "human": true,
-          "statuses": [
-            "Q51619",
-            "Q869974",
-            "Q2369287",
-            "Q123110154"
-          ],
-          "born": "1897-09-26",
-          "died": "1978-08-06",
-          "feast": [
-            "Q2885",
-            "Q2589"
-          ],
-          "evidence": [
-            "human",
-            "status"
-          ]
-        },
-        {
-          "wikidata": "Q3372843",
-          "label": "Paulus",
-          "description": "French singer (1845-1908)",
-          "names": [
-            "Jean-Paul Habans",
-            "Paulus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1845-02-06",
-          "died": "1908-06-01",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q3893670",
-          "label": "Paulus",
-          "description": "brother of Orestes (+476)",
-          "names": [
-            "Paolo",
-            "Paulus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "0476-09-04",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
+          "evidence": []
         }
       ],
       "decision": null,
@@ -181597,15 +181352,15 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0503-philippus-et-iacobus-apostoli|Iacobus Apostoli",
+      "id": "mr:0503-philippus-et-iacobus-apostoli|Iacobus Apostolus",
       "eulogy": "mr:0503-philippus-et-iacobus-apostoli",
       "day": "05-03",
       "typology": "dies_natalis",
       "subject": "Sancti Philippus et Iacobus Apostoli",
-      "name": "Iacobus Apostoli",
+      "name": "Iacobus Apostolus",
       "where": "text",
       "companions": [
-        "Philippus"
+        "Philippus Apostolus"
       ],
       "failed": [
         "no candidate found"
@@ -181616,218 +181371,20 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0503-philippus-et-iacobus-apostoli|Philippus",
+      "id": "mr:0503-philippus-et-iacobus-apostoli|Philippus Apostolus",
       "eulogy": "mr:0503-philippus-et-iacobus-apostoli",
       "day": "05-03",
       "typology": "dies_natalis",
       "subject": "Sancti Philippus et Iacobus Apostoli",
-      "name": "Philippus",
+      "name": "Philippus Apostolus",
       "where": "text",
       "companions": [
-        "Iacobus Apostoli"
+        "Iacobus Apostolus"
       ],
       "failed": [
-        "status: the best candidate (Q112511219) fails it",
-        "death: the best candidate (Q112511219) fails it"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q112511219",
-          "label": "Philippus",
-          "description": "theologian",
-          "names": [
-            "Philippus",
-            "Philippus de Bergamo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "1380",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q115747078",
-          "label": "Philippus",
-          "description": "father of Antigonus Monophthalmus",
-          "names": [
-            "Filippo",
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q116192866",
-          "label": "Philippus",
-          "description": "Cardinal, author of manuscript Ms. Coll. 742, Folder 92, University of Pennsylvania",
-          "names": [
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q121130",
-          "label": "Philip of Swabia",
-          "description": "King of the Germans, Duke of Toscana and Swabia (February/March 1177 – 21 June 1208)",
-          "names": [
-            "Filippo di Svevia",
-            "Philip of Swabia",
-            "Philipp II",
-            "Philipp von Schwaben",
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1177-08",
-          "died": "1208-06-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q125824872",
-          "label": "Philippus",
-          "description": "possible ancient Greek author of treatise on agriculture",
-          "names": [
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q127787822",
-          "label": "Philippus",
-          "description": "",
-          "names": [
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q155004",
-          "label": "Philippe of Belgium",
-          "description": "King of the Belgians since 2013",
-          "names": [
-            "Filip of Belgium",
-            "Filip van België",
-            "Filippo del Belgio",
-            "Filippo, duca di Brabante",
-            "H.M. King Philippe of Belgium",
-            "H.R.H. Prince Philippe of Belgium",
-            "King Philippe of Belgium",
-            "Philippe I of Belgium",
-            "Philippe Léopold Louis Marie de Belgique, Prince de Belgique",
-            "Philippe of Belgium",
-            "Philippe of the Belgians",
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1960-04-15",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q176912",
-          "label": "Philip",
-          "description": "4th-century BC Macedonian nobleman and soldier",
-          "names": [
-            "Filippo",
-            "Philip",
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-040",
-          "died": "-032",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q312861",
-          "label": "Philip",
-          "description": "Italian priest, antipope in 768",
-          "names": [
-            "Antipapa Filippo",
-            "Antipope Philip",
-            "Filippo antipapa",
-            "Philip",
-            "Philippus",
-            "pope Philip"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0800",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q3621605",
-          "label": "Philip",
-          "description": "son of Antipater and brother of Cassander",
-          "names": [
-            "Filippo",
-            "Philip",
-            "Philippus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-040",
-          "died": "-036",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -278816,241 +278373,73 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0629-petrus-et-paulus-apostoli|Paulus Apostoli",
+      "id": "mr:0629-petrus-et-paulus-apostoli|Paulus Apostolus",
       "eulogy": "mr:0629-petrus-et-paulus-apostoli",
       "day": "06-29",
       "typology": "dies_natalis",
       "subject": "Sancti Petrus et Paulus Apostoli",
-      "name": "Paulus Apostoli",
+      "name": "Paulus Apostolus",
       "where": "text",
       "companions": [
-        "Petrus"
+        "Petrus Apostolus"
       ],
       "failed": [
-        "no candidate found"
+        "human: the best candidate (Q124383165) fails it",
+        "status: the best candidate (Q124383165) fails it",
+        "name: the best candidate (Q124383165) fails it",
+        "death: the best candidate (Q124383165) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q124383165",
+          "label": "Portrait of Paul the Apostle",
+          "description": "1500-1599, print, engraving process",
+          "names": [
+            "Portrait of Paul the Apostle"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null
     },
     {
       "op": "resolve_person",
-      "id": "mr:0629-petrus-et-paulus-apostoli|Petrus",
+      "id": "mr:0629-petrus-et-paulus-apostoli|Petrus Apostolus",
       "eulogy": "mr:0629-petrus-et-paulus-apostoli",
       "day": "06-29",
       "typology": "dies_natalis",
       "subject": "Sancti Petrus et Paulus Apostoli",
-      "name": "Petrus",
+      "name": "Petrus Apostolus",
       "where": "text",
       "companions": [
-        "Paulus Apostoli"
+        "Paulus Apostolus"
       ],
       "failed": [
-        "death: the best candidate (Q33923) fails it"
+        "human: the best candidate (Q124383164) fails it",
+        "status: the best candidate (Q124383164) fails it",
+        "name: the best candidate (Q124383164) fails it",
+        "death: the best candidate (Q124383164) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q33923",
-          "label": "Saint Peter",
-          "description": "apostle of Jesus Christ",
+          "wikidata": "Q124383164",
+          "label": "Portrait of Peter the Apostle",
+          "description": "1500-1599, print, engraving process",
           "names": [
-            "Apostle Peter",
-            "Apostolo Pietro",
-            "Cephas",
-            "Kipa",
-            "Papa Pietro",
-            "Peter",
-            "Peter the Apostle",
-            "Peter, the Apostle, Saint",
-            "Petrus",
-            "Pietro",
-            "Pietro apostolo",
-            "Pope Peter",
-            "Saint Peter",
-            "Saint Peter the Apostle",
-            "San Pietro",
-            "San Pietro apostolo",
-            "Sanctus Petrus",
-            "Shimon",
-            "Shimoun Bar Younah",
-            "Simeon",
-            "Simon",
-            "Simon Petrus",
-            "Simon Pietro",
-            "St Peter",
-            "St. Peter"
+            "Portrait of Peter the Apostle"
           ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-000",
-          "died": "0065",
-          "feast": [
-            "Q2659"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q105541754",
-          "label": "Pierre",
-          "description": "roman catholic bishop (Geneva)",
-          "names": [
-            "Pierre",
-            "Pierre of Cessons",
-            "Pierre of Geneva",
-            "Pierre of Sessons"
-          ],
-          "human": true,
+          "human": false,
           "statuses": [],
           "born": null,
           "died": null,
           "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q106214010",
-          "label": "Petrus",
-          "description": "",
-          "names": [
-            "Petrus",
-            "Petrus archiepiscopus Ruthenus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q107658259",
-          "label": "Petrus",
-          "description": "",
-          "names": [
-            "Petrus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1575",
-          "died": "1655",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108436812",
-          "label": "Pierre",
-          "description": "bishop of Skopje",
-          "names": [
-            "Pierre"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108451549",
-          "label": "Pedro",
-          "description": "Roman Catholic Bishop of Palencia",
-          "names": [
-            "Pedro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108480082",
-          "label": "Petrus",
-          "description": "roman-catholic bishop of triocala",
-          "names": [
-            "Petrus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108546787",
-          "label": "Pedro",
-          "description": "archbishop of the Roman Catholic Church",
-          "names": [
-            "Pedro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "1348",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108546827",
-          "label": "Petrus",
-          "description": "bishop of Krbava",
-          "names": [
-            "Petrus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108554514",
-          "label": "Petrus",
-          "description": "bishop of Vladimir (Wlodzimierz)",
-          "names": [
-            "Petrus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
+          "evidence": []
         }
       ],
       "decision": null,
@@ -280717,222 +280106,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0701-aaron-sacerdos|Aaron",
+      "id": "mr:0701-aaron-sacerdos|Aaron Sacerdos",
       "eulogy": "mr:0701-aaron-sacerdos",
       "day": "07-01",
       "typology": "commemoratio",
       "subject": "Sanctus Aaron Sacerdos",
-      "name": "Aaron",
+      "name": "Aaron Sacerdos",
       "where": "text",
       "companions": [],
       "failed": [
-        "2 candidates pass every rule: Q2501319, Q4054154"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q2501319",
-          "label": "Aaron of Aleth",
-          "description": "Abbot, hermit, monk",
-          "names": [
-            "Aaron",
-            "Aaron of Aleth"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115",
-            "Q3464126"
-          ],
-          "born": "0550",
-          "died": "0552",
-          "feast": [
-            "Q2671"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q4054154",
-          "label": "Aaron of Auxerre",
-          "description": "Bishop of Auxerre",
-          "names": [
-            "Aaron",
-            "Aaron of Auxerre"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287",
-            "Q3464126"
-          ],
-          "born": "0800",
-          "died": "0813-02-13",
-          "feast": [
-            "Q2883"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q11167321",
-          "label": "Aaron",
-          "description": "Finnish singer",
-          "names": [
-            "Aaron"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1947-11-03",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q12961075",
-          "label": "Aaron",
-          "description": "Filipino singer",
-          "names": [
-            "Aaron"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1901",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q131002",
-          "label": "Harun al-Rashid",
-          "description": "5th Abbasid caliph (r. 786–809)",
-          "names": [
-            "Aaron",
-            "Aaron Rascidus",
-            "Aaron rex Persarum",
-            "Abu Ja'far",
-            "Aharun",
-            "Haron al Rashid",
-            "Haroun Alraſchid",
-            "Haroun-al-Raschid",
-            "Haroun-el-Raschid",
-            "Harun al-Rashid",
-            "Harun ar-Rashid",
-            "Harun ibn Muhammad ibn Abdallah",
-            "Hārūn al-Rashīd",
-            "Hārūn ibn al-Mahdī"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0766-03-07",
-          "died": "0809-03-24",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q302983",
-          "label": "Aaron Scotus",
-          "description": "Irish abbot and musician",
-          "names": [
-            "Aaron",
-            "Aaron Scoto",
-            "Aaron Scotus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0950",
-          "died": "1052-11-18",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q710481",
-          "label": "Aaron Yan",
-          "description": "Taiwanese actor and singer",
-          "names": [
-            "AARON",
-            "Aaron Wu",
-            "Aaron Yan",
-            "Arron Yan",
-            "Wu Genglin",
-            "Yan Yalun"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1985-11-20",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q21401489",
-          "label": "Aarón",
-          "description": "male given name",
-          "names": [
-            "Aarón",
-            "Aarón (first name)",
-            "Aarón (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q233205",
-          "label": "Aaron Ciechanover",
-          "description": "Israeli physician and biochemist, Nobel Laureate",
-          "names": [
-            "Aaron Ciechanover"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1947-10-01",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q23844941",
-          "label": "Aaron",
-          "description": "article in Otto's encyclopedia",
-          "names": [
-            "Aaron"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -387661,197 +386846,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0826-melchisedech-rex-et-sacerdos|Melchisedech",
+      "id": "mr:0826-melchisedech-rex-et-sacerdos|Melchisedech Rex et Sacerdos",
       "eulogy": "mr:0826-melchisedech-rex-et-sacerdos",
       "day": "08-26",
       "typology": "commemoratio",
       "subject": "Sanctus Melchisedech Rex et Sacerdos",
-      "name": "Melchisedech",
+      "name": "Melchisedech Rex et Sacerdos",
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q28355716) fails it"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q28355716",
-          "label": "Manuel García Durán",
-          "description": "Spanish journalist from Galicia",
-          "names": [
-            "Manuel García Durán",
-            "Melchisedech"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1897",
-          "died": "1924-02-23",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1311081",
-          "label": "Melchisedek / Melchisedech /  Melchisedec",
-          "description": "Wikimedia disambiguation page",
-          "names": [
-            "Melchisedec",
-            "Melchisedech",
-            "Melchisedek",
-            "Melchisedek / Melchisedech /  Melchisedec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q21289511",
-          "label": "Melchisedech Longhena",
-          "description": "Italian mason",
-          "names": [
-            "Melchisedec Longhena",
-            "Melchisedech Longhena"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1566",
-          "died": "1616",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q219395",
-          "label": "Melchizedek",
-          "description": "biblical person; King of Salem and priest of the Most High (Gen. 14)",
-          "names": [
-            "Malchitzedek",
-            "Malchizedek",
-            "Melchidesec",
-            "Melchidesech",
-            "Melchidesek",
-            "Melchisedec",
-            "Melchisedech",
-            "Melchisedek",
-            "Melchisidek",
-            "Melchizedek",
-            "Melkidesek",
-            "Melkisedec",
-            "Melkisedek"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": "-180",
-          "died": "-170",
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q29154862",
-          "label": "Melchisedech",
-          "description": "statue in Saint-Malo, France",
-          "names": [
-            "Melchisedech"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q29190580",
-          "label": "Melchisédech",
-          "description": "wood statue in Courvières, Doubs, France",
-          "names": [
-            "Melchisédech"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q56762289",
-          "label": "Melchisedech van Hooren",
-          "description": "etcher",
-          "names": [
-            "Melchisedech van Hooren"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q58677357",
-          "label": "Melchisedech",
-          "description": "sculpture by Jacques Bergé",
-          "names": [
-            "Melchisedech"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q63266621",
-          "label": "Melchisedech",
-          "description": "male given name",
-          "names": [
-            "Melchisedech"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q63266964",
-          "label": "Melchisédech",
-          "description": "male given name",
-          "names": [
-            "Melchisédech"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -472551,198 +471557,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0926-gedeon-iudex|Gedeon",
+      "id": "mr:0926-gedeon-iudex|Gedeon Iudex",
       "eulogy": "mr:0926-gedeon-iudex",
       "day": "09-26",
       "typology": "commemoratio",
       "subject": "Sanctus Gedeon Iudex",
-      "name": "Gedeon",
+      "name": "Gedeon Iudex",
       "where": "text",
       "companions": [],
       "failed": [
-        "human: the best candidate (Q176125) fails it"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q176125",
-          "label": "Gideon",
-          "description": "Judge in the Biblical Book of Judges",
-          "names": [
-            "Gedeon",
-            "Gedeone",
-            "Gideon"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-125",
-          "died": "-115",
-          "feast": [
-            "Q2885"
-          ],
-          "evidence": [
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q3122879",
-          "label": "Gédéon Baril",
-          "description": "French painter, writer, illustrator, and cartoonist (1832-1906)",
-          "names": [
-            "Gedeon Baril",
-            "Gédéon",
-            "Gédéon Baril"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1832-07-17",
-          "died": "1906-07-03",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q4134721",
-          "label": "Gedeon",
-          "description": "",
-          "names": [
-            "Gedeon"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1929-12-18",
-          "died": "2003-03-21",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q4134723",
-          "label": "Gedeon",
-          "description": "",
-          "names": [
-            "Gedeon"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1844",
-          "died": "1922",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q4134727",
-          "label": "Gedeon",
-          "description": "",
-          "names": [
-            "Gedeon",
-            "Gedeon Svyatopolk-Chetvertinsky",
-            "Grzegorz Gedeon Czetwertyński-światopełk"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1634",
-          "died": "1690-04-06",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q55651505",
-          "label": "Gedeon",
-          "description": "American Christian minister",
-          "names": [
-            "Gedeon"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1960-06-10",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q94660617",
-          "label": "Gedeon",
-          "description": "",
-          "names": [
-            "Gedeon"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1929",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q106781651",
-          "label": "Gedeon",
-          "description": "2015 song by SCH",
-          "names": [
-            "Gedeon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q11682058",
-          "label": "Gedeon",
-          "description": "male given name",
-          "names": [
-            "Gedeon",
-            "Gedeon (first name)",
-            "Gedeon (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q124098907",
-          "label": "Gedeon",
-          "description": "",
-          "names": [
-            "Gedeon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -525999,15 +524825,15 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1028-simon-et-iudas-apostoli|Iudas Apostoli",
+      "id": "mr:1028-simon-et-iudas-apostoli|Iudas Apostolus",
       "eulogy": "mr:1028-simon-et-iudas-apostoli",
       "day": "10-28",
       "typology": "dies_natalis",
       "subject": "Sancti Simon et Iudas Apostoli",
-      "name": "Iudas Apostoli",
+      "name": "Iudas Apostolus",
       "where": "text",
       "companions": [
-        "Simon"
+        "Simon Apostolus"
       ],
       "failed": [
         "no candidate found"
@@ -526018,352 +524844,20 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1028-simon-et-iudas-apostoli|Simon",
+      "id": "mr:1028-simon-et-iudas-apostoli|Simon Apostolus",
       "eulogy": "mr:1028-simon-et-iudas-apostoli",
       "day": "10-28",
       "typology": "dies_natalis",
       "subject": "Sancti Simon et Iudas Apostoli",
-      "name": "Simon",
+      "name": "Simon Apostolus",
       "where": "text",
       "companions": [
-        "Iudas Apostoli"
+        "Iudas Apostolus"
       ],
       "failed": [
-        "death: the best candidate (Q33923) fails it"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q33923",
-          "label": "Saint Peter",
-          "description": "apostle of Jesus Christ",
-          "names": [
-            "Apostle Peter",
-            "Apostolo Pietro",
-            "Cephas",
-            "Kipa",
-            "Papa Pietro",
-            "Peter",
-            "Peter the Apostle",
-            "Peter, the Apostle, Saint",
-            "Petrus",
-            "Pietro",
-            "Pietro apostolo",
-            "Pope Peter",
-            "Saint Peter",
-            "Saint Peter the Apostle",
-            "San Pietro",
-            "San Pietro apostolo",
-            "Sanctus Petrus",
-            "Shimon",
-            "Shimoun Bar Younah",
-            "Simeon",
-            "Simon",
-            "Simon Petrus",
-            "Simon Pietro",
-            "St Peter",
-            "St. Peter"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "-000",
-          "died": "0065",
-          "feast": [
-            "Q2659"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q110076159",
-          "label": "Simon",
-          "description": "German porcelain painter",
-          "names": [
-            "Simon"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q3085544",
-          "label": "Lucien Simon",
-          "description": "French painter (1861-1945)",
-          "names": [
-            "Lucien J. Simon",
-            "Lucien Joseph Simon",
-            "Lucien Simon",
-            "Simon",
-            "l. simon",
-            "simon l."
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1861-07-18",
-          "died": "1945-10-13",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q573430",
-          "label": "Simone Cantarini",
-          "description": "Italian etcher and painter (1612-1648)",
-          "names": [
-            "Cantarini",
-            "Cantarini Sim. da Besaro",
-            "Canterini",
-            "Canterini d. o Simeone da Pesaro",
-            "Canterini d.o Simeone da Pesaro",
-            "Cantirini",
-            "Contarini",
-            "Gio. Contrarini",
-            "Il Pesarese",
-            "Il Pesarese Cantarini",
-            "J. de Pezaro",
-            "Le Pesarese",
-            "Le Pesarèze",
-            "Le Pesateze",
-            "Le Pezareze",
-            "Pesarese",
-            "Pesaresi",
-            "Pesaresse",
-            "Pesaressi",
-            "Pesaro",
-            "Pesarès",
-            "Pezaraze",
-            "Pezares",
-            "Pezaresse",
-            "Pezareze",
-            "Pezarès",
-            "Pezarèse",
-            "Pisaresi",
-            "Pézarès",
-            "S. Cantareni",
-            "S. Cantarini",
-            "S. D. Pisaro",
-            "S. Da Pessaro",
-            "S. Pesero",
-            "S. Pisaro",
-            "S. da Pesaro",
-            "S. da Pesero",
-            "S. da Pisaro",
-            "S. de Pearro",
-            "S. de Pesaro",
-            "S. de Pesarro",
-            "S. de Pesera",
-            "S. de Pesero",
-            "S. de Pessaro",
-            "S. di Pesari",
-            "S. di Pesaro",
-            "S. diPesaro",
-            "S. du Pesaro",
-            "S.D. Pesaro",
-            "S.da Pesaro",
-            "San. da Pessaro",
-            "Schüler des Corregio d'Apessara",
-            "Sim. Cantarini da Besaro",
-            "Sim. da Pesaro",
-            "Sim.e Contarini",
-            "Simeon Cantarini",
-            "Simeone Cantarini",
-            "Simon",
-            "Simon C.",
-            "Simon Cantarin",
-            "Simon Cantarini",
-            "Simon Cantarini Pesarese",
-            "Simon Cantarini da Pesaro",
-            "Simon Cantarino",
-            "Simon Cantarino allievo di Guido",
-            "Simon Cantarino da Pesaro",
-            "Simon Cantarino detto il Pesarese allievo di Guido",
-            "Simon Contarini",
-            "Simon Pesarese",
-            "Simon da Pesaro",
-            "Simon da Pesaro Querino",
-            "Simon da Pessaro",
-            "Simon de Passero",
-            "Simon de Pesara",
-            "Simon de Pesares",
-            "Simon de Pesaro",
-            "Simon de Pesero",
-            "Simon de Pessaro",
-            "Simon de Pezaro",
-            "Simon di Pesaro",
-            "Simone",
-            "Simone Cantalini",
-            "Simone Cantarin",
-            "Simone Cantarini",
-            "Simone Cantarini Pesarese",
-            "Simone Cantarini il Pesarese",
-            "Simone Cantarino",
-            "Simone Cantarino Pesarese",
-            "Simone Cantarino Pesarese Scolare di Guido Reni",
-            "Simone Cantarino da Pesaro",
-            "Simone Canterini da Pesaro",
-            "Simone Canterini detto da Pesaro",
-            "Simone Canterino",
-            "Simone Cantirini",
-            "Simone Contarini",
-            "Simone Da Pesaro",
-            "Simone Pes.e",
-            "Simone Pesero",
-            "Simone da Pesaro",
-            "Simone da Pesero",
-            "Simone da Pessaro",
-            "Simone da Pisaro",
-            "Simone da' Pesaro",
-            "Simone de Pearro",
-            "Simone de Pesaro",
-            "Simone de Pesarro",
-            "Simone de Pesero",
-            "Simone de Pessaro",
-            "Simone di Pesari",
-            "Simone di Pesaro",
-            "Simone diPesaro",
-            "Simone, Genannt Il Pesaro Cantarini",
-            "Simone, gen. Il Pesarese Cantarini",
-            "The Pesarese",
-            "cantarini simone da pesaro",
-            "dit Le Pezareze Simon Cantarini",
-            "dit Pezarès Cantarini",
-            "dit le Pesarese Simon Cantarini",
-            "dit le Pesareze Simon Cantarini",
-            "dit le Pezarese Simon Cantarine",
-            "dit le Pezarese Simone Cantarini",
-            "dit le Pezaresse Simon Cantarini",
-            "dit le Pésarese Simon Cantariny",
-            "dit le Pézarese Simon Cantarini",
-            "genannt il Pesarese Simon Cantarini",
-            "il Pesarese",
-            "il Pesarese Cantarini",
-            "ou le Pezareze Simon Cantarini",
-            "s. cantarini",
-            "simone cantarini gen. pesarese"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1612-08-21",
-          "died": "1648-10-15",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q109940047",
-          "label": "Simon",
-          "description": "fictional character from Detroit: Become Human",
-          "names": [
-            "PL600",
-            "Simon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1321356",
-          "label": "IBM Simon",
-          "description": "smartphone model",
-          "names": [
-            "IBM Simon",
-            "Simon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1348975",
-          "label": "Simon Cameron",
-          "description": "American businessman and politician (1799–1889)",
-          "names": [
-            "Simon Cameron"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1799-08-08",
-          "died": "1889-06-26",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q15146482",
-          "label": "Šimon",
-          "description": "family name",
-          "names": [
-            "Šimon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18175382",
-          "label": "Simón",
-          "description": "male given name",
-          "names": [
-            "Simón",
-            "Simón (first name)",
-            "Simón (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q20018557",
-          "label": "Simon",
-          "description": "name",
-          "names": [
-            "Simon"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
@@ -629881,284 +628375,18 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1229-david-rex-et-propheta|David",
+      "id": "mr:1229-david-rex-et-propheta|David Rex et Propheta",
       "eulogy": "mr:1229-david-rex-et-propheta",
       "day": "12-29",
       "typology": "commemoratio",
       "subject": "Sanctus David Rex et Propheta",
-      "name": "David",
+      "name": "David Rex et Propheta",
       "where": "text",
       "companions": [],
       "failed": [
-        "3 candidates pass every rule: Q41370, Q503069, Q331697"
+        "no candidate found"
       ],
-      "candidates": [
-        {
-          "wikidata": "Q331697",
-          "label": "Saint David",
-          "description": "patron saint of Wales",
-          "names": [
-            "David",
-            "David Mevennensis",
-            "David del Galles",
-            "David of Wales",
-            "Davide del Galles",
-            "Davide di Menevia",
-            "Dewi",
-            "Saint David",
-            "San David",
-            "San David del Galles",
-            "San David di Menevia",
-            "San Davide di Menevia",
-            "St David",
-            "St. David"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115",
-            "Q3464126"
-          ],
-          "born": "0512",
-          "died": "0589",
-          "feast": [
-            "Q2393"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q41370",
-          "label": "David",
-          "description": "king of Israel and Judah",
-          "names": [
-            "Daud re d'Israele",
-            "David",
-            "David King of Israel",
-            "David ben Yishai",
-            "David, King of Israel",
-            "David, re d'Israele",
-            "Davide",
-            "Dawid re d'Israele",
-            "Dawud re d'Israele",
-            "King David",
-            "Nabi Dawud King of Israel",
-            "Nabi Dawud King of Israelirca 970 a.C.",
-            "Re David",
-            "Re Davide",
-            "sweet singer of Israel"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-104",
-          "died": "-096",
-          "feast": [
-            "Q2862"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q503069",
-          "label": "David II of Trebizond",
-          "description": "last Emperor of Trebizond",
-          "names": [
-            "David",
-            "David II Comnenos of Trebizond",
-            "David II Megas Komnenos",
-            "David II of Trebizond",
-            "Davide II Comneno",
-            "Davide II di Trebisonda"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "1408",
-          "died": "1463-11-01",
-          "feast": [],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q333380",
-          "label": "Gerard David",
-          "description": "early Netherlandish painter (c. 1460–1523)",
-          "names": [
-            "David",
-            "David Oudewater",
-            "Gerard David",
-            "Gerard Davidt",
-            "Gerard Davit",
-            "Gerard van Brugge",
-            "Gheeraedt David",
-            "Gheeraedt Davidt",
-            "Gheeraedt Davit",
-            "Gheeraert David",
-            "Gheeraert Davidt",
-            "Gheeraert Davit",
-            "Gherat David",
-            "Gherat Davidt",
-            "Gherat Davit",
-            "Gérard David",
-            "Gérard David d'Oudewater",
-            "Gérard Jansz David",
-            "Gérard de Bruges"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1450",
-          "died": "1523-08-13",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q346939",
-          "label": "Armand David",
-          "description": "French Catholic priest, zoologist, and botanist (1826–1900)",
-          "names": [
-            "Armand David",
-            "Armandus David",
-            "David",
-            "Father David",
-            "Ioannes Petrus Armandus David",
-            "Jean Pierre Armand David",
-            "Jean-Pierre-Armand David",
-            "Pere David",
-            "Père David"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1826-09-07",
-          "died": "1900-11-10",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q83155",
-          "label": "Jacques-Louis David",
-          "description": "French painter (1748–1825)",
-          "names": [
-            "Cen David",
-            "David",
-            "David Jak Lui",
-            "David L.",
-            "David Louis",
-            "Iacobus Ludovicus David",
-            "J. L. David",
-            "J.-L. David",
-            "J.L. David",
-            "Jacques Louis David",
-            "Jacques-Louis David",
-            "Jaques Louis David",
-            "L. David",
-            "Louis David",
-            "Lu-i Ta-wei",
-            "Lui David",
-            "M. Louis David",
-            "M. le baron David",
-            "Ta-wei-tʻe",
-            "Zhak Lui David",
-            "david jacques-louis",
-            "j. l. david",
-            "j.l. david",
-            "jac. louis david",
-            "jacques l. david",
-            "jacques-louis david",
-            "jaques louis david",
-            "jean louis david"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1748-08-30",
-          "died": "1825-12-29",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q12652673",
-          "label": "David",
-          "description": "family name",
-          "names": [
-            "David"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q12765083",
-          "label": "Dávid",
-          "description": "family name",
-          "names": [
-            "Dávid"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1351554",
-          "label": "Peter David",
-          "description": "American writer of comic books, novels, television, movies and video games (1956–2025)",
-          "names": [
-            "Peter David"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1956-09-23",
-          "died": "2025-05-24",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q159907",
-          "label": "David Hockney",
-          "description": "painter, printmaker, set designer, photographer (1937–2026)",
-          "names": [
-            "David Hockney"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1937-07-09",
-          "died": "2026-06-11",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        }
-      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
