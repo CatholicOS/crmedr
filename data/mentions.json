@@ -4869,7 +4869,7 @@
           "start": 27,
           "end": 53,
           "check": "7b29aa09",
-          "name": "Marcellus Spinola Y Maestre",
+          "name": "Marcellus Spinola y Maestre",
           "qid": null
         }
       ],
@@ -6419,7 +6419,7 @@
           "start": 27,
           "end": 51,
           "check": "bb670106",
-          "name": "Emmanuel Domingo Y Sol",
+          "name": "Emmanuel Domingo y Sol",
           "qid": "Q2317204"
         }
       ],
@@ -6791,7 +6791,7 @@
           "start": 55,
           "end": 81,
           "check": "1492eba1",
-          "name": "Henricus de Osso Y Cervello",
+          "name": "Henricus de Osso y Cervello",
           "qid": "Q767708"
         }
       ],
@@ -12754,6 +12754,24 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 18,
+          "end": 25,
+          "check": "cfb7f248",
+          "name": "Cyrillus",
+          "qid": "Q351026"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 47,
+          "check": "b42bdcc3",
+          "name": "Methodius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 300,
           "end": 308,
           "check": "3a3a9c07",
@@ -15260,6 +15278,24 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 45,
+          "end": 52,
+          "check": "b6d7829f",
+          "name": "Iulianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 60,
+          "check": "579b1793",
+          "name": "Eunus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 72,
           "end": 80,
           "check": "d353327b",
@@ -16033,6 +16069,15 @@
           "end": 38,
           "check": "e63b612e",
           "name": "Marinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 59,
+          "check": "9b89fe85",
+          "name": "Asterius",
           "qid": null
         },
         {
@@ -16962,6 +17007,24 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 27,
+          "end": 35,
+          "check": "48b81ae1",
+          "name": "Perpetua",
+          "qid": "Q12871157"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 50,
+          "check": "3017e758",
+          "name": "Felicitas",
+          "qid": "Q11697793"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 160,
           "end": 168,
           "check": "453191d6",
@@ -17201,6 +17264,15 @@
           "where": "text",
           "start": 7,
           "end": 21,
+          "check": "f973d7e3",
+          "name": "Ioannes de Deo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 262,
+          "end": 276,
           "check": "f973d7e3",
           "name": "Ioannes de Deo",
           "qid": null
@@ -18475,6 +18547,15 @@
           "check": "3cd74457",
           "name": "Salomon",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 224,
+          "end": 233,
+          "check": "28d3b5a1",
+          "name": "Salomon",
+          "qid": null
         }
       ],
       "mr:0313-sabinus": [
@@ -19081,7 +19162,7 @@
           "start": 26,
           "end": 59,
           "check": "9b439dc4",
-          "name": "Ioannes Nepomucenus Zegri Y Moreno",
+          "name": "Ioannes Nepomucenus Zegri y Moreno",
           "qid": null
         }
       ],
@@ -19380,6 +19461,15 @@
           "where": "text",
           "start": 19,
           "end": 25,
+          "check": "3bc091e1",
+          "name": "Ioseph",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 155,
+          "end": 161,
           "check": "3bc091e1",
           "name": "Ioseph",
           "qid": null
@@ -20538,6 +20628,15 @@
           "end": 76,
           "check": "d50360c3",
           "name": "Romulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 282,
+          "end": 290,
+          "check": "3e7ffa29",
+          "name": "Dionysius",
           "qid": null
         }
       ],
@@ -26484,6 +26583,15 @@
           "check": "4839c55f",
           "name": "Simeon",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 456,
+          "end": 464,
+          "check": "4839c55f",
+          "name": "Simeon",
+          "qid": null
         }
       ],
       "mr:0417-symeon": [
@@ -28750,7 +28858,7 @@
           "start": 30,
           "end": 62,
           "check": "12e2888c",
-          "name": "Maria Antonia Bandres Y Elosegui",
+          "name": "Maria Antonia Bandres y Elosegui",
           "qid": "Q3850591"
         }
       ],
@@ -35851,6 +35959,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 51,
+          "end": 60,
+          "check": "19230f84",
+          "name": "Donatianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 64,
           "end": 73,
           "check": "178ef47f",
@@ -38488,6 +38605,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 38,
+          "end": 45,
+          "check": "ccdec4f4",
+          "name": "Pothinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 255,
           "end": 263,
           "check": "06afc3a6",
@@ -39712,6 +39838,15 @@
           "start": 15,
           "end": 24,
           "check": "78fd8608",
+          "name": "Bonifatius",
+          "qid": "Q160445"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 177,
+          "end": 186,
+          "check": "09c0aef8",
           "name": "Bonifatius",
           "qid": "Q160445"
         }
@@ -41917,6 +42052,24 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 59,
+          "end": 68,
+          "check": "41f83647",
+          "name": "Anastasius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 89,
+          "check": "e158bf6a",
+          "name": "Felix",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 154,
           "end": 164,
           "check": "5dde6f0c",
@@ -43743,6 +43896,24 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 10,
+          "end": 24,
+          "check": "b831c2e7",
+          "name": "Ioannes Fisher",
+          "qid": "Q317149"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 49,
+          "check": "9baa4bf9",
+          "name": "Thomas More",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 223,
           "end": 237,
           "check": "04a04ab9",
@@ -44045,6 +44216,15 @@
           "start": 31,
           "end": 47,
           "check": "cc7d2f75",
+          "name": "Ioannes Baptista",
+          "qid": "Q40662"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 318,
+          "end": 333,
+          "check": "ac55ba92",
           "name": "Ioannes Baptista",
           "qid": "Q40662"
         }
@@ -45155,6 +45335,15 @@
           "where": "text",
           "start": 84,
           "end": 90,
+          "check": "fb8915b1",
+          "name": "Serenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 145,
+          "end": 151,
           "check": "fb8915b1",
           "name": "Serenus",
           "qid": null
@@ -52790,6 +52979,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 48,
+          "end": 53,
+          "check": "089c0d69",
+          "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 57,
           "end": 63,
           "check": "c3afd929",
@@ -52803,6 +53001,15 @@
           "end": 212,
           "check": "8b55ab49",
           "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 245,
+          "end": 251,
+          "check": "c3afd929",
+          "name": "Rufina",
           "qid": null
         }
       ],
@@ -54889,6 +55096,24 @@
           "check": "4d01c734",
           "name": "Gleb",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 159,
+          "end": 164,
+          "check": "1eda6e8b",
+          "name": "Boris",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 228,
+          "end": 232,
+          "check": "4d01c734",
+          "name": "Gleb",
+          "qid": null
         }
       ],
       "mr:0724-christina": [
@@ -55533,7 +55758,7 @@
           "start": 27,
           "end": 69,
           "check": "da56fedb",
-          "name": "Maria a Monte Carmelo Salles Y Barangueras",
+          "name": "Maria a Monte Carmelo Salles y Barangueras",
           "qid": null
         }
       ],
@@ -55705,6 +55930,24 @@
           "end": 20,
           "check": "ef0b91b8",
           "qid": "Q319242"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 32,
+          "end": 41,
+          "check": "3d0b349f",
+          "name": "Valentina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 56,
+          "check": "f3a47691",
+          "name": "Paulus",
+          "qid": null
         },
         {
           "kind": "person",
@@ -57594,6 +57837,15 @@
           "end": 49,
           "check": "10dd4b92",
           "name": "Maxima",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
+          "end": 71,
+          "check": "399447a2",
+          "name": "Secunda",
           "qid": null
         },
         {
@@ -61516,7 +61768,7 @@
           "start": 57,
           "end": 89,
           "check": "5d5ad4a7",
-          "name": "Victoria Diez Y Bustos de Molina",
+          "name": "Victoria Diez y Bustos de Molina",
           "qid": "Q9093431"
         }
       ],
@@ -64687,6 +64939,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 32,
+          "end": 37,
+          "check": "1b3271eb",
+          "name": "Bassa",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 96,
           "end": 101,
           "check": "39ff0d28",
@@ -65120,6 +65381,15 @@
           "start": 41,
           "end": 52,
           "check": "e2bf048e",
+          "name": "Symphorianus",
+          "qid": "Q686367"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 150,
+          "end": 161,
+          "check": "fe2e17da",
           "name": "Symphorianus",
           "qid": "Q686367"
         }
@@ -67898,6 +68168,15 @@
           "check": "bf77f1d5",
           "name": "Ioseph de Arimathaea",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 67,
+          "check": "782fc2d8",
+          "name": "Nicodemus",
+          "qid": "Q4320058"
         },
         {
           "kind": "person",
@@ -77743,7 +78022,7 @@
           "start": 24,
           "end": 55,
           "check": "ceef2750",
-          "name": "Iosephus Maria de Yermo Y Parres",
+          "name": "Iosephus Maria de Yermo y Parres",
           "qid": "Q1707576"
         }
       ],
@@ -95294,7 +95573,7 @@
           "start": 33,
           "end": 88,
           "check": "a3f8c1df",
-          "name": "Maria Caecilia Cendoya Y Araquistain",
+          "name": "Maria Caecilia Cendoya y Araquistain",
           "qid": null
         }
       ],
@@ -102186,7 +102465,7 @@
           "start": 30,
           "end": 54,
           "check": "a8d4442e",
-          "name": "Iosephus Manyanet Y Vives",
+          "name": "Iosephus Manyanet y Vives",
           "qid": "Q348452"
         }
       ],
