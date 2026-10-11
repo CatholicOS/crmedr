@@ -649,5 +649,45 @@ class AblativeNamesTest(unittest.TestCase):
                                      {"mr:0212-martyres-abitinenses"}), [])
 
 
+class Issue89And92Test(unittest.TestCase):
+    """A relative's genitive is no person; "do"/"des" are particles (#89). A subject's fuller printed
+    name is the subject, kept in its also (#92)."""
+
+    def test_do_and_des_are_particles(self):
+        names, _ = pt.footnote_names("Quorum nomina: Iosephus do Porto, Claudius Franciscus Gagnières des Granges.")
+        self.assertEqual(names, ["Iosephus do Porto", "Claudius Franciscus Gagnières des Granges"])
+
+    def test_a_relative_named_by_a_genitive_is_reported_not_written(self):
+        names, skipped = pt.footnote_names("Quorum nomina: Antonius Vilela iunior et filia eius, "
+                                           "filia Francisci Dias iunioris, Franciscus de Bastos.")
+        self.assertEqual(names, ["Antonius Vilela iunior", "Franciscus de Bastos"])
+        self.assertEqual(skipped, ["filia Francisci Dias iunioris"])
+        # "filii eius Dominicus": the children are named, in the nominative.
+        names, _ = pt.footnote_names("Quorum nomina: Ioannes Tomachi et filii eius Dominicus, Michael.")
+        self.assertEqual(names, ["Ioannes Tomachi", "Dominicus", "Michael"])
+
+    def test_a_subjects_fuller_name_in_the_text_is_the_subject(self):
+        import extract_persons as ep
+        lex = {pt.name_key(w): w for w in ["Fridericus", "Carolus", "Rubio", "Alvarez", "Primus"]}
+        persons, _ = ep.eulogy_persons(
+            "mr:0725-fridericus-rubio-alvarez-et-socii", "Beati Fridericus Rubio Alvarez et socii",
+            "Calatayúd, beatorum martyrum Friderici Caroli Rubio Alvarez et Primi.", [], lex, {})
+        self.assertEqual(persons, [
+            {"name": "Fridericus Rubio Alvarez", "also": ["Fridericus Carolus Rubio Alvarez"], "where": "text"},
+            {"name": "Primus", "where": "text"},
+        ])
+
+    def test_a_companion_is_not_taken_for_the_subject_by_its_first_name_alone(self):
+        self.assertTrue(ep_fuller("Ioannes Petrus Ruiz", "Ioannes Ruiz"))
+        self.assertFalse(ep_fuller("Ioannes Petrus Garcia", "Ioannes Ruiz"))   # another surname
+        self.assertFalse(ep_fuller("Ioannes Ruiz", "Ioannes Ruiz"))             # the same name
+        self.assertFalse(ep_fuller("Ruiz Ioannes", "Ioannes Ruiz"))             # not in order
+
+
+def ep_fuller(a, b):
+    import extract_persons as ep
+    return ep._fuller(a, b)
+
+
 if __name__ == "__main__":
     unittest.main()
