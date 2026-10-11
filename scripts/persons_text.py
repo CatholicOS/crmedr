@@ -12,7 +12,7 @@ from gazetteer_text import fold
 HONORIFICS = {"sanctus", "sancta", "sancti", "sanctae", "beatus", "beata", "beati", "beatae"}
 PLURAL_HONORIFICS = {"sancti", "sanctae", "beati", "beatae"}
 COMPANION_WORDS = {"socii", "sociae"}
-PLURAL_TITLES = {"Apostoli": "Apostolus", "Prophetae": "Propheta", "Evangelistae": "Evangelista"}
+PLURAL_TITLES = {"Apostoli": "Apostolus", "Prophetae": "Propheta", "Evangelistae": "Evangelista", "Archangeli": "Archangelus"}
 
 # The celebrations of the Blessed Virgin Mary: the person is named by the celebration, its
 # subject as it stands ("Beata Maria Virgo de Lourdes", "Visitatio beatae Mariae Virginis").

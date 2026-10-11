@@ -229,7 +229,7 @@ def _paren_ok(printed):
 # The titles a person's name may end with ("Abraham Patriarcha", "David Rex et Propheta"): the
 # print sets them after a comma, lowercase or not ("Abrahæ, patriárchæ", "David, regis et prophétæ"),
 # or not right after the name at all ("Gedeónis, ex tribu Manásse, qui iudex fuit").
-TITLES = {fold_map(t)[0] for t in ("apostolus", "evangelista", "propheta", "patriarcha", "rex", "sacerdos", "iudex")}
+TITLES = {fold_map(t)[0] for t in ("apostolus", "evangelista", "propheta", "patriarcha", "rex", "sacerdos", "iudex", "archangelus")}
 TITLE_FORMS = {"rex": "(?:rex|regis|regi|regem|rege)"}
 # Names whose last word is a title word but a surname ("Martíni, cognoménto Sacerdótis"): never cut
 # to the name alone, so a bare "Martíni" is not taken for him.
