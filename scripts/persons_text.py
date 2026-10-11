@@ -36,6 +36,9 @@ FEAST_PERSONS = {
     "mr:0926-gedeon-iudex": ["Gedeon"],
     "mr:0826-melchisedech-rex-et-sacerdos": ["Melchisedech"],
     "mr:0701-aaron-sacerdos": ["Aaron"],
+    # An apostle keeps his title in his name (Thomas Apostolus); "et Evangelista" is the second title.
+    "mr:0921-matthaeus-apostolus-et-evangelista": ["Matthaeus Apostolus"],
+    "mr:1227-ioannes-apostolus-et-evangelista": ["Ioannes Apostolus"],
 }
 # Subjects with an honorific that name a group, not persons: its members are
 # indexed only where a footnote names them.
