@@ -306,6 +306,44 @@
           "qid": null
         }
       ],
+      "mr:0214-cyrillus-et-methodius": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 18,
+          "end": 25,
+          "check": "cfb7f248",
+          "name": "Cyrillus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 47,
+          "check": "b42bdcc3",
+          "name": "Methodius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 300,
+          "end": 308,
+          "check": "3a3a9c07",
+          "name": "Cyrillus",
+          "qid": "Q351026"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 422,
+          "end": 431,
+          "check": "2abea83e",
+          "name": "Methodius",
+          "qid": null
+        }
+      ],
       "mr:0219-conradus-confalonieri": [
         {
           "kind": "place",
@@ -325,6 +363,63 @@
           "qid": null
         }
       ],
+      "mr:0222-cathedra-petri-apostoli": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 38,
+          "check": "2ccee727",
+          "name": "Petrus Apostolus",
+          "qid": "Q33923"
+        }
+      ],
+      "mr:0227-iulianus-et-eunus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "a63ffb0d",
+          "qid": "Q87"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 52,
+          "check": "b6d7829f",
+          "name": "Iulianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 60,
+          "check": "579b1793",
+          "name": "Eunus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 80,
+          "check": "d353327b",
+          "name": "Iulianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 266,
+          "end": 271,
+          "check": "785fdf27",
+          "name": "Eunus",
+          "qid": null
+        }
+      ],
       "mr:0303-iacobinus-de-canepacci": [
         {
           "kind": "place",
@@ -341,6 +436,101 @@
           "end": 53,
           "check": "0d36d1b4",
           "name": "Iacobinus de Canepacci",
+          "qid": null
+        }
+      ],
+      "mr:0303-marinus-et-asterius": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "ef0b91b8",
+          "qid": "Q319242"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 32,
+          "end": 38,
+          "check": "e63b612e",
+          "name": "Marinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 59,
+          "check": "9b89fe85",
+          "name": "Asterius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 276,
+          "end": 284,
+          "check": "e20e62da",
+          "name": "Asterius",
+          "qid": null
+        }
+      ],
+      "mr:0307-perpetua-et-felicitas": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 35,
+          "check": "48b81ae1",
+          "name": "Perpetua",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 50,
+          "check": "3017e758",
+          "name": "Felicitas",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 160,
+          "end": 168,
+          "check": "453191d6",
+          "name": "Perpetua",
+          "qid": "Q12871157"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 241,
+          "end": 250,
+          "check": "43a92c44",
+          "name": "Felicitas",
+          "qid": "Q11697793"
+        }
+      ],
+      "mr:0308-ioannes-de-deo": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 7,
+          "end": 21,
+          "check": "f973d7e3",
+          "name": "Ioannes de Deo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 262,
+          "end": 276,
+          "check": "f973d7e3",
+          "name": "Ioannes de Deo",
           "qid": null
         }
       ],
@@ -372,6 +562,63 @@
           "qid": null
         }
       ],
+      "mr:0313-rudericus-et-salomon": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "44f170aa",
+          "qid": "Q5818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 57,
+          "end": 65,
+          "check": "ebc5b974",
+          "name": "Rudericus",
+          "qid": "Q2635887"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 91,
+          "check": "3cd74457",
+          "name": "Salomon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 224,
+          "end": 233,
+          "check": "28d3b5a1",
+          "name": "Salomon",
+          "qid": null
+        }
+      ],
+      "mr:0319-ioseph": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 19,
+          "end": 25,
+          "check": "3bc091e1",
+          "name": "Ioseph",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 155,
+          "end": 161,
+          "check": "3bc091e1",
+          "name": "Ioseph",
+          "qid": null
+        }
+      ],
       "mr:0319-marcus-de-montegallo": [
         {
           "kind": "place",
@@ -388,6 +635,52 @@
           "end": 56,
           "check": "b8a06b03",
           "name": "Marcus de Montegallo",
+          "qid": null
+        }
+      ],
+      "mr:0324-timolaus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "ef0b91b8",
+          "qid": "Q319242"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 48,
+          "check": "383c1b55",
+          "name": "Timolaus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 50,
+          "end": 58,
+          "check": "23513ec8",
+          "name": "Dionysius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 76,
+          "check": "d50360c3",
+          "name": "Romulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 282,
+          "end": 290,
+          "check": "3e7ffa29",
+          "name": "Dionysius",
           "qid": null
         }
       ],
@@ -614,6 +907,34 @@
           "qid": null
         }
       ],
+      "mr:0417-simeon": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 10,
+          "check": "2da01e03",
+          "qid": "Q3746183"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 26,
+          "end": 34,
+          "check": "4839c55f",
+          "name": "Simeon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 456,
+          "end": 464,
+          "check": "4839c55f",
+          "name": "Simeon",
+          "qid": null
+        }
+      ],
       "mr:0419-bernardus-paenitens": [
         {
           "kind": "place",
@@ -735,6 +1056,43 @@
           "qid": null
         }
       ],
+      "mr:0524-donatianus-et-rogatianus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 31,
+          "check": "6dc293f6",
+          "qid": "Q12191"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 60,
+          "check": "19230f84",
+          "name": "Donatianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
+          "end": 73,
+          "check": "178ef47f",
+          "name": "Rogatianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 183,
+          "end": 193,
+          "check": "7bdca05d",
+          "name": "Donatianus",
+          "qid": null
+        }
+      ],
       "mr:0525-maria-magdalena-de-pazzi": [
         {
           "kind": "person",
@@ -743,6 +1101,626 @@
           "end": 32,
           "check": "a612d098",
           "name": "Maria Magdalena de Pazzi",
+          "qid": null
+        }
+      ],
+      "mr:0530-basilius-et-emmelia": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "ab364a39",
+          "qid": "Q48338"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 40,
+          "check": "4729ea69",
+          "name": "Basilius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 44,
+          "end": 51,
+          "check": "0d40e374",
+          "name": "Emmelia",
+          "qid": null
+        }
+      ],
+      "mr:0602-pothinus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 17,
+          "check": "5e38d61b",
+          "qid": "Q456"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 38,
+          "end": 45,
+          "check": "ccdec4f4",
+          "name": "Pothinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 255,
+          "end": 263,
+          "check": "06afc3a6",
+          "name": "Pothinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 22,
+          "end": 31,
+          "check": "1a0f7a5e",
+          "name": "Zacharias",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 43,
+          "end": 58,
+          "check": "5f9fd9b6",
+          "name": "Vetius Epagatus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 60,
+          "end": 68,
+          "check": "24df3106",
+          "name": "Macarius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 70,
+          "end": 81,
+          "check": "c5c8eeda",
+          "name": "Asclibiades",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 83,
+          "end": 90,
+          "check": "5772c7b4",
+          "name": "Silvius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 92,
+          "end": 98,
+          "check": "ecb30d00",
+          "name": "Primus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 100,
+          "end": 106,
+          "check": "6fd0b975",
+          "name": "Ulpius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 108,
+          "end": 115,
+          "check": "c90a428a",
+          "name": "Vitalis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 117,
+          "end": 125,
+          "check": "86fa793b",
+          "name": "Comminus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 127,
+          "end": 134,
+          "check": "fdd79178",
+          "name": "October",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 136,
+          "end": 146,
+          "check": "8f9a2225",
+          "name": "Philomenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 148,
+          "end": 155,
+          "check": "737c6cca",
+          "name": "Geminus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 157,
+          "end": 162,
+          "check": "c1d10bba",
+          "name": "Iulia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 164,
+          "end": 170,
+          "check": "b9888a94",
+          "name": "Albina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 172,
+          "end": 177,
+          "check": "2812c33b",
+          "name": "Grata",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 179,
+          "end": 185,
+          "check": "320b27f3",
+          "name": "Æmilia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 187,
+          "end": 194,
+          "check": "f3c73fa7",
+          "name": "Potamia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 196,
+          "end": 203,
+          "check": "51e9078e",
+          "name": "Pompeia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 205,
+          "end": 211,
+          "check": "b7a381cb",
+          "name": "Rodana",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 213,
+          "end": 219,
+          "check": "85b80db9",
+          "name": "Biblis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 221,
+          "end": 228,
+          "check": "f40ea408",
+          "name": "Quartia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 230,
+          "end": 237,
+          "check": "df19b342",
+          "name": "Materna",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 239,
+          "end": 245,
+          "check": "a4d070b1",
+          "name": "Helpis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 265,
+          "end": 272,
+          "check": "9cb32462",
+          "name": "Maturus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 284,
+          "end": 291,
+          "check": "ebb17380",
+          "name": "Attalus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 304,
+          "end": 313,
+          "check": "dbadfc88",
+          "name": "Alexander",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 324,
+          "end": 332,
+          "check": "14f64ce4",
+          "name": "Ponticus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 334,
+          "end": 339,
+          "check": "8884aca1",
+          "name": "Istus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 341,
+          "end": 349,
+          "check": "9ea41146",
+          "name": "Aristeus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 351,
+          "end": 360,
+          "check": "f4a365ce",
+          "name": "Cornelius",
+          "qid": "Q54798"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 362,
+          "end": 369,
+          "check": "1bb89016",
+          "name": "Zosimus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 371,
+          "end": 376,
+          "check": "070694bf",
+          "name": "Titus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 378,
+          "end": 384,
+          "check": "6f06f5ad",
+          "name": "Iulius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 386,
+          "end": 393,
+          "check": "31f02123",
+          "name": "Zoticus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 395,
+          "end": 405,
+          "check": "4cefce1b",
+          "name": "Apollonius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 407,
+          "end": 417,
+          "check": "beb2e48d",
+          "name": "Geminianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 419,
+          "end": 424,
+          "check": "c1d10bba",
+          "name": "Iulia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 433,
+          "end": 439,
+          "check": "9d910fdb",
+          "name": "Ausona",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 441,
+          "end": 447,
+          "check": "320b27f3",
+          "name": "Æmilia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 456,
+          "end": 463,
+          "check": "607707ca",
+          "name": "Iamnica",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 465,
+          "end": 472,
+          "check": "51e9078e",
+          "name": "Pompeia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 481,
+          "end": 486,
+          "check": "894e3cfb",
+          "name": "Domna",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 488,
+          "end": 493,
+          "check": "8b55ab49",
+          "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 495,
+          "end": 503,
+          "check": "7349f5e7",
+          "name": "Trophima",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 505,
+          "end": 512,
+          "check": "a56d0d41",
+          "name": "Antonia",
+          "qid": null
+        }
+      ],
+      "mr:0605-bonifatius": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 15,
+          "end": 24,
+          "check": "78fd8608",
+          "name": "Bonifatius",
+          "qid": "Q160445"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 177,
+          "end": 186,
+          "check": "09c0aef8",
+          "name": "Bonifatius",
+          "qid": null
+        }
+      ],
+      "mr:0614-anastasius-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "44f170aa",
+          "qid": "Q5818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 68,
+          "check": "41f83647",
+          "name": "Anastasius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 89,
+          "check": "e158bf6a",
+          "name": "Felix",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 154,
+          "end": 164,
+          "check": "5dde6f0c",
+          "name": "Anastasius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 256,
+          "end": 261,
+          "check": "f6b6aad7",
+          "name": "Felix",
           "qid": null
         }
       ],
@@ -773,6 +1751,101 @@
           "end": 34,
           "check": "6169db65",
           "name": "Amos Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0622-ioannes-fisher-et-thomas-more": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 10,
+          "end": 24,
+          "check": "b831c2e7",
+          "name": "Ioannes Fisher",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 49,
+          "check": "9baa4bf9",
+          "name": "Thomas More",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 223,
+          "end": 237,
+          "check": "04a04ab9",
+          "name": "Ioannes Fisher",
+          "qid": "Q317149"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 363,
+          "end": 374,
+          "check": "bd8e9ae3",
+          "name": "Thomas More",
+          "qid": null
+        }
+      ],
+      "mr:0624-ioannes-baptista": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 47,
+          "check": "cc7d2f75",
+          "name": "Ioannes Baptista",
+          "qid": "Q40662"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 318,
+          "end": 333,
+          "check": "ac55ba92",
+          "name": "Ioannes Baptista",
+          "qid": null
+        }
+      ],
+      "mr:0628-plutarchus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "a63ffb0d",
+          "qid": "Q87"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 73,
+          "end": 82,
+          "check": "9dcc1181",
+          "name": "Plutarchus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 90,
+          "check": "fb8915b1",
+          "name": "Serenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 145,
+          "end": 151,
+          "check": "fb8915b1",
+          "name": "Serenus",
           "qid": null
         }
       ],
@@ -861,6 +1934,52 @@
           "end": 30,
           "check": "7f310b34",
           "name": "Myrope",
+          "qid": null
+        }
+      ],
+      "mr:0717-iusta-et-rufina": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 36,
+          "check": "bcba9ffc",
+          "qid": "Q8717"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 48,
+          "end": 53,
+          "check": "089c0d69",
+          "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 57,
+          "end": 63,
+          "check": "c3afd929",
+          "name": "Rufina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 207,
+          "end": 212,
+          "check": "8b55ab49",
+          "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 245,
+          "end": 251,
+          "check": "c3afd929",
+          "name": "Rufina",
           "qid": null
         }
       ],
@@ -1002,6 +2121,52 @@
           "qid": null
         }
       ],
+      "mr:0724-boris-et-gleb": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 9,
+          "check": "5cfd0596",
+          "qid": "Q159"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 21,
+          "end": 26,
+          "check": "1eda6e8b",
+          "name": "Boris",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 30,
+          "end": 34,
+          "check": "4d01c734",
+          "name": "Gleb",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 159,
+          "end": 164,
+          "check": "1eda6e8b",
+          "name": "Boris",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 228,
+          "end": 232,
+          "check": "4d01c734",
+          "name": "Gleb",
+          "qid": null
+        }
+      ],
       "mr:0725-iacobus-apostolus": [
         {
           "kind": "person",
@@ -1060,6 +2225,52 @@
           "qid": null
         }
       ],
+      "mr:0725-valentina-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "ef0b91b8",
+          "qid": "Q319242"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 32,
+          "end": 41,
+          "check": "3d0b349f",
+          "name": "Valentina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 56,
+          "check": "f3a47691",
+          "name": "Paulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 130,
+          "end": 139,
+          "check": "d8154a54",
+          "name": "Valentina",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 273,
+          "end": 279,
+          "check": "0a94e7ea",
+          "name": "Paulus",
+          "qid": null
+        }
+      ],
       "mr:0730-leopoldus-mandic": [
         {
           "kind": "place",
@@ -1076,6 +2287,43 @@
           "end": 65,
           "check": "c7ed3468",
           "name": "Leopoldus Mandic",
+          "qid": null
+        }
+      ],
+      "mr:0730-maxima-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 31,
+          "check": "3ec7ca23",
+          "qid": "Q2429748"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 49,
+          "check": "10dd4b92",
+          "name": "Maxima",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
+          "end": 71,
+          "check": "399447a2",
+          "name": "Secunda",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 262,
+          "end": 269,
+          "check": "2153b1ae",
+          "name": "Secunda",
           "qid": null
         }
       ],
@@ -1166,6 +2414,25 @@
           "qid": null
         }
       ],
+      "mr:0819-ludovicus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 34,
+          "check": "d56c8050",
+          "qid": "Q207584"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
+          "end": 61,
+          "check": "0cd366ce",
+          "name": "Ludovicus",
+          "qid": null
+        }
+      ],
       "mr:0820-samuel-propheta": [
         {
           "kind": "person",
@@ -1177,6 +2444,26 @@
           "qid": null
         }
       ],
+      "mr:0821-bassa-et-socii": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 32,
+          "end": 37,
+          "check": "1b3271eb",
+          "name": "Bassa",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 101,
+          "check": "39ff0d28",
+          "name": "Bassa",
+          "qid": null
+        }
+      ],
       "mr:0822-maria-regina": [
         {
           "kind": "person",
@@ -1185,6 +2472,34 @@
           "end": 35,
           "check": "2d972217",
           "name": "Beata Maria Virgo Regina",
+          "qid": null
+        }
+      ],
+      "mr:0822-symphorianus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 32,
+          "check": "c2df9003",
+          "qid": "Q190827"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 52,
+          "check": "e2bf048e",
+          "name": "Symphorianus",
+          "qid": "Q686367"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 150,
+          "end": 161,
+          "check": "fe2e17da",
+          "name": "Symphorianus",
           "qid": null
         }
       ],
@@ -1254,6 +2569,43 @@
           "check": "10318270",
           "name": "Ioanna Jugan",
           "qid": null
+        }
+      ],
+      "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 11,
+          "check": "0859ee56",
+          "qid": "Q1218"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 36,
+          "end": 55,
+          "check": "bf77f1d5",
+          "name": "Ioseph de Arimathaea",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 67,
+          "check": "782fc2d8",
+          "name": "Nicodemus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 235,
+          "end": 244,
+          "check": "fe4aa9d6",
+          "name": "Nicodemus",
+          "qid": "Q4320058"
         }
       ],
       "mr:0904-caletricus": [
