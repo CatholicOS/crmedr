@@ -316878,7 +316878,7 @@
       "eulogy": "mr:0713-magdalena-a-matre-dei-et-socii",
       "day": "07-13",
       "typology": "dies_natalis",
-      "subject": "Beati Magdalena a Matre Dei et socii",
+      "subject": "Beatae Magdalena a Matre Dei et socii",
       "name": "Magdalena a Matre Dei",
       "where": "text",
       "companions": [],
@@ -393255,8 +393255,11 @@
       "eulogy": "mr:0829-ioanna-jugan",
       "day": "08-29",
       "typology": "dies_natalis",
-      "subject": "Sancta Ioanna Jugan",
+      "subject": "Beata Ioanna Jugan",
       "name": "Ioanna Jugan",
+      "also": [
+        "Maria a Cruce Jugan"
+      ],
       "where": "text",
       "companions": [],
       "failed": [
@@ -473071,14 +473074,16 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0927-francisca-xaveria-fenollosa-alcayna|Francisca Xaveria Fenollosa Alcayna",
-      "eulogy": "mr:0927-francisca-xaveria-fenollosa-alcayna",
+      "id": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo|Francisca Xaveria Fenollosa Alcayna",
+      "eulogy": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo",
       "day": "09-27",
       "typology": "dies_natalis",
-      "subject": "Beatus Francisca Xaveria Fenollosa Alcayna",
+      "subject": "Beatae Francisca Xaveria Fenollosa Alcayna et Herminia Martinez Amigo",
       "name": "Francisca Xaveria Fenollosa Alcayna",
       "where": "text",
-      "companions": [],
+      "companions": [
+        "Herminia Martinez Amigo"
+      ],
       "failed": [
         "no candidate found"
       ],
@@ -507603,7 +507608,7 @@
       "eulogy": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
       "day": "10-17",
       "typology": "dies_natalis",
-      "subject": "Beati Maria Natalia a Sancto Ludovico et socii",
+      "subject": "Beatae Maria Natalia a Sancto Ludovico et socii",
       "name": "Maria Augustina a Sacro Corde Iesu Déjardin",
       "where": {
         "footnote": 1
@@ -507627,7 +507632,7 @@
       "eulogy": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
       "day": "10-17",
       "typology": "dies_natalis",
-      "subject": "Beati Maria Natalia a Sancto Ludovico et socii",
+      "subject": "Beatae Maria Natalia a Sancto Ludovico et socii",
       "name": "Maria Laurentina a Sancto Stanislao Prin",
       "where": {
         "footnote": 1
@@ -507651,7 +507656,7 @@
       "eulogy": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
       "day": "10-17",
       "typology": "dies_natalis",
-      "subject": "Beati Maria Natalia a Sancto Ludovico et socii",
+      "subject": "Beatae Maria Natalia a Sancto Ludovico et socii",
       "name": "Maria Ludovica a Sancto Francisco Ducrez",
       "where": {
         "footnote": 1
@@ -507675,7 +507680,7 @@
       "eulogy": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
       "day": "10-17",
       "typology": "dies_natalis",
-      "subject": "Beati Maria Natalia a Sancto Ludovico et socii",
+      "subject": "Beatae Maria Natalia a Sancto Ludovico et socii",
       "name": "Maria Natalia a Sancto Ludovico",
       "where": "text",
       "companions": [
@@ -507697,7 +507702,7 @@
       "eulogy": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
       "day": "10-17",
       "typology": "dies_natalis",
-      "subject": "Beati Maria Natalia a Sancto Ludovico et socii",
+      "subject": "Beatae Maria Natalia a Sancto Ludovico et socii",
       "name": "Maria Ursula a Sancto Bernardino Bourla",
       "where": {
         "footnote": 1

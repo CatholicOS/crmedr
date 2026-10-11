@@ -23861,6 +23861,9 @@
       "mr:0829-ioanna-jugan": [
         {
           "name": "Ioanna Jugan",
+          "also": [
+            "Maria a Cruce Jugan"
+          ],
           "where": "text"
         }
       ],
@@ -28974,9 +28977,13 @@
           "where": "text"
         }
       ],
-      "mr:0927-francisca-xaveria-fenollosa-alcayna": [
+      "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo": [
         {
           "name": "Francisca Xaveria Fenollosa Alcayna",
+          "where": "text"
+        },
+        {
+          "name": "Herminia Martinez Amigo",
           "where": "text"
         }
       ],

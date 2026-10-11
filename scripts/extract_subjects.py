@@ -114,14 +114,78 @@ def display_from_slug(mrid):
     return ' '.join(out)
 
 
+# The subject's honorific is printed in the genitive (or, opening the eulogy, the
+# nominative): its ending gives the subject's gender. Folded: æ is e.
+LA_HONORIFIC_GENDER = {
+    'i': 'm', 'us': 'm', 'o': 'm', 'um': 'm', 'orum': 'm', 'os': 'm',
+    'e': 'f', 'a': 'f', 'am': 'f', 'arum': 'f', 'as': 'f',
+}
+LA_HONORIFIC = re.compile(r"\b(?:[Ss]anct|[Bb]eat)[a-zæœ]*")
+LA_HONORIFIC_ENDINGS = {('m', False): 'us', ('f', False): 'a', ('m', True): 'i', ('f', True): 'ae'}
+
+
+# Words after "et" that continue one person's name, not a second person: titles
+# ("rex-et-sacerdos", "apostolus-et-evangelista"); and "a Iesu et Maria".
+NOT_SECOND_PERSON = {'sacerdos', 'propheta', 'evangelista'}
+# Plural nouns that open a group's ID ("septem-dormientes-ephesi", "innocentes").
+GROUP_NOUNS = {'innocentes', 'dormientes', 'fundatores', 'protomartyres'}
+
+
+def la_plural(parts):
+    """Whether an ID's slug words name more than one person: "et socii", a pair, or a
+    group ("martyres-…"); not "sancti" in a place or religious name ("de-burgo-sancti-sepulcri")."""
+    if parts[-2:] == ['et', 'socii']:
+        return True
+    if any(w == 'et' and 0 < i < len(parts) - 1 and parts[i + 1] not in NOT_SECOND_PERSON
+           and parts[i - 1:i + 2] != ['iesu', 'et', 'maria'] for i, w in enumerate(parts)):
+        return True
+    return bool(set(parts) & ((GROUPS_M | GROUPS_F | GROUP_NOUNS) - {'sancti'}))
+
+
+def _names_next(after, stem):
+    """Whether the name after an honorific opens with `stem`: the first capitalized word, or a
+    lowercase number or noun before it ("sanctórum septem", "sanctárum mártyrum Agathæ")."""
+    for word in re.findall(r"[A-Za-zæœ]+", after)[:3]:
+        if fold(word).startswith(stem):
+            return True
+        if word[0].isupper() or LA_HONORIFIC.fullmatch(word):
+            return False
+    return False
+
+
+def la_honorific(text, first, plural):
+    """The nominative honorific of the eulogy's subject ("Beata", "Sancti"…), read from
+    the printed honorific of the mention whose name opens with the ID's first word
+    (accents stripped: "beátæ Maríæ" is "Beata"). The ID gives the number: a pair or a
+    group is plural even where the honorific agrees with the first name ("beáti Petri
+    … et sociórum"). None when no mention names the subject."""
+    from extract_places import base_copy
+    copy = base_copy(text or '')
+    name = fold(first).strip()
+    stem = name[:max(2, min(4, len(name) - (2 if len(name) > 4 else 1)))]  # "Finæ" folds to "fine"
+    for m in LA_HONORIFIC.finditer(copy):
+        if not _names_next(copy[m.end():], stem):
+            continue
+        h = re.fullmatch(r"(sanct|beat)([a-z]+)", fold(m.group(0)).strip())
+        gender = LA_HONORIFIC_GENDER.get(h.group(2)) if h else None
+        if gender:
+            return h.group(1).capitalize() + LA_HONORIFIC_ENDINGS[(gender, plural)]
+    return None
+
+
 def la_subject(mrid, text):
     parts = mrid.split('-', 1)[1].split('-')
     toks = set(parts)
     name = display_from_slug(mrid)
     if parts[0] in FEASTS:
         return name
+    honorific = la_honorific(text, parts[0], la_plural(parts))
+    if honorific:
+        return f'{honorific} {name}'
+    # No printed honorific to read: guessed from the ID.
     base = 'Sanct'
-    m = MARKER_LA.search(text or '')
+    from extract_places import base_copy
+    m = MARKER_LA.search(base_copy(text or ''))
     if m and fold(m.group(0)).strip().startswith('beat'):
         base = 'Beat'
     if toks & GROUPS_F and not (toks & GROUPS_M):
@@ -283,6 +347,10 @@ def main():
     # Imported here: extract_typology imports `fold` from this module.
     from extract_typology import latin_texts
     tex['la'] = latin_texts(reg['entries'], tex['la'])
+    # A misprinted honorific ("betárum") is read as intended (data/misprints.json).
+    for mp in json.load(open(repo_root / 'data' / 'misprints.json', encoding='utf-8'))['misprints']:
+        if mp['edition'] == folders['la'] and mp['id'] in tex['la'] and 'footnote' not in mp:
+            tex['la'][mp['id']] = tex['la'][mp['id']].replace(mp['printed'], mp['intended'], 1)
     out = {'la': {}, 'it': {}, 'en': {}}
     for e in current:
         out['la'][e['id']] = LA_SUBJECT_OVERRIDES.get(e['id']) or la_subject(e['id'], tex['la'].get(e['id'], ''))
@@ -305,7 +373,7 @@ def main():
     for loc in ('la', 'it', 'en'):
         full = {i: out[loc].get(i, '') for i in all_ids}
         with open(i18n / f'{loc}.json', 'w', encoding='utf-8') as f:
-            json.dump(full, f, ensure_ascii=False, indent=1)
+            json.dump(full, f, ensure_ascii=False, indent=2)
             f.write('\n')
         print(loc, 'keys:', len(full), 'filled:', sum(1 for v in full.values() if v))
 
