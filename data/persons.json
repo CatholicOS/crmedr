@@ -19650,10 +19650,9 @@
       "mr:0725-fridericus-rubio-alvarez-et-socii": [
         {
           "name": "Fridericus Rubio Alvarez",
-          "where": "text"
-        },
-        {
-          "name": "Fridericus Carolus Rubio Alvarez",
+          "also": [
+            "Fridericus Carolus Rubio Alvarez"
+          ],
           "where": "text"
         },
         {
@@ -20274,10 +20273,9 @@
       "mr:0730-braulio-maria-corres-diaz-de-cerio-et-socii": [
         {
           "name": "Braulio Maria Corres Diaz de Cerio",
-          "where": "text"
-        },
-        {
-          "name": "Braulio Maria Paulus Corres Diaz de Cerio",
+          "also": [
+            "Braulio Maria Paulus Corres Diaz de Cerio"
+          ],
           "where": "text"
         },
         {
@@ -24031,10 +24029,9 @@
       "mr:0831-edmigius-primo-rodriguez-et-socii": [
         {
           "name": "Edmigius Primo Rodriguez",
-          "where": "text"
-        },
-        {
-          "name": "Edmigius Isidorus Primo Rodriguez",
+          "also": [
+            "Edmigius Isidorus Primo Rodriguez"
+          ],
           "where": "text"
         }
       ],
@@ -24113,10 +24110,9 @@
       "mr:0901-christinus-roca-huguet-et-socii": [
         {
           "name": "Christinus Roca Huguet",
-          "where": "text"
-        },
-        {
-          "name": "Christinus Michael Roca Huguet",
+          "also": [
+            "Christinus Michael Roca Huguet"
+          ],
           "where": "text"
         },
         {
@@ -24439,7 +24435,7 @@
           }
         },
         {
-          "name": "Claudius Franciscus Gagnières",
+          "name": "Claudius Franciscus Gagnières des Granges",
           "where": {
             "footnote": 1
           }
@@ -24850,7 +24846,7 @@
           "where": "text"
         },
         {
-          "name": "Daniel Ludovicus André",
+          "name": "Daniel Ludovicus André des Pommerayes",
           "where": {
             "footnote": 1
           }
@@ -26165,10 +26161,9 @@
       "mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii": [
         {
           "name": "Iosephus Caecilius Rodriguez Gonzalez",
-          "where": "text"
-        },
-        {
-          "name": "Iosephus Caecilius Bonifatius Rodriguez Gonzalez",
+          "also": [
+            "Iosephus Caecilius Bonifatius Rodriguez Gonzalez"
+          ],
           "where": "text"
         },
         {
@@ -28738,10 +28733,9 @@
       "mr:0925-ioannes-petrus-bengoa-aranguren-et-socii": [
         {
           "name": "Ioannes Petrus Bengoa Aranguren",
-          "where": "text"
-        },
-        {
-          "name": "Ioannes Petrus Iosephus Bengoa Aranguren",
+          "also": [
+            "Ioannes Petrus Iosephus Bengoa Aranguren"
+          ],
           "where": "text"
         }
       ],
@@ -28992,10 +28986,9 @@
       "mr:0928-laurentius-ruiz-et-socii": [
         {
           "name": "Laurentius Ruiz",
-          "where": "text"
-        },
-        {
-          "name": "Laurentius de Maníla Ruiz",
+          "also": [
+            "Laurentius de Maníla Ruiz"
+          ],
           "where": "text"
         },
         {
@@ -29731,12 +29724,6 @@
           }
         },
         {
-          "name": "Francisci Dias",
-          "where": {
-            "footnote": 1
-          }
-        },
-        {
           "name": "Franciscus de Bastos",
           "where": {
             "footnote": 1
@@ -29767,7 +29754,7 @@
           }
         },
         {
-          "name": "Iosephus",
+          "name": "Iosephus do Porto",
           "where": {
             "footnote": 1
           }
@@ -31593,10 +31580,9 @@
       "mr:1023-ambrosius-leo-lorente-vicente-et-socii": [
         {
           "name": "Ambrosius Leo Lorente Vicente",
-          "where": "text"
-        },
-        {
-          "name": "Ambrosius Leo Petrus Lorente Vicente",
+          "also": [
+            "Ambrosius Leo Petrus Lorente Vicente"
+          ],
           "where": "text"
         }
       ],
@@ -35487,10 +35473,9 @@
       "mr:1128-ioannes-iesu-adradas-gonzalo-et-socii": [
         {
           "name": "Ioannes Iesu Adradas Gonzalo",
-          "where": "text"
-        },
-        {
-          "name": "Ioannes Iesu Marianus Adradas Gonzalo",
+          "also": [
+            "Ioannes Iesu Marianus Adradas Gonzalo"
+          ],
           "where": "text"
         },
         {

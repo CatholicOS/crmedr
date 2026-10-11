@@ -53,6 +53,16 @@ def _same_person(a, b):
     return n > 0 and x[:n] == y[:n]
 
 
+def _fuller(a, b):
+    """`a` is `b` printed in full: b's words, in order, among more of a's, with the same first and
+    last word ("Fridericus Carolus Rubio Alvarez" for "Fridericus Rubio Alvarez")."""
+    x, y = name_key(a).split(), name_key(b).split()
+    if len(x) <= len(y) or not y or x[0] != y[0] or x[-1] != y[-1]:
+        return False
+    rest = iter(x)
+    return all(w in rest for w in y)
+
+
 # An other name printed right after a person in the text: "Mamántis seu Mamétis", "Dativi, qui et Felicis".
 VARIANT_AFTER = re.compile(r"\s*,?\s*(?:seu|vel|sive|(?:qui|quae|quæ)\s+et)\s+", re.I)
 NAME_WORD = re.compile(r"[^\W\d_][\w'’\-]*")
@@ -115,8 +125,15 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     subjects = subject_names(mrid, subject)
 
     def add(name, where, marked=False, also=()):
-        # A fuller or shorter form of a subject is the subject, in the subject's form.
+        # A fuller or shorter form of a subject is the subject, in the subject's form; a fuller form
+        # with words inside ("Fridericus Carolus Rubio Alvarez") is kept as the subject's other name.
         if any(_same_person(name, s) for s in subjects if s != name):
+            return
+        fuller = next((s for s in subjects if _fuller(name, s)), None)
+        if fuller is not None:
+            i = holder.get(name_key(fuller))
+            if i is not None:
+                persons[i] = _with_also(persons[i], [name, *also])
             return
         key = name_key(name)
         if where == "text":

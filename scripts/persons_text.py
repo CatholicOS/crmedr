@@ -98,7 +98,7 @@ def subject_names(mrid, subject):
 
 # Lowercase words inside a name, kept only when a capitalized word follows.
 PARTICLES = {"de", "a", "ab", "van", "von", "di", "da", "du", "la", "le", "y", "dos", "das", "del", "der",
-             "den", "ten", "ter", "e", "los", "las", "el"}
+             "den", "ten", "ter", "e", "los", "las", "el", "do", "des"}  # "Iosephus do Porto", "Gagnières des Granges"
 # Words that may come before a name in a footnote segment ("sancti episcopi Aloysius...",
 # "necnon Maria...", "filii eius Dominicus").
 LEADING_DESCRIPTORS = {"necnon", "atque", "ac", "et", "filii", "filius", "filia", "filiae", "eius", "eorum",
@@ -117,6 +117,9 @@ ABLATIVE_EPITHETS = {"iuniore": "iunior", "seniore": "senior"}  # "Saturnino iun
 # "Saturninus, presbyter, cum quattuor filiis, id est Saturnino iuniore et Felice..." (issue #81).
 # Others (a/ab, de, ex/e) open a religious name or a description ("ex Ordine Prædicatorum"), never names.
 ABLATIVE_PREPOSITIONS = {"cum"}
+# A relative named after a person in the genitive ("filia Francisci Dias iunioris"): the segment
+# names no one by name, so it is reported, not read ("filii eius Dominicus" names the children).
+RELATIVES = {"filia", "filius", "uxor", "coniux", "soror", "frater", "mater", "pater", "vidua", "nepos", "neptis"}
 # Words that mark a person as another of a name just listed, before or after it: "alius Felix",
 # "Rogatianus alius", "Iulia altera", "Theodori alterius" (the genitive, in a eulogy's text).
 REPEAT_WORDS = {"alius", "alia", "alter", "altera", "alterius", "adhuc"}
@@ -256,7 +259,11 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
                 singles = []
                 continue
             for k, (name, part) in enumerate(read):
-                if name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
+                head = part.split()
+                if len(head) > 1 and fold(head[0]) in RELATIVES and head[1][:1].isupper():
+                    skipped.append(part)  # "filia Francisci Dias iunioris": a relative of someone named
+                    last = None
+                elif name and re.search(r"(?:ae|æ)$", fold(name.split()[0])):
                     skipped.append(part)  # a genitive ("Teresiae Henricae..."): not a nominative to write
                     last = None
                 elif name:
