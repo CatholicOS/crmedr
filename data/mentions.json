@@ -77589,6 +77589,15 @@
           "check": "f5c2d7e8",
           "name": "Matthaeus Apostolus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
+          "end": 57,
+          "check": "8b49a459",
+          "name": "Matthaeus Apostolus",
+          "qid": null
         }
       ],
       "mr:0921-maura": [
