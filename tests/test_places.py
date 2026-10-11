@@ -208,6 +208,20 @@ class MisprintTest(unittest.TestCase):
         self.assertTrue(p.validate_misprints([{"id": "mr:0101-a"}], MTEXTS, ids))
         self.assertTrue(p.validate_misprints(list(reversed(MISPRINTS)), MTEXTS, ids))   # unsorted
 
+    def test_a_misprint_in_a_footnote(self):
+        ids = {"mr:0101-a"}
+        notes = {"martyrologium_romanum_2004_it_IT": {"mr:0101-a": [{"mark": "1", "after": "Fitte",
+                                                                    "text": "I loro nomi sono: Fitta e maria."}]}}
+        rec = dict(id="mr:0101-a", edition="martyrologium_romanum_2004_it_IT", footnote=1, printed="e maria",
+                   intended="e Maria", verified="print")
+        self.assertEqual(p.validate_misprints([rec], MTEXTS, ids, notes), [])
+        self.assertTrue(p.validate_misprints([dict(rec, footnote=2)], MTEXTS, ids, notes))       # no such footnote
+        self.assertTrue(p.validate_misprints([dict(rec, footnote="1")], MTEXTS, ids, notes))     # not an integer
+        self.assertTrue(p.validate_misprints([dict(rec, printed="Fitte")], MTEXTS, ids, notes))  # the text's word
+        # A footnote's misprint is no stop word for the places, which are read from the texts.
+        self.assertEqual(p.misprint_stop_words([dict(rec, printed="nell", intended="nel")],
+                                               "martyrologium_romanum_2004_it_IT", {"nel"}), set())
+
     def test_whole_word_count_and_short_phrases(self):
         ids = {"mr:0101-a"}
         texts = {"martyrologium_romanum_2004_it_IT": {"mr:0101-a": "A Fittopoli nell territorio dell’odierna Fittia, nell Fittonia."}}

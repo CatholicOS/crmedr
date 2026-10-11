@@ -71,6 +71,8 @@ EDITION_LA = "martyrologium_romanum_2004"
 EDITION_IT = "martyrologium_romanum_2004_it_IT"
 EDITION_EN = "martyrologium_romanum_2004_en_unofficial"
 MISPRINT_KEYS = {"id", "edition", "printed", "intended", "verified"}
+# A misprint in a footnote names it: the eulogy's nth footnote in that edition, from 1.
+MISPRINT_OPTIONAL_KEYS = {"footnote"}
 # A misprint is recorded as the misprinted word, or as the shortest phrase (up
 # to three words) that makes it unique in the text ("un Inghilterra").
 MISPRINT_MAX_WORDS = 3
@@ -376,11 +378,12 @@ def validate_duplicated_entries(records, entries, texts_by_edition):
     return errors
 
 
-def validate_misprints(misprints, texts_by_edition, current_ids):
+def validate_misprints(misprints, texts_by_edition, current_ids, footnotes_by_edition=None):
     errors = []
     for r in misprints:
-        if set(r) != MISPRINT_KEYS:
-            errors.append(f"misprint record keys must be {sorted(MISPRINT_KEYS)}: {sorted(r)}")
+        if not MISPRINT_KEYS <= set(r) <= MISPRINT_KEYS | MISPRINT_OPTIONAL_KEYS:
+            errors.append(f"misprint record keys must be {sorted(MISPRINT_KEYS)} (and optionally "
+                          f"{sorted(MISPRINT_OPTIONAL_KEYS)}): {sorted(r)}")
             continue
         if r["id"] not in current_ids:
             errors.append(f"{r['id']}: not a current ID")
@@ -392,10 +395,18 @@ def validate_misprints(misprints, texts_by_edition, current_ids):
                    for k in ("printed", "intended")):
             errors.append(f"{r['id']}: printed and intended must be 1 to {MISPRINT_MAX_WORDS} words")
             continue
-        count = len(re.findall(r"(?<![\w’'])" + re.escape(r["printed"]) + r"(?![\w’'])",
-                               texts_by_edition[r["edition"]].get(r["id"], "")))
+        where = texts_by_edition[r["edition"]].get(r["id"], "")
+        if "footnote" in r:
+            notes = (footnotes_by_edition or {}).get(r["edition"], {}).get(r["id"], [])
+            n = r["footnote"]
+            if type(n) is not int or not 1 <= n <= len(notes):
+                errors.append(f"{r['id']}: footnote {n!r} is not a footnote of the eulogy in {r['edition']}")
+                continue
+            where = notes[n - 1]["text"]
+        count = len(re.findall(r"(?<![\w’'])" + re.escape(r["printed"]) + r"(?![\w’'])", where))
         if count != 1:
-            errors.append(f"{r['id']}: {r['printed']!r} occurs {count} times in {r['edition']}")
+            place = f"footnote {r['footnote']} in " if "footnote" in r else ""
+            errors.append(f"{r['id']}: {r['printed']!r} occurs {count} times in {place}{r['edition']}")
     keys = [(r.get("id"), r.get("edition")) for r in misprints]
     if keys != sorted(keys, key=lambda k: (str(k[0]), str(k[1]))):
         errors.append("misprint records must be sorted by id, then edition")
@@ -406,7 +417,7 @@ def misprint_stop_words(misprints, edition, stop_words):
     """Printed misprints (accent-stripped, lowercase) of a stop word in `edition`."""
     fold = lambda w: base_copy(w).lower()
     return {fold(r["printed"]) for r in misprints
-            if r["edition"] == edition and fold(r["intended"]) in stop_words}
+            if r["edition"] == edition and "footnote" not in r and fold(r["intended"]) in stop_words}
 
 
 def with_it(item, it):
@@ -620,8 +631,13 @@ def main():
     latin_order = [o for o in order if o[0] in texts]
     # The unofficial English 2004 edition's misprints are checked too (not used for places).
     texts_en = load_texts(texts_repo, EDITION_EN)
+    footnotes = {}
+    for edition in (EDITION_LA, EDITION_IT):
+        path = texts_repo / "data" / "editions" / edition / "footnotes.json"
+        if path.exists():
+            footnotes[edition] = json.loads(path.read_text(encoding="utf-8"))
     errors = validate_misprints(misprints, {EDITION_LA: texts, EDITION_IT: texts_it, EDITION_EN: texts_en},
-                                {m for m, _, _ in order})
+                                {m for m, _, _ in order}, footnotes)
     errors += validate_duplicated_entries(load_duplicated_entries(repo_root), entries,
                                           {EDITION_LA: texts, EDITION_IT: texts_it})
     assert not errors, "invalid data/misprints.json:\n" + "\n".join(errors)

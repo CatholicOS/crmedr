@@ -1,5 +1,5 @@
 {
-  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology (and the unofficial English 2004 text). printed (the misprinted word, or the shortest phrase of up to three words that makes it unique) occurs exactly once, as whole words, in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. duplicated_entries records a whole eulogy that an edition prints a second time on another day (month/day, before the numbered entry before_entry); the copy is left out of the texts. Hand-maintained; see docs/canonicalization-report.md.",
+  "$comment": "Verified misprints in the printed 2004 editions of the Roman Martyrology (and the unofficial English 2004 text). printed (the misprinted word, or the shortest phrase of up to three words that makes it unique) occurs exactly once, as whole words, in the entry's text of that edition (a CLBDR edition ID, as in martyrology-texts), so a frontend can attach a footnote. With footnote (n, counted from 1), printed occurs instead in the eulogy's nth footnote in that edition. duplicated_entries records a whole eulogy that an edition prints a second time on another day (month/day, before the numbered entry before_entry); the copy is left out of the texts. Hand-maintained; see docs/canonicalization-report.md.",
   "misprints": [
     {
       "id": "mr:0101-valentinus-paquay",
@@ -100,6 +100,14 @@
       "verified": "print"
     },
     {
+      "id": "mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "footnote": 1,
+      "printed": "e maria",
+      "intended": "e Maria",
+      "verified": "print"
+    },
+    {
       "id": "mr:0807-ioannes-woodcock-et-socii",
       "edition": "martyrologium_romanum_2004_it_IT",
       "printed": "Inghiltera",
@@ -154,6 +162,13 @@
       "printed": "prospicente",
       "intended": "prospiciente",
       "verified": "print"
+    },
+    {
+      "id": "mr:1009-innocentius-ab-immaculata-et-socii",
+      "edition": "martyrologium_romanum_2004_it_IT",
+      "printed": "compagn",
+      "intended": "compagni",
+      "verified": "print (the word's last letter is set in the superscript of footnote mark 56)"
     },
     {
       "id": "mr:1013-comganus",
