@@ -38,7 +38,7 @@
 | 2 | 9 | `mr:0502-gulielmus-tirry` | * | IE | dies_natalis |  |  |
 | 2 | 10 | `mr:0502-iosephus-nguyen-van-luu` |  | VN | dies_natalis |  |  |
 | 2 | 11 | `mr:0502-iosephus-maria-rubio-peralta` |  | ES | dies_natalis |  |  |
-| 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | Asterisked entry (12*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 2 | 12 | `mr:0502-boleslaus-strzelecki` | * | PL | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 12*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (12*). |
 | 3 | (1) | `mr:0503-philippus-et-iacobus-apostoli` |  | PS | dies_natalis | same as `mr:0501-philippus-et-iacobus`; same as `mr:0511-philippus-et-iacobus-apostoli` |  |
 | 3 | 2 | `mr:0503-timotheus-et-maura` |  | EG | dies_natalis |  |  |
 | 3 | 3 | `mr:0503-eventius-et-socii` |  | IT | dies_natalis |  |  |
@@ -48,9 +48,9 @@
 | 3 | 7 | `mr:0503-ansfridus` | * | BE | dies_natalis |  |  |
 | 3 | 8 | `mr:0503-theodosius` | * | UA | dies_natalis |  |  |
 | 3 | 9 | `mr:0503-aemilia-bicchieri` | * | IT | dies_natalis |  |  |
-| 3 | 10 | `mr:0503-stanislaus` | * | PL | dies_natalis |  |  |
+| 3 | 10 | `mr:0503-stanislaus` | * | PL | dies_natalis |  | Stanisław Kazimierczyk, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 3 | 11 | `mr:0503-eduardus-iosephus-rosaz` | * | IT | dies_natalis |  |  |
-| 3 | 12 | `mr:0503-maria-leonia-paradis` | * | CA | dies_natalis |  |  |
+| 3 | 12 | `mr:0503-maria-leonia-paradis` | * | CA | dies_natalis |  | Marie-Léonie Paradis, blessed in the 2004 editions, was canonized on 20 October 2024. |
 | 4 | 1 | `mr:0504-agapius-et-secundinus` |  | DZ | commemoratio | same as `mr:0429-agapius-et-socii` |  |
 | 4 | 2 | `mr:0504-antonina` |  | TR | dies_natalis |  |  |
 | 4 | 3 | `mr:0504-florianus` |  | AT | dies_natalis |  |  |
@@ -72,7 +72,7 @@
 | 5 | 12 | `mr:0505-avertinus` | * | FR | dies_natalis |  |  |
 | 5 | 13 | `mr:0505-angelus` |  | IT | dies_natalis |  |  |
 | 5 | 14 | `mr:0505-benvenutus-mareni` | * | IT | dies_natalis |  |  |
-| 5 | 15 | `mr:0505-nuntius-sulprizio` | * | IT | dies_natalis |  |  |
+| 5 | 15 | `mr:0505-nuntius-sulprizio` | * | IT | dies_natalis |  | Nunzio Sulprizio, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 5 | 16 | `mr:0505-catharina-cittadini` | * | IT | dies_natalis |  |  |
 | 5 | 17 | `mr:0505-gregorius-frackowiak` | * | DE | dies_natalis |  |  |
 | 6 | 1 | `mr:0506-lucius-cyrenaeus` |  | LY | commemoratio |  |  |
@@ -83,7 +83,7 @@
 | 6 | 6 | `mr:0506-petrus-nolasco` |  | ES | dies_natalis | same as `mr:1225-petrus-nolascus` |  |
 | 6 | 7 | `mr:0506-bartholomaeus-pucci-franceschi` | * | IT | dies_natalis |  |  |
 | 6 | 8 | `mr:0506-eduardus-jones-et-antonius-middleton` | * | GB | dies_natalis |  | 2004 English: Translation error: "hanged on pitchforks" where the Latin has "furcis suspénsi sunt" (hanged on gallows). |
-| 6 | 9 | `mr:0506-franciscus-de-montmorency-laval` | * | CA | dies_natalis |  |  |
+| 6 | 9 | `mr:0506-franciscus-de-montmorency-laval` | * | CA | dies_natalis |  | François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014. |
 | 6 | 10 | `mr:0506-maria-catharina-troianus` | * | EG | dies_natalis |  |  |
 | 6 | 11 | `mr:0506-anna-rosa-gattorno` | * | IT | dies_natalis |  |  |
 | 6 | 12 | `mr:0506-henricus-kaczorowski-et-casimirus-gostynski` | * | DE | dies_natalis |  |  |
@@ -94,7 +94,7 @@
 | 7 | 5 | `mr:0507-gisella` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "spogliatasi di tutti i suoi beni" (having stripped herself) where the Latin has "ómnibus facultátibus spoliáta" (despoiled of all her goods). |
 | 7 | 6 | `mr:0507-antonius` | * | UA | dies_natalis |  |  |
 | 7 | 7 | `mr:0507-albertus-de-bergomo` | * | IT | dies_natalis |  |  |
-| 7 | 8 | `mr:0507-rosa-venerini` | * | IT | dies_natalis |  |  |
+| 7 | 8 | `mr:0507-rosa-venerini` | * | IT | dies_natalis |  | Rosa Venerini, blessed in the 2004 editions, was canonized on 15 October 2006. |
 | 7 | 9 | `mr:0507-augustinus-roscelli` |  | IT | dies_natalis |  |  |
 | 8 | 1 | `mr:0508-victor` |  | IT | commemoratio |  |  |
 | 8 | 2 | `mr:0508-acacius` |  | TR | dies_natalis |  |  |
@@ -107,7 +107,7 @@
 | 8 | 9 | `mr:0508-benedictus-ii` |  | IT | dies_natalis | same as `mr:0507-benedictus-ii` |  |
 | 8 | 10 | `mr:0508-metro` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0508-wiro` |  | NL | dies_natalis |  |  |
-| 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  |  |
+| 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  | Amato Ronconi, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 8 | 13 | `mr:0508-angelus-de-massatio` | * | IT | dies_natalis |  |  |
 | 8 | 14 | `mr:0508-aloysius-rabata` | * | IT | dies_natalis |  |  |
 | 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino` | * | CA | dies_natalis |  |  |
@@ -161,7 +161,7 @@
 | 12 | 7 | `mr:0512-rictrudis` | * | FR | dies_natalis |  |  |
 | 12 | 8 | `mr:0512-germanus` |  | TR | dies_natalis |  |  |
 | 12 | 9 | `mr:0512-dominicus` |  | ES | dies_natalis |  |  |
-| 12 | 10 | `mr:0512-imelda-lambertini` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (10*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 12 | 10 | `mr:0512-imelda-lambertini` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). |
 | 12 | 11 | `mr:0512-ioanna` | * | PT | dies_natalis |  |  |
 | 13 | (1) | `mr:0513-maria-de-fatima` |  | PT | celebratio |  |  |
 | 13 | 2 | `mr:0513-servatius` |  | NL | dies_natalis |  |  |
@@ -181,7 +181,7 @@
 | 14 | 10 | `mr:0514-carthagus` | * | IE | dies_natalis |  |  |
 | 14 | 11 | `mr:0514-erembertus` | * | FR | dies_natalis |  |  |
 | 14 | 12 | `mr:0514-aegidius-de-vaozela` | * | PT | dies_natalis |  |  |
-| 14 | 13 | `mr:0514-theodora-guerin` | * | US | dies_natalis |  |  |
+| 14 | 13 | `mr:0514-theodora-guerin` | * | US | dies_natalis |  | Théodore Guérin, blessed in the 2004 editions, was canonized on 15 October 2006. |
 | 14 | 14 | `mr:0514-michael-garicoits` |  | FR | dies_natalis |  |  |
 | 14 | 15 | `mr:0514-maria-dominica-mazzarello` |  | IT | dies_natalis |  |  |
 | 15 | 1 | `mr:0515-petrus-et-socii` |  | TR | dies_natalis |  |  |
@@ -219,7 +219,7 @@
 | 17 | 5 | `mr:0517-aemilianus` |  | IT | translatio |  |  |
 | 17 | 6 | `mr:0517-paschalis-baylon` |  | ES | dies_natalis |  |  |
 | 17 | 7 | `mr:0517-petrus-liu-wenyuan` |  | CN | dies_natalis |  |  |
-| 17 | 8 | `mr:0517-iulia-salzano` | * | IT | dies_natalis |  |  |
+| 17 | 8 | `mr:0517-iulia-salzano` | * | IT | dies_natalis |  | Giulia Salzano, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 17 | 9 | `mr:0517-antonia-mesina` | * | IT | dies_natalis |  |  |
 | 17 | 10 | `mr:0517-ivanus-ziatyk` | * | RU | dies_natalis |  |  |
 | 18 | (1) | `mr:0518-ioannes-i` |  | TR | dies_natalis | same as `mr:0527-ioannes-i` |  |
@@ -248,7 +248,7 @@
 | 19 | 12 | `mr:0519-theophilus-de-curia` |  | IT | dies_natalis |  |  |
 | 19 | 13 | `mr:0519-crispinus-de-viterbio` |  | IT | dies_natalis |  |  |
 | 19 | 14 | `mr:0519-ioannes-baptista-xaverius-loir` | * | FR | dies_natalis |  |  |
-| 19 | 15 | `mr:0519-maria-bernarda-butler` | * | CO | dies_natalis |  |  |
+| 19 | 15 | `mr:0519-maria-bernarda-butler` | * | CO | dies_natalis |  | Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 19 | 16 | `mr:0519-iosephus-czempiel` | * | DE | dies_natalis |  |  |
 | 20 | (1) | `mr:0520-bernardinus-senensis` |  | IT | dies_natalis |  |  |
 | 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR | commemoratio | same as `mr:0803-lydia` |  |
@@ -263,7 +263,7 @@
 | 20 | 11 | `mr:0520-guido-de-gherardesca` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0520-columba` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:0520-protasius-chong-kuk-bo` |  | KR | dies_natalis |  | 2004 English: Translation error: "Chong Kuk-ho" where the Latin has "Chong Kuk-bo". |
-| 20 | 14 | `mr:0520-archangelus-tadini` | * | IT | dies_natalis |  |  |
+| 20 | 14 | `mr:0520-archangelus-tadini` | * | IT | dies_natalis |  | Arcangelo Tadini, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 20 | 15 | `mr:0520-aloysius-talamoni` | * | IT | dies_natalis |  |  |
 | 21 | (1) | `mr:0521-christophorus-magallanes-et-socii` |  | MX | dies_natalis |  |  |
 | 21 | 2 | `mr:0521-timotheus` |  | DZ | dies_natalis |  |  |
@@ -308,7 +308,7 @@
 | 24 | 1 | `mr:0524-manaen` |  | TR | commemoratio |  |  |
 | 24 | 2 | `mr:0524-ioanna` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0524-zoellus` |  | TR | dies_natalis |  |  |
-| 24 | 4 | `mr:0524-servulus` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (4*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 24 | 4 | `mr:0524-servulus` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
 | 24 | 5 | `mr:0524-donatianus-et-rogatianus` |  | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0524-triginta-octo-martyres-philippopolis` |  | BG | commemoratio |  |  |
 | 24 | 7 | `mr:0524-vincentius` |  | FR | dies_natalis |  |  |
@@ -405,9 +405,9 @@
 | 31 | 4 | `mr:0531-cantius-et-socii` |  | IT | dies_natalis |  |  |
 | 31 | 5 | `mr:0531-silvius` | * | FR | dies_natalis |  |  |
 | 31 | 6 | `mr:0531-iacobus-salomoni` | * | IT | dies_natalis |  |  |
-| 31 | 7 | `mr:0531-baptista-varano` | * | IT | dies_natalis |  |  |
+| 31 | 7 | `mr:0531-baptista-varano` | * | IT | dies_natalis |  | Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 31 | 8 | `mr:0531-robertus-thorpe-et-thomas-watkinson` | * | GB | dies_natalis |  |  |
 | 31 | 9 | `mr:0531-nicolaus-barre` | * | FR | dies_natalis |  |  |
-| 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  | 2004 English: Translation error: "Erice" where the Latin has "Hérbitæ" (Nicosia). |
+| 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  | Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005. 2004 English: Translation error: "Erice" where the Latin has "Hérbitæ" (Nicosia). |
 | 31 | 11 | `mr:0531-marianus-de-roccacasale` | * | IT | dies_natalis |  |  |
 | 31 | 12 | `mr:0531-noe-mawaggali` |  | UG | dies_natalis |  |  |

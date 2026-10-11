@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:1201-castritianus` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:1201-florentia` | * | FR | dies_natalis |  | 2004 English: Translation error: "Florentina" where the Latin has "Floréntiæ" (Florentia). |
 | 1 | 4 | `mr:1201-leontius` | * | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
+| 1 | 5 | `mr:1201-domnolus` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | 2004 Latin: Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (5.). |
 | 1 | 6 | `mr:1201-agericus` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:1201-eligius` |  | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:1201-antonius-bonfadini` | * | IT | dies_natalis |  |  |
@@ -31,7 +31,7 @@
 | 3 | 2 | `mr:1203-sophonias-propheta` |  | PS | commemoratio |  |  |
 | 3 | 3 | `mr:1203-cassianus` |  | MA | dies_natalis |  |  |
 | 3 | 4 | `mr:1203-birinus` |  | GB | depositio |  |  |
-| 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | Plain entry (5., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
+| 3 | 5 | `mr:1203-lucius` |  | CH | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (5.). |
 | 3 | 6 | `mr:1203-eduardus-coleman` | * | GB | dies_natalis |  |  |
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
 | 4 | (1) | `mr:1204-ioannes-damascenus` |  | IL | dies_natalis | same as `mr:0327-ioannes-damascenus`; same as `mr:0506-ioannes-damascenus` |  |
@@ -83,7 +83,7 @@
 | 8 | 6 | `mr:1208-romaricus` |  | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:1208-theobaldus-de-marliaco` | * | FR | dies_natalis |  |  |
 | 8 | 8 | `mr:1208-natalis-chabanel` |  | CA | dies_natalis |  |  |
-| 8 | 9 | `mr:1208-narcissa-a-iesu-martillo-moran` | * | PE | dies_natalis |  |  |
+| 8 | 9 | `mr:1208-narcissa-a-iesu-martillo-moran` | * | PE | dies_natalis |  | Narcisa de Jesús Martillo Morán, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 8 | 10 | `mr:1208-iosephus-maria-zabal-blasco` | * | ES | dies_natalis |  |  |
 | 8 | 11 | `mr:1208-aloysius-liguda` | * | DE | dies_natalis |  |  |
 | 9 | (1) | `mr:1209-ioannes-didacus-cuauhtlatoatzin` |  | MX | dies_natalis |  |  |
@@ -129,7 +129,7 @@
 | 12 | 8 | `mr:1212-bartholus-buonpedoni` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:1212-conradus-de-ophyda` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:1212-iacobus-capocci` | * | IT | commemoratio |  |  |
-| 12 | 11 | `mr:1212-simon-phan-dac-hoa` |  | VN | dies_natalis | CEI: asterisk True | Plain entry (11., no asterisk) in the Latin editio altera 2004 print; the Italian (CEI) edition marks the entry with an asterisk. |
+| 12 | 11 | `mr:1212-simon-phan-dac-hoa` |  | VN | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). |
 | 12 | 12 | `mr:1212-pius-bartosik` | * | PL | dies_natalis |  |  |
 | 13 | (1) | `mr:1213-lucia` |  | IT | dies_natalis |  |  |
 | 13 | 2 | `mr:1213-aristo` |  | IT | dies_natalis |  |  |
@@ -158,7 +158,7 @@
 | 14 | 14 | `mr:1214-protasius-cubells-minguell` | * | ES | dies_natalis |  |  |
 | 15 | 1 | `mr:1215-valerianus` |  | TN | commemoratio |  |  |
 | 15 | 2 | `mr:1215-maximinus` |  | FR | dies_natalis |  |  |
-| 15 | 3 | `mr:1215-marinus` | * | IT | dies_natalis | CEI: asterisk False | Asterisked entry (3*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 15 | 3 | `mr:1215-marinus` | * | IT | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 3*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (3*). |
 | 15 | 4 | `mr:1215-maria-victoria-fornari` | * | IT | dies_natalis |  |  |
 | 15 | 5 | `mr:1215-virginia-centurione-bracelli` |  | IT | dies_natalis |  |  |
 | 15 | 6 | `mr:1215-maria-crucifixa-de-rosa` |  | IT | dies_natalis |  |  |
@@ -204,7 +204,7 @@
 | 20 | 3 | `mr:1220-philogonius` |  | TR | dies_natalis |  |  |
 | 20 | 4 | `mr:1220-ursicinus` | * | CH | dies_natalis |  |  |
 | 20 | 5 | `mr:1220-dominicus` |  | ES | dies_natalis |  |  |
-| 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  |  |
+| 20 | 6 | `mr:1220-vincentius-romano` | * | IT | dies_natalis |  | Vincenzo Romano, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 20 | 7 | `mr:1220-michael-piaszczynski` | * | DE | dies_natalis |  |  |
 | 21 | (1) | `mr:1221-petrus-canisius` |  | DE | dies_natalis | same as `mr:0427-petrus-canisius` |  |
 | 21 | 2 | `mr:1221-michaeas-propheta` |  | PS | commemoratio |  |  |
@@ -228,7 +228,7 @@
 | 23 | 7 | `mr:1223-ioannes-stone` |  | GB | commemoratio |  |  |
 | 23 | 8 | `mr:1223-nicolaus-factor` | * | ES | dies_natalis |  |  |
 | 23 | 9 | `mr:1223-maria-margarita` |  | CA | dies_natalis |  |  |
-| 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  |  |
+| 23 | 10 | `mr:1223-antonius-galvao-de-franca` | * | BR | dies_natalis |  | Anthony of St Anne Galvão, blessed in the 2004 editions, was canonized on 11 May 2007. |
 | 23 | 11 | `mr:1223-iosephus-cho-yun-ho` |  | KR | dies_natalis |  |  |
 | 23 | 12 | `mr:1223-paulus-melendez-gonzalo` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "beato" is omitted before "Paolo Meléndez Gonzalo"; the Latin has "beáti Pauli". |
 | 24 | 1 | `mr:1224-avi-iesu-christi` |  | PS | commemoratio |  | 2004 Italian: Translation error: "figlio di Adamo" is omitted after "figlio di Abramo"; the Latin has "fílii Abraham, fílii Adam". |
@@ -267,7 +267,7 @@
 | 28 | 4 | `mr:1228-matthias-de-nazareis` | * | IT | dies_natalis |  |  |
 | 28 | 5 | `mr:1228-franciscus-de-sales` |  | FR | dies_natalis |  | 2004 English: Translation error: "the day of his death at Annecy" where the Latin has "die depositiónis" (the day of his burial). |
 | 28 | 6 | `mr:1228-gaspar-del-bufalo` |  | IT | dies_natalis |  |  |
-| 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT | dies_natalis |  |  |
+| 28 | 7 | `mr:1228-catharina-volpicelli` | * | IT | dies_natalis |  | Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 28 | 8 | `mr:1228-gregorius-khomysyn` | * | UA | dies_natalis |  |  |
 | 29 | (1) | `mr:1229-thomas-becket` |  | GB | dies_natalis |  |  |
 | 29 | 2 | `mr:1229-david-rex-et-propheta` |  | IL | commemoratio |  |  |
@@ -288,7 +288,7 @@
 | 30 | 4 | `mr:1230-perpetuus` |  | FR | dies_natalis | same as `mr:0408-perpetuus` |  |
 | 30 | 5 | `mr:1230-iucundus` | * | IT | dies_natalis |  |  |
 | 30 | 6 | `mr:1230-geremarus` |  | FR | dies_natalis | same as `mr:0924-geremarus` | 2004 English: Translation error: "Flavigny" where the Latin has "Fláviæ" (Fly). |
-| 30 | 7 | `mr:1230-egwinus` | * | GB | dies_natalis | CEI: asterisk False | Asterisked entry (7*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 30 | 7 | `mr:1230-egwinus` | * | GB | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 30 | 8 | `mr:1230-rainerius` |  | IT | dies_natalis |  |  |
 | 30 | 9 | `mr:1230-rogerius` | * | IT | dies_natalis |  |  |
 | 30 | 10 | `mr:1230-laurentius` | * | IT | dies_natalis |  |  |

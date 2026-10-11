@@ -30,12 +30,12 @@
 | 2 | 6 | `mr:0202-petrus-cambiani-de-ruffia` | * | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0202-catharina-de-ricci` |  | IT | dies_natalis | same as `mr:0213-catharina-de-ricci` |  |
 | 2 | 8 | `mr:0202-ioanna-de-lestonnac` |  | FR | dies_natalis |  |  |
-| 2 | 9 | `mr:0202-nicolaus-saggio-de-langobardis` | * | IT | dies_natalis |  |  |
+| 2 | 9 | `mr:0202-nicolaus-saggio-de-langobardis` | * | IT | dies_natalis |  | Nicola Saggio of Longobardi, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 2 | 10 | `mr:0202-stephanus-bellesini` | * | IT | dies_natalis |  |  |
 | 2 | 11 | `mr:0202-ioannes-theophanes-venard` |  | VN | dies_natalis |  |  |
-| 2 | 12 | `mr:0202-maria-catharina-kasper` | * | DE | dies_natalis |  |  |
+| 2 | 12 | `mr:0202-maria-catharina-kasper` | * | DE | dies_natalis |  | Maria Katharina Kasper, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 2 | 13 | `mr:0202-andreas-carolus-ferrari` | * | IT | dies_natalis |  |  |
-| 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT | dies_natalis |  |  |
+| 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT | dies_natalis |  | Maria Domenica Mantovani, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 3 | (1) | `mr:0203-blasius` |  | TR | dies_natalis |  |  |
 | 3 | (2) | `mr:0203-ansgarius` |  | DE | dies_natalis |  |  |
 | 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio | same as `mr:1008-simeon` |  |
@@ -49,7 +49,7 @@
 | 3 | 11 | `mr:0203-helinandus` | * | FR | commemoratio |  |  |
 | 3 | 12 | `mr:0203-ioannes-nelson` | * | GB | dies_natalis |  |  |
 | 3 | 13 | `mr:0203-maria-a-sancto-ignatio` |  | FR | dies_natalis |  |  |
-| 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  |  |
+| 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  | Marie Rivier, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius` |  | IT | dies_natalis |  |  |
 | 4 | 2 | `mr:0204-papias-et-socii` |  | TR | dies_natalis |  | 2004 English: Translation error: "In Pamphylia" omits "Perge", the city named in the Latin. Translation error: "Papirius" where the Latin has "Pápiæ" (Papias). |
@@ -86,9 +86,9 @@
 | 6 | 8 | `mr:0206-renula` | * | BE | dies_natalis |  |  |
 | 6 | 9 | `mr:0206-guarinus` |  | IT | dies_natalis |  |  |
 | 6 | 10 | `mr:0206-brinolfus-algotsson` | * | SE | dies_natalis |  |  |
-| 6 | 11 | `mr:0206-alphonsus-maria-fusco` | * | IT | dies_natalis |  |  |
+| 6 | 11 | `mr:0206-alphonsus-maria-fusco` | * | IT | dies_natalis |  | Alfonso Maria Fusco, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 6 | 12 | `mr:0206-angelus-de-furcio` | * | IT | dies_natalis |  |  |
-| 6 | 13 | `mr:0206-franciscus-spinelli` | * | IT | dies_natalis |  |  |
+| 6 | 13 | `mr:0206-franciscus-spinelli` | * | IT | dies_natalis |  | Francesco Spinelli, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 6 | 14 | `mr:0206-matthaeus-correa` |  | MX | dies_natalis |  |  |
 | 7 | 1 | `mr:0207-maximus` |  | IT | dies_natalis |  |  |
 | 7 | 2 | `mr:0207-parthenius` |  | TR | dies_natalis |  |  |
@@ -203,7 +203,7 @@
 | 16 | 3 | `mr:0216-marutha` |  | IR | dies_natalis | same as `mr:1204-maruthas` |  |
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
-| 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  |  |
+| 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  | Giuseppe Allamano, blessed in the 2004 editions, was canonized on 20 October 2024. |
 | 17 | (1) | `mr:0217-septem-fundatores-servorum-mariae` |  | IT | dies_natalis | same as `mr:0212-septem-fundatores-servorum-mariae` | 1749 Latin: This edition prints the eulogy of Alexius Falconieri alone, one of the seven founders; the 2004 edition commemorates the seven founders together. |
 | 17 | 2 | `mr:0217-theodorus-tiro` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0217-bonosus` | * | DE | dies_natalis |  |  |
@@ -227,7 +227,7 @@
 | 18 | 8 | `mr:0218-ioannes-pibush` | * | GB | dies_natalis |  |  |
 | 18 | 9 | `mr:0218-franciscus-regis-clet` |  | CN | dies_natalis |  |  |
 | 18 | 10 | `mr:0218-ioannes-petrus-neel` |  | CN | dies_natalis |  |  |
-| 18 | 11 | `mr:0218-gertrudis-comensoli` | * | IT | dies_natalis |  |  |
+| 18 | 11 | `mr:0218-gertrudis-comensoli` | * | IT | dies_natalis |  | Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 18 | 12 | `mr:0218-georgius-kaszyra` | * | PL | dies_natalis |  |  |
 | 19 | 1 | `mr:0219-quodvultdeus` |  | IT | depositio | same as `mr:1026-quodvultdeus` |  |
 | 19 | 2 | `mr:0219-monachi-martyres-palaestinae` |  | PS | commemoratio |  |  |
@@ -247,7 +247,7 @@
 | 20 | 4 | `mr:0220-eleutherius-tornaci` |  | BE | dies_natalis |  |  |
 | 20 | 5 | `mr:0220-eucherius` |  | BE | dies_natalis |  | 2004 Italian: Translation error: "dal re Carlo Martello" (by King Charles Martel) where the Latin has "duce" (duke); Charles Martel was never king. |
 | 20 | 6 | `mr:0220-leo` |  | IT | dies_natalis |  |  |
-| 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  |  |
+| 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  | Jacinta Marto, blessed in the 2004 editions, was canonized on 13 May 2017. |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL | dies_natalis |  |  |
 | 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` | 2004 Italian: Translation omission: the sentence "Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit" (his death took place at Faenza on the following day) is not rendered. 2004 English: Translation error: "on a holy day" where the Latin has "crástina die" (on the following day). |
 | 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  |  |
@@ -272,7 +272,7 @@
 | 23 | 5 | `mr:0223-ioannes` |  | IT | dies_natalis | same as `mr:0224-ioannes-theristes` |  |
 | 23 | 6 | `mr:0223-raphaela-de-villalonga-ybarra` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony) where the Latin has "in Vascónia" (the Basque Country). |
 | 23 | 7 | `mr:0223-nicolaus-tabouillot` | * | FR | dies_natalis |  |  |
-| 23 | 8 | `mr:0223-iosephina-vannini` | * | IT | dies_natalis |  |  |
+| 23 | 8 | `mr:0223-iosephina-vannini` | * | IT | dies_natalis |  | Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019. |
 | 23 | 9 | `mr:0223-ludovicus-mzyk` | * | PL | dies_natalis |  |  |
 | 23 | 10 | `mr:0223-vincentius-frelichowski` | * | DE | dies_natalis |  |  |
 | 24 | 1 | `mr:0224-evetius` |  | TR | dies_natalis |  |  |

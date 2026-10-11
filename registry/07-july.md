@@ -55,7 +55,7 @@
 | 4 | 13 | `mr:0704-antonius-daniel` |  | CA | dies_natalis |  |  |
 | 4 | 14 | `mr:0704-catharina-jarrige` | * | FR | dies_natalis |  |  |
 | 4 | 15 | `mr:0704-caesidius-giacomantonio` |  | CN | dies_natalis |  |  |
-| 4 | 16 | `mr:0704-petrus-georgius-frassati` | * | IT | dies_natalis |  |  |
+| 4 | 16 | `mr:0704-petrus-georgius-frassati` | * | IT | dies_natalis |  | Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025. |
 | 4 | 17 | `mr:0704-iosephus-kowalski` | * | PL | dies_natalis |  |  |
 | 5 | (1) | `mr:0705-antonius-maria-zaccaria` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT | dies_natalis |  |  |
@@ -82,7 +82,7 @@
 | 6 | 12 | `mr:0706-susanna-agatha-de-loye` | * | FR | dies_natalis |  |  |
 | 6 | 13 | `mr:0706-petrus-wang-zuolong` |  | CN | dies_natalis |  |  |
 | 6 | 14 | `mr:0706-maria-teresia-ledochowska` | * | IT | dies_natalis |  |  |
-| 6 | 15 | `mr:0706-nazaria-a-sancta-teresia` | * | AR | dies_natalis |  |  |
+| 6 | 15 | `mr:0706-nazaria-a-sancta-teresia` | * | AR | dies_natalis |  | Nazaria Ignacia of St Teresa of Jesus March Mesa, blessed in the 2004 editions, was canonized on 14 October 2018. |
 | 7 | 1 | `mr:0707-pantaenus-alexandrinus` |  | EG | commemoratio |  |  |
 | 7 | 2 | `mr:0707-aedilburga` |  | FR | dies_natalis |  |  |
 | 7 | 3 | `mr:0707-hedda` |  | GB | dies_natalis |  |  |
@@ -97,7 +97,7 @@
 | 7 | 12 | `mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro` |  | CN | dies_natalis |  |  |
 | 7 | 13 | `mr:0707-marcus-ji-tianxiang` |  | CN | dies_natalis |  |  |
 | 7 | 14 | `mr:0707-maria-guo-lizhus` |  | CN | dies_natalis |  |  |
-| 7 | 15 | `mr:0707-petrus-to-rot` | * | PG | dies_natalis |  |  |
+| 7 | 15 | `mr:0707-petrus-to-rot` | * | PG | dies_natalis |  | Peter To Rot, blessed in the 2004 editions, was canonized on 19 October 2025. |
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI | dies_natalis |  |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
 | 8 | 2 | `mr:0708-glyceria` |  | TR | dies_natalis | same as `mr:0513-glyceria` |  |
@@ -136,12 +136,12 @@
 | 10 | 11 | `mr:0710-canutus` |  | DK | dies_natalis | same as `mr:0119-canutus` |  |
 | 10 | 12 | `mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu` | * | FR | dies_natalis |  |  |
 | 10 | 13 | `mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu` |  | VN | dies_natalis |  |  |
-| 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  |  |
+| 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  | Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were canonized on 20 October 2024. |
 | 11 | (1) | `mr:0711-benedictus` |  | IT | celebratio |  |  |
 | 11 | 2 | `mr:0711-pius-i` |  | IT | commemoratio |  |  |
 | 11 | 3 | `mr:0711-marcianus` |  | TR | dies_natalis |  |  |
 | 11 | 4 | `mr:0711-marciana` |  | DZ | dies_natalis |  |  |
-| 11 | 5 | `mr:0711-leontius` | * | FR | dies_natalis | CEI: asterisk False | Asterisked entry (5*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 11 | 5 | `mr:0711-leontius` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 5*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (5*). |
 | 11 | 6 | `mr:0711-drostanus` | * | GB | dies_natalis |  |  |
 | 11 | 7 | `mr:0711-placidus-et-sigisbertus` | * | CH | dies_natalis |  | 2004 English: Translation error: "the former ... founded" where the Latin has "alter" (the other, Sigisbert) as founder and "prior" (Placidus) as the martyr. |
 | 11 | 8 | `mr:0711-hidulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Treviri" (bishop of Trier) where the Latin has "chorepíscopus Tréviris" (chorbishop at Trier). |
@@ -229,9 +229,9 @@
 | 16 | 7 | `mr:0716-sisenandus` |  | ES | dies_natalis |  |  |
 | 16 | 8 | `mr:0716-irmengardis` | * | DE | dies_natalis |  |  |
 | 16 | 9 | `mr:0716-simon-da-costa` | * | PT | dies_natalis |  |  |
-| 16 | 10 | `mr:0716-bartholomaeus-a-martyribus` | * | PT | dies_natalis |  |  |
+| 16 | 10 | `mr:0716-bartholomaeus-a-martyribus` | * | PT | dies_natalis |  | Bartholomew of the Martyrs (Fernandes), blessed in the 2004 editions, was canonized on 5 July 2019. |
 | 16 | 11 | `mr:0716-ioannes-sugar-et-robertus-grissold` | * | GB | dies_natalis |  |  |
-| 16 | 12 | `mr:0716-andreas-de-soveral-et-dominicus-carvalho` | * | BR | dies_natalis |  |  |
+| 16 | 12 | `mr:0716-andreas-de-soveral-et-dominicus-carvalho` | * | BR | dies_natalis |  | The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed in the 2004 editions, were canonized on 15 October 2017. |
 | 16 | 13 | `mr:0716-nicolaus-savouret-et-claudius-beguignot` | * | FR | dies_natalis |  |  |
 | 16 | 14 | `mr:0716-amata-a-iesu-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Anne-Marie of Jesus" where the Latin has "Amátæ a Iesu" (Aimée of Jesus). |
 | 16 | 15 | `mr:0716-maria-magdalena-postel` |  | FR | dies_natalis |  |  |
@@ -250,7 +250,7 @@
 | 17 | 11 | `mr:0717-colmanus` |  | AT | dies_natalis |  |  |
 | 17 | 12 | `mr:0717-zoerardus-et-benedictus` | * | SK | dies_natalis |  |  |
 | 17 | 13 | `mr:0717-hedwigis` |  | PL | dies_natalis |  |  |
-| 17 | 14 | `mr:0717-teresia-a-sancto-augustino-et-socii` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Marta Maddalena Claudina" where the Latin has "Maríæ Magdalénæ Claudínæ" (Marie-Madeleine-Claudine). |
+| 17 | 14 | `mr:0717-teresia-a-sancto-augustino-et-socii` | * | FR | dies_natalis |  | Teresa of St Augustine and her fifteen companions, the martyrs of Compiègne, blessed in the 2004 editions, were canonized on 18 December 2024. 2004 Italian: Translation error: "Marta Maddalena Claudina" where the Latin has "Maríæ Magdalénæ Claudínæ" (Marie-Madeleine-Claudine). |
 | 17 | 15 | `mr:0717-petrus-liu-ziyu` |  | CN | dies_natalis |  |  |
 | 17 | 16 | `mr:0717-paulus-gojdich` | * | SK | dies_natalis |  | 2004 English: Translation error: "Prešov" where the Latin has "Leopoldópoli" (Leopoldov). |
 | 18 | 1 | `mr:0718-symphorosa-et-socii` |  | IT | commemoratio |  | 2004 English: Translation error: "her seven sons" where the Latin has "septem sociórum" (seven companions). |
@@ -262,10 +262,10 @@
 | 18 | 7 | `mr:0718-theodosia` |  | TR | dies_natalis |  |  |
 | 18 | 8 | `mr:0718-fridericus` |  | NL | dies_natalis |  |  |
 | 18 | 9 | `mr:0718-bruno` |  | IT | dies_natalis |  |  |
-| 18 | 10 | `mr:0718-simon-de-lipnica` | * | PL | dies_natalis |  |  |
+| 18 | 10 | `mr:0718-simon-de-lipnica` | * | PL | dies_natalis |  | Simon of Lipnica, blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 18 | 11 | `mr:0718-ioannes-baptista-de-bruxelles` | * | FR | dies_natalis |  |  |
 | 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  |  |
-| 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | Asterisked entry (13*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 18 | 13 | `mr:0718-tarsicia-mackiv` | * | UA | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 13*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (13*). |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
 | 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
@@ -304,7 +304,7 @@
 | 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  | 2004 English: Translation error: "Lugduni" where the Latin has "beáti" (blessed). |
 | 21 | 7 | `mr:0721-albericus-crescitelli` |  | CN | dies_natalis |  |  |
 | 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  |  |
-| 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  |  |
+| 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  | By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised from an obligatory memorial to a feast. |
 | 22 | 2 | `mr:0722-platon` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  |  |
 | 22 | 4 | `mr:0722-cyrillus` |  | TR | dies_natalis |  |  |
@@ -368,7 +368,7 @@
 | 25 | 12 | `mr:0725-radulphus-aquaviva-et-socii` | * | IN | dies_natalis |  |  |
 | 25 | 13 | `mr:0725-antonius-lucci` | * | IT | dies_natalis |  |  |
 | 25 | 14 | `mr:0725-michael-ludovicus-brulard` | * | FR | dies_natalis |  |  |
-| 25 | 15 | `mr:0725-maria-a-monte-carmelo-salles-y-barangueras` | * | ES | dies_natalis |  |  |
+| 25 | 15 | `mr:0725-maria-a-monte-carmelo-salles-y-barangueras` | * | ES | dies_natalis |  | María del Monte Carmelo Sallés y Barangueras, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 25 | 16 | `mr:0725-petrus-a-corde-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 17 | `mr:0725-fridericus-rubio-alvarez-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES | dies_natalis |  |  |
@@ -390,8 +390,8 @@
 | 26 | 14 | `mr:0726-maria-margarita-a-sancto-augustino-et-socii` | * | FR | dies_natalis |  |  |
 | 26 | 15 | `mr:0726-bartholomaea-capitanio` |  | IT | dies_natalis |  |  |
 | 26 | 16 | `mr:0726-vincentius-pinilla-et-emmanuel-martin-sierra` | * | ES | dies_natalis |  |  |
-| 26 | 17 | `mr:0726-titus-brandsma` | * | DE | dies_natalis |  |  |
-| 26 | 18 | `mr:0726-georgius-preca` | * | MT | dies_natalis |  |  |
+| 26 | 17 | `mr:0726-titus-brandsma` | * | DE | dies_natalis |  | Titus Brandsma, blessed in the 2004 editions, was canonized on 15 May 2022. |
+| 26 | 18 | `mr:0726-georgius-preca` | * | MT | dies_natalis |  | George Preca, blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 27 | 1 | `mr:0727-septem-dormientes-ephesi` |  | TR | commemoratio |  |  |
 | 27 | 2 | `mr:0727-pantaleon` |  | TR | dies_natalis |  |  |
 | 27 | 3 | `mr:0727-desideratus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Salins-les-Bains" where the Latin "Ledóne Salinário" is Lons-le-Saunier. |
@@ -427,7 +427,7 @@
 | 28 | 11 | `mr:0728-emmanuel-segura-et-david-carlos` | * | ES | dies_natalis |  |  |
 | 28 | 12 | `mr:0728-iacobus-hilarius-barbal-cosan` |  | ES | dies_natalis |  |  |
 | 28 | 13 | `mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps` | * | ES | dies_natalis |  |  |
-| 28 | 14 | `mr:0728-alphonsa-ab-immaculata-conceptione` | * | IN | dies_natalis |  |  |
+| 28 | 14 | `mr:0728-alphonsa-ab-immaculata-conceptione` | * | IN | dies_natalis |  | Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 29 | (1) | `mr:0729-martha` |  | IL | dies_natalis |  |  |
 | 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio | same as `mr:1217-lazarus` |  |
 | 29 | 3 | `mr:0729-callinicus` |  | TR | dies_natalis |  |  |
@@ -449,7 +449,7 @@
 | 30 | 3 | `mr:0730-iulitta` |  | TR | dies_natalis |  |  |
 | 30 | 4 | `mr:0730-maxima-et-socii` |  | TN | dies_natalis |  |  |
 | 30 | 5 | `mr:0730-ursus` |  | FR | dies_natalis |  |  |
-| 30 | 6 | `mr:0730-godeleva` | * | BE | dies_natalis | CEI: asterisk False | Asterisked entry (6*) in the Latin editio altera 2004 print; the Italian (CEI) edition carries no asterisk. |
+| 30 | 6 | `mr:0730-godeleva` | * | BE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
 | 30 | 7 | `mr:0730-mannis-guzman` | * | ES | commemoratio |  |  |
 | 30 | 8 | `mr:0730-eduardus-powell-et-socii` | * | GB | dies_natalis |  |  |
 | 30 | 9 | `mr:0730-iosephus-yuan-gengyin` |  | CN | dies_natalis |  |  |

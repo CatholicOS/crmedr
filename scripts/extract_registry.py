@@ -709,6 +709,157 @@ ENTRY_NOTES = {
         "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
         "companions."
     ),
+    # Acts after the 2004 edition (martyrology-texts#153, sections B and C): canonizations of
+    # those it styles blessed, a Doctor of the Church, a feast raised in the General Calendar. The
+    # texts stay as printed until an official edition revises them; the note records the act.
+    "mr:0101-sigismundus-gorazdowski": "Zygmunt Gorazdowski, blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0103-cyriacus-elias-chavara": "Kuriakose Elias Chavara, blessed in the 2004 editions, was canonized on 23 November 2014.",
+    "mr:0104-angela": "Angela of Foligno, blessed in the 2004 editions, was canonized on 9 October 2013.",
+    "mr:0105-carolus-a-sancto-andrea": "Charles of St Andrew (Houben), blessed in the 2004 editions, was canonized on 3 June 2007.",
+    "mr:0106-andreas-bessette": "André Bessette, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0116-iosephus-vaz": "Joseph Vaz, blessed in the 2004 editions, was canonized on 14 January 2015.",
+    "mr:0120-maria-christina-ab-immaculata": (
+        "Maria Cristina of the Immaculate Conception Brando, blessed in the 2004 editions, was canonized on "
+        "17 May 2015."
+    ),
+    "mr:0202-maria-catharina-kasper": "Maria Katharina Kasper, blessed in the 2004 editions, was canonized on 14 October 2018.",
+    "mr:0202-maria-dominica-mantovani": "Maria Domenica Mantovani, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0202-nicolaus-saggio-de-langobardis": "Nicola Saggio of Longobardi, blessed in the 2004 editions, was canonized on 23 November 2014.",
+    "mr:0203-maria-anna-rivier": "Marie Rivier, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0206-alphonsus-maria-fusco": "Alfonso Maria Fusco, blessed in the 2004 editions, was canonized on 16 October 2016.",
+    "mr:0206-franciscus-spinelli": "Francesco Spinelli, blessed in the 2004 editions, was canonized on 14 October 2018.",
+    "mr:0216-iosephus-allamano": "Giuseppe Allamano, blessed in the 2004 editions, was canonized on 20 October 2024.",
+    "mr:0218-gertrudis-comensoli": "Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    "mr:0220-hyacintha-marto": "Jacinta Marto, blessed in the 2004 editions, was canonized on 13 May 2017.",
+    "mr:0223-iosephina-vannini": "Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019.",
+    "mr:0304-ioannes-antonius-farina": "Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014.",
+    "mr:0308-faustinus-miguez": "Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017.",
+    "mr:0310-maria-eugenia-milleret-de-brou": "Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007.",
+    "mr:0315-artemidis-zatti": "Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022.",
+    "mr:0320-iosephus-bilczewski": "Józef Bilczewski, blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0330-ludovicus-de-casaurea": "Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014.",
+    "mr:0401-ludovicus-pavonus": "Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016.",
+    "mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod": "Pedro Calungsod, blessed in the 2004 editions, was canonized on 21 October 2012.",
+    "mr:0402-franciscus-coll": "Francisco Coll y Guitart, blessed in the 2004 editions, was canonized on 11 October 2009.",
+    "mr:0404-caietanus-catanoso": "Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0404-franciscus-marto": "Francisco Marto, blessed in the 2004 editions, was canonized on 13 May 2017.",
+    "mr:0411-helena-guerra": "Elena Guerra, blessed in the 2004 editions, was canonized on 20 October 2024.",
+    "mr:0413-margarita": "Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021.",
+    "mr:0415-caesar-de-bus": "César de Bus, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0415-damianus-de-veuster": "Damien de Veuster, blessed in the 2004 editions, was canonized on 11 October 2009.",
+    "mr:0417-catharina-tekakwitha": "Kateri Tekakwitha, blessed in the 2004 editions, was canonized on 21 October 2012.",
+    "mr:0424-maria-elisabeth-hesselblad": "Maria Elisabeth Hesselblad, blessed in the 2004 editions, was canonized on 5 June 2016.",
+    "mr:0425-ioannes-piamarta": "Giovanni Battista Piamarta, blessed in the 2004 editions, was canonized on 21 October 2012.",
+    "mr:0426-raphael-arnaiz-baron": "Rafael Arnáiz Barón, blessed in the 2004 editions, was canonized on 11 October 2009.",
+    "mr:0430-maria-ab-incarnatione": "Marie of the Incarnation Guyart, blessed in the 2004 editions, was canonized on 3 April 2014.",
+    "mr:0503-maria-leonia-paradis": "Marie-Léonie Paradis, blessed in the 2004 editions, was canonized on 20 October 2024.",
+    "mr:0503-stanislaus": "Stanisław Kazimierczyk, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0505-nuntius-sulprizio": "Nunzio Sulprizio, blessed in the 2004 editions, was canonized on 14 October 2018.",
+    "mr:0506-franciscus-de-montmorency-laval": "François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014.",
+    "mr:0507-rosa-venerini": "Rosa Venerini, blessed in the 2004 editions, was canonized on 15 October 2006.",
+    "mr:0508-amatus-ronconi": "Amato Ronconi, blessed in the 2004 editions, was canonized on 23 November 2014.",
+    "mr:0514-theodora-guerin": "Théodore Guérin, blessed in the 2004 editions, was canonized on 15 October 2006.",
+    "mr:0517-iulia-salzano": "Giulia Salzano, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0519-maria-bernarda-butler": "Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008.",
+    "mr:0520-archangelus-tadini": "Arcangelo Tadini, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    "mr:0531-baptista-varano": "Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0531-felix-amoroso": "Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0601-ioannes-baptista-scalabrinus": "Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022.",
+    "mr:0603-ioannes-xxiii": (
+        "Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his "
+        "optional memorial was inscribed in the General Roman Calendar on 11 October."
+    ),
+    "mr:0604-philippus-smaldone": "Filippo Smaldone, blessed in the 2004 editions, was canonized on 15 October 2006.",
+    "mr:0606-raphael-guizar-valencia": "Rafael Guízar Valencia, blessed in the 2004 editions, was canonized on 15 October 2006.",
+    "mr:0608-iacobus-berthieu": "Jacques Berthieu, blessed in the 2004 editions, was canonized on 21 October 2012.",
+    "mr:0608-maria-teresia-chiramel-mankidiyan": "Mariam Thresia Chiramel Mankidiyan, blessed in the 2004 editions, was canonized on 13 October 2019.",
+    "mr:0609-iosephus-anchieta": "José de Anchieta, blessed in the 2004 editions, was canonized on 3 April 2014.",
+    "mr:0611-ignatius-maloyan": "Ignatius Maloyan, blessed in the 2004 editions, was canonized on 19 October 2025.",
+    "mr:0615-aloysius-maria-palazzolo": "Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0624-maria-a-guadalupe-garcia-zavala": "María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013.",
+    "mr:0627-margarita-bays": "Marguerite Bays, blessed in the 2004 editions, was canonized on 13 October 2019.",
+    "mr:0628-irenaeus": "Irenaeus was declared a Doctor of the Church on 21 January 2022.",
+    "mr:0704-petrus-georgius-frassati": "Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025.",
+    "mr:0706-nazaria-a-sancta-teresia": (
+        "Nazaria Ignacia of St Teresa of Jesus March Mesa, blessed in the 2004 editions, was canonized on 14 "
+        "October 2018."
+    ),
+    "mr:0707-petrus-to-rot": "Peter To Rot, blessed in the 2004 editions, was canonized on 19 October 2025.",
+    "mr:0710-emmanuel-ruiz-et-socii": (
+        "Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were "
+        "canonized on 20 October 2024."
+    ),
+    "mr:0716-andreas-de-soveral-et-dominicus-carvalho": (
+        "The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed "
+        "in the 2004 editions, were canonized on 15 October 2017."
+    ),
+    "mr:0716-bartholomaeus-a-martyribus": "Bartholomew of the Martyrs (Fernandes), blessed in the 2004 editions, was canonized on 5 July 2019.",
+    "mr:0717-teresia-a-sancto-augustino-et-socii": (
+        "Teresa of St Augustine and her fifteen companions, the martyrs of Compiègne, blessed in the 2004 "
+        "editions, were canonized on 18 December 2024."
+    ),
+    "mr:0718-simon-de-lipnica": "Simon of Lipnica, blessed in the 2004 editions, was canonized on 3 June 2007.",
+    "mr:0722-maria-magdalena": (
+        "By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised "
+        "from an obligatory memorial to a feast."
+    ),
+    "mr:0725-maria-a-monte-carmelo-salles-y-barangueras": (
+        "María del Monte Carmelo Sallés y Barangueras, blessed in the 2004 editions, was canonized on 21 "
+        "October 2012."
+    ),
+    "mr:0726-georgius-preca": "George Preca, blessed in the 2004 editions, was canonized on 3 June 2007.",
+    "mr:0726-titus-brandsma": "Titus Brandsma, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0728-alphonsa-ab-immaculata-conceptione": (
+        "Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October "
+        "2008."
+    ),
+    "mr:0801-petrus-favre": "Peter Faber, blessed in the 2004 editions, was canonized on 17 December 2013.",
+    "mr:0806-maria-francisca-a-iesu": "Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0808-bonifatia-rodriguez-castro": "Bonifacia Rodríguez de Castro, blessed in the 2004 editions, was canonized on 23 October 2011.",
+    "mr:0808-maria-a-cruce": "Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0809-candida-maria-a-iesu": "Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0814-octingenti-martyres-hydrunti": (
+        "Antonio Primaldo and his companions, the martyrs of Otranto, blessed in the 2004 editions, were "
+        "canonized on 12 May 2013."
+    ),
+    "mr:0818-albertus-hurtado-cruchaga": "Alberto Hurtado Cruchaga, blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0820-bernardus-tolomei": "Bernardo Tolomei, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    "mr:0826-maria-a-iesu-crucifixo": (
+        "Mary of Jesus Crucified (Mariam Baouardy), blessed in the 2004 editions, was canonized on 17 May "
+        "2015."
+    ),
+    "mr:0828-iuniperus-serra": "Junípero Serra, blessed in the 2004 editions, was canonized on 23 September 2015.",
+    "mr:0829-ioanna-jugan": "Jeanne Jugan (Marie de la Croix), blessed in the 2004 editions, was canonized on 11 October 2009.",
+    "mr:0902-ioannes-maria-du-lau-et-socii": (
+        "Salomon Leclercq, one of these martyrs, blessed in the 2004 editions, was canonized on 16 October "
+        "2016."
+    ),
+    "mr:0917-sigismundus-felix-felinski": "Zygmunt Szczęsny Feliński, blessed in the 2004 editions, was canonized on 11 October 2009.",
+    "mr:0923-christophorus-et-socii": (
+        "Cristóbal, Antonio and Juan, the child martyrs of Tlaxcala, blessed in the 2004 editions, were "
+        "canonized on 15 October 2017."
+    ),
+    "mr:1003-ambrosius-franciscus-ferro-et-socii": (
+        "The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed "
+        "in the 2004 editions, were canonized on 15 October 2017."
+    ),
+    "mr:1005-anna-schaffer": "Anna Schäffer, blessed in the 2004 editions, was canonized on 21 October 2012.",
+    "mr:1005-bartholomaeus-longo": "Bartolo Longo, blessed in the 2004 editions, was canonized on 19 October 2025.",
+    "mr:1021-laura-montoya-y-upegui": (
+        "Laura of St Catherine of Siena Montoya y Upegui, blessed in the 2004 editions, was canonized on 12 "
+        "May 2013."
+    ),
+    "mr:1024-aloysius-guanella": "Luigi Guanella, blessed in the 2004 editions, was canonized on 23 October 2011.",
+    "mr:1029-caietanus-errico": "Gaetano Errico, blessed in the 2004 editions, was canonized on 12 October 2008.",
+    "mr:1030-angelus": "Angelo of Acri, blessed in the 2004 editions, was canonized on 15 October 2017.",
+    "mr:1101-nonius-alvarez-pereira": "Nuno de Santa Maria Álvares Pereira, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    "mr:1105-guido-maria-conforti": "Guido Maria Conforti, blessed in the 2004 editions, was canonized on 23 October 2011.",
+    "mr:1107-vincentius-grossi": "Vincenzo Grossi, blessed in the 2004 editions, was canonized on 18 October 2015.",
+    "mr:1109-elisabeth-a-sanctissima-trinitate": "Elizabeth of the Trinity (Catez), blessed in the 2004 editions, was canonized on 16 October 2016.",
+    "mr:1208-narcissa-a-iesu-martillo-moran": "Narcisa de Jesús Martillo Morán, blessed in the 2004 editions, was canonized on 12 October 2008.",
+    "mr:1220-vincentius-romano": "Vincenzo Romano, blessed in the 2004 editions, was canonized on 14 October 2018.",
+    "mr:1223-antonius-galvao-de-franca": "Anthony of St Anne Galvão, blessed in the 2004 editions, was canonized on 11 May 2007.",
+    "mr:1228-catharina-volpicelli": "Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009.",
 }
 
 # Asterisk overrides where the digitized workbook follows the Italian (CEI)
@@ -800,20 +951,9 @@ COUNTRY_CORRECTIONS = {
     "mr:0913-amatus-broili": "FR",  # died at Breuil-sur-le-Lys; Sion is only his see
 }
 
-ASTERISK_OVERRIDES = {}
-for _id, _n in LATIN_ASTERISKED.items():
-    ASTERISK_OVERRIDES[_id] = (
-        True,
-        f"Asterisked entry ({_n}*) in the Latin editio altera 2004 print; "
-        "the Italian (CEI) edition carries no asterisk.",
-    )
-for _id, _n in LATIN_PLAIN.items():
-    ASTERISK_OVERRIDES[_id] = (
-        False,
-        f"Plain entry ({_n}., no asterisk) in the Latin editio altera 2004 "
-        "print; the Italian (CEI) edition "
-        "marks the entry with an asterisk.",
-    )
+# The Latin print's asterisk where the CEI's differs; each difference is a note on both editions
+# (PLACEMENT_EDITION_NOTES, after EDITION_NOTES).
+ASTERISK_OVERRIDES = {_id: True for _id in LATIN_ASTERISKED} | {_id: False for _id in LATIN_PLAIN}
 
 # Entries present in the editio altera 2004 print but absent from the
 # digitized "with IDs" workbook (see docs/canonicalization-report.md). Both
@@ -827,8 +967,6 @@ PRINT_ONLY_ENTRIES = [
         "entry": 2,
         "asterisk": True,
         "country": "FR",
-        "note": "Entry 2* in the Latin editio altera 2004 print; absent from "
-                "the Italian (CEI) edition.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
     {
@@ -838,9 +976,8 @@ PRINT_ONLY_ENTRIES = [
         "entry": 12,
         "asterisk": True,
         "country": "ES",
-        "note": "Numbered 12* in the Latin editio altera 2004 print, 11* in "
-                "the Italian (CEI) edition. Manuel González García, blessed in "
-                "the 2004 editions, was canonized in 2016.",
+        # Its CEI number (11*) follows from Abrunculus's absence there, as for the day's whole series.
+        "note": "Manuel González García, blessed in the 2004 editions, was canonized on 16 October 2016.",
         "editions": {"martyrologium_romanum_2004_it_IT": {"entry": 11}},
     },
     {
@@ -850,10 +987,6 @@ PRINT_ONLY_ENTRIES = [
         "entry": 9,
         "asterisk": True,
         "country": "IT",
-        "note": "Entry 9* at June 10 in the Latin editio altera 2004 print; "
-                "the Italian (CEI) edition prints "
-                "the same eulogy at December 10, entry 9* "
-                "(mr:1210-marcus-antonius-durando).",
         "editions": {"martyrologium_romanum_2004_it_IT": {"absent": True}},
     },
 ]
@@ -2690,7 +2823,41 @@ EDITION_NOTES = {
         for edition, printed in ((EDITION_LA, "Palénæ in Calábria"), (EDITION_IT, "A Palena in Calabria"),
                                  (EDITION_EN, "At Palena in Calabria"))
     },
+    # Printed in the Latin and the English, not in the CEI (PRINT_ONLY_ENTRIES).
+    "mr:0104-abrunculus": {
+        EDITION_LA: "Not printed in the Italian (CEI) edition.",
+        EDITION_EN: "Not printed in the Italian (CEI) edition.",
+    },
+    "mr:0610-marcus-antonius-durando": {
+        EDITION_LA: "The Italian (CEI) edition prints this eulogy at 10 December "
+                    "(mr:1210-marcus-antonius-durando).",
+        EDITION_EN: "The Italian (CEI) edition prints this eulogy at 10 December "
+                    "(mr:1210-marcus-antonius-durando).",
+    },
 }
+
+# Where the Latin print and the CEI differ on an entry's asterisk, a note on each edition's page
+# says what the other prints. Which edition is right (a correction of the Latin, or a legitimate
+# departure from it) is left to the experts.
+PLACEMENT_EDITION_NOTES = {}
+for _id, _n in LATIN_ASTERISKED.items():
+    PLACEMENT_EDITION_NOTES[_id] = {
+        EDITION_LA: f"Asterisked here (entry {_n}*); the Italian (CEI) edition prints the entry "
+                    "without an asterisk.",
+        EDITION_IT: f"Printed here without an asterisk; the Latin editio altera prints the entry "
+                    f"with one ({_n}*).",
+    }
+for _id, _n in LATIN_PLAIN.items():
+    PLACEMENT_EDITION_NOTES[_id] = {
+        EDITION_LA: f"Printed here without an asterisk (entry {_n}.); the Italian (CEI) edition marks "
+                    "the entry with one.",
+        EDITION_IT: f"Asterisked here; the Latin editio altera prints the entry without an asterisk "
+                    f"({_n}.).",
+    }
+for _id, _notes in PLACEMENT_EDITION_NOTES.items():
+    _others = EDITION_NOTES.get(_id, {})
+    EDITION_NOTES[_id] = {ed: " ".join(n for n in (_notes.get(ed), _others.get(ed)) if n)
+                          for ed in EDITIONS_2004 if _notes.get(ed) or _others.get(ed)}
 
 # The Latin print's entry number where it differs from the CEI's (= the
 # workbook's), verified on the print's text layer.
@@ -2897,7 +3064,7 @@ def extract(workbook_path):
             # placement follows the Latin print.
             cei_entry, cei_asterisk = row_out["entry"], row_out["asterisk"]
             if mr_id in ASTERISK_OVERRIDES:
-                row_out["asterisk"], row_out["note"] = ASTERISK_OVERRIDES[mr_id]
+                row_out["asterisk"] = ASTERISK_OVERRIDES[mr_id]
             if mr_id in PLACEMENT_OVERRIDES:
                 p_month, p_day, p_entry, p_note = PLACEMENT_OVERRIDES[mr_id]
                 row_out.update(month=p_month, day=p_day, entry=p_entry)
@@ -2906,8 +3073,6 @@ def extract(workbook_path):
                 row_out["entry"] = LATIN_RENUMBERING[mr_id]
             if mr_id in ENTRY_NOTES:
                 row_out["note"] = (row_out.get("note", "") + " " + ENTRY_NOTES[mr_id]).strip()
-            if mr_id in EDITION_NOTES:
-                row_out["edition_notes"] = dict(EDITION_NOTES[mr_id])
             overrides = edition_overrides(mr_id, entry=row_out["entry"], asterisk=row_out["asterisk"],
                                           cei_entry=cei_entry, cei_asterisk=cei_asterisk)
             if overrides:
@@ -2943,6 +3108,9 @@ def extract(workbook_path):
 
     entries.extend(PRINT_ONLY_ENTRIES)
     entries = [dict(e) for e in entries]  # PRINT_ONLY_ENTRIES are module constants: copy
+    for e in entries:
+        if e["id"] in EDITION_NOTES:
+            e["edition_notes"] = dict(EDITION_NOTES[e["id"]])
     link_same_eulogy(entries)
     for e in entries:  # `editions` and `same_eulogy` are the last keys of an entry
         for k in ("editions", "same_eulogy"):
