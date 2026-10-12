@@ -62,7 +62,7 @@
 | 5 | 8 | `mr:0405-iuliana` | * | BE | dies_natalis |  |  |
 | 5 | 9 | `mr:0405-catharina-tomas` |  | ES | dies_natalis |  |  |
 | 5 | 10 | `mr:0405-anna-hoss` |  | DE | dies_natalis |  |  |
-| 6 | 1 | `mr:0406-irenaeus` |  | HR | dies_natalis | same as `mr:0325-irenaeus` |  |
+| 6 | 1 | `mr:0406-irenaeus` |  | HR | dies_natalis | same as `mr:0325-irenaeus` | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmii" (Sirmium) is the present Sremska Mitrovica, in Serbia. Translation error: "fu dapprima frustato" (was first scourged) where the Latin has "primum torméntis vexátus est" (was first tormented with tortures). |
 | 6 | 2 | `mr:0406-eutychius` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0406-galla` |  | IT | dies_natalis |  |  |
 | 6 | 4 | `mr:0406-winebaldus` | * | FR | dies_natalis |  |  |
@@ -103,7 +103,7 @@
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  | 2004 English: Translation error: "El Buen Monte" where the Latin has "in convéntu Belomontáno" (the convent of Belmonte). |
 | 9 | 1 | `mr:0409-maximus` |  | EG | dies_natalis |  |  |
 | 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis | same as `mr:0408-aedesius` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
-| 9 | 3 | `mr:0409-demetrius` |  | HR | dies_natalis |  |  |
+| 9 | 3 | `mr:0409-demetrius` |  | HR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmium" (Sirmium) is the present Sremska Mitrovica, in Serbia. |
 | 9 | 4 | `mr:0409-eupsychius` |  | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:0409-liborius` |  | FR | dies_natalis | same as `mr:0723-liborius` | 2004 English: Translation error: "Saint Liberius" where the Latin has "sancti Libórii" (Saint Liborius). Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lyonnese Gaul, the Roman province). |
 | 9 | 6 | `mr:0409-acacius` |  | TR | dies_natalis |  | 2004 English: Translation error: "to ransom Persian captives, and the clergy from dreadful tortures, even melted them down" where the Latin has "pro rediméndis Persis captívis ac diris tortis supplíciis clerum conflávit" (to ransom Persian captives cruelly tortured, he gathered the clergy). |
@@ -129,7 +129,7 @@
 | 11 | (1) | `mr:0411-stanislaus` |  | PL | dies_natalis | same as `mr:0507-stanislaus`; same as `mr:0508-stanislaus` |  |
 | 11 | 2 | `mr:0411-antipa` |  | TR | commemoratio |  |  |
 | 11 | 3 | `mr:0411-philippus` |  | GR | commemoratio |  |  |
-| 11 | 4 | `mr:0411-domnio` |  | HR | dies_natalis |  |  |
+| 11 | 4 | `mr:0411-domnio` |  | HR | dies_natalis |  | 2004 Italian: Translation error: "A Spalato" (Split) where the Latin has "Salónæ" (Salona, the present Solin). |
 | 11 | 5 | `mr:0411-barsanuphius` |  | PS | dies_natalis |  |  |
 | 11 | 6 | `mr:0411-isaac` |  | IT | dies_natalis |  |  |
 | 11 | 7 | `mr:0411-lanuinus` | * | IT | dies_natalis |  |  |
@@ -149,7 +149,7 @@
 | 12 | 8 | `mr:0412-erkembodo` | * | FR | dies_natalis |  |  |
 | 12 | 9 | `mr:0412-alferius` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0412-laurentius` | * | PT | dies_natalis |  |  |
-| 12 | 11 | `mr:0412-ioanna-fernandez-solar` |  | CL | dies_natalis |  |  |
+| 12 | 11 | `mr:0412-ioanna-fernandez-solar` |  | CL | dies_natalis |  | 2004 Italian: Translation error: "all’età di venti anni" (at the age of twenty) where the Latin has "vigésimo ætátis anno" (in her twentieth year, i.e. aged nineteen). |
 | 12 | 12 | `mr:0412-iosephus-moscati` |  | IT | dies_natalis |  |  |
 | 12 | 13 | `mr:0412-david-uribe` |  | MX | dies_natalis |  |  |
 | 13 | (1) | `mr:0413-martinus-i` |  | TR | dies_natalis | same as `mr:0916-martinus-i`; same as `mr:1112-martinus-i` |  |
@@ -158,7 +158,7 @@
 | 13 | 4 | `mr:0413-hermenegildus` |  | ES | dies_natalis |  |  |
 | 13 | 5 | `mr:0413-ida-boloniensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "near Vasto" where the Latin has "prope Vastum in pago Gálliæ Boloniénsi" (near Le Wast, in the Boulonnais). |
 | 13 | 6 | `mr:0413-caradocus` | * | GB | dies_natalis |  |  |
-| 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  |  |
+| 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "Roosendaal nel Brabante, nell’odierna Olanda" where the Latin "Vallis Rosárum" is the abbey of Roosendael near Mechelen, in present Belgium. |
 | 13 | 8 | `mr:0413-albertinus` | * | IT | dies_natalis |  |  |
 | 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021. 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
 | 13 | 10 | `mr:0413-franciscus-dickenson-et-milo-gerard` | * | GB | dies_natalis |  |  |
@@ -207,7 +207,7 @@
 | 17 | 7 | `mr:0417-donnanus-et-socii` | * | GB | dies_natalis |  |  |
 | 17 | 8 | `mr:0417-elias-et-socii` |  | ES | dies_natalis |  |  |
 | 17 | 9 | `mr:0417-robertus-casae` |  | FR | dies_natalis |  |  |
-| 17 | 10 | `mr:0417-robertus-molismensis` |  | FR | dies_natalis | same as `mr:0429-robertus-molismensis` |  |
+| 17 | 10 | `mr:0417-robertus-molismensis` |  | FR | dies_natalis | same as `mr:0429-robertus-molismensis` | 2004 Italian: Translation error: "fondò un monastero cistercense" (founded a Cistercian monastery) where the Latin has "Cisterciénse monastérium fundávit" (founded the monastery of Cîteaux). |
 | 17 | 11 | `mr:0417-iacobus-de-cerqueto` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:0417-clara-gambacorti` | * | IT | dies_natalis |  |  |
 | 17 | 13 | `mr:0417-maria-anna-a-iesu` | * | ES | dies_natalis |  |  |
@@ -230,7 +230,7 @@
 | 18 | 15 | `mr:0418-iosephus-moreau` | * | FR | dies_natalis |  |  |
 | 18 | 16 | `mr:0418-sabina-petrilli` | * | IT | dies_natalis |  |  |
 | 18 | 17 | `mr:0418-romanus-archutowski` | * | PL | dies_natalis |  |  |
-| 19 | 1 | `mr:0419-mappalicus` |  | TN | dies_natalis | same as `mr:0417-mappalicus` |  |
+| 19 | 1 | `mr:0419-mappalicus` |  | TN | dies_natalis | same as `mr:0417-mappalicus` | 2004 Italian: Translation error: "fossero lasciate in pace e per questo" (that they be left in peace, and for this reason) where the Latin has "pacem dari mandávit, sed" (he asked that the peace of the Church be granted to them, but he himself). |
 | 19 | 2 | `mr:0419-martha` |  | IR | dies_natalis |  |  |
 | 19 | 3 | `mr:0419-georgius` |  | TR | dies_natalis |  |  |
 | 19 | 4 | `mr:0419-geroldus` | * | DE | dies_natalis |  | 2004 English: Translation error: "Frastanz" where the Latin has "Frisæ" (Frisen). |
@@ -246,7 +246,7 @@
 | 20 | 6 | `mr:0420-theodorus` |  | TR | dies_natalis |  |  |
 | 20 | 7 | `mr:0420-anastasius` |  | TR | dies_natalis | same as `mr:1221-anastasius` |  |
 | 20 | 8 | `mr:0420-heliena` | * | IT | dies_natalis |  |  |
-| 20 | 9 | `mr:0420-viho` | * | DE | dies_natalis |  |  |
+| 20 | 9 | `mr:0420-viho` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "come primo abate di questo luogo" (as first abbot of this place) where the Latin has "primum abbas ... missus" (first sent as an abbot, then made bishop). |
 | 20 | 10 | `mr:0420-geraldus-de-salis` | * | FR | dies_natalis |  |  |
 | 20 | 11 | `mr:0420-dominicus-vernagalli` | * | IT | dies_natalis |  |  |
 | 20 | 12 | `mr:0420-agnes` |  | IT | dies_natalis |  |  |
@@ -312,11 +312,11 @@
 | 25 | 9 | `mr:0425-bonifatius-valperga` | * | IT | dies_natalis |  |  |
 | 25 | 10 | `mr:0425-robertus-anderton-et-gulielmus-marsden` | * | GB | dies_natalis |  |  |
 | 25 | 11 | `mr:0425-petrus-de-betancur` |  | GT | dies_natalis |  |  |
-| 25 | 12 | `mr:0425-ioannes-piamarta` | * | IT | dies_natalis |  | Giovanni Battista Piamarta, blessed in the 2004 editions, was canonized on 21 October 2012. 2004 English: Translation error: "in nearby colonies of farmers, promoted the religious education" where the Latin "in finítimis colóniam agrícolam" says he also started an agricultural colony nearby. |
+| 25 | 12 | `mr:0425-ioannes-piamarta` | * | IT | dies_natalis |  | Giovanni Battista Piamarta, blessed in the 2004 editions, was canonized on 21 October 2012. 2004 Italian: Translation error: "nelle vicinanze di una colonia agricola" (near an agricultural colony) where the Latin has "in finítimis colóniam agrícolam" (he also founded an agricultural colony nearby). 2004 English: Translation error: "in nearby colonies of farmers, promoted the religious education" where the Latin "in finítimis colóniam agrícolam" says he also started an agricultural colony nearby. |
 | 26 | 1 | `mr:0426-cletus` |  | IT | commemoratio |  |  |
 | 26 | 2 | `mr:0426-primitivus` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:0426-basileus` |  | TR | dies_natalis |  |  |
-| 26 | 4 | `mr:0426-richarius` |  | FR | dies_natalis |  |  |
+| 26 | 4 | `mr:0426-richarius` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "monaci scozzesi" (Scottish monks) where the Latin has "monachórum scotórum" (Irish monks). |
 | 26 | 5 | `mr:0426-paschasius-radbertus` |  | FR | dies_natalis |  |  |
 | 26 | 6 | `mr:0426-gulielmus-et-peregrinus` | * | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0426-dominicus-et-gregorius` | * | ES | dies_natalis |  |  |

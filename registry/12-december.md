@@ -76,7 +76,7 @@
 | 7 | 7 | `mr:1207-carolus-garnier` |  | CA | dies_natalis |  |  |
 | 7 | 8 | `mr:1207-benedicta-rossello` |  | IT | dies_natalis |  |  |
 | 8 | (1) | `mr:1208-conceptio-immaculata-beatae-mariae-virginis` |  |  | celebratio |  |  |
-| 8 | 2 | `mr:1208-macarius` |  | EG | commemoratio |  | 2004 English: Translation error: "burned alive to the end" where the Latin "ad últimum exúri iussus est" means he was at last ordered to be burned alive. |
+| 8 | 2 | `mr:1208-macarius` |  | EG | commemoratio |  | 2004 Italian: Translation error: "per suo stesso ordine" (by his own order) where the Latin has "ad últimum ... iussus est" (at last he was ordered, by the judge, to be burned alive). 2004 English: Translation error: "burned alive to the end" where the Latin "ad últimum exúri iussus est" means he was at last ordered to be burned alive. |
 | 8 | 3 | `mr:1208-eutychianus` |  | IT | depositio | same as `mr:1207-eutychianus` |  |
 | 8 | 4 | `mr:1208-eucharius` |  | DE | dies_natalis |  |  |
 | 8 | 5 | `mr:1208-patapius` |  | EG | commemoratio |  | 2004 English: Translation error: "an Egyptian monastery" where the Latin has "in Ægyptiórum monastério" (the monastery of the Egyptians, at Constantinople). |
@@ -92,7 +92,7 @@
 | 9 | 4 | `mr:1209-gorgonia` |  | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:1209-cyprianus` |  | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:1209-liborius-wagner` | * | DE | dies_natalis |  | 2004 English: Translation error: "Liberius" where the Latin has "Libórii" (Liborius). |
-| 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis | same as `mr:0707-petrus-fourier` |  |
+| 9 | 7 | `mr:1209-petrus-fourier` |  | FR | dies_natalis | same as `mr:0707-petrus-fourier` | 2004 Italian: Translation error: "istituì i Canonici regolari del Nostro Salvatore" (founded) where the Latin has "renovávit" (renewed, reformed). |
 | 9 | 8 | `mr:1209-caesar-silvestrelli` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:1209-iosephus-ferrer-esteve` | * | ES | dies_natalis |  | 2004 English: Translation error: "Poor Schools" where the Latin has "Scholárum Piárum" (Pious Schools). |
 | 9 | 10 | `mr:1209-richardus-de-los-rios-fabregat-et-socii` | * | ES | dies_natalis |  |  |
@@ -240,7 +240,7 @@
 | 24 | 7 | `mr:1224-constantia-cerioli` |  | IT | dies_natalis |  |  |
 | 24 | 8 | `mr:1224-sarbelius-makhluf` |  | LB | dies_natalis |  |  |
 | 25 | (1) | `mr:1225-nativitas-domini` |  | IL | celebratio |  |  |
-| 25 | 2 | `mr:1225-anastasia` |  | IT | commemoratio |  |  |
+| 25 | 2 | `mr:1225-anastasia` |  | IT | commemoratio |  | 2004 Italian: Translation error: "a Srijem ... nell’odierna Croazia" where the Latin has "Sírmii" (Sirmium, today Sremska Mitrovica in Serbia). |
 | 25 | 3 | `mr:1225-eugenia` |  | IT | dies_natalis |  |  |
 | 25 | 4 | `mr:1225-iovinus-et-basileus` |  | IT | dies_natalis | same as `mr:0302-iovinus-et-basileus` |  |
 | 25 | 5 | `mr:1225-petrus-venerabilis` | * | FR | dies_natalis |  |  |
@@ -258,7 +258,7 @@
 | 26 | 8 | `mr:1226-secundus-pollo` | * | ME | dies_natalis |  |  |
 | 27 | (1) | `mr:1227-ioannes-apostolus-et-evangelista` |  | PS | dies_natalis |  |  |
 | 27 | 2 | `mr:1227-fabiola` | * | IT | commemoratio |  |  |
-| 27 | 3 | `mr:1227-theodorus` |  | TR | dies_natalis |  |  |
+| 27 | 3 | `mr:1227-theodorus` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "Hisarlik" where the Latin has "Apaméæ in Bithýnia" (Apamea, today Mudanya). |
 | 27 | 4 | `mr:1227-alaphridus-parte` | * | ES | dies_natalis |  | 2004 English: Translation error: "Liendo" where the Latin "Bléndii" denotes Santander. |
 | 27 | 5 | `mr:1227-iosephus-maria-corbin-ferrer` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "martire" is omitted after "Giuseppe Maria Corbin Ferrer"; the Latin has "mártyris". 2004 English: Translation error: "Liendo" where the Latin "Bléndium" denotes Santander. |
 | 28 | (1) | `mr:1228-innocentes` |  | PS | dies_natalis |  |  |

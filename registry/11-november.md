@@ -28,7 +28,7 @@
 | 2 | 4 | `mr:1102-carterius-et-socii` |  | TR | dies_natalis |  |  |
 | 2 | 5 | `mr:1102-acindynus-et-socii` |  | IR | dies_natalis |  |  |
 | 2 | 6 | `mr:1102-domninus` |  | FR | dies_natalis |  |  |
-| 2 | 7 | `mr:1102-marcianus` |  | TR | commemoratio |  |  |
+| 2 | 7 | `mr:1102-marcianus` |  | TR | commemoratio |  | 2004 Latin: Probable error: "Chalcedonénsem" (of Chalcedon) where the desert in which Marcian lived was that of Chalcis in Syria ("Chalcidénsem"). 2004 Italian: Translation error: "si ritirò in monastero a Calcedonia" where the Latin has "in erémum Chalcedonénsem se cóntulit" (he withdrew into the desert). |
 | 2 | 8 | `mr:1102-ambrosius` |  | CH | dies_natalis |  |  |
 | 2 | 9 | `mr:1102-winefrida` |  | GB | dies_natalis | same as `mr:1103-wenefrida` |  |
 | 2 | 10 | `mr:1102-georgius` |  | FR | dies_natalis |  |  |
@@ -63,8 +63,8 @@
 | 4 | 8 | `mr:1104-emericus` |  | HU | dies_natalis |  |  |
 | 4 | 9 | `mr:1104-helena-enselmini` | * | IT | dies_natalis |  |  |
 | 4 | 10 | `mr:1104-felix-de-valois` | * | FR | dies_natalis |  |  |
-| 4 | 11 | `mr:1104-francisca-de-ambosia` | * | FR | dies_natalis |  | 2004 English: Translation error: "first founded at Vannes ... a convent of Carmelite nuns" where the Latin has "primum in Gállia carmélum mulíerum" (the first Carmel of women in France). |
-| 5 | 1 | `mr:1105-domninus` |  | PS | dies_natalis |  | 2004 English: Translation error: "banished to Phoenicia" where the Latin has "ad metálla Phænénsia" (to the mines of Phaeno). |
+| 4 | 11 | `mr:1104-francisca-de-ambosia` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "un Carmelo femminile" where the Latin has "primum in Gállia carmélum mulíerum" (the first Carmel of nuns in France). 2004 English: Translation error: "first founded at Vannes ... a convent of Carmelite nuns" where the Latin has "primum in Gállia carmélum mulíerum" (the first Carmel of women in France). |
+| 5 | 1 | `mr:1105-domninus` |  | PS | dies_natalis |  | 2004 English: Translation error: "banished to Phoenicia" where the Latin has "ad metálla Phænénsia" (to the mines of Phaeno). 2004 Italian: Translation error: "Mismiyā" where the Latin has "metálla Phænénsia" (the mines of Phaeno, at Feinan south of the Dead Sea). |
 | 5 | 2 | `mr:1105-theotimus-et-socii` |  | PS | commemoratio |  | In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions. |
 | 5 | 3 | `mr:1105-marcus` | * | IT | dies_natalis |  |  |
 | 5 | 4 | `mr:1105-fibicius` |  | DE | dies_natalis |  |  |
@@ -72,13 +72,13 @@
 | 5 | 6 | `mr:1105-bertilla` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "monastero di Calais" where the Latin has "cœnóbio Calénsi" (the monastery of Chelles, near Meaux). |
 | 5 | 7 | `mr:1105-geraldus` | * | FR | dies_natalis |  |  |
 | 5 | 8 | `mr:1105-gomida-keumurgian` | * | TR | dies_natalis |  |  |
-| 5 | 9 | `mr:1105-dominicus-mau` |  | VN | dies_natalis |  |  |
+| 5 | 9 | `mr:1105-dominicus-mau` |  | VN | dies_natalis |  | 2004 Italian: Translation error: "con l'accusa di aver portato in pubblico la corona del Rosario" where the Latin has "Rosárii corónam públice ferens" (openly wearing the rosary as he was led to execution, exhorting the Christians). |
 | 5 | 10 | `mr:1105-guido-maria-conforti` | * | IT | dies_natalis |  | Guido Maria Conforti, blessed in the 2004 editions, was canonized on 23 October 2011. |
 | 5 | 11 | `mr:1105-ioannes-antonius-burro-mas` | * | ES | dies_natalis |  |  |
 | 5 | 12 | `mr:1105-maria-a-monte-carmelo-viel-ferrando` | * | ES | dies_natalis |  |  |
 | 5 | 13 | `mr:1105-bernardus-lichtenberg` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1105-gregorius-lakota` | * | RU | dies_natalis |  | 2004 English: Translation error: "Abé" where the Latin has "Abez". |
-| 6 | 1 | `mr:1106-felix` |  | TN | dies_natalis |  |  |
+| 6 | 1 | `mr:1106-felix` |  | TN | dies_natalis |  | 2004 Italian: Translation error: "La Calle ... nell'odierna Tunisia" where the Latin has "Thinísæ" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria). |
 | 6 | 2 | `mr:1106-paulus` |  | TR | commemoratio | same as `mr:0607-paulus` | 2004 English: Translation error: "and martyr" is added; the Latin has only "epíscopi Constantinopolitáni". |
 | 6 | 3 | `mr:1106-melanius` |  | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:1106-iltutus` | * | GB | dies_natalis |  |  |
@@ -105,7 +105,7 @@
 | 7 | 13 | `mr:1107-hyacinthus-castaneda-et-vincentius-le-quang-liem` |  | VN | dies_natalis |  |  |
 | 7 | 14 | `mr:1107-petrus-wu-guosheng` |  | CN | dies_natalis |  |  |
 | 7 | 15 | `mr:1107-vincentius-grossi` | * | IT | dies_natalis |  | Vincenzo Grossi, blessed in the 2004 editions, was canonized on 18 October 2015. |
-| 8 | 1 | `mr:1108-simpronianus-et-socii` |  | HR | commemoratio |  |  |
+| 8 | 1 | `mr:1108-simpronianus-et-socii` |  | HR | commemoratio |  | 2004 Italian: Translation error: "Srijem ... nell'odierna Croazia" where the Latin has "Sírmium" (the city of Sremska Mitrovica, in present-day Serbia). |
 | 8 | 2 | `mr:1108-clarus` |  | FR | dies_natalis |  |  |
 | 8 | 3 | `mr:1108-deusdedit-i` |  | IT | dies_natalis |  | 2004 English: Translation error: "Saint Deusdedit, pope" omits the ordinal of "Deúsdedit papæ Primi" (Deusdedit I). |
 | 8 | 4 | `mr:1108-willehadus` |  | DE | dies_natalis |  |  |
@@ -115,7 +115,7 @@
 | 8 | 8 | `mr:1108-iosephus-nguyen-dinh-nghi-et-socii` |  | VN | dies_natalis |  |  |
 | 9 | (1) | `mr:1109-dedicatio-basilicae-lateranensis` |  | IT | dedicatio |  |  |
 | 9 | 2 | `mr:1109-ursinus` |  | FR | dies_natalis |  |  |
-| 9 | 3 | `mr:1109-agrippinus` |  | IT | dies_natalis |  |  |
+| 9 | 3 | `mr:1109-agrippinus` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "fu tra i primi che antichi documenti dichiarano difensore della città" where the Latin has "epíscopi inter primos" (one of the first bishops of the city), whom ancient monuments call its defender. |
 | 9 | 4 | `mr:1109-vito` | * | FR | dies_natalis |  |  |
 | 9 | 5 | `mr:1109-eustolia-et-sopatra` |  | TR | dies_natalis |  |  |
 | 9 | 6 | `mr:1109-georgius` | * | FR | dies_natalis |  |  |
@@ -212,8 +212,8 @@
 | 16 | (1) | `mr:1116-margarita` |  | HU | dies_natalis | same as `mr:0610-margarita` |  |
 | 16 | (2) | `mr:1116-gertrudis-magna` |  | DE | celebratio | same as `mr:1115-gertrudis-magna` |  |
 | 16 | 3 | `mr:1116-augustinus-et-felicitas` |  | IT | dies_natalis |  |  |
-| 16 | 4 | `mr:1116-leocadius-et-lusor` | * | FR | commemoratio |  |  |
-| 16 | 5 | `mr:1116-eucherius` |  | FR | dies_natalis |  |  |
+| 16 | 4 | `mr:1116-leocadius-et-lusor` | * | FR | commemoratio |  | 2004 Italian: Translation error: "A Dol" where the Latin "Doli in território Bituricénsi" is Déols, in the territory of Bourges. |
+| 16 | 5 | `mr:1116-eucherius` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "nella vicina isola di Lérins" (on the nearby island of Lérins) where the Latin has "in ínsula próxima Lirinénsem" (on the island next to Lérins, i.e. Lero). |
 | 16 | 6 | `mr:1116-othmarus` | * | CH | dies_natalis |  |  |
 | 16 | 7 | `mr:1116-simeon` | * | IT | dies_natalis |  |  |
 | 16 | 8 | `mr:1116-edmundus-rich` |  | FR | dies_natalis |  |  |
@@ -251,7 +251,7 @@
 | 18 | 12 | `mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii` | * | ES | dies_natalis |  |  |
 | 19 | 1 | `mr:1119-abdias-propheta` |  | IL | commemoratio |  |  |
 | 19 | 2 | `mr:1119-maximus` |  | TR | dies_natalis |  |  |
-| 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  |  |
+| 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Braine-sur-la-Vesle" (a town near Soissons) where the Latin has "Brennáco prope Viénnam" (Brennacum near Vienne). |
 | 19 | 4 | `mr:1119-barlaam` |  | TR | dies_natalis |  |  |
 | 19 | 5 | `mr:1119-quadraginta-martyres-heracleae` |  | TR | dies_natalis |  |  |
 | 19 | 6 | `mr:1119-eudo` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
@@ -279,7 +279,7 @@
 | 21 | 2 | `mr:1121-rufus` |  |  | commemoratio |  |  |
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR | dies_natalis |  |  |
 | 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` | 2004 English: Translation error: "always deferring to greater contests" where the Latin has "semper ad maióra certámina dilátus" (always reserved for greater contests). |
-| 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  |  |
+| 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "illustrò con vera profondità di analisi" omits that he was the first to do so (Latin "primus fúnditus illustrávit"). |
 | 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis | same as `mr:0120-maurus` | 2004 English: Translation error: "Cresson in Umbria" where the Latin has "Cæsénæ in Flamínia" (Cesena in Flaminia). |
 | 21 | 7 | `mr:1121-francisca-de-siedliska` | * | IT | dies_natalis |  |  |
 | 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis | same as `mr:0916-caecilia` |  |

@@ -18,7 +18,7 @@
 | 1 | 12 | `mr:0201-andreas-de-comitibus-signiae` | * | IT | dies_natalis |  | 2004 English: Translation error: "Counts of Signore" where the Latin has "de Comítibus Sígniæ" (the Counts of Segni). |
 | 1 | 13 | `mr:0201-conorus-o-devany-et-patricius-o-lougham` | * | IE | dies_natalis |  | 2004 English: Translation error: "bishop of Dungannon and Connor" where the Latin has "epíscopi Dunénsis et Connorénsis" (of Down and Connor). Translation error: "both of the Order of Friars Minor" where the Latin gives "ex Ordine Fratrum Minórum" to the bishop alone. |
 | 1 | 14 | `mr:0201-henricus-morse` |  | GB | dies_natalis |  | 2004 English: Translation error: "gave up his spirit at Tyburn" omits "láqueo" (by the noose: he was hanged). |
-| 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "In April, near Angers" where the Latin has "Aprilíaci apud Andégavum" (at Avrillé near Angers). |
+| 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "In April, near Angers" where the Latin has "Aprilíaci apud Andégavum" (at Avrillé near Angers). 2004 Italian: Translation error: "Maria Vaillot" where the Latin has "Maríæ Annæ Vaillot" (Maria Anna, i.e. Marie-Anne Vaillot). |
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
 | 1 | 17 | `mr:0201-anna-michelotti` | * | IT | dies_natalis |  | 2004 English: Translation error: "Johanna Francesca Michelotti" omits "a Visitatióne (Annæ)" (of the Visitation, born Anna). Translation error: "Sisters of the Sacred Heart" where the Latin has "Sorórum Parvárum a Sacro Corde" (Little Sisters of the Sacred Heart). |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  | 2004 English: Translation error: "Sisters of the Sacred Heart of Jesus and Mary" where the Latin has "Soróres Fílias Sacrórum Córdium Iesu et Maríæ" (Sisters Daughters of the Sacred Hearts). |
@@ -39,7 +39,7 @@
 | 3 | (1) | `mr:0203-blasius` |  | TR | dies_natalis |  |  |
 | 3 | (2) | `mr:0203-ansgarius` |  | DE | dies_natalis |  |  |
 | 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio | same as `mr:1008-simeon` |  |
-| 3 | 4 | `mr:0203-celerinus` |  | TN | dies_natalis |  | 2004 English: Translation error: "through His glorious Passion" where the Latin "gloriósa passióne" refers to their own martyrdom. |
+| 3 | 4 | `mr:0203-celerinus` |  | TN | dies_natalis |  | 2004 Italian: Translation error: "spada" (sword) where the Latin has "ferro" (irons, i.e. chains, alongside the stocks). 2004 English: Translation error: "through His glorious Passion" where the Latin "gloriósa passióne" refers to their own martyrdom. |
 | 3 | 5 | `mr:0203-leonius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Leonianus" where the Latin has "Leónii" (Leonius). |
 | 3 | 6 | `mr:0203-teridius-et-remedius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the Province of France" where the Latin "in Província Gálliæ" means Provence. |
 | 3 | 7 | `mr:0203-lupicinus` |  | FR | dies_natalis |  |  |
@@ -48,7 +48,7 @@
 | 3 | 10 | `mr:0203-berlindis` | * | BE | dies_natalis |  |  |
 | 3 | 11 | `mr:0203-helinandus` | * | FR | commemoratio |  |  |
 | 3 | 12 | `mr:0203-ioannes-nelson` | * | GB | dies_natalis |  |  |
-| 3 | 13 | `mr:0203-claudina-thevenet` |  | FR | dies_natalis |  |  |
+| 3 | 13 | `mr:0203-claudina-thevenet` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Suore dei Sacri Cuori di Gesù e Maria" where the Latin has "Sorórum Iesu et Maríæ" (the Sisters of Jesus and Mary, without "Sacred Hearts"). |
 | 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  | Marie Rivier, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius` |  | IT | dies_natalis |  | 2004 English: Translation error: "Eutychii" where the Latin genitive "Eutýchii" means Eutychius. |
@@ -127,7 +127,7 @@
 | 9 | 4 | `mr:0209-maro` |  | SY | dies_natalis |  |  |
 | 9 | 5 | `mr:0209-teliavus` | * | GB | dies_natalis |  |  |
 | 9 | 6 | `mr:0209-sabinus` |  | IT | dies_natalis |  |  |
-| 9 | 7 | `mr:0209-ansbertus` |  | FR | dies_natalis |  |  |
+| 9 | 7 | `mr:0209-ansbertus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "dal re Pipino" (by King Pepin) where the Latin has "a Pippíno príncipe" (Pepin of Herstal, mayor of the palace, not a king). |
 | 9 | 8 | `mr:0209-alto` | * | DE | commemoratio |  |  |
 | 9 | 9 | `mr:0209-rainaldus` | * | IT | dies_natalis |  |  |
 | 9 | 10 | `mr:0209-franciscus-aloysius-febres-cordero` | * | ES | dies_natalis |  |  |
@@ -139,7 +139,7 @@
 | 10 | 6 | `mr:0210-prothadius` | * | FR | dies_natalis |  |  |
 | 10 | 7 | `mr:0210-austreberta` |  | FR | dies_natalis |  |  |
 | 10 | 8 | `mr:0210-gulielmus` |  | IT | dies_natalis |  |  |
-| 10 | 9 | `mr:0210-hugo` | * | BE | dies_natalis |  |  |
+| 10 | 9 | `mr:0210-hugo` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "la rifondazione dell’Ordine" (the refounding of the Order) where the Latin has "novi Ordinis institutiónem" (the establishment of the new Order). |
 | 10 | 10 | `mr:0210-clara` | * | IT | dies_natalis |  |  |
 | 10 | 11 | `mr:0210-petrus-fremond-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "virgins and martyrs 3" where the Latin has only "mártyrum" (martyrs). |
 | 10 | 12 | `mr:0210-eusebia-palomino-yenes` | * | ES | dies_natalis |  |  |
@@ -167,7 +167,7 @@
 | 13 | 3 | `mr:0213-benignus` |  | IT | dies_natalis |  |  |
 | 13 | 4 | `mr:0213-stephanus-lugduni` |  | FR | dies_natalis |  |  |
 | 13 | 5 | `mr:0213-stephanus-reate` |  | IT | commemoratio |  | 2004 English: Editorial error: a bracketed sentence about angels at his death is added, and "sicut sanctus Gregórius papa Magnus scripsit" (as Saint Gregory the Great wrote) is omitted. |
-| 13 | 6 | `mr:0213-gosbertus` | * | DE | dies_natalis |  |  |
+| 13 | 6 | `mr:0213-gosbertus` | * | DE | dies_natalis |  | 2004 Latin: Source error: "Suebórum" (the Suebi, Swabians) where Gosbert was bishop of the Swedes (Sueones). |
 | 13 | 7 | `mr:0213-guimera` | * | FR | dies_natalis |  | 2004 English: Translation error: "Guimene" where the Latin has "Guiméræ" (Guimera). |
 | 13 | 8 | `mr:0213-fulcranus` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0213-gilbertus` | * | FR | dies_natalis |  |  |
@@ -176,7 +176,7 @@
 | 13 | 12 | `mr:0213-lucretia-bellini` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
 | 13 | 14 | `mr:0213-paulus-le-van-loc` |  | VN | dies_natalis |  | 2004 English: Translation error: "Thủ-Nghẹ" where the Latin has "Thị-Nghè". |
-| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0309-cyrillus-et-methodius`; same as `mr:0707-cyrillus-et-methodius` |  |
+| 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0309-cyrillus-et-methodius`; same as `mr:0707-cyrillus-et-methodius` | 2004 Italian: Translation error: "Srijem, nell’odierna Croazia" for the Latin "Sirmiénsis"; Sirmium is Sremska Mitrovica, in present-day Serbia. |
 | 14 | 2 | `mr:0214-valentinus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0214-vitalis` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0214-zeno` |  | IT | dies_natalis |  |  |
@@ -211,7 +211,7 @@
 | 17 | 5 | `mr:0217-fintanus` |  | IE | dies_natalis |  |  |
 | 17 | 6 | `mr:0217-flavianus` |  | TR | commemoratio | same as `mr:0218-flavianus` | 2004 English: Translation error: "from the violence of the assault" is added; the Latin says only "brevi póstea vitam finívit" (he died shortly afterward). |
 | 17 | 7 | `mr:0217-finanus` | * | GB | dies_natalis |  |  |
-| 17 | 8 | `mr:0217-silvinus` |  | FR | depositio |  | 2004 English: Translation error: "apud Mórinos" (among the Morini) is left untranslated. |
+| 17 | 8 | `mr:0217-silvinus` |  | FR | depositio |  | 2004 Italian: Translation error: "Auxy-aux-Moines" for the Latin "Alcíaci", which is Auchy-les-Moines (Auchy-lès-Hesdin). 2004 English: Translation error: "apud Mórinos" (among the Morini) is left untranslated. |
 | 17 | 9 | `mr:0217-constabilis` | * | IT | dies_natalis |  |  |
 | 17 | 10 | `mr:0217-evermodus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (Alsace) where the Latin has "in Holsátia" (Holstein). |
 | 17 | 11 | `mr:0217-lucas-belludi` | * | IT | dies_natalis |  |  |
@@ -235,7 +235,7 @@
 | 19 | 4 | `mr:0219-barbatus` |  | IT | dies_natalis |  |  |
 | 19 | 5 | `mr:0219-georgius` | * | FR | dies_natalis |  |  |
 | 19 | 6 | `mr:0219-proclus` | * | IT | dies_natalis |  |  |
-| 19 | 7 | `mr:0219-bonifatius` | * | BE | depositio |  | 2004 Italian: Translation error: "tra i monaci cistercensi" (among Cistercian monks) where the Latin has "apud moniáles Cisterciénses" (among Cistercian nuns). |
+| 19 | 7 | `mr:0219-bonifatius` | * | BE | depositio |  | 2004 Italian: Translation error: "tra i monaci cistercensi" (among Cistercian monks) where the Latin has "apud moniáles Cisterciénses" (among Cistercian nuns). Translation error: "La Chambre" for the Latin "Cámeræ", which is the abbey of La Cambre near Brussels. |
 | 19 | 8 | `mr:0219-conradus-confalonieri` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0219-alvarus` | * | ES | commemoratio |  |  |
 | 19 | 10 | `mr:0219-elisabeth-picenardi` | * | IT | dies_natalis |  |  |
@@ -250,13 +250,13 @@
 | 20 | 7 | `mr:0220-hyacintha-marto` | * | PT | dies_natalis |  | Jacinta Marto, blessed in the 2004 editions, was canonized on 13 May 2017. |
 | 20 | 8 | `mr:0220-iulia-rodzinska` | * | PL | dies_natalis |  |  |
 | 21 | (1) | `mr:0221-petrus-damianus` |  | IT | celebratio | same as `mr:0223-petrus-damianus` | 2004 Italian: Translation omission: the sentence "Ipsíus autem tránsitus Favéntiæ in Flamínia crástina die evénit" (his death took place at Faenza on the following day) is not rendered. 2004 English: Translation error: "on a holy day" where the Latin has "crástina die" (on the following day). |
-| 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  |  |
-| 21 | 3 | `mr:0221-germanus` | * | CH | dies_natalis |  | 2004 English: Translation error: "the inhabitants of the monastery" where the Latin has "áccolas monastérii" (the people living near the monastery). |
+| 21 | 2 | `mr:0221-eustatius` |  | TR | commemoratio |  | 2004 Italian: Translation error: "a Tuzla" for the Latin "Traianópolim" (Traianopolis, near present-day Alexandroupoli). |
+| 21 | 3 | `mr:0221-germanus` | * | CH | dies_natalis |  | 2004 Italian: Translation error: "Grandfelt" for the Latin "Grandivallénsi" (Moutier-Grandval, in German Grandfelden). 2004 English: Translation error: "the inhabitants of the monastery" where the Latin has "áccolas monastérii" (the people living near the monastery). |
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB | dies_natalis |  |  |
 | 21 | 5 | `mr:0221-robertus-southwell` |  | GB | dies_natalis |  |  |
 | 21 | 6 | `mr:0221-natalis-pinot` | * | FR | dies_natalis |  |  |
 | 21 | 7 | `mr:0221-anna-catharina-dominici` | * | IT | dies_natalis |  |  |
-| 22 | (1) | `mr:0222-cathedra-petri-apostoli` |  |  | celebratio |  |  |
+| 22 | (1) | `mr:0222-cathedra-petri-apostoli` |  |  | celebratio |  | 2004 Italian: Translation error: "dalla sua vittoria" (his victory) where the Latin "tropǽo" means the monument over his tomb in the Vatican. |
 | 22 | 2 | `mr:0222-papias` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0222-paschasius` |  | FR | dies_natalis |  | 2004 English: Translation error: "in France of Lyon" where the Latin has "in Gállia Lugdunénsi" (in Lugdunensian Gaul). |
 | 22 | 4 | `mr:0222-maximianus` |  | IT | dies_natalis | same as `mr:0221-maximianus` |  |

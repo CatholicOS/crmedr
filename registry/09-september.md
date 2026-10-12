@@ -152,7 +152,7 @@
 | 10 | 12 | `mr:0910-iacobus-gagnot` | * | FR | dies_natalis |  | 2004 English: Translation error: "On the rafts of the pontoon" where the Latin has "In æquóribus ponti" (on the waters of the sea). |
 | 11 | 1 | `mr:0911-protus-et-hyacinthus` |  | IT | depositio |  |  |
 | 11 | 2 | `mr:0911-felix-et-regula` | * | CH | dies_natalis |  |  |
-| 11 | 3 | `mr:0911-paphnutius` |  | EG | commemoratio |  |  |
+| 11 | 3 | `mr:0911-paphnutius` |  | EG | commemoratio |  | 2004 Italian: Translation error: "il tendine del piede sinistro" (the tendon of the left foot) where the Latin has "sinístro póplite" (the left hamstring). |
 | 11 | 4 | `mr:0911-patiens` |  | FR | dies_natalis |  |  |
 | 11 | 5 | `mr:0911-sacerdos` |  | FR | dies_natalis | same as `mr:0912-sacerdos` |  |
 | 11 | 6 | `mr:0911-daniel` | * | GB | dies_natalis |  |  |
@@ -169,7 +169,7 @@
 | 12 | 2 | `mr:0912-autonomus` |  | TR | dies_natalis |  |  |
 | 12 | 3 | `mr:0912-cronidis-et-socii` |  | EG | dies_natalis |  |  |
 | 12 | 4 | `mr:0912-albeus` | * | IE | dies_natalis |  |  |
-| 12 | 5 | `mr:0912-guido` |  | BE | dies_natalis |  |  |
+| 12 | 5 | `mr:0912-guido` |  | BE | dies_natalis |  | 2004 Italian: Translation error: "Mariensee" where the Latin has "Maríæ Laci" (Our Lady of Laeken, near Brussels). |
 | 12 | 6 | `mr:0912-apollinaris-franco-et-socii` | * | JP | dies_natalis |  |  |
 | 12 | 7 | `mr:0912-petrus-sulpitius-christophorus-faverge` | * | FR | dies_natalis |  |  |
 | 12 | 8 | `mr:0912-franciscus-choe-kyong-hwan` |  | KR | dies_natalis |  |  |
@@ -187,8 +187,8 @@
 | 13 | 12 | `mr:0913-claudius-dumonet` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "artigiano" (craftsman) where the Latin has "magíster ártium" (Master of Arts). |
 | 13 | 13 | `mr:0913-benvenutus-villalon-acebron` | * | ES | dies_natalis |  |  |
 | 14 | (1) | `mr:0914-exaltatio-sanctae-crucis` |  |  | celebratio |  |  |
-| 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  |  |
-| 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  |  |
+| 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  | 2004 Italian: Translation error: "molti dissidenti" (many dissidents) where the Latin has "plures de lapsis" (many of the lapsed, who had denied the faith in persecution). |
+| 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  | 2004 Italian: Translation error: "trafitto con la spada" (pierced with the sword) where the Latin has "gládio animadvérti" (executed by the sword, i.e. beheaded). |
 | 14 | 4 | `mr:0914-maternus` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Beauvale" where the Latin has "Bellævallénsi" (Bellevaux, near Besançon). |
@@ -201,7 +201,7 @@
 | 15 | 3 | `mr:0915-valerianus` |  | FR | dies_natalis |  |  |
 | 15 | 4 | `mr:0915-straton-et-socii` |  | RO | dies_natalis |  | 2004 English: Translation error: "Stratonis" where the Latin has "Stratónis" (of Straton). |
 | 15 | 5 | `mr:0915-nicetas-gothus` |  | RO | dies_natalis |  |  |
-| 15 | 6 | `mr:0915-alpinus` |  | FR | dies_natalis |  |  |
+| 15 | 6 | `mr:0915-alpinus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "sant’Albino" where the Latin has "sancti Alpíni" (Alpinus). |
 | 15 | 7 | `mr:0915-aprus` |  | FR | dies_natalis |  |  |
 | 15 | 8 | `mr:0915-aichadrus` |  | FR | dies_natalis |  |  |
 | 15 | 9 | `mr:0915-emila-et-ieremias` |  | ES | dies_natalis |  |  |
@@ -219,7 +219,7 @@
 | 16 | 4 | `mr:0916-victor-et-socii` |  | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0916-priscus` | * | IT | dies_natalis |  |  |
 | 16 | 6 | `mr:0916-ninianus` |  | GB | commemoratio |  |  |
-| 16 | 7 | `mr:0916-rogellus-et-servusdei` |  | ES | dies_natalis |  |  |
+| 16 | 7 | `mr:0916-rogellus-et-servusdei` |  | ES | dies_natalis |  | 2004 Italian: Translation error: "mani e piedi" (hands and feet) where the Latin has "mánibus cruribúsque" (hands and legs). |
 | 16 | 8 | `mr:0916-ludmilla` | * | CZ | dies_natalis |  |  |
 | 16 | 9 | `mr:0916-editha` |  | GB | dies_natalis |  |  |
 | 16 | 10 | `mr:0916-victor-iii` | * | IT | dies_natalis | same as `mr:1016-victor-iii` |  |
@@ -265,14 +265,14 @@
 | 19 | 2 | `mr:0919-trophimus` |  | TR | dies_natalis |  |  |
 | 19 | 3 | `mr:0919-peleus-et-nilus` |  | PS | dies_natalis |  |  |
 | 19 | 4 | `mr:0919-eustochius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region of Lyon" where the Latin has "in Gállia Lugdunénsi" (the province of Lugdunensian Gaul). |
-| 19 | 5 | `mr:0919-sequanus` |  | FR | dies_natalis |  |  |
+| 19 | 5 | `mr:0919-sequanus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Sisteron" (a town in Provence) for the monastery the Latin places "apud Língones" (near Langres); this is Segestre, now Saint-Seine-l'Abbaye. |
 | 19 | 6 | `mr:0919-marianus` |  | FR | dies_natalis | same as `mr:0819-marianus` |  |
 | 19 | 7 | `mr:0919-goericus` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0919-theodorus` |  | GB | dies_natalis |  |  |
 | 19 | 9 | `mr:0919-pomposa` |  | ES | dies_natalis |  |  |
 | 19 | 10 | `mr:0919-lantbertus` | * | DE | dies_natalis |  |  |
 | 19 | 11 | `mr:0919-cyriacus` | * | IT | dies_natalis |  |  |
-| 19 | 12 | `mr:0919-arnulphus` | * | FR | dies_natalis |  |  |
+| 19 | 12 | `mr:0919-arnulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "si adoperò molto" (he worked hard) where the Latin has "multa sustínuit" (he endured much). |
 | 19 | 13 | `mr:0919-maria-de-cervello` | * | ES | dies_natalis |  |  |
 | 19 | 14 | `mr:0919-alphonsus-de-orozco` |  | ES | dies_natalis |  |  |
 | 19 | 15 | `mr:0919-carolus-hyon-song-mun` |  | KR | dies_natalis |  |  |
@@ -362,7 +362,7 @@
 | 25 | 6 | `mr:0925-finbarrus` | * | IE | dies_natalis |  |  |
 | 25 | 7 | `mr:0925-aunacharius` |  | FR | dies_natalis |  |  |
 | 25 | 8 | `mr:0925-ermenphridus` | * | FR | dies_natalis |  |  |
-| 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU | dies_natalis |  |  |
+| 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU | dies_natalis |  | 2004 Italian: Translation error: "a Mosca" (in Moscow) where the Latin has "in Mosquénsi Rússiæ regióne" (in the Moscow region); the monastery is not in the city. |
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |  |
 | 25 | 11 | `mr:0925-iosephus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
 | 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis | same as `mr:0927-cosmas-et-damianus` |  |

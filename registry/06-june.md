@@ -13,7 +13,7 @@
 | 1 | 7 | `mr:0601-caprasius` |  | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0601-florus` | * | FR | dies_natalis |  |  |
 | 1 | 9 | `mr:0601-ronanus` | * | FR | dies_natalis |  |  |
-| 1 | 10 | `mr:0601-wistanus` | * | GB | dies_natalis |  |  |
+| 1 | 10 | `mr:0601-wistanus` | * | GB | dies_natalis |  | 2004 Italian: Translation error: "Lichester" where the Latin has "Licestriénsi" (Leicester). |
 | 1 | 11 | `mr:0601-simeon` |  | DE | dies_natalis |  |  |
 | 1 | 12 | `mr:0601-eneco` |  | ES | dies_natalis |  |  |
 | 1 | 13 | `mr:0601-theobaldus` | * | IT | dies_natalis |  |  |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0601-alphonsus-navarrete-et-socii` | * | JP | dies_natalis |  |  |
 | 1 | 17 | `mr:0601-ioannes-baptista-vernoy-de-montjournal` | * | FR | dies_natalis |  |  |
 | 1 | 18 | `mr:0601-iosephus-tuc` |  | VN | dies_natalis |  |  |
-| 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT | dies_natalis |  | Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022. |
+| 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT | dies_natalis |  | Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022. 2004 Latin: Error: "Pias Societátes a Sacro Corde" (of the Sacred Heart) for the congregations Scalabrini founded, which are the Missionaries and Missionary Sisters of Saint Charles. |
 | 1 | 20 | `mr:0601-hannibalis-maria-di-francia` |  | IT | dies_natalis |  |  |
 | 2 | (1) | `mr:0602-marcellinus-et-petrus` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0602-pothinus-et-socii` |  | FR | dies_natalis |  |  |
@@ -122,7 +122,7 @@
 | 9 | 11 | `mr:0609-anna-maria-taigi` | * | IT | dies_natalis |  |  |
 | 10 | 1 | `mr:0610-censurius` |  | FR | dies_natalis |  |  |
 | 10 | 2 | `mr:0610-landericus` | * | FR | dies_natalis |  | 2004 English: Translation error: "rebuilt a hospital" where the Latin has "nosocomíum ædificásse" (built a hospital). |
-| 10 | 3 | `mr:0610-ithamarus` | * | GB | dies_natalis |  |  |
+| 10 | 3 | `mr:0610-ithamarus` | * | GB | dies_natalis |  | 2004 Italian: Translation error: "la gente di Canterbury" where the Latin has "gente Cantuariórum" (the people of Kent). |
 | 10 | 4 | `mr:0610-bogumilus` | * | PL | dies_natalis |  |  |
 | 10 | 5 | `mr:0610-diana-de-andalo` | * | IT | dies_natalis |  |  |
 | 10 | 6 | `mr:0610-henricus-de-bauzano` | * | IT | dies_natalis |  | 2004 English: Translation error: "of Balsano" where the Latin "de Bauzáno" is Bolzano. |
@@ -153,7 +153,7 @@
 | 12 | 8 | `mr:0612-lucretia-helena-cevoli` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:0612-gaspar-bertonus` |  | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  |  |
-| 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  |  |
+| 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  | 2004 Italian: Translation error: "Rivibamba" for the city of Riobamba (Latin "Rivibámbæ"). |
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia` | * | IT | dies_natalis |  |  |
 | 13 | (1) | `mr:0613-antonius` |  | PT | dies_natalis |  |  |
 | 13 | 2 | `mr:0613-felicula` |  | IT | dies_natalis |  |  |
@@ -162,7 +162,7 @@
 | 13 | 5 | `mr:0613-cetheus` |  | IT | dies_natalis |  |  |
 | 13 | 6 | `mr:0613-eulogius` |  | EG | dies_natalis | same as `mr:0913-eulogius` |  |
 | 13 | 7 | `mr:0613-psalmodius` | * | FR | dies_natalis |  |  |
-| 13 | 8 | `mr:0613-ragnebertus` | * | FR | dies_natalis |  |  |
+| 13 | 8 | `mr:0613-ragnebertus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "imprigionato" (imprisoned) where the Latin has "relegatióne" (banishment). |
 | 13 | 9 | `mr:0613-aventinus` | * | FR | dies_natalis |  | 2004 English: Translation error: "valley of Arbas" where the Latin "valle Arbústo" is the Larboust valley. |
 | 13 | 10 | `mr:0613-fandila` |  | ES | dies_natalis |  | 2004 English: Translation addition: "[and martyr]" is not in the Latin, which has "presbýteri et mónachi". |
 | 13 | 11 | `mr:0613-gerardus` | * | FR | dies_natalis |  |  |
@@ -188,7 +188,7 @@
 | 15 | 11 | `mr:0615-petrus-snow-et-radulphus-grimston` | * | GB | dies_natalis |  | 2004 English: Translation error: "and suffered the punishment of the gibbet" reads as part of the second martyr's offence; the Latin "passi sunt" says both suffered the gallows. |
 | 15 | 12 | `mr:0615-germana` |  | FR | dies_natalis |  |  |
 | 15 | 13 | `mr:0615-aloysius-maria-palazzolo` | * | IT | dies_natalis |  | Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022. 2004 English: Translation error: "Little Sisters of the Poor" where the Latin has "Sorórum Pauperculárum" (the Poor Sisters, Poverelle). |
-| 15 | 14 | `mr:0615-barbara-cui-lianzhi` |  | CN | dies_natalis |  |  |
+| 15 | 14 | `mr:0615-barbara-cui-lianzhi` |  | CN | dies_natalis |  | 2004 Italian: Translation error: "Presso la città di Liushuitao nel territorio di Qianshengzhuang" where the Latin has the village (pagus) of Qianshengzhuang near the city of Liushuitao. |
 | 16 | 1 | `mr:0616-quiricus-et-iulitta` |  |  | commemoratio |  |  |
 | 16 | 2 | `mr:0616-ferreolus-et-ferrutius` |  | FR | dies_natalis |  |  |
 | 16 | 3 | `mr:0616-similianus` |  | FR | dies_natalis |  | 2004 English: Translation error: "in Lyon" where the Latin has "in Lugdunénsi" (in the province of Gallia Lugdunensis, not the city of Lyon). |
@@ -219,7 +219,7 @@
 | 18 | 2 | `mr:0618-leontius` |  | LB | dies_natalis |  |  |
 | 18 | 3 | `mr:0618-cyriacus-et-paula` |  | TN | dies_natalis |  |  |
 | 18 | 4 | `mr:0618-amandus` |  | FR | dies_natalis |  |  |
-| 18 | 5 | `mr:0618-calogerus` |  | IT | dies_natalis |  |  |
+| 18 | 5 | `mr:0618-calogerus` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "monte Gemmariaro" where the Latin has "monte Chronio" (Monte Kronio, above Sciacca). |
 | 18 | 6 | `mr:0618-elisabeth` |  | DE | dies_natalis |  |  |
 | 18 | 7 | `mr:0618-hosanna-andreasi` | * | IT | dies_natalis |  |  |
 | 18 | 8 | `mr:0618-gregorius-barbarigo` |  | IT | dies_natalis |  |  |
@@ -239,11 +239,11 @@
 | 20 | 3 | `mr:0620-ioannes-de-mateola` | * | IT | dies_natalis |  |  |
 | 20 | 4 | `mr:0620-margarita-ebner` | * | DE | dies_natalis |  |  |
 | 20 | 5 | `mr:0620-dermitius-o-hurley` | * | IE | dies_natalis |  |  |
-| 20 | 6 | `mr:0620-margarita-ball` | * | IE | commemoratio |  |  |
+| 20 | 6 | `mr:0620-margarita-ball` | * | IE | commemoratio |  | 2004 Italian: Translation error: the Latin says she died "in carcere" (in prison) after "varia genera molestiarum" (various hardships); the text omits the prison and speaks of "varie torture". |
 | 20 | 7 | `mr:0620-franciscus-pacheco-et-socii` | * | JP | dies_natalis |  |  |
 | 20 | 8 | `mr:0620-thomas-whitbread-et-socii` | * | GB | dies_natalis |  |  |
 | 21 | (1) | `mr:0621-aloysius-gonzaga` |  | IT | dies_natalis |  |  |
-| 21 | 2 | `mr:0621-mevennus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Grel" where the Latin has "Gæli" (Gaël). |
+| 21 | 2 | `mr:0621-mevennus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "A Ghé" where the Latin has "Gaeli" (Gaël). 2004 English: Translation error: "Grel" where the Latin has "Gæli" (Gaël). |
 | 21 | 3 | `mr:0621-leutfridus` |  | FR | dies_natalis |  |  |
 | 21 | 4 | `mr:0621-radulphus` | * | FR | dies_natalis |  | 2004 English: Translation error: "to gather with the priests ..., {reading} chapters" where the Latin has "cum presbýteris ... capítula ... collígere curávit" (took care, with the priests, to collect chapters). |
 | 21 | 5 | `mr:0621-raymundus` | * | ES | dies_natalis |  |  |
@@ -255,12 +255,12 @@
 | 22 | (2) | `mr:0622-ioannes-fisher-et-thomas-more` |  | GB | dies_natalis |  |  |
 | 22 | 3 | `mr:0622-flavius-clemens` |  | IT | commemoratio |  |  |
 | 22 | 4 | `mr:0622-albanus` |  | GB | dies_natalis |  |  |
-| 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB | dies_natalis | same as `mr:0701-iulius-et-aaron` |  |
+| 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB | dies_natalis | same as `mr:0701-iulius-et-aaron` | 2004 Latin: Editorial error: "in Britannia Minore" (Brittany), but Caerleon, the City of the Legions, is in Britain (Wales). |
 | 22 | 6 | `mr:0622-eusebius` |  | SY | dies_natalis | same as `mr:0621-eusebius` |  |
 | 22 | 7 | `mr:0622-nicetas` |  | RS | commemoratio |  |  |
 | 22 | 8 | `mr:0622-innocentius-v` | * | IT | dies_natalis |  |  |
 | 23 | 1 | `mr:0623-nicomedia` |  | TR | commemoratio |  |  |
-| 23 | 2 | `mr:0623-ediltrudis` |  | GB | dies_natalis |  |  |
+| 23 | 2 | `mr:0623-ediltrudis` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "rifiutate per due volte le nozze" (twice refused marriage) where the Latin has "bis nuptiis posthabitis" (having twice set her marriages aside); she was twice married. |
 | 23 | 3 | `mr:0623-bilius` | * | FR | dies_natalis |  |  |
 | 23 | 4 | `mr:0623-lanfrancus` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "san Lanfranco" where the Latin has "beati Lanfranci" (Blessed). |
 | 23 | 5 | `mr:0623-walherus` | * | BE | dies_natalis |  | 2004 English: Translation error: "while still bearing the tonsure of Remigius" where the Latin has "remígii tonsa mactátus" (killed with an oar). |
@@ -300,7 +300,7 @@
 | 26 | 6 | `mr:0626-salvius` |  | FR | dies_natalis |  | 2004 English: Translation error: "Valence" where the Latin has "Valentiánam" (Valenciennes). |
 | 26 | 7 | `mr:0626-pelagius` |  | ES | dies_natalis |  |  |
 | 26 | 8 | `mr:0626-radulphus` |  | IT | dies_natalis |  |  |
-| 26 | 9 | `mr:0626-anthelmus` |  | FR | dies_natalis |  |  |
+| 26 | 9 | `mr:0626-anthelmus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "in Borgogna" (Burgundy) where the Latin has "in Sabaudia" (Savoy). |
 | 26 | 10 | `mr:0626-raymundus-petiniaud-de-jourgnac` | * | FR | dies_natalis |  |  |
 | 26 | 11 | `mr:0626-magdalena-fontaine-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "crowned with mockery and led to execution with the Rosary" where the Latin has "per ludíbrium coronátæ Rosário" (crowned in mockery with the Rosary). |
 | 26 | 12 | `mr:0626-iosephus-ma-taishun` | * | IT | dies_natalis |  |  |
@@ -342,7 +342,7 @@
 | 30 | 4 | `mr:0630-bertichramnus` | * | FR | dies_natalis |  |  |
 | 30 | 5 | `mr:0630-erentrudis` | * | AT | dies_natalis |  |  |
 | 30 | 6 | `mr:0630-theobaldus` |  | IT | dies_natalis | same as `mr:0701-theobaldus` |  |
-| 30 | 7 | `mr:0630-ladislaus` |  | SK | dies_natalis | same as `mr:0627-ladislaus` |  |
+| 30 | 7 | `mr:0630-ladislaus` |  | SK | dies_natalis | same as `mr:0627-ladislaus` | 2004 Latin: Source error: "ad Vagum flumen" (on the river Váh), but Nitra lies on the river Nitra. |
 | 30 | 8 | `mr:0630-otho` |  | DE | dies_natalis | same as `mr:0702-otho` |  |
 | 30 | 9 | `mr:0630-adolphus` | * | DE | dies_natalis |  |  |
 | 30 | 10 | `mr:0630-philippus-powell` | * | GB | dies_natalis |  |  |

@@ -13,7 +13,7 @@
 | 1 | 7 | `mr:0101-clarus` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0101-frodobertus` | * | FR | dies_natalis |  |  |
 | 1 | 9 | `mr:0101-gulielmus` | * | FR | dies_natalis |  |  |
-| 1 | 10 | `mr:0101-odilo` |  | FR | dies_natalis |  |  |
+| 1 | 10 | `mr:0101-odilo` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Presso Sauvigny" where the Latin has "Apud Silviníacum" (Souvigny, where Odilo died). |
 | 1 | 11 | `mr:0101-zdislava` |  | CZ | dies_natalis |  |  |
 | 1 | 12 | `mr:0101-hugolinus` | * | IT | dies_natalis |  |  |
 | 1 | 13 | `mr:0101-iosephus-maria-tomasi` | * | IT | dies_natalis |  |  |
@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:0101-sigismundus-gorazdowski` | * | UA | dies_natalis |  | Zygmunt Gorazdowski, blessed in the 2004 editions, was canonized on 23 October 2005. |
 | 1 | 18 | `mr:0101-marianus-konopinski` | * | DE | dies_natalis |  |  |
 | 2 | (1) | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` |  | TR | celebratio | same as `mr:0509-gregorius-nazianzenus`; same as `mr:0614-basilius-magnus` |  |
-| 2 | 2 | `mr:0102-telesphorus` |  | IT | depositio | same as `mr:0105-telesphorus` |  |
+| 2 | 2 | `mr:0102-telesphorus` |  | IT | depositio | same as `mr:0105-telesphorus` | 2004 Italian: Translation error: "dopo l’Apostolo" where the Latin has "ab Apóstolis" (from the Apostles). |
 | 2 | 3 | `mr:0102-argeus-et-socii` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0102-theodorus` | * | FR | dies_natalis |  | 2004 English: Translation error: "the province of France" where the Latin "in Província Gálliæ" names Provence. |
 | 2 | 5 | `mr:0102-bladulphus` | * | IT | dies_natalis |  |  |
@@ -58,7 +58,7 @@
 | 4 | 9 | `mr:0104-oringa-menabuoi` | * | IT | dies_natalis | CEI: entry 8 |  |
 | 4 | 10 | `mr:0104-thomas-plumtree` | * | GB | dies_natalis | CEI: entry 9 | 2004 English: Translation error: "choosing the noose over the axe" where the Latin "láquei pœnam ... pro vita máluit" says he preferred the noose to his life. |
 | 4 | 11 | `mr:0104-elisabeth-anna-seton` |  | US | dies_natalis | CEI: entry 10 |  |
-| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Manuel González García, blessed in the 2004 editions, was canonized on 16 October 2016. |
+| 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Manuel González García, blessed in the 2004 editions, was canonized on 16 October 2016. 2004 Latin: Name error: "Sorórum Missionariárum a Názareth"; the congregation is the Eucharistic Missionary Sisters of Nazareth. |
 | 5 | 1 | `mr:0105-syncletica` |  | EG | dies_natalis |  |  |
 | 5 | 2 | `mr:0105-deogratias` |  | TN | dies_natalis | same as `mr:0322-deogratias` |  |
 | 5 | 3 | `mr:0105-aemiliana` |  | IT | commemoratio |  |  |
@@ -106,7 +106,7 @@
 | 8 | 6 | `mr:0108-maximus` |  | IT | dies_natalis |  |  |
 | 8 | 7 | `mr:0108-georgius` | * | PS | dies_natalis |  |  |
 | 8 | 8 | `mr:0108-nathalanus` | * | GB | dies_natalis |  |  |
-| 8 | 9 | `mr:0108-erhardus` |  | DE | dies_natalis |  |  |
+| 8 | 9 | `mr:0108-erhardus` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "di origine scozzese" where the Latin "génere scotus" means of Irish origin. |
 | 8 | 10 | `mr:0108-gudila` | * | BE | dies_natalis |  |  |
 | 8 | 11 | `mr:0108-albertus` | * | IE | dies_natalis |  |  |
 | 8 | 12 | `mr:0108-laurentius-giustiniani` |  | IT | dies_natalis | same as `mr:0905-laurentius-iustinianus` | 2004 English: Translation error: "the wisdom of reform and doctrine" where the Latin has "doctrína ætérnæ sapiéntiæ" (the teaching of eternal wisdom). |
@@ -134,7 +134,7 @@
 | 10 | 11 | `mr:0110-petrus-urseolus` |  | IT | dies_natalis |  |  |
 | 10 | 12 | `mr:0110-benincasa` | * | IT | dies_natalis |  |  |
 | 10 | 13 | `mr:0110-gulielmus` |  | FR | dies_natalis |  |  |
-| 10 | 14 | `mr:0110-gundisalvus` | * | PT | dies_natalis |  | 2004 English: Translation error: "helped rebuild a bridge" where the Latin has "pontem ædificándum curávit" (had a bridge built). |
+| 10 | 14 | `mr:0110-gundisalvus` | * | PT | dies_natalis |  | 2004 Italian: Translation error: "ai suoi seguaci" where the Latin has "áccolis" (the people living nearby). Translation error: "sacerdote: originario di Braga" where the Latin has "presbýteri Bracarénsis" (a priest of Braga). 2004 English: Translation error: "helped rebuild a bridge" where the Latin has "pontem ædificándum curávit" (had a bridge built). |
 | 10 | 15 | `mr:0110-gregorius-x` | * | IT | dies_natalis | same as `mr:0216-gregorius-x` |  |
 | 10 | 16 | `mr:0110-aegidius-di-bello` | * | IT | dies_natalis |  |  |
 | 10 | 17 | `mr:0110-anna-ab-angelis` | * | PE | dies_natalis |  |  |
@@ -195,7 +195,7 @@
 | 15 | 4 | `mr:0115-probus` |  | IT | commemoratio |  |  |
 | 15 | 5 | `mr:0115-maurus` |  | FR | dies_natalis |  |  |
 | 15 | 6 | `mr:0115-tarsicia` | * | FR | dies_natalis |  |  |
-| 15 | 7 | `mr:0115-ablebertus` | * | NL | dies_natalis |  |  |
+| 15 | 7 | `mr:0115-ablebertus` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Olanda" for "Haméti in Brabántia", which lies in present-day Belgium. |
 | 15 | 8 | `mr:0115-malardus` | * | FR | dies_natalis |  |  |
 | 15 | 9 | `mr:0115-romedius` | * | IT | dies_natalis |  |  |
 | 15 | 10 | `mr:0115-bonitus` |  | FR | dies_natalis |  |  |
@@ -339,13 +339,13 @@
 | 27 | 5 | `mr:0127-marius` |  | FR | dies_natalis |  |  |
 | 27 | 6 | `mr:0127-vitalianus` |  | IT | depositio |  |  |
 | 27 | 7 | `mr:0127-theodoricus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Ternand" where the Latin has "Ternodóri" (Tonnerre). |
-| 27 | 8 | `mr:0127-gilduinus` | * | FR | dies_natalis |  |  |
+| 27 | 8 | `mr:0127-gilduinus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Dôle" where the Latin has "Dolénsis in Británnia Minóre" (Dol in Brittany). |
 | 27 | 9 | `mr:0127-ioannes` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "sede episcopale di Maurienne" where the Latin has "sedem Morinénsem" (the see of the Morini, that is Thérouanne). |
 | 27 | 10 | `mr:0127-manfredus-settala` | * | IT | dies_natalis |  |  |
 | 27 | 11 | `mr:0127-rosalia-du-verdier-de-la-soriniere` | * | FR | dies_natalis |  |  |
 | 27 | 12 | `mr:0127-ioannes-maria` |  | UG | dies_natalis |  |  |
 | 27 | 13 | `mr:0127-henricus-de-osso-y-cervello` |  | ES | dies_natalis |  |  |
-| 27 | 14 | `mr:0127-georgius-matulaitis` | * | LT | dies_natalis |  |  |
+| 27 | 14 | `mr:0127-georgius-matulaitis` | * | LT | dies_natalis |  | 2004 Italian: Translation error: "Nunzio apostolico" where the Latin has "missi apostólici" (apostolic envoy, i.e. Apostolic Visitor). |
 | 28 | (1) | `mr:0128-thomas-de-aquino` |  | IT | celebratio |  | 2004 English: Translation error: "prayer" where the Latin "oratiónibus" here means discourses. |
 | 28 | 2 | `mr:0128-ioannes` |  | FR | dies_natalis |  |  |
 | 28 | 3 | `mr:0128-iacobus` |  | PS | commemoratio |  |  |
