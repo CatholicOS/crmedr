@@ -208,7 +208,7 @@
 | 16 | 11 | `mr:0516-germerius` | * | FR | dies_natalis |  |  |
 | 16 | 12 | `mr:0516-ubaldus` |  | IT | dies_natalis |  |  |
 | 16 | 13 | `mr:0516-adamus` | * | IT | dies_natalis |  |  |
-| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). 2004 English: Translation error: "blessed Simon Stock" where the Latin has "sancti Simónis Stock" (Saint). Translation error: "Gascony" where the Latin has "in Vascónia". |
+| 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). 2004 English: Translation error: "blessed Simon Stock" where the Latin has "sancti Simónis Stock" (Saint). |
 | 16 | 15 | `mr:0516-andreas-bobola` |  | PL | dies_natalis |  |  |
 | 16 | 16 | `mr:0516-michael-wozniak` | * | DE | dies_natalis |  |  |
 | 16 | 17 | `mr:0516-vitalis-vladimirus-bajrak` | * | UA | dies_natalis |  |  |

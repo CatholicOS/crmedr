@@ -46,7 +46,7 @@
 | 3 | 8 | `mr:1103-pirminus` |  | DE | depositio |  |  |
 | 3 | 9 | `mr:1103-ioannicius` |  | TR | dies_natalis | same as `mr:1104-ioannicius` |  |
 | 3 | 10 | `mr:1103-odrada` | * | NL | depositio | CEI: asterisk False | 2004 Latin: Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). |
-| 3 | 11 | `mr:1103-ermengaudius` |  | ES | dies_natalis |  | 2004 English: Translation error: "rebuilĐing" where the Latin has "ædificándo" (building). |
+| 3 | 11 | `mr:1103-ermengaudius` |  | ES | dies_natalis |  | 2004 English: Translation error: "rebuilding" where the Latin has "ædificándo" (building). |
 | 3 | 12 | `mr:1103-berardus` | * | IT | dies_natalis |  |  |
 | 3 | 13 | `mr:1103-alpaidis` | * | FR | dies_natalis |  |  |
 | 3 | 14 | `mr:1103-idda` | * | CH | dies_natalis |  |  |

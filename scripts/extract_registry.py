@@ -4218,11 +4218,6 @@ REVIEW_EDITION_NOTES = {
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0516-simon-stock": {
-        EDITION_EN: (
-            "Translation error: \"Gascony\" where the Latin has \"in Vascónia\"."
-        ),
-    },
     "mr:0517-adrio": {
         EDITION_EN: (
             "Translation error: \"Adrian\" where the Latin has \"Adriónis\" (Adrio, not Hadrian)."
@@ -5558,7 +5553,7 @@ REVIEW_EDITION_NOTES = {
     },
     "mr:1103-ermengaudius": {
         EDITION_EN: (
-            "Translation error: \"rebuilĐing\" where the Latin has \"ædificándo\" (building)."
+            "Translation error: \"rebuilding\" where the Latin has \"ædificándo\" (building)."
         ),
     },
     "mr:1103-simon-balacchi": {
