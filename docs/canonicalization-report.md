@@ -998,7 +998,10 @@ look-alike places (Pontoise rendered Pont-Sainte-Maxence, Senlis rendered Autun)
 (mr:1022-abercius, mr:0720-aurelius), misreadings ("confessed" for confossa at
 mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius). Faults of the digitized copy
 rather than of the translation (footnote markers left in the text, an encoding slip of "d",
-broken words, run-in eulogies) are corrected in the texts, not noted.
+broken words, run-in eulogies) are corrected in the texts, not noted. Its 382 findings of medium
+and low confidence (373 on the English, 9 on the Latin) were accepted together, the first thirty
+checked by hand, to be weighed in public review (`REVIEW_EDITION_NOTES`); a note found wanting
+can be withdrawn on its own.
 
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (`ID_CORRECTIONS` keeps them on regeneration):

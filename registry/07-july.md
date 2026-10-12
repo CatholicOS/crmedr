@@ -34,7 +34,7 @@
 | 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  | 2004 English: Translation error: "Mysia" where the Latin has "Mœsia" (Moesia, on the Danube). |
 | 3 | 5 | `mr:0703-heliodorus` |  | IT | dies_natalis |  |  |
 | 3 | 6 | `mr:0703-anatolius-constantinopoli` | * | TR | dies_natalis |  |  |
-| 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis | same as `mr:0628-leo-ii` |  |
+| 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis | same as `mr:0628-leo-ii` | 2004 English: Translation error: "undertook" where the Latin has "suscépit" (received, that is, accepted the Council). |
 | 3 | 8 | `mr:0703-raymundus-gayrard` | * | FR | dies_natalis |  |  |
 | 3 | 9 | `mr:0703-iosephus-nguyen-dinh-uyen` |  | VN | dies_natalis |  |  |
 | 3 | 10 | `mr:0703-philippus-phan-van-minh` |  | VN | dies_natalis |  |  |
@@ -54,8 +54,8 @@
 | 4 | 12 | `mr:0704-gulielmus-andleby-et-socii` | * | GB | dies_natalis |  |  |
 | 4 | 13 | `mr:0704-antonius-daniel` |  | CA | dies_natalis |  |  |
 | 4 | 14 | `mr:0704-catharina-jarrige` | * | FR | dies_natalis |  |  |
-| 4 | 15 | `mr:0704-caesidius-giacomantonio` |  | CN | dies_natalis |  |  |
-| 4 | 16 | `mr:0704-petrus-georgius-frassati` | * | IT | dies_natalis |  | Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025. |
+| 4 | 15 | `mr:0704-caesidius-giacomantonio` |  | CN | dies_natalis |  | 2004 English: Translation error: "a mob of soldiers" where the Latin has "satéllitum turba" (a mob of henchmen). |
+| 4 | 16 | `mr:0704-petrus-georgius-frassati` | * | IT | dies_natalis |  | Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025. 2004 English: Translation error: "stirring up the Society" where the Latin has "in societátem excitándam" (the betterment of society). |
 | 4 | 17 | `mr:0704-iosephus-kowalski` | * | PL | dies_natalis |  |  |
 | 5 | (1) | `mr:0705-antonius-maria-zaccaria` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT | dies_natalis |  |  |
@@ -78,8 +78,8 @@
 | 6 | 8 | `mr:0706-iustus` | * | FR | dies_natalis |  |  |
 | 6 | 9 | `mr:0706-thomas-more` |  | GB | dies_natalis |  |  |
 | 6 | 10 | `mr:0706-thomas-alfield` | * | GB | dies_natalis |  |  |
-| 6 | 11 | `mr:0706-elias-desgardin` | * | FR | dies_natalis |  |  |
-| 6 | 12 | `mr:0706-maria-rosa-de-loye` | * | FR | dies_natalis |  |  |
+| 6 | 11 | `mr:0706-elias-desgardin` | * | FR | dies_natalis |  | 2004 English: Translation error: "Elisée" where the Latin has "Elíæ" (Élie). |
+| 6 | 12 | `mr:0706-maria-rosa-de-loye` | * | FR | dies_natalis |  | 2004 English: Translation error: "de Laye" where the Latin has "de Loye". |
 | 6 | 13 | `mr:0706-petrus-wang-zuolong` |  | CN | dies_natalis |  |  |
 | 6 | 14 | `mr:0706-maria-teresia-ledochowska` | * | IT | dies_natalis |  |  |
 | 6 | 15 | `mr:0706-nazaria-a-sancta-teresia` | * | AR | dies_natalis |  | Nazaria Ignacia of St Teresa of Jesus March Mesa, blessed in the 2004 editions, was canonized on 14 October 2018. |
@@ -111,14 +111,14 @@
 | 8 | 10 | `mr:0708-hadrianus-iii` | * | IT | dies_natalis | same as `mr:0907-hadrianus-iii` |  |
 | 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III. |
 | 8 | 12 | `mr:0708-mancius-arakus` | * | JP | dies_natalis |  |  |
-| 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN | dies_natalis |  |  |
+| 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN | dies_natalis |  | 2004 English: Translation error: "condemned to death by beheading" where the Latin has only "cápite damnátus" (condemned to death). |
 | 9 | (1) | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 2 | `mr:0709-ioanna-scopelli` | * | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0709-hadrianus-fortescue` | * | GB | dies_natalis |  |  |
 | 9 | 4 | `mr:0709-nicolaus-pieck-et-socii` |  | NL | dies_natalis |  |  |
 | 9 | 5 | `mr:0709-veronica-giuliani` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:0709-melania-et-maria-anna-margarita-ab-angelis` | * | FR | dies_natalis |  | 2004 Latin: Error: "Melániæ et Maríæ Annæ Magdalénæ de Guilhermier" makes two martyrs of one: Melania is the religious name of Maria Anna Magdalena de Guilhermier. The eulogy commemorates two Ursulines, she and Maria Anna Margarita ab Angelis de Rocher. 2004 Italian: Translation error: "Melania Marianna, Maddalena de Guilhermier" divides one name in two: Melania is the religious name of Marianna Maddalena de Guilhermier. 2004 English: Translation error: "Mélanie and Mary Anne Magdalen de Guilhermier" makes two martyrs of one: Mélanie is the religious name of Mary Anne Magdalen de Guilhermier. |
-| 9 | 7 | `mr:0709-ioachim-he-kaizhi` |  | CN | dies_natalis |  |  |
+| 9 | 7 | `mr:0709-ioachim-he-kaizhi` |  | CN | dies_natalis |  | 2004 English: Translation error: "Qingyan" where the Latin has "Cœiiaménsi" (Guiyang). |
 | 9 | 8 | `mr:0709-gregorius-grassus-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 9 | `mr:0709-paulina-a-corde-iesu-agonizante` |  | BR | dies_natalis |  |  |
 | 9 | 10 | `mr:0709-fidel-chijnacki` | * | DE | dies_natalis |  |  |
@@ -136,7 +136,7 @@
 | 10 | 11 | `mr:0710-canutus` |  | DK | dies_natalis | same as `mr:0119-canutus` |  |
 | 10 | 12 | `mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon` | * | FR | dies_natalis |  |  |
 | 10 | 13 | `mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu` |  | VN | dies_natalis |  |  |
-| 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  | Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were canonized on 20 October 2024. |
+| 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  | Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were canonized on 20 October 2024. 2004 English: Translation error: "three lay brothers" where the Latin has "trium germanórum fidélium" (three blood brothers, lay faithful). |
 | 11 | (1) | `mr:0711-benedictus` |  | IT | celebratio |  |  |
 | 11 | 2 | `mr:0711-pius-i` |  | IT | commemoratio |  |  |
 | 11 | 3 | `mr:0711-marcianus` |  | TR | dies_natalis |  |  |
@@ -145,7 +145,7 @@
 | 11 | 6 | `mr:0711-drostanus` | * | GB | dies_natalis |  |  |
 | 11 | 7 | `mr:0711-placidus-et-sigisbertus` | * | CH | dies_natalis |  | 2004 English: Translation error: "the former ... founded" where the Latin has "alter" (the other, Sigisbert) as founder and "prior" (Placidus) as the martyr. |
 | 11 | 8 | `mr:0711-hidulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Treviri" (bishop of Trier) where the Latin has "chorepíscopus Tréviris" (chorbishop at Trier). |
-| 11 | 9 | `mr:0711-abundius` |  | ES | dies_natalis |  |  |
+| 11 | 9 | `mr:0711-abundius` |  | ES | dies_natalis |  | 2004 English: Translation error: "was killed, seized by sudden indignation" where the Latin has "céleri indignatióne mota, perémptus est" (sudden indignation being roused, he was killed). Translation error: "[martyr]" added; the Latin has only "presbýteri". |
 | 11 | 10 | `mr:0711-olga` |  | UA | dies_natalis |  |  |
 | 11 | 11 | `mr:0711-bertrandus` | * | FR | dies_natalis |  |  |
 | 11 | 12 | `mr:0711-ketillus` | * | DK | dies_natalis |  |  |
@@ -179,13 +179,13 @@
 | 13 | 11 | `mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars` | * | FR | dies_natalis |  |  |
 | 13 | 12 | `mr:0713-elisabeth-verchiere-et-socii` | * | FR | dies_natalis |  |  |
 | 13 | 13 | `mr:0713-emmanuel-le-van-phung` |  | VN | dies_natalis |  |  |
-| 13 | 14 | `mr:0713-clelia-barbieri` |  | IT | dies_natalis |  |  |
+| 13 | 14 | `mr:0713-clelia-barbieri` |  | IT | dies_natalis |  | 2004 English: Translation error: "Budrio" where the Latin has "Búdriæ" (Budrie). |
 | 13 | 15 | `mr:0713-ferdinandus-maria-baccilieri` | * | IT | dies_natalis |  |  |
 | 13 | 16 | `mr:0713-paulus-liu-jinde` |  | CN | dies_natalis |  |  |
 | 13 | 17 | `mr:0713-iosephus-wang-guiji` |  | CN | dies_natalis |  |  |
 | 13 | 18 | `mr:0713-marianus-a-iesu-euse-hoyos` | * | CO | dies_natalis |  |  |
 | 13 | 19 | `mr:0713-carolus-emmanuel-rodriguez-santiago` | * | PR | dies_natalis |  |  |
-| 14 | (1) | `mr:0714-camillus-de-lellis` |  | IT | dies_natalis | same as `mr:0718-camillus-de-lellis` |  |
+| 14 | (1) | `mr:0714-camillus-de-lellis` |  | IT | dies_natalis | same as `mr:0718-camillus-de-lellis` | 2004 English: Translation error: "Theano" where the Latin has "Theánum in Aprútio" (Chieti). |
 | 14 | 2 | `mr:0714-optatianus` |  | IT | dies_natalis |  |  |
 | 14 | 3 | `mr:0714-vincentius` | * | BE | dies_natalis |  |  |
 | 14 | 4 | `mr:0714-marchelmus` |  | NL | dies_natalis |  |  |
@@ -234,8 +234,8 @@
 | 16 | 12 | `mr:0716-andreas-de-soveral-et-dominicus-carvalho` | * | BR | dies_natalis |  | The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed in the 2004 editions, were canonized on 15 October 2017. |
 | 16 | 13 | `mr:0716-nicolaus-savouret-et-claudius-beguignot` | * | FR | dies_natalis |  |  |
 | 16 | 14 | `mr:0716-maria-rosa-de-gordon-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Anne-Marie of Jesus" where the Latin has "Amátæ a Iesu" (Aimée of Jesus). |
-| 16 | 15 | `mr:0716-maria-magdalena-postel` |  | FR | dies_natalis |  |  |
-| 16 | 16 | `mr:0716-lang-yangzhi-et-paulus-lang-fu` |  | CN | dies_natalis |  |  |
+| 16 | 15 | `mr:0716-maria-magdalena-postel` |  | FR | dies_natalis |  | 2004 English: Translation error: "in extréma inópia" (in extreme poverty) is omitted. |
+| 16 | 16 | `mr:0716-lang-yangzhi-et-paulus-lang-fu` |  | CN | dies_natalis |  | 2004 English: Translation error: "Lijiapo" where the Latin has "Lüjiapo". |
 | 16 | 17 | `mr:0716-teresia-zhang-hezhi` |  | CN | dies_natalis |  |  |
 | 17 | 1 | `mr:0717-martyres-scillitani` |  | TN | dies_natalis |  |  |
 | 17 | 2 | `mr:0717-hyacinthus` |  | TR | dies_natalis |  |  |
@@ -254,7 +254,7 @@
 | 17 | 15 | `mr:0717-petrus-liu-ziyu` |  | CN | dies_natalis |  |  |
 | 17 | 16 | `mr:0717-petrus-gojdich` | * | SK | dies_natalis |  | 2004 English: Translation error: "Prešov" where the Latin has "Leopoldópoli" (Leopoldov). |
 | 18 | 1 | `mr:0718-symphorosa-et-socii` |  | IT | commemoratio |  | 2004 English: Translation error: "her seven sons" where the Latin has "septem sociórum" (seven companions). |
-| 18 | 2 | `mr:0718-maternus` |  | IT | dies_natalis |  |  |
+| 18 | 2 | `mr:0718-maternus` |  | IT | dies_natalis |  | 2004 English: Translation error: "Laud Pompey" where the Latin has "Laude Pompéia" (Lodi Vecchio). |
 | 18 | 3 | `mr:0718-aemilianus` |  | BG | dies_natalis |  |  |
 | 18 | 4 | `mr:0718-philastrius` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0718-ruffillus` |  | IT | dies_natalis |  |  |
@@ -264,16 +264,16 @@
 | 18 | 9 | `mr:0718-bruno` |  | IT | dies_natalis |  |  |
 | 18 | 10 | `mr:0718-simon-de-lipnica` | * | PL | dies_natalis |  | Simon of Lipnica, blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 18 | 11 | `mr:0718-ioannes-baptista-de-bruxelles` | * | FR | dies_natalis |  |  |
-| 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  |  |
+| 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  | 2004 English: Translation error: "paid the price of his apostasy" where the Latin "prétio apostásiæ réddito" means he returned the reward given him for apostatizing. |
 | 18 | 13 | `mr:0718-olga-mackiv` | * | UA | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 13*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (13*). |
 | 19 | 1 | `mr:0719-epaphra` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
 | 19 | 3 | `mr:0719-macrina` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
-| 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  |  |
+| 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  | 2004 English: Translation error: "Dii" (a Latin genitive) where the name is Dius. |
 | 19 | 5 | `mr:0719-symmachus` |  | IT | dies_natalis |  |  |
 | 19 | 6 | `mr:0719-aurea` |  | ES | dies_natalis |  |  |
 | 19 | 7 | `mr:0719-bernoldus` | * | NL | dies_natalis |  |  |
-| 19 | 8 | `mr:0719-stilla` | * | DE | dies_natalis |  |  |
+| 19 | 8 | `mr:0719-stilla` | * | DE | dies_natalis |  | 2004 English: Translation error: "Marienberg" where the Latin has "Mariæbúrgi" (Marienburg). |
 | 19 | 9 | `mr:0719-petrus-crisci` | * | IT | dies_natalis |  |  |
 | 19 | 10 | `mr:0719-ioannes-plessington` |  | GB | dies_natalis |  |  |
 | 19 | 11 | `mr:0719-ioannes-baptista-zhou-wurui` |  | CN | dies_natalis |  |  |
@@ -288,7 +288,7 @@
 | 20 | 7 | `mr:0720-vulmarus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Bologna" where the Latin "in pago Bononiénsi Gálliæ" is the district of Boulogne. |
 | 20 | 8 | `mr:0720-paulus` |  | ES | dies_natalis |  |  |
 | 20 | 9 | `mr:0720-bernardus` | * | DE | dies_natalis |  |  |
-| 20 | 10 | `mr:0720-magdalena-yi-yong-hui-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "virgins" where the Latin has "vírginis" (singular, of Mary Wŏn Kwi-im only). |
+| 20 | 10 | `mr:0720-magdalena-yi-yong-hui-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "virgins" where the Latin has "vírginis" (singular, of Mary Wŏn Kwi-im only). Translation error: the names "Terésiæ", "Marthæ", "Lúciæ", "Rosæ" and "Mariæ" are left in Latin case forms (Teresa, Martha, Lucy, Rose, Mary). |
 | 20 | 11 | `mr:0720-iosephus-maria-diaz-sanjurjo` |  | VN | dies_natalis |  |  |
 | 20 | 12 | `mr:0720-leo-ignatius-mangin-et-paulus-denn` |  | CN | dies_natalis |  | 2004 English: Translation error: "Yingxian" sect where the Latin has "sectæ «Yihetuan»" (the Boxers). |
 | 20 | 13 | `mr:0720-petrus-zhou-rixin` |  | CN | dies_natalis |  |  |
@@ -297,16 +297,16 @@
 | 20 | 16 | `mr:0720-xi-guizi` |  | CN | commemoratio |  |  |
 | 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu` | * | ES | dies_natalis |  | 2004 English: Translation error: the clause "et paulo post plumbis in via transfóssæ" (and shortly afterwards shot in the street) is omitted. |
 | 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT | celebratio |  |  |
-| 21 | 2 | `mr:0721-victor` |  | FR | dies_natalis |  |  |
+| 21 | 2 | `mr:0721-victor` |  | FR | dies_natalis |  | 2004 English: Translation error: "the province of France" where the Latin "in Província Gálliæ" means Provence. |
 | 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis | same as `mr:0701-simeon-salus` | 2004 Italian: Translation error: "presso il lago di Mareotide in Egitto" where the Latin has "apud Asphaltitem lacum" (the Dead Sea). |
 | 21 | 4 | `mr:0721-praxedes` |  | IT | commemoratio |  |  |
 | 21 | 5 | `mr:0721-arbogastus` |  | FR | dies_natalis |  |  |
 | 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  | 2004 English: Translation error: "Lugduni" where the Latin has "beáti" (blessed). |
 | 21 | 7 | `mr:0721-albericus-crescitelli` |  | CN | dies_natalis |  |  |
-| 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  |  |
+| 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  | 2004 English: Translation error: "Yomenienina" where the Latin "Iomnienínam" is the city of Yongnian. |
 | 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  | By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised from an obligatory memorial to a feast. |
 | 22 | 2 | `mr:0722-platon` |  | TR | dies_natalis |  |  |
-| 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  |  |
+| 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  | 2004 English: Translation error: "of Massilia" (Marseilles) where the Latin "Massilitanórum" denotes the African Massylitan martyrs. |
 | 22 | 4 | `mr:0722-cyrillus` |  | TR | dies_natalis |  |  |
 | 22 | 5 | `mr:0722-anastasius` |  | GE | dies_natalis |  |  |
 | 22 | 6 | `mr:0722-wandregisilus` |  | FR | dies_natalis |  |  |
@@ -319,10 +319,10 @@
 | 22 | 13 | `mr:0722-iacobus-lombardie` | * | FR | dies_natalis |  |  |
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
-| 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis | same as `mr:1008-birgitta` |  |
+| 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis | same as `mr:1008-birgitta` | 2004 English: Translation error: "the Mystical Church" where the Latin "mýstice reformándis" speaks of reforming the Church mystically. |
 | 23 | 2 | `mr:0723-ezechiel-propheta` |  | IL | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT | commemoratio |  |  |
-| 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  | 2004 English: Translation error: "Bizerte in Tunisia" where the Latin has "Bízyæ in Thrácia" (Vize in Thrace). |
+| 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  | 2004 English: Translation error: "Bizerte in Tunisia" where the Latin has "Bízyæ in Thrácia" (Vize in Thrace). Translation error: "having won the palm of martyrdom" where the Latin has "mártyrum palmas æmulátus" (emulating the martyrs' palms). |
 | 23 | 5 | `mr:0723-ioannes-cassianus` | * | FR | dies_natalis |  |  |
 | 23 | 6 | `mr:0723-valerianus` | * | FR | dies_natalis |  |  |
 | 23 | 7 | `mr:0723-ioanna` | * | IT | dies_natalis |  |  |
@@ -352,7 +352,7 @@
 | 24 | 19 | `mr:0724-iosephus-fernandez` |  | VN | dies_natalis |  |  |
 | 24 | 20 | `mr:0724-dominicus-mazzarello` | * | IT | dies_natalis |  |  |
 | 24 | 21 | `mr:0724-iacoba-martinez-garcia-et-socii` | * | ES | dies_natalis |  |  |
-| 24 | 22 | `mr:0724-maria-a-mercede-prat` | * | ES | dies_natalis |  |  |
+| 24 | 22 | `mr:0724-maria-a-mercede-prat` | * | ES | dies_natalis |  | 2004 English: Translation error: "though a religious" where the Latin "cum religiósa esset" means because she was a religious. |
 | 24 | 23 | `mr:0724-xaverius-bordas-piferrer` | * | ES | dies_natalis |  |  |
 | 25 | (1) | `mr:0725-iacobus-apostolus` |  | PS | dies_natalis |  |  |
 | 25 | 2 | `mr:0725-christophorus` |  | TR | dies_natalis |  |  |
@@ -369,7 +369,7 @@
 | 25 | 13 | `mr:0725-antonius-lucci` | * | IT | dies_natalis |  |  |
 | 25 | 14 | `mr:0725-michael-ludovicus-brulard` | * | FR | dies_natalis |  |  |
 | 25 | 15 | `mr:0725-maria-a-monte-carmelo-salles-y-barangueras` | * | ES | dies_natalis |  | María del Monte Carmelo Sallés y Barangueras, blessed in the 2004 editions, was canonized on 21 October 2012. |
-| 25 | 16 | `mr:0725-petrus-a-corde-et-socii` | * | ES | dies_natalis |  |  |
+| 25 | 16 | `mr:0725-petrus-a-corde-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "Peter of the Heart" omits the surname "Redondo" given in the Latin. |
 | 25 | 17 | `mr:0725-carolus-rubio-alvarez-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES | dies_natalis |  |  |
 | 25 | 19 | `mr:0725-deogratias-palacios-et-socii` | * | ES | dies_natalis |  |  |
@@ -379,7 +379,7 @@
 | 26 | 3 | `mr:0726-simeon` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0726-austindus` | * | FR | dies_natalis |  |  |
 | 26 | 5 | `mr:0726-evangelista-et-peregrinus` | * | IT | dies_natalis |  |  |
-| 26 | 6 | `mr:0726-hugo-de-actis` | * | IT | dies_natalis |  |  |
+| 26 | 6 | `mr:0726-hugo-de-actis` | * | IT | dies_natalis |  | 2004 English: Translation error: "Hugh of the Acts" where "de Actis" is a surname (Hugh de Actis). |
 | 26 | 7 | `mr:0726-camilla-gentili` | * | IT | dies_natalis |  |  |
 | 26 | 8 | `mr:0726-ioannes-ingram` | * | GB | dies_natalis |  |  |
 | 26 | 9 | `mr:0726-georgius-swallowell` | * | GB | dies_natalis |  |  |
@@ -398,10 +398,10 @@
 | 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis | same as `mr:0406-caelestinus-i` |  |
 | 27 | 5 | `mr:0727-simeon` |  | TR | dies_natalis | same as `mr:0105-simeon` |  |
 | 27 | 6 | `mr:0727-ursus` | * | FR | dies_natalis |  |  |
-| 27 | 7 | `mr:0727-ecclesius` | * | IT | dies_natalis |  |  |
+| 27 | 7 | `mr:0727-ecclesius` | * | IT | dies_natalis |  | 2004 English: Translation error: "stood firm" where the Latin "solus in superándis" says he alone survived them. |
 | 27 | 8 | `mr:0727-galactorius` | * | FR | dies_natalis |  |  |
 | 27 | 9 | `mr:0727-anthusa` |  | TR | dies_natalis |  |  |
-| 27 | 10 | `mr:0727-georgius-et-socii` |  | ES | dies_natalis | same as `mr:1020-georgius-et-aurelius` |  |
+| 27 | 10 | `mr:0727-georgius-et-socii` |  | ES | dies_natalis | same as `mr:1020-georgius-et-aurelius` | 2004 English: Translation error: "George, deacon, and Syrian, monk" where the Latin describes George as a Syrian deacon and monk. |
 | 27 | 11 | `mr:0727-clemens` | * | MK | dies_natalis |  |  |
 | 27 | 12 | `mr:0727-bertholdus` | * | AT | dies_natalis |  |  |
 | 27 | 13 | `mr:0727-raymundus-palmerio` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "la moglie e il figlio" (one son) where the Latin has "uxore et filiis" (wife and children). |
@@ -413,7 +413,7 @@
 | 27 | 19 | `mr:0727-ioachim-vilanova-camallonga` | * | ES | dies_natalis |  |  |
 | 27 | 20 | `mr:0727-modestus-vegas-vegas` | * | ES | dies_natalis |  |  |
 | 27 | 21 | `mr:0727-philippus-hernandez-martinez-et-socii` | * | ES | dies_natalis |  |  |
-| 27 | 22 | `mr:0727-maria-clemens-a-iesu-crucifixo` | * | PL | dies_natalis |  |  |
+| 27 | 22 | `mr:0727-maria-clemens-a-iesu-crucifixo` | * | PL | dies_natalis |  | 2004 English: Translation error: "Maria Clementina" where the Latin has "Maríæ Cleméntis" (Maria Clemens). |
 | 28 | 1 | `mr:0728-prochorius-et-socii` |  | TR | commemoratio |  |  |
 | 28 | 2 | `mr:0728-victor-i` |  | IT | dies_natalis |  |  |
 | 28 | 3 | `mr:0728-martyres-thebaidis` |  | EG | commemoratio |  |  |
@@ -422,7 +422,7 @@
 | 28 | 6 | `mr:0728-camelianus` | * | FR | dies_natalis |  |  |
 | 28 | 7 | `mr:0728-samson` |  | FR | dies_natalis |  |  |
 | 28 | 8 | `mr:0728-botvidus` | * | SE | dies_natalis |  |  |
-| 28 | 9 | `mr:0728-melchior-garcia-sanpedro` |  | VN | dies_natalis |  |  |
+| 28 | 9 | `mr:0728-melchior-garcia-sanpedro` |  | VN | dies_natalis |  | 2004 English: Translation error: "beaten to death, his limbs crushed" where the Latin "membris cæsus" means cut limb from limb. |
 | 28 | 10 | `mr:0728-petrus-poveda-castroverde` |  | ES | dies_natalis |  |  |
 | 28 | 11 | `mr:0728-emmanuel-segura-et-david-carlos` | * | ES | dies_natalis |  |  |
 | 28 | 12 | `mr:0728-emmanuel-barbal-cosan` |  | ES | dies_natalis |  |  |
@@ -433,7 +433,7 @@
 | 29 | 3 | `mr:0729-callinicus` |  | TR | dies_natalis |  |  |
 | 29 | 4 | `mr:0729-felix` |  | IT | dies_natalis |  |  |
 | 29 | 5 | `mr:0729-simplicius-et-socii` |  | IT | dies_natalis |  |  |
-| 29 | 6 | `mr:0729-lupus` |  | FR | dies_natalis |  |  |
+| 29 | 6 | `mr:0729-lupus` |  | FR | dies_natalis |  | 2004 Latin: Edition error: "Británniam Minórem" (Brittany) where the mission of Germanus and Lupus against the Pelagians was to Britain. |
 | 29 | 7 | `mr:0729-prosperus` |  | FR | dies_natalis |  |  |
 | 29 | 8 | `mr:0729-olavus` |  | NO | dies_natalis |  |  |
 | 29 | 9 | `mr:0729-urbanus-ii` | * | IT | dies_natalis | same as `mr:0819-urbanus-ii` |  |
@@ -442,7 +442,7 @@
 | 29 | 12 | `mr:0729-carolus-nicolaus-antonius-ancel` | * | FR | dies_natalis |  |  |
 | 29 | 13 | `mr:0729-iosephus-zhang-wenlan-et-paulus-chen-changpin` |  | CN | dies_natalis |  |  |
 | 29 | 14 | `mr:0729-ioannes-baptista-egozcuezabal-aldaz` | * | ES | dies_natalis |  |  |
-| 29 | 15 | `mr:0729-lucius-martinez-mancebo-et-socii` | * | ES | dies_natalis |  |  |
+| 29 | 15 | `mr:0729-lucius-martinez-mancebo-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "thirteen martyrs" is added; the Latin "et sociórum" gives no number. |
 | 29 | 16 | `mr:0729-iosephus-de-calasanz-marques` | * | ES | dies_natalis |  |  |
 | 30 | (1) | `mr:0730-petrus-chrysologus` |  | IT | celebratio | same as `mr:1204-petrus-chrysologus` |  |
 | 30 | 2 | `mr:0730-abdon-et-sennen` |  | IT | dies_natalis |  |  |
@@ -462,7 +462,7 @@
 | 31 | (1) | `mr:0731-ignatius-de-loyola` |  | IT | dies_natalis |  |  |
 | 31 | 2 | `mr:0731-calimerus` |  | IT | dies_natalis |  |  |
 | 31 | 3 | `mr:0731-democritus-et-socii` |  | TR | dies_natalis |  |  |
-| 31 | 4 | `mr:0731-fabius` |  | DZ | dies_natalis |  |  |
+| 31 | 4 | `mr:0731-fabius` |  | DZ | dies_natalis |  | 2004 English: Translation error: "imperial standards" where the Latin has "vexílla præsidália" (the governor's standards). |
 | 31 | 5 | `mr:0731-tertullinus` |  | IT | dies_natalis | same as `mr:0804-tertullinus` |  |
 | 31 | 6 | `mr:0731-germanus` |  | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:0731-petrus-chrysologus` |  | IT | dies_natalis | same as `mr:1202-petrus-chrysologus` |  |
