@@ -162074,6 +162074,48 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0420-dina-bosatta|Dina Bosatta",
+      "eulogy": "mr:0420-dina-bosatta",
+      "day": "04-20",
+      "typology": "dies_natalis",
+      "subject": "Beata Dina Bosatta",
+      "name": "Dina Bosatta",
+      "also": [
+        "Clara Bosatta"
+      ],
+      "where": "text",
+      "companions": [],
+      "failed": [
+        "status: the best candidate (Q3667471) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q3667471",
+          "label": "Chiara Bosatta",
+          "description": "Italian Roman Catholic nun (1858-1887)",
+          "names": [
+            "Chiara Bosatta",
+            "Dina Bosatta"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1858-05-27",
+          "died": "1887-04-20",
+          "feast": [
+            "Q2524"
+          ],
+          "evidence": [
+            "human",
+            "name",
+            "death"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0420-dominicus-vernagalli|Dominicus Vernagalli",
       "eulogy": "mr:0420-dominicus-vernagalli",
       "day": "04-20",
@@ -315842,6 +315884,26 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Elisabeth Verchiere",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Elisabeth Verchiere",
+      "also": [
+        "Magdalena a Matre Dei Verchiere"
+      ],
+      "where": "text",
+      "companions": [],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0713-emmanuel-le-van-phung|Emmanuel Le Van Phung",
       "eulogy": "mr:0713-emmanuel-le-van-phung",
       "day": "07-13",
@@ -324569,6 +324631,33 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0716-maria-rosa-de-gordon-et-socii|Maria Rosa de Gordon",
+      "eulogy": "mr:0716-maria-rosa-de-gordon-et-socii",
+      "day": "07-16",
+      "typology": "dies_natalis",
+      "subject": "Beatae Maria Rosa de Gordon et socii",
+      "name": "Maria Rosa de Gordon",
+      "also": [
+        "Amata a Iesu de Gordon"
+      ],
+      "where": "text",
+      "companions": [
+        "Maria a Iesu Charansol",
+        "Maria Anna a Sancto Ioachim Béguin-Royal",
+        "Maria Anna a Sancto Michaele Doux",
+        "Maria Rosa a Sancto Andrea Laye",
+        "Dorothea a Corde Mariæ",
+        "Magdalena a Sanctissimo Sacramento de Justamont"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0716-maria-rosa-de-gordon-et-socii|Maria a Iesu Charansol",
       "eulogy": "mr:0716-maria-rosa-de-gordon-et-socii",
       "day": "07-16",
@@ -326744,6 +326833,40 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0717-maria-magdalena-claudina-lidoine-et-socii|Maria Magdalena Claudina Lidoine",
+      "eulogy": "mr:0717-maria-magdalena-claudina-lidoine-et-socii",
+      "day": "07-17",
+      "typology": "dies_natalis",
+      "subject": "Beatae Maria Magdalena Claudina Lidoine et socii",
+      "name": "Maria Magdalena Claudina Lidoine",
+      "also": [
+        "Teresia a Sancto Augustino Lidoine"
+      ],
+      "where": "text",
+      "companions": [
+        "Maria Anna Francisca a Sancto Ludovico Brideau",
+        "Maria Anna a Iesu Crucifixo Piedcourt",
+        "Carlotta a Resurrectione Thouret",
+        "Euphrasia ab Immaculata Conceptione Brard",
+        "Henrica a Iesu de Croissy",
+        "Teresia a Corde Mariæ Hanisset",
+        "Teresia a Sancto Ignatio Trézelle",
+        "Iulia Ludovica a Iesu Chrétien de Neufville",
+        "Maria Henrica a Providentia Pelras",
+        "Constantia Meunier",
+        "Maria a Sancto Spiritu Roussel",
+        "Maria a Sancta Martha Dufour",
+        "Elisabeth Iulia a Sancto Francisco Vérolot"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0717-maria-magdalena-claudina-lidoine-et-socii|Maria a Sancta Martha Dufour",
       "eulogy": "mr:0717-maria-magdalena-claudina-lidoine-et-socii",
       "day": "07-17",
@@ -326867,6 +326990,26 @@
         "Maria a Sancta Martha Dufour",
         "Elisabeth Iulia a Sancto Francisco Vérolot"
       ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0717-petrus-gojdich|Petrus Gojdich",
+      "eulogy": "mr:0717-petrus-gojdich",
+      "day": "07-17",
+      "typology": "dies_natalis",
+      "subject": "Beatus Petrus Gojdich",
+      "name": "Petrus Gojdich",
+      "also": [
+        "Paulus Gojdich"
+      ],
+      "where": "text",
+      "companions": [],
       "failed": [
         "no candidate found"
       ],
