@@ -71984,6 +71984,15 @@
           "end": 17,
           "check": "a543e1c5",
           "qid": "Q1348"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 58,
+          "check": "dc6a042b",
+          "name": "Agnes Gonxha Bojaxhiu",
+          "qid": "Q30547"
         }
       ],
       "mr:0905-urbanus-et-socii": [
@@ -81291,6 +81300,15 @@
           "check": "530a8f2d",
           "name": "Raphael Archangelus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 123,
+          "check": "b95cb585",
+          "name": "Michael Archangelus",
+          "qid": null
         }
       ],
       "mr:0929-nicolaus-de-furca-palena": [
@@ -82572,6 +82590,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "7622d7f5",
+          "name": "Faustus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 53,
           "end": 57,
           "check": "2d1d6af1",
@@ -83285,6 +83312,15 @@
           "end": 19,
           "check": "2660b65b",
           "qid": "Q6625"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 33,
+          "check": "a79906bf",
+          "name": "Fides",
+          "qid": null
         }
       ],
       "mr:1006-franciscus-hunot": [
@@ -83926,6 +83962,15 @@
           "end": 46,
           "check": "65132a90",
           "qid": "Q100811"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 62,
+          "check": "71468cea",
+          "name": "Domninus Iuliam",
+          "qid": null
         }
       ],
       "mr:1009-domninus-tiferni-tiberini": [
@@ -83936,6 +83981,15 @@
           "end": 26,
           "check": "feb880ec",
           "qid": "Q20413"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 42,
+          "check": "71468cea",
+          "name": "Domninus Tiferni Tiberini",
+          "qid": null
         }
       ],
       "mr:1009-emmanuel-canoura-arnau-et-socii": [
@@ -86266,6 +86320,17 @@
           "qid": "Q181238"
         }
       ],
+      "mr:1017-osee-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 34,
+          "check": "621e3668",
+          "name": "Osee Propheta",
+          "qid": null
+        }
+      ],
       "mr:1017-petrus-a-nativitate": [
         {
           "kind": "place",
@@ -87087,6 +87152,15 @@
           "end": 46,
           "check": "769ce1da",
           "qid": "Q48278"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 103,
+          "check": "5874f7e1",
+          "name": "Laura Montoya y Upegui",
+          "qid": null
         }
       ],
       "mr:1021-malchus": [
@@ -87146,6 +87220,15 @@
           "end": 14,
           "check": "b48c7e4f",
           "qid": "Q8684"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 41,
+          "check": "196bb75c",
+          "name": "Petrus Yu Tae Chol",
+          "qid": null
         }
       ],
       "mr:1021-severinus": [
@@ -87697,6 +87780,15 @@
           "end": 20,
           "check": "cab4337b",
           "qid": "Q13670"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 36,
+          "check": "5aa55de9",
+          "name": "Ioannes Syracusis",
+          "qid": null
         }
       ],
       "mr:1023-iulianus-nicolaus-reche": [
@@ -92449,6 +92541,15 @@
           "end": 32,
           "check": "74cdaf0f",
           "qid": "Q9278"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 46,
+          "check": "403cfcb1",
+          "name": "Menna Mareotidem",
+          "qid": null
         }
       ],
       "mr:1111-menna-samnii": [
@@ -92459,6 +92560,15 @@
           "end": 19,
           "check": "f926af60",
           "qid": "Q463459"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 46,
+          "check": "403cfcb1",
+          "name": "Menna Samnii",
+          "qid": null
         }
       ],
       "mr:1111-theodorus-studita": [
@@ -93121,6 +93231,15 @@
           "end": 65,
           "check": "38698f41",
           "name": "Iosephus Džidžov",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 102,
+          "check": "2dd289f1",
+          "name": "Robertus Matthaeus Šiškov",
           "qid": null
         }
       ],
@@ -94130,6 +94249,15 @@
           "end": 19,
           "check": "e0d08d91",
           "qid": "Q513980"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 36,
+          "check": "d308b470",
+          "name": "Gregorius Neocaesareae",
+          "qid": null
         }
       ],
       "mr:1117-gregorius-turonis": [
@@ -94140,6 +94268,15 @@
           "end": 19,
           "check": "c8d4a27a",
           "qid": "Q288"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 36,
+          "check": "d308b470",
+          "name": "Gregorius Turonis",
+          "qid": null
         }
       ],
       "mr:1117-hilda": [
@@ -94169,6 +94306,15 @@
           "end": 19,
           "check": "e2a4fc23",
           "qid": "Q180057"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 35,
+          "check": "a19a1724",
+          "name": "Hugo Lincolniae",
+          "qid": null
         }
       ],
       "mr:1117-hugo-nucariae": [
@@ -94179,6 +94325,15 @@
           "end": 18,
           "check": "f821732a",
           "qid": "Q378280"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 34,
+          "check": "a19a1724",
+          "name": "Hugo Nucariae",
+          "qid": null
         }
       ],
       "mr:1117-ioannes-del-castillo": [
@@ -95319,6 +95474,15 @@
           "end": 18,
           "check": "ceaae66c",
           "qid": "Q6662"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 32,
+          "check": "4e0549e8",
+          "name": "Maurus Caesenae",
+          "qid": null
         }
       ],
       "mr:1121-maurus-parentii": [
@@ -95329,6 +95493,15 @@
           "end": 19,
           "check": "45c63b66",
           "qid": "Q5323"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 33,
+          "check": "4e0549e8",
+          "name": "Maurus Parentii",
+          "qid": null
         }
       ],
       "mr:1121-praesentatio-beatae-mariae-virginis": [
@@ -95561,6 +95734,17 @@
           "end": 134,
           "check": "32d8522d",
           "name": "Theodorus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 141,
+          "end": 148,
+          "check": "aa2ea067",
+          "name": "David",
           "qid": null
         }
       ],
@@ -96854,6 +97038,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 2090,
+          "end": 2111,
+          "check": "4af1710b",
+          "name": "Emmanuel Lê Văn Phụng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 2113,
           "end": 2137,
           "check": "f43192df",
@@ -97817,6 +98012,15 @@
           "end": 47,
           "check": "db813ea9",
           "qid": "Q220"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 82,
+          "check": "1a078679",
+          "name": "Leonardus a Portu Mauritio",
+          "qid": "Q119289"
         }
       ],
       "mr:1126-lucas-antonius-pirozzo": [
@@ -101143,6 +101347,15 @@
           "end": 53,
           "check": "413652cb",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 66,
+          "check": "b1361573",
+          "name": "Lucas de Insula",
+          "qid": null
         }
       ],
       "mr:1210-maurus": [
@@ -102006,6 +102219,15 @@
           "end": 52,
           "check": "04908eeb",
           "name": "Elias",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 298,
+          "end": 302,
+          "check": "a121acfe",
+          "name": "Ares",
           "qid": null
         }
       ],
@@ -103906,6 +104128,15 @@
           "end": 21,
           "check": "88e8b44d",
           "qid": "Q174"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 67,
+          "check": "1605bc40",
+          "name": "Antonius Galvao de Franca",
+          "qid": null
         }
       ],
       "mr:1223-hartmannus": [
@@ -104534,6 +104765,15 @@
           "start": 20,
           "end": 27,
           "check": "1842aad4",
+          "name": "Zeno",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 110,
+          "check": "6f07e654",
           "name": "Zeno",
           "qid": null
         }

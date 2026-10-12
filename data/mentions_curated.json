@@ -1994,17 +1994,6 @@
           "qid": null
         }
       ],
-      "mr:0723-ezechiel-propheta": [
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 20,
-          "end": 40,
-          "check": "c04b2387",
-          "name": "Ezechiel Propheta",
-          "qid": null
-        }
-      ],
       "mr:0723-emmanuel-perez-gimenez-et-socii": [
         {
           "kind": "place",
@@ -2118,6 +2107,17 @@
           "end": 367,
           "check": "067c5b1b",
           "name": "Philippus a Sancto Michaele Ruiz Fraile",
+          "qid": null
+        }
+      ],
+      "mr:0723-ezechiel-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 40,
+          "check": "c04b2387",
+          "name": "Ezechiel Propheta",
           "qid": null
         }
       ],
@@ -2635,6 +2635,25 @@
           "end": 36,
           "check": "35dc33ff",
           "name": "Moyses Propheta",
+          "qid": null
+        }
+      ],
+      "mr:0905-teresia-calcuttae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 17,
+          "check": "a543e1c5",
+          "qid": "Q1348"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 58,
+          "check": "dc6a042b",
+          "name": "Agnes Gonxha Bojaxhiu",
           "qid": null
         }
       ],
@@ -3390,43 +3409,6 @@
           "qid": null
         }
       ],
-      "mr:0916-salvator-ferrer-cardet-et-socii": [
-        {
-          "kind": "place",
-          "where": "text",
-          "start": 0,
-          "end": 50,
-          "check": "aafeb5ee",
-          "qid": "Q1993027"
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 70,
-          "end": 105,
-          "check": "ca558624",
-          "name": "Salvator Ferrer Cardet",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 119,
-          "end": 154,
-          "check": "def54448",
-          "name": "Benedictus Emmanuel Ferrer Jorda",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 158,
-          "end": 192,
-          "check": "1d285454",
-          "name": "Bernardinus Paulus Martinez Robles",
-          "qid": null
-        }
-      ],
       "mr:0916-martinus-sacerdos": [
         {
           "kind": "place",
@@ -3480,6 +3462,43 @@
           "end": 124,
           "check": "32323286",
           "name": "Servusdei",
+          "qid": null
+        }
+      ],
+      "mr:0916-salvator-ferrer-cardet-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 50,
+          "check": "aafeb5ee",
+          "qid": "Q1993027"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 105,
+          "check": "ca558624",
+          "name": "Salvator Ferrer Cardet",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 154,
+          "check": "def54448",
+          "name": "Benedictus Emmanuel Ferrer Jorda",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 158,
+          "end": 192,
+          "check": "1d285454",
+          "name": "Bernardinus Paulus Martinez Robles",
           "qid": null
         }
       ],
@@ -3609,6 +3628,44 @@
           "qid": null
         }
       ],
+      "mr:0929-michael-gabriel-et-raphael-archangeli": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 17,
+          "end": 26,
+          "check": "b95cb585",
+          "name": "Michael Archangelus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 37,
+          "check": "a253b442",
+          "name": "Gabriel Archangelus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 50,
+          "check": "530a8f2d",
+          "name": "Raphael Archangelus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 123,
+          "check": "b95cb585",
+          "name": "Michael Archangelus",
+          "qid": null
+        }
+      ],
       "mr:0929-ripsime-et-socii": [
         {
           "kind": "place",
@@ -3628,6 +3685,126 @@
           "qid": null
         }
       ],
+      "mr:1003-faustus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "a63ffb0d",
+          "qid": "Q87"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "7622d7f5",
+          "name": "Faustus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
+          "end": 57,
+          "check": "2d1d6af1",
+          "name": "Caius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 64,
+          "check": "17dcbf66",
+          "name": "Petrus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 66,
+          "end": 71,
+          "check": "f3a47691",
+          "name": "Paulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 73,
+          "end": 80,
+          "check": "2596920f",
+          "name": "Eusebius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 92,
+          "check": "053c01e2",
+          "name": "Chaeremon",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 94,
+          "end": 99,
+          "check": "a1e702ad",
+          "name": "Lucius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 279,
+          "end": 286,
+          "check": "445b7a49",
+          "name": "Faustus",
+          "qid": null
+        }
+      ],
+      "mr:1005-sanctus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 13,
+          "check": "db1a6cf5",
+          "qid": "Q128081"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 21,
+          "end": 27,
+          "check": "79590183",
+          "name": "Sanctus",
+          "qid": null
+        }
+      ],
+      "mr:1006-fideus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "2660b65b",
+          "qid": "Q6625"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 33,
+          "check": "a79906bf",
+          "name": "Fides",
+          "qid": null
+        }
+      ],
       "mr:1007-maria-de-rosario": [
         {
           "kind": "person",
@@ -3636,6 +3813,1799 @@
           "end": 39,
           "check": "ee99da43",
           "name": "Beata Maria Virgo de Rosario",
+          "qid": null
+        }
+      ],
+      "mr:1009-domninus-iuliam": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 46,
+          "check": "65132a90",
+          "qid": "Q100811"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 62,
+          "check": "71468cea",
+          "name": "Domninus Iuliam",
+          "qid": null
+        }
+      ],
+      "mr:1009-domninus-tiferni-tiberini": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 26,
+          "check": "feb880ec",
+          "qid": "Q20413"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 42,
+          "check": "71468cea",
+          "name": "Domninus Tiferni Tiberini",
+          "qid": null
+        }
+      ],
+      "mr:1017-osee-propheta": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 34,
+          "check": "621e3668",
+          "name": "Osee Propheta",
+          "qid": null
+        }
+      ],
+      "mr:1021-laura-montoya-y-upegui": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 46,
+          "check": "769ce1da",
+          "qid": "Q48278"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 103,
+          "check": "5874f7e1",
+          "name": "Laura Montoya y Upegui",
+          "qid": null
+        }
+      ],
+      "mr:1021-petrus-yu-tae-chol": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 14,
+          "check": "b48c7e4f",
+          "qid": "Q8684"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 23,
+          "end": 41,
+          "check": "196bb75c",
+          "name": "Petrus Yu Tae Chol",
+          "qid": null
+        }
+      ],
+      "mr:1023-ioannes-syracusis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "cab4337b",
+          "qid": "Q13670"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 36,
+          "check": "5aa55de9",
+          "name": "Ioannes Syracusis",
+          "qid": null
+        }
+      ],
+      "mr:1111-menna-mareotidem": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 32,
+          "check": "74cdaf0f",
+          "qid": "Q9278"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 46,
+          "check": "403cfcb1",
+          "name": "Menna Mareotidem",
+          "qid": null
+        }
+      ],
+      "mr:1111-menna-samnii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "f926af60",
+          "qid": "Q463459"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 46,
+          "check": "403cfcb1",
+          "name": "Menna Samnii",
+          "qid": null
+        }
+      ],
+      "mr:1113-petrus-vicev-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "152af643",
+          "qid": "Q472"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 40,
+          "check": "8e87a7f5",
+          "name": "Petrus Vicev",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 42,
+          "end": 65,
+          "check": "38698f41",
+          "name": "Iosephus Džidžov",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 102,
+          "check": "2dd289f1",
+          "name": "Robertus Matthaeus Šiškov",
+          "qid": null
+        }
+      ],
+      "mr:1117-gregorius-neocaesareae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "e0d08d91",
+          "qid": "Q513980"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 36,
+          "check": "d308b470",
+          "name": "Gregorius Neocaesareae",
+          "qid": null
+        }
+      ],
+      "mr:1117-gregorius-turonis": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "c8d4a27a",
+          "qid": "Q288"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 36,
+          "check": "d308b470",
+          "name": "Gregorius Turonis",
+          "qid": null
+        }
+      ],
+      "mr:1117-hugo-lincolniae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "e2a4fc23",
+          "qid": "Q180057"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 35,
+          "check": "a19a1724",
+          "name": "Hugo Lincolniae",
+          "qid": null
+        }
+      ],
+      "mr:1117-hugo-nucariae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "f821732a",
+          "qid": "Q378280"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 34,
+          "check": "a19a1724",
+          "name": "Hugo Nucariae",
+          "qid": null
+        }
+      ],
+      "mr:1121-maurus-caesenae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "ceaae66c",
+          "qid": "Q6662"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 32,
+          "check": "4e0549e8",
+          "name": "Maurus Caesenae",
+          "qid": null
+        }
+      ],
+      "mr:1121-maurus-parentii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "45c63b66",
+          "qid": "Q5323"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 28,
+          "end": 33,
+          "check": "4e0549e8",
+          "name": "Maurus Parentii",
+          "qid": null
+        }
+      ],
+      "mr:1122-salvator-lilli-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 45,
+          "check": "509e089b",
+          "qid": "Q134703"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 72,
+          "check": "b5dbbda5",
+          "name": "Salvator Lilli",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 27,
+          "check": "ff15b678",
+          "name": "K’adir",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 45,
+          "end": 50,
+          "check": "7698b1e6",
+          "name": "Cerun",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 67,
+          "end": 75,
+          "check": "9b0c6ad6",
+          "name": "Vardavar",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 93,
+          "end": 99,
+          "check": "0a94e7ea",
+          "name": "Paulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 116,
+          "end": 121,
+          "check": "a6b54c20",
+          "name": "David",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 125,
+          "end": 134,
+          "check": "32d8522d",
+          "name": "Theodorus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 141,
+          "end": 148,
+          "check": "aa2ea067",
+          "name": "David",
+          "qid": null
+        }
+      ],
+      "mr:1124-andreas-dung-lac-et-socii": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 18,
+          "end": 33,
+          "check": "f4cb09b1",
+          "name": "Andreas Dung Lac",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 22,
+          "end": 54,
+          "check": "37af68d8",
+          "name": "Clemens Ignatius Delgado Cebrián",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 56,
+          "end": 73,
+          "check": "d0fd3220",
+          "name": "Dominicus Henares",
+          "qid": "Q11694777"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 75,
+          "end": 96,
+          "check": "a986828e",
+          "name": "Hieronymus Hermosilla",
+          "qid": "Q6801709"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 98,
+          "end": 126,
+          "check": "0ef589d1",
+          "name": "Iosephus Maria Díaz Sanjurjo",
+          "qid": "Q11730916"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 128,
+          "end": 152,
+          "check": "1d498d62",
+          "name": "Melchior García Sanpedro",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 154,
+          "end": 175,
+          "check": "d53f3a17",
+          "name": "Petrus Dumoulin-Borie",
+          "qid": "Q568014"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 177,
+          "end": 200,
+          "check": "6a483d5a",
+          "name": "Valentinus Berrio Ochoa",
+          "qid": "Q9299178"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 212,
+          "end": 233,
+          "check": "42308ca3",
+          "name": "Augustinus Schoeffler",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 235,
+          "end": 255,
+          "check": "b67789ed",
+          "name": "Bernardus Vũ Văn Duệ",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 257,
+          "end": 270,
+          "check": "b35c5aa8",
+          "name": "Dominicus Cẩm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 272,
+          "end": 285,
+          "check": "0b4ae155",
+          "name": "Dominicus Mậu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 287,
+          "end": 320,
+          "check": "1add2ea0",
+          "name": "Dominicus Nguyễn Văn Xuyên",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 322,
+          "end": 347,
+          "check": "0dc3f9a9",
+          "name": "Dominicus Nguyễn Văn Hạnh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 356,
+          "end": 371,
+          "check": "3bd9cea5",
+          "name": "Dominicus Trạch",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 373,
+          "end": 387,
+          "check": "4b6e277b",
+          "name": "Dominicus Tước",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 389,
+          "end": 414,
+          "check": "6a8e2b17",
+          "name": "Emmanuel Nguyễn Văn Triệu",
+          "qid": "Q117792769"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 416,
+          "end": 442,
+          "check": "8374d343",
+          "name": "Franciscus Gil de Federich",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 444,
+          "end": 462,
+          "check": "907acea6",
+          "name": "Franciscus Jaccard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 464,
+          "end": 484,
+          "check": "45e4cfc5",
+          "name": "Hyacinthus Castañeda",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 486,
+          "end": 504,
+          "check": "f18825db",
+          "name": "Iacobus Đỗ Mai Năm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 506,
+          "end": 528,
+          "check": "0b6080a8",
+          "name": "Ioannes Carolus Cornay",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 530,
+          "end": 541,
+          "check": "0788f317",
+          "name": "Ioannes Đạt",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 543,
+          "end": 566,
+          "check": "acc1a916",
+          "name": "Ioannes Đoàn Trinh Hoan",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 568,
+          "end": 593,
+          "check": "5061bf41",
+          "name": "Ioannes Ludovicus Bonnard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 595,
+          "end": 620,
+          "check": "1438a2c0",
+          "name": "Ioannes Theophanes Vénard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 622,
+          "end": 652,
+          "check": "de54494d",
+          "name": "Iosephus Đặng Đình Viên",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 654,
+          "end": 676,
+          "check": "ff07c4ea",
+          "name": "Iosephus Đỗ Quang Hiền",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 678,
+          "end": 696,
+          "check": "5082a7d5",
+          "name": "Iosephus Fernández",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 698,
+          "end": 715,
+          "check": "8db72dcd",
+          "name": "Iosephus Marchand",
+          "qid": "Q2481272"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 717,
+          "end": 742,
+          "check": "ff9c412a",
+          "name": "Iosephus Nguyễn Đình Nghi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 744,
+          "end": 757,
+          "check": "c8b33d3b",
+          "name": "Iosephus Tuấn",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 759,
+          "end": 775,
+          "check": "6d326b3b",
+          "name": "Isidorus Gagelin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 777,
+          "end": 804,
+          "check": "7c49c801",
+          "name": "Laurentius Nguyễn Văn Hưởng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 806,
+          "end": 822,
+          "check": "50ee152d",
+          "name": "Lucas Vũ Bá Loan",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 824,
+          "end": 845,
+          "check": "ecb346a2",
+          "name": "Martinus Tạ Đức Thịnh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 847,
+          "end": 875,
+          "check": "66bd7eb7",
+          "name": "Matthæus Alonso de Leziniana",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 877,
+          "end": 895,
+          "check": "9f080fbe",
+          "name": "Paulus Lê Bảo Tịnh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 897,
+          "end": 914,
+          "check": "519a3fd5",
+          "name": "Paulus Lê-Văn-Lộc",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 916,
+          "end": 934,
+          "check": "1a9b6a9f",
+          "name": "Paulus Nguyễn Ngân",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 936,
+          "end": 958,
+          "check": "7fa05941",
+          "name": "Paulus Phạm Khắc Khoan",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 960,
+          "end": 981,
+          "check": "03e2bf3a",
+          "name": "Petrus Almato Ribeira",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 983,
+          "end": 1003,
+          "check": "5c7c50f2",
+          "name": "Petrus Đoàn Công Quý",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1005,
+          "end": 1028,
+          "check": "5dbaef9c",
+          "name": "Petrus Franciscus Néron",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1030,
+          "end": 1042,
+          "check": "9efb43ba",
+          "name": "Petrus Khanh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1044,
+          "end": 1057,
+          "check": "0dd75a61",
+          "name": "Petrus Lê Tùy",
+          "qid": "Q11817765"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1059,
+          "end": 1080,
+          "check": "cb8cea45",
+          "name": "Petrus Nguyễn Bá Tuân",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1082,
+          "end": 1103,
+          "check": "92587902",
+          "name": "Petrus Nguyễn Văn Lựu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1105,
+          "end": 1125,
+          "check": "03326514",
+          "name": "Petrus Nguyễn Văn Tự",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1127,
+          "end": 1148,
+          "check": "98750c4e",
+          "name": "Petrus Trưởng Văn Thi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1150,
+          "end": 1173,
+          "check": "29773c97",
+          "name": "Philippus Phan Văn Minh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1175,
+          "end": 1194,
+          "check": "50035666",
+          "name": "Thomas Đinh Viết Dụ",
+          "qid": "Q9359832"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1196,
+          "end": 1209,
+          "check": "da0c4c5e",
+          "name": "Thomas Khuông",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1211,
+          "end": 1228,
+          "check": "7c08d16e",
+          "name": "Vincentius Đỗ Yến",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1230,
+          "end": 1254,
+          "check": "6fb2d51d",
+          "name": "Vincentius Lê Quang Liêm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1256,
+          "end": 1282,
+          "check": "48c17886",
+          "name": "Vincentius Nguyễn Thế Điểm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1296,
+          "end": 1324,
+          "check": "0681e1b4",
+          "name": "Andreas Nguyễn Kim Thông Nam",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1339,
+          "end": 1370,
+          "check": "55ce9b68",
+          "name": "Antonius Nguyễn Hữu Quỳnh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1372,
+          "end": 1392,
+          "check": "d0194e05",
+          "name": "Dominicus Bùi Văn Úy",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1394,
+          "end": 1417,
+          "check": "83093032",
+          "name": "Franciscus Xaverius Cần",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1419,
+          "end": 1451,
+          "check": "ffd7159d",
+          "name": "Franciscus Xaverius Hà Trọng Mậu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1453,
+          "end": 1484,
+          "check": "046888eb",
+          "name": "Ioannes Baptista Đinh Văn Thành",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1486,
+          "end": 1511,
+          "check": "a88c59cf",
+          "name": "Iosephus Nguyễn Đình Uyển",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1513,
+          "end": 1538,
+          "check": "cf981e02",
+          "name": "Iosephus Nguyễn Duy Khang",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1540,
+          "end": 1563,
+          "check": "cfe7a069",
+          "name": "Iosephus Nguyễn Văn Lựu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1565,
+          "end": 1591,
+          "check": "fe0bc7a7",
+          "name": "Matthæus Nguyễn Văn Phượng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1593,
+          "end": 1613,
+          "check": "79f5ea69",
+          "name": "Paulus Nguyễn Văn Mỹ",
+          "qid": "Q11814286"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1615,
+          "end": 1634,
+          "check": "2b756020",
+          "name": "Petrus Đoàn Văn Vân",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1636,
+          "end": 1657,
+          "check": "39309857",
+          "name": "Petrus Nguyễn Khắc Tự",
+          "qid": "Q11817878"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1659,
+          "end": 1681,
+          "check": "393dffa5",
+          "name": "Petrus Nguyễn Văn Hiếu",
+          "qid": "Q11817879"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1683,
+          "end": 1706,
+          "check": "2df1b02f",
+          "name": "Petrus Trưởng Văn Đường",
+          "qid": "Q11818184"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1708,
+          "end": 1727,
+          "check": "3ffe9d77",
+          "name": "Petrus Vũ Văn Truật",
+          "qid": "Q11818202"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1729,
+          "end": 1740,
+          "check": "c1510087",
+          "name": "Thomas Toán",
+          "qid": "Q9359768"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1754,
+          "end": 1772,
+          "check": "9623c143",
+          "name": "Agnes Lê Thị Thành",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1779,
+          "end": 1792,
+          "check": "d0519666",
+          "name": "Andreas Tường",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1794,
+          "end": 1816,
+          "check": "273784cd",
+          "name": "Andreas Trần Văn Trông",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1818,
+          "end": 1838,
+          "check": "419d5249",
+          "name": "Antonius Nguyễn Đích",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1840,
+          "end": 1865,
+          "check": "dd6e5c76",
+          "name": "Augustinus Nguyễn Văn Mới",
+          "qid": "Q9162179"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1867,
+          "end": 1891,
+          "check": "0ee93496",
+          "name": "Augustinus Phan Viết Huy",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1893,
+          "end": 1908,
+          "check": "91f9555c",
+          "name": "Dominicus Huyên",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1910,
+          "end": 1923,
+          "check": "54f03b93",
+          "name": "Dominicus Mạo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1925,
+          "end": 1939,
+          "check": "71305370",
+          "name": "Dominicus Ngôn",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1941,
+          "end": 1957,
+          "check": "b0f4f3bb",
+          "name": "Dominicus Nguyên",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1959,
+          "end": 1972,
+          "check": "7cd87085",
+          "name": "Dominicus Nhi",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 1974,
+          "end": 2001,
+          "check": "98f66495",
+          "name": "Dominicus Nicolaus Đinh Đạt",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2003,
+          "end": 2017,
+          "check": "a33b3364",
+          "name": "Dominicus Ninh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2019,
+          "end": 2049,
+          "check": "414ed541",
+          "name": "Dominicus Phạm Trọng Khảm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2051,
+          "end": 2065,
+          "check": "00dffdc0",
+          "name": "Dominicus Toại",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2067,
+          "end": 2088,
+          "check": "4af1710b",
+          "name": "Emmanuel Lê Văn Phụng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2090,
+          "end": 2111,
+          "check": "4af1710b",
+          "name": "Emmanuel Lê Văn Phụng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2113,
+          "end": 2137,
+          "check": "f43192df",
+          "name": "Franciscus Đỗ Minh Chiểu",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2139,
+          "end": 2164,
+          "check": "323bf956",
+          "name": "Franciscus Trần Văn Trung",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2166,
+          "end": 2186,
+          "check": "550a96a2",
+          "name": "Ioannes Baptista Cơn",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2188,
+          "end": 2213,
+          "check": "aee7a3ee",
+          "name": "Iosephus Hoàng Lưởng Cảnh",
+          "qid": "Q11730368"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2215,
+          "end": 2235,
+          "check": "20b2dccf",
+          "name": "Iosephus Lê Đăng Thị",
+          "qid": "Q11730854"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2237,
+          "end": 2265,
+          "check": "9d8fdd6a",
+          "name": "Iosephus Phạm Trọng Tả",
+          "qid": "Q11731134"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2267,
+          "end": 2280,
+          "check": "40e7def2",
+          "name": "Iosephus Tuân",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2282,
+          "end": 2294,
+          "check": "3b74606d",
+          "name": "Iosephus Túc",
+          "qid": "Q11731555"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2296,
+          "end": 2312,
+          "check": "e48ad523",
+          "name": "Lucas Thìn",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2314,
+          "end": 2326,
+          "check": "b3270497",
+          "name": "Martinus Thọ",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2328,
+          "end": 2347,
+          "check": "00fe0493",
+          "name": "Matthæus Lê Văn Gẫm",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2349,
+          "end": 2367,
+          "check": "7cee9fa4",
+          "name": "Michael Hồ Đình Hy",
+          "qid": "Q2044436"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2369,
+          "end": 2390,
+          "check": "1fa3d50d",
+          "name": "Michael Nguyễn Huy Mỹ",
+          "qid": "Q11779053"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2392,
+          "end": 2413,
+          "check": "bb736645",
+          "name": "Nicolaus Bùi Viết Thể",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2415,
+          "end": 2426,
+          "check": "fba904c5",
+          "name": "Paulus Hạnh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2428,
+          "end": 2450,
+          "check": "23302fcc",
+          "name": "Paulus Tống Viết Bường",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2452,
+          "end": 2461,
+          "check": "63cfec55",
+          "name": "Petrus Đa",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2463,
+          "end": 2474,
+          "check": "c2be8d0b",
+          "name": "Petrus Đông",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2476,
+          "end": 2487,
+          "check": "65bcb196",
+          "name": "Petrus Dũng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2489,
+          "end": 2501,
+          "check": "6a5783fc",
+          "name": "Petrus Thuần",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2503,
+          "end": 2522,
+          "check": "0a0da6d7",
+          "name": "Petrus Võ Đăng Khoa",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2524,
+          "end": 2542,
+          "check": "d39caf89",
+          "name": "Simon Phan Đắc Hòa",
+          "qid": "Q9352701"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2544,
+          "end": 2569,
+          "check": "d14bcd5b",
+          "name": "Stephanus Nguyễn Văn Vinh",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2571,
+          "end": 2591,
+          "check": "b03a0430",
+          "name": "Thomas Nguyễn Văn Đệ",
+          "qid": "Q9359561"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2593,
+          "end": 2614,
+          "check": "94807bd3",
+          "name": "Thomas Trần Văn Thiện",
+          "qid": "Q9359773"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2616,
+          "end": 2632,
+          "check": "3204b46b",
+          "name": "Vincentius Đưởng",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 2634,
+          "end": 2650,
+          "check": "9d885b6d",
+          "name": "Vincentius Tường",
+          "qid": null
+        }
+      ],
+      "mr:1126-leonardus-a-portu-mauritio": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 47,
+          "check": "db813ea9",
+          "qid": "Q220"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 82,
+          "check": "1a078679",
+          "name": "Leonardus a Portu Mauritio",
+          "qid": null
+        }
+      ],
+      "mr:1210-lucas-de-insula": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 53,
+          "check": "413652cb",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 66,
+          "check": "b1361573",
+          "name": "Lucas de Insula",
+          "qid": null
+        }
+      ],
+      "mr:1214-ares-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "f5fe0add",
+          "qid": "Q60956"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 37,
+          "check": "a121acfe",
+          "name": "Ares",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 48,
+          "end": 52,
+          "check": "04908eeb",
+          "name": "Elias",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 298,
+          "end": 302,
+          "check": "a121acfe",
+          "name": "Ares",
+          "qid": null
+        }
+      ],
+      "mr:1223-antonius-galvao-de-franca": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "88e8b44d",
+          "qid": "Q174"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 67,
+          "check": "1605bc40",
+          "name": "Antonius Galvao de Franca",
+          "qid": null
+        }
+      ],
+      "mr:1226-zeno": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 27,
+          "check": "1842aad4",
+          "name": "Zeno",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 110,
+          "check": "6f07e654",
+          "name": "Zeno",
           "qid": null
         }
       ]
