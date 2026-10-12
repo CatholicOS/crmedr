@@ -989,7 +989,12 @@ mr:0223-raphaela-de-villalonga-ybarra, Christ "seduto" for "stantem" at mr:1226-
 twice, on the Latin (sub Iacobo rege Primo at mr:0829-richardus-herst; the misprint dístulit for
 diffúdit at mr:0612-laurentius-maria-a-sancto-francisco-xaverio, in `data/misprints.json`). The
 Italian's rank of a feast for the patrons of Italy and of Europe (Festa for Memoria) is its own
-calendar, not an error. The findings of lower confidence await review.
+calendar, not an error. Of its 183 findings of medium and low confidence, 138 are noted
+(`REVIEW_EDITION_NOTES`): the curator decided the first fifty, and the rest were sorted the same
+way. Errors of fact, place, name, title or number are noted; renderings that only loosen or
+compress the Latin (a double monastery as two, a godfather as the baptizer, a minor locator left
+out) are not. Two Italian cards became one Latin note: the Latin puts Nitra on the Váh
+(mr:0630-ladislaus, mr:0717-zoerardus-et-benedictus), where it lies on the Nitra.
 
 **The unofficial English 2004 against the Latin 2004 (October 2026)**: the same reading of the
 unofficial English, with the Italian as a second witness. Its high-confidence errors are curator
@@ -998,7 +1003,10 @@ look-alike places (Pontoise rendered Pont-Sainte-Maxence, Senlis rendered Autun)
 (mr:1022-abercius, mr:0720-aurelius), misreadings ("confessed" for confossa at
 mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius). Faults of the digitized copy
 rather than of the translation (footnote markers left in the text, an encoding slip of "d",
-broken words, run-in eulogies) are corrected in the texts, not noted.
+broken words, run-in eulogies) are corrected in the texts, not noted. Its 382 findings of medium
+and low confidence (373 on the English, 9 on the Latin) were accepted together, the first thirty
+checked by hand, to be weighed in public review (`REVIEW_EDITION_NOTES`); a note found wanting
+can be withdrawn on its own.
 
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (`ID_CORRECTIONS` keeps them on regeneration):
