@@ -327880,6 +327880,26 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0718-olga-mackiv|Olga Mackiv",
+      "eulogy": "mr:0718-olga-mackiv",
+      "day": "07-18",
+      "typology": "dies_natalis",
+      "subject": "Beata Olga Mackiv",
+      "name": "Olga Mackiv",
+      "also": [
+        "Tarsicia Mackiv"
+      ],
+      "where": "text",
+      "companions": [],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0718-philastrius|Philastrius",
       "eulogy": "mr:0718-philastrius",
       "day": "07-18",
@@ -333513,6 +333533,35 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0723-emmanuel-perez-gimenez-et-socii|Emmanuel Perez Gimenez",
+      "eulogy": "mr:0723-emmanuel-perez-gimenez-et-socii",
+      "day": "07-23",
+      "typology": "dies_natalis",
+      "subject": "Beati Emmanuel Perez Gimenez et socii",
+      "name": "Emmanuel Perez Gimenez",
+      "also": [
+        "Germanus a Iesu et Maria Perez Gimenez"
+      ],
+      "where": "text",
+      "companions": [
+        "Philippus a Sacro Corde Mariæ Valcabado Granado",
+        "Maurilius a Iesu Infante Macho Rodríguez",
+        "Iosephus a Iesu et Maria Osés Sáinz",
+        "Iulius a Sacro Corde Mediavilla Concejero",
+        "Iosephus Maria a Iesu Moriente Ruiz Martínez",
+        "Laurinus a Iesu Crucifixo Proaño Cuesta",
+        "Anacarius ab Immaculata Benito Nozal",
+        "Philippus a Sancto Michaele Ruiz Fraile"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0723-emmanuel-perez-gimenez-et-socii|Iosephus Maria a Iesu Moriente Ruiz Martínez",
       "eulogy": "mr:0723-emmanuel-perez-gimenez-et-socii",
       "day": "07-23",
@@ -334622,6 +334671,32 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0723-vincentius-diez-tejerina-et-socii|Vincentius Diez Tejerina",
+      "eulogy": "mr:0723-vincentius-diez-tejerina-et-socii",
+      "day": "07-23",
+      "typology": "dies_natalis",
+      "subject": "Beati Vincentius Diez Tejerina et socii",
+      "name": "Vincentius Diez Tejerina",
+      "also": [
+        "Nicephorus a Iesu et Maria Diez Tejerina"
+      ],
+      "where": "text",
+      "companions": [
+        "Iosephus a Sacris Cordibus Estalayo García",
+        "Epiphanius a Sancto Michaele Sierra Conde",
+        "Abilius a Cruce Ramos y Ramos",
+        "Zacharias a Sanctissimo Sacramento Fernández Crespo",
+        "Fulgentius a Corde Mariæ Calvo Sánchez"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0723-vincentius-diez-tejerina-et-socii|Zacharias a Sanctissimo Sacramento Fernández Crespo",
       "eulogy": "mr:0723-vincentius-diez-tejerina-et-socii",
       "day": "07-23",
@@ -335579,6 +335654,26 @@
           ]
         }
       ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0724-dominicus-mazzarello|Dominicus Mazzarello",
+      "eulogy": "mr:0724-dominicus-mazzarello",
+      "day": "07-24",
+      "typology": "dies_natalis",
+      "subject": "Beatus Dominicus Mazzarello",
+      "name": "Dominicus Mazzarello",
+      "also": [
+        "Modestinus a Iesu et Maria Mazzarello"
+      ],
+      "where": "text",
+      "companions": [],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
       "decision": null,
       "edited": null
     },
