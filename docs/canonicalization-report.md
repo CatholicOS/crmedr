@@ -1048,7 +1048,7 @@ whole (Galvão de França, Jarrige de la Morélie). 153 current IDs are renamed 
 **Secular name first (October 2026, #116)**: the 2004 Latin often prints a consecrated person
 with both names, the secular (baptismal) one in parentheses in the middle: *sancti Raphaélis a
 Sancto Ioseph (Ioséphi) Kalinowski*. The ID is minted from the **secular name and the surname**
-(mr:1115-raphael-kalinowski becomes mr:1115-ioseph-kalinowski), and the religious name, Raphael a
+(mr:1115-raphael-kalinowski becomes mr:1115-iosephus-kalinowski), and the religious name, Raphael a
 Sancto Ioseph Kalinowski, is kept as an alternative form of the person
 (`data/persons_variants_curated.json`). The secular name is preferred because it is less likely to
 collide (religious names repeat across congregations and centuries: three current IDs are *maria-a-iesu*,
