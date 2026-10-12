@@ -229,10 +229,13 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
                 errors.append(f"{mrid}: {p['name']!r} in footnote {n}, which the eulogy does not have")
                 continue
             printed = without_parentheses(notes[n - 1]["text"])
-            words, name = _words(printed), _words(p["name"])
+            # A secular name is printed in parentheses ("Angela a Sancto Ioseph (Aurea) Navarro"): the
+            # name is read with the parentheses unwrapped too.
+            unwrapped = re.sub(r"[()]", " ", notes[n - 1]["text"])
+            name = _words(p["name"])
             # As printed, or declined after "cum" ("Saturnino iuniore" for Saturninus iunior).
-            if not any(words[i:i + len(name)] == name for i in range(len(words))) and \
-                    not find_person(printed, p["name"]):
+            if not any(words[i:i + len(name)] == name for words in (_words(printed), _words(unwrapped))
+                       for i in range(len(words))) and not find_person(printed, p["name"]):
                 errors.append(f"{mrid}: {p['name']!r} is not printed in footnote {n}")
     return errors
 

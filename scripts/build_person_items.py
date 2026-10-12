@@ -47,6 +47,7 @@ TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant",
 # Latin first names whose vernacular forms share no prefix with them.
 NAME_EQUIVALENTS = {
     "ioannes": {"john", "giovanni", "juan", "jean", "joao", "johannes", "jan"},
+    "ioanna": {"jeanne", "giovanna", "juana", "joan", "joanna", "johanna", "jane"},
     "iacobus": {"james", "giacomo", "jacques", "jaime", "diego", "jacob", "jakob"},
     "gulielmus": {"william", "guglielmo", "guillaume", "guillermo", "wilhelm"},
     "ludovicus": {"louis", "luigi", "luis", "ludwig", "lewis"},

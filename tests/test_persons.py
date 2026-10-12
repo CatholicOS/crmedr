@@ -321,8 +321,21 @@ class ReviewFindingsTest(unittest.TestCase):
         self.assertEqual(names, ["Aloysius Versiglia", "Caesidius Giacomantonio", "Maria a Pace", "Agatha Lin", "Dominicus"])
 
     def test_parentheses_do_not_cut_a_name(self):
-        names, _ = pt.footnote_names("Quorum nomina: Dominicus Nguyen Van (Doan) Xuyen, Maria (Clara) Nanetti.")
-        self.assertEqual(names, ["Dominicus Nguyen Van Xuyen", "Maria Nanetti"])
+        # Another reading of a Vietnamese name is dropped; a secular name names the person (#116), the
+        # religious name is the other.
+        variants = {}
+        names, _ = pt.footnote_names("Quorum nomina: Dominicus Nguyen Van (Doan) Xuyen, Maria (Clara) Nanetti.",
+                                     variants=variants)
+        self.assertEqual(names, ["Dominicus Nguyen Van Xuyen", "Clara Nanetti"])
+        self.assertEqual(variants, {1: ["Maria Nanetti"]})
+
+    def test_an_east_asian_reading_in_parentheses_is_not_a_secular_name(self):
+        names, _ = pt.footnote_names("Quorum nomina: Dominicus Nguyễn Văn (Đoàn) Xuyên, Clemens (Bosio) Vom.")
+        self.assertEqual(names, ["Dominicus Nguyễn Văn Xuyên", "Clemens Vom"])
+
+    def test_a_shorter_religious_name_is_a_whole_other_name(self):
+        self.assertEqual(pt.full_variant("Maria Genovefa Meunier", "Constantia Meunier"), "Constantia Meunier")
+        self.assertEqual(pt.full_variant("Ioannes Sordi", "Cacciafronte"), "Ioannes Cacciafronte")
 
     def test_a_singular_descriptor_between_names_in_the_text_is_skipped(self):
         lex = {pt.name_key(w): w for w in ["Thomas", "Bosgrave", "Patricius", "Salmon"]}

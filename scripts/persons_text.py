@@ -145,6 +145,8 @@ def full_variant(name, variant):
     """A variant as a whole name: one with fewer words than the name stands for its last words
     ("Ioannes Sordi" seu "Cacciafronte" is "Ioannes Cacciafronte")."""
     words, alt = name.split(), variant.split()
+    if len(alt) > 1 and alt[-1] == words[-1]:
+        return variant  # a whole name with the same surname ("Constantia Meunier" for Maria Genovefa Meunier)
     return " ".join(words[:max(0, len(words) - len(alt))] + alt)
 FOOTNOTE_OPENING = re.compile(r"^\s*(?:Quorum|Quarum)\s+n[oó]mina\s*:|^\s*Inter\s+quos\s*:", re.I)
 WORD = re.compile(r"[^\W\d_][\w'’\-]*")
@@ -207,6 +209,27 @@ def _split_et(segment):
     return parts
 
 
+# Vietnamese letters: a parenthesis in a Vietnamese name is another reading of it ("Nguyễn Văn (Đoàn)
+# Xuyên"), not a secular name.
+VIETNAMESE = re.compile(r"[ăâđêôơưạảấầẩẫậắằẳẵặẹẻẽếềểễệỉịọỏốồổỗộớờởỡợụủứừửữựỳỵỷỹ]", re.I)
+# How a Latin given name in a footnote list ends: a parenthesis whose words do not ("Clemens (Bosio) Vom")
+# is another reading of the name, not a secular name.
+LATIN_GIVEN = re.compile(r"(?:us|a|is|er|el|or|on|es|ix|ex)$")
+
+
+def _footnote_secular(body, lexicon):
+    """A footnote list (nominatives) with each "Religious (Secular) Surname" written as "Secular Surname
+    seu Religious Surname": the person is named by the secular name, the religious name is the other
+    (#116). A parenthesis that is another reading of a Vietnamese or East Asian name is left as it is."""
+    def repl(m):
+        religious, lay, surname = m.group(1), m.group(2).split(), m.group(3).strip()
+        if VIETNAMESE.search(m.group(0)) or not lay or not surname or any(
+                not (lexicon and name_key(w) in lexicon) and not LATIN_GIVEN.search(fold(w)) for w in lay):
+            return m.group(0)
+        return f"{' '.join(lay)} {surname} seu {religious} {surname} "
+    return PAREN_NAME.sub(repl, body)
+
+
 def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=None, lexicon=None):
     """The names a footnote list gives, in order, and the segments not read. A name printed twice
     in a row with no word marking another person ("alius") is read once, and appended to
@@ -229,7 +252,7 @@ def footnote_names(text, printed_twice=None, marked=None, variants=None, unread=
         return [], [text]
     names, skipped = [], []
     last = None  # the name read just before this one, in a row
-    body = without_parentheses(text[m.end():]).strip().rstrip(".")
+    body = without_parentheses(_footnote_secular(text[m.end():], lexicon)).strip().rstrip(".")
     for group in body.split(";"):
         singles = []  # positions in names of the one-word names just before, in this group
         ablative = False  # after "cum", to the end of the group
