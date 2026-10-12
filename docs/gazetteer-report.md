@@ -82,7 +82,7 @@ For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Ho
 
 | ID | Place | Registry | Gazetteer |
 | --- | --- | --- | --- |
-| `mr:0125-maria-antonia-grillo` | Alexandríæ in Itália | EG | IT |
+| `mr:0125-teresia-grillo` | Alexandríæ in Itália | EG | IT |
 | `mr:0307-basilius-et-socii` | Apud Chersonésum | GR | UA |
 | `mr:1010-daniel-et-socii` | Apud Septam in Mauritánia Tingitána | MA | ES |
 | `mr:0409-demetrius` | Apud Sírmium in Pannónia | HR | RS |
@@ -114,7 +114,7 @@ For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Ho
 | `mr:0516-andreas-bobola` | Ianóviæ apud Pinsk ad Pripétium flumen in fínibus Polóniæ | PL | BY |
 | `mr:1114-serapion` | Icósii in Africa septemtrionáli | TN | DZ |
 | `mr:0303-winwaloeus` | In Cornúbia Armóricæ | GB | FR |
-| `mr:0413-scubilio-rousseau` | In Henóseos ínsula in Océano Indico | FR | RE |
+| `mr:0413-ioannes-bernardus-rousseau` | In Henóseos ínsula in Océano Indico | FR | RE |
 | `mr:0104-hermes-et-caius` | In Mœsia | RO | BG |
 | `mr:0703-marcus-et-mocianus` | In Mœsia | RO | BG |
 | `mr:0525-nicolaus-cehelskyj` | In campo detentiónis óppidi Javas in Moldávia | MD | RU |
@@ -133,7 +133,7 @@ For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Ho
 | `mr:0705-martha` | In monte Mirábili in Sýria | SY | TR |
 | `mr:0903-marinus` | In monte Titáno prope Aríminum in Flamínia | IT | SM |
 | `mr:0626-iosephus-ma-taishun` | In pago Qianshengzhuang apud urbem Liushuitao in Sinárum Hebei província | IT | CN |
-| `mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii` | In silva apud civitátem Nowogródek in Polónia | PL | BY |
+| `mr:0801-adelheidis-mardosewicz-et-socii` | In silva apud civitátem Nowogródek in Polónia | PL | BY |
 | `mr:0706-monenna` | In território Armacháno in Hibérnia | IE | GB |
 | `mr:1002-maria-antonina-kratochwil` | In urbe Stanisławów in Polónia | PL | UA |
 | `mr:0914-notburga` | In vico Eben in Tirólo | IT | AT |

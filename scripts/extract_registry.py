@@ -57,7 +57,7 @@ ID_CORRECTIONS = {
     "mr:0731-michael-ozieb-owski": "mr:0731-michael-ozieblowski",
     "mr:0908-ladislaus-b-adzinski": "mr:0908-ladislaus-bladzinski",
     "mr:1014-stanislaus-mysakowski-et-franciscus-ros-aniec": "mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec",
-    "mr:1216-honoratus-de-bia-a-podlaska-kazminsky": "mr:1216-honoratus-kazminsky",
+    "mr:1216-honoratus-de-bia-a-podlaska-kazminsky": "mr:1216-florentius-kazminsky",
     "mr:1219-maria-eva-de-providentia-noiszewska-et-maria-martha-de-iesu-wo-owsk": "mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu",
     # Short romanized surnames were latinized in the workbook slugs by stripping
     # the final vowel and appending -us (Di -> dus, Li -> lus, Yi -> yus,
@@ -88,15 +88,15 @@ ID_CORRECTIONS = {
     # Vicecomitis"), not from the elogium's actual subject. Rule 1: the slug is
     # the first-named *subject*. Corrected to the subject's Latin nominative lemma.
     "mr:0115-aegidius": "mr:0115-petrus-de-castronovo",
-    "mr:0120-bernardus": "mr:0120-cyprianus-iwene-tansi",
+    "mr:0120-bernardus": "mr:0120-michael-iwene-tansi",
     "mr:0127-vitalis": "mr:0127-manfredus-settala",
     "mr:0131-victor": "mr:0131-eusebius",
     "mr:0215-sepulcrus": "mr:0215-angelus-scarpetti",
     "mr:0216-petrus": "mr:0216-philippa-mareri",
     "mr:0220-trudo-fanus": "mr:0220-eucherius",
-    "mr:0304-salvator-visconti": "mr:0304-placida-viel",
+    "mr:0304-salvator-visconti": "mr:0304-eulalia-viel",
     "mr:0312-geminianus": "mr:0312-fina",
-    "mr:0318-salvator-visconti": "mr:0318-martha-le-bouteiller",
+    "mr:0318-salvator-visconti": "mr:0318-amata-le-bouteiller",
     "mr:0406-elias-de-aulinis": "mr:0406-philaretus",
     "mr:0428-laurentius": "mr:0428-maria-ludovica-a-iesu",
     "mr:0606-annemundus": "mr:0606-marcellinus-champagnat",
@@ -155,7 +155,7 @@ ID_CORRECTIONS = {
     "mr:0110-petrus-urseoli": "mr:0110-petrus-urseolus",
     "mr:0125-arthematis": "mr:0125-arthemas",
     "mr:0129-gilda-sapientis": "mr:0129-gilda-sapiens",
-    "mr:0226-pietatis-a-cruce-ortiz-real": "mr:0226-pietas-a-cruce",
+    "mr:0226-pietatis-a-cruce-ortiz-real": "mr:0226-thomasina-ortiz-real",
     "mr:0307-paulus-simplicis": "mr:0307-paulus-simplex",
     "mr:0424-gulielmus-firmati": "mr:0424-gulielmus-firmatus",
     "mr:0425-pasicratis-et-valentio": "mr:0425-pasicrates-et-valentio",
@@ -245,7 +245,7 @@ ID_CORRECTIONS = {
     "mr:0701-ioannes-baptista-duverneuil": "mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie",
     "mr:0707-antoninus-fantosati": "mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro",
     "mr:0707-rogerius-dickinson": "mr:0707-rogerius-dickinson-et-radulphus-milner",
-    "mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert": "mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu",
+    "mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert": "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon",
     "mr:0711-placidus": "mr:0711-placidus-et-sigisbertus",
     "mr:0716-andreas-de-soveral": "mr:0716-andreas-de-soveral-et-dominicus-carvalho",
     "mr:0716-ioannes-sugar": "mr:0716-ioannes-sugar-et-robertus-grissold",
@@ -303,7 +303,7 @@ ID_CORRECTIONS = {
     "mr:1119-elisaeus-garcia": "mr:1119-elisaeus-garcia-et-alexander-planas-sauri",
     "mr:1126-hugo-taylor": "mr:1126-hugo-taylor-et-marmaducus-bowes",
     "mr:1126-thomas": "mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen",
-    "mr:1129-dionysius-a-nativitate-berthelot": "mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce",
+    "mr:1129-dionysius-a-nativitate-berthelot": "mr:1129-petrus-berthelot-et-thomas-rodriguez",
     "mr:1210-antonius-martin-hernandez": "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo",
     "mr:1210-edmundus-gennings": "mr:1210-edmundus-gennings-et-swithinus-wells",
     "mr:1229-henricus-ioannes-requena": "mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher",
@@ -344,12 +344,12 @@ ID_CORRECTIONS = {
     "mr:0716-reinildis": "mr:0716-reinildis-et-socii",
     "mr:0720-maria-zhao-guozhus": "mr:0720-maria-zhao-guozhi-et-socii",
     "mr:0722-anna-wang": "mr:0722-anna-wang-et-socii",
-    "mr:0725-fridericus-rubio-alvarez": "mr:0725-fridericus-rubio-alvarez-et-socii",
+    "mr:0725-fridericus-rubio-alvarez": "mr:0725-carolus-rubio-alvarez-et-socii",
     "mr:0725-petrus-a-corde-redondo": "mr:0725-petrus-a-corde-et-socii",
     "mr:0727-georgius": "mr:0727-georgius-et-socii",
     "mr:0729-ludovicus-bertran": "mr:0729-ludovicus-bertran-et-socii",
     "mr:0730-iosephus-maria-muro-sanmiguel": "mr:0730-iosephus-maria-muro-sanmiguel-et-socii",
-    "mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz": "mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii",
+    "mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz": "mr:0801-adelheidis-mardosewicz-et-socii",
     "mr:0804-iosephus-batalla-parramon": "mr:0804-iosephus-batalla-parramon-et-socii",
     "mr:0807-martinus-a-sancto-felice-woodcock": "mr:0807-ioannes-woodcock-et-socii",
     "mr:0810-claudius-iosephus-jouffret-de-bonnefont": "mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii",
@@ -368,10 +368,10 @@ ID_CORRECTIONS = {
     "mr:0908-thomas-palaser": "mr:0908-thomas-palaser-et-socii",
     "mr:0911-gaspar-koteda": "mr:0911-gaspar-koteda-et-socii",
     "mr:0912-apollinaris-franco": "mr:0912-apollinaris-franco-et-socii",
-    "mr:0916-laureanus-ferrer-cardet": "mr:0916-laureanus-ferrer-cardet-et-socii",
+    "mr:0916-laureanus-ferrer-cardet": "mr:0916-salvator-ferrer-cardet-et-socii",
     "mr:0921-laurentius-imbert": "mr:0921-laurentius-imbert-et-socii",
     "mr:0923-sophia-ximenez-ximenez": "mr:0923-sophia-ximenez-ximenez-et-socii",
-    "mr:0925-ioannes-petrus-bengoa-aranguren": "mr:0925-ioannes-petrus-bengoa-aranguren-et-socii",
+    "mr:0925-ioannes-petrus-bengoa-aranguren": "mr:0925-iosephus-bengoa-aranguren-et-socii",
     "mr:0928-ioannes-shozaburo": "mr:0928-ioannes-shozaburo-et-socii",
     "mr:1010-septem-martyres-presbyteri-septam": "mr:1010-daniel-et-socii",
     "mr:1018-proculus": "mr:1018-proculus-et-socii",
@@ -497,21 +497,21 @@ ID_CORRECTIONS = {
     "mr:0408-dionysius-2": "mr:0408-dionysius-corinthi",
 
     # #63: one conventional name form per saint (religious name OR name + surname).
-    "mr:0105-carolus-a-sancto-andrea-houben": "mr:0105-carolus-a-sancto-andrea",
+    "mr:0105-carolus-a-sancto-andrea-houben": "mr:0105-ioannes-andreas-houben",
     "mr:0106-raphaela-maria-a-sacro-corde-porras-ayllon": "mr:0106-raphaela-maria-a-sacro-corde",
-    "mr:0109-maria-teresia-a-iesu-le-clerc": "mr:0109-maria-teresia-a-iesu",
+    "mr:0109-maria-teresia-a-iesu-le-clerc": "mr:0109-alexia-le-clerc",
     "mr:0110-anna-ab-angelis-monteagudo": "mr:0110-anna-ab-angelis",
-    "mr:0111-thomas-de-cora-placidi": "mr:0111-thomas-de-cora",
+    "mr:0111-thomas-de-cora-placidi": "mr:0111-franciscus-antonius-placidi",
     "mr:0113-veronica-de-binasco-negroni": "mr:0113-veronica-de-binasco",
     "mr:0114-odoricus-de-portu-naonis-mattiuzzi": "mr:0114-odoricus-de-portu-naonis",
     "mr:0118-andreas-de-piscaria-grego": "mr:0118-andreas-de-piscaria",
-    "mr:0120-maria-christina-ab-immaculata-brando": "mr:0120-maria-christina-ab-immaculata",
-    "mr:0201-ioanna-francisca-a-visitatione-michelotti": "mr:0201-ioanna-francisca-a-visitatione",
+    "mr:0120-maria-christina-ab-immaculata-brando": "mr:0120-adalheidis-brando",
+    "mr:0201-ioanna-francisca-a-visitatione-michelotti": "mr:0201-anna-michelotti",
     "mr:0202-simon-de-cassia-fidati": "mr:0202-simon-de-cassia",
-    "mr:0203-maria-a-sancto-ignatio-thevenet": "mr:0203-maria-a-sancto-ignatio",
+    "mr:0203-maria-a-sancto-ignatio-thevenet": "mr:0203-claudina-thevenet",
     "mr:0207-aegidius-maria-a-sancto-ioseph-pontillo": "mr:0207-aegidius-maria-a-sancto-ioseph",
     "mr:0207-ioannes-de-triora-lantrua": "mr:0207-ioannes-de-triora",
-    "mr:0207-maria-a-providentia-smet": "mr:0207-maria-a-providentia",
+    "mr:0207-maria-a-providentia-smet": "mr:0207-eugenia-smet",
     "mr:0214-ioannes-baptista-a-conceptione-garcia": "mr:0214-ioannes-baptista-a-conceptione",
     "mr:0219-conradus-de-placentia-confalonieri": "mr:0219-conradus-confalonieri",
     "mr:0224-constantius-de-fabriano-servoli": "mr:0224-constantius-de-fabriano",
@@ -519,127 +519,127 @@ ID_CORRECTIONS = {
     "mr:0227-francisca-anna-a-virgine-perdolenti-cirer-carbonell": "mr:0227-francisca-anna-a-virgine-perdolenti",
     "mr:0227-gabriel-a-virgine-perdolenti-possenti": "mr:0227-gabriel-a-virgine-perdolenti",
     "mr:0227-maria-a-iesu-deluil-martiny": "mr:0227-maria-a-iesu",
-    "mr:0227-maria-a-caritate-spiritus-sancti-brader": "mr:0227-maria-a-caritate-spiritus-sancti",
+    "mr:0227-maria-a-caritate-spiritus-sancti-brader": "mr:0227-carolina-brader",
     "mr:0302-angela-a-cruce-guerrero-gonzalez": "mr:0302-angela-a-cruce",
-    "mr:0303-innocentius-de-berzo-scalvinoni": "mr:0303-innocentius-de-berzo",
-    "mr:0305-ieremias-de-valachia-kostistik": "mr:0305-ieremias-de-valachia",
-    "mr:0305-ioannes-iosephus-a-cruce-calosirto": "mr:0305-ioannes-iosephus-a-cruce",
-    "mr:0310-elias-a-succursu-nieves-del-castillo": "mr:0310-elias-a-succursu",
+    "mr:0303-innocentius-de-berzo-scalvinoni": "mr:0303-ioannes-scalvinoni",
+    "mr:0305-ieremias-de-valachia-kostistik": "mr:0305-ioannes-kostistik",
+    "mr:0305-ioannes-iosephus-a-cruce-calosirto": "mr:0305-carolus-caietanus-calosirto",
+    "mr:0310-elias-a-succursu-nieves-del-castillo": "mr:0310-matthaeus-elias-nieves-del-castillo",
     "mr:0311-ioannes-baptista-de-fabriano-righi": "mr:0311-ioannes-baptista-de-fabriano",
     "mr:0318-salvator-de-horta-grionesos": "mr:0318-salvator-de-horta",
     "mr:0319-ioannes-de-parma-buralli": "mr:0319-ioannes-de-parma",
     "mr:0319-marcus-de-marchio-de-montegallo": "mr:0319-marcus-de-montegallo",
     "mr:0320-franciscus-a-iesu-maria-ioseph-palau-y-quer": "mr:0320-franciscus-a-iesu-maria-ioseph",
     "mr:0320-maria-iosepha-a-corde-iesu-sancho-de-guerra": "mr:0320-maria-iosepha-a-corde-iesu",
-    "mr:0324-didacus-iosephus-de-gadibus-lopez-caamano": "mr:0324-didacus-iosephus-de-gadibus",
+    "mr:0324-didacus-iosephus-de-gadibus-lopez-caamano": "mr:0324-franciscus-iosephus-lopez-caamano",
     "mr:0330-petrus-de-vallisoleto-regalado": "mr:0330-petrus-regalado",
     "mr:0330-ludovicus-de-casaurea-palmentieri": "mr:0330-ludovicus-de-casaurea",
-    "mr:0402-maria-a-sancto-ioseph-alvarado": "mr:0402-maria-a-sancto-ioseph",
+    "mr:0402-maria-a-sancto-ioseph-alvarado": "mr:0402-laura-alvarado",
     "mr:0403-gandulfus-de-binasco-sacchi": "mr:0403-gandulfus-de-binasco",
     "mr:0408-dominicus-a-sanctissimo-sacramento-iturrate": "mr:0408-dominicus-a-sanctissimo-sacramento",
     "mr:0410-marcus-de-bononia-fantuzzi": "mr:0410-marcus-de-bononia",
-    "mr:0411-angelus-de-clavasio-carletti": "mr:0411-angelus-de-clavasio",
-    "mr:0412-teresia-a-iesu-fernandez-solar": "mr:0412-teresia-a-iesu",
+    "mr:0411-angelus-de-clavasio-carletti": "mr:0411-antonius-carletti",
+    "mr:0412-teresia-a-iesu-fernandez-solar": "mr:0412-ioanna-fernandez-solar",
     "mr:0417-maria-anna-a-iesu-navarro-de-guevara": "mr:0417-maria-anna-a-iesu",
-    "mr:0418-maria-ab-incarnatione-avrillot": "mr:0418-maria-ab-incarnatione",
+    "mr:0418-maria-ab-incarnatione-avrillot": "mr:0418-barbara-avrillot",
     "mr:0420-simon-de-tuderto-rinalducci": "mr:0420-simon-de-tuderto",
     "mr:0421-conradus-de-parzham-birndorfer": "mr:0421-conradus-de-parzham",
     "mr:0423-teresia-maria-a-cruce-manetti": "mr:0423-teresia-maria-a-cruce",
-    "mr:0424-maria-a-sancta-euphrasia-pelletier": "mr:0424-maria-a-sancta-euphrasia",
+    "mr:0424-maria-a-sancta-euphrasia-pelletier": "mr:0424-rosa-virginia-pelletier",
     "mr:0427-iacobus-de-iadere-varinguer": "mr:0427-iacobus-de-iadere",
     "mr:0430-maria-ab-incarnatione-guyart-martin": "mr:0430-maria-ab-incarnatione",
-    "mr:0508-maria-catharina-a-sancto-augustino-symon-de-longprey": "mr:0508-maria-catharina-a-sancto-augustino",
-    "mr:0509-maria-teresia-a-iesu-gerhardinger": "mr:0509-maria-teresia-a-iesu",
+    "mr:0508-maria-catharina-a-sancto-augustino-symon-de-longprey": "mr:0508-catharina-symon-de-longprey",
+    "mr:0509-maria-teresia-a-iesu-gerhardinger": "mr:0509-carolina-gerhardinger",
     "mr:0519-ioannes-a-sancto-dominico-martinez": "mr:0519-ioannes-a-sancto-dominico",
-    "mr:0531-marianus-de-roccacasale-di-nicolantonio": "mr:0531-marianus-de-roccacasale",
+    "mr:0531-marianus-de-roccacasale-di-nicolantonio": "mr:0531-dominicus-di-nicolantonio",
     "mr:0606-laurentius-de-villamagna-de-masculis": "mr:0606-laurentius-de-villamagna",
     "mr:0608-maria-a-divino-corde-iesu-droste": "mr:0608-maria-a-divino-corde-iesu",
-    "mr:0608-nicolaus-de-gesturi-medda": "mr:0608-nicolaus-de-gesturi",
+    "mr:0608-nicolaus-de-gesturi-medda": "mr:0608-ioannes-medda",
     "mr:0611-ioannes-a-sancto-facundo-gonzalez-de-castrillo": "mr:0611-ioannes-a-sancto-facundo",
-    "mr:0611-rosa-francisca-maria-a-doloribus-molas-vallve": "mr:0611-rosa-francisca-maria-a-doloribus",
+    "mr:0611-rosa-francisca-maria-a-doloribus-molas-vallve": "mr:0611-maria-rosa-molas-vallve",
     "mr:0612-laurentius-maria-a-sancto-francisco-xaverio-salvi": "mr:0612-laurentius-maria-a-sancto-francisco-xaverio",
     "mr:0612-mercedis-maria-a-iesu-molina": "mr:0612-mercedis-maria-a-iesu",
     "mr:0612-maria-candida-ab-eucharistia-barba": "mr:0612-maria-candida-ab-eucharistia",
     "mr:0706-nazaria-a-sancta-teresia-march-mesa": "mr:0706-nazaria-a-sancta-teresia",
-    "mr:0707-iphigenia-a-sancto-matthaeo-de-gaillard-de-la-valdene": "mr:0707-iphigenia-a-sancto-matthaeo",
+    "mr:0707-iphigenia-a-sancto-matthaeo-de-gaillard-de-la-valdene": "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene",
     "mr:0709-paulina-a-corde-iesu-agonizante-visintainer": "mr:0709-paulina-a-corde-iesu-agonizante",
     "mr:0709-maria-a-iesu-crucifixo-petkovic": "mr:0709-maria-a-iesu-crucifixo",
     "mr:0711-rosalia-clotildis-a-sancta-pelagia-bes-et-socii": "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii",
-    "mr:0712-rosa-a-sancto-xaverio-tallien-et-socii": "mr:0712-rosa-a-sancto-xaverio-et-socii",
-    "mr:0713-magdalena-a-matre-dei-verchiere-et-socii": "mr:0713-magdalena-a-matre-dei-et-socii",
-    "mr:0716-amata-a-iesu-de-gordon-et-socii": "mr:0716-amata-a-iesu-et-socii",
-    "mr:0717-teresia-a-sancto-augustino-lidoine-et-socii": "mr:0717-teresia-a-sancto-augustino-et-socii",
+    "mr:0712-rosa-a-sancto-xaverio-tallien-et-socii": "mr:0712-magdalena-teresia-tallien-et-socii",
+    "mr:0713-magdalena-a-matre-dei-verchiere-et-socii": "mr:0713-elisabeth-verchiere-et-socii",
+    "mr:0716-amata-a-iesu-de-gordon-et-socii": "mr:0716-maria-rosa-de-gordon-et-socii",
+    "mr:0717-teresia-a-sancto-augustino-lidoine-et-socii": "mr:0717-maria-magdalena-claudina-lidoine-et-socii",
     "mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-pujalte-y-sanchez-et-francisca-a-corde-iesu-aldea-y-araujo": "mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu",
     "mr:0722-augustinus-de-bugella-fangi": "mr:0722-augustinus-de-bugella",
     "mr:0724-ioannes-de-tossiniano-tavelli": "mr:0724-ioannes-de-tossiniano",
-    "mr:0724-modestinus-a-iesu-et-maria-mazzarello": "mr:0724-modestinus-a-iesu-et-maria",
-    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii": "mr:0724-maria-a-columna-a-sancto-francisco-borgia-et-socii",
+    "mr:0724-modestinus-a-iesu-et-maria-mazzarello": "mr:0724-dominicus-mazzarello",
+    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-martinez-garcia-et-socii": "mr:0724-iacoba-martinez-garcia-et-socii",
     "mr:0725-petrus-de-molliano-corradini": "mr:0725-petrus-de-molliano",
     "mr:0726-maria-margarita-a-sancto-augustino-bonnet-et-socii": "mr:0726-maria-margarita-a-sancto-augustino-et-socii",
     "mr:0727-maria-clemens-a-iesu-crucifixo-staszewska": "mr:0727-maria-clemens-a-iesu-crucifixo",
-    "mr:0728-alphonsa-ab-immaculata-conceptione-muttathupadathu": "mr:0728-alphonsa-ab-immaculata-conceptione",
+    "mr:0728-alphonsa-ab-immaculata-conceptione-muttathupadathu": "mr:0728-anna-muttathupadathu",
     "mr:0730-leopoldus-de-castronovo-mandic": "mr:0730-leopoldus-mandic",
     "mr:0730-maria-vincentia-a-sancta-dorothea-chavez-orozco": "mr:0730-maria-vincentia-a-sancta-dorothea",
     "mr:0730-maria-a-iesu-sacramentato-venegas-de-la-torre": "mr:0730-maria-a-iesu-sacramentato",
-    "mr:0806-maria-francisca-a-iesu-rubatto": "mr:0806-maria-francisca-a-iesu",
-    "mr:0807-agathangelus-de-vindocino-nourry-et-cassianus-de-nannetibus-vaz-lopez-netto": "mr:0807-agathangelus-de-vindocino-et-cassianus-de-nannetibus",
-    "mr:0808-maria-a-cruce-mackillop": "mr:0808-maria-a-cruce",
+    "mr:0806-maria-francisca-a-iesu-rubatto": "mr:0806-anna-maria-rubatto",
+    "mr:0807-agathangelus-de-vindocino-nourry-et-cassianus-de-nannetibus-vaz-lopez-netto": "mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto",
+    "mr:0808-maria-a-cruce-mackillop": "mr:0808-maria-helena-mackillop",
     "mr:0808-maria-a-iesu-infante-baldillou-y-bullit-et-socii": "mr:0808-maria-a-iesu-infante-et-socii",
-    "mr:0809-teresia-benedicta-a-cruce-stein": "mr:0809-teresia-benedicta-a-cruce",
-    "mr:0809-candida-maria-a-iesu-cipitria": "mr:0809-candida-maria-a-iesu",
+    "mr:0809-teresia-benedicta-a-cruce-stein": "mr:0809-editha-stein",
+    "mr:0809-candida-maria-a-iesu-cipitria": "mr:0809-ioanna-iosepha-cipitria",
     "mr:0810-archangelus-de-calataphino-piacentini": "mr:0810-archangelus-de-calataphino",
     "mr:0813-marcus-de-aviano-cristofori": "mr:0813-marcus-de-aviano",
     "mr:0814-sanctus-de-urbino-brancorsini": "mr:0814-sanctus-de-urbino",
-    "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga-moragas-cantarero": "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga",
-    "mr:0816-petra-a-sancto-ioseph-perez-florido": "mr:0816-petra-a-sancto-ioseph",
+    "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga-moragas-cantarero": "mr:0815-elvira-moragas-cantarero",
+    "mr:0816-petra-a-sancto-ioseph-perez-florido": "mr:0816-anna-iosepha-perez-florido",
     "mr:0819-elvira-a-nativitate-dominae-nostrae-torrentalle-paraire-et-socii": "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii",
-    "mr:0823-ioannes-maria-a-cruce-garcia-mendez": "mr:0823-ioannes-maria-a-cruce",
+    "mr:0823-ioannes-maria-a-cruce-garcia-mendez": "mr:0823-marianus-garcia-mendez",
     "mr:0824-maria-michaela-a-sanctissimo-sacramento-desmaisieres": "mr:0824-maria-michaela-a-sanctissimo-sacramento",
-    "mr:0824-maria-ab-incarnatione-rosal": "mr:0824-maria-ab-incarnatione",
-    "mr:0826-maria-a-iesu-crucifixo-baouardy": "mr:0826-maria-a-iesu-crucifixo",
+    "mr:0824-maria-ab-incarnatione-rosal": "mr:0824-maria-vincentia-rosal",
+    "mr:0826-maria-a-iesu-crucifixo-baouardy": "mr:0826-maria-baouardy",
     "mr:0826-teresia-a-iesu-jornet-ibars": "mr:0826-teresia-jornet-ibars",
     "mr:0827-dominicus-a-matre-dei-barberi": "mr:0827-dominicus-barberi",
     "mr:0829-maria-a-cruce-jugan": "mr:0829-ioanna-jugan",
     "mr:0903-birgitta-a-iesu-morello": "mr:0903-birgitta-a-iesu",
     "mr:0907-ascensio-a-sancto-iosepho-calasanz-lloret-marco": "mr:0907-ascensio-a-sancto-iosepho-calasanz",
     "mr:0908-iosepha-a-sancto-ioanne-a-deo-ruano-garcia-et-maria-a-doloribus-a-sancta-eulalia-puig-bonany": "mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia",
-    "mr:0911-bonaventura-de-barcinone-gran": "mr:0911-bonaventura-de-barcinone",
+    "mr:0911-bonaventura-de-barcinone-gran": "mr:0911-michael-gran",
     "mr:0911-petrus-de-alcantara-villanueva-larrayoz": "mr:0911-petrus-de-alcantara",
     "mr:0913-maria-a-iesu-lopez-de-rivas": "mr:0913-maria-a-iesu",
     "mr:0919-maria-a-iesu-de-la-yglesia-y-de-varo-et-socii": "mr:0919-maria-a-iesu-et-socii",
     "mr:0921-marcus-de-mutina-scalabrini": "mr:0921-marcus-de-mutina",
-    "mr:0922-ignatius-de-sandone-belvisotti": "mr:0922-ignatius-de-sandone",
+    "mr:0922-ignatius-de-sandone-belvisotti": "mr:0922-laurentius-mauritius-belvisotti",
     "mr:0923-pius-de-pietrelcina-forgione": "mr:0923-pius-de-pietrelcina",
-    "mr:0926-maria-a-refugio-rosat-balasch-et-maria-a-calvario-romero-clariana": "mr:0926-maria-a-refugio-et-maria-a-calvario",
+    "mr:0926-maria-a-refugio-rosat-balasch-et-maria-a-calvario-romero-clariana": "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana",
     "mr:0928-laurentius-de-manila-ruiz-et-socii": "mr:0928-laurentius-ruiz-et-socii",
     "mr:0928-bernardinus-de-feltria-tomitano": "mr:0928-bernardinus-de-feltria",
     "mr:1006-isidorus-a-sancto-ioseph-de-loor": "mr:1006-isidorus-a-sancto-ioseph",
-    "mr:1009-innocentius-ab-immaculata-canoura-arnau-et-socii": "mr:1009-innocentius-ab-immaculata-et-socii",
+    "mr:1009-innocentius-ab-immaculata-canoura-arnau-et-socii": "mr:1009-emmanuel-canoura-arnau-et-socii",
     "mr:1011-iacobus-de-ulma-griesinger": "mr:1011-iacobus-de-ulma",
-    "mr:1012-seraphinus-de-monte-granario-de-nicola": "mr:1012-seraphinus-de-monte-granario",
-    "mr:1017-maria-natalia-a-sancto-ludovico-vanot-et-socii": "mr:1017-maria-natalia-a-sancto-ludovico-et-socii",
+    "mr:1012-seraphinus-de-monte-granario-de-nicola": "mr:1012-felix-de-nicola",
+    "mr:1017-maria-natalia-a-sancto-ludovico-vanot-et-socii": "mr:1017-maria-ludovica-iosepha-vanot-et-socii",
     "mr:1019-agnes-a-iesu-galand": "mr:1019-agnes-a-iesu",
     "mr:1021-laura-a-sancta-catharina-senensi-montoya-y-upegui": "mr:1021-laura-montoya-y-upegui",
-    "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-paillot-et-socii": "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii",
+    "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-paillot-et-socii": "mr:1023-clotildis-iosepha-paillot-et-socii",
     "mr:1031-thomas-de-florentia-bellaci": "mr:1031-thomas-de-florentia",
     "mr:1102-pius-a-sancto-aloysio-campidelli": "mr:1102-pius-a-sancto-aloysio",
     "mr:1109-elisabeth-a-sanctissima-trinitate-catez": "mr:1109-elisabeth-a-sanctissima-trinitate",
     "mr:1113-maria-a-patrocinio-a-sancto-ioanne-giner-gomis": "mr:1113-maria-a-patrocinio-a-sancto-ioanne",
-    "mr:1115-maria-a-passione-de-chappotin-de-neuville": "mr:1115-maria-a-passione",
-    "mr:1115-raphael-a-sancto-ioseph-kalinowski": "mr:1115-raphael-kalinowski",
-    "mr:1118-grimoaldus-a-purificatione-santamaria": "mr:1118-grimoaldus-a-purificatione",
-    "mr:1118-maria-a-refugio-hinojosa-y-naveros-et-socii": "mr:1118-maria-a-refugio-et-socii",
-    "mr:1120-angela-a-sancto-ioseph-lloret-marti-et-socii": "mr:1120-angela-a-sancto-ioseph-et-socii",
-    "mr:1121-maria-a-iesu-bono-pastore-de-siedliska": "mr:1121-maria-a-iesu-bono-pastore",
+    "mr:1115-maria-a-passione-de-chappotin-de-neuville": "mr:1115-helena-de-chappotin-de-neuville",
+    "mr:1115-raphael-a-sancto-ioseph-kalinowski": "mr:1115-iosephus-kalinowski",
+    "mr:1118-grimoaldus-a-purificatione-santamaria": "mr:1118-ferdinandus-santamaria",
+    "mr:1118-maria-a-refugio-hinojosa-y-naveros-et-socii": "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii",
+    "mr:1120-angela-a-sancto-ioseph-lloret-marti-et-socii": "mr:1120-francisca-lloret-marti-et-socii",
+    "mr:1121-maria-a-iesu-bono-pastore-de-siedliska": "mr:1121-francisca-de-siedliska",
     "mr:1124-nicetha-a-sancta-prudentia-plaja-xifra-et-socii": "mr:1124-nicetha-a-sancta-prudentia-et-socii",
-    "mr:1127-bernardinus-de-fossa-amici": "mr:1127-bernardinus-de-fossa",
+    "mr:1127-bernardinus-de-fossa-amici": "mr:1127-ioannes-amici",
     "mr:1130-ioannes-de-vercellis-garbella": "mr:1130-ioannes-de-vercellis",
-    "mr:1209-bernardus-maria-a-iesu-silvestrelli": "mr:1209-bernardus-maria-a-iesu",
+    "mr:1209-bernardus-maria-a-iesu-silvestrelli": "mr:1209-caesar-silvestrelli",
     "mr:1211-mirabilia-a-iesu-pidal-y-chico-de-guzman": "mr:1211-mirabilia-a-iesu",
-    "mr:1216-maria-ab-angelis-fontanella": "mr:1216-maria-ab-angelis",
+    "mr:1216-maria-ab-angelis-fontanella": "mr:1216-marianna-fontanella",
     "mr:1217-mathildis-a-sacro-corde-tellez-robles": "mr:1217-mathildis-a-sacro-corde",
     "mr:1223-antonius-a-sancta-anna-galvao-de-franca": "mr:1223-antonius-galvao-de-franca",
-    "mr:1225-maria-ab-apostolis-von-wullenweber": "mr:1225-maria-ab-apostolis",
+    "mr:1225-maria-ab-apostolis-von-wullenweber": "mr:1225-maria-teresia-von-wullenweber",
     # #84: the Korean given name of St John Pak Hu-jae is printed undeclined
     # ("Ioánnis Pak Hu-jae"); its -ae is not a Latin genitive ending.
     "mr:0903-ioannes-pak-hu-ja-et-socii": "mr:0903-ioannes-pak-hu-jae-et-socii",
@@ -657,6 +657,185 @@ ID_CORRECTIONS = {
     "mr:0927-francisca-xaveria-fenollosa-alcayna": "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo",
     # #113: the feast of the three archangels, not a saint and his companions.
     "mr:0929-michael-et-socii": "mr:0929-michael-gabriel-et-raphael-archangeli",
+    # #116: consecrated persons are named by their secular name (the religious name is the person's
+    # other form), unless the religious name is the one they are known by.
+    "mr:0102-maria-anna-soureau-blondin": "mr:0102-maria-stella-soureau-blondin",
+    "mr:0104-christiana-menabuoi": "mr:0104-oringa-menabuoi",
+    "mr:0105-carolus-a-sancto-andrea": "mr:0105-ioannes-andreas-houben",
+    "mr:0107-maria-teresia-haze": "mr:0107-ioanna-haze",
+    "mr:0109-maria-teresia-a-iesu": "mr:0109-alexia-le-clerc",
+    "mr:0110-francisca-salesia-aviat": "mr:0110-leonia-aviat",
+    "mr:0111-thomas-de-cora": "mr:0111-franciscus-antonius-placidi",
+    "mr:0118-christina-ciccarelli": "mr:0118-matthia-ciccarelli",
+    "mr:0118-maria-teresia-fasce": "mr:0118-maria-ioanna-fasce",
+    "mr:0120-cyprianus-iwene-tansi": "mr:0120-michael-iwene-tansi",
+    "mr:0120-maria-christina-ab-immaculata": "mr:0120-adalheidis-brando",
+    "mr:0124-timotheus-giaccardo": "mr:0124-iosephus-giaccardo",
+    "mr:0125-archangela-girlani": "mr:0125-eleonora-girlani",
+    "mr:0125-maria-antonia-grillo": "mr:0125-teresia-grillo",
+    "mr:0126-augustinus-erlandsson": "mr:0126-eystein-erlandsson",
+    "mr:0128-olympia-bida": "mr:0128-olga-bida",
+    "mr:0130-mucianus-maria-wiaux": "mr:0130-aloysius-wiaux",
+    "mr:0201-ioanna-francisca-a-visitatione": "mr:0201-anna-michelotti",
+    "mr:0203-maria-a-sancto-ignatio": "mr:0203-claudina-thevenet",
+    "mr:0207-maria-a-providentia": "mr:0207-eugenia-smet",
+    "mr:0207-rosalia-rendu": "mr:0207-ioanna-maria-rendu",
+    "mr:0209-michael-febres-cordero": "mr:0209-franciscus-aloysius-febres-cordero",
+    "mr:0211-tobias-borras-romeu": "mr:0211-franciscus-borras-romeu",
+    "mr:0213-christina-camozzi": "mr:0213-augustina-camozzi",
+    "mr:0213-eustochius-bellinus": "mr:0213-lucretia-bellini",
+    "mr:0218-gertrudis-comensoli": "mr:0218-catharina-comensoli",
+    "mr:0221-maria-henrica-dominicus": "mr:0221-anna-catharina-dominici",
+    "mr:0222-maria-a-iesu": "mr:0222-aemilia-d-oultremont",
+    "mr:0223-iosephina-vannini": "mr:0223-iuditta-adelheidis-vannini",
+    "mr:0225-maria-adeodata-pisani": "mr:0225-maria-teresia-pisani",
+    "mr:0226-pietas-a-cruce": "mr:0226-thomasina-ortiz-real",
+    "mr:0227-maria-a-caritate-spiritus-sancti": "mr:0227-carolina-brader",
+    "mr:0303-innocentius-de-berzo": "mr:0303-ioannes-scalvinoni",
+    "mr:0303-teresia-eustochius-verzeri": "mr:0303-ignatia-verzeri",
+    "mr:0304-placida-viel": "mr:0304-eulalia-viel",
+    "mr:0305-ieremias-de-valachia": "mr:0305-ioannes-kostistik",
+    "mr:0305-ioannes-iosephus-a-cruce": "mr:0305-carolus-caietanus-calosirto",
+    "mr:0310-elias-a-succursu": "mr:0310-matthaeus-elias-nieves-del-castillo",
+    "mr:0318-martha-le-bouteiller": "mr:0318-amata-le-bouteiller",
+    "mr:0324-didacus-iosephus-de-gadibus": "mr:0324-franciscus-iosephus-lopez-caamano",
+    "mr:0325-iosaphata-hordashevska": "mr:0325-michaelina-hordashevska",
+    "mr:0330-maria-restituta-kafka": "mr:0330-helena-kafka",
+    "mr:0402-maria-a-sancto-ioseph": "mr:0402-laura-alvarado",
+    "mr:0405-maria-crescentia-hoss": "mr:0405-anna-hoss",
+    "mr:0411-angelus-de-clavasio": "mr:0411-antonius-carletti",
+    "mr:0412-teresia-a-iesu": "mr:0412-ioanna-fernandez-solar",
+    "mr:0413-scubilio-rousseau": "mr:0413-ioannes-bernardus-rousseau",
+    "mr:0418-maria-ab-incarnatione": "mr:0418-barbara-avrillot",
+    "mr:0420-clara-bosatta": "mr:0420-dina-bosatta",
+    "mr:0424-benedictus-menni": "mr:0424-angelus-menni",
+    "mr:0424-maria-a-sancta-euphrasia": "mr:0424-rosa-virginia-pelletier",
+    "mr:0501-richardus-pampuri": "mr:0501-herminius-philippus-pampuri",
+    "mr:0508-maria-catharina-a-sancto-augustino": "mr:0508-catharina-symon-de-longprey",
+    "mr:0508-ulrica-nisch": "mr:0508-francisca-nisch",
+    "mr:0509-maria-teresia-a-iesu": "mr:0509-carolina-gerhardinger",
+    "mr:0518-blandina-merten": "mr:0518-maria-magdalena-merten",
+    "mr:0519-ioannes-baptista-xaverius-loir": "mr:0519-ioannes-ludovicus-loir",
+    "mr:0519-maria-bernarda-butler": "mr:0519-verena-butler",
+    "mr:0525-iacobus-philippus-bertonus": "mr:0525-andreas-bertoni",
+    "mr:0529-ursula-ledochowska": "mr:0529-iulia-ledochowska",
+    "mr:0531-baptista-varano": "mr:0531-camilla-varano",
+    "mr:0531-felix-amoroso": "mr:0531-iacobus-amoroso",
+    "mr:0531-marianus-de-roccacasale": "mr:0531-dominicus-di-nicolantonio",
+    "mr:0603-didacus-oddi": "mr:0603-iosephus-oddi",
+    "mr:0608-nicolaus-de-gesturi": "mr:0608-ioannes-medda",
+    "mr:0611-rosa-francisca-maria-a-doloribus": "mr:0611-maria-rosa-molas-vallve",
+    "mr:0612-florida-cevoli": "mr:0612-lucretia-helena-cevoli",
+    "mr:0616-maria-teresia-scherer": "mr:0616-anna-maria-catharina-scherer",
+    "mr:0623-maria-raphaela-cimatti": "mr:0623-sanctina-cimatti",
+    "mr:0624-maria-a-guadalupe-garcia-zavala": "mr:0624-anastasia-garcia-zavala",
+    "mr:0706-augustinus-iosephus-desgardin": "mr:0706-elias-desgardin",
+    "mr:0706-susanna-agatha-de-loye": "mr:0706-maria-rosa-de-loye",
+    "mr:0707-iphigenia-a-sancto-matthaeo": "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene",
+    "mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu": "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon",
+    "mr:0712-rosa-a-sancto-xaverio-et-socii": "mr:0712-magdalena-teresia-tallien-et-socii",
+    "mr:0713-magdalena-a-matre-dei-et-socii": "mr:0713-elisabeth-verchiere-et-socii",
+    "mr:0716-amata-a-iesu-et-socii": "mr:0716-maria-rosa-de-gordon-et-socii",
+    "mr:0717-paulus-gojdich": "mr:0717-petrus-gojdich",
+    "mr:0717-teresia-a-sancto-augustino-et-socii": "mr:0717-maria-magdalena-claudina-lidoine-et-socii",
+    "mr:0718-tarsicia-mackiv": "mr:0718-olga-mackiv",
+    "mr:0723-germanus-a-iesu-et-socii": "mr:0723-emmanuel-perez-gimenez-et-socii",
+    "mr:0723-nicephorus-a-iesu-et-socii": "mr:0723-vincentius-diez-tejerina-et-socii",
+    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-et-socii": "mr:0724-iacoba-martinez-garcia-et-socii",
+    "mr:0724-modestinus-a-iesu-et-maria": "mr:0724-dominicus-mazzarello",
+    "mr:0725-fridericus-rubio-alvarez-et-socii": "mr:0725-carolus-rubio-alvarez-et-socii",
+    "mr:0728-alphonsa-ab-immaculata-conceptione": "mr:0728-anna-muttathupadathu",
+    "mr:0728-iacobus-hilarius-barbal-cosan": "mr:0728-emmanuel-barbal-cosan",
+    "mr:0730-braulio-maria-corres-diaz-de-cerio-et-socii": "mr:0730-paulus-corres-diaz-de-cerio-et-socii",
+    "mr:0731-sidonia-schelingova": "mr:0731-caecilia-schelingova",
+    "mr:0801-benvenutus-de-miguel-arahal": "mr:0801-iosephus-de-miguel-arahal",
+    "mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii": "mr:0801-adelheidis-mardosewicz-et-socii",
+    "mr:0806-maria-francisca-a-iesu": "mr:0806-anna-maria-rubatto",
+    "mr:0807-agathangelus-de-vindocino-et-cassianus-de-nannetibus": "mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto",
+    "mr:0808-maria-a-cruce": "mr:0808-maria-helena-mackillop",
+    "mr:0808-maria-margarita-caiani": "mr:0808-maria-anna-rosa-caiani",
+    "mr:0809-candida-maria-a-iesu": "mr:0809-ioanna-iosepha-cipitria",
+    "mr:0809-germanus-garrigues-hernandez": "mr:0809-iosephus-maria-garrigues-hernandez",
+    "mr:0809-teresia-benedicta-a-cruce": "mr:0809-editha-stein",
+    "mr:0811-ioannes-georgius-rhem": "mr:0811-iacobus-rhem",
+    "mr:0812-flavius-argueso-gonzalez": "mr:0812-atilanus-argueso-gonzalez",
+    "mr:0813-benildus-romancon": "mr:0813-petrus-romancon",
+    "mr:0815-claudius-granzotto": "mr:0815-richardus-granzotto",
+    "mr:0815-dominicus-hurtado-soler": "mr:0815-augustinus-hurtado-soler",
+    "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga": "mr:0815-elvira-moragas-cantarero",
+    "mr:0816-gabriel-sanchis-mompo": "mr:0816-iosephus-maria-sanchis-mompo",
+    "mr:0816-petra-a-sancto-ioseph": "mr:0816-anna-iosepha-perez-florido",
+    "mr:0822-bernardus-peroni": "mr:0822-dominicus-peroni",
+    "mr:0823-ioannes-bourdon": "mr:0823-protasius-bourdon",
+    "mr:0823-ioannes-maria-a-cruce": "mr:0823-marianus-garcia-mendez",
+    "mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero": "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero",
+    "mr:0824-maria-ab-incarnatione": "mr:0824-maria-vincentia-rosal",
+    "mr:0826-ambrosius-valls-matamales": "mr:0826-aloysius-valls-matamales",
+    "mr:0826-laurentia-harasymiv": "mr:0826-leucadia-harasymiv",
+    "mr:0826-maria-a-iesu-crucifixo": "mr:0826-maria-baouardy",
+    "mr:0826-petrus-max-ginestar": "mr:0826-alexander-max-ginestar",
+    "mr:0828-aurelius-ample-alcaide": "mr:0828-iosephus-ample-alcaide",
+    "mr:0829-sancia-szymkowiak": "mr:0829-ioannina-szymkowiak",
+    "mr:0830-ioachim-ferrer-adell": "mr:0830-iosephus-ferrer-adell",
+    "mr:0831-edmigius-primo-rodriguez-et-socii": "mr:0831-isidorus-primo-rodriguez-et-socii",
+    "mr:0901-christinus-roca-huguet-et-socii": "mr:0901-michael-roca-huguet-et-socii",
+    "mr:0904-bernardus-bieda-grau": "mr:0904-iosephus-bieda-grau",
+    "mr:0904-maria": "mr:0904-dina-belanger",
+    "mr:0905-teresia-gonhxa-bojaxhiu": "mr:0905-teresia-calcuttae",
+    "mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii": "mr:0908-bonifatius-rodriguez-gonzalez-et-socii",
+    "mr:0909-maria-euthymia-uffing": "mr:0909-emma-uffing",
+    "mr:0911-bonaventura-de-barcinone": "mr:0911-michael-gran",
+    "mr:0913-aurelius-maria-villalon-acebron": "mr:0913-benvenutus-villalon-acebron",
+    "mr:0916-laureanus-ferrer-cardet-et-socii": "mr:0916-salvator-ferrer-cardet-et-socii",
+    "mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez": "mr:0918-salvator-chulia-ferrandis-et-socii",
+    "mr:0922-ignatius-de-sandone": "mr:0922-laurentius-mauritius-belvisotti",
+    "mr:0924-columba-gabriel": "mr:0924-ioanna-gabriel",
+    "mr:0925-ioannes-petrus-bengoa-aranguren-et-socii": "mr:0925-iosephus-bengoa-aranguren-et-socii",
+    "mr:0926-bonaventura-esteve-flors": "mr:0926-iulius-esteve-flors",
+    "mr:0926-leo-legua-martus": "mr:0926-emmanuel-legua-marti",
+    "mr:0926-maria-a-refugio-et-maria-a-calvario": "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana",
+    "mr:0926-teresia-couderc": "mr:0926-maria-victoria-couderc",
+    "mr:1002-maria-guadalupe-ricart-olmos": "mr:1002-maria-francisca-ricart-olmos",
+    "mr:1005-matthaeus-carreri": "mr:1005-ioannes-franciscus-carreri",
+    "mr:1006-maria-francisca-a-vulneribus-domini": "mr:1006-anna-maria-gallo",
+    "mr:1009-innocentius-ab-immaculata-et-socii": "mr:1009-emmanuel-canoura-arnau-et-socii",
+    "mr:1010-angela-maria-truszkowska": "mr:1010-sophia-camilla-truszkowska",
+    "mr:1011-maria-desolata-torres-acosta": "mr:1011-emmanuela-torres-acosta",
+    "mr:1012-pacificus-salcedo-puchades": "mr:1012-petrus-salcedo-puchades",
+    "mr:1012-seraphinus-de-monte-granario": "mr:1012-felix-de-nicola",
+    "mr:1017-maria-natalia-a-sancto-ludovico-et-socii": "mr:1017-maria-ludovica-iosepha-vanot-et-socii",
+    "mr:1020-iacobus-kern": "mr:1020-franciscus-alexander-kern",
+    "mr:1023-ambrosius-leo-lorente-vicente-et-socii": "mr:1023-petrus-lorente-vicente-et-socii",
+    "mr:1023-arnoldus-reche": "mr:1023-iulianus-nicolaus-reche",
+    "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii": "mr:1023-clotildis-iosepha-paillot-et-socii",
+    "mr:1108-maria-crucifixa-satellico": "mr:1108-elisabeth-maria-satellico",
+    "mr:1113-augustina-pietrantoni": "mr:1113-livia-pietrantoni",
+    "mr:1115-maria-a-passione": "mr:1115-helena-de-chappotin-de-neuville",
+    "mr:1115-raphael-kalinowski": "mr:1115-iosephus-kalinowski",
+    "mr:1118-grimoaldus-a-purificatione": "mr:1118-ferdinandus-santamaria",
+    "mr:1118-maria-a-refugio-et-socii": "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii",
+    "mr:1120-angela-a-sancto-ioseph-et-socii": "mr:1120-francisca-lloret-marti-et-socii",
+    "mr:1120-maria-fortunata-vitus": "mr:1120-anna-felicis-viti",
+    "mr:1121-maria-a-iesu-bono-pastore": "mr:1121-francisca-de-siedliska",
+    "mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner": "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner",
+    "mr:1123-maria-caecilia-cendoya-y-araquistain": "mr:1123-maria-felicitas-cendoya-y-araquistain",
+    "mr:1126-humilis-pirozzo": "mr:1126-lucas-antonius-pirozzo",
+    "mr:1127-bernardinus-de-fossa": "mr:1127-ioannes-amici",
+    "mr:1128-ioannes-iesu-adradas-gonzalo-et-socii": "mr:1128-marianus-adradas-gonzalo-et-socii",
+    "mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce": "mr:1129-petrus-berthelot-et-thomas-rodriguez",
+    "mr:1201-liduina-meneguzzi": "mr:1201-helisa-angela-meneguzzi",
+    "mr:1202-raphael-chylinski": "mr:1202-melchior-chylinski",
+    "mr:1207-maria-iosepha-rossello": "mr:1207-benedicta-rossello",
+    "mr:1209-bernardus-maria-a-iesu": "mr:1209-caesar-silvestrelli",
+    "mr:1213-ioannes-marinoni": "mr:1213-franciscus-marinoni",
+    "mr:1214-protasius-cubells-minguell": "mr:1214-antonius-cubells-minguell",
+    "mr:1216-honoratus-kazminsky": "mr:1216-florentius-kazminsky",
+    "mr:1216-maria-ab-angelis": "mr:1216-marianna-fontanella",
+    "mr:1216-sebastianus-de-madiis": "mr:1216-salvaticus-de-madiis",
+    "mr:1217-hyacinthus-cormier": "mr:1217-henricus-cormier",
+    "mr:1218-nemesia-valle": "mr:1218-iulia-valle",
+    "mr:1224-paula-elisabeth-cerioli": "mr:1224-constantia-cerioli",
+    "mr:1225-maria-ab-apostolis": "mr:1225-maria-teresia-von-wullenweber",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
@@ -729,10 +908,10 @@ ENTRY_NOTES = {
     "mr:0101-sigismundus-gorazdowski": "Zygmunt Gorazdowski, blessed in the 2004 editions, was canonized on 23 October 2005.",
     "mr:0103-cyriacus-elias-chavara": "Kuriakose Elias Chavara, blessed in the 2004 editions, was canonized on 23 November 2014.",
     "mr:0104-angela": "Angela of Foligno, blessed in the 2004 editions, was canonized on 9 October 2013.",
-    "mr:0105-carolus-a-sancto-andrea": "Charles of St Andrew (Houben), blessed in the 2004 editions, was canonized on 3 June 2007.",
+    "mr:0105-ioannes-andreas-houben": "Charles of St Andrew (Houben), blessed in the 2004 editions, was canonized on 3 June 2007.",
     "mr:0106-andreas-bessette": "André Bessette, blessed in the 2004 editions, was canonized on 17 October 2010.",
     "mr:0116-iosephus-vaz": "Joseph Vaz, blessed in the 2004 editions, was canonized on 14 January 2015.",
-    "mr:0120-maria-christina-ab-immaculata": (
+    "mr:0120-adalheidis-brando": (
         "Maria Cristina of the Immaculate Conception Brando, blessed in the 2004 editions, was canonized on "
         "17 May 2015."
     ),
@@ -743,9 +922,9 @@ ENTRY_NOTES = {
     "mr:0206-alphonsus-maria-fusco": "Alfonso Maria Fusco, blessed in the 2004 editions, was canonized on 16 October 2016.",
     "mr:0206-franciscus-spinelli": "Francesco Spinelli, blessed in the 2004 editions, was canonized on 14 October 2018.",
     "mr:0216-iosephus-allamano": "Giuseppe Allamano, blessed in the 2004 editions, was canonized on 20 October 2024.",
-    "mr:0218-gertrudis-comensoli": "Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    "mr:0218-catharina-comensoli": "Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009.",
     "mr:0220-hyacintha-marto": "Jacinta Marto, blessed in the 2004 editions, was canonized on 13 May 2017.",
-    "mr:0223-iosephina-vannini": "Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019.",
+    "mr:0223-iuditta-adelheidis-vannini": "Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019.",
     "mr:0304-ioannes-antonius-farina": "Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014.",
     "mr:0308-faustinus-miguez": "Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017.",
     "mr:0310-maria-eugenia-milleret-de-brou": "Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007.",
@@ -774,10 +953,10 @@ ENTRY_NOTES = {
     "mr:0508-amatus-ronconi": "Amato Ronconi, blessed in the 2004 editions, was canonized on 23 November 2014.",
     "mr:0514-theodora-guerin": "Théodore Guérin, blessed in the 2004 editions, was canonized on 15 October 2006.",
     "mr:0517-iulia-salzano": "Giulia Salzano, blessed in the 2004 editions, was canonized on 17 October 2010.",
-    "mr:0519-maria-bernarda-butler": "Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008.",
+    "mr:0519-verena-butler": "Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008.",
     "mr:0520-archangelus-tadini": "Arcangelo Tadini, blessed in the 2004 editions, was canonized on 26 April 2009.",
-    "mr:0531-baptista-varano": "Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010.",
-    "mr:0531-felix-amoroso": "Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005.",
+    "mr:0531-camilla-varano": "Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0531-iacobus-amoroso": "Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005.",
     "mr:0601-ioannes-baptista-scalabrinus": "Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022.",
     "mr:0603-ioannes-xxiii": (
         "Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his "
@@ -790,7 +969,7 @@ ENTRY_NOTES = {
     "mr:0609-iosephus-anchieta": "José de Anchieta, blessed in the 2004 editions, was canonized on 3 April 2014.",
     "mr:0611-ignatius-maloyan": "Ignatius Maloyan, blessed in the 2004 editions, was canonized on 19 October 2025.",
     "mr:0615-aloysius-maria-palazzolo": "Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022.",
-    "mr:0624-maria-a-guadalupe-garcia-zavala": "María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013.",
+    "mr:0624-anastasia-garcia-zavala": "María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013.",
     "mr:0627-margarita-bays": "Marguerite Bays, blessed in the 2004 editions, was canonized on 13 October 2019.",
     "mr:0628-irenaeus": "Irenaeus was declared a Doctor of the Church on 21 January 2022.",
     "mr:0704-petrus-georgius-frassati": "Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025.",
@@ -808,7 +987,7 @@ ENTRY_NOTES = {
         "in the 2004 editions, were canonized on 15 October 2017."
     ),
     "mr:0716-bartholomaeus-a-martyribus": "Bartholomew of the Martyrs (Fernandes), blessed in the 2004 editions, was canonized on 5 July 2019.",
-    "mr:0717-teresia-a-sancto-augustino-et-socii": (
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": (
         "Teresa of St Augustine and her fifteen companions, the martyrs of Compiègne, blessed in the 2004 "
         "editions, were canonized on 18 December 2024."
     ),
@@ -823,22 +1002,22 @@ ENTRY_NOTES = {
     ),
     "mr:0726-georgius-preca": "George Preca, blessed in the 2004 editions, was canonized on 3 June 2007.",
     "mr:0726-titus-brandsma": "Titus Brandsma, blessed in the 2004 editions, was canonized on 15 May 2022.",
-    "mr:0728-alphonsa-ab-immaculata-conceptione": (
+    "mr:0728-anna-muttathupadathu": (
         "Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October "
         "2008."
     ),
     "mr:0801-petrus-favre": "Peter Faber, blessed in the 2004 editions, was canonized on 17 December 2013.",
-    "mr:0806-maria-francisca-a-iesu": "Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022.",
+    "mr:0806-anna-maria-rubatto": "Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022.",
     "mr:0808-bonifatia-rodriguez-castro": "Bonifacia Rodríguez de Castro, blessed in the 2004 editions, was canonized on 23 October 2011.",
-    "mr:0808-maria-a-cruce": "Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010.",
-    "mr:0809-candida-maria-a-iesu": "Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0808-maria-helena-mackillop": "Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0809-ioanna-iosepha-cipitria": "Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010.",
     "mr:0814-octingenti-martyres-hydrunti": (
         "Antonio Primaldo and his companions, the martyrs of Otranto, blessed in the 2004 editions, were "
         "canonized on 12 May 2013."
     ),
     "mr:0818-albertus-hurtado-cruchaga": "Alberto Hurtado Cruchaga, blessed in the 2004 editions, was canonized on 23 October 2005.",
     "mr:0820-bernardus-tolomei": "Bernardo Tolomei, blessed in the 2004 editions, was canonized on 26 April 2009.",
-    "mr:0826-maria-a-iesu-crucifixo": (
+    "mr:0826-maria-baouardy": (
         "Mary of Jesus Crucified (Mariam Baouardy), blessed in the 2004 editions, was canonized on 17 May "
         "2015."
     ),
@@ -896,7 +1075,7 @@ LATIN_ASTERISKED = {
     "mr:0611-bardo": 4,
     "mr:0624-gohardus": 7,
     "mr:0711-leontius": 5,
-    "mr:0718-tarsicia-mackiv": 13,
+    "mr:0718-olga-mackiv": 13,
     "mr:0730-godeleva": 6,
     "mr:0802-betharius": 8,
     "mr:0807-donatus-vesontione": 7,
@@ -937,14 +1116,14 @@ COUNTRY_CORRECTIONS = {
     "mr:1115-albertus-magnus": "DE",  # no place-lead; died in Cologne
     "mr:0714-hroznata": "CZ",  # Starý Kynšperk near Cheb (Eger), Bohemia
     "mr:0626-iosephus-maria-robles": "MX",  # near Guadalajara, Jalisco
-    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-et-socii": "ES",  # Guadalajara, Spain
-    "mr:0830-ioachim-ferrer-adell": "ES",  # Castellón de la Plana
+    "mr:0724-iacoba-martinez-garcia-et-socii": "ES",  # Guadalajara, Spain
+    "mr:0830-iosephus-ferrer-adell": "ES",  # Castellón de la Plana
     "mr:1125-hyacinthus-serrano-lopez": "ES",  # Puebla de Híjar near Teruel
     "mr:0825-maria-a-transitu-iesu-sacramenti": "AR",  # Córdoba, Argentina
     "mr:0320-nicetas": "AL",  # Pojani (Apollonia)
     "mr:0731-ignatius-de-loyola": "IT",  # no place-lead; died in Rome
     "mr:0226-paula-a-sancto-iosepho-de-calasanz": "ES",  # Olesa de Montserrat
-    "mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez": "ES",  # Montserrat, Catalonia
+    "mr:0918-salvator-chulia-ferrandis-et-socii": "ES",  # Montserrat, Catalonia
     "mr:0707-petrus-to-rot": "PG",  # Rakunai, New Britain
     "mr:0514-maria-dominica-mazzarello": "IT",  # Nizza Monferrato, not Nice
     "mr:0626-andreas-hyacinthus-longhin": "IT",  # Treviso
@@ -1072,7 +1251,7 @@ EDITION_NOTES = {
             "ætérnæ sapiéntiæ\" (the teaching of eternal wisdom)."
         ),
     },
-    "mr:0110-francisca-salesia-aviat": {
+    "mr:0110-leonia-aviat": {
         EDITION_EN: (
             "Translation error: \"Francis de Sales\" where the Latin \"Francíscæ Salésiæ\" is the "
             "feminine Frances de Sales."
@@ -1279,7 +1458,7 @@ EDITION_NOTES = {
             "following day)."
         ),
     },
-    "mr:0222-maria-a-iesu": {
+    "mr:0222-aemilia-d-oultremont": {
         EDITION_EN: (
             "Translation error: the clause \"terrénam peregrinatiónem iter ad pátriam fáciens pie "
             "conclúsit\" (she piously ended her earthly pilgrimage while journeying home) is "
@@ -1338,7 +1517,7 @@ EDITION_NOTES = {
             "Translation error: \"the outcasts\" where the Latin has \"ægrótis\" (the sick)."
         ),
     },
-    "mr:0318-martha-le-bouteiller": {
+    "mr:0318-amata-le-bouteiller": {
         EDITION_EN: (
             "Translation error: \"Saint Savior at Vicoigne\" where the Latin has \"Sancti Salvatóris "
             "Vicecómitis\" (Saint-Sauveur-le-Vicomte)."
@@ -1368,7 +1547,7 @@ EDITION_NOTES = {
             "Regiae)."
         ),
     },
-    "mr:0324-didacus-iosephus-de-gadibus": {
+    "mr:0324-franciscus-iosephus-lopez-caamano": {
         EDITION_EN: (
             "Translation error: \"Andújar\" where the Latin has \"Arúndæ\" (Ronda)."
         ),
@@ -1501,7 +1680,7 @@ EDITION_NOTES = {
             "Hubert)."
         ),
     },
-    "mr:0531-felix-amoroso": {
+    "mr:0531-iacobus-amoroso": {
         EDITION_EN: (
             "Translation error: \"Erice\" where the Latin has \"Hérbitæ\" (Nicosia)."
         ),
@@ -1600,7 +1779,7 @@ EDITION_NOTES = {
             "Translation error: \"Mont Cenis\" where the Latin has \"Monte Calério\" (Moncalieri)."
         ),
     },
-    "mr:0716-amata-a-iesu-et-socii": {
+    "mr:0716-maria-rosa-de-gordon-et-socii": {
         EDITION_EN: (
             "Translation error: \"Anne-Marie of Jesus\" where the Latin has \"Amátæ a Iesu\" (Aimée "
             "of Jesus)."
@@ -1612,7 +1791,7 @@ EDITION_NOTES = {
             "Brabant\" where it has \"Brabántia Austrásiæ\"."
         ),
     },
-    "mr:0717-paulus-gojdich": {
+    "mr:0717-petrus-gojdich": {
         EDITION_EN: (
             "Translation error: \"Prešov\" where the Latin has \"Leopoldópoli\" (Leopoldov)."
         ),
@@ -1848,7 +2027,7 @@ EDITION_NOTES = {
             "Translation error: \"Burjasot\" where the Latin has \"Buñol\"."
         ),
     },
-    "mr:0909-maria-euthymia-uffing": {
+    "mr:0909-emma-uffing": {
         EDITION_EN: (
             "Translation error: \"At a monastery\" where the Latin has \"Monastérii\" (at Münster)."
         ),
@@ -1964,7 +2143,7 @@ EDITION_NOTES = {
             "(Laval)."
         ),
     },
-    "mr:1017-maria-natalia-a-sancto-ludovico-et-socii": {
+    "mr:1017-maria-ludovica-iosepha-vanot-et-socii": {
         EDITION_EN: (
             "Translation error: \"Valence\" where the Latin has \"Valentiánæ\" (Valenciennes)."
         ),
@@ -2031,7 +2210,7 @@ EDITION_NOTES = {
             "(from the age of five)."
         ),
     },
-    "mr:1108-maria-crucifixa-satellico": {
+    "mr:1108-elisabeth-maria-satellico": {
         EDITION_EN: (
             "Translation error: \"Montegranaro\" where the Latin has \"Monte Novo\" (Montenovo, today "
             "Ostra Vetere)."
@@ -2048,7 +2227,7 @@ EDITION_NOTES = {
             "(Galerius Maximinus)."
         ),
     },
-    "mr:1115-maria-a-passione": {
+    "mr:1115-helena-de-chappotin-de-neuville": {
         EDITION_EN: (
             "Translation error: \"Savona\" where the Latin has \"Matútæ\" (Sanremo)."
         ),
@@ -2059,7 +2238,7 @@ EDITION_NOTES = {
             "ponti ad litus\" (in the waters of the sea off the shore)."
         ),
     },
-    "mr:1118-grimoaldus-a-purificatione": {
+    "mr:1118-ferdinandus-santamaria": {
         EDITION_EN: (
             "Translation error: \"Ferentino\" where the Latin has \"Fabratériæ\" (Ceccano)."
         ),
@@ -2101,7 +2280,7 @@ EDITION_NOTES = {
             "Translation error: \"Florentina\" where the Latin has \"Floréntiæ\" (Florentia)."
         ),
     },
-    "mr:1201-liduina-meneguzzi": {
+    "mr:1201-helisa-angela-meneguzzi": {
         EDITION_EN: (
             "Translation error: \"Hélène Angela\" where the Latin has \"Helísæ Angelæ\" (Elisa "
             "Angela)."
@@ -2408,7 +2587,7 @@ EDITION_NOTES = {
             "mari Británnico\" (in the British Sea, the English Channel)."
         ),
     },
-    "mr:0717-teresia-a-sancto-augustino-et-socii": {
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
         EDITION_IT: (
             "Translation error: \"Marta Maddalena Claudina\" where the Latin has \"Maríæ Magdalénæ "
             "Claudínæ\" (Marie-Madeleine-Claudine)."
@@ -2883,7 +3062,7 @@ LATIN_RENUMBERING = {
     "mr:0104-rigobertus": 6,
     "mr:0104-pharaildis": 7,
     "mr:0104-angela": 8,
-    "mr:0104-christiana-menabuoi": 9,
+    "mr:0104-oringa-menabuoi": 9,
     "mr:0104-thomas-plumtree": 10,
     "mr:0104-elisabeth-anna-seton": 11,
     # June 10: Durando (9*) is printed only in the Latin.

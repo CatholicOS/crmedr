@@ -1,8 +1,659 @@
 {
   "$comment": "Curators' other names for persons of data/persons.json: {eulogy: {person key (name, or name#n): [other names as Latin nominatives, in printed order]}}. Added to the extracted variants (also) by scripts/extract_persons.py; it never replaces a eulogy's persons. See docs/superpowers/specs/2026-10-10-name-variants-design.md.",
+  "mr:0102-maria-stella-soureau-blondin": {
+    "Maria Stella Soureau-Blondin": [
+      "Maria Anna Soureau-Blondin"
+    ]
+  },
+  "mr:0104-oringa-menabuoi": {
+    "Oringa Menabuoi": [
+      "Christiana Menabuoi"
+    ]
+  },
+  "mr:0105-ioannes-andreas-houben": {
+    "Ioannes Andreas Houben": [
+      "Carolus a Sancto Andrea Houben"
+    ]
+  },
+  "mr:0106-andreas-bessette": {
+    "Andreas Bessette": [
+      "Alaphridus Bessette"
+    ]
+  },
+  "mr:0107-ioanna-haze": {
+    "Ioanna Haze": [
+      "Maria Teresia Haze"
+    ]
+  },
+  "mr:0109-alexia-le-clerc": {
+    "Alexia Le Clerc": [
+      "Maria Teresia a Iesu Le Clerc"
+    ]
+  },
+  "mr:0110-leonia-aviat": {
+    "Leonia Aviat": [
+      "Francisca Salesia Aviat"
+    ]
+  },
+  "mr:0111-franciscus-antonius-placidi": {
+    "Franciscus Antonius Placidi": [
+      "Thomas de Cora Placidi"
+    ]
+  },
+  "mr:0118-maria-ioanna-fasce": {
+    "Maria Ioanna Fasce": [
+      "Maria Teresia Fasce"
+    ]
+  },
+  "mr:0118-matthia-ciccarelli": {
+    "Matthia Ciccarelli": [
+      "Christina Ciccarelli"
+    ]
+  },
+  "mr:0120-adalheidis-brando": {
+    "Adalheidis Brando": [
+      "Maria Christina ab Immaculata Brando"
+    ]
+  },
+  "mr:0120-michael-iwene-tansi": {
+    "Michael Iwene Tansi": [
+      "Cyprianus Iwene Tansi"
+    ]
+  },
+  "mr:0124-iosephus-giaccardo": {
+    "Iosephus Giaccardo": [
+      "Timotheus Giaccardo"
+    ]
+  },
+  "mr:0125-eleonora-girlani": {
+    "Eleonora Girlani": [
+      "Archangela Girlani"
+    ]
+  },
+  "mr:0125-teresia-grillo": {
+    "Teresia Grillo": [
+      "Maria Antonia Grillo"
+    ]
+  },
+  "mr:0126-eystein-erlandsson": {
+    "Eystein Erlandsson": [
+      "Augustinus Erlandsson"
+    ]
+  },
+  "mr:0128-olga-bida": {
+    "Olga Bida": [
+      "Olympias Bida"
+    ]
+  },
+  "mr:0130-aloysius-wiaux": {
+    "Aloysius Wiaux": [
+      "Mucianus Maria Wiaux"
+    ]
+  },
+  "mr:0130-columba-marmion": {
+    "Columba Marmion": [
+      "Iosephus Marmion"
+    ]
+  },
+  "mr:0201-anna-michelotti": {
+    "Anna Michelotti": [
+      "Ioanna Francisca a Visitatione Michelotti"
+    ]
+  },
+  "mr:0203-claudina-thevenet": {
+    "Claudina Thevenet": [
+      "Maria a Sancto Ignatio Thevenet"
+    ]
+  },
+  "mr:0207-eugenia-smet": {
+    "Eugenia Smet": [
+      "Maria a Providentia Smet"
+    ]
+  },
+  "mr:0207-ioanna-maria-rendu": {
+    "Ioanna Maria Rendu": [
+      "Rosalia Rendu"
+    ]
+  },
+  "mr:0209-franciscus-aloysius-febres-cordero": {
+    "Franciscus Aloysius Febres Cordero": [
+      "Michael Febres Cordero"
+    ]
+  },
+  "mr:0211-franciscus-borras-romeu": {
+    "Franciscus Borras Romeu": [
+      "Tobias Borras Romeu"
+    ]
+  },
+  "mr:0213-augustina-camozzi": {
+    "Augustina Camozzi": [
+      "Christina Camozzi"
+    ]
+  },
+  "mr:0213-lucretia-bellini": {
+    "Lucretia Bellini": [
+      "Eustochius Bellini"
+    ]
+  },
+  "mr:0218-catharina-comensoli": {
+    "Catharina Comensoli": [
+      "Gertrudis Comensoli"
+    ]
+  },
+  "mr:0221-anna-catharina-dominici": {
+    "Anna Catharina Dominici": [
+      "Maria Henrica Dominici"
+    ]
+  },
+  "mr:0222-aemilia-d-oultremont": {
+    "Aemilia d'Oultremont": [
+      "Maria a Iesu d'Oultremont"
+    ]
+  },
+  "mr:0223-iuditta-adelheidis-vannini": {
+    "Iuditta Adelheidis Vannini": [
+      "Iosephina Vannini"
+    ]
+  },
+  "mr:0225-maria-teresia-pisani": {
+    "Maria Teresia Pisani": [
+      "Maria Adeodata Pisani"
+    ]
+  },
+  "mr:0226-thomasina-ortiz-real": {
+    "Thomasina Ortiz Real": [
+      "Pietas a Cruce Ortiz Real"
+    ]
+  },
+  "mr:0227-carolina-brader": {
+    "Carolina Brader": [
+      "Maria a Caritate Spiritus Sancti Brader"
+    ]
+  },
+  "mr:0227-gabriel-a-virgine-perdolenti": {
+    "Gabriel a Virgine Perdolenti": [
+      "Franciscus Possenti"
+    ]
+  },
+  "mr:0303-ignatia-verzeri": {
+    "Ignatia Verzeri": [
+      "Teresia Eustochius Verzeri"
+    ]
+  },
+  "mr:0303-ioannes-scalvinoni": {
+    "Ioannes Scalvinoni": [
+      "Innocentius de Berzo Scalvinoni"
+    ]
+  },
+  "mr:0304-eulalia-viel": {
+    "Eulalia Viel": [
+      "Placida Viel"
+    ]
+  },
+  "mr:0305-carolus-caietanus-calosirto": {
+    "Carolus Caietanus Calosirto": [
+      "Ioannes Iosephus a Cruce Calosirto"
+    ]
+  },
+  "mr:0305-ioannes-kostistik": {
+    "Ioannes Kostistik": [
+      "Ieremias de Valachia Kostistik"
+    ]
+  },
+  "mr:0310-matthaeus-elias-nieves-del-castillo": {
+    "Matthaeus Elias Nieves del Castillo": [
+      "Elias a Succursu Nieves del Castillo"
+    ]
+  },
+  "mr:0318-amata-le-bouteiller": {
+    "Amata Le Bouteiller": [
+      "Martha Le Bouteiller"
+    ]
+  },
+  "mr:0324-franciscus-iosephus-lopez-caamano": {
+    "Franciscus Iosephus Lopez-Caamano": [
+      "Didacus Iosephus de Gadibus Lopez-Caamano"
+    ]
+  },
+  "mr:0325-michaelina-hordashevska": {
+    "Michaelina Hordashevska": [
+      "Iosaphata Hordashevska"
+    ]
+  },
+  "mr:0330-helena-kafka": {
+    "Helena Kafka": [
+      "Maria Restituta Kafka"
+    ]
+  },
+  "mr:0330-ludovicus-de-casaurea": {
+    "Ludovicus de Casaurea": [
+      "Archangelus Palmentieri"
+    ]
+  },
+  "mr:0402-laura-alvarado": {
+    "Laura Alvarado": [
+      "Maria a Sancto Ioseph Alvarado"
+    ]
+  },
+  "mr:0405-anna-hoss": {
+    "Anna Hoss": [
+      "Maria Crescentia Hoss"
+    ]
+  },
+  "mr:0411-antonius-carletti": {
+    "Antonius Carletti": [
+      "Angelus de Clavasio Carletti"
+    ]
+  },
+  "mr:0412-ioanna-fernandez-solar": {
+    "Ioanna Fernandez Solar": [
+      "Teresia a Iesu Fernandez Solar"
+    ]
+  },
+  "mr:0413-ioannes-bernardus-rousseau": {
+    "Ioannes Bernardus Rousseau": [
+      "Scubilio Rousseau"
+    ]
+  },
+  "mr:0418-barbara-avrillot": {
+    "Barbara Avrillot": [
+      "Maria ab Incarnatione Avrillot"
+    ]
+  },
+  "mr:0420-dina-bosatta": {
+    "Dina Bosatta": [
+      "Clara Bosatta"
+    ]
+  },
+  "mr:0421-conradus-de-parzham": {
+    "Conradus de Parzham": [
+      "Ioannes Birndorfer"
+    ]
+  },
+  "mr:0424-angelus-menni": {
+    "Angelus Menni": [
+      "Benedictus Menni"
+    ]
+  },
+  "mr:0424-rosa-virginia-pelletier": {
+    "Rosa Virginia Pelletier": [
+      "Maria a Sancta Euphrasia Pelletier"
+    ]
+  },
+  "mr:0501-herminius-philippus-pampuri": {
+    "Herminius Philippus Pampuri": [
+      "Richardus Pampuri"
+    ]
+  },
+  "mr:0503-maria-leonia-paradis": {
+    "Maria Leonia Paradis": [
+      "Alodia Paradis"
+    ]
+  },
+  "mr:0508-catharina-symon-de-longprey": {
+    "Catharina Symon de Longprey": [
+      "Maria Catharina a Sancto Augustino Symon de Longprey"
+    ]
+  },
+  "mr:0508-francisca-nisch": {
+    "Francisca Nisch": [
+      "Ulrica Nisch"
+    ]
+  },
+  "mr:0509-carolina-gerhardinger": {
+    "Carolina Gerhardinger": [
+      "Maria Teresia a Iesu Gerhardinger"
+    ]
+  },
+  "mr:0514-theodora-guerin": {
+    "Theodora Guerin": [
+      "Anna Teresia Guerin"
+    ]
+  },
+  "mr:0518-maria-magdalena-merten": {
+    "Maria Magdalena Merten": [
+      "Blandina Merten"
+    ]
+  },
+  "mr:0519-ioannes-ludovicus-loir": {
+    "Ioannes Ludovicus Loir": [
+      "Ioannes Baptista Xaverius Loir"
+    ]
+  },
+  "mr:0519-verena-butler": {
+    "Verena Butler": [
+      "Maria Bernarda Butler"
+    ]
+  },
+  "mr:0525-andreas-bertoni": {
+    "Andreas Bertoni": [
+      "Iacobus Philippus Bertoni"
+    ]
+  },
+  "mr:0529-iulia-ledochowska": {
+    "Iulia Ledochowska": [
+      "Ursula Ledochowska"
+    ]
+  },
+  "mr:0531-camilla-varano": {
+    "Camilla Varano": [
+      "Baptista Varano"
+    ]
+  },
+  "mr:0531-dominicus-di-nicolantonio": {
+    "Dominicus Di Nicolantonio": [
+      "Marianus de Roccacasale Di Nicolantonio"
+    ]
+  },
+  "mr:0531-iacobus-amoroso": {
+    "Iacobus Amoroso": [
+      "Felix Amoroso"
+    ]
+  },
+  "mr:0603-iosephus-oddi": {
+    "Iosephus Oddi": [
+      "Didacus Oddi"
+    ]
+  },
+  "mr:0608-ioannes-medda": {
+    "Ioannes Medda": [
+      "Nicolaus de Gesturi Medda"
+    ]
+  },
+  "mr:0611-maria-rosa-molas-vallve": {
+    "Maria Rosa Molas Vallve": [
+      "Rosa Francisca Maria a Doloribus Molas Vallve"
+    ]
+  },
+  "mr:0612-lucretia-helena-cevoli": {
+    "Lucretia Helena Cevoli": [
+      "Florida Cevoli"
+    ]
+  },
+  "mr:0616-anna-maria-catharina-scherer": {
+    "Anna Maria Catharina Scherer": [
+      "Maria Teresia Scherer"
+    ]
+  },
+  "mr:0623-sanctina-cimatti": {
+    "Sanctina Cimatti": [
+      "Maria Raphaela Cimatti"
+    ]
+  },
+  "mr:0624-anastasia-garcia-zavala": {
+    "Anastasia Garcia Zavala": [
+      "Maria a Guadalupe Garcia Zavala"
+    ]
+  },
+  "mr:0706-elias-desgardin": {
+    "Elias Desgardin": [
+      "Augustinus Iosephus Desgardin"
+    ]
+  },
+  "mr:0706-maria-rosa-de-loye": {
+    "Maria Rosa de Loye": [
+      "Susanna Agatha de Loye"
+    ]
+  },
+  "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene": {
+    "Francisca Maria Suzanna de Gaillard de la Valdene": [
+      "Iphigenia a Sancto Matthaeo de Gaillard de la Valdene"
+    ]
+  },
+  "mr:0709-paulina-a-corde-iesu-agonizante": {
+    "Paulina a Corde Iesu Agonizante": [
+      "Amabilis Visintainer"
+    ]
+  },
+  "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": {
+    "Sylvia de Romillon": [
+      "Agnes a Iesu de Romillon"
+    ]
+  },
+  "mr:0712-magdalena-teresia-tallien-et-socii": {
+    "Magdalena Teresia Tallien": [
+      "Rosa a Sancto Xaverio Tallien"
+    ]
+  },
+  "mr:0713-elisabeth-verchiere-et-socii": {
+    "Elisabeth Verchiere": [
+      "Magdalena a Matre Dei Verchiere"
+    ]
+  },
+  "mr:0716-maria-rosa-de-gordon-et-socii": {
+    "Maria Rosa de Gordon": [
+      "Amata a Iesu de Gordon"
+    ]
+  },
+  "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
+    "Maria Magdalena Claudina Lidoine": [
+      "Teresia a Sancto Augustino Lidoine"
+    ]
+  },
+  "mr:0717-petrus-gojdich": {
+    "Petrus Gojdich": [
+      "Paulus Gojdich"
+    ]
+  },
+  "mr:0718-olga-mackiv": {
+    "Olga Mackiv": [
+      "Tarsicia Mackiv"
+    ]
+  },
+  "mr:0723-emmanuel-perez-gimenez-et-socii": {
+    "Emmanuel Perez Gimenez": [
+      "Germanus a Iesu et Maria Perez Gimenez"
+    ]
+  },
+  "mr:0723-vincentius-diez-tejerina-et-socii": {
+    "Vincentius Diez Tejerina": [
+      "Nicephorus a Iesu et Maria Diez Tejerina"
+    ]
+  },
+  "mr:0724-dominicus-mazzarello": {
+    "Dominicus Mazzarello": [
+      "Modestinus a Iesu et Maria Mazzarello"
+    ]
+  },
+  "mr:0724-iacoba-martinez-garcia-et-socii": {
+    "Iacoba Martinez Garcia": [
+      "Maria a Columna a Sancto Francisco Borgia Martinez Garcia"
+    ]
+  },
+  "mr:0724-sarbelius-makhluf": {
+    "Sarbelius Makhluf": [
+      "Iosephus Makhluf"
+    ]
+  },
+  "mr:0725-carolus-rubio-alvarez-et-socii": {
+    "Carolus Rubio Alvarez": [
+      "Fridericus Rubio Alvarez"
+    ]
+  },
+  "mr:0728-anna-muttathupadathu": {
+    "Anna Muttathupadathu": [
+      "Alphonsa ab Immaculata Conceptione Muttathupadathu"
+    ]
+  },
+  "mr:0728-emmanuel-barbal-cosan": {
+    "Emmanuel Barbal Cosan": [
+      "Iacobus Hilarius Barbal Cosan"
+    ]
+  },
+  "mr:0730-leopoldus-mandic": {
+    "Leopoldus Mandic": [
+      "Bogdanus Mandic"
+    ]
+  },
+  "mr:0730-paulus-corres-diaz-de-cerio-et-socii": {
+    "Paulus Corres Diaz de Cerio": [
+      "Braulio Maria Corres Diaz de Cerio"
+    ]
+  },
+  "mr:0731-caecilia-schelingova": {
+    "Caecilia Schelingova": [
+      "Sidonia Schelingova"
+    ]
+  },
+  "mr:0801-adelheidis-mardosewicz-et-socii": {
+    "Adelheidis Mardosewicz": [
+      "Maria Stella a Sanctissimo Sacramento Mardosewicz"
+    ]
+  },
+  "mr:0801-iosephus-de-miguel-arahal": {
+    "Iosephus de Miguel Arahal": [
+      "Benvenutus de Miguel Arahal"
+    ]
+  },
+  "mr:0806-anna-maria-rubatto": {
+    "Anna Maria Rubatto": [
+      "Maria Francisca a Iesu Rubatto"
+    ]
+  },
+  "mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto": {
+    "Franciscus Nourry": [
+      "Agathangelus de Vindocino Nourry"
+    ],
+    "Gundisalvus Vaz Lopez-Netto": [
+      "Cassianus de Nannetibus Vaz Lopez-Netto"
+    ]
+  },
+  "mr:0808-maria-anna-rosa-caiani": {
+    "Maria Anna Rosa Caiani": [
+      "Maria Margarita Caiani"
+    ]
+  },
+  "mr:0808-maria-helena-mackillop": {
+    "Maria Helena MacKillop": [
+      "Maria a Cruce MacKillop"
+    ]
+  },
+  "mr:0809-editha-stein": {
+    "Editha Stein": [
+      "Teresia Benedicta a Cruce Stein"
+    ]
+  },
+  "mr:0809-ioanna-iosepha-cipitria": {
+    "Ioanna Iosepha Cipitria": [
+      "Candida Maria a Iesu Cipitria"
+    ]
+  },
+  "mr:0809-iosephus-maria-garrigues-hernandez": {
+    "Iosephus Maria Garrigues Hernandez": [
+      "Germanus Garrigues Hernandez"
+    ]
+  },
+  "mr:0811-iacobus-rhem": {
+    "Iacobus Rhem": [
+      "Ioannes Georgius Rhem"
+    ]
+  },
+  "mr:0812-atilanus-argueso-gonzalez": {
+    "Atilanus Argueso Gonzalez": [
+      "Flavius Argueso Gonzalez"
+    ]
+  },
+  "mr:0813-marcus-de-aviano": {
+    "Marcus de Aviano": [
+      "Carolus Dominicus Cristofori"
+    ]
+  },
+  "mr:0813-petrus-romancon": {
+    "Petrus Romancon": [
+      "Benildus Romancon"
+    ]
+  },
+  "mr:0814-maximilianus-maria-kolbe": {
+    "Maximilianus Maria Kolbe": [
+      "Raymundus Kolbe"
+    ]
+  },
+  "mr:0815-augustinus-hurtado-soler": {
+    "Augustinus Hurtado Soler": [
+      "Dominicus Hurtado Soler"
+    ]
+  },
+  "mr:0815-elvira-moragas-cantarero": {
+    "Elvira Moragas Cantarero": [
+      "Maria a Sacrario a Sancto Aloysio Gonzaga Moragas Cantarero"
+    ]
+  },
+  "mr:0815-richardus-granzotto": {
+    "Richardus Granzotto": [
+      "Claudius Granzotto"
+    ]
+  },
+  "mr:0816-anna-iosepha-perez-florido": {
+    "Anna Iosepha Perez Florido": [
+      "Petra a Sancto Ioseph Perez Florido"
+    ]
+  },
+  "mr:0816-iosephus-maria-sanchis-mompo": {
+    "Iosephus Maria Sanchis Mompo": [
+      "Gabriel Sanchis Mompo"
+    ]
+  },
   "mr:0817-mamas": {
     "Mamas": [
       "Mames"
+    ]
+  },
+  "mr:0822-dominicus-peroni": {
+    "Dominicus Peroni": [
+      "Bernardus Peroni"
+    ]
+  },
+  "mr:0823-marianus-garcia-mendez": {
+    "Marianus Garcia Mendez": [
+      "Ioannes Maria a Cruce Garcia Mendez"
+    ]
+  },
+  "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": {
+    "Petra Maria Victoria Quintana Argos": [
+      "Rosaria Quintana Argos"
+    ],
+    "Emmanuela Iusta Fernandez Ibero": [
+      "Seraphina Fernandez Ibero"
+    ]
+  },
+  "mr:0823-protasius-bourdon": {
+    "Protasius Bourdon": [
+      "Ioannes Bourdon"
+    ]
+  },
+  "mr:0824-maria-vincentia-rosal": {
+    "Maria Vincentia Rosal": [
+      "Maria ab Incarnatione Rosal"
+    ]
+  },
+  "mr:0826-alexander-max-ginestar": {
+    "Alexander Max Ginestar": [
+      "Petrus Max Ginestar"
+    ]
+  },
+  "mr:0826-aloysius-valls-matamales": {
+    "Aloysius Valls Matamales": [
+      "Ambrosius Valls Matamales"
+    ]
+  },
+  "mr:0826-leucadia-harasymiv": {
+    "Leucadia Harasymiv": [
+      "Laurentia Harasymiv"
+    ]
+  },
+  "mr:0826-maria-baouardy": {
+    "Maria Baouardy": [
+      "Maria a Iesu Crucifixo Baouardy"
+    ]
+  },
+  "mr:0828-iosephus-ample-alcaide": {
+    "Iosephus Ample Alcaide": [
+      "Aurelius Ample Alcaide"
+    ]
+  },
+  "mr:0828-iuniperus-serra": {
+    "Iuniperus Serra": [
+      "Michael Serra"
     ]
   },
   "mr:0829-ioanna-jugan": {
@@ -10,9 +661,365 @@
       "Maria a Cruce Jugan"
     ]
   },
+  "mr:0829-ioannina-szymkowiak": {
+    "Ioannina Szymkowiak": [
+      "Sancia Szymkowiak"
+    ]
+  },
+  "mr:0830-iosephus-ferrer-adell": {
+    "Iosephus Ferrer Adell": [
+      "Ioachim Ferrer Adell"
+    ]
+  },
+  "mr:0831-isidorus-primo-rodriguez-et-socii": {
+    "Isidorus Primo Rodriguez": [
+      "Edmigius Primo Rodriguez"
+    ]
+  },
+  "mr:0901-michael-roca-huguet-et-socii": {
+    "Michael Roca Huguet": [
+      "Christinus Roca Huguet"
+    ]
+  },
+  "mr:0904-dina-belanger": {
+    "Dina Belanger": [
+      "Maria a sancta Caecilia Romana Belanger"
+    ]
+  },
+  "mr:0904-iosephus-bieda-grau": {
+    "Iosephus Bieda Grau": [
+      "Bernardus Bieda Grau"
+    ]
+  },
+  "mr:0905-teresia-calcuttae": {
+    "Agnes Gonxha Bojaxhiu": [
+      "Teresia Gonxha Bojaxhiu",
+      "Teresia Calcuttae",
+      "Mater Teresia Calcuttae"
+    ]
+  },
+  "mr:0908-bonifatius-rodriguez-gonzalez-et-socii": {
+    "Bonifatius Rodriguez Gonzalez": [
+      "Iosephus Caecilius Rodriguez Gonzalez"
+    ]
+  },
+  "mr:0909-emma-uffing": {
+    "Emma Uffing": [
+      "Maria Euthymia Uffing"
+    ]
+  },
+  "mr:0911-michael-gran": {
+    "Michael Gran": [
+      "Bonaventura de Barcinone Gran"
+    ]
+  },
+  "mr:0911-petrus-de-alcantara": {
+    "Petrus de Alcantara": [
+      "Laurentius Villanueva Larrayoz"
+    ]
+  },
+  "mr:0913-benvenutus-villalon-acebron": {
+    "Benvenutus Villalon Acebron": [
+      "Aurelius Maria Villalon Acebron"
+    ]
+  },
+  "mr:0916-salvator-ferrer-cardet-et-socii": {
+    "Salvator Ferrer Cardet": [
+      "Laureanus Ferrer Cardet"
+    ]
+  },
+  "mr:0918-salvator-chulia-ferrandis-et-socii": {
+    "Salvator Chulia Ferrandis": [
+      "Ambrosius Chulia Ferrandis"
+    ]
+  },
   "mr:0921-matthaeus-apostolus-et-evangelista": {
     "Matthaeus Apostolus et Evangelista": [
       "Levi"
+    ]
+  },
+  "mr:0922-laurentius-mauritius-belvisotti": {
+    "Laurentius Mauritius Belvisotti": [
+      "Ignatius de Sandone Belvisotti"
+    ]
+  },
+  "mr:0924-ioanna-gabriel": {
+    "Ioanna Gabriel": [
+      "Columba Gabriel"
+    ]
+  },
+  "mr:0925-iosephus-bengoa-aranguren-et-socii": {
+    "Iosephus Bengoa Aranguren": [
+      "Ioannes Petrus Bengoa Aranguren"
+    ]
+  },
+  "mr:0926-emmanuel-legua-marti": {
+    "Emmanuel Legua Marti": [
+      "Leo Legua Marti"
+    ]
+  },
+  "mr:0926-iulius-esteve-flors": {
+    "Iulius Esteve Flors": [
+      "Bonaventura Esteve Flors"
+    ]
+  },
+  "mr:0926-maria-victoria-couderc": {
+    "Maria Victoria Couderc": [
+      "Teresia Couderc"
+    ]
+  },
+  "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana": {
+    "Teresia Rosat Balasch": [
+      "Maria a Refugio Rosat Balasch"
+    ],
+    "Iosepha Romero Clariana": [
+      "Maria a Calvario Romero Clariana"
+    ]
+  },
+  "mr:0928-bernardinus-de-feltria": {
+    "Bernardinus de Feltria": [
+      "Martinus Tomitano"
+    ]
+  },
+  "mr:1002-maria-francisca-ricart-olmos": {
+    "Maria Francisca Ricart Olmos": [
+      "Maria Guadalupe Ricart Olmos"
+    ]
+  },
+  "mr:1005-ioannes-franciscus-carreri": {
+    "Ioannes Franciscus Carreri": [
+      "Matthaeus Carreri"
+    ]
+  },
+  "mr:1005-maria-faustina-kowalska": {
+    "Maria Faustina Kowalska": [
+      "Helena Kowalska"
+    ]
+  },
+  "mr:1006-anna-maria-gallo": {
+    "Anna Maria Gallo": [
+      "Maria Francisca a Vulneribus Domini nostri Iesu Christi Gallo"
+    ]
+  },
+  "mr:1006-maria-rosa-durocher": {
+    "Maria Rosa Durocher": [
+      "Eulalia Durocher"
+    ]
+  },
+  "mr:1009-emmanuel-canoura-arnau-et-socii": {
+    "Emmanuel Canoura Arnau": [
+      "Innocentius ab Immaculata Canoura Arnau"
+    ]
+  },
+  "mr:1010-sophia-camilla-truszkowska": {
+    "Sophia Camilla Truszkowska": [
+      "Angela Maria Truszkowska"
+    ]
+  },
+  "mr:1011-emmanuela-torres-acosta": {
+    "Emmanuela Torres Acosta": [
+      "Maria Desolata Torres Acosta"
+    ]
+  },
+  "mr:1012-felix-de-nicola": {
+    "Felix de Nicola": [
+      "Seraphinus de Monte Granario de Nicola"
+    ]
+  },
+  "mr:1012-petrus-salcedo-puchades": {
+    "Petrus Salcedo Puchades": [
+      "Pacificus Salcedo Puchades"
+    ]
+  },
+  "mr:1017-maria-ludovica-iosepha-vanot-et-socii": {
+    "Maria Ludovica Iosepha Vanot": [
+      "Maria Natalia a Sancto Ludovico Vanot"
+    ]
+  },
+  "mr:1020-franciscus-alexander-kern": {
+    "Franciscus Alexander Kern": [
+      "Iacobus Kern"
+    ]
+  },
+  "mr:1020-maria-bertilla-boscardin": {
+    "Maria Bertilla Boscardin": [
+      "Anna Francisca Boscardin"
+    ]
+  },
+  "mr:1023-clotildis-iosepha-paillot-et-socii": {
+    "Clotildis Iosepha Paillot": [
+      "Maria Clotildis Angela a Sancto Francisco Borgia Paillot"
+    ]
+  },
+  "mr:1023-iulianus-nicolaus-reche": {
+    "Iulianus Nicolaus Reche": [
+      "Arnoldus Reche"
+    ]
+  },
+  "mr:1023-petrus-lorente-vicente-et-socii": {
+    "Petrus Lorente Vicente": [
+      "Ambrosius Leo Lorente Vicente"
+    ]
+  },
+  "mr:1108-elisabeth-maria-satellico": {
+    "Elisabeth Maria Satellico": [
+      "Maria Crucifixa Satellico"
+    ]
+  },
+  "mr:1112-iosaphat-kuncewicz": {
+    "Iosaphat Kuncewicz": [
+      "Ioannes Kuncewicz"
+    ]
+  },
+  "mr:1113-livia-pietrantoni": {
+    "Livia Pietrantoni": [
+      "Augustina Pietrantoni"
+    ]
+  },
+  "mr:1115-helena-de-chappotin-de-neuville": {
+    "Helena de Chappotin de Neuville": [
+      "Maria a Passione de Chappotin de Neuville"
+    ]
+  },
+  "mr:1115-iosephus-kalinowski": {
+    "Iosephus Kalinowski": [
+      "Raphael a Sancto Ioseph Kalinowski"
+    ]
+  },
+  "mr:1118-ferdinandus-santamaria": {
+    "Ferdinandus Santamaria": [
+      "Grimoaldus a Purificatione Santamaria"
+    ]
+  },
+  "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": {
+    "Maria Gabriela Hinojosa y Naveros": [
+      "Maria a Refugio Hinojosa y Naveros"
+    ]
+  },
+  "mr:1120-anna-felicis-viti": {
+    "Anna Felicis Viti": [
+      "Maria Fortunata Viti"
+    ]
+  },
+  "mr:1120-francisca-lloret-marti-et-socii": {
+    "Francisca Lloret Marti": [
+      "Angela a Sancto Ioseph Lloret Marti"
+    ]
+  },
+  "mr:1121-francisca-de-siedliska": {
+    "Francisca de Siedliska": [
+      "Maria a Iesu Bono Pastore de Siedliska"
+    ]
+  },
+  "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner": {
+    "Iulianus Torrijo Sanchez": [
+      "Elias Torrijo Sanchez"
+    ],
+    "Franciscus Lahoz Moliner": [
+      "Bertrandus Lahoz Moliner"
+    ]
+  },
+  "mr:1123-maria-felicitas-cendoya-y-araquistain": {
+    "Maria Felicitas Cendoya y Araquistain": [
+      "Maria Caecilia Cendoya y Araquistain"
+    ]
+  },
+  "mr:1126-lucas-antonius-pirozzo": {
+    "Lucas Antonius Pirozzo": [
+      "Humilis Pirozzo"
+    ]
+  },
+  "mr:1127-ioannes-amici": {
+    "Ioannes Amici": [
+      "Bernardinus de Fossa Amici"
+    ]
+  },
+  "mr:1128-marianus-adradas-gonzalo-et-socii": {
+    "Marianus Adradas Gonzalo": [
+      "Ioannes Iesu Adradas Gonzalo"
+    ]
+  },
+  "mr:1129-petrus-berthelot-et-thomas-rodriguez": {
+    "Petrus Berthelot": [
+      "Dionysius a Nativitate Berthelot"
+    ],
+    "Thomas Rodriguez": [
+      "Redemptus a Cruce Rodriguez"
+    ]
+  },
+  "mr:1201-helisa-angela-meneguzzi": {
+    "Helisa Angela Meneguzzi": [
+      "Liduina Meneguzzi"
+    ]
+  },
+  "mr:1202-melchior-chylinski": {
+    "Melchior Chylinski": [
+      "Raphael Chylinski"
+    ]
+  },
+  "mr:1207-benedicta-rossello": {
+    "Benedicta Rossello": [
+      "Maria Iosepha Rossello"
+    ]
+  },
+  "mr:1209-caesar-silvestrelli": {
+    "Caesar Silvestrelli": [
+      "Bernardus Maria a Iesu Silvestrelli"
+    ]
+  },
+  "mr:1213-franciscus-marinoni": {
+    "Franciscus Marinoni": [
+      "Ioannes Marinoni"
+    ]
+  },
+  "mr:1214-antonius-cubells-minguell": {
+    "Antonius Cubells Minguell": [
+      "Protasius Cubells Minguell"
+    ]
+  },
+  "mr:1216-florentius-kazminsky": {
+    "Florentius Kazminsky": [
+      "Honoratus de Biała Podlaska Kazminsky"
+    ]
+  },
+  "mr:1216-marianna-fontanella": {
+    "Marianna Fontanella": [
+      "Maria ab Angelis Fontanella"
+    ]
+  },
+  "mr:1216-salvaticus-de-madiis": {
+    "Salvaticus de Madiis": [
+      "Sebastianus de Madiis"
+    ]
+  },
+  "mr:1217-henricus-cormier": {
+    "Henricus Cormier": [
+      "Hyacinthus Cormier"
+    ]
+  },
+  "mr:1218-iulia-valle": {
+    "Iulia Valle": [
+      "Nemesia Valle"
+    ]
+  },
+  "mr:1224-constantia-cerioli": {
+    "Constantia Cerioli": [
+      "Paula Elisabeth Cerioli"
+    ]
+  },
+  "mr:1224-sarbelius-makhluf": {
+    "Sarbelius Makhluf": [
+      "Iosephus Makhluf"
+    ]
+  },
+  "mr:1225-albertus-chmielowski": {
+    "Albertus Chmielowski": [
+      "Adamus Chmielowski"
+    ]
+  },
+  "mr:1225-maria-teresia-von-wullenweber": {
+    "Maria Teresia von Wullenweber": [
+      "Maria ab Apostolis von Wullenweber"
     ]
   }
 }

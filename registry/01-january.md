@@ -36,7 +36,7 @@
 | 2 | 12 | `mr:0102-marcolinus-amanni` | * | IT | dies_natalis |  |  |
 | 2 | 13 | `mr:0102-stephana-quinzani` | * | IT | dies_natalis |  |  |
 | 2 | 14 | `mr:0102-gulielmus-repin-et-laurentius-batard` | * | FR | dies_natalis |  |  |
-| 2 | 15 | `mr:0102-maria-anna-soureau-blondin` | * | CA | dies_natalis |  |  |
+| 2 | 15 | `mr:0102-maria-stella-soureau-blondin` | * | CA | dies_natalis |  |  |
 | 3 | (1) | `mr:0103-nomen-iesu` |  |  | celebratio |  |  |
 | 3 | 2 | `mr:0103-antherus` |  | IT | depositio |  |  |
 | 3 | 3 | `mr:0103-theopemptus-et-theona` |  | TR | dies_natalis |  |  |
@@ -55,7 +55,7 @@
 | 4 | 6 | `mr:0104-rigobertus` |  | FR | dies_natalis | CEI: entry 5 |  |
 | 4 | 7 | `mr:0104-pharaildis` | * | FR | dies_natalis | CEI: entry 6, asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 4 | 8 | `mr:0104-angela` | * | IT | dies_natalis | CEI: entry 7 | Angela of Foligno, blessed in the 2004 editions, was canonized on 9 October 2013. |
-| 4 | 9 | `mr:0104-christiana-menabuoi` | * | IT | dies_natalis | CEI: entry 8 |  |
+| 4 | 9 | `mr:0104-oringa-menabuoi` | * | IT | dies_natalis | CEI: entry 8 |  |
 | 4 | 10 | `mr:0104-thomas-plumtree` | * | GB | dies_natalis | CEI: entry 9 | 2004 English: Translation error: "choosing the noose over the axe" where the Latin "láquei pœnam ... pro vita máluit" says he preferred the noose to his life. |
 | 4 | 11 | `mr:0104-elisabeth-anna-seton` |  | US | dies_natalis | CEI: entry 10 |  |
 | 4 | 12 | `mr:0104-emmanuel-gonzalez-garcia` | * | ES | dies_natalis | CEI: entry 11 | Manuel González García, blessed in the 2004 editions, was canonized on 16 October 2016. |
@@ -69,7 +69,7 @@
 | 5 | 8 | `mr:0105-franciscus-peltier-et-socii` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0105-ioannes-nepomucenus-neumann` |  | US | dies_natalis |  |  |
 | 5 | 10 | `mr:0105-maria-repetto` | * | IT | dies_natalis |  |  |
-| 5 | 11 | `mr:0105-carolus-a-sancto-andrea` | * | IE | dies_natalis |  | Charles of St Andrew (Houben), blessed in the 2004 editions, was canonized on 3 June 2007. |
+| 5 | 11 | `mr:0105-ioannes-andreas-houben` | * | IE | dies_natalis |  | Charles of St Andrew (Houben), blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 5 | 12 | `mr:0105-marcellina-darowska` | * | UA | dies_natalis |  |  |
 | 5 | 13 | `mr:0105-petrus-bonilli` | * | IT | dies_natalis |  |  |
 | 5 | 14 | `mr:0105-genovefa-torres-morales` |  | ES | dies_natalis |  |  |
@@ -97,7 +97,7 @@
 | 7 | 11 | `mr:0107-matthaeus-guimera` | * | IT | dies_natalis |  |  |
 | 7 | 12 | `mr:0107-ambrosius-fernandez` | * | JP | dies_natalis |  |  |
 | 7 | 13 | `mr:0107-iosephus-tuan` |  | VN | dies_natalis |  |  |
-| 7 | 14 | `mr:0107-maria-teresia-haze` | * | BE | dies_natalis |  |  |
+| 7 | 14 | `mr:0107-ioanna-haze` | * | BE | dies_natalis |  |  |
 | 8 | 1 | `mr:0108-apollinaris` |  | TR | dies_natalis |  |  |
 | 8 | 2 | `mr:0108-theophilus-et-helladius` |  | LY | dies_natalis |  |  |
 | 8 | 3 | `mr:0108-lucianus-et-socii` |  | FR | dies_natalis |  |  |
@@ -118,7 +118,7 @@
 | 9 | 5 | `mr:0109-honoratus-de-busentiaco` | * | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:0109-iulia-della-rena` | * | IT | dies_natalis |  |  |
 | 9 | 7 | `mr:0109-antonius-fatati` | * | IT | dies_natalis |  |  |
-| 9 | 8 | `mr:0109-maria-teresia-a-iesu` | * | FR | dies_natalis |  |  |
+| 9 | 8 | `mr:0109-alexia-le-clerc` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0109-agatha-yi-et-teresia-kim` |  | KR | dies_natalis |  |  |
 | 9 | 10 | `mr:0109-iosephus-pawlowski-et-casimirus-grelewskus` | * | DE | dies_natalis |  |  |
 | 10 | 1 | `mr:0110-miltiades` |  | IT | dies_natalis | same as `mr:1210-melchiades` |  |
@@ -138,7 +138,7 @@
 | 10 | 15 | `mr:0110-gregorius-x` | * | IT | dies_natalis | same as `mr:0216-gregorius-x` |  |
 | 10 | 16 | `mr:0110-aegidius-di-bello` | * | IT | dies_natalis |  |  |
 | 10 | 17 | `mr:0110-anna-ab-angelis` | * | PE | dies_natalis |  |  |
-| 10 | 18 | `mr:0110-francisca-salesia-aviat` |  | IT | dies_natalis |  | 2004 English: Translation error: "Francis de Sales" where the Latin "Francíscæ Salésiæ" is the feminine Frances de Sales. |
+| 10 | 18 | `mr:0110-leonia-aviat` |  | IT | dies_natalis |  | 2004 English: Translation error: "Francis de Sales" where the Latin "Francíscæ Salésiæ" is the feminine Frances de Sales. |
 | 10 | 19 | `mr:0110-maria-a-doloribus-rodriguez-sopena` | * | ES | dies_natalis |  |  |
 | 11 | 1 | `mr:0111-hyginus` |  | IT | dies_natalis |  |  |
 | 11 | 2 | `mr:0111-salvius` |  | TN | dies_natalis |  |  |
@@ -150,7 +150,7 @@
 | 11 | 8 | `mr:0111-paulinus` | * | IT | dies_natalis |  |  |
 | 11 | 9 | `mr:0111-bernardus-scammacca` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "Bernardino" where the Latin has "Bernárdi" (Bernardo). |
 | 11 | 10 | `mr:0111-gulielmus-carter` | * | GB | dies_natalis |  |  |
-| 11 | 11 | `mr:0111-thomas-de-cora` |  | IT | dies_natalis |  |  |
+| 11 | 11 | `mr:0111-franciscus-antonius-placidi` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0111-franciscus-rogaczewski` | * | PL | dies_natalis |  |  |
 | 12 | 1 | `mr:0112-arcadius` |  | DZ | dies_natalis |  | 2004 English: Translation error: the city is omitted; the Latin has "Cæsaréæ in Mauretánia" (at Caesarea in Mauretania). |
 | 12 | 2 | `mr:0112-tigrius-et-eutropius` |  | TR | dies_natalis |  |  |
@@ -237,10 +237,10 @@
 | 18 | 7 | `mr:0118-margarita` |  | HU | dies_natalis |  |  |
 | 18 | 8 | `mr:0118-facius` | * | IT | dies_natalis |  |  |
 | 18 | 9 | `mr:0118-andreas-de-piscaria` | * | IT | dies_natalis |  |  |
-| 18 | 10 | `mr:0118-christina-ciccarelli` | * | IT | dies_natalis |  |  |
+| 18 | 10 | `mr:0118-matthia-ciccarelli` | * | IT | dies_natalis |  |  |
 | 18 | 11 | `mr:0118-regina-protmann` | * | PL | dies_natalis |  |  |
 | 18 | 12 | `mr:0118-felicitas-pricet-et-socii` | * | FR | dies_natalis |  |  |
-| 18 | 13 | `mr:0118-maria-teresia-fasce` | * | IT | dies_natalis |  |  |
+| 18 | 13 | `mr:0118-maria-ioanna-fasce` | * | IT | dies_natalis |  |  |
 | 19 | 1 | `mr:0119-germanicus` |  | TR | dies_natalis |  |  |
 | 19 | 2 | `mr:0119-pontianus` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0119-marius-et-socii` |  | IT | dies_natalis |  |  |
@@ -263,8 +263,8 @@
 | 20 | 8 | `mr:0120-henricus` | * | FI | dies_natalis |  |  |
 | 20 | 9 | `mr:0120-eustochius-calafato` |  | IT | dies_natalis |  |  |
 | 20 | 10 | `mr:0120-stephanus-min-kuk-ka` |  | KR | dies_natalis |  |  |
-| 20 | 11 | `mr:0120-maria-christina-ab-immaculata` | * | IT | dies_natalis |  | Maria Cristina of the Immaculate Conception Brando, blessed in the 2004 editions, was canonized on 17 May 2015. |
-| 20 | 12 | `mr:0120-cyprianus-iwene-tansi` | * | GB | dies_natalis |  |  |
+| 20 | 11 | `mr:0120-adalheidis-brando` | * | IT | dies_natalis |  | Maria Cristina of the Immaculate Conception Brando, blessed in the 2004 editions, was canonized on 17 May 2015. |
+| 20 | 12 | `mr:0120-michael-iwene-tansi` | * | GB | dies_natalis |  |  |
 | 21 | (1) | `mr:0121-agnes` |  | IT | depositio | same as `mr:0128-agnes` |  |
 | 21 | 2 | `mr:0121-publius` |  | GR | commemoratio |  |  |
 | 21 | 3 | `mr:0121-fructuosus-et-socii` |  | ES | dies_natalis |  |  |
@@ -308,7 +308,7 @@
 | 24 | 7 | `mr:0124-gulielmus-ireland-et-ioannes-grove` | * | GB | dies_natalis |  |  |
 | 24 | 8 | `mr:0124-maria-poussepin` | * | FR | dies_natalis |  |  |
 | 24 | 9 | `mr:0124-vincentius-lewoniuk-et-socii` | * | PL | dies_natalis |  |  |
-| 24 | 10 | `mr:0124-timotheus-giaccardo` | * | IT | dies_natalis |  |  |
+| 24 | 10 | `mr:0124-iosephus-giaccardo` | * | IT | dies_natalis |  |  |
 | 25 | (1) | `mr:0125-conversio-pauli-apostoli` |  | SY | celebratio |  |  |
 | 25 | 2 | `mr:0125-ananias` |  | SY | commemoratio |  |  |
 | 25 | 3 | `mr:0125-arthemas` | * | IT | dies_natalis |  |  |
@@ -320,16 +320,16 @@
 | 25 | 9 | `mr:0125-poppo` |  | FR | dies_natalis |  |  |
 | 25 | 10 | `mr:0125-henricus-suso` | * | DE | dies_natalis |  |  |
 | 25 | 11 | `mr:0125-antonius-migliorati` | * | IT | dies_natalis |  |  |
-| 25 | 12 | `mr:0125-archangela-girlani` | * | IT | dies_natalis |  |  |
+| 25 | 12 | `mr:0125-eleonora-girlani` | * | IT | dies_natalis |  |  |
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES | dies_natalis |  |  |
-| 25 | 14 | `mr:0125-maria-antonia-grillo` | * | EG | dies_natalis |  |  |
+| 25 | 14 | `mr:0125-teresia-grillo` | * | EG | dies_natalis |  |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE | dies_natalis |  |  |
 | 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis | same as `mr:0124-timotheus`; same as `mr:0206-titus` |  |
 | 26 | 2 | `mr:0126-theogenes` |  | DZ | dies_natalis |  |  |
 | 26 | 3 | `mr:0126-paula` |  | PS | dies_natalis |  |  |
 | 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL | dies_natalis |  |  |
 | 26 | 5 | `mr:0126-albericus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Neumünster" where the Latin has "Novum Monastérium" (the New Monastery, that is Cîteaux). |
-| 26 | 6 | `mr:0126-augustinus-erlandsson` | * | NO | dies_natalis |  |  |
+| 26 | 6 | `mr:0126-eystein-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0126-michael-kozal` | * | DE | dies_natalis |  |  |
 | 27 | (1) | `mr:0127-angela-merici` |  | IT | dies_natalis | same as `mr:0531-angela-merici`; same as `mr:0601-angela-merici` | 1914 English: Translation error: the Latin Brixia is Brescia, not Brixen. |
@@ -355,7 +355,7 @@
 | 28 | 7 | `mr:0128-agatha-lin-zhao-et-socii` |  | CN | dies_natalis |  |  |
 | 28 | 8 | `mr:0128-iosephus-freinademetz` |  | CN | dies_natalis |  |  |
 | 28 | 9 | `mr:0128-maria-aloysia-montesinos-orduna` | * | ES | dies_natalis |  |  |
-| 28 | 10 | `mr:0128-olympia-bida` | * | RU | dies_natalis |  |  |
+| 28 | 10 | `mr:0128-olga-bida` | * | RU | dies_natalis |  |  |
 | 29 | 1 | `mr:0129-sarbelius-et-bebaia` |  | TR | dies_natalis |  |  |
 | 29 | 2 | `mr:0129-papias-et-maurus` |  | IT | dies_natalis |  |  |
 | 29 | 3 | `mr:0129-constantius` |  | IT | dies_natalis |  |  |
@@ -380,7 +380,7 @@
 | 30 | 12 | `mr:0130-paulus-ho-hyob` |  | KR | dies_natalis |  |  |
 | 30 | 13 | `mr:0130-thomas-khuong` |  | VN | dies_natalis |  |  |
 | 30 | 14 | `mr:0130-david-galvan` |  | MX | dies_natalis |  |  |
-| 30 | 15 | `mr:0130-mucianus-maria-wiaux` | * | BE | dies_natalis |  |  |
+| 30 | 15 | `mr:0130-aloysius-wiaux` | * | BE | dies_natalis |  |  |
 | 30 | 16 | `mr:0130-columba-marmion` | * | BE | dies_natalis |  |  |
 | 30 | 17 | `mr:0130-carmela-garcia-moyon` | * | ES | dies_natalis |  | 2004 English: Translation error: omits "violáta": she was violated before being burned alive. |
 | 30 | 18 | `mr:0130-sigismundus-pisarski` | * | PL | dies_natalis |  |  |

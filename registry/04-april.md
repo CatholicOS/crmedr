@@ -29,7 +29,7 @@
 | 2 | 13 | `mr:0402-franciscus-coll` | * | ES | dies_natalis |  | Francisco Coll y Guitart, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 2 | 14 | `mr:0402-gulielmus-apor` | * | HU | dies_natalis |  |  |
 | 2 | 15 | `mr:0402-nicolaus-carneckyj` | * | UA | dies_natalis |  |  |
-| 2 | 16 | `mr:0402-maria-a-sancto-ioseph` | * | VE | dies_natalis |  |  |
+| 2 | 16 | `mr:0402-laura-alvarado` | * | VE | dies_natalis |  |  |
 | 3 | 1 | `mr:0403-xystus-i` |  | IT | dies_natalis | same as `mr:0406-xystus-i` |  |
 | 3 | 2 | `mr:0403-chrestus-et-pappus` |  | RO | dies_natalis |  |  |
 | 3 | 3 | `mr:0403-ulpianus` |  | LB | dies_natalis |  |  |
@@ -61,7 +61,7 @@
 | 5 | 7 | `mr:0405-albertus` | * | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0405-iuliana` | * | BE | dies_natalis |  |  |
 | 5 | 9 | `mr:0405-catharina-tomas` |  | ES | dies_natalis |  |  |
-| 5 | 10 | `mr:0405-maria-crescentia-hoss` |  | DE | dies_natalis |  |  |
+| 5 | 10 | `mr:0405-anna-hoss` |  | DE | dies_natalis |  |  |
 | 6 | 1 | `mr:0406-irenaeus` |  | HR | dies_natalis | same as `mr:0325-irenaeus` |  |
 | 6 | 2 | `mr:0406-eutychius` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0406-galla` |  | IT | dies_natalis |  |  |
@@ -134,7 +134,7 @@
 | 11 | 6 | `mr:0411-isaac` |  | IT | dies_natalis |  |  |
 | 11 | 7 | `mr:0411-lanuinus` | * | IT | dies_natalis |  |  |
 | 11 | 8 | `mr:0411-sancia` | * | PT | dies_natalis |  |  |
-| 11 | 9 | `mr:0411-angelus-de-clavasio` | * | IT | dies_natalis |  |  |
+| 11 | 9 | `mr:0411-antonius-carletti` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0411-georgius-gervase` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:0411-gemma-galganus` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0411-helena-guerra` | * | IT | dies_natalis |  | Elena Guerra, blessed in the 2004 editions, was canonized on 20 October 2024. |
@@ -149,7 +149,7 @@
 | 12 | 8 | `mr:0412-erkembodo` | * | FR | dies_natalis |  |  |
 | 12 | 9 | `mr:0412-alferius` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0412-laurentius` | * | PT | dies_natalis |  |  |
-| 12 | 11 | `mr:0412-teresia-a-iesu` |  | CL | dies_natalis |  |  |
+| 12 | 11 | `mr:0412-ioanna-fernandez-solar` |  | CL | dies_natalis |  |  |
 | 12 | 12 | `mr:0412-iosephus-moscati` |  | IT | dies_natalis |  |  |
 | 12 | 13 | `mr:0412-david-uribe` |  | MX | dies_natalis |  |  |
 | 13 | (1) | `mr:0413-martinus-i` |  | TR | dies_natalis | same as `mr:0916-martinus-i`; same as `mr:1112-martinus-i` |  |
@@ -163,7 +163,7 @@
 | 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021. 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
 | 13 | 10 | `mr:0413-franciscus-dickenson-et-milo-gerard` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0413-ioannes-lockwood-et-eduardus-catherick` | * | GB | dies_natalis |  |  |
-| 13 | 12 | `mr:0413-scubilio-rousseau` | * | FR | dies_natalis |  |  |
+| 13 | 12 | `mr:0413-ioannes-bernardus-rousseau` | * | FR | dies_natalis |  |  |
 | 13 | 13 | `mr:0413-sabas-reyes` |  | MX | dies_natalis |  |  |
 | 14 | 1 | `mr:0414-tiburtius-et-socii` |  | IT | dies_natalis |  |  |
 | 14 | 2 | `mr:0414-bernica-et-prosdoca` |  | TR | dies_natalis |  |  |
@@ -226,7 +226,7 @@
 | 18 | 11 | `mr:0418-galdinus` |  | IT | dies_natalis |  |  |
 | 18 | 12 | `mr:0418-andreas` | * | IT | dies_natalis |  |  |
 | 18 | 13 | `mr:0418-andreas-hibernon` | * | ES | dies_natalis |  |  |
-| 18 | 14 | `mr:0418-maria-ab-incarnatione` | * | FR | dies_natalis |  |  |
+| 18 | 14 | `mr:0418-barbara-avrillot` | * | FR | dies_natalis |  |  |
 | 18 | 15 | `mr:0418-iosephus-moreau` | * | FR | dies_natalis |  |  |
 | 18 | 16 | `mr:0418-sabina-petrilli` | * | IT | dies_natalis |  |  |
 | 18 | 17 | `mr:0418-romanus-archutowski` | * | PL | dies_natalis |  |  |
@@ -256,7 +256,7 @@
 | 20 | 16 | `mr:0420-mauritius-mackenraghty` | * | IE | dies_natalis |  |  |
 | 20 | 17 | `mr:0420-antonius-page` | * | GB | dies_natalis |  |  |
 | 20 | 18 | `mr:0420-franciscus-page-et-robertus-watkinson` | * | GB | dies_natalis |  |  |
-| 20 | 19 | `mr:0420-clara-bosatta` | * | IT | dies_natalis |  |  |
+| 20 | 19 | `mr:0420-dina-bosatta` | * | IT | dies_natalis |  |  |
 | 20 | 20 | `mr:0420-anastasius-pankiewicz` | * | DE | dies_natalis |  |  |
 | 21 | (1) | `mr:0421-anselmus` |  | IT | dies_natalis |  |  |
 | 21 | 2 | `mr:0421-apollonius` |  | IT | commemoratio | same as `mr:0418-apollonius` |  |
@@ -298,8 +298,8 @@
 | 24 | 8 | `mr:0424-wilfridus` |  | GB | dies_natalis | same as `mr:1012-walfridus` |  |
 | 24 | 9 | `mr:0424-egbertus` |  | GB | dies_natalis |  |  |
 | 24 | 10 | `mr:0424-gulielmus-firmatus` | * | FR | dies_natalis |  |  |
-| 24 | 11 | `mr:0424-maria-a-sancta-euphrasia` |  | FR | dies_natalis |  |  |
-| 24 | 12 | `mr:0424-benedictus-menni` |  | FR | dies_natalis |  |  |
+| 24 | 11 | `mr:0424-rosa-virginia-pelletier` |  | FR | dies_natalis |  |  |
+| 24 | 12 | `mr:0424-angelus-menni` |  | FR | dies_natalis |  |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  | Maria Elisabeth Hesselblad, blessed in the 2004 editions, was canonized on 5 June 2016. |
 | 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  | 2004 English: Translation error: "blessed Peter, his son" where the Latin has "ab illo fílius nuncupátus" (called son by him, that is, by Peter). |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |

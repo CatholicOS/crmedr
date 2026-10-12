@@ -34,8 +34,8 @@
 | 3 | 11 | `mr:0303-iacobinus-de-canepacci` | * | IT | dies_natalis |  |  |
 | 3 | 12 | `mr:0303-liberatus-weiss-et-socii` | * | ET | dies_natalis |  |  |
 | 3 | 13 | `mr:0303-petrus-renatus-rogue` | * | FR | dies_natalis |  | 2004 English: Translation error: "Daron" where the Latin has "Dariórigi" (Vannes). |
-| 3 | 14 | `mr:0303-teresia-eustochius-verzeri` |  | IT | dies_natalis |  |  |
-| 3 | 15 | `mr:0303-innocentius-de-berzo` | * | IT | dies_natalis |  |  |
+| 3 | 14 | `mr:0303-ignatia-verzeri` |  | IT | dies_natalis |  |  |
+| 3 | 15 | `mr:0303-ioannes-scalvinoni` | * | IT | dies_natalis |  |  |
 | 3 | 16 | `mr:0303-catharina-drexel` |  | US | dies_natalis |  |  |
 | 4 | (1) | `mr:0304-casimirus` |  | BY | dies_natalis |  |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR | dies_natalis |  |  |
@@ -44,7 +44,7 @@
 | 4 | 5 | `mr:0304-petrus` | * | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:0304-humbertus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:0304-christophorus-bales-et-socii` | * | GB | dies_natalis |  |  |
-| 4 | 8 | `mr:0304-placida-viel` | * | FR | dies_natalis |  |  |
+| 4 | 8 | `mr:0304-eulalia-viel` | * | FR | dies_natalis |  |  |
 | 4 | 9 | `mr:0304-ioannes-antonius-farina` | * | IT | dies_natalis |  | Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 4 | 10 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | * | PL | dies_natalis |  |  |
 | 5 | 1 | `mr:0305-theophilus` |  | PS | commemoratio |  |  |
@@ -56,8 +56,8 @@
 | 5 | 7 | `mr:0305-kieranus` | * | IE | dies_natalis |  |  |
 | 5 | 8 | `mr:0305-virgilius` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0305-christophorus-macassoli` | * | IT | dies_natalis |  |  |
-| 5 | 10 | `mr:0305-ieremias-de-valachia` | * | IT | dies_natalis |  |  |
-| 5 | 11 | `mr:0305-ioannes-iosephus-a-cruce` |  | IT | dies_natalis |  |  |
+| 5 | 10 | `mr:0305-ioannes-kostistik` | * | IT | dies_natalis |  |  |
+| 5 | 11 | `mr:0305-carolus-caietanus-calosirto` |  | IT | dies_natalis |  |  |
 | 6 | 1 | `mr:0306-marcianus` |  | IT | dies_natalis |  |  |
 | 6 | 2 | `mr:0306-victorinus` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0306-quiriacus` |  | DE | dies_natalis |  |  |
@@ -113,7 +113,7 @@
 | 10 | 6 | `mr:0310-attala` |  | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0310-ioannes-ogilvie` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  | Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007. |
-| 10 | 9 | `mr:0310-elias-a-succursu` | * | MX | dies_natalis |  |  |
+| 10 | 9 | `mr:0310-matthaeus-elias-nieves-del-castillo` | * | MX | dies_natalis |  |  |
 | 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
 | 11 | 2 | `mr:0311-trophimus-et-thalus` |  | SY | dies_natalis |  |  |
 | 11 | 3 | `mr:0311-constantinus` | * | GB | dies_natalis |  |  |
@@ -194,7 +194,7 @@
 | 18 | 7 | `mr:0318-anselmus` |  | IT | dies_natalis |  |  |
 | 18 | 8 | `mr:0318-salvator-de-horta` |  | IT | dies_natalis |  |  |
 | 18 | 9 | `mr:0318-ioannes-thules-et-rogerius-wrenno` | * | GB | dies_natalis |  |  |
-| 18 | 10 | `mr:0318-martha-le-bouteiller` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Savior at Vicoigne" where the Latin has "Sancti Salvatóris Vicecómitis" (Saint-Sauveur-le-Vicomte). |
+| 18 | 10 | `mr:0318-amata-le-bouteiller` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Savior at Vicoigne" where the Latin has "Sancti Salvatóris Vicecómitis" (Saint-Sauveur-le-Vicomte). |
 | 19 | (1) | `mr:0319-ioseph` |  | PS | dies_natalis |  |  |
 | 19 | 2 | `mr:0319-ioannes` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0319-isnardus-de-chiampo` | * | IT | dies_natalis |  |  |
@@ -259,7 +259,7 @@
 | 24 | 4 | `mr:0324-severus` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0324-ioannes-a-baculo` | * | IT | dies_natalis |  |  |
 | 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
-| 24 | 7 | `mr:0324-didacus-iosephus-de-gadibus` | * | ES | dies_natalis |  | 2004 English: Translation error: "Andújar" where the Latin has "Arúndæ" (Ronda). |
+| 24 | 7 | `mr:0324-franciscus-iosephus-lopez-caamano` | * | ES | dies_natalis |  | 2004 English: Translation error: "Andújar" where the Latin has "Arúndæ" (Ronda). |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
 | 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio | same as `mr:0325-annuntiatio-beatissimae-virginis-genitricis` |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS | commemoratio |  |  |
@@ -276,7 +276,7 @@
 | 25 | 13 | `mr:0325-iacobus-bird` | * | GB | dies_natalis |  |  |
 | 25 | 14 | `mr:0325-lucia-filippini` |  | IT | dies_natalis |  |  |
 | 25 | 15 | `mr:0325-placidus-riccardi` | * | IT | dies_natalis |  |  |
-| 25 | 16 | `mr:0325-iosaphata-hordashevska` | * | UA | dies_natalis |  |  |
+| 25 | 16 | `mr:0325-michaelina-hordashevska` | * | UA | dies_natalis |  |  |
 | 25 | 17 | `mr:0325-aemilianus-kovc` | * | PL | dies_natalis |  |  |
 | 25 | 18 | `mr:0325-hilarius-januszewski` | * | DE | dies_natalis |  |  |
 | 26 | 1 | `mr:0326-castulus` |  | IT | dies_natalis |  |  |
@@ -326,7 +326,7 @@
 | 30 | 12 | `mr:0330-ludovicus-de-casaurea` | * | IT | dies_natalis |  | Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 30 | 13 | `mr:0330-leonardus-murialdo` |  | IT | dies_natalis |  |  |
 | 30 | 14 | `mr:0330-iulius-alvarez` |  | MX | dies_natalis |  |  |
-| 30 | 15 | `mr:0330-maria-restituta-kafka` | * | AT | dies_natalis |  |  |
+| 30 | 15 | `mr:0330-helena-kafka` | * | AT | dies_natalis |  |  |
 | 31 | 1 | `mr:0331-beniamin` |  | IR | dies_natalis |  |  |
 | 31 | 2 | `mr:0331-balbina` |  | IT | commemoratio |  |  |
 | 31 | 3 | `mr:0331-agilolphus` | * | DE | dies_natalis |  |  |

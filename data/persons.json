@@ -214,9 +214,12 @@
           "where": "text"
         }
       ],
-      "mr:0102-maria-anna-soureau-blondin": [
+      "mr:0102-maria-stella-soureau-blondin": [
         {
-          "name": "Maria Anna Soureau Blondin",
+          "name": "Maria Stella Soureau-Blondin",
+          "also": [
+            "Maria Anna Soureau-Blondin"
+          ],
           "where": "text"
         }
       ],
@@ -330,9 +333,12 @@
           "where": "text"
         }
       ],
-      "mr:0104-christiana-menabuoi": [
+      "mr:0104-oringa-menabuoi": [
         {
-          "name": "Christiana Menabuoi",
+          "name": "Oringa Menabuoi",
+          "also": [
+            "Christiana Menabuoi"
+          ],
           "where": "text"
         }
       ],
@@ -422,9 +428,12 @@
           "where": "text"
         }
       ],
-      "mr:0105-carolus-a-sancto-andrea": [
+      "mr:0105-ioannes-andreas-houben": [
         {
-          "name": "Carolus a Sancto Andrea",
+          "name": "Ioannes Andreas Houben",
+          "also": [
+            "Carolus a Sancto Andrea Houben"
+          ],
           "where": "text"
         }
       ],
@@ -507,6 +516,9 @@
       "mr:0106-andreas-bessette": [
         {
           "name": "Andreas Bessette",
+          "also": [
+            "Alaphridus Bessette"
+          ],
           "where": "text"
         }
       ],
@@ -588,9 +600,12 @@
           "where": "text"
         }
       ],
-      "mr:0107-maria-teresia-haze": [
+      "mr:0107-ioanna-haze": [
         {
-          "name": "Maria Teresia Haze",
+          "name": "Ioanna Haze",
+          "also": [
+            "Maria Teresia Haze"
+          ],
           "where": "text"
         }
       ],
@@ -726,9 +741,12 @@
           "where": "text"
         }
       ],
-      "mr:0109-maria-teresia-a-iesu": [
+      "mr:0109-alexia-le-clerc": [
         {
-          "name": "Maria Teresia a Iesu",
+          "name": "Alexia Le Clerc",
+          "also": [
+            "Maria Teresia a Iesu Le Clerc"
+          ],
           "where": "text"
         }
       ],
@@ -854,9 +872,12 @@
           "where": "text"
         }
       ],
-      "mr:0110-francisca-salesia-aviat": [
+      "mr:0110-leonia-aviat": [
         {
-          "name": "Francisca Salesia Aviat",
+          "name": "Leonia Aviat",
+          "also": [
+            "Francisca Salesia Aviat"
+          ],
           "where": "text"
         }
       ],
@@ -929,9 +950,12 @@
           "where": "text"
         }
       ],
-      "mr:0111-thomas-de-cora": [
+      "mr:0111-franciscus-antonius-placidi": [
         {
-          "name": "Thomas de Cora",
+          "name": "Franciscus Antonius Placidi",
+          "also": [
+            "Thomas de Cora Placidi"
+          ],
           "where": "text"
         }
       ],
@@ -1481,9 +1505,12 @@
           "where": "text"
         }
       ],
-      "mr:0118-christina-ciccarelli": [
+      "mr:0118-matthia-ciccarelli": [
         {
-          "name": "Christina Ciccarelli",
+          "name": "Matthia Ciccarelli",
+          "also": [
+            "Christina Ciccarelli"
+          ],
           "where": "text"
         }
       ],
@@ -1507,9 +1534,12 @@
           "where": "text"
         }
       ],
-      "mr:0118-maria-teresia-fasce": [
+      "mr:0118-maria-ioanna-fasce": [
         {
-          "name": "Maria Teresia Fasce",
+          "name": "Maria Ioanna Fasce",
+          "also": [
+            "Maria Teresia Fasce"
+          ],
           "where": "text"
         }
       ],
@@ -1653,15 +1683,21 @@
           "where": "text"
         }
       ],
-      "mr:0120-maria-christina-ab-immaculata": [
+      "mr:0120-adalheidis-brando": [
         {
-          "name": "Maria Christina Ab Immaculata",
+          "name": "Adalheidis Brando",
+          "also": [
+            "Maria Christina ab Immaculata Brando"
+          ],
           "where": "text"
         }
       ],
-      "mr:0120-cyprianus-iwene-tansi": [
+      "mr:0120-michael-iwene-tansi": [
         {
-          "name": "Cyprianus Iwene Tansi",
+          "name": "Michael Iwene Tansi",
+          "also": [
+            "Cyprianus Iwene Tansi"
+          ],
           "where": "text"
         }
       ],
@@ -2097,9 +2133,12 @@
           }
         }
       ],
-      "mr:0124-timotheus-giaccardo": [
+      "mr:0124-iosephus-giaccardo": [
         {
-          "name": "Timotheus Giaccardo",
+          "name": "Iosephus Giaccardo",
+          "also": [
+            "Timotheus Giaccardo"
+          ],
           "where": "text"
         }
       ],
@@ -2173,9 +2212,12 @@
           "where": "text"
         }
       ],
-      "mr:0125-archangela-girlani": [
+      "mr:0125-eleonora-girlani": [
         {
-          "name": "Archangela Girlani",
+          "name": "Eleonora Girlani",
+          "also": [
+            "Archangela Girlani"
+          ],
           "where": "text"
         }
       ],
@@ -2185,9 +2227,12 @@
           "where": "text"
         }
       ],
-      "mr:0125-maria-antonia-grillo": [
+      "mr:0125-teresia-grillo": [
         {
-          "name": "Maria Antonia Grillo",
+          "name": "Teresia Grillo",
+          "also": [
+            "Maria Antonia Grillo"
+          ],
           "where": "text"
         }
       ],
@@ -2235,9 +2280,12 @@
           "where": "text"
         }
       ],
-      "mr:0126-augustinus-erlandsson": [
+      "mr:0126-eystein-erlandsson": [
         {
-          "name": "Augustinus Erlandsson",
+          "name": "Eystein Erlandsson",
+          "also": [
+            "Augustinus Erlandsson"
+          ],
           "where": "text"
         }
       ],
@@ -2399,9 +2447,12 @@
           "where": "text"
         }
       ],
-      "mr:0128-olympia-bida": [
+      "mr:0128-olga-bida": [
         {
-          "name": "Olympia Bida",
+          "name": "Olga Bida",
+          "also": [
+            "Olympias Bida"
+          ],
           "where": "text"
         }
       ],
@@ -2561,15 +2612,21 @@
           "where": "text"
         }
       ],
-      "mr:0130-mucianus-maria-wiaux": [
+      "mr:0130-aloysius-wiaux": [
         {
-          "name": "Mucianus Maria Wiaux",
+          "name": "Aloysius Wiaux",
+          "also": [
+            "Mucianus Maria Wiaux"
+          ],
           "where": "text"
         }
       ],
       "mr:0130-columba-marmion": [
         {
           "name": "Columba Marmion",
+          "also": [
+            "Iosephus Marmion"
+          ],
           "where": "text"
         }
       ],
@@ -3058,9 +3115,12 @@
           "where": "text"
         }
       ],
-      "mr:0201-ioanna-francisca-a-visitatione": [
+      "mr:0201-anna-michelotti": [
         {
-          "name": "Ioanna Francisca a Visitatione",
+          "name": "Anna Michelotti",
+          "also": [
+            "Ioanna Francisca a Visitatione Michelotti"
+          ],
           "where": "text"
         }
       ],
@@ -3228,9 +3288,12 @@
           "where": "text"
         }
       ],
-      "mr:0203-maria-a-sancto-ignatio": [
+      "mr:0203-claudina-thevenet": [
         {
-          "name": "Maria a Sancto Ignatio",
+          "name": "Claudina Thevenet",
+          "also": [
+            "Maria a Sancto Ignatio Thevenet"
+          ],
           "where": "text"
         }
       ],
@@ -3725,15 +3788,21 @@
           "where": "text"
         }
       ],
-      "mr:0207-rosalia-rendu": [
+      "mr:0207-ioanna-maria-rendu": [
         {
-          "name": "Rosalia Rendu",
+          "name": "Ioanna Maria Rendu",
+          "also": [
+            "Rosalia Rendu"
+          ],
           "where": "text"
         }
       ],
-      "mr:0207-maria-a-providentia": [
+      "mr:0207-eugenia-smet": [
         {
-          "name": "Maria a Providentia",
+          "name": "Eugenia Smet",
+          "also": [
+            "Maria a Providentia Smet"
+          ],
           "where": "text"
         }
       ],
@@ -3883,9 +3952,12 @@
           "where": "text"
         }
       ],
-      "mr:0209-michael-febres-cordero": [
+      "mr:0209-franciscus-aloysius-febres-cordero": [
         {
-          "name": "Michael Febres Cordero",
+          "name": "Franciscus Aloysius Febres Cordero",
+          "also": [
+            "Michael Febres Cordero"
+          ],
           "where": "text"
         }
       ],
@@ -4047,9 +4119,12 @@
           "where": "text"
         }
       ],
-      "mr:0211-tobias-borras-romeu": [
+      "mr:0211-franciscus-borras-romeu": [
         {
-          "name": "Tobias Borras Romeu",
+          "name": "Franciscus Borras Romeu",
+          "also": [
+            "Tobias Borras Romeu"
+          ],
           "where": "text"
         }
       ],
@@ -4466,15 +4541,21 @@
           "where": "text"
         }
       ],
-      "mr:0213-christina-camozzi": [
+      "mr:0213-augustina-camozzi": [
         {
-          "name": "Christina Camozzi",
+          "name": "Augustina Camozzi",
+          "also": [
+            "Christina Camozzi"
+          ],
           "where": "text"
         }
       ],
-      "mr:0213-eustochius-bellinus": [
+      "mr:0213-lucretia-bellini": [
         {
-          "name": "Eustochius Bellinus",
+          "name": "Lucretia Bellini",
+          "also": [
+            "Eustochius Bellini"
+          ],
           "where": "text"
         }
       ],
@@ -4664,6 +4745,14 @@
         {
           "name": "Isaias",
           "where": "text"
+        },
+        {
+          "name": "Samuel",
+          "where": "text"
+        },
+        {
+          "name": "Daniel",
+          "where": "text"
         }
       ],
       "mr:0216-marutha": [
@@ -4822,9 +4911,12 @@
           "where": "text"
         }
       ],
-      "mr:0218-gertrudis-comensoli": [
+      "mr:0218-catharina-comensoli": [
         {
-          "name": "Gertrudis Comensoli",
+          "name": "Catharina Comensoli",
+          "also": [
+            "Gertrudis Comensoli"
+          ],
           "where": "text"
         }
       ],
@@ -4978,9 +5070,12 @@
           "where": "text"
         }
       ],
-      "mr:0221-maria-henrica-dominicus": [
+      "mr:0221-anna-catharina-dominici": [
         {
-          "name": "Maria Henrica Dominicus",
+          "name": "Anna Catharina Dominici",
+          "also": [
+            "Maria Henrica Dominici"
+          ],
           "where": "text"
         }
       ],
@@ -5032,9 +5127,12 @@
           "where": "text"
         }
       ],
-      "mr:0222-maria-a-iesu": [
+      "mr:0222-aemilia-d-oultremont": [
         {
-          "name": "Maria a Iesu",
+          "name": "Aemilia d'Oultremont",
+          "also": [
+            "Maria a Iesu d'Oultremont"
+          ],
           "where": "text"
         }
       ],
@@ -5080,9 +5178,12 @@
           "where": "text"
         }
       ],
-      "mr:0223-iosephina-vannini": [
+      "mr:0223-iuditta-adelheidis-vannini": [
         {
-          "name": "Iosephina Vannini",
+          "name": "Iuditta Adelheidis Vannini",
+          "also": [
+            "Iosephina Vannini"
+          ],
           "where": "text"
         }
       ],
@@ -5194,9 +5295,12 @@
           "where": "text"
         }
       ],
-      "mr:0225-maria-adeodata-pisani": [
+      "mr:0225-maria-teresia-pisani": [
         {
-          "name": "Maria Adeodata Pisani",
+          "name": "Maria Teresia Pisani",
+          "also": [
+            "Maria Adeodata Pisani"
+          ],
           "where": "text"
         }
       ],
@@ -5270,9 +5374,12 @@
           "where": "text"
         }
       ],
-      "mr:0226-pietas-a-cruce": [
+      "mr:0226-thomasina-ortiz-real": [
         {
-          "name": "Pietas a Cruce",
+          "name": "Thomasina Ortiz Real",
+          "also": [
+            "Pietas a Cruce Ortiz Real"
+          ],
           "where": "text"
         }
       ],
@@ -5347,6 +5454,9 @@
       "mr:0227-gabriel-a-virgine-perdolenti": [
         {
           "name": "Gabriel a Virgine Perdolenti",
+          "also": [
+            "Franciscus Possenti"
+          ],
           "where": "text"
         }
       ],
@@ -5356,9 +5466,12 @@
           "where": "text"
         }
       ],
-      "mr:0227-maria-a-caritate-spiritus-sancti": [
+      "mr:0227-carolina-brader": [
         {
-          "name": "Maria a Caritate Spiritus Sancti",
+          "name": "Carolina Brader",
+          "also": [
+            "Maria a Caritate Spiritus Sancti Brader"
+          ],
           "where": "text"
         }
       ],
@@ -5606,15 +5719,21 @@
           "where": "text"
         }
       ],
-      "mr:0303-teresia-eustochius-verzeri": [
+      "mr:0303-ignatia-verzeri": [
         {
-          "name": "Teresia Eustochius Verzeri",
+          "name": "Ignatia Verzeri",
+          "also": [
+            "Teresia Eustochius Verzeri"
+          ],
           "where": "text"
         }
       ],
-      "mr:0303-innocentius-de-berzo": [
+      "mr:0303-ioannes-scalvinoni": [
         {
-          "name": "Innocentius de Berzo",
+          "name": "Ioannes Scalvinoni",
+          "also": [
+            "Innocentius de Berzo Scalvinoni"
+          ],
           "where": "text"
         }
       ],
@@ -5674,9 +5793,12 @@
           "where": "text"
         }
       ],
-      "mr:0304-placida-viel": [
+      "mr:0304-eulalia-viel": [
         {
-          "name": "Placida Viel",
+          "name": "Eulalia Viel",
+          "also": [
+            "Placida Viel"
+          ],
           "where": "text"
         }
       ],
@@ -5746,15 +5868,21 @@
           "where": "text"
         }
       ],
-      "mr:0305-ieremias-de-valachia": [
+      "mr:0305-ioannes-kostistik": [
         {
-          "name": "Ieremias de Valachia",
+          "name": "Ioannes Kostistik",
+          "also": [
+            "Ieremias de Valachia Kostistik"
+          ],
           "where": "text"
         }
       ],
-      "mr:0305-ioannes-iosephus-a-cruce": [
+      "mr:0305-carolus-caietanus-calosirto": [
         {
-          "name": "Ioannes Iosephus a Cruce",
+          "name": "Carolus Caietanus Calosirto",
+          "also": [
+            "Ioannes Iosephus a Cruce Calosirto"
+          ],
           "where": "text"
         }
       ],
@@ -6132,9 +6260,12 @@
           "where": "text"
         }
       ],
-      "mr:0310-elias-a-succursu": [
+      "mr:0310-matthaeus-elias-nieves-del-castillo": [
         {
-          "name": "Elias a Succursu",
+          "name": "Matthaeus Elias Nieves del Castillo",
+          "also": [
+            "Elias a Succursu Nieves del Castillo"
+          ],
           "where": "text"
         }
       ],
@@ -6669,9 +6800,12 @@
           "where": "text"
         }
       ],
-      "mr:0318-martha-le-bouteiller": [
+      "mr:0318-amata-le-bouteiller": [
         {
-          "name": "Martha Le Bouteiller",
+          "name": "Amata Le Bouteiller",
+          "also": [
+            "Martha Le Bouteiller"
+          ],
           "where": "text"
         }
       ],
@@ -7067,9 +7201,12 @@
           "where": "text"
         }
       ],
-      "mr:0324-didacus-iosephus-de-gadibus": [
+      "mr:0324-franciscus-iosephus-lopez-caamano": [
         {
-          "name": "Didacus Iosephus de Gadibus",
+          "name": "Franciscus Iosephus Lopez-Caamano",
+          "also": [
+            "Didacus Iosephus de Gadibus Lopez-Caamano"
+          ],
           "where": "text"
         }
       ],
@@ -7163,9 +7300,12 @@
           "where": "text"
         }
       ],
-      "mr:0325-iosaphata-hordashevska": [
+      "mr:0325-michaelina-hordashevska": [
         {
-          "name": "Iosaphata Hordashevska",
+          "name": "Michaelina Hordashevska",
+          "also": [
+            "Iosaphata Hordashevska"
+          ],
           "where": "text"
         }
       ],
@@ -7482,6 +7622,9 @@
       "mr:0330-ludovicus-de-casaurea": [
         {
           "name": "Ludovicus de Casaurea",
+          "also": [
+            "Archangelus Palmentieri"
+          ],
           "where": "text"
         }
       ],
@@ -7497,9 +7640,12 @@
           "where": "text"
         }
       ],
-      "mr:0330-maria-restituta-kafka": [
+      "mr:0330-helena-kafka": [
         {
-          "name": "Maria Restituta Kafka",
+          "name": "Helena Kafka",
+          "also": [
+            "Maria Restituta Kafka"
+          ],
           "where": "text"
         }
       ],
@@ -7709,9 +7855,12 @@
           "where": "text"
         }
       ],
-      "mr:0402-maria-a-sancto-ioseph": [
+      "mr:0402-laura-alvarado": [
         {
-          "name": "Maria a Sancto Ioseph",
+          "name": "Laura Alvarado",
+          "also": [
+            "Maria a Sancto Ioseph Alvarado"
+          ],
           "where": "text"
         }
       ],
@@ -7901,9 +8050,12 @@
           "where": "text"
         }
       ],
-      "mr:0405-maria-crescentia-hoss": [
+      "mr:0405-anna-hoss": [
         {
-          "name": "Maria Crescentia Hoss",
+          "name": "Anna Hoss",
+          "also": [
+            "Maria Crescentia Hoss"
+          ],
           "where": "text"
         }
       ],
@@ -8373,9 +8525,12 @@
           "where": "text"
         }
       ],
-      "mr:0411-angelus-de-clavasio": [
+      "mr:0411-antonius-carletti": [
         {
-          "name": "Angelus de Clavasio",
+          "name": "Antonius Carletti",
+          "also": [
+            "Angelus de Clavasio Carletti"
+          ],
           "where": "text"
         }
       ],
@@ -8463,9 +8618,12 @@
           "where": "text"
         }
       ],
-      "mr:0412-teresia-a-iesu": [
+      "mr:0412-ioanna-fernandez-solar": [
         {
-          "name": "Teresia a Iesu",
+          "name": "Ioanna Fernandez Solar",
+          "also": [
+            "Teresia a Iesu Fernandez Solar"
+          ],
           "where": "text"
         }
       ],
@@ -8555,9 +8713,12 @@
           "where": "text"
         }
       ],
-      "mr:0413-scubilio-rousseau": [
+      "mr:0413-ioannes-bernardus-rousseau": [
         {
-          "name": "Scubilio Rousseau",
+          "name": "Ioannes Bernardus Rousseau",
+          "also": [
+            "Scubilio Rousseau"
+          ],
           "where": "text"
         }
       ],
@@ -9225,9 +9386,12 @@
           "where": "text"
         }
       ],
-      "mr:0418-maria-ab-incarnatione": [
+      "mr:0418-barbara-avrillot": [
         {
-          "name": "Maria Ab Incarnatione",
+          "name": "Barbara Avrillot",
+          "also": [
+            "Maria ab Incarnatione Avrillot"
+          ],
           "where": "text"
         }
       ],
@@ -9421,9 +9585,12 @@
           "where": "text"
         }
       ],
-      "mr:0420-clara-bosatta": [
+      "mr:0420-dina-bosatta": [
         {
-          "name": "Clara Bosatta",
+          "name": "Dina Bosatta",
+          "also": [
+            "Clara Bosatta"
+          ],
           "where": "text"
         }
       ],
@@ -9478,6 +9645,9 @@
       "mr:0421-conradus-de-parzham": [
         {
           "name": "Conradus de Parzham",
+          "also": [
+            "Ioannes Birndorfer"
+          ],
           "where": "text"
         }
       ],
@@ -9677,15 +9847,21 @@
           "where": "text"
         }
       ],
-      "mr:0424-maria-a-sancta-euphrasia": [
+      "mr:0424-rosa-virginia-pelletier": [
         {
-          "name": "Maria a Sancta Euphrasia",
+          "name": "Rosa Virginia Pelletier",
+          "also": [
+            "Maria a Sancta Euphrasia Pelletier"
+          ],
           "where": "text"
         }
       ],
-      "mr:0424-benedictus-menni": [
+      "mr:0424-angelus-menni": [
         {
-          "name": "Benedictus Menni",
+          "name": "Angelus Menni",
+          "also": [
+            "Benedictus Menni"
+          ],
           "where": "text"
         }
       ],
@@ -10319,9 +10495,12 @@
           "where": "text"
         }
       ],
-      "mr:0501-richardus-pampuri": [
+      "mr:0501-herminius-philippus-pampuri": [
         {
-          "name": "Richardus Pampuri",
+          "name": "Herminius Philippus Pampuri",
+          "also": [
+            "Richardus Pampuri"
+          ],
           "where": "text"
         }
       ],
@@ -10492,6 +10671,9 @@
       "mr:0503-maria-leonia-paradis": [
         {
           "name": "Maria Leonia Paradis",
+          "also": [
+            "Alodia Paradis"
+          ],
           "where": "text"
         }
       ],
@@ -10869,15 +11051,21 @@
           "where": "text"
         }
       ],
-      "mr:0508-maria-catharina-a-sancto-augustino": [
+      "mr:0508-catharina-symon-de-longprey": [
         {
-          "name": "Maria Catharina a Sancto Augustino",
+          "name": "Catharina Symon de Longprey",
+          "also": [
+            "Maria Catharina a Sancto Augustino Symon de Longprey"
+          ],
           "where": "text"
         }
       ],
-      "mr:0508-ulrica-nisch": [
+      "mr:0508-francisca-nisch": [
         {
-          "name": "Ulrica Nisch",
+          "name": "Francisca Nisch",
+          "also": [
+            "Ulrica Nisch"
+          ],
           "where": "text"
         }
       ],
@@ -10947,9 +11135,12 @@
           "where": "text"
         }
       ],
-      "mr:0509-maria-teresia-a-iesu": [
+      "mr:0509-carolina-gerhardinger": [
         {
-          "name": "Maria Teresia a Iesu",
+          "name": "Carolina Gerhardinger",
+          "also": [
+            "Maria Teresia a Iesu Gerhardinger"
+          ],
           "where": "text"
         }
       ],
@@ -11316,6 +11507,9 @@
       "mr:0514-theodora-guerin": [
         {
           "name": "Theodora Guerin",
+          "also": [
+            "Anna Teresia Guerin"
+          ],
           "where": "text"
         }
       ],
@@ -11642,9 +11836,12 @@
           "where": "text"
         }
       ],
-      "mr:0518-blandina-merten": [
+      "mr:0518-maria-magdalena-merten": [
         {
-          "name": "Blandina Merten",
+          "name": "Maria Magdalena Merten",
+          "also": [
+            "Blandina Merten"
+          ],
           "where": "text"
         }
       ],
@@ -11746,15 +11943,21 @@
           "where": "text"
         }
       ],
-      "mr:0519-ioannes-baptista-xaverius-loir": [
+      "mr:0519-ioannes-ludovicus-loir": [
         {
-          "name": "Ioannes Baptista Xaverius Loir",
+          "name": "Ioannes Ludovicus Loir",
+          "also": [
+            "Ioannes Baptista Xaverius Loir"
+          ],
           "where": "text"
         }
       ],
-      "mr:0519-maria-bernarda-butler": [
+      "mr:0519-verena-butler": [
         {
-          "name": "Maria Bernarda Butler",
+          "name": "Verena Butler",
+          "also": [
+            "Maria Bernarda Butler"
+          ],
           "where": "text"
         }
       ],
@@ -12426,9 +12629,12 @@
           "where": "text"
         }
       ],
-      "mr:0525-iacobus-philippus-bertonus": [
+      "mr:0525-andreas-bertoni": [
         {
-          "name": "Iacobus Philippus Bertonus",
+          "name": "Andreas Bertoni",
+          "also": [
+            "Iacobus Philippus Bertoni"
+          ],
           "where": "text"
         }
       ],
@@ -12854,9 +13060,12 @@
           "where": "text"
         }
       ],
-      "mr:0529-ursula-ledochowska": [
+      "mr:0529-iulia-ledochowska": [
         {
-          "name": "Ursula Ledochowska",
+          "name": "Iulia Ledochowska",
+          "also": [
+            "Ursula Ledochowska"
+          ],
           "where": "text"
         }
       ],
@@ -12979,9 +13188,12 @@
           "where": "text"
         }
       ],
-      "mr:0531-baptista-varano": [
+      "mr:0531-camilla-varano": [
         {
-          "name": "Baptista Varano",
+          "name": "Camilla Varano",
+          "also": [
+            "Baptista Varano"
+          ],
           "where": "text"
         }
       ],
@@ -13001,15 +13213,21 @@
           "where": "text"
         }
       ],
-      "mr:0531-felix-amoroso": [
+      "mr:0531-iacobus-amoroso": [
         {
-          "name": "Felix Amoroso",
+          "name": "Iacobus Amoroso",
+          "also": [
+            "Felix Amoroso"
+          ],
           "where": "text"
         }
       ],
-      "mr:0531-marianus-de-roccacasale": [
+      "mr:0531-dominicus-di-nicolantonio": [
         {
-          "name": "Marianus de Roccacasale",
+          "name": "Dominicus Di Nicolantonio",
+          "also": [
+            "Marianus de Roccacasale Di Nicolantonio"
+          ],
           "where": "text"
         }
       ],
@@ -13652,9 +13870,12 @@
           "where": "text"
         }
       ],
-      "mr:0603-didacus-oddi": [
+      "mr:0603-iosephus-oddi": [
         {
-          "name": "Didacus Oddi",
+          "name": "Iosephus Oddi",
+          "also": [
+            "Didacus Oddi"
+          ],
           "where": "text"
         }
       ],
@@ -14090,9 +14311,12 @@
           "where": "text"
         }
       ],
-      "mr:0608-nicolaus-de-gesturi": [
+      "mr:0608-ioannes-medda": [
         {
-          "name": "Nicolaus de Gesturi",
+          "name": "Ioannes Medda",
+          "also": [
+            "Nicolaus de Gesturi Medda"
+          ],
           "where": "text"
         }
       ],
@@ -14287,9 +14511,12 @@
           "where": "text"
         }
       ],
-      "mr:0611-rosa-francisca-maria-a-doloribus": [
+      "mr:0611-maria-rosa-molas-vallve": [
         {
-          "name": "Rosa Francisca Maria a Doloribus",
+          "name": "Maria Rosa Molas Vallve",
+          "also": [
+            "Rosa Francisca Maria a Doloribus Molas Vallve"
+          ],
           "where": "text"
         }
       ],
@@ -14353,9 +14580,12 @@
           "where": "text"
         }
       ],
-      "mr:0612-florida-cevoli": [
+      "mr:0612-lucretia-helena-cevoli": [
         {
-          "name": "Florida Cevoli",
+          "name": "Lucretia Helena Cevoli",
+          "also": [
+            "Florida Cevoli"
+          ],
           "where": "text"
         }
       ],
@@ -14686,9 +14916,12 @@
           "where": "text"
         }
       ],
-      "mr:0616-maria-teresia-scherer": [
+      "mr:0616-anna-maria-catharina-scherer": [
         {
-          "name": "Maria Teresia Scherer",
+          "name": "Anna Maria Catharina Scherer",
+          "also": [
+            "Maria Teresia Scherer"
+          ],
           "where": "text"
         }
       ],
@@ -15188,9 +15421,12 @@
           "where": "text"
         }
       ],
-      "mr:0623-maria-raphaela-cimatti": [
+      "mr:0623-sanctina-cimatti": [
         {
-          "name": "Maria Raphaela Cimatti",
+          "name": "Sanctina Cimatti",
+          "also": [
+            "Maria Raphaela Cimatti"
+          ],
           "where": "text"
         }
       ],
@@ -15256,9 +15492,12 @@
           "where": "text"
         }
       ],
-      "mr:0624-maria-a-guadalupe-garcia-zavala": [
+      "mr:0624-anastasia-garcia-zavala": [
         {
-          "name": "Maria a Guadalupe Garcia Zavala",
+          "name": "Anastasia Garcia Zavala",
+          "also": [
+            "Maria a Guadalupe Garcia Zavala"
+          ],
           "where": "text"
         }
       ],
@@ -16228,15 +16467,21 @@
           "where": "text"
         }
       ],
-      "mr:0706-augustinus-iosephus-desgardin": [
+      "mr:0706-elias-desgardin": [
         {
-          "name": "Augustinus Iosephus Desgardin",
+          "name": "Elias Desgardin",
+          "also": [
+            "Augustinus Iosephus Desgardin"
+          ],
           "where": "text"
         }
       ],
-      "mr:0706-susanna-agatha-de-loye": [
+      "mr:0706-maria-rosa-de-loye": [
         {
-          "name": "Susanna Agatha de Loye",
+          "name": "Maria Rosa de Loye",
+          "also": [
+            "Susanna Agatha de Loye"
+          ],
           "where": "text"
         }
       ],
@@ -16322,9 +16567,12 @@
           "where": "text"
         }
       ],
-      "mr:0707-iphigenia-a-sancto-matthaeo": [
+      "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene": [
         {
-          "name": "Iphigenia a Sancto Matthaeo",
+          "name": "Francisca Maria Suzanna de Gaillard de la Valdene",
+          "also": [
+            "Iphigenia a Sancto Matthaeo de Gaillard de la Valdene"
+          ],
           "where": "text"
         }
       ],
@@ -17445,6 +17693,9 @@
       "mr:0709-paulina-a-corde-iesu-agonizante": [
         {
           "name": "Paulina a Corde Iesu Agonizante",
+          "also": [
+            "Amabilis Visintainer"
+          ],
           "where": "text"
         }
       ],
@@ -17566,13 +17817,16 @@
           "where": "text"
         }
       ],
-      "mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu": [
+      "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": [
         {
           "name": "Maria Gertrudis a Sancta Sophia",
           "where": "text"
         },
         {
-          "name": "Agnes a Iesu",
+          "name": "Sylvia de Romillon",
+          "also": [
+            "Agnes a Iesu de Romillon"
+          ],
           "where": "text"
         }
       ],
@@ -17866,9 +18120,26 @@
           }
         }
       ],
-      "mr:0712-rosa-a-sancto-xaverio-et-socii": [
+      "mr:0712-magdalena-teresia-tallien-et-socii": [
         {
-          "name": "Rosa a Sancto Xaverio",
+          "name": "Magdalena Teresia Tallien",
+          "also": [
+            "Rosa a Sancto Xaverio Tallien"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Maria Cluse",
+          "also": [
+            "Martha a Bono Angelo Cluse"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Margarita Eleonora de Justamond",
+          "also": [
+            "Maria a Sancto Henríco de Justamond"
+          ],
           "where": "text"
         },
         {
@@ -17964,9 +18235,12 @@
           "where": "text"
         }
       ],
-      "mr:0713-magdalena-a-matre-dei-et-socii": [
+      "mr:0713-elisabeth-verchiere-et-socii": [
         {
-          "name": "Magdalena a Matre Dei",
+          "name": "Elisabeth Verchiere",
+          "also": [
+            "Magdalena a Matre Dei Verchiere"
+          ],
           "where": "text"
         }
       ],
@@ -18491,10 +18765,6 @@
           "where": "text"
         },
         {
-          "name": "Grimoaldus",
-          "where": "text"
-        },
-        {
           "name": "Gondulphus",
           "where": "text"
         }
@@ -18553,9 +18823,12 @@
           "where": "text"
         }
       ],
-      "mr:0716-amata-a-iesu-et-socii": [
+      "mr:0716-maria-rosa-de-gordon-et-socii": [
         {
-          "name": "Amata a Iesu",
+          "name": "Maria Rosa de Gordon",
+          "also": [
+            "Amata a Iesu de Gordon"
+          ],
           "where": "text"
         },
         {
@@ -18697,9 +18970,12 @@
           "where": "text"
         }
       ],
-      "mr:0717-teresia-a-sancto-augustino-et-socii": [
+      "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
         {
-          "name": "Teresia a Sancto Augustino",
+          "name": "Maria Magdalena Claudina Lidoine",
+          "also": [
+            "Teresia a Sancto Augustino Lidoine"
+          ],
           "where": "text"
         },
         {
@@ -18787,9 +19063,12 @@
           "where": "text"
         }
       ],
-      "mr:0717-paulus-gojdich": [
+      "mr:0717-petrus-gojdich": [
         {
-          "name": "Paulus Gojdich",
+          "name": "Petrus Gojdich",
+          "also": [
+            "Paulus Gojdich"
+          ],
           "where": "text"
         }
       ],
@@ -18865,9 +19144,12 @@
           "where": "text"
         }
       ],
-      "mr:0718-tarsicia-mackiv": [
+      "mr:0718-olga-mackiv": [
         {
-          "name": "Tarsicia Mackiv",
+          "name": "Olga Mackiv",
+          "also": [
+            "Tarsicia Mackiv"
+          ],
           "where": "text"
         }
       ],
@@ -19041,6 +19323,18 @@
         },
         {
           "name": "Rosa Kim",
+          "where": "text"
+        },
+        {
+          "name": "Anna Kim Chang-gŭm",
+          "where": "text"
+        },
+        {
+          "name": "Maria Won Kwi-im",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Baptista Yi Kwang-nyol",
           "where": "text"
         }
       ],
@@ -19276,9 +19570,12 @@
           "where": "text"
         }
       ],
-      "mr:0723-nicephorus-a-iesu-et-socii": [
+      "mr:0723-vincentius-diez-tejerina-et-socii": [
         {
-          "name": "Nicephorus a Iesu",
+          "name": "Vincentius Diez Tejerina",
+          "also": [
+            "Nicephorus a Iesu et Maria Diez Tejerina"
+          ],
           "where": "text"
         },
         {
@@ -19312,13 +19609,12 @@
           }
         }
       ],
-      "mr:0723-germanus-a-iesu-et-socii": [
+      "mr:0723-emmanuel-perez-gimenez-et-socii": [
         {
-          "name": "Germanus a Iesu",
-          "where": "text"
-        },
-        {
-          "name": "Maria Emmanuel Perez Gimenez",
+          "name": "Emmanuel Perez Gimenez",
+          "also": [
+            "Germanus a Iesu et Maria Perez Gimenez"
+          ],
           "where": "text"
         },
         {
@@ -19395,6 +19691,9 @@
       "mr:0724-sarbelius-makhluf": [
         {
           "name": "Sarbelius Makhluf",
+          "also": [
+            "Iosephus Makhluf"
+          ],
           "where": "text"
         }
       ],
@@ -19507,15 +19806,35 @@
           "where": "text"
         }
       ],
-      "mr:0724-modestinus-a-iesu-et-maria": [
+      "mr:0724-dominicus-mazzarello": [
         {
-          "name": "Modestinus a Iesu et Maria",
+          "name": "Dominicus Mazzarello",
+          "also": [
+            "Modestinus a Iesu et Maria Mazzarello"
+          ],
           "where": "text"
         }
       ],
-      "mr:0724-maria-a-columna-a-sancto-francisco-borgia-et-socii": [
+      "mr:0724-iacoba-martinez-garcia-et-socii": [
         {
-          "name": "Maria a Columna a Sancto Francisco Borgia",
+          "name": "Iacoba Martinez Garcia",
+          "also": [
+            "Maria a Columna a Sancto Francisco Borgia Martinez Garcia"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Eusebia García García",
+          "also": [
+            "Teresia a Iesu Infante García García"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Marciana Voltierra Tordesillas",
+          "also": [
+            "Maria Angela a Sancto Iosepho Voltierra Tordesillas"
+          ],
           "where": "text"
         }
       ],
@@ -19647,16 +19966,23 @@
           "where": "text"
         }
       ],
-      "mr:0725-fridericus-rubio-alvarez-et-socii": [
+      "mr:0725-carolus-rubio-alvarez-et-socii": [
         {
-          "name": "Fridericus Rubio Alvarez",
+          "name": "Carolus Rubio Alvarez",
           "also": [
-            "Fridericus Carolus Rubio Alvarez"
+            "Fridericus Rubio Alvarez"
           ],
           "where": "text"
         },
         {
           "name": "Primus Martinez de San Vicente Castillo",
+          "where": "text"
+        },
+        {
+          "name": "Eligius Delgado Pastor",
+          "also": [
+            "Ioannes a Cruce Delgado Pastor"
+          ],
           "where": "text"
         }
       ],
@@ -20032,9 +20358,12 @@
           "where": "text"
         }
       ],
-      "mr:0728-iacobus-hilarius-barbal-cosan": [
+      "mr:0728-emmanuel-barbal-cosan": [
         {
-          "name": "Iacobus Hilarius Barbal Cosan",
+          "name": "Emmanuel Barbal Cosan",
+          "also": [
+            "Iacobus Hilarius Barbal Cosan"
+          ],
           "where": "text"
         }
       ],
@@ -20048,9 +20377,12 @@
           "where": "text"
         }
       ],
-      "mr:0728-alphonsa-ab-immaculata-conceptione": [
+      "mr:0728-anna-muttathupadathu": [
         {
-          "name": "Alphonsa Ab Immaculata Conceptione",
+          "name": "Anna Muttathupadathu",
+          "also": [
+            "Alphonsa ab Immaculata Conceptione Muttathupadathu"
+          ],
           "where": "text"
         }
       ],
@@ -20270,11 +20602,11 @@
           "where": "text"
         }
       ],
-      "mr:0730-braulio-maria-corres-diaz-de-cerio-et-socii": [
+      "mr:0730-paulus-corres-diaz-de-cerio-et-socii": [
         {
-          "name": "Braulio Maria Corres Diaz de Cerio",
+          "name": "Paulus Corres Diaz de Cerio",
           "also": [
-            "Braulio Maria Paulus Corres Diaz de Cerio"
+            "Braulio Maria Corres Diaz de Cerio"
           ],
           "where": "text"
         },
@@ -20378,6 +20710,9 @@
       "mr:0730-leopoldus-mandic": [
         {
           "name": "Leopoldus Mandic",
+          "also": [
+            "Bogdanus Mandic"
+          ],
           "where": "text"
         }
       ],
@@ -20511,9 +20846,12 @@
           "where": "text"
         }
       ],
-      "mr:0731-sidonia-schelingova": [
+      "mr:0731-caecilia-schelingova": [
         {
-          "name": "Sidonia Schelingova",
+          "name": "Caecilia Schelingova",
+          "also": [
+            "Sidonia Schelingova"
+          ],
           "where": "text"
         }
       ],
@@ -20615,9 +20953,12 @@
           "where": "text"
         }
       ],
-      "mr:0801-benvenutus-de-miguel-arahal": [
+      "mr:0801-iosephus-de-miguel-arahal": [
         {
-          "name": "Benvenutus de Miguel Arahal",
+          "name": "Iosephus de Miguel Arahal",
+          "also": [
+            "Benvenutus de Miguel Arahal"
+          ],
           "where": "text"
         }
       ],
@@ -20627,9 +20968,12 @@
           "where": "text"
         }
       ],
-      "mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii": [
+      "mr:0801-adelheidis-mardosewicz-et-socii": [
         {
-          "name": "Maria Stella a Sanctissimo Sacramento",
+          "name": "Adelheidis Mardosewicz",
+          "also": [
+            "Maria Stella a Sanctissimo Sacramento Mardosewicz"
+          ],
           "where": "text"
         },
         {
@@ -21027,9 +21371,12 @@
           "where": "text"
         }
       ],
-      "mr:0806-maria-francisca-a-iesu": [
+      "mr:0806-anna-maria-rubatto": [
         {
-          "name": "Maria Francisca a Iesu",
+          "name": "Anna Maria Rubatto",
+          "also": [
+            "Maria Francisca a Iesu Rubatto"
+          ],
           "where": "text"
         }
       ],
@@ -21111,19 +21458,28 @@
           "where": "text"
         }
       ],
-      "mr:0807-agathangelus-de-vindocino-et-cassianus-de-nannetibus": [
+      "mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto": [
         {
-          "name": "Agathangelus de Vindocino",
+          "name": "Franciscus Nourry",
+          "also": [
+            "Agathangelus de Vindocino Nourry"
+          ],
           "where": "text"
         },
         {
-          "name": "Cassianus de Nannetibus",
+          "name": "Gundisalvus Vaz Lopez-Netto",
+          "also": [
+            "Cassianus de Nannetibus Vaz Lopez-Netto"
+          ],
           "where": "text"
         }
       ],
       "mr:0807-ioannes-woodcock-et-socii": [
         {
           "name": "Ioannes Woodcock",
+          "also": [
+            "Martinus a Sancto Felíce Woodcock"
+          ],
           "where": "text"
         }
       ],
@@ -21245,15 +21601,21 @@
           "where": "text"
         }
       ],
-      "mr:0808-maria-a-cruce": [
+      "mr:0808-maria-helena-mackillop": [
         {
-          "name": "Maria a Cruce",
+          "name": "Maria Helena MacKillop",
+          "also": [
+            "Maria a Cruce MacKillop"
+          ],
           "where": "text"
         }
       ],
-      "mr:0808-maria-margarita-caiani": [
+      "mr:0808-maria-anna-rosa-caiani": [
         {
-          "name": "Maria Margarita Caiani",
+          "name": "Maria Anna Rosa Caiani",
+          "also": [
+            "Maria Margarita Caiani"
+          ],
           "where": "text"
         }
       ],
@@ -21299,9 +21661,12 @@
           "where": "text"
         }
       ],
-      "mr:0809-teresia-benedicta-a-cruce": [
+      "mr:0809-editha-stein": [
         {
-          "name": "Teresia Benedicta a Cruce",
+          "name": "Editha Stein",
+          "also": [
+            "Teresia Benedicta a Cruce Stein"
+          ],
           "where": "text"
         }
       ],
@@ -21353,9 +21718,12 @@
           "where": "text"
         }
       ],
-      "mr:0809-candida-maria-a-iesu": [
+      "mr:0809-ioanna-iosepha-cipitria": [
         {
-          "name": "Candida Maria a Iesu",
+          "name": "Ioanna Iosepha Cipitria",
+          "also": [
+            "Candida Maria a Iesu Cipitria"
+          ],
           "where": "text"
         }
       ],
@@ -21423,9 +21791,12 @@
           "where": "text"
         }
       ],
-      "mr:0809-germanus-garrigues-hernandez": [
+      "mr:0809-iosephus-maria-garrigues-hernandez": [
         {
-          "name": "Germanus Garrigues Hernandez",
+          "name": "Iosephus Maria Garrigues Hernandez",
+          "also": [
+            "Germanus Garrigues Hernandez"
+          ],
           "where": "text"
         }
       ],
@@ -21561,9 +21932,12 @@
           "where": "text"
         }
       ],
-      "mr:0811-ioannes-georgius-rhem": [
+      "mr:0811-iacobus-rhem": [
         {
-          "name": "Ioannes Georgius Rhem",
+          "name": "Iacobus Rhem",
+          "also": [
+            "Ioannes Georgius Rhem"
+          ],
           "where": "text"
         }
       ],
@@ -21661,9 +22035,12 @@
           "where": "text"
         }
       ],
-      "mr:0812-flavius-argueso-gonzalez": [
+      "mr:0812-atilanus-argueso-gonzalez": [
         {
-          "name": "Flavius Argueso Gonzalez",
+          "name": "Atilanus Argueso Gonzalez",
+          "also": [
+            "Flavius Argueso Gonzalez"
+          ],
           "where": "text"
         }
       ],
@@ -21796,6 +22173,9 @@
       "mr:0813-marcus-de-aviano": [
         {
           "name": "Marcus de Aviano",
+          "also": [
+            "Carolus Dominicus Cristofori"
+          ],
           "where": "text"
         }
       ],
@@ -21805,9 +22185,12 @@
           "where": "text"
         }
       ],
-      "mr:0813-benildus-romancon": [
+      "mr:0813-petrus-romancon": [
         {
-          "name": "Benildus Romancon",
+          "name": "Petrus Romancon",
+          "also": [
+            "Benildus Romancon"
+          ],
           "where": "text"
         }
       ],
@@ -21958,6 +22341,9 @@
       "mr:0814-maximilianus-maria-kolbe": [
         {
           "name": "Maximilianus Maria Kolbe",
+          "also": [
+            "Raymundus Kolbe"
+          ],
           "where": "text"
         }
       ],
@@ -22237,15 +22623,21 @@
           "where": "text"
         }
       ],
-      "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga": [
+      "mr:0815-elvira-moragas-cantarero": [
         {
-          "name": "Maria a Sacrario a Sancto Aloysio Gonzaga",
+          "name": "Elvira Moragas Cantarero",
+          "also": [
+            "Maria a Sacrario a Sancto Aloysio Gonzaga Moragas Cantarero"
+          ],
           "where": "text"
         }
       ],
-      "mr:0815-dominicus-hurtado-soler": [
+      "mr:0815-augustinus-hurtado-soler": [
         {
-          "name": "Dominicus Hurtado Soler",
+          "name": "Augustinus Hurtado Soler",
+          "also": [
+            "Dominicus Hurtado Soler"
+          ],
           "where": "text"
         }
       ],
@@ -22267,9 +22659,12 @@
           "where": "text"
         }
       ],
-      "mr:0815-claudius-granzotto": [
+      "mr:0815-richardus-granzotto": [
         {
-          "name": "Claudius Granzotto",
+          "name": "Richardus Granzotto",
+          "also": [
+            "Claudius Granzotto"
+          ],
           "where": "text"
         }
       ],
@@ -22359,9 +22754,12 @@
           "where": "text"
         }
       ],
-      "mr:0816-petra-a-sancto-ioseph": [
+      "mr:0816-anna-iosepha-perez-florido": [
         {
-          "name": "Petra a Sancto Ioseph",
+          "name": "Anna Iosepha Perez Florido",
+          "also": [
+            "Petra a Sancto Ioseph Perez Florido"
+          ],
           "where": "text"
         }
       ],
@@ -22377,9 +22775,12 @@
           "where": "text"
         }
       ],
-      "mr:0816-gabriel-sanchis-mompo": [
+      "mr:0816-iosephus-maria-sanchis-mompo": [
         {
-          "name": "Gabriel Sanchis Mompo",
+          "name": "Iosephus Maria Sanchis Mompo",
+          "also": [
+            "Gabriel Sanchis Mompo"
+          ],
           "where": "text"
         }
       ],
@@ -23046,9 +23447,12 @@
           "where": "text"
         }
       ],
-      "mr:0822-bernardus-peroni": [
+      "mr:0822-dominicus-peroni": [
         {
-          "name": "Bernardus Peroni",
+          "name": "Dominicus Peroni",
+          "also": [
+            "Bernardus Peroni"
+          ],
           "where": "text"
         }
       ],
@@ -23130,9 +23534,12 @@
           "where": "text"
         }
       ],
-      "mr:0823-ioannes-bourdon": [
+      "mr:0823-protasius-bourdon": [
         {
-          "name": "Ioannes Bourdon",
+          "name": "Protasius Bourdon",
+          "also": [
+            "Ioannes Bourdon"
+          ],
           "where": "text"
         }
       ],
@@ -23152,19 +23559,28 @@
           "where": "text"
         }
       ],
-      "mr:0823-ioannes-maria-a-cruce": [
+      "mr:0823-marianus-garcia-mendez": [
         {
-          "name": "Ioannes Maria a Cruce",
+          "name": "Marianus Garcia Mendez",
+          "also": [
+            "Ioannes Maria a Cruce Garcia Mendez"
+          ],
           "where": "text"
         }
       ],
-      "mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero": [
+      "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": [
         {
-          "name": "Rosaria Quintana Argos",
+          "name": "Petra Maria Victoria Quintana Argos",
+          "also": [
+            "Rosaria Quintana Argos"
+          ],
           "where": "text"
         },
         {
-          "name": "Seraphina Fernandez Ibero",
+          "name": "Emmanuela Iusta Fernandez Ibero",
+          "also": [
+            "Seraphina Fernandez Ibero"
+          ],
           "where": "text"
         }
       ],
@@ -23228,9 +23644,12 @@
           "where": "text"
         }
       ],
-      "mr:0824-maria-ab-incarnatione": [
+      "mr:0824-maria-vincentia-rosal": [
         {
-          "name": "Maria Ab Incarnatione",
+          "name": "Maria Vincentia Rosal",
+          "also": [
+            "Maria ab Incarnatione Rosal"
+          ],
           "where": "text"
         }
       ],
@@ -23378,9 +23797,12 @@
           "where": "text"
         }
       ],
-      "mr:0826-maria-a-iesu-crucifixo": [
+      "mr:0826-maria-baouardy": [
         {
-          "name": "Maria a Iesu Crucifixo",
+          "name": "Maria Baouardy",
+          "also": [
+            "Maria a Iesu Crucifixo Baouardy"
+          ],
           "where": "text"
         }
       ],
@@ -23390,15 +23812,21 @@
           "where": "text"
         }
       ],
-      "mr:0826-ambrosius-valls-matamales": [
+      "mr:0826-aloysius-valls-matamales": [
         {
-          "name": "Ambrosius Valls Matamales",
+          "name": "Aloysius Valls Matamales",
+          "also": [
+            "Ambrosius Valls Matamales"
+          ],
           "where": "text"
         }
       ],
-      "mr:0826-petrus-max-ginestar": [
+      "mr:0826-alexander-max-ginestar": [
         {
-          "name": "Petrus Max Ginestar",
+          "name": "Alexander Max Ginestar",
+          "also": [
+            "Petrus Max Ginestar"
+          ],
           "where": "text"
         }
       ],
@@ -23408,9 +23836,12 @@
           "where": "text"
         }
       ],
-      "mr:0826-laurentia-harasymiv": [
+      "mr:0826-leucadia-harasymiv": [
         {
-          "name": "Laurentia Harasymiv",
+          "name": "Leucadia Harasymiv",
+          "also": [
+            "Laurentia Harasymiv"
+          ],
           "where": "text"
         }
       ],
@@ -23745,6 +24176,9 @@
       "mr:0828-iuniperus-serra": [
         {
           "name": "Iuniperus Serra",
+          "also": [
+            "Michael Serra"
+          ],
           "where": "text"
         }
       ],
@@ -23770,9 +24204,12 @@
           "where": "text"
         }
       ],
-      "mr:0828-aurelius-ample-alcaide": [
+      "mr:0828-iosephus-ample-alcaide": [
         {
-          "name": "Aurelius Ample Alcaide",
+          "name": "Iosephus Ample Alcaide",
+          "also": [
+            "Aurelius Ample Alcaide"
+          ],
           "where": "text"
         }
       ],
@@ -23885,9 +24322,12 @@
           "where": "text"
         }
       ],
-      "mr:0829-sancia-szymkowiak": [
+      "mr:0829-ioannina-szymkowiak": [
         {
-          "name": "Sancia Szymkowiak",
+          "name": "Ioannina Szymkowiak",
+          "also": [
+            "Sancia Szymkowiak"
+          ],
           "where": "text"
         }
       ],
@@ -23971,9 +24411,12 @@
           "where": "text"
         }
       ],
-      "mr:0830-ioachim-ferrer-adell": [
+      "mr:0830-iosephus-ferrer-adell": [
         {
-          "name": "Ioachim Ferrer Adell",
+          "name": "Iosephus Ferrer Adell",
+          "also": [
+            "Ioachim Ferrer Adell"
+          ],
           "where": "text"
         }
       ],
@@ -24029,11 +24472,25 @@
           "where": "text"
         }
       ],
-      "mr:0831-edmigius-primo-rodriguez-et-socii": [
+      "mr:0831-isidorus-primo-rodriguez-et-socii": [
         {
-          "name": "Edmigius Primo Rodriguez",
+          "name": "Isidorus Primo Rodriguez",
           "also": [
-            "Edmigius Isidorus Primo Rodriguez"
+            "Edmigius Primo Rodriguez"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Iustus Zariquiegui Mendoza",
+          "also": [
+            "Amalius Zariquiegui Mendoza"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Martianus Herrero Martínez",
+          "also": [
+            "Valerius Bernardus Herrero Martínez"
           ],
           "where": "text"
         }
@@ -24110,11 +24567,11 @@
           "where": "text"
         }
       ],
-      "mr:0901-christinus-roca-huguet-et-socii": [
+      "mr:0901-michael-roca-huguet-et-socii": [
         {
-          "name": "Christinus Roca Huguet",
+          "name": "Michael Roca Huguet",
           "also": [
-            "Christinus Michael Roca Huguet"
+            "Christinus Roca Huguet"
           ],
           "where": "text"
         },
@@ -25646,9 +26103,12 @@
           "where": "text"
         }
       ],
-      "mr:0904-maria": [
+      "mr:0904-dina-belanger": [
         {
-          "name": "Maria",
+          "name": "Dina Belanger",
+          "also": [
+            "Maria a sancta Caecilia Romana Belanger"
+          ],
           "where": "text"
         }
       ],
@@ -25664,9 +26124,12 @@
           "where": "text"
         }
       ],
-      "mr:0904-bernardus-bieda-grau": [
+      "mr:0904-iosephus-bieda-grau": [
         {
-          "name": "Bernardus Bieda Grau",
+          "name": "Iosephus Bieda Grau",
+          "also": [
+            "Bernardus Bieda Grau"
+          ],
           "where": "text"
         }
       ],
@@ -25740,9 +26203,14 @@
           "where": "text"
         }
       ],
-      "mr:0905-teresia-gonhxa-bojaxhiu": [
+      "mr:0905-teresia-calcuttae": [
         {
-          "name": "Teresia Gonhxa Bojaxhiu",
+          "name": "Agnes Gonxha Bojaxhiu",
+          "also": [
+            "Teresia Gonxha Bojaxhiu",
+            "Teresia Calcuttae",
+            "Mater Teresia Calcuttae"
+          ],
           "where": "text"
         }
       ],
@@ -26161,16 +26629,26 @@
           "where": "text"
         }
       ],
-      "mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii": [
+      "mr:0908-bonifatius-rodriguez-gonzalez-et-socii": [
         {
-          "name": "Iosephus Caecilius Rodriguez Gonzalez",
+          "name": "Bonifatius Rodriguez Gonzalez",
           "also": [
-            "Iosephus Caecilius Bonifatius Rodriguez Gonzalez"
+            "Iosephus Caecilius Rodriguez Gonzalez"
           ],
           "where": "text"
         },
         {
-          "name": "Theodemirus Ioachim Hadrianus Sainz Sainz",
+          "name": "Hadrianus Sainz Sainz",
+          "also": [
+            "Theodemirus Ioachim Sainz Sainz"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Eusebius Alphonsus Urjurra",
+          "also": [
+            "Eventius Richardus Urjurra"
+          ],
           "where": "text"
         }
       ],
@@ -26244,9 +26722,12 @@
           "where": "text"
         }
       ],
-      "mr:0909-maria-euthymia-uffing": [
+      "mr:0909-emma-uffing": [
         {
-          "name": "Maria Euthymia Uffing",
+          "name": "Emma Uffing",
+          "also": [
+            "Maria Euthymia Uffing"
+          ],
           "where": "text"
         }
       ],
@@ -26707,9 +27188,12 @@
           "where": "text"
         }
       ],
-      "mr:0911-bonaventura-de-barcinone": [
+      "mr:0911-michael-gran": [
         {
-          "name": "Bonaventura de Barcinone",
+          "name": "Michael Gran",
+          "also": [
+            "Bonaventura de Barcinone Gran"
+          ],
           "where": "text"
         }
       ],
@@ -26728,6 +27212,9 @@
       "mr:0911-petrus-de-alcantara": [
         {
           "name": "Petrus de Alcantara",
+          "also": [
+            "Laurentius Villanueva Larrayoz"
+          ],
           "where": "text"
         }
       ],
@@ -26883,9 +27370,12 @@
           "where": "text"
         }
       ],
-      "mr:0913-aurelius-maria-villalon-acebron": [
+      "mr:0913-benvenutus-villalon-acebron": [
         {
-          "name": "Aurelius Maria Villalon Acebron",
+          "name": "Benvenutus Villalon Acebron",
+          "also": [
+            "Aurelius Maria Villalon Acebron"
+          ],
           "where": "text"
         }
       ],
@@ -27183,17 +27673,26 @@
           "where": "text"
         }
       ],
-      "mr:0916-laureanus-ferrer-cardet-et-socii": [
+      "mr:0916-salvator-ferrer-cardet-et-socii": [
         {
-          "name": "Laureanus Ferrer Cardet",
+          "name": "Salvator Ferrer Cardet",
+          "also": [
+            "Laureanus Ferrer Cardet"
+          ],
           "where": "text"
         },
         {
-          "name": "Benedictus Emmanuel Ferrer Jorda",
+          "name": "Emmanuel Ferrer Jordá",
+          "also": [
+            "Benedictus Ferrer Jordá"
+          ],
           "where": "text"
         },
         {
-          "name": "Bernardinus Paulus Martinez Robles",
+          "name": "Paulus Martínez Robles",
+          "also": [
+            "Bernardinus Martínez Robles"
+          ],
           "where": "text"
         }
       ],
@@ -27373,13 +27872,40 @@
           "where": "text"
         }
       ],
-      "mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez": [
+      "mr:0918-salvator-chulia-ferrandis-et-socii": [
         {
-          "name": "Ambrosius Chulia Ferrandis",
+          "name": "Salvator Chulia Ferrandis",
+          "also": [
+            "Ambrosius Chulia Ferrandis"
+          ],
           "where": "text"
         },
         {
-          "name": "Valentinus Jaunzaras Gomez",
+          "name": "Vincentius Jaunzarás Gómez",
+          "also": [
+            "Valentinus Jaunzarás Gómez"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Iustus Lerma Martínez",
+          "also": [
+            "Franciscus Lerma Martínez"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Iosephus López Mora",
+          "also": [
+            "Richardus López Mora"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Vincentius Gay Zarzo",
+          "also": [
+            "Modestus Gay Zarzo"
+          ],
           "where": "text"
         }
       ],
@@ -28388,9 +28914,12 @@
           "where": "text"
         }
       ],
-      "mr:0922-ignatius-de-sandone": [
+      "mr:0922-laurentius-mauritius-belvisotti": [
         {
-          "name": "Ignatius de Sandone",
+          "name": "Laurentius Mauritius Belvisotti",
+          "also": [
+            "Ignatius de Sandone Belvisotti"
+          ],
           "where": "text"
         }
       ],
@@ -28642,9 +29171,12 @@
           "where": "text"
         }
       ],
-      "mr:0924-columba-gabriel": [
+      "mr:0924-ioanna-gabriel": [
         {
-          "name": "Columba Gabriel",
+          "name": "Ioanna Gabriel",
+          "also": [
+            "Columba Gabriel"
+          ],
           "where": "text"
         }
       ],
@@ -28736,11 +29268,18 @@
           "where": "text"
         }
       ],
-      "mr:0925-ioannes-petrus-bengoa-aranguren-et-socii": [
+      "mr:0925-iosephus-bengoa-aranguren-et-socii": [
         {
-          "name": "Ioannes Petrus Bengoa Aranguren",
+          "name": "Iosephus Bengoa Aranguren",
           "also": [
-            "Ioannes Petrus Iosephus Bengoa Aranguren"
+            "Ioannes Petrus Bengoa Aranguren"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Petrus Leoz y Portillo",
+          "also": [
+            "Paulus Maria Leoz y Portillo"
           ],
           "where": "text"
         }
@@ -28845,9 +29384,12 @@
           }
         }
       ],
-      "mr:0926-teresia-couderc": [
+      "mr:0926-maria-victoria-couderc": [
         {
-          "name": "Teresia Couderc",
+          "name": "Maria Victoria Couderc",
+          "also": [
+            "Teresia Couderc"
+          ],
           "where": "text"
         }
       ],
@@ -28863,13 +29405,19 @@
           "where": "text"
         }
       ],
-      "mr:0926-maria-a-refugio-et-maria-a-calvario": [
+      "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana": [
         {
-          "name": "Maria a Refugio",
+          "name": "Teresia Rosat Balasch",
+          "also": [
+            "Maria a Refugio Rosat Balasch"
+          ],
           "where": "text"
         },
         {
-          "name": "Maria a Calvario",
+          "name": "Iosepha Romero Clariana",
+          "also": [
+            "Maria a Calvario Romero Clariana"
+          ],
           "where": "text"
         }
       ],
@@ -28891,9 +29439,12 @@
           "where": "text"
         }
       ],
-      "mr:0926-bonaventura-esteve-flors": [
+      "mr:0926-iulius-esteve-flors": [
         {
-          "name": "Bonaventura Esteve Flors",
+          "name": "Iulius Esteve Flors",
+          "also": [
+            "Bonaventura Esteve Flors"
+          ],
           "where": "text"
         }
       ],
@@ -28903,9 +29454,12 @@
           "where": "text"
         }
       ],
-      "mr:0926-leo-legua-martus": [
+      "mr:0926-emmanuel-legua-marti": [
         {
-          "name": "Leo Legua Martus",
+          "name": "Emmanuel Legua Marti",
+          "also": [
+            "Leo Legua Marti"
+          ],
           "where": "text"
         }
       ],
@@ -29163,6 +29717,9 @@
       "mr:0928-bernardinus-de-feltria": [
         {
           "name": "Bernardinus de Feltria",
+          "also": [
+            "Martinus Tomitano"
+          ],
           "where": "text"
         }
       ],
@@ -29608,9 +30165,12 @@
           "where": "text"
         }
       ],
-      "mr:1002-maria-guadalupe-ricart-olmos": [
+      "mr:1002-maria-francisca-ricart-olmos": [
         {
-          "name": "Maria Guadalupe Ricart Olmos",
+          "name": "Maria Francisca Ricart Olmos",
+          "also": [
+            "Maria Guadalupe Ricart Olmos"
+          ],
           "where": "text"
         }
       ],
@@ -29920,9 +30480,12 @@
           "where": "text"
         }
       ],
-      "mr:1005-matthaeus-carreri": [
+      "mr:1005-ioannes-franciscus-carreri": [
         {
-          "name": "Matthaeus Carreri",
+          "name": "Ioannes Franciscus Carreri",
+          "also": [
+            "Matthaeus Carreri"
+          ],
           "where": "text"
         }
       ],
@@ -29957,6 +30520,9 @@
       "mr:1005-maria-faustina-kowalska": [
         {
           "name": "Maria Faustina Kowalska",
+          "also": [
+            "Helena Kowalska"
+          ],
           "where": "text"
         }
       ],
@@ -30032,9 +30598,12 @@
           "where": "text"
         }
       ],
-      "mr:1006-maria-francisca-a-vulneribus-domini": [
+      "mr:1006-anna-maria-gallo": [
         {
-          "name": "Maria Francisca a Vulneribus Domini",
+          "name": "Anna Maria Gallo",
+          "also": [
+            "Maria Francisca a Vulneribus Domini nostri Iesu Christi Gallo"
+          ],
           "where": "text"
         }
       ],
@@ -30047,6 +30616,9 @@
       "mr:1006-maria-rosa-durocher": [
         {
           "name": "Maria Rosa Durocher",
+          "also": [
+            "Eulalia Durocher"
+          ],
           "where": "text"
         }
       ],
@@ -30250,9 +30822,12 @@
           "where": "text"
         }
       ],
-      "mr:1009-innocentius-ab-immaculata-et-socii": [
+      "mr:1009-emmanuel-canoura-arnau-et-socii": [
         {
-          "name": "Innocentius Ab Immaculata",
+          "name": "Emmanuel Canoura Arnau",
+          "also": [
+            "Innocentius ab Immaculata Canoura Arnau"
+          ],
           "where": "text"
         },
         {
@@ -30394,9 +30969,12 @@
           "where": "text"
         }
       ],
-      "mr:1010-angela-maria-truszkowska": [
+      "mr:1010-sophia-camilla-truszkowska": [
         {
-          "name": "Angela Maria Truszkowska",
+          "name": "Sophia Camilla Truszkowska",
+          "also": [
+            "Angela Maria Truszkowska"
+          ],
           "where": "text"
         }
       ],
@@ -30513,9 +31091,12 @@
           "where": "text"
         }
       ],
-      "mr:1011-maria-desolata-torres-acosta": [
+      "mr:1011-emmanuela-torres-acosta": [
         {
-          "name": "Maria Desolata Torres Acosta",
+          "name": "Emmanuela Torres Acosta",
+          "also": [
+            "Maria Desolata Torres Acosta"
+          ],
           "where": "text"
         }
       ],
@@ -30561,9 +31142,12 @@
           "where": "text"
         }
       ],
-      "mr:1012-seraphinus-de-monte-granario": [
+      "mr:1012-felix-de-nicola": [
         {
-          "name": "Seraphinus de Monte Granario",
+          "name": "Felix de Nicola",
+          "also": [
+            "Seraphinus de Monte Granario de Nicola"
+          ],
           "where": "text"
         }
       ],
@@ -30579,9 +31163,12 @@
           "where": "text"
         }
       ],
-      "mr:1012-pacificus-salcedo-puchades": [
+      "mr:1012-petrus-salcedo-puchades": [
         {
-          "name": "Pacificus Salcedo Puchades",
+          "name": "Petrus Salcedo Puchades",
+          "also": [
+            "Pacificus Salcedo Puchades"
+          ],
           "where": "text"
         }
       ],
@@ -30997,9 +31584,12 @@
           "where": "text"
         }
       ],
-      "mr:1017-maria-natalia-a-sancto-ludovico-et-socii": [
+      "mr:1017-maria-ludovica-iosepha-vanot-et-socii": [
         {
-          "name": "Maria Natalia a Sancto Ludovico",
+          "name": "Maria Ludovica Iosepha Vanot",
+          "also": [
+            "Maria Natalia a Sancto Ludovico Vanot"
+          ],
           "where": "text"
         },
         {
@@ -31268,12 +31858,18 @@
       "mr:1020-maria-bertilla-boscardin": [
         {
           "name": "Maria Bertilla Boscardin",
+          "also": [
+            "Anna Francisca Boscardin"
+          ],
           "where": "text"
         }
       ],
-      "mr:1020-iacobus-kern": [
+      "mr:1020-franciscus-alexander-kern": [
         {
-          "name": "Iacobus Kern",
+          "name": "Franciscus Alexander Kern",
+          "also": [
+            "Iacobus Kern"
+          ],
           "where": "text"
         }
       ],
@@ -31523,9 +32119,12 @@
           "where": "text"
         }
       ],
-      "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii": [
+      "mr:1023-clotildis-iosepha-paillot-et-socii": [
         {
-          "name": "Maria Clotildis Angela a Sancto Francisco Borgia",
+          "name": "Clotildis Iosepha Paillot",
+          "also": [
+            "Maria Clotildis Angela a Sancto Francisco Borgia Paillot"
+          ],
           "where": "text"
         },
         {
@@ -31565,9 +32164,12 @@
           "where": "text"
         }
       ],
-      "mr:1023-arnoldus-reche": [
+      "mr:1023-iulianus-nicolaus-reche": [
         {
-          "name": "Arnoldus Reche",
+          "name": "Iulianus Nicolaus Reche",
+          "also": [
+            "Arnoldus Reche"
+          ],
           "where": "text"
         }
       ],
@@ -31587,11 +32189,25 @@
           "where": "text"
         }
       ],
-      "mr:1023-ambrosius-leo-lorente-vicente-et-socii": [
+      "mr:1023-petrus-lorente-vicente-et-socii": [
         {
-          "name": "Ambrosius Leo Lorente Vicente",
+          "name": "Petrus Lorente Vicente",
           "also": [
-            "Ambrosius Leo Petrus Lorente Vicente"
+            "Ambrosius Leo Lorente Vicente"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Alvarus Ibáñez Lázaro",
+          "also": [
+            "Florentius Martinus Ibáñez Lázaro"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Andrea Zorraquino Herrero",
+          "also": [
+            "Honoratus Zorraquino Herrero"
           ],
           "where": "text"
         }
@@ -31949,6 +32565,18 @@
         {
           "name": "Franciscus Serrano",
           "where": "text"
+        },
+        {
+          "name": "Ioachim Royo",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Alcober",
+          "where": "text"
+        },
+        {
+          "name": "Franciscus Diaz del Rincón",
+          "where": "text"
         }
       ],
       "mr:1028-ioannes-dat": [
@@ -32298,10 +32926,6 @@
       "mr:1102-carterius-et-socii": [
         {
           "name": "Carterius",
-          "where": "text"
-        },
-        {
-          "name": "Tobias",
           "where": "text"
         },
         {
@@ -32892,9 +33516,12 @@
           "where": "text"
         }
       ],
-      "mr:1108-maria-crucifixa-satellico": [
+      "mr:1108-elisabeth-maria-satellico": [
         {
-          "name": "Maria Crucifixa Satellico",
+          "name": "Elisabeth Maria Satellico",
+          "also": [
+            "Maria Crucifixa Satellico"
+          ],
           "where": "text"
         }
       ],
@@ -33125,6 +33752,9 @@
       "mr:1112-iosaphat-kuncewicz": [
         {
           "name": "Iosaphat Kuncewicz",
+          "also": [
+            "Ioannes Kuncewicz"
+          ],
           "where": "text"
         }
       ],
@@ -33308,9 +33938,12 @@
           "where": "text"
         }
       ],
-      "mr:1113-augustina-pietrantoni": [
+      "mr:1113-livia-pietrantoni": [
         {
-          "name": "Augustina Pietrantoni",
+          "name": "Livia Pietrantoni",
+          "also": [
+            "Augustina Pietrantoni"
+          ],
           "where": "text"
         }
       ],
@@ -33329,6 +33962,20 @@
       "mr:1113-petrus-vicev-et-socii": [
         {
           "name": "Petrus Vicev",
+          "where": "text"
+        },
+        {
+          "name": "Iosephus Džidžov",
+          "also": [
+            "Paulus Džidžov"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Robertus Matthaeus Šiškov",
+          "also": [
+            "Robertus Iosaphat Šiškov"
+          ],
           "where": "text"
         }
       ],
@@ -33527,15 +34174,21 @@
           "where": "text"
         }
       ],
-      "mr:1115-maria-a-passione": [
+      "mr:1115-helena-de-chappotin-de-neuville": [
         {
-          "name": "Maria a Passione",
+          "name": "Helena de Chappotin de Neuville",
+          "also": [
+            "Maria a Passione de Chappotin de Neuville"
+          ],
           "where": "text"
         }
       ],
-      "mr:1115-raphael-kalinowski": [
+      "mr:1115-iosephus-kalinowski": [
         {
-          "name": "Raphael Kalinowski",
+          "name": "Iosephus Kalinowski",
+          "also": [
+            "Raphael a Sancto Ioseph Kalinowski"
+          ],
           "where": "text"
         }
       ],
@@ -33775,9 +34428,12 @@
           "where": "text"
         }
       ],
-      "mr:1118-grimoaldus-a-purificatione": [
+      "mr:1118-ferdinandus-santamaria": [
         {
-          "name": "Grimoaldus a Purificatione",
+          "name": "Ferdinandus Santamaria",
+          "also": [
+            "Grimoaldus a Purificatione Santamaria"
+          ],
           "where": "text"
         }
       ],
@@ -33787,9 +34443,12 @@
           "where": "text"
         }
       ],
-      "mr:1118-maria-a-refugio-et-socii": [
+      "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": [
         {
-          "name": "Maria a Refugio",
+          "name": "Maria Gabriela Hinojosa y Naveros",
+          "also": [
+            "Maria a Refugio Hinojosa y Naveros"
+          ],
           "where": "text"
         },
         {
@@ -33967,15 +34626,21 @@
           "where": "text"
         }
       ],
-      "mr:1120-maria-fortunata-vitus": [
+      "mr:1120-anna-felicis-viti": [
         {
-          "name": "Maria Fortunata Vitus",
+          "name": "Anna Felicis Viti",
+          "also": [
+            "Maria Fortunata Viti"
+          ],
           "where": "text"
         }
       ],
-      "mr:1120-angela-a-sancto-ioseph-et-socii": [
+      "mr:1120-francisca-lloret-marti-et-socii": [
         {
-          "name": "Angela a Sancto Ioseph",
+          "name": "Francisca Lloret Marti",
+          "also": [
+            "Angela a Sancto Ioseph Lloret Marti"
+          ],
           "where": "text"
         },
         {
@@ -34105,9 +34770,12 @@
           "where": "text"
         }
       ],
-      "mr:1121-maria-a-iesu-bono-pastore": [
+      "mr:1121-francisca-de-siedliska": [
         {
-          "name": "Maria a Iesu Bono Pastore",
+          "name": "Francisca de Siedliska",
+          "also": [
+            "Maria a Iesu Bono Pastore de Siedliska"
+          ],
           "where": "text"
         }
       ],
@@ -34195,13 +34863,19 @@
           "where": "text"
         }
       ],
-      "mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner": [
+      "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner": [
         {
-          "name": "Elias Torrijo Sanchez",
+          "name": "Iulianus Torrijo Sanchez",
+          "also": [
+            "Elias Torrijo Sanchez"
+          ],
           "where": "text"
         },
         {
-          "name": "Bertrandus Lahoz Moliner",
+          "name": "Franciscus Lahoz Moliner",
+          "also": [
+            "Bertrandus Lahoz Moliner"
+          ],
           "where": "text"
         }
       ],
@@ -34289,9 +34963,12 @@
           "where": "text"
         }
       ],
-      "mr:1123-maria-caecilia-cendoya-y-araquistain": [
+      "mr:1123-maria-felicitas-cendoya-y-araquistain": [
         {
-          "name": "Maria Caecilia Cendoya y Araquistain",
+          "name": "Maria Felicitas Cendoya y Araquistain",
+          "also": [
+            "Maria Caecilia Cendoya y Araquistain"
+          ],
           "where": "text"
         }
       ],
@@ -35246,9 +35923,12 @@
           "where": "text"
         }
       ],
-      "mr:1126-humilis-pirozzo": [
+      "mr:1126-lucas-antonius-pirozzo": [
         {
-          "name": "Humilis Pirozzo",
+          "name": "Lucas Antonius Pirozzo",
+          "also": [
+            "Humilis Pirozzo"
+          ],
           "where": "text"
         }
       ],
@@ -35356,9 +36036,12 @@
           "where": "text"
         }
       ],
-      "mr:1127-bernardinus-de-fossa": [
+      "mr:1127-ioannes-amici": [
         {
-          "name": "Bernardinus de Fossa",
+          "name": "Ioannes Amici",
+          "also": [
+            "Bernardinus de Fossa Amici"
+          ],
           "where": "text"
         }
       ],
@@ -35480,11 +36163,11 @@
           "where": "text"
         }
       ],
-      "mr:1128-ioannes-iesu-adradas-gonzalo-et-socii": [
+      "mr:1128-marianus-adradas-gonzalo-et-socii": [
         {
-          "name": "Ioannes Iesu Adradas Gonzalo",
+          "name": "Marianus Adradas Gonzalo",
           "also": [
-            "Ioannes Iesu Marianus Adradas Gonzalo"
+            "Ioannes Iesu Adradas Gonzalo"
           ],
           "where": "text"
         },
@@ -35627,13 +36310,19 @@
           "where": "text"
         }
       ],
-      "mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce": [
+      "mr:1129-petrus-berthelot-et-thomas-rodriguez": [
         {
-          "name": "Dionysius a Nativitate",
+          "name": "Petrus Berthelot",
+          "also": [
+            "Dionysius a Nativitate Berthelot"
+          ],
           "where": "text"
         },
         {
-          "name": "Redemptus a Cruce",
+          "name": "Thomas Rodriguez",
+          "also": [
+            "Redemptus a Cruce Rodriguez"
+          ],
           "where": "text"
         }
       ],
@@ -35835,9 +36524,12 @@
           "where": "text"
         }
       ],
-      "mr:1201-liduina-meneguzzi": [
+      "mr:1201-helisa-angela-meneguzzi": [
         {
-          "name": "Liduina Meneguzzi",
+          "name": "Helisa Angela Meneguzzi",
+          "also": [
+            "Liduina Meneguzzi"
+          ],
           "where": "text"
         }
       ],
@@ -35889,9 +36581,12 @@
           "where": "text"
         }
       ],
-      "mr:1202-raphael-chylinski": [
+      "mr:1202-melchior-chylinski": [
         {
-          "name": "Raphael Chylinski",
+          "name": "Melchior Chylinski",
+          "also": [
+            "Raphael Chylinski"
+          ],
           "where": "text"
         }
       ],
@@ -36221,9 +36916,12 @@
           "where": "text"
         }
       ],
-      "mr:1207-maria-iosepha-rossello": [
+      "mr:1207-benedicta-rossello": [
         {
-          "name": "Maria Iosepha Rossello",
+          "name": "Benedicta Rossello",
+          "also": [
+            "Maria Iosepha Rossello"
+          ],
           "where": "text"
         }
       ],
@@ -36335,9 +37033,12 @@
           "where": "text"
         }
       ],
-      "mr:1209-bernardus-maria-a-iesu": [
+      "mr:1209-caesar-silvestrelli": [
         {
-          "name": "Bernardus Maria a Iesu",
+          "name": "Caesar Silvestrelli",
+          "also": [
+            "Bernardus Maria a Iesu Silvestrelli"
+          ],
           "where": "text"
         }
       ],
@@ -36649,9 +37350,12 @@
           "where": "text"
         }
       ],
-      "mr:1213-ioannes-marinoni": [
+      "mr:1213-franciscus-marinoni": [
         {
-          "name": "Ioannes Marinoni",
+          "name": "Franciscus Marinoni",
+          "also": [
+            "Ioannes Marinoni"
+          ],
           "where": "text"
         }
       ],
@@ -36797,9 +37501,12 @@
           "where": "text"
         }
       ],
-      "mr:1214-protasius-cubells-minguell": [
+      "mr:1214-antonius-cubells-minguell": [
         {
-          "name": "Protasius Cubells Minguell",
+          "name": "Antonius Cubells Minguell",
+          "also": [
+            "Protasius Cubells Minguell"
+          ],
           "where": "text"
         }
       ],
@@ -36881,15 +37588,21 @@
           "where": "text"
         }
       ],
-      "mr:1216-sebastianus-de-madiis": [
+      "mr:1216-salvaticus-de-madiis": [
         {
-          "name": "Sebastianus de Madiis",
+          "name": "Salvaticus de Madiis",
+          "also": [
+            "Sebastianus de Madiis"
+          ],
           "where": "text"
         }
       ],
-      "mr:1216-maria-ab-angelis": [
+      "mr:1216-marianna-fontanella": [
         {
-          "name": "Maria Ab Angelis",
+          "name": "Marianna Fontanella",
+          "also": [
+            "Maria ab Angelis Fontanella"
+          ],
           "where": "text"
         }
       ],
@@ -36899,9 +37612,12 @@
           "where": "text"
         }
       ],
-      "mr:1216-honoratus-kazminsky": [
+      "mr:1216-florentius-kazminsky": [
         {
-          "name": "Honoratus Kazminsky",
+          "name": "Florentius Kazminsky",
+          "also": [
+            "Honoratus de Biała Podlaska Kazminsky"
+          ],
           "where": "text"
         }
       ],
@@ -37267,9 +37983,12 @@
           "where": "text"
         }
       ],
-      "mr:1217-hyacinthus-cormier": [
+      "mr:1217-henricus-cormier": [
         {
-          "name": "Hyacinthus Cormier",
+          "name": "Henricus Cormier",
+          "also": [
+            "Hyacinthus Cormier"
+          ],
           "where": "text"
         }
       ],
@@ -37313,9 +38032,12 @@
           "where": "text"
         }
       ],
-      "mr:1218-nemesia-valle": [
+      "mr:1218-iulia-valle": [
         {
-          "name": "Nemesia Valle",
+          "name": "Iulia Valle",
+          "also": [
+            "Nemesia Valle"
+          ],
           "where": "text"
         }
       ],
@@ -37577,15 +38299,21 @@
           "where": "text"
         }
       ],
-      "mr:1224-paula-elisabeth-cerioli": [
+      "mr:1224-constantia-cerioli": [
         {
-          "name": "Paula Elisabeth Cerioli",
+          "name": "Constantia Cerioli",
+          "also": [
+            "Paula Elisabeth Cerioli"
+          ],
           "where": "text"
         }
       ],
       "mr:1224-sarbelius-makhluf": [
         {
           "name": "Sarbelius Makhluf",
+          "also": [
+            "Iosephus Makhluf"
+          ],
           "where": "text"
         }
       ],
@@ -37629,15 +38357,21 @@
           "where": "text"
         }
       ],
-      "mr:1225-maria-ab-apostolis": [
+      "mr:1225-maria-teresia-von-wullenweber": [
         {
-          "name": "Maria Ab Apostolis",
+          "name": "Maria Teresia von Wullenweber",
+          "also": [
+            "Maria ab Apostolis von Wullenweber"
+          ],
           "where": "text"
         }
       ],
       "mr:1225-albertus-chmielowski": [
         {
           "name": "Albertus Chmielowski",
+          "also": [
+            "Adamus Chmielowski"
+          ],
           "where": "text"
         }
       ],

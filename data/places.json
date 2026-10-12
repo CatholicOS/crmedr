@@ -210,7 +210,7 @@
         "source": "lead"
       }
     ],
-    "mr:0102-maria-anna-soureau-blondin": [
+    "mr:0102-maria-stella-soureau-blondin": [
       {
         "role": "death",
         "la": "In civitáte Lachine in Quebecénsi província Cánadæ",
@@ -345,14 +345,6 @@
         "source": "lead"
       }
     ],
-    "mr:0104-christiana-menabuoi": [
-      {
-        "role": "death",
-        "la": "In Sancta Cruce Vallis Arni in Etrúria",
-        "it": "A Santa Croce in Val d’Arno in Toscana",
-        "source": "lead"
-      }
-    ],
     "mr:0104-elisabeth-anna-seton": [
       {
         "role": "death",
@@ -393,6 +385,14 @@
         "source": "lead"
       }
     ],
+    "mr:0104-oringa-menabuoi": [
+      {
+        "role": "death",
+        "la": "In Sancta Cruce Vallis Arni in Etrúria",
+        "it": "A Santa Croce in Val d’Arno in Toscana",
+        "source": "lead"
+      }
+    ],
     "mr:0104-pharaildis": [
       {
         "role": "death",
@@ -430,14 +430,6 @@
         "role": "cult",
         "la": "Romæ",
         "it": "A Roma",
-        "source": "lead"
-      }
-    ],
-    "mr:0105-carolus-a-sancto-andrea": [
-      {
-        "role": "death",
-        "la": "Eblánæ in Hibérnia",
-        "it": "A Dublino in Irlanda",
         "source": "lead"
       }
     ],
@@ -486,6 +478,14 @@
         "role": "death",
         "la": "Prope Falcobúrgum in regióne Limburgénsi",
         "it": "Vicino a Valkenburg nella regione del Limburg, nell’odierna Olanda",
+        "source": "lead"
+      }
+    ],
+    "mr:0105-ioannes-andreas-houben": [
+      {
+        "role": "death",
+        "la": "Eblánæ in Hibérnia",
+        "it": "A Dublino in Irlanda",
         "source": "lead"
       }
     ],
@@ -657,6 +657,14 @@
         "source": "lead"
       }
     ],
+    "mr:0107-ioanna-haze": [
+      {
+        "role": "death",
+        "la": "Leódii in Bélgio",
+        "it": "A Liegi in Belgio",
+        "source": "lead"
+      }
+    ],
     "mr:0107-iosephus-tuan": [
       {
         "role": "death",
@@ -670,14 +678,6 @@
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
         "it": "A Nicomedia in Bitinia, nell’odierna Turchia",
-        "source": "lead"
-      }
-    ],
-    "mr:0107-maria-teresia-haze": [
-      {
-        "role": "death",
-        "la": "Leódii in Bélgio",
-        "it": "A Liegi in Belgio",
         "source": "lead"
       }
     ],
@@ -833,6 +833,14 @@
         "source": "lead"
       }
     ],
+    "mr:0109-alexia-le-clerc": [
+      {
+        "role": "death",
+        "la": "Nancéii in Gállia",
+        "it": "A Nancy in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0109-antonius-fatati": [
       {
         "role": "death",
@@ -897,14 +905,6 @@
         "source": "lead"
       }
     ],
-    "mr:0109-maria-teresia-a-iesu": [
-      {
-        "role": "death",
-        "la": "Nancéii in Gállia",
-        "it": "A Nancy in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0110-aegidius-di-bello": [
       {
         "role": "death",
@@ -953,14 +953,6 @@
         "source": "lead"
       }
     ],
-    "mr:0110-francisca-salesia-aviat": [
-      {
-        "role": "death",
-        "la": "Perúsiæ in Itália",
-        "it": "A Perugia",
-        "source": "lead"
-      }
-    ],
     "mr:0110-gregorius-nyssenus": [
       {
         "role": "death",
@@ -998,6 +990,14 @@
         "role": "death",
         "la": "Hierosólymæ",
         "it": "A Gerusalemme",
+        "source": "lead"
+      }
+    ],
+    "mr:0110-leonia-aviat": [
+      {
+        "role": "death",
+        "la": "Perúsiæ in Itália",
+        "it": "A Perugia",
         "source": "lead"
       }
     ],
@@ -1062,6 +1062,14 @@
         "role": "death",
         "la": "Cátanæ in Sicília",
         "it": "A Catania",
+        "source": "lead"
+      }
+    ],
+    "mr:0111-franciscus-antonius-placidi": [
+      {
+        "role": "death",
+        "la": "In vico Bellegra in Látio Itáliæ",
+        "it": "A Bellegra nel Lazio",
         "source": "lead"
       }
     ],
@@ -1134,14 +1142,6 @@
         "role": "death",
         "la": "In erémo Iudǽæ",
         "it": "In un eremo della Giudea",
-        "source": "lead"
-      }
-    ],
-    "mr:0111-thomas-de-cora": [
-      {
-        "role": "death",
-        "la": "In vico Bellegra in Látio Itáliæ",
-        "it": "A Bellegra nel Lazio",
         "source": "lead"
       }
     ],
@@ -1745,14 +1745,6 @@
         "source": "lead"
       }
     ],
-    "mr:0118-christina-ciccarelli": [
-      {
-        "role": "death",
-        "la": "Aquilæ in Aprútio",
-        "it": "A L’Aquila",
-        "source": "lead"
-      }
-    ],
     "mr:0118-cosconius-et-socii": [
       {
         "role": "death",
@@ -1793,11 +1785,19 @@
         "source": "lead"
       }
     ],
-    "mr:0118-maria-teresia-fasce": [
+    "mr:0118-maria-ioanna-fasce": [
       {
         "role": "death",
         "la": "Cássiæ in Itália",
         "it": "A Cascia in Umbria",
+        "source": "lead"
+      }
+    ],
+    "mr:0118-matthia-ciccarelli": [
+      {
+        "role": "death",
+        "la": "Aquilæ in Aprútio",
+        "it": "A L’Aquila",
         "source": "lead"
       }
     ],
@@ -1913,6 +1913,14 @@
         "source": "lead"
       }
     ],
+    "mr:0120-adalheidis-brando": [
+      {
+        "role": "death",
+        "la": "Casáureæ prope Neápolim in Campánia Itáliæ",
+        "it": "A Casoria vicino a Napoli",
+        "source": "lead"
+      }
+    ],
     "mr:0120-ascla": [
       {
         "role": "death",
@@ -1926,14 +1934,6 @@
         "role": "death",
         "la": "Coltibóni in Etrúria",
         "it": "A Coltibuono in Toscana",
-        "source": "lead"
-      }
-    ],
-    "mr:0120-cyprianus-iwene-tansi": [
-      {
-        "role": "death",
-        "la": "In monastério Montis Sancti Bernárdi apud Licéstriam in Anglia",
-        "it": "Nel monastero di Mount Saint Bernard presso Leicester in Inghilterra",
         "source": "lead"
       }
     ],
@@ -1961,11 +1961,11 @@
         "source": "lead"
       }
     ],
-    "mr:0120-maria-christina-ab-immaculata": [
+    "mr:0120-michael-iwene-tansi": [
       {
         "role": "death",
-        "la": "Casáureæ prope Neápolim in Campánia Itáliæ",
-        "it": "A Casoria vicino a Napoli",
+        "la": "In monastério Montis Sancti Bernárdi apud Licéstriam in Anglia",
+        "it": "Nel monastero di Mount Saint Bernard presso Leicester in Inghilterra",
         "source": "lead"
       }
     ],
@@ -2265,6 +2265,14 @@
         "source": "lead"
       }
     ],
+    "mr:0124-iosephus-giaccardo": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
+        "source": "lead"
+      }
+    ],
     "mr:0124-maria-poussepin": [
       {
         "role": "death",
@@ -2286,14 +2294,6 @@
         "role": "death",
         "la": "In pago Trecénsi in Gállia Lugdunénsi",
         "it": "Nel territorio di Troyes in Gallia Lugdunense, nell’odierna Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0124-timotheus-giaccardo": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -2329,19 +2329,19 @@
         "source": "lead"
       }
     ],
-    "mr:0125-archangela-girlani": [
-      {
-        "role": "death",
-        "la": "Mántuæ in Langobárdia",
-        "it": "A Mantova",
-        "source": "lead"
-      }
-    ],
     "mr:0125-arthemas": [
       {
         "role": "death",
         "la": "Putéolis in Campánia",
         "it": "A Pozzuoli in Campania",
+        "source": "lead"
+      }
+    ],
+    "mr:0125-eleonora-girlani": [
+      {
+        "role": "death",
+        "la": "Mántuæ in Langobárdia",
+        "it": "A Mantova",
         "source": "lead"
       }
     ],
@@ -2369,14 +2369,6 @@
         "source": "lead"
       }
     ],
-    "mr:0125-maria-antonia-grillo": [
-      {
-        "role": "death",
-        "la": "Alexandríæ in Itália",
-        "it": "Ad Alessandria",
-        "source": "lead"
-      }
-    ],
     "mr:0125-palaemon": [
       {
         "role": "death",
@@ -2401,6 +2393,14 @@
         "source": "lead"
       }
     ],
+    "mr:0125-teresia-grillo": [
+      {
+        "role": "death",
+        "la": "Alexandríæ in Itália",
+        "it": "Ad Alessandria",
+        "source": "lead"
+      }
+    ],
     "mr:0126-albericus": [
       {
         "role": "death",
@@ -2409,7 +2409,7 @@
         "source": "lead"
       }
     ],
-    "mr:0126-augustinus-erlandsson": [
+    "mr:0126-eystein-erlandsson": [
       {
         "role": "death",
         "la": "Nidarósiæ in Norvégia",
@@ -2617,7 +2617,7 @@
         "source": "lead"
       }
     ],
-    "mr:0128-olympia-bida": [
+    "mr:0128-olga-bida": [
       {
         "role": "death",
         "la": "In campo detentiónis óppidi Kharsk prope Tomíscum in Sibiriána Rússiæ província",
@@ -2721,6 +2721,14 @@
         "source": "lead"
       }
     ],
+    "mr:0130-aloysius-wiaux": [
+      {
+        "role": "death",
+        "la": "Malónnæ in Bélgio",
+        "it": "A Malonne in Belgio",
+        "source": "lead"
+      }
+    ],
     "mr:0130-armentarius": [
       {
         "role": "death",
@@ -2798,14 +2806,6 @@
         "role": "death",
         "la": "Hierosólymæ",
         "it": "A Gerusalemme",
-        "source": "lead"
-      }
-    ],
-    "mr:0130-mucianus-maria-wiaux": [
-      {
-        "role": "death",
-        "la": "Malónnæ in Bélgio",
-        "it": "A Malonne in Belgio",
         "source": "lead"
       }
     ],
@@ -2961,6 +2961,14 @@
         "source": "lead"
       }
     ],
+    "mr:0201-anna-michelotti": [
+      {
+        "role": "death",
+        "la": "Augústæ Taurinórum in Itália",
+        "it": "A Torino",
+        "source": "lead"
+      }
+    ],
     "mr:0201-brigida": [
       {
         "role": "death",
@@ -2982,14 +2990,6 @@
         "role": "death",
         "la": "Londínii in Anglia",
         "it": "A Londra in Inghilterra",
-        "source": "lead"
-      }
-    ],
-    "mr:0201-ioanna-francisca-a-visitatione": [
-      {
-        "role": "death",
-        "la": "Augústæ Taurinórum in Itália",
-        "it": "A Torino",
         "source": "lead"
       }
     ],
@@ -3209,6 +3209,14 @@
         "source": "lead"
       }
     ],
+    "mr:0203-claudina-thevenet": [
+      {
+        "role": "death",
+        "la": "Lugdúni in Gállia",
+        "it": "A Lione in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0203-helinandus": [
       {
         "role": "cult",
@@ -3234,14 +3242,6 @@
       }
     ],
     "mr:0203-lupicinus": [
-      {
-        "role": "death",
-        "la": "Lugdúni in Gállia",
-        "it": "A Lione in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0203-maria-a-sancto-ignatio": [
       {
         "role": "death",
         "la": "Lugdúni in Gállia",
@@ -3617,11 +3617,28 @@
         "source": "lead"
       }
     ],
+    "mr:0207-eugenia-smet": [
+      {
+        "role": "death",
+        "la": "Parísiis in Gállia",
+        "it": "A Parigi in Francia",
+        "source": "lead",
+        "via": "mr:0207-ioanna-maria-rendu"
+      }
+    ],
     "mr:0207-iacobus-sales-et-gulielmus-saultemouche": [
       {
         "role": "death",
         "la": "Albenáci in Vivariénsi Gálliæ província",
         "it": "Ad Aubenas nel territorio di Viviers in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0207-ioanna-maria-rendu": [
+      {
+        "role": "death",
+        "la": "Parísiis in Gállia",
+        "it": "A Parigi in Francia",
         "source": "lead"
       }
     ],
@@ -3655,15 +3672,6 @@
         "la": "Soterióne in Phócide",
         "it": "A Stiri nella Focide, in Grecia",
         "source": "lead"
-      }
-    ],
-    "mr:0207-maria-a-providentia": [
-      {
-        "role": "death",
-        "la": "Parísiis in Gállia",
-        "it": "A Parigi in Francia",
-        "source": "lead",
-        "via": "mr:0207-rosalia-rendu"
       }
     ],
     "mr:0207-maximus": [
@@ -3719,14 +3727,6 @@
         "role": "burial",
         "la": "Lucæ in Etrúria",
         "it": "A Lucca",
-        "source": "lead"
-      }
-    ],
-    "mr:0207-rosalia-rendu": [
-      {
-        "role": "death",
-        "la": "Parísiis in Gállia",
-        "it": "A Parigi in Francia",
         "source": "lead"
       }
     ],
@@ -3834,19 +3834,19 @@
         "source": "lead"
       }
     ],
+    "mr:0209-franciscus-aloysius-febres-cordero": [
+      {
+        "role": "death",
+        "la": "Primiliáni ad Mare prope Barcinónem in Hispánia",
+        "it": "A Premiá de Mar presso Barcellona in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0209-maro": [
       {
         "role": "death",
         "la": "In monte prope Apaméam in Sýria",
         "it": "Su un monte presso Apamea in Siria",
-        "source": "lead"
-      }
-    ],
-    "mr:0209-michael-febres-cordero": [
-      {
-        "role": "death",
-        "la": "Primiliáni ad Mare prope Barcinónem in Hispánia",
-        "it": "A Premiá de Mar presso Barcellona in Spagna",
         "source": "lead"
       }
     ],
@@ -4002,6 +4002,14 @@
         "source": "lead"
       }
     ],
+    "mr:0211-franciscus-borras-romeu": [
+      {
+        "role": "death",
+        "la": "In loco Vinaroz in Castélla Hispániæ regióne",
+        "it": "In località Vinaroz nella Castiglia in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0211-gregorius-ii": [
       {
         "role": "burial",
@@ -4048,14 +4056,6 @@
         "role": "death",
         "la": "Romæ via Appia in cœmetério eius nómine dicáto",
         "it": "A Roma sulla via Appia nel cimitero che ne porta oggi il nome",
-        "source": "lead"
-      }
-    ],
-    "mr:0211-tobias-borras-romeu": [
-      {
-        "role": "death",
-        "la": "In loco Vinaroz in Castélla Hispániæ regióne",
-        "it": "In località Vinaroz nella Castiglia in Spagna",
         "source": "lead"
       }
     ],
@@ -4107,6 +4107,14 @@
         "source": "lead"
       }
     ],
+    "mr:0213-augustina-camozzi": [
+      {
+        "role": "death",
+        "la": "Spoléti in Umbria",
+        "it": "A Spoleto in Umbria",
+        "source": "lead"
+      }
+    ],
     "mr:0213-benignus": [
       {
         "role": "death",
@@ -4120,22 +4128,6 @@
         "role": "death",
         "la": "Cardóne ad Moséllam in território Trevirórum",
         "it": "A Karden lungo la Mosella nel territorio di Treviri, in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:0213-christina-camozzi": [
-      {
-        "role": "death",
-        "la": "Spoléti in Umbria",
-        "it": "A Spoleto in Umbria",
-        "source": "lead"
-      }
-    ],
-    "mr:0213-eustochius-bellinus": [
-      {
-        "role": "death",
-        "la": "Patávii in Venétia",
-        "it": "A Padova",
         "source": "lead"
       }
     ],
@@ -4176,6 +4168,14 @@
         "role": "death",
         "la": "Prope Ptolemáidem in Palæstína",
         "it": "Vicino a Tolemaide, oggi Akko, in Palestina",
+        "source": "lead"
+      }
+    ],
+    "mr:0213-lucretia-bellini": [
+      {
+        "role": "death",
+        "la": "Patávii in Venétia",
+        "it": "A Padova",
         "source": "lead"
       }
     ],
@@ -4515,6 +4515,14 @@
         "source": "lead"
       }
     ],
+    "mr:0218-catharina-comensoli": [
+      {
+        "role": "death",
+        "la": "Bérgomi in Itália",
+        "it": "A Bergamo",
+        "source": "lead"
+      }
+    ],
     "mr:0218-franciscus-regis-clet": [
       {
         "role": "death",
@@ -4528,14 +4536,6 @@
         "role": "death",
         "la": "Rosícæ in Polónia",
         "it": "A Rosica in Polonia",
-        "source": "lead"
-      }
-    ],
-    "mr:0218-gertrudis-comensoli": [
-      {
-        "role": "death",
-        "la": "Bérgomi in Itália",
-        "it": "A Bergamo",
         "source": "lead"
       }
     ],
@@ -4747,19 +4747,19 @@
         "source": "lead"
       }
     ],
+    "mr:0221-anna-catharina-dominici": [
+      {
+        "role": "death",
+        "la": "Augústæ Taurinórum in Subalpínis",
+        "it": "A Torino",
+        "source": "lead"
+      }
+    ],
     "mr:0221-germanus": [
       {
         "role": "death",
         "la": "In monastério Grandivallénsi apud Helvétios",
         "it": "Nel monastero di Grandfelt nell’odierna Svizzera",
-        "source": "lead"
-      }
-    ],
-    "mr:0221-maria-henrica-dominicus": [
-      {
-        "role": "death",
-        "la": "Augústæ Taurinórum in Subalpínis",
-        "it": "A Torino",
         "source": "lead"
       }
     ],
@@ -4788,6 +4788,14 @@
         "source": "lead"
       }
     ],
+    "mr:0222-aemilia-d-oultremont": [
+      {
+        "role": "death",
+        "la": "Floréntiæ in Etrúria",
+        "it": "A Firenze",
+        "source": "lead"
+      }
+    ],
     "mr:0222-didacus-carvalho": [
       {
         "role": "death",
@@ -4809,14 +4817,6 @@
         "role": "death",
         "la": "Cortónæ in Etrúria",
         "it": "A Cortona in Toscana",
-        "source": "lead"
-      }
-    ],
-    "mr:0222-maria-a-iesu": [
-      {
-        "role": "death",
-        "la": "Floréntiæ in Etrúria",
-        "it": "A Firenze",
         "source": "lead"
       }
     ],
@@ -4860,7 +4860,7 @@
         "source": "lead"
       }
     ],
-    "mr:0223-iosephina-vannini": [
+    "mr:0223-iuditta-adelheidis-vannini": [
       {
         "role": "death",
         "la": "Romæ",
@@ -5036,7 +5036,7 @@
         "source": "lead"
       }
     ],
-    "mr:0225-maria-adeodata-pisani": [
+    "mr:0225-maria-teresia-pisani": [
       {
         "role": "death",
         "la": "In vico Mdina ínsulæ Meliténsis",
@@ -5116,14 +5116,6 @@
         "source": "lead"
       }
     ],
-    "mr:0226-pietas-a-cruce": [
-      {
-        "role": "death",
-        "la": "Alcantaríola prope Múrtiam in Hispánia",
-        "it": "Ad Alcantarilla vicino a Murcia in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0226-porphyrius": [
       {
         "role": "death",
@@ -5137,6 +5129,14 @@
         "role": "death",
         "la": "Londínii in Anglia",
         "it": "A Londra in Inghilterra",
+        "source": "lead"
+      }
+    ],
+    "mr:0226-thomasina-ortiz-real": [
+      {
+        "role": "death",
+        "la": "Alcantaríola prope Múrtiam in Hispánia",
+        "it": "Ad Alcantarilla vicino a Murcia in Spagna",
         "source": "lead"
       }
     ],
@@ -5179,6 +5179,14 @@
         "it": "Ad Alessandria d’Egitto",
         "source": "lead",
         "via": "mr:0227-iulianus-et-eunus"
+      }
+    ],
+    "mr:0227-carolina-brader": [
+      {
+        "role": "death",
+        "la": "Pasti in Colúmbia",
+        "it": "A Pasto in Colombia",
+        "source": "lead"
       }
     ],
     "mr:0227-francisca-anna-a-virgine-perdolenti": [
@@ -5234,14 +5242,6 @@
         "role": "death",
         "la": "Messánæ in Sicília",
         "it": "A Messina",
-        "source": "lead"
-      }
-    ],
-    "mr:0227-maria-a-caritate-spiritus-sancti": [
-      {
-        "role": "death",
-        "la": "Pasti in Colúmbia",
-        "it": "A Pasto in Colombia",
         "source": "lead"
       }
     ],
@@ -5508,7 +5508,15 @@
         "source": "lead"
       }
     ],
-    "mr:0303-innocentius-de-berzo": [
+    "mr:0303-ignatia-verzeri": [
+      {
+        "role": "death",
+        "la": "Bríxiæ in Langobárdia",
+        "it": "A Brescia",
+        "source": "lead"
+      }
+    ],
+    "mr:0303-ioannes-scalvinoni": [
       {
         "role": "death",
         "la": "Bérgomi item in Langobárdia Itáliæ",
@@ -5545,14 +5553,6 @@
         "role": "death",
         "la": "Dariórigi in Británnia Minóre Gálliæ",
         "it": "A Vannes in Bretagna, in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0303-teresia-eustochius-verzeri": [
-      {
-        "role": "death",
-        "la": "Bríxiæ in Langobárdia",
-        "it": "A Brescia",
         "source": "lead"
       }
     ],
@@ -5596,6 +5596,14 @@
         "source": "lead"
       }
     ],
+    "mr:0304-eulalia-viel": [
+      {
+        "role": "death",
+        "la": "In cœnóbio Sancti Salvatóris Vicecómitis in Normánnia Gálliæ",
+        "it": "Nel cenobio di Saint-Sauveur-le-Vicomte nella Normandia in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0304-humbertus": [
       {
         "role": "death",
@@ -5636,11 +5644,11 @@
         "source": "lead"
       }
     ],
-    "mr:0304-placida-viel": [
+    "mr:0305-carolus-caietanus-calosirto": [
       {
         "role": "death",
-        "la": "In cœnóbio Sancti Salvatóris Vicecómitis in Normánnia Gálliæ",
-        "it": "Nel cenobio di Saint-Sauveur-le-Vicomte nella Normandia in Francia",
+        "la": "Neápoli",
+        "it": "a Napoli",
         "source": "lead"
       }
     ],
@@ -5676,19 +5684,11 @@
         "source": "lead"
       }
     ],
-    "mr:0305-ieremias-de-valachia": [
+    "mr:0305-ioannes-kostistik": [
       {
         "role": "death",
         "la": "Neápoli in Campánia",
         "it": "A Napoli",
-        "source": "lead"
-      }
-    ],
-    "mr:0305-ioannes-iosephus-a-cruce": [
-      {
-        "role": "death",
-        "la": "Neápoli",
-        "it": "a Napoli",
         "source": "lead"
       }
     ],
@@ -6076,14 +6076,6 @@
         "source": "lead"
       }
     ],
-    "mr:0310-elias-a-succursu": [
-      {
-        "role": "death",
-        "la": "Prope civitátem Cortázar in México",
-        "it": "Vicino alla città di Cortázar in Messico",
-        "source": "lead"
-      }
-    ],
     "mr:0310-ioannes-ogilvie": [
       {
         "role": "death",
@@ -6097,6 +6089,14 @@
         "role": "death",
         "la": "Parísiis in Gállia",
         "it": "A Parigi in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0310-matthaeus-elias-nieves-del-castillo": [
+      {
+        "role": "death",
+        "la": "Prope civitátem Cortázar in México",
+        "it": "Vicino alla città di Cortázar in Messico",
         "source": "lead"
       }
     ],
@@ -6669,6 +6669,14 @@
         "source": "lead"
       }
     ],
+    "mr:0318-amata-le-bouteiller": [
+      {
+        "role": "death",
+        "la": "In cœnóbio Sancti Salvatóris Vicecómitis in Normánnia Gálliæ",
+        "it": "Nel cenobio di Saint-Sauveur-le-Vicomte nella Normandia in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0318-anselmus": [
       {
         "role": "death",
@@ -6714,14 +6722,6 @@
         "role": "death",
         "la": "Turónis in Néustria",
         "it": "A Tours nel territorio della Neustria, in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0318-martha-le-bouteiller": [
-      {
-        "role": "death",
-        "la": "In cœnóbio Sancti Salvatóris Vicecómitis in Normánnia Gálliæ",
-        "it": "Nel cenobio di Saint-Sauveur-le-Vicomte nella Normandia in Francia",
         "source": "lead"
       }
     ],
@@ -7141,7 +7141,7 @@
         "source": "lead"
       }
     ],
-    "mr:0324-didacus-iosephus-de-gadibus": [
+    "mr:0324-franciscus-iosephus-lopez-caamano": [
       {
         "role": "death",
         "la": "Arúndæ in Vandalícia Hispániæ regióne",
@@ -7245,14 +7245,6 @@
         "source": "lead"
       }
     ],
-    "mr:0325-iosaphata-hordashevska": [
-      {
-        "role": "death",
-        "la": "In óppido Chervonohrad prope Leópolim in Ucraína",
-        "it": "Nella cittadina di Chervonohrad vicino a Leopoli in Ucraina",
-        "source": "lead"
-      }
-    ],
     "mr:0325-lucia-filippini": [
       {
         "role": "death",
@@ -7274,6 +7266,14 @@
         "role": "death",
         "la": "Thessalonícæ in Macedónia",
         "it": "A Salonicco nella Macedonia, ora in Grecia",
+        "source": "lead"
+      }
+    ],
+    "mr:0325-michaelina-hordashevska": [
+      {
+        "role": "death",
+        "la": "In óppido Chervonohrad prope Leópolim in Ucraína",
+        "it": "Nella cittadina di Chervonohrad vicino a Leopoli in Ucraina",
         "source": "lead"
       }
     ],
@@ -7589,6 +7589,14 @@
         "source": "lead"
       }
     ],
+    "mr:0330-helena-kafka": [
+      {
+        "role": "death",
+        "la": "Vindóbonæ in Austria",
+        "it": "A Vienna in Austria",
+        "source": "lead"
+      }
+    ],
     "mr:0330-ioannes": [
       {
         "role": "death",
@@ -7618,14 +7626,6 @@
         "role": "death",
         "la": "Neápoli in Itália",
         "it": "A Napoli",
-        "source": "lead"
-      }
-    ],
-    "mr:0330-maria-restituta-kafka": [
-      {
-        "role": "death",
-        "la": "Vindóbonæ in Austria",
-        "it": "A Vienna in Austria",
         "source": "lead"
       }
     ],
@@ -7885,19 +7885,19 @@
         "source": "lead"
       }
     ],
+    "mr:0402-laura-alvarado": [
+      {
+        "role": "death",
+        "la": "Maracáii in Venetíola",
+        "it": "A Maracay in Venezuela",
+        "source": "lead"
+      }
+    ],
     "mr:0402-leopoldus-de-gaiche": [
       {
         "role": "death",
         "la": "Spoléti in Umbria",
         "it": "A Spoleto in Umbria",
-        "source": "lead"
-      }
-    ],
-    "mr:0402-maria-a-sancto-ioseph": [
-      {
-        "role": "death",
-        "la": "Maracáii in Venetíola",
-        "it": "A Maracay in Venezuela",
         "source": "lead"
       }
     ],
@@ -8110,6 +8110,14 @@
         "source": "lead"
       }
     ],
+    "mr:0405-anna-hoss": [
+      {
+        "role": "death",
+        "la": "Kaufbúræ ad Ilaram flumen in Bavária",
+        "it": "A Kaufbeuren sul fiume Wertach nella Baviera, in Germania",
+        "source": "lead"
+      }
+    ],
     "mr:0405-catharina-tomas": [
       {
         "role": "death",
@@ -8139,14 +8147,6 @@
         "role": "death",
         "la": "Apud Fossas in Brabántia",
         "it": "Presso Fosses nel Brabante, nell’odierno Belgio",
-        "source": "lead"
-      }
-    ],
-    "mr:0405-maria-crescentia-hoss": [
-      {
-        "role": "death",
-        "la": "Kaufbúræ ad Ilaram flumen in Bavária",
-        "it": "A Kaufbeuren sul fiume Wertach nella Baviera, in Germania",
         "source": "lead"
       }
     ],
@@ -8640,19 +8640,19 @@
         "source": "lead"
       }
     ],
-    "mr:0411-angelus-de-clavasio": [
-      {
-        "role": "death",
-        "la": "Cúnei in Subalpínis",
-        "it": "A Cuneo",
-        "source": "lead"
-      }
-    ],
     "mr:0411-antipa": [
       {
         "role": "cult",
         "la": "Pérgami in Asia",
         "it": "A Pergamo nell’Asia, nell’odierna Turchia",
+        "source": "lead"
+      }
+    ],
+    "mr:0411-antonius-carletti": [
+      {
+        "role": "death",
+        "la": "Cúnei in Subalpínis",
+        "it": "A Cuneo",
         "source": "lead"
       }
     ],
@@ -8777,6 +8777,14 @@
         "source": "lead"
       }
     ],
+    "mr:0412-ioanna-fernandez-solar": [
+      {
+        "role": "death",
+        "la": "In civitáte Los Andes in Chília",
+        "it": "Nella città di Los Andes in Cile",
+        "source": "lead"
+      }
+    ],
     "mr:0412-iosephus-moscati": [
       {
         "role": "death",
@@ -8806,14 +8814,6 @@
         "role": "death",
         "la": "In Cappadócia",
         "it": "In Cappadocia, nell’odierna Turchia",
-        "source": "lead"
-      }
-    ],
-    "mr:0412-teresia-a-iesu": [
-      {
-        "role": "death",
-        "la": "In civitáte Los Andes in Chília",
-        "it": "Nella città di Los Andes in Cile",
         "source": "lead"
       }
     ],
@@ -8889,6 +8889,14 @@
         "source": "lead"
       }
     ],
+    "mr:0413-ioannes-bernardus-rousseau": [
+      {
+        "role": "death",
+        "la": "In Henóseos ínsula in Océano Indico",
+        "it": "Nell’isola di Réunion nell’Oceano Indiano",
+        "source": "lead"
+      }
+    ],
     "mr:0413-ioannes-lockwood-et-eduardus-catherick": [
       {
         "role": "death",
@@ -8910,14 +8918,6 @@
         "role": "death",
         "la": "In pago Totoclán diciónis Guadalaiarénsis in México",
         "it": "Nel villaggio di Totoclán nella regione di Guadalajara in Messico",
-        "source": "lead"
-      }
-    ],
-    "mr:0413-scubilio-rousseau": [
-      {
-        "role": "death",
-        "la": "In Henóseos ínsula in Océano Indico",
-        "it": "Nell’isola di Réunion nell’Oceano Indiano",
         "source": "lead"
       }
     ],
@@ -9339,6 +9339,14 @@
         "source": "lead"
       }
     ],
+    "mr:0418-barbara-avrillot": [
+      {
+        "role": "death",
+        "la": "Pontísaræ apud Parísios in Gállia",
+        "it": "A Pontoise presso Parigi in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0418-eusebius": [
       {
         "role": "death",
@@ -9393,14 +9401,6 @@
         "role": "death",
         "la": "Leiglínii in Hibérnia",
         "it": "A Leighlin in Irlanda",
-        "source": "lead"
-      }
-    ],
-    "mr:0418-maria-ab-incarnatione": [
-      {
-        "role": "death",
-        "la": "Pontísaræ apud Parísios in Gállia",
-        "it": "A Pontoise presso Parigi in Francia",
         "source": "lead"
       }
     ],
@@ -9548,7 +9548,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-clara-bosatta": [
+    "mr:0420-dina-bosatta": [
       {
         "role": "death",
         "la": "Planélli ad lacum Lárium in Itália",
@@ -9885,19 +9885,19 @@
         "source": "lead"
       }
     ],
+    "mr:0424-angelus-menni": [
+      {
+        "role": "death",
+        "la": "Dinántii in Gállia",
+        "it": "A Dinan in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0424-anthimus-et-socii": [
       {
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
         "it": "A Nicomedia in Bitinia, nell’odierna Turchia",
-        "source": "lead"
-      }
-    ],
-    "mr:0424-benedictus-menni": [
-      {
-        "role": "death",
-        "la": "Dinántii in Gállia",
-        "it": "A Dinan in Francia",
         "source": "lead"
       }
     ],
@@ -9933,14 +9933,6 @@
         "source": "lead"
       }
     ],
-    "mr:0424-maria-a-sancta-euphrasia": [
-      {
-        "role": "death",
-        "la": "Andégavi in Gállia",
-        "it": "Ad Angers in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0424-maria-cleopha-et-salome": [
       {
         "role": "cult",
@@ -9962,6 +9954,14 @@
         "role": "death",
         "la": "Cantuáriæ in Anglia",
         "it": "A Canterbury in Inghilterra",
+        "source": "lead"
+      }
+    ],
+    "mr:0424-rosa-virginia-pelletier": [
+      {
+        "role": "death",
+        "la": "Andégavi in Gállia",
+        "it": "Ad Angers in Francia",
         "source": "lead"
       }
     ],
@@ -10597,6 +10597,14 @@
         "source": "lead"
       }
     ],
+    "mr:0501-herminius-philippus-pampuri": [
+      {
+        "role": "death",
+        "la": "Medioláni in Itália",
+        "it": "A Milano",
+        "source": "lead"
+      }
+    ],
     "mr:0501-ioannes-ludovicus-bonnard": [
       {
         "role": "death",
@@ -10658,14 +10666,6 @@
         "role": "death",
         "la": "Romæ",
         "it": "A Roma",
-        "source": "lead"
-      }
-    ],
-    "mr:0501-richardus-pampuri": [
-      {
-        "role": "death",
-        "la": "Medioláni in Itália",
-        "it": "A Milano",
         "source": "lead"
       }
     ],
@@ -11278,11 +11278,27 @@
         "source": "lead"
       }
     ],
+    "mr:0508-catharina-symon-de-longprey": [
+      {
+        "role": "death",
+        "la": "In Quebéco Cánadæ província",
+        "it": "Nel Québec in Canada",
+        "source": "lead"
+      }
+    ],
     "mr:0508-desideratus": [
       {
         "role": "death",
         "la": "Biturígis in Aquitánia",
         "it": "A Bourges nella regione dell’Aquitania, in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0508-francisca-nisch": [
+      {
+        "role": "death",
+        "la": "In pago Hegne in Bádena Germániæ província",
+        "it": "Nel territorio di Hegne nel Baden in Germania",
         "source": "lead"
       }
     ],
@@ -11302,14 +11318,6 @@
         "source": "lead"
       }
     ],
-    "mr:0508-maria-catharina-a-sancto-augustino": [
-      {
-        "role": "death",
-        "la": "In Quebéco Cánadæ província",
-        "it": "Nel Québec in Canada",
-        "source": "lead"
-      }
-    ],
     "mr:0508-martinus": [
       {
         "role": "death",
@@ -11323,14 +11331,6 @@
         "role": "death",
         "la": "Verónæ in Venétia",
         "it": "A Verona",
-        "source": "lead"
-      }
-    ],
-    "mr:0508-ulrica-nisch": [
-      {
-        "role": "death",
-        "la": "In pago Hegne in Bádena Germániæ província",
-        "it": "Nel territorio di Hegne nel Baden in Germania",
         "source": "lead"
       }
     ],
@@ -11366,6 +11366,14 @@
         "source": "lead"
       }
     ],
+    "mr:0509-carolina-gerhardinger": [
+      {
+        "role": "death",
+        "la": "Monáchii Baváriæ in Germánia",
+        "it": "A Monaco di Baviera in Germania",
+        "source": "lead"
+      }
+    ],
     "mr:0509-dionysius": [
       {
         "role": "death",
@@ -11395,14 +11403,6 @@
         "role": "death",
         "la": "In urbe Nam-Ðịnh in Tunquíno",
         "it": "Nella città di Nam-Định nel Tonchino, ora Viet Nam",
-        "source": "lead"
-      }
-    ],
-    "mr:0509-maria-teresia-a-iesu": [
-      {
-        "role": "death",
-        "la": "Monáchii Baváriæ in Germánia",
-        "it": "A Monaco di Baviera in Germania",
         "source": "lead"
       }
     ],
@@ -12160,14 +12160,6 @@
         "source": "lead"
       }
     ],
-    "mr:0518-blandina-merten": [
-      {
-        "role": "death",
-        "la": "In Maríæ Domo in Germánia",
-        "it": "A Mergentheim in Germania",
-        "source": "lead"
-      }
-    ],
     "mr:0518-burchardus": [
       {
         "role": "death",
@@ -12213,6 +12205,14 @@
         "role": "death",
         "la": "Tolósæ ad Garúmnam Gálliæ",
         "it": "A Tolosa sulla Garonna in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0518-maria-magdalena-merten": [
+      {
+        "role": "death",
+        "la": "In Maríæ Domo in Germánia",
+        "it": "A Mergentheim in Germania",
         "source": "lead"
       }
     ],
@@ -12296,19 +12296,19 @@
         "source": "lead"
       }
     ],
-    "mr:0519-ioannes-baptista-xaverius-loir": [
-      {
-        "role": "death",
-        "la": "In salo ante Rupifórtium in Gállia",
-        "it": "Nel braccio di mare antistante Rochefort in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0519-ioannes-de-cetina-et-petrus-de-duenas": [
       {
         "role": "death",
         "la": "Granátæ in Hispánia",
         "it": "A Granada in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0519-ioannes-ludovicus-loir": [
+      {
+        "role": "death",
+        "la": "In salo ante Rupifórtium in Gállia",
+        "it": "Nel braccio di mare antistante Rochefort in Francia",
         "source": "lead"
       }
     ],
@@ -12325,14 +12325,6 @@
         "role": "death",
         "la": "In castéllo prope Trecóram in Británnia Minóre Gálliæ",
         "it": "In un castello vicino a Tréguier nella Bretagna in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0519-maria-bernarda-butler": [
-      {
-        "role": "death",
-        "la": "Carthágine Neogranaténsi in Colúmbia",
-        "it": "A Cartagena in Colombia",
         "source": "lead"
       }
     ],
@@ -12374,6 +12366,14 @@
         "role": "death",
         "la": "Romæ in cœmetério Callísti via Appia",
         "it": "A Roma nel cimitero di Callisto sulla via Appia",
+        "source": "lead"
+      }
+    ],
+    "mr:0519-verena-butler": [
+      {
+        "role": "death",
+        "la": "Carthágine Neogranaténsi in Colúmbia",
+        "it": "A Cartagena in Colombia",
         "source": "lead"
       }
     ],
@@ -12841,6 +12841,14 @@
         "source": "lead"
       }
     ],
+    "mr:0525-andreas-bertoni": [
+      {
+        "role": "death",
+        "la": "Favéntiæ in Flamínia",
+        "it": "A Faenza in Romagna",
+        "source": "lead"
+      }
+    ],
     "mr:0525-canio": [
       {
         "role": "death",
@@ -12894,14 +12902,6 @@
         "role": "death",
         "la": "Apud Montem Sanctum in Picéno Itáliæ",
         "it": "Presso Montesanto nelle Marche",
-        "source": "lead"
-      }
-    ],
-    "mr:0525-iacobus-philippus-bertonus": [
-      {
-        "role": "death",
-        "la": "Favéntiæ in Flamínia",
-        "it": "A Faenza in Romagna",
         "source": "lead"
       }
     ],
@@ -13313,6 +13313,14 @@
         "source": "lead"
       }
     ],
+    "mr:0529-iulia-ledochowska": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
+        "source": "lead"
+      }
+    ],
     "mr:0529-maximinus": [
       {
         "role": "death",
@@ -13342,14 +13350,6 @@
         "role": "death",
         "la": "In valle Anauniénsi in agro Tridentíno",
         "it": "In Val di Non nel Trentino",
-        "source": "lead"
-      }
-    ],
-    "mr:0529-ursula-ledochowska": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -13450,7 +13450,7 @@
         "source": "lead"
       }
     ],
-    "mr:0531-baptista-varano": [
+    "mr:0531-camilla-varano": [
       {
         "role": "death",
         "la": "Cameríni in Picéno Itáliæ",
@@ -13466,11 +13466,11 @@
         "source": "lead"
       }
     ],
-    "mr:0531-felix-amoroso": [
+    "mr:0531-dominicus-di-nicolantonio": [
       {
         "role": "death",
-        "la": "Hérbitæ in Sicília",
-        "it": "A Nicosia in Sicilia",
+        "la": "In vico Bellegra in pago Románo",
+        "it": "Nel villaggio di Bellegra vicino a Roma",
         "source": "lead"
       }
     ],
@@ -13482,19 +13482,19 @@
         "source": "lead"
       }
     ],
+    "mr:0531-iacobus-amoroso": [
+      {
+        "role": "death",
+        "la": "Hérbitæ in Sicília",
+        "it": "A Nicosia in Sicilia",
+        "source": "lead"
+      }
+    ],
     "mr:0531-iacobus-salomoni": [
       {
         "role": "death",
         "la": "Fori Lívii in Æmília",
         "it": "A Forlì",
-        "source": "lead"
-      }
-    ],
-    "mr:0531-marianus-de-roccacasale": [
-      {
-        "role": "death",
-        "la": "In vico Bellegra in pago Románo",
-        "it": "Nel villaggio di Bellegra vicino a Roma",
         "source": "lead"
       }
     ],
@@ -13802,14 +13802,6 @@
         "source": "lead"
       }
     ],
-    "mr:0603-didacus-oddi": [
-      {
-        "role": "death",
-        "la": "In vico Bellegra in pago Románo",
-        "it": "Nel villaggio di Bellegra vicino a Roma",
-        "source": "lead"
-      }
-    ],
     "mr:0603-franciscus-ingleby": [
       {
         "role": "death",
@@ -13847,6 +13839,14 @@
         "role": "death",
         "la": "Romæ",
         "it": "A Roma",
+        "source": "lead"
+      }
+    ],
+    "mr:0603-iosephus-oddi": [
+      {
+        "role": "death",
+        "la": "In vico Bellegra in pago Románo",
+        "it": "Nel villaggio di Bellegra vicino a Roma",
         "source": "lead"
       }
     ],
@@ -14290,6 +14290,14 @@
         "source": "lead"
       }
     ],
+    "mr:0608-ioannes-medda": [
+      {
+        "role": "death",
+        "la": "Cálari in Sardínia",
+        "it": "A Cagliari",
+        "source": "lead"
+      }
+    ],
     "mr:0608-maria-a-divino-corde-iesu": [
       {
         "role": "death",
@@ -14319,14 +14327,6 @@
         "role": "death",
         "la": "Suessióne item in Gállia",
         "it": "A Soissons sempre in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0608-nicolaus-de-gesturi": [
-      {
-        "role": "death",
-        "la": "Cálari in Sardínia",
-        "it": "A Cagliari",
         "source": "lead"
       }
     ],
@@ -14530,6 +14530,14 @@
         "source": "lead"
       }
     ],
+    "mr:0611-maria-rosa-molas-vallve": [
+      {
+        "role": "death",
+        "la": "Dertósæ in Hispánia",
+        "it": "A Tortosa in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0611-maria-schinina": [
       {
         "role": "death",
@@ -14570,14 +14578,6 @@
         "source": "lead"
       }
     ],
-    "mr:0611-rosa-francisca-maria-a-doloribus": [
-      {
-        "role": "death",
-        "la": "Dertósæ in Hispánia",
-        "it": "A Tortosa in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0611-stephanus-bandelli": [
       {
         "role": "death",
@@ -14599,14 +14599,6 @@
         "role": "death",
         "la": "In Suécia",
         "it": "In Svezia",
-        "source": "lead"
-      }
-    ],
-    "mr:0612-florida-cevoli": [
-      {
-        "role": "death",
-        "la": "Tiférni Tiberíni in Umbria",
-        "it": "A Città di Castello in Umbria",
         "source": "lead"
       }
     ],
@@ -14639,6 +14631,14 @@
         "role": "death",
         "la": "Romæ apud sanctum Petrum",
         "it": "A Roma presso san Pietro",
+        "source": "lead"
+      }
+    ],
+    "mr:0612-lucretia-helena-cevoli": [
+      {
+        "role": "death",
+        "la": "Tiférni Tiberíni in Umbria",
+        "it": "A Città di Castello in Umbria",
         "source": "lead"
       }
     ],
@@ -14938,6 +14938,14 @@
         "source": "lead"
       }
     ],
+    "mr:0616-anna-maria-catharina-scherer": [
+      {
+        "role": "death",
+        "la": "In pago Ingenbohl prope Swiciam in Helvétia",
+        "it": "Nel territorio di Ingenbohl nel cantone di Schwyz in Svizzera",
+        "source": "lead"
+      }
+    ],
     "mr:0616-antonius-constans-auriel": [
       {
         "role": "death",
@@ -14999,14 +15007,6 @@
         "role": "death",
         "la": "In monastério moniálium Cisterciénsium Aquíriæ in Brabántia",
         "it": "Nel monastero delle monache cistercensi di Aywières in Brabante, nell’odierno Belgio",
-        "source": "lead"
-      }
-    ],
-    "mr:0616-maria-teresia-scherer": [
-      {
-        "role": "death",
-        "la": "In pago Ingenbohl prope Swiciam in Helvétia",
-        "it": "Nel territorio di Ingenbohl nel cantone di Schwyz in Svizzera",
         "source": "lead"
       }
     ],
@@ -15492,19 +15492,19 @@
         "source": "lead"
       }
     ],
-    "mr:0623-maria-raphaela-cimatti": [
-      {
-        "role": "death",
-        "la": "Alátrii in Látio Itáliæ",
-        "it": "Ad Alatri nel Lazio",
-        "source": "lead"
-      }
-    ],
     "mr:0623-petrus-iacobus-de-pisauro": [
       {
         "role": "death",
         "la": "In erémo Vallismanénsi in Picéno Itáliæ",
         "it": "Nell’eremo di Valmanente nelle Marche",
+        "source": "lead"
+      }
+    ],
+    "mr:0623-sanctina-cimatti": [
+      {
+        "role": "death",
+        "la": "Alátrii in Látio Itáliæ",
+        "it": "Ad Alatri nel Lazio",
         "source": "lead"
       }
     ],
@@ -15532,6 +15532,14 @@
         "source": "lead"
       }
     ],
+    "mr:0624-anastasia-garcia-zavala": [
+      {
+        "role": "death",
+        "la": "Guadalaxáræ in México",
+        "it": "A Guadalajara in Messico",
+        "source": "lead"
+      }
+    ],
     "mr:0624-gohardus": [
       {
         "role": "death",
@@ -15553,14 +15561,6 @@
         "role": "death",
         "la": "In Sichuan Sinárum província",
         "it": "Nella provincia di Sichuan in Cina",
-        "source": "lead"
-      }
-    ],
-    "mr:0624-maria-a-guadalupe-garcia-zavala": [
-      {
-        "role": "death",
-        "la": "Guadalaxáræ in México",
-        "it": "A Guadalajara in Messico",
         "source": "lead"
       }
     ],
@@ -16590,19 +16590,19 @@
         "source": "lead"
       }
     ],
-    "mr:0706-augustinus-iosephus-desgardin": [
-      {
-        "role": "death",
-        "la": "Ad áncoram in alto ante Rupifórtium ad oram Gálliæ",
-        "it": "All’ancora davanti Rochefort sulla costa francese",
-        "source": "lead"
-      }
-    ],
     "mr:0706-cyriaca": [
       {
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
         "it": "A Nicomedia in Bitinia, nell’odierna Turchia",
+        "source": "lead"
+      }
+    ],
+    "mr:0706-elias-desgardin": [
+      {
+        "role": "death",
+        "la": "Ad áncoram in alto ante Rupifórtium ad oram Gálliæ",
+        "it": "All’ancora davanti Rochefort sulla costa francese",
         "source": "lead"
       }
     ],
@@ -16619,6 +16619,14 @@
         "role": "death",
         "la": "In pago Condatiscénsi ad Iuram in Burgúndia",
         "it": "Nel territorio di Condat presso il massiccio del Giura in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0706-maria-rosa-de-loye": [
+      {
+        "role": "death",
+        "la": "Arausióne item in Gállia",
+        "it": "A Orange sempre in Francia",
         "source": "lead"
       }
     ],
@@ -16678,14 +16686,6 @@
         "source": "lead"
       }
     ],
-    "mr:0706-susanna-agatha-de-loye": [
-      {
-        "role": "death",
-        "la": "Arausióne item in Gállia",
-        "it": "A Orange sempre in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0706-thomas-alfield": [
       {
         "role": "death",
@@ -16727,6 +16727,14 @@
         "source": "lead"
       }
     ],
+    "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene": [
+      {
+        "role": "death",
+        "la": "Arausióne item in Gállia",
+        "it": "A Orange sempre in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0707-hedda": [
       {
         "role": "death",
@@ -16740,14 +16748,6 @@
         "role": "death",
         "la": "In freto maris ante Rupifórtium in Gállia",
         "it": "Nel braccio di mare antistante Rochefort in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0707-iphigenia-a-sancto-matthaeo": [
-      {
-        "role": "death",
-        "la": "Arausióne item in Gállia",
-        "it": "A Orange sempre in Francia",
         "source": "lead"
       }
     ],
@@ -17071,7 +17071,7 @@
         "source": "lead"
       }
     ],
-    "mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu": [
+    "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": [
       {
         "role": "death",
         "la": "Arausióne in Província Gálliæ",
@@ -17272,6 +17272,14 @@
         "source": "lead"
       }
     ],
+    "mr:0712-magdalena-teresia-tallien-et-socii": [
+      {
+        "role": "death",
+        "la": "Arausióne in Província Gálliæ",
+        "it": "A Orange nella Provenza in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0712-matthias-arakus-et-socii": [
       {
         "role": "death",
@@ -17304,14 +17312,6 @@
         "source": "lead"
       }
     ],
-    "mr:0712-rosa-a-sancto-xaverio-et-socii": [
-      {
-        "role": "death",
-        "la": "Arausióne in Província Gálliæ",
-        "it": "A Orange nella Provenza in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0712-viventiolus": [
       {
         "role": "death",
@@ -17341,6 +17341,14 @@
         "role": "death",
         "la": "Búdriæ in Flamínia",
         "it": "A Budrie in Romagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0713-elisabeth-verchiere-et-socii": [
+      {
+        "role": "death",
+        "la": "Arausióne in Província Gálliæ",
+        "it": "A Orange in Francia",
         "source": "lead"
       }
     ],
@@ -17389,14 +17397,6 @@
         "role": "death",
         "la": "Ante Rupifórtium ad oram Gálliæ in sórdido navígio in salo constitúto",
         "it": "In una sordida galera all’ancora davanti a Rochefort sulla costa francese",
-        "source": "lead"
-      }
-    ],
-    "mr:0713-magdalena-a-matre-dei-et-socii": [
-      {
-        "role": "death",
-        "la": "Arausióne in Província Gálliæ",
-        "it": "A Orange in Francia",
         "source": "lead"
       }
     ],
@@ -17705,14 +17705,6 @@
         "source": "lead"
       }
     ],
-    "mr:0716-amata-a-iesu-et-socii": [
-      {
-        "role": "death",
-        "la": "Arausióne item in Gállia",
-        "it": "A Orange sempre in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0716-andreas-de-soveral-et-dominicus-carvalho": [
       {
         "role": "death",
@@ -17782,6 +17774,14 @@
         "role": "death",
         "la": "In pago Sancti Salvatóris Vicecómitis in Normánnia Gálliæ",
         "it": "Nel territorio di Saint-Sauveur-le-Vicomte nella Normandia in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0716-maria-rosa-de-gordon-et-socii": [
+      {
+        "role": "death",
+        "la": "Arausióne item in Gállia",
+        "it": "A Orange sempre in Francia",
         "source": "lead"
       }
     ],
@@ -17897,6 +17897,14 @@
         "source": "lead"
       }
     ],
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+      {
+        "role": "death",
+        "la": "Parísiis in Gállia",
+        "it": "A Parigi in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0717-martyres-scillitani": [
       {
         "role": "death",
@@ -17905,7 +17913,7 @@
         "source": "lead"
       }
     ],
-    "mr:0717-paulus-gojdich": [
+    "mr:0717-petrus-gojdich": [
       {
         "role": "death",
         "la": "Leopoldópoli in Slováchia",
@@ -17918,14 +17926,6 @@
         "role": "death",
         "la": "In pago Zhujiaxiezhuang apud Shenxian in Hebei província Sinárum",
         "it": "Nel territorio di Zhujiaxiezhuang vicino a Shenxian nella provincia dello Hebei in Cina",
-        "source": "lead"
-      }
-    ],
-    "mr:0717-teresia-a-sancto-augustino-et-socii": [
-      {
-        "role": "death",
-        "la": "Parísiis in Gállia",
-        "it": "A Parigi in Francia",
         "source": "lead"
       }
     ],
@@ -18001,6 +18001,14 @@
         "source": "lead"
       }
     ],
+    "mr:0718-olga-mackiv": [
+      {
+        "role": "death",
+        "la": "In vico Krystonopil in Ucraína",
+        "it": "Nel villaggio di Krystonopil in Ucraina",
+        "source": "lead"
+      }
+    ],
     "mr:0718-philastrius": [
       {
         "role": "death",
@@ -18030,14 +18038,6 @@
         "role": "cult",
         "la": "Via Tiburtína miliário nono ab urbe Roma",
         "it": "A Roma al nono miglio della via Tiburtina",
-        "source": "lead"
-      }
-    ],
-    "mr:0718-tarsicia-mackiv": [
-      {
-        "role": "death",
-        "la": "In vico Krystonopil in Ucraína",
-        "it": "Nel villaggio di Krystonopil in Ucraina",
         "source": "lead"
       }
     ],
@@ -18449,7 +18449,7 @@
         "source": "lead"
       }
     ],
-    "mr:0723-germanus-a-iesu-et-socii": [
+    "mr:0723-emmanuel-perez-gimenez-et-socii": [
       {
         "role": "death",
         "la": "In loco Carabanchel Bajo apud Matrítum item in Hispánia",
@@ -18470,14 +18470,6 @@
         "role": "death",
         "la": "Massíliæ in Província Gálliæ",
         "it": "A Marsiglia nella Provenza in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0723-nicephorus-a-iesu-et-socii": [
-      {
-        "role": "death",
-        "la": "In civitáte Manzanares in Nova Castélla Hispániæ regióne",
-        "it": "Nella città di Manzanares nella Nuova Castiglia in Spagna",
         "source": "lead"
       }
     ],
@@ -18502,6 +18494,14 @@
         "role": "death",
         "la": "Cimélæ item in Província",
         "it": "A Cimiez sempre in Provenza",
+        "source": "lead"
+      }
+    ],
+    "mr:0723-vincentius-diez-tejerina-et-socii": [
+      {
+        "role": "death",
+        "la": "In civitáte Manzanares in Nova Castélla Hispániæ regióne",
+        "it": "Nella città di Manzanares nella Nuova Castiglia in Spagna",
         "source": "lead"
       }
     ],
@@ -18553,6 +18553,14 @@
         "source": "lead"
       }
     ],
+    "mr:0724-dominicus-mazzarello": [
+      {
+        "role": "death",
+        "la": "Neápoli in Campánia",
+        "it": "A Napoli",
+        "source": "lead"
+      }
+    ],
     "mr:0724-euphrasia": [
       {
         "role": "death",
@@ -18566,6 +18574,14 @@
         "role": "death",
         "la": "Tauriáni in Calábria",
         "it": "A Tauriana in Calabria",
+        "source": "lead"
+      }
+    ],
+    "mr:0724-iacoba-martinez-garcia-et-socii": [
+      {
+        "role": "death",
+        "la": "Guadalaxáræ in Hispánia",
+        "it": "A Guadalajara in Spagna",
         "source": "lead"
       }
     ],
@@ -18617,27 +18633,11 @@
         "source": "lead"
       }
     ],
-    "mr:0724-maria-a-columna-a-sancto-francisco-borgia-et-socii": [
-      {
-        "role": "death",
-        "la": "Guadalaxáræ in Hispánia",
-        "it": "A Guadalajara in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0724-maria-a-mercede-prat": [
       {
         "role": "death",
         "la": "Apud Barcinónem item in Hispánia",
         "it": "Presso Barcellona sempre in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0724-modestinus-a-iesu-et-maria": [
-      {
-        "role": "death",
-        "la": "Neápoli in Campánia",
-        "it": "A Napoli",
         "source": "lead"
       }
     ],
@@ -18698,6 +18698,14 @@
         "via": "mr:0725-magnericus"
       }
     ],
+    "mr:0725-carolus-rubio-alvarez-et-socii": [
+      {
+        "role": "death",
+        "la": "Prope Eboram Carpetanórum in agro Toletáno item in Hispánia",
+        "it": "Vicino a Talavera de la Reina nel territorio di Toledo sempre in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0725-christophorus": [
       {
         "role": "death",
@@ -18727,14 +18735,6 @@
         "role": "death",
         "la": "In loco Monzon prope Oscam in Aragónia Hispániæ regióne",
         "it": "In località Monzon vicino a Huesca nell’Aragona in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0725-fridericus-rubio-alvarez-et-socii": [
-      {
-        "role": "death",
-        "la": "Prope Eboram Carpetanórum in agro Toletáno item in Hispánia",
-        "it": "Vicino a Talavera de la Reina nel territorio di Toledo sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -19138,7 +19138,7 @@
         "source": "lead"
       }
     ],
-    "mr:0728-alphonsa-ab-immaculata-conceptione": [
+    "mr:0728-anna-muttathupadathu": [
       {
         "role": "death",
         "la": "In urbe Bharananganam in Kérala Indiæ dicióne",
@@ -19162,19 +19162,19 @@
         "source": "lead"
       }
     ],
+    "mr:0728-emmanuel-barbal-cosan": [
+      {
+        "role": "death",
+        "la": "Tarracóne item in Hispánia",
+        "it": "A Tarragona ancora in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0728-emmanuel-segura-et-david-carlos": [
       {
         "role": "death",
         "la": "Gábasæ in pago Cæsaraugustáno item in Hispánia",
         "it": "A Gabasa nel territorio di Saragozza sempre in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0728-iacobus-hilarius-barbal-cosan": [
-      {
-        "role": "death",
-        "la": "Tarracóne item in Hispánia",
-        "it": "A Tarragona ancora in Spagna",
         "source": "lead"
       }
     ],
@@ -19347,14 +19347,6 @@
         "source": "lead"
       }
     ],
-    "mr:0730-braulio-maria-corres-diaz-de-cerio-et-socii": [
-      {
-        "role": "death",
-        "la": "In loco Calafell prope Tarracónem ad oram Hispániæ",
-        "it": "In località Calafell vicino a Tarragona sulla costa spagnola",
-        "source": "lead"
-      }
-    ],
     "mr:0730-eduardus-powell-et-socii": [
       {
         "role": "death",
@@ -19436,6 +19428,14 @@
         "source": "lead"
       }
     ],
+    "mr:0730-paulus-corres-diaz-de-cerio-et-socii": [
+      {
+        "role": "death",
+        "la": "In loco Calafell prope Tarracónem ad oram Hispániæ",
+        "it": "In località Calafell vicino a Tarragona sulla costa spagnola",
+        "source": "lead"
+      }
+    ],
     "mr:0730-sergius-cid-pazo": [
       {
         "role": "death",
@@ -19449,6 +19449,14 @@
         "role": "death",
         "la": "Autissiodóri in Gállia Lugdunénsi",
         "it": "Ad Auxerre nella Gallia lugdunense, in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0731-caecilia-schelingova": [
+      {
+        "role": "death",
+        "la": "Tyrnáviæ in Slováchia",
+        "it": "A Trnava in Slovacchia",
         "source": "lead"
       }
     ],
@@ -19572,14 +19580,6 @@
         "source": "lead"
       }
     ],
-    "mr:0731-sidonia-schelingova": [
-      {
-        "role": "death",
-        "la": "Tyrnáviæ in Slováchia",
-        "it": "A Trnava in Slovacchia",
-        "source": "lead"
-      }
-    ],
     "mr:0731-tertullinus": [
       {
         "role": "death",
@@ -19588,19 +19588,19 @@
         "source": "lead"
       }
     ],
+    "mr:0801-adelheidis-mardosewicz-et-socii": [
+      {
+        "role": "death",
+        "la": "In silva apud civitátem Nowogródek in Polónia",
+        "it": "Nella foresta presso la città di Nowogródek in Polonia",
+        "source": "lead"
+      }
+    ],
     "mr:0801-alexius-sobaszek": [
       {
         "role": "death",
         "la": "Intra castra detentiónis Dacháni prope Monáchium Baváriæ in Germánia",
         "it": "Nel campo di prigionia di Dachau vicino a Monaco di Baviera in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:0801-benvenutus-de-miguel-arahal": [
-      {
-        "role": "death",
-        "la": "Matríti in Hispánia",
-        "it": "A Madrid in Spagna",
         "source": "lead"
       }
     ],
@@ -19676,11 +19676,11 @@
         "source": "lead"
       }
     ],
-    "mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii": [
+    "mr:0801-iosephus-de-miguel-arahal": [
       {
         "role": "death",
-        "la": "In silva apud civitátem Nowogródek in Polónia",
-        "it": "Nella foresta presso la città di Nowogródek in Polonia",
+        "la": "Matríti in Hispánia",
+        "it": "A Madrid in Spagna",
         "source": "lead"
       }
     ],
@@ -20069,6 +20069,14 @@
         "source": "lead"
       }
     ],
+    "mr:0806-anna-maria-rubatto": [
+      {
+        "role": "death",
+        "la": "Apud Montem Vidéntem in Uruguáia",
+        "it": "A Montevideo in Uruguay",
+        "source": "lead"
+      }
+    ],
     "mr:0806-carolus-lopez-vidal": [
       {
         "role": "death",
@@ -20098,14 +20106,6 @@
         "role": "death",
         "la": "Complúti in Hispánia Carthaginénsi",
         "it": "A Alcalá de Henares in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0806-maria-francisca-a-iesu": [
-      {
-        "role": "death",
-        "la": "Apud Montem Vidéntem in Uruguáia",
-        "it": "A Montevideo in Uruguay",
         "source": "lead"
       }
     ],
@@ -20146,14 +20146,6 @@
         "role": "death",
         "la": "Augústæ Vindelicórum in Rǽtia",
         "it": "Ad Augsburg nella Rezia, oggi in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:0807-agathangelus-de-vindocino-et-cassianus-de-nannetibus": [
-      {
-        "role": "death",
-        "la": "In urbe Gondar in Æthiópia",
-        "it": "Nella città di Gondar in Etiopia",
         "source": "lead"
       }
     ],
@@ -20202,6 +20194,14 @@
         "role": "death",
         "la": "In óppido Górka Duchowna prope Posnániam in Polónia",
         "it": "Nella cittadina di Górka Duchowna vicino a Poznań in Polonia",
+        "source": "lead"
+      }
+    ],
+    "mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto": [
+      {
+        "role": "death",
+        "la": "In urbe Gondar in Æthiópia",
+        "it": "Nella città di Gondar in Etiopia",
         "source": "lead"
       }
     ],
@@ -20325,14 +20325,6 @@
         "source": "lead"
       }
     ],
-    "mr:0808-maria-a-cruce": [
-      {
-        "role": "death",
-        "la": "Sydnéyi in Austrália",
-        "it": "A Sydney in Australia",
-        "source": "lead"
-      }
-    ],
     "mr:0808-maria-a-iesu-infante-et-socii": [
       {
         "role": "death",
@@ -20341,11 +20333,19 @@
         "source": "lead"
       }
     ],
-    "mr:0808-maria-margarita-caiani": [
+    "mr:0808-maria-anna-rosa-caiani": [
       {
         "role": "death",
         "la": "Pódii Caiáni in Etrúria",
         "it": "A Poggio a Caiano in Toscana",
+        "source": "lead"
+      }
+    ],
+    "mr:0808-maria-helena-mackillop": [
+      {
+        "role": "death",
+        "la": "Sydnéyi in Austrália",
+        "it": "A Sydney in Australia",
         "source": "lead"
       }
     ],
@@ -20397,14 +20397,6 @@
         "source": "lead"
       }
     ],
-    "mr:0809-candida-maria-a-iesu": [
-      {
-        "role": "death",
-        "la": "Salmánticæ in Hispánia",
-        "it": "A Salamanca in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0809-claudius-richard": [
       {
         "role": "death",
@@ -20445,19 +20437,19 @@
         "source": "lead"
       }
     ],
-    "mr:0809-germanus-garrigues-hernandez": [
-      {
-        "role": "death",
-        "la": "In vico Carcaixent in pago Valentíno item in Hispánia",
-        "it": "Nel villaggio di Carcaixent nel territorio di Valencia sempre in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0809-gulielmus-plaza-hernandez": [
       {
         "role": "death",
         "la": "In loco Argès prope Tolétum item in Hispánia",
         "it": "In località Argés vicino a Toledo ancora in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0809-ioanna-iosepha-cipitria": [
+      {
+        "role": "death",
+        "la": "Salmánticæ in Hispánia",
+        "it": "A Salamanca in Spagna",
         "source": "lead"
       }
     ],
@@ -20474,6 +20466,14 @@
         "role": "death",
         "la": "Floréntiæ in Etrúria",
         "it": "A Firenze",
+        "source": "lead"
+      }
+    ],
+    "mr:0809-iosephus-maria-garrigues-hernandez": [
+      {
+        "role": "death",
+        "la": "In vico Carcaixent in pago Valentíno item in Hispánia",
+        "it": "Nel villaggio di Carcaixent nel territorio di Valencia sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -20613,7 +20613,7 @@
         "source": "lead"
       }
     ],
-    "mr:0811-ioannes-georgius-rhem": [
+    "mr:0811-iacobus-rhem": [
       {
         "role": "death",
         "la": "Ad áncoram extra portum Rupifórtii ad oram Gálliæ",
@@ -20710,6 +20710,14 @@
         "source": "lead"
       }
     ],
+    "mr:0812-atilanus-argueso-gonzalez": [
+      {
+        "role": "death",
+        "la": "In Valle Mauri prope Matrítum item in Hispánia",
+        "it": "A Valmoran presso Madrid sempre in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0812-carolus-leisner": [
       {
         "role": "death",
@@ -20731,14 +20739,6 @@
         "role": "death",
         "la": "Cátanæ in Sicília",
         "it": "A Catania",
-        "source": "lead"
-      }
-    ],
-    "mr:0812-flavius-argueso-gonzalez": [
-      {
-        "role": "death",
-        "la": "In Valle Mauri prope Matrítum item in Hispánia",
-        "it": "A Valmoran presso Madrid sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -20827,14 +20827,6 @@
         "role": "death",
         "la": "Lugdúni in Gállia",
         "it": "A Lione in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0813-benildus-romancon": [
-      {
-        "role": "death",
-        "la": "In óppido Saugues prope Anícium item in Gállia",
-        "it": "Nella cittadina di Saugues presso Puy-en-Vélay sempre in Francia",
         "source": "lead"
       }
     ],
@@ -20931,6 +20923,14 @@
         "role": "death",
         "la": "In freto maris ad litus Rupifórtii porrigénti in Gállia",
         "it": "Nel braccio di mare antistante Rochefort in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0813-petrus-romancon": [
+      {
+        "role": "death",
+        "la": "In óppido Saugues prope Anícium item in Gállia",
+        "it": "Nella cittadina di Saugues presso Puy-en-Vélay sempre in Francia",
         "source": "lead"
       }
     ],
@@ -21062,6 +21062,14 @@
         "source": "lead"
       }
     ],
+    "mr:0815-augustinus-hurtado-soler": [
+      {
+        "role": "death",
+        "la": "Matríti in Hispánia",
+        "it": "a Madrid",
+        "source": "lead"
+      }
+    ],
     "mr:0815-carmelus-sastre-sastre": [
       {
         "role": "death",
@@ -21070,19 +21078,11 @@
         "source": "lead"
       }
     ],
-    "mr:0815-claudius-granzotto": [
+    "mr:0815-elvira-moragas-cantarero": [
       {
         "role": "death",
-        "la": "Patávii in Itália",
-        "it": "A Padova",
-        "source": "lead"
-      }
-    ],
-    "mr:0815-dominicus-hurtado-soler": [
-      {
-        "role": "death",
-        "la": "Matríti in Hispánia",
-        "it": "a Madrid",
+        "la": "Matríti item in Hispánia",
+        "it": "A Madrid sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -21142,11 +21142,11 @@
         "source": "lead"
       }
     ],
-    "mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga": [
+    "mr:0815-richardus-granzotto": [
       {
         "role": "death",
-        "la": "Matríti item in Hispánia",
-        "it": "A Madrid sempre in Spagna",
+        "la": "Patávii in Itália",
+        "it": "A Padova",
         "source": "lead"
       }
     ],
@@ -21206,6 +21206,14 @@
         "source": "lead"
       }
     ],
+    "mr:0816-anna-iosepha-perez-florido": [
+      {
+        "role": "death",
+        "la": "Barcinóne in Hispánia",
+        "it": "A Barcellona in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0816-armagilus": [
       {
         "role": "death",
@@ -21219,14 +21227,6 @@
         "role": "death",
         "la": "In pago Gálliæ Cenomanénsi",
         "it": "Nel territorio di Le Mans, in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0816-gabriel-sanchis-mompo": [
-      {
-        "role": "death",
-        "la": "In vico Picassent in pago Valentíno item in Hispánia",
-        "it": "Nel villaggio di Picassent nel territorio di Valencia ancora in Spagna",
         "source": "lead"
       }
     ],
@@ -21254,19 +21254,19 @@
         "source": "lead"
       }
     ],
+    "mr:0816-iosephus-maria-sanchis-mompo": [
+      {
+        "role": "death",
+        "la": "In vico Picassent in pago Valentíno item in Hispánia",
+        "it": "Nel villaggio di Picassent nel territorio di Valencia ancora in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0816-laurentius-loricatus": [
       {
         "role": "death",
         "la": "Subláci in Látio",
         "it": "A Subiaco nel Lazio",
-        "source": "lead"
-      }
-    ],
-    "mr:0816-petra-a-sancto-ioseph": [
-      {
-        "role": "death",
-        "la": "Barcinóne in Hispánia",
-        "it": "A Barcellona in Spagna",
         "source": "lead"
       }
     ],
@@ -21894,7 +21894,7 @@
         "source": "lead"
       }
     ],
-    "mr:0822-bernardus-peroni": [
+    "mr:0822-dominicus-peroni": [
       {
         "role": "death",
         "la": "Ophydæ in Picéno Itáliæ",
@@ -22063,22 +22063,6 @@
         "source": "lead"
       }
     ],
-    "mr:0823-ioannes-bourdon": [
-      {
-        "role": "death",
-        "la": "Ad áncoras longe in mari ante Rupifórtium ad oram Gálliæ",
-        "it": "All’ancora nel mare antistante Rochefort sulla costa francese",
-        "source": "lead"
-      }
-    ],
-    "mr:0823-ioannes-maria-a-cruce": [
-      {
-        "role": "death",
-        "la": "In óppido Silla in eódem pago",
-        "it": "Nella cittadina di Silla nello stesso territorio",
-        "source": "lead"
-      }
-    ],
     "mr:0823-luppus": [
       {
         "role": "death",
@@ -22087,11 +22071,27 @@
         "source": "lead"
       }
     ],
-    "mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero": [
+    "mr:0823-marianus-garcia-mendez": [
+      {
+        "role": "death",
+        "la": "In óppido Silla in eódem pago",
+        "it": "Nella cittadina di Silla nello stesso territorio",
+        "source": "lead"
+      }
+    ],
+    "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": [
       {
         "role": "death",
         "la": "In vico Puzol item prope Valéntiam in Hispánia",
         "it": "Nel villaggio di Puzol sempre presso Valencia in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0823-protasius-bourdon": [
+      {
+        "role": "death",
+        "la": "Ad áncoras longe in mari ante Rupifórtium ad oram Gálliæ",
+        "it": "All’ancora nel mare antistante Rochefort sulla costa francese",
         "source": "lead"
       }
     ],
@@ -22143,19 +22143,19 @@
         "source": "lead"
       }
     ],
-    "mr:0824-maria-ab-incarnatione": [
-      {
-        "role": "death",
-        "la": "Tulcániæ in Æquatória",
-        "it": "A Tulcán in Ecuador",
-        "source": "lead"
-      }
-    ],
     "mr:0824-maria-michaela-a-sanctissimo-sacramento": [
       {
         "role": "death",
         "la": "Valéntiæ in Hispánia",
         "it": "A Valencia in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0824-maria-vincentia-rosal": [
+      {
+        "role": "death",
+        "la": "Tulcániæ in Æquatória",
+        "it": "A Tulcán in Ecuador",
         "source": "lead"
       }
     ],
@@ -22279,7 +22279,15 @@
         "source": "lead"
       }
     ],
-    "mr:0826-ambrosius-valls-matamales": [
+    "mr:0826-alexander-max-ginestar": [
+      {
+        "role": "death",
+        "la": "Hemeroscópii in pago Lucentíno item in Hispánia",
+        "it": "A Denia nel territorio di Alicante ancora in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0826-aloysius-valls-matamales": [
       {
         "role": "death",
         "la": "Valéntiæ item in Hispánia",
@@ -22327,7 +22335,7 @@
         "source": "lead"
       }
     ],
-    "mr:0826-laurentia-harasymiv": [
+    "mr:0826-leucadia-harasymiv": [
       {
         "role": "death",
         "la": "In óppido Kharsk prope Tomíscum in Sibiriána Rússiæ província",
@@ -22335,7 +22343,7 @@
         "source": "lead"
       }
     ],
-    "mr:0826-maria-a-iesu-crucifixo": [
+    "mr:0826-maria-baouardy": [
       {
         "role": "death",
         "la": "In civitáte Béthlehem in Terra Sancta",
@@ -22356,14 +22364,6 @@
         "role": "death",
         "la": "Romæ in cœmetério Basíllæ via Salária Vétere",
         "it": "A Roma sulla via Salaria antica nel cimitero di Basilla",
-        "source": "lead"
-      }
-    ],
-    "mr:0826-petrus-max-ginestar": [
-      {
-        "role": "death",
-        "la": "Hemeroscópii in pago Lucentíno item in Hispánia",
-        "it": "A Denia nel territorio di Alicante ancora in Spagna",
         "source": "lead"
       }
     ],
@@ -22551,14 +22551,6 @@
         "source": "lead"
       }
     ],
-    "mr:0828-aurelius-ample-alcaide": [
-      {
-        "role": "death",
-        "la": "Prope vicum Vinalésam in eódem pago Hispániæ",
-        "it": "Vicino al villaggio di Vinalesa ancora nello stesso territorio",
-        "source": "lead"
-      }
-    ],
     "mr:0828-carolus-arnaldus-hanus": [
       {
         "role": "death",
@@ -22612,6 +22604,14 @@
         "role": "death",
         "la": "In pago Valentíno item in Hispánia",
         "it": "Nel territorio di Valencia sempre in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0828-iosephus-ample-alcaide": [
+      {
+        "role": "death",
+        "la": "Prope vicum Vinalésam in eódem pago Hispániæ",
+        "it": "Vicino al villaggio di Vinalesa ancora nello stesso territorio",
         "source": "lead"
       }
     ],
@@ -22743,6 +22743,14 @@
         "source": "lead"
       }
     ],
+    "mr:0829-ioannina-szymkowiak": [
+      {
+        "role": "death",
+        "la": "Posnániæ in Polónia",
+        "it": "A Poznań in Polonia",
+        "source": "lead"
+      }
+    ],
     "mr:0829-ludovicus-vulfilacius-huppy": [
       {
         "role": "death",
@@ -22772,14 +22780,6 @@
         "role": "cult",
         "la": "Romæ",
         "it": "A Roma",
-        "source": "lead"
-      }
-    ],
-    "mr:0829-sancia-szymkowiak": [
-      {
-        "role": "death",
-        "la": "Posnániæ in Polónia",
-        "it": "A Poznań in Polonia",
         "source": "lead"
       }
     ],
@@ -22863,19 +22863,19 @@
         "source": "lead"
       }
     ],
-    "mr:0830-ioachim-ferrer-adell": [
-      {
-        "role": "death",
-        "la": "In itínere inter Puebla Tornesa et Villafamés prope Castáliam item in Hispánia",
-        "it": "Sulla strada tra Puebla Tornesa e Villafamés vicino a Castellón de la Plana sempre in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0830-ioannes-iuvenalis-ancina": [
       {
         "role": "death",
         "la": "Salútiis in Subalpínis",
         "it": "A Saluzzo in Piemonte",
+        "source": "lead"
+      }
+    ],
+    "mr:0830-iosephus-ferrer-adell": [
+      {
+        "role": "death",
+        "la": "In itínere inter Puebla Tornesa et Villafamés prope Castáliam item in Hispánia",
+        "it": "Sulla strada tra Puebla Tornesa e Villafamés vicino a Castellón de la Plana sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -22943,19 +22943,19 @@
         "source": "lead"
       }
     ],
-    "mr:0831-edmigius-primo-rodriguez-et-socii": [
-      {
-        "role": "death",
-        "la": "Almériæ in Hispánia",
-        "it": "Ad Almería in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
       {
         "role": "cult",
         "la": "Hierosólymæ",
         "it": "A Gerusalemme",
+        "source": "lead"
+      }
+    ],
+    "mr:0831-isidorus-primo-rodriguez-et-socii": [
+      {
+        "role": "death",
+        "la": "Almériæ in Hispánia",
+        "it": "Ad Almería in Spagna",
         "source": "lead"
       }
     ],
@@ -22991,14 +22991,6 @@
         "source": "lead"
       }
     ],
-    "mr:0901-christinus-roca-huguet-et-socii": [
-      {
-        "role": "death",
-        "la": "Apud Matrítum in Hispánia",
-        "it": "Presso Madrid in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0901-constantius": [
       {
         "role": "death",
@@ -23028,6 +23020,14 @@
         "role": "death",
         "la": "Apud Sénones in Néustria",
         "it": "A Sens in Neustria, ora in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0901-michael-roca-huguet-et-socii": [
+      {
+        "role": "death",
+        "la": "Apud Matrítum in Hispánia",
+        "it": "Presso Madrid in Spagna",
         "source": "lead"
       }
     ],
@@ -23337,14 +23337,6 @@
         "source": "lead"
       }
     ],
-    "mr:0904-bernardus-bieda-grau": [
-      {
-        "role": "death",
-        "la": "Prope vicum Genovés in pago Valentíno item in Hispánia",
-        "it": "Vicino al villaggio di Genovés nel territorio di Valencia sempre in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0904-bonifatius-i": [
       {
         "role": "burial",
@@ -23366,6 +23358,14 @@
         "role": "death",
         "la": "Caramániæ in Subalpínis",
         "it": "A Caramagna in Piemonte",
+        "source": "lead"
+      }
+    ],
+    "mr:0904-dina-belanger": [
+      {
+        "role": "death",
+        "la": "In urbe Sillery in Quebéco Cánadæ província",
+        "it": "Nella città di Sillery nel Québec in Canada",
         "source": "lead"
       }
     ],
@@ -23393,6 +23393,14 @@
         "source": "lead"
       }
     ],
+    "mr:0904-iosephus-bieda-grau": [
+      {
+        "role": "death",
+        "la": "Prope vicum Genovés in pago Valentíno item in Hispánia",
+        "it": "Vicino al villaggio di Genovés nel territorio di Valencia sempre in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0904-iosephus-paschalis-carda-saporta": [
       {
         "role": "death",
@@ -23414,14 +23422,6 @@
         "role": "death",
         "la": "Cabillóni in Gállia Lugdunénsi",
         "it": "A Châlon-sur-Saone nella Gallia lugdunense, ora in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:0904-maria": [
-      {
-        "role": "death",
-        "la": "In urbe Sillery in Quebéco Cánadæ província",
-        "it": "Nella città di Sillery nel Québec in Canada",
         "source": "lead"
       }
     ],
@@ -23505,7 +23505,7 @@
         "source": "lead"
       }
     ],
-    "mr:0905-teresia-gonhxa-bojaxhiu": [
+    "mr:0905-teresia-calcuttae": [
       {
         "role": "death",
         "la": "Calcúttæ in India",
@@ -23769,6 +23769,14 @@
         "source": "lead"
       }
     ],
+    "mr:0908-bonifatius-rodriguez-gonzalez-et-socii": [
+      {
+        "role": "death",
+        "la": "Almériæ ad litus Vandalíciæ Hispániæ regiónis",
+        "it": "Ad Almería sulla costa andalusa in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:0908-corbinianus": [
       {
         "role": "death",
@@ -23806,14 +23814,6 @@
         "role": "death",
         "la": "In civitáte Buñol prope Valéntiam item in Hispánia",
         "it": "Nella città di Buñol vicino a Valencia sempre in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii": [
-      {
-        "role": "death",
-        "la": "Almériæ ad litus Vandalíciæ Hispániæ regiónis",
-        "it": "Ad Almería sulla costa andalusa in Spagna",
         "source": "lead"
       }
     ],
@@ -23913,6 +23913,14 @@
         "source": "lead"
       }
     ],
+    "mr:0909-emma-uffing": [
+      {
+        "role": "death",
+        "la": "Monastérii in Germánia",
+        "it": "A Münster in Germania",
+        "source": "lead"
+      }
+    ],
     "mr:0909-franciscus-garate-aranguren": [
       {
         "role": "death",
@@ -23958,14 +23966,6 @@
         "role": "death",
         "la": "In Castélla Hispániæ regióne",
         "it": "Nella Castiglia in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0909-maria-euthymia-uffing": [
-      {
-        "role": "death",
-        "la": "Monastérii in Germánia",
-        "it": "A Münster in Germania",
         "source": "lead"
       }
     ],
@@ -24073,14 +24073,6 @@
         "source": "lead"
       }
     ],
-    "mr:0911-bonaventura-de-barcinone": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
-        "source": "lead"
-      }
-    ],
     "mr:0911-daniel": [
       {
         "role": "death",
@@ -24142,6 +24134,14 @@
         "role": "death",
         "la": "Tulli in Austrásia",
         "it": "A Toul in Austrasia, ora in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0911-michael-gran": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -24257,7 +24257,7 @@
         "source": "lead"
       }
     ],
-    "mr:0913-aurelius-maria-villalon-acebron": [
+    "mr:0913-benvenutus-villalon-acebron": [
       {
         "role": "death",
         "la": "Almériæ in Vandalícia Hispániæ regióne",
@@ -24585,14 +24585,6 @@
         "source": "lead"
       }
     ],
-    "mr:0916-laureanus-ferrer-cardet-et-socii": [
-      {
-        "role": "death",
-        "la": "In óppido Turís in pago Valentíno item in Hispánia",
-        "it": "Nella cittadina di Turís nel territorio di Valencia sempre in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0916-ludmilla": [
       {
         "role": "death",
@@ -24638,6 +24630,14 @@
         "role": "death",
         "la": "Córdubæ in Vandalícia Hispániæ regióne",
         "it": "A Córdova nell’Andalusia in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0916-salvator-ferrer-cardet-et-socii": [
+      {
+        "role": "death",
+        "la": "In óppido Turís in pago Valentíno item in Hispánia",
+        "it": "Nella cittadina di Turís nel territorio di Valencia sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -24777,14 +24777,6 @@
         "source": "lead"
       }
     ],
-    "mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez": [
-      {
-        "role": "death",
-        "la": "Monte Serráto in eódem pago Hispániæ",
-        "it": "A Montserrat nella stessa regione in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:0918-ariadna": [
       {
         "role": "death",
@@ -24886,6 +24878,14 @@
         "role": "death",
         "la": "Andláviæ in Alsátia Lotharíngiæ",
         "it": "Ad Andlau in Alsazia, nel territorio dell’odierna Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0918-salvator-chulia-ferrandis-et-socii": [
+      {
+        "role": "death",
+        "la": "Monte Serráto in eódem pago Hispániæ",
+        "it": "A Montserrat nella stessa regione in Spagna",
         "source": "lead"
       }
     ],
@@ -25266,19 +25266,19 @@
         "via": "mr:0922-carolus-navarro"
       }
     ],
-    "mr:0922-ignatius-de-sandone": [
-      {
-        "role": "death",
-        "la": "Augústæ Taurinórum in Subalpínis",
-        "it": "A Torino",
-        "source": "lead"
-      }
-    ],
     "mr:0922-iosephus-marchandon": [
       {
         "role": "death",
         "la": "In salo ante Rupifórtium in Gállia",
         "it": "Nel braccio di mare antistante Rochefort in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0922-laurentius-mauritius-belvisotti": [
+      {
+        "role": "death",
+        "la": "Augústæ Taurinórum in Subalpínis",
+        "it": "A Torino",
         "source": "lead"
       }
     ],
@@ -25498,14 +25498,6 @@
         "source": "lead"
       }
     ],
-    "mr:0924-columba-gabriel": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
-        "source": "lead"
-      }
-    ],
     "mr:0924-dalmatius-moner": [
       {
         "role": "death",
@@ -25535,6 +25527,14 @@
         "role": "death",
         "la": "In óppido Ollería item in pago Valentíno",
         "it": "Nella cittadina di Ollería sempre nel territorio di Valencia",
+        "source": "lead"
+      }
+    ],
+    "mr:0924-ioanna-gabriel": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -25626,7 +25626,7 @@
         "source": "lead"
       }
     ],
-    "mr:0925-ioannes-petrus-bengoa-aranguren-et-socii": [
+    "mr:0925-iosephus-bengoa-aranguren-et-socii": [
       {
         "role": "death",
         "la": "In óppido Carrión de Calatrava prope Civitátem Regálem item in Hispánia",
@@ -25682,19 +25682,19 @@
         "source": "lead"
       }
     ],
-    "mr:0926-bonaventura-esteve-flors": [
-      {
-        "role": "death",
-        "la": "In vico Gilet item in pago Valentíno",
-        "it": "Nel villaggio di Gilet sempre nella medesima regione",
-        "source": "lead"
-      }
-    ],
     "mr:0926-crescentia-valls-espi": [
       {
         "role": "death",
         "la": "In vico Puerto de Canals in pago Valentíno Hispániæ",
         "it": "Nel villaggio di Puerto de Canals nel territorio di Valencia in Spagna",
+        "source": "lead"
+      }
+    ],
+    "mr:0926-emmanuel-legua-marti": [
+      {
+        "role": "death",
+        "la": "Matríti item in Hispánia",
+        "it": "A Madrid sempre in Spagna",
         "source": "lead"
       }
     ],
@@ -25714,11 +25714,11 @@
         "source": "lead"
       }
     ],
-    "mr:0926-leo-legua-martus": [
+    "mr:0926-iulius-esteve-flors": [
       {
         "role": "death",
-        "la": "Matríti item in Hispánia",
-        "it": "A Madrid sempre in Spagna",
+        "la": "In vico Gilet item in pago Valentíno",
+        "it": "Nel villaggio di Gilet sempre nella medesima regione",
         "source": "lead"
       }
     ],
@@ -25727,14 +25727,6 @@
         "role": "death",
         "la": "Salérni in Campánia",
         "it": "A Salerno",
-        "source": "lead"
-      }
-    ],
-    "mr:0926-maria-a-refugio-et-maria-a-calvario": [
-      {
-        "role": "death",
-        "la": "Valéntiæ in Hispánia",
-        "it": "A Valencia in Spagna",
         "source": "lead"
       }
     ],
@@ -25754,6 +25746,14 @@
         "source": "lead"
       }
     ],
+    "mr:0926-maria-victoria-couderc": [
+      {
+        "role": "death",
+        "la": "Lugdúni in Gállia",
+        "it": "A Lione in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:0926-nilus-iunior": [
       {
         "role": "death",
@@ -25768,7 +25768,7 @@
         "la": "Valéntiæ in Hispánia",
         "it": "A Valencia in Spagna",
         "source": "lead",
-        "via": "mr:0926-maria-a-refugio-et-maria-a-calvario"
+        "via": "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana"
       }
     ],
     "mr:0926-sebastianus-nam-i-gwan-et-socii": [
@@ -25795,11 +25795,11 @@
         "source": "lead"
       }
     ],
-    "mr:0926-teresia-couderc": [
+    "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana": [
       {
         "role": "death",
-        "la": "Lugdúni in Gállia",
-        "it": "A Lione in Francia",
+        "la": "Valéntiæ in Hispánia",
+        "it": "A Valencia in Spagna",
         "source": "lead"
       }
     ],
@@ -26451,7 +26451,7 @@
         "source": "lead"
       }
     ],
-    "mr:1002-maria-guadalupe-ricart-olmos": [
+    "mr:1002-maria-francisca-ricart-olmos": [
       {
         "role": "death",
         "la": "In vico Silla prope Valéntiam item in Hispánia",
@@ -26691,6 +26691,14 @@
         "source": "lead"
       }
     ],
+    "mr:1005-ioannes-franciscus-carreri": [
+      {
+        "role": "death",
+        "la": "Viglebáni in Langobárdia",
+        "it": "A Vigevano in Lombardia",
+        "source": "lead"
+      }
+    ],
     "mr:1005-maria-faustina-kowalska": [
       {
         "role": "death",
@@ -26712,14 +26720,6 @@
         "role": "cult",
         "la": "Tréviris in Gállia Bélgica",
         "it": "A Treviri nella Gallia belgica, nel territorio dell’odierna Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:1005-matthaeus-carreri": [
-      {
-        "role": "death",
-        "la": "Viglebáni in Langobárdia",
-        "it": "A Vigevano in Lombardia",
         "source": "lead"
       }
     ],
@@ -26768,6 +26768,14 @@
         "role": "death",
         "la": "Lambáci in Bavária",
         "it": "A Lambach in Baviera, nell’odierna Austria",
+        "source": "lead"
+      }
+    ],
+    "mr:1006-anna-maria-gallo": [
+      {
+        "role": "death",
+        "la": "Neápoli in Campánia",
+        "it": "A Napoli",
         "source": "lead"
       }
     ],
@@ -26824,14 +26832,6 @@
         "role": "cult",
         "la": "In Venétia",
         "it": "In Veneto",
-        "source": "lead"
-      }
-    ],
-    "mr:1006-maria-francisca-a-vulneribus-domini": [
-      {
-        "role": "death",
-        "la": "Neápoli in Campánia",
-        "it": "A Napoli",
         "source": "lead"
       }
     ],
@@ -27043,6 +27043,14 @@
         "source": "lead"
       }
     ],
+    "mr:1009-emmanuel-canoura-arnau-et-socii": [
+      {
+        "role": "death",
+        "la": "In loco Turón in Astúria Hispániæ regióne",
+        "it": "In località Turón nelle Asturie in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:1009-gislenus": [
       {
         "role": "death",
@@ -27056,14 +27064,6 @@
         "role": "burial",
         "la": "Brennóviæ in Bohémia",
         "it": "A Břevnov in Boemia",
-        "source": "lead"
-      }
-    ],
-    "mr:1009-innocentius-ab-immaculata-et-socii": [
-      {
-        "role": "death",
-        "la": "In loco Turón in Astúria Hispániæ regióne",
-        "it": "In località Turón nelle Asturie in Spagna",
         "source": "lead"
       }
     ],
@@ -27088,14 +27088,6 @@
         "role": "death",
         "la": "In pago Bigorrénsi ad clivum montis Pyrenǽi",
         "it": "Nel territorio di Bigorre alle falde dei Pirenei in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:1010-angela-maria-truszkowska": [
-      {
-        "role": "death",
-        "la": "Cracóviæ in Polóniæ",
-        "it": "A Cracovia in Polonia",
         "source": "lead"
       }
     ],
@@ -27187,6 +27179,14 @@
         "source": "lead"
       }
     ],
+    "mr:1010-sophia-camilla-truszkowska": [
+      {
+        "role": "death",
+        "la": "Cracóviæ in Polóniæ",
+        "it": "A Cracovia in Polonia",
+        "source": "lead"
+      }
+    ],
     "mr:1010-tancha": [
       {
         "role": "death",
@@ -27251,6 +27251,14 @@
         "source": "lead"
       }
     ],
+    "mr:1011-emmanuela-torres-acosta": [
+      {
+        "role": "death",
+        "la": "Matríti in Hispánia",
+        "it": "A Madrid in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:1011-firminus": [
       {
         "role": "death",
@@ -27280,14 +27288,6 @@
         "role": "death",
         "la": "Bonóniæ in Æmília",
         "it": "A Bologna",
-        "source": "lead"
-      }
-    ],
-    "mr:1011-maria-desolata-torres-acosta": [
-      {
-        "role": "death",
-        "la": "Matríti in Hispánia",
-        "it": "A Madrid in Spagna",
         "source": "lead"
       }
     ],
@@ -27339,6 +27339,14 @@
         "source": "lead"
       }
     ],
+    "mr:1012-felix-de-nicola": [
+      {
+        "role": "death",
+        "la": "Asculi in Picéno Itáliæ",
+        "it": "Ad Ascoli",
+        "source": "lead"
+      }
+    ],
     "mr:1012-felix-iv": [
       {
         "role": "death",
@@ -27379,7 +27387,7 @@
         "source": "lead"
       }
     ],
-    "mr:1012-pacificus-salcedo-puchades": [
+    "mr:1012-petrus-salcedo-puchades": [
       {
         "role": "death",
         "la": "In vico Massamagrel in eódem pago Hispániæ",
@@ -27400,14 +27408,6 @@
         "role": "death",
         "la": "Pápiæ in Langobárdia",
         "it": "A Pavia",
-        "source": "lead"
-      }
-    ],
-    "mr:1012-seraphinus-de-monte-granario": [
-      {
-        "role": "death",
-        "la": "Asculi in Picéno Itáliæ",
-        "it": "Ad Ascoli",
         "source": "lead"
       }
     ],
@@ -27859,7 +27859,7 @@
         "source": "lead"
       }
     ],
-    "mr:1017-maria-natalia-a-sancto-ludovico-et-socii": [
+    "mr:1017-maria-ludovica-iosepha-vanot-et-socii": [
       {
         "role": "death",
         "la": "Valentiánæ item in Gállia",
@@ -28099,7 +28099,7 @@
         "source": "lead"
       }
     ],
-    "mr:1020-iacobus-kern": [
+    "mr:1020-franciscus-alexander-kern": [
       {
         "role": "death",
         "la": "Vindóbonæ in Austria",
@@ -28315,27 +28315,19 @@
         "source": "lead"
       }
     ],
-    "mr:1023-ambrosius-leo-lorente-vicente-et-socii": [
-      {
-        "role": "death",
-        "la": "In óppido Benimaclet item in pago Valentíno Hispániæ",
-        "it": "Nella cittadina di Benimaclet sempre nel territorio di Valencia in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:1023-arnoldus-reche": [
-      {
-        "role": "death",
-        "la": "Remis in Gállia",
-        "it": "A Reims in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:1023-benedictus": [
       {
         "role": "death",
         "la": "In pago Herbadíllico apud Pictávium in Aquitánia Gálliæ",
         "it": "Nel territorio di Herbauge presso Poitiers in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:1023-clotildis-iosepha-paillot-et-socii": [
+      {
+        "role": "death",
+        "la": "Valentiánæ in Gállia",
+        "it": "A Valencienne in Francia",
         "source": "lead"
       }
     ],
@@ -28395,6 +28387,14 @@
         "source": "lead"
       }
     ],
+    "mr:1023-iulianus-nicolaus-reche": [
+      {
+        "role": "death",
+        "la": "Remis in Gállia",
+        "it": "A Reims in Francia",
+        "source": "lead"
+      }
+    ],
     "mr:1023-leonardus-olivera-buera": [
       {
         "role": "death",
@@ -28403,19 +28403,19 @@
         "source": "lead"
       }
     ],
-    "mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii": [
-      {
-        "role": "death",
-        "la": "Valentiánæ in Gállia",
-        "it": "A Valencienne in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:1023-paulus-tong-viet-buong": [
       {
         "role": "death",
         "la": "In urbe Thọ-Ðức in Annámia",
         "it": "Nella città di Thọ-Đức nell’antico An Nam, ora Viet Nam",
+        "source": "lead"
+      }
+    ],
+    "mr:1023-petrus-lorente-vicente-et-socii": [
+      {
+        "role": "death",
+        "la": "In óppido Benimaclet item in pago Valentíno Hispániæ",
+        "it": "Nella cittadina di Benimaclet sempre nel territorio di Valencia in Spagna",
         "source": "lead"
       }
     ],
@@ -29924,6 +29924,14 @@
         "source": "lead"
       }
     ],
+    "mr:1108-elisabeth-maria-satellico": [
+      {
+        "role": "death",
+        "la": "Monte Novo in Picéno Itáliæ",
+        "it": "A Ostra Vetere nelle Marche",
+        "source": "lead"
+      }
+    ],
     "mr:1108-godefridus": [
       {
         "role": "burial",
@@ -29945,14 +29953,6 @@
         "role": "death",
         "la": "In urbe Nam Ðịnh in Tunquíno",
         "it": "Nella città di Nam Định nel Tonchino, ora Viet Nam",
-        "source": "lead"
-      }
-    ],
-    "mr:1108-maria-crucifixa-satellico": [
-      {
-        "role": "death",
-        "la": "Monte Novo in Picéno Itáliæ",
-        "it": "A Ostra Vetere nelle Marche",
         "source": "lead"
       }
     ],
@@ -30324,14 +30324,6 @@
         "source": "lead"
       }
     ],
-    "mr:1113-augustina-pietrantoni": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
-        "source": "lead"
-      }
-    ],
     "mr:1113-brictius": [
       {
         "role": "death",
@@ -30393,6 +30385,14 @@
         "role": "death",
         "la": "Viénnæ in Gállia Lugdunénsi",
         "it": "A Vienne nella Gallia lugdunense, ora in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:1113-livia-pietrantoni": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -30588,11 +30588,27 @@
         "source": "lead"
       }
     ],
+    "mr:1115-helena-de-chappotin-de-neuville": [
+      {
+        "role": "death",
+        "la": "Matútæ in Ligúria Itáliæ",
+        "it": "A Sanremo in Liguria",
+        "source": "lead"
+      }
+    ],
     "mr:1115-hugo-faringdon-et-socii": [
       {
         "role": "death",
         "la": "Radíngæ in Anglia",
         "it": "A Reading in Inghilterra",
+        "source": "lead"
+      }
+    ],
+    "mr:1115-iosephus-kalinowski": [
+      {
+        "role": "death",
+        "la": "Apud Wadowice in Polónia",
+        "it": "Presso Wadowice in Polonia",
         "source": "lead"
       }
     ],
@@ -30636,27 +30652,11 @@
         "source": "lead"
       }
     ],
-    "mr:1115-maria-a-passione": [
-      {
-        "role": "death",
-        "la": "Matútæ in Ligúria Itáliæ",
-        "it": "A Sanremo in Liguria",
-        "source": "lead"
-      }
-    ],
     "mr:1115-marinus-et-anianus": [
       {
         "role": "death",
         "la": "In monte Irschenberg in Bavária",
         "it": "Sul monte Irschenberg nella Baviera, in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:1115-raphael-kalinowski": [
-      {
-        "role": "death",
-        "la": "Apud Wadowice in Polónia",
-        "it": "Presso Wadowice in Polonia",
         "source": "lead"
       }
     ],
@@ -30900,7 +30900,7 @@
         "source": "lead"
       }
     ],
-    "mr:1118-grimoaldus-a-purificatione": [
+    "mr:1118-ferdinandus-santamaria": [
       {
         "role": "death",
         "la": "Fabratériæ apud Frusinónem in Itália",
@@ -30916,7 +30916,7 @@
         "source": "lead"
       }
     ],
-    "mr:1118-maria-a-refugio-et-socii": [
+    "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": [
       {
         "role": "death",
         "la": "Apud Matrítum in Hispánia",
@@ -31052,11 +31052,11 @@
         "source": "lead"
       }
     ],
-    "mr:1120-angela-a-sancto-ioseph-et-socii": [
+    "mr:1120-anna-felicis-viti": [
       {
         "role": "death",
-        "la": "Prope Valéntiam in Hispánia",
-        "it": "Vicino a Valencia in Spagna",
+        "la": "Vérulis in Látio Itáliæ",
+        "it": "A Veroli nel Lazio",
         "source": "lead"
       }
     ],
@@ -31116,6 +31116,14 @@
         "source": "lead"
       }
     ],
+    "mr:1120-francisca-lloret-marti-et-socii": [
+      {
+        "role": "death",
+        "la": "Prope Valéntiam in Hispánia",
+        "it": "Vicino a Valencia in Spagna",
+        "source": "lead"
+      }
+    ],
     "mr:1120-franciscus-xaverius-can": [
       {
         "role": "death",
@@ -31145,14 +31153,6 @@
         "role": "death",
         "la": "In vico Picadero de Paterna item in pago Valentíno Hispániæ",
         "it": "Nel villaggio di Picadero de Paterna sempre nel territorio di Valencia in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:1120-maria-fortunata-vitus": [
-      {
-        "role": "death",
-        "la": "Vérulis in Látio Itáliæ",
-        "it": "A Veroli nel Lazio",
         "source": "lead"
       }
     ],
@@ -31188,19 +31188,19 @@
         "source": "lead"
       }
     ],
+    "mr:1121-francisca-de-siedliska": [
+      {
+        "role": "death",
+        "la": "Romæ",
+        "it": "A Roma",
+        "source": "lead"
+      }
+    ],
     "mr:1121-gelasius-i": [
       {
         "role": "death",
         "la": "Romæ apud sanctum Petrum",
         "it": "A Roma presso san Pietro",
-        "source": "lead"
-      }
-    ],
-    "mr:1121-maria-a-iesu-bono-pastore": [
-      {
-        "role": "death",
-        "la": "Romæ",
-        "it": "A Roma",
         "source": "lead"
       }
     ],
@@ -31236,7 +31236,7 @@
         "source": "lead"
       }
     ],
-    "mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner": [
+    "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner": [
       {
         "role": "death",
         "la": "In civitáte Paterna in pago Valentíno Hispániæ",
@@ -31332,7 +31332,7 @@
         "source": "lead"
       }
     ],
-    "mr:1123-maria-caecilia-cendoya-y-araquistain": [
+    "mr:1123-maria-felicitas-cendoya-y-araquistain": [
       {
         "role": "death",
         "la": "Apud Matrítum in Hispánia",
@@ -31596,14 +31596,6 @@
         "source": "lead"
       }
     ],
-    "mr:1126-humilis-pirozzo": [
-      {
-        "role": "death",
-        "la": "Bisiniáni in Calábria",
-        "it": "A Bisignano in Calabria",
-        "source": "lead"
-      }
-    ],
     "mr:1126-iacobus-alberione": [
       {
         "role": "death",
@@ -31617,6 +31609,14 @@
         "role": "death",
         "la": "Romæ in convéntu Sancti Bonaventúræ in Palatíno",
         "it": "A Roma nel convento di San Bonaventura sul Palatino",
+        "source": "lead"
+      }
+    ],
+    "mr:1126-lucas-antonius-pirozzo": [
+      {
+        "role": "death",
+        "la": "Bisiniáni in Calábria",
+        "it": "A Bisignano in Calabria",
         "source": "lead"
       }
     ],
@@ -31665,14 +31665,6 @@
         "role": "death",
         "la": "Noviómi in Gállia",
         "it": "A Noyon in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:1127-bernardinus-de-fossa": [
-      {
-        "role": "death",
-        "la": "Aquilæ in Vestínis Itáliæ",
-        "it": "All’Aquila",
         "source": "lead"
       }
     ],
@@ -31729,6 +31721,14 @@
         "role": "death",
         "la": "In Pérside",
         "it": "In Persia",
+        "source": "lead"
+      }
+    ],
+    "mr:1127-ioannes-amici": [
+      {
+        "role": "death",
+        "la": "Aquilæ in Vestínis Itáliæ",
+        "it": "All’Aquila",
         "source": "lead"
       }
     ],
@@ -31812,19 +31812,19 @@
         "source": "lead"
       }
     ],
-    "mr:1128-ioannes-iesu-adradas-gonzalo-et-socii": [
-      {
-        "role": "death",
-        "la": "In loco Paracuellos del Jarama apud Matrítum in Hispánia",
-        "it": "In località Paracuellos del Jarama presso Madrid in Spagna",
-        "source": "lead"
-      }
-    ],
     "mr:1128-irenarchus": [
       {
         "role": "death",
         "la": "Sebáste in Arménia",
         "it": "A Sivas nell’antica Armenia",
+        "source": "lead"
+      }
+    ],
+    "mr:1128-marianus-adradas-gonzalo-et-socii": [
+      {
+        "role": "death",
+        "la": "In loco Paracuellos del Jarama apud Matrítum in Hispánia",
+        "it": "In località Paracuellos del Jarama presso Madrid in Spagna",
         "source": "lead"
       }
     ],
@@ -31857,14 +31857,6 @@
         "role": "death",
         "la": "In loco El Saler nuncupáto prope Valéntiam in Hispánia",
         "it": "In località detta El Saler vicino a Valencia in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce": [
-      {
-        "role": "death",
-        "la": "In ínsula Sumatrénsi Aceh",
-        "it": "Ad Aceh nell’isola di Sumatra",
         "source": "lead"
       }
     ],
@@ -31906,6 +31898,14 @@
         "role": "death",
         "la": "Tudérti in Umbria",
         "it": "A Todi in Umbria",
+        "source": "lead"
+      }
+    ],
+    "mr:1129-petrus-berthelot-et-thomas-rodriguez": [
+      {
+        "role": "death",
+        "la": "In ínsula Sumatrénsi Aceh",
+        "it": "Ad Aceh nell’isola di Sumatra",
         "source": "lead"
       }
     ],
@@ -32109,6 +32109,14 @@
         "source": "lead"
       }
     ],
+    "mr:1201-helisa-angela-meneguzzi": [
+      {
+        "role": "death",
+        "la": "In civitáte Dire Dawa in Æthiópia",
+        "it": "Nella città di Dire Dawa in Etiopia",
+        "source": "lead"
+      }
+    ],
     "mr:1201-ioannes-beche": [
       {
         "role": "death",
@@ -32122,14 +32130,6 @@
         "role": "death",
         "la": "Apud Forum Iúlii in Província",
         "it": "A Fréjus nella Provenza sempre in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:1201-liduina-meneguzzi": [
-      {
-        "role": "death",
-        "la": "In civitáte Dire Dawa in Æthiópia",
-        "it": "Nella città di Dire Dawa in Etiopia",
         "source": "lead"
       }
     ],
@@ -32181,19 +32181,19 @@
         "source": "lead"
       }
     ],
+    "mr:1202-melchior-chylinski": [
+      {
+        "role": "death",
+        "la": "In loco Logiewniki in Polónia",
+        "it": "In località Logiewniki in Polonia",
+        "source": "lead"
+      }
+    ],
     "mr:1202-pimenius": [
       {
         "role": "death",
         "la": "Romæ in cœmetério Pontiáni via Portuénsi",
         "it": "a Roma nel cimitero di Ponziano sulla via Portuense",
-        "source": "lead"
-      }
-    ],
-    "mr:1202-raphael-chylinski": [
-      {
-        "role": "death",
-        "la": "In loco Logiewniki in Polónia",
-        "it": "In località Logiewniki in Polonia",
         "source": "lead"
       }
     ],
@@ -32501,6 +32501,13 @@
         "source": "lead"
       }
     ],
+    "mr:1207-benedicta-rossello": [
+      {
+        "role": "death",
+        "la": "Savóne ad oram Itáliæ",
+        "source": "lead"
+      }
+    ],
     "mr:1207-carolus-garnier": [
       {
         "role": "death",
@@ -32522,13 +32529,6 @@
         "role": "death",
         "la": "In Palæstína",
         "it": "In Palestina",
-        "source": "lead"
-      }
-    ],
-    "mr:1207-maria-iosepha-rossello": [
-      {
-        "role": "death",
-        "la": "Savóne ad oram Itáliæ",
         "source": "lead"
       }
     ],
@@ -32620,7 +32620,7 @@
         "source": "lead"
       }
     ],
-    "mr:1209-bernardus-maria-a-iesu": [
+    "mr:1209-caesar-silvestrelli": [
       {
         "role": "death",
         "la": "Moricóne in Sabína Itáliæ",
@@ -32981,19 +32981,19 @@
         "source": "lead"
       }
     ],
+    "mr:1213-franciscus-marinoni": [
+      {
+        "role": "death",
+        "la": "Neápoli in Campánia",
+        "it": "A Napoli",
+        "source": "lead"
+      }
+    ],
     "mr:1213-ioanna-francisca-fremiot-de-chantal": [
       {
         "role": "death",
         "la": "In monastério Visitatiónis Molinénsi in Gállia",
         "it": "Nel monastero della Visitazione a Moulins in Francia",
-        "source": "lead"
-      }
-    ],
-    "mr:1213-ioannes-marinoni": [
-      {
-        "role": "death",
-        "la": "Neápoli in Campánia",
-        "it": "A Napoli",
         "source": "lead"
       }
     ],
@@ -33026,6 +33026,14 @@
         "role": "death",
         "la": "Neápoli in Campánia",
         "it": "A Napoli",
+        "source": "lead"
+      }
+    ],
+    "mr:1214-antonius-cubells-minguell": [
+      {
+        "role": "death",
+        "la": "Barcinóne in Hispánia",
+        "it": "A Barcellona in Spagna",
         "source": "lead"
       }
     ],
@@ -33098,14 +33106,6 @@
         "role": "death",
         "la": "Pápiæ in Ligúria",
         "it": "A Pavia",
-        "source": "lead"
-      }
-    ],
-    "mr:1214-protasius-cubells-minguell": [
-      {
-        "role": "death",
-        "la": "Barcinóne in Hispánia",
-        "it": "A Barcellona in Spagna",
         "source": "lead"
       }
     ],
@@ -33214,7 +33214,7 @@
         "source": "lead"
       }
     ],
-    "mr:1216-honoratus-kazminsky": [
+    "mr:1216-florentius-kazminsky": [
       {
         "role": "death",
         "la": "In urbe Nowe Miasto in Polónia",
@@ -33230,7 +33230,7 @@
         "source": "lead"
       }
     ],
-    "mr:1216-maria-ab-angelis": [
+    "mr:1216-marianna-fontanella": [
       {
         "role": "death",
         "la": "Augústæ Taurinórum in Subalpínis",
@@ -33246,7 +33246,7 @@
         "source": "lead"
       }
     ],
-    "mr:1216-sebastianus-de-madiis": [
+    "mr:1216-salvaticus-de-madiis": [
       {
         "role": "cult",
         "la": "Génuæ in Ligúria",
@@ -33270,7 +33270,7 @@
         "source": "lead"
       }
     ],
-    "mr:1217-hyacinthus-cormier": [
+    "mr:1217-henricus-cormier": [
       {
         "role": "death",
         "la": "Romæ apud Sanctam Sabínam in Aventíno",
@@ -33358,19 +33358,19 @@
         "source": "lead"
       }
     ],
+    "mr:1218-iulia-valle": [
+      {
+        "role": "death",
+        "la": "Borgári prope Augústam Taurinórum in Itália",
+        "it": "A Borgaro vicino a Torino",
+        "source": "lead"
+      }
+    ],
     "mr:1218-namphamo-et-socii": [
       {
         "role": "cult",
         "la": "In Africa",
         "it": "Nell’Africa settentrionale",
-        "source": "lead"
-      }
-    ],
-    "mr:1218-nemesia-valle": [
-      {
-        "role": "death",
-        "la": "Borgári prope Augústam Taurinórum in Itália",
-        "it": "A Borgaro vicino a Torino",
         "source": "lead"
       }
     ],
@@ -33661,6 +33661,14 @@
         "source": "lead"
       }
     ],
+    "mr:1224-constantia-cerioli": [
+      {
+        "role": "death",
+        "la": "Comónte apud Bérgomum in Langobárdia",
+        "it": "A Comonte vicino a Bergamo",
+        "source": "lead"
+      }
+    ],
     "mr:1224-delphinus": [
       {
         "role": "death",
@@ -33682,14 +33690,6 @@
         "role": "death",
         "la": "Apud Tréviros in Austrásia",
         "it": "Presso Treviri nell’Austrasia, in Germania",
-        "source": "lead"
-      }
-    ],
-    "mr:1224-paula-elisabeth-cerioli": [
-      {
-        "role": "death",
-        "la": "Comónte apud Bérgomum in Langobárdia",
-        "it": "A Comonte vicino a Bergamo",
         "source": "lead"
       }
     ],
@@ -33749,7 +33749,7 @@
         "source": "lead"
       }
     ],
-    "mr:1225-maria-ab-apostolis": [
+    "mr:1225-maria-teresia-von-wullenweber": [
       {
         "role": "death",
         "la": "Romæ",

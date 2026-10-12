@@ -50,7 +50,7 @@
 | 3 | 15 | `mr:0603-ioannes-grande` |  | ES | dies_natalis |  |  |
 | 3 | 16 | `mr:0603-carolus-renatus-collas-du-bignon` | * | FR | dies_natalis |  |  |
 | 3 | 17 | `mr:0603-petrus-dong` |  | VN | dies_natalis |  |  |
-| 3 | 18 | `mr:0603-didacus-oddi` | * | IT | dies_natalis |  |  |
+| 3 | 18 | `mr:0603-iosephus-oddi` | * | IT | dies_natalis |  |  |
 | 3 | 19 | `mr:0603-ioannes-xxiii` | * | IT | dies_natalis |  | Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his optional memorial was inscribed in the General Roman Calendar on 11 October. |
 | 4 | 1 | `mr:0604-quirinus` |  | HU | dies_natalis |  |  |
 | 4 | 2 | `mr:0604-metrophanes` |  | TR | dies_natalis |  |  |
@@ -108,7 +108,7 @@
 | 8 | 8 | `mr:0608-iacobus-berthieu` | * | MG | dies_natalis |  | Jacques Berthieu, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 8 | 9 | `mr:0608-maria-a-divino-corde-iesu` | * | PT | dies_natalis |  |  |
 | 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  | Mariam Thresia Chiramel Mankidiyan, blessed in the 2004 editions, was canonized on 13 October 2019. |
-| 8 | 11 | `mr:0608-nicolaus-de-gesturi` | * | IT | dies_natalis |  |  |
+| 8 | 11 | `mr:0608-ioannes-medda` | * | IT | dies_natalis |  |  |
 | 9 | (1) | `mr:0609-ephraem` |  | TR | dies_natalis | same as `mr:0618-ephraem` |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0609-diomedes` |  | TR | dies_natalis | same as `mr:0816-diomedes` |  |
@@ -139,7 +139,7 @@
 | 11 | 7 | `mr:0611-iolenta` | * | PL | dies_natalis |  |  |
 | 11 | 8 | `mr:0611-stephanus-bandelli` | * | IT | dies_natalis |  |  |
 | 11 | 9 | `mr:0611-ioannes-a-sancto-facundo` |  | ES | dies_natalis | same as `mr:0612-ioannes-a-sancto-facundo` |  |
-| 11 | 10 | `mr:0611-rosa-francisca-maria-a-doloribus` |  | ES | dies_natalis |  |  |
+| 11 | 10 | `mr:0611-maria-rosa-molas-vallve` |  | ES | dies_natalis |  |  |
 | 11 | 11 | `mr:0611-paula-frassinetti` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0611-maria-schinina` | * | IT | dies_natalis |  |  |
 | 11 | 13 | `mr:0611-ignatius-maloyan` | * | TR | dies_natalis |  | Ignatius Maloyan, blessed in the 2004 editions, was canonized on 19 October 2025. |
@@ -150,7 +150,7 @@
 | 12 | 5 | `mr:0612-eskillus` | * | SE | dies_natalis |  |  |
 | 12 | 6 | `mr:0612-guido` | * | IT | dies_natalis |  |  |
 | 12 | 7 | `mr:0612-placidus` | * | IT | dies_natalis |  |  |
-| 12 | 8 | `mr:0612-florida-cevoli` | * | IT | dies_natalis |  |  |
+| 12 | 8 | `mr:0612-lucretia-helena-cevoli` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:0612-gaspar-bertonus` |  | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  |  |
 | 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  |  |
@@ -201,7 +201,7 @@
 | 16 | 10 | `mr:0616-thomas-reding` | * | GB | dies_natalis |  |  |
 | 16 | 11 | `mr:0616-antonius-constans-auriel` | * | FR | dies_natalis |  |  |
 | 16 | 12 | `mr:0616-dominicus-nguyen-et-socii` |  | VN | dies_natalis |  |  |
-| 16 | 13 | `mr:0616-maria-teresia-scherer` | * | CH | dies_natalis |  |  |
+| 16 | 13 | `mr:0616-anna-maria-catharina-scherer` | * | CH | dies_natalis |  |  |
 | 17 | 1 | `mr:0617-blastus-et-diogenes` |  | IT | dies_natalis |  |  |
 | 17 | 2 | `mr:0617-isaurus-et-socii` |  | AL | dies_natalis |  |  |
 | 17 | 3 | `mr:0617-nicandrus-et-marcianus` |  | BG | dies_natalis |  |  |
@@ -268,7 +268,7 @@
 | 23 | 7 | `mr:0623-petrus-iacobus-de-pisauro` | * | IT | dies_natalis |  |  |
 | 23 | 8 | `mr:0623-thomas-garnet` |  | GB | dies_natalis |  |  |
 | 23 | 9 | `mr:0623-iosephus-cafasso` |  | IT | dies_natalis |  |  |
-| 23 | 10 | `mr:0623-maria-raphaela-cimatti` | * | IT | dies_natalis |  |  |
+| 23 | 10 | `mr:0623-sanctina-cimatti` | * | IT | dies_natalis |  |  |
 | 24 | (1) | `mr:0624-ioannes-baptista` |  | PS | celebratio |  | 2004 English: Translation error: "was filled with the Holy Spirit" (of John) where the Latin has "matris, Spíritu Sancto replétæ" (his mother, filled with the Holy Spirit). |
 | 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis | same as `mr:0623-ioannes` |  |
 | 24 | 3 | `mr:0624-simplicius` |  | FR | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 24 | 7 | `mr:0624-gohardus` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 24 | 8 | `mr:0624-theodgarus` | * | DK | dies_natalis |  |  |
 | 24 | 9 | `mr:0624-iosephus-yuan-zaide` |  | CN | dies_natalis |  |  |
-| 24 | 10 | `mr:0624-maria-a-guadalupe-garcia-zavala` | * | MX | dies_natalis |  | María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013. |
+| 24 | 10 | `mr:0624-anastasia-garcia-zavala` | * | MX | dies_natalis |  | María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013. |
 | 25 | 1 | `mr:0625-maximus` |  | IT | dies_natalis |  |  |
 | 25 | 2 | `mr:0625-prosperus-aquitanus` |  | FR | commemoratio |  |  |
 | 25 | 3 | `mr:0625-prosperus` |  | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'. 1749 Latin: This eulogy conflates Prosper of Reggio with Prosper of Aquitaine, the anti-Pelagian writer. |

@@ -20,9 +20,9 @@
 | 1 | 14 | `mr:0801-thomas-welbourne` | * | GB | dies_natalis |  |  |
 | 1 | 15 | `mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due` | * | VN | dies_natalis |  |  |
 | 1 | 16 | `mr:0801-petrus-iulianus-eymard` |  | FR | dies_natalis |  |  |
-| 1 | 17 | `mr:0801-benvenutus-de-miguel-arahal` | * | ES | dies_natalis |  |  |
+| 1 | 17 | `mr:0801-iosephus-de-miguel-arahal` | * | ES | dies_natalis |  |  |
 | 1 | 18 | `mr:0801-alexius-sobaszek` | * | DE | dies_natalis |  |  |
-| 1 | 19 | `mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii` | * | PL | dies_natalis |  |  |
+| 1 | 19 | `mr:0801-adelheidis-mardosewicz-et-socii` | * | PL | dies_natalis |  |  |
 | 2 | (1) | `mr:0802-eusebius` |  | IT | celebratio |  |  |
 | 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR | celebratio |  |  |
 | 2 | 3 | `mr:0802-rutilius` |  | TN | commemoratio |  |  |
@@ -78,7 +78,7 @@
 | 6 | 5 | `mr:0806-octavianus` | * | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0806-schecelinus` | * | LU | dies_natalis |  |  |
 | 6 | 7 | `mr:0806-dominicus` |  | IT | dies_natalis |  |  |
-| 6 | 8 | `mr:0806-maria-francisca-a-iesu` | * | UY | dies_natalis |  | Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022. |
+| 6 | 8 | `mr:0806-anna-maria-rubatto` | * | UY | dies_natalis |  | Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 6 | 9 | `mr:0806-carolus-lopez-vidal` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0806-thaddaeus-dulny` | * | DE | dies_natalis |  |  |
 | 7 | (1) | `mr:0807-xystus-ii-et-socii` |  | IT | celebratio |  |  |
@@ -92,7 +92,7 @@
 | 7 | 9 | `mr:0807-albertus-de-abbatibus` | * | IT | dies_natalis |  |  |
 | 7 | 10 | `mr:0807-albertus` | * | IT | dies_natalis |  |  |
 | 7 | 11 | `mr:0807-vincentius` | * | IT | dies_natalis |  |  |
-| 7 | 12 | `mr:0807-agathangelus-de-vindocino-et-cassianus-de-nannetibus` | * | ET | dies_natalis |  |  |
+| 7 | 12 | `mr:0807-franciscus-nourry-et-gundisalvus-vaz-lopez-netto` | * | ET | dies_natalis |  |  |
 | 7 | 13 | `mr:0807-ioannes-woodcock-et-socii` | * | GB | dies_natalis |  |  |
 | 7 | 14 | `mr:0807-nicolaus-postgate` | * | GB | dies_natalis |  |  |
 | 7 | 15 | `mr:0807-edmundus-bojanowski` | * | PL | dies_natalis |  |  |
@@ -111,12 +111,12 @@
 | 8 | 12 | `mr:0808-ioannes-fingley` | * | GB | dies_natalis |  |  |
 | 8 | 13 | `mr:0808-paulus-ke-tingzhu` |  | CN | dies_natalis |  |  |
 | 8 | 14 | `mr:0808-bonifatia-rodriguez-castro` | * | ES | dies_natalis |  | Bonifacia Rodríguez de Castro, blessed in the 2004 editions, was canonized on 23 October 2011. |
-| 8 | 15 | `mr:0808-maria-a-cruce` | * | AU | dies_natalis |  | Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010. |
-| 8 | 16 | `mr:0808-maria-margarita-caiani` | * | IT | dies_natalis |  |  |
+| 8 | 15 | `mr:0808-maria-helena-mackillop` | * | AU | dies_natalis |  | Mary of the Cross MacKillop, blessed in the 2004 editions, was canonized on 17 October 2010. |
+| 8 | 16 | `mr:0808-maria-anna-rosa-caiani` | * | IT | dies_natalis |  |  |
 | 8 | 17 | `mr:0808-antonius-silvestre-moya` | * | ES | dies_natalis |  |  |
 | 8 | 18 | `mr:0808-maria-a-iesu-infante-et-socii` | * | ES | dies_natalis |  |  |
 | 8 | 19 | `mr:0808-vladimirus-laskowski` | * | DE | dies_natalis |  |  |
-| 9 | (1) | `mr:0809-teresia-benedicta-a-cruce` |  | PL | dies_natalis |  |  |
+| 9 | (1) | `mr:0809-editha-stein` |  | PL | dies_natalis |  |  |
 | 9 | 2 | `mr:0809-romanus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0809-nathaeus` | * | IE | dies_natalis |  |  |
 | 9 | 4 | `mr:0809-fedliminus` | * | IE | dies_natalis |  |  |
@@ -126,12 +126,12 @@
 | 9 | 8 | `mr:0809-ioannes-de-firmo` | * | IT | dies_natalis |  |  |
 | 9 | 9 | `mr:0809-richardus-bere` | * | GB | dies_natalis |  |  |
 | 9 | 10 | `mr:0809-claudius-richard` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "dal monastero di Metz" where the Latin "e Mediáno monastério" is the abbey of Moyenmoutier. |
-| 9 | 11 | `mr:0809-candida-maria-a-iesu` | * | ES | dies_natalis |  | Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010. |
+| 9 | 11 | `mr:0809-ioanna-iosepha-cipitria` | * | ES | dies_natalis |  | Cándida María de Jesús Cipitria, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 9 | 12 | `mr:0809-florentinus-asensio-barroso` | * | ES | dies_natalis |  |  |
 | 9 | 13 | `mr:0809-ruben-a-iesu-lopez-aguilar-et-socii` | * | ES | dies_natalis |  |  |
 | 9 | 14 | `mr:0809-faustinus-oteiza-et-florentinus-felipe` | * | ES | dies_natalis |  |  |
 | 9 | 15 | `mr:0809-gulielmus-plaza-hernandez` | * | ES | dies_natalis |  |  |
-| 9 | 16 | `mr:0809-germanus-garrigues-hernandez` | * | ES | dies_natalis |  |  |
+| 9 | 16 | `mr:0809-iosephus-maria-garrigues-hernandez` | * | ES | dies_natalis |  |  |
 | 10 | (1) | `mr:0810-laurentius` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:0810-martyres-alexandriae` |  | EG | commemoratio |  |  |
 | 10 | 3 | `mr:0810-blanus` | * | GB | dies_natalis |  |  |
@@ -153,7 +153,7 @@
 | 11 | 10 | `mr:0811-gaugericus` |  | FR | dies_natalis |  |  |
 | 11 | 11 | `mr:0811-rusticola` | * | FR | dies_natalis |  |  |
 | 11 | 12 | `mr:0811-ioannes-sandys-et-stephanus-rowsham` | * | GB | dies_natalis |  |  |
-| 11 | 13 | `mr:0811-ioannes-georgius-rhem` | * | FR | dies_natalis |  |  |
+| 11 | 13 | `mr:0811-iacobus-rhem` | * | FR | dies_natalis |  |  |
 | 11 | 14 | `mr:0811-raphael-alonso-gutierrez` | * | ES | dies_natalis |  |  |
 | 11 | 15 | `mr:0811-michael-domingo-cendra` | * | ES | dies_natalis |  |  |
 | 11 | 16 | `mr:0811-mauritius-tornay` | * | CN | dies_natalis |  |  |
@@ -169,7 +169,7 @@
 | 12 | 10 | `mr:0812-petrus-jarrige-de-la-morelie-de-puyredon` | * | FR | dies_natalis |  |  |
 | 12 | 11 | `mr:0812-iacobus-do-mai-nam-et-socii` |  | VN | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). |
 | 12 | 12 | `mr:0812-victoria-diez-y-bustos-de-molina` | * | ES | dies_natalis |  |  |
-| 12 | 13 | `mr:0812-flavius-argueso-gonzalez` | * | ES | dies_natalis |  |  |
+| 12 | 13 | `mr:0812-atilanus-argueso-gonzalez` | * | ES | dies_natalis |  |  |
 | 12 | 14 | `mr:0812-sebastianus-calvo-martinez-et-socii` | * | ES | dies_natalis |  |  |
 | 12 | 15 | `mr:0812-antonius-perulles-estivill` | * | ES | dies_natalis |  |  |
 | 12 | 16 | `mr:0812-florianus-stepniak-et-iosephus-straszewski` | * | DE | dies_natalis |  |  |
@@ -186,7 +186,7 @@
 | 13 | 10 | `mr:0813-ioannes-berchmans` |  | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:0813-marcus-de-aviano` | * | AT | dies_natalis |  |  |
 | 13 | 12 | `mr:0813-petrus-gabilhaud` | * | FR | dies_natalis |  |  |
-| 13 | 13 | `mr:0813-benildus-romancon` |  | FR | dies_natalis |  |  |
+| 13 | 13 | `mr:0813-petrus-romancon` |  | FR | dies_natalis |  |  |
 | 13 | 14 | `mr:0813-secundinus-maria-ortega-garcia-et-socii` | * | ES | dies_natalis |  |  |
 | 13 | 15 | `mr:0813-ioannes-agramunt` | * | ES | dies_natalis |  |  |
 | 13 | 16 | `mr:0813-modestus-garcia-martus` | * | ES | dies_natalis |  |  |
@@ -219,12 +219,12 @@
 | 15 | 13 | `mr:0815-aloysius-batis-sainz-et-socii` |  | MX | dies_natalis |  |  |
 | 15 | 14 | `mr:0815-ludovicus-masferrer-vila-et-socii` | * | ES | dies_natalis |  |  |
 | 15 | 15 | `mr:0815-iosephus-maria-peris-polo` | * | ES | dies_natalis |  |  |
-| 15 | 16 | `mr:0815-maria-a-sacrario-a-sancto-aloysio-gonzaga` | * | ES | dies_natalis |  |  |
-| 15 | 17 | `mr:0815-dominicus-hurtado-soler` | * | ES | dies_natalis |  |  |
+| 15 | 16 | `mr:0815-elvira-moragas-cantarero` | * | ES | dies_natalis |  |  |
+| 15 | 17 | `mr:0815-augustinus-hurtado-soler` | * | ES | dies_natalis |  |  |
 | 15 | 18 | `mr:0815-vincentius-soler` | * | ES | dies_natalis |  |  |
 | 15 | 19 | `mr:0815-carmelus-sastre-sastre` | * | ES | dies_natalis |  |  |
 | 15 | 20 | `mr:0815-iacobus-bonet-nadal` | * | ES | dies_natalis |  |  |
-| 15 | 21 | `mr:0815-claudius-granzotto` | * | IT | dies_natalis |  |  |
+| 15 | 21 | `mr:0815-richardus-granzotto` | * | IT | dies_natalis |  |  |
 | 16 | (1) | `mr:0816-stephanus` |  | HU | celebratio | same as `mr:0820-stephanus`; same as `mr:0902-stephanus` | 2004 English: Translation error: "being Alba Regalis just and peaceful ... at in Hungary" where the Latin has "iustus et pacíficus ... donec Albæ Regáli in Hungária" (just and peaceful ... until, at Székesfehérvár in Hungary); and "churches" where the Latin has "ópibus" (wealth). |
 | 16 | 2 | `mr:0816-arsacius` |  | TR | commemoratio |  |  |
 | 16 | 3 | `mr:0816-theodorus` |  | CH | dies_natalis |  |  |
@@ -238,10 +238,10 @@
 | 16 | 11 | `mr:0816-simon-bokusai-kyota-et-socii` | * | JP | dies_natalis |  |  |
 | 16 | 12 | `mr:0816-ioannes-baptista-menestrel` | * | FR | dies_natalis |  |  |
 | 16 | 13 | `mr:0816-rosa-fan-hui` |  | CN | dies_natalis |  |  |
-| 16 | 14 | `mr:0816-petra-a-sancto-ioseph` | * | ES | dies_natalis |  |  |
+| 16 | 14 | `mr:0816-anna-iosepha-perez-florido` | * | ES | dies_natalis |  |  |
 | 16 | 15 | `mr:0816-placidus-garcia-gilabert` | * | ES | dies_natalis |  |  |
 | 16 | 16 | `mr:0816-henricus-garcia-beltran` | * | ES | dies_natalis |  |  |
-| 16 | 17 | `mr:0816-gabriel-sanchis-mompo` | * | ES | dies_natalis |  |  |
+| 16 | 17 | `mr:0816-iosephus-maria-sanchis-mompo` | * | ES | dies_natalis |  |  |
 | 17 | 1 | `mr:0817-myron` |  | TR | dies_natalis |  |  |
 | 17 | 2 | `mr:0817-mamas` |  | TR | dies_natalis |  |  |
 | 17 | 3 | `mr:0817-eusebius` |  | IT | dies_natalis | same as `mr:0926-eusebius-papa` |  |
@@ -329,7 +329,7 @@
 | 22 | 8 | `mr:0822-gulielmus-lacey-et-richardus-kirkman` | * | GB | dies_natalis |  |  |
 | 22 | 9 | `mr:0822-ioannes-wall` |  | GB | dies_natalis |  |  |
 | 22 | 10 | `mr:0822-ioannes-kemble` |  | GB | dies_natalis |  |  |
-| 22 | 11 | `mr:0822-bernardus-peroni` | * | IT | dies_natalis |  |  |
+| 22 | 11 | `mr:0822-dominicus-peroni` | * | IT | dies_natalis |  |  |
 | 22 | 12 | `mr:0822-elias-leymarie-de-laroche` | * | FR | dies_natalis |  |  |
 | 22 | 13 | `mr:0822-simeon-lukac` | * | UA | dies_natalis |  |  |
 | 23 | (1) | `mr:0823-rosa` |  | PE | celebratio |  |  |
@@ -341,11 +341,11 @@
 | 23 | 7 | `mr:0823-flavianus` |  | FR | dies_natalis |  |  |
 | 23 | 8 | `mr:0823-eugenius` | * | IE | dies_natalis |  |  |
 | 23 | 9 | `mr:0823-antonius-de-hieracio` | * | IT | dies_natalis |  |  |
-| 23 | 10 | `mr:0823-ioannes-bourdon` | * | FR | dies_natalis |  |  |
+| 23 | 10 | `mr:0823-protasius-bourdon` | * | FR | dies_natalis |  |  |
 | 23 | 11 | `mr:0823-constantinus-carbonell-sempere-et-socii` | * | ES | dies_natalis |  |  |
 | 23 | 12 | `mr:0823-florentinus-perez-romero-et-urbanus-gil-saez` | * | ES | dies_natalis |  |  |
-| 23 | 13 | `mr:0823-ioannes-maria-a-cruce` | * | ES | dies_natalis |  |  |
-| 23 | 14 | `mr:0823-rosaria-quintana-argos-et-seraphina-fernandez-ibero` | * | ES | dies_natalis |  |  |
+| 23 | 13 | `mr:0823-marianus-garcia-mendez` | * | ES | dies_natalis |  |  |
+| 23 | 14 | `mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero` | * | ES | dies_natalis |  |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE | dies_natalis |  |  |
 | 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis | same as `mr:0825-bartholomaeus-apostolus` |  |
 | 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  | 1914 English: Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian). |
@@ -356,7 +356,7 @@
 | 24 | 7 | `mr:0824-ioanna-antida-thouret` |  | IT | dies_natalis |  |  |
 | 24 | 8 | `mr:0824-aemilia-de-vialar` |  | FR | dies_natalis |  |  |
 | 24 | 9 | `mr:0824-maria-michaela-a-sanctissimo-sacramento` |  | ES | dies_natalis |  |  |
-| 24 | 10 | `mr:0824-maria-ab-incarnatione` | * | EC | dies_natalis |  |  |
+| 24 | 10 | `mr:0824-maria-vincentia-rosal` | * | EC | dies_natalis |  |  |
 | 24 | 11 | `mr:0824-maximianus-binkiewicz` | * | DE | dies_natalis |  |  |
 | 24 | 12 | `mr:0824-ceslaus-jozwiak-et-socii` | * | DE | dies_natalis |  |  |
 | 25 | (1) | `mr:0825-ludovicus-nonus` |  | FR | dies_natalis |  |  |
@@ -381,12 +381,12 @@
 | 26 | 6 | `mr:0826-eleutherius` |  | FR | dies_natalis | same as `mr:0816-eleutherius` |  |
 | 26 | 7 | `mr:0826-iacobus-retouret` | * | FR | dies_natalis |  |  |
 | 26 | 8 | `mr:0826-ioanna-elisabeth-bichier` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Puy-en-Vélay" where the Latin has "Podii apud Pictavium" (La Puye, near Poitiers). |
-| 26 | 9 | `mr:0826-maria-a-iesu-crucifixo` | * | PS | dies_natalis |  | Mary of Jesus Crucified (Mariam Baouardy), blessed in the 2004 editions, was canonized on 17 May 2015. |
+| 26 | 9 | `mr:0826-maria-baouardy` | * | PS | dies_natalis |  | Mary of Jesus Crucified (Mariam Baouardy), blessed in the 2004 editions, was canonized on 17 May 2015. |
 | 26 | 10 | `mr:0826-teresia-jornet-ibars` |  | ES | dies_natalis |  |  |
-| 26 | 11 | `mr:0826-ambrosius-valls-matamales` | * | ES | dies_natalis |  |  |
-| 26 | 12 | `mr:0826-petrus-max-ginestar` | * | ES | dies_natalis |  |  |
+| 26 | 11 | `mr:0826-aloysius-valls-matamales` | * | ES | dies_natalis |  |  |
+| 26 | 12 | `mr:0826-alexander-max-ginestar` | * | ES | dies_natalis |  |  |
 | 26 | 13 | `mr:0826-felix-vivet-trabal` | * | ES | dies_natalis |  |  |
-| 26 | 14 | `mr:0826-laurentia-harasymiv` | * | RU | dies_natalis |  |  |
+| 26 | 14 | `mr:0826-leucadia-harasymiv` | * | RU | dies_natalis |  |  |
 | 26 | 15 | `mr:0826-maria-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
 | 27 | (1) | `mr:0827-monica` |  | IT | dies_natalis | same as `mr:0504-monica` |  |
 | 27 | 2 | `mr:0827-rufus` |  | IT | dies_natalis |  |  |
@@ -424,7 +424,7 @@
 | 28 | 14 | `mr:0828-carolus-arnaldus-hanus` | * | FR | dies_natalis |  |  |
 | 28 | 15 | `mr:0828-ioachima-de-vedruna` |  | ES | dies_natalis |  |  |
 | 28 | 16 | `mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt` | * | ES | dies_natalis |  |  |
-| 28 | 17 | `mr:0828-aurelius-ample-alcaide` | * | ES | dies_natalis |  |  |
+| 28 | 17 | `mr:0828-iosephus-ample-alcaide` | * | ES | dies_natalis |  |  |
 | 28 | 18 | `mr:0828-alphonsus-maria-mazurek` | * | PL | dies_natalis |  |  |
 | 29 | (1) | `mr:0829-ioannes-baptista` |  | JO | dies_natalis |  |  |
 | 29 | 2 | `mr:0829-basilla` |  | HR | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna. |
@@ -442,7 +442,7 @@
 | 29 | 14 | `mr:0829-constantinus-fernandez-alvarez` | * | ES | dies_natalis |  |  |
 | 29 | 15 | `mr:0829-franciscus-monzon-romeo` | * | ES | dies_natalis |  |  |
 | 29 | 16 | `mr:0829-dominicus-jedrzejewski` | * | DE | dies_natalis |  |  |
-| 29 | 17 | `mr:0829-sancia-szymkowiak` | * | PL | dies_natalis |  |  |
+| 29 | 17 | `mr:0829-ioannina-szymkowiak` | * | PL | dies_natalis |  |  |
 | 29 | 18 | `mr:0829-teresia-bracco` | * | IT | dies_natalis |  |  |
 | 30 | 1 | `mr:0830-felix-et-adauctus` |  | IT | dies_natalis |  |  |
 | 30 | 2 | `mr:0830-sexaginta-martyres-coloniae-sufetanae` |  | TN | commemoratio |  | 2004 English: Translation error: "were burned" where the Latin has "cæsi sunt" (were slain). |
@@ -456,7 +456,7 @@
 | 30 | 10 | `mr:0830-ioannes-iuvenalis-ancina` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0830-maria-rafols` | * | ES | dies_natalis |  |  |
 | 30 | 12 | `mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "vescovo di Cadice" (Cádiz) where the Latin has "Guadicensis" (of Guadix). |
-| 30 | 13 | `mr:0830-ioachim-ferrer-adell` | * | ES | dies_natalis |  |  |
+| 30 | 13 | `mr:0830-iosephus-ferrer-adell` | * | ES | dies_natalis |  |  |
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES | dies_natalis |  |  |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT | dies_natalis |  |  |
 | 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | IL | commemoratio | same as `mr:0317-ioseph` |  |
@@ -465,4 +465,4 @@
 | 31 | 4 | `mr:0831-aidanus` |  | GB | dies_natalis |  |  |
 | 31 | 5 | `mr:0831-raymundus-nonnatus` |  | ES | dies_natalis | same as `mr:0826-raymundus-nonnatus` |  |
 | 31 | 6 | `mr:0831-andreas-de-burgo-sancti-sepulcri` | * | IT | dies_natalis |  |  |
-| 31 | 7 | `mr:0831-edmigius-primo-rodriguez-et-socii` | * | ES | dies_natalis |  |  |
+| 31 | 7 | `mr:0831-isidorus-primo-rodriguez-et-socii` | * | ES | dies_natalis |  |  |
