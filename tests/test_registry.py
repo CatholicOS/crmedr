@@ -123,7 +123,7 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
 
     # "et" inside a religious name, a feast title or two titles of one subject, not a
     # second subject.
-    NOT_MULTI = {"mr:0724-modestinus-a-iesu-et-maria",
+    NOT_MULTI = {"mr:0724-dominicus-mazzarello",
                  "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
                  "mr:1229-david-rex-et-propheta", "mr:0826-melchisedech-rex-et-sacerdos",
                  "mr:0921-matthaeus-apostolus-et-evangelista", "mr:1227-ioannes-apostolus-et-evangelista"}

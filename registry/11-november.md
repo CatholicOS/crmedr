@@ -111,7 +111,7 @@
 | 8 | 4 | `mr:1108-willehadus` |  | DE | dies_natalis |  |  |
 | 8 | 5 | `mr:1108-godefridus` |  | FR | depositio |  | 2004 Italian: Translation error: "per un quinquennio" (for five years) where the Latin has "a quinquénnio" (from the age of five). 2004 English: Translation error: "from the age of fifteen" where the Latin has "a quinquénnio" (from the age of five). |
 | 8 | 6 | `mr:1108-ioannes-duns-scotus` | * | DE | dies_natalis |  |  |
-| 8 | 7 | `mr:1108-maria-crucifixa-satellico` | * | IT | dies_natalis |  | 2004 English: Translation error: "Montegranaro" where the Latin has "Monte Novo" (Montenovo, today Ostra Vetere). |
+| 8 | 7 | `mr:1108-elisabeth-maria-satellico` | * | IT | dies_natalis |  | 2004 English: Translation error: "Montegranaro" where the Latin has "Monte Novo" (Montenovo, today Ostra Vetere). |
 | 8 | 8 | `mr:1108-iosephus-nguyen-dinh-nghi-et-socii` |  | VN | dies_natalis |  |  |
 | 9 | (1) | `mr:1109-dedicatio-basilicae-lateranensis` |  | IT | dedicatio |  |  |
 | 9 | 2 | `mr:1109-ursinus` |  | FR | dies_natalis |  |  |
@@ -174,7 +174,7 @@
 | 13 | 13 | `mr:1113-abbo` | * | FR | dies_natalis |  |  |
 | 13 | 14 | `mr:1113-varmundus` | * | IT | commemoratio |  |  |
 | 13 | 15 | `mr:1113-homobonus` |  | IT | dies_natalis |  |  |
-| 13 | 16 | `mr:1113-augustina-pietrantoni` |  | IT | dies_natalis |  |  |
+| 13 | 16 | `mr:1113-livia-pietrantoni` |  | IT | dies_natalis |  |  |
 | 13 | 17 | `mr:1113-ioannes-gonga-martinez` | * | ES | dies_natalis |  |  |
 | 13 | 18 | `mr:1113-maria-a-patrocinio-a-sancto-ioanne` | * | ES | dies_natalis |  |  |
 | 13 | 19 | `mr:1113-petrus-vicev-et-socii` | * | BG | dies_natalis |  |  |
@@ -207,8 +207,8 @@
 | 15 | 15 | `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` |  | PY | dies_natalis |  |  |
 | 15 | 16 | `mr:1115-iosephus-pignatelli` |  | IT | dies_natalis |  |  |
 | 15 | 17 | `mr:1115-iosephus-mkasa-balikuddembe` |  | UG | dies_natalis |  |  |
-| 15 | 18 | `mr:1115-maria-a-passione` | * | IT | dies_natalis |  | 2004 English: Translation error: "Savona" where the Latin has "Matútæ" (Sanremo). |
-| 15 | 19 | `mr:1115-raphael-kalinowski` |  | PL | dies_natalis |  |  |
+| 15 | 18 | `mr:1115-helena-de-chappotin-de-neuville` | * | IT | dies_natalis |  | 2004 English: Translation error: "Savona" where the Latin has "Matútæ" (Sanremo). |
+| 15 | 19 | `mr:1115-iosephus-kalinowski` |  | PL | dies_natalis |  |  |
 | 16 | (1) | `mr:1116-margarita` |  | HU | dies_natalis | same as `mr:0610-margarita` |  |
 | 16 | (2) | `mr:1116-gertrudis-magna` |  | DE | celebratio | same as `mr:1115-gertrudis-magna` |  |
 | 16 | 3 | `mr:1116-augustinus-et-felicitas` |  | IT | dies_natalis |  |  |
@@ -246,9 +246,9 @@
 | 18 | 7 | `mr:1118-odo` |  | FR | dies_natalis |  |  |
 | 18 | 8 | `mr:1118-leonardus-kimura-et-socii` | * | JP | dies_natalis |  |  |
 | 18 | 9 | `mr:1118-philippina-duchesne` |  | US | dies_natalis |  |  |
-| 18 | 10 | `mr:1118-grimoaldus-a-purificatione` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ferentino" where the Latin has "Fabratériæ" (Ceccano). |
+| 18 | 10 | `mr:1118-ferdinandus-santamaria` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ferentino" where the Latin has "Fabratériæ" (Ceccano). |
 | 18 | 11 | `mr:1118-carolina-kozka` | * | PL | dies_natalis |  |  |
-| 18 | 12 | `mr:1118-maria-a-refugio-et-socii` | * | ES | dies_natalis |  |  |
+| 18 | 12 | `mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii` | * | ES | dies_natalis |  |  |
 | 19 | 1 | `mr:1119-abdias-propheta` |  | IL | commemoratio |  |  |
 | 19 | 2 | `mr:1119-maximus` |  | TR | dies_natalis |  |  |
 | 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  |  |
@@ -272,8 +272,8 @@
 | 20 | 11 | `mr:1120-bernwardus` |  | DE | dies_natalis | same as `mr:1026-bernwardus` |  |
 | 20 | 12 | `mr:1120-cyprianus` | * | IT | dies_natalis |  |  |
 | 20 | 13 | `mr:1120-franciscus-xaverius-can` |  | VN | dies_natalis |  |  |
-| 20 | 14 | `mr:1120-maria-fortunata-vitus` | * | IT | dies_natalis |  |  |
-| 20 | 15 | `mr:1120-angela-a-sancto-ioseph-et-socii` | * | ES | dies_natalis |  |  |
+| 20 | 14 | `mr:1120-anna-felicis-viti` | * | IT | dies_natalis |  |  |
+| 20 | 15 | `mr:1120-francisca-lloret-marti-et-socii` | * | ES | dies_natalis |  |  |
 | 20 | 16 | `mr:1120-maria-a-miraculis-ortells-gimeno` | * | ES | dies_natalis |  |  |
 | 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | IL | celebratio |  |  |
 | 21 | 2 | `mr:1121-rufus` |  |  | commemoratio |  |  |
@@ -281,7 +281,7 @@
 | 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` |  |
 | 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis | same as `mr:0120-maurus` | 2004 English: Translation error: "Cresson in Umbria" where the Latin has "Cæsénæ in Flamínia" (Cesena in Flaminia). |
-| 21 | 7 | `mr:1121-maria-a-iesu-bono-pastore` | * | IT | dies_natalis |  |  |
+| 21 | 7 | `mr:1121-francisca-de-siedliska` | * | IT | dies_natalis |  |  |
 | 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis | same as `mr:0916-caecilia` |  |
 | 22 | 2 | `mr:1122-philemon-colossensis` |  | TR | commemoratio |  |  |
 | 22 | 3 | `mr:1122-ananias` |  | IR | dies_natalis |  |  |
@@ -290,7 +290,7 @@
 | 22 | 6 | `mr:1122-salvator-lilli-et-socii` | * | TR | dies_natalis |  |  |
 | 22 | 7 | `mr:1122-thomas-reggio` | * | IT | dies_natalis |  |  |
 | 22 | 8 | `mr:1122-petrus-esqueda-ramirez` |  | MX | dies_natalis |  |  |
-| 22 | 9 | `mr:1122-elias-torrijo-sanchez-et-bertrandus-lahoz-moliner` | * | ES | dies_natalis |  |  |
+| 22 | 9 | `mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner` | * | ES | dies_natalis |  |  |
 | 23 | (1) | `mr:1123-clemens-i` |  | IT | depositio |  |  |
 | 23 | (2) | `mr:1123-columbanus` |  | IT | dies_natalis | same as `mr:1121-columbanus` |  |
 | 23 | 3 | `mr:1123-felicitas` |  | IT | dies_natalis |  |  |
@@ -305,7 +305,7 @@
 | 23 | 12 | `mr:1123-margarita-de-sabaudia` | * | IT | dies_natalis |  |  |
 | 23 | 13 | `mr:1123-caecilia-yu-so-sa` |  | KR | dies_natalis |  |  |
 | 23 | 14 | `mr:1123-michael-augustinus-pro` | * | MX | dies_natalis |  |  |
-| 23 | 15 | `mr:1123-maria-caecilia-cendoya-y-araquistain` | * | ES | dies_natalis |  |  |
+| 23 | 15 | `mr:1123-maria-felicitas-cendoya-y-araquistain` | * | ES | dies_natalis |  |  |
 | 24 | (1) | `mr:1124-andreas-dung-lac-et-socii` |  | VN | celebratio |  | 2004 Latin: Misprint: footnote 1 prints "Emmanuel Lê Văn Phụng" twice in a row; he is one martyr, listed once in the index of names. The list also seems to leave out Bishop Stephanus Theodorus Cuénot, one of the 117 martyrs canonized together: with Andreas Dũng Lạc it names 116, and the index gives Cuénot only his own day (14 November), though martyrs with a day of their own, such as Emmanuel Lê Văn Phụng (13 July), are listed here too. |
 | 24 | 2 | `mr:1124-chrysogonus` |  | IT | dedicatio |  |  |
 | 24 | 3 | `mr:1124-firmina` |  | IT | dies_natalis |  |  |
@@ -338,7 +338,7 @@
 | 26 | 7 | `mr:1126-silvester-gozzolini` |  | IT | dies_natalis |  |  |
 | 26 | 8 | `mr:1126-delphina` | * | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:1126-hugo-taylor-et-marmaducus-bowes` | * | GB | dies_natalis |  |  |
-| 26 | 10 | `mr:1126-humilis-pirozzo` |  | IT | dies_natalis |  |  |
+| 26 | 10 | `mr:1126-lucas-antonius-pirozzo` |  | IT | dies_natalis |  |  |
 | 26 | 11 | `mr:1126-leonardus-a-portu-mauritio` |  | IT | dies_natalis |  |  |
 | 26 | 12 | `mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen` |  | VN | dies_natalis |  |  |
 | 26 | 13 | `mr:1126-caietana-sterni` | * | IT | dies_natalis |  |  |
@@ -355,7 +355,7 @@
 | 27 | 10 | `mr:1127-fergustus` | * | GB | dies_natalis |  |  |
 | 27 | 11 | `mr:1127-virgilius` |  | AT | dies_natalis |  |  |
 | 27 | 12 | `mr:1127-gulstanus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Belle-Île" where the Latin has "in loco Bello Visu" (Beauvoir-sur-Mer). |
-| 27 | 13 | `mr:1127-bernardinus-de-fossa` | * | IT | dies_natalis |  |  |
+| 27 | 13 | `mr:1127-ioannes-amici` | * | IT | dies_natalis |  |  |
 | 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  |  |
 | 27 | 15 | `mr:1127-bronislaus-kostowski` | * | DE | dies_natalis |  |  |
 | 28 | 1 | `mr:1128-irenarchus` |  | TR | dies_natalis | same as `mr:1127-irenarchus-et-socii` |  |
@@ -365,7 +365,7 @@
 | 28 | 5 | `mr:1128-iacobus-picenus` |  | IT | depositio |  |  |
 | 28 | 6 | `mr:1128-iacobus-thomson` | * | GB | dies_natalis |  |  |
 | 28 | 7 | `mr:1128-andreas-tran-van-trong` |  | VN | dies_natalis |  |  |
-| 28 | 8 | `mr:1128-ioannes-iesu-adradas-gonzalo-et-socii` | * | ES | dies_natalis |  |  |
+| 28 | 8 | `mr:1128-marianus-adradas-gonzalo-et-socii` | * | ES | dies_natalis |  |  |
 | 28 | 9 | `mr:1128-aloysius-campos-gorriz` | * | ES | dies_natalis |  |  |
 | 29 | 1 | `mr:1129-saturninus-carthaginensis` |  | IT | dies_natalis |  |  |
 | 29 | 2 | `mr:1129-saturninus` |  | FR | commemoratio |  |  |
@@ -375,7 +375,7 @@
 | 29 | 6 | `mr:1129-radbodus` | * | NL | translatio |  |  |
 | 29 | 7 | `mr:1129-eduardus-burden` | * | GB | dies_natalis |  |  |
 | 29 | 8 | `mr:1129-georgius-errington-et-socii` | * | GB | dies_natalis |  |  |
-| 29 | 9 | `mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce` | * | ID | dies_natalis |  |  |
+| 29 | 9 | `mr:1129-petrus-berthelot-et-thomas-rodriguez` | * | ID | dies_natalis |  |  |
 | 29 | 10 | `mr:1129-franciscus-antonius-fasani` |  | IT | dies_natalis |  |  |
 | 29 | 11 | `mr:1129-alaphridus-simon-colomina` | * | ES | dies_natalis |  |  |
 | 30 | (1) | `mr:1130-andreas-apostolus` |  | GR | dies_natalis |  |  |

@@ -72,7 +72,7 @@ mr:0512-imelda-lambertini (10\*), mr:0524-servulus (4\*), mr:0611-bardo (4\*),
 mr:0624-gohardus (7\*) — note: the earlier draft called this entry "Goardo" without a date;
 it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) nor
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
-mr:0711-leontius (5\*), mr:0718-tarsicia-mackiv (13\*), mr:0730-godeleva (6\*),
+mr:0711-leontius (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva (6\*),
 mr:0802-betharius (8\*), mr:0807-donatus-vesontione (7\*),
 mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus (8\*), mr:1026-eata (7\*),
 mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
@@ -386,7 +386,7 @@ mr:0320-photina-et-socii (1749), mr:0823-philippus-benizi (1749) and mr:0324-pig
 The subjects follow the 2004 texts, each language its own edition (the Latin and the
 Italian sometimes differ in *sanctus/beatus*). The same review corrected subjects
 that had been taken from the place too: 19 Latin honorifics (e.g. mr:0726-camilla-gentili,
-"Sanctus Camilla" -> "Beata Camilla Gentili"; mr:0104-christiana-menabuoi, from "In
+"Sanctus Camilla" -> "Beata Camilla Gentili"; mr:0104-oringa-menabuoi, from "In
 Sancta Cruce", is *beata*), 16 Latin honorifics of the wrong gender or number
 ("Sanctus Agnes", "Sanctus Scillitani"), 14 Italian subjects that were the place
 ("Santa Croce in Val d’Arno") and 4 English ones that named the place's saint.
@@ -413,7 +413,7 @@ the slugs.
 | mr:0110-petrus-urseoli | mr:0110-petrus-urseolus |
 | mr:0125-arthematis | mr:0125-arthemas |
 | mr:0129-gilda-sapientis | mr:0129-gilda-sapiens |
-| mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-pietas-a-cruce |
+| mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-thomasina-ortiz-real |
 | mr:0307-paulus-simplicis | mr:0307-paulus-simplex |
 | mr:0424-gulielmus-firmati | mr:0424-gulielmus-firmatus |
 | mr:0425-pasicratis-et-valentio | mr:0425-pasicrates-et-valentio |
@@ -511,7 +511,7 @@ subjects follow the slugs.
 | mr:0701-ioannes-baptista-duverneuil | mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie |
 | mr:0707-antoninus-fantosati | mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro |
 | mr:0707-rogerius-dickinson | mr:0707-rogerius-dickinson-et-radulphus-milner |
-| mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert | mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu |
+| mr:0710-maria-gertrudis-a-sancta-sophia-de-ripert | mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon |
 | mr:0711-placidus | mr:0711-placidus-et-sigisbertus |
 | mr:0713-ludovicus-armandus-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
 | mr:0716-andreas-de-soveral | mr:0716-andreas-de-soveral-et-dominicus-carvalho |
@@ -570,7 +570,7 @@ subjects follow the slugs.
 | mr:1119-elisaeus-garcia | mr:1119-elisaeus-garcia-et-alexander-planas-sauri |
 | mr:1126-hugo-taylor | mr:1126-hugo-taylor-et-marmaducus-bowes |
 | mr:1126-thomas | mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen |
-| mr:1129-dionysius-a-nativitate-berthelot | mr:1129-dionysius-a-nativitate-et-redemptus-a-cruce |
+| mr:1129-dionysius-a-nativitate-berthelot | mr:1129-petrus-berthelot-et-thomas-rodriguez |
 | mr:1210-antonius-martin-hernandez | mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo |
 | mr:1210-edmundus-gennings | mr:1210-edmundus-gennings-et-swithinus-wells |
 | mr:1229-henricus-ioannes-requena | mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher |
@@ -612,12 +612,12 @@ subjects follow the slugs.
 | mr:0716-reinildis | mr:0716-reinildis-et-socii |
 | mr:0720-maria-zhao-guozhus | mr:0720-maria-zhao-guozhi-et-socii |
 | mr:0722-anna-wang | mr:0722-anna-wang-et-socii |
-| mr:0725-fridericus-rubio-alvarez | mr:0725-fridericus-rubio-alvarez-et-socii |
+| mr:0725-fridericus-rubio-alvarez | mr:0725-carolus-rubio-alvarez-et-socii |
 | mr:0725-petrus-a-corde-redondo | mr:0725-petrus-a-corde-et-socii |
 | mr:0727-georgius | mr:0727-georgius-et-socii |
 | mr:0729-ludovicus-bertran | mr:0729-ludovicus-bertran-et-socii |
 | mr:0730-iosephus-maria-muro-sanmiguel | mr:0730-iosephus-maria-muro-sanmiguel-et-socii |
-| mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz | mr:0801-maria-stella-a-sanctissimo-sacramento-et-socii |
+| mr:0801-maria-stella-a-sanctissimo-sacramento-mardosewicz | mr:0801-adelheidis-mardosewicz-et-socii |
 | mr:0804-iosephus-batalla-parramon | mr:0804-iosephus-batalla-parramon-et-socii |
 | mr:0807-martinus-a-sancto-felice-woodcock | mr:0807-ioannes-woodcock-et-socii |
 | mr:0810-claudius-iosephus-jouffret-de-bonnefont | mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii |
@@ -636,10 +636,10 @@ subjects follow the slugs.
 | mr:0908-thomas-palaser | mr:0908-thomas-palaser-et-socii |
 | mr:0911-gaspar-koteda | mr:0911-gaspar-koteda-et-socii |
 | mr:0912-apollinaris-franco | mr:0912-apollinaris-franco-et-socii |
-| mr:0916-laureanus-ferrer-cardet | mr:0916-laureanus-ferrer-cardet-et-socii |
+| mr:0916-laureanus-ferrer-cardet | mr:0916-salvator-ferrer-cardet-et-socii |
 | mr:0921-laurentius-imbert | mr:0921-laurentius-imbert-et-socii |
 | mr:0923-sophia-ximenez-ximenez | mr:0923-sophia-ximenez-ximenez-et-socii |
-| mr:0925-ioannes-petrus-bengoa-aranguren | mr:0925-ioannes-petrus-bengoa-aranguren-et-socii |
+| mr:0925-ioannes-petrus-bengoa-aranguren | mr:0925-iosephus-bengoa-aranguren-et-socii |
 | mr:0928-ioannes-shozaburo | mr:0928-ioannes-shozaburo-et-socii |
 | mr:1010-septem-martyres-presbyteri-septam | mr:1010-daniel-et-socii |
 | mr:1018-proculus | mr:1018-proculus-et-socii |
@@ -800,7 +800,7 @@ Sainte-Mélanie), and the eulogy commemorates two martyrs, guillotined at Orange
 The workbook ID, mr:0709-melania-et-maria-anna-magdalena-de-guilhermier, had taken the one
 woman for the pair and left out the second. It becomes
 mr:0709-melania-et-maria-anna-margarita-ab-angelis, named by the religious names like
-mr:0710-maria-gertrudis-a-sancta-sophia-et-agnes-a-iesu (`ID_CORRECTIONS`, kept identical to
+mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon (`ID_CORRECTIONS`, kept identical to
 CatholicOS/martyrology-texts). Edition notes record the error in the Latin, the unofficial
 English ("Mélanie and Mary Anne Magdalen") and the CEI ("Melania Marianna, Maddalena de
 Guilhermier").
@@ -929,7 +929,7 @@ remaining same-eulogy links and notes follow in later parts of #51.
 **Run-in eulogies split (applied, October 2026, #51 part 2)**: the OCR of both historical
 editions had lost the paragraph break between eulogies, so one key held two or more of them
 (406 keys: 336 in 1749, 70 in 1914; mr:1224-vigilia-nativitatis-domini held the vigil and
-John of Kęty, mr:0424-maria-a-sancta-euphrasia held Bova and Doda, Euphrasia
+John of Kęty, mr:0424-rosa-virginia-pelletier held Bova and Doda, Euphrasia
 Pelletier and the Conversion of Augustine). Each key is cut where the next eulogy begins,
 and each part takes the ID of its eulogy: the ID the other edition already gives it, a
 current ID of the day, or a new deprecated ID (28). Where the key's own eulogy is
@@ -1036,7 +1036,7 @@ the epithet, so as not to lengthen the slug (mr:0509-translatio-andreae-apostoli
 
 **One name form per saint (applied, October 2026, #63)**: an ID names the saint the way they are
 conventionally known, in one form: the religious name, with its title or place left uninflected
-(rule 2; mr:0923-pius-de-pietrelcina, mr:0809-teresia-benedicta-a-cruce, mr:0808-maria-a-cruce), or
+(rule 2; mr:0923-pius-de-pietrelcina, mr:0809-editha-stein, mr:0808-maria-helena-mackillop), or
 the given name and surname (mr:0730-leopoldus-mandic), never a mix of the two. When a surname is
 used, no place is needed unless ambiguity remains. Surnames that contain *de*, *la* or *y* stay
 whole (Galvão de França, Jarrige de la Morélie). 153 current IDs are renamed after a reviewed table

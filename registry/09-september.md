@@ -16,7 +16,7 @@
 | 1 | 10 | `mr:0901-lupus` |  | FR | dies_natalis |  |  |
 | 1 | 11 | `mr:0901-iuliana-de-collalto` | * | IT | dies_natalis |  |  |
 | 1 | 12 | `mr:0901-ioanna` | * | IT | dies_natalis |  |  |
-| 1 | 13 | `mr:0901-christinus-roca-huguet-et-socii` | * | ES | dies_natalis |  |  |
+| 1 | 13 | `mr:0901-michael-roca-huguet-et-socii` | * | ES | dies_natalis |  |  |
 | 1 | 14 | `mr:0901-alphonsus-sebastia-vinals` | * | ES | dies_natalis |  |  |
 | 1 | 15 | `mr:0901-petrus-rivera-et-socii` | * | ES | dies_natalis |  |  |
 | 2 | 1 | `mr:0902-zeno` |  | TR | dies_natalis |  |  |
@@ -62,10 +62,10 @@
 | 4 | 8 | `mr:0904-rosalia` |  | IT | dies_natalis | same as `mr:0715-inventio-corporis-rosaliae` |  |
 | 4 | 9 | `mr:0904-catharina-mattei` | * | IT | dies_natalis |  | 2004 English: Translation error: "Carmagnola" where the Latin has "Caramániæ" (Caramagna). |
 | 4 | 10 | `mr:0904-scipio-hieronymus-brigeat-de-lambert` | * | FR | dies_natalis |  |  |
-| 4 | 11 | `mr:0904-maria` | * | CA | dies_natalis |  |  |
+| 4 | 11 | `mr:0904-dina-belanger` | * | CA | dies_natalis |  |  |
 | 4 | 12 | `mr:0904-iosephus-paschalis-carda-saporta` | * | ES | dies_natalis |  | 2004 English: Translation error: "near Castile" where the Latin has "apud Castáliam" (near Castellón). |
 | 4 | 13 | `mr:0904-franciscus-sendra-ivars` | * | ES | dies_natalis |  |  |
-| 4 | 14 | `mr:0904-bernardus-bieda-grau` | * | ES | dies_natalis |  |  |
+| 4 | 14 | `mr:0904-iosephus-bieda-grau` | * | ES | dies_natalis |  |  |
 | 5 | 1 | `mr:0905-acontus-et-socii` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0905-quintus` |  | IT | dies_natalis | same as `mr:0905-quinctius-et-socii` |  |
 | 5 | 3 | `mr:0905-urbanus-et-socii` |  | TR | dies_natalis |  |  |
@@ -75,7 +75,7 @@
 | 5 | 7 | `mr:0905-gulielmus-browne` | * | GB | dies_natalis |  |  |
 | 5 | 8 | `mr:0905-florentius-dumontet-de-cardaillac` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh` |  | VN | dies_natalis |  |  |
-| 5 | 10 | `mr:0905-teresia-gonhxa-bojaxhiu` | * | IN | dies_natalis |  |  |
+| 5 | 10 | `mr:0905-teresia-calcuttae` | * | IN | dies_natalis |  |  |
 | 6 | 1 | `mr:0906-zacharias-propheta` |  | IL | commemoratio |  |  |
 | 6 | 2 | `mr:0906-onesiphorus` |  | TR | commemoratio |  |  |
 | 6 | 3 | `mr:0906-donatianus-et-socii` |  | TN | commemoratio |  |  |
@@ -121,7 +121,7 @@
 | 8 | 11 | `mr:0908-petrus-claver` |  | CO | dies_natalis |  |  |
 | 8 | 12 | `mr:0908-antonius-a-sancto-bonaventura-et-socii` | * | JP | dies_natalis |  | 2004 English: Translation error: "seven of whom were martyrs" where the Latin has "vigínti sociórum, mártyrum, quorum céteri láici" (twenty companions, martyrs, the rest of them laymen). |
 | 8 | 13 | `mr:0908-fridericus-ozanam` | * | FR | dies_natalis |  |  |
-| 8 | 14 | `mr:0908-iosephus-caecilius-rodriguez-gonzalez-et-socii` | * | ES | dies_natalis |  |  |
+| 8 | 14 | `mr:0908-bonifatius-rodriguez-gonzalez-et-socii` | * | ES | dies_natalis |  |  |
 | 8 | 15 | `mr:0908-marinus-blanes-giner` | * | ES | dies_natalis |  |  |
 | 8 | 16 | `mr:0908-ismael-escrihuela-esteve` | * | ES | dies_natalis |  |  |
 | 8 | 17 | `mr:0908-paschalis-fortuno-almela` | * | ES | dies_natalis |  |  |
@@ -133,7 +133,7 @@
 | 9 | 3 | `mr:0909-hyacinthus` |  | IT | dies_natalis |  |  |
 | 9 | 4 | `mr:0909-ciaranus` |  | IE | dies_natalis |  |  |
 | 9 | 5 | `mr:0909-maria-de-la-cabeza` | * | ES | dies_natalis |  |  |
-| 9 | 6 | `mr:0909-maria-euthymia-uffing` | * | DE | dies_natalis |  | 2004 English: Translation error: "At a monastery" where the Latin has "Monastérii" (at Münster). |
+| 9 | 6 | `mr:0909-emma-uffing` | * | DE | dies_natalis |  | 2004 English: Translation error: "At a monastery" where the Latin has "Monastérii" (at Münster). |
 | 9 | 7 | `mr:0909-georgius-douglas` | * | GB | dies_natalis |  |  |
 | 9 | 8 | `mr:0909-petrus-bonhomme` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0909-iacobus-desideratus-laval` | * | MU | dies_natalis |  |  |
@@ -160,7 +160,7 @@
 | 11 | 8 | `mr:0911-leudinus` | * | FR | dies_natalis |  |  |
 | 11 | 9 | `mr:0911-elias-speleota` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0911-gaspar-koteda-et-socii` | * | JP | dies_natalis |  |  |
-| 11 | 11 | `mr:0911-bonaventura-de-barcinone` | * | IT | dies_natalis |  |  |
+| 11 | 11 | `mr:0911-michael-gran` | * | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0911-franciscus-mayaudon` | * | FR | dies_natalis |  |  |
 | 11 | 13 | `mr:0911-ioannes-gabriel-perboyre` |  | CN | dies_natalis |  | 2004 Italian: Translation error: "provincia dello Hebei" where the Latin has "provínciæ Hubei" (Hubei, where Wuchang lies). |
 | 11 | 14 | `mr:0911-petrus-de-alcantara` | * | ES | dies_natalis |  |  |
@@ -185,7 +185,7 @@
 | 13 | 10 | `mr:0913-amatus-broili` |  | FR | dies_natalis |  |  |
 | 13 | 11 | `mr:0913-maria-a-iesu` | * | ES | dies_natalis |  |  |
 | 13 | 12 | `mr:0913-claudius-dumonet` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "artigiano" (craftsman) where the Latin has "magíster ártium" (Master of Arts). |
-| 13 | 13 | `mr:0913-aurelius-maria-villalon-acebron` | * | ES | dies_natalis |  |  |
+| 13 | 13 | `mr:0913-benvenutus-villalon-acebron` | * | ES | dies_natalis |  |  |
 | 14 | (1) | `mr:0914-exaltatio-sanctae-crucis` |  |  | celebratio |  |  |
 | 14 | 2 | `mr:0914-cornelius` |  | IT | depositio |  |  |
 | 14 | 3 | `mr:0914-cyprianus` |  | TN | dies_natalis |  |  |
@@ -230,7 +230,7 @@
 | 16 | 15 | `mr:0916-ioannes-macias` |  | PE | dies_natalis |  |  |
 | 16 | 16 | `mr:0916-andreas-kim-tae-gon` |  | KR | dies_natalis |  |  |
 | 16 | 17 | `mr:0916-ignatius-casanovas` | * | ES | dies_natalis |  |  |
-| 16 | 18 | `mr:0916-laureanus-ferrer-cardet-et-socii` | * | ES | dies_natalis |  |  |
+| 16 | 18 | `mr:0916-salvator-ferrer-cardet-et-socii` | * | ES | dies_natalis |  |  |
 | 17 | (1) | `mr:0917-robertus-bellarmino` |  | IT | dies_natalis | same as `mr:0513-robertus-bellarmino` |  |
 | 17 | 2 | `mr:0917-satyrus` |  | IT | depositio |  |  |
 | 17 | 3 | `mr:0917-lambertus` |  | BE | dies_natalis |  |  |
@@ -259,7 +259,7 @@
 | 18 | 11 | `mr:0918-david-okelo-et-gildus-irwa` | * | UG | dies_natalis |  |  |
 | 18 | 12 | `mr:0918-carolus-erana-guruceta` | * | ES | dies_natalis |  |  |
 | 18 | 13 | `mr:0918-ferdinandus-garcia-sendra-et-iosephus-garcia-mas` | * | ES | dies_natalis |  |  |
-| 18 | 14 | `mr:0918-ambrosius-chulia-ferrandis-et-valentinus-jaunzaras-gomez` | * | ES | dies_natalis |  |  |
+| 18 | 14 | `mr:0918-salvator-chulia-ferrandis-et-socii` | * | ES | dies_natalis |  |  |
 | 18 | 15 | `mr:0918-iosephus-kut` | * | DE | dies_natalis |  |  |
 | 19 | (1) | `mr:0919-ianuarius` |  | IT | dies_natalis |  |  |
 | 19 | 2 | `mr:0919-trophimus` |  | TR | dies_natalis |  |  |
@@ -314,7 +314,7 @@
 | 22 | 7 | `mr:0922-salaberga` |  | FR | dies_natalis |  |  |
 | 22 | 8 | `mr:0922-emmerammus` |  | DE | dies_natalis |  |  |
 | 22 | 9 | `mr:0922-otho` | * | FR | dies_natalis |  |  |
-| 22 | 10 | `mr:0922-ignatius-de-sandone` |  | IT | dies_natalis |  |  |
+| 22 | 10 | `mr:0922-laurentius-mauritius-belvisotti` |  | IT | dies_natalis |  |  |
 | 22 | 11 | `mr:0922-iosephus-marchandon` | * | FR | dies_natalis |  |  |
 | 22 | 12 | `mr:0922-paulus-chong-ha-sang-et-augustinus-yu-chin-gil` |  | KR | dies_natalis |  |  |
 | 22 | 13 | `mr:0922-carolus-navarro` | * | ES | dies_natalis |  |  |
@@ -349,7 +349,7 @@
 | 24 | 9 | `mr:0924-antonius-gonzalez` |  | JP | dies_natalis |  |  |
 | 24 | 10 | `mr:0924-pacificus-de-sancto-severino` |  | IT | dies_natalis | same as `mr:0925-pacificus-de-sancto-severino` |  |
 | 24 | 11 | `mr:0924-antonius-martinus-slomsek` | * | SI | dies_natalis |  |  |
-| 24 | 12 | `mr:0924-columba-gabriel` | * | IT | dies_natalis |  |  |
+| 24 | 12 | `mr:0924-ioanna-gabriel` | * | IT | dies_natalis |  |  |
 | 24 | 13 | `mr:0924-iosephus-raymundus-paschalis-ferrer-botella` | * | ES | dies_natalis |  |  |
 | 24 | 14 | `mr:0924-iosephus-maria-ferrandiz-hernandez` | * | ES | dies_natalis |  |  |
 | 24 | 15 | `mr:0924-incarnatio-gil-valls` | * | ES | dies_natalis |  |  |
@@ -364,7 +364,7 @@
 | 25 | 8 | `mr:0925-ermenphridus` | * | FR | dies_natalis |  |  |
 | 25 | 9 | `mr:0925-sergius-de-radonez` | * | RU | dies_natalis |  |  |
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |  |
-| 25 | 11 | `mr:0925-ioannes-petrus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
+| 25 | 11 | `mr:0925-iosephus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
 | 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis | same as `mr:0927-cosmas-et-damianus` |  |
 | 26 | 2 | `mr:0926-gedeon-iudex` |  | IL | commemoratio |  |  |
 | 26 | 3 | `mr:0926-senator` |  | IT | dies_natalis |  |  |
@@ -373,16 +373,16 @@
 | 26 | 6 | `mr:0926-nilus-iunior` |  | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0926-lucia-de-calata-hieronis` | * | IT | dies_natalis |  |  |
 | 26 | 8 | `mr:0926-sebastianus-nam-i-gwan-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "twelve martyrs" where the Latin has "novem sociórum, mártyrum" (nine companions, martyrs: ten in all). |
-| 26 | 9 | `mr:0926-teresia-couderc` |  | FR | dies_natalis |  |  |
+| 26 | 9 | `mr:0926-maria-victoria-couderc` |  | FR | dies_natalis |  |  |
 | 26 | 10 | `mr:0926-gaspar-stanggassinger` | * | DE | dies_natalis |  |  |
 | 26 | 11 | `mr:0926-aloysius-tezza` | * | PE | dies_natalis |  |  |
-| 26 | 12 | `mr:0926-maria-a-refugio-et-maria-a-calvario` | * | ES | dies_natalis |  |  |
+| 26 | 12 | `mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana` | * | ES | dies_natalis |  |  |
 | 26 | 13 | `mr:0926-raphael-pardo-molina` | * | ES | dies_natalis |  |  |
 | 26 | 14 | `mr:0926-crescentia-valls-espi` | * | ES | dies_natalis |  |  |
 | 26 | 15 | `mr:0926-maria-ab-oblivione-noguera-albelda` | * | ES | dies_natalis |  |  |
-| 26 | 16 | `mr:0926-bonaventura-esteve-flors` | * | ES | dies_natalis |  |  |
+| 26 | 16 | `mr:0926-iulius-esteve-flors` | * | ES | dies_natalis |  |  |
 | 26 | 17 | `mr:0926-maria-jorda-botella` | * | ES | dies_natalis |  |  |
-| 26 | 18 | `mr:0926-leo-legua-martus` | * | ES | dies_natalis |  |  |
+| 26 | 18 | `mr:0926-emmanuel-legua-marti` | * | ES | dies_natalis |  |  |
 | 27 | (1) | `mr:0927-vincentius-de-paul` |  | FR | dies_natalis | same as `mr:0719-vincentius-a-paulo` |  |
 | 27 | 2 | `mr:0927-caius` |  | IT | dies_natalis |  |  |
 | 27 | 3 | `mr:0927-florentinus` |  | FR | dies_natalis |  |  |

@@ -6,6 +6,7 @@ See docs/superpowers/specs/2026-10-08-persons-design.md.
 """
 
 import re
+import unicodedata
 
 from gazetteer_text import fold
 
@@ -31,6 +32,8 @@ FEAST_PERSONS = {
     "mr:0125-conversio-pauli-apostoli": ["Paulus Apostolus"],
     "mr:0222-cathedra-petri-apostoli": ["Petrus Apostolus"],
     "mr:0325-bonus-latro": ["Bonus Latro"],
+    # Named by the city she is known by; the person is her baptismal name (#116).
+    "mr:0905-teresia-calcuttae": ["Agnes Gonxha Bojaxhiu"],
 }
 # Subjects with an honorific that name a group, not persons: its members are
 # indexed only where a footnote names them.
@@ -374,6 +377,48 @@ def _ablative_name(name, lexicon):
     return None if None in words else " ".join(words)
 
 
+# A name printed with its secular name in parentheses: "Ambrósii (Salvatóris) Chuliá Ferrandis", the
+# religious name, the secular name, the surname (undeclined, up to a comma, "et" or a descriptor).
+CAP = r"[A-ZÀ-ÝĐŁŚŠŽŻČĆ][^\s,;.:()]*"
+PAREN_NAME = re.compile(
+    rf"({CAP}(?:\s+(?:(?:a|ab|de|del|della|et(?=\s+Mar))\s+)?{CAP})*)\s*\(([^)]*)\)\s*"
+    rf"((?:(?:{CAP}|de|del|della|la|y|da|do|dos|van|von|d['’]\S+)(?:\s+|(?=[,;.:])|$))+)")
+
+
+def _paren_names(tail, lexicon):
+    """`tail` with each "Religious (Secular) Surname" replaced by a placeholder word, and the
+    placeholders: {word: (name, other name or None)}, name None when its secular name cannot be read
+    (it is then reported, never half-written). The name is the secular name and the surname; the other
+    name the religious name and the surname (#116). Given names are read as nominatives; the surname
+    as printed."""
+    ready = {}
+
+    def by_rule(word):
+        """A genitive given name the lexicon does not know, by its regular ending (Martiáni:
+        Martianus, Iustæ: Iusta, Salvatóris: Salvator); None when the ending does not tell."""
+        plain = "".join(c for c in unicodedata.normalize("NFD", word) if not unicodedata.combining(c))
+        plain = plain.replace("æ", "ae")
+        for end, nom in (("ii", "ius"), ("ae", "a"), ("oris", "or"), ("i", "us")):
+            if plain.endswith(end):
+                return plain[:-len(end)] + nom
+        return None
+
+    def given(words):
+        noms = [(nominative(w, lexicon) or (w if not _genitive_ending(name_key(w)) else by_rule(w)))
+                if w[:1].isupper() else w for w in words]
+        return None if None in noms else noms
+
+    def repl(m):
+        religious, lay, surname = m.group(1).split(), m.group(2).split(), m.group(3).split()
+        word = f"Qparen{len(ready)}q"
+        lay_n, rel_n = given(lay), given(religious)
+        name = " ".join(lay_n + surname) if lay_n else None
+        other = " ".join(rel_n + surname) if rel_n and name else None
+        ready[word] = (name, other, m.group(0).strip())
+        return word + " "
+    return PAREN_NAME.sub(repl, tail), ready
+
+
 def text_companions(text, lexicon, marked=None, variants=None, unread=None):
     """The names after a plural honorific at the head of a eulogy ("sanctorum
     martyrum A, B et C"), as nominatives; forms not surely converted are
@@ -393,15 +438,20 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None):
     tail = text.split(words[start - 1], 1)[1] if start > 0 else text
     tail = QUI_ET.sub(" seu ", tail)  # "Dativi qui et Felicis": another name, as after "seu"
 
+    tail, ready = _paren_names(tail, lexicon)
+    pending = None  # the other name of the name being read, from its parentheses
+
     def close():
-        nonlocal variant_of
+        nonlocal variant_of, pending
         if current:
             if variant_of is None:
+                if pending and variants is not None:
+                    variants.setdefault(len(names), []).append(pending)
                 names.append(" ".join(current))
             elif variants is not None:
                 variants.setdefault(variant_of, []).append(" ".join(current))
             current.clear()
-        variant_of = None
+        variant_of, pending = None, None
 
     for token in re.findall(r"[^\W\d_][\w'’\-]*|[,.;:]", tail):
         if token in ",.;:":
@@ -411,11 +461,21 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None):
                 break
             continue
         f = fold(token)
-        if f == "et":
+        if f in ("et", "atque"):
             close()
             after_particle = skipping = False
             continue
         if skipping:
+            continue
+        if token in ready:
+            name, other, printed = ready[token]
+            if name is None:
+                uncertain.append(printed)  # the secular name not read: the whole name is reported
+                current.clear()
+                skipping = True
+            else:
+                current.extend(name.split())
+                pending = other
             continue
         if f in ("sociorum", "sociarum"):
             break

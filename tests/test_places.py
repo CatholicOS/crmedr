@@ -273,7 +273,7 @@ class MisprintTest(unittest.TestCase):
         self.assertTrue(all(p.MISPRINT_KEYS <= set(r) <= p.MISPRINT_KEYS | p.MISPRINT_OPTIONAL_KEYS for r in records))
         self.assertEqual({r["printed"] for r in records},
                          {"betárum", "Marcellino", "Caulphæ", "desposizione", "comemorazione", "Mel", "nell territorio",
-                          "e maria", "compagn",
+                          "e maria", "compagn", "Gonhxa",
                           "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
                           "Bellrreguart", "dístulit",
                           "BalĐinucci", "Bdu N9", "EaSaint", "EuchariSaint", "FerĐinand", "Hdi Duding", "ReaĐing", "Vil", "accorĐing", "beheaĐing", "builĐings", "carĐinals", "defenĐing", "founĐing", "kinson", "leaSaint", "outstanĐing", "preceĐing", "prieSaint", "reaĐing", "rebuilĐing", "shedĐing", "spreaĐing", "tala"})

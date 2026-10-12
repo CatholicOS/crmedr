@@ -20,7 +20,7 @@
 | 1 | 14 | `mr:0201-henricus-morse` |  | GB | dies_natalis |  |  |
 | 1 | 15 | `mr:0201-maria-anna-vaillot-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "In April, near Angers" where the Latin has "Aprilíaci apud Andégavum" (at Avrillé near Angers). |
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
-| 1 | 17 | `mr:0201-ioanna-francisca-a-visitatione` | * | IT | dies_natalis |  |  |
+| 1 | 17 | `mr:0201-anna-michelotti` | * | IT | dies_natalis |  |  |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  |  |
 | 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio | same as `mr:0202-purificatio-beatae-mariae-virginis` |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR | dies_natalis |  |  |
@@ -48,7 +48,7 @@
 | 3 | 10 | `mr:0203-berlindis` | * | BE | dies_natalis |  |  |
 | 3 | 11 | `mr:0203-helinandus` | * | FR | commemoratio |  |  |
 | 3 | 12 | `mr:0203-ioannes-nelson` | * | GB | dies_natalis |  |  |
-| 3 | 13 | `mr:0203-maria-a-sancto-ignatio` |  | FR | dies_natalis |  |  |
+| 3 | 13 | `mr:0203-claudina-thevenet` |  | FR | dies_natalis |  |  |
 | 3 | 14 | `mr:0203-maria-anna-rivier` | * | FR | dies_natalis |  | Marie Rivier, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius` |  | IT | dies_natalis |  |  |
@@ -103,8 +103,8 @@
 | 7 | 11 | `mr:0207-iacobus-sales-et-gulielmus-saultemouche` | * | FR | dies_natalis |  |  |
 | 7 | 12 | `mr:0207-aegidius-maria-a-sancto-ioseph` |  | IT | dies_natalis |  |  |
 | 7 | 13 | `mr:0207-ioannes-de-triora` |  | CN | dies_natalis |  |  |
-| 7 | 14 | `mr:0207-rosalia-rendu` | * | FR | dies_natalis |  |  |
-| 7 | 15 | `mr:0207-maria-a-providentia` | * | FR | dies_natalis |  |  |
+| 7 | 14 | `mr:0207-ioanna-maria-rendu` | * | FR | dies_natalis |  |  |
+| 7 | 15 | `mr:0207-eugenia-smet` | * | FR | dies_natalis |  |  |
 | 7 | 16 | `mr:0207-pius-ix` | * | IT | dies_natalis |  |  |
 | 7 | 17 | `mr:0207-anselmus-polanco-et-philippus-ripoll` | * | ES | dies_natalis |  |  |
 | 7 | 18 | `mr:0207-adalbertus-nierychlewski` | * | PL | dies_natalis |  |  |
@@ -130,7 +130,7 @@
 | 9 | 7 | `mr:0209-ansbertus` |  | FR | dies_natalis |  |  |
 | 9 | 8 | `mr:0209-alto` | * | DE | commemoratio |  |  |
 | 9 | 9 | `mr:0209-rainaldus` | * | IT | dies_natalis |  |  |
-| 9 | 10 | `mr:0209-michael-febres-cordero` | * | ES | dies_natalis |  |  |
+| 9 | 10 | `mr:0209-franciscus-aloysius-febres-cordero` | * | ES | dies_natalis |  |  |
 | 10 | (1) | `mr:0210-scholastica` |  | IT | depositio |  |  |
 | 10 | 2 | `mr:0210-chalarampus-et-socii` |  | TR | dies_natalis |  |  |
 | 10 | 3 | `mr:0210-zoticus-et-amantius` |  | IT | dies_natalis |  |  |
@@ -154,7 +154,7 @@
 | 11 | 8 | `mr:0211-paschalis-i` |  | IT | depositio | same as `mr:0514-paschalis-i` |  |
 | 11 | 9 | `mr:0211-ardanus` | * | FR | dies_natalis |  |  |
 | 11 | 10 | `mr:0211-petrus-maldonado` |  | MX | dies_natalis |  |  |
-| 11 | 11 | `mr:0211-tobias-borras-romeu` | * | ES | dies_natalis |  |  |
+| 11 | 11 | `mr:0211-franciscus-borras-romeu` | * | ES | dies_natalis |  |  |
 | 12 | 1 | `mr:0212-martyres-abitinenses` |  | TN | commemoratio | same as `mr:0211-saturninus-et-socii` |  |
 | 12 | 2 | `mr:0212-meletius` |  | TR | commemoratio |  | 2004 Italian: Translation error: "mandato dall’esilio" (sent from exile) where the Latin has "exsílio afféctus est" (was sent into exile). |
 | 12 | 3 | `mr:0212-benedictus-anianensis` |  | DE | dies_natalis |  |  |
@@ -172,8 +172,8 @@
 | 13 | 8 | `mr:0213-fulcranus` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0213-gilbertus` | * | FR | dies_natalis |  |  |
 | 13 | 10 | `mr:0213-iordanus-de-saxonia` | * | IL | dies_natalis |  |  |
-| 13 | 11 | `mr:0213-christina-camozzi` | * | IT | dies_natalis |  |  |
-| 13 | 12 | `mr:0213-eustochius-bellinus` | * | IT | dies_natalis |  |  |
+| 13 | 11 | `mr:0213-augustina-camozzi` | * | IT | dies_natalis |  |  |
+| 13 | 12 | `mr:0213-lucretia-bellini` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
 | 13 | 14 | `mr:0213-paulus-le-van-loc` |  | VN | dies_natalis |  |  |
 | 14 | (1) | `mr:0214-cyrillus-et-methodius` |  | HR | dies_natalis | same as `mr:0309-cyrillus-et-methodius`; same as `mr:0707-cyrillus-et-methodius` |  |
@@ -227,7 +227,7 @@
 | 18 | 8 | `mr:0218-ioannes-pibush` | * | GB | dies_natalis |  |  |
 | 18 | 9 | `mr:0218-franciscus-regis-clet` |  | CN | dies_natalis |  |  |
 | 18 | 10 | `mr:0218-ioannes-petrus-neel` |  | CN | dies_natalis |  |  |
-| 18 | 11 | `mr:0218-gertrudis-comensoli` | * | IT | dies_natalis |  | Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009. |
+| 18 | 11 | `mr:0218-catharina-comensoli` | * | IT | dies_natalis |  | Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009. |
 | 18 | 12 | `mr:0218-georgius-kaszyra` | * | PL | dies_natalis |  |  |
 | 19 | 1 | `mr:0219-quodvultdeus` |  | IT | depositio | same as `mr:1026-quodvultdeus` |  |
 | 19 | 2 | `mr:0219-monachi-martyres-palaestinae` |  | PS | commemoratio |  |  |
@@ -255,7 +255,7 @@
 | 21 | 4 | `mr:0221-thomas-pormort` | * | GB | dies_natalis |  |  |
 | 21 | 5 | `mr:0221-robertus-southwell` |  | GB | dies_natalis |  |  |
 | 21 | 6 | `mr:0221-natalis-pinot` | * | FR | dies_natalis |  |  |
-| 21 | 7 | `mr:0221-maria-henrica-dominicus` | * | IT | dies_natalis |  |  |
+| 21 | 7 | `mr:0221-anna-catharina-dominici` | * | IT | dies_natalis |  |  |
 | 22 | (1) | `mr:0222-cathedra-petri-apostoli` |  |  | celebratio |  |  |
 | 22 | 2 | `mr:0222-papias` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0222-paschasius` |  | FR | dies_natalis |  |  |
@@ -264,7 +264,7 @@
 | 22 | 6 | `mr:0222-isabella` | * | FR | dies_natalis |  |  |
 | 22 | 7 | `mr:0222-margarita` |  | IT | dies_natalis |  |  |
 | 22 | 8 | `mr:0222-didacus-carvalho` | * | JP | dies_natalis |  |  |
-| 22 | 9 | `mr:0222-maria-a-iesu` | * | IT | dies_natalis |  | 2004 English: Translation error: the clause "terrénam peregrinatiónem iter ad pátriam fáciens pie conclúsit" (she piously ended her earthly pilgrimage while journeying home) is omitted. |
+| 22 | 9 | `mr:0222-aemilia-d-oultremont` | * | IT | dies_natalis |  | 2004 English: Translation error: the clause "terrénam peregrinatiónem iter ad pátriam fáciens pie conclúsit" (she piously ended her earthly pilgrimage while journeying home) is omitted. |
 | 23 | (1) | `mr:0223-polycarpus` |  | TR | dies_natalis | same as `mr:0126-polycarpus` |  |
 | 23 | 2 | `mr:0223-sirenus` |  | RS | dies_natalis |  |  |
 | 23 | 3 | `mr:0223-milburga` |  | GB | dies_natalis |  |  |
@@ -272,7 +272,7 @@
 | 23 | 5 | `mr:0223-ioannes` |  | IT | dies_natalis | same as `mr:0224-ioannes-theristes` |  |
 | 23 | 6 | `mr:0223-raphaela-de-villalonga-ybarra` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony) where the Latin has "in Vascónia" (the Basque Country). |
 | 23 | 7 | `mr:0223-nicolaus-tabouillot` | * | FR | dies_natalis |  |  |
-| 23 | 8 | `mr:0223-iosephina-vannini` | * | IT | dies_natalis |  | Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019. |
+| 23 | 8 | `mr:0223-iuditta-adelheidis-vannini` | * | IT | dies_natalis |  | Giuseppina Vannini, blessed in the 2004 editions, was canonized on 13 October 2019. |
 | 23 | 9 | `mr:0223-ludovicus-mzyk` | * | PL | dies_natalis |  |  |
 | 23 | 10 | `mr:0223-vincentius-frelichowski` | * | DE | dies_natalis |  |  |
 | 24 | 1 | `mr:0224-evetius` |  | TR | dies_natalis |  |  |
@@ -291,7 +291,7 @@
 | 25 | 7 | `mr:0225-avertanus` |  | IT | dies_natalis |  |  |
 | 25 | 8 | `mr:0225-sebastianus-aparicio` | * | MX | dies_natalis |  |  |
 | 25 | 9 | `mr:0225-dominicus-lentini` | * | IT | dies_natalis |  |  |
-| 25 | 10 | `mr:0225-maria-adeodata-pisani` | * | MT | dies_natalis |  |  |
+| 25 | 10 | `mr:0225-maria-teresia-pisani` | * | MT | dies_natalis |  |  |
 | 25 | 11 | `mr:0225-laurentius-bai-xiaoman` |  | CN | dies_natalis |  |  |
 | 25 | 12 | `mr:0225-turibius-romo` |  | MX | dies_natalis |  |  |
 | 25 | 13 | `mr:0225-aloysius-versiglia-et-callistus-caravario` |  | CN | dies_natalis |  |  |
@@ -303,7 +303,7 @@
 | 26 | 6 | `mr:0226-andreas` |  | IT | dies_natalis |  |  |
 | 26 | 7 | `mr:0226-robertus-drury` | * | GB | dies_natalis |  |  |
 | 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz` |  | ES | dies_natalis |  |  |
-| 26 | 9 | `mr:0226-pietas-a-cruce` | * | ES | dies_natalis |  |  |
+| 26 | 9 | `mr:0226-thomasina-ortiz-real` | * | ES | dies_natalis |  |  |
 | 27 | 1 | `mr:0227-iulianus-et-eunus` |  | EG | commemoratio |  |  |
 | 27 | 2 | `mr:0227-besa` |  | EG | dies_natalis |  |  |
 | 27 | 3 | `mr:0227-honorina` | * | FR | dies_natalis |  |  |
@@ -316,7 +316,7 @@
 | 27 | 10 | `mr:0227-francisca-anna-a-virgine-perdolenti` | * | ES | dies_natalis |  |  |
 | 27 | 11 | `mr:0227-gabriel-a-virgine-perdolenti` | * | IT | dies_natalis |  | 2004 English: Translation error: "On the island of the Abruzzi" where the Latin has "Insulæ in Aprútio" (at Isola del Gran Sasso, in the Abruzzi). |
 | 27 | 12 | `mr:0227-maria-a-iesu` | * | FR | dies_natalis |  |  |
-| 27 | 13 | `mr:0227-maria-a-caritate-spiritus-sancti` | * | CO | dies_natalis |  |  |
+| 27 | 13 | `mr:0227-carolina-brader` | * | CO | dies_natalis |  |  |
 | 28 | 1 | `mr:0228-presbyteri-diaconi-plurimi-alexandriae` |  | EG | commemoratio |  |  |
 | 28 | 2 | `mr:0228-romanus` |  | FR | depositio |  |  |
 | 28 | 3 | `mr:0228-marana-et-cyra` |  | SY | commemoratio |  |  |

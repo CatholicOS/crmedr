@@ -131,6 +131,28 @@ FOOT = {"mr:0206-paulus-miki-et-socii": [{"mark": "2", "after": "x", "text":
         "Quorum nomina: sancti Ioannes de Goto Soan, Paulus Miki; Thomas, eius filius."}]}
 
 
+class SecularNameTest(unittest.TestCase):
+    """#116: a name printed "Religious (Secular) Surname" is the secular name and the surname; the
+    religious name and the surname are its other name."""
+    LEX = {pt.name_key(w): w for w in ["Fictor", "Nemo", "Paulus", "Petrus", "Ioannes"]}
+
+    def test_each_companion_by_the_secular_name(self):
+        text = ("Romæ, beatórum mártyrum Fictóris (Petri) Nemúñez Fictez et Pauli (Ioánnis) Ficto, presbyterórum, "
+                "atque Nemínis (Martiáni) López Nemo, religiósi, qui pro Christo occísi sunt.")
+        variants = {}
+        names, uncertain = pt.text_companions(text, self.LEX, variants=variants)
+        self.assertEqual(names, ["Petrus Nemúñez Fictez", "Ioannes Ficto", "Martianus López Nemo"])
+        self.assertEqual(variants, {0: ["Fictor Nemúñez Fictez"], 1: ["Paulus Ficto"], 2: ["Nemo López Nemo"]})
+        self.assertEqual(uncertain, [])
+
+    def test_a_religious_name_of_jesus_and_mary_is_one_name(self):
+        text = "Romæ, beatórum Pauli a Iesu et María (Petri) Ficto et Ioánnis Nemo, mártyrum."
+        variants = {}
+        names, _ = pt.text_companions(text, self.LEX, variants=variants)
+        self.assertEqual(names[0], "Petrus Ficto")
+        self.assertEqual(variants[0], ["Paulus a Iesu et María Ficto"])
+
+
 class EulogyPersonsTest(unittest.TestCase):
     def test_subjects_then_text_then_footnote_without_repeats(self):
         lex = ep.build_lexicon({"mr:0206-paulus-miki-et-socii": "Sancti Paulus Miki et socii"}, FOOT)
@@ -286,7 +308,7 @@ class ReviewFindingsTest(unittest.TestCase):
         self.assertEqual(pt.subject_names("mr:1216-plurimae-virgines-africa", "Sanctae Plurimae Virgines Africa"), [])
         self.assertEqual(pt.subject_names("mr:0630-protomartyres-sanctae-romanae-ecclesiae",
                                           "Sancti Protomartyres Sanctae Romanae Ecclesiae"), [])
-        self.assertEqual(pt.subject_names("mr:0724-modestinus-a-iesu-et-maria", "Beatus Modestinus a Iesu et Maria"),
+        self.assertEqual(pt.subject_names("mr:0724-dominicus-mazzarello", "Beatus Modestinus a Iesu et Maria"),
                          ["Modestinus a Iesu et Maria"])
         self.assertEqual(pt.subject_names("mr:1229-david-rex-et-propheta", "Sanctus David Rex et Propheta"),
                          ["David Rex et Propheta"])
@@ -672,7 +694,7 @@ class Issue89And92Test(unittest.TestCase):
         import extract_persons as ep
         lex = {pt.name_key(w): w for w in ["Fridericus", "Carolus", "Rubio", "Alvarez", "Primus"]}
         persons, _ = ep.eulogy_persons(
-            "mr:0725-fridericus-rubio-alvarez-et-socii", "Beati Fridericus Rubio Alvarez et socii",
+            "mr:0725-carolus-rubio-alvarez-et-socii", "Beati Fridericus Rubio Alvarez et socii",
             "Calatayúd, beatorum martyrum Friderici Caroli Rubio Alvarez et Primi.", [], lex, {})
         self.assertEqual(persons, [
             {"name": "Fridericus Rubio Alvarez", "also": ["Fridericus Carolus Rubio Alvarez"], "where": "text"},

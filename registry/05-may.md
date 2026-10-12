@@ -25,7 +25,7 @@
 | 1 | 19 | `mr:0501-pius-v` |  | IT | dies_natalis |  |  |
 | 1 | 20 | `mr:0501-augustinus-schoeffler` |  | VN | dies_natalis |  |  |
 | 1 | 21 | `mr:0501-ioannes-ludovicus-bonnard` |  | VN | dies_natalis |  |  |
-| 1 | 22 | `mr:0501-richardus-pampuri` |  | IT | dies_natalis |  |  |
+| 1 | 22 | `mr:0501-herminius-philippus-pampuri` |  | IT | dies_natalis |  |  |
 | 1 | 23 | `mr:0501-clemens-septyckyj` | * | RU | dies_natalis |  |  |
 | 2 | (1) | `mr:0502-athanasius` |  | EG | dies_natalis |  |  |
 | 2 | 2 | `mr:0502-hesperus-et-zoes` |  | TR | dies_natalis |  |  |
@@ -110,8 +110,8 @@
 | 8 | 12 | `mr:0508-amatus-ronconi` | * | IT | dies_natalis |  | Amato Ronconi, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 8 | 13 | `mr:0508-angelus-de-massatio` | * | IT | dies_natalis |  |  |
 | 8 | 14 | `mr:0508-aloysius-rabata` | * | IT | dies_natalis |  |  |
-| 8 | 15 | `mr:0508-maria-catharina-a-sancto-augustino` | * | CA | dies_natalis |  |  |
-| 8 | 16 | `mr:0508-ulrica-nisch` | * | DE | dies_natalis |  |  |
+| 8 | 15 | `mr:0508-catharina-symon-de-longprey` | * | CA | dies_natalis |  |  |
+| 8 | 16 | `mr:0508-francisca-nisch` | * | DE | dies_natalis |  |  |
 | 8 | 17 | `mr:0508-antonius-bajewski` | * | PL | dies_natalis |  |  |
 | 9 | 1 | `mr:0509-isaias-propheta` |  | PS | commemoratio | same as `mr:0706-isaias-propheta` |  |
 | 9 | 2 | `mr:0509-herma` |  | PS | commemoratio |  |  |
@@ -124,7 +124,7 @@
 | 9 | 9 | `mr:0509-benincasa-de-monte-politiano` | * | IT | dies_natalis |  |  |
 | 9 | 10 | `mr:0509-thomas-pickering` | * | GB | dies_natalis |  |  |
 | 9 | 11 | `mr:0509-iosephus-do-quang-hien` |  | VN | dies_natalis |  |  |
-| 9 | 12 | `mr:0509-maria-teresia-a-iesu` | * | DE | dies_natalis |  |  |
+| 9 | 12 | `mr:0509-carolina-gerhardinger` | * | DE | dies_natalis |  |  |
 | 9 | 13 | `mr:0509-stephanus-grelewskus` | * | DE | dies_natalis |  |  |
 | 10 | 1 | `mr:0510-iob` |  | JO | commemoratio |  |  |
 | 10 | 2 | `mr:0510-dioscoridis` |  | TR | dies_natalis |  |  |
@@ -231,7 +231,7 @@
 | 18 | 7 | `mr:0518-ericus` |  | SE | dies_natalis |  |  |
 | 18 | 8 | `mr:0518-gulielmus` | * | FR | dies_natalis |  |  |
 | 18 | 9 | `mr:0518-felix-de-cantalicio` |  | IT | dies_natalis |  |  |
-| 18 | 10 | `mr:0518-blandina-merten` | * | DE | dies_natalis |  |  |
+| 18 | 10 | `mr:0518-maria-magdalena-merten` | * | DE | dies_natalis |  |  |
 | 18 | 11 | `mr:0518-stanislaus-kubski` | * | DE | dies_natalis |  |  |
 | 18 | 12 | `mr:0518-martinus-oprzadek` | * | AT | dies_natalis |  |  |
 | 19 | 1 | `mr:0519-urbanus-i` |  | IT | dies_natalis | same as `mr:0525-urbanus-i` |  |
@@ -247,8 +247,8 @@
 | 19 | 11 | `mr:0519-petrus-wright` | * | GB | dies_natalis |  |  |
 | 19 | 12 | `mr:0519-theophilus-de-curia` |  | IT | dies_natalis |  |  |
 | 19 | 13 | `mr:0519-crispinus-de-viterbio` |  | IT | dies_natalis |  |  |
-| 19 | 14 | `mr:0519-ioannes-baptista-xaverius-loir` | * | FR | dies_natalis |  |  |
-| 19 | 15 | `mr:0519-maria-bernarda-butler` | * | CO | dies_natalis |  | Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008. |
+| 19 | 14 | `mr:0519-ioannes-ludovicus-loir` | * | FR | dies_natalis |  |  |
+| 19 | 15 | `mr:0519-verena-butler` | * | CO | dies_natalis |  | Maria Bernarda Bütler, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 19 | 16 | `mr:0519-iosephus-czempiel` | * | DE | dies_natalis |  |  |
 | 20 | (1) | `mr:0520-bernardinus-senensis` |  | IT | dies_natalis |  |  |
 | 20 | 2 | `mr:0520-lydia-thyatirensis` |  | TR | commemoratio | same as `mr:0803-lydia` |  |
@@ -328,7 +328,7 @@
 | 25 | 9 | `mr:0525-gennadius` | * | ES | dies_natalis |  |  |
 | 25 | 10 | `mr:0525-gerardus-mecatti` | * | IT | commemoratio |  |  |
 | 25 | 11 | `mr:0525-gerius` | * | IT | dies_natalis |  |  |
-| 25 | 12 | `mr:0525-iacobus-philippus-bertonus` | * | IT | dies_natalis |  |  |
+| 25 | 12 | `mr:0525-andreas-bertoni` | * | IT | dies_natalis |  |  |
 | 25 | 13 | `mr:0525-petrus-doan-van-van` |  | VN | dies_natalis |  |  |
 | 25 | 14 | `mr:0525-magdalena-sophia-barat` |  | FR | dies_natalis |  |  |
 | 25 | 15 | `mr:0525-dionysius-ssebuggwawo` |  | UG | dies_natalis |  |  |
@@ -386,7 +386,7 @@
 | 29 | 9 | `mr:0529-gherardesca` | * | IT | dies_natalis |  |  |
 | 29 | 10 | `mr:0529-richardus-thirkeld` | * | GB | dies_natalis |  |  |
 | 29 | 11 | `mr:0529-iosephus-gerard` | * | IT | dies_natalis |  |  |
-| 29 | 12 | `mr:0529-ursula-ledochowska` |  | IT | dies_natalis |  |  |
+| 29 | 12 | `mr:0529-iulia-ledochowska` |  | IT | dies_natalis |  |  |
 | 30 | 1 | `mr:0530-gabinus` |  | IT | dies_natalis |  |  |
 | 30 | 2 | `mr:0530-basilius-et-emmelia` |  | TR | dies_natalis |  |  |
 | 30 | 3 | `mr:0530-anastasius` |  | IT | dies_natalis |  |  |
@@ -405,9 +405,9 @@
 | 31 | 4 | `mr:0531-cantius-et-socii` |  | IT | dies_natalis |  |  |
 | 31 | 5 | `mr:0531-silvius` | * | FR | dies_natalis |  |  |
 | 31 | 6 | `mr:0531-iacobus-salomoni` | * | IT | dies_natalis |  |  |
-| 31 | 7 | `mr:0531-baptista-varano` | * | IT | dies_natalis |  | Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010. |
+| 31 | 7 | `mr:0531-camilla-varano` | * | IT | dies_natalis |  | Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010. |
 | 31 | 8 | `mr:0531-robertus-thorpe-et-thomas-watkinson` | * | GB | dies_natalis |  |  |
 | 31 | 9 | `mr:0531-nicolaus-barre` | * | FR | dies_natalis |  |  |
-| 31 | 10 | `mr:0531-felix-amoroso` | * | IT | dies_natalis |  | Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005. 2004 English: Translation error: "Erice" where the Latin has "Hérbitæ" (Nicosia). |
-| 31 | 11 | `mr:0531-marianus-de-roccacasale` | * | IT | dies_natalis |  |  |
+| 31 | 10 | `mr:0531-iacobus-amoroso` | * | IT | dies_natalis |  | Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005. 2004 English: Translation error: "Erice" where the Latin has "Hérbitæ" (Nicosia). |
+| 31 | 11 | `mr:0531-dominicus-di-nicolantonio` | * | IT | dies_natalis |  |  |
 | 31 | 12 | `mr:0531-noe-mawaggali` |  | UG | dies_natalis |  |  |

@@ -32,7 +32,7 @@
 | 2 | 11 | `mr:1002-ioannes-beyzym` | * | MG | dies_natalis |  |  |
 | 2 | 12 | `mr:1002-franciscus-carceller-et-isidorus-bover-oliver` | * | ES | dies_natalis |  |  |
 | 2 | 13 | `mr:1002-elias-et-ioannes-baptista-carbonell-molla` | * | ES | dies_natalis |  |  |
-| 2 | 14 | `mr:1002-maria-guadalupe-ricart-olmos` | * | ES | dies_natalis |  |  |
+| 2 | 14 | `mr:1002-maria-francisca-ricart-olmos` | * | ES | dies_natalis |  |  |
 | 2 | 15 | `mr:1002-maria-antonina-kratochwil` | * | PL | dies_natalis |  |  |
 | 3 | 1 | `mr:1003-dionysius-areopagita` |  | GR | commemoratio |  |  |
 | 3 | 2 | `mr:1003-candida` |  | IT | dies_natalis |  | The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of the same commemoration. |
@@ -67,7 +67,7 @@
 | 5 | 11 | `mr:1005-flora` | * | FR | commemoratio |  |  |
 | 5 | 12 | `mr:1005-sanctus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Corneto" where the Latin has "Coræ" (Cori). |
 | 5 | 13 | `mr:1005-raymundus-de-vineis` | * | DE | dies_natalis |  |  |
-| 5 | 14 | `mr:1005-matthaeus-carreri` | * | IT | dies_natalis |  |  |
+| 5 | 14 | `mr:1005-ioannes-franciscus-carreri` | * | IT | dies_natalis |  |  |
 | 5 | 15 | `mr:1005-gulielmus-hartley-et-ioannes-hewett` | * | GB | dies_natalis |  |  |
 | 5 | 16 | `mr:1005-anna-schaffer` | * | DE | dies_natalis |  | Anna Schäffer, blessed in the 2004 editions, was canonized on 21 October 2012. |
 | 5 | 17 | `mr:1005-bartholomaeus-longo` | * | IT | dies_natalis |  | Bartolo Longo, blessed in the 2004 editions, was canonized on 19 October 2025. |
@@ -85,7 +85,7 @@
 | 6 | 9 | `mr:1006-pardulphus` | * | FR | dies_natalis |  |  |
 | 6 | 10 | `mr:1006-adalbero` | * | AT | dies_natalis |  |  |
 | 6 | 11 | `mr:1006-artaldus` | * | FR | dies_natalis |  |  |
-| 6 | 12 | `mr:1006-maria-francisca-a-vulneribus-domini` |  | IT | dies_natalis |  |  |
+| 6 | 12 | `mr:1006-anna-maria-gallo` |  | IT | dies_natalis |  |  |
 | 6 | 13 | `mr:1006-franciscus-hunot` | * | FR | dies_natalis |  |  |
 | 6 | 14 | `mr:1006-maria-rosa-durocher` | * | CA | dies_natalis |  |  |
 | 6 | 15 | `mr:1006-franciscus-tran-van-trung` |  | VN | dies_natalis |  |  |
@@ -120,7 +120,7 @@
 | 9 | 11 | `mr:1009-guntherus` | * | CZ | depositio |  | 2004 English: Translation error: "Braunau" where the Latin has "Brennóviæ" (Břevnov). |
 | 9 | 12 | `mr:1009-bernardus-ruthenensis` | * | FR | dies_natalis |  |  |
 | 9 | 13 | `mr:1009-ludovicus-bertran` |  | ES | dies_natalis |  |  |
-| 9 | 14 | `mr:1009-innocentius-ab-immaculata-et-socii` |  | ES | dies_natalis |  |  |
+| 9 | 14 | `mr:1009-emmanuel-canoura-arnau-et-socii` |  | ES | dies_natalis |  |  |
 | 10 | 1 | `mr:1010-pinytus` |  | GR | commemoratio |  |  |
 | 10 | 2 | `mr:1010-eulampius-et-eulampia` |  | TR | dies_natalis |  |  |
 | 10 | 3 | `mr:1010-gereon-et-socii` |  | DE | dies_natalis |  |  |
@@ -134,7 +134,7 @@
 | 10 | 11 | `mr:1010-daniel-et-socii` |  | MA | dies_natalis | same as `mr:1013-daniel-et-socii` |  |
 | 10 | 12 | `mr:1010-ioannes` |  | GB | dies_natalis |  |  |
 | 10 | 13 | `mr:1010-daniel-comboni` |  | SD | dies_natalis |  |  |
-| 10 | 14 | `mr:1010-angela-maria-truszkowska` | * | PL | dies_natalis |  |  |
+| 10 | 14 | `mr:1010-sophia-camilla-truszkowska` | * | PL | dies_natalis |  |  |
 | 10 | 15 | `mr:1010-leo-wetmanski` | * | PL | dies_natalis |  |  |
 | 10 | 16 | `mr:1010-eduardus-detkens` | * | AT | dies_natalis |  |  |
 | 11 | 1 | `mr:1011-philippus` |  | PS | commemoratio | same as `mr:0606-philippus` |  |
@@ -152,7 +152,7 @@
 | 11 | 13 | `mr:1011-iacobus-de-ulma` | * | IT | dies_natalis |  |  |
 | 11 | 14 | `mr:1011-alexander-sauli` |  | IT | dies_natalis |  |  |
 | 11 | 15 | `mr:1011-petrus-le-tuy` |  | VN | dies_natalis |  |  |
-| 11 | 16 | `mr:1011-maria-desolata-torres-acosta` |  | ES | dies_natalis |  |  |
+| 11 | 16 | `mr:1011-emmanuela-torres-acosta` |  | ES | dies_natalis |  |  |
 | 11 | 17 | `mr:1011-angelus-ramos-velazquez` | * | ES | dies_natalis |  |  |
 | 12 | 1 | `mr:1012-hedistus` |  | IT | dies_natalis |  |  |
 | 12 | 2 | `mr:1012-domnina` |  | TR | dies_natalis |  |  |
@@ -161,10 +161,10 @@
 | 12 | 5 | `mr:1012-felix-iv` |  | IT | dies_natalis | same as `mr:0130-felix-iv`; same as `mr:0922-felix-iv` |  |
 | 12 | 6 | `mr:1012-maximilianus` |  | AT | dies_natalis |  |  |
 | 12 | 7 | `mr:1012-rotobaldus` | * | IT | dies_natalis |  |  |
-| 12 | 8 | `mr:1012-seraphinus-de-monte-granario` |  | IT | dies_natalis |  |  |
+| 12 | 8 | `mr:1012-felix-de-nicola` |  | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:1012-thomas-bullaker` | * | GB | dies_natalis |  |  |
 | 12 | 10 | `mr:1012-iosephus-gonzalez-huguet` | * | ES | dies_natalis |  |  |
-| 12 | 11 | `mr:1012-pacificus-salcedo-puchades` | * | ES | dies_natalis |  |  |
+| 12 | 11 | `mr:1012-petrus-salcedo-puchades` | * | ES | dies_natalis |  |  |
 | 12 | 12 | `mr:1012-romanus-sitko` | * | PL | dies_natalis |  |  |
 | 13 | 1 | `mr:1013-theophilus` |  | TR | commemoratio |  |  |
 | 13 | 2 | `mr:1013-faustus-et-socii` |  | ES | dies_natalis |  |  |
@@ -230,7 +230,7 @@
 | 17 | 11 | `mr:1017-petrus-a-nativitate` | * | IT | dies_natalis |  |  |
 | 17 | 12 | `mr:1017-margarita-maria-alacoque` |  | FR | dies_natalis |  |  |
 | 17 | 13 | `mr:1017-iacobus-burin` | * | FR | dies_natalis |  | 2004 English: Translation error: "La Vallée de Guyon" where the Latin has "Vallis Guidónis" (Laval). |
-| 17 | 14 | `mr:1017-maria-natalia-a-sancto-ludovico-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Valence" where the Latin has "Valentiánæ" (Valenciennes). |
+| 17 | 14 | `mr:1017-maria-ludovica-iosepha-vanot-et-socii` | * | FR | dies_natalis |  | 2004 English: Translation error: "Valence" where the Latin has "Valentiánæ" (Valenciennes). |
 | 17 | 15 | `mr:1017-isidorus-gagelin` |  | VN | dies_natalis |  |  |
 | 17 | 16 | `mr:1017-contardus-ferrini` | * | IT | dies_natalis |  |  |
 | 17 | 17 | `mr:1017-fidel-fuidio-rodriguez` | * | ES | dies_natalis |  |  |
@@ -269,7 +269,7 @@
 | 20 | 7 | `mr:1020-adelina` | * | FR | dies_natalis |  |  |
 | 20 | 8 | `mr:1020-iacobus-strepa` | * | UA | dies_natalis |  |  |
 | 20 | 9 | `mr:1020-maria-bertilla-boscardin` |  | IT | dies_natalis |  |  |
-| 20 | 10 | `mr:1020-iacobus-kern` | * | AT | dies_natalis |  |  |
+| 20 | 10 | `mr:1020-franciscus-alexander-kern` | * | AT | dies_natalis |  |  |
 | 21 | 1 | `mr:1021-dasius-et-socii` |  | TR | dies_natalis |  |  |
 | 21 | 2 | `mr:1021-virgines-coloniae-agrippinae` |  | DE | commemoratio |  |  |
 | 21 | 3 | `mr:1021-hilarion` |  | CY | dies_natalis |  |  |
@@ -308,12 +308,12 @@
 | 23 | 13 | `mr:1023-ioannes-bonus` | * | IT | dies_natalis | same as `mr:1123-ioannes-bonus` |  |
 | 23 | 14 | `mr:1023-ioannes-angelus-porro` | * | IT | dies_natalis |  |  |
 | 23 | 15 | `mr:1023-thomas-thwing` | * | GB | dies_natalis |  |  |
-| 23 | 16 | `mr:1023-maria-clotildis-angela-a-sancto-francisco-borgia-et-socii` | * | FR | dies_natalis |  |  |
+| 23 | 16 | `mr:1023-clotildis-iosepha-paillot-et-socii` | * | FR | dies_natalis |  |  |
 | 23 | 17 | `mr:1023-paulus-tong-viet-buong` |  | VN | dies_natalis |  |  |
-| 23 | 18 | `mr:1023-arnoldus-reche` | * | FR | dies_natalis |  |  |
+| 23 | 18 | `mr:1023-iulianus-nicolaus-reche` | * | FR | dies_natalis |  |  |
 | 23 | 19 | `mr:1023-hildephonsus-garcia-et-iustinianus-cuesta` | * | ES | dies_natalis |  |  |
 | 23 | 20 | `mr:1023-leonardus-olivera-buera` | * | ES | dies_natalis |  |  |
-| 23 | 21 | `mr:1023-ambrosius-leo-lorente-vicente-et-socii` | * | ES | dies_natalis |  |  |
+| 23 | 21 | `mr:1023-petrus-lorente-vicente-et-socii` | * | ES | dies_natalis |  |  |
 | 24 | (1) | `mr:1024-antonius-maria-claret` |  | ES | dies_natalis |  |  |
 | 24 | 2 | `mr:1024-cyriacus-et-claudianus` |  | TR | dies_natalis |  |  |
 | 24 | 3 | `mr:1024-proclus` |  | TR | dies_natalis |  |  |
