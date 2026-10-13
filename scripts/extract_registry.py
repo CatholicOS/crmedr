@@ -5561,8 +5561,9 @@ REVIEW_EDITION_NOTES = {
     },
     "mr:1106-felix": {
         EDITION_IT: (
-            "Translation error: \"La Calle ... nell'odierna Tunisia\" where the Latin has "
-            "\"Thinísæ\" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria)."
+            "Translation error: \"nell'odierna Tunisia\": Thinisa in Numidia is La Calle "
+            "(El Kala), in Algeria; Ras el-Djebel in Tunisia is the homonymous Thinisa of "
+            "Proconsular Africa."
         ),
     },
     "mr:1107-athenodorus": {

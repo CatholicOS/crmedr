@@ -78,7 +78,7 @@
 | 5 | 12 | `mr:1105-maria-a-monte-carmelo-viel-ferrando` | * | ES | dies_natalis |  |  |
 | 5 | 13 | `mr:1105-bernardus-lichtenberg` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1105-gregorius-lakota` | * | RU | dies_natalis |  | 2004 English: Translation error: "Abé" where the Latin has "Abez". |
-| 6 | 1 | `mr:1106-felix` |  | DZ | dies_natalis |  | 2004 Italian: Translation error: "La Calle ... nell'odierna Tunisia" where the Latin has "Thinísæ" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria). |
+| 6 | 1 | `mr:1106-felix` |  | DZ | dies_natalis |  | 2004 Italian: Translation error: "nell'odierna Tunisia": Thinisa in Numidia is La Calle (El Kala), in Algeria; Ras el-Djebel in Tunisia is the homonymous Thinisa of Proconsular Africa. |
 | 6 | 2 | `mr:1106-paulus` |  | TR | commemoratio | same as `mr:0607-paulus` | 2004 English: Translation error: "and martyr" is added; the Latin has only "epíscopi Constantinopolitáni". |
 | 6 | 3 | `mr:1106-melanius` |  | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:1106-iltutus` | * | GB | dies_natalis |  |  |
