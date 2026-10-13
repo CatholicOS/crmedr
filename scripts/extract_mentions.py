@@ -594,11 +594,12 @@ def load_edition(texts_repo, edition):
 def file_under_twins(entries, texts, places, persons):
     """Re-key to its twin's ID a current eulogy that has no text under its own ID
     when a `same_eulogy` twin has one: the edition files the text, its footnotes and
-    the API's lookups by the twin's ID. Returns the places, the persons and
-    {current ID: twin ID}. Each kind is filed apart: a twin with places (or persons)
-    of its own keeps them, and the current eulogy's are left where they were (they
-    would mark the same text twice)."""
-    places, persons, twins = dict(places), dict(persons), {}
+    the API's lookups by the twin's ID. Returns the places, the persons,
+    {current ID: twin ID} of every eulogy filed (for the report), and of those whose
+    persons were filed (which the person decisions and the Latin marks follow). Each
+    kind is filed apart: a twin with places (or persons) of its own keeps them, and
+    the current eulogy's are left where they were (they would mark the same text twice)."""
+    places, persons, twins, person_twins = dict(places), dict(persons), {}, {}
     for e in entries:
         mrid = e["id"]
         if e.get("deprecated") or mrid in texts or not (mrid in places or mrid in persons):
@@ -610,17 +611,19 @@ def file_under_twins(entries, texts, places, persons):
             if mrid in by_id and twin not in by_id:
                 by_id[twin] = by_id.pop(mrid)
                 twins[mrid] = twin
-    return places, persons, twins
+                if by_id is persons:
+                    person_twins[mrid] = twin
+    return places, persons, twins, person_twins
 
 
-def italian_persons(persons, names, latin, twins):
+def italian_persons(persons, names, latin, person_twins):
     """The persons of data/persons.json as the Italian edition looks for them: each with the Italian
     forms of its name (`forms`), the untranslated ends of it a surname search anchors on (`ends`) and,
     when the Latin marks it, where the Latin prints it (`rank`: the footnote, 0 for the text, then the
     offset), which orders a footnote list; without `also`, the Latin's other names."""
     out = {}
     for mrid, ps in persons.items():
-        filed = twins.get(mrid, mrid)  # the Latin mentions are filed under a twin's ID
+        filed = person_twins.get(mrid, mrid)  # the Latin marks of persons filed under a twin's ID
         rank = {(m["name"], m.get("n")): (0 if m["where"] == "text" else m["where"]["footnote"], m["start"])
                 for m in latin.get(filed, []) if m["kind"] == "person"}
         out[mrid] = []
@@ -648,12 +651,12 @@ def extract(texts_repo, repo_root, review_path):
         sources[edition] = load_edition(texts_repo, edition)
         ed_persons = (persons if edition == PERSONS_EDITION
                       else italian_persons(persons, names, by_edition[PERSONS_EDITION], latin_twins))
-        ed_places, ed_persons, twins = file_under_twins(entries, sources[edition][0], places, ed_persons)
+        ed_places, ed_persons, twins, person_twins = file_under_twins(entries, sources[edition][0], places, ed_persons)
         if edition == PERSONS_EDITION:
-            latin_twins = twins
+            latin_twins = person_twins
         by_edition[edition], review[edition], counts[edition] = build_edition(
             lang, *sources[edition], ed_places, ed_persons, gazetteer,
-            {twins.get(k, k): v for k, v in person_items.items()},  # the decisions follow their persons
+            {person_twins.get(k, k): v for k, v in person_items.items()},  # the decisions follow their persons
             curated.get(edition, {}))
         counts[edition]["twin"] = twins
 

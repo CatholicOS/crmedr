@@ -658,16 +658,18 @@ class MainTest(unittest.TestCase):
 
     def test_a_twin_with_mentions_of_its_own_is_left_alone(self):
         entries = [{"id": "mr:0101-a", "same_eulogy": ["mr:0614-b"]}]
-        places, persons, twins = em.file_under_twins(entries, {"mr:0614-b": "x"}, {"mr:0101-a": [1], "mr:0614-b": [2]}, {})
+        places, persons, twins, _ = em.file_under_twins(entries, {"mr:0614-b": "x"}, {"mr:0101-a": [1], "mr:0614-b": [2]}, {})
         self.assertEqual((twins, places), ({}, {"mr:0101-a": [1], "mr:0614-b": [2]}))
 
     def test_each_kind_is_filed_apart(self):
         # The twin names persons of its own but no place: the current eulogy's place is filed under it.
         entries = [{"id": "mr:0101-a", "same_eulogy": ["mr:0614-b"]}]
-        places, persons, twins = em.file_under_twins(entries, {"mr:0614-b": "x"}, {"mr:0101-a": [1]},
-                                                     {"mr:0101-a": [3], "mr:0614-b": [4]})
+        places, persons, twins, person_twins = em.file_under_twins(entries, {"mr:0614-b": "x"}, {"mr:0101-a": [1]},
+                                                                   {"mr:0101-a": [3], "mr:0614-b": [4]})
         self.assertEqual((twins, places, persons),
                          ({"mr:0101-a": "mr:0614-b"}, {"mr:0614-b": [1]}, {"mr:0101-a": [3], "mr:0614-b": [4]}))
+        # Only the place moved: the person decisions and the Latin marks stay with the current eulogy.
+        self.assertEqual(person_twins, {})
 
     def test_a_text_filed_under_a_twin_reports_a_review_op_under_the_twin(self):
         with tempfile.TemporaryDirectory() as d:
