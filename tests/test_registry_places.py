@@ -1,4 +1,7 @@
+import json
+import shutil
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -115,6 +118,32 @@ class ValidateTest(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "mr:0101-a"):
             rp.apply([entry("mr:0101-a", "IT")], GAZ, {})
 
+
+
+ROOT = Path(__file__).resolve().parent.parent
+
+
+class CommittedDataTest(unittest.TestCase):
+    def test_committed_registry_is_current(self):
+        self.assertEqual(rp.main(["--check", str(ROOT)]), 0)
+
+
+class CheckTest(unittest.TestCase):
+    def test_check_reports_a_stale_country(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            for rel in ("data/martyrology_ids.json", "data/gazetteer.json", "data/countries_curated.json"):
+                (root / rel).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(ROOT / rel, root / rel)
+            shutil.copytree(ROOT / "registry", root / "registry")
+            reg = json.loads((root / "data/martyrology_ids.json").read_text(encoding="utf-8"))
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius")
+            e["country"] = "GR"
+            (root / "data/martyrology_ids.json").write_text(
+                json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            self.assertEqual(rp.main(["--check", str(root)]), 1)
+            self.assertEqual(rp.main([str(root)]), 0)
+            self.assertEqual(rp.main(["--check", str(root)]), 0)
 
 if __name__ == "__main__":
     unittest.main()

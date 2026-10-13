@@ -47,7 +47,7 @@
 | 3 | 8 | `mr:0103-genovefa` |  | FR | depositio |  |  |
 | 3 | 9 | `mr:0103-lucianus` | * | IT | dies_natalis |  |  |
 | 3 | 10 | `mr:0103-cyriacus-elias-chavara` | * | IN | dies_natalis |  | Kuriakose Elias Chavara, blessed in the 2004 editions, was canonized on 23 November 2014. |
-| 4 | 1 | `mr:0104-hermes-et-caius` |  | RO | dies_natalis |  |  |
+| 4 | 1 | `mr:0104-hermes-et-caius` |  | BG | dies_natalis |  |  |
 | 4 | 2 | `mr:0104-abrunculus` | * | FR | dies_natalis | CEI: absent | 2004 Latin: Not printed in the Italian (CEI) edition. 2004 English: Not printed in the Italian (CEI) edition. Translation error: "In Auvergne" where the Latin "Arvérnæ" names the city of Clermont. |
 | 4 | 3 | `mr:0104-gregorius` |  | FR | dies_natalis | CEI: entry 2 |  |
 | 4 | 4 | `mr:0104-ferreolus` | * | FR | dies_natalis | CEI: entry 3, asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
@@ -124,14 +124,14 @@
 | 10 | 1 | `mr:0110-miltiades` |  | IT | dies_natalis | same as `mr:1210-melchiades` |  |
 | 10 | 2 | `mr:0110-paulus` |  | EG | dies_natalis |  |  |
 | 10 | 3 | `mr:0110-gregorius-nyssenus` |  | TR | dies_natalis | same as `mr:0309-gregorius` |  |
-| 10 | 4 | `mr:0110-ioannes` |  | IL | dies_natalis |  |  |
+| 10 | 4 | `mr:0110-ioannes` |  | PS | dies_natalis |  |  |
 | 10 | 5 | `mr:0110-petronius` | * | FR | dies_natalis |  |  |
 | 10 | 6 | `mr:0110-marcianus` |  | TR | dies_natalis |  |  |
 | 10 | 7 | `mr:0110-valerius` | * | FR | dies_natalis |  |  |
 | 10 | 8 | `mr:0110-domitianus` | * | TR | dies_natalis |  |  |
 | 10 | 9 | `mr:0110-agathon` |  | IT | depositio |  |  |
 | 10 | 10 | `mr:0110-arcontius` | * | FR | dies_natalis |  |  |
-| 10 | 11 | `mr:0110-petrus-urseolus` |  | IT | dies_natalis |  |  |
+| 10 | 11 | `mr:0110-petrus-urseolus` |  | FR | dies_natalis |  |  |
 | 10 | 12 | `mr:0110-benincasa` | * | IT | dies_natalis |  |  |
 | 10 | 13 | `mr:0110-gulielmus` |  | FR | dies_natalis |  |  |
 | 10 | 14 | `mr:0110-gundisalvus` | * | PT | dies_natalis |  | 2004 Italian: Translation error: "ai suoi seguaci" where the Latin has "áccolis" (the people living nearby). Translation error: "sacerdote: originario di Braga" where the Latin has "presbýteri Bracarénsis" (a priest of Braga). 2004 English: Translation error: "helped rebuild a bridge" where the Latin has "pontem ædificándum curávit" (had a bridge built). |
@@ -170,7 +170,7 @@
 | 13 | 3 | `mr:0113-agricius` |  | DE | dies_natalis |  |  |
 | 13 | 4 | `mr:0113-remigius` |  | FR | depositio | same as `mr:1001-remigius` |  |
 | 13 | 5 | `mr:0113-kentigernus` | * | GB | dies_natalis |  |  |
-| 13 | 6 | `mr:0113-petrus` |  | SY | dies_natalis |  |  |
+| 13 | 6 | `mr:0113-petrus` |  | JO | dies_natalis |  |  |
 | 13 | 7 | `mr:0113-gumesindus-et-servusdei` |  | ES | dies_natalis |  |  |
 | 13 | 8 | `mr:0113-godefridus` | * | DE | dies_natalis |  |  |
 | 13 | 9 | `mr:0113-iutta` | * | BE | dies_natalis |  | 2004 English: Translation error: "Lutgardis" where the Latin has "Iuttæ" (Jutta, or Ivetta, of Huy). |
@@ -280,7 +280,7 @@
 | 22 | (1) | `mr:0122-vincentius` |  | ES | dies_natalis |  |  |
 | 22 | 2 | `mr:0122-valerius` |  | ES | commemoratio |  |  |
 | 22 | 3 | `mr:0122-gaudentius` |  | IT | dies_natalis |  |  |
-| 22 | 4 | `mr:0122-anastasius` |  | IR | dies_natalis |  |  |
+| 22 | 4 | `mr:0122-anastasius` |  | SY | dies_natalis |  |  |
 | 22 | 5 | `mr:0122-barnardus` | * | FR | depositio |  |  |
 | 22 | 6 | `mr:0122-dominicus` |  | IT | dies_natalis |  |  |
 | 22 | 7 | `mr:0122-maria-mancini` | * | IT | dies_natalis |  |  |
@@ -322,12 +322,12 @@
 | 25 | 11 | `mr:0125-antonius-migliorati` | * | IT | dies_natalis |  | 2004 English: Translation error: "Amando" where the Latin has "Amándulæ" (Amandola). |
 | 25 | 12 | `mr:0125-eleonora-girlani` | * | IT | dies_natalis |  |  |
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES | dies_natalis |  |  |
-| 25 | 14 | `mr:0125-teresia-grillo` | * | EG | dies_natalis |  |  |
+| 25 | 14 | `mr:0125-teresia-grillo` | * | IT | dies_natalis |  |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE | dies_natalis |  |  |
 | 26 | (1) | `mr:0126-timotheus-et-titus` |  | TR | dies_natalis | same as `mr:0124-timotheus`; same as `mr:0206-titus` |  |
 | 26 | 2 | `mr:0126-theogenes` |  | DZ | dies_natalis |  |  |
 | 26 | 3 | `mr:0126-paula` |  | PS | dies_natalis |  |  |
-| 26 | 4 | `mr:0126-xenophon-et-maria` | * | IL | dies_natalis |  |  |
+| 26 | 4 | `mr:0126-xenophon-et-maria` | * | PS | dies_natalis |  |  |
 | 26 | 5 | `mr:0126-albericus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Neumünster" where the Latin has "Novum Monastérium" (the New Monastery, that is Cîteaux). |
 | 26 | 6 | `mr:0126-eystein-erlandsson` | * | NO | dies_natalis |  |  |
 | 26 | 7 | `mr:0126-maria-de-la-dive` | * | FR | dies_natalis |  |  |
@@ -341,7 +341,7 @@
 | 27 | 7 | `mr:0127-theodoricus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Ternand" where the Latin has "Ternodóri" (Tonnerre). |
 | 27 | 8 | `mr:0127-gilduinus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "Dôle" where the Latin has "Dolénsis in Británnia Minóre" (Dol in Brittany). |
 | 27 | 9 | `mr:0127-ioannes` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "sede episcopale di Maurienne" where the Latin has "sedem Morinénsem" (the see of the Morini, that is Thérouanne). |
-| 27 | 10 | `mr:0127-manfredus-settala` | * | IT | dies_natalis |  |  |
+| 27 | 10 | `mr:0127-manfredus-settala` | * | CH | dies_natalis |  |  |
 | 27 | 11 | `mr:0127-rosalia-du-verdier-de-la-soriniere` | * | FR | dies_natalis |  |  |
 | 27 | 12 | `mr:0127-ioannes-maria` |  | UG | dies_natalis |  |  |
 | 27 | 13 | `mr:0127-henricus-de-osso-y-cervello` |  | ES | dies_natalis |  |  |
@@ -366,7 +366,7 @@
 | 29 | 8 | `mr:0129-sulpicius-severus` |  | FR | dies_natalis |  | 2004 English: Translation error: "formerly a senator" where the Latin has "e senatóribus Galliárum" (of a Gallic senatorial family). |
 | 29 | 9 | `mr:0129-villana-de-bottis` | * | IT | dies_natalis |  |  |
 | 29 | 10 | `mr:0129-boleslava-maria-lament` | * | PL | dies_natalis |  |  |
-| 30 | 1 | `mr:0130-matthias` |  | IL | dies_natalis |  |  |
+| 30 | 1 | `mr:0130-matthias` |  | PS | dies_natalis |  |  |
 | 30 | 2 | `mr:0130-barsimaeus` |  | TR | dies_natalis |  |  |
 | 30 | 3 | `mr:0130-martina` |  | IT | commemoratio |  |  |
 | 30 | 4 | `mr:0130-bathildis` |  | FR | dies_natalis | same as `mr:0126-bathildis` |  |

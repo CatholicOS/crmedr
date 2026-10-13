@@ -31,7 +31,7 @@
 | 3 | (1) | `mr:0703-thomas-apostolus` |  | IN | dies_natalis | same as `mr:1221-thomas-apostolus` | 1914 English: Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona. |
 | 3 | 2 | `mr:0703-anatolius-laodiceae` |  | SY | commemoratio |  |  |
 | 3 | 3 | `mr:0703-memnon` |  | TR | dies_natalis |  |  |
-| 3 | 4 | `mr:0703-marcus-et-mocianus` |  | RO | commemoratio |  | 2004 English: Translation error: "Mysia" where the Latin has "Mœsia" (Moesia, on the Danube). |
+| 3 | 4 | `mr:0703-marcus-et-mocianus` |  | BG | commemoratio |  | 2004 English: Translation error: "Mysia" where the Latin has "Mœsia" (Moesia, on the Danube). |
 | 3 | 5 | `mr:0703-heliodorus` |  | IT | dies_natalis |  |  |
 | 3 | 6 | `mr:0703-anatolius-constantinopoli` | * | TR | dies_natalis |  |  |
 | 3 | 7 | `mr:0703-leo-ii` |  | IT | dies_natalis | same as `mr:0628-leo-ii` | 2004 English: Translation error: "undertook" where the Latin has "suscépit" (received, that is, accepted the Council). |
@@ -60,9 +60,9 @@
 | 5 | (1) | `mr:0705-antonius-maria-zaccaria` |  | IT | dies_natalis |  |  |
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT | dies_natalis |  |  |
 | 5 | 3 | `mr:0705-cyprilla` |  | LY | dies_natalis |  |  |
-| 5 | 4 | `mr:0705-athanasius-hierosolymitanus` |  | IL | commemoratio |  |  |
+| 5 | 4 | `mr:0705-athanasius-hierosolymitanus` |  | PS | commemoratio |  |  |
 | 5 | 5 | `mr:0705-dometius-medicus` |  | TR | commemoratio |  |  |
-| 5 | 6 | `mr:0705-martha` | * | SY | dies_natalis |  |  |
+| 5 | 6 | `mr:0705-martha` | * | TR | dies_natalis |  |  |
 | 5 | 7 | `mr:0705-thomas` | * | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0705-athanasius` | * | GR | dies_natalis |  |  |
 | 5 | 9 | `mr:0705-matthaeus-lambert-et-socii` | * | IE | dies_natalis |  |  |
@@ -73,7 +73,7 @@
 | 6 | 3 | `mr:0706-romulus` |  | IT | dies_natalis |  |  |
 | 6 | 4 | `mr:0706-sisoes-magnus` | * | EG | dies_natalis |  |  |
 | 6 | 5 | `mr:0706-palladius` | * | GB | commemoratio |  | 2004 Italian: Translation error: "morì in Inghilterra" (died in England) where the Latin has "ibídem óbiit" (died there, in Scotland). |
-| 6 | 6 | `mr:0706-monenna` | * | IE | dies_natalis |  |  |
+| 6 | 6 | `mr:0706-monenna` | * | GB | dies_natalis |  |  |
 | 6 | 7 | `mr:0706-goaris` |  | DE | dies_natalis |  |  |
 | 6 | 8 | `mr:0706-iustus` | * | FR | dies_natalis |  |  |
 | 6 | 9 | `mr:0706-thomas-more` |  | GB | dies_natalis |  |  |
@@ -154,7 +154,7 @@
 | 11 | 15 | `mr:0711-anna-an-xinzhi-et-socii` |  | CN | dies_natalis |  | 2004 Italian: Misprint: "Maia An Guozhi" for "Maria An Guozhi". |
 | 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
 | 12 | 2 | `mr:0712-fortunatus-et-hermagora` |  | IT | dies_natalis |  |  |
-| 12 | 3 | `mr:0712-nabor-et-felix` |  | DZ | dies_natalis |  | 2004 Italian: Translation error: "a Lodi" where the Latin has "Laude Pompéia" (Laus Pompeia, today Lodi Vecchio). |
+| 12 | 3 | `mr:0712-nabor-et-felix` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "a Lodi" where the Latin has "Laude Pompéia" (Laus Pompeia, today Lodi Vecchio). |
 | 12 | 4 | `mr:0712-paternianus` |  | IT | dies_natalis |  |  |
 | 12 | 5 | `mr:0712-viventiolus` |  | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:0712-ioannes-gualbertus` |  | IT | dies_natalis |  | 2004 English: Translation error: "the Valley of the Umbra" where the Latin has "Valle Umbrósa" (Vallombrosa). |
@@ -220,7 +220,7 @@
 | 15 | 21 | `mr:0715-anna-maria-javouhey` | * | FR | dies_natalis |  |  |
 | 15 | 22 | `mr:0715-andreas-nguyen-kim-thong-nam` |  | VN | dies_natalis |  |  |
 | 15 | 23 | `mr:0715-antonius-beszta-borowski` | * | PL | dies_natalis |  |  |
-| 16 | (1) | `mr:0716-maria-de-monte-carmelo` |  | IL | celebratio |  |  |
+| 16 | (1) | `mr:0716-maria-de-monte-carmelo` |  | PS | celebratio |  |  |
 | 16 | 2 | `mr:0716-antiochus` |  | TR | dies_natalis |  |  |
 | 16 | 3 | `mr:0716-athenogenes` |  | TR | dies_natalis |  |  |
 | 16 | 4 | `mr:0716-helerius` | * | JE | dies_natalis |  | 2004 Italian: Translation error: "nel Mare del Nord" (in the North Sea) where the Latin has "in mari Británnico" (in the British Sea, the English Channel). |
@@ -278,9 +278,9 @@
 | 19 | 10 | `mr:0719-ioannes-plessington` |  | GB | dies_natalis |  |  |
 | 19 | 11 | `mr:0719-ioannes-baptista-zhou-wurui` |  | CN | dies_natalis |  |  |
 | 19 | 12 | `mr:0719-elisabeth-qin-bianzhi-et-simon-qin-chunfu` |  | CN | dies_natalis |  |  |
-| 19 | 13 | `mr:0719-achilles-puchala-et-hermannus-stepien` | * | PL | dies_natalis |  | 2004 Italian: Translation error: "sacerdote" (singular) where the Latin has "presbyterorum" (both were priests). |
+| 19 | 13 | `mr:0719-achilles-puchala-et-hermannus-stepien` | * | BY | dies_natalis |  | 2004 Italian: Translation error: "sacerdote" (singular) where the Latin has "presbyterorum" (both were priests). |
 | 20 | (1) | `mr:0720-apollinaris` |  | IT | celebratio |  |  |
-| 20 | 2 | `mr:0720-elias-thesbita-propheta` |  | IL | commemoratio |  |  |
+| 20 | 2 | `mr:0720-elias-thesbita-propheta` |  | PS | commemoratio |  |  |
 | 20 | 3 | `mr:0720-ioseph` |  | PS | commemoratio |  |  |
 | 20 | 4 | `mr:0720-marina` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0720-frumentius` |  | ET | dies_natalis | same as `mr:1027-frumentius` |  |
@@ -320,7 +320,7 @@
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
 | 23 | (1) | `mr:0723-birgitta` |  | SE | dies_natalis | same as `mr:1008-birgitta` | 2004 English: Translation error: "the Mystical Church" where the Latin "mýstice reformándis" speaks of reforming the Church mystically. |
-| 23 | 2 | `mr:0723-ezechiel-propheta` |  | IL | commemoratio |  |  |
+| 23 | 2 | `mr:0723-ezechiel-propheta` |  | PS | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0723-severus` |  | TR | dies_natalis |  | 2004 English: Translation error: "Bizerte in Tunisia" where the Latin has "Bízyæ in Thrácia" (Vize in Thrace). Translation error: "having won the palm of martyrdom" where the Latin has "mártyrum palmas æmulátus" (emulating the martyrs' palms). |
 | 23 | 5 | `mr:0723-ioannes-cassianus` | * | FR | dies_natalis |  |  |
@@ -428,7 +428,7 @@
 | 28 | 12 | `mr:0728-emmanuel-barbal-cosan` |  | ES | dies_natalis |  |  |
 | 28 | 13 | `mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps` | * | ES | dies_natalis |  |  |
 | 28 | 14 | `mr:0728-anna-muttathupadathu` | * | IN | dies_natalis |  | Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October 2008. |
-| 29 | (1) | `mr:0729-martha` |  | IL | dies_natalis |  |  |
+| 29 | (1) | `mr:0729-martha` |  | PS | dies_natalis |  |  |
 | 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio | same as `mr:1217-lazarus` |  |
 | 29 | 3 | `mr:0729-callinicus` |  | TR | dies_natalis |  |  |
 | 29 | 4 | `mr:0729-felix` |  | IT | dies_natalis |  |  |

@@ -16,7 +16,7 @@
 | 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  | Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 2 | (1) | `mr:0402-franciscus-de-paula` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0402-apphianus` |  | PS | dies_natalis |  |  |
-| 2 | 3 | `mr:0402-theodora` |  | LB | dies_natalis |  |  |
+| 2 | 3 | `mr:0402-theodora` |  | PS | dies_natalis |  |  |
 | 2 | 4 | `mr:0402-abundius` |  | IT | dies_natalis |  |  |
 | 2 | 5 | `mr:0402-victor` |  | IT | dies_natalis |  |  |
 | 2 | 6 | `mr:0402-nicetius` |  | FR | dies_natalis |  |  |
@@ -54,7 +54,7 @@
 | 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT | dies_natalis |  | Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005. |
 | 5 | (1) | `mr:0405-vincentius-ferrer` |  | FR | dies_natalis |  |  |
 | 5 | 2 | `mr:0405-irenes` |  | GR | dies_natalis |  |  |
-| 5 | 3 | `mr:0405-pherbutha` |  | IR | dies_natalis |  |  |
+| 5 | 3 | `mr:0405-pherbutha` |  | IQ | dies_natalis |  |  |
 | 5 | 4 | `mr:0405-centum-undecim-viri-novem-mulieres-martyres` |  | IR | commemoratio |  |  |
 | 5 | 5 | `mr:0405-martyres-regiarum` |  | DZ | dies_natalis |  |  |
 | 5 | 6 | `mr:0405-geraldus` |  | FR | dies_natalis |  |  |
@@ -62,7 +62,7 @@
 | 5 | 8 | `mr:0405-iuliana` | * | BE | dies_natalis |  |  |
 | 5 | 9 | `mr:0405-catharina-tomas` |  | ES | dies_natalis |  |  |
 | 5 | 10 | `mr:0405-anna-hoss` |  | DE | dies_natalis |  |  |
-| 6 | 1 | `mr:0406-irenaeus` |  | HR | dies_natalis | same as `mr:0325-irenaeus` | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmii" (Sirmium) is the present Sremska Mitrovica, in Serbia. Translation error: "fu dapprima frustato" (was first scourged) where the Latin has "primum torméntis vexátus est" (was first tormented with tortures). |
+| 6 | 1 | `mr:0406-irenaeus` |  | RS | dies_natalis | same as `mr:0325-irenaeus` | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmii" (Sirmium) is the present Sremska Mitrovica, in Serbia. Translation error: "fu dapprima frustato" (was first scourged) where the Latin has "primum torméntis vexátus est" (was first tormented with tortures). |
 | 6 | 2 | `mr:0406-eutychius` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0406-galla` |  | IT | dies_natalis |  |  |
 | 6 | 4 | `mr:0406-winebaldus` | * | FR | dies_natalis |  |  |
@@ -103,7 +103,7 @@
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  | 2004 English: Translation error: "El Buen Monte" where the Latin has "in convéntu Belomontáno" (the convent of Belmonte). |
 | 9 | 1 | `mr:0409-maximus` |  | EG | dies_natalis |  |  |
 | 9 | 2 | `mr:0409-aedesius` |  | EG | dies_natalis | same as `mr:0408-aedesius` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
-| 9 | 3 | `mr:0409-demetrius` |  | HR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmium" (Sirmium) is the present Sremska Mitrovica, in Serbia. |
+| 9 | 3 | `mr:0409-demetrius` |  | RS | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmium" (Sirmium) is the present Sremska Mitrovica, in Serbia. |
 | 9 | 4 | `mr:0409-eupsychius` |  | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:0409-liborius` |  | FR | dies_natalis | same as `mr:0723-liborius` | 2004 English: Translation error: "Saint Liberius" where the Latin has "sancti Libórii" (Saint Liborius). Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lyonnese Gaul, the Roman province). |
 | 9 | 6 | `mr:0409-acacius` |  | TR | dies_natalis |  | 2004 English: Translation error: "to ransom Persian captives, and the clergy from dreadful tortures, even melted them down" where the Latin has "pro rediméndis Persis captívis ac diris tortis supplíciis clerum conflávit" (to ransom Persian captives cruelly tortured, he gathered the clergy). |
@@ -158,12 +158,12 @@
 | 13 | 4 | `mr:0413-hermenegildus` |  | ES | dies_natalis |  |  |
 | 13 | 5 | `mr:0413-ida-boloniensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "near Vasto" where the Latin has "prope Vastum in pago Gálliæ Boloniénsi" (near Le Wast, in the Boulonnais). |
 | 13 | 6 | `mr:0413-caradocus` | * | GB | dies_natalis |  |  |
-| 13 | 7 | `mr:0413-ida` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "Roosendaal nel Brabante, nell’odierna Olanda" where the Latin "Vallis Rosárum" is the abbey of Roosendael near Mechelen, in present Belgium. |
+| 13 | 7 | `mr:0413-ida` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "Roosendaal nel Brabante, nell’odierna Olanda" where the Latin "Vallis Rosárum" is the abbey of Roosendael near Mechelen, in present Belgium. |
 | 13 | 8 | `mr:0413-albertinus` | * | IT | dies_natalis |  |  |
 | 13 | 9 | `mr:0413-margarita` | * | IT | dies_natalis |  | Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021. 2004 English: Translation error: "born Greek" where the Latin has "cæca nata" (born blind). |
 | 13 | 10 | `mr:0413-franciscus-dickenson-et-milo-gerard` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0413-ioannes-lockwood-et-eduardus-catherick` | * | GB | dies_natalis |  |  |
-| 13 | 12 | `mr:0413-ioannes-bernardus-rousseau` | * | FR | dies_natalis |  |  |
+| 13 | 12 | `mr:0413-ioannes-bernardus-rousseau` | * | RE | dies_natalis |  |  |
 | 13 | 13 | `mr:0413-sabas-reyes` |  | MX | dies_natalis |  | 2004 Latin: Printing error: "Totoclán" for Tototlán, the town in the jurisdiction of Guadalajara where Saint Sabas Reyes was martyred. |
 | 14 | 1 | `mr:0414-tiburtius-et-socii` |  | IT | dies_natalis |  |  |
 | 14 | 2 | `mr:0414-bernica-et-prosdoca` |  | TR | dies_natalis |  |  |
@@ -257,7 +257,7 @@
 | 20 | 17 | `mr:0420-antonius-page` | * | GB | dies_natalis |  |  |
 | 20 | 18 | `mr:0420-franciscus-page-et-robertus-watkinson` | * | GB | dies_natalis |  |  |
 | 20 | 19 | `mr:0420-dina-bosatta` | * | IT | dies_natalis |  |  |
-| 20 | 20 | `mr:0420-anastasius-pankiewicz` | * | DE | dies_natalis |  |  |
+| 20 | 20 | `mr:0420-anastasius-pankiewicz` | * | AT | dies_natalis |  |  |
 | 21 | (1) | `mr:0421-anselmus` |  | IT | dies_natalis |  |  |
 | 21 | 2 | `mr:0421-apollonius` |  | IT | commemoratio | same as `mr:0418-apollonius` |  |
 | 21 | 3 | `mr:0421-aristus` |  | EG | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 22 | 9 | `mr:0422-opportuna` | * | FR | dies_natalis |  |  |
 | 22 | 10 | `mr:0422-senorina` | * | PT | dies_natalis |  | 2004 English: Translation error: "Badajoz" where the Latin has "Basti" (Basto, in Portugal). |
 | 22 | 11 | `mr:0422-franciscus-venimbeni` | * | IT | dies_natalis |  |  |
-| 23 | (1) | `mr:0423-georgius` |  | IL | dies_natalis |  |  |
+| 23 | (1) | `mr:0423-georgius` |  | PS | dies_natalis |  |  |
 | 23 | (2) | `mr:0423-adalbertus` |  | CZ | dies_natalis |  | 2004 English: Translation error: "near the Vistula" where the Latin has "ad sinum Venédicum" (on the Venedic Gulf, the Baltic gulf of Gdańsk). |
 | 23 | 3 | `mr:0423-eulogius` |  | TR | dies_natalis |  |  |
 | 23 | 4 | `mr:0423-marolus` |  | IT | dies_natalis |  |  |
@@ -289,7 +289,7 @@
 | 23 | 9 | `mr:0423-teresia-maria-a-cruce` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0423-maria-gabriela-sagheddu` | * | IT | dies_natalis |  | 2004 English: Translation error: "the Crypt of the Ferrata" where the Latin "Cryptæ Ferrátæ" is the town of Grottaferrata. |
 | 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
-| 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | IL | commemoratio |  |  |
+| 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus` |  |
 | 24 | 5 | `mr:0424-gregorius` |  | ES | dies_natalis |  |  |
@@ -301,7 +301,7 @@
 | 24 | 11 | `mr:0424-rosa-virginia-pelletier` |  | FR | dies_natalis |  | 2004 English: Translation error: "Rose of Virginia" where the Latin has "Rosæ Virgíniæ" (her baptismal name, Rose Virginia). |
 | 24 | 12 | `mr:0424-angelus-menni` |  | FR | dies_natalis |  |  |
 | 24 | 13 | `mr:0424-maria-elisabeth-hesselblad` | * | IT | dies_natalis |  | Maria Elisabeth Hesselblad, blessed in the 2004 editions, was canonized on 5 June 2016. |
-| 25 | (1) | `mr:0425-marcus-evangelista` |  | IL | dies_natalis |  | 2004 English: Translation error: "blessed Peter, his son" where the Latin has "ab illo fílius nuncupátus" (called son by him, that is, by Peter). |
+| 25 | (1) | `mr:0425-marcus-evangelista` |  | PS | dies_natalis |  | 2004 English: Translation error: "blessed Peter, his son" where the Latin has "ab illo fílius nuncupátus" (called son by him, that is, by Peter). |
 | 25 | 2 | `mr:0425-anianus` |  | EG | commemoratio |  |  |
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` | 2004 English: Translation error: "Paschyratus and Valentian" where the Latin has "Pasícratis et Valentiónis" (Pasicrates and Valentio). |
 | 25 | 4 | `mr:0425-phoebadius` |  | FR | dies_natalis |  |  |
@@ -324,7 +324,7 @@
 | 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  | Rafael Arnáiz Barón, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |  |
-| 27 | 1 | `mr:0427-simeon` |  | IL | commemoratio | same as `mr:0218-simeon` |  |
+| 27 | 1 | `mr:0427-simeon` |  | PS | commemoratio | same as `mr:0218-simeon` |  |
 | 27 | 2 | `mr:0427-pollio` |  | HR | dies_natalis | same as `mr:0428-pollio` |  |
 | 27 | 3 | `mr:0427-theodorus` |  | EG | dies_natalis |  |  |
 | 27 | 4 | `mr:0427-liberalis` | * | IT | dies_natalis |  |  |

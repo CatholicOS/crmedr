@@ -78,12 +78,12 @@
 | 5 | 12 | `mr:1105-maria-a-monte-carmelo-viel-ferrando` | * | ES | dies_natalis |  |  |
 | 5 | 13 | `mr:1105-bernardus-lichtenberg` | * | DE | dies_natalis |  |  |
 | 5 | 14 | `mr:1105-gregorius-lakota` | * | RU | dies_natalis |  | 2004 English: Translation error: "Abé" where the Latin has "Abez". |
-| 6 | 1 | `mr:1106-felix` |  | TN | dies_natalis |  | 2004 Italian: Translation error: "La Calle ... nell'odierna Tunisia" where the Latin has "Thinísæ" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria). |
+| 6 | 1 | `mr:1106-felix` |  | DZ | dies_natalis |  | 2004 Italian: Translation error: "La Calle ... nell'odierna Tunisia" where the Latin has "Thinísæ" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria). |
 | 6 | 2 | `mr:1106-paulus` |  | TR | commemoratio | same as `mr:0607-paulus` | 2004 English: Translation error: "and martyr" is added; the Latin has only "epíscopi Constantinopolitáni". |
 | 6 | 3 | `mr:1106-melanius` |  | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:1106-iltutus` | * | GB | dies_natalis |  |  |
 | 6 | 5 | `mr:1106-leonardus` |  | FR | dies_natalis |  |  |
-| 6 | 6 | `mr:1106-callinicus-et-socii` |  | IL | dies_natalis |  |  |
+| 6 | 6 | `mr:1106-callinicus-et-socii` |  | PS | dies_natalis |  |  |
 | 6 | 7 | `mr:1106-severus` |  | ES | dies_natalis |  |  |
 | 6 | 8 | `mr:1106-protasius` | * | CH | dies_natalis |  |  |
 | 6 | 9 | `mr:1106-winnocus` |  | FR | dies_natalis |  |  |
@@ -125,7 +125,7 @@
 | 9 | 10 | `mr:1109-gratia-de-catharo` | * | IT | dies_natalis |  |  |
 | 9 | 11 | `mr:1109-georgius-napper` | * | GB | dies_natalis |  |  |
 | 9 | 12 | `mr:1109-elisabeth-a-sanctissima-trinitate` | * | FR | dies_natalis |  | Elizabeth of the Trinity (Catez), blessed in the 2004 editions, was canonized on 16 October 2016. |
-| 9 | 13 | `mr:1109-henricus-hlebowicz` | * | PL | dies_natalis |  |  |
+| 9 | 13 | `mr:1109-henricus-hlebowicz` | * | BY | dies_natalis |  |  |
 | 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
 | 10 | (1) | `mr:1110-leo-i` |  | IT | dies_natalis | same as `mr:0411-leo-i` |  |
 | 10 | 2 | `mr:1110-demetrianus` |  | IR | dies_natalis |  |  |
@@ -186,8 +186,8 @@
 | 14 | 6 | `mr:1114-laurentius-o-toole` |  | FR | dies_natalis |  |  |
 | 14 | 7 | `mr:1114-ioannes-de-tupharia` | * | IT | dies_natalis |  |  |
 | 14 | 8 | `mr:1114-siardus` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "Malgarten" where the Latin has "Horto Sanctæ Maríæ" (Mariëngaarde, in Friesland). |
-| 14 | 9 | `mr:1114-serapion` | * | TN | dies_natalis |  |  |
-| 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | IL | dies_natalis |  |  |
+| 14 | 9 | `mr:1114-serapion` | * | DZ | dies_natalis |  |  |
+| 14 | 10 | `mr:1114-nicolaus-tavelic-et-socii` |  | PS | dies_natalis |  |  |
 | 14 | 11 | `mr:1114-ioannes-liccio` | * | IT | dies_natalis |  |  |
 | 14 | 12 | `mr:1114-stephanus-theodorus-cuenot` |  | VN | dies_natalis |  |  |
 | 15 | (1) | `mr:1115-albertus-magnus` |  | DE | dies_natalis |  |  |
@@ -204,7 +204,7 @@
 | 15 | 12 | `mr:1115-richardus-whiting-et-socii` | * | GB | dies_natalis |  |  |
 | 15 | 13 | `mr:1115-lucia-broccadelli` | * | IT | dies_natalis |  |  |
 | 15 | 14 | `mr:1115-caius-coreanus` | * | JP | dies_natalis |  |  |
-| 15 | 15 | `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` |  | PY | dies_natalis |  |  |
+| 15 | 15 | `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` |  | BR | dies_natalis |  |  |
 | 15 | 16 | `mr:1115-iosephus-pignatelli` |  | IT | dies_natalis |  |  |
 | 15 | 17 | `mr:1115-iosephus-mkasa-balikuddembe` |  | UG | dies_natalis |  |  |
 | 15 | 18 | `mr:1115-helena-de-chappotin-de-neuville` | * | IT | dies_natalis |  | 2004 English: Translation error: "Savona" where the Latin has "Matútæ" (Sanremo). |
@@ -249,7 +249,7 @@
 | 18 | 10 | `mr:1118-ferdinandus-santamaria` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ferentino" where the Latin has "Fabratériæ" (Ceccano). |
 | 18 | 11 | `mr:1118-carolina-kozka` | * | PL | dies_natalis |  |  |
 | 18 | 12 | `mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii` | * | ES | dies_natalis |  |  |
-| 19 | 1 | `mr:1119-abdias-propheta` |  | IL | commemoratio |  |  |
+| 19 | 1 | `mr:1119-abdias-propheta` |  | PS | commemoratio |  |  |
 | 19 | 2 | `mr:1119-maximus` |  | TR | dies_natalis |  |  |
 | 19 | 3 | `mr:1119-severinus-et-socii` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Braine-sur-la-Vesle" (a town near Soissons) where the Latin has "Brennáco prope Viénnam" (Brennacum near Vienne). |
 | 19 | 4 | `mr:1119-barlaam` |  | TR | dies_natalis |  |  |
@@ -275,7 +275,7 @@
 | 20 | 14 | `mr:1120-anna-felicis-viti` | * | IT | dies_natalis |  |  |
 | 20 | 15 | `mr:1120-francisca-lloret-marti-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "Doctrine of the Christian" where the Latin has "Doctrínæ Christiánæ" (Christian Doctrine). |
 | 20 | 16 | `mr:1120-maria-a-miraculis-ortells-gimeno` | * | ES | dies_natalis |  |  |
-| 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | IL | celebratio |  |  |
+| 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | PS | celebratio |  |  |
 | 21 | 2 | `mr:1121-rufus` |  |  | commemoratio |  |  |
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR | dies_natalis |  |  |
 | 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` | 2004 English: Translation error: "always deferring to greater contests" where the Latin has "semper ad maióra certámina dilátus" (always reserved for greater contests). |
@@ -284,7 +284,7 @@
 | 21 | 7 | `mr:1121-francisca-de-siedliska` | * | IT | dies_natalis |  |  |
 | 22 | (1) | `mr:1122-caecilia` |  | IT | dies_natalis | same as `mr:0916-caecilia` |  |
 | 22 | 2 | `mr:1122-philemon-colossensis` |  | TR | commemoratio |  |  |
-| 22 | 3 | `mr:1122-ananias` |  | IR | dies_natalis |  |  |
+| 22 | 3 | `mr:1122-ananias` |  | IQ | dies_natalis |  |  |
 | 22 | 4 | `mr:1122-benignus` |  | IT | dies_natalis | same as `mr:1120-benignus` |  |
 | 22 | 5 | `mr:1122-pragmatius` |  | FR | dies_natalis |  |  |
 | 22 | 6 | `mr:1122-salvator-lilli-et-socii` | * | TR | dies_natalis |  |  |

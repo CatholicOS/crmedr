@@ -5,7 +5,7 @@
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | (1) | `mr:0501-ioseph` |  |  | celebratio |  |  |
-| 1 | 2 | `mr:0501-ieremias-propheta` |  | IL | commemoratio |  |  |
+| 1 | 2 | `mr:0501-ieremias-propheta` |  | PS | commemoratio |  |  |
 | 1 | 3 | `mr:0501-andeolus` |  | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:0501-torquatus-et-socii` |  | ES | commemoratio | same as `mr:0515-torquatus-et-socii` |  |
 | 1 | 5 | `mr:0501-amator` |  | FR | dies_natalis |  |  |
@@ -45,7 +45,7 @@
 | 3 | 4 | `mr:0503-iuvenalis` |  | IT | dies_natalis |  |  |
 | 3 | 5 | `mr:0503-conlethus` | * | IE | dies_natalis |  |  |
 | 3 | 6 | `mr:0503-petrus` | * | GR | dies_natalis |  |  |
-| 3 | 7 | `mr:0503-ansfridus` | * | BE | dies_natalis |  | 2004 English: Translation error: "Heverlee" where the Latin has "monastério Hohorsténsi" (Hohorst). |
+| 3 | 7 | `mr:0503-ansfridus` | * | NL | dies_natalis |  | 2004 English: Translation error: "Heverlee" where the Latin has "monastério Hohorsténsi" (Hohorst). |
 | 3 | 8 | `mr:0503-theodosius` | * | UA | dies_natalis |  |  |
 | 3 | 9 | `mr:0503-aemilia-bicchieri` | * | IT | dies_natalis |  |  |
 | 3 | 10 | `mr:0503-stanislaus` | * | PL | dies_natalis |  | Stanisław Kazimierczyk, blessed in the 2004 editions, was canonized on 17 October 2010. |
@@ -54,13 +54,13 @@
 | 4 | 1 | `mr:0504-agapius-et-secundinus` |  | DZ | commemoratio | same as `mr:0429-agapius-et-socii` | 2004 English: Translation error: "through their illustrious priesthood" where the Latin has "ex illústri sacerdótio" (from illustrious priests they became martyrs). |
 | 4 | 2 | `mr:0504-antonina` |  | TR | dies_natalis |  |  |
 | 4 | 3 | `mr:0504-florianus` |  | AT | dies_natalis |  |  |
-| 4 | 4 | `mr:0504-silvanus-et-socii` |  | PS | dies_natalis |  | 2004 Italian: Translation error: "Mismiya" where the Latin has "Phænóne" (the mines of Phaeno, at Feinan), a different place. |
+| 4 | 4 | `mr:0504-silvanus-et-socii` |  | JO | dies_natalis |  | 2004 Italian: Translation error: "Mismiya" where the Latin has "Phænóne" (the mines of Phaeno, at Feinan), a different place. |
 | 4 | 5 | `mr:0504-ladislaus-de-gielniow` | * | PL | dies_natalis |  |  |
 | 4 | 6 | `mr:0504-ioannes-houghton-et-socii` |  | GB | dies_natalis |  |  |
 | 4 | 7 | `mr:0504-ioannes-martinus-moye` | * | DE | dies_natalis |  |  |
 | 5 | 1 | `mr:0505-iovinianus` |  | FR | dies_natalis |  | 2004 English: Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lugdunensian Gaul). |
 | 5 | 2 | `mr:0505-euthymius` |  | EG | dies_natalis |  |  |
-| 5 | 3 | `mr:0505-maximus` |  | IL | commemoratio |  |  |
+| 5 | 3 | `mr:0505-maximus` |  | PS | commemoratio |  |  |
 | 5 | 4 | `mr:0505-britto` | * | DE | dies_natalis |  |  |
 | 5 | 5 | `mr:0505-hilarius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the basilica of the city" where the Latin has "basílicæ civitátis habuérunt" (the basilicas of the city). |
 | 5 | 6 | `mr:0505-nicetius` |  | FR | dies_natalis |  | 2004 English: Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lugdunensian Gaul). |
@@ -209,7 +209,7 @@
 | 16 | 12 | `mr:0516-ubaldus` |  | IT | dies_natalis |  |  |
 | 16 | 13 | `mr:0516-adamus` | * | IT | dies_natalis |  |  |
 | 16 | 14 | `mr:0516-simon-stock` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "beato Simone Stock" where the Latin has "sancti Simónis Stock" (Saint). 2004 English: Translation error: "blessed Simon Stock" where the Latin has "sancti Simónis Stock" (Saint). |
-| 16 | 15 | `mr:0516-andreas-bobola` |  | PL | dies_natalis |  |  |
+| 16 | 15 | `mr:0516-andreas-bobola` |  | BY | dies_natalis |  |  |
 | 16 | 16 | `mr:0516-michael-wozniak` | * | DE | dies_natalis |  |  |
 | 16 | 17 | `mr:0516-vitalis-vladimirus-bajrak` | * | UA | dies_natalis |  |  |
 | 17 | 1 | `mr:0517-adrio` |  | EG | dies_natalis |  | 2004 English: Translation error: "Adrian" where the Latin has "Adriónis" (Adrio, not Hadrian). |
@@ -312,7 +312,7 @@
 | 24 | 5 | `mr:0524-donatianus-et-rogatianus` |  | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0524-triginta-octo-martyres-philippopolis` |  | BG | commemoratio |  |  |
 | 24 | 7 | `mr:0524-vincentius` |  | FR | dies_natalis |  |  |
-| 24 | 8 | `mr:0524-simeon-stylita` |  | SY | dies_natalis | same as `mr:0903-simeon-stylita-iunior` |  |
+| 24 | 8 | `mr:0524-simeon-stylita` |  | TR | dies_natalis | same as `mr:0903-simeon-stylita-iunior` |  |
 | 24 | 9 | `mr:0524-philippus` | * | IT | dies_natalis |  |  |
 | 24 | 10 | `mr:0524-ioannes-de-prado` | * | MA | dies_natalis |  |  |
 | 24 | 11 | `mr:0524-augustinus-yi-kwang-hon-et-socii` |  | KR | dies_natalis |  |  |
@@ -333,7 +333,7 @@
 | 25 | 14 | `mr:0525-magdalena-sophia-barat` |  | FR | dies_natalis |  |  |
 | 25 | 15 | `mr:0525-dionysius-ssebuggwawo` |  | UG | dies_natalis |  |  |
 | 25 | 16 | `mr:0525-christophorus-magallanes-et-augustinus-caloca` |  | MX | dies_natalis |  |  |
-| 25 | 17 | `mr:0525-nicolaus-cehelskyj` | * | MD | dies_natalis |  |  |
+| 25 | 17 | `mr:0525-nicolaus-cehelskyj` | * | RU | dies_natalis |  |  |
 | 26 | (1) | `mr:0526-philippus-neri` |  | IT | dies_natalis |  |  |
 | 26 | 2 | `mr:0526-eleutherius` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:0526-simetrius` |  | IT | dies_natalis |  |  |
@@ -385,7 +385,7 @@
 | 29 | 8 | `mr:0529-gulielmus-arnaud-et-socii` | * | FR | dies_natalis |  |  |
 | 29 | 9 | `mr:0529-gherardesca` | * | IT | dies_natalis |  |  |
 | 29 | 10 | `mr:0529-richardus-thirkeld` | * | GB | dies_natalis |  |  |
-| 29 | 11 | `mr:0529-iosephus-gerard` | * | IT | dies_natalis |  |  |
+| 29 | 11 | `mr:0529-iosephus-gerard` | * | LS | dies_natalis |  |  |
 | 29 | 12 | `mr:0529-iulia-ledochowska` |  | IT | dies_natalis |  |  |
 | 30 | 1 | `mr:0530-gabinus` |  | IT | dies_natalis |  |  |
 | 30 | 2 | `mr:0530-basilius-et-emmelia` |  | TR | dies_natalis |  |  |

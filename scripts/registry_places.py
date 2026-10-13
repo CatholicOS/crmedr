@@ -15,6 +15,12 @@ Usage:
 the script would write (rerun it after build_gazetteer.py apply or after editing
 data/gazetteer.json or data/countries_curated.json).
 """
+import json
+import sys
+import tempfile
+from pathlib import Path
+
+import extract_registry as reg
 from gazetteer_text import ISO_CODES, convention
 
 PLACE_FIELDS = ("wikidata", "label", "country", "text_says")
@@ -91,3 +97,56 @@ def apply(entries, gazetteer, curated):
         e["country"] = convention(code) if code else None
         out.append(e)
     return out
+
+
+def load(repo_root):
+    data = repo_root / "data"
+    registry = json.loads((data / "martyrology_ids.json").read_text(encoding="utf-8"))
+    gazetteer = json.loads((data / "gazetteer.json").read_text(encoding="utf-8"))["places"]
+    curated = json.loads((repo_root / CURATED).read_text(encoding="utf-8"))["countries"]
+    return registry["entries"], gazetteer, curated
+
+
+def render(entries, repo_root):
+    """Write the registry files for entries under repo_root (data/ and registry/)."""
+    current = [e for e in entries if not e.get("deprecated")]
+    deprecated = [e for e in entries if e.get("deprecated")]
+    reg.write_json(current, deprecated, repo_root)
+    reg.write_markdown(current, repo_root)
+
+
+def _files(root):
+    paths = [root / "data" / "martyrology_ids.json", *sorted((root / "registry").glob("*.md"))]
+    return {p.relative_to(root).as_posix(): p.read_bytes() for p in paths}
+
+
+def main(argv):
+    check = "--check" in argv
+    rest = [a for a in argv if a != "--check"]
+    repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
+    entries, gazetteer, curated = load(repo_root)
+    try:
+        out = apply(entries, gazetteer, curated)
+    except ValueError as e:
+        print(f"invalid {CURATED}:\n{e}", file=sys.stderr)
+        return 1
+    if not check:
+        render(out, repo_root)
+        print(f"wrote data/martyrology_ids.json and registry/*.md "
+              f"({sum(has_resolved_lead(e, gazetteer) for e in out if not e.get('deprecated'))} countries "
+              f"from opening places, {len(curated)} curated)")
+        return 0
+    with tempfile.TemporaryDirectory() as d:
+        render(out, Path(d))
+        want, have = _files(Path(d)), _files(repo_root)
+    stale = sorted(k for k in want if want[k] != have.get(k))
+    changed = [n["id"] for n, o in zip(out, entries) if n != o]
+    if stale:
+        print("out of date: " + ", ".join(stale) + "\nentries: " + ", ".join(changed[:20])
+              + "\nrun: python3 scripts/registry_places.py", file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

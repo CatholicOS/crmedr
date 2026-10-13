@@ -10,7 +10,7 @@
 | 1 | 4 | `mr:1001-romanus` |  | TR | dies_natalis |  |  |
 | 1 | 5 | `mr:1001-nicetius` |  | DE | dies_natalis |  |  |
 | 1 | 6 | `mr:1001-bavo` |  | BE | dies_natalis |  |  |
-| 1 | 7 | `mr:1001-wasnulphus` | * | BE | dies_natalis |  |  |
+| 1 | 7 | `mr:1001-wasnulphus` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:1001-geraldus-edwards` |  | GB | dies_natalis |  |  |
 | 1 | 9 | `mr:1001-radulphus-crockett-et-eduardus-james` | * | GB | dies_natalis |  |  |
 | 1 | 10 | `mr:1001-ioannes-robinson` | * | GB | dies_natalis |  |  |
@@ -33,7 +33,7 @@
 | 2 | 12 | `mr:1002-franciscus-carceller-et-isidorus-bover-oliver` | * | ES | dies_natalis |  | 2004 English: Translation error: "Castalla" where the Latin "Castáliam" means Castellón de la Plana. |
 | 2 | 13 | `mr:1002-elias-et-ioannes-baptista-carbonell-molla` | * | ES | dies_natalis |  |  |
 | 2 | 14 | `mr:1002-maria-francisca-ricart-olmos` | * | ES | dies_natalis |  |  |
-| 2 | 15 | `mr:1002-maria-antonina-kratochwil` | * | PL | dies_natalis |  |  |
+| 2 | 15 | `mr:1002-maria-antonina-kratochwil` | * | UA | dies_natalis |  |  |
 | 3 | 1 | `mr:1003-dionysius-areopagita` |  | GR | commemoratio |  |  |
 | 3 | 2 | `mr:1003-candida` |  | IT | dies_natalis |  | The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of the same commemoration. |
 | 3 | 3 | `mr:1003-faustus-et-socii` |  | EG | commemoratio | same as `mr:1004-caius-et-socii` |  |
@@ -131,7 +131,7 @@
 | 10 | 8 | `mr:1010-tancha` | * | FR | dies_natalis |  |  |
 | 10 | 9 | `mr:1010-paulinus` |  | GB | dies_natalis |  |  |
 | 10 | 10 | `mr:1010-telchildis` | * | FR | dies_natalis |  |  |
-| 10 | 11 | `mr:1010-daniel-et-socii` |  | MA | dies_natalis | same as `mr:1013-daniel-et-socii` |  |
+| 10 | 11 | `mr:1010-daniel-et-socii` |  | ES | dies_natalis | same as `mr:1013-daniel-et-socii` |  |
 | 10 | 12 | `mr:1010-ioannes` |  | GB | dies_natalis |  |  |
 | 10 | 13 | `mr:1010-daniel-comboni` |  | SD | dies_natalis |  |  |
 | 10 | 14 | `mr:1010-sophia-camilla-truszkowska` | * | PL | dies_natalis |  |  |
@@ -144,7 +144,7 @@
 | 11 | 5 | `mr:1011-sarmata` |  | EG | commemoratio |  |  |
 | 11 | 6 | `mr:1011-firminus` |  | FR | dies_natalis |  |  |
 | 11 | 7 | `mr:1011-canicus` |  | IE | dies_natalis |  |  |
-| 11 | 8 | `mr:1011-anastasius` |  | IT | dies_natalis |  |  |
+| 11 | 8 | `mr:1011-anastasius` |  | GE | dies_natalis |  |  |
 | 11 | 9 | `mr:1011-gummarius` |  | BE | dies_natalis |  |  |
 | 11 | 10 | `mr:1011-bruno` | * | DE | dies_natalis |  |  |
 | 11 | 11 | `mr:1011-gaudentius` | * | PL | dies_natalis |  |  |
@@ -202,7 +202,7 @@
 | 15 | 8 | `mr:1015-narcissus-baste-baste` | * | ES | dies_natalis |  |  |
 | 16 | (1) | `mr:1016-hedwigis` |  | PL | celebratio | same as `mr:1017-hedwigis` |  |
 | 16 | (2) | `mr:1016-margarita-maria-alacoque` |  | FR | celebratio |  |  |
-| 16 | 3 | `mr:1016-longinus` |  | IL | commemoratio | same as `mr:0315-longinus` |  |
+| 16 | 3 | `mr:1016-longinus` |  | PS | commemoratio | same as `mr:0315-longinus` |  |
 | 16 | 4 | `mr:1016-eliphius` |  | FR | dies_natalis |  |  |
 | 16 | 5 | `mr:1016-martinianus-et-saturianus` |  | TN | commemoratio |  |  |
 | 16 | 6 | `mr:1016-amandus-et-iunianus` |  | FR | dies_natalis |  |  |
@@ -282,7 +282,7 @@
 | 21 | 10 | `mr:1021-petrus-capucci` | * | IT | dies_natalis |  |  |
 | 21 | 11 | `mr:1021-petrus-yu-tae-chol` |  | KR | dies_natalis |  |  |
 | 21 | 12 | `mr:1021-laura-montoya-y-upegui` | * | CO | dies_natalis |  | Laura of St Catherine of Siena Montoya y Upegui, blessed in the 2004 editions, was canonized on 12 May 2013. |
-| 22 | 1 | `mr:1022-marcus` |  | IL | commemoratio |  | 2004 English: Translation error: "is said to have gathered together again" where the Latin has "congregáre cœpit" (began to gather), with no "is said". |
+| 22 | 1 | `mr:1022-marcus` |  | PS | commemoratio |  | 2004 English: Translation error: "is said to have gathered together again" where the Latin has "congregáre cœpit" (began to gather), with no "is said". |
 | 22 | 2 | `mr:1022-abercius` |  | TR | dies_natalis |  | 2004 English: Translation error: "led the faith ... and to have nourished it" where the Latin has "fidem ... conduxísse et ... enutrivísse" (that faith led him and nourished him). |
 | 22 | 3 | `mr:1022-philippus-et-hermes` |  | TR | dies_natalis |  |  |
 | 22 | 4 | `mr:1022-mallonus` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region around Lyon" where the Latin has "Gállia Lugdunénsi" (the Roman province of Lugdunensis, not the area of Lyon). |
@@ -373,7 +373,7 @@
 | 28 | 12 | `mr:1028-salvator-damianus-enguix-gares` | * | ES | dies_natalis |  |  |
 | 28 | 13 | `mr:1028-iosephus-ruiz-bruixola` | * | ES | dies_natalis |  |  |
 | 29 | 1 | `mr:1029-felicianus` |  | TN | dies_natalis |  |  |
-| 29 | 2 | `mr:1029-narcissus` |  | IL | commemoratio |  |  |
+| 29 | 2 | `mr:1029-narcissus` |  | PS | commemoratio |  |  |
 | 29 | 3 | `mr:1029-honoratus` |  | IT | dies_natalis | same as `mr:1028-honoratus` |  |
 | 29 | 4 | `mr:1029-zenobius` |  | LB | dies_natalis |  |  |
 | 29 | 5 | `mr:1029-abraham` |  | TR | dies_natalis | same as `mr:0316-abraham` |  |

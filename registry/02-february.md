@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0201-paulus-hong-yong-ju-et-socii` |  | KR | dies_natalis |  |  |
 | 1 | 17 | `mr:0201-anna-michelotti` | * | IT | dies_natalis |  | 2004 English: Translation error: "Johanna Francesca Michelotti" omits "a Visitatióne (Annæ)" (of the Visitation, born Anna). Translation error: "Sisters of the Sacred Heart" where the Latin has "Sorórum Parvárum a Sacro Corde" (Little Sisters of the Sacred Heart). |
 | 1 | 18 | `mr:0201-aloysius-variara` | * | CO | dies_natalis |  | 2004 English: Translation error: "Sisters of the Sacred Heart of Jesus and Mary" where the Latin has "Soróres Fílias Sacrórum Córdium Iesu et Maríæ" (Sisters Daughters of the Sacred Hearts). |
-| 2 | (1) | `mr:0202-praesentatio-domini` |  | IL | celebratio | same as `mr:0202-purificatio-beatae-mariae-virginis` |  |
+| 2 | (1) | `mr:0202-praesentatio-domini` |  | PS | celebratio | same as `mr:0202-purificatio-beatae-mariae-virginis` |  |
 | 2 | 2 | `mr:0202-flosculus` |  | FR | dies_natalis |  | 2004 English: Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in the province of Lugdunensis). |
 | 2 | 3 | `mr:0202-laurentius` |  | GB | dies_natalis |  |  |
 | 2 | 4 | `mr:0202-burchardus` |  | DE | dies_natalis | same as `mr:1014-burchardus` |  |
@@ -38,7 +38,7 @@
 | 2 | 14 | `mr:0202-maria-dominica-mantovani` | * | IT | dies_natalis |  | Maria Domenica Mantovani, blessed in the 2004 editions, was canonized on 15 May 2022. 2004 English: Translation error: the sentence omits "prǽfuit" (she presided over the institute as its first superior). |
 | 3 | (1) | `mr:0203-blasius` |  | TR | dies_natalis |  |  |
 | 3 | (2) | `mr:0203-ansgarius` |  | DE | dies_natalis |  |  |
-| 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | IL | commemoratio | same as `mr:1008-simeon` |  |
+| 3 | 3 | `mr:0203-simeon-et-anna-prophetissa` |  | PS | commemoratio | same as `mr:1008-simeon` |  |
 | 3 | 4 | `mr:0203-celerinus` |  | TN | dies_natalis |  | 2004 Italian: Translation error: "spada" (sword) where the Latin has "ferro" (irons, i.e. chains, alongside the stocks). 2004 English: Translation error: "through His glorious Passion" where the Latin "gloriósa passióne" refers to their own martyrdom. |
 | 3 | 5 | `mr:0203-leonius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Leonianus" where the Latin has "Leónii" (Leonius). |
 | 3 | 6 | `mr:0203-teridius-et-remedius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the Province of France" where the Latin "in Província Gálliæ" means Provence. |
@@ -171,7 +171,7 @@
 | 13 | 7 | `mr:0213-guimera` | * | FR | dies_natalis |  | 2004 English: Translation error: "Guimene" where the Latin has "Guiméræ" (Guimera). |
 | 13 | 8 | `mr:0213-fulcranus` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0213-gilbertus` | * | FR | dies_natalis |  |  |
-| 13 | 10 | `mr:0213-iordanus-de-saxonia` | * | IL | dies_natalis |  |  |
+| 13 | 10 | `mr:0213-iordanus-de-saxonia` | * | PS | dies_natalis |  |  |
 | 13 | 11 | `mr:0213-augustina-camozzi` | * | IT | dies_natalis |  | 2004 English: Translation error: "(Augusta)" where the Latin has "(Augustínæ)" (Augustina). |
 | 13 | 12 | `mr:0213-lucretia-bellini` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
@@ -215,8 +215,8 @@
 | 17 | 9 | `mr:0217-constabilis` | * | IT | dies_natalis |  |  |
 | 17 | 10 | `mr:0217-evermodus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "nell’Alsazia" (Alsace) where the Latin has "in Holsátia" (Holstein). |
 | 17 | 11 | `mr:0217-lucas-belludi` | * | IT | dies_natalis |  |  |
-| 17 | 12 | `mr:0217-petrus-yu-chong-nyul` |  | KR | dies_natalis |  |  |
-| 17 | 13 | `mr:0217-antonius-leszczewicz` | * | PL | dies_natalis |  |  |
+| 17 | 12 | `mr:0217-petrus-yu-chong-nyul` |  | KP | dies_natalis |  |  |
+| 17 | 13 | `mr:0217-antonius-leszczewicz` | * | BY | dies_natalis |  |  |
 | 18 | 1 | `mr:0218-sadoth-et-socii` |  | IR | dies_natalis | same as `mr:0220-sadoth-et-socii` |  |
 | 18 | 2 | `mr:0218-helladius` |  | ES | dies_natalis |  | 2004 English: Translation error: "a courtier of the king" where the Latin has "aulæ régiæ rector" (governor of the royal court). |
 | 18 | 3 | `mr:0218-tarasius` |  | TR | dies_natalis | same as `mr:0225-tarasius` |  |
@@ -228,7 +228,7 @@
 | 18 | 9 | `mr:0218-franciscus-regis-clet` |  | CN | dies_natalis |  |  |
 | 18 | 10 | `mr:0218-ioannes-petrus-neel` |  | CN | dies_natalis |  |  |
 | 18 | 11 | `mr:0218-catharina-comensoli` | * | IT | dies_natalis |  | Geltrude Comensoli, blessed in the 2004 editions, was canonized on 26 April 2009. |
-| 18 | 12 | `mr:0218-georgius-kaszyra` | * | PL | dies_natalis |  |  |
+| 18 | 12 | `mr:0218-georgius-kaszyra` | * | BY | dies_natalis |  |  |
 | 19 | 1 | `mr:0219-quodvultdeus` |  | IT | depositio | same as `mr:1026-quodvultdeus` |  |
 | 19 | 2 | `mr:0219-monachi-martyres-palaestinae` |  | PS | commemoratio |  |  |
 | 19 | 3 | `mr:0219-mansuetus` |  | IT | dies_natalis |  |  |
@@ -309,7 +309,7 @@
 | 27 | 3 | `mr:0227-honorina` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0227-baldomerus` |  | FR | dies_natalis |  |  |
 | 27 | 5 | `mr:0227-basilius-et-procopius-decapolita` |  | TR | dies_natalis |  |  |
-| 27 | 6 | `mr:0227-gregorius` |  | AM | dies_natalis |  |  |
+| 27 | 6 | `mr:0227-gregorius` |  | TR | dies_natalis |  |  |
 | 27 | 7 | `mr:0227-lucas` | * | IT | dies_natalis |  |  |
 | 27 | 8 | `mr:0227-anna-line` |  | GB | dies_natalis |  |  |
 | 27 | 9 | `mr:0227-gulielmus-richardson` | * | GB | dies_natalis |  |  |
