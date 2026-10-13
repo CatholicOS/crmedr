@@ -122,11 +122,12 @@ Validation (errors stop the run):
 
 ## Report
 
-`docs/gazetteer-report.md`: the "Preview for sub-project 3" section is replaced by
-**Registry countries from opening places**: the entries whose derived country differs
-from the country the registry carried before this change (ID, `la`, before, after), so
-the one-time correction is auditable. After this change the section lists entries whose
-curated value differs from the place (none expected) and is otherwise empty.
+Once `--check` holds, a registry country can no longer differ from its resolved opening
+place, so the "Preview: registry country differs from the opening place" section of
+`docs/gazetteer-report.md` is removed (with the `lead_countries` it was built from in
+`place_index`). The one-time correction is recorded instead in
+`docs/canonicalization-report.md`, as a table of every current entry whose `country`
+this change alters (ID, place, before, after), computed against `main`.
 
 ## Downstream
 
@@ -149,7 +150,8 @@ curated value differs from the place (none expected) and is otherwise empty.
 - `AGENTS.md`: pipeline step for `registry_places.py`; `data/countries_curated.json`
   under hand-corrections; `COUNTRY_CORRECTIONS` removed.
 - `docs/canonicalization-report.md`: the country rule (opening place, curated fallback,
-  Holy Land convention).
+  Holy Land convention) and the table of changed countries; the "Country-code
+  corrections" section notes that `COUNTRY_CORRECTIONS` is gone.
 - The registry header `$comment` and the `registry/MM-*.md` intro describe `country` as
   the modern country of the opening place.
 
