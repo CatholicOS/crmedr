@@ -356,7 +356,7 @@ def cand(qid, it=(), la=(), country="IT", countries=None, place=True, p9314=Fals
 
 
 def item(*its, occ=("mr:0101-fictus",)):
-    return {"it": list(its), "occurrences": list(occ), "lead_countries": {}}
+    return {"it": list(its), "occurrences": list(occ)}
 
 
 REGIONS = {"Fictia": {"IT"}, "Fictiense": {"IT"}, "Altrofictia": {"ES"}}
@@ -373,12 +373,10 @@ class PlaceIndexTest(unittest.TestCase):
             "mr:0101-a": [{"role": "death", "la": "Fictópoli", "it": "A Fictopoli in Fictia", "source": "lead"},
                           {"role": "birth", "la": "in Fíctia", "source": "curated"}],
         }
-        entries = [{"id": "mr:0101-a", "country": "FX"}, {"id": "mr:0102-b", "country": "FY"}]
-        idx = bg.place_index(places, entries)
+        idx = bg.place_index(places)
         self.assertEqual(idx["Fictópoli"], {"it": ["A Fictopoli", "A Fictopoli in Fictia"],
-                                           "occurrences": ["mr:0101-a", "mr:0102-b"],
-                                           "lead_countries": {"mr:0101-a": "FX", "mr:0102-b": "FY"}})
-        self.assertEqual(idx["in Fíctia"], {"it": [], "occurrences": ["mr:0101-a"], "lead_countries": {}})
+                                           "occurrences": ["mr:0101-a", "mr:0102-b"]})
+        self.assertEqual(idx["in Fíctia"], {"it": [], "occurrences": ["mr:0101-a"]})
 
 
 class EvaluateTest(unittest.TestCase):
@@ -509,9 +507,8 @@ class EvaluateTest(unittest.TestCase):
                           "coords", "types", "evidence"})
 
 
-INDEX = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"],
-                       "lead_countries": {"mr:0101-a": "FR"}},
-         "Altrópoli": {"it": [], "occurrences": ["mr:0102-b"], "lead_countries": {}}}
+INDEX = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"]},
+         "Altrópoli": {"it": [], "occurrences": ["mr:0102-b"]}}
 
 
 class DeriveTextSaysTest(unittest.TestCase):
@@ -556,6 +553,11 @@ class ValidateTest(unittest.TestCase):
             errors = bg.validate({la: entry}, INDEX)
             self.assertTrue(errors and word in errors[0], (la, entry, errors))
 
+    def test_holy_land_convention(self):
+        gaz = {"Altrópoli": {"wikidata": "Q1", "label": "Altropolis", "country": "IL", "status": "reviewed"}}
+        errors = bg.validate(gaz, INDEX)
+        self.assertTrue(any("IL" in e and "PS" in e for e in errors), errors)
+
     def test_text_says_absent_when_the_text_agrees(self):
         good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": "DE", "status": "reviewed"}}
         self.assertEqual(bg.validate(good, INDEX), [])
@@ -595,7 +597,7 @@ class FakeClient:
 
 
 def index_of(**places):
-    return {la: {"it": list(its), "occurrences": [f"mr:01{n:02d}-x"], "lead_countries": {}}
+    return {la: {"it": list(its), "occurrences": [f"mr:01{n:02d}-x"]}
             for n, (la, its) in enumerate(places.items(), 1)}
 
 
@@ -699,9 +701,8 @@ class ProposeTest(unittest.TestCase):
 
 class ReportTest(unittest.TestCase):
     def test_report_sections(self):
-        index = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"],
-                               "lead_countries": {"mr:0101-a": "DE"}},
-                 "Altrópoli": {"it": ["A Altropoli"], "occurrences": ["mr:0102-b"], "lead_countries": {}}}
+        index = {"Fictópoli": {"it": ["A Fictopoli, nell’odierna Germania"], "occurrences": ["mr:0101-a"]},
+                 "Altrópoli": {"it": ["A Altropoli"], "occurrences": ["mr:0102-b"]}}
         gaz = {"Fictópoli": {"wikidata": "Q1", "label": "Fictopolis", "country": "FR", "status": "reviewed",
                              "text_says": [{"country": "DE", "it": "A Fictopoli, nell’odierna Germania"}]}}
         ops = [{"op": "resolve_place", "id": "Altrópoli", "occurrences": ["mr:0102-b"], "failed": ["no candidates found"]}]
@@ -710,7 +711,7 @@ class ReportTest(unittest.TestCase):
         self.assertIn("1 awaiting review", md)
         self.assertIn("| Altrópoli | 1 | no candidates found |", md)
         self.assertIn("| Fictópoli | FR | DE |", md)
-        self.assertIn("| `mr:0101-a` | Fictópoli | DE | FR |", md)
+        self.assertNotIn("Preview", md)
         self.assertIn("Gamma", md)
 
 
