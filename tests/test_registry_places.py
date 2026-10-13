@@ -116,6 +116,15 @@ class ValidateTest(unittest.TestCase):
         self.assertIn("mr:0102-b: unexpected keys", msg)
         self.assertIn("mr:0103-c: a value is a code, null or {country, note}", msg)
 
+    def test_malformed_objects_are_errors_not_tracebacks(self):
+        ids = ["mr:0101-a", "mr:0102-b", "mr:0103-c"]
+        msg = self.errors([entry(i, None) for i in ids],
+                          {"mr:0101-a": {"note": "no country"}, "mr:0102-b": {"country": ["IT"]},
+                           "mr:0103-c": {"country": 5, "note": "x"}})
+        self.assertIn("mr:0101-a: an object needs a country (a code or null)", msg)
+        self.assertIn("mr:0102-b: a value is a code, null or {country, note}", msg)
+        self.assertIn("mr:0103-c: a value is a code, null or {country, note}", msg)
+
     def test_apply_raises_on_errors(self):
         with self.assertRaisesRegex(ValueError, "mr:0101-a"):
             rp.apply([entry("mr:0101-a", "IT")], GAZ, {})

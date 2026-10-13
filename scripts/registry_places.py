@@ -60,6 +60,12 @@ def validate(entries, gazetteer, curated):
         if isinstance(value, dict):
             if set(value) - {"country", "note"}:
                 errors.append(f"{mr_id}: unexpected keys {sorted(set(value) - {'country', 'note'})}")
+            if "country" not in value:
+                errors.append(f"{mr_id}: an object needs a country (a code or null)")
+                continue
+            if value["country"] is not None and not isinstance(value["country"], str):
+                errors.append(f"{mr_id}: a value is a code, null or {{country, note}}")
+                continue
         elif value is not None and not isinstance(value, str):
             errors.append(f"{mr_id}: a value is a code, null or {{country, note}}")
             continue
