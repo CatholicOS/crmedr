@@ -765,6 +765,10 @@ class ApplyTest(unittest.TestCase):
         _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q7", "country": "IT"}))
         self.assertEqual(gaz["Fictópoli"]["label"], "Septima")
 
+    def test_decided_country_follows_the_holy_land_convention(self):
+        _, gaz, _ = self.run_apply(op("Altrópoli", "edit", [self.c1], edited={"wikidata": "Q1", "country": "IL"}))
+        self.assertEqual(gaz["Altrópoli"]["country"], "PS")
+
     def test_reject_is_unresolved(self):
         _, gaz, _ = self.run_apply(op("Altrópoli", "reject", edited={"reason": "no item for the hill"}))
         self.assertEqual(gaz["Altrópoli"], {"wikidata": None, "status": "unresolved", "note": "no item for the hill"})

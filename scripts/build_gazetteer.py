@@ -438,6 +438,7 @@ def _resolve(op, client, its):
         or chosen.get("country")
     if not country:
         return None, f"{la!r}: {qid} needs a country (no single current P17; use edit)"
+    country = convention(country)  # a reviewer's IL is the Holy Land's PS
     # Derived from the place's Italian and the final country, never taken from the decision.
     text_says = derive_text_says(its, country)
     entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
