@@ -1,0 +1,19 @@
+{
+  "$comment": "The names the 2004 Latin prints for one place, joined by seu or vel ('Oświęcim seu Auschwitz'): {Wikidata QID of the place in data/gazetteer.json: [its printed names as nominatives, in printed order]}. martyrology-frontend's index of places files each name that is not the place's heading as a cross-reference to it ('Oświęcim → see Auschwitz'). Only printed names count, not Wikidata aliases. Checked by scripts/build_gazetteer.py check. See CatholicOS/crmedr#86.",
+  "Q7341": [
+    "Oświęcim",
+    "Auschwitz"
+  ],
+  "Q1757438": [
+    "Samaria",
+    "Sebaste"
+  ],
+  "Q11815679": [
+    "Perinthus",
+    "Heraclea"
+  ],
+  "Q207540": [
+    "Diospolis",
+    "Lydda"
+  ]
+}

@@ -917,3 +917,24 @@ class SuggestionEvidenceTest(unittest.TestCase):
         review = bg.new_changeset([self.suggested_op([kept])])
         bg.verify_suggestions(review, INDEX, self.client)
         self.assertEqual(self.evidence(review), ["type"])
+
+
+class PlaceVariantsTest(unittest.TestCase):
+    GAZ = {"Fictópoli seu Fíctia": {"wikidata": "Q1", "label": "Fictopolis", "country": "IT", "status": "reviewed"}}
+
+    def test_names_of_a_decided_place_pass(self):
+        self.assertEqual(bg.validate_variants({"$comment": "", "Q1": ["Fictopolis", "Fictia"]}, self.GAZ), [])
+
+    def test_bad_entries_are_refused(self):
+        errors = bg.validate_variants({
+            "Q2": ["A", "B"],            # no such place
+            "Q1": ["Fictopolis"],        # one name
+        }, self.GAZ)
+        self.assertEqual(len(errors), 2)
+        self.assertEqual(len(bg.validate_variants({"Q1": ["Fictópolis", "Fictopolis"]}, self.GAZ)), 1)
+        self.assertEqual(len(bg.validate_variants({"Q1": ["Fictopolis", " "]}, self.GAZ)), 1)
+
+    def test_the_repository_file_is_valid(self):
+        gazetteer = json.loads((REPO / "data" / "gazetteer.json").read_text(encoding="utf-8"))["places"]
+        variants = json.loads((REPO / "data" / "places_variants_curated.json").read_text(encoding="utf-8"))
+        self.assertEqual(bg.validate_variants(variants, gazetteer), [])
