@@ -1,5 +1,5 @@
 {
-  "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft.",
+  "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft. Each current entry's country is the modern country of its opening place (data/gazetteer.json), else data/countries_curated.json; the Holy Land is PS (scripts/registry_places.py).",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
   "entry_count": 6256,

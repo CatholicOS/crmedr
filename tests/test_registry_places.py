@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 import shutil
 import sys
@@ -142,7 +144,8 @@ class CheckTest(unittest.TestCase):
             (root / "data/martyrology_ids.json").write_text(
                 json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             self.assertEqual(rp.main(["--check", str(root)]), 1)
-            self.assertEqual(rp.main([str(root)]), 0)
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(rp.main([str(root)]), 0)
             self.assertEqual(rp.main(["--check", str(root)]), 0)
 
 if __name__ == "__main__":
