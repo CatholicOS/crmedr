@@ -22999,6 +22999,14 @@
       "asterisk": false,
       "country": "IL",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "cult",
+          "la": "Dióspoli seu Lyddæ in Palæstína",
+          "it": "a Diospoli o Lidda in Palestina",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true
     },
     {

@@ -12,6 +12,7 @@ See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
   data/gazetteer.json          {la: {wikidata, label, country, status, ...}}
   data/gazetteer_review.json   the review change-set
   docs/gazetteer-report.md     progress, text_says, country preview
+  data/places_variants_curated.json  a place's printed names ({QID: [names]}), checked by `check`
 
 Usage:
   python3 build_gazetteer.py propose [repo_root]              (network)
@@ -202,6 +203,24 @@ def evaluate(la, item, candidates, region_countries, region_coords=lambda region
             # Diagnosed against every candidate above; only plausible ones are offered.
             "candidates": [c for c in (published(s[0], s[3]) for s in scored) if plausible(c)][:MAX_CANDIDATES],
             "failed": failed, "claims": claims}
+
+
+def validate_variants(variants, gazetteer):
+    """The errors of data/places_variants_curated.json ({QID: [names]}): each QID is a place the
+    gazetteer decided, its names a list of at least two distinct non-empty names (a place printed
+    "X seu Y")."""
+    errors, decided = [], {e.get("wikidata") for e in gazetteer.values()}
+    for qid, names in variants.items():
+        if qid.startswith("$"):
+            continue
+        where = f"places_variants_curated {qid!r}"
+        if not QID.match(qid) or qid not in decided:
+            errors.append(f"{where}: not the QID of a place in data/gazetteer.json")
+        if not isinstance(names, list) or len(names) < 2 or not all(isinstance(n, str) and n.strip() for n in names):
+            errors.append(f"{where}: expected a list of two or more names")
+        elif len({fold(n) for n in names}) != len(names):
+            errors.append(f"{where}: a name is listed twice")
+    return errors
 
 
 def validate(gazetteer, index, review_ops=()):
@@ -531,7 +550,8 @@ def main(argv):
         print(f"{dropped} non-place candidates dropped; {len(review['operations'])} queued")
         return 0
     if cmd == "check":
-        errors = validate(gazetteer, index, review["operations"])
+        variants = _read_json(repo_root / "data" / "places_variants_curated.json", {})
+        errors = validate(gazetteer, index, review["operations"]) + validate_variants(variants, gazetteer)
         print("\n".join(errors) or f"ok: {len(gazetteer)} places decided, {len(review['operations'])} queued")
         return 1 if errors else 0
     if cmd == "propose":
