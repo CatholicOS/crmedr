@@ -177,7 +177,7 @@
 | 16 | 7 | `mr:0316-ioannes-amias-et-robertus-dalby` | * | GB | dies_natalis |  |  |
 | 16 | 8 | `mr:0316-ioannes-de-brebeuf` |  | CA | dies_natalis |  |  |
 | 17 | (1) | `mr:0317-patricius` |  | GB | dies_natalis |  |  |
-| 17 | 2 | `mr:0317-alexandria` |  | EG | commemoratio |  | 2004 English: Translation error: "were most cruelly scourged" where the Latin has "sævíssime cæsi" (most cruelly slain). |
+| 17 | 2 | `mr:0317-plurimi-martyres-alexandriae` |  | EG | commemoratio |  | 2004 English: Translation error: "were most cruelly scourged" where the Latin has "sævíssime cæsi" (most cruelly slain). |
 | 17 | 3 | `mr:0317-agricola` |  | FR | dies_natalis |  |  |
 | 17 | 4 | `mr:0317-gertrudis` |  | BE | dies_natalis |  |  |
 | 17 | 5 | `mr:0317-paulus` |  | CY | dies_natalis |  |  |
