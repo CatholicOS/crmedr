@@ -15537,13 +15537,21 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0317-alexandria",
+      "id": "mr:0317-plurimi-martyres-alexandriae",
       "month": 3,
       "day": 17,
       "entry": 2,
       "asterisk": false,
       "country": "EG",
       "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Alexandríæ in Ægýpto",
+          "it": "ad Alessandria d’Egitto",
+          "source": "curated"
+        }
+      ],
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"were most cruelly scourged\" where the Latin has \"sævíssime cæsi\" (most cruelly slain)."
       }
@@ -36104,13 +36112,21 @@
       ]
     },
     {
-      "id": "mr:0623-nicomedia",
+      "id": "mr:0623-plurimi-martyres-nicomediae",
       "month": 6,
       "day": 23,
       "entry": 1,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Nicomedíæ",
+          "it": "di Nicomedia",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0623-ediltrudis",

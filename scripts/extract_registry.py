@@ -836,6 +836,9 @@ ID_CORRECTIONS = {
     "mr:1218-nemesia-valle": "mr:1218-iulia-valle",
     "mr:1224-paula-elisabeth-cerioli": "mr:1224-constantia-cerioli",
     "mr:1225-maria-ab-apostolis": "mr:1225-maria-teresia-von-wullenweber",
+    # #109: anonymous groups of martyrs, not saints named after their city.
+    "mr:0317-alexandria": "mr:0317-plurimi-martyres-alexandriae",
+    "mr:0623-nicomedia": "mr:0623-plurimi-martyres-nicomediae",
 }
 
 # Days whose opening elogia are printed as unnumbered drop-cap paragraphs in
@@ -3713,16 +3716,16 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"tintore\" (dyer) where the Latin has \"fullónis\" (fuller)."
         ),
     },
-    "mr:0317-alexandria": {
-        EDITION_EN: (
-            "Translation error: \"were most cruelly scourged\" where the Latin has \"sævíssime "
-            "cæsi\" (most cruelly slain)."
-        ),
-    },
     "mr:0317-ioannes-sarkander": {
         EDITION_EN: (
             "Translation error: \"the torture of the rack\" where the Latin has \"rotæ "
             "supplício\" (the torture of the wheel)."
+        ),
+    },
+    "mr:0317-plurimi-martyres-alexandriae": {
+        EDITION_EN: (
+            "Translation error: \"were most cruelly scourged\" where the Latin has \"sævíssime "
+            "cæsi\" (most cruelly slain)."
         ),
     },
     "mr:0318-anselmus": {

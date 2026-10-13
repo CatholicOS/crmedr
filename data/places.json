@@ -6669,6 +6669,14 @@
         "source": "lead"
       }
     ],
+    "mr:0317-plurimi-martyres-alexandriae": [
+      {
+        "role": "death",
+        "la": "Alexandríæ in Ægýpto",
+        "it": "ad Alessandria d’Egitto",
+        "source": "curated"
+      }
+    ],
     "mr:0318-amata-le-bouteiller": [
       {
         "role": "death",
@@ -15498,6 +15506,14 @@
         "la": "In erémo Vallismanénsi in Picéno Itáliæ",
         "it": "Nell’eremo di Valmanente nelle Marche",
         "source": "lead"
+      }
+    ],
+    "mr:0623-plurimi-martyres-nicomediae": [
+      {
+        "role": "death",
+        "la": "Nicomedíæ",
+        "it": "di Nicomedia",
+        "source": "curated"
       }
     ],
     "mr:0623-sanctina-cimatti": [

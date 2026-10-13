@@ -119,6 +119,12 @@ Raphael, *archangelórum*, not a saint and his companions: mr:0929-michael-gabri
 Its persons carry the title, as the apostles do: Michael Archangelus, Gabriel Archangelus, Raphael
 Archangelus.
 
+**Two cities read as saints** (#109): the eulogies of 17 March and 23 June commemorate *plurimórum
+sanctórum mártyrum Alexandríæ* and *… Nicomedíæ*, many unnamed martyrs of the city, not a saint named
+after it: mr:0317-alexandria → mr:0317-plurimi-martyres-alexandriae and mr:0623-nicomedia →
+mr:0623-plurimi-martyres-nicomediae, as mr:0209-plurimi-martyres-alexandriae. They name no person; the
+city is their place of death (curated, since it does not open the text).
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
 

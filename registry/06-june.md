@@ -259,7 +259,7 @@
 | 22 | 6 | `mr:0622-eusebius` |  | SY | dies_natalis | same as `mr:0621-eusebius` |  |
 | 22 | 7 | `mr:0622-nicetas` |  | RS | commemoratio |  |  |
 | 22 | 8 | `mr:0622-innocentius-v` | * | IT | dies_natalis |  |  |
-| 23 | 1 | `mr:0623-nicomedia` |  | TR | commemoratio |  |  |
+| 23 | 1 | `mr:0623-plurimi-martyres-nicomediae` |  | TR | commemoratio |  |  |
 | 23 | 2 | `mr:0623-ediltrudis` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "rifiutate per due volte le nozze" (twice refused marriage) where the Latin has "bis nuptiis posthabitis" (having twice set her marriages aside); she was twice married. |
 | 23 | 3 | `mr:0623-bilius` | * | FR | dies_natalis |  |  |
 | 23 | 4 | `mr:0623-lanfrancus` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "san Lanfranco" where the Latin has "beati Lanfranci" (Blessed). |
