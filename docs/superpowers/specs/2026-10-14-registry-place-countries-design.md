@@ -153,12 +153,13 @@ curated value differs from the place (none expected) and is otherwise empty.
 - The registry header `$comment` and the `registry/MM-*.md` intro describe `country` as
   the modern country of the opening place.
 
-## Closing #12
+## Next: body places (sub-project 4)
 
-The issue's open questions, as built: places cover current entries only; the role set
-is `death`, `burial`, `translation`, `dedication`, `cult`, `birth`, `ministry` (opening
-places take theirs from typology; `birth` and `ministry` are defined but used by no item
-yet, the four hand-curated body places in `data/places_curated.json` being `death` and
-`cult`); places below country level are recorded as Wikidata items. Body places (birth,
-see, burial elsewhere) are not extracted beyond the curated ones; the closing comment
-says so.
+Issue #12 stays open. Its purpose, several typed places per eulogy, is met so far only
+by the opening place and four hand-curated body places, while `docs/places-report.md`
+lists 547 entries with body-place cues (death 242, ministry 221, birth 121, burial 9).
+Sub-project 4 extracts body places from the text (cue words, verbatim `la` / `it` within
+the quoting exception, review cards where a cue names no quotable place), resolves them
+through the gazetteer and marks them in `data/mentions.json`. Nothing here blocks it:
+`registry_places.py` fills every `places[]` item, opening or body, and `country` rests on
+the opening place by design.
