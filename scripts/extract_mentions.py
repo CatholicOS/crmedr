@@ -2,7 +2,9 @@
 """Mark where each eulogy of the 2004 editions names its persons and places.
 
 For the Latin editio altera 2004, the persons of data/persons.json and the
-places of data/places.json; for the Italian (CEI) 2004 edition, the places.
+places of data/places.json; for the Italian (CEI) 2004 edition, the places and
+the same persons under their Italian forms (scripts/mentions_italian.py: a person
+found by none of them is proposed for review, by position in a footnote list).
 Each mention is an offset span (UTF-16 code units, the unit JavaScript counts
 in) in the eulogy's text or in one of its footnotes, with a `check` (a hash of
 the printed words, never the words) and the Wikidata item crmedr has decided
@@ -33,7 +35,8 @@ from collections import Counter
 from pathlib import Path
 
 from extract_typology import load_texts
-from mentions_text import back_ref_span, find_person, find_place, free, from_utf16, partial_span, utf16
+from mentions_italian import ItalianNames, by_position, surname_span
+from mentions_text import back_ref_span, find_person, find_place, fold_map, free, from_utf16, partial_span, utf16
 from persons_text import name_key, person_key
 
 
@@ -207,7 +210,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
                     f"the place phrase contains the person {name}")
                 removals[key] = (review[-1], [name])
             return
-        ask("add_mention", "person", where, partial_span(src, name, both), f"{name} was not found", name=name, **nth)
+        ask("add_mention", "person", where, partial_span(src, (p.get("forms") or [name])[0], both),
+            f"{name} was not found", name=name, **nth)
 
     # Every person by their main name first, longer names first, then their other names: a variant
     # never takes the words of a person of that name ("Maximianus seu Maximus" and a Maximus).
@@ -216,27 +220,64 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
     order = [p for p in sorted(persons, key=lambda p: (-len(name_key(p["name"])), name_key(p["name"]) not in decided,
                                                          p.get("n", 1), not person_qid(person_key(p))))
              if source(p["where"]) is not None]  # extract_persons.py validates footnote numbers
-    placed, later = [], []
+    # A given name two persons of the eulogy share names neither of them alone.
+    given_names = Counter(fold_map(f.split()[0])[0] for p in persons for f in (p.get("forms") or [])[:1] if f.split())
+
+    def look(p, fallback=False):
+        """The person's first free match under the names they are printed with in this edition (the
+        Italian forms, else the stored name), and the name it was found under. Persons of one name take
+        its matches in print order, whatever their case ("Felíce", then "Felix"). With `fallback`, for
+        the Italian: a text person by their given name alone, any person by their surname."""
+        both = spans("place", p["where"]) + spans("person", p["where"])
+        for nm in p.get("forms") or [p["name"]]:
+            try:
+                found = find_person(source(p["where"]), nm, both, in_order=last[group(p)] > 1)
+            except re.error:  # a form the name patterns can't take
+                continue
+            if found:
+                return found, nm
+        if lang != "it" or not fallback:
+            return None, None
+        src = source(p["where"])
+        if p["where"] == "text":  # a byname printed apart ("Canuto, detto Lavard"): the given name
+            for nm in p.get("forms", []):
+                given = nm.split()[0]
+                if (len(given) >= 3 and nm != given and given_names[fold_map(given)[0]] < 2
+                        and (found := find_person(src, given, both))):
+                    return (found[0], "given name", found[2]), None  # no further matches of a bare given name
+        span = surname_span(src, p.get("ends", []), both, [f.split()[0] for f in p.get("forms", []) if f.split()],
+                            joined=bool(re.search(r"\set\s", p["name"])))
+        return ((span, "surname", False), None) if span else (None, None)
+
+    placed, later, unplaced, second = [], [], [], []
     for p in order:
-        # Persons of one name take its matches in print order, whatever their case ("Felíce", then "Felix").
-        found = find_person(source(p["where"]), p["name"], spans("place", p["where"]) + spans("person", p["where"]),
-                            in_order=last[group(p)] > 1)
+        found, under = look(p)
+        if not found and lang == "it":
+            second.append(p)  # by a fallback, once every person has been looked for by name
+            continue
         if not found:
             if p.get("also"):
                 later.append(p)  # tried under their other names once every main name is placed
             else:
-                not_found(p)
+                unplaced.append(p)
             continue
         place(p, found, p["name"])
         placed.append(p)
-        if p.get("n", 1) == last[group(p)]:
-            again(p, [p["name"]])
+        if p.get("n", 1) == last[group(p)] and under:
+            again(p, [under])
+    for p in second:
+        found, under = look(p, fallback=True)
+        if not found:
+            unplaced.append(p)
+            continue
+        place(p, found, p["name"])
+        placed.append(p)
     for p in later:
         both = spans("place", p["where"]) + spans("person", p["where"])
         found, under = next(((f, nm) for nm in p.get("also", []) if (f := find_person(source(p["where"]), nm, both))),
                             (None, None))
         if not found:
-            not_found(p)
+            unplaced.append(p)
             continue
         place(p, found, under)
         placed.append(p)
@@ -245,6 +286,25 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
     for p in placed:  # the other names' further matches, once every person has their own words
         if p.get("also") and p.get("n", 1) == last[group(p)]:
             again(p, p["also"])
+    # A footnote list prints its persons in the same order in every edition: one left over between two
+    # found neighbours is proposed where the list prints a name between theirs.
+    proposed = {}
+    for where in {where_key(p["where"]) for p in unplaced if "rank" in p and p["where"] != "text"}:
+        ranked = sorted((p for p in persons if "rank" in p and where_key(p["where"]) == where), key=lambda p: p["rank"])
+        src, w = source(ranked[0]["where"]), ranked[0]["where"]
+        marked = {(m.get("name"), m.get("n")): (m["start"], m["end"]) for m in mentions
+                  if m["kind"] == "person" and m["where"] == w}
+        found = {i: marked[(p["name"], p.get("n"))] for i, p in enumerate(ranked) if (p["name"], p.get("n")) in marked}
+        for i, span in by_position(src, ranked, found, spans("place", w) + spans("person", w)).items():
+            proposed[id(ranked[i])] = span
+    for p in unplaced:
+        if id(p) in proposed:
+            spans("person", p["where"]).append(proposed[id(p)])
+            ask("add_mention", "person", p["where"], proposed[id(p)],
+                f"{p['name']} was not found by name: proposed by its place in the list",
+                name=p["name"], **({"n": p["n"]} if "n" in p else {}))
+        else:
+            not_found(p)
 
     mentions.sort(key=mention_order)
     return mentions, review, hows
@@ -255,7 +315,7 @@ PERSONS_EDITION = "martyrologium_romanum_2004"
 KINDS = ("person", "place")
 # A span covers one name or one place designation, never more: a guard against runaway matches.
 MAX_FORM_WORDS = 20
-COMMENT = ("Where each eulogy of the 2004 editions names its persons (Latin) and places (Latin and "
+COMMENT = ("Where each eulogy of the 2004 editions names its persons and places (Latin and "
            "Italian): offsets in UTF-16 code units into the eulogy's text or its nth footnote (n from 1, "
            "in printed order), a check (the first 8 hex digits of the SHA-256 of the printed words, which "
            "are never stored), and the Wikidata item decided in person_items.json or gazetteer.json. "
@@ -535,21 +595,42 @@ def file_under_twins(entries, texts, places, persons):
     """Re-key to its twin's ID a current eulogy that has no text under its own ID
     when a `same_eulogy` twin has one: the edition files the text, its footnotes and
     the API's lookups by the twin's ID. Returns the places, the persons and
-    {current ID: twin ID}. A twin with places or persons of its own keeps them and
-    the current eulogy is left as it was (it would mark the same text twice)."""
+    {current ID: twin ID}. Each kind is filed apart: a twin with places (or persons)
+    of its own keeps them, and the current eulogy's are left where they were (they
+    would mark the same text twice)."""
     places, persons, twins = dict(places), dict(persons), {}
     for e in entries:
         mrid = e["id"]
         if e.get("deprecated") or mrid in texts or not (mrid in places or mrid in persons):
             continue
         twin = next((t for t in e.get("same_eulogy", []) if t in texts), None)
-        if twin is None or twin in places or twin in persons:
+        if twin is None:
             continue
-        twins[mrid] = twin
         for by_id in (places, persons):
-            if mrid in by_id:
+            if mrid in by_id and twin not in by_id:
                 by_id[twin] = by_id.pop(mrid)
+                twins[mrid] = twin
     return places, persons, twins
+
+
+def italian_persons(persons, names, latin, twins):
+    """The persons of data/persons.json as the Italian edition looks for them: each with the Italian
+    forms of its name (`forms`), the untranslated ends of it a surname search anchors on (`ends`) and,
+    when the Latin marks it, where the Latin prints it (`rank`: the footnote, 0 for the text, then the
+    offset), which orders a footnote list; without `also`, the Latin's other names."""
+    out = {}
+    for mrid, ps in persons.items():
+        filed = twins.get(mrid, mrid)  # the Latin mentions are filed under a twin's ID
+        rank = {(m["name"], m.get("n")): (0 if m["where"] == "text" else m["where"]["footnote"], m["start"])
+                for m in latin.get(filed, []) if m["kind"] == "person"}
+        out[mrid] = []
+        for p in ps:
+            q = {k: v for k, v in p.items() if k != "also"}
+            q["forms"], q["ends"] = names.forms(mrid, p["name"]), names.surname(p["name"])
+            if (p["name"], p.get("n")) in rank:
+                q["rank"] = rank[(p["name"], p.get("n"))]
+            out[mrid].append(q)
+    return out
 
 
 def extract(texts_repo, repo_root, review_path):
@@ -561,10 +642,15 @@ def extract(texts_repo, repo_root, review_path):
     curated = _read(data / "mentions_curated.json", {"editions": {}})["editions"]
     entries = _read(data / "martyrology_ids.json", {"entries": []})["entries"]
     sources, by_edition, review, counts = {}, {}, {}, {}
-    for edition, lang in EDITIONS.items():
+    names = ItalianNames(_read(repo_root / "i18n" / "la.json", {}), _read(repo_root / "i18n" / "it.json", {}))
+    latin_twins = {}
+    for edition, lang in EDITIONS.items():  # the Latin first: its marks order the Italian footnote lists
         sources[edition] = load_edition(texts_repo, edition)
-        ed_places, ed_persons, twins = file_under_twins(
-            entries, sources[edition][0], places, persons if edition == PERSONS_EDITION else {})
+        ed_persons = (persons if edition == PERSONS_EDITION
+                      else italian_persons(persons, names, by_edition[PERSONS_EDITION], latin_twins))
+        ed_places, ed_persons, twins = file_under_twins(entries, sources[edition][0], places, ed_persons)
+        if edition == PERSONS_EDITION:
+            latin_twins = twins
         by_edition[edition], review[edition], counts[edition] = build_edition(
             lang, *sources[edition], ed_places, ed_persons, gazetteer,
             {twins.get(k, k): v for k, v in person_items.items()},  # the decisions follow their persons
