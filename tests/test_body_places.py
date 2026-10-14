@@ -1,5 +1,6 @@
 import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -205,6 +206,13 @@ class StructuredCheckTest(unittest.TestCase):
         self.assertNotIn(typo, stored)
         self.assertIn(" ".join(long_la.split()[:bp.MAX_WORDS]) + " …", stored)
 
+    def test_an_ordinary_check_that_queues_it_drops_the_failure(self):
+        review = bp.new_changeset()
+        bp.check([prop(it="in Fictlandia")], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS, final=True)
+        self.assertEqual(len(review["unqueued"]), 1)
+        bp.check([prop()], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS)
+        self.assertEqual(review["unqueued"], [])
+
     def test_without_final_nothing_is_kept(self):
         _, _, review = run_check([prop(la="in Fictlandia")])
         self.assertEqual(review.get("unqueued", []), [])
@@ -229,6 +237,16 @@ class BriefTest(unittest.TestCase):
                                   "persons": [{"name": "Fictitius"}],
                                   "curated": [{"role": "birth", "la": "Romæ"}]})
         self.assertEqual((out[1]["it_text"], out[1]["opening"], out[1]["persons"]), ("", None, []))
+
+    def test_brief_refuses_a_path_in_any_git_repository(self):
+        with tempfile.TemporaryDirectory() as d:
+            other = Path(d) / "other-repo"
+            (other / ".git").mkdir(parents=True)
+            out = other / "sub" / "brief.json"
+            with self.assertRaises(SystemExit) as cm:
+                bp.main(["brief", "01a", str(out), "/nonexistent"])
+            self.assertIn("outside the repository", str(cm.exception.code))
+            self.assertFalse(out.exists())
 
     def test_brief_refuses_a_path_in_the_repository(self):
         repo = Path(__file__).resolve().parent.parent

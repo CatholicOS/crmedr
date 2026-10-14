@@ -15,7 +15,8 @@ b: 16-31): the Latin and Italian 2004 texts, the opening place, the persons
 and the curated items of each eulogy. It quotes the 2004 edition, so it is
 written outside the repository (brief refuses a path inside it).
 check --final keeps the proposals that still fail under "unqueued" in
-data/places_review.json, for docs/places-report.md.
+data/places_review.json, for docs/places-report.md; any later check drops
+those that now pass. brief also refuses a path inside any git work tree.
 
 check validates each proposal with the rules of data/places_curated.json
 (validate_curated) and queues the valid ones as add_place ops in
@@ -175,9 +176,10 @@ def check(proposals, curated, review, texts, texts_it, leads, persons, final=Fal
         passed.add(_key(_failure(p, [])))
         added += 1
     review["operations"].sort(key=lambda o: o["id"])
-    if final:
-        new = {_key(f): _kept(f) for f in failures}
-        kept = [f for f in review.get("unqueued", []) if _key(f) not in new and _key(f) not in passed]
+    # Any check prunes the kept failures that now pass; only --final keeps new ones.
+    new = {_key(f): _kept(f) for f in failures} if final else {}
+    kept = [f for f in review.get("unqueued", []) if _key(f) not in new and _key(f) not in passed]
+    if final or "unqueued" in review:
         review["unqueued"] = sorted(kept + list(new.values()), key=_key)
     return added, failures
 
@@ -252,6 +254,12 @@ def _write(repo_root, curated, review):
     (repo_root / REVIEW).write_text(json.dumps(review, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _in_a_repository(path, repo_root):
+    """Inside this repository, or inside any git work tree (another public repository)."""
+    path = path.resolve()
+    return path.is_relative_to(repo_root.resolve()) or any((d / ".git").exists() for d in path.parents)
+
+
 def main(argv):
     final = "--final" in argv
     argv = [a for a in argv if a != "--final"]
@@ -262,7 +270,7 @@ def main(argv):
     if cmd == "brief":
         which, out, texts_repo = argv[1], Path(argv[2]), Path(argv[3])
         repo_root = Path(argv[4]) if len(argv) > 4 else Path(__file__).resolve().parent.parent
-        if out.resolve().is_relative_to(repo_root.resolve()):
+        if _in_a_repository(out, repo_root):
             sys.exit(f"{out}: a brief quotes the 2004 edition; write it outside the repository")
         if not re.fullmatch(r"(0[1-9]|1[0-2])[ab]", which):
             sys.exit(f"{which}: expected MMa or MMb (e.g. 01a)")
