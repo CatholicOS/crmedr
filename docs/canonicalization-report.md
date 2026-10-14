@@ -1095,6 +1095,10 @@ the workbook uses `PS` for the whole Holy Land (90 current entries) and changing
 one entry would break that convention. mr:0814-arnulphus stays `BE` (Oudenburg),
 although the text says "Altenburg nelle Fiandre, ora in Germania".
 
+`COUNTRY_CORRECTIONS` was retired in October 2026: these codes now come from the
+opening place or from `data/countries_curated.json` (see "Countries from opening
+places" under Places).
+
 ## Typology (September 2026)
 
 Each current entry carries `typology`: **what the date of the elogium marks**.
@@ -1225,7 +1229,7 @@ Rome; a monastery resolves to its own item when Wikidata has one. Each entry has
 the QID, the item's label and the place's modern country (ISO 3166-1 alpha-2), with
 two conventions: the whole Holy Land is `PS`, as in the registry's own `country`, and
 a dependent territory with its own code takes it (Réunion `RE`, Guam `GU`, Puerto
-Rico `PR`). Reconciling it with each entry's `country` is a later step.
+Rico `PR`). Each entry's `country` now follows it (next subsection).
 
 A place is `auto` only when exactly one Wikidata candidate passes every rule:
 its Italian label or alias is the head toponym of every Italian phrase of the
@@ -1253,6 +1257,146 @@ Lorch/Enns, "nell'odierna Germania", is in Austria). It is derived from the
 phrases and the place's country, not chosen. A bare "in Siria" or "in Armenia" is
 not such a claim, since it may name the ancient region: for Antioch three phrases
 say "oggi in Turchia" and one says only "in Siria", and nothing is recorded.
+
+### Countries from opening places (October 2026)
+
+`scripts/registry_places.py` copies the gazetteer onto the registry: each place item
+whose place is resolved carries the place's `wikidata`, `label` and `country`, and
+the `text_says` claims of its own Italian phrase. Each current entry's `country` is
+then derived, never taken from the workbook:
+
+1. the country of its opening place, when the gazetteer resolves it (4,224 of 4,640
+   current entries);
+2. otherwise the value in `data/countries_curated.json` (no opening place, or one still
+   awaiting review), seeded from the registry's earlier, already corrected codes, with
+   the notes of the former `COUNTRY_CORRECTIONS` where they apply;
+3. the Holy Land convention last: `IL` becomes `PS`.
+
+The actual modern country wins over the country the text names and over the borders
+of the time: places printed "in Polónia" that are now in Belarus or Ukraine are `BY`
+or `UA`. The Holy Land is `PS` everywhere, places within Israel's pre-1967 lines
+included (Acre, Caesarea Maritima, Lod): the registry names the territory as it was
+historically called and takes no part in current disputes; a map marker lands in the
+same region either way, and each place's Wikidata item gives its current status. The
+gazetteer check now rejects an `IL` country. To correct a country, correct the place
+in `data/gazetteer.json` (or the curated value) and rerun the script; a test fails
+when the committed registry is out of date. Deprecated entries keep their `country`.
+
+The change altered 109 current entries: 80 now follow their
+opening place, and 29 Holy Land entries with no opening place moved from
+`IL` to `PS`.
+
+| ID | Opening place | Before | After |
+| --- | --- | --- | --- |
+| `mr:0104-hermes-et-caius` | Moesia (Q199499) | RO | BG |
+| `mr:0110-ioannes` | Jerusalem (Q1218) | IL | PS |
+| `mr:0110-petrus-urseolus` | Saint-Michel-de-Cuxa (Q306121) | IT | FR |
+| `mr:0113-petrus` | Capitolias (Q1226916) | SY | JO |
+| `mr:0122-anastasius` | Resafa (Q631407) | IR | SY |
+| `mr:0125-teresia-grillo` | Alessandria (Q6088) | EG | IT |
+| `mr:0126-xenophon-et-maria` | Jerusalem (Q1218) | IL | PS |
+| `mr:0127-manfredus-settala` | Riva San Vitale (Q67130) | IT | CH |
+| `mr:0130-matthias` | Jerusalem (Q1218) | IL | PS |
+| `mr:0202-praesentatio-domini` | no opening place | IL | PS |
+| `mr:0203-simeon-et-anna-prophetissa` | Jerusalem (Q1218) | IL | PS |
+| `mr:0213-iordanus-de-saxonia` | Acre (Q126084) | IL | PS |
+| `mr:0217-petrus-yu-chong-nyul` | Pyongyang (Q18808) | KR | KP |
+| `mr:0217-antonius-leszczewicz` | Rosica (Q3442846) | PL | BY |
+| `mr:0218-georgius-kaszyra` | Rosica (Q3442846) | PL | BY |
+| `mr:0227-gregorius` | Narekavank (Q3336090) | AM | TR |
+| `mr:0303-winwaloeus` | Cornouaille (Q1134273) | GB | FR |
+| `mr:0304-miecislaus-bohatkiewicz-et-socii` | Bierazviečča (Q776469) | PL | BY |
+| `mr:0306-fridolinus` | Bad Säckingen (Q522362) | CH | DE |
+| `mr:0307-basilius-et-socii` | Chersonesus (Q638445) | GR | UA |
+| `mr:0310-macarius` | no opening place | IL | PS |
+| `mr:0311-sophronius` | Jerusalem (Q1218) | IL | PS |
+| `mr:0316-papa` | Seleucia (Q1136681) | TR | IQ |
+| `mr:0318-cyrillus` | no opening place | IL | PS |
+| `mr:0318-alexander` | no opening place | IL | PS |
+| `mr:0324-maccarthemus` | Clogher (Q2283248) | IE | GB |
+| `mr:0325-everardus` | Schaffhausen (Q9009) | DE | CH |
+| `mr:0326-montanus-et-maxima` | Sirmium (Q833060) | HR | RS |
+| `mr:0328-hilarion` | Uludağ (Q925688) | GR | TR |
+| `mr:0402-theodora` | Caesarea Maritima (Q319242) | LB | PS |
+| `mr:0405-pherbutha` | Seleucia (Q1136681) | IR | IQ |
+| `mr:0406-irenaeus` | Sirmium (Q833060) | HR | RS |
+| `mr:0409-demetrius` | Sirmium (Q833060) | HR | RS |
+| `mr:0413-ida` | Roosendael Abbey (Q23129797) | NL | BE |
+| `mr:0413-ioannes-bernardus-rousseau` | Réunion (Q17070) | FR | RE |
+| `mr:0420-anastasius-pankiewicz` | Hartheim Euthanasia Centre (Q2464181) | DE | AT |
+| `mr:0423-georgius` | no opening place | IL | PS |
+| `mr:0424-maria-cleopha-et-salome` | Jerusalem (Q1218) | IL | PS |
+| `mr:0425-marcus-evangelista` | no opening place | IL | PS |
+| `mr:0427-simeon` | Jerusalem (Q1218) | IL | PS |
+| `mr:0501-ieremias-propheta` | no opening place | IL | PS |
+| `mr:0503-ansfridus` | Heiligenberg (Leusden) (Q18768221) | BE | NL |
+| `mr:0504-silvanus-et-socii` | Punon (Q2907858) | PS | JO |
+| `mr:0505-maximus` | no opening place | IL | PS |
+| `mr:0516-andreas-bobola` | Ivanava (Q956207) | PL | BY |
+| `mr:0524-simeon-stylita` | Samandağ district (Q2782103) | SY | TR |
+| `mr:0525-nicolaus-cehelskyj` | Yavas (Q770345) | MD | RU |
+| `mr:0529-iosephus-gerard` | Roma (Q991643) | IT | LS |
+| `mr:0605-petrus-spano` | Ciano (Q18433614) | TR | IT |
+| `mr:0611-barnabas` | no opening place | IL | PS |
+| `mr:0613-maria-anna-biernacka` | Navumavičy (Q11790218) | PL | BY |
+| `mr:0615-amos-propheta` | no opening place | IL | PS |
+| `mr:0615-bernardus-de-menthone` | Great St Bernard Pass (Q623424) | IT | CH |
+| `mr:0616-quiricus-et-iulitta` | Asia Minor (Q12824780) |  | TR |
+| `mr:0622-eusebius` | Doliche (Q1235555) | SY | TR |
+| `mr:0623-maria` | Oignies (Q3349930) | FR | BE |
+| `mr:0626-iosephus-ma-taishun` | Hejian (Q1601618) | IT | CN |
+| `mr:0703-marcus-et-mocianus` | Moesia (Q199499) | RO | BG |
+| `mr:0705-athanasius-hierosolymitanus` | no opening place | IL | PS |
+| `mr:0705-martha` | Samandağ district (Q2782103) | SY | TR |
+| `mr:0706-monenna` | County Armagh (Q192761) | IE | GB |
+| `mr:0712-nabor-et-felix` | Milan (Q490) | DZ | IT |
+| `mr:0716-maria-de-monte-carmelo` | no opening place | IL | PS |
+| `mr:0719-achilles-puchala-et-hermannus-stepien` | Baravikoŭščyna (Q21632023) | PL | BY |
+| `mr:0720-elias-thesbita-propheta` | no opening place | IL | PS |
+| `mr:0723-ezechiel-propheta` | no opening place | IL | PS |
+| `mr:0729-martha` | no opening place | IL | PS |
+| `mr:0801-adelheidis-mardosewicz-et-socii` | Navahrudak (Q278743) | PL | BY |
+| `mr:0808-vladimirus-laskowski` | Gusen concentration camp (Q681748) | DE | AT |
+| `mr:0813-maximus-confessor` | Tsageri (Q140314) | TR | GE |
+| `mr:0820-samuel-propheta` | no opening place | IL | PS |
+| `mr:0823-zachaeus` | no opening place | IL | PS |
+| `mr:0823-eugenius` | Derry (Q163584) | IE | GB |
+| `mr:0824-bartholomaeus-apostolus` | no opening place | IL | PS |
+| `mr:0828-pelagius` | Constance (Q3834) | CH | DE |
+| `mr:0829-basilla` | Sirmium (Q833060) | HR | RS |
+| `mr:0831-ioseph-de-arimathaea-et-nicodemus` | Jerusalem (Q1218) | IL | PS |
+| `mr:0901-iosue` | no opening place | IL | PS |
+| `mr:0903-marinus` | Monte Titano (Q158526) | IT | SM |
+| `mr:0906-zacharias-propheta` | no opening place | IL | PS |
+| `mr:0908-hadrianus` | Rome (Q220) | TR | IT |
+| `mr:0908-ladislaus-bladzinski` | Gross-Rosen concentration camp (Q160268) | DE | PL |
+| `mr:0913-dedicatio-basilicarum-hierosolymis` | Jerusalem (Q1218) | IL | PS |
+| `mr:0914-notburga` | Eben am Achensee (Q691906) | IT | AT |
+| `mr:0926-gedeon-iudex` | no opening place | IL | PS |
+| `mr:1001-wasnulphus` | Condé-sur-l'Escaut (Q494533) | BE | FR |
+| `mr:1002-maria-antonina-kratochwil` | Ivano-Frankivsk (Q156726) | PL | UA |
+| `mr:1010-daniel-et-socii` | Ceuta (Q5823) | MA | ES |
+| `mr:1011-anastasius` | Tsageri (Q140314) | IT | GE |
+| `mr:1016-longinus` | Jerusalem (Q1218) | IL | PS |
+| `mr:1022-marcus` | no opening place | IL | PS |
+| `mr:1029-narcissus` | no opening place | IL | PS |
+| `mr:1106-felix` | El Kala (Q3050005) | TN | DZ |
+| `mr:1106-callinicus-et-socii` | Jerusalem (Q1218) | IL | PS |
+| `mr:1109-henricus-hlebowicz` | Barysaw (Q19313) | PL | BY |
+| `mr:1114-serapion` | Algiers (Q3561) | TN | DZ |
+| `mr:1114-nicolaus-tavelic-et-socii` | Jerusalem (Q1218) | IL | PS |
+| `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` | Caibaté (Q742521) | PY | BR |
+| `mr:1119-abdias-propheta` | no opening place | IL | PS |
+| `mr:1121-praesentatio-beatae-mariae-virginis` | no opening place | IL | PS |
+| `mr:1122-ananias` | Arbela (Q56324805) | IR | IQ |
+| `mr:1201-clementina-nengapeta-anuarite` | Isiro (Q899873) | CG | CD |
+| `mr:1204-ioannes-damascenus` | no opening place | IL | PS |
+| `mr:1205-sabas` | Holy Lavra of Saint Sabbas (Q1059946) | IL | PS |
+| `mr:1217-modestus` | Jerusalem (Q1218) | IL | PS |
+| `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu` | Slonim (Q863576) | PL | BY |
+| `mr:1225-nativitas-domini` | no opening place | IL | PS |
+| `mr:1226-stephanus` | no opening place | IL | PS |
+| `mr:1229-david-rex-et-propheta` | no opening place | IL | PS |
 
 ## Post-2004 official variations
 

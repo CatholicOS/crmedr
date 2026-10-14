@@ -442,6 +442,20 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         self.assertEqual(r.validate_editions(list(self.e.values())), [])
 
 
+
+class RegistryCountryTest(unittest.TestCase):
+    def test_no_country_corrections(self):
+        self.assertFalse(hasattr(r, "COUNTRY_CORRECTIONS"))
+
+    def test_header_texts_describe_the_opening_place(self):
+        with tempfile.TemporaryDirectory() as d:
+            r.write_json([dict(ENTRY)], [], Path(d))
+            r.write_markdown([dict(ENTRY)], Path(d))
+            comment = json.loads((Path(d) / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))["$comment"]
+            md = (Path(d) / "registry" / "01-january.md").read_text(encoding="utf-8")
+        self.assertIn("opening place", comment)
+        self.assertIn("modern country of the place the elogium opens with", md)
+
 if __name__ == "__main__":
     unittest.main()
 

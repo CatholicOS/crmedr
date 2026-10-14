@@ -1,10 +1,10 @@
 # September
 
-441 canonical IDs. `Entry` is the elogium's entry number within the day in the Latin editio altera 2004 print; an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium; `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
+441 canonical IDs. `Entry` is the elogium's entry number within the day in the Latin editio altera 2004 print; an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place the elogium opens with (else a curated country; the Holy Land is PS); `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | 1 | `mr:0901-iosue` |  | IL | commemoratio |  |  |
+| 1 | 1 | `mr:0901-iosue` |  | PS | commemoratio |  |  |
 | 1 | 2 | `mr:0901-sixtus` |  | FR | dies_natalis |  |  |
 | 1 | 3 | `mr:0901-priscus` |  | IT | dies_natalis |  |  |
 | 1 | 4 | `mr:0901-terentianus` |  | IT | dies_natalis |  |  |
@@ -39,7 +39,7 @@
 | 3 | 3 | `mr:0903-basilissa` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0903-sandalius` |  | ES | dies_natalis |  |  |
 | 3 | 5 | `mr:0903-mansuetus` |  | FR | dies_natalis |  |  |
-| 3 | 6 | `mr:0903-marinus` |  | IT | dies_natalis | same as `mr:0904-marinus` |  |
+| 3 | 6 | `mr:0903-marinus` |  | SM | dies_natalis | same as `mr:0904-marinus` |  |
 | 3 | 7 | `mr:0903-macanisius` | * | IE | dies_natalis |  |  |
 | 3 | 8 | `mr:0903-auxanus` |  | IT | dies_natalis |  |  |
 | 3 | 9 | `mr:0903-vitalianus` | * | IT | dies_natalis |  |  |
@@ -76,7 +76,7 @@
 | 5 | 8 | `mr:0905-florentius-dumontet-de-cardaillac` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh` |  | VN | dies_natalis |  |  |
 | 5 | 10 | `mr:0905-teresia-calcuttae` | * | IN | dies_natalis |  |  |
-| 6 | 1 | `mr:0906-zacharias-propheta` |  | IL | commemoratio |  |  |
+| 6 | 1 | `mr:0906-zacharias-propheta` |  | PS | commemoratio |  |  |
 | 6 | 2 | `mr:0906-onesiphorus` |  | TR | commemoratio |  |  |
 | 6 | 3 | `mr:0906-donatianus-et-socii` |  | TN | commemoratio |  |  |
 | 6 | 4 | `mr:0906-eleutherius` |  | IT | dies_natalis |  |  |
@@ -109,7 +109,7 @@
 | 7 | 20 | `mr:0907-eugenia-picco` | * | IT | dies_natalis |  | 2004 English: Translation error: the eulogy is broken off and an editorial comment disputing it is added after "wholly devoted to the will of God"; the Latin simply states that she "dignitátem mulíerum promóvit" (promoted the dignity of women). |
 | 7 | 21 | `mr:0907-ascensio-a-sancto-iosepho-calasanz` | * | ES | dies_natalis |  |  |
 | 8 | (1) | `mr:0908-nativitas-beatae-mariae-virginis` |  |  | celebratio |  |  |
-| 8 | 2 | `mr:0908-hadrianus` |  | TR | commemoratio | same as `mr:0304-hadrianus-et-socii` |  |
+| 8 | 2 | `mr:0908-hadrianus` |  | IT | commemoratio | same as `mr:0304-hadrianus-et-socii` |  |
 | 8 | 3 | `mr:0908-faustus-et-socii` |  | EG | dies_natalis |  |  |
 | 8 | 4 | `mr:0908-isaac` |  | TR | dies_natalis |  |  |
 | 8 | 5 | `mr:0908-sergius-i` |  | IT | depositio | same as `mr:0909-sergius-i` |  |
@@ -127,7 +127,7 @@
 | 8 | 17 | `mr:0908-paschalis-fortuno-almela` | * | ES | dies_natalis |  |  |
 | 8 | 18 | `mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia` | * | ES | dies_natalis |  | 2004 English: Translation error: "Burjasot" where the Latin has "Buñol". |
 | 8 | 19 | `mr:0908-adamus-bargielski` | * | DE | dies_natalis |  |  |
-| 8 | 20 | `mr:0908-ladislaus-bladzinski` | * | DE | dies_natalis |  |  |
+| 8 | 20 | `mr:0908-ladislaus-bladzinski` | * | PL | dies_natalis |  |  |
 | 9 | (1) | `mr:0909-petrus-claver` |  | CO | celebratio |  |  |
 | 9 | 2 | `mr:0909-gorgonius` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0909-hyacinthus` |  | IT | dies_natalis |  |  |
@@ -175,7 +175,7 @@
 | 12 | 8 | `mr:0912-franciscus-choe-kyong-hwan` |  | KR | dies_natalis |  |  |
 | 13 | (1) | `mr:0913-ioannes` |  | TR | celebratio |  |  |
 | 13 | 2 | `mr:0913-iulianus` |  | TR | dies_natalis |  |  |
-| 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | IL | dedicatio |  | 2004 English: Translation error: "ordered to be rebuilt" where the Latin has "ædificári vóluit" (built). |
+| 13 | 3 | `mr:0913-dedicatio-basilicarum-hierosolymis` |  | PS | dedicatio |  | 2004 English: Translation error: "ordered to be rebuilt" where the Latin has "ædificári vóluit" (built). |
 | 13 | 4 | `mr:0913-litorius` |  | FR | dies_natalis |  | 2004 English: Translation error: "the first to rebuild a church" where the Latin has "ecclésiam ædificávit" (built). |
 | 13 | 5 | `mr:0913-aemilianus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Yzeures-sur-Creuse (ancient Juliacum)" where the Latin has "Iúliæ Valéntiæ" (Valence). |
 | 13 | 6 | `mr:0913-marcellinus` |  | TN | dies_natalis |  |  |
@@ -193,7 +193,7 @@
 | 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Beauvale" where the Latin has "Bellævallénsi" (Bellevaux, near Besançon). |
 | 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |  |
-| 14 | 8 | `mr:0914-notburga` | * | IT | dies_natalis |  | 2004 English: Translation error: "blessed Notburga" where the Latin has "sanctæ Notbúrgæ" (Saint Notburga). |
+| 14 | 8 | `mr:0914-notburga` | * | AT | dies_natalis |  | 2004 English: Translation error: "blessed Notburga" where the Latin has "sanctæ Notbúrgæ" (Saint Notburga). |
 | 14 | 9 | `mr:0914-claudius-laplace` | * | FR | dies_natalis |  |  |
 | 14 | 10 | `mr:0914-gabriel-taurinus-dufresse` |  | CN | dies_natalis |  |  |
 | 15 | (1) | `mr:0915-maria-perdolens` |  |  | celebratio |  |  |
@@ -366,7 +366,7 @@
 | 25 | 10 | `mr:0925-marcus-criado` | * | ES | dies_natalis |  |  |
 | 25 | 11 | `mr:0925-iosephus-bengoa-aranguren-et-socii` | * | ES | dies_natalis |  |  |
 | 26 | (1) | `mr:0926-cosmas-et-damianus` |  | TR | dies_natalis | same as `mr:0927-cosmas-et-damianus` |  |
-| 26 | 2 | `mr:0926-gedeon-iudex` |  | IL | commemoratio |  |  |
+| 26 | 2 | `mr:0926-gedeon-iudex` |  | PS | commemoratio |  |  |
 | 26 | 3 | `mr:0926-senator` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0926-eusebius` |  | IT | commemoratio |  |  |
 | 26 | 5 | `mr:0926-stephanus-de-rossano` | * | IT | dies_natalis |  |  |

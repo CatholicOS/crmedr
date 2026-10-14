@@ -5,8 +5,10 @@ The workbook ("Roman Martyrology LA IT EN with IDs.xlsx") contains the full
 Latin, Italian and English texts of the eulogies of the Roman Martyrology
 (editio altera 2004). Those texts are copyrighted and are NOT extracted here:
 this script reads only the non-copyrightable structural metadata — the
-canonical ID, calendar placement (month/day/entry), the asterisk marker, and
-the country associated with the place of the elogium — and writes:
+canonical ID, calendar placement (month/day/entry) and the asterisk marker —
+and writes the files below. The workbook's country column is not used: each
+current entry's country comes from scripts/registry_places.py (the opening
+place in data/gazetteer.json, else data/countries_curated.json). Writes:
 
   data/martyrology_ids.json   machine-readable registry
   registry/MM-<month>.md      human-readable per-month tables
@@ -1102,49 +1104,6 @@ LATIN_PLAIN = {
     "mr:1201-domnolus": 5,
     "mr:1203-lucius": 5,
     "mr:1212-simon-phan-dac-hoa": 11,
-}
-
-# Country codes the workbook got wrong (issue #8). `country` is the modern
-# country of the place of the elogium: the place-lead when there is one,
-# otherwise the place of death. The actual location wins over the printed
-# text when the text names the wrong modern country. Most workbook errors come
-# from homonymous places resolved to the wrong country (Guadalajara, Eger,
-# Nizza, Montserrat → MS, the British overseas territory).
-COUNTRY_CORRECTIONS = {
-    "mr:0131-eusebius": "AT",  # Viktorsberg near Rankweil, Vorarlberg
-    "mr:0217-evermodus": "DE",  # Ratzeburg
-    "mr:0615-isfridus": "DE",  # Ratzeburg
-    "mr:0715-ansuerus": "DE",  # Ratzeburg
-    "mr:1212-vicelinus": "DE",  # Neumünster
-    "mr:1115-albertus-magnus": "DE",  # no place-lead; died in Cologne
-    "mr:0714-hroznata": "CZ",  # Starý Kynšperk near Cheb (Eger), Bohemia
-    "mr:0626-iosephus-maria-robles": "MX",  # near Guadalajara, Jalisco
-    "mr:0724-iacoba-martinez-garcia-et-socii": "ES",  # Guadalajara, Spain
-    "mr:0830-iosephus-ferrer-adell": "ES",  # Castellón de la Plana
-    "mr:1125-hyacinthus-serrano-lopez": "ES",  # Puebla de Híjar near Teruel
-    "mr:0825-maria-a-transitu-iesu-sacramenti": "AR",  # Córdoba, Argentina
-    "mr:0320-nicetas": "AL",  # Pojani (Apollonia)
-    "mr:0731-ignatius-de-loyola": "IT",  # no place-lead; died in Rome
-    "mr:0226-paula-a-sancto-iosepho-de-calasanz": "ES",  # Olesa de Montserrat
-    "mr:0918-salvator-chulia-ferrandis-et-socii": "ES",  # Montserrat, Catalonia
-    "mr:0707-petrus-to-rot": "PG",  # Rakunai, New Britain
-    "mr:0514-maria-dominica-mazzarello": "IT",  # Nizza Monferrato, not Nice
-    "mr:0626-andreas-hyacinthus-longhin": "IT",  # Treviso
-    "mr:1225-anastasia": "IT",  # place-lead "A Roma" (Sirmium is in Serbia)
-    "mr:1011-meinardus": "LV",  # Ikšķile near Riga
-    "mr:0622-paulinus": "IT",  # no place-lead; Nola
-    "mr:1123-columbanus": "IT",  # no place-lead; died at Bobbio
-    "mr:0716-reinildis-et-socii": "BE",  # Saintes, Hainaut
-    "mr:0706-goaris": "DE",  # Sankt Goar
-    "mr:1103-pirminus": "DE",  # Hornbach
-    "mr:0724-ludovica": "CH",  # Orbe, Vaud
-    "mr:0921-franciscus-jaccard-et-thomas-tran-van-thien": "VN",  # Quảng Trị
-    "mr:1124-petrus-dumoulin-borie-et-socii": "VN",  # Đồng Hới
-    "mr:0504-florianus": "AT",  # Lorch/Enns (text says "odierna Germania")
-    "mr:0304-casimirus": "BY",  # died at Grodno (text says "in Lituania")
-    "mr:0603-morandus": "FR",  # Altkirch, Alsace (text says "odierna Svizzera")
-    "mr:0827-gebhardus": "DE",  # Petershausen, Konstanz (text says "odierna Svizzera")
-    "mr:0913-amatus-broili": "FR",  # died at Breuil-sur-le-Lys; Sion is only his see
 }
 
 # The Latin print's asterisk where the CEI's differs; each difference is a note on both editions
@@ -5602,8 +5561,9 @@ REVIEW_EDITION_NOTES = {
     },
     "mr:1106-felix": {
         EDITION_IT: (
-            "Translation error: \"La Calle ... nell'odierna Tunisia\" where the Latin has "
-            "\"Thinísæ\" (Thinisa, Ras el-Djebel in Tunisia; La Calle is in Algeria)."
+            "Translation error: \"nell'odierna Tunisia\": Thinisa in Numidia is La Calle "
+            "(El Kala), in Algeria; Ras el-Djebel in Tunisia is the homonymous Thinisa of "
+            "Proconsular Africa."
         ),
     },
     "mr:1107-athenodorus": {
@@ -6192,7 +6152,6 @@ def extract(workbook_path):
             country = iso[paese] if paese else None
             mr_id = str(mr_id).strip()
             mr_id = ID_CORRECTIONS.get(mr_id, mr_id)
-            country = COUNTRY_CORRECTIONS.get(mr_id, country)
             row_out = {
                 "id": mr_id,
                 "month": month_index,
@@ -6356,7 +6315,10 @@ def write_json(entries, deprecated, repo_root):
                     "docs/canonicalization-report.md. Entries with deprecated:true "
                     "are attested only in historical editions (their MMDD anchors "
                     "the placement in the edition named by attested_in); the "
-                    "deprecated status is itself a mechanical draft.",
+                    "deprecated status is itself a mechanical draft. Each current entry's "
+                    "country is the modern country of its opening place (data/gazetteer.json), "
+                    "else data/countries_curated.json; the Holy Land is PS "
+                    "(scripts/registry_places.py).",
         "anchor_edition": "martyrologium_romanum_editio_altera_2004",
         "id_scheme": "mr:MMDD-slug",
         "entry_count": len(entries) + len(deprecated),
@@ -6386,7 +6348,8 @@ def write_markdown(entries, repo_root):
             "header elogium (a drop-cap paragraph for a celebration with liturgical "
             "rank, counted but not printed as a number); `*` marks asterisked entries; "
             "`Country` is the ISO 3166-1 alpha-2 code of the modern country of the "
-            "place of the elogium; `Typology` is what the date of the elogium marks "
+            "place the elogium opens with (else a curated country; the Holy Land is "
+            "PS); `Typology` is what the date of the elogium marks "
             "(see docs/canonicalization-report.md, Typology). "
             "`Editions` lists where another 2004-family edition differs from this row "
             "(the Latin print): its own entry number or asterisk, or `absent`; "
@@ -6438,6 +6401,11 @@ def main():
         check_place_roles(places, typology)
     entries = add_typology(entries, typology)
     entries = add_places(entries, places)
+    import registry_places  # the countries: never the workbook's (#12)
+    gazetteer_path = repo_root / "data" / "gazetteer.json"
+    gazetteer = json.load(open(gazetteer_path, encoding="utf-8"))["places"] if gazetteer_path.exists() else {}
+    curated = json.load(open(repo_root / registry_places.CURATED, encoding="utf-8"))["countries"]
+    entries = registry_places.apply(entries, gazetteer, curated)
     deprecated = load_deprecated(repo_root, {e["id"] for e in entries})
     link_deprecated_twins(entries, deprecated)
     errors = validate_editions(entries + deprecated)

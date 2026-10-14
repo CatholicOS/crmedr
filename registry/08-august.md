@@ -1,6 +1,6 @@
 # August
 
-462 canonical IDs. `Entry` is the elogium's entry number within the day in the Latin editio altera 2004 print; an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place of the elogium; `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
+462 canonical IDs. `Entry` is the elogium's entry number within the day in the Latin editio altera 2004 print; an entry number in parentheses marks an unnumbered header elogium (a drop-cap paragraph for a celebration with liturgical rank, counted but not printed as a number); `*` marks asterisked entries; `Country` is the ISO 3166-1 alpha-2 code of the modern country of the place the elogium opens with (else a curated country; the Holy Land is PS); `Typology` is what the date of the elogium marks (see docs/canonicalization-report.md, Typology). `Editions` lists where another 2004-family edition differs from this row (the Latin print): its own entry number or asterisk, or `absent`; `same as` names the same eulogy printed on another day.
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -22,7 +22,7 @@
 | 1 | 16 | `mr:0801-petrus-iulianus-eymard` |  | FR | dies_natalis |  |  |
 | 1 | 17 | `mr:0801-iosephus-de-miguel-arahal` | * | ES | dies_natalis |  |  |
 | 1 | 18 | `mr:0801-alexius-sobaszek` | * | DE | dies_natalis |  |  |
-| 1 | 19 | `mr:0801-adelheidis-mardosewicz-et-socii` | * | PL | dies_natalis |  |  |
+| 1 | 19 | `mr:0801-adelheidis-mardosewicz-et-socii` | * | BY | dies_natalis |  |  |
 | 2 | (1) | `mr:0802-eusebius` |  | IT | celebratio |  |  |
 | 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR | celebratio |  |  |
 | 2 | 3 | `mr:0802-rutilius` |  | TN | commemoratio |  |  |
@@ -115,7 +115,7 @@
 | 8 | 16 | `mr:0808-maria-anna-rosa-caiani` | * | IT | dies_natalis |  |  |
 | 8 | 17 | `mr:0808-antonius-silvestre-moya` | * | ES | dies_natalis |  |  |
 | 8 | 18 | `mr:0808-maria-a-iesu-infante-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "two virgin martyrs" is not in the Latin, which gives no number of companions. |
-| 8 | 19 | `mr:0808-vladimirus-laskowski` | * | DE | dies_natalis |  |  |
+| 8 | 19 | `mr:0808-vladimirus-laskowski` | * | AT | dies_natalis |  |  |
 | 9 | (1) | `mr:0809-editha-stein` |  | PL | dies_natalis |  |  |
 | 9 | 2 | `mr:0809-romanus` |  | IT | dies_natalis |  |  |
 | 9 | 3 | `mr:0809-nathaeus` | * | IE | dies_natalis |  | 2004 English: Translation error: "Aghagower" where the Latin has "Achadénsi" (Achonry). |
@@ -178,7 +178,7 @@
 | 13 | 2 | `mr:0813-cassianus` |  | IT | dies_natalis |  |  |
 | 13 | 3 | `mr:0813-antiochus` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:0813-radegundis` |  | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0813-maximus-confessor` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nella regione di Lesghistan" where the Latin has "in Lazícam regiónem" (Lazica, in western Georgia). |
+| 13 | 5 | `mr:0813-maximus-confessor` |  | GE | dies_natalis |  | 2004 Italian: Translation error: "nella regione di Lesghistan" where the Latin has "in Lazícam regiónem" (Lazica, in western Georgia). |
 | 13 | 6 | `mr:0813-vigbertus` |  | DE | dies_natalis |  |  |
 | 13 | 7 | `mr:0813-gertrudis` | * | DE | dies_natalis |  | 2004 English: Translation error: "the region of Oldenburg" where the Latin has "in terra Vocatórum" (near Wetzlar). |
 | 13 | 8 | `mr:0813-patricius-o-healy-et-connus-o-rourke` | * | IE | dies_natalis |  |  |
@@ -293,7 +293,7 @@
 | 19 | 20 | `mr:0819-thomas-sitjar-fortia` | * | ES | dies_natalis |  |  |
 | 19 | 21 | `mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii` | * | ES | dies_natalis |  | 2004 English: Translation error: "Nativity of Our Lord Torrente Paraira" where the Latin has "Nativitáte Dóminæ Nostræ Torrentallé Paraire" (Our Lady). |
 | 20 | (1) | `mr:0820-bernardus` |  | FR | dies_natalis |  |  |
-| 20 | 2 | `mr:0820-samuel-propheta` |  | IL | commemoratio |  |  |
+| 20 | 2 | `mr:0820-samuel-propheta` |  | PS | commemoratio |  |  |
 | 20 | 3 | `mr:0820-maximus` |  | FR | dies_natalis |  |  |
 | 20 | 4 | `mr:0820-philibertus` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0820-leovigildus-et-christophorus` |  | ES | dies_natalis |  |  |
@@ -333,13 +333,13 @@
 | 22 | 12 | `mr:0822-elias-leymarie-de-laroche` | * | FR | dies_natalis |  |  |
 | 22 | 13 | `mr:0822-simeon-lukac` | * | UA | dies_natalis |  |  |
 | 23 | (1) | `mr:0823-rosa` |  | PE | celebratio |  |  |
-| 23 | 2 | `mr:0823-zachaeus` |  | IL | commemoratio |  | 2004 English: Translation error: "Zacharias" where the Latin has "Zachǽi" (Zacchaeus). |
+| 23 | 2 | `mr:0823-zachaeus` |  | PS | commemoratio |  | 2004 English: Translation error: "Zacharias" where the Latin has "Zachǽi" (Zacchaeus). |
 | 23 | 3 | `mr:0823-abundius-et-irenaeus` |  | IT | dies_natalis |  |  |
 | 23 | 4 | `mr:0823-cyriacus-et-archelaus` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0823-luppus` |  | BG | dies_natalis |  |  |
 | 23 | 6 | `mr:0823-claudius-et-socii` |  | TR | dies_natalis |  |  |
 | 23 | 7 | `mr:0823-flavianus` |  | FR | dies_natalis |  |  |
-| 23 | 8 | `mr:0823-eugenius` | * | IE | dies_natalis |  |  |
+| 23 | 8 | `mr:0823-eugenius` | * | GB | dies_natalis |  |  |
 | 23 | 9 | `mr:0823-antonius-de-hieracio` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0823-protasius-bourdon` | * | FR | dies_natalis |  |  |
 | 23 | 11 | `mr:0823-constantinus-carbonell-sempere-et-socii` | * | ES | dies_natalis |  |  |
@@ -347,7 +347,7 @@
 | 23 | 13 | `mr:0823-marianus-garcia-mendez` | * | ES | dies_natalis |  |  |
 | 23 | 14 | `mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero` | * | ES | dies_natalis |  |  |
 | 23 | 15 | `mr:0823-franciscus-dachtera` | * | DE | dies_natalis |  |  |
-| 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | IL | dies_natalis | same as `mr:0825-bartholomaeus-apostolus` |  |
+| 24 | (1) | `mr:0824-bartholomaeus-apostolus` |  | PS | dies_natalis | same as `mr:0825-bartholomaeus-apostolus` |  |
 | 24 | 2 | `mr:0824-tatio` |  | TR | dies_natalis |  | 1914 English: Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' (Diocletian). 2004 Italian: Translation error: "Eskihisar" where the Latin has "Claudiopoli in Honoriade" (Claudiopolis, the modern Bolu). 2004 English: Translation error: "Tatian" where the Latin has "Tatiónis" (Tatio). |
 | 24 | 3 | `mr:0824-audoenus` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0824-georgius-limniota` |  | TR | dies_natalis |  |  |
@@ -410,7 +410,7 @@
 | 27 | 20 | `mr:0827-maria-a-columna-izquierdo-albero` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0828-augustinus` |  | DZ | dies_natalis |  |  |
 | 28 | 2 | `mr:0828-hermes` |  | IT | dies_natalis |  |  |
-| 28 | 3 | `mr:0828-pelagius` |  | CH | commemoratio |  | 1914 English: Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. 2004 Italian: Translation error: "nell’odierna Svizzera" where the Latin has "in Suevia" (Swabia); Constance is in Germany. |
+| 28 | 3 | `mr:0828-pelagius` |  | DE | commemoratio |  | 1914 English: Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances. 2004 Italian: Translation error: "nell’odierna Svizzera" where the Latin has "in Suevia" (Swabia); Constance is in Germany. |
 | 28 | 4 | `mr:0828-iulianus` |  | FR | dies_natalis |  |  |
 | 28 | 5 | `mr:0828-alexander` |  | TR | dies_natalis |  |  |
 | 28 | 6 | `mr:0828-restitutus` |  | TN | dies_natalis | same as `mr:1209-restitutus` |  |
@@ -427,7 +427,7 @@
 | 28 | 17 | `mr:0828-iosephus-ample-alcaide` | * | ES | dies_natalis |  |  |
 | 28 | 18 | `mr:0828-alphonsus-maria-mazurek` | * | PL | dies_natalis |  |  |
 | 29 | (1) | `mr:0829-ioannes-baptista` |  | JO | dies_natalis |  |  |
-| 29 | 2 | `mr:0829-basilla` |  | HR | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna. 2004 Italian: Translation error: "Srijem nell’odierna Croazia" where the Latin has "Sirmium" (the city, now Sremska Mitrovica in Serbia). 2004 English: Translation error: "Basilia" where the Latin has "Basíllæ" (Basilla). |
+| 29 | 2 | `mr:0829-basilla` |  | RS | dies_natalis |  | 1914 English: Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna. 2004 Italian: Translation error: "Srijem nell’odierna Croazia" where the Latin has "Sirmium" (the city, now Sremska Mitrovica in Serbia). 2004 English: Translation error: "Basilia" where the Latin has "Basíllæ" (Basilla). |
 | 29 | 3 | `mr:0829-sabina` |  | IT | commemoratio |  |  |
 | 29 | 4 | `mr:0829-adelphus` |  | FR | dies_natalis |  |  |
 | 29 | 5 | `mr:0829-victor` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "La Chambon" where the Latin has "Campum Bonum" (Campbon, near Nantes). |
@@ -459,7 +459,7 @@
 | 30 | 13 | `mr:0830-iosephus-ferrer-adell` | * | ES | dies_natalis |  |  |
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES | dies_natalis |  | 2004 English: Translation error: "Santander" where the Latin has "Flaviobrígæ". |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT | dies_natalis |  |  |
-| 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | IL | commemoratio | same as `mr:0317-ioseph` |  |
+| 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | PS | commemoratio | same as `mr:0317-ioseph` |  |
 | 31 | 2 | `mr:0831-aristidis` |  | GR | dies_natalis |  |  |
 | 31 | 3 | `mr:0831-paulinus` |  | DE | dies_natalis |  |  |
 | 31 | 4 | `mr:0831-aidanus` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "chiamato ... a questa sede episcopale, dove fondò un monastero" where the Latin says he established both the see and the monastery there. |

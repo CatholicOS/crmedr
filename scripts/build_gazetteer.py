@@ -31,7 +31,7 @@ import re
 import sys
 from pathlib import Path
 
-from gazetteer_text import ISO_CODES, fold, latin_nominatives, parse_italian
+from gazetteer_text import ISO_CODES, convention, fold, latin_nominatives, parse_italian
 from wikidata import Wikidata, WikidataError
 
 STATUSES = ["auto", "reviewed", "unresolved"]
@@ -56,19 +56,15 @@ MAX_REGION_KM = 500
 PUBLISHED_KEYS = ["wikidata", "label", "description", "country", "countries", "la", "p9314", "coords", "types"]
 
 
-def place_index(places, entries):
-    country = {e["id"]: e.get("country") for e in entries}
+def place_index(places):
     index = {}
     for mr_id, items in places.items():
         for it in items:
-            slot = index.setdefault(it["la"], {"it": set(), "occurrences": set(), "lead_countries": {}})
+            slot = index.setdefault(it["la"], {"it": set(), "occurrences": set()})
             if "it" in it:
                 slot["it"].add(it["it"])
             slot["occurrences"].add(mr_id)
-            if it["source"] == "lead":
-                slot["lead_countries"][mr_id] = country.get(mr_id)
-    return {la: {"it": sorted(v["it"]), "occurrences": sorted(v["occurrences"]),
-                 "lead_countries": dict(sorted(v["lead_countries"].items()))}
+    return {la: {"it": sorted(v["it"]), "occurrences": sorted(v["occurrences"])}
             for la, v in index.items()}
 
 
@@ -250,6 +246,9 @@ def validate(gazetteer, index, review_ops=()):
             errors.append(f"{where}: missing label")
         if e.get("country") not in ISO_CODES:
             errors.append(f"{where}: country {e.get('country')!r} is not an ISO 3166-1 alpha-2 code")
+        elif convention(e["country"]) != e["country"]:
+            errors.append(f"{where}: country {e['country']} must be {convention(e['country'])} "
+                          "(COUNTRY_CONVENTIONS in scripts/gazetteer_text.py)")
         expected = derive_text_says(index[la]["it"], e.get("country"))
         if e.get("text_says", []) != expected:
             errors.append(f"{where}: text_says {e.get('text_says', [])!r} is not the one derived from "
@@ -354,9 +353,6 @@ def render_report(gazetteer, index, review_ops, not_processed=()):
     counts = {s: sum(1 for e in gazetteer.values() if e["status"] == s) for s in STATUSES}
     text_says = [(la, e["country"], ts["country"]) for la, e in sorted(gazetteer.items())
                  for ts in e.get("text_says", [])]
-    preview = [(mr_id, la, reg, gazetteer[la]["country"]) for la in sorted(index) if la in gazetteer
-               and gazetteer[la].get("country") for mr_id, reg in index[la]["lead_countries"].items()
-               if reg and reg != gazetteer[la]["country"]]
     lines = [
         "# Gazetteer report",
         "",
@@ -386,15 +382,6 @@ def render_report(gazetteer, index, review_ops, not_processed=()):
         "| Place | Country | The text says |",
         "| --- | --- | --- |",
         *([f"| {_cell(la)} | {c} | {t} |" for la, c, t in text_says] or ["| | | |"]),
-        "",
-        "## Preview: registry country differs from the opening place",
-        "",
-        "For the cross-check of sub-project 3. Registry conventions (e.g. `PS` for the Holy "
-        "Land) show up here too.",
-        "",
-        "| ID | Place | Registry | Gazetteer |",
-        "| --- | --- | --- | --- |",
-        *([f"| `{m}` | {_cell(la)} | {r} | {g} |" for m, la, r, g in preview] or ["| | | | |"]),
     ]
     if not_processed:
         lines += ["", "## Not processed (network)", "",
@@ -409,10 +396,9 @@ def _read_json(path, default):
 def load_state(repo_root):
     data = repo_root / "data"
     places = json.loads((data / "places.json").read_text(encoding="utf-8"))["places"]
-    entries = json.loads((data / "martyrology_ids.json").read_text(encoding="utf-8"))["entries"]
     gazetteer = _read_json(data / "gazetteer.json", {"places": {}})["places"]
     review = _read_json(data / "gazetteer_review.json", new_changeset([]))
-    return gazetteer, review, place_index(places, entries)
+    return gazetteer, review, place_index(places)
 
 
 def write_state(repo_root, gazetteer, review, index, not_processed=()):
@@ -452,6 +438,7 @@ def _resolve(op, client, its):
         or chosen.get("country")
     if not country:
         return None, f"{la!r}: {qid} needs a country (no single current P17; use edit)"
+    country = convention(country)  # a reviewer's IL is the Holy Land's PS
     # Derived from the place's Italian and the final country, never taken from the decision.
     text_says = derive_text_says(its, country)
     entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
