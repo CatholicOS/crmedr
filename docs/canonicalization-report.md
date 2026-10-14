@@ -1137,7 +1137,9 @@ mr:0827-monica), pending committee review.
 Current entries may carry `places`: the places the elogium states, each quoted
 exactly as printed in the Latin editio altera 2004 (`la`) and given a role:
 `death`, `burial`, `translation`, `dedication`, `cult` (where the saint is
-venerated or commemorated), `birth`, `ministry` (see or field of work). Place
+venerated or commemorated), `birth`, `education`, `religious_life`, `ministry` (see
+or field of work), `foundation`, `exile`, `journey` and `mention` (see "Every place
+named, with its role" below). Place
 designations are factual and are the one piece of elogium text the repository
 quotes.
 
@@ -1397,6 +1399,52 @@ opening place, and 29 Holy Land entries with no opening place moved from
 | `mr:1225-nativitas-domini` | no opening place | IL | PS |
 | `mr:1226-stephanus` | no opening place | IL | PS |
 | `mr:1229-david-rex-et-propheta` | no opening place | IL | PS |
+
+### Every place named, with its role (October 2026)
+
+Every place a eulogy names is recorded, not only its opening place, and each is
+marked in the Latin and Italian texts. The decisions:
+
+- **A role belongs to one eulogy's place item, never to the place.** The gazetteer
+  says what a place is (Wikidata item, label, country); `places` says what it means in
+  that eulogy. One town can be a `foundation` in one eulogy, a `death` in another and a
+  `ministry` in a third.
+- **Fine-grained roles first**; merging roles later is a mechanical change.
+- **A role names its person** (`person`, and `n` for a repeated name, as
+  `data/persons.json` has them) when the eulogy commemorates several persons and the
+  role is one person's; it is omitted for the whole group or the only subject.
+- **The model proposes, a script checks, a person decides.** Body places are proposed
+  by a model reading the texts, checked by `scripts/body_places.py` with the rules
+  below, and reviewed in martyrology-frontend (op `add_place`); only accepted items
+  enter `data/places_curated.json`.
+- **The registry's `country` stays with the opening place**; body places never change
+  it.
+
+| Role | Covers |
+| --- | --- |
+| `death` | death or martyrdom (the opening place of a `dies_natalis`; a body place when it is elsewhere) |
+| `burial` | burial |
+| `translation` | where relics were moved |
+| `dedication` | the church dedicated |
+| `cult` | where venerated |
+| `birth` | birth or origin |
+| `education` | upbringing, studies |
+| `religious_life` | a monastery or house entered, professed or lived in |
+| `ministry` | a see, parish, office or mission field |
+| `foundation` | something founded there |
+| `exile` | exile, deportation, imprisonment |
+| `journey` | pilgrimage, travel, passing through |
+| `mention` | a place named for another reason: an event, a council, another person's see or title |
+
+A body place quotes the place designation only, verbatim (`la` at most 12 words, `it`
+at most 20), without its cue word (*Núrsiæ in Umbria*, not *…natus*); an adjectival
+see is quoted as the adjective. When the phrase is printed more than once,
+`occurrence` (Latin) or `occurrence_it` (Italian) says which printing. An item may
+not overlap the opening place's printing, and no two items of a eulogy repeat the same
+place, printing, role and person; a place with two roles has two items. A place
+mention in `data/mentions.json` lists in `roles` every item on its printed span. The
+places report lists, as candidates, places the gazetteer knows that a eulogy names
+where no item records them.
 
 ## Post-2004 official variations
 
