@@ -233,7 +233,7 @@
 | 19 | 1 | `mr:0419-mappalicus` |  | TN | dies_natalis | same as `mr:0417-mappalicus` | 2004 Italian: Translation error: "fossero lasciate in pace e per questo" (that they be left in peace, and for this reason) where the Latin has "pacem dari mandávit, sed" (he asked that the peace of the Church be granted to them, but he himself). |
 | 19 | 2 | `mr:0419-martha` |  | IR | dies_natalis |  |  |
 | 19 | 3 | `mr:0419-georgius` |  | TR | dies_natalis |  |  |
-| 19 | 4 | `mr:0419-geroldus` | * | DE | dies_natalis |  | 2004 English: Translation error: "Frastanz" where the Latin has "Frisæ" (Frisen). |
+| 19 | 4 | `mr:0419-geroldus` | * | AT | dies_natalis |  | 2004 English: Translation error: "Frastanz" where the Latin has "Frisæ" (Frisen). |
 | 19 | 5 | `mr:0419-aelphegus` |  | GB | dies_natalis |  | 2004 English: Translation error: "Saint Aelphegi" keeps the Latin genitive of "Ælphégi"; the name is Alphege (Aelphegus). |
 | 19 | 6 | `mr:0419-leo-ix` |  | IT | dies_natalis |  |  |
 | 19 | 7 | `mr:0419-bernardus-paenitens` | * | FR | dies_natalis |  |  |

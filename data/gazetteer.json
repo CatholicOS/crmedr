@@ -468,6 +468,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Ambiátibe in Madagascária": {
+      "wikidata": "Q141735712",
+      "label": "Ambiatibe",
+      "country": "MG",
+      "status": "reviewed"
+    },
     "Amitérni in Sabína via Salária": {
       "wikidata": "Q177061",
       "label": "Amiternum",
@@ -713,6 +719,12 @@
       "label": "Avrillé",
       "country": "FR",
       "status": "reviewed"
+    },
+    "Aprútio": {
+      "wikidata": "Q1284",
+      "label": "Abruzzo",
+      "country": "IT",
+      "status": "auto"
     },
     "Aptæ Iúliæ in Província": {
       "wikidata": "Q207632",
@@ -1642,6 +1654,12 @@
       "country": "VN",
       "status": "reviewed"
     },
+    "Apud arcem Xã Ðoài in Tunquíno": {
+      "wikidata": "Q4240280",
+      "label": "Son Tay Ancient Citadel",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "Apud castrum Cainónum in pago Turonénsi Aquitániæ": {
       "wikidata": "Q194138",
       "label": "Chinon",
@@ -1724,6 +1742,12 @@
       "wikidata": "Q101625",
       "label": "Marrakech",
       "country": "MA",
+      "status": "reviewed"
+    },
+    "Apud urbem Ueihœivénsem in Hebei província item in Sinis": {
+      "wikidata": "Q166771",
+      "label": "Jizhou District",
+      "country": "CN",
       "status": "reviewed"
     },
     "Apud vicum Bertunénse item in pago Coloniénsi Germániæ": {
@@ -1935,6 +1959,12 @@
       "label": "Armo",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Arménia": {
+      "wikidata": "Q399",
+      "label": "Armenia",
+      "country": "AM",
+      "status": "auto"
     },
     "Aroúquæ in Lusitánia": {
       "wikidata": "Q565302",
@@ -2518,6 +2548,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Brasília": {
+      "wikidata": "Q155",
+      "label": "Brazil",
+      "country": "BR",
+      "status": "auto"
+    },
     "Braunsbérgæ in Borússia": {
       "wikidata": "Q160814",
       "label": "Brunsberga",
@@ -2620,6 +2656,12 @@
       "country": "PT",
       "status": "reviewed"
     },
+    "Bríxiæ": {
+      "wikidata": "Q6221",
+      "label": "Brescia",
+      "country": "IT",
+      "status": "auto"
+    },
     "Bríxiæ in Itália": {
       "wikidata": "Q6221",
       "label": "Brescia",
@@ -2661,6 +2703,12 @@
       "label": "Buda",
       "country": "HU",
       "status": "reviewed"
+    },
+    "Bulgária": {
+      "wikidata": "Q219",
+      "label": "Bulgaria",
+      "country": "BG",
+      "status": "auto"
     },
     "Burdígalæ in Aquitánia": {
       "wikidata": "Q1479",
@@ -2800,6 +2848,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Cadómi in Normánnia Gálliæ": {
+      "wikidata": "Q41185",
+      "label": "Caen",
+      "country": "FR",
+      "status": "auto"
+    },
     "Cadúrci in Aquitánia": {
       "wikidata": "Q23047",
       "label": "Cahors",
@@ -2835,6 +2889,11 @@
       "label": "Caleruega",
       "country": "ES",
       "status": "reviewed"
+    },
+    "Calydóne Pisídiæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "Kalytos in Pisidia (Pleiades 614684) has no known location."
     },
     "Calándæ prope Terúlium item in Hispánia": {
       "wikidata": "Q737161",
@@ -2895,6 +2954,12 @@
       "label": "Sant'Allucio",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Campániæ gállicæ": {
+      "wikidata": "Q273827",
+      "label": "Champagne",
+      "country": "FR",
+      "status": "auto"
     },
     "Cannis in Apúlia": {
       "wikidata": "Q568611",
@@ -3202,6 +3267,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Claraválle": {
+      "wikidata": "Q3667528",
+      "label": "Chiaravalle",
+      "country": "IT",
+      "status": "auto"
+    },
     "Classe apud Ravénnam in Flamínia": {
       "wikidata": "Q785115",
       "label": "Classe",
@@ -3340,6 +3411,12 @@
       "country": "ES",
       "status": "auto"
     },
+    "Comum": {
+      "wikidata": "Q1308",
+      "label": "Como",
+      "country": "IT",
+      "status": "auto"
+    },
     "Comácli in Flamínia": {
       "wikidata": "Q95097",
       "label": "Comacchio",
@@ -3466,6 +3543,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Cornéti prope Bobínum in Apúlia": {
+      "wikidata": "Q3693722",
+      "label": "Corneto",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Cortoríaci in Bélgio": {
       "wikidata": "Q12995",
       "label": "Kortrijk",
@@ -3525,6 +3608,12 @@
       "label": "Crespin",
       "country": "FR",
       "status": "reviewed"
+    },
+    "Croátia": {
+      "wikidata": "Q224",
+      "label": "Croatia",
+      "country": "HR",
+      "status": "auto"
     },
     "Cubríni ad Moséllam apud Tréviros": {
       "wikidata": "Q553347",
@@ -3597,6 +3686,12 @@
       "label": "La Cambre Abbey",
       "country": "BE",
       "status": "reviewed"
+    },
+    "Cánada": {
+      "wikidata": "Q16",
+      "label": "Canada",
+      "country": "CA",
+      "status": "auto"
     },
     "Cándii in Taprobáne ínsula Océani Indici": {
       "wikidata": "Q203197",
@@ -3794,6 +3889,12 @@
       "wikidata": "Q3766",
       "label": "Damascus",
       "country": "SY",
+      "status": "auto"
+    },
+    "Dariórigi": {
+      "wikidata": "Q6593",
+      "label": "Vannes",
+      "country": "FR",
       "status": "auto"
     },
     "Dariórigi in Británnia Minóre": {
@@ -3999,6 +4100,12 @@
       "label": "Kilmacduagh",
       "country": "IE",
       "status": "reviewed"
+    },
+    "Dániæ": {
+      "wikidata": "Q35",
+      "label": "Denmark",
+      "country": "DK",
+      "status": "auto"
     },
     "Dériæ in Hibérnia": {
       "wikidata": "Q163584",
@@ -4228,6 +4335,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Fabriáno": {
+      "wikidata": "Q13145",
+      "label": "Fabriano",
+      "country": "IT",
+      "status": "auto"
+    },
     "Famagústæ in Cypro ínsula": {
       "wikidata": "Q193190",
       "label": "Famagusta",
@@ -4245,6 +4358,12 @@
       "label": "Cingoli",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Fatima in Lusitánia": {
+      "wikidata": "Q191133",
+      "label": "Fátima",
+      "country": "PT",
+      "status": "auto"
     },
     "Favéntiæ in Flamínia": {
       "wikidata": "Q52981",
@@ -4299,6 +4418,12 @@
       "label": "Bilbao",
       "country": "ES",
       "status": "reviewed"
+    },
+    "Floréntia": {
+      "wikidata": "Q2044",
+      "label": "Florence",
+      "country": "IT",
+      "status": "auto"
     },
     "Floréntiæ in Etrúria": {
       "wikidata": "Q2044",
@@ -4359,6 +4484,12 @@
       "label": "Fossano",
       "country": "IT",
       "status": "auto"
+    },
+    "Frisæ in Alpibus Baváriæ": {
+      "wikidata": "Q701015",
+      "label": "Sankt Gerold",
+      "country": "AT",
+      "status": "reviewed"
     },
     "Frisíngæ in Bavária": {
       "wikidata": "Q6998",
@@ -4474,6 +4605,18 @@
       "country": "CH",
       "status": "reviewed"
     },
+    "Germánia": {
+      "wikidata": "Q183",
+      "label": "Germany",
+      "country": "DE",
+      "status": "auto"
+    },
+    "Germániæ": {
+      "wikidata": "Q183",
+      "label": "Germany",
+      "country": "DE",
+      "status": "auto"
+    },
     "Gerúndæ in Cataláunia Hispániæ": {
       "wikidata": "Q7038",
       "label": "Girona",
@@ -4570,6 +4713,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Græcia": {
+      "wikidata": "Q41",
+      "label": "Greece",
+      "country": "GR",
+      "status": "auto"
+    },
     "Guadalaxáræ in Hispánia": {
       "wikidata": "Q11953",
       "label": "Guadalajara",
@@ -4648,6 +4797,18 @@
       "country": "TR",
       "status": "auto"
     },
+    "Haméti in Brabántia": {
+      "wikidata": "Q2427768",
+      "label": "Hamme",
+      "country": "BE",
+      "status": "reviewed",
+      "text_says": [
+        {
+          "country": "NL",
+          "it": "Ad Ham nel Brabante, nell’odierna Olanda"
+        }
+      ]
+    },
     "Hanóii in Tunquíno": {
       "wikidata": "Q1858",
       "label": "Hanoi",
@@ -4720,6 +4881,12 @@
       "country": "EG",
       "status": "reviewed"
     },
+    "Hibérnia": {
+      "wikidata": "Q27",
+      "label": "Ireland",
+      "country": "IE",
+      "status": "auto"
+    },
     "Hierosólymæ": {
       "wikidata": "Q1218",
       "label": "Jerusalem",
@@ -4750,6 +4917,12 @@
       "country": "DZ",
       "status": "reviewed"
     },
+    "Hispánia": {
+      "wikidata": "Q29",
+      "label": "Spain",
+      "country": "ES",
+      "status": "auto"
+    },
     "Hispélli in Umbria": {
       "wikidata": "Q20559",
       "label": "Spello",
@@ -4761,6 +4934,18 @@
       "label": "Altötting",
       "country": "DE",
       "status": "reviewed"
+    },
+    "Hungária": {
+      "wikidata": "Q28",
+      "label": "Hungary",
+      "country": "HU",
+      "status": "auto"
+    },
+    "Hungáriæ": {
+      "wikidata": "Q28",
+      "label": "Hungary",
+      "country": "HU",
+      "status": "auto"
     },
     "Huéi in Annámia": {
       "wikidata": "Q36399",
@@ -4809,6 +4994,12 @@
       "label": "Ivanava",
       "country": "BY",
       "status": "reviewed"
+    },
+    "Iapónia": {
+      "wikidata": "Q17",
+      "label": "Japan",
+      "country": "JP",
+      "status": "auto"
     },
     "Iauríni in Hungária": {
       "wikidata": "Q134494",
@@ -5007,6 +5198,11 @@
       "label": "Campania",
       "country": "IT",
       "status": "auto"
+    },
+    "In Campánia et Aprútio": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "The phrase names two regions, Campania and Abruzzo."
     },
     "In Cappadócia": {
       "wikidata": "Q217265",
@@ -6358,6 +6554,11 @@
       "country": "IE",
       "status": "reviewed"
     },
+    "In loco Argol in Pérside": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "Argol in Persia is not located by any source or gazetteer."
+    },
     "In loco Argès prope Tolétum item in Hispánia": {
       "wikidata": "Q1632009",
       "label": "Argés",
@@ -6406,6 +6607,11 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "In loco Cerecca-Ghebaba in Æthiópia": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "The place where Ghebre Michael died was never identified."
+    },
     "In loco Chalchihuites territórii Durangénsis in México": {
       "wikidata": "Q2652043",
       "label": "Chalchihuites Municipality",
@@ -6428,6 +6634,12 @@
       "wikidata": "Q1854",
       "label": "Ho Chi Minh City",
       "country": "VN",
+      "status": "reviewed"
+    },
+    "In loco Dongerkou in Sinis": {
+      "wikidata": "Q14013689",
+      "label": "Dongergou",
+      "country": "CN",
       "status": "reviewed"
     },
     "In loco Dongjiaochang apud urbem Lezhi in província Sichuan Sinárum": {
@@ -6550,6 +6762,12 @@
       "country": "CA",
       "status": "reviewed"
     },
+    "In loco Lubawo item in Ugánda": {
+      "wikidata": "Q139223850",
+      "label": "Kamuli Lubawo",
+      "country": "UG",
+      "status": "reviewed"
+    },
     "In loco Lüjiapo apud Qinghe in Hebei Sinárum província": {
       "wikidata": "Q1196622",
       "label": "Qinghe County",
@@ -6652,6 +6870,12 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "In loco Qua Linh in Tunquíno": {
+      "wikidata": "Q141735724",
+      "label": "Quả Linh",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "In loco Quxian in Sichuan província Sinárum": {
       "wikidata": "Q1199861",
       "label": "Qu County",
@@ -6722,6 +6946,12 @@
       "wikidata": "Q847764",
       "label": "Tequila",
       "country": "MX",
+      "status": "reviewed"
+    },
+    "In loco Ttaka Jiunge item in Ugánda": {
+      "wikidata": "Q139213964",
+      "label": "Takajjunge",
+      "country": "UG",
       "status": "reviewed"
     },
     "In loco Turón in Astúria Hispániæ regióne": {
@@ -6813,6 +7043,13 @@
       "label": "Royal abbey of Aniane",
       "country": "FR",
       "status": "reviewed"
+    },
+    "In monastério Annesíno apud flumen Irim in Ponto": {
+      "wikidata": "Q4820174",
+      "label": "Uluköy",
+      "country": "TR",
+      "status": "reviewed",
+      "note": "Annesi lies about 2.5 km east of Uluköy."
     },
     "In monastério Annínsulæ in pago Gálliæ Cenomanénsi": {
       "wikidata": "Q923203",
@@ -7456,6 +7693,12 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "In monastério Sancti Nicolái de Viotoríto in Calábria": {
+      "wikidata": "Q141735725",
+      "label": "Abbey of San Nicola delle Magliole",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "In monastério Sancti Philíppi prope Locros in Calábria inferióre": {
       "wikidata": "Q54619",
       "label": "Locri",
@@ -7483,6 +7726,12 @@
     "In monastério Sanctæ Maríæ de Terréto prope Rhégium Iúlii in Calábria": {
       "wikidata": "Q3984750",
       "label": "Terreti",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "In monastério Sanctæ Maríæ della Serra item in Picéno": {
+      "wikidata": "Q119193512",
+      "label": "Church of Blessed Angelo",
       "country": "IT",
       "status": "reviewed"
     },
@@ -7623,6 +7872,13 @@
       "label": "monastic community of Mount Athos",
       "country": "GR",
       "status": "reviewed"
+    },
+    "In monte Aureo in Picéno Itáliæ": {
+      "wikidata": "Q94982",
+      "label": "Urbisaglia",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "Monte Aureo, in the territory of Urbisaglia."
     },
     "In monte Carmélo in Palæstína": {
       "wikidata": "Q185318",
@@ -7899,6 +8155,13 @@
       "label": "Botou",
       "country": "CN",
       "status": "reviewed"
+    },
+    "In pago Chợ-Rạ in Tunquíno": {
+      "wikidata": "Q10769200",
+      "label": "Hoằng Kim",
+      "country": "VN",
+      "status": "reviewed",
+      "note": "The execution ground of Chợ Rạ, at Trinh Hà by Hoằng Kim."
     },
     "In pago Condatiscénsi ad Iuram in Burgúndia": {
       "wikidata": "Q212444",
@@ -8626,6 +8889,13 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "In urbe An-Xá in Tunquíno": {
+      "wikidata": "Q16481169",
+      "label": "Đông Quan",
+      "country": "VN",
+      "status": "reviewed",
+      "note": "An Xá, a village of the former Đông Quan district, not located."
+    },
     "In urbe Aranguésia in Nova Castélla Hispániæ regióne": {
       "wikidata": "Q486792",
       "label": "Aranjuez",
@@ -8746,6 +9016,19 @@
       "country": "RU",
       "status": "auto"
     },
+    "In urbe Lăng Cốc in Tunquíno": {
+      "wikidata": "Q141735723",
+      "label": "Bách Cốc",
+      "country": "VN",
+      "status": "reviewed"
+    },
+    "In urbe Lương Mỹ in Tunquíno": {
+      "wikidata": "Q10811069",
+      "label": "Quỳnh Hội",
+      "country": "VN",
+      "status": "reviewed",
+      "note": "The village of Lương Mỹ in the commune of Quỳnh Hội."
+    },
     "In urbe Maokou provínciæ Guizhou in Sinis": {
       "wikidata": "Q11126482",
       "label": "Zangge",
@@ -8775,6 +9058,13 @@
       "label": "Nangong",
       "country": "CN",
       "status": "reviewed"
+    },
+    "In urbe Ninh Tai in Tunquíno": {
+      "wikidata": "Q33381",
+      "label": "Bắc Ninh",
+      "country": "VN",
+      "status": "reviewed",
+      "note": "\"Ninh Tai\" is Bắc Ninh, where the martyrs were beheaded."
     },
     "In urbe Ninh-Bình in Tunquíno": {
       "wikidata": "Q33929",
@@ -8830,6 +9120,13 @@
       "country": "UA",
       "status": "reviewed"
     },
+    "In urbe Tang Gia item in Tunquíno": {
+      "wikidata": "Q7273060",
+      "label": "Quỳnh Phụ",
+      "country": "VN",
+      "status": "reviewed",
+      "note": "Tăng Già, the prison of Quỳnh Côi district, now Quỳnh Phụ; its site is not known."
+    },
     "In urbe Teocaltitlán in México": {
       "wikidata": "Q50008836",
       "label": "Teocaltitán de Guadalupe",
@@ -8866,6 +9163,12 @@
       "country": "VN",
       "status": "reviewed"
     },
+    "In urbe Vĩnh Trị in Tunquíno": {
+      "wikidata": "Q10800899",
+      "label": "Vĩnh Trị Church",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "In urbe Xilinxian in Guangxi Sinárum província": {
       "wikidata": "Q392081",
       "label": "Xilin County",
@@ -8884,10 +9187,22 @@
       "country": "CN",
       "status": "reviewed"
     },
+    "In urbe Âu Thi in Tunquíno": {
+      "wikidata": "Q4750228",
+      "label": "Ân Thi",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "In urbe Ðồng Hới in Annámia": {
       "wikidata": "Q1877",
       "label": "Đồng Hới",
       "country": "VN",
+      "status": "reviewed"
+    },
+    "In valle Alighede in Æthiópia": {
+      "wikidata": "Q4063069",
+      "label": "Aligide River",
+      "country": "ER",
       "status": "reviewed"
     },
     "In valle Anauniénsi in agro Tridentíno": {
@@ -9532,6 +9847,12 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "In vico Song-Khon in Thailándia": {
+      "wikidata": "Q108317077",
+      "label": "Our Lady of the Martyrs of Thailand Shrine",
+      "country": "TH",
+      "status": "reviewed"
+    },
     "In vico Starunya in pago Stanislaopolitáno Ucraínæ": {
       "wikidata": "Q82736",
       "label": "Starunia",
@@ -9632,6 +9953,12 @@
       "wikidata": "Q1312533",
       "label": "Xeraco",
       "country": "ES",
+      "status": "reviewed"
+    },
+    "In vico Xương Ðiền in Tunquíno": {
+      "wikidata": "Q141735722",
+      "label": "Xương Điền",
+      "country": "VN",
       "status": "reviewed"
     },
     "In vico Zhangjiaji apud Ningjin item in Hebei": {
@@ -10132,6 +10459,18 @@
       "country": "PL",
       "status": "reviewed"
     },
+    "India": {
+      "wikidata": "Q668",
+      "label": "India",
+      "country": "IN",
+      "status": "auto"
+    },
+    "Insulæ": {
+      "wikidata": "Q54509",
+      "label": "Isola di Capo Rizzuto",
+      "country": "IT",
+      "status": "auto"
+    },
     "Insulæ in Aprútio Itáliæ": {
       "wikidata": "Q51451",
       "label": "Isola del Gran Sasso d'Italia",
@@ -10156,11 +10495,29 @@
       "country": "PR",
       "status": "reviewed"
     },
+    "Israel": {
+      "wikidata": "Q801",
+      "label": "Israel",
+      "country": "PS",
+      "status": "auto"
+    },
+    "Itália": {
+      "wikidata": "Q38",
+      "label": "Italy",
+      "country": "IT",
+      "status": "auto"
+    },
     "Itálicæ prope Híspalim in Bǽtica Hispániæ": {
       "wikidata": "Q658893",
       "label": "Italica",
       "country": "ES",
       "status": "reviewed"
+    },
+    "Itáliæ": {
+      "wikidata": "Q38",
+      "label": "Italy",
+      "country": "IT",
+      "status": "auto"
     },
     "Iuxta Tarracínam in Campánia": {
       "wikidata": "Q128226",
@@ -10336,6 +10693,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Laudúnum in Gállia": {
+      "wikidata": "Q167141",
+      "label": "Laon",
+      "country": "FR",
+      "status": "auto"
+    },
     "Laurentiánæ in Lucánia": {
       "wikidata": "Q52588",
       "label": "Laurenzana",
@@ -10400,6 +10763,12 @@
       "wikidata": "Q3776314",
       "label": "Old Leighlin",
       "country": "IE",
+      "status": "reviewed"
+    },
+    "Lemelléfæ in Africa": {
+      "wikidata": "Q141735720",
+      "label": "Lemellef",
+      "country": "DZ",
       "status": "reviewed"
     },
     "Lemóvici in Aquitánia": {
@@ -10720,6 +11089,12 @@
       "country": "IE",
       "status": "reviewed"
     },
+    "Magdebúrgi in Saxónia": {
+      "wikidata": "Q1733",
+      "label": "Magdeburg",
+      "country": "DE",
+      "status": "auto"
+    },
     "Magdúni ad Lígerim in território Aurelianénsi item Gálliæ": {
       "wikidata": "Q658776",
       "label": "Meung-sur-Loire",
@@ -10960,6 +11335,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Medioláno": {
+      "wikidata": "Q490",
+      "label": "Milan",
+      "country": "IT",
+      "status": "auto"
+    },
     "Medúnei prope Bárium in Apúlia": {
       "wikidata": "Q51833",
       "label": "Modugno",
@@ -11012,6 +11393,12 @@
       "wikidata": "Q1016723",
       "label": "Meerbeke",
       "country": "BE",
+      "status": "reviewed"
+    },
+    "Meri in Phrýgia": {
+      "wikidata": "Q85784810",
+      "label": "Meiros",
+      "country": "TR",
       "status": "reviewed"
     },
     "Messánæ in Sicília": {
@@ -11096,6 +11483,12 @@
       "wikidata": "Q1720",
       "label": "Mainz",
       "country": "DE",
+      "status": "auto"
+    },
+    "Molínis ad ripam Eláveris prope Nivérnum in Gállia": {
+      "wikidata": "Q184883",
+      "label": "Moulins",
+      "country": "FR",
       "status": "auto"
     },
     "Molínis in Gállia": {
@@ -11296,6 +11689,24 @@
       "country": "IT",
       "status": "auto"
     },
+    "Méxici": {
+      "wikidata": "Q96",
+      "label": "Mexico",
+      "country": "MX",
+      "status": "auto"
+    },
+    "México": {
+      "wikidata": "Q96",
+      "label": "Mexico",
+      "country": "MX",
+      "status": "auto"
+    },
+    "Méxicum": {
+      "wikidata": "Q96",
+      "label": "Mexico",
+      "country": "MX",
+      "status": "auto"
+    },
     "Mímati in Aquitánia": {
       "wikidata": "Q191772",
       "label": "Mende",
@@ -11411,6 +11822,12 @@
       "status": "auto"
     },
     "Neápoli": {
+      "wikidata": "Q2634",
+      "label": "Naples",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Neápoli Campániæ": {
       "wikidata": "Q2634",
       "label": "Naples",
       "country": "IT",
@@ -11752,6 +12169,12 @@
       "country": "DE",
       "status": "auto"
     },
+    "Ostia Tiberína": {
+      "wikidata": "Q1012797",
+      "label": "Ostia",
+      "country": "IT",
+      "status": "auto"
+    },
     "Ottóniæ in Dánia": {
       "wikidata": "Q25331",
       "label": "Odense",
@@ -11799,6 +12222,12 @@
       "label": "Palma",
       "country": "ES",
       "status": "reviewed"
+    },
+    "Palæstína": {
+      "wikidata": "Q219060",
+      "label": "Palestine",
+      "country": "PS",
+      "status": "auto"
     },
     "Paléntiæ in Castélla Hispániæ": {
       "wikidata": "Q8378",
@@ -11914,6 +12343,18 @@
       "country": "CO",
       "status": "reviewed"
     },
+    "Patavíni": {
+      "wikidata": "Q617",
+      "label": "Padua",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Patávii": {
+      "wikidata": "Q617",
+      "label": "Padua",
+      "country": "IT",
+      "status": "auto"
+    },
     "Patávii in Itália": {
       "wikidata": "Q617",
       "label": "Padua",
@@ -11979,6 +12420,12 @@
       "label": "Philadelphia",
       "country": "US",
       "status": "reviewed"
+    },
+    "Philippópoli in Thrácia": {
+      "wikidata": "Q459",
+      "label": "Plovdiv",
+      "country": "BG",
+      "status": "auto"
     },
     "Philomélii in Phrýgia": {
       "wikidata": "Q169974",
@@ -12046,6 +12493,18 @@
       "country": "IT",
       "status": "auto"
     },
+    "Placéntia": {
+      "wikidata": "Q13329",
+      "label": "Piacenza",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Placéntiæ": {
+      "wikidata": "Q13329",
+      "label": "Piacenza",
+      "country": "IT",
+      "status": "auto"
+    },
     "Placéntiæ in Itália": {
       "wikidata": "Q13329",
       "label": "Piacenza",
@@ -12081,6 +12540,18 @@
       "label": "Polizzi Generosa",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Polónia": {
+      "wikidata": "Q36",
+      "label": "Poland",
+      "country": "PL",
+      "status": "auto"
+    },
+    "Polóniæ": {
+      "wikidata": "Q36",
+      "label": "Poland",
+      "country": "PL",
+      "status": "auto"
     },
     "Polýboti in Phrýgia": {
       "wikidata": "Q2102767",
@@ -12436,6 +12907,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Putéolis prope Neápolim in Campánia": {
+      "wikidata": "Q72425",
+      "label": "Pozzuoli",
+      "country": "IT",
+      "status": "auto"
+    },
     "Pyeongyángæ in Coréa": {
       "wikidata": "Q18808",
       "label": "Pyongyang",
@@ -12568,6 +13045,12 @@
       "country": "DE",
       "status": "auto"
     },
+    "Ravénna": {
+      "wikidata": "Q13364",
+      "label": "Ravenna",
+      "country": "IT",
+      "status": "auto"
+    },
     "Ravénnæ in Flamínia": {
       "wikidata": "Q13364",
       "label": "Ravenna",
@@ -12694,6 +13177,12 @@
       "country": "GB",
       "status": "auto"
     },
+    "Roma": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
     "Romæ": {
       "wikidata": "Q220",
       "label": "Rome",
@@ -12730,6 +13219,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Romæ in Exquíliis": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
     "Romæ in Lateráno": {
       "wikidata": "Q220",
       "label": "Rome",
@@ -12741,6 +13236,12 @@
       "label": "Rome",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Romæ in basílica Sancti Petri": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
     },
     "Romæ in convéntu Sancti Bonaventúræ in Palatíno": {
       "wikidata": "Q220",
@@ -12844,6 +13345,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Romæ in cœmetério Priscíllæ": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
     "Romæ in cœmetério Priscíllæ via Salária": {
       "wikidata": "Q220",
       "label": "Rome",
@@ -12885,6 +13392,24 @@
       "label": "Rome",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Romæ in cœmetério in agro Veráno": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Romæ in cœnóbio Sanctæ Maríæ in Aracœli": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Romæ in ecclésia in colle Aventíno sita": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
     },
     "Romæ in monastério Sancti Cæsárii": {
       "wikidata": "Q220",
@@ -13204,6 +13729,12 @@
       "country": "CY",
       "status": "reviewed"
     },
+    "Salanícæ in território Vicentíno": {
+      "wikidata": "Q141735721",
+      "label": "Sajanega",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Sali in Província Gálliæ": {
       "wikidata": "Q232567",
       "label": "Salon-de-Provence",
@@ -13444,6 +13975,12 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Sebána": {
+      "wikidata": "Q1227395",
+      "label": "Säben Abbey",
+      "country": "IT",
+      "status": "auto"
+    },
     "Sebánæ in Rǽtia": {
       "wikidata": "Q18476513",
       "label": "Säben",
@@ -13564,6 +14101,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Sicília": {
+      "wikidata": "Q1460",
+      "label": "Sicily",
+      "country": "IT",
+      "status": "auto"
+    },
     "Sidóne in Phœnícia": {
       "wikidata": "Q163490",
       "label": "Sidon",
@@ -13576,11 +14119,23 @@
       "country": "IT",
       "status": "auto"
     },
+    "Sigriánæ in Bithýnia in monastério Agri Magni": {
+      "wikidata": "Q131523790",
+      "label": "Monastery of Kurşunlu",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Singidúni in Mœsia": {
       "wikidata": "Q3711",
       "label": "Belgrade",
       "country": "RS",
       "status": "reviewed"
+    },
+    "Sinis": {
+      "wikidata": "Q148",
+      "label": "People's Republic of China",
+      "country": "CN",
+      "status": "auto"
     },
     "Sinópe in Ponto": {
       "wikidata": "Q599416",
@@ -13623,6 +14178,12 @@
       "label": "Somasca",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Soncíni": {
+      "wikidata": "Q42936",
+      "label": "Soncino",
+      "country": "IT",
+      "status": "auto"
     },
     "Soncíni in Langobárdia": {
       "wikidata": "Q42936",
@@ -13732,6 +14293,18 @@
       "country": "JP",
       "status": "reviewed"
     },
+    "Suécia": {
+      "wikidata": "Q34",
+      "label": "Sweden",
+      "country": "SE",
+      "status": "auto"
+    },
+    "Suéciæ": {
+      "wikidata": "Q34",
+      "label": "Sweden",
+      "country": "SE",
+      "status": "auto"
+    },
     "Suéllis in Sardínia": {
       "wikidata": "Q285220",
       "label": "Suelli",
@@ -13749,6 +14322,12 @@
       "label": "Sydney",
       "country": "AU",
       "status": "reviewed"
+    },
+    "Syracúsis": {
+      "wikidata": "Q13670",
+      "label": "Syracuse",
+      "country": "IT",
+      "status": "auto"
     },
     "Syracúsis in Sicília": {
       "wikidata": "Q13670",
@@ -13827,6 +14406,12 @@
       "label": "Synnada",
       "country": "TR",
       "status": "reviewed"
+    },
+    "Sýria": {
+      "wikidata": "Q858",
+      "label": "Syria",
+      "country": "SY",
+      "status": "auto"
     },
     "Tabennési in Thebáide Ægýpti": {
       "wikidata": "Q2478752",
@@ -14152,6 +14737,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Tropǽæ in Calábria": {
+      "wikidata": "Q54747",
+      "label": "Tropea",
+      "country": "IT",
+      "status": "auto"
+    },
     "Troýnæ in Sicília": {
       "wikidata": "Q56212",
       "label": "Troina",
@@ -14319,6 +14910,12 @@
       "label": "Taggia",
       "country": "IT",
       "status": "auto"
+    },
+    "Társiæ in Bithýnia": {
+      "wikidata": "Q65050938",
+      "label": "Tarsus",
+      "country": "TR",
+      "status": "reviewed"
     },
     "Tíburi in Látio": {
       "wikidata": "Q159605",
@@ -14488,6 +15085,12 @@
       "country": "ES",
       "status": "auto"
     },
+    "Valéntiæ in Hispánia Carthaginénsi": {
+      "wikidata": "Q8818",
+      "label": "Valencia",
+      "country": "ES",
+      "status": "auto"
+    },
     "Valéntiæ item in Hispánia": {
       "wikidata": "Q8818",
       "label": "Valencia",
@@ -14498,6 +15101,12 @@
       "wikidata": "Q175081",
       "label": "Gap",
       "country": "FR",
+      "status": "auto"
+    },
+    "Varadíni in Transilvánia": {
+      "wikidata": "Q93358",
+      "label": "Oradea",
+      "country": "RO",
       "status": "auto"
     },
     "Varsáviæ in Polónia": {
@@ -14571,6 +15180,12 @@
       "label": "Vercelli",
       "country": "IT",
       "status": "auto"
+    },
+    "Verneméti in pago Agennénsi Aquitániæ": {
+      "wikidata": "Q177743",
+      "label": "Le Mas-d'Agenais",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Vernóne ad Séquanam in Gállia": {
       "wikidata": "Q236736",
@@ -14662,6 +15277,20 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Via Prænestína miliário tricésimo ab urbe Roma": {
+      "wikidata": "Q550578",
+      "label": "Via Praenestina",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "The thirtieth mile of the Via Praenestina, beyond Palestrina; the site is not known."
+    },
+    "Via Salária miliário vicésimo secúndo ab Urbe": {
+      "wikidata": "Q242990",
+      "label": "Montelibretti",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "The basilica and catacomb of Sant'Antimo on Colle Sant'Antimo, in Montelibretti."
+    },
     "Via Tiburtína miliário nono ab urbe Roma": {
       "wikidata": "Q242710",
       "label": "Guidonia Montecelio",
@@ -14699,6 +15328,12 @@
       "status": "auto"
     },
     "Viglebáni in Langobárdia": {
+      "wikidata": "Q40832",
+      "label": "Vigevano",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Viglébani": {
       "wikidata": "Q40832",
       "label": "Vigevano",
       "country": "IT",
@@ -14884,6 +15519,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Vérulis in Hérnicis": {
+      "wikidata": "Q42466",
+      "label": "Veroli",
+      "country": "IT",
+      "status": "auto"
+    },
     "Vérulis in Látio Itáliæ": {
       "wikidata": "Q42466",
       "label": "Veroli",
@@ -14956,6 +15597,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "civitáte Pápia": {
+      "wikidata": "Q6259",
+      "label": "Pavia",
+      "country": "IT",
+      "status": "auto"
+    },
     "in Hibérnia, in cella eius nómine vocáta": {
       "wikidata": "Q27",
       "label": "Ireland",
@@ -14968,11 +15615,41 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "urbe Roma": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "auto"
+    },
+    "urbe Schio in agro Vicentíno Itáliæ": {
+      "wikidata": "Q47262",
+      "label": "Schio",
+      "country": "IT",
+      "status": "auto"
+    },
     "Ægéis in Cilícia": {
       "wikidata": "Q404231",
       "label": "Aegae",
       "country": "TR",
       "status": "reviewed"
+    },
+    "Ægýpti": {
+      "wikidata": "Q79",
+      "label": "Egypt",
+      "country": "EG",
+      "status": "auto"
+    },
+    "Ægýpto": {
+      "wikidata": "Q79",
+      "label": "Egypt",
+      "country": "EG",
+      "status": "auto"
+    },
+    "Æthiópia": {
+      "wikidata": "Q115",
+      "label": "Ethiopia",
+      "country": "ET",
+      "status": "auto"
     }
   }
 }
