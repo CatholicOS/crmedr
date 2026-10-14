@@ -710,6 +710,14 @@ def render_report(result):
         "",
         *([f"- `{m}`: {', '.join(las)}" for m, las in result.get("unrecorded", {}).items()] or ["None."]),
         "",
+        "## Proposals that failed the check",
+        "",
+        "Body-place proposals that still broke the rules after one correction "
+        "(`scripts/body_places.py check --final`); they never reach review.",
+        "",
+        *([f"- `{f['eulogy']}` {f['role']} *{f['la']}*: {'; '.join(f['errors'])}"
+           for f in result.get("unqueued", [])] or ["None."]),
+        "",
         "## Entries with no place",
         "",
         ", ".join(f"`{m}`" for m in result["no_place"]) or "None.",
@@ -765,6 +773,9 @@ def main():
     known = json.loads(gazetteer_path.read_text(encoding="utf-8"))["places"] if gazetteer_path.exists() else {}
     known = [la for la, g in known.items() if g.get("wikidata") and len(la) > 3]
     result["unrecorded"] = unrecorded({m: texts[m] for m, _, _ in latin_order}, result["places"], known)
+    review_path = repo_root / "data" / "places_review.json"
+    if review_path.exists():
+        result["unqueued"] = json.loads(review_path.read_text(encoding="utf-8")).get("unqueued", [])
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")
     print(f"{len(result['places'])} entries with places; {len(result['unresolved'])} unresolved "
