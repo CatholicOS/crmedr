@@ -31,7 +31,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from extract_places import CURATED_KEYS, EDITION_IT, load_persons, validate_curated
+from extract_places import CURATED_KEYS, EDITION_IT, load_persons, occurrences, validate_curated
 from extract_typology import latin_texts, load_texts
 
 SCHEMA = "crmedr-changeset/v1"
@@ -47,12 +47,19 @@ def new_changeset():
             "operations": [], "rejected": []}
 
 
-def item_of(p):
-    """The curated item of a proposal or decision. A first printing and a first person
-    of a name are the default, so occurrence, occurrence_it and n of 1 are left out:
-    one item, one op id."""
-    return {k: p[k] for k in CURATED_KEYS
-            if k in p and p[k] is not None and not (k in ("occurrence", "occurrence_it", "n") and p[k] == 1)}
+def item_of(p, text="", text_it=""):
+    """The curated item of a proposal or decision. A first person of a name is the
+    default, so n of 1 is left out; occurrence (occurrence_it) of 1 is left out only
+    when its form is printed once in the Latin (Italian) text, since a form printed
+    more than once needs it."""
+    printed = {"occurrence": (text, p.get("la")), "occurrence_it": (text_it, p.get("it"))}
+
+    def default(k, v):
+        if v != 1 or k not in ("n", *printed):
+            return False
+        return k == "n" or len(occurrences(printed[k][0], printed[k][1] or "")) <= 1
+
+    return {k: p[k] for k in CURATED_KEYS if k in p and p[k] is not None and not default(k, p[k])}
 
 
 MAX_REASONING = 300
@@ -83,7 +90,9 @@ def reasoning_errors(mrid, p, texts, texts_it):
 
 
 def op_id(p):
+    """One id per item: a first printing and a first person of a name are the default."""
     p = item_of(p) | {"eulogy": p["eulogy"]}
+    p = {k: v for k, v in p.items() if not (k in ("occurrence", "n") and v == 1)}
     parts = [p["eulogy"], p["role"], p["la"]]
     if p.get("occurrence"):
         parts.append(str(p["occurrence"]))
@@ -128,7 +137,7 @@ def check(proposals, curated, review, texts, texts_it, leads, persons, final=Fal
         if p.get("confidence") not in CONFIDENCE:
             failures.append(_failure(p, [f"{mrid}: confidence must be one of {', '.join(CONFIDENCE)}"]))
             continue
-        item = item_of(p)
+        item = item_of(p, texts[mrid], texts_it.get(mrid, ""))
         if not {"role", "la"} <= set(item):
             failures.append(_failure(p, [f"{mrid}: a proposal needs role and la"]))
             continue
@@ -185,9 +194,10 @@ def apply(exported, curated, review, texts, texts_it, leads, persons):
         if op["decision"] == "reject":
             new_review["rejected"].append(op["id"])
         elif op["decision"] in ("accept", "edit"):
-            item = item_of(op)
+            text, text_it = texts.get(mrid, ""), texts_it.get(mrid, "")
+            item = item_of(op, text, text_it)
             if op["decision"] == "edit":
-                item = item_of(item | (op.get("edited") or {}))
+                item = item_of(item | (op.get("edited") or {}), text, text_it)
             item_errors = _item_errors(mrid, item, new_curated, texts, texts_it, leads, persons)
             if item_errors:
                 errors += [f"{op['id']}: {e}" for e in item_errors]

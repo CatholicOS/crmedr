@@ -73,6 +73,18 @@ class CheckTest(unittest.TestCase):
         self.assertEqual(run_check([prop(occurrence=1)], review=review)[0], 0)
         self.assertEqual(bp.op_id(prop(occurrence=1, n=1, person="Fictitius")), bp.op_id(prop(person="Fictitius")))
 
+    def test_the_first_of_two_printings_keeps_occurrence_1(self):
+        texts = {"mr:0101-a": "Fictopoli, sancti Fictitii, qui Romæ natus et Romæ sepultus est."}
+        texts_it = {"mr:0101-a": "A Fictopoli, san Fictizio, nato a Roma e sepolto a Roma."}
+        review = bp.new_changeset()
+        n, failures = bp.check([prop(la="Romæ", it="a Roma", occurrence=1, occurrence_it=1),
+                                prop(role="burial", la="Romæ", it="a Roma", occurrence=2, occurrence_it=2)],
+                               {}, review, texts, texts_it, LEADS, PERSONS)
+        self.assertEqual((n, failures), (2, []))
+        first = review["operations"][0]
+        self.assertEqual((first["id"], first["occurrence"], first["occurrence_it"]),
+                         ("mr:0101-a#birth#Romæ", 1, 1))
+
     def test_reasoning_must_not_quote_the_text(self):
         n, failures, _ = run_check([prop(reasoning="the text says qui in Fictonia natus et")])
         self.assertEqual(n, 0)
