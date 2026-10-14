@@ -615,27 +615,145 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 
 Places the gazetteer knows, printed in a eulogy where no place item covers them: candidates for body places (see `scripts/body_places.py`).
 
+- `mr:0105-deogratias`: Roma, urbe Roma
+- `mr:0110-benincasa`: Sicília
+- `mr:0111-franciscus-rogaczewski`: Polóniæ
+- `mr:0119-ioannes`: Itália
+- `mr:0122-barnardus`: Roma
+- `mr:0122-dominicus`: Itáliæ
+- `mr:0202-praesentatio-domini`: Israel
+- `mr:0203-simeon-et-anna-prophetissa`: Israel
+- `mr:0206-paulus-miki-et-socii`: Iapónia
+- `mr:0207-adalbertus-nierychlewski`: Polónia
+- `mr:0209-franciscus-aloysius-febres-cordero`: Hispánia
 - `mr:0212-martyres-abitinenses`: Carthágine
 - `mr:0219-quodvultdeus`: Neápoli
-- `mr:0227-gulielmus-richardson`: Híspali in Hispánia
-- `mr:0328-priscus-et-socii`: Cæsaréæ in Palæstína
+- `mr:0225-sebastianus-aparicio`: Hispánia, Méxicum
+- `mr:0225-waldburgis`: Germánia
+- `mr:0227-gulielmus-richardson`: Hispánia, Híspali in Hispánia
+- `mr:0301-christophorus-de-mediolano`: Medioláno
+- `mr:0301-david`: Hibérnia
+- `mr:0301-suitbertus`: Germániæ
+- `mr:0302-carolus-bonus`: Dániæ
+- `mr:0304-casimirus`: Polóniæ
+- `mr:0309-bruno`: Germánia, Itália
+- `mr:0310-simplicius`: Itália
+- `mr:0311-ioannes-baptista-de-fabriano`: Fabriáno
+- `mr:0318-braulio`: Hispánia
+- `mr:0319-narcissus-turchan`: Polónia
+- `mr:0325-hilarius-januszewski`: Polónia
+- `mr:0328-priscus-et-socii`: Cæsaréæ in Palæstína, Palæstína
+- `mr:0331-bonaventura-de-foro-livii`: Itáliæ
 - `mr:0407-hegesippus`: Romæ
+- `mr:0409-caelestina-faron`: Polónia
+- `mr:0411-stanislaus`: Polóniæ
+- `mr:0416-benedictus-iosephus-labre`: Roma
+- `mr:0416-turibius`: Hispánia
 - `mr:0422-agapitus-i`: Constantinópoli
+- `mr:0426-stanislaus-kubista`: Polónia
 - `mr:0427-simeon`: Hierosólymæ
+- `mr:0430-maria-ab-incarnatione`: Cánada
+- `mr:0501-ieremias-propheta`: Israel
+- `mr:0506-henricus-kaczorowski-et-casimirus-gostynski`: Polónia
+- `mr:0506-maria-catharina-troianus`: Itália
+- `mr:0507-rosa-venerini`: Itália
+- `mr:0508-gibrianus`: Hibérnia
 - `mr:0509-geruntius`: Romæ
+- `mr:0509-stephanus-grelewskus`: Polónia
+- `mr:0511-maiolus`: Itália
 - `mr:0512-nereus-et-achilleus`: Romæ, Romæ in cœmetério, Romæ in cœmetério Domitíllæ via Ardeatína
+- `mr:0516-michael-wozniak`: Polónia
+- `mr:0525-gregorius-vii`: Roma
+- `mr:0529-exsuperantius`: Itália
+- `mr:0601-ronanus`: Hibérnia
+- `mr:0604-metrophanes`: Roma
+- `mr:0610-ioannes-dominicus`: Hungária, Itália
 - `mr:0611-barnabas`: Hierosólymæ
 - `mr:0621-ioannes-rigby`: Londínii
+- `mr:0706-palladius`: Roma, urbe Roma
+- `mr:0709-fidel-chijnacki`: Polónia
 - `mr:0713-alexander-et-socii`: Antiochíæ Pisídiæ
+- `mr:0713-esdra`: Israel
+- `mr:0713-henricus`: Roma
+- `mr:0716-maria-de-monte-carmelo`: Israel
+- `mr:0717-fredegandus`: Hibérnia
+- `mr:0717-hedwigis`: Polóniæ
+- `mr:0717-zoerardus-et-benedictus`: Polónia
+- `mr:0719-achilles-puchala-et-hermannus-stepien`: Polónia
+- `mr:0720-elias-thesbita-propheta`: Israel
 - `mr:0722-augustinus-de-bugella`: Venétiis
+- `mr:0723-birgitta`: Suécia
+- `mr:0723-christinus-gondek`: Polónia
+- `mr:0723-ezechiel-propheta`: Israel
+- `mr:0724-kinga`: Hungáriæ
+- `mr:0725-maria-teresia-kowalska`: Polóniæ
+- `mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere`: Roma
+- `mr:0731-germanus`: Ravénna
+- `mr:0731-michael-ozieblowski`: Polónia
 - `mr:0801-alphonsus-maria-de-liguori`: Nucériæ Paganórum in Campánia
+- `mr:0804-henricus-krzysztofik`: Polónia
+- `mr:0806-thaddaeus-dulny`: Polóniæ
 - `mr:0807-xystus-ii-et-socii`: Romæ
+- `mr:0812-florianus-stepniak-et-iosephus-straszewski`: Polóniæ
+- `mr:0813-gertrudis`: Hungáriæ
+- `mr:0813-petrus-romancon`: Roma
+- `mr:0815-stanislaus-kostka`: Roma
+- `mr:0820-bernardus-tolomei`: Itália
+- `mr:0821-bruno-zembol`: Polónia
+- `mr:0824-maximianus-binkiewicz`: Polónia
+- `mr:0829-dominicus-jedrzejewski`: Polónia
+- `mr:0901-iosue`: Israel
+- `mr:0906-michael-czartoryskus`: Polónia
+- `mr:0908-ladislaus-bladzinski`: Polónia
 - `mr:0911-michael-gran`: Barcinóne
+- `mr:0913-amatus-vosegos`: Roma
+- `mr:0915-ladislaus-miegon`: Polónia
+- `mr:0923-andreas-et-socii`: Syracúsis
+- `mr:0924-ioanna-gabriel`: Roma
+- `mr:0926-gedeon-iudex`: Israel
+- `mr:0927-bonfilius`: Itália
+- `mr:0928-leoba`: Germánia
+- `mr:1005-marianus-skrzypczak`: Polóniæ
 - `mr:1006-magnus`: Venétiis
 - `mr:1009-ioannes-leonardus`: Lucæ in Etrúria
+- `mr:1010-leo-wetmanski`: Polónia
+- `mr:1012-romanus-sitko`: Polóniæ
+- `mr:1013-comganus`: Hibérnia
+- `mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec`: Polónia
+- `mr:1017-osee-propheta`: Israel
+- `mr:1018-petrus-de-alcantara`: Hispánia
+- `mr:1023-ioannes-de-capestrano`: Hungáriæ
+- `mr:1024-antonius-maria-claret`: Hispánia
+- `mr:1031-christophorus-de-romaniola`: Roma
+- `mr:1031-leo-nowakowski`: Polóniæ
+- `mr:1031-thomas-de-florentia`: Floréntia
+- `mr:1102-malachia`: Claraválle
+- `mr:1109-dedicatio-basilicae-lateranensis`: Roma
+- `mr:1112-benedictus-et-socii`: Polóniæ
+- `mr:1112-iosaphat-kuncewicz`: Polóniæ
+- `mr:1117-elisabeth-hungaria`: Hungáriæ
+- `mr:1118-romacharius`: Roma
+- `mr:1119-abdias-propheta`: Israel
 - `mr:1120-gregorius-decapolitanus`: Constantinópoli
+- `mr:1121-francisca-de-siedliska`: Polónia
 - `mr:1125-petrus`: Alexandríæ
+- `mr:1127-bronislaus-kostowski`: Polóniæ
+- `mr:1129-saturninus-carthaginensis`: Roma
+- `mr:1130-ludovicus-rochus-gientyngier`: Polóniæ
+- `mr:1202-chromatius`: Itáliæ
+- `mr:1205-narcissus-putz`: Polónia
+- `mr:1208-aloysius-liguda`: Polónia
+- `mr:1208-romaricus`: Roma
+- `mr:1211-david`: Germánia
+- `mr:1211-mirabilia-a-iesu`: Hispánia
+- `mr:1212-pius-bartosik`: Polóniæ
+- `mr:1218-gatianus`: Roma, urbe Roma
+- `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu`: Polóniæ
+- `mr:1220-vincentius-romano`: Roma
+- `mr:1221-michaeas-propheta`: Israel
+- `mr:1225-nativitas-domini`: Israel
 - `mr:1227-theodorus`: Constantinópoli
+- `mr:1229-david-rex-et-propheta`: Israel
 
 ## Proposals that failed the check
 

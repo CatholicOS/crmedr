@@ -1194,6 +1194,10 @@ intended:
   *Bellreguart* in the Latin (the Spanish name) and for *Bellreguard* in the Italian
   (the Valencian, official name, as in the English translation); the CEI edition
   copied the Latin typo.
+- Latin editio altera, December 4, entry 8\* (mr:1204-adrehildis), also inside the
+  quoted designation of her body place (`places[].la` keeps the printed form):
+  "monastériii" for *monastérii*, verified on the page image (p. 657) and in its OCR
+  layer.
 - Italian (CEI) edition, October 13 (mr:1013-comganus): "desposizione" for
   *deposizione*.
 - Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for
