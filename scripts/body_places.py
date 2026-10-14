@@ -31,7 +31,7 @@ import sys
 import unicodedata
 from pathlib import Path
 
-from extract_places import CURATED_KEYS, EDITION_IT, load_persons, occurrences, validate_curated
+from extract_places import CURATED_KEYS, EDITION_IT, MAX_WORDS, load_persons, occurrences, validate_curated
 from extract_typology import latin_texts, load_texts
 
 SCHEMA = "crmedr-changeset/v1"
@@ -109,11 +109,26 @@ def _text_persons(persons, mrid):
 
 
 def _failure(p, errors):
-    return {"eulogy": p.get("eulogy"), "role": p.get("role"), "la": p.get("la"), "errors": errors}
+    return {"eulogy": p.get("eulogy"), "role": p.get("role"), "la": p.get("la"),
+            **{k: p[k] for k in ("occurrence", "person", "n") if p.get(k) is not None}, "errors": errors}
 
 
 def _key(f):
-    return (str(f["eulogy"]), str(f["role"]), str(f["la"]))
+    """One proposal: a missing occurrence or n is the first, so a correction that adds it matches."""
+    return (str(f["eulogy"]), str(f["role"]), _clip(str(f["la"])), f.get("occurrence") or 1,
+            str(f.get("person")), f.get("n") or 1)
+
+
+def _clip(s):
+    """At most a place designation's MAX_WORDS words: a kept failure must not quote the eulogy."""
+    words = s.split()
+    return s if len(words) <= MAX_WORDS else " ".join(words[:MAX_WORDS]) + " …"
+
+
+def _kept(f):
+    def clip_quotes(e):
+        return re.sub(r"""(['"])(.*?)\1""", lambda m: m[1] + _clip(m[2]) + m[1], e)
+    return f | {"la": _clip(str(f["la"])), "errors": [clip_quotes(e) for e in f["errors"]]}
 
 
 def _item_errors(mrid, item, curated, texts, texts_it, leads, persons):
@@ -161,7 +176,7 @@ def check(proposals, curated, review, texts, texts_it, leads, persons, final=Fal
         added += 1
     review["operations"].sort(key=lambda o: o["id"])
     if final:
-        new = {_key(f): f for f in failures}
+        new = {_key(f): _kept(f) for f in failures}
         kept = [f for f in review.get("unqueued", []) if _key(f) not in new and _key(f) not in passed]
         review["unqueued"] = sorted(kept + list(new.values()), key=_key)
     return added, failures

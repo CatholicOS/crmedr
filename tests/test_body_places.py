@@ -1,3 +1,4 @@
+import json
 import sys
 import unittest
 from pathlib import Path
@@ -173,6 +174,36 @@ class StructuredCheckTest(unittest.TestCase):
         bp.check([prop()], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS, final=True)
         self.assertEqual(review["unqueued"], [])
         self.assertEqual(len(review["operations"]), 1)
+
+    LA2 = {"mr:0101-a": "Fictopoli, sancti Fictitii, qui Romæ natus et Romæ sepultus est, "
+                        "ubi diu in pace vixit cum fratribus suis multis annis."}
+
+    def final2(self, review, proposals):
+        bp.check(proposals, {}, review, self.LA2, TEXTS_IT, LEADS, PERSONS, final=True)
+
+    def test_one_printings_success_keeps_the_others_failure(self):
+        review = bp.new_changeset()
+        self.final2(review, [prop(la="Romæ", occurrence=1, it="in Fictlandia")])
+        self.final2(review, [prop(la="Romæ", occurrence=2, it=None)])
+        self.assertEqual([(f["la"], f["occurrence"]) for f in review["unqueued"]], [("Romæ", 1)])
+
+    def test_a_correction_that_adds_the_printing_drops_the_failure(self):
+        review = bp.new_changeset()
+        self.final2(review, [prop(la="Romæ", it=None)])  # printed twice, no occurrence
+        self.assertEqual(len(review["unqueued"]), 1)
+        self.final2(review, [prop(la="Romæ", occurrence=1, it=None)])
+        self.assertEqual(review["unqueued"], [])
+
+    def test_kept_failures_quote_no_more_than_a_place_designation(self):
+        long_la = "qui Romæ natus et Romæ sepultus est, ubi diu in pace vixit cum fratribus"
+        typo = long_la.replace("vixit", "vixt")
+        review = bp.new_changeset()
+        self.final2(review, [prop(la=long_la, it=None), prop(la=typo, it=None)])
+        self.assertEqual(len(review["unqueued"]), 2)
+        stored = json.dumps(review["unqueued"], ensure_ascii=False)
+        self.assertNotIn(long_la, stored)
+        self.assertNotIn(typo, stored)
+        self.assertIn(" ".join(long_la.split()[:bp.MAX_WORDS]) + " …", stored)
 
     def test_without_final_nothing_is_kept(self):
         _, _, review = run_check([prop(la="in Fictlandia")])
