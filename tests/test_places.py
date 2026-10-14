@@ -696,6 +696,15 @@ class UnrecordedTest(unittest.TestCase):
         self.assertIn("## Places named but not recorded", p.render_report(r))
         self.assertIn("- `mr:0101-a`: in Fictonia", p.render_report(r))
 
+    def test_report_lists_proposals_that_failed_the_check(self):
+        r = p.build(BuildTest.ORDER, BuildTest.TX, BuildTest.TY, {}, not_a_place={})
+        self.assertIn("## Proposals that failed the check\n\n", p.render_report(r))
+        self.assertIn("they never reach review.\n\nNone.", p.render_report(r))
+        r["unqueued"] = [{"eulogy": "mr:0101-a", "role": "birth", "la": "in Fictlandia",
+                          "errors": ["mr:0101-a: la 'in Fictlandia' is not verbatim in the Latin text"]}]
+        self.assertIn("- `mr:0101-a` birth *in Fictlandia*: mr:0101-a: la 'in Fictlandia' is not verbatim",
+                      p.render_report(r))
+
 
 if __name__ == "__main__":
     unittest.main()
