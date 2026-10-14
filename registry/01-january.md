@@ -195,7 +195,7 @@
 | 15 | 4 | `mr:0115-probus` |  | IT | commemoratio |  |  |
 | 15 | 5 | `mr:0115-maurus` |  | FR | dies_natalis |  |  |
 | 15 | 6 | `mr:0115-tarsicia` | * | FR | dies_natalis |  |  |
-| 15 | 7 | `mr:0115-ablebertus` | * | NL | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Olanda" for "Haméti in Brabántia", which lies in present-day Belgium. |
+| 15 | 7 | `mr:0115-ablebertus` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Olanda" for "Haméti in Brabántia", which lies in present-day Belgium. |
 | 15 | 8 | `mr:0115-malardus` | * | FR | dies_natalis |  |  |
 | 15 | 9 | `mr:0115-romedius` | * | IT | dies_natalis |  |  |
 | 15 | 10 | `mr:0115-bonitus` |  | FR | dies_natalis |  |  |

@@ -471,7 +471,7 @@
 | 31 | 10 | `mr:0731-everardus-hanse` | * | GB | dies_natalis |  |  |
 | 31 | 11 | `mr:0731-ioannes-franciscus-jarrige-de-la-morelie-du-breuil` | * | FR | dies_natalis |  |  |
 | 31 | 12 | `mr:0731-petrus-doan-cong-quy-et-emmanuel-phung` |  | VN | dies_natalis |  |  |
-| 31 | 13 | `mr:0731-iustinus-de-iacobis` |  | ET | dies_natalis |  |  |
+| 31 | 13 | `mr:0731-iustinus-de-iacobis` |  | ER | dies_natalis |  |  |
 | 31 | 14 | `mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa` | * | ES | dies_natalis |  |  |
 | 31 | 15 | `mr:0731-iacobus-buch-canals` | * | ES | dies_natalis |  |  |
 | 31 | 16 | `mr:0731-michael-ozieblowski` | * | DE | dies_natalis |  |  |
