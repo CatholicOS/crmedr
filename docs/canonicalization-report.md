@@ -1402,8 +1402,11 @@ opening place, and 29 Holy Land entries with no opening place moved from
 
 ### Every place named, with its role (October 2026)
 
-Every place a eulogy names is recorded, not only its opening place, and each is
-marked in the Latin and Italian texts. The decisions:
+The goal is to record every place a eulogy names, not only its opening place, and to
+mark each one in the Latin and Italian texts. So far the records hold the opening places
+and a few hand-curated body places; the rest are to come through the review below, and
+the places report lists, as candidates, places the gazetteer knows that are named but
+not yet recorded. The decisions:
 
 - **A role belongs to one eulogy's place item, never to the place.** The gazetteer
   says what a place is (Wikidata item, label, country); `places` says what it means in

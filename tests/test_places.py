@@ -507,6 +507,26 @@ class CuratedTest(unittest.TestCase):
         self.assertIn("overlaps the opening place", errors(dict(base, it="Fictopoli", occurrence_it=1)))
         self.assertEqual(errors(dict(base, it="Fictopoli", occurrence_it=2)), "")
 
+    def test_a_bare_back_reference_has_no_printed_opening_place(self):
+        text = {"mr:0101-b": "Ibídem, sancti Ficti, qui Fictopoli natus est."}
+        leads = {"mr:0101-b": {"role": "death", "la": "Fictopoli", "source": "lead", "via": "mr:0101-a"}}
+        item = {"role": "birth", "la": "Fictopoli"}
+        self.assertEqual(p.validate_curated({"mr:0101-b": [item]}, text, {"mr:0101-b"}, leads), [])
+        self.assertEqual(p.unrecorded(text, {"mr:0101-b": [leads["mr:0101-b"]]}, ["Fictopoli"]),
+                         {"mr:0101-b": ["Fictopoli"]})
+        extended = {"mr:0101-b": {"role": "death", "la": "Ibídem, in Fictia", "source": "lead", "via": "mr:0101-a"}}
+        text2 = {"mr:0101-b": "Ibídem, in Fictia, sancti Ficti."}
+        self.assertIn("overlaps the opening place", "\n".join(
+            p.validate_curated({"mr:0101-b": [{"role": "birth", "la": "in Fictia"}]}, text2, {"mr:0101-b"}, extended)))
+
+    def test_malformed_person_n_and_occurrence_are_errors(self):
+        for item, word in (({"person": ["Fictitius"]}, "person must be a name"),
+                           ({"person": "Fictitius", "n": "2"}, "n must be an integer of at least 2"),
+                           ({"person": "Fictitius", "n": 1}, "n must be an integer of at least 2"),
+                           ({"occurrence": [1]}, "has no printing")):
+            msg = "\n".join(self.errors([dict({"role": "birth", "la": "in Fictonia"}, **item)]))
+            self.assertIn(word, msg, item)
+
     def test_occurrence_it(self):
         self.assertIn("occurrence_it without it", "\n".join(
             self.errors([{"role": "birth", "la": "in Fictonia", "occurrence_it": 1}])))

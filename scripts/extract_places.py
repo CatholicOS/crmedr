@@ -285,6 +285,11 @@ def _printing(text, form, n, what, mrid):
     return (found[n - 1], found[n - 1] + len(form)), None
 
 
+def _inherited(lead):
+    """A bare back-reference's opening place: its root's la, not printed at its own opening."""
+    return "via" in lead and not re.match(r"(?:Ibidem|Item)\b", base_copy(lead["la"]))
+
+
 def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=None):
     errors = []
     for mrid, entries in curated.items():
@@ -292,6 +297,8 @@ def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=
             errors.append(f"{mrid}: not a current ID")
             continue
         lead = leads.get(mrid)
+        if lead and _inherited(lead):
+            lead = None  # nothing of the root's name is printed at this eulogy's opening
         lead_at = occurrences(texts[mrid], lead["la"])[:1] if lead else []
         lead_span = (lead_at[0], lead_at[0] + len(lead["la"])) if lead_at else None
         lead_it = lead.get("it") if lead else None
@@ -337,10 +344,18 @@ def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=
                 errors.append(f"{mrid}: occurrence_it without it")
             if "n" in it and "person" not in it:
                 errors.append(f"{mrid}: n needs a person")
-            elif "person" in it and persons is not None and (it["person"], it.get("n", 1)) not in names:
+                continue
+            if "person" in it and (not isinstance(it["person"], str) or not it["person"].strip()):
+                errors.append(f"{mrid}: person must be a name: {it['person']!r}")
+                continue
+            if "n" in it and (type(it["n"]) is not int or it["n"] < 2):
+                errors.append(f"{mrid}: n must be an integer of at least 2: {it['n']!r}")
+                continue
+            if "person" in it and persons is not None and (it["person"], it.get("n", 1)) not in names:
                 who = it["person"] + (f"#{it['n']}" if "n" in it else "")
                 errors.append(f"{mrid}: no person {who} in data/persons.json")
-            key = (it["la"], it.get("occurrence", 1), it["role"], it.get("person"), it.get("n"))
+            key = tuple(repr(v) for v in (it["la"], it.get("occurrence", 1), it["role"], it.get("person"),
+                                          it.get("n")))
             if key in seen:
                 errors.append(f"{mrid}: duplicate item {it['role']} {it['la']!r}")
             seen.add(key)
@@ -380,9 +395,12 @@ LONG_LEAD_OK = {
 
 
 def _covered(text, items):
-    """Spans of the printings the eulogy's items point at (a lead: its la's first printing)."""
+    """Spans of the printings the eulogy's items point at (a lead: its la's first printing; a bare
+    back-reference: none)."""
     spans = []
     for it in items:
+        if it["source"] == "lead" and _inherited(it):
+            continue  # a bare back-reference prints no place of its own
         found = occurrences(text, it["la"])
         n = it.get("occurrence", 1)
         if 0 < n <= len(found):
