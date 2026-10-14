@@ -26,7 +26,8 @@ from pathlib import Path
 
 from extract_typology import RECOVERY, latin_texts, load_texts
 
-ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "ministry"]
+ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "education", "religious_life",
+         "ministry", "foundation", "exile", "journey", "mention"]
 ROLE_OF_TYPOLOGY = {
     "dies_natalis": "death",
     "depositio": "burial",
@@ -260,15 +261,45 @@ def lead_items(order, texts, typology, *, not_a_place, stop_words=STOP_WORDS):
     return items, unresolved, bare
 
 
-def validate_curated(curated, texts, current_ids, leads, texts_it=None):
+CURATED_KEYS = ("role", "la", "it", "person", "n", "occurrence", "occurrence_it")
+
+
+def occurrences(text, form):
+    """Start offsets of the exact, non-overlapping printings of form in text."""
+    out, start = [], text.find(form) if form else -1
+    while start >= 0:
+        out.append(start)
+        start = text.find(form, start + len(form))
+    return out
+
+
+def _printing(text, form, n, what, mrid):
+    """(start, end) of the nth printing of form, or an error message."""
+    found = occurrences(text, form)
+    if n is None:
+        if len(found) > 1:
+            return None, f"{mrid}: {what} {form!r} is printed {len(found)} times; give its occurrence"
+        n = 1
+    if not isinstance(n, int) or n < 1 or n > len(found):
+        return None, f"{mrid}: {what} {form!r} has no printing {n}"
+    return (found[n - 1], found[n - 1] + len(form)), None
+
+
+def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=None):
     errors = []
     for mrid, entries in curated.items():
         if mrid not in current_ids:
             errors.append(f"{mrid}: not a current ID")
             continue
+        lead = leads.get(mrid)
+        lead_at = occurrences(texts[mrid], lead["la"])[:1] if lead else []
+        lead_span = (lead_at[0], lead_at[0] + len(lead["la"])) if lead_at else None
+        names = {(p["name"], p.get("n", 1)) for p in (persons or {}).get(mrid, [])}
+        seen = set()
         for it in entries:
-            if set(it) not in ({"role", "la"}, {"role", "la", "it"}):
-                errors.append(f"{mrid}: curated item keys must be role, la and optionally it: {sorted(it)}")
+            if not {"role", "la"} <= set(it) <= set(CURATED_KEYS):
+                errors.append(f"{mrid}: curated item keys must be role, la and optionally "
+                              f"{', '.join(CURATED_KEYS[2:])}: {sorted(it)}")
                 continue
             if it["role"] not in ROLES:
                 errors.append(f"{mrid}: unknown role {it['role']!r}")
@@ -277,18 +308,46 @@ def validate_curated(curated, texts, current_ids, leads, texts_it=None):
                 continue
             if it["la"] not in texts[mrid]:
                 errors.append(f"{mrid}: la is not verbatim in the elogium: {it['la']!r}")
+                continue
             if len(it["la"].split()) > MAX_WORDS:
                 errors.append(f"{mrid}: la has more than {MAX_WORDS} words")
-            if mrid in leads and it["la"] == leads[mrid]["la"]:
-                errors.append(f"{mrid}: la repeats the opening place")
+            span, error = _printing(texts[mrid], it["la"], it.get("occurrence"), "la", mrid)
+            if error:
+                errors.append(error)
+            elif lead_span and span[0] < lead_span[1] and lead_span[0] < span[1]:
+                errors.append(f"{mrid}: la {it['la']!r} overlaps the opening place")
             if "it" in it:
+                text_it = (texts_it or {}).get(mrid, "")
                 if not isinstance(it["it"], str) or not it["it"].strip():
                     errors.append(f"{mrid}: it is empty")
-                elif it["it"] not in (texts_it or {}).get(mrid, ""):
+                elif it["it"] not in text_it:
                     errors.append(f"{mrid}: it is not verbatim in the Italian elogium: {it['it']!r}")
                 elif len(it["it"].split()) > MAX_WORDS_IT:
                     errors.append(f"{mrid}: it has more than {MAX_WORDS_IT} words")
+                else:
+                    _, error = _printing(text_it, it["it"], it.get("occurrence_it"), "it", mrid)
+                    if error:
+                        errors.append(error)
+            elif "occurrence_it" in it:
+                errors.append(f"{mrid}: occurrence_it without it")
+            if "n" in it and "person" not in it:
+                errors.append(f"{mrid}: n needs a person")
+            elif "person" in it and persons is not None and (it["person"], it.get("n", 1)) not in names:
+                who = it["person"] + (f"#{it['n']}" if "n" in it else "")
+                errors.append(f"{mrid}: no person {who} in data/persons.json")
+            key = (it["la"], it.get("occurrence", 1), it["role"], it.get("person"), it.get("n"))
+            if key in seen:
+                errors.append(f"{mrid}: duplicate item {it['role']} {it['la']!r}")
+            seen.add(key)
     return errors
+
+
+def load_persons(repo_root):
+    """The Latin 2004 persons of each eulogy (data/persons.json); missing file: none."""
+    path = repo_root / "data" / "persons.json"
+    if not path.exists():
+        return {}
+    return json.loads(path.read_text(encoding="utf-8"))["editions"].get(EDITION_LA, {})
 
 # Role cues in the body, used only to list curation candidates.
 CUES = {
@@ -456,6 +515,7 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
         items = [leads[mrid]] if mrid in leads else []
         for it in curated.get(mrid, []):
             cur = {"role": it["role"], "la": it["la"], "source": "curated"}
+            cur |= {k: it[k] for k in ("person", "n", "occurrence", "occurrence_it") if k in it}
             items.append(with_it(cur, it["it"]) if "it" in it else cur)
         if items:
             places[mrid] = items
@@ -476,7 +536,8 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
         "bare": bare,
     }
 
-def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok, texts_it=None):
+def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok, texts_it=None,
+             persons=None):
     places = result["places"]
     assert set(places) <= set(current_ids), f"non-current IDs: {sorted(set(places) - set(current_ids))}"
     assert not set(places) & set(deprecated_ids), "deprecated IDs must not have places"
@@ -517,7 +578,7 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
                 assert it["role"] == expected, f"{mrid}: lead role {it['role']} != {expected} from typology"
     too_long = [mrid for mrid, _ in result["long"] if mrid not in long_ok]
     assert not too_long, f"opening places over {MAX_WORDS} words, not in LONG_LEAD_OK: {too_long}"
-    errors = validate_curated(curated, texts, set(current_ids), leads, texts_it)
+    errors = validate_curated(curated, texts, set(current_ids), leads, texts_it, persons)
     assert not errors, "invalid curated places:\n" + "\n".join(errors)
 
 
@@ -646,7 +707,7 @@ def main():
     result = build(latin_order, texts, typology, curated, not_a_place=NOT_A_PLACE, stop_words=stop_words,
                    texts_it=texts_it, stop_words_it=stop_words_it)
     validate(result, texts, {m for m, _, _ in latin_order}, deprecated, typology, curated,
-             long_ok=LONG_LEAD_OK, texts_it=texts_it)
+             long_ok=LONG_LEAD_OK, texts_it=texts_it, persons=load_persons(repo_root))
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")
     print(f"{len(result['places'])} entries with places; {len(result['unresolved'])} unresolved "

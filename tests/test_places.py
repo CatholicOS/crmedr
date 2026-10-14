@@ -453,14 +453,20 @@ class ItalianAlignmentTest(unittest.TestCase):
 
 
 class CuratedTest(unittest.TestCase):
-    TEXT = {"mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus est."}
+    TEXT = {"mr:0101-a": "Fictopoli in Fictia, sancti Fictitii, qui in Fictonia natus, Fictopoli in Fictia sepultus est."}
+    TEXT_IT = {"mr:0101-a": "A Fictopoli in Fictia, san Fictizio, nato in Fictonia, sepolto a Fictopoli."}
     LEADS = {"mr:0101-a": {"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}}
+    PERSONS = {"mr:0101-a": [{"name": "Fictitius", "where": "text"}, {"name": "Fictitius", "n": 2, "where": "text"}]}
 
     def errors(self, items, mrid="mr:0101-a"):
-        return p.validate_curated({mrid: items}, self.TEXT, {"mr:0101-a"}, self.LEADS)
+        return p.validate_curated({mrid: items}, self.TEXT, {"mr:0101-a"}, self.LEADS, self.TEXT_IT, self.PERSONS)
 
     def test_verbatim_item_is_valid(self):
-        self.assertEqual(self.errors([{"role": "birth", "la": "in Fictonia"}]), [])
+        self.assertEqual(self.errors([{"role": "birth", "la": "in Fictonia", "it": "in Fictonia"}]), [])
+
+    def test_new_roles(self):
+        for role in ("education", "religious_life", "foundation", "exile", "journey", "mention"):
+            self.assertEqual(self.errors([{"role": role, "la": "in Fictonia"}]), [], role)
 
     def test_empty_la_is_rejected(self):
         for la in ("", "   "):
@@ -471,12 +477,48 @@ class CuratedTest(unittest.TestCase):
     def test_invalid_items(self):
         self.assertTrue(self.errors([{"role": "birth", "la": "in Fictlandia"}]))
         self.assertTrue(self.errors([{"role": "nativity", "la": "in Fictonia"}]))
-        self.assertTrue(self.errors([{"role": "death", "la": "Fictopoli in Fictia"}]))
         self.assertTrue(self.errors([{"role": "birth", "la": "in Fictonia", "note": "x"}]))
         self.assertTrue(self.errors([{"role": "birth", "la": "in Fictonia"}], mrid="mr:0102-x"))
         long_text = {"mr:0101-a": "Fictopoli, sancti Ficti, " + " ".join(["in Fictia"] * 7) + "."}
         self.assertTrue(p.validate_curated({"mr:0101-a": [{"role": "birth", "la": " ".join(["in Fictia"] * 7)}]},
                                            long_text, {"mr:0101-a"}, {}))
+
+    def test_repeated_la_needs_an_occurrence(self):
+        msg = "\n".join(self.errors([{"role": "burial", "la": "Fictopoli in Fictia"}]))
+        self.assertIn("printed 2 times", msg)
+        self.assertEqual(self.errors([{"role": "burial", "la": "Fictopoli in Fictia", "occurrence": 2}]), [])
+        self.assertIn("no printing 3", "\n".join(
+            self.errors([{"role": "burial", "la": "Fictopoli in Fictia", "occurrence": 3}])))
+
+    def test_the_opening_printing_is_taken(self):
+        self.assertIn("overlaps the opening place", "\n".join(
+            self.errors([{"role": "burial", "la": "Fictopoli in Fictia", "occurrence": 1}])))
+        self.assertIn("overlaps the opening place", "\n".join(
+            self.errors([{"role": "birth", "la": "in Fictia,", "occurrence": 1}])))
+
+    def test_occurrence_it(self):
+        self.assertIn("occurrence_it without it", "\n".join(
+            self.errors([{"role": "birth", "la": "in Fictonia", "occurrence_it": 1}])))
+        self.assertIn("no printing 2", "\n".join(
+            self.errors([{"role": "birth", "la": "in Fictonia", "it": "in Fictonia", "occurrence_it": 2}])))
+
+    def test_person_and_n(self):
+        self.assertEqual(self.errors([{"role": "birth", "la": "in Fictonia", "person": "Fictitius", "n": 2}]), [])
+        self.assertIn("no person Nemo", "\n".join(
+            self.errors([{"role": "birth", "la": "in Fictonia", "person": "Nemo"}])))
+        self.assertIn("no person Fictitius#3", "\n".join(
+            self.errors([{"role": "birth", "la": "in Fictonia", "person": "Fictitius", "n": 3}])))
+        self.assertIn("n needs a person", "\n".join(self.errors([{"role": "birth", "la": "in Fictonia", "n": 2}])))
+
+    def test_duplicates(self):
+        item = {"role": "birth", "la": "in Fictonia"}
+        self.assertIn("duplicate", "\n".join(self.errors([dict(item), dict(item)])))
+        self.assertEqual(self.errors([dict(item), dict(item, role="education")]), [])
+
+    def test_occurrences(self):
+        self.assertEqual(p.occurrences("aXbXXc", "X"), [1, 3, 4])
+        self.assertEqual(p.occurrences("aXXXb", "XX"), [1])
+        self.assertEqual(p.occurrences("abc", "X"), [])
 
 
 class CueTest(unittest.TestCase):
@@ -594,6 +636,12 @@ class BuildTest(unittest.TestCase):
         self.assertIn("| `mr:0101-a` | birth (natus) | yes |", report)
         self.assertIn("`mr:0101-e`", report)
         self.assertNotIn("Fictitii", report)
+
+    def test_curated_new_keys_are_copied(self):
+        cur = {"mr:0101-a": [{"role": "birth", "la": "in Fictonia", "person": "Fictitius", "occurrence": 1}]}
+        r = p.build(self.ORDER, self.TX, self.TY, cur, not_a_place={})
+        self.assertEqual(r["places"]["mr:0101-a"][1],
+                         {"role": "birth", "la": "in Fictonia", "source": "curated", "person": "Fictitius", "occurrence": 1})
 
 
 if __name__ == "__main__":
