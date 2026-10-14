@@ -36,7 +36,9 @@ from pathlib import Path
 
 from extract_typology import load_texts
 from mentions_italian import ItalianNames, by_position, surname_span
-from mentions_text import back_ref_span, find_person, find_place, fold_map, free, from_utf16, partial_span, utf16
+from extract_places import ROLES
+from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
+                           partial_span, utf16)
 from persons_text import name_key, person_key
 
 
@@ -105,6 +107,16 @@ def nth_note(notes, n):
     return notes[n - 1] if isinstance(n, int) and 1 <= n <= len(notes) else None
 
 
+def role_of(item):
+    """A place item's entry in its mention's roles."""
+    out = {"role": item["role"]}
+    if "person" in item:
+        out["name"] = item["person"]
+        if "n" in item:
+            out["n"] = item["n"]
+    return out
+
+
 def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid):
     """One eulogy's mentions in one edition (code-point offsets), what to review,
     and how each mention was found.
@@ -147,14 +159,22 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         form = item.get(lang)
         if not form:
             continue
-        span, how = find_place(text, form, spans("place", "text")), "as printed"
-        if span is None and "via" in item:
-            span, how = back_ref_span(text, lang), "back-reference"
-        if span is None:
+        if item["source"] == "lead":
+            span, how = find_place(text, form, spans("place", "text")), "as printed"
+            if span is None and "via" in item:
+                span, how = back_ref_span(text, lang), "back-reference"
+        else:
+            span = nth_place(text, form, item.get("occurrence" if lang == "la" else "occurrence_it", 1))
+            how = "as printed"
+        same = next((m for m in mentions if m["kind"] == "place" and span == (m["start"], m["end"])), None)
+        if same is not None:
+            same["roles"].append(role_of(item))
+            continue
+        if span is None or not free(span, spans("place", "text")):
             ask("add_mention", "place", "text", None, f"the place as printed ({form}) was not found",
                 qid=place_qid(item["la"]))
             continue
-        add("place", "text", span, how, qid=place_qid(item["la"]))
+        add("place", "text", span, how, qid=place_qid(item["la"]), roles=[role_of(item)])
 
     # Persons share a name by name_key, as extract_persons.py numbers them ("Tuấn", "Tuân").
     def group(p):
@@ -360,6 +380,8 @@ def from_file(m, src):
         if "n" in m:
             out["n"] = m["n"]
     out["qid"] = m.get("qid")
+    if m.get("roles"):
+        out["roles"] = m["roles"]
     return out
 
 
@@ -374,6 +396,11 @@ def curated_mention(m, items, lang, place_qid, person_qid, source):
         item = next((it for it in items if out["form"] is not None and it.get(lang) == out["form"]),
                     items[0] if len(items) == 1 else None)
         out["qid"] = place_qid(item["la"]) if item else None
+        roles = [role_of(it) for it in items if out["form"] is not None and it.get(lang) == out["form"]]
+        if not roles and item:
+            roles = [role_of(item)]
+        if roles:
+            out["roles"] = roles
     return out
 
 
@@ -439,6 +466,9 @@ def validate(by_edition, source):
                     errors.append(f"{tag}: more than {MAX_FORM_WORDS} words")
                 if (m["kind"] == "person") != bool(m.get("name")):
                     errors.append(f"{tag}: a person needs a name, and a place has none")
+                for r in m.get("roles", []):
+                    if m["kind"] != "place" or r.get("role") not in ROLES:
+                        errors.append(f"{tag}: role {r.get('role')!r} is not a place role")
                 span = (m["start"], m["end"])
                 if not free(span, seen.get(where_key(m["where"]), [])):
                     errors.append(f"{tag}: overlaps another mention")
@@ -457,6 +487,8 @@ def to_file(m, src):
         if "n" in m:
             out["n"] = m["n"]
     out["qid"] = m["qid"]
+    if m.get("roles"):
+        out["roles"] = m["roles"]
     return out
 
 

@@ -87,6 +87,25 @@ def find_place(text, form, taken=()):
     return None
 
 
+def nth_place(text, form, n):
+    """The nth printing of a place designation in `text`: as printed, else after folding."""
+    start, k = text.find(form), 0
+    while start >= 0:
+        k += 1
+        if k == n:
+            return start, start + len(form)
+        start = text.find(form, start + len(form))
+    folded, index = fold_map(text)
+    target = fold_map(form)[0]
+    start, k = (folded.find(target) if target else -1), 0
+    while start >= 0:
+        k += 1
+        if k == n:
+            return to_print(index, start, start + len(target))
+        start = folded.find(target, start + len(target))
+    return None
+
+
 def back_ref_span(text, lang):
     """The opening words that set a eulogy at the place of the one before:
     "Ibídem" or "Item" (Latin); "Sempre a Londra", "Ivi" (Italian, the place's
