@@ -374,6 +374,29 @@ LONG_LEAD_OK = {
 }
 
 
+def _covered(text, items):
+    """Spans of the printings the eulogy's items point at (a lead: its la's first printing)."""
+    spans = []
+    for it in items:
+        found = occurrences(text, it["la"])
+        n = it.get("occurrence", 1)
+        if 0 < n <= len(found):
+            spans.append((found[n - 1], found[n - 1] + len(it["la"])))
+    return spans
+
+
+def unrecorded(texts, places, known):
+    """{id: [la]}: known place designations printed in a eulogy at a printing no item covers."""
+    out = {}
+    for mrid, text in texts.items():
+        spans = _covered(text, places.get(mrid, []))
+        missing = sorted({la for la in known for s in occurrences(text, la)
+                          if not any(a <= s and s + len(la) <= b for a, b in spans)})
+        if missing:
+            out[mrid] = missing
+    return dict(sorted(out.items()))
+
+
 def print_order(entries):
     """(id, month, day) in print order; an entry with no number goes last in its day."""
     ordered = sorted(entries, key=lambda e: (e["month"], e["day"],
@@ -657,6 +680,13 @@ def render_report(result):
         *[f"| `{m}` | {_cue_cell(cues)} | {'yes' if m in result['curated_ids'] else ''} |"
           for m, cues in result["candidates"].items()],
         "",
+        "## Places named but not recorded",
+        "",
+        "Places the gazetteer knows, printed in a eulogy where no place item covers them: "
+        "candidates for body places (see `scripts/body_places.py`).",
+        "",
+        *([f"- `{m}`: {', '.join(las)}" for m, las in result.get("unrecorded", {}).items()] or ["None."]),
+        "",
         "## Entries with no place",
         "",
         ", ".join(f"`{m}`" for m in result["no_place"]) or "None.",
@@ -708,6 +738,10 @@ def main():
                    texts_it=texts_it, stop_words_it=stop_words_it)
     validate(result, texts, {m for m, _, _ in latin_order}, deprecated, typology, curated,
              long_ok=LONG_LEAD_OK, texts_it=texts_it, persons=load_persons(repo_root))
+    gazetteer_path = repo_root / "data" / "gazetteer.json"
+    known = json.loads(gazetteer_path.read_text(encoding="utf-8"))["places"] if gazetteer_path.exists() else {}
+    known = [la for la, g in known.items() if g.get("wikidata") and len(la) > 3]
+    result["unrecorded"] = unrecorded({m: texts[m] for m, _, _ in latin_order}, result["places"], known)
     (repo_root / "data" / "places.json").write_text(render_json(result["places"]), encoding="utf-8")
     (repo_root / "docs" / "places-report.md").write_text(render_report(result), encoding="utf-8")
     print(f"{len(result['places'])} entries with places; {len(result['unresolved'])} unresolved "

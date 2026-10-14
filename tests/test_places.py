@@ -644,5 +644,27 @@ class BuildTest(unittest.TestCase):
                          {"role": "birth", "la": "in Fictonia", "source": "curated", "person": "Fictitius", "occurrence": 1})
 
 
+class UnrecordedTest(unittest.TestCase):
+    def test_known_places_outside_items_are_listed(self):
+        texts = {"mr:0101-a": "Fictopoli, sancti Ficti, qui Romæ natus et Fictopoli sepultus est."}
+        places = {"mr:0101-a": [{"role": "death", "la": "Fictopoli", "source": "lead"}]}
+        known = ["Fictopoli", "Romæ", "Parisiis"]
+        self.assertEqual(p.unrecorded(texts, places, known), {"mr:0101-a": ["Fictopoli", "Romæ"]})
+        places["mr:0101-a"] += [{"role": "birth", "la": "Romæ", "source": "curated"},
+                                {"role": "burial", "la": "Fictopoli", "source": "curated", "occurrence": 2}]
+        self.assertEqual(p.unrecorded(texts, places, known), {})
+
+    def test_a_known_place_inside_a_longer_item_is_covered(self):
+        texts = {"mr:0101-a": "Fictopoli in Fictia, sancti Ficti."}
+        places = {"mr:0101-a": [{"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}]}
+        self.assertEqual(p.unrecorded(texts, places, ["Fictia"]), {})
+
+    def test_report_section(self):
+        r = p.build(BuildTest.ORDER, BuildTest.TX, BuildTest.TY, {}, not_a_place={})
+        r["unrecorded"] = {"mr:0101-a": ["in Fictonia"]}
+        self.assertIn("## Places named but not recorded", p.render_report(r))
+        self.assertIn("- `mr:0101-a`: in Fictonia", p.render_report(r))
+
+
 if __name__ == "__main__":
     unittest.main()
