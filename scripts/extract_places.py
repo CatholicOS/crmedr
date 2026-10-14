@@ -294,6 +294,9 @@ def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=
         lead = leads.get(mrid)
         lead_at = occurrences(texts[mrid], lead["la"])[:1] if lead else []
         lead_span = (lead_at[0], lead_at[0] + len(lead["la"])) if lead_at else None
+        lead_it = lead.get("it") if lead else None
+        lead_at_it = occurrences((texts_it or {}).get(mrid, ""), lead_it)[:1] if lead_it else []
+        lead_span_it = (lead_at_it[0], lead_at_it[0] + len(lead_it)) if lead_at_it else None
         names = {(p["name"], p.get("n", 1)) for p in (persons or {}).get(mrid, [])}
         seen = set()
         for it in entries:
@@ -325,9 +328,11 @@ def validate_curated(curated, texts, current_ids, leads, texts_it=None, persons=
                 elif len(it["it"].split()) > MAX_WORDS_IT:
                     errors.append(f"{mrid}: it has more than {MAX_WORDS_IT} words")
                 else:
-                    _, error = _printing(text_it, it["it"], it.get("occurrence_it"), "it", mrid)
+                    span_it, error = _printing(text_it, it["it"], it.get("occurrence_it"), "it", mrid)
                     if error:
                         errors.append(error)
+                    elif lead_span_it and span_it[0] < lead_span_it[1] and lead_span_it[0] < span_it[1]:
+                        errors.append(f"{mrid}: it {it['it']!r} overlaps the opening place")
             elif "occurrence_it" in it:
                 errors.append(f"{mrid}: occurrence_it without it")
             if "n" in it and "person" not in it:

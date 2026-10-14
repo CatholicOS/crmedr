@@ -396,12 +396,40 @@ def curated_mention(m, items, lang, place_qid, person_qid, source):
         item = next((it for it in items if out["form"] is not None and it.get(lang) == out["form"]),
                     items[0] if len(items) == 1 else None)
         out["qid"] = place_qid(item["la"]) if item else None
-        roles = [role_of(it) for it in items if out["form"] is not None and it.get(lang) == out["form"]]
-        if not roles and item:
-            roles = [role_of(item)]
-        if roles:
-            out["roles"] = roles
     return out
+
+
+def curated_place_roles(ms, items, text, lang):
+    """Set the roles of a curated eulogy's place mentions in its text, by printing:
+    an item marks the mention on the printing it points at (an opening place, the
+    first free printing of its phrase, else a mention printed as it). A body place
+    with no mention on its printing is returned as an add_mention review item."""
+    review = []
+    marks = [m for m in ms if m["kind"] == "place" and m["where"] == "text"]
+    for m in marks:
+        m.pop("roles", None)
+    for item in items:
+        form = item.get(lang)
+        if not form:
+            continue
+        if item["source"] == "lead":
+            span = find_place(text, form) or (back_ref_span(text, lang) if "via" in item else None)
+            m = next((m for m in marks if span == (m["start"], m["end"])), None) or next(
+                (m for m in marks if m["form"] == form and "roles" not in m), None)
+        else:
+            span = nth_place(text, form, item.get("occurrence" if lang == "la" else "occurrence_it", 1))
+            m = next((m for m in marks if span == (m["start"], m["end"])), None)
+        if m is not None:
+            m.setdefault("roles", []).append(role_of(item))
+        elif item["source"] != "lead":
+            review.append({"op": "add_mention", "kind": "place", "where": "text", "start": None, "end": None,
+                           "form": None, "qid": None,
+                           "reasoning": f"the curated mentions have no mark for the place {form}"})
+    if len(items) == 1:
+        for m in marks:
+            if "roles" not in m:
+                m["roles"] = [role_of(items[0])]
+    return review
 
 
 def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated):
@@ -430,6 +458,10 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
                                   lambda w: source_text((texts, notes), mrid, w)) for m in curated[mrid]]
             for m in ms:
                 counts["found"][(m["kind"], m["where"] == "text", "curated")] += 1
+            rv = curated_place_roles(ms, items, texts[mrid], lang)
+            if rv:
+                review[mrid] = rv
+                counts["review"].update(r["op"] for r in rv)
         else:
             ms, rv, hows = eulogy_mentions(texts[mrid], notes.get(mrid, []), items, names, lang=lang,
                                            place_qid=place_qid, person_qid=person_qid)

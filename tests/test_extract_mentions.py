@@ -859,6 +859,24 @@ class PlaceRolesTest(unittest.TestCase):
                                    {"role": "birth", "la": "Romæ", "source": "curated"}])
         self.assertEqual([(r["op"], r["kind"]) for r in review], [("add_mention", "place")])
 
+    def test_curated_mentions_take_roles_by_printing(self):
+        text = "Romæ, sancti Ficti, qui Romæ natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None},
+              {"kind": "place", "where": "text", "start": 24, "end": 28, "form": "Romæ", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Romæ", "source": "curated", "occurrence": 2}]
+        self.assertEqual(em.curated_place_roles(ms, items, text, "la"), [])
+        self.assertEqual([m["roles"] for m in ms], [[{"role": "death"}], [{"role": "birth"}]])
+
+    def test_a_curated_eulogy_missing_a_body_place_is_proposed(self):
+        text = "Romæ, sancti Ficti, qui Parisiis natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Parisiis", "source": "curated"}]
+        review = em.curated_place_roles(ms, items, text, "la")
+        self.assertEqual([(r["op"], r["kind"]) for r in review], [("add_mention", "place")])
+        self.assertEqual(ms[0]["roles"], [{"role": "death"}])
+
     def test_file_round_trip_keeps_roles(self):
         m = {"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": "Q220",
              "roles": [{"role": "birth", "name": "Fictus", "n": 2}]}

@@ -18,7 +18,9 @@ invalid decision applies nothing. Rerun scripts/extract_places.py afterwards.
 import copy
 import datetime
 import json
+import re
 import sys
+import unicodedata
 from pathlib import Path
 
 from extract_places import CURATED_KEYS, EDITION_IT, load_persons, validate_curated
@@ -38,10 +40,42 @@ def new_changeset():
 
 
 def item_of(p):
-    return {k: p[k] for k in CURATED_KEYS if k in p and p[k] is not None}
+    """The curated item of a proposal or decision. A first printing and a first person
+    of a name are the default, so occurrence, occurrence_it and n of 1 are left out:
+    one item, one op id."""
+    return {k: p[k] for k in CURATED_KEYS
+            if k in p and p[k] is not None and not (k in ("occurrence", "occurrence_it", "n") and p[k] == 1)}
+
+
+MAX_REASONING = 300
+QUOTE_WORDS = 4  # a run of this many words of the eulogy is a quotation
+
+
+def _words(s):
+    return re.findall(r"\w+", unicodedata.normalize("NFKD", s).encode("ascii", "ignore").decode().lower())
+
+
+def _grams(words):
+    return {tuple(words[i:i + QUOTE_WORDS]) for i in range(len(words) - QUOTE_WORDS + 1)}
+
+
+def reasoning_errors(mrid, p, texts, texts_it):
+    """The reasoning may quote the place designation, never the eulogy: no run of
+    QUOTE_WORDS words of the Latin or Italian text beyond the place's own words."""
+    reasoning = p.get("reasoning", "")
+    if not isinstance(reasoning, str):
+        return [f"{mrid}: reasoning must be a string"]
+    if len(reasoning) > MAX_REASONING:
+        return [f"{mrid}: reasoning is longer than {MAX_REASONING} characters"]
+    place = _grams(_words(p.get("la", ""))) | _grams(_words(p.get("it", "") or ""))
+    text = _grams(_words(texts.get(mrid, ""))) | _grams(_words(texts_it.get(mrid, "")))
+    if (_grams(_words(reasoning)) & text) - place:
+        return [f"{mrid}: reasoning quotes the text (keep to the place designation)"]
+    return []
 
 
 def op_id(p):
+    p = item_of(p) | {"eulogy": p["eulogy"]}
     parts = [p["eulogy"], p["role"], p["la"]]
     if p.get("occurrence"):
         parts.append(str(p["occurrence"]))
@@ -79,6 +113,10 @@ def check(proposals, curated, review, texts, texts_it, leads, persons):
             continue
         oid = op_id(dict(item, eulogy=mrid))
         if oid in queued or oid in rejected or oid in done:
+            continue
+        quoted = reasoning_errors(mrid, p, texts, texts_it)
+        if quoted:
+            failures += quoted
             continue
         errors = _item_errors(mrid, item, curated, texts, texts_it, leads, persons)
         if errors:

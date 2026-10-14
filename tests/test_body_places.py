@@ -62,6 +62,22 @@ class CheckTest(unittest.TestCase):
         n, failures, _ = run_check([prop(), prop()])
         self.assertEqual(n, 1)
 
+    def test_occurrence_1_and_n_1_are_the_same_item(self):
+        self.assertEqual(bp.op_id(bp.item_of(prop(occurrence=1, occurrence_it=1)) | {"eulogy": "mr:0101-a"}),
+                         bp.op_id(prop()))
+        review = bp.new_changeset()
+        review["rejected"] = [bp.op_id(prop())]
+        self.assertEqual(run_check([prop(occurrence=1)], review=review)[0], 0)
+        self.assertEqual(bp.op_id(prop(occurrence=1, n=1, person="Fictitius")), bp.op_id(prop(person="Fictitius")))
+
+    def test_reasoning_must_not_quote_the_text(self):
+        n, failures, _ = run_check([prop(reasoning="the text says qui in Fictonia natus et")])
+        self.assertEqual(n, 0)
+        self.assertTrue(any("reasoning quotes the text" in f for f in failures), failures)
+        n, failures, _ = run_check([prop(reasoning="x" * 301)])
+        self.assertTrue(any("reasoning is longer than 300" in f for f in failures), failures)
+        self.assertEqual(run_check([prop(reasoning="birth cue right after the place in Fictonia")])[0], 1)
+
     def test_op_id_parts(self):
         self.assertEqual(bp.op_id(prop(occurrence=2, person="Fictitius", n=2)),
                          "mr:0101-a#birth#in Fictonia#2#Fictitius#2")

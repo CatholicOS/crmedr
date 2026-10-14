@@ -496,6 +496,17 @@ class CuratedTest(unittest.TestCase):
         self.assertIn("overlaps the opening place", "\n".join(
             self.errors([{"role": "birth", "la": "in Fictia,", "occurrence": 1}])))
 
+    def test_the_opening_printing_is_taken_in_italian_too(self):
+        leads = {"mr:0101-a": dict(self.LEADS["mr:0101-a"], it="A Fictopoli in Fictia")}
+        text_it = {"mr:0101-a": "A Fictopoli in Fictia, san Fictizio, nato in Fictonia, sepolto a Fictopoli."}
+
+        def errors(item):
+            return "\n".join(p.validate_curated({"mr:0101-a": [item]}, self.TEXT, {"mr:0101-a"}, leads, text_it))
+        base = {"role": "burial", "la": "Fictopoli in Fictia", "occurrence": 2}
+        self.assertIn("it 'A Fictopoli in Fictia' overlaps the opening place", errors(dict(base, it="A Fictopoli in Fictia")))
+        self.assertIn("overlaps the opening place", errors(dict(base, it="Fictopoli", occurrence_it=1)))
+        self.assertEqual(errors(dict(base, it="Fictopoli", occurrence_it=2)), "")
+
     def test_occurrence_it(self):
         self.assertIn("occurrence_it without it", "\n".join(
             self.errors([{"role": "birth", "la": "in Fictonia", "occurrence_it": 1}])))
