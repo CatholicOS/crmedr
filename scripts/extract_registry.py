@@ -2978,10 +2978,14 @@ EDITION_NOTES = {
         for edition, printed in ((EDITION_LA, "Palénæ in Calábria"), (EDITION_IT, "A Palena in Calabria"),
                                  (EDITION_EN, "At Palena in Calabria"))
     },
-    # Printed in the Latin and the English, not in the CEI (PRINT_ONLY_ENTRIES).
+    # Printed in the Latin and the English, not in the CEI (PRINT_ONLY_ENTRIES): the Latin
+    # commemorates the bishop twice, and the CEI keeps only the 14 May eulogy.
     "mr:0104-abrunculus": {
-        EDITION_LA: "Not printed in the Italian (CEI) edition.",
-        EDITION_EN: "Not printed in the Italian (CEI) edition.",
+        edition: (
+            "The same bishop is commemorated on 14 May as Aprunculus (mr:0514-aprunculus); the "
+            "Italian (CEI) edition prints only that eulogy, where it names him Abrúncolo."
+        )
+        for edition in (EDITION_LA, EDITION_EN)
     },
     "mr:0610-marcus-antonius-durando": {
         EDITION_LA: "The Italian (CEI) edition prints this eulogy at 10 December "
