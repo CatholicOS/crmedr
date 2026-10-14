@@ -40,10 +40,13 @@ class CheckTest(unittest.TestCase):
                                          prop(eulogy="mr:0909-x"), prop(confidence="sure", la="Romæ", it="a Roma")])
         self.assertEqual(n, 1)
         self.assertEqual(len(failures), 4)
-        self.assertTrue(any("not verbatim" in f for f in failures))
-        self.assertTrue(any("unknown role" in f for f in failures))
-        self.assertTrue(any("not a current ID" in f for f in failures))
-        self.assertTrue(any("confidence" in f for f in failures))
+        errors = [e for f in failures for e in f["errors"]]
+        self.assertTrue(any("not verbatim" in e for e in errors))
+        self.assertTrue(any("unknown role" in e for e in errors))
+        self.assertTrue(any("not a current ID" in e for e in errors))
+        self.assertTrue(any("confidence" in e for e in errors))
+        self.assertEqual({(f["role"], f["la"]) for f in failures},
+                         {("birth", "in Fictlandia"), ("nativity", "Romæ"), ("birth", "in Fictonia"), ("birth", "Romæ")})
 
     def test_existing_ops_curated_and_rejected_are_not_requeued(self):
         review = bp.new_changeset()
@@ -73,9 +76,9 @@ class CheckTest(unittest.TestCase):
     def test_reasoning_must_not_quote_the_text(self):
         n, failures, _ = run_check([prop(reasoning="the text says qui in Fictonia natus et")])
         self.assertEqual(n, 0)
-        self.assertTrue(any("reasoning quotes the text" in f for f in failures), failures)
+        self.assertTrue(any("reasoning quotes the text" in e for f in failures for e in f["errors"]), failures)
         n, failures, _ = run_check([prop(reasoning="x" * 301)])
-        self.assertTrue(any("reasoning is longer than 300" in f for f in failures), failures)
+        self.assertTrue(any("reasoning is longer than 300" in e for f in failures for e in f["errors"]), failures)
         self.assertEqual(run_check([prop(reasoning="birth cue right after the place in Fictonia")])[0], 1)
 
     def test_op_id_parts(self):
@@ -125,6 +128,71 @@ class ApplyTest(unittest.TestCase):
             self.apply(self.export(birth=("maybe", None)))
         with self.assertRaisesRegex(ValueError, "not a crmedr-changeset/v1"):
             self.apply({"schema": "x", "operations": []})
+
+
+PERSONS2 = {"mr:0101-a": [{"name": "Fictitius", "where": "text"}, {"name": "Fictus", "where": "text"},
+                          {"name": "Fictus", "n": 2, "where": "text"}, {"name": "Notus", "where": {"footnote": 1}}]}
+
+
+class StructuredCheckTest(unittest.TestCase):
+    def test_op_lists_the_persons_of_a_eulogy_with_several(self):
+        review = bp.new_changeset()
+        bp.check([prop()], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS2)
+        self.assertEqual(review["operations"][0]["persons"],
+                         [{"name": "Fictitius"}, {"name": "Fictus"}, {"name": "Fictus", "n": 2}])
+
+    def test_op_has_no_persons_for_a_single_subject(self):
+        _, _, review = run_check([prop()])
+        self.assertNotIn("persons", review["operations"][0])
+
+    def test_final_keeps_failures_once(self):
+        review = bp.new_changeset()
+        for _ in range(2):
+            bp.check([prop(la="in Fictlandia")], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS, final=True)
+        self.assertEqual(len(review["unqueued"]), 1)
+        self.assertEqual({k: review["unqueued"][0][k] for k in ("eulogy", "role", "la")},
+                         {"eulogy": "mr:0101-a", "role": "birth", "la": "in Fictlandia"})
+
+    def test_a_later_pass_that_queues_it_drops_the_failure(self):
+        review = bp.new_changeset()
+        # same eulogy, role and la; only the Italian is wrong
+        bp.check([prop(it="in Fictlandia")], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS, final=True)
+        self.assertEqual(len(review["unqueued"]), 1)
+        bp.check([prop()], {}, review, TEXTS, TEXTS_IT, LEADS, PERSONS, final=True)
+        self.assertEqual(review["unqueued"], [])
+        self.assertEqual(len(review["operations"]), 1)
+
+    def test_without_final_nothing_is_kept(self):
+        _, _, review = run_check([prop(la="in Fictlandia")])
+        self.assertEqual(review.get("unqueued", []), [])
+
+
+class BriefTest(unittest.TestCase):
+    TEXTS = {"mr:0101-a": "Fictopoli, sancti Fictitii.", "mr:0115-b": "Romæ, sancti B.",
+             "mr:0116-c": "Parisiis, sancti C."}
+    TEXTS_IT = {"mr:0101-a": "A Fictopoli, san Fictizio."}
+
+    def test_half_month(self):
+        self.assertEqual(bp.half_month("01", "a"), ("0101", "0115"))
+        self.assertEqual(bp.half_month("02", "b"), ("0216", "0231"))
+
+    def test_brief_holds_the_batch_in_order(self):
+        out = bp.brief("0101", "0115", self.TEXTS, self.TEXTS_IT, LEADS, PERSONS,
+                       {"mr:0101-a": [{"role": "birth", "la": "Romæ"}]})
+        self.assertEqual([r["id"] for r in out], ["mr:0101-a", "mr:0115-b"])
+        self.assertEqual(out[0], {"id": "mr:0101-a", "la_text": self.TEXTS["mr:0101-a"],
+                                  "it_text": self.TEXTS_IT["mr:0101-a"],
+                                  "opening": {"la": "Fictopoli", "role": "death"},
+                                  "persons": [{"name": "Fictitius"}],
+                                  "curated": [{"role": "birth", "la": "Romæ"}]})
+        self.assertEqual((out[1]["it_text"], out[1]["opening"], out[1]["persons"]), ("", None, []))
+
+    def test_brief_refuses_a_path_in_the_repository(self):
+        repo = Path(__file__).resolve().parent.parent
+        with self.assertRaises(SystemExit) as cm:
+            bp.main(["brief", "01a", str(repo / "data" / "brief.json"), "/nonexistent"])
+        self.assertIn("outside the repository", str(cm.exception.code))
+        self.assertFalse((repo / "data" / "brief.json").exists())
 
 
 if __name__ == "__main__":

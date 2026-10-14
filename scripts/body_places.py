@@ -6,8 +6,16 @@ A body place is a place a eulogy names outside its opening place, with its role
 nothing is decided until a person reviews it in martyrology-frontend.
 
 Usage:
-  python3 scripts/body_places.py check <proposals.json> /path/to/martyrology-texts [repo_root]
+  python3 scripts/body_places.py brief <MMa|MMb> <out.json> /path/to/martyrology-texts [repo_root]
+  python3 scripts/body_places.py check [--final] <proposals.json> /path/to/martyrology-texts [repo_root]
   python3 scripts/body_places.py apply <exported.json> /path/to/martyrology-texts [repo_root]
+
+brief writes what a proposing subagent reads for a half-month (a: days 1-15,
+b: 16-31): the Latin and Italian 2004 texts, the opening place, the persons
+and the curated items of each eulogy. It quotes the 2004 edition, so it is
+written outside the repository (brief refuses a path inside it).
+check --final keeps the proposals that still fail under "unqueued" in
+data/places_review.json, for docs/places-report.md.
 
 check validates each proposal with the rules of data/places_curated.json
 (validate_curated) and queues the valid ones as add_place ops in
@@ -86,6 +94,19 @@ def op_id(p):
     return "#".join(parts)
 
 
+def _text_persons(persons, mrid):
+    return [{"name": p["name"]} | ({"n": p["n"]} if p.get("n", 1) != 1 else {})
+            for p in persons.get(mrid, []) if p.get("where") == "text"]
+
+
+def _failure(p, errors):
+    return {"eulogy": p.get("eulogy"), "role": p.get("role"), "la": p.get("la"), "errors": errors}
+
+
+def _key(f):
+    return (str(f["eulogy"]), str(f["role"]), str(f["la"]))
+
+
 def _item_errors(mrid, item, curated, texts, texts_it, leads, persons):
     """validate_curated on the eulogy's existing items plus this one; only errors this item adds."""
     others = curated.get(mrid, [])
@@ -94,41 +115,61 @@ def _item_errors(mrid, item, curated, texts, texts_it, leads, persons):
             if e not in base]
 
 
-def check(proposals, curated, review, texts, texts_it, leads, persons):
+def check(proposals, curated, review, texts, texts_it, leads, persons, final=False):
     queued = {o["id"] for o in review["operations"]}
     rejected = set(review.get("rejected", []))
     done = {op_id(dict(it, eulogy=m)) for m, items in curated.items() for it in items}
-    failures, added = [], 0
+    failures, added, passed = [], 0, set()
     for p in proposals:
         mrid = p.get("eulogy")
         if mrid not in texts:
-            failures.append(f"{mrid}: not a current ID with a Latin text")
+            failures.append(_failure(p, [f"{mrid}: not a current ID with a Latin text"]))
             continue
         if p.get("confidence") not in CONFIDENCE:
-            failures.append(f"{mrid}: confidence must be one of {', '.join(CONFIDENCE)}")
+            failures.append(_failure(p, [f"{mrid}: confidence must be one of {', '.join(CONFIDENCE)}"]))
             continue
         item = item_of(p)
         if not {"role", "la"} <= set(item):
-            failures.append(f"{mrid}: a proposal needs role and la")
+            failures.append(_failure(p, [f"{mrid}: a proposal needs role and la"]))
             continue
         oid = op_id(dict(item, eulogy=mrid))
         if oid in queued or oid in rejected or oid in done:
+            passed.add(_key(_failure(p, [])))
             continue
-        quoted = reasoning_errors(mrid, p, texts, texts_it)
-        if quoted:
-            failures += quoted
-            continue
-        errors = _item_errors(mrid, item, curated, texts, texts_it, leads, persons)
+        errors = reasoning_errors(mrid, p, texts, texts_it) or _item_errors(
+            mrid, item, curated, texts, texts_it, leads, persons)
         if errors:
-            failures += errors
+            failures.append(_failure(p, errors))
             continue
-        review["operations"].append({"op": "add_place", "id": oid, "eulogy": mrid, **item,
-                                     "confidence": p["confidence"], "reasoning": p.get("reasoning", ""),
-                                     "decision": None, "edited": None})
+        op = {"op": "add_place", "id": oid, "eulogy": mrid, **item,
+              "confidence": p["confidence"], "reasoning": p.get("reasoning", "")}
+        who = _text_persons(persons, mrid)
+        if len(who) > 1:
+            op["persons"] = who
+        review["operations"].append(op | {"decision": None, "edited": None})
         queued.add(oid)
+        passed.add(_key(_failure(p, [])))
         added += 1
     review["operations"].sort(key=lambda o: o["id"])
+    if final:
+        new = {_key(f): f for f in failures}
+        kept = [f for f in review.get("unqueued", []) if _key(f) not in new and _key(f) not in passed]
+        review["unqueued"] = sorted(kept + list(new.values()), key=_key)
     return added, failures
+
+
+def half_month(mm, half):
+    return (f"{mm}01", f"{mm}15") if half == "a" else (f"{mm}16", f"{mm}31")
+
+
+def brief(first, last, texts, texts_it, leads, persons, curated):
+    out = []
+    for mrid in sorted(m for m in texts if first <= m[3:7] <= last):
+        lead = leads.get(mrid)
+        out.append({"id": mrid, "la_text": texts[mrid], "it_text": texts_it.get(mrid, ""),
+                    "opening": {k: lead[k] for k in ("la", "it", "role") if k in lead} if lead else None,
+                    "persons": _text_persons(persons, mrid), "curated": curated.get(mrid, [])})
+    return out
 
 
 def apply(exported, curated, review, texts, texts_it, leads, persons):
@@ -187,16 +228,34 @@ def _write(repo_root, curated, review):
 
 
 def main(argv):
-    if len(argv) < 3 or argv[0] not in ("check", "apply"):
+    final = "--final" in argv
+    argv = [a for a in argv if a != "--final"]
+    cmds = {"brief": 4, "check": 3, "apply": 3}
+    if not argv or argv[0] not in cmds or len(argv) < cmds[argv[0]]:
         sys.exit(__doc__)
-    cmd, path, texts_repo = argv[0], Path(argv[1]), Path(argv[2])
+    cmd = argv[0]
+    if cmd == "brief":
+        which, out, texts_repo = argv[1], Path(argv[2]), Path(argv[3])
+        repo_root = Path(argv[4]) if len(argv) > 4 else Path(__file__).resolve().parent.parent
+        if out.resolve().is_relative_to(repo_root.resolve()):
+            sys.exit(f"{out}: a brief quotes the 2004 edition; write it outside the repository")
+        if not re.fullmatch(r"(0[1-9]|1[0-2])[ab]", which):
+            sys.exit(f"{which}: expected MMa or MMb (e.g. 01a)")
+        curated, _, texts, texts_it, leads, persons = _load(repo_root, texts_repo)
+        records = brief(*half_month(which[:2], which[2]), texts, texts_it, leads, persons, curated)
+        out.write_text(json.dumps({"batch": which, "eulogies": records}, ensure_ascii=False, indent=1) + "\n",
+                       encoding="utf-8")
+        print(f"{len(records)} eulogies in {out}")
+        return 0
+    path, texts_repo = Path(argv[1]), Path(argv[2])
     repo_root = Path(argv[3]) if len(argv) > 3 else Path(__file__).resolve().parent.parent
     curated, review, texts, texts_it, leads, persons = _load(repo_root, texts_repo)
     doc = json.loads(path.read_text(encoding="utf-8"))
     if cmd == "check":
-        added, failures = check(doc["proposals"], curated, review, texts, texts_it, leads, persons)
+        added, failures = check(doc["proposals"], curated, review, texts, texts_it, leads, persons, final=final)
         _write(repo_root, curated, review)
-        print("\n".join(failures))
+        for f in failures:
+            print(f"{f['eulogy']} [{f['role']} {f['la']!r}]: " + "; ".join(f["errors"]))
         print(f"{added} queued; {len(failures)} failed; {len(review['operations'])} awaiting review")
         return 1 if failures else 0
     try:
