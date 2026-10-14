@@ -143,7 +143,8 @@ class CheckTest(unittest.TestCase):
     def test_check_reports_a_stale_country(self):
         with tempfile.TemporaryDirectory() as d:
             root = Path(d)
-            for rel in ("data/martyrology_ids.json", "data/gazetteer.json", "data/countries_curated.json"):
+            for rel in ("data/martyrology_ids.json", "data/gazetteer.json", "data/countries_curated.json",
+                        "data/places.json"):
                 (root / rel).parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy(ROOT / rel, root / rel)
             shutil.copytree(ROOT / "registry", root / "registry")
@@ -156,6 +157,26 @@ class CheckTest(unittest.TestCase):
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(rp.main([str(root)]), 0)
             self.assertEqual(rp.main(["--check", str(root)]), 0)
+
+    def test_places_come_from_places_json(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            for rel in ("data/martyrology_ids.json", "data/gazetteer.json", "data/countries_curated.json",
+                        "data/places.json"):
+                (root / rel).parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(ROOT / rel, root / rel)
+            shutil.copytree(ROOT / "registry", root / "registry")
+            places = json.loads((root / "data/places.json").read_text(encoding="utf-8"))
+            places["places"]["mr:0101-basilius"].append({"role": "birth", "la": "Cæsaréæ", "source": "curated"})
+            (root / "data/places.json").write_text(json.dumps(places, ensure_ascii=False, indent=2) + "\n",
+                                                   encoding="utf-8")
+            self.assertEqual(rp.main(["--check", str(root)]), 1)
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(rp.main([str(root)]), 0)
+            reg = json.loads((root / "data/martyrology_ids.json").read_text(encoding="utf-8"))
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius")
+            self.assertEqual(e["places"][-1]["la"], "Cæsaréæ")
+
 
 if __name__ == "__main__":
     unittest.main()

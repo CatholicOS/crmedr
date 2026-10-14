@@ -303,5 +303,16 @@ class OrdinalTest(unittest.TestCase):
         self.assertIsNone(mt.find_person("Romæ, sancti Nemónis papæ Décimi Tértii.", "Nemo X"))
 
 
+class NthPlaceTest(unittest.TestCase):
+    def test_nth_printing(self):
+        text = "Romæ natus, Romæ sepultus."
+        self.assertEqual(mt.nth_place(text, "Romæ", 1), (0, 4))
+        self.assertEqual(mt.nth_place(text, "Romæ", 2), (12, 16))
+        self.assertIsNone(mt.nth_place(text, "Romæ", 3))
+
+    def test_folded_fallback(self):
+        self.assertEqual(mt.nth_place("Sempre a Roma, e a Roma.", "A Roma", 2), (17, 23))
+
+
 if __name__ == "__main__":
     unittest.main()

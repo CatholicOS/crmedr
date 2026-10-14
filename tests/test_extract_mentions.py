@@ -27,7 +27,8 @@ class EulogyMentionsTest(unittest.TestCase):
                                        qids={"Basilius": "Q19546"})
         s = BASIL_TEXT.index("Basilíi")
         self.assertEqual(ms, [
-            {"kind": "place", "where": "text", "start": 0, "end": 21, "form": "Cæsaréæ in Cappadócia", "qid": "Q48338"},
+            {"kind": "place", "where": "text", "start": 0, "end": 21, "form": "Cæsaréæ in Cappadócia", "qid": "Q48338",
+             "roles": [{"role": "burial"}]},
             {"kind": "person", "where": "text", "start": s, "end": s + 7, "form": "Basilíi", "name": "Basilius",
              "qid": "Q19546"},
         ])
@@ -39,7 +40,7 @@ class EulogyMentionsTest(unittest.TestCase):
                  "via": "mr:0101-x"}
         ms, _, hows = mentions_of("Sempre a Londra, beato Tommaso, sacerdote.", [place], lang="it")
         self.assertEqual(ms, [{"kind": "place", "where": "text", "start": 0, "end": 15, "form": "Sempre a Londra",
-                               "qid": "Q84"}])
+                               "qid": "Q84", "roles": [{"role": "death"}]}])
         self.assertEqual(hows, [("place", True, "back-reference")])
 
     def test_a_place_without_a_form_in_this_language_is_not_expected(self):
@@ -535,7 +536,7 @@ def write(path, doc):
     path.write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
 
 
-ALLOWED_STRINGS = {"kind", "qid", "name", "check", "where"}
+ALLOWED_STRINGS = {"kind", "qid", "name", "check", "where", "role"}
 
 
 def no_printed_words(doc):
@@ -822,6 +823,72 @@ class ApplyCommandTest(unittest.TestCase):
             with self.assertRaises(SystemExit):
                 run_main(["apply", str(exported), str(texts), str(repo), "--review", str(Path(d) / "r.json")])
             self.assertFalse((repo / "data" / "mentions_curated.json").exists())
+
+
+class PlaceRolesTest(unittest.TestCase):
+    def mentions(self, text, places):
+        ms, review, _ = em.eulogy_mentions(text, [], places, [], lang="la",
+                                           place_qid=lambda la: None, person_qid=lambda k: None)
+        return [m for m in ms if m["kind"] == "place"], review
+
+    def test_lead_and_body_roles(self):
+        ms, review = self.mentions("Fictopoli, sancti Ficti, qui Romæ natus est.",
+                                   [{"role": "death", "la": "Fictopoli", "source": "lead"},
+                                    {"role": "birth", "la": "Romæ", "source": "curated", "person": "Fictus"}])
+        self.assertEqual([(m["form"], m["roles"]) for m in ms],
+                         [("Fictopoli", [{"role": "death"}]), ("Romæ", [{"role": "birth", "name": "Fictus"}])])
+        self.assertEqual(review, [])
+
+    def test_two_items_on_one_printing_share_a_mention(self):
+        ms, review = self.mentions("Fictopoli, sancti Ficti, qui Romæ natus et sepultus est.",
+                                   [{"role": "death", "la": "Fictopoli", "source": "lead"},
+                                    {"role": "birth", "la": "Romæ", "source": "curated"},
+                                    {"role": "burial", "la": "Romæ", "source": "curated"}])
+        self.assertEqual([m["roles"] for m in ms], [[{"role": "death"}], [{"role": "birth"}, {"role": "burial"}]])
+        self.assertEqual(review, [])
+
+    def test_occurrence_picks_the_printing(self):
+        ms, _ = self.mentions("Romæ, sancti Ficti, qui Romæ natus est.",
+                              [{"role": "death", "la": "Romæ", "source": "lead"},
+                               {"role": "birth", "la": "Romæ", "source": "curated", "occurrence": 2}])
+        self.assertEqual([(m["start"], m["roles"][0]["role"]) for m in ms], [(0, "death"), (24, "birth")])
+
+    def test_unfound_body_place_is_proposed(self):
+        _, review = self.mentions("Fictopoli, sancti Ficti.",
+                                  [{"role": "death", "la": "Fictopoli", "source": "lead"},
+                                   {"role": "birth", "la": "Romæ", "source": "curated"}])
+        self.assertEqual([(r["op"], r["kind"]) for r in review], [("add_mention", "place")])
+
+    def test_curated_mentions_take_roles_by_printing(self):
+        text = "Romæ, sancti Ficti, qui Romæ natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None},
+              {"kind": "place", "where": "text", "start": 24, "end": 28, "form": "Romæ", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Romæ", "source": "curated", "occurrence": 2}]
+        self.assertEqual(em.curated_place_roles(ms, items, text, "la"), [])
+        self.assertEqual([m["roles"] for m in ms], [[{"role": "death"}], [{"role": "birth"}]])
+
+    def test_a_curated_eulogy_missing_a_body_place_is_proposed(self):
+        text = "Romæ, sancti Ficti, qui Parisiis natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Parisiis", "source": "curated"}]
+        review = em.curated_place_roles(ms, items, text, "la")
+        self.assertEqual([(r["op"], r["kind"]) for r in review], [("add_mention", "place")])
+        self.assertEqual(ms[0]["roles"], [{"role": "death"}])
+
+    def test_file_round_trip_keeps_roles(self):
+        m = {"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": "Q220",
+             "roles": [{"role": "birth", "name": "Fictus", "n": 2}]}
+        out = em.to_file(m, "Romæ natus")
+        self.assertEqual(list(out), ["kind", "where", "start", "end", "check", "qid", "roles"])
+        self.assertEqual(em.from_file(out, "Romæ natus")["roles"], m["roles"])
+
+    def test_validate_rejects_an_unknown_role(self):
+        m = {"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None,
+             "roles": [{"role": "nativity"}]}
+        errors = em.validate({"la": {"mr:0101-a": [m]}}, lambda e, i, w: "Romæ natus")
+        self.assertTrue(any("role" in e for e in errors), errors)
 
 
 if __name__ == "__main__":
