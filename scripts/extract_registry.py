@@ -2978,6 +2978,14 @@ EDITION_NOTES = {
         for edition, printed in ((EDITION_LA, "Palénæ in Calábria"), (EDITION_IT, "A Palena in Calabria"),
                                  (EDITION_EN, "At Palena in Calabria"))
     },
+    # Bl. Raphael Chyliński: the Latin and the CEI misspell Łagiewniki (the English has it right).
+    "mr:1202-melchior-chylinski": {
+        edition: (
+            "Name error: \"Logiewniki\" for Łagiewniki, now a district of Łódź, where Raphael "
+            "Chyliński died in the Franciscan friary."
+        )
+        for edition in (EDITION_LA, EDITION_IT)
+    },
     # Printed in the Latin and the English, not in the CEI (PRINT_ONLY_ENTRIES): the Latin
     # commemorates the bishop twice, and the CEI keeps only the 14 May eulogy.
     "mr:0104-abrunculus": {

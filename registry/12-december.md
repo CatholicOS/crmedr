@@ -25,7 +25,7 @@
 | 2 | 5 | `mr:1202-silverius` |  | IT | dies_natalis | same as `mr:0620-silverius` | 2004 Italian: Translation error: "Palmarola in Liguria" where the Latin "ínsula Palmária" is Palmarola in the Pontine Islands, off Lazio, not in Liguria. |
 | 2 | 6 | `mr:1202-ioannes-ruysbroeck` | * | BE | dies_natalis |  |  |
 | 2 | 7 | `mr:1202-maria-angela-astorch` | * | ES | dies_natalis |  |  |
-| 2 | 8 | `mr:1202-melchior-chylinski` | * | PL | dies_natalis |  |  |
+| 2 | 8 | `mr:1202-melchior-chylinski` | * | PL | dies_natalis |  | 2004 Latin: Name error: "Logiewniki" for Łagiewniki, now a district of Łódź, where Raphael Chyliński died in the Franciscan friary. 2004 Italian: Name error: "Logiewniki" for Łagiewniki, now a district of Łódź, where Raphael Chyliński died in the Franciscan friary. |
 | 2 | 9 | `mr:1202-ivanus-slezyuk` | * | UA | dies_natalis |  |  |
 | 3 | (1) | `mr:1203-franciscus-xavier` |  | ES | dies_natalis | same as `mr:1202-franciscus-xaverius` |  |
 | 3 | 2 | `mr:1203-sophonias-propheta` |  | PS | commemoratio |  |  |
