@@ -1,0 +1,11 @@
+{
+  "schema": "crmedr-changeset/v1",
+  "generated_by": "scripts/body_places.py",
+  "generated_at": "2026-10-14",
+  "base": {
+    "edition": "martyrologium_romanum_2004",
+    "registry": "data/places_curated.json"
+  },
+  "operations": [],
+  "rejected": []
+}
