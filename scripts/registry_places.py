@@ -11,9 +11,13 @@ untouched. No private source and no network are needed.
 Usage:
   python3 scripts/registry_places.py [--check] [repo_root]
 
+It also copies each current entry's places from data/places.json into the
+registry, so new places reach it without the workbook.
+
 --check writes nothing and fails when the committed registry differs from what
-the script would write (rerun it after build_gazetteer.py apply or after editing
-data/gazetteer.json or data/countries_curated.json).
+the script would write (rerun it after extract_places.py, after
+build_gazetteer.py apply, or after editing data/gazetteer.json or
+data/countries_curated.json).
 """
 import json
 import sys
@@ -110,7 +114,9 @@ def load(repo_root):
     registry = json.loads((data / "martyrology_ids.json").read_text(encoding="utf-8"))
     gazetteer = json.loads((data / "gazetteer.json").read_text(encoding="utf-8"))["places"]
     curated = json.loads((repo_root / CURATED).read_text(encoding="utf-8"))["countries"]
-    return registry["entries"], gazetteer, curated
+    entries = registry["entries"]
+    places = reg.load_places(repo_root, {e["id"] for e in entries if not e.get("deprecated")})
+    return reg.add_places(entries, places), gazetteer, curated
 
 
 def render(entries, repo_root):
