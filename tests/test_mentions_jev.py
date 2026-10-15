@@ -109,5 +109,81 @@ class CandidatesTest(unittest.TestCase):
         self.assertEqual(pompea["at"], ctx.index("Pompea"))
 
 
+import mentions_italian as mi  # noqa: E402
+
+NAMES = mi.ItalianNames({"mr:0101-a": "Sanctae Pompeia et Potamia"}, {"mr:0101-a": "Sante Pompea e Potamia"})
+PERSONS = [{"name": "Potamia", "where": FN}, {"name": "Pompeia", "where": FN}, {"name": "Rodana", "where": FN}]
+LATIN = [{"kind": "person", "where": FN, "name": n, "start": i} for i, n in enumerate(["Potamia", "Pompeia", "Rodana"])]
+
+
+class RequestTest(unittest.TestCase):
+    def test_a_span_card_asks_one_choice_over_its_candidates_and_none(self):
+        op = card("Pompeia was not found by name: proposed by its place in the list")
+        body, cands = mj.request_for(op, PERSONS, LATIN, [mark("Potamia", op["context"], "Potamia")], NAMES)
+        self.assertEqual(body["model"], "jev-1.14.0")
+        self.assertEqual(list(body["questions"]), ["span"])
+        q = body["questions"]["span"]
+        self.assertEqual(q["type"], "choice")
+        self.assertEqual(list(q["criteria"]), [c["id"] for c in cands] + ["none"])
+        state = body["state"]
+        self.assertEqual(state["person"], {"latin_name": "Pompeia", "italian_forms": ["Pompea", "Pompeia"]})
+        self.assertEqual(state["where"], "footnote 1")
+        self.assertEqual(state["proposed"], "Pompea")
+        self.assertEqual(state["neighbours"]["before"], {"latin_name": "Potamia", "marked_as": "Potamia"})
+        self.assertEqual(state["candidates"], {c["id"]: {"words": c["words"], "at": c["at"]} for c in cands})
+        self.assertEqual([p["latin_name"] for p in state["persons_in_this_place"]], ["Potamia", "Pompeia", "Rodana"])
+
+    def test_a_repeat_card_asks_the_identity_choice_without_candidates(self):
+        op = card("Pothinus matched again: mark it if it names this person once more", name="Pothinus",
+                  form="Potino", context="il nonagenario vescovo Potino rese", where="text")
+        body, cands = mj.request_for(op, [{"name": "Pothinus", "where": "text"}], [], [], NAMES)
+        self.assertEqual(list(body["questions"]), ["identity"])
+        self.assertEqual(list(body["questions"]["identity"]["criteria"]),
+                         ["same_person", "another_person", "not_this_person"])
+        self.assertNotIn("candidates", body["state"])
+        self.assertEqual(cands, [])
+
+    def test_out_of_scope_or_no_candidate_gives_no_request(self):
+        self.assertEqual(mj.request_for(card("Pompeia is named inside a place phrase"), PERSONS, LATIN, [], NAMES),
+                         (None, []))
+        op = card("Helpis was not found", name="Helpis", form=None, context="sono: santi e martiri")
+        self.assertEqual(mj.request_for(op, PERSONS, LATIN, [], NAMES), (None, []))
+
+
+def choice(pick, probabilities, confidence=0.9):
+    return {"type": "choice", "choice": pick, "probabilities": probabilities, "confidence": confidence}
+
+
+class SuggestionTest(unittest.TestCase):
+    def setUp(self):
+        self.op = card("Pompeia was not found by name: proposed by its place in the list")
+        self.cands = mj.candidates(self.op, [mark("Potamia", self.op["context"], "Potamia"),
+                                             mark("Rodana", self.op["context"], "Rodana")])
+
+    def test_the_proposed_candidate_is_an_accept(self):
+        s = mj.suggestion(self.op, choice("c1", {"c1": 0.93, "c2": 0.05, "none": 0.02}), self.cands, "jev-1.14.0")
+        self.assertEqual(s, {"decision": "accept", "probability": 0.93, "confidence": 0.9, "model": "jev-1.14.0"})
+
+    def test_another_candidate_is_an_edit_with_its_span(self):
+        s = mj.suggestion(self.op, choice("c2", {"c1": 0.1, "c2": 0.85, "none": 0.05}), self.cands, "jev-1.14.0")
+        c2 = self.cands[1]
+        self.assertEqual((s["decision"], s["start"], s["end"], s["form"]), ("edit", c2["start"], c2["end"], "Biblis"))
+
+    def test_none_is_a_reject(self):
+        s = mj.suggestion(self.op, choice("none", {"c1": 0.1, "c2": 0.1, "none": 0.8}), self.cands, "jev-1.14.0")
+        self.assertEqual(s["decision"], "reject")
+
+    def test_repeat_answers(self):
+        op = card("Pothinus matched again: mark it if it names this person once more", name="Pothinus",
+                  form="Potino", context="vescovo Potino rese", where="text")
+        probs = {"same_person": 0.8, "another_person": 0.15, "not_this_person": 0.05}
+        self.assertEqual(mj.suggestion(op, choice("same_person", probs), [], "m")["decision"], "accept")
+        self.assertEqual(mj.suggestion(op, choice("another_person", probs), [], "m")["decision"], "reject")
+        self.assertEqual(mj.suggestion(op, choice("not_this_person", probs), [], "m")["decision"], "reject")
+
+    def test_an_unknown_option_gives_no_suggestion(self):
+        self.assertIsNone(mj.suggestion(self.op, choice("c9", {"c9": 1.0}), self.cands, "m"))
+        self.assertIsNone(mj.suggestion(self.op, {"type": "noul", "noul": 0.9}, self.cands, "m"))
+
 if __name__ == "__main__":
     unittest.main()

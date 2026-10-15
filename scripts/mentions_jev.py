@@ -100,3 +100,91 @@ def candidates(op, it_marks):
         out.append({"id": f"c{i}", "words": ctx[a:b], "at": a,
                     "start": lo + utf16(ctx, a), "end": lo + utf16(ctx, b)})
     return out
+
+
+IDENTITY = {
+    "type": "choice",
+    "instructions": ("The `person` is already marked earlier in this text or footnote. Do the words `proposed`, "
+                     "printed in `context`, name the same person again?"),
+    "criteria": {
+        "same_person": ("The same person named again. In running text, and in a pair of saints, a name printed "
+                        "again is the same person unless the text says it is another (\"un altro\", \"un'altra\")."),
+        "another_person": ("Another person who bears the same name: the text says so (\"un altro Dionigi\"), or the "
+                           "name is printed again in a list of martyrs, where a repeated name is always a different "
+                           "person."),
+        "not_this_person": ("Not this person at all: an institution, church, order or place named after the saint "
+                            "(\"l'Ordine Ospedaliero di San Giovanni di Dio\"), a title, or a different saint of the "
+                            "same name named for comparison."),
+    },
+}
+
+
+def span_question(cands):
+    criteria = {c["id"]: f"the words \"{c['words']}\" (at character {c['at']} of `context`)" for c in cands}
+    criteria["none"] = ("No candidate names this person: they are not printed in this context, or only inside a "
+                        "longer name of someone else.")
+    return {
+        "type": "choice",
+        "instructions": ("Which of the `candidates` are the words that name the `person` in this Italian text: the "
+                         "person of that Latin name (and number `n`, when given) among `persons_in_this_place`, "
+                         "printed in the Latin order, so between the `neighbours`? Answer none if no candidate "
+                         "names them."),
+        "criteria": criteria,
+    }
+
+
+def request_for(op, persons, latin_marks, it_marks, names):
+    """The request for one card and its candidates; (None, []) when the card is out of scope, or a
+    span card whose context holds no candidate."""
+    kind = card_kind(op)
+    if kind is None:
+        return None, []
+    ordered = place_persons(op, persons, latin_marks)
+    person = {"latin_name": op["name"]}
+    if op.get("n"):
+        person["n"] = op["n"]
+    person["italian_forms"] = names.forms(op["eulogy"], op["name"])[:4]
+    where = "text" if op["where"] == "text" else f"footnote {op['where']['footnote']}"
+    state = {
+        "eulogy": op["eulogy"],
+        "where": where,
+        "person": person,
+        "persons_in_this_place": [{"latin_name": p["name"], **({"n": p["n"]} if p.get("n") else {})}
+                                  for p in ordered],
+        "neighbours": neighbours(op, ordered, it_marks),
+        "context": op["context"],
+        "proposed": op.get("form"),
+    }
+    if kind == "repeat":
+        return {"model": MODEL, "state": state, "questions": {"identity": IDENTITY}}, []
+    cands = candidates(op, it_marks)
+    if not cands:
+        return None, []
+    state["candidates"] = {c["id"]: {"words": c["words"], "at": c["at"]} for c in cands}
+    return {"model": MODEL, "state": state, "questions": {"span": span_question(cands)}}, cands
+
+
+REPEAT_DECISIONS = {"same_person": "accept", "another_person": "reject", "not_this_person": "reject"}
+
+
+def suggestion(op, answer, cands, model):
+    """The card's suggestion from Jev's answer, or None when the answer is not a usable choice."""
+    if not isinstance(answer, dict) or answer.get("type") != "choice":
+        return None
+    pick = answer.get("choice")
+    probability = (answer.get("probabilities") or {}).get(pick)
+    if probability is None:
+        return None
+    base = {"probability": round(probability, 4), "confidence": round(answer.get("confidence", 0.0), 4),
+            "model": model}
+    if card_kind(op) == "repeat":
+        decision = REPEAT_DECISIONS.get(pick)
+        return {"decision": decision, **base} if decision else None
+    if pick == "none":
+        return {"decision": "reject", **base}
+    c = next((c for c in cands if c["id"] == pick), None)
+    if c is None:
+        return None
+    if (op.get("start"), op.get("end")) == (c["start"], c["end"]):
+        return {"decision": "accept", **base}
+    return {"decision": "edit", "start": c["start"], "end": c["end"], "form": c["words"], **base}
