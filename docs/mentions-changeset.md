@@ -15,6 +15,7 @@ Common fields, all three operations:
 | `edition`, `eulogy` | The edition and the ID the edition files the text under. A eulogy whose text is filed under its `same_eulogy` twin is listed under the twin's ID, as in `data/mentions.json`. |
 | `where` | `"text"` or `{"footnote": n}`, n counting from 1 in printed order |
 | `kind` | `"person"` or `"place"` |
+| `name`, `n` | For a person: who the mark is, as in `data/persons.json`, the same in every edition (an Italian mark carries the Latin name). `n` numbers the persons of one name in the eulogy from 2 (none for the first): a different `n` is always a different person, never the same one named again. The frontend tints together every mark with the same eulogy, `name` and `n`, in the text, the footnotes and both columns of a comparison; never by `qid`, which most persons lack. |
 | `start`, `end`, `form` | The span in UTF-16 code units and the words as printed; `null` for an `add_mention` with no span |
 | `context`, `context_start` | The words around the span, and the UTF-16 offset in the text (or footnote) at which they begin. The span is at `start - context_start` in `context`. With no span, `context` is the whole text and `context_start` is 0. |
 | `reasoning` | Why it is asked |
