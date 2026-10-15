@@ -35,7 +35,7 @@ from collections import Counter
 from pathlib import Path
 
 from extract_typology import load_texts
-from mentions_italian import ItalianNames, by_position, surname_span
+from mentions_italian import ItalianNames, by_position, runs, surname_span
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
                            partial_span, utf16)
@@ -70,6 +70,22 @@ def with_variant(src, span, taken):
 # What joins two names of one person in print, left out of their marks: "Martíni, cognoménto
 # Sacerdótis", "Kingæ seu Cunegúndis", "Dativus, qui et Sanator".
 JOINER = re.compile(r"\s*,?\s+(?:cogn[oó]m[eé]nto|seu|vel|sive|qu(?:i|ae|æ)\s+et)\s+", re.I)
+
+
+def with_surname_after(src, span, ends, taken):
+    """An Italian match widened to its whole name run when the rest of the run holds one of the
+    person's surname `ends`: the religious name the subject gives ("Amata di Gesù") with the secular
+    name and surname printed after it ("(Maria Rosa) de Gordon"), and a secular name found in its
+    parenthesis ("Emanuele") with the religious name before it; unless those words are taken."""
+    run = next((r for r in runs(src) if r[0] <= span[0] and span[1] < r[1]), None)
+    if run is None or not free((run[0], span[0]), taken) or not free((span[1], run[1]), taken):
+        return span
+    rest = fold_map(src[span[1]:run[1]])[0]
+    if any(re.search(rf"(?<!\w){re.escape(fold_map(e)[0])}(?!\w)", rest) for e in ends):
+        before = src[run[0]:span[0]]
+        # Back to the run's start only from inside its parenthesis: never over an honorific ("Santa").
+        return run if before.count("(") > before.count(")") else (span[0], run[1])
+    return span
 
 
 def name_pieces(src, span):
@@ -200,6 +216,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         name, where, src = p["name"], p["where"], source(p["where"])
         both = spans("place", where) + spans("person", where)
         span, how, _ = found
+        if lang == "it":
+            span = with_surname_after(src, span, p.get("ends", []), both)
         if p.get("also"):
             span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
             if under != name:

@@ -57,6 +57,11 @@ class RunsTest(unittest.TestCase):
                          ["I", "Girolamo da Weert", "Teodorico van der Eem", "Pietro d’Assche", "Cornelio de Wijck",
                           "Maria Anna (Maria Amandina) Giuliani"])
 
+    def test_a_run_goes_on_over_the_e_of_gesu_e_maria(self):
+        # "di Gesù e Maria" is one religious name (or one institution's), never two names.
+        t = "beati Modestino di Gesù e Maria (Nemo) Fictor e Pietro Nemo, sacerdoti."
+        self.assertEqual([t[a:b] for a, b in mi.runs(t)], ["Modestino di Gesù e Maria (Nemo) Fictor", "Pietro Nemo"])
+
     def test_runs_go_on_over_elided_and_long_particles(self):
         t = ("I loro nomi sono: beate Eufrasia dell’Immacolata Concezione (Maria) Nemo, Maria dello Spirito "
              "Santo (Angelica) Fictor, religiose dell’Ordine dei Frati Minori.")
@@ -164,6 +169,34 @@ class ItalianEulogyTest(unittest.TestCase):
         self.assertEqual(at[("Dominicus", 2)], note.rindex("Domenico"))
         self.assertEqual([(r["name"], r["form"]) for r in review], [("Dominicus de Nagasakio", "Domenico da Nagasaki")])
         self.assertIn("its place in the list", review[0]["reasoning"])
+
+    def test_a_religious_name_is_widened_over_the_secular_name_and_surname_after_it(self):
+        # The Italian subject gives the religious name alone ("Amata di Gesù"); the text prints the
+        # secular name and the surname after it, which belong to the mark.
+        mrid = "mr:0716-maria-rosa-de-gordon-et-socii"
+        names = mi.ItalianNames({mrid: "Beatae Maria Rosa de Gordon et socii"}, {mrid: "Beate Amata di Gesù e compagne"})
+        ps = em.italian_persons({mrid: [{"name": "Maria Rosa de Gordon", "where": "text"}]}, names, {}, {})[mrid]
+        for text, form in (("A Orange, beate Amata di Gesù (Maria Rosa) de Gordon e sei compagne, vergini.",
+                            "Amata di Gesù (Maria Rosa) de Gordon"),
+                           ("A Orange, beate Amata di Gesù (Anna) Fictor e sei compagne, vergini.", "Amata di Gesù"),
+                           # an honorific before the run is never taken in
+                           ("A Orange, Santa Amata di Gesù (Maria Rosa) de Gordon, vergine.",
+                            "Amata di Gesù (Maria Rosa) de Gordon")):
+            ms, _, _ = em.eulogy_mentions(text, [], [], ps, lang="it", place_qid=lambda la: None,
+                                          person_qid=lambda key: None)
+            self.assertEqual([m["form"] for m in ms], [form])
+
+    def test_a_secular_name_found_in_its_parenthesis_is_widened_to_the_whole_name(self):
+        mrid = "mr:0723-a-et-socii"
+        names = mi.ItalianNames({"mr:0101-a": "Sanctus Emmanuel"}, {"mr:0101-a": "Sant’Emanuele"})
+        ps = em.italian_persons({mrid: [{"name": "Emmanuel Perez Gimenez", "where": "text"}]}, names, {}, {})[mrid]
+        for text, form in (("Presso Nemo, beati Alfonso (Emanuele) Pérez Giménez, sacerdote, e compagni.",
+                            "Alfonso (Emanuele) Pérez Giménez"),
+                           ("Presso Nemo, beati Germano di Gesù e Maria (Emanuele) Pérez Giménez, sacerdote.",
+                            "Germano di Gesù e Maria (Emanuele) Pérez Giménez")):
+            ms, _, _ = em.eulogy_mentions(text, [], [], ps, lang="it", place_qid=lambda la: None,
+                                          person_qid=lambda key: None)
+            self.assertEqual([m["form"] for m in ms], [form])
 
     def test_a_misprinted_name_is_found_as_printed(self):
         mrid = "mr:0602-a-et-socii"

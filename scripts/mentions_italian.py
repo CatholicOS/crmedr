@@ -122,8 +122,10 @@ def runs(text, taken=()):
                 if start is not None:
                     out.append((start, end))
                 start, end, tail = m.start(), m.end(), m.end()
-        elif joined and w.lower() in PARTICLES:
-            tail = m.end()  # a run may go on past a particle, but never ends on one
+        elif joined and (w.lower() in PARTICLES or (w == "e" and fold(text[start:end]).endswith("gesu")
+                                                     and text[m.end():].lstrip().startswith("Maria"))):
+            # A run may go on past a particle, but never ends on one; "di Gesù e Maria" is one name.
+            tail = m.end()
         else:
             if start is not None:
                 out.append((start, end))
