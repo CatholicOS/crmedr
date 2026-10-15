@@ -192,6 +192,14 @@ class ValidateTest(unittest.TestCase):
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": None, "status": "unresolved"}}}, INDEX))
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "x", "status": "auto"}}}, INDEX))
 
+    def test_every_person_has_a_status_or_a_queued_review(self):
+        good = {"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "Q1", "status": "auto"}}}
+        self.assertEqual(bp.unaccounted(good, INDEX, [{"id": "mr:0206-paulus-miki-et-socii|Thomas Kozaki"}]), [])
+        self.assertEqual(bp.unaccounted(good, INDEX, []),
+                         ["mr:0206-paulus-miki-et-socii|Thomas Kozaki: neither a status nor a queued review"])
+        # A person whose lookup failed this run is reported as not processed instead.
+        self.assertEqual(bp.unaccounted(good, INDEX, [], skipped=["mr:0206-paulus-miki-et-socii|Thomas Kozaki"]), [])
+
 
 class NameMatchReviewTest(unittest.TestCase):
     """Final review: a 4-letter prefix matched different names."""
@@ -338,6 +346,56 @@ class SharedItemTest(unittest.TestCase):
                  "mr:0926-eusebius|Eusebius": self._index()["mr:0926-eusebius|Eusebius"]}
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
         self.assertEqual(items["mr:0802-eusebius"]["Eusebius"]["status"], "reviewed")
+
+
+class OneWordListNameTest(unittest.TestCase):
+    """A one-word name in a footnote list (an obscure companion) is automatic only when the item's
+    death date is the eulogy's very day: Cornelius of the martyrs of Lyons matched Pope Cornelius
+    (died in June, the month of 2 June), Kizito of the Uganda martyrs is right (died 3 June)."""
+
+    LISTED = dict(PERSON, eulogy="mr:0602-pothinus-et-socii", name="Cornelius", day="06-02", where={"footnote": 1})
+
+    def test_a_month_only_death_date_is_not_enough(self):
+        r = bp.evaluate(self.LISTED, [cand("Q54798", ["Cornelius"], died="0253-06")])
+        self.assertIsNone(r["auto"])
+        self.assertIn("one-word name in a footnote list", r["failed"][-1])
+
+    def test_no_death_date_is_not_enough_even_without_a_death_rule(self):
+        r = bp.evaluate(dict(self.LISTED, typology="commemoratio"), [cand("Q1", ["Cornelius"], died=None)])
+        self.assertIsNone(r["auto"])
+
+    def test_the_very_day_is_enough(self):
+        kizito = dict(self.LISTED, eulogy="mr:0603-carolus-lwanga-et-socii", name="Kizito", day="06-03")
+        self.assertEqual(bp.evaluate(kizito, [cand("Q3463928", ["Kizito"], died="1886-06-03")])["auto"]["wikidata"],
+                         "Q3463928")
+
+    def test_a_one_word_name_in_the_text_keeps_the_month_rule(self):
+        text = dict(self.LISTED, where="text")
+        self.assertEqual(bp.evaluate(text, [cand("Q54798", ["Cornelius"], died="0253-06")])["auto"]["wikidata"], "Q54798")
+
+    def test_propose_withdraws_an_existing_automatic_match_that_fails_it(self):
+        items = {"mr:0602-pothinus-et-socii": {"Cornelius": {"wikidata": "Q54798", "status": "auto"}}}
+        review = bp.new_changeset([])
+        index = {"mr:0602-pothinus-et-socii|Cornelius": self.LISTED}
+        bp.propose(items, review, index, FakeClient({"Cornelius": [cand("Q54798", ["Cornelius"], died="0253-06")]}))
+        self.assertNotIn("mr:0602-pothinus-et-socii", items)
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0602-pothinus-et-socii|Cornelius"])
+
+    def test_propose_keeps_a_match_whose_item_the_search_did_not_return(self):
+        # Its date is unchecked: an incomplete search is no reason to withdraw it.
+        items = {"mr:0602-pothinus-et-socii": {"Cornelius": {"wikidata": "Q54798", "status": "auto"}}}
+        review = bp.new_changeset([])
+        index = {"mr:0602-pothinus-et-socii|Cornelius": self.LISTED}
+        bp.propose(items, review, index, FakeClient({"Cornelius": [cand("Q1", ["Cornelius"], died="0300-01-01")]}))
+        self.assertEqual(items["mr:0602-pothinus-et-socii"]["Cornelius"], {"wikidata": "Q54798", "status": "auto"})
+        self.assertEqual(review["operations"], [])
+
+    def test_a_curators_decision_is_never_withdrawn(self):
+        items = {"mr:0602-pothinus-et-socii": {"Cornelius": {"wikidata": "Q54798", "status": "reviewed"}}}
+        review = bp.new_changeset([])
+        bp.propose(items, review, {"mr:0602-pothinus-et-socii|Cornelius": self.LISTED},
+                   FakeClient({"Cornelius": [cand("Q54798", ["Cornelius"], died="0253-06")]}))
+        self.assertEqual(items["mr:0602-pothinus-et-socii"]["Cornelius"]["status"], "reviewed")
 
 
 class RepeatedNamesTest(unittest.TestCase):

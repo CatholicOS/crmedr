@@ -131,6 +131,22 @@ class SummarizeTest(unittest.TestCase):
         self.assertIsNone(pd.summarize_details(RAW, {"Basil.jpg": {"Artist": {"value": "X"}}})["image"])
         self.assertIsNone(pd.summarize_details(RAW, {})["image"])
 
+    def test_a_creative_commons_link_from_the_license_code(self):
+        # Commons sometimes drops LicenseUrl and keeps only the License code.
+        credit = {"LicenseShortName": {"value": "CC BY-SA 4.0"}, "License": {"value": "cc-by-sa-4.0"}}
+        self.assertEqual(pd.summarize_details(RAW, {"Basil.jpg": credit})["image"]["license_url"],
+                         "https://creativecommons.org/licenses/by-sa/4.0")
+        for code, url in (("cc-by-2.0-de", "https://creativecommons.org/licenses/by/2.0/de"),
+                          ("cc-zero", "https://creativecommons.org/publicdomain/zero/1.0"),
+                          ("pd", None), (None, None)):
+            self.assertEqual(pd.license_url_from_code(code), url, code)
+
+    def test_a_given_license_url_wins(self):
+        credit = {"LicenseShortName": {"value": "CC BY-SA 2.0 de"}, "License": {"value": "cc-by-sa-2.0-de"},
+                  "LicenseUrl": {"value": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"}}
+        self.assertEqual(pd.summarize_details(RAW, {"Basil.jpg": credit})["image"]["license_url"],
+                         "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en")
+
     def test_a_bare_item(self):
         self.assertEqual(pd.summarize_details({"id": "Q1"}, {}),
                          {"description": {}, "born": None, "died": None, "image": None, "wikipedia": {}})
