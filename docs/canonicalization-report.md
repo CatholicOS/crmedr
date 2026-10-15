@@ -1202,6 +1202,9 @@ intended:
   *deposizione*.
 - Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for
   *commemorazione*.
+- Italian (CEI) edition, June 2, footnote to entry 2 (mr:0602-pothinus-et-socii): "Emillia" for
+  *Emilia* in the list of the martyrs of Lyons (the Latin has *Æmilia*), verified on the page
+  image (p. 443) and in its OCR layer.
 - Italian (CEI) edition, also inside quoted place designations (`places[].it` keeps
   the printed form):
   - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
