@@ -1992,6 +1992,40 @@
       "pt": "Papa Anacleto"
     }
   },
+  "Q80513": {
+    "description": {
+      "en": "Roman Catholic saint, martyr and patron saint of music",
+      "it": "martire santa patrona della musica, degli strumentisti e dei cantanti",
+      "fr": "sainte chrétienne patronne des musiciens",
+      "de": "römische Märtyrerin, christliche Heilige und Patronin der Musik",
+      "es": "santa cristiana y patrona de la música",
+      "pt": "santa cristã, padroeira dos músicos"
+    },
+    "born": {
+      "year": 200,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 230,
+      "precision": "year",
+      "circa": true
+    },
+    "image": {
+      "file": "Vouet, Simon - Saint Cecilia - c. 1626.jpg",
+      "author": "Simon Vouet",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Cecilia of Rome",
+      "it": "Santa Cecilia",
+      "fr": "Cécile de Rome",
+      "de": "Cäcilia von Rom",
+      "es": "Cecilia de Roma",
+      "pt": "Cecília de Roma"
+    }
+  },
   "Q81647": {
     "description": {
       "en": "Bishop of Rome from c. 126 to c. 137",
@@ -7771,6 +7805,39 @@
       "fr": "Libère Wagner",
       "de": "Liborius Wagner",
       "es": "Liborio Wagner"
+    }
+  },
+  "Q315312": {
+    "description": {
+      "en": "Bishop of Naples (232-305)",
+      "it": "vescovo e martire campano, patrono di Napoli",
+      "fr": "saint martyr (en 305) reconnu par les traditions catholique et orthodoxe",
+      "de": "Bischof und Märtyrer",
+      "es": "santo obispo mártir para las iglesias católica y ortodoxa"
+    },
+    "born": {
+      "year": 272,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 305,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Januarius.jpg",
+      "author": "Louis Finson",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Januarius",
+      "it": "San Gennaro",
+      "fr": "Janvier de Bénévent",
+      "de": "Januarius",
+      "es": "Jenaro de Nápoles",
+      "pt": "Januário de Benevento"
     }
   },
   "Q315640": {
@@ -16998,6 +17065,36 @@
       "de": "Giovanni Marinoni"
     }
   },
+  "Q1407613": {
+    "description": {
+      "en": "Saint and martyr",
+      "it": "santa berbera",
+      "de": "christliche Märtyrerin"
+    },
+    "born": {
+      "year": 200,
+      "precision": "decade",
+      "circa": false
+    },
+    "died": {
+      "year": 304,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Santa Restituta, busto policromo del 1711.jpg",
+      "author": "Vito Calise at Italian Wikipedia",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Restituta",
+      "it": "Restituta d'Africa",
+      "fr": "Restitude d'Afrique",
+      "de": "Restituta von Afrika",
+      "es": "Restituta"
+    }
+  },
   "Q1442116": {
     "description": {
       "en": "Portuguese visionary and Roman Catholic saint (1908–1919)",
@@ -22255,6 +22352,22 @@
       "fr": "Augustin Pak Chong-won"
     }
   },
+  "Q4383206": {
+    "description": {
+      "en": "4th century abbot",
+      "fr": "abbé et saint chrétien"
+    },
+    "born": null,
+    "died": {
+      "year": 380,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "es": "Publio de Zeugma"
+    }
+  },
   "Q4422142": {
     "description": {
       "en": "Italian nun (1439-1491)",
@@ -25827,6 +25940,19 @@
       "en": "Amato Ronconi",
       "it": "Amato Ronconi",
       "fr": "Aimé Ronconi"
+    }
+  },
+  "Q17316775": {
+    "description": {
+      "en": "saint martyred under Maximian",
+      "de": "christlicher Märtyrer, Stadtpatron von Nantes"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "fr": "Rogatien de Nantes",
+      "de": "Rogatian"
     }
   },
   "Q17362323": {
