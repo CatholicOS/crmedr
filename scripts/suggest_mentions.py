@@ -24,9 +24,9 @@ from pathlib import Path
 import mentions_jev as mj
 from mentions_italian import ItalianNames
 
-# Set from the evaluation (docs/superpowers/specs/2026-10-15-jev-mention-suggestions-design.md):
-# 1.0 suggests nothing until then.
-DEFAULT_MIN_CONFIDENCE = 1.0
+# Set from the evaluation of 2026-10-15 (jev-1.14.0; the spec's "Evaluation result"): the lowest
+# threshold at which the curator's own decisions agree at least 95% with a third or more suggested.
+DEFAULT_MIN_CONFIDENCE = 0.9
 THRESHOLDS = [round(0.1 * i, 2) for i in range(10)] + [0.95]
 
 

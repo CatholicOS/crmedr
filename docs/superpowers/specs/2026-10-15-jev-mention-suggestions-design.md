@@ -191,3 +191,27 @@ The `suggested` object on a card:
 - Place, Latin, gazetteer and person-item cards.
 - Live suggestions from the frontend (approach B).
 - Any automatic decision.
+
+## Evaluation result (2026-10-15, jev-1.14.0)
+
+Strict (the curator's decisions, January, February and June): 24 in-scope cards (repeat 7,
+position 10, not found 7). At the chosen threshold, confidence ≥ 0.90: 12 suggested (50%),
+12 agree (100%). Below it the bar is missed (≥ 0.80: 16 suggested, 94% agree), so the
+threshold is 0.90. Of the 5 strict disagreements at any confidence, none reaches 0.90.
+
+Weak (decided by the curator's rules, March–December): 97 cards; at ≥ 0.90, 66 suggested (68%),
+60 agree (91%). The high-confidence disagreements fall in two groups, both for the curator to
+weigh before trusting the suggestions on such cards:
+
+- **Repeat cards the rules reject**: an institution named after the saint accepted as the saint
+  (0308, 0.95), a namesake relative (1226, 0.92; 1122, 0.85), a name printed twice in a list
+  (1124, 0.91), a condensed group (1217, 0.98). The criteria state these cases; the model still
+  misses some.
+- **Spans the candidates cannot hold**: the right words open with a lowercase word ("santo
+  ladrone", "beata Maria Vergine …"), so they are never a name run, and the model picks a
+  sub-span or none with high confidence (0325, 0.97; 0915, 0.98). A wider candidate set
+  (honorific-led runs) would fix this class.
+
+The strict set is small (24 cards, 12 suggested): the threshold should be re-checked as the
+curator decides more cards (each decided file adds to `evaluate`).
+
