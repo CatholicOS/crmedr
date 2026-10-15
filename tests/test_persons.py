@@ -168,6 +168,22 @@ class EulogyPersonsTest(unittest.TestCase):
         self.assertEqual(issues, {"uncertain": [], "skipped": [], "printed_twice": [], "variants_unread": [],
                                   "socii_without_names": False})
 
+    def test_alter_marks_another_person_of_a_name_in_the_text(self):
+        # "alteriúsque Leónis" before the name, "Leóne áltero" after it: another Leo each time.
+        lex = {pt.name_key(w): w for w in ["Paulus", "Leo"]}
+        persons, _ = ep.eulogy_persons(
+            "mr:0628-paulus-et-socii", "Sancti Paulus et socii",
+            "Alexandríæ, sanctórum mártyrum Pauli, Leónis, Heraclídis catechúmeni alteriúsque Leónis, qui passi sunt.",
+            [], lex, {})
+        self.assertEqual(persons, [{"name": "Paulus", "where": "text"}, {"name": "Leo", "where": "text"},
+                                   {"name": "Leo", "n": 2, "where": "text"}])
+        persons, _ = ep.eulogy_persons(
+            "mr:0324-paulus-et-socii", "Sancti Paulus et socii",
+            "Cæsaréæ, sanctórum mártyrum Pauli et Leónis, qui cum sóciis Agápio et Leóne áltero passi sunt.",
+            [], lex, {})
+        self.assertEqual(persons, [{"name": "Paulus", "where": "text"}, {"name": "Leo", "where": "text"},
+                                   {"name": "Leo", "n": 2, "where": "text"}])
+
     def test_a_curated_entry_replaces_extraction(self):
         persons, _ = ep.eulogy_persons("mr:1003-duo-ewaldi", "Duo Ewaldi", "…", [], {},
                                        {"mr:1003-duo-ewaldi": [{"name": "Ewaldus", "where": "text"}]})

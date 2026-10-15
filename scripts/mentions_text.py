@@ -65,7 +65,9 @@ def from_utf16(text, u):
 # The opening words that set a eulogy at the place of the one before it
 # (data/places.json gives such a eulogy `via` and its root's designation).
 BACK_REF_LA = re.compile(r"(?:Ibidem|Item)\b")
-BACK_REF_IT = re.compile(r"(?:(?:Sempre|Ancora)\s|Ivi\b|Nello stesso luogo\b|Nella stessa citta\b)[^,;:]*")
+# "Sempre a Londra" runs on over the place's name; "Ivi" and "Nello stesso luogo" are the whole of it
+# ("Nello stesso luogo commemorazione della beata ...": the words after it name the person).
+BACK_REF_IT = re.compile(r"(?:Sempre|Ancora)\s[^,;:]*|Ivi\b|Nello stesso luogo\b|Nella stessa citta\b")
 
 
 def find_place(text, form, taken=()):

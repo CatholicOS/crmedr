@@ -34,8 +34,11 @@ SPLIT_LA = re.compile(r",\s*|\s+et\s+")
 # "Giusta ed Eredina", "Teofilo e Elladio": "e"/"ed" before a capital joins two names.
 SPLIT_IT = re.compile(r",\s*|\s+ed?\s+(?=[^\W\d_])")
 # The particles a name may hold between its capitalized words ("Teodorico van der Eem").
-PARTICLES = {"de", "da", "di", "del", "della", "dei", "des", "du", "van", "von", "der", "den", "y", "la", "le",
-             "dos", "das", "do", "d’", "d'"}
+PARTICLES = {"de", "da", "di", "del", "della", "dello", "delle", "dei", "degli", "des", "du", "van", "von", "der",
+             "den", "y", "la", "le", "dos", "das", "do", "d’", "d'"}
+# An elided particle and the capitalized word it is printed with ("dell’Immacolata Concezione"): inside a
+# run only, never opening one ("religiose dell’Ordine dei Frati Minori").
+ELIDED = re.compile(r"^(?:dell|dall|nell|sull)['’](?=[^\W\d_])")
 WORD = re.compile(r"\(?[^\W\d_][\w’'\-]*\)?")
 
 
@@ -110,15 +113,19 @@ def runs(text, taken=()):
     for m in WORD.finditer(text):
         w = m.group(0)
         joined = start is not None and text[tail:m.start()].strip() == ""
-        if _capital(w):
+        if joined and ELIDED.match(w) and _capital(ELIDED.sub("", w)):
+            end = tail = m.end()
+        elif _capital(w):
             if joined:
                 end = tail = m.end()
             else:
                 if start is not None:
                     out.append((start, end))
                 start, end, tail = m.start(), m.end(), m.end()
-        elif joined and w.lower() in PARTICLES:
-            tail = m.end()  # a run may go on past a particle, but never ends on one
+        elif joined and (w.lower() in PARTICLES or (w == "e" and fold(text[start:end]).endswith("gesu")
+                                                     and text[m.end():].lstrip().startswith("Maria"))):
+            # A run may go on past a particle, but never ends on one; "di Gesù e Maria" is one name.
+            tail = m.end()
         else:
             if start is not None:
                 out.append((start, end))
@@ -148,14 +155,20 @@ def surname_span(text, ends, taken, given=(), joined=False):
         span = found[0]
         run = next((r for r in runs(text) if r[0] <= span[0] and span[1] <= r[1]), span)
         span = run if free(run, taken) else span
-        starts = [m.end() for m in ITEM_START.finditer(text, 0, span[0])]
-        for at in sorted(starts, reverse=True):
+        for sep in sorted(ITEM_START.finditer(text, 0, span[0]), key=lambda m: m.end(), reverse=True):
+            at = sep.end()
             item = text[at:span[0]]
             # From the item's first capitalized word: an honorific may open it ("beati Germano …").
             cap = next((m for m in WORD.finditer(item) if _capital(m.group(0))), None)
-            name = item[cap.start():] if cap else ""
-            if name and any(fold(name).startswith(fold(g) + " ") for g in given if g):
-                crosses = re.search(r"\sed?\s+\S", text[at + cap.start():span[0]])
+            if cap is None:
+                # The match opens its item: never widened over the item before ("Maria della Pace (Maria
+                # Anna) Giuliani" after "Maria Ermellina … Grivot, "), but over the "e" of a joined name.
+                if joined and not item.strip() and re.fullmatch(r"\s+ed?\s+", sep.group(0)):
+                    continue
+                break
+            name = item[cap.start():]
+            if any(fold(name).startswith(fold(g) + " ") for g in given if g):
+                crosses = re.search(r"\sed?\s", text[at + cap.start():span[0]])
                 if free((at + cap.start(), span[1]), taken) and (joined or not crosses):
                     span = (at + cap.start(), span[1])
                 break
@@ -165,11 +178,19 @@ def surname_span(text, ends, taken, given=(), joined=False):
     return None
 
 
-def by_position(text, ranked, found, taken):
+def _opens_with(run, given):
+    """Whether a name run opens with the given name `given` as a whole word."""
+    run, given = fold(run), fold(given)
+    return run == given or run.startswith(given + " ")
+
+
+def by_position(text, ranked, found, taken, given=None):
     """Spans proposed for the persons of one footnote list left unfound, by print order: `ranked`
     lists the list's persons in their Latin print order, `found` maps the index of each one found
     to its span. Between two found neighbours, as many free name runs as persons left unfound are
-    paired with them in order; any other gap proposes nothing. Returns {index: span}."""
+    paired with them in order; when the counts differ ("dell’Ordine dei Frati Minori" is a run too),
+    each person takes the next run that opens with one of their `given` names (a list per index), in
+    order, and any other gap proposes nothing. Returns {index: span}."""
     out, i = {}, 0
     while i < len(ranked):
         if i in found:
@@ -183,5 +204,12 @@ def by_position(text, ranked, found, taken):
         gap = [r for r in runs(text, taken) if lo <= r[0] and r[1] <= hi]
         if len(gap) == j - i:
             out.update({k: gap[k - i] for k in range(i, j)})
+        elif given:
+            at = 0
+            for k in range(i, j):
+                hit = next((x for x in range(at, len(gap))
+                            if any(_opens_with(text[gap[x][0]:gap[x][1]], g) for g in given[k] if g)), None)
+                if hit is not None:
+                    out[k], at = gap[hit], hit + 1
         i = j
     return out

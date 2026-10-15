@@ -67,6 +67,12 @@ class BackRefTest(unittest.TestCase):
         start, end = mt.back_ref_span(text, "it")
         self.assertEqual(text[start:end], "Ivi")
 
+    def test_italian_only_sempre_and_ancora_cover_a_place_name(self):
+        # "Nello stesso luogo" is the whole back-reference: the words after it name the person.
+        text = "Nello stesso luogo commemorazione della beata Nema Fictor, martire."
+        start, end = mt.back_ref_span(text, "it")
+        self.assertEqual(text[start:end], "Nello stesso luogo")
+
     def test_none_without_a_back_reference(self):
         self.assertIsNone(mt.back_ref_span("Romæ, sancti Nemo.", "la"))
         self.assertIsNone(mt.back_ref_span("A Roma, san Nemo.", "it"))
