@@ -263,7 +263,10 @@ class TypeSafe:
             raise TypeSafeError("no TypeSafe key: set TYPESAFE_API_KEY or write ~/.config/typesafe/api_key")
         status, raw = None, b""
         for attempt in range(self.attempts):
-            status, raw = self.post(API_URL, _encode(body), self.key)
+            try:
+                status, raw = self.post(API_URL, _encode(body), self.key)
+            except OSError as e:  # a timeout or a refused connection (URLError is one): retried like 503
+                status, raw = None, str(getattr(e, "reason", e)).encode("utf-8")
             if status == 200:
                 out = json.loads(raw)
                 path.parent.mkdir(parents=True, exist_ok=True)
@@ -271,7 +274,8 @@ class TypeSafe:
                 return out
             if status == 401:
                 raise KeyRefused("the TypeSafe key was refused")
-            if status not in RETRY_STATUSES:
+            if status is not None and status not in RETRY_STATUSES:
                 raise TypeSafeError(f"HTTP {status}: {_message(raw)}")
             self.sleep(2 ** attempt)
-        raise TypeSafeError(f"HTTP {status} after {self.attempts} attempts: {_message(raw)}")
+        what = f"HTTP {status}" if status is not None else "no connection"
+        raise TypeSafeError(f"{what} after {self.attempts} attempts: {_message(raw)}")

@@ -264,5 +264,30 @@ class ClientTest(unittest.TestCase):
             self.assertEqual(mj.api_key({}, f), "from-file")
             self.assertIsNone(mj.api_key({}, Path(d) / "missing"))
 
+
+class NetworkErrorTest(unittest.TestCase):
+    """Review finding: a timeout or refused connection is retried like an overload, never a traceback."""
+
+    def test_a_network_error_is_retried_then_reported(self):
+        import urllib.error
+        calls = []
+
+        def flaky(url, data, key):
+            calls.append(1)
+            if len(calls) < 3:
+                raise urllib.error.URLError("timed out")
+            return OK
+        with tempfile.TemporaryDirectory() as d:
+            slept = []
+            self.assertEqual(mj.TypeSafe("k", Path(d), post=flaky, sleep=slept.append).ask(BODY)["model"], "jev-1.14.0")
+            self.assertEqual(slept, [1, 2])
+
+        def down(url, data, key):
+            raise TimeoutError("timed out")
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(mj.TypeSafeError) as e:
+                mj.TypeSafe("k", Path(d), post=down, sleep=lambda s: None).ask(BODY)
+            self.assertIn("timed out", str(e.exception))
+
 if __name__ == "__main__":
     unittest.main()

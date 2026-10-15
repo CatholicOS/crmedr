@@ -98,5 +98,35 @@ class EvaluateTest(unittest.TestCase):
         self.assertIn("b: decided ('reject',), suggested ('accept',) p=0.9", text)
 
 
+
+class NoKeyTest(unittest.TestCase):
+    """Review finding: without a key, suggest must stop before touching any card."""
+
+    def test_no_key_and_uncached_stops_before_any_card_changes(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            client = mj.TypeSafe(None, Path(d))
+            ops = [op(POSITION)]
+            ops[0]["suggested"] = {"decision": "accept", "probability": 0.95, "confidence": 0.95, "model": "m"}
+            with self.assertRaises(mj.TypeSafeError):
+                sm.suggest_ops(ops, DATA, client, 0.9)
+            self.assertEqual(ops[0]["suggested"]["confidence"], 0.95)
+
+    def test_evaluate_stops_too(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            with self.assertRaises(mj.TypeSafeError):
+                sm.evaluate_ops([op(POSITION, decision="accept")], DATA, mj.TypeSafe(None, Path(d)))
+
+
+class EvaluateErrorsTest(unittest.TestCase):
+    """Review finding: a card the API failed on is reported, not scored as no suggestion."""
+
+    def test_an_error_is_kept_on_the_row_and_reported(self):
+        rows = sm.evaluate_ops([op(POSITION, decision="accept", oid="a")], DATA,
+                               StubClient(error=mj.TypeSafeError("HTTP 400: too long")))
+        self.assertEqual(rows[0]["error"], "HTTP 400: too long")
+        self.assertIn("errors:\n  a: HTTP 400: too long", sm.report(rows, [0.0]))
+
 if __name__ == "__main__":
     unittest.main()

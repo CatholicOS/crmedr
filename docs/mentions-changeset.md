@@ -18,6 +18,7 @@ Common fields, all three operations:
 | `start`, `end`, `form` | The span in UTF-16 code units and the words as printed; `null` for an `add_mention` with no span |
 | `context`, `context_start` | The words around the span, and the UTF-16 offset in the text (or footnote) at which they begin. The span is at `start - context_start` in `context`. With no span, `context` is the whole text and `context_start` is 0. |
 | `reasoning` | Why it is asked |
+| `suggested` | Optional, on an Italian person `add_mention` only: Jev's suggestion (`scripts/suggest_mentions.py`), `{decision, start?, end?, form?, probability, confidence, model}`, with a span only for an `edit`. Written only when its confidence reaches the threshold; never a decision: the curator still sets `decision`, and `apply` ignores the field |
 | `decision` | `null`, then `"accept"`, `"reject"` or `"edit"` |
 
 - `add_mention` (also `name`, for a person; and `edited`): add a mention.

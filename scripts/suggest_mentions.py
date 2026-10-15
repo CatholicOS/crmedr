@@ -63,7 +63,23 @@ def ask_card(op, data, client):
     return s, None if s else "the answer named no option the request offered"
 
 
+def require_key(ops, data, client):
+    """Stop before any card changes when there is no key and some in-scope card's request is not
+    cached: without it every card would fail and lose its suggestion."""
+    if getattr(client, "key", True):
+        return
+    for op in ops:
+        if mj.card_kind(op) is None:
+            continue
+        mrid = op["eulogy"]
+        body, _ = mj.request_for(op, data["persons"].get(mrid, []), data["latin"].get(mrid, []),
+                                 data["italian"].get(mrid, []), data["names"])
+        if body is not None and not client.cached(body):
+            raise mj.TypeSafeError("no TypeSafe key: set TYPESAFE_API_KEY or write ~/.config/typesafe/api_key")
+
+
 def suggest_ops(ops, data, client, min_confidence):
+    require_key(ops, data, client)
     counts = {"suggested": 0, "below": 0, "skipped": 0, "errors": 0}
     for op in ops:
         if mj.card_kind(op) is None:
@@ -99,13 +115,18 @@ def _suggested(s):
 
 
 def evaluate_ops(ops, data, client):
+    decided = [op for op in ops if op.get("decision") in ("accept", "reject", "edit")]
+    require_key(decided, data, client)
     rows = []
-    for op in ops:
+    for op in decided:
         kind = mj.card_kind(op)
-        if kind is None or op.get("decision") not in ("accept", "reject", "edit"):
+        if kind is None:
             continue
-        s, _ = ask_card(op, data, client)
-        rows.append({"id": op["id"], "kind": kind, "decision": curator_decision(op), "suggested": s})
+        s, error = ask_card(op, data, client)
+        row = {"id": op["id"], "kind": kind, "decision": curator_decision(op), "suggested": s}
+        if error:
+            row["error"] = error
+        rows.append(row)
     return rows
 
 
@@ -124,6 +145,10 @@ def report(rows, thresholds):
             if covered:
                 line += f", {len(agree)} agree ({round(100 * len(agree) / len(covered))}%)"
             out.append(line)
+    failed = [r for r in rows if r.get("error")]
+    if failed:  # scored as no suggestion above: the coverage is lower than the model's
+        out.append("errors:")
+        out += [f"  {r['id']}: {r['error']}" for r in failed]
     out.append("disagreements:")
     for r in rows:
         if r["suggested"] and _suggested(r["suggested"]) != r["decision"]:
@@ -173,7 +198,7 @@ def main(argv):
         if weak_ops:
             print("== weak (decided by the curator's rules)")
             print(report(evaluate_ops(weak_ops, data, client), THRESHOLDS))
-    except mj.KeyRefused as e:
+    except mj.TypeSafeError as e:  # a refused key, or no key with requests to make: nothing written
         sys.exit(str(e))
 
 
