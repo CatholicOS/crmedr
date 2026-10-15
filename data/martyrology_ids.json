@@ -134,6 +134,11 @@
           "la": "Sardíniam",
           "it": "Sardegna",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Byzacénæ",
+          "source": "curated"
         }
       ]
     },
@@ -154,6 +159,12 @@
           "wikidata": "Q26849",
           "label": "Vienne",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastérii Sancti Marcélli",
+          "it": "monastero di San Marcello",
+          "source": "curated"
         }
       ]
     },
@@ -564,6 +575,15 @@
           "wikidata": "Q490",
           "label": "Milan",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Génuæ",
+          "it": "Genova",
+          "source": "curated",
+          "wikidata": "Q1449",
+          "label": "Genoa",
+          "country": "IT"
         }
       ],
       "same_eulogy": [
@@ -917,6 +937,12 @@
           "role": "mention",
           "la": "Autissiodorénsi",
           "it": "Auxerre",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Nemptodurénsis",
+          "it": "Nanterre",
           "source": "curated"
         }
       ]
@@ -1351,6 +1377,15 @@
           "wikidata": "Q6343",
           "label": "Carthage",
           "country": "TN"
+        },
+        {
+          "role": "mention",
+          "la": "Roma",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "same_eulogy": [
@@ -1432,6 +1467,12 @@
           "wikidata": "Q84",
           "label": "London",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "sede Romána",
+          "it": "sede di Roma",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -1763,6 +1804,12 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Oriénte",
+          "it": "Oriente",
           "source": "curated"
         }
       ]
@@ -2145,6 +2192,12 @@
           "wikidata": "Q48519152",
           "label": "Suzuta",
           "country": "JP"
+        },
+        {
+          "role": "journey",
+          "la": "Oriéntem",
+          "it": "Oriente",
+          "source": "curated"
         }
       ]
     },
@@ -2457,6 +2510,13 @@
           "wikidata": "Q1425428",
           "label": "Newcastle upon Tyne",
           "country": "GB"
+        },
+        {
+          "role": "journey",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -2512,6 +2572,13 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "journey",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -2960,6 +3027,12 @@
           "wikidata": "Q55673962",
           "label": "Abbey of La Trinità della Cava",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Montis Regális cœnóbium",
+          "it": "cenobio di Monreale in Sicilia",
+          "source": "curated"
         }
       ]
     },
@@ -3018,6 +3091,12 @@
           "la": "Terram Sanctam",
           "it": "Terra Santa",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Bracarénsis",
+          "it": "Braga",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -3053,6 +3132,12 @@
           "role": "ministry",
           "la": "Leodiénsi",
           "it": "Liegi",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Terram Sanctam",
+          "it": "Terra Santa",
           "source": "curated"
         }
       ],
@@ -3858,6 +3943,12 @@
           "wikidata": "Q1775379",
           "label": "Kloster Ilbenstadt",
           "country": "DE"
+        },
+        {
+          "role": "foundation",
+          "la": "Capenbergénsis",
+          "it": "Cappenberg",
+          "source": "curated"
         }
       ]
     },
@@ -4199,6 +4290,12 @@
           "role": "journey",
           "la": "Kambalik",
           "it": "Kambalik",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Tartarórum, Indórum Sinensiúmque regiónes",
+          "it": "regioni dei Tartari, degli Indi e dei Cinesi",
           "source": "curated"
         }
       ]
@@ -4723,6 +4820,12 @@
           "wikidata": "Q818032",
           "label": "Moûtiers",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Lirinénsis",
+          "it": "Lérins",
+          "source": "curated"
         }
       ]
     },
@@ -5001,6 +5104,12 @@
           "wikidata": "Q11939617",
           "label": "Osroene",
           "country": "TR"
+        },
+        {
+          "role": "journey",
+          "la": "Antiochíæ",
+          "it": "Antiochia",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -5235,6 +5344,12 @@
           "wikidata": "Q2793745",
           "label": "Lure Abbey",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "hibérnus",
+          "it": "irlandese",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -5424,6 +5539,15 @@
           "wikidata": "Q35997",
           "label": "İzmir",
           "country": "TR"
+        },
+        {
+          "role": "birth",
+          "la": "Philadelphíæ",
+          "it": "Filadelfia",
+          "source": "curated",
+          "wikidata": "Q2085773",
+          "label": "Philadelphia",
+          "country": "TR"
         }
       ]
     },
@@ -5521,6 +5645,12 @@
           "wikidata": "Q42296",
           "label": "Lodi Vecchio",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Mediolanénsi",
+          "it": "Milano",
+          "source": "curated"
         }
       ]
     },
@@ -5579,6 +5709,12 @@
           "la": "monastérii Corbionénsis",
           "it": "monastero di Corbion",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Pértici",
+          "it": "Perche",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -5601,6 +5737,15 @@
           "source": "lead",
           "wikidata": "Q13364",
           "label": "Ravenna",
+          "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
           "country": "IT"
         }
       ],
@@ -5788,6 +5933,12 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "arménus",
+          "it": "armena",
           "source": "curated"
         }
       ]
@@ -6269,6 +6420,12 @@
           "la": "Cæsaraugustáni in Hispánia Tarraconénsi",
           "it": "Saragozza in Spagna",
           "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Valéntiam",
+          "it": "Valencia",
+          "source": "curated"
         }
       ]
     },
@@ -6309,6 +6466,12 @@
           "wikidata": "Q631407",
           "label": "Resafa",
           "country": "SY"
+        },
+        {
+          "role": "exile",
+          "la": "Cæsaréa Palæstínæ",
+          "it": "Cesarea di Palestina",
+          "source": "curated"
         }
       ]
     },
@@ -6360,6 +6523,15 @@
           "source": "lead",
           "wikidata": "Q117382",
           "label": "Sora",
+          "country": "IT"
+        },
+        {
+          "role": "foundation",
+          "la": "Itáliæ",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
           "country": "IT"
         }
       ]
@@ -6691,6 +6863,12 @@
           "wikidata": "Q835870",
           "label": "Dampierre-sur-le-Doubs",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "hibérnus",
+          "it": "irlandese",
+          "source": "curated"
         }
       ]
     },
@@ -6982,7 +7160,15 @@
       "entry": 2,
       "asterisk": false,
       "country": "SY",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "ministry",
+          "la": "Damásci",
+          "it": "Damasco",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0125-arthemas",
@@ -7136,6 +7322,12 @@
           "la": "Stabulénsis",
           "it": "Stavelot",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Lotharíngiæ",
+          "it": "Lotaringia",
+          "source": "curated"
         }
       ]
     },
@@ -7204,6 +7396,12 @@
           "role": "religious_life",
           "la": "convéntus Parménsis",
           "it": "convento di Parma",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "cœnóbii Mantuáni",
+          "it": "cenobio di Mantova",
           "source": "curated"
         }
       ]
@@ -7610,6 +7808,12 @@
           "la": "Aurelianénsis",
           "it": "Orléans",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "límina Apostolórum",
+          "it": "basiliche degli Apostoli",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -7792,6 +7996,14 @@
           "la": "Vilnénsis",
           "it": "Vilnius",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Lithuánia",
+          "it": "Lituania",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2
         }
       ],
       "edition_notes": {
@@ -8143,6 +8355,19 @@
           "la": "Edéssam",
           "it": "Edessa",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Béthlehem",
+          "it": "Betlemme",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Antiochíæ",
+          "it": "Antiochia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "same_eulogy": [
@@ -8178,6 +8403,13 @@
           "la": "Rhuvigiénse monastérium",
           "it": "monastero di Rhuys",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Británniæ",
+          "it": "Bretagna",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -8198,6 +8430,12 @@
           "wikidata": "Q132404",
           "label": "Bourges",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Galliárum",
+          "it": "Gallie",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -8327,6 +8565,12 @@
           "wikidata": "Q272916",
           "label": "Chelles",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Luxoviénsi",
+          "it": "Luxeuil",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -8370,6 +8614,12 @@
           "wikidata": "Q6259",
           "label": "Pavia",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "basílica Sancti Petri in Cælo Aureo",
+          "it": "basilica di San Pietro in Ciel d’Oro",
+          "source": "curated"
         }
       ]
     },
@@ -8381,6 +8631,14 @@
       "asterisk": false,
       "country": "CY",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "exile",
+          "la": "Cyprum",
+          "it": "Cipro",
+          "source": "curated"
+        }
+      ],
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Renders the cognomen as \"the Youth\" (Latin cognoménto Iúvenis, Italian (CEI) detto il Giovane); \"the Younger\" is the conventional English epithet, which the English subject follows."
       }
@@ -8402,6 +8660,12 @@
           "wikidata": "Q9580",
           "label": "Burgos",
           "country": "ES"
+        },
+        {
+          "role": "foundation",
+          "la": "sacéllum Sancti Ioánnis",
+          "it": "cappella e l’ospizio di San Giovanni",
+          "source": "curated"
         }
       ]
     },
@@ -9072,6 +9336,13 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "journey",
+          "la": "fines Velacórum",
+          "it": "Vélay",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "edition_notes": {
@@ -9135,6 +9406,12 @@
           "role": "religious_life",
           "la": "Fiteriénsis",
           "it": "Fitero",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Calatráva",
+          "it": "Calatráva",
           "source": "curated"
         }
       ]
@@ -9407,6 +9684,14 @@
       "asterisk": false,
       "country": "PS",
       "typology": "celebratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Templum",
+          "it": "Tempio",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "same_eulogy": [
         "mr:0202-purificatio-beatae-mariae-virginis"
@@ -9768,6 +10053,12 @@
           "la": "Corbeiénsis",
           "it": "Corbie",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Septemtriónis",
+          "it": "Settentrione",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -9789,6 +10080,12 @@
           "wikidata": "Q1218",
           "label": "Jerusalem",
           "country": "PS"
+        },
+        {
+          "role": "mention",
+          "la": "templum",
+          "it": "tempio",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -10289,6 +10586,12 @@
           "wikidata": "Q132404",
           "label": "Bourges",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Gálliæ",
+          "it": "Francia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -10425,6 +10728,12 @@
           "wikidata": "Q26849",
           "label": "Vienne",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Gálliæ",
+          "it": "Gallie",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -10527,6 +10836,18 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "religious_life",
+          "la": "Calábriam",
+          "it": "Calabria",
+          "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "Lucániam",
+          "it": "Lucania",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -10705,6 +11026,22 @@
           "source": "curated",
           "wikidata": "Q38234",
           "label": "Nagasaki",
+          "country": "JP"
+        },
+        {
+          "role": "birth",
+          "la": "Európa",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Iapónia",
+          "it": "Giappone",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q17",
+          "label": "Japan",
           "country": "JP"
         }
       ],
@@ -11434,6 +11771,11 @@
           "la": "Somáschæ apud Bérgomum in Langobárdia",
           "it": "Somasca vicino a Bergamo",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Somáscha",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -11467,6 +11809,15 @@
         },
         {
           "role": "religious_life",
+          "la": "urbe Schio in agro Vicentíno Itáliæ",
+          "it": "città di Schio nel territorio di Vicenza",
+          "source": "curated",
+          "wikidata": "Q47262",
+          "label": "Schio",
+          "country": "IT"
+        },
+        {
+          "role": "death",
           "la": "urbe Schio in agro Vicentíno Itáliæ",
           "it": "città di Schio nel territorio di Vicenza",
           "source": "curated",
@@ -11580,6 +11931,12 @@
           "wikidata": "Q490",
           "label": "Milan",
           "country": "IT"
+        },
+        {
+          "role": "exile",
+          "la": "Génuam",
+          "it": "Genova",
+          "source": "curated"
         }
       ]
     },
@@ -11840,6 +12197,12 @@
           "la": "Constantinópolim",
           "it": "Costantinopoli",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Románæ sedis",
+          "it": "sede Romana",
+          "source": "curated"
         }
       ]
     },
@@ -11955,6 +12318,17 @@
           "la": "urbe Concha in Æquatória",
           "it": "città di Cuenca in Ecuador",
           "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "Hispánia",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q29",
+          "label": "Spain",
+          "country": "ES"
         }
       ]
     },
@@ -11966,6 +12340,14 @@
       "asterisk": false,
       "country": "IT",
       "typology": "depositio",
+      "places": [
+        {
+          "role": "journey",
+          "la": "Montem Casínum in Campánia",
+          "it": "Montecassino nel Lazio",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Commemoration\" where the Latin has \"Memória\" (Memorial)."
@@ -12511,6 +12893,12 @@
           "wikidata": "Q6343",
           "label": "Carthage",
           "country": "TN"
+        },
+        {
+          "role": "mention",
+          "la": "Abitinénsium",
+          "it": "Abitene",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -12654,6 +13042,12 @@
         {
           "role": "birth",
           "la": "Scótia",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "límina Apostolórum",
+          "it": "basiliche degli Apostoli",
           "source": "curated"
         }
       ],
@@ -12816,6 +13210,12 @@
           "wikidata": "Q2916",
           "label": "Osnabrück",
           "country": "DE"
+        },
+        {
+          "role": "ministry",
+          "la": "Suebórum",
+          "it": "Svevi",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -13320,6 +13720,12 @@
           "wikidata": "Q200441",
           "label": "Antioch",
           "country": "TR"
+        },
+        {
+          "role": "ministry",
+          "la": "Románi",
+          "it": "Roma",
+          "source": "curated"
         }
       ]
     },
@@ -13537,6 +13943,40 @@
           "la": "Iámnia",
           "it": "Iamnia",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "cáppadox",
+          "it": "Cappadocia",
+          "source": "curated",
+          "occurrence": 1,
+          "occurrence_it": 1
+        },
+        {
+          "role": "birth",
+          "la": "cáppadox",
+          "it": "Cappadocia",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2
+        },
+        {
+          "role": "birth",
+          "la": "ægýptii",
+          "it": "Egitto",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Cilícia",
+          "it": "Cilicia",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Hierosolymitánus",
+          "it": "Gerusalemme",
+          "source": "curated"
         }
       ]
     },
@@ -13656,6 +14096,15 @@
           "la": "montem Senárium",
           "it": "monte Senario",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Floréntiæ",
+          "it": "Firenze",
+          "source": "curated",
+          "wikidata": "Q2044",
+          "label": "Florence",
+          "country": "IT"
         }
       ],
       "unnumbered": true,
@@ -13683,6 +14132,12 @@
           "wikidata": "Q170532",
           "label": "Amasya",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Nyssénus",
+          "it": "Nissa",
+          "source": "curated"
         }
       ]
     },
@@ -13708,6 +14163,12 @@
           "role": "mention",
           "la": "Pictaviénsi",
           "it": "Poitiers",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Galliárum",
+          "it": "Gallie",
           "source": "curated"
         }
       ]
@@ -14078,6 +14539,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "religious_life",
+          "la": "Fæsuláni",
+          "it": "Fiesole",
+          "source": "curated"
         }
       ]
     },
@@ -14787,6 +15254,12 @@
           "wikidata": "Q84",
           "label": "London",
           "country": "GB"
+        },
+        {
+          "role": "death",
+          "la": "Sanctum Paulum",
+          "it": "Saint Paul",
+          "source": "curated"
         }
       ]
     },
@@ -14865,6 +15338,14 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
+      "places": [
+        {
+          "role": "burial",
+          "la": "agro Vaticáno",
+          "it": "colle Vaticano",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"dalla sua vittoria\" (his victory) where the Latin \"tropǽo\" means the monument over his tomb in the Vatican."
@@ -15036,6 +15517,15 @@
           "wikidata": "Q2044",
           "label": "Florence",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Bélgio",
+          "it": "Belgio",
+          "source": "curated",
+          "wikidata": "Q31",
+          "label": "Belgium",
+          "country": "BE"
         }
       ],
       "edition_notes": {
@@ -15103,6 +15593,12 @@
           "wikidata": "Q201114",
           "label": "Much Wenlock",
           "country": "GB"
+        },
+        {
+          "role": "birth",
+          "la": "Merciórum",
+          "it": "Mercia",
+          "source": "curated"
         }
       ]
     },
@@ -15316,6 +15812,12 @@
           "wikidata": "Q29303",
           "label": "Canterbury",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Cantiórum",
+          "it": "Kent",
+          "source": "curated"
         }
       ]
     },
@@ -15494,6 +15996,12 @@
           "wikidata": "Q721812",
           "label": "Heidenheim Abbey",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -15580,6 +16088,15 @@
           "wikidata": "Q125293",
           "label": "Heroica Puebla de Zaragoza",
           "country": "MX"
+        },
+        {
+          "role": "birth",
+          "la": "Hispánia",
+          "it": "Spagna",
+          "source": "curated",
+          "wikidata": "Q29",
+          "label": "Spain",
+          "country": "ES"
         }
       ]
     },
@@ -16098,6 +16615,15 @@
           "la": "Tybúrni",
           "it": "Tyburn",
           "source": "curated"
+        },
+        {
+          "role": "education",
+          "la": "Híspali in Hispánia",
+          "it": "Siviglia in Spagna",
+          "source": "curated",
+          "wikidata": "Q8717",
+          "label": "Seville",
+          "country": "ES"
         }
       ]
     },
@@ -16506,6 +17032,31 @@
           "wikidata": "Q648732",
           "label": "St Davids",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Armóricam",
+          "it": "Bretagna",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Cornúbiam",
+          "it": "Cornovaglia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Cámbriam",
+          "it": "Galles",
+          "source": "curated",
+          "occurrence_it": 2
+        },
+        {
+          "role": "mention",
+          "la": "Hibérniam",
+          "it": "Irlanda",
+          "source": "curated"
         }
       ]
     },
@@ -16558,6 +17109,16 @@
           "la": "Northúmbria",
           "it": "Northumbria",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Germániæ",
+          "it": "Germania",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q183",
+          "label": "Germany",
+          "country": "DE"
         }
       ]
     },
@@ -16632,6 +17193,12 @@
           "role": "ministry",
           "la": "Dumiénsis",
           "it": "Mondoñedo",
+          "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastério Cellæ Novæ",
+          "it": "monastero di Cellanova",
           "source": "curated"
         }
       ]
@@ -16826,6 +17393,15 @@
           "it": "Fiandre",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "birth",
+          "la": "Dániæ",
+          "it": "Danimarca",
+          "source": "curated",
+          "wikidata": "Q35",
+          "label": "Denmark",
+          "country": "DK"
         }
       ]
     },
@@ -16890,6 +17466,12 @@
           "wikidata": "Q642046",
           "label": "Calahorra",
           "country": "ES"
+        },
+        {
+          "role": "mention",
+          "la": "Legiónem in Gallǽcia",
+          "it": "León in Galizia",
+          "source": "curated"
         }
       ]
     },
@@ -16955,6 +17537,12 @@
           "role": "religious_life",
           "la": "Landevenecénsis",
           "it": "Landévennec",
+          "source": "curated"
+        },
+        {
+          "role": "education",
+          "la": "Láurea ínsula",
+          "it": "isola di Lavret",
           "source": "curated"
         }
       ],
@@ -17220,6 +17808,15 @@
           "la": "óppido Grodna apud Vilnam in Lithuánia",
           "it": "città di Grodno presso Vilnius in Lituania",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "unnumbered": true
@@ -17602,6 +18199,12 @@
           "wikidata": "Q48292",
           "label": "Arles",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Anglos",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -17662,6 +18265,12 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Neapolitánæ provínciæ",
+          "it": "provincia napoletana",
+          "source": "curated"
         }
       ]
     },
@@ -17849,6 +18458,21 @@
           "wikidata": "Q858",
           "label": "Syria",
           "country": "SY"
+        },
+        {
+          "role": "death",
+          "la": "flumen Euphráten",
+          "it": "fiume Eufrate",
+          "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Amórii Phrýgiæ",
+          "it": "Amorio in Frigia",
+          "source": "curated",
+          "wikidata": "Q174270",
+          "label": "Amorium",
+          "country": "TR"
         }
       ]
     },
@@ -18220,6 +18844,12 @@
           "wikidata": "Q8810",
           "label": "Granada",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "lusitánus",
+          "it": "portoghese",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -18329,6 +18959,12 @@
           "role": "birth",
           "la": "Burgúndia",
           "it": "Burgundia",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Anglos orientáles",
+          "it": "Angli orientali",
           "source": "curated"
         }
       ]
@@ -18570,6 +19206,12 @@
           "wikidata": "Q107401",
           "label": "Sivas",
           "country": "TR"
+        },
+        {
+          "role": "birth",
+          "la": "Cappádocum",
+          "it": "Cappadocia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -18645,6 +19287,21 @@
           "la": "Querfurténsis",
           "it": "Querfurt",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Germániam",
+          "it": "Germania",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "same_eulogy": [
@@ -18791,6 +19448,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Itáliam",
+          "it": "Italia",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -18814,6 +19477,12 @@
           "wikidata": "Q90",
           "label": "Paris",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Augustodunénsi",
+          "it": "Autun",
+          "source": "curated"
         }
       ]
     },
@@ -18866,6 +19535,12 @@
           "wikidata": "Q4093",
           "label": "Glasgow",
           "country": "GB"
+        },
+        {
+          "role": "education",
+          "la": "regna Európæ",
+          "it": "regni di Europa",
+          "source": "curated"
         }
       ]
     },
@@ -19699,6 +20374,12 @@
           "wikidata": "Q34217",
           "label": "Oxford",
           "country": "GB"
+        },
+        {
+          "role": "journey",
+          "la": "Gálliam",
+          "it": "Francia",
+          "source": "curated"
         }
       ]
     },
@@ -20260,6 +20941,18 @@
           "wikidata": "Q5946986",
           "label": "Huronia",
           "country": "CA"
+        },
+        {
+          "role": "birth",
+          "la": "Gállia",
+          "it": "Francia",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Hurónicam missiónem",
+          "it": "missione presso gli Uroni",
+          "source": "curated"
         }
       ]
     },
@@ -20280,6 +20973,19 @@
         },
         {
           "role": "exile",
+          "la": "Hibérniam",
+          "it": "Irlanda",
+          "source": "curated",
+          "occurrence_it": 1
+        },
+        {
+          "role": "birth",
+          "la": "Británnia",
+          "it": "Britannia",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
           "la": "Hibérniam",
           "it": "Irlanda",
           "source": "curated",
@@ -20510,6 +21216,12 @@
           "la": "Hierosólymam",
           "it": "Gerusalemme",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Cappadócia",
+          "it": "Cappadocia",
+          "source": "curated"
         }
       ]
     },
@@ -20539,6 +21251,12 @@
           "wikidata": "Q27",
           "label": "Ireland",
           "country": "IE"
+        },
+        {
+          "role": "mention",
+          "la": "Sérculum flumen",
+          "it": "fiume Serchio",
+          "source": "curated"
         }
       ]
     },
@@ -20559,6 +21277,12 @@
           "wikidata": "Q288",
           "label": "Tours",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "Maióre",
+          "it": "Marmoutier",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -20582,6 +21306,12 @@
           "wikidata": "Q10305",
           "label": "Zaragoza",
           "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "tota Hispánia",
+          "it": "tutta la Spagna",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -20631,6 +21361,12 @@
           "la": "Lucénsis",
           "it": "Lucca",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Langobárdiam",
+          "it": "Lombardia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -20654,6 +21390,12 @@
           "wikidata": "Q1897",
           "label": "Cagliari",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Horta",
+          "it": "Horta",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -20799,6 +21541,15 @@
           "wikidata": "Q73489",
           "label": "Camerino",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Parma",
+          "it": "Parma",
+          "source": "curated",
+          "wikidata": "Q2683",
+          "label": "Parma",
+          "country": "IT"
         }
       ]
     },
@@ -20865,6 +21616,15 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di detenzione di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -20901,7 +21661,15 @@
       "entry": 1,
       "asterisk": false,
       "country": null,
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Colossénses",
+          "it": "Colossesi",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0320-paulus-et-cyrillus",
@@ -21023,6 +21791,12 @@
           "role": "ministry",
           "la": "Senonénsis",
           "it": "Sens",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "gentem Frisiórum",
+          "it": "popolo frisio",
           "source": "curated"
         }
       ]
@@ -21598,7 +22372,15 @@
       "entry": 5,
       "asterisk": false,
       "country": "IT",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "románæ",
+          "it": "romana",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0322-benvenutus-scotivoli",
@@ -21753,6 +22535,12 @@
           "la": "Cartháginis",
           "it": "Cartagine",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Aquæregénsium",
+          "it": "Henchir-Baboucha",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -21839,6 +22627,13 @@
           "wikidata": "Q42462",
           "label": "York",
           "country": "GB"
+        },
+        {
+          "role": "journey",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -21919,6 +22714,12 @@
           "wikidata": "Q28746324",
           "label": "Jrabta",
           "country": "LB"
+        },
+        {
+          "role": "birth",
+          "la": "Himláya",
+          "it": "Himláya",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -22113,6 +22914,12 @@
           "wikidata": "Q13153",
           "label": "Ronda",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "Gádibus",
+          "it": "Cadice",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -22522,6 +23329,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -22778,6 +23594,19 @@
           "wikidata": "Q34713",
           "label": "Salzburg",
           "country": "AT"
+        },
+        {
+          "role": "ministry",
+          "la": "Baváriam",
+          "it": "Baviera",
+          "source": "curated",
+          "occurrence_it": 2
+        },
+        {
+          "role": "ministry",
+          "la": "Vormátiæ",
+          "it": "Worms",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -22806,6 +23635,12 @@
           "role": "journey",
           "la": "Terra Sancta",
           "it": "Terra Santa",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Phaleróne",
+          "it": "Falerone",
           "source": "curated"
         }
       ]
@@ -22878,6 +23713,17 @@
       "asterisk": false,
       "country": "PS",
       "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Cæsaréæ in Palæstína",
+          "it": "Cesarea in Palestina",
+          "source": "curated",
+          "wikidata": "Q319242",
+          "label": "Caesarea Maritima",
+          "country": "PS"
+        }
+      ],
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"continuously devoured\" where the Latin \"contínuo ... trádidit\" means he immediately handed them over."
       }
@@ -23026,6 +23872,12 @@
           "wikidata": "Q497041",
           "label": "Naso",
           "country": "IT"
+        },
+        {
+          "role": "journey",
+          "la": "loca sancta",
+          "it": "luoghi santi",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -23461,6 +24313,12 @@
           "wikidata": "Q6461012",
           "label": "La Aguilera",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "Vallisoléto",
+          "it": "Valladolid",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -23533,6 +24391,12 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Casáurea",
+          "it": "Casoria",
+          "source": "curated"
         }
       ],
       "note": "Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014."
@@ -23729,6 +24593,18 @@
           "wikidata": "Q2790",
           "label": "Udine",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Foro Lívii",
+          "it": "Forlì",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "divérsas Itáliæ regiónes",
+          "it": "diverse regioni d’Italia",
+          "source": "curated"
         }
       ]
     },
@@ -23801,6 +24677,18 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Dalmátiæ",
+          "it": "Dalmazia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Hístriæ",
+          "it": "Istria",
+          "source": "curated"
         }
       ]
     },
@@ -23849,6 +24737,18 @@
           "role": "religious_life",
           "la": "trans Iordánem",
           "it": "al di là del Giordano",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Civitáte Sancta",
+          "it": "Città Santa",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "alexandrína",
+          "it": "Alessandria",
           "source": "curated"
         }
       ],
@@ -23922,6 +24822,12 @@
           "wikidata": "Q1289",
           "label": "Grenoble",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "Cartúsiæ",
+          "it": "Chartroux",
+          "source": "curated"
         }
       ]
     },
@@ -24498,6 +25404,12 @@
           "la": "Romam",
           "it": "Roma",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "ecclésiæ Sanctæ Sóphiæ",
+          "it": "chiesa di Santa Sofia",
+          "source": "curated"
         }
       ]
     },
@@ -24734,6 +25646,18 @@
           "la": "Calviníaci",
           "it": "Chauvigny",
           "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Calviníaci",
+          "it": "Chauvigny",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Fontisbraldénsis",
+          "it": "Fontevrault",
+          "source": "curated"
         }
       ]
     },
@@ -24868,6 +25792,12 @@
           "wikidata": "Q6593",
           "label": "Vannes",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Occidéntis",
+          "it": "Occidente",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -25128,6 +26058,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "religious_life",
+          "la": "ecclésiam Sancti Petri",
+          "it": "chiesa di San Pietro",
+          "source": "curated"
         }
       ]
     },
@@ -25413,6 +26349,15 @@
           "wikidata": "Q30974",
           "label": "Rouen",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "Rothómagi in Normánnia Gálliæ",
+          "it": "Rouen in Normandia in Francia",
+          "source": "curated",
+          "wikidata": "Q30974",
+          "label": "Rouen",
+          "country": "FR"
         }
       ],
       "unnumbered": true,
@@ -25430,7 +26375,18 @@
       "entry": 2,
       "asterisk": false,
       "country": "IT",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Romæ",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
+        }
+      ]
     },
     {
       "id": "mr:0407-pelusius",
@@ -25941,6 +26897,12 @@
           "la": "Thessalonícæ",
           "it": "Salonicco",
           "source": "curated"
+        },
+        {
+          "role": "cult",
+          "la": "Oriénte",
+          "it": "Oriente",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -26163,6 +27125,19 @@
           "la": "Sinárum impérium",
           "it": "impero cinese",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Indos",
+          "it": "Indi",
+          "source": "curated",
+          "occurrence_it": 2
+        },
+        {
+          "role": "journey",
+          "la": "Tártaros",
+          "it": "Tartari",
+          "source": "curated"
         }
       ]
     },
@@ -26312,6 +27287,12 @@
           "wikidata": "Q1296",
           "label": "Ghent",
           "country": "BE"
+        },
+        {
+          "role": "religious_life",
+          "la": "Sancti Bavónis",
+          "it": "san Bavone",
+          "source": "curated"
         }
       ]
     },
@@ -26352,6 +27333,13 @@
           "wikidata": "Q3572",
           "label": "Tunis",
           "country": "TN"
+        },
+        {
+          "role": "exile",
+          "la": "Africam",
+          "it": "Africa",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -26452,6 +27440,15 @@
           "la": "Cracoviénsem",
           "it": "Cracovia",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "unnumbered": true,
@@ -27079,6 +28076,12 @@
           "it": "Lateranense",
           "source": "curated",
           "occurrence_it": 1
+        },
+        {
+          "role": "mention",
+          "la": "basilícam Lateranénsem",
+          "it": "Basilica Lateranense",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -27131,6 +28134,12 @@
           "wikidata": "Q13364",
           "label": "Ravenna",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Classi",
+          "it": "Classe",
+          "source": "curated"
         }
       ]
     },
@@ -27906,6 +28915,17 @@
           "wikidata": "Q465078",
           "label": "Astorga",
           "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "Hispánia",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q29",
+          "label": "Spain",
+          "country": "ES"
         }
       ]
     },
@@ -27958,6 +28978,21 @@
           "wikidata": "Q22",
           "label": "Scotland",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Norvégiæ",
+          "it": "Norvegia",
+          "source": "curated",
+          "wikidata": "Q20",
+          "label": "Norway",
+          "country": "NO"
+        },
+        {
+          "role": "mention",
+          "la": "Orcadum insulárum",
+          "it": "isole Orcadi",
+          "source": "curated"
         }
       ]
     },
@@ -28915,6 +29950,12 @@
           "wikidata": "Q701015",
           "label": "Sankt Gerold",
           "country": "AT"
+        },
+        {
+          "role": "religious_life",
+          "la": "Voralbérga regióne",
+          "it": "regione del Voralberg",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -29111,6 +30152,18 @@
           "role": "ministry",
           "la": "Alpium Maritimárum",
           "it": "Alpi Marittime",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Africa",
+          "it": "Africa",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Vercellénsi",
+          "it": "Vercelli",
           "source": "curated"
         }
       ]
@@ -29356,6 +30409,13 @@
           "la": "Tybúrni",
           "it": "Tyburn",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -29696,6 +30756,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Corínthius",
+          "it": "Corinto",
+          "source": "curated"
         }
       ]
     },
@@ -29793,6 +30859,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "ministry",
+          "la": "Urbis",
+          "it": "Urbe",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -30296,6 +31368,13 @@
           "la": "Sáxonum orientálium",
           "it": "Sassoni orientali",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -30345,6 +31424,12 @@
           "wikidata": "Q610",
           "label": "Iona",
           "country": "GB"
+        },
+        {
+          "role": "ministry",
+          "la": "Európæ regiónes",
+          "it": "regioni d’Europa",
+          "source": "curated"
         }
       ]
     },
@@ -30479,6 +31564,12 @@
           "wikidata": "Q1218",
           "label": "Jerusalem",
           "country": "PS"
+        },
+        {
+          "role": "ministry",
+          "la": "Romános",
+          "it": "Roma",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -30687,6 +31778,13 @@
           "wikidata": "Q9679",
           "label": "Isle of Wight",
           "country": "GB"
+        },
+        {
+          "role": "journey",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -30978,6 +32076,15 @@
           "la": "Lublinénsis",
           "it": "Lublino",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -31513,6 +32620,12 @@
           "wikidata": "Q160139",
           "label": "Mauthausen concentration camp",
           "country": "AT"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -31544,6 +32657,14 @@
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Urbem",
+          "it": "Urbe",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "same_eulogy": [
         "mr:0430-catharina-senensis"
@@ -31763,6 +32884,13 @@
           "wikidata": "Q191126",
           "label": "Saintes",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Gálliam",
+          "it": "Francia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -32092,6 +33220,16 @@
           "wikidata": "Q176",
           "label": "Quebec",
           "country": "CA"
+        },
+        {
+          "role": "foundation",
+          "la": "Cánada",
+          "it": "Canada",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q16",
+          "label": "Canada",
+          "country": "CA"
         }
       ],
       "note": "Marie of the Incarnation Guyart, blessed in the 2004 editions, was canonized on 3 April 2014."
@@ -32164,6 +33302,14 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Nazarénus",
+          "it": "Nazareth",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true
     },
     {
@@ -32173,7 +33319,15 @@
       "entry": 2,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Civitátis Sanctæ",
+          "it": "Città Santa",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0501-andeolus",
@@ -32329,6 +33483,12 @@
           "la": "Cámbria",
           "it": "Galles",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "lítore armórico",
+          "it": "costa bretone",
+          "source": "curated"
         }
       ]
     },
@@ -32424,6 +33584,12 @@
           "wikidata": "Q175081",
           "label": "Gap",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -32613,6 +33779,12 @@
           "wikidata": "Q1365138",
           "label": "Sơn Tây",
           "country": "VN"
+        },
+        {
+          "role": "death",
+          "la": "campo Quinque Iúgerum",
+          "it": "campo di Năm Mẫu",
+          "source": "curated"
         }
       ]
     },
@@ -32811,6 +33983,12 @@
           "wikidata": "Q25607",
           "label": "St. Gallen",
           "country": "CH"
+        },
+        {
+          "role": "religious_life",
+          "la": "ecclésiam Sancti Magni",
+          "it": "chiesa di San Magno",
+          "source": "curated"
         }
       ]
     },
@@ -33965,6 +35143,12 @@
           "wikidata": "Q1492",
           "label": "Barcelona",
           "country": "ES"
+        },
+        {
+          "role": "mention",
+          "la": "Aragóniæ",
+          "it": "Aragona",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -34037,6 +35221,12 @@
           "la": "Américæ Septemtrionális regióne",
           "it": "America settentrionale",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "sinum mexicánum",
+          "it": "golfo del Messico",
+          "source": "curated"
         }
       ],
       "note": "François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014."
@@ -34058,6 +35248,15 @@
           "wikidata": "Q85",
           "label": "Cairo",
           "country": "EG"
+        },
+        {
+          "role": "journey",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ]
     },
@@ -34104,6 +35303,15 @@
           "la": "castris detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -34127,6 +35335,12 @@
         },
         {
           "role": "exile",
+          "la": "ínsulam Póntiam",
+          "it": "isola di Ponza",
+          "source": "curated"
+        },
+        {
+          "role": "death",
           "la": "ínsulam Póntiam",
           "it": "isola di Ponza",
           "source": "curated"
@@ -34176,6 +35390,13 @@
           "la": "Turonénsis",
           "it": "Tours",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Cenomanénsis",
+          "it": "Le Mans",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -34318,6 +35539,15 @@
           "la": "Viterbiénsis",
           "it": "Viterbo",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "note": "Rosa Venerini, blessed in the 2004 editions, was canonized on 15 October 2006."
@@ -34428,6 +35658,12 @@
           "wikidata": "Q1074945",
           "label": "Wadi El Natrun",
           "country": "EG"
+        },
+        {
+          "role": "ministry",
+          "la": "Románæ Ecclésiæ",
+          "it": "Chiesa di Roma",
+          "source": "curated"
         }
       ]
     },
@@ -34455,6 +35691,15 @@
           "it": "Francia",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "birth",
+          "la": "Hibérnia",
+          "it": "Irlanda",
+          "source": "curated",
+          "wikidata": "Q27",
+          "label": "Ireland",
+          "country": "IE"
         }
       ]
     },
@@ -34831,6 +36076,15 @@
           "la": "Phicoclénsis",
           "it": "Cervia",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Romæ",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ]
     },
@@ -34983,6 +36237,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -35130,6 +36393,12 @@
           "wikidata": "Q13498",
           "label": "Taranto",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Scótia",
+          "it": "Scozia",
+          "source": "curated"
         }
       ]
     },
@@ -35316,6 +36585,12 @@
           "wikidata": "Q1018744",
           "label": "Byzacena",
           "country": "TN"
+        },
+        {
+          "role": "death",
+          "la": "Adrumétici",
+          "it": "Adrumeto",
+          "source": "curated"
         }
       ]
     },
@@ -35427,6 +36702,19 @@
           "role": "religious_life",
           "la": "Cluniacénsis",
           "it": "Cluny",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Gálliam",
+          "it": "Francia",
+          "source": "curated",
+          "occurrence_it": 2
+        },
+        {
+          "role": "ministry",
+          "la": "Itáliam",
+          "it": "Italia",
           "source": "curated"
         }
       ],
@@ -35566,6 +36854,12 @@
           "wikidata": "Q1854",
           "label": "Ho Chi Minh City",
           "country": "VN"
+        },
+        {
+          "role": "mention",
+          "la": "Európa",
+          "it": "Europa",
+          "source": "curated"
         }
       ]
     },
@@ -35598,6 +36892,15 @@
       "places": [
         {
           "role": "death",
+          "la": "Romæ via Aurélia miliário secúndo",
+          "it": "Roma al secondo miglio della via Aurelia",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
+        },
+        {
+          "role": "burial",
           "la": "Romæ via Aurélia miliário secúndo",
           "it": "Roma al secondo miglio della via Aurelia",
           "source": "curated",
@@ -35829,6 +37132,12 @@
           "wikidata": "Q191133",
           "label": "Fátima",
           "country": "PT"
+        },
+        {
+          "role": "cult",
+          "la": "loco Aljustrel",
+          "it": "località di Aljustrel",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -36210,6 +37519,12 @@
           "wikidata": "Q273877",
           "label": "Santarém",
           "country": "PT"
+        },
+        {
+          "role": "education",
+          "la": "Parísiis",
+          "it": "Parigi",
+          "source": "curated"
         }
       ]
     },
@@ -36415,6 +37730,12 @@
           "la": "Negranénsium",
           "it": "Nağrān",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Hierosólymam",
+          "it": "Gerusalemme",
+          "source": "curated"
         }
       ]
     },
@@ -36455,6 +37776,12 @@
           "wikidata": "Q285879",
           "label": "Bingen am Rhein",
           "country": "DE"
+        },
+        {
+          "role": "journey",
+          "la": "límina Apostolórum",
+          "it": "tombe degli Apostoli",
+          "source": "curated"
         }
       ]
     },
@@ -36638,6 +37965,12 @@
           "wikidata": "Q5489",
           "label": "Troyes",
           "country": "FR"
+        },
+        {
+          "role": "exile",
+          "la": "Arvérnos",
+          "it": "regione dell’Auvergne",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -36875,6 +38208,15 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -37258,6 +38600,12 @@
           "wikidata": "Q25286",
           "label": "Uppsala",
           "country": "SE"
+        },
+        {
+          "role": "mention",
+          "la": "Fínniam",
+          "it": "Finlandia",
+          "source": "curated"
         }
       ]
     },
@@ -37758,6 +39106,12 @@
           "wikidata": "Q38",
           "label": "Italy",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Senénsis",
+          "it": "Siena",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -37776,6 +39130,15 @@
           "la": "Thyatirénsis",
           "it": "Tiátira",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Philíppis in Macedónia",
+          "it": "Filippi in Macedonia",
+          "source": "curated",
+          "wikidata": "Q379652",
+          "label": "Philippi",
+          "country": "GR"
         }
       ],
       "same_eulogy": [
@@ -38417,6 +39780,12 @@
           "wikidata": "Q45656",
           "label": "Limoges",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "Solemníaci",
+          "it": "Solesme",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -38466,6 +39835,12 @@
           "wikidata": "Q13376",
           "label": "Pistoia",
           "country": "IT"
+        },
+        {
+          "role": "religious_life",
+          "la": "Vallis Umbrósæ",
+          "it": "Vallombrosa",
+          "source": "curated"
         }
       ]
     },
@@ -39076,6 +40451,12 @@
           "wikidata": "Q1028",
           "label": "Morocco",
           "country": "MA"
+        },
+        {
+          "role": "ministry",
+          "la": "Africam",
+          "it": "Africa",
+          "source": "curated"
         }
       ]
     },
@@ -39166,6 +40547,15 @@
           "wikidata": "Q1083",
           "label": "Salerno",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Roma",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "unnumbered": true
@@ -39234,6 +40624,12 @@
         },
         {
           "role": "exile",
+          "la": "Arméniam",
+          "it": "Armenia",
+          "source": "curated"
+        },
+        {
+          "role": "death",
           "la": "Arméniam",
           "it": "Armenia",
           "source": "curated"
@@ -39372,6 +40768,12 @@
           "wikidata": "Q83358",
           "label": "Potenza Picena",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Lunáte",
+          "it": "Lunel",
+          "source": "curated"
         }
       ]
     },
@@ -39889,6 +41291,12 @@
           "la": "Cantuariénsis in Anglia",
           "it": "Canterbury in Inghilterra",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Cántiæ",
+          "it": "Kent",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -40191,6 +41599,12 @@
           "wikidata": "Q981723",
           "label": "Saint-Guilhem-le-Désert Abbey",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Anianénsi",
+          "it": "Aniane",
+          "source": "curated"
         }
       ]
     },
@@ -40217,6 +41631,20 @@
           "la": "Beccénsis in Normánnia",
           "it": "Bec in Normandia",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Beccénsis in Normánnia",
+          "it": "Bec in Normandia",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2
         }
       ]
     },
@@ -40257,6 +41685,12 @@
           "wikidata": "Q216903",
           "label": "Castelnuovo di Garfagnana",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Plegáli",
+          "it": "Piegaro",
+          "source": "curated"
         }
       ]
     },
@@ -40282,6 +41716,12 @@
           "role": "death",
           "la": "Turris",
           "it": "Torre",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Sarisberiénsis",
+          "it": "Salisbury",
           "source": "curated"
         }
       ]
@@ -40459,6 +41899,12 @@
           "la": "Alexandrínum",
           "it": "Alessandria",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "pátria Pictaviénsi",
+          "it": "Poitiers",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -40501,6 +41947,15 @@
           "source": "lead",
           "wikidata": "Q13364",
           "label": "Ravenna",
+          "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
           "country": "IT"
         }
       ],
@@ -40677,6 +42132,12 @@
           "role": "ministry",
           "la": "província Natalénsi",
           "it": "provincia del Natal",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Basutórum",
+          "it": "Basutoland",
           "source": "curated"
         }
       ]
@@ -40926,6 +42387,12 @@
           "wikidata": "Q30974",
           "label": "Rouen",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Aurelianénsis",
+          "it": "Orléans",
+          "source": "curated"
         }
       ]
     },
@@ -41264,6 +42731,12 @@
           "wikidata": "Q241780",
           "label": "Bellegra",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Roccacasale",
+          "it": "Roccacasale",
+          "source": "curated"
         }
       ]
     },
@@ -41464,6 +42937,15 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "Hibérnia",
+          "it": "Irlanda",
+          "source": "curated",
+          "wikidata": "Q27",
+          "label": "Ireland",
+          "country": "IE"
         }
       ]
     },
@@ -41484,6 +42966,12 @@
           "wikidata": "Q8027763",
           "label": "Wistow",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Merciórum",
+          "it": "Mercia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -41527,6 +43015,12 @@
           "role": "religious_life",
           "la": "in monte Sina",
           "it": "sul monte Sinai",
+          "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "turri Nigræ Portæ",
+          "it": "torre della Porta Nigra",
           "source": "curated"
         }
       ]
@@ -41700,6 +43194,12 @@
           "wikidata": "Q13329",
           "label": "Piacenza",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Américæ civitátes",
+          "it": "città d’America",
+          "source": "curated"
         }
       ],
       "note": "Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022.",
@@ -41765,6 +43265,18 @@
           "wikidata": "Q456",
           "label": "Lyon",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Asiæ",
+          "it": "Asia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Phrýgiæ",
+          "it": "Frigia",
+          "source": "curated"
         }
       ]
     },
@@ -42004,6 +43516,12 @@
           "wikidata": "Q288",
           "label": "Tours",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "basílicam Sancti Martíni",
+          "it": "basilica di san Martino",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -42382,6 +43900,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Vaticánum",
+          "it": "Vaticano",
+          "source": "curated"
         }
       ],
       "note": "Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his optional memorial was inscribed in the General Roman Calendar on 11 October."
@@ -42640,6 +44164,12 @@
           "la": "Moguntínam",
           "it": "Magonza",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -42776,6 +44306,12 @@
           "wikidata": "Q5818",
           "label": "Córdoba",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "Albigénsi",
+          "it": "Albi",
+          "source": "curated"
         }
       ]
     },
@@ -43405,6 +44941,12 @@
           "wikidata": "Q12892",
           "label": "Antwerp",
           "country": "BE"
+        },
+        {
+          "role": "foundation",
+          "la": "Gállia",
+          "it": "Francia",
+          "source": "curated"
         }
       ]
     },
@@ -43727,6 +45269,29 @@
           "it": "Nisibi",
           "source": "curated",
           "occurrence_it": 1
+        },
+        {
+          "role": "birth",
+          "la": "Nísibi",
+          "it": "Nisibi",
+          "source": "curated",
+          "occurrence_it": 1
+        },
+        {
+          "role": "exile",
+          "la": "Edéssæ in Osrhoéne",
+          "it": "Edessa nell’Osroene",
+          "source": "curated",
+          "wikidata": "Q1190403",
+          "label": "Edessa",
+          "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Nísiben",
+          "it": "Nisibi",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "unnumbered": true,
@@ -44028,6 +45593,12 @@
           "wikidata": "Q90",
           "label": "Paris",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "ecclésiam cathedrálem",
+          "it": "cattedrale",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -44167,6 +45738,15 @@
           "la": "Ragusíni",
           "it": "Dubrovnik",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Itália",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ]
     },
@@ -44299,6 +45879,22 @@
           "la": "ínsulam Cyprum",
           "it": "isola di Cipro",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Hierosólymæ",
+          "it": "Gerusalemme",
+          "source": "curated",
+          "occurrence_it": 1,
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
+        },
+        {
+          "role": "mention",
+          "la": "Tarsénsem",
+          "it": "Tarso",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -44320,6 +45916,12 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "nicǽnam",
+          "it": "Nicea",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -44716,6 +46318,12 @@
           "la": "Sudermánnia província",
           "it": "provincia del Södermanland",
           "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Sudermánnia província",
+          "it": "provincia del Södermanland",
+          "source": "curated"
         }
       ]
     },
@@ -44756,6 +46364,12 @@
           "wikidata": "Q50112",
           "label": "Ocre",
           "country": "IT"
+        },
+        {
+          "role": "foundation",
+          "la": "monastério Sancti Spíritus",
+          "it": "monastero di Santo Spirito",
+          "source": "curated"
         }
       ]
     },
@@ -44900,6 +46514,12 @@
           "wikidata": "Q38",
           "label": "Italy",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Africæ",
+          "it": "Africa",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -44964,6 +46584,12 @@
           "wikidata": "Q3856",
           "label": "Nicosia",
           "country": "CY"
+        },
+        {
+          "role": "mention",
+          "la": "nicǽnam",
+          "it": "Nicea",
+          "source": "curated"
         }
       ]
     },
@@ -45357,6 +46983,12 @@
           "wikidata": "Q801",
           "label": "Israel",
           "country": "PS"
+        },
+        {
+          "role": "birth",
+          "la": "Thécuæ",
+          "it": "Tecoa",
+          "source": "curated"
         }
       ]
     },
@@ -45526,6 +47158,12 @@
           "role": "ministry",
           "la": "Augústæ Prætóriæ",
           "it": "Aosta",
+          "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "Alpium",
+          "it": "Alpi",
           "source": "curated"
         }
       ]
@@ -45732,6 +47370,12 @@
           "wikidata": "Q12191",
           "label": "Nantes",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Turonénsis",
+          "it": "Tours",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -45801,6 +47445,14 @@
           "la": "Arelaténsis",
           "it": "Arles",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Gállia",
+          "it": "Francia",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2
         }
       ]
     },
@@ -46154,6 +47806,12 @@
           "wikidata": "Q10332624",
           "label": "Mosteiro de Lorvão",
           "country": "PT"
+        },
+        {
+          "role": "mention",
+          "la": "Legionénsis",
+          "it": "León",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -46343,6 +48001,12 @@
           "wikidata": "Q1479",
           "label": "Bordeaux",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Nolánum",
+          "it": "Nola",
+          "source": "curated"
         }
       ]
     },
@@ -46752,6 +48416,12 @@
           "it": "Francia",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "education",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -46780,6 +48450,12 @@
           "role": "foundation",
           "la": "regióne Gargánica",
           "it": "Gargano",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Pulsanénsem",
+          "it": "Pulsano",
           "source": "curated"
         }
       ]
@@ -46949,6 +48625,12 @@
           "role": "birth",
           "la": "Cámbria",
           "it": "Galles",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "silvam Armóricæ interióris",
+          "it": "selva nell’interno della Bretagna",
           "source": "curated"
         }
       ],
@@ -47150,6 +48832,12 @@
           "la": "Nolam in Campánia",
           "it": "Nola in Campania",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Nolam in Campánia",
+          "it": "Nola in Campania",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -47173,6 +48861,13 @@
           "role": "ministry",
           "la": "Roffénsis",
           "it": "Rochester",
+          "source": "curated",
+          "person": "Ioannes Fisher"
+        },
+        {
+          "role": "death",
+          "la": "Turrem Londínii in Anglia",
+          "it": "Torre di Londra in Inghilterra",
           "source": "curated",
           "person": "Ioannes Fisher"
         }
@@ -47293,6 +48988,12 @@
           "role": "ministry",
           "la": "Remesiánæ in Dácia",
           "it": "Remesiana in Dacia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Nolánus",
+          "it": "Nola",
           "source": "curated"
         }
       ]
@@ -47438,6 +49139,12 @@
           "wikidata": "Q695349",
           "label": "Onhaye",
           "country": "BE"
+        },
+        {
+          "role": "death",
+          "la": "Mosam",
+          "it": "Mosa",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -47993,6 +49700,12 @@
           "la": "meridiánis Itáliæ regiónibus",
           "it": "regioni dell’Italia meridionale",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Materanénsi",
+          "it": "Matera",
+          "source": "curated"
         }
       ]
     },
@@ -48122,6 +49835,12 @@
           "wikidata": "Q3376",
           "label": "Trento",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Mediolanénsi",
+          "it": "Milano",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -48205,6 +49924,12 @@
           "wikidata": "Q163795",
           "label": "Valenciennes",
           "country": "FR"
+        },
+        {
+          "role": "journey",
+          "la": "Arvérno território",
+          "it": "territorio dell’Auvergne",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -48553,6 +50278,12 @@
           "wikidata": "Q194138",
           "label": "Chinon",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "brito",
+          "it": "britannica",
+          "source": "curated"
         }
       ]
     },
@@ -48676,6 +50407,12 @@
           "role": "ministry",
           "la": "Lugdunénsis",
           "it": "Lione",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Smyrnénsis",
+          "it": "Smirne",
           "source": "curated"
         }
       ],
@@ -48910,6 +50647,15 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "death",
+          "la": "urbe Roma",
+          "it": "città di Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "unnumbered": true,
@@ -49051,6 +50797,14 @@
       "asterisk": false,
       "country": "IT",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Urbis",
+          "it": "Città",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the most savage emperor Nero\" where the Latin has \"sævíssime intérfici\" (to be killed most savagely)."
@@ -49431,6 +51185,15 @@
           "wikidata": "Q2135",
           "label": "Winnipeg",
           "country": "CA"
+        },
+        {
+          "role": "ministry",
+          "la": "Ucraínæ",
+          "it": "Ucraina",
+          "source": "curated",
+          "wikidata": "Q212",
+          "label": "Ukraine",
+          "country": "UA"
         }
       ]
     },
@@ -49548,6 +51311,12 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Leonénsi",
+          "it": "Léon",
+          "source": "curated"
         }
       ]
     },
@@ -49764,6 +51533,12 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di detenzione di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -49964,6 +51739,14 @@
       "asterisk": false,
       "country": "IN",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "ministry",
+          "la": "índicos",
+          "it": "India",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin 'Ortonam, apud Frentanos' is Ortona, not Tortona."
@@ -50052,6 +51835,12 @@
           "wikidata": "Q441542",
           "label": "Altinum",
           "country": "IT"
+        },
+        {
+          "role": "education",
+          "la": "Aquileiénsis",
+          "it": "Aquileia",
+          "source": "curated"
         }
       ]
     },
@@ -50130,6 +51919,12 @@
           "wikidata": "Q7880",
           "label": "Toulouse",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "basílicæ Sancti Saturníni",
+          "it": "basilica di San Saturnino",
+          "source": "curated"
         }
       ]
     },
@@ -50233,6 +52028,19 @@
           "la": "cœnóbio Stremóntii in Lusitánia",
           "it": "cenobio di Estremoz in Portogallo",
           "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "cœnóbio Stremóntii in Lusitánia",
+          "it": "cenobio di Estremoz in Portogallo",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Lusitanórum",
+          "it": "Portogallo",
+          "source": "curated",
+          "occurrence_it": 1
         }
       ],
       "unnumbered": true,
@@ -50297,6 +52105,12 @@
           "wikidata": "Q23047",
           "label": "Cahors",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Nolánus",
+          "it": "Nola",
+          "source": "curated"
         }
       ]
     },
@@ -50939,6 +52753,27 @@
           "la": "Hibérniam",
           "it": "Irlanda",
           "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Británnos",
+          "it": "Inghilterra",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "urbe Roma",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Autissiodorénsis",
+          "it": "Auxerre",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -50999,6 +52834,12 @@
           "role": "birth",
           "la": "Aquitánia",
           "it": "Aquitania",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Trevirénsi",
+          "it": "Treviri",
           "source": "curated"
         }
       ]
@@ -51223,6 +53064,12 @@
           "it": "Alessandria",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "ministry",
+          "la": "Oriéntis",
+          "it": "Oriente",
+          "source": "curated"
         }
       ]
     },
@@ -51243,6 +53090,12 @@
           "wikidata": "Q378677",
           "label": "Faremoutiers",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "Anglórum orientálium",
+          "it": "Angli orientali",
+          "source": "curated"
         }
       ]
     },
@@ -51619,6 +53472,12 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "country": "PS"
+        },
+        {
+          "role": "journey",
+          "la": "urbe Scythópoli",
+          "it": "città di Scitopoli",
+          "source": "curated"
         }
       ]
     },
@@ -51785,6 +53644,12 @@
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Ecclésiam Constantinopolitánam",
+          "it": "Chiesa di Costantinopoli",
           "source": "curated"
         }
       ],
@@ -52083,6 +53948,15 @@
           "wikidata": "Q7077",
           "label": "Dachau",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -52128,6 +54002,24 @@
           "role": "burial",
           "la": "cœmetério Priscíllæ",
           "it": "cimitero di Priscilla",
+          "source": "curated"
+        },
+        {
+          "role": "burial",
+          "la": "Iordanórum",
+          "it": "Giordani",
+          "source": "curated"
+        },
+        {
+          "role": "burial",
+          "la": "Máximi",
+          "it": "Massimo",
+          "source": "curated"
+        },
+        {
+          "role": "burial",
+          "la": "Prætextáti",
+          "it": "Pretestato",
           "source": "curated"
         }
       ]
@@ -52272,6 +54164,18 @@
           "wikidata": "Q12191",
           "label": "Nantes",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "Antro ínsula",
+          "it": "isola di Indre",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Fontanéllæ",
+          "it": "Fontenelle",
+          "source": "curated"
         }
       ]
     },
@@ -52589,6 +54493,13 @@
           "it": "monastero di San Martino",
           "source": "curated",
           "person": "Sigisbertus"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastérium Sancti Martíni",
+          "it": "monastero di San Martino",
+          "source": "curated",
+          "person": "Placidus"
         }
       ],
       "edition_notes": {
@@ -52664,6 +54575,15 @@
           "wikidata": "Q1899",
           "label": "Kyiv",
           "country": "UA"
+        },
+        {
+          "role": "mention",
+          "la": "Rússiæ",
+          "it": "Russia",
+          "source": "curated",
+          "wikidata": "Q159",
+          "label": "Russia",
+          "country": "RU"
         }
       ]
     },
@@ -53142,6 +55062,12 @@
           "la": "Gronæ prope Gottíngam in Francónia",
           "it": "Grona vicino a Göttingen in Germania",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Európa",
+          "it": "Europa",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -53167,6 +55093,27 @@
           "la": "Iudǽam",
           "it": "Giudea",
           "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Babylóne",
+          "it": "Babilonia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Persárum",
+          "it": "persiano",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Israel",
+          "it": "Israele",
+          "source": "curated",
+          "wikidata": "Q801",
+          "label": "Israel",
+          "country": "PS"
         }
       ]
     },
@@ -53236,6 +55183,15 @@
           "wikidata": "Q169974",
           "label": "Akşehir",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Antiochíæ Pisídiæ",
+          "it": "Antiochia di Pisidia",
+          "source": "curated",
+          "wikidata": "Q579468",
+          "label": "Antioch of Pisidia",
+          "country": "TR"
         }
       ]
     },
@@ -53285,6 +55241,12 @@
         },
         {
           "role": "religious_life",
+          "la": "monastérii Dolénsis",
+          "it": "monastero di Dol",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
           "la": "monastérii Dolénsis",
           "it": "monastero di Dol",
           "source": "curated"
@@ -53544,6 +55506,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "nosocomío insanabílium",
+          "it": "ospedale degli incurabili",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -53571,6 +55539,12 @@
           "wikidata": "Q6221",
           "label": "Brescia",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Mediolanénsi",
+          "it": "Milano",
+          "source": "curated"
         }
       ]
     },
@@ -53703,6 +55677,12 @@
           "wikidata": "Q8818",
           "label": "Valencia",
           "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "provínciæ hispánæ",
+          "it": "provincia spagnola",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -53814,6 +55794,12 @@
           "role": "ministry",
           "la": "Albanénsis",
           "it": "Albano",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Concílii Œcuménici Lugdunénsis Secúndi",
+          "it": "II Concilio Ecumenico di Lione",
           "source": "curated"
         }
       ],
@@ -54135,6 +56121,12 @@
           "la": "Suécos",
           "it": "Svedesi",
           "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "Cluniacénsis",
+          "it": "cluniacense",
+          "source": "curated"
         }
       ]
     },
@@ -54271,6 +56263,12 @@
           "wikidata": "Q207587",
           "label": "Rochefort",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Rothómago",
+          "it": "Rouen",
+          "source": "curated"
         }
       ]
     },
@@ -54362,6 +56360,14 @@
       "asterisk": false,
       "country": "PS",
       "typology": "celebratio",
+      "places": [
+        {
+          "role": "foundation",
+          "la": "Monte Carmélo",
+          "it": "Monte Carmelo",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true
     },
     {
@@ -54560,6 +56566,14 @@
           "wikidata": "Q549761",
           "label": "Warwick",
           "country": "GB"
+        },
+        {
+          "role": "ministry",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "person": "Ioannes Sugar",
+          "occurrence_it": 2
         }
       ]
     },
@@ -54713,6 +56727,12 @@
           "wikidata": "Q6343",
           "label": "Carthage",
           "country": "TN"
+        },
+        {
+          "role": "birth",
+          "la": "Scillitanórum",
+          "it": "Scillitani",
+          "source": "curated"
         }
       ]
     },
@@ -54865,6 +56885,15 @@
           "wikidata": "Q1201672",
           "label": "Deurne",
           "country": "BE"
+        },
+        {
+          "role": "birth",
+          "la": "Hibérnia",
+          "it": "Irlanda",
+          "source": "curated",
+          "wikidata": "Q27",
+          "label": "Ireland",
+          "country": "IE"
         }
       ],
       "edition_notes": {
@@ -54888,6 +56917,13 @@
           "wikidata": "Q8023745",
           "label": "Winchcombe Abbey",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Merciórum",
+          "it": "Mercia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -54934,6 +56970,12 @@
           "la": "Terram Sanctam",
           "it": "Terra Santa",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "hibérni",
+          "it": "irlandese",
+          "source": "curated"
         }
       ]
     },
@@ -54966,6 +57008,15 @@
           "la": "erémo montis Zobor",
           "it": "eremo sul monte Zobor",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "edition_notes": {
@@ -55004,6 +57055,22 @@
           "la": "Lithuánia",
           "it": "Lituania",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Lithuániæ",
+          "it": "lituano",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -55222,6 +57289,13 @@
           "la": "Vósego monte",
           "it": "monti Vosgi",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Austrásiæ",
+          "it": "Austrasia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -55242,6 +57316,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Porta Ænea domus Palatínæ",
+          "it": "Porta Bronzea del suo Palazzo",
+          "source": "curated"
         }
       ]
     },
@@ -55262,6 +57342,12 @@
           "wikidata": "Q803",
           "label": "Utrecht",
           "country": "NL"
+        },
+        {
+          "role": "ministry",
+          "la": "Frísios",
+          "it": "Frisoni",
+          "source": "curated"
         }
       ]
     },
@@ -55552,6 +57638,12 @@
           "wikidata": "Q803",
           "label": "Utrecht",
           "country": "NL"
+        },
+        {
+          "role": "mention",
+          "la": "Cluniacénces",
+          "it": "cluniacensi",
+          "source": "curated"
         }
       ]
     },
@@ -55622,6 +57714,12 @@
           "it": "Inghilterra",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "education",
+          "la": "Segóbiæ",
+          "it": "Segovia",
+          "source": "curated"
         }
       ]
     },
@@ -55720,6 +57818,15 @@
           "la": "monte Carmélo",
           "it": "monte Carmelo",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Israel",
+          "it": "Israele",
+          "source": "curated",
+          "wikidata": "Q801",
+          "label": "Israel",
+          "country": "PS"
         }
       ]
     },
@@ -56244,6 +58351,14 @@
       "asterisk": false,
       "country": "PS",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "journey",
+          "la": "Calvárium montem",
+          "it": "monte Calvario",
+          "source": "curated"
+        }
+      ],
       "note": "By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised from an obligatory memorial to a feast.",
       "unnumbered": true
     },
@@ -56284,6 +58399,12 @@
           "wikidata": "Q181238",
           "label": "Africa",
           "country": "TN"
+        },
+        {
+          "role": "mention",
+          "la": "Massilitanórum",
+          "it": "Massilitani",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -56583,6 +58704,15 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Suécia",
+          "it": "Svezia",
+          "source": "curated",
+          "wikidata": "Q34",
+          "label": "Sweden",
+          "country": "SE"
         }
       ],
       "unnumbered": true,
@@ -56802,6 +58932,15 @@
           "wikidata": "Q7077",
           "label": "Dachau",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -56994,6 +59133,12 @@
           "it": "fiume Dneper vicino a Smolensk",
           "source": "curated",
           "person": "Gleb"
+        },
+        {
+          "role": "mention",
+          "la": "Ruthéni",
+          "it": "Rostov",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -57069,6 +59214,15 @@
           "wikidata": "Q1280257",
           "label": "Stary Sącz",
           "country": "PL"
+        },
+        {
+          "role": "birth",
+          "la": "Hungáriæ",
+          "it": "Ungheria",
+          "source": "curated",
+          "wikidata": "Q28",
+          "label": "Hungary",
+          "country": "HU"
         }
       ]
     },
@@ -57114,6 +59268,12 @@
           "role": "journey",
           "la": "Béthlehem",
           "it": "Betlemme",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Oriénte",
+          "it": "Oriente",
           "source": "curated"
         }
       ]
@@ -57892,6 +60052,18 @@
           "la": "Scótia",
           "it": "Scozia",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "anglus",
+          "it": "inglese",
+          "source": "curated"
+        },
+        {
+          "role": "education",
+          "la": "basílica Lateranénsi",
+          "it": "basilica Lateranense",
+          "source": "curated"
         }
       ]
     },
@@ -57998,6 +60170,20 @@
           "wikidata": "Q207587",
           "label": "Rochefort",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Bituricénsi",
+          "it": "Bourges",
+          "source": "curated",
+          "person": "Petrus Iosephus Le Groing de La Romagere"
+        },
+        {
+          "role": "ministry",
+          "la": "pago Lemovicénsi",
+          "it": "territorio di Limoges",
+          "source": "curated",
+          "person": "Marcellus Gaucherius Labigne de Reignefort"
         }
       ]
     },
@@ -58116,7 +60302,15 @@
       "entry": 1,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "burial",
+          "la": "Ephesi",
+          "it": "Efeso",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0727-pantaleon",
@@ -58161,6 +60355,12 @@
           "wikidata": "Q203529",
           "label": "Lons-le-Saunier",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Bisuntínus",
+          "it": "Besançon",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -58340,6 +60540,12 @@
           "wikidata": "Q5818",
           "label": "Córdoba",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "syri",
+          "it": "siro",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -58381,6 +60587,13 @@
           "la": "Velicénsis",
           "it": "Drama",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Bulgarórum",
+          "it": "Bulgari",
+          "source": "curated",
+          "occurrence_it": 1
         }
       ]
     },
@@ -58617,7 +60830,15 @@
       "entry": 1,
       "asterisk": false,
       "country": "TR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "birth",
+          "la": "antiochéni",
+          "it": "Antiochia",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0728-victor-i",
@@ -58770,6 +60991,12 @@
           "wikidata": "Q34",
           "label": "Sweden",
           "country": "SE"
+        },
+        {
+          "role": "mention",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -58893,6 +61120,12 @@
           "wikidata": "Q4901085",
           "label": "Bharananganam",
           "country": "IN"
+        },
+        {
+          "role": "religious_life",
+          "la": "Malabariénses",
+          "it": "Malabaresi",
+          "source": "curated"
         }
       ],
       "note": "Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October 2008."
@@ -58905,6 +61138,14 @@
       "asterisk": false,
       "country": "PS",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Bethániæ prope Hierosólymam",
+          "it": "Betania vicino a Gerusalemme",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true
     },
     {
@@ -59052,6 +61293,12 @@
           "wikidata": "Q25804",
           "label": "Trondheim",
           "country": "NO"
+        },
+        {
+          "role": "education",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -59707,6 +61954,18 @@
           "la": "Autissiodorénsis",
           "it": "Auxerre",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Armóricæ regiónis",
+          "it": "Bretagna francese",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Britannórum",
+          "it": "Britanni",
+          "source": "curated"
         }
       ]
     },
@@ -59922,6 +62181,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -59979,6 +62247,15 @@
           "la": "Sanctæ Agathæ Gothórum",
           "it": "Sant’Agata dei Goti",
           "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Nucériæ Paganórum in Campánia",
+          "it": "Nocera dei Pagani in Campania",
+          "source": "curated",
+          "wikidata": "Q470839",
+          "label": "Nuceria",
+          "country": "IT"
         }
       ],
       "unnumbered": true,
@@ -60241,6 +62518,12 @@
           "la": "Concílium Œcuménicum Tridentínum",
           "it": "Concilio di Trento",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Európæ",
+          "it": "Europa",
+          "source": "curated"
         }
       ],
       "note": "Peter Faber, blessed in the 2004 editions, was canonized on 17 December 2013."
@@ -60342,6 +62625,12 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacco",
+          "source": "curated"
         }
       ]
     },
@@ -60396,6 +62685,18 @@
           "role": "ministry",
           "la": "Vercellénsis in Ligúria",
           "it": "Vercelli",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "nicǽnæ",
+          "it": "Nicea",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "regióne subalpína",
+          "it": "regione subalpina",
           "source": "curated"
         }
       ],
@@ -60536,6 +62837,12 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Angliam",
+          "it": "Inghilterra",
           "source": "curated"
         }
       ]
@@ -60740,6 +63047,18 @@
           "wikidata": "Q190827",
           "label": "Autun",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "basílicam sancti Symphoriáni mártyris",
+          "it": "basilica di san Sinforiano martire",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Turonénsis",
+          "it": "Tours",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -60811,6 +63130,12 @@
           "role": "ministry",
           "la": "Ecclésiæ Zagrebiénsi",
           "it": "Chiesa di Zagabria",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Dalmátiæ",
+          "it": "Dalmazia",
           "source": "curated"
         }
       ]
@@ -60910,6 +63235,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Thessalonicénsis",
+          "it": "Salonicco",
+          "source": "curated"
         }
       ]
     },
@@ -61189,6 +63520,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "exile",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -61411,6 +63751,15 @@
           "wikidata": "Q36376",
           "label": "Montegranaro",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Pisáuro",
+          "it": "Pesaro",
+          "source": "curated",
+          "wikidata": "Q13134",
+          "label": "Pesaro",
+          "country": "IT"
         }
       ],
       "edition_notes": {
@@ -61539,6 +63888,18 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Occidénte",
+          "it": "Occidente",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Oriénte",
+          "it": "Oriente",
+          "source": "curated"
         }
       ]
     },
@@ -61681,6 +64042,15 @@
           "la": "castris detentiónis Dacháni",
           "it": "campo di detenzione di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -61815,6 +64185,18 @@
           "wikidata": "Q30974",
           "label": "Rouen",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Morinórum",
+          "it": "Morini",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Nerviórum",
+          "it": "Nervi",
+          "source": "curated"
         }
       ]
     },
@@ -61985,6 +64367,20 @@
           "wikidata": "Q115",
           "label": "Ethiopia",
           "country": "ET"
+        },
+        {
+          "role": "birth",
+          "la": "Nannétibus",
+          "it": "Nantes",
+          "source": "curated",
+          "person": "Gundisalvus Vaz Lopez-Netto"
+        },
+        {
+          "role": "birth",
+          "la": "Vindocíno",
+          "it": "Vendôme",
+          "source": "curated",
+          "person": "Franciscus Nourry"
         }
       ]
     },
@@ -62087,6 +64483,12 @@
           "role": "ministry",
           "la": "Oxoménsis",
           "it": "Osma",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "regiónibus hǽresi Albigénsi perturbátis",
+          "it": "regioni sconvolte dall’eresia albigese",
           "source": "curated"
         }
       ],
@@ -62325,6 +64727,12 @@
           "wikidata": "Q84",
           "label": "London",
           "country": "GB"
+        },
+        {
+          "role": "death",
+          "la": "Sanctum Paulum",
+          "it": "cattedrale di San Paolo",
+          "source": "curated"
         }
       ]
     },
@@ -62591,6 +64999,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Porta Ænea",
+          "it": "Porta di Bronzo",
+          "source": "curated"
         }
       ]
     },
@@ -63035,6 +65449,12 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polóni",
+          "it": "polacchi",
+          "source": "curated"
         }
       ]
     },
@@ -63255,6 +65675,12 @@
           "wikidata": "Q181285",
           "label": "Cambrai",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Trevirénsi",
+          "it": "Treviri",
+          "source": "curated"
         }
       ]
     },
@@ -63394,6 +65820,12 @@
           "it": "Tibet",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "religious_life",
+          "la": "Montis Iovis",
+          "it": "Mont-Joux",
+          "source": "curated"
         }
       ]
     },
@@ -63558,6 +65990,12 @@
           "wikidata": "Q1013633",
           "label": "Ruthin",
           "country": "GB"
+        },
+        {
+          "role": "birth",
+          "la": "hibérnus",
+          "it": "irlandese",
+          "source": "curated"
         }
       ]
     },
@@ -63727,6 +66165,15 @@
           "wikidata": "Q7077",
           "label": "Dachau",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -63790,6 +66237,12 @@
           "it": "cimitero sulla via Tiburtina",
           "source": "curated",
           "person": "Hippolytus"
+        },
+        {
+          "role": "death",
+          "la": "Sardíniam",
+          "it": "Sardegna",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -63948,6 +66401,15 @@
           "wikidata": "Q1236115",
           "label": "Altenberg Abbey, Solms",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Hungáriæ",
+          "it": "Ungheria",
+          "source": "curated",
+          "wikidata": "Q28",
+          "label": "Hungary",
+          "country": "HU"
         }
       ],
       "edition_notes": {
@@ -64698,6 +67160,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -64973,6 +67441,12 @@
           "wikidata": "Q68136",
           "label": "Sion",
           "country": "CH"
+        },
+        {
+          "role": "mention",
+          "la": "Agaunénsium",
+          "it": "Agauno",
+          "source": "curated"
         }
       ]
     },
@@ -66158,6 +68632,12 @@
           "wikidata": "Q1458",
           "label": "Calabria",
           "country": "IT"
+        },
+        {
+          "role": "foundation",
+          "la": "monastérium Græcórum",
+          "it": "monastero dei Greci",
+          "source": "curated"
         }
       ]
     },
@@ -66310,6 +68790,12 @@
           "wikidata": "Q503331",
           "label": "Dorchester",
           "country": "GB"
+        },
+        {
+          "role": "education",
+          "la": "Duáci",
+          "it": "Douai",
+          "source": "curated"
         }
       ]
     },
@@ -66565,6 +69051,12 @@
           "wikidata": "Q2751",
           "label": "Siena",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Itáliam",
+          "it": "Italia",
+          "source": "curated"
         }
       ],
       "note": "Bernardo Tolomei, blessed in the 2004 editions, was canonized on 26 April 2009.",
@@ -66696,6 +69188,12 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacco",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -66781,6 +69279,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "cœmetério via Tiburtína",
+          "it": "cimitero sulla via Tiburtina",
+          "source": "curated"
         }
       ]
     },
@@ -66888,6 +69392,13 @@
           "wikidata": "Q191772",
           "label": "Mende",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Gálliam",
+          "it": "Francia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "edition_notes": {
@@ -67059,6 +69570,15 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -67644,6 +70164,12 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -67670,6 +70196,21 @@
           "wikidata": "Q668",
           "label": "India",
           "country": "IN"
+        },
+        {
+          "role": "death",
+          "la": "India",
+          "it": "India",
+          "source": "curated",
+          "wikidata": "Q668",
+          "label": "India",
+          "country": "IN"
+        },
+        {
+          "role": "mention",
+          "la": "Iordánem",
+          "it": "Giordano",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -67895,6 +70436,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "edition_notes": {
@@ -67918,6 +70468,12 @@
           "wikidata": "Q1731",
           "label": "Dresden",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polóni",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -68272,6 +70828,17 @@
           "source": "lead",
           "wikidata": "Q44210",
           "label": "Córdoba",
+          "country": "AR"
+        },
+        {
+          "role": "foundation",
+          "la": "Argentína",
+          "it": "Argentina",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q414",
+          "label": "Argentina",
           "country": "AR"
         }
       ],
@@ -68759,6 +71326,12 @@
           "la": "Reiénsis",
           "it": "Riez",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "hispánus",
+          "it": "spagnola",
+          "source": "curated"
         }
       ]
     },
@@ -69150,6 +71723,15 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Grǽcia",
+          "it": "Grecia",
+          "source": "curated",
+          "wikidata": "Q41",
+          "label": "Greece",
+          "country": "GR"
         }
       ]
     },
@@ -69220,6 +71802,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Nazianzénus",
+          "it": "Nazianzo",
+          "source": "curated"
         }
       ]
     },
@@ -69859,6 +72447,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -70121,6 +72718,24 @@
           "la": "Tybúrni",
           "it": "Tyburn",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "angli",
+          "it": "inglesi",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "cambriénsis",
+          "it": "gallese",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "hibérnus",
+          "it": "irlandese",
+          "source": "curated"
         }
       ]
     },
@@ -70161,6 +72776,12 @@
           "wikidata": "Q10305",
           "label": "Zaragoza",
           "country": "ES"
+        },
+        {
+          "role": "foundation",
+          "la": "valetudinárium huius civitátis",
+          "it": "ospedale di questa città",
+          "source": "curated"
         }
       ]
     },
@@ -70456,6 +73077,12 @@
           "la": "Iordánis álveum",
           "it": "Giordano",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "terram promissiónis",
+          "it": "terra promessa",
+          "source": "curated"
         }
       ]
     },
@@ -70576,6 +73203,12 @@
           "wikidata": "Q1476",
           "label": "Le Mans",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Turonénsis",
+          "it": "Tours",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -70619,6 +73252,12 @@
           "wikidata": "Q42807",
           "label": "Nîmes",
           "country": "FR"
+        },
+        {
+          "role": "foundation",
+          "la": "Camária",
+          "it": "Camargue",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -70722,6 +73361,13 @@
           "wikidata": "Q23042",
           "label": "Paterna",
           "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "Valentínæ",
+          "it": "Valencia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -71340,6 +73986,12 @@
           "it": "Stavelot",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "foundation",
+          "la": "Sollemniacénse",
+          "it": "Solesmes",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -71560,6 +74212,13 @@
           "wikidata": "Q79",
           "label": "Egypt",
           "country": "EG"
+        },
+        {
+          "role": "journey",
+          "la": "terram promissiónis",
+          "it": "terra promessa",
+          "source": "curated",
+          "occurrence_it": 1
         }
       ]
     },
@@ -71680,6 +74339,12 @@
           "wikidata": "Q365",
           "label": "Cologne",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Süchteln",
+          "it": "Süchteln",
+          "source": "curated"
         }
       ]
     },
@@ -71985,6 +74650,12 @@
           "la": "monastérium Sancti Michaélis",
           "it": "monastero di San Michele",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "montis Gargáni",
+          "it": "monte Gargano",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -72084,7 +74755,21 @@
       "entry": 1,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Ierúsalem",
+          "it": "Gerusalemme",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "terram promissiónis",
+          "it": "terra promessa",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0906-onesiphorus",
@@ -72099,6 +74784,12 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Ephesi",
+          "it": "Efeso",
           "source": "curated"
         }
       ]
@@ -72295,6 +74986,17 @@
           "wikidata": "Q270",
           "label": "Warsaw",
           "country": "PL"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -72438,6 +75140,12 @@
           "wikidata": "Q47135",
           "label": "Châlons-en-Champagne",
           "country": "FR"
+        },
+        {
+          "role": "education",
+          "la": "Trecénsis",
+          "it": "Troyes",
+          "source": "curated"
         }
       ]
     },
@@ -72864,6 +75572,18 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "syri",
+          "it": "sira",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Sáxonum Frisonúmque",
+          "it": "Sassoni e dei Frisoni",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -73197,6 +75917,15 @@
           "wikidata": "Q160268",
           "label": "Gross-Rosen concentration camp",
           "country": "PL"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -73347,6 +76076,12 @@
           "la": "Parísiis",
           "it": "Parigi",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "scotus",
+          "it": "scozzese",
+          "source": "curated"
         }
       ]
     },
@@ -73446,7 +76181,15 @@
       "entry": 2,
       "asterisk": false,
       "country": "TN",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Africa",
+          "it": "Africa",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:0910-pulcheria",
@@ -73764,6 +76507,12 @@
           "wikidata": "Q456",
           "label": "Lyon",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Rhódanum et Ararem flúmina",
+          "it": "Rodano e la Saône",
+          "source": "curated"
         }
       ]
     },
@@ -74110,6 +76859,12 @@
           "la": "ecclésiæ Maríæ Laci",
           "it": "chiesa di Mariensee",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "loca sacra",
+          "it": "luoghi santi",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -74359,6 +77114,12 @@
           "la": "ecclésiæ Calónnæ",
           "it": "chiesa di Chalonnes-sur-Loire",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Turonénsem",
+          "it": "Tours",
+          "source": "curated"
         }
       ]
     },
@@ -74505,6 +77266,14 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
+      "places": [
+        {
+          "role": "dedication",
+          "la": "basílicæ Resurrectiónis",
+          "it": "basilica della Risurrezione",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true
     },
     {
@@ -74678,6 +77447,12 @@
           "role": "ministry",
           "la": "Vercellénsi",
           "it": "Vercelli",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "montis Carméli",
+          "it": "monte Carmelo",
           "source": "curated"
         }
       ]
@@ -75082,6 +77857,15 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -75198,6 +77982,12 @@
           "wikidata": "Q470839",
           "label": "Nuceria",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Nolánus",
+          "it": "Nola",
+          "source": "curated"
         }
       ]
     },
@@ -75218,6 +78008,12 @@
           "wikidata": "Q1788927",
           "label": "Whithorn",
           "country": "GB"
+        },
+        {
+          "role": "ministry",
+          "la": "Pictos",
+          "it": "Pitti",
+          "source": "curated"
         }
       ]
     },
@@ -75238,6 +78034,12 @@
           "wikidata": "Q5818",
           "label": "Córdoba",
           "country": "ES"
+        },
+        {
+          "role": "birth",
+          "la": "Oriéntis pártibus",
+          "it": "Oriente",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -75261,6 +78063,13 @@
           "wikidata": "Q1085",
           "label": "Prague",
           "country": "CZ"
+        },
+        {
+          "role": "mention",
+          "la": "Bohémiæ",
+          "it": "Boemia",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -75281,6 +78090,12 @@
           "wikidata": "Q1018668",
           "label": "Wilton",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Anglórum",
+          "it": "Angli",
+          "source": "curated"
         }
       ]
     },
@@ -75707,6 +78522,12 @@
           "role": "ministry",
           "la": "Aragóniæ regno",
           "it": "regno di Aragona",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "ecclésiæ cathedrális",
+          "it": "cattedrale",
           "source": "curated"
         }
       ]
@@ -76329,6 +79150,13 @@
           "la": "Tarsénsis",
           "it": "Tarso",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -76621,6 +79449,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "dedication",
+          "la": "antíqua diaconía Urbis",
+          "it": "antica diaconia dell’Urbe",
+          "source": "curated"
         }
       ]
     },
@@ -76908,6 +79742,12 @@
           "wikidata": "Q207632",
           "label": "Apt",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Ægyptiórum",
+          "it": "Egitto",
+          "source": "curated"
         }
       ]
     },
@@ -76928,6 +79768,18 @@
           "wikidata": "Q1027137",
           "label": "Llancarfan",
           "country": "GB"
+        },
+        {
+          "role": "cult",
+          "la": "Británnia Minóre",
+          "it": "Bretagna",
+          "source": "curated"
+        },
+        {
+          "role": "cult",
+          "la": "Cornúbia",
+          "it": "Cornovaglia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -77123,6 +79975,12 @@
           "wikidata": "Q69545",
           "label": "Saint-Maurice",
           "country": "CH"
+        },
+        {
+          "role": "mention",
+          "la": "Lugdunénsis",
+          "it": "Lione",
+          "source": "curated"
         }
       ]
     },
@@ -77335,6 +80193,14 @@
           "wikidata": "Q8684",
           "label": "Seoul",
           "country": "KR"
+        },
+        {
+          "role": "mention",
+          "la": "Coréam",
+          "it": "Corea",
+          "source": "curated",
+          "person": "Augustinus Yu Chin Gil",
+          "occurrence_it": 2
         }
       ]
     },
@@ -77593,6 +80459,15 @@
           "wikidata": "Q181238",
           "label": "Africa",
           "country": "TN"
+        },
+        {
+          "role": "exile",
+          "la": "Syracúsis",
+          "it": "Siracusa",
+          "source": "curated",
+          "wikidata": "Q13670",
+          "label": "Syracuse",
+          "country": "IT"
         }
       ]
     },
@@ -77653,6 +80528,12 @@
           "wikidata": "Q82681",
           "label": "Tlaxcala",
           "country": "MX"
+        },
+        {
+          "role": "mention",
+          "la": "Américæ",
+          "it": "America",
+          "source": "curated"
         }
       ],
       "note": "Cristóbal, Antonio and Juan, the child martyrs of Tlaxcala, blessed in the 2004 editions, were canonized on 15 October 2017."
@@ -78378,6 +81259,14 @@
       "asterisk": false,
       "country": "TR",
       "typology": "dies_natalis",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Cyrrhi in Euphratésia",
+          "it": "Cirro nella provincia di Eufratesia",
+          "source": "curated"
+        }
+      ],
       "unnumbered": true,
       "same_eulogy": [
         "mr:0927-cosmas-et-damianus"
@@ -78390,7 +81279,20 @@
       "entry": 2,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Israel",
+          "it": "Israele",
+          "source": "curated",
+          "occurrence": 1,
+          "occurrence_it": 1,
+          "wikidata": "Q801",
+          "label": "Israel",
+          "country": "PS"
+        }
+      ]
     },
     {
       "id": "mr:0926-senator",
@@ -78879,6 +81781,12 @@
           "la": "monastério Storacénsi",
           "it": "monastero di Storaco",
           "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Itáliam",
+          "it": "Italia",
+          "source": "curated"
         }
       ]
     },
@@ -78899,6 +81807,15 @@
           "wikidata": "Q90",
           "label": "Paris",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Ariáni",
+          "it": "Ariano",
+          "source": "curated",
+          "wikidata": "Q55000",
+          "label": "Ariano Irpino",
+          "country": "IT"
         }
       ]
     },
@@ -79003,6 +81920,12 @@
           "it": "Boemia",
           "source": "curated",
           "occurrence_it": 1
+        },
+        {
+          "role": "mention",
+          "la": "Pragæ",
+          "it": "Praga",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -79087,6 +82010,12 @@
           "wikidata": "Q7218734",
           "label": "Wadi Khureitun",
           "country": "PS"
+        },
+        {
+          "role": "foundation",
+          "la": "desérto",
+          "it": "deserto",
+          "source": "curated"
         }
       ]
     },
@@ -79283,6 +82212,19 @@
           "la": "Túberam",
           "it": "monastero di Tauberbischofsheim",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Germániam",
+          "it": "Germania",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -79322,6 +82264,16 @@
           "source": "lead",
           "wikidata": "Q2807",
           "label": "Madrid",
+          "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "Hispániæ",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q29",
+          "label": "Spain",
           "country": "ES"
         }
       ]
@@ -79700,6 +82652,12 @@
           "la": "monastérium Sancti Onúphrii",
           "it": "monastero di sant’Onofrio",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "colle Ianículo",
+          "it": "colle Gianicolo",
+          "source": "curated"
         }
       ]
     },
@@ -79953,6 +82911,13 @@
           "la": "spelúncam prope confluéntes ramos Euphrátis",
           "it": "grotta alla confluenza dei rami del fiume Eufrate",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Armenórum",
+          "it": "Armeni",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -80000,6 +82965,12 @@
           "it": "Inghilterra",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "religious_life",
+          "la": "románus",
+          "it": "romano",
+          "source": "curated"
         }
       ]
     },
@@ -80031,6 +83002,12 @@
           "role": "religious_life",
           "la": "móntibus Iurénsibus",
           "it": "massiccio del Giura",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Crispeiénsis in Gállia",
+          "it": "Crépy in Francia",
           "source": "curated"
         }
       ]
@@ -80297,6 +83274,12 @@
           "wikidata": "Q3138",
           "label": "Trier",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Turonénsi",
+          "it": "Tours",
+          "source": "curated"
         }
       ]
     },
@@ -80343,6 +83326,12 @@
               "it": "A Condé-sur-l’Escault nell’Hainault sempre nell’odierno Belgio"
             }
           ]
+        },
+        {
+          "role": "birth",
+          "la": "scoti",
+          "it": "scozzese",
+          "source": "curated"
         }
       ]
     },
@@ -80879,6 +83868,12 @@
           "la": "Atheniénsium",
           "it": "Atene",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Areopágo",
+          "it": "Areopágo",
+          "source": "curated"
         }
       ]
     },
@@ -80980,6 +83975,12 @@
           "wikidata": "Q44160",
           "label": "Toulon",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Arelaténsis",
+          "it": "Arles",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -81004,6 +84005,12 @@
           "wikidata": "Q3057629",
           "label": "Old Saxony",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "angli",
+          "it": "inglese",
+          "source": "curated"
         }
       ]
     },
@@ -81364,7 +84371,21 @@
       "entry": 3,
       "asterisk": false,
       "country": "IR",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "birth",
+          "la": "Garamæórum terra",
+          "it": "terra dei Garamei",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Pérsidem",
+          "it": "Persia",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1005-apollinaris",
@@ -81383,6 +84404,13 @@
           "wikidata": "Q8848",
           "label": "Valence",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Viennénsis",
+          "it": "Vienne",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "edition_notes": {
@@ -81460,6 +84488,16 @@
           "source": "lead",
           "wikidata": "Q15699",
           "label": "León",
+          "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "Hispániæ",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q29",
+          "label": "Spain",
           "country": "ES"
         }
       ],
@@ -81570,6 +84608,12 @@
           "wikidata": "Q2090",
           "label": "Nuremberg",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Senénsis",
+          "it": "Siena",
+          "source": "curated"
         }
       ]
     },
@@ -81719,6 +84763,16 @@
           "wikidata": "Q7265136",
           "label": "Płonkowo",
           "country": "PL"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "edition_notes": {
@@ -81757,6 +84811,12 @@
           "la": "Romam",
           "it": "Roma",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Gállia",
+          "it": "Francia",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -81781,6 +84841,12 @@
           "wikidata": "Q849709",
           "label": "Laodicea on the Lycus",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Asiæ",
+          "it": "provincia d’Asia",
+          "source": "curated"
         }
       ]
     },
@@ -81867,6 +84933,24 @@
           "la": "Heraclíam",
           "it": "Eraclea",
           "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "Venétiis",
+          "it": "Venezia",
+          "source": "curated",
+          "wikidata": "Q641",
+          "label": "Venice",
+          "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Opitérgio",
+          "it": "Oderzo",
+          "source": "curated",
+          "wikidata": "Q48087",
+          "label": "Oderzo",
+          "country": "IT"
         }
       ],
       "edition_notes": {
@@ -81890,6 +84974,12 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Lindisfarnénsis",
+          "it": "Lindisfarne",
+          "source": "curated"
         }
       ]
     },
@@ -82360,6 +85450,12 @@
           "wikidata": "Q1308",
           "label": "Como",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Mediolanénsi",
+          "it": "Milano",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -82429,6 +85525,12 @@
           "wikidata": "Q1449",
           "label": "Genoa",
           "country": "IT"
+        },
+        {
+          "role": "journey",
+          "la": "Terra Sancta",
+          "it": "Terra Santa",
+          "source": "curated"
         }
       ]
     },
@@ -82513,6 +85615,15 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Lucæ in Etrúria",
+          "it": "Lucca",
+          "source": "curated",
+          "wikidata": "Q13373",
+          "label": "Lucca",
+          "country": "IT"
         }
       ],
       "unnumbered": true,
@@ -82533,6 +85644,12 @@
           "role": "birth",
           "la": "urbe Ur Chaldæórum",
           "it": "Ur dei Caldei",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "terram",
+          "it": "terra promessa",
           "source": "curated"
         }
       ]
@@ -82617,6 +85734,12 @@
           "wikidata": "Q859779",
           "label": "Bigorre",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "Aquitánia",
+          "it": "Aquitania",
+          "source": "curated"
         }
       ]
     },
@@ -82909,6 +86032,12 @@
           "wikidata": "Q1231948",
           "label": "Populonia",
           "country": "IT"
+        },
+        {
+          "role": "exile",
+          "la": "Ætháliam ínsulam",
+          "it": "isola d’Elba",
+          "source": "curated"
         }
       ]
     },
@@ -82954,6 +86083,12 @@
           "role": "ministry",
           "la": "Eboracénsis",
           "it": "York",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Northúmbriæ",
+          "it": "Northumbria",
           "source": "curated"
         }
       ]
@@ -83097,6 +86232,17 @@
           "la": "Plocénsis",
           "it": "Płock",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -83117,6 +86263,12 @@
           "wikidata": "Q41329",
           "label": "Linz",
           "country": "AT"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -83139,6 +86291,12 @@
           "role": "ministry",
           "la": "Samaríam",
           "it": "Samaria",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Æthíopum",
+          "it": "Etiopia",
           "source": "curated"
         }
       ],
@@ -83243,6 +86401,12 @@
           "wikidata": "Q216966",
           "label": "Uzès",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Arelaténsis",
+          "it": "Arles",
+          "source": "curated"
         }
       ]
     },
@@ -83356,6 +86520,12 @@
           "wikidata": "Q51432",
           "label": "Gniezno",
           "country": "PL"
+        },
+        {
+          "role": "mention",
+          "la": "Pragénsis",
+          "it": "Praga",
+          "source": "curated"
         }
       ]
     },
@@ -83562,7 +86732,15 @@
       "entry": 3,
       "asterisk": false,
       "country": "TN",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Africa",
+          "it": "Africa",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1012-opilio",
@@ -83763,6 +86941,16 @@
           "wikidata": "Q7341",
           "label": "Auschwitz",
           "country": "PL"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -83886,6 +87074,12 @@
           "wikidata": "Q288",
           "label": "Tours",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "basílicam Sancti Martíni",
+          "it": "basilica di San Martino",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -83929,6 +87123,15 @@
           "wikidata": "Q610",
           "label": "Iona",
           "country": "GB"
+        },
+        {
+          "role": "birth",
+          "la": "Hibérnia",
+          "it": "Irlanda",
+          "source": "curated",
+          "wikidata": "Q27",
+          "label": "Ireland",
+          "country": "IE"
         }
       ]
     },
@@ -83975,6 +87178,12 @@
           "wikidata": "Q1361118",
           "label": "Saint-Cirgues",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Aureliacénsis",
+          "it": "Aurillac",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -84306,6 +87515,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -84399,6 +87617,24 @@
           "la": "Británnia",
           "it": "Bretagna",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Autissiodorénsi",
+          "it": "Auxerre",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Trecénsis",
+          "it": "Troyes",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "apud Germános",
+          "it": "tra i Germani",
+          "source": "curated"
         }
       ]
     },
@@ -84424,6 +87660,12 @@
           "role": "religious_life",
           "la": "monastério Ochsenfúrti",
           "it": "monastero di Ochsenfurt",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Anglia",
+          "it": "Inghilterra",
           "source": "curated"
         }
       ]
@@ -84600,7 +87842,21 @@
       "entry": 5,
       "asterisk": false,
       "country": "TN",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Africa",
+          "it": "Africa",
+          "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Mauros",
+          "it": "Mori",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1016-amandus-et-iunianus",
@@ -84923,6 +88179,14 @@
       "asterisk": false,
       "country": "IT",
       "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Philippénses",
+          "it": "Filippesi",
+          "source": "curated"
+        }
+      ],
       "same_eulogy": [
         "mr:1218-rufus-et-zosimus"
       ]
@@ -85279,6 +88543,12 @@
           "la": "Antiochíæ",
           "it": "Antiochia",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Urbe",
+          "it": "Roma",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -85386,6 +88656,13 @@
           "wikidata": "Q641669",
           "label": "Arenas de San Pedro",
           "country": "ES"
+        },
+        {
+          "role": "ministry",
+          "la": "Hispániam",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "same_eulogy": [
@@ -85454,6 +88731,12 @@
           "role": "death",
           "la": "vico Ossernenon, tunc in território Canadénsi",
           "it": "villaggio di Ossernenon, oggi in Canada",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Hurónes",
+          "it": "Uroni",
           "source": "curated"
         }
       ],
@@ -85730,6 +89013,12 @@
           "wikidata": "Q84",
           "label": "London",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Arundeliénsis",
+          "it": "Arundel",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -86146,6 +89435,12 @@
           "wikidata": "Q1479",
           "label": "Bordeaux",
           "country": "FR"
+        },
+        {
+          "role": "journey",
+          "la": "pártibus Oriéntis",
+          "it": "Oriente",
+          "source": "curated"
         }
       ]
     },
@@ -86207,6 +89502,15 @@
           "wikidata": "Q79",
           "label": "Egypt",
           "country": "EG"
+        },
+        {
+          "role": "death",
+          "la": "Ægýpti",
+          "it": "Egitto",
+          "source": "curated",
+          "wikidata": "Q79",
+          "label": "Egypt",
+          "country": "EG"
         }
       ]
     },
@@ -86256,6 +89560,12 @@
           "wikidata": "Q23482",
           "label": "Marseille",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "ecclésiæ Sancti Victóris",
+          "it": "chiesa di San Vittore",
+          "source": "curated"
         }
       ]
     },
@@ -86557,6 +89867,12 @@
           "wikidata": "Q11967",
           "label": "Huesca",
           "country": "ES"
+        },
+        {
+          "role": "mention",
+          "la": "Cordubénsis",
+          "it": "Córdova",
+          "source": "curated"
         }
       ]
     },
@@ -87078,6 +90394,19 @@
           "la": "Sancti Iacóbi in Cuba ínsula",
           "it": "Santiago nell’isola di Cuba",
           "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Fontis Frígidæ prope Narbónem in Gállia meridionáli",
+          "it": "Fontfroide vicino a Narbonne nella Francia meridionale",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Hispániam",
+          "it": "Spagna",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ],
       "unnumbered": true
@@ -87188,6 +90517,12 @@
           "wikidata": "Q328077",
           "label": "Vertou",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Nanneténsis",
+          "it": "Nantes",
+          "source": "curated"
         }
       ]
     },
@@ -88023,6 +91358,12 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "exile",
+          "la": "Abitínis",
+          "it": "Abitine in Tunisia",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -88162,6 +91503,12 @@
           "wikidata": "Q15688",
           "label": "Ávila",
           "country": "ES"
+        },
+        {
+          "role": "journey",
+          "la": "Ebora Carpetanórum",
+          "it": "Talavera de la Reina",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -88486,6 +91833,12 @@
           "wikidata": "Q26849",
           "label": "Vienne",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Arelaténsis",
+          "it": "Arles",
+          "source": "curated"
         }
       ]
     },
@@ -89281,6 +92634,12 @@
           "wikidata": "Q38380",
           "label": "Angers",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Angliam",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -89331,6 +92690,12 @@
           "it": "Thérouanne",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "mention",
+          "la": "Luxoviénsis",
+          "it": "Luxeuil",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -89722,6 +93087,12 @@
           "wikidata": "Q476288",
           "label": "Mortagne-au-Perche",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Alencónii",
+          "it": "Alençon",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -89946,6 +93317,12 @@
           "role": "religious_life",
           "la": "Augiénsis",
           "it": "Reichenau",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Alamánnos et Bávaros",
+          "it": "Alamanni e i Bavari",
           "source": "curated"
         }
       ]
@@ -90302,6 +93679,12 @@
           "la": "cœnóbii Horreénsis",
           "it": "monastero di Öhren",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Nivellénsi",
+          "it": "Nivelles",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -90325,6 +93708,13 @@
           "wikidata": "Q130212",
           "label": "Székesfehérvár",
           "country": "HU"
+        },
+        {
+          "role": "mention",
+          "la": "Hungarórum",
+          "it": "Ungheria",
+          "source": "curated",
+          "occurrence_it": 2
         }
       ]
     },
@@ -90394,6 +93784,12 @@
           "wikidata": "Q6593",
           "label": "Vannes",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Británniæ",
+          "it": "Britannia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -90579,6 +93975,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "mention",
+          "la": "Chalcedonénsi",
+          "it": "Calcedonia",
+          "source": "curated"
         }
       ]
     },
@@ -90868,6 +94270,12 @@
           "wikidata": "Q1218",
           "label": "Jerusalem",
           "country": "PS"
+        },
+        {
+          "role": "mention",
+          "la": "urbe Gaza",
+          "it": "Gaza",
+          "source": "curated"
         }
       ]
     },
@@ -90945,6 +94353,12 @@
           "role": "religious_life",
           "la": "Sithivénses",
           "it": "Sithieu",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "brito",
+          "it": "bretone",
           "source": "curated"
         }
       ]
@@ -91158,6 +94572,12 @@
           "wikidata": "Q1975999",
           "label": "Congresbury",
           "country": "GB"
+        },
+        {
+          "role": "birth",
+          "la": "britónis",
+          "it": "bretone",
+          "source": "curated"
         }
       ]
     },
@@ -91215,6 +94635,12 @@
           "role": "ministry",
           "la": "Ultraiecténsis",
           "it": "Utrecht",
+          "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "anglus",
+          "it": "inglese",
           "source": "curated"
         }
       ],
@@ -91365,6 +94791,12 @@
           "role": "cult",
           "la": "basílica Cælimontána",
           "it": "basilica sul monte Celio",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Sírmium in Pannónia",
+          "it": "Srijem in Pannonia",
           "source": "curated"
         }
       ],
@@ -92127,6 +95559,18 @@
           "la": "Locogíacum",
           "it": "Ligugé",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Gállia",
+          "it": "Francia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Pictaviénsi",
+          "it": "Poitiers",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -92173,6 +95617,12 @@
           "role": "education",
           "la": "monastério Lirinénsi",
           "it": "monastero di Lérins",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Lugdunénsis",
+          "it": "Lione",
           "source": "curated"
         }
       ]
@@ -92381,6 +95831,15 @@
           "la": "Polocénsis",
           "it": "Polotzk",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "polacca",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "unnumbered": true,
@@ -92425,6 +95884,12 @@
           "wikidata": "Q111444",
           "label": "Isle of Mull",
           "country": "GB"
+        },
+        {
+          "role": "birth",
+          "la": "hibérnus",
+          "it": "irlandese",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -92448,6 +95913,12 @@
           "wikidata": "Q26849",
           "label": "Vienne",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Valentinénsis",
+          "it": "Valence",
+          "source": "curated"
         }
       ]
     },
@@ -92508,6 +95979,12 @@
           "wikidata": "Q10001",
           "label": "Deventer",
           "country": "NL"
+        },
+        {
+          "role": "birth",
+          "la": "Anglia",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -92527,6 +96004,16 @@
           "source": "lead",
           "wikidata": "Q1006039",
           "label": "Kazimierz Biskupi",
+          "country": "PL"
+        },
+        {
+          "role": "ministry",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
           "country": "PL"
         }
       ],
@@ -92712,6 +96199,12 @@
           "wikidata": "Q181238",
           "label": "Africa",
           "country": "TN"
+        },
+        {
+          "role": "birth",
+          "la": "hispanórum",
+          "it": "spagnoli",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -92740,6 +96233,12 @@
           "role": "religious_life",
           "la": "Augustodúni",
           "it": "Autun",
+          "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Pannónia",
+          "it": "Pannonia",
           "source": "curated"
         }
       ]
@@ -92810,6 +96309,12 @@
           "wikidata": "Q188780",
           "label": "Rodez",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Turonénsis",
+          "it": "Tours",
+          "source": "curated"
         }
       ]
     },
@@ -93183,6 +96688,12 @@
           "la": "Dublinénsis",
           "it": "Dublino",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Angliæ",
+          "it": "Inghilterra",
+          "source": "curated"
         }
       ]
     },
@@ -93442,6 +96953,12 @@
           "role": "ministry",
           "la": "Alethénsis",
           "it": "Aleth",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Sántonas",
+          "it": "territorio di Saintes",
           "source": "curated"
         }
       ]
@@ -93782,6 +97299,12 @@
           "wikidata": "Q28",
           "label": "Hungary",
           "country": "HU"
+        },
+        {
+          "role": "mention",
+          "la": "Scótiæ",
+          "it": "Scozia",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -93847,6 +97370,21 @@
           "wikidata": "Q473103",
           "label": "Déols",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Bituríges",
+          "it": "Bourges",
+          "source": "curated",
+          "person": "Leocadius",
+          "occurrence_it": 2
+        },
+        {
+          "role": "mention",
+          "la": "Galliárum",
+          "it": "Gallie",
+          "source": "curated",
+          "person": "Leocadius"
         }
       ],
       "edition_notes": {
@@ -93910,6 +97448,12 @@
           "role": "exile",
           "la": "Rheni ínsulam",
           "it": "isola di Werden sul Reno",
+          "source": "curated"
+        },
+        {
+          "role": "foundation",
+          "la": "loco cellæ a sancto Gallo cónditæ",
+          "it": "nel luogo della cella costruita da san Gallo",
           "source": "curated"
         }
       ]
@@ -94016,6 +97560,12 @@
           "it": "Inghilterra",
           "source": "curated",
           "occurrence_it": 2
+        },
+        {
+          "role": "birth",
+          "la": "Lancastrénsis",
+          "it": "Lancaster",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -94035,6 +97585,18 @@
           "role": "foundation",
           "la": "Marbúrgi in Germánia",
           "it": "Marburg in Germania",
+          "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Marbúrgi in Germánia",
+          "it": "Marburg in Germania",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Thuríngiæ",
+          "it": "Turingia",
           "source": "curated"
         }
       ],
@@ -94560,6 +98122,12 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "desérta ínsula",
+          "it": "isola deserta",
+          "source": "curated"
         }
       ]
     },
@@ -95141,6 +98709,12 @@
           "wikidata": "Q16869",
           "label": "Constantinople",
           "country": "TR"
+        },
+        {
+          "role": "journey",
+          "la": "Thessalonícæ",
+          "it": "Salonicco",
+          "source": "curated"
         }
       ]
     },
@@ -95316,6 +98890,12 @@
           "la": "basílicæ Sanctæ Maríæ Novæ",
           "it": "basilica di Santa Maria Nuova",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "templi Hierosolymitáni",
+          "it": "tempio di Gerusalemme",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -95441,6 +99021,15 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -95461,6 +99050,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "dedication",
+          "la": "títulus ecclésiæ Transtiberínus",
+          "it": "chiesa di Roma a Trastevere",
+          "source": "curated"
         }
       ],
       "unnumbered": true,
@@ -95652,6 +99247,12 @@
           "la": "Románam",
           "it": "Chiesa di Roma",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Corínthios",
+          "it": "Corinzi",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -95699,6 +99300,12 @@
           "role": "ministry",
           "la": "Gálliæ",
           "it": "Francia",
+          "source": "curated"
+        },
+        {
+          "role": "burial",
+          "la": "Bobiénse cœnóbium in Ligúria",
+          "it": "monastero di Bobbio",
           "source": "curated"
         }
       ],
@@ -95887,6 +99494,12 @@
           "wikidata": "Q37792",
           "label": "Sint-Truiden",
           "country": "BE"
+        },
+        {
+          "role": "mention",
+          "la": "Ecclésiæ Meténsi",
+          "it": "Chiesa di Metz",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -96275,6 +99888,12 @@
           "la": "cœnóbio in monte Sina",
           "it": "monastero sul monte Sinai",
           "source": "curated"
+        },
+        {
+          "role": "death",
+          "la": "Alexandrínam",
+          "it": "Alessandria",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -96405,6 +100024,12 @@
         },
         {
           "role": "foundation",
+          "la": "cœnóbio Emoscénsi",
+          "it": "cenobio di Eymeu",
+          "source": "curated"
+        },
+        {
+          "role": "death",
           "la": "cœnóbio Emoscénsi",
           "it": "cenobio di Eymeu",
           "source": "curated"
@@ -97205,6 +100830,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ],
       "edition_notes": {
@@ -97251,6 +100885,60 @@
           "wikidata": "Q181238",
           "label": "Africa",
           "country": "TN"
+        },
+        {
+          "role": "mention",
+          "la": "Bennefénsis",
+          "it": "Bennefa",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Byzaciénsis",
+          "it": "Bizacio",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Girbitánus",
+          "it": "Djerba",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Hadrumetánus",
+          "it": "Sousse",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Midilénsis",
+          "it": "Mdila",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Oëénsis",
+          "it": "Tripoli",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Sabraténsis",
+          "it": "Sabrata",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Sufetánus",
+          "it": "Sufes",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Teudalénsis",
+          "it": "Teudala",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -97434,6 +101122,18 @@
           "wikidata": "Q7880",
           "label": "Toulouse",
           "country": "FR"
+        },
+        {
+          "role": "death",
+          "la": "Capitólio",
+          "it": "rocca di questa città",
+          "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Capitólio",
+          "it": "rocca di questa città",
+          "source": "curated"
         }
       ]
     },
@@ -97499,6 +101199,12 @@
           "role": "ministry",
           "la": "Sarugénsis",
           "it": "Sarug",
+          "source": "curated"
+        },
+        {
+          "role": "cult",
+          "la": "Syros",
+          "it": "Siri",
           "source": "curated"
         }
       ],
@@ -97673,6 +101379,12 @@
           "role": "ministry",
           "la": "Acháia",
           "it": "regione dell’Acaia",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Iordánem",
+          "it": "Giordano",
           "source": "curated"
         }
       ],
@@ -97939,6 +101651,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -97988,6 +101709,12 @@
           "wikidata": "Q6616",
           "label": "Poitiers",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Asiam",
+          "it": "provincia d’Asia",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -98166,6 +101893,12 @@
           "wikidata": "Q184163",
           "label": "Colchester",
           "country": "GB"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastérii Sancti Ioánnis",
+          "it": "monastero di San Giovanni",
+          "source": "curated"
         }
       ]
     },
@@ -98201,6 +101934,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Pragæ",
+          "it": "Praga",
+          "source": "curated"
         }
       ]
     },
@@ -98361,6 +102100,15 @@
           "source": "lead",
           "wikidata": "Q53216",
           "label": "Aquileia",
+          "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "Itáliæ",
+          "it": "Italia",
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
           "country": "IT"
         }
       ],
@@ -98548,7 +102296,15 @@
       "entry": 2,
       "asterisk": false,
       "country": "PS",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Iudæ",
+          "it": "Giuda",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1203-cassianus",
@@ -98598,6 +102354,12 @@
           "role": "ministry",
           "la": "Dorcestriénsem",
           "it": "Dorchester",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Sáxonum occidentálium",
+          "it": "Sassoni occidentali",
           "source": "curated"
         }
       ],
@@ -98860,6 +102622,12 @@
           "wikidata": "Q1476",
           "label": "Le Mans",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastériii Sanctæ Maríæ",
+          "it": "monastero di Santa Maria",
+          "source": "curated"
         }
       ]
     },
@@ -98949,6 +102717,12 @@
           "wikidata": "Q160642",
           "label": "Salisbury",
           "country": "GB"
+        },
+        {
+          "role": "journey",
+          "la": "Normánnia",
+          "it": "Normandia",
+          "source": "curated"
         }
       ]
     },
@@ -99101,6 +102875,12 @@
           "la": "desértum Iudæ",
           "it": "deserto di Giuda in Palestina",
           "source": "curated"
+        },
+        {
+          "role": "religious_life",
+          "la": "magna laura",
+          "it": "Grande Laura",
+          "source": "curated"
         }
       ]
     },
@@ -99228,6 +103008,12 @@
           "la": "Európæ septemtrionális",
           "it": "Europa settentrionale",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Titiopolitáni",
+          "it": "Dindebol",
+          "source": "curated"
         }
       ]
     },
@@ -99274,6 +103060,15 @@
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -99841,6 +103636,15 @@
           "wikidata": "Q151198",
           "label": "Dachau concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "mention",
+          "la": "Polónia",
+          "it": "Polonia",
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -100140,6 +103944,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "ministry",
+          "la": "Germánis",
+          "it": "Germani",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -100217,6 +104027,12 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "Angliam",
+          "it": "Inghilterra",
           "source": "curated"
         }
       ]
@@ -100611,6 +104427,14 @@
       "asterisk": false,
       "country": "EG",
       "typology": "commemoratio",
+      "places": [
+        {
+          "role": "death",
+          "la": "Alexandrinórum",
+          "it": "Alessandria",
+          "source": "curated"
+        }
+      ],
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"without hearing them\" and \"their constancy also be conquered\" where the Latin means the judge feared that, even after unheard-of tortures, he would be conquered by their constancy. Translation error: \"the holy virgins Ammonarion, Mercuria, Dionysia\" where the Latin calls only Ammonarion \"virgo\"."
       }
@@ -100720,6 +104544,12 @@
           "role": "ministry",
           "la": "Oldenburgénsis",
           "it": "Oldenburg",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Slavos",
+          "it": "Slavi",
           "source": "curated"
         }
       ],
@@ -100848,6 +104678,16 @@
           "la": "campo exítii Oświęcim seu Auschwitz",
           "it": "campo di sterminio di Auschwitz",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Polóniæ",
+          "it": "Polonia",
+          "source": "curated",
+          "occurrence_it": 2,
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         }
       ]
     },
@@ -100949,6 +104789,12 @@
           "wikidata": "Q106577",
           "label": "Neustria",
           "country": "FR"
+        },
+        {
+          "role": "birth",
+          "la": "Armóricæ",
+          "it": "Bretagna",
+          "source": "curated"
         }
       ]
     },
@@ -101264,6 +105110,12 @@
           "wikidata": "Q2634",
           "label": "Naples",
           "country": "IT"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastérii Sancti Gaudiósi",
+          "it": "monastero di San Gaudioso",
+          "source": "curated"
         }
       ]
     },
@@ -101304,6 +105156,11 @@
           "wikidata": "Q261399",
           "label": "Thérouanne",
           "country": "FR"
+        },
+        {
+          "role": "ministry",
+          "la": "Taruannénsis",
+          "source": "curated"
         }
       ]
     },
@@ -101324,6 +105181,12 @@
           "wikidata": "Q541",
           "label": "Orvieto",
           "country": "IT"
+        },
+        {
+          "role": "journey",
+          "la": "urbes itálicas",
+          "it": "città d’Italia",
+          "source": "curated"
         }
       ]
     },
@@ -101557,6 +105420,14 @@
       "asterisk": false,
       "country": "PS",
       "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Iudæ",
+          "it": "Giuda",
+          "source": "curated"
+        }
+      ],
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"re di Giuda\" (king of Judah) where the Latin has \"ducis Iudæ\" (leader of Judah); Zerubbabel was governor, not king."
       }
@@ -101615,6 +105486,12 @@
           "wikidata": "Q428594",
           "label": "Cysoing",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Foroiuliénsis",
+          "it": "Friuli",
+          "source": "curated"
         }
       ]
     },
@@ -101799,6 +105676,12 @@
           "la": "rivum Tum Nok",
           "it": "fiume Tum Nok",
           "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "vici Song-Khon",
+          "it": "villaggio di Song-Khon",
+          "source": "curated"
         }
       ],
       "edition_notes": {
@@ -101842,6 +105725,12 @@
           "wikidata": "Q2608946",
           "label": "Eleutheropolis",
           "country": "PS"
+        },
+        {
+          "role": "mention",
+          "la": "Gazam",
+          "it": "Gaza",
+          "source": "curated"
         }
       ]
     },
@@ -101862,6 +105751,12 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
+        },
+        {
+          "role": "religious_life",
+          "la": "monastério sancti Mevénni",
+          "it": "monastero di Saint-Méen",
+          "source": "curated"
         }
       ]
     },
@@ -101977,6 +105872,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "gallus",
+          "it": "francese",
+          "source": "curated"
         }
       ],
       "same_eulogy": [
@@ -102000,6 +105901,12 @@
           "wikidata": "Q1492",
           "label": "Barcelona",
           "country": "ES"
+        },
+        {
+          "role": "mention",
+          "la": "Nazarethánæ",
+          "it": "Nazareth",
+          "source": "curated"
         }
       ]
     },
@@ -102050,7 +105957,15 @@
       "entry": 1,
       "asterisk": false,
       "country": "IQ",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "mention",
+          "la": "Babylóne",
+          "it": "Babilonia",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1218-namphamo-et-socii",
@@ -102095,6 +106010,21 @@
           "wikidata": "Q288",
           "label": "Tours",
           "country": "FR"
+        },
+        {
+          "role": "burial",
+          "la": "vici cœmetério christianórum",
+          "it": "cimitero cristiano del luogo",
+          "source": "curated"
+        },
+        {
+          "role": "journey",
+          "la": "urbe Roma",
+          "it": "Roma",
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "edition_notes": {
@@ -102143,6 +106073,12 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "germánis géntibus",
+          "it": "popolazioni germaniche",
           "source": "curated"
         }
       ],
@@ -102270,6 +106206,12 @@
           "wikidata": "Q6397",
           "label": "Avignon",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Urbem",
+          "it": "Roma",
+          "source": "curated"
         }
       ]
     },
@@ -102460,6 +106402,12 @@
           "wikidata": "Q154498",
           "label": "Sachsenhausen concentration camp",
           "country": "DE"
+        },
+        {
+          "role": "birth",
+          "la": "polónus",
+          "it": "polacca",
+          "source": "curated"
         }
       ]
     },
@@ -102504,6 +106452,23 @@
           "la": "Béthlehem Iudæ",
           "it": "Betlemme di Giuda",
           "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Israel",
+          "it": "Israele",
+          "source": "curated",
+          "wikidata": "Q801",
+          "label": "Israel",
+          "country": "PS"
+        },
+        {
+          "role": "mention",
+          "la": "Iudæ",
+          "it": "Giuda",
+          "source": "curated",
+          "occurrence": 1,
+          "occurrence_it": 1
         }
       ],
       "edition_notes": {
@@ -102789,6 +106754,12 @@
           "wikidata": "Q1136193",
           "label": "Gortyn",
           "country": "GR"
+        },
+        {
+          "role": "mention",
+          "la": "templi Fortúnæ",
+          "it": "Tempio della Fortuna",
+          "source": "curated"
         }
       ]
     },
@@ -102809,6 +106780,12 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
+        },
+        {
+          "role": "mention",
+          "la": "ecclésiam Sancti Cleméntis",
+          "it": "chiesa di San Clemente",
+          "source": "curated"
         }
       ]
     },
@@ -103036,6 +107013,12 @@
           "wikidata": "Q1479",
           "label": "Bordeaux",
           "country": "FR"
+        },
+        {
+          "role": "mention",
+          "la": "Noláno",
+          "it": "Nola",
+          "source": "curated"
         }
       ]
     },
@@ -103209,6 +107192,12 @@
           "wikidata": "Q79",
           "label": "Egypt",
           "country": "EG"
+        },
+        {
+          "role": "mention",
+          "la": "Urbe",
+          "it": "Roma",
+          "source": "curated"
         }
       ],
       "unnumbered": true
@@ -103374,6 +107363,12 @@
           "wikidata": "Q159605",
           "label": "Tivoli",
           "country": "IT"
+        },
+        {
+          "role": "birth",
+          "la": "germánæ",
+          "it": "tedesca",
+          "source": "curated"
         }
       ]
     },
@@ -103544,6 +107539,12 @@
           "wikidata": "Q108317077",
           "label": "Our Lady of the Martyrs of Thailand Shrine",
           "country": "TH"
+        },
+        {
+          "role": "death",
+          "la": "pagi cœmetério",
+          "it": "cimitero locale",
+          "source": "curated"
         }
       ]
     },
@@ -103590,7 +107591,15 @@
       "entry": 2,
       "asterisk": true,
       "country": "IT",
-      "typology": "commemoratio"
+      "typology": "commemoratio",
+      "places": [
+        {
+          "role": "birth",
+          "la": "románæ",
+          "it": "romana",
+          "source": "curated"
+        }
+      ]
     },
     {
       "id": "mr:1227-theodorus",
@@ -103615,6 +107624,15 @@
           "la": "lauræ Sancti Sabæ in Palæstína",
           "it": "monastero di San Saba in Palestina",
           "source": "curated"
+        },
+        {
+          "role": "exile",
+          "la": "Constantinópoli",
+          "it": "Costantinopoli",
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "edition_notes": {
@@ -103889,6 +107907,21 @@
           "la": "civitátem Ierúsalem",
           "it": "città di Gerusalemme",
           "source": "curated"
+        },
+        {
+          "role": "birth",
+          "la": "Bethlehemítæ",
+          "it": "Betlemita",
+          "source": "curated"
+        },
+        {
+          "role": "mention",
+          "la": "Israel",
+          "it": "Israele",
+          "source": "curated",
+          "wikidata": "Q801",
+          "label": "Israel",
+          "country": "PS"
         }
       ]
     },
@@ -104062,6 +108095,12 @@
           "wikidata": "Q84",
           "label": "London",
           "country": "GB"
+        },
+        {
+          "role": "mention",
+          "la": "Statefurténsis",
+          "it": "Stafford",
+          "source": "curated"
         }
       ]
     },

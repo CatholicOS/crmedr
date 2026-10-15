@@ -504,6 +504,12 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Amórii Phrýgiæ": {
+      "wikidata": "Q174270",
+      "label": "Amorium",
+      "country": "TR",
+      "status": "auto"
+    },
     "Anastasiópoli in Galátia": {
       "wikidata": "Q11931097",
       "label": "Lagania",
@@ -1942,11 +1948,23 @@
       "country": "FR",
       "status": "auto"
     },
+    "Argentína": {
+      "wikidata": "Q414",
+      "label": "Argentina",
+      "country": "AR",
+      "status": "auto"
+    },
     "Argo in Grǽcia": {
       "wikidata": "Q189901",
       "label": "Argo",
       "country": "GR",
       "status": "reviewed"
+    },
+    "Ariáni": {
+      "wikidata": "Q55000",
+      "label": "Ariano Irpino",
+      "country": "IT",
+      "status": "auto"
     },
     "Ariáni in Hirpínia": {
       "wikidata": "Q55000",
@@ -2775,6 +2793,12 @@
       "label": "Bagno di Romagna",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Bélgio": {
+      "wikidata": "Q31",
+      "label": "Belgium",
+      "country": "BE",
+      "status": "auto"
     },
     "Bérgomi in Itália": {
       "wikidata": "Q628",
@@ -4425,6 +4449,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Floréntiæ": {
+      "wikidata": "Q2044",
+      "label": "Florence",
+      "country": "IT",
+      "status": "auto"
+    },
     "Floréntiæ in Etrúria": {
       "wikidata": "Q2044",
       "label": "Florence",
@@ -4719,6 +4749,12 @@
       "country": "GR",
       "status": "auto"
     },
+    "Grǽcia": {
+      "wikidata": "Q41",
+      "label": "Greece",
+      "country": "GR",
+      "status": "auto"
+    },
     "Guadalaxáræ in Hispánia": {
       "wikidata": "Q11953",
       "label": "Guadalajara",
@@ -4766,6 +4802,12 @@
       "label": "Gaël",
       "country": "FR",
       "status": "reviewed"
+    },
+    "Génuæ": {
+      "wikidata": "Q1449",
+      "label": "Genoa",
+      "country": "IT",
+      "status": "auto"
     },
     "Génuæ in Itália": {
       "wikidata": "Q1449",
@@ -4918,6 +4960,12 @@
       "status": "reviewed"
     },
     "Hispánia": {
+      "wikidata": "Q29",
+      "label": "Spain",
+      "country": "ES",
+      "status": "auto"
+    },
+    "Hispániæ": {
       "wikidata": "Q29",
       "label": "Spain",
       "country": "ES",
@@ -11953,6 +12001,12 @@
       "country": "DE",
       "status": "auto"
     },
+    "Norvégiæ": {
+      "wikidata": "Q20",
+      "label": "Norway",
+      "country": "NO",
+      "status": "auto"
+    },
     "Norvíci in Anglia": {
       "wikidata": "Q130191",
       "label": "Norwich",
@@ -12133,6 +12187,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Opitérgio": {
+      "wikidata": "Q48087",
+      "label": "Oderzo",
+      "country": "IT",
+      "status": "auto"
+    },
     "Orbæ in Sabáudia": {
       "wikidata": "Q68213",
       "label": "Orbe",
@@ -12250,6 +12310,12 @@
     "Panórmi in Sicília Itáliæ": {
       "wikidata": "Q2656",
       "label": "Palermo",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Parma": {
+      "wikidata": "Q2683",
+      "label": "Parma",
       "country": "IT",
       "status": "auto"
     },
@@ -12415,6 +12481,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Philadelphíæ": {
+      "wikidata": "Q2085773",
+      "label": "Philadelphia",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Philadelphíæ in Pennsilvánia e Civitátibus Fœderátis Américæ Septemtrionális": {
       "wikidata": "Q1345",
       "label": "Philadelphia",
@@ -12432,6 +12504,12 @@
       "label": "Akşehir",
       "country": "TR",
       "status": "reviewed"
+    },
+    "Philíppis in Macedónia": {
+      "wikidata": "Q379652",
+      "label": "Philippi",
+      "country": "GR",
+      "status": "auto"
     },
     "Phænóne in Palæstína": {
       "wikidata": "Q2907858",
@@ -12488,6 +12566,12 @@
       "status": "auto"
     },
     "Pisáuri in Picéno Itáliæ": {
+      "wikidata": "Q13134",
+      "label": "Pesaro",
+      "country": "IT",
+      "status": "auto"
+    },
+    "Pisáuro": {
       "wikidata": "Q13134",
       "label": "Pesaro",
       "country": "IT",
@@ -13674,6 +13758,12 @@
       "label": "Rosscarbery",
       "country": "IE",
       "status": "reviewed"
+    },
+    "Rússiæ": {
+      "wikidata": "Q159",
+      "label": "Russia",
+      "country": "RU",
+      "status": "auto"
     },
     "Sabáriæ in Pannónia": {
       "wikidata": "Q42007",
@@ -14940,6 +15030,12 @@
       "label": "Torres Vedras",
       "country": "PT",
       "status": "reviewed"
+    },
+    "Ucraínæ": {
+      "wikidata": "Q212",
+      "label": "Ukraine",
+      "country": "UA",
+      "status": "auto"
     },
     "Ucétiæ in Gállia Narbonénsi": {
       "wikidata": "Q216966",
