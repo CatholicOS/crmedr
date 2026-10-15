@@ -185,5 +185,84 @@ class SuggestionTest(unittest.TestCase):
         self.assertIsNone(mj.suggestion(self.op, choice("c9", {"c9": 1.0}), self.cands, "m"))
         self.assertIsNone(mj.suggestion(self.op, {"type": "noul", "noul": 0.9}, self.cands, "m"))
 
+import json  # noqa: E402
+import tempfile  # noqa: E402
+
+BODY = {"model": "jev-1.14.0", "state": {"context": "x"}, "questions": {"span": {"type": "choice"}}}
+OK = (200, json.dumps({"model": "jev-1.14.0", "answers": {"span": {"type": "choice"}}}).encode())
+
+
+class FakePost:
+    def __init__(self, *responses):
+        self.responses, self.calls = list(responses), []
+
+    def __call__(self, url, data, key):
+        self.calls.append((url, json.loads(data), key))
+        return self.responses.pop(0)
+
+
+class ClientTest(unittest.TestCase):
+    def client(self, post, key="sk-secret"):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        self.slept = []
+        return mj.TypeSafe(key, Path(self.tmp.name), post=post, sleep=self.slept.append)
+
+    def test_asks_once_then_reads_the_cache(self):
+        post = FakePost(OK)
+        ts = self.client(post)
+        self.assertEqual(ts.ask(BODY)["model"], "jev-1.14.0")
+        self.assertTrue(ts.cached(BODY))
+        ts.ask(BODY)
+        self.assertEqual(len(post.calls), 1)
+        self.assertEqual(post.calls[0][0], "https://api.typesafe.ai/v1/systemone")
+
+    def test_the_cache_key_changes_with_the_question(self):
+        other = json.loads(json.dumps(BODY))
+        other["questions"]["span"]["instructions"] = "reworded"
+        self.assertNotEqual(mj.cache_key(BODY), mj.cache_key(other))
+        self.assertEqual(mj.cache_key(BODY), mj.cache_key(json.loads(json.dumps(BODY))))
+
+    def test_retries_overload_with_backoff(self):
+        post = FakePost((429, b"{}"), (529, b"{}"), OK)
+        self.client(post).ask(BODY)
+        self.assertEqual(self.slept, [1, 2])
+
+    def test_a_refused_key_stops_and_never_shows_the_key(self):
+        ts = self.client(FakePost((401, b'{"error": "bad key"}')))
+        with self.assertRaises(mj.KeyRefused) as e:
+            ts.ask(BODY)
+        self.assertNotIn("sk-secret", str(e.exception))
+
+    def test_a_bad_request_is_an_error_with_the_apis_message(self):
+        ts = self.client(FakePost((400, b'{"error": "max_tokens_exceeded"}')))
+        with self.assertRaises(mj.TypeSafeError) as e:
+            ts.ask(BODY)
+        self.assertIn("max_tokens_exceeded", str(e.exception))
+        self.assertNotIsInstance(e.exception, mj.KeyRefused)
+
+    def test_gives_up_after_the_attempts(self):
+        ts = self.client(FakePost(*[(503, b"{}")] * 5))
+        with self.assertRaises(mj.TypeSafeError):
+            ts.ask(BODY)
+        self.assertEqual(len(self.slept), 5)
+
+    def test_no_key_is_an_error_only_when_a_request_is_needed(self):
+        post = FakePost(OK)
+        with_key = self.client(post)
+        with_key.ask(BODY)  # fills the cache
+        without = mj.TypeSafe(None, Path(self.tmp.name), post=FakePost())
+        self.assertEqual(without.ask(BODY)["model"], "jev-1.14.0")
+        with self.assertRaises(mj.TypeSafeError):
+            without.ask(dict(BODY, state={"context": "y"}))
+
+    def test_the_key_from_the_environment_else_the_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "api_key"
+            f.write_text("from-file\n")
+            self.assertEqual(mj.api_key({"TYPESAFE_API_KEY": "from-env"}, f), "from-env")
+            self.assertEqual(mj.api_key({}, f), "from-file")
+            self.assertIsNone(mj.api_key({}, Path(d) / "missing"))
+
 if __name__ == "__main__":
     unittest.main()

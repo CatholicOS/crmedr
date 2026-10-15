@@ -9,6 +9,14 @@ the eulogy's text or footnote, as everywhere in the change-sets.
 Standard library only.
 """
 
+import hashlib
+import json
+import os
+import time
+import urllib.error
+import urllib.request
+from pathlib import Path
+
 from mentions_italian import runs
 from mentions_text import from_utf16, utf16
 
@@ -188,3 +196,82 @@ def suggestion(op, answer, cands, model):
     if (op.get("start"), op.get("end")) == (c["start"], c["end"]):
         return {"decision": "accept", **base}
     return {"decision": "edit", "start": c["start"], "end": c["end"], "form": c["words"], **base}
+
+
+API_URL = "https://api.typesafe.ai/v1/systemone"
+KEY_FILE = Path.home() / ".config" / "typesafe" / "api_key"
+RETRY_STATUSES = {429, 500, 502, 503, 504, 529}
+
+
+class TypeSafeError(Exception):
+    """A request TypeSafe did not answer; its message never holds the key."""
+
+
+class KeyRefused(TypeSafeError):
+    """401: the key was refused; the run stops."""
+
+
+def api_key(env=os.environ, key_file=KEY_FILE):
+    """The key from TYPESAFE_API_KEY, else from the curator's key file; None when there is none."""
+    key = (env.get("TYPESAFE_API_KEY") or "").strip()
+    if not key and key_file.exists():
+        key = key_file.read_text(encoding="utf-8").strip()
+    return key or None
+
+
+def _encode(body):
+    return json.dumps(body, ensure_ascii=False, sort_keys=True).encode("utf-8")
+
+
+def cache_key(body):
+    return hashlib.sha256(_encode(body)).hexdigest()
+
+
+def http_post(url, data, key, timeout=60):
+    """POST `data` with the key; (status, raw body)."""
+    request = urllib.request.Request(url, data=data, method="POST", headers={
+        "Authorization": f"Bearer {key}", "Content-Type": "application/json",
+        "User-Agent": "crmedr-suggest-mentions"})
+    try:
+        with urllib.request.urlopen(request, timeout=timeout) as response:
+            return response.status, response.read()
+    except urllib.error.HTTPError as e:
+        return e.code, e.read()
+
+
+def _message(raw):
+    return raw.decode("utf-8", "replace")[:300]
+
+
+class TypeSafe:
+    """The System One endpoint, each answer cached under the hash of its request."""
+
+    def __init__(self, key, cache_dir, post=http_post, sleep=time.sleep, attempts=5):
+        self.key, self.cache_dir, self.post, self.sleep, self.attempts = key, Path(cache_dir), post, sleep, attempts
+
+    def _path(self, body):
+        return self.cache_dir / f"{cache_key(body)}.json"
+
+    def cached(self, body):
+        return self._path(body).exists()
+
+    def ask(self, body):
+        path = self._path(body)
+        if path.exists():
+            return json.loads(path.read_text(encoding="utf-8"))
+        if not self.key:
+            raise TypeSafeError("no TypeSafe key: set TYPESAFE_API_KEY or write ~/.config/typesafe/api_key")
+        status, raw = None, b""
+        for attempt in range(self.attempts):
+            status, raw = self.post(API_URL, _encode(body), self.key)
+            if status == 200:
+                out = json.loads(raw)
+                path.parent.mkdir(parents=True, exist_ok=True)
+                path.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+                return out
+            if status == 401:
+                raise KeyRefused("the TypeSafe key was refused")
+            if status not in RETRY_STATUSES:
+                raise TypeSafeError(f"HTTP {status}: {_message(raw)}")
+            self.sleep(2 ** attempt)
+        raise TypeSafeError(f"HTTP {status} after {self.attempts} attempts: {_message(raw)}")
