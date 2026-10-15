@@ -213458,6 +213458,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 286,
+          "end": 292,
+          "check": "6ff0c5c6",
+          "name": "Pothinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -213560,6 +213569,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 119,
+          "end": 126,
+          "check": "225b5cf0",
+          "name": "October",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 128,
           "end": 136,
           "check": "3763b73b",
@@ -213637,6 +213657,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 187,
+          "end": 193,
+          "check": "70e30ba2",
+          "name": "Pompeia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 195,
           "end": 201,
           "check": "b7a381cb",
@@ -213659,10 +213690,32 @@
           "where": {
             "footnote": 1
           },
+          "start": 211,
+          "end": 218,
+          "check": "45e6cd7f",
+          "name": "Quartia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 220,
           "end": 227,
           "check": "df19b342",
           "name": "Materna",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 229,
+          "end": 234,
+          "check": "0d8d2611",
+          "name": "Helpis",
           "qid": null
         },
         {
@@ -213859,6 +213912,18 @@
           "where": {
             "footnote": 1
           },
+          "start": 454,
+          "end": 460,
+          "check": "70e30ba2",
+          "name": "Pompeia",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 462,
           "end": 467,
           "check": "894e3cfb",
@@ -213874,6 +213939,17 @@
           "end": 475,
           "check": "60f99da5",
           "name": "Iusta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 477,
+          "end": 484,
+          "check": "b478cfd9",
+          "name": "Trophima",
           "qid": null
         },
         {
