@@ -146,8 +146,8 @@ The `suggested` object on a card:
 - `AddMentionOp` gains `suggested?: { decision: "accept" | "reject" | "edit"; start?; end?;
   form?; probability: number; confidence: number; model: string } | null`.
 - MentionCard shows, under the reasoning: "Jev suggests: accept / reject / mark these words:
-  «…»" with the confidence as a percentage; an `edit` suggestion is previewed in the passage
-  (dashed underline, distinct from the proposed span).
+  «…»" with the confidence as a percentage; an `edit` suggestion shows its words in the
+  suggestion line («…»), and the passage keeps its current and proposed marks.
 - A "Take the suggestion" button records exactly the decision the curator would record by hand
   (`accept`, `reject`, or `edit` with the suggested span). The export is unchanged, so
   `extract_mentions.py apply` needs no change.
