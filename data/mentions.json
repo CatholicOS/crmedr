@@ -31066,6 +31066,7 @@
           "end": 290,
           "check": "3e7ffa29",
           "name": "Dionysius",
+          "n": 2,
           "qid": null
         }
       ],
@@ -68215,6 +68216,7 @@
           "end": 151,
           "check": "fb8915b1",
           "name": "Serenus",
+          "n": 2,
           "qid": null
         }
       ],
@@ -186230,6 +186232,16 @@
           "check": "f04e1e4f",
           "name": "Romulus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 316,
+          "end": 323,
+          "check": "32534366",
+          "name": "Dionysius",
+          "n": 2,
+          "qid": null
         }
       ],
       "mr:0325-aemilianus-kovc": [
@@ -213603,6 +213615,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 169,
+          "end": 176,
+          "check": "f7189efd",
+          "name": "Æmilia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 178,
           "end": 185,
           "check": "f3c73fa7",
@@ -213817,6 +213840,7 @@
           "end": 434,
           "check": "f58e9a12",
           "name": "Æmilia",
+          "n": 2,
           "qid": null
         },
         {
@@ -220926,14 +220950,23 @@
           "kind": "place",
           "where": "text",
           "start": 0,
-          "end": 61,
-          "check": "ec519d21",
+          "end": 18,
+          "check": "e033ffe8",
           "qid": "Q1761",
           "roles": [
             {
               "role": "cult"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
+          "end": 61,
+          "check": "5505618a",
+          "name": "Margarita Ball",
+          "qid": null
         }
       ],
       "mr:0620-margarita-ebner": [
@@ -223634,6 +223667,16 @@
           "end": 55,
           "check": "d205d5c0",
           "name": "Serenus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 110,
+          "check": "d205d5c0",
+          "name": "Serenus",
+          "n": 2,
           "qid": null
         }
       ],
@@ -229227,8 +229270,19 @@
             "footnote": 1
           },
           "start": 124,
+          "end": 161,
+          "check": "3833bd8a",
+          "name": "Irma Grivot",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 163,
           "end": 201,
-          "check": "72e8fd7e",
+          "check": "afff3688",
           "name": "Maria Anna Giuliani",
           "qid": null
         },
@@ -233989,8 +234043,19 @@
             "footnote": 1
           },
           "start": 24,
+          "end": 67,
+          "check": "f94b454a",
+          "name": "Margarita Teresia Charansol",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 69,
           "end": 108,
-          "check": "f8fd93ae",
+          "check": "ee8fe54a",
           "name": "Maria Anna a Sancto Ioachim Béguin-Royal",
           "qid": null
         },
@@ -234644,9 +234709,9 @@
           "where": {
             "footnote": 1
           },
-          "start": 192,
+          "start": 167,
           "end": 233,
-          "check": "450d8bb5",
+          "check": "5ed1e66d",
           "name": "Maria Claudia Cypriana Brard",
           "qid": null
         },
@@ -234700,8 +234765,19 @@
             "footnote": 1
           },
           "start": 429,
+          "end": 473,
+          "check": "34d0ba85",
+          "name": "Anna Pelras",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 475,
           "end": 509,
-          "check": "587cc240",
+          "check": "86212e76",
           "name": "Maria Genovefa Meunier",
           "qid": null
         },
@@ -234710,9 +234786,9 @@
           "where": {
             "footnote": 1
           },
-          "start": 523,
+          "start": 511,
           "end": 555,
-          "check": "b6c91a64",
+          "check": "e441be91",
           "name": "Angelica Roussel",
           "qid": null
         },
@@ -237162,9 +237238,9 @@
           "where": {
             "footnote": 1
           },
-          "start": 324,
+          "start": 299,
           "end": 336,
-          "check": "f7b9fc7d",
+          "check": "53619585",
           "name": "Anacarius ab Immaculata Benito Nozal",
           "qid": null
         },
@@ -242140,9 +242216,9 @@
           "where": {
             "footnote": 1
           },
-          "start": 285,
+          "start": 256,
           "end": 300,
-          "check": "6d1dddd9",
+          "check": "2dea1c4d",
           "name": "Iulia Rapiej",
           "qid": null
         },
@@ -262358,40 +262434,6 @@
           "where": {
             "footnote": 1
           },
-          "start": 24,
-          "end": 32,
-          "check": "2a43da7c",
-          "name": "Dominicus",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
-          "start": 86,
-          "end": 93,
-          "check": "69a0b23a",
-          "name": "Thomas",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
-          "start": 127,
-          "end": 135,
-          "check": "2a43da7c",
-          "name": "Dominicus",
-          "n": 2,
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
           "start": 197,
           "end": 213,
           "check": "9b7f0ac2",
@@ -262403,10 +262445,32 @@
           "where": {
             "footnote": 1
           },
+          "start": 229,
+          "end": 237,
+          "check": "2a43da7c",
+          "name": "Dominicus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 239,
           "end": 246,
           "check": "faa0ca8c",
           "name": "Michael",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 248,
+          "end": 255,
+          "check": "69a0b23a",
+          "name": "Thomas",
           "qid": null
         },
         {
@@ -262528,6 +262592,18 @@
           "end": 451,
           "check": "f00ecd22",
           "name": "Franciscus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 454,
+          "end": 462,
+          "check": "2a43da7c",
+          "name": "Dominicus",
+          "n": 2,
           "qid": null
         }
       ],
@@ -281843,8 +281919,19 @@
             "footnote": 1
           },
           "start": 144,
+          "end": 197,
+          "check": "b80e6080",
+          "name": "Maria Genovefa Ducrez",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 200,
           "end": 265,
-          "check": "7c7136b5",
+          "check": "97f29013",
           "name": "Maria Magdalena Déjardin",
           "qid": null
         }
@@ -283915,8 +284002,19 @@
             "footnote": 1
           },
           "start": 256,
+          "end": 295,
+          "check": "564fc628",
+          "name": "Maria Lievina Lacroix",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 298,
           "end": 332,
-          "check": "694f9168",
+          "check": "c2b5be98",
           "name": "Maria Augustina Erraux",
           "qid": null
         }
@@ -295430,8 +295528,19 @@
             "footnote": 1
           },
           "start": 24,
+          "end": 70,
+          "check": "5ad2d8bd",
+          "name": "Antonia Maria Orts Baldó",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 72,
           "end": 125,
-          "check": "62da1121",
+          "check": "40ceabe4",
           "name": "Maria a Doloribus Llimona Planas",
           "qid": null
         },
@@ -295485,8 +295594,19 @@
             "footnote": 1
           },
           "start": 277,
+          "end": 313,
+          "check": "7afe102c",
+          "name": "Maria Gratia a Sancto Antonio",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 315,
           "end": 368,
-          "check": "8eeb3a04",
+          "check": "8f541ea1",
           "name": "Maria a Purificatione Gómez Vives",
           "qid": null
         },
@@ -295529,8 +295649,19 @@
             "footnote": 1
           },
           "start": 521,
+          "end": 562,
+          "check": "2eec6aec",
+          "name": "Catharina Calpe Ibáñez",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 564,
           "end": 610,
-          "check": "f9175dda",
+          "check": "33a5377e",
           "name": "Maria Isabella López García",
           "qid": null
         },

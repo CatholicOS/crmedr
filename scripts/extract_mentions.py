@@ -243,12 +243,27 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
     # A given name two persons of the eulogy share names neither of them alone.
     given_names = Counter(fold_map(f.split()[0])[0] for p in persons for f in (p.get("forms") or [])[:1] if f.split())
 
+    # The persons of an Italian footnote list are printed in the Latin order (`rank`): each is looked
+    # for only between the persons of the list already marked before and after them in that order.
+    rank_of = {(q["name"], q.get("n")): q["rank"] for q in persons if "rank" in q and q["where"] != "text"}
+
+    def window(p):
+        """The words outside a list person's place in the list, as taken spans; none outside a list."""
+        if lang != "it" or (p["name"], p.get("n")) not in rank_of:
+            return []
+        rank, src = p["rank"], source(p["where"])
+        marked = [(rank_of[(m["name"], m.get("n"))], m["start"], m["end"]) for m in mentions
+                  if m["kind"] == "person" and m["where"] == p["where"] and (m["name"], m.get("n")) in rank_of]
+        lo = max((e for r, _, e in marked if r < rank), default=0)
+        hi = min((s for r, s, _ in marked if r > rank), default=len(src))
+        return [x for x in ((0, lo), (hi, len(src))) if x[1] > x[0]]
+
     def look(p, fallback=False):
         """The person's first free match under the names they are printed with in this edition (the
         Italian forms, else the stored name), and the name it was found under. Persons of one name take
         its matches in print order, whatever their case ("Felíce", then "Felix"). With `fallback`, for
         the Italian: a text person by their given name alone, any person by their surname."""
-        both = spans("place", p["where"]) + spans("person", p["where"])
+        both = spans("place", p["where"]) + spans("person", p["where"]) + window(p)
         for nm in p.get("forms") or [p["name"]]:
             try:
                 found = find_person(source(p["where"]), nm, both, in_order=last[group(p)] > 1)
@@ -283,7 +298,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             continue
         place(p, found, p["name"])
         placed.append(p)
-        if p.get("n", 1) == last[group(p)] and under:
+        # In a list a name printed again is another person (left to the list's order), never this one.
+        if p.get("n", 1) == last[group(p)] and under and (p["name"], p.get("n")) not in rank_of:
             again(p, [under])
     for p in second:
         found, under = look(p, fallback=True)
@@ -315,7 +331,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         marked = {(m.get("name"), m.get("n")): (m["start"], m["end"]) for m in mentions
                   if m["kind"] == "person" and m["where"] == w}
         found = {i: marked[(p["name"], p.get("n"))] for i, p in enumerate(ranked) if (p["name"], p.get("n")) in marked}
-        for i, span in by_position(src, ranked, found, spans("place", w) + spans("person", w)).items():
+        given = [[f.split()[0] for f in p.get("forms", []) if f.split()] for p in ranked]
+        for i, span in by_position(src, ranked, found, spans("place", w) + spans("person", w), given).items():
             proposed[id(ranked[i])] = span
     for p in unplaced:
         if id(p) in proposed:
@@ -331,6 +348,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
 
 
 EDITIONS = {"martyrologium_romanum_2004": "la", "martyrologium_romanum_2004_it_IT": "it"}
+ITALIAN_EDITION = "martyrologium_romanum_2004_it_IT"
 PERSONS_EDITION = "martyrologium_romanum_2004"
 KINDS = ("person", "place")
 # A span covers one name or one place designation, never more: a guard against runaway matches.
@@ -680,11 +698,18 @@ def file_under_twins(entries, texts, places, persons):
     return places, persons, twins, person_twins
 
 
-def italian_persons(persons, names, latin, person_twins):
+def italian_persons(persons, names, latin, person_twins, misprints=()):
     """The persons of data/persons.json as the Italian edition looks for them: each with the Italian
     forms of its name (`forms`), the untranslated ends of it a surname search anchors on (`ends`) and,
     when the Latin marks it, where the Latin prints it (`rank`: the footnote, 0 for the text, then the
-    offset), which orders a footnote list; without `also`, the Latin's other names."""
+    offset), which orders a footnote list; without `also`, the Latin's other names. A name the edition
+    misprints where the person is printed (data/misprints.json: "Emillia" for Emilia) is looked for as
+    printed first: a misprint is printed once there, and the intended form may name another person."""
+    misprinted = {}  # (mrid, where key) -> [(intended, printed)]
+    for mp in misprints:
+        if mp.get("edition") == ITALIAN_EDITION:
+            where = {"footnote": mp["footnote"]} if "footnote" in mp else "text"
+            misprinted.setdefault((mp["id"], where_key(where)), []).append((mp["intended"], mp["printed"]))
     out = {}
     for mrid, ps in persons.items():
         filed = person_twins.get(mrid, mrid)  # the Latin marks of persons filed under a twin's ID
@@ -694,6 +719,9 @@ def italian_persons(persons, names, latin, person_twins):
         for p in ps:
             q = {k: v for k, v in p.items() if k != "also"}
             q["forms"], q["ends"] = names.forms(mrid, p["name"]), names.surname(p["name"])
+            for intended, printed in misprinted.get((mrid, where_key(p["where"])), []):
+                word = re.compile(rf"(?<!\w){re.escape(intended)}(?!\w)")
+                q["forms"] = list(dict.fromkeys([f2 for f in q["forms"] for f2 in (word.sub(printed, f), f)]))
             if (p["name"], p.get("n")) in rank:
                 q["rank"] = rank[(p["name"], p.get("n"))]
             out[mrid].append(q)
@@ -714,7 +742,8 @@ def extract(texts_repo, repo_root, review_path):
     for edition, lang in EDITIONS.items():  # the Latin first: its marks order the Italian footnote lists
         sources[edition] = load_edition(texts_repo, edition)
         ed_persons = (persons if edition == PERSONS_EDITION
-                      else italian_persons(persons, names, by_edition[PERSONS_EDITION], latin_twins))
+                      else italian_persons(persons, names, by_edition[PERSONS_EDITION], latin_twins,
+                                           _read(data / "misprints.json", {"misprints": []})["misprints"]))
         ed_places, ed_persons, twins, person_twins = file_under_twins(entries, sources[edition][0], places, ed_persons)
         if edition == PERSONS_EDITION:
             latin_twins = person_twins

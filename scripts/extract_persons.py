@@ -98,6 +98,27 @@ def text_variants(text, name, lexicon):
     return out, unread
 
 
+# The words that print a name as another person's in a eulogy's text, before or after it, in any case
+# and with -que: "alteriúsque Seréni", "Dionýsio áltero" ("adhuc", "and also", is left to the lists).
+TEXT_REPEAT_WORDS = {"alius", "alia", "alio", "alium", "aliam", "alter", "altera", "alterius", "altero", "alterum",
+                     "alteram", "alteri"}
+NEXT_WORD = re.compile(r"\s+([^\W\d_]+)")
+WORD_BEFORE = re.compile(r"([^\W\d_]+)\s+$")
+
+
+def repeats_in_text(text, name):
+    """How many times a eulogy's text prints `name` as another person of that name: with one of
+    TEXT_REPEAT_WORDS right before or after it, nothing between."""
+    taken, n = [], 0
+    while found := find_person(text, name, taken):
+        start, end = found[0]
+        taken.append(found[0])
+        near = [m.group(1) for m in (WORD_BEFORE.search(text, 0, start), NEXT_WORD.match(text, end)) if m]
+        if any(re.sub(r"que$", "", fold(w)) in TEXT_REPEAT_WORDS for w in near):
+            n += 1
+    return n
+
+
 def _with_also(p, variants):
     """The person with `variants` added to `also`, in order, without repeats (by name_key, the
     first spelling kept) or their own name; keys in the order name, n, also, where."""
@@ -167,6 +188,12 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
         names, uncertain = text_companions(text or "", lexicon, marked=marks, variants=tvars, unread=unread_text)
         for i, n in enumerate(names):
             add(n, "text", marked=i in marks, also=[full_variant(n, v) for v in tvars.get(i, [])])
+    # A name the text prints again as another person's, outside its list too ("cum sóciis Agápio et
+    # Dionýsio áltero"): as many more persons of the name as it does.
+    for name in dict.fromkeys(p["name"] for p in persons if p["where"] == "text"):
+        have = sum(1 for p in persons if p["where"] == "text" and name_key(p["name"]) == name_key(name))
+        for _ in range(1 + repeats_in_text(text or "", name) - have):
+            add(name, "text", marked=True)
     for i, f in enumerate(footnotes, start=1):
         marks, fvars = [], {}
         names, bad = footnote_names(f["text"], printed_twice=printed_twice, marked=marks, variants=fvars,
