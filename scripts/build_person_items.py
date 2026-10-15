@@ -163,6 +163,11 @@ def evaluate(person, candidates):
                   if best else ["no candidate found"])
     elif len(passing) > 1:
         failed = [f"{len(passing)} candidates pass every rule: " + ", ".join(c["wikidata"] for c in passing)]
+    elif _listed_one_word(person) and not _died_on(passing[0], person["day"]):
+        # An obscure companion named by one word: the one candidate is usually a famous namesake
+        # (Pope Cornelius for Cornelius of the martyrs of Lyons), unless it died on this very day.
+        failed = [LISTED_ONE_WORD.format(qid=passing[0]["wikidata"])]
+        passing = []
     return {"auto": passing[0] if len(passing) == 1 else None, "failed": failed,
             "candidates": scored[:MAX_CANDIDATES]}
 
@@ -228,6 +233,19 @@ def _decided(items, person):
 
 def _one_word(name):
     return len(name.split()) == 1
+
+
+LISTED_ONE_WORD = ("a one-word name in a footnote list: the one candidate ({qid}) did not die on this "
+                   "eulogy's day, so it may be a namesake")
+
+
+def _listed_one_word(person):
+    return _one_word(person["name"]) and person.get("where", "text") != "text"
+
+
+def _died_on(candidate, day):
+    died = candidate.get("died") or ""
+    return len(died) == 10 and died[5:] == day
 
 
 def _shared_items(items, index, pending):
@@ -313,6 +331,23 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             not_processed.append((key, str(err)))
             continue
         result["failed"].append(SHARED.format(qid=e["wikidata"]))
+        del items[person["eulogy"]][person_key(person)]
+        if not items[person["eulogy"]]:
+            del items[person["eulogy"]]
+        ops[key] = make_op(key, person, result, ops.get(key))
+    # Its own automatic one-word matches in a footnote list that the date rule no longer passes
+    # (LISTED_ONE_WORD) are withdrawn too; a curator's decision never.
+    for key, person in index.items():
+        e = items.get(person["eulogy"], {}).get(person_key(person))
+        if not (e and e["status"] == "auto" and _listed_one_word(person)):
+            continue
+        try:
+            result = evaluate(person, gather(person, client))
+        except WikidataError as err:
+            not_processed.append((key, str(err)))
+            continue
+        if result["auto"] and result["auto"]["wikidata"] == e["wikidata"]:
+            continue
         del items[person["eulogy"]][person_key(person)]
         if not items[person["eulogy"]]:
             del items[person["eulogy"]]

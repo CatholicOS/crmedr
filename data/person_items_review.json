@@ -69364,6 +69364,275 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Margarita",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Margarita",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q2610800) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q2610800",
+          "label": "Margaretha of Louvain",
+          "description": "character in legend of Leuven",
+          "names": [
+            "Margaret of Louvain",
+            "Margaretha of Louvain",
+            "Margaretula Lovaniensis",
+            "Margarita",
+            "Margherita di Lovanio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1207",
+          "died": "1225-09-02",
+          "feast": [
+            "Q2857"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q130357475",
+          "label": "Margarita",
+          "description": "mother of Aitone Doria",
+          "names": [
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q130683699",
+          "label": "Margarita",
+          "description": "mother of Cneia Gay",
+          "names": [
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q135631",
+          "label": "Margherita of Savoy",
+          "description": "Queen of Italy from 1878 to 1900",
+          "names": [
+            "Königin Margarete Italien",
+            "Margaret of Savoy",
+            "Margarita",
+            "Margarita Maria Teresia Ioanna",
+            "Margherita di Savoia",
+            "Margherita of Italy",
+            "Margherita of Savoy",
+            "Queen consort of Umberto I Margherita",
+            "Queen, consort of Umberto I, King of Italy Margherita",
+            "Regina Margherita",
+            "regina d'Italia Margherita di Savoia",
+            "reine d'Italie Marguerite de Savoie"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1851-11-20",
+          "died": "1926-01-04",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q15918957",
+          "label": "Margarita",
+          "description": "Hong Kong film actress",
+          "names": [
+            "Ha Wa",
+            "Margarita"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1935-05-09",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q190058",
+          "label": "Margaret of Valois-Angoulême",
+          "description": "queen consort of Navarre (1492–1549)",
+          "names": [
+            "Margaret de Valois Queen of Navarre",
+            "Margaret of Angoulême",
+            "Margaret of Navarre",
+            "Margaret of Valois-Angoulême",
+            "Margarita",
+            "Margherita d'Angouleme",
+            "Margherita d'Angoulême",
+            "Margherita di Navarra principessa di Angoulème e regina di Navarra",
+            "Marguerite d'Angoulême",
+            "Marguerite de Navarre",
+            "Marguerite de Valois-Angoulême",
+            "Marguerite d’Angoulême"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1492-04-11",
+          "died": "1549-12-21",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q465983",
+          "label": "Margaret I, Countess of Flanders",
+          "description": "Countess suo jure of Flanders (1145-1194)",
+          "names": [
+            "Margaret I, Countess of Flanders",
+            "Margarita",
+            "Margarita I",
+            "Margherita I di Fiandra",
+            "Margherita d'Alsazia",
+            "Margherita di Alsazia",
+            "Marguerite d'Alsace"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1145",
+          "died": "1194-11-15",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1575498",
+          "label": "Margarita",
+          "description": "Colombian municipality of the department of Bolívar",
+          "names": [
+            "Margarita"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1781000",
+          "label": "Pérola",
+          "description": "municipality of Paraná state, Brazil",
+          "names": [
+            "Margarita",
+            "Perola",
+            "Pérola"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q20166",
+          "label": "Margarita",
+          "description": "Italian comune",
+          "names": [
+            "Fanum Sanctae Margaritae",
+            "Margarita"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0212-martyres-abitinenses|Maria",
       "eulogy": "mr:0212-martyres-abitinenses",
       "day": "02-12",
@@ -69931,6 +70200,266 @@
           "feast": [],
           "evidence": [
             "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Matrona",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Matrona",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q3822117) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q3822117",
+          "label": "Matrona of Barcelona",
+          "description": "3rd-century saint of the Roman Catholic Church and the Eastern Orthodox Church",
+          "names": [
+            "Madrona of Barcelona",
+            "Madrona of Tesalónica",
+            "Matrona",
+            "Matrona de Tesalónica",
+            "Matrona of Barcelona",
+            "Matrona of Tesalónica",
+            "Santa Madrona"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0250",
+          "died": "0300",
+          "feast": [
+            "Q2457"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11771587",
+          "label": "Matrona",
+          "description": "Orthodox nun",
+          "names": [
+            "Matrona"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1889",
+          "died": "1963-11-07",
+          "feast": [
+            "Q2282"
+          ],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q443157",
+          "label": "Matryona Nikonova",
+          "description": "Russian saint",
+          "names": [
+            "Matrjona Nikonowa",
+            "Matrona Dmitrievna Nikonova",
+            "Matrona la Cieca",
+            "Matrona of Moscow",
+            "Matryona Nikonova",
+            "Matryona of Moscow",
+            "Nikonowa"
+          ],
+          "human": true,
+          "statuses": [
+            "Q1349880",
+            "Q2369287"
+          ],
+          "born": "1883",
+          "died": "1952-05-02",
+          "feast": [
+            "Q2545"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q111412975",
+          "label": "Matrona",
+          "description": "female given name (Ματρώνα)",
+          "names": [
+            "Madrona",
+            "Matron",
+            "Matrona",
+            "Ματρώνα"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12594",
+          "label": "Marne",
+          "description": "French department",
+          "names": [
+            "Marna",
+            "Marne",
+            "Matrona"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1281671",
+          "label": "matrona",
+          "description": "married Roman woman",
+          "names": [
+            "matrona"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q141523794",
+          "label": "Matrona",
+          "description": "family name",
+          "names": [
+            "Matrona"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1909041",
+          "label": "Matronae",
+          "description": "deities of fertility in Celtic and Germanic mythologies under Roman rule",
+          "names": [
+            "Matres",
+            "Matres and Matronae",
+            "Matres e Matronae",
+            "Matronae"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2245647",
+          "label": "Matrona",
+          "description": "genus of insects",
+          "names": [
+            "Matrona"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q41983",
+          "label": "Marne",
+          "description": "river in France",
+          "names": [
+            "Fiume Marna",
+            "Marna",
+            "Marne",
+            "Matrona"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
             "name"
           ]
         }
@@ -71016,6 +71545,268 @@
             "eleventh grade",
             "première",
             "prima"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Quintus",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Quintus",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q141235825) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q141235825",
+          "label": "Quintus of Capua",
+          "description": "",
+          "names": [
+            "Quinto di Capua",
+            "Quintus",
+            "Quintus of Capua"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2854"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q128796870",
+          "label": "Quintus",
+          "description": "triumvir coloniis deducendis in 194 BC",
+          "names": [
+            "Q. -?",
+            "Quintus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q129207621",
+          "label": "Quintus",
+          "description": "Roman legatus in 153 BC",
+          "names": [
+            "Quintus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q20101609",
+          "label": "Quintus",
+          "description": "2nd-century Roman physician",
+          "names": [
+            "Quinto",
+            "Quintus",
+            "Quintus of Rome"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0140",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q352702",
+          "label": "Quintus Smyrnaeus",
+          "description": "4th-century Greek poet",
+          "names": [
+            "Kointos",
+            "Quinto Calabro",
+            "Quinto Smirneo",
+            "Quinto di Smirne",
+            "Quintus",
+            "Quintus Calaber",
+            "Quintus Epicus",
+            "Quintus Poeta",
+            "Quintus Smyrnaeus",
+            "Quintus of Smyrna"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0400",
+          "died": "0400",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q7272539",
+          "label": "Quintus of Phrygia",
+          "description": "saint",
+          "names": [
+            "Quintus",
+            "Quintus of Phrygia"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0285",
+          "feast": [
+            "Q2390"
+          ],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q174929",
+          "label": "Tertullian",
+          "description": "Roman Christian theologian and writer (c. 155 – c. 220)",
+          "names": [
+            "Quinto Settimio Fiorente Tertulliano",
+            "Quintus Septimius Florens Tertullianus",
+            "Quintus Septimus Florens Tertullianus",
+            "Tertullian",
+            "Tertulliano",
+            "Tertullianus",
+            "Tertullianus Scriptor ecclesiasticus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0150",
+          "died": "0220",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q17983455",
+          "label": "Quintus",
+          "description": "male given name",
+          "names": [
+            "Quintus",
+            "Quintus (first name)",
+            "Quintus (given name)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1976692",
+          "label": "RKHV Quintus",
+          "description": "Dutch handball club",
+          "names": [
+            "HV Quintus",
+            "Quintus",
+            "Quintus Kwintsheul",
+            "RKHV Quintus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q21473986",
+          "label": "Quintus",
+          "description": "ancient Roman praenomen",
+          "names": [
+            "Q.",
+            "Quinto",
+            "Quintus"
           ],
           "human": false,
           "statuses": [],
@@ -72257,6 +73048,244 @@
           "died": null,
           "feast": [],
           "evidence": []
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Saturnina",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Saturnina",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Vincentius",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q673715) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q673715",
+          "label": "Saturnina",
+          "description": "German saint martyred in 907",
+          "names": [
+            "Saturnina"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2627"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q30049852",
+          "label": "Saturnina Rodríguez de Zavalía",
+          "description": "founder of a religious order and designated blessed by the Catholic church (1823-1896)",
+          "names": [
+            "Catalina de María",
+            "Saturnina Rodríguez de Zavalía"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287",
+            "Q51619"
+          ],
+          "born": "1823-11-27",
+          "died": "1896-04-05",
+          "feast": [
+            "Q3018"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q105429750",
+          "label": "Saturnina Burgos",
+          "description": "",
+          "names": [
+            "Saturnina Burgos"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q106464662",
+          "label": "Saturnina Ubaldo de Rojas",
+          "description": "",
+          "names": [
+            "Saturnina Ubaldo de Rojas"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q106727342",
+          "label": "Saturnina",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Saturnina"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q106943660",
+          "label": "Saturnina",
+          "description": "ancient Roman cognomen",
+          "names": [
+            "Saturnina",
+            "Satvrnina"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q7426830",
+          "label": "Saturnina Hidalgo",
+          "description": "sister of Jose Rizal (1850-1913)",
+          "names": [
+            "Saturnina Hidalgo",
+            "Saturnina Rizal Mercado de Hidalgo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1850-06-04",
+          "died": "1913-09-14",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q85973046",
+          "label": "Saturnina of Abitina",
+          "description": "Christian martyr during the reign of Diocletian",
+          "names": [
+            "Saturnina of Abitina"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q9074771",
+          "label": "Saturnina Jassà i Fontcuberta",
+          "description": "suora cofondatrice della prima comunità della Compagnia di Santa Teresa di Gesù",
+          "names": [
+            "Saturnina Jassa i Fontcuberta",
+            "Saturnina Jassa y Fontcuberta",
+            "Saturnina Jassà i Fontcuberta"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1851-03-03",
+          "died": "1936-10-13",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q9334021",
+          "label": "Saturnina",
+          "description": "female given name",
+          "names": [
+            "Saturnina"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
         }
       ],
       "decision": null,
@@ -74006,6 +75035,298 @@
           "feast": [],
           "evidence": [
             "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0212-martyres-abitinenses|Vincentius",
+      "eulogy": "mr:0212-martyres-abitinenses",
+      "day": "02-12",
+      "typology": "commemoratio",
+      "subject": "Sancti Martyres Abitinenses",
+      "name": "Vincentius",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Saturninus",
+        "Saturninus iunior",
+        "Felix",
+        "Maria",
+        "Hilarion",
+        "Dativus",
+        "Emeritus",
+        "Ampelius",
+        "Rogatianus",
+        "Quintus",
+        "Maximianus",
+        "Telica",
+        "Rogatus",
+        "Ianuarius",
+        "Cassianus",
+        "Victorianus",
+        "Cæcilianus",
+        "Restituta",
+        "Prima",
+        "Eva",
+        "Givalius",
+        "Pomponia",
+        "Secunda",
+        "Ianuaria",
+        "Saturnina",
+        "Martinus",
+        "Clautus",
+        "Felix iunior",
+        "Margarita",
+        "Maior",
+        "Honorata",
+        "Regiola",
+        "Victorinus",
+        "Pelusius",
+        "Faustus",
+        "Dacianus",
+        "Matrona",
+        "Cæcilia",
+        "Victoria",
+        "Berectina"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q318974) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q318974",
+          "label": "Vincent of Saragossa",
+          "description": "saint and martyr",
+          "names": [
+            "Saint Vincent",
+            "Saint Vincent the Martyr",
+            "San Vincenzo",
+            "San Vincenzo di Saragozza",
+            "San Vincenzo martire",
+            "Sanctus Vincentius",
+            "St. Vincent",
+            "St. Vincent the Martyr",
+            "Vincent Martyr",
+            "Vincent of Heusca",
+            "Vincent of Saragossa",
+            "Vincent the Deacon",
+            "Vincent the Martyr",
+            "Vincentius Caesaraugustanus",
+            "Vincenzo di Saragozza"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0300",
+          "died": "0304",
+          "feast": [
+            "Q2275",
+            "Q2987"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q104529764",
+          "label": "Vincentius",
+          "description": "5th-century Latin poet",
+          "names": [
+            "Vincentius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11902454",
+          "label": "Vincentius",
+          "description": "Czech medieval chronicler and roman catholic priest",
+          "names": [
+            "Vincencius",
+            "Vincent of Prague",
+            "Vincentius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1130",
+          "died": "1167",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q123377863",
+          "label": "Vincentius",
+          "description": "5th-century Roman comes Hispaniarum in the Visgothic Kingdom",
+          "names": [
+            "Vicentius",
+            "Vincentius",
+            "Vincenzio"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0473",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q125317908",
+          "label": "Vincent of Naples",
+          "description": "bishop of Naples",
+          "names": [
+            "Vincent of Naples",
+            "Vincentius",
+            "Vincenzo di Napoli"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q244413",
+          "label": "Vincent de Paul",
+          "description": "French priest, founder and saint (1581-1660)",
+          "names": [
+            "San Vincenzo de Paoli",
+            "San Vincenzo de' Paoli",
+            "St. Vincent de Paul",
+            "Vincent de Paul",
+            "Vincentius a Paolo",
+            "Vincentius a Paulo",
+            "Vincenzo de Paoli",
+            "Vincenzo de' Paoli"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "1581-04-24",
+          "died": "1660-09-27",
+          "feast": [
+            "Q2884"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q317131",
+          "label": "Vincent Ferrer",
+          "description": "Spanish Dominican preacher and saint (1350–1419)",
+          "names": [
+            "Saint Vincent Ferrer",
+            "San Vincenzo Ferrer",
+            "San Vincenzo Ferreri",
+            "St. Vincent Ferrer",
+            "Vincent Ferrer",
+            "Vincente Ferrer",
+            "Vincentius Ferrer",
+            "Vincentius Ferrerius",
+            "Vincenzo Ferrer",
+            "Vincenzo Ferreri"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "1350-01-23",
+          "died": "1419-04-05",
+          "feast": [
+            "Q2507"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q644057",
+          "label": "Vincent of Lérins",
+          "description": "5th-century saint and theologian",
+          "names": [
+            "Peregrinus",
+            "Saint Vincent of Lérins",
+            "Vincent of Lerins",
+            "Vincent of Lérins",
+            "Vincentius Lerinensis",
+            "Vincentius Lerinensis Scriptor ecclesiasticus",
+            "Vincenzo di Lerino"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0500",
+          "died": "0445",
+          "feast": [
+            "Q2584"
+          ],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q110558083",
+          "label": "Vincentius van Glinstra",
+          "description": "1 Jan 1676 Leeuwarden - 3 Nov 1730 Bergum",
+          "names": [
+            "Vincentius van Glinstra"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1676-01-01",
+          "died": "1730-11-03",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q114514522",
+          "label": "Vincentius A Halim",
+          "description": "researcher",
+          "names": [
+            "Vincentius A Halim",
+            "Vincentius Halim"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
           ]
         }
       ],
@@ -153874,6 +155195,223 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0416-optatus-et-socii|Evodius",
+      "eulogy": "mr:0416-optatus-et-socii",
+      "day": "04-16",
+      "typology": "commemoratio",
+      "subject": "Sancti Optatus et socii",
+      "name": "Evodius",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Optatus",
+        "Lupercus",
+        "Successus",
+        "Martialis",
+        "Urbanus",
+        "Iulia",
+        "Quintilianus",
+        "Publius",
+        "Fronto",
+        "Felix",
+        "Cæcilianus",
+        "Primitivus",
+        "Apodemius"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q709251) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q709251",
+          "label": "Evodius",
+          "description": "early Christian bishop of Antioch",
+          "names": [
+            "Evodio di Antiochia",
+            "Evodius",
+            "Evodius Antiochenus"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2993173"
+          ],
+          "born": "0050",
+          "died": "0069",
+          "feast": [
+            "Q2552"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11921363",
+          "label": "Evodius of Javols",
+          "description": "",
+          "names": [
+            "Evodius",
+            "Evodius of Javols"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q19999656",
+          "label": "Evodi",
+          "description": "bishop of Uzalis (4th century)",
+          "names": [
+            "Euodios",
+            "Euodios of Uzala",
+            "Euodius",
+            "Evodi",
+            "Evodio di Uzali",
+            "Evodius",
+            "Evodius Upsalensis",
+            "Evodius Uzaliensis",
+            "Evodius Uzalitanus",
+            "Evodius of Uzalis"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0424",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109728303",
+          "label": "Evodius Gonsomer",
+          "description": "Indonesian political candidate",
+          "names": [
+            "Evodius Gonsomer"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q111354985",
+          "label": "Pseudo-Evodius",
+          "description": "Coptic homilist (fl. 6th-8th century)",
+          "names": [
+            "Evodio di Roma",
+            "Evodius Romanus",
+            "Evodius of Rome",
+            "Pseudo-Evodio",
+            "Pseudo-Evodius",
+            "Pseudo-Evodius Romanus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q113762266",
+          "label": "Evodius Mbenna",
+          "description": "",
+          "names": [
+            "Evodius Mbenna"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1968",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q132951373",
+          "label": "Q132951373",
+          "description": "",
+          "names": [],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1382496",
+          "label": "Evodius Wallbrecht",
+          "description": "German writer (1881-1965)",
+          "names": [
+            "Evodius Wallbrecht"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1881",
+          "died": "1965",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1382497",
+          "label": "Evodius",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Evodius"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q60830940",
+          "label": "Evodius",
+          "description": "epithet of Hermes",
+          "names": [
+            "Evodius"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0416-optatus-et-socii|Felix",
       "eulogy": "mr:0416-optatus-et-socii",
       "day": "04-16",
@@ -154123,6 +155661,217 @@
           "evidence": [
             "name"
           ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0416-optatus-et-socii|Fronto",
+      "eulogy": "mr:0416-optatus-et-socii",
+      "day": "04-16",
+      "typology": "commemoratio",
+      "subject": "Sancti Optatus et socii",
+      "name": "Fronto",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Optatus",
+        "Lupercus",
+        "Successus",
+        "Martialis",
+        "Urbanus",
+        "Iulia",
+        "Quintilianus",
+        "Publius",
+        "Felix",
+        "Cæcilianus",
+        "Evodius",
+        "Primitivus",
+        "Apodemius"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q121417574) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q121417574",
+          "label": "Fronto of Nitria",
+          "description": "Egyptian Christian saint",
+          "names": [
+            "Fronto",
+            "Fronto of Nitria",
+            "Frontonius"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2500"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12899985",
+          "label": "Fronto",
+          "description": "",
+          "names": [
+            "Fronto",
+            "Frontone"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q317055",
+          "label": "Marcus Cornelius Fronto",
+          "description": "2nd century Roman rhetorician and advocate",
+          "names": [
+            "Fronto",
+            "Fronto Rhetor",
+            "Frontone",
+            "Marco Cornelio Frontone",
+            "Marcus Cornelius Fronto",
+            "Marcus Cornelius Fronto Rhetor"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0100",
+          "died": "0160",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q134006471",
+          "label": "Q134006471",
+          "description": "",
+          "names": [],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q18446669",
+          "label": "Fronto",
+          "description": "human settlement in Italy",
+          "names": [
+            "Fronto"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2064236",
+          "label": "fronton",
+          "description": "type of court",
+          "names": [
+            "Pelota court",
+            "fronton",
+            "frontó",
+            "frontón"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q29032359",
+          "label": "Fronto",
+          "description": "genus of insects",
+          "names": [
+            "Fronto"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q64821640",
+          "label": "Fronto",
+          "description": "ancient Roman cognomen",
+          "names": [
+            "Fronto",
+            "Frontone"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q971792",
+          "label": "Frunti",
+          "description": "historical geographic region in modern day Italy",
+          "names": [
+            "Fronto",
+            "Frunti"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q13561053",
+          "label": "Frontopsylla",
+          "description": "genus of insects",
+          "names": [
+            "Frontopsylla"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -154383,6 +156132,411 @@
           "evidence": [
             "human"
           ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0416-optatus-et-socii|Lupercus",
+      "eulogy": "mr:0416-optatus-et-socii",
+      "day": "04-16",
+      "typology": "commemoratio",
+      "subject": "Sancti Optatus et socii",
+      "name": "Lupercus",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Optatus",
+        "Successus",
+        "Martialis",
+        "Urbanus",
+        "Iulia",
+        "Quintilianus",
+        "Publius",
+        "Fronto",
+        "Felix",
+        "Cæcilianus",
+        "Evodius",
+        "Primitivus",
+        "Apodemius"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q6704704) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q6704704",
+          "label": "Luperculus",
+          "description": "Bishop of Eauze",
+          "names": [
+            "Lupercius",
+            "Luperculus",
+            "Lupercus",
+            "Saint-Luperc"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2993173"
+          ],
+          "born": null,
+          "died": "0300",
+          "feast": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q10513807",
+          "label": "Lupercus of Berytus",
+          "description": "Greek grammarian",
+          "names": [
+            "Luperco di Berito",
+            "Lupercus",
+            "Lupercus of Berytus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109407168",
+          "label": "Lupercus",
+          "description": "ancient Roman cognomen",
+          "names": [
+            "Lupercus",
+            "Lvpercvs"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2713122",
+          "label": "Lupercus",
+          "description": "Roman deity",
+          "names": [
+            "Luperco",
+            "Lupercus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3267654",
+          "label": "Lupercus",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Lupercus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109841103",
+          "label": "Lupercus 4 (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Lupercus 4 (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q109841109",
+          "label": "Lupercus 3 (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Lupercus 3 (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q132582",
+          "label": "Pan",
+          "description": "Greek god of the mountain wilds, shepherds, flocks, rustic music, fertility, spring, and theatrical criticism, with the hindquarters, legs, and horns of a goat",
+          "names": [
+            "Pan",
+            "Pane"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q136711810",
+          "label": "Q136711810",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q137698928",
+          "label": "Q137698928",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0416-optatus-et-socii|Martialis",
+      "eulogy": "mr:0416-optatus-et-socii",
+      "day": "04-16",
+      "typology": "commemoratio",
+      "subject": "Sancti Optatus et socii",
+      "name": "Martialis",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Optatus",
+        "Lupercus",
+        "Successus",
+        "Urbanus",
+        "Iulia",
+        "Quintilianus",
+        "Publius",
+        "Fronto",
+        "Felix",
+        "Cæcilianus",
+        "Evodius",
+        "Primitivus",
+        "Apodemius"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q726934) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q726934",
+          "label": "Saint Martial",
+          "description": "3rd century founding bishop of Limoges",
+          "names": [
+            "Martial of Limoges",
+            "Martialis",
+            "Marziale di Limoges",
+            "Saint Martial",
+            "San Marziale",
+            "San Marziale di Limoges"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0300",
+          "died": "0300",
+          "feast": [
+            "Q2657"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2098",
+          "label": "Martial",
+          "description": "1st-century Latin poet from Hispania",
+          "names": [
+            "Marco Valerio Marziale",
+            "Marcus Valerius Martialis",
+            "Martial",
+            "Martialis",
+            "Martialis Epigrammaticus",
+            "Marziale"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0040-03",
+          "died": "0104",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1903150",
+          "label": "Martialis",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Martialis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2028552",
+          "label": "Martial d'Auvergne",
+          "description": "French poet",
+          "names": [
+            "Martial d'Auvergne",
+            "Martial de Paris",
+            "Martialis Arvernus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1430",
+          "died": "1508-05-13",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q21447406",
+          "label": "Martialis",
+          "description": "genus of insects",
+          "names": [
+            "Martialis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3295267",
+          "label": "Martial Merlin",
+          "description": "French colonial administrator (1860-1935)",
+          "names": [
+            "Martial Henri Merlin",
+            "Martial Merlin",
+            "Martialis Henricus Merlin",
+            "Martialis Merlin"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1860-01-20",
+          "died": "1935-05-08",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q91611396",
+          "label": "Martialis",
+          "description": "ancient Roman cognomen",
+          "names": [
+            "Martiale",
+            "Martialis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q109632469",
+          "label": "Martialis 15 (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Martialis 15 (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q109632470",
+          "label": "Martialis 9 (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Martialis 9 (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
+        },
+        {
+          "wikidata": "Q110255757",
+          "label": "Martialis 14 (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Martialis 14 (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -233237,6 +235391,268 @@
         "no candidate found"
       ],
       "candidates": [],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0602-pothinus-et-socii|Cornelius",
+      "eulogy": "mr:0602-pothinus-et-socii",
+      "day": "06-02",
+      "typology": "dies_natalis",
+      "subject": "Sancti Pothinus et socii",
+      "name": "Cornelius",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Pothinus",
+        "Zacharias",
+        "Vetius Epagatus",
+        "Macarius",
+        "Asclibiades",
+        "Silvius",
+        "Primus",
+        "Ulpius",
+        "Vitalis",
+        "Comminus",
+        "October",
+        "Philomenus",
+        "Geminus",
+        "Iulia",
+        "Albina",
+        "Grata",
+        "Æmilia",
+        "Potamia",
+        "Pompeia",
+        "Rodana",
+        "Biblis",
+        "Quartia",
+        "Materna",
+        "Helpis",
+        "Maturus",
+        "Attalus",
+        "Alexander",
+        "Ponticus",
+        "Istus",
+        "Aristeus",
+        "Zosimus",
+        "Titus",
+        "Iulius",
+        "Zoticus",
+        "Apollonius",
+        "Geminianus",
+        "Ausona",
+        "Iamnica",
+        "Domna",
+        "Iusta",
+        "Trophima",
+        "Antonia"
+      ],
+      "failed": [
+        "a one-word name in a footnote list: the one candidate (Q54798) did not die on this eulogy's day, so it may be a namesake"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q54798",
+          "label": "Cornelius",
+          "description": "pope Saint (251 to 253)",
+          "names": [
+            "Cornelius",
+            "Papa Cornelius",
+            "Pope Cornelius",
+            "Sanctus Cornelius PP.",
+            "papa Cornelio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0180",
+          "died": "0253-06",
+          "feast": [
+            "Q2897"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "death"
+          ]
+        },
+        {
+          "wikidata": "Q3693689",
+          "label": "Cornelius of Imola",
+          "description": "vescovo e santo romano",
+          "names": [
+            "Cornelio di Imola",
+            "Cornelius",
+            "Cornelius of Imola"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0350",
+          "died": null,
+          "feast": [
+            "Q2552"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108450744",
+          "label": "Cornelius",
+          "description": "Roman Catholic bishop",
+          "names": [
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "1442",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108546850",
+          "label": "Cornelius",
+          "description": "bishop of Raphoe",
+          "names": [
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1133707",
+          "label": "Cornelius",
+          "description": "accuser of Mamercus Aemilius Scaurus",
+          "names": [
+            "Cornelio",
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q128316675",
+          "label": "Cornelius",
+          "description": "duovir navalis in 282 BC",
+          "names": [
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "-040",
+          "died": "-030",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q16189866",
+          "label": "Cornelius",
+          "description": "",
+          "names": [
+            "Cornelio",
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0050",
+          "died": "0050",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q435987",
+          "label": "Cornelius the Centurion",
+          "description": "first Gentile to convert to Christianity",
+          "names": [
+            "Cornelio",
+            "Cornelio il Centurione",
+            "Cornelius",
+            "Cornelius the Centurion"
+          ],
+          "human": false,
+          "statuses": [
+            "Q2993173"
+          ],
+          "born": "0100",
+          "died": "0100",
+          "feast": [
+            "Q2313"
+          ],
+          "evidence": [
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q6114538",
+          "label": "Q6114538",
+          "description": "botanist (1908-1972)",
+          "names": [
+            "Cornelius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1908-10",
+          "died": "1972-11",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q778539",
+          "label": "Cornelius",
+          "description": "Japanese singer-songwriter, music producer, composer",
+          "names": [
+            "Cornelius",
+            "Keigo Oyamada",
+            "Oyamada Keigo"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1969-01-27",
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null
     },

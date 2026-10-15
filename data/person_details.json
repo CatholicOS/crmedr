@@ -169,6 +169,40 @@
       "pt": "Papa João XXIII"
     }
   },
+  "Q30547": {
+    "description": {
+      "en": "Albanian-Indian Catholic nun and missionary (1910–1997)",
+      "it": "religiosa albanese-indiana (1910-1997)",
+      "fr": "religieuse et missionnaire catholique indienne d'origine albanaise",
+      "de": "katholische Ordensschwester, Missionarin und Heilige; Friedensnobelpreisträgerin",
+      "es": "religiosa misionera y santa católica albanesa e india",
+      "pt": "Santa da Igreja Católica"
+    },
+    "born": {
+      "year": 1910,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1997,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "MotherTeresa 090.jpg",
+      "author": "Túrelio",
+      "license": "CC BY-SA 2.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en"
+    },
+    "wikipedia": {
+      "en": "Mother Teresa",
+      "it": "Madre Teresa di Calcutta",
+      "fr": "Mère Teresa",
+      "de": "Mutter Teresa",
+      "es": "Teresa de Calcuta",
+      "pt": "Madre Teresa de Calcutá"
+    }
+  },
   "Q30578": {
     "description": {
       "en": "11th century pope and initiator of the Crusades",
@@ -898,6 +932,34 @@
       "es": "Albuino de Brixen"
     }
   },
+  "Q45579": {
+    "description": {
+      "en": "Italian religious",
+      "it": "religiosa italiana",
+      "fr": "carmélite italienne, mystique du XVIIIe siècle"
+    },
+    "born": {
+      "year": 1661,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1717,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Anna Maria Fontanella.JPG",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Marianna Fontanella",
+      "it": "Maria degli Angeli Fontanella",
+      "fr": "Marie des Anges"
+    }
+  },
   "Q47144": {
     "description": {
       "en": "2nd Pope of the Catholic Church",
@@ -1061,40 +1123,6 @@
       "de": "Johannes von Damaskus",
       "es": "Juan Damasceno",
       "pt": "João Damasceno"
-    }
-  },
-  "Q54798": {
-    "description": {
-      "en": "pope Saint (251 to 253)",
-      "it": "21° vescovo di Roma e papa della Chiesa cattolica dal 251 al 253",
-      "fr": "21e pape de l'Église catholique, de 251 à 253",
-      "de": "Papst",
-      "es": "21° Papa de la Iglesia Católica",
-      "pt": "21º Papa da Igreja Católica"
-    },
-    "born": {
-      "year": 180,
-      "precision": "year",
-      "circa": true
-    },
-    "died": {
-      "year": 253,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Heiliger Cornelius.jpg",
-      "author": "Master of Messkirch",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Pope Cornelius",
-      "it": "Papa Cornelio",
-      "fr": "Corneille (pape)",
-      "de": "Cornelius (Bischof von Rom)",
-      "es": "Cornelio",
-      "pt": "Papa Cornélio"
     }
   },
   "Q58559": {
@@ -2579,9 +2607,41 @@
       "pt": "Gerardo Sagredo"
     }
   },
+  "Q119289": {
+    "description": {
+      "en": "Italian Franciscan preacher and ascetic writer",
+      "it": "presbitero, religioso e santo italiano",
+      "fr": "prêtre italien et franciscain",
+      "de": "Franziskaner-Mönch und Prediger"
+    },
+    "born": {
+      "year": 1676,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1751,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "S Leonardo.JPG",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Leonard of Port Maurice",
+      "it": "Leonardo da Porto Maurizio",
+      "fr": "Léonard de Port-Maurice",
+      "de": "Leonhard von Porto Maurizio",
+      "es": "Leonardo de Puerto Mauricio",
+      "pt": "Leonardo de Porto Maurício"
+    }
+  },
   "Q122376": {
     "description": {
-      "en": "Bishop of Rome from c. 218 to c. 223",
+      "en": "3rd-century Roman pope and martyr, Catholic saint, 16th Bishop of Rome from c. 218 to c. 223",
       "it": "16° vescovo di Roma e papa della Chiesa cattolica dal 217 al 222",
       "fr": "16e pape de l'Église catholique, de 217 à 222",
       "de": "Papst (217–222)",
@@ -4375,6 +4435,39 @@
       "pt": "Sebastião de Narbona"
     }
   },
+  "Q185924": {
+    "description": {
+      "en": "French saint",
+      "it": "religiosa e santa francese",
+      "fr": "religieuse française",
+      "de": "französische Ordensgründerin und Heilige",
+      "pt": "Freira francesa e Santa"
+    },
+    "born": {
+      "year": 1765,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1826,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jeanne-Antide Thouret.jpg",
+      "author": "N.N.",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Jeanne-Antide Thouret",
+      "it": "Giovanna Antida Thouret",
+      "fr": "Jeanne-Antide Thouret",
+      "de": "Johanna Antida Thouret",
+      "es": "Juana Antida Thouret",
+      "pt": "Joana Antida Thouret"
+    }
+  },
   "Q188411": {
     "description": {
       "en": "Burgundian saint, abbot and theologian (1090–1153)",
@@ -5648,6 +5741,38 @@
       "pt": "Angela Merici"
     }
   },
+  "Q236220": {
+    "description": {
+      "en": "French queen who entered religious life, became a nun and later an abbess who founded the Sisters of the Annunciation of Mary (canonized 1950)",
+      "it": "regina consorte di Francia, monaca e santa francese",
+      "fr": "sainte et reine de France",
+      "de": "Königin von Frankreich und Herzogin von Orleans"
+    },
+    "born": {
+      "year": 1464,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1505,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Stjeannedevalois.jpg",
+      "author": "A. Pradão",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Joan of France, Duchess of Berry",
+      "it": "Giovanna di Valois (regina di Francia)",
+      "fr": "Jeanne de France (1464-1505)",
+      "de": "Jeanne de Valois",
+      "es": "Juana de Valois (1464-1505)",
+      "pt": "Joana de Valois, Duquesa de Berry"
+    }
+  },
   "Q236326": {
     "description": {
       "en": "6th‑century Gaelic Irish missionary monk, Christian saint, pioneer of Celtic Christianity in Scotland and “Apostle of the Picts”",
@@ -5813,6 +5938,39 @@
       "de": "Petrus von Verona",
       "es": "Pedro de Verona",
       "pt": "Pedro de Verona"
+    }
+  },
+  "Q238963": {
+    "description": {
+      "en": "Italian saint (1922-1962)",
+      "it": "pediatra italiana, venerata come santa dalla Chiesa cattolica (1922-1962)",
+      "fr": "médecin italien",
+      "de": "italienische katholische Kinderärztin, Heilige",
+      "es": "Médica cirujana italiana y santa, reconocida por haber antepuesto la vida de su hija nonata a la suya propia"
+    },
+    "born": {
+      "year": 1922,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1962,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "GiannaBerettaMolla.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Gianna Beretta Molla",
+      "it": "Gianna Beretta Molla",
+      "fr": "Jeanne Beretta Molla",
+      "de": "Gianna Beretta Molla",
+      "es": "Gianna Beretta Molla",
+      "pt": "Gianna Beretta Molla"
     }
   },
   "Q239160": {
@@ -6193,6 +6351,39 @@
       "de": "Petrus Damiani",
       "es": "Pedro Damián",
       "pt": "Pedro Damião"
+    }
+  },
+  "Q261010": {
+    "description": {
+      "en": "French saint",
+      "it": "santa - religiosa francese",
+      "fr": "religieuse française",
+      "de": "französische Ordensgründerin und Heilige der römisch-katholischen Kirche",
+      "es": "religiosa francesa"
+    },
+    "born": {
+      "year": 1792,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1879,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jeanne Jugan.jpg",
+      "author": "Leon Brune",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Jeanne Jugan",
+      "it": "Jeanne Jugan",
+      "fr": "Jeanne Jugan",
+      "de": "Jeanne Jugan",
+      "es": "Juana Jugan",
+      "pt": "Joana Jugan"
     }
   },
   "Q261097": {
@@ -6860,6 +7051,39 @@
       "fr": "Finbarr de Cork",
       "de": "Finbarr",
       "es": "Finbar"
+    }
+  },
+  "Q288825": {
+    "description": {
+      "en": "French saint",
+      "it": "religiosa francese",
+      "fr": "sainte catholique française",
+      "de": "französische Ordensgründerin",
+      "es": "santa católica francesa"
+    },
+    "born": {
+      "year": 1555,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1640,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Jeanne de Lestonnac.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Jeanne de Lestonnac",
+      "it": "Giovanna di Lestonnac",
+      "fr": "Jeanne de Lestonnac",
+      "de": "Johanna von Lestonnac",
+      "es": "Juana de Lestonnac",
+      "pt": "Joana de Lestonnac"
     }
   },
   "Q288887": {
@@ -7816,40 +8040,6 @@
       "pt": "Domingos Sávio"
     }
   },
-  "Q318974": {
-    "description": {
-      "en": "saint and martyr",
-      "it": "diacono, martire e santo spagnolo",
-      "fr": "saint et martyr chrétien",
-      "de": "Diakon und Märtyrer",
-      "es": "diácono y mártir español",
-      "pt": "diácono e mártir hispano-romano"
-    },
-    "born": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 304,
-      "precision": "year",
-      "circa": true
-    },
-    "image": {
-      "file": "Vicente de Zaragoza by Tomás Giner, 1462–1466.jpg",
-      "author": "Tomás Giner",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Vincent of Saragossa",
-      "it": "Vincenzo di Saragozza",
-      "fr": "Vincent de Saragosse",
-      "de": "Vinzenz von Valencia",
-      "es": "Vicente de Huesca",
-      "pt": "Vicente de Saragoça"
-    }
-  },
   "Q319568": {
     "description": {
       "en": "saint and bishop",
@@ -7914,6 +8104,36 @@
       "de": "Columban von Luxeuil",
       "es": "Columbano de Luxeuil",
       "pt": "Columbano"
+    }
+  },
+  "Q321406": {
+    "description": {
+      "en": "Italian Roman Catholic capuchin priest and blessed",
+      "it": "sacerdote cappuccino e beato italiano",
+      "fr": "prêtre capucin et bienheureux italien",
+      "de": "Seliger der römisch-katholischen Kirche"
+    },
+    "born": {
+      "year": 1844,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1890,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Beato Innocenzo - Berzo Inferiore (Foto Luca Giarelli).jpg",
+      "author": "Luca Giarelli",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Innocenzo da Berzo",
+      "it": "Innocenzo da Berzo",
+      "fr": "Innocent de Berzo",
+      "de": "Innozenz von Berzo"
     }
   },
   "Q321617": {
@@ -9481,6 +9701,37 @@
       "pt": "Virginia Centurione Bracelli"
     }
   },
+  "Q437723": {
+    "description": {
+      "en": "French religious (1844-1914)",
+      "it": "religiosa francese (1844-1914)",
+      "de": "Ordensschwester",
+      "es": "religiosa francesa"
+    },
+    "born": {
+      "year": 1844,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1914,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Mother Françoise de Sales Aviat.jpg",
+      "author": "Oblate Sister of St Francis de Sales",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Leonie Aviat",
+      "it": "Léonie Aviat",
+      "fr": "Léonie Aviat",
+      "de": "Leonie Aviat",
+      "es": "Leonia Francisca de Sales Aviat"
+    }
+  },
   "Q438170": {
     "description": {
       "en": "Italian Roman Catholic nun and blessed (1914-1939)",
@@ -9542,6 +9793,66 @@
       "de": "Wiborada",
       "es": "Viborada",
       "pt": "Wiborada"
+    }
+  },
+  "Q438530": {
+    "description": {
+      "en": "French religious (1843-1888)",
+      "it": "religiosa italiana",
+      "de": "französische Ordensfrau, Gründerin der Kongregation der Kleine Dienerinnen des Heiligen Herzens Jesu"
+    },
+    "born": {
+      "year": 1843,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1888,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Anna Michelotti.png",
+      "author": "AnonymousUnknown author, no author disclosure",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Giovanna Francesca Michelotti",
+      "it": "Anna Michelotti",
+      "fr": "Anne Michelotti",
+      "de": "Anna Michelotti"
+    }
+  },
+  "Q439670": {
+    "description": {
+      "en": "Founder of the Congregation of St. Anne of Providence (1666-1736)",
+      "it": "religiosa francese",
+      "fr": "religieuse français",
+      "de": "französische Ordensgründerin, katholische Heilige"
+    },
+    "born": {
+      "year": 1666,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1736,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jeanne Delanoue.jpg",
+      "author": "Vatican",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Jeanne Delanoue",
+      "it": "Jeanne Delanoue",
+      "fr": "Jeanne Delanoue",
+      "de": "Jeanne Delanoue",
+      "es": "Juana Delanoue"
     }
   },
   "Q440193": {
@@ -9633,6 +9944,38 @@
       "fr": "Bartolomée Capitanio",
       "de": "Bartholomäa Maria Capitanio",
       "es": "Bartolomea Capitanio"
+    }
+  },
+  "Q445228": {
+    "description": {
+      "en": "Spanish Roman Catholic nun (1815–1876)",
+      "it": "religiosa spagnola",
+      "de": "spanische Heilige und Ordensgründerin",
+      "es": "religiosa y fundadora española"
+    },
+    "born": {
+      "year": 1815,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1876,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "MolasRosa.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Rosa Francisca Dolors Molas Vallvé",
+      "it": "Maria Rosa Molas y Vallvé",
+      "fr": "Marie Rose Molas y Vallvé",
+      "de": "Rosa Molas y Vallvé",
+      "es": "María Rosa Molas",
+      "pt": "María Rosa Molas"
     }
   },
   "Q450999": {
@@ -9960,6 +10303,38 @@
       "pt": "Alicja Jadwiga Kotowska"
     }
   },
+  "Q456969": {
+    "description": {
+      "en": "Italian nun (1801–1852)",
+      "it": "religiosa italiana (1801-1852)",
+      "fr": "religieuse italienne",
+      "de": "Ordensschwester, Gründerin der Töchter des Heiligsten Herzens Jesu (1801–1852)"
+    },
+    "born": {
+      "year": 1801,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1852,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "ThérèseVerzeri.jpg",
+      "author": "Alessandro Valsecchi",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Ignazia Verzeri",
+      "it": "Teresa Eustochio Verzeri",
+      "fr": "Thérèse Verzeri",
+      "de": "Teresa Eustochio Verzeri",
+      "es": "Teresa Eustoquio Verzeri",
+      "pt": "Teresa Verzeri"
+    }
+  },
   "Q457903": {
     "description": {
       "en": "Roman Catholic and Eastern Orthodox saint",
@@ -9990,6 +10365,38 @@
       "de": "Bavo",
       "es": "Bavón de Gante",
       "pt": "Bavão de Gand"
+    }
+  },
+  "Q458315": {
+    "description": {
+      "en": "Belgian Religious Sister and foundress, beatified",
+      "it": "religiosa belga",
+      "fr": "religieuse belge",
+      "de": "belgische Ordensfrau",
+      "es": "monja belga"
+    },
+    "born": {
+      "year": 1782,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1876,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Marie-Thérèse Haze (1782-1876).jpg",
+      "author": "Grentidez",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "wikipedia": {
+      "en": "Marie Thérèse Haze",
+      "it": "Jeanne Haze",
+      "fr": "Jeanne Haze",
+      "de": "Maria Theresia Haze",
+      "es": "Jeanne Haze"
     }
   },
   "Q458643": {
@@ -12743,23 +13150,6 @@
       "de": "Prokop von Sázava"
     }
   },
-  "Q673715": {
-    "description": {
-      "en": "German saint martyred in 907"
-    },
-    "born": null,
-    "died": null,
-    "image": {
-      "file": "Arucas San Juan Bautista - Fenster 2a Saturnina.jpg",
-      "author": "Wolfgang Sauber",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {
-      "en": "Saturnina",
-      "de": "Saturnina von Sains-lès-Marquion"
-    }
-  },
   "Q676485": {
     "description": {
       "en": "saint",
@@ -13097,6 +13487,7 @@
     "description": {
       "en": "Italian Roman Catholic saint",
       "it": "santo della Chiesa cattolica",
+      "fr": "saint",
       "de": "Bischof von Mailand"
     },
     "born": {
@@ -13272,39 +13663,6 @@
       "de": "Fructuosus von Tarragona",
       "es": "Fructuoso de Tarragona",
       "pt": "Frutuoso de Tarragona"
-    }
-  },
-  "Q709251": {
-    "description": {
-      "en": "early Christian bishop of Antioch",
-      "it": "patriarca di Antiochia",
-      "fr": "patriarche d'Antioche",
-      "de": "Heiliger der christlichen Kirche und einer der ersten identifizierbaren Christen",
-      "es": "obispo del siglo I"
-    },
-    "born": {
-      "year": 50,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 69,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Italian School, Saint Evodius of Antioch, 17th Century.png",
-      "author": "Italian School, 17th Century Saint Evodius of Antioch",
-      "license": "CC0",
-      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-    },
-    "wikipedia": {
-      "en": "Evodius",
-      "it": "Evodio di Antiochia",
-      "fr": "Évode d'Antioche",
-      "de": "Euodius von Antiochia",
-      "es": "Evodio de Antioquía",
-      "pt": "Evódio de Antioquia"
     }
   },
   "Q709718": {
@@ -13650,39 +14008,6 @@
       "de": "Epaphroditus",
       "es": "Epafrodito (Nuevo Testamento)",
       "pt": "Epafrodito"
-    }
-  },
-  "Q726934": {
-    "description": {
-      "en": "3rd century founding bishop of Limoges",
-      "it": "vescovo",
-      "fr": "saint catholique",
-      "de": "Bischof von Limoges",
-      "es": "santo de la Iglesia católica"
-    },
-    "born": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "image": {
-      "file": "La vie de saint Martial - Remise du bâton de saint Pierre (détail) - Voûtain est.JPG",
-      "author": "Jean-Marc Rosier ( http://www.cjrosier.com + http://www.gordes-immobilier.com )",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    "wikipedia": {
-      "en": "Saint Martial",
-      "it": "Marziale di Limoges",
-      "fr": "Martial de Limoges",
-      "de": "Martial von Limoges",
-      "es": "Marcial de Limoges",
-      "pt": "Marçal de Limoges"
     }
   },
   "Q728668": {
@@ -14519,6 +14844,34 @@
       "es": "Jan van Ruusbroec"
     }
   },
+  "Q923125": {
+    "description": {
+      "it": "religioso argentino",
+      "de": "argentinischer Priester"
+    },
+    "born": {
+      "year": 1910,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1934,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "San Héctor Valdivielso Sáez.jpg",
+      "author": "Juanoscar545",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Héctor Valdivielso Sáez",
+      "it": "Héctor Valdivielso Sáez",
+      "fr": "Héctor Valdivielso Sáez",
+      "es": "Héctor Valdivielso Sáez"
+    }
+  },
   "Q931067": {
     "description": {
       "en": "French saint",
@@ -14603,6 +14956,37 @@
       "de": "Pammachius",
       "es": "Pamaquio",
       "pt": "Pamáquio de Roma"
+    }
+  },
+  "Q941608": {
+    "description": {
+      "en": "Polish Discalced Carmelite friar, engineer and saint (1835–1907)",
+      "it": "sacerdote e Carmelitano scalzo polacco, santo (1835-1907)",
+      "fr": "saint catholique",
+      "de": "polnischer Ordensgeistlicher, Karmelitenpater und Heiliger der römisch-katholischen Kirche"
+    },
+    "born": {
+      "year": 1835,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1907,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Kalinowski1897.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Raphael Kalinowski",
+      "it": "Raffaele di San Giuseppe",
+      "fr": "Raphaël Kalinowski",
+      "de": "Raphael Kalinowski",
+      "es": "Rafael Kalinowski"
     }
   },
   "Q941886": {
@@ -15708,7 +16092,7 @@
       "file": "Ballylooby Church of Our Lady and St. Kieran North Transept East Window Detail Saint Ita 2012 09 08.jpg",
       "author": "Andreas F. Borchert",
       "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+      "license_url": null
     },
     "wikipedia": {
       "en": "Íte of Killeedy",
@@ -15947,9 +16331,9 @@
   },
   "Q1341237": {
     "description": {
-      "en": "Italian saint",
-      "it": "vescovo cattolico, religioso e teologo italiano",
-      "fr": "saint catholique",
+      "en": "Italian Roman Catholic saint (1534 – 1592)",
+      "it": "vescovo cattolico, religioso e teologo italiano (1534 – 1592)",
+      "fr": "saint catholique italien (1534 – 1592)",
       "de": "italienischer Bischof und Heiliger",
       "pt": "santo italiano"
     },
@@ -17474,6 +17858,37 @@
       "es": "Salomón Leclercq"
     }
   },
+  "Q1989504": {
+    "description": {
+      "en": "Italian Roman Catholic nun and saint (1844-1904)",
+      "it": "religiosa e santa italiana (1844-1904)",
+      "fr": "religieuse et sainte catholique italienne (1844-1904)",
+      "es": "religiosa católica italiana"
+    },
+    "born": {
+      "year": 1844,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1904,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Anna Maria Rubatto.jpg",
+      "author": "Unknown photographer",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Anna Maria Rubatto",
+      "it": "Maria Francesca di Gesù",
+      "fr": "Anne Marie Rubatto",
+      "es": "María Francisca de Jesús Rubatto",
+      "pt": "Anna Maria Rubatto"
+    }
+  },
   "Q2025456": {
     "description": {
       "en": "-705",
@@ -17492,6 +17907,32 @@
     "image": null,
     "wikipedia": {
       "de": "Basinus von Trier"
+    }
+  },
+  "Q2030827": {
+    "description": {
+      "de": "Selige, Ordensgründerin"
+    },
+    "born": {
+      "year": 1237,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1310,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Cristiana de’ Menabuoi (c.1851), engraving plate by Raffaello Stagni after a drawing by Cristiano Banti.jpg",
+      "author": "After Cristiano Banti",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "it": "Oringa Menabuoi",
+      "de": "Oringa Menabuoi",
+      "es": "Oringa Menabuoi"
     }
   },
   "Q2044436": {
@@ -18456,7 +18897,7 @@
       "file": "Wexford Church of the Immaculate Conception South Aisle Window Saint Laurentius O Toole Detail 2010 09 29.jpg",
       "author": "Andreas F. Borchert",
       "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+      "license_url": null
     },
     "wikipedia": {
       "en": "Lorcán Ua Tuathail",
@@ -18899,31 +19340,6 @@
       "pt": "Antónia Mesina"
     }
   },
-  "Q2610800": {
-    "description": {
-      "en": "character in legend of Leuven"
-    },
-    "born": {
-      "year": 1207,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 1225,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Fiere Margriet Willy Meysmans 03.jpg",
-      "author": "Polyglot",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    "wikipedia": {
-      "en": "Margaret of Louvain",
-      "fr": "Marguerite de Louvain"
-    }
-  },
   "Q2623635": {
     "description": {
       "en": "Latin Patriarch of Constantinople",
@@ -19197,6 +19613,61 @@
       "pt": "Albino de Angers"
     }
   },
+  "Q2779588": {
+    "description": {
+      "en": "French saint (1825–1871)",
+      "it": "religiosa francese",
+      "fr": "religieuse française",
+      "de": "französische Heilige"
+    },
+    "born": {
+      "year": 1825,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1871,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Eugénie Smet (cropped).jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Eugénie Smet",
+      "it": "Eugénie Smet",
+      "fr": "Eugénie Smet",
+      "de": "Eugénie Smet",
+      "es": "María de la Providencia"
+    }
+  },
+  "Q2793791": {
+    "description": {
+      "en": "Spanish priest and Capuchin friar (1896-1936)",
+      "it": "sacerdote cappuccino spagnolo (1896-1936)",
+      "es": "capuchino asesinado durante la Guerra Civil española"
+    },
+    "born": {
+      "year": 1869,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "José Ample Alcaide.png",
+      "author": "Unknown photographer",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
+  },
   "Q2815454": {
     "description": {
       "en": "Roman Catholic bishop",
@@ -19431,6 +19902,57 @@
       "es": "Deicolo"
     }
   },
+  "Q3027427": {
+    "description": {
+      "it": "religioso italiano"
+    },
+    "born": {
+      "year": 1839,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1919,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Giuseppe Oddi",
+      "it": "Diego da Vallinfreda",
+      "fr": "Didace de Vallinfreda"
+    }
+  },
+  "Q3028232": {
+    "description": {
+      "en": "Canadian musician, nun and mystic (1897-1929)",
+      "it": "religiosa canadese",
+      "fr": "religieuse canadienne",
+      "de": "kanadische Pianistin"
+    },
+    "born": {
+      "year": 1897,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1929,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Dina Bélanger (1897-1929) en 1912.jpg",
+      "author": "Auteur inconnu.",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Dina Bélanger",
+      "it": "Dina Bélanger",
+      "fr": "Dina Bélanger",
+      "pt": "Dina Bélanger"
+    }
+  },
   "Q3028576": {
     "description": {
       "en": "Spanish religious figure and mystic",
@@ -19593,6 +20115,30 @@
       "fr": "John Southworth",
       "de": "John Southworth (Priester)",
       "es": "Juan Southworth"
+    }
+  },
+  "Q3060279": {
+    "description": {
+      "en": "Polish Roman Catholic nun and martyr"
+    },
+    "born": {
+      "year": 1903,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1943,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bl nowogrodek EugeniaMackiewicz.jpg",
+      "author": "op unknown",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "fr": "Eugénie Mackiewicz"
     }
   },
   "Q3065847": {
@@ -19956,9 +20502,9 @@
     },
     "image": {
       "file": "Periodic table large.svg",
-      "author": "2012rc",
-      "license": "CC BY 3.0",
-      "license_url": "https://creativecommons.org/licenses/by/3.0"
+      "author": "User: 2012rc (Robert Campion)",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
     },
     "wikipedia": {
       "de": "Froilán von León",
@@ -20516,6 +21062,36 @@
       "fr": "Jean Saziari"
     }
   },
+  "Q3771521": {
+    "description": {
+      "en": "Italian presbyter (1896-1948)",
+      "it": "presbitero italiano (1896-1948)",
+      "fr": "Prêtre catholique italien (1896-1948)",
+      "de": "italienischer Presbyter"
+    },
+    "born": {
+      "year": 1896,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1948,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Giaccardo.jpg",
+      "author": "Towarzystwo Świętego Pawła",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Giuseppe Giaccardo",
+      "it": "Giuseppe Timoteo Giaccardo",
+      "fr": "Timoteo Giaccardo",
+      "es": "José Timoteo Giaccardo"
+    }
+  },
   "Q3771697": {
     "description": {
       "en": "Italian Roman Catholic professed religious (1859–1911)",
@@ -20633,32 +21209,6 @@
       "it": "Juan de Prado",
       "fr": "Jean de Prado",
       "es": "Juan de Prado (beato)"
-    }
-  },
-  "Q3822117": {
-    "description": {
-      "en": "3rd-century saint of the Roman Catholic Church and the Eastern Orthodox Church",
-      "es": "mártir cristiana de Salónica que vivió en el siglo III, aunque puede que muriera en el IV. santa de la Iglesia Católica Romana y de la Iglesia Ortodoxa Oriental"
-    },
-    "born": {
-      "year": 250,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 300,
-      "precision": "year",
-      "circa": true
-    },
-    "image": {
-      "file": "GaleriagòticaMadrona.jpg",
-      "author": "Rigalt, Antoni",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Matrona of Barcelona",
-      "es": "Madrona"
     }
   },
   "Q3823036": {
@@ -20819,6 +21369,30 @@
       "fr": "Luxor (martyr)"
     }
   },
+  "Q3847275": {
+    "description": {
+      "en": "Beatified Italian nun (1827–1922)",
+      "it": "religiosa italiana",
+      "de": "italienische Nonne und Selige"
+    },
+    "born": {
+      "year": 1827,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1922,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Maria Fortunata Viti",
+      "it": "Maria Fortunata Viti",
+      "fr": "Marie Fortunée Viti",
+      "de": "Anna Felice Viti"
+    }
+  },
   "Q3847404": {
     "description": {
       "en": "Italian Roman Catholic nun (1687-1737)",
@@ -20947,6 +21521,36 @@
     "wikipedia": {
       "it": "San Metrano",
       "es": "Metrano de Alejandría"
+    }
+  },
+  "Q3876403": {
+    "description": {
+      "en": "Italian religious (1882-1958)",
+      "it": "frate cappuccino italiano",
+      "fr": "religieux capucin italien",
+      "de": "italienischer Ordensangehöriger (katholisch)"
+    },
+    "born": {
+      "year": 1882,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1958,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Beato Nicola da Gesturi.jpg",
+      "author": "non indicato",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Nicola da Gesturi",
+      "it": "Nicola da Gesturi",
+      "fr": "Nicolas de Gesturi",
+      "de": "Nicola da Gesturi"
     }
   },
   "Q3880587": {
@@ -21213,6 +21817,48 @@
       "it": "Giovanni Almond",
       "fr": "Jean Almond"
     }
+  },
+  "Q4063485": {
+    "description": {
+      "en": "Spanish Dominican, missionary, martyr, Catholic saint",
+      "es": "21.XII.1694 - 28.X.1748"
+    },
+    "born": {
+      "year": 1694,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1748,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "John Alcober"
+    }
+  },
+  "Q4094239": {
+    "description": {
+      "en": "Polish Roman Catholic nun and martyr"
+    },
+    "born": {
+      "year": 1905,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1943,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bl nowogrodek PaulinaBorowik.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
   },
   "Q4103195": {
     "description": {
@@ -21609,6 +22255,35 @@
       "fr": "Augustin Pak Chong-won"
     }
   },
+  "Q4422142": {
+    "description": {
+      "en": "Italian nun (1439-1491)",
+      "it": "religiosa italiana",
+      "fr": "jeanne Scopelli (1439-1491), première carmélite italienne. Fondatrice d'un couvent"
+    },
+    "born": {
+      "year": 1439,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1491,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Giovanna scopelli2.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Giovanna Scopelli",
+      "it": "Giovanna Scopelli",
+      "fr": "Jeanne Scopelli",
+      "pt": "Giovanna Scopelli"
+    }
+  },
   "Q4468216": {
     "description": {
       "en": "Chinese Roman Catholic, martyred, saint",
@@ -21766,6 +22441,28 @@
       "circa": false
     },
     "image": null,
+    "wikipedia": {}
+  },
+  "Q4514575": {
+    "description": {
+      "en": "Polish Roman Catholic nun and martyr"
+    },
+    "born": {
+      "year": 1900,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1943,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bl nowogrodek HelenaCierpka.jpg",
+      "author": "op unknown",
+      "license": "Public domain",
+      "license_url": null
+    },
     "wikipedia": {}
   },
   "Q4515435": {
@@ -21987,6 +22684,28 @@
     "wikipedia": {
       "en": "Joseph Yuan"
     }
+  },
+  "Q4534236": {
+    "description": {
+      "en": "Polish Roman Catholic nun and martyr"
+    },
+    "born": {
+      "year": 1895,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1943,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bl nowogrodek EleonoraAnielaJozwik.jpg",
+      "author": "op unknown",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
   },
   "Q4762545": {
     "description": {
@@ -22376,24 +23095,6 @@
       "it": "Leonida di Alessandria (martire)",
       "es": "Leónidas de Alejandría (santo)",
       "pt": "Leónidas de Alexandria"
-    }
-  },
-  "Q6704704": {
-    "description": {
-      "en": "Bishop of Eauze",
-      "de": "Erzbischof von Eauze",
-      "es": "obispo de Eauze"
-    },
-    "born": null,
-    "died": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Luperculus",
-      "de": "Lupercus von Eauze"
     }
   },
   "Q6801709": {
@@ -23076,6 +23777,33 @@
     },
     "image": null,
     "wikipedia": {}
+  },
+  "Q9158549": {
+    "description": {
+      "en": "(1739-1792)",
+      "it": "sacerdote cappuccino svizzero (1739-1792)",
+      "de": "Schweizer Ordensgeistlicher"
+    },
+    "born": {
+      "year": 1739,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1792,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Apollinaire Morel.jpg",
+      "author": "Scholasate",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "fr": "Apollinaire Morel",
+      "de": "Apollinaris Morel"
+    }
   },
   "Q9162179": {
     "description": {},
@@ -24739,6 +25467,21 @@
       "es": "Torcuato del Tricastin"
     }
   },
+  "Q14918019": {
+    "description": {},
+    "born": {
+      "year": 1879,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q14918043": {
     "description": {},
     "born": {
@@ -24760,6 +25503,26 @@
     "wikipedia": {
       "pt": "Enrique García Beltrán"
     }
+  },
+  "Q14918045": {
+    "description": {},
+    "born": {
+      "year": 1895,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Germán de Carcagente.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
   },
   "Q14918258": {
     "description": {
@@ -24783,6 +25546,25 @@
       "en": "Saint John Lloyd",
       "it": "John Lloyd (martire)"
     }
+  },
+  "Q14918471": {
+    "description": {
+      "en": "Spanish religious and martyr",
+      "it": "religioso e martire spagnolo",
+      "es": "religioso y mártir español"
+    },
+    "born": {
+      "year": 1874,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
   },
   "Q15142810": {
     "description": {
@@ -26154,15 +26936,6 @@
       "fr": "Emmanuel Nguyen Van Trieu"
     }
   },
-  "Q121417574": {
-    "description": {
-      "en": "Egyptian Christian saint"
-    },
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {}
-  },
   "Q131844211": {
     "description": {},
     "born": null,
@@ -26175,15 +26948,6 @@
     "wikipedia": {
       "it": "Giovanni Grove",
       "fr": "John Grove"
-    }
-  },
-  "Q141235825": {
-    "description": {},
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {
-      "it": "Quinto di Capua"
     }
   }
 }
