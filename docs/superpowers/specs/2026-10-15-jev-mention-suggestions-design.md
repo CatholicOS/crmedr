@@ -58,6 +58,8 @@ Any other card gets no question and no suggestion.
   "where": "text | footnote 1",
   "person": {"latin_name": "Pompeia", "n": 2, "italian_forms": ["Pompea", "Pompeia"]},
   "persons_in_this_place": [{"latin_name": "Potamia"}, {"latin_name": "Pompeia"}, {"latin_name": "Rodana"}, {"latin_name": "Pompeia", "n": 2}],
+  "neighbours": {"before": {"latin_name": "Potamia", "marked_as": "Potamia"},
+                 "after": {"latin_name": "Rodana", "marked_as": "Rodana"}},
   "context": "<the card's context>",
   "proposed": "<the card's form, or null>",
   "candidates": {"c1": {"words": "…", "at": 12}, "c2": {"words": "…", "at": 40}}
@@ -65,9 +67,14 @@ Any other card gets no question and no suggestion.
 ```
 
 `persons_in_this_place` is the eulogy's persons printed in the same text or footnote, in the
-Latin print order, with their `n`. `candidates` are the matcher's name runs
-(`mentions_italian.runs`) that lie wholly inside the card's context, numbered in print order,
-with their offset in the context; for a repeat card the proposed span is always one of them.
+Latin print order, with their `n`. `neighbours` are, for a person of a list, the persons printed just before
+and after them in the Latin order, with the words the Italian is already marked with for them
+when those words lie inside the card's context (`marked_as`, else null): a card's context is
+only about 40 characters either side of its span (the whole footnote for a not-found card), too
+short to count "the 2nd Pompeia" in a long list, and the neighbours carry that position.
+`candidates` (span cards only) are the matcher's name runs (`mentions_italian.runs`) that lie
+wholly inside the card's context, numbered in print order, with their offset in the context;
+a repeat card has none, its question is about the `proposed` words.
 Offsets are code-point positions in `context`; the script converts them to the card's UTF-16
 eulogy offsets with `context_start`.
 
@@ -103,7 +110,8 @@ candidate's span; `none` → reject. A not-found card with no candidates gets no
 1. **`scripts/mentions_jev.py`**: pure functions, no network:
    - `card_kind(op)` → `"repeat" | "position" | "not_found" | None`;
    - `candidates(op, persons)` → the candidate spans of a card's context;
-   - `request_for(op, persons, forms)` → the request body (state, questions, model);
+   - `request_for(op, persons, marks)` → the request body (state, questions, model), `marks`
+     being the eulogy's current Italian marks in `data/mentions.json` (for `neighbours`);
    - `suggestion(op, answer, cands)` → the `suggested` object, or None.
    Plus `TypeSafe`, a small client: `POST https://api.typesafe.ai/v1/systemone`, bearer key,
    retries 429, 529 and 5xx with exponential backoff (5 attempts), stops on 400 and 401 with the
@@ -168,7 +176,8 @@ The `suggested` object on a card:
 
 ## Testing
 
-- `tests/test_mentions_jev.py`, offline: card kinds; candidates (runs inside the context only,
+- `tests/test_mentions_jev.py`, offline: card kinds; neighbours (Latin order, `marked_as` only
+  inside the context); candidates (runs inside the context only,
   offsets converted to UTF-16 with `context_start`, the proposed span among them); the request
   body (state fields, the pinned model, the options); `suggestion` for every answer; the cache
   key; the client's retry, stop and key-redaction behaviour with a fake transport.
