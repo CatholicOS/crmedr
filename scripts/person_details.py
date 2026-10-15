@@ -43,13 +43,25 @@ def portrait(raw):
                  if c.get("rank") != "deprecated" and isinstance(_value(c), str)), None)
 
 
+CC_CODE = re.compile(r"cc-(by(?:-nc)?(?:-sa|-nd)?)-(\d\.\d)(?:-([a-z]{2,3}))?")
+
+
+def license_url_from_code(code):
+    """The Creative Commons terms for a Commons License code ('cc-by-sa-4.0'); None for any other."""
+    if code == "cc-zero":
+        return "https://creativecommons.org/publicdomain/zero/1.0"
+    m = CC_CODE.fullmatch(code or "")
+    return m and "https://creativecommons.org/licenses/" + "/".join(p for p in m.groups() if p)
+
+
 def image_credit(file, meta):
     """The portrait with its author and license; None when Commons states no license."""
     license_name = plain(meta.get("LicenseShortName", {}).get("value"))
     if not license_name:
         return None
     return {"file": file, "author": plain(meta.get("Artist", {}).get("value")), "license": license_name,
-            "license_url": meta.get("LicenseUrl", {}).get("value") or None}
+            "license_url": meta.get("LicenseUrl", {}).get("value")
+            or license_url_from_code(meta.get("License", {}).get("value"))}
 
 
 def summarize_details(raw, images):

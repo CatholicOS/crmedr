@@ -192,6 +192,14 @@ class ValidateTest(unittest.TestCase):
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": None, "status": "unresolved"}}}, INDEX))
         self.assertTrue(bp.validate({"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "x", "status": "auto"}}}, INDEX))
 
+    def test_every_person_has_a_status_or_a_queued_review(self):
+        good = {"mr:0206-paulus-miki-et-socii": {"Paulus Miki": {"wikidata": "Q1", "status": "auto"}}}
+        self.assertEqual(bp.unaccounted(good, INDEX, [{"id": "mr:0206-paulus-miki-et-socii|Thomas Kozaki"}]), [])
+        self.assertEqual(bp.unaccounted(good, INDEX, []),
+                         ["mr:0206-paulus-miki-et-socii|Thomas Kozaki: neither a status nor a queued review"])
+        # A person whose lookup failed this run is reported as not processed instead.
+        self.assertEqual(bp.unaccounted(good, INDEX, [], skipped=["mr:0206-paulus-miki-et-socii|Thomas Kozaki"]), [])
+
 
 class NameMatchReviewTest(unittest.TestCase):
     """Final review: a 4-letter prefix matched different names."""
@@ -372,6 +380,15 @@ class OneWordListNameTest(unittest.TestCase):
         bp.propose(items, review, index, FakeClient({"Cornelius": [cand("Q54798", ["Cornelius"], died="0253-06")]}))
         self.assertNotIn("mr:0602-pothinus-et-socii", items)
         self.assertEqual([op["id"] for op in review["operations"]], ["mr:0602-pothinus-et-socii|Cornelius"])
+
+    def test_propose_keeps_a_match_whose_item_the_search_did_not_return(self):
+        # Its date is unchecked: an incomplete search is no reason to withdraw it.
+        items = {"mr:0602-pothinus-et-socii": {"Cornelius": {"wikidata": "Q54798", "status": "auto"}}}
+        review = bp.new_changeset([])
+        index = {"mr:0602-pothinus-et-socii|Cornelius": self.LISTED}
+        bp.propose(items, review, index, FakeClient({"Cornelius": [cand("Q1", ["Cornelius"], died="0300-01-01")]}))
+        self.assertEqual(items["mr:0602-pothinus-et-socii"]["Cornelius"], {"wikidata": "Q54798", "status": "auto"})
+        self.assertEqual(review["operations"], [])
 
     def test_a_curators_decision_is_never_withdrawn(self):
         items = {"mr:0602-pothinus-et-socii": {"Cornelius": {"wikidata": "Q54798", "status": "reviewed"}}}

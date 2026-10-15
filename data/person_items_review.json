@@ -1,7 +1,7 @@
 {
   "schema": "crmedr-changeset/v1",
   "generated_by": "scripts/build_person_items.py",
-  "generated_at": "2026-10-13",
+  "generated_at": "2026-10-15",
   "base": {
     "edition": "martyrologium_romanum_2004",
     "registry": "data/persons.json"
@@ -32165,251 +32165,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0121-publius|Publius",
-      "eulogy": "mr:0121-publius",
-      "day": "01-21",
-      "typology": "commemoratio",
-      "subject": "Sanctus Publius",
-      "name": "Publius",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "the same item (Q4383206) is matched in another eulogy, and this name is one word: a namesake?"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4383206",
-          "label": "Publius",
-          "description": "4th century abbot",
-          "names": [
-            "Publio di Zeugma",
-            "Publius"
-          ],
-          "human": true,
-          "statuses": [
-            "Q12774503",
-            "Q43115"
-          ],
-          "born": null,
-          "died": "0380",
-          "feast": [
-            "Q2279"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q178903",
-          "label": "Alexander Hamilton",
-          "description": "American Founding Father and statesman (1755/1757–1804)",
-          "names": [
-            "A. Ham",
-            "Alexander Hamilton",
-            "Alexander Hamilton, US Treasury secretary",
-            "Alexander Hamiltonius",
-            "Hamilton",
-            "Publius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1757-01-11",
-          "died": "1804-07-12",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q137830677",
-          "label": "Publius",
-          "description": "collective pseudonym of the authors of the Federalist Papers: Alexander Hamilton, John Jay, and James Madison",
-          "names": [
-            "Publius"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1398",
-          "label": "Virgil",
-          "description": "Roman poet (1st century BC)",
-          "names": [
-            "Mantuan Swan",
-            "P. V. M.",
-            "P. Virgilio Marone",
-            "Publio Virgilio Marone",
-            "Publius Vergilius Maro",
-            "Swan of Mantua",
-            "Vergil",
-            "Vergilius",
-            "Vergilius Maro",
-            "Virgil",
-            "Virgilio",
-            "Virgilius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-0070-10-1",
-          "died": "-0019-09-2",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q1427",
-          "label": "Hadrian",
-          "description": "14th Roman Emperor (117–138)",
-          "names": [
-            "Adrian",
-            "Adriano",
-            "Caesar Publius Aelius Traianus Hadrianus Buccellanus Augustus",
-            "Caesar Traianus Hadrianus Augustus",
-            "Emperor Hadrian",
-            "Emperor Publius Aelius Hadrianus",
-            "Emperor of Rome Adrian",
-            "Emperor of Rome Hadrian",
-            "Hadrian",
-            "Hadrianus",
-            "Hadrianus Imperator",
-            "Publio Elio Traiano Adriano",
-            "Publius Aelius Hadrianus Buccellanus",
-            "Publius Aelius Traianus Hadrianus Augustus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0076-01-24",
-          "died": "0138-07-10",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q15716331",
-          "label": "Publius",
-          "description": "journal",
-          "names": [
-            "Publius",
-            "Publius. Journal of federalism"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q18588820",
-          "label": "Publius",
-          "description": "genus of insects",
-          "names": [
-            "Publius"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q21485186",
-          "label": "Publius",
-          "description": "ancient Roman praenomen",
-          "names": [
-            "P.",
-            "Publio",
-            "Publius",
-            "Pvblivs"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q2253",
-          "label": "Scipio Africanus",
-          "description": "Roman general and politician (236/235–183 BC)",
-          "names": [
-            "Africano Maggiore",
-            "Africanus Scipio",
-            "P. Cornelius P.f.L.n. Scipio Africanus",
-            "P. Cornelius Scipio, the Elder",
-            "Publio Cornelio Scipione",
-            "Publio Cornelio Scipione Africano",
-            "Publio Cornelio Scipione Africano Maggiore",
-            "Publio Cornelio Scipione l'Africano",
-            "Publio Cornelio Scipione l'Africano Maggiore",
-            "Publius Cornelius Scipio Africanus",
-            "Publius Cornelius Scipio Africanus Major",
-            "Scipio Africanus",
-            "Scipio Africanus the Elder",
-            "Scipio the African",
-            "Scipio the Elder",
-            "Scipio the Great",
-            "Scipione Africano",
-            "Scipione l'Africano",
-            "Scipione l'africano"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-023",
-          "died": "-018",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q243203",
-          "label": "Publius Papinius Statius",
-          "description": "1st century CE Roman poet",
-          "names": [
-            "Istazio",
-            "Papinius Statius",
-            "Publio Papinio Stazio",
-            "Publio Stazio",
-            "Publius Papinius Statius",
-            "Statius",
-            "Statius Poeta",
-            "Stazio"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0045",
-          "died": "0096",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0121-zacharias|Zacharias",
       "eulogy": "mr:0121-zacharias",
       "day": "01-21",
@@ -56153,6 +55908,7 @@
         "Franciscus Adauctus"
       ],
       "failed": [
+        "a one-word name in a footnote list: the one candidate (Q43746) did not die on this eulogy's day, so it may be a namesake",
         "forced review: a Japanese martyr, not Saint Bonaventure"
       ],
       "candidates": [
@@ -57759,6 +57515,7 @@
         "Franciscus Adauctus"
       ],
       "failed": [
+        "a one-word name in a footnote list: the one candidate (Q43669) did not die on this eulogy's day, so it may be a namesake",
         "forced review: a Japanese martyr, not Thomas the Apostle"
       ],
       "candidates": [
@@ -65511,7 +65268,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q80513) is matched in another eulogy, and this name is one word: a namesake?"
+        "a one-word name in a footnote list: the one candidate (Q80513) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -68907,7 +68664,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q315312) is matched in another eulogy, and this name is one word: a namesake?"
+        "a one-word name in a footnote list: the one candidate (Q315312) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -69685,6 +69442,7 @@
         "Berectina"
       ],
       "failed": [
+        "a one-word name in a footnote list: the one candidate (Q345) did not die on this eulogy's day, so it may be a namesake",
         "forced review: an Abitinian martyr, not the Blessed Virgin"
       ],
       "candidates": [
@@ -70522,7 +70280,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q3822117) is matched for another person of this eulogy"
+        "a one-word name in a footnote list: the one candidate (Q3822117) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -71950,7 +71708,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q1407613) is matched in another eulogy, and this name is one word: a namesake?"
+        "a one-word name in a footnote list: the one candidate (Q1407613) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -72203,7 +71961,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q17316775) is matched for another person of this eulogy"
+        "a one-word name in a footnote list: the one candidate (Q17316775) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -72373,7 +72131,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q17316775) is matched for another person of this eulogy"
+        "a one-word name in a footnote list: the one candidate (Q17316775) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -72543,7 +72301,7 @@
         "Berectina"
       ],
       "failed": [
-        "the same item (Q17316775) is matched for another person of this eulogy"
+        "a one-word name in a footnote list: the one candidate (Q17316775) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -121121,6 +120879,247 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0324-timolaus-et-socii|Dionysius#2",
+      "eulogy": "mr:0324-timolaus-et-socii",
+      "day": "03-24",
+      "typology": "dies_natalis",
+      "subject": "Sancti Timolaus et socii",
+      "name": "Dionysius",
+      "n": 2,
+      "where": "text",
+      "companions": [
+        "Timolaus",
+        "Romulus"
+      ],
+      "failed": [
+        "death: the best candidate (Q131162) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q131162",
+          "label": "Dionysius",
+          "description": "Pope and bishop of Rome from 259 to 268",
+          "names": [
+            "Dionysius",
+            "Dionysius Romanus",
+            "Papa Dionigi",
+            "Pope Dionysius",
+            "Sanctus Dionysius PP.",
+            "papa Dionisio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0200",
+          "died": "0268-12-26",
+          "feast": [
+            "Q2761"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q2906429",
+          "label": "Dionysius of Augsburg",
+          "description": "vescovo romano",
+          "names": [
+            "Dionigi di Augusta",
+            "Dionysius",
+            "Dionysius of Augsburg",
+            "San Dionigi di Augusta"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0250",
+          "died": "0306",
+          "feast": [
+            "Q2359"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3708520",
+          "label": "Dionysius",
+          "description": "Archbishop of Milan (4th c.)",
+          "names": [
+            "Dionigi (arcivescovo di Milano)",
+            "Dionigi di Milano",
+            "Dionisio Mariani",
+            "Dionisio di Milano",
+            "Dionysius",
+            "Dionysius Mediolanensis",
+            "Dionysius of Milan",
+            "San Dionigi di Milano",
+            "San Dionisio Mariani",
+            "San Dionisio di Milano"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": null,
+          "died": "0360",
+          "feast": [
+            "Q2585"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q108940325",
+          "label": "Divizo",
+          "description": "Roman Catholic Cardinal",
+          "names": [
+            "Amizo",
+            "Amizzone",
+            "Denigo",
+            "Denys",
+            "Denzo",
+            "Dionysius",
+            "Divitius",
+            "Divizo",
+            "Divizzo",
+            "Divizzone",
+            "Domizzon",
+            "Domnizzone"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11917253",
+          "label": "Dionysius",
+          "description": "slave of Cicero",
+          "names": [
+            "Dionisio",
+            "Dionysius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1226977",
+          "label": "Dionysius",
+          "description": "Greek epic poet, author of Bassarica",
+          "names": [
+            "Dionisio",
+            "Dionysius",
+            "Dionysius Bassaricus",
+            "Dionysius Epicus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q125758321",
+          "label": "Dionysius",
+          "description": "ancient Greek cookbook author",
+          "names": [
+            "Dionysius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q126276015",
+          "label": "Dionysius",
+          "description": "ancient Greek cookbook author mentioned by Athenaeus",
+          "names": [
+            "Dionysius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q127630167",
+          "label": "Dionysius",
+          "description": "archbishop of Amalfi",
+          "names": [
+            "Dionisio",
+            "Dionysius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q20045726",
+          "label": "Dionysius",
+          "description": "Praetorian prefect",
+          "names": [
+            "Dionisio",
+            "Dionysius"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0480",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0324-timolaus-et-socii|Romulus",
       "eulogy": "mr:0324-timolaus-et-socii",
       "day": "03-24",
@@ -156990,7 +156989,7 @@
         "Apodemius"
       ],
       "failed": [
-        "the same item (Q4383206) is matched in another eulogy, and this name is one word: a namesake?"
+        "a one-word name in a footnote list: the one candidate (Q4383206) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -157607,7 +157606,7 @@
         "Apodemius"
       ],
       "failed": [
-        "the same item (Q125631) is matched in another eulogy, and this name is one word: a namesake?"
+        "a one-word name in a footnote list: the one candidate (Q125631) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
@@ -203804,216 +203803,6 @@
         "no candidate found"
       ],
       "candidates": [],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0517-restituta|Restituta",
-      "eulogy": "mr:0517-restituta",
-      "day": "05-17",
-      "typology": "commemoratio",
-      "subject": "Sancta Restituta",
-      "name": "Restituta",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "the same item (Q1407613) is matched in another eulogy, and this name is one word: a namesake?"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q1407613",
-          "label": "Restituta",
-          "description": "Saint and martyr",
-          "names": [
-            "Restituta",
-            "Restituta d'Africa",
-            "Restituta of Abitina",
-            "Restituta of Africa",
-            "Santa Restituta d'Africa"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115",
-            "Q3464126"
-          ],
-          "born": "0200",
-          "died": "0304",
-          "feast": [
-            "Q2575",
-            "Q2336"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q3933521",
-          "label": "Restituta of Sora",
-          "description": "Roman saint and martyr",
-          "names": [
-            "Restituta Frangipane",
-            "Restituta di Sora",
-            "Restituta of Sora",
-            "Santa Restituta Frangipane",
-            "Santa Restituta Frangipane di Roma",
-            "Santa Restituta Martire",
-            "Santa Restituta martire"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126"
-          ],
-          "born": null,
-          "died": "0275",
-          "feast": [
-            "Q2587"
-          ],
-          "evidence": [
-            "human",
-            "status"
-          ]
-        },
-        {
-          "wikidata": "Q104542042",
-          "label": "Restituta",
-          "description": "female given name",
-          "names": [
-            "Restituta",
-            "Restituta (first name)",
-            "Restituta (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q104759369",
-          "label": "Saint Restituta",
-          "description": "set of religion characters",
-          "names": [
-            "Restituta",
-            "Saint Restituta"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q107217184",
-          "label": "Restituta",
-          "description": "ancient Roman cognomen",
-          "names": [
-            "Restituta",
-            "Restitvta"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q108431532",
-          "label": "Restituta Caccetta",
-          "description": "",
-          "names": [
-            "Restituta Caccetta"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q123868272",
-          "label": "Restituta Meisa Ratnawati",
-          "description": "Indonesian politician (born 1981)",
-          "names": [
-            "Restituta Meisa Ratnawati"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1981-05-15",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q3674197",
-          "label": "Santa Restituta",
-          "description": "church building in Cagliari, Italy",
-          "names": [
-            "Chiesa di Santa Restituta (Cagliari)",
-            "Cripta di Santa Restituta",
-            "Restituta",
-            "Santa Restituta",
-            "chiesa di Santa Restituta"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q4393654",
-          "label": "Restituta",
-          "description": "Wikimedia disambiguation page",
-          "names": [
-            "Restituta"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q523151",
-          "label": "Restituta Joseph",
-          "description": "Tanzanian distance runner",
-          "names": [
-            "Restituta Joseph",
-            "Restituta Joseph Kemi"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1971-07-30",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        }
-      ],
       "decision": null,
       "edited": null
     },
@@ -279492,6 +279281,219 @@
       "typology": "dies_natalis",
       "subject": "Sancti Plutarchus et socii",
       "name": "Serenus",
+      "where": "text",
+      "companions": [
+        "Plutarchus"
+      ],
+      "failed": [
+        "death: the best candidate (Q4420732) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q4420732",
+          "label": "Serenus the Gardener",
+          "description": "Saint",
+          "names": [
+            "Cerneuf",
+            "Sereno di Sirmio",
+            "Serenus",
+            "Serenus the Gardener",
+            "Sirenus"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0250",
+          "died": "0302",
+          "feast": [
+            "Q2352"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q3479156",
+          "label": "Serenus of Marseilles",
+          "description": "bishop of Marseilles",
+          "names": [
+            "Sereno di Marsiglia",
+            "Serenus Massiliensis",
+            "Serenus of Marseilles"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0550",
+          "died": "0601",
+          "feast": [],
+          "evidence": [
+            "human",
+            "status"
+          ]
+        },
+        {
+          "wikidata": "Q6584843",
+          "label": "Serene",
+          "description": "Jewish messiah claimant",
+          "names": [
+            "Sarini",
+            "Serene",
+            "Serenus",
+            "Severus",
+            "Sharia"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q97764241",
+          "label": "Serenus",
+          "description": "patriarch Aquileia from 715 to 730",
+          "names": [
+            "Sereno",
+            "Serenus",
+            "Serenus of Aquileia"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0723",
+          "feast": [],
+          "evidence": [
+            "human",
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q1174529",
+          "label": "Serenus",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Serenus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q11805313",
+          "label": "Serenus de Cressy",
+          "description": "English Benedictine monk",
+          "names": [
+            "Hugh Paulinus de Cressy",
+            "Serenus Cressy",
+            "Serenus de Cressy"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1605",
+          "died": "1674-08-10",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1287200",
+          "label": "Serenus",
+          "description": "Hungarian choir",
+          "names": [
+            "Serenus",
+            "Serenus choir"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        },
+        {
+          "wikidata": "Q12902080",
+          "label": "Serenus Sammonicus Minor",
+          "description": "ancient Roman",
+          "names": [
+            "Serenus Sammonicus Minor",
+            "Serenus Sammonicus minor"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q1297839",
+          "label": "Serenus of Antinouplis",
+          "description": "ancient Greek mathematician",
+          "names": [
+            "Sereno di Antinoe",
+            "Sereno di Antinopoli",
+            "Serenus Antinoensis",
+            "Serenus Geometra",
+            "Serenus Mathematicus",
+            "Serenus of Antinouplis"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0300",
+          "died": "0360",
+          "feast": [],
+          "evidence": [
+            "human"
+          ]
+        },
+        {
+          "wikidata": "Q2272314",
+          "label": "Serenus",
+          "description": "male given name",
+          "names": [
+            "Serenus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "evidence": [
+            "name"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0628-plutarchus-et-socii|Serenus#2",
+      "eulogy": "mr:0628-plutarchus-et-socii",
+      "day": "06-28",
+      "typology": "dies_natalis",
+      "subject": "Sancti Plutarchus et socii",
+      "name": "Serenus",
+      "n": 2,
       "where": "text",
       "companions": [
         "Plutarchus"
@@ -454200,223 +454202,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0919-ianuarius|Ianuarius",
-      "eulogy": "mr:0919-ianuarius",
-      "day": "09-19",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Ianuarius",
-      "name": "Ianuarius",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "the same item (Q315312) is matched in another eulogy, and this name is one word: a namesake?"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q315312",
-          "label": "Januarius",
-          "description": "Bishop of Naples (232-305)",
-          "names": [
-            "Ianuarius",
-            "Januarius",
-            "Miracolo di San Gennaro",
-            "Saint Januarius",
-            "San Gennaro",
-            "Sanctus Ianuarius",
-            "St. Januarius"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "0272-04-21",
-          "died": "0305-09-19",
-          "feast": [
-            "Q2896"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name",
-            "death"
-          ]
-        },
-        {
-          "wikidata": "Q1118791",
-          "label": "Januarius",
-          "description": "archbishop",
-          "names": [
-            "Ianuarius",
-            "Januario",
-            "Januarius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q21451714",
-          "label": "Januarius of Cagliari",
-          "description": "vescovo di Cagliari",
-          "names": [
-            "Gennaro di Cagliari",
-            "Gianuario",
-            "Ianuarius",
-            "Januarius of Cagliari"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0550",
-          "died": "0603",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q98827346",
-          "label": "Januarius",
-          "description": "saint martyred in 303, partner of Protus",
-          "names": [
-            "Ianuarius",
-            "Januarius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q105781550",
-          "label": "Gennaro De Crescenzo",
-          "description": "storico italiano",
-          "names": [
-            "Gennaro De Crescenzo",
-            "Ianuarius De Crescenzo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1964",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q108",
-          "label": "January",
-          "description": "first month in the Julian and Gregorian calendars",
-          "names": [
-            "1. month",
-            "Ianuarius",
-            "Jan",
-            "January",
-            "gen",
-            "gennaio",
-            "gennajo"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q116980",
-          "label": "Gennaro Gattuso",
-          "description": "Italian association football player and manager",
-          "names": [
-            "Gennaro Gattuso",
-            "Gennaro Ivan Gattuso",
-            "Ianuarius Gattuso",
-            "Ringhio",
-            "Ringhio Gattuso",
-            "Rino Gattuso"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1978-01-09",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q3763773",
-          "label": "Gianuario Carta",
-          "description": "Italian politician and lawyer (1931–2017)",
-          "names": [
-            "Ariuccio Carta",
-            "Gianuario Carta",
-            "Ianuarius Carta"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1931-01-01",
-          "died": "2017-02-14",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q765147",
-          "label": "Ianuarius Nepotianus",
-          "description": "ancient Roman writer and sophist",
-          "names": [
-            "Gennaro Nepoziano",
-            "Ianuarius Nepotianus",
-            "Januarius Nepotianus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0300",
-          "died": "0500",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q954850",
-          "label": "Ianuarius",
-          "description": "month of the revised ancient Roman calendar",
-          "names": [
-            "Ianuarius",
-            "mensis Ianuarius"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0919-lantbertus|Lantbertus",
       "eulogy": "mr:0919-lantbertus",
       "day": "09-19",
@@ -522892,132 +522677,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:1026-rogatianus|Rogatianus",
-      "eulogy": "mr:1026-rogatianus",
-      "day": "10-26",
-      "typology": "commemoratio",
-      "subject": "Sanctus Rogatianus",
-      "name": "Rogatianus",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "the same item (Q17316775) is matched in another eulogy, and this name is one word: a namesake?"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q17316775",
-          "label": "Rogatian",
-          "description": "saint martyred under Maximian",
-          "names": [
-            "Rogatian",
-            "Rogatianus"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q85972204",
-          "label": "Rogatianus of Abitina",
-          "description": "saint martyred in 304 AD",
-          "names": [
-            "Rogatianus of Abitina"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "0304",
-          "feast": [
-            "Q2336"
-          ],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q85978573",
-          "label": "Rogatianus of Carthage",
-          "description": "",
-          "names": [
-            "Rogatianus of Carthage",
-            "Rogaziano di Cartagine"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q108437190",
-          "label": "Rogatianus 1 (Pauly-Wissowa)",
-          "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [
-            "Rogatianus 1 (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q125492461",
-          "label": "Rogatianus 1a (Pauly-Wissowa)",
-          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [
-            "Rogatianus 1a (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q136521389",
-          "label": "Q136521389",
-          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        },
-        {
-          "wikidata": "Q137602853",
-          "label": "Q137602853",
-          "description": "Wikimedia disambiguation page",
-          "names": [],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": []
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:1026-sigebaldus|Sigebaldus",
       "eulogy": "mr:1026-sigebaldus",
       "day": "10-26",
@@ -568107,211 +567766,6 @@
           "statuses": [],
           "born": "1754-11-22",
           "died": "1837-02-05",
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        }
-      ],
-      "decision": null,
-      "edited": null
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1122-caecilia|Caecilia",
-      "eulogy": "mr:1122-caecilia",
-      "day": "11-22",
-      "typology": "dies_natalis",
-      "subject": "Sancta Caecilia",
-      "name": "Caecilia",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "the same item (Q80513) is matched in another eulogy, and this name is one word: a namesake?"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q80513",
-          "label": "Saint Cecilia",
-          "description": "Roman Catholic saint, martyr and patron saint of music",
-          "names": [
-            "Caecilia",
-            "Caecilia Romana",
-            "Cecilia",
-            "Saint Cecilia",
-            "Sancta Caecilia",
-            "Santa Cecilia",
-            "St. Cecilia"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "0180",
-          "died": "0230-11-22",
-          "feast": [
-            "Q3025"
-          ],
-          "evidence": [
-            "human",
-            "status",
-            "name",
-            "death"
-          ]
-        },
-        {
-          "wikidata": "Q104790915",
-          "label": "Caecilia",
-          "description": "mother of Atticus",
-          "names": [
-            "Caecilia"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-013",
-          "died": "-004",
-          "feast": [],
-          "evidence": [
-            "human",
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q1025358",
-          "label": "Caecilia Metella",
-          "description": "wife of Scipio Nasica",
-          "names": [
-            "Caecilia Metella",
-            "Caecilia Metella Minor"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-015",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q113675172",
-          "label": "caecilia",
-          "description": "fictional monster from Dungeons & Dragons",
-          "names": [
-            "caecilia"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q150456",
-          "label": "297 Caecilia",
-          "description": "main-belt asteroid",
-          "names": [
-            "(297) Caecilia",
-            "297 Caecilia",
-            "Caecilia"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q17589822",
-          "label": "Caecilia",
-          "description": "clergy house",
-          "names": [
-            "Caecilia"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q19145167",
-          "label": "Caecilia",
-          "description": "German music journal",
-          "names": [
-            "Caecilia"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q21147577",
-          "label": "Caecilia",
-          "description": "female given name",
-          "names": [
-            "Caecilia",
-            "Caecilia (first name)",
-            "Caecilia (given name)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "name"
-          ]
-        },
-        {
-          "wikidata": "Q234788",
-          "label": "Cecilia Roth",
-          "description": "Argentine actress",
-          "names": [
-            "Caecilia Roth",
-            "Cecilia Roth"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1956-08-08",
-          "died": null,
-          "feast": [],
-          "evidence": [
-            "human"
-          ]
-        },
-        {
-          "wikidata": "Q238004",
-          "label": "Cecily Neville, Duchess of York",
-          "description": "English noblewoman (1415–1495)",
-          "names": [
-            "Caecilia Neville",
-            "Cecilia Neville",
-            "Cecily Neville",
-            "Cecily Neville, Duchess of York",
-            "Cecylle Neville",
-            "Cecylle Neville, Duchess of York",
-            "Proud Cis",
-            "The Rose of Raby"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1415-05-03",
-          "died": "1495-05-31",
           "feast": [],
           "evidence": [
             "human"

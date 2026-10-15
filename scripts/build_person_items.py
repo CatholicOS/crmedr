@@ -336,16 +336,20 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             del items[person["eulogy"]]
         ops[key] = make_op(key, person, result, ops.get(key))
     # Its own automatic one-word matches in a footnote list that the date rule no longer passes
-    # (LISTED_ONE_WORD) are withdrawn too; a curator's decision never.
+    # (LISTED_ONE_WORD) are withdrawn too; a curator's decision never. A match whose item the
+    # search did not return stays: its date was never checked.
     for key, person in index.items():
         e = items.get(person["eulogy"], {}).get(person_key(person))
         if not (e and e["status"] == "auto" and _listed_one_word(person)):
             continue
         try:
-            result = evaluate(person, gather(person, client))
+            candidates = gather(person, client)
         except WikidataError as err:
             not_processed.append((key, str(err)))
             continue
+        if e["wikidata"] not in {c["wikidata"] for c in candidates}:
+            continue
+        result = evaluate(person, candidates)
         if result["auto"] and result["auto"]["wikidata"] == e["wikidata"]:
             continue
         del items[person["eulogy"]][person_key(person)]
@@ -478,6 +482,13 @@ def validate(items, index, ops=()):
     return errors
 
 
+def unaccounted(items, index, ops, skipped=()):
+    """The persons with neither a status nor a queued review, except those whose lookup failed."""
+    queued = {op["id"] for op in ops} | set(skipped)
+    return [f"{key}: neither a status nor a queued review" for key, p in sorted(index.items())
+            if key not in queued and not _decided(items, p)]
+
+
 def render_json(items):
     doc = {"$comment": "Wikidata items of the persons of data/persons.json, by eulogy and name. auto: exactly one "
                        "candidate passed the evidence bar; reviewed: chosen by a curator; unresolved: no item "
@@ -538,7 +549,8 @@ def main(argv):
             sys.exit("\n".join(errors))
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
-    errors = validate(items, index, review["operations"])
+    errors = validate(items, index, review["operations"]) + unaccounted(
+        items, index, review["operations"], [key for key, _ in not_processed])
     if errors:
         sys.exit("invalid person items:\n" + "\n".join(errors))
     if cmd == "check":
