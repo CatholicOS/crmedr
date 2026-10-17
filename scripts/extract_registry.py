@@ -3290,6 +3290,13 @@ REVIEW_EDITION_NOTES = {
             "(in the province of Lugdunensis)."
         ),
     },
+    "mr:0612-laurentius-maria-a-sancto-francisco-xaverio": {
+        EDITION_LA: (
+            "Usage: \"devotiónem dístulit\" means \"spread the devotion\": differre in its sense "
+            "\"to spread abroad\" (Lewis and Short, differo I.B.2), not \"to postpone\". The Italian "
+            "has \"diffuse\"."
+        ),
+    },
     "mr:0202-maria-catharina-kasper": {
         EDITION_LA: (
             "Misprint: \"Dernáchi\" for Dernbach, where the saint lived and died."

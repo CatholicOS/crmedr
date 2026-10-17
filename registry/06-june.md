@@ -152,7 +152,7 @@
 | 12 | 7 | `mr:0612-placidus` | * | IT | dies_natalis |  |  |
 | 12 | 8 | `mr:0612-lucretia-helena-cevoli` | * | IT | dies_natalis |  |  |
 | 12 | 9 | `mr:0612-gaspar-bertonus` |  | IT | dies_natalis |  |  |
-| 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  |  |
+| 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  | 2004 Latin: Usage: "devotiónem dístulit" means "spread the devotion": differre in its sense "to spread abroad" (Lewis and Short, differo I.B.2), not "to postpone". The Italian has "diffuse". |
 | 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  | 2004 Italian: Translation error: "Rivibamba" for the city of Riobamba (Latin "Rivibámbæ"). |
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia` | * | IT | dies_natalis |  |  |
 | 13 | (1) | `mr:0613-antonius` |  | PT | dies_natalis |  |  |

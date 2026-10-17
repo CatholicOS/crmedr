@@ -275,7 +275,7 @@ class MisprintTest(unittest.TestCase):
                          {"betárum", "Marcellino", "Caulphæ", "desposizione", "comemorazione", "Mel", "nell territorio",
                           "e maria", "compagn", "Gonhxa",
                           "nell’odiena", "un Inghilterra", "Inghiltera", "vicno", "prospicente",
-                          "Bellrreguart", "dístulit", "monastériii", "Emillia",
+                          "Bellrreguart", "monastériii", "Emillia",
                           "BalĐinucci", "Bdu N9", "EaSaint", "EuchariSaint", "FerĐinand", "Hdi Duding", "ReaĐing", "Vil", "accorĐing", "beheaĐing", "builĐings", "carĐinals", "defenĐing", "founĐing", "kinson", "leaSaint", "outstanĐing", "preceĐing", "prieSaint", "reaĐing", "rebuilĐing", "shedĐing", "spreaĐing", "tala"})
 
 
