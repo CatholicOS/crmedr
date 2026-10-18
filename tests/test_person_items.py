@@ -546,8 +546,9 @@ class ExpandTest(unittest.TestCase):
                 raise bp.WikidataError("boom")
             return [dict(c) for c in self.kin.get(qid, [])]
 
-        def saints_by_death_day(self, month, day, given, year=None):
+        def saints_by_death_day(self, month, day, given, year=None, matches=None):
             self.calls.append((month, day, given, year))
+            self.matches = matches
             return [dict(c, source="sparql") for c in self.day]
 
         def title_candidates(self, text):
@@ -594,13 +595,23 @@ class ExpandTest(unittest.TestCase):
 
     def test_death_day_uses_name_equivalents_and_year(self):
         client = self.Client()
-        client.day = [cand("Q5", ["John Lego"], died="1642-01-01")]
+        client.day = [cand("Q5", ["John Lego", "John"], died="1642-01-01")]
         _, op = self.run_expand(self.op(companions=[]), client)
         month, day, given, year = client.calls[0]
         self.assertEqual((month, day, year), (1, 1, 1642))
         self.assertIn("Ioannes", given)
         self.assertIn("john", given)
         self.assertIn(("Q5", "sparql"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+
+    def test_death_day_passes_the_stem_and_keeps_only_name_matches(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Eugende"], died="0510-01-01"), cand("Q6", ["Eugenio"], died="0510-01-01")]
+        op = self.op(name="Eugendus", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Eugendus", "kind": "person"})
+        self.assertIn("eugend", client.calls[0][2])
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])  # Eugenio shares only a prefix
+        self.assertTrue(client.matches(["Eugendo"]))
+        self.assertFalse(client.matches(["Eugenio"]))
 
     def test_existing_qid_is_not_duplicated(self):
         client = self.Client()

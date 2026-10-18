@@ -98,6 +98,16 @@ LATIN_ENDINGS = [("ius", {"", "io", "ius", "e"}), ("us", {"", "o", "e", "us"}), 
                  ("a", {"a", "e", ""}), ("es", {"es", "", "e", "i"}), ("is", {"is", "", "e"}), ("um", {"um", ""})]
 
 
+def latin_stem(name):
+    """(stem, the vernacular endings it may take) of a name with a Latin ending (LATIN_ENDINGS,
+    the first that fits, leaving a stem of two letters or more): Eugendus -> eugend; None
+    without one."""
+    for ending, vernacular in LATIN_ENDINGS:
+        if name.endswith(ending) and len(name) - len(ending) >= 2:
+            return name[: -len(ending)], vernacular
+    return None
+
+
 def _same(latin, other):
     """The same name: equal, equivalents, or one stem with a Latin and a vernacular ending."""
     if other in _EQUIVALENTS.get(latin, ()):
@@ -105,11 +115,8 @@ def _same(latin, other):
     latin, other = latin.replace("ae", "e").replace("oe", "e"), other.replace("ae", "e").replace("oe", "e")
     if latin == other:
         return True
-    for ending, vernacular in LATIN_ENDINGS:
-        if latin.endswith(ending) and len(latin) - len(ending) >= 2:
-            stem = latin[: -len(ending)]
-            return any(other == stem + v for v in vernacular)
-    return False
+    stem = latin_stem(latin)
+    return bool(stem) and any(other == stem[0] + v for v in stem[1])
 
 
 def name_matches(name, candidate_names):
@@ -379,14 +386,25 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
 
 
 def _given_names(op):
-    """The first word of each of the person's names, with the vernacular equivalents of a Latin one."""
+    """The first word of each of the person's names, its stem without the Latin ending (Eugend,
+    for Eugende and Eugendo; with ae and oe read as e too), and the vernacular equivalents of a
+    Latin one."""
     given = {}
     for nm in [op["name"], *op.get("also", [])]:
         first = nm.split()[0] if nm.split() else ""
         if first:
             given[first] = None
+            for form in (first.lower(), first.lower().replace("ae", "e").replace("oe", "e")):
+                stem = latin_stem(form)
+                if stem:
+                    given[stem[0]] = None
             given.update(dict.fromkeys(NAME_EQUIVALENTS.get(name_key(first), ())))
     return list(given)
+
+
+def _named(op):
+    """A test of a list of names: one of them is one of the op's names (name_matches)."""
+    return lambda names: any(name_matches(nm, names) for nm in [op["name"], *op.get("also", [])])
 
 
 def _companion_items(op, items):
@@ -413,7 +431,9 @@ def _expansion(op, record, items, client):
             found += client.relatives(qid)
     if op["typology"] == "dies_natalis":
         month, day = (int(x) for x in op["day"].split("-"))
-        found += client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"))
+        named = _named(op)
+        found += [c for c in client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"), named)
+                  if named(c.get("names", []) + [c.get("label", "")])]
     return found
 
 

@@ -17,6 +17,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from datetime import date, timedelta
 
 from gazetteer_text import convention, fold
 
@@ -26,7 +27,10 @@ SPARQL = "https://query.wikidata.org/sparql"
 PREFIXES = ("PREFIX wd: <http://www.wikidata.org/entity/>\n"
             "PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n"
             "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
-            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n")
+            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n"
+            "PREFIX p: <http://www.wikidata.org/prop/>\n"
+            "PREFIX psv: <http://www.wikidata.org/prop/statement/value/>\n"
+            "PREFIX wikibase: <http://wikiba.se/ontology#>\n")
 USER_AGENT = "crmedr-gazetteer/1.0 (https://github.com/CatholicOS/crmedr)"
 # human settlement, administrative territorial entity, monastery, church building,
 # archaeological site, island, mountain, region, historical region, historical
@@ -48,12 +52,55 @@ SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
 RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 MAX_SPARQL = 25
+GREGORIAN, JULIAN = "Q1985727", "Q1985786"  # the calendar models of a Wikidata date
+# The query service stores a Julian-model date converted to the proleptic Gregorian calendar:
+# from two days earlier (the 1st century) to thirteen days later (since 1900) than its Julian day.
+JULIAN_SHIFT = range(-2, 14)
 
 # The interface languages of martyrology-frontend, for the reader's person popups.
 DETAIL_LANGS = ("en", "it", "fr", "de", "es", "pt")
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 # P1480 (sourcing circumstances) = circa.
 CIRCA = "Q5727902"
+
+
+def _stored_days(month, day):
+    """A SPARQL condition on ?d and ?cal: the dates the query service may store for a death on
+    that day. The day itself in the Gregorian model; in the Julian model, the Gregorian days a
+    Julian date of that month and day becomes (JULIAN_SHIFT; in a leap year, so that 29 February
+    is among them), as a day range per month. A FILTER, not a VALUES join: the service times
+    out joining every death date with a list of days."""
+    shifted = [date(2000, month, day) + timedelta(k) for k in JULIAN_SHIFT]
+    ranges = {}
+    for d in shifted:
+        lo, hi = ranges.get(d.month, (d.day, d.day))
+        ranges[d.month] = (min(lo, d.day), max(hi, d.day))
+    julian = " || ".join(f"MONTH(?d) = {m} && DAY(?d) >= {lo} && DAY(?d) <= {hi}" for m, (lo, hi) in ranges.items())
+    return (f"?cal = wd:{GREGORIAN} && MONTH(?d) = {month} && DAY(?d) = {day} || "
+            f"?cal = wd:{JULIAN} && ({julian})")
+
+
+def _julian(year, month, day):
+    """The Julian calendar date of a proleptic Gregorian one (astronomical years), through
+    the Julian day number."""
+    a = (14 - month) // 12
+    y, m = year + 4800 - a, month + 12 * a - 3
+    jdn = day + (153 * m + 2) // 5 + 365 * y + y // 4 - y // 100 + y // 400 - 32045
+    c = jdn + 32082
+    d = (4 * c + 3) // 1461
+    e = c - 1461 * d // 4
+    m = (5 * e + 2) // 153
+    return d - 4800 + m // 10, m + 3 - 12 * (m // 10), e - (153 * m + 2) // 5 + 1
+
+
+def _death_day(value, calendar):
+    """(year, month, day) of a query service date in its own calendar model: as stored for a
+    Gregorian one, back to the Julian calendar for a Julian one; None for another model."""
+    m = re.match(r"(-?\d+)-(\d\d)-(\d\d)", value)
+    if not m or calendar not in (GREGORIAN, JULIAN):
+        return None
+    ymd = tuple(int(x) for x in m.groups())
+    return ymd if calendar == GREGORIAN else _julian(*ymd)
 
 
 class WikidataError(Exception):
@@ -321,24 +368,35 @@ class Wikidata:
         sources.pop(qid, None)
         return self._tagged(sources)
 
-    def saints_by_death_day(self, month, day, given, year=None):
-        """Saints and blessed who died on that day (and year, when known) whose
-        label or alias has a word starting with one of the `given` names, folded.
-        The query is bounded by status and death day; the names are matched here,
-        since the endpoint cannot fold accents."""
+    def saints_by_death_day(self, month, day, given, year=None, matches=None):
+        """Saints and blessed who died on that day (and year, when known), dated to the day,
+        whose label or alias has a word starting with one of the `given` names, folded.
+        The query is bounded by status and death day; the names and the exact day (a
+        Julian-model date back in its own calendar) are checked here, since the endpoint
+        cannot fold accents. At most MAX_SPARQL, the best first: those whose names pass
+        `matches` (a test of a list of names), then those with more statuses."""
         statuses = " ".join("wd:" + s for s in sorted(SAINT_STATUSES))
         langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
-        when = f"MONTH(?d) = {int(month)} && DAY(?d) = {int(day)}" + (f" && YEAR(?d) = {int(year)}" if year else "")
+        years = f" FILTER(YEAR(?d) >= {int(year) - 1} && YEAR(?d) <= {int(year) + 1})" if year else ""
         rows = self._sparql(
-            f"SELECT DISTINCT ?p ?l WHERE {{ VALUES ?s {{ {statuses} }} "
-            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; wdt:P570 ?d . FILTER({when}) "
+            f"SELECT DISTINCT ?p ?l ?s ?d ?prec ?cal WHERE {{ VALUES ?s {{ {statuses} }} "
+            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; p:P570/psv:P570 [wikibase:timeValue ?d; "
+            f"wikibase:timePrecision ?prec; wikibase:timeCalendarModel ?cal] . "
+            f"FILTER(?prec >= 11 && ({_stored_days(int(month), int(day))})){years} "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
         starts = tuple(f for f in (fold(g) for g in given) if f)
-        found = {}
+        names, found = {}, {}
         for b in rows:
+            qid = b["p"]["value"].rsplit("/", 1)[1]
+            on_day = _death_day(b["d"]["value"], b["cal"]["value"].rsplit("/", 1)[1])
+            if int(b["prec"]["value"]) < 11 or on_day is None or on_day[1:] != (int(month), int(day)) or (year and on_day[0] != int(year)):
+                continue
+            names.setdefault(qid, set()).add(b["l"]["value"])
             if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
-                found.setdefault(b["p"]["value"].rsplit("/", 1)[1], "sparql")
-        return self._tagged(dict(list(found.items())[:MAX_SPARQL]))
+                found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
+        best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
+                                            int(q[1:])))
+        return self._tagged({q: "sparql" for q in best[:MAX_SPARQL]})
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""
