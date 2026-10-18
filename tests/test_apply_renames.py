@@ -109,5 +109,75 @@ class SplitAppliedTest(unittest.TestCase):
         self.assertEqual(ar.split_applied([r], set()), ([r], []))
 
 
+class RekeyTextTest(unittest.TestCase):
+    M = {"mr:0101-basilius": "mr:0101-basilius-x"}
+
+    def test_keys_values_and_pipe(self):
+        text = '{"mr:0101-basilius": ["mr:0101-basilius", "mr:0101-basilius|Basilius"]}'
+        self.assertEqual(ar.rekey_text(text, self.M),
+                         ('{"mr:0101-basilius-x": ["mr:0101-basilius-x", "mr:0101-basilius-x|Basilius"]}', 3))
+
+    def test_longer_and_prose_untouched(self):
+        text = '["mr:0101-basilius-magnus", "see mr:0101-basilius in", "xmr:0101-basilius"]'
+        self.assertEqual(ar.rekey_text(text, self.M), (text, 0))
+
+    def test_empty_mapping(self):
+        self.assertEqual(ar.rekey_text("abc", {}), ("abc", 0))
+
+
+class FilesTest(unittest.TestCase):
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.dir = Path(self.tmp.name)
+        self.addCleanup(self.tmp.cleanup)
+
+    M = {"mr:0101-b": "mr:0101-b-x"}
+
+    def test_json_format_kept_byte_for_byte(self):
+        src = '{\n "mr:0101-b": [\n  1, 2, ["mr:0101-b"]\n ],\n "t":"mr:0101-b|Name" ,\n "u":[ ]\n}\n'
+        p = self.dir / "f.json"
+        p.write_text(src, encoding="utf-8")
+        self.assertEqual(ar.rekey_file(p, self.M, "json", False), 3)
+        self.assertEqual(p.read_text(encoding="utf-8"), src.replace("mr:0101-b", "mr:0101-b-x"))
+
+    def test_dry_writes_nothing(self):
+        src = '{"mr:0101-b": 1}'
+        p = self.dir / "f.json"
+        p.write_text(src, encoding="utf-8")
+        self.assertEqual(ar.rekey_file(p, self.M, "json", True), 1)
+        self.assertEqual(p.read_text(encoding="utf-8"), src)
+
+    def test_python_notes_still_compile(self):
+        p = self.dir / "n.py"
+        p.write_text('NOTES = {\n    "mr:0101-b": "a note",\n}\n', encoding="utf-8")
+        self.assertEqual(ar.rekey_file(p, self.M, "python", False), 1)
+        self.assertIn('"mr:0101-b-x": "a note"', p.read_text(encoding="utf-8"))
+
+    def test_failed_check_writes_nothing(self):
+        src = '{"a": "mr:0101-b"'  # already invalid JSON
+        p = self.dir / "bad.json"
+        p.write_text(src, encoding="utf-8")
+        with self.assertRaises(ValueError):
+            ar.rekey_file(p, self.M, "json", False)
+        self.assertEqual(p.read_text(encoding="utf-8"), src)
+
+    def test_set_labels_curly_apostrophe(self):
+        p = self.dir / "it.json"
+        p.write_text(json.dumps({"mr:0101-b": "Old", "mr:0101-c": "Keep \"q\""}, indent=2, ensure_ascii=False) + "\n",
+                     encoding="utf-8")
+        self.assertEqual(ar.set_labels(p, {"mr:0101-b": "Sant’Eugendo, abate di Condat"}, False), 1)
+        self.assertEqual(p.read_text(encoding="utf-8"),
+                         '{\n  "mr:0101-b": "Sant’Eugendo, abate di Condat",\n  "mr:0101-c": "Keep \\"q\\""\n}\n')
+
+    def test_set_labels_missing_id_is_error_and_dry(self):
+        p = self.dir / "it.json"
+        src = '{\n  "mr:0101-b": "Old"\n}\n'
+        p.write_text(src, encoding="utf-8")
+        with self.assertRaises(ValueError):
+            ar.set_labels(p, {"mr:0101-zz": "X"}, False)
+        self.assertEqual(ar.set_labels(p, {"mr:0101-b": "New"}, True), 1)
+        self.assertEqual(p.read_text(encoding="utf-8"), src)
+
+
 if __name__ == "__main__":
     unittest.main()

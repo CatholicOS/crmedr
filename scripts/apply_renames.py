@@ -80,3 +80,45 @@ def check(rs, ids):
         if seen[r.new] == 2:
             errors.append(f"{head}: two renames give {r.new}")
     return errors
+
+
+def rekey_text(text, mapping):
+    """Re-key the quoted IDs: "old" and "old|... take the new ID; nothing else."""
+    if not mapping:
+        return text, 0
+    alt = "|".join(re.escape(k) for k in sorted(mapping, key=len, reverse=True))
+    return re.subn(rf'"({alt})(?=["|])', lambda m: '"' + mapping[m.group(1)], text)
+
+
+def rekey_file(path, mapping, kind, dry):
+    """Re-key one file in place, checking the result first; returns the count."""
+    path = Path(path)
+    text = path.read_text(encoding="utf-8")
+    new, n = rekey_text(text, mapping)
+    try:
+        if kind == "json":
+            json.loads(new)
+        else:
+            compile(new, str(path), "exec")
+    except (ValueError, SyntaxError) as e:
+        raise ValueError(f"{path}: the re-keyed file does not parse: {e}") from e
+    if n and not dry:
+        path.write_text(new, encoding="utf-8")
+    return n
+
+
+def set_labels(path, labels, dry):
+    """Set the subject of each id in a flat i18n file; ids absent from it are an error."""
+    path = Path(path)
+    text = path.read_text(encoding="utf-8")
+    missing = [i for i in labels if f'"{i}": "' not in text]
+    if missing:
+        raise ValueError(f"{path}: no such IDs: {', '.join(missing)}")
+    n = 0
+    for mr_id, value in labels.items():
+        pat = re.compile(rf'^(\s*{re.escape(json.dumps(mr_id))}: )"(?:[^"\\]|\\.)*"', re.M)
+        text, k = pat.subn(lambda m: m.group(1) + json.dumps(value, ensure_ascii=False), text)
+        n += k
+    if n and not dry:
+        path.write_text(text, encoding="utf-8")
+    return n
