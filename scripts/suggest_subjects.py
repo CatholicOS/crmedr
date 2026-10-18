@@ -3,10 +3,11 @@
 
 `suggest` writes `jev` on every card whose answer reaches the threshold (the picked option's
 probability), and removes it from the others: on a rename {decision: accept|edit, new_id for an
-edit, probability, confidence, model, flags}; on a person card {decision: accept|edit|reject,
-wikidata and source on accept and edit, reason for a reject, kind, probability, confidence, model}. A
-record field Jev doubts writes {flags: ["record:places[0]", ...], model} and no suggestion: the
-curator checks the record first. `jev` is kept apart from `suggested` (verify-suggestions' own,
+edit, probability, confidence, model, flags, scores: {new_id: clarity score}}; on a person card
+{decision: accept|edit|reject, wikidata and source on accept and edit, reason for a reject, kind,
+probability, confidence, model, flags ["kind:<kind>"] on an item picked for a name Jev reads as
+other than a person}. A record field Jev doubts writes {flags: ["record:places[0]", ...], model,
+scores} and no suggestion: the curator checks the record first. `jev` is kept apart from `suggested` (verify-suggestions' own,
 which the curator's tool and `apply` read). Nothing here writes `decision` or `edited`.
 
 `evaluate` compares the suggestions with decided change-sets and prints, per question family
@@ -16,15 +17,16 @@ refuses one inside any git work tree. See docs/superpowers/specs/2026-10-18-subj
 
 Usage:
   python3 suggest_subjects.py suggest <changeset.json> <records.json> /path/to/martyrology-texts
-                                      [--persons] [--min-confidence X] [--repo repo_root]
+                                      [--persons] [--month MM] [--min-confidence X] [--repo repo_root]
   python3 suggest_subjects.py evaluate <decided.json>... --records <records.json>
                                       /path/to/martyrology-texts [--repo repo_root]
 
---persons asks only the person cards. The key: TYPESAFE_API_KEY, else ~/.config/typesafe/api_key.
+--persons asks only the person cards; --month MM only the cards of that month's eulogies. The key: TYPESAFE_API_KEY, else ~/.config/typesafe/api_key.
 Standard library only.
 """
 
 import json
+import re
 import sys
 from collections import defaultdict
 from pathlib import Path
@@ -114,13 +116,20 @@ def request_for(op, data, records):
     return sj.person_request(op, record, la_clause, companions(op, data["items"])), record
 
 
-def in_scope(op, persons):
+def eulogy(op):
+    return op["id"] if family(op) == "rename" else op["eulogy"]
+
+
+def in_scope(op, persons, month=None):
+    if month and eulogy(op)[3:5] != month:
+        return False
     return family(op) == "person" if persons else family(op) is not None
 
 
 def ask_op(op, data, records, client):
-    """(suggestion before any threshold, record flags, error); all None when the card cannot be
-    asked. A refused key is raised: the run stops."""
+    """(suggestion before any threshold, flagged, error); all None when the card cannot be asked.
+    flagged: the `jev` of a rename whose record Jev doubts, {flags, model, scores}, else None.
+    A refused key is raised: the run stops."""
     body, record = request_for(op, data, records)
     if body is None:
         return None, None, None
@@ -131,13 +140,16 @@ def ask_op(op, data, records, client):
     except mj.TypeSafeError as e:
         return None, None, str(e)
     answers, model = response.get("answers") or {}, response.get("model", mj.MODEL)
+    flagged = None
     if family(op) == "rename":
         flags = sj.record_flags(answers)
+        if flags:
+            flagged = {"flags": flags, "model": model, "scores": sj.clarity_scores(op, answers)}
         s = sj.rename_suggestion(op, answers, record, model)
     else:
-        flags, s = [], sj.person_suggestion(op, answers, model)
-    error = None if s or flags else "the answer named no option the request offered"
-    return s, flags, error
+        s = sj.person_suggestion(op, answers, model)
+    error = None if s or flagged else "the answer named no option the request offered"
+    return s, flagged, error
 
 
 def require_key(ops, data, records, client):
@@ -150,13 +162,13 @@ def require_key(ops, data, records, client):
             raise mj.TypeSafeError("no TypeSafe key: set TYPESAFE_API_KEY or write ~/.config/typesafe/api_key")
 
 
-def suggest_ops(ops, data, records, client, min_confidence, persons=False):
-    scope = [op for op in ops if in_scope(op, persons)]
+def suggest_ops(ops, data, records, client, min_confidence, persons=False, month=None):
+    scope = [op for op in ops if in_scope(op, persons, month)]
     require_key(scope, data, records, client)
     counts = {"suggested": 0, "below": 0, "flagged": 0, "skipped": len(ops) - len(scope), "errors": 0}
     for op in scope:
-        s, flags, error = ask_op(op, data, records, client)
-        if s is None and flags is None and error is None:
+        s, flagged, error = ask_op(op, data, records, client)
+        if s is None and flagged is None and error is None:
             counts["skipped"] += 1
             continue
         op.pop("jev", None)
@@ -166,8 +178,8 @@ def suggest_ops(ops, data, records, client, min_confidence, persons=False):
         elif s and s["probability"] >= min_confidence:
             op["jev"] = s
             counts["suggested"] += 1
-        elif flags:
-            op["jev"] = {"flags": flags, "model": mj.MODEL}
+        elif flagged:
+            op["jev"] = flagged
             counts["flagged"] += 1
         else:
             counts["below"] += 1
@@ -185,8 +197,7 @@ def curator_outcome(op):
         return edited.get("new_id") if decision == "edit" else op.get("new_id")
     if decision == "edit":
         return edited.get("wikidata")
-    cands = op.get("candidates") or []
-    return (op.get("suggested") or {}).get("wikidata") or (cands[0]["wikidata"] if cands else None)
+    return sj.preselected(op)
 
 
 def suggested_outcome(op, s):
@@ -203,14 +214,14 @@ def evaluate_ops(ops, data, records, client):
     require_key(decided, data, records, client)
     rows = []
     for op in decided:
-        s, flags, error = ask_op(op, data, records, client)
-        if s is None and flags is None and error is None:
+        s, flagged, error = ask_op(op, data, records, client)
+        if s is None and flagged is None and error is None:
             continue
         row = {"id": op["id"], "family": family(op), "decided": curator_outcome(op),
                "suggested": s and {"outcome": suggested_outcome(op, s), "probability": s["probability"],
                                    "confidence": s["confidence"]}}
-        if flags:
-            row["flags"] = flags
+        if flagged:
+            row["flags"] = flagged["flags"]
         if error:
             row["error"] = error
         rows.append(row)
@@ -262,6 +273,8 @@ def _args(argv):
             flags["records"] = next(it)
         elif a == "--persons":
             flags["persons"] = True
+        elif a == "--month":
+            flags["month"] = next(it, "")
         else:
             files.append(a)
     return flags, files
@@ -276,6 +289,8 @@ def main(argv):
         if len(files) != 3:
             sys.exit(__doc__)
         path, records_path, texts_repo = (Path(f) for f in files)
+        if "month" in flags and not re.fullmatch(r"0[1-9]|1[0-2]", flags["month"]):
+            sys.exit(f"--month {flags['month']}: expected MM (e.g. 01)")
         if _in_a_repository(path, repo):
             sys.exit(f"{path}: a change-set quotes the 2004 edition; keep it outside the repository")
     else:
@@ -289,7 +304,8 @@ def main(argv):
         if argv[0] == "suggest":
             doc = json.loads(path.read_text(encoding="utf-8"))
             counts = suggest_ops(doc["operations"], data, records, client,
-                                 flags.get("min", DEFAULT_MIN_CONFIDENCE), flags.get("persons", False))
+                                 flags.get("min", DEFAULT_MIN_CONFIDENCE), flags.get("persons", False),
+                                 flags.get("month"))
             path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
             print(f"{path}: {counts}")
             return

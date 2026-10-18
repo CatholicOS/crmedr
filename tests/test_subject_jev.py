@@ -111,6 +111,15 @@ class RenameSuggestionTest(unittest.TestCase):
         self.assertIsNone(sj.rename_suggestion(OP, {"pick": item("c7")}))
         self.assertIsNone(sj.rename_suggestion(OP, {}))
 
+    def test_clarity_scores_by_new_id(self):
+        answers = {"pick": PICK_C0, "clarity_c0": {"type": "score", "score": 3, "probabilities": {"3": 0.8}},
+                   "clarity_c1": {"type": "score", "score": 1, "probabilities": {"1": 0.6}}}
+        s = sj.rename_suggestion(OP, answers)
+        self.assertEqual(s["scores"], {"mr:0101-eugendus-abbas-condatiscensis": 3,
+                                       "mr:0101-eugendus-condatiscensis": 1})
+        del answers["clarity_c1"]
+        self.assertEqual(sj.clarity_scores(OP, answers), {"mr:0101-eugendus-abbas-condatiscensis": 3})
+
     def test_a_grammar_disagreement_is_flagged_without_blocking(self):
         answers = {"pick": PICK_C0, "place_grammar_0": item("locative", 0.8)}
         s = sj.rename_suggestion(OP, answers, record=EUGENDUS)
@@ -159,6 +168,13 @@ class PersonSuggestionTest(unittest.TestCase):
         op = dict(POP, suggested={"wikidata": "Q2"})
         self.assertEqual(sj.person_suggestion(op, {"item": item("q1"), "kind": KIND_PERSON})["decision"], "accept")
         self.assertEqual(sj.person_suggestion(op, {"item": item("q0"), "kind": KIND_PERSON})["decision"], "edit")
+
+    def test_an_item_for_a_name_read_as_no_person_is_flagged(self):
+        title = item("celebration_or_title", 0.9)
+        s = sj.person_suggestion(POP, {"item": item("q0"), "kind": title})
+        self.assertEqual((s["decision"], s["wikidata"], s["flags"]), ("accept", "Q1", ["kind:celebration_or_title"]))
+        self.assertNotIn("flags", sj.person_suggestion(POP, {"item": item("q0"), "kind": KIND_PERSON}))
+        self.assertNotIn("flags", sj.person_suggestion(POP, {"item": item("none"), "kind": title}))
 
     def test_unknown_pick_ignored(self):
         self.assertIsNone(sj.person_suggestion(POP, {"item": {"type": "choice", "choice": "q9", "probabilities": {"q9": 1}, "confidence": 1},

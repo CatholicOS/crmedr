@@ -24,8 +24,9 @@ class StubClient:
     """Answers every choice question with its option `picks[question]` (else the first option) at
     probability `p`, and every noul with `noul`."""
 
-    def __init__(self, picks=None, p=0.95, noul=0.9, error=None):
+    def __init__(self, picks=None, p=0.95, noul=0.9, error=None, model="jev-1.14.0"):
         self.picks, self.p, self.noul, self.error, self.bodies = picks or {}, p, noul, error, []
+        self.model = model
 
     def ask(self, body):
         self.bodies.append(body)
@@ -40,7 +41,7 @@ class StubClient:
             else:
                 pick = self.picks.get(q, next(iter(spec["criteria"])))
                 answers[q] = {"type": "choice", "choice": pick, "probabilities": {pick: self.p}, "confidence": 0.9}
-        return {"model": "jev-1.14.0", "answers": answers}
+        return {"model": self.model, "answers": answers}
 
 
 class SuggestTest(unittest.TestCase):
@@ -70,10 +71,27 @@ class SuggestTest(unittest.TestCase):
 
     def test_a_record_flag_is_written_without_a_suggestion(self):
         ops = [copy.deepcopy(OP)]
-        counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(noul=0.2), 0.9)
+        counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(noul=0.2, model="jev-1.15.0"), 0.9)
         self.assertEqual(ops[0]["jev"]["flags"], ["record:roles[0]", "record:places[0]"])
         self.assertNotIn("decision", ops[0]["jev"])
+        self.assertEqual(ops[0]["jev"]["model"], "jev-1.15.0")  # the model that answered
+        self.assertEqual(ops[0]["jev"]["scores"], {c["new_id"]: 3 for c in OP["candidates"]})
         self.assertEqual(counts["flagged"], 1)
+
+    def test_a_suggestion_carries_the_clarity_scores(self):
+        ops = [copy.deepcopy(OP)]
+        ss.suggest_ops(ops, DATA, RECORDS, StubClient(), 0.9)
+        self.assertEqual(ops[0]["jev"]["scores"], {c["new_id"]: 3 for c in OP["candidates"]})
+
+    def test_month_scope(self):
+        client = StubClient()
+        other = dict(copy.deepcopy(POP), id="mr:0201-eugendus|Eugendus", eulogy="mr:0201-eugendus")
+        ops = [copy.deepcopy(OP), copy.deepcopy(POP), other]
+        counts = ss.suggest_ops(ops, DATA, RECORDS, client, 0.0, month="02")
+        self.assertEqual((counts["skipped"], len(client.bodies)), (3, 0))  # no February text, no request
+        counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(), 0.0, month="01")
+        self.assertEqual((counts["suggested"], counts["skipped"]), (2, 1))
+        self.assertNotIn("jev", ops[2])
 
     def test_a_rename_without_a_record_is_skipped_without_a_request(self):
         client = StubClient()
@@ -152,6 +170,10 @@ class OutputTest(unittest.TestCase):
         here = Path(__file__).resolve()
         with self.assertRaises(SystemExit):
             ss.main(["suggest", str(here), str(here), str(here.parent)])
+
+    def test_a_bad_month_is_refused(self):
+        with self.assertRaisesRegex(SystemExit, "expected MM"):
+            ss.main(["suggest", "/a.json", "/r.json", "/texts", "--month", "1"])
 
 
 if __name__ == "__main__":

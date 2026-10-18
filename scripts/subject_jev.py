@@ -219,6 +219,17 @@ def grammar_flags(record, answers):
     return out
 
 
+def clarity_scores(op, answers):
+    """{new_id: Jev's clarity score} of each rename candidate with a score answer."""
+    ids = _candidate_ids(op["candidates"], "c")
+    out = {}
+    for cid, c in zip(ids, op["candidates"]):
+        a = (answers or {}).get(f"clarity_{cid}")
+        if isinstance(a, dict) and a.get("type") == "score" and isinstance(a.get("score"), (int, float)):
+            out[c["new_id"]] = a["score"]
+    return out
+
+
 def _choice(answer, ids):
     """(pick, probability, confidence) of a choice answer naming one of `ids`; None otherwise."""
     if not isinstance(answer, dict) or answer.get("type") != "choice":
@@ -232,7 +243,8 @@ def _choice(answer, ids):
 
 def rename_suggestion(op, answers, record=None, model=MODEL):
     """The rename card's suggestion: accept (Jev picks the op's new_id), edit (another candidate),
-    or None when the pick is not a request id or a record field is doubted (see record_flags)."""
+    or None when the pick is not a request id or a record field is doubted (see record_flags).
+    It carries the grammar flags and the clarity scores."""
     if record_flags(answers):
         return None
     ids = _candidate_ids(op["candidates"], "c")
@@ -244,7 +256,8 @@ def rename_suggestion(op, answers, record=None, model=MODEL):
     out = {"decision": "accept" if cand["new_id"] == op["new_id"] else "edit"}
     if out["decision"] == "edit":
         out["new_id"] = cand["new_id"]
-    out.update(probability=probability, confidence=confidence, model=model, flags=grammar_flags(record, answers))
+    out.update(probability=probability, confidence=confidence, model=model, flags=grammar_flags(record, answers),
+               scores=clarity_scores(op, answers))
     return out
 
 
@@ -296,8 +309,9 @@ def preselected(op):
 
 def person_suggestion(op, answers, model=MODEL):
     """The person card's suggestion: accept (Jev picks the item an accept applies), edit (another
-    candidate); both carry the picked `wikidata` and its `source`; reject (none, or kind not_identifiable); None when the pick is not
-    a request id."""
+    candidate); both carry the picked `wikidata` and its `source`, and flags ["kind:<kind>"] when
+    Jev reads the name as other than a person; reject (none, or kind not_identifiable); None when
+    the pick is not a request id."""
     answers = answers or {}
     kind = _choice(answers.get("kind"), KIND_CRITERIA)
     base = {"model": model}
@@ -316,4 +330,7 @@ def person_suggestion(op, answers, model=MODEL):
         return {"decision": "reject", "reason": "Jev: none of the candidates is this person", **base}
     cand = op["candidates"][ids.index(pick)]
     decision = "accept" if cand["wikidata"] == preselected(op) else "edit"
-    return {"decision": decision, "wikidata": cand["wikidata"], "source": cand.get("source", "search"), **base}
+    out = {"decision": decision, "wikidata": cand["wikidata"], "source": cand.get("source", "search"), **base}
+    if base.get("kind", "person") != "person":
+        out["flags"] = [f"kind:{base['kind']}"]
+    return out
