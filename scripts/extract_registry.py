@@ -5144,15 +5144,19 @@ SOURCE_KEYS = ("id", "month", "day", "entry", "asterisk", "country", "unnumbered
 def load_current(repo_root):
     """The current entries of the committed registry (data/martyrology_ids.json),
     reduced to what the registry is the source of; the links to deprecated IDs
-    are left out, since link_deprecated_twins records them again."""
+    are left out, since link_deprecated_twins records them again. A link to an
+    ID that is neither current nor in data/deprecated_ids.json fails."""
     registry = json.load(open(repo_root / "data" / "martyrology_ids.json", encoding="utf-8"))
     current = [e for e in registry["entries"] if not e.get("deprecated")]
     ids = {e["id"] for e in current}
+    deprecated_ids = {e["id"] for e in load_deprecated(repo_root, ids)}
     out = []
     for e in current:
         unknown = set(e) - set(KEY_ORDER)
         assert not unknown, f"{e['id']}: unknown registry keys {sorted(unknown)}"
         row = {k: e[k] for k in SOURCE_KEYS if k in e}
+        unknown = [x for x in row.get("same_eulogy", []) if x not in ids | deprecated_ids]
+        assert not unknown, f"{e['id']}: same_eulogy names unknown IDs {unknown}"
         links = [x for x in row.pop("same_eulogy", []) if x in ids]
         if links:
             row["same_eulogy"] = links
@@ -5179,6 +5183,20 @@ def add_notes(entries):
 
 def in_key_order(e):
     return {k: e[k] for k in KEY_ORDER if k in e}
+
+
+def with_key(e, key, value):
+    """e with `key` set to value, placed after the last key of e that KEY_ORDER
+    puts before it (so a missing "country" does not lose it)."""
+    before = KEY_ORDER[:KEY_ORDER.index(key)]
+    rest = {k: v for k, v in e.items() if k != key}
+    anchor = max((k for k in rest if k in before), key=before.index, default=None)
+    row = {} if anchor else {key: value}
+    for k, v in rest.items():
+        row[k] = v
+        if k == anchor:
+            row[key] = value
+    return row
 
 
 def load_deprecated(repo_root, current_ids):
@@ -5209,20 +5227,8 @@ def load_typology(repo_root, current_ids):
 
 def add_typology(entries, typology):
     """Insert "typology" right after "country" (key order is output order)."""
-    out = []
-    for e in entries:
-        if e["id"] not in typology:
-            out.append(e)
-            continue
-        row = {}
-        for k, v in e.items():
-            if k == "typology":
-                continue
-            row[k] = v
-            if k == "country":
-                row["typology"] = typology[e["id"]]
-        out.append(row)
-    return out
+    return [with_key(e, "typology", typology[e["id"]]) if e["id"] in typology else e
+            for e in entries]
 
 
 def load_places(repo_root, current_ids):
@@ -5250,21 +5256,8 @@ def check_place_roles(places, typology):
 
 def add_places(entries, places):
     """Insert "places" after "typology" (or "country"); key order is output order."""
-    out = []
-    for e in entries:
-        if e["id"] not in places:
-            out.append({k: v for k, v in e.items() if k != "places"})
-            continue
-        anchor = "typology" if "typology" in e else "country"
-        row = {}
-        for k, v in e.items():
-            if k == "places":
-                continue
-            row[k] = v
-            if k == anchor:
-                row["places"] = places[e["id"]]
-        out.append(row)
-    return out
+    return [with_key(e, "places", places[e["id"]]) if e["id"] in places
+            else {k: v for k, v in e.items() if k != "places"} for e in entries]
 
 
 def write_json(entries, deprecated, repo_root):
@@ -5394,7 +5387,7 @@ def main(argv):
     with tempfile.TemporaryDirectory() as d:
         render(entries, deprecated, Path(d))
         want, have = registry_places._files(Path(d)), registry_places._files(repo_root)
-    stale = sorted(k for k in want if want[k] != have.get(k))
+    stale = sorted(k for k in set(want) | set(have) if want.get(k) != have.get(k))
     if stale:
         print("out of date: " + ", ".join(stale) + "\nrun: python3 scripts/extract_registry.py",
               file=sys.stderr)

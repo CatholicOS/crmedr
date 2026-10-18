@@ -189,14 +189,35 @@ class RegistrySourceTest(unittest.TestCase):
                         "same_eulogy": ["mr:0101-fictitius"]},
                        {"id": "mr:1201-dep", "month": 12, "day": 1, "entry": 1, "deprecated": True}]
             (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
+            (d / "data" / "deprecated_ids.json").write_text(json.dumps(entries[2:]), encoding="utf-8")
             out = r.load_current(d)
             self.assertEqual([e["id"] for e in out], ["mr:0101-fictitius", "mr:0601-cur"])
             self.assertEqual(out[0], {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1,
                                       "asterisk": False, "country": "IT", "same_eulogy": ["mr:0601-cur"]})
+            entries[1]["same_eulogy"] = ["mr:0101-fictitius", "mr:0202-typo"]
+            (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, r"same_eulogy names unknown IDs \['mr:0202-typo'\]"):
+                r.load_current(d)
+            entries[1]["same_eulogy"] = ["mr:0101-fictitius"]
             entries[0]["remark"] = "x"
             (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
             with self.assertRaisesRegex(AssertionError, "unknown registry keys"):
                 r.load_current(d)
+
+    def test_check_sees_a_surplus_month_table(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            copy_registry(d)
+            (d / "registry" / "13-extra.md").write_text("x\n", encoding="utf-8")
+            self.assertEqual(r.main(["--check", str(d)]), 1)
+
+    def test_typology_and_places_without_a_country(self):
+        e = {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1, "asterisk": False,
+             "note": "n"}
+        out = r.add_places(r.add_typology([e], {e["id"]: "depositio"}), {e["id"]: [{"la": "Romae"}]})
+        self.assertEqual(list(out[0]), ["id", "month", "day", "entry", "asterisk", "typology",
+                                        "places", "note"])
+        self.assertEqual(out[0]["places"], [{"la": "Romae"}])
 
     def test_notes_for_unknown_ids_fail(self):
         with self.assertRaisesRegex(AssertionError, "not current"):
