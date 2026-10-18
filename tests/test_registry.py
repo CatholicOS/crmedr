@@ -7,7 +7,25 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-import extract_registry as r  # noqa: E402  (must import without openpyxl)
+import extract_registry as r  # noqa: E402
+
+ROOT = Path(__file__).resolve().parent.parent
+REGISTRY_INPUTS = ["data/martyrology_ids.json", "data/typology.json", "data/places.json",
+                   "data/gazetteer.json", "data/countries_curated.json", "data/deprecated_ids.json"]
+
+
+def registry_ids():
+    return {e["id"] for e in json.load(open(ROOT / "data" / "martyrology_ids.json", encoding="utf-8"))["entries"]}
+
+
+def copy_registry(dst):
+    """The registry and the inputs of its rebuild, copied under dst."""
+    for f in REGISTRY_INPUTS:
+        (dst / f).parent.mkdir(parents=True, exist_ok=True)
+        (dst / f).write_bytes((ROOT / f).read_bytes())
+    (dst / "registry").mkdir()
+    for md in (ROOT / "registry").glob("*.md"):
+        (dst / "registry" / md.name).write_bytes(md.read_bytes())
 
 ENTRY = {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1,
          "asterisk": False, "country": "IT", "note": "n"}
@@ -93,30 +111,123 @@ class RegistryPlacesTest(unittest.TestCase):
 
 
 
-class IdCorrectionsAppliedTest(unittest.TestCase):
-    """No workbook ID that ID_CORRECTIONS replaces may survive in the data."""
+class RenamesAppliedTest(unittest.TestCase):
+    """Renamed IDs (once applied on extraction from the workbook, now made in the registry
+    itself, #127): the old ID is gone from the data, the new one is current."""
 
-    def test_no_corrected_source_id_remains(self):
-        root = Path(__file__).resolve().parent.parent
+    RENAMED = {
+        "mr:1130-stephanus-fanus": "mr:1130-cuthbertus-mayne",
+        "mr:1115-guria": "mr:1115-guria-et-samona",                         # #40
+        "mr:0821-iosephus": "mr:0821-iosephus-dang-dinh-vien",
+        "mr:0320-sabas": "mr:0320-viginti-monachi-palaestinae",
+        "mr:0905-v": "mr:0905-quintus",                                     # #52
+        "mr:0809-laurentius": "mr:0809-romanus",
+        "mr:1017-osea": "mr:1017-osee-propheta",
+        "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus-apostoli",  # #56
+        "mr:1126-bonaventura": "mr:1126-leonardus-a-portu-mauritio",        # #25
+        "mr:0220-eleutherius": "mr:0220-eleutherius-tornaci",               # #47
+        "mr:0709-melania-et-maria-anna-magdalena-de-guilhermier":
+            "mr:0709-melania-et-maria-anna-margarita-ab-angelis",           # #77
+        "mr:0317-alexandria": "mr:0317-plurimi-martyres-alexandriae",       # #109
+        "mr:0623-nicomedia": "mr:0623-plurimi-martyres-nicomediae",
+    }
+
+    def test_old_ids_are_gone_and_new_ones_current(self):
         files = ["data/martyrology_ids.json", "data/typology.json", "data/places.json",
                  "i18n/la.json", "i18n/it.json", "i18n/en.json"]
-        text = "\n".join((root / f).read_text(encoding="utf-8") for f in files)
-        leftovers = sorted(old for old in r.ID_CORRECTIONS if f'"{old}"' in text)
-        self.assertEqual(leftovers, [])
+        text = "\n".join((ROOT / f).read_text(encoding="utf-8") for f in files)
+        self.assertEqual(sorted(old for old in self.RENAMED if f'"{old}"' in text), [])
+        entries = {e["id"]: e for e in json.load(open(ROOT / "data" / "martyrology_ids.json"))["entries"]}
+        for new in self.RENAMED.values():
+            self.assertFalse(entries[new].get("deprecated"), new)
 
     def test_registry_markdown_ids_are_canonical(self):
         """The month tables are checked too: every ID they show is in the registry."""
-        root = Path(__file__).resolve().parent.parent
-        canonical = {e["id"] for e in json.load(open(root / "data" / "martyrology_ids.json",
-                                                      encoding="utf-8"))["entries"]}
         shown = set()
-        for path in sorted((root / "registry").glob("*.md")):
+        for path in sorted((ROOT / "registry").glob("*.md")):
             shown.update(re.findall(r"`(mr:[^`]+)`", path.read_text(encoding="utf-8")))
         self.assertTrue(shown)
-        self.assertEqual(sorted(shown - canonical), [])
+        self.assertEqual(sorted(shown - registry_ids()), [])
 
-    def test_stephanus_fanus_is_corrected(self):
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:1130-stephanus-fanus"), "mr:1130-cuthbertus-mayne")
+
+class RegistrySourceTest(unittest.TestCase):
+    """#127: the committed registry is the source; no workbook."""
+
+    def test_committed_files_are_what_the_build_writes(self):
+        self.assertEqual(r.main(["--check", str(ROOT)]), 0)
+
+    def test_no_workbook(self):
+        source = (ROOT / "scripts" / "extract_registry.py").read_text(encoding="utf-8")
+        self.assertNotIn("openpyxl", source)
+        for name in ("ID_CORRECTIONS", "LATIN_RENUMBERING", "PRINT_ONLY_ENTRIES", "CEI_ONLY",
+                     "ASTERISK_OVERRIDES", "UNNUMBERED_LEADS", "PLACEMENT_OVERRIDES", "extract"):
+            self.assertFalse(hasattr(r, name), name)
+
+    def test_a_registry_change_is_rebuilt_and_check_sees_it(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            copy_registry(d)
+            path = d / "data" / "martyrology_ids.json"
+            reg = json.loads(path.read_text(encoding="utf-8"))
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0104-gregorius")
+            e["editions"][r.EDITION_IT]["asterisk"] = True  # the CEI now asterisks it
+            path.write_text(json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+            self.assertEqual(r.main(["--check", str(d)]), 1)
+            self.assertEqual(r.main([str(d)]), 0)
+            self.assertEqual(r.main(["--check", str(d)]), 0)
+            rebuilt = {x["id"]: x for x in json.loads(path.read_text(encoding="utf-8"))["entries"]}
+        notes = rebuilt["mr:0104-gregorius"]["edition_notes"]
+        self.assertIn("Printed here without an asterisk (entry 3.)", notes[r.EDITION_LA])
+        self.assertIn("Asterisked here", notes[r.EDITION_IT])
+
+    def test_load_current(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "data").mkdir()
+            entries = [dict(ENTRY, typology="depositio", same_eulogy=["mr:1201-dep", "mr:0601-cur"]),
+                       {"id": "mr:0601-cur", "month": 6, "day": 1, "entry": 1, "asterisk": False,
+                        "same_eulogy": ["mr:0101-fictitius"]},
+                       {"id": "mr:1201-dep", "month": 12, "day": 1, "entry": 1, "deprecated": True}]
+            (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
+            (d / "data" / "deprecated_ids.json").write_text(json.dumps(entries[2:]), encoding="utf-8")
+            out = r.load_current(d)
+            self.assertEqual([e["id"] for e in out], ["mr:0101-fictitius", "mr:0601-cur"])
+            self.assertEqual(out[0], {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1,
+                                      "asterisk": False, "country": "IT", "same_eulogy": ["mr:0601-cur"]})
+            entries[1]["same_eulogy"] = ["mr:0101-fictitius", "mr:0202-typo"]
+            (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, r"same_eulogy names unknown IDs \['mr:0202-typo'\]"):
+                r.load_current(d)
+            entries[1]["same_eulogy"] = ["mr:0101-fictitius"]
+            entries[0]["remark"] = "x"
+            (d / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": entries}), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, "unknown registry keys"):
+                r.load_current(d)
+
+    def test_check_sees_a_surplus_month_table(self):
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            copy_registry(d)
+            (d / "registry" / "13-extra.md").write_text("x\n", encoding="utf-8")
+            (d / "registry" / "notes.txt").write_text("x\n", encoding="utf-8")
+            self.assertEqual(r.main(["--check", str(d)]), 1)
+            self.assertEqual(r.main([str(d)]), 0)  # the rebuild removes it
+            self.assertFalse((d / "registry" / "13-extra.md").exists())
+            self.assertTrue((d / "registry" / "notes.txt").exists())
+            self.assertEqual(r.main(["--check", str(d)]), 0)
+
+    def test_typology_and_places_without_a_country(self):
+        e = {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1, "asterisk": False,
+             "note": "n"}
+        out = r.add_places(r.add_typology([e], {e["id"]: "depositio"}), {e["id"]: [{"la": "Romae"}]})
+        self.assertEqual(list(out[0]), ["id", "month", "day", "entry", "asterisk", "typology",
+                                        "places", "note"])
+        self.assertEqual(out[0]["places"], [{"la": "Romae"}])
+
+    def test_notes_for_unknown_ids_fail(self):
+        with self.assertRaisesRegex(AssertionError, "not current"):
+            r.add_notes([{"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1, "asterisk": False}])
+
 
 class MultiSubjectSlugs40Test(unittest.TestCase):
     """#40: a slug naming two or more subjects goes with a plural Latin subject."""
@@ -127,11 +238,6 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
                  "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum",
                  "mr:1229-david-rex-et-propheta", "mr:0826-melchisedech-rex-et-sacerdos",
                  "mr:0921-matthaeus-apostolus-et-evangelista", "mr:1227-ioannes-apostolus-et-evangelista"}
-
-    def test_corrections_present(self):
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:1115-guria"), "mr:1115-guria-et-samona")
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:0821-iosephus"), "mr:0821-iosephus-dang-dinh-vien")
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:0320-sabas"), "mr:0320-viginti-monachi-palaestinae")
 
     def test_multi_subject_ids_have_plural_latin_subjects(self):
         root = Path(__file__).resolve().parent.parent
@@ -146,11 +252,6 @@ class MultiSubjectSlugs40Test(unittest.TestCase):
 
 class CurrentIdFixes52Test(unittest.TestCase):
     """#52: current slugs that misnamed the eulogy, and prophets keeping -propheta."""
-
-    def test_corrections_present(self):
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:0905-v"), "mr:0905-quintus")
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:0809-laurentius"), "mr:0809-romanus")
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:1017-osea"), "mr:1017-osee-propheta")
 
     def test_prophets_say_so_in_slug_and_subject(self):
         root = Path(__file__).resolve().parent.parent
@@ -176,7 +277,6 @@ class Apostles56Test(unittest.TestCase):
                     "mr:0222-cathedra-petri-apostoli"):
             self.assertIn(cid, ids)
             self.assertRegex(la[cid], r"Apostol(us|i)$")
-        self.assertEqual(r.ID_CORRECTIONS.get("mr:0629-petrus-et-paulus-simon"), "mr:0629-petrus-et-paulus-apostoli")
         # #59: the evangelists who were not apostles
         for cid in ("mr:0425-marcus-evangelista", "mr:1018-lucas-evangelista"):
             self.assertIn(cid, ids)
@@ -214,7 +314,6 @@ class PlaceLeadCorrections25Test(unittest.TestCase):
         self.assertFalse(entries["mr:1126-leonardus-a-portu-mauritio"].get("deprecated"))
         for mr_id in ("mr:0320-photina-et-socii", "mr:0823-philippus-benizi", "mr:0324-pigmenius"):
             self.assertTrue(entries[mr_id]["deprecated"], mr_id)
-        self.assertEqual(r.ID_CORRECTIONS["mr:1126-bonaventura"], "mr:1126-leonardus-a-portu-mauritio")
 
 
 class DeprecatedSameEulogy45Test(unittest.TestCase):
@@ -247,7 +346,6 @@ class February20Test(unittest.TestCase):
     def test_registry(self):
         root = Path(__file__).resolve().parent.parent
         entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
-        self.assertEqual(r.ID_CORRECTIONS["mr:0220-eleutherius"], "mr:0220-eleutherius-tornaci")
         self.assertFalse(entries["mr:0220-eleutherius-tornaci"].get("deprecated"))
         for gone in ("mr:0220-eleutherius", "mr:0220-eleutherius-pe"):
             self.assertNotIn(gone, entries)
@@ -265,7 +363,6 @@ class OrangeUrsulinesJuly9Test(unittest.TestCase):
         old, new = ("mr:0709-melania-et-maria-anna-magdalena-de-guilhermier",
                     "mr:0709-melania-et-maria-anna-margarita-ab-angelis")
         entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
-        self.assertEqual(r.ID_CORRECTIONS[old], new)
         self.assertNotIn(old, entries)
         self.assertEqual(set(entries[new]["edition_notes"]), {r.EDITION_LA, r.EDITION_IT, r.EDITION_EN})
         la = json.load(open(root / "i18n" / "la.json"))
@@ -314,48 +411,6 @@ class CrossDayEulogies49Test(unittest.TestCase):
 
 class PerEditionPlacementsTest(unittest.TestCase):
     """Per-edition differences from the main (Latin print) placement."""
-
-    def test_overrides_record_cei_differences(self):
-        self.assertEqual(
-            r.edition_overrides("mr:0104-gregorius", entry=3, asterisk=False, cei_entry=2, cei_asterisk=False),
-            {r.EDITION_IT: {"entry": 2}})
-        self.assertEqual(
-            r.edition_overrides("mr:0104-ferreolus", entry=4, asterisk=True, cei_entry=3, cei_asterisk=False),
-            {r.EDITION_IT: {"entry": 3, "asterisk": False}})
-        self.assertEqual(
-            r.edition_overrides("mr:0101-fictitius", entry=1, asterisk=False, cei_entry=1, cei_asterisk=False), {})
-
-    def test_cei_only_eulogies_are_absent_from_latin_and_english(self):
-        self.assertEqual(
-            r.edition_overrides("mr:0712-proclus-et-hilarion", entry=1, asterisk=False, cei_entry=1, cei_asterisk=False),
-            {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
-
-    def test_tables(self):
-        self.assertEqual(r.LATIN_RENUMBERING["mr:0104-gregorius"], 3)
-        self.assertEqual(r.LATIN_RENUMBERING["mr:0104-elisabeth-anna-seton"], 11)
-        self.assertEqual(r.LATIN_RENUMBERING["mr:0610-eduardus-poppe"], 10)
-        self.assertEqual(r.LATIN_RENUMBERING["mr:0825-genesius"], 3)
-        self.assertEqual(r.LATIN_RENUMBERING["mr:0825-aloysius-urbano-lanaspa"], 13)
-        self.assertEqual(r.LATIN_RENUMBERING["mr:1210-gundisalvus-vines-masip"], 9)
-        self.assertEqual(r.CEI_ONLY, {"mr:0712-proclus-et-hilarion", "mr:0825-eusebius-et-socii",
-                                      "mr:0709-maria-a-iesu-crucifixo", "mr:1210-marcus-antonius-durando"})
-        self.assertEqual(r.SAME_EULOGY, {"mr:0610-marcus-antonius-durando": "mr:1210-marcus-antonius-durando"})
-        self.assertNotIn("mr:1210-marcus-antonius-durando", r.ID_CORRECTIONS)
-        self.assertNotIn("mr:0610-marcus-antonius-durando", r.PLACEMENT_OVERRIDES)
-        print_only = {e["id"]: e for e in r.PRINT_ONLY_ENTRIES}
-        self.assertEqual(print_only["mr:0104-abrunculus"]["entry"], 2)
-        self.assertEqual(print_only["mr:0104-abrunculus"]["editions"], {r.EDITION_IT: {"absent": True}})
-        self.assertEqual(print_only["mr:0104-emmanuel-gonzalez-garcia"]["entry"], 12)
-        self.assertEqual(print_only["mr:0104-emmanuel-gonzalez-garcia"]["editions"], {r.EDITION_IT: {"entry": 11}})
-        self.assertEqual(print_only["mr:0610-marcus-antonius-durando"]["entry"], 9)
-        self.assertEqual(print_only["mr:0610-marcus-antonius-durando"]["editions"], {r.EDITION_IT: {"absent": True}})
-
-    def test_link_same_eulogy_is_symmetric_and_idempotent(self):
-        entries = [{"id": "mr:0610-x", "month": 6, "day": 10}, {"id": "mr:1210-x", "month": 12, "day": 10}]
-        r.link_same_eulogy(entries, {"mr:0610-x": "mr:1210-x"})
-        r.link_same_eulogy(entries, {"mr:0610-x": "mr:1210-x"})
-        self.assertEqual(entries[0]["same_eulogy"], ["mr:1210-x"])
-        self.assertEqual(entries[1]["same_eulogy"], ["mr:0610-x"])
 
     def _day(self):
         return [
@@ -427,6 +482,25 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         self.assertEqual(dec["editions"], {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
         self.assertEqual(self.e["mr:1210-gundisalvus-vines-masip"]["editions"], {r.EDITION_IT: {"entry": 10}})
 
+    def test_latin_numbering_where_the_cei_differs(self):
+        for mr_id, entry, cei in (("mr:0104-gregorius", 3, 2), ("mr:0104-elisabeth-anna-seton", 11, 10),
+                                  ("mr:0610-eduardus-poppe", 10, 9), ("mr:0825-genesius", 3, 4),
+                                  ("mr:0825-aloysius-urbano-lanaspa", 13, 14),
+                                  ("mr:1210-gundisalvus-vines-masip", 9, 10)):
+            self.assertEqual((self.e[mr_id]["entry"], self.e[mr_id]["editions"][r.EDITION_IT]["entry"]),
+                             (entry, cei), mr_id)
+
+    def test_cei_only_and_latin_only(self):
+        absent = {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}}
+        cei_only = sorted(i for i, x in self.e.items() if x.get("editions", {}).get(r.EDITION_LA) == {"absent": True})
+        self.assertEqual(cei_only, ["mr:0709-maria-a-iesu-crucifixo", "mr:0712-proclus-et-hilarion",
+                                    "mr:0825-eusebius-et-socii", "mr:1210-marcus-antonius-durando"])
+        for mr_id in cei_only:
+            self.assertEqual(self.e[mr_id]["editions"], absent, mr_id)
+        latin_only = sorted(i for i, x in self.e.items() if x.get("editions", {}).get(r.EDITION_IT) == {"absent": True})
+        self.assertEqual(latin_only, ["mr:0104-abrunculus", "mr:0610-marcus-antonius-durando"])
+        self.assertEqual(self.e["mr:0104-emmanuel-gonzalez-garcia"]["editions"], {r.EDITION_IT: {"entry": 11}})
+
     def test_august_25(self):
         self.assertEqual(self.e["mr:0825-genesius"]["entry"], 3)
         self.assertEqual(self.e["mr:0825-eusebius-et-socii"]["editions"],
@@ -435,8 +509,11 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
     def test_asterisk_discrepancies_are_cei_overrides(self):
         self.assertEqual(self.e["mr:0104-ferreolus"]["editions"], {r.EDITION_IT: {"entry": 3, "asterisk": False}})
         with_asterisk_override = [i for i, x in self.e.items() if "asterisk" in x.get("editions", {}).get(r.EDITION_IT, {})]
-        # One CEI asterisk override per verified discrepancy (29 per the report).
-        self.assertEqual(sorted(with_asterisk_override), sorted(r.ASTERISK_OVERRIDES))
+        # One CEI asterisk override per verified discrepancy (29 per the report), each with a note
+        # on both editions.
+        self.assertEqual(len(with_asterisk_override), 29)
+        for mr_id in with_asterisk_override:
+            self.assertEqual(r.asterisk_notes(self.e[mr_id]).keys(), {r.EDITION_LA, r.EDITION_IT}, mr_id)
 
     def test_valid(self):
         self.assertEqual(r.validate_editions(list(self.e.values())), [])
@@ -482,10 +559,10 @@ class EditionNotes51Test(unittest.TestCase):
         self.assertIn("Peter the Younger", entries["mr:0410-beda"]["edition_notes"][r.EDITION_EN])
         self.assertNotIn("mr:0410-beda", r.ENTRY_NOTES)
         self.assertIn(r.EDITION_IT, entries["mr:0712-proclus-et-hilarion"]["edition_notes"])
-        # current IDs keep theirs in EDITION_NOTES, so a regeneration keeps them
+        # current IDs keep theirs in EDITION_NOTES (or the asterisk notes), so a rebuild keeps them
         for mr_id, e in entries.items():
-            if e.get("edition_notes") and not e.get("deprecated"):
-                self.assertEqual(e["edition_notes"], r.EDITION_NOTES[mr_id], mr_id)
+            if not e.get("deprecated"):
+                self.assertEqual(e.get("edition_notes", {}), r.edition_notes(e), mr_id)
 
     def test_markdown_names_the_edition(self):
         md = (Path(__file__).resolve().parent.parent / "registry" / "01-january.md").read_text(encoding="utf-8")

@@ -55,7 +55,7 @@ The full derivation rules, the manual feast overrides, the leap-day (February 29
 - [`registry/`](registry/) — human-readable per-month tables of the same data; unnumbered header eulogies show their entry number in parentheses.
 - [`i18n/`](i18n/) — the **subjects** of the eulogies: the saint, blessed or celebration each eulogy is directed to, in nominative display form per language. All locale files carry the identical complete key set (all 6,256 IDs); untranslated subjects are empty strings. `la.json` is fully filled — "Sancta Maria Dei Genetrix", "Sanctus Basilius" — including the deprecated IDs; `it.json` (4,825 filled) and `en.json` (6,158 filled) were extracted mechanically from the 2004 edition texts and reviewed against them (#25, #31); empty ones await translators. Subject and slug are tightly coupled and edition-independent: the eulogy text may change between editions while subject and canonical ID remain the same.
 - [`docs/canonicalization-report.md`](docs/canonicalization-report.md) — the canonicalization methodology, the special identity decisions, and the print-verification record.
-- [`scripts/extract_registry.py`](scripts/extract_registry.py) — the script that generates the registry from the (private) digitization workbook.
+- [`scripts/extract_registry.py`](scripts/extract_registry.py) — the script that rebuilds the registry from itself (IDs and placements) and the curated notes and generated data (typology, places, countries); `--check` verifies the committed files.
 
 ## Copyright and the absence of texts
 

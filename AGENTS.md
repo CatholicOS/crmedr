@@ -20,14 +20,14 @@ All IDs are **drafts pending committee review**. The `mr:` namespace prefix and 
 
 ## Architecture: the generation pipeline
 
-All generator scripts read **private source repositories** that hold the copyrighted texts, and emit only structural data. They cannot be run without those private sources.
+Most generator scripts read **private source repositories** that hold the copyrighted texts, and emit only structural data; they cannot be run without those private sources. `extract_registry.py` and `registry_places.py` read only this repository.
 
-1. **`scripts/extract_registry.py`** reads the private digitization workbook (`Roman Martyrology LA IT EN with IDs.xlsx`) and writes:
+1. **`scripts/extract_registry.py`** rebuilds the registry from the committed registry itself (#127; the private digitization workbook it was first extracted from is no longer a source) and writes:
    - `data/martyrology_ids.json` — machine-readable registry (current + deprecated entries, with a header carrying `entry_count`/`current_count`/`deprecated_count`)
    - `registry/MM-<month>.md` — human-readable per-month tables
-   - The workbook's country column is not used: each current entry's `country` comes from `scripts/registry_places.py` (step 7). The workbook is no longer a source of truth; removing it from the pipeline is #127.
-   - It also reads `data/deprecated_ids.json` as an *input* (deprecated IDs are produced by separate external alignment tooling, not by this script) and merges it into the output.
-   - Run: `python3 scripts/extract_registry.py /path/to/"Roman Martyrology LA IT EN with IDs.xlsx"` (requires `openpyxl`)
+   - **The registry is the source** of each current entry's `id`, placement (`month`, `day`, `entry`, `asterisk`, `unnumbered`, `also_on`), `editions` overrides and the `same_eulogy` links between current IDs: change an ID, a placement or an asterisk there, rerun the script, then carry the change downstream (see *Changing an ID, a placement or an asterisk* below). Every other key is derived on each run: `note` (`ENTRY_NOTES`), `edition_notes` (`EDITION_NOTES`, after the asterisk notes it derives from a CEI `editions` asterisk), `typology` (`data/typology.json`), `places` (`data/places.json`), `country` (`scripts/registry_places.py`, step 7). An unknown key in the registry fails the run.
+   - It also reads `data/deprecated_ids.json` as an *input* (deprecated IDs are produced by separate external alignment tooling, not by this script) and merges it into the output, recording each `same_eulogy` link back on its counterpart.
+   - Run: `python3 scripts/extract_registry.py` (stdlib only, no private sources); `--check` (run by the tests) fails when the committed files are out of date
 
 2. **`scripts/extract_subjects.py`** reads `data/martyrology_ids.json` plus the private `CatholicOS/martyrology-texts` repo and writes `i18n/{la,it,en}.json` — the *subject* (the saint/blessed/celebration each eulogy is directed to) in nominative display form per language.
    - Run: `python3 scripts/extract_subjects.py /path/to/martyrology-texts` (stdlib only)
@@ -58,17 +58,14 @@ All generator scripts read **private source repositories** that hold the copyrig
 ### Invariants the pipeline enforces (preserve these when editing)
 
 - **Every `i18n/*.json` file carries the identical complete key set** (all IDs, current + deprecated). Untranslated subjects are empty strings, never missing keys. `la.json` is fully filled; `it.json`/`en.json` are mechanically extracted and hand-reviewed (#25, #31); a rerun of `extract_subjects.py` overwrites curated values, so diff its output rather than committing it.
-- **IDs are unique** across current + deprecated (asserted at the end of `extract_registry.py`).
+- **IDs are unique** across current + deprecated (asserted by `extract_registry.py`).
 - **Deprecated IDs must not collide with current IDs** (asserted in `load_deprecated`); each has `deprecated: true` and an `attested_in` edition.
 - **Subject and slug are edition-independent and tightly coupled**: the eulogy text may change between editions, but the subject and canonical ID do not. The day is part of the identity (`MMDD` is the day an edition prints the eulogy); entry number, asterisk marker and unnumbered status, the position within the day, are per-edition attributes, *not* part of identity. A eulogy an edition prints on another day has its own ID there, linked by `same_eulogy`.
 
 ### Where hand-corrections live
 
-`extract_registry.py` holds the curated correction/override maps that encode the human canonicalization decisions on top of the raw workbook. When a slug, placement, or asterisk is wrong, the fix usually belongs in one of these constants (each with an explanatory comment), **not** in the generated output:
-- `ID_CORRECTIONS` — slugs the workbook coined against the rules (place-name-lead bugs, over-latinized surnames, ł/diacritic folding bugs, byname disambiguation)
-- `UNNUMBERED_LEADS` — `(month, day) → count` of drop-cap header eulogies (counted in numbering, printed without a number)
-- `PLACEMENT_OVERRIDES` / `ENTRY_NOTES` / `LATIN_ASTERISKED` / `LATIN_PLAIN` — where the Latin editio altera print differs from the Italian (CEI) edition the workbook digitized; the registry follows the **Latin print** and each carries a `note`
-- `PRINT_ONLY_ENTRIES` — entries in the Latin print but absent from the workbook
+- `data/martyrology_ids.json` itself — a slug, placement, asterisk or `editions` override that is wrong is fixed in the registry (the **Latin print** is the main placement; `editions` records where the CEI or the English differs), then `extract_registry.py` is rerun. A rename also goes to the other repositories (see below)
+- `ENTRY_NOTES` / `EDITION_NOTES` / `REVIEW_EDITION_NOTES` in `scripts/extract_registry.py` — a curator's note about the eulogy (`note`), or about one edition's text (`edition_notes`); deprecated IDs carry theirs in `data/deprecated_ids.json`
 - `TYPOLOGY_OVERRIDES` / `FEAST_IDS` in `scripts/extract_typology.py` — hand typology decisions and the explicit list of celebrations (feasts of the Lord and of Mary, etc.)
 - `data/places_curated.json` — body places, reviewed through `scripts/body_places.py`, and hand-entered places; `NOT_A_PLACE` / `LONG_LEAD_OK` in `scripts/extract_places.py`
 - `data/countries_curated.json` — the country of each current eulogy whose opening place the gazetteer does not resolve (code, `null`, or `{country, note}`); an entry leaves the file once its opening place is resolved. Every other country is fixed in `data/gazetteer.json`
@@ -77,10 +74,18 @@ All generator scripts read **private source repositories** that hold the copyrig
 - `data/gazetteer.json` — `reviewed` and `unresolved` entries are human decisions; `propose` never changes an existing key. Fix a wrong place by editing its entry (keeping the validation rules), or delete the key and rerun `propose` to queue it again. A wrong `auto` place that no general rule can catch goes into `FORCE_REVIEW` in `scripts/build_gazetteer.py`, with a comment.
 - `MARIAN_IDS` / `FEAST_PERSONS` / `GROUP_IDS` / `GROUP_HEADS` in `scripts/persons_text.py`, `data/persons_curated.json`, `data/persons_variants_curated.json` (a person's other names), and `FORCE_REVIEW` / `NAME_EQUIVALENTS` in `scripts/build_person_items.py` — the persons' hand decisions
 
-The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix; `ID_CORRECTIONS` patches slugs the old buggy fold already baked into the workbook.
+The diacritic-folding logic (`fold()` in `extract_subjects.py`, incl. `STROKE_LETTERS` for ł/ø/đ… which NFKD does not decompose) is the upstream fix for slugs the old buggy fold baked into the workbook; those slugs are corrected in the registry.
+
+### Changing an ID, a placement or an asterisk
+
+The registry is the only place such a change is decided; the consumers follow it. A placement or an asterisk changes only the registry here (then steps 3 and 4). A rename is merged in this order, since the regeneration in crmedr reads the texts by ID:
+1. **martyrology-texts**: rename the keys in the 2004 edition files (its `ID_CORRECTIONS` in `scripts/extract_texts.py` is the record).
+2. **crmedr**: rename the entry in `data/martyrology_ids.json` and every key that names the ID (`i18n/*.json`, the notes in `extract_registry.py`, `data/*_curated.json`, the `same_eulogy` links of `data/deprecated_ids.json`), rename the same keys in `data/typology.json` and `data/places.json` (the registry rebuild reads them by ID and fails when their keys are not the current IDs), run `python3 scripts/extract_registry.py`, then regenerate what reads the registry (`extract_typology.py`, `extract_places.py`, `registry_places.py`, `extract_persons.py`, `extract_mentions.py`; typology and places must come out otherwise identical) and run the tests.
+3. **martyrology-api**: the historical editions and `alignment.json` live there (re-align if needed); then pin `vendor/crmedr`, `vendor/texts` and the Dockerfile's `CRMEDR_REF` to the merge commits and publish a release.
+4. **martyrology-frontend**: `npm run snapshot-registry`, then deploy.
 
 ## Editing the data
 
-The JSON and Markdown files are **generated artifacts**. Prefer regenerating over hand-editing when you have the private sources. When you don't (the common case here), hand-edits to `data/*.json` and `registry/*.md` are acceptable but must keep the four invariants above intact and stay consistent with the correction maps in `extract_registry.py`. After any change touching IDs, verify the count header in `data/martyrology_ids.json` and the i18n key-set parity still hold. Run `python3 -m unittest discover -s tests` after changing any script.
+The JSON and Markdown files are **generated artifacts**. Prefer regenerating over hand-editing when you have the private sources. When you don't (the common case here), hand-edits to `data/*.json` are acceptable but must keep the four invariants above intact; edit the registry's own keys in `data/martyrology_ids.json` (or the notes in `extract_registry.py`) and rerun `python3 scripts/extract_registry.py` rather than editing `registry/*.md`, which it writes. After any change touching IDs, verify the count header in `data/martyrology_ids.json` and the i18n key-set parity still hold. Run `python3 -m unittest discover -s tests` after changing any script.
 
 The `docs/canonicalization-report.md` is the authoritative methodology record and print-verification log; update it when identity decisions or per-edition discrepancies change.
