@@ -23,7 +23,7 @@ def op(old="mr:0101-a", new="mr:0101-a-x", decision="accept", edited=None, cands
 
 
 def cs(*ops):
-    return {"schema": "crmedr-changeset/v1", "ops": list(ops)}
+    return {"schema": "crmedr-changeset/v1", "operations": list(ops)}
 
 
 def R(old, new, **labels):
@@ -301,6 +301,53 @@ class SubcommandsTest(unittest.TestCase):
         with self.assertRaises(SystemExit) as cm, contextlib.redirect_stdout(io.StringIO()):
             ar.main(["crmedr", str(decided), str(self.root)])
         self.assertEqual(cm.exception.code, 1)
+
+    def test_regenerators_run_in_order_with_texts_path(self):
+        fake = Fake()
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=fake, regenerate="/the/texts")
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual([c[1] for c in fake.calls],
+                         ["scripts/extract_registry.py", "scripts/extract_typology.py", "scripts/extract_places.py",
+                          "scripts/registry_places.py", "scripts/extract_persons.py", "scripts/extract_mentions.py", "-m"])
+        for c in fake.calls[1:3] + fake.calls[4:6]:
+            self.assertEqual(c[2], "/the/texts")
+        self.assertIn("--review", fake.calls[5])
+        self.assertFalse(Path(fake.calls[5][-1]).is_relative_to(self.root))
+
+    def test_regenerated_typology_that_differs_fails(self):
+        typology = self.root / "data" / "typology.json"
+
+        class Changing(Fake):
+            def __call__(self, cmd, **kw):
+                if cmd[1] == "scripts/extract_typology.py":
+                    typology.write_text("{}\n")
+                return super().__call__(cmd, **kw)
+
+        fake = Changing()
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=fake, regenerate="/the/texts")
+        self.assertFalse(rep.ok)
+        self.assertIn("data/typology.json changed after regeneration", rep.errors[0])
+        self.assertNotIn("scripts/extract_persons.py", [c[1] for c in fake.calls])
+
+    def test_regeneration_compares_with_the_rekeyed_file(self):
+        fake = Fake()  # leaves the re-keyed typology as it is: no difference
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=fake, regenerate="/the/texts")
+        self.assertEqual(rep.errors, [])
+
+    def test_texts_edition_folder_without_files_is_an_error(self):
+        for f in (self.texts / "data" / "editions" / ar.EDITIONS[2]).glob("*.json"):
+            f.unlink()
+        before = (self.texts / "data" / "editions" / ar.EDITIONS[0] / "01.json").read_bytes()
+        rep = ar.apply_texts(self.cs, self.texts, self.root, False)
+        self.assertFalse(rep.ok)
+        self.assertIn(ar.EDITIONS[2], rep.errors[0])
+        self.assertEqual((self.texts / "data" / "editions" / ar.EDITIONS[0] / "01.json").read_bytes(), before)
+
+    def test_main_missing_arguments_print_usage(self):
+        for argv in (["crmedr"], ["texts", "x.json"], ["crmedr", "--dry-run"], ["crmedr", "--regenerate"]):
+            with self.assertRaises(SystemExit) as cm:
+                ar.main(argv)
+            self.assertEqual(cm.exception.code, ar.__doc__)
 
     def test_render_lists_renames_and_next_steps(self):
         out = ar.render(ar.apply_crmedr(self.cs, self.root, False, run=Fake()), self.root)

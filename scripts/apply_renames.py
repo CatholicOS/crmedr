@@ -14,6 +14,7 @@ import json
 import re
 import subprocess
 import sys
+import tempfile
 from pathlib import Path
 from typing import NamedTuple
 
@@ -33,7 +34,7 @@ class Rename(NamedTuple):
 def renames(changeset):
     """The decided renames of a change-set, in file order."""
     out = []
-    for op in changeset.get("ops", []):
+    for op in changeset.get("operations", []):
         if op.get("op") != "rename":
             continue
         decision = op.get("decision")
@@ -179,9 +180,10 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
     targets = []
     for edition in EDITIONS:
         folder = texts_repo / "data" / "editions" / edition
-        targets += [(p, "json") for p in sorted(folder.glob("*.json"))]
-    if not targets:
-        return _report([], done, {}, [f"{texts_repo}: no 2004 edition files found"])
+        found = sorted(folder.glob("*.json"))
+        if not found:
+            return _report([], done, {}, [f"{folder}: no edition files found"])
+        targets += [(p, "json") for p in found]
     files = {}
     _rekey_all(targets, mapping, True, files, errors)  # every file parses first
     if not errors and not dry:
@@ -240,22 +242,34 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
     if dry:
         _pass(todo, mapping, repo_root, True, files, [])
         return _report(todo, done, files, errors, True)
+    _pass(todo, mapping, repo_root, False, files, errors)
+    # typology and places must come out of the regeneration as the re-key left them
     kept = {p: p.read_bytes() for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json")
             if p.exists()}
-    _pass(todo, mapping, repo_root, False, files, errors)
     commands = [["python3", "scripts/extract_registry.py"]]
+    scratch = tempfile.TemporaryDirectory() if regenerate else None
     if regenerate:
-        commands += [["python3", f"scripts/{name}.py", str(regenerate)] for name in ("extract_typology", "extract_places")]
+        texts = str(regenerate)
+        # extract_mentions writes a review change-set that quotes the texts: outside the repository
+        review = str(Path(scratch.name) / "mentions-review.json")
+        commands += [["python3", f"scripts/{name}.py", texts]
+                     for name in ("extract_typology", "extract_places")]
+        commands += [["python3", "scripts/registry_places.py"], ["python3", "scripts/extract_persons.py", texts],
+                     ["python3", "scripts/extract_mentions.py", texts, "--review", review]]
     commands.append(["python3", "-m", "unittest", "discover", "-s", "tests"])
-    if not errors:
-        for cmd in commands:
+    try:
+        for cmd in ([] if errors else commands):
             if run(cmd, cwd=repo_root).returncode != 0:
                 errors.append("failed: " + " ".join(cmd))
                 break
-            if regenerate and cmd[1] == "scripts/extract_places.py":
-                for p, before in kept.items():
-                    if p.read_bytes() != before:
-                        errors.append(f"{p.relative_to(repo_root)} changed after regeneration")
+            if cmd[1] == "scripts/extract_places.py":
+                changed = [str(p.relative_to(repo_root)) for p, before in kept.items() if p.read_bytes() != before]
+                if changed:
+                    errors.append(f"{', '.join(changed)} changed after regeneration")
+                    break
+    finally:
+        if scratch:
+            scratch.cleanup()
     return _report(todo, done, files, errors, True)
 
 
@@ -292,11 +306,11 @@ def main(argv):
             sys.exit(__doc__)
         regenerate = rest[i + 1]
         rest = rest[:i] + rest[i + 2:]
+    if len(rest) < (2 if cmd == "texts" else 1):
+        sys.exit(__doc__)
     changeset = json.loads(Path(rest[0]).read_text(encoding="utf-8"))
     rest = rest[1:]
     if cmd == "texts":
-        if not rest:
-            sys.exit(__doc__)
         texts_repo, rest = Path(rest[0]), rest[1:]
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
     if cmd == "texts":
