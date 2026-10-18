@@ -728,6 +728,17 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([e for _, e in left[bp.MAX_CONSECUTIVE_FAILURES:]], ["skipped: Wikidata unavailable"] * 2)
 
 
+    def test_propose_keeps_the_expanded_candidates(self):
+        old = self.op(candidates=[dict(cand("Q9", ["John"]), evidence=["human"], source="search"),
+                                  dict(cand("Q52161488", ["Jean Légo"]), evidence=[], source="companion:P3373")])
+        person = {k: old[k] for k in ("eulogy", "day", "typology", "subject", "name", "companions")}
+        person["where"] = "text"
+        op = bp.make_op(old["id"], person, {"failed": [], "candidates": [dict(cand("Q9", ["John"]), evidence=["human"])]}, old)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9", "Q52161488"])
+        self.assertEqual(op["candidates"][1]["source"], "companion:P3373")
+        self.assertIn("status", op["candidates"][1]["evidence"])  # recomputed
+
+
 class RecordMatchTest(unittest.TestCase):
     """expand takes a person's own record (name and n), else only the kind of the eulogy's only record."""
     Client = ExpandTest.Client

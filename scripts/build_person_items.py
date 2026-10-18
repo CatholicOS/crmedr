@@ -236,9 +236,17 @@ def new_changeset(operations):
 
 
 def make_op(key, person, result, old):
+    candidates = list(result["candidates"])
+    # The candidates `expand` added (companions' kin, the death day, titles) are not found by the
+    # name search again: they are kept after the search's own, with their evidence recomputed.
+    have = {c["wikidata"] for c in candidates}
+    for c in (old or {}).get("candidates", []):
+        if c.get("source") not in (None, "search") and c["wikidata"] not in have:
+            have.add(c["wikidata"])
+            candidates.append(dict(c, evidence=evidence(person, c)))
     op = {"op": "resolve_person", "id": key, **{k: person[k] for k in
           ("eulogy", "day", "typology", "subject", "name", "n", "also", "where", "companions") if k in person},
-          "failed": result["failed"], "candidates": result["candidates"]}
+          "failed": result["failed"], "candidates": candidates}
     for k in ("suggested", "reasoning", "confidence"):
         if old and k in old:
             op[k] = old[k]
