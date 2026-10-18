@@ -91,31 +91,35 @@ Counted over the 3,050 bare-name drafts (classes and the drafters' "place as pri
 - **Roles in the drafts' reasoning**: bishop 802, martyr 313, abbot 133, abbess 40, virgin 31, hermit 29,
   priest 28. A role is a strong discriminator only where it is rare for the name.
 
-### Proposed refinements (for the curator to decide)
+### Refinements (decided by the curator, 2026-10-18)
 
 - **R1. The printed adjective first.** When the 2004 Latin prints the place as an adjective of the
   subject or of the subject's role (*abbátis Condatiscénsis*, *epíscopi Pictaviénsis*), the slug takes that
-  adjective in the nominative, agreeing with the subject: `mr:0101-eugendus-condatiscensis`,
-  `mr:0114-hilarius-pictaviensis`. This is the print's own form and the conventional Latin name (*Hilarius
+  adjective in the nominative, agreeing with the subject (`-condatiscensis`, `-pictaviensis`; with R2 a
+  cleric also takes the role: `mr:0101-eugendus-abbas-condatiscensis`). This is the print's own form and the conventional Latin name (*Hilarius
   Pictaviensis*, *Gregorius Turonensis*); nothing is coined. The genitive stays the rule when the print
   gives a locative or genitive (*Tréviris* → `-trevirorum`). Consistency becomes "one form per place and
   per kind": all *Pictaviensis* subjects take `-pictaviensis`, so `mr:0113-hilarius` and
   `mr:0114-hilarius` still agree.
-  Open within R1: an adjective of a place noun, not of the person (*in monasterio Bodacensi*, *in pago
-  Dumbensi*): turn it into the subject's adjective (`-bodacensis`), or keep the genitive of the place?
-- **R2. Role as a discriminator of its own.** A role (*abbas*, *episcopus*, *eremita*, *papa*) is used when
-  the print gives no place, or when the role identifies the saint better than the place; a class word
-  (*martyr*, *virgo*, *confessor*) is used only when nothing else is printed, and is flagged weak. Role and
-  place together (`-abbas-condatiscensis`) only when name and place alone still collide. The curator
-  raised the alternative that role and place together may be clearer than either: the choice between
-  "place, role only on collision" and "role and place for every cleric" is the curator's.
+  An adjective of a place noun, not of the person (*in monasterio Bodacensi*, *in pago Dumbensi*), is
+  turned into the subject's adjective the same way (`mr:0127-marius-bodacensis`): decided.
+- **R2. Role and place for clerics.** A cleric's slug carries the role, in the nominative, before the
+  place: `mr:0101-eugendus-abbas-condatiscensis`, `mr:0114-hilarius-episcopus-pictaviensis`,
+  `mr:0113-agricius-episcopus-trevirorum` (decided). *Clerics* here (the builder's reading, to be confirmed
+  on the January cards): the ordained (*episcopus*, *archiepiscopus*, *presbyter*, *diaconus*,
+  *subdiaconus*) and the superiors of a monastery (*abbas*, *abbatissa*, *prior*), whose place is their see
+  or monastery. Others (*monachus*, *eremita*, *virgo*, lay people) take the place alone. The higher tiers
+  still win: a surname (rule 1), a cognomen or a twin's discriminator (`mr:0101-basilius-magnus`), and
+  `-papa` for popes, which already is a role. A cleric with no printed place takes the role alone
+  (`-episcopus`), flagged weak like a class word (*martyr*, *virgo*, *confessor*), which is used only when
+  nothing else is printed.
 - **R3. Labels follow the ID.** The Latin subject takes the discriminator the slug takes ("Sanctus
-  Eugendus Condatiscensis", or with R2 "Sanctus Eugendus abbas Condatiscensis"); the English and Italian
+  Eugendus abbas Condatiscensis"); the English and Italian
   subjects take the same discriminator in their language, read from their 2004 text where it prints one
   ("Saint Eugendus, abbot of Condat"; "Sant'Eugendo, abate di Condat"), as #61 did for 415 labels.
 
-Until the curator rules, the candidates include both forms (genitive and printed adjective; role, place,
-role and place) so that the January decisions also show which rule the curator prefers.
+The rename candidates follow these rules; the current draft stays among them so its decision is not
+lost, and the January decisions show where the rules need a further exception.
 
 ## The pipeline (per month)
 
@@ -215,17 +219,16 @@ Other months get suggestions only after the curator has seen the January figures
 
 The mention suggestions send only a card's own sentence or two of the CEI text (the curator's ruling,
 2026-10-15). Here the state needs the clause of the 2004 Latin (and, as a second witness, the English or
-Italian clause) about one subject: a sentence, never a whole eulogy or day. **This extends the earlier
-ruling to the Latin and English 2004 texts and needs the curator's confirmation** before any request is
-sent. Without it, the record check and place grammar questions are dropped, and Jev sees only the record
-(names, roles, places, no printed text).
+Italian clause) about one subject: a sentence, never a whole eulogy or day. The curator extended the
+earlier ruling to the Latin and English 2004 texts on these terms (2026-10-18).
 
 ## Components
 
 - `scripts/subject_records.py`: briefs for the research agents per batch of days, validation of their
-  output (offsets, grammar labels, categories), merge into `data/subject_records/MM.json`… The records
-  quote printed words, so they live in the private change-set directory, not in the public repo, unless the
-  curator decides otherwise.
+  output (offsets, grammar labels, categories), merge per month. The records and the change-sets built
+  from them quote printed words, so neither is committed to any repository: they are kept in the private
+  local work directory (`~/private-changesets/`) and the change-sets are uploaded by hand to the server's
+  `CHANGESETS_DIR`, curator-only, like every change-set that quotes the 2004 texts (decided).
 - `scripts/rename_candidates.py`: the rule-built rename and label candidates, with categories; reuses the
   PLACE map and `normalize.py` logic of the bare-name pass.
 - `scripts/wikidata.py`: `relatives(qid)`, `group_members(qid)`, `saints_by_death_day(month, day, names)`
@@ -255,9 +258,9 @@ validating the change-sets.
 The exact Score levels, the SPARQL narrowing, the agents' batch size, the order of candidates on a card,
 and file layout within the components above.
 
-## Open decisions for the curator
+## Curator's decisions (2026-10-18)
 
-1. R1: the printed adjective first? And for an adjective of a place noun (*in monasterio Bodacensi*)?
-2. R2: role only on collision, or role and place for every cleric (`-abbas-condatiscensis`)?
-3. Sending one clause of the 2004 Latin and English per card to TypeSafe.
-4. Whether the identity records stay private or are published as data.
+1. R1: yes, the printed adjective first, also for an adjective of a place noun.
+2. R2: role and place for clerics.
+3. One clause of the 2004 Latin and English per card may be sent to TypeSafe.
+4. The records and change-sets stay private: uploaded by hand to the server, never committed.
