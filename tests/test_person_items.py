@@ -641,6 +641,10 @@ class ExpandTest(unittest.TestCase):
         fits = bp._name_fits
         self.assertTrue(fits("Renatus Lego", "René Lego"))
         self.assertFalse(fits("Renatus Lego", "René Dupont"))
+        # Name particles are left out on both sides.
+        self.assertTrue(fits("Ioanna Maria de Maille", "Jeanne Marie Maille"))
+        self.assertTrue(fits("Gaspar de Bono", "Gaspar Bono"))
+        self.assertTrue(fits("Gaspar Bono", "Gaspar de Bono"))
 
     def companion_op(self, evidence):
         return self.op(id="mr:0101-ioannes-et-renatus-lego|Renatus Lego", name="Renatus Lego", companions=[],

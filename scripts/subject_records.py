@@ -160,9 +160,10 @@ def person_errors(record, persons):
 
 
 def check_records(records, texts, persons):
-    """One line per invalid record: an entry that is not an object, an id that is no eulogy, or
-    its check_record and person_errors errors."""
-    lines = []
+    """One line per invalid record: an entry that is not an object, an id that is no eulogy, a
+    second record of the same person (id and person_key), or its check_record and person_errors
+    errors."""
+    lines, seen = [], set()
     for i, r in enumerate(records):
         if not isinstance(r, dict):
             lines.append(f"records[{i}]: not an object")
@@ -170,6 +171,11 @@ def check_records(records, texts, persons):
         mrid = r.get("id")
         errors = (check_record(r, texts[mrid]) + person_errors(r, persons.get(mrid, []))
                   if isinstance(mrid, str) and mrid in texts else ["id: no such eulogy"])
+        pair = (mrid, person_key(r)) if isinstance(mrid, str) and isinstance(r.get("name"), str) else None
+        if pair in seen:
+            errors.append(f"a second record of {pair[1]}")
+        elif pair:
+            seen.add(pair)
         if errors:
             lines.append(f"{mrid} [{r.get('name')}]: " + "; ".join(errors))
     return lines
