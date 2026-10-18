@@ -443,17 +443,23 @@ def expand(review, items, records, client):
     record); `records`: the identity records by eulogy id. Decisions are not touched. Returns
     (op id, error) for each op whose lookups failed, left as it was."""
     not_processed = []
+    failures = 0
     for op in review["operations"]:
         record = person_record(records.get(op["eulogy"], []), op["name"], op.get("n"))
         if not record:
             continue
         for c in op["candidates"]:
             c.setdefault("source", "search")
+        if failures >= MAX_CONSECUTIVE_FAILURES:
+            not_processed.append((op["id"], "skipped: Wikidata unavailable"))
+            continue
         try:
             found = _expansion(op, record, items, client)
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
+            failures += 1
             continue
+        failures = 0
         have = {c["wikidata"] for c in op["candidates"]}
         added = []
         for c in found:
@@ -475,6 +481,11 @@ def _is_saint(c):
 TITLE_SOURCES = {"title", "curated"}
 
 
+def _appliable(c):
+    """An item a card may resolve to: a celebration's title item, or a human with a saint status."""
+    return bool(c) and (c.get("source") in TITLE_SOURCES or _is_saint(c))
+
+
 def _resolve(op, client):
     key, decision = op["id"], op.get("decision")
     edited, suggested = op.get("edited") or {}, op.get("suggested") or {}
@@ -492,9 +503,7 @@ def _resolve(op, client):
     if not qid or not QID.match(qid):
         return None, f"{key}: no item chosen"
     on_op = next((c for c in candidates if c["wikidata"] == qid), None)
-    if on_op and on_op.get("source") in TITLE_SOURCES:
-        return {"wikidata": qid, "status": "reviewed"}, None  # a celebration's title item
-    if not _is_saint(on_op or client.person(qid)):
+    if not _appliable(on_op or client.person(qid)):
         return None, f"{key}: {qid} is not a human with a saint or blessed status"
     return {"wikidata": qid, "status": "reviewed"}, None
 
@@ -550,7 +559,7 @@ def verify_suggestions(review, client):
                 continue
             op["candidates"].append(dict(c, evidence=evidence(op, c)))
         c = next(c for c in op["candidates"] if c["wikidata"] == qid)
-        if not _is_saint(c):
+        if not _appliable(c):
             errors.append(f"{op['id']}: suggested {qid} is not a human with a saint or blessed status")
     return errors
 

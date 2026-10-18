@@ -665,6 +665,18 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(got["candidates"][0]["source"], "search")
 
 
+    def test_consecutive_failures_stop_the_lookups(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        ops = [self.op(id=f"mr:0101-ioannes-et-renatus-lego|Ioannes#{i}") for i in range(bp.MAX_CONSECUTIVE_FAILURES + 2)]
+        review = bp.new_changeset(ops)
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": "Q2652595", "status": "reviewed"}}}
+        records = {"mr:0101-ioannes-et-renatus-lego": [{"id": "mr:0101-ioannes-et-renatus-lego", "name": "Ioannes",
+                                                         "kind": "person"}]}
+        left = bp.expand(review, items, records, client)
+        self.assertEqual(len(left), len(ops))
+        self.assertEqual([e for _, e in left[bp.MAX_CONSECUTIVE_FAILURES:]], ["skipped: Wikidata unavailable"] * 2)
+
+
 class RecordMatchTest(unittest.TestCase):
     """expand takes a person's own record (name and n), else only the kind of the eulogy's only record."""
     Client = ExpandTest.Client
@@ -725,6 +737,15 @@ class TitleApplyTest(unittest.TestCase):
     def test_a_non_human_from_the_search_is_still_refused(self):
         with self.assertRaisesRegex(ValueError, "not a human with a saint"):
             self.apply("search")
+
+
+    def test_verify_suggestions_accepts_a_title_item(self):
+        title = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), source="curated")
+        op = {"id": "mr:0101-maria-dei-genetrix|Maria", "candidates": [title], "confidence": "high",
+              "suggested": {"wikidata": "Q208542"}}
+        self.assertEqual(bp.verify_suggestions(bp.new_changeset([op]), FakeClient()), [])
+        op = dict(op, candidates=[dict(title, source="search")])
+        self.assertTrue(bp.verify_suggestions(bp.new_changeset([op]), FakeClient()))
 
 
 class ExportTest(unittest.TestCase):

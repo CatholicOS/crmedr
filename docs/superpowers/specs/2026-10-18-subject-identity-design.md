@@ -49,7 +49,10 @@ bare name.
 - No new rules decided by the pipeline. Code applies the rules as they stand; proposed refinements wait
   for the curator.
 - IDs that are not bare are not renamed here. Their subjects get a record and a Wikidata match only.
-- No suggestion is applied by itself, and the exported change-sets keep their current shape.
+- No suggestion is applied by itself, and the exported change-sets keep their current shape. This
+  concerns Jev's suggestions and the expanded candidates: `propose`'s existing automatic matches (exactly
+  one candidate passing every rule of the evidence bar, `2026-10-08-persons-design.md`) are unchanged, and
+  `expand` never makes a match automatic: its candidates only join `resolve_person` cards the curator decides.
 
 ## Anti-goals
 
@@ -209,7 +212,10 @@ for the companions) and are kept.
 The curator decides January in full (renames and person cards). Then:
 
 - per question, agreement with the curator against Jev's probability, and a threshold per question chosen
-  from it (as `suggest_mentions.py evaluate` does);
+  from it (as `suggest_mentions.py evaluate` does). January is the **calibration** set: its agreement
+  figures are in-sample. The thresholds are then checked on decisions the calibration did not see (the
+  first later month the curator decides, scored before its suggestions are shown) before they are relied
+  on;
 - for Wikidata, the **coverage** of the expansions: how many of the items the curator typed by hand are
   now among the candidates;
 - for renames, which category the curator chose, per situation: this is the evidence for R1 and R2.

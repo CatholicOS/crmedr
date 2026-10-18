@@ -159,6 +159,22 @@ def person_errors(record, persons):
     return []
 
 
+def check_records(records, texts, persons):
+    """One line per invalid record: an entry that is not an object, an id that is no eulogy, or
+    its check_record and person_errors errors."""
+    lines = []
+    for i, r in enumerate(records):
+        if not isinstance(r, dict):
+            lines.append(f"records[{i}]: not an object")
+            continue
+        mrid = r.get("id")
+        errors = (check_record(r, texts[mrid]) + person_errors(r, persons.get(mrid, []))
+                  if isinstance(mrid, str) and mrid in texts else ["id: no such eulogy"])
+        if errors:
+            lines.append(f"{mrid} [{r.get('name')}]: " + "; ".join(errors))
+    return lines
+
+
 def person_record(records, name, n=None):
     """The identity record of one person among a eulogy's records: the one with its name and n
     (as person_key keys it, "Maria#2"); else, when the eulogy has exactly one record, that record's
@@ -222,15 +238,11 @@ def main(argv):
     texts, persons = loaded[1], loaded[4]
     doc = json.loads(path.read_text(encoding="utf-8"))
     records = doc["records"] if isinstance(doc, dict) else doc
-    bad = 0
-    for r in records:
-        errors = (check_record(r, texts[r["id"]]) + person_errors(r, persons.get(r["id"], []))
-                  if r.get("id") in texts else ["id: no such eulogy"])
-        if errors:
-            bad += 1
-            print(f"{r.get('id')} [{r.get('name')}]: " + "; ".join(errors))
-    print(f"{len(records) - bad} of {len(records)} records valid")
-    return 1 if bad else 0
+    lines = check_records(records, texts, persons)
+    for line in lines:
+        print(line)
+    print(f"{len(records) - len(lines)} of {len(records)} records valid")
+    return 1 if lines else 0
 
 
 if __name__ == "__main__":

@@ -8,7 +8,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import mentions_jev as mj  # noqa: E402
 import subject_jev as sj  # noqa: E402
 
-LA = ("In monasterio Condatiscensi in Iura, sancti Eugéndi, abbátis Condatiscénsis, qui vitam duxit austeram; "
+# Invented Latin, not the 2004 text: only the two cited forms are real.
+LA = ("Memoria Eugéndi, viri sancti, qui abbátis Condatiscénsis munus gessit; "
       "obiit senex. Item commemoratio aliorum.")
 EUGENDUS = {"id": "mr:0101-eugendus", "name": "Eugendus", "kind": "person", "feminine": False, "surname": None,
             "roles": [{"role": "abbas", "printed": "abbátis", "occurrence": 0}],
@@ -47,12 +48,11 @@ def item(choice, p=0.92):
 class ClauseTest(unittest.TestCase):
     def test_the_sentence_holding_the_first_cited_form(self):
         self.assertEqual(sj.clause(LA, EUGENDUS),
-                         "In monasterio Condatiscensi in Iura, sancti Eugéndi, abbátis Condatiscénsis, "
-                         "qui vitam duxit austeram;")
+                         "Memoria Eugéndi, viri sancti, qui abbátis Condatiscénsis munus gessit;")
 
     def test_without_cited_forms_the_sentence_of_the_name(self):
         record = dict(EUGENDUS, roles=[], places=[])
-        self.assertTrue(sj.clause(LA, record).startswith("In monasterio"))
+        self.assertTrue(sj.clause(LA, record).startswith("Memoria Eugéndi"))
         self.assertEqual(sj.clause("Primo. Item sancti Eugendi.", record), "Item sancti Eugendi.")
 
     def test_at_most_400_characters_around_the_form(self):
@@ -72,7 +72,7 @@ class ClauseTest(unittest.TestCase):
 
 class RenameRequestTest(unittest.TestCase):
     def test_rename_request_shape(self):
-        body = sj.rename_request(OP, EUGENDUS, "…sancti Eugéndi, abbátis Condatiscénsis…", "")
+        body = sj.rename_request(OP, EUGENDUS, "…qui abbátis Condatiscénsis munus gessit…", "")
         self.assertEqual(body["model"], mj.MODEL)
         self.assertEqual(body["questions"]["pick"]["type"], "choice")
         self.assertEqual(set(body["questions"]["pick"]["criteria"]), {"c0", "c1"})
@@ -126,9 +126,19 @@ class RenameSuggestionTest(unittest.TestCase):
         self.assertEqual((s["decision"], s["flags"]), ("accept", ["grammar:places[0]:locative"]))
 
 
+    def test_malformed_answers_give_no_suggestion(self):
+        for pick in ({"type": "choice", "choice": ["c0"], "probabilities": {"c0": 0.9}},
+                     {"type": "choice", "choice": "c0", "probabilities": [0.9]},
+                     {"type": "choice", "choice": "c0", "probabilities": {"c0": "high"}},
+                     {"type": "choice", "choice": "c0", "probabilities": {"c0": True}}):
+            self.assertIsNone(sj.rename_suggestion(OP, {"pick": pick}))
+        s = sj.rename_suggestion(OP, {"pick": dict(PICK_C0, confidence="sure")})
+        self.assertEqual((s["decision"], s["confidence"]), ("accept", 0.0))
+
+
 class PersonRequestTest(unittest.TestCase):
     def test_person_request_shape(self):
-        body = sj.person_request(POP, EUGENDUS, "sancti Eugéndi, abbátis", [{"name": "Lupicinus", "wikidata": "Q9"}])
+        body = sj.person_request(POP, EUGENDUS, "Memoria Eugéndi", [{"name": "Lupicinus", "wikidata": "Q9"}])
         self.assertEqual(body["model"], mj.MODEL)
         self.assertEqual(set(body["questions"]["item"]["criteria"]), {"q0", "q1", "none"})
         self.assertEqual(set(body["questions"]["kind"]["criteria"]),

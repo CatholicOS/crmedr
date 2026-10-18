@@ -7,7 +7,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import subject_records as sr  # noqa: E402
 from body_places import half_month  # noqa: E402
 
-TEXT = "In monastério Condatiscénsi in Gállia, sancti Eugéndi, abbátis Condatiscénsis, ..."
+# Invented Latin, not the 2004 text: only the two cited forms are real.
+TEXT = "Memoria Eugéndi, viri sancti, qui abbátis Condatiscénsis munus gessit."
 
 
 def rec(**kw):
@@ -92,6 +93,13 @@ class Persons(unittest.TestCase):
                          {"id": "mr:0101-eugendus", "name": "Lupicinus", "kind": "person"})
         self.assertIsNone(sr.person_record([first, second], "Lupicinus"))
         self.assertIsNone(sr.person_record([], "Lupicinus"))
+
+
+    def test_check_records_reports_malformed_entries(self):
+        texts, persons = {"mr:0101-eugendus": TEXT}, {"mr:0101-eugendus": [{"name": "Eugendus"}]}
+        lines = sr.check_records([rec(), "x", rec(id=["mr:0101-eugendus"]), rec(id="mr:0101-nemo")], texts, persons)
+        self.assertEqual(lines, ["records[1]: not an object", "['mr:0101-eugendus'] [Eugendus]: id: no such eulogy",
+                                 "mr:0101-nemo [Eugendus]: id: no such eulogy"])
 
 
 class Brief(unittest.TestCase):

@@ -22,7 +22,7 @@ FIELD_MIN = 0.5  # a record field Jev doubts below this goes to the curator flag
 
 GRAMMAR_CRITERIA = {
     "adjective-person": ("An adjective agreeing with the subject or with the subject's role "
-                         "(\"sancti Eugendi, abbatis Condatiscensis\")."),
+                         "(\"abbatis Condatiscensis\", of an abbot)."),
     "adjective-noun": ("An adjective agreeing with another noun, such as a monastery, a church or a city "
                        "(\"in monasterio Bodacensi\")."),
     "locative": "A locative: the place where the subject died, was buried or lived (\"Romae\", \"Mediolani\").",
@@ -234,11 +234,17 @@ def _choice(answer, ids):
     """(pick, probability, confidence) of a choice answer naming one of `ids`; None otherwise."""
     if not isinstance(answer, dict) or answer.get("type") != "choice":
         return None
-    pick = answer.get("choice")
-    probability = (answer.get("probabilities") or {}).get(pick)
-    if pick not in ids or probability is None:
+    pick, probabilities = answer.get("choice"), answer.get("probabilities")
+    if not isinstance(pick, str) or pick not in ids or not isinstance(probabilities, dict):
         return None
-    return pick, round(probability, 4), round(answer.get("confidence", 0.0), 4)
+    probability, confidence = probabilities.get(pick), answer.get("confidence")
+    if not _number(probability):
+        return None
+    return pick, round(probability, 4), round(confidence if _number(confidence) else 0.0, 4)
+
+
+def _number(x):
+    return isinstance(x, (int, float)) and not isinstance(x, bool)
 
 
 def rename_suggestion(op, answers, record=None, model=MODEL):
