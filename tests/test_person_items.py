@@ -218,6 +218,13 @@ class NameMatchReviewTest(unittest.TestCase):
                              ("Caecilia", "Cecilia"), ("Augustinus", "Augustine")]:
             self.assertTrue(bp.name_matches(latin, [other]), (latin, other))
 
+    def test_english_ius_as_y_and_antonius(self):
+        for latin, other in [("Hilarius", "Hilary of Poitiers"), ("Gregorius", "Saint Gregory"), ("Antonius", "Anthony"),
+                             ("Antonius", "Antoine"), ("Gregorius Nyssenus", "Gregory Nyssenus")]:
+            self.assertTrue(bp.name_matches(latin, [other.replace(" of Poitiers", "")]), (latin, other))
+        for latin, other in [("Marius", "Mary"), ("Lucius", "Lucy"), ("Hilarius", "Hilda")]:
+            self.assertFalse(bp.name_matches(latin, [other]), (latin, other))
+
 
 class LagBreakerTest(unittest.TestCase):
     def test_propose_stops_early_after_consecutive_failures_and_leaves_the_rest_unprocessed(self):

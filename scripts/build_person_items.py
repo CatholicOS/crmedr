@@ -51,6 +51,7 @@ TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant",
 # Latin first names whose vernacular forms share no prefix with them.
 NAME_EQUIVALENTS = {
     "renatus": {"rene", "renato"},
+    "antonius": {"anthony", "antoine"},
     "ioannes": {"john", "giovanni", "juan", "jean", "joao", "johannes", "jan"},
     "ioanna": {"jeanne", "giovanna", "juana", "joan", "joanna", "johanna", "jane"},
     "iacobus": {"james", "giacomo", "jacques", "jaime", "diego", "jacob", "jakob"},
@@ -117,7 +118,13 @@ def _same(latin, other):
     if latin == other:
         return True
     stem = latin_stem(latin)
-    return bool(stem) and any(other == stem[0] + v for v in stem[1])
+    if not stem:
+        return False
+    # English -ius as -y (Hilarius: Hilary, Gregorius: Gregory), on stems of four letters or more:
+    # Marius is not Mary, Lucius not Lucy.
+    if latin.endswith("ius") and len(stem[0]) >= 4 and other == stem[0] + "y":
+        return True
+    return any(other == stem[0] + v for v in stem[1])
 
 
 def name_matches(name, candidate_names):

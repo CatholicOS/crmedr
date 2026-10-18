@@ -196,8 +196,11 @@ def summarize(raw):
 
 
 def _date(claims, prop):
-    """The first dated value of `prop` as YYYY, YYYY-MM or YYYY-MM-DD by its precision."""
-    for c in claims.get(prop, []):
+    """The first dated value of `prop` as YYYY, YYYY-MM or YYYY-MM-DD by its precision: preferred
+    statements first, deprecated ones never (a day added as preferred beside a year-only one wins)."""
+    ranked = sorted((c for c in claims.get(prop, []) if c.get("rank") != "deprecated"),
+                    key=lambda c: c.get("rank") != "preferred")
+    for c in ranked:
         v = _value(c)
         if isinstance(v, dict) and "time" in v:
             t, p = v["time"].lstrip("+"), v.get("precision", 9)
