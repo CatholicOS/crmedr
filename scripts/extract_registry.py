@@ -5289,6 +5289,10 @@ def write_json(entries, deprecated, repo_root):
 def write_markdown(entries, repo_root):
     reg_dir = repo_root / "registry"
     reg_dir.mkdir(parents=True, exist_ok=True)
+    expected = {f"{i:02d}-{name.lower()}.md" for i, name in enumerate(MONTH_NAMES_EN, 1)}
+    for path in reg_dir.glob("*.md"):  # a table this script no longer writes
+        if path.name not in expected:
+            path.unlink()
     for month_index, month_name in enumerate(MONTH_NAMES_EN, 1):
         month_entries = [e for e in entries if e["month"] == month_index]
         lines = [

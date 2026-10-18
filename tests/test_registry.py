@@ -209,7 +209,12 @@ class RegistrySourceTest(unittest.TestCase):
             d = Path(d)
             copy_registry(d)
             (d / "registry" / "13-extra.md").write_text("x\n", encoding="utf-8")
+            (d / "registry" / "notes.txt").write_text("x\n", encoding="utf-8")
             self.assertEqual(r.main(["--check", str(d)]), 1)
+            self.assertEqual(r.main([str(d)]), 0)  # the rebuild removes it
+            self.assertFalse((d / "registry" / "13-extra.md").exists())
+            self.assertTrue((d / "registry" / "notes.txt").exists())
+            self.assertEqual(r.main(["--check", str(d)]), 0)
 
     def test_typology_and_places_without_a_country(self):
         e = {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1, "asterisk": False,
