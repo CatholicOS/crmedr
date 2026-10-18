@@ -101,6 +101,15 @@ class Persons(unittest.TestCase):
         self.assertEqual(lines, ["records[1]: not an object", "['mr:0101-eugendus'] [Eugendus]: id: no such eulogy",
                                  "mr:0101-nemo [Eugendus]: id: no such eulogy"])
 
+    def test_check_records_reports_a_second_record_of_the_same_person(self):
+        texts = {"mr:0101-eugendus": TEXT}
+        persons = {"mr:0101-eugendus": [{"name": "Eugendus"}, {"name": "Eugendus", "n": 2}]}
+        lines = sr.check_records([rec(), rec(n=2), rec()], texts, persons)
+        self.assertEqual(lines, ["mr:0101-eugendus [Eugendus]: a second record of Eugendus"])
+
+    def test_n_null_is_the_first_person(self):
+        self.assertEqual(sr.person_key({"name": "Eugendus", "n": None}), "Eugendus")
+
 
 class Brief(unittest.TestCase):
     def test_half_month(self):

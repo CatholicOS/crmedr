@@ -127,12 +127,17 @@ def _same(latin, other):
     return any(other == stem[0] + v for v in stem[1])
 
 
+# Name particles, left out when names are compared word by word (Latin; vernacular).
+LATIN_PARTICLES = {"de", "a", "ab", "la", "y"}
+ITEM_PARTICLES = {"de", "di", "da", "la", "y", "van", "von"}
+
+
 def name_matches(name, candidate_names):
     """The Latin name and one of the item's names have the same words, pair by pair
     (see _same): Paulus Miki = Paul Miki."""
-    latin = [t for t in _tokens(name) if t not in {"de", "a", "ab", "la", "y"}]
+    latin = [t for t in _tokens(name) if t not in LATIN_PARTICLES]
     for other in candidate_names:
-        words = [t for t in _tokens(other) if t not in {"de", "di", "da", "la", "y", "van", "von"}]
+        words = [t for t in _tokens(other) if t not in ITEM_PARTICLES]
         if latin and len(words) == len(latin) and all(_same(a, b) for a, b in zip(latin, words)):
             return True
     return False
@@ -420,8 +425,10 @@ def _given_names(op):
 
 def _name_fits(latin, other):
     """A Latin name and an item's name: the first words are the same name (_same), and the other
-    words of the Latin name appear among the item's (Renatus Lego = René Lego, not René Dupont)."""
-    latin, words = _tokens(latin), _tokens(other)
+    words of the Latin name appear among the item's (Renatus Lego = René Lego, not René Dupont);
+    name particles are left out on both sides."""
+    latin = [t for t in _tokens(latin) if t not in LATIN_PARTICLES]
+    words = [t for t in _tokens(other) if t not in ITEM_PARTICLES]
     if not latin or not words or not _same(latin[0], words[0]):
         return False
     return all(any(_same(w, o) for o in words[1:]) for w in latin[1:])
