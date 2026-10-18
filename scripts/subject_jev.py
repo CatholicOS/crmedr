@@ -13,7 +13,6 @@ Standard library only.
 
 import re
 
-from build_person_items import _required
 from gazetteer_text import fold
 from mentions_jev import MODEL
 from subject_records import GRAMMAR
@@ -289,18 +288,15 @@ def person_request(op, record, la_clause, companions):
 
 
 def preselected(op):
-    """The item a person card's accept stands for (ruling R-c): verify-suggestions' `suggested`,
-    else the first candidate whose evidence passes every rule, else None."""
-    if (op.get("suggested") or {}).get("wikidata"):
-        return op["suggested"]["wikidata"]
-    need = _required({"typology": op.get("typology")})
-    return next((c["wikidata"] for c in op.get("candidates", []) if all(r in c.get("evidence", []) for r in need)),
-                None)
+    """The item a person card's accept applies, exactly as build_person_items._resolve applies it:
+    verify-suggestions' `suggested`, else the first candidate; None without either."""
+    cands = op.get("candidates") or []
+    return (op.get("suggested") or {}).get("wikidata") or (cands[0]["wikidata"] if cands else None)
 
 
 def person_suggestion(op, answers, model=MODEL):
-    """The person card's suggestion: accept (Jev picks the preselected item), edit (another candidate,
-    with its wikidata and source), reject (none, or kind not_identifiable); None when the pick is not
+    """The person card's suggestion: accept (Jev picks the item an accept applies), edit (another
+    candidate); both carry the picked `wikidata` and its `source`; reject (none, or kind not_identifiable); None when the pick is not
     a request id."""
     answers = answers or {}
     kind = _choice(answers.get("kind"), KIND_CRITERIA)
@@ -319,6 +315,5 @@ def person_suggestion(op, answers, model=MODEL):
     if pick == "none":
         return {"decision": "reject", "reason": "Jev: none of the candidates is this person", **base}
     cand = op["candidates"][ids.index(pick)]
-    if cand["wikidata"] == preselected(op):
-        return {"decision": "accept", **base}
-    return {"decision": "edit", "wikidata": cand["wikidata"], "source": cand.get("source", "search"), **base}
+    decision = "accept" if cand["wikidata"] == preselected(op) else "edit"
+    return {"decision": decision, "wikidata": cand["wikidata"], "source": cand.get("source", "search"), **base}

@@ -4,7 +4,7 @@
 `suggest` writes `jev` on every card whose answer reaches the threshold (the picked option's
 probability), and removes it from the others: on a rename {decision: accept|edit, new_id for an
 edit, probability, confidence, model, flags}; on a person card {decision: accept|edit|reject,
-wikidata and source for an edit, reason for a reject, kind, probability, confidence, model}. A
+wikidata and source on accept and edit, reason for a reject, kind, probability, confidence, model}. A
 record field Jev doubts writes {flags: ["record:places[0]", ...], model} and no suggestion: the
 curator checks the record first. `jev` is kept apart from `suggested` (verify-suggestions' own,
 which the curator's tool and `apply` read). Nothing here writes `decision` or `edited`.
@@ -191,9 +191,9 @@ def suggested_outcome(op, s):
     """What taking Jev's suggestion would apply, in curator_outcome's terms."""
     if s["decision"] == "reject":
         return None
-    if s["decision"] == "edit":
-        return s.get("new_id") or s.get("wikidata")
-    return op.get("new_id") if family(op) == "rename" else sj.preselected(op)
+    if family(op) == "person":
+        return s["wikidata"]
+    return s["new_id"] if s["decision"] == "edit" else op.get("new_id")
 
 
 def evaluate_ops(ops, data, records, client):

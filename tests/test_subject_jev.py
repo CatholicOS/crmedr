@@ -133,21 +133,32 @@ class PersonRequestTest(unittest.TestCase):
 
 
 class PersonSuggestionTest(unittest.TestCase):
-    def test_preselected(self):
-        self.assertEqual(sj.preselected(POP), "Q1")  # the first candidate passing every rule
+    def test_preselected_is_what_an_accept_applies(self):
+        self.assertEqual(sj.preselected(POP), "Q1")  # candidates[0], as _resolve applies an accept
         self.assertEqual(sj.preselected(dict(POP, suggested={"wikidata": "Q2"})), "Q2")
-        self.assertIsNone(sj.preselected(dict(POP, candidates=POP["candidates"][1:])))
+        self.assertIsNone(sj.preselected(dict(POP, candidates=[])))
 
-    def test_accept_and_edit(self):
+    def test_accept_and_edit_carry_the_item(self):
         s = sj.person_suggestion(POP, {"item": item("q0"), "kind": KIND_PERSON})
-        self.assertEqual((s["decision"], s["probability"]), ("accept", 0.92))
+        self.assertEqual((s["decision"], s["wikidata"], s["source"], s["probability"]),
+                         ("accept", "Q1", "search", 0.92))
         s = sj.person_suggestion(POP, {"item": item("q1"), "kind": KIND_PERSON})
         self.assertEqual((s["decision"], s["wikidata"], s["source"]), ("edit", "Q2", "relatives"))
 
-    def test_no_preselection_makes_every_pick_an_edit(self):
-        op = dict(POP, candidates=[dict(POP["candidates"][0], evidence=["human"])])
+    def test_the_first_passing_candidate_is_not_preselected(self):
+        # candidates[0] fails a rule and candidates[1] passes them all: an accept applies
+        # candidates[0], so picking the passing one is an edit.
+        op = dict(POP, candidates=[dict(POP["candidates"][0], wikidata="Q5", evidence=["human"]),
+                                   dict(POP["candidates"][1], evidence=["human", "status", "name", "death"])])
+        s = sj.person_suggestion(op, {"item": item("q1"), "kind": KIND_PERSON})
+        self.assertEqual((s["decision"], s["wikidata"]), ("edit", "Q2"))
         s = sj.person_suggestion(op, {"item": item("q0"), "kind": KIND_PERSON})
-        self.assertEqual((s["decision"], s["wikidata"]), ("edit", "Q1"))
+        self.assertEqual((s["decision"], s["wikidata"]), ("accept", "Q5"))
+
+    def test_suggested_is_what_an_accept_applies(self):
+        op = dict(POP, suggested={"wikidata": "Q2"})
+        self.assertEqual(sj.person_suggestion(op, {"item": item("q1"), "kind": KIND_PERSON})["decision"], "accept")
+        self.assertEqual(sj.person_suggestion(op, {"item": item("q0"), "kind": KIND_PERSON})["decision"], "edit")
 
     def test_unknown_pick_ignored(self):
         self.assertIsNone(sj.person_suggestion(POP, {"item": {"type": "choice", "choice": "q9", "probabilities": {"q9": 1}, "confidence": 1},
