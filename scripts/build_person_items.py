@@ -16,7 +16,11 @@ Usage:
   python3 build_person_items.py verify-suggestions [repo_root]   (network)
   python3 build_person_items.py expand <records.json> [repo_root]  (network)
   python3 build_person_items.py apply <exported.json> [repo_root]
+  python3 build_person_items.py export <MM> <out.json> [repo_root]
   python3 build_person_items.py check [repo_root]
+
+export writes the review ops of one month's eulogies as a change-set of their own, for
+suggest_subjects.py; like every change-set Jev's suggestions go on, outside any git work tree.
 
 Standard library only. Reads no private sources.
 """
@@ -27,7 +31,9 @@ import re
 import sys
 from pathlib import Path
 
+from body_places import _in_a_repository
 from persons_text import name_key, person_key
+from subject_records import person_record
 from wikidata import SAINT_STATUSES, Wikidata, WikidataError
 
 EDITION = "martyrologium_romanum_2004"
@@ -413,11 +419,12 @@ def _expansion(op, record, items, client):
 
 def expand(review, items, records, client):
     """Add candidates from the companions' kin, the saints of the death day and the titles to each
-    op of a record's eulogy; `records` by eulogy id (or by op id, which wins). Decisions are not
-    touched. Returns (op id, error) for each op whose lookups failed, left as it was."""
+    op with a record (subject_records.person_record: its own, else the kind of its eulogy's only
+    record); `records`: the identity records by eulogy id. Decisions are not touched. Returns
+    (op id, error) for each op whose lookups failed, left as it was."""
     not_processed = []
     for op in review["operations"]:
-        record = records.get(op["id"]) or records.get(op["eulogy"])
+        record = person_record(records.get(op["eulogy"], []), op["name"], op.get("n"))
         if not record:
             continue
         for c in op["candidates"]:
@@ -444,6 +451,10 @@ def _is_saint(c):
     return bool(c) and c.get("human") and bool(SAINT_STATUSES & set(c.get("statuses", [])))
 
 
+# The routes whose candidates are items of any kind (a feast, a title: Theotokos), not persons.
+TITLE_SOURCES = {"title", "curated"}
+
+
 def _resolve(op, client):
     key, decision = op["id"], op.get("decision")
     edited, suggested = op.get("edited") or {}, op.get("suggested") or {}
@@ -460,8 +471,10 @@ def _resolve(op, client):
         suggested.get("wikidata") or (candidates[0]["wikidata"] if candidates else None))
     if not qid or not QID.match(qid):
         return None, f"{key}: no item chosen"
-    chosen = next((c for c in candidates if c["wikidata"] == qid), None) or client.person(qid)
-    if not _is_saint(chosen):
+    on_op = next((c for c in candidates if c["wikidata"] == qid), None)
+    if on_op and on_op.get("source") in TITLE_SOURCES:
+        return {"wikidata": qid, "status": "reviewed"}, None  # a celebration's title item
+    if not _is_saint(on_op or client.person(qid)):
         return None, f"{key}: {qid} is not a human with a saint or blessed status"
     return {"wikidata": qid, "status": "reviewed"}, None
 
@@ -587,22 +600,40 @@ def _read(path, default):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
+def month_changeset(review, month):
+    """The review ops of the eulogies of one month (MM), as a change-set of their own."""
+    return new_changeset([op for op in review["operations"] if op["eulogy"][3:5] == month])
+
+
+def export(argv):
+    if len(argv) < 2 or not re.fullmatch(r"0[1-9]|1[0-2]", argv[0]):
+        sys.exit(__doc__)
+    month, out = argv[0], Path(argv[1])
+    repo_root = Path(argv[2]) if len(argv) > 2 else Path(__file__).resolve().parent.parent
+    if _in_a_repository(out, repo_root):
+        sys.exit(f"{out}: Jev's suggestions go on this change-set; write it outside any git work tree")
+    changeset = month_changeset(_read(repo_root / "data" / "person_items_review.json", new_changeset([])), month)
+    out.write_text(json.dumps(changeset, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"{len(changeset['operations'])} person cards in {out}")
+
+
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "expand", "apply", "check"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "expand", "apply", "export", "check"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
+    if cmd == "export":
+        return export(rest)
     exported = None
     if cmd in ("apply", "expand"):
         if not rest:
             sys.exit(__doc__)
         exported = json.loads(Path(rest[0]).read_text(encoding="utf-8"))
         rest = rest[1:]
-        if cmd == "expand":  # records: a list, or {"records": [...]}; one per eulogy, or per (id, name)
+        if cmd == "expand":  # records: a list, or {"records": [...]}; one per person (name, n)
             records = exported["records"] if isinstance(exported, dict) else exported
             exported = {}
             for r in records:
-                exported.setdefault(r["id"], r)
-                exported[f"{r['id']}|{r['name']}"] = r
+                exported.setdefault(r["id"], []).append(r)
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
     data = repo_root / "data"
     entries = _read(data / "martyrology_ids.json", {})["entries"]

@@ -13,8 +13,10 @@ Usage:
 brief writes, for a half-month (a: days 1-15, b: 16-31), the Latin, Italian and English
 2004 texts, the Latin subject, the persons and their decided Wikidata items of each
 current eulogy. It quotes the 2004 edition, so it is written outside any git work tree
-(brief refuses a path inside one). check prints the errors of each record and exits 1
-if there are any; it writes nothing.
+(brief refuses a path inside one). check prints the errors of each record (against its
+Latin text, and its name against the eulogy's persons in data/persons.json) and exits 1 if
+there are any; it writes nothing. A record names one person: by `name`, and `n` when the
+eulogy repeats the name (persons_text.person_key).
 """
 import json
 import re
@@ -25,6 +27,7 @@ from body_places import _in_a_repository, half_month
 from extract_places import EDITION_EN, EDITION_IT, load_persons
 from extract_typology import latin_texts, load_texts
 from gazetteer_text import fold
+from persons_text import person_key
 
 CLERIC_ROLES = ("episcopus", "archiepiscopus", "presbyter", "diaconus", "subdiaconus", "abbas", "abbatissa", "prior")
 
@@ -85,6 +88,10 @@ def _locate(label, item, la_text):
 def check_record(record, la_text):
     """Error strings of an identity record against its Latin text; empty when valid."""
     errors = []
+    for k in ("roles", "places"):
+        if record.get(k) is not None and not isinstance(record[k], list):
+            errors.append(f"{k}: not a list")
+            record = {**record, k: None}
     if not isinstance(record.get("id"), str) or not record["id"]:
         errors.append("id missing")
     if not isinstance(record.get("name"), str) or not record["name"]:
@@ -97,6 +104,9 @@ def check_record(record, la_text):
         errors.append("surname: not a string or null")
     for i, r in enumerate(record.get("roles") or []):
         label = f"roles[{i}]"
+        if not isinstance(r, dict):
+            errors.append(f"{label}: not an object")
+            continue
         if r.get("role") not in ROLE_FORMS:
             errors.append(f"{label}: role {r.get('role')}")
         errors += (found := _locate(label, r, la_text))
@@ -104,6 +114,9 @@ def check_record(record, la_text):
             errors.append(f"{label}: {r['printed']} is not a form of {r['role']}")
     for i, p in enumerate(record.get("places") or []):
         label = f"places[{i}]"
+        if not isinstance(p, dict):
+            errors.append(f"{label}: not an object")
+            continue
         if p.get("kind") not in PLACE_KINDS:
             errors.append(f"{label}: kind {p.get('kind')}")
         if p.get("grammar") not in GRAMMAR:
@@ -134,6 +147,29 @@ def check_record(record, la_text):
         if record.get(k) is not None and not isinstance(record[k], str):
             errors.append(f"{k}: not a string or null")
     return errors
+
+
+def person_errors(record, persons):
+    """Errors of a record's name against its eulogy's persons (data/persons.json): the name, and
+    its n when the eulogy repeats it, must be one of them."""
+    if record.get("name") not in {p.get("name") for p in persons}:
+        return [f"name: {record.get('name')} is not a person of this eulogy in data/persons.json"]
+    if person_key(record) not in {person_key(p) for p in persons}:
+        return [f"n: {person_key(record)} is not a person of this eulogy in data/persons.json"]
+    return []
+
+
+def person_record(records, name, n=None):
+    """The identity record of one person among a eulogy's records: the one with its name and n
+    (as person_key keys it, "Maria#2"); else, when the eulogy has exactly one record, that record's
+    kind alone (it may be another person's: nothing else of it applies); else None."""
+    key = person_key({"name": name, **({"n": n} if n else {})})
+    found = next((r for r in records if person_key(r) == key), None)
+    if found is not None:
+        return found
+    if len(records) == 1:
+        return {"id": records[0].get("id"), "name": name, "kind": records[0].get("kind")}
+    return None
 
 
 def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries, items):
@@ -182,12 +218,14 @@ def main(argv):
         return 0
     path, texts_repo = Path(argv[1]), Path(argv[2])
     repo_root = Path(argv[3]) if len(argv) > 3 else here
-    texts = _load(repo_root, texts_repo)[1]
+    loaded = _load(repo_root, texts_repo)
+    texts, persons = loaded[1], loaded[4]
     doc = json.loads(path.read_text(encoding="utf-8"))
     records = doc["records"] if isinstance(doc, dict) else doc
     bad = 0
     for r in records:
-        errors = check_record(r, texts.get(r.get("id"), "")) if r.get("id") in texts else ["id: no such eulogy"]
+        errors = (check_record(r, texts[r["id"]]) + person_errors(r, persons.get(r["id"], []))
+                  if r.get("id") in texts else ["id: no such eulogy"])
         if errors:
             bad += 1
             print(f"{r.get('id')} [{r.get('name')}]: " + "; ".join(errors))

@@ -112,6 +112,18 @@ class SuggestTest(unittest.TestCase):
             self.assertEqual(ops[0]["jev"]["probability"], 0.95)
 
 
+class RecordForTest(unittest.TestCase):
+    def test_a_person_card_takes_its_own_record_else_only_the_kind(self):
+        self.assertIs(ss.record_for(POP, RECORDS), EUGENDUS)
+        other = dict(POP, id="mr:0101-eugendus|Lupicinus", name="Lupicinus")
+        self.assertEqual(ss.record_for(other, RECORDS),
+                         {"id": "mr:0101-eugendus", "name": "Lupicinus", "kind": "person"})
+        second = dict(EUGENDUS, n=2, death_year=520)
+        records = ss.index_records([EUGENDUS, second])
+        self.assertIs(ss.record_for(dict(POP, n=2), records), second)
+        self.assertIsNone(ss.record_for(other, records))
+
+
 class EvaluateTest(unittest.TestCase):
     def test_curator_outcomes(self):
         self.assertEqual(ss.curator_outcome(dict(OP, decision="accept")), OP["new_id"])

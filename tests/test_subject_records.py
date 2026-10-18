@@ -66,6 +66,34 @@ class CheckRecord(unittest.TestCase):
         self.assertIn("abbatem", sr.ROLE_FORMS["abbas"])
 
 
+    def test_non_object_roles_and_places_are_reported(self):
+        errs = sr.check_record(rec(roles=["abbas"], places=[None]), TEXT)
+        self.assertIn("roles[0]: not an object", errs)
+        self.assertIn("places[0]: not an object", errs)
+        self.assertIn("roles: not a list", sr.check_record(rec(roles="abbas"), TEXT))
+
+
+class Persons(unittest.TestCase):
+    PERSONS = [{"name": "Eugendus"}, {"name": "Maria"}, {"name": "Maria", "n": 2}]
+
+    def test_the_name_must_be_a_person_of_the_eulogy(self):
+        self.assertEqual(sr.person_errors(rec(), self.PERSONS), [])
+        self.assertEqual(sr.person_errors(rec(name="Lupicinus"), self.PERSONS),
+                         ["name: Lupicinus is not a person of this eulogy in data/persons.json"])
+        self.assertEqual(sr.person_errors(rec(name="Maria", n=2), self.PERSONS), [])
+        self.assertEqual(sr.person_errors(rec(name="Maria", n=3), self.PERSONS),
+                         ["n: Maria#3 is not a person of this eulogy in data/persons.json"])
+
+    def test_person_record(self):
+        first, second = rec(name="Maria", death_year=300), rec(name="Maria", n=2, death_year=304)
+        self.assertIs(sr.person_record([first, second], "Maria", 2), second)
+        self.assertIs(sr.person_record([second, first], "Maria"), first)
+        self.assertEqual(sr.person_record([rec()], "Lupicinus"),
+                         {"id": "mr:0101-eugendus", "name": "Lupicinus", "kind": "person"})
+        self.assertIsNone(sr.person_record([first, second], "Lupicinus"))
+        self.assertIsNone(sr.person_record([], "Lupicinus"))
+
+
 class Brief(unittest.TestCase):
     def test_half_month(self):
         entries = [{"id": "mr:0101-a"}, {"id": "mr:0101-b", "same_eulogy": ["mr:0202-b"]},

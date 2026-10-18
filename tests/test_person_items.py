@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 import sys
 import tempfile
@@ -563,8 +565,8 @@ class ExpandTest(unittest.TestCase):
         review = bp.new_changeset([op])
         items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": "Q2652595", "status": "reviewed"}}
                  } if items is None else items
-        records = {op["eulogy"]: record or {"id": op["eulogy"], "name": op["name"], "kind": "person",
-                                            "death_year": 1642}}
+        records = {op["eulogy"]: [record or {"id": op["eulogy"], "name": op["name"], "kind": "person",
+                                             "death_year": 1642}]}
         return bp.expand(review, items, records, client), review["operations"][0]
 
     def test_sibling_found(self):
@@ -650,3 +652,89 @@ class ExpandTest(unittest.TestCase):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
         _, got = self.run_expand(self.op(), client)
         self.assertEqual(got["candidates"][0]["source"], "search")
+
+
+class RecordMatchTest(unittest.TestCase):
+    """expand takes a person's own record (name and n), else only the kind of the eulogy's only record."""
+    Client = ExpandTest.Client
+
+    def op(self, name, n=None):
+        mrid = "mr:0101-ioannes-et-renatus-lego"
+        return {"op": "resolve_person", "id": f"{mrid}|{name}" + (f"#{n}" if n else ""), "eulogy": mrid,
+                "day": "01-01", "typology": "dies_natalis", "subject": "Ioannes et Renatus Lego", "name": name,
+                **({"n": n} if n else {}), "companions": [], "failed": [], "candidates": [],
+                "decision": None, "edited": None}
+
+    def years(self, op, records):
+        client = self.Client()
+        bp.expand(bp.new_changeset([op]), {}, {op["eulogy"]: records}, client)
+        return [year for _, _, _, year in client.calls]
+
+    def test_another_persons_record_lends_no_death_year(self):
+        renatus = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "Renatus Lego", "kind": "person",
+                   "death_year": 1642}
+        self.assertEqual(self.years(self.op("Ioannes"), [renatus]), [None])  # its kind only
+        self.assertEqual(self.years(self.op("Renatus Lego"), [renatus]), [1642])
+
+    def test_a_repeated_name_takes_the_record_with_its_n(self):
+        first = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "Ioannes", "kind": "person", "death_year": 300}
+        second = dict(first, n=2, death_year=304)
+        self.assertEqual(self.years(self.op("Ioannes", 2), [first, second]), [304])
+        self.assertEqual(self.years(self.op("Ioannes"), [second, first]), [300])
+
+    def test_no_record_of_its_own_among_several(self):
+        a = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "A", "kind": "person"}
+        self.assertEqual(self.years(self.op("Ioannes"), [a, dict(a, name="B")]), [])
+
+
+class TitleApplyTest(unittest.TestCase):
+    INDEX = {"mr:0101-maria-dei-genetrix|Maria": {"eulogy": "mr:0101-maria-dei-genetrix", "name": "Maria",
+                                                  "day": "01-01", "typology": "festum", "where": "text",
+                                                  "subject": "Sollemnitas sanctae Dei Genetricis Mariae",
+                                                  "companions": []}}
+
+    def apply(self, source, decision="accept", edited=None):
+        title = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), source=source)
+        op = {"op": "resolve_person", "id": "mr:0101-maria-dei-genetrix|Maria",
+              "eulogy": "mr:0101-maria-dei-genetrix", "name": "Maria", "failed": [], "candidates": [title],
+              "decision": decision, "edited": edited}
+        items, review = {}, bp.new_changeset([dict(op, decision=None)])
+        bp.apply_decisions(items, review, bp.new_changeset([op]), self.INDEX, FakeClient())
+        return items, review
+
+    def test_a_celebration_card_applies_its_title_item(self):
+        items, review = self.apply("curated")
+        self.assertEqual(items, {"mr:0101-maria-dei-genetrix": {"Maria": {"wikidata": "Q208542",
+                                                                          "status": "reviewed"}}})
+        self.assertEqual(review["operations"], [])
+        self.assertEqual(bp.validate(items, self.INDEX), [])
+        items, _ = self.apply("title", "edit", {"wikidata": "Q208542"})
+        self.assertEqual(items["mr:0101-maria-dei-genetrix"]["Maria"]["wikidata"], "Q208542")
+
+    def test_a_non_human_from_the_search_is_still_refused(self):
+        with self.assertRaisesRegex(ValueError, "not a human with a saint"):
+            self.apply("search")
+
+
+class ExportTest(unittest.TestCase):
+    def test_one_months_ops(self):
+        review = bp.new_changeset([{"id": "mr:0101-a|A", "eulogy": "mr:0101-a"},
+                                   {"id": "mr:0201-b|B", "eulogy": "mr:0201-b"},
+                                   {"id": "mr:0131-c|C", "eulogy": "mr:0131-c"}])
+        with tempfile.TemporaryDirectory() as root, tempfile.TemporaryDirectory() as away:
+            (Path(root) / "data").mkdir()
+            (Path(root) / "data" / "person_items_review.json").write_text(json.dumps(review))
+            out = Path(away) / "01.json"
+            with contextlib.redirect_stdout(io.StringIO()):
+                bp.main(["export", "01", str(out), root])
+            doc = json.loads(out.read_text())
+        self.assertEqual(doc["schema"], bp.SCHEMA)
+        self.assertEqual([op["id"] for op in doc["operations"]], ["mr:0101-a|A", "mr:0131-c|C"])
+
+    def test_refused_inside_a_work_tree_and_a_bad_month(self):
+        here = Path(__file__).resolve()
+        with self.assertRaisesRegex(SystemExit, "outside any git work tree"):
+            bp.main(["export", "01", str(here.parent / "out.json")])
+        with self.assertRaises(SystemExit):
+            bp.main(["export", "13", "/nowhere/out.json"])
+        self.assertFalse((here.parent / "out.json").exists())

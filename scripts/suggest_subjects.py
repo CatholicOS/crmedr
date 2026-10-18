@@ -35,6 +35,7 @@ from body_places import _in_a_repository
 from extract_places import EDITION_EN, EDITION_IT
 from extract_typology import latin_texts, load_texts
 from rename_candidates import _record_of
+from subject_records import person_record
 
 # Until the January evaluation (the spec's "5. Evaluation"): the threshold of the mention suggestions.
 DEFAULT_MIN_CONFIDENCE = 0.9
@@ -72,11 +73,12 @@ def family(op):
 
 def record_for(op, records):
     """A rename's record: the one whose name is the slug's token (as rename_candidates builds it);
-    a person card's: the one of its eulogy with its name."""
+    a person card's: its own (name and n), else the kind of its eulogy's only record
+    (subject_records.person_record, as build_person_items.expand matches it)."""
     if family(op) == "rename":
         group = records.get(op["id"])
         return _record_of(op["id"], group) if group else None
-    return next((r for r in records.get(op["eulogy"], []) if r.get("name") == op["name"]), None)
+    return person_record(records.get(op["eulogy"], []), op["name"], op.get("n"))
 
 
 def companions(op, items):
