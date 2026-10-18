@@ -206,6 +206,12 @@ class Candidates(unittest.TestCase):
         c = rc.candidates(r, "mr:0730-petrus", "Sanctus Petrus", CTX)
         self.assertEqual((c[0]["new_id"], c[0]["category"]), ("mr:0730-petrus-chrysologus", "epithet"))
 
+    def test_epithet_labels_leave_english_and_italian_to_the_curator(self):
+        r = rec("Basilius", cognomen={"value": "Magnus", "source": "text"})
+        c = rc.candidates(r, "mr:0101-basilius", "Sanctus Basilius", CTX._replace(twins={}))
+        self.assertEqual((c[0]["category"], c[0]["labels"]),
+                         ("epithet", {"la": "Sanctus Basilius Magnus", "en": None, "it": None}))
+
     def test_papa(self):
         c = rc.candidates(POPE, "mr:0120-fabianus", "Sanctus Fabianus", CTX)
         self.assertEqual([(x["new_id"], x["category"]) for x in c], [("mr:0120-fabianus-papa", "papa")])
@@ -331,6 +337,24 @@ class Changeset(unittest.TestCase):
         op = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])], old)["operations"][0]
         self.assertEqual((op["new_id"], op["class"], op["confidence"]), ("mr:0101-severus-x", "place-genitive", "low"))
 
+    def test_draft_categories(self):
+        self.assertEqual(rc.draft_category("epithet,low,weak-epithet", "mr:0101-x-magnus"), "epithet")
+        self.assertEqual(rc.draft_category("place-form", "mr:0101-x-pictaviensis"), "place-adjective")
+        self.assertEqual(rc.draft_category("align-existing", "mr:0101-x-ancyrana"), "place-adjective")
+        self.assertEqual(rc.draft_category("place-form", "mr:0101-x-pictavorum"), "place-genitive")
+        self.assertEqual(rc.draft_category("low", "mr:0101-x-metarum"), "place-genitive")
+        self.assertEqual(rc.draft_category("twin,low", "mr:0101-x-magnus"), "twin")
+        self.assertEqual(rc.draft_category("surname,non-latin", "mr:0101-x-miki"), "surname")
+        self.assertEqual(rc.draft_category("low", "mr:0101-x-papa"), "papa")
+        self.assertEqual(rc.draft_category("low", "mr:0101-x-episcopus"), "role")
+        self.assertEqual(rc.draft_category(None, "mr:0101-x-alexandrinus"), "place-adjective")
+
+    def test_a_draft_keeps_its_class(self):
+        old = {"mr:0101-severus": {"new_id": "mr:0101-severus-metarum", "class": "low", "subject_la": "S"}}
+        op = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])], old)["operations"][0]
+        self.assertEqual((op["candidates"][0]["category"], op["candidates"][0]["draft_class"]),
+                         ("place-genitive", "low"))
+
     def test_none_skipped(self):
         import contextlib
         import io
@@ -339,6 +363,11 @@ class Changeset(unittest.TestCase):
             cs = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])])
         self.assertEqual(cs["operations"], [])
         self.assertIn("mr:0101-severus", err.getvalue())
+
+    def test_cli_old_without_a_value(self):
+        with self.assertRaises(SystemExit) as e:
+            rc.main(["build", "in.json", "out.json", "--old"])
+        self.assertIn("usage: rename_candidates.py build", str(e.exception))
 
     def test_cli_refuses_repository(self):
         with self.assertRaises(SystemExit) as e:

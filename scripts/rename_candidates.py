@@ -20,7 +20,7 @@ from typing import NamedTuple
 
 from body_places import _in_a_repository
 from extract_subjects import ROMAN, fold, it_label
-from subject_records import CLERIC_ROLES, DECIDED
+from subject_records import CLERIC_ROLES, DECIDED, ROLE_FORMS
 
 WEAK_ROLES = {"martyr", "virgo", "confessor"}
 BIBLICAL_TITLES = ("propheta", "patriarcha", "iudex", "levita")
@@ -31,6 +31,10 @@ SCHEMA = "crmedr-changeset/v1"
 EDITION = "martyrologium_romanum_2004"
 CATEGORIES = ("surname", "place-genitive", "place-adjective", "role", "role-place", "epithet", "twin",
               "papa", "biblical-title")
+
+# The bare-name drafts' place classes: the place form the draft's slug took.
+DRAFT_PLACE_CLASSES = ("place-form", "align-existing")
+ADJECTIVE_ENDING = re.compile(r"(ensis|anus|ana|inus|ina)$")
 
 # folded nominative -> the corpus genitive, from the bare-name pass's place map
 PLACE_GENITIVES = {
@@ -164,7 +168,8 @@ def _build(record, mrid, subject_la, ctx):
     cog = record.get("cognomen")
     if cog and cog.get("value"):
         v = cog["value"]
-        add(slug(v), "epithet", _labels(mrid, subject_la, ctx, v, f" {v}", f" {v}"),
+        # The printed Latin cognomen is not an English or Italian one ("Saint Basil Magnus"): the curator fills them.
+        add(slug(v), "epithet", {"la": f"{subject_la} {v}" if subject_la else None, "en": None, "it": None},
             f"cognomen {v} ({cog.get('source')})")
     place = _primary_place(record)
 
@@ -256,6 +261,23 @@ def _record_of(mrid, group):
     return next((r for r in group if slug(r.get("name") or "") == mrid[8:]), group[0])
 
 
+def draft_category(cls, new_id):
+    """The category of a bare-name draft: the first part of its class (a comma list: "epithet,low,
+    weak-epithet") that is one; a place class takes the form of the slug's last token; with none,
+    the last token tells: a role ("papa" is its own), a place adjective, else a place genitive."""
+    last = new_id.rsplit("-", 1)[-1]
+    place = "place-adjective" if ADJECTIVE_ENDING.search(last) else "place-genitive"
+    for part in (cls or "").split(","):
+        part = part.strip()
+        if part in CATEGORIES:
+            return part
+        if part in DRAFT_PLACE_CLASSES:
+            return place
+    if last in ROLE_FORMS:
+        return "papa" if last == "papa" else "role"
+    return place
+
+
 def _confidence(cands):
     first = cands[0]
     if first["basis"] == "bare-name draft" or first["weak"] or (first["category"] in ("place-genitive", "role-place")
@@ -280,9 +302,9 @@ def build_changeset(records, ctx, subjects_la, old=None):
         cands = candidates(_record_of(mrid, by_id[mrid]), mrid, subject_la, ctx)
         draft = old.get(mrid)
         if draft and draft.get("new_id") and all(c["new_id"] != draft["new_id"] for c in cands):
-            cat = draft.get("class")
-            cands.append({"new_id": draft["new_id"], "category": cat if cat in CATEGORIES else "place-genitive",
-                          "weak": False, "labels": {"la": draft.get("subject_la"), "en": None, "it": None},
+            cands.append({"new_id": draft["new_id"], "category": draft_category(draft.get("class"), draft["new_id"]),
+                          "draft_class": draft.get("class"), "weak": False,
+                          "labels": {"la": draft.get("subject_la"), "en": None, "it": None},
                           "basis": "bare-name draft", "certain": False})
         if not cands:
             print(f"{mrid}: no candidates and no draft, skipped", file=sys.stderr)
@@ -311,12 +333,15 @@ def load_old(paths):
 def main(argv):
     argv = list(argv)
     olds = []
+    usage = __doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]"
     while "--old" in argv:
         i = argv.index("--old")
+        if i + 1 == len(argv):
+            sys.exit(usage)
         olds.append(argv[i + 1])
         del argv[i:i + 2]
     if len(argv) < 3 or argv[0] != "build":
-        sys.exit(__doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]")
+        sys.exit(usage)
     records_path, out = Path(argv[1]), Path(argv[2])
     repo_root = Path(argv[3]) if len(argv) > 3 else Path(__file__).resolve().parent.parent
     if _in_a_repository(out, repo_root):
