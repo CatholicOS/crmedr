@@ -229521,6 +229521,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 657,
+          "end": 670,
+          "check": "0de1ebfd",
+          "name": "Matthias Feng De",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 672,
           "end": 691,
           "check": "651e73d2",
@@ -234155,6 +234166,17 @@
           "end": 170,
           "check": "70cd4c14",
           "name": "Maria Rosa a Sancto Andrea Laye",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 172,
+          "end": 198,
+          "check": "b93208bf",
+          "name": "Dorothea a Corde Mariæ",
           "qid": null
         },
         {
@@ -262503,6 +262525,50 @@
           "end": 56,
           "check": "a32f3cd5",
           "name": "Antonius a Sancto Bonaventura",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 24,
+          "end": 44,
+          "check": "aa62678e",
+          "name": "Dominicus de Nagasakio",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 86,
+          "end": 109,
+          "check": "34ff2098",
+          "name": "Thomas a Sancto Hyacintho",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 112,
+          "end": 135,
+          "check": "26f5ca41",
+          "name": "Antonius a Sancto Dominico",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 176,
+          "end": 187,
+          "check": "16b8aae6",
+          "name": "Lucia Ludovica",
           "qid": null
         },
         {
@@ -306867,10 +306933,10 @@
           "where": {
             "footnote": 1
           },
-          "start": 54,
-          "end": 62,
-          "check": "244696cb",
-          "name": "Ioannes",
+          "start": 73,
+          "end": 78,
+          "check": "f7f929a4",
+          "name": "Paulus",
           "n": 2,
           "qid": null
         },
@@ -306879,11 +306945,10 @@
           "where": {
             "footnote": 1
           },
-          "start": 73,
-          "end": 78,
-          "check": "f7f929a4",
-          "name": "Paulus",
-          "n": 2,
+          "start": 80,
+          "end": 86,
+          "check": "e09ae97b",
+          "name": "Photinus",
           "qid": null
         },
         {
@@ -306980,18 +307045,6 @@
           "where": {
             "footnote": 1
           },
-          "start": 213,
-          "end": 220,
-          "check": "19619bd7",
-          "name": "Georgius",
-          "n": 2,
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
           "start": 222,
           "end": 228,
           "check": "9bcbdfa0",
@@ -307075,7 +307128,7 @@
           "end": 343,
           "check": "244696cb",
           "name": "Ioannes",
-          "n": 3,
+          "n": 7,
           "qid": null
         },
         {
@@ -307111,7 +307164,7 @@
           "end": 369,
           "check": "19619bd7",
           "name": "Georgius",
-          "n": 3,
+          "n": 6,
           "qid": null
         },
         {
@@ -307177,23 +307230,11 @@
           "where": {
             "footnote": 1
           },
-          "start": 432,
-          "end": 440,
-          "check": "244696cb",
-          "name": "Ioannes",
-          "n": 4,
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
           "start": 451,
           "end": 458,
           "check": "19619bd7",
           "name": "Georgius",
-          "n": 4,
+          "n": 7,
           "qid": null
         },
         {
