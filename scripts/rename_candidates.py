@@ -10,12 +10,15 @@ place, others the place alone; a twin's discriminator, a surname, a cognomen and
 R3: each candidate carries the la, en and it subjects it implies. Nothing is
 decided here: the candidates are a curator's choices.
 """
+import datetime
 import json
 import re
+import sys
 from collections import defaultdict
 from pathlib import Path
 from typing import NamedTuple
 
+from body_places import _in_a_repository
 from extract_subjects import ROMAN, fold, it_label
 from subject_records import CLERIC_ROLES, DECIDED
 
@@ -24,6 +27,10 @@ BIBLICAL_TITLES = ("propheta", "patriarcha", "iudex", "levita")
 # a place's kinds, the one a slug takes first: the see or the monastery, then death, burial, cult
 PLACE_ORDER = ("see", "monastery", "death", "burial", "cult", "origin")
 MAX_CANDIDATES = 4
+SCHEMA = "crmedr-changeset/v1"
+EDITION = "martyrologium_romanum_2004"
+CATEGORIES = ("surname", "place-genitive", "place-adjective", "role", "role-place", "epithet", "twin",
+              "papa", "biblical-title")
 
 # folded nominative -> the corpus genitive, from the bare-name pass's place map
 PLACE_GENITIVES = {
@@ -237,3 +244,92 @@ def candidates(record, mrid, subject_la, ctx):
 def rejected(record, mrid, ctx):
     """(new ID, reason) of the candidates the hard rules drop, for the report."""
     return _build(record, mrid, ctx.labels.get("la", {}).get(mrid), ctx)[1]
+
+
+def is_bare(mrid):
+    """A slug of one name token after mr:MMDD-, no hyphen."""
+    return "-" not in mrid[8:]
+
+
+def _record_of(mrid, group):
+    """The first-named subject's record: the one whose name is the slug's token; else the first."""
+    return next((r for r in group if slug(r.get("name") or "") == mrid[8:]), group[0])
+
+
+def _confidence(cands):
+    first = cands[0]
+    if first["basis"] == "bare-name draft" or first["weak"] or (first["category"] in ("place-genitive", "role-place")
+                                         and not first["certain"]):
+        return "low"
+    return "medium" if len(cands) > 1 else "high"
+
+
+def build_changeset(records, ctx, subjects_la, old=None):
+    """One rename op per bare ID in the records, its candidates and the earlier bare-name
+    draft (old: mrid -> that draft's op) merged in; an ID with no candidates and no draft is
+    skipped, listed on stderr."""
+    old = old or {}
+    by_id = defaultdict(list)
+    for r in records:
+        by_id[r["id"]].append(r)
+    ops = []
+    for mrid in sorted(by_id):
+        if not is_bare(mrid):
+            continue
+        subject_la = subjects_la.get(mrid) or ""
+        cands = candidates(_record_of(mrid, by_id[mrid]), mrid, subject_la, ctx)
+        draft = old.get(mrid)
+        if draft and draft.get("new_id") and all(c["new_id"] != draft["new_id"] for c in cands):
+            cat = draft.get("class")
+            cands.append({"new_id": draft["new_id"], "category": cat if cat in CATEGORIES else "place-genitive",
+                          "weak": False, "labels": {"la": draft.get("subject_la"), "en": None, "it": None},
+                          "basis": "bare-name draft", "certain": False})
+        if not cands:
+            print(f"{mrid}: no candidates and no draft, skipped", file=sys.stderr)
+            continue
+        first = cands[0]
+        ops.append({"op": "rename", "id": mrid, "new_id": first["new_id"], "uid": "subject:" + mrid,
+                    "class": first["category"], "confidence": _confidence(cands),
+                    "candidates": cands,
+                    "reasoning": "; ".join(f"also: {c['new_id']} ({c['category']})" for c in cands[1:]),
+                    "subject_la": subject_la, "decision": None})
+    return {"schema": SCHEMA, "generated_by": "scripts/rename_candidates.py",
+            "generated_at": datetime.date.today().isoformat(),
+            "base": {"edition": EDITION, "registry": "data/martyrology_ids.json"}, "operations": ops}
+
+
+def load_old(paths):
+    """The bare-name drafts of these change-sets by ID; a later file wins."""
+    old = {}
+    for path in paths:
+        for op in json.loads(Path(path).read_text(encoding="utf-8")).get("operations", []):
+            if op.get("op") == "rename" and op.get("new_id"):
+                old[op["id"]] = op
+    return old
+
+
+def main(argv):
+    argv = list(argv)
+    olds = []
+    while "--old" in argv:
+        i = argv.index("--old")
+        olds.append(argv[i + 1])
+        del argv[i:i + 2]
+    if len(argv) < 3 or argv[0] != "build":
+        sys.exit(__doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]")
+    records_path, out = Path(argv[1]), Path(argv[2])
+    repo_root = Path(argv[3]) if len(argv) > 3 else Path(__file__).resolve().parent.parent
+    if _in_a_repository(out, repo_root):
+        sys.exit(f"{out}: a change-set quotes the 2004 edition; write it outside the repository")
+    records = json.loads(records_path.read_text(encoding="utf-8"))
+    if isinstance(records, dict):
+        records = records["records"]
+    ctx = load_context(repo_root)
+    changeset = build_changeset([r for r in records if r["id"] in ctx.ids], ctx, ctx.labels["la"], load_old(olds))
+    out.write_text(json.dumps(changeset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    print(f"{len(changeset['operations'])} rename operations in {out}")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

@@ -289,5 +289,62 @@ class LoadContext(unittest.TestCase):
         self.assertEqual(ctx.labels["it"], {"mr:0101-basilius": "it"})
 
 
+class Changeset(unittest.TestCase):
+    def build(self, records, old=None, ctx=CTX):
+        return rc.build_changeset(records, ctx, LABELS["la"], old)
+
+    def test_eugendus_with_old_draft(self):
+        old = {"mr:0101-eugendus": {"id": "mr:0101-eugendus", "new_id": "mr:0101-eugendus-condatisci",
+                                    "class": "place-genitive", "subject_la": "Sanctus Eugendus Condatisci"}}
+        cs = self.build([dict(EUGENDUS, id="mr:0101-eugendus")], old)
+        self.assertEqual(cs["schema"], "crmedr-changeset/v1")
+        self.assertEqual(cs["base"], {"edition": "martyrologium_romanum_2004", "registry": "data/martyrology_ids.json"})
+        op = cs["operations"][0]
+        self.assertEqual((op["new_id"], op["class"], op["uid"], op["decision"]),
+                         ("mr:0101-eugendus-abbas-condatiscensis", "role-place", "subject:mr:0101-eugendus", None))
+        self.assertEqual(op["confidence"], "medium")
+        drafts = [c for c in op["candidates"] if c["basis"] == "bare-name draft"]
+        self.assertEqual([c["new_id"] for c in drafts], ["mr:0101-eugendus-condatisci"])
+        self.assertIn("also: mr:0101-eugendus-condatisci (place-genitive)", op["reasoning"])
+
+    def test_non_bare_no_op(self):
+        self.assertEqual(self.build([dict(BASILIUS, id="mr:0614-basilius-magnus")])["operations"], [])
+
+    def test_record_matching_the_name(self):
+        recs = [dict(MARTYR, id="mr:0101-eugendus"), dict(EUGENDUS, id="mr:0101-eugendus")]
+        self.assertEqual(self.build(recs)["operations"][0]["class"], "role-place")
+
+    def test_weak_is_low(self):
+        op = self.build([dict(MARTYR, id="mr:0101-magnus")])["operations"][0]
+        self.assertEqual(op["confidence"], "low")
+
+    def test_uncertain_genitive_is_low(self):
+        op = self.build([dict(MONK, id="mr:0106-nilammo")])["operations"][0]
+        self.assertEqual(op["confidence"], "low")
+
+    def test_certain_single_is_high(self):
+        op = self.build([dict(AGRICIUS, id="mr:0201-agricius", roles=[])])["operations"][0]
+        self.assertEqual(op["confidence"], "high")
+
+    def test_draft_only(self):
+        old = {"mr:0101-severus": {"new_id": "mr:0101-severus-x", "class": "bogus", "subject_la": "S"}}
+        op = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])], old)["operations"][0]
+        self.assertEqual((op["new_id"], op["class"], op["confidence"]), ("mr:0101-severus-x", "place-genitive", "low"))
+
+    def test_none_skipped(self):
+        import contextlib
+        import io
+        err = io.StringIO()
+        with contextlib.redirect_stderr(err):
+            cs = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])])
+        self.assertEqual(cs["operations"], [])
+        self.assertIn("mr:0101-severus", err.getvalue())
+
+    def test_cli_refuses_repository(self):
+        with self.assertRaises(SystemExit) as e:
+            rc.main(["build", "in.json", str(Path(__file__).resolve().parent / "out.json")])
+        self.assertIn("outside the repository", str(e.exception))
+
+
 if __name__ == "__main__":
     unittest.main()
