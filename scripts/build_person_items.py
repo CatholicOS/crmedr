@@ -14,6 +14,7 @@ See docs/superpowers/specs/2026-10-08-persons-design.md.
 Usage:
   python3 build_person_items.py propose [repo_root]              (network)
   python3 build_person_items.py verify-suggestions [repo_root]   (network)
+  python3 build_person_items.py expand <records.json> [repo_root]  (network)
   python3 build_person_items.py apply <exported.json> [repo_root]
   python3 build_person_items.py check [repo_root]
 
@@ -35,6 +36,9 @@ STATUSES = ["auto", "reviewed", "unresolved"]
 QID = re.compile(r"^Q[1-9]\d*$")
 CONFIDENCES = {"high", "medium", "low"}
 MAX_CANDIDATES = 10
+MAX_EXPANDED = 15  # an expanded op also holds the candidates of the three extra routes
+# Celebrations whose title item a curator confirmed (eulogy -> QID); nothing is added here unconfirmed.
+CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
                "blessed", "the", "of", "sanctus", "sancta", "beatus"}
@@ -368,6 +372,74 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     return not_processed
 
 
+def _given_names(op):
+    """The first word of each of the person's names, with the vernacular equivalents of a Latin one."""
+    given = {}
+    for nm in [op["name"], *op.get("also", [])]:
+        first = nm.split()[0] if nm.split() else ""
+        if first:
+            given[first] = None
+            given.update(dict.fromkeys(NAME_EQUIVALENTS.get(name_key(first), ())))
+    return list(given)
+
+
+def _companion_items(op, items):
+    """The decided items of the op's companions (auto or reviewed)."""
+    decided = items.get(op["eulogy"], {})
+    return [e["wikidata"] for e in (decided.get(c) for c in op.get("companions", []))
+            if e and e["status"] in ("auto", "reviewed") and e.get("wikidata")]
+
+
+def _expansion(op, record, items, client):
+    """New candidates for one op from the extra routes, in the order they are tried."""
+    if record["kind"] == "celebration":
+        found = client.title_candidates(op["subject"])
+        qid = CURATED_TITLES.get(op["eulogy"])
+        if qid and qid not in {c["wikidata"] for c in found}:
+            curated = client.person(qid)
+            if curated:
+                found.append(dict(curated, source="curated"))
+        return found
+    found = []
+    for qid in _companion_items(op, items):
+        companion = client.person(qid)
+        if companion and companion.get("human"):
+            found += client.relatives(qid)
+    if op["typology"] == "dies_natalis":
+        month, day = (int(x) for x in op["day"].split("-"))
+        found += client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"))
+    return found
+
+
+def expand(review, items, records, client):
+    """Add candidates from the companions' kin, the saints of the death day and the titles to each
+    op of a record's eulogy; `records` by eulogy id (or by op id, which wins). Decisions are not
+    touched. Returns (op id, error) for each op whose lookups failed, left as it was."""
+    not_processed = []
+    for op in review["operations"]:
+        record = records.get(op["id"]) or records.get(op["eulogy"])
+        if not record:
+            continue
+        try:
+            found = _expansion(op, record, items, client)
+        except WikidataError as e:
+            not_processed.append((op["id"], str(e)))
+            continue
+        for c in op["candidates"]:
+            c.setdefault("source", "search")
+        have = {c["wikidata"] for c in op["candidates"]}
+        added = []
+        for c in found:
+            if c["wikidata"] not in have:
+                have.add(c["wikidata"])
+                added.append(dict(c, evidence=evidence(op, c)))
+        added.sort(key=lambda c: (-len(c["evidence"]), c["wikidata"]))
+        kept = op["candidates"] + added[:max(0, MAX_EXPANDED - len(op["candidates"]))]
+        op["candidates"] = sorted(kept, key=lambda c: -len(c["evidence"]))  # stable: ties keep their order
+    review["generated_at"] = datetime.date.today().isoformat()
+    return not_processed
+
+
 def _is_saint(c):
     return bool(c) and c.get("human") and bool(SAINT_STATUSES & set(c.get("statuses", [])))
 
@@ -516,15 +588,21 @@ def _read(path, default):
 
 
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "expand", "apply", "check"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
     exported = None
-    if cmd == "apply":
+    if cmd in ("apply", "expand"):
         if not rest:
             sys.exit(__doc__)
         exported = json.loads(Path(rest[0]).read_text(encoding="utf-8"))
         rest = rest[1:]
+        if cmd == "expand":  # records: a list, or {"records": [...]}; one per eulogy, or per (id, name)
+            records = exported["records"] if isinstance(exported, dict) else exported
+            exported = {}
+            for r in records:
+                exported.setdefault(r["id"], r)
+                exported[f"{r['id']}|{r['name']}"] = r
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
     data = repo_root / "data"
     entries = _read(data / "martyrology_ids.json", {})["entries"]
@@ -541,6 +619,8 @@ def main(argv):
         errors = verify_suggestions(review, client)
         if errors:
             sys.exit("\n".join(errors))
+    elif cmd == "expand":
+        not_processed = expand(review, items, exported, client)
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
     errors = validate(items, index, review["operations"]) + unaccounted(

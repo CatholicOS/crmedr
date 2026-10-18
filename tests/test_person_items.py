@@ -531,3 +531,109 @@ class VariantsTest(unittest.TestCase):
         op = review["operations"][0]
         self.assertEqual(op["also"], ["Cunegundis"])
         self.assertEqual((op["candidates"], op["failed"]), (before["candidates"], before["failed"]))
+
+
+class ExpandTest(unittest.TestCase):
+    class Client(FakeClient):
+        def __init__(self, **kw):
+            super().__init__(**kw)
+            self.kin, self.day, self.titles, self.calls = {}, [], [], []
+
+        def relatives(self, qid):
+            if qid in self.fail:
+                raise bp.WikidataError("boom")
+            return [dict(c) for c in self.kin.get(qid, [])]
+
+        def saints_by_death_day(self, month, day, given, year=None):
+            self.calls.append((month, day, given, year))
+            return [dict(c, source="sparql") for c in self.day]
+
+        def title_candidates(self, text):
+            return [dict(c, source="title") for c in self.titles]
+
+    def op(self, **kw):
+        base = {"op": "resolve_person", "id": "mr:0101-ioannes-et-renatus-lego|Ioannes",
+                "eulogy": "mr:0101-ioannes-et-renatus-lego", "day": "01-01", "typology": "dies_natalis",
+                "subject": "Ioannes et Renatus Lego", "name": "Ioannes", "companions": ["Renatus Lego"],
+                "failed": [], "candidates": [dict(cand("Q9", ["John"]), evidence=["human"])],
+                "decision": None, "edited": None}
+        return dict(base, **kw)
+
+    def run_expand(self, op, client, items=None, record=None):
+        review = bp.new_changeset([op])
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": "Q2652595", "status": "reviewed"}}
+                 } if items is None else items
+        records = {op["eulogy"]: record or {"id": op["eulogy"], "name": op["name"], "kind": "person",
+                                            "death_year": 1642}}
+        return bp.expand(review, items, records, client), review["operations"][0]
+
+    def test_sibling_found(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        left, op = self.run_expand(self.op(), client)
+        self.assertEqual(left, [])
+        self.assertIn(("Q52161488", "companion:P3373"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+        self.assertEqual(next(c for c in op["candidates"] if c["wikidata"] == "Q9")["source"], "search")
+        self.assertIn("status", next(c for c in op["candidates"] if c["wikidata"] == "Q52161488")["evidence"])
+
+    def test_unresolved_companion_adds_nothing(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": None, "status": "unresolved",
+                                                                      "note": "x"}}}
+        _, op = self.run_expand(self.op(), client, items)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
+    def test_non_human_companion_adds_nothing(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Lego"], human=False)})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        _, op = self.run_expand(self.op(), client)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
+    def test_death_day_uses_name_equivalents_and_year(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["John Lego"], died="1642-01-01")]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        month, day, given, year = client.calls[0]
+        self.assertEqual((month, day, year), (1, 1, 1642))
+        self.assertIn("Ioannes", given)
+        self.assertIn("john", given)
+        self.assertIn(("Q5", "sparql"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+
+    def test_existing_qid_is_not_duplicated(self):
+        client = self.Client()
+        client.day = [cand("Q9", ["John"])]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q9", "search")])
+
+    def test_celebration_gets_titles(self):
+        client = self.Client()
+        client.titles = [cand("Q208542", ["Theotokos"], human=False, statuses=())]
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     typology="festum", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "title")])
+
+    def test_curated_title_is_added_when_search_misses_it(self):
+        client = self.Client(by_qid={"Q208542": cand("Q208542", ["Theotokos"], human=False)})
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "curated")])
+
+    def test_cap_keeps_existing_candidates(self):
+        client = self.Client()
+        client.day = [cand(f"Q{100 + i}", ["John"]) for i in range(20)]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        self.assertEqual(len(op["candidates"]), bp.MAX_EXPANDED)
+        self.assertIn("Q9", {c["wikidata"] for c in op["candidates"]})
+
+    def test_decision_untouched_and_failure_continues(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        op = self.op(decision="edit", edited={"wikidata": "Q1"})
+        left, got = self.run_expand(op, client)
+        self.assertEqual([k for k, _ in left], [op["id"]])
+        self.assertEqual((got["decision"], got["edited"]), ("edit", {"wikidata": "Q1"}))
+        client = self.Client()
+        _, got = self.run_expand(self.op(decision="accept", edited=None), client)
+        self.assertEqual((got["decision"], got["edited"]), ("accept", None))
