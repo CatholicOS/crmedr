@@ -130,6 +130,7 @@ For each subject of the month's eulogies (every bare ID, and every subject with 
 | Field | Source |
 |---|---|
 | `name` (nominative, one name form), `surname` | the 2004 Latin, `data/persons.json` |
+| `n` (only for a name repeated in the eulogy, as in `data/persons.json`) | `data/persons.json` |
 | `roles` (as printed, with the printed words' offsets) | the 2004 Latin |
 | `places` (each with its role: see, monastery, death, burial; its printed form and grammar: adjective of the person, adjective of a noun, locative, genitive) | the 2004 Latin, `data/places.json`, the gazetteer |
 | `cognomen` / epithet | the 2004 Latin; else a twin's ID; else Wikidata (marked) |
