@@ -71,13 +71,13 @@ class Brief(unittest.TestCase):
         entries = [{"id": "mr:0101-a"}, {"id": "mr:0101-b", "same_eulogy": ["mr:0202-b"]},
                    {"id": "mr:0116-c"}, {"id": "mr:0101-old", "deprecated": True}]
         texts = {"mr:0101-a": "A", "mr:0101-b": "B", "mr:0116-c": "C"}
-        items = {"mr:0101-a": {"Aus": {"wikidata": "Q1", "status": "auto"}}}
+        items = {"mr:0101-a": {"Aus": {"wikidata": "Q1", "status": "auto"}, "Bus": {"status": "unresolved"}}}
         out = sr.brief(*half_month("01", "a"), texts, {"mr:0101-a": "IT"}, {}, {"mr:0101-a": [{"name": "Aus"}]},
                        {"mr:0101-a": "Sanctus A"}, entries, items)
         self.assertEqual([o["id"] for o in out], ["mr:0101-a", "mr:0101-b"])
         self.assertEqual(out[0]["la_text"], "A")
         self.assertEqual(out[0]["it_text"], "IT")
-        self.assertEqual(out[0]["person_items"], items["mr:0101-a"])
+        self.assertEqual(out[0]["person_items"], {"Aus": items["mr:0101-a"]["Aus"]})
         self.assertEqual(out[0]["subject_la"], "Sanctus A")
         self.assertEqual(out[1]["same_eulogy"], ["mr:0202-b"])
         self.assertEqual(out[1]["person_items"], {})

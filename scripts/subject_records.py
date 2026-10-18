@@ -56,6 +56,7 @@ assert all(r in ROLE_FORMS for r in CLERIC_ROLES)
 GRAMMAR = ("adjective-person", "adjective-noun", "locative", "genitive", "ablative")
 PLACE_KINDS = ("see", "monastery", "death", "burial", "cult", "origin")
 KINDS = ("person", "celebration", "group")
+DECIDED = ("auto", "reviewed")  # person item statuses that name an item
 COGNOMEN_SOURCES = ("text", "twin", "wikidata")
 
 INFLECTION = re.compile(r"(ensis|ensi|ensem|ense|ensium|anus|ani|ano|anum|ana|anae|inus|ini|ina|inae)$")
@@ -144,7 +145,8 @@ def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries,
         out.append({"id": mrid, "la_text": texts.get(mrid, ""), "it_text": texts_it.get(mrid, ""),
                     "en_text": texts_en.get(mrid, ""), "subject_la": subjects_la.get(mrid),
                     "persons": persons.get(mrid, []), "same_eulogy": e.get("same_eulogy", []),
-                    "person_items": items.get(mrid, {})})
+                    "person_items": {n: i for n, i in items.get(mrid, {}).items()
+                                         if i.get("status") in DECIDED and i.get("wikidata")}})
     return out
 
 
