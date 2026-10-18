@@ -91,6 +91,14 @@ class CheckTest(unittest.TestCase):
         self.assertEqual(self.errs(R("mr:0101-a", "mr:0101-y"), R("mr:0101-b", "mr:0101-y")),
                          ["mr:0101-b → mr:0101-y: two renames give mr:0101-y"])
 
+    def test_deprecated_old_id(self):
+        self.assertEqual(ar.check([R("mr:0101-c", "mr:0101-c-x")], self.IDS, {"mr:0101-c"}),
+                         ["mr:0101-c → mr:0101-c-x: deprecated IDs are not renamed"])
+
+    def test_no_registry_skips_registry_checks(self):
+        self.assertEqual(ar.check([R("mr:0101-zz", "mr:0101-taken")]), [])
+        self.assertEqual(ar.check([R("mr:0101-zz", "mr:0102-zz")]), ["mr:0101-zz → mr:0102-zz: the day changes"])
+
     def test_new_is_other_old(self):
         self.assertEqual(self.errs(R("mr:0101-a", "mr:0101-b"), R("mr:0101-b", "mr:0101-b-x")),
                          ["mr:0101-a → mr:0101-b: mr:0101-b already exists",
@@ -123,6 +131,12 @@ class RekeyTextTest(unittest.TestCase):
     def test_longer_and_prose_untouched(self):
         text = '["mr:0101-basilius-magnus", "see mr:0101-basilius in", "xmr:0101-basilius"]'
         self.assertEqual(ar.rekey_text(text, self.M), (text, 0))
+
+    def test_prose_standalone_ids(self):
+        text = '{"mr:0101-basilius": "(mr:0101-basilius) mr:0101-basilius-magnus x:mr:0101-basilius mr:0101-basilius."}'
+        self.assertEqual(ar.rekey_text(text, self.M, prose=True),
+                         ('{"mr:0101-basilius-x": "(mr:0101-basilius-x) mr:0101-basilius-magnus '
+                          'x:mr:0101-basilius mr:0101-basilius-x."}', 3))
 
     def test_empty_mapping(self):
         self.assertEqual(ar.rekey_text("abc", {}), ("abc", 0))
@@ -187,6 +201,13 @@ def dump(path, obj):
     path.write_text(json.dumps(obj, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
 
 
+def commit(repo):
+    git = ["git", "-c", "user.name=t", "-c", "user.email=t@t"]
+    subprocess.run(["git", "init", "-q"], cwd=repo, check=True)
+    subprocess.run(["git", "add", "."], cwd=repo, check=True)
+    subprocess.run(git + ["commit", "-qm", "init"], cwd=repo, check=True)
+
+
 class Fake:
     def __init__(self, code=0):
         self.code, self.calls = code, []
@@ -210,15 +231,23 @@ class SubcommandsTest(unittest.TestCase):
         dump(r / "data" / "typology.json", {"typology": {"mr:0101-a": "x", "mr:0101-b": "y"}})
         (r / "scripts").mkdir()
         (r / "scripts" / "extract_registry.py").write_text('ENTRY_NOTES = {\n    "mr:0101-a": "n",\n}\n')
-        git = ["git", "-c", "user.name=t", "-c", "user.email=t@t"]
-        subprocess.run(["git", "init", "-q"], cwd=r, check=True)
-        subprocess.run(["git", "add", "."], cwd=r, check=True)
-        subprocess.run(git + ["commit", "-qm", "init"], cwd=r, check=True)
+        (r / "scripts" / "rules.py").write_text('OVERRIDES = {"mr:0101-b": "x"}  # mr:0101-b\n')
+        (r / "scripts" / "apply_renames.py").write_text('EXAMPLE = "mr:0101-a"\n')
+        (r / "tests").mkdir()
+        (r / "tests" / "test_x.py").write_text('IDS = [\n    "mr:0101-b",\n]\n')
+        commit(r)
         self.wip = r / "data" / "wip.json"
         dump(self.wip, {"mr:0101-a": 1})
+        t = self.texts
         for ed in ar.EDITIONS:
-            dump(self.texts / "data" / "editions" / ed / "01.json", {"mr:0101-a": "t", "z": ["mr:0101-b"]})
-        dump(self.texts / "data" / "editions" / ar.EDITIONS[0] / "footnotes.json", {"mr:0101-a": ["f"]})
+            dump(t / "data" / "editions" / ed / "01.json", {"mr:0101-a": "t", "z": ["mr:0101-b"], "mr:0101-b": "u"})
+        dump(t / "data" / "editions" / ar.EDITIONS[0] / "footnotes.json", {"mr:0101-a": ["f"]})
+        (t / "tests").mkdir(parents=True)
+        (t / "tests" / "test_registry_keys.py").write_text('EN_UNTRANSLATED = {\n    "mr:0101-a",\n}\n')
+        (t / "README.md").write_text("Example: mr:0101-b.\n")
+        commit(t)
+        self.texts_wip = t / "data" / "editions" / ar.EDITIONS[0] / "02.json"
+        dump(self.texts_wip, {"mr:0101-a": "wip"})
         cands = [{"new_id": "mr:0101-a-x", "labels": {"la": "Sanctus A X", "en": None, "it": "Sant'A X"}},
                  {"new_id": "mr:0101-b-y", "labels": {"la": "Sanctus B Y", "en": "Saint B Y", "it": None}}]
         self.cs = cs(op("mr:0101-a", "mr:0101-a-x", cands=cands),
@@ -233,7 +262,8 @@ class SubcommandsTest(unittest.TestCase):
         self.assertTrue(rep.ok, rep.errors)
         self.assertEqual(len(rep.applied), 2)
         self.assertEqual(json.loads((self.root / "i18n" / "en.json").read_text())["mr:0101-b-y"], "Saint B Y")
-        self.assertEqual(json.loads((self.root / "i18n" / "en.json").read_text())["mr:0101-a-x"], "en mr:0101-a")
+        # the subject left as it was, its prose ID re-keyed
+        self.assertEqual(json.loads((self.root / "i18n" / "en.json").read_text())["mr:0101-a-x"], "en mr:0101-a-x")
         self.assertEqual(json.loads((self.root / "i18n" / "it.json").read_text())["mr:0101-a-x"], "Sant'A X")
         self.assertEqual(json.loads((self.root / "i18n" / "la.json").read_text())["mr:0101-b-y"], "Sanctus B Y")
         self.assertIn('"mr:0101-a-x": "n"', (self.root / "scripts" / "extract_registry.py").read_text())
@@ -283,10 +313,13 @@ class SubcommandsTest(unittest.TestCase):
     def test_texts_rekeys_three_editions(self):
         rep = ar.apply_texts(self.cs, self.texts, self.root, False)
         self.assertTrue(rep.ok, rep.errors)
-        self.assertEqual(len(rep.files), 4)
+        self.assertEqual(len(rep.files), 5)
         for ed in ar.EDITIONS:
             d = json.loads((self.texts / "data" / "editions" / ed / "01.json").read_text())
-            self.assertEqual(d, {"mr:0101-a-x": "t", "z": ["mr:0101-b-y"]})
+            self.assertEqual(d, {"mr:0101-a-x": "t", "z": ["mr:0101-b-y"], "mr:0101-b-y": "u"})
+        self.assertIn('"mr:0101-a-x",', (self.texts / "tests" / "test_registry_keys.py").read_text())
+        self.assertEqual(json.loads(self.texts_wip.read_text()), {"mr:0101-a": "wip"})  # untracked
+        self.assertEqual(rep.leftovers, ("README.md:1",))
 
     def test_texts_dry_and_failed_check_write_nothing(self):
         f = self.texts / "data" / "editions" / ar.EDITIONS[0] / "01.json"
@@ -349,10 +382,121 @@ class SubcommandsTest(unittest.TestCase):
                 ar.main(argv)
             self.assertEqual(cm.exception.code, ar.__doc__)
 
+    def test_texts_judges_by_its_own_keys_not_the_registry(self):
+        # crmedr already applied: the registry names the new IDs, the texts still the old ones
+        ids = self.root / "data" / "martyrology_ids.json"
+        ids.write_text(ids.read_text().replace('mr:0101-a"', 'mr:0101-a-x"').replace('mr:0101-b"', 'mr:0101-b-y"'))
+        rep = ar.apply_texts(self.cs, self.texts, self.root / "nowhere", False)
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual((len(rep.applied), len(rep.skipped)), (2, 0))
+        again = ar.apply_texts(self.cs, self.texts, self.root, False)
+        self.assertTrue(again.ok, again.errors)
+        self.assertEqual((len(again.applied), len(again.skipped), again.files), (0, 2, {}))
+
+    def test_texts_neither_id_a_key_or_both_are_errors(self):
+        f = self.texts / "data" / "editions" / ar.EDITIONS[0] / "01.json"
+        before = f.read_bytes()
+        rep = ar.apply_texts(cs(op("mr:0101-zz", "mr:0101-zz-x"), op("mr:0101-a", "mr:0101-b")),
+                             self.texts, self.root, False)
+        self.assertEqual(rep.errors, ["mr:0101-zz → mr:0101-zz-x: neither ID is a key of the 2004 editions",
+                                      "mr:0101-a → mr:0101-b: mr:0101-b is already a key of the 2004 editions"])
+        self.assertEqual(f.read_bytes(), before)
+
+    def test_texts_checks_still_run(self):
+        rep = ar.apply_texts(cs(op("mr:0101-a", "mr:0102-a-x", cands=[])), self.texts, self.root, False)
+        self.assertEqual(rep.errors, ["mr:0101-a → mr:0102-a-x: the day changes"])
+
+    def test_crmedr_rekeys_scripts_quoted_only_not_itself_nor_tests(self):
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        s = self.root / "scripts"
+        self.assertEqual((s / "rules.py").read_text(), 'OVERRIDES = {"mr:0101-b-y": "x"}  # mr:0101-b\n')
+        self.assertEqual((s / "apply_renames.py").read_text(), 'EXAMPLE = "mr:0101-a"\n')
+        self.assertEqual((self.root / "tests" / "test_x.py").read_text(), 'IDS = [\n    "mr:0101-b",\n]\n')
+
+    def test_a_script_that_would_not_compile_writes_nothing(self):
+        (self.root / "scripts" / "rules.py").write_text('X = "mr:0101-b" +\n')  # already broken
+        before = self.snapshot()
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Fake())
+        self.assertFalse(rep.ok)
+        self.assertIn("rules.py", rep.errors[0])
+        self.assertEqual(self.snapshot(), before)
+
+    def test_crmedr_rekeys_prose_ids_in_data_i18n_and_extract_registry(self):
+        ids = self.root / "data" / "martyrology_ids.json"
+        doc = json.loads(ids.read_text())
+        doc["entries"][2]["note"] = "Same eulogy as (mr:0101-a); not mr:0101-a-magnus nor x:mr:0101-a."
+        dump(ids, doc)
+        reg = self.root / "scripts" / "extract_registry.py"
+        reg.write_text('ENTRY_NOTES = {\n    "mr:0101-a": "see mr:0101-b.",\n}\n')
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual(json.loads(ids.read_text())["entries"][2]["note"],
+                         "Same eulogy as (mr:0101-a-x); not mr:0101-a-magnus nor x:mr:0101-a.")
+        self.assertEqual(reg.read_text(), 'ENTRY_NOTES = {\n    "mr:0101-a-x": "see mr:0101-b-y.",\n}\n')
+
+    def test_scan_lists_tracked_files_not_rekeyed(self):
+        rep = ar.apply_crmedr(self.cs, self.root, True, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual(rep.leftovers, ("scripts/apply_renames.py:1", "tests/test_x.py:2"))
+        out = ar.render(rep, self.root)
+        self.assertIn("still naming an old ID", out)
+        self.assertIn("  tests/test_x.py:2", out)
+
+    def person_review(self, *ids):
+        dump(self.root / "data" / "person_items_review.json",
+             cs(*[{"op": "resolve_person", "id": i, "eulogy": i.split("|")[0]} for i in ids]))
+
+    def with_person(self, decision="accept", eulogy="mr:0101-a"):
+        return cs(*self.cs["operations"],
+                  {"op": "resolve_person", "id": f"{eulogy}|A", "eulogy": eulogy, "decision": decision})
+
+    def test_queued_person_decision_on_renamed_eulogy_refuses(self):
+        self.person_review("mr:0101-a|A")
+        before = self.snapshot()
+        for dry in (True, False):
+            rep = ar.apply_crmedr(self.with_person(), self.root, dry, run=Fake())
+            self.assertFalse(rep.ok)
+            self.assertIn("mr:0101-a|A", rep.errors[0])
+            self.assertIn("run `python3 scripts/build_person_items.py apply <decided.json>` first", rep.errors[0])
+        self.assertEqual(self.snapshot(), before)
+
+    def test_person_decision_applied_undecided_or_not_renamed_passes(self):
+        self.person_review("mr:0101-a|A", "mr:0101-c|A")
+        for decided in (self.with_person(None), self.with_person(eulogy="mr:0101-c")):
+            self.assertTrue(ar.apply_crmedr(decided, self.root, True, run=Fake()).ok)
+        self.person_review()  # applied: no longer queued
+        self.assertTrue(ar.apply_crmedr(self.with_person(), self.root, True, run=Fake()).ok)
+
+    def test_not_a_changeset_is_an_error(self):
+        bad = [{"schema": "crmedr-changeset/v1", "ops": self.cs["operations"]},
+               {"schema": "other", "operations": self.cs["operations"]}, []]
+        for doc in bad:
+            self.assertFalse(ar.apply_crmedr(doc, self.root, True, run=Fake()).ok)
+            self.assertFalse(ar.apply_texts(doc, self.texts, self.root, True).ok)
+        self.assertEqual(ar.apply_crmedr(bad[0], self.root, True).errors,
+                         ["the change-set has no operations list"])
+        self.assertEqual(ar.apply_crmedr(bad[1], self.root, True).errors, ["not a crmedr-changeset/v1 document"])
+
+    def test_deprecated_old_id_is_an_error(self):
+        rep = ar.apply_crmedr(cs(op("mr:0101-old", "mr:0101-old-x", cands=[])), self.root, True, run=Fake())
+        self.assertEqual(rep.errors, ["mr:0101-old → mr:0101-old-x: deprecated IDs are not renamed"])
+
+    def test_texts_outside_a_git_work_tree_is_an_error(self):
+        rep = ar.apply_texts(self.cs, self.root.parent / "nowhere", self.root, True)
+        self.assertFalse(rep.ok)
+        self.assertIn("not a git work tree", rep.errors[0])
+
     def test_render_lists_renames_and_next_steps(self):
         out = ar.render(ar.apply_crmedr(self.cs, self.root, False, run=Fake()), self.root)
         self.assertIn("mr:0101-a → mr:0101-a-x", out)
         self.assertIn("test_registry_keys.py", out)
+        self.assertIn("docs/*-report.md", out)
+        self.assertIn("npm run snapshot-registry", out)
+        self.assertIn("CRMEDR_REF", out)
+        self.assertIn("build_person_items.py apply, texts, crmedr", out)
+        out = ar.render(ar.apply_texts(self.cs, self.texts, self.root, True))
+        self.assertIn("apply_renames.py crmedr", out)
 
 
 if __name__ == "__main__":

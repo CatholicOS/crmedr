@@ -3,8 +3,12 @@
 
 A rename op renames an eulogy ID mr:MMDD-slug. The curator decides it in a review
 change-set (accept, edit or reject) and exports the decided file. Nothing is
-written unless every rename passes check(); an old ID that is gone from the
-registry while its new ID is present counts as already applied.
+written unless every rename passes check(); an old ID that is gone (from the
+2004 editions' keys for texts, from the registry for crmedr) while its new ID is
+present counts as already applied.
+
+Order: build_person_items.py apply <decided.json>, then texts, then crmedr, then
+martyrology-texts' tests/test_registry_keys.py.
 
 Usage:
   apply_renames.py texts <decided.json> /path/to/martyrology-texts [--dry-run] [repo_root]
@@ -23,12 +27,25 @@ EDITIONS = ("martyrologium_romanum_2004", "martyrologium_romanum_2004_it_IT",
 LABEL_FILES = {"la": "la.json", "en": "en.json", "it": "it.json"}
 ID_RE = re.compile(r"^mr:\d{4}-[a-z]+(?:-[a-z]+)*$")
 LANGS = ("la", "en", "it")
+SCHEMA = "crmedr-changeset/v1"
+# Files whose text also names an ID outside quotes (notes): an old ID standing alone is re-keyed there.
+PROSE_SCRIPTS = ("scripts/extract_registry.py",)
+TEXTS_TESTS = "tests/test_registry_keys.py"  # its EN_UNTRANSLATED list is keyed by ID
 
 
 class Rename(NamedTuple):
     old: str
     new: str
     labels: dict  # la/en/it -> subject or None (None: leave unchanged)
+
+
+def changeset_errors(changeset):
+    """A decided file that is not a change-set is an error, not "0 renames"."""
+    if not isinstance(changeset, dict) or changeset.get("schema") != SCHEMA:
+        return [f"not a {SCHEMA} document"]
+    if not isinstance(changeset.get("operations"), list):
+        return ["the change-set has no operations list"]
+    return []
 
 
 def renames(changeset):
@@ -65,15 +82,20 @@ def split_applied(rs, ids):
     return todo, done
 
 
-def check(rs, ids):
-    """Error strings for the renames (empty: all pass); ids = every registry ID."""
+def check(rs, ids=None, deprecated=frozenset()):
+    """Error strings for the renames (empty: all pass).
+
+    ids = every registry ID and deprecated = the deprecated ones; ids None skips the
+    registry checks (texts judges by its own keys)."""
     errors = []
     olds = {r.old for r in rs}
     seen = {}
     for r in rs:
         head = f"{r.old} → {r.new}"
-        if r.old not in ids:
+        if ids is not None and r.old not in ids:
             errors.append(f"{head}: no such ID")
+        elif r.old in deprecated:
+            errors.append(f"{head}: deprecated IDs are not renamed")
         numeric = any(t.isdigit() for t in r.new.split("-")[1:])
         if numeric:
             errors.append(f"{head}: a numeric token")
@@ -82,7 +104,7 @@ def check(rs, ids):
             continue
         if r.new[3:7] != r.old[3:7]:
             errors.append(f"{head}: the day changes")
-        if r.new in ids:
+        if ids is not None and r.new in ids:
             errors.append(f"{head}: {r.new} already exists")
         if r.new in olds:
             errors.append(f"{head}: {r.new} is renamed too")
@@ -92,19 +114,31 @@ def check(rs, ids):
     return errors
 
 
-def rekey_text(text, mapping):
-    """Re-key the quoted IDs: "old" and "old|... take the new ID; nothing else."""
+def _alternation(ids):
+    return "|".join(re.escape(k) for k in sorted(ids, key=len, reverse=True))
+
+
+def _standalone(ids):
+    """An ID standing alone: not part of a longer ID or of another namespace (x:mr:...)."""
+    return re.compile(rf"(?<![\w:-])({_alternation(ids)})(?![\w-])")
+
+
+def rekey_text(text, mapping, prose=False):
+    """Re-key the quoted IDs: "old" and "old|... take the new ID; nothing else.
+
+    prose: also an old ID standing alone in text (a note's "(mr:0114-euphrasius)")."""
     if not mapping:
         return text, 0
-    alt = "|".join(re.escape(k) for k in sorted(mapping, key=len, reverse=True))
-    return re.subn(rf'"({alt})(?=["|])', lambda m: '"' + mapping[m.group(1)], text)
+    if prose:
+        return _standalone(mapping).subn(lambda m: mapping[m.group(1)], text)
+    return re.subn(rf'"({_alternation(mapping)})(?=["|])', lambda m: '"' + mapping[m.group(1)], text)
 
 
-def rekey_file(path, mapping, kind, dry):
+def rekey_file(path, mapping, kind, dry, prose=False):
     """Re-key one file in place, checking the result first; returns the count."""
     path = Path(path)
     text = path.read_text(encoding="utf-8")
-    new, n = rekey_text(text, mapping)
+    new, n = rekey_text(text, mapping, prose)
     try:
         if kind == "json":
             json.loads(new)
@@ -140,29 +174,42 @@ class Report(NamedTuple):
     files: dict  # path -> replacements
     errors: list  # [str]
     ok: bool
-    steps: bool = False  # print the next steps (crmedr)
+    steps: str = ""  # the subcommand whose next steps to print ("texts", "crmedr")
+    leftovers: tuple = ()  # "path:line" of tracked files not re-keyed that still name an old ID
 
 
-def _report(applied, skipped, files, errors, steps=False):
-    return Report(applied, skipped, files, errors, not errors, steps)
+def _report(applied, skipped, files, errors, steps="", leftovers=()):
+    return Report(applied, skipped, files, errors, not errors, steps, tuple(leftovers))
 
 
-def _registry_ids(repo_root):
-    registry = json.loads((Path(repo_root) / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))
-    return {e["id"] for e in registry["entries"]}
+def _git_files(repo, *paths):
+    out = subprocess.run(["git", "ls-files", *paths], cwd=repo, capture_output=True, text=True, check=True).stdout
+    return [Path(repo) / n for n in out.splitlines()]
 
 
-def _plan(changeset, repo_root):
-    """(to apply, already applied, check errors) for a decided change-set."""
-    todo, done = split_applied(renames(changeset), _registry_ids(repo_root))
-    return todo, done, check(todo, _registry_ids(repo_root))
+def scan(repo, olds, skip):
+    """path:line of each tracked file of repo (not in skip) that still names an old ID."""
+    if not olds:
+        return []
+    pat, out = _standalone(olds), []
+    skip = {Path(p) for p in skip}
+    for path in _git_files(repo):
+        if path in skip or not path.is_file():
+            continue
+        data = path.read_bytes()
+        if b"\0" in data:
+            continue
+        for i, line in enumerate(data.decode("utf-8", "replace").splitlines(), 1):
+            if pat.search(line):
+                out.append(f"{path.relative_to(repo)}:{i}")
+    return out
 
 
 def _rekey_all(targets, mapping, dry, files, errors):
-    """Re-key (path, kind) targets; a file that does not parse is an error."""
-    for path, kind in targets:
+    """Re-key (path, kind, prose) targets; a file that does not parse is an error."""
+    for path, kind, prose in targets:
         try:
-            n = rekey_file(path, mapping, kind, dry)
+            n = rekey_file(path, mapping, kind, dry, prose)
         except (OSError, ValueError) as e:
             errors.append(str(e))
             continue
@@ -170,32 +217,112 @@ def _rekey_all(targets, mapping, dry, files, errors):
             files[str(path)] = files.get(str(path), 0) + n
 
 
+def _edition_keys(paths):
+    """The top-level keys of the 2004 edition files (the eulogy IDs of the texts)."""
+    keys = set()
+    for path in paths:
+        doc = json.loads(Path(path).read_text(encoding="utf-8"))
+        if isinstance(doc, dict):
+            keys.update(doc)
+    return keys
+
+
 def apply_texts(changeset, texts_repo, repo_root, dry):
-    """Step 1: re-key the 2004 edition files of martyrology-texts."""
+    """Step 1: re-key martyrology-texts' tracked 2004 edition files (and its registry-keys test).
+
+    Judged by the texts' own keys: an old ID that is a key is applied; an old ID absent with its
+    new ID a key is already applied; neither is an error. repo_root (crmedr) is not read."""
     texts_repo = Path(texts_repo)
-    todo, done, errors = _plan(changeset, repo_root)
-    if errors or not todo:
-        return _report([] if errors else todo, done, {}, errors)
-    mapping = {r.old: r.new for r in todo}
-    targets = []
+    errors = changeset_errors(changeset)
+    if errors:
+        return _report([], [], {}, errors)
+    try:
+        tracked = set(_git_files(texts_repo))
+    except (OSError, subprocess.CalledProcessError):
+        return _report([], [], {}, [f"{texts_repo}: not a git work tree"])
+    editions = []
     for edition in EDITIONS:
         folder = texts_repo / "data" / "editions" / edition
-        found = sorted(folder.glob("*.json"))
+        found = sorted(p for p in tracked if p.parent == folder and p.suffix == ".json")
         if not found:
-            return _report([], done, {}, [f"{folder}: no edition files found"])
-        targets += [(p, "json") for p in found]
+            return _report([], [], {}, [f"{folder}: no tracked edition files found"])
+        editions += found
+    try:
+        keys = _edition_keys(editions)
+    except (OSError, ValueError) as e:
+        return _report([], [], {}, [f"the 2004 edition files do not parse: {e}"])
+    todo, done = split_applied(renames(changeset), keys)
+    errors = check(todo)
+    for r in todo:
+        if r.old not in keys:
+            errors.append(f"{r.old} → {r.new}: neither ID is a key of the 2004 editions")
+        elif r.new in keys:
+            errors.append(f"{r.old} → {r.new}: {r.new} is already a key of the 2004 editions")
+    if errors or not todo:
+        return _report([] if errors else todo, done, {}, errors, "" if errors else "texts")
+    mapping = {r.old: r.new for r in todo}
+    targets = [(p, "json", False) for p in editions]
+    tests = texts_repo / TEXTS_TESTS
+    if tests in tracked:
+        targets.append((tests, "python", False))
     files = {}
     _rekey_all(targets, mapping, True, files, errors)  # every file parses first
-    if not errors and not dry:
+    if errors:
+        return _report([], done, {}, errors)
+    leftovers = scan(texts_repo, mapping, [p for p, _, _ in targets])
+    if not dry:
         files = {}
         _rekey_all(targets, mapping, False, files, errors)
-    return _report([] if errors else todo, done, files, errors)
+    return _report([] if errors else todo, done, files, errors, "texts", leftovers)
 
 
-def _tracked(repo_root):
-    out = subprocess.run(["git", "ls-files", "data", "i18n"], cwd=repo_root, capture_output=True,
-                         text=True, check=True).stdout
-    return [Path(repo_root) / n for n in out.splitlines() if n.endswith(".json")]
+def _registry(repo_root):
+    """(every registry ID, the deprecated ones)."""
+    registry = json.loads((Path(repo_root) / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))
+    entries = registry["entries"]
+    return {e["id"] for e in entries}, {e["id"] for e in entries if e.get("deprecated")}
+
+
+def _person_errors(changeset, todo, repo_root):
+    """Person decisions on a renamed eulogy must be applied first: their keys name the old ID."""
+    path = Path(repo_root) / "data" / "person_items_review.json"
+    if not path.exists():
+        return []
+    queued = {op.get("id") for op in json.loads(path.read_text(encoding="utf-8")).get("operations", [])}
+    renamed = {r.old for r in todo}
+    held = sorted(op["id"] for op in changeset["operations"]
+                  if op.get("op") == "resolve_person" and op.get("decision") is not None
+                  and op.get("eulogy") in renamed and op.get("id") in queued)
+    if not held:
+        return []
+    shown = ", ".join(held[:5]) + (f" and {len(held) - 5} more" if len(held) > 5 else "")
+    return [f"{len(held)} person decisions on renamed eulogies are still queued in {path.name} ({shown}): "
+            "run `python3 scripts/build_person_items.py apply <decided.json>` first"]
+
+
+def _plan(changeset, repo_root):
+    """(to apply, already applied, check errors) for crmedr, judged against its registry."""
+    errors = changeset_errors(changeset)
+    if errors:
+        return [], [], errors
+    ids, deprecated = _registry(repo_root)
+    todo, done = split_applied(renames(changeset), ids)
+    errors = check(todo, ids, deprecated)
+    if not errors:
+        errors = _person_errors(changeset, todo, repo_root)
+    return todo, done, errors
+
+
+def _targets(repo_root):
+    """(path, kind, prose) of what crmedr re-keys: tracked data/ and i18n/ JSON (prose too) and
+    tracked scripts/*.py (quoted IDs; prose in PROSE_SCRIPTS), never apply_renames.py itself."""
+    repo_root = Path(repo_root)
+    targets = [(p, "json", True) for p in _git_files(repo_root, "data", "i18n") if p.suffix == ".json"]
+    for p in _git_files(repo_root, "scripts"):
+        rel = p.relative_to(repo_root).as_posix()
+        if p.parent == repo_root / "scripts" and p.suffix == ".py" and rel != "scripts/apply_renames.py":
+            targets.append((p, "python", rel in PROSE_SCRIPTS))
+    return targets
 
 
 def _write_labels(rs, repo_root, dry, files, errors):
@@ -216,16 +343,10 @@ def _write_labels(rs, repo_root, dry, files, errors):
             files[str(path)] = files.get(str(path), 0) + n
 
 
-def _pass(todo, mapping, repo_root, dry, files, errors):
-    targets = [(p, "json") for p in _tracked(repo_root)]
-    targets.append((Path(repo_root) / "scripts" / "extract_registry.py", "python"))
-    if dry:
-        # A dry pass counts the re-keys; the labels are looked up under the old IDs.
-        _rekey_all(targets, mapping, True, files, errors)
-        _write_labels(todo, repo_root, True, files, errors)
-    else:
-        _rekey_all(targets, mapping, False, files, errors)
-        _write_labels(todo, repo_root, False, files, errors)
+def _pass(todo, mapping, targets, repo_root, dry, files, errors):
+    # A dry pass counts the re-keys; the labels are looked up under the old IDs.
+    _rekey_all(targets, mapping, dry, files, errors)
+    _write_labels(todo, repo_root, dry, files, errors)
 
 
 def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None):
@@ -233,16 +354,18 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
     repo_root = Path(repo_root)
     todo, done, errors = _plan(changeset, repo_root)
     if errors or not todo:
-        return _report([] if errors else todo, done, {}, errors, bool(todo))
+        return _report([] if errors else todo, done, {}, errors, "crmedr" if todo else "")
     mapping = {r.old: r.new for r in todo}
+    targets = _targets(repo_root)
     files = {}
-    _pass(todo, mapping, repo_root, True, {}, errors)  # nothing is written if this fails
+    _pass(todo, mapping, targets, repo_root, True, {}, errors)  # nothing is written if this fails
     if errors:
         return _report([], done, {}, errors)
+    leftovers = scan(repo_root, mapping, [p for p, _, _ in targets])
     if dry:
-        _pass(todo, mapping, repo_root, True, files, [])
-        return _report(todo, done, files, errors, True)
-    _pass(todo, mapping, repo_root, False, files, errors)
+        _pass(todo, mapping, targets, repo_root, True, files, [])
+        return _report(todo, done, files, errors, "crmedr", leftovers)
+    _pass(todo, mapping, targets, repo_root, False, files, errors)
     # typology and places must come out of the regeneration as the re-key left them
     kept = {p: p.read_bytes() for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json")
             if p.exists()}
@@ -270,7 +393,7 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
     finally:
         if scratch:
             scratch.cleanup()
-    return _report(todo, done, files, errors, True)
+    return _report(todo, done, files, errors, "crmedr", leftovers)
 
 
 def render(report, repo_root=None):
@@ -284,12 +407,23 @@ def render(report, repo_root=None):
     lines.append(f"{len(report.applied)} renames, {len(report.skipped)} already applied, "
                  f"{sum(report.files.values())} replacements in {len(report.files)} files")
     lines += [f"error: {e}" for e in report.errors]
-    if report.steps and report.ok and report.applied:
+    if report.leftovers:
+        lines.append(f"still naming an old ID ({len(report.leftovers)} lines in tracked files this run does not re-key):")
+        lines += [f"  {where}" for where in report.leftovers]
+    if report.ok and report.applied and report.steps == "texts":
+        lines += ["Next (order: build_person_items.py apply, texts, crmedr, texts' test_registry_keys):",
+                  "  python3 scripts/apply_renames.py crmedr <decided.json> [--regenerate /path/to/martyrology-texts]"]
+    if report.ok and report.applied and report.steps == "crmedr":
         root = repo_root or "<crmedr>"
-        lines += ["Next:",
+        lines += ["Next (order: build_person_items.py apply, texts, crmedr, texts' test_registry_keys):",
                   f"  1. in martyrology-texts: CRMEDR_PATH={root} python3 -m pytest tests/test_registry_keys.py",
-                  "  2. merge martyrology-texts, then crmedr",
-                  "  3. AGENTS.md steps 3 and 4 (martyrology-api re-align and release; martyrology-frontend snapshot-registry and deploy)"]
+                  "  2. regenerate the generated reports (docs/*-report.md): --regenerate rewrites typology, places,"
+                  " persons and mentions; build_gazetteer.py and build_person_items.py write the gazetteer and"
+                  " person-items reports",
+                  "  3. merge martyrology-texts, then crmedr",
+                  "  4. AGENTS.md step 3, martyrology-api: re-align if needed; pin vendor/crmedr, vendor/texts and"
+                  " the Dockerfile's CRMEDR_REF to the merge commits; publish a release",
+                  "  5. AGENTS.md step 4, martyrology-frontend: npm run snapshot-registry, then deploy"]
     return "\n".join(lines)
 
 
