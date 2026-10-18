@@ -613,6 +613,50 @@ class ExpandTest(unittest.TestCase):
         self.assertTrue(client.matches(["Eugendo"]))
         self.assertFalse(client.matches(["Eugenio"]))
 
+    def test_death_day_filter_compares_first_words(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Jean Légo"], died="1642-01-01"), cand("Q6", ["Pierre Martin"], died="1642-01-01")]
+        _, got = self.run_expand(self.op(companions=[], candidates=[]), client)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])
+        self.assertTrue(client.matches(["Jean Légo"]))
+        self.assertFalse(client.matches(["Pierre Martin"]))
+        self.assertTrue(client.matches(["Saint Eugende"]) is False)
+
+    def test_eugendus_matches_saint_forms(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Saint Eugende"], died="0510-01-01")]
+        op = self.op(name="Eugendus", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Eugendus", "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])
+        self.assertTrue(client.matches(["Eugendo"]))
+
+    def test_multi_word_name_needs_its_other_words(self):
+        fits = bp._name_fits
+        self.assertTrue(fits("Renatus Lego", "René Lego"))
+        self.assertFalse(fits("Renatus Lego", "René Dupont"))
+
+    def companion_op(self, evidence):
+        return self.op(id="mr:0101-ioannes-et-renatus-lego|Renatus Lego", name="Renatus Lego", companions=[],
+                       candidates=[dict(cand("Q2652595", ["Renatus Lego"]), evidence=evidence)])
+
+    def run_undecided(self, evidence):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        ops = [self.op(), self.companion_op(evidence)]
+        review = bp.new_changeset(ops)
+        records = {ops[0]["eulogy"]: [{"id": ops[0]["eulogy"], "name": "Ioannes", "kind": "person"},
+                                      {"id": ops[0]["eulogy"], "name": "Renatus Lego", "kind": "person"}]}
+        bp.expand(review, {}, records, client)
+        return review["operations"][0]
+
+    def test_undecided_companion_with_strong_match_is_used(self):
+        op = self.run_undecided(["human", "status", "death"])
+        self.assertIn(("Q52161488", "companion:P3373"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+
+    def test_undecided_companion_with_weak_match_is_not_used(self):
+        op = self.run_undecided(["human", "name"])
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
     def test_existing_qid_is_not_duplicated(self):
         client = self.Client()
         client.day = [cand("Q9", ["John"])]

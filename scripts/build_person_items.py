@@ -50,6 +50,7 @@ TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant",
                "blessed", "the", "of", "sanctus", "sancta", "beatus"}
 # Latin first names whose vernacular forms share no prefix with them.
 NAME_EQUIVALENTS = {
+    "renatus": {"rene", "renato"},
     "ioannes": {"john", "giovanni", "juan", "jean", "joao", "johannes", "jan"},
     "ioanna": {"jeanne", "giovanna", "juana", "joan", "joanna", "johanna", "jane"},
     "iacobus": {"james", "giacomo", "jacques", "jaime", "diego", "jacob", "jakob"},
@@ -402,19 +403,40 @@ def _given_names(op):
     return list(given)
 
 
+def _name_fits(latin, other):
+    """A Latin name and an item's name: the first words are the same name (_same), and the other
+    words of the Latin name appear among the item's (Renatus Lego = René Lego, not René Dupont)."""
+    latin, words = _tokens(latin), _tokens(other)
+    if not latin or not words or not _same(latin[0], words[0]):
+        return False
+    return all(any(_same(w, o) for o in words[1:]) for w in latin[1:])
+
+
 def _named(op):
-    """A test of a list of names: one of them is one of the op's names (name_matches)."""
-    return lambda names: any(name_matches(nm, names) for nm in [op["name"], *op.get("also", [])])
+    """A test of a list of names: one of them fits one of the op's names (_name_fits)."""
+    return lambda names: any(_name_fits(nm, other) for nm in [op["name"], *op.get("also", [])] for other in names)
 
 
-def _companion_items(op, items):
-    """The decided items of the op's companions (auto or reviewed)."""
+def _companion_items(op, items, ops=None):
+    """The items of the op's companions: the decided ones (auto or reviewed) first, then the
+    preselected candidate of an undecided companion's own card when its evidence is a strong match
+    (human, status and death on the eulogy's day). `ops`: the review's ops by id."""
     decided = items.get(op["eulogy"], {})
-    return [e["wikidata"] for e in (decided.get(c) for c in op.get("companions", []))
-            if e and e["status"] in ("auto", "reviewed") and e.get("wikidata")]
+    found = [e["wikidata"] for e in (decided.get(c) for c in op.get("companions", []))
+             if e and e["status"] in ("auto", "reviewed") and e.get("wikidata")]
+    for c in op.get("companions", []):
+        other = (ops or {}).get(f"{op['eulogy']}|{c}")
+        if not other or (decided.get(c) or {}).get("status") in ("auto", "reviewed"):
+            continue
+        cands = other.get("candidates") or []
+        qid = (other.get("suggested") or {}).get("wikidata")
+        pick = next((x for x in cands if x["wikidata"] == qid), None) if qid else (cands[0] if cands else None)
+        if pick and {"human", "status", "death"} <= set(pick.get("evidence", [])) and pick["wikidata"] not in found:
+            found.append(pick["wikidata"])
+    return found
 
 
-def _expansion(op, record, items, client):
+def _expansion(op, record, items, client, ops=None):
     """New candidates for one op from the extra routes, in the order they are tried."""
     if record["kind"] == "celebration":
         found = client.title_candidates(op["subject"])
@@ -425,7 +447,7 @@ def _expansion(op, record, items, client):
                 found.append(dict(curated, source="curated"))
         return found
     found = []
-    for qid in _companion_items(op, items):
+    for qid in _companion_items(op, items, ops):
         companion = client.person(qid)
         if companion and companion.get("human"):
             found += client.relatives(qid)
@@ -444,6 +466,7 @@ def expand(review, items, records, client):
     (op id, error) for each op whose lookups failed, left as it was."""
     not_processed = []
     failures = 0
+    by_id = {o["id"]: o for o in review["operations"]}
     for op in review["operations"]:
         record = person_record(records.get(op["eulogy"], []), op["name"], op.get("n"))
         if not record:
@@ -454,7 +477,7 @@ def expand(review, items, records, client):
             not_processed.append((op["id"], "skipped: Wikidata unavailable"))
             continue
         try:
-            found = _expansion(op, record, items, client)
+            found = _expansion(op, record, items, client, by_id)
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
             failures += 1
