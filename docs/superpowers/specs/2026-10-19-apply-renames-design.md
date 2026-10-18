@@ -19,7 +19,12 @@ hundred renames a month; by hand, keys get missed and the repositories drift apa
     registry and check the result.
 - Nothing is applied unless every rename passes the checks (the rule `build_person_items.py apply` follows).
 - The same decided file can be applied twice without harm: a rename whose old ID is already gone and whose new ID
-  is present is reported as already applied and skipped.
+  is present is reported as already applied and skipped (`texts` judges this by the 2004 edition files' own keys,
+  `crmedr` by its registry, so `texts` still applies after `crmedr` ran).
+- Order of a run: `build_person_items.py apply <decided.json>` (person decisions are keyed `<eulogy ID>|name`), then
+  `texts`, then `crmedr`, then martyrology-texts' `tests/test_registry_keys.py`. `crmedr` refuses (an error, nothing
+  written) while the decided file holds a `resolve_person` decision on a renamed eulogy whose id is still queued in
+  `data/person_items_review.json`, and says to run `build_person_items.py apply` first.
 
 ## Non-goals
 
@@ -43,7 +48,10 @@ Other op types in the file (`resolve_person`) are ignored here; `build_person_it
 
 ## Checks (all before writing anything)
 
-- The old ID exists in `data/martyrology_ids.json` (or the rename is already applied, see Goals).
+- The decided file is a `crmedr-changeset/v1` document with an `operations` list (otherwise an error, not "0 renames").
+- `crmedr`: the old ID is a current ID of `data/martyrology_ids.json` (deprecated IDs are not renamed), or the rename
+  is already applied (see Goals). `texts`: the old ID is a key of a 2004 edition file and the new ID is not; neither
+  ID a key is an error. The registry checks ("no such ID", "already exists", deprecated) are `crmedr`'s only.
 - The new ID is `mr:MMDD-slug` with the old ID's MMDD (the day is part of the identity).
 - The slug is lowercase ASCII words joined by `-`, with no numeric token (the existing test's rule).
 - The new ID is not another current or deprecated ID, and no two renames share a new ID.
@@ -52,8 +60,9 @@ Other op types in the file (`resolve_person`) are ignored here; `build_person_it
 ## Step 1: `texts`
 
 In `martyrology-texts/data/editions/<edition>/`, for the three 2004 editions (`martyrologium_romanum_2004`,
-`..._it_IT`, `..._en_unofficial`): re-key each monthly `MM.json` and `footnotes.json` / `footnotes-overrides.json`
-wherever a key or value is exactly an old ID. Key order is kept (the renamed key takes the old one's place). Files
+`..._it_IT`, `..._en_unofficial`): re-key each tracked (`git ls-files` in martyrology-texts) JSON file (`MM.json`,
+`footnotes.json` / `footnotes-overrides.json`, ...) wherever a key or value is exactly an old ID, and the quoted IDs
+of `tests/test_registry_keys.py` (its `EN_UNTRANSLATED` list is keyed by ID). Key order is kept (the renamed key takes the old one's place). Files
 are written with the same JSON formatting they had (indentation, `ensure_ascii=False`, trailing newline), so the diff
 shows only the renamed keys. The script then runs that repository's `tests/test_registry_keys.py` only after step 2
 (it checks the texts against crmedr's registry, `CRMEDR_PATH` or `../crmedr`), so step 1 prints the command to run.
@@ -64,13 +73,18 @@ shows only the renamed keys. The script then runs that repository's `tests/test_
    is exactly an old ID, or that starts with `<old ID>|` (person keys such as `mr:0101-basilius|Basilius`), takes the
    new ID. Key order and formatting are kept as in step 1. Untracked files are never touched (the curator keeps work
    in progress there).
-2. Re-key the notes in `scripts/extract_registry.py` (`ENTRY_NOTES`, `EDITION_NOTES`, `REVIEW_EDITION_NOTES`): an
-   exact quoted old ID becomes the new one.
+   In these files an old ID standing alone in text (`(?<![\w:-])old(?![\w-])`, a note's "(mr:0114-euphrasius)")
+   is re-keyed too.
+2. Re-key every tracked `scripts/*.py` except `scripts/apply_renames.py` (the hand-decision dicts keyed by ID:
+   `TYPOLOGY_OVERRIDES`, `FEAST_IDS`, `MARIAN_IDS`, `FORCE_REVIEW`, ...): an exact quoted old ID becomes the new one;
+   the result must compile. In `scripts/extract_registry.py` (`ENTRY_NOTES`, `EDITION_NOTES`,
+   `REVIEW_EDITION_NOTES`) an old ID standing alone in a note is re-keyed too. `tests/` are never re-keyed (fixtures
+   may reuse real-looking IDs).
 3. Write the subject labels: `i18n/la.json`, `en.json`, `it.json` take the chosen candidate's labels (R3 of the
    subject-identity design); a `null` label leaves that file's subject unchanged.
 4. Run `python3 scripts/extract_registry.py`, then `python3 -m unittest discover -s tests`. Their failure is reported
    and the script exits non-zero; the files stay written, for the curator to inspect with `git diff`.
-5. Print the remaining steps: run the texts test, merge texts then crmedr, then AGENTS.md steps 3 and 4.
+5. Print the remaining steps (see Output).
 
 The generated files that read the texts (`extract_typology.py`, `extract_places.py`, `extract_persons.py`,
 `extract_mentions.py`) are not re-run: re-keying them is what a re-run would produce for a rename that does not
@@ -82,9 +96,20 @@ checks that typology and places come out identical (AGENTS.md's condition).
 A report on stdout: per rename `old → new` and the files touched, the renames skipped as already applied, and a
 count. `--dry-run` prints the report and writes nothing.
 
+Before writing (and in `--dry-run`), every tracked file of the repository the subcommand works on (crmedr, or
+martyrology-texts for `texts`) that the run does not re-key is scanned for an old ID standing alone; each hit is
+listed under "still naming an old ID" as `path:line` (generated reports, `registry/*.md`, plans, tests). Not an
+error: they are for a look by hand, or are rewritten by the regeneration.
+
+The "Next" steps list the order: run martyrology-texts' test, regenerate the generated reports (`docs/*-report.md`),
+merge texts then crmedr, then AGENTS.md steps 3 (martyrology-api pins and release) and 4 (`npm run
+snapshot-registry`, deploy).
+
 ## Testing
 
 Unit tests on a temporary copy of a small repository tree: the rename table from accept/edit/reject ops; every check
 (day, numeric token, collision, duplicate, chain, missing old ID); re-keying keys, values and `old|name` prefixes
 without touching `old-longer` IDs; key order and formatting kept; labels written and `null` left alone; idempotence;
-untracked files left alone; `--dry-run` writes nothing.
+untracked files left alone (in both repositories); `--dry-run` writes nothing; a file that is not a change-set; a
+deprecated old ID; `texts` judged by its own keys after `crmedr` ran; scripts re-keyed (not `apply_renames.py`, not
+`tests/`); prose IDs; the scan's `path:line` list; the refusal while a decided person of a renamed eulogy is queued.
