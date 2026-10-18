@@ -12,7 +12,7 @@ Usage:
   python3 scripts/registry_places.py [--check] [repo_root]
 
 It also copies each current entry's places from data/places.json into the
-registry, so new places reach it without the workbook.
+registry, so new places reach it without a full rebuild by extract_registry.py.
 
 --check writes nothing and fails when the committed registry differs from what
 the script would write (rerun it after extract_places.py, after

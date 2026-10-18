@@ -1015,7 +1015,7 @@ checked by hand, to be weighed in public review (`REVIEW_EDITION_NOTES`); a note
 can be withdrawn on its own.
 
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
-repositories (`ID_CORRECTIONS` keeps them on regeneration):
+repositories (then kept on regeneration by `ID_CORRECTIONS`; since #127 the registry holds them):
 - Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);
   mr:0809-laurentius → mr:0809-romanus (the slug had taken the cemetery's name, *in
   coemeterio sancti Laurentii*; the eulogy is St Romanus, so the 1914 deprecated
@@ -1075,6 +1075,31 @@ religious given name with the secular surname). This refines the rule above, whi
 form. A parenthesized name that is not a secular name, such as the alternative reading of a
 Vietnamese or Korean name (*Phạm Trọng (Án) Khảm*), is not concerned. 198 current IDs are under
 review (#116).
+
+## The registry as its own source (October 2026, #127)
+
+The registry was first extracted from the private digitization workbook ("Roman Martyrology LA IT
+EN with IDs.xlsx"), with maps in `scripts/extract_registry.py` correcting what the workbook
+recorded. Every value the workbook supplied has since been corrected or curated, so
+`data/martyrology_ids.json` is now the source: `extract_registry.py` rebuilds the registry from it,
+and a change to an ID, a placement or an asterisk is made there, then carried to the consumers
+downstream (martyrology-texts, martyrology-api, martyrology-frontend; `AGENTS.md`, *Changing an ID, a
+placement or an asterisk*). The rebuild reproduced the committed registry and month tables byte for byte.
+
+What the registry holds, per current entry: `id`, `month`, `day`, `entry`, `asterisk`,
+`unnumbered`, `also_on`, `editions` and the `same_eulogy` links between current IDs. What each
+run derives: `note` (`ENTRY_NOTES`), `edition_notes` (`EDITION_NOTES`, after the asterisk notes),
+`typology`, `places`, `country`, and the deprecated entries with their links back.
+
+The maps that only patched the workbook are folded into the data they corrected and removed:
+`ID_CORRECTIONS` (716 renames; the tables above record them), `UNNUMBERED_LEADS` (now the
+entries' `unnumbered`), `LATIN_RENUMBERING`, `LATIN_ASTERISKED` / `LATIN_PLAIN` /
+`ASTERISK_OVERRIDES` (the main placement and the CEI's `editions` override), `CEI_ONLY` (`absent`),
+`PRINT_ONLY_ENTRIES`, `SAME_EULOGY`, the empty `PLACEMENT_OVERRIDES`, and the leap-day merge
+(`also_on`). The asterisk notes on the Latin and the CEI are now derived from the entry's own
+data: wherever the CEI's `editions` override carries an asterisk, both editions get their note.
+`openpyxl` is no longer needed. `--check` fails when the committed files differ from the rebuild;
+the tests run it.
 
 ## Country-code corrections (September 2026)
 
