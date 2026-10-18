@@ -637,3 +637,16 @@ class ExpandTest(unittest.TestCase):
         client = self.Client()
         _, got = self.run_expand(self.op(decision="accept", edited=None), client)
         self.assertEqual((got["decision"], got["edited"]), ("accept", None))
+
+    def test_existing_order_is_kept_so_accept_still_means_the_first(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["John"], died="1642-01-01")]  # human, status, name, death: more evidence
+        op = self.op(companions=[], decision="accept")
+        op["candidates"][0]["evidence"] = []
+        _, got = self.run_expand(op, client)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q9", "Q5"])
+
+    def test_failed_lookup_still_marks_existing_candidates_as_search(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        _, got = self.run_expand(self.op(), client)
+        self.assertEqual(got["candidates"][0]["source"], "search")

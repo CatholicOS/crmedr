@@ -420,13 +420,13 @@ def expand(review, items, records, client):
         record = records.get(op["id"]) or records.get(op["eulogy"])
         if not record:
             continue
+        for c in op["candidates"]:
+            c.setdefault("source", "search")
         try:
             found = _expansion(op, record, items, client)
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
             continue
-        for c in op["candidates"]:
-            c.setdefault("source", "search")
         have = {c["wikidata"] for c in op["candidates"]}
         added = []
         for c in found:
@@ -434,8 +434,8 @@ def expand(review, items, records, client):
                 have.add(c["wikidata"])
                 added.append(dict(c, evidence=evidence(op, c)))
         added.sort(key=lambda c: (-len(c["evidence"]), c["wikidata"]))
-        kept = op["candidates"] + added[:max(0, MAX_EXPANDED - len(op["candidates"]))]
-        op["candidates"] = sorted(kept, key=lambda c: -len(c["evidence"]))  # stable: ties keep their order
+        # Existing candidates keep their places: an accept without a suggestion means candidates[0].
+        op["candidates"] += added[:max(0, MAX_EXPANDED - len(op["candidates"]))]
     review["generated_at"] = datetime.date.today().isoformat()
     return not_processed
 
