@@ -438,7 +438,8 @@ class SubcommandsTest(unittest.TestCase):
     def test_scan_lists_tracked_files_not_rekeyed(self):
         rep = ar.apply_crmedr(self.cs, self.root, True, run=Fake())
         self.assertTrue(rep.ok, rep.errors)
-        self.assertEqual(rep.leftovers, ("scripts/apply_renames.py:1", "tests/test_x.py:2"))
+        # scripts/rules.py is re-keyed for quoted IDs only: its comment naming the old ID is listed.
+        self.assertEqual(rep.leftovers, ("scripts/apply_renames.py:1", "scripts/rules.py:1", "tests/test_x.py:2"))
         out = ar.render(rep, self.root)
         self.assertIn("still naming an old ID", out)
         self.assertIn("  tests/test_x.py:2", out)
@@ -450,6 +451,12 @@ class SubcommandsTest(unittest.TestCase):
     def with_person(self, decision="accept", eulogy="mr:0101-a"):
         return cs(*self.cs["operations"],
                   {"op": "resolve_person", "id": f"{eulogy}|A", "eulogy": eulogy, "decision": decision})
+
+    def test_an_unreadable_person_review_is_an_error_not_a_traceback(self):
+        (self.root / "data" / "person_items_review.json").write_text("{not json", encoding="utf-8")
+        rep = ar.apply_crmedr(self.with_person(), self.root, True, run=Fake())
+        self.assertFalse(rep.ok)
+        self.assertIn("person_items_review.json: not a readable crmedr-changeset", rep.errors[0])
 
     def test_queued_person_decision_on_renamed_eulogy_refuses(self):
         self.person_review("mr:0101-a|A")

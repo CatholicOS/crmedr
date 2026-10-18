@@ -187,19 +187,24 @@ def _git_files(repo, *paths):
     return [Path(repo) / n for n in out.splitlines()]
 
 
-def scan(repo, olds, skip):
-    """path:line of each tracked file of repo (not in skip) that still names an old ID."""
-    if not olds:
+def scan(repo, mapping, targets=()):
+    """path:line of each tracked file of repo that will still name an old ID: a file the run
+    re-keys with prose (every standalone ID) is skipped; one it re-keys quoted IDs only is read
+    as it will be after the re-key (a comment that names an old ID is listed)."""
+    if not mapping:
         return []
-    pat, out = _standalone(olds), []
-    skip = {Path(p) for p in skip}
+    pat, out = _standalone(mapping), []
+    kinds = {Path(p): prose for p, _, prose in targets}
     for path in _git_files(repo):
-        if path in skip or not path.is_file():
+        if kinds.get(path) is True or not path.is_file():
             continue
         data = path.read_bytes()
         if b"\0" in data:
             continue
-        for i, line in enumerate(data.decode("utf-8", "replace").splitlines(), 1):
+        text = data.decode("utf-8", "replace")
+        if path in kinds:
+            text = rekey_text(text, mapping)[0]
+        for i, line in enumerate(text.splitlines(), 1):
             if pat.search(line):
                 out.append(f"{path.relative_to(repo)}:{i}")
     return out
@@ -269,7 +274,7 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
     _rekey_all(targets, mapping, True, files, errors)  # every file parses first
     if errors:
         return _report([], done, {}, errors)
-    leftovers = scan(texts_repo, mapping, [p for p, _, _ in targets])
+    leftovers = scan(texts_repo, mapping, targets)
     if not dry:
         files = {}
         _rekey_all(targets, mapping, False, files, errors)
@@ -288,7 +293,10 @@ def _person_errors(changeset, todo, repo_root):
     path = Path(repo_root) / "data" / "person_items_review.json"
     if not path.exists():
         return []
-    queued = {op.get("id") for op in json.loads(path.read_text(encoding="utf-8")).get("operations", [])}
+    try:
+        queued = {op.get("id") for op in json.loads(path.read_text(encoding="utf-8"))["operations"]}
+    except (ValueError, KeyError, TypeError, AttributeError) as e:
+        return [f"{path.name}: not a readable crmedr-changeset ({e.__class__.__name__}): fix or regenerate it first"]
     renamed = {r.old for r in todo}
     held = sorted(op["id"] for op in changeset["operations"]
                   if op.get("op") == "resolve_person" and op.get("decision") is not None
@@ -361,7 +369,7 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
     _pass(todo, mapping, targets, repo_root, True, {}, errors)  # nothing is written if this fails
     if errors:
         return _report([], done, {}, errors)
-    leftovers = scan(repo_root, mapping, [p for p, _, _ in targets])
+    leftovers = scan(repo_root, mapping, targets)
     if dry:
         _pass(todo, mapping, targets, repo_root, True, files, [])
         return _report(todo, done, files, errors, "crmedr", leftovers)
