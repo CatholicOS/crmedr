@@ -113,10 +113,38 @@ class Candidates(unittest.TestCase):
         self.assertIn(("mr:0101-basilius-episcopus-caesareae", "twin disagreement"),
                       rc.rejected(BASILIUS, "mr:0101-basilius", CTX))
 
-    def test_twin_of_a_joint_eulogy_ignored(self):
-        ctx = CTX._replace(twins={"mr:0101-basilius": ["mr:0102-basilius-magnus-et-gregorius-nazianzenus"]})
+    def test_twin_of_a_joint_eulogy_cut_at_et(self):
+        joint = "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+        labels = {lang: {**LABELS[lang], joint: "Saints Basil and Gregory"} for lang in LABELS}
+        ctx = CTX._replace(twins={"mr:0101-basilius": [joint]}, labels=labels)
         c = rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)
-        self.assertEqual(c[0]["category"], "role-place")
+        self.assertEqual((c[0]["new_id"], c[0]["category"]), ("mr:0101-basilius-magnus", "twin"))
+        # this ID's own subjects + the discriminator, never the joint subject
+        self.assertEqual(c[0]["labels"], {"la": "Sanctus Basilius Magnus", "en": "Saint Basil Magnus",
+                                          "it": "San Basilio Magnus"})
+
+    def test_twin_nothing_before_et_socii(self):
+        ctx = CTX._replace(twins={"mr:0806-xystus-ii": ["mr:0807-xystus-ii-et-socii"]})
+        r = rec("Xystus", ["papa"])
+        self.assertEqual(rc.candidates(r, "mr:0806-xystus-ii", "Sanctus Xystus II", ctx), [])
+
+    def test_deprecated_only_twin(self):
+        ctx = CTX._replace(twins={"mr:0101-basilius": ["mr:0614-basilius-magnus"]}, ids={"mr:0101-basilius"})
+        c = rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)
+        self.assertEqual((c[0]["new_id"], c[0]["category"]), ("mr:0101-basilius-magnus", "twin"))
+
+    def test_twins_disagree_current_then_most_frequent(self):
+        twins = ["mr:0201-basilius-caesariensis", "mr:0301-basilius-magnus", "mr:0401-basilius-magnus",
+                 "mr:0501-basilius-ancyranus"]
+        ctx = CTX._replace(twins={"mr:0101-basilius": twins},
+                           ids={"mr:0101-basilius", "mr:0201-basilius-caesariensis", "mr:0501-basilius-ancyranus"})
+        ids = [x["new_id"] for x in rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)]
+        # caesariensis and ancyranus are current (once each, in twin order); magnus is deprecated (twice)
+        self.assertEqual(ids, ["mr:0101-basilius-caesariensis", "mr:0101-basilius-ancyranus",
+                               "mr:0101-basilius-magnus"])
+        ctx = ctx._replace(ids={"mr:0101-basilius", "mr:0201-basilius-caesariensis", "mr:0301-basilius-magnus"})
+        ids = [x["new_id"] for x in rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)]
+        self.assertEqual(ids[:2], ["mr:0101-basilius-magnus", "mr:0101-basilius-caesariensis"])
 
     def test_episcopi_adjective(self):
         c = rc.candidates(HILARIUS, "mr:0114-hilarius", "Sanctus Hilarius", CTX)
@@ -209,6 +237,18 @@ class Candidates(unittest.TestCase):
     def test_no_genitive_rejected(self):
         r = rec("Magnus", places=[place("death", "locative", "Xa", "Xa")])
         self.assertEqual(rc.rejected(r, "mr:0101-magnus", CTX), [("mr:0101-magnus-xa", "no genitive for Xa")])
+        self.assertEqual(rc.candidates(r, "mr:0101-magnus", "Sanctus Magnus", CTX), [])  # no role to fall back on
+
+    def test_weak_fallback_after_drops(self):
+        r = rec("Magnus", ["martyr"], [place("death", "locative", "Xa", "Xa")], role_en="martyr")
+        c = rc.candidates(r, "mr:0101-magnus", "Sanctus Magnus", CTX)
+        self.assertEqual([(x["new_id"], x["category"], x["weak"]) for x in c],
+                         [("mr:0101-magnus-martyr", "role", True)])
+
+    def test_cleric_fallback_when_role_place_taken(self):
+        ctx = CTX._replace(taken={"0101": {"eugendus-abbas-condatiscensis", "eugendus-condatiscensis"}})
+        c = rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", ctx)
+        self.assertEqual([(x["new_id"], x["weak"]) for x in c], [("mr:0101-eugendus-abbas", True)])
 
 
 class LoadContext(unittest.TestCase):
@@ -222,7 +262,9 @@ class LoadContext(unittest.TestCase):
                         "same_eulogy": ["mr:0614-basilius-magnus", "mr:0509-gregorius"]},
                        {"id": "mr:0614-basilius-magnus", "month": 6, "day": 14},
                        {"id": "mr:0509-gregorius", "month": 5, "day": 9},
-                       {"id": "mr:0101-basilius-old", "month": 1, "day": 1, "deprecated": True}]
+                       {"id": "mr:0101-basilius-old", "month": 1, "day": 1, "deprecated": True},
+                       {"id": "mr:0614-basilius-caesariensis", "month": 6, "day": 14, "deprecated": True,
+                        "same_eulogy": ["mr:0614-basilius-magnus"]}]
             persons = {"mr:0101-basilius": {"Basilius": {"wikidata": "Q1", "status": "auto"}},
                        "mr:0614-basilius-magnus": {"Basilius": {"wikidata": "Q1", "status": "reviewed"}},
                        "mr:0509-gregorius": {"Gregorius": {"wikidata": "Q2", "status": "unresolved"}}}
@@ -235,7 +277,8 @@ class LoadContext(unittest.TestCase):
         self.assertNotIn("mr:0101-basilius-old", ctx.ids)
         self.assertEqual(ctx.twins["mr:0101-basilius"], ["mr:0614-basilius-magnus"])
         self.assertEqual(ctx.twins["mr:0614-basilius-magnus"],
-                         ["mr:0101-basilius", "mr:0102-basilius-magnus-et-gregorius"])
+                         ["mr:0101-basilius", "mr:0102-basilius-magnus-et-gregorius",
+                          "mr:0614-basilius-caesariensis"])  # a deprecated twin counts
         self.assertEqual(ctx.twins["mr:0509-gregorius"], ["mr:0102-basilius-magnus-et-gregorius"])
         self.assertEqual(ctx.labels["it"], {"mr:0101-basilius": "it"})
 

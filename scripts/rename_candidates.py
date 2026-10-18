@@ -60,8 +60,8 @@ def genitive_slug(place):
 
 class Context(NamedTuple):
     taken: dict    # MMDD -> slugs in use that day, current and deprecated
-    twins: dict    # mrid -> its same-saint IDs (same_eulogy group, shared decided person item)
-    ids: set       # all current IDs
+    twins: dict    # mrid -> its same-saint IDs, current and deprecated (same_eulogy, shared person item)
+    ids: set       # all current IDs (a current twin's discriminator wins over a deprecated one's)
     labels: dict   # lang (la, en, it) -> mrid -> subject
 
 
@@ -85,7 +85,7 @@ def load_context(repo_root):
         for mrid in group:
             twins[mrid] |= group - {mrid}
     return Context(taken=dict(taken),
-                   twins={m: sorted(t & ids) for m, t in twins.items() if m in ids and t & ids},
+                   twins={m: sorted(t) for m, t in twins.items() if t},
                    ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")})
 
 
@@ -122,19 +122,33 @@ def _build(record, mrid, subject_la, ctx):
         out.append({"new_id": f"mr:{mmdd}-{base}-{disc}", "category": category, "weak": weak,
                     "certain": certain, "labels": labels, "basis": basis})
 
-    # A twin's discriminator: its slug after this ID's name tokens (not a joint eulogy's).
+    # A twin's discriminator: its slug after this ID's name tokens, cut at a joint eulogy's
+    # "et" or "socii" (mr:0102-basilius-magnus-et-gregorius-nazianzenus -> magnus).
+    by_disc = {}
     for twin in ctx.twins.get(mrid, []):
         tokens = twin[8:].split("-")
-        disc = tokens[len(name_tokens):]
-        if tokens[:len(name_tokens)] != name_tokens or not disc or {"et", "socii"} & set(disc):
+        if tokens[:len(name_tokens)] != name_tokens:
             continue
-        disc = "-".join(disc)
-        fallback = _labels(mrid, subject_la, ctx, _display(disc), f" {_display(disc)}", f" {_display(disc)}")
-        labels = {lang: ctx.labels.get(lang, {}).get(twin) or fallback[lang] for lang in ("la", "en", "it")}
-        if labels["it"] and ctx.labels.get("it", {}).get(twin):
-            labels["it"] = it_label(twin, labels["it"])
-        add(disc, "twin", labels, f"twin {twin}")
-    twin_discs = {x["new_id"] for x in out}
+        disc = tokens[len(name_tokens):]
+        cut = next((i for i, t in enumerate(disc) if t in ("et", "socii")), None)
+        if cut is not None:
+            disc = disc[:cut]
+        if disc:
+            by_disc.setdefault("-".join(disc), []).append((twin, cut is not None))
+    # A current twin first, then the discriminator most twins share, then the twins' order.
+    order = sorted(by_disc, key=lambda d: (not any(t in ctx.ids for t, _ in by_disc[d]), -len(by_disc[d])))
+    for disc in order:
+        twins = by_disc[disc]
+        words = _display(disc)
+        labels = _labels(mrid, subject_la, ctx, words, f" {words}", f" {words}")
+        # A twin of its own takes the twin's subjects; a joint eulogy's subject is not this saint's.
+        own = sorted((t for t, joint in twins if not joint), key=lambda t: t not in ctx.ids)
+        if own:
+            for lang in ("la", "en", "it"):
+                subject = ctx.labels.get(lang, {}).get(own[0])
+                if subject:
+                    labels[lang] = it_label(own[0], subject) if lang == "it" else subject
+        add(disc, "twin", labels, "twin " + ", ".join(t for t, _ in twins))
 
     if record.get("surname"):
         s = record["surname"]
@@ -177,17 +191,22 @@ def _build(record, mrid, subject_la, ctx):
                     f"{cleric} + {basis}", certain=certain)
             add(form, category, _labels(mrid, subject_la, ctx, _display(form),
                                         f" of {place['en']}", f" di {place['it']}"), basis, certain=certain)
-    elif cleric:
-        add(cleric, "role", role_labels(cleric), f"{cleric}, no place", weak=True)
 
-    # Nothing else printed: a lay role (monachus, rex...) alone, else a class word; both weak.
-    if not out and not dropped and place is None and not record.get("surname") and not cog:
-        others = [r for r in roles if r not in WEAK_ROLES]
-        lay = [r for r in others if r != "papa" and r not in BIBLICAL_TITLES and r not in CLERIC_ROLES]
-        r = lay[0] if lay else (roles[0] if roles and not others else None)
+    kept = _keep(out, dropped, mmdd, base, ctx)
+    # Nothing kept (a cleric with no place, a place with no genitive, every slug taken...):
+    # a role alone (a cleric's, else a lay role like monachus), else a class word; both weak.
+    # A pope with an ordinal needs none.
+    if not kept and not ("papa" in roles and set(name_tokens) & ROMAN):
+        others = [r for r in roles if r not in WEAK_ROLES and r != "papa"]
+        r = cleric or (others[0] if others else (roles[0] if roles else None))
         if r:
-            add(r, "role", role_labels(r), f"{r}, nothing else printed", weak=True)
+            add(r, "role", role_labels(r), f"{r}, nothing else kept", weak=True)
+            kept = _keep(out[-1:], dropped, mmdd, base, ctx)
+    return kept, dropped
 
+
+def _keep(out, dropped, mmdd, base, ctx):
+    """The candidates the hard rules keep (at most four); the others go to dropped."""
     kept, seen = [], set()
     for c in out:
         new_slug = c["new_id"][8:]
@@ -200,13 +219,13 @@ def _build(record, mrid, subject_la, ctx):
             dropped.append((c["new_id"], "empty discriminator"))
         elif new_slug in ctx.taken.get(mmdd, set()):
             dropped.append((c["new_id"], "taken that day"))
-        elif twin_discs and c["category"] != "twin":
+        elif c["category"] != "twin" and any(k["category"] == "twin" for k in kept):
             dropped.append((c["new_id"], "twin disagreement"))
         elif len(kept) == MAX_CANDIDATES:
             dropped.append((c["new_id"], "beyond four"))
         else:
             kept.append(c)
-    return kept, dropped
+    return kept
 
 
 def candidates(record, mrid, subject_la, ctx):
