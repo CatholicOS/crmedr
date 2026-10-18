@@ -24,7 +24,9 @@ API = "https://www.wikidata.org/w/api.php"
 SPARQL = "https://query.wikidata.org/sparql"
 # Declared in every query: the Blazegraph endpoint predefines them, QLever's (WDQS v2) does not.
 PREFIXES = ("PREFIX wd: <http://www.wikidata.org/entity/>\n"
-            "PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n")
+            "PREFIX wdt: <http://www.wikidata.org/prop/direct/>\n"
+            "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n"
+            "PREFIX skos: <http://www.w3.org/2004/02/skos/core#>\n")
 USER_AGENT = "crmedr-gazetteer/1.0 (https://github.com/CatholicOS/crmedr)"
 # human settlement, administrative territorial entity, monastery, church building,
 # archaeological site, island, mountain, region, historical region, historical
@@ -35,6 +37,17 @@ RETRY_CODES = {429, 500, 502, 503, 504}
 # Countries that places' P17 names but that carry no P297 themselves: the
 # Netherlands (Q55) is the constituent country; NL sits on the Kingdom (Q29999).
 EXTRA_COUNTRY_ISO = {"Q55": "NL"}
+
+# Wikidata's canonization statuses (P411) of a saint or a blessed: saint, Catholic saint,
+# canonized saint, blessed, and the titles Wikidata gives ancient and Eastern saints
+# instead (Telemachus is a "Reverend Martyr"): hieromartyr, Reverend Martyr, thaumaturge,
+# pre-congregation saint, great martyr, passion bearer. Not Venerable or Servant of God.
+SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
+                  "Q2993173", "Q4377390", "Q1349880", "Q18344276", "Q3332786", "Q2032316"}
+# A companion's kin: sibling, relative, spouse, child, mother, father.
+RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
+NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
+MAX_SPARQL = 25
 
 # The interface languages of martyrology-frontend, for the reader's person popups.
 DETAIL_LANGS = ("en", "it", "fr", "de", "es", "pt")
@@ -280,6 +293,57 @@ class Wikidata:
         qids = list(dict.fromkeys(q for lang in languages for q in self._search(name, language=lang)))
         raws = self._entities(qids)
         return [summarize_person(raws[q]) for q in qids if q in raws]
+
+    def _sparql(self, query):
+        data = self._get(SPARQL + "?" + urllib.parse.urlencode({"query": PREFIXES + query, "format": "json"}))
+        return data["results"]["bindings"]
+
+    def _tagged(self, sources):
+        """Person summaries of {qid: source}, in that order, each with its "source"."""
+        raws = self._entities(list(sources))
+        return [{**summarize_person(raws[q]), "source": s} for q, s in sources.items() if q in raws]
+
+    def relatives(self, qid):
+        """The companion's kin (sibling, relative, spouse, child, mother, father) and
+        the other members of its groups (P361), as person candidates."""
+        raw = self._entities([qid]).get(qid)
+        sources = {}
+        for prop in RELATIVE_PROPS:
+            for c in (raw or {}).get("claims", {}).get(prop, []):
+                v = _value(c)
+                if isinstance(v, dict) and "id" in v:
+                    sources.setdefault(v["id"], "companion:" + prop)
+        for c in (raw or {}).get("claims", {}).get("P361", []):
+            v = _value(c)
+            if isinstance(v, dict) and "id" in v:
+                for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m wdt:P361 wd:{v['id']} }}"):
+                    sources.setdefault(b["m"]["value"].rsplit("/", 1)[1], "companion:P361")
+        sources.pop(qid, None)
+        return self._tagged(sources)
+
+    def saints_by_death_day(self, month, day, given, year=None):
+        """Saints and blessed who died on that day (and year, when known) whose
+        label or alias has a word starting with one of the `given` names, folded.
+        The query is bounded by status and death day; the names are matched here,
+        since the endpoint cannot fold accents."""
+        statuses = " ".join("wd:" + s for s in sorted(SAINT_STATUSES))
+        langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
+        when = f"MONTH(?d) = {int(month)} && DAY(?d) = {int(day)}" + (f" && YEAR(?d) = {int(year)}" if year else "")
+        rows = self._sparql(
+            f"SELECT DISTINCT ?p ?l WHERE {{ VALUES ?s {{ {statuses} }} "
+            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; wdt:P570 ?d . FILTER({when}) "
+            f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
+        starts = tuple(f for f in (fold(g) for g in given) if f)
+        found = {}
+        for b in rows:
+            if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
+                found.setdefault(b["p"]["value"].rsplit("/", 1)[1], "sparql")
+        return self._tagged(dict(list(found.items())[:MAX_SPARQL]))
+
+    def title_candidates(self, text, languages=("la", "it", "en")):
+        """Items of any kind (a feast, a title: Theotokos), without the human filter."""
+        qids = list(dict.fromkeys(q for lang in languages for q in self._search(text, language=lang)))
+        return self._tagged({q: "title" for q in qids})
 
     def person(self, qid):
         raw = self._entities([qid]).get(qid)
