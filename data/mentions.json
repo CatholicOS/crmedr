@@ -306933,10 +306933,10 @@
           "where": {
             "footnote": 1
           },
-          "start": 54,
-          "end": 62,
-          "check": "244696cb",
-          "name": "Ioannes",
+          "start": 73,
+          "end": 78,
+          "check": "f7f929a4",
+          "name": "Paulus",
           "n": 2,
           "qid": null
         },
@@ -306945,11 +306945,10 @@
           "where": {
             "footnote": 1
           },
-          "start": 73,
-          "end": 78,
-          "check": "f7f929a4",
-          "name": "Paulus",
-          "n": 2,
+          "start": 80,
+          "end": 86,
+          "check": "e09ae97b",
+          "name": "Photinus",
           "qid": null
         },
         {
@@ -307046,18 +307045,6 @@
           "where": {
             "footnote": 1
           },
-          "start": 213,
-          "end": 220,
-          "check": "19619bd7",
-          "name": "Georgius",
-          "n": 2,
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
           "start": 222,
           "end": 228,
           "check": "9bcbdfa0",
@@ -307141,7 +307128,7 @@
           "end": 343,
           "check": "244696cb",
           "name": "Ioannes",
-          "n": 3,
+          "n": 7,
           "qid": null
         },
         {
@@ -307177,7 +307164,7 @@
           "end": 369,
           "check": "19619bd7",
           "name": "Georgius",
-          "n": 3,
+          "n": 6,
           "qid": null
         },
         {
@@ -307243,23 +307230,11 @@
           "where": {
             "footnote": 1
           },
-          "start": 432,
-          "end": 440,
-          "check": "244696cb",
-          "name": "Ioannes",
-          "n": 4,
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": {
-            "footnote": 1
-          },
           "start": 451,
           "end": 458,
           "check": "19619bd7",
           "name": "Georgius",
-          "n": 4,
+          "n": 7,
           "qid": null
         },
         {
