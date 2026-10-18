@@ -140,8 +140,9 @@ def _build(record, mrid, subject_la, ctx):
     for disc in order:
         twins = by_disc[disc]
         words = _display(disc)
-        labels = _labels(mrid, subject_la, ctx, words, f" {words}", f" {words}")
-        # A twin of its own takes the twin's subjects; a joint eulogy's subject is not this saint's.
+        # The Latin words may follow the Latin subject; never an English or Italian one.
+        labels = {"la": f"{subject_la} {words}" if subject_la else None, "en": None, "it": None}
+        # A twin of its own lends its subjects; a joint eulogy's subject is not this saint's.
         own = sorted((t for t, joint in twins if not joint), key=lambda t: t not in ctx.ids)
         if own:
             for lang in ("la", "en", "it"):

@@ -120,8 +120,14 @@ class Candidates(unittest.TestCase):
         c = rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)
         self.assertEqual((c[0]["new_id"], c[0]["category"]), ("mr:0101-basilius-magnus", "twin"))
         # this ID's own subjects + the discriminator, never the joint subject
-        self.assertEqual(c[0]["labels"], {"la": "Sanctus Basilius Magnus", "en": "Saint Basil Magnus",
-                                          "it": "San Basilio Magnus"})
+        self.assertEqual(c[0]["labels"], {"la": "Sanctus Basilius Magnus", "en": None, "it": None})
+
+    def test_joint_twin_beside_its_own_twin_takes_the_vernacular(self):
+        joint = "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+        ctx = CTX._replace(twins={"mr:0101-basilius": [joint, "mr:0614-basilius-magnus"]})
+        c = rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", ctx)
+        self.assertEqual(c[0]["labels"], {"la": "Sanctus Basilius Magnus", "en": "Saint Basil the Great",
+                                          "it": "San Basilio Magno"})
 
     def test_twin_nothing_before_et_socii(self):
         ctx = CTX._replace(twins={"mr:0806-xystus-ii": ["mr:0807-xystus-ii-et-socii"]})
