@@ -48,7 +48,7 @@
   - `brief(first: str, last: str, texts: dict, texts_it: dict, texts_en: dict, persons: dict, subjects_la: dict, entries: list, items: dict) -> list[dict]` — per current eulogy MMDD in range: `id, la_text, it_text, en_text, subject_la, persons, same_eulogy, person_items` (decided items of its persons).
   - `check_record(record: dict, la_text: str) -> list[str]` — error strings, empty when valid.
   - Record shape (what agents write, one per subject name):
-    `{"id": mrid, "name": str, "kind": str, "surname": str|null, "feminine": bool, "roles": [{"role": str, "printed": str, "occurrence": int}], "places": [{"kind": str, "printed": str, "occurrence": int, "grammar": str, "nominative": str, "adjective": str|null, "en": str, "it": str}], "cognomen": {"value": str, "source": "text"|"twin"|"wikidata"}|null, "relations": [{"name": str, "relation": str}], "death_year": int|null, "role_en": str|null, "role_it": str|null}`
+    `{"id": mrid, "name": str, "kind": str, "surname": str|null, "feminine": bool, "roles": [{"role": str, "printed": str, "occurrence": int}], "places": [{"kind": str, "printed": str, "occurrence": int, "grammar": str, "nominative": str, "adjective": str|null, "genitive": str|null, "en": str, "it": str}], "cognomen": {"value": str, "source": "text"|"twin"|"wikidata"}|null, "relations": [{"name": str, "relation": str}], "death_year": int|null, "role_en": str|null, "role_it": str|null}`
     (`printed` is the exact substring of `la_text`; `occurrence` its 0-based index among identical substrings; `adjective` the nominative adjective agreeing with the subject when grammar is adjective-*).
 
 - [ ] **Step 1: Write the failing tests**
@@ -100,7 +100,7 @@ Also a `Brief` test: two eulogies of 01-01 and one of 01-16 with `half_month("01
 **Interfaces:**
 - Produces:
   - `adjective_slug(adjective: str, feminine: bool) -> str` — folded, lowercase; `-anus/-ana`, `-inus/-ina` follow `feminine`; `-ensis` unchanged.
-  - `genitive_slug(record_place: dict) -> str` — the corpus genitive: `PLACE_GENITIVES` map (seeded from the bare-name pass's PLACE map: `trevirorum, arvernorum, carnutum, cenomanorum, lemovicum, pictavorum, turonum, hierosolymorum`, keyed by folded nominative) else the folded `nominative` declined by the existing helper in `extract_subjects`/`persons_text` if one exists, else `None` (no coined genitive: the candidate is skipped and flagged).
+  - `genitive_slug(record_place: dict) -> tuple[str|None, bool]` — (slug, certain): the corpus genitive from `PLACE_GENITIVES` (seeded from the bare-name pass's PLACE map: `trevirorum, arvernorum, carnutum, cenomanorum, lemovicum, pictavorum, turonum, hierosolymorum`, keyed by folded nominative) → certain; else the record's `genitive` folded → not certain (the op's confidence drops to low); else `(None, False)` and the place-genitive candidate is skipped.
   - `CLERIC_ROLES`, `WEAK_ROLES = {"martyr", "virgo", "confessor"}`.
 
 - [ ] **Step 1: Write the failing tests**
@@ -108,8 +108,9 @@ Also a `Brief` test: two eulogies of 01-01 and one of 01-16 with `half_month("01
 ```python
 def test_ensis(self): self.assertEqual(rc.adjective_slug("Condatiscénsis", False), "condatiscensis")
 def test_feminine_anus(self): self.assertEqual(rc.adjective_slug("Ancyránus", True), "ancyrana")
-def test_known_genitive(self): self.assertEqual(rc.genitive_slug({"nominative": "Treviri"}), "trevirorum")
-def test_no_coined_genitive(self): self.assertIsNone(rc.genitive_slug({"nominative": "Condatiscum-unknown"}))
+def test_known_genitive(self): self.assertEqual(rc.genitive_slug({"nominative": "Treviri", "genitive": None}), ("trevirorum", True))
+def test_record_genitive_uncertain(self): self.assertEqual(rc.genitive_slug({"nominative": "Metae", "genitive": "Metarum"}), ("metarum", False))
+def test_no_genitive(self): self.assertEqual(rc.genitive_slug({"nominative": "X", "genitive": None}), (None, False))
 ```
 
 - [ ] **Step 2:** Run — FAIL.
@@ -190,7 +191,7 @@ def test_never_numeric(self):
 
 **Interfaces:**
 - Consumes: Task 4 methods; Task 1 records (for given-name equivalents, death year, kind).
-- Produces: `expand(review: dict, items: dict, records: dict[str, dict], client) -> list[tuple[str, str]]` (not processed) and CLI `expand <records.json> [repo_root]`. Each op of a record's eulogy gains new candidates (with `evidence`, `source`); existing candidates get `source: "search"` if missing; `MAX_CANDIDATES` raised to 15 for expanded ops. A companion contributes relatives only when its item is decided (`reviewed`/`auto`) and its candidate is human. `kind` celebration → `title_candidates(subject)` instead of persons.
+- Produces: `expand(review: dict, items: dict, records: dict[str, dict], client) -> list[tuple[str, str]]` (not processed) and CLI `expand <records.json> [repo_root]`. Each op of a record's eulogy gains new candidates (with `evidence`, `source`); existing candidates get `source: "search"` if missing; `MAX_CANDIDATES` raised to 15 for expanded ops. A companion contributes relatives only when its item is decided (`reviewed`/`auto`) and its candidate is human. `kind` celebration → `title_candidates(subject)` instead of persons, plus `CURATED_TITLES: dict[str, str]` (eulogy → QID, seeded `{"mr:0101-maria-dei-genetrix": "Q208542"}`, curator-confirmed only) added with `source: "curated"`.
 
 - [ ] **Step 1: Write the failing tests**
 
@@ -215,7 +216,7 @@ def test_decision_untouched(self): ...    # decision/edited stay as they were
 
 **Interfaces:**
 - Produces: `build_changeset(records: list[dict], ctx: Context, subjects_la: dict, old: dict|None) -> dict` and CLI `build <records.json> <out.json> [--old <bare-names changeset>...] [repo_root]` (out refused in a work tree).
-  Op: `{"op": "rename", "id": mrid, "new_id": candidates[0].new_id, "uid": "subject:" + mrid, "class": candidates[0].category, "confidence": "high"|"medium"|"low", "candidates": [...Task 3 dicts], "reasoning": str, "subject_la": str, "decision": null}`. Only bare IDs (slug is one name token, as the bare-name pass defined) get a rename op. The old bare-name draft's `new_id`, if different, is appended as a candidate with `basis: "bare-name draft"`. `reasoning` lists the other candidates as `"also: <new_id> (<category>)"`. Confidence: low if `weak` or a rejected genitive, medium if more than one candidate, else high.
+  Op: `{"op": "rename", "id": mrid, "new_id": candidates[0].new_id, "uid": "subject:" + mrid, "class": candidates[0].category, "confidence": "high"|"medium"|"low", "candidates": [...Task 3 dicts], "reasoning": str, "subject_la": str, "decision": null}`. Only bare IDs (slug is one name token, as the bare-name pass defined) get a rename op. The old bare-name draft's `new_id`, if different, is appended as a candidate with `basis: "bare-name draft"`. `reasoning` lists the other candidates as `"also: <new_id> (<category>)"`. Confidence: low if `weak` or the genitive is not certain, medium if more than one candidate, else high.
 
 - [ ] **Step 1: Write the failing tests** — Eugendus op has `new_id` `mr:0101-eugendus-abbas-condatiscensis`, `class` `role-place`, and the old draft `mr:0101-eugendus-condatisci` among `candidates`; a non-bare ID yields no op; schema `crmedr-changeset/v1`.
 - [ ] **Step 2:** Run — FAIL.
