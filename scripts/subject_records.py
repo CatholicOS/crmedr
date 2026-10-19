@@ -1,0 +1,258 @@
+#!/usr/bin/env python3
+"""Subject identity records: the brief a research agent reads, and the check of what it writes.
+
+An identity record says who a eulogy's subject is, as the 2004 Latin text prints it:
+kind, surname, roles, places (with their grammar), cognomen, relations. Records come
+from a model reading the texts; the later steps derive ID renames and Wikidata
+candidates from them. Nothing is decided here.
+
+Usage:
+  python3 scripts/subject_records.py brief <MMa|MMb> <out.json> /path/to/martyrology-texts [repo_root]
+  python3 scripts/subject_records.py check <records.json> /path/to/martyrology-texts [repo_root]
+
+brief writes, for a half-month (a: days 1-15, b: 16-31), the Latin, Italian and English
+2004 texts, the Latin subject, the persons and their decided Wikidata items of each
+current eulogy. It quotes the 2004 edition, so it is written outside any git work tree
+(brief refuses a path inside one). check prints the errors of each record (against its
+Latin text, and its name against the eulogy's persons in data/persons.json) and exits 1 if
+there are any; it writes nothing. A record names one person: by `name`, and `n` when the
+eulogy repeats the name (persons_text.person_key).
+"""
+import json
+import re
+import sys
+from pathlib import Path
+
+from body_places import _in_a_repository, half_month
+from extract_places import EDITION_EN, EDITION_IT, load_persons
+from extract_typology import latin_texts, load_texts
+from gazetteer_text import fold
+from persons_text import person_key
+
+CLERIC_ROLES = ("episcopus", "archiepiscopus", "presbyter", "diaconus", "subdiaconus", "abbas", "abbatissa", "prior")
+
+# nominative role -> its printed forms, folded (nominative, genitive, dative, accusative, ablative)
+ROLE_FORMS = {
+    "episcopus": {"episcopus", "episcopi", "episcopo", "episcopum"},
+    "archiepiscopus": {"archiepiscopus", "archiepiscopi", "archiepiscopo", "archiepiscopum"},
+    "presbyter": {"presbyter", "presbyteri", "presbytero", "presbyterum"},
+    "diaconus": {"diaconus", "diaconi", "diacono", "diaconum"},
+    "subdiaconus": {"subdiaconus", "subdiaconi", "subdiacono", "subdiaconum"},
+    "abbas": {"abbas", "abbatis", "abbati", "abbatem", "abbate"},
+    "abbatissa": {"abbatissa", "abbatissae", "abbatissam", "abbatissa"},
+    "prior": {"prior", "prioris", "priori", "priorem", "priore"},
+    "monachus": {"monachus", "monachi", "monacho", "monachum"},
+    "eremita": {"eremita", "eremitae", "eremitam"},
+    "papa": {"papa", "papae", "papam"},
+    "martyr": {"martyr", "martyris", "martyri", "martyrem", "martyre"},
+    "virgo": {"virgo", "virginis", "virgini", "virginem", "virgine"},
+    "confessor": {"confessor", "confessoris", "confessori", "confessorem", "confessore"},
+    "rex": {"rex", "regis", "regi", "regem", "rege"},
+    "regina": {"regina", "reginae", "reginam"},
+    "propheta": {"propheta", "prophetae", "prophetam"},
+    "patriarcha": {"patriarcha", "patriarchae", "patriarcham"},
+    "iudex": {"iudex", "iudicis", "iudici", "iudicem", "iudice"},
+    "levita": {"levita", "levitae", "levitam"},
+}
+assert all(r in ROLE_FORMS for r in CLERIC_ROLES)
+
+GRAMMAR = ("adjective-person", "adjective-noun", "locative", "genitive", "ablative")
+PLACE_KINDS = ("see", "monastery", "death", "burial", "cult", "origin")
+KINDS = ("person", "celebration", "group")
+DECIDED = ("auto", "reviewed")  # person item statuses that name an item
+COGNOMEN_SOURCES = ("text", "twin", "wikidata")
+
+INFLECTION = re.compile(r"(ensis|ensi|ensem|ense|ensium|anus|ani|ano|anum|ana|anae|inus|ini|ina|inae)$")
+
+
+def _stem(s):
+    return INFLECTION.sub("", fold(s))
+
+
+def _occurrences(text, printed):
+    """Non-overlapping, case-sensitive, accents as printed."""
+    return text.count(printed) if printed else 0
+
+
+def _locate(label, item, la_text):
+    """Errors of a printed form and its occurrence index."""
+    printed, occ = item.get("printed"), item.get("occurrence")
+    if not isinstance(printed, str) or not printed or printed not in la_text:
+        return [f"{label}: printed form not in the text"]
+    n = _occurrences(la_text, printed)
+    if not isinstance(occ, int) or isinstance(occ, bool) or not 0 <= occ < n:
+        return [f"{label}: occurrence {occ} of {n}"]
+    return []
+
+
+def check_record(record, la_text):
+    """Error strings of an identity record against its Latin text; empty when valid."""
+    errors = []
+    for k in ("roles", "places"):
+        if record.get(k) is not None and not isinstance(record[k], list):
+            errors.append(f"{k}: not a list")
+            record = {**record, k: None}
+    if not isinstance(record.get("id"), str) or not record["id"]:
+        errors.append("id missing")
+    if not isinstance(record.get("name"), str) or not record["name"]:
+        errors.append("name missing")
+    n = record.get("n")
+    if n is not None and (not isinstance(n, int) or isinstance(n, bool) or n < 2):
+        errors.append(f"n: {n!r} (a repeated name's ordinal, from 2)")
+    if record.get("kind") not in KINDS:
+        errors.append(f"kind: {record.get('kind')}")
+    if not isinstance(record.get("feminine"), bool):
+        errors.append("feminine: not a boolean")
+    if record.get("surname") is not None and not isinstance(record["surname"], str):
+        errors.append("surname: not a string or null")
+    for i, r in enumerate(record.get("roles") or []):
+        label = f"roles[{i}]"
+        if not isinstance(r, dict):
+            errors.append(f"{label}: not an object")
+            continue
+        if r.get("role") not in ROLE_FORMS:
+            errors.append(f"{label}: role {r.get('role')}")
+        errors += (found := _locate(label, r, la_text))
+        if not found and r.get("role") in ROLE_FORMS and fold(r["printed"]) not in ROLE_FORMS[r["role"]]:
+            errors.append(f"{label}: {r['printed']} is not a form of {r['role']}")
+    for i, p in enumerate(record.get("places") or []):
+        label = f"places[{i}]"
+        if not isinstance(p, dict):
+            errors.append(f"{label}: not an object")
+            continue
+        if p.get("kind") not in PLACE_KINDS:
+            errors.append(f"{label}: kind {p.get('kind')}")
+        if p.get("grammar") not in GRAMMAR:
+            errors.append(f"{label}: grammar {p.get('grammar')}")
+        errors += (found := _locate(label, p, la_text))
+        for k in ("nominative", "en", "it"):
+            if not isinstance(p.get(k), str) or not p[k]:
+                errors.append(f"{label}: {k} missing")
+        if p.get("genitive") is not None and not isinstance(p["genitive"], str):
+            errors.append(f"{label}: genitive not a string or null")
+        if str(p.get("grammar", "")).startswith("adjective-"):
+            adj = p.get("adjective")
+            if not adj:
+                errors.append(f"{label}: adjective missing")
+            elif not found and _stem(adj) != _stem(p["printed"]):
+                errors.append(f"{label}: adjective {adj} does not match {p['printed']}")
+    cog = record.get("cognomen")
+    if cog is not None and (not isinstance(cog, dict) or not cog.get("value")
+                            or cog.get("source") not in COGNOMEN_SOURCES):
+        errors.append("cognomen: needs a value and a source (text, twin or wikidata)")
+    for i, rel in enumerate(record.get("relations") or []):
+        if not isinstance(rel, dict) or not rel.get("name") or not rel.get("relation"):
+            errors.append(f"relations[{i}]: needs a name and a relation")
+    year = record.get("death_year")
+    if year is not None and (not isinstance(year, int) or isinstance(year, bool)):
+        errors.append("death_year: not an integer or null")
+    for k in ("role_en", "role_it"):
+        if record.get(k) is not None and not isinstance(record[k], str):
+            errors.append(f"{k}: not a string or null")
+    return errors
+
+
+def person_errors(record, persons):
+    """Errors of a record's name against its eulogy's persons (data/persons.json): the name, and
+    its n when the eulogy repeats it, must be one of them."""
+    if record.get("name") not in {p.get("name") for p in persons}:
+        return [f"name: {record.get('name')} is not a person of this eulogy in data/persons.json"]
+    if person_key(record) not in {person_key(p) for p in persons}:
+        return [f"n: {person_key(record)} is not a person of this eulogy in data/persons.json"]
+    return []
+
+
+def check_records(records, texts, persons):
+    """One line per invalid record: an entry that is not an object, an id that is no eulogy, a
+    second record of the same person (id and person_key), or its check_record and person_errors
+    errors."""
+    lines, seen = [], set()
+    for i, r in enumerate(records):
+        if not isinstance(r, dict):
+            lines.append(f"records[{i}]: not an object")
+            continue
+        mrid = r.get("id")
+        errors = (check_record(r, texts[mrid]) + person_errors(r, persons.get(mrid, []))
+                  if isinstance(mrid, str) and mrid in texts else ["id: no such eulogy"])
+        pair = (mrid, person_key(r)) if isinstance(mrid, str) and isinstance(r.get("name"), str) else None
+        if pair in seen:
+            errors.append(f"a second record of {pair[1]}")
+        elif pair:
+            seen.add(pair)
+        if errors:
+            lines.append(f"{mrid} [{r.get('name')}]: " + "; ".join(errors))
+    return lines
+
+
+def person_record(records, name, n=None):
+    """The identity record of one person among a eulogy's records: the one with its name and n
+    (as person_key keys it, "Maria#2"); else, when the eulogy has exactly one record, that record's
+    kind alone (it may be another person's: nothing else of it applies); else None."""
+    key = person_key({"name": name, **({"n": n} if n else {})})
+    found = next((r for r in records if person_key(r) == key), None)
+    if found is not None:
+        return found
+    if len(records) == 1:
+        return {"id": records[0].get("id"), "name": name, "kind": records[0].get("kind")}
+    return None
+
+
+def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries, items):
+    """What a research agent reads for each current eulogy whose MMDD is in [first, last]."""
+    out = []
+    for e in sorted((e for e in entries if not e.get("deprecated") and first <= e["id"][3:7] <= last),
+                    key=lambda e: e["id"]):
+        mrid = e["id"]
+        out.append({"id": mrid, "la_text": texts.get(mrid, ""), "it_text": texts_it.get(mrid, ""),
+                    "en_text": texts_en.get(mrid, ""), "subject_la": subjects_la.get(mrid),
+                    "persons": persons.get(mrid, []), "same_eulogy": e.get("same_eulogy", []),
+                    "person_items": {n: i for n, i in items.get(mrid, {}).items()
+                                         if i.get("status") in DECIDED and i.get("wikidata")}})
+    return out
+
+
+def _load(repo_root, texts_repo):
+    read = lambda *p: json.loads(repo_root.joinpath(*p).read_text(encoding="utf-8"))  # noqa: E731
+    entries = read("data", "martyrology_ids.json")["entries"]
+    texts = latin_texts(entries, load_texts(texts_repo))
+    texts_it = latin_texts(entries, load_texts(texts_repo, EDITION_IT))
+    texts_en = latin_texts(entries, load_texts(texts_repo, EDITION_EN))
+    return (entries, texts, texts_it, texts_en, load_persons(repo_root), read("i18n", "la.json"),
+            read("data", "person_items.json")["persons"])
+
+
+def main(argv):
+    cmds = {"brief": 4, "check": 3}
+    if not argv or argv[0] not in cmds or len(argv) < cmds[argv[0]]:
+        sys.exit(__doc__)
+    cmd = argv[0]
+    here = Path(__file__).resolve().parent.parent
+    if cmd == "brief":
+        which, out, texts_repo = argv[1], Path(argv[2]), Path(argv[3])
+        repo_root = Path(argv[4]) if len(argv) > 4 else here
+        if _in_a_repository(out, repo_root):
+            sys.exit(f"{out}: a brief quotes the 2004 edition; write it outside the repository")
+        if not re.fullmatch(r"(0[1-9]|1[0-2])[ab]", which):
+            sys.exit(f"{which}: expected MMa or MMb (e.g. 01a)")
+        entries, texts, texts_it, texts_en, persons, subjects, items = _load(repo_root, texts_repo)
+        records = brief(*half_month(which[:2], which[2]), texts, texts_it, texts_en, persons, subjects,
+                        entries, items)
+        out.write_text(json.dumps({"batch": which, "eulogies": records}, ensure_ascii=False, indent=1) + "\n",
+                       encoding="utf-8")
+        print(f"{len(records)} eulogies in {out}")
+        return 0
+    path, texts_repo = Path(argv[1]), Path(argv[2])
+    repo_root = Path(argv[3]) if len(argv) > 3 else here
+    loaded = _load(repo_root, texts_repo)
+    texts, persons = loaded[1], loaded[4]
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    records = doc["records"] if isinstance(doc, dict) else doc
+    lines = check_records(records, texts, persons)
+    for line in lines:
+        print(line)
+    print(f"{len(records) - len(lines)} of {len(records)} records valid")
+    return 1 if lines else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

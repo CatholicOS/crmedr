@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 import sys
 import tempfile
@@ -215,6 +217,13 @@ class NameMatchReviewTest(unittest.TestCase):
                              ("Petrus", "Saint Peter"), ("Leo", "Leo"), ("Innocentius IV", "Innocent IV"),
                              ("Caecilia", "Cecilia"), ("Augustinus", "Augustine")]:
             self.assertTrue(bp.name_matches(latin, [other]), (latin, other))
+
+    def test_english_ius_as_y_and_antonius(self):
+        for latin, other in [("Hilarius", "Hilary of Poitiers"), ("Gregorius", "Saint Gregory"), ("Antonius", "Anthony"),
+                             ("Antonius", "Antoine"), ("Gregorius Nyssenus", "Gregory Nyssenus")]:
+            self.assertTrue(bp.name_matches(latin, [other.replace(" of Poitiers", "")]), (latin, other))
+        for latin, other in [("Marius", "Mary"), ("Lucius", "Lucy"), ("Hilarius", "Hilda")]:
+            self.assertFalse(bp.name_matches(latin, [other]), (latin, other))
 
 
 class LagBreakerTest(unittest.TestCase):
@@ -531,3 +540,317 @@ class VariantsTest(unittest.TestCase):
         op = review["operations"][0]
         self.assertEqual(op["also"], ["Cunegundis"])
         self.assertEqual((op["candidates"], op["failed"]), (before["candidates"], before["failed"]))
+
+
+class ExpandTest(unittest.TestCase):
+    class Client(FakeClient):
+        def __init__(self, **kw):
+            super().__init__(**kw)
+            self.kin, self.day, self.titles, self.calls = {}, [], [], []
+
+        def relatives(self, qid):
+            if qid in self.fail:
+                raise bp.WikidataError("boom")
+            return [dict(c) for c in self.kin.get(qid, [])]
+
+        def saints_by_death_day(self, month, day, given, year=None, matches=None):
+            self.calls.append((month, day, given, year))
+            self.matches = matches
+            return [dict(c, source="sparql") for c in self.day]
+
+        def title_candidates(self, text):
+            return [dict(c, source="title") for c in self.titles]
+
+    def op(self, **kw):
+        base = {"op": "resolve_person", "id": "mr:0101-ioannes-et-renatus-lego|Ioannes",
+                "eulogy": "mr:0101-ioannes-et-renatus-lego", "day": "01-01", "typology": "dies_natalis",
+                "subject": "Ioannes et Renatus Lego", "name": "Ioannes", "companions": ["Renatus Lego"],
+                "failed": [], "candidates": [dict(cand("Q9", ["John"]), evidence=["human"])],
+                "decision": None, "edited": None}
+        return dict(base, **kw)
+
+    def run_expand(self, op, client, items=None, record=None):
+        review = bp.new_changeset([op])
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": "Q2652595", "status": "reviewed"}}
+                 } if items is None else items
+        records = {op["eulogy"]: [record or {"id": op["eulogy"], "name": op["name"], "kind": "person",
+                                             "death_year": 1642}]}
+        return bp.expand(review, items, records, client), review["operations"][0]
+
+    def test_sibling_found(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        left, op = self.run_expand(self.op(), client)
+        self.assertEqual(left, [])
+        self.assertIn(("Q52161488", "companion:P3373"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+        self.assertEqual(next(c for c in op["candidates"] if c["wikidata"] == "Q9")["source"], "search")
+        self.assertIn("status", next(c for c in op["candidates"] if c["wikidata"] == "Q52161488")["evidence"])
+
+    def test_unresolved_companion_adds_nothing(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": None, "status": "unresolved",
+                                                                      "note": "x"}}}
+        _, op = self.run_expand(self.op(), client, items)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
+    def test_non_human_companion_adds_nothing(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Lego"], human=False)})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        _, op = self.run_expand(self.op(), client)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
+    def test_death_day_uses_name_equivalents_and_year(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["John Lego", "John"], died="1642-01-01")]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        month, day, given, year = client.calls[0]
+        self.assertEqual((month, day, year), (1, 1, 1642))
+        self.assertIn("Ioannes", given)
+        self.assertIn("john", given)
+        self.assertIn(("Q5", "sparql"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+
+    def test_death_day_passes_the_stem_and_keeps_only_name_matches(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Eugende"], died="0510-01-01"), cand("Q6", ["Eugenio"], died="0510-01-01")]
+        op = self.op(name="Eugendus", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Eugendus", "kind": "person"})
+        self.assertIn("eugend", client.calls[0][2])
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])  # Eugenio shares only a prefix
+        self.assertTrue(client.matches(["Eugendo"]))
+        self.assertFalse(client.matches(["Eugenio"]))
+
+    def test_death_day_filter_compares_first_words(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Jean Légo"], died="1642-01-01"), cand("Q6", ["Pierre Martin"], died="1642-01-01")]
+        _, got = self.run_expand(self.op(companions=[], candidates=[]), client)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])
+        self.assertTrue(client.matches(["Jean Légo"]))
+        self.assertFalse(client.matches(["Pierre Martin"]))
+        self.assertTrue(client.matches(["Saint Eugende"]) is False)
+
+    def test_eugendus_matches_saint_forms(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["Saint Eugende"], died="0510-01-01")]
+        op = self.op(name="Eugendus", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Eugendus", "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q5"])
+        self.assertTrue(client.matches(["Eugendo"]))
+
+    def test_multi_word_name_needs_its_other_words(self):
+        fits = bp._name_fits
+        self.assertTrue(fits("Renatus Lego", "René Lego"))
+        self.assertFalse(fits("Renatus Lego", "René Dupont"))
+        # Name particles are left out on both sides.
+        self.assertTrue(fits("Ioanna Maria de Maille", "Jeanne Marie Maille"))
+        self.assertTrue(fits("Gaspar de Bono", "Gaspar Bono"))
+        self.assertTrue(fits("Gaspar Bono", "Gaspar de Bono"))
+
+    def companion_op(self, evidence):
+        return self.op(id="mr:0101-ioannes-et-renatus-lego|Renatus Lego", name="Renatus Lego", companions=[],
+                       candidates=[dict(cand("Q2652595", ["Renatus Lego"]), evidence=evidence)])
+
+    def run_undecided(self, evidence):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}
+        ops = [self.op(), self.companion_op(evidence)]
+        review = bp.new_changeset(ops)
+        records = {ops[0]["eulogy"]: [{"id": ops[0]["eulogy"], "name": "Ioannes", "kind": "person"},
+                                      {"id": ops[0]["eulogy"], "name": "Renatus Lego", "kind": "person"}]}
+        bp.expand(review, {}, records, client)
+        return review["operations"][0]
+
+    def test_undecided_companion_with_strong_match_is_used(self):
+        op = self.run_undecided(["human", "status", "death"])
+        self.assertIn(("Q52161488", "companion:P3373"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
+
+    def test_undecided_companion_with_weak_match_is_not_used(self):
+        op = self.run_undecided(["human", "name"])
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9"])
+
+    def test_existing_qid_is_not_duplicated(self):
+        client = self.Client()
+        client.day = [cand("Q9", ["John"])]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q9", "search")])
+
+    def test_celebration_gets_titles(self):
+        client = self.Client()
+        client.titles = [cand("Q208542", ["Theotokos"], human=False, statuses=())]
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     typology="festum", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "title")])
+
+    def test_curated_title_is_added_when_search_misses_it(self):
+        client = self.Client(by_qid={"Q208542": cand("Q208542", ["Theotokos"], human=False)})
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "curated")])
+
+    def test_cap_keeps_existing_candidates(self):
+        client = self.Client()
+        client.day = [cand(f"Q{100 + i}", ["John"]) for i in range(20)]
+        _, op = self.run_expand(self.op(companions=[]), client)
+        self.assertEqual(len(op["candidates"]), bp.MAX_EXPANDED)
+        self.assertIn("Q9", {c["wikidata"] for c in op["candidates"]})
+
+    def test_decision_untouched_and_failure_continues(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        op = self.op(decision="edit", edited={"wikidata": "Q1"})
+        left, got = self.run_expand(op, client)
+        self.assertEqual([k for k, _ in left], [op["id"]])
+        self.assertEqual((got["decision"], got["edited"]), ("edit", {"wikidata": "Q1"}))
+        client = self.Client()
+        _, got = self.run_expand(self.op(decision="accept", edited=None), client)
+        self.assertEqual((got["decision"], got["edited"]), ("accept", None))
+
+    def test_existing_order_is_kept_so_accept_still_means_the_first(self):
+        client = self.Client()
+        client.day = [cand("Q5", ["John"], died="1642-01-01")]  # human, status, name, death: more evidence
+        op = self.op(companions=[], decision="accept")
+        op["candidates"][0]["evidence"] = []
+        _, got = self.run_expand(op, client)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q9", "Q5"])
+
+    def test_failed_lookup_still_marks_existing_candidates_as_search(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        _, got = self.run_expand(self.op(), client)
+        self.assertEqual(got["candidates"][0]["source"], "search")
+
+
+    def test_consecutive_failures_stop_the_lookups(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
+        ops = [self.op(id=f"mr:0101-ioannes-et-renatus-lego|Ioannes#{i}") for i in range(bp.MAX_CONSECUTIVE_FAILURES + 2)]
+        review = bp.new_changeset(ops)
+        items = {"mr:0101-ioannes-et-renatus-lego": {"Renatus Lego": {"wikidata": "Q2652595", "status": "reviewed"}}}
+        records = {"mr:0101-ioannes-et-renatus-lego": [{"id": "mr:0101-ioannes-et-renatus-lego", "name": "Ioannes",
+                                                         "kind": "person"}]}
+        left = bp.expand(review, items, records, client)
+        self.assertEqual(len(left), len(ops))
+        self.assertEqual([e for _, e in left[bp.MAX_CONSECUTIVE_FAILURES:]], ["skipped: Wikidata unavailable"] * 2)
+
+
+    def test_a_title_item_the_search_also_returns_keeps_its_provenance(self):
+        title = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), evidence=[], source="curated")
+        old = self.op(candidates=[title])
+        person = {k: old[k] for k in ("eulogy", "day", "typology", "subject", "name", "companions")}
+        person["where"] = "text"
+        found = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), evidence=[])
+        op = bp.make_op(old["id"], person, {"failed": [], "candidates": [found]}, old)
+        self.assertEqual([(c["wikidata"], c.get("source")) for c in op["candidates"]], [("Q208542", "curated")])
+
+    def test_expand_marks_a_searched_title_item_as_title(self):
+        client = self.Client()
+        client.titles = [cand("Q208542", ["Theotokos"], human=False, statuses=())]
+        op = self.op(eulogy="mr:0101-maria-dei-genetrix", id="mr:0101-maria-dei-genetrix|Maria", name="Maria",
+                     companions=[], typology="celebratio",
+                     candidates=[dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), evidence=[])])
+        _, got = self.run_expand(op, client, items={}, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "title")])
+
+    def test_propose_keeps_the_expanded_candidates(self):
+        old = self.op(candidates=[dict(cand("Q9", ["John"]), evidence=["human"], source="search"),
+                                  dict(cand("Q52161488", ["Jean Légo"]), evidence=[], source="companion:P3373")])
+        person = {k: old[k] for k in ("eulogy", "day", "typology", "subject", "name", "companions")}
+        person["where"] = "text"
+        op = bp.make_op(old["id"], person, {"failed": [], "candidates": [dict(cand("Q9", ["John"]), evidence=["human"])]}, old)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q9", "Q52161488"])
+        self.assertEqual(op["candidates"][1]["source"], "companion:P3373")
+        self.assertIn("status", op["candidates"][1]["evidence"])  # recomputed
+
+
+class RecordMatchTest(unittest.TestCase):
+    """expand takes a person's own record (name and n), else only the kind of the eulogy's only record."""
+    Client = ExpandTest.Client
+
+    def op(self, name, n=None):
+        mrid = "mr:0101-ioannes-et-renatus-lego"
+        return {"op": "resolve_person", "id": f"{mrid}|{name}" + (f"#{n}" if n else ""), "eulogy": mrid,
+                "day": "01-01", "typology": "dies_natalis", "subject": "Ioannes et Renatus Lego", "name": name,
+                **({"n": n} if n else {}), "companions": [], "failed": [], "candidates": [],
+                "decision": None, "edited": None}
+
+    def years(self, op, records):
+        client = self.Client()
+        bp.expand(bp.new_changeset([op]), {}, {op["eulogy"]: records}, client)
+        return [year for _, _, _, year in client.calls]
+
+    def test_another_persons_record_lends_no_death_year(self):
+        renatus = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "Renatus Lego", "kind": "person",
+                   "death_year": 1642}
+        self.assertEqual(self.years(self.op("Ioannes"), [renatus]), [None])  # its kind only
+        self.assertEqual(self.years(self.op("Renatus Lego"), [renatus]), [1642])
+
+    def test_a_repeated_name_takes_the_record_with_its_n(self):
+        first = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "Ioannes", "kind": "person", "death_year": 300}
+        second = dict(first, n=2, death_year=304)
+        self.assertEqual(self.years(self.op("Ioannes", 2), [first, second]), [304])
+        self.assertEqual(self.years(self.op("Ioannes"), [second, first]), [300])
+
+    def test_no_record_of_its_own_among_several(self):
+        a = {"id": "mr:0101-ioannes-et-renatus-lego", "name": "A", "kind": "person"}
+        self.assertEqual(self.years(self.op("Ioannes"), [a, dict(a, name="B")]), [])
+
+
+class TitleApplyTest(unittest.TestCase):
+    INDEX = {"mr:0101-maria-dei-genetrix|Maria": {"eulogy": "mr:0101-maria-dei-genetrix", "name": "Maria",
+                                                  "day": "01-01", "typology": "festum", "where": "text",
+                                                  "subject": "Sollemnitas sanctae Dei Genetricis Mariae",
+                                                  "companions": []}}
+
+    def apply(self, source, decision="accept", edited=None):
+        title = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), source=source)
+        op = {"op": "resolve_person", "id": "mr:0101-maria-dei-genetrix|Maria",
+              "eulogy": "mr:0101-maria-dei-genetrix", "name": "Maria", "failed": [], "candidates": [title],
+              "decision": decision, "edited": edited}
+        items, review = {}, bp.new_changeset([dict(op, decision=None)])
+        bp.apply_decisions(items, review, bp.new_changeset([op]), self.INDEX, FakeClient())
+        return items, review
+
+    def test_a_celebration_card_applies_its_title_item(self):
+        items, review = self.apply("curated")
+        self.assertEqual(items, {"mr:0101-maria-dei-genetrix": {"Maria": {"wikidata": "Q208542",
+                                                                          "status": "reviewed"}}})
+        self.assertEqual(review["operations"], [])
+        self.assertEqual(bp.validate(items, self.INDEX), [])
+        items, _ = self.apply("title", "edit", {"wikidata": "Q208542"})
+        self.assertEqual(items["mr:0101-maria-dei-genetrix"]["Maria"]["wikidata"], "Q208542")
+
+    def test_a_non_human_from_the_search_is_still_refused(self):
+        with self.assertRaisesRegex(ValueError, "not a human with a saint"):
+            self.apply("search")
+
+
+    def test_verify_suggestions_accepts_a_title_item(self):
+        title = dict(cand("Q208542", ["Theotokos"], human=False, statuses=()), source="curated")
+        op = {"id": "mr:0101-maria-dei-genetrix|Maria", "candidates": [title], "confidence": "high",
+              "suggested": {"wikidata": "Q208542"}}
+        self.assertEqual(bp.verify_suggestions(bp.new_changeset([op]), FakeClient()), [])
+        op = dict(op, candidates=[dict(title, source="search")])
+        self.assertTrue(bp.verify_suggestions(bp.new_changeset([op]), FakeClient()))
+
+
+class ExportTest(unittest.TestCase):
+    def test_one_months_ops(self):
+        review = bp.new_changeset([{"id": "mr:0101-a|A", "eulogy": "mr:0101-a"},
+                                   {"id": "mr:0201-b|B", "eulogy": "mr:0201-b"},
+                                   {"id": "mr:0131-c|C", "eulogy": "mr:0131-c"}])
+        with tempfile.TemporaryDirectory() as root, tempfile.TemporaryDirectory() as away:
+            (Path(root) / "data").mkdir()
+            (Path(root) / "data" / "person_items_review.json").write_text(json.dumps(review))
+            out = Path(away) / "01.json"
+            with contextlib.redirect_stdout(io.StringIO()):
+                bp.main(["export", "01", str(out), root])
+            doc = json.loads(out.read_text())
+        self.assertEqual(doc["schema"], bp.SCHEMA)
+        self.assertEqual([op["id"] for op in doc["operations"]], ["mr:0101-a|A", "mr:0131-c|C"])
+
+    def test_refused_inside_a_work_tree_and_a_bad_month(self):
+        here = Path(__file__).resolve()
+        with self.assertRaisesRegex(SystemExit, "outside any git work tree"):
+            bp.main(["export", "01", str(here.parent / "out.json")])
+        with self.assertRaises(SystemExit):
+            bp.main(["export", "13", "/nowhere/out.json"])
+        self.assertFalse((here.parent / "out.json").exists())

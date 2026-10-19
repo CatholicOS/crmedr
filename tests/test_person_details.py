@@ -47,6 +47,12 @@ class LifeDateTest(unittest.TestCase):
     def test_the_old_date_helper_is_unchanged(self):
         self.assertEqual(wd._date({"P569": [claim("+0329-00-00T00:00:00Z")]}, "P569"), "0329")
 
+    def test_the_old_date_helper_prefers_a_preferred_day_and_skips_deprecated(self):
+        claims = {"P570": [claim("+0379-00-00T00:00:00Z"), claim("+0378-00-00T00:00:00Z", rank="deprecated"),
+                           claim("+0379-01-01T00:00:00Z", 11, rank="preferred")]}
+        self.assertEqual(wd._date(claims, "P570"), "0379-01-01")
+        self.assertIsNone(wd._date({"P570": [claim("+0378-00-00T00:00:00Z", rank="deprecated")]}, "P570"))
+
     def test_undated(self):
         self.assertIsNone(wd.life_date({}, "P569"))
         self.assertIsNone(wd.life_date({"P569": [{"mainsnak": {"snaktype": "somevalue"}}]}, "P569"))
