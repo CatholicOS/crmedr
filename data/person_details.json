@@ -771,6 +771,40 @@
       "pt": "Jerônimo"
     }
   },
+  "Q44258": {
+    "description": {
+      "en": "4th-century Christian bishop, theologian, and saint (329–379)",
+      "it": "vescovo e teologo greco antico",
+      "fr": "évêque et théologien chrétien, saint, père et Docteur de l’Église",
+      "de": "Asket, Bischof und einer der bedeutendsten Kirchenlehrer im spätantiken Christentum",
+      "es": "obispo y padre de la Iglesia Griega",
+      "pt": "santo"
+    },
+    "born": {
+      "year": 329,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 379,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Basil of Caesarea.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Basil of Caesarea",
+      "it": "San Basilio",
+      "fr": "Basile de Césarée",
+      "de": "Basilius der Große",
+      "es": "Basilio el Grande",
+      "pt": "Basílio de Cesareia"
+    }
+  },
   "Q44281": {
     "description": {
       "en": "Spanish Catholic priest and theologian (1491–1556)",
@@ -1222,6 +1256,39 @@
       "pt": "Pedro Regalado"
     }
   },
+  "Q60059": {
+    "description": {
+      "en": "German-Dominican friar and saint (c. 1200–1280)",
+      "it": "vescovo cattolico, religioso e santo tedesco",
+      "fr": "dominicain, savant, philosophe et théologien germanique",
+      "de": "deutscher Gelehrter und Bischof sowie Kirchenlehrer und Schutzpatron der Naturwissenschaftler",
+      "es": "obispo y doctor de la Iglesia, teólogo, filósofo y polímata medieval alemán"
+    },
+    "born": {
+      "year": 1200,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 1280,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "AlbertusMagnus.jpg",
+      "author": "Tommaso da Modena",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Albertus Magnus",
+      "it": "Alberto Magno",
+      "fr": "Albert le Grand",
+      "de": "Albertus Magnus",
+      "es": "Alberto Magno",
+      "pt": "Alberto Magno"
+    }
+  },
   "Q60619": {
     "description": {
       "en": "German catholic priest (1813-1865)",
@@ -1254,6 +1321,39 @@
       "de": "Adolph Kolping",
       "es": "Adolfo Kolping",
       "pt": "Adolph Kolping"
+    }
+  },
+  "Q60790": {
+    "description": {
+      "en": "German Catholic priest, Dominican friar and writer (1190–1237)",
+      "it": "domenicano tedesco",
+      "fr": "frère et écrivain saxon",
+      "de": "niedersächsischer Seliger",
+      "es": "sacerdote católico de Alemania"
+    },
+    "born": {
+      "year": 1190,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1237,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jordan de Sajonia.jpg",
+      "author": null,
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Jordan of Saxony",
+      "it": "Giordano di Sassonia",
+      "fr": "Jourdain de Saxe",
+      "de": "Jordan von Sachsen",
+      "es": "Jordán de Sajonia",
+      "pt": "Jordão da Saxônia"
     }
   },
   "Q60889": {
@@ -1610,6 +1710,38 @@
       "de": "Vizelin"
     }
   },
+  "Q68268": {
+    "description": {
+      "en": "German nun and mystic",
+      "it": "suora tedesca",
+      "fr": "moniale et mystique allemande",
+      "de": "katholische Mystikerin des Mittelalters"
+    },
+    "born": {
+      "year": 1291,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1351,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Margarete-ebner-grab.jpg",
+      "author": "The original uploader was Sr. F at German Wikipedia.",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Margareta Ebner",
+      "it": "Margareta Ebner",
+      "fr": "Marguerite Ebner",
+      "de": "Margareta Ebner",
+      "es": "Margareta Ebner",
+      "pt": "Margarida Ebner"
+    }
+  },
   "Q70504": {
     "description": {
       "en": "Roman Catholic saint",
@@ -1867,6 +1999,36 @@
       "pt": "Willigis"
     }
   },
+  "Q78381": {
+    "description": {
+      "en": "German Roman Catholic nun (1883–1918)",
+      "it": "religiosa tedesca",
+      "de": "deutsche Ordensschwester; Selige der römisch-katholischen Kirche"
+    },
+    "born": {
+      "year": 1883,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1918,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Blandine Merten.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Blandine Merten",
+      "it": "Blandina del Sacro Cuore",
+      "fr": "Blandine Merten",
+      "de": "Blandine Merten",
+      "es": "Blandina del Sagrado Corazón"
+    }
+  },
   "Q78649": {
     "description": {
       "en": "Roman Catholic missionary and saint (1865–1939)",
@@ -2090,6 +2252,35 @@
       "pt": "Papa Pio I"
     }
   },
+  "Q83729": {
+    "description": {
+      "en": "Spanish friar",
+      "it": "sacerdote spagnolo",
+      "fr": "religieux"
+    },
+    "born": {
+      "year": 1530,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1604,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "GasparDeBono.jpg",
+      "author": "Pietro Leone Bombelli",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Gaspar de Bono",
+      "it": "Gaspare de Bono",
+      "fr": "Gaspard de Bono",
+      "es": "Gaspar de Bono"
+    }
+  },
   "Q84547": {
     "description": {
       "en": "Polish beatified nun, Catholic",
@@ -2153,6 +2344,35 @@
       "pt": "Luís Maria Grignion de Montfort"
     }
   },
+  "Q89047": {
+    "description": {
+      "en": "Austrian priest (1897–1924)",
+      "it": "presbitero austriaco",
+      "de": "Prämonstratenser-Chorherr"
+    },
+    "born": {
+      "year": 1897,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1924,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jakob Kern 1912.jpg",
+      "author": "Josef Henk († 1929)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Franz Alexander Kern",
+      "it": "Giacomo Kern",
+      "fr": "Jakob Kern",
+      "de": "Jakob Franz Alexander Kern"
+    }
+  },
   "Q93667": {
     "description": {
       "en": "Bishop of Lindisfarne; Bishop of Hexham; Saint",
@@ -2181,6 +2401,36 @@
       "en": "Eata of Hexham",
       "fr": "Eata de Hexham",
       "de": "Eata von Hexham"
+    }
+  },
+  "Q96496": {
+    "description": {
+      "en": "German Catholic nun (1914-1955)",
+      "it": "religiosa tedesca (1914-1955)",
+      "fr": "religieuse tchèque (+1955), béatifiée",
+      "de": "deutsche Clemensschwester"
+    },
+    "born": {
+      "year": 1914,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1955,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Maria Euthymia Gedenkweg Halverde 4.jpg",
+      "author": "J.-H. Janßen",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Euthymia Üffing",
+      "it": "Maria Euthymia Üffing",
+      "fr": "Marie Euthymie Üffing",
+      "de": "Euthymia Üffing"
     }
   },
   "Q97339": {
@@ -2409,6 +2659,40 @@
       "de": "Gregor II. (Papst)",
       "es": "Gregorio II",
       "pt": "Papa Gregório II"
+    }
+  },
+  "Q103328": {
+    "description": {
+      "en": "pope",
+      "it": "80° vescovo di Roma e papa della Chiesa cattolica dal 682 al 683",
+      "fr": "80e pape de l'Église catholique, de 682 à 683",
+      "de": "Papst",
+      "es": "80.° papa de la Iglesia Católica",
+      "pt": "80º papa da Igreja Católica"
+    },
+    "born": {
+      "year": 611,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 683,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "LeoII.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Leo II",
+      "it": "Papa Leone II",
+      "fr": "Léon II (pape)",
+      "de": "Leo II. (Papst)",
+      "es": "León II (papa)",
+      "pt": "Papa Leão II"
     }
   },
   "Q103404": {
@@ -3833,6 +4117,40 @@
       "pt": "Fabíola de Roma"
     }
   },
+  "Q163787": {
+    "description": {
+      "en": "pope",
+      "it": "81° vescovo di Roma e papa della Chiesa cattolica dal 684 al 685",
+      "fr": "81e pape de l’Église catholique, de 684 à 685",
+      "de": "Papst",
+      "es": "81.er papa de la Iglesia Católica",
+      "pt": "81º Papa da Igreja Católica de 684 a 685"
+    },
+    "born": {
+      "year": 635,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 685,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "BenedictII.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Benedict II",
+      "it": "Papa Benedetto II",
+      "fr": "Benoît II",
+      "de": "Benedikt II.",
+      "es": "Benedicto II",
+      "pt": "Papa Bento II"
+    }
+  },
   "Q163900": {
     "description": {
       "en": "Spanish Catholic saint and missionary (1506–1552)",
@@ -4129,6 +4447,40 @@
       "de": "Simplicius",
       "es": "Simplicio (papa)",
       "pt": "Papa Simplício"
+    }
+  },
+  "Q169301": {
+    "description": {
+      "en": "pope of the Catholic Church from 1303 to 1304",
+      "it": "194° vescovo di Roma e papa della Chiesa cattolica dal 1303 al 1304",
+      "fr": "194e pape de l’Église catholique, de 1303 à 1304",
+      "de": "194. Papst der katholischen Kirche",
+      "es": "194.º papa de la Iglesia católica",
+      "pt": "194º Papa da Igreja Católica"
+    },
+    "born": {
+      "year": 1240,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1304,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "39 Benedetto XI.jpg",
+      "author": "Tommaso da Modena",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Benedict XI",
+      "it": "Papa Benedetto XI",
+      "fr": "Benoît XI",
+      "de": "Benedikt XI.",
+      "es": "Benedicto XI",
+      "pt": "Papa Bento XI"
     }
   },
   "Q170164": {
@@ -4839,6 +5191,40 @@
       "de": "Eduard der Märtyrer",
       "es": "Eduardo el Mártir",
       "pt": "Eduardo, o Mártir"
+    }
+  },
+  "Q193754": {
+    "description": {
+      "en": "Italian saint, priest, stigmatist and mystic",
+      "it": "presbitero cappuccino, mistico e santo italiano (1887-1968)",
+      "fr": "prêtre capucin, mystique et saint catholique italien",
+      "de": "italienischer Ordenspriester, Kapuziner, Heiliger",
+      "es": "místico y sacerdote católico italiano",
+      "pt": "santo católico italiano e frade capuchinho estigmatizado"
+    },
+    "born": {
+      "year": 1887,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1968,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Padre Pio portrait.jpg",
+      "author": "The original uploader was Manfredonia at Italian Wikipedia.",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Padre Pio",
+      "it": "Pio da Pietrelcina",
+      "fr": "Padre Pio",
+      "de": "Pio von Pietrelcina",
+      "es": "Pío de Pietrelcina",
+      "pt": "Padre Pio"
     }
   },
   "Q196527": {
@@ -6202,6 +6588,37 @@
       "de": "Jean-Marie Vianney",
       "es": "Juan María Vianney",
       "pt": "João Maria Vianney"
+    }
+  },
+  "Q247270": {
+    "description": {
+      "en": "Italian Dominican martyr (1425–1460)",
+      "it": "Martire religioso italiano",
+      "fr": "martyr dominicain italien",
+      "de": "italienischer dominikanischer Märtyrer",
+      "pt": "padre católico dominicano e mártir italiano (1425–1460)"
+    },
+    "born": {
+      "year": 1425,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 1460,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Anthonyneyrot.JPG",
+      "author": "Unknown, Italian",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Anthony Neyrot",
+      "it": "Antonio Neirotti",
+      "fr": "Antoine Neyrot",
+      "pt": "Antônio Neyrot"
     }
   },
   "Q252055": {
@@ -15676,6 +16093,39 @@
       "es": "Rómulo de Génova"
     }
   },
+  "Q1115667": {
+    "description": {
+      "en": "Roman saint and martyr",
+      "it": "monaco e martire dell'Anatolia",
+      "fr": "martyr et saint chrétien",
+      "de": "Mönch und Märtyrer",
+      "es": "mártir y santo romano"
+    },
+    "born": {
+      "year": 301,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 404,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Foxe's Christian martyrs of the world; the story of the advance of Christianity from Bible times to latest periods of persecution (1907) (14780749791).jpg",
+      "author": "Internet Archive Book Images",
+      "license": "No restrictions",
+      "license_url": "https://www.flickr.com/commons/usage/"
+    },
+    "wikipedia": {
+      "en": "Saint Telemachus",
+      "it": "Telemaco (martire)",
+      "fr": "Télémaque de Rome",
+      "de": "Telemachus (Märtyrer)",
+      "es": "Telémaco (santo)",
+      "pt": "Telêmaco de Roma"
+    }
+  },
   "Q1115957": {
     "description": {
       "en": "saint",
@@ -16982,6 +17432,36 @@
       "es": "Landelino"
     }
   },
+  "Q1385227": {
+    "description": {
+      "en": "Frankish bishop and saint",
+      "it": "vescovo e abate franco",
+      "fr": "moine évangélisateur",
+      "de": "Abt, Bischof und Heiliger"
+    },
+    "born": {
+      "year": 644,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 713,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Lobbes - saint Ursmer - buste-reliquaire - 2025-09-28 - 01.jpg",
+      "author": "Jmh2o",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Ursmar",
+      "it": "Ursmaro di Lobbes",
+      "fr": "Ursmer de Lobbes",
+      "de": "Ursmar von Lobbes"
+    }
+  },
   "Q1390781": {
     "description": {
       "en": "Exarch of the Russian Catholic Church (1879-1935)",
@@ -17450,6 +17930,37 @@
       "pt": "João de Ribera"
     }
   },
+  "Q1696980": {
+    "description": {
+      "en": "French saint",
+      "it": "mistica francese",
+      "fr": "religieuse française",
+      "de": "französische Heilige"
+    },
+    "born": {
+      "year": 1331,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1414,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Statue Bienheureuse-Jeanne-Marie-de-Maillé.jpg",
+      "author": "Ideefixe",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Jeanne-Marie de Maille",
+      "it": "Giovanna Maria de Maillé",
+      "fr": "Jeanne-Marie de Maillé",
+      "de": "Johanna Maria de Maillé",
+      "pt": "Jeanne-Marie de Maille"
+    }
+  },
   "Q1698425": {
     "description": {
       "en": "French monk and catholic priest (1394-1471)",
@@ -17837,6 +18348,39 @@
       "fr": "Noël Chabanel",
       "de": "Noël Chabanel",
       "es": "Natalio Chabanel"
+    }
+  },
+  "Q1886600": {
+    "description": {
+      "en": "Jesuit missionary and martyr (1601-1648)",
+      "it": "missionario francese",
+      "fr": "prêtre missionnaire jésuite et martyr",
+      "de": "französischer Jesuit und Missionar",
+      "es": "santo y mártir jesuita francés"
+    },
+    "born": {
+      "year": 1601,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1648,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "North American Martyrs.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Antoine Daniel",
+      "it": "Antonio Daniel",
+      "fr": "Antoine Daniel (jésuite)",
+      "de": "Antoine Daniel (Geistlicher)",
+      "es": "Antonio Daniel",
+      "pt": "Antoine Daniel"
     }
   },
   "Q1911506": {
@@ -18939,6 +19483,38 @@
       "pt": "Simão Fidati"
     }
   },
+  "Q2398209": {
+    "description": {
+      "en": "catholic saint and superior of the Third Order of Mercedarians",
+      "it": "religiosa spagnola",
+      "fr": "artiste espagnole",
+      "de": "katholische Heilige und Oberin des Dritten Ordens der Mercedarier",
+      "es": "fundadora de la rama femenina de la orden mercedaria"
+    },
+    "born": {
+      "year": 1230,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1290,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Basílica de la Mercè 11 Maria de Cervelló.JPG",
+      "author": "Jordiferrer",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Maria de Cervelló",
+      "it": "Maria de Cervellòn",
+      "fr": "María de Cervelló",
+      "de": "Maria de Cervelló",
+      "es": "María de Cervelló"
+    }
+  },
   "Q2417845": {
     "description": {
       "en": "patroness of First Holy Communicants",
@@ -19496,6 +20072,26 @@
       "pt": "Rodrigo de Córdova"
     }
   },
+  "Q2652595": {
+    "description": {
+      "de": "französischer Priester und Märtyrer"
+    },
+    "born": {
+      "year": 1764,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "fr": "René Lego",
+      "de": "René Lego"
+    }
+  },
   "Q2656070": {
     "description": {
       "en": "Spanish Discalced Carmelite nun (1550-1626)",
@@ -19558,6 +20154,38 @@
       "de": "Rosendo de Celanova",
       "es": "Rosendo (santo)",
       "pt": "Rosendo de Celanova"
+    }
+  },
+  "Q2664060": {
+    "description": {
+      "en": "Italian franciscan friar, missionary, bishop, martyr, Catholic saint (1833-1900)",
+      "it": "vescovo, missionario, martire e santo italiano (1833-1900)",
+      "fr": "évêque catholique (1833-1900)",
+      "de": "römisch-katholischer Bischof",
+      "es": "Santo obispo católico italiano martirizado en China (sg. XIX)"
+    },
+    "born": {
+      "year": 1833,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1900,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "San Gregorio Maria Grassi.jpg",
+      "author": "op unknown",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Gregorio Grassi",
+      "it": "Gregorio Maria Grassi",
+      "fr": "Grégoire Grassi",
+      "es": "Gregorio Grassi",
+      "pt": "Gregório Grassi"
     }
   },
   "Q2696798": {
@@ -19865,6 +20493,31 @@
       "en": "Agatha Lin",
       "fr": "Agathe Lin Zhao",
       "de": "Agatha Lin"
+    }
+  },
+  "Q2853634": {
+    "description": {
+      "en": "French politician",
+      "it": "politico francese, membro dell'Assemblea Nazionale",
+      "fr": "personnalité politique française, prêtre catholique, mort en déportation et béatifié",
+      "de": "französischer Politiker, Mitglied der Nationalversammlung",
+      "es": "político francés",
+      "pt": "político francês"
+    },
+    "born": {
+      "year": 1729,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "fr": "Antoine Banassat",
+      "de": "Antoine Banassat"
     }
   },
   "Q2899301": {
@@ -21748,6 +22401,36 @@
       "es": "Potito"
     }
   },
+  "Q3949268": {
+    "description": {
+      "en": "Italian Christian anchorite (1182–1242)",
+      "it": "religiosa e santa italiana",
+      "fr": "religieuse catholique et saint italienne",
+      "de": "Heilige",
+      "es": "santa italiana"
+    },
+    "born": {
+      "year": 1182,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1242,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "S.Verdiana, Museo di Santa Verdiana.jpg",
+      "author": "anonimo pittore senese del XIV secolo",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Verdiana",
+      "it": "Verdiana (religiosa)",
+      "es": "Viridiana de Castelfiorentino"
+    }
+  },
   "Q3950853": {
     "description": {
       "en": "bishop of Carthage",
@@ -22850,6 +23533,37 @@
       "es": "Ángela Salawa"
     }
   },
+  "Q4779600": {
+    "description": {
+      "en": "venerated as a martyr by the Catholic Church/Eastern Orthodox Church",
+      "it": "santo romano",
+      "fr": "martyr et saint chrétien",
+      "de": "christlicher Heiliger und Märtyrer",
+      "es": "mártir cristiano (f. 306)"
+    },
+    "born": {
+      "year": 287,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 306,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Amfiano.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Amphian",
+      "it": "Appiano di Cesarea marittima",
+      "de": "Apphianus",
+      "es": "Anfiano"
+    }
+  },
   "Q4926301": {
     "description": {
       "en": "Catholic priest martyred during the English Reformation",
@@ -23885,6 +24599,36 @@
     },
     "died": {
       "year": 1839,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q9157169": {
+    "description": {},
+    "born": {
+      "year": 1768,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1840,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q9157170": {
+    "description": {},
+    "born": {
+      "year": 1769,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1838,
       "precision": "year",
       "circa": false
     },
@@ -25728,6 +26472,34 @@
       "it": "Ugolino Magalotti"
     }
   },
+  "Q15995788": {
+    "description": {
+      "en": "Papuan catholic saint",
+      "it": "catechista, martire e santo papuano",
+      "fr": "saint catholique papou",
+      "de": "Katechet und Märtyrer aus Papua",
+      "es": "santo católico papú"
+    },
+    "born": {
+      "year": 1912,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1945,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Peter To Rot",
+      "it": "Peter To Rot",
+      "fr": "Peter To Rot",
+      "de": "Peter To Rot",
+      "es": "Peter To Rot",
+      "pt": "Peter To Rot"
+    }
+  },
   "Q16027443": {
     "description": {
       "en": "martyr and bishops of Sens",
@@ -26852,6 +27624,34 @@
       "de": "Joseph Pellé"
     }
   },
+  "Q61413636": {
+    "description": {
+      "it": "beato",
+      "fr": "ermite italien"
+    },
+    "born": {
+      "year": 1267,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 1342,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Blessed gerardo cagnoli.png",
+      "author": "unknown",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Gerardo Cagnoli",
+      "it": "Gerardo Cagnoli",
+      "fr": "Gérard Cagnoli",
+      "es": "Gerardo Cagnoli"
+    }
+  },
   "Q63061559": {
     "description": {
       "it": "protomartire cristiano trentino"
@@ -26969,6 +27769,27 @@
     },
     "wikipedia": {
       "it": "Toscana di Zevio"
+    }
+  },
+  "Q94439980": {
+    "description": {
+      "en": "Italian Roman Catholic friar and blessed",
+      "it": "frate e beato cattolico italiano",
+      "fr": "frère et bienheureux catholique italien"
+    },
+    "born": {
+      "year": 1424,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1494,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "it": "Antonio dell'Aquila"
     }
   },
   "Q106332558": {
