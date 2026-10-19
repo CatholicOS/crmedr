@@ -98,22 +98,22 @@ Counted over the 3,050 bare-name drafts (classes and the drafters' "place as pri
 
 - **R1. The printed adjective first.** When the 2004 Latin prints the place as an adjective of the
   subject or of the subject's role (*abbátis Condatiscénsis*, *epíscopi Pictaviénsis*), the slug takes that
-  adjective in the nominative, agreeing with the subject (`-condatiscensis`, `-pictaviensis`; with R2 a
-  cleric also takes the role: `mr:0101-eugendus-abbas-condatiscensis`). This is the print's own form and the conventional Latin name (*Hilarius
+  adjective in the nominative, agreeing with the subject (`-condatiscensis`, `-pictaviensis`; a cleric
+  too, by R2: `mr:0101-eugendus-condatiscensis`). This is the print's own form and the conventional Latin name (*Hilarius
   Pictaviensis*, *Gregorius Turonensis*); nothing is coined. The genitive stays the rule when the print
-  gives a locative or genitive (*Tréviris* → `-trevirorum`). Consistency becomes "one form per place and
+  gives a locative or genitive (*Tréviris* → `-trevirorum`); a singular locative in *-æ* or *-i* has the
+  genitive's form and gives it, not certain (*Gualdi Captaneórum* → `-gualdi-captaneorum`, the whole name). Consistency becomes "one form per place and
   per kind": all *Pictaviensis* subjects take `-pictaviensis`, so `mr:0113-hilarius` and
   `mr:0114-hilarius` still agree.
   An adjective of a place noun, not of the person (*in monasterio Bodacensi*, *in pago Dumbensi*), is
   turned into the subject's adjective the same way (`mr:0127-marius-bodacensis`): decided.
-- **R2. Role and place for clerics.** A cleric's slug carries the role, in the nominative, before the
-  place: `mr:0101-eugendus-abbas-condatiscensis`, `mr:0114-hilarius-episcopus-pictaviensis`,
-  `mr:0113-agricius-episcopus-trevirorum` (decided). *Clerics* here (the builder's reading, to be confirmed
-  on the January cards): the ordained (*episcopus*, *archiepiscopus*, *presbyter*, *diaconus*,
-  *subdiaconus*) and the superiors of a monastery (*abbas*, *abbatissa*, *prior*), whose place is their see
-  or monastery. Others (*monachus*, *eremita*, *virgo*, lay people) take the place alone. The higher tiers
-  still win: a surname (rule 1), a cognomen or a twin's discriminator (`mr:0101-basilius-magnus`), and
-  `-papa` for popes, which already is a role. A cleric with no printed place takes the role alone
+- **R2. The place alone, for clerics too** (curator, 2026-10-19, from the January cards; it replaces
+  "role and place for clerics"). A cleric's slug takes the place alone, as anyone's:
+  `mr:0101-eugendus-condatiscensis`, `mr:0101-odilo-cluniacensis`, `mr:0102-mainchinus-limerici`. No
+  *abbas*, *episcopus* or *presbyter* before it. The higher tiers still win: a surname (rule 1), a
+  cognomen or a twin's discriminator (`mr:0101-basilius-magnus`), and `-papa` for popes
+  (`mr:0102-telesphorus-papa`, not `-romae`). With no place the 2004 Latin prints (a region like
+  *Campánia* is not one: `mr:0101-iustinus-episcopus`), or none that gives a slug, the role alone
   (`-episcopus`), flagged weak like a class word (*martyr*, *virgo*, *confessor*), which is used only when
   nothing else is printed.
 - **R3. Labels follow the ID.** The Latin subject takes the discriminator the slug takes ("Sanctus
@@ -268,6 +268,7 @@ and file layout within the components above.
 ## Curator's decisions (2026-10-18)
 
 1. R1: yes, the printed adjective first, also for an adjective of a place noun.
-2. R2: role and place for clerics.
+2. R2: role and place for clerics. Revised 2026-10-19 on the January cards: the place alone, for
+   clerics too (see R2 above).
 3. One clause of the 2004 Latin and English per card may be sent to TypeSafe.
 4. The records and change-sets stay private: uploaded by hand to the server, never committed.

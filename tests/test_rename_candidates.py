@@ -85,21 +85,13 @@ CTX = rc.Context(taken={}, twins={"mr:0101-basilius": ["mr:0614-basilius-magnus"
 
 
 class Candidates(unittest.TestCase):
-    def test_cleric_role_place_first(self):
-        c = rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", CTX)
-        self.assertEqual(c[0]["new_id"], "mr:0101-eugendus-abbas-condatiscensis")
-        self.assertEqual(c[0]["category"], "role-place")
-        self.assertEqual(c[0]["labels"]["la"], "Sanctus Eugendus abbas Condatiscensis")
-        self.assertEqual(c[0]["labels"]["en"], "Saint Eugendus, abbot of Condat")
-        self.assertEqual(c[0]["labels"]["it"], "Sant’Eugendo, abate di Condat")
-        self.assertFalse(c[0]["weak"])
-
-    def test_cleric_place_alone_second(self):
+    def test_cleric_takes_the_place_alone(self):
         c = rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", CTX)
         self.assertEqual([(x["new_id"], x["category"]) for x in c],
-                         [("mr:0101-eugendus-abbas-condatiscensis", "role-place"),
-                          ("mr:0101-eugendus-condatiscensis", "place-adjective")])
-        self.assertEqual(c[1]["labels"]["en"], "Saint Eugendus of Condat")
+                         [("mr:0101-eugendus-condatiscensis", "place-adjective")])
+        self.assertEqual(c[0]["labels"], {"la": "Sanctus Eugendus Condatiscensis", "en": "Saint Eugendus of Condat",
+                                          "it": "Sant’Eugendo di Condat"})
+        self.assertFalse(c[0]["weak"])
 
     def test_twin_wins(self):
         c = rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", CTX)
@@ -110,7 +102,7 @@ class Candidates(unittest.TestCase):
     def test_twin_disagreement_dropped(self):
         ids = [x["new_id"] for x in rc.candidates(BASILIUS, "mr:0101-basilius", "Sanctus Basilius", CTX)]
         self.assertEqual(ids, ["mr:0101-basilius-magnus"])
-        self.assertIn(("mr:0101-basilius-episcopus-caesareae", "twin disagreement"),
+        self.assertIn(("mr:0101-basilius-caesareae", "twin disagreement"),
                       rc.rejected(BASILIUS, "mr:0101-basilius", CTX))
 
     def test_twin_of_a_joint_eulogy_cut_at_et(self):
@@ -154,15 +146,15 @@ class Candidates(unittest.TestCase):
 
     def test_episcopi_adjective(self):
         c = rc.candidates(HILARIUS, "mr:0114-hilarius", "Sanctus Hilarius", CTX)
-        self.assertEqual(c[0]["new_id"], "mr:0114-hilarius-episcopus-pictaviensis")
-        self.assertEqual(c[0]["labels"]["la"], "Sanctus Hilarius episcopus Pictaviensis")
-        self.assertEqual(c[0]["labels"]["en"], "Saint Hilary, bishop of Poitiers")
-        self.assertEqual(c[0]["labels"]["it"], "Sant’Ilario, vescovo di Poitiers")  # it_label drops stress
+        self.assertEqual(c[0]["new_id"], "mr:0114-hilarius-pictaviensis")
+        self.assertEqual(c[0]["labels"]["la"], "Sanctus Hilarius Pictaviensis")
+        self.assertEqual(c[0]["labels"]["en"], "Saint Hilary of Poitiers")
+        self.assertEqual(c[0]["labels"]["it"], "Sant’Ilario di Poitiers")  # it_label drops stress
 
     def test_known_genitive_certain(self):
         c = rc.candidates(AGRICIUS, "mr:0113-agricius", "Sanctus Agricius", CTX)
-        self.assertEqual(c[0]["new_id"], "mr:0113-agricius-episcopus-trevirorum")
-        self.assertEqual(c[0]["labels"]["la"], "Sanctus Agricius episcopus Trevirorum")
+        self.assertEqual(c[0]["new_id"], "mr:0113-agricius-trevirorum")
+        self.assertEqual(c[0]["labels"]["la"], "Sanctus Agricius Trevirorum")
         self.assertTrue(c[0]["certain"])
         self.assertIsNone(c[0]["labels"]["en"])  # no English subject to build on
 
@@ -171,8 +163,25 @@ class Candidates(unittest.TestCase):
         self.assertEqual(c[0]["category"], "place-genitive")
         self.assertEqual(c[0]["new_id"], "mr:0106-nilammo-gerarum")
         self.assertFalse(c[0]["certain"])
-        self.assertNotIn("role-place", [x["category"] for x in c])
         self.assertNotIn("role", [x["category"] for x in c])
+
+    def test_locative_has_the_genitive_form(self):
+        r = rec("Hugolinus", ["eremita"], [dict(place("death", "locative", "Gualdum Captaneorum", "Gualdo Cattaneo"),
+                                                printed="Gualdi Captaneórum")])
+        c = rc.candidates(r, "mr:0101-hugolinus", "Beatus Hugolinus", CTX)
+        self.assertEqual([(x["new_id"], x["category"], x["certain"]) for x in c],
+                         [("mr:0101-hugolinus-gualdi-captaneorum", "place-genitive", False)])
+
+    def test_locative_in_ae_keeps_ae(self):
+        r = rec("Silvester", ["abbas"], [dict(place("monastery", "locative", "Troyna", "Troina"), printed="Troýnæ")])
+        ids = [x["new_id"] for x in rc.candidates(r, "mr:0102-silvester", "Sanctus Silvester", CTX)]
+        self.assertEqual(ids, ["mr:0102-silvester-troynae"])
+
+    def test_third_declension_locative_falls_back_to_the_role(self):
+        r = rec("Caesaria", ["abbatissa"], [dict(place("monastery", "locative", "Arelate", "Arles"),
+                                                 printed="Areláte")], feminine=True)
+        c = rc.candidates(r, "mr:0112-caesaria", "Sancta Caesaria", CTX)
+        self.assertEqual([(x["new_id"], x["weak"]) for x in c], [("mr:0112-caesaria-abbatissa", True)])
 
     def test_weak_class_word(self):
         c = rc.candidates(MARTYR, "mr:0101-magnus", "Sanctus Magnus", CTX)
@@ -197,8 +206,7 @@ class Candidates(unittest.TestCase):
 
     def test_surname_then_place(self):
         c = rc.candidates(LEGO, "mr:0317-ioannes", "Sanctus Ioannes", CTX)
-        self.assertEqual([x["new_id"] for x in c][:2], ["mr:0317-ioannes-sarkander",
-                                                       "mr:0317-ioannes-presbyter-olomucii"])
+        self.assertEqual([x["new_id"] for x in c][:2], ["mr:0317-ioannes-sarkander", "mr:0317-ioannes-olomucii"])
         self.assertEqual(c[0]["labels"]["la"], "Sanctus Ioannes Sarkander")
 
     def test_cognomen_epithet(self):
@@ -226,15 +234,14 @@ class Candidates(unittest.TestCase):
 
     def test_feminine_adjective_of_a_noun(self):
         c = rc.candidates(ABBESS, "mr:0725-glodesindis", "Sancta Glodesindis", CTX)
-        self.assertEqual(c[0]["new_id"], "mr:0725-glodesindis-abbatissa-metensis")
-        self.assertEqual(c[0]["labels"]["la"], "Sancta Glodesindis abbatissa Metensis")
+        self.assertEqual(c[0]["new_id"], "mr:0725-glodesindis-metensis")
+        self.assertEqual(c[0]["labels"]["la"], "Sancta Glodesindis Metensis")
 
     def test_taken_slug_dropped(self):
-        ctx = CTX._replace(taken={"0101": {"eugendus-abbas-condatiscensis"}})
-        ids = [x["new_id"] for x in rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", ctx)]
-        self.assertNotIn("mr:0101-eugendus-abbas-condatiscensis", ids)
-        self.assertEqual(ids, ["mr:0101-eugendus-condatiscensis"])
-        self.assertIn(("mr:0101-eugendus-abbas-condatiscensis", "taken that day"),
+        ctx = CTX._replace(taken={"0101": {"eugendus-condatiscensis"}})
+        self.assertNotIn("mr:0101-eugendus-condatiscensis",
+                         [x["new_id"] for x in rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", ctx)])
+        self.assertIn(("mr:0101-eugendus-condatiscensis", "taken that day"),
                       rc.rejected(EUGENDUS, "mr:0101-eugendus", ctx))
 
     def test_never_numeric(self):
@@ -257,8 +264,8 @@ class Candidates(unittest.TestCase):
         self.assertEqual([(x["new_id"], x["category"], x["weak"]) for x in c],
                          [("mr:0101-magnus-martyr", "role", True)])
 
-    def test_cleric_fallback_when_role_place_taken(self):
-        ctx = CTX._replace(taken={"0101": {"eugendus-abbas-condatiscensis", "eugendus-condatiscensis"}})
+    def test_cleric_fallback_when_the_place_is_taken(self):
+        ctx = CTX._replace(taken={"0101": {"eugendus-condatiscensis"}})
         c = rc.candidates(EUGENDUS, "mr:0101-eugendus", "Sanctus Eugendus", ctx)
         self.assertEqual([(x["new_id"], x["weak"]) for x in c], [("mr:0101-eugendus-abbas", True)])
 
@@ -307,7 +314,7 @@ class Changeset(unittest.TestCase):
         self.assertEqual(cs["base"], {"edition": "martyrologium_romanum_2004", "registry": "data/martyrology_ids.json"})
         op = cs["operations"][0]
         self.assertEqual((op["new_id"], op["class"], op["uid"], op["decision"]),
-                         ("mr:0101-eugendus-abbas-condatiscensis", "role-place", "subject:mr:0101-eugendus", None))
+                         ("mr:0101-eugendus-condatiscensis", "place-adjective", "subject:mr:0101-eugendus", None))
         self.assertEqual(op["confidence"], "medium")
         drafts = [c for c in op["candidates"] if c["basis"] == "bare-name draft"]
         self.assertEqual([c["new_id"] for c in drafts], ["mr:0101-eugendus-condatisci"])
@@ -318,7 +325,7 @@ class Changeset(unittest.TestCase):
 
     def test_record_matching_the_name(self):
         recs = [dict(MARTYR, id="mr:0101-eugendus"), dict(EUGENDUS, id="mr:0101-eugendus")]
-        self.assertEqual(self.build(recs)["operations"][0]["class"], "role-place")
+        self.assertEqual(self.build(recs)["operations"][0]["class"], "place-adjective")
 
     def test_weak_is_low(self):
         op = self.build([dict(MARTYR, id="mr:0101-magnus")])["operations"][0]
