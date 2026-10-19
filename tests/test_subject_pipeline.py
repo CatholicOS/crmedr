@@ -36,14 +36,13 @@ class PipelineTest(unittest.TestCase):
         changeset = rc.build_changeset([RECORD], ctx, LABELS["la"], old)
         op = changeset["operations"][0]
         self.assertEqual([c["new_id"] for c in op["candidates"]],
-                         ["mr:0101-eugendus-abbas-condatiscensis", "mr:0101-eugendus-condatiscensis",
-                          "mr:0101-eugendus-condatisci"])
+                         ["mr:0101-eugendus-condatiscensis", "mr:0101-eugendus-condatisci"])
         counts = ss.suggest_ops(changeset["operations"], DATA, ss.index_records([RECORD]),
                                 StubClient(picks={"pick": "c1"}), 0.9)
         self.assertEqual(counts["suggested"], 1)
         take(op)
-        self.assertEqual(ss.curator_outcome(op), "mr:0101-eugendus-condatiscensis")
-        self.assertEqual(op["edited"], {"new_id": "mr:0101-eugendus-condatiscensis"})
+        self.assertEqual(ss.curator_outcome(op), "mr:0101-eugendus-condatisci")
+        self.assertEqual(op["edited"], {"new_id": "mr:0101-eugendus-condatisci"})
 
     def test_a_person_card(self):
         person = {"eulogy": "mr:0101-eugendus", "name": "Eugendus", "where": "text", "day": "01-01",

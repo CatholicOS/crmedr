@@ -4,9 +4,10 @@
 A bare one-name ID (mr:0101-eugendus) takes a discriminator built by the minting
 rules from its identity record (scripts/subject_records.py). R1: a place the 2004
 Latin prints as an adjective keeps that adjective, in the nominative and agreeing
-with the subject; otherwise the place takes its genitive. R2: clerics take role and
-place, others the place alone; a twin's discriminator, a surname, a cognomen and
--papa come first; a role alone, or a class word (martyr, virgo, confessor), is weak.
+with the subject; otherwise the place takes its genitive. R2 (curator, 2026-10-19):
+the place alone, for clerics too (no "abbas" or "episcopus" before it); a role only
+when no place gives a slug. A twin's discriminator, a surname, a cognomen and -papa
+come first; a role alone, or a class word (martyr, virgo, confessor), is weak.
 R3: each candidate carries the la, en and it subjects it implies. Nothing is
 decided here: the candidates are a curator's choices.
 """
@@ -58,14 +59,25 @@ def adjective_slug(adjective, feminine):
     return re.sub(r"(an|in)a$", r"\1us", s)
 
 
+# A singular locative of the first or second declension has the genitive's form (Romæ, Gualdi
+# Captaneórum); a plural (Metis) or one in -e (Areláte) does not. One in -i may still be a
+# third-declension locative (Carthagini), so the form is never certain.
+LOCATIVE_AS_GENITIVE = re.compile(r"(ae|i)$")
+
+
 def genitive_slug(place):
     """(genitive slug, certain): the corpus genitive when the place has one; else the
-    record's own genitive, not certain; else (None, False)."""
+    record's own genitive, not certain; else a printed locative in -ae or -i, which has
+    the genitive's form, not certain; else (None, False)."""
     known = PLACE_GENITIVES.get(slug(place.get("nominative") or ""))
     if known:
         return known, True
     if place.get("genitive"):
         return slug(place["genitive"]), False
+    # fold() writes æ as e; the genitive keeps it as ae (Romæ -> romae)
+    printed = slug(re.sub("[æÆ]", "ae", place.get("printed") or ""))
+    if place.get("grammar") == "locative" and LOCATIVE_AS_GENITIVE.search(printed.split("-")[0]):
+        return printed, False
     return None, False
 
 
@@ -196,12 +208,6 @@ def _build(record, mrid, subject_la, ctx):
                              f"no genitive for {place.get('nominative')}"))
         else:
             basis = f"{place['kind']} {place.get('printed')} ({place.get('grammar')})"
-            if cleric:
-                add(f"{cleric}-{form}", "role-place",
-                    _labels(mrid, subject_la, ctx, f"{cleric} {_display(form)}",
-                            f", {role_en} of {place['en']}" if role_en else f" of {place['en']}",
-                            f", {role_it} di {place['it']}" if role_it else f" di {place['it']}"),
-                    f"{cleric} + {basis}", certain=certain)
             add(form, category, _labels(mrid, subject_la, ctx, _display(form),
                                         f" of {place['en']}", f" di {place['it']}"), basis, certain=certain)
 
