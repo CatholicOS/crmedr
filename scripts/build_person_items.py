@@ -244,11 +244,16 @@ def make_op(key, person, result, old):
     candidates = list(result["candidates"])
     # The candidates `expand` added (companions' kin, the death day, titles) are not found by the
     # name search again: they are kept after the search's own, with their evidence recomputed.
-    have = {c["wikidata"] for c in candidates}
+    # A title item the search returns too keeps its provenance, which apply reads (_appliable).
+    at = {c["wikidata"]: i for i, c in enumerate(candidates)}
     for c in (old or {}).get("candidates", []):
-        if c.get("source") not in (None, "search") and c["wikidata"] not in have:
-            have.add(c["wikidata"])
+        if c.get("source") in (None, "search"):
+            continue
+        if c["wikidata"] not in at:
+            at[c["wikidata"]] = len(candidates)
             candidates.append(dict(c, evidence=evidence(person, c)))
+        elif c["source"] in TITLE_SOURCES:
+            candidates[at[c["wikidata"]]] = dict(candidates[at[c["wikidata"]]], source=c["source"])
     op = {"op": "resolve_person", "id": key, **{k: person[k] for k in
           ("eulogy", "day", "typology", "subject", "name", "n", "also", "where", "companions") if k in person},
           "failed": result["failed"], "candidates": candidates}
@@ -505,12 +510,14 @@ def expand(review, items, records, client):
             failures += 1
             continue
         failures = 0
-        have = {c["wikidata"] for c in op["candidates"]}
+        have = {c["wikidata"]: c for c in op["candidates"]}
         added = []
         for c in found:
             if c["wikidata"] not in have:
-                have.add(c["wikidata"])
+                have[c["wikidata"]] = c
                 added.append(dict(c, evidence=evidence(op, c)))
+            elif c.get("source") in TITLE_SOURCES:
+                have[c["wikidata"]]["source"] = c["source"]  # a title item the search found too
         added.sort(key=lambda c: (-len(c["evidence"]), c["wikidata"]))
         # Existing candidates keep their places: an accept without a suggestion means candidates[0].
         op["candidates"] += added[:max(0, MAX_EXPANDED - len(op["candidates"]))]
