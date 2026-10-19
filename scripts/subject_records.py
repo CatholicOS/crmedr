@@ -96,6 +96,9 @@ def check_record(record, la_text):
         errors.append("id missing")
     if not isinstance(record.get("name"), str) or not record["name"]:
         errors.append("name missing")
+    n = record.get("n")
+    if n is not None and (not isinstance(n, int) or isinstance(n, bool) or n < 2):
+        errors.append(f"n: {n!r} (a repeated name's ordinal, from 2)")
     if record.get("kind") not in KINDS:
         errors.append(f"kind: {record.get('kind')}")
     if not isinstance(record.get("feminine"), bool):

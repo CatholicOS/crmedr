@@ -109,6 +109,13 @@ class Persons(unittest.TestCase):
 
     def test_n_null_is_the_first_person(self):
         self.assertEqual(sr.person_key({"name": "Eugendus", "n": None}), "Eugendus")
+        self.assertEqual(sr.person_key({"name": "Eugendus", "n": 0}), "Eugendus#0")
+
+    def test_an_invalid_ordinal_is_an_error(self):
+        for n in (0, 1, -2, True, "2", 2.0):
+            self.assertIn(f"n: {n!r} (a repeated name's ordinal, from 2)", sr.check_record(rec(n=n), TEXT), n)
+        self.assertEqual(sr.check_record(rec(n=2), TEXT), [])
+        self.assertEqual(sr.check_record(rec(n=None), TEXT), [])
 
 
 class Brief(unittest.TestCase):

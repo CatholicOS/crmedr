@@ -79,7 +79,8 @@ def name_key(s):
 def person_key(p):
     """A person's key within their eulogy: the name, or "name#n" for the nth person of a
     name the eulogy repeats (n from 2; a person without n is the first)."""
-    name, n = p.get("name"), p.get("n") or 1  # "n": null is the first too
+    name, n = p.get("name"), p.get("n")
+    n = 1 if n is None else n  # "n": null is the first too
     return name if n == 1 else f"{name}#{n}"
 
 
