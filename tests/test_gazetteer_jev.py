@@ -38,6 +38,14 @@ class ClauseTest(unittest.TestCase):
         self.assertEqual(gj.latin_clause("Primo. Secundo.", "Nusquam"), "Primo.")
         self.assertEqual(gj.latin_clause("", "Nusquam"), "")
 
+    def test_long_sentence_windows_around_the_phrase(self):
+        exact = gj.latin_clause("Romae " * 100 + "Tybúrni in Anglia", "Tybúrni")
+        self.assertLessEqual(len(exact), 400)
+        self.assertIn("Tybúrni", exact)
+        folded = gj.latin_clause("Romæ " * 100 + "Tæburni in Anglia", "Taeburni")
+        self.assertLessEqual(len(folded), 400)
+        self.assertIn("Tæburni", folded)
+
     def test_english_clause_names_a_candidate_or_italian_head(self):
         en = "At Rome, Saint X. At Tyburn in London, Blessed Y, priest."
         self.assertEqual(gj.english_clause(en, OP), "At Tyburn in London, Blessed Y, priest.")

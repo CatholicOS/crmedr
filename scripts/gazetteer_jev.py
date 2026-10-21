@@ -34,6 +34,22 @@ assert set(KIND_REASONS) == set(KINDS) - {"place"}
 
 # The clauses sent
 
+def _fold_with_origin(text):
+    """(fold(text), index in `text` of each character of it): fold changes lengths (ligatures,
+    collapsed whitespace), so an index in the folded string is mapped back through this."""
+    out, origin = [], []
+    for i, ch in enumerate(text):
+        piece = " " if ch.isspace() else fold(ch)
+        if piece == " " and (not out or out[-1] == " "):
+            continue
+        out.extend(piece)
+        origin.extend([i] * len(piece))
+    while out and out[-1] == " ":
+        out.pop()
+        origin.pop()
+    return "".join(out), origin
+
+
 def latin_clause(la_text, la):
     """The sentence of the Latin text holding the phrase `la` (exact, then folded); else the first
     sentence; "" for empty text. At most MAX_CLAUSE characters."""
@@ -46,9 +62,10 @@ def latin_clause(la_text, la):
             return _window(sentence, at)
     key = fold(la or "")
     for _, sentence in sentences:
-        at = fold(sentence).find(key)
+        folded, origin = _fold_with_origin(sentence)
+        at = folded.find(key)
         if key and at >= 0:
-            return _window(sentence, 0 if len(sentence) <= MAX_CLAUSE else at)
+            return _window(sentence, origin[at])
     return _window(sentences[0][1], 0)
 
 
