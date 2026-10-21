@@ -122,11 +122,26 @@ def place_request(op, la_clause, en_clause):
         criteria["none"] = "None of these items is this place."
         questions["pick"] = {
             "type": "choice",
-            "instructions": ("Which of the `candidates` (Wikidata items) is the place named by the phrase `la` "
-                             "(Italian: `it`) in `latin_clause` and `english_clause`? Answer none if no "
-                             "candidate is this place."),
+            "instructions": PICK_INSTRUCTIONS,
             "criteria": criteria}
     return {"model": MODEL, "state": state, "questions": questions}
+
+
+# The curator's convention (2026-10-21, as the round-1 decisions apply it): the place as it continues
+# today when it still exists on the same spot; a historical item only for a separate site, a building
+# or a historical territory; and a place "near" X is not X.
+PICK_INSTRUCTIONS = (
+    "Which of the `candidates` (Wikidata items) is the place named by the phrase `la` (Italian: `it`) in "
+    "`latin_clause` and `english_clause`, a eulogy of the Roman Martyrology? When the place still exists "
+    "on the same spot, choose the item for the town or city as it is today (Tivoli for Tibur, "
+    "Aix-en-Provence for Aquae Sextiae, Toulouse rather than Roman Tolosa). Choose an item for the ancient "
+    "or historical place only when it is a separate site from today's town (ruins or an archaeological "
+    "site, as Caesarea Maritima), when the phrase names a building (a monastery, abbey, church, castle or "
+    "camp, rather than the town or mountain it stands in or on), or when it names a historical territory "
+    "(a Roman province or historical region, rather than a modern region or continent of the same name). "
+    "When the phrase names a place near another (prope, apud, iuxta: near, at), the near place is not that "
+    "other one. Answer none if no candidate is this place."
+)
 
 
 # The reading

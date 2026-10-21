@@ -120,3 +120,12 @@ class SuggestionTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class PickConventionTest(unittest.TestCase):
+    def test_pick_question_carries_the_curators_convention(self):
+        text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
+        for phrase in ("as it is today", "a separate site from today's town", "names a building",
+                       "historical territory", "the near place is not that other one"):
+            self.assertIn(phrase, text)
+        self.assertNotIn("same spot (", text)
