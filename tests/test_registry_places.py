@@ -17,6 +17,7 @@ GAZ = {
                   "text_says": [{"country": "AT", "it": "A Altropoli, nell’odierna Austria"}]},
     "Hierosólymæ": {"wikidata": "Q1218", "label": "Jerusalem", "country": "PS", "status": "reviewed"},
     "Nullópoli": {"wikidata": None, "status": "unresolved", "note": "n"},
+    "Oriénte": {"wikidata": "Q205653", "label": "Orient", "country": None, "status": "reviewed"},
 }
 
 
@@ -57,6 +58,13 @@ class ApplyTest(unittest.TestCase):
         out = rp.apply([entry("mr:0101-a", "IT", lead("Ignótia", "A Ignozia"))], GAZ, {"mr:0101-a": "ES"})
         self.assertEqual(out[0]["country"], "ES")
         self.assertEqual(out[0]["places"][0], lead("Ignótia", "A Ignozia"))
+
+    def test_lead_in_no_country_takes_the_curated_country(self):
+        out = rp.apply([entry("mr:0101-a", "IT", lead("Oriénte")), entry("mr:0102-b", "IT", lead("Oriénte"))],
+                       GAZ, {"mr:0101-a": "SY", "mr:0102-b": None})
+        self.assertEqual([e["country"] for e in out], ["SY", None])
+        self.assertEqual(out[0]["places"][0]["wikidata"], "Q205653")
+        self.assertIsNone(out[0]["places"][0]["country"])
 
     def test_unresolved_place_gets_no_fields(self):
         out = rp.apply([entry("mr:0101-a", "IT", lead("Nullópoli"))], GAZ, {"mr:0101-a": "IT"})
@@ -105,6 +113,10 @@ class ValidateTest(unittest.TestCase):
     def test_resolved_lead_in_curated_file(self):
         self.assertRegex(self.errors([entry("mr:0101-a", "FR", lead("Fictópoli"))], {"mr:0101-a": "FR"}),
                          r"mr:0101-a: .*resolved.*remove it from data/countries_curated\.json")
+
+    def test_lead_in_no_country_needs_a_curated_value(self):
+        self.assertRegex(self.errors([entry("mr:0101-a", "IT", lead("Oriénte"))], {}),
+                         r"mr:0101-a: .*no single country.*add its country to data/countries_curated\.json")
 
     def test_missing_curated_value(self):
         self.assertRegex(self.errors([entry("mr:0101-a", "IT")], {}),

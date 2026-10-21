@@ -4,7 +4,8 @@
 Each place item of a current entry whose place the gazetteer resolves gets the
 place's `wikidata`, `label`, `country` and the `text_says` claims of its own
 Italian phrase. An entry's `country` is the country of its opening place when
-the gazetteer resolves it, otherwise the value in data/countries_curated.json;
+the gazetteer resolves it to a place in a country, otherwise the value in
+data/countries_curated.json (also for an opening place in no single country, such as the Orient);
 COUNTRY_CONVENTIONS (the Holy Land is PS) applies last. Deprecated entries are
 untouched. No private source and no network are needed.
 
@@ -45,6 +46,13 @@ def has_resolved_lead(entry, gazetteer):
     return lead is not None and _resolved(gazetteer, lead["la"], entry["id"]) is not None
 
 
+def has_lead_country(entry, gazetteer):
+    """The opening place is resolved and lies in a country (not a macro-area decided with none)."""
+    lead = _lead(entry)
+    g = _resolved(gazetteer, lead["la"], entry["id"]) if lead else None
+    return bool(g and g.get("country"))
+
+
 def _curated_country(value):
     return value["country"] if isinstance(value, dict) else value
 
@@ -56,8 +64,10 @@ def validate(entries, gazetteer, curated):
     for mr_id in sorted(set(curated) - set(current)):
         errors.append(f"{mr_id}: in {CURATED} but {'deprecated' if mr_id in known else 'unknown'}")
     for mr_id, e in sorted(current.items()):
-        if has_resolved_lead(e, gazetteer) and mr_id in curated:
+        if has_lead_country(e, gazetteer) and mr_id in curated:
             errors.append(f"{mr_id}: its opening place is resolved in the gazetteer; remove it from {CURATED}")
+        elif has_resolved_lead(e, gazetteer) and not has_lead_country(e, gazetteer) and mr_id not in curated:
+            errors.append(f"{mr_id}: its opening place lies in no single country; add its country to {CURATED}")
         elif not has_resolved_lead(e, gazetteer) and mr_id not in curated:
             errors.append(f"{mr_id}: no resolved opening place; add its country to {CURATED}")
     for mr_id, value in sorted(curated.items()):
@@ -102,7 +112,7 @@ def apply(entries, gazetteer, curated):
         if "places" in e:
             e["places"] = [_place(p, _resolved(gazetteer, p["la"], e["id"])) for p in e["places"]]
         lead = _lead(e)
-        code = (_resolved(gazetteer, lead["la"], e["id"])["country"] if has_resolved_lead(e, gazetteer)
+        code = (_resolved(gazetteer, lead["la"], e["id"])["country"] if has_lead_country(e, gazetteer)
                 else _curated_country(curated[e["id"]]))
         e["country"] = convention(code) if code else None
         out.append(e)
@@ -145,7 +155,7 @@ def main(argv):
     if not check:
         render(out, repo_root)
         print(f"wrote data/martyrology_ids.json and registry/*.md "
-              f"({sum(has_resolved_lead(e, gazetteer) for e in out if not e.get('deprecated'))} countries "
+              f"({sum(has_lead_country(e, gazetteer) for e in out if not e.get('deprecated'))} countries "
               f"from opening places, {len(curated)} curated)")
         return 0
     with tempfile.TemporaryDirectory() as d:

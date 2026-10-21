@@ -620,6 +620,17 @@ class ValidateTest(unittest.TestCase):
         good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": "DE", "status": "reviewed"}}
         self.assertEqual(bg.validate(good, INDEX), [])
 
+    def test_reviewed_place_in_no_country(self):
+        # A macro-area (the Orient, Africa): no country, so no text_says either.
+        good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": None, "status": "reviewed"}}
+        self.assertEqual(bg.validate(good, INDEX), [])
+
+    def test_no_country_is_only_for_reviewed_places_and_explicit(self):
+        for entry in ({"wikidata": "Q1", "label": "x", "country": None, "status": "auto"},
+                      {"wikidata": "Q1", "label": "x", "status": "reviewed"}):
+            errors = bg.validate({"Altrópoli": entry}, INDEX)
+            self.assertTrue(errors and "country" in errors[0], (entry, errors))
+
     def test_key_both_decided_and_queued(self):
         errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Fictópoli"}])
         self.assertTrue(any("also queued" in e for e in errors))
@@ -919,6 +930,18 @@ class ApplyTest(unittest.TestCase):
     def test_decided_country_follows_the_holy_land_convention(self):
         _, gaz, _ = self.run_apply(op("Altrópoli", "edit", [self.c1], edited={"wikidata": "Q1", "country": "IL"}))
         self.assertEqual(gaz["Altrópoli"]["country"], "PS")
+
+    def test_edit_no_country(self):
+        orient = cand("Q9", label="Orient", country=None, countries=[])
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [orient], edited={"wikidata": "Q9", "no_country": True}))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q9", "label": "Orient", "country": None,
+                                            "status": "reviewed"})
+
+    def test_no_country_with_a_country_is_an_error(self):
+        with self.assertRaises(ValueError) as cm:
+            self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q1", "country": "FR",
+                                                                       "no_country": True}))
+        self.assertIn("no_country", str(cm.exception))
 
     def test_reject_is_unresolved(self):
         _, gaz, _ = self.run_apply(op("Altrópoli", "reject", edited={"reason": "no item for the hill"}))
