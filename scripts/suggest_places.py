@@ -7,6 +7,12 @@ removes it from a card that cannot be asked or answered. `jev` is kept apart fro
 `decision` and `edited`, which this never writes. Answers are cached in .cache/typesafe/ (git
 ignored), so a re-run asks nothing already asked. `jev` holds no 2004 text: the queue is a public file.
 
+  python3 suggest_places.py evaluate <round1.json> /path/to/martyrology-texts [--repo repo_root]
+
+`evaluate` asks Jev about the round-1 cards the gazetteer settled (each with its settled candidate, and
+again without it, where the right answer is a reject) and prints the agreement per threshold. It writes
+nothing.
+
 Usage:
   python3 suggest_places.py suggest <changeset.json> /path/to/martyrology-texts [--repo repo_root]
 
@@ -89,8 +95,62 @@ def write_changeset(path, doc):
     Path(path).write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+THRESHOLDS = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99]
+
+
+def calibration_set(round1_ops, places):
+    """(op, expected QID or None): each settled card with its settled candidate, then without it."""
+    pairs = []
+    for op in round1_ops:
+        settled = places.get(op.get("id")) or {}
+        qid = settled.get("wikidata")
+        if settled.get("status") not in ("reviewed", "auto") or not qid:
+            continue
+        candidates = op.get("candidates") or []
+        if qid not in [c.get("wikidata") for c in candidates]:
+            continue
+        base = {k: v for k, v in op.items() if k != "suggested"}
+        pairs.append((base, qid))
+        others = [c for c in candidates if c.get("wikidata") != qid]
+        if others:
+            pairs.append((dict(base, candidates=others), None))
+    return pairs
+
+
+def evaluate_ops(pairs, texts, client):
+    require_key([op for op, _ in pairs], texts, client)
+    rows = []
+    for op, expected in pairs:
+        s, error = ask(op, texts, client)
+        if s is None:
+            if error:
+                print(f"no suggestion: {op['id']}: {error}", file=sys.stderr)
+            continue
+        rows.append({"id": op["id"], "expected": expected, "picked": s.get("wikidata"),
+                     "probability": s["probability"], "negative": expected is None})
+    return rows
+
+
+def _rate(rows, t):
+    answered = [r for r in rows if r["probability"] >= t]
+    agree = sum(1 for r in answered if r["picked"] == r["expected"])
+    return f"{agree}/{len(answered)} agree ({100 * agree / len(answered) if answered else 0.0:.1f}%)"
+
+
+def report(rows, thresholds):
+    positives = [r for r in rows if not r["negative"]]
+    negatives = [r for r in rows if r["negative"]]
+    out = [f"{t}  positives {_rate(positives, t)}  negatives {_rate(negatives, t)}" for t in thresholds]
+    out.append("disagreements at 0.9:")
+    for r in rows:
+        if r["probability"] >= 0.9 and r["picked"] != r["expected"]:
+            out.append(f"  {r['id']} [{'negative' if r['negative'] else 'positive'}]: "
+                       f"expected {r['expected'] or 'none'}, picked {r['picked'] or 'none'} p={r['probability']}")
+    return "\n".join(out)
+
+
 def main(argv):
-    if not argv or argv[0] != "suggest":
+    if not argv or argv[0] not in ("suggest", "evaluate"):
         sys.exit(__doc__)
     args, repo = [], Path(__file__).resolve().parent.parent
     it = iter(argv[1:])
@@ -105,6 +165,14 @@ def main(argv):
     texts = load_texts_for(texts_repo, repo)
     client = mj.TypeSafe(mj.api_key(), repo / ".cache" / "typesafe")
     doc = json.loads(path.read_text(encoding="utf-8"))
+    if argv[0] == "evaluate":
+        places = json.loads((repo / "data" / "gazetteer.json").read_text(encoding="utf-8"))["places"]
+        pairs = calibration_set(doc["operations"], places)
+        try:
+            print(report(evaluate_ops(pairs, texts, client), THRESHOLDS))
+        except mj.TypeSafeError as e:
+            sys.exit(str(e))
+        return
     try:
         counts = suggest_ops(doc["operations"], texts, client)
     except mj.TypeSafeError as e:  # a refused key, or no key with requests to make: nothing written

@@ -100,6 +100,54 @@ class SuggestTest(unittest.TestCase):
         self.assertEqual(op, {"op": "add_place", "id": "x"})
 
 
+def round1_op(cands, suggested=None):
+    op = dict(op_with_candidates(), id="P", la="Tybúrni",
+              candidates=[dict(OP["candidates"][0], wikidata=q) for q in cands])
+    if suggested:
+        op["suggested"] = {"wikidata": suggested}
+    return op
+
+
+class EvaluateTest(unittest.TestCase):
+    def test_calibration_set_positive_and_negative(self):
+        pairs = sp.calibration_set([round1_op(cands=["Q1", "Q2"], suggested="Q1")], {"P": {"wikidata": "Q1", "status": "reviewed"}})
+        self.assertEqual([(len(op["candidates"]), exp) for op, exp in pairs], [(2, "Q1"), (1, None)])
+        self.assertTrue(all("suggested" not in op for op, _ in pairs))
+
+    def test_calibration_set_skips_settled_outside_candidates(self):
+        self.assertEqual(sp.calibration_set([round1_op(cands=["Q2"])], {"P": {"wikidata": "Q1", "status": "reviewed"}}), [])
+
+    def test_calibration_set_skips_unsettled_and_has_no_negative_for_one_candidate(self):
+        self.assertEqual(sp.calibration_set([round1_op(cands=["Q1"])], {"P": {"wikidata": "Q1", "status": "pending"}}), [])
+        pairs = sp.calibration_set([round1_op(cands=["Q1"])], {"P": {"wikidata": "Q1", "status": "auto"}})
+        self.assertEqual([exp for _, exp in pairs], ["Q1"])
+
+    def test_report_counts_agreement_per_threshold(self):
+        rows = [{"id": "a", "expected": "Q1", "picked": "Q1", "probability": 0.95, "negative": False},
+                {"id": "b", "expected": None, "picked": "Q3", "probability": 0.92, "negative": True}]
+        out = sp.report(rows, [0.9])
+        self.assertIn("0.9  positives 1/1 agree (100.0%)  negatives 0/1 agree (0.0%)", out)
+        self.assertIn("disagreements at 0.9:", out)
+        self.assertIn("  b [negative]: expected none, picked Q3 p=0.92", out)
+
+    def test_report_with_no_rows_at_a_threshold(self):
+        self.assertIn("0.99  positives 0/0 agree (0.0%)  negatives 0/0 agree (0.0%)", sp.report([], [0.99]))
+
+    def test_evaluate_ops_rows_and_errors(self):
+        pairs = sp.calibration_set([round1_op(cands=["Q1", "Q2"])], {"P": {"wikidata": "Q1", "status": "reviewed"}})
+        rows = sp.evaluate_ops(pairs, TEXTS, StubClient(answers("c0", "place", 0.9)))
+        self.assertEqual([(r["id"], r["expected"], r["picked"], r["negative"]) for r in rows],
+                         [("P", "Q1", "Q1", False), ("P", None, "Q2", True)])
+        failing = StubClient(None, error=mj.TypeSafeError("boom"))
+        with contextlib.redirect_stderr(io.StringIO()):
+            self.assertEqual(sp.evaluate_ops(pairs, TEXTS, failing), [])
+
+    def test_evaluate_ops_stops_without_a_key(self):
+        pairs = sp.calibration_set([round1_op(cands=["Q1", "Q2"])], {"P": {"wikidata": "Q1", "status": "reviewed"}})
+        with self.assertRaises(mj.TypeSafeError):
+            sp.evaluate_ops(pairs, TEXTS, StubClient(None, key=None, cached=False))
+
+
 class MainTest(unittest.TestCase):
     def test_writes_the_file_in_the_queue_format(self):
         with tempfile.TemporaryDirectory() as d:
