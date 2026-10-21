@@ -640,6 +640,7 @@ class ValidateTest(unittest.TestCase):
                       dict(base, country=None, countries=["NL", "NL"]),
                       dict(base, country=None, countries=["NL", "XX"]),
                       dict(base, country=None, countries="NL,DE"),
+                      dict(base, country=None, countries=[["NL"], "DE"]),
                       dict(base, country=None, countries=["NL", "DE"], status="auto")):
             errors = bg.validate({"Altrópoli": entry}, INDEX)
             self.assertTrue(errors and "countr" in errors[0], (entry, errors))
@@ -1046,7 +1047,8 @@ class VerifySuggestionsTest(unittest.TestCase):
     def test_suggestion_in_several_countries(self):
         ok = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": ["IL", "PS"]})
         bad = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": ["IL"]})
-        for o, expected in ((ok, []), (bad, ["countries"])):
+        nested = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": [["IL"], "PS"]})
+        for o, expected in ((ok, []), (bad, ["countries"]), (nested, ["countries"])):
             o["confidence"] = "medium"
             errors, _ = bg.verify_suggestions(bg.new_changeset([o]), INDEX, self.client)
             self.assertEqual([w for w in expected if not any(w in e for e in errors)], [], errors)

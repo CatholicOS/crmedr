@@ -259,7 +259,10 @@ def validate(gazetteer, index, review_ops=()):
         if not e.get("label"):
             errors.append(f"{where}: missing label")
         if "countries" in e:
-            errors += [f"{where}: {p}" for p in _countries_problems(e)]
+            problems = _countries_problems(e)
+            errors += [f"{where}: {p}" for p in problems]
+            if problems:
+                continue  # text_says cannot be derived from a malformed list
         elif status == "reviewed" and "country" in e and e["country"] is None:
             pass  # decided as in no single country (a macro-area such as the Orient)
         elif e.get("country") not in ISO_CODES:
@@ -283,7 +286,7 @@ def _countries_problems(e):
     countries = e["countries"]
     if e.get("status") != "reviewed" or e.get("country") is not None:
         return ["countries needs status reviewed and country null"]
-    if not isinstance(countries, list) or len(countries) < 2:
+    if not isinstance(countries, list) or len(countries) < 2 or not all(isinstance(c, str) for c in countries):
         return [f"countries {countries!r} is not a list of two or more codes (one country goes in country)"]
     if len(set(countries)) != len(countries):
         return [f"countries {countries!r} lists a code twice"]
@@ -672,7 +675,8 @@ def verify_suggestions(review, index, client):
                         candidates[pos] = item
         if "countries" in s:  # a suggestion in several countries (Jerusalem: IL, PS)
             cs = s["countries"]
-            if "country" in s or not isinstance(cs, list) or len(cs) < 2 or len(set(cs)) != len(cs) \
+            if "country" in s or not isinstance(cs, list) or len(cs) < 2 \
+                    or not all(isinstance(c, str) for c in cs) or len(set(cs)) != len(cs) \
                     or any(c not in ISO_CODES for c in cs):
                 errors.append(f"{la!r}: suggested countries {cs!r} is not a list of two or more distinct "
                               "ISO codes, without a country")
