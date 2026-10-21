@@ -118,5 +118,15 @@ class SuggestionTest(unittest.TestCase):
         self.assertIsNone(gj.place_suggestion(OP, answers("c9", "place", 0.9)))
 
 
+
+class PickConventionTest(unittest.TestCase):
+    def test_pick_question_carries_the_curators_convention(self):
+        text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
+        for phrase in ("as it is today", "a separate site from today's town", "names a building",
+                       "historical territory", "the near place is not that other one"):
+            self.assertIn(phrase, text)
+        self.assertNotIn("same spot (", text)
+
+
 if __name__ == "__main__":
     unittest.main()
