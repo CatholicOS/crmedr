@@ -196,6 +196,14 @@ class PrefillTest(unittest.TestCase):
         sp.prefill_ops([op], 0.9)
         self.assertEqual(op["decision"], "accept")
 
+    def test_prefill_accept_only_when_the_applied_country_is_jevs(self):
+        same = card(jev=pick("Q1", "accept", 0.99, country="GB"), suggested={"wikidata": "Q1", "country": "GB"})
+        other = card(jev=pick("Q1", "accept", 0.99, country="FR"), suggested={"wikidata": "Q1", "country": "GB"})
+        sp.prefill_ops([same, other], 0.9)
+        self.assertEqual(same["decision"], "accept")
+        self.assertEqual((other["decision"], other["prefilled"]), ("edit", "jev"))
+        self.assertEqual(other["edited"], {"wikidata": "Q1", "country": "FR"})
+
     def test_prefill_skips_a_pick_outside_the_candidates(self):
         op = card(jev=pick("Q9", "edit", 0.99, country="FR"))
         sp.prefill_ops([op], 0.9)

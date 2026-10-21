@@ -100,6 +100,14 @@ def write_changeset(path, doc):
     Path(path).write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def _accept_country(op, q):
+    """The country build_gazetteer._resolve applies to an accept of `q`."""
+    suggested = op.get("suggested") or {}
+    if suggested.get("wikidata") == q and suggested.get("country"):
+        return suggested["country"]
+    return next((c.get("country") for c in op["candidates"] if c["wikidata"] == q), None)
+
+
 def prefill_ops(ops, threshold):
     """Write Jev's item picks (accept/edit, probability >= threshold, with a country, among the
     candidates) onto undecided cards. Never a reject, never a decided card."""
@@ -114,7 +122,7 @@ def prefill_ops(ops, threshold):
               and q in [c["wikidata"] for c in op.get("candidates") or []])
         if not ok:
             counts["skipped"] += 1
-        elif q == gj.default_qid(op):
+        elif q == gj.default_qid(op) and _accept_country(op, q) == jev["country"]:
             op["decision"], op["edited"], op["prefilled"] = "accept", None, "jev"
             counts["accept"] += 1
         else:
