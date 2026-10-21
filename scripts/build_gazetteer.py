@@ -19,6 +19,7 @@ Usage:
   python3 build_gazetteer.py verify-suggestions [repo_root]   (network)
   python3 build_gazetteer.py apply <exported.json> [repo_root]
   python3 build_gazetteer.py check [repo_root]
+  python3 build_gazetteer.py search-more [repo_root]          (network) more candidates for places without one
   python3 build_gazetteer.py prune [repo_root]   drop non-place candidates from the queue
 
 Standard library only. Reads no private sources.
@@ -32,6 +33,7 @@ import sys
 from pathlib import Path
 
 from gazetteer_text import ISO_CODES, convention, fold, latin_nominatives, parse_italian
+from gazetteer_jev import NONE_REASON
 from wikidata import Wikidata, WikidataError
 
 STATUSES = ["auto", "reviewed", "unresolved"]
@@ -345,6 +347,64 @@ def propose(gazetteer, review, index, client, force_review=FORCE_REVIEW):
     return not_processed
 
 
+_QUALIFIERS = re.compile(r"\s+(?:di|del|della|dei|degli|in)\s", re.IGNORECASE)
+
+
+def _more_queries(item):
+    """(text, language) pairs: each Italian head without its qualifier, each Latin nominative in la and it."""
+    queries = []
+
+    def add(text, language):
+        if text and (text, language) not in queries:
+            queries.append((text, language))
+
+    for it in item["it"]:
+        for head in parse_italian(it)["heads"]:
+            m = _QUALIFIERS.search(head + " ")
+            add((head[:m.start()] if m else head).strip(), "it")
+    return queries
+
+
+def search_more(review, index, client):
+    """Search again for the places Jev found no candidate for; returns the number of cards that gained
+    candidates. The raised WikidataError cards are left unchanged and listed in search_more.not_processed."""
+    changed, not_processed = 0, []
+    for op in review["operations"]:
+        jev = op.get("jev") or {}
+        searched = jev.get("kind") == "place" and (
+            not op.get("candidates") or (jev.get("decision") == "reject" and jev.get("reason") == NONE_REASON))
+        if not searched or op.get("op") != "resolve_place" or op["la"] not in index:
+            continue
+        la = op["la"]
+        queries = _more_queries(index[la])
+        for nominative in sorted(latin_nominatives(la)):
+            queries += [(nominative, "la"), (nominative, "it")]
+        known = {c["wikidata"] for c in op.get("candidates", [])}
+        raw = {}
+        try:
+            for text, language in dict.fromkeys(queries):
+                for c in client.candidates(text, language=language):
+                    if c["wikidata"] not in known:
+                        raw.setdefault(c["wikidata"], c)
+        except WikidataError as e:
+            not_processed.append((la, str(e)))
+            continue
+        if not raw:
+            continue
+        result = evaluate(la, index[la], list(raw.values()), client.region_countries,
+                          getattr(client, "region_coords", lambda region: []))
+        new = [c for c in result["candidates"] if c["wikidata"] not in known]
+        if not new:
+            continue
+        if not op.get("candidates"):
+            op["failed"], op["claims"] = result["failed"], result["claims"]
+        op["candidates"] = op.get("candidates", []) + new
+        op.pop("jev", None)
+        changed += 1
+    search_more.not_processed = not_processed
+    return changed
+
+
 def _cell(s):
     return str(s).replace("|", "\\|")
 
@@ -520,7 +580,7 @@ def verify_suggestions(review, index, client):
 
 
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
     exported = None
@@ -547,6 +607,13 @@ def main(argv):
         auto = sum(1 for e in gazetteer.values() if e["status"] == "auto")
         print(f"{len(index)} places; {auto} auto; {len(review['operations'])} awaiting review; "
               f"{len(not_processed)} not processed")
+        return 1 if not_processed else 0
+    if cmd == "search-more":
+        n = search_more(review, index, client)
+        not_processed = search_more.not_processed
+        write_state(repo_root, gazetteer, review, index, not_processed)
+        print(f"{n} cards gained candidates; {len(review['operations'])} queued"
+              + (f"; {len(not_processed)} not processed" if not_processed else ""))
         return 1 if not_processed else 0
     if cmd == "verify-suggestions":
         errors, warnings = verify_suggestions(review, index, client)
