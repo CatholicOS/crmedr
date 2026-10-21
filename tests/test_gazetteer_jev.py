@@ -118,9 +118,6 @@ class SuggestionTest(unittest.TestCase):
         self.assertIsNone(gj.place_suggestion(OP, answers("c9", "place", 0.9)))
 
 
-if __name__ == "__main__":
-    unittest.main()
-
 
 class PickConventionTest(unittest.TestCase):
     def test_pick_question_carries_the_curators_convention(self):
@@ -129,3 +126,7 @@ class PickConventionTest(unittest.TestCase):
                        "historical territory", "the near place is not that other one"):
             self.assertIn(phrase, text)
         self.assertNotIn("same spot (", text)
+
+
+if __name__ == "__main__":
+    unittest.main()
