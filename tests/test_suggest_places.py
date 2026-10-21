@@ -192,7 +192,7 @@ class PrefillTest(unittest.TestCase):
         self.assertEqual(counts, {"accept": 0, "edit": 1, "skipped": 0})
 
     def test_prefill_accept_follows_the_suggested_default(self):
-        op = card(jev=pick("Q2", "accept", 0.99, country="FR"), suggested={"wikidata": "Q2"})
+        op = card(jev=pick("Q2", "accept", 0.99, country="FR"), suggested={"wikidata": "Q2", "country": "FR"})
         sp.prefill_ops([op], 0.9)
         self.assertEqual(op["decision"], "accept")
 
