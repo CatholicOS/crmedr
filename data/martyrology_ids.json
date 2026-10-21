@@ -46890,7 +46890,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -47053,7 +47057,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "birth",
@@ -55184,7 +55192,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -57897,7 +57909,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -69023,7 +69039,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -81373,7 +81393,11 @@
           "occurrence_it": 1,
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -106567,7 +106591,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "mention",
@@ -108032,7 +108060,11 @@
           "source": "curated",
           "wikidata": "Q801",
           "label": "Israel",
-          "country": "IL"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },

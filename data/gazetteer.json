@@ -10564,8 +10564,13 @@
     "Israel": {
       "wikidata": "Q801",
       "label": "Israel",
-      "country": "IL",
-      "status": "auto"
+      "country": null,
+      "countries": [
+        "IL",
+        "PS"
+      ],
+      "status": "reviewed",
+      "note": "the biblical land or people of Israel, not the modern state: IL and PS"
     },
     "Itália": {
       "wikidata": "Q38",
