@@ -351,7 +351,8 @@ _QUALIFIERS = re.compile(r"\s+(?:di|del|della|dei|degli|in)\s", re.IGNORECASE)
 
 
 def _more_queries(item):
-    """(text, language) pairs: each Italian head without its qualifier, each Latin nominative in la and it."""
+    """(text, language) pairs: each Italian head of the item without its qualifier (Italian heads only;
+    the Latin nominatives are added by search_more)."""
     queries = []
 
     def add(text, language):
@@ -367,7 +368,9 @@ def _more_queries(item):
 
 def search_more(review, index, client):
     """Search again for the places Jev found no candidate for; returns the number of cards that gained
-    candidates. The raised WikidataError cards are left unchanged and listed in search_more.not_processed."""
+    candidates. On a card that already had candidates (Jev rejected them all), `failed` and `claims` are
+    kept and the new candidates are appended, so it may exceed MAX_CANDIDATES. The raised WikidataError cards are left
+    unchanged and listed in search_more.not_processed."""
     changed, not_processed = 0, []
     for op in review["operations"]:
         jev = op.get("jev") or {}

@@ -9,6 +9,8 @@ sent, never a whole eulogy, and no coordinates. A suggestion is only ever shown 
 Standard library only.
 """
 
+import re
+
 from gazetteer_text import fold, parse_italian
 from mentions_jev import MODEL
 from subject_jev import MAX_CLAUSE, _choice, _sentences, _window
@@ -69,26 +71,34 @@ def latin_clause(la_text, la):
     return _window(sentences[0][1], 0)
 
 
+def prints(la_text, la):
+    """Whether the Latin text prints the phrase `la`: exactly, else folded."""
+    if not la or not la_text:
+        return False
+    return la in la_text or fold(la) in _fold_with_origin(la_text)[0]
+
+
 def english_clause(en_text, op):
-    """The first English sentence naming a candidate's label or an Italian head of the card; else the
-    first sentence; "" for empty text."""
+    """The first English sentence naming (as a whole word) a candidate's label or an Italian head of the
+    card, windowed at the name; else the first sentence; "" for empty text."""
     sentences = _sentences(en_text or "")
     if not sentences:
         return ""
     names = [c.get("label") for c in op.get("candidates") or []]
-    names += parse_italian(op.get("it") or "")["heads"]
+    names += [h for it in op.get("it") or [] for h in parse_italian(it)["heads"]]
     names = [n for n in (fold(n) for n in names if n) if n]
     for _, sentence in sentences:
-        folded = fold(sentence)
-        if any(n in folded for n in names):
-            return _window(sentence, 0)
+        folded, origin = _fold_with_origin(sentence)
+        hits = [m.start() for m in (re.search(r"\b" + re.escape(n) + r"\b", folded) for n in names) if m]
+        if hits:
+            return _window(sentence, origin[min(hits)])
     return _window(sentences[0][1], 0)
 
 
 # The request
 
 def _candidate(c):
-    out = {k: c.get(k) for k in ("wikidata", "label", "description", "country", "types", "la", "p9314")}
+    out = {k: c.get(k) for k in ("wikidata", "label", "description", "country", "la", "p9314")}
     return out
 
 

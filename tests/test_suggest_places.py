@@ -74,6 +74,34 @@ class SuggestTest(unittest.TestCase):
         self.assertIn("Tybúrni", body["state"]["latin_clause"])
         self.assertIn("Tyburn", body["state"]["english_clause"])
 
+    def test_request_prefers_the_occurrence_printing_the_phrase(self):
+        texts = {"la": {"mr:0101-a": "Romae passus est sanctus.", "mr:0102-b": "Londini, apud Tybúrni, passus est."},
+                 "en": {}}
+        op = dict(op_with_candidates(), occurrences=["mr:0101-a", "mr:0102-b"])
+        self.assertIn("Tybúrni", sp.request_for(op, texts)["state"]["latin_clause"])
+        texts["la"]["mr:0102-b"] = "Londini, apud Tyburni, passus est."
+        self.assertIn("Tyburni", sp.request_for(op, texts)["state"]["latin_clause"])
+        texts["la"]["mr:0102-b"] = "Londini, passus est."
+        self.assertEqual(sp.request_for(op, texts)["state"]["latin_clause"], "Romae passus est sanctus.")
+
+    def test_request_for_a_queue_shaped_op(self):
+        op = {"op": "resolve_place", "id": "Tybúrni", "la": "Tybúrni", "it": ["Tyburn"],
+              "occurrences": ["mr:0111-gulielmus-carter", "mr:0121-albanus-roe"], "claims": [],
+              "failed": ["latin: no Latin label, alias or P9314 matches"],
+              "candidates": [
+                  {"wikidata": "Q1362341", "label": "Tyburn", "description": "village in Middlesex",
+                   "country": "GB", "countries": ["GB"], "la": [], "p9314": False,
+                   "coords": [51.512861111111, -0.164], "types": ["Q532"], "evidence": ["it", "type"]},
+                  {"wikidata": "Q2096948", "label": "Tyburn", "description": "underground stream in London",
+                   "country": "GB", "countries": ["GB"], "la": [], "p9314": False,
+                   "coords": [51.5136, -0.1486], "types": ["Q47521"], "evidence": ["type"]}],
+              "decision": None, "edited": None}
+        texts = {"la": {"mr:0111-gulielmus-carter": "Londini, apud Tybúrni, passus est."},
+                 "en": {"mr:0111-gulielmus-carter": "In London, at Tyburn, he suffered."}}
+        body = sp.request_for(op, texts)
+        self.assertIsNotNone(body)
+        self.assertIn("Tyburn", body["state"]["english_clause"])
+
     def test_error_is_counted_reported_and_removes_jev(self):
         op = dict(op_with_candidates(), jev={"kind": "place"})
         err = io.StringIO()
@@ -126,12 +154,12 @@ class EvaluateTest(unittest.TestCase):
         rows = [{"id": "a", "expected": "Q1", "picked": "Q1", "probability": 0.95, "negative": False},
                 {"id": "b", "expected": None, "picked": "Q3", "probability": 0.92, "negative": True}]
         out = sp.report(rows, [0.9])
-        self.assertIn("0.9  positives 1/1 agree (100.0%)  negatives 0/1 agree (0.0%)", out)
+        self.assertIn("0.9  positives 1/1 agree (100.0%), 0 wrong picks  negatives 0/1 agree (0.0%), 1 wrong picks", out)
         self.assertIn("disagreements at 0.9:", out)
         self.assertIn("  b [negative]: expected none, picked Q3 p=0.92", out)
 
     def test_report_with_no_rows_at_a_threshold(self):
-        self.assertIn("0.99  positives 0/0 agree (0.0%)  negatives 0/0 agree (0.0%)", sp.report([], [0.99]))
+        self.assertIn("0.99  positives 0/0 agree (0.0%), 0 wrong picks  negatives 0/0 agree (0.0%), 0 wrong picks", sp.report([], [0.99]))
 
     def test_evaluate_ops_rows_and_errors(self):
         pairs = sp.calibration_set([round1_op(cands=["Q1", "Q2"])], {"P": {"wikidata": "Q1", "status": "reviewed"}})

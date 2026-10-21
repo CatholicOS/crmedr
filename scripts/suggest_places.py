@@ -43,13 +43,14 @@ def load_texts_for(texts_repo, repo_root):
 
 
 def request_for(op, texts):
-    """The card's request, from the first occurrence whose Latin text exists; None when none has one."""
-    for mrid in op.get("occurrences") or []:
-        la_text = texts["la"].get(mrid)
-        if la_text:
-            return gj.place_request(op, gj.latin_clause(la_text, op["la"]),
-                                    gj.english_clause(texts["en"].get(mrid), op))
-    return None
+    """The card's request, from the first occurrence whose Latin text prints the phrase (exactly, then
+    folded), else the first with any Latin text; None when none has one."""
+    with_text = [m for m in op.get("occurrences") or [] if texts["la"].get(m)]
+    mrid = next((m for m in with_text if gj.prints(texts["la"][m], op["la"])), with_text[0] if with_text else None)
+    if mrid is None:
+        return None
+    return gj.place_request(op, gj.latin_clause(texts["la"][mrid], op["la"]),
+                            gj.english_clause(texts["en"].get(mrid), op))
 
 
 def ask(op, texts, client):
@@ -169,15 +170,21 @@ def evaluate_ops(pairs, texts, client):
 
 
 def _rate(rows, t):
+    """(agreement text, wrong picks): rows at probability >= t; a wrong pick is an item picked that is
+    not the expected one."""
     answered = [r for r in rows if r["probability"] >= t]
     agree = sum(1 for r in answered if r["picked"] == r["expected"])
-    return f"{agree}/{len(answered)} agree ({100 * agree / len(answered) if answered else 0.0:.1f}%)"
+    wrong = sum(1 for r in answered if r["picked"] is not None and r["picked"] != r["expected"])
+    return f"{agree}/{len(answered)} agree ({100 * agree / len(answered) if answered else 0.0:.1f}%)", wrong
 
 
 def report(rows, thresholds):
     positives = [r for r in rows if not r["negative"]]
     negatives = [r for r in rows if r["negative"]]
-    out = [f"{t}  positives {_rate(positives, t)}  negatives {_rate(negatives, t)}" for t in thresholds]
+    out = []
+    for t in thresholds:
+        (pa, wp), (na, wn) = _rate(positives, t), _rate(negatives, t)
+        out.append(f"{t}  positives {pa}, {wp} wrong picks  negatives {na}, {wn} wrong picks")
     out.append("disagreements at 0.9:")
     for r in rows:
         if r["probability"] >= 0.9 and r["picked"] != r["expected"]:

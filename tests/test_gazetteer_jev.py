@@ -8,7 +8,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 import gazetteer_jev as gj  # noqa: E402
 import mentions_jev as mj  # noqa: E402
 
-OP = {"op": "resolve_place", "id": "place:tyburni", "la": "Tybúrni", "it": "Tyburn", "occurrences": 1,
+OP = {"op": "resolve_place", "id": "place:tyburni", "la": "Tybúrni", "it": ["Tyburn"], "occurrences": ["mr:0101-a"],
       "candidates": [
           {"wikidata": "Q1", "label": "Tyburn", "description": "place in London", "country": "GB",
            "countries": ["GB"], "la": "Tiburnum", "p9314": None, "coords": [51.5, -0.16],
@@ -53,7 +53,23 @@ class ClauseTest(unittest.TestCase):
         self.assertEqual(gj.english_clause("", OP), "")
 
 
+    def test_english_clause_matches_whole_words_only(self):
+        op = dict(OP, it=[], candidates=[{"wikidata": "Q9", "label": "Ur"}])
+        en = "Primo. Saint Murray suffered. At Ur in Chaldea, Abraham."
+        self.assertEqual(gj.english_clause(en, op), "At Ur in Chaldea, Abraham.")
+
+    def test_english_clause_window_keeps_the_place_name(self):
+        en = "Saint X " + "and companions " * 40 + "suffered at Tyburn in London."
+        clause = gj.english_clause(en, OP)
+        self.assertLessEqual(len(clause), 400)
+        self.assertIn("Tyburn", clause)
+
+
 class RequestTest(unittest.TestCase):
+    def test_candidate_fields_sent(self):
+        sent = gj.place_request(OP, "", "")["state"]["candidates"]["c0"]
+        self.assertEqual(set(sent), {"wikidata", "label", "description", "country", "la", "p9314"})
+
     def test_request_shape(self):
         body = gj.place_request(OP, "la clause", "en clause")
         self.assertEqual(body["model"], mj.MODEL)

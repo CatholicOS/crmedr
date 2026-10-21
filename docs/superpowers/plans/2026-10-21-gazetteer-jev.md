@@ -415,3 +415,7 @@ def test_prefill_skips_below_threshold_no_country_and_decided(self):   # Review 
    earlier gazetteer queues), PR, merge, `gh workflow run deploy.yml --ref main`.
 7. **After the curator's review:** export → `build_gazetteer.py apply <exported.json>` → `extract_places`,
    `registry_places`, `extract_mentions` → API pin release → frontend `npm run snapshot-registry`.
+
+Notes:
+- Do not run `build_gazetteer.py propose` mid-review: it rebuilds the ops and drops every `jev` and every decision.
+- `prefill` is additive: re-running it at a higher threshold does not withdraw earlier pre-fills.
