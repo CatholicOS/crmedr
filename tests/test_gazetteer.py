@@ -667,6 +667,26 @@ class SearchMoreTest(unittest.TestCase):
         self.assertEqual(bg.search_more.not_processed[0][0], "Béthlehem")
 
 
+class RegionFailsClient(FakeClient):
+    def region_countries(self, text):
+        raise wd.WikidataError("region boom")
+
+
+class SearchMoreRegionErrorTest(unittest.TestCase):
+    def test_error_in_evaluate_leaves_card_and_continues(self):
+        first = no_candidate_op("Aaa", ["Betlemme in Fictia"])
+        second = no_candidate_op("Bbb", ["Nessuno in Fictia"])
+        review = {"operations": [first, second]}
+        index = {**_search_index(first), **_search_index(second)}
+        client = RegionFailsClient(search={("Betlemme", "it"): [BETHLEHEM], ("Nessuno", "it"): [BETHLEHEM]})
+        n = bg.search_more(review, index, client)
+        self.assertEqual(n, 0)
+        for op in review["operations"]:
+            self.assertEqual(op["candidates"], [])
+            self.assertIn("jev", op)
+        self.assertEqual([la for la, _ in bg.search_more.not_processed], ["Aaa", "Bbb"])
+
+
 class ProposeTest(unittest.TestCase):
     def setUp(self):
         self.client = FakeClient({

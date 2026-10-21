@@ -386,13 +386,13 @@ def search_more(review, index, client):
                 for c in client.candidates(text, language=language):
                     if c["wikidata"] not in known:
                         raw.setdefault(c["wikidata"], c)
+            result = evaluate(la, index[la], list(raw.values()), client.region_countries,
+                              getattr(client, "region_coords", lambda region: [])) if raw else None
         except WikidataError as e:
             not_processed.append((la, str(e)))
             continue
-        if not raw:
+        if not result:
             continue
-        result = evaluate(la, index[la], list(raw.values()), client.region_countries,
-                          getattr(client, "region_coords", lambda region: []))
         new = [c for c in result["candidates"] if c["wikidata"] not in known]
         if not new:
             continue
