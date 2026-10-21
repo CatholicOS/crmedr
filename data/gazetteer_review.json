@@ -15719,7 +15719,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -67852,7 +67852,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -85427,7 +85427,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -85580,7 +85580,7 @@
       ],
       "claims": [],
       "failed": [
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -97889,7 +97889,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -101742,7 +101742,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -101908,7 +101908,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -123265,7 +123265,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -150794,7 +150794,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
@@ -174016,7 +174016,7 @@
       ],
       "claims": [],
       "failed": [
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS",
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL",
         "type: the item is not a place"
       ],
       "candidates": [
@@ -174241,6 +174241,27 @@
             "Q2175765"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q3001765",
+          "label": "Église du couvent des bénédictines du Calvaire d'Angers",
+          "description": "convent located in Maine-et-Loire, in France",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            47.4785,
+            -0.5631
+          ],
+          "types": [
+            "Q1128397"
+          ],
+          "evidence": [
+            "type"
+          ]
         }
       ],
       "decision": null,
@@ -174252,7 +174273,13 @@
         "probability": 0.61,
         "confidence": 0.48,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q3001765",
+        "country": "FR"
+      },
+      "confidence": "high",
+      "reasoning": "Rosalie du Verdier de la Sorinière was a nun of the Benedictines of the Calvary at Angers (French Wikipedia); Q3001765 is that convent (founded 1623, Angers). Not Golgotha."
     },
     {
       "op": "resolve_place",
@@ -197553,7 +197580,7 @@
       "claims": [],
       "failed": [
         "latin: no Latin label, alias or P9314 matches",
-        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS"
+        "country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL"
       ],
       "candidates": [
         {
