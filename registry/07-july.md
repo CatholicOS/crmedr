@@ -101,7 +101,7 @@
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI | dies_natalis |  |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
 | 8 | 2 | `mr:0708-glyceria` |  | TR | dies_natalis | same as `mr:0513-glyceria` |  |
-| 8 | 3 | `mr:0708-procopius` |  | PS | dies_natalis |  |  |
+| 8 | 3 | `mr:0708-procopius` |  | IL | dies_natalis |  |  |
 | 8 | 4 | `mr:0708-pancratius` |  | IT | dies_natalis | same as `mr:0403-pancratius` |  |
 | 8 | 5 | `mr:0708-auspicius` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Tulle" where the Latin has "Tulli" (Toul, in Gallia Belgica). |
 | 8 | 6 | `mr:0708-disibodus` | * | DE | dies_natalis |  |  |
@@ -357,7 +357,7 @@
 | 25 | (1) | `mr:0725-iacobus-apostolus` |  | PS | dies_natalis |  |  |
 | 25 | 2 | `mr:0725-christophorus` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0725-cucuphas` |  | ES | dies_natalis |  |  |
-| 25 | 4 | `mr:0725-valentina-et-socii` |  | PS | dies_natalis |  |  |
+| 25 | 4 | `mr:0725-valentina-et-socii` |  | IL | dies_natalis |  |  |
 | 25 | 5 | `mr:0725-olympias` |  | TR | dies_natalis | same as `mr:1217-olympias` |  |
 | 25 | 6 | `mr:0725-magnericus` |  | DE | dies_natalis |  |  |
 | 25 | 7 | `mr:0725-beatus-et-bantus` | * | DE | dies_natalis |  |  |

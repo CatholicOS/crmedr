@@ -18,6 +18,8 @@ GAZ = {
     "Hierosólymæ": {"wikidata": "Q1218", "label": "Jerusalem", "country": "PS", "status": "reviewed"},
     "Nullópoli": {"wikidata": None, "status": "unresolved", "note": "n"},
     "Oriénte": {"wikidata": "Q205653", "label": "Orient", "country": None, "status": "reviewed"},
+    "Frísia": {"wikidata": "Q165111", "label": "Frisia", "country": None, "countries": ["NL", "DE"],
+               "status": "reviewed"},
 }
 
 
@@ -66,6 +68,14 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual(out[0]["places"][0]["wikidata"], "Q205653")
         self.assertIsNone(out[0]["places"][0]["country"])
 
+    def test_place_in_several_countries_keeps_them_and_the_eulogy_takes_the_curated_one(self):
+        out = rp.apply([entry("mr:0101-a", "IT", lead("Frísia"))], GAZ, {"mr:0101-a": "NL"})
+        self.assertEqual(out[0]["country"], "NL")
+        self.assertEqual({k: out[0]["places"][0][k] for k in ("wikidata", "country", "countries")},
+                         {"wikidata": "Q165111", "country": None, "countries": ["NL", "DE"]})
+        self.assertRegex("\n".join(rp.validate([entry("mr:0101-a", "IT", lead("Frísia"))], GAZ, {})),
+                         r"no single country")
+
     def test_unresolved_place_gets_no_fields(self):
         out = rp.apply([entry("mr:0101-a", "IT", lead("Nullópoli"))], GAZ, {"mr:0101-a": "IT"})
         self.assertEqual(out[0]["places"][0], lead("Nullópoli"))
@@ -78,11 +88,11 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual([e["country"] for e in out], ["IT", None, "DE"])
         self.assertEqual(out[0]["places"][0]["wikidata"], "Q1")  # curated (body) places get fields too
 
-    def test_holy_land_convention_on_both_paths(self):
+    def test_israel_stays_il_on_both_paths(self):
         gaz = GAZ | {"Lyddæ": {"wikidata": "Q207540", "label": "Lod", "country": "IL", "status": "reviewed"}}
         out = rp.apply([entry("mr:0101-a", "IL", lead("Lyddæ")), entry("mr:0102-b", "IL")], gaz, {"mr:0102-b": "IL"})
-        self.assertEqual([e["country"] for e in out], ["PS", "PS"])
-        self.assertEqual(out[0]["places"][0]["country"], "PS")
+        self.assertEqual([e["country"] for e in out], ["IL", "IL"])
+        self.assertEqual(out[0]["places"][0]["country"], "IL")
 
     def test_deprecated_untouched(self):
         dep = entry("mr:0101-z", "IL", deprecated=True, attested_in="x")

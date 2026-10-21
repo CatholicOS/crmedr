@@ -146,7 +146,7 @@
 | 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  | 2004 Italian: Translation error: "morì fatto a brandelli" (died torn to pieces) where the Latin has "différri præcépit" (the judge ordered him to be put off, sparing him). 2004 English: Translation error: "Ater" where the Latin has "Atéi" (Ateus). Translation error: "ordered to be dismissed" where the Latin has "différri præcépit" (ordered to be held back). |
 | 14 | 3 | `mr:1214-thyrsus-et-socii` |  | TR | dies_natalis | same as `mr:0128-thyrsus-et-socii` |  |
 | 14 | 4 | `mr:1214-drosis` |  | TR | dies_natalis |  |  |
-| 14 | 5 | `mr:1214-ares-et-socii` |  | PS | dies_natalis |  |  |
+| 14 | 5 | `mr:1214-ares-et-socii` |  | IL | dies_natalis |  |  |
 | 14 | 6 | `mr:1214-pompeius` |  | IT | dies_natalis |  |  |
 | 14 | 7 | `mr:1214-nicasius` |  | FR | dies_natalis |  |  |
 | 14 | 8 | `mr:1214-agnellus` |  | IT | dies_natalis |  |  |
@@ -176,7 +176,7 @@
 | 16 | 11 | `mr:1216-florentius-kazminsky` | * | PL | dies_natalis |  | 2004 Latin: Spelling error: "Kazminsky" for the surname Koźmiński. |
 | 16 | 12 | `mr:1216-philippus-siphong-onphitak` | * | TH | dies_natalis |  | 2004 English: Translation error: "was taken" omits the Latin "dolóse" (by deceit). |
 | 17 | 1 | `mr:1217-modestus` |  | PS | dies_natalis |  |  |
-| 17 | 2 | `mr:1217-quinquaginta-milites-eleutheropolis` |  | PS | dies_natalis |  |  |
+| 17 | 2 | `mr:1217-quinquaginta-milites-eleutheropolis` |  | IL | dies_natalis |  |  |
 | 17 | 3 | `mr:1217-iudicael` | * | FR | dies_natalis |  |  |
 | 17 | 4 | `mr:1217-begga` |  | BE | dies_natalis |  |  |
 | 17 | 5 | `mr:1217-sturmius` |  | DE | dies_natalis |  | 2004 English: Translation error: "rebuilt" where the Latin has "ædificándum curávit" (had it built). |

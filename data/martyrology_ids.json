@@ -2854,7 +2854,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -3300,7 +3304,7 @@
       "day": 11,
       "entry": 4,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -3310,7 +3314,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -3370,7 +3374,11 @@
           "source": "lead",
           "wikidata": "Q2046004",
           "label": "Judaean Desert",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -5925,9 +5933,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "journey",
@@ -7552,7 +7564,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -8077,9 +8093,13 @@
           "la": "Palæstína",
           "it": "Palestina",
           "source": "curated",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -8498,7 +8518,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -10079,7 +10103,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "mention",
@@ -13291,7 +13319,7 @@
       "day": 13,
       "entry": 10,
       "asterisk": true,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -13301,7 +13329,7 @@
           "source": "lead",
           "wikidata": "Q126084",
           "label": "Acre",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -13926,7 +13954,7 @@
       "day": 16,
       "entry": 2,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -13936,7 +13964,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "birth",
@@ -14733,9 +14761,13 @@
           "la": "Palæstína",
           "it": "Palestina",
           "source": "curated",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -17435,7 +17467,7 @@
       "day": 3,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -17445,7 +17477,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -18128,7 +18160,7 @@
       "day": 5,
       "entry": 5,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -18138,7 +18170,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -18156,9 +18188,13 @@
           "la": "In Palæstína ad ripam Iordánis",
           "it": "In Palestina sulle rive del Giordano",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -18581,7 +18617,7 @@
       "day": 7,
       "entry": 3,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -18591,7 +18627,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -19664,7 +19700,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -21100,9 +21140,13 @@
           "la": "Palæstína",
           "it": "Palestina",
           "source": "curated",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -22758,7 +22802,7 @@
       "day": 24,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -22768,7 +22812,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -23711,7 +23755,7 @@
       "day": 28,
       "entry": 2,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "commemoratio",
       "places": [
         {
@@ -23721,7 +23765,7 @@
           "source": "curated",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "edition_notes": {
@@ -24044,7 +24088,7 @@
       "day": 29,
       "entry": 4,
       "asterisk": true,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -24054,7 +24098,7 @@
           "source": "lead",
           "wikidata": "Q185318",
           "label": "Mount Carmel",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -24729,9 +24773,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "religious_life",
@@ -24954,7 +25002,7 @@
       "day": 2,
       "entry": 2,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -24964,7 +25012,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -24974,7 +25022,7 @@
       "day": 2,
       "entry": 3,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -24985,7 +25033,7 @@
           "via": "mr:0402-apphianus",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "birth",
@@ -30992,7 +31040,7 @@
       "day": 23,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -31002,7 +31050,7 @@
           "source": "curated",
           "wikidata": "Q207540",
           "label": "Lod",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "unnumbered": true
@@ -31255,7 +31303,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -31563,7 +31615,11 @@
           "source": "curated",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "ministry",
@@ -32104,7 +32160,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "same_eulogy": [
@@ -38063,9 +38123,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "death",
@@ -45888,7 +45952,11 @@
           "occurrence_it": 1,
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "mention",
@@ -46820,9 +46888,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -46983,9 +47055,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "birth",
@@ -53464,7 +53540,7 @@
       "day": 8,
       "entry": 3,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -53474,7 +53550,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "journey",
@@ -55114,9 +55190,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -57827,9 +57907,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -59540,7 +59624,7 @@
       "day": 25,
       "entry": 4,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -59550,7 +59634,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -68953,9 +69037,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -72909,7 +72997,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "same_eulogy": [
@@ -73660,7 +73752,7 @@
       "day": 2,
       "entry": 12,
       "asterisk": true,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -73670,7 +73762,7 @@
           "source": "lead",
           "wikidata": "Q185318",
           "label": "Mount Carmel",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "mention",
@@ -77000,7 +77092,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "dedication",
@@ -77428,7 +77524,7 @@
       "day": 14,
       "entry": 7,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -77438,7 +77534,7 @@
           "source": "lead",
           "wikidata": "Q126084",
           "label": "Acre",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "ministry",
@@ -79026,9 +79122,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "ministry",
@@ -81291,9 +81391,13 @@
           "source": "curated",
           "occurrence": 1,
           "occurrence_it": 1,
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -82485,9 +82589,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -87811,7 +87919,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "same_eulogy": [
@@ -89093,7 +89205,7 @@
       "day": 20,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "commemoratio",
       "places": [
         {
@@ -89103,7 +89215,7 @@
           "source": "curated",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "same_eulogy": [
@@ -93806,7 +93918,7 @@
       "day": 5,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -93816,7 +93928,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "exile",
@@ -93836,7 +93948,7 @@
       "day": 5,
       "entry": 2,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "commemoratio",
       "places": [
         {
@@ -93847,7 +93959,7 @@
           "via": "mr:1105-domninus",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "note": "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions."
@@ -94272,7 +94384,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "mention",
@@ -96128,7 +96244,7 @@
       "day": 13,
       "entry": 1,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -96138,7 +96254,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "edition_notes": {
@@ -96779,7 +96895,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -97634,7 +97754,7 @@
       "day": 17,
       "entry": 3,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -97644,7 +97764,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ]
     },
@@ -98938,7 +99058,7 @@
       "day": 21,
       "entry": 4,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -98948,7 +99068,7 @@
           "source": "lead",
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
-          "country": "PS"
+          "country": "IL"
         }
       ],
       "edition_notes": {
@@ -103314,9 +103434,13 @@
           "la": "In Palæstína",
           "it": "In Palestina",
           "source": "lead",
-          "wikidata": "Q219060",
+          "wikidata": "Q23792",
           "label": "Palestine",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "ministry",
@@ -105021,7 +105145,7 @@
       "day": 14,
       "entry": 5,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -105031,7 +105155,7 @@
           "source": "lead",
           "wikidata": "Q60956",
           "label": "Ashkelon",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "exile",
@@ -105707,7 +105831,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -105717,7 +105845,7 @@
       "day": 17,
       "entry": 2,
       "asterisk": false,
-      "country": "PS",
+      "country": "IL",
       "typology": "dies_natalis",
       "places": [
         {
@@ -105727,7 +105855,7 @@
           "source": "lead",
           "wikidata": "Q2608946",
           "label": "Eleutheropolis",
-          "country": "PS"
+          "country": "IL"
         },
         {
           "role": "mention",
@@ -106461,9 +106589,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "mention",
@@ -107411,7 +107543,11 @@
           "source": "curated",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "unnumbered": true,
@@ -107922,9 +108058,13 @@
           "la": "Israel",
           "it": "Israele",
           "source": "curated",
-          "wikidata": "Q801",
-          "label": "Israel",
-          "country": "PS"
+          "wikidata": "Q155321",
+          "label": "Land of Israel",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -108598,7 +108738,11 @@
           "source": "lead",
           "wikidata": "Q1218",
           "label": "Jerusalem",
-          "country": "PS"
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         },
         {
           "role": "journey",

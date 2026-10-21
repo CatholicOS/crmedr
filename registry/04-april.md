@@ -15,8 +15,8 @@
 | 1 | 9 | `mr:0401-ioannes-bretton` | * | GB | dies_natalis |  |  |
 | 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  | Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 2 | (1) | `mr:0402-franciscus-de-paula` |  | IT | dies_natalis |  |  |
-| 2 | 2 | `mr:0402-apphianus` |  | PS | dies_natalis |  |  |
-| 2 | 3 | `mr:0402-theodora` |  | PS | dies_natalis |  |  |
+| 2 | 2 | `mr:0402-apphianus` |  | IL | dies_natalis |  |  |
+| 2 | 3 | `mr:0402-theodora` |  | IL | dies_natalis |  |  |
 | 2 | 4 | `mr:0402-abundius` |  | IT | dies_natalis |  |  |
 | 2 | 5 | `mr:0402-victor` |  | IT | dies_natalis |  |  |
 | 2 | 6 | `mr:0402-nicetius` |  | FR | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 22 | 9 | `mr:0422-opportuna` | * | FR | dies_natalis |  |  |
 | 22 | 10 | `mr:0422-senorina` | * | PT | dies_natalis |  | 2004 English: Translation error: "Badajoz" where the Latin has "Basti" (Basto, in Portugal). |
 | 22 | 11 | `mr:0422-franciscus-venimbeni` | * | IT | dies_natalis |  |  |
-| 23 | (1) | `mr:0423-georgius` |  | PS | dies_natalis |  |  |
+| 23 | (1) | `mr:0423-georgius` |  | IL | dies_natalis |  |  |
 | 23 | (2) | `mr:0423-adalbertus` |  | CZ | dies_natalis |  | 2004 English: Translation error: "near the Vistula" where the Latin has "ad sinum Venédicum" (on the Venedic Gulf, the Baltic gulf of Gdańsk). |
 | 23 | 3 | `mr:0423-eulogius` |  | TR | dies_natalis |  |  |
 | 23 | 4 | `mr:0423-marolus` |  | IT | dies_natalis |  |  |

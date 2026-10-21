@@ -1299,26 +1299,38 @@ whose place is resolved carries the place's `wikidata`, `label` and `country`, a
 the `text_says` claims of its own Italian phrase. Each current entry's `country` is
 then derived, never taken from the workbook:
 
-1. the country of its opening place, when the gazetteer resolves it (4,224 of 4,640
-   current entries);
-2. otherwise the value in `data/countries_curated.json` (no opening place, or one still
-   awaiting review), seeded from the registry's earlier, already corrected codes, with
-   the notes of the former `COUNTRY_CORRECTIONS` where they apply;
-3. the Holy Land convention last: `IL` becomes `PS`.
+1. the country of its opening place, when the gazetteer resolves it to a single country
+   (4,224 of 4,640 current entries when introduced);
+2. otherwise the value in `data/countries_curated.json` (no opening place, one still
+   awaiting review, or one in no single country or in several), seeded from the
+   registry's earlier, already corrected codes, with the notes of the former
+   `COUNTRY_CORRECTIONS` where they apply;
+3. `COUNTRY_CONVENTIONS` last (empty since 2026-10-21; it was the Holy Land convention,
+   `IL` becoming `PS`).
 
 The actual modern country wins over the country the text names and over the borders
 of the time: places printed "in Polónia" that are now in Belarus or Ukraine are `BY`
-or `UA`. The Holy Land is `PS` everywhere, places within Israel's pre-1967 lines
-included (Acre, Caesarea Maritima, Lod): the registry names the territory as it was
-historically called and takes no part in current disputes; a map marker lands in the
-same region either way, and each place's Wikidata item gives its current status. The
-gazetteer check now rejects an `IL` country. To correct a country, correct the place
+or `UA`. A Holy Land place is `IL` or `PS` by where it lies today, and both when it
+spans them (see the revision below; until 2026-10-21 the Holy Land was `PS` everywhere
+and the check rejected `IL`). To correct a country, correct the place
 in `data/gazetteer.json` (or the curated value) and rerun the script; a test fails
 when the committed registry is out of date. Deprecated entries keep their `country`.
 
 The change altered 109 current entries: 80 now follow their
 opening place, and 29 Holy Land entries with no opening place moved from
 `IL` to `PS`.
+
+**Revised 2026-10-21: no Holy Land convention.** With places in several countries
+(`countries` in `data/gazetteer.json`), a Holy Land place takes `IL` or `PS` by where it
+lies today, and both when it spans them: Acre, Caesarea Maritima, Lod, Ashkelon,
+Eleutheropolis and Mount Carmel are `IL`; Bethlehem, Gaza, Maiuma, Mar Saba, Koziba,
+Wadi Khureitun and Sebastia `PS`; Jerusalem, the Judaean Desert and the region of
+Palestine (now Q23792, not the State of Palestine Q219060) `IL` and `PS`.
+`COUNTRY_CONVENTIONS` is empty. A eulogy opening at a place in both has its country in
+`data/countries_curated.json`: the 22 that open at Jerusalem, the Judaean Desert or
+Palestine keep `PS`. Of the curated `PS` entries, three moved to `IL` (Priscus and
+companions and Cornelius at Caesarea, George at Lydda). 24 current entries changed, all
+from `PS` to `IL`.
 
 | ID | Opening place | Before | After |
 | --- | --- | --- | --- |

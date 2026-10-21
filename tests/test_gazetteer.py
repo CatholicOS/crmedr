@@ -15,7 +15,7 @@ class FoldTest(unittest.TestCase):
         self.assertEqual(gt.fold("  Fictópoli  Ǽquæ  Nell’ "), "fictopoli aequae nell'")
 
     def test_country_of(self):
-        self.assertEqual(gt.country_of("Israele"), "PS")  # the registry's Holy Land convention
+        self.assertEqual(gt.country_of("Israele"), "IL")  # no Holy Land convention since 2026-10-21
         self.assertEqual(gt.country_of("Francia"), "FR")
         self.assertEqual(gt.country_of("viet nam"), "VN")
         self.assertIsNone(gt.country_of("Fictia"))
@@ -290,12 +290,12 @@ class ClientTest(unittest.TestCase):
         self.fetch.searches["Fictaria"] = ["Q7"]
         self.assertEqual(self.client.candidates("Fictaria")[0]["country"], "FY")
 
-    def test_holy_land_convention(self):
+    def test_israel_stays_il(self):
         self.fetch.entities["Q801"] = raw_entity("Q801", it=("Israele",), p297="IL", p31=("Q6256",))
         self.fetch.entities["Q8"] = raw_entity("Q8", it=("Fictaroth",), p17=[snak("P17", "Q801")])
         self.fetch.searches["Fictaroth"] = ["Q8"]
         c = self.client.candidates("Fictaroth")[0]
-        self.assertEqual((c["country"], c["countries"]), ("PS", ["PS"]))
+        self.assertEqual((c["country"], c["countries"]), ("IL", ["IL"]))
 
     def test_region_countries(self):
         self.assertEqual(self.client.region_countries("Fictia"), {"FX"})
@@ -611,10 +611,9 @@ class ValidateTest(unittest.TestCase):
             errors = bg.validate({la: entry}, INDEX)
             self.assertTrue(errors and word in errors[0], (la, entry, errors))
 
-    def test_holy_land_convention(self):
+    def test_israel_is_a_valid_country(self):
         gaz = {"Altrópoli": {"wikidata": "Q1", "label": "Altropolis", "country": "IL", "status": "reviewed"}}
-        errors = bg.validate(gaz, INDEX)
-        self.assertTrue(any("IL" in e and "PS" in e for e in errors), errors)
+        self.assertEqual(bg.validate(gaz, INDEX), [])
 
     def test_text_says_absent_when_the_text_agrees(self):
         good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": "DE", "status": "reviewed"}}
@@ -624,6 +623,27 @@ class ValidateTest(unittest.TestCase):
         # A macro-area (the Orient, Africa): no country, so no text_says either.
         good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": None, "status": "reviewed"}}
         self.assertEqual(bg.validate(good, INDEX), [])
+
+    def test_reviewed_place_in_several_countries(self):
+        # Frisia: NL and DE. The Italian's Germania is one of them, so no text_says.
+        good = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": None, "countries": ["NL", "DE"],
+                              "status": "reviewed"}}
+        self.assertEqual(bg.validate(good, INDEX), [])
+        says = {"Fictópoli": {"wikidata": "Q1", "label": "x", "country": None, "countries": ["NL", "BE"],
+                              "status": "reviewed"}}
+        self.assertTrue(any("text_says" in e for e in bg.validate(says, INDEX)))
+
+    def test_bad_countries(self):
+        base = {"wikidata": "Q1", "label": "x", "status": "reviewed"}
+        for entry in (dict(base, country="NL", countries=["NL", "DE"]),
+                      dict(base, country=None, countries=["NL"]),
+                      dict(base, country=None, countries=["NL", "NL"]),
+                      dict(base, country=None, countries=["NL", "XX"]),
+                      dict(base, country=None, countries="NL,DE"),
+                      dict(base, country=None, countries=[["NL"], "DE"]),
+                      dict(base, country=None, countries=["NL", "DE"], status="auto")):
+            errors = bg.validate({"Altrópoli": entry}, INDEX)
+            self.assertTrue(errors and "countr" in errors[0], (entry, errors))
 
     def test_no_country_is_only_for_reviewed_places_and_explicit(self):
         for entry in ({"wikidata": "Q1", "label": "x", "country": None, "status": "auto"},
@@ -927,15 +947,34 @@ class ApplyTest(unittest.TestCase):
         _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q7", "country": "IT"}))
         self.assertEqual(gaz["Fictópoli"]["label"], "Septima")
 
-    def test_decided_country_follows_the_holy_land_convention(self):
+    def test_decided_israel_stays_il(self):
         _, gaz, _ = self.run_apply(op("Altrópoli", "edit", [self.c1], edited={"wikidata": "Q1", "country": "IL"}))
-        self.assertEqual(gaz["Altrópoli"]["country"], "PS")
+        self.assertEqual(gaz["Altrópoli"]["country"], "IL")
 
     def test_edit_no_country(self):
         orient = cand("Q9", label="Orient", country=None, countries=[])
         _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [orient], edited={"wikidata": "Q9", "no_country": True}))
         self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q9", "label": "Orient", "country": None,
                                             "status": "reviewed"})
+
+    def test_edit_several_countries(self):
+        frisia = cand("Q9", label="Frisia", country=None, countries=["NL", "DE"])
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [frisia], edited={"wikidata": "Q9", "countries": ["NL", "DE"]}))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q9", "label": "Frisia", "country": None,
+                                            "countries": ["NL", "DE"], "status": "reviewed"})
+
+    def test_several_countries_are_deduplicated_and_name_the_others(self):
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [self.c1], edited={"wikidata": "Q1", "countries": ["IL", "PS", "IL"]}))
+        self.assertEqual(gaz["Fictópoli"]["countries"], ["IL", "PS"])
+        self.assertEqual(gaz["Fictópoli"]["text_says"], self.says)
+
+    def test_countries_conflicts(self):
+        for edited in ({"wikidata": "Q1", "countries": ["NL", "DE"], "country": "NL"},
+                       {"wikidata": "Q1", "countries": ["NL", "DE"], "no_country": True},
+                       {"wikidata": "Q1", "countries": ["NL"]}):
+            with self.assertRaises(ValueError) as cm:
+                self.run_apply(op("Fictópoli", "edit", [self.c1], edited=edited))
+            self.assertIn("countries", str(cm.exception))
 
     def test_no_country_with_a_country_is_an_error(self):
         with self.assertRaises(ValueError) as cm:
@@ -1004,6 +1043,16 @@ class VerifySuggestionsTest(unittest.TestCase):
         for word in ("no such item", "not an ISO", "confidence"):
             self.assertIn(word, text)
         self.assertTrue(any("differs from the item's country FR" in w for w in warnings))
+
+    def test_suggestion_in_several_countries(self):
+        ok = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": ["IL", "PS"]})
+        bad = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": ["IL"]})
+        nested = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "countries": [["IL"], "PS"]})
+        for o, expected in ((ok, []), (bad, ["countries"]), (nested, ["countries"])):
+            o["confidence"] = "medium"
+            errors, _ = bg.verify_suggestions(bg.new_changeset([o]), INDEX, self.client)
+            self.assertEqual([w for w in expected if not any(w in e for e in errors)], [], errors)
+            self.assertEqual(bool(errors), bool(expected), errors)
 
 
 

@@ -21,7 +21,7 @@
 | 2 | 4 | `mr:0302-agnes` |  | CZ | dies_natalis |  | 2004 English: Translation error: "rebuilt by herself" where the Latin has "ab ipsa ædificáto" (built by her). |
 | 2 | 5 | `mr:0302-carolus-bonus` | * | BE | dies_natalis |  |  |
 | 2 | 6 | `mr:0302-angela-a-cruce` |  | ES | dies_natalis |  | 2004 Italian: Translation omission: the title "vergine" (Latin "vírginis") is missing after the name. 2004 English: Translation error: the title "virgin" ("vírginis") is omitted. |
-| 3 | 1 | `mr:0303-marinus-et-asterius` |  | PS | dies_natalis |  |  |
+| 3 | 1 | `mr:0303-marinus-et-asterius` |  | IL | dies_natalis |  |  |
 | 3 | 2 | `mr:0303-emetherius-et-cheledonius` |  | ES | dies_natalis |  |  |
 | 3 | 3 | `mr:0303-cleonicus-et-eutropius` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0303-titianus` |  | IT | dies_natalis |  |  |
@@ -51,7 +51,7 @@
 | 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
 | 5 | 3 | `mr:0305-lucius` |  | IT | depositio | same as `mr:0304-lucius-i` |  |
 | 5 | 4 | `mr:0305-phoca` |  | TR | dies_natalis |  |  |
-| 5 | 5 | `mr:0305-hadrianus` |  | PS | dies_natalis |  |  |
+| 5 | 5 | `mr:0305-hadrianus` |  | IL | dies_natalis |  |  |
 | 5 | 6 | `mr:0305-gerasimus` |  | PS | dies_natalis |  |  |
 | 5 | 7 | `mr:0305-kieranus` | * | IE | dies_natalis |  |  |
 | 5 | 8 | `mr:0305-virgilius` | * | FR | dies_natalis |  |  |
@@ -71,7 +71,7 @@
 | 6 | 11 | `mr:0306-coleta-boylet` |  | BE | dies_natalis |  |  |
 | 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis | same as `mr:0306-perpetua-et-felicitas` | 2004 Italian: Translation error: "altre giovani catecumene" (other young women catechumens) where the Latin has "áliis cum adulescéntibus catechúmenis" (with other young catechumens), who included men. Translation error: "sua schiava" (her slave, i.e. Perpetua's) where the Latin has only "serva" (a slave). |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |  |
-| 7 | 3 | `mr:0307-eubulius` |  | PS | dies_natalis |  |  |
+| 7 | 3 | `mr:0307-eubulius` |  | IL | dies_natalis |  |  |
 | 7 | 4 | `mr:0307-basilius-et-socii` |  | UA | dies_natalis | same as `mr:0304-basilius-et-socii` | 2004 Italian: Translation error: "in Grecia" (in Greece) for "Chersonésum", which is Cherson in the Crimea. |
 | 7 | 5 | `mr:0307-paulus-simplex` |  | EG | dies_natalis |  |  |
 | 7 | 6 | `mr:0307-gaudiosus` |  | IT | dies_natalis |  |  |
@@ -253,7 +253,7 @@
 | 23 | 10 | `mr:0323-annuntiata-cocchetti` | * | IT | dies_natalis |  |  |
 | 23 | 11 | `mr:0323-rebecca-de-himlaya` |  | LB | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). Translation error: "Congregazione delle Suore Libanesi Maronite" where the Latin has "Ordine Libanénsi Sancti Antónii Maronitárum" (the Lebanese Maronite Order of Saint Anthony). |
 | 23 | 12 | `mr:0323-methodius-dominicus-trcka` | * | SK | dies_natalis |  |  |
-| 24 | 1 | `mr:0324-timolaus-et-socii` |  | PS | dies_natalis |  |  |
+| 24 | 1 | `mr:0324-timolaus-et-socii` |  | IL | dies_natalis |  |  |
 | 24 | 2 | `mr:0324-secundulus` |  | DZ | dies_natalis |  |  |
 | 24 | 3 | `mr:0324-maccarthemus` | * | GB | dies_natalis |  |  |
 | 24 | 4 | `mr:0324-severus` | * | IT | dies_natalis |  |  |
@@ -293,7 +293,7 @@
 | 27 | 3 | `mr:0327-panacea-de-muzzi` | * | IT | dies_natalis |  |  |
 | 27 | 4 | `mr:0327-franciscus-faa` | * | IT | dies_natalis |  |  |
 | 28 | 1 | `mr:0328-castor` |  | TR | dies_natalis |  |  |
-| 28 | 2 | `mr:0328-priscus-et-socii` |  | PS | commemoratio |  | 2004 English: Translation error: "continuously devoured" where the Latin "contínuo ... trádidit" means he immediately handed them over. |
+| 28 | 2 | `mr:0328-priscus-et-socii` |  | IL | commemoratio |  | 2004 English: Translation error: "continuously devoured" where the Latin "contínuo ... trádidit" means he immediately handed them over. |
 | 28 | 3 | `mr:0328-cyrillus` |  | LB | dies_natalis | same as `mr:0329-cyrillus` |  |
 | 28 | 4 | `mr:0328-proterius` |  | EG | dies_natalis |  |  |
 | 28 | 5 | `mr:0328-gunthramnus` |  | FR | depositio |  |  |
@@ -308,7 +308,7 @@
 | 29 | 1 | `mr:0329-eustasius` | * | IT | commemoratio |  |  |
 | 29 | 2 | `mr:0329-marcus` |  | SY | commemoratio |  |  |
 | 29 | 3 | `mr:0329-armogastus-et-socii` |  | TN | commemoratio |  |  |
-| 29 | 4 | `mr:0329-bertholdus` | * | PS | dies_natalis |  |  |
+| 29 | 4 | `mr:0329-bertholdus` | * | IL | dies_natalis |  |  |
 | 29 | 5 | `mr:0329-gulielmus-tempier` | * | FR | dies_natalis |  |  |
 | 29 | 6 | `mr:0329-ludolphus` | * | DE | dies_natalis |  |  |
 | 29 | 7 | `mr:0329-ioannes-hambley` | * | GB | commemoratio |  |  |
