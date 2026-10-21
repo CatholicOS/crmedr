@@ -674,17 +674,17 @@ class RegionFailsClient(FakeClient):
 
 class SearchMoreRegionErrorTest(unittest.TestCase):
     def test_error_in_evaluate_leaves_card_and_continues(self):
-        first = no_candidate_op("Aaa", ["Betlemme in Fictia"])
-        second = no_candidate_op("Bbb", ["Nessuno in Fictia"])
+        first = no_candidate_op("Aaa", ["Betlemme in Fictia"])   # a region: evaluate asks Wikidata, fails
+        second = no_candidate_op("Bbb", ["Betlemme"])            # no region: evaluate succeeds
         review = {"operations": [first, second]}
         index = {**_search_index(first), **_search_index(second)}
-        client = RegionFailsClient(search={("Betlemme", "it"): [BETHLEHEM], ("Nessuno", "it"): [BETHLEHEM]})
-        n = bg.search_more(review, index, client)
-        self.assertEqual(n, 0)
-        for op in review["operations"]:
-            self.assertEqual(op["candidates"], [])
-            self.assertIn("jev", op)
-        self.assertEqual([la for la, _ in bg.search_more.not_processed], ["Aaa", "Bbb"])
+        client = RegionFailsClient(search={("Betlemme", "it"): [BETHLEHEM]})
+        self.assertEqual(bg.search_more(review, index, client), 1)
+        self.assertEqual(first["candidates"], [])
+        self.assertIn("jev", first)
+        self.assertEqual([c["wikidata"] for c in second["candidates"]], [BETHLEHEM["wikidata"]])
+        self.assertNotIn("jev", second)
+        self.assertEqual([la for la, _ in bg.search_more.not_processed], ["Aaa"])
 
 
 class ProposeTest(unittest.TestCase):
