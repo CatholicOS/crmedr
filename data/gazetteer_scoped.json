@@ -1,0 +1,6 @@
+{
+ "$comment": "Printed phrases that name different places in different eulogies: resolved per eulogy, keyed '<phrase>@<eulogy ID>' (scripts/build_gazetteer.py split). The reason says which places.",
+ "ecclésiam Sancti Petri": "St Peter's in Rome (mr:0406-galla) and San Pietro in Perugia (mr:0710-petrus-vincioli)",
+ "monastérium Sanctæ Crucis": "Holy Cross at Poitiers (mr:0513-agnes) and La Croix-Saint-Leufroy (mr:0621-leutfridus)",
+ "monastérium Sancti Martíni": "Disentis (mr:0711-placidus-et-sigisbertus) and Utrecht (mr:0825-gregorius)"
+}

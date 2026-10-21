@@ -143,3 +143,23 @@ def latin_nominatives(la):
                 stem = w[: -len(ending)]
                 out.update(stem + n for n in noms)
     return out
+
+
+# A printed phrase that names different places in different eulogies (data/gazetteer_scoped.json) is
+# resolved per eulogy: its gazetteer key is "<phrase>@<eulogy ID>"; every other phrase keys itself.
+SCOPE = "@"
+
+
+def place_key(la, mr_id, scoped):
+    """The gazetteer key of the phrase `la` printed in eulogy `mr_id`."""
+    return f"{la}{SCOPE}{mr_id}" if la in scoped else la
+
+
+def phrase_of(key):
+    """The printed phrase of a gazetteer key (a per-eulogy key without its eulogy)."""
+    return key.split(SCOPE + "mr:", 1)[0]
+
+
+def lookup(gazetteer, la, mr_id):
+    """The gazetteer entry of the phrase `la` in eulogy `mr_id`: its per-eulogy entry, else its own."""
+    return gazetteer.get(f"{la}{SCOPE}{mr_id}") or gazetteer.get(la)

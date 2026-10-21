@@ -379,6 +379,63 @@ class PlaceIndexTest(unittest.TestCase):
                                            "occurrences": ["mr:0101-a", "mr:0102-b"]})
         self.assertEqual(idx["in Fíctia"], {"it": [], "occurrences": ["mr:0101-a"]})
 
+    def test_scoped_phrase_is_keyed_per_eulogy(self):
+        places = {
+            "mr:0101-a": [{"role": "death", "la": "ecclésiam Sancti Petri", "it": "chiesa di San Pietro", "source": "body"}],
+            "mr:0102-b": [{"role": "burial", "la": "ecclésiam Sancti Petri", "it": "basilica di San Pietro", "source": "body"}],
+        }
+        idx = bg.place_index(places, {"ecclésiam Sancti Petri": "two churches"})
+        self.assertEqual(set(idx), {"ecclésiam Sancti Petri@mr:0101-a", "ecclésiam Sancti Petri@mr:0102-b"})
+        self.assertEqual(idx["ecclésiam Sancti Petri@mr:0102-b"], {"it": ["basilica di San Pietro"],
+                                                                   "occurrences": ["mr:0102-b"]})
+
+
+class ScopedKeyTest(unittest.TestCase):
+    def test_key_phrase_and_lookup(self):
+        self.assertEqual(gt.place_key("X", "mr:0101-a", {"X"}), "X@mr:0101-a")
+        self.assertEqual(gt.place_key("Y", "mr:0101-a", {"X"}), "Y")
+        self.assertEqual(gt.phrase_of("X@mr:0101-a"), "X")
+        self.assertEqual(gt.phrase_of("Y"), "Y")
+        g = {"X@mr:0101-a": {"wikidata": "Q1"}, "Y": {"wikidata": "Q2"}}
+        self.assertEqual(gt.lookup(g, "X", "mr:0101-a"), {"wikidata": "Q1"})
+        self.assertIsNone(gt.lookup(g, "X", "mr:0102-b"))
+        self.assertEqual(gt.lookup(g, "Y", "mr:0102-b"), {"wikidata": "Q2"})
+
+    def test_make_op_keeps_the_phrase(self):
+        op = bg.make_op("X@mr:0101-a", item("A X"), {"claims": [], "failed": [], "candidates": []}, None)
+        self.assertEqual((op["id"], op["la"]), ("X@mr:0101-a", "X"))
+
+
+class SplitTest(unittest.TestCase):
+    INDEX = {"X@mr:0101-a": {"it": ["chiesa di San Pietro"], "occurrences": ["mr:0101-a"]},
+             "X@mr:0102-b": {"it": ["basilica di San Pietro"], "occurrences": ["mr:0102-b"]}}
+
+    def test_queued_phrase_becomes_one_card_per_eulogy(self):
+        review = {"operations": [{"op": "resolve_place", "id": "X", "la": "X", "occurrences": ["mr:0101-a", "mr:0102-b"]}]}
+        added, refused, failed = bg.split({}, review, self.INDEX, FakeClient(), {"X": "two churches"})
+        self.assertEqual((added, refused, failed), (2, [], []))
+        self.assertEqual(sorted(op["id"] for op in review["operations"]), ["X@mr:0101-a", "X@mr:0102-b"])
+        self.assertTrue(all(op["la"] == "X" and op["decision"] is None for op in review["operations"]))
+
+    def test_decided_phrase_refused_unless_forced(self):
+        gazetteer = {"X": {"wikidata": "Q1", "label": "X", "country": "IT", "status": "reviewed"}}
+        review = {"operations": []}
+        self.assertEqual(bg.split(gazetteer, review, self.INDEX, FakeClient(), {"X": "r"}), (0, ["X"], []))
+        self.assertIn("X", gazetteer)
+        self.assertEqual(bg.split(gazetteer, review, self.INDEX, FakeClient(), {"X": "r"}, force=True)[0], 2)
+        self.assertNotIn("X", gazetteer)
+
+    def test_existing_per_eulogy_cards_are_kept(self):
+        kept = {"op": "resolve_place", "id": "X@mr:0101-a", "la": "X", "decision": "accept"}
+        review = {"operations": [kept]}
+        self.assertEqual(bg.split({}, review, self.INDEX, FakeClient(), {"X": "r"})[0], 1)
+        self.assertIn(kept, review["operations"])
+
+    def test_validate_scoped(self):
+        places = {"mr:0101-a": [{"la": "X"}]}
+        self.assertEqual(bg.validate_scoped({"X": "two churches"}, places), [])
+        self.assertEqual(len(bg.validate_scoped({"Z": "r", "X": " "}, places)), 2)
+
 
 class EvaluateTest(unittest.TestCase):
     def test_single_candidate_passing_all_is_auto(self):
