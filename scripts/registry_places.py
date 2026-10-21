@@ -6,7 +6,7 @@ place's `wikidata`, `label`, `country` (`countries` for one in several) and the 
 Italian phrase. An entry's `country` is the country of its opening place when
 the gazetteer resolves it to a place in a country, otherwise the value in
 data/countries_curated.json (also for an opening place in no single country, such as the Orient);
-COUNTRY_CONVENTIONS (the Holy Land is PS) applies last. Deprecated entries are
+COUNTRY_CONVENTIONS (none since 2026-10-21) applies last. Deprecated entries are
 untouched. No private source and no network are needed.
 
 Usage:

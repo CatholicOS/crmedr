@@ -1320,6 +1320,18 @@ The change altered 109 current entries: 80 now follow their
 opening place, and 29 Holy Land entries with no opening place moved from
 `IL` to `PS`.
 
+**Revised 2026-10-21: no Holy Land convention.** With places in several countries
+(`countries` in `data/gazetteer.json`), a Holy Land place takes `IL` or `PS` by where it
+lies today, and both when it spans them: Acre, Caesarea Maritima, Lod, Ashkelon,
+Eleutheropolis and Mount Carmel are `IL`; Bethlehem, Gaza, Maiuma, Mar Saba, Koziba,
+Wadi Khureitun and Sebastia `PS`; Jerusalem, the Judaean Desert and the region of
+Palestine (now Q23792, not the State of Palestine Q219060) `IL` and `PS`.
+`COUNTRY_CONVENTIONS` is empty. A eulogy opening at a place in both has its country in
+`data/countries_curated.json`: the 22 that open at Jerusalem, the Judaean Desert or
+Palestine keep `PS`. Of the curated `PS` entries, three moved to `IL` (Priscus and
+companions and Cornelius at Caesarea, George at Lydda). 24 current entries changed, all
+from `PS` to `IL`.
+
 | ID | Opening place | Before | After |
 | --- | --- | --- | --- |
 | `mr:0104-hermes-et-caius` | Moesia (Q199499) | RO | BG |

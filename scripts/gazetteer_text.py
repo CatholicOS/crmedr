@@ -24,9 +24,11 @@ NOT_ASSIGNED = {"AN", "CP", "CQ", "DD", "DG", "PC", "YU"}
 ISO_CODES = frozenset(set(COUNTRY_IT.values()) - NOT_ASSIGNED | {"JE"})
 
 
-# The registry's conventions for a place's country (#12 review): the whole Holy
-# Land is PS, as for the registry's own `country`.
-COUNTRY_CONVENTIONS = {"IL": "PS"}
+# The registry's conventions for a place's country: a code to write as another.
+# None since 2026-10-21: the Holy Land was all PS (#12 review); a place now takes
+# IL or PS by where it lies today, and both (`countries`) when it spans them, as
+# Jerusalem does.
+COUNTRY_CONVENTIONS = {}
 
 
 def convention(iso):

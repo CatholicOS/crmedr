@@ -64,8 +64,8 @@
 | 4 | 9 | `mr:1104-helena-enselmini` | * | IT | dies_natalis |  |  |
 | 4 | 10 | `mr:1104-felix-de-valois` | * | FR | dies_natalis |  |  |
 | 4 | 11 | `mr:1104-francisca-de-ambosia` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "un Carmelo femminile" where the Latin has "primum in Gállia carmélum mulíerum" (the first Carmel of nuns in France). 2004 English: Translation error: "first founded at Vannes ... a convent of Carmelite nuns" where the Latin has "primum in Gállia carmélum mulíerum" (the first Carmel of women in France). |
-| 5 | 1 | `mr:1105-domninus` |  | PS | dies_natalis |  | 2004 English: Translation error: "banished to Phoenicia" where the Latin has "ad metálla Phænénsia" (to the mines of Phaeno). 2004 Italian: Translation error: "Mismiyā" where the Latin has "metálla Phænénsia" (the mines of Phaeno, at Feinan south of the Dead Sea). |
-| 5 | 2 | `mr:1105-theotimus-et-socii` |  | PS | commemoratio |  | In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions. |
+| 5 | 1 | `mr:1105-domninus` |  | IL | dies_natalis |  | 2004 English: Translation error: "banished to Phoenicia" where the Latin has "ad metálla Phænénsia" (to the mines of Phaeno). 2004 Italian: Translation error: "Mismiyā" where the Latin has "metálla Phænénsia" (the mines of Phaeno, at Feinan south of the Dead Sea). |
+| 5 | 2 | `mr:1105-theotimus-et-socii` |  | IL | commemoratio |  | In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions. |
 | 5 | 3 | `mr:1105-marcus` | * | IT | dies_natalis |  |  |
 | 5 | 4 | `mr:1105-fibicius` |  | DE | dies_natalis |  |  |
 | 5 | 5 | `mr:1105-guethnocus` | * | FR | dies_natalis |  |  |
@@ -159,7 +159,7 @@
 | 12 | 10 | `mr:1112-didacus` |  | ES | dies_natalis | same as `mr:1113-didacus` |  |
 | 12 | 11 | `mr:1112-margaritus-flores` |  | MX | dies_natalis |  |  |
 | 12 | 12 | `mr:1112-iosephus-medes-ferris` | * | ES | dies_natalis |  |  |
-| 13 | 1 | `mr:1113-antoninus-et-socii` |  | PS | dies_natalis |  | 2004 English: Translation error: "Galerius Maximian" where the Latin has "Galério Maximíno" (Galerius Maximinus). |
+| 13 | 1 | `mr:1113-antoninus-et-socii` |  | IL | dies_natalis |  | 2004 English: Translation error: "Galerius Maximian" where the Latin has "Galério Maximíno" (Galerius Maximinus). |
 | 13 | 2 | `mr:1113-mitria` |  | FR | dies_natalis |  |  |
 | 13 | 3 | `mr:1113-brictius` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:1113-arcadius-et-socii` |  | TN | commemoratio |  | 2004 English: Translation error: "Eutychius" where the Latin has "Eutychiáni" (Eutychian). |
@@ -221,7 +221,7 @@
 | 16 | 10 | `mr:1116-eduardus-osbaldeston` | * | GB | dies_natalis |  | 2004 English: Translation error: "hanged, drawn, and quartered" where the Latin has only "suspéndii supplíciis" (the punishment of hanging). Translation error: "for his priestly office" where the Latin has "quod Angliam sacérdos petivísset" (because he had come to England as a priest). |
 | 17 | (1) | `mr:1117-elisabeth-hungaria` |  | HU | dies_natalis | same as `mr:1119-elisabeth` |  |
 | 17 | 2 | `mr:1117-gregorius-neocaesareae` |  | TR | dies_natalis |  |  |
-| 17 | 3 | `mr:1117-alphaeus-et-zachaeus` |  | PS | dies_natalis |  |  |
+| 17 | 3 | `mr:1117-alphaeus-et-zachaeus` |  | IL | dies_natalis |  |  |
 | 17 | 4 | `mr:1117-acisclus` |  | ES | dies_natalis |  |  |
 | 17 | 5 | `mr:1117-anianus` |  | FR | dies_natalis |  |  |
 | 17 | 6 | `mr:1117-namatius` | * | FR | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 21 | (1) | `mr:1121-praesentatio-beatae-mariae-virginis` |  | PS | celebratio |  |  |
 | 21 | 2 | `mr:1121-rufus` |  |  | commemoratio |  |  |
 | 21 | 3 | `mr:1121-maurus-parentii` |  | HR | dies_natalis |  |  |
-| 21 | 4 | `mr:1121-agapius` |  | PS | dies_natalis | same as `mr:1120-agapius` | 2004 English: Translation error: "always deferring to greater contests" where the Latin has "semper ad maióra certámina dilátus" (always reserved for greater contests). |
+| 21 | 4 | `mr:1121-agapius` |  | IL | dies_natalis | same as `mr:1120-agapius` | 2004 English: Translation error: "always deferring to greater contests" where the Latin has "semper ad maióra certámina dilátus" (always reserved for greater contests). |
 | 21 | 5 | `mr:1121-gelasius-i` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "illustrò con vera profondità di analisi" omits that he was the first to do so (Latin "primus fúnditus illustrávit"). |
 | 21 | 6 | `mr:1121-maurus-caesenae` |  | IT | dies_natalis | same as `mr:0120-maurus` | 2004 English: Translation error: "Cresson in Umbria" where the Latin has "Cæsénæ in Flamínia" (Cesena in Flaminia). |
 | 21 | 7 | `mr:1121-francisca-de-siedliska` | * | IT | dies_natalis |  |  |

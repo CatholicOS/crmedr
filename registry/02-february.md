@@ -171,7 +171,7 @@
 | 13 | 7 | `mr:0213-guimera` | * | FR | dies_natalis |  | 2004 English: Translation error: "Guimene" where the Latin has "Guiméræ" (Guimera). |
 | 13 | 8 | `mr:0213-fulcranus` | * | FR | dies_natalis |  |  |
 | 13 | 9 | `mr:0213-gilbertus` | * | FR | dies_natalis |  |  |
-| 13 | 10 | `mr:0213-iordanus-de-saxonia` | * | PS | dies_natalis |  |  |
+| 13 | 10 | `mr:0213-iordanus-de-saxonia` | * | IL | dies_natalis |  |  |
 | 13 | 11 | `mr:0213-augustina-camozzi` | * | IT | dies_natalis |  | 2004 English: Translation error: "(Augusta)" where the Latin has "(Augustínæ)" (Augustina). |
 | 13 | 12 | `mr:0213-lucretia-bellini` | * | IT | dies_natalis |  |  |
 | 13 | 13 | `mr:0213-paulus-liu-hanzuo` |  | CN | dies_natalis |  |  |
@@ -199,7 +199,7 @@
 | 15 | 10 | `mr:0215-angelus-scarpetti` | * | IT | dies_natalis |  |  |
 | 15 | 11 | `mr:0215-claudius-la-colombiere` |  | FR | dies_natalis |  |  |
 | 16 | 1 | `mr:0216-iuliana` |  | IT | dies_natalis |  |  |
-| 16 | 2 | `mr:0216-elias-et-socii` |  | PS | dies_natalis |  |  |
+| 16 | 2 | `mr:0216-elias-et-socii` |  | IL | dies_natalis |  |  |
 | 16 | 3 | `mr:0216-marutha` |  | IR | dies_natalis | same as `mr:1204-maruthas` |  |
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |

@@ -30,7 +30,7 @@
 | 2 | 9 | `mr:0902-agricola` | * | FR | dies_natalis |  |  |
 | 2 | 10 | `mr:0902-elpidius` |  | IT | dies_natalis |  |  |
 | 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ponte" where the Latin has "Pontídæ" (Pontida). Translation error: "forsook the military service of Christ" where the Latin has "milítiam Christi armis honoribúsque sǽculi præpósuit" (preferred the service of Christ to the arms and honours of the world). |
-| 2 | 12 | `mr:0902-brochardus` | * | PS | dies_natalis |  | 2004 English: Translation error: "spring of Elisha" where the Latin has "fontem Elíæ" (the spring of Elijah). |
+| 2 | 12 | `mr:0902-brochardus` | * | IL | dies_natalis |  | 2004 English: Translation error: "spring of Elisha" where the Latin has "fontem Elíæ" (the spring of Elijah). |
 | 2 | 13 | `mr:0902-ingridis-elofsdotter` | * | SE | dies_natalis |  |  |
 | 2 | 14 | `mr:0902-ioannes-maria-du-lau-et-socii` | * | FR | dies_natalis |  | Salomon Leclercq, one of these martyrs, blessed in the 2004 editions, was canonized on 16 October 2016. 2004 English: Translation error: "of Laud’Allemans" where the Latin has "du Lau d’Allemans". Translation error: "blessed martyr saints" where the Latin has "beatórum mártyrum" (blessed martyrs). |
 | 2 | 15 | `mr:0902-petrus-iacobus-maria-vitalis-et-socii` | * | FR | dies_natalis |  |  |
@@ -192,7 +192,7 @@
 | 14 | 4 | `mr:0914-maternus` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0914-ioannes-chrysostomus` |  | TR | dies_natalis | same as `mr:0127-ioannes-chrysostomus` |  |
 | 14 | 6 | `mr:0914-petrus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Beauvale" where the Latin has "Bellævallénsi" (Bellevaux, near Besançon). |
-| 14 | 7 | `mr:0914-albertus` |  | PS | dies_natalis |  |  |
+| 14 | 7 | `mr:0914-albertus` |  | IL | dies_natalis |  |  |
 | 14 | 8 | `mr:0914-notburga` | * | AT | dies_natalis |  | 2004 English: Translation error: "blessed Notburga" where the Latin has "sanctæ Notbúrgæ" (Saint Notburga). |
 | 14 | 9 | `mr:0914-claudius-laplace` | * | FR | dies_natalis |  |  |
 | 14 | 10 | `mr:0914-gabriel-taurinus-dufresse` |  | CN | dies_natalis |  |  |

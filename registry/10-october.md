@@ -260,7 +260,7 @@
 | 19 | 14 | `mr:1019-philippus-howard` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "dagli stenti e dalle torture" (by privations and tortures) where the Latin has "egestáte ærumnísque" (by want and hardships); no torture is mentioned. |
 | 19 | 15 | `mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye` |  | JP | dies_natalis |  |  |
 | 19 | 16 | `mr:1019-agnes-a-iesu` | * | FR | dies_natalis |  |  |
-| 20 | 1 | `mr:1020-cornelius` |  | PS | commemoratio | same as `mr:0202-cornelius` |  |
+| 20 | 1 | `mr:1020-cornelius` |  | IL | commemoratio | same as `mr:0202-cornelius` |  |
 | 20 | 2 | `mr:1020-caprasius` |  | FR | dies_natalis |  |  |
 | 20 | 3 | `mr:1020-sindulphus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Aulnay" where the Latin has "Alsóntiæ" (Aussonce). |
 | 20 | 4 | `mr:1020-vitalis` | * | AT | dies_natalis |  |  |

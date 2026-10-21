@@ -77,6 +77,8 @@ inside a city phrase are not resolved separately; they remain visible in `la`.
   - **the Holy Land is `PS`**, as in the registry's own `country`. `COUNTRY_CONVENTIONS`
     maps `IL` to `PS` for candidates, regions and the Italian claims alike, so "nell’odierno
     Israele" yields no `text_says`;
+    *(dropped 2026-10-21: a Holy Land place takes `IL` or `PS` by where it lies today,
+    and both, in `countries`, when it spans them; see docs/canonicalization-report.md)*;
   - **a dependent territory with its own ISO code takes that code** (Réunion `RE`,
     Guam `GU`, Puerto Rico `PR`); the Wikidata item says which state it belongs to. An
     item carrying its own P297 takes it automatically; a town inside such a territory is

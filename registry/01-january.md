@@ -143,7 +143,7 @@
 | 11 | 1 | `mr:0111-hyginus` |  | IT | dies_natalis |  |  |
 | 11 | 2 | `mr:0111-salvius` |  | TN | dies_natalis |  |  |
 | 11 | 3 | `mr:0111-typasius` |  | DZ | dies_natalis |  |  |
-| 11 | 4 | `mr:0111-petrus-apselamus` |  | PS | dies_natalis |  |  |
+| 11 | 4 | `mr:0111-petrus-apselamus` |  | IL | dies_natalis |  |  |
 | 11 | 5 | `mr:0111-leucius` |  | IT | dies_natalis |  |  |
 | 11 | 6 | `mr:0111-honorata` |  | IT | translatio |  |  |
 | 11 | 7 | `mr:0111-theodosius` |  | PS | dies_natalis |  |  |

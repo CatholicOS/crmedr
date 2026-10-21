@@ -1501,7 +1501,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -1636,9 +1636,9 @@
           "wikidata": "Q801",
           "label": "Israel",
           "description": "stato sovrano dell'Asia occidentale",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Civitas Israel",
@@ -1669,7 +1669,7 @@
           "description": "regione compresa tra il Mar Mediterraneo ed il fiume Giordano",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [],
@@ -1691,9 +1691,9 @@
           "wikidata": "Q6654471",
           "label": "Franciscan Monastery",
           "description": "",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -3759,7 +3759,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -4429,9 +4429,9 @@
           "wikidata": "Q801",
           "label": "Israel",
           "description": "stato sovrano dell'Asia occidentale",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Civitas Israel",
@@ -4462,7 +4462,7 @@
           "description": "regione compresa tra il Mar Mediterraneo ed il fiume Giordano",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [],
@@ -4484,9 +4484,9 @@
           "wikidata": "Q6654471",
           "label": "Franciscan Monastery",
           "description": "",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -4820,9 +4820,9 @@
           "wikidata": "Q604557",
           "label": "Bethlehem of Galilee",
           "description": "human settlement in Israel",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Bethleem Galileae"
@@ -7546,9 +7546,9 @@
           "wikidata": "Q604557",
           "label": "Bethlehem of Galilee",
           "description": "human settlement in Israel",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Bethleem Galileae"
@@ -9461,7 +9461,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -9961,9 +9961,9 @@
           "wikidata": "Q104028",
           "label": "Judea",
           "description": "regione storica del Vicino Oriente",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Iudaea (regio)"
@@ -10042,7 +10042,7 @@
             "GB",
             "HU",
             "DE",
-            "PS",
+            "IL",
             "CA",
             "CR",
             "LV",
@@ -10084,7 +10084,7 @@
           "description": "gruppo di dialetti",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "IR",
             "AF",
             "TJ",
@@ -15699,9 +15699,9 @@
           "wikidata": "Q501773",
           "label": "Bethsaida",
           "description": "archaeological site in Israel",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -15721,16 +15721,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q501773",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.92,
         "confidence": 0.84,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -17703,9 +17703,9 @@
           "wikidata": "Q1615560",
           "label": "Caesarea",
           "description": "città in Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -17772,9 +17772,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -17827,7 +17827,7 @@
       "jev": {
         "decision": "edit",
         "wikidata": "Q319242",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.37,
         "confidence": 0.26,
@@ -19914,7 +19914,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -20155,7 +20155,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -20437,7 +20437,7 @@
             "PS",
             "JO",
             "SY",
-            "PS"
+            "IL"
           ],
           "la": [
             "Iordanes",
@@ -25072,7 +25072,7 @@
           "description": "luogo di culto cristiano a Gerusalemme",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -50393,9 +50393,9 @@
           "wikidata": "Q170516",
           "label": "Calvary",
           "description": "collina di Gerusalemme, luogo della crocifissione di Gesù di Nazareth",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Calvaria",
@@ -50416,14 +50416,17 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q170516",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Calvary (Golgotha) hill in Jerusalem.",
       "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q170516",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.98,
@@ -51067,9 +51070,9 @@
           "wikidata": "Q83241",
           "label": "Galilee",
           "description": "regione storica del Vicino Oriente",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Galilaea",
@@ -51095,7 +51098,7 @@
           "description": "città della Galilea",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "Q104028"
           ],
           "la": [
@@ -52462,9 +52465,9 @@
           "wikidata": "Q83241",
           "label": "Galilee",
           "description": "regione storica del Vicino Oriente",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Galilaea",
@@ -52490,7 +52493,7 @@
           "description": "città della Galilea",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "Q104028"
           ],
           "la": [
@@ -58238,7 +58241,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -58271,7 +58274,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q1218",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Holy City in Mary of Egypt's life is Jerusalem; Palestinian-territories code per convention.",
       "confidence": "medium",
@@ -58573,7 +58579,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -58606,7 +58612,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q1218",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Holy City of Jeremiah's prophecy is Jerusalem.",
       "confidence": "high",
@@ -67493,9 +67502,9 @@
           "wikidata": "Q1615560",
           "label": "Caesarea",
           "description": "città in Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -67563,9 +67572,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -67648,9 +67657,9 @@
           "wikidata": "Q1615560",
           "label": "Caesarea",
           "description": "città in Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -67694,9 +67703,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -67796,7 +67805,7 @@
       "jev": {
         "decision": "edit",
         "wikidata": "Q319242",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.94,
         "confidence": 0.93,
@@ -67823,9 +67832,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -67855,7 +67864,7 @@
       "jev": {
         "decision": "accept",
         "wikidata": "Q319242",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.96,
         "confidence": 0.92,
@@ -67881,9 +67890,9 @@
           "wikidata": "Q1615560",
           "label": "Caesarea",
           "description": "città in Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -67927,9 +67936,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -68029,7 +68038,7 @@
       "jev": {
         "decision": "edit",
         "wikidata": "Q319242",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.97,
         "confidence": 0.96,
@@ -68078,9 +68087,9 @@
           "wikidata": "Q1615560",
           "label": "Caesarea",
           "description": "città in Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -68147,9 +68156,9 @@
           "wikidata": "Q319242",
           "label": "Caesarea Maritima",
           "description": "città antica in Palestina",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Caesarea Maritima",
@@ -68202,7 +68211,7 @@
       "jev": {
         "decision": "edit",
         "wikidata": "Q319242",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.65,
         "confidence": 0.59,
@@ -81224,7 +81233,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -84777,7 +84786,7 @@
             "PS",
             "JO",
             "SY",
-            "PS"
+            "IL"
           ],
           "la": [
             "Iordanes",
@@ -84860,7 +84869,7 @@
             "PS",
             "JO",
             "SY",
-            "PS"
+            "IL"
           ],
           "la": [
             "Iordanes",
@@ -85398,9 +85407,9 @@
           "wikidata": "Q104028",
           "label": "Judea",
           "description": "regione storica del Vicino Oriente",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Iudaea (regio)"
@@ -85447,9 +85456,9 @@
           "wikidata": "Q513200",
           "label": "Judea and Samaria Area",
           "description": "nome israeliano per la Cisgiordania",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -85516,7 +85525,7 @@
       "jev": {
         "decision": "accept",
         "wikidata": "Q104028",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.6,
         "confidence": 0.52,
@@ -85542,9 +85551,9 @@
           "wikidata": "Q167677",
           "label": "Yavne",
           "description": "città di Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Iamnia"
@@ -85585,9 +85594,9 @@
           "wikidata": "Q970828",
           "label": "Iamnia",
           "description": "",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -85605,7 +85614,7 @@
       "jev": {
         "decision": "accept",
         "wikidata": "Q167677",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.57,
         "confidence": 0.43,
@@ -93340,9 +93349,9 @@
           "wikidata": "Q124260777",
           "label": "Magidovitch House",
           "description": "",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -97851,9 +97860,9 @@
           "wikidata": "Q185318",
           "label": "Mount Carmel",
           "description": "sistema collinare della Galilea",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Carmel mons"
@@ -98047,16 +98056,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q185318",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.98,
         "confidence": 0.98,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -101704,9 +101713,9 @@
           "wikidata": "Q430776",
           "label": "Nazareth",
           "description": "città israeliana",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Nazara"
@@ -101839,16 +101848,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q430776",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -101870,9 +101879,9 @@
           "wikidata": "Q430776",
           "label": "Nazareth",
           "description": "città israeliana",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Nazara"
@@ -102005,16 +102014,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q430776",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -121399,7 +121408,7 @@
           "description": "luogo di culto cristiano a Gerusalemme",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -123227,9 +123236,9 @@
           "wikidata": "Q152368",
           "label": "Beit She'an",
           "description": "città israeliana",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -123248,16 +123257,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q152368",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.97,
         "confidence": 0.94,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -123544,9 +123553,9 @@
           "wikidata": "Q1177750",
           "label": "City of David",
           "description": "nucleo originario di Gerusalemme",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -123638,9 +123647,9 @@
           "wikidata": "Q332444",
           "label": "Mount Zion",
           "description": "monte in Israele, di grande importanza storica e religiosa",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Sion"
@@ -123767,9 +123776,9 @@
           "wikidata": "Q1177750",
           "label": "City of David",
           "description": "nucleo originario di Gerusalemme",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -123837,9 +123846,9 @@
           "wikidata": "Q332444",
           "label": "Mount Zion",
           "description": "monte in Israele, di grande importanza storica e religiosa",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Sion"
@@ -132009,7 +132018,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q3906600",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "The Jerusalem Temple where the Presentation took place.",
       "confidence": "medium",
@@ -132065,9 +132077,9 @@
           "wikidata": "Q801",
           "label": "Israel",
           "description": "stato sovrano dell'Asia occidentale",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Civitas Israel",
@@ -132098,7 +132110,7 @@
           "description": "regione compresa tra il Mar Mediterraneo ed il fiume Giordano",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [],
@@ -132120,9 +132132,9 @@
           "wikidata": "Q6654471",
           "label": "Franciscan Monastery",
           "description": "",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -139231,7 +139243,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -147155,9 +147167,9 @@
           "wikidata": "Q604557",
           "label": "Bethlehem of Galilee",
           "description": "human settlement in Israel",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Bethleem Galileae"
@@ -148396,7 +148408,7 @@
           "description": "luogo di culto cristiano a Gerusalemme",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -148426,7 +148438,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q187702",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Basilica of the Resurrection, on Christ's tomb: Church of the Holy Sepulchre.",
       "confidence": "high",
@@ -149263,9 +149278,9 @@
           "wikidata": "Q907482",
           "label": "Nea Ekklesia of the Theotokos",
           "description": "chiesa bizantina di Gerusalemme, consacrata nel 543, dedicata alla Madre di Dio",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -149286,14 +149301,14 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q907482",
-        "country": "PS"
+        "country": "IL"
       },
       "reasoning": "Nea Church of the Theotokos in Jerusalem, dedicated 543.",
       "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q907482",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.54,
         "confidence": 0.5,
@@ -150458,9 +150473,9 @@
           "wikidata": "Q1271243",
           "label": "Titular Episcopal See of Emmaüs",
           "description": "titular see",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -150741,9 +150756,9 @@
           "wikidata": "Q430776",
           "label": "Nazareth",
           "description": "città israeliana",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Nazara"
@@ -150876,16 +150891,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q430776",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",
@@ -151387,7 +151402,7 @@
           "description": "città del Vicino Oriente, sacra per le tre religioni abramitiche",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -157960,9 +157975,9 @@
           "wikidata": "Q104028",
           "label": "Judea",
           "description": "regione storica del Vicino Oriente",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Iudaea (regio)"
@@ -158088,7 +158103,7 @@
             "GB",
             "HU",
             "DE",
-            "PS",
+            "IL",
             "CA",
             "CR",
             "LV",
@@ -158130,7 +158145,7 @@
           "description": "gruppo di dialetti",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "IR",
             "AF",
             "TJ",
@@ -158160,7 +158175,7 @@
       "jev": {
         "decision": "accept",
         "wikidata": "Q104028",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.89,
         "confidence": 0.87,
@@ -160199,7 +160214,7 @@
           "description": "luogo di culto cristiano a Gerusalemme",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -160229,7 +160244,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q187702",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Church of the Resurrection (Anastasis) in Jerusalem, i.e. the Holy Sepulchre.",
       "confidence": "high",
@@ -173930,9 +173948,9 @@
           "wikidata": "Q170516",
           "label": "Calvary",
           "description": "collina di Gerusalemme, luogo della crocifissione di Gesù di Nazareth",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Calvaria",
@@ -187746,9 +187764,9 @@
           "wikidata": "Q185318",
           "label": "Mount Carmel",
           "description": "sistema collinare della Galilea",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Carmel mons"
@@ -187770,14 +187788,14 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q185318",
-        "country": "PS"
+        "country": "IL"
       },
       "reasoning": "Mount Carmel in northern Israel; convention gives PS.",
       "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q185318",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.98,
         "confidence": 0.98,
@@ -188868,9 +188886,9 @@
           "wikidata": "Q170516",
           "label": "Calvary",
           "description": "collina di Gerusalemme, luogo della crocifissione di Gesù di Nazareth",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Calvaria",
@@ -188891,14 +188909,17 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q170516",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Calvary / Golgotha in Jerusalem.",
       "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q170516",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.98,
@@ -189074,9 +189095,9 @@
           "wikidata": "Q715213",
           "label": "Carmelit",
           "description": "funicolare sotterranea di Haifa, Israele",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -189094,9 +189115,9 @@
           "wikidata": "Q185318",
           "label": "Mount Carmel",
           "description": "sistema collinare della Galilea",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [
             "Carmel mons"
@@ -189118,14 +189139,14 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q185318",
-        "country": "PS"
+        "country": "IL"
       },
       "reasoning": "Mount Carmel.",
       "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q185318",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 1.0,
         "confidence": 1.0,
@@ -193039,7 +193060,7 @@
             "IN",
             "IE",
             "IM",
-            "PS",
+            "IL",
             "JM",
             "JE",
             "KE",
@@ -194493,7 +194514,7 @@
           "description": "luogo di culto cristiano a Gerusalemme",
           "country": null,
           "countries": [
-            "PS",
+            "IL",
             "PS"
           ],
           "la": [
@@ -194523,7 +194544,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q187702",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "Tomb of the Lord is within the Church of the Holy Sepulchre; the tomb item itself has no coordinates or country.",
       "confidence": "medium",
@@ -195304,7 +195328,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q3906600",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "The Jerusalem Temple item matches the temple where Mary was presented.",
       "confidence": "medium",
@@ -195362,7 +195389,10 @@
       "edited": null,
       "suggested": {
         "wikidata": "Q3906600",
-        "country": "PS"
+        "countries": [
+          "IL",
+          "PS"
+        ]
       },
       "reasoning": "The Jerusalem Temple of Simeon and Anna.",
       "confidence": "medium",
@@ -197454,9 +197484,9 @@
           "wikidata": "Q152368",
           "label": "Beit She'an",
           "description": "città israeliana",
-          "country": "PS",
+          "country": "IL",
           "countries": [
-            "PS"
+            "IL"
           ],
           "la": [],
           "p9314": false,
@@ -197475,16 +197505,16 @@
       ],
       "decision": "accept",
       "edited": null,
-      "prefilled": "jev",
       "jev": {
         "decision": "accept",
         "wikidata": "Q152368",
-        "country": "PS",
+        "country": "IL",
         "kind": "place",
         "probability": 0.98,
         "confidence": 0.96,
         "model": "jev-1.14.0"
-      }
+      },
+      "prefilled": "jev"
     },
     {
       "op": "resolve_place",

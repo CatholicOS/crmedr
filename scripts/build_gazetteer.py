@@ -597,7 +597,7 @@ def _resolve(op, client, its):
         or chosen.get("country")
     if not country:
         return None, f"{la!r}: {qid} needs a country (no single current P17; use edit, or edited.no_country)"
-    country = convention(country)  # a reviewer's IL is the Holy Land's PS
+    country = convention(country)
     # Derived from the place's Italian and the final country, never taken from the decision.
     text_says = derive_text_says(its, country)
     entry = {"wikidata": qid, "label": chosen["label"], "country": country, "status": "reviewed"}
@@ -670,7 +670,13 @@ def verify_suggestions(review, index, client):
                         candidates.append(item)
                     else:
                         candidates[pos] = item
-        if s.get("country") not in ISO_CODES:
+        if "countries" in s:  # a suggestion in several countries (Jerusalem: IL, PS)
+            cs = s["countries"]
+            if "country" in s or not isinstance(cs, list) or len(cs) < 2 or len(set(cs)) != len(cs) \
+                    or any(c not in ISO_CODES for c in cs):
+                errors.append(f"{la!r}: suggested countries {cs!r} is not a list of two or more distinct "
+                              "ISO codes, without a country")
+        elif s.get("country") not in ISO_CODES:
             errors.append(f"{la!r}: suggested country {s.get('country')!r} is not an ISO code")
         elif item and item.get("country") and item["country"] != s["country"]:
             warnings.append(f"{la!r}: suggested country {s['country']} differs from the item's country "

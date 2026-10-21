@@ -88,11 +88,11 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual([e["country"] for e in out], ["IT", None, "DE"])
         self.assertEqual(out[0]["places"][0]["wikidata"], "Q1")  # curated (body) places get fields too
 
-    def test_holy_land_convention_on_both_paths(self):
+    def test_israel_stays_il_on_both_paths(self):
         gaz = GAZ | {"Lyddæ": {"wikidata": "Q207540", "label": "Lod", "country": "IL", "status": "reviewed"}}
         out = rp.apply([entry("mr:0101-a", "IL", lead("Lyddæ")), entry("mr:0102-b", "IL")], gaz, {"mr:0102-b": "IL"})
-        self.assertEqual([e["country"] for e in out], ["PS", "PS"])
-        self.assertEqual(out[0]["places"][0]["country"], "PS")
+        self.assertEqual([e["country"] for e in out], ["IL", "IL"])
+        self.assertEqual(out[0]["places"][0]["country"], "IL")
 
     def test_deprecated_untouched(self):
         dep = entry("mr:0101-z", "IL", deprecated=True, attested_in="x")
