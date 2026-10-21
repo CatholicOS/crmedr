@@ -148,6 +148,60 @@ class EvaluateTest(unittest.TestCase):
             sp.evaluate_ops(pairs, TEXTS, StubClient(None, key=None, cached=False))
 
 
+def card(jev=None, **kw):
+    return dict(op_with_candidates(), jev=jev, **kw)
+
+
+def pick(q, decision, p, country=None):
+    jev = {"decision": decision, "wikidata": q, "kind": "place", "probability": p, "confidence": 0.9, "model": "m"}
+    if country:
+        jev["country"] = country
+    return jev
+
+
+class PrefillTest(unittest.TestCase):
+    def test_prefill_item_picks_at_the_threshold(self):
+        ops = [card(jev=pick("Q1", "accept", 0.9, country="GB")), card(jev=pick("Q2", "edit", 0.95, country="FR"))]
+        counts = sp.prefill_ops(ops, 0.9)
+        self.assertEqual((ops[0]["decision"], ops[0]["prefilled"]), ("accept", "jev"))
+        self.assertIsNone(ops[0]["edited"])
+        self.assertEqual((ops[1]["decision"], ops[1]["prefilled"]), ("edit", "jev"))
+        self.assertEqual(ops[1]["edited"], {"wikidata": "Q2", "country": "FR"})
+        self.assertEqual(counts, {"accept": 1, "edit": 1, "skipped": 0})
+
+    def test_prefill_never_rejects(self):
+        op = card(jev={"decision": "reject", "reason": "Jev: not a place", "kind": "not_place", "probability": 0.99})
+        self.assertEqual(sp.prefill_ops([op], 0.5)["skipped"], 1)
+        self.assertIsNone(op.get("decision"))
+
+    def test_prefill_skips_below_threshold_no_country_and_decided(self):
+        ops = [card(jev=pick("Q1", "accept", 0.89, country="GB")),
+               card(jev=pick("Q2", "edit", 0.99)),
+               dict(card(jev=pick("Q1", "accept", 0.99, country="GB")), decision="reject", edited={"reason": "x"})]
+        sp.prefill_ops(ops, 0.9)
+        self.assertEqual([o.get("decision") for o in ops], [None, None, "reject"])
+        self.assertTrue(all("prefilled" not in o for o in ops))
+
+    def test_prefill_leaves_suggested_and_jev_and_other_ops_alone(self):
+        op = card(jev=pick("Q2", "edit", 0.99, country="FR"), suggested={"wikidata": "Q1"})
+        before = copy.deepcopy((op["suggested"], op["jev"]))
+        other = {"op": "add_place", "id": "x"}
+        counts = sp.prefill_ops([op, other], 0.9)
+        self.assertEqual((op["suggested"], op["jev"]), before)
+        self.assertEqual(other, {"op": "add_place", "id": "x"})
+        self.assertEqual(counts, {"accept": 0, "edit": 1, "skipped": 0})
+
+    def test_prefill_accept_follows_the_suggested_default(self):
+        op = card(jev=pick("Q2", "accept", 0.99, country="FR"), suggested={"wikidata": "Q2"})
+        sp.prefill_ops([op], 0.9)
+        self.assertEqual(op["decision"], "accept")
+
+    def test_prefill_skips_a_pick_outside_the_candidates(self):
+        op = card(jev=pick("Q9", "edit", 0.99, country="FR"))
+        sp.prefill_ops([op], 0.9)
+        self.assertIsNone(op.get("decision"))
+
+
 class MainTest(unittest.TestCase):
     def test_writes_the_file_in_the_queue_format(self):
         with tempfile.TemporaryDirectory() as d:
@@ -156,6 +210,25 @@ class MainTest(unittest.TestCase):
             path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             sp.write_changeset(path, doc)
             self.assertEqual(path.read_text(encoding="utf-8"), json.dumps(doc, ensure_ascii=False, indent=2) + "\n")
+
+    def test_prefill_cli_needs_a_valid_threshold(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "q.json"
+            path.write_text(json.dumps({"operations": []}), encoding="utf-8")
+            for argv in (["prefill", str(path)], ["prefill", str(path), "--threshold", "x"],
+                         ["prefill", str(path), "--threshold", "1.5"]):
+                with self.assertRaises(SystemExit):
+                    sp.main(argv)
+
+    def test_prefill_cli_writes_the_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "q.json"
+            path.write_text(json.dumps({"operations": [card(jev=pick("Q1", "accept", 0.9, country="GB"))]}),
+                            encoding="utf-8")
+            with contextlib.redirect_stdout(io.StringIO()):
+                sp.main(["prefill", str(path), "--threshold", "0.9"])
+            op = json.loads(path.read_text(encoding="utf-8"))["operations"][0]
+            self.assertEqual((op["decision"], op["prefilled"]), ("accept", "jev"))
 
 
 if __name__ == "__main__":

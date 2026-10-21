@@ -13,6 +13,11 @@ ignored), so a re-run asks nothing already asked. `jev` holds no 2004 text: the 
 again without it, where the right answer is a reject) and prints the agreement per threshold. It writes
 nothing.
 
+  python3 suggest_places.py prefill <changeset.json> --threshold X
+
+`prefill` takes Jev's item picks (accept/edit) at probability >= X, with a country, on undecided cards
+(`decision`/`edited`, plus `"prefilled": "jev"`). It never rejects and never touches a decided card.
+
 Usage:
   python3 suggest_places.py suggest <changeset.json> /path/to/martyrology-texts [--repo repo_root]
 
@@ -95,6 +100,30 @@ def write_changeset(path, doc):
     Path(path).write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
+def prefill_ops(ops, threshold):
+    """Write Jev's item picks (accept/edit, probability >= threshold, with a country, among the
+    candidates) onto undecided cards. Never a reject, never a decided card."""
+    counts = {"accept": 0, "edit": 0, "skipped": 0}
+    for op in ops:
+        if op.get("op") != "resolve_place":
+            continue
+        jev = op.get("jev") or {}
+        q = jev.get("wikidata")
+        ok = (op.get("decision") is None and jev.get("decision") in ("accept", "edit")
+              and jev.get("probability", 0) >= threshold and jev.get("country")
+              and q in [c["wikidata"] for c in op.get("candidates") or []])
+        if not ok:
+            counts["skipped"] += 1
+        elif q == gj.default_qid(op):
+            op["decision"], op["edited"], op["prefilled"] = "accept", None, "jev"
+            counts["accept"] += 1
+        else:
+            op["decision"], op["prefilled"] = "edit", "jev"
+            op["edited"] = {"wikidata": q, "country": jev["country"]}
+            counts["edit"] += 1
+    return counts
+
+
 THRESHOLDS = [0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99]
 
 
@@ -149,7 +178,30 @@ def report(rows, thresholds):
     return "\n".join(out)
 
 
+def prefill_main(argv):
+    args, threshold = [], None
+    it = iter(argv)
+    for a in it:
+        if a == "--threshold":
+            threshold = next(it, None)
+        else:
+            args.append(a)
+    try:
+        threshold = float(threshold)
+    except (TypeError, ValueError):
+        sys.exit(__doc__)
+    if len(args) != 1 or not 0 <= threshold <= 1:
+        sys.exit(__doc__)
+    path = Path(args[0])
+    doc = json.loads(path.read_text(encoding="utf-8"))
+    counts = prefill_ops(doc["operations"], threshold)
+    write_changeset(path, doc)
+    print(f"{path}: {counts}")
+
+
 def main(argv):
+    if argv and argv[0] == "prefill":
+        return prefill_main(argv[1:])
     if not argv or argv[0] not in ("suggest", "evaluate"):
         sys.exit(__doc__)
     args, repo = [], Path(__file__).resolve().parent.parent
