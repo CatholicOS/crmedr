@@ -330,8 +330,8 @@ class Wikidata:
             s["place_type"] = any(t in places for t in s["types"])
         return summaries
 
-    def candidates(self, text):
-        qids = self._search(text)
+    def candidates(self, text, language="it"):
+        qids = self._search(text, language=language)
         raws = self._entities(qids)
         return self._enrich([summarize(raws[q]) for q in qids if q in raws])
 

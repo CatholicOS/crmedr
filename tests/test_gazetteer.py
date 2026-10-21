@@ -5,6 +5,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
 import gazetteer_text as gt  # noqa: E402
+from gazetteer_jev import NONE_REASON  # noqa: E402
 
 REPO = Path(__file__).resolve().parent.parent
 
@@ -577,13 +578,16 @@ class RenderJsonTest(unittest.TestCase):
 
 
 class FakeClient:
-    def __init__(self, by_text, regions=None, fail_on=()):
-        self.by_text, self.regions, self.fail_on = by_text, regions or {}, set(fail_on)
+    def __init__(self, by_text=None, regions=None, fail_on=(), search=None):
+        self.by_text, self.regions, self.fail_on = by_text or {}, regions or {}, set(fail_on)
+        self.search = search or {}
 
-    def candidates(self, text):
+    def candidates(self, text, language="it"):
         if text in self.fail_on:
             raise wd.WikidataError("boom")
-        return [dict(c) for c in self.by_text.get(text, [])]
+        if (text, language) in self.search:
+            return [dict(c) for c in self.search[(text, language)]]
+        return [dict(c) for c in self.by_text.get(text, [])] if language == "it" else []
 
     def candidate(self, qid):
         for cs in self.by_text.values():
@@ -599,6 +603,88 @@ class FakeClient:
 def index_of(**places):
     return {la: {"it": list(its), "occurrences": [f"mr:01{n:02d}-x"]}
             for n, (la, its) in enumerate(places.items(), 1)}
+
+
+BETHLEHEM = cand("Q5776", it=["Betlemme"], la=["Béthlehem"])
+
+
+def no_candidate_op(la, its, kind="place", reject=False, candidates=()):
+    op = {"op": "resolve_place", "id": la, "la": la, "it": list(its), "occurrences": ["mr:0101-x"],
+          "claims": [], "failed": ["no candidates found"], "candidates": list(candidates),
+          "decision": None, "edited": None, "jev": {"kind": kind, "probability": 0.9, "confidence": 0.9, "model": "m"}}
+    if reject:
+        op["jev"].update(decision="reject", reason=NONE_REASON)
+    return op
+
+
+def _search_index(op):
+    return {op["la"]: {"it": op["it"], "occurrences": op["occurrences"]}}
+
+
+class SearchMoreTest(unittest.TestCase):
+    def run_search(self, op, client):
+        review = {"operations": [op]}
+        return bg.search_more(review, _search_index(op), client), op
+
+    def test_finds_by_the_head_without_qualifier(self):
+        n, op = self.run_search(no_candidate_op("Béthlehem Iudæ", ["Betlemme di Giuda"]),
+                                FakeClient(search={("Betlemme", "it"): [BETHLEHEM]}))
+        self.assertEqual(n, 1)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], [BETHLEHEM["wikidata"]])
+        self.assertNotIn("jev", op)
+
+    def test_latin_nominative_in_la(self):
+        n, op = self.run_search(no_candidate_op("Béthlehem", ["Xyz"]),
+                                FakeClient(search={("bethlehem", "la"): [BETHLEHEM]}))
+        self.assertEqual(n, 1)
+
+    def test_skips_non_places(self):
+        n, op = self.run_search(no_candidate_op("anglus", ["inglese"], kind="people"),
+                                FakeClient(search={("inglese", "it"): [BETHLEHEM]}))
+        self.assertEqual(n, 0)
+        self.assertEqual(op["candidates"], [])
+
+    def test_keeps_jev_when_nothing_new(self):
+        n, op = self.run_search(no_candidate_op("X", ["X"]), FakeClient(search={}))
+        self.assertEqual(n, 0)
+        self.assertIn("jev", op)
+
+    def test_rejected_none_card_merges_without_duplicates(self):
+        old = {"wikidata": "Q1", "label": "Q1"}
+        op = no_candidate_op("Béthlehem", ["Betlemme"], reject=True, candidates=[old])
+        n, op = self.run_search(op, FakeClient(search={("Betlemme", "it"): [cand("Q1", it=["Betlemme"]), BETHLEHEM]}))
+        self.assertEqual(n, 1)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q1", "Q5776"])
+        self.assertNotIn("jev", op)
+        self.assertEqual(op["failed"], ["no candidates found"])
+
+    def test_wikidata_error_leaves_card(self):
+        op = no_candidate_op("Béthlehem", ["Betlemme"])
+        client = FakeClient(fail_on=["Betlemme"])
+        n, op = self.run_search(op, client)
+        self.assertEqual(n, 0)
+        self.assertIn("jev", op)
+        self.assertEqual(bg.search_more.not_processed[0][0], "Béthlehem")
+
+
+class RegionFailsClient(FakeClient):
+    def region_countries(self, text):
+        raise wd.WikidataError("region boom")
+
+
+class SearchMoreRegionErrorTest(unittest.TestCase):
+    def test_error_in_evaluate_leaves_card_and_continues(self):
+        first = no_candidate_op("Aaa", ["Betlemme in Fictia"])   # a region: evaluate asks Wikidata, fails
+        second = no_candidate_op("Bbb", ["Betlemme"])            # no region: evaluate succeeds
+        review = {"operations": [first, second]}
+        index = {**_search_index(first), **_search_index(second)}
+        client = RegionFailsClient(search={("Betlemme", "it"): [BETHLEHEM]})
+        self.assertEqual(bg.search_more(review, index, client), 1)
+        self.assertEqual(first["candidates"], [])
+        self.assertIn("jev", first)
+        self.assertEqual([c["wikidata"] for c in second["candidates"]], [BETHLEHEM["wikidata"]])
+        self.assertNotIn("jev", second)
+        self.assertEqual([la for la, _ in bg.search_more.not_processed], ["Aaa"])
 
 
 class ProposeTest(unittest.TestCase):
