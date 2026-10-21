@@ -715,6 +715,14 @@ class SearchMoreTest(unittest.TestCase):
         self.assertNotIn("jev", op)
         self.assertEqual(op["failed"], ["no candidates found"])
 
+    def test_scoped_card_is_searched_by_its_phrase(self):
+        op = no_candidate_op("Béthlehem", ["Betlemme"])
+        op["id"] = "Béthlehem@mr:0101-x"
+        index = {op["id"]: {"it": op["it"], "occurrences": op["occurrences"]}}
+        n = bg.search_more({"operations": [op]}, index, FakeClient(search={("bethlehem", "la"): [BETHLEHEM]}))
+        self.assertEqual(n, 1)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], [BETHLEHEM["wikidata"]])
+
     def test_wikidata_error_leaves_card(self):
         op = no_candidate_op("Béthlehem", ["Betlemme"])
         client = FakeClient(fail_on=["Betlemme"])

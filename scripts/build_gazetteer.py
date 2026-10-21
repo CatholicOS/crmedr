@@ -384,10 +384,10 @@ def search_more(review, index, client):
         jev = op.get("jev") or {}
         searched = jev.get("kind") == "place" and (
             not op.get("candidates") or (jev.get("decision") == "reject" and jev.get("reason") == NONE_REASON))
-        if not searched or op.get("op") != "resolve_place" or op["la"] not in index:
+        if not searched or op.get("op") != "resolve_place" or op["id"] not in index:
             continue
-        la = op["la"]
-        queries = _more_queries(index[la])
+        key, la = op["id"], op["la"]  # the gazetteer key (per eulogy for a scoped phrase), the printed phrase
+        queries = _more_queries(index[key])
         for nominative in sorted(latin_nominatives(la)):
             queries += [(nominative, "la"), (nominative, "it")]
         known = {c["wikidata"] for c in op.get("candidates", [])}
@@ -397,10 +397,10 @@ def search_more(review, index, client):
                 for c in client.candidates(text, language=language):
                     if c["wikidata"] not in known:
                         raw.setdefault(c["wikidata"], c)
-            result = evaluate(la, index[la], list(raw.values()), client.region_countries,
+            result = evaluate(key, index[key], list(raw.values()), client.region_countries,
                               getattr(client, "region_coords", lambda region: [])) if raw else None
         except WikidataError as e:
-            not_processed.append((la, str(e)))
+            not_processed.append((key, str(e)))
             continue
         if not result:
             continue
