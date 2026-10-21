@@ -128,6 +128,11 @@ class RekeyTextTest(unittest.TestCase):
         self.assertEqual(ar.rekey_text(text, self.M),
                          ('{"mr:0101-basilius-x": ["mr:0101-basilius-x", "mr:0101-basilius-x|Basilius"]}', 3))
 
+    def test_per_eulogy_gazetteer_key(self):
+        text = '{"ecclésiam Sancti Petri@mr:0101-basilius": {}, "x@mr:0101-basilius-magnus": {}}'
+        self.assertEqual(ar.rekey_text(text, self.M),
+                         ('{"ecclésiam Sancti Petri@mr:0101-basilius-x": {}, "x@mr:0101-basilius-magnus": {}}', 1))
+
     def test_longer_and_prose_untouched(self):
         text = '["mr:0101-basilius-magnus", "see mr:0101-basilius in", "xmr:0101-basilius"]'
         self.assertEqual(ar.rekey_text(text, self.M), (text, 0))

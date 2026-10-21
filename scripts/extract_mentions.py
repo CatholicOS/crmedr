@@ -35,6 +35,7 @@ from collections import Counter
 from pathlib import Path
 
 from extract_typology import load_texts
+from gazetteer_text import lookup
 from mentions_italian import ItalianNames, by_position, runs, surname_span
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
@@ -473,10 +474,10 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
     out, review = {}, {}
     counts = {"expected": Counter(), "found": Counter(), "review": Counter(), "no_text": []}
 
-    def place_qid(la):
-        return gazetteer.get(la, {}).get("wikidata")
-
     for mrid in sorted(set(places) | set(persons) | set(curated)):
+        def place_qid(la, mrid=mrid):
+            return (lookup(gazetteer, la, mrid) or {}).get("wikidata")
+
         items, names = places.get(mrid, []), persons.get(mrid, [])
         counts["expected"][("place", True)] += sum(1 for it in items if it.get(lang))
         for p in names:

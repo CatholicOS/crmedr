@@ -33,6 +33,13 @@ def lead(la, it=None, role="death"):
 
 
 class ApplyTest(unittest.TestCase):
+    def test_per_eulogy_key_wins(self):
+        gaz = dict(GAZ, **{"Fictópoli@mr:0102-b": {"wikidata": "Q9", "label": "Other", "country": "DE",
+                                                  "status": "reviewed"}})
+        out = rp.apply([entry("mr:0101-a", "IT", lead("Fictópoli")), entry("mr:0102-b", "IT", lead("Fictópoli"))],
+                       gaz, {})
+        self.assertEqual([(e["places"][0]["wikidata"], e["country"]) for e in out], [("Q1", "FR"), ("Q9", "DE")])
+
     def test_resolved_lead_sets_country_and_fields(self):
         out = rp.apply([entry("mr:0101-a", "IT", lead("Fictópoli", "A Fictopoli"))], GAZ, {})
         self.assertEqual(out[0]["country"], "FR")

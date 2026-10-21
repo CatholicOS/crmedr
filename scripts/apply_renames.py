@@ -124,14 +124,15 @@ def _standalone(ids):
 
 
 def rekey_text(text, mapping, prose=False):
-    """Re-key the quoted IDs: "old" and "old|... take the new ID; nothing else.
+    """Re-key the quoted IDs: "old", "old|... and a per-eulogy gazetteer key's "...@old" take the
+    new ID; nothing else.
 
     prose: also an old ID standing alone in text (a note's "(mr:0114-euphrasius)")."""
     if not mapping:
         return text, 0
     if prose:
         return _standalone(mapping).subn(lambda m: mapping[m.group(1)], text)
-    return re.subn(rf'"({_alternation(mapping)})(?=["|])', lambda m: '"' + mapping[m.group(1)], text)
+    return re.subn(rf'(?<=["@])({_alternation(mapping)})(?=["|])', lambda m: mapping[m.group(1)], text)
 
 
 def rekey_file(path, mapping, kind, dry, prose=False):

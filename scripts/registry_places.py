@@ -25,14 +25,14 @@ import tempfile
 from pathlib import Path
 
 import extract_registry as reg
-from gazetteer_text import ISO_CODES, convention
+from gazetteer_text import ISO_CODES, convention, lookup
 
 PLACE_FIELDS = ("wikidata", "label", "country", "text_says")
 CURATED = "data/countries_curated.json"
 
 
-def _resolved(gazetteer, la):
-    g = gazetteer.get(la)
+def _resolved(gazetteer, la, mr_id):
+    g = lookup(gazetteer, la, mr_id)
     return g if g and g.get("wikidata") else None
 
 
@@ -42,7 +42,7 @@ def _lead(entry):
 
 def has_resolved_lead(entry, gazetteer):
     lead = _lead(entry)
-    return lead is not None and _resolved(gazetteer, lead["la"]) is not None
+    return lead is not None and _resolved(gazetteer, lead["la"], entry["id"]) is not None
 
 
 def _curated_country(value):
@@ -100,9 +100,9 @@ def apply(entries, gazetteer, curated):
             continue
         e = dict(e)
         if "places" in e:
-            e["places"] = [_place(p, _resolved(gazetteer, p["la"])) for p in e["places"]]
+            e["places"] = [_place(p, _resolved(gazetteer, p["la"], e["id"])) for p in e["places"]]
         lead = _lead(e)
-        code = (_resolved(gazetteer, lead["la"])["country"] if has_resolved_lead(e, gazetteer)
+        code = (_resolved(gazetteer, lead["la"], e["id"])["country"] if has_resolved_lead(e, gazetteer)
                 else _curated_country(curated[e["id"]]))
         e["country"] = convention(code) if code else None
         out.append(e)

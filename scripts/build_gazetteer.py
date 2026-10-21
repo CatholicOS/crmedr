@@ -21,6 +21,11 @@ Usage:
   python3 build_gazetteer.py check [repo_root]
   python3 build_gazetteer.py search-more [repo_root]          (network) more candidates for places without one
   python3 build_gazetteer.py prune [repo_root]   drop non-place candidates from the queue
+  python3 build_gazetteer.py split [--force] [repo_root]      (network) one card per eulogy for each phrase
+                                         in data/gazetteer_scoped.json (a decided one only with --force)
+
+A phrase in data/gazetteer_scoped.json names different places in different eulogies: it is resolved
+per eulogy, keyed "<phrase>@<eulogy ID>" (gazetteer_text.place_key; readers use gazetteer_text.lookup).
 
 Standard library only. Reads no private sources.
 """
@@ -32,7 +37,7 @@ import re
 import sys
 from pathlib import Path
 
-from gazetteer_text import ISO_CODES, convention, fold, latin_nominatives, parse_italian
+from gazetteer_text import ISO_CODES, convention, fold, latin_nominatives, parse_italian, phrase_of, place_key
 from gazetteer_jev import NONE_REASON
 from wikidata import Wikidata, WikidataError
 
@@ -58,11 +63,12 @@ MAX_REGION_KM = 500
 PUBLISHED_KEYS = ["wikidata", "label", "description", "country", "countries", "la", "p9314", "coords", "types"]
 
 
-def place_index(places):
+def place_index(places, scoped=()):
+    """The places by gazetteer key: a phrase in data/gazetteer_scoped.json once per eulogy, any other once."""
     index = {}
     for mr_id, items in places.items():
         for it in items:
-            slot = index.setdefault(it["la"], {"it": set(), "occurrences": set()})
+            slot = index.setdefault(place_key(it["la"], mr_id, scoped), {"it": set(), "occurrences": set()})
             if "it" in it:
                 slot["it"].add(it["it"])
             slot["occurrences"].add(mr_id)
@@ -167,6 +173,7 @@ def _score(la, parsed, claims, candidates, region_countries, region_coords):
 
 
 def candidate_evidence(la, item, candidate, region_countries, region_coords=lambda region: []):
+    la = phrase_of(la)
     """The evidence evaluate() would give this one candidate for this place."""
     parsed = [parse_italian(it) for it in item["it"]]
     claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
@@ -175,6 +182,7 @@ def candidate_evidence(la, item, candidate, region_countries, region_coords=lamb
 
 
 def evaluate(la, item, candidates, region_countries, region_coords=lambda region: []):
+    la = phrase_of(la)
     parsed = [parse_italian(it) for it in item["it"]]
     claims = [{"country": iso, "it": it} for it, p in zip(item["it"], parsed) for iso in p["claims"]]
     scored = _score(la, parsed, claims, candidates, region_countries, region_coords)
@@ -286,7 +294,7 @@ def gather_candidates(item, client):
 
 
 def make_op(la, item, result, old):
-    op = {"op": "resolve_place", "id": la, "la": la, "it": item["it"],
+    op = {"op": "resolve_place", "id": la, "la": phrase_of(la), "it": item["it"],
           "occurrences": item["occurrences"], "claims": result["claims"],
           "failed": result["failed"], "candidates": result["candidates"]}
     for key in ("suggested", "reasoning", "confidence"):
@@ -376,10 +384,10 @@ def search_more(review, index, client):
         jev = op.get("jev") or {}
         searched = jev.get("kind") == "place" and (
             not op.get("candidates") or (jev.get("decision") == "reject" and jev.get("reason") == NONE_REASON))
-        if not searched or op.get("op") != "resolve_place" or op["la"] not in index:
+        if not searched or op.get("op") != "resolve_place" or op["id"] not in index:
             continue
-        la = op["la"]
-        queries = _more_queries(index[la])
+        key, la = op["id"], op["la"]  # the gazetteer key (per eulogy for a scoped phrase), the printed phrase
+        queries = _more_queries(index[key])
         for nominative in sorted(latin_nominatives(la)):
             queries += [(nominative, "la"), (nominative, "it")]
         known = {c["wikidata"] for c in op.get("candidates", [])}
@@ -389,10 +397,10 @@ def search_more(review, index, client):
                 for c in client.candidates(text, language=language):
                     if c["wikidata"] not in known:
                         raw.setdefault(c["wikidata"], c)
-            result = evaluate(la, index[la], list(raw.values()), client.region_countries,
+            result = evaluate(key, index[key], list(raw.values()), client.region_countries,
                               getattr(client, "region_coords", lambda region: [])) if raw else None
         except WikidataError as e:
-            not_processed.append((la, str(e)))
+            not_processed.append((key, str(e)))
             continue
         if not result:
             continue
@@ -461,7 +469,52 @@ def load_state(repo_root):
     places = json.loads((data / "places.json").read_text(encoding="utf-8"))["places"]
     gazetteer = _read_json(data / "gazetteer.json", {"places": {}})["places"]
     review = _read_json(data / "gazetteer_review.json", new_changeset([]))
-    return gazetteer, review, place_index(places)
+    return gazetteer, review, place_index(places, read_scoped(repo_root))
+
+
+SCOPED = "data/gazetteer_scoped.json"
+
+
+def read_scoped(repo_root):
+    """The phrases resolved per eulogy ({phrase: why}; "$" keys are comments)."""
+    doc = _read_json(Path(repo_root) / SCOPED, {})
+    return {k: v for k, v in doc.items() if not k.startswith("$")}
+
+
+def validate_scoped(scoped, places):
+    """Each phrase resolved per eulogy is printed, and says why."""
+    printed = {it["la"] for items in places.values() for it in items}
+    errors = [f"{SCOPED}: {la!r} is not a place in data/places.json" for la in sorted(set(scoped) - printed)]
+    errors += [f"{SCOPED}: {la!r} needs a reason" for la, why in sorted(scoped.items())
+               if not isinstance(why, str) or not why.strip()]
+    return errors
+
+
+def split(gazetteer, review, index, client, scoped, force=False):
+    """Replace each phrase resolved per eulogy, decided or queued as one place, by one card per
+    eulogy (searched and evaluated as `propose` does). A decided phrase is refused unless `force`,
+    which drops its entry. Returns (cards added, phrases refused, not processed)."""
+    ops = {op["id"]: op for op in review["operations"]}
+    added, refused, not_processed = 0, [], []
+    for la in sorted(scoped):
+        if la in gazetteer and not force:
+            refused.append(la)
+            continue
+        gazetteer.pop(la, None)
+        ops.pop(la, None)
+        for key in sorted(k for k in index if phrase_of(k) == la and k != la):
+            if key in gazetteer or key in ops:
+                continue
+            try:
+                result = evaluate(key, index[key], gather_candidates(index[key], client), client.region_countries,
+                                  getattr(client, "region_coords", lambda region: []))
+            except WikidataError as e:
+                not_processed.append((key, str(e)))
+                continue
+            ops[key] = make_op(key, index[key], result, None)
+            added += 1
+    review["operations"] = _sort_ops(ops.values())
+    return added, refused, not_processed
 
 
 def write_state(repo_root, gazetteer, review, index, not_processed=()):
@@ -583,9 +636,11 @@ def verify_suggestions(review, index, client):
 
 
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more", "split"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
+    force = "--force" in rest
+    rest = [a for a in rest if a != "--force"]
     exported = None
     if cmd == "apply":
         if not rest:
@@ -601,9 +656,19 @@ def main(argv):
         return 0
     if cmd == "check":
         variants = _read_json(repo_root / "data" / "places_variants_curated.json", {})
-        errors = validate(gazetteer, index, review["operations"]) + validate_variants(variants, gazetteer)
+        places = json.loads((repo_root / "data" / "places.json").read_text(encoding="utf-8"))["places"]
+        errors = (validate(gazetteer, index, review["operations"]) + validate_variants(variants, gazetteer)
+                  + validate_scoped(read_scoped(repo_root), places))
         print("\n".join(errors) or f"ok: {len(gazetteer)} places decided, {len(review['operations'])} queued")
         return 1 if errors else 0
+    if cmd == "split":
+        added, refused, not_processed = split(gazetteer, review, index, client, read_scoped(repo_root), force)
+        write_state(repo_root, gazetteer, review, index, not_processed)
+        for la in refused:
+            print(f"refused: {la!r} is decided in data/gazetteer.json (--force drops it)")
+        print(f"{added} per-eulogy cards added; {len(review['operations'])} queued; "
+              f"{len(not_processed)} not processed")
+        return 1 if refused or not_processed else 0
     if cmd == "propose":
         not_processed = propose(gazetteer, review, index, client)
         write_state(repo_root, gazetteer, review, index, not_processed)
