@@ -18,6 +18,8 @@ GAZ = {
     "Hierosólymæ": {"wikidata": "Q1218", "label": "Jerusalem", "country": "PS", "status": "reviewed"},
     "Nullópoli": {"wikidata": None, "status": "unresolved", "note": "n"},
     "Oriénte": {"wikidata": "Q205653", "label": "Orient", "country": None, "status": "reviewed"},
+    "Frísia": {"wikidata": "Q165111", "label": "Frisia", "country": None, "countries": ["NL", "DE"],
+               "status": "reviewed"},
 }
 
 
@@ -65,6 +67,14 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual([e["country"] for e in out], ["SY", None])
         self.assertEqual(out[0]["places"][0]["wikidata"], "Q205653")
         self.assertIsNone(out[0]["places"][0]["country"])
+
+    def test_place_in_several_countries_keeps_them_and_the_eulogy_takes_the_curated_one(self):
+        out = rp.apply([entry("mr:0101-a", "IT", lead("Frísia"))], GAZ, {"mr:0101-a": "NL"})
+        self.assertEqual(out[0]["country"], "NL")
+        self.assertEqual({k: out[0]["places"][0][k] for k in ("wikidata", "country", "countries")},
+                         {"wikidata": "Q165111", "country": None, "countries": ["NL", "DE"]})
+        self.assertRegex("\n".join(rp.validate([entry("mr:0101-a", "IT", lead("Frísia"))], GAZ, {})),
+                         r"no single country")
 
     def test_unresolved_place_gets_no_fields(self):
         out = rp.apply([entry("mr:0101-a", "IT", lead("Nullópoli"))], GAZ, {"mr:0101-a": "IT"})

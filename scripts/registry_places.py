@@ -2,7 +2,7 @@
 """Copy the gazetteer onto the registry's places and derive each current entry's country.
 
 Each place item of a current entry whose place the gazetteer resolves gets the
-place's `wikidata`, `label`, `country` and the `text_says` claims of its own
+place's `wikidata`, `label`, `country` (`countries` for one in several) and the `text_says` claims of its own
 Italian phrase. An entry's `country` is the country of its opening place when
 the gazetteer resolves it to a place in a country, otherwise the value in
 data/countries_curated.json (also for an opening place in no single country, such as the Orient);
@@ -28,7 +28,7 @@ from pathlib import Path
 import extract_registry as reg
 from gazetteer_text import ISO_CODES, convention, lookup
 
-PLACE_FIELDS = ("wikidata", "label", "country", "text_says")
+PLACE_FIELDS = ("wikidata", "label", "country", "countries", "text_says")
 CURATED = "data/countries_curated.json"
 
 
@@ -93,6 +93,8 @@ def _place(item, g):
     out = {k: v for k, v in item.items() if k not in PLACE_FIELDS}
     if g:
         out |= {"wikidata": g["wikidata"], "label": g["label"], "country": convention(g["country"])}
+        if g.get("countries"):  # a place in several countries (Frisia): country is null
+            out["countries"] = [convention(c) for c in g["countries"]]
         claims = [c for c in g.get("text_says", []) if "it" in item and c["it"] == item["it"]]
         if claims:
             out["text_says"] = claims
