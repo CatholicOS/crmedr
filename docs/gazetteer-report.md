@@ -126,7 +126,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Aventíno | 2 | type: the item is not a place |
 | Babylóne | 2 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (Q1747689, IQ) |
 | Baváriam | 2 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in DE |
-| Bethsáidæ | 2 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Bethsáidæ | 2 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Bonóniæ | 2 | no item has the Italian name of every variant |
 | Bracarénsis | 2 | latin: no Latin label, alias or P9314 matches |
 | Cadurcénsis | 2 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in FR |
@@ -510,7 +510,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Cæsariénsis | 1 | no item has the Italian name of every variant |
 | Cæsariénsis in Cappadócia | 1 | latin: no Latin label, alias or P9314 matches |
 | Cæsariénsis in Palæstína | 1 | latin: no Latin label, alias or P9314 matches |
-| Cæsaréa Palæstínæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Cæsaréa Palæstínæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Cæsaréam Palæstínæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Cæsaréæ | 1 | latin: no Latin label, alias or P9314 matches |
 | Cœlio | 1 | latin: no Latin label, alias or P9314 matches |
@@ -639,8 +639,8 @@ In `data/gazetteer_review.json`, most frequent first.
 | Istrum flumen | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (DE, AT, SK, HU, HR, RS, RO, BG, MD) |
 | Itáliam septemtrionálem | 1 | latin: no Latin label, alias or P9314 matches |
 | Itáliæ províncias | 1 | no item has the Italian name of every variant |
-| Iudǽam | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
-| Iámnia | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Iudǽam | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
+| Iámnia | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Iúliæ Valéntiæ | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in FR |
 | Kambalik | 1 | no item has the Italian name of every variant |
 | Lambacénse monastérium | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in AT |
@@ -731,7 +731,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Molukénsibus aliísque ínsulis | 1 | no candidates found |
 | Molísmo | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in FR |
 | Monasteriénsem | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in DE |
-| Monte Carmélo | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Monte Carmélo | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Monte Casíno | 1 | latin: no Latin label, alias or P9314 matches |
 | Monte Luco | 1 | latin: no Latin label, alias or P9314 matches |
 | Monte Pessuláno in Langedócia Gálliæ | 1 | latin: no Latin label, alias or P9314 matches |
@@ -757,8 +757,8 @@ In `data/gazetteer_review.json`, most frequent first.
 | Nannétibus | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in FR |
 | Narbonénsis | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); type: the item is not a place |
 | Navárra | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in ES |
-| Nazarethánæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
-| Nazarénus | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Nazarethánæ | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
+| Nazarénus | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Neapolitáni | 1 | latin: no Latin label, alias or P9314 matches |
 | Neapolitánæ provínciæ | 1 | no item has the Italian name of every variant |
 | Negranénsium | 1 | no item has the Italian name of every variant |
@@ -915,7 +915,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | Scetim | 1 | no item has the Italian name of every variant |
 | Scillitanórum | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (); type: the item is not a place |
 | Scireburniénsis | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in GB |
-| Scythópolim | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| Scythópolim | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | Sebasténsis | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in TR |
 | Sedem Románam | 1 | no item has the Italian name of every variant |
 | Sedunénsis | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in CH |
@@ -1103,7 +1103,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | castéllo Emmaus | 1 | latin: no Latin label, alias or P9314 matches |
 | cathedrális Bituricénsis | 1 | no candidates found |
 | civitáte Loano prope Savónem in Italia | 1 | latin: no Latin label, alias or P9314 matches |
-| civitáte Názareth | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| civitáte Názareth | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | civitáte Vercellénsi | 1 | latin: no Latin label, alias or P9314 matches |
 | civitátem Dunum in Hibérnia | 1 | latin: no Latin label, alias or P9314 matches |
 | civitátem Ierúsalem | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (PS, PS) |
@@ -1248,7 +1248,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | monastério Africi prope Rhégium Iúlii | 1 | region: the item is 1007 km from 'Reggio' |
 | monastério Altencampénsi | 1 | no item has the Italian name of every variant |
 | monastério Beccénsi in Normánnia | 1 | latin: no Latin label, alias or P9314 matches; country: the item has no single current country (XK, RS); region: the item is 1770 km from 'Normandia' |
-| monastério Calvárii | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS; type: the item is not a place |
+| monastério Calvárii | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL; type: the item is not a place |
 | monastério Camaldulénsium Absoritáno | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in ES |
 | monastério Carbonénsi Sanctórum Elíæ et Anastásii prope Arméntum | 1 | latin: no Latin label, alias or P9314 matches |
 | monastério Cellæ Novæ | 1 | no item has the Italian name of every variant |
@@ -1386,7 +1386,7 @@ In `data/gazetteer_review.json`, most frequent first.
 | urbe Concha in Æquatória | 1 | latin: no Latin label, alias or P9314 matches |
 | urbe Gaza | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
 | urbe Sancti Iacóbi in Chília | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in CL |
-| urbe Scythópoli | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in PS |
+| urbe Scythópoli | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IL |
 | urbe Ur Chaldæórum | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in IQ |
 | urbes itálicas | 1 | latin: no Latin label, alias or P9314 matches |
 | valetudinário Sancti Spíritus | 1 | no item has the Italian name of every variant |
