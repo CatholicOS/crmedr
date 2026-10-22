@@ -19,7 +19,8 @@ KINDS = ("place", "people", "relative", "not_place")
 
 KIND_CRITERIA = {
     "place": "a settlement, site, building, region or country: a place one could find on a map",
-    "people": "a nationality or a people (anglus, polonus, a tribe named as people), not a place",
+    "people": ("a nationality or a people (anglus, polonus, a tribe or a kingdom named by its people, "
+               "Merciorum)"),
     "relative": ("a place named only in relation to the eulogy (this city, the same monastery), which the "
                  "phrase alone does not identify"),
     "not_place": "not a place at all",
@@ -27,7 +28,7 @@ KIND_CRITERIA = {
 
 NONE_REASON = "Jev: none of the candidates is this place"
 KIND_REASONS = {
-    "people": "Jev: a nationality or people, not a place",
+    "people": "Jev: a nationality or people, and no candidate is its item",
     "relative": "Jev: the place depends on its eulogy",
     "not_place": "Jev: not a place",
 }
@@ -140,7 +141,11 @@ PICK_INSTRUCTIONS = (
     "camp, rather than the town or mountain it stands in or on), or when it names a historical territory "
     "(a Roman province or historical region, rather than a modern region or continent of the same name). "
     "When the phrase names a place near another (prope, apud, iuxta: near, at), the near place is not that "
-    "other one. Answer none if no candidate is this place."
+    "other one. When the phrase names a nationality or a people (polonus, anglus, hibernus, Merciorum), "
+    "choose the item of that people, or of the kingdom named by its people (the Kingdom of Mercia). When "
+    "the phrase is the adjective of a monastery (Cluniacensis: of Cluny) or the island of a monastery in a "
+    "eulogy of its monks (insula Lirinensis), choose the monastery or abbey rather than its town or island. "
+    "Answer none if no candidate is this place."
 )
 
 
@@ -161,9 +166,10 @@ def place_suggestion(op, answers, model=MODEL):
     if kind is None:
         return None
     base = {"kind": kind[0], "probability": kind[1], "confidence": kind[2], "model": model}
-    if kind[0] != "place":
-        return {"decision": "reject", "reason": KIND_REASONS[kind[0]], **base}
     cands = op.get("candidates") or []
+    # A people takes its item (the curator's convention, 2026-10-22): its pick is read as a place's is.
+    if kind[0] not in ("place", "people") or (kind[0] == "people" and not cands):
+        return {"decision": "reject", "reason": KIND_REASONS[kind[0]], **base}
     if not cands:
         return base
     ids = [f"c{i}" for i in range(len(cands))]
@@ -173,7 +179,8 @@ def place_suggestion(op, answers, model=MODEL):
     pick, probability, confidence = chosen
     base.update(probability=probability, confidence=confidence)
     if pick == "none":
-        return {"decision": "reject", "reason": NONE_REASON, **base}
+        return {"decision": "reject", "reason": NONE_REASON if kind[0] == "place" else KIND_REASONS["people"],
+                **base}
     cand = cands[ids.index(pick)]
     out = {"decision": "accept" if cand["wikidata"] == default_qid(op) else "edit", "wikidata": cand["wikidata"]}
     if cand.get("country"):
