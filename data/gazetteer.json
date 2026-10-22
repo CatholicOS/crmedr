@@ -7,6 +7,18 @@
     "unresolved"
   ],
   "places": {
+    "Abitinénsium": {
+      "wikidata": "Q321536",
+      "label": "Abitinae",
+      "country": "TN",
+      "status": "reviewed"
+    },
+    "Abitínis": {
+      "wikidata": "Q321536",
+      "label": "Abitinae",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "Aboæ in Fínnia": {
       "wikidata": "Q38511",
       "label": "Turku",
@@ -31,11 +43,23 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Abulæ": {
+      "wikidata": "Q15688",
+      "label": "Ávila",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Abulæ in Hispánia": {
       "wikidata": "Q15688",
       "label": "Ávila",
       "country": "ES",
       "status": "auto"
+    },
+    "Abundántiæ": {
+      "wikidata": "Q322895",
+      "label": "Abondance",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Accitáni": {
       "wikidata": "Q244324",
@@ -43,10 +67,22 @@
       "country": "ES",
       "status": "jev"
     },
+    "Achadhbœnsis monastérii": {
+      "wikidata": "Q1774930",
+      "label": "Aghaboe Priory",
+      "country": "IE",
+      "status": "reviewed"
+    },
     "Achridæ in Illýrico": {
       "wikidata": "Q1223508",
       "label": "Ohrid",
       "country": "MK",
+      "status": "reviewed"
+    },
+    "Acháia": {
+      "wikidata": "Q204772",
+      "label": "Achaea",
+      "country": "GR",
       "status": "reviewed"
     },
     "Acrii in Calábria": {
@@ -211,6 +247,12 @@
       "country": "IQ",
       "status": "jev"
     },
+    "Adrumétici": {
+      "wikidata": "Q180717",
+      "label": "Sousse",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "Africa": {
       "wikidata": "Q15",
       "label": "Africa",
@@ -223,10 +265,22 @@
       "country": null,
       "status": "reviewed"
     },
+    "Africáni": {
+      "wikidata": "Q1075929",
+      "label": "African people",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "Africæ": {
       "wikidata": "Q15",
       "label": "Africa",
       "country": null,
+      "status": "reviewed"
+    },
+    "Agaliénsis": {
+      "wikidata": "Q6021233",
+      "label": "Agali monastery",
+      "country": "ES",
       "status": "reviewed"
     },
     "Agathæ in Gállia Narbonénsi": {
@@ -313,6 +367,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Albigénsi": {
+      "wikidata": "Q132801",
+      "label": "Albi",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Albiæ in Aquitánia": {
       "wikidata": "Q132801",
       "label": "Albi",
@@ -390,6 +450,18 @@
       "label": "Aléria",
       "country": "FR",
       "status": "jev"
+    },
+    "Alethénsem": {
+      "wikidata": "Q2832864",
+      "label": "Aleth",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Alethénsis": {
+      "wikidata": "Q2832864",
+      "label": "Aleth",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Alexandrinórum": {
       "wikidata": "Q87",
@@ -515,6 +587,16 @@
       ],
       "status": "jev"
     },
+    "Alpium Maritimárum": {
+      "wikidata": "Q2451856",
+      "label": "Maritime Alps",
+      "country": null,
+      "countries": [
+        "FR",
+        "IT"
+      ],
+      "status": "reviewed"
+    },
     "Alréum": {
       "wikidata": "Q62958",
       "label": "Auray",
@@ -527,9 +609,21 @@
       "country": "FR",
       "status": "auto"
     },
+    "Altam flumen prope Pereisláviam": {
+      "wikidata": "Q2392945",
+      "label": "Alta River",
+      "country": "UA",
+      "status": "reviewed"
+    },
     "Altivillariénsis": {
       "wikidata": "Q753780",
       "label": "Hautvillers",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Altomónte in Hannónia": {
+      "wikidata": "Q2820601",
+      "label": "Abbey of Hautmont",
       "country": "FR",
       "status": "reviewed"
     },
@@ -659,6 +753,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "Amiterníni": {
+      "wikidata": "Q177061",
+      "label": "Amiternum",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Amitérni in Sabína via Salária": {
       "wikidata": "Q177061",
       "label": "Amiternum",
@@ -677,9 +777,57 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "América Austráli": {
+      "wikidata": "Q18",
+      "label": "South America",
+      "country": null,
+      "status": "reviewed"
+    },
+    "América Meridionáli": {
+      "wikidata": "Q18",
+      "label": "South America",
+      "country": null,
+      "status": "reviewed"
+    },
     "Américam": {
       "wikidata": "Q828",
       "label": "Americas",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américam Latínam": {
+      "wikidata": "Q12585",
+      "label": "Latin America",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américæ": {
+      "wikidata": "Q828",
+      "label": "Americas",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américæ Meridionális": {
+      "wikidata": "Q18",
+      "label": "South America",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américæ Septemtrionális regióne": {
+      "wikidata": "Q49",
+      "label": "North America",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américæ civitátes": {
+      "wikidata": "Q828",
+      "label": "Americas",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Américæ latínæ": {
+      "wikidata": "Q12585",
+      "label": "Latin America",
       "country": null,
       "status": "reviewed"
     },
@@ -2998,10 +3146,11 @@
       "status": "jev"
     },
     "Bethsáidæ": {
-      "wikidata": "Q501773",
-      "label": "Bethsaida",
-      "country": "IL",
-      "status": "reviewed"
+      "wikidata": "Q141807569",
+      "label": "el-Araj",
+      "country": null,
+      "status": "reviewed",
+      "note": "In no single country: el-Araj lies in the Israeli-occupied territories (Q575187), with no international ruling yet (the curator, 2026-10-22)."
     },
     "Bethsáloe in Augústa Euphratésia província Sýriæ": {
       "wikidata": "Q631407",
@@ -6952,6 +7101,22 @@
       "wikidata": "Q4502340",
       "label": "Ilíberis",
       "country": "ES",
+      "status": "reviewed"
+    },
+    "Illýrico": {
+      "wikidata": "Q753824",
+      "label": "Illyricum",
+      "country": null,
+      "countries": [
+        "AL",
+        "BA",
+        "HR",
+        "HU",
+        "XK",
+        "ME",
+        "RS",
+        "SI"
+      ],
       "status": "reviewed"
     },
     "In Africa": {
@@ -12719,6 +12884,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Laude Pompéia": {
+      "wikidata": "Q6244",
+      "label": "Lodi",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Laude Pompéia in Ligúria": {
       "wikidata": "Q42296",
       "label": "Lodi Vecchio",
@@ -12983,6 +13154,12 @@
       "country": "SE",
       "status": "auto"
     },
+    "Lindisfarnénsis": {
+      "wikidata": "Q213804",
+      "label": "Lindisfarne",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Lindisfárnæ in Northúmbria": {
       "wikidata": "Q213804",
       "label": "Lindisfarne",
@@ -13065,6 +13242,32 @@
       "wikidata": "Q10332624",
       "label": "Mosteiro de Lorvão",
       "country": "PT",
+      "status": "reviewed"
+    },
+    "Lotharíngia": {
+      "wikidata": "Q6673921",
+      "label": "Lotharingia",
+      "country": null,
+      "countries": [
+        "BE",
+        "DE",
+        "FR",
+        "LU",
+        "NL"
+      ],
+      "status": "reviewed"
+    },
+    "Lotharíngiæ": {
+      "wikidata": "Q6673921",
+      "label": "Lotharingia",
+      "country": null,
+      "countries": [
+        "BE",
+        "DE",
+        "FR",
+        "LU",
+        "NL"
+      ],
       "status": "reviewed"
     },
     "Lourdes": {
@@ -13833,6 +14036,12 @@
       "country": "CZ",
       "status": "jev"
     },
+    "Molinénsis": {
+      "wikidata": "Q184883",
+      "label": "Moulins",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Molukénsibus aliísque ínsulis": {
       "wikidata": "Q3827",
       "label": "Maluku Islands",
@@ -14018,6 +14227,12 @@
       "label": "Moricone",
       "country": "IT",
       "status": "auto"
+    },
+    "Morinórum": {
+      "wikidata": "Q250584",
+      "label": "Morini",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Moritániæ in Normánnia Gálliæ": {
       "wikidata": "Q476288",
@@ -14223,6 +14438,12 @@
       "country": "IL",
       "status": "jev"
     },
+    "Nazianzénus": {
+      "wikidata": "Q1336978",
+      "label": "Nazianzus",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Naziánzi in Cappadócia": {
       "wikidata": "Q1336978",
       "label": "Nazianzus",
@@ -14320,6 +14541,12 @@
     "Nicópoli in Arménia": {
       "wikidata": "Q619704",
       "label": "Nicopolis",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Nicǽni": {
+      "wikidata": "Q217125",
+      "label": "İznik",
       "country": "TR",
       "status": "reviewed"
     },
@@ -14570,6 +14797,12 @@
       "status": "reviewed"
     },
     "Nyssæ in Cappadócia": {
+      "wikidata": "Q3563362",
+      "label": "Nyssa",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Nyssénus": {
       "wikidata": "Q3563362",
       "label": "Nyssa",
       "country": "TR",
@@ -15130,6 +15363,12 @@
       "country": "GR",
       "status": "auto"
     },
+    "Phrýgiam": {
+      "wikidata": "Q16142051",
+      "label": "Phrygia",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Phænóne in Palæstína": {
       "wikidata": "Q2907858",
       "label": "Punon",
@@ -15291,6 +15530,12 @@
       "label": "Poland",
       "country": "PL",
       "status": "auto"
+    },
+    "Polóniam": {
+      "wikidata": "Q36",
+      "label": "Poland",
+      "country": "PL",
+      "status": "reviewed"
     },
     "Polóniæ": {
       "wikidata": "Q36",
@@ -16640,6 +16885,12 @@
       "country": "HU",
       "status": "reviewed"
     },
+    "Sabáudiæ": {
+      "wikidata": "Q14118",
+      "label": "Savoy",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Sachsenhúsæ in Germánia": {
       "wikidata": "Q154498",
       "label": "Sachsenhausen concentration camp",
@@ -16868,6 +17119,12 @@
       "country": "TR",
       "status": "auto"
     },
+    "Sardíniam": {
+      "wikidata": "Q19740031",
+      "label": "Sardinia",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Sargiénsis ínsulæ": {
       "wikidata": "Q3405693",
       "label": "Sark",
@@ -16932,6 +17189,12 @@
       "wikidata": "Q124886",
       "label": "Sassoferrato",
       "country": "IT",
+      "status": "reviewed"
+    },
+    "Saxónia": {
+      "wikidata": "Q3057629",
+      "label": "Old Saxony",
+      "country": "DE",
       "status": "reviewed"
     },
     "Saxóniam": {
@@ -17255,6 +17518,12 @@
       "label": "Sisak",
       "country": "HR",
       "status": "jev"
+    },
+    "Sithivénsis": {
+      "wikidata": "Q208793",
+      "label": "Saint-Omer",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Skeníngiæ in Suécia": {
       "wikidata": "Q990083",
@@ -17842,6 +18111,12 @@
       ],
       "status": "jev"
     },
+    "Thebáide": {
+      "wikidata": "Q768515",
+      "label": "Thebaid",
+      "country": "EG",
+      "status": "reviewed"
+    },
     "Thenesíaci in pago Pictaviénsi Aquitániæ": {
       "wikidata": "Q1344052",
       "label": "Thénezay",
@@ -17896,10 +18171,33 @@
         }
       ]
     },
+    "Thrácia": {
+      "wikidata": "Q41741",
+      "label": "Thrace",
+      "country": null,
+      "countries": [
+        "BG",
+        "GR",
+        "TR"
+      ],
+      "status": "reviewed"
+    },
     "Thuburbóne Lucernáriæ in Africa": {
       "wikidata": "Q2429748",
       "label": "Thuburbo Minus",
       "country": "TN",
+      "status": "reviewed"
+    },
+    "Thuríngiæ": {
+      "wikidata": "Q1205",
+      "label": "Thuringia",
+      "country": "DE",
+      "status": "reviewed"
+    },
+    "Thyatirénsis": {
+      "wikidata": "Q1135603",
+      "label": "Thyatira",
+      "country": "TR",
       "status": "reviewed"
     },
     "Tiférni Tiberíni in Umbria": {
@@ -18104,6 +18402,12 @@
       "wikidata": "Q1169940",
       "label": "Saint-Viâtre",
       "country": "FR",
+      "status": "reviewed"
+    },
+    "Trevirénsi": {
+      "wikidata": "Q3138",
+      "label": "Trier",
+      "country": "DE",
       "status": "reviewed"
     },
     "Trevirénsis": {
@@ -18596,6 +18900,12 @@
       "wikidata": "Q1767567",
       "label": "Vallibona",
       "country": "ES",
+      "status": "reviewed"
+    },
+    "Vallis Umbrósæ": {
+      "wikidata": "Q971123",
+      "label": "Vallombrosa Abbey",
+      "country": "IT",
       "status": "reviewed"
     },
     "Vallisoléti in Hispánia": {
@@ -19420,6 +19730,12 @@
       "country": "DE",
       "status": "jev"
     },
+    "campo exítii Oświęcim seu Auschwitz prope Cracóviam in Polónia": {
+      "wikidata": "Q7341",
+      "label": "Auschwitz",
+      "country": "PL",
+      "status": "reviewed"
+    },
     "castra detentiónis Dacháni": {
       "wikidata": "Q151198",
       "label": "Dachau concentration camp",
@@ -19585,6 +19901,12 @@
       "label": "Catacomb of Callixtus",
       "country": "IT",
       "status": "jev"
+    },
+    "cœnóbii Horreénsis": {
+      "wikidata": "Q21294262",
+      "label": "St. Irmine Abbey",
+      "country": "DE",
+      "status": "reviewed"
     },
     "cœnóbio Altæ Cumbæ": {
       "wikidata": "Q63524",
@@ -19863,6 +20185,12 @@
       "label": "Smithfield",
       "country": "GB",
       "status": "jev"
+    },
+    "lusitánus": {
+      "wikidata": "Q178630",
+      "label": "Portuguese",
+      "country": "PT",
+      "status": "reviewed"
     },
     "límina Apostolórum": {
       "wikidata": "Q141806648",
@@ -20173,6 +20501,12 @@
       "country": "NL",
       "status": "jev"
     },
+    "nicǽnam": {
+      "wikidata": "Q133331",
+      "label": "First Council of Nicaea",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "nosocomío insanabílium": {
       "wikidata": "Q22442829",
       "label": "Arcispedale di San Giacomo degli Incurabili",
@@ -20369,6 +20703,12 @@
         "PS",
         "IL"
       ],
+      "status": "reviewed"
+    },
+    "trans Iordánem": {
+      "wikidata": "Q7834492",
+      "label": "Transjordan",
+      "country": "JO",
       "status": "reviewed"
     },
     "turri Nigræ Portæ": {

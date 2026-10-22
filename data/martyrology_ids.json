@@ -165,7 +165,10 @@
           "role": "exile",
           "la": "Sardíniam",
           "it": "Sardegna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q19740031",
+          "label": "Sardinia",
+          "country": "IT"
         },
         {
           "role": "mention",
@@ -547,7 +550,10 @@
           "la": "Nazianzénus",
           "it": "Nazianzo",
           "source": "curated",
-          "person": "Gregorius Nazianzenus"
+          "person": "Gregorius Nazianzenus",
+          "wikidata": "Q1336978",
+          "label": "Nazianzus",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -4445,7 +4451,10 @@
           "role": "exile",
           "la": "Phrýgiam",
           "it": "Frigia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16142051",
+          "label": "Phrygia",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -8730,7 +8739,17 @@
           "role": "ministry",
           "la": "Lotharíngiæ",
           "it": "Lotaringia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6673921",
+          "label": "Lotharingia",
+          "country": null,
+          "countries": [
+            "BE",
+            "DE",
+            "FR",
+            "LU",
+            "NL"
+          ]
         }
       ],
       "date": {
@@ -11305,7 +11324,10 @@
           "role": "ministry",
           "la": "Alethénsem",
           "it": "Aleth",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2832864",
+          "label": "Aleth",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -14359,7 +14381,10 @@
           "role": "religious_life",
           "la": "Vallis Umbrósæ",
           "it": "Vallombrosa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q971123",
+          "label": "Vallombrosa Abbey",
+          "country": "IT"
         }
       ],
       "date": {
@@ -15433,7 +15458,10 @@
           "role": "mention",
           "la": "Abitinénsium",
           "it": "Abitene",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q321536",
+          "label": "Abitinae",
+          "country": "TN"
         }
       ],
       "date": {
@@ -15478,7 +15506,10 @@
           "role": "mention",
           "la": "Nyssénus",
           "it": "Nissa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3563362",
+          "label": "Nyssa",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -16904,7 +16935,10 @@
           "role": "mention",
           "la": "Nyssénus",
           "it": "Nissa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3563362",
+          "label": "Nyssa",
+          "country": "TR"
         }
       ],
       "date": {
@@ -17294,7 +17328,10 @@
           "role": "religious_life",
           "la": "Agaliénsis",
           "it": "Agalia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6021233",
+          "label": "Agali monastery",
+          "country": "ES"
         }
       ],
       "date": {
@@ -19512,7 +19549,10 @@
           "role": "religious_life",
           "la": "trans Iordánem",
           "it": "oltre il Giordano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q7834492",
+          "label": "Transjordan",
+          "country": "JO"
         }
       ],
       "date": {
@@ -21487,7 +21527,10 @@
           "la": "Sabáudiæ",
           "it": "Savoia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q14118",
+          "label": "Savoy",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -22563,7 +22606,10 @@
           "role": "birth",
           "la": "lusitánus",
           "it": "portoghese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q178630",
+          "label": "Portuguese",
+          "country": "PT"
         }
       ],
       "date": {
@@ -26132,7 +26178,10 @@
           "role": "ministry",
           "la": "Lindisfarnénsis",
           "it": "Lindisfarne",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q213804",
+          "label": "Lindisfarne",
+          "country": "GB"
         }
       ],
       "date": {
@@ -28292,7 +28341,10 @@
           "it": "Sassonia",
           "source": "curated",
           "occurrence": 2,
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q3057629",
+          "label": "Old Saxony",
+          "country": "DE"
         }
       ],
       "date": {
@@ -29253,7 +29305,10 @@
           "role": "ministry",
           "la": "Sabáudiæ",
           "it": "Savoia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14118",
+          "label": "Savoy",
+          "country": "FR"
         }
       ]
     },
@@ -29725,7 +29780,10 @@
           "role": "religious_life",
           "la": "trans Iordánem",
           "it": "al di là del Giordano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q7834492",
+          "label": "Transjordan",
+          "country": "JO"
         },
         {
           "role": "journey",
@@ -33566,7 +33624,10 @@
           "role": "religious_life",
           "la": "Sithivénsis",
           "it": "Saint-Omer",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q208793",
+          "label": "Saint-Omer",
+          "country": "FR"
         }
       ],
       "date": {
@@ -33796,7 +33857,10 @@
           "la": "Thyatirénsis",
           "it": "Tiatira",
           "source": "curated",
-          "person": "Carpus"
+          "person": "Carpus",
+          "wikidata": "Q1135603",
+          "label": "Thyatira",
+          "country": "TR"
         }
       ],
       "date": {
@@ -36245,7 +36309,14 @@
           "role": "ministry",
           "la": "Alpium Maritimárum",
           "it": "Alpi Marittime",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2451856",
+          "label": "Maritime Alps",
+          "country": null,
+          "countries": [
+            "FR",
+            "IT"
+          ]
         },
         {
           "role": "birth",
@@ -37312,7 +37383,10 @@
           "role": "ministry",
           "la": "Polóniam",
           "it": "Polonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         },
         {
           "role": "ministry",
@@ -40178,7 +40252,10 @@
           "role": "ministry",
           "la": "Abulæ",
           "it": "Ávila",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15688",
+          "label": "Ávila",
+          "country": "ES"
         },
         {
           "role": "ministry",
@@ -41102,9 +41179,9 @@
           "it": "Betsaida",
           "source": "curated",
           "person": "Philippus Apostolus",
-          "wikidata": "Q501773",
-          "label": "Bethsaida",
-          "country": "IL"
+          "wikidata": "Q141807569",
+          "label": "el-Araj",
+          "country": null
         },
         {
           "role": "ministry",
@@ -41669,7 +41746,17 @@
           "role": "foundation",
           "la": "Lotharíngia",
           "it": "Lorena",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6673921",
+          "label": "Lotharingia",
+          "country": null,
+          "countries": [
+            "BE",
+            "DE",
+            "FR",
+            "LU",
+            "NL"
+          ]
         },
         {
           "role": "foundation",
@@ -42415,7 +42502,10 @@
           "role": "ministry",
           "la": "Américæ Septemtrionális regióne",
           "it": "America settentrionale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q49",
+          "label": "North America",
+          "country": null
         },
         {
           "role": "ministry",
@@ -44049,7 +44139,10 @@
           "role": "death",
           "la": "Adrumétici",
           "it": "Adrumeto",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q180717",
+          "label": "Sousse",
+          "country": "TN"
         }
       ]
     },
@@ -44516,7 +44609,15 @@
           "role": "birth",
           "la": "Thrácia",
           "it": "Tracia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41741",
+          "label": "Thrace",
+          "country": null,
+          "countries": [
+            "BG",
+            "GR",
+            "TR"
+          ]
         }
       ],
       "date": {
@@ -47125,7 +47226,10 @@
           "role": "birth",
           "la": "Thyatirénsis",
           "it": "Tiátira",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1135603",
+          "label": "Thyatira",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -47961,7 +48065,10 @@
           "role": "religious_life",
           "la": "Vallis Umbrósæ",
           "it": "Vallombrosa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q971123",
+          "label": "Vallombrosa Abbey",
+          "country": "IT"
         }
       ],
       "date": {
@@ -50778,7 +50885,10 @@
           "role": "journey",
           "la": "Polóniam",
           "it": "Polonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q36",
+          "label": "Poland",
+          "country": "PL"
         },
         {
           "role": "journey",
@@ -51982,7 +52092,10 @@
           "role": "ministry",
           "la": "Molinénsis",
           "it": "Moulins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q184883",
+          "label": "Moulins",
+          "country": "FR"
         }
       ]
     },
@@ -52033,7 +52146,10 @@
           "role": "ministry",
           "la": "Américæ civitátes",
           "it": "città d’America",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q828",
+          "label": "Americas",
+          "country": null
         }
       ],
       "date": {
@@ -53281,7 +53397,15 @@
           "role": "death",
           "la": "Thrácia",
           "it": "Tracia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41741",
+          "label": "Thrace",
+          "country": null,
+          "countries": [
+            "BG",
+            "GR",
+            "TR"
+          ]
         }
       ],
       "date": {
@@ -53393,7 +53517,10 @@
           "role": "birth",
           "la": "Albigénsi",
           "it": "Albi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q132801",
+          "label": "Albi",
+          "country": "FR"
         }
       ],
       "date": {
@@ -54898,7 +55025,10 @@
           "role": "ministry",
           "la": "Molinénsis",
           "it": "Moulins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q184883",
+          "label": "Moulins",
+          "country": "FR"
         }
       ]
     },
@@ -55365,7 +55495,10 @@
           "role": "mention",
           "la": "nicǽnam",
           "it": "Nicea",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q133331",
+          "label": "First Council of Nicaea",
+          "country": "TR"
         }
       ],
       "date": {
@@ -56022,7 +56155,10 @@
           "role": "birth",
           "la": "lusitánus",
           "it": "Portogallo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q178630",
+          "label": "Portuguese",
+          "country": "PT"
         },
         {
           "role": "death",
@@ -56143,7 +56279,10 @@
           "role": "mention",
           "la": "nicǽnam",
           "it": "Nicea",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q133331",
+          "label": "First Council of Nicaea",
+          "country": "TR"
         }
       ],
       "date": {
@@ -56174,7 +56313,10 @@
           "role": "ministry",
           "la": "Amiterníni",
           "it": "Amiterno",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q177061",
+          "label": "Amiternum",
+          "country": "IT"
         }
       ],
       "date": {
@@ -63647,7 +63789,10 @@
           "role": "mention",
           "la": "Trevirénsi",
           "it": "Treviri",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3138",
+          "label": "Trier",
+          "country": "DE"
         }
       ],
       "date": {
@@ -63884,7 +64029,10 @@
           "role": "ministry",
           "la": "Américæ latínæ",
           "it": "America Latina",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q12585",
+          "label": "Latin America",
+          "country": null
         }
       ],
       "date": {
@@ -65948,7 +66096,10 @@
           "role": "death",
           "la": "Laude Pompéia",
           "it": "Lodi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6244",
+          "label": "Lodi",
+          "country": "IT"
         }
       ],
       "date": {
@@ -67084,7 +67235,10 @@
           "role": "ministry",
           "la": "Américæ Meridionális",
           "it": "America Meridionale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q18",
+          "label": "South America",
+          "country": null
         }
       ],
       "edition_notes": {
@@ -68830,7 +68984,10 @@
           "role": "translation",
           "la": "Laude Pompéia",
           "it": "Lodi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6244",
+          "label": "Lodi",
+          "country": "IT"
         }
       ],
       "date": {
@@ -69735,7 +69892,10 @@
           "role": "foundation",
           "la": "Altomónte in Hannónia",
           "it": "Hautmont in Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820601",
+          "label": "Abbey of Hautmont",
+          "country": "FR"
         }
       ],
       "date": {
@@ -71156,7 +71316,10 @@
           "la": "Altam flumen prope Pereisláviam",
           "it": "fiume Don vicino a Pereyaslavl",
           "source": "curated",
-          "person": "Boris"
+          "person": "Boris",
+          "wikidata": "Q2392945",
+          "label": "Alta River",
+          "country": "UA"
         },
         {
           "role": "death",
@@ -73243,7 +73406,10 @@
           "role": "birth",
           "la": "Africáni",
           "it": "africano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1075929",
+          "label": "African people",
+          "country": "TN"
         }
       ],
       "date": {
@@ -77048,7 +77214,10 @@
           "role": "ministry",
           "la": "Américam Latínam",
           "it": "America Latina",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q12585",
+          "label": "Latin America",
+          "country": null
         }
       ],
       "date": {
@@ -77297,7 +77466,10 @@
           "role": "ministry",
           "la": "Morinórum",
           "it": "Morini",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q250584",
+          "label": "Morini",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -78145,7 +78317,10 @@
           "role": "death",
           "la": "campo exítii Oświęcim seu Auschwitz prope Cracóviam in Polónia",
           "it": "campo di sterminio di Auschwitz vicino a Cracovia in Polonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q7341",
+          "label": "Auschwitz",
+          "country": "PL"
         }
       ],
       "date": {
@@ -79031,7 +79206,10 @@
           "role": "mention",
           "la": "Trevirénsi",
           "it": "Treviri",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3138",
+          "label": "Trier",
+          "country": "DE"
         }
       ],
       "date": {
@@ -79694,7 +79872,10 @@
           "role": "exile",
           "la": "Sardíniam",
           "it": "Sardegna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q19740031",
+          "label": "Sardinia",
+          "country": "IT"
         },
         {
           "role": "translation",
@@ -79729,7 +79910,10 @@
           "role": "death",
           "la": "Sardíniam",
           "it": "Sardegna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q19740031",
+          "label": "Sardinia",
+          "country": "IT"
         }
       ],
       "date": {
@@ -80265,7 +80449,10 @@
           "role": "death",
           "la": "campo exítii Oświęcim seu Auschwitz prope Cracóviam in Polónia",
           "it": "campo di sterminio di Auschwitz vicino a Cracovia in Polonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q7341",
+          "label": "Auschwitz",
+          "country": "PL"
         }
       ],
       "date": {
@@ -82836,7 +83023,10 @@
           "role": "ministry",
           "la": "América Austráli",
           "it": "America Meridionale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q18",
+          "label": "South America",
+          "country": null
         },
         {
           "role": "ministry",
@@ -85188,7 +85378,10 @@
           "role": "journey",
           "la": "Thuríngiæ",
           "it": "Turingia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1205",
+          "label": "Thuringia",
+          "country": "DE"
         },
         {
           "role": "religious_life",
@@ -86530,7 +86723,10 @@
           "role": "mention",
           "la": "Nazianzénus",
           "it": "Nazianzo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1336978",
+          "label": "Nazianzus",
+          "country": "TR"
         }
       ],
       "date": {
@@ -87963,13 +88159,19 @@
           "role": "death",
           "la": "Phrýgiam",
           "it": "Frigia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16142051",
+          "label": "Phrygia",
+          "country": "TR"
         },
         {
           "role": "exile",
           "la": "Phrýgiam",
           "it": "Frigia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16142051",
+          "label": "Phrygia",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -89951,7 +90153,10 @@
           "role": "religious_life",
           "la": "Sithivénsis",
           "it": "Sithieu",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q208793",
+          "label": "Saint-Omer",
+          "country": "FR"
         }
       ],
       "date": {
@@ -92237,7 +92442,10 @@
           "role": "mention",
           "la": "Nicǽni",
           "it": "Nicea",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q217125",
+          "label": "İznik",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -97139,7 +97347,10 @@
           "role": "mention",
           "la": "Américæ",
           "it": "America",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q828",
+          "label": "Americas",
+          "country": null
         }
       ],
       "date": {
@@ -101471,7 +101682,17 @@
           "role": "ministry",
           "la": "Lotharíngia",
           "it": "Lotaringia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6673921",
+          "label": "Lotharingia",
+          "country": null,
+          "countries": [
+            "BE",
+            "DE",
+            "FR",
+            "LU",
+            "NL"
+          ]
         }
       ],
       "date": {
@@ -102557,7 +102778,10 @@
           "role": "mention",
           "la": "Lindisfarnénsis",
           "it": "Lindisfarne",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q213804",
+          "label": "Lindisfarne",
+          "country": "GB"
         }
       ]
     },
@@ -103622,7 +103846,10 @@
           "role": "ministry",
           "la": "América Meridionáli",
           "it": "America Meridionale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q18",
+          "label": "South America",
+          "country": null
         }
       ],
       "date": {
@@ -104257,7 +104484,10 @@
           "role": "religious_life",
           "la": "Thebáide",
           "it": "Tebaide",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q768515",
+          "label": "Thebaid",
+          "country": "EG"
         }
       ],
       "date": {
@@ -104321,7 +104551,10 @@
           "role": "foundation",
           "la": "Achadhbœnsis monastérii",
           "it": "monastero di Achad-Bó",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1774930",
+          "label": "Aghaboe Priory",
+          "country": "IE"
         }
       ],
       "date": {
@@ -104407,7 +104640,17 @@
           "la": "Lotharíngiæ",
           "it": "Lotaringia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q6673921",
+          "label": "Lotharingia",
+          "country": null,
+          "countries": [
+            "BE",
+            "DE",
+            "FR",
+            "LU",
+            "NL"
+          ]
         }
       ],
       "date": {
@@ -110270,7 +110513,10 @@
           "role": "exile",
           "la": "Abitínis",
           "it": "Abitine in Tunisia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q321536",
+          "label": "Abitinae",
+          "country": "TN"
         }
       ],
       "date": {
@@ -111873,7 +112119,10 @@
           "la": "Morinórum",
           "it": "Thérouanne",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q250584",
+          "label": "Morini",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -113083,7 +113332,10 @@
           "role": "religious_life",
           "la": "cœnóbii Horreénsis",
           "it": "monastero di Öhren",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21294262",
+          "label": "St. Irmine Abbey",
+          "country": "DE"
         },
         {
           "role": "mention",
@@ -114509,7 +114761,10 @@
           "it": "Sassonia",
           "source": "curated",
           "occurrence": 2,
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q3057629",
+          "label": "Old Saxony",
+          "country": "DE"
         }
       ],
       "date": {
@@ -117025,7 +117280,10 @@
           "role": "ministry",
           "la": "Alethénsis",
           "it": "Aleth",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2832864",
+          "label": "Aleth",
+          "country": "FR"
         },
         {
           "role": "death",
@@ -117818,7 +118076,10 @@
           "role": "mention",
           "la": "Thuríngiæ",
           "it": "Turingia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1205",
+          "label": "Thuringia",
+          "country": "DE"
         }
       ],
       "date": {
@@ -121007,7 +121268,10 @@
           "role": "religious_life",
           "la": "Abundántiæ",
           "it": "Abondance",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q322895",
+          "label": "Abondance",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -121312,7 +121576,20 @@
           "role": "ministry",
           "la": "Illýrico",
           "it": "terre dell’antico Illirico",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q753824",
+          "label": "Illyricum",
+          "country": null,
+          "countries": [
+            "AL",
+            "BA",
+            "HR",
+            "HU",
+            "XK",
+            "ME",
+            "RS",
+            "SI"
+          ]
         }
       ],
       "date": {
@@ -122303,9 +122580,9 @@
           "la": "Bethsáidæ",
           "it": "Betsaida",
           "source": "curated",
-          "wikidata": "Q501773",
-          "label": "Bethsaida",
-          "country": "IL"
+          "wikidata": "Q141807569",
+          "label": "el-Araj",
+          "country": null
         },
         {
           "role": "cult",
@@ -122326,7 +122603,10 @@
           "role": "ministry",
           "la": "Acháia",
           "it": "regione dell’Acaia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q204772",
+          "label": "Achaea",
+          "country": "GR"
         },
         {
           "role": "mention",
@@ -124960,7 +125240,10 @@
           "role": "birth",
           "la": "Thebáide",
           "it": "Tebaide",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q768515",
+          "label": "Thebaid",
+          "country": "EG"
         },
         {
           "role": "burial",
@@ -129256,7 +129539,10 @@
           "role": "religious_life",
           "la": "cœnóbii Horreénsis",
           "it": "monatsero di Öhren",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21294262",
+          "label": "St. Irmine Abbey",
+          "country": "DE"
         }
       ],
       "date": {
@@ -130699,7 +130985,20 @@
           "role": "ministry",
           "la": "Illýrico",
           "it": "antico Illirico",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q753824",
+          "label": "Illyricum",
+          "country": null,
+          "countries": [
+            "AL",
+            "BA",
+            "HR",
+            "HU",
+            "XK",
+            "ME",
+            "RS",
+            "SI"
+          ]
         },
         {
           "role": "ministry",
