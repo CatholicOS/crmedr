@@ -62,9 +62,11 @@ filter if the curator wants a full second look.
 
 ## Constraints
 
-- What is sent to TypeSafe stays as in the gazetteer Jev design (one Latin and one English clause per
-  card); a one-sentence eulogy is sent without its opening place, as `dates_jev` does (CodeRabbit on
-  #159).
+- What is sent to TypeSafe is exactly what the gazetteer Jev pass sent: the Latin sentence holding the
+  phrase and the English sentence matched to it, each cut to 400 characters only when longer. The state
+  is unchanged so that a change in Jev's answers comes from the new instructions alone. The curator's
+  reading of the 2026-10-18 rule (2026-10-22): one sentence may be sent even when it is the whole
+  eulogy, never more than one sentence of a eulogy, and never a day.
 - The frontend's copy of the queue (`changesets/gazetteer-review.json`, indent 1) is replaced in the
   same round, and the curator's saved decisions carry over by op id.
 - The snapshot (`scripts/snapshot-registry.mjs`) counts `jev` as identified.
