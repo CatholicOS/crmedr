@@ -118,7 +118,11 @@ within one) by probability, and let the curator pick a threshold, as for the gaz
 Jev's answers are stored without text in `data/date_estimates.json`; a pick at or above the
 threshold is written as `{from, to, source: "estimate"}` spanning that century (before Christ: `to:
 -1` alone), cut at the edition bound when there is one, and dropped when the century begins after
-the bound. Below the threshold, or "cannot tell", nothing is written. Precedence: curated, death
+the bound, with `circa` (the calibration's confident misses fall mostly within a few years of a
+century boundary: ±1 century is the real precision). Below the threshold, or "cannot tell", nothing
+is written. The calibration set is the eulogies whose persons are linked to Wikidata, the better
+known saints; the estimated ones are the rest, so their accuracy is likely lower than the
+calibration's. Precedence: curated, death
 dates, estimate, edition bound.
 
 A century is coarse, but the era-sensitive choices this serves

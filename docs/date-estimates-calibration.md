@@ -2,6 +2,8 @@
 
 Jev (`scripts/estimate_dates.py evaluate`, model jev-1.14.0, 2026-10-22) on the eulogies dated by their persons' death dates. The curator chose 0.80 (`ESTIMATE_MIN` in `scripts/extract_dates.py`). A pick is right when its century overlaps the death date.
 
+Caveats. The calibration set is the eulogies whose persons are linked to Wikidata, the better known saints; the eulogies estimated are the rest (less known saints, anonymous groups, feasts), so their accuracy is likely lower than shown here. Most confident misses fall within a few years of a century boundary (c3 for deaths in 305 and 309), so an estimate is written with `circa`: within one century (99% at 0.80) is its real precision.
+
 ```
 903 eulogies dated by death dates; 903 answered
   ≥0.30: 832 estimated (92%), 631 right (76%), 797 within one century (96%)

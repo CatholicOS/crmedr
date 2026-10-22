@@ -142,7 +142,7 @@ class BuildDatesTest(unittest.TestCase):
 
     def test_estimate_written(self):
         self.assertEqual(self.build(estimate=est("c4", 0.95))[self.ID],
-                         {"from": 301, "to": 400, "basis": "death", "source": "estimate"})
+                         {"from": 301, "to": 400, "circa": True, "basis": "death", "source": "estimate"})
 
     def test_estimate_below_threshold_ignored(self):
         self.assertEqual(self.build(bound=1630, estimate=est("c4", 0.5))[self.ID],
@@ -153,7 +153,7 @@ class BuildDatesTest(unittest.TestCase):
 
     def test_estimate_cut_at_bound(self):
         self.assertEqual(self.build(bound=1630, estimate=est("c17", 0.95))[self.ID],
-                         {"from": 1601, "to": 1630, "basis": "death", "source": "estimate"})
+                         {"from": 1601, "to": 1630, "circa": True, "basis": "death", "source": "estimate"})
 
     def test_estimate_after_bound_dropped(self):
         self.assertEqual(self.build(bound=1630, estimate=est("c18", 0.95))[self.ID],
@@ -161,7 +161,7 @@ class BuildDatesTest(unittest.TestCase):
 
     def test_bc_with_bound(self):
         self.assertEqual(self.build(bound=1630, estimate=est("bc", 0.95))[self.ID],
-                         {"to": -1, "basis": "death", "source": "estimate"})
+                         {"to": -1, "circa": True, "basis": "death", "source": "estimate"})
 
     def test_wikidata_over_estimate(self):
         self.assertEqual(self.build([304], estimate=est("c9", 0.99))[self.ID]["source"], "wikidata")

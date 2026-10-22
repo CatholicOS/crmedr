@@ -9,6 +9,7 @@
   "mr:0101-basilius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -19,6 +20,7 @@
   "mr:0101-fulgentius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -45,12 +47,14 @@
   "mr:0101-marianus-konopinski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0101-odilo": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -62,12 +66,14 @@
   "mr:0101-vincentius-maria-strambi": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0101-zdislava": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -105,18 +111,21 @@
   "mr:0102-theodorus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0103-antherus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
   "mr:0103-cyriacus-elias-chavara": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -142,6 +151,7 @@
   "mr:0103-theogenes": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -153,12 +163,14 @@
   "mr:0104-elisabeth-anna-seton": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0104-emmanuel-gonzalez-garcia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -185,12 +197,14 @@
   "mr:0104-thomas-plumtree": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0105-aemiliana": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0105-deogratias": {
@@ -206,6 +220,7 @@
   "mr:0105-ioannes-nepomucenus-neumann": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -217,6 +232,7 @@
   "mr:0106-andreas-bessette": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -228,12 +244,14 @@
   "mr:0106-carolus-de-setia": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0106-epiphania-domini": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0106-ioannes-de-ribera": {
@@ -254,6 +272,7 @@
   "mr:0106-raymundus-de-penyafort": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -275,6 +294,7 @@
   "mr:0107-iosephus-tuan": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -286,29 +306,34 @@
   "mr:0107-polyeuctus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0107-raymundus-de-penyafort": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0108-apollinaris": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0108-eduardus-waterson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0108-laurentius-giustiniani": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -345,12 +370,14 @@
   "mr:0109-alexia-le-clerc": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0109-iosephus-pawlowski-et-casimirus-grelewskus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -373,6 +400,7 @@
   "mr:0110-gregorius-nyssenus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -384,6 +412,7 @@
   "mr:0110-gulielmus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -400,6 +429,7 @@
   "mr:0110-miltiades": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -416,6 +446,7 @@
   "mr:0111-franciscus-rogaczewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -432,6 +463,7 @@
   "mr:0111-hyginus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -458,12 +490,14 @@
   "mr:0112-aelredus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0112-antonius-fournier": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -480,6 +514,7 @@
   "mr:0112-caesaria": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -496,6 +531,7 @@
   "mr:0113-aemilius-szramek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -507,24 +543,28 @@
   "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0113-gumesindus-et-servusdei": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0113-hermylius-et-stratonicus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0113-hilarius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -546,6 +586,7 @@
   "mr:0114-datius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -562,6 +603,7 @@
   "mr:0114-fulgentius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -572,12 +614,14 @@
   "mr:0114-nino": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0114-odoricus-de-portu-naonis": {
    "from": 1301,
    "to": 1400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -603,6 +647,7 @@
   "mr:0115-franciscus-fernandez-de-capillas": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -619,18 +664,21 @@
   "mr:0115-maurus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0115-nicolaus-gross": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0115-petrus-de-castronovo": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -642,6 +690,7 @@
   "mr:0116-berardus-et-socii": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -663,6 +712,7 @@
   "mr:0116-ioanna-maria-condesa-lluch": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -684,6 +734,7 @@
   "mr:0116-mela": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -695,17 +746,20 @@
   "mr:0117-antonius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0117-iulianus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0117-marcellus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -732,12 +786,14 @@
   "mr:0118-felicitas-pricet-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0118-margarita": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -753,6 +809,7 @@
   "mr:0118-successus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -764,17 +821,20 @@
   "mr:0119-bassianus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0119-germanicus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0119-ioannes": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -799,12 +859,14 @@
   "mr:0119-pontianus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0120-adalheidis-brando": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -826,6 +888,7 @@
   "mr:0120-michael-iwene-tansi": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -842,6 +905,7 @@
   "mr:0120-wulfstanus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -853,12 +917,14 @@
   "mr:0121-albanus-roe": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0121-eduardus-stransham-et-nicolaus-wheeler": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -919,6 +985,7 @@
   "mr:0122-gulielmus-iosephus-chaminade": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -944,6 +1011,7 @@
   "mr:0122-vincentius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -955,6 +1023,7 @@
   "mr:0123-andreas-chong-hwa-gyong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -971,6 +1040,7 @@
   "mr:0123-hildephonsus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -982,6 +1052,7 @@
   "mr:0124-babyla": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1028,17 +1099,20 @@
   "mr:0125-antonius-swiadek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0125-bretannion": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0125-conversio-pauli-apostoli": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0125-eleonora-girlani": {
@@ -1054,6 +1128,7 @@
   "mr:0125-gregorius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1065,6 +1140,7 @@
   "mr:0125-palaemon": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1081,12 +1157,14 @@
   "mr:0126-maria-de-la-dive": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0126-michael-kozal": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1117,6 +1195,7 @@
   "mr:0127-georgius-matulaitis": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1138,6 +1217,7 @@
   "mr:0127-iulianus-sorae": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0127-marius": {
@@ -1148,6 +1228,7 @@
   "mr:0127-rosalia-du-verdier-de-la-soriniere": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1183,12 +1264,14 @@
   "mr:0128-iulianus-maunoir": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0128-olga-bida": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1199,12 +1282,14 @@
   "mr:0129-aphraates": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0129-boleslava-maria-lament": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1216,12 +1301,14 @@
   "mr:0129-gilda-sapiens": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0129-iuventinus-et-maximinus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1258,6 +1345,7 @@
   "mr:0130-barsimaeus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1269,6 +1357,7 @@
   "mr:0130-carmela-garcia-moyon": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1280,12 +1369,14 @@
   "mr:0130-david-galvan": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0130-franciscus-taylor": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1301,6 +1392,7 @@
   "mr:0130-matthias": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1313,18 +1405,21 @@
   "mr:0130-sebastianus-valfre": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0130-sigismundus-pisarski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0130-thomas-khuong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1361,6 +1456,7 @@
   "mr:0131-marcella": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0131-metranus": {
@@ -1371,12 +1467,14 @@
   "mr:0131-victorinus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0201-aloysius-variara": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1393,6 +1491,7 @@
   "mr:0201-conorus-o-devany-et-patricius-o-lougham": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1404,6 +1503,7 @@
   "mr:0201-maria-anna-vaillot-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1420,12 +1520,14 @@
   "mr:0201-raymundus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0201-reginaldus-aurelianensis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1456,6 +1558,7 @@
   "mr:0202-catharina-de-ricci": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1472,6 +1575,7 @@
   "mr:0202-ioannes-theophanes-venard": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1483,18 +1587,21 @@
   "mr:0202-maria-catharina-kasper": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0202-maria-dominica-mantovani": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0202-praesentatio-domini": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0202-simon-de-cassia": {
@@ -1515,12 +1622,14 @@
   "mr:0203-celerinus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0203-claudina-thevenet": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1542,6 +1651,7 @@
   "mr:0203-simeon-et-anna-prophetissa": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0203-teridius-et-remedius": {
@@ -1567,6 +1677,7 @@
   "mr:0204-gilbertus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1583,6 +1694,7 @@
   "mr:0204-ioannes-speed": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1628,12 +1740,14 @@
   "mr:0205-elisabeth-canori-mora": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0205-iesu-mendez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1650,6 +1764,7 @@
   "mr:0205-plurimi-martyres-ponti": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0206-antolianus": {
@@ -1670,6 +1785,7 @@
   "mr:0206-matthaeus-correa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1680,6 +1796,7 @@
   "mr:0206-silvanus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0206-vedastus": {
@@ -1700,6 +1817,7 @@
   "mr:0207-ioanna-maria-rendu": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1721,6 +1839,7 @@
   "mr:0207-parthenius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1737,6 +1856,7 @@
   "mr:0207-riccerius": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1748,6 +1868,7 @@
   "mr:0207-thomas-sherwood": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1811,6 +1932,7 @@
   "mr:0209-plurimi-martyres-alexandriae": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1841,6 +1963,7 @@
   "mr:0210-chalarampus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1857,6 +1980,7 @@
   "mr:0210-hugo": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1883,6 +2007,7 @@
   "mr:0211-franciscus-borras-romeu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1894,6 +2019,7 @@
   "mr:0211-maria-de-lourdes": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0211-paschalis-i": {
@@ -1923,6 +2049,7 @@
   "mr:0212-humbelina": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1933,11 +2060,13 @@
   "mr:0212-meletius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0212-thomas-hemmerford-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -1959,6 +2088,7 @@
   "mr:0213-paulus-le-van-loc": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2008,6 +2138,7 @@
   "mr:0215-claudius-la-colombiere": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2063,12 +2194,14 @@
   "mr:0216-philippa-mareri": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0217-antonius-leszczewicz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2080,12 +2213,14 @@
   "mr:0217-evermodus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0217-finanus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2097,17 +2232,20 @@
   "mr:0217-flavianus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0217-lucas-belludi": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0217-mesrobus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2139,6 +2277,7 @@
   "mr:0218-gulielmus-harrington": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2150,18 +2289,21 @@
   "mr:0218-ioannes-faesulani-angelicus": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0218-ioannes-petrus-neel": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0218-ioannes-pibush": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2183,6 +2325,7 @@
   "mr:0219-iosephus-zaplata": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2223,6 +2366,7 @@
   "mr:0220-iulia-rodzinska": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2238,17 +2382,20 @@
   "mr:0220-serapion": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0221-anna-catharina-dominici": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0221-eustatius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0221-natalis-pinot": {
@@ -2269,6 +2416,7 @@
   "mr:0221-thomas-pormort": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2280,12 +2428,14 @@
   "mr:0222-didacus-carvalho": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0222-isabella": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2302,6 +2452,7 @@
   "mr:0222-papias": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2324,6 +2475,7 @@
   "mr:0223-ludovicus-mzyk": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2335,6 +2487,7 @@
   "mr:0223-nicolaus-tabouillot": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2351,6 +2504,7 @@
   "mr:0223-vincentius-frelichowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2367,6 +2521,7 @@
   "mr:0224-evetius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2378,6 +2533,7 @@
   "mr:0224-thomas-maria-fusco": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2389,6 +2545,7 @@
   "mr:0225-caesarius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2400,12 +2557,14 @@
   "mr:0225-nestor": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0225-turibius-romo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2436,6 +2595,7 @@
   "mr:0226-robertus-drury": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2467,12 +2627,14 @@
   "mr:0227-carolina-brader": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0227-gabriel-a-virgine-perdolenti": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2483,6 +2645,7 @@
   "mr:0227-maria-a-iesu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2494,6 +2657,7 @@
   "mr:0228-presbyteri-diaconi-plurimi-alexandriae": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0228-romanus": {
@@ -2504,12 +2668,14 @@
   "mr:0228-timotheus-trojanowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0229-augustus-chapdelaine": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2521,6 +2687,7 @@
   "mr:0301-agnes-cao-kuiying": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2532,6 +2699,7 @@
   "mr:0301-david": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2558,6 +2726,7 @@
   "mr:0302-agnes": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2579,18 +2748,21 @@
   "mr:0302-troadius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0303-catharina-drexel": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0303-cleonicus-et-eutropius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2617,6 +2789,7 @@
   "mr:0303-marinus-et-asterius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2628,6 +2801,7 @@
   "mr:0303-petrus-renatus-rogue": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2649,12 +2823,14 @@
   "mr:0304-christophorus-bales-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0304-miecislaus-bohatkiewicz-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2671,6 +2847,7 @@
   "mr:0305-conon": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2687,6 +2864,7 @@
   "mr:0305-lucius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -2712,6 +2890,7 @@
   "mr:0306-evagrius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0306-iulianus": {
@@ -2762,6 +2941,7 @@
   "mr:0307-ioannes-larke-et-ioannes-ireland": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2778,6 +2958,7 @@
   "mr:0307-paulus-simplex": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2789,6 +2970,7 @@
   "mr:0307-satyrus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2815,17 +2997,20 @@
   "mr:0308-ioannes-de-deo": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0308-pontius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0308-senanus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2862,18 +3047,21 @@
   "mr:0309-pacianus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0309-quadraginta-milites-sebastes": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2885,6 +3073,7 @@
   "mr:0310-caius-et-alexander": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0310-droctoveus": {
@@ -2900,6 +3089,7 @@
   "mr:0310-macarius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0310-maria-eugenia-milleret-de-brou": {
@@ -2910,6 +3100,7 @@
   "mr:0310-matthaeus-elias-nieves-del-castillo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2930,18 +3121,21 @@
   "mr:0311-dominicus-cam": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0311-eulogius": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0311-ioannes-kearney": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2953,12 +3147,14 @@
   "mr:0311-pionius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0311-sophronius": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -2990,12 +3186,14 @@
   "mr:0312-elphegus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0312-gregorius-i-magnus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -3026,12 +3224,14 @@
   "mr:0312-theophanes-chronographus": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
   "mr:0313-agnellus-de-pisis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3048,6 +3248,7 @@
   "mr:0313-francisca-trehet": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3064,6 +3265,7 @@
   "mr:0313-pientius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3080,12 +3282,14 @@
   "mr:0314-eva-montis-cornelius": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0314-iacobus-cusmano": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3102,12 +3306,14 @@
   "mr:0314-mathildis": {
    "from": 901,
    "to": 1000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0315-artemidis-zatti": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3119,6 +3325,7 @@
   "mr:0315-gulielmus-hart": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3135,6 +3342,7 @@
   "mr:0315-menignus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3156,6 +3364,7 @@
   "mr:0316-ioannes-amias-et-robertus-dalby": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3208,6 +3417,7 @@
   "mr:0317-plurimi-martyres-alexandriae": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0318-alexander": {
@@ -3217,18 +3427,21 @@
   "mr:0318-anselmus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0318-braulio": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0318-cyrillus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3245,6 +3458,7 @@
   "mr:0318-ioannes-thules-et-rogerius-wrenno": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3271,12 +3485,14 @@
   "mr:0319-marcellus-callo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0319-narcissus-turchan": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3298,6 +3514,7 @@
   "mr:0320-franciscus-a-iesu-maria-ioseph": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3332,12 +3549,14 @@
   "mr:0321-benedicta-cambiagio-frassinello": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0321-benedictus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3349,11 +3568,13 @@
   "mr:0321-martyres-alexandrini": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0321-matthaeus-flathers": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3370,12 +3591,14 @@
   "mr:0322-basilius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0322-benvenutus-scotivoli": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3392,6 +3615,7 @@
   "mr:0322-franciscus-chartier": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3402,12 +3626,14 @@
   "mr:0322-marianus-gorecki-et-bronislaus-komorowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0322-nicolaus-owen": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3419,6 +3645,7 @@
   "mr:0323-edmundus-sykes": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3435,6 +3662,7 @@
   "mr:0323-petrus-higgins": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3465,6 +3693,7 @@
   "mr:0325-aemilianus-kovc": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3475,6 +3704,7 @@
   "mr:0325-bonus-latro": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0325-dula": {
@@ -3490,12 +3720,14 @@
   "mr:0325-hilarius-januszewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0325-iacobus-bird": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3507,6 +3739,7 @@
   "mr:0325-margarita-clitherow": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3543,6 +3776,7 @@
   "mr:0326-eutychius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0326-liudgerus": {
@@ -3558,12 +3792,14 @@
   "mr:0326-petrus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0327-peregrinus-de-phalerone": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3580,18 +3816,21 @@
   "mr:0328-christophorus-wharton": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0328-cyrillus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0328-gunthramnus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -3603,6 +3842,7 @@
   "mr:0328-iosephus-sebastianus-pelczar": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3613,12 +3853,14 @@
   "mr:0328-proterius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0328-renata-maria-feillatreau": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3630,6 +3872,7 @@
   "mr:0329-armogastus-et-socii": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0329-gulielmus-tempier": {
@@ -3640,11 +3883,13 @@
   "mr:0329-ioannes-hambley": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0329-marcus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0330-antonius-daveluy-et-socii": {
@@ -3675,12 +3920,14 @@
   "mr:0330-iulius-alvarez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0330-leonardus-murialdo": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3692,6 +3939,7 @@
   "mr:0330-plurimi-martyres-constantinopolis": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0330-regulus": {
@@ -3721,11 +3969,13 @@
   "mr:0331-christophorus-robinson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0331-natalia-tulasiewicz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3742,6 +3992,7 @@
   "mr:0401-hugo-bonaevallensis": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3753,12 +4004,14 @@
   "mr:0401-ioannes-bretton": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0401-ludovicus-pavonus": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3779,6 +4032,7 @@
   "mr:0402-abundius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3795,6 +4049,7 @@
   "mr:0402-dominicus-tuoc": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3811,12 +4066,14 @@
   "mr:0402-gulielmus-apor": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0402-ioannes-paine": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3833,12 +4090,14 @@
   "mr:0403-aloysius-scrosoppi": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0403-ioannes-pinnae": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3855,12 +4114,14 @@
   "mr:0403-petrus-eduardus-dankowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0403-richardus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3872,24 +4133,28 @@
   "mr:0403-xystus-i": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0404-agathopodus-et-theodulus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0404-ambrosius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
   "mr:0404-benedictus-massarari": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3926,6 +4191,7 @@
   "mr:0405-martyres-regiarum": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3942,12 +4208,14 @@
   "mr:0406-irenaeus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0406-methodius": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3964,12 +4232,14 @@
   "mr:0406-paulus-le-bao-tinh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0406-petrina-morosini": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -3991,6 +4261,7 @@
   "mr:0407-eduardus-oldcorne-et-radulphus-ashley": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4016,6 +4287,7 @@
   "mr:0407-maria-assumpta-pallotta": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4027,6 +4299,7 @@
   "mr:0407-petrus-nguyen-van-luu": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4043,18 +4316,21 @@
   "mr:0408-augustus-czartoryskus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0408-dionysius-alexandriae": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0408-dionysius-corinthi": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4065,6 +4341,7 @@
   "mr:0408-iulia-billiart": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4086,12 +4363,14 @@
   "mr:0409-caelestina-faron": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0409-eupsychius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4128,6 +4407,7 @@
   "mr:0410-bonifatius-zukowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4154,6 +4434,7 @@
   "mr:0410-terentius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4169,6 +4450,7 @@
   "mr:0411-barsanuphius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4180,12 +4462,14 @@
   "mr:0411-gemma-galganus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0411-georgius-gervase": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4202,6 +4486,7 @@
   "mr:0411-philippus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0411-stanislaus": {
@@ -4212,6 +4497,7 @@
   "mr:0411-sympronianus-ducki": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4233,6 +4519,7 @@
   "mr:0412-david-uribe": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4254,6 +4541,7 @@
   "mr:0412-sabas-gothus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4275,30 +4563,35 @@
   "mr:0413-franciscus-dickenson-et-milo-gerard": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0413-hermenegildus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0413-ioannes-bernardus-rousseau": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0413-ioannes-lockwood-et-eduardus-catherick": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0413-martinus-i": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4315,6 +4608,7 @@
   "mr:0414-isabella-calduch-rovira": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4331,6 +4625,7 @@
   "mr:0414-petrus-gonzalez": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4371,6 +4666,7 @@
   "mr:0415-theodorus-et-pausilypus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4411,41 +4707,48 @@
   "mr:0416-maria-bernarda-soubirous": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0416-optatus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0416-petrus-delepine-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0416-turibius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0417-acacius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0417-catharina-tekakwitha": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0417-clara-gambacorti": {
    "from": 1301,
    "to": 1400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4457,6 +4760,7 @@
   "mr:0417-henricus-heath": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4508,12 +4812,14 @@
   "mr:0418-barbara-avrillot": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0418-eusebius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4530,6 +4836,7 @@
   "mr:0418-iosephus-moreau": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4541,6 +4848,7 @@
   "mr:0418-romanus-archutowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4562,6 +4870,7 @@
   "mr:0419-iacobus-duckett": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4573,6 +4882,7 @@
   "mr:0419-mappalicus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4589,30 +4899,35 @@
   "mr:0420-anastasius-pankiewicz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0420-anicetus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0420-antonius-page": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0420-dina-bosatta": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0420-franciscus-page-et-robertus-watkinson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4634,6 +4949,7 @@
   "mr:0420-mauritius-mackenraghty": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4664,6 +4980,7 @@
   "mr:0421-apollonius": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0421-conradus-de-parzham": {
@@ -4679,6 +4996,7 @@
   "mr:0421-romanus-adame": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4714,6 +5032,7 @@
   "mr:0422-maryahb": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0422-opportuna": {
@@ -4724,6 +5043,7 @@
   "mr:0422-soter": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4740,6 +5060,7 @@
   "mr:0423-aegidius-asisiensis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4797,6 +5118,7 @@
   "mr:0424-maria-cleopha-et-salome": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0424-maria-elisabeth-hesselblad": {
@@ -4812,18 +5134,21 @@
   "mr:0424-rosa-virginia-pelletier": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0424-wilfridus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0425-anianus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0425-clarentius": {
@@ -4859,12 +5184,14 @@
   "mr:0425-phoebadius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0425-robertus-anderton-et-gulielmus-marsden": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4876,6 +5203,7 @@
   "mr:0426-basileus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4887,6 +5215,7 @@
   "mr:0426-iulius-junyer-padern": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4898,6 +5227,7 @@
   "mr:0426-raphael-arnaiz-baron": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4909,6 +5239,7 @@
   "mr:0426-stanislaus-kubista": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4920,6 +5251,7 @@
   "mr:0427-laurentius-nguyen-van-huong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4931,6 +5263,7 @@
   "mr:0427-nicolaus-roland": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4947,17 +5280,20 @@
   "mr:0427-simeon": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0427-theodorus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0427-zita": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -4974,6 +5310,7 @@
   "mr:0428-iosephus-cebula": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5039,6 +5376,7 @@
   "mr:0429-tychicus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0430-adiutor": {
@@ -5059,6 +5397,7 @@
   "mr:0430-earconwaldus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5075,12 +5414,14 @@
   "mr:0430-iosephus-benedictus-cottolengo": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0430-iosephus-tuan": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5092,6 +5433,7 @@
   "mr:0430-maria-ab-incarnatione": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5103,12 +5445,14 @@
   "mr:0430-petrus-levita": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0430-pius-v": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0430-pomponius": {
@@ -5139,34 +5483,40 @@
   "mr:0501-augustinus-schoeffler": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0501-clemens-septyckyj": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0501-herminius-philippus-pampuri": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0501-ieremias-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0501-ioannes-ludovicus-bonnard": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0501-ioseph": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0501-orientius": {
@@ -5201,18 +5551,21 @@
   "mr:0502-antoninus": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0502-athanasius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0502-boleslaus-strzelecki": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5224,12 +5577,14 @@
   "mr:0502-gulielmus-tirry": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0502-hesperus-et-zoes": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5241,6 +5596,7 @@
   "mr:0502-iosephus-nguyen-van-luu": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5257,6 +5613,7 @@
   "mr:0503-aemilia-bicchieri": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5283,12 +5640,14 @@
   "mr:0503-philippus-et-iacobus-apostoli": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0503-theodosius": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5320,6 +5679,7 @@
   "mr:0504-silvanus-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5331,12 +5691,14 @@
   "mr:0505-avertinus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0505-britto": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5353,12 +5715,14 @@
   "mr:0505-godehardus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0505-gregorius-frackowiak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5394,6 +5758,7 @@
   "mr:0506-benedicta": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5405,24 +5770,28 @@
   "mr:0506-eduardus-jones-et-antonius-middleton": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0506-franciscus-de-montmorency-laval": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0506-henricus-kaczorowski-et-casimirus-gostynski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0506-lucius-cyrenaeus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0506-marianus-et-iacobus": {
@@ -5477,6 +5846,7 @@
   "mr:0508-antonius-bajewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5508,6 +5878,7 @@
   "mr:0508-victor": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0508-wiro": {
@@ -5523,6 +5894,7 @@
   "mr:0509-carolina-gerhardinger": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5543,6 +5915,7 @@
   "mr:0509-iosephus-do-quang-hien": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5558,6 +5931,7 @@
   "mr:0509-stephanus-grelewskus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5584,6 +5958,7 @@
   "mr:0510-comgallus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5600,11 +5975,13 @@
   "mr:0510-ioannes-de-abula": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0510-iob": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0510-iv-et-v": {
@@ -5614,6 +5991,7 @@
   "mr:0510-ivanus-merz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5640,24 +6018,28 @@
   "mr:0511-ioannes-rochester-et-iacobus-walworth": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0511-maiolus": {
    "from": 901,
    "to": 1000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0511-mamertus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0511-matthaeus-le-van-gam": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5679,6 +6061,7 @@
   "mr:0512-germanus": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5710,12 +6093,14 @@
   "mr:0512-rictrudis": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0513-andreas-hubertus-fournet": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5727,6 +6112,7 @@
   "mr:0513-maria-de-fatima": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0513-servatius": {
@@ -5751,18 +6137,21 @@
   "mr:0514-maria-dominica-mazzarello": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0514-matthias-apostolus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0514-maximus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5789,12 +6178,14 @@
   "mr:0515-achilleus-thaumaturgus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0515-caleb": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5821,18 +6212,21 @@
   "mr:0516-abda-et-ebediesus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0516-andreas-bobola": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0516-brendanus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5853,6 +6247,7 @@
   "mr:0516-michael-wozniak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5868,6 +6263,7 @@
   "mr:0516-quadraginta-quattuor-monachi-palaestinae": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5884,6 +6280,7 @@
   "mr:0516-vitalis-vladimirus-bajrak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5905,6 +6302,7 @@
   "mr:0517-ivanus-ziatyk": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5930,6 +6328,7 @@
   "mr:0518-ericus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5941,6 +6340,7 @@
   "mr:0518-ioannes-i": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5952,12 +6352,14 @@
   "mr:0518-martinus-oprzadek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0518-stanislaus-kubski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -5984,12 +6386,14 @@
   "mr:0519-ioannes-ludovicus-loir": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0519-iosephus-czempiel": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6001,12 +6405,14 @@
   "mr:0519-parthenius-et-calogerus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0519-petrus-caelestinus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6048,6 +6454,7 @@
   "mr:0520-luciferus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6074,12 +6481,14 @@
   "mr:0521-carolus-eugenius-de-mazenod": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0521-christophorus-magallanes-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6101,6 +6510,7 @@
   "mr:0521-martyres-alexandriae": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0521-polyeuctus": {
@@ -6179,18 +6589,21 @@
   "mr:0523-iosephus-kurzawa-et-vincentius-matuszewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0523-lucius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0523-martyres-cappadociae": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0523-martyres-mesopotamiae": {
@@ -6220,6 +6633,7 @@
   "mr:0524-ioanna": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0524-ioannes-de-prado": {
@@ -6230,6 +6644,7 @@
   "mr:0524-manaen": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0524-simeon-stylita": {
@@ -6240,11 +6655,13 @@
   "mr:0524-triginta-octo-martyres-philippopolis": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0524-vincentius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6261,23 +6678,27 @@
   "mr:0525-beda-venerabilis": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0525-christophorus-magallanes-et-augustinus-caloca": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0525-dionysius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0525-dionysius-ssebuggwawo": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6294,6 +6715,7 @@
   "mr:0525-magdalena-sophia-barat": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6305,6 +6727,7 @@
   "mr:0525-petrus-doan-van-van": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6316,6 +6739,7 @@
   "mr:0526-andreas-kaggwa": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6327,12 +6751,14 @@
   "mr:0526-desiderius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0526-eleutherius": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6354,6 +6780,7 @@
   "mr:0526-maria-anna-a-iesu-de-paredes": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6376,6 +6803,7 @@
   "mr:0527-athanasius-bazzekuketta": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6396,6 +6824,7 @@
   "mr:0527-edmundus-duke-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6412,6 +6841,7 @@
   "mr:0528-antonius-iulianus-nowowiejski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6428,6 +6858,7 @@
   "mr:0528-heliconidis": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6439,6 +6870,7 @@
   "mr:0528-ladislaus-demski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6450,18 +6882,21 @@
   "mr:0528-margarita-pole": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0528-paulus-hanh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0528-thomas-ford-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6473,6 +6908,7 @@
   "mr:0529-exsuperantius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6494,18 +6930,21 @@
   "mr:0529-maximinus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0529-richardus-thirkeld": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0529-senator": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6522,6 +6961,7 @@
   "mr:0530-basilius-et-emmelia": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6543,6 +6983,7 @@
   "mr:0530-gulielmus-scott-et-richardus-newport": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6554,30 +6995,35 @@
   "mr:0530-ioanna": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0530-iosephus-marello": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0530-lucas-kirby": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0530-matthias-kalemba-mulumba": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0530-otho-neururer": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6594,6 +7040,7 @@
   "mr:0531-nicolaus-barre": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6605,6 +7052,7 @@
   "mr:0531-robertus-thorpe-et-thomas-watkinson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6615,6 +7063,7 @@
   "mr:0601-alphonsus-navarrete-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6631,6 +7080,7 @@
   "mr:0601-chariton-et-socii": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6647,6 +7097,7 @@
   "mr:0601-ioannes-baptista-scalabrinus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6668,12 +7119,14 @@
   "mr:0601-ischyrion-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0601-iustinus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6690,6 +7143,7 @@
   "mr:0602-dominicus-ninh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6711,36 +7165,42 @@
   "mr:0602-nicephorus": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0602-nicolaus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0602-pothinus-et-socii": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0602-sadochus-et-socii": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0603-andreas-caccioli": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0603-caecilius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6757,6 +7217,7 @@
   "mr:0603-coemgenus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6768,6 +7229,7 @@
   "mr:0603-franciscus-ingleby": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6804,12 +7266,14 @@
   "mr:0603-petrus-dong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0604-antonius-zawistowski-et-stanislaus-starowieyski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6821,6 +7285,7 @@
   "mr:0604-metrophanes": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6831,6 +7296,7 @@
   "mr:0604-petrocus-cambriensis": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6847,24 +7313,28 @@
   "mr:0605-dominicus-toai-et-dominicus-huyen": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0605-dorotheus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0605-eobanus-et-socii": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0605-lucas-vu-ba-loan": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6901,6 +7371,7 @@
   "mr:0606-ceratius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6917,18 +7388,21 @@
   "mr:0606-gilbertus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0606-gulielmus-greenwood": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0606-innocentius-guz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6945,12 +7419,14 @@
   "mr:0606-petrus-dung-et-petrus-thuan": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0606-raphael-guizar-valencia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6967,6 +7443,7 @@
   "mr:0607-maria-teresia-de-soubiran-la-louviere": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -6978,6 +7455,7 @@
   "mr:0607-robertus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7004,6 +7482,7 @@
   "mr:0608-ioannes-davy": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7015,6 +7494,7 @@
   "mr:0608-maria-teresia-chiramel-mankidiyan": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7047,6 +7527,7 @@
   "mr:0609-ephraem": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7073,6 +7554,7 @@
   "mr:0609-robertus-salt": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7094,24 +7576,28 @@
   "mr:0610-ioannes-dominicus": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0610-marcus-antonius-durando": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0610-thomas-green-et-gualterius-pierson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0611-barnabas": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7138,6 +7624,7 @@
   "mr:0611-maximus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7164,6 +7651,7 @@
   "mr:0612-gaspar-bertonus": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7190,6 +7678,7 @@
   "mr:0613-augustinus-phan-viet-huy-et-nicolaus-bui-viet-the": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7216,18 +7705,21 @@
   "mr:0613-gerardus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0613-maria-anna-biernacka": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0613-ragnebertus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7253,6 +7745,7 @@
   "mr:0614-methodius": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7268,6 +7761,7 @@
   },
   "mr:0615-amos-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0615-benildis": {
@@ -7303,12 +7797,14 @@
   "mr:0615-thomas-scryven": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0615-vitus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7330,6 +7826,7 @@
   "mr:0616-dominicus-nguyen-et-socii": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7356,12 +7853,14 @@
   "mr:0616-thomas-reding": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0616-tychon": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7393,6 +7892,7 @@
   "mr:0617-petrus-da": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7444,6 +7944,7 @@
   "mr:0619-childomarca": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7469,18 +7970,21 @@
   "mr:0619-sebastianus-newdigate-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0620-dermitius-o-hurley": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0620-margarita-ball": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0620-margarita-ebner": {
@@ -7495,6 +7999,7 @@
   "mr:0620-thomas-whitbread-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7521,6 +8026,7 @@
   "mr:0622-eusebius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7550,6 +8056,7 @@
   "mr:0622-paulinus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7570,6 +8077,7 @@
   "mr:0623-thomas-garnet": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7631,6 +8139,7 @@
   "mr:0625-maria-lhuillier": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7652,12 +8161,14 @@
   "mr:0626-andreas-iscak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0626-anthelmus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7673,18 +8184,21 @@
   "mr:0626-iosephus-maria-escriva-de-balaguer": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0626-iosephus-maria-robles": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0626-magdalena-fontaine-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7696,6 +8210,7 @@
   "mr:0626-nicolaus-konrad-et-vladimirus-pryjma": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7722,6 +8237,7 @@
   "mr:0627-cyrillus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7733,6 +8249,7 @@
   "mr:0627-samson": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7749,6 +8266,7 @@
   "mr:0628-argimirus": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7760,6 +8278,7 @@
   "mr:0628-irenaeus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7776,18 +8295,21 @@
   "mr:0628-plutarchus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0628-severianus-baranyk-et-ioachim-senkivskyj": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0628-vincentia-gerosa": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7804,6 +8326,7 @@
   "mr:0629-petrus-et-paulus-apostoli": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7815,18 +8338,21 @@
   "mr:0630-basilides": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0630-basilius-velyckovskyj": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0630-ladislaus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7843,12 +8369,14 @@
   "mr:0630-philippus-powell": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0630-protomartyres-sanctae-romanae-ecclesiae": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7865,16 +8393,19 @@
   "mr:0630-vincentius-do-yen": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0630-zeno-kovalyk": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0701-aaron-sacerdos": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0701-domitianus": {
@@ -7890,24 +8421,28 @@
   "mr:0701-georgius-beesley-et-montfordus-scott": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0701-ioannes-nepomucenus-chrzan": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0701-iustinus-orona-et-atilanus-cruz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7929,6 +8464,7 @@
   "mr:0701-thomas-maxfield": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7964,6 +8500,7 @@
   "mr:0703-anatolius-constantinopoli": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7979,6 +8516,7 @@
   "mr:0703-iosephus-nguyen-dinh-uyen": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -7999,6 +8537,7 @@
   "mr:0703-philippus-phan-van-minh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8030,12 +8569,14 @@
   "mr:0704-gulielmus-andleby-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0704-iosephus-kowalski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8080,18 +8621,21 @@
   "mr:0705-georgius-nichols-et-richardus-yaxley": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0705-matthaeus-lambert-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0705-teresia-chen-jinxie-et-rosa-chen-aixie": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8103,6 +8647,7 @@
   "mr:0706-elias-desgardin": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8124,6 +8669,7 @@
   "mr:0706-nazaria-a-sancta-teresia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8149,6 +8695,7 @@
   "mr:0707-aedilburga": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8165,18 +8712,21 @@
   "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0707-hedda": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0707-marcus-ji-tianxiang": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8202,6 +8752,7 @@
   "mr:0707-rogerius-dickinson-et-radulphus-milner": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8213,6 +8764,7 @@
   "mr:0708-aquila-et-prisca": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0708-eugenius-iii": {
@@ -8233,12 +8785,14 @@
   "mr:0708-kilianus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0708-monachi-abrahamitae": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8260,6 +8814,7 @@
   "mr:0709-fidel-chijnacki": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8271,12 +8826,14 @@
   "mr:0709-hadrianus-fortescue": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0709-ioachim-he-kaizhi": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8288,12 +8845,14 @@
   "mr:0709-nicolaus-pieck-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0709-paulina-a-corde-iesu-agonizante": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8330,6 +8889,7 @@
   "mr:0710-canutus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8351,12 +8911,14 @@
   "mr:0710-leontius-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8373,6 +8935,7 @@
   "mr:0711-benedictus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0711-marcianus": {
@@ -8383,6 +8946,7 @@
   "mr:0711-olga": {
    "from": 901,
    "to": 1000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8394,6 +8958,7 @@
   "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8404,18 +8969,21 @@
   "mr:0712-agnes-le-thi-thanh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0712-clemens-ignatius-delgado-cebrian": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0712-david-gunston": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8427,6 +8995,7 @@
   "mr:0712-ioannes-gualbertus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8443,6 +9012,7 @@
   "mr:0712-petrus-khanh": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8464,6 +9034,7 @@
   "mr:0713-emmanuel-le-van-phung": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8474,6 +9045,7 @@
   "mr:0713-eugenius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8495,17 +9067,20 @@
   "mr:0713-serapion": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0713-sila": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0713-thomas-tunstal": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8547,6 +9122,7 @@
   "mr:0714-richardus-langhorne": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8563,6 +9139,7 @@
   "mr:0715-andreas-nguyen-kim-thong-nam": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8574,6 +9151,7 @@
   "mr:0715-antonius-beszta-borowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8599,24 +9177,28 @@
   "mr:0715-iacobus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0715-ignatius-de-azevedo-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0715-michael-bernardus-marchand": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0715-petrus-nguyen-ba-tuan": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8638,6 +9220,7 @@
   "mr:0716-ioannes-sugar-et-robertus-grissold": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8653,6 +9236,7 @@
   "mr:0716-nicolaus-savouret-et-claudius-beguignot": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8694,12 +9278,14 @@
   "mr:0717-marcellina": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8711,6 +9297,7 @@
   "mr:0717-petrus-gojdich": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8742,6 +9329,7 @@
   "mr:0718-ioannes-baptista-de-bruxelles": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8753,12 +9341,14 @@
   "mr:0718-olga-mackiv": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0718-philastrius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8779,6 +9369,7 @@
   "mr:0718-theodosia": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8800,6 +9391,7 @@
   "mr:0719-epaphra": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0719-ioannes-plessington": {
@@ -8810,12 +9402,14 @@
   "mr:0719-macedonius-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0719-macrina": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8831,17 +9425,20 @@
   },
   "mr:0720-elias-thesbita-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0720-frumentius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0720-ioseph": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0720-iosephus-maria-diaz-sanjurjo": {
@@ -8872,6 +9469,7 @@
   "mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8893,6 +9491,7 @@
   "mr:0721-laurentius-de-brundusio": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0721-praxedes": {
@@ -8912,6 +9511,7 @@
   "mr:0722-anastasius": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8933,18 +9533,21 @@
   "mr:0722-laurentius-de-brundusio": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0722-maria-magdalena": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0722-maria-wang-lizhus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -8985,22 +9588,26 @@
   "mr:0723-christinus-gondek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0723-emmanuel-perez-gimenez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0723-ezechiel-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0723-ioannes-cassianus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9012,12 +9619,14 @@
   "mr:0723-severus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0723-vincentius-diez-tejerina-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9029,6 +9638,7 @@
   "mr:0724-balduinus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9040,6 +9650,7 @@
   "mr:0724-dominicus-mazzarello": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9051,6 +9662,7 @@
   "mr:0724-iosephus-fernandez": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9062,17 +9674,20 @@
   "mr:0724-sarbelius-makhluf": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0724-xaverius-bordas-piferrer": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0725-carolus-rubio-alvarez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9084,18 +9699,21 @@
   "mr:0725-cucuphas": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0725-deogratias-palacios-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0725-iacobus-apostolus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9112,12 +9730,14 @@
   "mr:0725-maria-teresia-kowalska": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0725-michael-ludovicus-brulard": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9129,6 +9749,7 @@
   "mr:0725-petrus-a-corde-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9140,6 +9761,7 @@
   "mr:0725-valentina-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9151,23 +9773,27 @@
   "mr:0726-eduardus-thwing-et-robertus-nutter": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0726-erastus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0726-georgius-preca": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0726-gulielmus-webster": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9184,12 +9810,14 @@
   "mr:0726-ioannes-ingram": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9206,6 +9834,7 @@
   "mr:0726-vincentius-pinilla-et-emmanuel-martin-sierra": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9222,6 +9851,7 @@
   "mr:0727-ecclesius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9233,18 +9863,21 @@
   "mr:0727-gulielmus-davies": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0727-ioachim-vilanova-camallonga": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0727-maria-clemens-a-iesu-crucifixo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9256,6 +9889,7 @@
   "mr:0727-modestus-vegas-vegas": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9267,12 +9901,14 @@
   "mr:0727-philippus-hernandez-martinez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0727-robertus-sutton": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9283,35 +9919,41 @@
   "mr:0727-simeon": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0728-acacius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0728-anna-muttathupadathu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0728-martyres-thebaidis": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0728-melchior-garcia-sanpedro": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9328,6 +9970,7 @@
   "mr:0728-prochorius-et-socii": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0728-samson": {
@@ -9358,12 +10001,14 @@
   "mr:0729-ioannes-baptista-egozcuezabal-aldaz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0729-iosephus-de-calasanz-marques": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9375,23 +10020,27 @@
   "mr:0729-lazarus-et-maria": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0729-lupus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0729-martha": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0729-olavus": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9418,6 +10067,7 @@
   "mr:0730-eduardus-powell-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9439,12 +10089,14 @@
   "mr:0730-maxima-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0730-paulus-corres-diaz-de-cerio-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9455,6 +10107,7 @@
   "mr:0730-sergius-cid-pazo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9466,6 +10119,7 @@
   "mr:0731-caecilia-schelingova": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9482,12 +10136,14 @@
   "mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0731-everardus-hanse": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9499,12 +10155,14 @@
   "mr:0731-germanus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0731-iacobus-buch-canals": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9516,24 +10174,28 @@
   "mr:0731-ioannes-columbini": {
    "from": 1301,
    "to": 1400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0731-ioannes-franciscus-jarrige-de-la-morelie-du-breuil": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0731-iustinus-de-iacobis": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0731-michael-ozieblowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9545,6 +10207,7 @@
   "mr:0731-petrus-doan-cong-quy-et-emmanuel-phung": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9561,6 +10224,7 @@
   "mr:0801-alexius-sobaszek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9572,6 +10236,7 @@
   "mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9588,6 +10253,7 @@
   "mr:0801-felix": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9603,11 +10269,13 @@
   },
   "mr:0801-septem-fratres-martyres-antiochiae": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0801-thomas-welbourne": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9619,11 +10287,13 @@
   "mr:0802-eusebius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0802-franciscus-calvo-burillo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9639,6 +10309,7 @@
   "mr:0802-philippus-a-iesu-munarriz-azcona-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9654,12 +10325,14 @@
   "mr:0802-zephyrinus-gimenez-malla": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9676,6 +10349,7 @@
   "mr:0803-franciscus-bandres-sanchez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9687,11 +10361,13 @@
   "mr:0804-aristarchus-thessalonicensis": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0804-caecilia": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9707,6 +10383,7 @@
   "mr:0804-gulielmus-horne": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9718,6 +10395,7 @@
   "mr:0804-ia": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9729,6 +10407,7 @@
   "mr:0804-iosephus-batalla-parramon-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9745,6 +10424,7 @@
   "mr:0805-dedicatio-basilicae-sanctae-mariae": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "dedication",
    "source": "estimate"
   },
@@ -9766,12 +10446,14 @@
   "mr:0805-nonna": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0805-oswaldus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9783,6 +10465,7 @@
   "mr:0805-petrus-michael-noel": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9799,6 +10482,7 @@
   "mr:0806-hormisda": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -9810,12 +10494,14 @@
   "mr:0806-thaddaeus-dulny": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0806-transfiguratio-domini": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0806-xystus-ii": {
@@ -9851,18 +10537,21 @@
   "mr:0807-ioannes-woodcock-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0807-nicolaus-postgate": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0807-victricius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9888,6 +10577,7 @@
   "mr:0808-dominicus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0808-eusebius": {
@@ -9908,12 +10598,14 @@
   "mr:0808-ioannes-fingley": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0808-maria-a-iesu-infante-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9930,6 +10622,7 @@
   "mr:0808-vladimirus-laskowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9956,11 +10649,13 @@
   "mr:0809-martyres-constantinopolis": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0809-richardus-bere": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9972,12 +10667,14 @@
   "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -9989,6 +10686,7 @@
   "mr:0810-ioannes-martorell-soria": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10005,6 +10703,7 @@
   "mr:0810-martyres-alexandriae": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0811-alexander-carbonarius": {
@@ -10030,30 +10729,35 @@
   "mr:0811-iacobus-rhem": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0811-ioannes-sandys-et-stephanus-rowsham": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0811-mauritius-tornay": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0811-michael-domingo-cendra": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0811-raphael-alonso-gutierrez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10084,12 +10788,14 @@
   "mr:0812-antonius-perulles-estivill": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0812-atilanus-argueso-gonzalez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10101,6 +10807,7 @@
   "mr:0812-carolus-meehan": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10112,6 +10819,7 @@
   "mr:0812-florianus-stepniak-et-iosephus-straszewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10123,6 +10831,7 @@
   "mr:0812-iacobus-do-mai-nam-et-socii": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10134,6 +10843,7 @@
   "mr:0812-ioanna-francisca-fremiot-de-chantal": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0812-porcarius-et-socii": {
@@ -10164,12 +10874,14 @@
   "mr:0813-iacobus-gapp": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0813-ioannes-agramunt": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10181,12 +10893,14 @@
   "mr:0813-iosephus-bonet-nadal": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0813-marcus-de-aviano": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10198,12 +10912,14 @@
   "mr:0813-modestus-garcia-martus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0813-petrus-gabilhaud": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10215,6 +10931,7 @@
   "mr:0813-pontianus-et-hippolytus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10241,6 +10958,7 @@
   "mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10262,12 +10980,14 @@
   "mr:0814-maximilianus-maria-kolbe": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0814-octingenti-martyres-hydrunti": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10279,6 +10999,7 @@
   "mr:0815-aloysius-batis-sainz-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10294,35 +11015,41 @@
   "mr:0815-assumptio-beatae-mariae-virginis": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0815-augustinus-hurtado-soler": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0815-carmelus-sastre-sastre": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0815-elvira-moragas-cantarero": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0815-hyacinthus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0815-iacobus-bonet-nadal": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10334,6 +11061,7 @@
   "mr:0815-isidorus-bakanja": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10384,12 +11112,14 @@
   "mr:0816-ioannes-baptista-menestrel": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0816-iosephus-maria-sanchis-mompo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10405,6 +11135,7 @@
   "mr:0817-beatrix-da-silva-meneses": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10421,6 +11152,7 @@
   "mr:0817-iacobus-kyuhei-gorobioye-tomonaga-et-michael-kurobioye": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10432,12 +11164,14 @@
   "mr:0817-mamas": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0817-myron": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10449,6 +11183,7 @@
   "mr:0818-albertus-hurtado-cruchaga": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10465,6 +11200,7 @@
   "mr:0818-franciscus-arias-martin": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10491,6 +11227,7 @@
   "mr:0818-martinus-martinez-pascual": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10502,12 +11239,14 @@
   "mr:0818-vincentius-maria-izquierdo-alcon": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0819-andreas-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10519,24 +11258,28 @@
   "mr:0819-ezechiel-moreno-diaz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0819-franciscus-ibanez-ibanez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0819-guerricus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0819-hugo-green": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10563,6 +11306,7 @@
   "mr:0819-thomas-sitjar-fortia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10589,6 +11333,7 @@
   "mr:0820-ladislaus-maczkowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10610,6 +11355,7 @@
   "mr:0820-matthias-cardona": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10621,6 +11367,7 @@
   "mr:0820-philibertus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10631,6 +11378,7 @@
   },
   "mr:0820-samuel-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0821-agathonicus-et-zoticus": {
@@ -10645,6 +11393,7 @@
   "mr:0821-bruno-zembol": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10661,6 +11410,7 @@
   "mr:0821-iosephus-dang-dinh-vien": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10686,24 +11436,28 @@
   "mr:0821-raymundus-peiro-victori": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0821-salvator-estrugo-solves": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0821-sidonius-apollinaris": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0822-gulielmus-lacey-et-richardus-kirkman": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10720,12 +11474,14 @@
   "mr:0822-philippus-benizi": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0822-simeon-lukac": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10737,6 +11493,7 @@
   "mr:0822-thomas-percy": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10748,12 +11505,14 @@
   "mr:0823-claudius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0823-constantinus-carbonell-sempere-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10770,12 +11529,14 @@
   "mr:0823-florentinus-perez-romero-et-urbanus-gil-saez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0823-franciscus-dachtera": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10787,12 +11548,14 @@
   "mr:0823-marianus-garcia-mendez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10803,12 +11566,14 @@
   "mr:0824-aemilia-de-vialar": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0824-andreas-fardeau": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10820,18 +11585,21 @@
   "mr:0824-bartholomaeus-apostolus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0824-ceslaus-jozwiak-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0824-georgius-limniota": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10843,6 +11611,7 @@
   "mr:0824-maximianus-binkiewicz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10859,6 +11628,7 @@
   "mr:0825-aloysius-urbano-lanaspa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10885,6 +11655,7 @@
   "mr:0825-gregorius": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10896,18 +11667,21 @@
   "mr:0825-ludovicus-nonus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0825-maria-a-transitu-iesu-sacramenti": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0825-mena": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10919,6 +11693,7 @@
   "mr:0825-thomas-cantelupe": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10930,6 +11705,7 @@
   "mr:0826-aloysius-valls-matamales": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10941,6 +11717,7 @@
   "mr:0826-felix-vivet-trabal": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10952,34 +11729,40 @@
   "mr:0826-ioanna-elisabeth-bichier": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0826-leucadia-harasymiv": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0826-maria-baouardy": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0826-maria-beltrame-quattrocchus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0826-melchisedech-rex-et-sacerdos": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0826-teresia-jornet-ibars": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -10991,6 +11774,7 @@
   "mr:0827-amadeus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11032,12 +11816,14 @@
   "mr:0827-maria-a-columna-izquierdo-albero": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0827-monica": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11054,6 +11840,7 @@
   "mr:0827-rogerius-cadwallador": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11065,30 +11852,35 @@
   "mr:0828-alexander": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0828-alphonsus-maria-mazurek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0828-augustinus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0828-carolus-arnaldus-hanus": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0828-edmundus-arrowsmith": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11110,12 +11902,14 @@
   "mr:0828-ioachima-de-vedruna": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11166,18 +11960,21 @@
   "mr:0829-dominicus-jedrzejewski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0829-edmundus-ignatius-rice": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0829-franciscus-monzon-romeo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11189,18 +11986,21 @@
   "mr:0829-ioannes-baptista": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0829-ioannina-szymkowiak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0829-ludovicus-vulfilacius-huppy": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11212,6 +12012,7 @@
   "mr:0829-richardus-herst": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11222,11 +12023,13 @@
   "mr:0829-sebbus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0829-teresia-bracco": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11238,6 +12041,7 @@
   "mr:0830-alaphridus-hildephonsus-schuster": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11269,6 +12073,7 @@
   "mr:0830-margarita-ward": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11285,6 +12090,7 @@
   "mr:0830-petrus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11295,41 +12101,48 @@
   "mr:0830-vincentius-cabanes-badenas": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0831-aidanus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0831-aristidis": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0831-ioseph-de-arimathaea-et-nicodemus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0831-isidorus-primo-rodriguez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0831-paulinus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0831-raymundus-nonnatus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11341,6 +12154,7 @@
   "mr:0901-alphonsus-sebastia-vinals": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11351,6 +12165,7 @@
   },
   "mr:0901-iosue": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0901-lupus": {
@@ -11361,12 +12176,14 @@
   "mr:0901-michael-roca-huguet-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0901-petrus-rivera-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11413,6 +12230,7 @@
   "mr:0902-habib": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11493,11 +12311,13 @@
   "mr:0903-phoebes": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0903-rimagilus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11514,18 +12334,21 @@
   "mr:0904-franciscus-sendra-ivars": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0904-iosephus-bieda-grau": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0904-iosephus-paschalis-carda-saporta": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11536,6 +12359,7 @@
   },
   "mr:0904-moyses-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0904-rosalia": {
@@ -11556,6 +12380,7 @@
   "mr:0905-gulielmus-browne": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11577,18 +12402,21 @@
   "mr:0905-urbanus-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0906-didacus-llorca-llopis": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0906-donatianus-et-socii": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0906-eleutherius": {
@@ -11599,21 +12427,25 @@
   "mr:0906-onesiphorus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0906-paschalis-torres-lloret": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0906-zacharias-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0907-ascensio-a-sancto-iosepho-calasanz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11625,6 +12457,7 @@
   "mr:0907-eugenia-picco": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11636,24 +12469,28 @@
   "mr:0907-ioannes-baptista-mazzucconi": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0907-ioannes-laudensis": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0907-marcus-crisini-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0907-memorius-et-socii": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11675,12 +12512,14 @@
   "mr:0908-adamus-bargielski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0908-bonifatius-rodriguez-gonzalez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11701,18 +12540,21 @@
   "mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0908-ladislaus-bladzinski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0908-marinus-blanes-giner": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11723,6 +12565,7 @@
   "mr:0908-paschalis-fortuno-almela": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11744,18 +12587,21 @@
   "mr:0908-thomas-de-villanova": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0908-thomas-palaser-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0909-ciaranus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11767,6 +12613,7 @@
   "mr:0909-georgius-douglas": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11783,6 +12630,7 @@
   "mr:0909-iacobus-desideratus-laval": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11803,17 +12651,20 @@
   "mr:0910-ambrosius-eduardus-barlow": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0910-nemesianus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0910-nemesius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11825,6 +12676,7 @@
   "mr:0910-pulcheria": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11846,12 +12698,14 @@
   "mr:0911-franciscus-mayaudon": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0911-ioannes-gabriel-perboyre": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11872,6 +12726,7 @@
   "mr:0911-petrus-de-alcantara": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11917,18 +12772,21 @@
   "mr:0913-benvenutus-villalon-acebron": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0913-dedicatio-basilicarum-hierosolymis": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "dedication",
    "source": "estimate"
   },
   "mr:0913-iulianus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -11950,6 +12808,7 @@
   "mr:0914-cornelius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -11990,6 +12849,7 @@
   "mr:0915-camillus-costanzo": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12006,23 +12866,27 @@
   "mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0915-ladislaus-miegon": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0915-maria-perdolens": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0915-nicetas-gothus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12034,12 +12898,14 @@
   "mr:0915-paschalis-penades-jornet": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0915-paulus-manna": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12051,6 +12917,7 @@
   "mr:0915-straton-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12067,17 +12934,20 @@
   "mr:0916-andreas-kim-tae-gon": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0916-cornelius-et-cyprianus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0916-dominicus-shobioye-et-michael-timonoya": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12094,6 +12964,7 @@
   "mr:0916-ignatius-casanovas": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12105,6 +12976,7 @@
   "mr:0916-ludmilla": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12125,6 +12997,7 @@
   "mr:0916-salvator-ferrer-cardet-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12146,6 +13019,7 @@
   "mr:0917-emmanuel-nguyen-van-trieu": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12182,12 +13056,14 @@
   "mr:0917-sigismundus-felix-felinski": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0917-sigismundus-sajna": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12199,18 +13075,21 @@
   "mr:0918-carolus-erana-guruceta": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0918-david-okelo-et-gildus-irwa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0918-dominicus-trach": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12242,18 +13121,21 @@
   "mr:0918-iosephus-kut": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0918-salvator-chulia-ferrandis-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0919-carolus-hyon-song-mun": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12270,6 +13152,7 @@
   "mr:0919-hyacinthus-hoyuelos-gonzalez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12281,6 +13164,7 @@
   "mr:0919-maria-a-iesu-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12312,6 +13196,7 @@
   "mr:0919-theodorus": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12333,12 +13218,14 @@
   "mr:0920-hypatius-et-asianus": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0920-ioannes-carolus-cornay": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12355,6 +13242,7 @@
   "mr:0920-thomas-johnson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12366,6 +13254,7 @@
   "mr:0921-eusebius-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12376,6 +13265,7 @@
   },
   "mr:0921-ionas-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0921-laurentius-imbert-et-socii": {
@@ -12386,6 +13276,7 @@
   "mr:0921-matthaeus-apostolus-et-evangelista": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12402,17 +13293,20 @@
   "mr:0921-quadratus": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0922-basilla": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -12433,12 +13327,14 @@
   "mr:0922-germanus-gozalvo-andreu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0922-iosephus-marchandon": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12450,18 +13346,21 @@
   "mr:0922-mauritius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0922-otho": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0922-paulus-chong-ha-sang-et-augustinus-yu-chin-gil": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12483,6 +13382,7 @@
   "mr:0923-christophorus-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12493,12 +13393,14 @@
   "mr:0923-gulielmus-way": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0923-iosephus-stanek": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12509,6 +13411,7 @@
   "mr:0923-maria-aemilia-tavernier": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12520,6 +13423,7 @@
   "mr:0923-sophia-ximenez-ximenez-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12531,6 +13435,7 @@
   "mr:0923-vincentius-ballester-far": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12546,6 +13451,7 @@
   "mr:0924-antonius-gonzalez": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12562,6 +13468,7 @@
   "mr:0924-gulielmus-spenser-et-robertus-hardesty": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12573,12 +13480,14 @@
   "mr:0924-iosephus-raymundus-ferragud-girbes": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0924-iosephus-raymundus-paschalis-ferrer-botella": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12605,6 +13514,7 @@
   "mr:0925-cleopha": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0925-finbarrus": {
@@ -12620,6 +13530,7 @@
   "mr:0925-iosephus-bengoa-aranguren-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12636,6 +13547,7 @@
   "mr:0925-sergius-de-radonez": {
    "from": 1301,
    "to": 1400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12652,27 +13564,32 @@
   "mr:0926-emmanuel-legua-marti": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0926-eusebius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0926-gaspar-stanggassinger": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0926-gedeon-iudex": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:0926-iulius-esteve-flors": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12684,6 +13601,7 @@
   "mr:0926-maria-victoria-couderc": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12730,6 +13648,7 @@
   "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12746,6 +13665,7 @@
   "mr:0927-vincentius-de-paul": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12757,12 +13677,14 @@
   "mr:0928-amalia-abad-casasempere": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-bernardinus-de-feltria": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12778,48 +13700,56 @@
   "mr:0928-faustus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-franciscus-xaverius-ponsa-casallarch": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-iosephus-tarrats-comaposada": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-laurentius-ruiz-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-leoba": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-nicetas-budka": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-salonius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0928-simon-de-rojas": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12836,12 +13766,14 @@
   "mr:0929-carolus-de-blesis": {
    "from": 1301,
    "to": 1400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0929-darius-hernandez-morato": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12853,6 +13785,7 @@
   "mr:0929-franciscus-de-paula-castello": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12864,6 +13797,7 @@
   "mr:0929-iacobus-mestre-iborra": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12885,6 +13819,7 @@
   "mr:0929-paulus-bori-puig-et-vincentius-sales-genoves": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12911,18 +13846,21 @@
   "mr:0930-franciscus-de-borja": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0930-fridericus-albert": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:0930-gregorius-illuminator": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12945,18 +13883,21 @@
   "mr:0930-ursus-et-victor": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1001-alvarus-sanjuan-canet": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1001-antonius-rewera": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12968,12 +13909,14 @@
   "mr:1001-geraldus-edwards": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1001-nicetius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -12985,12 +13928,14 @@
   "mr:1001-radulphus-crockett-et-eduardus-james": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1001-romanus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13010,6 +13955,7 @@
   "mr:1002-antonius-chevrier": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13021,12 +13967,14 @@
   "mr:1002-elias-et-ioannes-baptista-carbonell-molla": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1002-franciscus-carceller-et-isidorus-bover-oliver": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13043,6 +13991,7 @@
   "mr:1002-ludovicus-yakichi-et-lucia": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13054,17 +14003,20 @@
   "mr:1002-maria-francisca-ricart-olmos": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1002-theophilus": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1003-adalgottus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13076,6 +14028,7 @@
   "mr:1003-crescentius-garcia-pobo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13092,6 +14045,7 @@
   "mr:1003-faustus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1003-gerardus": {
@@ -13115,12 +14069,14 @@
   "mr:1004-franciscus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1004-franciscus-xaverius-seelos": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13170,12 +14126,14 @@
   "mr:1005-gulielmus-hartley-et-ioannes-hewett": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1005-mamlacha": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1005-maria-faustina-kowalska": {
@@ -13186,6 +14144,7 @@
   "mr:1005-marianus-skrzypczak": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13196,11 +14155,13 @@
   "mr:1005-placidus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1005-tranquillinus-ubiarco": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13227,6 +14188,7 @@
   "mr:1006-franciscus-tran-van-trung": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13237,6 +14199,7 @@
   "mr:1006-maria-rosa-durocher": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13258,6 +14221,7 @@
   "mr:1007-iosephus-llosa-balaguer": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13298,6 +14262,7 @@
   "mr:1008-ioannes-adams-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13329,6 +14294,7 @@
   "mr:1009-dionysius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13360,6 +14326,7 @@
   "mr:1009-publia": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1010-cassius-et-florentius": {
@@ -13380,12 +14347,14 @@
   "mr:1010-daniel-et-socii": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1010-eduardus-detkens": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13402,6 +14371,7 @@
   "mr:1010-leo-wetmanski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13417,6 +14387,7 @@
   "mr:1010-sophia-camilla-truszkowska": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13433,24 +14404,28 @@
   "mr:1011-anastasius": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1011-angelus-ramos-velazquez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1011-bruno": {
    "from": 901,
    "to": 1000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1011-canicus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13462,6 +14437,7 @@
   "mr:1011-gaudentius": {
    "from": 901,
    "to": 1000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13473,6 +14449,7 @@
   "mr:1011-meinardus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1011-nicasius-et-socii": {
@@ -13488,6 +14465,7 @@
   "mr:1011-philippus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1011-sanctinus": {
@@ -13517,6 +14495,7 @@
   "mr:1012-felix-iv": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13533,6 +14512,7 @@
   "mr:1012-martyres-et-confessores-africae": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1012-maximilianus": {
@@ -13548,6 +14528,7 @@
   "mr:1012-romanus-sitko": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13559,6 +14540,7 @@
   "mr:1013-alexandrina-maria-da-costa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13570,6 +14552,7 @@
   "mr:1013-comganus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -13625,29 +14608,34 @@
   "mr:1014-iacobus-laigneau-de-langellerie": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1015-barsen": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1015-hedwigis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1015-magdalena": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13659,12 +14647,14 @@
   "mr:1015-teresia-a-iesu": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1015-thecla": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13686,6 +14676,7 @@
   "mr:1016-gerardus-maiella": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13696,6 +14687,7 @@
   "mr:1016-longinus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1016-lullus": {
@@ -13710,11 +14702,13 @@
   "mr:1016-martinianus-et-saturianus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1017-fidel-fuidio-rodriguez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13726,18 +14720,21 @@
   "mr:1017-gilbertus": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1017-iacobus-burin": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1017-ignatius": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13749,6 +14746,7 @@
   "mr:1017-isidorus-gagelin": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13760,18 +14758,21 @@
   "mr:1017-maria-ludovica-iosepha-vanot-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1017-raymundus-stephanus-bou-pascual": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1017-richardus-gwyn": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13782,6 +14783,7 @@
   "mr:1017-tarsilla-cordoba-belda": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13837,11 +14839,13 @@
   },
   "mr:1019-ioel-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13852,12 +14856,14 @@
   "mr:1019-philippus-howard": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1019-ptolomaeus-et-lucius": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1019-sabinianus-et-potentianus": {
@@ -13868,6 +14874,7 @@
   "mr:1019-varus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13933,6 +14940,7 @@
   "mr:1021-laura-montoya-y-upegui": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13956,6 +14964,7 @@
   "mr:1022-abercius": {
    "from": 101,
    "to": 200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13976,6 +14985,7 @@
   "mr:1022-nunilo-et-alodia": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -13992,18 +15002,21 @@
   "mr:1023-clotildis-iosepha-paillot-et-socii": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-ignatius": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14015,24 +15028,28 @@
   "mr:1023-ioannes-de-capestrano": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-ioannes-et-iacobus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-paulus-tong-viet-buong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-petrus-lorente-vicente-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14053,17 +15070,20 @@
   "mr:1023-severinus-boetius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1023-theodoretus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1023-thomas-thwing": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14075,6 +15095,7 @@
   "mr:1024-aretha-et-socii": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14086,12 +15107,14 @@
   "mr:1024-iosephus-le-dang-thi": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1024-maglorius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14103,6 +15126,7 @@
   "mr:1024-proclus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14114,6 +15138,7 @@
   "mr:1025-crispinus-et-crispinianus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14135,12 +15160,14 @@
   "mr:1025-maria-teresia-ferragud-roig-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1025-martyrius-et-marcianus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14152,6 +15179,7 @@
   "mr:1025-recaredus-centelles-abad": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14173,12 +15201,14 @@
   "mr:1026-lucianus-et-marcianus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1026-rogatianus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1026-rusticus": {
@@ -14205,6 +15235,7 @@
   "mr:1027-otteranus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14241,6 +15272,7 @@
   "mr:1028-salvator-damianus-enguix-gares": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14252,6 +15284,7 @@
   "mr:1028-simon-et-iudas-apostoli": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14288,12 +15321,14 @@
   "mr:1030-alexius-zaryckyj": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1030-claudius-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14315,12 +15350,14 @@
   "mr:1030-ioannes-michael-langevin": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1030-ioannes-slade": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14346,6 +15383,7 @@
   "mr:1030-terentius-albertus-o-brien": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14362,12 +15400,14 @@
   "mr:1031-christophorus-de-romaniola": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1031-epimachius-pelusiota": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14379,12 +15419,14 @@
   "mr:1031-leo-nowakowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1031-quintinus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14441,6 +15483,7 @@
   "mr:1101-nonius-alvarez-pereira": {
    "from": 1401,
    "to": 1500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14451,6 +15494,7 @@
   "mr:1101-rupertus-mayer": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14462,6 +15506,7 @@
   "mr:1101-theodorus-georgius-romzsa": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14473,6 +15518,7 @@
   "mr:1102-acindynus-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14484,6 +15530,7 @@
   "mr:1102-carterius-et-socii": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14495,6 +15542,7 @@
   "mr:1102-ioannes-bodey": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14506,6 +15554,7 @@
   "mr:1102-malachia": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -14520,6 +15569,7 @@
   "mr:1102-victorinus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1102-winefrida": {
@@ -14565,6 +15615,7 @@
   "mr:1103-petrus-franciscus-neron": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14628,12 +15679,14 @@
   "mr:1105-bernardus-lichtenberg": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1105-dominicus-mau": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14645,6 +15698,7 @@
   "mr:1105-gregorius-lakota": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14660,6 +15714,7 @@
   "mr:1106-callinicus-et-socii": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14681,6 +15736,7 @@
   "mr:1106-paulus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1106-severus": {
@@ -14705,12 +15761,14 @@
   "mr:1107-athenodorus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1107-engelbertus": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14721,6 +15779,7 @@
   "mr:1107-herculanus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14767,6 +15826,7 @@
   "mr:1108-iosephus-nguyen-dinh-nghi-et-socii": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14787,18 +15847,21 @@
   "mr:1109-aloysius-beltrame-quattrocchus": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1109-dedicatio-basilicae-lateranensis": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "dedication",
    "source": "estimate"
   },
   "mr:1109-elisabeth-a-sanctissima-trinitate": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14810,12 +15873,14 @@
   "mr:1109-georgius-napper": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1109-henricus-hlebowicz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14842,12 +15907,14 @@
   "mr:1110-leo-i": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1110-narses-et-iosephus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14884,6 +15951,7 @@
   "mr:1111-martinus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "deposition",
    "source": "estimate"
   },
@@ -14904,11 +15972,13 @@
   "mr:1111-veranus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1111-vincentius-eugenius-bossilkov": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14935,6 +16005,7 @@
   "mr:1112-iosaphat-kuncewicz": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14946,12 +16017,14 @@
   "mr:1112-lebuinus": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1112-margaritus-flores": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -14968,6 +16041,7 @@
   "mr:1113-arcadius-et-socii": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1113-brictius": {
@@ -14993,6 +16067,7 @@
   "mr:1113-maria-a-patrocinio-a-sancto-ioanne": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15009,6 +16084,7 @@
   "mr:1113-petrus-vicev-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15085,6 +16161,7 @@
   "mr:1115-hugo-faringdon-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15121,24 +16198,28 @@
   "mr:1115-richardus-whiting-et-socii": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1115-rochus-gonzalez-et-alphonsus-rodriguez": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1116-agnes": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1116-augustinus-et-felicitas": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15150,23 +16231,27 @@
   "mr:1116-eduardus-osbaldeston": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1116-eucherius": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1116-gertrudis-magna": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1116-margarita": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15188,6 +16273,7 @@
   "mr:1117-anianus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15204,12 +16290,14 @@
   "mr:1117-gregorius-neocaesareae": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1117-gregorius-turonis": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15221,12 +16309,14 @@
   "mr:1117-hugo-lincolniae": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1117-hugo-nucariae": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15248,6 +16338,7 @@
   "mr:1118-philippina-duchesne": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15268,6 +16359,7 @@
   "mr:1119-elisaeus-garcia-et-alexander-planas-sauri": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15279,6 +16371,7 @@
   "mr:1119-mechtildis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15320,12 +16413,14 @@
   "mr:1120-francisca-lloret-marti-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1120-franciscus-xaverius-can": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15366,11 +16461,13 @@
   "mr:1121-rufus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1122-ananias": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15388,18 +16485,21 @@
   "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1122-petrus-esqueda-ramirez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1122-philemon-colossensis": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1122-pragmatius": {
@@ -15415,6 +16515,7 @@
   "mr:1123-amphilochius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15446,12 +16547,14 @@
   "mr:1123-maria-felicitas-cendoya-y-araquistain": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1123-michael-augustinus-pro": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15493,6 +16596,7 @@
   "mr:1124-flora-et-maria": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15504,6 +16608,7 @@
   "mr:1124-nicetha-a-sancta-prudentia-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15520,6 +16625,7 @@
   "mr:1124-protasius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15531,12 +16637,14 @@
   "mr:1125-catharina": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1125-hyacinthus-serrano-lopez": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15548,6 +16656,7 @@
   "mr:1125-moyses": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1125-petrus": {
@@ -15568,6 +16677,7 @@
   "mr:1126-hugo-taylor-et-marmaducus-bowes": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15599,12 +16709,14 @@
   "mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1127-bronislaus-kostowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15641,12 +16753,14 @@
   "mr:1128-aloysius-campos-gorriz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1128-andreas-tran-van-trong": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15658,6 +16772,7 @@
   "mr:1128-iacobus-thomson": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15669,12 +16784,14 @@
   "mr:1128-marianus-adradas-gonzalo-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1128-stephanus": {
@@ -15685,12 +16802,14 @@
   "mr:1129-alaphridus-simon-colomina": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1129-eduardus-burden": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15707,6 +16826,7 @@
   "mr:1129-philomenus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15718,6 +16838,7 @@
   "mr:1129-saturninus": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1129-saturninus-carthaginensis": {
@@ -15728,30 +16849,35 @@
   "mr:1130-alexander-crow": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-andreas-apostolus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-cuthbertus-mayne": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-galganus-guidotti": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-ioannes-de-vercellis": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15763,18 +16889,21 @@
   "mr:1130-iosephus-otin-aquile": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-ludovicus-rochus-gientyngier": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1130-michael-ruedas-megias-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15791,6 +16920,7 @@
   "mr:1201-casimirus-sykulski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15802,6 +16932,7 @@
   "mr:1201-clementina-nengapeta-anuarite": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15823,22 +16954,26 @@
   "mr:1201-florentia": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1201-ioannes-beche": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1201-nahum-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1201-richardus-langley": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15854,6 +16989,7 @@
   },
   "mr:1202-habacuc-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1202-ioannes-ruysbroeck": {
@@ -15864,6 +17000,7 @@
   "mr:1202-ivanus-slezyuk": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15875,6 +17012,7 @@
   "mr:1202-silverius": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15891,6 +17029,7 @@
   "mr:1203-eduardus-coleman": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15902,6 +17041,7 @@
   "mr:1203-ioannes-nepomucenus-de-tschiderer": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15912,6 +17052,7 @@
   },
   "mr:1203-sophonias-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1204-adolphus-kolping": {
@@ -15922,6 +17063,7 @@
   "mr:1204-anno": {
    "from": 1001,
    "to": 1100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15942,12 +17084,14 @@
   "mr:1204-franciscus-galvez-et-socii": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1204-heracla": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15969,6 +17113,7 @@
   "mr:1204-meletius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -15990,12 +17135,14 @@
   "mr:1205-narcissus-putz": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1205-nicolaus-stensen": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16016,17 +17163,20 @@
   "mr:1206-iosephus-nguyen-duy-khang": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1206-martyres-africae": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1206-nicolaus": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16043,6 +17193,7 @@
   "mr:1207-ambrosius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1207-carolus-garnier": {
@@ -16092,6 +17243,7 @@
   "mr:1208-macarius": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1208-natalis-chabanel": {
@@ -16116,12 +17268,14 @@
   "mr:1209-gorgonia": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1209-ioannes-didacus-cuauhtlatoatzin": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16148,6 +17302,7 @@
   "mr:1209-richardus-de-los-rios-fabregat-et-socii": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16159,6 +17314,7 @@
   "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16175,12 +17331,14 @@
   "mr:1210-gregorius-iii": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1210-gundisalvus-vines-masip": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16192,18 +17350,21 @@
   "mr:1210-marcus-antonius-durando": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1210-polydorus-plasden-et-eustatius-white": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1211-arthurus-bell": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16220,6 +17381,7 @@
   "mr:1211-david": {
    "from": 1101,
    "to": 1200,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16249,11 +17411,13 @@
   "mr:1212-maria-de-guadalupe": {
    "from": 1501,
    "to": 1600,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1212-pius-bartosik": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16265,6 +17429,7 @@
   "mr:1212-spyridon": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16296,6 +17461,7 @@
   "mr:1213-ioanna-francisca-fremiot-de-chantal": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16307,12 +17473,14 @@
   "mr:1213-lucia": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1213-othilia": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16329,18 +17497,21 @@
   "mr:1214-antonius-cubells-minguell": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1214-bonaventura-de-pistorio": {
    "from": 1201,
    "to": 1300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1214-francisca-schervier": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16366,12 +17537,14 @@
   "mr:1214-thyrsus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1214-venantius-fortunatus": {
    "from": 501,
    "to": 600,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16388,6 +17561,7 @@
   "mr:1215-valerianus": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1215-virginia-centurione-bracelli": {
@@ -16398,6 +17572,7 @@
   "mr:1216-ado": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16414,6 +17589,7 @@
   "mr:1216-plurimae-virgines-africa": {
    "from": 401,
    "to": 500,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1217-begga": {
@@ -16434,12 +17610,14 @@
   "mr:1217-mathildis-a-sacro-corde": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1217-quinquaginta-milites-eleutheropolis": {
    "from": 601,
    "to": 700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16466,6 +17644,7 @@
   "mr:1218-winebaldus": {
    "from": 701,
    "to": 800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16477,6 +17656,7 @@
   "mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16488,6 +17668,7 @@
   "mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16504,12 +17685,14 @@
   "mr:1220-michael-piaszczynski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1220-philogonius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16521,6 +17704,7 @@
   "mr:1221-andreas-dung-lac-et-petrus-truong-van-thi": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16537,17 +17721,20 @@
   "mr:1221-themistocles": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1222-chaeremon-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1222-francisca-xaveria-cabrini": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16563,6 +17750,7 @@
   "mr:1222-thomas-holland": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16583,12 +17771,14 @@
   "mr:1223-maria-margarita": {
    "from": 1701,
    "to": 1800,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1223-paulus-melendez-gonzalo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16599,6 +17789,7 @@
   "mr:1223-theodulus-et-socii": {
    "from": 201,
    "to": 300,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16609,6 +17800,7 @@
   },
   "mr:1224-avi-iesu-christi": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1224-delphinus": {
@@ -16629,6 +17821,7 @@
   "mr:1224-sarbelius-makhluf": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16639,6 +17832,7 @@
   "mr:1225-albertus-chmielowski": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16659,6 +17853,7 @@
   "mr:1225-maria-teresia-von-wullenweber": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16685,18 +17880,21 @@
   "mr:1226-euthymius": {
    "from": 801,
    "to": 900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1226-secundus-pollo": {
    "from": 1901,
    "to": 2000,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
   "mr:1226-stephanus": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16730,6 +17928,7 @@
   "mr:1228-catharina-volpicelli": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16746,6 +17945,7 @@
   "mr:1228-innocentes": {
    "from": 1,
    "to": 100,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16756,6 +17956,7 @@
   },
   "mr:1229-david-rex-et-propheta": {
    "to": -1,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1229-ebrulfus": {
@@ -16771,6 +17972,7 @@
   "mr:1229-gulielmus-howard": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16807,6 +18009,7 @@
   "mr:1230-anysius": {
    "from": 301,
    "to": 400,
+   "circa": true,
    "source": "estimate"
   },
   "mr:1230-egwinus": {
@@ -16857,6 +18060,7 @@
   "mr:1231-alanus-de-solminihac": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16868,6 +18072,7 @@
   "mr:1231-catharina-laboure": {
    "from": 1801,
    "to": 1900,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },
@@ -16884,6 +18089,7 @@
   "mr:1231-ioannes-franciscus-regis": {
    "from": 1601,
    "to": 1700,
+   "circa": true,
    "basis": "death",
    "source": "estimate"
   },

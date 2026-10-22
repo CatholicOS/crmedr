@@ -203,7 +203,9 @@ def build_dates(current_ids, typology, persons, items, details, bounds, curated,
         elif mid in wikidata and not (mid in bounds and latest(wikidata[mid]) > bounds[mid]):
             date = {**wikidata[mid], "source": "wikidata"}
         elif estimate_date((estimates or {}).get(mid), bounds.get(mid), estimate_min):
-            date = {**estimate_date(estimates[mid], bounds.get(mid), estimate_min), "source": "estimate"}
+            # circa: most confident misses fall within a few years of a century boundary
+            date = {**estimate_date(estimates[mid], bounds.get(mid), estimate_min), "circa": True,
+                    "source": "estimate"}
         elif mid in bounds:
             date = {"to": bounds[mid], "source": "edition"}
         else:
