@@ -188,6 +188,10 @@ def summarize(raw):
         "p9314_names": sorted({t for c in claims.get("P9314", []) if isinstance(_value(c), str)
                                for t in fold(_value(c).split("/", 1)[-1]).split("-") if t}),
         "country_qids": current_country_qids(claims),
+        # The areas it lies in now: not a deprecated one, nor one with an end time (P582).
+        "admin_qids": [_value(c)["id"] for c in claims.get("P131", [])
+                       if c.get("rank") != "deprecated" and "P582" not in c.get("qualifiers", {})
+                       and isinstance(_value(c), dict)],
         "iso_self": p297[0] if p297 else None,
         "coords": [coords["latitude"], coords["longitude"]] if coords else None,
         "types": list(dict.fromkeys(_value(c)["id"] for c in claims.get("P31", [])
@@ -327,8 +331,24 @@ class Wikidata:
             # P17 names the sovereign state.
             if s["iso_self"]:
                 s["country"] = convention(s["iso_self"])
+            elif not any(countries.get(q) for q in s["country_qids"]):
+                iso = self._fallback_country(s, countries)
+                if iso:
+                    s["country"], s["countries"] = iso, [iso]
             s["place_type"] = any(t in places for t in s["types"])
         return summaries
+
+    def _fallback_country(self, s, countries):
+        """The one ISO country of a place Wikidata gives no country (no P17 at all): that of the
+        areas it lies in (P131: Bethany, the Quds Governorate, PS). None unless exactly one code
+        results. A historical state's successor is never used: it is not where a place lies today
+        (Taiwan under Japanese rule is not in Japan)."""
+        if s["country_qids"] or not s.get("admin_qids"):
+            return None
+        areas = self._entities(s["admin_qids"])
+        found = {countries[q] for raw in areas.values() for q in current_country_qids(raw.get("claims", {}))
+                 if q in countries}
+        return convention(found.pop()) if len(found) == 1 else None
 
     def candidates(self, text, language="it"):
         qids = self._search(text, language=language)

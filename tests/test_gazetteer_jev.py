@@ -141,6 +141,11 @@ class PickConventionTest(unittest.TestCase):
             self.assertIn(phrase, text)
         self.assertIn("council", gj.KIND_CRITERIA["place"])
 
+    def test_instructions_state_the_see_convention(self):
+        text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
+        self.assertIn("the see's item", text)
+        self.assertIn("church or see", gj.KIND_CRITERIA["place"])
+
     def test_instructions_state_page_1_conventions(self):
         text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
         for phrase in ("the item of that people", "the monastery or abbey"):
