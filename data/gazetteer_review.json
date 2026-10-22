@@ -2099,6 +2099,25 @@
             "Q20202072"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q273854",
+          "label": "Gauls",
+          "description": "antico popolo celtico",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [
+            "Galli",
+            "Gallī"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -2110,7 +2129,16 @@
         "probability": 0.68,
         "confidence": 0.57,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q273854",
+        "countries": [
+          "FR",
+          "BE"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Gauls: Sulpicius Severus and the senators of Gaul in the Frankish-era; no item for the Gallic provinces' people besides the Gauls. Country FR as core of Gaul."
     },
     {
       "op": "resolve_place",
@@ -2714,6 +2742,32 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q133032",
+          "label": "Hungarians",
+          "description": "gruppo etnico originario dell'Ungheria",
+          "country": null,
+          "countries": [
+            "HU",
+            "RO",
+            "SK",
+            "CA",
+            "RS",
+            "UA",
+            "CZ"
+          ],
+          "la": [
+            "Ungari",
+            "hungari"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710",
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -2725,7 +2779,13 @@
         "probability": 0.91,
         "confidence": 0.88,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q133032",
+        "country": "HU"
+      },
+      "confidence": "high",
+      "reasoning": "Hungarians, the people ruled by King Stephen I and his son Emeric in the 11th century."
     },
     {
       "op": "resolve_place",
@@ -4120,7 +4180,30 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q110888",
+          "label": "Kingdom of Essex",
+          "description": "uno dei sette regni anglo-sassoni in Gran Bretagna (527-825)",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Regnum Orientalium Saxonum"
+          ],
+          "p9314": false,
+          "coords": [
+            51.5,
+            0
+          ],
+          "types": [
+            "Q3024240",
+            "Q417175"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -4130,7 +4213,13 @@
         "probability": 0.85,
         "confidence": 0.8,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q110888",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Anglo-Saxon-era king of the East Saxons: Kingdom of Essex."
     },
     {
       "op": "resolve_place",
@@ -6046,7 +6135,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q42406",
+          "label": "English people",
+          "description": "gruppo etnico di lingua germanica localizzato prevalentemente in Inghilterra",
+          "country": "GB",
+          "countries": [
+            "GB"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q6266",
+            "Q2472587",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -6056,7 +6164,13 @@
         "probability": 0.98,
         "confidence": 0.97,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q42406",
+        "country": "GB"
+      },
+      "confidence": "medium",
+      "reasoning": "Spans 7th-century Northumbrian Angles to 16th-century English martyrs; English people fits the whole set. Angles (Q104238) would suit only the early one."
     },
     {
       "op": "resolve_place",
@@ -6196,6 +6310,22 @@
             "Q1288568"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q188353",
+          "label": "Welsh people",
+          "description": "nation and ethnic group native to Wales",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q6266",
+            "Q231002",
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -6207,7 +6337,13 @@
         "probability": 0.77,
         "confidence": 0.69,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q188353",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Welsh people; the martyrs are Welsh, from Wales."
     },
     {
       "op": "resolve_place",
@@ -7257,7 +7393,32 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q837998",
+          "label": "Kingdom of East Anglia",
+          "description": "uno dei sette regni anglo-sassoni in Gran Bretagna (550-918)",
+          "country": null,
+          "countries": [
+            "Q837998"
+          ],
+          "la": [
+            "Regnum Orientalium Anglorum"
+          ],
+          "p9314": false,
+          "coords": [
+            52.5,
+            1
+          ],
+          "types": [
+            "Q3024240",
+            "Q417175"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -7267,7 +7428,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q837998",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Anglo-Saxon-era royal princess of the East Angles: Kingdom of East Anglia."
     },
     {
       "op": "resolve_place",
@@ -12206,6 +12373,27 @@
             "country",
             "type"
           ]
+        },
+        {
+          "wikidata": "Q106416",
+          "label": "Frisians",
+          "description": "gruppo etnico germanico",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ],
+          "la": [
+            "Frisii"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -12217,7 +12405,16 @@
         "probability": 0.94,
         "confidence": 0.92,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q106416",
+        "countries": [
+          "NL",
+          "DE"
+        ]
+      },
+      "confidence": "high",
+      "reasoning": "Frisians, evangelized by Odulf and Frederick of Utrecht in the early Middle Ages; Frisii is the Roman-era tribe."
     },
     {
       "op": "resolve_place",
@@ -12864,7 +13061,22 @@
         "country: the item has no single current country ()",
         "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q138544527",
+          "label": "Wendat people",
+          "description": "iroquoian-speaking confederacy of the Great Lakes prior to 1649",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -12874,7 +13086,13 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q138544527",
+        "country": "CA"
+      },
+      "confidence": "medium",
+      "reasoning": "Wendat (Huron) confederacy of Ontario, the mission people of the 17th-century Jesuit martyrs; Q213396 (Wyandot) is the alternative."
     },
     {
       "op": "resolve_place",
@@ -15518,6 +15736,22 @@
             "Q109274653"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q250584",
+          "label": "Morini",
+          "description": "Antica tribù celtica",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Morini"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -15529,7 +15763,13 @@
         "probability": 0.78,
         "confidence": 0.71,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q250584",
+        "country": "FR"
+      },
+      "confidence": "medium",
+      "reasoning": "Morini, the Belgic tribe whose civitas was seated at Thérouanne; bishops of Thérouanne. No separate people item for the town."
     },
     {
       "op": "resolve_place",
@@ -16400,6 +16640,26 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q102891",
+          "label": "Picts",
+          "description": "confederazione di tribù celtiche in Scozia nel medioevo",
+          "country": "GB",
+          "countries": [
+            "GB"
+          ],
+          "la": [
+            "Picti"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -16411,7 +16671,13 @@
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q102891",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Picts of northern Britain, evangelized by Ninian and Fergus."
     },
     {
       "op": "resolve_place",
@@ -19182,7 +19448,30 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q105313",
+          "label": "Kingdom of Wessex",
+          "description": "uno dei sette regni anglo-sassoni in Gran Bretagna (519-927)",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Regnum Occidentalium Saxonum"
+          ],
+          "p9314": false,
+          "coords": [
+            51.2,
+            -2
+          ],
+          "types": [
+            "Q3024240",
+            "Q417175"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -19192,7 +19481,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q105313",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Kingdom of Wessex, the West Saxons, in the 7th-century setting of Birinus' mission."
     },
     {
       "op": "resolve_place",
@@ -20056,6 +20351,22 @@
             "type",
             "p9314"
           ]
+        },
+        {
+          "wikidata": "Q322168",
+          "label": "Treveri",
+          "description": "tribe of Celts",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -20067,7 +20378,16 @@
         "probability": 0.52,
         "confidence": 0.36,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q322168",
+        "countries": [
+          "DE",
+          "LU"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "People of Trier: the Treveri tribe (the city's people); Trier itself is Q3138."
     },
     {
       "op": "resolve_place",
@@ -20882,7 +21202,13 @@
         "probability": 0.65,
         "confidence": 0.53,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q200441",
+        "country": "TR"
+      },
+      "confidence": "medium",
+      "reasoning": "No item for people of Antioch; city of Antioch, native city of Dius and John Chrysostom."
     },
     {
       "op": "resolve_place",
@@ -20899,7 +21225,28 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q79797",
+          "label": "Armenians",
+          "description": "gruppo etnico originario dell'Altopiano armeno",
+          "country": "AM",
+          "countries": [
+            "AM"
+          ],
+          "la": [
+            "Armeni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710",
+            "Q2472587",
+            "Q33829"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -20909,7 +21256,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q79797",
+        "country": "AM"
+      },
+      "confidence": "high",
+      "reasoning": "Armenians; Armenian-born saints."
     },
     {
       "op": "resolve_place",
@@ -21213,7 +21566,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q309197",
+          "label": "Bretons",
+          "description": "gruppo etnico e nazionalità",
+          "country": null,
+          "countries": [
+            "FR",
+            "CA",
+            "US"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -21223,7 +21595,13 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q309197",
+        "country": "FR"
+      },
+      "confidence": "medium",
+      "reasoning": "Breton-born saints in Gaul (Touraine, Thérouanne region); Bretons fit better than ancient Britons."
     },
     {
       "op": "resolve_place",
@@ -22032,7 +22410,28 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "description": "Gruppo etnico e nazionale dell'isola d'Irlanda",
+          "country": null,
+          "countries": [
+            "IE",
+            "US",
+            "GB"
+          ],
+          "la": [
+            "Hiberni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -22042,7 +22441,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q170826",
+        "country": "IE"
+      },
+      "confidence": "high",
+      "reasoning": "Irish people; Irish-born saints Colman and Virgil of Salzburg."
     },
     {
       "op": "resolve_place",
@@ -22060,7 +22465,28 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q160894",
+          "label": "Spaniards",
+          "description": "persone native di qualsiasi parte della Spagna o che detengono la cittadinanza spagnola",
+          "country": "ES",
+          "countries": [
+            "ES"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q6266",
+            "Q2472587",
+            "Q16334295",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -22070,7 +22496,13 @@
         "probability": 0.94,
         "confidence": 0.92,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q160894",
+        "country": "ES"
+      },
+      "confidence": "medium",
+      "reasoning": "Spaniards; Spanish-born saints, from Visigothic-era Aquitaine to the Dominican Vincent Ferrer."
     },
     {
       "op": "resolve_place",
@@ -22213,6 +22645,24 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q178630",
+          "label": "Portuguese",
+          "description": "cittadini o residenti in Portogallo",
+          "country": "PT",
+          "countries": [
+            "PT"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q6266",
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -22224,7 +22674,13 @@
         "probability": 0.86,
         "confidence": 0.81,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q178630",
+        "country": "PT"
+      },
+      "confidence": "medium",
+      "reasoning": "Portuguese (Lisbon-born Anthony, John of God); Kingdom of Portugal Q45670 is the alternative."
     },
     {
       "op": "resolve_place",
@@ -23169,7 +23625,27 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q1026",
+          "label": "Poles",
+          "description": "gruppo etnico di Polonia",
+          "country": "PL",
+          "countries": [
+            "PL"
+          ],
+          "la": [
+            "Poloni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710",
+            "Q2472587"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -23179,7 +23655,13 @@
         "probability": 0.97,
         "confidence": 0.96,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1026",
+        "country": "PL"
+      },
+      "confidence": "high",
+      "reasoning": "Poles; the 20th-century Polish martyrs, so the modern ethnic group rather than Polans."
     },
     {
       "op": "resolve_place",
@@ -23196,7 +23678,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q1651392",
+          "label": "Romans",
+          "description": "cittadini della Repubblica romana e dell’Impero romano",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Romanus populus"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q1368367",
+            "Q33829"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -23206,7 +23707,13 @@
         "probability": 0.61,
         "confidence": 0.48,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1651392",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "Romans, as a historical national group; the matrons are Roman women of the 4th century."
     },
     {
       "op": "resolve_place",
@@ -23224,7 +23731,24 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q878607",
+          "label": "Syrians",
+          "description": "cittadini o residenti in Siria",
+          "country": "SY",
+          "countries": [
+            "SY"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -23234,7 +23758,13 @@
         "probability": 0.88,
         "confidence": 0.84,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q878607",
+        "country": "SY"
+      },
+      "confidence": "medium",
+      "reasoning": "Syrians: a Syrian monk in Córdoba and Pope Sergius I of Syrian origin."
     },
     {
       "op": "resolve_place",
@@ -23531,7 +24061,13 @@
         "probability": 0.68,
         "confidence": 0.57,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q321536",
+        "country": "TN"
+      },
+      "confidence": "medium",
+      "reasoning": "No people item for Abitinae; the ancient town of Abitinae in Proconsular Africa, home of the martyrs."
     },
     {
       "op": "resolve_place",
@@ -24530,7 +25066,32 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q181238",
+          "label": "Africa",
+          "description": "provincia romana",
+          "country": null,
+          "countries": [
+            "Q1747689"
+          ],
+          "la": [
+            "Africa",
+            "Africa proconsularis"
+          ],
+          "p9314": false,
+          "coords": [
+            31.8,
+            12.74
+          ],
+          "types": [
+            "Q182547"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -24540,7 +25101,13 @@
         "probability": 0.91,
         "confidence": 0.88,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q181238",
+        "country": "TN"
+      },
+      "confidence": "medium",
+      "reasoning": "Pope Victor I was of the Roman province of Africa (Africa Proconsularis); no item for its people. Modern Tunisia, Algeria, Libya."
     },
     {
       "op": "resolve_place",
@@ -24941,7 +25508,8 @@
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "reasoning": "Research: Two peoples in one phrase; a single QID cannot serve. Split: Alamanni Q132990 (DE, CH, FR) and Bavarii Q156740 (DE, AT)."
     },
     {
       "op": "resolve_place",
@@ -28630,6 +29198,22 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "description": "tribù della Germania non romanizzata",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Angli"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -28641,7 +29225,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q104238",
+        "country": "GB"
+      },
+      "confidence": "medium",
+      "reasoning": "Angles: Augustine's mission to the English c. 597 (Anglo-Saxon England); consistent with the curator's anglus choice. Q42406 is the alternative."
     },
     {
       "op": "resolve_place",
@@ -28657,7 +29247,32 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q837998",
+          "label": "Kingdom of East Anglia",
+          "description": "uno dei sette regni anglo-sassoni in Gran Bretagna (550-918)",
+          "country": null,
+          "countries": [
+            "Q837998"
+          ],
+          "la": [
+            "Regnum Orientalium Anglorum"
+          ],
+          "p9314": false,
+          "coords": [
+            52.5,
+            1
+          ],
+          "types": [
+            "Q3024240",
+            "Q417175"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -28667,7 +29282,13 @@
         "probability": 0.98,
         "confidence": 0.97,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q837998",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Kingdom of East Anglia, the East Angles, Felix of Burgundy's mission in the 7th century."
     },
     {
       "op": "resolve_place",
@@ -32166,6 +32787,28 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q79797",
+          "label": "Armenians",
+          "description": "gruppo etnico originario dell'Altopiano armeno",
+          "country": "AM",
+          "countries": [
+            "AM"
+          ],
+          "la": [
+            "Armeni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710",
+            "Q2472587",
+            "Q33829"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -32177,7 +32820,13 @@
         "probability": 0.8,
         "confidence": 0.73,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q79797",
+        "country": "AM"
+      },
+      "confidence": "high",
+      "reasoning": "Armenians, evangelized by Gregory the Illuminator in early 4th-century Armenia."
     },
     {
       "op": "resolve_place",
@@ -33927,6 +34576,22 @@
             "Q33506"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q120096553",
+          "label": "Athenians",
+          "description": "persone o residenti di Atene, Grecia",
+          "country": "GR",
+          "countries": [
+            "GR"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -33938,7 +34603,13 @@
         "probability": 0.49,
         "confidence": 0.32,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q120096553",
+        "country": "GR"
+      },
+      "confidence": "medium",
+      "reasoning": "Athenians (people of Athens); Dionysius the Areopagite, 1st century. Classical Athens (Q844930) is the polity alternative."
     },
     {
       "op": "resolve_place",
@@ -38695,7 +39366,34 @@
       "failed": [
         "no item has the Italian name of every variant"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q5776",
+          "label": "Bethlehem",
+          "description": "città palestinese, luogo di nascita di Gesù Cristo",
+          "country": "PS",
+          "countries": [
+            "PS"
+          ],
+          "la": [
+            "Bethleem",
+            "Bethlehem"
+          ],
+          "p9314": false,
+          "coords": [
+            31.704444444444,
+            35.206111111111
+          ],
+          "types": [
+            "Q515",
+            "Q116291578",
+            "Q6936404"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -38705,7 +39403,13 @@
         "probability": 0.53,
         "confidence": 0.37,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q5776",
+        "country": "PS"
+      },
+      "confidence": "medium",
+      "reasoning": "King David was from Bethlehem; no Bethlehemites people item, so the city is used."
     },
     {
       "op": "resolve_place",
@@ -39496,6 +40200,25 @@
             "Q62447"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q745145",
+          "label": "Bituriges",
+          "description": "tribù celtica",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Bituriges",
+            "Bituriges Cubi"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "la"
+          ]
         }
       ],
       "decision": null,
@@ -39507,7 +40230,13 @@
         "probability": 0.9,
         "confidence": 0.87,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q745145",
+        "country": "FR"
+      },
+      "confidence": "high",
+      "reasoning": "Bituriges, the Gaulish tribe of the Bourges area; peoples item preferred to the city (Bourges Q132404)."
     },
     {
       "op": "resolve_place",
@@ -39956,6 +40685,30 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q2162698",
+          "label": "Duchy of Bohemia",
+          "description": "ducato medioevale",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Ducatus Bohemiae",
+            "Ducatus Bohemiæ"
+          ],
+          "p9314": false,
+          "coords": [
+            50.0875,
+            14.421388888888888
+          ],
+          "types": [
+            "Q3024240",
+            "Q154547",
+            "Q26830017"
+          ],
+          "evidence": [
+            "type"
+          ]
         }
       ],
       "decision": null,
@@ -39967,7 +40720,13 @@
         "probability": 0.73,
         "confidence": 0.64,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2162698",
+        "country": "CZ"
+      },
+      "confidence": "medium",
+      "reasoning": "Duchy of Bohemia, ruled by Wenceslas in the 10th century; the polity the phrase names."
     },
     {
       "op": "resolve_place",
@@ -41377,6 +42136,25 @@
             "Q1154710"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q849967",
+          "label": "Celtic Britons",
+          "description": "popolazione celtica delle Isole britanniche",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Britanni",
+            "Brittones"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -41388,7 +42166,13 @@
         "probability": 0.82,
         "confidence": 0.76,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q849967",
+        "country": "GB"
+      },
+      "confidence": "medium",
+      "reasoning": "Celtic Britons, the Romano-British Christians whom Germanus of Auxerre came to help against Pelagianism (5th c.)."
     },
     {
       "op": "resolve_place",
@@ -41851,6 +42635,23 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q849967",
+          "label": "Celtic Britons",
+          "description": "popolazione celtica delle Isole britanniche",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Britanni",
+            "Brittones"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -41862,7 +42663,13 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q849967",
+        "country": "GB"
+      },
+      "confidence": "medium",
+      "reasoning": "Celtic Britons of 5th-century Britain, where Germanus opposed Pelagianism; no better ancient item."
     },
     {
       "op": "resolve_place",
@@ -42049,6 +42856,45 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q133255",
+          "label": "Bulgarians",
+          "description": "gruppo etnico",
+          "country": null,
+          "countries": [
+            "BG",
+            "US",
+            "UA",
+            "DE",
+            "ES",
+            "GB",
+            "MD",
+            "IT",
+            "GR",
+            "RU",
+            "NL",
+            "CA",
+            "RS",
+            "AU",
+            "SE",
+            "RO",
+            "HU",
+            "KZ",
+            "CZ",
+            "IE"
+          ],
+          "la": [
+            "bulgari"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -42060,7 +42906,16 @@
         "probability": 0.88,
         "confidence": 0.84,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q133255",
+        "countries": [
+          "BG",
+          "MK"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Bulgarians, evangelized by Clement of Ohrid in the 9th century (First Bulgarian Empire, covering Bulgaria and North Macedonia)."
     },
     {
       "op": "resolve_place",
@@ -44855,6 +45710,27 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q328818",
+          "label": "Kingdom of Kent",
+          "description": "uno dei sette regni anglo-sassoni in Gran Bretagna (455-871)",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Regnum Cantuariorum"
+          ],
+          "p9314": false,
+          "coords": [
+            51.26666667,
+            1.08333333
+          ],
+          "types": [
+            "Q3024240"
+          ],
+          "evidence": [
+            "type"
+          ]
         }
       ],
       "decision": null,
@@ -44866,7 +45742,13 @@
         "probability": 0.7,
         "confidence": 0.6,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q328818",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Kingdom of Kent, whose people were the Cantuarii; Ithamar was the first Kentish bishop (7th c.)."
     },
     {
       "op": "resolve_place",
@@ -46231,6 +47113,20 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q5059004",
+          "label": "Cappadocians",
+          "description": "",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -46242,7 +47138,13 @@
         "probability": 0.59,
         "confidence": 0.45,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q5059004",
+        "country": "TR"
+      },
+      "confidence": "medium",
+      "reasoning": "Cappadocians, soldiers of the Roman army from Cappadocia (4th century)."
     },
     {
       "op": "resolve_place",
@@ -46666,6 +47568,22 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q2495257",
+          "label": "Carantanians",
+          "description": "Slavic people of the Early Middle Ages",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Carantani"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -46677,7 +47595,16 @@
         "probability": 0.87,
         "confidence": 0.83,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2495257",
+        "countries": [
+          "AT",
+          "SI"
+        ]
+      },
+      "confidence": "high",
+      "reasoning": "Carantanians, the Slavic people of Carantania (Carinthia), converted by Virgil of Salzburg."
     },
     {
       "op": "resolve_place",
@@ -47800,7 +48727,13 @@
         "probability": 0.53,
         "confidence": 0.37,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q6343",
+        "country": "TN"
+      },
+      "confidence": "medium",
+      "reasoning": "No item for the Carthaginian people of Roman Carthage; the city of Carthage is used."
     },
     {
       "op": "resolve_place",
@@ -49993,7 +50926,7 @@
         "wikidata": "Q111565756",
         "country": "GR"
       },
-      "reasoning": "Cenchreae, eastern port of Corinth (Phoebe's community); the ancient site item, modern Kechries is a separate settlement.",
+      "reasoning": "No people item; takes the city of Cenchreae, port of Corinth.",
       "confidence": "medium",
       "jev": {
         "decision": "reject",
@@ -57815,6 +58748,28 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q1363688",
+          "label": "Ancient Corinth",
+          "description": "polis dell'antica Grecia",
+          "country": "GR",
+          "countries": [
+            "GR"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            37.905785,
+            22.878741
+          ],
+          "types": [
+            "Q15661340",
+            "Q148837"
+          ],
+          "evidence": [
+            "type"
+          ]
         }
       ],
       "decision": null,
@@ -57826,7 +58781,13 @@
         "probability": 0.62,
         "confidence": 0.49,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1363688",
+        "country": "GR"
+      },
+      "confidence": "medium",
+      "reasoning": "No people item for Corinthians; Ancient Corinth, the city-state of Paul's and Clement's letter."
     },
     {
       "op": "resolve_place",
@@ -58493,6 +59454,20 @@
             "it",
             "type"
           ]
+        },
+        {
+          "wikidata": "Q131841400",
+          "label": "Cretans",
+          "description": "inhabitants of Crete",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -58504,7 +59479,13 @@
         "probability": 0.61,
         "confidence": 0.48,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q131841400",
+        "country": "GR"
+      },
+      "confidence": "medium",
+      "reasoning": "Cretans, inhabitants of Crete, among whom Titus served as bishop."
     },
     {
       "op": "resolve_place",
@@ -66987,7 +67968,37 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q2044",
+          "label": "Florence",
+          "description": "comune italiano, capoluogo dell'omonima città metropolitana e della regione Toscana",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [
+            "Florencia",
+            "Florentia"
+          ],
+          "p9314": true,
+          "coords": [
+            43.771388888889,
+            11.254166666667
+          ],
+          "types": [
+            "Q747074",
+            "Q1549591",
+            "Q5119",
+            "Q4115680"
+          ],
+          "evidence": [
+            "country",
+            "type",
+            "p9314"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -66997,7 +68008,13 @@
         "probability": 0.63,
         "confidence": 0.51,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2044",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "No Florentines people item found; the city of Florence (13th-century Servite founder)."
     },
     {
       "op": "resolve_place",
@@ -70243,6 +71260,27 @@
             "Q27020041"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q22633",
+          "label": "Germanic people",
+          "description": "popolazione europea",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Gentes Germanicae",
+            "Germani",
+            "Theodisci"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4533081"
+          ],
+          "evidence": [
+            "it",
+            "la"
+          ]
         }
       ],
       "decision": null,
@@ -70254,7 +71292,13 @@
         "probability": 0.97,
         "confidence": 0.96,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q22633",
+        "country": "DE"
+      },
+      "confidence": "medium",
+      "reasoning": "Germanic peoples evangelized under Gregory III (Boniface's mission, 8th century); Germany itself is not yet a polity."
     },
     {
       "op": "resolve_place",
@@ -74690,6 +75734,26 @@
             "Q2221906"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q160894",
+          "label": "Spaniards",
+          "description": "persone native di qualsiasi parte della Spagna o che detengono la cittadinanza spagnola",
+          "country": "ES",
+          "countries": [
+            "ES"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q6266",
+            "Q2472587",
+            "Q16334295",
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -74701,7 +75765,13 @@
         "probability": 0.71,
         "confidence": 0.61,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q160894",
+        "country": "ES"
+      },
+      "confidence": "medium",
+      "reasoning": "Spaniards, the Spanish people among whom Turibius of Mogrovejo came from; nationality sense."
     },
     {
       "op": "resolve_place",
@@ -77098,6 +78168,23 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q862086",
+          "label": "Indians",
+          "description": "cittadini o residenti in India",
+          "country": "IN",
+          "countries": [
+            "IN"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q231002"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -77109,7 +78196,13 @@
         "probability": 0.61,
         "confidence": 0.48,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q862086",
+        "country": "IN"
+      },
+      "confidence": "medium",
+      "reasoning": "Indians, whom the medieval missionary Thomas of Tolentino travelled toward."
     },
     {
       "op": "resolve_place",
@@ -84494,7 +85587,13 @@
         "probability": 0.67,
         "confidence": 0.56,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q45670",
+        "country": "PT"
+      },
+      "confidence": "medium",
+      "reasoning": "Kingdom of Portugal: Elizabeth was queen of Portugal in the 14th century; Lusitanians (Q837549) are the ancient people, not fitting."
     },
     {
       "op": "resolve_place",
@@ -86722,7 +87821,32 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q473181",
+          "label": "Malabar Coast",
+          "description": "coastline on the southwestern shore line of the mainland Indian subcontinent",
+          "country": "IN",
+          "countries": [
+            "IN"
+          ],
+          "la": [
+            "Litus Malabaricum"
+          ],
+          "p9314": false,
+          "coords": [
+            12.0167,
+            75.2833
+          ],
+          "types": [
+            "Q93352",
+            "Q82794"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -86732,7 +87856,13 @@
         "probability": 0.92,
         "confidence": 0.89,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q473181",
+        "country": "IN"
+      },
+      "confidence": "low",
+      "reasoning": "People of the Malabar Coast (Kerala); no ethnic item found other than Saint Thomas Christians Q648601 (alternative)."
     },
     {
       "op": "resolve_place",
@@ -88394,6 +89524,21 @@
             "it",
             "type"
           ]
+        },
+        {
+          "wikidata": "Q6792792",
+          "label": "Mauri people",
+          "description": "Latin designation for the Berber population of Mauretania",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q3117863",
+            "Q2472587"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -88405,7 +89550,16 @@
         "probability": 0.85,
         "confidence": 0.8,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q6792792",
+        "countries": [
+          "MA",
+          "DZ"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Mauri, Berber people of Mauretania, among whom the Vandal-era exiles were sent."
     },
     {
       "op": "resolve_place",
@@ -88741,7 +89895,22 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q1520931",
+          "label": "Middle Angles",
+          "description": "cultural sub-group of the Anglo-Saxons",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -88751,7 +89920,13 @@
         "probability": 0.8,
         "confidence": 0.73,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1520931",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Middle Angles of Bede's Mediterranei Angli, one of the provinces under Ceadda; Italian rendering is off."
     },
     {
       "op": "resolve_place",
@@ -92837,6 +94012,22 @@
             "Q548662"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q250584",
+          "label": "Morini",
+          "description": "Antica tribù celtica",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Morini"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -92848,7 +94039,13 @@
         "probability": 0.44,
         "confidence": 0.25,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q250584",
+        "country": "FR"
+      },
+      "confidence": "medium",
+      "reasoning": "See of the Morini, i.e. Thérouanne (the Italian rendering 'Maurienne' is a confusion). Morini tribe item."
     },
     {
       "op": "resolve_place",
@@ -95955,7 +97152,16 @@
         "probability": 0.94,
         "confidence": 0.92,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q756812",
+        "countries": [
+          "BE",
+          "FR"
+        ]
+      },
+      "confidence": "high",
+      "reasoning": "Nervians, Belgic tribe evangelized by Victricius of Rouen in the 4th century."
     },
     {
       "op": "resolve_place",
@@ -102664,7 +103870,35 @@
         "country: the item has no single current country (IR, TR, AF, AE, IQ, US, SA, QA)",
         "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q484206",
+          "label": "Persians",
+          "description": "gruppo etnico dell'Asia",
+          "country": null,
+          "countries": [
+            "IR",
+            "TR",
+            "AF",
+            "AE",
+            "IQ",
+            "US",
+            "SA",
+            "QA"
+          ],
+          "la": [
+            "Persae"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -102674,7 +103908,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q484206",
+        "country": "IR"
+      },
+      "confidence": "high",
+      "reasoning": "Persians; Aphraates was born in Persia in the 4th century."
     },
     {
       "op": "resolve_place",
@@ -102690,7 +103930,32 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q389688",
+          "label": "Achaemenid Empire",
+          "description": "impero persiano esistito dal 550 al 330 a.C.",
+          "country": null,
+          "countries": [
+            "Q124003554"
+          ],
+          "la": [
+            "Achaemenidae"
+          ],
+          "p9314": false,
+          "coords": [
+            32.53638889,
+            44.42083333
+          ],
+          "types": [
+            "Q3024240",
+            "Q11514315"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -102700,7 +103965,13 @@
         "probability": 0.85,
         "confidence": 0.8,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q389688",
+        "country": "IR"
+      },
+      "confidence": "medium",
+      "reasoning": "Achaemenid Persia under Artaxerxes (5th century BC); Persians Q484206 is the alternative."
     },
     {
       "op": "resolve_place",
@@ -103525,7 +104796,13 @@
         "probability": 0.72,
         "confidence": 0.63,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q21864830",
+        "country": "AT"
+      },
+      "confidence": "medium",
+      "reasoning": "Pinzgau, the Salzburg valley/region whose people Vitalis converted; no item for its inhabitants."
     },
     {
       "op": "resolve_place",
@@ -104020,6 +105297,20 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q1937043",
+          "label": "Pomeranians",
+          "description": "West Slavic tribe, that fromed around the 6th-century in the lower reaches of the Odra at the shore of the Baltic Sea",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -104031,7 +105322,13 @@
         "probability": 0.86,
         "confidence": 0.81,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1937043",
+        "country": "PL"
+      },
+      "confidence": "medium",
+      "reasoning": "Pomeranians, the West Slavic tribe evangelized by Otto of Bamberg in the 12th century."
     },
     {
       "op": "resolve_place",
@@ -109357,6 +110654,24 @@
             "Q11820611"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q1651392",
+          "label": "Romans",
+          "description": "cittadini della Repubblica romana e dell’Impero romano",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Romanus populus"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q1368367",
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -109368,7 +110683,13 @@
         "probability": 0.85,
         "confidence": 0.8,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1651392",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "A Roman by origin, in 3rd/4th-century Antioch context; ancient Romans."
     },
     {
       "op": "resolve_place",
@@ -109526,6 +110847,24 @@
             "Q11820611"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q1651392",
+          "label": "Romans",
+          "description": "cittadini della Repubblica romana e dell’Impero romano",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Romanus populus"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q1368367",
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -109537,7 +110876,13 @@
         "probability": 0.69,
         "confidence": 0.59,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1651392",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "Romans, the people of Rome, to whom Mark is said to have given his catechesis (1st century)."
     },
     {
       "op": "resolve_place",
@@ -111256,6 +112601,22 @@
             "Q1254933"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q914114",
+          "label": "Rus' people",
+          "description": "termine utilizzato per indicare le popolazioni scandinave che vivevano nelle regioni che attualmente fanno parte di Ucraina, Bielorussia e Russia occidentale",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Rhos"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -111267,7 +112628,17 @@
         "probability": 0.72,
         "confidence": 0.63,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q914114",
+        "countries": [
+          "RU",
+          "UA",
+          "BY"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Rus' people of Boris and Gleb (11th c. princes); Ruthenians Q690869 is an alternative."
     },
     {
       "op": "resolve_place",
@@ -115899,7 +117270,29 @@
         "country: the item has no single current country ()",
         "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q2065025",
+          "label": "Scillium",
+          "description": "titular see in Tunisia",
+          "country": "TN",
+          "countries": [
+            "TN"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            35.166667,
+            8.833333
+          ],
+          "types": [
+            "Q15217609"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -115909,7 +117302,13 @@
         "probability": 0.87,
         "confidence": 0.83,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2065025",
+        "country": "TN"
+      },
+      "confidence": "medium",
+      "reasoning": "People of Scilli in Africa (Scillium, now Kasserine area, Tunisia); the group item Q488248 is the martyrs themselves."
     },
     {
       "op": "resolve_place",
@@ -119842,6 +121241,20 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q149234",
+          "label": "Polabian Slavs",
+          "description": "ethnic group",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -119853,7 +121266,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q149234",
+        "country": "DE"
+      },
+      "confidence": "medium",
+      "reasoning": "Polabian Slavs (Wagrians/Obotrites) of Holstein evangelized by Vicelin; generic Slavs (Q40477) is the alternative."
     },
     {
       "op": "resolve_place",
@@ -122432,6 +123851,20 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q165192",
+          "label": "Swedes",
+          "description": "gruppo etnico",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -122443,7 +123876,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q165192",
+        "country": "SE"
+      },
+      "confidence": "low",
+      "reasoning": "Gosbert of Osnabruck was a missionary bishop in Sweden (11th c.), so Swedes rather than Swabians (Q155085 Suebi)."
     },
     {
       "op": "resolve_place",
@@ -122626,7 +124065,24 @@
         "country: the item has no single current country ()",
         "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q165192",
+          "label": "Swedes",
+          "description": "gruppo etnico",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -122636,7 +124092,13 @@
         "probability": 0.94,
         "confidence": 0.92,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q165192",
+        "country": "SE"
+      },
+      "confidence": "high",
+      "reasoning": "Swedes, converted by the English Cluniac missionary David in the 11th century."
     },
     {
       "op": "resolve_place",
@@ -122727,6 +124189,22 @@
             "Q1288568"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q878607",
+          "label": "Syrians",
+          "description": "cittadini o residenti in Siria",
+          "country": "SY",
+          "countries": [
+            "SY"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -122738,7 +124216,16 @@
         "probability": 0.43,
         "confidence": 0.24,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q878607",
+        "countries": [
+          "SY",
+          "TR"
+        ]
+      },
+      "confidence": "low",
+      "reasoning": "Syrians; Jacob of Sarug among Syriac-speaking Christians of Osroene. No better item for Syriac people found."
     },
     {
       "op": "resolve_place",
@@ -123010,7 +124497,27 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q101985",
+          "label": "Saxons",
+          "description": "antico popolo germanico",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Saxones",
+            "Saxoni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q41710",
+            "Q133311"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -123020,7 +124527,16 @@
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q101985",
+        "countries": [
+          "DE",
+          "NL"
+        ]
+      },
+      "confidence": "low",
+      "reasoning": "Pair of peoples (Saxons and Frisians); one item only. Saxons chosen; Frisians Q106416 is the other."
     },
     {
       "op": "resolve_place",
@@ -127815,7 +129331,13 @@
         "probability": 0.61,
         "confidence": 0.48,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q173219",
+        "country": "BE"
+      },
+      "confidence": "medium",
+      "reasoning": "No people item; the city of Tournai (Belgian town; area evangelized by Piatus)."
     },
     {
       "op": "resolve_place",
@@ -128677,6 +130199,22 @@
             "type",
             "p9314"
           ]
+        },
+        {
+          "wikidata": "Q322168",
+          "label": "Treveri",
+          "description": "tribe of Celts",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
@@ -128688,7 +130226,16 @@
         "probability": 0.81,
         "confidence": 0.75,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q322168",
+        "countries": [
+          "DE",
+          "LU"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Treveri, the Celtic tribe whose capital became Trier, evangelized by Maternus in the 4th century."
     },
     {
       "op": "resolve_place",
@@ -129810,6 +131357,20 @@
             "Q79007"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q2167763",
+          "label": "Tungri",
+          "description": "Tribe of ancient Belgica, northwest Europe",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -129821,7 +131382,13 @@
         "probability": 0.53,
         "confidence": 0.37,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2167763",
+        "country": "BE"
+      },
+      "confidence": "high",
+      "reasoning": "Tungri, the tribe of Roman Belgica whose civitas centered at Tongeren, Maternus' see."
     },
     {
       "op": "resolve_place",
@@ -131115,6 +132682,26 @@
             "Q33742"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q41975",
+          "label": "Mongols",
+          "description": "popolazione originaria della Mongolia",
+          "country": null,
+          "countries": [
+            "CN",
+            "MN",
+            "RU"
+          ],
+          "la": [
+            "Mongoli"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -131126,7 +132713,16 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q41975",
+        "countries": [
+          "MN",
+          "CN"
+        ]
+      },
+      "confidence": "low",
+      "reasoning": "Medieval 'Tartars' meant the Mongols (14th-century mission); Mongols item chosen over Tatars Q35565."
     },
     {
       "op": "resolve_place",
@@ -133998,7 +135594,27 @@
         "country: the item has no single current country ()",
         "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q158281",
+          "label": "Wends",
+          "description": "antico popolo proto-slavo",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Venedi"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q1137656",
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -134008,7 +135624,13 @@
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q158281",
+        "country": "DE"
+      },
+      "confidence": "medium",
+      "reasoning": "Wends (Slavs of the Baltic coast) evangelized from Ratzeburg by Isfrid in the 12th century."
     },
     {
       "op": "resolve_place",
@@ -140079,7 +141701,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q22633",
+          "label": "Germanic people",
+          "description": "popolazione europea",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Gentes Germanicae",
+            "Germani",
+            "Theodisci"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4533081"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -140089,7 +141730,13 @@
         "probability": 0.98,
         "confidence": 0.97,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q22633",
+        "country": "DE"
+      },
+      "confidence": "medium",
+      "reasoning": "Germanic peoples among whom Severus preached in the 5th century."
     },
     {
       "op": "resolve_place",
@@ -142647,7 +144294,25 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q849967",
+          "label": "Celtic Britons",
+          "description": "popolazione celtica delle Isole britanniche",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Britanni",
+            "Brittones"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -142657,7 +144322,13 @@
         "probability": 0.95,
         "confidence": 0.93,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q849967",
+        "country": "GB"
+      },
+      "confidence": "low",
+      "reasoning": "Congar in England; Briton by birth, likely a Celtic Briton (Welsh/West Country), but could be Breton Q309197."
     },
     {
       "op": "resolve_place",
@@ -146624,6 +148295,20 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q5059004",
+          "label": "Cappadocians",
+          "description": "",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -146635,7 +148320,13 @@
         "probability": 0.56,
         "confidence": 0.41,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q5059004",
+        "country": "TR"
+      },
+      "confidence": "medium",
+      "reasoning": "Cappadocians; the soldier-martyr Seleucus was a native of Cappadocia."
     },
     {
       "op": "resolve_place",
@@ -154468,7 +156159,37 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q2044",
+          "label": "Florence",
+          "description": "comune italiano, capoluogo dell'omonima città metropolitana e della regione Toscana",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [
+            "Florencia",
+            "Florentia"
+          ],
+          "p9314": true,
+          "coords": [
+            43.771388888889,
+            11.254166666667
+          ],
+          "types": [
+            "Q747074",
+            "Q1549591",
+            "Q5119",
+            "Q4115680"
+          ],
+          "evidence": [
+            "country",
+            "type",
+            "p9314"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -154478,7 +156199,13 @@
         "probability": 0.82,
         "confidence": 0.76,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2044",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "No Florentines people item; the city of Florence is used (11th-century soldier)."
     },
     {
       "op": "resolve_place",
@@ -155008,7 +156735,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q121842",
+          "label": "French",
+          "description": "cittadini o residenti in Francia",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q231002",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155018,7 +156764,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q121842",
+        "country": "FR"
+      },
+      "confidence": "medium",
+      "reasoning": "French-born John of Matha (12th century, Provence)."
     },
     {
       "op": "resolve_place",
@@ -155034,7 +156786,27 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q106416",
+          "label": "Frisians",
+          "description": "gruppo etnico germanico",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ],
+          "la": [
+            "Frisii"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155044,7 +156816,16 @@
         "probability": 0.99,
         "confidence": 0.99,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q106416",
+        "countries": [
+          "NL",
+          "DE"
+        ]
+      },
+      "confidence": "high",
+      "reasoning": "Frisians evangelized by Wulfram of Sens in the 7th century."
     },
     {
       "op": "resolve_place",
@@ -155060,7 +156841,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q22633",
+          "label": "Germanic people",
+          "description": "popolazione europea",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Gentes Germanicae",
+            "Germani",
+            "Theodisci"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4533081"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155070,7 +156870,13 @@
         "probability": 0.98,
         "confidence": 0.97,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q22633",
+        "country": "DE"
+      },
+      "confidence": "medium",
+      "reasoning": "Germanic peoples evangelized in the 8th century by Winebald."
     },
     {
       "op": "resolve_place",
@@ -155086,7 +156892,29 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q42884",
+          "label": "Germans",
+          "description": "gruppo etnico localizzato prevalentemente in Germania",
+          "country": null,
+          "countries": [
+            "DE",
+            "AT",
+            "LI",
+            "CH"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q6266",
+            "Q33829",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155096,7 +156924,13 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q42884",
+        "country": "DE"
+      },
+      "confidence": "high",
+      "reasoning": "German woman, 19th-century foundress; Germans."
     },
     {
       "op": "resolve_place",
@@ -155112,7 +156946,24 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q26404",
+          "label": "Gaetuli",
+          "description": "antica popolazione berbera",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Gaetuli"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155122,7 +156973,16 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q26404",
+        "countries": [
+          "DZ",
+          "MA"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Gaetuli, Berber people of North Africa; the monk Felix of Cordoba (9th century) was Gaetulian by nation."
     },
     {
       "op": "resolve_place",
@@ -155138,7 +156998,28 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q160894",
+          "label": "Spaniards",
+          "description": "persone native di qualsiasi parte della Spagna o che detengono la cittadinanza spagnola",
+          "country": "ES",
+          "countries": [
+            "ES"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q6266",
+            "Q2472587",
+            "Q16334295",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -155148,7 +157029,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q160894",
+        "country": "ES"
+      },
+      "confidence": "medium",
+      "reasoning": "Spanish martyrs persecuted by the Arian Vandals in 5th-century Africa; Spaniards."
     },
     {
       "op": "resolve_place",
@@ -182700,7 +184587,29 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q200569",
+          "label": "Dutch",
+          "description": "cittadini o residenti dei Paesi Bassi",
+          "country": null,
+          "countries": [
+            "NL",
+            "NL"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q6266",
+            "Q231002",
+            "Q2472587",
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -182710,7 +184619,13 @@
         "probability": 0.87,
         "confidence": 0.83,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q200569",
+        "country": "NL"
+      },
+      "confidence": "high",
+      "reasoning": "Dutch priest and professor, 20th-century martyr."
     },
     {
       "op": "resolve_place",
@@ -186380,7 +188295,26 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q1651392",
+          "label": "Romans",
+          "description": "cittadini della Repubblica romana e dell’Impero romano",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Romanus populus"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q1368367",
+            "Q33829"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -186390,7 +188324,13 @@
         "probability": 0.86,
         "confidence": 0.81,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1651392",
+        "country": "IT"
+      },
+      "confidence": "medium",
+      "reasoning": "Romans; Honorius of Canterbury was a Roman monk sent by Gregory the Great."
     },
     {
       "op": "resolve_place",
@@ -186873,7 +188813,22 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q2292989",
+          "label": "Scoti",
+          "description": "Latin name for the Gaels",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q3117863"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -186883,7 +188838,16 @@
         "probability": 0.97,
         "confidence": 0.96,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q2292989",
+        "countries": [
+          "IE",
+          "GB"
+        ]
+      },
+      "confidence": "medium",
+      "reasoning": "Scoti, Latin name for the Gaels, here an Irish-born 7th-century monk; Irish people Q170826 is the alternative."
     },
     {
       "op": "resolve_place",
@@ -186899,7 +188863,22 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q181634",
+          "label": "Scottish people",
+          "description": "Celtic-Germanic ethnic group native to Scotland",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -186909,7 +188888,13 @@
         "probability": 0.96,
         "confidence": 0.95,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q181634",
+        "country": "GB"
+      },
+      "confidence": "high",
+      "reasoning": "Scottish martyr of the 16th century."
     },
     {
       "op": "resolve_place",
@@ -192840,6 +194825,42 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q1061510",
+          "label": "Egyptians",
+          "description": "Ethnic group native to Egypt",
+          "country": null,
+          "countries": [
+            "EG",
+            "SA",
+            "LY",
+            "US",
+            "JO",
+            "KW",
+            "GB",
+            "AE",
+            "CA",
+            "IT",
+            "AU",
+            "IQ",
+            "GR",
+            "DE",
+            "NL",
+            "FR",
+            "AT",
+            "CH",
+            "ES"
+          ],
+          "la": [
+            "Aegyptiani"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -192851,7 +194872,13 @@
         "probability": 0.63,
         "confidence": 0.51,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1061510",
+        "country": "EG"
+      },
+      "confidence": "medium",
+      "reasoning": "Egyptians; the ascetics of Egypt whose conferences Cassian wrote (5th century)."
     },
     {
       "op": "resolve_place",
@@ -193419,6 +195446,28 @@
             "Q22808403"
           ],
           "evidence": []
+        },
+        {
+          "wikidata": "Q241790",
+          "label": "Kingdom of Kush",
+          "description": "regno dell'Africa settentrionale (785 a.C. - 350 d.C.)",
+          "country": null,
+          "countries": [
+            "Q241790"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            17.18,
+            33.83
+          ],
+          "types": [
+            "Q417175",
+            "Q3024240"
+          ],
+          "evidence": [
+            "type"
+          ]
         }
       ],
       "decision": null,
@@ -193430,7 +195479,13 @@
         "probability": 0.76,
         "confidence": 0.68,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q241790",
+        "country": "SD"
+      },
+      "confidence": "medium",
+      "reasoning": "Candace was queen of Kush (Meroe), the Ethiopia of the New Testament, not modern Ethiopia."
     },
     {
       "op": "resolve_place",
@@ -193545,6 +195600,42 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q1061510",
+          "label": "Egyptians",
+          "description": "Ethnic group native to Egypt",
+          "country": null,
+          "countries": [
+            "EG",
+            "SA",
+            "LY",
+            "US",
+            "JO",
+            "KW",
+            "GB",
+            "AE",
+            "CA",
+            "IT",
+            "AU",
+            "IQ",
+            "GR",
+            "DE",
+            "NL",
+            "FR",
+            "AT",
+            "CH",
+            "ES"
+          ],
+          "la": [
+            "Aegyptiani"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -193556,7 +195647,13 @@
         "probability": 0.91,
         "confidence": 0.88,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1061510",
+        "country": "EG"
+      },
+      "confidence": "high",
+      "reasoning": "Egyptian Christians martyred in Palestine under Maximian."
     },
     {
       "op": "resolve_place",
@@ -193572,7 +195669,44 @@
       "failed": [
         "no candidates found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q1061510",
+          "label": "Egyptians",
+          "description": "Ethnic group native to Egypt",
+          "country": null,
+          "countries": [
+            "EG",
+            "SA",
+            "LY",
+            "US",
+            "JO",
+            "KW",
+            "GB",
+            "AE",
+            "CA",
+            "IT",
+            "AU",
+            "IQ",
+            "GR",
+            "DE",
+            "NL",
+            "FR",
+            "AT",
+            "CH",
+            "ES"
+          ],
+          "la": [
+            "Aegyptiani"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "jev": {
@@ -193582,7 +195716,13 @@
         "probability": 0.93,
         "confidence": 0.91,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q1061510",
+        "country": "EG"
+      },
+      "confidence": "high",
+      "reasoning": "Egyptians; Barsanuphius the hermit was of Egyptian birth (6th century)."
     },
     {
       "op": "resolve_place",
@@ -193735,6 +195875,23 @@
           "evidence": [
             "type"
           ]
+        },
+        {
+          "wikidata": "Q862086",
+          "label": "Indians",
+          "description": "cittadini o residenti in India",
+          "country": "IN",
+          "countries": [
+            "IN"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q33829",
+            "Q231002"
+          ],
+          "evidence": []
         }
       ],
       "decision": null,
@@ -193746,7 +195903,13 @@
         "probability": 0.88,
         "confidence": 0.84,
         "model": "jev-1.14.0"
-      }
+      },
+      "suggested": {
+        "wikidata": "Q862086",
+        "country": "IN"
+      },
+      "confidence": "low",
+      "reasoning": "Peoples of India evangelized by the apostle Thomas by tradition; modern Indians used for want of a better item."
     },
     {
       "op": "resolve_place",
