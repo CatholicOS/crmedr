@@ -217,6 +217,12 @@
       "country": null,
       "status": "reviewed"
     },
+    "Africæ": {
+      "wikidata": "Q15",
+      "label": "Africa",
+      "country": null,
+      "status": "reviewed"
+    },
     "Agathæ in Gállia Narbonénsi": {
       "wikidata": "Q191396",
       "label": "Agde",
@@ -361,6 +367,12 @@
       "country": "NL",
       "status": "reviewed"
     },
+    "Alexandrinórum": {
+      "wikidata": "Q87",
+      "label": "Alexandria",
+      "country": "EG",
+      "status": "reviewed"
+    },
     "Alexandríam": {
       "wikidata": "Q87",
       "label": "Alexandria",
@@ -490,6 +502,12 @@
       "label": "Aussonce",
       "country": "FR",
       "status": "auto"
+    },
+    "Altivillariénsis": {
+      "wikidata": "Q753780",
+      "label": "Hautvillers",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Altomónte super Sambram in Hannónia": {
       "wikidata": "Q498865",
@@ -633,6 +651,12 @@
       "wikidata": "Q455458",
       "label": "Amasra",
       "country": "TR",
+      "status": "reviewed"
+    },
+    "Américam": {
+      "wikidata": "Q828",
+      "label": "Americas",
+      "country": null,
       "status": "reviewed"
     },
     "Amériæ in Umbria": {
@@ -812,6 +836,12 @@
     "Antiochéni": {
       "wikidata": "Q200441",
       "label": "Antioch",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Antiochénum": {
+      "wikidata": "Q80561",
+      "label": "Antakya",
       "country": "TR",
       "status": "reviewed"
     },
@@ -2205,6 +2235,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Armacháni": {
+      "wikidata": "Q193452",
+      "label": "Armagh",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Armi prope Rhégium Iúlii in Calábria": {
       "wikidata": "Q18431798",
       "label": "Armo",
@@ -2216,6 +2252,12 @@
       "label": "Armenia",
       "country": "AM",
       "status": "auto"
+    },
+    "Armórica": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Aroúquæ in Lusitánia": {
       "wikidata": "Q565302",
@@ -2287,6 +2329,18 @@
       "wikidata": "Q6624",
       "label": "Ascoli Piceno",
       "country": "IT",
+      "status": "reviewed"
+    },
+    "Asiam": {
+      "wikidata": "Q48",
+      "label": "Asia",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Asiæ": {
+      "wikidata": "Q48",
+      "label": "Asia",
+      "country": null,
       "status": "reviewed"
     },
     "Assumptióne in Paraquária": {
@@ -2607,6 +2661,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Aventíno": {
+      "wikidata": "Q194103",
+      "label": "Aventine Hill",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Aviliánæ in território Taurinénsi in Subalpínis": {
       "wikidata": "Q9008",
       "label": "Avigliana",
@@ -2641,6 +2701,12 @@
       "wikidata": "Q21758292",
       "label": "Azogyres Palaiochoras, Chania",
       "country": "GR",
+      "status": "reviewed"
+    },
+    "Babylóne": {
+      "wikidata": "Q5684",
+      "label": "Babylon",
+      "country": "IQ",
       "status": "reviewed"
     },
     "Baiocénsem": {
@@ -2739,6 +2805,12 @@
       "country": "SR",
       "status": "reviewed"
     },
+    "Baváriam": {
+      "wikidata": "Q47261",
+      "label": "Duchy of Bavaria",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Bellavallénsis": {
       "wikidata": "Q4877960",
       "label": "Beauvale Priory",
@@ -2748,6 +2820,12 @@
     "Belli Loci in pago Cadurcénsi in Gállia": {
       "wikidata": "Q1112574",
       "label": "Issendolus",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Bellicénsis": {
+      "wikidata": "Q188496",
+      "label": "Belley",
       "country": "FR",
       "status": "reviewed"
     },
@@ -2810,6 +2888,12 @@
       "label": "Aleppo",
       "country": "SY",
       "status": "jev"
+    },
+    "Bethsáidæ": {
+      "wikidata": "Q501773",
+      "label": "Bethsaida",
+      "country": "IL",
+      "status": "reviewed"
     },
     "Bethsáloe in Augústa Euphratésia província Sýriæ": {
       "wikidata": "Q631407",
@@ -2917,6 +3001,12 @@
       "wikidata": "Q51895",
       "label": "Bovino",
       "country": "IT",
+      "status": "reviewed"
+    },
+    "Bohémiæ": {
+      "wikidata": "Q39193",
+      "label": "Bohemia",
+      "country": "CZ",
       "status": "reviewed"
     },
     "Bonaerópoli in Argentína": {
@@ -3036,6 +3126,12 @@
       "wikidata": "Q3240725",
       "label": "Britannia",
       "country": "GB",
+      "status": "reviewed"
+    },
+    "Británniæ": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
       "status": "reviewed"
     },
     "Briváte apud Arvérnos in Aquitánia": {
@@ -3218,6 +3314,12 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "Buriburgénsis": {
+      "wikidata": "Q314174",
+      "label": "Büraburg",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Busséti in território Fidentíno in Æmília": {
       "wikidata": "Q100772",
       "label": "Busseto",
@@ -3323,6 +3425,12 @@
     "Cabillóni in Gállia Lugdunénsi": {
       "wikidata": "Q203645",
       "label": "Chalon-sur-Saône",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Cadurcénsis": {
+      "wikidata": "Q23047",
+      "label": "Cahors",
       "country": "FR",
       "status": "reviewed"
     },
@@ -3475,6 +3583,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Cantuariénsis": {
+      "wikidata": "Q29303",
+      "label": "Canterbury",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Cantuariénsis in Anglia": {
       "wikidata": "Q29303",
       "label": "Canterbury",
@@ -3521,6 +3635,12 @@
       "wikidata": "Q1226916",
       "label": "Capitolias",
       "country": "JO",
+      "status": "reviewed"
+    },
+    "Cappadócia": {
+      "wikidata": "Q217265",
+      "label": "Cappadocia",
+      "country": "TR",
       "status": "reviewed"
     },
     "Capránicæ in agro Viterbiénsi prope Romam": {
@@ -3624,6 +3744,12 @@
       "label": "Carrara",
       "country": "IT",
       "status": "auto"
+    },
+    "Carthaginénsis": {
+      "wikidata": "Q6343",
+      "label": "Carthage",
+      "country": "TN",
+      "status": "reviewed"
     },
     "Carthágine": {
       "wikidata": "Q6343",
@@ -3799,6 +3925,18 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Chalcedonénse": {
+      "wikidata": "Q170531",
+      "label": "Council of Chalcedon",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Chalcedonénsi": {
+      "wikidata": "Q170531",
+      "label": "Council of Chalcedon",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Chalcédone in Bithýnia": {
       "wikidata": "Q337381",
       "label": "Chalcedon",
@@ -3969,6 +4107,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Cluníaci": {
+      "wikidata": "Q220301",
+      "label": "Cluny Abbey",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Cluníaci in Burgúndia": {
       "wikidata": "Q192982",
       "label": "Cluny",
@@ -3998,6 +4142,18 @@
       "label": "English College",
       "country": "FR",
       "status": "jev"
+    },
+    "Collégii Anglórum Reménsis": {
+      "wikidata": "Q141807809",
+      "label": "English College, Reims",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Collégio Anglórum Reménsi": {
+      "wikidata": "Q141807809",
+      "label": "English College, Reims",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Collégio Anglórum Románo": {
       "wikidata": "Q981752",
@@ -4203,6 +4359,18 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Constantinopolitáno": {
+      "wikidata": "Q406",
+      "label": "Istanbul",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Constantinopolitánum": {
+      "wikidata": "Q406",
+      "label": "Istanbul",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Constantinópoli": {
       "wikidata": "Q16869",
       "label": "Constantinople",
@@ -4334,6 +4502,12 @@
       "label": "Corinth",
       "country": "GR",
       "status": "auto"
+    },
+    "Corínthii": {
+      "wikidata": "Q103011",
+      "label": "Corinth",
+      "country": "GR",
+      "status": "reviewed"
     },
     "Corýci in Cilícia": {
       "wikidata": "Q2167586",
@@ -4599,6 +4773,12 @@
       "country": "GB",
       "status": "auto"
     },
+    "Cæsaréam": {
+      "wikidata": "Q319242",
+      "label": "Caesarea Maritima",
+      "country": "IL",
+      "status": "reviewed"
+    },
     "Cæsaréæ Cappadóciæ": {
       "wikidata": "Q10439273",
       "label": "Caesarea of Cappadocia",
@@ -4707,11 +4887,23 @@
       "country": "IT",
       "status": "jev"
     },
+    "Dacháni": {
+      "wikidata": "Q151198",
+      "label": "Dachau concentration camp",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Dacháni prope Monáchium Baváriæ in Germánia": {
       "wikidata": "Q7077",
       "label": "Dachau",
       "country": "DE",
       "status": "auto"
+    },
+    "Dalmátiæ": {
+      "wikidata": "Q1330965",
+      "label": "Dalmatia",
+      "country": "HR",
+      "status": "reviewed"
     },
     "Damásci": {
       "wikidata": "Q3766",
@@ -4947,6 +5139,12 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "Dumiénsis": {
+      "wikidata": "Q840362",
+      "label": "Mondoñedo",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Dumnóci in Anglia": {
       "wikidata": "Q188020",
       "label": "Dunwich",
@@ -5121,6 +5319,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Eliénsis": {
+      "wikidata": "Q209176",
+      "label": "Ely",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Elnóne item in Gállia Bélgica": {
       "wikidata": "Q626309",
       "label": "Saint-Amand-les-Eaux",
@@ -5181,6 +5385,24 @@
       "country": "FR",
       "status": "auto"
     },
+    "Ephesi": {
+      "wikidata": "Q47611",
+      "label": "Ephesus",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Ephesíno": {
+      "wikidata": "Q184332",
+      "label": "First Council of Ephesus",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Ephesínum": {
+      "wikidata": "Q184332",
+      "label": "First Council of Ephesus",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Eporédiæ in Subalpínis": {
       "wikidata": "Q9409",
       "label": "Ivrea",
@@ -5211,6 +5433,12 @@
       "country": "GR",
       "status": "reviewed"
     },
+    "Esquilíno": {
+      "wikidata": "Q211233",
+      "label": "Esquiline Hill",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Eugúbii in Umbria": {
       "wikidata": "Q20458",
       "label": "Gubbio",
@@ -5222,6 +5450,18 @@
       "label": "Euphrates",
       "country": "TR",
       "status": "jev"
+    },
+    "Európa": {
+      "wikidata": "Q46",
+      "label": "Europe",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Európam": {
+      "wikidata": "Q46",
+      "label": "Europe",
+      "country": null,
+      "status": "reviewed"
     },
     "Európæ septemtrionális": {
       "wikidata": "Q27479",
@@ -5405,6 +5645,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "Fontis Avellánæ": {
+      "wikidata": "Q978549",
+      "label": "Monastery of Fonte Avellana",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Fontis Frígidæ": {
       "wikidata": "Q334263",
       "label": "Fontfroide Abbey",
@@ -5543,6 +5789,12 @@
       "country": "BE",
       "status": "reviewed"
     },
+    "Fæsuláni": {
+      "wikidata": "Q82670",
+      "label": "Fiesole",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Fínniam": {
       "wikidata": "Q33",
       "label": "Finland",
@@ -5579,6 +5831,16 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Galliárum": {
+      "wikidata": "Q273854",
+      "label": "Gauls",
+      "country": null,
+      "countries": [
+        "FR",
+        "BE"
+      ],
+      "status": "reviewed"
+    },
     "Gallésii apud Vitérbium in Túscia": {
       "wikidata": "Q161685",
       "label": "Gallese",
@@ -5613,6 +5875,12 @@
       "wikidata": "Q34731",
       "label": "Gavello",
       "country": "IT",
+      "status": "reviewed"
+    },
+    "Gazam": {
+      "wikidata": "Q39760",
+      "label": "Gaza Strip",
+      "country": "PS",
       "status": "reviewed"
     },
     "Gazæ in Palæstína": {
@@ -5746,6 +6014,12 @@
       "label": "Gniezno",
       "country": "PL",
       "status": "auto"
+    },
+    "Gnesnénsis": {
+      "wikidata": "Q51432",
+      "label": "Gniezno",
+      "country": "PL",
+      "status": "reviewed"
     },
     "Gortýnæ in ínsula Creta": {
       "wikidata": "Q1136193",
@@ -6035,6 +6309,16 @@
       "country": "IE",
       "status": "auto"
     },
+    "Hibérniam": {
+      "wikidata": "Q22890",
+      "label": "Ireland",
+      "country": null,
+      "countries": [
+        "IE",
+        "GB"
+      ],
+      "status": "reviewed"
+    },
     "Hierosolymitánam": {
       "wikidata": "Q1218",
       "label": "Jerusalem",
@@ -6123,6 +6407,12 @@
       "country": "ES",
       "status": "auto"
     },
+    "Hispániam": {
+      "wikidata": "Q29",
+      "label": "Spain",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Hispániæ": {
       "wikidata": "Q29",
       "label": "Spain",
@@ -6147,6 +6437,12 @@
       "country": "CZ",
       "status": "jev"
     },
+    "Hungarórum": {
+      "wikidata": "Q133032",
+      "label": "Hungarians",
+      "country": "HU",
+      "status": "reviewed"
+    },
     "Hungária": {
       "wikidata": "Q28",
       "label": "Hungary",
@@ -6165,6 +6461,12 @@
       "country": "HU",
       "status": "auto"
     },
+    "Hurónes": {
+      "wikidata": "Q138544527",
+      "label": "Wendat people",
+      "country": "CA",
+      "status": "reviewed"
+    },
     "Huéi in Annámia": {
       "wikidata": "Q36399",
       "label": "Huế",
@@ -6182,6 +6484,12 @@
       "label": "Nicosia",
       "country": "IT",
       "status": "auto"
+    },
+    "Hério ínsula": {
+      "wikidata": "Q292346",
+      "label": "Isle of Noirmoutier",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Híspali": {
       "wikidata": "Q8717",
@@ -12317,11 +12625,23 @@
       "country": "GB",
       "status": "auto"
     },
+    "Lingonénsis": {
+      "wikidata": "Q203293",
+      "label": "Langres",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Lirinénse monastérium": {
       "wikidata": "Q334008",
       "label": "Abbaye Saint-Honorat de Lérins",
       "country": "FR",
       "status": "jev"
+    },
+    "Lirinénsis": {
+      "wikidata": "Q334008",
+      "label": "Abbaye Saint-Honorat de Lérins",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Lirinénsis cœnóbii": {
       "wikidata": "Q334008",
@@ -13705,6 +14025,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Nolánus": {
+      "wikidata": "Q72288",
+      "label": "Nola",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Nolæ in Campánia": {
       "wikidata": "Q72288",
       "label": "Nola",
@@ -13969,6 +14295,12 @@
       "country": null,
       "status": "reviewed"
     },
+    "Oriéntem": {
+      "wikidata": "Q205653",
+      "label": "Orient",
+      "country": null,
+      "status": "reviewed"
+    },
     "Ortónæ in Aprútio": {
       "wikidata": "Q51256",
       "label": "Ortona",
@@ -14093,6 +14425,12 @@
       "label": "Palena",
       "country": "IT",
       "status": "auto"
+    },
+    "Pannónia": {
+      "wikidata": "Q170062",
+      "label": "Pannonia",
+      "country": null,
+      "status": "reviewed"
     },
     "Panórmi in Sicília": {
       "wikidata": "Q2656",
@@ -16058,6 +16396,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Sardicénse": {
+      "wikidata": "Q4067160",
+      "label": "Serdica",
+      "country": "BG",
+      "status": "reviewed"
+    },
     "Sardis in Lýdia": {
       "wikidata": "Q232615",
       "label": "Sardis",
@@ -16584,6 +16928,12 @@
       "country": "SE",
       "status": "jev"
     },
+    "Suessionénsis": {
+      "wikidata": "Q167152",
+      "label": "Soissons",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Suessióne in Gállia": {
       "wikidata": "Q167152",
       "label": "Soissons",
@@ -16865,6 +17215,12 @@
       "label": "Tarsus",
       "country": "TR",
       "status": "jev"
+    },
+    "Taruannénsis": {
+      "wikidata": "Q261399",
+      "label": "Thérouanne",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Taruánnæ item in Gállia": {
       "wikidata": "Q261399",
@@ -17544,6 +17900,12 @@
       "country": "DE",
       "status": "auto"
     },
+    "Ultraiecténsis": {
+      "wikidata": "Q803",
+      "label": "Utrecht",
+      "country": "NL",
+      "status": "reviewed"
+    },
     "Ultraiécti in Géldria Austrásiæ": {
       "wikidata": "Q803",
       "label": "Utrecht",
@@ -18002,6 +18364,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Viennénsis": {
+      "wikidata": "Q26849",
+      "label": "Vienne",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Viglebáni in Langobárdia": {
       "wikidata": "Q40832",
       "label": "Vigevano",
@@ -18102,6 +18470,12 @@
       "wikidata": "Q2135",
       "label": "Winnipeg",
       "country": "CA",
+      "status": "reviewed"
+    },
+    "Vintoniénses": {
+      "wikidata": "Q172157",
+      "label": "Winchester",
+      "country": "GB",
       "status": "reviewed"
     },
     "Vintóniæ in Anglia": {
@@ -18438,6 +18812,12 @@
       "country": "IT",
       "status": "jev"
     },
+    "cambriénsis": {
+      "wikidata": "Q188353",
+      "label": "Welsh people",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "campo detentiónis Dacháni": {
       "wikidata": "Q151198",
       "label": "Dachau concentration camp",
@@ -18495,6 +18875,12 @@
         "PS"
       ],
       "status": "jev"
+    },
+    "civitátis Corínthi": {
+      "wikidata": "Q103011",
+      "label": "Corinth",
+      "country": "GR",
+      "status": "reviewed"
     },
     "colle Aventíno": {
       "wikidata": "Q194103",
@@ -18823,6 +19209,11 @@
       "country": "PS",
       "status": "jev"
     },
+    "loca sancta": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "generic phrase for the Holy Places, not one identifiable place"
+    },
     "loco Aljustrel": {
       "wikidata": "Q939511",
       "label": "Aljustrel",
@@ -18892,6 +19283,12 @@
       "label": "Killevy Monastic Site",
       "country": "GB",
       "status": "jev"
+    },
+    "monastérii Nonneburgénsis": {
+      "wikidata": "Q693876",
+      "label": "Nonnberg Abbey",
+      "country": "AT",
+      "status": "reviewed"
     },
     "monastérii Peleceténsis": {
       "wikidata": "Q15622515",
@@ -19273,6 +19670,16 @@
       "country": "IT",
       "status": "jev"
     },
+    "terram promissiónis": {
+      "wikidata": "Q23792",
+      "label": "Palestine",
+      "country": null,
+      "countries": [
+        "PS",
+        "IL"
+      ],
+      "status": "reviewed"
+    },
     "turri Nigræ Portæ": {
       "wikidata": "Q152339",
       "label": "Porta Nigra",
@@ -19402,6 +19809,12 @@
     "ínsula Lirinénsi": {
       "wikidata": "Q334008",
       "label": "Abbaye Saint-Honorat de Lérins",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "ínsula próxima Lirinénsem": {
+      "wikidata": "Q292642",
+      "label": "Lérins Islands",
       "country": "FR",
       "status": "reviewed"
     },
