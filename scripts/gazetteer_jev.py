@@ -19,7 +19,8 @@ KINDS = ("place", "people", "relative", "not_place")
 
 KIND_CRITERIA = {
     "place": ("a settlement, site, building, region or country: a place one could find on a map; also a "
-              "council named by its city (Chalcedonense, Ephesinum)"),
+              "council named by its city (Chalcedonense, Ephesinum), and a church or see named by its "
+              "city (Ecclesia Romana, sedes Romana, Ecclesia Constantinopolitana)"),
     "people": ("a nationality or a people (anglus, polonus, a tribe or a kingdom named by its people, "
                "Merciorum)"),
     "relative": ("a place named only in relation to the eulogy (this city, the same monastery), which the "
@@ -148,7 +149,9 @@ PICK_INSTRUCTIONS = (
     "the phrase is the adjective of a monastery (Cluniacensis: of Cluny) or the island of a monastery in a "
     "eulogy of its monks (insula Lirinensis), choose the monastery or abbey rather than its town or island; "
     "so too for the monastery's own place name in such a eulogy (Cluniaci: at Cluny Abbey). When the "
-    "phrase names a council by its city (Chalcedonense, Ephesinum), choose the council's item. Asia and "
+    "phrase names a council by its city (Chalcedonense, Ephesinum), choose the council's item; a church "
+    "or see named by its city (Ecclesia Romana: the Diocese of Rome; sedes Romana: the Holy See; "
+    "Ecclesia Constantinopolitana: the Ecumenical Patriarchate), the see's item. Asia and "
     "Africa are the continents, unless the phrase names the Roman province (Africa Proconsularis). "
     "Answer none if no candidate is this place."
 )
