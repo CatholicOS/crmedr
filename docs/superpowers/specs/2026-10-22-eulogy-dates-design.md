@@ -107,14 +107,19 @@ candidates for the curator; it does not guess their dates.
 
 ## The era estimate
 
-For eulogies with no death date, a model reads the Latin, Italian and English text and picks the
-**century** the eulogy is set in, or "cannot tell". The state sent is the Latin, Italian and
-English texts of the eulogy and its typology, as in the gazetteer Jev pass. My call: Jev (one Choice question, centuries 1–21
-plus "cannot tell"), because the same 904 dated eulogies give a ready calibration set: run Jev on
-them, report agreement (exact century, within one) by probability, and let the curator pick a
-threshold, as for the gazetteer suggestions. A pick at or above the threshold is written as
-`{from, to, source: "estimate"}` spanning that century, intersected with the edition bound when there
-is one. Below it, nothing is written.
+For eulogies with no death date, a model reads the eulogy's opening clause and picks the
+**century** the eulogy is set in, or "cannot tell". The state sent follows the curator's ruling of
+2026-10-18 for every TypeSafe request: one clause of the 2004 Latin and one of the English (the first
+sentence, at most 400 characters), never a whole eulogy; with them the typology and the oldest
+edition before 2004 that prints the eulogy, if any. My call: Jev, one Choice of 23 options (before
+Christ, the 1st to the 21st century, cannot tell; a Score holds at most 10 levels), because the dated
+eulogies give a ready calibration set: run Jev on them, report agreement (the right century, and
+within one) by probability, and let the curator pick a threshold, as for the gazetteer suggestions.
+Jev's answers are stored without text in `data/date_estimates.json`; a pick at or above the
+threshold is written as `{from, to, source: "estimate"}` spanning that century (before Christ: `to:
+-1` alone), cut at the edition bound when there is one, and dropped when the century begins after
+the bound. Below the threshold, or "cannot tell", nothing is written. Precedence: curated, death
+dates, estimate, edition bound.
 
 A century is coarse, but the era-sensitive choices this serves
 are centuries apart (ancient or medieval Ireland against the state of 1937, Achaemenid against
