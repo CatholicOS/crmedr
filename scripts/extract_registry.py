@@ -2270,6 +2270,15 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"prayer\" where the Latin \"oratiónibus\" here means discourses."
         ),
     },
+    "mr:0129-gilda-sapiens": {
+        EDITION_IT: (
+            "Possible translation error: \"scrisse sullo sterminio della Bretagna\" where the Latin "
+            "has \"de excídio Británniæ scripsit\". The Latin names Gildas's work De excidio "
+            "Britanniae, on the ruin of Britain, the island of Great Britain (\"Britannia\" in "
+            "Italian); \"Bretagna\" usually means Brittany, the \"Británnia Minor\" where the "
+            "eulogy places him. The curator's query (2026-10-22)."
+        ),
+    },
     "mr:0129-sulpicius-severus": {
         EDITION_EN: (
             "Translation error: \"formerly a senator\" where the Latin has \"e senatóribus "
