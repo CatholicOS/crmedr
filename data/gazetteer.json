@@ -849,6 +849,12 @@
       "country": "TR",
       "status": "auto"
     },
+    "Anastasiopolitánus": {
+      "wikidata": "Q486772",
+      "label": "Anastasiopoli",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Anastasiópoli in Galátia": {
       "wikidata": "Q11931097",
       "label": "Lagania",
@@ -957,11 +963,23 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "Angliæ": {
+      "wikidata": "Q179876",
+      "label": "Kingdom of England",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Angliæ Cantuariénsem": {
       "wikidata": "Q29303",
       "label": "Canterbury",
       "country": "GB",
       "status": "jev"
+    },
+    "Anglos": {
+      "wikidata": "Q104238",
+      "label": "Angles",
+      "country": "GB",
+      "status": "reviewed"
     },
     "Anglos orientáles": {
       "wikidata": "Q837998",
@@ -998,6 +1016,12 @@
       "label": "Royal abbey of Aniane",
       "country": "FR",
       "status": "jev"
+    },
+    "Anninsulénsis": {
+      "wikidata": "Q923203",
+      "label": "Saint-Calais",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Annáiæ in Líbano": {
       "wikidata": "Q2850736",
@@ -1047,6 +1071,12 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Antiochénæ Ecclésiæ": {
+      "wikidata": "Q3057751",
+      "label": "Church of Antioch",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Antiochíæ": {
       "wikidata": "Q200441",
       "label": "Antioch",
@@ -1069,6 +1099,12 @@
       "wikidata": "Q200441",
       "label": "Antioch",
       "country": "TR",
+      "status": "reviewed"
+    },
+    "Antro ínsula": {
+      "wikidata": "Q457613",
+      "label": "Indre",
+      "country": "FR",
       "status": "reviewed"
     },
     "Antvérpiæ in Brabántia": {
@@ -2323,6 +2359,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Aquæregénsium": {
+      "wikidata": "Q622989",
+      "label": "Aquae Regiae",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "Aquénsis in Subalpínis": {
       "wikidata": "Q17244",
       "label": "Acqui Terme",
@@ -2340,6 +2382,12 @@
       "label": "Kingdom of Aragon",
       "country": "ES",
       "status": "jev"
+    },
+    "Araniénsi ínsula": {
+      "wikidata": "Q369318",
+      "label": "Inis Mór",
+      "country": "IE",
+      "status": "reviewed"
     },
     "Arausióne in Província Gálliæ": {
       "wikidata": "Q187796",
@@ -2383,11 +2431,28 @@
       "country": "IE",
       "status": "reviewed"
     },
+    "Ardstraténsis": {
+      "wikidata": "Q2446135",
+      "label": "Ardstraw",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Arduennénsis silvæ": {
       "wikidata": "Q3078760",
       "label": "Ardennes Forest",
       "country": "FR",
       "status": "jev"
+    },
+    "Arduénnam": {
+      "wikidata": "Q151985",
+      "label": "Ardennes",
+      "country": null,
+      "countries": [
+        "BE",
+        "LU",
+        "FR"
+      ],
+      "status": "reviewed"
     },
     "Ardáchæ in Hibérnia": {
       "wikidata": "Q638453",
@@ -2424,6 +2489,12 @@
       "label": "Arequipa",
       "country": "PE",
       "status": "auto"
+    },
+    "Arethúsæ in Sýria": {
+      "wikidata": "Q1867822",
+      "label": "Al-Rastan",
+      "country": "SY",
+      "status": "reviewed"
     },
     "Argentoráti in Burgúndia": {
       "wikidata": "Q6602",
@@ -2467,6 +2538,12 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "Armenórum": {
+      "wikidata": "Q79797",
+      "label": "Armenians",
+      "country": "AM",
+      "status": "reviewed"
+    },
     "Armi prope Rhégium Iúlii in Calábria": {
       "wikidata": "Q18431798",
       "label": "Armo",
@@ -2478,6 +2555,12 @@
       "label": "Armenia",
       "country": "AM",
       "status": "auto"
+    },
+    "Arméniam": {
+      "wikidata": "Q399",
+      "label": "Armenia",
+      "country": "AM",
+      "status": "reviewed"
     },
     "Armórica": {
       "wikidata": "Q327",
@@ -2491,6 +2574,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "Armóricæ": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Armóricæ regiónis": {
       "wikidata": "Q641203",
       "label": "Armorica",
@@ -2501,6 +2590,12 @@
       "wikidata": "Q565302",
       "label": "Arouca",
       "country": "PT",
+      "status": "reviewed"
+    },
+    "Arundeliénsis": {
+      "wikidata": "Q716658",
+      "label": "Arundel",
+      "country": "GB",
       "status": "reviewed"
     },
     "Arvernórum": {
@@ -2514,6 +2609,18 @@
       "label": "Clermont-Ferrand",
       "country": "FR",
       "status": "jev"
+    },
+    "Arvérno território": {
+      "wikidata": "Q1193946",
+      "label": "Auvergne",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Arvérnos": {
+      "wikidata": "Q1193946",
+      "label": "Auvergne",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Arvérnæ in Aquitánia": {
       "wikidata": "Q42168",
@@ -2575,6 +2682,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Asia": {
+      "wikidata": "Q48",
+      "label": "Asia",
+      "country": null,
+      "status": "reviewed"
+    },
     "Asiam": {
       "wikidata": "Q51614",
       "label": "Anatolia",
@@ -2630,6 +2743,12 @@
       "label": "Assisi",
       "country": "IT",
       "status": "auto"
+    },
+    "Atheniénsium": {
+      "wikidata": "Q120096553",
+      "label": "Athenians",
+      "country": "GR",
+      "status": "reviewed"
     },
     "Athenárum": {
       "wikidata": "Q1524",
@@ -2865,6 +2984,19 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Austrásiæ": {
+      "wikidata": "Q105098",
+      "label": "Austrasia",
+      "country": null,
+      "countries": [
+        "FR",
+        "DE",
+        "BE",
+        "LU",
+        "NL"
+      ],
+      "status": "reviewed"
+    },
     "Autissiodorénsi": {
       "wikidata": "Q167600",
       "label": "Auxerre",
@@ -2979,6 +3111,12 @@
       "country": "DE",
       "status": "jev"
     },
+    "Bagaiénsis in Numídia": {
+      "wikidata": "Q799816",
+      "label": "Bagai",
+      "country": "DZ",
+      "status": "reviewed"
+    },
     "Baiocénsem": {
       "wikidata": "Q183910",
       "label": "Bayeux",
@@ -3008,6 +3146,12 @@
       "label": "Bangor",
       "country": "GB",
       "status": "jev"
+    },
+    "Bangértii": {
+      "wikidata": "Q234178",
+      "label": "Bangor",
+      "country": "GB",
+      "status": "reviewed"
     },
     "Barbastrénsis": {
       "wikidata": "Q502975",
@@ -3075,6 +3219,12 @@
       "country": "PT",
       "status": "reviewed"
     },
+    "Basutórum": {
+      "wikidata": "Q2340665",
+      "label": "Basutoland",
+      "country": "LS",
+      "status": "reviewed"
+    },
     "Bathnis item in Osrhoéne": {
       "wikidata": "Q23640824",
       "label": "Batnæ",
@@ -3120,6 +3270,12 @@
     "Belli Loci in pago Cadurcénsi in Gállia": {
       "wikidata": "Q1112574",
       "label": "Issendolus",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Bellicénsem": {
+      "wikidata": "Q188496",
+      "label": "Belley",
       "country": "FR",
       "status": "reviewed"
     },
@@ -3214,6 +3370,12 @@
       "country": "SY",
       "status": "reviewed"
     },
+    "Bethániæ prope Hierosólymam": {
+      "wikidata": "Q831190",
+      "label": "Bethany",
+      "country": "PS",
+      "status": "reviewed"
+    },
     "Beverláci in Northúmbria": {
       "wikidata": "Q851718",
       "label": "Beverley",
@@ -3267,6 +3429,12 @@
       "label": "Bourges",
       "country": "FR",
       "status": "jev"
+    },
+    "Bituríges": {
+      "wikidata": "Q745145",
+      "label": "Bituriges",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Biturígis in Aquitánia": {
       "wikidata": "Q132404",
@@ -3322,11 +3490,23 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Bohemórum": {
+      "wikidata": "Q39193",
+      "label": "Bohemia",
+      "country": "CZ",
+      "status": "reviewed"
+    },
     "Bohémia": {
       "wikidata": "Q39193",
       "label": "Bohemia",
       "country": "CZ",
       "status": "jev"
+    },
+    "Bohémiam": {
+      "wikidata": "Q39193",
+      "label": "Bohemia",
+      "country": "CZ",
+      "status": "reviewed"
     },
     "Bohémiæ": {
       "wikidata": "Q39193",
@@ -3405,6 +3585,12 @@
       ],
       "status": "jev"
     },
+    "Brabántiam": {
+      "wikidata": "Q3051218",
+      "label": "Brabante",
+      "country": "BE",
+      "status": "reviewed"
+    },
     "Bracarénsis": {
       "wikidata": "Q83247",
       "label": "Braga",
@@ -3477,11 +3663,29 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "Británnia Minóre": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Británniam Minórem": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Británniam inferiórem": {
       "wikidata": "Q685537",
       "label": "Britannia Inferior",
       "country": "GB",
       "status": "jev"
+    },
+    "Británniæ@mr:0129-gilda-sapiens": {
+      "wikidata": "Q23666",
+      "label": "Great Britain",
+      "country": "GB",
+      "status": "reviewed"
     },
     "Británniæ@mr:0929-carolus-de-blesis": {
       "wikidata": "Q327",
@@ -3493,6 +3697,12 @@
       "wikidata": "Q327",
       "label": "Brittany",
       "country": "FR",
+      "status": "reviewed"
+    },
+    "Británnos": {
+      "wikidata": "Q849967",
+      "label": "Celtic Britons",
+      "country": "GB",
       "status": "reviewed"
     },
     "Briváte apud Arvérnos in Aquitánia": {
@@ -3703,11 +3913,23 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Butriénsis monastérii": {
+      "wikidata": "Q3731350",
+      "label": "Eremo di Sant'Alberto di Butrio",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Byzaciénsis": {
       "wikidata": "Q1018744",
       "label": "Byzacena",
       "country": "TN",
       "status": "jev"
+    },
+    "Byzacénæ": {
+      "wikidata": "Q1018744",
+      "label": "Byzacena",
+      "country": "TN",
+      "status": "reviewed"
     },
     "Byzántii": {
       "wikidata": "Q23725",
@@ -3863,11 +4085,22 @@
       "country": "ES",
       "status": "auto"
     },
+    "Calamiténsis": {
+      "wikidata": "Q141810108",
+      "label": "Monastery of San Nicola di Calamizzi",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Calaménsis in Numídia": {
       "wikidata": "Q609871",
       "label": "Guelma",
       "country": "DZ",
       "status": "jev"
+    },
+    "Calatráva": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "the phrase is really a religious order not a place"
     },
     "Calcúttæ in India": {
       "wikidata": "Q1348",
@@ -3905,6 +4138,12 @@
       "note": "Kalytos in Pisidia (Pleiades 614684) has no known location."
     },
     "Calábria": {
+      "wikidata": "Q1458",
+      "label": "Calabria",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "Calábriam": {
       "wikidata": "Q1458",
       "label": "Calabria",
       "country": "IT",
@@ -3976,11 +4215,23 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Campum Bonum": {
+      "wikidata": "Q664650",
+      "label": "Campbon",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Campániæ gállicæ": {
       "wikidata": "Q273827",
       "label": "Champagne",
       "country": "FR",
       "status": "auto"
+    },
+    "Camária": {
+      "wikidata": "Q218151",
+      "label": "Camargue",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Cana Galilǽæ": {
       "wikidata": "Q431382",
@@ -3993,6 +4244,12 @@
       "label": "Cannae",
       "country": "IT",
       "status": "auto"
+    },
+    "Cantiórum": {
+      "wikidata": "Q23298",
+      "label": "Kent",
+      "country": "GB",
+      "status": "reviewed"
     },
     "Cantuariénsem": {
       "wikidata": "Q29303",
@@ -4054,15 +4311,39 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Capenbergénsis": {
+      "wikidata": "Q1497541",
+      "label": "Cappenberg Castle",
+      "country": "DE",
+      "status": "reviewed"
+    },
     "Capitolíadi in Batánea": {
       "wikidata": "Q1226916",
       "label": "Capitolias",
       "country": "JO",
       "status": "reviewed"
     },
+    "Capitólio": {
+      "wikidata": "Q141810188",
+      "label": "Capitolium of Tolosa",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Cappadócia": {
       "wikidata": "Q217265",
       "label": "Cappadocia",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Cappadóciam": {
+      "wikidata": "Q217265",
+      "label": "Cappadocia",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Cappádocum": {
+      "wikidata": "Q5059004",
+      "label": "Cappadocians",
       "country": "TR",
       "status": "reviewed"
     },
@@ -4148,6 +4429,12 @@
       "country": "ES",
       "status": "jev"
     },
+    "Carmélo Compéndii": {
+      "wikidata": "Q109325093",
+      "label": "Carmel of Compiègne",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Carnuténsem": {
       "wikidata": "Q130272",
       "label": "Chartres",
@@ -4190,6 +4477,18 @@
       "country": "IT",
       "status": "auto"
     },
+    "Carthaginénsem": {
+      "wikidata": "Q28151514",
+      "label": "Carthage",
+      "country": "TN",
+      "status": "reviewed"
+    },
+    "Carthaginénsi": {
+      "wikidata": "Q141810272",
+      "label": "Council of Carthage of 484",
+      "country": "TN",
+      "status": "reviewed"
+    },
     "Carthaginénsis": {
       "wikidata": "Q6343",
       "label": "Carthage",
@@ -4219,6 +4518,12 @@
       "label": "Carthage",
       "country": "TN",
       "status": "auto"
+    },
+    "Cartháginem": {
+      "wikidata": "Q28151514",
+      "label": "Carthage",
+      "country": "TN",
+      "status": "reviewed"
     },
     "Cartéiæ": {
       "wikidata": "Q97616842",
@@ -4291,6 +4596,12 @@
       "label": "San Vito",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Casáurea": {
+      "wikidata": "Q72009",
+      "label": "Casoria",
+      "country": "IT",
+      "status": "jev"
     },
     "Casáureæ prope Neápolim in Campánia Itáliæ": {
       "wikidata": "Q72009",
@@ -4941,6 +5252,12 @@
       "label": "Istanbul",
       "country": "TR",
       "status": "reviewed"
+    },
+    "Constantinopolitánum@mr:0703-leo-ii": {
+      "wikidata": "Q208037",
+      "label": "Third Council of Constantinople",
+      "country": "TR",
+      "status": "jev"
     },
     "Constantinopolitánus": {
       "wikidata": "Q406",
@@ -5944,10 +6261,62 @@
       "country": "IT",
       "status": "jev"
     },
+    "Ecclésia Constantinopolitána": {
+      "wikidata": "Q211004",
+      "label": "Ecumenical Patriarchate of Constantinople",
+      "country": "TR",
+      "status": "jev"
+    },
     "Ecclésiam Classénsem apud Ravénnam in Flamínia": {
       "wikidata": "Q744552",
       "label": "Basilica of Sant'Apollinare in Classe",
       "country": "IT",
+      "status": "jev"
+    },
+    "Ecclésiam Constantinopolitánam": {
+      "wikidata": "Q211004",
+      "label": "Ecumenical Patriarchate of Constantinople",
+      "country": "TR",
+      "status": "jev"
+    },
+    "Ecclésiam Románam": {
+      "wikidata": "Q665037",
+      "label": "Diocese of Rome",
+      "country": null,
+      "countries": [
+        "IT",
+        "VA"
+      ],
+      "status": "jev"
+    },
+    "Ecclésiæ Ephesínæ": {
+      "wikidata": "Q6824949",
+      "label": "Metropolis of Ephesus",
+      "country": "TR",
+      "status": "jev"
+    },
+    "Ecclésiæ Lingonénsi": {
+      "wikidata": "Q871038",
+      "label": "Roman Catholic Diocese of Langres",
+      "country": "FR",
+      "status": "jev"
+    },
+    "Ecclésiæ Meténsi": {
+      "wikidata": "Q787336",
+      "label": "Roman Catholic Diocese of Metz",
+      "country": "FR",
+      "status": "jev"
+    },
+    "Ecclésiæ Toletánæ": {
+      "wikidata": "Q1423027",
+      "label": "Roman Catholic Archdiocese of Toledo",
+      "country": "ES",
+      "status": "jev"
+    },
+    "Ecclésiæ Zagrebiénsi": {
+      "wikidata": "Q1261961",
+      "label": "Roman Catholic Archdiocese of Zagreb",
+      "country": "HR",
       "status": "jev"
     },
     "Edéssæ in Osrhoéne": {
@@ -6384,6 +6753,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Formósam": {
+      "wikidata": "Q22502",
+      "label": "Taiwan Island",
+      "country": "TW",
+      "status": "jev"
+    },
     "Foro Lívii": {
       "wikidata": "Q13367",
       "label": "Forlì",
@@ -6681,6 +7056,12 @@
       "label": "Ipswich",
       "country": "GB",
       "status": "auto"
+    },
+    "Girbitánus": {
+      "wikidata": "Q188938",
+      "label": "Djerba",
+      "country": "TN",
+      "status": "jev"
     },
     "Girvi in Northúmbria Angliæ": {
       "wikidata": "Q782155",
@@ -7273,6 +7654,12 @@
       "status": "jev"
     },
     "Hássiam": {
+      "wikidata": "Q1199",
+      "label": "Hesse",
+      "country": "DE",
+      "status": "jev"
+    },
+    "Hássiæ": {
       "wikidata": "Q1199",
       "label": "Hesse",
       "country": "DE",
@@ -13050,6 +13437,12 @@
       "country": "FR",
       "status": "auto"
     },
+    "Kambalik": {
+      "wikidata": "Q956",
+      "label": "Beijing",
+      "country": "CN",
+      "status": "jev"
+    },
     "Kampálæ in Ugánda": {
       "wikidata": "Q3894",
       "label": "Kampala",
@@ -13210,6 +13603,12 @@
       "wikidata": "Q84090",
       "label": "Archbasilica of St. John Lateran",
       "country": "IT",
+      "status": "jev"
+    },
+    "Laubiénse cœnóbium": {
+      "wikidata": "Q74925",
+      "label": "Lobbes Abbey",
+      "country": "BE",
       "status": "jev"
     },
     "Laucónæ in pago Lugdunénsi": {
@@ -15013,6 +15412,12 @@
     "Nicǽni": {
       "wikidata": "Q217125",
       "label": "İznik",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "Nicǽno": {
+      "wikidata": "Q133331",
+      "label": "First Council of Nicaea",
       "country": "TR",
       "status": "reviewed"
     },
@@ -16876,10 +17281,42 @@
       "country": "FR",
       "status": "jev"
     },
+    "Románam": {
+      "wikidata": "Q665037",
+      "label": "Diocese of Rome",
+      "country": null,
+      "countries": [
+        "IT",
+        "VA"
+      ],
+      "status": "jev"
+    },
     "Románi": {
       "wikidata": "Q1651392",
       "label": "Romans",
       "country": "IT",
+      "status": "jev"
+    },
+    "Románus": {
+      "wikidata": "Q220",
+      "label": "Rome",
+      "country": "IT",
+      "status": "jev"
+    },
+    "Románæ Ecclésiæ": {
+      "wikidata": "Q665037",
+      "label": "Diocese of Rome",
+      "country": null,
+      "countries": [
+        "IT",
+        "VA"
+      ],
+      "status": "jev"
+    },
+    "Románæ sedis": {
+      "wikidata": "Q159583",
+      "label": "Holy See",
+      "country": "VA",
       "status": "jev"
     },
     "Romæ": {
@@ -17596,6 +18033,12 @@
       "country": "CU",
       "status": "jev"
     },
+    "Sancti Martíni basílicam": {
+      "wikidata": "Q1464908",
+      "label": "Basilica of St. Martin, Tours",
+      "country": "FR",
+      "status": "jev"
+    },
     "Sancti Maximíni Trevirénsis": {
       "wikidata": "Q118786",
       "label": "St. Maximin's Abbey",
@@ -17907,6 +18350,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Sedem Románam": {
+      "wikidata": "Q159583",
+      "label": "Holy See",
+      "country": "VA",
+      "status": "jev"
+    },
     "Sedunénsis": {
       "wikidata": "Q68136",
       "label": "Sion",
@@ -18097,6 +18546,12 @@
       "label": "People's Republic of China",
       "country": "CN",
       "status": "auto"
+    },
+    "Sinárum impérium": {
+      "wikidata": "Q7313",
+      "label": "Yuan dynasty",
+      "country": "CN",
+      "status": "jev"
     },
     "Sinárum ínsula Sanciána": {
       "wikidata": "Q1397551",
@@ -18461,6 +18916,12 @@
       "label": "Sées",
       "country": "FR",
       "status": "reviewed"
+    },
+    "Sántonas": {
+      "wikidata": "Q191126",
+      "label": "Saintes",
+      "country": "FR",
+      "status": "jev"
     },
     "Sántonis in Hannónia": {
       "wikidata": "Q2213110",
@@ -19451,6 +19912,12 @@
       "country": "PT",
       "status": "reviewed"
     },
+    "Upsaliénsem Ecclésiam": {
+      "wikidata": "Q15646861",
+      "label": "Roman Catholic Archdiocese of Uppsala",
+      "country": "SE",
+      "status": "jev"
+    },
     "Upsalæ in Suécia": {
       "wikidata": "Q25286",
       "label": "Uppsala",
@@ -19780,6 +20247,12 @@
       "label": "Verulamium",
       "country": "GB",
       "status": "reviewed"
+    },
+    "Veræ Crucis in México": {
+      "wikidata": "Q173270",
+      "label": "Veracruz",
+      "country": "MX",
+      "status": "jev"
     },
     "Verónæ in Itália": {
       "wikidata": "Q2028",
@@ -20148,6 +20621,12 @@
       "label": "Castel Volturno",
       "country": "IT",
       "status": "reviewed"
+    },
+    "Volyn’ et Pidljashja": {
+      "wikidata": "Q7530",
+      "label": "Volhynia",
+      "country": "UA",
+      "status": "jev"
     },
     "Voralbérga regióne": {
       "wikidata": "Q38981",
@@ -20819,6 +21298,17 @@
         "RO",
         "BG",
         "MD"
+      ],
+      "status": "jev"
+    },
+    "flumen Euphráten": {
+      "wikidata": "Q34589",
+      "label": "Euphrates",
+      "country": null,
+      "countries": [
+        "TR",
+        "SY",
+        "IQ"
       ],
       "status": "jev"
     },
@@ -21545,6 +22035,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "sede Romána": {
+      "wikidata": "Q159583",
+      "label": "Holy See",
+      "country": "VA",
+      "status": "jev"
+    },
     "sedem Avanticénsem": {
       "wikidata": "Q43236",
       "label": "Avenches",
@@ -21555,6 +22051,12 @@
       "wikidata": "Q258606",
       "label": "Diocese of Regensburg",
       "country": "DE",
+      "status": "jev"
+    },
+    "sedem Románam": {
+      "wikidata": "Q159583",
+      "label": "Holy See",
+      "country": "VA",
       "status": "jev"
     },
     "sepúlcrum Dómini": {
