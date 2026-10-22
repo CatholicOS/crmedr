@@ -969,6 +969,12 @@
       "country": "GB",
       "status": "jev"
     },
+    "Anglórum": {
+      "wikidata": "Q179876",
+      "label": "Kingdom of England",
+      "country": "GB",
+      "status": "jev"
+    },
     "Anglórum orientálium": {
       "wikidata": "Q837998",
       "label": "Kingdom of East Anglia",
@@ -2220,6 +2226,12 @@
       "label": "Wareham",
       "country": "GB",
       "status": "reviewed"
+    },
+    "Aquileiénse": {
+      "wikidata": "Q683075",
+      "label": "Council of Aquileia, 381",
+      "country": "IT",
+      "status": "jev"
     },
     "Aquileiénsis": {
       "wikidata": "Q53216",
@@ -4658,6 +4670,12 @@
       "country": "DE",
       "status": "jev"
     },
+    "Colossénses": {
+      "wikidata": "Q1001370",
+      "label": "Colossae",
+      "country": "TR",
+      "status": "jev"
+    },
     "Coltibóni in Etrúria": {
       "wikidata": "Q799028",
       "label": "Badia a Coltibuono",
@@ -4993,6 +5011,18 @@
       "label": "Coimbra",
       "country": "PT",
       "status": "reviewed"
+    },
+    "Corbeiénsi": {
+      "wikidata": "Q333888",
+      "label": "Corbie Abbey",
+      "country": "FR",
+      "status": "jev"
+    },
+    "Corbeiénsis": {
+      "wikidata": "Q333888",
+      "label": "Corbie Abbey",
+      "country": "FR",
+      "status": "jev"
     },
     "Corcagiénsis": {
       "wikidata": "Q36647",
@@ -5786,6 +5816,12 @@
       "country": "GB",
       "status": "auto"
     },
+    "Dunénse": {
+      "wikidata": "Q1510427",
+      "label": "Abbey of the Dunes",
+      "country": "BE",
+      "status": "jev"
+    },
     "Dunénsis et Connorénsis in Hibérnia": {
       "wikidata": "Q868494",
       "label": "Roman Catholic Diocese of Down and Connor",
@@ -6430,6 +6466,12 @@
       ],
       "status": "jev"
     },
+    "Fuldénsi": {
+      "wikidata": "Q661240",
+      "label": "Fulda monastery",
+      "country": "DE",
+      "status": "jev"
+    },
     "Fulgínii in Umbria": {
       "wikidata": "Q20436",
       "label": "Foligno",
@@ -6661,6 +6703,12 @@
       "label": "Glasgow",
       "country": "GB",
       "status": "auto"
+    },
+    "Glastonénsis": {
+      "wikidata": "Q544113",
+      "label": "Glastonbury Abbey",
+      "country": "GB",
+      "status": "jev"
     },
     "Glastóniæ item in Anglia": {
       "wikidata": "Q210891",
@@ -6900,6 +6948,12 @@
       "wikidata": "Q1055",
       "label": "Hamburg",
       "country": "DE",
+      "status": "jev"
+    },
+    "Hammaticénsis": {
+      "wikidata": "Q2820516",
+      "label": "Abbaye d'Hamage",
+      "country": "FR",
       "status": "jev"
     },
     "Haméti in Brabántia": {
@@ -13102,6 +13156,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "Langoneténsis": {
+      "wikidata": "Q1775489",
+      "label": "Abbaye Notre-Dame de Langonnet",
+      "country": "FR",
+      "status": "jev"
+    },
     "Langíaci ad Eláver flumen in Gállia": {
       "wikidata": "Q625570",
       "label": "Langeac",
@@ -13264,6 +13324,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Legionénsis": {
+      "wikidata": "Q175276",
+      "label": "Kingdom of Leon",
+      "country": "ES",
+      "status": "jev"
+    },
     "Legióne in Británnia Minóre": {
       "wikidata": "Q1009261",
       "label": "Caerleon",
@@ -13285,6 +13351,12 @@
     "Legiónem in Gallǽcia": {
       "wikidata": "Q15699",
       "label": "León",
+      "country": "ES",
+      "status": "jev"
+    },
+    "Legiónis": {
+      "wikidata": "Q175276",
+      "label": "Kingdom of Leon",
       "country": "ES",
       "status": "jev"
     },
@@ -13913,6 +13985,12 @@
       "label": "Maubeuge",
       "country": "FR",
       "status": "auto"
+    },
+    "Malmundariénse": {
+      "wikidata": "Q1712533",
+      "label": "Abbaye de Malmedy",
+      "country": "BE",
+      "status": "jev"
     },
     "Malónnæ in Bélgio": {
       "wikidata": "Q2189182",
@@ -15922,6 +16000,12 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Plexítii prope Turónos": {
+      "wikidata": "Q638089",
+      "label": "Château de Plessis-lez-Tours",
+      "country": "FR",
+      "status": "jev"
+    },
     "Plocénsis": {
       "wikidata": "Q104725",
       "label": "Płock",
@@ -16450,6 +16534,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Pónticas solitúdines": {
+      "wikidata": "Q621672",
+      "label": "Pontus",
+      "country": "TR",
+      "status": "jev"
+    },
     "Pœtaviénsis in Pannónia": {
       "wikidata": "Q15906",
       "label": "Ptuj",
@@ -16677,6 +16767,12 @@
       "label": "Arish",
       "country": "EG",
       "status": "reviewed"
+    },
+    "Rhuvigiénse monastérium": {
+      "wikidata": "Q1775894",
+      "label": "Royal abbey of Saint-Gildas Saint-Gildas-de-Rhuys",
+      "country": "FR",
+      "status": "jev"
     },
     "Rhégii Iúlii in Calábria": {
       "wikidata": "Q8471",
@@ -17492,6 +17588,12 @@
       "country": "CU",
       "status": "jev"
     },
+    "Sancti Maximíni Trevirénsis": {
+      "wikidata": "Q118786",
+      "label": "St. Maximin's Abbey",
+      "country": "DE",
+      "status": "jev"
+    },
     "Sancti Pauli de Urbe": {
       "wikidata": "Q231699",
       "label": "Basilica of Saint Paul outside the Walls",
@@ -17839,6 +17941,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Seleuciénsi": {
+      "wikidata": "Q1258842",
+      "label": "Council of Seleucia-Ctesiphon",
+      "country": "IQ",
+      "status": "jev"
+    },
     "Seleucíæ in Pérside": {
       "wikidata": "Q1136681",
       "label": "Seleucia",
@@ -17981,6 +18089,12 @@
       "label": "People's Republic of China",
       "country": "CN",
       "status": "auto"
+    },
+    "Sinárum ínsula Sanciána": {
+      "wikidata": "Q1397551",
+      "label": "Shangchuan Island",
+      "country": "CN",
+      "status": "jev"
     },
     "Sinópe in Ponto": {
       "wikidata": "Q599416",
@@ -18194,6 +18308,12 @@
       "wikidata": "Q171353",
       "label": "Esztergom",
       "country": "HU",
+      "status": "jev"
+    },
+    "Stróbili in Cária": {
+      "wikidata": "Q7624208",
+      "label": "Strobilos",
+      "country": "TR",
       "status": "jev"
     },
     "Studíta": {
@@ -19148,6 +19268,12 @@
       "label": "Tours",
       "country": "FR",
       "status": "reviewed"
+    },
+    "Turre civitátis": {
+      "wikidata": "Q62378",
+      "label": "Tower of London",
+      "country": "GB",
+      "status": "jev"
     },
     "Turrem Londínii in Anglia": {
       "wikidata": "Q62378",
@@ -20189,6 +20315,12 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "angústiis Tauri montis": {
+      "wikidata": "Q172556",
+      "label": "Taurus mountains",
+      "country": "TR",
+      "status": "jev"
+    },
     "antiochéni": {
       "wikidata": "Q80561",
       "label": "Antakya",
@@ -20479,6 +20611,12 @@
       "country": "IT",
       "status": "jev"
     },
+    "cœmetério via Nomentána": {
+      "wikidata": "Q3663175",
+      "label": "Catacomb of San Nicomede",
+      "country": "IT",
+      "status": "jev"
+    },
     "cœmetérium Callísti": {
       "wikidata": "Q1027069",
       "label": "Catacomb of Callixtus",
@@ -20539,6 +20677,22 @@
       "country": "FR",
       "status": "jev"
     },
+    "desérta ínsula": {
+      "wikidata": "Q292105",
+      "label": "île Maudez",
+      "country": "FR",
+      "status": "jev"
+    },
+    "desérto": {
+      "wikidata": "Q2046004",
+      "label": "Judaean Desert",
+      "country": null,
+      "countries": [
+        "IL",
+        "PS"
+      ],
+      "status": "jev"
+    },
     "desértum Iudæ": {
       "wikidata": "Q2046004",
       "label": "Judaean Desert",
@@ -20547,6 +20701,12 @@
         "IL",
         "PS"
       ],
+      "status": "jev"
+    },
+    "dicióne Canadénsi": {
+      "wikidata": "Q170604",
+      "label": "New France",
+      "country": "CA",
       "status": "jev"
     },
     "ecclésia cathedráli": {
@@ -20827,6 +20987,18 @@
       "country": "PS",
       "status": "jev"
     },
+    "missiónes Brasiliénses": {
+      "wikidata": "Q155",
+      "label": "Brazil",
+      "country": "BR",
+      "status": "jev"
+    },
+    "monastérii Altitonénsis": {
+      "wikidata": "Q2820602",
+      "label": "Mont Sainte-Odile Abbey",
+      "country": "FR",
+      "status": "jev"
+    },
     "monastérii Alténsis": {
       "wikidata": "Q458116",
       "label": "Niederaltaich Abbey",
@@ -20837,6 +21009,12 @@
       "wikidata": "Q2820380",
       "label": "Brogne Abbey",
       "country": "BE",
+      "status": "jev"
+    },
+    "monastérii Cellénsis": {
+      "wikidata": "Q21931980",
+      "label": "Abbaye de Montier-la-Celle",
+      "country": "FR",
       "status": "jev"
     },
     "monastérii Condatiscénsis": {
@@ -20887,10 +21065,28 @@
       "country": "TR",
       "status": "jev"
     },
+    "monastérii Sancti Germáni": {
+      "wikidata": "Q1935662",
+      "label": "Royal Abbey of Saint-Germain d'Auxerre",
+      "country": "FR",
+      "status": "jev"
+    },
+    "monastérii Sancti Ioánnis": {
+      "wikidata": "Q5142077",
+      "label": "Colchester Abbey",
+      "country": "GB",
+      "status": "jev"
+    },
     "monastérii Sancti Lupi": {
       "wikidata": "Q2820396",
       "label": "Abbey of Saint Loup, Troyes",
       "country": "FR",
+      "status": "jev"
+    },
+    "monastérii Sanctæ Maríæ Coloniénsis": {
+      "wikidata": "Q598352",
+      "label": "St. Maria im Kapitol",
+      "country": "DE",
       "status": "jev"
     },
     "monastérii Studítæ": {
@@ -20959,6 +21155,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "monastério Rhuvigiénsi": {
+      "wikidata": "Q1775894",
+      "label": "Royal abbey of Saint-Gildas Saint-Gildas-de-Rhuys",
+      "country": "FR",
+      "status": "jev"
+    },
     "monastério Sancti Victóris": {
       "wikidata": "Q1858504",
       "label": "Abbey of St. Victor",
@@ -20975,6 +21177,18 @@
       "wikidata": "Q1776043",
       "label": "Sept-Fons Abbey",
       "country": "FR",
+      "status": "jev"
+    },
+    "monastério sancti Mevénni": {
+      "wikidata": "Q2820696",
+      "label": "Abbey of St Meen",
+      "country": "FR",
+      "status": "jev"
+    },
+    "monastérium Bancorénse": {
+      "wikidata": "Q591192",
+      "label": "Bangor Abbey",
+      "country": "GB",
       "status": "jev"
     },
     "monastérium Bancorénse Hibérniæ": {
@@ -21171,6 +21385,12 @@
     "pago Lemovicénsi": {
       "wikidata": "Q45656",
       "label": "Limoges",
+      "country": "FR",
+      "status": "jev"
+    },
+    "pago Trecorénsi": {
+      "wikidata": "Q1777764",
+      "label": "Trégor",
       "country": "FR",
       "status": "jev"
     },
@@ -21390,6 +21610,16 @@
       "wikidata": "Q200969",
       "label": "Chaldea",
       "country": "IQ",
+      "status": "jev"
+    },
+    "terram": {
+      "wikidata": "Q23792",
+      "label": "Palestine",
+      "country": null,
+      "countries": [
+        "IL",
+        "PS"
+      ],
       "status": "jev"
     },
     "terram promissiónis": {

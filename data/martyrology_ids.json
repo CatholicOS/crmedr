@@ -232,7 +232,10 @@
           "role": "foundation",
           "la": "monastérii Cellénsis",
           "it": "monastero di Moutier-la-Celle",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21931980",
+          "label": "Abbaye de Montier-la-Celle",
+          "country": "FR"
         }
       ]
     },
@@ -10111,7 +10114,10 @@
           "role": "foundation",
           "la": "Rhuvigiénse monastérium",
           "it": "monastero di Rhuys",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775894",
+          "label": "Royal abbey of Saint-Gildas Saint-Gildas-de-Rhuys",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -11292,7 +11298,10 @@
           "role": "foundation",
           "la": "Malmundariénse",
           "it": "Malmédy",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1712533",
+          "label": "Abbaye de Malmedy",
+          "country": "BE"
         },
         {
           "role": "foundation",
@@ -12127,7 +12136,10 @@
           "role": "religious_life",
           "la": "Corbeiénsis",
           "it": "Corbie",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q333888",
+          "label": "Corbie Abbey",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -12680,7 +12692,10 @@
           "role": "religious_life",
           "la": "Fuldénsi",
           "it": "Fulda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q661240",
+          "label": "Fulda monastery",
+          "country": "DE"
         }
       ],
       "date": {
@@ -13140,7 +13155,10 @@
           "role": "religious_life",
           "la": "monastérii Sanctæ Maríæ Coloniénsis",
           "it": "monastero di Santa Maria di Colonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q598352",
+          "label": "St. Maria im Kapitol",
+          "country": "DE"
         },
         {
           "role": "religious_life",
@@ -16847,7 +16865,10 @@
           "role": "mention",
           "la": "Seleuciénsi",
           "it": "Seleucia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1258842",
+          "label": "Council of Seleucia-Ctesiphon",
+          "country": "IQ"
         },
         {
           "role": "ministry",
@@ -21527,7 +21548,10 @@
           "role": "religious_life",
           "la": "Sancti Maximíni Trevirénsis",
           "it": "San Massimino di Treviri",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q118786",
+          "label": "St. Maximin's Abbey",
+          "country": "DE"
         }
       ],
       "date": {
@@ -22874,7 +22898,10 @@
           "role": "death",
           "la": "Stróbili in Cária",
           "it": "Stróbilon nella Caria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q7624208",
+          "label": "Strobilos",
+          "country": "TR"
         }
       ],
       "date": {
@@ -25157,7 +25184,10 @@
           "role": "religious_life",
           "la": "Hammaticénsis",
           "it": "Hamay-surla-Scarpe",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820516",
+          "label": "Abbaye d'Hamage",
+          "country": "FR"
         }
       ]
     },
@@ -26160,7 +26190,10 @@
           "role": "mention",
           "la": "Colossénses",
           "it": "Colossesi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1001370",
+          "label": "Colossae",
+          "country": "TR"
         }
       ],
       "date": {
@@ -30133,7 +30166,10 @@
           "role": "death",
           "la": "Plexítii prope Turónos",
           "it": "Plessy presso Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q638089",
+          "label": "Château de Plessis-lez-Tours",
+          "country": "FR"
         },
         {
           "role": "foundation",
@@ -31295,7 +31331,10 @@
           "role": "religious_life",
           "la": "Corbeiénsi",
           "it": "Corbie",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q333888",
+          "label": "Corbie Abbey",
+          "country": "FR"
         },
         {
           "role": "religious_life",
@@ -32891,7 +32930,10 @@
           "role": "religious_life",
           "la": "monastérii Sancti Germáni",
           "it": "monastero di San Germano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1935662",
+          "label": "Royal Abbey of Saint-Germain d'Auxerre",
+          "country": "FR"
         }
       ]
     },
@@ -35868,7 +35910,10 @@
           "role": "religious_life",
           "la": "Dunénse",
           "it": "Down",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1510427",
+          "label": "Abbey of the Dunes",
+          "country": "BE"
         }
       ],
       "edition_notes": {
@@ -44007,7 +44052,10 @@
           "role": "foundation",
           "la": "monastérium Bancorénse",
           "it": "monastero di Bangor",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q591192",
+          "label": "Bangor Abbey",
+          "country": "GB"
         }
       ],
       "date": {
@@ -46977,7 +47025,10 @@
           "role": "religious_life",
           "la": "Glastonénsis",
           "it": "Glastonbury",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q544113",
+          "label": "Glastonbury Abbey",
+          "country": "GB"
         }
       ],
       "date": {
@@ -51102,7 +51153,10 @@
           "role": "exile",
           "la": "Pónticas solitúdines",
           "it": "deserti del Ponto",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q621672",
+          "label": "Pontus",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -51268,7 +51322,10 @@
           "role": "ministry",
           "la": "Legiónis",
           "it": "León",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q175276",
+          "label": "Kingdom of Leon",
+          "country": "ES"
         }
       ],
       "date": {
@@ -57951,7 +58008,10 @@
           "role": "mention",
           "la": "Legionénsis",
           "it": "León",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q175276",
+          "label": "Kingdom of Leon",
+          "country": "ES"
         }
       ],
       "edition_notes": {
@@ -68055,7 +68115,10 @@
           "role": "journey",
           "la": "missiónes Brasiliénses",
           "it": "missioni in Brasile",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q155",
+          "label": "Brazil",
+          "country": "BR"
         }
       ],
       "date": {
@@ -74632,7 +74695,10 @@
           "role": "exile",
           "la": "Turre civitátis",
           "it": "Torre della città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q62378",
+          "label": "Tower of London",
+          "country": "GB"
         }
       ],
       "date": {
@@ -82911,7 +82977,10 @@
           "role": "death",
           "la": "angústiis Tauri montis",
           "it": "gole del monte Tauro",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q172556",
+          "label": "Taurus mountains",
+          "country": "TR"
         }
       ],
       "date": {
@@ -89138,7 +89207,10 @@
           "role": "mention",
           "la": "Aquileiénse",
           "it": "Aquileia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q683075",
+          "label": "Council of Aquileia, 381",
+          "country": "IT"
         },
         {
           "role": "religious_life",
@@ -93998,7 +94070,10 @@
           "role": "burial",
           "la": "cœmetério via Nomentána",
           "it": "cimitero sulla via Nomentana",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3663175",
+          "label": "Catacomb of San Nicomede",
+          "country": "IT"
         }
       ],
       "date": {
@@ -94691,7 +94766,10 @@
           "role": "mention",
           "la": "Anglórum",
           "it": "Angli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q179876",
+          "label": "Kingdom of England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -99458,7 +99536,14 @@
           "role": "foundation",
           "la": "desérto",
           "it": "deserto",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2046004",
+          "label": "Judaean Desert",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ]
     },
@@ -100141,7 +100226,10 @@
           "role": "religious_life",
           "la": "Langoneténsis",
           "it": "Langonnet",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775489",
+          "label": "Abbaye Notre-Dame de Langonnet",
+          "country": "FR"
         }
       ]
     },
@@ -103892,7 +103980,14 @@
           "role": "journey",
           "la": "terram",
           "it": "terra promessa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q23792",
+          "label": "Palestine",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "date": {
@@ -107659,7 +107754,10 @@
           "role": "death",
           "la": "dicióne Canadénsi",
           "it": "territorio canadese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170604",
+          "label": "New France",
+          "country": "CA"
         },
         {
           "role": "death",
@@ -119049,7 +119147,10 @@
           "role": "religious_life",
           "la": "desérta ínsula",
           "it": "isola deserta",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q292105",
+          "label": "île Maudez",
+          "country": "FR"
         }
       ]
     },
@@ -122217,7 +122318,10 @@
           "role": "religious_life",
           "la": "monastério Rhuvigiénsi",
           "it": "monastero di Rhuys",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775894",
+          "label": "Royal abbey of Saint-Gildas Saint-Gildas-de-Rhuys",
+          "country": "FR"
         }
       ],
       "date": {
@@ -123049,7 +123153,10 @@
           "role": "foundation",
           "la": "pago Trecorénsi",
           "it": "territorio di Tréguier",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1777764",
+          "label": "Trégor",
+          "country": "FR"
         }
       ]
     },
@@ -123623,7 +123730,10 @@
           "role": "religious_life",
           "la": "monastérii Sancti Ioánnis",
           "it": "monastero di San Giovanni",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5142077",
+          "label": "Colchester Abbey",
+          "country": "GB"
         }
       ],
       "date": {
@@ -124072,7 +124182,10 @@
           "role": "death",
           "la": "Sinárum ínsula Sanciána",
           "it": "Cina nell’isola di Sancian",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1397551",
+          "label": "Shangchuan Island",
+          "country": "CN"
         },
         {
           "role": "ministry",
@@ -127240,7 +127353,10 @@
           "role": "religious_life",
           "la": "monastérii Altitonénsis",
           "it": "monastero di Hohenbourg",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820602",
+          "label": "Mont Sainte-Odile Abbey",
+          "country": "FR"
         }
       ],
       "date": {
@@ -128322,7 +128438,10 @@
           "role": "religious_life",
           "la": "monastério sancti Mevénni",
           "it": "monastero di Saint-Méen",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820696",
+          "label": "Abbey of St Meen",
+          "country": "FR"
         }
       ]
     },
