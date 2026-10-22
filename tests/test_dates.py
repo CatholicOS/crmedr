@@ -77,6 +77,16 @@ class EditionBoundsTest(unittest.TestCase):
         keys = {"martyrologium_romanum_1749": {"mr:0131-ioannes-bosco"}}
         self.assertEqual(d.edition_bounds([{"id": "mr:0131-ioannes-bosco"}], keys), {})
 
+    def test_bound_through_a_chain_of_links(self):
+        entries = [{"id": "mr:0205-albuinus", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]},
+                   {"id": "mr:0205-genuinus-et-albuinus", "deprecated": True,
+                    "same_eulogy": ["mr:0205-albuinus", "mr:0205-ingenuinus"]},
+                   {"id": "mr:0205-ingenuinus", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]}]
+        keys = {"martyrologium_romanum_1630": {"mr:0205-ingenuinus"},
+                "martyrologium_romanum_1914_en_unofficial": {"mr:0205-genuinus-et-albuinus"}}
+        self.assertEqual(d.edition_bounds(entries, keys),
+                         {"mr:0205-albuinus": 1630, "mr:0205-ingenuinus": 1630})
+
     def test_absent_everywhere(self):
         self.assertEqual(d.edition_bounds([{"id": "mr:0101-c"}], self.KEYS), {})
 
@@ -119,6 +129,15 @@ class BuildDatesTest(unittest.TestCase):
 
     def test_edition_only(self):
         self.assertEqual(self.build(bound=1630)[self.ID], {"to": 1630, "basis": "death", "source": "edition"})
+
+    def test_death_after_the_bound_keeps_the_bound(self):
+        self.assertEqual(self.build([1919], bound=1630)[self.ID],
+                         {"to": 1630, "basis": "death", "source": "edition"})
+
+    def test_curated_bad_shapes_fail(self):
+        for bad in ({"yaer": 431}, {"year": 431, "from": 400}, {}, {"basis": "event"}):
+            with self.subTest(bad=bad), self.assertRaisesRegex(ValueError, self.ID):
+                self.build(curated={self.ID: bad})
 
     def test_curated_unknown_id_fails(self):
         with self.assertRaisesRegex(ValueError, "mr:0101-renamed"):

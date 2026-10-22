@@ -97,13 +97,24 @@ def edition_keys(api_root):
 
 
 def edition_bounds(entries, keys):
-    """For each current entry, the year of the oldest edition that prints it or a same_eulogy ID
-    (a deprecated cross-day ID too: the link says it is the same eulogy)."""
+    """For each current entry, the year of the oldest edition that prints it or any ID its
+    same_eulogy links reach, through deprecated IDs too (a cross-day ID included: the link says it
+    is the same eulogy)."""
+    links = {}
+    for e in entries:
+        for other in e.get("same_eulogy", []):
+            links.setdefault(e["id"], set()).add(other)
+            links.setdefault(other, set()).add(e["id"])
     out = {}
     for e in entries:
         if e.get("deprecated"):
             continue
-        ids = {e["id"], *e.get("same_eulogy", [])}
+        ids, todo = {e["id"]}, [e["id"]]
+        while todo:
+            for other in links.get(todo.pop(), ()):
+                if other not in ids:
+                    ids.add(other)
+                    todo.append(other)
         year = next((y for edition, y in EDITION_YEARS if ids & keys.get(edition, set())), None)
         if year:
             out[e["id"]] = year
@@ -120,18 +131,42 @@ def death_dates(current_ids, persons, items, details):
     return out
 
 
+def latest(date):
+    return date.get("year", date.get("to"))
+
+
+def curated_errors(curated):
+    """The curated dates that are not a date: unknown keys, year with a range, no year at all."""
+    errors = []
+    for mid, date in sorted(curated.items()):
+        if date is None:
+            continue
+        unknown = sorted(set(date) - (set(DATE_KEYS) - {"source"}))
+        if unknown:
+            errors.append(f"{mid}: unknown keys {unknown}")
+        elif "year" in date and ("from" in date or "to" in date):
+            errors.append(f"{mid}: year together with from/to")
+        elif not {"year", "from", "to"} & set(date):
+            errors.append(f"{mid}: no year, from or to")
+    return errors
+
+
 def build_dates(current_ids, typology, persons, items, details, bounds, curated):
     """The date of each current eulogy: curated (null removes), else its persons' death dates,
-    else the edition bound as `to`."""
+    else the edition bound as `to`. A death later than the bound comes from a wrong person link
+    (reported by checks()): the bound is written instead."""
     unknown = sorted(set(curated) - set(current_ids))
     if unknown:
         raise ValueError(f"{CURATED} names IDs that are not current: {', '.join(unknown)}")
+    errors = curated_errors(curated)
+    if errors:
+        raise ValueError(f"{CURATED}:\n" + "\n".join(errors))
     wikidata = death_dates(current_ids, persons, items, details)
     out = {}
     for mid in sorted(current_ids):
         if mid in curated:
             date = curated[mid] and {**curated[mid], "source": "curated"}
-        elif mid in wikidata:
+        elif mid in wikidata and not (mid in bounds and latest(wikidata[mid]) > bounds[mid]):
             date = {**wikidata[mid], "source": "wikidata"}
         elif mid in bounds:
             date = {"to": bounds[mid], "source": "edition"}
@@ -147,7 +182,7 @@ def checks(wikidata, bounds):
     person link); wide: death dates more than WIDE years apart (a likely wrong person among several)."""
     after, wide = [], []
     for mid, date in sorted(wikidata.items()):
-        last = date.get("year", date.get("to"))
+        last = latest(date)
         if mid in bounds and last > bounds[mid]:
             after.append((mid, last, bounds[mid]))
         if "from" in date and date["to"] - date["from"] > WIDE:
@@ -176,7 +211,7 @@ def report(dates, found, typology, current_ids):
              *[f"| {k} | {v} |" for k, v in sorted(bases.items())], "",
              "## Death after the edition bound", "",
              "A subject died after an edition that already prints the eulogy: the person link is "
-             "likely wrong.", "",
+             "likely wrong, and the eulogy's date is the edition bound instead.", "",
              "| Eulogy | Death | Edition |", "|---|---|---|",
              *[f"| {m} | {y} | {b} |" for m, y, b in found["after_bound"]], "",
              f"## Death dates more than {WIDE} years apart", "",

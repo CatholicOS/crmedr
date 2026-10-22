@@ -98,7 +98,8 @@ martyrology-api path as an argument, as other generators take martyrology-texts.
 
 **Checks** (in the report, not errors): a death-year date later than its edition bound (a likely
 wrong person link); a range wider than 300 years from death dates (likely a wrong person among
-several). A flagged date is still written; the cards show it as it is.
+several). A wide range is still written; a death later than the bound is not (the bound is
+written instead), since only a wrong person link produces it.
 
 **Curated dates.** Step 1 ships `data/dates_curated.json` with Mary Mother of God (431, `event`,
 "Council of Ephesus") and the report lists the undated `celebratio` and `commemoratio` eulogies as
