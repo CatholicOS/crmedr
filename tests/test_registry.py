@@ -11,7 +11,8 @@ import extract_registry as r  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 REGISTRY_INPUTS = ["data/martyrology_ids.json", "data/typology.json", "data/places.json",
-                   "data/gazetteer.json", "data/countries_curated.json", "data/deprecated_ids.json"]
+                   "data/gazetteer.json", "data/countries_curated.json", "data/deprecated_ids.json",
+                   "data/dates.json"]
 
 
 def registry_ids():
@@ -29,6 +30,33 @@ def copy_registry(dst):
 
 ENTRY = {"id": "mr:0101-fictitius", "month": 1, "day": 1, "entry": 1,
          "asterisk": False, "country": "IT", "note": "n"}
+
+
+class RegistryDatesTest(unittest.TestCase):
+    DATE = {"year": 304, "basis": "death", "source": "wikidata"}
+
+    def test_add_dates_inserts_after_places(self):
+        e = r.with_key(dict(ENTRY), "places", [{"role": "death", "la": "Romæ", "source": "lead"}])
+        out = r.add_dates([e], {"mr:0101-fictitius": self.DATE})
+        self.assertEqual(list(out[0]), ["id", "month", "day", "entry", "asterisk", "country", "places",
+                                        "date", "note"])
+        self.assertEqual(out[0]["date"], self.DATE)
+
+    def test_add_dates_removes_stale(self):
+        e = r.with_key(dict(ENTRY), "date", self.DATE)
+        self.assertNotIn("date", r.add_dates([e], {})[0])
+
+    def test_dates_with_unknown_id_fail(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "data").mkdir()
+            (Path(d) / "data" / "dates.json").write_text(
+                json.dumps({"dates": {"mr:0101-other": self.DATE}}), encoding="utf-8")
+            with self.assertRaises(AssertionError):
+                r.load_dates(Path(d), {"mr:0101-fictitius"})
+
+    def test_load_dates_missing_file(self):
+        with tempfile.TemporaryDirectory() as d:
+            self.assertEqual(r.load_dates(Path(d), {"mr:0101-fictitius"}), {})
 
 
 class RegistryTypologyTest(unittest.TestCase):
