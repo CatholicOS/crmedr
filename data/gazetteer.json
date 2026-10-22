@@ -3481,7 +3481,13 @@
       "country": "GB",
       "status": "jev"
     },
-    "Británniæ": {
+    "Británniæ@mr:0929-carolus-de-blesis": {
+      "wikidata": "Q327",
+      "label": "Brittany",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "Británniæ@mr:1104-francisca-de-ambosia": {
       "wikidata": "Q327",
       "label": "Brittany",
       "country": "FR",
@@ -4934,12 +4940,6 @@
       "country": "TR",
       "status": "reviewed"
     },
-    "Constantinopolitánum": {
-      "wikidata": "Q406",
-      "label": "Istanbul",
-      "country": "TR",
-      "status": "reviewed"
-    },
     "Constantinopolitánus": {
       "wikidata": "Q406",
       "label": "Istanbul",
@@ -5792,7 +5792,7 @@
       "country": "GB",
       "status": "reviewed"
     },
-    "Dumiénsis": {
+    "Dumiénsis@mr:0301-rudesindus": {
       "wikidata": "Q840362",
       "label": "Mondoñedo",
       "country": "ES",
@@ -13612,7 +13612,7 @@
       "country": "PT",
       "status": "reviewed"
     },
-    "Lotharíngia": {
+    "Lotharíngia@mr:1003-gerardus": {
       "wikidata": "Q6673921",
       "label": "Lotharingia",
       "country": null,
@@ -15014,12 +15014,6 @@
       "country": "TR",
       "status": "reviewed"
     },
-    "Nicǽno": {
-      "wikidata": "Q217125",
-      "label": "İznik",
-      "country": "TR",
-      "status": "jev"
-    },
     "Nicǽnum": {
       "wikidata": "Q217125",
       "label": "İznik",
@@ -15163,7 +15157,19 @@
       "country": "GB",
       "status": "jev"
     },
-    "Northúmbriæ": {
+    "Northúmbriæ@mr:0623-ediltrudis": {
+      "wikidata": "Q107299",
+      "label": "Kingdom of Northumbria",
+      "country": "GB",
+      "status": "reviewed"
+    },
+    "Northúmbriæ@mr:0805-oswaldus": {
+      "wikidata": "Q107299",
+      "label": "Kingdom of Northumbria",
+      "country": "GB",
+      "status": "reviewed"
+    },
+    "Northúmbriæ@mr:1010-paulinus": {
       "wikidata": "Q107299",
       "label": "Kingdom of Northumbria",
       "country": "GB",

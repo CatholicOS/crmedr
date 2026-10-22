@@ -10124,10 +10124,7 @@
           "la": "Británniæ",
           "it": "Bretagna",
           "source": "curated",
-          "occurrence_it": 2,
-          "wikidata": "Q327",
-          "label": "Brittany",
-          "country": "FR"
+          "occurrence_it": 2
         }
       ],
       "date": {
@@ -19560,10 +19557,7 @@
           "role": "mention",
           "la": "Nicǽno",
           "it": "Nicea",
-          "source": "curated",
-          "wikidata": "Q217125",
-          "label": "İznik",
-          "country": "TR"
+          "source": "curated"
         },
         {
           "role": "ministry",
@@ -35008,10 +35002,7 @@
           "role": "ministry",
           "la": "Dumiénsis",
           "it": "Dume",
-          "source": "curated",
-          "wikidata": "Q840362",
-          "label": "Mondoñedo",
-          "country": "ES"
+          "source": "curated"
         }
       ],
       "date": {
@@ -41908,17 +41899,7 @@
           "role": "foundation",
           "la": "Lotharíngia",
           "it": "Lorena",
-          "source": "curated",
-          "wikidata": "Q6673921",
-          "label": "Lotharingia",
-          "country": null,
-          "countries": [
-            "BE",
-            "DE",
-            "FR",
-            "LU",
-            "NL"
-          ]
+          "source": "curated"
         },
         {
           "role": "foundation",
@@ -45649,10 +45630,7 @@
           "role": "mention",
           "la": "Nicǽno",
           "it": "Nicea",
-          "source": "curated",
-          "wikidata": "Q217125",
-          "label": "İznik",
-          "country": "TR"
+          "source": "curated"
         }
       ],
       "date": {
@@ -62913,10 +62891,7 @@
           "role": "mention",
           "la": "Constantinopolitánum",
           "it": "Costantinopoli",
-          "source": "curated",
-          "wikidata": "Q406",
-          "label": "Istanbul",
-          "country": "TR"
+          "source": "curated"
         }
       ],
       "date": {
@@ -84487,10 +84462,7 @@
           "role": "ministry",
           "la": "Northúmbriæ",
           "it": "Northumbria",
-          "source": "curated",
-          "wikidata": "Q107299",
-          "label": "Kingdom of Northumbria",
-          "country": "GB"
+          "source": "curated"
         }
       ],
       "date": {
@@ -124030,10 +124002,7 @@
           "role": "mention",
           "la": "Constantinopolitánum",
           "it": "Costantinopoli",
-          "source": "curated",
-          "wikidata": "Q406",
-          "label": "Istanbul",
-          "country": "TR"
+          "source": "curated"
         }
       ],
       "date": {
