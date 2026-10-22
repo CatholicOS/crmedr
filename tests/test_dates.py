@@ -93,15 +93,34 @@ class EditionBoundsTest(unittest.TestCase):
     def test_deprecated_entries_get_no_bound(self):
         self.assertEqual(d.edition_bounds([{"id": "mr:0101-a", "deprecated": True}], self.KEYS), {})
 
+    def editions(self, root, months=range(1, 13)):
+        for edition, _ in d.EDITION_YEARS:
+            folder = root / "data" / "editions" / edition
+            folder.mkdir(parents=True)
+            for m in months:
+                (folder / f"{m:02d}.json").write_text(json.dumps(
+                    {"mensis": "M", "1": {"titulus": "t", "elogia": {f"mr:{m:02d}01-a": "x"}}}))
+
     def test_edition_keys_skips_non_day_values(self):
         with tempfile.TemporaryDirectory() as t:
-            folder = Path(t) / "data" / "editions" / "martyrologium_romanum_1914_en_unofficial"
-            folder.mkdir(parents=True)
-            (folder / "01.json").write_text(json.dumps(
-                {"mensis": "Januarius", "1": {"titulus": "t", "elogia": {"mr:0101-a": "x"}}}))
+            self.editions(Path(t))
             keys = d.edition_keys(Path(t))
-        self.assertEqual(keys["martyrologium_romanum_1914_en_unofficial"], {"mr:0101-a"})
-        self.assertEqual(keys["martyrologium_romanum_1630"], set())
+        self.assertEqual(keys["martyrologium_romanum_1914_en_unofficial"],
+                         {f"mr:{m:02d}01-a" for m in range(1, 13)})
+
+    def test_edition_keys_fail_without_every_month(self):
+        with tempfile.TemporaryDirectory() as t:
+            self.editions(Path(t), months=range(1, 12))
+            with self.assertRaisesRegex(ValueError, "martyrologium_romanum_1630.*12"):
+                d.edition_keys(Path(t))
+
+    def test_bounds_with_a_wrong_api_path_write_nothing(self):
+        with tempfile.TemporaryDirectory() as t:
+            root = Path(t) / "repo"
+            (root / "data").mkdir(parents=True)
+            (root / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": []}))
+            self.assertEqual(d.main(["bounds", str(Path(t) / "nowhere"), str(root)]), 1)
+            self.assertFalse((root / d.BOUNDS).exists())
 
 
 class BuildDatesTest(unittest.TestCase):
@@ -135,7 +154,8 @@ class BuildDatesTest(unittest.TestCase):
                          {"to": 1630, "basis": "death", "source": "edition"})
 
     def test_curated_bad_shapes_fail(self):
-        for bad in ({"yaer": 431}, {"year": 431, "from": 400}, {}, {"basis": "event"}):
+        for bad in ({"yaer": 431}, {"year": 431, "from": 400}, {}, {"basis": "event"}, {"year": 0},
+                    {"year": "431"}, {"year": True}, {"from": 1.5}, {"from": 400, "to": 300}):
             with self.subTest(bad=bad), self.assertRaisesRegex(ValueError, self.ID):
                 self.build(curated={self.ID: bad})
 

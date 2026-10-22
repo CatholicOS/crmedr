@@ -34,7 +34,7 @@ A subject died after an edition that already prints the eulogy: the person link 
 
 ## Feasts and commemorations to date
 
-`celebratio` and `commemoratio` eulogies with no date but an edition bound (297): candidates for `data/dates_curated.json`.
+`celebratio` and `commemoratio` eulogies with no date, or only an edition bound (297): candidates for `data/dates_curated.json`. A eulogy with no bound is only absent from the 1630 and 1914 editions, which says nothing about its date.
 
 - mr:0101-iustinus (before 1914)
 - mr:0103-daniel (before 1630)

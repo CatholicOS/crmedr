@@ -27,7 +27,7 @@
 
 1. A person with a death date who is one of several, where the others have none: the date comes from the dated ones only (Task 1 test `test_some_persons_undated`).
 2. A person item whose QID has no entry in `person_details.json` (details not refreshed after `build_person_items.py apply`): skipped, not a crash (Task 1 test `test_item_without_details`).
-3. A `same_eulogy` link to a deprecated cross-day ID that only a 1749 edition prints: the bound is 1749 (Task 2 test `test_bound_through_deprecated_twin`).
+3. A `same_eulogy` link to a deprecated cross-day ID that only the 1914 edition prints: the bound is 1914 (Task 2 test `test_bound_through_deprecated_twin`).
 4. A curated date for an ID that is no longer current (renamed): the run fails naming it, as `ENTRY_NOTES` does (Task 3 test `test_curated_unknown_id_fails`).
 5. BC century precision and a circa death: −100…−1 for the 1st century BC; `circa: true` kept (Task 1 tests `test_bc_century`, `test_circa_kept`).
 
@@ -76,15 +76,15 @@
 **Interfaces:**
 - Consumes: the registry's current entries (`data/martyrology_ids.json`, with `same_eulogy`).
 - Produces:
-  - `EDITION_YEARS = (("martyrologium_romanum_1630", 1630), ("martyrologium_romanum_1749", 1749), ("martyrologium_romanum_1914_en_unofficial", 1914))`.
+  - `EDITION_YEARS = (("martyrologium_romanum_1630", 1630), ("martyrologium_romanum_1914_en_unofficial", 1914))` (not `martyrologium_romanum_1749`: a 1913 printing with later additions, ruled in Task 3).
   - `edition_keys(api_root: Path) -> dict[str, set[str]]` — the IDs of each edition's `data/editions/<edition>/*.json` (month files; day values are `{"elogia": {id: text}}`, other top-level values are skipped).
   - `edition_bounds(entries: list[dict], keys: dict[str, set[str]]) -> dict[str, int]` — for each current entry, the year of the oldest edition whose keys contain its ID or one of its `same_eulogy` IDs.
   - CLI `python3 scripts/extract_dates.py bounds /path/to/martyrology-api [repo_root]` writes `data/edition_bounds.json` = `{"$comment": ..., "bounds": {id: year}}` sorted by ID, `indent=1`.
 
-- [ ] **Step 1: Write the failing tests** (class `EditionBoundsTest`): `test_oldest_edition_wins` (ID in 1749 and 1630 → 1630); `test_bound_through_deprecated_twin` (ID absent everywhere, its `same_eulogy` deprecated ID in 1749 → 1749); `test_absent_everywhere` (no key); `test_edition_keys_skips_non_day_values` (a temp month file with a string top-level value and one day → that day's IDs).
+- [ ] **Step 1: Write the failing tests** (class `EditionBoundsTest`): `test_oldest_edition_wins` (ID in 1914 and 1630 → 1630); `test_bound_through_deprecated_twin` (ID absent everywhere, its `same_eulogy` deprecated ID in 1914 → 1914); `test_the_1749_folder_bounds_nothing`; `test_absent_everywhere` (no key); `test_edition_keys_skips_non_day_values` (a temp month file with a string top-level value and one day → that day's IDs).
 - [ ] **Step 2: Run** them — Expected: FAIL.
 - [ ] **Step 3: Implement** the names above and the `bounds` subcommand.
-- [ ] **Step 4: Run** the tests — Expected: PASS. Then `python3 scripts/extract_dates.py bounds ../martyrology-api` — Expected: about 1,945 bounds (1,710 at 1630, 231 at 1749, 4 at 1914; the measurement of 2026-10-22).
+- [ ] **Step 4: Run** the tests — Expected: PASS. Then `python3 scripts/extract_dates.py bounds ../martyrology-api` — Expected: about 1,859 bounds (about 1,710 at 1630, 150 at 1914).
 - [ ] **Step 5: Commit** the script, the test and `data/edition_bounds.json`: `"dates: edition bounds from the 1630, 1749 and 1914 editions"`.
 
 ### Task 3: `data/dates.json`, curated dates, checks, report
