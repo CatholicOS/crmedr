@@ -1,4 +1,6 @@
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -58,6 +60,35 @@ class DeathDateTest(unittest.TestCase):
         self.assertEqual(d.with_basis({"year": 304}, "commemoratio"), {"year": 304})
         self.assertEqual(d.with_basis({"year": 431, "basis": "event"}, "celebratio"),
                          {"year": 431, "basis": "event"})
+
+
+class EditionBoundsTest(unittest.TestCase):
+    KEYS = {"martyrologium_romanum_1630": {"mr:0101-a"},
+            "martyrologium_romanum_1749": {"mr:0101-a", "mr:0102-twin"},
+            "martyrologium_romanum_1914_en_unofficial": set()}
+
+    def test_oldest_edition_wins(self):
+        self.assertEqual(d.edition_bounds([{"id": "mr:0101-a"}], self.KEYS), {"mr:0101-a": 1630})
+
+    def test_bound_through_deprecated_twin(self):
+        entries = [{"id": "mr:0101-b", "same_eulogy": ["mr:0102-twin"]}]
+        self.assertEqual(d.edition_bounds(entries, self.KEYS), {"mr:0101-b": 1749})
+
+    def test_absent_everywhere(self):
+        self.assertEqual(d.edition_bounds([{"id": "mr:0101-c"}], self.KEYS), {})
+
+    def test_deprecated_entries_get_no_bound(self):
+        self.assertEqual(d.edition_bounds([{"id": "mr:0101-a", "deprecated": True}], self.KEYS), {})
+
+    def test_edition_keys_skips_non_day_values(self):
+        with tempfile.TemporaryDirectory() as t:
+            folder = Path(t) / "data" / "editions" / "martyrologium_romanum_1749"
+            folder.mkdir(parents=True)
+            (folder / "01.json").write_text(json.dumps(
+                {"mensis": "Januarius", "1": {"titulus": "t", "elogia": {"mr:0101-a": "x"}}}))
+            keys = d.edition_keys(Path(t))
+        self.assertEqual(keys["martyrologium_romanum_1749"], {"mr:0101-a"})
+        self.assertEqual(keys["martyrologium_romanum_1630"], set())
 
 
 if __name__ == "__main__":
