@@ -25492,28 +25492,105 @@
     },
     {
       "op": "resolve_place",
-      "id": "Alamánnos et Bávaros",
-      "la": "Alamánnos et Bávaros",
+      "id": "Alamánnos",
+      "la": "Alamánnos",
       "it": [
-        "Alamanni e i Bavari"
+        "Alamanni"
       ],
       "occurrences": [
         "mr:1103-pirminus"
       ],
       "claims": [],
       "failed": [
-        "no candidates found"
+        "latin: no Latin label, alias or P9314 matches",
+        "country: the item has no single current country ()",
+        "type: the item is not a place"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q132990",
+          "label": "Alamanni",
+          "description": "antico popolo germanico",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Alamanni"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501",
+            "Q170156"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q61670548",
+          "label": "Alamanni Stazione",
+          "description": "fermata del tram a Firenze",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            43.776076,
+            11.246957
+          ],
+          "types": [
+            "Q2175765",
+            "Q20202072"
+          ],
+          "evidence": [
+            "country"
+          ]
+        },
+        {
+          "wikidata": "Q2208978",
+          "label": "Alamannia",
+          "description": "regione storica",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            48.42333,
+            9.152652
+          ],
+          "types": [
+            "Q3024240",
+            "Q1371288",
+            "Q154547",
+            "Q5402094",
+            "Q1620908"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
       "decision": null,
       "edited": null,
-      "reasoning": "Research: Two peoples in one phrase; a single QID cannot serve. Split: Alamanni Q132990 (DE, CH, FR) and Bavarii Q156740 (DE, AT).",
+      "suggested": {
+        "wikidata": "Q132990",
+        "countries": [
+          "DE",
+          "CH",
+          "FR",
+          "AT"
+        ]
+      },
+      "reasoning": "The Alamanni, evangelized by Pirmin (with the Bavarii, a separate card); Alamannia is today in Germany, Switzerland, Alsace and Vorarlberg.",
+      "confidence": "high",
       "jev": {
-        "decision": "reject",
-        "reason": "Jev: a nationality or people, and no candidate is its item",
+        "decision": "accept",
+        "wikidata": "Q132990",
         "kind": "people",
-        "probability": 0.99,
-        "confidence": 0.99,
+        "probability": 0.98,
+        "confidence": 0.97,
         "model": "jev-1.14.0"
       }
     },
@@ -43463,6 +43540,153 @@
         "kind": "place",
         "probability": 0.92,
         "confidence": 0.84,
+        "model": "jev-1.14.0"
+      }
+    },
+    {
+      "op": "resolve_place",
+      "id": "Bávaros",
+      "la": "Bávaros",
+      "it": [
+        "Bavari"
+      ],
+      "occurrences": [
+        "mr:1103-pirminus"
+      ],
+      "claims": [],
+      "failed": [
+        "latin: no Latin label, alias or P9314 matches"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q3637034",
+          "label": "Bavari",
+          "description": "quartiere di Genova",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [
+            "Bavarium"
+          ],
+          "p9314": false,
+          "coords": [
+            44.43277778,
+            9.01833333
+          ],
+          "types": [
+            "Q123705"
+          ],
+          "evidence": [
+            "it",
+            "country",
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q5790170",
+          "label": "Bavari",
+          "description": "village in Iran",
+          "country": "IR",
+          "countries": [
+            "IR"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            30.7425,
+            51.31305556
+          ],
+          "types": [
+            "Q532"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q12862325",
+          "label": "Bavari",
+          "description": "",
+          "country": "GE",
+          "countries": [
+            "GE"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            42.824444,
+            42.500278
+          ],
+          "types": [
+            "Q486972"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q980",
+          "label": "Bavaria",
+          "description": "stato federato della Germania",
+          "country": "DE",
+          "countries": [
+            "DE"
+          ],
+          "la": [
+            "Bavaria"
+          ],
+          "p9314": false,
+          "coords": [
+            49.07861111111111,
+            11.385555555555555
+          ],
+          "types": [
+            "Q1221156",
+            "Q107390",
+            "Q836915",
+            "Q596321"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q156740",
+          "label": "Bajuwari",
+          "description": "tribù germanica",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Bavarii"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q4204501"
+          ],
+          "evidence": [
+            "it"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "suggested": {
+        "wikidata": "Q156740",
+        "countries": [
+          "DE",
+          "AT"
+        ]
+      },
+      "reasoning": "The Bajuwari (Bavarii), evangelized by Pirmin; their homeland today is Bavaria and Austria.",
+      "confidence": "high",
+      "jev": {
+        "decision": "accept",
+        "wikidata": "Q156740",
+        "kind": "people",
+        "probability": 0.89,
+        "confidence": 0.87,
         "model": "jev-1.14.0"
       }
     },
@@ -70478,6 +70702,86 @@
         "kind": "place",
         "probability": 0.99,
         "confidence": 0.99,
+        "model": "jev-1.14.0"
+      }
+    },
+    {
+      "op": "resolve_place",
+      "id": "Frisonúmque",
+      "la": "Frisonúmque",
+      "it": [
+        "Frisoni"
+      ],
+      "occurrences": [
+        "mr:0908-sergius-i"
+      ],
+      "claims": [],
+      "failed": [
+        "latin: no Latin label, alias or P9314 matches"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q18506335",
+          "label": "Frisoni",
+          "description": "human settlement in Italy",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            45.91699,
+            11.66187
+          ],
+          "types": [
+            "Q486972"
+          ],
+          "evidence": [
+            "it",
+            "country",
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q106416",
+          "label": "Frisians",
+          "description": "gruppo etnico germanico",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ],
+          "la": [
+            "Frisii"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q41710"
+          ],
+          "evidence": [
+            "it"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "suggested": {
+        "wikidata": "Q106416",
+        "countries": [
+          "NL",
+          "DE"
+        ]
+      },
+      "reasoning": "The Frisians, evangelized under Pope Sergius I (Willibrord); their homeland today spans the Netherlands and Germany, as Frisia does.",
+      "confidence": "high",
+      "jev": {
+        "decision": "accept",
+        "wikidata": "Q106416",
+        "kind": "people",
+        "probability": 0.99,
+        "confidence": 0.98,
         "model": "jev-1.14.0"
       }
     },
@@ -124502,19 +124806,174 @@
     },
     {
       "op": "resolve_place",
-      "id": "Sáxonum Frisonúmque",
-      "la": "Sáxonum Frisonúmque",
+      "id": "Sáxonum",
+      "la": "Sáxonum",
       "it": [
-        "Sassoni e dei Frisoni"
+        "Sassoni"
       ],
       "occurrences": [
         "mr:0908-sergius-i"
       ],
       "claims": [],
       "failed": [
-        "no candidates found"
+        "latin: no Latin label, alias or P9314 matches",
+        "country: the item has no single current country ()",
+        "type: the item is not a place"
       ],
       "candidates": [
+        {
+          "wikidata": "Q1202",
+          "label": "Saxony",
+          "description": "stato federato della Germania",
+          "country": "DE",
+          "countries": [
+            "DE"
+          ],
+          "la": [
+            "Saxonia"
+          ],
+          "p9314": false,
+          "coords": [
+            51.026944444444,
+            13.358888888889
+          ],
+          "types": [
+            "Q1221156"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q1206",
+          "label": "Saxony-Anhalt",
+          "description": "stato federato della Germania",
+          "country": "DE",
+          "countries": [
+            "DE"
+          ],
+          "la": [
+            "Saxonia et Anhaltium"
+          ],
+          "p9314": false,
+          "coords": [
+            52,
+            11.7
+          ],
+          "types": [
+            "Q1221156"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q155570",
+          "label": "Duchy of Saxe-Weimar-Eisenach",
+          "description": "Duchy and Grand Duchy in present-day Thuringia",
+          "country": null,
+          "countries": [
+            "Q1206012"
+          ],
+          "la": [
+            "Saxonia-Vimarii-Eisenach"
+          ],
+          "p9314": false,
+          "coords": [
+            50.983333333333,
+            11.166666666667
+          ],
+          "types": [
+            "Q165116",
+            "Q26879769",
+            "Q154547",
+            "Q26830017",
+            "Q113136497"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q3462133",
+          "label": "Duchy of Saxe-Coburg and Gotha",
+          "description": "ducato tedesco (1826-1918)",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Saxonia-Coburgi et Gotahae"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q672502",
+            "Q7275",
+            "Q3024240",
+            "Q113136497"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q157710",
+          "label": "Duchy of Saxe-Meiningen",
+          "description": "ducato tedesco (1680-1918)",
+          "country": null,
+          "countries": [],
+          "la": [
+            "Saxonia-Meiningen"
+          ],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q154547",
+            "Q26879769",
+            "Q113136497"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q158151",
+          "label": "Duchy of Saxe-Altenburg",
+          "description": "historical german duchy",
+          "country": null,
+          "countries": [],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            50.985,
+            12.433333
+          ],
+          "types": [
+            "Q154547",
+            "Q26830017"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q675085",
+          "label": "Duchy of Saxe-Gotha-Altenburg",
+          "description": "ducato tedesco",
+          "country": null,
+          "countries": [
+            "Q151624"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": null,
+          "types": [
+            "Q26879769",
+            "Q26830017"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
         {
           "wikidata": "Q101985",
           "label": "Saxons",
@@ -124532,26 +124991,25 @@
             "Q41710",
             "Q133311"
           ],
-          "evidence": []
+          "evidence": [
+            "it"
+          ]
         }
       ],
       "decision": null,
       "edited": null,
       "suggested": {
         "wikidata": "Q101985",
-        "countries": [
-          "DE",
-          "NL"
-        ]
+        "country": "DE"
       },
-      "confidence": "low",
-      "reasoning": "Pair of peoples (Saxons and Frisians); one item only. Saxons chosen; Frisians Q106416 is the other.",
+      "reasoning": "The Saxons, to whom Pope Sergius I sent missionaries (with the Frisians, a separate card); their homeland today is in Germany.",
+      "confidence": "high",
       "jev": {
         "decision": "accept",
         "wikidata": "Q101985",
         "kind": "people",
-        "probability": 0.94,
-        "confidence": 0.88,
+        "probability": 1.0,
+        "confidence": 1.0,
         "model": "jev-1.14.0"
       }
     },

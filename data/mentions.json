@@ -107380,8 +107380,21 @@
           "kind": "place",
           "where": "text",
           "start": 105,
+          "end": 112,
+          "check": "2b0889c5",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 113,
           "end": 124,
-          "check": "e5c51185",
+          "check": "a9faba30",
           "qid": null,
           "roles": [
             {
@@ -132748,8 +132761,21 @@
           "kind": "place",
           "where": "text",
           "start": 119,
+          "end": 128,
+          "check": "23ad8745",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 132,
           "end": 139,
-          "check": "6e1283d8",
+          "check": "e797cf17",
           "qid": null,
           "roles": [
             {
@@ -263237,8 +263263,21 @@
           "kind": "place",
           "where": "text",
           "start": 140,
+          "end": 147,
+          "check": "4ce57d08",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 154,
           "end": 161,
-          "check": "c5d99ec2",
+          "check": "71bbb80a",
           "qid": null,
           "roles": [
             {
@@ -288578,8 +288617,21 @@
           "kind": "place",
           "where": "text",
           "start": 135,
+          "end": 143,
+          "check": "766bb0de",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 148,
           "end": 154,
-          "check": "6c7c2abd",
+          "check": "dcd65eef",
           "qid": null,
           "roles": [
             {

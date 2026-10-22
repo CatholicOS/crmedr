@@ -34084,8 +34084,14 @@
       },
       {
         "role": "ministry",
-        "la": "Sáxonum Frisonúmque",
-        "it": "Sassoni e dei Frisoni",
+        "la": "Sáxonum",
+        "it": "Sassoni",
+        "source": "curated"
+      },
+      {
+        "role": "ministry",
+        "la": "Frisonúmque",
+        "it": "Frisoni",
         "source": "curated"
       }
     ],
@@ -41929,8 +41935,14 @@
       },
       {
         "role": "ministry",
-        "la": "Alamánnos et Bávaros",
-        "it": "Alamanni e i Bavari",
+        "la": "Alamánnos",
+        "it": "Alamanni",
+        "source": "curated"
+      },
+      {
+        "role": "ministry",
+        "la": "Bávaros",
+        "it": "Bavari",
         "source": "curated"
       }
     ],
