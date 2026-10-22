@@ -1166,3 +1166,73 @@ class PlaceVariantsTest(unittest.TestCase):
         gazetteer = json.loads((REPO / "data" / "gazetteer.json").read_text(encoding="utf-8"))["places"]
         variants = json.loads((REPO / "data" / "places_variants_curated.json").read_text(encoding="utf-8"))
         self.assertEqual(bg.validate_variants(variants, gazetteer), [])
+
+
+class DecideJevTest(unittest.TestCase):
+    def setUp(self):
+        self.c1 = cand("Q1", label="Fictopolis", country="FR")
+        self.c2 = cand("Q2", label="Fictopolis Nova", country="DE")
+        self.frisia = cand("Q3", label="Frisia", country=None, countries=["NL", "DE"])
+        self.client = FakeClient({"x": [self.c1, self.c2, self.frisia]})
+
+    def card(self, la="Fictópoli", pick="Q2", p=0.96, decision=None, prefilled=None, candidates=None,
+             country="DE", jev_decision="edit", suggested=None):
+        o = op(la, decision, candidates if candidates is not None else [self.c1, self.c2], suggested=suggested)
+        o["jev"] = {"kind": "place", "probability": p, "confidence": p, "model": "m", "decision": jev_decision,
+                    "wikidata": pick, **({"country": country} if country else {})}
+        if prefilled:
+            o["prefilled"] = prefilled
+        return o
+
+    def decide(self, *ops, threshold=0.95):
+        gaz, review = {}, bg.new_changeset(list(ops))
+        counts = bg.decide_jev(gaz, review, INDEX, self.client, threshold)
+        return counts, gaz, review
+
+    def test_decide_at_threshold(self):
+        counts, gaz, review = self.decide(self.card(), self.card("Altrópoli", p=0.94))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q2", "label": "Fictopolis Nova", "country": "DE",
+                                            "status": "jev"})
+        self.assertEqual([o["id"] for o in review["operations"]], ["Altrópoli"])
+        self.assertEqual(counts["decided"], 1)
+
+    def test_decide_skips_curator_decisions(self):
+        _, gaz, review = self.decide(self.card(decision="accept"))
+        self.assertEqual(gaz, {})
+        self.assertEqual(len(review["operations"]), 1)
+
+    def test_decide_replaces_a_prefill(self):
+        _, gaz, _ = self.decide(self.card(decision="accept", prefilled="jev"))
+        self.assertEqual(gaz["Fictópoli"]["status"], "jev")
+
+    def test_decide_with_candidate_countries(self):
+        _, gaz, _ = self.decide(self.card(pick="Q3", country=None, candidates=[self.c1, self.frisia]))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q3", "label": "Frisia", "country": None,
+                                            "countries": ["NL", "DE"], "status": "jev"})
+
+    def test_decide_with_suggested_countries(self):
+        _, gaz, _ = self.decide(self.card(pick="Q1", country=None, jev_decision="accept",
+                                          suggested={"wikidata": "Q1", "countries": ["FR", "BE"]}))
+        self.assertEqual(gaz["Fictópoli"]["countries"], ["FR", "BE"])
+
+    def test_decide_needs_a_candidate(self):
+        _, gaz, _ = self.decide(self.card(pick="Q9"))
+        self.assertEqual(gaz, {})
+
+    def test_decide_never_rejects(self):
+        o = self.card()
+        o["jev"] = {"kind": "people", "probability": 0.99, "confidence": 0.99, "model": "m",
+                    "decision": "reject", "reason": "Jev: a nationality or people, not a place"}
+        _, gaz, _ = self.decide(o)
+        self.assertEqual(gaz, {})
+
+    def test_decide_is_all_or_nothing(self):
+        bad = self.card("Altrópoli", country="XX")
+        with self.assertRaises(ValueError):
+            self.decide(self.card(), bad)
+
+    def test_jev_status_validates(self):
+        gaz = {"Fictópoli": {"wikidata": "Q3", "label": "Frisia", "country": None, "countries": ["NL", "DE"],
+                             "status": "jev"},
+               "Altrópoli": {"wikidata": "Q4", "label": "Orient", "country": None, "status": "jev"}}
+        self.assertEqual(bg.validate(gaz, INDEX), [])
