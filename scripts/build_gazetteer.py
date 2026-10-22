@@ -601,8 +601,11 @@ def _resolve(op, client, its):
             return None, f"{la!r}: edited.no_country and edited.country are both set"
         return {"wikidata": qid, "label": chosen["label"], "country": None, "status": "reviewed",
                 **({"note": edit["reason"]} if edit.get("reason") else {})}, None
+    # As the review card shows it: the candidate's one ISO code when its P17 also names a state
+    # without one (Babylon: Ancient Rome and IQ).
+    iso = list(dict.fromkeys(c for c in chosen.get("countries") or [] if c in ISO_CODES))
     country = edit.get("country") or (suggested.get("country") if from_suggestion else None) \
-        or chosen.get("country")
+        or chosen.get("country") or (iso[0] if len(iso) == 1 else None)
     if not country:
         return None, f"{la!r}: {qid} needs a country (no single current P17; use edit, or edited.no_country)"
     country = convention(country)

@@ -1261,3 +1261,12 @@ class DecideJevTest(unittest.TestCase):
                              "status": "jev"},
                "Altrópoli": {"wikidata": "Q4", "label": "Orient", "country": None, "status": "jev"}}
         self.assertEqual(bg.validate(gaz, INDEX), [])
+
+
+class AcceptCountryFromCandidateCountriesTest(unittest.TestCase):
+    def test_accept_takes_the_one_iso_code_of_the_candidates_countries(self):
+        babylon = cand("Q5684", label="Babylon", country=None, countries=["Q1747689", "IQ"])
+        client = FakeClient({"x": [babylon]})
+        gaz, review = {}, bg.new_changeset([dict(op("Fictópoli", None, [babylon]))])
+        n = bg.apply_decisions(gaz, review, bg.new_changeset([op("Fictópoli", "accept", [babylon])]), INDEX, client)
+        self.assertEqual((n, gaz["Fictópoli"]["country"]), (1, "IQ"))
