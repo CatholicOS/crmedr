@@ -44,8 +44,8 @@ EDITION_2004 = "martyrologium_romanum_2004"
 WIDE = 300
 ESTIMATES = "data/date_estimates.json"
 # The probability from which Jev's century estimate becomes a date (the curator's threshold, from
-# python3 scripts/estimate_dates.py evaluate).
-ESTIMATE_MIN = 0.9
+# python3 scripts/estimate_dates.py evaluate: 94% in the right century, 99% within one, 2026-10-22).
+ESTIMATE_MIN = 0.8
 DATE_KEYS = ("year", "from", "to", "circa", "basis", "source", "note")
 
 
