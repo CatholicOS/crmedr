@@ -337,20 +337,15 @@ class Wikidata:
         return summaries
 
     def _fallback_country(self, s, countries):
-        """The one ISO country of a place Wikidata gives no current country with a code: the
-        successors (P1366) of the historical states its P17 names (the Kingdom of France: France),
-        else, with no P17 at all, the countries of the areas it lies in (P131: Bethany, the Quds
-        Governorate, PS). None unless exactly one code results (Ancient Rome has many successors)."""
-        if s["country_qids"]:
-            states = self._entities(s["country_qids"])
-            found = {countries[_value(c)["id"]] for raw in states.values() for c in raw.get("claims", {}).get("P1366", [])
-                     if c.get("rank") != "deprecated" and isinstance(_value(c), dict) and _value(c)["id"] in countries}
-        elif s.get("admin_qids"):
-            areas = self._entities(s["admin_qids"])
-            found = {countries[q] for raw in areas.values() for q in current_country_qids(raw.get("claims", {}))
-                     if q in countries}
-        else:
+        """The one ISO country of a place Wikidata gives no country (no P17 at all): that of the
+        areas it lies in (P131: Bethany, the Quds Governorate, PS). None unless exactly one code
+        results. A historical state's successor is never used: it is not where a place lies today
+        (Taiwan under Japanese rule is not in Japan)."""
+        if s["country_qids"] or not s.get("admin_qids"):
             return None
+        areas = self._entities(s["admin_qids"])
+        found = {countries[q] for raw in areas.values() for q in current_country_qids(raw.get("claims", {}))
+                 if q in countries}
         return convention(found.pop()) if len(found) == 1 else None
 
     def candidates(self, text, language="it"):
