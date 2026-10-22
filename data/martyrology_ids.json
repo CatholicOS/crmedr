@@ -275,7 +275,10 @@
           "role": "religious_life",
           "la": "Cluniacénsis",
           "it": "Cluny",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         }
       ],
       "date": {
@@ -1084,7 +1087,10 @@
           "role": "mention",
           "la": "Autissiodorénsi",
           "it": "Auxerre",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q167600",
+          "label": "Auxerre",
+          "country": "FR"
         },
         {
           "role": "birth",
@@ -2050,13 +2056,19 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         },
         {
           "role": "ministry",
           "la": "Oriénte",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "date": {
@@ -2870,7 +2882,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -2928,7 +2943,10 @@
           "role": "birth",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         },
         {
           "role": "journey",
@@ -2944,7 +2962,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ]
     },
@@ -3173,7 +3194,10 @@
           "role": "birth",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -3288,7 +3312,10 @@
           "role": "religious_life",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ]
     },
@@ -3526,7 +3553,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "ministry",
@@ -3574,7 +3608,14 @@
           "role": "mention",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ],
       "date": {
@@ -3878,7 +3919,10 @@
           "role": "ministry",
           "la": "Aquileiénsis",
           "it": "Aquileia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q53216",
+          "label": "Aquileia",
+          "country": "IT"
         }
       ]
     },
@@ -3927,7 +3971,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -4108,7 +4155,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -4799,7 +4849,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ],
       "date": {
@@ -4833,13 +4886,19 @@
           "role": "death",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         },
         {
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -5502,7 +5561,10 @@
           "role": "foundation",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ],
       "date": {
@@ -5644,7 +5706,10 @@
           "role": "religious_life",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "religious_life",
@@ -5871,7 +5936,10 @@
           "role": "journey",
           "la": "Antiochíæ",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -6084,7 +6152,10 @@
           "role": "ministry",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ],
       "date": {
@@ -6145,7 +6216,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         }
       ],
       "date": {
@@ -6502,7 +6576,10 @@
           "role": "mention",
           "la": "Mediolanénsi",
           "it": "Milano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q490",
+          "label": "Milan",
+          "country": "IT"
         }
       ],
       "date": {
@@ -6738,7 +6815,10 @@
           "la": "Romam",
           "it": "Roma",
           "source": "curated",
-          "occurrence_it": 1
+          "occurrence_it": 1,
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -6827,7 +6907,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         },
         {
           "role": "birth",
@@ -6920,7 +7003,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -7229,7 +7315,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -7262,7 +7351,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -7613,7 +7705,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -7921,7 +8016,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         }
       ]
     },
@@ -8144,7 +8242,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -8838,7 +8939,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di sterminio della prigione di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "ministry",
@@ -9035,13 +9139,23 @@
           "role": "ministry",
           "la": "Aurelianénsis",
           "it": "Orléans",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6548",
+          "label": "Orléans",
+          "country": "FR"
         },
         {
           "role": "journey",
           "la": "límina Apostolórum",
           "it": "basiliche degli Apostoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141806648",
+          "label": "Limina Apostolorum",
+          "country": null,
+          "countries": [
+            "VA",
+            "IT"
+          ]
         }
       ],
       "edition_notes": {
@@ -9692,7 +9806,10 @@
           "la": "Antiochíæ",
           "it": "Antiochia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -10987,7 +11104,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -11118,7 +11238,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -11346,7 +11469,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -11668,7 +11794,10 @@
           "role": "ministry",
           "la": "Dánia",
           "it": "Danimarca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q35",
+          "label": "Denmark",
+          "country": "DK"
         },
         {
           "role": "ministry",
@@ -11964,7 +12093,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -12314,7 +12446,10 @@
           "role": "mention",
           "la": "Gálliæ",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -12489,7 +12624,10 @@
           "role": "mention",
           "la": "Gálliæ",
           "it": "Gallie",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -13305,13 +13443,19 @@
           "role": "journey",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -14128,7 +14272,10 @@
           "la": "Cámbria",
           "it": "Galles",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q25",
+          "label": "Wales",
+          "country": "GB"
         }
       ],
       "date": {
@@ -14159,7 +14306,10 @@
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -14196,7 +14346,10 @@
           "role": "ministry",
           "la": "Rothomagénsis",
           "it": "Rouen",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q30974",
+          "label": "Rouen",
+          "country": "FR"
         },
         {
           "role": "religious_life",
@@ -14822,7 +14975,10 @@
           "role": "mention",
           "la": "Germániam",
           "it": "Germania",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q62646",
+          "label": "Germania",
+          "country": "DE"
         }
       ],
       "date": {
@@ -15006,7 +15162,10 @@
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -15132,13 +15291,23 @@
         {
           "role": "birth",
           "la": "Scótia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q22",
+          "label": "Scotland",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "límina Apostolórum",
           "it": "basiliche degli Apostoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141806648",
+          "label": "Limina Apostolorum",
+          "country": null,
+          "countries": [
+            "VA",
+            "IT"
+          ]
         }
       ],
       "edition_notes": {
@@ -15167,7 +15336,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -15540,7 +15712,10 @@
           "it": "Roma",
           "source": "curated",
           "person": "Cyrillus",
-          "occurrence_it": 1
+          "occurrence_it": 1,
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "death",
@@ -15557,7 +15732,10 @@
           "la": "Romam",
           "it": "Roma",
           "source": "curated",
-          "occurrence_it": 1
+          "occurrence_it": 1,
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "mention",
@@ -16047,7 +16225,10 @@
         {
           "role": "birth",
           "la": "Anglia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ]
     },
@@ -16479,7 +16660,10 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -16834,7 +17018,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ]
     },
@@ -16899,7 +17086,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -17468,7 +17658,10 @@
           "role": "ministry",
           "la": "Aurelianénsis",
           "it": "Orléans",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6548",
+          "label": "Orléans",
+          "country": "FR"
         }
       ],
       "date": {
@@ -17627,7 +17820,10 @@
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -17720,7 +17916,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -18106,7 +18305,10 @@
           "role": "birth",
           "la": "Merciórum",
           "it": "Mercia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q105092",
+          "label": "Kingdom of Mercia",
+          "country": "GB"
         }
       ],
       "date": {
@@ -18583,7 +18785,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -19003,7 +19208,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -19242,7 +19450,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -19273,7 +19484,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "education",
@@ -20081,7 +20295,10 @@
           "role": "ministry",
           "la": "Merciórum",
           "it": "Mercia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q105092",
+          "label": "Kingdom of Mercia",
+          "country": "GB"
         }
       ],
       "date": {
@@ -21272,7 +21489,10 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -21347,7 +21567,10 @@
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -21745,7 +21968,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -22370,7 +22596,10 @@
           "role": "journey",
           "la": "Germániam",
           "it": "Germania",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q62646",
+          "label": "Germania",
+          "country": "DE"
         },
         {
           "role": "journey",
@@ -22537,7 +22766,10 @@
           "role": "ministry",
           "la": "Hierosolymitáni",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -22569,7 +22801,10 @@
           "role": "mention",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -23018,7 +23253,10 @@
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -23683,7 +23921,10 @@
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -24363,7 +24604,10 @@
           "role": "birth",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -24404,7 +24648,10 @@
           "role": "birth",
           "la": "Británnia",
           "it": "Britannia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3240725",
+          "label": "Britannia",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -24651,7 +24898,10 @@
           "role": "ministry",
           "la": "Hierosolymitáni",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -24685,7 +24935,10 @@
           "role": "ministry",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         },
         {
           "role": "birth",
@@ -25140,7 +25393,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di detenzione di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "birth",
@@ -26327,7 +26583,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -26611,7 +26870,14 @@
           "role": "journey",
           "la": "Terra Sancta",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "translation",
@@ -27367,13 +27633,23 @@
           "role": "ministry",
           "la": "Dánia",
           "it": "Danimarca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q35",
+          "label": "Denmark",
+          "country": "DK"
         },
         {
           "role": "ministry",
           "la": "Frísia",
           "it": "Olanda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4492881",
+          "label": "Frisia",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ]
         },
         {
           "role": "ministry",
@@ -27479,7 +27755,14 @@
           "role": "journey",
           "la": "Terra Sancta",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "birth",
@@ -27952,7 +28235,10 @@
           "role": "death",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -29013,13 +29299,19 @@
           "role": "foundation",
           "la": "Calábria",
           "it": "Calabria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1458",
+          "label": "Calabria",
+          "country": "IT"
         },
         {
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -29108,7 +29400,10 @@
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -29554,7 +29849,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
@@ -31304,7 +31602,10 @@
           "role": "cult",
           "la": "Oriénte",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "edition_notes": {
@@ -31456,7 +31757,10 @@
           "role": "ministry",
           "la": "Rothomagénsis",
           "it": "Rouen",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q30974",
+          "label": "Rouen",
+          "country": "FR"
         },
         {
           "role": "religious_life",
@@ -31802,7 +32106,10 @@
           "la": "Africam",
           "it": "Africa",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -32670,7 +32977,10 @@
           "role": "exile",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -33444,7 +33754,10 @@
           "role": "ministry",
           "la": "Abrincénsis",
           "it": "Avranches",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q204430",
+          "label": "Avranches",
+          "country": "FR"
         }
       ],
       "date": {
@@ -33792,7 +34105,10 @@
           "role": "journey",
           "la": "Compostéllam",
           "it": "Compostela",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14314",
+          "label": "Santiago de Compostela",
+          "country": "ES"
         }
       ]
     },
@@ -34289,7 +34605,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -34398,7 +34717,10 @@
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -34630,7 +34952,10 @@
           "role": "ministry",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -34686,7 +35011,10 @@
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -34985,7 +35313,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -35107,7 +35438,10 @@
           "role": "birth",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         },
         {
           "role": "mention",
@@ -35242,7 +35576,14 @@
           "role": "birth",
           "la": "Frísia",
           "it": "Frisia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4492881",
+          "label": "Frisia",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ]
         }
       ],
       "edition_notes": {
@@ -35387,14 +35728,20 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "ministry",
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ]
     },
@@ -35477,7 +35824,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -36143,7 +36493,10 @@
           "role": "religious_life",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -36536,7 +36889,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -36634,7 +36990,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         },
         {
           "role": "ministry",
@@ -37022,7 +37381,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -37594,7 +37956,10 @@
           "role": "ministry",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -38020,7 +38385,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -38200,7 +38575,10 @@
           "role": "ministry",
           "la": "Abrincénsis",
           "it": "Avranches",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q204430",
+          "label": "Avranches",
+          "country": "FR"
         },
         {
           "role": "religious_life",
@@ -38339,7 +38717,10 @@
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -38672,7 +39053,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -39036,7 +39420,10 @@
           "role": "birth",
           "la": "Cámbria",
           "it": "Galles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q25",
+          "label": "Wales",
+          "country": "GB"
         },
         {
           "role": "foundation",
@@ -39153,7 +39540,10 @@
           "role": "mention",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "edition_notes": {
@@ -40289,7 +40679,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -40427,7 +40820,10 @@
           "la": "Hierosolymitáni",
           "it": "Gerusalemme",
           "source": "curated",
-          "occurrence_it": 1
+          "occurrence_it": 1,
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -40457,7 +40853,10 @@
           "role": "mention",
           "la": "Mediolanénsi",
           "it": "Milano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q490",
+          "label": "Milan",
+          "country": "IT"
         },
         {
           "role": "mention",
@@ -40836,7 +41235,10 @@
           "role": "ministry",
           "la": "Antiochíæ",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -41266,7 +41668,10 @@
           "role": "journey",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         },
         {
           "role": "journey",
@@ -41598,7 +42003,10 @@
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "birth",
@@ -42154,7 +42562,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -42433,7 +42844,10 @@
           "role": "birth",
           "la": "Scótia",
           "it": "Scozia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q22",
+          "label": "Scotland",
+          "country": "GB"
         }
       ],
       "date": {
@@ -42783,20 +43197,29 @@
           "role": "religious_life",
           "la": "Cluniacénsis",
           "it": "Cluny",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         },
         {
           "role": "ministry",
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "ministry",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -43208,7 +43631,10 @@
           "role": "mention",
           "la": "Compostéllam",
           "it": "Santiago di Compostela",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14314",
+          "label": "Santiago de Compostela",
+          "country": "ES"
         }
       ],
       "date": {
@@ -43669,7 +44095,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ]
     },
@@ -43741,7 +44170,10 @@
           "role": "education",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         }
       ]
     },
@@ -43767,7 +44199,10 @@
           "role": "birth",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -43991,7 +44426,10 @@
           "role": "mention",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -44044,7 +44482,14 @@
           "role": "journey",
           "la": "límina Apostolórum",
           "it": "tombe degli Apostoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141806648",
+          "label": "Limina Apostolorum",
+          "country": null,
+          "countries": [
+            "VA",
+            "IT"
+          ]
         }
       ]
     },
@@ -44478,7 +44923,10 @@
           "role": "religious_life",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -44540,7 +44988,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "birth",
@@ -44852,7 +45303,10 @@
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -45447,7 +45901,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -46429,7 +46886,10 @@
           "role": "mention",
           "la": "Cluniacénsis",
           "it": "Cluny",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         }
       ]
     },
@@ -46952,7 +47412,10 @@
           "role": "ministry",
           "la": "Antiochíæ",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -47179,7 +47642,10 @@
           "role": "ministry",
           "la": "Africam",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -48496,7 +48962,10 @@
           "role": "religious_life",
           "la": "Augustodunénsis",
           "it": "Autun",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q190827",
+          "label": "Autun",
+          "country": "FR"
         }
       ],
       "date": {
@@ -48567,7 +49036,10 @@
           "it": "Inghilterra",
           "source": "curated",
           "occurrence": 2,
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -48708,7 +49180,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -48977,7 +49452,10 @@
           "role": "journey",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -49033,19 +49511,32 @@
           "role": "journey",
           "la": "Compostéllam",
           "it": "Compostela",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14314",
+          "label": "Santiago de Compostela",
+          "country": "ES"
         },
         {
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ]
     },
@@ -49440,7 +49931,10 @@
           "role": "mention",
           "la": "Aurelianénsis",
           "it": "Orléans",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6548",
+          "label": "Orléans",
+          "country": "FR"
         }
       ],
       "date": {
@@ -49473,7 +49967,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -49802,7 +50299,10 @@
           "la": "Gálliæ",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -50135,7 +50635,10 @@
           "role": "mention",
           "la": "Merciórum",
           "it": "Mercia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q105092",
+          "label": "Kingdom of Mercia",
+          "country": "GB"
         }
       ],
       "edition_notes": {
@@ -50286,7 +50789,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -50570,7 +51076,10 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -50972,7 +51481,14 @@
           "role": "journey",
           "la": "límina Apostolórum",
           "it": "basiliche degli Apostoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141806648",
+          "label": "Limina Apostolorum",
+          "country": null,
+          "countries": [
+            "VA",
+            "IT"
+          ]
         }
       ],
       "date": {
@@ -51015,7 +51531,10 @@
           "role": "journey",
           "la": "Compostéllam",
           "it": "Compostela",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14314",
+          "label": "Santiago de Compostela",
+          "country": "ES"
         },
         {
           "role": "religious_life",
@@ -51486,7 +52005,10 @@
           "role": "death",
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         }
       ],
       "date": {
@@ -51519,13 +52041,19 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
           "la": "Germániam",
           "it": "Germania",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q62646",
+          "label": "Germania",
+          "country": "DE"
         },
         {
           "role": "ministry",
@@ -51537,7 +52065,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -52158,7 +52689,10 @@
           "role": "ministry",
           "la": "Aquileiénsis",
           "it": "Aquileia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q53216",
+          "label": "Aquileia",
+          "country": "IT"
         }
       ],
       "date": {
@@ -52209,7 +52743,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa di questa città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -52331,7 +52868,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacco",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -52451,7 +52998,10 @@
           "role": "foundation",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -52704,7 +53254,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa di questa città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -53077,7 +53630,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa di questa città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -53416,7 +53972,10 @@
           "la": "Cartúsia huius civitátis",
           "it": "locale Certosa",
           "source": "curated",
-          "person": "Gualterius Pierson"
+          "person": "Gualterius Pierson",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -53529,7 +54088,10 @@
           "role": "ministry",
           "la": "Antiochíæ",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -54036,7 +54598,10 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -54239,7 +54804,10 @@
           "role": "ministry",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -54744,7 +55312,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -55088,7 +55659,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa della città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -55271,7 +55845,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ],
       "date": {
@@ -55357,7 +55934,10 @@
           "role": "ministry",
           "la": "Arelaténsis",
           "it": "Arles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48292",
+          "label": "Arles",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -55365,7 +55945,10 @@
           "it": "Francia",
           "source": "curated",
           "occurrence": 2,
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -55478,7 +56061,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa della città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -55877,7 +56463,10 @@
           "role": "ministry",
           "la": "Augustodunénsis",
           "it": "Autun",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q190827",
+          "label": "Autun",
+          "country": "FR"
         }
       ]
     },
@@ -56140,7 +56729,10 @@
           "role": "journey",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -56348,7 +56940,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "religious_life",
@@ -56388,7 +56983,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ]
     },
@@ -56471,13 +57069,19 @@
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "education",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "edition_notes": {
@@ -56652,7 +57256,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -56711,7 +57318,10 @@
           "role": "birth",
           "la": "Cámbria",
           "it": "Galles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q25",
+          "label": "Wales",
+          "country": "GB"
         },
         {
           "role": "foundation",
@@ -57159,7 +57769,10 @@
           "role": "ministry",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         }
       ],
       "date": {
@@ -57214,7 +57827,10 @@
           "role": "mention",
           "la": "Northúmbriæ",
           "it": "Northumbria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q107299",
+          "label": "Kingdom of Northumbria",
+          "country": "GB"
         }
       ],
       "date": {
@@ -57366,7 +57982,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "education",
@@ -57379,7 +57998,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -58080,7 +58702,10 @@
           "role": "mention",
           "la": "Mediolanénsi",
           "it": "Milano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q490",
+          "label": "Milan",
+          "country": "IT"
         }
       ],
       "date": {
@@ -58299,7 +58924,10 @@
           "role": "ministry",
           "la": "Lemovicénsis",
           "it": "Limoges",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q45656",
+          "label": "Limoges",
+          "country": "FR"
         }
       ]
     },
@@ -58748,7 +59376,10 @@
           "role": "ministry",
           "la": "Lugdunénsis",
           "it": "Lione",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q456",
+          "label": "Lyon",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -58888,7 +59519,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -58896,7 +59530,10 @@
           "it": "Inghilterra",
           "source": "curated",
           "occurrence": 2,
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -59108,7 +59745,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -59523,14 +60163,20 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -59896,13 +60542,19 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -60071,13 +60723,26 @@
           "role": "death",
           "la": "castra detentiónis Dacháni",
           "it": "campo di detenzione di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -60428,7 +61093,10 @@
           "role": "education",
           "la": "Aquileiénsis",
           "it": "Aquileia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q53216",
+          "label": "Aquileia",
+          "country": "IT"
         }
       ],
       "date": {
@@ -61315,7 +61983,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -61653,7 +62324,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -62099,7 +62773,10 @@
           "role": "ministry",
           "la": "Lemovicénsis",
           "it": "Limoges",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q45656",
+          "label": "Limoges",
+          "country": "FR"
         }
       ]
     },
@@ -62518,7 +63195,10 @@
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -64016,13 +64696,19 @@
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "religious_life",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -64448,7 +65134,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -64720,7 +65409,10 @@
           "role": "mention",
           "la": "Mediolanénsi",
           "it": "Milano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q490",
+          "label": "Milan",
+          "country": "IT"
         }
       ],
       "date": {
@@ -64771,7 +65463,10 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         }
       ],
       "date": {
@@ -64946,7 +65641,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -65363,7 +66061,10 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -65375,7 +66076,10 @@
           "role": "religious_life",
           "la": "Cluniacénsis",
           "it": "cluniacense",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         }
       ]
     },
@@ -65445,7 +66149,10 @@
           "role": "mention",
           "la": "Constantinópolim",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         },
         {
           "role": "ministry",
@@ -65891,7 +66598,10 @@
           "it": "Inghilterra",
           "source": "curated",
           "person": "Ioannes Sugar",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -66292,7 +67002,10 @@
           "la": "Merciórum",
           "it": "Mercia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q105092",
+          "label": "Kingdom of Mercia",
+          "country": "GB"
         }
       ]
     },
@@ -66343,7 +67056,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "birth",
@@ -66861,7 +67581,10 @@
           "role": "ministry",
           "la": "Lemovicénsis",
           "it": "Limoges",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q45656",
+          "label": "Limoges",
+          "country": "FR"
         }
       ],
       "date": {
@@ -67198,7 +67921,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "education",
@@ -68288,7 +69014,10 @@
           "role": "ministry",
           "la": "Lemovicénsis",
           "it": "Limoges",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q45656",
+          "label": "Limoges",
+          "country": "FR"
         }
       ]
     },
@@ -69013,7 +69742,10 @@
           "role": "birth",
           "la": "Oriénte",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ]
     },
@@ -69923,13 +70655,19 @@
           "role": "ministry",
           "la": "Scótia",
           "it": "Scozia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q22",
+          "label": "Scotland",
+          "country": "GB"
         },
         {
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         },
         {
           "role": "education",
@@ -70015,7 +70753,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -70262,7 +71003,10 @@
           "role": "cult",
           "la": "Oriénte",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "date": {
@@ -70328,7 +71072,10 @@
           "role": "ministry",
           "la": "Británnia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3240725",
+          "label": "Britannia",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -71003,7 +71750,10 @@
           "role": "education",
           "la": "Cámbria",
           "it": "Galles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q25",
+          "label": "Wales",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -71039,7 +71789,10 @@
           "role": "mention",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ]
     },
@@ -71346,7 +72099,10 @@
           "role": "mention",
           "la": "Autissiodorénsi",
           "it": "Auxerre",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q167600",
+          "label": "Auxerre",
+          "country": "FR"
         }
       ],
       "date": {
@@ -71407,7 +72163,10 @@
           "role": "education",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -72306,7 +73065,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -72983,7 +73745,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacco",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -73231,13 +74003,19 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "mention",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ]
     },
@@ -73478,7 +74256,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ],
       "date": {
@@ -73907,13 +74688,19 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa della città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -73946,7 +74733,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ],
       "edition_notes": {
@@ -74263,7 +75057,10 @@
           "role": "ministry",
           "la": "Northúmbriæ",
           "it": "Northumbria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q107299",
+          "label": "Kingdom of Northumbria",
+          "country": "GB"
         }
       ],
       "date": {
@@ -74359,7 +75156,10 @@
           "role": "ministry",
           "la": "Rothomagénsis",
           "it": "Rouen",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q30974",
+          "label": "Rouen",
+          "country": "FR"
         }
       ],
       "date": {
@@ -74470,7 +75270,10 @@
           "role": "mention",
           "la": "Oriénte",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "date": {
@@ -76887,7 +77690,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         }
       ],
       "date": {
@@ -77677,7 +78483,10 @@
           "role": "exile",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "exile",
@@ -78288,7 +79097,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -78758,7 +79577,10 @@
           "role": "journey",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -79054,7 +79876,10 @@
           "role": "translation",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -79111,7 +79936,10 @@
           "role": "religious_life",
           "la": "Calábria",
           "it": "Calabria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1458",
+          "label": "Calabria",
+          "country": "IT"
         },
         {
           "role": "religious_life",
@@ -79426,7 +80254,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -80493,7 +81324,10 @@
           "role": "mention",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -80657,7 +81491,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacco",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -80902,7 +81746,10 @@
           "la": "Gálliam",
           "it": "Francia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -81106,7 +81953,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "mention",
@@ -81290,7 +82140,10 @@
           "role": "ministry",
           "la": "Northúmbriæ",
           "it": "Northumbria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q107299",
+          "label": "Kingdom of Northumbria",
+          "country": "GB"
         }
       ],
       "date": {
@@ -81324,7 +82177,10 @@
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -81815,7 +82671,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -81930,7 +82796,10 @@
           "role": "ministry",
           "la": "Rothomagénsis",
           "it": "Rouen",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q30974",
+          "label": "Rouen",
+          "country": "FR"
         }
       ],
       "date": {
@@ -82211,7 +83080,10 @@
           "role": "ministry",
           "la": "Gálliæ",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -83073,7 +83945,10 @@
           "role": "journey",
           "la": "Africam",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -83250,7 +84125,10 @@
           "role": "religious_life",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ],
       "date": {
@@ -84323,7 +85201,10 @@
           "role": "religious_life",
           "la": "Augustodunénsis",
           "it": "Autun",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q190827",
+          "label": "Autun",
+          "country": "FR"
         }
       ],
       "date": {
@@ -84881,7 +85762,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "birth",
@@ -84899,7 +85783,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         }
       ],
       "date": {
@@ -85478,7 +86365,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ],
       "date": {
@@ -85952,7 +86842,10 @@
           "role": "religious_life",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ]
     },
@@ -86055,7 +86948,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ]
     },
@@ -86857,7 +87757,10 @@
           "role": "ministry",
           "la": "Abrincénsis",
           "it": "Avranches",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q204430",
+          "label": "Avranches",
+          "country": "FR"
         }
       ]
     },
@@ -87289,7 +88192,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
@@ -87318,7 +88224,10 @@
           "role": "ministry",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         },
         {
           "role": "ministry",
@@ -87944,14 +88853,20 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -88340,7 +89255,10 @@
           "it": "Inghilterra",
           "source": "curated",
           "person": "Thomas Palaser",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -88793,7 +89711,10 @@
           "role": "education",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         },
         {
           "role": "birth",
@@ -88931,7 +89852,10 @@
           "role": "mention",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -89170,7 +90094,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -89341,7 +90268,10 @@
           "role": "ministry",
           "la": "Lugdunénsis",
           "it": "Lione",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q456",
+          "label": "Lyon",
+          "country": "FR"
         }
       ],
       "date": {
@@ -89809,7 +90739,10 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "unnumbered": true
@@ -90866,7 +91799,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "mention",
@@ -91270,7 +92206,10 @@
           "role": "ministry",
           "la": "Arelaténsis",
           "it": "Arles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48292",
+          "label": "Arles",
+          "country": "FR"
         }
       ],
       "date": {
@@ -92420,7 +93359,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -92856,7 +93798,10 @@
           "role": "religious_life",
           "la": "Cartúsia huius civitátis",
           "it": "Certosa di questa città",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6670230",
+          "label": "The Charterhouse",
+          "country": "GB"
         }
       ],
       "date": {
@@ -93389,7 +94334,10 @@
           "role": "mention",
           "la": "Lugdunénsis",
           "it": "Lione",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q456",
+          "label": "Lyon",
+          "country": "FR"
         }
       ],
       "date": {
@@ -93936,7 +94884,10 @@
           "la": "Scótia",
           "it": "Scozia",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q22",
+          "label": "Scotland",
+          "country": "GB"
         }
       ]
     },
@@ -94101,7 +95052,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -95521,7 +96475,14 @@
           "role": "journey",
           "la": "Terra Sancta",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "ministry",
@@ -95539,7 +96500,10 @@
           "role": "journey",
           "la": "Itáliam",
           "it": "Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ],
       "date": {
@@ -95925,7 +96889,10 @@
           "role": "religious_life",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ],
       "date": {
@@ -96037,14 +97004,20 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "ministry",
           "la": "Germániam",
           "it": "Germania",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q62646",
+          "label": "Germania",
+          "country": "DE"
         }
       ],
       "date": {
@@ -96785,13 +97758,19 @@
           "la": "Romam",
           "it": "Roma",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "religious_life",
           "la": "Béthlehem Iudæ",
           "it": "Betlemme di Giuda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5776",
+          "label": "Bethlehem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -96937,7 +97916,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "religious_life",
@@ -97032,7 +98014,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ]
     },
@@ -97387,7 +98372,10 @@
           "role": "education",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -97667,7 +98655,10 @@
           "role": "ministry",
           "la": "Augustodunénsis",
           "it": "Autun",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q190827",
+          "label": "Autun",
+          "country": "FR"
         }
       ],
       "date": {
@@ -98127,7 +99118,10 @@
           "role": "mention",
           "la": "Arelaténsis",
           "it": "Arles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48292",
+          "label": "Arles",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -98326,7 +99320,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "religious_life",
@@ -99085,13 +100086,19 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         }
       ],
       "date": {
@@ -99824,7 +100831,10 @@
           "role": "mention",
           "la": "Mediolanénsi",
           "it": "Milano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q490",
+          "label": "Milan",
+          "country": "IT"
         }
       ],
       "date": {
@@ -99909,7 +100919,14 @@
           "role": "journey",
           "la": "Terra Sancta",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ]
     },
@@ -99935,7 +100952,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -99964,7 +100984,10 @@
           "role": "journey",
           "la": "Gálliam",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -100557,7 +101580,10 @@
           "role": "ministry",
           "la": "Northúmbriæ",
           "it": "Northumbria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q107299",
+          "label": "Kingdom of Northumbria",
+          "country": "GB"
         }
       ],
       "date": {
@@ -100665,7 +101691,10 @@
           "la": "Africa",
           "it": "Africa",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -100767,7 +101796,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -100937,7 +101976,10 @@
           "role": "mention",
           "la": "Arelaténsis",
           "it": "Arles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48292",
+          "label": "Arles",
+          "country": "FR"
         }
       ],
       "date": {
@@ -101340,7 +102382,10 @@
           "role": "death",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -101505,7 +102550,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -101614,7 +102662,10 @@
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -102358,13 +103409,19 @@
           "role": "ministry",
           "la": "Británnia",
           "it": "Bretagna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3240725",
+          "label": "Britannia",
+          "country": "GB"
         },
         {
           "role": "mention",
           "la": "Autissiodorénsi",
           "it": "Auxerre",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q167600",
+          "label": "Auxerre",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -102413,7 +103470,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -102639,7 +103699,10 @@
           "role": "death",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         },
         {
           "role": "exile",
@@ -102966,7 +104029,10 @@
           "role": "death",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
@@ -103443,7 +104509,10 @@
           "role": "birth",
           "la": "Antiochíæ",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -104252,7 +105321,14 @@
           "role": "exile",
           "la": "Terra Sancta",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ],
       "date": {
@@ -104718,7 +105794,10 @@
           "role": "ministry",
           "la": "Hierosolymitáni",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -105010,7 +106089,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ],
       "date": {
@@ -106194,7 +107276,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
@@ -107153,7 +108238,10 @@
           "role": "ministry",
           "la": "Hierosolymitáni",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ],
       "date": {
@@ -107265,7 +108353,10 @@
           "role": "mention",
           "la": "Arelaténsis",
           "it": "Arles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48292",
+          "label": "Arles",
+          "country": "FR"
         }
       ],
       "date": {
@@ -107391,7 +108482,10 @@
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -107908,7 +109002,14 @@
           "role": "journey",
           "la": "Terram Sanctam",
           "it": "Terra Santa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "journey",
@@ -108227,7 +109328,10 @@
           "role": "mention",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -108734,7 +109838,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         },
         {
           "role": "ministry",
@@ -110007,7 +111114,10 @@
           "role": "ministry",
           "la": "Constantinopolitáni",
           "it": "Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16869",
+          "label": "Constantinople",
+          "country": "TR"
         }
       ],
       "date": {
@@ -110247,7 +111357,10 @@
           "role": "journey",
           "la": "Hierosólymam",
           "it": "Gerusalemme",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1218",
+          "label": "Jerusalem",
+          "country": "PS"
         }
       ]
     },
@@ -110522,13 +111635,23 @@
           "role": "ministry",
           "la": "Dánia",
           "it": "Danimarca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q35",
+          "label": "Denmark",
+          "country": "DK"
         },
         {
           "role": "ministry",
           "la": "Frísia",
           "it": "Olanda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4492881",
+          "label": "Frisia",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ]
         },
         {
           "role": "ministry",
@@ -110540,7 +111663,10 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         }
       ],
       "date": {
@@ -110810,7 +111936,14 @@
           "role": "ministry",
           "la": "Frísia",
           "it": "Frisia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4492881",
+          "label": "Frisia",
+          "country": null,
+          "countries": [
+            "NL",
+            "DE"
+          ]
         },
         {
           "role": "ministry",
@@ -110884,7 +112017,10 @@
           "role": "birth",
           "la": "Scótia",
           "it": "scozzese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q22",
+          "label": "Scotland",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -110902,7 +112038,10 @@
           "role": "ministry",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         }
       ],
       "date": {
@@ -111372,7 +112511,10 @@
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q200441",
+          "label": "Antioch",
+          "country": "TR"
         }
       ],
       "date": {
@@ -111493,7 +112635,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -111598,7 +112743,10 @@
           "role": "ministry",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         },
         {
           "role": "religious_life",
@@ -111610,7 +112758,10 @@
           "role": "mention",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -111681,7 +112832,10 @@
           "role": "mention",
           "la": "Lugdunénsis",
           "it": "Lione",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q456",
+          "label": "Lyon",
+          "country": "FR"
         }
       ],
       "date": {
@@ -111819,7 +112973,10 @@
           "role": "birth",
           "la": "Calábria",
           "it": "Calabria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1458",
+          "label": "Calabria",
+          "country": "IT"
         }
       ],
       "date": {
@@ -112001,7 +113158,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         }
       ],
       "edition_notes": {
@@ -112106,7 +113266,10 @@
           "role": "birth",
           "la": "Anglia",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -112491,7 +113654,10 @@
           "role": "mention",
           "la": "Turonénsis",
           "it": "Tours",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q288",
+          "label": "Tours",
+          "country": "FR"
         }
       ]
     },
@@ -113097,7 +114263,10 @@
           "role": "ministry",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         },
         {
           "role": "ministry",
@@ -113109,7 +114278,10 @@
           "role": "religious_life",
           "la": "Parísiis",
           "it": "Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         }
       ],
       "date": {
@@ -113217,7 +114389,10 @@
           "role": "birth",
           "la": "Cámbria",
           "it": "Galles",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q25",
+          "label": "Wales",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -113934,7 +115109,10 @@
           "la": "Angliam",
           "it": "Inghilterra",
           "source": "curated",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         },
         {
           "role": "birth",
@@ -114219,7 +115397,10 @@
           "role": "journey",
           "la": "Romam",
           "it": "Roma",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220",
+          "label": "Rome",
+          "country": "IT"
         }
       ]
     },
@@ -114245,7 +115426,10 @@
           "role": "foundation",
           "la": "Calábria",
           "it": "Calabria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1458",
+          "label": "Calabria",
+          "country": "IT"
         }
       ],
       "date": {
@@ -114654,7 +115838,10 @@
           "role": "religious_life",
           "la": "Cluniacénsis",
           "it": "Cluny",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         }
       ],
       "date": {
@@ -114705,7 +115892,10 @@
           "role": "birth",
           "la": "Gállia",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "journey",
@@ -115909,7 +117099,10 @@
           "role": "birth",
           "la": "hibérnus",
           "it": "irlandese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q170826",
+          "label": "Irish people",
+          "country": "IE"
         },
         {
           "role": "death",
@@ -115939,7 +117132,10 @@
           "role": "ministry",
           "la": "Gálliæ",
           "it": "Francia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q142",
+          "label": "France",
+          "country": "FR"
         },
         {
           "role": "burial",
@@ -117156,7 +118352,10 @@
           "it": "Inghilterra",
           "source": "curated",
           "person": "Hugo Taylor",
-          "occurrence_it": 2
+          "occurrence_it": 2,
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -118794,7 +119993,10 @@
           "role": "mention",
           "la": "ínsula Lirinénsi",
           "it": "isola di Lérins",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334008",
+          "label": "Abbaye Saint-Honorat de Lérins",
+          "country": "FR"
         }
       ]
     },
@@ -118997,7 +120199,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "religious_life",
@@ -119581,7 +120786,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -120226,7 +121434,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -120260,7 +121471,10 @@
           "role": "birth",
           "la": "Dánia",
           "it": "danese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q35",
+          "label": "Denmark",
+          "country": "DK"
         },
         {
           "role": "ministry",
@@ -120330,7 +121544,10 @@
           "role": "exile",
           "la": "castra detentiónis Dacháni",
           "it": "campo di prigionia di Dachau",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q151198",
+          "label": "Dachau concentration camp",
+          "country": "DE"
         },
         {
           "role": "mention",
@@ -121481,13 +122698,19 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         },
         {
           "role": "journey",
           "la": "Angliam",
           "it": "Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q21",
+          "label": "England",
+          "country": "GB"
         }
       ],
       "date": {
@@ -121854,7 +123077,10 @@
           "role": "death",
           "la": "Tybúrni",
           "it": "Tyburn",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1362341",
+          "label": "Tyburn",
+          "country": "GB"
         }
       ],
       "date": {
@@ -123140,7 +124366,10 @@
           "role": "death",
           "la": "Africa",
           "it": "Africa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q15",
+          "label": "Africa",
+          "country": null
         }
       ],
       "date": {
@@ -123839,7 +125068,10 @@
           "role": "birth",
           "la": "anglus",
           "it": "inglese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q104238",
+          "label": "Angles",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -124231,7 +125463,17 @@
           "role": "birth",
           "la": "polónus",
           "it": "polacca",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q428713",
+          "label": "Polans",
+          "country": null,
+          "countries": [
+            "PL",
+            "DE",
+            "CZ",
+            "SK",
+            "LT"
+          ]
         }
       ],
       "date": {
@@ -124261,7 +125503,10 @@
           "role": "ministry",
           "la": "Germániam",
           "it": "Germania",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q62646",
+          "label": "Germania",
+          "country": "DE"
         }
       ],
       "date": {
@@ -124287,7 +125532,10 @@
           "role": "mention",
           "la": "Béthlehem Iudæ",
           "it": "Betlemme di Giuda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5776",
+          "label": "Bethlehem",
+          "country": "PS"
         },
         {
           "role": "mention",
@@ -125139,7 +126387,10 @@
           "role": "birth",
           "la": "Béthlehem Iudæ",
           "it": "Betlemme di Giuda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5776",
+          "label": "Bethlehem",
+          "country": "PS"
         },
         {
           "role": "mention",
@@ -125758,7 +127009,10 @@
           "role": "death",
           "la": "Béthlehem Iudæ",
           "it": "Betlemme di Giuda",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5776",
+          "label": "Bethlehem",
+          "country": "PS"
         }
       ],
       "date": {
