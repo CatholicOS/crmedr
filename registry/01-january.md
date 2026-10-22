@@ -362,7 +362,7 @@
 | 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis | same as `mr:0125-iuventinus-et-maximus` |  |
 | 29 | 5 | `mr:0129-valerius` |  | DE | dies_natalis |  |  |
 | 29 | 6 | `mr:0129-aphraates` |  | TR | dies_natalis | same as `mr:0407-aphraates` |  |
-| 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  |  |
+| 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  | 2004 Italian: Possible translation error: "scrisse sullo sterminio della Bretagna" where the Latin has "de excídio Británniæ scripsit". The Latin names Gildas's work De excidio Britanniae, on the ruin of Britain, the island of Great Britain ("Britannia" in Italian); "Bretagna" usually means Brittany, the "Británnia Minor" where the eulogy places him. The curator's query (2026-10-22). |
 | 29 | 8 | `mr:0129-sulpicius-severus` |  | FR | dies_natalis |  | 2004 English: Translation error: "formerly a senator" where the Latin has "e senatóribus Galliárum" (of a Gallic senatorial family). |
 | 29 | 9 | `mr:0129-villana-de-bottis` | * | IT | dies_natalis |  |  |
 | 29 | 10 | `mr:0129-boleslava-maria-lament` | * | PL | dies_natalis |  |  |
