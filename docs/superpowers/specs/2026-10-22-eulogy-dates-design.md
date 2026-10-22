@@ -98,8 +98,8 @@ martyrology-api path as an argument, as other generators take martyrology-texts.
 
 **Checks** (in the report, not errors): a death-year date later than its edition bound (a likely
 wrong person link); a range wider than 300 years from death dates (likely a wrong person among
-several). A wide range is still written; a death later than the bound is not (the bound is
-written instead), since only a wrong person link produces it.
+several). A wide range is still written; a death later than the bound is not, since only a wrong
+person link produces it: the next source applies instead (an estimate, else the bound).
 
 **Curated dates.** Step 1 ships `data/dates_curated.json` with Mary Mother of God (431, `event`,
 "Council of Ephesus") and the report lists the undated `celebratio` and `commemoratio` eulogies as
@@ -110,7 +110,8 @@ candidates for the curator; it does not guess their dates.
 For eulogies with no death date, a model reads the eulogy's opening clause and picks the
 **century** the eulogy is set in, or "cannot tell". The state sent follows the curator's ruling of
 2026-10-18 for every TypeSafe request: one clause of the 2004 Latin and one of the English (the first
-sentence, at most 400 characters), never a whole eulogy; with them the typology and the oldest
+sentence, at most 400 characters), never a whole eulogy (a one-sentence eulogy, as most are, is sent
+without its opening place, and one without a comma not at all); with them the typology and the oldest
 edition before 2004 that prints the eulogy, if any. My call: Jev, one Choice of 23 options (before
 Christ, the 1st to the 21st century, cannot tell; a Score holds at most 10 levels), because the dated
 eulogies give a ready calibration set: run Jev on them, report agreement (the right century, and

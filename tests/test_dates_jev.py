@@ -52,6 +52,15 @@ class RequestTest(unittest.TestCase):
         body = dj.request_for("Romæ " + "x" * 900 + ".", None, None, None)
         self.assertLessEqual(len(body["state"]["latin_clause"]), 400)
 
+    def test_whole_eulogy_is_never_sent(self):
+        whole = "Romæ, sancti Fictitii, mártyris, qui sub Diocletiáno passus est."
+        body = dj.request_for(whole, "At Rome, Saint Fictitius, martyr.", None, None)
+        self.assertEqual(body["state"]["latin_clause"], "sancti Fictitii, mártyris, qui sub Diocletiáno passus est.")
+        self.assertEqual(body["state"]["english_clause"], "Saint Fictitius, martyr.")
+
+    def test_whole_eulogy_without_a_comma_is_not_asked(self):
+        self.assertIsNone(dj.request_for("Natalis sancti Fictitii.", None, None, None))
+
     def test_request_without_english(self):
         self.assertEqual(dj.request_for(LA, None, None, None)["state"]["english_clause"], "")
 

@@ -31,7 +31,8 @@ class FakeClient:
         return answer(*self.picks[mid])
 
 
-TEXTS = {"la": {"mr:0101-a": "mr:0101-a", "mr:0101-b": "mr:0101-b", "mr:0101-c": "mr:0101-c"}, "en": {}}
+# One-sentence eulogies: the opening place is dropped, so the clause sent is the ID.
+TEXTS = {"la": {m: f"Romae, {m}" for m in ("mr:0101-a", "mr:0101-b", "mr:0101-c")}, "en": {}}
 
 
 class RowsTest(unittest.TestCase):
@@ -49,6 +50,22 @@ class RowsTest(unittest.TestCase):
                  "mr:0101-c": {"to": 1630, "source": "edition"}}
         self.assertEqual(ed.estimate_ids({"mr:0101-a", "mr:0101-b", "mr:0101-c", "mr:0101-d"}, dates),
                          ["mr:0101-c", "mr:0101-d"])
+
+    def test_failed_request_keeps_the_previous_estimate(self):
+        previous = {"mr:0101-a": {"century": "c4", "probability": 0.9, "confidence": 0.9},
+                    "mr:0101-b": {"century": "c5", "probability": 0.9, "confidence": 0.9}}
+        rows = {"mr:0101-a": None, "mr:0101-b": None, "mr:0101-c": {"century": "c9", "probability": 0.8,
+                                                                    "confidence": 0.8}}
+        self.assertEqual(ed.merged_estimates(previous, rows, failed={"mr:0101-a"}),
+                         {"mr:0101-a": previous["mr:0101-a"], "mr:0101-c": rows["mr:0101-c"]})
+
+    def test_failures_are_collected(self):
+        class Failing(FakeClient):
+            def ask(self, body):
+                raise mj.TypeSafeError("HTTP 503")
+        failed = set()
+        rows = ed.rows_for(["mr:0101-a"], TEXTS, {}, {}, Failing({}), failed)
+        self.assertEqual((rows, failed), ({"mr:0101-a": None}, {"mr:0101-a"}))
 
     def test_no_key_stops(self):
         client = FakeClient({}, key=None, cached=False)
