@@ -110,8 +110,8 @@ candidates for the curator; it does not guess their dates.
 For eulogies with no death date, a model reads the eulogy's opening clause and picks the
 **century** the eulogy is set in, or "cannot tell". The state sent follows the curator's ruling of
 2026-10-18 for every TypeSafe request: one clause of the 2004 Latin and one of the English (the first
-sentence, at most 400 characters), never a whole eulogy (a one-sentence eulogy, as most are, is sent
-without its opening place, and one without a comma not at all); with them the typology and the oldest
+sentence, at most 400 characters), never more than one sentence (the curator's reading, 2026-10-22: a
+one-sentence eulogy, as most are, may be sent whole); with them the typology and the oldest
 edition before 2004 that prints the eulogy, if any. My call: Jev, one Choice of 23 options (before
 Christ, the 1st to the 21st century, cannot tell; a Score holds at most 10 levels), because the dated
 eulogies give a ready calibration set: run Jev on them, report agreement (the right century, and

@@ -3,7 +3,7 @@ docs/superpowers/specs/2026-10-22-eulogy-dates-design.md, "The era estimate".
 
 One request per eulogy, one Choice question: before Christ, the 1st to the 21st century, or cannot
 tell. Only the first sentence of the 2004 Latin and of the English is sent, never a whole eulogy
-(the curator's ruling, 2026-10-18; a one-sentence eulogy loses its opening place), with the eulogy's typology and the oldest edition before 2004
+(the curator's ruling, 2026-10-18: never more than one sentence; one may be the whole eulogy), with the eulogy's typology and the oldest edition before 2004
 that prints it. An estimate is a signal for the place review, never a decision.
 
 Standard library only.
@@ -45,16 +45,9 @@ def century_range(option):
 
 
 def _clause(text):
-    """The first sentence, at most MAX_CLAUSE characters. When that is the whole eulogy (one short
-    sentence, as most are), its opening place is dropped, so a whole eulogy is never sent; one
-    without a comma is not sent at all ("")."""
+    """The first sentence, at most MAX_CLAUSE characters (a one-sentence eulogy is sent as it is)."""
     sentences = _sentences(text or "")
-    if not sentences:
-        return ""
-    clause = _window(sentences[0][1], 0)
-    if clause != text.strip():
-        return clause
-    return clause.split(",", 1)[1].strip() if "," in clause else ""
+    return _window(sentences[0][1], 0) if sentences else ""
 
 
 def request_for(la_text, en_text, typology, bound):

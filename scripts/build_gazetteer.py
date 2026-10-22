@@ -6,7 +6,9 @@ place's actual modern country. A place is `auto` only when exactly one
 candidate passes every rule of the evidence bar; every other place goes to the
 review change-set (crmedr-changeset/v1, op `resolve_place`) for
 martyrology-frontend, and comes back through `apply` as `reviewed` or
-`unresolved`. Places awaiting review have no key in data/gazetteer.json.
+`unresolved`; `decide-jev` writes Jev's item picks at a threshold as `jev`
+(docs/superpowers/specs/2026-10-22-gazetteer-round-2-design.md). Places awaiting
+review have no key in data/gazetteer.json.
 See docs/superpowers/specs/2026-10-01-gazetteer-design.md.
 
   data/gazetteer.json          {la: {wikidata, label, country, status, ...}}
@@ -19,6 +21,7 @@ Usage:
   python3 build_gazetteer.py verify-suggestions [repo_root]   (network)
   python3 build_gazetteer.py apply <exported.json> [repo_root]
   python3 build_gazetteer.py check [repo_root]
+  python3 build_gazetteer.py decide-jev --threshold X [repo_root]   Jev's picks at >= X, as `jev`
   python3 build_gazetteer.py search-more [repo_root]          (network) more candidates for places without one
   python3 build_gazetteer.py prune [repo_root]   drop non-place candidates from the queue
   python3 build_gazetteer.py split [--force] [repo_root]      (network) one card per eulogy for each phrase
@@ -41,7 +44,9 @@ from gazetteer_text import ISO_CODES, convention, fold, latin_nominatives, parse
 from gazetteer_jev import NONE_REASON
 from wikidata import Wikidata, WikidataError
 
-STATUSES = ["auto", "reviewed", "unresolved"]
+# auto: the evidence bar; reviewed: a curator; jev: Jev's pick at the decide-jev threshold.
+STATUSES = ["auto", "reviewed", "jev", "unresolved"]
+DECIDED_BY_HAND = ("reviewed", "jev")  # the statuses that may hold country null or countries
 ENTRY_KEYS = ["wikidata", "label", "country", "countries", "status", "text_says", "note"]
 QID = re.compile(r"^Q[1-9]\d*$")
 SCHEMA = "crmedr-changeset/v1"
@@ -263,7 +268,7 @@ def validate(gazetteer, index, review_ops=()):
             errors += [f"{where}: {p}" for p in problems]
             if problems:
                 continue  # text_says cannot be derived from a malformed list
-        elif status == "reviewed" and "country" in e and e["country"] is None:
+        elif status in DECIDED_BY_HAND and "country" in e and e["country"] is None:
             pass  # decided as in no single country (a macro-area such as the Orient)
         elif e.get("country") not in ISO_CODES:
             errors.append(f"{where}: country {e.get('country')!r} is not an ISO 3166-1 alpha-2 code")
@@ -284,8 +289,8 @@ def _countries_problems(e):
     """A place in several countries (Frisia: NL and DE): reviewed, country null, and two or more
     distinct ISO codes, each as COUNTRY_CONVENTIONS writes it."""
     countries = e["countries"]
-    if e.get("status") != "reviewed" or e.get("country") is not None:
-        return ["countries needs status reviewed and country null"]
+    if e.get("status") not in DECIDED_BY_HAND or e.get("country") is not None:
+        return ["countries needs status reviewed or jev, and country null"]
     if not isinstance(countries, list) or len(countries) < 2 or not all(isinstance(c, str) for c in countries):
         return [f"countries {countries!r} is not a list of two or more codes (one country goes in country)"]
     if len(set(countries)) != len(countries):
@@ -611,6 +616,52 @@ def _resolve(op, client, its):
     return entry, None
 
 
+def _jev_edit(op):
+    """The edit Jev's pick stands for (wikidata, and country or countries), or None: the pick must be
+    one of the card's candidates, and have a country: Jev's, else the suggestion's country or
+    countries when it suggests that item, else the candidate's own countries (one distinct code is a
+    country, two or more are countries)."""
+    jev = op.get("jev") or {}
+    q = jev.get("wikidata")
+    cand = next((c for c in op.get("candidates") or [] if c["wikidata"] == q), None)
+    if jev.get("decision") not in ("accept", "edit") or cand is None:
+        return None
+    if jev.get("country") in ISO_CODES:  # a withdrawn code (Sark's CQ) falls through
+        return {"wikidata": q, "country": jev["country"]}
+    suggested = op.get("suggested") or {}
+    if suggested.get("wikidata") == q and (suggested.get("country") or suggested.get("countries")):
+        key = "country" if suggested.get("country") else "countries"
+        return {"wikidata": q, key: suggested[key]}
+    countries = list(dict.fromkeys(c for c in cand.get("countries") or [] if c in ISO_CODES))
+    if not countries:
+        return None
+    return {"wikidata": q, "country": countries[0]} if len(countries) == 1 else {"wikidata": q, "countries": countries}
+
+
+def decide_jev(gazetteer, review, index, client, threshold):
+    """Write Jev's item picks at probability >= threshold as `jev` entries and take their cards off the
+    queue: only cards the curator has not decided (no decision, or a Jev pre-fill), never a reject. A
+    pick whose entry does not validate (a withdrawn country code, say) stays queued for the curator,
+    listed under `invalid`; nothing invalid is written."""
+    decided, invalid, skipped = {}, [], 0
+    for op in review["operations"]:
+        jev = op.get("jev") or {}
+        mine = op.get("decision") is None or op.get("prefilled") == "jev"
+        edit = _jev_edit(op) if mine and jev.get("probability", 0) >= threshold else None
+        if edit is None or op["id"] not in index:
+            skipped += 1
+            continue
+        entry, error = _resolve(dict(op, decision="edit", edited=edit), client, index[op["id"]]["it"])
+        entry = dict(entry, status="jev") if entry else None
+        if error or validate({op["id"]: entry}, index):
+            invalid.append(op["id"])
+        else:
+            decided[op["id"]] = entry
+    gazetteer.update(decided)
+    review["operations"] = [op for op in review["operations"] if op["id"] not in decided]
+    return {"decided": len(decided), "skipped": skipped, "invalid": invalid}
+
+
 def apply_decisions(gazetteer, review, exported, index, client):
     if exported.get("schema") != SCHEMA:
         raise ValueError(f"not a {SCHEMA} document")
@@ -689,9 +740,20 @@ def verify_suggestions(review, index, client):
 
 
 def main(argv):
-    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more", "split"}:
+    if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more", "split",
+                                   "decide-jev"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
+    threshold = None
+    if cmd == "decide-jev":
+        if "--threshold" not in rest or rest.index("--threshold") + 1 >= len(rest):
+            sys.exit(__doc__)
+        at = rest.index("--threshold")
+        try:
+            threshold = float(rest[at + 1])
+        except ValueError:
+            sys.exit(__doc__)
+        rest = rest[:at] + rest[at + 2:]
     force = "--force" in rest
     rest = [a for a in rest if a != "--force"]
     exported = None
@@ -706,6 +768,13 @@ def main(argv):
         dropped = prune_queue(review)
         write_state(repo_root, gazetteer, review, index)
         print(f"{dropped} non-place candidates dropped; {len(review['operations'])} queued")
+        return 0
+    if cmd == "decide-jev":
+        counts = decide_jev(gazetteer, review, index, client, threshold)
+        write_state(repo_root, gazetteer, review, index)
+        for la in counts["invalid"]:
+            print(f"left queued (the entry does not validate): {la!r}")
+        print(f"{counts['decided']} decided by Jev at >= {threshold}; {len(review['operations'])} queued")
         return 0
     if cmd == "check":
         variants = _read_json(repo_root / "data" / "places_variants_curated.json", {})

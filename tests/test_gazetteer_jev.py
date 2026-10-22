@@ -101,9 +101,17 @@ class SuggestionTest(unittest.TestCase):
         self.assertEqual((s["decision"], s["reason"]), ("reject", gj.NONE_REASON))
 
     def test_non_place_kind_is_reject_with_its_reason(self):
-        s = gj.place_suggestion(OP, answers("c0", "people", 0.9))
-        self.assertEqual((s["decision"], s["reason"], s["kind"]), ("reject", gj.KIND_REASONS["people"], "people"))
+        s = gj.place_suggestion(OP, answers("c0", "not_place", 0.9))
+        self.assertEqual((s["decision"], s["reason"], s["kind"]), ("reject", gj.KIND_REASONS["not_place"], "not_place"))
         self.assertEqual(s["probability"], 0.95)
+
+    def test_people_pick_is_read(self):
+        s = gj.place_suggestion(OP, answers("c0", "people", 0.93))
+        self.assertEqual((s["decision"], s["wikidata"], s["kind"], s["probability"]), ("accept", "Q1", "people", 0.93))
+
+    def test_people_picking_none_is_reject_with_its_reason(self):
+        s = gj.place_suggestion(OP, answers("none", "people", 0.9))
+        self.assertEqual((s["decision"], s["reason"]), ("reject", gj.KIND_REASONS["people"]))
 
     def test_kind_only_place_has_no_decision(self):
         s = gj.place_suggestion(dict(OP, candidates=[]), {"kind": choice("place", 0.88)})
@@ -126,6 +134,12 @@ class PickConventionTest(unittest.TestCase):
                        "historical territory", "the near place is not that other one"):
             self.assertIn(phrase, text)
         self.assertNotIn("same spot (", text)
+
+    def test_instructions_state_page_1_conventions(self):
+        text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
+        for phrase in ("the item of that people", "the monastery or abbey"):
+            self.assertIn(phrase, text)
+        self.assertNotIn("not a place", gj.KIND_CRITERIA["people"])
 
 
 if __name__ == "__main__":

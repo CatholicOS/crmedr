@@ -10289,8 +10289,13 @@
     },
     {
       "role": "ministry",
-      "la": "Sáxonum Frisonúmque",
-      "it": "Sassoni e dei Frisoni"
+      "la": "Sáxonum",
+      "it": "Sassoni"
+    },
+    {
+      "role": "ministry",
+      "la": "Frisonúmque",
+      "it": "Frisoni"
     }
   ],
   "mr:0908-thomas-palaser-et-socii": [
@@ -12568,8 +12573,13 @@
     },
     {
       "role": "ministry",
-      "la": "Alamánnos et Bávaros",
-      "it": "Alamanni e i Bavari"
+      "la": "Alamánnos",
+      "it": "Alamanni"
+    },
+    {
+      "role": "ministry",
+      "la": "Bávaros",
+      "it": "Bavari"
     }
   ],
   "mr:1104-carolus-borromeo": [

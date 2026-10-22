@@ -232,6 +232,11 @@ class PrefillTest(unittest.TestCase):
         self.assertEqual((other["decision"], other["prefilled"]), ("edit", "jev"))
         self.assertEqual(other["edited"], {"wikidata": "Q1", "country": "FR"})
 
+    def test_prefill_needs_an_iso_country(self):
+        op = card(jev=pick("Q1", "accept", 0.99, country="CQ"))
+        self.assertEqual(sp.prefill_ops([op], 0.9)["skipped"], 1)
+        self.assertIsNone(op.get("decision"))
+
     def test_prefill_skips_a_pick_outside_the_candidates(self):
         op = card(jev=pick("Q9", "edit", 0.99, country="FR"))
         sp.prefill_ops([op], 0.9)

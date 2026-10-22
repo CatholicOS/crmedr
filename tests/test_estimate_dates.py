@@ -31,8 +31,7 @@ class FakeClient:
         return answer(*self.picks[mid])
 
 
-# One-sentence eulogies: the opening place is dropped, so the clause sent is the ID.
-TEXTS = {"la": {m: f"Romae, {m}" for m in ("mr:0101-a", "mr:0101-b", "mr:0101-c")}, "en": {}}
+TEXTS = {"la": {m: m for m in ("mr:0101-a", "mr:0101-b", "mr:0101-c")}, "en": {}}
 
 
 class RowsTest(unittest.TestCase):
