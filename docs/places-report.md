@@ -618,103 +618,232 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0101-marianus-konopinski`: polónus
 - `mr:0101-sigismundus-gorazdowski`: polónus
 - `mr:0105-deogratias`: urbe Roma
+- `mr:0106-felix`: ecclésiam cathedrálem
+- `mr:0106-petrus-thomas`: Románi
+- `mr:0108-albertus`: angli
+- `mr:0108-erhardus`: scotus
+- `mr:0109-antonius-fatati`: Románi
 - `mr:0110-benincasa`: Sicília
+- `mr:0110-domitianus`: Persárum
+- `mr:0110-gulielmus`: Bituricénsi
 - `mr:0111-franciscus-rogaczewski`: Polóniæ
 - `mr:0113-aemilius-szramek`: polónus
+- `mr:0113-gumesindus-et-servusdei`: Mauros
+- `mr:0114-monachi-raithi`: in monte Sina
+- `mr:0115-bonitus`: Lugdúni
 - `mr:0116-furseus`: Gállia
 - `mr:0116-honoratus`: Arelaténsis
+- `mr:0119-macarius-alexandrinus`: Alexandríni
+- `mr:0120-sebastianus`: Urbe
+- `mr:0122-anastasius`: Persárum
 - `mr:0122-barnardus`: Roma
 - `mr:0124-babyla`: polónus
-- `mr:0129-sulpicius-severus`: Turonénsis
+- `mr:0126-xenophon-et-maria`: Civitáte Sancta
+- `mr:0129-sulpicius-severus`: Turonénsi, Turonénsis
+- `mr:0131-abraham`: Persárum
 - `mr:0201-reginaldus-aurelianensis`: Aurelianénsis
 - `mr:0202-praesentatio-domini`: Israel
 - `mr:0203-simeon-et-anna-prophetissa`: Israel
+- `mr:0204-rabanus-maurus`: Moguntínam
+- `mr:0206-amandus`: Slavos
 - `mr:0207-adalbertus-nierychlewski`: Polónia
+- `mr:0208-iosephina-gabriela-bonino`: Nazarethánæ
+- `mr:0208-petrus-igneus`: Albanénsis
+- `mr:0211-maria-de-lourdes`: Lourdes
+- `mr:0211-paschalis-i`: Urbis
 - `mr:0212-martyres-abitinenses`: Carthágine
+- `mr:0214-cyrillus-et-methodius`: Románi
 - `mr:0218-gulielmus-harrington`: Anglia
 - `mr:0219-quodvultdeus`: Neápoli
+- `mr:0222-cathedra-petri-apostoli`: Románi
 - `mr:0225-sebastianus-aparicio`: Méxicum
 - `mr:0225-waldburgis`: Germánia, Germániam
+- `mr:0228-romanus`: Románi
+- `mr:0229-oswaldus`: Vigorniénsi
 - `mr:0301-christophorus-de-mediolano`: Medioláno
+- `mr:0301-suitbertus`: Frísios
+- `mr:0310-simplicius`: Urbe, Urbem
 - `mr:0311-ioannes-baptista-de-fabriano`: Fabriáno
 - `mr:0313-agnellus-de-pisis`: Anglia, Angliam
+- `mr:0313-christina`: Persárum
+- `mr:0315-zacharias`: Germánis
+- `mr:0325-hilarius-januszewski`: Monte Carmélo
+- `mr:0328-hilarion`: monastérii Peleceténsis
+- `mr:0401-gilbertus`: ecclésiam cathedrálem
+- `mr:0406-eutychius`: Constantinopolitáno
 - `mr:0406-gulielmus`: Dánia
+- `mr:0406-petrus-veronensis`: Veronénsi
+- `mr:0409-acacius`: Románi
 - `mr:0409-caelestina-faron`: Polónia
+- `mr:0410-fulbertus`: ecclésiam cathedrálem
+- `mr:0411-georgius-gervase`: Collégii Anglórum Duacénsis
+- `mr:0413-franciscus-dickenson-et-milo-gerard`: Collégio Anglórum Reménsi
+- `mr:0413-ursus`: ecclésiam cathedrálem
 - `mr:0416-benedictus-iosephus-labre`: Roma, Romam
+- `mr:0416-fructuosus`: Bracarénsis
+- `mr:0417-simeon`: Persárum
+- `mr:0418-romanus-archutowski`: Románi
+- `mr:0421-romanus-adame`: Románi
 - `mr:0422-agapitus-i`: Constantinópoli, Constantinópolim
 - `mr:0423-georgius`: Oriénte
+- `mr:0423-gerardus`: ecclésiam cathedrálem
+- `mr:0424-maria-cleopha-et-salome`: sepúlcrum Dómini
+- `mr:0425-petrus-de-betancur`: Béthlehem
 - `mr:0427-simeon`: Hierosólymæ
-- `mr:0501-ieremias-propheta`: Israel
+- `mr:0429-catharina-senensis`: Senénsis
+- `mr:0501-ieremias-propheta`: Israel, Iudæ
+- `mr:0505-catharina-cittadini`: Somáscha
+- `mr:0509-isaias-propheta`: Iudæ
 - `mr:0510-gulielmus`: anglus
 - `mr:0512-nereus-et-achilleus`: Romæ, Romæ in cœmetério, Romæ in cœmetério Domitíllæ via Ardeatína
+- `mr:0514-matthias-apostolus`: Iudæ
+- `mr:0516-fidolus`: Aventíno
+- `mr:0518-ioannes-i`: Románi
 - `mr:0518-martinus-oprzadek`: polónus
+- `mr:0519-hadulphus`: Atrebaténsis
 - `mr:0519-iosephus-czempiel`: polónus
+- `mr:0527-bruno`: ecclésiam cathedrálem
+- `mr:0527-edmundus-duke-et-socii`: Collégio Anglórum Reménsi
+- `mr:0528-germanus`: Parisiénsem
 - `mr:0528-ladislaus-demski`: polónus
 - `mr:0602-pothinus-et-socii`: Lugdunénsis
 - `mr:0604-metrophanes`: Roma, Romam
-- `mr:0610-ioannes-dominicus`: Hungária
+- `mr:0609-robertus-salt`: cárcere Neopórtus
+- `mr:0610-ioannes-dominicus`: Hungária, Hungáriam
+- `mr:0614-anastasius-et-socii`: Mauros
 - `mr:0615-abraham`: Gállia, Gálliam
 - `mr:0619-gerlandus`: Hierosolymitáni
 - `mr:0621-ioannes-rigby`: Londínii
+- `mr:0622-ioannes-fisher-et-thomas-more`: Románi
 - `mr:0623-petrus-iacobus-de-pisauro`: Pisáuro
+- `mr:0624-gohardus`: ecclésia cathedráli
+- `mr:0625-dorothea-montaviensis`: ecclésiam cathedrálem
+- `mr:0628-paulus-i`: Urbe, Urbem
+- `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui`: templum
 - `mr:0705-athanasius-hierosolymitanus`: Hierosolymitáni
+- `mr:0707-pantaenus-alexandrinus`: Alexandríni
+- `mr:0708-eugenius-iii`: Urbis
+- `mr:0708-procopius`: Cæsaréam
 - `mr:0712-david-gunston`: Hierosolymitáni
 - `mr:0713-henricus`: Roma
 - `mr:0714-tuscana`: Hierosolymitáni
 - `mr:0716-maria-de-monte-carmelo`: Israel
 - `mr:0717-colmanus`: Hierosólymam
+- `mr:0717-leo-iv`: Urbis
 - `mr:0719-achilles-puchala-et-hermannus-stepien`: Polónia
+- `mr:0719-petrus-crisci`: ecclésiæ cathedrális
+- `mr:0720-ioseph`: Iudæ
 - `mr:0722-augustinus-de-bugella`: Venétiis
 - `mr:0723-ezechiel-propheta`: Israel
+- `mr:0725-maria-a-monte-carmelo-salles-y-barangueras`: Monte Carmélo
 - `mr:0725-maria-teresia-kowalska`: Polóniæ
+- `mr:0726-austindus`: ecclésia cathedráli
 - `mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere`: Roma
+- `mr:0729-gulielmus-pinchon`: ecclésiæ cathedrális
+- `mr:0729-urbanus-ii`: sepúlcrum Dómini
 - `mr:0731-germanus`: Ravénna
+- `mr:0731-ignatius-de-loyola`: hispánus
+- `mr:0801-petrus-favre`: Urbe
+- `mr:0803-petrus`: ecclésiæ cathedrális
 - `mr:0807-xystus-ii-et-socii`: Romæ
+- `mr:0808-eusebius`: ecclésiam cathedrálem
+- `mr:0809-faustinus-oteiza-et-florentinus-felipe`: Florentíni
+- `mr:0809-florentinus-asensio-barroso`: Florentíni
+- `mr:0809-romanus`: Románi
 - `mr:0813-petrus-romancon`: Roma
 - `mr:0813-radegundis`: Arelaténsis
+- `mr:0815-altfridus`: ecclésiam cathedrálem
 - `mr:0815-stanislaus-kostka`: Roma, Romam
+- `mr:0819-xystus-iii`: Exquíliis, Urbe
+- `mr:0823-florentinus-perez-romero-et-urbanus-gil-saez`: Florentíni
+- `mr:0825-ludovicus-nonus`: sepúlcrum Dómini
+- `mr:0829-ioannes-de-perusia-et-petrus-de-saxoferrato`: Mauros
+- `mr:0831-ioseph-de-arimathaea-et-nicodemus`: Iudæ
 - `mr:0901-iosue`: Israel
+- `mr:0901-petrus-rivera-et-socii`: Monte Carmélo
+- `mr:0904-moyses-propheta`: in monte Sina
+- `mr:0905-ioannes-bonus-de-siponto`: Dalmátiæ
 - `mr:0907-ioannes-baptista-mazzucconi`: Mediolanénsi
+- `mr:0907-stephanus-de-castellione`: Portárum solitúdine
 - `mr:0911-michael-gran`: Barcinóne
 - `mr:0913-amatus-vosegos`: Roma
 - `mr:0918-iosephus-kut`: polónus
+- `mr:0919-pomposa`: Pompósæ
+- `mr:0924-gerardus-sagredo`: Hungarórum
 - `mr:0924-ioanna-gabriel`: Roma, Romam
 - `mr:0926-gedeon-iudex`: Israel
+- `mr:0927-florentinus`: Florentíni
+- `mr:0930-simon`: Urbe
 - `mr:1001-antonius-rewera`: castra detentiónis Dacháni
 - `mr:1001-florentia-caerols-martinez`: Floréntiæ
+- `mr:1001-romanus`: Románi
+- `mr:1005-apollinaris`: Valentinénsis
 - `mr:1005-flora`: Hierosolymitáni
 - `mr:1005-petrus-de-foro-cornelii`: Hierosolymitáni
+- `mr:1006-romanus`: Románi
 - `mr:1008-hugo`: Hierosolymitáni
+- `mr:1010-daniel-et-socii`: Mauros
+- `mr:1012-romanus-sitko`: Románi
+- `mr:1014-romanus-lysko`: Románi
+- `mr:1016-gerardus-claravallensis`: Claravallénsi, Claravallénsis
 - `mr:1017-gilbertus`: anglus
 - `mr:1017-osee-propheta`: Israel
 - `mr:1019-gratus`: Gálliæ
+- `mr:1021-laura-montoya-y-upegui`: Senénsis
 - `mr:1021-viator`: Lugdunénsis
 - `mr:1022-moderanus`: Gállia
 - `mr:1023-ioannes-de-capestrano`: Hungáriæ
+- `mr:1023-romanus`: Románi
 - `mr:1026-witta`: anglus
+- `mr:1027-namatius`: ecclésiam cathedrálem
+- `mr:1028-simon-et-iudas-apostoli`: Iudæ
 - `mr:1031-christophorus-de-romaniola`: Roma
 - `mr:1031-foillanus`: hibérnus
 - `mr:1031-leo-nowakowski`: Polóniæ
 - `mr:1031-thomas-de-florentia`: Floréntia
+- `mr:1102-ambrosius`: Lugdúnum
 - `mr:1102-malachia`: Claraválle
 - `mr:1104-francisca-de-ambosia`: Gállia
+- `mr:1104-pierius`: Alexandrínam
+- `mr:1105-maria-a-monte-carmelo-viel-ferrando`: Monte Carmélo
+- `mr:1106-stephanus`: ecclésiam cathedrálem
 - `mr:1109-dedicatio-basilicae-lateranensis`: Roma
+- `mr:1109-ursinus`: Galliárum
+- `mr:1113-nicolaus-i`: Románi
+- `mr:1113-quinctianus`: Arvernórum
+- `mr:1113-varmundus`: ecclésiam cathedrálem
+- `mr:1115-desiderius`: templum
 - `mr:1116-eucherius`: Lugdunénsis
 - `mr:1117-elisabeth-hungaria`: Hungáriæ
+- `mr:1117-hugo-nucariae`: Claravallénsi
+- `mr:1117-salomea`: Haliciénsis
+- `mr:1118-odo`: Anianénsis
 - `mr:1118-romacharius`: Roma
+- `mr:1118-romanus`: Románi
 - `mr:1119-abdias-propheta`: Israel
 - `mr:1120-gregorius-decapolitanus`: Constantinópoli
-- `mr:1125-petrus`: Alexandríæ
-- `mr:1129-saturninus-carthaginensis`: Roma, Romam
+- `mr:1121-francisca-de-siedliska`: Nazarethánæ
+- `mr:1124-romanus`: Románi
+- `mr:1125-moyses`: Carthaginénsis
+- `mr:1125-petrus`: Alexandríæ, ægýptii
+- `mr:1126-leonardus-a-portu-mauritio`: Urbe
+- `mr:1127-acharius`: Novioménsem
+- `mr:1127-maximus`: Reiénsis
+- `mr:1127-virgilius`: ecclésiam cathedrálem
+- `mr:1129-saturninus-carthaginensis`: Carthaginénsis, Roma, Romam
 - `mr:1201-florentia`: Floréntiæ
-- `mr:1204-osmundus`: Anglia, Angliam
+- `mr:1204-osmundus`: Anglia, Angliam, ecclésiam cathedrálem
 - `mr:1208-romaricus`: Roma
+- `mr:1210-gregorius-iii`: Urbis
 - `mr:1211-david`: Germánia, Germániam
 - `mr:1211-mirabilia-a-iesu`: Hispánia
 - `mr:1214-ioannes-a-cruce`: Hispániæ
+- `mr:1217-modestus`: Urbe, Urbem
+- `mr:1218-malachias-propheta`: templum
 - `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu`: Polóniæ
 - `mr:1220-vincentius-romano`: Roma
 - `mr:1225-nativitas-domini`: Israel
+- `mr:1230-anysius`: Románi
 
 ## Proposals that failed the check
 

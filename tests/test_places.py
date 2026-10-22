@@ -708,3 +708,16 @@ class UnrecordedTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class ItalianCutTest(unittest.TestCase):
+    def test_an_article_at_the_end_is_a_cut(self):
+        self.assertEqual(p.it_cut_word("presso la"), "la")
+        self.assertEqual(p.it_cut_word("Vicino ai i"), "i")
+
+    def test_a_roman_numeral_is_not_a_cut(self):
+        self.assertIsNone(p.it_cut_word("Concilio Ecumenico Vaticano I"))
+        self.assertIsNone(p.it_cut_word("Concilio Ecumenico Vaticano II"))
+
+    def test_a_place_name_is_not_a_cut(self):
+        self.assertIsNone(p.it_cut_word("A Roma"))
