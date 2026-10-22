@@ -618,8 +618,9 @@ def _resolve(op, client, its):
 
 def _jev_edit(op):
     """The edit Jev's pick stands for (wikidata, and country or countries), or None: the pick must be
-    one of the card's candidates, and have a country (Jev's), else the suggestion's countries when it
-    suggests that item, else the candidate's own countries (two or more)."""
+    one of the card's candidates, and have a country: Jev's, else the suggestion's country or
+    countries when it suggests that item, else the candidate's own countries (one distinct code is a
+    country, two or more are countries)."""
     jev = op.get("jev") or {}
     q = jev.get("wikidata")
     cand = next((c for c in op.get("candidates") or [] if c["wikidata"] == q), None)
@@ -628,16 +629,21 @@ def _jev_edit(op):
     if jev.get("country"):
         return {"wikidata": q, "country": jev["country"]}
     suggested = op.get("suggested") or {}
-    countries = suggested.get("countries") if suggested.get("wikidata") == q else None
-    countries = countries or (cand.get("countries") if len(cand.get("countries") or []) >= 2 else None)
-    return {"wikidata": q, "countries": countries} if countries else None
+    if suggested.get("wikidata") == q and (suggested.get("country") or suggested.get("countries")):
+        key = "country" if suggested.get("country") else "countries"
+        return {"wikidata": q, key: suggested[key]}
+    countries = list(dict.fromkeys(c for c in cand.get("countries") or [] if c in ISO_CODES))
+    if not countries:
+        return None
+    return {"wikidata": q, "country": countries[0]} if len(countries) == 1 else {"wikidata": q, "countries": countries}
 
 
 def decide_jev(gazetteer, review, index, client, threshold):
     """Write Jev's item picks at probability >= threshold as `jev` entries and take their cards off the
-    queue: only cards the curator has not decided (no decision, or a Jev pre-fill), never a reject.
-    All or nothing: an invalid entry raises ValueError and nothing changes."""
-    decided, errors, skipped = {}, [], 0
+    queue: only cards the curator has not decided (no decision, or a Jev pre-fill), never a reject. A
+    pick whose entry does not validate (a withdrawn country code, say) stays queued for the curator,
+    listed under `invalid`; nothing invalid is written."""
+    decided, invalid, skipped = {}, [], 0
     for op in review["operations"]:
         jev = op.get("jev") or {}
         mine = op.get("decision") is None or op.get("prefilled") == "jev"
@@ -646,17 +652,14 @@ def decide_jev(gazetteer, review, index, client, threshold):
             skipped += 1
             continue
         entry, error = _resolve(dict(op, decision="edit", edited=edit), client, index[op["id"]]["it"])
-        if error:
-            errors.append(error)
+        entry = dict(entry, status="jev") if entry else None
+        if error or validate({op["id"]: entry}, index):
+            invalid.append(op["id"])
         else:
-            decided[op["id"]] = dict(entry, status="jev")
-    if not errors:
-        errors = validate(decided, index)
-    if errors:
-        raise ValueError("nothing decided:\n" + "\n".join(errors))
+            decided[op["id"]] = entry
     gazetteer.update(decided)
     review["operations"] = [op for op in review["operations"] if op["id"] not in decided]
-    return {"decided": len(decided), "skipped": skipped}
+    return {"decided": len(decided), "skipped": skipped, "invalid": invalid}
 
 
 def apply_decisions(gazetteer, review, exported, index, client):
@@ -767,11 +770,10 @@ def main(argv):
         print(f"{dropped} non-place candidates dropped; {len(review['operations'])} queued")
         return 0
     if cmd == "decide-jev":
-        try:
-            counts = decide_jev(gazetteer, review, index, client, threshold)
-        except ValueError as e:
-            sys.exit(str(e))
+        counts = decide_jev(gazetteer, review, index, client, threshold)
         write_state(repo_root, gazetteer, review, index)
+        for la in counts["invalid"]:
+            print(f"left queued (the entry does not validate): {la!r}")
         print(f"{counts['decided']} decided by Jev at >= {threshold}; {len(review['operations'])} queued")
         return 0
     if cmd == "check":

@@ -1215,6 +1215,23 @@ class DecideJevTest(unittest.TestCase):
                                           suggested={"wikidata": "Q1", "countries": ["FR", "BE"]}))
         self.assertEqual(gaz["Fictópoli"]["countries"], ["FR", "BE"])
 
+    def test_decide_with_the_suggested_country(self):
+        _, gaz, _ = self.decide(self.card(pick="Q1", country=None, jev_decision="accept",
+                                          suggested={"wikidata": "Q1", "country": "BE"}))
+        self.assertEqual((gaz["Fictópoli"]["country"], gaz["Fictópoli"]["status"]), ("BE", "jev"))
+
+    def test_decide_with_a_repeated_candidate_country(self):
+        dup = cand("Q5", label="Nederlanders", country=None, countries=["NL", "NL"])
+        _, gaz, _ = self.decide(self.card(pick="Q5", country=None, candidates=[dup]))
+        self.assertEqual(gaz["Fictópoli"]["country"], "NL")
+        self.assertNotIn("countries", gaz["Fictópoli"])
+
+    def test_decide_ignores_a_country_without_an_iso_code(self):
+        thebaid = cand("Q6", label="Thebaid", country=None, countries=["Q11768"])
+        _, gaz, review = self.decide(self.card(pick="Q6", country=None, candidates=[thebaid]))
+        self.assertEqual(gaz, {})
+        self.assertEqual(len(review["operations"]), 1)
+
     def test_decide_needs_a_candidate(self):
         _, gaz, _ = self.decide(self.card(pick="Q9"))
         self.assertEqual(gaz, {})
@@ -1226,10 +1243,11 @@ class DecideJevTest(unittest.TestCase):
         _, gaz, _ = self.decide(o)
         self.assertEqual(gaz, {})
 
-    def test_decide_is_all_or_nothing(self):
-        bad = self.card("Altrópoli", country="XX")
-        with self.assertRaises(ValueError):
-            self.decide(self.card(), bad)
+    def test_decide_leaves_an_invalid_entry_queued(self):
+        counts, gaz, review = self.decide(self.card(), self.card("Altrópoli", country="XX"))
+        self.assertEqual(list(gaz), ["Fictópoli"])
+        self.assertEqual([o["id"] for o in review["operations"]], ["Altrópoli"])
+        self.assertEqual(counts["invalid"], ["Altrópoli"])
 
     def test_jev_status_validates(self):
         gaz = {"Fictópoli": {"wikidata": "Q3", "label": "Frisia", "country": None, "countries": ["NL", "DE"],
