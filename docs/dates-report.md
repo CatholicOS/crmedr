@@ -32,6 +32,11 @@ A subject died after an edition that already prints the eulogy: the person link 
 | Eulogy | From | To |
 |---|---|---|
 
+## Estimates for eulogies that are not current (0)
+
+Ignored; rerun `scripts/estimate_dates.py estimate`.
+
+
 ## Feasts and commemorations to date
 
 `celebratio` and `commemoratio` eulogies with no date, or only an edition bound (297): candidates for `data/dates_curated.json`. A eulogy with no bound is only absent from the 1630 and 1914 editions, which says nothing about its date.
