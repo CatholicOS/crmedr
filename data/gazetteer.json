@@ -17271,7 +17271,11 @@
     "Slesvicénsis": {
       "wikidata": "Q26167",
       "label": "Duchy of Schleswig",
-      "country": "DK",
+      "country": null,
+      "countries": [
+        "DK",
+        "DE"
+      ],
       "status": "jev"
     },
     "Smyrnæ in Asia": {
