@@ -87,9 +87,12 @@ precision: `year`. A decade or century precision: the range it covers. Several p
 earliest, `to` the latest. A eulogy with some persons dated and others not takes the dated ones. These
 dates refresh on every run, so dates follow the subject identity work as it links more persons.
 
-**From the editions.** The oldest of the 1630, 1749 and 1914 editions (martyrology-api's
-`data/editions/martyrologium_romanum_{1630,1749,1914_en_unofficial}`) whose keys include the eulogy's
-ID or one of its `same_eulogy` IDs gives `to` = that edition's year (1914 adds only 4 eulogies). An ID in a `same_eulogy` link counts even when it is
+**From the editions.** The oldest of the 1630 and 1914 editions (martyrology-api's
+`data/editions/martyrologium_romanum_{1630,1914_en_unofficial}`) whose keys include the eulogy's ID or
+one of its `same_eulogy` IDs gives `to` = that edition's year. The English edition (Baltimore, 1916)
+translates the Roman copy of 1914. The folder `martyrologium_romanum_1749` bounds nothing: its copy is
+a 1913 Mechelen printing with later additions (John Bosco, canonized 1934), found by the first run of
+the checks below. An ID in a `same_eulogy` link counts even when it is
 a deprecated cross-day ID (#49): the link says it is the same eulogy. The script that reads those files takes the
 martyrology-api path as an argument, as other generators take martyrology-texts.
 

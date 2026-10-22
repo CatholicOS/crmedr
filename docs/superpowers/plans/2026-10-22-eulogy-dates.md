@@ -17,7 +17,7 @@
 - `basis` ∈ {`death`, `deposition`, `translation`, `dedication`, `event`}; `source` ∈ {`wikidata`, `edition`, `curated`, `estimate`} (`estimate` is written by step 2, not here).
 - Typology → basis: `dies_natalis` → `death`, `depositio` → `deposition`, `translatio` → `translation`, `dedicatio` → `dedication`; `celebratio`, `commemoratio`, `ordinatio` → no basis.
 - Precedence: curated (a curated `null` removes the date) > wikidata > edition.
-- Edition years: 1630 (`martyrologium_romanum_1630`), 1749 (`martyrologium_romanum_1749`), 1914 (`martyrologium_romanum_1914_en_unofficial`); the oldest wins.
+- Edition years: 1630 (`martyrologium_romanum_1630`), 1914 (`martyrologium_romanum_1914_en_unofficial`); the oldest wins. (Ruled in Task 3: the `martyrologium_romanum_1749` folder is a 1913 printing with later additions and bounds nothing.)
 - A date never has both `year` and `from`/`to`; `from`/`to` may each be absent (open bound), never both.
 - Key order in a date: `year`, `from`, `to`, `circa`, `basis`, `source`, `note`.
 - The registry markdown (`registry/*.md`) is unchanged; only `data/martyrology_ids.json` gains `date`.

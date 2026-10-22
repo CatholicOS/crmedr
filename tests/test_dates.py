@@ -64,15 +64,18 @@ class DeathDateTest(unittest.TestCase):
 
 class EditionBoundsTest(unittest.TestCase):
     KEYS = {"martyrologium_romanum_1630": {"mr:0101-a"},
-            "martyrologium_romanum_1749": {"mr:0101-a", "mr:0102-twin"},
-            "martyrologium_romanum_1914_en_unofficial": set()}
+            "martyrologium_romanum_1914_en_unofficial": {"mr:0101-a", "mr:0102-twin"}}
 
     def test_oldest_edition_wins(self):
         self.assertEqual(d.edition_bounds([{"id": "mr:0101-a"}], self.KEYS), {"mr:0101-a": 1630})
 
     def test_bound_through_deprecated_twin(self):
         entries = [{"id": "mr:0101-b", "same_eulogy": ["mr:0102-twin"]}]
-        self.assertEqual(d.edition_bounds(entries, self.KEYS), {"mr:0101-b": 1749})
+        self.assertEqual(d.edition_bounds(entries, self.KEYS), {"mr:0101-b": 1914})
+
+    def test_the_1749_folder_bounds_nothing(self):
+        keys = {"martyrologium_romanum_1749": {"mr:0131-ioannes-bosco"}}
+        self.assertEqual(d.edition_bounds([{"id": "mr:0131-ioannes-bosco"}], keys), {})
 
     def test_absent_everywhere(self):
         self.assertEqual(d.edition_bounds([{"id": "mr:0101-c"}], self.KEYS), {})
@@ -82,13 +85,61 @@ class EditionBoundsTest(unittest.TestCase):
 
     def test_edition_keys_skips_non_day_values(self):
         with tempfile.TemporaryDirectory() as t:
-            folder = Path(t) / "data" / "editions" / "martyrologium_romanum_1749"
+            folder = Path(t) / "data" / "editions" / "martyrologium_romanum_1914_en_unofficial"
             folder.mkdir(parents=True)
             (folder / "01.json").write_text(json.dumps(
                 {"mensis": "Januarius", "1": {"titulus": "t", "elogia": {"mr:0101-a": "x"}}}))
             keys = d.edition_keys(Path(t))
-        self.assertEqual(keys["martyrologium_romanum_1749"], {"mr:0101-a"})
+        self.assertEqual(keys["martyrologium_romanum_1914_en_unofficial"], {"mr:0101-a"})
         self.assertEqual(keys["martyrologium_romanum_1630"], set())
+
+
+class BuildDatesTest(unittest.TestCase):
+    ID = "mr:0101-fictitius"
+    TYPOLOGY = {ID: "dies_natalis"}
+
+    def build(self, deaths=(), bound=None, curated=None):
+        persons = {self.ID: [{"name": f"P{i}", "where": "text"} for i in range(len(deaths))]}
+        items = {self.ID: {f"P{i}": {"wikidata": f"Q{i + 1}"} for i in range(len(deaths))}}
+        details = {f"Q{i + 1}": died(y) for i, y in enumerate(deaths)}
+        bounds = {self.ID: bound} if bound else {}
+        return d.build_dates({self.ID}, self.TYPOLOGY, persons, items, details, bounds, curated or {})
+
+    def test_curated_wins(self):
+        curated = {self.ID: {"year": 431, "basis": "event", "note": "Council of Ephesus"}}
+        self.assertEqual(self.build([304], curated=curated)[self.ID],
+                         {"year": 431, "basis": "event", "source": "curated", "note": "Council of Ephesus"})
+
+    def test_curated_null_removes(self):
+        self.assertEqual(self.build([304], bound=1630, curated={self.ID: None}), {})
+
+    def test_wikidata_over_edition(self):
+        self.assertEqual(self.build([304], bound=1630)[self.ID],
+                         {"year": 304, "basis": "death", "source": "wikidata"})
+
+    def test_edition_only(self):
+        self.assertEqual(self.build(bound=1630)[self.ID], {"to": 1630, "basis": "death", "source": "edition"})
+
+    def test_curated_unknown_id_fails(self):
+        with self.assertRaisesRegex(ValueError, "mr:0101-renamed"):
+            self.build(curated={"mr:0101-renamed": {"year": 1}})
+
+    def test_after_bound_check(self):
+        wd = {self.ID: {"year": 1700}}
+        self.assertEqual(d.checks(wd, {self.ID: 1630})["after_bound"], [(self.ID, 1700, 1630)])
+
+    def test_wide_check(self):
+        wd = {self.ID: {"from": 304, "to": 900}}
+        self.assertEqual(d.checks(wd, {})["wide"], [(self.ID, 304, 900)])
+
+    def test_check_sees_curated_overridden(self):
+        persons = {self.ID: [{"name": "P0", "where": "text"}]}
+        items = {self.ID: {"P0": {"wikidata": "Q1"}}}
+        wd = d.death_dates({self.ID}, persons, items, {"Q1": died(1700)})
+        self.assertEqual(d.checks(wd, {self.ID: 1630})["after_bound"], [(self.ID, 1700, 1630)])
+
+    def test_committed_dates_are_current(self):
+        self.assertEqual(d.main(["--check", str(ROOT)]), 0)
 
 
 if __name__ == "__main__":
