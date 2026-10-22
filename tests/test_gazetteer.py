@@ -1232,6 +1232,11 @@ class DecideJevTest(unittest.TestCase):
         self.assertEqual(gaz, {})
         self.assertEqual(len(review["operations"]), 1)
 
+    def test_decide_falls_back_from_a_withdrawn_country(self):
+        sark = cand("Q7", label="Sark", country="CQ", countries=["GG"])
+        _, gaz, _ = self.decide(self.card(pick="Q7", country="CQ", candidates=[sark]))
+        self.assertEqual(gaz["Fictópoli"]["country"], "GG")
+
     def test_decide_needs_a_candidate(self):
         _, gaz, _ = self.decide(self.card(pick="Q9"))
         self.assertEqual(gaz, {})
@@ -1244,7 +1249,9 @@ class DecideJevTest(unittest.TestCase):
         self.assertEqual(gaz, {})
 
     def test_decide_leaves_an_invalid_entry_queued(self):
-        counts, gaz, review = self.decide(self.card(), self.card("Altrópoli", country="XX"))
+        bad = self.card("Altrópoli")
+        bad["candidates"][1]["label"] = ""  # an entry without a label does not validate
+        counts, gaz, review = self.decide(self.card(), bad)
         self.assertEqual(list(gaz), ["Fictópoli"])
         self.assertEqual([o["id"] for o in review["operations"]], ["Altrópoli"])
         self.assertEqual(counts["invalid"], ["Altrópoli"])

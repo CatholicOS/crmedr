@@ -29,6 +29,7 @@ import sys
 from pathlib import Path
 
 import gazetteer_jev as gj
+from gazetteer_text import ISO_CODES
 import mentions_jev as mj
 from extract_places import EDITION_EN
 from extract_typology import latin_texts, load_texts
@@ -119,7 +120,7 @@ def prefill_ops(ops, threshold):
         jev = op.get("jev") or {}
         q = jev.get("wikidata")
         ok = (op.get("decision") is None and jev.get("decision") in ("accept", "edit")
-              and jev.get("probability", 0) >= threshold and jev.get("country")
+              and jev.get("probability", 0) >= threshold and jev.get("country") in ISO_CODES
               and q in [c["wikidata"] for c in op.get("candidates") or []])
         if not ok:
             counts["skipped"] += 1

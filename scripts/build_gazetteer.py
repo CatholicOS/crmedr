@@ -626,7 +626,7 @@ def _jev_edit(op):
     cand = next((c for c in op.get("candidates") or [] if c["wikidata"] == q), None)
     if jev.get("decision") not in ("accept", "edit") or cand is None:
         return None
-    if jev.get("country"):
+    if jev.get("country") in ISO_CODES:  # a withdrawn code (Sark's CQ) falls through
         return {"wikidata": q, "country": jev["country"]}
     suggested = op.get("suggested") or {}
     if suggested.get("wikidata") == q and (suggested.get("country") or suggested.get("countries")):
