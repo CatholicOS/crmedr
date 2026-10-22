@@ -14,6 +14,10 @@ def died(year, precision="year", circa=False):
     return {"died": {"year": year, "precision": precision, "circa": circa}}
 
 
+def est(century, probability):
+    return {"century": century, "probability": probability, "confidence": probability}
+
+
 class DeathDateTest(unittest.TestCase):
     def date(self, *deaths):
         persons = [{"name": f"P{i}", "where": "text"} for i in range(len(deaths))]
@@ -127,12 +131,44 @@ class BuildDatesTest(unittest.TestCase):
     ID = "mr:0101-fictitius"
     TYPOLOGY = {ID: "dies_natalis"}
 
-    def build(self, deaths=(), bound=None, curated=None):
+    def build(self, deaths=(), bound=None, curated=None, estimate=None):
         persons = {self.ID: [{"name": f"P{i}", "where": "text"} for i in range(len(deaths))]}
         items = {self.ID: {f"P{i}": {"wikidata": f"Q{i + 1}"} for i in range(len(deaths))}}
         details = {f"Q{i + 1}": died(y) for i, y in enumerate(deaths)}
         bounds = {self.ID: bound} if bound else {}
-        return d.build_dates({self.ID}, self.TYPOLOGY, persons, items, details, bounds, curated or {})
+        estimates = {self.ID: estimate} if estimate else {}
+        return d.build_dates({self.ID}, self.TYPOLOGY, persons, items, details, bounds, curated or {},
+                             estimates, estimate_min=0.9)
+
+    def test_estimate_written(self):
+        self.assertEqual(self.build(estimate=est("c4", 0.95))[self.ID],
+                         {"from": 301, "to": 400, "circa": True, "basis": "death", "source": "estimate"})
+
+    def test_estimate_below_threshold_ignored(self):
+        self.assertEqual(self.build(bound=1630, estimate=est("c4", 0.5))[self.ID],
+                         {"to": 1630, "basis": "death", "source": "edition"})
+
+    def test_cannot_tell_ignored(self):
+        self.assertEqual(self.build(estimate=est("cannot_tell", 0.99)), {})
+
+    def test_estimate_cut_at_bound(self):
+        self.assertEqual(self.build(bound=1630, estimate=est("c17", 0.95))[self.ID],
+                         {"from": 1601, "to": 1630, "circa": True, "basis": "death", "source": "estimate"})
+
+    def test_estimate_after_bound_dropped(self):
+        self.assertEqual(self.build(bound=1630, estimate=est("c18", 0.95))[self.ID],
+                         {"to": 1630, "basis": "death", "source": "edition"})
+
+    def test_bc_with_bound(self):
+        self.assertEqual(self.build(bound=1630, estimate=est("bc", 0.95))[self.ID],
+                         {"to": -1, "circa": True, "basis": "death", "source": "estimate"})
+
+    def test_wikidata_over_estimate(self):
+        self.assertEqual(self.build([304], estimate=est("c9", 0.99))[self.ID]["source"], "wikidata")
+
+    def test_stale_estimate_ignored(self):
+        self.assertEqual(d.stale_estimates({"mr:0101-gone": est("c4", 0.9), self.ID: est("c4", 0.9)}, {self.ID}),
+                         ["mr:0101-gone"])
 
     def test_curated_wins(self):
         curated = {self.ID: {"year": 431, "basis": "event", "note": "Council of Ephesus"}}

@@ -98,8 +98,8 @@ martyrology-api path as an argument, as other generators take martyrology-texts.
 
 **Checks** (in the report, not errors): a death-year date later than its edition bound (a likely
 wrong person link); a range wider than 300 years from death dates (likely a wrong person among
-several). A wide range is still written; a death later than the bound is not (the bound is
-written instead), since only a wrong person link produces it.
+several). A wide range is still written; a death later than the bound is not, since only a wrong
+person link produces it: the next source applies instead (an estimate, else the bound).
 
 **Curated dates.** Step 1 ships `data/dates_curated.json` with Mary Mother of God (431, `event`,
 "Council of Ephesus") and the report lists the undated `celebratio` and `commemoratio` eulogies as
@@ -107,14 +107,24 @@ candidates for the curator; it does not guess their dates.
 
 ## The era estimate
 
-For eulogies with no death date, a model reads the Latin, Italian and English text and picks the
-**century** the eulogy is set in, or "cannot tell". The state sent is the Latin, Italian and
-English texts of the eulogy and its typology, as in the gazetteer Jev pass. My call: Jev (one Choice question, centuries 1–21
-plus "cannot tell"), because the same 904 dated eulogies give a ready calibration set: run Jev on
-them, report agreement (exact century, within one) by probability, and let the curator pick a
-threshold, as for the gazetteer suggestions. A pick at or above the threshold is written as
-`{from, to, source: "estimate"}` spanning that century, intersected with the edition bound when there
-is one. Below it, nothing is written.
+For eulogies with no death date, a model reads the eulogy's opening clause and picks the
+**century** the eulogy is set in, or "cannot tell". The state sent follows the curator's ruling of
+2026-10-18 for every TypeSafe request: one clause of the 2004 Latin and one of the English (the first
+sentence, at most 400 characters), never a whole eulogy (a one-sentence eulogy, as most are, is sent
+without its opening place, and one without a comma not at all); with them the typology and the oldest
+edition before 2004 that prints the eulogy, if any. My call: Jev, one Choice of 23 options (before
+Christ, the 1st to the 21st century, cannot tell; a Score holds at most 10 levels), because the dated
+eulogies give a ready calibration set: run Jev on them, report agreement (the right century, and
+within one) by probability, and let the curator pick a threshold, as for the gazetteer suggestions.
+Jev's answers are stored without text in `data/date_estimates.json`; a pick at or above the
+threshold is written as `{from, to, source: "estimate"}` spanning that century (before Christ: `to:
+-1` alone), cut at the edition bound when there is one, and dropped when the century begins after
+the bound, with `circa` (the calibration's confident misses fall mostly within a few years of a
+century boundary: ±1 century is the real precision). Below the threshold, or "cannot tell", nothing
+is written. The calibration set is the eulogies whose persons are linked to Wikidata, the better
+known saints; the estimated ones are the rest, so their accuracy is likely lower than the
+calibration's. Precedence: curated, death
+dates, estimate, edition bound.
 
 A century is coarse, but the era-sensitive choices this serves
 are centuries apart (ancient or medieval Ireland against the state of 1937, Achaemenid against

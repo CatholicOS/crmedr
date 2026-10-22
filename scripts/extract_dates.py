@@ -5,8 +5,9 @@ A date is the main year a eulogy is associated with (`year`), or a range (`from`
 year is too precise, with what it marks (`basis`) and where it comes from (`source`). It is
 optional and only a signal (docs/superpowers/specs/2026-10-22-eulogy-dates-design.md). Sources, the
 first that applies: data/dates_curated.json; the death dates of the eulogy's persons
-(data/persons.json, data/person_items.json, data/person_details.json); the year of the oldest
-edition that prints the eulogy (data/edition_bounds.json), as an upper bound.
+(data/persons.json, data/person_items.json, data/person_details.json); Jev's century estimate at or
+above ESTIMATE_MIN (data/date_estimates.json, scripts/estimate_dates.py), cut at the edition bound;
+the year of the oldest edition that prints the eulogy (data/edition_bounds.json), as an upper bound.
 
 Usage:
   python3 scripts/extract_dates.py [--check] [repo_root]
@@ -23,6 +24,7 @@ import sys
 import tempfile
 from pathlib import Path
 
+from dates_jev import century_range
 from persons_text import person_key
 
 # What a eulogy's date marks, by its typology (data/typology.json); the others have no default.
@@ -40,6 +42,10 @@ REPORT = "docs/dates-report.md"
 EDITION_2004 = "martyrologium_romanum_2004"
 # A range of death dates wider than this many years likely holds a wrong person.
 WIDE = 300
+ESTIMATES = "data/date_estimates.json"
+# The probability from which Jev's century estimate becomes a date (the curator's threshold, from
+# python3 scripts/estimate_dates.py evaluate: 94% in the right century, 99% within one, 2026-10-22).
+ESTIMATE_MIN = 0.8
 DATE_KEYS = ("year", "from", "to", "circa", "basis", "source", "note")
 
 
@@ -161,9 +167,27 @@ def curated_errors(curated):
     return errors
 
 
-def build_dates(current_ids, typology, persons, items, details, bounds, curated):
+def estimate_date(est, bound, estimate_min=ESTIMATE_MIN):
+    """The date of a Jev estimate at or above estimate_min: its century, cut at the edition bound;
+    None below it, for cannot_tell, or for a century that begins after the bound."""
+    if not est or est["probability"] < estimate_min:
+        return None
+    years = century_range(est["century"])
+    if years is None or bound is None:
+        return years
+    if years.get("from", bound) > bound:
+        return None
+    return {**years, "to": min(years["to"], bound)}
+
+
+def stale_estimates(estimates, current_ids):
+    return sorted(set(estimates) - set(current_ids))
+
+
+def build_dates(current_ids, typology, persons, items, details, bounds, curated, estimates=None,
+                estimate_min=ESTIMATE_MIN):
     """The date of each current eulogy: curated (null removes), else its persons' death dates,
-    else the edition bound as `to`. A death later than the bound comes from a wrong person link
+    else Jev's estimate, else the edition bound as `to`. A death later than the bound comes from a wrong person link
     (reported by checks()): the bound is written instead."""
     unknown = sorted(set(curated) - set(current_ids))
     if unknown:
@@ -178,6 +202,10 @@ def build_dates(current_ids, typology, persons, items, details, bounds, curated)
             date = curated[mid] and {**curated[mid], "source": "curated"}
         elif mid in wikidata and not (mid in bounds and latest(wikidata[mid]) > bounds[mid]):
             date = {**wikidata[mid], "source": "wikidata"}
+        elif estimate_date((estimates or {}).get(mid), bounds.get(mid), estimate_min):
+            # circa: most confident misses fall within a few years of a century boundary
+            date = {**estimate_date(estimates[mid], bounds.get(mid), estimate_min), "circa": True,
+                    "source": "estimate"}
         elif mid in bounds:
             date = {"to": bounds[mid], "source": "edition"}
         else:
@@ -206,7 +234,7 @@ def shown(date):
     return f"{date.get('from', '…')}–{date.get('to', '…')}"
 
 
-def report(dates, found, typology, current_ids):
+def report(dates, found, typology, current_ids, stale=()):
     sources = collections.Counter(d["source"] for d in dates.values())
     bases = collections.Counter(d.get("basis", "(none)") for d in dates.values())
     undated = [mid for mid in sorted(current_ids) if typology.get(mid) in ("celebratio", "commemoratio")
@@ -227,6 +255,9 @@ def report(dates, found, typology, current_ids):
              f"## Death dates more than {WIDE} years apart", "",
              "| Eulogy | From | To |", "|---|---|---|",
              *[f"| {m} | {a} | {b} |" for m, a, b in found["wide"]], "",
+             f"## Estimates for eulogies that are not current ({len(stale)})", "",
+             "Ignored; rerun `scripts/estimate_dates.py estimate`.", "",
+             *[f"- {m}" for m in stale], "",
              "## Feasts and commemorations to date", "",
              f"`celebratio` and `commemoratio` eulogies with no date, or only an edition bound "
              f"({len(undated)}): candidates for `{CURATED}`. A eulogy with no bound is only absent "
@@ -271,7 +302,8 @@ def render(repo_root, out_root):
     details = _read(repo_root, "data/person_details.json")
     bounds = _read(repo_root, BOUNDS)["bounds"]
     curated = _read(repo_root, CURATED)["dates"]
-    dates = build_dates(current_ids, typology, persons, items, details, bounds, curated)
+    estimates = _read(repo_root, ESTIMATES)["estimates"] if (repo_root / ESTIMATES).exists() else {}
+    dates = build_dates(current_ids, typology, persons, items, details, bounds, curated, estimates)
     found = checks(death_dates(current_ids, persons, items, details), bounds)
     (out_root / "data").mkdir(parents=True, exist_ok=True)
     (out_root / "docs").mkdir(parents=True, exist_ok=True)
@@ -282,7 +314,8 @@ def render(repo_root, out_root):
                "that prints it, as an upper bound; estimate). Years are negative before Christ. "
                "Generated by scripts/extract_dates.py; corrections go in data/dates_curated.json.",
                "dates", dates)
-    (out_root / REPORT).write_text(report(dates, found, typology, current_ids), encoding="utf-8")
+    (out_root / REPORT).write_text(report(dates, found, typology, current_ids,
+                                          stale_estimates(estimates, current_ids)), encoding="utf-8")
     return dates, found
 
 
