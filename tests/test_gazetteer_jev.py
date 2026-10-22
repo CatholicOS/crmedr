@@ -135,6 +135,12 @@ class PickConventionTest(unittest.TestCase):
             self.assertIn(phrase, text)
         self.assertNotIn("same spot (", text)
 
+    def test_instructions_state_page_2_conventions(self):
+        text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
+        for phrase in ("the council's item", "the continents", "Cluniaci", "Galliarum"):
+            self.assertIn(phrase, text)
+        self.assertIn("council", gj.KIND_CRITERIA["place"])
+
     def test_instructions_state_page_1_conventions(self):
         text = gj.place_request(OP, "la clause", "en clause")["questions"]["pick"]["instructions"]
         for phrase in ("the item of that people", "the monastery or abbey"):

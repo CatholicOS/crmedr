@@ -18,7 +18,8 @@ from subject_jev import MAX_CLAUSE, _choice, _sentences, _window
 KINDS = ("place", "people", "relative", "not_place")
 
 KIND_CRITERIA = {
-    "place": "a settlement, site, building, region or country: a place one could find on a map",
+    "place": ("a settlement, site, building, region or country: a place one could find on a map; also a "
+              "council named by its city (Chalcedonense, Ephesinum)"),
     "people": ("a nationality or a people (anglus, polonus, a tribe or a kingdom named by its people, "
                "Merciorum)"),
     "relative": ("a place named only in relation to the eulogy (this city, the same monastery), which the "
@@ -141,10 +142,14 @@ PICK_INSTRUCTIONS = (
     "camp, rather than the town or mountain it stands in or on), or when it names a historical territory "
     "(a Roman province or historical region, rather than a modern region or continent of the same name). "
     "When the phrase names a place near another (prope, apud, iuxta: near, at), the near place is not that "
-    "other one. When the phrase names a nationality or a people (polonus, anglus, hibernus, Merciorum), "
+    "other one. When the phrase names a nationality or a people (polonus, anglus, hibernus, Merciorum, "
+    "Galliarum: the Gauls), "
     "choose the item of that people, or of the kingdom named by its people (the Kingdom of Mercia). When "
     "the phrase is the adjective of a monastery (Cluniacensis: of Cluny) or the island of a monastery in a "
-    "eulogy of its monks (insula Lirinensis), choose the monastery or abbey rather than its town or island. "
+    "eulogy of its monks (insula Lirinensis), choose the monastery or abbey rather than its town or island; "
+    "so too for the monastery's own place name in such a eulogy (Cluniaci: at Cluny Abbey). When the "
+    "phrase names a council by its city (Chalcedonense, Ephesinum), choose the council's item. Asia and "
+    "Africa are the continents, unless the phrase names the Roman province (Africa Proconsularis). "
     "Answer none if no candidate is this place."
 )
 
