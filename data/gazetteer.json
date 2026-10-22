@@ -3148,10 +3148,11 @@
       "status": "jev"
     },
     "Bangértii": {
-      "wikidata": "Q234178",
-      "label": "Bangor",
+      "wikidata": "Q591192",
+      "label": "Bangor Abbey",
       "country": "GB",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "Bangor Abbey in County Down, where Maelrubha became a monk, not Bangor in Wales (CodeRabbit on #168, 2026-10-22)."
     },
     "Barbastrénsis": {
       "wikidata": "Q502975",
@@ -20621,12 +20622,6 @@
       "label": "Castel Volturno",
       "country": "IT",
       "status": "reviewed"
-    },
-    "Volyn’ et Pidljashja": {
-      "wikidata": "Q7530",
-      "label": "Volhynia",
-      "country": "UA",
-      "status": "jev"
     },
     "Voralbérga regióne": {
       "wikidata": "Q38981",

@@ -188,8 +188,10 @@ def summarize(raw):
         "p9314_names": sorted({t for c in claims.get("P9314", []) if isinstance(_value(c), str)
                                for t in fold(_value(c).split("/", 1)[-1]).split("-") if t}),
         "country_qids": current_country_qids(claims),
+        # The areas it lies in now: not a deprecated one, nor one with an end time (P582).
         "admin_qids": [_value(c)["id"] for c in claims.get("P131", [])
-                       if c.get("rank") != "deprecated" and isinstance(_value(c), dict)],
+                       if c.get("rank") != "deprecated" and "P582" not in c.get("qualifiers", {})
+                       and isinstance(_value(c), dict)],
         "iso_self": p297[0] if p297 else None,
         "coords": [coords["latitude"], coords["longitude"]] if coords else None,
         "types": list(dict.fromkeys(_value(c)["id"] for c in claims.get("P31", [])

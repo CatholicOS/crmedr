@@ -264,6 +264,14 @@ class CountryFallbackTest(unittest.TestCase):
         c = self.client(entities, {"Betania": ["Q1"]}).candidates("Betania")[0]
         self.assertEqual(c["country"], "PS")
 
+    def test_a_former_area_is_not_used(self):
+        town = raw_entity("Q1", it=("Fictopoli",))
+        town["claims"]["P131"] = [snak("P131", "Q2", qualifiers={"P582": [{"datavalue": {"value": {"time": "+1918"}}}]})]
+        entities = {"Q1": town, "Q2": raw_entity("Q2", p17=[snak("P17", "Q100")]),
+                    "Q100": raw_entity("Q100", p297="FX", p31=("Q6256",))}
+        c = self.client(entities, {"Fictopoli": ["Q1"]}).candidates("Fictopoli")[0]
+        self.assertIsNone(c["country"])
+
     def test_a_direct_iso_country_is_unchanged(self):
         entities = {"Q1": raw_entity("Q1", it=("Fictopoli",), p17=[snak("P17", "Q100")]),
                     "Q100": raw_entity("Q100", p297="FX", p31=("Q6256",))}

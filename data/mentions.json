@@ -33962,9 +33962,22 @@
           "kind": "place",
           "where": "text",
           "start": 130,
+          "end": 136,
+          "check": "355df330",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 140,
           "end": 150,
-          "check": "bc0643ef",
-          "qid": "Q7530",
+          "check": "98733558",
+          "qid": null,
           "roles": [
             {
               "role": "ministry"
@@ -41384,7 +41397,7 @@
           "start": 96,
           "end": 105,
           "check": "121b191c",
-          "qid": "Q234178",
+          "qid": "Q591192",
           "roles": [
             {
               "role": "religious_life"
@@ -189215,9 +189228,22 @@
           "kind": "place",
           "where": "text",
           "start": 107,
+          "end": 113,
+          "check": "355df330",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 116,
           "end": 126,
-          "check": "e2b67625",
-          "qid": "Q7530",
+          "check": "98733558",
+          "qid": null,
           "roles": [
             {
               "role": "ministry"
@@ -196684,7 +196710,7 @@
           "start": 101,
           "end": 107,
           "check": "47785ac8",
-          "qid": "Q234178",
+          "qid": "Q591192",
           "roles": [
             {
               "role": "religious_life"

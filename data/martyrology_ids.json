@@ -30631,12 +30631,15 @@
         },
         {
           "role": "ministry",
-          "la": "Volyn’ et Pidljashja",
-          "it": "Volyn’ e Pidljashja",
-          "source": "curated",
-          "wikidata": "Q7530",
-          "label": "Volhynia",
-          "country": "UA"
+          "la": "Volyn’",
+          "it": "Volyn’",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Pidljashja",
+          "it": "Pidljashja",
+          "source": "curated"
         }
       ]
     },
@@ -37153,8 +37156,8 @@
           "la": "Bangértii",
           "it": "Bangor",
           "source": "curated",
-          "wikidata": "Q234178",
-          "label": "Bangor",
+          "wikidata": "Q591192",
+          "label": "Bangor Abbey",
           "country": "GB"
         }
       ]
