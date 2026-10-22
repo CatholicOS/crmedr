@@ -227,6 +227,48 @@ class SparqlPrefixesTest(unittest.TestCase):
                 self.assertIn(f"PREFIX {prefix}: <", q)
 
 
+class CountryFallbackTest(unittest.TestCase):
+    """A candidate whose P17 is a historical state takes the one ISO country its successors give;
+    one with no P17 takes the one ISO country of its P131 area."""
+
+    def client(self, entities, search):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        return wd.Wikidata(Path(tmp.name), fetch=FakeFetch(entities, search, place_classes=("Q486972",)))
+
+    def test_country_from_a_historical_states_successor(self):
+        kingdom = raw_entity("Q70972", it=("Regno di Francia",), p31=("Q3024240",))
+        kingdom["claims"]["P1366"] = [snak("P1366", "Q142")]
+        entities = {"Q1": raw_entity("Q1", it=("Alvernia",), p17=[snak("P17", "Q70972")]),
+                    "Q70972": kingdom, "Q142": raw_entity("Q142", it=("Francia",), p297="FR", p31=("Q6256",))}
+        c = self.client(entities, {"Alvernia": ["Q1"]}).candidates("Alvernia")[0]
+        self.assertEqual((c["country"], c["countries"]), ("FR", ["FR"]))
+
+    def test_ambiguous_successors_stay_empty(self):
+        empire = raw_entity("Q2277", it=("Impero romano",), p31=("Q3024240",))
+        empire["claims"]["P1366"] = [snak("P1366", "Q142"), snak("P1366", "Q38")]
+        entities = {"Q1": raw_entity("Q1", it=("Pannonia",), p17=[snak("P17", "Q2277")]), "Q2277": empire,
+                    "Q142": raw_entity("Q142", p297="FR", p31=("Q6256",)),
+                    "Q38": raw_entity("Q38", p297="IT", p31=("Q6256",))}
+        c = self.client(entities, {"Pannonia": ["Q1"]}).candidates("Pannonia")[0]
+        self.assertIsNone(c["country"])
+
+    def test_country_from_the_area_it_lies_in(self):
+        bethany = raw_entity("Q1", it=("Betania",))
+        bethany["claims"]["P131"] = [snak("P131", "Q941828")]
+        entities = {"Q1": bethany,
+                    "Q941828": raw_entity("Q941828", it=("Governatorato di Gerusalemme",), p17=[snak("P17", "Q219060")]),
+                    "Q219060": raw_entity("Q219060", p297="PS", p31=("Q6256",))}
+        c = self.client(entities, {"Betania": ["Q1"]}).candidates("Betania")[0]
+        self.assertEqual(c["country"], "PS")
+
+    def test_a_direct_iso_country_is_unchanged(self):
+        entities = {"Q1": raw_entity("Q1", it=("Fictopoli",), p17=[snak("P17", "Q100")]),
+                    "Q100": raw_entity("Q100", p297="FX", p31=("Q6256",))}
+        c = self.client(entities, {"Fictopoli": ["Q1"]}).candidates("Fictopoli")[0]
+        self.assertEqual(c["country"], "FX")
+
+
 class ClientTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
