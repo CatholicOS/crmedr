@@ -582,6 +582,19 @@ def build(order, texts, typology, curated, *, not_a_place, stop_words=STOP_WORDS
         "bare": bare,
     }
 
+ROMAN_NUMERAL = re.compile(r"[IVXLC]+")
+
+
+def it_cut_word(phrase):
+    """The function word an Italian phrase ends in, so cut inside a place name; None otherwise. A
+    Roman numeral in capitals ends a name ("Concilio Ecumenico Vaticano I"), not an article "i"."""
+    words = WORD.findall(base_copy(phrase))
+    if not words or ROMAN_NUMERAL.fullmatch(words[-1]):
+        return None
+    last = words[-1].lower()
+    return last if last in FUNCTION_WORDS_IT else None
+
+
 def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, long_ok, texts_it=None,
              persons=None):
     places = result["places"]
@@ -607,9 +620,8 @@ def validate(result, texts, current_ids, deprecated_ids, typology, curated, *, l
             if "it" in it:
                 assert texts_it is not None, f"{mrid}: it present but no Italian texts given"
                 assert len(it["it"].split()) <= MAX_WORDS_IT, f"{mrid}: it has more than {MAX_WORDS_IT} words"
-                last = WORD.findall(base_copy(it["it"]).lower())[-1:]
-                assert not (last and last[0] in FUNCTION_WORDS_IT), (
-                    f"{mrid}: it ends in {last[0]!r}, cut inside a place name: {it['it']!r}")
+                cut = it_cut_word(it["it"])
+                assert cut is None, f"{mrid}: it ends in {cut!r}, cut inside a place name: {it['it']!r}"
                 if it["source"] == "lead" and mrid in result["bare"]:
                     root = places.get(it["via"], [{}])[0].get("it")
                     assert it["it"] == root, f"{mrid}: it is not the root {it['via']}'s it: {it['it']!r}"
