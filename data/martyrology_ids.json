@@ -88786,8 +88786,8 @@
           "it": "Cadice",
           "source": "curated",
           "person": "Emmanuel Medina Olmos",
-          "wikidata": "Q15682",
-          "label": "Cádiz",
+          "wikidata": "Q869254",
+          "label": "Roman Catholic Diocese of Guadix",
           "country": "ES"
         }
       ],
@@ -98009,8 +98009,8 @@
           "la": "convéntu oppíduli Sancti Ioánnis Rotúndi in Apúlia",
           "it": "convento di San Giovanni Rotondo in Puglia",
           "source": "curated",
-          "wikidata": "Q52652",
-          "label": "Rotonda",
+          "wikidata": "Q3673987",
+          "label": "Sanctuary of Saint Mary of Graces",
           "country": "IT"
         }
       ],
@@ -104790,9 +104790,13 @@
           "la": "inter Baváriam et Bohémiam",
           "it": "foreste tra la Baviera e la Boemia",
           "source": "curated",
-          "wikidata": "Q871238",
-          "label": "Bohemian-Moravian Highlands",
-          "country": "CZ"
+          "wikidata": "Q157290",
+          "label": "Bohemian Forest",
+          "country": null,
+          "countries": [
+            "CZ",
+            "DE"
+          ]
         }
       ],
       "edition_notes": {

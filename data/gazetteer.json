@@ -7532,8 +7532,8 @@
       "status": "auto"
     },
     "Guadicénsis": {
-      "wikidata": "Q15682",
-      "label": "Cádiz",
+      "wikidata": "Q869254",
+      "label": "Roman Catholic Diocese of Guadix",
       "country": "ES",
       "status": "reviewed"
     },
@@ -21819,8 +21819,8 @@
       "status": "jev"
     },
     "convéntu oppíduli Sancti Ioánnis Rotúndi in Apúlia": {
-      "wikidata": "Q52652",
-      "label": "Rotonda",
+      "wikidata": "Q3673987",
+      "label": "Sanctuary of Saint Mary of Graces",
       "country": "IT",
       "status": "reviewed"
     },
@@ -22245,9 +22245,13 @@
       "status": "jev"
     },
     "inter Baváriam et Bohémiam": {
-      "wikidata": "Q871238",
-      "label": "Bohemian-Moravian Highlands",
-      "country": "CZ",
+      "wikidata": "Q157290",
+      "label": "Bohemian Forest",
+      "country": null,
+      "countries": [
+        "CZ",
+        "DE"
+      ],
       "status": "reviewed"
     },
     "laura Crypténsi": {
