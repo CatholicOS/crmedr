@@ -162,6 +162,13 @@ def current_country_qids(claims):
     return list(dict.fromkeys(_value(c)["id"] for c in (preferred or current)))
 
 
+def current_qids(claims, prop):
+    """The items `prop` names now: not a deprecated statement, nor one with an end time (P582)."""
+    return list(dict.fromkeys(_value(c)["id"] for c in claims.get(prop, [])
+                              if c.get("rank") != "deprecated" and "P582" not in c.get("qualifiers", {})
+                              and isinstance(_value(c), dict) and "id" in _value(c)))
+
+
 def _names(raw, lang):
     out = []
     if lang in raw.get("labels", {}):
@@ -188,13 +195,12 @@ def summarize(raw):
         "p9314_names": sorted({t for c in claims.get("P9314", []) if isinstance(_value(c), str)
                                for t in fold(_value(c).split("/", 1)[-1]).split("-") if t}),
         "country_qids": current_country_qids(claims),
-        # The areas it lies in now: not a deprecated one, nor one with an end time (P582).
-        "admin_qids": [_value(c)["id"] for c in claims.get("P131", [])
-                       if c.get("rank") != "deprecated" and "P582" not in c.get("qualifiers", {})
-                       and isinstance(_value(c), dict)],
+        # The areas it lies in now.
+        "admin_qids": current_qids(claims, "P131"),
         # Where a historical place lies today (P3842: Roman Cilicia → Turkey).
-        "present_qids": [_value(c)["id"] for c in claims.get("P3842", [])
-                         if c.get("rank") != "deprecated" and isinstance(_value(c), dict)],
+        "present_qids": current_qids(claims, "P3842"),
+        # Where an event took place (P276: the First Council of Ephesus → Ephesus).
+        "location_qids": current_qids(claims, "P276"),
         "iso_self": p297[0] if p297 else None,
         "coords": [coords["latitude"], coords["longitude"]] if coords else None,
         "types": list(dict.fromkeys(_value(c)["id"] for c in claims.get("P31", [])
@@ -335,7 +341,8 @@ class Wikidata:
             if s["iso_self"]:
                 s["country"] = convention(s["iso_self"])
             elif not any(countries.get(q) for q in s["country_qids"]):
-                present = self._present_countries(s, countries)
+                present = (self._countries_of(s.get("present_qids") or [], countries)
+                           or self._countries_of(s.get("location_qids") or [], countries))
                 iso = None if present else self._fallback_country(s, countries)
                 if present:
                     s["countries"] = present
@@ -345,19 +352,26 @@ class Wikidata:
             s["place_type"] = any(t in places for t in s["types"])
         return summaries
 
-    def _present_countries(self, s, countries):
-        """The ISO countries of where a place with no ISO country lies today (P3842), in order: a
-        country itself, or a present-day area's country. Ancient Rome has no ISO code; Roman Cilicia
-        lies in Turkey, Dalmatia in Croatia and Bosnia. Unlike a successor state, P3842 names
-        where the place is now."""
-        qids = s.get("present_qids") or []
+    def _countries_of(self, qids, countries):
+        """The ISO countries of these items, in order: a country itself, else the current P17 of
+        an area, else where that area lies today (its P3842). For a historical place's P3842
+        (Roman Cilicia lies in Turkey, Dalmatia in Croatia and Bosnia) and an event's location
+        (P276: the First Council of Ephesus took place at Ephesus, TR). Unlike a successor state,
+        both name where the place is now."""
         areas = self._entities([q for q in qids if q not in countries])
+        today = {q: current_qids(raw.get("claims", {}), "P3842") for q, raw in areas.items()}
+        later = self._entities([t for ts in today.values() for t in ts if t not in countries])
         found = []
         for q in qids:
-            codes = [countries[q]] if q in countries else [
-                countries[c] for c in current_country_qids(areas.get(q, {}).get("claims", {})) if c in countries]
-            found += [convention(c) for c in codes]
-        return list(dict.fromkeys(found))
+            if q in countries:
+                found.append(countries[q])
+                continue
+            codes = [countries[c] for c in current_country_qids(areas.get(q, {}).get("claims", {})) if c in countries]
+            for t in ([] if codes else today.get(q, [])):
+                codes += [countries[t]] if t in countries else [
+                    countries[c] for c in current_country_qids(later.get(t, {}).get("claims", {})) if c in countries]
+            found += codes
+        return list(dict.fromkeys(convention(c) for c in found))
 
     def _fallback_country(self, s, countries):
         """The one ISO country of a place Wikidata gives no country (no P17 at all): that of the

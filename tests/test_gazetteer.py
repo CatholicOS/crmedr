@@ -322,6 +322,51 @@ class PresentDayCountryTest(unittest.TestCase):
         c = self.client(entities, {"Fictopoli": ["Q1"]}).candidates("Fictopoli")[0]
         self.assertEqual(c["country"], "FX")
 
+    def test_an_ended_present_day_area_is_not_used(self):
+        province = self.province()
+        province["claims"]["P3842"] = [snak("P3842", "Q43", qualifiers={"P582": [{"datavalue": {"value": {"time": "+1923"}}}]})]
+        entities = {"Q1": province, "Q1747689": raw_entity("Q1747689"),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Cilicia": ["Q1"]}).candidates("Cilicia")[0]
+        self.assertIsNone(c["country"])
+
+
+class EventLocationCountryTest(unittest.TestCase):
+    """An event with no country of its own (a council) takes the ISO countries of its location (P276)."""
+
+    def client(self, entities, search):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        return wd.Wikidata(Path(tmp.name), fetch=FakeFetch(entities, search, place_classes=("Q486972",)))
+
+    def council(self, *locations):
+        c = raw_entity("Q1", it=("Concilio di Efeso",), p31=("Q51645",))
+        c["claims"]["P276"] = [snak("P276", q) for q in locations]
+        return c
+
+    def test_a_council_takes_its_citys_country(self):
+        entities = {"Q1": self.council("Q47611"),
+                    "Q47611": raw_entity("Q47611", it=("Efeso",), p17=[snak("P17", "Q43")]),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertEqual((c["country"], c["countries"]), ("TR", ["TR"]))
+
+    def test_an_ancient_location_gives_its_present_day_country(self):
+        city = raw_entity("Q2", it=("Fictopoli",), p17=[snak("P17", "Q1747689")])
+        city["claims"]["P3842"] = [snak("P3842", "Q43")]
+        entities = {"Q1": self.council("Q2"), "Q2": city, "Q1747689": raw_entity("Q1747689"),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertEqual(c["country"], "TR")
+
+    def test_an_ended_location_is_not_used(self):
+        council = self.council()
+        council["claims"]["P276"] = [snak("P276", "Q47611", qualifiers={"P582": [{"datavalue": {"value": {"time": "+0432"}}}]})]
+        entities = {"Q1": council, "Q47611": raw_entity("Q47611", p17=[snak("P17", "Q43")]),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertIsNone(c["country"])
+
 class ClientTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
