@@ -95,11 +95,18 @@ def published(candidate, evidence):
     return out
 
 
+# Items a name search returns that are never a place, though they have coordinates: {QID: what it is}.
+NOT_PLACES = {"Q1472152": "the airship Italia (its coordinates are where it was lost)"}
+
+
 def plausible(published_candidate, suggested=None):
     """Worth offering for review: a place type, or at least a location. A name
     search also returns films, songs, people, surnames and schools named after
     a city; none of those is ever the answer. The suggestion is always kept —
-    some real places (Roman provinces, historical kingdoms) have neither."""
+    some real places (Roman provinces, historical kingdoms) have neither — unless
+    it is one of NOT_PLACES."""
+    if published_candidate["wikidata"] in NOT_PLACES:
+        return False
     return ("type" in published_candidate["evidence"] or bool(published_candidate.get("coords"))
             or published_candidate["wikidata"] == suggested)
 

@@ -951,6 +951,20 @@ class RefreshCountriesTest(unittest.TestCase):
         for key in ("jev", "suggested", "decision", "edited", "id", "it", "occurrences"):
             self.assertEqual(op[key], before[key])
 
+class NotPlacesTest(unittest.TestCase):
+    def test_a_listed_non_place_is_never_plausible(self):
+        # The airship Italia has coordinates (where it was lost), so the coordinates rule alone kept it.
+        airship = {"wikidata": "Q1472152", "label": "Italia", "coords": [81.0, 28.0], "evidence": {}}
+        self.assertFalse(bg.plausible(airship))
+        self.assertFalse(bg.plausible(airship, suggested="Q1472152"))
+
+    def test_prune_drops_it_from_the_queue(self):
+        op = {"id": "regiónibus Itáliæ", "candidates": [
+            {"wikidata": "Q38", "coords": [42.0, 12.0], "evidence": {"type": "country"}},
+            {"wikidata": "Q1472152", "coords": [81.0, 28.0], "evidence": {}}]}
+        self.assertEqual(bg.prune_queue({"operations": [op]}), 1)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q38"])
+
 class RegionFailsClient(FakeClient):
     def region_countries(self, text):
         raise wd.WikidataError("region boom")
