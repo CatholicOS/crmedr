@@ -116,7 +116,7 @@
 | 9 | 5 | `mr:0609-maximianus` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:0609-columba` |  | GB | dies_natalis |  |  |
 | 9 | 7 | `mr:0609-richardus` |  | IT | dies_natalis |  |  |
-| 9 | 8 | `mr:0609-robertus-salt` | * | GB | dies_natalis |  |  |
+| 9 | 8 | `mr:0609-robertus-salt` | * | GB | dies_natalis |  | 2004 Italian: Translation error: "nel carcere di Newport" where the Latin has "in cárcere Neopórtus" (Newgate Prison, London). |
 | 9 | 9 | `mr:0609-iosephus-anchieta` | * | BR | dies_natalis |  | José de Anchieta, blessed in the 2004 editions, was canonized on 3 April 2014. |
 | 9 | 10 | `mr:0609-iosephus-imbert` | * | FR | dies_natalis |  |  |
 | 9 | 11 | `mr:0609-anna-maria-taigi` | * | IT | dies_natalis |  |  |

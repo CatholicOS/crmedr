@@ -592,6 +592,14 @@ class EditionNotes51Test(unittest.TestCase):
             if not e.get("deprecated"):
                 self.assertEqual(e.get("edition_notes", {}), r.edition_notes(e), mr_id)
 
+    def test_newgate_mistranslated_newport(self):
+        # The London Carthusians starved in Newgate (Neoportus); the CEI Italian has "Newport".
+        root = Path(__file__).resolve().parent.parent
+        entries = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
+        for mr_id in ("mr:0609-robertus-salt", "mr:0920-thomas-johnson"):
+            self.assertIn("Newgate", entries[mr_id]["edition_notes"][r.EDITION_IT], mr_id)
+        self.assertIn("nonus", entries["mr:0920-thomas-johnson"]["edition_notes"][r.EDITION_EN])
+
     def test_markdown_names_the_edition(self):
         md = (Path(__file__).resolve().parent.parent / "registry" / "01-january.md").read_text(encoding="utf-8")
         row = next(line for line in md.splitlines() if "mr:0127-angela-merici" in line)

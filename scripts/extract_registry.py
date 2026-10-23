@@ -721,6 +721,12 @@ EDITION_NOTES = {
             "(murdered by the guards)."
         ),
     },
+    "mr:0609-robertus-salt": {
+        EDITION_IT: (
+            "Translation error: \"nel carcere di Newport\" where the Latin has \"in cárcere "
+            "Neopórtus\" (Newgate Prison, London)."
+        ),
+    },
     "mr:0612-basilides": {
         EDITION_EN: (
             "Translation error: \"Loreto\" where the Latin has \"Lórii\" (Lorium, on the Via "
@@ -1094,6 +1100,10 @@ EDITION_NOTES = {
         ),
     },
     "mr:0920-thomas-johnson": {
+        EDITION_IT: (
+            "Translation error: \"nel carcere di Newport\" where the Latin has \"in cárcere "
+            "Neopórtus\" (Newgate Prison, London)."
+        ),
         EDITION_EN: (
             "Translation error: \"with some of his fellow brothers\" where the Latin has \"nonus ex "
             "número confrátrum\" (the ninth of his confreres to die)."
