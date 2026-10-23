@@ -117,6 +117,7 @@ import io  # noqa: E402
 import json  # noqa: E402
 import tempfile  # noqa: E402
 import urllib.error  # noqa: E402
+from urllib.parse import parse_qs, urlparse  # noqa: E402
 from unittest import mock  # noqa: E402
 
 import wikidata as wd  # noqa: E402
@@ -180,6 +181,18 @@ class SummarizeTest(unittest.TestCase):
         self.assertEqual(s["coords"], [1.5, 2.5])
         self.assertEqual(s["p9314_names"], ["fictopoli"])
         self.assertEqual(s["types"], ["Q486972"])
+
+    def test_label_falls_back_to_the_multilingual_label(self):
+        # Wikidata stores many names once, as "mul" (Cúcuta, Q216847), not per language.
+        raw = raw_entity("Q2")
+        raw["labels"]["mul"] = {"value": "Cúcuta"}
+        self.assertEqual(wd.summarize(raw)["label"], "Cúcuta")
+
+    def test_items_are_asked_for_with_multilingual_labels(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fetch = FakeFetch({"Q1": raw_entity("Q1", it=("Fictopoli",))}, {})
+            wd.Wikidata(Path(tmp), fetch=fetch)._entities(["Q1"])
+        self.assertIn("mul", parse_qs(urlparse(fetch.calls[0]).query)["languages"][0].split("|"))
 
     def test_label_falls_back_to_italian(self):
         self.assertEqual(wd.summarize(raw_entity("Q2", it=("Fictaria",)))["label"], "Fictaria")
