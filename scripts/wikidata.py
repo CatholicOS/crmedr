@@ -51,6 +51,9 @@ SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
 # A companion's kin: sibling, relative, spouse, child, mother, father.
 RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
+# A label's languages, in order: "mul" last, the one name Wikidata now keeps for every language
+# (Cúcuta has no "en" label of its own).
+LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
 GREGORIAN, JULIAN = "Q1985727", "Q1985786"  # the calendar models of a Wikidata date
 # The query service stores a Julian-model date converted to the proleptic Gregorian calendar:
@@ -180,7 +183,7 @@ def _names(raw, lang):
 def summarize(raw):
     claims = raw.get("claims", {})
     labels = raw.get("labels", {})
-    label = next((labels[lang]["value"] for lang in ("en", "it", "la") if lang in labels), raw["id"])
+    label = next((labels[lang]["value"] for lang in LABEL_LANGS if lang in labels), raw["id"])
     descs = raw.get("descriptions", {})
     p297 = [_value(c) for c in claims.get("P297", []) if c.get("rank") != "deprecated"]
     coords = next((_value(c) for c in claims.get("P625", []) if isinstance(_value(c), dict)), None)
@@ -229,7 +232,7 @@ def summarize_person(raw):
                                           if isinstance(_value(c), dict) and "id" in _value(c)))
     return {
         "wikidata": raw["id"],
-        "label": next((labels[lang]["value"] for lang in ("en", "it", "la") if lang in labels), raw["id"]),
+        "label": next((labels[lang]["value"] for lang in LABEL_LANGS if lang in labels), raw["id"]),
         "description": next((descs[lang]["value"] for lang in ("en", "it") if lang in descs), ""),
         "names": sorted({n for lang in ("la", "it", "en") for n in _names(raw, lang)}),
         "human": "Q5" in ids("P31"),
@@ -304,7 +307,7 @@ class Wikidata:
         out = {}
         for i in range(0, len(qids), 50):
             data = self._api(action="wbgetentities", ids="|".join(qids[i:i + 50]),
-                             props="labels|aliases|descriptions|claims", languages="it|la|en")
+                             props="labels|aliases|descriptions|claims", languages="it|la|en|mul")
             for qid, raw in data.get("entities", {}).items():
                 if "missing" not in raw:
                     out[qid] = raw
