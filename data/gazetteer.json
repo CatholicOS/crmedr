@@ -16839,11 +16839,18 @@
       "country": "TR",
       "status": "reviewed"
     },
-    "Phænóne in Palæstína": {
-      "wikidata": "Q2907858",
-      "label": "Punon",
+    "Phænénsia": {
+      "wikidata": "Q28408071",
+      "label": "Khirbat Faynan",
       "country": "JO",
       "status": "reviewed"
+    },
+    "Phænóne in Palæstína": {
+      "wikidata": "Q28408071",
+      "label": "Khirbat Faynan",
+      "country": "JO",
+      "status": "reviewed",
+      "note": "The mines of Phaeno, at Feinan: the same item as \"Phænénsia\" (mr:1105-domninus), the curator's choice 2026-10-23 (the biblical station Punon is Q2907858)."
     },
     "Pibráci in pago Tolosáno Gálliæ": {
       "wikidata": "Q733833",

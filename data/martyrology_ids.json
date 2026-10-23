@@ -42013,8 +42013,8 @@
           "la": "Phænóne in Palæstína",
           "it": "Nelle miniere di Mismiya in Palestina",
           "source": "lead",
-          "wikidata": "Q2907858",
-          "label": "Punon",
+          "wikidata": "Q28408071",
+          "label": "Khirbat Faynan",
           "country": "JO"
         },
         {
@@ -114580,7 +114580,10 @@
           "role": "exile",
           "la": "Phænénsia",
           "it": "Mismiyā",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q28408071",
+          "label": "Khirbat Faynan",
+          "country": "JO"
         }
       ],
       "edition_notes": {
