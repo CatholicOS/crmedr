@@ -285,7 +285,7 @@
 | 20 | 3 | `mr:0920-eustachius` |  | IT | commemoratio |  |  |
 | 20 | 4 | `mr:0920-hypatius-et-asianus` |  | TR | dies_natalis | same as `mr:0829-hypatius-et-andreas` | 2004 English: Translation error: "Asias" where the Latin has "Asiáni" (Asianus). |
 | 20 | 5 | `mr:0920-adelpretus` | * | IT | dies_natalis |  |  |
-| 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  | 2004 English: Translation error: "with some of his fellow brothers" where the Latin has "nonus ex número confrátrum" (the ninth of his confreres to die). |
+| 20 | 6 | `mr:0920-thomas-johnson` | * | GB | dies_natalis |  | 2004 Italian: Translation error: "nel carcere di Newport" where the Latin has "in cárcere Neopórtus" (Newgate Prison, London). 2004 English: Translation error: "with some of his fellow brothers" where the Latin has "nonus ex número confrátrum" (the ninth of his confreres to die). |
 | 20 | 7 | `mr:0920-franciscus-de-posadas` | * | ES | dies_natalis |  |  |
 | 20 | 8 | `mr:0920-ioannes-carolus-cornay` |  | VN | dies_natalis |  |  |
 | 20 | 9 | `mr:0920-laurentius-han-i-hyong-et-socii` |  | KR | dies_natalis |  |  |

@@ -55472,6 +55472,9 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel carcere di Newport\" where the Latin has \"in cárcere Neopórtus\" (Newgate Prison, London)."
       }
     },
     {
@@ -97063,6 +97066,7 @@
         "source": "estimate"
       },
       "edition_notes": {
+        "martyrologium_romanum_2004_it_IT": "Translation error: \"nel carcere di Newport\" where the Latin has \"in cárcere Neopórtus\" (Newgate Prison, London).",
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"with some of his fellow brothers\" where the Latin has \"nonus ex número confrátrum\" (the ninth of his confreres to die)."
       }
     },
