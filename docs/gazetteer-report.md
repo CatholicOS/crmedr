@@ -19,6 +19,7 @@ In `data/gazetteer_review.json`, most frequent first.
 
 | Place | Occurrences | Why not auto |
 | --- | --- | --- |
+| Ararem | 1 | latin: no Latin label, alias or P9314 matches |
 | Lindíssi | 1 | latin: no Latin label, alias or P9314 matches; country: the Italian names no region or country (in the CEI edition: Italy); the item is in US |
 | Livóniæ | 1 | no item has the Italian name of every variant |
 | Maronéæ prope Antiochíam in Sýria | 1 | no item has the Italian name of every variant |
@@ -44,7 +45,6 @@ In `data/gazetteer_review.json`, most frequent first.
 | Pérside | 1 | latin: no Latin label, alias or P9314 matches |
 | Pérsidem | 1 | latin: no Latin label, alias or P9314 matches |
 | Pérsidis | 1 | latin: no Latin label, alias or P9314 matches |
-| Rhódanum et Ararem flúmina | 1 | no candidates found |
 | Rǽtiæ | 1 | country: the item has no single current country (Q1747689) |
 | Salem | 1 | country: the Italian names no region or country (in the CEI edition: Italy); the item is in DE |
 | Seminário Sancti Firmíni | 1 | no item has the Italian name of every variant |

@@ -10400,8 +10400,13 @@
   "mr:0911-patiens": [
     {
       "role": "ministry",
-      "la": "Rhódanum et Ararem flúmina",
-      "it": "Rodano e la Saône"
+      "la": "Rhódanum",
+      "it": "Rodano"
+    },
+    {
+      "role": "ministry",
+      "la": "Ararem",
+      "it": "Saône"
     }
   ],
   "mr:0911-sacerdos": [

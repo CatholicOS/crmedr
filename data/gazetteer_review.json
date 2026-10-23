@@ -9,6 +9,125 @@
   "operations": [
     {
       "op": "resolve_place",
+      "id": "Ararem",
+      "la": "Ararem",
+      "it": [
+        "Saône"
+      ],
+      "occurrences": [
+        "mr:0911-patiens"
+      ],
+      "claims": [],
+      "failed": [
+        "latin: no Latin label, alias or P9314 matches"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q3950167",
+          "label": "Saone",
+          "description": "frazione del comune italiano di Tione di Trento",
+          "country": "IT",
+          "countries": [
+            "IT"
+          ],
+          "la": [],
+          "p9314": false,
+          "coords": [
+            46.04288,
+            10.76669
+          ],
+          "types": [
+            "Q1134686"
+          ],
+          "evidence": [
+            "it",
+            "country",
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q948345",
+          "label": "Saône",
+          "description": "comune francese",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [
+            "Saône"
+          ],
+          "p9314": false,
+          "coords": [
+            47.224722222222,
+            6.1177777777778
+          ],
+          "types": [
+            "Q484170"
+          ],
+          "evidence": [
+            "it",
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q187834",
+          "label": "Saône",
+          "description": "fiume francese",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [
+            "Arar",
+            "Sauconna"
+          ],
+          "p9314": false,
+          "coords": [
+            45.72833333,
+            4.81861111
+          ],
+          "types": [
+            "Q4022"
+          ],
+          "evidence": [
+            "type"
+          ]
+        },
+        {
+          "wikidata": "Q12736",
+          "label": "Saône-et-Loire",
+          "description": "dipartimento francese",
+          "country": "FR",
+          "countries": [
+            "FR"
+          ],
+          "la": [
+            "Arar et Liger"
+          ],
+          "p9314": false,
+          "coords": [
+            46.666666666667,
+            4.7
+          ],
+          "types": [
+            "Q6465"
+          ],
+          "evidence": [
+            "type"
+          ]
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "suggested": {
+        "wikidata": "Q187834",
+        "country": "FR"
+      },
+      "reasoning": "The river Saône (Arar), along which, with the Rhône, Patiens sent grain to the famished towns. Split from \"Rhódanum et Ararem flúmina\" at the curator's request (2026-10-24); \"Rhódanum\" is the Rhône, already decided (Q602).",
+      "confidence": "high"
+    },
+    {
+      "op": "resolve_place",
       "id": "Lindíssi",
       "la": "Lindíssi",
       "it": [
@@ -2899,33 +3018,6 @@
         "kind": "place",
         "probability": 0.59,
         "confidence": 0.54,
-        "model": "jev-1.14.0"
-      }
-    },
-    {
-      "op": "resolve_place",
-      "id": "Rhódanum et Ararem flúmina",
-      "la": "Rhódanum et Ararem flúmina",
-      "it": [
-        "Rodano e la Saône"
-      ],
-      "occurrences": [
-        "mr:0911-patiens"
-      ],
-      "claims": [],
-      "failed": [
-        "no candidates found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "reasoning": "Research: no item. Two rivers, the Rhone (Q602) and the Saone (Q187834); no single item covers both, so cannot be one place. Split into two cards if wanted.",
-      "jev": {
-        "decision": "reject",
-        "reason": "Jev: not a place",
-        "kind": "not_place",
-        "probability": 0.51,
-        "confidence": 0.35,
         "model": "jev-1.14.0"
       }
     },

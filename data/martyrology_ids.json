@@ -93560,8 +93560,21 @@
         },
         {
           "role": "ministry",
-          "la": "Rhódanum et Ararem flúmina",
-          "it": "Rodano e la Saône",
+          "la": "Rhódanum",
+          "it": "Rodano",
+          "source": "curated",
+          "wikidata": "Q602",
+          "label": "Rhône",
+          "country": null,
+          "countries": [
+            "CH",
+            "FR"
+          ]
+        },
+        {
+          "role": "ministry",
+          "la": "Ararem",
+          "it": "Saône",
           "source": "curated"
         }
       ],

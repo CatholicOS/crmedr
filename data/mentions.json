@@ -108994,8 +108994,21 @@
           "kind": "place",
           "where": "text",
           "start": 73,
-          "end": 99,
-          "check": "b2bd422c",
+          "end": 81,
+          "check": "67ecc484",
+          "qid": "Q602",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 85,
+          "end": 91,
+          "check": "ef661386",
           "qid": null,
           "roles": [
             {
@@ -264870,8 +264883,21 @@
           "kind": "place",
           "where": "text",
           "start": 130,
+          "end": 136,
+          "check": "71a2dcf7",
+          "qid": "Q602",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 142,
           "end": 147,
-          "check": "3515a618",
+          "check": "6e70a97b",
           "qid": null,
           "roles": [
             {

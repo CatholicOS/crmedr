@@ -34458,8 +34458,14 @@
       },
       {
         "role": "ministry",
-        "la": "Rhódanum et Ararem flúmina",
-        "it": "Rodano e la Saône",
+        "la": "Rhódanum",
+        "it": "Rodano",
+        "source": "curated"
+      },
+      {
+        "role": "ministry",
+        "la": "Ararem",
+        "it": "Saône",
         "source": "curated"
       }
     ],
