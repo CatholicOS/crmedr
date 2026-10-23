@@ -447,6 +447,29 @@ class ClientTest(unittest.TestCase):
         self.assertEqual(self.client.candidate("Q1")["country"], "FX")
 
 
+class RefreshClientTest(unittest.TestCase):
+    """refresh=True re-fetches what the cache holds, once per run, and updates the cache."""
+
+    def test_refresh_bypasses_the_cache_once_per_run(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old = FakeFetch({"Q1": raw_entity("Q1", it=("Vecchia",))}, {})
+            wd.Wikidata(Path(tmp), fetch=old)._entities(["Q1"])
+            new = FakeFetch({"Q1": raw_entity("Q1", it=("Nuova",))}, {})
+            client = wd.Wikidata(Path(tmp), fetch=new, refresh=True)
+            self.assertEqual(client._entities(["Q1"])["Q1"]["labels"]["it"]["value"], "Nuova")
+            client._entities(["Q1"])
+            self.assertEqual(len(new.calls), 1)
+            cached = wd.Wikidata(Path(tmp), fetch=FakeFetch({}, {}))._entities(["Q1"])
+            self.assertEqual(cached["Q1"]["labels"]["it"]["value"], "Nuova")
+
+    def test_items_are_enriched_summaries_by_qid(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            entities = {"Q1": raw_entity("Q1", it=("Fictopoli",), p17=[snak("P17", "Q100")]),
+                        "Q100": raw_entity("Q100", p297="FX", p31=("Q6256",))}
+            items = wd.Wikidata(Path(tmp), fetch=FakeFetch(entities, {})).items(["Q1", "Q404"])
+        self.assertEqual(list(items), ["Q1"])
+        self.assertEqual(items["Q1"]["country"], "FX")
+
 class HttpGetTest(unittest.TestCase):
     def test_retries_429_then_succeeds(self):
         ok = mock.MagicMock()
@@ -902,6 +925,45 @@ class SearchMoreTest(unittest.TestCase):
         self.assertIn("jev", op)
         self.assertEqual(bg.search_more.not_processed[0][0], "Béthlehem")
 
+
+class RefreshCountriesTest(unittest.TestCase):
+    class Items:
+        def __init__(self, items):
+            self._items = items
+
+        def items(self, qids):
+            return {q: self._items[q] for q in qids if q in self._items}
+
+    def test_updates_candidate_countries_and_keeps_the_rest(self):
+        op = {"op": "resolve_place", "id": "Cilícia", "la": "Cilícia", "it": ["Cilicia"], "occurrences": ["mr:x"],
+              "candidates": [{"wikidata": "Q4819648", "label": "Cilicia", "country": None, "countries": ["Q1747689"]},
+                             {"wikidata": "Q620864", "label": "Cilicia", "country": "TR", "countries": ["TR"]},
+                             {"wikidata": "Q404", "label": "gone", "country": None, "countries": []}],
+              "jev": {"decision": "edit", "wikidata": "Q4819648", "probability": 0.71},
+              "suggested": {"wikidata": "Q620864", "country": "TR"}, "decision": None, "edited": None}
+        client = self.Items({"Q4819648": {"country": "TR", "countries": ["TR"]},
+                             "Q620864": {"country": "TR", "countries": ["TR"]}})
+        before = json.loads(json.dumps(op))
+        n = bg.refresh_countries({"operations": [op]}, client)
+        self.assertEqual(n, 1)
+        self.assertEqual((op["candidates"][0]["country"], op["candidates"][0]["countries"]), ("TR", ["TR"]))
+        self.assertEqual(op["candidates"][2], before["candidates"][2])
+        for key in ("jev", "suggested", "decision", "edited", "id", "it", "occurrences"):
+            self.assertEqual(op[key], before[key])
+
+class NotPlacesTest(unittest.TestCase):
+    def test_a_listed_non_place_is_never_plausible(self):
+        # The airship Italia has coordinates (where it was lost), so the coordinates rule alone kept it.
+        airship = {"wikidata": "Q1472152", "label": "Italia", "coords": [81.0, 28.0], "evidence": {}}
+        self.assertFalse(bg.plausible(airship))
+        self.assertFalse(bg.plausible(airship, suggested="Q1472152"))
+
+    def test_prune_drops_it_from_the_queue(self):
+        op = {"id": "regiónibus Itáliæ", "candidates": [
+            {"wikidata": "Q38", "coords": [42.0, 12.0], "evidence": {"type": "country"}},
+            {"wikidata": "Q1472152", "coords": [81.0, 28.0], "evidence": {}}]}
+        self.assertEqual(bg.prune_queue({"operations": [op]}), 1)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q38"])
 
 class RegionFailsClient(FakeClient):
     def region_countries(self, text):
