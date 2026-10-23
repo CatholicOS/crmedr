@@ -115,6 +115,10 @@
     "mr:0322-lea": "IT",
     "mr:0323-turibius-de-mogrovejo": "PE",
     "mr:0323-victorianus-et-socii": "TN",
+    "mr:0324-secundulus": {
+      "country": "DZ",
+      "note": "opens at Mauretania (MA and DZ); the Italian edition says Algeria"
+    },
     "mr:0325-annuntiatio-domini": null,
     "mr:0325-bonus-latro": "PS",
     "mr:0326-eutychius": "EG",
@@ -184,6 +188,10 @@
     "mr:0520-lydia-thyatirensis": "TR",
     "mr:0521-christophorus-magallanes-et-socii": "MX",
     "mr:0521-martyres-alexandriae": "EG",
+    "mr:0521-timotheus": {
+      "country": "DZ",
+      "note": "opens at Mauretania (MA and DZ); the Italian edition says Algeria"
+    },
     "mr:0522-rita": "IT",
     "mr:0523-martyres-cappadociae": "TR",
     "mr:0523-martyres-mesopotamiae": "IQ",

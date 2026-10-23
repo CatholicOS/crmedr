@@ -8651,7 +8651,11 @@
     "In Mauretánia": {
       "wikidata": "Q309272",
       "label": "Mauretania",
-      "country": "DZ",
+      "country": null,
+      "countries": [
+        "MA",
+        "DZ"
+      ],
       "status": "reviewed"
     },
     "In Monte Casíno": {
