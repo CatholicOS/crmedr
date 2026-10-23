@@ -8761,7 +8761,16 @@
     "In Pannónia": {
       "wikidata": "Q170062",
       "label": "Pannonia",
-      "country": "HU",
+      "country": null,
+      "countries": [
+        "HU",
+        "SK",
+        "AT",
+        "HR",
+        "RS",
+        "SI",
+        "BA"
+      ],
       "status": "reviewed"
     },
     "In Parvo Castéllo Gardæ in Itália": {
@@ -16708,6 +16717,15 @@
       "wikidata": "Q170062",
       "label": "Pannonia",
       "country": null,
+      "countries": [
+        "HU",
+        "SK",
+        "AT",
+        "HR",
+        "RS",
+        "SI",
+        "BA"
+      ],
       "status": "reviewed"
     },
     "Panórmi in Sicília": {
