@@ -494,8 +494,18 @@
     },
     {
       "role": "ministry",
-      "la": "Tartarórum, Indórum Sinensiúmque regiónes",
-      "it": "regioni dei Tartari, degli Indi e dei Cinesi"
+      "la": "Tartarórum",
+      "it": "Tartari"
+    },
+    {
+      "role": "ministry",
+      "la": "Indórum",
+      "it": "Indi"
+    },
+    {
+      "role": "ministry",
+      "la": "Sinensiúm",
+      "it": "Cinesi"
     }
   ],
   "mr:0114-potitus": [

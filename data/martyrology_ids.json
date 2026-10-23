@@ -2406,7 +2406,16 @@
           "role": "ministry",
           "la": "Rǽtiæ",
           "it": "Rezia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q156789",
+          "label": "Raetia",
+          "country": null,
+          "countries": [
+            "CH",
+            "DE",
+            "AT",
+            "IT"
+          ]
         }
       ]
     },
@@ -5154,8 +5163,20 @@
         },
         {
           "role": "ministry",
-          "la": "Tartarórum, Indórum Sinensiúmque regiónes",
-          "it": "regioni dei Tartari, degli Indi e dei Cinesi",
+          "la": "Tartarórum",
+          "it": "Tartari",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Indórum",
+          "it": "Indi",
+          "source": "curated"
+        },
+        {
+          "role": "ministry",
+          "la": "Sinensiúm",
+          "it": "Cinesi",
           "source": "curated"
         }
       ],
@@ -6079,7 +6100,10 @@
           "role": "religious_life",
           "la": "Thebáidem in Ægýpto",
           "it": "Tebaide in Egitto",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q768515",
+          "label": "Thebaid",
+          "country": "EG"
         }
       ],
       "date": {
@@ -15405,7 +15429,10 @@
           "role": "death",
           "la": "Numídia",
           "it": "Numidia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q12901244",
+          "label": "Numidia",
+          "country": "DZ"
         }
       ],
       "date": {
@@ -16061,7 +16088,10 @@
           "role": "ministry",
           "la": "Suebórum",
           "it": "Svevi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q165192",
+          "label": "Swedes",
+          "country": "SE"
         }
       ],
       "edition_notes": {
@@ -16327,7 +16357,19 @@
           "la": "Pannóniam",
           "it": "Pannonia",
           "source": "curated",
-          "person": "Methodius"
+          "person": "Methodius",
+          "wikidata": "Q170062",
+          "label": "Pannonia",
+          "country": null,
+          "countries": [
+            "HU",
+            "SK",
+            "AT",
+            "HR",
+            "RS",
+            "SI",
+            "BA"
+          ]
         },
         {
           "role": "ministry",
@@ -31477,7 +31519,10 @@
           "role": "ministry",
           "la": "Occidéntis",
           "it": "Occidente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q160381",
+          "label": "Western world",
+          "country": null
         }
       ],
       "date": {
@@ -33600,7 +33645,10 @@
           "role": "birth",
           "la": "Sýriæ",
           "it": "siriana",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q13415123",
+          "label": "Syria",
+          "country": "SY"
         },
         {
           "role": "foundation",
@@ -35607,7 +35655,10 @@
           "role": "death",
           "la": "Pérsidis",
           "it": "Persia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3746183",
+          "label": "Persis",
+          "country": "IR"
         }
       ],
       "date": {
@@ -37600,7 +37651,10 @@
           "role": "death",
           "la": "Pérside",
           "it": "Persia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3746183",
+          "label": "Persis",
+          "country": "IR"
         }
       ],
       "date": {
@@ -59848,7 +59902,15 @@
           "role": "exile",
           "la": "Thráciam",
           "it": "Tracia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q635058",
+          "label": "Thracia",
+          "country": null,
+          "countries": [
+            "BG",
+            "GR",
+            "TR"
+          ]
         },
         {
           "role": "ministry",
@@ -64840,7 +64902,10 @@
           "role": "ministry",
           "la": "Oriéntis",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "date": {
@@ -65667,7 +65732,10 @@
           "role": "death",
           "la": "Sinárum",
           "it": "Cina",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q29520",
+          "label": "China",
+          "country": "CN"
         }
       ],
       "date": {
@@ -66879,7 +66947,14 @@
           "role": "birth",
           "la": "Mauretánia",
           "it": "Mauritania",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q309272",
+          "label": "Mauretania",
+          "country": null,
+          "countries": [
+            "MA",
+            "DZ"
+          ]
         },
         {
           "role": "burial",
@@ -74323,7 +74398,10 @@
           "role": "death",
           "la": "Thebáide Ægýpti",
           "it": "Tebaide in Egitto",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q768515",
+          "label": "Thebaid",
+          "country": "EG"
         }
       ],
       "date": {
@@ -76550,7 +76628,10 @@
           "role": "exile",
           "la": "Thebáidem",
           "it": "Tebaide",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q768515",
+          "label": "Thebaid",
+          "country": "EG"
         },
         {
           "role": "ministry",
@@ -77008,7 +77089,10 @@
           "role": "foundation",
           "la": "basílicam sancti Symphoriáni mártyris",
           "it": "basilica di san Sinforiano martire",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q14627585",
+          "label": "Abbey of St. Symphorian, Autun",
+          "country": "FR"
         },
         {
           "role": "mention",
@@ -78040,7 +78124,10 @@
           "role": "mention",
           "la": "Occidénte",
           "it": "Occidente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q160381",
+          "label": "Western world",
+          "country": null
         },
         {
           "role": "mention",
@@ -95455,7 +95542,10 @@
           "role": "birth",
           "la": "Oriéntis pártibus",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ],
       "date": {
@@ -103305,7 +103395,10 @@
           "role": "death",
           "la": "Pérsidem",
           "it": "Persia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3746183",
+          "label": "Persis",
+          "country": "IR"
         }
       ],
       "date": {
@@ -121922,7 +122015,10 @@
           "role": "death",
           "la": "Tunquinénsi, Annamiénsi et Cocinchinénsi Asiæ regiónibus",
           "it": "varie regioni del Viet Nam",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q881",
+          "label": "Vietnam",
+          "country": "VN"
         }
       ],
       "date": {
@@ -132911,7 +133007,10 @@
           "role": "mention",
           "la": "Nicǽna Sýnodus",
           "it": "Concilio di Nicea",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q133331",
+          "label": "First Council of Nicaea",
+          "country": "TR"
         }
       ],
       "date": {

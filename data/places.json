@@ -1898,8 +1898,20 @@
       },
       {
         "role": "ministry",
-        "la": "Tartarórum, Indórum Sinensiúmque regiónes",
-        "it": "regioni dei Tartari, degli Indi e dei Cinesi",
+        "la": "Tartarórum",
+        "it": "Tartari",
+        "source": "curated"
+      },
+      {
+        "role": "ministry",
+        "la": "Indórum",
+        "it": "Indi",
+        "source": "curated"
+      },
+      {
+        "role": "ministry",
+        "la": "Sinensiúm",
+        "it": "Cinesi",
         "source": "curated"
       }
     ],
