@@ -279,6 +279,94 @@ class CountryFallbackTest(unittest.TestCase):
         self.assertEqual(c["country"], "FX")
 
 
+class PresentDayCountryTest(unittest.TestCase):
+    """A historical place whose P17 has no ISO code (Ancient Rome) takes the ISO countries of where it
+    lies today (P3842, "located in present-day administrative territorial entity")."""
+
+    def client(self, entities, search):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        return wd.Wikidata(Path(tmp.name), fetch=FakeFetch(entities, search, place_classes=("Q486972",)))
+
+    def province(self, *present):
+        p = raw_entity("Q1", it=("Cilicia",), p17=[snak("P17", "Q1747689")])
+        p["claims"]["P3842"] = [snak("P3842", q) for q in present]
+        return p
+
+    def test_a_province_in_one_country_today(self):
+        entities = {"Q1": self.province("Q43"), "Q1747689": raw_entity("Q1747689", it=("Antica Roma",)),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Cilicia": ["Q1"]}).candidates("Cilicia")[0]
+        self.assertEqual((c["country"], c["countries"]), ("TR", ["TR"]))
+
+    def test_a_province_across_several_countries_lists_them(self):
+        entities = {"Q1": self.province("Q224", "Q225"), "Q1747689": raw_entity("Q1747689"),
+                    "Q224": raw_entity("Q224", p297="HR", p31=("Q6256",)),
+                    "Q225": raw_entity("Q225", p297="BA", p31=("Q6256",))}
+        c = self.client(entities, {"Cilicia": ["Q1"]}).candidates("Cilicia")[0]
+        self.assertIsNone(c["country"])
+        self.assertEqual(c["countries"], ["HR", "BA"])
+
+    def test_a_present_day_region_gives_its_country(self):
+        entities = {"Q1": self.province("Q5"), "Q1747689": raw_entity("Q1747689"),
+                    "Q5": raw_entity("Q5", it=("Adana",), p17=[snak("P17", "Q43")]),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Cilicia": ["Q1"]}).candidates("Cilicia")[0]
+        self.assertEqual(c["country"], "TR")
+
+    def test_an_iso_p17_wins_over_p3842(self):
+        town = raw_entity("Q1", it=("Fictopoli",), p17=[snak("P17", "Q100")])
+        town["claims"]["P3842"] = [snak("P3842", "Q43")]
+        entities = {"Q1": town, "Q100": raw_entity("Q100", p297="FX", p31=("Q6256",)),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Fictopoli": ["Q1"]}).candidates("Fictopoli")[0]
+        self.assertEqual(c["country"], "FX")
+
+    def test_an_ended_present_day_area_is_not_used(self):
+        province = self.province()
+        province["claims"]["P3842"] = [snak("P3842", "Q43", qualifiers={"P582": [{"datavalue": {"value": {"time": "+1923"}}}]})]
+        entities = {"Q1": province, "Q1747689": raw_entity("Q1747689"),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Cilicia": ["Q1"]}).candidates("Cilicia")[0]
+        self.assertIsNone(c["country"])
+
+
+class EventLocationCountryTest(unittest.TestCase):
+    """An event with no country of its own (a council) takes the ISO countries of its location (P276)."""
+
+    def client(self, entities, search):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        return wd.Wikidata(Path(tmp.name), fetch=FakeFetch(entities, search, place_classes=("Q486972",)))
+
+    def council(self, *locations):
+        c = raw_entity("Q1", it=("Concilio di Efeso",), p31=("Q51645",))
+        c["claims"]["P276"] = [snak("P276", q) for q in locations]
+        return c
+
+    def test_a_council_takes_its_citys_country(self):
+        entities = {"Q1": self.council("Q47611"),
+                    "Q47611": raw_entity("Q47611", it=("Efeso",), p17=[snak("P17", "Q43")]),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertEqual((c["country"], c["countries"]), ("TR", ["TR"]))
+
+    def test_an_ancient_location_gives_its_present_day_country(self):
+        city = raw_entity("Q2", it=("Fictopoli",), p17=[snak("P17", "Q1747689")])
+        city["claims"]["P3842"] = [snak("P3842", "Q43")]
+        entities = {"Q1": self.council("Q2"), "Q2": city, "Q1747689": raw_entity("Q1747689"),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertEqual(c["country"], "TR")
+
+    def test_an_ended_location_is_not_used(self):
+        council = self.council()
+        council["claims"]["P276"] = [snak("P276", "Q47611", qualifiers={"P582": [{"datavalue": {"value": {"time": "+0432"}}}]})]
+        entities = {"Q1": council, "Q47611": raw_entity("Q47611", p17=[snak("P17", "Q43")]),
+                    "Q43": raw_entity("Q43", p297="TR", p31=("Q6256",))}
+        c = self.client(entities, {"Efeso": ["Q1"]}).candidates("Efeso")[0]
+        self.assertIsNone(c["country"])
+
 class ClientTest(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
