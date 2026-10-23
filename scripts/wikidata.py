@@ -269,9 +269,13 @@ def life_date(claims, prop):
 
 
 class Wikidata:
-    def __init__(self, cache_dir, fetch=http_get):
+    def __init__(self, cache_dir, fetch=http_get, refresh=False):
+        """refresh=True fetches again what the cache already holds (once per URL in this run) and
+        updates the cache: for re-reading items that changed on Wikidata."""
         self.cache_dir = cache_dir
         self.fetch = fetch
+        self.refresh = refresh
+        self._fetched = set()
         self.cache_dir.mkdir(parents=True, exist_ok=True)
         self._iso = None
         self._types_path = cache_dir / "place_types.json"
@@ -280,9 +284,10 @@ class Wikidata:
 
     def _get(self, url):
         path = self.cache_dir / (hashlib.sha1(url.encode()).hexdigest() + ".json")
-        if path.exists():
+        if path.exists() and (not self.refresh or url in self._fetched):
             return json.loads(path.read_text(encoding="utf-8"))
         data = self.fetch(url)
+        self._fetched.add(url)
         _write_atomic(path, json.dumps(data, ensure_ascii=False))
         return data
 
@@ -389,6 +394,11 @@ class Wikidata:
         qids = self._search(text, language=language)
         raws = self._entities(qids)
         return self._enrich([summarize(raws[q]) for q in qids if q in raws])
+
+    def items(self, qids):
+        """Enriched summaries of these items, by QID, fetched 50 at a time; a missing one is left out."""
+        raws = self._entities(list(dict.fromkeys(qids)))
+        return {s["wikidata"]: s for s in self._enrich([summarize(raws[q]) for q in dict.fromkeys(qids) if q in raws])}
 
     def candidate(self, qid):
         raw = self._entities([qid]).get(qid)

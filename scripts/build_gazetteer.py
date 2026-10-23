@@ -24,6 +24,8 @@ Usage:
   python3 build_gazetteer.py decide-jev --threshold X [repo_root]   Jev's picks at >= X, as `jev`
   python3 build_gazetteer.py search-more [repo_root]          (network) more candidates for places without one
   python3 build_gazetteer.py prune [repo_root]   drop non-place candidates from the queue
+  python3 build_gazetteer.py refresh-countries [repo_root]   (network) re-read the queued candidates'
+                                         countries from Wikidata, past the cache; nothing else changes
   python3 build_gazetteer.py split [--force] [repo_root]      (network) one card per eulogy for each phrase
                                          in data/gazetteer_scoped.json (a decided one only with --force)
 
@@ -448,6 +450,23 @@ def search_more(review, index, client):
     return changed
 
 
+def refresh_countries(review, client):
+    """Re-read the country and countries of every queued card's candidates (client.items: enriched
+    summaries by QID), as Wikidata and the country rules give them now. Nothing else on a card changes:
+    not Jev's answer, the suggestion, the decision. Returns the number of candidates that changed; a
+    candidate Wikidata no longer has is left as it was."""
+    qids = [c["wikidata"] for op in review["operations"] for c in op.get("candidates", [])]
+    fresh = client.items(qids)
+    changed = 0
+    for op in review["operations"]:
+        for c in op.get("candidates", []):
+            f = fresh.get(c["wikidata"])
+            if f and (c.get("country"), c.get("countries")) != (f["country"], f["countries"]):
+                c["country"], c["countries"] = f["country"], f["countries"]
+                changed += 1
+    return changed
+
+
 def _cell(s):
     return str(s).replace("|", "\\|")
 
@@ -744,7 +763,7 @@ def verify_suggestions(review, index, client):
 
 def main(argv):
     if not argv or argv[0] not in {"propose", "verify-suggestions", "apply", "check", "prune", "search-more", "split",
-                                   "decide-jev"}:
+                                   "decide-jev", "refresh-countries"}:
         sys.exit(__doc__)
     cmd, rest = argv[0], argv[1:]
     threshold = None
@@ -766,7 +785,12 @@ def main(argv):
         exported, rest = Path(rest[0]), rest[1:]
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
     gazetteer, review, index = load_state(repo_root)
-    client = Wikidata(repo_root / ".cache" / "wikidata")
+    client = Wikidata(repo_root / ".cache" / "wikidata", refresh=cmd == "refresh-countries")
+    if cmd == "refresh-countries":
+        changed = refresh_countries(review, client)
+        write_state(repo_root, gazetteer, review, index)
+        print(f"{changed} candidate countries refreshed; {len(review['operations'])} queued")
+        return 0
     if cmd == "prune":
         dropped = prune_queue(review)
         write_state(repo_root, gazetteer, review, index)
