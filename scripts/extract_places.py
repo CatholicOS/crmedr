@@ -57,6 +57,9 @@ STOP_WORDS = {
 # after the first comma is a lowercase stop word: then the opening is a place
 # named after a saint ("Sancti Trudonis Fani in Brabantia, transitus sancti N.").
 HONORIFICS_LA = {w for w in STOP_WORDS if w.startswith(("sanct", "beat")) and not w.startswith("sanctissim")}
+# A lowercase honorific right after one of these words names the place, not the
+# subject ("Romæ in cœmetério sancti Lauréntii via Tiburtína, sancti N.").
+NAMED_AFTER_A_SAINT = {"cœmeterio"}
 WORD = re.compile(r"[A-Za-zÀ-ÖØ-öø-ÿæœÆŒ]+")
 TRIM = " ,;: "
 # A comma followed by a relative pronoun, a reign ("sub N. imperatore") or a
@@ -109,11 +112,13 @@ def opening_phrase(text, stop_words=STOP_WORDS):
     place = _saint_named_place(text, copy, stop_words)
     if place:
         return place
+    prev = None
     for i, m in enumerate(WORD.finditer(copy)):
         w = m.group(0)
-        if w.lower() in stop_words and (w[0].islower() or i == 0):
+        if w.lower() in stop_words and (w[0].islower() or i == 0) and prev not in NAMED_AFTER_A_SAINT:
             phrase = text[:m.start()].strip(TRIM)
             break
+        prev = w.lower()
     else:
         return None
     # "Item commemoratio ..." means "also, the commemoration of", not "at the
