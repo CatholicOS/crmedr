@@ -16561,6 +16561,12 @@
       "country": null,
       "status": "reviewed"
     },
+    "Oceániam occidentálem": {
+      "wikidata": "Q27779387",
+      "label": "Vicariate Apostolic of Western Oceania",
+      "country": null,
+      "status": "reviewed"
+    },
     "Ocræ apud Fossam in Aprútio": {
       "wikidata": "Q50112",
       "label": "Ocre",
@@ -20295,6 +20301,12 @@
       "country": "SY",
       "status": "reviewed"
     },
+    "Tabanénsi cœnóbio": {
+      "wikidata": "Q141833410",
+      "label": "Monastery of Tábanos",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Tabennési in Thebáide Ægýpti": {
       "wikidata": "Q2478752",
       "label": "Tabenna",
@@ -20950,6 +20962,12 @@
       "country": "BE",
       "status": "reviewed"
     },
+    "Trung Linh": {
+      "wikidata": "Q141833401",
+      "label": "Trung Linh",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "Trébiæ in Látio": {
       "wikidata": "Q117471",
       "label": "Trevi nel Lazio",
@@ -21362,6 +21380,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Urci": {
+      "wikidata": "Q5485281",
+      "label": "Urci",
+      "country": "ES",
+      "status": "reviewed"
+    },
     "Urdæ in Hispániæ Toletána província": {
       "wikidata": "Q579668",
       "label": "Urda",
@@ -21582,6 +21606,12 @@
       "wikidata": "Q1009003",
       "label": "Staré Město",
       "country": "CZ",
+      "status": "reviewed"
+    },
+    "Velicénsis": {
+      "wikidata": "Q20571496",
+      "label": "Eparchy of Velika",
+      "country": null,
       "status": "reviewed"
     },
     "Vendárum": {
@@ -22445,6 +22475,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "britónis": {
+      "wikidata": "Q849967",
+      "label": "Celtic Britons",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "cambriénsis": {
       "wikidata": "Q188353",
       "label": "Welsh people",
@@ -22844,6 +22880,12 @@
       "country": "CA",
       "status": "jev"
     },
+    "divérsas Itáliæ regiónes": {
+      "wikidata": "Q38",
+      "label": "Italy",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "ecclésia cathedráli": {
       "wikidata": "Q29265",
       "label": "Canterbury Cathedral",
@@ -22937,10 +22979,22 @@
       "country": "SK",
       "status": "jev"
     },
+    "erémo prope Brigántium": {
+      "wikidata": "Q1737",
+      "label": "Bregenz",
+      "country": "AT",
+      "status": "reviewed"
+    },
     "erémo Ægýpti": {
       "wikidata": "Q79",
       "label": "Egypt",
       "country": "EG",
+      "status": "reviewed"
+    },
+    "erémum Chalcedonénsem": {
+      "wikidata": "Q979091",
+      "label": "Qinnasrin",
+      "country": "SY",
       "status": "reviewed"
     },
     "erémum Ægýpti": {
@@ -23081,6 +23135,12 @@
       "country": "IE",
       "status": "auto"
     },
+    "in Pallacínis": {
+      "wikidata": "Q127673896",
+      "label": "Pallacinae",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "in actuária in freto maris ante Bléndium in Hispánia": {
       "wikidata": "Q12233",
       "label": "Santander",
@@ -23154,6 +23214,12 @@
       "country": "PT",
       "status": "jev"
     },
+    "loco Bornos": {
+      "wikidata": "Q2652880",
+      "label": "Bornes de Aguiar",
+      "country": "PT",
+      "status": "reviewed"
+    },
     "loco Smithfield": {
       "wikidata": "Q3182018",
       "label": "Smithfield",
@@ -23165,6 +23231,12 @@
       "label": "Abbey of Saint Gall",
       "country": "CH",
       "status": "jev"
+    },
+    "loco «Plácium» ad Vicenóniam flumen": {
+      "wikidata": "Q26720921",
+      "label": "Brain-sur-Vilaine",
+      "country": "FR",
+      "status": "reviewed"
     },
     "lusitánus": {
       "wikidata": "Q178630",
@@ -23198,6 +23270,12 @@
       "wikidata": "Q12506",
       "label": "Hagia Sophia",
       "country": "TR",
+      "status": "reviewed"
+    },
+    "meridiánis Itáliæ regiónibus": {
+      "wikidata": "Q207989",
+      "label": "Southern Italy",
+      "country": "IT",
       "status": "reviewed"
     },
     "missiónes Brasiliénses": {
@@ -23283,6 +23361,12 @@
       "country": "CH",
       "status": "jev"
     },
+    "monastérii Dolénsis": {
+      "wikidata": "Q141833406",
+      "label": "Monastery of Dol",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "monastérii Eikénsis": {
       "wikidata": "Q1900606",
       "label": "Aldeneik Abbey",
@@ -23306,6 +23390,12 @@
       "label": "Abbaye Blanche",
       "country": "FR",
       "status": "jev"
+    },
+    "monastérii Nantólii": {
+      "wikidata": "Q141833408",
+      "label": "Nantus Abbey",
+      "country": "FR",
+      "status": "reviewed"
     },
     "monastérii Nonneburgénsis": {
       "wikidata": "Q693876",
@@ -23754,6 +23844,12 @@
       "country": "BE",
       "status": "jev"
     },
+    "monastérium Turris in Calábria": {
+      "wikidata": "Q16600386",
+      "label": "Santa Maria nel Bosco Sanctuary",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "monte Atho": {
       "wikidata": "Q130321",
       "label": "Mount Athos",
@@ -23765,6 +23861,12 @@
       "label": "Mount Carmel",
       "country": "IL",
       "status": "jev"
+    },
+    "monte Carnério": {
+      "wikidata": "Q3949877",
+      "label": "Santuario di Fonte Colombo",
+      "country": "IT",
+      "status": "reviewed"
     },
     "monte Cǽlio ad clivum Scáuri": {
       "wikidata": "Q216104",
@@ -23836,6 +23938,12 @@
       "label": "Gargano",
       "country": "IT",
       "status": "jev"
+    },
+    "montis Mercúrii": {
+      "wikidata": "Q3855082",
+      "label": "Mercurion",
+      "country": "IT",
+      "status": "reviewed"
     },
     "monásterii Studitárum óppidi Univ": {
       "wikidata": "Q2080263",
@@ -23913,6 +24021,12 @@
       "country": "FR",
       "status": "jev"
     },
+    "parœciæ Bầu Nọ": {
+      "wikidata": "Q141833402",
+      "label": "Bầu Nọ parish",
+      "country": "VN",
+      "status": "reviewed"
+    },
     "polóni": {
       "wikidata": "Q1026",
       "label": "Poles",
@@ -23938,6 +24052,24 @@
       "country": "FR",
       "status": "jev"
     },
+    "prope Lutétiam": {
+      "wikidata": "Q90",
+      "label": "Paris",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "prope Neptúnum in Látio Itáliæ": {
+      "wikidata": "Q2542264",
+      "label": "Le Ferriere",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "prope Theánum in Aprútio": {
+      "wikidata": "Q51188",
+      "label": "Bucchianico",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "prope ripam Navæ flúminis": {
       "wikidata": "Q168696",
       "label": "Nahe",
@@ -23954,6 +24086,12 @@
       "wikidata": null,
       "status": "unresolved",
       "note": "not a place: A religious province of the Order of Minims, an administrative unit of the order"
+    },
+    "pártibus Oriéntis": {
+      "wikidata": "Q205653",
+      "label": "Orient",
+      "country": null,
+      "status": "reviewed"
     },
     "pátria Pictaviénsi": {
       "wikidata": "Q6616",
@@ -24014,11 +24152,29 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "regna Európæ": {
+      "wikidata": "Q46",
+      "label": "Europe",
+      "country": null,
+      "status": "reviewed"
+    },
+    "regno Angliæ": {
+      "wikidata": "Q179876",
+      "label": "Kingdom of England",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "regnum Neapolitánum": {
       "wikidata": "Q173065",
       "label": "Kingdom of Naples",
       "country": "IT",
       "status": "jev"
+    },
+    "rivum Tum Nok": {
+      "wikidata": "Q108317077",
+      "label": "Our Lady of the Martyrs of Thailand Shrine",
+      "country": "TH",
+      "status": "reviewed"
     },
     "románus": {
       "wikidata": "Q1651392",
@@ -24136,6 +24292,12 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "silvam Armóricæ interióris": {
+      "wikidata": "Q924045",
+      "label": "Paimpont forest",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "silvam Cratumnénsem": {
       "wikidata": "Q49328876",
       "label": "Forest of Craon",
@@ -24194,6 +24356,12 @@
       "country": "IQ",
       "status": "jev"
     },
+    "terra Hus": {
+      "wikidata": "Q1967878",
+      "label": "Land of Uz",
+      "country": null,
+      "status": "reviewed"
+    },
     "terram": {
       "wikidata": "Q23792",
       "label": "Palestine",
@@ -24242,6 +24410,16 @@
       "label": "Pupping",
       "country": "AT",
       "status": "jev"
+    },
+    "tota Hispánia": {
+      "wikidata": "Q126936",
+      "label": "Visigothic Kingdom",
+      "country": null,
+      "countries": [
+        "ES",
+        "PT"
+      ],
+      "status": "reviewed"
     },
     "trans Iordánem": {
       "wikidata": "Q7834492",
@@ -24337,6 +24515,12 @@
       "wikidata": "Q65000",
       "label": "Beinwil am See",
       "country": "CH",
+      "status": "reviewed"
+    },
+    "vici Song-Khon": {
+      "wikidata": "Q108317077",
+      "label": "Our Lady of the Martyrs of Thailand Shrine",
+      "country": "TH",
       "status": "reviewed"
     },
     "vici cœmetério christianórum": {
