@@ -647,7 +647,8 @@ def _resolve(op, client, its):
         if edit.get("reason"):
             entry["note"] = edit["reason"]
         return entry, None
-    if edit.get("no_country"):
+    # A suggestion in no single country (the Orient) is accepted as such, not with the candidate's own P17.
+    if edit.get("no_country") or (decision == "accept" and from_suggestion and suggested.get("no_country") is True):
         if edit.get("country"):
             return None, f"{la!r}: edited.no_country and edited.country are both set"
         return {"wikidata": qid, "label": chosen["label"], "country": None, "status": "reviewed",
@@ -778,7 +779,10 @@ def verify_suggestions(review, index, client):
                         candidates.append(item)
                     else:
                         candidates[pos] = item
-        if "countries" in s:  # a suggestion in several countries (Jerusalem: IL, PS)
+        if "no_country" in s:  # a suggestion in no single country (the Orient, Western Oceania)
+            if s["no_country"] is not True or "country" in s or "countries" in s:
+                errors.append(f"{la!r}: suggested no_country must be true, without a country or countries")
+        elif "countries" in s:  # a suggestion in several countries (Jerusalem: IL, PS)
             cs = s["countries"]
             if "country" in s or not isinstance(cs, list) or len(cs) < 2 \
                     or not all(isinstance(c, str) for c in cs) or len(set(cs)) != len(cs) \

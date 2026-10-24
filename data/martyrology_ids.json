@@ -3142,7 +3142,8 @@
           "it": "monastero di Abgar",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified."
     },
     {
       "id": "mr:0109-honoratus-de-busentiaco",
@@ -29723,7 +29724,8 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
-      }
+      },
+      "note": "The site of the monastery of Saint Peter of the Wood (San Pietro della Foresta) near Aquino, of which Clinius was abbot, is not identified; a local tradition places it between Pontecorvo and Esperia."
     },
     {
       "id": "mr:0330-petrus-regalado",
@@ -131079,7 +131081,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified."
     },
     {
       "id": "mr:1223-servulus",

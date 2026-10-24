@@ -220,7 +220,7 @@
 | 22 | 6 | `mr:1222-thomas-holland` | * | GB | dies_natalis |  |  |
 | 22 | 7 | `mr:1222-francisca-xaveria-cabrini` |  | US | dies_natalis |  |  |
 | 23 | (1) | `mr:1223-ioannes-de-kety` |  | PL | celebratio |  |  |
-| 23 | 2 | `mr:1223-theodulus-et-socii` |  | GR | dies_natalis |  |  |
+| 23 | 2 | `mr:1223-theodulus-et-socii` |  | GR | dies_natalis |  | The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified. |
 | 23 | 3 | `mr:1223-servulus` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:1223-ivo` | * | FR | dies_natalis |  |  |
 | 23 | 5 | `mr:1223-hartmannus` | * | IT | dies_natalis |  |  |

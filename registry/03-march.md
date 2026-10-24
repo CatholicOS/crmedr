@@ -319,7 +319,7 @@
 | 30 | 5 | `mr:0330-ioannes` |  | EG | dies_natalis |  |  |
 | 30 | 6 | `mr:0330-zosimus` |  | IT | dies_natalis |  |  |
 | 30 | 7 | `mr:0330-osburga` | * | GB | dies_natalis |  |  |
-| 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  |  |
+| 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  | The site of the monastery of Saint Peter of the Wood (San Pietro della Foresta) near Aquino, of which Clinius was abbot, is not identified; a local tradition places it between Pontecorvo and Esperia. |
 | 30 | 9 | `mr:0330-petrus-regalado` |  | ES | dies_natalis |  | 2004 English: Translation error: "Aguilar" where the Latin has "Aquilériæ" (La Aguilera). |
 | 30 | 10 | `mr:0330-amadeus` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0330-antonius-daveluy-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "catechists" where the Latin has "catechístæ" in the singular, of Luke Hwang alone. |

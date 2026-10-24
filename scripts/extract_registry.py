@@ -225,6 +225,9 @@ ENTRY_NOTES = {
     "mr:0930-gregorius-illuminator": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown.",
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
+    "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
+    "mr:0330-clinius": "The site of the monastery of Saint Peter of the Wood (San Pietro della Foresta) near Aquino, of which Clinius was abbot, is not identified; a local tradition places it between Pontecorvo and Esperia.",
+    "mr:1223-theodulus-et-socii": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified.",
     "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
     # possible sites) or a site the archaeology places differently.

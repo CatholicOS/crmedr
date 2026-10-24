@@ -1185,6 +1185,16 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q9", "label": "Orient", "country": None,
                                             "status": "reviewed"})
 
+    def test_accept_a_suggestion_in_no_country(self):
+        # The Orient, Western Oceania: the suggestion says no country, so the candidate's own P17 (NZ) is not taken.
+        orient = cand("Q9", label="Orient", country="NZ")
+        _, gaz, _ = self.run_apply(op("Fictópoli", "accept", [orient], suggested={"wikidata": "Q9", "no_country": True}))
+        self.assertEqual(gaz["Fictópoli"], {"wikidata": "Q9", "label": "Orient", "country": None, "status": "reviewed"})
+        # An edit to another item, or with a country, does not inherit it.
+        _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [orient, self.c1], suggested={"wikidata": "Q9", "no_country": True},
+                                      edited={"wikidata": "Q1"}))
+        self.assertEqual(gaz["Fictópoli"]["country"], "FR")
+
     def test_edit_several_countries(self):
         frisia = cand("Q9", label="Frisia", country=None, countries=["NL", "DE"])
         _, gaz, _ = self.run_apply(op("Fictópoli", "edit", [frisia], edited={"wikidata": "Q9", "countries": ["NL", "DE"]}))
@@ -1281,6 +1291,19 @@ class VerifySuggestionsTest(unittest.TestCase):
             errors, _ = bg.verify_suggestions(bg.new_changeset([o]), INDEX, self.client)
             self.assertEqual([w for w in expected if not any(w in e for e in errors)], [], errors)
             self.assertEqual(bool(errors), bool(expected), errors)
+
+    def test_suggestion_in_no_country(self):
+        ok = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "no_country": True})
+        both = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "no_country": True, "country": "FR"})
+        loose = op("Fictópoli", None, [cand("Q1", country="FR")], suggested={"wikidata": "Q1", "no_country": "yes"})
+        for o, bad in ((ok, False), (both, True), (loose, True)):
+            o["confidence"] = "medium"
+            errors, warnings = bg.verify_suggestions(bg.new_changeset([o]), INDEX, self.client)
+            self.assertEqual(bool(errors), bad, errors)
+            if not bad:
+                self.assertEqual(warnings, [])
+            else:
+                self.assertTrue(any("no_country" in e for e in errors), errors)
 
 
 
