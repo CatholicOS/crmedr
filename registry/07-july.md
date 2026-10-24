@@ -339,7 +339,7 @@
 | 24 | 6 | `mr:0724-declanus` | * | IE | dies_natalis |  |  |
 | 24 | 7 | `mr:0724-sigolena` | * | FR | dies_natalis |  |  |
 | 24 | 8 | `mr:0724-boris-et-gleb` |  | RU | dies_natalis |  | 2004 Italian: Translation error: "sul fiume Don" where the Latin has "ad Altam flumen" (the river Alta). Translation error: "principi di Rostov" where the Latin has "principes Rutheni" (princes of the Rus'). |
-| 24 | 9 | `mr:0724-balduinus` | * | IT | dies_natalis |  |  |
+| 24 | 9 | `mr:0724-balduinus` | * | IT | dies_natalis |  | The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234. |
 | 24 | 10 | `mr:0724-christina-mirabilis` | * | BE | dies_natalis |  |  |
 | 24 | 11 | `mr:0724-kinga` |  | PL | dies_natalis |  |  |
 | 24 | 12 | `mr:0724-ioannes-de-tossiniano` | * | IT | dies_natalis |  |  |
