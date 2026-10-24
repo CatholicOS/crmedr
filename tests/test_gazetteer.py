@@ -1308,6 +1308,41 @@ class VerifySuggestionsTest(unittest.TestCase):
 
 
 
+class RedecideTest(unittest.TestCase):
+    """A decided place can be queued again (redecide): its entry stays live until the card is decided."""
+    def setUp(self):
+        self.client = FakeClient({"x": [cand("Q1", label="Fictopolis", country="FR"), cand("Q2", label="Catacomb", country="DE")]})
+        self.live = {"wikidata": "Q1", "label": "Fictopolis", "country": "DE", "status": "auto"}
+
+    def card(self, redecide=True):
+        o = op("Fictópoli", None, [cand("Q2", label="Catacomb", country="DE")], suggested={"wikidata": "Q2", "country": "DE"})
+        o["confidence"] = "high"
+        if redecide:
+            o["redecide"] = True
+        return o
+
+    def test_a_redecide_card_may_sit_beside_its_live_entry(self):
+        self.assertEqual(bg.validate({"Fictópoli": self.live}, INDEX, [self.card()]), [])
+        self.assertTrue(any("also queued" in e for e in bg.validate({"Fictópoli": self.live}, INDEX, [self.card(False)])))
+        self.assertTrue(any("redecide" in e for e in bg.validate({}, INDEX, [self.card()])))
+
+    def test_deciding_a_redecide_card_replaces_the_live_entry(self):
+        gaz = {"Fictópoli": dict(self.live)}
+        review = bg.new_changeset([self.card()])
+        decided = bg.new_changeset([dict(self.card(), decision="accept")])
+        self.assertEqual(bg.apply_decisions(gaz, review, decided, INDEX, self.client), 1)
+        self.assertEqual((gaz["Fictópoli"]["wikidata"], gaz["Fictópoli"]["status"]), ("Q2", "reviewed"))
+        self.assertEqual(review["operations"], [])
+
+    def test_the_flag_counts_only_on_the_queued_card(self):
+        # An exported decision cannot claim redecide for a place the queue does not re-open.
+        gaz = {"Fictópoli": dict(self.live)}
+        review = bg.new_changeset([])
+        with self.assertRaises(ValueError) as cm:
+            bg.apply_decisions(gaz, review, bg.new_changeset([dict(self.card(), decision="accept")]), INDEX, self.client)
+        self.assertIn("already decided", str(cm.exception))
+
+
 class QueuedCandidateShapeTest(unittest.TestCase):
     """The review page renders every candidate's evidence: a candidate in the raw client shape broke it."""
     def test_a_candidate_without_the_published_keys_fails_validation(self):

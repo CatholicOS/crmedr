@@ -291,7 +291,11 @@ def validate(gazetteer, index, review_ops=()):
             errors.append(f"{where}: text_says {e.get('text_says', [])!r} is not the one derived from "
                           f"the Italian phrases and country {e.get('country')}: {expected!r}")
     for op in review_ops:
-        if op.get("id") in gazetteer:
+        # A redecide card re-opens a decided place (a finer item found later): the entry stays live until it is decided.
+        if op.get("redecide") is True:
+            if op.get("id") not in gazetteer:
+                errors.append(f"review {op.get('id')!r}: redecide is for a decided place, and this one is not")
+        elif op.get("id") in gazetteer:
             errors.append(f"gazetteer {op['id']!r}: decided but also queued in data/gazetteer_review.json")
         for c in op.get("candidates", []):
             if set(c) != set(PUBLISHED_KEYS) | {"evidence"}:
@@ -721,6 +725,8 @@ def apply_decisions(gazetteer, review, exported, index, client):
     if exported.get("schema") != SCHEMA:
         raise ValueError(f"not a {SCHEMA} document")
     decided, errors = {}, []
+    # Only the queue, never the export, can re-open a decided place.
+    redecide = {op["id"] for op in review["operations"] if op.get("redecide") is True}
     for op in exported.get("operations", []):
         if op.get("op") != "resolve_place" or op.get("decision") is None:
             continue
@@ -728,7 +734,7 @@ def apply_decisions(gazetteer, review, exported, index, client):
         if la not in index:
             errors.append(f"{la!r}: not a place in data/places.json")
             continue
-        if la in gazetteer:
+        if la in gazetteer and la not in redecide:
             errors.append(f"{la!r}: already decided in data/gazetteer.json")
             continue
         entry, error = _resolve(op, client, index[la]["it"])
