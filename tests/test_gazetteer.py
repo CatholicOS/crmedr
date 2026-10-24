@@ -819,6 +819,8 @@ class ValidateTest(unittest.TestCase):
             self.assertTrue(errors and word in errors[0], (sites, errors))
         jev = {**base, "status": "jev", "sites": ["Q2", "Q3"]}
         self.assertTrue(any("reviewed" in e for e in bg.validate({"Fictópoli": jev}, INDEX)))
+        unresolved = {"wikidata": None, "status": "unresolved", "note": "x", "sites": ["Q2", "Q3"]}
+        self.assertTrue(any("sites" in e for e in bg.validate({"Fictópoli": unresolved}, INDEX)))
 
     def test_bad_countries(self):
         base = {"wikidata": "Q1", "label": "x", "status": "reviewed"}

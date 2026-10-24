@@ -260,6 +260,8 @@ def validate(gazetteer, index, review_ops=()):
         if status not in STATUSES:
             errors.append(f"{where}: status {status!r} not in {STATUSES}")
             continue
+        if "sites" in e:
+            errors += [f"{where}: {p}" for p in _sites_problems(e)]
         if status == "unresolved":
             if e.get("wikidata") is not None:
                 errors.append(f"{where}: unresolved needs wikidata null")
@@ -272,8 +274,6 @@ def validate(gazetteer, index, review_ops=()):
             errors.append(f"{where}: wikidata {e.get('wikidata')!r} is not a QID")
         if not e.get("label"):
             errors.append(f"{where}: missing label")
-        if "sites" in e:
-            errors += [f"{where}: {p}" for p in _sites_problems(e)]
         if "countries" in e:
             problems = _countries_problems(e)
             errors += [f"{where}: {p}" for p in problems]
