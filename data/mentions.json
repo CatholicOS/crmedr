@@ -2805,7 +2805,7 @@
           "start": 60,
           "end": 65,
           "check": "82e30dc9",
-          "qid": null,
+          "qid": "Q156789",
           "roles": [
             {
               "role": "ministry"
@@ -5444,8 +5444,34 @@
           "kind": "place",
           "where": "text",
           "start": 103,
-          "end": 144,
-          "check": "d1a0f8b0",
+          "end": 113,
+          "check": "ab5eda22",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 115,
+          "end": 122,
+          "check": "d982b1b0",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 123,
+          "end": 132,
+          "check": "a2042061",
           "qid": null,
           "roles": [
             {
@@ -6484,7 +6510,7 @@
           "start": 144,
           "end": 163,
           "check": "b42981d1",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "religious_life"
@@ -17525,7 +17551,7 @@
           "start": 51,
           "end": 58,
           "check": "bbfdad9c",
-          "qid": null,
+          "qid": "Q12901244",
           "roles": [
             {
               "role": "death"
@@ -18618,7 +18644,7 @@
           "start": 57,
           "end": 65,
           "check": "8f2d5eaa",
-          "qid": null,
+          "qid": "Q165192",
           "roles": [
             {
               "role": "ministry"
@@ -34929,7 +34955,7 @@
           "start": 113,
           "end": 123,
           "check": "193214c2",
-          "qid": null,
+          "qid": "Q160381",
           "roles": [
             {
               "role": "ministry"
@@ -36962,7 +36988,7 @@
           "start": 44,
           "end": 49,
           "check": "be8110fc",
-          "qid": null,
+          "qid": "Q13415123",
           "roles": [
             {
               "role": "birth"
@@ -39794,7 +39820,7 @@
           "start": 79,
           "end": 87,
           "check": "f69fdcd9",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -41602,7 +41628,7 @@
           "start": 80,
           "end": 87,
           "check": "755c858b",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -66002,7 +66028,7 @@
           "start": 230,
           "end": 238,
           "check": "3d7e26c1",
-          "qid": null,
+          "qid": "Q635058",
           "roles": [
             {
               "role": "exile"
@@ -71814,7 +71840,7 @@
           "start": 256,
           "end": 264,
           "check": "fb7c03df",
-          "qid": null,
+          "qid": "Q205653",
           "roles": [
             {
               "role": "ministry"
@@ -72348,7 +72374,7 @@
           "start": 128,
           "end": 135,
           "check": "734e6f14",
-          "qid": null,
+          "qid": "Q29520",
           "roles": [
             {
               "role": "death"
@@ -75930,7 +75956,7 @@
           "start": 78,
           "end": 88,
           "check": "9b356c6a",
-          "qid": null,
+          "qid": "Q309272",
           "roles": [
             {
               "role": "birth"
@@ -84700,7 +84726,7 @@
           "start": 41,
           "end": 56,
           "check": "a07c7fd5",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "death"
@@ -87327,7 +87353,7 @@
           "start": 198,
           "end": 207,
           "check": "e63c1a29",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "exile"
@@ -87812,7 +87838,7 @@
           "start": 66,
           "end": 103,
           "check": "6027c779",
-          "qid": null,
+          "qid": "Q14627585",
           "roles": [
             {
               "role": "foundation"
@@ -88814,7 +88840,7 @@
           "start": 139,
           "end": 148,
           "check": "c09e0172",
-          "qid": null,
+          "qid": "Q160381",
           "roles": [
             {
               "role": "mention"
@@ -121160,7 +121186,7 @@
           "start": 79,
           "end": 87,
           "check": "b02db224",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -155265,7 +155291,7 @@
           "start": 155,
           "end": 169,
           "check": "4ad020bf",
-          "qid": null,
+          "qid": "Q133331",
           "roles": [
             {
               "role": "mention"
@@ -158057,7 +158083,7 @@
           "start": 90,
           "end": 95,
           "check": "6d1cc66c",
-          "qid": null,
+          "qid": "Q156789",
           "roles": [
             {
               "role": "ministry"
@@ -160668,9 +160694,35 @@
         {
           "kind": "place",
           "where": "text",
-          "start": 135,
+          "start": 147,
+          "end": 154,
+          "check": "cde5af15",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 162,
+          "end": 166,
+          "check": "4a83045f",
+          "qid": null,
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 173,
           "end": 179,
-          "check": "aa1aff9c",
+          "check": "cc399589",
           "qid": null,
           "roles": [
             {
@@ -161700,7 +161752,7 @@
           "start": 156,
           "end": 173,
           "check": "8737ba5e",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "religious_life"
@@ -172682,7 +172734,7 @@
           "start": 46,
           "end": 53,
           "check": "7ad87fba",
-          "qid": null,
+          "qid": "Q12901244",
           "roles": [
             {
               "role": "death"
@@ -173733,7 +173785,7 @@
           "start": 68,
           "end": 73,
           "check": "79f5ec7a",
-          "qid": null,
+          "qid": "Q165192",
           "roles": [
             {
               "role": "ministry"
@@ -174149,7 +174201,7 @@
           "start": 494,
           "end": 502,
           "check": "96998c50",
-          "qid": null,
+          "qid": "Q170062",
           "roles": [
             {
               "role": "ministry",
@@ -190212,7 +190264,7 @@
           "start": 144,
           "end": 153,
           "check": "716179b7",
-          "qid": null,
+          "qid": "Q160381",
           "roles": [
             {
               "role": "ministry"
@@ -192258,7 +192310,7 @@
           "start": 53,
           "end": 60,
           "check": "3e7a51f2",
-          "qid": null,
+          "qid": "Q13415123",
           "roles": [
             {
               "role": "birth"
@@ -195120,7 +195172,7 @@
           "start": 94,
           "end": 100,
           "check": "f2f6ac3e",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -196928,7 +196980,7 @@
           "start": 100,
           "end": 106,
           "check": "f2f6ac3e",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -221568,7 +221620,7 @@
           "start": 275,
           "end": 281,
           "check": "6fe1b05c",
-          "qid": null,
+          "qid": "Q635058",
           "roles": [
             {
               "role": "exile"
@@ -227463,7 +227515,7 @@
           "start": 322,
           "end": 329,
           "check": "43161d62",
-          "qid": null,
+          "qid": "Q205653",
           "roles": [
             {
               "role": "ministry"
@@ -227997,7 +228049,7 @@
           "start": 123,
           "end": 127,
           "check": "eb30165d",
-          "qid": null,
+          "qid": "Q29520",
           "roles": [
             {
               "role": "death"
@@ -231590,7 +231642,7 @@
           "start": 73,
           "end": 83,
           "check": "bfb0c8d3",
-          "qid": null,
+          "qid": "Q309272",
           "roles": [
             {
               "role": "birth"
@@ -240432,7 +240484,7 @@
           "start": 42,
           "end": 59,
           "check": "8737ba5e",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "death"
@@ -243063,7 +243115,7 @@
           "start": 211,
           "end": 218,
           "check": "f60670ff",
-          "qid": null,
+          "qid": "Q768515",
           "roles": [
             {
               "role": "exile"
@@ -243548,7 +243600,7 @@
           "start": 84,
           "end": 118,
           "check": "c42870ac",
-          "qid": null,
+          "qid": "Q14627585",
           "roles": [
             {
               "role": "foundation"
@@ -244559,7 +244611,7 @@
           "start": 139,
           "end": 148,
           "check": "716179b7",
-          "qid": null,
+          "qid": "Q160381",
           "roles": [
             {
               "role": "mention"
@@ -266960,7 +267012,7 @@
           "start": 125,
           "end": 132,
           "check": "43161d62",
-          "qid": null,
+          "qid": "Q205653",
           "roles": [
             {
               "role": "birth"
@@ -277069,7 +277121,7 @@
           "start": 67,
           "end": 73,
           "check": "f2f6ac3e",
-          "qid": null,
+          "qid": "Q3746183",
           "roles": [
             {
               "role": "death"
@@ -297099,7 +297151,7 @@
           "start": 132,
           "end": 158,
           "check": "3846737f",
-          "qid": null,
+          "qid": "Q881",
           "roles": [
             {
               "role": "death"
@@ -311015,7 +311067,7 @@
           "start": 149,
           "end": 166,
           "check": "f5288876",
-          "qid": null,
+          "qid": "Q133331",
           "roles": [
             {
               "role": "mention"

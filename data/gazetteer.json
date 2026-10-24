@@ -15141,6 +15141,16 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Mauretánia": {
+      "wikidata": "Q309272",
+      "label": "Mauretania",
+      "country": null,
+      "countries": [
+        "MA",
+        "DZ"
+      ],
+      "status": "reviewed"
+    },
     "Mauriánæ in Sabáudia": {
       "wikidata": "Q1242274",
       "label": "Maurienne",
@@ -16085,6 +16095,12 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Nicǽna Sýnodus": {
+      "wikidata": "Q133331",
+      "label": "First Council of Nicaea",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "Nicǽni": {
       "wikidata": "Q217125",
       "label": "İznik",
@@ -16390,6 +16406,12 @@
       "country": "ES",
       "status": "reviewed"
     },
+    "Numídia": {
+      "wikidata": "Q12901244",
+      "label": "Numidia",
+      "country": "DZ",
+      "status": "reviewed"
+    },
     "Nyssæ in Cappadócia": {
       "wikidata": "Q3563362",
       "label": "Nyssa",
@@ -16442,6 +16464,18 @@
       "wikidata": "Q1137944",
       "label": "Obazine Abbey",
       "country": "FR",
+      "status": "reviewed"
+    },
+    "Occidénte": {
+      "wikidata": "Q160381",
+      "label": "Western world",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Occidéntis": {
+      "wikidata": "Q160381",
+      "label": "Western world",
+      "country": null,
       "status": "reviewed"
     },
     "Ocræ apud Fossam in Aprútio": {
@@ -16553,6 +16587,18 @@
       "status": "reviewed"
     },
     "Oriéntem": {
+      "wikidata": "Q205653",
+      "label": "Orient",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Oriéntis": {
+      "wikidata": "Q205653",
+      "label": "Orient",
+      "country": null,
+      "status": "reviewed"
+    },
+    "Oriéntis pártibus": {
       "wikidata": "Q205653",
       "label": "Orient",
       "country": null,
@@ -16714,6 +16760,21 @@
       "status": "reviewed"
     },
     "Pannónia": {
+      "wikidata": "Q170062",
+      "label": "Pannonia",
+      "country": null,
+      "countries": [
+        "HU",
+        "SK",
+        "AT",
+        "HR",
+        "RS",
+        "SI",
+        "BA"
+      ],
+      "status": "reviewed"
+    },
+    "Pannóniam": {
       "wikidata": "Q170062",
       "label": "Pannonia",
       "country": null,
@@ -17753,6 +17814,24 @@
       "country": "TR",
       "status": "reviewed"
     },
+    "Pérside": {
+      "wikidata": "Q3746183",
+      "label": "Persis",
+      "country": "IR",
+      "status": "reviewed"
+    },
+    "Pérsidem": {
+      "wikidata": "Q3746183",
+      "label": "Persis",
+      "country": "IR",
+      "status": "reviewed"
+    },
+    "Pérsidis": {
+      "wikidata": "Q3746183",
+      "label": "Persis",
+      "country": "IR",
+      "status": "reviewed"
+    },
     "Pértici": {
       "wikidata": "Q958603",
       "label": "Perche",
@@ -18766,6 +18845,18 @@
       "country": "CH",
       "status": "jev"
     },
+    "Rǽtiæ": {
+      "wikidata": "Q156789",
+      "label": "Raetia",
+      "country": null,
+      "countries": [
+        "CH",
+        "DE",
+        "AT",
+        "IT"
+      ],
+      "status": "reviewed"
+    },
     "Sabraténsis": {
       "wikidata": "Q192918",
       "label": "Sabratha",
@@ -19538,6 +19629,12 @@
       "country": "CN",
       "status": "auto"
     },
+    "Sinárum": {
+      "wikidata": "Q29520",
+      "label": "China",
+      "country": "CN",
+      "status": "reviewed"
+    },
     "Sinárum impérium": {
       "wikidata": "Q7313",
       "label": "Yuan dynasty",
@@ -19800,6 +19897,12 @@
       "country": "SE",
       "status": "jev"
     },
+    "Suebórum": {
+      "wikidata": "Q165192",
+      "label": "Swedes",
+      "country": "SE",
+      "status": "reviewed"
+    },
     "Suessionénsis": {
       "wikidata": "Q167152",
       "label": "Soissons",
@@ -20052,6 +20155,12 @@
       "country": "SY",
       "status": "auto"
     },
+    "Sýriæ": {
+      "wikidata": "Q13415123",
+      "label": "Syria",
+      "country": "SY",
+      "status": "reviewed"
+    },
     "Tabennési in Thebáide Ægýpti": {
       "wikidata": "Q2478752",
       "label": "Tabenna",
@@ -20262,6 +20371,24 @@
       "country": "EG",
       "status": "reviewed"
     },
+    "Thebáide Ægýpti": {
+      "wikidata": "Q768515",
+      "label": "Thebaid",
+      "country": "EG",
+      "status": "reviewed"
+    },
+    "Thebáidem": {
+      "wikidata": "Q768515",
+      "label": "Thebaid",
+      "country": "EG",
+      "status": "reviewed"
+    },
+    "Thebáidem in Ægýpto": {
+      "wikidata": "Q768515",
+      "label": "Thebaid",
+      "country": "EG",
+      "status": "reviewed"
+    },
     "Thenesíaci in pago Pictaviénsi Aquitániæ": {
       "wikidata": "Q1344052",
       "label": "Thénezay",
@@ -20331,6 +20458,17 @@
     "Thrácia": {
       "wikidata": "Q41741",
       "label": "Thrace",
+      "country": null,
+      "countries": [
+        "BG",
+        "GR",
+        "TR"
+      ],
+      "status": "reviewed"
+    },
+    "Thráciam": {
+      "wikidata": "Q635058",
+      "label": "Thracia",
       "country": null,
       "countries": [
         "BG",
@@ -20788,6 +20926,12 @@
       "label": "Tongeren",
       "country": "BE",
       "status": "jev"
+    },
+    "Tunquinénsi, Annamiénsi et Cocinchinénsi Asiæ regiónibus": {
+      "wikidata": "Q881",
+      "label": "Vietnam",
+      "country": "VN",
+      "status": "reviewed"
     },
     "Tunéte ad oram Africæ septemtrionális": {
       "wikidata": "Q3572",
@@ -22081,6 +22225,12 @@
     "basílicam in honórem sancti Saturníni": {
       "wikidata": "Q1010268",
       "label": "Basilica of St. Sernin",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "basílicam sancti Symphoriáni mártyris": {
+      "wikidata": "Q14627585",
+      "label": "Abbey of St. Symphorian, Autun",
       "country": "FR",
       "status": "reviewed"
     },
