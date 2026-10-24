@@ -625,6 +625,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0107-cyrus`: Constantinopolitána
 - `mr:0108-albertus`: angli
 - `mr:0108-erhardus`: scotus
+- `mr:0108-maximus`: Máximi
 - `mr:0109-antonius-fatati`: Románi
 - `mr:0110-benincasa`: Sicília
 - `mr:0110-domitianus`: Persárum
@@ -637,9 +638,11 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0114-monachi-raithi`: in monte Sina
 - `mr:0114-odoricus-de-portu-naonis`: Sinárum
 - `mr:0115-bonitus`: Lugdúni
+- `mr:0115-franciscus-fernandez-de-capillas`: Tartarórum
 - `mr:0115-petrus-de-castronovo`: Cisterciénse
 - `mr:0116-furseus`: Gállia
 - `mr:0116-honoratus`: Arelaténsis
+- `mr:0116-iosephus-vaz`: Oratórii
 - `mr:0119-macarius-alexandrinus`: Alexandríni
 - `mr:0120-benedictus-ricasoli`: Vallis Umbrósæ
 - `mr:0120-sebastianus`: Urbe
@@ -650,6 +653,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0127-vitalianus`: Anglórum
 - `mr:0128-olga-bida`: Olýmpi
 - `mr:0129-sulpicius-severus`: Turonénsi, Turonénsis
+- `mr:0130-sebastianus-valfre`: Oratórii
 - `mr:0131-abraham`: Persárum
 - `mr:0201-reginaldus-aurelianensis`: Aurelianénsis
 - `mr:0202-ioannes-theophanes-venard`: Parisiénsi
@@ -659,6 +663,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0204-rabanus-maurus`: Moguntínam
 - `mr:0206-amandus`: Slavos
 - `mr:0207-adalbertus-nierychlewski`: Polónia
+- `mr:0207-maximus`: Máximi
 - `mr:0208-iosephina-gabriela-bonino`: Nazarethánæ
 - `mr:0208-petrus-igneus`: Albanénsis
 - `mr:0211-maria-de-lourdes`: Lourdes
@@ -692,6 +697,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0307-simeon-berneux-et-socii`: Coréa, Coréam, Parisiénsi
 - `mr:0310-simplicius`: Urbe, Urbem
 - `mr:0311-ioannes-baptista-de-fabriano`: Fabriáno
+- `mr:0312-mygdo-et-socii`: Máximi
 - `mr:0313-agnellus-de-pisis`: Anglia, Angliam
 - `mr:0313-christina`: Persárum
 - `mr:0315-zacharias`: Germánis
@@ -702,19 +708,23 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0328-hilarion`: monastérii Peleceténsis
 - `mr:0401-gilbertus`: ecclésiam cathedrálem
 - `mr:0401-ioannes-bretton`: Románæ Ecclésiæ
+- `mr:0403-aloysius-scrosoppi`: Oratórii
 - `mr:0403-xystus-i`: Románam
 - `mr:0406-eutychius`: Constantinopolitáno
 - `mr:0406-gulielmus`: Dánia
 - `mr:0406-petrus-veronensis`: Veronénsi
 - `mr:0408-herodion-et-socii`: Romános
+- `mr:0408-timotheus-et-socii`: Máximi
 - `mr:0409-acacius`: Románi
 - `mr:0409-caelestina-faron`: Polónia
+- `mr:0409-maximus`: Máximi
 - `mr:0410-fulbertus`: ecclésiam cathedrálem
-- `mr:0410-terentius-et-socii`: Africáni
+- `mr:0410-terentius-et-socii`: Africáni, Máximi
 - `mr:0411-georgius-gervase`: Anglórum, Collégii Anglórum Duacénsis
 - `mr:0412-iulius-i`: nicǽnam
 - `mr:0413-franciscus-dickenson-et-milo-gerard`: Anglórum, Collégio Anglórum Reménsi
 - `mr:0413-ursus`: ecclésiam cathedrálem
+- `mr:0414-tiburtius-et-socii`: Máximi
 - `mr:0416-benedictus-iosephus-labre`: Roma, Romam
 - `mr:0416-fructuosus`: Bracarénsis
 - `mr:0417-simeon`: Persárum
@@ -730,6 +740,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0425-petrus-de-betancur`: Béthlehem
 - `mr:0426-cletus`: Románam
 - `mr:0427-simeon`: Hierosólymæ
+- `mr:0428-maximus-et-socii`: Máximi
 - `mr:0429-catharina-senensis`: Senénsis
 - `mr:0430-petrus-levita`: Románæ Ecclésiæ
 - `mr:0501-augustinus-schoeffler`: Parisiénsi
@@ -740,6 +751,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0502-vindemialis-et-longinus`: Concílio Carthaginénsi
 - `mr:0504-ioannes-martinus-moye`: Parisiénsi
 - `mr:0505-catharina-cittadini`: Somáscha
+- `mr:0505-maximus`: Máximi
 - `mr:0506-maria-catharina-troianus`: Ægýptum
 - `mr:0509-herma`: Romános
 - `mr:0509-isaias-propheta`: Iudæ
@@ -747,6 +759,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0512-nereus-et-achilleus`: Romæ, Romæ in cœmetério, Romæ in cœmetério Domitíllæ via Ardeatína
 - `mr:0514-aprunculus`: Arvérnos
 - `mr:0514-matthias-apostolus`: Iudæ
+- `mr:0514-maximus`: Máximi
 - `mr:0516-fidolus`: Aventíno
 - `mr:0518-ioannes-i`: Románi
 - `mr:0518-martinus-oprzadek`: polónus
@@ -768,6 +781,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0609-robertus-salt`: cárcere Neopórtus
 - `mr:0610-ioannes-dominicus`: Hungária, Hungáriam
 - `mr:0611-ignatius-maloyan`: Armenórum
+- `mr:0611-maximus`: Máximi
 - `mr:0614-anastasius-et-socii`: Mauros
 - `mr:0615-abraham`: Arvérnos, Gállia, Gálliam
 - `mr:0619-gerlandus`: Hierosolymitáni
@@ -776,10 +790,12 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0623-petrus-iacobus-de-pisauro`: Pisáuro
 - `mr:0624-gohardus`: ecclésia cathedráli
 - `mr:0625-dorothea-montaviensis`: ecclésiam cathedrálem
+- `mr:0625-maximus`: Máximi
 - `mr:0628-paulus-i`: Urbe, Urbem
 - `mr:0630-adolphus`: Cisterciénse
 - `mr:0630-protomartyres-sanctae-romanae-ecclesiae`: Románæ Ecclésiæ
 - `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui`: templum
+- `mr:0702-liberatus-et-socii`: Máximi
 - `mr:0704-andreas-cretensis`: Creténsi
 - `mr:0705-athanasius-hierosolymitanus`: Hierosolymitáni
 - `mr:0707-pantaenus-alexandrinus`: Alexandríni
@@ -795,9 +811,10 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0717-colmanus`: Hierosólymam
 - `mr:0717-leo-iv`: Urbis
 - `mr:0719-achilles-puchala-et-hermannus-stepien`: Polónia
-- `mr:0719-macrina`: Sebasténsis
+- `mr:0719-macrina`: Nysséni, Sebasténsis
 - `mr:0719-petrus-crisci`: ecclésiæ cathedrális
 - `mr:0720-ioseph`: Iudæ
+- `mr:0722-anastasius`: Máximi
 - `mr:0722-augustinus-de-bugella`: Venétiis
 - `mr:0723-ezechiel-propheta`: Israel
 - `mr:0724-euphrasia`: desérto
@@ -812,17 +829,20 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0731-germanus`: Ravénna
 - `mr:0731-ignatius-de-loyola`: hispánus
 - `mr:0801-petrus-favre`: Urbe
+- `mr:0802-maximus`: Máximi
 - `mr:0803-petrus`: ecclésiæ cathedrális
 - `mr:0807-xystus-ii-et-socii`: Romæ
 - `mr:0808-eusebius`: ecclésiam cathedrálem
 - `mr:0809-faustinus-oteiza-et-florentinus-felipe`: Florentíni
 - `mr:0809-florentinus-asensio-barroso`: Florentíni
 - `mr:0809-romanus`: Románi
+- `mr:0813-maximus-confessor`: Máximi
 - `mr:0813-petrus-romancon`: Roma
 - `mr:0813-radegundis`: Arelaténsis
 - `mr:0815-altfridus`: ecclésiam cathedrálem
 - `mr:0815-stanislaus-kostka`: Roma, Romam
 - `mr:0819-xystus-iii`: Exquíliis, Urbe
+- `mr:0820-maximus`: Máximi
 - `mr:0823-florentinus-perez-romero-et-urbanus-gil-saez`: Florentíni
 - `mr:0825-ludovicus-nonus`: sepúlcrum Dómini
 - `mr:0827-guarinus`: Cisterciénse
@@ -846,6 +866,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0921-laurentius-imbert-et-socii`: Parisiénsi
 - `mr:0924-gerardus-sagredo`: Hungarórum
 - `mr:0924-ioanna-gabriel`: Roma, Romam
+- `mr:0925-paulus-et-tatta`: Máximi
 - `mr:0926-gedeon-iudex`: Israel
 - `mr:0927-florentinus`: Florentíni
 - `mr:0930-simon`: Urbe
@@ -860,7 +881,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1007-martinus-cid`: Cisterciénse
 - `mr:1008-hugo`: Hierosolymitáni
 - `mr:1010-daniel-et-socii`: Mauros
-- `mr:1011-anastasius`: Románæ Ecclésiæ
+- `mr:1011-anastasius`: Máximi, Románæ Ecclésiæ
 - `mr:1012-romanus-sitko`: Románi
 - `mr:1014-romanus-lysko`: Románi
 - `mr:1016-gerardus-claravallensis`: Claravallénsi, Claravallénsis
@@ -882,6 +903,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1027-evaristus`: Románam
 - `mr:1027-namatius`: ecclésiam cathedrálem
 - `mr:1028-simon-et-iudas-apostoli`: Iudæ
+- `mr:1030-maximus`: Máximi
 - `mr:1031-christophorus-de-romaniola`: Roma
 - `mr:1031-foillanus`: hibérnus
 - `mr:1031-leo-nowakowski`: Polóniæ
@@ -911,6 +933,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1118-romacharius`: Roma
 - `mr:1118-romanus`: Románi
 - `mr:1119-abdias-propheta`: Israel
+- `mr:1119-maximus`: Máximi
 - `mr:1120-gregorius-decapolitanus`: Constantinópoli
 - `mr:1121-francisca-de-siedliska`: Nazarethánæ
 - `mr:1121-rufus`: Romános
@@ -921,18 +944,20 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1126-leonardus-a-portu-mauritio`: Urbe
 - `mr:1126-silvester-gozzolini`: desérto
 - `mr:1127-acharius`: Novioménsem
-- `mr:1127-maximus`: Reiénsis
+- `mr:1127-maximus`: Máximi, Reiénsis
 - `mr:1127-virgilius`: ecclésiam cathedrálem
 - `mr:1129-saturninus-carthaginensis`: Carthaginénsi, Carthaginénsis, Roma, Romam
 - `mr:1130-iosephus-marchand`: Parisiénsi
 - `mr:1201-florentia`: Floréntiæ
 - `mr:1204-osmundus`: Anglia, Angliam, ecclésiam cathedrálem
 - `mr:1208-romaricus`: Roma
+- `mr:1209-ioannes-didacus-cuauhtlatoatzin`: Indórum
 - `mr:1210-gregorius-iii`: Urbis
 - `mr:1211-damasus-i`: nicǽnam
 - `mr:1211-david`: Germánia, Germániam
 - `mr:1211-mirabilia-a-iesu`: Hispánia
 - `mr:1211-sabinus`: nicǽnam
+- `mr:1213-antonius-grassus`: Oratórii
 - `mr:1214-ioannes-a-cruce`: Hispániæ
 - `mr:1217-modestus`: Urbe, Urbem
 - `mr:1218-malachias-propheta`: templum

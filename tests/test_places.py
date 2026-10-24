@@ -21,6 +21,11 @@ class OpeningPhraseTest(unittest.TestCase):
             p.opening_phrase("In monasterio Sancti Ficti ad Fictum flumen, depositio beati Fictitii."),
             "In monasterio Sancti Ficti ad Fictum flumen")
 
+    def test_cemetery_named_after_a_saint_stays(self):
+        self.assertEqual(
+            p.opening_phrase("Fictópoli in cœmetério sancti Ficti via Fictína, sancti Fictitii, mártyris."),
+            "Fictópoli in cœmetério sancti Ficti via Fictína")
+
     def test_place_name_opening_with_a_capitalized_saint(self):
         self.assertEqual(p.opening_phrase("Sancti Fictitii Fani in Fictia, transitus sancti Ficti."),
                          "Sancti Fictitii Fani in Fictia")
