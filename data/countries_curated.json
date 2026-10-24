@@ -115,6 +115,10 @@
     "mr:0322-lea": "IT",
     "mr:0323-turibius-de-mogrovejo": "PE",
     "mr:0323-victorianus-et-socii": "TN",
+    "mr:0324-secundulus": {
+      "country": "DZ",
+      "note": "opens at Mauretania (MA and DZ); the Italian edition says Algeria"
+    },
     "mr:0325-annuntiatio-domini": null,
     "mr:0325-bonus-latro": "PS",
     "mr:0326-eutychius": "EG",
@@ -184,6 +188,10 @@
     "mr:0520-lydia-thyatirensis": "TR",
     "mr:0521-christophorus-magallanes-et-socii": "MX",
     "mr:0521-martyres-alexandriae": "EG",
+    "mr:0521-timotheus": {
+      "country": "DZ",
+      "note": "opens at Mauretania (MA and DZ); the Italian edition says Algeria"
+    },
     "mr:0522-rita": "IT",
     "mr:0523-martyres-cappadociae": "TR",
     "mr:0523-martyres-mesopotamiae": "IQ",
@@ -342,6 +350,10 @@
     "mr:0921-matthaeus-apostolus-et-evangelista": "PS",
     "mr:0923-pius-de-pietrelcina": "IT",
     "mr:0923-zacharias-et-elisabeth": "PS",
+    "mr:0924-gerardus-sagredo": {
+      "country": "HU",
+      "note": "opens at Pannonia (seven countries); the Italian edition says Hungary, where he died at Buda"
+    },
     "mr:0925-cleopha": "PS",
     "mr:0926-cosmas-et-damianus": "TR",
     "mr:0926-gedeon-iudex": "PS",

@@ -26481,7 +26481,16 @@
           "source": "curated",
           "wikidata": "Q170062",
           "label": "Pannonia",
-          "country": null
+          "country": null,
+          "countries": [
+            "HU",
+            "SK",
+            "AT",
+            "HR",
+            "RS",
+            "SI",
+            "BA"
+          ]
         },
         {
           "role": "ministry",
@@ -27774,7 +27783,11 @@
           "source": "lead",
           "wikidata": "Q309272",
           "label": "Mauretania",
-          "country": "DZ"
+          "country": null,
+          "countries": [
+            "MA",
+            "DZ"
+          ]
         }
       ],
       "date": {
@@ -48142,7 +48155,11 @@
           "source": "lead",
           "wikidata": "Q309272",
           "label": "Mauretania",
-          "country": "DZ"
+          "country": null,
+          "countries": [
+            "MA",
+            "DZ"
+          ]
         }
       ],
       "date": {
@@ -98823,7 +98840,16 @@
           "source": "lead",
           "wikidata": "Q170062",
           "label": "Pannonia",
-          "country": "HU"
+          "country": null,
+          "countries": [
+            "HU",
+            "SK",
+            "AT",
+            "HR",
+            "RS",
+            "SI",
+            "BA"
+          ]
         },
         {
           "role": "death",
@@ -116940,7 +116966,16 @@
           "source": "curated",
           "wikidata": "Q170062",
           "label": "Pannonia",
-          "country": null
+          "country": null,
+          "countries": [
+            "HU",
+            "SK",
+            "AT",
+            "HR",
+            "RS",
+            "SI",
+            "BA"
+          ]
         },
         {
           "role": "death",
@@ -117831,7 +117866,16 @@
           "source": "curated",
           "wikidata": "Q170062",
           "label": "Pannonia",
-          "country": null
+          "country": null,
+          "countries": [
+            "HU",
+            "SK",
+            "AT",
+            "HR",
+            "RS",
+            "SI",
+            "BA"
+          ]
         }
       ]
     },
