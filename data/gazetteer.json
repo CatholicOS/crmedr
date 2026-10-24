@@ -16341,6 +16341,12 @@
       "country": "GB",
       "status": "reviewed"
     },
+    "Novemfontánis": {
+      "wikidata": "Q2820375",
+      "label": "Abbaye Saint-Gilbert de Neuffontaines",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Novi Castri ad Tinam flumen in Anglia": {
       "wikidata": "Q1425428",
       "label": "Newcastle upon Tyne",
@@ -16598,6 +16604,12 @@
       "label": "Oderzo",
       "country": "IT",
       "status": "auto"
+    },
+    "Oratórii": {
+      "wikidata": "Q141830964",
+      "label": "Oroër Abbey",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Orbæ in Sabáudia": {
       "wikidata": "Q68213",
@@ -17466,6 +17478,12 @@
       "label": "Potenza",
       "country": "IT",
       "status": "auto"
+    },
+    "Pradénse": {
+      "wikidata": "Q141830965",
+      "label": "Prado (Lyon)",
+      "country": "FR",
+      "status": "reviewed"
     },
     "Pragæ": {
       "wikidata": "Q1085",
@@ -19523,6 +19541,13 @@
       "country": "TR",
       "status": "jev"
     },
+    "Seminário Sancti Firmíni": {
+      "wikidata": "Q2983806",
+      "label": "Collège des Bons-Enfants-Saint-Victor",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "the Saint-Firmin seminary occupied the former Collège des Bons-Enfants, rue Saint-Victor (frwiki)"
+    },
     "Sempringhámiæ in Anglia": {
       "wikidata": "Q2279325",
       "label": "Sempringham",
@@ -19836,6 +19861,12 @@
       "label": "Southwark",
       "country": "GB",
       "status": "jev"
+    },
+    "Spartáno cœnóbio": {
+      "wikidata": "Q141830966",
+      "label": "Monastery of Saint Nikon, Sparta",
+      "country": "GR",
+      "status": "reviewed"
     },
     "Spinæ Lambérti in Æmília": {
       "wikidata": "Q100109",
@@ -22461,6 +22492,12 @@
       "country": "GB",
       "status": "jev"
     },
+    "convéntu Lemovicénsi": {
+      "wikidata": "Q22975752",
+      "label": "Couvent des Carmes de Limoges",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "convéntu oppíduli Sancti Ioánnis Rotúndi in Apúlia": {
       "wikidata": "Q3673987",
       "label": "Sanctuary of Saint Mary of Graces",
@@ -22574,6 +22611,13 @@
       "country": "DE",
       "status": "reviewed"
     },
+    "cœnóbii Mantuáni": {
+      "wikidata": "Q87742079",
+      "label": "chiesa del Carmelino",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the church of the Carmelite convent of Santa Maria del Paradiso that Girlani founded in Mantua; Wikidata has no separate convent item"
+    },
     "cœnóbio Altæ Cumbæ": {
       "wikidata": "Q63524",
       "label": "Royal Abbey of Hautecombe",
@@ -22621,6 +22665,27 @@
       "label": "Saint Catherine Monastery",
       "country": "EG",
       "status": "jev"
+    },
+    "cœnóbium Gémmulæ in cóllibus Eugáneis": {
+      "wikidata": "Q56323350",
+      "label": "Villa Beatrice d'Este",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the former monastery of Gemola on Monte Gemola (Baone), converted into a villa in the 17th century"
+    },
+    "cœnóbium Sancti Martíni": {
+      "wikidata": "Q2396658",
+      "label": "St Martin's Basilica, Liège",
+      "country": "BE",
+      "status": "reviewed",
+      "note": "Eve was a recluse by the church of St Martin at Liège, where she is buried"
+    },
+    "cœnóbium Sancti Matthǽi sub Lacu": {
+      "wikidata": "Q1775911",
+      "label": "San Pastore",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "Baldwin's abbey of San Matteo sub Lacu (Montecchio) moved to San Pastore in 1234; the original site is lost"
     },
     "cœnóbium Teplénse": {
       "wikidata": "Q361388",
@@ -23028,6 +23093,12 @@
       "country": "BR",
       "status": "jev"
     },
+    "monastérii Acemetárum ad Bósphorum": {
+      "wikidata": "Q141830968",
+      "label": "Irenaion Monastery",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "monastérii Altitonénsis": {
       "wikidata": "Q2820602",
       "label": "Mont Sainte-Odile Abbey",
@@ -23039,6 +23110,12 @@
       "label": "Niederaltaich Abbey",
       "country": "DE",
       "status": "jev"
+    },
+    "monastérii Beátæ Maríæ de Bigárdis": {
+      "wikidata": "Q2039383",
+      "label": "St Wivina Abbey, Groot-Bijgaarden",
+      "country": "BE",
+      "status": "reviewed"
     },
     "monastérii Broniénsis": {
       "wikidata": "Q2820380",
@@ -23073,6 +23150,12 @@
     "monastérii Dalmátii nuncupáti": {
       "wikidata": "Q141818724",
       "label": "Monastery of Dalmatou",
+      "country": "TR",
+      "status": "reviewed"
+    },
+    "monastérii Dii Constantinopolitáni": {
+      "wikidata": "Q141830969",
+      "label": "Monastery of Dios",
       "country": "TR",
       "status": "reviewed"
     },
@@ -23118,6 +23201,12 @@
       "country": "TR",
       "status": "jev"
     },
+    "monastérii Rufinianórum": {
+      "wikidata": "Q141830971",
+      "label": "Monastery of the Rufinianae",
+      "country": "TR",
+      "status": "reviewed"
+    },
     "monastérii Sancti Andréæ": {
       "wikidata": null,
       "status": "unresolved",
@@ -23147,17 +23236,49 @@
       "country": "GB",
       "status": "jev"
     },
+    "monastérii Sancti Lauréntii Parisiénsis": {
+      "wikidata": "Q141830973",
+      "label": "Monastery of Saint-Laurent, Paris",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "monastérii Sancti Lupi": {
       "wikidata": "Q2820396",
       "label": "Abbey of Saint Loup, Troyes",
       "country": "FR",
       "status": "jev"
     },
+    "monastérii Sancti Marcélli": {
+      "wikidata": "Q141830975",
+      "label": "Monastery of Saint-Marcel, Vienne",
+      "country": "FR",
+      "status": "reviewed"
+    },
+    "monastérii Sancti Petri": {
+      "wikidata": "Q29586837",
+      "label": "St Peter's Church and Monastery, Mdina",
+      "country": "MT",
+      "status": "reviewed"
+    },
+    "monastérii Sancti Sulpítii": {
+      "wikidata": "Q2820341",
+      "label": "Abbaye Notre-Dame du Nid-au-Merle",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "the abbey of Saint-Sulpice-la-Forêt (Nid-au-Merle), founded by Raoul de La Futaie in 1112"
+    },
     "monastérii Sanctæ Maríæ Coloniénsis": {
       "wikidata": "Q598352",
       "label": "St. Maria im Kapitol",
       "country": "DE",
       "status": "jev"
+    },
+    "monastérii Sanctíssimi Salvatóris": {
+      "wikidata": "Q634244",
+      "label": "Territorial Abbey Santissimo Salvatore",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the archimandritate of San Salvatore in Messina, of which Luke was the first archimandrite"
     },
     "monastérii Scetis in Ægýpto": {
       "wikidata": "Q1074945",
@@ -23170,6 +23291,12 @@
       "label": "Monastery of Stoudios",
       "country": "TR",
       "status": "jev"
+    },
+    "monastérii Uticénsis": {
+      "wikidata": "Q334237",
+      "label": "Royal Abbey of Saint-Evroul",
+      "country": "FR",
+      "status": "reviewed"
     },
     "monastérii Vilicénsis": {
       "wikidata": "Q24203555",
@@ -23218,6 +23345,12 @@
       "country": "HR",
       "status": "reviewed"
     },
+    "monastério Carbonénsi Sanctórum Elíæ et Anastásii prope Arméntum": {
+      "wikidata": "Q141830976",
+      "label": "Abbey of Saints Elias and Anastasius, Carbone",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "monastério Cellæ Novæ": {
       "wikidata": "Q1517058",
       "label": "Monastery of San Salvador de Celanova",
@@ -23242,11 +23375,23 @@
       "country": "FR",
       "status": "jev"
     },
+    "monastério Leopolitáno": {
+      "wikidata": "Q4235777",
+      "label": "Church and convent of Benedictines, Lviv",
+      "country": "UA",
+      "status": "reviewed"
+    },
     "monastério Lirinénsi": {
       "wikidata": "Q334008",
       "label": "Abbaye Saint-Honorat de Lérins",
       "country": "FR",
       "status": "jev"
+    },
+    "monastério Ochsenfúrti": {
+      "wikidata": "Q141830979",
+      "label": "Ochsenfurt Abbey",
+      "country": "DE",
+      "status": "reviewed"
     },
     "monastério Papiénsi": {
       "wikidata": null,
@@ -23270,10 +23415,23 @@
       "country": "FR",
       "status": "jev"
     },
+    "monastério Sancti Domínici": {
+      "wikidata": "Q1121868",
+      "label": "San Domenico",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the Dominican nuns' monastery annexed to San Domenico, Pisa (destroyed in the Second World War)"
+    },
     "monastério Sancti Martíni": {
       "wikidata": "Q936285",
       "label": "Pannonhalma Archabbey",
       "country": "HU",
+      "status": "reviewed"
+    },
+    "monastério Sancti Spíritus": {
+      "wikidata": "Q1775983",
+      "label": "Santo Spirito",
+      "country": "IT",
       "status": "reviewed"
     },
     "monastério Sancti Victóris": {
@@ -23317,6 +23475,12 @@
       "status": "unresolved",
       "note": "no item, unlocated: Monastery of Storaco near Fano/Marche region; not identified, no item found"
     },
+    "monastério Vallis Castri in Picéno Itáliæ": {
+      "wikidata": "Q141830988",
+      "label": "Abbey of San Salvatore in Valdicastro",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "monastério sancti Mevénni": {
       "wikidata": "Q2820696",
       "label": "Abbey of St Meen",
@@ -23334,6 +23498,13 @@
       "label": "Bangor Abbey",
       "country": "GB",
       "status": "jev"
+    },
+    "monastérium Belli Loci": {
+      "wikidata": "Q130847695",
+      "label": "abbaye de Beaulieu (Meuse)",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "Beaulieu-en-Argonne, founded by Rodingus (Rouin)"
     },
     "monastérium Budicénse": {
       "wikidata": "Q101076985",
@@ -23394,6 +23565,12 @@
       "country": "DE",
       "status": "jev"
     },
+    "monastérium Sancti Cýrici": {
+      "wikidata": "Q141830980",
+      "label": "Monastery of Saint-Cirgues, Clermont",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "monastérium Sancti Martíni@mr:0711-placidus-et-sigisbertus": {
       "wikidata": "Q630414",
       "label": "Disentis Abbey",
@@ -23417,6 +23594,12 @@
       "country": "IT",
       "status": "jev"
     },
+    "monastérium Sanctæ Agnétis": {
+      "wikidata": "Q141830982",
+      "label": "Monastery of Sant'Agnese, Bologna",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "monastérium Sanctæ Crucis@mr:0513-agnes": {
       "wikidata": "Q2335135",
       "label": "Holy Cross Abbey",
@@ -23428,6 +23611,19 @@
       "label": "Château de La Croix-Saint-Leufroy",
       "country": "FR",
       "status": "jev"
+    },
+    "monastérium Sanctæ Margarítæ": {
+      "wikidata": "Q141830984",
+      "label": "Monastery of Santa Margherita, Como",
+      "country": "IT",
+      "status": "reviewed"
+    },
+    "monastérium Sanctæ Marthæ": {
+      "wikidata": "Q18223942",
+      "label": "Santa Marta, Milan",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the Augustinian convent of Santa Marta, Milan (1345-1799)"
     },
     "monastérium Stabulénse": {
       "wikidata": "Q314520",
@@ -23718,6 +23914,13 @@
       "label": "Massabielle Grotto",
       "country": "FR",
       "status": "jev"
+    },
+    "sacéllum Sancti Ioánnis": {
+      "wikidata": "Q43090271",
+      "label": "Monastery of San Juan Bautista",
+      "country": "ES",
+      "status": "reviewed",
+      "note": "the monastery of San Juan that grew from the chapel and hospice Adelelmus (Lesmes) founded at Burgos"
     },
     "saltu Iurénsi": {
       "wikidata": "Q178611",
@@ -24078,6 +24281,12 @@
       "label": "Egyptians",
       "country": "EG",
       "status": "jev"
+    },
+    "Ægyptiórum monastério": {
+      "wikidata": "Q141830986",
+      "label": "Monastery of the Egyptians, Constantinople",
+      "country": "TR",
+      "status": "reviewed"
     },
     "Ægéis in Cilícia": {
       "wikidata": "Q404231",
