@@ -850,10 +850,11 @@
       "status": "auto"
     },
     "Anastasiopolitánus": {
-      "wikidata": "Q486772",
-      "label": "Anastasiopoli",
+      "wikidata": "Q794382",
+      "label": "Beypazarı",
       "country": "TR",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "locator: Anastasiopolis in Galatia, Theodore of Sykeon's see, has no item of its own; placed at Beypazarı. Not the Thracian see Q486772"
     },
     "Anastasiópoli in Galátia": {
       "wikidata": "Q11931097",
@@ -3118,10 +3119,11 @@
       "status": "jev"
     },
     "Bagaiénsis in Numídia": {
-      "wikidata": "Q799816",
+      "wikidata": "Q54965381",
       "label": "Bagai",
       "country": "DZ",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "the ancient city (Ksar Baghai), not the titular see Q799816"
     },
     "Baiocénsem": {
       "wikidata": "Q183910",
@@ -15625,8 +15627,8 @@
       "status": "reviewed"
     },
     "Monte Luco": {
-      "wikidata": "Q18288664",
-      "label": "Hermit movement on Monteluco",
+      "wikidata": "Q1089152",
+      "label": "Monteluco",
       "country": "IT",
       "status": "reviewed"
     },
@@ -15727,8 +15729,8 @@
       "status": "reviewed"
     },
     "Montis Luci": {
-      "wikidata": "Q18288664",
-      "label": "Hermit movement on Monteluco",
+      "wikidata": "Q1089152",
+      "label": "Monteluco",
       "country": "IT",
       "status": "reviewed"
     },
@@ -19316,10 +19318,11 @@
       "status": "reviewed"
     },
     "Sasiménsis": {
-      "wikidata": "Q3950646",
+      "wikidata": "Q2092919",
       "label": "Sasima",
       "country": "TR",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "the ancient city, not the titular see Q3950646"
     },
     "Saviliáni in Subalpínis": {
       "wikidata": "Q20489",
