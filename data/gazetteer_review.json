@@ -43,7 +43,7 @@
       ],
       "decision": null,
       "edited": null,
-      "reasoning": "Research (2026-10-24): the Vicariate Apostolic of Western Oceania (1836-1845), Chanel's mission field; it spanned several island states, so no single country (decide with no country).",
+      "reasoning": "Research (2026-10-24): the Vicariate Apostolic of Western Oceania (1836-1845), Chanel's mission field; it spanned several island states, so no single country.",
       "jev": {
         "kind": "place",
         "probability": 0.99,
@@ -51,7 +51,8 @@
         "model": "jev-1.14.0"
       },
       "suggested": {
-        "wikidata": "Q27779387"
+        "wikidata": "Q27779387",
+        "no_country": true
       },
       "confidence": "medium"
     },
@@ -482,7 +483,7 @@
         },
         {
           "wikidata": "Q5485281",
-          "label": "Q5485281",
+          "label": "Urci",
           "description": "ancient city of Spain",
           "country": "ES",
           "countries": [
@@ -606,7 +607,7 @@
         },
         {
           "wikidata": "Q20571496",
-          "label": "Q20571496",
+          "label": "Eparchy of Velika",
           "description": "",
           "country": null,
           "countries": [],
@@ -625,7 +626,8 @@
       "edited": null,
       "reasoning": "Research (2026-10-24): the eparchy of Velika, Clement of Ohrid's see; its site is disputed (near Strumica, Veles, Bitola, or in the western Rhodopes), so no single country. The Italian \"Drama\" is unsupported.",
       "suggested": {
-        "wikidata": "Q20571496"
+        "wikidata": "Q20571496",
+        "no_country": true
       },
       "confidence": "medium",
       "jev": {
@@ -3192,9 +3194,10 @@
         "confidence": 0.93,
         "model": "jev-1.14.0"
       },
-      "reasoning": "Research (2026-10-24): the East in general (decide with no country).",
+      "reasoning": "Research (2026-10-24): the East in general.",
       "suggested": {
-        "wikidata": "Q205653"
+        "wikidata": "Q205653",
+        "no_country": true
       },
       "confidence": "high"
     },
@@ -3467,9 +3470,10 @@
         "confidence": 0.98,
         "model": "jev-1.14.0"
       },
-      "reasoning": "Research (2026-10-24): the kingdoms of Europe: Europe (decide with no country).",
+      "reasoning": "Research (2026-10-24): the kingdoms of Europe: Europe.",
       "suggested": {
-        "wikidata": "Q46"
+        "wikidata": "Q46",
+        "no_country": true
       },
       "confidence": "high"
     },
@@ -4299,7 +4303,7 @@
       ],
       "decision": null,
       "edited": null,
-      "reasoning": "Research (2026-10-24): the Land of Uz, Job's homeland; its location is unknown (decide with no country).",
+      "reasoning": "Research (2026-10-24): the Land of Uz, Job's homeland; its location is unknown.",
       "jev": {
         "decision": "reject",
         "reason": "Jev: none of the candidates is this place",
@@ -4309,7 +4313,8 @@
         "model": "jev-1.14.0"
       },
       "suggested": {
-        "wikidata": "Q1967878"
+        "wikidata": "Q1967878",
+        "no_country": true
       },
       "confidence": "high"
     },
