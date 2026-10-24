@@ -72405,7 +72405,10 @@
           "role": "foundation",
           "la": "cœnóbium Sancti Matthǽi sub Lacu",
           "it": "cenobio di San Matteo di Montecchio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775911",
+          "label": "San Pastore",
+          "country": "IT"
         },
         {
           "role": "religious_life",
@@ -72424,7 +72427,7 @@
         "basis": "death",
         "source": "estimate"
       },
-      "note": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234."
+      "note": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time."
     },
     {
       "id": "mr:0724-christina-mirabilis",

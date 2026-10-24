@@ -224,7 +224,7 @@ ENTRY_NOTES = {
     "mr:0705-dometius-medicus": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified.",
     "mr:0930-gregorius-illuminator": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown.",
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
-    "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234.",
+    "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
 }
 
