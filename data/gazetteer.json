@@ -23866,7 +23866,8 @@
       "wikidata": "Q3949877",
       "label": "Santuario di Fonte Colombo",
       "country": "IT",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "a locator, not the place: the hermitage of Monte Carnerio by Fonte Colombo; the mountain has no item"
     },
     "monte Cǽlio ad clivum Scáuri": {
       "wikidata": "Q216104",
@@ -24174,7 +24175,8 @@
       "wikidata": "Q108317077",
       "label": "Our Lady of the Martyrs of Thailand Shrine",
       "country": "TH",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "a locator, not the place: the stream near Song Khon where Philip Siphong was killed has no item; the shrine at Song Khon locates it"
     },
     "románus": {
       "wikidata": "Q1651392",
@@ -24412,14 +24414,15 @@
       "status": "jev"
     },
     "tota Hispánia": {
-      "wikidata": "Q126936",
-      "label": "Visigothic Kingdom",
+      "wikidata": "Q12837",
+      "label": "Iberian Peninsula",
       "country": null,
       "countries": [
         "ES",
         "PT"
       ],
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "the land, not the Visigothic state: an era-free item (eulogy-dates design, era-sensitive places, point 2)"
     },
     "trans Iordánem": {
       "wikidata": "Q7834492",
@@ -24521,7 +24524,8 @@
       "wikidata": "Q108317077",
       "label": "Our Lady of the Martyrs of Thailand Shrine",
       "country": "TH",
-      "status": "reviewed"
+      "status": "reviewed",
+      "note": "a locator, not the place: the village of Song Khon has no item; the shrine of the Martyrs of Thailand stands there"
     },
     "vici cœmetério christianórum": {
       "wikidata": null,
