@@ -1272,6 +1272,17 @@ class VerifySuggestionsTest(unittest.TestCase):
 
 
 
+class QueuedCandidateShapeTest(unittest.TestCase):
+    """The review page renders every candidate's evidence: a candidate in the raw client shape broke it."""
+    def test_a_candidate_without_the_published_keys_fails_validation(self):
+        published = bg.published({k: None for k in bg.PUBLISHED_KEYS}, [])
+        raw = {k: None for k in bg.PUBLISHED_KEYS} | {"admin_qids": []}
+        for c, bad in ((published, False), (raw, True)):
+            errors = bg.validate({}, INDEX, [{"id": "Fictópoli", "candidates": [c]}])
+            self.assertEqual(bool(errors), bad, errors)
+        self.assertIn("evidence", bg.validate({}, INDEX, [{"id": "Fictópoli", "candidates": [raw]}])[0])
+
+
 class CommittedGazetteerTest(unittest.TestCase):
     def test_committed_files_validate(self):
         if not (REPO / "data" / "gazetteer.json").exists():

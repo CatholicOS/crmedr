@@ -291,6 +291,10 @@ def validate(gazetteer, index, review_ops=()):
     for op in review_ops:
         if op.get("id") in gazetteer:
             errors.append(f"gazetteer {op['id']!r}: decided but also queued in data/gazetteer_review.json")
+        for c in op.get("candidates", []):
+            if set(c) != set(PUBLISHED_KEYS) | {"evidence"}:
+                errors.append(f"review {op.get('id')!r}: candidate {c.get('wikidata')} has keys {sorted(c)}, "
+                              f"not the published ones (PUBLISHED_KEYS and evidence)")
     return errors
 
 
