@@ -8854,7 +8854,13 @@
     "In Rǽtia": {
       "wikidata": "Q156789",
       "label": "Raetia",
-      "country": "CH",
+      "country": null,
+      "countries": [
+        "CH",
+        "DE",
+        "AT",
+        "IT"
+      ],
       "status": "reviewed"
     },
     "In Sabínis": {
@@ -15051,6 +15057,11 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Maronéæ prope Antiochíam in Sýria": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Maronia near Antioch, from Jerome's Life of Malchus: unidentified site; the Greek Maroneia candidates are wrong"
+    },
     "Martyrópoli": {
       "wikidata": "Q945404",
       "label": "Silvan",
@@ -15062,6 +15073,11 @@
       "label": "Kwidzyn",
       "country": "PL",
       "status": "reviewed"
+    },
+    "Massilitanórum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Martyrs of Africa on whom Augustine preached; no place or people item found for Massilitani (Massa Candida Q6784101 is a different group). Unclear whether a place exists"
     },
     "Massíliæ": {
       "wikidata": "Q23482",
@@ -15400,6 +15416,11 @@
       "label": "Micy",
       "country": "FR",
       "status": "jev"
+    },
+    "Midilénsis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Midila (Byzacena): only the titular see Q1931959 exists, which is never the place; no town item found for Mdila. A new item would be warranted only if the site is identified"
     },
     "Miléti in Chária": {
       "wikidata": "Q169460",
@@ -15779,6 +15800,11 @@
       "country": "FR",
       "status": "reviewed"
     },
+    "Mulénsis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Monastery of Mula (Leo-Luke's house) in Calabria/Mercurion; site not securely identifiable, no item. New item not warranted"
+    },
     "Muri in Lucánia": {
       "wikidata": "Q52613",
       "label": "Muro Lucano",
@@ -15988,6 +16014,11 @@
       "label": "Naples",
       "country": "IT",
       "status": "jev"
+    },
+    "Neapolitánæ provínciæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: A Franciscan province, an administrative unit of the order, not a geographic place"
     },
     "Negranénsium": {
       "wikidata": "Q27174",
@@ -19522,6 +19553,11 @@
       "country": "IT",
       "status": "jev"
     },
+    "Septemtriónis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Septemtrio is the North in general (Ansgar's mission field), a vague macro-area; nothing to link"
+    },
     "Septémpedæ in Picéno Itáliæ": {
       "wikidata": "Q94955",
       "label": "San Severino Marche",
@@ -20358,6 +20394,11 @@
       "label": "Teruel City",
       "country": "ES",
       "status": "jev"
+    },
+    "Teudalénsis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Teudala is a North African see; no Wikidata item found and its location is not identified; a new item would be warranted only if the site is identified"
     },
     "Thagasténsis in Numídia": {
       "wikidata": "Q402992",
@@ -22250,6 +22291,11 @@
       ],
       "status": "jev"
     },
+    "basílicæ Sancti Priváti Gabalórum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Basilica of Saint Privatus of the Gabali (Mende or Javols); no item for the basilica; location uncertain"
+    },
     "basílicæ Sancti Saturníni": {
       "wikidata": "Q1010268",
       "label": "Basilica of St. Sernin",
@@ -22279,6 +22325,11 @@
       "label": "Welsh people",
       "country": "GB",
       "status": "reviewed"
+    },
+    "campo Quinque Iúgerum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Field near Son Tay, Tonkin, where Schoeffler was beheaded; no item found, no reliable location"
     },
     "campo detentiónis Dacháni": {
       "wikidata": "Q151198",
@@ -22427,6 +22478,11 @@
       "label": "Basilica of Santa Maria Novella",
       "country": "IT",
       "status": "jev"
+    },
+    "convéntus Parménsis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Carmelite convent of Parma, unnamed; no item identifiable. New item not warranted"
     },
     "cáppadox": {
       "wikidata": "Q5059004",
@@ -22692,6 +22748,11 @@
       "country": "FR",
       "status": "jev"
     },
+    "erémo apud Aspháltitem lacum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Unnamed hermitage in the desert by the Dead Sea (Asphaltites); the Italian wrongly names Lake Mareotis. A 'near' phrase is not the lake"
+    },
     "erémo montis Zobor": {
       "wikidata": "Q218078",
       "label": "Zobor",
@@ -22854,6 +22915,11 @@
       "country": "EG",
       "status": "jev"
     },
+    "in vico «reductióne» nuncupáto": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Unnamed Jesuit reduction in Paraguay, described generically"
+    },
     "inter Baváriam et Bohémiam": {
       "wikidata": "Q157290",
       "label": "Bohemian Forest",
@@ -22893,6 +22959,11 @@
       "label": "Holy Lavra of Saint Sabbas",
       "country": "PS",
       "status": "jev"
+    },
+    "loca sacra": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Generic phrase 'holy places' of pilgrimage, not one identifiable place"
     },
     "loca sancta": {
       "wikidata": null,
@@ -23047,6 +23118,11 @@
       "country": "TR",
       "status": "jev"
     },
+    "monastérii Sancti Andréæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Monastery of St Andrew in Scotland (Felan); identity uncertain, no item found"
+    },
     "monastérii Sancti Eugéndi": {
       "wikidata": "Q118323499",
       "label": "Sant'Eugendo",
@@ -23106,6 +23182,11 @@
       "label": "abbaye de l'Île Barbe",
       "country": "FR",
       "status": "jev"
+    },
+    "monastériii Sanctæ Maríæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Unnamed St Mary monastery at Le Mans; not identifiable"
     },
     "monastério Africi prope Rhégium Iúlii": {
       "wikidata": "Q54556",
@@ -23167,11 +23248,21 @@
       "country": "FR",
       "status": "jev"
     },
+    "monastério Papiénsi": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: A monastery of Pavia from which Appian was sent; which one is unidentified"
+    },
     "monastério Pauliacénsi": {
       "wikidata": "Q2820653",
       "label": "Pavilly Abbey",
       "country": "FR",
       "status": "jev"
+    },
+    "monastério Pinnæ Melláriæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Monastery of Penamelaria near Cordoba (Pomposa): no item found, site uncertain"
     },
     "monastério Rhuvigiénsi": {
       "wikidata": "Q1775894",
@@ -23221,6 +23312,11 @@
       "country": "FR",
       "status": "jev"
     },
+    "monastério Storacénsi": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Monastery of Storaco near Fano/Marche region; not identified, no item found"
+    },
     "monastério sancti Mevénni": {
       "wikidata": "Q2820696",
       "label": "Abbey of St Meen",
@@ -23269,6 +23365,11 @@
       "country": "IT",
       "status": "jev"
     },
+    "monastérium Græcórum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Generic Greek monastery in Calabria founded by Bartholomew of Simeri; no specific item"
+    },
     "monastérium Latiniacénse": {
       "wikidata": "Q333978",
       "label": "Lagny Abbey",
@@ -23304,6 +23405,11 @@
       "label": "St. Martin's Cathedral, Utrecht",
       "country": "NL",
       "status": "reviewed"
+    },
+    "monastérium Sancti Michaélis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Monastery of St Michael founded by John of Siponto on the Dalmatian coast facing Gargano (possibly on Palagruza Q378556): not verified"
     },
     "monastérium Sancti Onúphrii": {
       "wikidata": "Q1627320",
@@ -23364,6 +23470,11 @@
       "label": "Mount Pellegrino",
       "country": "IT",
       "status": "jev"
+    },
+    "monte Quros in Arménia": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Mount Quros in Armenia is unidentified; no item found"
     },
     "monte Sina": {
       "wikidata": "Q377485",
@@ -23454,6 +23565,11 @@
       "country": "IT",
       "status": "jev"
     },
+    "pagi cœmetério": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Unnamed village cemetery at Song-Khon, not a specific place"
+    },
     "pago Lemovicénsi": {
       "wikidata": "Q45656",
       "label": "Limoges",
@@ -23515,6 +23631,11 @@
       "country": "ZA",
       "status": "jev"
     },
+    "provínciæ hispánæ": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: A religious province of the Order of Minims, an administrative unit of the order"
+    },
     "pátria Pictaviénsi": {
       "wikidata": "Q6616",
       "label": "Poitiers",
@@ -23562,6 +23683,11 @@
       "label": "Italy",
       "country": "IT",
       "status": "reviewed"
+    },
+    "regiónibus hǽresi Albigénsi perturbátis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Diffuse area troubled by Albigensian heresy, not a single place"
     },
     "regiónis Matriténsis": {
       "wikidata": "Q2807",
@@ -23702,6 +23828,11 @@
       "country": "IT",
       "status": "jev"
     },
+    "spelúncam prope confluéntes ramos Euphrátis": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Unnamed cave near the Euphrates sources in Armenia"
+    },
     "syri": {
       "wikidata": "Q878607",
       "label": "Syrians",
@@ -23751,6 +23882,11 @@
         "IL"
       ],
       "status": "reviewed"
+    },
+    "territórii románi": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not a place: Vague phrase for the Roman area; no single place"
     },
     "território Gálliæ Lingonénsi": {
       "wikidata": "Q203293",
@@ -23871,6 +24007,11 @@
       "label": "Beinwil am See",
       "country": "CH",
       "status": "reviewed"
+    },
+    "vici cœmetério christianórum": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Christian cemetery of the vicus near Tours; unidentified"
     },
     "vico Ars prope Bellícium in Gállia": {
       "wikidata": "Q206665",
@@ -24027,6 +24168,11 @@
       "label": "Taiwan Island",
       "country": "TW",
       "status": "jev"
+    },
+    "ínsula Halóna": {
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "no item, unlocated: Island of Alone near Cyzicus (Propontis), possibly a Marmara island; no item identified"
     },
     "ínsula Horáta": {
       "wikidata": "Q13837005",

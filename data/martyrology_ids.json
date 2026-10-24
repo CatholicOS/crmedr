@@ -102481,7 +102481,13 @@
           "source": "lead",
           "wikidata": "Q156789",
           "label": "Raetia",
-          "country": "CH"
+          "country": null,
+          "countries": [
+            "CH",
+            "DE",
+            "AT",
+            "IT"
+          ]
         },
         {
           "role": "foundation",
