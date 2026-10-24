@@ -114,7 +114,7 @@
 | 9 | 1 | `mr:0109-marcellinus` |  | IT | dies_natalis |  |  |
 | 9 | 2 | `mr:0109-hadrianus` | * | GB | dies_natalis |  |  |
 | 9 | 3 | `mr:0109-felanus` | * | GB | dies_natalis |  | The monastery of Saint Andrew of which Fillan was abbot is not securely identified. |
-| 9 | 4 | `mr:0109-eustratius-thaumaturgus` | * | TR | dies_natalis |  |  |
+| 9 | 4 | `mr:0109-eustratius-thaumaturgus` | * | TR | dies_natalis |  | The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified. |
 | 9 | 5 | `mr:0109-honoratus-de-busentiaco` | * | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:0109-iulia-della-rena` | * | IT | dies_natalis |  |  |
 | 9 | 7 | `mr:0109-antonius-fatati` | * | IT | dies_natalis |  |  |
