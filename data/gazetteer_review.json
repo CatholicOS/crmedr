@@ -398,8 +398,10 @@
           "wikidata": "Q886986",
           "label": "Kingdom of Lindsey",
           "description": "minor Angle-Saxon kingdom soon to be a part of Northumbia.",
-          "country": null,
-          "countries": [],
+          "country": "GB",
+          "countries": [
+            "GB"
+          ],
           "la": [],
           "p9314": false,
           "coords": null,
@@ -822,129 +824,6 @@
         "kind": "place",
         "probability": 0.68,
         "confidence": 0.6,
-        "model": "jev-1.14.0"
-      }
-    },
-    {
-      "op": "resolve_place",
-      "id": "Nysséni",
-      "la": "Nysséni",
-      "it": [
-        "Nissa"
-      ],
-      "occurrences": [
-        "mr:0530-basilius-et-emmelia"
-      ],
-      "claims": [],
-      "failed": [
-        "latin: no Latin label, alias or P9314 matches",
-        "country: the item has no single current country ()",
-        "type: the item is not a place"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q33959",
-          "label": "Nice",
-          "description": "comune francese",
-          "country": "FR",
-          "countries": [
-            "FR"
-          ],
-          "la": [
-            "Nicaea",
-            "Nicaea ad Varum"
-          ],
-          "p9314": false,
-          "coords": [
-            43.701944444444,
-            7.2683333333333
-          ],
-          "types": [
-            "Q484170",
-            "Q1549591"
-          ],
-          "evidence": [
-            "type"
-          ]
-        },
-        {
-          "wikidata": "Q129259",
-          "label": "Niš",
-          "description": "città della Serbia",
-          "country": "RS",
-          "countries": [
-            "RS"
-          ],
-          "la": [
-            "Naissus"
-          ],
-          "p9314": false,
-          "coords": [
-            43.319166666667,
-            21.896111111111
-          ],
-          "types": [
-            "Q37800986",
-            "Q1549591",
-            "Q56061"
-          ],
-          "evidence": [
-            "type"
-          ]
-        },
-        {
-          "wikidata": "Q270195",
-          "label": "Nissan-lez-Enserune",
-          "description": "comune francese",
-          "country": "FR",
-          "countries": [
-            "FR"
-          ],
-          "la": [
-            "Nissan-lez-Enserune"
-          ],
-          "p9314": false,
-          "coords": [
-            43.288333333333,
-            3.1286111111111
-          ],
-          "types": [
-            "Q484170"
-          ],
-          "evidence": [
-            "type"
-          ]
-        },
-        {
-          "wikidata": "Q116601",
-          "label": "International Stadium Yokohama",
-          "description": "impianto sportivo polivalente di Yokohama, Giappone",
-          "country": "JP",
-          "countries": [
-            "JP"
-          ],
-          "la": [],
-          "p9314": false,
-          "coords": [
-            35.510044,
-            139.606247
-          ],
-          "types": [
-            "Q1049757",
-            "Q483110"
-          ],
-          "evidence": []
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "reasoning": "Research: no item. Nyssa in Cappadocia (Gregory's see); no item for the town; a titular see would not be the place.",
-      "jev": {
-        "decision": "reject",
-        "reason": "Jev: none of the candidates is this place",
-        "kind": "place",
-        "probability": 0.97,
-        "confidence": 0.96,
         "model": "jev-1.14.0"
       }
     },
