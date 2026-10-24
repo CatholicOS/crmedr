@@ -354,7 +354,7 @@
 | 24 | 14 | `mr:0924-iosephus-maria-ferrandiz-hernandez` | * | ES | dies_natalis |  |  |
 | 24 | 15 | `mr:0924-incarnatio-gil-valls` | * | ES | dies_natalis |  |  |
 | 24 | 16 | `mr:0924-iosephus-raymundus-ferragud-girbes` | * | ES | dies_natalis |  |  |
-| 25 | 1 | `mr:0925-cleopha` |  | PS | commemoratio |  |  |
+| 25 | 1 | `mr:0925-cleopha` |  | PS | commemoratio |  | The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed. |
 | 25 | 2 | `mr:0925-firminus` |  | FR | dies_natalis |  |  |
 | 25 | 3 | `mr:0925-paulus-et-tatta` |  | SY | dies_natalis |  | 2004 English: Translation error: "Tatia" where the Latin has "Tattæ" (Tatta). |
 | 25 | 4 | `mr:0925-solemnis` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region of Lyon" where the Latin has "in Gállia Lugdunénsi" (the province of Lugdunensian Gaul). |
@@ -413,7 +413,7 @@
 | 28 | 17 | `mr:0928-amalia-abad-casasempere` | * | ES | dies_natalis |  |  |
 | 28 | 18 | `mr:0928-iosephus-tarrats-comaposada` | * | ES | dies_natalis |  |  |
 | 28 | 19 | `mr:0928-nicetas-budka` | * | KZ | dies_natalis |  |  |
-| 29 | (1) | `mr:0929-michael-gabriel-et-raphael-archangeli` |  | IT | dedicatio |  | 2004 English: Translation error: "long ago rebuilt" where the Latin has "antíquitus ædificátæ" (built long ago). |
+| 29 | (1) | `mr:0929-michael-gabriel-et-raphael-archangeli` |  | IT | dedicatio |  | The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth. 2004 English: Translation error: "long ago rebuilt" where the Latin has "antíquitus ædificátæ" (built long ago). |
 | 29 | 2 | `mr:0929-euthychius` |  | TR | dies_natalis |  |  |
 | 29 | 3 | `mr:0929-ripsime-et-socii` |  | AM | dies_natalis |  |  |
 | 29 | 4 | `mr:0929-fraternus` |  | FR | dies_natalis |  |  |

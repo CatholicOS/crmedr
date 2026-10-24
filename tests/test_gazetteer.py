@@ -809,6 +809,19 @@ class ValidateTest(unittest.TestCase):
                               "status": "reviewed"}}
         self.assertTrue(any("text_says" in e for e in bg.validate(says, INDEX)))
 
+    def test_possible_sites(self):
+        # Emmaus: an item for the biblical place and the curated items of its proposed sites.
+        base = {"wikidata": "Q1", "label": "x", "country": None, "countries": ["NL", "DE"], "status": "reviewed"}
+        self.assertEqual(bg.validate({"Fictópoli": {**base, "sites": ["Q2", "Q3"]}}, INDEX), [])
+        for sites, word in ((["Q2"], "two or more"), (["Q2", "Q2"], "twice"), (["Q2", "x"], "QID"),
+                            (["Q1", "Q2"], "the place itself"), ("Q2", "two or more")):
+            errors = bg.validate({"Fictópoli": {**base, "sites": sites}}, INDEX)
+            self.assertTrue(errors and word in errors[0], (sites, errors))
+        jev = {**base, "status": "jev", "sites": ["Q2", "Q3"]}
+        self.assertTrue(any("reviewed" in e for e in bg.validate({"Fictópoli": jev}, INDEX)))
+        unresolved = {"wikidata": None, "status": "unresolved", "note": "x", "sites": ["Q2", "Q3"]}
+        self.assertTrue(any("sites" in e for e in bg.validate({"Fictópoli": unresolved}, INDEX)))
+
     def test_bad_countries(self):
         base = {"wikidata": "Q1", "label": "x", "status": "reviewed"}
         for entry in (dict(base, country="NL", countries=["NL", "DE"]),

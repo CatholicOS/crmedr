@@ -5172,19 +5172,32 @@
           "role": "ministry",
           "la": "Tartarórum",
           "it": "Tartari",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41975",
+          "label": "Mongols",
+          "country": null,
+          "countries": [
+            "CN",
+            "MN"
+          ]
         },
         {
           "role": "ministry",
           "la": "Indórum",
           "it": "Indi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q862086",
+          "label": "Indians",
+          "country": "IN"
         },
         {
           "role": "ministry",
           "la": "Sinensiúm",
           "it": "Cinesi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6501380",
+          "label": "Chinese people",
+          "country": "CN"
         }
       ],
       "date": {
@@ -21114,7 +21127,10 @@
           "role": "ministry",
           "la": "Lindíssi",
           "it": "Lindsey",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q886986",
+          "label": "Kingdom of Lindsey",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -28296,7 +28312,10 @@
           "role": "mention",
           "la": "Nellenburgénsis",
           "it": "Nellenburg",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1802942",
+          "label": "County of Nellenburg",
+          "country": "DE"
         },
         {
           "role": "religious_life",
@@ -33169,7 +33188,14 @@
           "role": "journey",
           "la": "Tártaros",
           "it": "Tartari",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41975",
+          "label": "Mongols",
+          "country": null,
+          "countries": [
+            "MN",
+            "CN"
+          ]
         }
       ],
       "date": {
@@ -51668,7 +51694,10 @@
           "role": "mention",
           "la": "Nysséni",
           "it": "Nissa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3563362",
+          "label": "Nyssa",
+          "country": "TR"
         },
         {
           "role": "mention",
@@ -66141,7 +66170,10 @@
           "role": "burial",
           "la": "Máximi",
           "it": "Massimo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3663210",
+          "label": "Catacombs of Santa Felicita",
+          "country": "IT"
         },
         {
           "role": "burial",
@@ -72405,7 +72437,10 @@
           "role": "foundation",
           "la": "cœnóbium Sancti Matthǽi sub Lacu",
           "it": "cenobio di San Matteo di Montecchio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775911",
+          "label": "San Pastore",
+          "country": "IT"
         },
         {
           "role": "religious_life",
@@ -72424,7 +72459,7 @@
         "basis": "death",
         "source": "estimate"
       },
-      "note": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234."
+      "note": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time."
     },
     {
       "id": "mr:0724-christina-mirabilis",
@@ -86795,14 +86830,22 @@
           "role": "ministry",
           "la": "Salem",
           "it": "Salem",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4377375",
+          "label": "Salem",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "date": {
         "to": -1,
         "circa": true,
         "source": "estimate"
-      }
+      },
+      "note": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus."
     },
     {
       "id": "mr:0826-maximilianus",
@@ -93757,7 +93800,10 @@
           "role": "ministry",
           "la": "Ararem",
           "it": "Saône",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q187834",
+          "label": "Saône",
+          "country": "FR"
         }
       ],
       "date": {
@@ -99337,7 +99383,14 @@
           "role": "journey",
           "la": "castéllo Emmaus",
           "it": "villaggio di Emmaus",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q165887",
+          "label": "Emmaus",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "date": {
@@ -99345,7 +99398,8 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
-      }
+      },
+      "note": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed."
     },
     {
       "id": "mr:0925-firminus",
@@ -101026,7 +101080,10 @@
           "role": "dedication",
           "la": "basílicæ sub título Sancti Michaélis via Salária miliário sexto ab Urbe",
           "it": "basilica intitolata a San Michele anticamente edificata a Roma al sesto miglio della via Salaria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141832016",
+          "label": "Basilica of Saint Michael the Archangel on the Via Salaria",
+          "country": "IT"
         }
       ],
       "date": {
@@ -101034,6 +101091,7 @@
         "basis": "dedication",
         "source": "edition"
       },
+      "note": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"long ago rebuilt\" where the Latin has \"antíquitus ædificátæ\" (built long ago)."
@@ -106201,7 +106259,14 @@
           "role": "ministry",
           "la": "Livóniæ",
           "it": "léttone",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q183464",
+          "label": "Livonia",
+          "country": null,
+          "countries": [
+            "LV",
+            "EE"
+          ]
         },
         {
           "role": "religious_life",

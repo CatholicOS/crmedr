@@ -373,7 +373,7 @@
 | 25 | 11 | `mr:0825-paulus-ioannes-charles` | * | FR | dies_natalis | CEI: entry 12 | 2004 Italian: Translation error: "Septfontaines" where the Latin has "Septem Fontium" (the Cistercian abbey of Sept-Fons). |
 | 25 | 12 | `mr:0825-maria-a-transitu-iesu-sacramenti` | * | AR | dies_natalis | CEI: entry 13 |  |
 | 25 | 13 | `mr:0825-aloysius-urbano-lanaspa` | * | ES | dies_natalis | CEI: entry 14 |  |
-| 26 | 1 | `mr:0826-melchisedech-rex-et-sacerdos` |  | PS | commemoratio |  |  |
+| 26 | 1 | `mr:0826-melchisedech-rex-et-sacerdos` |  | PS | commemoratio |  | The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus. |
 | 26 | 2 | `mr:0826-maximilianus` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:0826-anastasius` |  | HR | dies_natalis |  |  |
 | 26 | 4 | `mr:0826-victor` |  | DZ | dies_natalis |  | 2004 English: Translation error: "sentenced to death by beheading" where the Latin has "cápite damnátus" (condemned to death). |
