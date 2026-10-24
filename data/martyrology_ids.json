@@ -3115,7 +3115,8 @@
           "it": "monastero di Sant’Andrea",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Saint Andrew of which Fillan was abbot is not securely identified."
     },
     {
       "id": "mr:0109-eustratius-thaumaturgus",
@@ -8996,7 +8997,8 @@
         "year": 1494,
         "basis": "death",
         "source": "wikidata"
-      }
+      },
+      "note": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown."
     },
     {
       "id": "mr:0125-emmanuel-domingo-y-sol",
@@ -20945,6 +20947,7 @@
           "source": "curated"
         }
       ],
+      "note": "The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luca, known as Leoluca)."
       }
@@ -21836,7 +21839,8 @@
           "it": "monastero di Pavia",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "Which monastery of Pavia sent Appian to Comacchio is not known."
     },
     {
       "id": "mr:0304-petrus",
@@ -41330,7 +41334,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown."
     },
     {
       "id": "mr:0501-ioannes-ludovicus-bonnard",
@@ -64291,7 +64296,8 @@
       "date": {
         "to": 1630,
         "source": "edition"
-      }
+      },
+      "note": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified."
     },
     {
       "id": "mr:0705-martha",
@@ -71248,6 +71254,7 @@
         "basis": "death",
         "source": "edition"
       },
+      "note": "The hermitage by the Dead Sea (Lake Asphaltites) where Simeon and John lived is unnamed, and its site is unknown.",
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"presso il lago di Mareotide in Egitto\" where the Latin has \"apud Asphaltitem lacum\" (the Dead Sea)."
       },
@@ -71472,6 +71479,7 @@
           "source": "curated"
         }
       ],
+      "note": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"of Massilia\" (Marseilles) where the Latin \"Massilitanórum\" denotes the African Massylitan martyrs."
       }
@@ -83968,7 +83976,8 @@
           "it": "monastero dei Greci",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown."
     },
     {
       "id": "mr:0819-guerricus",
@@ -84908,6 +84917,7 @@
         "to": 1630,
         "source": "edition"
       },
+      "note": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"a Edessa nell’antica Siria\" where the Latin has \"Edessae in Hellade\" (Edessa in Greece, in Macedonia)."
       }
@@ -91467,6 +91477,7 @@
           "country": "IT"
         }
       ],
+      "note": "The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
       }
@@ -97060,7 +97071,8 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
-      }
+      },
+      "note": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain."
     },
     {
       "id": "mr:0919-lantbertus",
@@ -100249,7 +100261,8 @@
         "year": 1115,
         "basis": "death",
         "source": "wikidata"
-      }
+      },
+      "note": "The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified."
     },
     {
       "id": "mr:0927-elzearus-de-sabran",
@@ -101684,7 +101697,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown."
     },
     {
       "id": "mr:0930-eusebia",
@@ -109699,7 +109713,8 @@
       "date": {
         "to": 1630,
         "source": "edition"
-      }
+      },
+      "note": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia."
     },
     {
       "id": "mr:1021-severinus",
@@ -110116,7 +110131,8 @@
           "it": "basilica di Saint-Privat-de-Javols",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols)."
     },
     {
       "id": "mr:1022-leotadius",
@@ -123792,6 +123808,7 @@
         "circa": true,
         "source": "estimate"
       },
+      "note": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Sufetula\" where the Latin has \"Sufetánus\" (of Sufes)."
       }
@@ -125931,7 +125948,8 @@
           "it": "monastero di Santa Maria",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified."
     },
     {
       "id": "mr:1204-sola",
@@ -130085,6 +130103,7 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "note": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
       "edition_notes": {
         "martyrologium_romanum_1914_en_unofficial": "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
       }

@@ -41,7 +41,7 @@
 | 4 | 5 | `mr:1204-felix` |  | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:1204-aprus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:1204-sigiramnus` | * | FR | dies_natalis |  |  |
-| 4 | 8 | `mr:1204-adrehildis` | * | FR | dies_natalis |  |  |
+| 4 | 8 | `mr:1204-adrehildis` | * | FR | dies_natalis |  | The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified. |
 | 4 | 9 | `mr:1204-sola` | * | DE | dies_natalis |  |  |
 | 4 | 10 | `mr:1204-ioannes-thaumaturgus` |  | TR | dies_natalis | same as `mr:1205-ioannes-thaumaturgus` |  |
 | 4 | 11 | `mr:1204-anno` |  | DE | dies_natalis |  |  |
@@ -188,7 +188,7 @@
 | 17 | 11 | `mr:1217-henricus-cormier` | * | IT | dies_natalis |  |  |
 | 18 | 1 | `mr:1218-malachias-propheta` |  | IQ | commemoratio |  |  |
 | 18 | 2 | `mr:1218-namphamo-et-socii` |  | TN | commemoratio |  |  |
-| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | 1914 English: Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus. |
+| 18 | 3 | `mr:1218-gatianus` |  | FR | dies_natalis |  | The site of the Christian cemetery at Tours where Gatian was buried is not identified. 1914 English: Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus. |
 | 18 | 4 | `mr:1218-flannanus` | * | IE | dies_natalis |  |  |
 | 18 | 5 | `mr:1218-winebaldus` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "Hildesheim" where the Latin has "Heidenheiménsi" (Heidenheim), the monastery Saint Winebald founded. |
 | 18 | 6 | `mr:1218-paulus-nguyen-van-my-et-petrus-truong-van` |  | VN | dies_natalis |  |  |

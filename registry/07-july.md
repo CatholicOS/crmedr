@@ -61,7 +61,7 @@
 | 5 | 2 | `mr:0705-stephanus-de-nicaea` |  | IT | dies_natalis |  |  |
 | 5 | 3 | `mr:0705-cyprilla` |  | LY | dies_natalis |  |  |
 | 5 | 4 | `mr:0705-athanasius-hierosolymitanus` |  | PS | commemoratio |  |  |
-| 5 | 5 | `mr:0705-dometius-medicus` |  | TR | commemoratio |  |  |
+| 5 | 5 | `mr:0705-dometius-medicus` |  | TR | commemoratio |  | Mount Quros in Armenia, where Dometius lived as a hermit, is not identified. |
 | 5 | 6 | `mr:0705-martha` | * | TR | dies_natalis |  |  |
 | 5 | 7 | `mr:0705-thomas` | * | IT | dies_natalis |  |  |
 | 5 | 8 | `mr:0705-athanasius` | * | GR | dies_natalis |  |  |
@@ -298,7 +298,7 @@
 | 20 | 17 | `mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu` | * | ES | dies_natalis |  | 2004 English: Translation error: the clause "et paulo post plumbis in via transfóssæ" (and shortly afterwards shot in the street) is omitted. |
 | 21 | (1) | `mr:0721-laurentius-de-brundusio` |  | IT | celebratio |  |  |
 | 21 | 2 | `mr:0721-victor` |  | FR | dies_natalis |  | 2004 English: Translation error: "the province of France" where the Latin "in Província Gálliæ" means Provence. |
-| 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis | same as `mr:0701-simeon-salus` | 2004 Italian: Translation error: "presso il lago di Mareotide in Egitto" where the Latin has "apud Asphaltitem lacum" (the Dead Sea). |
+| 21 | 3 | `mr:0721-simeon-salus` |  | SY | dies_natalis | same as `mr:0701-simeon-salus` | The hermitage by the Dead Sea (Lake Asphaltites) where Simeon and John lived is unnamed, and its site is unknown. 2004 Italian: Translation error: "presso il lago di Mareotide in Egitto" where the Latin has "apud Asphaltitem lacum" (the Dead Sea). |
 | 21 | 4 | `mr:0721-praxedes` |  | IT | commemoratio |  |  |
 | 21 | 5 | `mr:0721-arbogastus` |  | FR | dies_natalis |  |  |
 | 21 | 6 | `mr:0721-gabriel-pergaud` | * | FR | dies_natalis |  | 2004 English: Translation error: "Lugduni" where the Latin has "beáti" (blessed). |
@@ -306,7 +306,7 @@
 | 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  | 2004 English: Translation error: "Yomenienina" where the Latin "Iomnienínam" is the city of Yongnian. |
 | 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  | By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised from an obligatory memorial to a feast. |
 | 22 | 2 | `mr:0722-platon` |  | TR | dies_natalis |  |  |
-| 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  | 2004 English: Translation error: "of Massilia" (Marseilles) where the Latin "Massilitanórum" denotes the African Massylitan martyrs. |
+| 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  | The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille. 2004 English: Translation error: "of Massilia" (Marseilles) where the Latin "Massilitanórum" denotes the African Massylitan martyrs. |
 | 22 | 4 | `mr:0722-cyrillus` |  | TR | dies_natalis |  |  |
 | 22 | 5 | `mr:0722-anastasius` |  | GE | dies_natalis |  |  |
 | 22 | 6 | `mr:0722-wandregisilus` |  | FR | dies_natalis |  |  |
