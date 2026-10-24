@@ -2389,6 +2389,12 @@
       "country": "IE",
       "status": "reviewed"
     },
+    "Ararem": {
+      "wikidata": "Q187834",
+      "label": "Saône",
+      "country": "FR",
+      "status": "reviewed"
+    },
     "Arausióne in Província Gálliæ": {
       "wikidata": "Q187796",
       "label": "Orange",
@@ -13708,6 +13714,12 @@
       "country": "IN",
       "status": "reviewed"
     },
+    "Indórum": {
+      "wikidata": "Q862086",
+      "label": "Indians",
+      "country": "IN",
+      "status": "reviewed"
+    },
     "Insulis Philippínis": {
       "wikidata": "Q928",
       "label": "Philippines",
@@ -14431,6 +14443,12 @@
       "country": "GB",
       "status": "auto"
     },
+    "Lindíssi": {
+      "wikidata": "Q886986",
+      "label": "Kingdom of Lindsey",
+      "country": "GB",
+      "status": "reviewed"
+    },
     "Lingonénsis": {
       "wikidata": "Q203293",
       "label": "Langres",
@@ -14471,6 +14489,17 @@
       "wikidata": "Q49683",
       "label": "Grand Duchy of Lithuania",
       "country": "LT",
+      "status": "reviewed"
+    },
+    "Livóniæ": {
+      "wikidata": "Q183464",
+      "label": "Livonia",
+      "country": null,
+      "countries": [
+        "LV",
+        "EE",
+        "LT"
+      ],
       "status": "reviewed"
     },
     "Loccis super Ingerim in pago Turonénsi Gálliæ": {
@@ -15859,6 +15888,12 @@
       "country": "IT",
       "status": "auto"
     },
+    "Máximi": {
+      "wikidata": "Q3663210",
+      "label": "Catacomb di Santa Felicita",
+      "country": "IT",
+      "status": "reviewed"
+    },
     "Méxici": {
       "wikidata": "Q96",
       "label": "Mexico",
@@ -16030,6 +16065,12 @@
       "wikidata": "Q27174",
       "label": "Najran",
       "country": "SA",
+      "status": "reviewed"
+    },
+    "Nellenburgénsis": {
+      "wikidata": "Q1802942",
+      "label": "County of Nellenburg",
+      "country": "DE",
       "status": "reviewed"
     },
     "Nemptodurénsis": {
@@ -19699,6 +19740,12 @@
       ],
       "status": "jev"
     },
+    "Sinensiúm": {
+      "wikidata": "Q6501380",
+      "label": "Chinese people",
+      "country": "CN",
+      "status": "reviewed"
+    },
     "Singidúni in Mœsia": {
       "wikidata": "Q3711",
       "label": "Belgrade",
@@ -20350,6 +20397,16 @@
       "label": "Tarsus",
       "country": "TR",
       "status": "jev"
+    },
+    "Tartarórum": {
+      "wikidata": "Q41975",
+      "label": "Mongols",
+      "country": null,
+      "countries": [
+        "CN",
+        "MN"
+      ],
+      "status": "reviewed"
     },
     "Taruannénsis": {
       "wikidata": "Q261399",
@@ -21156,6 +21213,16 @@
       "wikidata": "Q65050938",
       "label": "Tarsus",
       "country": "TR",
+      "status": "reviewed"
+    },
+    "Tártaros": {
+      "wikidata": "Q41975",
+      "label": "Mongols",
+      "country": null,
+      "countries": [
+        "MN",
+        "CN"
+      ],
       "status": "reviewed"
     },
     "Tíburi in Látio": {

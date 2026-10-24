@@ -5172,19 +5172,32 @@
           "role": "ministry",
           "la": "Tartarórum",
           "it": "Tartari",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41975",
+          "label": "Mongols",
+          "country": null,
+          "countries": [
+            "CN",
+            "MN"
+          ]
         },
         {
           "role": "ministry",
           "la": "Indórum",
           "it": "Indi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q862086",
+          "label": "Indians",
+          "country": "IN"
         },
         {
           "role": "ministry",
           "la": "Sinensiúm",
           "it": "Cinesi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q6501380",
+          "label": "Chinese people",
+          "country": "CN"
         }
       ],
       "date": {
@@ -21114,7 +21127,10 @@
           "role": "ministry",
           "la": "Lindíssi",
           "it": "Lindsey",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q886986",
+          "label": "Kingdom of Lindsey",
+          "country": "GB"
         },
         {
           "role": "ministry",
@@ -28296,7 +28312,10 @@
           "role": "mention",
           "la": "Nellenburgénsis",
           "it": "Nellenburg",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1802942",
+          "label": "County of Nellenburg",
+          "country": "DE"
         },
         {
           "role": "religious_life",
@@ -33169,7 +33188,14 @@
           "role": "journey",
           "la": "Tártaros",
           "it": "Tartari",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q41975",
+          "label": "Mongols",
+          "country": null,
+          "countries": [
+            "MN",
+            "CN"
+          ]
         }
       ],
       "date": {
@@ -66144,7 +66170,10 @@
           "role": "burial",
           "la": "Máximi",
           "it": "Massimo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3663210",
+          "label": "Catacomb di Santa Felicita",
+          "country": "IT"
         },
         {
           "role": "burial",
@@ -93771,7 +93800,10 @@
           "role": "ministry",
           "la": "Ararem",
           "it": "Saône",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q187834",
+          "label": "Saône",
+          "country": "FR"
         }
       ],
       "date": {
@@ -106227,7 +106259,15 @@
           "role": "ministry",
           "la": "Livóniæ",
           "it": "léttone",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q183464",
+          "label": "Livonia",
+          "country": null,
+          "countries": [
+            "LV",
+            "EE",
+            "LT"
+          ]
         },
         {
           "role": "religious_life",
