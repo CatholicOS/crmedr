@@ -359,7 +359,7 @@
 | 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  |  |
 | 27 | 15 | `mr:1127-bronislaus-kostowski` | * | DE | dies_natalis |  | 2004 Latin: Spelling error: "Kostowski" for Kostkowski. |
 | 28 | 1 | `mr:1128-irenarchus` |  | TR | dies_natalis | same as `mr:1127-irenarchus-et-socii` |  |
-| 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitanus` |  | TN | commemoratio |  | 2004 English: Translation error: "Sufetula" where the Latin has "Sufetánus" (of Sufes). |
+| 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitanus` |  | TN | commemoratio |  | The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified. 2004 English: Translation error: "Sufetula" where the Latin has "Sufetánus" (of Sufes). |
 | 28 | 3 | `mr:1128-stephanus` |  | TR | dies_natalis |  |  |
 | 28 | 4 | `mr:1128-theodora` | * | IT | dies_natalis |  |  |
 | 28 | 5 | `mr:1128-iacobus-picenus` |  | IT | depositio |  |  |

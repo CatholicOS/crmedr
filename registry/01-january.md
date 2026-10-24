@@ -113,7 +113,7 @@
 | 8 | 13 | `mr:0108-eduardus-waterson` | * | GB | dies_natalis |  |  |
 | 9 | 1 | `mr:0109-marcellinus` |  | IT | dies_natalis |  |  |
 | 9 | 2 | `mr:0109-hadrianus` | * | GB | dies_natalis |  |  |
-| 9 | 3 | `mr:0109-felanus` | * | GB | dies_natalis |  |  |
+| 9 | 3 | `mr:0109-felanus` | * | GB | dies_natalis |  | The monastery of Saint Andrew of which Fillan was abbot is not securely identified. |
 | 9 | 4 | `mr:0109-eustratius-thaumaturgus` | * | TR | dies_natalis |  |  |
 | 9 | 5 | `mr:0109-honoratus-de-busentiaco` | * | FR | dies_natalis |  |  |
 | 9 | 6 | `mr:0109-iulia-della-rena` | * | IT | dies_natalis |  |  |
@@ -320,7 +320,7 @@
 | 25 | 9 | `mr:0125-poppo` |  | FR | dies_natalis |  |  |
 | 25 | 10 | `mr:0125-henricus-suso` | * | DE | dies_natalis |  |  |
 | 25 | 11 | `mr:0125-antonius-migliorati` | * | IT | dies_natalis |  | 2004 English: Translation error: "Amando" where the Latin has "Amándulæ" (Amandola). |
-| 25 | 12 | `mr:0125-eleonora-girlani` | * | IT | dies_natalis |  |  |
+| 25 | 12 | `mr:0125-eleonora-girlani` | * | IT | dies_natalis |  | The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown. |
 | 25 | 13 | `mr:0125-emmanuel-domingo-y-sol` | * | ES | dies_natalis |  |  |
 | 25 | 14 | `mr:0125-teresia-grillo` | * | IT | dies_natalis |  |  |
 | 25 | 15 | `mr:0125-antonius-swiadek` | * | DE | dies_natalis |  |  |

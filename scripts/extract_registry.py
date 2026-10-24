@@ -204,6 +204,28 @@ ENTRY_NOTES = {
     "mr:1220-vincentius-romano": "Vincenzo Romano, blessed in the 2004 editions, was canonized on 14 October 2018.",
     "mr:1223-antonius-galvao-de-franca": "Anthony of St Anne Galvão, blessed in the 2004 editions, was canonized on 11 May 2007.",
     "mr:1228-catharina-volpicelli": "Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009.",
+    # Places with no known site (gazetteer status unresolved, crmedr #178): the eulogy names a
+    # place whose location is unidentified or unknown.
+    "mr:1021-malchus": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia.",
+    "mr:0722-martyres-massilitani": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
+    "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
+    "mr:0301-leo-lucas": "The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified.",
+    "mr:1022-lupentius": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
+    "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
+    "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
+    "mr:0721-simeon-salus": "The hermitage by the Dead Sea (Lake Asphaltites) where Simeon and John lived is unnamed, and its site is unknown.",
+    "mr:0109-felanus": "The monastery of Saint Andrew of which Fillan was abbot is not securely identified.",
+    "mr:1204-adrehildis": "The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified.",
+    "mr:0304-appianus": "Which monastery of Pavia sent Appian to Comacchio is not known.",
+    "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
+    "mr:0927-bonfilius": "The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified.",
+    "mr:0819-bartholomaeus-de-simero": "The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown.",
+    "mr:0905-ioannes-bonus-de-siponto": "The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested.",
+    "mr:0705-dometius-medicus": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified.",
+    "mr:0930-gregorius-illuminator": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown.",
+    "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
+    "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234.",
+    "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
 }
 
 # The 2004-family editions. The registry's main placement is the Latin print;

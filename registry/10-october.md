@@ -273,7 +273,7 @@
 | 21 | 1 | `mr:1021-dasius-et-socii` |  | TR | dies_natalis |  |  |
 | 21 | 2 | `mr:1021-virgines-coloniae-agrippinae` |  | DE | commemoratio |  |  |
 | 21 | 3 | `mr:1021-hilarion` |  | CY | dies_natalis |  |  |
-| 21 | 4 | `mr:1021-malchus` |  | TR | commemoratio |  |  |
+| 21 | 4 | `mr:1021-malchus` |  | TR | commemoratio |  | The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia. |
 | 21 | 5 | `mr:1021-severinus` |  | FR | dies_natalis |  |  |
 | 21 | 6 | `mr:1021-cilinia` |  | FR | dies_natalis |  |  |
 | 21 | 7 | `mr:1021-viator` |  | FR | commemoratio |  |  |
@@ -287,7 +287,7 @@
 | 22 | 3 | `mr:1022-philippus-et-hermes` |  | TR | dies_natalis |  |  |
 | 22 | 4 | `mr:1022-mallonus` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region around Lyon" where the Latin has "Gállia Lugdunénsi" (the Roman province of Lugdunensis, not the area of Lyon). |
 | 22 | 5 | `mr:1022-valerius` | * | FR | dies_natalis |  |  |
-| 22 | 6 | `mr:1022-lupentius` | * | FR | dies_natalis |  |  |
+| 22 | 6 | `mr:1022-lupentius` | * | FR | dies_natalis |  | The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols). |
 | 22 | 7 | `mr:1022-leotadius` | * | FR | dies_natalis |  |  |
 | 22 | 8 | `mr:1022-moderanus` | * | IT | dies_natalis |  |  |
 | 22 | 9 | `mr:1022-benedictus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "a Mézières" where the Latin has "Maceráci" (Massérac, near Nantes). |

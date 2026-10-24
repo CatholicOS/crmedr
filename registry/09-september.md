@@ -71,7 +71,7 @@
 | 5 | 3 | `mr:0905-urbanus-et-socii` |  | TR | dies_natalis |  |  |
 | 5 | 4 | `mr:0905-bertinus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "fu deposto insieme a san Mummolino" (buried together with Saint Mummolinus) where the Latin says the monastery was founded together with Saint Mummolinus. |
 | 5 | 5 | `mr:0905-alpertus` | * | IT | dies_natalis |  |  |
-| 5 | 6 | `mr:0905-ioannes-bonus-de-siponto` | * | HR | dies_natalis |  | 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
+| 5 | 6 | `mr:0905-ioannes-bonus-de-siponto` | * | HR | dies_natalis |  | The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested. 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
 | 5 | 7 | `mr:0905-gulielmus-browne` | * | GB | dies_natalis |  |  |
 | 5 | 8 | `mr:0905-florentius-dumontet-de-cardaillac` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh` |  | VN | dies_natalis |  |  |
@@ -269,7 +269,7 @@
 | 19 | 6 | `mr:0919-marianus` |  | FR | dies_natalis | same as `mr:0819-marianus` |  |
 | 19 | 7 | `mr:0919-goericus` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0919-theodorus` |  | GB | dies_natalis |  |  |
-| 19 | 9 | `mr:0919-pomposa` |  | ES | dies_natalis |  |  |
+| 19 | 9 | `mr:0919-pomposa` |  | ES | dies_natalis |  | The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain. |
 | 19 | 10 | `mr:0919-lantbertus` | * | DE | dies_natalis |  |  |
 | 19 | 11 | `mr:0919-cyriacus` | * | IT | dies_natalis |  |  |
 | 19 | 12 | `mr:0919-arnulphus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "si adoperò molto" (he worked hard) where the Latin has "multa sustínuit" (he endured much). |
@@ -388,7 +388,7 @@
 | 27 | 3 | `mr:0927-florentinus` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0927-hiltrudis` |  | FR | dies_natalis |  |  |
 | 27 | 5 | `mr:0927-adolphus-et-ioannes` |  | ES | dies_natalis |  |  |
-| 27 | 6 | `mr:0927-bonfilius` | * | IT | dies_natalis |  |  |
+| 27 | 6 | `mr:0927-bonfilius` | * | IT | dies_natalis |  | The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified. |
 | 27 | 7 | `mr:0927-elzearus-de-sabran` |  | FR | dies_natalis |  |  |
 | 27 | 8 | `mr:0927-laurentius-de-ripafracta` | * | IT | dies_natalis |  |  |
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR | dies_natalis |  |  |
@@ -434,7 +434,7 @@
 | 30 | (1) | `mr:0930-hieronymus` |  | HR | dies_natalis |  |  |
 | 30 | 2 | `mr:0930-antoninus` |  | IT | dies_natalis |  |  |
 | 30 | 3 | `mr:0930-ursus-et-victor` |  | CH | dies_natalis |  |  |
-| 30 | 4 | `mr:0930-gregorius-illuminator` |  | AM | dies_natalis |  |  |
+| 30 | 4 | `mr:0930-gregorius-illuminator` |  | AM | dies_natalis |  | The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown. |
 | 30 | 5 | `mr:0930-eusebia` | * | FR | dies_natalis |  |  |
 | 30 | 6 | `mr:0930-honorius` |  | GB | dies_natalis |  |  |
 | 30 | 7 | `mr:0930-simon` | * | IT | dies_natalis |  |  |

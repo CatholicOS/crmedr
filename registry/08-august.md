@@ -280,7 +280,7 @@
 | 19 | 7 | `mr:0819-donatus` |  | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0819-bertulfus` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0819-sebaldus` |  | DE | dies_natalis |  |  |
-| 19 | 10 | `mr:0819-bartholomaeus-de-simero` | * | IT | dies_natalis |  |  |
+| 19 | 10 | `mr:0819-bartholomaeus-de-simero` | * | IT | dies_natalis |  | The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown. |
 | 19 | 11 | `mr:0819-guerricus` | * | FR | dies_natalis |  | 2004 English: Translation error: "spiritual words, humility, and frequent charity" where the Latin has "sermónibus humilitáte et caritáte crebris" (sermons full of humility and charity). |
 | 19 | 12 | `mr:0819-leo-secundus` | * | IT | dies_natalis |  |  |
 | 19 | 13 | `mr:0819-ludovicus` |  | FR | dies_natalis |  | 2004 English: Translation error: "the Province of France" where the Latin has "Província" (Provence). Translation error: "perpetually" where the Latin has "pérpeti" (to endure). |
@@ -310,7 +310,7 @@
 | 21 | 4 | `mr:0821-quadratus` |  | TN | dies_natalis |  |  |
 | 21 | 5 | `mr:0821-euprepius` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0821-luxorius` |  | IT | dies_natalis |  |  |
-| 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  | 2004 Italian: Translation error: "a Edessa nell’antica Siria" where the Latin has "Edessae in Hellade" (Edessa in Greece, in Macedonia). |
+| 21 | 7 | `mr:0821-bassa-et-socii` |  | TR | commemoratio |  | The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands. 2004 Italian: Translation error: "a Edessa nell’antica Siria" where the Latin has "Edessae in Hellade" (Edessa in Greece, in Macedonia). |
 | 21 | 8 | `mr:0821-privatus` |  | FR | dies_natalis |  | 1749 Latin: This text joins the opening of Privatus's eulogy to the body of the eulogy of Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English prints both eulogies. |
 | 21 | 9 | `mr:0821-sidonius-apollinaris` |  | FR | dies_natalis | same as `mr:0823-sidonius-apollinaris` |  |
 | 21 | 10 | `mr:0821-bernardus-et-socii` | * | ES | commemoratio |  |  |

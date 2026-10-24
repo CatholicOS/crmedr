@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:0501-peregrinus-laziosi` |  | IT | dies_natalis |  |  |
 | 1 | 18 | `mr:0501-petronilla` | * | FR | dies_natalis |  |  |
 | 1 | 19 | `mr:0501-pius-v` |  | IT | dies_natalis |  |  |
-| 1 | 20 | `mr:0501-augustinus-schoeffler` |  | VN | dies_natalis |  |  |
+| 1 | 20 | `mr:0501-augustinus-schoeffler` |  | VN | dies_natalis |  | The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown. |
 | 1 | 21 | `mr:0501-ioannes-ludovicus-bonnard` |  | VN | dies_natalis |  |  |
 | 1 | 22 | `mr:0501-herminius-philippus-pampuri` |  | IT | dies_natalis |  |  |
 | 1 | 23 | `mr:0501-clemens-septyckyj` | * | RU | dies_natalis |  |  |

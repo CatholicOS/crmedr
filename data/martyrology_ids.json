@@ -209,7 +209,10 @@
           "role": "religious_life",
           "la": "monastérii Sancti Marcélli",
           "it": "monastero di San Marcello",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830975",
+          "label": "Monastery of Saint-Marcel, Vienne",
+          "country": "FR"
         }
       ]
     },
@@ -3112,7 +3115,8 @@
           "it": "monastero di Sant’Andrea",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Saint Andrew of which Fillan was abbot is not securely identified."
     },
     {
       "id": "mr:0109-eustratius-thaumaturgus",
@@ -4787,7 +4791,10 @@
           "role": "religious_life",
           "la": "monastérium Sanctæ Marthæ",
           "it": "monastero di Santa Marta",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q18223942",
+          "label": "Santa Marta, Milan",
+          "country": "IT"
         }
       ],
       "date": {
@@ -6855,7 +6862,10 @@
           "role": "foundation",
           "la": "monastérium Sanctæ Margarítæ",
           "it": "monastero di Santa Margherita",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830984",
+          "label": "Monastery of Santa Margherita, Como",
+          "country": "IT"
         }
       ],
       "date": {
@@ -7940,7 +7950,10 @@
           "role": "religious_life",
           "la": "monastério Sancti Domínici",
           "it": "monastero di San Domenico",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1121868",
+          "label": "San Domenico",
+          "country": "IT"
         }
       ],
       "date": {
@@ -8974,14 +8987,18 @@
           "role": "foundation",
           "la": "cœnóbii Mantuáni",
           "it": "cenobio di Mantova",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q87742079",
+          "label": "chiesa del Carmelino",
+          "country": "IT"
         }
       ],
       "date": {
         "year": 1494,
         "basis": "death",
         "source": "wikidata"
-      }
+      },
+      "note": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown."
     },
     {
       "id": "mr:0125-emmanuel-domingo-y-sol",
@@ -10569,7 +10586,10 @@
           "role": "foundation",
           "la": "sacéllum Sancti Ioánnis",
           "it": "cappella e l’ospizio di San Giovanni",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q43090271",
+          "label": "Monastery of San Juan Bautista",
+          "country": "ES"
         }
       ]
     },
@@ -13160,13 +13180,19 @@
           "role": "death",
           "la": "monastério Carbonénsi Sanctórum Elíæ et Anastásii prope Arméntum",
           "it": "Armento nel monastero dei santi Elia e Anastasio del Carbone",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830976",
+          "label": "Abbey of Saints Elias and Anastasius, Carbone",
+          "country": "IT"
         },
         {
           "role": "foundation",
           "la": "monastério Carbonénsi Sanctórum Elíæ et Anastásii prope Arméntum",
           "it": "Armento nel monastero dei santi Elia e Anastasio del Carbone",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830976",
+          "label": "Abbey of Saints Elias and Anastasius, Carbone",
+          "country": "IT"
         },
         {
           "role": "religious_life",
@@ -14456,7 +14482,10 @@
           "role": "religious_life",
           "la": "monastérii Dii Constantinopolitáni",
           "it": "monastero di Dio a Costantinopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830969",
+          "label": "Monastery of Dios",
+          "country": "TR"
         }
       ],
       "date": {
@@ -19665,7 +19694,10 @@
           "role": "religious_life",
           "la": "monastérii Sancti Petri",
           "it": "monastero di San Pietro",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q29586837",
+          "label": "St Peter's Church and Monastery, Mdina",
+          "country": "MT"
         }
       ],
       "date": {
@@ -20170,7 +20202,10 @@
           "role": "religious_life",
           "la": "monastérii Sanctíssimi Salvatóris",
           "it": "monastero del Santissimo Salvatore",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q634244",
+          "label": "Territorial Abbey Santissimo Salvatore",
+          "country": "IT"
         }
       ]
     },
@@ -20912,6 +20947,7 @@
           "source": "curated"
         }
       ],
+      "note": "The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luca, known as Leoluca)."
       }
@@ -21803,7 +21839,8 @@
           "it": "monastero di Pavia",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "Which monastery of Pavia sent Appian to Comacchio is not known."
     },
     {
       "id": "mr:0304-petrus",
@@ -25017,7 +25054,10 @@
           "role": "religious_life",
           "la": "cœnóbium Sancti Martíni",
           "it": "monastero di San Martino",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2396658",
+          "label": "St Martin's Basilica, Liège",
+          "country": "BE"
         }
       ],
       "date": {
@@ -41294,7 +41334,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown."
     },
     {
       "id": "mr:0501-ioannes-ludovicus-bonnard",
@@ -44584,7 +44625,10 @@
           "role": "foundation",
           "la": "cœnóbium Gémmulæ in cóllibus Eugáneis",
           "it": "colli Euganei il monastero di Gemmola",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q56323350",
+          "label": "Villa Beatrice d'Este",
+          "country": "IT"
         }
       ]
     },
@@ -54646,7 +54690,10 @@
           "role": "foundation",
           "la": "Novemfontánis",
           "it": "Neuffonts",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820375",
+          "label": "Abbaye Saint-Gilbert de Neuffontaines",
+          "country": "FR"
         }
       ],
       "date": {
@@ -55913,7 +55960,10 @@
           "role": "religious_life",
           "la": "monastérium Sanctæ Agnétis",
           "it": "monastero di Sant’Agnese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830982",
+          "label": "Monastery of Sant'Agnese, Bologna",
+          "country": "IT"
         }
       ],
       "date": {
@@ -56761,7 +56811,10 @@
           "role": "foundation",
           "la": "monastério Sancti Spíritus",
           "it": "monastero di Santo Spirito",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1775983",
+          "label": "Santo Spirito",
+          "country": "IT"
         }
       ]
     },
@@ -57619,7 +57672,10 @@
           "role": "religious_life",
           "la": "monastérium Sancti Cýrici",
           "it": "monastero di San Quírico",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830980",
+          "label": "Monastery of Saint-Cirgues, Clermont",
+          "country": "FR"
         }
       ],
       "date": {
@@ -58433,7 +58489,10 @@
           "role": "religious_life",
           "la": "monastérii Rufinianórum",
           "it": "monastero dei Rufiniani",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830971",
+          "label": "Monastery of the Rufinianae",
+          "country": "TR"
         }
       ],
       "date": {
@@ -58894,7 +58953,10 @@
           "role": "death",
           "la": "monastério Vallis Castri in Picéno Itáliæ",
           "it": "monastero di Val di Castro nelle Marche",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830988",
+          "label": "Abbey of San Salvatore in Valdicastro",
+          "country": "IT"
         },
         {
           "role": "journey",
@@ -64234,7 +64296,8 @@
       "date": {
         "to": 1630,
         "source": "edition"
-      }
+      },
+      "note": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified."
     },
     {
       "id": "mr:0705-martha",
@@ -71191,6 +71254,7 @@
         "basis": "death",
         "source": "edition"
       },
+      "note": "The hermitage by the Dead Sea (Lake Asphaltites) where Simeon and John lived is unnamed, and its site is unknown.",
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"presso il lago di Mareotide in Egitto\" where the Latin has \"apud Asphaltitem lacum\" (the Dead Sea)."
       },
@@ -71415,6 +71479,7 @@
           "source": "curated"
         }
       ],
+      "note": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"of Massilia\" (Marseilles) where the Latin \"Massilitanórum\" denotes the African Massylitan martyrs."
       }
@@ -72358,7 +72423,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; its community moved to San Pastore near Contigliano in 1234."
     },
     {
       "id": "mr:0724-christina-mirabilis",
@@ -82567,7 +82633,10 @@
           "role": "foundation",
           "la": "monastérii Sancti Sulpítii",
           "it": "monastero di San Sulpizio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2820341",
+          "label": "Abbaye Notre-Dame du Nid-au-Merle",
+          "country": "FR"
         }
       ]
     },
@@ -83905,7 +83974,8 @@
           "it": "monastero dei Greci",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown."
     },
     {
       "id": "mr:0819-guerricus",
@@ -84845,6 +84915,7 @@
         "to": 1630,
         "source": "edition"
       },
+      "note": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"a Edessa nell’antica Siria\" where the Latin has \"Edessae in Hellade\" (Edessa in Greece, in Macedonia)."
       }
@@ -86876,7 +86947,10 @@
           "role": "religious_life",
           "la": "convéntu Lemovicénsi",
           "it": "convento di Limoges",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q22975752",
+          "label": "Couvent des Carmes de Limoges",
+          "country": "FR"
         }
       ],
       "date": {
@@ -90762,7 +90836,10 @@
           "role": "death",
           "la": "Seminário Sancti Firmíni",
           "it": "Seminario di Saint-Firmin",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2983806",
+          "label": "Collège des Bons-Enfants-Saint-Victor",
+          "country": "FR"
         }
       ],
       "date": {
@@ -91398,6 +91475,7 @@
           "country": "IT"
         }
       ],
+      "note": "The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
       }
@@ -96041,7 +96119,10 @@
           "role": "foundation",
           "la": "monastérium Belli Loci",
           "it": "monastero di Beaulieu",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q130847695",
+          "label": "abbaye de Beaulieu (Meuse)",
+          "country": "FR"
         }
       ]
     },
@@ -96988,7 +97069,8 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
-      }
+      },
+      "note": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain."
     },
     {
       "id": "mr:0919-lantbertus",
@@ -99136,7 +99218,10 @@
           "role": "religious_life",
           "la": "monastério Leopolitáno",
           "it": "monastero di Leopoli",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4235777",
+          "label": "Church and convent of Benedictines, Lviv",
+          "country": "UA"
         }
       ]
     },
@@ -100174,7 +100259,8 @@
         "year": 1115,
         "basis": "death",
         "source": "wikidata"
-      }
+      },
+      "note": "The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified."
     },
     {
       "id": "mr:0927-elzearus-de-sabran",
@@ -101609,7 +101695,8 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
-      }
+      },
+      "note": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown."
     },
     {
       "id": "mr:0930-eusebia",
@@ -102481,7 +102568,13 @@
           "source": "lead",
           "wikidata": "Q156789",
           "label": "Raetia",
-          "country": "CH"
+          "country": null,
+          "countries": [
+            "CH",
+            "DE",
+            "AT",
+            "IT"
+          ]
         },
         {
           "role": "foundation",
@@ -102607,7 +102700,10 @@
           "role": "foundation",
           "la": "Pradénse",
           "it": "Prado",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830965",
+          "label": "Prado (Lyon)",
+          "country": "FR"
         }
       ],
       "date": {
@@ -107165,7 +107261,10 @@
           "role": "religious_life",
           "la": "Oratórii",
           "it": "Oratorio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830964",
+          "label": "Oroër Abbey",
+          "country": "FR"
         }
       ]
     },
@@ -107443,7 +107542,10 @@
           "role": "religious_life",
           "la": "monastério Ochsenfúrti",
           "it": "monastero di Ochsenfurt",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830979",
+          "label": "Ochsenfurt Abbey",
+          "country": "DE"
         },
         {
           "role": "birth",
@@ -109609,7 +109711,8 @@
       "date": {
         "to": 1630,
         "source": "edition"
-      }
+      },
+      "note": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia."
     },
     {
       "id": "mr:1021-severinus",
@@ -110026,7 +110129,8 @@
           "it": "basilica di Saint-Privat-de-Javols",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols)."
     },
     {
       "id": "mr:1022-leotadius",
@@ -122775,7 +122879,10 @@
           "role": "foundation",
           "la": "Spartáno cœnóbio",
           "it": "monastero di Sparta",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830966",
+          "label": "Monastery of Saint Nikon, Sparta",
+          "country": "GR"
         },
         {
           "role": "ministry",
@@ -123699,6 +123806,7 @@
         "circa": true,
         "source": "estimate"
       },
+      "note": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Sufetula\" where the Latin has \"Sufetánus\" (of Sufes)."
       }
@@ -124750,7 +124858,10 @@
           "role": "religious_life",
           "la": "monastérii Sancti Lauréntii Parisiénsis",
           "it": "monastero di San Lorenzo a Parigi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830973",
+          "label": "Monastery of Saint-Laurent, Paris",
+          "country": "FR"
         }
       ],
       "date": {
@@ -125835,7 +125946,8 @@
           "it": "monastero di Santa Maria",
           "source": "curated"
         }
-      ]
+      ],
+      "note": "The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified."
     },
     {
       "id": "mr:1204-sola",
@@ -126927,7 +127039,10 @@
           "role": "burial",
           "la": "Ægyptiórum monastério",
           "it": "monastero degli Egiziani",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830986",
+          "label": "Monastery of the Egyptians, Constantinople",
+          "country": "TR"
         },
         {
           "role": "religious_life",
@@ -129768,7 +129883,10 @@
           "role": "religious_life",
           "la": "monastérii Beátæ Maríæ de Bigárdis",
           "it": "monastero della Beata Maria di Grand-Bigard",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2039383",
+          "label": "St Wivina Abbey, Groot-Bijgaarden",
+          "country": "BE"
         }
       ],
       "date": {
@@ -129983,6 +130101,7 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "note": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
       "edition_notes": {
         "martyrologium_romanum_1914_en_unofficial": "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
       }
@@ -132449,7 +132568,10 @@
           "role": "religious_life",
           "la": "monastérii Acemetárum ad Bósphorum",
           "it": "monastero degli Acemeti sul Bosforo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141830968",
+          "label": "Irenaion Monastery",
+          "country": "TR"
         }
       ],
       "date": {
@@ -132480,7 +132602,10 @@
           "role": "religious_life",
           "la": "monastérii Uticénsis",
           "it": "monastero di Ouche",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q334237",
+          "label": "Royal Abbey of Saint-Evroul",
+          "country": "FR"
         }
       ],
       "date": {

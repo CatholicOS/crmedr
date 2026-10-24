@@ -10,7 +10,7 @@
 | 1 | 4 | `mr:0301-siviardus` |  | FR | dies_natalis |  |  |
 | 1 | 5 | `mr:0301-suitbertus` |  | DE | dies_natalis |  |  |
 | 1 | 6 | `mr:0301-leo` |  | FR | dies_natalis |  |  |
-| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
+| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified. 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
 | 1 | 8 | `mr:0301-rudesindus` | * | ES | dies_natalis |  |  |
 | 1 | 9 | `mr:0301-christophorus-de-mediolano` | * | IT | commemoratio |  |  |
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |
@@ -40,7 +40,7 @@
 | 4 | (1) | `mr:0304-casimirus` |  | BY | dies_natalis |  |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR | dies_natalis |  |  |
 | 4 | 3 | `mr:0304-basinus` | * | DE | dies_natalis |  |  |
-| 4 | 4 | `mr:0304-appianus` | * | IT | dies_natalis |  |  |
+| 4 | 4 | `mr:0304-appianus` | * | IT | dies_natalis |  | Which monastery of Pavia sent Appian to Comacchio is not known. |
 | 4 | 5 | `mr:0304-petrus` | * | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:0304-humbertus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "terzo conte di Savoia" (the third count of Savoy) where the Latin has "cómitis Sabáudiæ Tértii" (Humbert III, Count of Savoy). |
 | 4 | 7 | `mr:0304-christophorus-bales-et-socii` | * | GB | dies_natalis |  |  |
