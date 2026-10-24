@@ -226,6 +226,11 @@ ENTRY_NOTES = {
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
+    # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
+    # possible sites) or a site the archaeology places differently.
+    "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",
+    "mr:0925-cleopha": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
+    "mr:0929-michael-gabriel-et-raphael-archangeli": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
 }
 
 # The 2004-family editions. The registry's main placement is the Latin print;

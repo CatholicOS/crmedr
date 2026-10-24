@@ -18984,6 +18984,17 @@
       "country": "IT",
       "status": "reviewed"
     },
+    "Salem": {
+      "wikidata": "Q4377375",
+      "label": "Salem",
+      "country": null,
+      "countries": [
+        "IL",
+        "PS"
+      ],
+      "status": "reviewed",
+      "note": "the site of Salem is disputed: traditionally Jerusalem, or Salim near Nablus"
+    },
     "Salernitáni": {
       "wikidata": "Q1083",
       "label": "Salerno",
@@ -22345,6 +22356,13 @@
       "country": "IL",
       "status": "reviewed"
     },
+    "basílicæ sub título Sancti Michaélis via Salária miliário sexto ab Urbe": {
+      "wikidata": "Q141832016",
+      "label": "Basilica of Saint Michael the Archangel on the Via Salaria",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the remains at Castel Giubileo, Rome; the archaeological sources place it at the seventh mile of the Via Salaria, the Martyrology at the sixth"
+    },
     "beátæ Maríæ basílicam": {
       "wikidata": "Q186282",
       "label": "Basilica di Santa Maria Maggiore",
@@ -22403,6 +22421,17 @@
       "label": "Dachau concentration camp",
       "country": "DE",
       "status": "jev"
+    },
+    "castéllo Emmaus": {
+      "wikidata": "Q165887",
+      "label": "Emmaus",
+      "country": null,
+      "countries": [
+        "IL",
+        "PS"
+      ],
+      "status": "reviewed",
+      "note": "the site of Emmaus is disputed: Amwas (Nicopolis), Abu Ghosh, el-Qubeibeh, Motza (Colonia), Horvat Eqed or Kiryat Anavim"
     },
     "cathedrális Bituricénsis": {
       "wikidata": "Q207985",

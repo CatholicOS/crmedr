@@ -86801,14 +86801,22 @@
           "role": "ministry",
           "la": "Salem",
           "it": "Salem",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q4377375",
+          "label": "Salem",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "date": {
         "to": -1,
         "circa": true,
         "source": "estimate"
-      }
+      },
+      "note": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus."
     },
     {
       "id": "mr:0826-maximilianus",
@@ -99343,7 +99351,14 @@
           "role": "journey",
           "la": "castéllo Emmaus",
           "it": "villaggio di Emmaus",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q165887",
+          "label": "Emmaus",
+          "country": null,
+          "countries": [
+            "IL",
+            "PS"
+          ]
         }
       ],
       "date": {
@@ -99351,7 +99366,8 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
-      }
+      },
+      "note": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed."
     },
     {
       "id": "mr:0925-firminus",
@@ -101032,7 +101048,10 @@
           "role": "dedication",
           "la": "basílicæ sub título Sancti Michaélis via Salária miliário sexto ab Urbe",
           "it": "basilica intitolata a San Michele anticamente edificata a Roma al sesto miglio della via Salaria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141832016",
+          "label": "Basilica of Saint Michael the Archangel on the Via Salaria",
+          "country": "IT"
         }
       ],
       "date": {
@@ -101040,6 +101059,7 @@
         "basis": "dedication",
         "source": "edition"
       },
+      "note": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"long ago rebuilt\" where the Latin has \"antíquitus ædificátæ\" (built long ago)."
