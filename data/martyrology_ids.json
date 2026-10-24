@@ -23858,7 +23858,10 @@
           "role": "education",
           "la": "regna Európæ",
           "it": "regni di Europa",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q46",
+          "label": "Europe",
+          "country": null
         }
       ],
       "date": {
@@ -26069,7 +26072,14 @@
           "role": "ministry",
           "la": "tota Hispánia",
           "it": "tutta la Spagna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q12837",
+          "label": "Iberian Peninsula",
+          "country": null,
+          "countries": [
+            "ES",
+            "PT"
+          ]
         }
       ],
       "date": {
@@ -30094,7 +30104,10 @@
           "role": "ministry",
           "la": "divérsas Itáliæ regiónes",
           "it": "diverse regioni d’Italia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q38",
+          "label": "Italy",
+          "country": "IT"
         }
       ]
     },
@@ -39639,7 +39652,10 @@
           "role": "ministry",
           "la": "Oceániam occidentálem",
           "it": "Oceania occidentale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q27779387",
+          "label": "Vicariate Apostolic of Western Oceania",
+          "country": null
         }
       ],
       "date": {
@@ -40910,7 +40926,10 @@
           "role": "ministry",
           "la": "Urci",
           "it": "Torre de Villaricos",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q5485281",
+          "label": "Urci",
+          "country": "ES"
         },
         {
           "role": "ministry",
@@ -41082,7 +41101,10 @@
         {
           "role": "religious_life",
           "la": "monastérii Nantólii",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833408",
+          "label": "Nantus Abbey",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -44406,7 +44428,10 @@
           "role": "mention",
           "la": "terra Hus",
           "it": "terra di Hus",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1967878",
+          "label": "Land of Uz",
+          "country": null
         }
       ],
       "date": {
@@ -45022,7 +45047,10 @@
           "role": "death",
           "la": "monte Carnério",
           "it": "monte Carnerio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3949877",
+          "label": "Santuario di Fonte Colombo",
+          "country": "IT"
         }
       ]
     },
@@ -49929,7 +49957,10 @@
           "role": "ministry",
           "la": "parœciæ Bầu Nọ",
           "it": "parrocchia di Bầu Nọ",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833402",
+          "label": "Bầu Nọ parish",
+          "country": "VN"
         }
       ],
       "date": {
@@ -53456,7 +53487,10 @@
           "role": "religious_life",
           "la": "Tabanénsi cœnóbio",
           "it": "cenobio di Tábanos",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833410",
+          "label": "Monastery of Tábanos",
+          "country": "ES"
         }
       ],
       "date": {
@@ -59612,7 +59646,10 @@
           "role": "foundation",
           "la": "silvam Armóricæ interióris",
           "it": "selva nell’interno della Bretagna",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q924045",
+          "label": "Paimpont forest",
+          "country": "FR"
         }
       ],
       "edition_notes": {
@@ -60893,7 +60930,10 @@
           "role": "foundation",
           "la": "meridiánis Itáliæ regiónibus",
           "it": "regioni dell’Italia meridionale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q207989",
+          "label": "Southern Italy",
+          "country": "IT"
         },
         {
           "role": "mention",
@@ -61687,7 +61727,10 @@
           "role": "ministry",
           "la": "Trung Linh",
           "it": "Trung Linh",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833401",
+          "label": "Trung Linh",
+          "country": "VN"
         }
       ],
       "date": {
@@ -64506,7 +64549,10 @@
           "role": "death",
           "la": "prope Neptúnum in Látio Itáliæ",
           "it": "vicino a Nettuno nel Lazio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2542264",
+          "label": "Le Ferriere",
+          "country": "IT"
         }
       ],
       "date": {
@@ -67696,13 +67742,19 @@
           "role": "religious_life",
           "la": "monastérii Dolénsis",
           "it": "monastero di Dol",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833406",
+          "label": "Monastery of Dol",
+          "country": "FR"
         },
         {
           "role": "ministry",
           "la": "monastérii Dolénsis",
           "it": "monastero di Dol",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141833406",
+          "label": "Monastery of Dol",
+          "country": "FR"
         }
       ],
       "date": {
@@ -67981,7 +68033,10 @@
           "role": "birth",
           "la": "prope Theánum in Aprútio",
           "it": "vicino a Chieti in Abruzzo",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q51188",
+          "label": "Bucchianico",
+          "country": "IT"
         },
         {
           "role": "foundation",
@@ -74154,7 +74209,10 @@
           "role": "ministry",
           "la": "Velicénsis",
           "it": "Drama",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q20571496",
+          "label": "Eparchy of Velika",
+          "country": null
         },
         {
           "role": "ministry",
@@ -91790,7 +91848,10 @@
           "role": "religious_life",
           "la": "erémo prope Brigántium",
           "it": "eremo vicino a Bregenz",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1737",
+          "label": "Bregenz",
+          "country": "AT"
         }
       ]
     },
@@ -104071,7 +104132,10 @@
           "role": "death",
           "la": "monastérium Turris in Calábria",
           "it": "monastero di La Torre in Calabria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q16600386",
+          "label": "Santa Maria nel Bosco Sanctuary",
+          "country": "IT"
         },
         {
           "role": "foundation",
@@ -104670,7 +104734,10 @@
           "role": "foundation",
           "la": "in Pallacínis",
           "it": "in Pallacinis",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q127673896",
+          "label": "Pallacinae",
+          "country": "IT"
         }
       ],
       "date": {
@@ -105002,7 +105069,10 @@
         {
           "role": "death",
           "la": "prope Lutétiam",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q90",
+          "label": "Paris",
+          "country": "FR"
         },
         {
           "role": "journey",
@@ -109803,7 +109873,10 @@
           "role": "journey",
           "la": "pártibus Oriéntis",
           "it": "Oriente",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q205653",
+          "label": "Orient",
+          "country": null
         }
       ]
     },
@@ -114086,7 +114159,10 @@
           "role": "religious_life",
           "la": "erémum Chalcedonénsem",
           "it": "Calcedonia",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q979091",
+          "label": "Qinnasrin",
+          "country": "SY"
         }
       ],
       "date": {
@@ -115600,7 +115676,10 @@
           "role": "death",
           "la": "loco «Plácium» ad Vicenóniam flumen",
           "it": "luogo chiamato Plaz lungo il fiume Vilaine",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q26720921",
+          "label": "Brain-sur-Vilaine",
+          "country": "FR"
         }
       ]
     },
@@ -116045,7 +116124,10 @@
           "role": "birth",
           "la": "britónis",
           "it": "bretone",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q849967",
+          "label": "Celtic Britons",
+          "country": "GB"
         }
       ]
     },
@@ -126384,7 +126466,10 @@
           "role": "death",
           "la": "loco Bornos",
           "it": "località chiamata Bornos",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q2652880",
+          "label": "Bornes de Aguiar",
+          "country": "PT"
         }
       ]
     },
@@ -129627,7 +129712,10 @@
           "role": "religious_life",
           "la": "montis Mercúrii",
           "it": "Mercurio",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q3855082",
+          "label": "Mercurion",
+          "country": "IT"
         }
       ]
     },
@@ -129744,13 +129832,19 @@
           "role": "death",
           "la": "rivum Tum Nok",
           "it": "fiume Tum Nok",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q108317077",
+          "label": "Our Lady of the Martyrs of Thailand Shrine",
+          "country": "TH"
         },
         {
           "role": "ministry",
           "la": "vici Song-Khon",
           "it": "villaggio di Song-Khon",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q108317077",
+          "label": "Our Lady of the Martyrs of Thailand Shrine",
+          "country": "TH"
         }
       ],
       "edition_notes": {
@@ -132450,7 +132544,10 @@
           "role": "exile",
           "la": "regno Angliæ",
           "it": "regno stesso d’Inghilterra",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q179876",
+          "label": "Kingdom of England",
+          "country": "GB"
         },
         {
           "role": "ministry",
