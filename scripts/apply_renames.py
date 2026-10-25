@@ -7,7 +7,10 @@ written unless every rename passes check(); an old ID that is gone (from the
 2004 editions' keys for texts, from the registry for crmedr) while its new ID is
 present counts as already applied. A decided relabel op (the subject rename) sets
 its eulogy's la, en and it subjects: under the new ID when the eulogy is renamed in
-the same file, else under the current ID; a reject keeps the current subjects.
+the same file, else under the current ID. The subject follows the ID (curator,
+2026-10-25): an accept writes the subject the eulogy's decided ID implies (that
+candidate's labels), and is an error when the rename is not decided or its ID is
+not a candidate; an edit writes the edited labels; a reject keeps the current subjects.
 
 Order: build_person_items.py apply <decided.json>, then texts, then crmedr, then
 martyrology-texts' tests/test_registry_keys.py.
@@ -50,16 +53,74 @@ def changeset_errors(changeset):
     return []
 
 
-def relabels(changeset):
-    """{mrid: labels} of the decided relabels: accept takes the op's labels, edit the edited ones,
-    reject none (every subject None: left unchanged)."""
+def _new_id(op):
+    """The new ID a rename op's decision gives (accept: its new_id; edit: the edited one), else None."""
+    if op.get("decision") == "accept":
+        return op["new_id"]
+    if op.get("decision") == "edit":
+        return (op.get("edited") or {}).get("new_id") or op["new_id"]
+    return None
+
+
+def _decided_renames(changeset):
+    """{mrid: the first decided rename op of the eulogy}."""
     out = {}
+    for op in changeset.get("operations", []):
+        if op.get("op") == "rename" and _new_id(op) is not None:
+            out.setdefault(op["id"], op)
+    return out
+
+
+def _followed(relabel, rename):
+    """The subject the decided ID implies (the subject follows the ID): the relabel candidate whose
+    from_id is the rename's decided new ID; else (its labels deduplicated out of the relabel) the rename
+    candidate with that new_id, a None language filled from the relabel's current labels, as
+    rename_candidates.relabel_op fills it. None when there is no decided rename or the decided ID is
+    not a candidate (a typed ID implies no subject)."""
+    new = _new_id(rename) if rename else None
+    if new is None:
+        return None
+    for c in relabel.get("candidates") or []:
+        if c.get("from_id") == new:
+            return c.get("labels") or {}
+    current = relabel.get("current") or {}
+    for c in rename.get("candidates") or []:
+        if c.get("new_id") == new:
+            own = c.get("labels") or {}
+            return {lang: own.get(lang) if own.get(lang) is not None else current.get(lang) for lang in LANGS}
+    return None
+
+
+def relabel_errors(changeset):
+    """Error strings for the accepted relabels that follow no candidate: the eulogy's rename is not
+    decided in the file, or its decided ID is not one of the candidates."""
+    errors, decided = [], _decided_renames(changeset)
+    for op in changeset.get("operations", []):
+        if op.get("op") != "relabel" or op.get("decision") != "accept" \
+                or _followed(op, decided.get(op["id"])) is not None:
+            continue
+        rename = decided.get(op["id"])
+        if rename is None:
+            errors.append(f"{op['id']}: the subject follows the ID, but the eulogy's rename is not decided")
+        else:
+            errors.append(f"{op['id']}: the subject follows the ID, but the decided ID {_new_id(rename)} is not"
+                          " a candidate: edit the subject instead")
+    return errors
+
+
+def relabels(changeset):
+    """{mrid: labels} of the decided relabels: accept takes the subject the eulogy's decided ID
+    implies (_followed; an accept that follows no candidate is left out, see relabel_errors), edit
+    the edited labels, reject none (every subject None: left unchanged)."""
+    out, decided = {}, _decided_renames(changeset)
     for op in changeset.get("operations", []):
         if op.get("op") != "relabel":
             continue
         decision = op.get("decision")
         if decision == "accept":
-            labels = op.get("labels") or {}
+            labels = _followed(op, decided.get(op["id"]))
+            if labels is None:
+                continue
         elif decision == "edit":
             labels = (op.get("edited") or {}).get("labels") or {}
         elif decision == "reject":
@@ -94,11 +155,8 @@ def renames(changeset):
             continue
         decision = op.get("decision")
         edited = op.get("edited") or {}
-        if decision == "accept":
-            new = op["new_id"]
-        elif decision == "edit":
-            new = edited.get("new_id") or op["new_id"]
-        else:
+        new = _new_id(op)
+        if new is None:
             continue
         labels = dict.fromkeys(LANGS)
         for cand in op.get("candidates") or []:
@@ -299,7 +357,7 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
     except (OSError, ValueError) as e:
         return _report([], [], {}, [f"the 2004 edition files do not parse: {e}"])
     todo, done = split_applied(renames(changeset), keys)
-    errors = check(todo)
+    errors = check(todo) + relabel_errors(changeset)
     for r in todo:
         if r.old not in keys:
             errors.append(f"{r.old} → {r.new}: neither ID is a key of the 2004 editions")
@@ -376,7 +434,7 @@ def _plan(changeset, repo_root):
                for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
     applied = [Rename(r.new, r.new, current.get(r.old, r.labels)) for r in done if r.old in decided]
     only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
-    errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated)
+    errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
     if not errors:
         errors = _person_errors(changeset, todo, repo_root)
     return todo, done, only, errors

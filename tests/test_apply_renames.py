@@ -81,10 +81,47 @@ class RelabelsTest(unittest.TestCase):
         edited = {"labels": {"la": "Sanctus A Edita", "en": "Saint A", "it": ""}}
         self.assertEqual(ar.relabels(cs(relabel(decision="edit", edited=edited))),
                          {"mr:0101-a": {"la": "Sanctus A Edita", "en": "Saint A", "it": None}})
-        # the relabel wins over the rename's edited subject too
+        # an edited relabel wins over the rename's edited subject too
         e = {"new_id": "mr:0101-a-y", "subject_la": "Sanctus A abbas"}
-        self.assertEqual(ar.renames(cs(relabel(), op(decision="edit", edited=e))),
+        self.assertEqual(ar.renames(cs(relabel(decision="edit", edited={"labels": LABELS}),
+                                       op(decision="edit", edited=e))),
                          [R("mr:0101-a", "mr:0101-a-y", **LABELS)])
+
+    def test_accept_follows_the_decided_id(self):
+        y = {"la": "Sanctus A Ypsilon", "en": "Saint A of Y", "it": "Sant’A di Y"}
+        two = relabel()
+        two["candidates"].insert(1, {"labels": y, "from_id": "mr:0101-a-y"})
+        # the op's own labels (the proposed ID's) are not what an accept writes: the decided ID's are
+        self.assertEqual(ar.renames(cs(op(), two)), [R("mr:0101-a", "mr:0101-a-x", **LABELS)])
+        self.assertEqual(ar.renames(cs(op(new="mr:0101-a-y"), two)), [R("mr:0101-a", "mr:0101-a-y", **y)])
+        # a rename edit to another candidate: that candidate's subject
+        e = {"new_id": "mr:0101-a-y", "subject_la": "Sanctus A abbas"}
+        self.assertEqual(ar.renames(cs(two, op(decision="edit", edited=e))), [R("mr:0101-a", "mr:0101-a-y", **y)])
+        self.assertEqual(ar.relabel_errors(cs(two, op(decision="edit", edited=e))), [])
+
+    def test_accept_of_a_deduplicated_candidate_follows_it(self):
+        # mr:0101-a-y's labels were deduplicated out of the relabel's candidates: its subject is the
+        # rename candidate's, a None language filled from the current labels (as relabel_op does)
+        self.assertEqual(ar.renames(cs(op(new="mr:0101-a-y"), relabel())),
+                         [R("mr:0101-a", "mr:0101-a-y", la="Sanctus A Y", it="Sant’A Y")])
+        self.assertEqual(ar.relabel_errors(cs(op(new="mr:0101-a-y"), relabel())), [])
+
+    def test_accept_with_a_typed_id_or_no_decided_rename_is_an_error(self):
+        e = {"new_id": "mr:0101-a-z"}
+        doc = cs(op(decision="edit", edited=e), relabel())
+        self.assertEqual(ar.relabel_errors(doc),
+                         ["mr:0101-a: the subject follows the ID, but the decided ID mr:0101-a-z is not a candidate:"
+                          " edit the subject instead"])
+        self.assertNotIn("mr:0101-a", ar.relabels(doc))
+        self.assertEqual(ar.renames(doc), [R("mr:0101-a", "mr:0101-a-z")])
+        for rename in (op(decision=None), op(decision="reject")):
+            self.assertEqual(ar.relabel_errors(cs(rename, relabel())),
+                             ["mr:0101-a: the subject follows the ID, but the eulogy's rename is not decided"])
+        self.assertEqual(ar.relabel_errors(cs(relabel())),
+                         ["mr:0101-a: the subject follows the ID, but the eulogy's rename is not decided"])
+        # edit and reject need no decided rename
+        self.assertEqual(ar.relabel_errors(cs(relabel(decision="edit", edited={"labels": LABELS}),
+                                              relabel("mr:0101-b", "reject"), relabel("mr:0101-c", None))), [])
 
     def test_reject_keeps_current(self):
         self.assertEqual(ar.relabels(cs(relabel(decision="reject"))), {"mr:0101-a": R("", "").labels})
@@ -96,7 +133,8 @@ class RelabelsTest(unittest.TestCase):
                          [R("mr:0101-a", "mr:0101-a-x", la="Sanctus A X", en="Saint A X")])
 
     def test_relabel_only(self):
-        self.assertEqual(ar.relabel_only(cs(op(decision="reject"), relabel(), relabel("mr:0101-b", "reject"),
+        edit = relabel(decision="edit", edited={"labels": LABELS})
+        self.assertEqual(ar.relabel_only(cs(op(decision="reject"), edit, relabel("mr:0101-b", "reject"),
                                             op("mr:0101-c", "mr:0101-c-x"), relabel("mr:0101-c"))),
                          [R("mr:0101-a", "mr:0101-a", **LABELS)])
 
@@ -313,10 +351,12 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual([c[1] for c in fake.calls], ["scripts/extract_registry.py", "-m"])
 
     def test_relabel_without_rename(self):
-        doc = cs(op("mr:0101-a", "mr:0101-a-x", decision=None), relabel("mr:0101-a"),
+        b = {"la": "Sanctus B Novus", "en": None, "it": "San B"}
+        doc = cs(op("mr:0101-a", "mr:0101-a-x", decision=None),
+                 relabel("mr:0101-a", "edit", {"labels": LABELS}),
                  op("mr:0101-b", "mr:0101-b-z", "edit", {"new_id": "mr:0101-b-y"},
                     cands=self.cs["operations"][1]["candidates"]),
-                 relabel("mr:0101-b", labels={"la": "Sanctus B Novus", "en": None, "it": "San B"}))
+                 relabel("mr:0101-b", "edit", {"labels": b}))
         fake = Fake()
         rep = ar.apply_crmedr(doc, self.root, False, run=fake)
         self.assertTrue(rep.ok, rep.errors)
@@ -329,7 +369,7 @@ class SubcommandsTest(unittest.TestCase):
         self.assertIn("relabeled: mr:0101-a", ar.render(rep, self.root))
         # a relabel alone still rebuilds and tests
         fake = Fake()
-        rep = ar.apply_crmedr(cs(relabel("mr:0101-a", labels={"la": "Sanctus A", "en": None, "it": None})),
+        rep = ar.apply_crmedr(cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus A", "en": None, "it": None}})),
                               self.root, False, run=fake)
         self.assertTrue(rep.ok, rep.errors)
         self.assertEqual(read("la")["mr:0101-a"], "Sanctus A")
@@ -369,10 +409,27 @@ class SubcommandsTest(unittest.TestCase):
 
     def test_relabel_of_an_unknown_or_deprecated_id_is_an_error(self):
         before = self.snapshot()
-        rep = ar.apply_crmedr(cs(relabel("mr:0101-zz"), relabel("mr:0101-old")), self.root, False, run=Fake())
+        edit = {"labels": LABELS}
+        rep = ar.apply_crmedr(cs(relabel("mr:0101-zz", "edit", edit), relabel("mr:0101-old", "edit", edit)),
+                              self.root, False, run=Fake())
         self.assertEqual(rep.errors, ["mr:0101-zz: relabel of no such ID",
                                       "mr:0101-old: deprecated IDs are not relabeled"])
         self.assertEqual(self.snapshot(), before)
+
+    def test_an_accept_that_follows_no_candidate_writes_nothing(self):
+        before = self.snapshot()
+        typed = op("mr:0101-a", "mr:0101-a-x", "edit", {"new_id": "mr:0101-a-q"}, cands=self.cs["operations"][0]["candidates"])
+        for doc in (cs(typed, relabel("mr:0101-a")), cs(relabel("mr:0101-a"), self.cs["operations"][1])):
+            rep = ar.apply_crmedr(doc, self.root, False, run=Fake())
+            self.assertFalse(rep.ok)
+            self.assertEqual(len(rep.errors), 1)
+            self.assertIn("mr:0101-a: the subject follows the ID", rep.errors[0])
+            self.assertEqual(self.snapshot(), before)
+        texts = {p: p.read_bytes() for p in self.texts.rglob("*") if p.is_file() and ".git" not in p.parts}
+        rep = ar.apply_texts(cs(typed, relabel("mr:0101-a")), self.texts, self.root, False)
+        self.assertFalse(rep.ok)
+        self.assertEqual({p: p.read_bytes() for p in self.texts.rglob("*") if p.is_file() and ".git" not in p.parts},
+                         texts)
 
     def test_failing_check_writes_nothing(self):
         before = self.snapshot()

@@ -47,14 +47,13 @@ class PipelineTest(unittest.TestCase):
         take(op)
         self.assertEqual(ss.curator_outcome(op), "mr:0101-eugendus-condatisci")
         self.assertEqual(op["edited"], {"new_id": "mr:0101-eugendus-condatisci"})
-        relabel["decision"] = "accept"  # the curator keeps the first label set, not Jev's
-        first = {"la": "Sanctus Eugendus Condatiscensis", "en": "Saint Eugendus of Condat",
-                 "it": "Sant’Eugendo di Condat"}
-        self.assertEqual(ar.renames(changeset), [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", first)])
-        take(relabel)
+        relabel["decision"] = "accept"  # the subject follows the decided ID, not the op's first label set
         # The draft's None languages were filled from the current labels (relabel_op).
-        self.assertEqual(ar.renames(changeset)[0].labels, {"la": "Sanctus Eugendus Condatisci",
-                                                           "en": "Saint Eugendus", "it": "Sant’Eugendo"})
+        followed = {"la": "Sanctus Eugendus Condatisci", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
+        self.assertEqual(ar.renames(changeset),
+                         [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", followed)])
+        take(relabel)
+        self.assertEqual(ar.renames(changeset)[0].labels, followed)
 
     def test_a_person_card(self):
         person = {"eulogy": "mr:0101-eugendus", "name": "Eugendus", "where": "text", "day": "01-01",
