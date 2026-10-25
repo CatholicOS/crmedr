@@ -200,9 +200,9 @@
 
 January (`MM=01`), in `~/private-changesets/subject-identity/01/`:
 
-1. `python3 scripts/build_person_items.py propose` (repo), then `export 01 persons-01.json`, `expand records-01.json`, and the annotation runs inside each (retry on Wikidata lag per the maxlag routine).
+1. `python3 scripts/build_person_items.py propose` (repo), then `expand records-01.json`, then `export 01 persons-01.json` (after `expand`, so the export carries the expanded and annotated cards); the annotation runs inside `propose` and `expand` (retry on Wikidata lag per the maxlag routine).
 2. `python3 scripts/rename_candidates.py …` on `records-01.json` → `renames-01.json` (renames and relabels).
-3. Combine as January was combined (renames, relabels, persons, by eulogy) → `rebuilt-01.json`; `suggest_subjects.py suggest rebuilt-01.json records-01.json <texts> --persons --min-confidence 0`.
+3. Combine as January was combined (renames, relabels, persons, by eulogy) → `rebuilt-01.json`; `suggest_subjects.py suggest rebuilt-01.json records-01.json <texts> --min-confidence 0` (without `--persons`: the renames and relabels get Jev too).
 4. `subject_month.py merge crmedr-subjects-01.json rebuilt-01.json crmedr-subjects-01.v3.json`; then `suggest_subjects.py prefill crmedr-subjects-01.v3.json`. Check: every op ID of the old file present unless named in the notes.
 5. Back up the server copy, upload as `crmedr-subjects-01.json` (curator runs the `sudo install`), and drop `persons-review-01` from the public bundles (frontend plan, Task F1).
 
