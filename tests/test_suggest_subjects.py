@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import mentions_jev as mj  # noqa: E402
+import subject_jev as sj  # noqa: E402
 import suggest_subjects as ss  # noqa: E402
 from test_subject_jev import EUGENDUS, LA, OP, POP, ROP  # noqa: E402
 
@@ -86,20 +87,6 @@ class SuggestTest(unittest.TestCase):
         self.assertEqual(ops[0]["jev"]["scores"], {c["new_id"]: 3 for c in OP["candidates"]})
         self.assertEqual(counts["flagged"], 1)
 
-    def test_a_relabel_record_flag_is_flagged_not_an_error(self):
-        class Doubting(StubClient):
-            def ask(self, body):
-                out = super().ask(body)
-                out["answers"]["field_places_0"] = {"type": "noul", "noul": 0.2}
-                return out
-        ops = [copy.deepcopy(ROP)]
-        with contextlib.redirect_stderr(io.StringIO()) as err:
-            counts = ss.suggest_ops(ops, DATA, RECORDS, Doubting(), 0.9)
-        self.assertEqual((counts["flagged"], counts["errors"], err.getvalue()), (1, 0, ""))
-        self.assertEqual(ops[0]["jev"]["flags"], ["record:places[0]"])
-        self.assertEqual(ops[0]["jev"]["scores"], [3, 3, 3])
-        self.assertNotIn("decision", ops[0]["jev"])
-
     def test_a_suggestion_carries_the_clarity_scores(self):
         ops = [copy.deepcopy(OP)]
         ss.suggest_ops(ops, DATA, RECORDS, StubClient(), 0.9)
@@ -115,21 +102,17 @@ class SuggestTest(unittest.TestCase):
         self.assertEqual((counts["suggested"], counts["skipped"]), (2, 1))
         self.assertNotIn("jev", ops[2])
 
-    def test_suggest_asks_relabel(self):
+    def test_suggest_leaves_relabels_untouched(self):
+        # The subject follows the ID: Jev's rename pick chooses the pairing, no relabel request.
         client = StubClient(picks={"pick": "c1"})
-        ops = [copy.deepcopy(OP), copy.deepcopy(ROP), copy.deepcopy(POP)]
+        stale = dict(copy.deepcopy(ROP), jev={"decision": "accept", "probability": 0.99})
+        ops = [copy.deepcopy(OP), copy.deepcopy(ROP), copy.deepcopy(POP), stale]
+        before = copy.deepcopy(ops[1]), copy.deepcopy(ops[3])
         counts = ss.suggest_ops(ops, DATA, RECORDS, client, 0.9)
-        self.assertEqual(counts["suggested"], 3)
-        self.assertEqual(ss.family(ops[1]), "relabel")
-        self.assertEqual(set(client.bodies[1]["questions"]), {"clarity_c0", "clarity_c1", "clarity_c2", "pick"})
-        self.assertEqual((ops[1]["jev"]["decision"], ops[1]["jev"]["labels"]), ("edit", ROP["candidates"][1]["labels"]))
-        self.assertEqual(ops[1]["jev"]["scores"], [3, 3, 3])
-        self.assertIsNone(ops[1]["decision"])
-        ops = [copy.deepcopy(ROP)]
-        self.assertEqual(ss.suggest_ops(ops, DATA, RECORDS, StubClient(p=0.5), 0.9)["below"], 1)
-        self.assertNotIn("jev", ops[0])
-        counts = ss.suggest_ops([copy.deepcopy(ROP)], DATA, RECORDS, StubClient(), 0.0, persons=True)
-        self.assertEqual(counts["skipped"], 1)  # relabels are asked with the renames, not with --persons
+        self.assertEqual((counts["suggested"], counts["skipped"], len(client.bodies)), (2, 2, 2))
+        self.assertIsNone(ss.family(ROP))
+        self.assertEqual((ops[1], ops[3]), before)
+        self.assertFalse(any(hasattr(sj, f) for f in ("relabel_request", "relabel_suggestion", "relabel_scores")))
 
     def test_a_rename_without_a_record_is_skipped_without_a_request(self):
         client = StubClient()
@@ -189,22 +172,13 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(ss.curator_outcome(dict(POP, decision="edit", edited={"wikidata": "Q7"})), "Q7")
         self.assertIsNone(ss.curator_outcome(dict(POP, decision="reject", edited={"reason": "x"})))
 
-    def test_relabel_outcomes(self):
-        labels, current = ROP["labels"], ROP["current"]
-        other = ROP["candidates"][1]["labels"]
-        self.assertEqual(ss.curator_outcome(dict(ROP, decision="accept")), labels)
-        self.assertEqual(ss.curator_outcome(dict(ROP, decision="edit", edited={"labels": other})), other)
-        self.assertEqual(ss.curator_outcome(dict(ROP, decision="reject")), current)
-        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "accept"}), labels)
-        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "edit", "labels": other}), other)
-        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "reject"}), current)
-
     def test_rows_and_the_report_per_question_family(self):
         ops = [dict(copy.deepcopy(OP), decision="accept"),
                dict(copy.deepcopy(POP), decision="edit", edited={"wikidata": "Q2"}),
-               dict(copy.deepcopy(POP), id="undecided")]
+               dict(copy.deepcopy(POP), id="undecided"), dict(copy.deepcopy(ROP), decision="accept")]
         rows = ss.evaluate_ops(ops, DATA, RECORDS, StubClient(p=0.92))
-        self.assertEqual([r["family"] for r in rows], ["rename", "person"])  # undecided ops are not evaluated
+        # undecided ops are not evaluated, nor a relabel (it follows the rename)
+        self.assertEqual([r["family"] for r in rows], ["rename", "person"])
         text = ss.report(rows, [0.0, 0.95])
         self.assertIn("rename: 1 cards", text)
         self.assertIn("person: 1 cards", text)
@@ -275,47 +249,20 @@ class PrefillTest(unittest.TestCase):
         self.assertEqual(ss.prefill_ops([low, notc, bare]), {})
         self.assertTrue(all(op["decision"] is None for op in (low, notc, bare)))
 
-    def test_relabel_follows_jev(self):
-        labels = {"la": "A", "en": "B", "it": "C"}
-        acc, edt, rej, low = (copy.deepcopy(ROP) for _ in range(4))
-        acc["jev"] = {"decision": "accept", "probability": 0.95}
-        edt["jev"] = {"decision": "edit", "labels": labels, "probability": 0.95}
-        rej["jev"] = {"decision": "reject", "probability": 0.95}
-        low["jev"] = {"decision": "accept", "probability": 0.5}
-        self.assertEqual(ss.prefill_ops([acc, edt, rej, low]), {"relabel": 3})
-        self.assertEqual((acc["decision"], acc["prefilled"]), ("accept", "jev"))
-        self.assertEqual((edt["decision"], edt["edited"]), ("edit", {"labels": labels}))
-        self.assertEqual(rej["decision"], "reject")
-        self.assertIsNone(low["decision"])
+    def test_relabel_never_prefilled(self):
+        # The subject card is never prefilled, whatever its jev and its rename's prefill.
+        ruled = self.rename(self.cand("mr:0101-eugendus-a", "surname"))
+        ruled["id"] = "mr:0101-eugendus"
+        rop = dict(copy.deepcopy(ROP), jev={"decision": "accept", "probability": 0.99})
+        before = copy.deepcopy(rop)
+        self.assertEqual(ss.prefill_ops([ruled, rop]), {"rename": 1})
+        self.assertEqual(rop, before)
 
     def test_reject_without_jev_reason_gets_the_default(self):
         none, blank = (self.person({"decision": "reject", "probability": 0.95, **r}) for r in ({}, {"reason": " "}))
         self.assertEqual(ss.prefill_ops([none, blank]), {"resolve_person": 2})
         for op in (none, blank):
             self.assertEqual(op["edited"], {"reason": "Jev: none of the candidates is this person"})
-
-    def test_relabel_of_a_curator_decided_rename_not_prefilled(self):
-        jev = {"decision": "accept", "probability": 0.95}
-        decided = dict(copy.deepcopy(OP), decision="reject")
-        rop = dict(copy.deepcopy(ROP), jev=dict(jev))
-        self.assertEqual(ss.prefill_ops([decided, rop]), {})
-        self.assertIsNone(rop["decision"])
-        self.assertNotIn("prefilled", rop)
-        # A rename the rule prefills (or another eulogy's decided one) does not hold the relabel back.
-        ruled = self.rename(self.cand("mr:0101-eugendus-a", "surname"))
-        ruled["id"] = "mr:0101-eugendus"
-        rop = dict(copy.deepcopy(ROP), jev=dict(jev))
-        other = dict(copy.deepcopy(OP), id="mr:0101-other", decision="reject")
-        self.assertEqual(ss.prefill_ops([ruled, other, rop]), {"rename": 1, "relabel": 1})
-        self.assertEqual((rop["decision"], rop["prefilled"]), ("accept", "jev"))
-
-    def test_relabel_edit_without_labels_skipped(self):
-        a, b = copy.deepcopy(ROP), copy.deepcopy(ROP)
-        a["jev"] = {"decision": "edit", "probability": 0.95}
-        b["jev"] = {"decision": "edit", "labels": {}, "probability": 0.95}
-        self.assertEqual(ss.prefill_ops([a, b]), {})
-        self.assertIsNone(a["decision"])
-        self.assertIsNone(b["decision"])
 
     def test_decided_untouched(self):
         op = self.rename(self.cand("mr:0101-x-a", "surname"), decision="reject")

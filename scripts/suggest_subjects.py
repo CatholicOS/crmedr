@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Jev suggestions on the subject-identity review cards: `rename`, `relabel` and `resolve_person` ops.
+"""Jev suggestions on the subject-identity review cards: `rename` and `resolve_person` ops.
+
+A `relabel` op (the subject rename) is never asked, evaluated or prefilled: the subject follows the
+ID (curator, 2026-10-25), so Jev's rename pick already chooses the pairing; `suggest` and `prefill`
+leave relabels untouched.
 
 `suggest` writes `jev` on every card whose answer reaches the threshold (the picked option's
 probability), and removes it from the others: on a rename {decision: accept|edit, new_id for an
-edit, probability, confidence, model, flags, scores: {new_id: clarity score}}; on a relabel
-{decision: accept|edit|reject (the current labels), labels for an edit, probability, confidence,
-model, flags, scores: [clarity score per candidate]}; on a person card
+edit, probability, confidence, model, flags, scores: {new_id: clarity score}}; on a person card
 {decision: accept|edit|reject, wikidata and source on accept and edit, reason for a reject, kind,
 probability, confidence, model, flags ["kind:<kind>"] on an item picked for a name Jev reads as
 other than a person}. A record field Jev doubts writes {flags: ["record:places[0]", ...], model,
@@ -13,15 +15,14 @@ scores} and no suggestion: the curator checks the record first. `jev` is kept ap
 which the curator's tool and `apply` read). Nothing here writes `decision` or `edited`.
 
 `evaluate` compares the suggestions with decided change-sets and prints, per question family
-(rename, relabel, person), the agreement at each threshold. Answers are cached in .cache/typesafe/ (git
+(rename, person), the agreement at each threshold. Answers are cached in .cache/typesafe/ (git
 ignored), so a re-run asks nothing already asked. The change-sets quote the 2004 texts: `suggest`
 refuses one inside any git work tree. See docs/superpowers/specs/2026-10-18-subject-identity-design.md.
 
 `prefill` writes `decision` (and `edited`) on the cards the rules and Jev settle, marked `prefilled`
 "rule" or "jev": a rename whose first PREFILL_ORDER category has exactly one candidate, not weak; a
-person card or relabel Jev answers at the threshold (a person's accept or edit only for a candidate
-with human and status evidence; a reject always), except a relabel whose rename the curator decided.
-A card with a decision is never touched, and `suggest` skips one decided or prefilled.
+person card Jev answers at the threshold (an accept or edit only for a candidate with human and
+status evidence; a reject always). A card with a decision is never touched, and `suggest` skips one decided or prefilled.
 
 Usage:
   python3 suggest_subjects.py suggest <changeset.json> <records.json> /path/to/martyrology-texts
@@ -30,7 +31,7 @@ Usage:
   python3 suggest_subjects.py evaluate <decided.json>... --records <records.json>
                                       /path/to/martyrology-texts [--repo repo_root]
 
---persons asks only the person cards (relabels go with the renames); --month MM only the cards of that
+--persons asks only the person cards; --month MM only the cards of that
 month's eulogies. The key: TYPESAFE_API_KEY, else ~/.config/typesafe/api_key.
 Standard library only.
 """
@@ -83,14 +84,14 @@ def read_records(path):
 
 
 def family(op):
-    return {"rename": "rename", "relabel": "relabel", "resolve_person": "person"}.get(op.get("op"))
+    return {"rename": "rename", "resolve_person": "person"}.get(op.get("op"))
 
 
 def record_for(op, records):
-    """A rename's (and a relabel's) record: the one whose name is the slug's token (as rename_candidates builds it);
+    """A rename's record: the one whose name is the slug's token (as rename_candidates builds it);
     a person card's: its own (name and n), else the kind of its eulogy's only record
     (subject_records.person_record, as build_person_items.expand matches it)."""
-    if family(op) in ("rename", "relabel"):
+    if family(op) == "rename":
         group = records.get(op["id"])
         return _record_of(op["id"], group) if group else None
     return person_record(records.get(op["eulogy"], []), op["name"], op.get("n"))
@@ -108,12 +109,12 @@ def companions(op, items):
 
 
 def request_for(op, data, records):
-    """(request, record) for one card; (None, None) when it cannot be asked: a rename or relabel
-    without a record, a card without candidates, or a eulogy without its Latin text."""
+    """(request, record) for one card; (None, None) when it cannot be asked: a rename without a
+    record, a card without candidates, or a eulogy without its Latin text."""
     if family(op) is None or not op.get("candidates"):
         return None, None
     record = record_for(op, records)
-    if family(op) in ("rename", "relabel"):
+    if family(op) == "rename":
         mrid = op["id"]
         la_text = data["la"].get(mrid)
         if record is None or not la_text:
@@ -121,8 +122,7 @@ def request_for(op, data, records):
         labels = data["labels"]
         vernacular = sj.vernacular_clause(data["en"].get(mrid), labels["en"].get(mrid),
                                           data["it"].get(mrid), labels["it"].get(mrid))
-        request = sj.rename_request if family(op) == "rename" else sj.relabel_request
-        return request(op, record, sj.clause(la_text, record), vernacular), record
+        return sj.rename_request(op, record, sj.clause(la_text, record), vernacular), record
     la_text = data["la"].get(op["eulogy"])
     if not la_text:
         return None, None
@@ -142,7 +142,7 @@ def in_scope(op, persons, month=None):
 
 def ask_op(op, data, records, client):
     """(suggestion before any threshold, flagged, error); all None when the card cannot be asked.
-    flagged: the `jev` of a rename or relabel whose record Jev doubts, {flags, model, scores}, else None.
+    flagged: the `jev` of a rename whose record Jev doubts, {flags, model, scores}, else None.
     A refused key is raised: the run stops."""
     body, record = request_for(op, data, records)
     if body is None:
@@ -160,11 +160,6 @@ def ask_op(op, data, records, client):
         if flags:
             flagged = {"flags": flags, "model": model, "scores": sj.clarity_scores(op, answers)}
         s = sj.rename_suggestion(op, answers, record, model)
-    elif family(op) == "relabel":
-        flags = sj.record_flags(answers)
-        if flags:
-            flagged = {"flags": flags, "model": model, "scores": sj.relabel_scores(op, answers)}
-        s = sj.relabel_suggestion(op, answers, model)
     else:
         s = sj.person_suggestion(op, answers, model)
     error = None if s or flagged else "the answer named no option the request offered"
@@ -222,10 +217,6 @@ def _jev_prefill(op, jev):
     """(decision, edited) of Jev's suggestion written as a curator's would be, or None when it is not
     taken: a person's accept or edit needs the item to be a candidate with human and status evidence."""
     decision = jev.get("decision")
-    if family(op) == "relabel":
-        if decision == "edit":
-            return (decision, {"labels": jev["labels"]}) if jev.get("labels") else None
-        return (decision, None) if decision in ("accept", "reject") else None
     if decision == "reject":
         return decision, {"reason": (jev.get("reason") or "").strip() or NO_CANDIDATE_REASON}
     if decision not in ("accept", "edit"):
@@ -239,17 +230,12 @@ def _jev_prefill(op, jev):
 
 def prefill_ops(ops, threshold=DEFAULT_MIN_CONFIDENCE):
     """Write `decision` (and `edited`) on the cards the rules and Jev settle, with `prefilled` "rule" or
-    "jev"; a card with a decision is never touched, nor a relabel whose eulogy's rename the curator
-    decided (decision set, not prefilled): the relabel follows that rename (subject_month.merge).
+    "jev"; a card with a decision is never touched, nor a relabel (the subject follows the ID).
     Returns the counts by kind of op."""
     counts = defaultdict(int)
-    curated = {op["id"] for op in ops if op.get("op") == "rename" and op.get("decision") is not None
-               and not op.get("prefilled")}
     for op in ops:
         kind = op.get("op")
-        if op.get("decision") or kind not in ("rename", "resolve_person", "relabel"):
-            continue
-        if kind == "relabel" and op["id"] in curated:
+        if op.get("decision") or kind not in ("rename", "resolve_person"):
             continue
         if kind == "rename":
             new = _rule_prefill(op)
@@ -265,22 +251,16 @@ def prefill_ops(ops, threshold=DEFAULT_MIN_CONFIDENCE):
             taken = _jev_prefill(op, jev) if jev and jev.get("probability", 0) >= threshold else None
             if taken is None:
                 continue
-            op["decision"], edited = taken
-            if edited is not None or kind == "resolve_person":
-                op["edited"] = edited
+            op["decision"], op["edited"] = taken
             op["prefilled"] = "jev"
         counts[kind] += 1
     return dict(counts)
 
 
 def curator_outcome(op):
-    """What the curator's decision applies: the new ID of a rename, the labels of a relabel (the
-    current ones for a reject), the item of a person card (an accept falls back to `suggested`, then
+    """What the curator's decision applies: the new ID of a rename, the item of a person card (an accept falls back to `suggested`, then
     to the first candidate, as `apply` does); None for a reject."""
     decision, edited = op.get("decision"), op.get("edited") or {}
-    if family(op) == "relabel":
-        return op.get("current") if decision == "reject" else edited.get("labels") if decision == "edit" \
-            else op.get("labels")
     if decision == "reject":
         return None
     if family(op) == "rename":
@@ -292,9 +272,6 @@ def curator_outcome(op):
 
 def suggested_outcome(op, s):
     """What taking Jev's suggestion would apply, in curator_outcome's terms."""
-    if family(op) == "relabel":
-        return op.get("current") if s["decision"] == "reject" else s.get("labels") if s["decision"] == "edit" \
-            else op.get("labels")
     if s["decision"] == "reject":
         return None
     if family(op) == "person":

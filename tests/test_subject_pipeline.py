@@ -26,7 +26,7 @@ def take(op):
     jev = op["jev"]
     op["decision"] = jev["decision"]
     if jev["decision"] == "edit":
-        key = {"rename": "new_id", "relabel": "labels", "resolve_person": "wikidata"}[op["op"]]
+        key = {"rename": "new_id", "resolve_person": "wikidata"}[op["op"]]
         op["edited"] = {key: jev[key]}
 
 
@@ -43,7 +43,8 @@ class PipelineTest(unittest.TestCase):
                          ["mr:0101-eugendus-condatiscensis", "mr:0101-eugendus-condatisci", None])
         counts = ss.suggest_ops(changeset["operations"], DATA, ss.index_records([RECORD]),
                                 StubClient(picks={"pick": "c1"}), 0.9)
-        self.assertEqual(counts["suggested"], 2)
+        self.assertEqual(counts["suggested"], 1)  # the rename: the relabel is not asked
+        self.assertNotIn("jev", relabel)
         take(op)
         self.assertEqual(ss.curator_outcome(op), "mr:0101-eugendus-condatisci")
         self.assertEqual(op["edited"], {"new_id": "mr:0101-eugendus-condatisci"})
@@ -52,8 +53,6 @@ class PipelineTest(unittest.TestCase):
         followed = {"la": "Sanctus Eugendus Condatisci", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
         self.assertEqual(ar.renames(changeset),
                          [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", followed)])
-        take(relabel)
-        self.assertEqual(ar.renames(changeset)[0].labels, followed)
 
     def test_a_person_card(self):
         person = {"eulogy": "mr:0101-eugendus", "name": "Eugendus", "where": "text", "day": "01-01",
