@@ -440,11 +440,13 @@ LANGS = ("la", "en", "it")
 def relabel_op(mrid, cands, ctx):
     """The subject rename (relabel) of a eulogy: one candidate per distinct label set of its rename
     candidates, in their order, each with the new ID it came from, then the current labels (the
-    i18n subjects) once, last, with from_id None; None when no candidate differs from the current."""
+    i18n subjects) once, last, with from_id None; None when no candidate differs from the current.
+    A candidate's None language is filled from the current labels before the sets are compared."""
     current = {lang: ctx.labels.get(lang, {}).get(mrid) for lang in LANGS}
     out, seen = [], {tuple(current.values())}
     for c in cands:
-        labels = {lang: (c.get("labels") or {}).get(lang) for lang in LANGS}
+        own = c.get("labels") or {}
+        labels = {lang: own.get(lang) if own.get(lang) is not None else current[lang] for lang in LANGS}
         if tuple(labels.values()) not in seen:
             seen.add(tuple(labels.values()))
             out.append({"labels": labels, "from_id": c["new_id"]})

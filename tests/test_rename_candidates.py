@@ -346,7 +346,8 @@ class Changeset(unittest.TestCase):
             "op": "relabel", "id": "mr:0101-eugendus", "uid": "labels:mr:0101-eugendus", "current": current,
             "labels": first,
             "candidates": [{"labels": first, "from_id": "mr:0101-eugendus-condatiscensis"},
-                           {"labels": {"la": "Sanctus Eugendus Condatisci", "en": None, "it": None},
+                           {"labels": {"la": "Sanctus Eugendus Condatisci", "en": "Saint Eugendus",
+                                       "it": "Sant’Eugendo"},  # a None language filled from current
                             "from_id": "mr:0101-eugendus-condatisci"},
                            {"labels": current, "from_id": None}],
             "decision": None, "edited": None})
@@ -355,12 +356,22 @@ class Changeset(unittest.TestCase):
         current = {"la": "Sanctus A", "en": "Saint A", "it": None}
         ctx = CTX._replace(labels={"la": {"mr:0101-a": "Sanctus A"}, "en": {"mr:0101-a": "Saint A"}, "it": {}})
         x = {"la": "Sanctus A X", "en": None, "it": None}
-        cands = [{"new_id": "mr:0101-a-x", "labels": x}, {"new_id": "mr:0101-a-y", "labels": dict(x)},
+        cands = [{"new_id": "mr:0101-a-x", "labels": x}, {"new_id": "mr:0101-a-y", "labels": dict(x, en="Saint A")},
                  {"new_id": "mr:0101-a-z", "labels": dict(current)}]
         op = rc.relabel_op("mr:0101-a", cands, ctx)
-        self.assertEqual(op["candidates"], [{"labels": x, "from_id": "mr:0101-a-x"},
+        self.assertEqual(op["candidates"], [{"labels": dict(x, en="Saint A"), "from_id": "mr:0101-a-x"},
                                             {"labels": current, "from_id": None}])
         self.assertIsNone(rc.relabel_op("mr:0101-a", cands[2:], ctx))  # nothing but the current labels
+
+    def test_relabel_candidate_equal_to_current_once_filled_not_offered(self):
+        ctx = CTX._replace(labels={"la": {"mr:0101-a": "Sanctus A"}, "en": {"mr:0101-a": "Saint A"},
+                                   "it": {"mr:0101-a": "Sant’A"}})
+        same = {"new_id": "mr:0101-a-y", "labels": {"la": "Sanctus A", "en": None, "it": None}}
+        self.assertIsNone(rc.relabel_op("mr:0101-a", [same, dict(same, labels=None)], ctx))
+        x = {"new_id": "mr:0101-a-x", "labels": {"la": "Sanctus A X", "en": None, "it": "Sant’A X"}}
+        op = rc.relabel_op("mr:0101-a", [same, x], ctx)
+        self.assertEqual([c["from_id"] for c in op["candidates"]], ["mr:0101-a-x", None])
+        self.assertEqual(op["labels"], {"la": "Sanctus A X", "en": "Saint A", "it": "Sant’A X"})
 
     def test_non_bare_no_op(self):
         self.assertEqual(self.build([dict(BASILIUS, id="mr:0614-basilius-magnus")])["operations"], [])
@@ -426,9 +437,6 @@ class Changeset(unittest.TestCase):
             rc.main(["build", "in.json", str(Path(__file__).resolve().parent / "out.json")])
         self.assertIn("outside the repository", str(e.exception))
 
-
-if __name__ == "__main__":
-    unittest.main()
 
 
 class GenitiveMapTest(unittest.TestCase):
@@ -550,3 +558,7 @@ class GenitiveMapTest(unittest.TestCase):
                 self.assertEqual(rc.main(["report", str(root)]), 0)
             text = (root / "docs" / "rename-genitives-report.md").read_text(encoding="utf-8")
         self.assertIn("- Q1891 Bologna: `bononiae` (2: mr:0201-aa-bononiae, mr:0202-b-bononiae)", text)
+
+
+if __name__ == "__main__":
+    unittest.main()

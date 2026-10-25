@@ -52,7 +52,9 @@ class PipelineTest(unittest.TestCase):
                  "it": "Sant’Eugendo di Condat"}
         self.assertEqual(ar.renames(changeset), [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", first)])
         take(relabel)
-        self.assertEqual(ar.renames(changeset)[0].labels, {"la": "Sanctus Eugendus Condatisci", "en": None, "it": None})
+        # The draft's None languages were filled from the current labels (relabel_op).
+        self.assertEqual(ar.renames(changeset)[0].labels, {"la": "Sanctus Eugendus Condatisci",
+                                                           "en": "Saint Eugendus", "it": "Sant’Eugendo"})
 
     def test_a_person_card(self):
         person = {"eulogy": "mr:0101-eugendus", "name": "Eugendus", "where": "text", "day": "01-01",
