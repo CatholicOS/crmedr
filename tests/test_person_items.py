@@ -678,6 +678,13 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(client.name_place_calls, [("Ioannes", ["Paris"])])
         self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q7", "place")])
 
+    def test_name_and_place_route_searches_the_full_name_and_its_other_names(self):
+        client = self.Client()
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Lutetiae", "qid": "Q90", "label": "Paris"}]}
+        op = self.op(name="Ioannes Lego", also=["Ioannes Baptista Lego", "Ioannes Lego"], companions=[], candidates=[])
+        self.run_expand(op, client, record={"id": op["eulogy"], "name": "Ioannes Lego", "kind": "person"}, places=places)
+        self.assertEqual(client.name_place_calls, [("Ioannes Lego", ["Paris"]), ("Ioannes Baptista Lego", ["Paris"])])
+
     def test_name_and_place_route_does_not_repeat_a_place_candidate(self):
         client = self.Client()
         client.place = [cand("Q6", ["Ioannes"])]

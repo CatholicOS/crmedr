@@ -501,8 +501,12 @@ def _expansion(op, record, items, client, ops=None, places=()):
     if labels:
         named = _named(op)
         seen = {c["wikidata"] for c in found}
-        found += [c for c in client.saints_by_name_and_place(op["name"].split()[0], labels)
-                  if c["wikidata"] not in seen and named(c.get("names", []) + [c.get("label", "")])]
+        # the full name and each other name: a first word alone lets namesakes fill the results
+        for name in dict.fromkeys([op["name"], *op.get("also", [])]):
+            for c in client.saints_by_name_and_place(name, labels):
+                if c["wikidata"] not in seen and named(c.get("names", []) + [c.get("label", "")]):
+                    seen.add(c["wikidata"])
+                    found.append(c)
     return found
 
 

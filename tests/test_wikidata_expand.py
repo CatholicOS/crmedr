@@ -57,7 +57,7 @@ class Fake:
             return self.sparql
         if "list=search" in url:
             text = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)["srsearch"][0]
-            text = text.replace(" haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286", "")
+            text = text.replace(" haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366", "")
             return {"query": {"search": [{"title": q} for q in self.fulltext.get(text, [])]}}
         if "wbsearchentities" in url:
             return {"search": [{"id": q} for q in self.search]}
@@ -164,7 +164,7 @@ class ExpandTest(unittest.TestCase):
         searches = [u for u in fake.urls if "list=search" in u]
         self.assertEqual(len(searches), 2)  # one per distinct place
         query = urllib.parse.parse_qs(urllib.parse.urlparse(searches[0]).query)
-        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286"])
+        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366"])
         self.assertEqual(query["maxlag"], ["5"])
 
     def test_saints_by_name_and_place_without_places_asks_nothing(self):
