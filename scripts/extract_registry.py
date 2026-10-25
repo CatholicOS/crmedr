@@ -214,7 +214,6 @@ ENTRY_NOTES = {
     "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
     "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
     "mr:0721-simeon-salus": "The hermitage by the Dead Sea (Lake Asphaltites) where Simeon and John lived is unnamed, and its site is unknown.",
-    "mr:0109-felanus": "The monastery of Saint Andrew of which Fillan was abbot is not securely identified.",
     "mr:1204-adrehildis": "The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified.",
     "mr:0304-appianus": "Which monastery of Pavia sent Appian to Comacchio is not known.",
     "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
