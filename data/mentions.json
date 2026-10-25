@@ -3321,7 +3321,7 @@
           "start": 34,
           "end": 58,
           "check": "d4338fb8",
-          "qid": null,
+          "qid": "Q141865813",
           "roles": [
             {
               "role": "religious_life"
@@ -158692,6 +158692,15 @@
           "qid": null
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 86,
+          "check": "91b1ff2d",
+          "name": "Eustratius Thaumaturgus",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 98,
@@ -158734,7 +158743,7 @@
           "start": 34,
           "end": 58,
           "check": "85d2c48f",
-          "qid": null,
+          "qid": "Q141865813",
           "roles": [
             {
               "role": "religious_life"
