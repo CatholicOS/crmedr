@@ -62,6 +62,30 @@ class CheckRecord(unittest.TestCase):
         self.assertIn("places[0]: adjective pictaviensis does not match Condatiscénsis",
                       sr.check_record(r, TEXT))
 
+    def test_adjective_stems_of_other_declensions(self):
+        for printed, adj in (("Antiochéni", "antiochenus"), ("Moguntínam", "moguntinus"),
+                             ("Pérsico", "persicus"), ("Romanórum", "romanus")):
+            with self.subTest(printed=printed):
+                text = f"Memoria Eugéndi, abbátis {printed}."
+                r = rec()
+                r["places"][0].update(printed=printed, adjective=adj)
+                self.assertEqual(sr.check_record(r, text), [])
+
+    def test_a_wrong_adjective_of_another_declension_is_still_refused(self):
+        text = "Memoria Eugéndi, abbátis Antiochéni."
+        r = rec()
+        r["places"][0].update(printed="Antiochéni", adjective="antiochenianus")
+        self.assertIn("places[0]: adjective antiochenianus does not match Antiochéni",
+                      sr.check_record(r, text))
+
+    def test_plural_role_forms(self):
+        text = "Memoria Eugéndi et Lupicíni, mártyrum, episcopórum, vírginum, monachórum."
+        for role, printed in (("martyr", "mártyrum"), ("episcopus", "episcopórum"),
+                              ("virgo", "vírginum"), ("monachus", "monachórum")):
+            with self.subTest(printed=printed):
+                r = rec(places=[], roles=[{"role": role, "printed": printed, "occurrence": 0}])
+                self.assertEqual(sr.check_record(r, text), [])
+
     def test_role_forms_cover_cleric_roles(self):
         self.assertTrue(set(sr.CLERIC_ROLES) <= set(sr.ROLE_FORMS))
         self.assertIn("abbatem", sr.ROLE_FORMS["abbas"])
