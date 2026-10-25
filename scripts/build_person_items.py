@@ -660,13 +660,25 @@ def annotate_places(ops, by_eulogy, client):
     """Mark on each open op its eulogy's places and, per candidate, those it agrees with (`places`,
     and "place" last in its evidence) and the labels of its place properties (`place_labels`).
 
-    Evidence only: the order and `auto` are left as they are. Idempotent, and run last, since
-    other steps recompute `evidence`. One `client.items` call; a WikidataError propagates before
-    any op is touched. Decided and prefilled ops are left alone."""
+    A candidate carried over from an old op, with none of the place properties, gets them from
+    its person summary first (one `client.people` call). Evidence only: the order and `auto` are
+    left as they are. Idempotent, and run last, since other steps recompute `evidence`. One
+    `client.items` call; a WikidataError from either call propagates before any op is touched.
+    Decided and prefilled ops are left alone."""
     ops = [op for op in ops if op.get("decision") is None and not op.get("prefilled")]
+    bare = list(dict.fromkeys(c["wikidata"] for op in ops for c in op["candidates"]
+                              if c.get("wikidata") and not any(prop in c for prop in VIA)))
+    people = client.people(bare) if bare else {}
+    props = lambda c: (c if any(prop in c for prop in VIA)  # noqa: E731
+                       else {prop: people.get(c.get("wikidata"), {}).get(prop, []) for prop in VIA})
     qids = list(dict.fromkeys([p["qid"] for op in ops for p in by_eulogy.get(op["eulogy"], [])]
-                              + [q for op in ops for c in op["candidates"] for prop in VIA for q in c.get(prop, [])]))
+                              + [q for op in ops for c in op["candidates"] for prop in VIA
+                                 for q in props(c).get(prop, [])]))
     found = client.items(qids) if qids else {}
+    for op in ops:
+        for c in op["candidates"]:
+            if c.get("wikidata") in people and not any(prop in c for prop in VIA):
+                c.update({prop: people[c["wikidata"]].get(prop, []) for prop in VIA})
     admin = {q: s.get("admin_qids", []) for q, s in found.items()}
     label = lambda q, own=None: own or found.get(q, {}).get("label") or q  # noqa: E731
     for op in ops:

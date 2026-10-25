@@ -75,6 +75,20 @@ class PersonSearchTest(unittest.TestCase):
         self.assertEqual(len(searched), 3)
         self.assertTrue(any("language=la" in u for u in searched))
 
+    def test_people_summarizes_by_qid_fifty_per_request(self):
+        calls = []
+
+        def fetch(url):
+            calls.append(url)
+            return {"entities": {"Q380649": RAW, "Q2": {"id": "Q2", "missing": ""}}}
+
+        qids = ["Q380649", "Q2"] + [f"Q{n}" for n in range(100, 160)]
+        with tempfile.TemporaryDirectory() as d:
+            found = wd.Wikidata(Path(d), fetch=fetch).people(qids)
+        self.assertEqual(list(found), ["Q380649"])
+        self.assertEqual(found["Q380649"], wd.summarize_person(RAW))
+        self.assertEqual(len(calls), 2)
+
 import build_person_items as bp  # noqa: E402
 
 
@@ -123,7 +137,7 @@ class EvaluateTest(unittest.TestCase):
 class FakeClient:
     def __init__(self, by_name=None, by_qid=None, fail=(), places=None):
         self.by_name, self.by_qid, self.fail = by_name or {}, by_qid or {}, set(fail)
-        self.places, self.items_calls = places or {}, []
+        self.places, self.items_calls, self.people_calls = places or {}, [], []
 
     def person_candidates(self, name, languages=("la", "it", "en")):
         if name in self.fail:
@@ -132,6 +146,12 @@ class FakeClient:
 
     def person(self, qid):
         return self.by_qid.get(qid)
+
+    def people(self, qids):
+        self.people_calls.append(list(qids))
+        if "people" in self.fail:
+            raise bp.WikidataError("boom")
+        return {q: self.by_qid[q] for q in qids if q in self.by_qid}
 
     def items(self, qids):
         self.items_calls.append(list(qids))
@@ -1035,3 +1055,28 @@ class PlaceAgreementTest(unittest.TestCase):
         with self.assertRaises(bp.WikidataError):
             bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES, fail={"items"}))
         self.assertEqual(op, before)
+
+    def test_a_carried_over_candidate_gets_its_places(self):
+        # A candidate kept from an old op has no place keys: they are fetched, once, and copied on.
+        old = cand("Q1", ["Paul Miki"])
+        _, op = self._op([old, placed("Q2", ["Paul Miki"], death_place=["Q220"])])
+        client = FakeClient(by_qid={"Q1": dict(placed("Q1", ["Paul Miki"], death_place=["Q900"]),
+                                               label="Other")}, places=PLACES)
+        bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, client)
+        self.assertEqual(client.people_calls, [["Q1"]])
+        c = next(c for c in op["candidates"] if c["wikidata"] == "Q1")
+        self.assertEqual((c["death_place"], c["work_places"], c["label"]), (["Q900"], [], "Paul Miki"))
+        self.assertEqual(c["places"], [{"role": "death", "qid": "Q490", "label": "Bologna", "via": "P20"}])
+        self.assertIn("Q900", client.items_calls[0])
+        # Nothing to fetch: no call.
+        client = FakeClient(places=PLACES)
+        bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, client)
+        self.assertEqual(client.people_calls, [])
+
+    def test_a_failed_people_lookup_leaves_the_ops_unannotated(self):
+        _, op = self._op([cand("Q1", ["Paul Miki"])])
+        before = json.loads(json.dumps(op))
+        client = FakeClient(places=PLACES, fail={"people"})
+        with self.assertRaises(bp.WikidataError):
+            bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, client)
+        self.assertEqual((op, client.items_calls), (before, []))

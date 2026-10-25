@@ -512,6 +512,11 @@ class Wikidata:
         raw = self._entities([qid]).get(qid)
         return summarize_person(raw) if raw else None
 
+    def people(self, qids):
+        """Person summaries of these items, by QID, fetched 50 at a time; a missing one is left out."""
+        raws = self._entities(list(dict.fromkeys(qids)))
+        return {q: summarize_person(raws[q]) for q in dict.fromkeys(qids) if q in raws}
+
     def details_entities(self, qids):
         """For the reader's popups: descriptions, claims and Wikipedia sitelinks in
         the interface languages, by QID. Labels are not asked: the frontend's
