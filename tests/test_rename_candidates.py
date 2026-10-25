@@ -463,6 +463,35 @@ class GenitiveMapTest(unittest.TestCase):
         self.assertEqual((c[0]["new_id"], c[0]["certain"]), ("mr:0104-petronius-bononiae", True))
         self.assertFalse(rc.candidates(record, "mr:0104-petronius", "Sanctus Petronius", CTX)[0]["certain"])
 
+    def test_one_id_genitive_offered_uncertain(self):
+        mined = {"Q1891": rc.Counter({"bononiae": 1})}
+        p = {"qid": "Q1891", "nominative": "Bononia", "genitive": None, "printed": "Bononia", "grammar": "nominative"}
+        self.assertEqual(rc.genitive_slug(p, {}, mined), ("bononiae", False))
+        self.assertEqual(rc.genitive_slug(dict(p, genitive="Bononiensium"), {}, mined), ("bononiensium", False))
+        # two mined genitives: none is the slug's; the locative stays the last fallback
+        two = {"Q1891": rc.Counter({"bononiae": 2, "felsinae": 1})}
+        self.assertEqual(rc.genitive_slug(p, {}, two), (None, False))
+
+    def test_conflict_offers_each_uncertain(self):
+        record = rec("Petronius", ["episcopus"], [place("see", "locative", "Bononia", "Bologna",
+                                                        genitive="Bononiae")])
+        record["places"][0]["printed"] = "Bonóniæ"
+        ctx = CTX._replace(places={"mr:0104-petronius": [self.BONONIA]},
+                           mined={"Q1891": rc.Counter({"bononiae": 2, "felsinae": 1})})
+        c = rc.candidates(record, "mr:0104-petronius", "Sanctus Petronius", ctx)
+        self.assertEqual([(x["new_id"], x["category"], x["certain"]) for x in c],
+                         [("mr:0104-petronius-bononiae", "place-genitive", False),
+                          ("mr:0104-petronius-felsinae", "place-genitive", False)])
+        self.assertEqual(c[1]["labels"]["la"], "Sanctus Petronius Felsinae")
+        self.assertEqual(c[1]["basis"], "see Bonóniæ (locative); mined genitive felsinae (1 ID)")
+
+    def test_link_falls_back_to_the_opening_place(self):
+        opening = [{"role": "burial", "la": "Ravénnæ", "qid": "Q13364"},
+                   {"role": "death", "la": "In Æmília", "qid": "Q1263"}]
+        for kind, qid in (("see", "Q1263"), ("death", "Q1263"), ("burial", None)):
+            record = rec("Petronius", [], [place(kind, "locative", "Bononia", "Bologna")])
+            self.assertEqual(rc.link_places(record, opening)["places"][0].get("qid"), qid, kind)
+
     def test_report_conflicts_first(self):
         mined = {"Q220": {"romae": ["mr:0101-aa-romae", "mr:0102-b-romae"], "urbis": ["mr:0103-c-urbis"]},
                  "Q1891": {"bononiae": ["mr:0104-d-bononiae", "mr:0105-ee-bononiae"]},

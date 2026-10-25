@@ -66,11 +66,13 @@ def adjective_slug(adjective, feminine):
 LOCATIVE_AS_GENITIVE = re.compile(r"(ae|i)$")
 
 
-def genitive_slug(place, certain=None):
+def genitive_slug(place, certain=None, mined=None):
     """(genitive slug, certain): the corpus genitive when the place has one; else the certain
     genitive of the place's item (certain: {qid: genitive}, see certain_genitives); else the
-    record's own genitive, not certain; else a printed locative in -ae or -i, which has the
-    genitive's form, not certain; else (None, False)."""
+    record's own genitive, not certain; else the one genitive the IDs give the item (mined:
+    {qid: Counter}, see mine_genitives), not certain; else a printed locative in -ae or -i,
+    which has the genitive's form, not certain; else (None, False). An item the IDs give two
+    genitives gets none here: _build offers each."""
     known = PLACE_GENITIVES.get(slug(place.get("nominative") or ""))
     if known:
         return known, True
@@ -78,6 +80,8 @@ def genitive_slug(place, certain=None):
         return certain[place["qid"]], True
     if place.get("genitive"):
         return slug(place["genitive"]), False
+    if mined and len(mined.get(place.get("qid"), ())) == 1:
+        return next(iter(mined[place["qid"]])), False
     # fold() writes æ as e; the genitive keeps it as ae (Romæ -> romae)
     printed = slug(re.sub("[æÆ]", "ae", place.get("printed") or ""))
     if place.get("grammar") == "locative" and LOCATIVE_AS_GENITIVE.search(printed.split("-")[0]):
@@ -146,14 +150,18 @@ def _folded(s):
 
 def link_places(record, places):
     """A copy of the record whose places gain the `qid` of the eulogy place whose Latin
-    contains their printed form (the first such); a place with none is left as it is."""
+    contains their printed form (the first such); else, for a see or a place of death, the
+    eulogy's opening place (its first place with role death); a place with none is left as it is."""
     out = dict(record, places=[dict(p) for p in record.get("places") or []])
+    opening = next((e["qid"] for e in places if e.get("role") == "death" and e.get("qid")), None)
     for p in out["places"]:
         printed = _folded(p.get("printed"))
-        if printed.strip():
-            qid = next((e["qid"] for e in places if e.get("qid") and printed in _folded(e.get("la"))), None)
-            if qid:
-                p["qid"] = qid
+        qid = next((e["qid"] for e in places if e.get("qid") and printed in _folded(e.get("la"))), None) \
+            if printed.strip() else None
+        if qid is None and p.get("kind") in ("see", "death"):
+            qid = opening  # the opening place of a dies natalis carries role death
+        if qid:
+            p["qid"] = qid
     return out
 
 
@@ -205,6 +213,7 @@ class Context(NamedTuple):
     labels: dict   # lang (la, en, it) -> mrid -> subject
     genitives: dict = {}  # place QID -> its certain corpus genitive (certain_genitives)
     places: dict = {}     # mrid -> the eulogy's places (eulogy_places.load)
+    mined: dict = {}      # place QID -> Counter(genitive) of the current IDs (mine_genitives)
 
 
 def load_context(repo_root):
@@ -227,10 +236,11 @@ def load_context(repo_root):
         for mrid in group:
             twins[mrid] |= group - {mrid}
     places = eulogy_places.load(repo_root)
+    mined = mine_genitives(entries, places)
     return Context(taken=dict(taken),
                    twins={m: sorted(t) for m, t in twins.items() if t},
                    ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")},
-                   genitives=certain_genitives(mine_genitives(entries, places))[0], places=places)
+                   genitives=certain_genitives(mined)[0], places=places, mined=mined)
 
 
 def _primary_place(record):
@@ -323,15 +333,24 @@ def _build(record, mrid, subject_la, ctx):
             form, certain = adjective_slug(place["adjective"], record.get("feminine")), True
             category = "place-adjective"
         else:
-            form, certain = genitive_slug(place, ctx.genitives)
+            form, certain = genitive_slug(place, ctx.genitives, ctx.mined)
             category = "place-genitive"
+
+        def labels(f):
+            return _labels(mrid, subject_la, ctx, _display(f), f" of {place['en']}", f" di {place['it']}")
+
+        basis = f"{place['kind']} {place.get('printed')} ({place.get('grammar')})"
         if form is None:
             dropped.append((f"mr:{mmdd}-{base}-{slug(place.get('nominative') or '')}",
                              f"no genitive for {place.get('nominative')}"))
         else:
-            basis = f"{place['kind']} {place.get('printed')} ({place.get('grammar')})"
-            add(form, category, _labels(mrid, subject_la, ctx, _display(form),
-                                        f" of {place['en']}", f" di {place['it']}"), basis, certain=certain)
+            add(form, category, labels(form), basis, certain=certain)
+        # An item the IDs give two or more genitives: each offered, uncertain, the most given first.
+        mined = ctx.mined.get(place.get("qid"), {})
+        if category == "place-genitive" and not certain and len(mined) > 1:
+            for g, n in sorted(mined.items(), key=lambda x: (-x[1], x[0])):
+                add(g, "place-genitive", labels(g), f"{basis}; mined genitive {g} ({n} ID{'s' if n > 1 else ''})",
+                    certain=False)
 
     kept = _keep(out, dropped, mmdd, base, ctx)
     # Nothing kept (a cleric with no place, a place with no genitive, every slug taken...):
