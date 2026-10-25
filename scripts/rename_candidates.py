@@ -15,10 +15,11 @@ import datetime
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import NamedTuple
 
+import eulogy_places
 from body_places import _in_a_repository
 from extract_subjects import ROMAN, fold, it_label
 from subject_records import CLERIC_ROLES, DECIDED, ROLE_FORMS
@@ -65,13 +66,16 @@ def adjective_slug(adjective, feminine):
 LOCATIVE_AS_GENITIVE = re.compile(r"(ae|i)$")
 
 
-def genitive_slug(place):
-    """(genitive slug, certain): the corpus genitive when the place has one; else the
-    record's own genitive, not certain; else a printed locative in -ae or -i, which has
-    the genitive's form, not certain; else (None, False)."""
+def genitive_slug(place, certain=None):
+    """(genitive slug, certain): the corpus genitive when the place has one; else the certain
+    genitive of the place's item (certain: {qid: genitive}, see certain_genitives); else the
+    record's own genitive, not certain; else a printed locative in -ae or -i, which has the
+    genitive's form, not certain; else (None, False)."""
     known = PLACE_GENITIVES.get(slug(place.get("nominative") or ""))
     if known:
         return known, True
+    if certain and place.get("qid") in certain:
+        return certain[place["qid"]], True
     if place.get("genitive"):
         return slug(place["genitive"]), False
     # fold() writes æ as e; the genitive keeps it as ae (Romæ -> romae)
@@ -81,11 +85,126 @@ def genitive_slug(place):
     return None, False
 
 
+def _ligatures(s):
+    return s.replace("æ", "ae").replace("Æ", "Ae").replace("œ", "oe").replace("Œ", "Oe")
+
+
+# a slug's place after one of these is a prepositional phrase (de-fabriano), not a genitive
+PREPOSITIONS = {"a", "ab", "ad", "de", "e", "ex", "in"}
+
+
+def _mine(entries, places):
+    """{qid: {genitive: [current IDs giving it]}}: a current ID whose last k slug tokens
+    (k = 3, 2, 1, the first that matches) are the slug of k printed words of one of its
+    eulogy's places, the first of them capitalized, and not after a preposition. Each
+    (qid, genitive) once per ID."""
+    out = defaultdict(lambda: defaultdict(list))
+    for e in entries:
+        if e.get("deprecated"):
+            continue
+        tokens = e["id"][8:].split("-")
+        seen = set()
+        for p in places.get(e["id"], []):
+            if not p.get("qid") or not p.get("la"):
+                continue
+            words = _ligatures(p["la"]).split()
+            for k in (3, 2, 1):
+                if len(tokens) <= k or tokens[-k - 1] in PREPOSITIONS:
+                    continue  # the name itself, or a preposition's object, is not a genitive
+                tail = "-".join(tokens[-k:])
+                if any(words[i][:1].isupper() and slug(" ".join(words[i:i + k])) == tail
+                       for i in range(len(words) - k + 1)):
+                    if (p["qid"], tail) not in seen:
+                        seen.add((p["qid"], tail))
+                        out[p["qid"]][tail].append(e["id"])
+                    break
+    return out
+
+
+def mine_genitives(entries, places):
+    """{qid: Counter(genitive)}: how many current IDs give each genitive to a place item."""
+    return {qid: Counter({g: len(ids) for g, ids in gens.items()}) for qid, gens in _mine(entries, places).items()}
+
+
+def certain_genitives(mined):
+    """(certain, conflicts): certain = {qid: genitive} given by two or more IDs and no other;
+    conflicts = {qid: sorted genitives} for an item with two or more."""
+    certain, conflicts = {}, {}
+    for qid, counts in mined.items():
+        if len(counts) > 1:
+            conflicts[qid] = sorted(counts)
+        else:
+            (g, n), = counts.items()
+            if n >= 2:
+                certain[qid] = g
+    return certain, conflicts
+
+
+def _folded(s):
+    return " " + " ".join(fold(s or "").split()) + " "
+
+
+def link_places(record, places):
+    """A copy of the record whose places gain the `qid` of the eulogy place whose Latin
+    contains their printed form (the first such); a place with none is left as it is."""
+    out = dict(record, places=[dict(p) for p in record.get("places") or []])
+    for p in out["places"]:
+        printed = _folded(p.get("printed"))
+        if printed.strip():
+            qid = next((e["qid"] for e in places if e.get("qid") and printed in _folded(e.get("la"))), None)
+            if qid:
+                p["qid"] = qid
+    return out
+
+
+def genitives_report(mined, labels):
+    """The genitive report (Markdown) of _mine's result: the items with two or more genitives,
+    the certain map, the genitives one ID gives. IDs, QIDs, labels and slugs only."""
+    def line(qid, gens):
+        parts = ", ".join(f"`{g}` ({len(ids)}: {', '.join(ids[:3])}{', …' if len(ids) > 3 else ''})"
+                          for g, ids in sorted(gens.items(), key=lambda x: (-len(x[1]), x[0])))
+        return f"- {qid} {labels.get(qid) or '(no label)'}: {parts}"
+
+    def key(qid):
+        return (labels.get(qid) or "", qid)
+
+    conflicts = sorted((q for q, g in mined.items() if len(g) > 1), key=key)
+    certain = sorted((q for q, g in mined.items() if len(g) == 1 and len(next(iter(g.values()))) >= 2), key=key)
+    single = sorted((q for q, g in mined.items() if len(g) == 1 and len(next(iter(g.values()))) == 1), key=key)
+    out = ["# Place genitives mined from the IDs", "",
+           "Generated by `scripts/rename_candidates.py report`. A genitive is certain when two or more current",
+           "IDs give it to a place item and none gives another; `PLACE_GENITIVES` overrides. Each genitive",
+           "shows how many IDs give it and up to three of them.", "",
+           f"## Items with two or more genitives ({len(conflicts)})", "",
+           "Each offered as uncertain until the curator picks one in `PLACE_GENITIVES`.", ""]
+    out += [line(q, mined[q]) for q in conflicts] or ["None."]
+    out += ["", f"## Certain ({len(certain)})", ""]
+    out += [line(q, mined[q]) for q in certain] or ["None."]
+    out += ["", f"## Given by one ID ({len(single)}, uncertain)", ""]
+    out += [line(q, mined[q]) for q in single] or ["None."]
+    return "\n".join(out) + "\n"
+
+
+def write_genitives_report(repo_root, entries=None, places=None):
+    """Write docs/rename-genitives-report.md from the registry and the eulogy places."""
+    repo_root = Path(repo_root)
+    if entries is None:
+        entries = json.loads((repo_root / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))["entries"]
+    if places is None:
+        places = eulogy_places.load(repo_root)
+    labels = {p["qid"]: p.get("label") for ps in places.values() for p in ps if p.get("qid")}
+    path = repo_root / "docs" / "rename-genitives-report.md"
+    path.write_text(genitives_report(_mine(entries, places), labels), encoding="utf-8")
+    return path
+
+
 class Context(NamedTuple):
     taken: dict    # MMDD -> slugs in use that day, current and deprecated
     twins: dict    # mrid -> its same-saint IDs, current and deprecated (same_eulogy, shared person item)
     ids: set       # all current IDs (a current twin's discriminator wins over a deprecated one's)
     labels: dict   # lang (la, en, it) -> mrid -> subject
+    genitives: dict = {}  # place QID -> its certain corpus genitive (certain_genitives)
+    places: dict = {}     # mrid -> the eulogy's places (eulogy_places.load)
 
 
 def load_context(repo_root):
@@ -107,9 +226,11 @@ def load_context(repo_root):
     for group in by_item.values():
         for mrid in group:
             twins[mrid] |= group - {mrid}
+    places = eulogy_places.load(repo_root)
     return Context(taken=dict(taken),
                    twins={m: sorted(t) for m, t in twins.items() if t},
-                   ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")})
+                   ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")},
+                   genitives=certain_genitives(mine_genitives(entries, places))[0], places=places)
 
 
 def _primary_place(record):
@@ -135,6 +256,7 @@ def _labels(mrid, subject_la, ctx, la_words, en_tail=None, it_tail=None):
 def _build(record, mrid, subject_la, ctx):
     """(candidates, dropped): every candidate the rules allow, in tier order, then the
     hard-rule drops (numeric token, taken that day, twin disagreement, more than four)."""
+    record = link_places(record, ctx.places.get(mrid, []))
     mmdd, base = mrid[3:7], mrid[8:]
     name_tokens = base.split("-")
     role_en, role_it = record.get("role_en"), record.get("role_it")
@@ -201,7 +323,7 @@ def _build(record, mrid, subject_la, ctx):
             form, certain = adjective_slug(place["adjective"], record.get("feminine")), True
             category = "place-adjective"
         else:
-            form, certain = genitive_slug(place)
+            form, certain = genitive_slug(place, ctx.genitives)
             category = "place-genitive"
         if form is None:
             dropped.append((f"mr:{mmdd}-{base}-{slug(place.get('nominative') or '')}",
@@ -339,13 +461,18 @@ def load_old(paths):
 def main(argv):
     argv = list(argv)
     olds = []
-    usage = __doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]"
+    usage = (__doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]"
+             "\n       rename_candidates.py report [repo_root]   (docs/rename-genitives-report.md only)")
     while "--old" in argv:
         i = argv.index("--old")
         if i + 1 == len(argv):
             sys.exit(usage)
         olds.append(argv[i + 1])
         del argv[i:i + 2]
+    if argv[:1] == ["report"] and len(argv) <= 2:
+        repo_root = Path(argv[1]) if len(argv) > 1 else Path(__file__).resolve().parent.parent
+        print(f"genitives report in {write_genitives_report(repo_root)}")
+        return 0
     if len(argv) < 3 or argv[0] != "build":
         sys.exit(usage)
     records_path, out = Path(argv[1]), Path(argv[2])
@@ -356,9 +483,10 @@ def main(argv):
     if isinstance(records, dict):
         records = records["records"]
     ctx = load_context(repo_root)
+    report = write_genitives_report(repo_root, places=ctx.places)
     changeset = build_changeset([r for r in records if r["id"] in ctx.ids], ctx, ctx.labels["la"], load_old(olds))
     out.write_text(json.dumps(changeset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(changeset['operations'])} rename operations in {out}")
+    print(f"{len(changeset['operations'])} rename operations in {out}; genitives report in {report}")
     return 0
 
 

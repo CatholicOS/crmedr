@@ -1,3 +1,5 @@
+import contextlib
+import io
 import json
 import sys
 import tempfile
@@ -283,7 +285,14 @@ class LoadContext(unittest.TestCase):
                        {"id": "mr:0509-gregorius", "month": 5, "day": 9},
                        {"id": "mr:0101-basilius-old", "month": 1, "day": 1, "deprecated": True},
                        {"id": "mr:0614-basilius-caesariensis", "month": 6, "day": 14, "deprecated": True,
-                        "same_eulogy": ["mr:0614-basilius-magnus"]}]
+                        "same_eulogy": ["mr:0614-basilius-magnus"]},
+                       {"id": "mr:0201-aa-bononiae", "month": 2, "day": 1},
+                       {"id": "mr:0202-b-bononiae", "month": 2, "day": 2}]
+            bononia = [{"role": "death", "la": "Bonóniæ"}]
+            (root / "data" / "places.json").write_text(json.dumps(
+                {"places": {"mr:0201-aa-bononiae": bononia, "mr:0202-b-bononiae": bononia}}))
+            (root / "data" / "gazetteer.json").write_text(json.dumps(
+                {"places": {"Bonóniæ": {"wikidata": "Q1891", "label": "Bologna"}}}))
             persons = {"mr:0101-basilius": {"Basilius": {"wikidata": "Q1", "status": "auto"}},
                        "mr:0614-basilius-magnus": {"Basilius": {"wikidata": "Q1", "status": "reviewed"}},
                        "mr:0509-gregorius": {"Gregorius": {"wikidata": "Q2", "status": "unresolved"}}}
@@ -300,6 +309,8 @@ class LoadContext(unittest.TestCase):
                           "mr:0614-basilius-caesariensis"])  # a deprecated twin counts
         self.assertEqual(ctx.twins["mr:0509-gregorius"], ["mr:0102-basilius-magnus-et-gregorius"])
         self.assertEqual(ctx.labels["it"], {"mr:0101-basilius": "it"})
+        self.assertEqual(ctx.genitives, {"Q1891": "bononiae"})
+        self.assertEqual(ctx.places["mr:0201-aa-bononiae"][0]["qid"], "Q1891")
 
 
 class Changeset(unittest.TestCase):
@@ -384,3 +395,95 @@ class Changeset(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class GenitiveMapTest(unittest.TestCase):
+    BONONIA = {"role": "death", "la": "Bonóniæ", "qid": "Q1891", "label": "Bologna"}
+
+    def test_mined_from_ids(self):
+        entries = [{"id": "mr:0101-aa-bononiae"}, {"id": "mr:0202-b-bononiae"}]
+        places = {"mr:0101-aa-bononiae": [self.BONONIA], "mr:0202-b-bononiae": [self.BONONIA]}
+        self.assertEqual(rc.mine_genitives(entries, places), {"Q1891": rc.Counter({"bononiae": 2})})
+
+    def test_window_after_the_first_words(self):
+        entries = [{"id": "mr:0101-aa-bononiae"}]
+        places = {"mr:0101-aa-bononiae": [dict(self.BONONIA, la="In urbe Bonóniæ")]}
+        self.assertEqual(rc.mine_genitives(entries, places), {"Q1891": rc.Counter({"bononiae": 1})})
+
+    def test_longest_window_first_capitalized_only(self):
+        entries = [{"id": "mr:0101-aa-gualdi-captaneorum"}, {"id": "mr:0102-bb-urbe-cappadocia"}]
+        places = {"mr:0101-aa-gualdi-captaneorum": [{"role": "death", "la": "Gualdi Captaneórum", "qid": "Q2"}],
+                  "mr:0102-bb-urbe-cappadocia": [{"role": "death", "la": "urbe Cappadócia", "qid": "Q3"}]}
+        self.assertEqual(rc.mine_genitives(entries, places),
+                         {"Q2": rc.Counter({"gualdi-captaneorum": 1}), "Q3": rc.Counter({"cappadocia": 1})})
+
+    def test_deprecated_and_unmatched_ignored_once_per_id(self):
+        entries = [{"id": "mr:0101-aa-bononiae", "deprecated": True}, {"id": "mr:0102-b-martyr"},
+                   {"id": "mr:0103-c-bononiae"}]
+        places = {"mr:0101-aa-bononiae": [self.BONONIA], "mr:0102-b-martyr": [self.BONONIA],
+                  "mr:0103-c-bononiae": [self.BONONIA, dict(self.BONONIA, role="burial")]}
+        self.assertEqual(rc.mine_genitives(entries, places), {"Q1891": rc.Counter({"bononiae": 1})})
+
+    def test_after_a_preposition_not_a_genitive(self):
+        entries = [{"id": "mr:0224-constantius-de-fabriano"}]
+        places = {"mr:0224-constantius-de-fabriano": [{"role": "death", "la": "Fabriáno", "qid": "Q13145"}]}
+        self.assertEqual(rc.mine_genitives(entries, places), {})
+
+    def test_one_id_is_not_certain(self):
+        self.assertEqual(rc.certain_genitives({"Q1891": rc.Counter({"bononiae": 1})}), ({}, {}))
+
+    def test_two_genitives_conflict(self):
+        mined = {"Q220": rc.Counter({"romae": 2, "urbis": 1}), "Q1891": rc.Counter({"bononiae": 2})}
+        self.assertEqual(rc.certain_genitives(mined), ({"Q1891": "bononiae"}, {"Q220": ["romae", "urbis"]}))
+
+    def test_certain_from_map(self):
+        p = {"qid": "Q1891", "nominative": "Bononia", "genitive": "Bononiae", "printed": "Bonóniæ"}
+        self.assertEqual(rc.genitive_slug(p, {"Q1891": "bononiae"}), ("bononiae", True))
+        self.assertEqual(rc.genitive_slug(p), ("bononiae", False))
+
+    def test_override_wins(self):
+        p = {"qid": "Q3936", "nominative": "Treviri", "genitive": None}
+        self.assertEqual(rc.genitive_slug(p, {"Q3936": "trevirensium"}), ("trevirorum", True))
+
+    def test_link_places(self):
+        record = rec("Petronius", ["episcopus"], [place("see", "locative", "Bononia", "Bologna",
+                                                        genitive="Bononiae")])
+        record["places"][0]["printed"] = "Bonóniæ"
+        linked = rc.link_places(record, [{"role": "death", "la": "Romæ", "qid": "Q220"},
+                                         dict(self.BONONIA, la="In urbe Bonóniæ")])
+        self.assertEqual(linked["places"][0]["qid"], "Q1891")
+        self.assertNotIn("qid", record["places"][0])  # a copy
+
+    def test_build_takes_the_certain_genitive(self):
+        record = rec("Petronius", ["episcopus"], [place("see", "locative", "Bononia", "Bologna",
+                                                        genitive="Bononiae")])
+        record["places"][0]["printed"] = "Bonóniæ"
+        ctx = CTX._replace(genitives={"Q1891": "bononiae"}, places={"mr:0104-petronius": [self.BONONIA]})
+        c = rc.candidates(record, "mr:0104-petronius", "Sanctus Petronius", ctx)
+        self.assertEqual((c[0]["new_id"], c[0]["certain"]), ("mr:0104-petronius-bononiae", True))
+        self.assertFalse(rc.candidates(record, "mr:0104-petronius", "Sanctus Petronius", CTX)[0]["certain"])
+
+    def test_report_conflicts_first(self):
+        mined = {"Q220": {"romae": ["mr:0101-aa-romae", "mr:0102-b-romae"], "urbis": ["mr:0103-c-urbis"]},
+                 "Q1891": {"bononiae": ["mr:0104-d-bononiae", "mr:0105-ee-bononiae"]},
+                 "Q2": {"gerae": ["mr:0106-f-gerae"]}}
+        text = rc.genitives_report(mined, {"Q220": "Rome", "Q1891": "Bologna"})
+        self.assertLess(text.index("Q220"), text.index("Q1891"))
+        self.assertLess(text.index("Q1891"), text.index("Q2 "))
+        self.assertIn("`romae` (2: mr:0101-aa-romae, mr:0102-b-romae)", text)
+
+    def test_report_command(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "data").mkdir()
+            (root / "docs").mkdir()
+            ids = ["mr:0201-aa-bononiae", "mr:0202-b-bononiae"]
+            (root / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": [{"id": i} for i in ids]}))
+            (root / "data" / "places.json").write_text(json.dumps(
+                {"places": {i: [{"role": "death", "la": "Bonóniæ"}] for i in ids}}))
+            (root / "data" / "gazetteer.json").write_text(json.dumps(
+                {"places": {"Bonóniæ": {"wikidata": "Q1891", "label": "Bologna"}}}))
+            with contextlib.redirect_stdout(io.StringIO()):
+                self.assertEqual(rc.main(["report", str(root)]), 0)
+            text = (root / "docs" / "rename-genitives-report.md").read_text(encoding="utf-8")
+        self.assertIn("- Q1891 Bologna: `bononiae` (2: mr:0201-aa-bononiae, mr:0202-b-bononiae)", text)
