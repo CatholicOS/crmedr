@@ -240,6 +240,10 @@ def summarize_person(raw):
         "born": _date(claims, "P569"),
         "died": _date(claims, "P570"),
         "feast": ids("P841"),
+        "birth_place": current_qids(claims, "P19"),
+        "death_place": current_qids(claims, "P20"),
+        "burial_place": current_qids(claims, "P119"),
+        "work_places": current_qids(claims, "P937"),
     }
 
 

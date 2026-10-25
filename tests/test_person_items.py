@@ -42,6 +42,20 @@ class SummarizePersonTest(unittest.TestCase):
         self.assertEqual(s["feast"], ["Q2915"])
         self.assertEqual(sorted(s["names"]), ["Paolo Miki", "Paul Miki", "Paulus Miki"])
 
+    def test_places_current_only(self):
+        ended = item("x", "Q1")
+        ended["qualifiers"] = {"P582": [{}]}
+        gone = item("x", "Q220")
+        gone["rank"] = "deprecated"
+        raw = {"id": "Q9", "claims": {"P20": [item("x", "Q490"), gone], "P119": [ended],
+                                      "P19": [item("x", "Q2")],
+                                      "P937": [item("x", "Q3"), item("x", "Q4")]}}
+        s = wd.summarize_person(raw)
+        self.assertEqual(s["death_place"], ["Q490"])
+        self.assertEqual(s["burial_place"], [])
+        self.assertEqual(s["birth_place"], ["Q2"])
+        self.assertEqual(s["work_places"], ["Q3", "Q4"])
+
 
 class PersonSearchTest(unittest.TestCase):
     def test_searches_each_language_and_summarizes(self):
