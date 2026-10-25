@@ -148,11 +148,17 @@ def name_matches(name, candidate_names):
     return False
 
 
+def _saint_marked(c):
+    """A saint's or a blessed's item: a canonization status, or another statement only their items
+    carry (wikidata.SAINT_SIGNALS: a feast day, a Santi e Beati or Heiligenlexikon ID…)."""
+    return bool(SAINT_STATUSES & set(c.get("statuses", [])) or c.get("signals"))
+
+
 def evidence(person, c):
     ev = []
     if c.get("human"):
         ev.append("human")
-    if SAINT_STATUSES & set(c.get("statuses", [])):
+    if _saint_marked(c):
         ev.append("status")
     names = c.get("names", []) + [c.get("label", "")]
     if any(name_matches(nm, names) for nm in [person["name"], *person.get("also", [])]):
@@ -418,6 +424,21 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
 
 # The roles of a eulogy's places whose saints are looked up.
 PLACE_ROUTE_ROLES = ("death", "burial", "translation")
+# The roles the full-text search leaves out: a place merely named or passed through tells no one apart.
+FULLTEXT_SKIP_ROLES = ("mention", "journey", "education")
+
+
+def fulltext_names(op):
+    """The names the full-text search tries: each of the person's names with its vernacular
+    equivalents (search_terms), then the first name's vernacular forms from its Latin ending
+    (Rogerius: Roger, Rogere, Rogerio), with ae and oe read as e too (Aemiliana: Emiliana)."""
+    names = [t for nm in [op["name"], *op.get("also", [])] for t in search_terms(nm)]
+    first = op["name"].split()[0].lower() if op["name"].split() else ""
+    for form in dict.fromkeys([first, first.replace("ae", "e").replace("oe", "e")]):
+        stem = latin_stem(form)
+        if stem:
+            names += [(stem[0] + ending).capitalize() for ending in sorted(stem[1])]
+    return [n for n in dict.fromkeys(names) if len(n) >= 3]
 
 
 def _given_names(op):
@@ -499,14 +520,14 @@ def _expansion(op, record, items, client, ops=None, places=()):
         named = _named(op)
         found += [c for c in client.saints_by_place(qids, _given_names(op), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
-    labels = list(dict.fromkeys(p["label"] for p in places if p["role"] in PLACE_ROUTE_ROLES and p.get("label")))
+    labels = list(dict.fromkeys(p["label"] for p in places if p["role"] not in FULLTEXT_SKIP_ROLES and p.get("label")))
     if labels:
-        named = _named(op)
+        # No name check after it: the search matched the name with the place in every language
+        # (Kyros of Constantinople, Thillo of Solignac), which the loaded labels cannot show.
         seen = {c["wikidata"] for c in found}
-        # the full name and each other name: a first word alone lets namesakes fill the results
-        for name in dict.fromkeys([op["name"], *op.get("also", [])]):
+        for name in fulltext_names(op):
             for c in client.saints_by_name_and_place(name, labels):
-                if c["wikidata"] not in seen and named(c.get("names", []) + [c.get("label", "")]):
+                if c["wikidata"] not in seen:
                     seen.add(c["wikidata"])
                     found.append(c)
     return found
@@ -563,7 +584,7 @@ def expand(review, items, records, client, places=None):
 
 
 def _is_saint(c):
-    return bool(c) and c.get("human") and bool(SAINT_STATUSES & set(c.get("statuses", [])))
+    return bool(c) and c.get("human") and _saint_marked(c)
 
 
 # The routes whose candidates are items of any kind (a feast, a title: Theotokos), not persons.
@@ -683,14 +704,15 @@ def annotate_places(ops, by_eulogy, client):
     """Mark on each open op its eulogy's places and, per candidate, those it agrees with (`places`,
     and "place" last in its evidence) and the labels of its place properties (`place_labels`).
 
-    A candidate carried over from an old op, with none of the place properties, gets them from
-    its person summary first (one `client.people` call). Evidence only: the order and `auto` are
+    A candidate carried over from an old op, with none of the place properties or no saint
+    `signals`, gets them from its person summary first (one `client.people` call), and "status"
+    in its evidence when a signal marks it a saint. Evidence only: the order and `auto` are
     left as they are. Idempotent, and run last, since other steps recompute `evidence`. One
     `client.items` call; a WikidataError from either call propagates before any op is touched.
     Decided and prefilled ops are left alone."""
     ops = [op for op in ops if op.get("decision") is None and not op.get("prefilled")]
     bare = list(dict.fromkeys(c["wikidata"] for op in ops for c in op["candidates"]
-                              if c.get("wikidata") and not any(prop in c for prop in VIA)))
+                              if c.get("wikidata") and (not any(prop in c for prop in VIA) or "signals" not in c)))
     people = client.people(bare) if bare else {}
     props = lambda c: (c if any(prop in c for prop in VIA)  # noqa: E731
                        else {prop: people.get(c.get("wikidata"), {}).get(prop, []) for prop in VIA})
@@ -702,6 +724,11 @@ def annotate_places(ops, by_eulogy, client):
         for c in op["candidates"]:
             if c.get("wikidata") in people and not any(prop in c for prop in VIA):
                 c.update({prop: people[c["wikidata"]].get(prop, []) for prop in VIA})
+            if c.get("wikidata") in people and "signals" not in c:
+                c["signals"] = people[c["wikidata"]].get("signals", [])
+            if _saint_marked(c) and "status" not in c.get("evidence", []):
+                ev = c.get("evidence", [])
+                c["evidence"] = ev[:1] + ["status"] + ev[1:] if ev[:1] == ["human"] else ["status"] + ev
     admin = {q: s.get("admin_qids", []) for q, s in found.items()}
     label = lambda q, own=None: own or found.get(q, {}).get("label") or q  # noqa: E731
     for op in ops:
