@@ -331,6 +331,37 @@ class Changeset(unittest.TestCase):
         self.assertEqual([c["new_id"] for c in drafts], ["mr:0101-eugendus-condatisci"])
         self.assertIn("also: mr:0101-eugendus-condatisci (place-genitive)", op["reasoning"])
 
+    def test_relabel_after_rename(self):
+        old = {"mr:0101-eugendus": {"new_id": "mr:0101-eugendus-condatisci", "class": "place-genitive",
+                                    "subject_la": "Sanctus Eugendus Condatisci"}}
+        ops = self.build([dict(EUGENDUS, id="mr:0101-eugendus"), dict(MARTYR, id="mr:0101-magnus")], old)["operations"]
+        self.assertEqual([(o["op"], o["id"]) for o in ops],
+                         [("rename", "mr:0101-eugendus"), ("relabel", "mr:0101-eugendus"),
+                          ("rename", "mr:0101-magnus"), ("relabel", "mr:0101-magnus")])
+        relabel = ops[1]
+        current = {"la": "Sanctus Eugendus", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
+        first = {"la": "Sanctus Eugendus Condatiscensis", "en": "Saint Eugendus of Condat",
+                 "it": "Sant’Eugendo di Condat"}
+        self.assertEqual(relabel, {
+            "op": "relabel", "id": "mr:0101-eugendus", "uid": "labels:mr:0101-eugendus", "current": current,
+            "labels": first,
+            "candidates": [{"labels": first, "from_id": "mr:0101-eugendus-condatiscensis"},
+                           {"labels": {"la": "Sanctus Eugendus Condatisci", "en": None, "it": None},
+                            "from_id": "mr:0101-eugendus-condatisci"},
+                           {"labels": current, "from_id": None}],
+            "decision": None, "edited": None})
+
+    def test_relabel_candidates_deduped_current_last(self):
+        current = {"la": "Sanctus A", "en": "Saint A", "it": None}
+        ctx = CTX._replace(labels={"la": {"mr:0101-a": "Sanctus A"}, "en": {"mr:0101-a": "Saint A"}, "it": {}})
+        x = {"la": "Sanctus A X", "en": None, "it": None}
+        cands = [{"new_id": "mr:0101-a-x", "labels": x}, {"new_id": "mr:0101-a-y", "labels": dict(x)},
+                 {"new_id": "mr:0101-a-z", "labels": dict(current)}]
+        op = rc.relabel_op("mr:0101-a", cands, ctx)
+        self.assertEqual(op["candidates"], [{"labels": x, "from_id": "mr:0101-a-x"},
+                                            {"labels": current, "from_id": None}])
+        self.assertIsNone(rc.relabel_op("mr:0101-a", cands[2:], ctx))  # nothing but the current labels
+
     def test_non_bare_no_op(self):
         self.assertEqual(self.build([dict(BASILIUS, id="mr:0614-basilius-magnus")])["operations"], [])
 
@@ -354,6 +385,9 @@ class Changeset(unittest.TestCase):
         old = {"mr:0101-severus": {"new_id": "mr:0101-severus-x", "class": "bogus", "subject_la": "S"}}
         op = self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])], old)["operations"][0]
         self.assertEqual((op["new_id"], op["class"], op["confidence"]), ("mr:0101-severus-x", "place-genitive", "low"))
+        self.assertEqual(len(self.build([dict(BISHOP_NOWHERE, id="mr:0101-severus", roles=[])],
+                                        {"mr:0101-severus": dict(old["mr:0101-severus"], subject_la=None)})
+                             ["operations"]), 1)  # no label differs from the current (none): no relabel
 
     def test_draft_categories(self):
         self.assertEqual(rc.draft_category("epithet,low,weak-epithet", "mr:0101-x-magnus"), "epithet")

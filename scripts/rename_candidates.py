@@ -8,8 +8,9 @@ with the subject; otherwise the place takes its genitive. R2 (curator, 2026-10-1
 the place alone, for clerics too (no "abbas" or "episcopus" before it); a role only
 when no place gives a slug. A twin's discriminator, a surname, a cognomen and -papa
 come first; a role alone, or a class word (martyr, virgo, confessor), is weak.
-R3: each candidate carries the la, en and it subjects it implies. Nothing is
-decided here: the candidates are a curator's choices.
+R3: each candidate carries the la, en and it subjects it implies; a relabel op
+after each rename offers those label sets and the current ones, decided apart from
+the ID. Nothing is decided here: the candidates are a curator's choices.
 """
 import datetime
 import json
@@ -433,9 +434,30 @@ def _confidence(cands):
     return "medium" if len(cands) > 1 else "high"
 
 
+LANGS = ("la", "en", "it")
+
+
+def relabel_op(mrid, cands, ctx):
+    """The subject rename (relabel) of a eulogy: one candidate per distinct label set of its rename
+    candidates, in their order, each with the new ID it came from, then the current labels (the
+    i18n subjects) once, last, with from_id None; None when no candidate differs from the current."""
+    current = {lang: ctx.labels.get(lang, {}).get(mrid) for lang in LANGS}
+    out, seen = [], {tuple(current.values())}
+    for c in cands:
+        labels = {lang: (c.get("labels") or {}).get(lang) for lang in LANGS}
+        if tuple(labels.values()) not in seen:
+            seen.add(tuple(labels.values()))
+            out.append({"labels": labels, "from_id": c["new_id"]})
+    if not out:
+        return None
+    return {"op": "relabel", "id": mrid, "uid": "labels:" + mrid, "current": current, "labels": out[0]["labels"],
+            "candidates": out + [{"labels": current, "from_id": None}], "decision": None, "edited": None}
+
+
 def build_changeset(records, ctx, subjects_la, old=None):
     """One rename op per bare ID in the records, its candidates and the earlier bare-name
-    draft (old: mrid -> that draft's op) merged in; an ID with no candidates and no draft is
+    draft (old: mrid -> that draft's op) merged in, each followed by its relabel (relabel_op)
+    when a candidate's labels differ from the current; an ID with no candidates and no draft is
     skipped, listed on stderr."""
     old = old or {}
     by_id = defaultdict(list)
@@ -462,6 +484,9 @@ def build_changeset(records, ctx, subjects_la, old=None):
                     "candidates": cands,
                     "reasoning": "; ".join(f"also: {c['new_id']} ({c['category']})" for c in cands[1:]),
                     "subject_la": subject_la, "decision": None})
+        relabel = relabel_op(mrid, cands, ctx)
+        if relabel:
+            ops.append(relabel)
     return {"schema": SCHEMA, "generated_by": "scripts/rename_candidates.py",
             "generated_at": datetime.date.today().isoformat(),
             "base": {"edition": EDITION, "registry": "data/martyrology_ids.json"}, "operations": ops}
@@ -505,7 +530,8 @@ def main(argv):
     report = write_genitives_report(repo_root, places=ctx.places)
     changeset = build_changeset([r for r in records if r["id"] in ctx.ids], ctx, ctx.labels["la"], load_old(olds))
     out.write_text(json.dumps(changeset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(changeset['operations'])} rename operations in {out}; genitives report in {report}")
+    kinds = Counter(op["op"] for op in changeset["operations"])
+    print(f"{kinds['rename']} rename and {kinds['relabel']} relabel operations in {out}; genitives report in {report}")
     return 0
 
 

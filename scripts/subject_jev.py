@@ -1,5 +1,6 @@
 """Jev (TypeSafe System One) requests and suggestions on the subject-identity review cards: the
-`rename` ops (ranked rename candidates) and the `resolve_person` ops (Wikidata candidates); see
+`rename` ops (ranked rename candidates), the `relabel` ops (the subjects' label sets) and the
+`resolve_person` ops (Wikidata candidates); see
 docs/superpowers/specs/2026-10-18-subject-identity-design.md, "3. Jev judgments".
 
 One request per card, its questions asked together. Jev checks the identity record against the
@@ -264,6 +265,69 @@ def rename_suggestion(op, answers, record=None, model=MODEL):
         out["new_id"] = cand["new_id"]
     out.update(probability=probability, confidence=confidence, model=model, flags=grammar_flags(record, answers),
                scores=clarity_scores(op, answers))
+    return out
+
+
+# Relabel cards (the subject rename)
+
+def _label_set(labels):
+    return " / ".join(labels.get(lang) or "(none)" for lang in ("la", "en", "it"))
+
+
+def relabel_request(op, record, la_clause, vernacular):
+    """The request for one relabel card: a clarity score per label set (c0..cN, in op order, the
+    current labels last) and the pick among them, in the rename request's words."""
+    ids = _candidate_ids(op["candidates"], "c")
+    state = {"eulogy": op["id"], "clause": la_clause, "vernacular_clause": vernacular,
+             "record": _record_state(record),
+             "candidates": {cid: {"labels": c["labels"]} for cid, c in zip(ids, op["candidates"])}}
+    questions = {}
+    for cid in ids:
+        questions[f"clarity_{cid}"] = {
+            "type": "score",
+            "instructions": (f"How clearly and conventionally does the subject `candidates.{cid}.labels` (in "
+                             "Latin, English and Italian) name the subject of `clause` among all the saints of the "
+                             "Roman Martyrology?"),
+            "criteria": CLARITY}
+    questions["pick"] = {
+        "type": "choice",
+        "instructions": ("Which of the `candidates` is the best subject (in Latin, English and Italian) for the "
+                         "saint of `clause`: the name readers would recognise, that no other saint of the Roman "
+                         "Martyrology could be meant by?"),
+        "criteria": {cid: f"`candidates.{cid}`: {_label_set(c['labels'])}" for cid, c in zip(ids, op["candidates"])}}
+    return {"model": MODEL, "state": state, "questions": questions}
+
+
+def relabel_scores(op, answers):
+    """Jev's clarity score of each relabel candidate, in op order (None without a score answer)."""
+    out = []
+    for cid in _candidate_ids(op["candidates"], "c"):
+        a = (answers or {}).get(f"clarity_{cid}")
+        out.append(a["score"] if isinstance(a, dict) and a.get("type") == "score" and _number(a.get("score"))
+                   else None)
+    return out
+
+
+def relabel_suggestion(op, answers, model=MODEL):
+    """The relabel card's suggestion: accept (Jev picks the op's labels), reject (the current
+    labels, from_id None), edit with the picked `labels` (another set); None when the pick is not a
+    request id or a record field is doubted. scores: relabel_scores."""
+    if record_flags(answers):
+        return None
+    ids = _candidate_ids(op["candidates"], "c")
+    chosen = _choice((answers or {}).get("pick"), ids)
+    if chosen is None:
+        return None
+    pick, probability, confidence = chosen
+    cand = op["candidates"][ids.index(pick)]
+    if cand.get("from_id") is None:
+        out = {"decision": "reject"}
+    elif cand["labels"] == op["labels"]:
+        out = {"decision": "accept"}
+    else:
+        out = {"decision": "edit", "labels": dict(cand["labels"])}
+    out.update(probability=probability, confidence=confidence, model=model, flags=[],
+               scores=relabel_scores(op, answers))
     return out
 
 

@@ -12,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import mentions_jev as mj  # noqa: E402
 import suggest_subjects as ss  # noqa: E402
-from test_subject_jev import EUGENDUS, LA, OP, POP  # noqa: E402
+from test_subject_jev import EUGENDUS, LA, OP, POP, ROP  # noqa: E402
 
 DATA = {"la": {"mr:0101-eugendus": LA}, "en": {}, "it": {},
         "labels": {"en": {"mr:0101-eugendus": "Saint Eugendus"}, "it": {}},
@@ -93,6 +93,22 @@ class SuggestTest(unittest.TestCase):
         self.assertEqual((counts["suggested"], counts["skipped"]), (2, 1))
         self.assertNotIn("jev", ops[2])
 
+    def test_suggest_asks_relabel(self):
+        client = StubClient(picks={"pick": "c1"})
+        ops = [copy.deepcopy(OP), copy.deepcopy(ROP), copy.deepcopy(POP)]
+        counts = ss.suggest_ops(ops, DATA, RECORDS, client, 0.9)
+        self.assertEqual(counts["suggested"], 3)
+        self.assertEqual(ss.family(ops[1]), "relabel")
+        self.assertEqual(set(client.bodies[1]["questions"]), {"clarity_c0", "clarity_c1", "clarity_c2", "pick"})
+        self.assertEqual((ops[1]["jev"]["decision"], ops[1]["jev"]["labels"]), ("edit", ROP["candidates"][1]["labels"]))
+        self.assertEqual(ops[1]["jev"]["scores"], [3, 3, 3])
+        self.assertIsNone(ops[1]["decision"])
+        ops = [copy.deepcopy(ROP)]
+        self.assertEqual(ss.suggest_ops(ops, DATA, RECORDS, StubClient(p=0.5), 0.9)["below"], 1)
+        self.assertNotIn("jev", ops[0])
+        counts = ss.suggest_ops([copy.deepcopy(ROP)], DATA, RECORDS, StubClient(), 0.0, persons=True)
+        self.assertEqual(counts["skipped"], 1)  # relabels are asked with the renames, not with --persons
+
     def test_a_rename_without_a_record_is_skipped_without_a_request(self):
         client = StubClient()
         counts = ss.suggest_ops([dict(copy.deepcopy(OP), id="mr:0102-x")], DATA, RECORDS, client, 0.0)
@@ -150,6 +166,16 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(ss.curator_outcome(dict(POP, decision="accept", suggested={"wikidata": "Q2"})), "Q2")
         self.assertEqual(ss.curator_outcome(dict(POP, decision="edit", edited={"wikidata": "Q7"})), "Q7")
         self.assertIsNone(ss.curator_outcome(dict(POP, decision="reject", edited={"reason": "x"})))
+
+    def test_relabel_outcomes(self):
+        labels, current = ROP["labels"], ROP["current"]
+        other = ROP["candidates"][1]["labels"]
+        self.assertEqual(ss.curator_outcome(dict(ROP, decision="accept")), labels)
+        self.assertEqual(ss.curator_outcome(dict(ROP, decision="edit", edited={"labels": other})), other)
+        self.assertEqual(ss.curator_outcome(dict(ROP, decision="reject")), current)
+        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "accept"}), labels)
+        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "edit", "labels": other}), other)
+        self.assertEqual(ss.suggested_outcome(ROP, {"decision": "reject"}), current)
 
     def test_rows_and_the_report_per_question_family(self):
         ops = [dict(copy.deepcopy(OP), decision="accept"),

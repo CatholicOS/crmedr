@@ -26,6 +26,13 @@ OP = {"op": "rename", "id": "mr:0101-eugendus", "new_id": "mr:0101-eugendus-abba
            "labels": {"la": "Sanctus Eugendus Condatiscensis", "en": "Saint Eugendus of Condat",
                       "it": "Sant’Eugendo di Condat"}, "basis": "text", "certain": True}],
       "reasoning": "", "subject_la": "Sanctus Eugendus", "decision": None}
+CURRENT = {"la": "Sanctus Eugendus", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
+ROP = {"op": "relabel", "id": "mr:0101-eugendus", "uid": "labels:mr:0101-eugendus", "current": CURRENT,
+       "labels": OP["candidates"][0]["labels"],
+       "candidates": [{"labels": OP["candidates"][0]["labels"], "from_id": OP["candidates"][0]["new_id"]},
+                      {"labels": OP["candidates"][1]["labels"], "from_id": OP["candidates"][1]["new_id"]},
+                      {"labels": CURRENT, "from_id": None}],
+       "decision": None, "edited": None}
 PICK_C0 = {"type": "choice", "choice": "c0", "probabilities": {"c0": 0.95, "c1": 0.05}, "confidence": 0.9}
 
 POP = {"op": "resolve_person", "id": "mr:0101-eugendus|Eugendus", "eulogy": "mr:0101-eugendus", "day": "01-01",
@@ -134,6 +141,35 @@ class RenameSuggestionTest(unittest.TestCase):
             self.assertIsNone(sj.rename_suggestion(OP, {"pick": pick}))
         s = sj.rename_suggestion(OP, {"pick": dict(PICK_C0, confidence="sure")})
         self.assertEqual((s["decision"], s["confidence"]), ("accept", 0.0))
+
+
+class RelabelTest(unittest.TestCase):
+    def test_relabel_request_and_suggestion(self):
+        body = sj.relabel_request(ROP, EUGENDUS, "…qui abbátis Condatiscénsis munus gessit…", "Saint Eugendus")
+        self.assertEqual(body["model"], mj.MODEL)
+        self.assertEqual(set(body["questions"]), {"clarity_c0", "clarity_c1", "clarity_c2", "pick"})
+        self.assertEqual(body["questions"]["clarity_c2"]["type"], "score")
+        self.assertEqual(len(body["questions"]["clarity_c0"]["criteria"]), 4)
+        self.assertIn("`candidates.c1.labels`", body["questions"]["clarity_c1"]["instructions"])
+        self.assertNotIn(" ID ", body["questions"]["pick"]["instructions"])
+        self.assertEqual(set(body["questions"]["pick"]["criteria"]), {"c0", "c1", "c2"})
+        self.assertIn("Saint Eugendus of Condat", body["questions"]["pick"]["criteria"]["c1"])
+        self.assertEqual(body["state"]["candidates"]["c2"], {"labels": CURRENT})
+        self.assertEqual((body["state"]["eulogy"], body["state"]["vernacular_clause"]),
+                         ("mr:0101-eugendus", "Saint Eugendus"))
+        scores = {"clarity_c0": {"type": "score", "score": 2, "probabilities": {"2": 0.8}},
+                  "clarity_c2": {"type": "score", "score": 3, "probabilities": {"3": 0.7}}}
+        s = sj.relabel_suggestion(ROP, {"pick": PICK_C0, **scores})
+        self.assertEqual(s, {"decision": "accept", "probability": 0.95, "confidence": 0.9, "model": mj.MODEL,
+                             "flags": [], "scores": [2, None, 3]})
+        s = sj.relabel_suggestion(ROP, {"pick": item("c1")}, model="jev-1.15.0")
+        self.assertEqual((s["decision"], s["labels"], s["model"]),
+                         ("edit", OP["candidates"][1]["labels"], "jev-1.15.0"))
+        self.assertEqual(sj.relabel_suggestion(ROP, {"pick": item("c2")})["decision"], "reject")
+        self.assertNotIn("labels", sj.relabel_suggestion(ROP, {"pick": item("c2")}))
+        self.assertIsNone(sj.relabel_suggestion(ROP, {"pick": item("c7")}))
+        self.assertIsNone(sj.relabel_suggestion(ROP, {"pick": PICK_C0,
+                                                      "field_places_0": {"type": "noul", "noul": 0.2}}))
 
 
 class PersonRequestTest(unittest.TestCase):
