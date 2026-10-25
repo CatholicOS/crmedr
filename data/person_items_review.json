@@ -7482,6 +7482,35 @@
               "Worcester"
             ]
           }
+        },
+        {
+          "wikidata": "Q93327041",
+          "label": "Florent",
+          "description": "bishop of Vienne",
+          "names": [
+            "Fiorenzo di Vienne",
+            "Florent"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2993173"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2156"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -8185,6 +8214,50 @@
               "Oxford"
             ]
           }
+        },
+        {
+          "wikidata": "Q13197627",
+          "label": "Lucian of Lentini",
+          "description": "Sicilian bishop and saint",
+          "names": [
+            "Lucian of Lentini",
+            "Luciano di Lentini",
+            "Saint Lucian of Lentini"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "birth_place": [
+            "Q488240"
+          ],
+          "death_place": [
+            "Q488240"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q488240",
+              "label": "Lentini",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Lentini"
+            ],
+            "birth_place": [
+              "Lentini"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -8451,6 +8524,30 @@
           "evidence": [],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q97257127",
+          "label": "Theogenes of Parium",
+          "description": "Christian martyr",
+          "names": [
+            "Teogene (martire)",
+            "Theagenes of Parium",
+            "Theogenes of Parium"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -11462,7 +11559,31 @@
       "failed": [
         "no candidate found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q97256921",
+          "label": "Rigomer von Meaux",
+          "description": "",
+          "names": [
+            "Rigomer von Meaux",
+            "Rigomero di Meaux"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -14033,6 +14154,54 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q3092649",
+          "label": "Felix of Nantes",
+          "description": "Bishop and saint",
+          "names": [
+            "Felix of Nantes",
+            "Saint Felix"
+          ],
+          "human": true,
+          "statuses": [
+            "Q4411339"
+          ],
+          "born": "0512",
+          "died": "0582-06-08",
+          "feast": [
+            "Q2221"
+          ],
+          "birth_place": [
+            "Q132404"
+          ],
+          "death_place": [
+            "Q12191"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "name",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q12191",
+              "label": "Nantes",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Nantes"
+            ],
+            "birth_place": [
+              "Bourges"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -18355,6 +18524,48 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q1098296",
+          "label": "Apollinaris Claudius",
+          "description": "2nd century Christian writer and bishop",
+          "names": [
+            "Apollinare Claudio",
+            "Apollinare di Ierapoli",
+            "Apollinaris Claudius",
+            "Apollinaris Hierapolitanus",
+            "Apollinaris of Hierapolis",
+            "Apollinaris the Apologist",
+            "Claudio Apollinare",
+            "sant'Apollinare"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0200",
+          "died": "0200",
+          "feast": [
+            "Q2234"
+          ],
+          "birth_place": [
+            "Q7428276"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Hierapolis"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -20915,6 +21126,34 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q4276099",
+          "label": "Maximus of Pavia",
+          "description": "Bishop of Pavia",
+          "names": [
+            "Massimo di Pavia",
+            "Maximus of Pavia"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": "0450",
+          "died": "0511",
+          "feast": [
+            "Q2234"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -24263,6 +24502,52 @@
               "Kayanza Province"
             ]
           }
+        },
+        {
+          "wikidata": "Q15410608",
+          "label": "Domitian of Melitene",
+          "description": "Byzantine bishop and saint",
+          "names": [
+            "Domitian of Melitene",
+            "Domitianus episcopus Melitinae",
+            "Domiziano di Melitene"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0564",
+          "died": "0602-01-11",
+          "feast": [
+            "Q2243"
+          ],
+          "birth_place": [
+            "Q51614"
+          ],
+          "death_place": [
+            "Q16869"
+          ],
+          "burial_place": [
+            "Q43"
+          ],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Constantinople"
+            ],
+            "burial_place": [
+              "Turkey"
+            ],
+            "birth_place": [
+              "Anatolia"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -25342,6 +25627,119 @@
               "Jerusalem"
             ]
           }
+        },
+        {
+          "wikidata": "Q989",
+          "label": "John Paul II",
+          "description": "pope, cardinal, bishop, priest, author",
+          "names": [
+            "Andrzej Jawień",
+            "Eoin Pól",
+            "Gioan Phaolô",
+            "Giovanni Paolo",
+            "Giovanni Paolo II",
+            "Giovanni Paolo Secondo",
+            "Hovnannēs-Poghos",
+            "Ioan Paul",
+            "Ioann Pavel",
+            "Ioannes Paulus",
+            "Ioannes Paulus II",
+            "Ivan Pavao",
+            "Ivan Pavlo",
+            "JP II",
+            "JPII",
+            "Jan Paweł",
+            "Janez Pavel",
+            "Jean Paul",
+            "Joannes Paulus",
+            "Johannes Paul",
+            "John Paul II",
+            "Jonas Paulius",
+            "João Paulo",
+            "Juan Pablo",
+            "János Pál",
+            "Jānis Pāvils",
+            "Jōṇ Pōḷ",
+            "Karolis Voityla",
+            "Karols Vojtila",
+            "Lolek Wojtyla",
+            "Papa Giovanni Paolo II",
+            "Pope John Paul II",
+            "Pope Saint John Paul II the Great",
+            "Saint John Paul II",
+            "Sanctus Ioannes Paulus PP. II",
+            "Sanctus Ioannes Paulus PP. II Magnus",
+            "Stanisław Gruda",
+            "Vojtyla",
+            "Yohan Paoro",
+            "Yohanes Paulus",
+            "Yoḥanan Paʼulus",
+            "Yūḥannā Būlus",
+            "beato Giovanni Paolo II",
+            "papa Giovanni Paolo‏ II",
+            "Ĭoan Pavel",
+            "Ḳarol Ṿoiṭilah"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154",
+            "Q2369287",
+            "Q51619",
+            "Q869974"
+          ],
+          "born": "1920-05-18",
+          "died": "2005-04-02",
+          "feast": [
+            "Q2957"
+          ],
+          "birth_place": [
+            "Q5885537"
+          ],
+          "death_place": [
+            "Q145093",
+            "Q220"
+          ],
+          "burial_place": [
+            "Q12512",
+            "Q126685441"
+          ],
+          "work_places": [
+            "Q9386136",
+            "Q11688618",
+            "Q2001024",
+            "Q31487",
+            "Q37333",
+            "Q220",
+            "Q237"
+          ],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Apostolic Palace",
+              "Rome"
+            ],
+            "burial_place": [
+              "St. Peter's Basilica",
+              "Tomb of John Paul II"
+            ],
+            "birth_place": [
+              "Holy Father John Paul II Family Home in Wadowice"
+            ],
+            "work_places": [
+              "Zakrzówek",
+              "Borek Fałȩcki",
+              "Niegowić",
+              "Kraków",
+              "Lublin",
+              "Rome",
+              "Vatican City"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -25700,6 +26098,48 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q2177116",
+          "label": "Marcianus of Constantinopolis",
+          "description": "saint",
+          "names": [
+            "Marcian of Constantinople",
+            "Marciano di Costantinopoli",
+            "Marcianus of Constantinopolis"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": "0480",
+          "feast": [
+            "Q2276",
+            "Q2243"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q16869"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q16869",
+              "label": "Constantinople",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Constantinople"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -29092,6 +29532,29 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q113507273",
+          "label": "Salvius of Carthage",
+          "description": "",
+          "names": [
+            "Salvio di Cartagine",
+            "Salvius of Carthage"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -30318,6 +30781,45 @@
             ],
             "birth_place": [
               "Chalon-sur-Saône"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q104903969",
+          "label": "Caesaria of Arles",
+          "description": "6th century Abbess",
+          "names": [
+            "Caesaria of Arles",
+            "Caesaria the Younger",
+            "Cesaria di Arles"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0450",
+          "died": "0550",
+          "feast": [],
+          "birth_place": [],
+          "death_place": [
+            "Q48292"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q48292",
+              "label": "Arles",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Arles"
             ]
           }
         }
@@ -35910,6 +36412,40 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q3072908",
+          "label": "Firminus of Mende",
+          "description": "",
+          "names": [
+            "Firminus of Mende"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0300",
+          "died": "0402",
+          "feast": [
+            "Q2257"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q381323"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Banassac"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -36911,6 +37447,57 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q236779",
+          "label": "Saint Nino",
+          "description": "Early Christian saint (296–335)",
+          "names": [
+            "Cristiana di Georgia",
+            "Nina di Georgia",
+            "Saint Nino",
+            "Santa Nina",
+            "Santa Nino",
+            "Santa Nino di Cappadocia",
+            "sancta Christiana ancilla"
+          ],
+          "human": true,
+          "statuses": [
+            "Q1349880",
+            "Q619869"
+          ],
+          "born": "0296",
+          "died": "0335-01-27",
+          "feast": [
+            "Q2257",
+            "Q2383",
+            "Q1841",
+            "Q3333484",
+            "Q2284"
+          ],
+          "birth_place": [
+            "Q217265"
+          ],
+          "death_place": [
+            "Q642366"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Bodbe Monastery"
+            ],
+            "birth_place": [
+              "Cappadocia"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -43595,6 +44182,73 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q16027413",
+          "label": "Marcel de Die",
+          "description": "",
+          "names": [
+            "Marcel de Die",
+            "Marcellus"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0430",
+          "died": "0510",
+          "feast": [
+            "Q2264"
+          ],
+          "birth_place": [
+            "Q6397"
+          ],
+          "death_place": [
+            "Q1469520"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Montmeyan"
+            ],
+            "birth_place": [
+              "Avignon"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q519513",
+          "label": "Marcellus of Ancyra",
+          "description": "Bishop of Ancyra (died c. 374)",
+          "names": [
+            "Marcello d'Ancyra",
+            "Marcello di Ancira",
+            "Marcello di Ancyra",
+            "Marcellus Ancyranus",
+            "Marcellus of Ancyra"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0285",
+          "died": "0374",
+          "feast": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -47196,6 +47850,40 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q2864494",
+          "label": "Arsenius of Corfu",
+          "description": "Greek saint",
+          "names": [
+            "Arsenius of Corfu"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0959",
+          "feast": [
+            "Q2266"
+          ],
+          "birth_place": [
+            "Q16869"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Constantinople"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -51658,6 +52346,65 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q445357",
+          "label": "Henry",
+          "description": "bishop of Finland",
+          "names": [
+            "Bishop Henry",
+            "Bishop St. Henrik",
+            "Enrico di Uppsala",
+            "Henrik on kakkahousu",
+            "Henry",
+            "Henry, Bishop of Finland",
+            "Henry, Bishop of Uppsala",
+            "Sant'Enrico di Uppsala",
+            "St. Henri",
+            "St. Henrik"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "1100",
+          "died": "1156",
+          "feast": [
+            "Q2266"
+          ],
+          "birth_place": [
+            "Q179876"
+          ],
+          "death_place": [
+            "Q1000119"
+          ],
+          "burial_place": [],
+          "work_places": [
+            "Q1017104",
+            "Q38511",
+            "Q1000119"
+          ],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Köyliö"
+            ],
+            "birth_place": [
+              "Kingdom of England"
+            ],
+            "work_places": [
+              "Nousiainen",
+              "Turku",
+              "Köyliö"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -62984,6 +63731,54 @@
               "Cappadocia"
             ]
           }
+        },
+        {
+          "wikidata": "Q935447",
+          "label": "Gregory of Nazianzus the Elder",
+          "description": "Christianós ágios",
+          "names": [
+            "Gregorio Nazianzeno il vecchio",
+            "Gregory of Nazianzus the Elder",
+            "Ágios Grigórios Nazianzinós o presvýteros"
+          ],
+          "human": true,
+          "statuses": [
+            "Q4411339"
+          ],
+          "born": "0276",
+          "died": "0374",
+          "feast": [
+            "Q2150"
+          ],
+          "birth_place": [
+            "Q1336978"
+          ],
+          "death_place": [
+            "Q1336978"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q1336978",
+              "label": "Nazianzus",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Nazianzus"
+            ],
+            "birth_place": [
+              "Nazianzus"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -64782,6 +65577,43 @@
           "evidence": [],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q85974256",
+          "label": "Theogenes of Hippo",
+          "description": "bishop of Hippo and martyr (-256)",
+          "names": [
+            "Teogene di Ippona",
+            "Theogenes of Hippo",
+            "saint Theogenes of Hippo",
+            "san Teogene di Ippona"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0256",
+          "feast": [
+            "Q2282"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q45942"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Annaba"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -66010,6 +66842,55 @@
             ],
             "birth_place": [
               "San Giovanni la Punta"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q237583",
+          "label": "Mary of Egypt",
+          "description": "Egyptian hermit and female Christian saint",
+          "names": [
+            "Maria Aegyptiaca",
+            "Maria Egiziaca",
+            "Mary of Egypt",
+            "Santa Maria Egiziaca",
+            "St. Mary of Egypt"
+          ],
+          "human": true,
+          "statuses": [
+            "Q12774503",
+            "Q3464126"
+          ],
+          "born": "0344",
+          "died": "0421",
+          "feast": [
+            "Q2510"
+          ],
+          "birth_place": [
+            "Q87"
+          ],
+          "death_place": [
+            "Q23792"
+          ],
+          "burial_place": [],
+          "work_places": [
+            "Q23792"
+          ],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Palestine"
+            ],
+            "birth_place": [
+              "Alexandria"
+            ],
+            "work_places": [
+              "Palestine"
             ]
           }
         }
@@ -71067,6 +71948,42 @@
           ],
           "places": [],
           "source": "search"
+        },
+        {
+          "wikidata": "Q936653",
+          "label": "Constantius of Perugia",
+          "description": "bishop and saint",
+          "names": [
+            "Constantius of Perugia",
+            "Costanzo di Perugia",
+            "San Costanzo di Perugia"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0150",
+          "died": "0170",
+          "feast": [
+            "Q2286"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q20436"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Foligno"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -77441,6 +78358,64 @@
             ],
             "birth_place": [
               "Palestine"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q372668",
+          "label": "John the Merciful",
+          "description": "Patriarch of Alexandria",
+          "names": [
+            "Giovanni V di Alessandria",
+            "Giovanni l'Elemosiniere",
+            "Ioannes",
+            "Iohannes Eleemosynarius",
+            "Joannes Eleemosynarius",
+            "Johannes Eleemon",
+            "Johannes Eleemosynarios",
+            "John the Merciful",
+            "Saint John the Almoner",
+            "San Giovanni Elemosiniere",
+            "San Giovanni elemosinario",
+            "San Giovanni l'Elemosiniere",
+            "San Giovanni l'elemosinario"
+          ],
+          "human": true,
+          "statuses": [
+            "Q4411339"
+          ],
+          "born": "0550",
+          "died": "0619",
+          "feast": [
+            "Q2986",
+            "Q2276",
+            "Q2312"
+          ],
+          "birth_place": [
+            "Q2343313"
+          ],
+          "death_place": [
+            "Q2343313"
+          ],
+          "burial_place": [
+            "Q239560"
+          ],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Amathus"
+            ],
+            "burial_place": [
+              "St. Martin's Cathedral, Bratislava"
+            ],
+            "birth_place": [
+              "Amathus"
             ]
           }
         }
