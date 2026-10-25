@@ -1,6 +1,8 @@
 """Jev (TypeSafe System One) requests and suggestions on the subject-identity review cards: the
 `rename` ops (ranked rename candidates) and the `resolve_person` ops (Wikidata candidates); see
-docs/superpowers/specs/2026-10-18-subject-identity-design.md, "3. Jev judgments".
+docs/superpowers/specs/2026-10-18-subject-identity-design.md, "3. Jev judgments". The `relabel`
+ops (the subject rename) are not asked: the subject follows the ID, so Jev's rename pick chooses
+the pairing (curator, 2026-10-25).
 
 One request per card, its questions asked together. Jev checks the identity record against the
 printed clause, judges how clearly each rename candidate names the saint and picks one, and picks
@@ -273,6 +275,8 @@ def _person_candidate(c):
     out = {k: c.get(k) for k in ("wikidata", "label", "description", "born", "died", "feast") if c.get(k)}
     out["names"] = (c.get("names") or [])[:5]
     out["evidence"] = c.get("evidence") or []
+    out["places"] = [{k: v for k, v in p.items() if k != "qid"} for p in c.get("places") or []]
+    out["place_labels"] = c.get("place_labels") or {}
     return out
 
 
@@ -289,6 +293,7 @@ def person_request(op, record, la_clause, companions):
         if record.get("death_year") is not None:
             state["record"]["death_year"] = record["death_year"]
     state["companions"] = companions
+    state["places"] = [{"role": p["role"], "label": p["label"]} for p in op.get("places") or []]
     state["candidates"] = {qid: _person_candidate(c) for qid, c in zip(ids, op["candidates"])}
     criteria = {qid: f"`candidates.{qid}`: {c['wikidata']} {c.get('label', '')}".rstrip()
                 + (f" ({c['description']})" if c.get("description") else "")

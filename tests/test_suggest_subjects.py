@@ -11,8 +11,9 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import mentions_jev as mj  # noqa: E402
+import subject_jev as sj  # noqa: E402
 import suggest_subjects as ss  # noqa: E402
-from test_subject_jev import EUGENDUS, LA, OP, POP  # noqa: E402
+from test_subject_jev import EUGENDUS, LA, OP, POP, ROP  # noqa: E402
 
 DATA = {"la": {"mr:0101-eugendus": LA}, "en": {}, "it": {},
         "labels": {"en": {"mr:0101-eugendus": "Saint Eugendus"}, "it": {}},
@@ -61,13 +62,21 @@ class SuggestTest(unittest.TestCase):
         self.assertNotIn("obiit senex", json.dumps(client.bodies, ensure_ascii=False))
         self.assertEqual(client.bodies[1]["state"]["companions"], [{"name": "Lupicinus", "wikidata": "Q9"}])
 
-    def test_below_the_threshold_is_removed_and_decisions_are_kept(self):
-        ops = [dict(copy.deepcopy(OP), decision="edit", edited={"new_id": "mr:0101-x"},
-                    jev={"decision": "accept", "probability": 0.99})]
+    def test_below_the_threshold_is_removed(self):
+        ops = [dict(copy.deepcopy(OP), jev={"decision": "accept", "probability": 0.99})]
         counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(p=0.5), 0.9)
         self.assertNotIn("jev", ops[0])
-        self.assertEqual((ops[0]["decision"], ops[0]["edited"]), ("edit", {"new_id": "mr:0101-x"}))
         self.assertEqual(counts["below"], 1)
+
+    def test_decided_and_prefilled_cards_are_never_rewritten(self):
+        jev = {"decision": "accept", "probability": 0.99}
+        decided = dict(copy.deepcopy(OP), decision="edit", edited={"new_id": "mr:0101-x"}, jev=dict(jev))
+        prefilled = dict(copy.deepcopy(POP), decision=None, prefilled="jev", jev=dict(jev))
+        before = copy.deepcopy([decided, prefilled])
+        client = StubClient(p=0.5)
+        counts = ss.suggest_ops([decided, prefilled], DATA, RECORDS, client, 0.9)
+        self.assertEqual([decided, prefilled], before)
+        self.assertEqual((counts["skipped"], client.bodies), (2, []))
 
     def test_a_record_flag_is_written_without_a_suggestion(self):
         ops = [copy.deepcopy(OP)]
@@ -92,6 +101,18 @@ class SuggestTest(unittest.TestCase):
         counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(), 0.0, month="01")
         self.assertEqual((counts["suggested"], counts["skipped"]), (2, 1))
         self.assertNotIn("jev", ops[2])
+
+    def test_suggest_leaves_relabels_untouched(self):
+        # The subject follows the ID: Jev's rename pick chooses the pairing, no relabel request.
+        client = StubClient(picks={"pick": "c1"})
+        stale = dict(copy.deepcopy(ROP), jev={"decision": "accept", "probability": 0.99})
+        ops = [copy.deepcopy(OP), copy.deepcopy(ROP), copy.deepcopy(POP), stale]
+        before = copy.deepcopy(ops[1]), copy.deepcopy(ops[3])
+        counts = ss.suggest_ops(ops, DATA, RECORDS, client, 0.9)
+        self.assertEqual((counts["suggested"], counts["skipped"], len(client.bodies)), (2, 2, 2))
+        self.assertIsNone(ss.family(ROP))
+        self.assertEqual((ops[1], ops[3]), before)
+        self.assertFalse(any(hasattr(sj, f) for f in ("relabel_request", "relabel_suggestion", "relabel_scores")))
 
     def test_a_rename_without_a_record_is_skipped_without_a_request(self):
         client = StubClient()
@@ -154,15 +175,132 @@ class EvaluateTest(unittest.TestCase):
     def test_rows_and_the_report_per_question_family(self):
         ops = [dict(copy.deepcopy(OP), decision="accept"),
                dict(copy.deepcopy(POP), decision="edit", edited={"wikidata": "Q2"}),
-               dict(copy.deepcopy(POP), id="undecided")]
+               dict(copy.deepcopy(POP), id="undecided"), dict(copy.deepcopy(ROP), decision="accept")]
         rows = ss.evaluate_ops(ops, DATA, RECORDS, StubClient(p=0.92))
-        self.assertEqual([r["family"] for r in rows], ["rename", "person"])  # undecided ops are not evaluated
+        # undecided ops are not evaluated, nor a relabel (it follows the rename)
+        self.assertEqual([r["family"] for r in rows], ["rename", "person"])
         text = ss.report(rows, [0.0, 0.95])
         self.assertIn("rename: 1 cards", text)
         self.assertIn("person: 1 cards", text)
         self.assertIn("≥0.00: 1 suggested (100%), 1 agree (100%)", text)
         self.assertIn("≥0.95: 0 suggested (0%)", text)
         self.assertIn("mr:0101-eugendus|Eugendus: decided Q2, suggested Q1 p=0.92", text)
+
+
+class PrefillTest(unittest.TestCase):
+    @staticmethod
+    def cand(new_id, category, weak=False, certain=True):
+        return {"new_id": new_id, "category": category, "weak": weak, "certain": certain, "labels": {}}
+
+    def rename(self, *cands, new_id=None, **extra):
+        return {"op": "rename", "id": "mr:0101-x", "new_id": new_id or cands[0]["new_id"],
+                "candidates": list(cands), "decision": None, **extra}
+
+    def test_rename_rule_accepts_the_op_s_own_new_id(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        self.assertEqual(ss.prefill_ops([op]), {"rename": 1})
+        self.assertEqual((op["decision"], op["prefilled"]), ("accept", "rule"))
+        self.assertNotIn("edited", op)
+
+    def test_rename_rule_edits_to_the_other_candidate(self):
+        op = self.rename(self.cand("mr:0101-x-a", "role-place"), self.cand("mr:0101-x-b", "papa"),
+                         new_id="mr:0101-x-a")
+        ss.prefill_ops([op])
+        self.assertEqual((op["decision"], op["edited"], op["prefilled"]),
+                         ("edit", {"new_id": "mr:0101-x-b"}, "rule"))
+
+    def test_first_category_in_order_wins_and_an_uncertain_genitive_is_taken(self):
+        op = self.rename(self.cand("mr:0101-x-g", "place-genitive", certain=False),
+                         self.cand("mr:0101-x-a", "place-adjective"), new_id="mr:0101-x-g")
+        ss.prefill_ops([op])
+        self.assertEqual(op["edited"], {"new_id": "mr:0101-x-a"})
+        lone = self.rename(self.cand("mr:0101-x-g", "place-genitive", certain=False))
+        ss.prefill_ops([lone])
+        self.assertEqual(lone["decision"], "accept")
+
+    def test_weak_or_uncertain_not_prefilled(self):
+        weak = self.rename(self.cand("mr:0101-x-r", "twin", weak=True))
+        two = self.rename(self.cand("mr:0101-x-a", "surname"), self.cand("mr:0101-x-b", "surname"))
+        other = self.rename(self.cand("mr:0101-x-r", "role-place"))
+        self.assertEqual(ss.prefill_ops([weak, two, other]), {})
+        for op in (weak, two, other):
+            self.assertIsNone(op["decision"])
+            self.assertNotIn("prefilled", op)
+
+    def person(self, jev):
+        op = copy.deepcopy(POP)
+        op["jev"] = jev
+        return op
+
+    def test_person_accept_edit_and_reject_at_the_threshold(self):
+        acc = self.person({"decision": "accept", "wikidata": "Q1", "probability": 0.9})
+        edt = self.person({"decision": "edit", "wikidata": "Q2", "probability": 0.95})
+        rej = self.person({"decision": "reject", "reason": "Jev: none", "probability": 0.92})
+        self.assertEqual(ss.prefill_ops([acc, edt, rej]), {"resolve_person": 3})
+        self.assertEqual((acc["decision"], acc.get("edited"), acc["prefilled"]), ("accept", None, "jev"))
+        self.assertEqual((edt["decision"], edt["edited"]), ("edit", {"wikidata": "Q2"}))
+        self.assertEqual((rej["decision"], rej["edited"]), ("reject", {"reason": "Jev: none"}))
+
+    def test_person_below_threshold_or_not_a_human_saint_candidate_is_left(self):
+        low = self.person({"decision": "accept", "wikidata": "Q1", "probability": 0.8})
+        notc = self.person({"decision": "edit", "wikidata": "Q99", "probability": 0.99})
+        bare = self.person({"decision": "edit", "wikidata": "Q3", "probability": 0.99})
+        bare["candidates"].append({"wikidata": "Q3", "human": True, "evidence": ["human"]})
+        self.assertEqual(ss.prefill_ops([low, notc, bare]), {})
+        self.assertTrue(all(op["decision"] is None for op in (low, notc, bare)))
+
+    def test_relabel_never_prefilled(self):
+        # The subject card is never prefilled, whatever its jev and its rename's prefill.
+        ruled = self.rename(self.cand("mr:0101-eugendus-a", "surname"))
+        ruled["id"] = "mr:0101-eugendus"
+        rop = dict(copy.deepcopy(ROP), jev={"decision": "accept", "probability": 0.99})
+        before = copy.deepcopy(rop)
+        self.assertEqual(ss.prefill_ops([ruled, rop]), {"rename": 1})
+        self.assertEqual(rop, before)
+
+    def test_reject_without_jev_reason_gets_the_default(self):
+        none, blank = (self.person({"decision": "reject", "probability": 0.95, **r}) for r in ({}, {"reason": " "}))
+        self.assertEqual(ss.prefill_ops([none, blank]), {"resolve_person": 2})
+        for op in (none, blank):
+            self.assertEqual(op["edited"], {"reason": "Jev: none of the candidates is this person"})
+
+    def test_decided_untouched(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"), decision="reject")
+        op["decision"] = "reject"
+        p = self.person({"decision": "accept", "wikidata": "Q1", "probability": 1.0})
+        p["decision"] = "reject"
+        self.assertEqual(ss.prefill_ops([op, p]), {})
+        self.assertEqual((op["decision"], p["decision"]), ("reject", "reject"))
+        self.assertNotIn("prefilled", op)
+
+    def test_the_command_refuses_a_change_set_inside_a_work_tree(self):
+        here = Path(__file__).resolve()
+        with self.assertRaises(SystemExit):
+            ss.main(["prefill", str(here)])
+
+    def test_the_command_prints_the_counts_and_writes_the_file(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "cs.json"
+            path.write_text(json.dumps({"operations": [op]}), encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                ss.main(["prefill", str(path), "--threshold", "0.8"])
+            self.assertIn("{'rename': 1}", out.getvalue())
+            self.assertEqual(json.loads(path.read_text())["operations"][0]["decision"], "accept")
+
+    def test_a_failed_write_leaves_the_old_file_and_no_temp(self):
+        from unittest import mock
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "cs.json"
+            old = json.dumps({"operations": [op]})
+            path.write_text(old, encoding="utf-8")
+            with mock.patch("os.replace", side_effect=OSError("disk")):
+                with self.assertRaises(OSError):
+                    ss.main(["prefill", str(path), "--threshold", "0.8"])
+            self.assertEqual(path.read_text(), old)
+            self.assertEqual([p.name for p in Path(d).iterdir()], ["cs.json"])
 
 
 class OutputTest(unittest.TestCase):

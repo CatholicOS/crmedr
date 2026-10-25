@@ -23,6 +23,7 @@ import re
 import sys
 from pathlib import Path
 
+import eulogy_places
 from body_places import _in_a_repository, half_month
 from extract_places import EDITION_EN, EDITION_IT, load_persons
 from extract_typology import latin_texts, load_texts
@@ -197,8 +198,10 @@ def person_record(records, name, n=None):
     return None
 
 
-def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries, items):
-    """What a research agent reads for each current eulogy whose MMDD is in [first, last]."""
+def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries, items, places=None):
+    """What a research agent reads for each current eulogy whose MMDD is in [first, last].
+    `places` is eulogy_places.load's map: each eulogy's printed places as items."""
+    places = places or {}
     out = []
     for e in sorted((e for e in entries if not e.get("deprecated") and first <= e["id"][3:7] <= last),
                     key=lambda e: e["id"]):
@@ -206,6 +209,7 @@ def brief(first, last, texts, texts_it, texts_en, persons, subjects_la, entries,
         out.append({"id": mrid, "la_text": texts.get(mrid, ""), "it_text": texts_it.get(mrid, ""),
                     "en_text": texts_en.get(mrid, ""), "subject_la": subjects_la.get(mrid),
                     "persons": persons.get(mrid, []), "same_eulogy": e.get("same_eulogy", []),
+                    "places": places.get(mrid, []),
                     "person_items": {n: i for n, i in items.get(mrid, {}).items()
                                          if i.get("status") in DECIDED and i.get("wikidata")}})
     return out
@@ -236,7 +240,7 @@ def main(argv):
             sys.exit(f"{which}: expected MMa or MMb (e.g. 01a)")
         entries, texts, texts_it, texts_en, persons, subjects, items = _load(repo_root, texts_repo)
         records = brief(*half_month(which[:2], which[2]), texts, texts_it, texts_en, persons, subjects,
-                        entries, items)
+                        entries, items, places=eulogy_places.load(repo_root))
         out.write_text(json.dumps({"batch": which, "eulogies": records}, ensure_ascii=False, indent=1) + "\n",
                        encoding="utf-8")
         print(f"{len(records)} eulogies in {out}")

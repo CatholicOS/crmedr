@@ -26,6 +26,13 @@ OP = {"op": "rename", "id": "mr:0101-eugendus", "new_id": "mr:0101-eugendus-abba
            "labels": {"la": "Sanctus Eugendus Condatiscensis", "en": "Saint Eugendus of Condat",
                       "it": "Sant’Eugendo di Condat"}, "basis": "text", "certain": True}],
       "reasoning": "", "subject_la": "Sanctus Eugendus", "decision": None}
+CURRENT = {"la": "Sanctus Eugendus", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
+ROP = {"op": "relabel", "id": "mr:0101-eugendus", "uid": "labels:mr:0101-eugendus", "current": CURRENT,
+       "labels": OP["candidates"][0]["labels"],
+       "candidates": [{"labels": OP["candidates"][0]["labels"], "from_id": OP["candidates"][0]["new_id"]},
+                      {"labels": OP["candidates"][1]["labels"], "from_id": OP["candidates"][1]["new_id"]},
+                      {"labels": CURRENT, "from_id": None}],
+       "decision": None, "edited": None}
 PICK_C0 = {"type": "choice", "choice": "c0", "probabilities": {"c0": 0.95, "c1": 0.05}, "confidence": 0.9}
 
 POP = {"op": "resolve_person", "id": "mr:0101-eugendus|Eugendus", "eulogy": "mr:0101-eugendus", "day": "01-01",
@@ -145,6 +152,20 @@ class PersonRequestTest(unittest.TestCase):
                          {"person", "celebration_or_title", "anonymous_group", "not_identifiable"})
         self.assertEqual(body["state"]["candidates"]["q1"]["wikidata"], "Q2")
         self.assertEqual(body["state"]["companions"], [{"name": "Lupicinus", "wikidata": "Q9"}])
+
+    def test_places_in_state(self):
+        agree = {"role": "death", "qid": "Q220", "label": "Roma", "via": "P20"}
+        op = dict(POP, places=[{"role": "death", "label": "Roma", "qid": "Q220"}],
+                  candidates=[dict(POP["candidates"][0], places=[agree],
+                                   place_labels={"death_place": ["Roma"]}), POP["candidates"][1]])
+        state = sj.person_request(op, None, "x", [])["state"]
+        self.assertEqual(state["places"], [{"role": "death", "label": "Roma"}])
+        self.assertEqual(state["candidates"]["q0"]["places"],
+                         [{"role": "death", "label": "Roma", "via": "P20"}])
+        self.assertEqual(state["candidates"]["q0"]["place_labels"], {"death_place": ["Roma"]})
+        self.assertEqual(state["candidates"]["q1"]["places"], [])
+        self.assertEqual(state["candidates"]["q1"]["place_labels"], {})
+        self.assertEqual(sj.person_request(POP, None, "x", [])["state"]["places"], [])
 
     def test_without_a_record(self):
         body = sj.person_request(POP, None, "sancti Eugéndi", [])

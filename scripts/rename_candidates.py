@@ -8,20 +8,28 @@ with the subject; otherwise the place takes its genitive. R2 (curator, 2026-10-1
 the place alone, for clerics too (no "abbas" or "episcopus" before it); a role only
 when no place gives a slug. A twin's discriminator, a surname, a cognomen and -papa
 come first; a role alone, or a class word (martyr, virgo, confessor), is weak.
-R3: each candidate carries the la, en and it subjects it implies. Nothing is
-decided here: the candidates are a curator's choices.
+R3: each candidate carries the la, en and it subjects it implies; a relabel op
+after each rename offers those label sets and the current ones. The subject follows
+the decided ID (curator, 2026-10-25): apply_renames.py writes an accepted relabel as
+the subject of the ID the rename decided. When the eulogy has one person and that
+person's item is decided, the relabel carries a Wikidata hint (the item's QID and its
+en and it labels), a reference for the wording, not a candidate. Nothing is decided
+here: the candidates are a curator's choices.
 """
 import datetime
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from pathlib import Path
 from typing import NamedTuple
 
+import eulogy_places
 from body_places import _in_a_repository
 from extract_subjects import ROMAN, fold, it_label
+from persons_text import person_key
 from subject_records import CLERIC_ROLES, DECIDED, ROLE_FORMS
+from wikidata import Wikidata, WikidataError
 
 WEAK_ROLES = {"martyr", "virgo", "confessor"}
 BIBLICAL_TITLES = ("propheta", "patriarcha", "iudex", "levita")
@@ -30,6 +38,10 @@ PLACE_ORDER = ("see", "monastery", "death", "burial", "cult", "origin")
 MAX_CANDIDATES = 4
 SCHEMA = "crmedr-changeset/v1"
 EDITION = "martyrologium_romanum_2004"
+# The person item statuses that decide an item, for the relabel's Wikidata hint: the
+# subject_records.DECIDED ones ("auto", "reviewed") plus "jev" (an item the Jev model
+# chose), included because the hint only seeds a Wikidata lookup and is not a registry change.
+HINT_STATUSES = ("auto", "reviewed", "jev")
 CATEGORIES = ("surname", "place-genitive", "place-adjective", "role", "role-place", "epithet", "twin",
               "papa", "biblical-title")
 
@@ -65,15 +77,22 @@ def adjective_slug(adjective, feminine):
 LOCATIVE_AS_GENITIVE = re.compile(r"(ae|i)$")
 
 
-def genitive_slug(place):
-    """(genitive slug, certain): the corpus genitive when the place has one; else the
-    record's own genitive, not certain; else a printed locative in -ae or -i, which has
-    the genitive's form, not certain; else (None, False)."""
+def genitive_slug(place, certain=None, mined=None):
+    """(genitive slug, certain): the corpus genitive when the place has one; else the certain
+    genitive of the place's item (certain: {qid: genitive}, see certain_genitives); else the
+    record's own genitive, not certain; else the one genitive the IDs give the item (mined:
+    {qid: Counter}, see mine_genitives), not certain; else a printed locative in -ae or -i,
+    which has the genitive's form, not certain; else (None, False). An item the IDs give two
+    genitives gets none here: _build offers each."""
     known = PLACE_GENITIVES.get(slug(place.get("nominative") or ""))
     if known:
         return known, True
+    if certain and place.get("qid") in certain:
+        return certain[place["qid"]], True
     if place.get("genitive"):
         return slug(place["genitive"]), False
+    if mined and len(mined.get(place.get("qid"), ())) == 1:
+        return next(iter(mined[place["qid"]])), False
     # fold() writes æ as e; the genitive keeps it as ae (Romæ -> romae)
     printed = slug(re.sub("[æÆ]", "ae", place.get("printed") or ""))
     if place.get("grammar") == "locative" and LOCATIVE_AS_GENITIVE.search(printed.split("-")[0]):
@@ -81,11 +100,138 @@ def genitive_slug(place):
     return None, False
 
 
+def _ligatures(s):
+    return s.replace("æ", "ae").replace("Æ", "Ae").replace("œ", "oe").replace("Œ", "Oe")
+
+
+# a slug's place after one of these is a prepositional phrase (de-fabriano), not a genitive
+PREPOSITIONS = {"a", "ab", "ad", "de", "e", "ex", "in"}
+
+
+def _mine(entries, places):
+    """{qid: {genitive: [current IDs giving it]}}: a current ID whose last k slug tokens
+    (k = 3, 2, 1, the first that matches) are the slug of k printed words of one of its
+    eulogy's places, the first of them capitalized, and not after a preposition. Each
+    (qid, genitive) once per ID."""
+    out = defaultdict(lambda: defaultdict(list))
+    for e in entries:
+        if e.get("deprecated"):
+            continue
+        tokens = e["id"][8:].split("-")
+        seen = set()
+        for p in places.get(e["id"], []):
+            if not p.get("qid") or not p.get("la"):
+                continue
+            words = _ligatures(p["la"]).split()
+            for k in (3, 2, 1):
+                if len(tokens) <= k or tokens[-k - 1] in PREPOSITIONS:
+                    continue  # the name itself, or a preposition's object, is not a genitive
+                tail = "-".join(tokens[-k:])
+                if any(words[i][:1].isupper() and slug(" ".join(words[i:i + k])) == tail
+                       for i in range(len(words) - k + 1)):
+                    if (p["qid"], tail) not in seen:
+                        seen.add((p["qid"], tail))
+                        out[p["qid"]][tail].append(e["id"])
+                    break
+    return out
+
+
+def mine_genitives(entries, places):
+    """{qid: Counter(genitive)}: how many current IDs give each genitive to a place item."""
+    return {qid: Counter({g: len(ids) for g, ids in gens.items()}) for qid, gens in _mine(entries, places).items()}
+
+
+def certain_genitives(mined):
+    """(certain, conflicts): certain = {qid: genitive} given by two or more IDs and no other;
+    conflicts = {qid: sorted genitives} for an item with two or more."""
+    certain, conflicts = {}, {}
+    for qid, counts in mined.items():
+        if len(counts) > 1:
+            conflicts[qid] = sorted(counts)
+        else:
+            (g, n), = counts.items()
+            if n >= 2:
+                certain[qid] = g
+    return certain, conflicts
+
+
+def _folded(s):
+    return " " + " ".join(fold(s or "").split()) + " "
+
+
+def link_places(record, places):
+    """A copy of the record whose places gain the `qid` of the eulogy place whose Latin
+    contains their printed form (the first such); else, for a see or a place of death, the
+    eulogy's opening place (its first place with role death), only when the record place has no
+    `genitive` of its own; a place with none is left as it is."""
+    out = dict(record, places=[dict(p) for p in record.get("places") or []])
+    opening = next((e["qid"] for e in places if e.get("role") == "death" and e.get("qid")), None)
+    for p in out["places"]:
+        printed = _folded(p.get("printed"))
+        qid = next((e["qid"] for e in places if e.get("qid") and printed in _folded(e.get("la"))), None) \
+            if printed.strip() else None
+        if qid is None and p.get("kind") in ("see", "death") and not p.get("genitive"):
+            qid = opening  # the opening place of a dies natalis carries role death
+        if qid:
+            p["qid"] = qid
+    return out
+
+
+def genitives_report(mined, labels):
+    """The genitive report (Markdown) of _mine's result: the items with two or more genitives,
+    the certain map, the genitives one ID gives. IDs, QIDs, labels and slugs only."""
+    def line(qid, gens):
+        parts = ", ".join(f"`{g}` ({len(ids)}: {', '.join(ids[:3])}{', …' if len(ids) > 3 else ''})"
+                          for g, ids in sorted(gens.items(), key=lambda x: (-len(x[1]), x[0])))
+        return f"- {qid} {labels.get(qid) or '(no label)'}: {parts}"
+
+    def key(qid):
+        return (labels.get(qid) or "", qid)
+
+    certain_map, conflict_map = certain_genitives({q: {g: len(ids) for g, ids in gens.items()}
+                                                   for q, gens in mined.items()})
+    conflicts = sorted(conflict_map, key=key)
+    certain = sorted(certain_map, key=key)
+    single = sorted((q for q in mined if q not in certain_map and q not in conflict_map), key=key)
+    out = ["# Place genitives mined from the IDs", "",
+           "Generated by `scripts/rename_candidates.py report`. A genitive is certain when two or more current",
+           "IDs give it to a place item and none gives another; `PLACE_GENITIVES` overrides. Each genitive",
+           "shows how many IDs give it and up to three of them.", "",
+           f"## Items with two or more genitives ({len(conflicts)})", "",
+           "Each offered as uncertain until the curator picks one in `PLACE_GENITIVES`.", ""]
+    out += [line(q, mined[q]) for q in conflicts] or ["None."]
+    out += ["", f"## Certain ({len(certain)})", ""]
+    out += [line(q, mined[q]) for q in certain] or ["None."]
+    out += ["", f"## Given by one ID ({len(single)}, uncertain)", ""]
+    out += [line(q, mined[q]) for q in single] or ["None."]
+    return "\n".join(out) + "\n"
+
+
+def write_genitives_report(repo_root, entries=None, places=None):
+    """Write docs/rename-genitives-report.md from the registry and the eulogy places."""
+    repo_root = Path(repo_root)
+    if entries is None:
+        entries = json.loads((repo_root / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))["entries"]
+    if places is None:
+        places = eulogy_places.load(repo_root)
+    labels = {p["qid"]: p.get("label") for ps in places.values() for p in ps if p.get("qid")}
+    path = repo_root / "docs" / "rename-genitives-report.md"
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(genitives_report(_mine(entries, places), labels), encoding="utf-8")
+    return path
+
+
 class Context(NamedTuple):
     taken: dict    # MMDD -> slugs in use that day, current and deprecated
     twins: dict    # mrid -> its same-saint IDs, current and deprecated (same_eulogy, shared person item)
     ids: set       # all current IDs (a current twin's discriminator wins over a deprecated one's)
     labels: dict   # lang (la, en, it) -> mrid -> subject
+    genitives: dict = {}  # place QID -> its certain corpus genitive (certain_genitives)
+    places: dict = {}     # mrid -> the eulogy's places (eulogy_places.load)
+    mined: dict = {}      # place QID -> Counter(genitive) of the current IDs (mine_genitives)
+    persons: dict = {}    # mrid -> the eulogy's persons in the current edition (data/persons.json)
+    items: dict = {}      # mrid -> name key -> person item (data/person_items.json)
+    hint_labels: dict = None  # QID -> {en, it} Wikidata labels; None: no hints (fetch_hint_labels)
 
 
 def load_context(repo_root):
@@ -100,16 +246,48 @@ def load_context(repo_root):
             twins[e["id"]].add(other)
             twins[other].add(e["id"])
     by_item = defaultdict(set)
-    for mrid, names in read("data", "person_items.json")["persons"].items():
+    items = read("data", "person_items.json")["persons"]
+    for mrid, names in items.items():
         for item in names.values():
             if item.get("status") in DECIDED and item.get("wikidata"):
                 by_item[item["wikidata"]].add(mrid)
     for group in by_item.values():
         for mrid in group:
             twins[mrid] |= group - {mrid}
+    places = eulogy_places.load(repo_root)
+    mined = mine_genitives(entries, places)
+    persons = (read("data", "persons.json")["editions"][EDITION]
+               if (repo_root / "data" / "persons.json").exists() else {})
     return Context(taken=dict(taken),
                    twins={m: sorted(t) for m, t in twins.items() if t},
-                   ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")})
+                   ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")},
+                   genitives=certain_genitives(mined)[0], places=places, mined=mined,
+                   persons=persons, items=items)
+
+
+def hint_qid(mrid, ctx):
+    """The decided item of the eulogy's one person (HINT_STATUSES, with a QID), else None: no
+    person, two or more, or an item not decided."""
+    persons = ctx.persons.get(mrid) or []
+    if len(persons) != 1:
+        return None
+    item = (ctx.items.get(mrid) or {}).get(person_key(persons[0])) or {}
+    return item.get("wikidata") if item.get("status") in HINT_STATUSES else None
+
+
+def hint_qids(ctx, mrids):
+    """The hint QIDs of these eulogies, each once, in order."""
+    return list(dict.fromkeys(q for q in (hint_qid(m, ctx) for m in mrids) if q))
+
+
+def fetch_hint_labels(ctx, mrids, client):
+    """{QID: {en, it}} of the hint items of these eulogies, in one client.labels call; None (every
+    hint left out) with one warning on stderr when Wikidata fails."""
+    try:
+        return client.labels(hint_qids(ctx, mrids), languages=("en", "it"))
+    except WikidataError as e:
+        print(f"warning: no Wikidata hints on the relabels ({e})", file=sys.stderr)
+        return None
 
 
 def _primary_place(record):
@@ -135,6 +313,7 @@ def _labels(mrid, subject_la, ctx, la_words, en_tail=None, it_tail=None):
 def _build(record, mrid, subject_la, ctx):
     """(candidates, dropped): every candidate the rules allow, in tier order, then the
     hard-rule drops (numeric token, taken that day, twin disagreement, more than four)."""
+    record = link_places(record, ctx.places.get(mrid, []))
     mmdd, base = mrid[3:7], mrid[8:]
     name_tokens = base.split("-")
     role_en, role_it = record.get("role_en"), record.get("role_it")
@@ -201,15 +380,24 @@ def _build(record, mrid, subject_la, ctx):
             form, certain = adjective_slug(place["adjective"], record.get("feminine")), True
             category = "place-adjective"
         else:
-            form, certain = genitive_slug(place)
+            form, certain = genitive_slug(place, ctx.genitives, ctx.mined)
             category = "place-genitive"
+
+        def labels(f):
+            return _labels(mrid, subject_la, ctx, _display(f), f" of {place['en']}", f" di {place['it']}")
+
+        basis = f"{place['kind']} {place.get('printed')} ({place.get('grammar')})"
         if form is None:
             dropped.append((f"mr:{mmdd}-{base}-{slug(place.get('nominative') or '')}",
                              f"no genitive for {place.get('nominative')}"))
         else:
-            basis = f"{place['kind']} {place.get('printed')} ({place.get('grammar')})"
-            add(form, category, _labels(mrid, subject_la, ctx, _display(form),
-                                        f" of {place['en']}", f" di {place['it']}"), basis, certain=certain)
+            add(form, category, labels(form), basis, certain=certain)
+        # An item the IDs give two or more genitives: each offered, uncertain, the most given first.
+        mined = ctx.mined.get(place.get("qid"), {})
+        if category == "place-genitive" and not certain and len(mined) > 1:
+            for g, n in sorted(mined.items(), key=lambda x: (-x[1], x[0])):
+                add(g, "place-genitive", labels(g), f"{basis}; mined genitive {g} ({n} ID{'s' if n > 1 else ''})",
+                    certain=False)
 
     kept = _keep(out, dropped, mmdd, base, ctx)
     # Nothing kept (a cleric with no place, a place with no genitive, every slug taken...):
@@ -292,9 +480,37 @@ def _confidence(cands):
     return "medium" if len(cands) > 1 else "high"
 
 
+LANGS = ("la", "en", "it")
+
+
+def relabel_op(mrid, cands, ctx):
+    """The subject rename (relabel) of a eulogy: one candidate per distinct label set of its rename
+    candidates, in their order, each with the new ID it came from, then the current labels (the
+    i18n subjects) once, last, with from_id None; None when no candidate differs from the current.
+    A candidate's None language is filled from the current labels before the sets are compared."""
+    current = {lang: ctx.labels.get(lang, {}).get(mrid) for lang in LANGS}
+    out, seen = [], {tuple(current.values())}
+    for c in cands:
+        own = c.get("labels") or {}
+        labels = {lang: own.get(lang) if own.get(lang) is not None else current[lang] for lang in LANGS}
+        if tuple(labels.values()) not in seen:
+            seen.add(tuple(labels.values()))
+            out.append({"labels": labels, "from_id": c["new_id"]})
+    if not out:
+        return None
+    op = {"op": "relabel", "id": mrid, "uid": "labels:" + mrid, "current": current, "labels": out[0]["labels"],
+          "candidates": out + [{"labels": current, "from_id": None}], "decision": None, "edited": None}
+    qid = hint_qid(mrid, ctx)
+    if qid and ctx.hint_labels and qid in ctx.hint_labels:
+        labels = ctx.hint_labels[qid]
+        op["hint"] = {"wikidata": qid, "labels": {lang: labels.get(lang) for lang in ("en", "it")}}
+    return op
+
+
 def build_changeset(records, ctx, subjects_la, old=None):
     """One rename op per bare ID in the records, its candidates and the earlier bare-name
-    draft (old: mrid -> that draft's op) merged in; an ID with no candidates and no draft is
+    draft (old: mrid -> that draft's op) merged in, each followed by its relabel (relabel_op)
+    when a candidate's labels differ from the current; an ID with no candidates and no draft is
     skipped, listed on stderr."""
     old = old or {}
     by_id = defaultdict(list)
@@ -321,6 +537,9 @@ def build_changeset(records, ctx, subjects_la, old=None):
                     "candidates": cands,
                     "reasoning": "; ".join(f"also: {c['new_id']} ({c['category']})" for c in cands[1:]),
                     "subject_la": subject_la, "decision": None})
+        relabel = relabel_op(mrid, cands, ctx)
+        if relabel:
+            ops.append(relabel)
     return {"schema": SCHEMA, "generated_by": "scripts/rename_candidates.py",
             "generated_at": datetime.date.today().isoformat(),
             "base": {"edition": EDITION, "registry": "data/martyrology_ids.json"}, "operations": ops}
@@ -339,13 +558,18 @@ def load_old(paths):
 def main(argv):
     argv = list(argv)
     olds = []
-    usage = __doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]"
+    usage = (__doc__ + "\nusage: rename_candidates.py build <records.json> <out.json> [--old <changeset>...] [repo_root]"
+             "\n       rename_candidates.py report [repo_root]   (docs/rename-genitives-report.md only)")
     while "--old" in argv:
         i = argv.index("--old")
         if i + 1 == len(argv):
             sys.exit(usage)
         olds.append(argv[i + 1])
         del argv[i:i + 2]
+    if argv[:1] == ["report"] and len(argv) <= 2:
+        repo_root = Path(argv[1]) if len(argv) > 1 else Path(__file__).resolve().parent.parent
+        print(f"genitives report in {write_genitives_report(repo_root)}")
+        return 0
     if len(argv) < 3 or argv[0] != "build":
         sys.exit(usage)
     records_path, out = Path(argv[1]), Path(argv[2])
@@ -356,9 +580,14 @@ def main(argv):
     if isinstance(records, dict):
         records = records["records"]
     ctx = load_context(repo_root)
-    changeset = build_changeset([r for r in records if r["id"] in ctx.ids], ctx, ctx.labels["la"], load_old(olds))
+    report = write_genitives_report(repo_root, places=ctx.places)
+    records = [r for r in records if r["id"] in ctx.ids]
+    bare = sorted({r["id"] for r in records if is_bare(r["id"])})
+    ctx = ctx._replace(hint_labels=fetch_hint_labels(ctx, bare, Wikidata(repo_root / ".cache" / "wikidata")))
+    changeset = build_changeset(records, ctx, ctx.labels["la"], load_old(olds))
     out.write_text(json.dumps(changeset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
-    print(f"{len(changeset['operations'])} rename operations in {out}")
+    kinds = Counter(op["op"] for op in changeset["operations"])
+    print(f"{kinds['rename']} rename and {kinds['relabel']} relabel operations in {out}; genitives report in {report}")
     return 0
 
 

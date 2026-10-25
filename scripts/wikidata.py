@@ -55,6 +55,8 @@ NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
+# A place with more saints than this is too common to tell them apart by place: no candidates.
+MAX_PLACE_SAINTS = 200
 GREGORIAN, JULIAN = "Q1985727", "Q1985786"  # the calendar models of a Wikidata date
 # The query service stores a Julian-model date converted to the proleptic Gregorian calendar:
 # from two days earlier (the 1st century) to thirteen days later (since 1900) than its Julian day.
@@ -104,6 +106,21 @@ def _death_day(value, calendar):
         return None
     ymd = tuple(int(x) for x in m.groups())
     return ymd if calendar == GREGORIAN else _julian(*ymd)
+
+
+def _best_named(rows, given, matches=None):
+    """QIDs of the persons in SPARQL rows (?p ?l ?s) having a label or alias with a word starting
+    with one of the `given` names, folded; the best first: those whose names pass `matches` (a
+    test of a list of names), then those with more statuses, then by QID."""
+    starts = tuple(f for f in (fold(g) for g in given) if f)
+    names, found = {}, {}
+    for b in rows:
+        qid = b["p"]["value"].rsplit("/", 1)[1]
+        names.setdefault(qid, set()).add(b["l"]["value"])
+        if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
+            found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
+    return sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
+                                        int(q[1:])))
 
 
 class WikidataError(Exception):
@@ -240,6 +257,10 @@ def summarize_person(raw):
         "born": _date(claims, "P569"),
         "died": _date(claims, "P570"),
         "feast": ids("P841"),
+        "birth_place": current_qids(claims, "P19"),
+        "death_place": current_qids(claims, "P20"),
+        "burial_place": current_qids(claims, "P119"),
+        "work_places": current_qids(claims, "P937"),
     }
 
 
@@ -455,28 +476,55 @@ class Wikidata:
             f"wikibase:timePrecision ?prec; wikibase:timeCalendarModel ?cal] . "
             f"FILTER(?prec >= 11 && ({_stored_days(int(month), int(day))})){years} "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
-        starts = tuple(f for f in (fold(g) for g in given) if f)
-        names, found = {}, {}
+        kept = []
         for b in rows:
-            qid = b["p"]["value"].rsplit("/", 1)[1]
             on_day = _death_day(b["d"]["value"], b["cal"]["value"].rsplit("/", 1)[1])
             if int(b["prec"]["value"]) < 11 or on_day is None or on_day[1:] != (int(month), int(day)) or (year and on_day[0] != int(year)):
                 continue
-            names.setdefault(qid, set()).add(b["l"]["value"])
-            if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
-                found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
-        best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
-                                            int(q[1:])))
+            kept.append(b)
+        best = _best_named(kept, given, matches)
         return self._tagged({q: "sparql" for q in best[:MAX_SPARQL]})
+
+    def saints_by_place(self, qids, given, matches=None):
+        """Saints and blessed who died or are buried (P20, P119) in one of these places, whose
+        label or alias has a word starting with one of the `given` names, folded. Bounded by
+        status and place; the names are checked here. When the query finds more than
+        MAX_PLACE_SAINTS distinct persons the place is too common to help: []. At most
+        MAX_SPARQL, the best first, as saints_by_death_day orders them."""
+        if not qids:
+            return []
+        statuses = " ".join("wd:" + s for s in sorted(SAINT_STATUSES))
+        places = " ".join("wd:" + q for q in qids)
+        langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
+        rows = self._sparql(
+            f"SELECT DISTINCT ?p ?l ?s WHERE {{ VALUES ?s {{ {statuses} }} VALUES ?place {{ {places} }} "
+            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; (wdt:P20|wdt:P119) ?place . "
+            f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
+        if len({b["p"]["value"] for b in rows}) > MAX_PLACE_SAINTS:
+            return []
+        best = _best_named(rows, given, matches)
+        return self._tagged({q: "place" for q in best[:MAX_SPARQL]})
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""
         qids = list(dict.fromkeys(q for lang in languages for q in self._search(text, language=lang)))
         return self._tagged({q: "title" for q in qids})
 
+    def labels(self, qids, languages=("en", "it")):
+        """{qid: {lang: label or None}} of these items in these languages, fetched 50 at a time
+        (cached); a missing item is left out."""
+        raws = self._entities(list(dict.fromkeys(qids)))
+        return {q: {lang: ((raws[q].get("labels") or {}).get(lang) or {}).get("value") for lang in languages}
+                for q in dict.fromkeys(qids) if q in raws}
+
     def person(self, qid):
         raw = self._entities([qid]).get(qid)
         return summarize_person(raw) if raw else None
+
+    def people(self, qids):
+        """Person summaries of these items, by QID, fetched 50 at a time; a missing one is left out."""
+        raws = self._entities(list(dict.fromkeys(qids)))
+        return {q: summarize_person(raws[q]) for q in dict.fromkeys(qids) if q in raws}
 
     def details_entities(self, qids):
         """For the reader's popups: descriptions, claims and Wikipedia sitelinks in

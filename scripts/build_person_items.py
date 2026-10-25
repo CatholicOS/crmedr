@@ -22,6 +22,10 @@ Usage:
 export writes the review ops of one month's eulogies as a change-set of their own, for
 suggest_subjects.py; like every change-set Jev's suggestions go on, outside any git work tree.
 
+propose, verify-suggestions and expand also mark, on each open card, the eulogy's places
+(scripts/eulogy_places.py) and the candidates whose P19/P20/P119/P937 agree with them: shown
+to the curator and to Jev, never counted in the evidence bar or the candidate order.
+
 Standard library only. Reads no private sources.
 """
 
@@ -31,6 +35,7 @@ import re
 import sys
 from pathlib import Path
 
+import eulogy_places
 from body_places import _in_a_repository
 from persons_text import name_key, person_key
 from subject_records import person_record
@@ -411,6 +416,10 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     return not_processed
 
 
+# The roles of a eulogy's places whose saints are looked up.
+PLACE_ROUTE_ROLES = ("death", "burial", "translation")
+
+
 def _given_names(op):
     """The first word of each of the person's names, its stem without the Latin ending (Eugend,
     for Eugende and Eugendo; with ae and oe read as e too), and the vernacular equivalents of a
@@ -463,7 +472,7 @@ def _companion_items(op, items, ops=None):
     return found
 
 
-def _expansion(op, record, items, client, ops=None):
+def _expansion(op, record, items, client, ops=None, places=()):
     """New candidates for one op from the extra routes, in the order they are tried."""
     if record["kind"] == "celebration":
         found = client.title_candidates(op["subject"])
@@ -483,10 +492,15 @@ def _expansion(op, record, items, client, ops=None):
         named = _named(op)
         found += [c for c in client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
+    qids = list(dict.fromkeys(p["qid"] for p in places if p["role"] in PLACE_ROUTE_ROLES and p.get("qid")))
+    if qids:
+        named = _named(op)
+        found += [c for c in client.saints_by_place(qids, _given_names(op), named)
+                  if named(c.get("names", []) + [c.get("label", "")])]
     return found
 
 
-def expand(review, items, records, client):
+def expand(review, items, records, client, places=None):
     """Add candidates from the companions' kin, the saints of the death day and the titles to each
     op with a record (subject_records.person_record: its own, else the kind of its eulogy's only
     record); `records`: the identity records by eulogy id. Decisions are not touched. Returns
@@ -504,7 +518,7 @@ def expand(review, items, records, client):
             not_processed.append((op["id"], "skipped: Wikidata unavailable"))
             continue
         try:
-            found = _expansion(op, record, items, client, by_id)
+            found = _expansion(op, record, items, client, by_id, (places or {}).get(op["eulogy"], ()))
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
             failures += 1
@@ -616,6 +630,71 @@ def verify_suggestions(review, client):
     return errors
 
 
+# The candidate's place properties that answer a eulogy place of each role, in order; a role
+# not here (mention, cult, journey, ...) is never agreement.
+ROLE_PROPS = {"death": ("death_place", "burial_place"), "burial": ("burial_place", "death_place"),
+              "translation": ("burial_place", "death_place"), "birth": ("birth_place",),
+              "ministry": ("work_places", "death_place"), "religious_life": ("work_places", "death_place"),
+              "foundation": ("work_places", "death_place")}
+VIA = {"death_place": "P20", "burial_place": "P119", "birth_place": "P19", "work_places": "P937"}
+
+
+def _near(a, b, admin):
+    """The same item, or one P131 step apart either way."""
+    return a == b or b in admin.get(a, ()) or a in admin.get(b, ())
+
+
+def place_agreement(places, c, admin):
+    """[{role, qid, label, via}]: the eulogy places the candidate agrees with, each by the first
+    property of its role that does. `admin` is {qid: P131 qids}."""
+    out = []
+    for p in places:
+        via = next((prop for prop in ROLE_PROPS.get(p["role"], ())
+                    if any(_near(q, p["qid"], admin) for q in c.get(prop, []))), None)
+        if via:
+            out.append({"role": p["role"], "qid": p["qid"], "label": p["label"], "via": VIA[via]})
+    return out
+
+
+def annotate_places(ops, by_eulogy, client):
+    """Mark on each open op its eulogy's places and, per candidate, those it agrees with (`places`,
+    and "place" last in its evidence) and the labels of its place properties (`place_labels`).
+
+    A candidate carried over from an old op, with none of the place properties, gets them from
+    its person summary first (one `client.people` call). Evidence only: the order and `auto` are
+    left as they are. Idempotent, and run last, since other steps recompute `evidence`. One
+    `client.items` call; a WikidataError from either call propagates before any op is touched.
+    Decided and prefilled ops are left alone."""
+    ops = [op for op in ops if op.get("decision") is None and not op.get("prefilled")]
+    bare = list(dict.fromkeys(c["wikidata"] for op in ops for c in op["candidates"]
+                              if c.get("wikidata") and not any(prop in c for prop in VIA)))
+    people = client.people(bare) if bare else {}
+    props = lambda c: (c if any(prop in c for prop in VIA)  # noqa: E731
+                       else {prop: people.get(c.get("wikidata"), {}).get(prop, []) for prop in VIA})
+    qids = list(dict.fromkeys([p["qid"] for op in ops for p in by_eulogy.get(op["eulogy"], [])]
+                              + [q for op in ops for c in op["candidates"] for prop in VIA
+                                 for q in props(c).get(prop, [])]))
+    found = client.items(qids) if qids else {}
+    for op in ops:
+        for c in op["candidates"]:
+            if c.get("wikidata") in people and not any(prop in c for prop in VIA):
+                c.update({prop: people[c["wikidata"]].get(prop, []) for prop in VIA})
+    admin = {q: s.get("admin_qids", []) for q, s in found.items()}
+    label = lambda q, own=None: own or found.get(q, {}).get("label") or q  # noqa: E731
+    for op in ops:
+        places = [dict(p, label=label(p["qid"], p.get("label"))) for p in by_eulogy.get(op["eulogy"], [])]
+        op["places"] = [{"role": p["role"], "label": p["label"], "qid": p["qid"]} for p in places]
+        for c in op["candidates"]:
+            c["evidence"] = [e for e in c.get("evidence", []) if e != "place"]
+            c.pop("place_labels", None)
+            c["places"] = place_agreement(places, c, admin)
+            if c["places"]:
+                c["evidence"].append("place")
+            labels = {prop: [label(q) for q in c[prop]] for prop in VIA if c.get(prop)}
+            if labels:
+                c["place_labels"] = labels
+
+
 def validate(items, index, ops=()):
     errors = []
     names = {}
@@ -724,6 +803,8 @@ def main(argv):
     items = _read(data / "person_items.json", {"persons": {}})["persons"]
     review = _read(data / "person_items_review.json", new_changeset([]))
     not_processed = []
+    # Only the commands that use the places read their files (apply and check do not).
+    places = eulogy_places.load(repo_root) if cmd in ("propose", "verify-suggestions", "expand") else None
     client = Wikidata(repo_root / ".cache" / "wikidata")
     if cmd == "propose":
         not_processed = propose(items, review, index, client)
@@ -732,9 +813,15 @@ def main(argv):
         if errors:
             sys.exit("\n".join(errors))
     elif cmd == "expand":
-        not_processed = expand(review, items, exported, client)
+        not_processed = expand(review, items, exported, client, places)
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
+    if cmd in ("propose", "verify-suggestions", "expand"):
+        # Last: the steps above recompute `evidence`, which drops "place".
+        try:
+            annotate_places(review["operations"], places, client)
+        except WikidataError as e:
+            not_processed.append(("places", str(e)))
     errors = validate(items, index, review["operations"]) + unaccounted(
         items, index, review["operations"], [key for key, _ in not_processed])
     if errors:
@@ -749,6 +836,8 @@ def main(argv):
         render_report(items, index, review["operations"], not_processed), encoding="utf-8")
     for key, err in not_processed:
         print(f"not processed: {key}: {err}")
+    if any(key == "places" for key, _ in not_processed):
+        sys.exit("places were not annotated (Wikidata failed); the files are written without them: run again")
 
 
 if __name__ == "__main__":

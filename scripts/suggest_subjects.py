@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Jev suggestions on the subject-identity review cards: `rename` ops and `resolve_person` ops.
+"""Jev suggestions on the subject-identity review cards: `rename` and `resolve_person` ops.
+
+A `relabel` op (the subject rename) is never asked, evaluated or prefilled: the subject follows the
+ID (curator, 2026-10-25), so Jev's rename pick already chooses the pairing; `suggest` and `prefill`
+leave relabels untouched.
 
 `suggest` writes `jev` on every card whose answer reaches the threshold (the picked option's
 probability), and removes it from the others: on a rename {decision: accept|edit, new_id for an
@@ -15,13 +19,20 @@ which the curator's tool and `apply` read). Nothing here writes `decision` or `e
 ignored), so a re-run asks nothing already asked. The change-sets quote the 2004 texts: `suggest`
 refuses one inside any git work tree. See docs/superpowers/specs/2026-10-18-subject-identity-design.md.
 
+`prefill` writes `decision` (and `edited`) on the cards the rules and Jev settle, marked `prefilled`
+"rule" or "jev": a rename whose first PREFILL_ORDER category has exactly one candidate, not weak; a
+person card Jev answers at the threshold (an accept or edit only for a candidate with human and
+status evidence; a reject always). A card with a decision is never touched, and `suggest` skips one decided or prefilled.
+
 Usage:
   python3 suggest_subjects.py suggest <changeset.json> <records.json> /path/to/martyrology-texts
                                       [--persons] [--month MM] [--min-confidence X] [--repo repo_root]
+  python3 suggest_subjects.py prefill <changeset.json> [--threshold X] [--repo repo_root]
   python3 suggest_subjects.py evaluate <decided.json>... --records <records.json>
                                       /path/to/martyrology-texts [--repo repo_root]
 
---persons asks only the person cards; --month MM only the cards of that month's eulogies. The key: TYPESAFE_API_KEY, else ~/.config/typesafe/api_key.
+--persons asks only the person cards; --month MM only the cards of that
+month's eulogies. The key: TYPESAFE_API_KEY, else ~/.config/typesafe/api_key.
 Standard library only.
 """
 
@@ -33,7 +44,7 @@ from pathlib import Path
 
 import mentions_jev as mj
 import subject_jev as sj
-from body_places import _in_a_repository
+from body_places import _in_a_repository, write_json_atomic
 from extract_places import EDITION_EN, EDITION_IT
 from extract_typology import latin_texts, load_texts
 from rename_candidates import _record_of
@@ -43,6 +54,9 @@ from subject_records import person_record
 DEFAULT_MIN_CONFIDENCE = 0.9
 THRESHOLDS = [round(0.1 * i, 2) for i in range(10)] + [0.95]
 DECIDED = ("auto", "reviewed")
+NO_CANDIDATE_REASON = "Jev: none of the candidates is this person"
+# The rename categories a rule may prefill, in order: the first one present decides.
+PREFILL_ORDER = ("twin", "papa", "surname", "epithet", "place-adjective", "place-genitive")
 
 
 def load_data(repo_root, texts_repo):
@@ -117,7 +131,7 @@ def request_for(op, data, records):
 
 
 def eulogy(op):
-    return op["id"] if family(op) == "rename" else op["eulogy"]
+    return op["eulogy"] if family(op) == "person" else op["id"]
 
 
 def in_scope(op, persons, month=None):
@@ -163,7 +177,9 @@ def require_key(ops, data, records, client):
 
 
 def suggest_ops(ops, data, records, client, min_confidence, persons=False, month=None):
-    scope = [op for op in ops if in_scope(op, persons, month)]
+    """Ask the cards in scope; a decided or prefilled card is skipped, its `jev` never rewritten."""
+    scope = [op for op in ops if in_scope(op, persons, month)
+             and op.get("decision") is None and not op.get("prefilled")]
     require_key(scope, data, records, client)
     counts = {"suggested": 0, "below": 0, "flagged": 0, "skipped": len(ops) - len(scope), "errors": 0}
     for op in scope:
@@ -186,10 +202,64 @@ def suggest_ops(ops, data, records, client, min_confidence, persons=False, month
     return counts
 
 
+def _rule_prefill(op):
+    """The new ID the rule picks for a rename: the candidate of the first PREFILL_ORDER category present,
+    when it is the only one with that category and not weak (a genitive need not be certain); else None."""
+    cands = op.get("candidates") or []
+    for category in PREFILL_ORDER:
+        found = [c for c in cands if c.get("category") == category]
+        if found:
+            return found[0]["new_id"] if len(found) == 1 and not found[0].get("weak") else None
+    return None
+
+
+def _jev_prefill(op, jev):
+    """(decision, edited) of Jev's suggestion written as a curator's would be, or None when it is not
+    taken: a person's accept or edit needs the item to be a candidate with human and status evidence."""
+    decision = jev.get("decision")
+    if decision == "reject":
+        return decision, {"reason": (jev.get("reason") or "").strip() or NO_CANDIDATE_REASON}
+    if decision not in ("accept", "edit"):
+        return None
+    ok = any(c.get("wikidata") == jev.get("wikidata") and {"human", "status"} <= set(c.get("evidence", []))
+             for c in op.get("candidates") or [])
+    if not ok:
+        return None
+    return decision, ({"wikidata": jev["wikidata"]} if decision == "edit" else None)
+
+
+def prefill_ops(ops, threshold=DEFAULT_MIN_CONFIDENCE):
+    """Write `decision` (and `edited`) on the cards the rules and Jev settle, with `prefilled` "rule" or
+    "jev"; a card with a decision is never touched, nor a relabel (the subject follows the ID).
+    Returns the counts by kind of op."""
+    counts = defaultdict(int)
+    for op in ops:
+        kind = op.get("op")
+        if op.get("decision") or kind not in ("rename", "resolve_person"):
+            continue
+        if kind == "rename":
+            new = _rule_prefill(op)
+            if new is None:
+                continue
+            if new == op.get("new_id"):
+                op["decision"] = "accept"
+            else:
+                op["decision"], op["edited"] = "edit", {"new_id": new}
+            op["prefilled"] = "rule"
+        else:
+            jev = op.get("jev")
+            taken = _jev_prefill(op, jev) if jev and jev.get("probability", 0) >= threshold else None
+            if taken is None:
+                continue
+            op["decision"], op["edited"] = taken
+            op["prefilled"] = "jev"
+        counts[kind] += 1
+    return dict(counts)
+
+
 def curator_outcome(op):
-    """What the curator's decision applies: the new ID of a rename, the item of a person card (an
-    accept falls back to `suggested`, then to the first candidate, as `apply` does); None for a
-    reject."""
+    """What the curator's decision applies: the new ID of a rename, the item of a person card (an accept falls back to `suggested`, then
+    to the first candidate, as `apply` does); None for a reject."""
     decision, edited = op.get("decision"), op.get("edited") or {}
     if decision == "reject":
         return None
@@ -267,6 +337,8 @@ def _args(argv):
     for a in it:
         if a == "--min-confidence":
             flags["min"] = float(next(it))
+        elif a == "--threshold":
+            flags["threshold"] = float(next(it))
         elif a == "--repo":
             flags["repo"] = next(it)
         elif a == "--records":
@@ -281,10 +353,21 @@ def _args(argv):
 
 
 def main(argv):
-    if not argv or argv[0] not in ("suggest", "evaluate"):
+    if not argv or argv[0] not in ("suggest", "prefill", "evaluate"):
         sys.exit(__doc__)
     flags, files = _args(argv[1:])
     repo = Path(flags.get("repo") or Path(__file__).resolve().parent.parent)
+    if argv[0] == "prefill":
+        if len(files) != 1:
+            sys.exit(__doc__)
+        path = Path(files[0])
+        if _in_a_repository(path, repo):
+            sys.exit(f"{path}: a change-set quotes the 2004 edition; keep it outside the repository")
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        counts = prefill_ops(doc["operations"], flags.get("threshold", DEFAULT_MIN_CONFIDENCE))
+        write_json_atomic(path, doc)
+        print(f"{path}: {counts}")
+        return
     if argv[0] == "suggest":
         if len(files) != 3:
             sys.exit(__doc__)
@@ -306,7 +389,7 @@ def main(argv):
             counts = suggest_ops(doc["operations"], data, records, client,
                                  flags.get("min", DEFAULT_MIN_CONFIDENCE), flags.get("persons", False),
                                  flags.get("month"))
-            path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            write_json_atomic(path, doc)
             print(f"{path}: {counts}")
             return
         ops = [op for f in files[:-1] for op in json.loads(Path(f).read_text(encoding="utf-8"))["operations"]]
