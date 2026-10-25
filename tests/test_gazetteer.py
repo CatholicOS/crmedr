@@ -844,6 +844,12 @@ class ValidateTest(unittest.TestCase):
         errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Fictópoli"}])
         self.assertTrue(any("also queued" in e for e in errors))
 
+    def test_queued_place_no_longer_printed(self):
+        # An extractor fix changed the phrase ("Romæ in cœmetério" → "... sancti Lauréntii via Tiburtína")
+        # while a card for the old one was still queued.
+        errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Ignota"}])
+        self.assertTrue(any("'Ignota'" in e and "not a place" in e for e in errors), errors)
+
 
 class RenderJsonTest(unittest.TestCase):
     def test_key_order_and_sorting(self):
