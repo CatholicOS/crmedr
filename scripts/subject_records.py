@@ -32,22 +32,22 @@ from persons_text import person_key
 
 CLERIC_ROLES = ("episcopus", "archiepiscopus", "presbyter", "diaconus", "subdiaconus", "abbas", "abbatissa", "prior")
 
-# nominative role -> its printed forms, folded (nominative, genitive, dative, accusative, ablative)
+# nominative role -> its printed forms, folded (singular cases, and the plurals a pair or group prints)
 ROLE_FORMS = {
-    "episcopus": {"episcopus", "episcopi", "episcopo", "episcopum"},
-    "archiepiscopus": {"archiepiscopus", "archiepiscopi", "archiepiscopo", "archiepiscopum"},
-    "presbyter": {"presbyter", "presbyteri", "presbytero", "presbyterum"},
-    "diaconus": {"diaconus", "diaconi", "diacono", "diaconum"},
-    "subdiaconus": {"subdiaconus", "subdiaconi", "subdiacono", "subdiaconum"},
-    "abbas": {"abbas", "abbatis", "abbati", "abbatem", "abbate"},
-    "abbatissa": {"abbatissa", "abbatissae", "abbatissam", "abbatissa"},
+    "episcopus": {"episcopus", "episcopi", "episcopo", "episcopum", "episcoporum", "episcopis", "episcopos"},
+    "archiepiscopus": {"archiepiscopus", "archiepiscopi", "archiepiscopo", "archiepiscopum", "archiepiscoporum", "archiepiscopis"},
+    "presbyter": {"presbyter", "presbyteri", "presbytero", "presbyterum", "presbyteri", "presbyterorum", "presbyteris", "presbyteros"},
+    "diaconus": {"diaconus", "diaconi", "diacono", "diaconum", "diaconi", "diaconorum", "diaconis", "diaconos"},
+    "subdiaconus": {"subdiaconus", "subdiaconi", "subdiacono", "subdiaconum", "subdiaconorum", "subdiaconis"},
+    "abbas": {"abbas", "abbatis", "abbati", "abbatem", "abbate", "abbates", "abbatum", "abbatibus"},
+    "abbatissa": {"abbatissa", "abbatissae", "abbatissam", "abbatissa", "abbatissarum"},
     "prior": {"prior", "prioris", "priori", "priorem", "priore"},
-    "monachus": {"monachus", "monachi", "monacho", "monachum"},
-    "eremita": {"eremita", "eremitae", "eremitam"},
+    "monachus": {"monachus", "monachi", "monacho", "monachum", "monachorum", "monachis", "monachos"},
+    "eremita": {"eremita", "eremitae", "eremitam", "eremitarum", "eremitis", "eremitas"},
     "papa": {"papa", "papae", "papam"},
-    "martyr": {"martyr", "martyris", "martyri", "martyrem", "martyre"},
-    "virgo": {"virgo", "virginis", "virgini", "virginem", "virgine"},
-    "confessor": {"confessor", "confessoris", "confessori", "confessorem", "confessore"},
+    "martyr": {"martyr", "martyris", "martyri", "martyrem", "martyre", "martyres", "martyrum", "martyribus"},
+    "virgo": {"virgo", "virginis", "virgini", "virginem", "virgine", "virgines", "virginum", "virginibus"},
+    "confessor": {"confessor", "confessoris", "confessori", "confessorem", "confessore", "confessores", "confessorum", "confessoribus"},
     "rex": {"rex", "regis", "regi", "regem", "rege"},
     "regina": {"regina", "reginae", "reginam"},
     "propheta": {"propheta", "prophetae", "prophetam"},
@@ -63,7 +63,8 @@ KINDS = ("person", "celebration", "group")
 DECIDED = ("auto", "reviewed")  # person item statuses that name an item
 COGNOMEN_SOURCES = ("text", "twin", "wikidata")
 
-INFLECTION = re.compile(r"(ensis|ensi|ensem|ense|ensium|anus|ani|ano|anum|ana|anae|inus|ini|ina|inae)$")
+# a place adjective's endings: -ensis, and the -anus, -inus, -enus and -icus adjectives in every case
+INFLECTION = re.compile(r"(ens(?:is|i|em|e|ium|ibus)|(?:an|in|en|ic)(?:orum|arum|us|um|ae|am|is|os|as|a|i|o))$")
 
 
 def _stem(s):
