@@ -71,7 +71,7 @@ class SuggestTest(unittest.TestCase):
     def test_decided_and_prefilled_cards_are_never_rewritten(self):
         jev = {"decision": "accept", "probability": 0.99}
         decided = dict(copy.deepcopy(OP), decision="edit", edited={"new_id": "mr:0101-x"}, jev=dict(jev))
-        prefilled = dict(copy.deepcopy(ROP), decision=None, prefilled="jev", jev=dict(jev))
+        prefilled = dict(copy.deepcopy(POP), decision=None, prefilled="jev", jev=dict(jev))
         before = copy.deepcopy([decided, prefilled])
         client = StubClient(p=0.5)
         counts = ss.suggest_ops([decided, prefilled], DATA, RECORDS, client, 0.9)

@@ -144,17 +144,17 @@
 ### Task 7: The subject rename (`relabel`)
 
 **Files:**
-- Modify: `scripts/rename_candidates.py` (`build_changeset`), `scripts/apply_renames.py` (`renames`, new `relabels`, `_write_labels`), `scripts/subject_jev.py` (new `relabel_request`, `relabel_suggestion`), `scripts/suggest_subjects.py` (`request_for`, `ask_op`, `in_scope`)
+- Modify: `scripts/rename_candidates.py` (`build_changeset`), `scripts/apply_renames.py` (`renames`, new `relabels`, `_write_labels`), `scripts/suggest_subjects.py` (`in_scope`: relabels are skipped)
 - Test: `tests/test_rename_candidates.py`, `tests/test_apply_renames.py`, `tests/test_subject_jev.py`, `tests/test_suggest_subjects.py`
 
 **Interfaces:**
 - Produces:
   - The op: `{"op": "relabel", "id": mrid, "uid": "labels:" + mrid, "current": {"la", "en", "it"}, "labels": candidates[0]["labels"], "candidates": [{"labels": {...}, "from_id": new_id}] (one per distinct label set of the rename candidates, the current labels last with "from_id": null), "decision": None, "edited": None}`, written right after its eulogy's `rename`.
-  - Decisions: `accept` → `op["labels"]`; `edit` → `edited["labels"]` (all three); `reject` → keep the current labels.
+  - Decisions (revised 2026-10-25: the subject follows the ID): `accept` writes the subject of the eulogy's decided rename ID and requires that ID to be a rename candidate (else an error before anything is written); `edit` writes `edited["labels"]`, under the new ID when the eulogy is renamed, else under the current ID; `reject` keeps the current labels.
   - `apply_renames.relabels(changeset) -> dict[str, dict]`: `{mrid: labels}` of the decided relabels; `renames()` takes a decided relabel's labels for its eulogy, else the rename candidate's (today's behaviour); a relabel with no rename writes labels under the current ID.
-  - `relabel_request(op, record, la_clause, vernacular)` (a `clarity_*` Score per candidate and a `pick` Choice, the rename request's wording with "subject" for "ID"); `relabel_suggestion(op, answers) -> dict` like `rename_suggestion` (`edited` holds the picked labels).
+  - Relabels are not sent to Jev: the rename decision chooses the ID and its subject together. A relabel may carry a `hint` (a single decided person's item labels, en/it).
 
-- [ ] **Step 1: Write the failing tests:** `test_relabel_after_rename` (build_changeset writes a relabel after each rename, current labels last); `test_relabel_overrides`; `test_relabel_without_rename` (labels set under the current ID); `test_reject_keeps_current`; `test_undecided_relabel_keeps_rename_labels`; `test_relabel_request_and_suggestion`; `test_suggest_asks_relabel`.
+- [ ] **Step 1: Write the failing tests:** `test_relabel_after_rename` (build_changeset writes a relabel after each rename, current labels last); `test_relabel_overrides`; `test_relabel_without_rename` (labels set under the current ID); `test_reject_keeps_current`; `test_undecided_relabel_keeps_rename_labels`; `test_suggest_skips_relabel`.
 - [ ] **Step 2: Run** the four test files — Expected: FAIL.
 - [ ] **Step 3: Implement.**
 - [ ] **Step 4: Run** the suite — Expected: OK.
@@ -170,7 +170,7 @@
 - Produces: `prefill_ops(ops: list[dict], threshold: float = 0.9) -> dict[str, int]` (counts by kind); `PREFILL_ORDER = ("twin", "papa", "surname", "epithet", "place-adjective", "place-genitive")`. Rules, never on an op with `decision` set:
   - `rename`: the candidate of the first category of `PREFILL_ORDER` present, only when exactly one candidate has it, it is not `weak` (a `place-genitive` need not be `certain`, as in the curator's January practice) → `decision "accept"` if it is `new_id`, else `"edit"` with `edited.new_id`; `prefilled: "rule"`.
   - `resolve_person`: `jev.probability >= threshold`, decision accept or edit, the item a candidate with `human` and `status` evidence → the Jev decision; `prefilled: "jev"`.
-  - `relabel`: `jev.probability >= threshold` → its decision; `prefilled: "jev"`.
+  - `relabel`: never prefilled (it follows the decided rename ID).
 - CLI: `suggest_subjects.py prefill <changeset.json> [--threshold X]`, path outside a git tree.
 
 - [ ] **Step 1: Write the failing tests:** one per rule, plus `test_decided_untouched` and `test_weak_or_uncertain_not_prefilled`.
