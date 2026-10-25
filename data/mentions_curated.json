@@ -3924,6 +3924,66 @@
           "qid": null
         }
       ],
+      "mr:1025-maria-teresia-ferragud-roig-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 41,
+          "check": "7385ab22",
+          "qid": "Q931780",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 79,
+          "check": "89c04d70",
+          "name": "Maria Teresia Ferragud Roig",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 124,
+          "check": "d591ffc8",
+          "name": "Vincentia Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 126,
+          "end": 151,
+          "check": "4fa4b8d5",
+          "name": "Ioachima Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 153,
+          "end": 185,
+          "check": "acf37d69",
+          "name": "Maria Felicitas Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 235,
+          "end": 284,
+          "check": "c72f453b",
+          "name": "Raymunda Masiá Ferragud",
+          "qid": null
+        }
+      ],
       "mr:1111-menna-mareotidem": [
         {
           "kind": "place",

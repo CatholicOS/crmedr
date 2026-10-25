@@ -1,3 +1,70 @@
 {
-  "$comment": "Hand-entered persons for eulogies extract_persons.py cannot read, by current ID: [{name, where}], where is \"text\" or {\"footnote\": n}. Replaces the eulogy's extraction; checked like it."
+  "$comment": "Hand-entered persons for eulogies extract_persons.py cannot read, by current ID: [{name, where}], where is \"text\" or {\"footnote\": n}. Replaces the eulogy's extraction; checked like it.",
+  "mr:0901-petrus-rivera-et-socii": [
+    {
+      "name": "Petrus Rivera",
+      "where": "text"
+    },
+    {
+      "name": "Maria a Monte Carmelo Moreno Benítez",
+      "where": "text"
+    },
+    {
+      "name": "Maria a Refugio Carbonell Muñoz",
+      "where": "text"
+    }
+  ],
+  "mr:0929-michael-de-aozaraza-et-socii": [
+    {
+      "name": "Michael de Aozaraza",
+      "where": "text"
+    },
+    {
+      "name": "Gulielmus Courtet",
+      "where": "text"
+    },
+    {
+      "name": "Vincentius Shiwozuka",
+      "where": "text"
+    },
+    {
+      "name": "Lazarus de Kyoto",
+      "where": "text"
+    },
+    {
+      "name": "Laurentius de Manila Ruiz",
+      "where": "text"
+    }
+  ],
+  "mr:1025-maria-teresia-ferragud-roig-et-socii": [
+    {
+      "name": "Maria Teresia Ferragud Roig",
+      "where": "text"
+    },
+    {
+      "name": "Vincentia Masiá Ferragud",
+      "also": [
+        "Maria a Iesu Masiá Ferragud"
+      ],
+      "where": "text"
+    },
+    {
+      "name": "Ioachima Masiá Ferragud",
+      "also": [
+        "Maria Veronica Masiá Ferragud"
+      ],
+      "where": "text"
+    },
+    {
+      "name": "Maria Felicitas Masiá Ferragud",
+      "where": "text"
+    },
+    {
+      "name": "Raymunda Masiá Ferragud",
+      "also": [
+        "Iosepha a Purificatione Masiá Ferragud"
+      ],
+      "where": "text"
+    }
+  ]
 }

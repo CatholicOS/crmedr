@@ -343,7 +343,9 @@ NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "mon
                     # the singular, between two names ("Thomae Bosgrave, presbyteri, et Patricii...")
                     "presbyteri", "episcopi", "diaconi", "monachi", "sacerdotis", "virginis", "martyris",
                     "religiosi", "laici", "catechistae", "abbatis", "eremitae", "monialis", "fratris",
-                    "sororis", "matris", "patris", "filii", "filiae", "uxoris", "viri", "coniugis"}
+                    "sororis", "matris", "patris", "filii", "filiae", "uxoris", "viri", "coniugis",
+                    # kin before the next names ("atque filiarum eius Mariae...")
+                    "filiorum", "filiarum", "eius", "eorum", "earum"}
 
 
 def nominative(word, lexicon):
@@ -402,11 +404,12 @@ def _ablative_name(name, lexicon):
 
 
 # A name printed with its secular name in parentheses: "Ambrósii (Salvatóris) Chuliá Ferrandis", the
-# religious name, the secular name, the surname (undeclined, up to a comma, "et" or a descriptor).
+# religious name, the secular name, the surname (undeclined, up to a comma, "et" or a descriptor;
+# none when a daughter's is the family's, printed once: "Maríæ a Iesu (Vincéntiæ), ...").
 CAP = r"[A-ZÀ-ÝĐŁŚŠŽŻČĆ][^\s,;.:()]*"
 PAREN_NAME = re.compile(
     rf"({CAP}(?:\s+(?:(?:a|ab|de|del|della|et(?=\s+Mar))\s+)?{CAP})*)\s*\(([^)]*)\)\s*"
-    rf"((?:(?:{CAP}|de|del|della|la|y|da|do|dos|van|von|d['’]\S+)(?:\s+|(?=[,;.:])|$))+)")
+    rf"((?:(?:{CAP}|de|del|della|la|y|da|do|dos|van|von|d['’]\S+)(?:\s+|(?=[,;.:])|$))*)")
 
 
 def _paren_names(tail, lexicon):
@@ -515,6 +518,9 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None):
                 skipping = True
                 continue
             if f in NAME_DESCRIPTORS and not current:
+                continue
+            if f == "ex" and not current:
+                skipping = True  # "virginum ex Ordine N" describes the names before it
                 continue
             if current:
                 uncertain.append(" ".join(current))  # broken off ("Xysti papae Secundi"): not written

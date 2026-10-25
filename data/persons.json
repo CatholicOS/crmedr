@@ -13338,6 +13338,14 @@
         {
           "name": "Alphonsus Navarrete",
           "where": "text"
+        },
+        {
+          "name": "Ferdinandus a Sancto Ioseph de Ayala",
+          "where": "text"
+        },
+        {
+          "name": "Leo Tanaka",
+          "where": "text"
         }
       ],
       "mr:0601-ioannes-baptista-vernoy-de-montjournal": [
@@ -20538,6 +20546,14 @@
         {
           "name": "Ludovicus Bertran",
           "where": "text"
+        },
+        {
+          "name": "Mancius a Sancta Cruce",
+          "where": "text"
+        },
+        {
+          "name": "Petrus a Sancta Maria",
+          "where": "text"
         }
       ],
       "mr:0729-carolus-nicolaus-antonius-ancel": [
@@ -20786,6 +20802,10 @@
       "mr:0730-iosephus-maria-muro-sanmiguel-et-socii": [
         {
           "name": "Iosephus Maria Muro Sanmiguel",
+          "where": "text"
+        },
+        {
+          "name": "Zosimus Izquierdo Gil",
           "where": "text"
         }
       ],
@@ -23204,6 +23224,10 @@
           "where": "text"
         },
         {
+          "name": "Petrus de Zúñiga",
+          "where": "text"
+        },
+        {
           "name": "Ioachim Hirayama",
           "where": {
             "footnote": 1
@@ -24829,6 +24853,14 @@
       "mr:0901-petrus-rivera-et-socii": [
         {
           "name": "Petrus Rivera",
+          "where": "text"
+        },
+        {
+          "name": "Maria a Monte Carmelo Moreno Benítez",
+          "where": "text"
+        },
+        {
+          "name": "Maria a Refugio Carbonell Muñoz",
           "where": "text"
         }
       ],
@@ -26575,6 +26607,10 @@
       "mr:0907-thomas-tsuji-et-socii": [
         {
           "name": "Thomas Tsuji",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes",
           "where": "text"
         }
       ],
@@ -30044,6 +30080,14 @@
         {
           "name": "Vincentius Shiwozuka",
           "where": "text"
+        },
+        {
+          "name": "Lazarus de Kyoto",
+          "where": "text"
+        },
+        {
+          "name": "Laurentius de Manila Ruiz",
+          "where": "text"
         }
       ],
       "mr:0929-renatus-goupil": [
@@ -32619,6 +32663,31 @@
       "mr:1025-maria-teresia-ferragud-roig-et-socii": [
         {
           "name": "Maria Teresia Ferragud Roig",
+          "where": "text"
+        },
+        {
+          "name": "Vincentia Masiá Ferragud",
+          "also": [
+            "Maria a Iesu Masiá Ferragud"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Ioachima Masiá Ferragud",
+          "also": [
+            "Maria Veronica Masiá Ferragud"
+          ],
+          "where": "text"
+        },
+        {
+          "name": "Maria Felicitas Masiá Ferragud",
+          "where": "text"
+        },
+        {
+          "name": "Raymunda Masiá Ferragud",
+          "also": [
+            "Iosepha a Purificatione Masiá Ferragud"
+          ],
           "where": "text"
         }
       ],
@@ -37032,6 +37101,10 @@
       "mr:1204-franciscus-galvez-et-socii": [
         {
           "name": "Franciscus Galvez",
+          "where": "text"
+        },
+        {
+          "name": "Hieronymus de Angelis",
           "where": "text"
         }
       ],
