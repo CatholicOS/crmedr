@@ -266,6 +266,20 @@ class PrefillTest(unittest.TestCase):
         self.assertEqual(rej["decision"], "reject")
         self.assertIsNone(low["decision"])
 
+    def test_reject_without_jev_reason_gets_the_default(self):
+        none, blank = (self.person({"decision": "reject", "probability": 0.95, **r}) for r in ({}, {"reason": " "}))
+        self.assertEqual(ss.prefill_ops([none, blank]), {"resolve_person": 2})
+        for op in (none, blank):
+            self.assertEqual(op["edited"], {"reason": "Jev: none of the candidates is this person"})
+
+    def test_relabel_edit_without_labels_skipped(self):
+        a, b = copy.deepcopy(ROP), copy.deepcopy(ROP)
+        a["jev"] = {"decision": "edit", "probability": 0.95}
+        b["jev"] = {"decision": "edit", "labels": {}, "probability": 0.95}
+        self.assertEqual(ss.prefill_ops([a, b]), {})
+        self.assertIsNone(a["decision"])
+        self.assertIsNone(b["decision"])
+
     def test_decided_untouched(self):
         op = self.rename(self.cand("mr:0101-x-a", "surname"), decision="reject")
         op["decision"] = "reject"

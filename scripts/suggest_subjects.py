@@ -52,6 +52,7 @@ from subject_records import person_record
 DEFAULT_MIN_CONFIDENCE = 0.9
 THRESHOLDS = [round(0.1 * i, 2) for i in range(10)] + [0.95]
 DECIDED = ("auto", "reviewed")
+NO_CANDIDATE_REASON = "Jev: none of the candidates is this person"
 # The rename categories a rule may prefill, in order: the first one present decides.
 PREFILL_ORDER = ("twin", "papa", "surname", "epithet", "place-adjective", "place-genitive")
 
@@ -217,10 +218,10 @@ def _jev_prefill(op, jev):
     decision = jev.get("decision")
     if family(op) == "relabel":
         if decision == "edit":
-            return decision, {"labels": jev["labels"]}
+            return (decision, {"labels": jev["labels"]}) if jev.get("labels") else None
         return (decision, None) if decision in ("accept", "reject") else None
     if decision == "reject":
-        return decision, {"reason": jev.get("reason")}
+        return decision, {"reason": (jev.get("reason") or "").strip() or NO_CANDIDATE_REASON}
     if decision not in ("accept", "edit"):
         return None
     ok = any(c.get("wikidata") == jev.get("wikidata") and {"human", "status"} <= set(c.get("evidence", []))
