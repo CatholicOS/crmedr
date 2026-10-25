@@ -108,6 +108,21 @@ def _death_day(value, calendar):
     return ymd if calendar == GREGORIAN else _julian(*ymd)
 
 
+def _best_named(rows, given, matches=None):
+    """QIDs of the persons in SPARQL rows (?p ?l ?s) having a label or alias with a word starting
+    with one of the `given` names, folded; the best first: those whose names pass `matches` (a
+    test of a list of names), then those with more statuses, then by QID."""
+    starts = tuple(f for f in (fold(g) for g in given) if f)
+    names, found = {}, {}
+    for b in rows:
+        qid = b["p"]["value"].rsplit("/", 1)[1]
+        names.setdefault(qid, set()).add(b["l"]["value"])
+        if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
+            found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
+    return sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
+                                        int(q[1:])))
+
+
 class WikidataError(Exception):
     pass
 
@@ -461,18 +476,13 @@ class Wikidata:
             f"wikibase:timePrecision ?prec; wikibase:timeCalendarModel ?cal] . "
             f"FILTER(?prec >= 11 && ({_stored_days(int(month), int(day))})){years} "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
-        starts = tuple(f for f in (fold(g) for g in given) if f)
-        names, found = {}, {}
+        kept = []
         for b in rows:
-            qid = b["p"]["value"].rsplit("/", 1)[1]
             on_day = _death_day(b["d"]["value"], b["cal"]["value"].rsplit("/", 1)[1])
             if int(b["prec"]["value"]) < 11 or on_day is None or on_day[1:] != (int(month), int(day)) or (year and on_day[0] != int(year)):
                 continue
-            names.setdefault(qid, set()).add(b["l"]["value"])
-            if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
-                found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
-        best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
-                                            int(q[1:])))
+            kept.append(b)
+        best = _best_named(kept, given, matches)
         return self._tagged({q: "sparql" for q in best[:MAX_SPARQL]})
 
     def saints_by_place(self, qids, given, matches=None):
@@ -492,15 +502,7 @@ class Wikidata:
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
         if len({b["p"]["value"] for b in rows}) > MAX_PLACE_SAINTS:
             return []
-        starts = tuple(f for f in (fold(g) for g in given) if f)
-        names, found = {}, {}
-        for b in rows:
-            qid = b["p"]["value"].rsplit("/", 1)[1]
-            names.setdefault(qid, set()).add(b["l"]["value"])
-            if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
-                found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
-        best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
-                                            int(q[1:])))
+        best = _best_named(rows, given, matches)
         return self._tagged({q: "place" for q in best[:MAX_SPARQL]})
 
     def title_candidates(self, text, languages=("la", "it", "en")):

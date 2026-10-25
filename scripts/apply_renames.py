@@ -111,7 +111,8 @@ def relabel_errors(changeset):
 def relabels(changeset):
     """{mrid: labels} of the decided relabels: accept takes the subject the eulogy's decided ID
     implies (_followed; an accept that follows no candidate is left out, see relabel_errors), edit
-    the edited labels, reject none (every subject None: left unchanged)."""
+    the edited labels, reject none (every subject None: left unchanged). An `edit` with an empty
+    language (missing, "" or null) gives None for it: that language's current subject is kept."""
     out, decided = {}, _decided_renames(changeset)
     for op in changeset.get("operations", []):
         if op.get("op") != "relabel":
