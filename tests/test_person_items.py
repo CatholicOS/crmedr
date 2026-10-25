@@ -121,8 +121,9 @@ class EvaluateTest(unittest.TestCase):
 
 
 class FakeClient:
-    def __init__(self, by_name=None, by_qid=None, fail=()):
+    def __init__(self, by_name=None, by_qid=None, fail=(), places=None):
         self.by_name, self.by_qid, self.fail = by_name or {}, by_qid or {}, set(fail)
+        self.places, self.items_calls = places or {}, []
 
     def person_candidates(self, name, languages=("la", "it", "en")):
         if name in self.fail:
@@ -131,6 +132,12 @@ class FakeClient:
 
     def person(self, qid):
         return self.by_qid.get(qid)
+
+    def items(self, qids):
+        self.items_calls.append(list(qids))
+        if "items" in self.fail:
+            raise bp.WikidataError("boom")
+        return {q: self.places[q] for q in qids if q in self.places}
 
 
 INDEX = {"mr:0206-paulus-miki-et-socii|Paulus Miki": PERSON,
@@ -868,3 +875,136 @@ class ExportTest(unittest.TestCase):
         with self.assertRaises(SystemExit):
             bp.main(["export", "13", "/nowhere/out.json"])
         self.assertFalse((here.parent / "out.json").exists())
+
+
+def place(qid, label, admin=()):
+    return {"wikidata": qid, "label": label, "admin_qids": list(admin)}
+
+
+# Bologna; a hermitage in Bologna; a hamlet in the hermitage (two steps from Bologna); Rome.
+PLACES = {"Q490": place("Q490", "Bologna"), "Q900": place("Q900", "Eremo", ["Q490"]),
+          "Q901": place("Q901", "Borgo", ["Q900"]), "Q220": place("Q220", "Roma")}
+
+
+def admin(places=PLACES):
+    return {q: p["admin_qids"] for q, p in places.items()}
+
+
+def placed(qid, names, statuses=("Q43115",), **props):
+    return dict(cand(qid, names, statuses=statuses), **{k: props.get(k, []) for k in
+                                     ("birth_place", "death_place", "burial_place", "work_places")})
+
+
+class PlaceAgreementTest(unittest.TestCase):
+    BOLOGNA = {"role": "death", "la": "Bononiae", "qid": "Q490", "label": "Bologna"}
+
+    def test_same_item(self):
+        c = placed("Q1", ["Paul Miki"], death_place=["Q490"])
+        self.assertEqual(bp.place_agreement([self.BOLOGNA], c, admin()),
+                         [{"role": "death", "qid": "Q490", "label": "Bologna", "via": "P20"}])
+
+    def test_the_first_property_of_the_role_that_agrees(self):
+        c = placed("Q1", ["Paul Miki"], death_place=["Q220"], burial_place=["Q490"])
+        self.assertEqual(bp.place_agreement([self.BOLOGNA], c, admin())[0]["via"], "P119")
+        burial = dict(self.BOLOGNA, role="burial")
+        c = placed("Q1", ["Paul Miki"], death_place=["Q490"], burial_place=["Q490"])
+        self.assertEqual(bp.place_agreement([burial], c, admin())[0]["via"], "P119")
+
+    def test_one_step_either_way(self):
+        # The candidate died in a hermitage inside the eulogy's town.
+        c = placed("Q1", ["Paul Miki"], death_place=["Q900"])
+        self.assertEqual(len(bp.place_agreement([self.BOLOGNA], c, admin())), 1)
+        # The eulogy's place is a hermitage inside the candidate's town.
+        eremo = dict(self.BOLOGNA, qid="Q900", label="Eremo")
+        c = placed("Q1", ["Paul Miki"], death_place=["Q490"])
+        self.assertEqual(bp.place_agreement([eremo], c, admin()),
+                         [{"role": "death", "qid": "Q900", "label": "Eremo", "via": "P20"}])
+        # Two steps apart is not agreement.
+        c = placed("Q1", ["Paul Miki"], death_place=["Q901"])
+        self.assertEqual(bp.place_agreement([self.BOLOGNA], c, admin()), [])
+
+    def test_role_outside_table(self):
+        c = placed("Q1", ["Paul Miki"], death_place=["Q490"])
+        self.assertEqual(bp.place_agreement([dict(self.BOLOGNA, role="mention")], c, admin()), [])
+        # Birth reads P19 only.
+        self.assertEqual(bp.place_agreement([dict(self.BOLOGNA, role="birth")], c, admin()), [])
+
+    def _op(self, candidates, person=PERSON):
+        result = bp.evaluate(person, candidates)
+        return result, bp.make_op("mr:0206-paulus-miki-et-socii|Paulus Miki", person, result, None)
+
+    def test_annotate_shows_places_and_labels(self):
+        _, op = self._op([placed("Q1", ["Paul Miki"], death_place=["Q490"], work_places=["Q220", "Q999"])])
+        by_eulogy = {PERSON["eulogy"]: [self.BOLOGNA, {"role": "mention", "la": "Romae", "qid": "Q220",
+                                                        "label": None}]}
+        client = FakeClient(places=PLACES)
+        bp.annotate_places([op], by_eulogy, client)
+        self.assertEqual(op["places"], [{"role": "death", "label": "Bologna", "qid": "Q490"},
+                                        {"role": "mention", "label": "Roma", "qid": "Q220"}])
+        c = op["candidates"][0]
+        self.assertEqual(c["places"], [{"role": "death", "qid": "Q490", "label": "Bologna", "via": "P20"}])
+        self.assertEqual(c["evidence"][-1], "place")
+        # A label falls back to the QID when Wikidata has no item.
+        self.assertEqual(c["place_labels"], {"death_place": ["Bologna"], "work_places": ["Roma", "Q999"]})
+        self.assertEqual(len(client.items_calls), 1)
+        self.assertEqual(set(client.items_calls[0]), {"Q490", "Q220", "Q999"})
+
+    def test_no_agreement_no_place(self):
+        _, op = self._op([placed("Q1", ["Paul Miki"], death_place=["Q220"])])
+        bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES))
+        c = op["candidates"][0]
+        self.assertEqual(c["places"], [])
+        self.assertNotIn("place", c["evidence"])
+        # A eulogy with no places: empty lists.
+        _, op = self._op([placed("Q1", ["Paul Miki"], death_place=["Q220"])])
+        bp.annotate_places([op], {}, FakeClient(places=PLACES))
+        self.assertEqual((op["places"], op["candidates"][0]["places"]), ([], []))
+
+    def test_order_and_auto_unchanged(self):
+        a = placed("Q1", ["Paul Miki"], death_place=["Q220"])
+        b = placed("Q2", ["Paul Miki"], death_place=["Q490"], statuses=())
+        result, op = self._op([b, a])
+        self.assertEqual(result["auto"]["wikidata"], "Q1")
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q1", "Q2"])
+        bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES))
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q1", "Q2"])
+        self.assertEqual(op["candidates"][1]["evidence"][-1], "place")
+        self.assertEqual(result["auto"]["wikidata"], "Q1")
+        self.assertNotIn("place", result["auto"]["evidence"])
+        # A non-auto op stays non-auto: agreement on every rule's failure fixes nothing.
+        result, op = self._op([placed("Q3", ["Paul Miki"], death_place=["Q490"], statuses=())])
+        bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES))
+        self.assertIsNone(result["auto"])
+        self.assertEqual(op["failed"], result["failed"])
+        self.assertNotIn("status", op["candidates"][0]["evidence"])
+
+    def test_annotate_twice_and_after_recompute(self):
+        _, op = self._op([placed("Q1", ["Paul Miki"], death_place=["Q490"])])
+        by_eulogy, client = {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES)
+        bp.annotate_places([op], by_eulogy, client)
+        once = json.loads(json.dumps(op))
+        bp.annotate_places([op], by_eulogy, client)
+        self.assertEqual(op, once)
+        c = op["candidates"][0]
+        c["evidence"] = bp.evidence(op, c)
+        self.assertNotIn("place", c["evidence"])
+        bp.annotate_places([op], by_eulogy, client)
+        self.assertEqual(op, once)
+
+    def test_decided_and_prefilled_ops_untouched(self):
+        by_eulogy, client = {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES)
+        _, decided = self._op([placed("Q1", ["Paul Miki"], death_place=["Q490"])])
+        decided["decision"] = "accept"
+        _, prefilled = self._op([placed("Q1", ["Paul Miki"], death_place=["Q490"])])
+        prefilled["prefilled"] = "jev"
+        before = json.loads(json.dumps([decided, prefilled]))
+        bp.annotate_places([decided, prefilled], by_eulogy, client)
+        self.assertEqual([decided, prefilled], before)
+        self.assertEqual(client.items_calls, [])
+
+    def test_a_failed_lookup_leaves_the_ops_unannotated(self):
+        _, op = self._op([placed("Q1", ["Paul Miki"], death_place=["Q490"])])
+        before = json.loads(json.dumps(op))
+        with self.assertRaises(bp.WikidataError):
+            bp.annotate_places([op], {PERSON["eulogy"]: [self.BOLOGNA]}, FakeClient(places=PLACES, fail={"items"}))
+        self.assertEqual(op, before)
