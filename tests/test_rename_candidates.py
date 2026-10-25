@@ -590,6 +590,17 @@ class GenitiveMapTest(unittest.TestCase):
             record = rec("Petronius", [], [place(kind, "locative", "Bononia", "Bologna")])
             self.assertEqual(rc.link_places(record, opening)["places"][0].get("qid"), qid, kind)
 
+    def test_link_keeps_a_record_place_with_its_own_genitive(self):
+        opening = [{"role": "death", "la": "In Æmília", "qid": "Q1263"}]
+        record = rec("Petronius", [], [place("see", "locative", "Bononia", "Bologna", genitive="Bononiae")])
+        self.assertNotIn("qid", rc.link_places(record, opening)["places"][0])
+
+    def test_report_writes_into_a_missing_docs_dir(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as d:
+            path = rc.write_genitives_report(d, entries={}, places={})
+            self.assertTrue(path.exists())
+
     def test_report_conflicts_first(self):
         mined = {"Q220": {"romae": ["mr:0101-aa-romae", "mr:0102-b-romae"], "urbis": ["mr:0103-c-urbis"]},
                  "Q1891": {"bononiae": ["mr:0104-d-bononiae", "mr:0105-ee-bononiae"]},
