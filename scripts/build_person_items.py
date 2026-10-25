@@ -803,6 +803,7 @@ def main(argv):
     items = _read(data / "person_items.json", {"persons": {}})["persons"]
     review = _read(data / "person_items_review.json", new_changeset([]))
     not_processed = []
+    places = eulogy_places.load(repo_root)
     client = Wikidata(repo_root / ".cache" / "wikidata")
     if cmd == "propose":
         not_processed = propose(items, review, index, client)
@@ -811,13 +812,13 @@ def main(argv):
         if errors:
             sys.exit("\n".join(errors))
     elif cmd == "expand":
-        not_processed = expand(review, items, exported, client, eulogy_places.load(repo_root))
+        not_processed = expand(review, items, exported, client, places)
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
     if cmd in ("propose", "verify-suggestions", "expand"):
         # Last: the steps above recompute `evidence`, which drops "place".
         try:
-            annotate_places(review["operations"], eulogy_places.load(repo_root), client)
+            annotate_places(review["operations"], places, client)
         except WikidataError as e:
             not_processed.append(("places", str(e)))
     errors = validate(items, index, review["operations"]) + unaccounted(
@@ -834,6 +835,8 @@ def main(argv):
         render_report(items, index, review["operations"], not_processed), encoding="utf-8")
     for key, err in not_processed:
         print(f"not processed: {key}: {err}")
+    if any(key == "places" for key, _ in not_processed):
+        sys.exit("places were not annotated (Wikidata failed); the files are written without them: run again")
 
 
 if __name__ == "__main__":

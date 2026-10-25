@@ -924,6 +924,25 @@ class ExportTest(unittest.TestCase):
         self.assertFalse((here.parent / "out.json").exists())
 
 
+class MainPlacesFailureTest(unittest.TestCase):
+    def test_a_failed_place_annotation_exits_non_zero_after_writing_and_loads_places_once(self):
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as root:
+            (Path(root) / "data").mkdir()
+            (Path(root) / "docs").mkdir()
+            (Path(root) / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": {}}))
+            load = mock.Mock(return_value={})
+            with mock.patch.object(bp.eulogy_places, "load", load), \
+                    mock.patch.object(bp, "person_index", return_value={}), \
+                    mock.patch.object(bp, "annotate_places", side_effect=wd.WikidataError("down")), \
+                    contextlib.redirect_stdout(io.StringIO()):
+                with self.assertRaisesRegex(SystemExit, "places were not annotated"):
+                    bp.main(["verify-suggestions", root])
+            self.assertEqual(load.call_count, 1)
+            self.assertTrue((Path(root) / "docs" / "person-items-report.md").exists())
+            self.assertIn("places: down", (Path(root) / "docs" / "person-items-report.md").read_text())
+
+
 def place(qid, label, admin=()):
     return {"wikidata": qid, "label": label, "admin_qids": list(admin)}
 
