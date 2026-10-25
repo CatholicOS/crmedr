@@ -291,6 +291,9 @@ def validate(gazetteer, index, review_ops=()):
             errors.append(f"{where}: text_says {e.get('text_says', [])!r} is not the one derived from "
                           f"the Italian phrases and country {e.get('country')}: {expected!r}")
     for op in review_ops:
+        if op.get("id") not in index:
+            # An extractor fix can change a phrase while a card for the old one is still queued.
+            errors.append(f"review {op.get('id')!r}: not a place in data/places.json (re-key or drop the card)")
         # A redecide card re-opens a decided place (a finer item found later): the entry stays live until it is decided.
         if op.get("redecide") is True:
             if op.get("id") not in gazetteer:

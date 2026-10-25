@@ -592,6 +592,8 @@ class SplitTest(unittest.TestCase):
         self.assertEqual((added, refused, failed), (2, [], []))
         self.assertEqual(sorted(op["id"] for op in review["operations"]), ["X@mr:0101-a", "X@mr:0102-b"])
         self.assertTrue(all(op["la"] == "X" and op["decision"] is None for op in review["operations"]))
+        # The per-eulogy keys are places of the index: the queue they make is valid.
+        self.assertEqual(bg.validate({}, self.INDEX, review["operations"]), [])
 
     def test_decided_phrase_refused_unless_forced(self):
         gazetteer = {"X": {"wikidata": "Q1", "label": "X", "country": "IT", "status": "reviewed"}}
@@ -843,6 +845,12 @@ class ValidateTest(unittest.TestCase):
     def test_key_both_decided_and_queued(self):
         errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Fictópoli"}])
         self.assertTrue(any("also queued" in e for e in errors))
+
+    def test_queued_place_no_longer_printed(self):
+        # An extractor fix changed the phrase ("Romæ in cœmetério" → "... sancti Lauréntii via Tiburtína")
+        # while a card for the old one was still queued.
+        errors = bg.validate(self.good(), INDEX, [{"op": "resolve_place", "id": "Ignota"}])
+        self.assertTrue(any("'Ignota'" in e and "not a place" in e for e in errors), errors)
 
 
 class RenderJsonTest(unittest.TestCase):
