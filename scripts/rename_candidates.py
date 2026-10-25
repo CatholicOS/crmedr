@@ -9,8 +9,12 @@ the place alone, for clerics too (no "abbas" or "episcopus" before it); a role o
 when no place gives a slug. A twin's discriminator, a surname, a cognomen and -papa
 come first; a role alone, or a class word (martyr, virgo, confessor), is weak.
 R3: each candidate carries the la, en and it subjects it implies; a relabel op
-after each rename offers those label sets and the current ones, decided apart from
-the ID. Nothing is decided here: the candidates are a curator's choices.
+after each rename offers those label sets and the current ones. The subject follows
+the decided ID (curator, 2026-10-25): apply_renames.py writes an accepted relabel as
+the subject of the ID the rename decided. When the eulogy has one person and that
+person's item is decided, the relabel carries a Wikidata hint (the item's QID and its
+en and it labels), a reference for the wording, not a candidate. Nothing is decided
+here: the candidates are a curator's choices.
 """
 import datetime
 import json
@@ -23,7 +27,9 @@ from typing import NamedTuple
 import eulogy_places
 from body_places import _in_a_repository
 from extract_subjects import ROMAN, fold, it_label
+from persons_text import person_key
 from subject_records import CLERIC_ROLES, DECIDED, ROLE_FORMS
+from wikidata import Wikidata, WikidataError
 
 WEAK_ROLES = {"martyr", "virgo", "confessor"}
 BIBLICAL_TITLES = ("propheta", "patriarcha", "iudex", "levita")
@@ -32,6 +38,8 @@ PLACE_ORDER = ("see", "monastery", "death", "burial", "cult", "origin")
 MAX_CANDIDATES = 4
 SCHEMA = "crmedr-changeset/v1"
 EDITION = "martyrologium_romanum_2004"
+# The person item statuses that decide an item, for the relabel's Wikidata hint.
+HINT_STATUSES = ("auto", "reviewed", "jev")
 CATEGORIES = ("surname", "place-genitive", "place-adjective", "role", "role-place", "epithet", "twin",
               "papa", "biblical-title")
 
@@ -215,6 +223,9 @@ class Context(NamedTuple):
     genitives: dict = {}  # place QID -> its certain corpus genitive (certain_genitives)
     places: dict = {}     # mrid -> the eulogy's places (eulogy_places.load)
     mined: dict = {}      # place QID -> Counter(genitive) of the current IDs (mine_genitives)
+    persons: dict = {}    # mrid -> the eulogy's persons in the current edition (data/persons.json)
+    items: dict = {}      # mrid -> name key -> person item (data/person_items.json)
+    hint_labels: dict = None  # QID -> {en, it} Wikidata labels; None: no hints (fetch_hint_labels)
 
 
 def load_context(repo_root):
@@ -229,7 +240,8 @@ def load_context(repo_root):
             twins[e["id"]].add(other)
             twins[other].add(e["id"])
     by_item = defaultdict(set)
-    for mrid, names in read("data", "person_items.json")["persons"].items():
+    items = read("data", "person_items.json")["persons"]
+    for mrid, names in items.items():
         for item in names.values():
             if item.get("status") in DECIDED and item.get("wikidata"):
                 by_item[item["wikidata"]].add(mrid)
@@ -238,10 +250,38 @@ def load_context(repo_root):
             twins[mrid] |= group - {mrid}
     places = eulogy_places.load(repo_root)
     mined = mine_genitives(entries, places)
+    persons = (read("data", "persons.json")["editions"][EDITION]
+               if (repo_root / "data" / "persons.json").exists() else {})
     return Context(taken=dict(taken),
                    twins={m: sorted(t) for m, t in twins.items() if t},
                    ids=ids, labels={lang: read("i18n", f"{lang}.json") for lang in ("la", "en", "it")},
-                   genitives=certain_genitives(mined)[0], places=places, mined=mined)
+                   genitives=certain_genitives(mined)[0], places=places, mined=mined,
+                   persons=persons, items=items)
+
+
+def hint_qid(mrid, ctx):
+    """The decided item of the eulogy's one person (HINT_STATUSES, with a QID), else None: no
+    person, two or more, or an item not decided."""
+    persons = ctx.persons.get(mrid) or []
+    if len(persons) != 1:
+        return None
+    item = (ctx.items.get(mrid) or {}).get(person_key(persons[0])) or {}
+    return item.get("wikidata") if item.get("status") in HINT_STATUSES else None
+
+
+def hint_qids(ctx, mrids):
+    """The hint QIDs of these eulogies, each once, in order."""
+    return list(dict.fromkeys(q for q in (hint_qid(m, ctx) for m in mrids) if q))
+
+
+def fetch_hint_labels(ctx, mrids, client):
+    """{QID: {en, it}} of the hint items of these eulogies, in one client.labels call; None (every
+    hint left out) with one warning on stderr when Wikidata fails."""
+    try:
+        return client.labels(hint_qids(ctx, mrids), languages=("en", "it"))
+    except WikidataError as e:
+        print(f"warning: no Wikidata hints on the relabels ({e})", file=sys.stderr)
+        return None
 
 
 def _primary_place(record):
@@ -452,8 +492,13 @@ def relabel_op(mrid, cands, ctx):
             out.append({"labels": labels, "from_id": c["new_id"]})
     if not out:
         return None
-    return {"op": "relabel", "id": mrid, "uid": "labels:" + mrid, "current": current, "labels": out[0]["labels"],
-            "candidates": out + [{"labels": current, "from_id": None}], "decision": None, "edited": None}
+    op = {"op": "relabel", "id": mrid, "uid": "labels:" + mrid, "current": current, "labels": out[0]["labels"],
+          "candidates": out + [{"labels": current, "from_id": None}], "decision": None, "edited": None}
+    qid = hint_qid(mrid, ctx)
+    if qid and ctx.hint_labels and qid in ctx.hint_labels:
+        labels = ctx.hint_labels[qid]
+        op["hint"] = {"wikidata": qid, "labels": {lang: labels.get(lang) for lang in ("en", "it")}}
+    return op
 
 
 def build_changeset(records, ctx, subjects_la, old=None):
@@ -530,7 +575,10 @@ def main(argv):
         records = records["records"]
     ctx = load_context(repo_root)
     report = write_genitives_report(repo_root, places=ctx.places)
-    changeset = build_changeset([r for r in records if r["id"] in ctx.ids], ctx, ctx.labels["la"], load_old(olds))
+    records = [r for r in records if r["id"] in ctx.ids]
+    bare = sorted({r["id"] for r in records if is_bare(r["id"])})
+    ctx = ctx._replace(hint_labels=fetch_hint_labels(ctx, bare, Wikidata(repo_root / ".cache" / "wikidata")))
+    changeset = build_changeset(records, ctx, ctx.labels["la"], load_old(olds))
     out.write_text(json.dumps(changeset, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     kinds = Counter(op["op"] for op in changeset["operations"])
     print(f"{kinds['rename']} rename and {kinds['relabel']} relabel operations in {out}; genitives report in {report}")

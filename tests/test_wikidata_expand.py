@@ -60,6 +60,25 @@ class Fake:
         return {"entities": {q: self.entities[q] for q in ids if q in self.entities}}
 
 
+class LabelsTest(unittest.TestCase):
+    def test_en_and_it_labels_fifty_per_request_and_cached(self):
+        entities = {"Q389249": {"id": "Q389249", "labels": {"en": {"value": "Eugendus"},
+                                                            "it": {"value": "Eugendo"}, "la": {"value": "Eugendus"}}},
+                    "Q2": {"id": "Q2", "missing": ""}}
+        fake = Fake(entities=entities)
+        client = Wikidata(Path(tempfile.mkdtemp()), fetch=fake)
+        qids = ["Q389249", "Q2", "Q300"] + [f"Q{n}" for n in range(1000, 1060)]
+        out = client.labels(qids)
+        self.assertEqual(out["Q389249"], {"en": "Eugendus", "it": "Eugendo"})
+        self.assertEqual(out["Q300"], {"en": "Jean Martin", "it": None})
+        self.assertNotIn("Q2", out)  # a missing item has no labels
+        self.assertEqual(len(fake.urls), 2)
+        self.assertEqual(client.labels(["Q389249"], languages=("it",)), {"Q389249": {"it": "Eugendo"}})
+        n = len(fake.urls)
+        client.labels(qids)
+        self.assertEqual(len(fake.urls), n)  # cached
+
+
 class ExpandTest(unittest.TestCase):
     def wd(self, fetch):
         return Wikidata(Path(tempfile.mkdtemp()), fetch=fetch)

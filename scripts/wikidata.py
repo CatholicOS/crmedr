@@ -508,6 +508,13 @@ class Wikidata:
         qids = list(dict.fromkeys(q for lang in languages for q in self._search(text, language=lang)))
         return self._tagged({q: "title" for q in qids})
 
+    def labels(self, qids, languages=("en", "it")):
+        """{qid: {lang: label or None}} of these items in these languages, fetched 50 at a time
+        (cached); a missing item is left out."""
+        raws = self._entities(list(dict.fromkeys(qids)))
+        return {q: {lang: ((raws[q].get("labels") or {}).get(lang) or {}).get("value") for lang in languages}
+                for q in dict.fromkeys(qids) if q in raws}
+
     def person(self, qid):
         raw = self._entities([qid]).get(qid)
         return summarize_person(raw) if raw else None

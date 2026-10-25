@@ -301,6 +301,12 @@ class LoadContext(unittest.TestCase):
             for lang in ("la", "en", "it"):
                 (root / "i18n" / f"{lang}.json").write_text(json.dumps({"mr:0101-basilius": lang}))
             ctx = rc.load_context(root)
+            self.assertEqual((ctx.persons, ctx.hint_labels), ({}, None))  # no data/persons.json
+            (root / "data" / "persons.json").write_text(json.dumps(
+                {"editions": {"martyrologium_romanum_2004": {"mr:0101-basilius": [{"name": "Basilius"}]}}}))
+            with_persons = rc.load_context(root)
+        self.assertEqual(with_persons.persons, {"mr:0101-basilius": [{"name": "Basilius"}]})
+        self.assertEqual(with_persons.items["mr:0101-basilius"], {"Basilius": {"wikidata": "Q1", "status": "auto"}})
         self.assertEqual(ctx.taken["0101"], {"basilius", "basilius-old"})
         self.assertNotIn("mr:0101-basilius-old", ctx.ids)
         self.assertEqual(ctx.twins["mr:0101-basilius"], ["mr:0614-basilius-magnus"])
@@ -372,6 +378,56 @@ class Changeset(unittest.TestCase):
         op = rc.relabel_op("mr:0101-a", [same, x], ctx)
         self.assertEqual([c["from_id"] for c in op["candidates"]], ["mr:0101-a-x", None])
         self.assertEqual(op["labels"], {"la": "Sanctus A X", "en": "Saint A", "it": "Sant’A X"})
+
+    HINT_CTX = CTX._replace(
+        persons={"mr:0101-eugendus": [{"name": "Eugendus", "where": "text"}],
+                 "mr:0101-magnus": [{"name": "Magnus", "where": "text"}, {"name": "Felix", "where": "text"}]},
+        items={"mr:0101-eugendus": {"Eugendus": {"wikidata": "Q389249", "status": "auto"}},
+               "mr:0101-magnus": {"Magnus": {"wikidata": "Q5", "status": "auto"}}},
+        hint_labels={"Q389249": {"en": "Eugendus", "it": None}, "Q5": {"en": "Magnus", "it": "Magno"}})
+
+    def test_relabel_hint_for_a_single_decided_person(self):
+        ops = self.build([dict(EUGENDUS, id="mr:0101-eugendus"), dict(MARTYR, id="mr:0101-magnus")],
+                         ctx=self.HINT_CTX)["operations"]
+        relabels = {o["id"]: o for o in ops if o["op"] == "relabel"}
+        self.assertEqual(relabels["mr:0101-eugendus"]["hint"],
+                         {"wikidata": "Q389249", "labels": {"en": "Eugendus", "it": None}})
+        self.assertNotIn("hint", relabels["mr:0101-magnus"])  # two persons
+        self.assertEqual(rc.hint_qids(self.HINT_CTX, ["mr:0101-eugendus", "mr:0101-magnus"]), ["Q389249"])
+
+    def test_no_relabel_hint_for_an_undecided_person_or_without_labels(self):
+        for status in ("unresolved", "jev", "reviewed"):
+            items = {"mr:0101-eugendus": {"Eugendus": {"wikidata": "Q389249", "status": status}}}
+            ctx = self.HINT_CTX._replace(items=items)
+            relabel = self.build([dict(EUGENDUS, id="mr:0101-eugendus")], ctx=ctx)["operations"][1]
+            self.assertEqual("hint" in relabel, status != "unresolved", status)
+        no_qid = {"mr:0101-eugendus": {"Eugendus": {"status": "reviewed"}}}
+        for ctx in (self.HINT_CTX._replace(items=no_qid), self.HINT_CTX._replace(items={}),
+                    self.HINT_CTX._replace(hint_labels=None), self.HINT_CTX._replace(hint_labels={})):
+            relabel = self.build([dict(EUGENDUS, id="mr:0101-eugendus")], ctx=ctx)["operations"][1]
+            self.assertNotIn("hint", relabel)
+
+    def test_fetch_hint_labels_one_call_and_a_failure_leaves_every_hint_out(self):
+        import wikidata
+
+        class Client:
+            def __init__(self, error=None):
+                self.calls, self.error = [], error
+
+            def labels(self, qids, languages=("en", "it")):
+                self.calls.append(list(qids))
+                if self.error:
+                    raise self.error
+                return {q: {"en": q.lower(), "it": None} for q in qids}
+
+        client = Client()
+        ids = ["mr:0101-eugendus", "mr:0101-magnus"]
+        self.assertEqual(rc.fetch_hint_labels(self.HINT_CTX, ids, client), {"Q389249": {"en": "q389249", "it": None}})
+        self.assertEqual(client.calls, [["Q389249"]])
+        with contextlib.redirect_stderr(io.StringIO()) as err:
+            self.assertIsNone(rc.fetch_hint_labels(self.HINT_CTX, ids, Client(wikidata.WikidataError("HTTP 503"))))
+        self.assertEqual(len(err.getvalue().strip().splitlines()), 1)
+        self.assertIn("HTTP 503", err.getvalue())
 
     def test_non_bare_no_op(self):
         self.assertEqual(self.build([dict(BASILIUS, id="mr:0614-basilius-magnus")])["operations"], [])
