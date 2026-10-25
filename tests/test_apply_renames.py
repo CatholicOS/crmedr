@@ -350,9 +350,22 @@ class SubcommandsTest(unittest.TestCase):
         before = self.snapshot()
         self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
         self.assertEqual(self.snapshot(), before)
+
+    def test_reject_after_applied_rename_restores_current(self):
+        # "Keep current" keeps what the card showed: the current labels, under the new ID.
+        ids = self.root / "data" / "martyrology_ids.json"
+        doc = cs(self.cs["operations"][0], relabel("mr:0101-a", decision=None))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        ids.write_text(ids.read_text().replace("mr:0101-a\"", "mr:0101-a-x\""))
+        read = lambda lang: json.loads((self.root / "i18n" / f"{lang}.json").read_text())  # noqa: E731
+        en = read("en")["mr:0101-a-x"]
+        self.assertNotEqual(read("la")["mr:0101-a-x"], "Sanctus A")
         doc["operations"][1]["decision"] = "reject"
-        self.assertEqual(ar.apply_crmedr(doc, self.root, False, run=Fake()).relabeled, ())
-        self.assertEqual(self.snapshot(), before)
+        rep = ar.apply_crmedr(doc, self.root, False, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual([r.old for r in rep.relabeled], ["mr:0101-a-x"])
+        # current is {"la": "Sanctus A", "en": None, "it": None}: a None subject is left as it is.
+        self.assertEqual((read("la")["mr:0101-a-x"], read("en")["mr:0101-a-x"]), ("Sanctus A", en))
 
     def test_relabel_of_an_unknown_or_deprecated_id_is_an_error(self):
         before = self.snapshot()

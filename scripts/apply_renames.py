@@ -364,15 +364,18 @@ def check_relabels(only, ids, deprecated=frozenset()):
 def _plan(changeset, repo_root):
     """(to apply, already applied, relabels of IDs not renamed, check errors) for crmedr, judged
     against its registry. A decided relabel whose rename is already applied is written under the
-    new ID (a relabel may be decided after its rename was applied)."""
+    new ID (a relabel may be decided after its rename was applied); a reject writes the relabel's
+    current labels there, what the card showed as "keep current"."""
     errors = changeset_errors(changeset)
     if errors:
         return [], [], [], errors
     ids, deprecated = _registry(repo_root)
     todo, done = split_applied(renames(changeset), ids)
     decided = relabels(changeset)
-    only = relabel_only(changeset) + [Rename(r.new, r.new, r.labels) for r in done
-                                      if r.old in decided and any(r.labels.values())]
+    current = {op["id"]: {lang: (op.get("current") or {}).get(lang) or None for lang in LANGS}
+               for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
+    applied = [Rename(r.new, r.new, current.get(r.old, r.labels)) for r in done if r.old in decided]
+    only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
     errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated)
     if not errors:
         errors = _person_errors(changeset, todo, repo_root)
