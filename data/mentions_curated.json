@@ -16313,6 +16313,65 @@
           ]
         }
       ],
+      "mr:1026-witta": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "9bb371da",
+          "qid": "Q314666",
+          "roles": [
+            {
+              "role": "burial"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 64,
+          "check": "8e33edcd",
+          "name": "Witta",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 73,
+          "check": "3ce64935",
+          "name": "Witta",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 92,
+          "end": 100,
+          "check": "7d450cb7",
+          "qid": "Q314174",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 186,
+          "end": 191,
+          "check": "b8ef711f",
+          "qid": "Q1199",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        }
+      ],
       "mr:1104-vitalis-et-agricola": [
         {
           "kind": "place",
