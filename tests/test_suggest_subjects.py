@@ -191,6 +191,107 @@ class EvaluateTest(unittest.TestCase):
         self.assertIn("mr:0101-eugendus|Eugendus: decided Q2, suggested Q1 p=0.92", text)
 
 
+class PrefillTest(unittest.TestCase):
+    @staticmethod
+    def cand(new_id, category, weak=False, certain=True):
+        return {"new_id": new_id, "category": category, "weak": weak, "certain": certain, "labels": {}}
+
+    def rename(self, *cands, new_id=None, **extra):
+        return {"op": "rename", "id": "mr:0101-x", "new_id": new_id or cands[0]["new_id"],
+                "candidates": list(cands), "decision": None, **extra}
+
+    def test_rename_rule_accepts_the_op_s_own_new_id(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        self.assertEqual(ss.prefill_ops([op]), {"rename": 1})
+        self.assertEqual((op["decision"], op["prefilled"]), ("accept", "rule"))
+        self.assertNotIn("edited", op)
+
+    def test_rename_rule_edits_to_the_other_candidate(self):
+        op = self.rename(self.cand("mr:0101-x-a", "role-place"), self.cand("mr:0101-x-b", "papa"),
+                         new_id="mr:0101-x-a")
+        ss.prefill_ops([op])
+        self.assertEqual((op["decision"], op["edited"], op["prefilled"]),
+                         ("edit", {"new_id": "mr:0101-x-b"}, "rule"))
+
+    def test_first_category_in_order_wins_and_an_uncertain_genitive_is_taken(self):
+        op = self.rename(self.cand("mr:0101-x-g", "place-genitive", certain=False),
+                         self.cand("mr:0101-x-a", "place-adjective"), new_id="mr:0101-x-g")
+        ss.prefill_ops([op])
+        self.assertEqual(op["edited"], {"new_id": "mr:0101-x-a"})
+        lone = self.rename(self.cand("mr:0101-x-g", "place-genitive", certain=False))
+        ss.prefill_ops([lone])
+        self.assertEqual(lone["decision"], "accept")
+
+    def test_weak_or_uncertain_not_prefilled(self):
+        weak = self.rename(self.cand("mr:0101-x-r", "twin", weak=True))
+        two = self.rename(self.cand("mr:0101-x-a", "surname"), self.cand("mr:0101-x-b", "surname"))
+        other = self.rename(self.cand("mr:0101-x-r", "role-place"))
+        self.assertEqual(ss.prefill_ops([weak, two, other]), {})
+        for op in (weak, two, other):
+            self.assertIsNone(op["decision"])
+            self.assertNotIn("prefilled", op)
+
+    def person(self, jev):
+        op = copy.deepcopy(POP)
+        op["jev"] = jev
+        return op
+
+    def test_person_accept_edit_and_reject_at_the_threshold(self):
+        acc = self.person({"decision": "accept", "wikidata": "Q1", "probability": 0.9})
+        edt = self.person({"decision": "edit", "wikidata": "Q2", "probability": 0.95})
+        rej = self.person({"decision": "reject", "reason": "Jev: none", "probability": 0.92})
+        self.assertEqual(ss.prefill_ops([acc, edt, rej]), {"resolve_person": 3})
+        self.assertEqual((acc["decision"], acc.get("edited"), acc["prefilled"]), ("accept", None, "jev"))
+        self.assertEqual((edt["decision"], edt["edited"]), ("edit", {"wikidata": "Q2"}))
+        self.assertEqual((rej["decision"], rej["edited"]), ("reject", {"reason": "Jev: none"}))
+
+    def test_person_below_threshold_or_not_a_human_saint_candidate_is_left(self):
+        low = self.person({"decision": "accept", "wikidata": "Q1", "probability": 0.8})
+        notc = self.person({"decision": "edit", "wikidata": "Q99", "probability": 0.99})
+        bare = self.person({"decision": "edit", "wikidata": "Q3", "probability": 0.99})
+        bare["candidates"].append({"wikidata": "Q3", "human": True, "evidence": ["human"]})
+        self.assertEqual(ss.prefill_ops([low, notc, bare]), {})
+        self.assertTrue(all(op["decision"] is None for op in (low, notc, bare)))
+
+    def test_relabel_follows_jev(self):
+        labels = {"la": "A", "en": "B", "it": "C"}
+        acc, edt, rej, low = (copy.deepcopy(ROP) for _ in range(4))
+        acc["jev"] = {"decision": "accept", "probability": 0.95}
+        edt["jev"] = {"decision": "edit", "labels": labels, "probability": 0.95}
+        rej["jev"] = {"decision": "reject", "probability": 0.95}
+        low["jev"] = {"decision": "accept", "probability": 0.5}
+        self.assertEqual(ss.prefill_ops([acc, edt, rej, low]), {"relabel": 3})
+        self.assertEqual((acc["decision"], acc["prefilled"]), ("accept", "jev"))
+        self.assertEqual((edt["decision"], edt["edited"]), ("edit", {"labels": labels}))
+        self.assertEqual(rej["decision"], "reject")
+        self.assertIsNone(low["decision"])
+
+    def test_decided_untouched(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"), decision="reject")
+        op["decision"] = "reject"
+        p = self.person({"decision": "accept", "wikidata": "Q1", "probability": 1.0})
+        p["decision"] = "reject"
+        self.assertEqual(ss.prefill_ops([op, p]), {})
+        self.assertEqual((op["decision"], p["decision"]), ("reject", "reject"))
+        self.assertNotIn("prefilled", op)
+
+    def test_the_command_refuses_a_change_set_inside_a_work_tree(self):
+        here = Path(__file__).resolve()
+        with self.assertRaises(SystemExit):
+            ss.main(["prefill", str(here)])
+
+    def test_the_command_prints_the_counts_and_writes_the_file(self):
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "cs.json"
+            path.write_text(json.dumps({"operations": [op]}), encoding="utf-8")
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                ss.main(["prefill", str(path), "--threshold", "0.8"])
+            self.assertIn("{'rename': 1}", out.getvalue())
+            self.assertEqual(json.loads(path.read_text())["operations"][0]["decision"], "accept")
+
+
 class OutputTest(unittest.TestCase):
     def test_a_change_set_inside_a_work_tree_is_refused(self):
         here = Path(__file__).resolve()
