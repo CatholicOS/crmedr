@@ -27,8 +27,9 @@ The pipeline ignores the places today:
    given name, are added like the death-day route's.
 3. **One genitive per place item.** The rename's place genitive is chosen by the place's Wikidata item,
    from the genitives the corpus's IDs already use, so one place has one genitive everywhere.
-4. **The subject rename on its own** (`relabel`): the eulogy's Latin, English and Italian subjects are
-   decided apart from its ID, each of the three decisions (ID, subject, item) with Jev's suggestion.
+4. **The subject rename beside the ID rename** (`relabel`): the eulogy's Latin, English and Italian
+   subjects follow its decided ID, with their wording adjustable, and a decided single person's Wikidata
+   labels as a hint.
 5. **Regenerate**: January's undecided cards first (every decision kept), then February to December, one
    month at a time.
 
@@ -107,26 +108,41 @@ questions do not change: Jev still chooses the item among the candidates or "non
 - The English and Italian subjects keep the record's `en` and `it` place names. A label from the
   gazetteer is the fallback when the record has none.
 
-## Three decisions per eulogy, each with Jev's suggestion
+## The ID and its subject, decided together (revised 2026-10-25)
 
-A eulogy's card carries up to three kinds of operation, each decided on its own, and each shows Jev's
-suggestion the way the gazetteer review did ("Jev suggests", its percentage, "Take the suggestion"):
+A bare-name eulogy's card carries the ID rename and the subject rename, and one Wikidata decision per
+person. The ID and the subject are two steps, but they go hand in hand: **the eulogy's subject follows its
+ID** (curator, 2026-10-25). "Subject" here is the eulogy's own subject in the three `i18n` files ("Sanctus
+Almachius Romae" / "Saint Almachius of Rome" / "Sant'Almachio di Roma"), not the labels of the persons it
+commemorates (those come from their items).
 
-1. **The ID rename** (`rename`): the new ID among the candidates, as now.
-2. **The subject rename** (`relabel`, new): the eulogy's subject in Latin, English and Italian
-   (`i18n/la.json`, `en.json`, `it.json`). Its candidates are the label sets the rename candidates imply
-   (R3) and the current labels; the curator takes one, edits one, or keeps the current. It is decided
-   apart from the ID, so a kept ID can get better labels and a new ID can keep its labels. Today the labels
-   ride on the rename candidate; with `relabel` they no longer do. Jev ranks the label sets with the same
-   Score as the renames ("how clearly and conventionally it names this saint"). `apply_renames.py` writes
-   an accepted `relabel` to the three `i18n` files (for the new ID when the eulogy is also renamed).
+1. **The ID rename** (`rename`): the new ID among the candidates, with Jev's suggestion, as now.
+2. **The subject rename** (`relabel`): the eulogy's subject in Latin, English and Italian. It follows the
+   ID:
+   - Its proposal is the subject the **decided** ID implies: the labels of the rename candidate whose ID the
+     curator accepted or picked (R3). Picking another ID changes the proposal. While the rename is
+     undecided, the card shows the subject of the rename's proposed ID, marked as following an undecided ID.
+   - **Follow the ID** (`accept`) writes exactly those labels. It is possible only when the decided ID is
+     one of the candidates (a typed ID has no implied subject: edit instead).
+   - **Edit the wording** (`edit`, three fields, prefilled with the followed subject) adjusts the wording
+     for the same ID; **Keep the current subject** (`reject`) writes nothing.
+   - An undecided subject card with a decided rename writes the followed subject (today's behaviour), so
+     the ID and the subject can never be written apart.
+   - No independent Jev pick and no prefill for the subject card: Jev's rename pick already chooses the
+     pairing, and the card shows the subject of the ID Jev picked.
+   - **The Wikidata hint.** When the eulogy has exactly one commemorated person and that person's item is
+     decided, the card shows the item's English and Italian labels (and the QID, linked) as a reference
+     for the wording. It is a hint, not a candidate: the subject keeps the martyrology's own form
+     (honorific, name, discriminator).
+   - The subject card is built only beside a rename (bare-name IDs). `apply_renames.py` writes an accepted
+     or edited `relabel` under the new ID; accepting with no decided rename among the candidates is an
+     error, reported before anything is written.
 3. **The Wikidata item** (`resolve_person`, one per person): as now, with the place agreement.
 
-Jev's answers are shown on every card (`--min-confidence 0`), in February too (curator, 2026-10-25). The
-evaluation (Task 9) is therefore of agreement with suggestions the curator saw, and is read as such.
-*Builder's call:* prefilled decisions (`op.prefilled`), as January had them (rule-prefilled renames, Jev
-persons at p ≥ 0.9), are written by a script step from now on (`suggest_subjects.py prefill`), not by hand,
-and stay undoable on the card.
+Jev's answers are shown on the rename and person cards (`--min-confidence 0`), in February too (curator,
+2026-10-25). The evaluation (Task 9) is therefore of agreement with suggestions the curator saw, and is read
+as such. Prefilled decisions (`op.prefilled`), as January had them (rule-prefilled renames, Jev persons at
+p ≥ 0.9), are written by `suggest_subjects.py prefill` and stay undoable on the card.
 
 ## Regeneration
 
@@ -147,8 +163,9 @@ and stay undoable on the card.
 
 ## Frontend
 
-- The `relabel` card: the three subjects of each candidate, the current ones marked, Jev's pick, accept /
-  edit (three fields) / keep current. On a eulogy's grouped card it sits between the rename and the persons.
+- The `relabel` card: the current subject and the subject the decided (or proposed) ID implies; follow the ID /
+  edit the wording (three fields) / keep current; the Wikidata hint when there is one. It reads its
+  eulogy's rename decision on the same grouped card, where it sits between the rename and the persons.
 
 `PersonCard` shows each candidate's evidence as labelled chips, translated in the six languages,
 including `place` with its agreements ("died in Bologna", "buried in Rome"), and the source `place`.
@@ -163,11 +180,12 @@ including `place` with its agreements ("died in Bologna", "buried in Rome"), and
 - The genitive map: mined from IDs; two genitives for one item reported; `genitive_slug` certain from
   the map.
 - January rebuild: decided and prefilled ops unchanged; undecided ops rebuilt; same op IDs.
-- `relabel`: candidates from the renames and the current labels; Jev's Score; `apply_renames.py` writes
-  an accepted one to the three `i18n` files, under the new ID when the eulogy is renamed in the same file.
+- `relabel`: candidates from the renames and the current labels, and the hint for a single decided person;
+  `apply_renames.py` writes an accepted one as the decided ID's subject (an error when that ID is not a
+  candidate), an edited one as edited, under the new ID; no Jev request and no prefill for it.
 - `prefill`: the rule and Jev prefills as January's, marked `op.prefilled`; a decided op is never touched.
-- Frontend: chips and their translations; the `place` source badge; the `relabel` card's accept, edit and
-  keep.
+- Frontend: chips and their translations; the `place` source badge; the `relabel` card follows the rename
+  decision (picking another ID changes its proposal), edit, keep, and the hint.
 
 ## Left to the builder
 
@@ -180,8 +198,9 @@ including `place` with its agreements ("died in Bologna", "buried in Rome"), and
 
 1. Place agreement is shown on the cards and to Jev; it does not count toward auto.
 2. January keeps every decision (the 2026-10-19 export is complete); only undecided cards are rebuilt.
-3. Jev's suggestions are shown on every card, February included, as in the gazetteer review; the eulogy
-   ID rename, the subject rename and the Wikidata item are each adjudicated with a suggestion.
+3. Jev's suggestions are shown on the rename and person cards, February included, as in the gazetteer review.
 4. Genitives from the IDs: certain with two or more agreeing IDs and none disagreeing; one ID, uncertain;
    two genitives for one item, reported and uncertain until the curator picks.
 5. A month's `persons-review-MM` bundle leaves `/review` once its `crmedr-subjects-MM` file is uploaded.
+6. The ID and the subject go hand in hand: the subject card follows the decided ID (follow, edit the wording,
+   or keep the current), with no independent Jev pick; a single decided person's item labels are shown as a hint.
