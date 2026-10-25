@@ -27,6 +27,7 @@ invalid decision applies nothing. Rerun scripts/extract_places.py afterwards.
 import copy
 import datetime
 import json
+import os
 import re
 import sys
 import unicodedata
@@ -258,6 +259,19 @@ def _in_a_repository(path, repo_root):
     """Inside this repository, or inside any git work tree (another public repository)."""
     path = path.resolve()
     return path.is_relative_to(repo_root.resolve()) or any((d / ".git").exists() for d in path.parents)
+
+
+def write_json_atomic(path, doc):
+    """Write `doc` as JSON through a temp file in the same directory, then os.replace: a failed
+    write leaves the old file intact and no temp file behind."""
+    path = Path(path)
+    tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
+    try:
+        tmp.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        os.replace(tmp, path)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
 
 
 def main(argv):

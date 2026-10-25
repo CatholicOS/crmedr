@@ -289,6 +289,19 @@ class PrefillTest(unittest.TestCase):
             self.assertIn("{'rename': 1}", out.getvalue())
             self.assertEqual(json.loads(path.read_text())["operations"][0]["decision"], "accept")
 
+    def test_a_failed_write_leaves_the_old_file_and_no_temp(self):
+        from unittest import mock
+        op = self.rename(self.cand("mr:0101-x-a", "surname"))
+        with tempfile.TemporaryDirectory() as d:
+            path = Path(d) / "cs.json"
+            old = json.dumps({"operations": [op]})
+            path.write_text(old, encoding="utf-8")
+            with mock.patch("os.replace", side_effect=OSError("disk")):
+                with self.assertRaises(OSError):
+                    ss.main(["prefill", str(path), "--threshold", "0.8"])
+            self.assertEqual(path.read_text(), old)
+            self.assertEqual([p.name for p in Path(d).iterdir()], ["cs.json"])
+
 
 class OutputTest(unittest.TestCase):
     def test_a_change_set_inside_a_work_tree_is_refused(self):

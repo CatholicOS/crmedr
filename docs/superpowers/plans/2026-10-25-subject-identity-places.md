@@ -168,7 +168,7 @@
 
 **Interfaces:**
 - Produces: `prefill_ops(ops: list[dict], threshold: float = 0.9) -> dict[str, int]` (counts by kind); `PREFILL_ORDER = ("twin", "papa", "surname", "epithet", "place-adjective", "place-genitive")`. Rules, never on an op with `decision` set:
-  - `rename`: the candidate of the first category of `PREFILL_ORDER` present, only when exactly one candidate has it, it is not `weak`, and (for `place-genitive`) `certain` → `decision "accept"` if it is `new_id`, else `"edit"` with `edited.new_id`; `prefilled: "rule"`.
+  - `rename`: the candidate of the first category of `PREFILL_ORDER` present, only when exactly one candidate has it, it is not `weak` (a `place-genitive` need not be `certain`, as in the curator's January practice) → `decision "accept"` if it is `new_id`, else `"edit"` with `edited.new_id`; `prefilled: "rule"`.
   - `resolve_person`: `jev.probability >= threshold`, decision accept or edit, the item a candidate with `human` and `status` evidence → the Jev decision; `prefilled: "jev"`.
   - `relabel`: `jev.probability >= threshold` → its decision; `prefilled: "jev"`.
 - CLI: `suggest_subjects.py prefill <changeset.json> [--threshold X]`, path outside a git tree.

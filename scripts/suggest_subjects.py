@@ -44,7 +44,7 @@ from pathlib import Path
 
 import mentions_jev as mj
 import subject_jev as sj
-from body_places import _in_a_repository
+from body_places import _in_a_repository, write_json_atomic
 from extract_places import EDITION_EN, EDITION_IT
 from extract_typology import latin_texts, load_texts
 from rename_candidates import _record_of
@@ -365,7 +365,7 @@ def main(argv):
             sys.exit(f"{path}: a change-set quotes the 2004 edition; keep it outside the repository")
         doc = json.loads(path.read_text(encoding="utf-8"))
         counts = prefill_ops(doc["operations"], flags.get("threshold", DEFAULT_MIN_CONFIDENCE))
-        path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        write_json_atomic(path, doc)
         print(f"{path}: {counts}")
         return
     if argv[0] == "suggest":
@@ -389,7 +389,7 @@ def main(argv):
             counts = suggest_ops(doc["operations"], data, records, client,
                                  flags.get("min", DEFAULT_MIN_CONFIDENCE), flags.get("persons", False),
                                  flags.get("month"))
-            path.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+            write_json_atomic(path, doc)
             print(f"{path}: {counts}")
             return
         ops = [op for f in files[:-1] for op in json.loads(Path(f).read_text(encoding="utf-8"))["operations"]]

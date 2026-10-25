@@ -20,7 +20,7 @@ import json
 import sys
 from pathlib import Path
 
-from body_places import _in_a_repository
+from body_places import _in_a_repository, write_json_atomic
 
 
 def _key(op):
@@ -71,7 +71,7 @@ def main(argv):
         merged, notes = merge(old, rebuilt)
     except ValueError as e:
         sys.exit(str(e))
-    out.write_text(json.dumps(merged, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+    write_json_atomic(out, merged)
     old_keys = {_key(op) for op in old["operations"]}
     fresh = {_key(op) for op in rebuilt["operations"]}
     kept = sum(_decided(op) for op in old["operations"])

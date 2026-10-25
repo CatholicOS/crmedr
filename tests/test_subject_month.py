@@ -117,6 +117,19 @@ class CliTest(unittest.TestCase):
                 sm.main(["merge", str(d / "o.json"), str(d / "r.json"), str(repo / "x.json")])
             self.assertFalse((repo / "x.json").exists())
 
+    def test_a_failed_write_leaves_the_old_file_and_no_temp(self):
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as d:
+            d = Path(d)
+            (d / "o.json").write_text(json.dumps(doc(rename("m1", decision="accept"))))
+            (d / "r.json").write_text(json.dumps(doc(rename("m1"), rename("m2"))))
+            (d / "out.json").write_text("OLD")
+            with mock.patch("os.replace", side_effect=OSError("disk")):
+                with self.assertRaises(OSError):
+                    sm.main(["merge", str(d / "o.json"), str(d / "r.json"), str(d / "out.json")])
+            self.assertEqual((d / "out.json").read_text(), "OLD")
+            self.assertEqual(sorted(p.name for p in d.iterdir()), ["o.json", "out.json", "r.json"])
+
 
 if __name__ == "__main__":
     unittest.main()
