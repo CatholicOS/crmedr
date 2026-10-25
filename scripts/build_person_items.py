@@ -416,6 +416,10 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
     return not_processed
 
 
+# The roles of a eulogy's places whose saints are looked up.
+PLACE_ROUTE_ROLES = ("death", "burial", "translation")
+
+
 def _given_names(op):
     """The first word of each of the person's names, its stem without the Latin ending (Eugend,
     for Eugende and Eugendo; with ae and oe read as e too), and the vernacular equivalents of a
@@ -468,7 +472,7 @@ def _companion_items(op, items, ops=None):
     return found
 
 
-def _expansion(op, record, items, client, ops=None):
+def _expansion(op, record, items, client, ops=None, places=()):
     """New candidates for one op from the extra routes, in the order they are tried."""
     if record["kind"] == "celebration":
         found = client.title_candidates(op["subject"])
@@ -488,10 +492,15 @@ def _expansion(op, record, items, client, ops=None):
         named = _named(op)
         found += [c for c in client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
+    qids = list(dict.fromkeys(p["qid"] for p in places if p["role"] in PLACE_ROUTE_ROLES and p.get("qid")))
+    if qids:
+        named = _named(op)
+        found += [c for c in client.saints_by_place(qids, _given_names(op), named)
+                  if named(c.get("names", []) + [c.get("label", "")])]
     return found
 
 
-def expand(review, items, records, client):
+def expand(review, items, records, client, places=None):
     """Add candidates from the companions' kin, the saints of the death day and the titles to each
     op with a record (subject_records.person_record: its own, else the kind of its eulogy's only
     record); `records`: the identity records by eulogy id. Decisions are not touched. Returns
@@ -509,7 +518,7 @@ def expand(review, items, records, client):
             not_processed.append((op["id"], "skipped: Wikidata unavailable"))
             continue
         try:
-            found = _expansion(op, record, items, client, by_id)
+            found = _expansion(op, record, items, client, by_id, (places or {}).get(op["eulogy"], ()))
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
             failures += 1
@@ -790,7 +799,7 @@ def main(argv):
         if errors:
             sys.exit("\n".join(errors))
     elif cmd == "expand":
-        not_processed = expand(review, items, exported, client)
+        not_processed = expand(review, items, exported, client, eulogy_places.load(repo_root))
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
     if cmd in ("propose", "verify-suggestions", "expand"):

@@ -55,6 +55,8 @@ NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
+# A place with more saints than this is too common to tell them apart by place: no candidates.
+MAX_PLACE_SAINTS = 200
 GREGORIAN, JULIAN = "Q1985727", "Q1985786"  # the calendar models of a Wikidata date
 # The query service stores a Julian-model date converted to the proleptic Gregorian calendar:
 # from two days earlier (the 1st century) to thirteen days later (since 1900) than its Julian day.
@@ -472,6 +474,34 @@ class Wikidata:
         best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
                                             int(q[1:])))
         return self._tagged({q: "sparql" for q in best[:MAX_SPARQL]})
+
+    def saints_by_place(self, qids, given, matches=None):
+        """Saints and blessed who died or are buried (P20, P119) in one of these places, whose
+        label or alias has a word starting with one of the `given` names, folded. Bounded by
+        status and place; the names are checked here. When the query finds more than
+        MAX_PLACE_SAINTS distinct persons the place is too common to help: []. At most
+        MAX_SPARQL, the best first, as saints_by_death_day orders them."""
+        if not qids:
+            return []
+        statuses = " ".join("wd:" + s for s in sorted(SAINT_STATUSES))
+        places = " ".join("wd:" + q for q in qids)
+        langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
+        rows = self._sparql(
+            f"SELECT DISTINCT ?p ?l ?s WHERE {{ VALUES ?s {{ {statuses} }} VALUES ?place {{ {places} }} "
+            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; (wdt:P20|wdt:P119) ?place . "
+            f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
+        if len({b["p"]["value"] for b in rows}) > MAX_PLACE_SAINTS:
+            return []
+        starts = tuple(f for f in (fold(g) for g in given) if f)
+        names, found = {}, {}
+        for b in rows:
+            qid = b["p"]["value"].rsplit("/", 1)[1]
+            names.setdefault(qid, set()).add(b["l"]["value"])
+            if any(w.startswith(starts) for w in fold(b["l"]["value"]).split()):
+                found.setdefault(qid, set()).add(b["s"]["value"].rsplit("/", 1)[1])
+        best = sorted(found, key=lambda q: (not (matches and matches(sorted(names[q]))), -len(found[q]),
+                                            int(q[1:])))
+        return self._tagged({q: "place" for q in best[:MAX_SPARQL]})
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""

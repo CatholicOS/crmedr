@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
-from wikidata import SAINT_STATUSES, Wikidata, WikidataError  # noqa: E402
+from wikidata import MAX_PLACE_SAINTS, SAINT_STATUSES, Wikidata, WikidataError  # noqa: E402
 
 
 def claim(qid):
@@ -38,6 +38,11 @@ def died(qid, label, value="0510-01-01T00:00:00Z", calendar="Q1985727", precisio
     """A row of the death-day query."""
     return {"p": uri(qid), "l": {"value": label}, "s": uri(status), "d": {"value": value},
             "prec": {"value": str(precision)}, "cal": uri(calendar)}
+
+
+def placed(qid, label, status="Q43115"):
+    """A row of the place query."""
+    return {"p": uri(qid), "l": {"value": label}, "s": uri(status)}
 
 
 class Fake:
@@ -117,6 +122,24 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(len(got), 25)
         self.assertEqual(got[:3], ["Q1038", "Q1039", "Q1037"])  # the name, then the statuses
         self.assertEqual(got[3:], qids[:22])
+
+    def test_saints_by_place(self):
+        rows = [placed("Q300", "Jean Martin"), placed("Q300", "Ioannes"), placed("Q77", "Émile")]
+        fake = Fake(bindings(rows))
+        out = self.wd(fake).saints_by_place(["Q90", "Q91"], ["Jean", "Ioannes"])
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q300", "place")])
+        query = self.query(fake)
+        self.assertIn("VALUES ?place { wd:Q90 wd:Q91 }", query)
+        self.assertIn("(wdt:P20|wdt:P119) ?place", query)
+        self.assertIn("wd:Q2369287", query)
+
+    def test_too_many_saints_adds_nothing(self):
+        rows = [placed(f"Q{i}", "Ioannes") for i in range(1000, 1000 + MAX_PLACE_SAINTS + 1)]
+        self.assertEqual(self.wd(Fake(bindings(rows))).saints_by_place(["Q90"], ["Ioannes"]), [])
+        rows = rows[:-1]
+        entities = {r["p"]["value"].rsplit("/", 1)[1]: item(r["p"]["value"].rsplit("/", 1)[1], "J") for r in rows}
+        out = self.wd(Fake(bindings(rows), entities=entities)).saints_by_place(["Q90"], ["Ioannes"])
+        self.assertEqual(len(out), 25)
 
     def test_titles(self):
         out = self.wd(Fake(search=["Q208542"])).title_candidates("Theotokos")
