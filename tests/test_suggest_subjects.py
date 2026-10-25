@@ -61,13 +61,21 @@ class SuggestTest(unittest.TestCase):
         self.assertNotIn("obiit senex", json.dumps(client.bodies, ensure_ascii=False))
         self.assertEqual(client.bodies[1]["state"]["companions"], [{"name": "Lupicinus", "wikidata": "Q9"}])
 
-    def test_below_the_threshold_is_removed_and_decisions_are_kept(self):
-        ops = [dict(copy.deepcopy(OP), decision="edit", edited={"new_id": "mr:0101-x"},
-                    jev={"decision": "accept", "probability": 0.99})]
+    def test_below_the_threshold_is_removed(self):
+        ops = [dict(copy.deepcopy(OP), jev={"decision": "accept", "probability": 0.99})]
         counts = ss.suggest_ops(ops, DATA, RECORDS, StubClient(p=0.5), 0.9)
         self.assertNotIn("jev", ops[0])
-        self.assertEqual((ops[0]["decision"], ops[0]["edited"]), ("edit", {"new_id": "mr:0101-x"}))
         self.assertEqual(counts["below"], 1)
+
+    def test_decided_and_prefilled_cards_are_never_rewritten(self):
+        jev = {"decision": "accept", "probability": 0.99}
+        decided = dict(copy.deepcopy(OP), decision="edit", edited={"new_id": "mr:0101-x"}, jev=dict(jev))
+        prefilled = dict(copy.deepcopy(ROP), decision=None, prefilled="jev", jev=dict(jev))
+        before = copy.deepcopy([decided, prefilled])
+        client = StubClient(p=0.5)
+        counts = ss.suggest_ops([decided, prefilled], DATA, RECORDS, client, 0.9)
+        self.assertEqual([decided, prefilled], before)
+        self.assertEqual((counts["skipped"], client.bodies), (2, []))
 
     def test_a_record_flag_is_written_without_a_suggestion(self):
         ops = [copy.deepcopy(OP)]
@@ -77,6 +85,20 @@ class SuggestTest(unittest.TestCase):
         self.assertEqual(ops[0]["jev"]["model"], "jev-1.15.0")  # the model that answered
         self.assertEqual(ops[0]["jev"]["scores"], {c["new_id"]: 3 for c in OP["candidates"]})
         self.assertEqual(counts["flagged"], 1)
+
+    def test_a_relabel_record_flag_is_flagged_not_an_error(self):
+        class Doubting(StubClient):
+            def ask(self, body):
+                out = super().ask(body)
+                out["answers"]["field_places_0"] = {"type": "noul", "noul": 0.2}
+                return out
+        ops = [copy.deepcopy(ROP)]
+        with contextlib.redirect_stderr(io.StringIO()) as err:
+            counts = ss.suggest_ops(ops, DATA, RECORDS, Doubting(), 0.9)
+        self.assertEqual((counts["flagged"], counts["errors"], err.getvalue()), (1, 0, ""))
+        self.assertEqual(ops[0]["jev"]["flags"], ["record:places[0]"])
+        self.assertEqual(ops[0]["jev"]["scores"], [3, 3, 3])
+        self.assertNotIn("decision", ops[0]["jev"])
 
     def test_a_suggestion_carries_the_clarity_scores(self):
         ops = [copy.deepcopy(OP)]
@@ -271,6 +293,21 @@ class PrefillTest(unittest.TestCase):
         self.assertEqual(ss.prefill_ops([none, blank]), {"resolve_person": 2})
         for op in (none, blank):
             self.assertEqual(op["edited"], {"reason": "Jev: none of the candidates is this person"})
+
+    def test_relabel_of_a_curator_decided_rename_not_prefilled(self):
+        jev = {"decision": "accept", "probability": 0.95}
+        decided = dict(copy.deepcopy(OP), decision="reject")
+        rop = dict(copy.deepcopy(ROP), jev=dict(jev))
+        self.assertEqual(ss.prefill_ops([decided, rop]), {})
+        self.assertIsNone(rop["decision"])
+        self.assertNotIn("prefilled", rop)
+        # A rename the rule prefills (or another eulogy's decided one) does not hold the relabel back.
+        ruled = self.rename(self.cand("mr:0101-eugendus-a", "surname"))
+        ruled["id"] = "mr:0101-eugendus"
+        rop = dict(copy.deepcopy(ROP), jev=dict(jev))
+        other = dict(copy.deepcopy(OP), id="mr:0101-other", decision="reject")
+        self.assertEqual(ss.prefill_ops([ruled, other, rop]), {"rename": 1, "relabel": 1})
+        self.assertEqual((rop["decision"], rop["prefilled"]), ("accept", "jev"))
 
     def test_relabel_edit_without_labels_skipped(self):
         a, b = copy.deepcopy(ROP), copy.deepcopy(ROP)

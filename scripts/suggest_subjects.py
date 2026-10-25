@@ -20,7 +20,8 @@ refuses one inside any git work tree. See docs/superpowers/specs/2026-10-18-subj
 `prefill` writes `decision` (and `edited`) on the cards the rules and Jev settle, marked `prefilled`
 "rule" or "jev": a rename whose first PREFILL_ORDER category has exactly one candidate, not weak; a
 person card or relabel Jev answers at the threshold (a person's accept or edit only for a candidate
-with human and status evidence; a reject always). A card with a decision is never touched.
+with human and status evidence; a reject always), except a relabel whose rename the curator decided.
+A card with a decision is never touched, and `suggest` skips one decided or prefilled.
 
 Usage:
   python3 suggest_subjects.py suggest <changeset.json> <records.json> /path/to/martyrology-texts
@@ -141,7 +142,7 @@ def in_scope(op, persons, month=None):
 
 def ask_op(op, data, records, client):
     """(suggestion before any threshold, flagged, error); all None when the card cannot be asked.
-    flagged: the `jev` of a rename whose record Jev doubts, {flags, model, scores}, else None.
+    flagged: the `jev` of a rename or relabel whose record Jev doubts, {flags, model, scores}, else None.
     A refused key is raised: the run stops."""
     body, record = request_for(op, data, records)
     if body is None:
@@ -160,6 +161,9 @@ def ask_op(op, data, records, client):
             flagged = {"flags": flags, "model": model, "scores": sj.clarity_scores(op, answers)}
         s = sj.rename_suggestion(op, answers, record, model)
     elif family(op) == "relabel":
+        flags = sj.record_flags(answers)
+        if flags:
+            flagged = {"flags": flags, "model": model, "scores": sj.relabel_scores(op, answers)}
         s = sj.relabel_suggestion(op, answers, model)
     else:
         s = sj.person_suggestion(op, answers, model)
@@ -178,7 +182,9 @@ def require_key(ops, data, records, client):
 
 
 def suggest_ops(ops, data, records, client, min_confidence, persons=False, month=None):
-    scope = [op for op in ops if in_scope(op, persons, month)]
+    """Ask the cards in scope; a decided or prefilled card is skipped, its `jev` never rewritten."""
+    scope = [op for op in ops if in_scope(op, persons, month)
+             and op.get("decision") is None and not op.get("prefilled")]
     require_key(scope, data, records, client)
     counts = {"suggested": 0, "below": 0, "flagged": 0, "skipped": len(ops) - len(scope), "errors": 0}
     for op in scope:
@@ -233,11 +239,17 @@ def _jev_prefill(op, jev):
 
 def prefill_ops(ops, threshold=DEFAULT_MIN_CONFIDENCE):
     """Write `decision` (and `edited`) on the cards the rules and Jev settle, with `prefilled` "rule" or
-    "jev"; a card with a decision is never touched. Returns the counts by kind of op."""
+    "jev"; a card with a decision is never touched, nor a relabel whose eulogy's rename the curator
+    decided (decision set, not prefilled): the relabel follows that rename (subject_month.merge).
+    Returns the counts by kind of op."""
     counts = defaultdict(int)
+    curated = {op["id"] for op in ops if op.get("op") == "rename" and op.get("decision") is not None
+               and not op.get("prefilled")}
     for op in ops:
         kind = op.get("op")
         if op.get("decision") or kind not in ("rename", "resolve_person", "relabel"):
+            continue
+        if kind == "relabel" and op["id"] in curated:
             continue
         if kind == "rename":
             new = _rule_prefill(op)
