@@ -637,6 +637,25 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(next(c for c in op["candidates"] if c["wikidata"] == "Q9")["source"], "search")
         self.assertIn("status", next(c for c in op["candidates"] if c["wikidata"] == "Q52161488")["evidence"])
 
+    def test_group_members_must_fit_the_name_kin_need_not(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Jean Légo"]), source="companion:P361"),
+                                   dict(cand("Q118445257", ["Marie-Anne Vaillot"]), source="companion:P361"),
+                                   dict(cand("Q7", ["Pierre Lego"]), source="companion:P3373")]}
+        _, op = self.run_expand(self.op(candidates=[]), client)
+        self.assertEqual({c["wikidata"] for c in op["candidates"]}, {"Q52161488", "Q7"})
+
+    def test_expand_drops_earlier_group_members_that_do_not_fit(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        member = lambda q, n: dict(cand(q, [n]), source="companion:P361", evidence=["human"])
+        op = self.op(candidates=[member("Q1", "Odile Baumgarten"), dict(cand("Q9", ["John"]), evidence=["human"]),
+                                 member("Q2", "Marie-Anne Vaillot"), member("Q3", "Jean Légo"),
+                                 member("Q4", "Natalis Pinot")],
+                     decision="edit", edited={"wikidata": "Q4"})
+        _, got = self.run_expand(op, client)
+        # the first stays (an accept means candidates[0]), and so does the decided pick
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
+
     def test_unresolved_companion_adds_nothing(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
         client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}

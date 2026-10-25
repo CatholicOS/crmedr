@@ -486,7 +486,9 @@ def _expansion(op, record, items, client, ops=None, places=()):
     for qid in _companion_items(op, items, ops):
         companion = client.person(qid)
         if companion and companion.get("human"):
-            found += client.relatives(qid)
+            # kin may bear another name; a group's other members (P361) must fit the person's
+            found += [c for c in client.relatives(qid)
+                      if c.get("source") != "companion:P361" or _named(op)(c.get("names", []) + [c.get("label", "")])]
     if op["typology"] == "dies_natalis":
         month, day = (int(x) for x in op["day"].split("-"))
         named = _named(op)
@@ -510,6 +512,16 @@ def _expansion(op, record, items, client, ops=None, places=()):
     return found
 
 
+def _drop_unfit_group_members(op):
+    """Drop the companions' group members (companion:P361) whose names do not fit the person, as
+    an earlier expand added them; the first candidate (an accept without a suggestion means it)
+    and the decided pick stay."""
+    named, pick = _named(op), (op.get("edited") or {}).get("wikidata")
+    op["candidates"] = [c for i, c in enumerate(op["candidates"])
+                        if i == 0 or c["wikidata"] == pick or c.get("source") != "companion:P361"
+                        or named(c.get("names", []) + [c.get("label", "")])]
+
+
 def expand(review, items, records, client, places=None):
     """Add candidates from the companions' kin, the saints of the death day and the titles to each
     op with a record (subject_records.person_record: its own, else the kind of its eulogy's only
@@ -524,6 +536,7 @@ def expand(review, items, records, client, places=None):
             continue
         for c in op["candidates"]:
             c.setdefault("source", "search")
+        _drop_unfit_group_members(op)
         if failures >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((op["id"], "skipped: Wikidata unavailable"))
             continue
