@@ -153,6 +153,19 @@ class SecularNameTest(unittest.TestCase):
         self.assertEqual(variants[0], ["Paulus a Iesu et María Ficto"])
 
 
+class KinAndOrderTest(unittest.TestCase):
+    """A mother "atque filiarum eius" and her daughters, each "virginum ex Ordine X" between them."""
+    LEX = {pt.name_key(w): w for w in ["Ficta", "Nemo", "Agatha", "Petra", "Paula", "Clara", "Lucia"]}
+
+    def test_daughters_after_filiarum_eius_and_ex_ordine(self):
+        text = ("Fictópoli, beatárum Fictæ Nemo atque filiárum eius Agathæ a Iesu (Petræ), Paulæ Nemo, "
+                "vírginum ex Ordine Fictárum Capuccinárum, et Claræ a Cruce (Lucíæ) Nemo, vírginis ex Ordine "
+                "Nemínum, mártyrum, quæ coronátæ sunt.")
+        names, uncertain = pt.text_companions(text, self.LEX)
+        self.assertEqual(names, ["Ficta Nemo", "Petra", "Paula Nemo", "Lucia Nemo"])
+        self.assertEqual(uncertain, [])
+
+
 class EulogyPersonsTest(unittest.TestCase):
     def test_subjects_then_text_then_footnote_without_repeats(self):
         lex = ep.build_lexicon({"mr:0206-paulus-miki-et-socii": "Sancti Paulus Miki et socii"}, FOOT)

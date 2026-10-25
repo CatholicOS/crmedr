@@ -57265,6 +57265,24 @@
           "check": "33191d6f",
           "name": "Alphonsus Navarrete",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 80,
+          "end": 115,
+          "check": "9e788568",
+          "name": "Ferdinandus a Sancto Ioseph de Ayala",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 174,
+          "end": 187,
+          "check": "a3d1412b",
+          "name": "Leo Tanaka",
+          "qid": null
         }
       ],
       "mr:0601-ammon-et-socii": [
@@ -85246,6 +85264,24 @@
           "check": "b9c4571a",
           "name": "Ludovicus Bertran",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 89,
+          "end": 110,
+          "check": "3c84df29",
+          "name": "Mancius a Sancta Cruce",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 134,
+          "check": "bca3e32f",
+          "name": "Petrus a Sancta Maria",
+          "qid": null
         }
       ],
       "mr:0729-lupus": [
@@ -85591,6 +85627,15 @@
           "check": "c1fbdbf7",
           "name": "Iosephus Maria Muro Sanmiguel",
           "qid": "Q23942989"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 177,
+          "end": 197,
+          "check": "f20c28e3",
+          "name": "Zosimus Izquierdo Gil",
+          "qid": null
         }
       ],
       "mr:0730-iosephus-yuan-gengyin": [
@@ -95596,6 +95641,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 107,
+          "check": "20ae9860",
+          "name": "Petrus de Zúñiga",
+          "qid": null
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -101699,6 +101753,24 @@
           "check": "1f5972e9",
           "name": "Petrus Rivera",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 112,
+          "end": 148,
+          "check": "c0005a30",
+          "name": "Maria a Monte Carmelo Moreno Benítez",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 152,
+          "end": 183,
+          "check": "a438db2f",
+          "name": "Maria a Refugio Carbonell Muñoz",
+          "qid": null
         }
       ],
       "mr:0901-priscus": [
@@ -106668,6 +106740,15 @@
           "end": 51,
           "check": "9d086d9b",
           "name": "Thomas Tsuji",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 110,
+          "end": 117,
+          "check": "5aa55de9",
+          "name": "Ioannes",
           "qid": null
         }
       ],
@@ -118420,6 +118501,24 @@
           "check": "e4b15029",
           "name": "Vincentius Shiwozuka",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 139,
+          "end": 154,
+          "check": "8511de1d",
+          "name": "Lazarus de Kyoto",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 158,
+          "end": 182,
+          "check": "129ae9e3",
+          "name": "Laurentius de Manila Ruiz",
+          "qid": null
         }
       ],
       "mr:0929-michael-gabriel-et-raphael-archangeli": [
@@ -129540,6 +129639,42 @@
           "end": 79,
           "check": "89c04d70",
           "name": "Maria Teresia Ferragud Roig",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 124,
+          "check": "d591ffc8",
+          "name": "Vincentia Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 126,
+          "end": 151,
+          "check": "4fa4b8d5",
+          "name": "Ioachima Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 153,
+          "end": 185,
+          "check": "acf37d69",
+          "name": "Maria Felicitas Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 235,
+          "end": 284,
+          "check": "c72f453b",
+          "name": "Raymunda Masiá Ferragud",
           "qid": null
         }
       ],
@@ -146871,6 +147006,15 @@
           "check": "42861ce6",
           "name": "Franciscus Galvez",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 98,
+          "end": 118,
+          "check": "75a7bf36",
+          "name": "Hieronymus de Angelis",
+          "qid": null
         }
       ],
       "mr:1204-heracla": [
@@ -148397,7 +148541,7 @@
           "end": 35,
           "check": "918ad9f1",
           "name": "Leocadia",
-          "qid": null
+          "qid": "Q442235"
         }
       ],
       "mr:1209-liborius-wagner": [
@@ -212741,6 +212885,24 @@
           "check": "fc939ad9",
           "name": "Alphonsus Navarrete",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 83,
+          "end": 118,
+          "check": "0e3a8f08",
+          "name": "Ferdinandus a Sancto Ioseph de Ayala",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 177,
+          "end": 189,
+          "check": "00594258",
+          "name": "Leo Tanaka",
+          "qid": null
         }
       ],
       "mr:0601-ammon-et-socii": [
@@ -240991,6 +241153,24 @@
           "check": "85c8729b",
           "name": "Ludovicus Bertran",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 98,
+          "check": "e098627d",
+          "name": "Mancius a Sancta Cruce",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 140,
+          "check": "a78d3744",
+          "name": "Petrus a Sancta Maria",
+          "qid": null
         }
       ],
       "mr:0729-lupus": [
@@ -241336,6 +241516,15 @@
           "check": "84590ec2",
           "name": "Iosephus Maria Muro Sanmiguel",
           "qid": "Q23942989"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 190,
+          "end": 210,
+          "check": "9c95bb0d",
+          "name": "Zosimus Izquierdo Gil",
+          "qid": null
         }
       ],
       "mr:0730-iosephus-yuan-gengyin": [
@@ -251371,6 +251560,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 94,
+          "end": 110,
+          "check": "ef0f538a",
+          "name": "Petrus de Zúñiga",
+          "qid": null
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -257567,6 +257765,24 @@
           "check": "a5101c10",
           "name": "Petrus Rivera",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 112,
+          "end": 140,
+          "check": "64e07cb8",
+          "name": "Maria a Monte Carmelo Moreno Benítez",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 143,
+          "end": 176,
+          "check": "c137bce6",
+          "name": "Maria a Refugio Carbonell Muñoz",
+          "qid": null
         }
       ],
       "mr:0901-priscus": [
@@ -262594,6 +262810,15 @@
           "end": 51,
           "check": "adcdfa65",
           "name": "Thomas Tsuji",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 115,
+          "end": 123,
+          "check": "244696cb",
+          "name": "Ioannes",
           "qid": null
         }
       ],
@@ -274373,6 +274598,24 @@
           "check": "92ae5973",
           "name": "Vincentius Shiwozuka",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 150,
+          "end": 166,
+          "check": "ca4c9717",
+          "name": "Lazarus de Kyoto",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 169,
+          "end": 191,
+          "check": "42616e53",
+          "name": "Laurentius de Manila Ruiz",
+          "qid": null
         }
       ],
       "mr:0929-michael-gabriel-et-raphael-archangeli": [
@@ -285457,6 +285700,42 @@
           "end": 87,
           "check": "cbe945cc",
           "name": "Maria Teresia Ferragud Roig",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 127,
+          "check": "22be7e0b",
+          "name": "Vincentia Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 146,
+          "end": 156,
+          "check": "c37c123d",
+          "name": "Ioachima Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 159,
+          "end": 188,
+          "check": "ea4446e3",
+          "name": "Maria Felicitas Masiá Ferragud",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 239,
+          "end": 293,
+          "check": "a303f990",
+          "name": "Raymunda Masiá Ferragud",
           "qid": null
         }
       ],
@@ -302764,6 +303043,15 @@
           "check": "752eff9b",
           "name": "Franciscus Galvez",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 101,
+          "end": 120,
+          "check": "30f9ae92",
+          "name": "Hieronymus de Angelis",
+          "qid": null
         }
       ],
       "mr:1204-heracla": [
@@ -304268,7 +304556,7 @@
           "end": 34,
           "check": "9327d918",
           "name": "Leocadia",
-          "qid": null
+          "qid": "Q442235"
         }
       ],
       "mr:1209-liborius-wagner": [
