@@ -134,6 +134,13 @@ class Brief(unittest.TestCase):
         self.assertEqual(out[1]["same_eulogy"], ["mr:0202-b"])
         self.assertEqual(out[1]["person_items"], {})
 
+    def test_brief_lists_place_items(self):
+        entries = [{"id": "mr:0101-a"}, {"id": "mr:0101-b"}]
+        place = {"role": "death", "la": "Roma", "qid": "Q220", "label": "Rome"}
+        out = sr.brief(*half_month("01", "a"), {}, {}, {}, {}, {}, entries, {}, places={"mr:0101-a": [place]})
+        self.assertEqual(out[0]["places"], [place])
+        self.assertEqual(out[1]["places"], [])
+
 
 if __name__ == "__main__":
     unittest.main()
