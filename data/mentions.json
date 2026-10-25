@@ -286267,6 +286267,15 @@
           "qid": "Q882924"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 73,
+          "check": "3ce64935",
+          "name": "Witta",
+          "qid": "Q882924"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 92,
