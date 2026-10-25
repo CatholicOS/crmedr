@@ -803,7 +803,8 @@ def main(argv):
     items = _read(data / "person_items.json", {"persons": {}})["persons"]
     review = _read(data / "person_items_review.json", new_changeset([]))
     not_processed = []
-    places = eulogy_places.load(repo_root)
+    # Only the commands that use the places read their files (apply and check do not).
+    places = eulogy_places.load(repo_root) if cmd in ("propose", "verify-suggestions", "expand") else None
     client = Wikidata(repo_root / ".cache" / "wikidata")
     if cmd == "propose":
         not_processed = propose(items, review, index, client)

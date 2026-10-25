@@ -942,6 +942,30 @@ class MainPlacesFailureTest(unittest.TestCase):
             self.assertTrue((Path(root) / "docs" / "person-items-report.md").exists())
             self.assertIn("places: down", (Path(root) / "docs" / "person-items-report.md").read_text())
 
+    def count_loads(self, argv):
+        from unittest import mock
+        with tempfile.TemporaryDirectory() as root:
+            (Path(root) / "data").mkdir()
+            (Path(root) / "docs").mkdir()
+            (Path(root) / "data" / "martyrology_ids.json").write_text(json.dumps({"entries": {}}))
+            (Path(root) / "in.json").write_text("[]")
+            load = mock.Mock(return_value={})
+            with mock.patch.object(bp.eulogy_places, "load", load), \
+                    mock.patch.object(bp, "person_index", return_value={}), \
+                    mock.patch.object(bp, "annotate_places"), \
+                    mock.patch.object(bp, "expand", return_value=[]), \
+                    mock.patch.object(bp, "apply_decisions", return_value=0), \
+                    contextlib.redirect_stdout(io.StringIO()):
+                bp.main([argv[0]] + [a.replace("ROOT", root) for a in argv[1:]])
+        return load.call_count
+
+    def test_expand_loads_places_once(self):
+        self.assertEqual(self.count_loads(["expand", "ROOT/in.json", "ROOT"]), 1)
+
+    def test_apply_and_check_do_not_load_places(self):
+        self.assertEqual(self.count_loads(["apply", "ROOT/in.json", "ROOT"]), 0)
+        self.assertEqual(self.count_loads(["check", "ROOT"]), 0)
+
 
 def place(qid, label, admin=()):
     return {"wikidata": qid, "label": label, "admin_qids": list(admin)}
