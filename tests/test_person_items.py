@@ -656,6 +656,30 @@ class ExpandTest(unittest.TestCase):
         # the first stays (an accept means candidates[0]), and so does the decided pick
         self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
 
+    def test_a_group_member_sharing_the_surname_fits(self):
+        # Aloysius is Louis: the given names differ in the loaded labels, the surname does not.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q536708", ["Louis Lego"]), source="companion:P361"),
+                                   dict(cand("Q4075367", ["Bai Xiaoman"]), source="companion:P361")]}
+        op = self.op(name="Aloysius Lego", candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Aloysius Lego", "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q536708"])
+
+    def test_first_name_forms_must_fit_a_longer_name(self):
+        # "Mary Verona" finds every Mary of Verona: only the person's own names are trusted as matched.
+        class Client(self.Client):
+            def saints_by_name_and_place(self, name, labels):
+                self.name_place_calls.append((name, list(labels)))
+                if name == "Maria Dominica Lego":
+                    return [dict(cand("Q1", ["Mariae Dominicae"]), source="place")]
+                return [dict(cand("Q2", ["Vincenza Maria Poloni"]), source="place")]
+        client = Client()
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Veronae", "qid": "Q2028", "label": "Verona"}]}
+        op = self.op(name="Maria Dominica Lego", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria Dominica Lego", "kind": "person"},
+                                 places=places)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1"])
+
     def test_unresolved_companion_adds_nothing(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
         client.kin = {"Q2652595": [dict(cand("Q52161488", ["Ioannes Lego"]), source="companion:P3373")]}

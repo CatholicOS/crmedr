@@ -507,9 +507,9 @@ def _expansion(op, record, items, client, ops=None, places=()):
     for qid in _companion_items(op, items, ops):
         companion = client.person(qid)
         if companion and companion.get("human"):
-            # kin may bear another name; a group's other members (P361) must fit the person's
+            # kin may bear another name; a group's other members (P361) must fit the person
             found += [c for c in client.relatives(qid)
-                      if c.get("source") != "companion:P361" or _named(op)(c.get("names", []) + [c.get("label", "")])]
+                      if c.get("source") != "companion:P361" or _fits_group_member(op, c)]
     if op["typology"] == "dies_natalis":
         month, day = (int(x) for x in op["day"].split("-"))
         named = _named(op)
@@ -522,25 +522,42 @@ def _expansion(op, record, items, client, ops=None, places=()):
                   if named(c.get("names", []) + [c.get("label", "")])]
     labels = list(dict.fromkeys(p["label"] for p in places if p["role"] not in FULLTEXT_SKIP_ROLES and p.get("label")))
     if labels:
-        # No name check after it: the search matched the name with the place in every language
-        # (Kyros of Constantinople, Thillo of Solignac), which the loaded labels cannot show.
-        seen = {c["wikidata"] for c in found}
+        # A search for one of the person's own names matched it with the place in every language
+        # (Kyros of Constantinople, Thillo of Solignac), which the loaded labels cannot show: no
+        # name check after it. A first-name form of a longer name ("Maria" for Maria Dominica
+        # Mantovani) finds every Maria of the place: its hits must fit the name.
+        own = {t for nm in [op["name"], *op.get("also", [])] for t in search_terms(nm)}
+        one_word = len(op["name"].split()) == 1
+        named, seen = _named(op), {c["wikidata"] for c in found}
         for name in fulltext_names(op):
             for c in client.saints_by_name_and_place(name, labels):
-                if c["wikidata"] not in seen:
+                if c["wikidata"] in seen:
+                    continue
+                if one_word or name in own or named(c.get("names", []) + [c.get("label", "")]):
                     seen.add(c["wikidata"])
                     found.append(c)
     return found
+
+
+def _fits_group_member(op, c):
+    """A companion's group member (P361) fits the person: one of its names fits one of the
+    person's (_named), or it shares the person's surname (a later word of four letters or more:
+    Aloysius Versiglia is Louis Versiglia in the labels loaded)."""
+    names = c.get("names", []) + [c.get("label", "")]
+    if _named(op)(names):
+        return True
+    surnames = {t for nm in [op["name"], *op.get("also", [])] for t in _tokens(nm)[1:] if len(t) >= 4}
+    return bool(surnames & {t for nm in names for t in _tokens(nm)})
 
 
 def _drop_unfit_group_members(op):
     """Drop the companions' group members (companion:P361) whose names do not fit the person, as
     an earlier expand added them; the first candidate (an accept without a suggestion means it)
     and the decided pick stay."""
-    named, pick = _named(op), (op.get("edited") or {}).get("wikidata")
+    pick = (op.get("edited") or {}).get("wikidata")
     op["candidates"] = [c for i, c in enumerate(op["candidates"])
                         if i == 0 or c["wikidata"] == pick or c.get("source") != "companion:P361"
-                        or named(c.get("names", []) + [c.get("label", "")])]
+                        or _fits_group_member(op, c)]
 
 
 def expand(review, items, records, client, places=None):
