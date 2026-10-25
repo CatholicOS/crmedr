@@ -335,6 +335,25 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual(read("la")["mr:0101-a"], "Sanctus A")
         self.assertEqual([c[1] for c in fake.calls], ["scripts/extract_registry.py", "-m"])
 
+    def test_relabel_decided_after_its_rename_was_applied(self):
+        ids = self.root / "data" / "martyrology_ids.json"
+        doc = cs(self.cs["operations"][0], relabel("mr:0101-a", decision=None))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        ids.write_text(ids.read_text().replace("mr:0101-a\"", "mr:0101-a-x\""))  # the stub does not rebuild it
+        doc["operations"][1]["decision"] = "accept"
+        rep = ar.apply_crmedr(doc, self.root, False, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual(([r.old for r in rep.skipped], [r.old for r in rep.relabeled]), (["mr:0101-a"], ["mr:0101-a-x"]))
+        read = lambda lang: json.loads((self.root / "i18n" / f"{lang}.json").read_text())  # noqa: E731
+        self.assertEqual([read(lang)["mr:0101-a-x"] for lang in ("la", "en", "it")],
+                         ["Sanctus A Nova", "Saint A the New", "Sant’A Nuova"])
+        before = self.snapshot()
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        self.assertEqual(self.snapshot(), before)
+        doc["operations"][1]["decision"] = "reject"
+        self.assertEqual(ar.apply_crmedr(doc, self.root, False, run=Fake()).relabeled, ())
+        self.assertEqual(self.snapshot(), before)
+
     def test_relabel_of_an_unknown_or_deprecated_id_is_an_error(self):
         before = self.snapshot()
         rep = ar.apply_crmedr(cs(relabel("mr:0101-zz"), relabel("mr:0101-old")), self.root, False, run=Fake())
