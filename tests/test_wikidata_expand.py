@@ -46,14 +46,19 @@ def placed(qid, label, status="Q43115"):
 
 
 class Fake:
-    def __init__(self, sparql=None, search=None, entities=None):
+    def __init__(self, sparql=None, search=None, entities=None, fulltext=None):
         self.urls, self.sparql, self.search = [], sparql or bindings([]), search or {}
+        self.fulltext = fulltext or {}
         self.entities = {**ENTITIES, **(entities or {})}
 
     def __call__(self, url):
         self.urls.append(url)
         if "query.wikidata.org" in url:
             return self.sparql
+        if "list=search" in url:
+            text = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)["srsearch"][0]
+            text = text.replace(" haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286", "")
+            return {"query": {"search": [{"title": q} for q in self.fulltext.get(text, [])]}}
         if "wbsearchentities" in url:
             return {"search": [{"id": q} for q in self.search]}
         ids = url.split("ids=")[1].split("&")[0].split("%7C")
@@ -151,6 +156,21 @@ class ExpandTest(unittest.TestCase):
         self.assertIn("VALUES ?place { wd:Q90 wd:Q91 }", query)
         self.assertIn("(wdt:P20|wdt:P119) ?place", query)
         self.assertIn("wd:Q2369287", query)
+
+    def test_saints_by_name_and_place(self):
+        fake = Fake(fulltext={"Ioannes Paris": ["Q300", "Q77"], "Ioannes Rome": ["Q300"]})
+        out = self.wd(fake).saints_by_name_and_place("Ioannes", ["Paris", "Rome", "Paris"])
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q300", "place"), ("Q77", "place")])
+        searches = [u for u in fake.urls if "list=search" in u]
+        self.assertEqual(len(searches), 2)  # one per distinct place
+        query = urllib.parse.parse_qs(urllib.parse.urlparse(searches[0]).query)
+        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286"])
+        self.assertEqual(query["maxlag"], ["5"])
+
+    def test_saints_by_name_and_place_without_places_asks_nothing(self):
+        fake = Fake()
+        self.assertEqual(self.wd(fake).saints_by_name_and_place("Ioannes", []), [])
+        self.assertEqual(fake.urls, [])
 
     def test_too_many_saints_adds_nothing(self):
         rows = [placed(f"Q{i}", "Ioannes") for i in range(1000, 1000 + MAX_PLACE_SAINTS + 1)]

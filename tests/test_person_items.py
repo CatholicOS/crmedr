@@ -589,6 +589,7 @@ class ExpandTest(unittest.TestCase):
             super().__init__(**kw)
             self.kin, self.day, self.titles, self.calls = {}, [], [], []
             self.place, self.place_calls = [], []
+            self.name_place, self.name_place_calls = [], []
 
         def relatives(self, qid):
             if qid in self.fail:
@@ -603,6 +604,10 @@ class ExpandTest(unittest.TestCase):
         def saints_by_place(self, qids, given, matches=None):
             self.place_calls.append((list(qids), given))
             return [dict(c, source="place") for c in self.place]
+
+        def saints_by_name_and_place(self, name, labels):
+            self.name_place_calls.append((name, list(labels)))
+            return [dict(c, source="place") for c in self.name_place]
 
         def title_candidates(self, text):
             return [dict(c, source="title") for c in self.titles]
@@ -662,11 +667,31 @@ class ExpandTest(unittest.TestCase):
                          {("Q5", "sparql"), ("Q6", "place")})
         self.assertIn("human", next(c for c in op["candidates"] if c["wikidata"] == "Q6")["evidence"])
 
+    def test_name_and_place_route(self):
+        client = self.Client()
+        client.name_place = [cand("Q7", ["Jean de Paris"]), cand("Q8", ["Pierre de Paris"])]
+        places = {"mr:0101-ioannes-et-renatus-lego": [
+            {"role": "death", "la": "Lutetiae", "qid": "Q90", "label": "Paris"},
+            {"role": "birth", "la": "Nanneti", "qid": "Q92", "label": "Nantes"},
+            {"role": "burial", "la": "?", "qid": None, "label": None}]}
+        _, op = self.run_expand(self.op(companions=[], candidates=[]), client, places=places)
+        self.assertEqual(client.name_place_calls, [("Ioannes", ["Paris"])])
+        self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q7", "place")])
+
+    def test_name_and_place_route_does_not_repeat_a_place_candidate(self):
+        client = self.Client()
+        client.place = [cand("Q6", ["Ioannes"])]
+        client.name_place = [cand("Q6", ["Ioannes"])]
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Romae", "qid": "Q91", "label": "Rome"}]}
+        _, op = self.run_expand(self.op(companions=[], candidates=[]), client, places=places)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q6"])
+
     def test_no_place_route_without_places(self):
         client = self.Client()
         client.place = [cand("Q6", ["Ioannes"])]
         self.run_expand(self.op(companions=[]), client)
         self.assertEqual(client.place_calls, [])
+        self.assertEqual(client.name_place_calls, [])
 
     def test_death_day_uses_name_equivalents_and_year(self):
         client = self.Client()

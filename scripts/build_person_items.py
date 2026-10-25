@@ -497,6 +497,12 @@ def _expansion(op, record, items, client, ops=None, places=()):
         named = _named(op)
         found += [c for c in client.saints_by_place(qids, _given_names(op), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
+    labels = list(dict.fromkeys(p["label"] for p in places if p["role"] in PLACE_ROUTE_ROLES and p.get("label")))
+    if labels:
+        named = _named(op)
+        seen = {c["wikidata"] for c in found}
+        found += [c for c in client.saints_by_name_and_place(op["name"].split()[0], labels)
+                  if c["wikidata"] not in seen and named(c.get("names", []) + [c.get("label", "")])]
     return found
 
 
