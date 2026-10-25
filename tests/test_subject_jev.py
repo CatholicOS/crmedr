@@ -146,6 +146,20 @@ class PersonRequestTest(unittest.TestCase):
         self.assertEqual(body["state"]["candidates"]["q1"]["wikidata"], "Q2")
         self.assertEqual(body["state"]["companions"], [{"name": "Lupicinus", "wikidata": "Q9"}])
 
+    def test_places_in_state(self):
+        agree = {"role": "death", "qid": "Q220", "label": "Roma", "via": "P20"}
+        op = dict(POP, places=[{"role": "death", "label": "Roma", "qid": "Q220"}],
+                  candidates=[dict(POP["candidates"][0], places=[agree],
+                                   place_labels={"death_place": ["Roma"]}), POP["candidates"][1]])
+        state = sj.person_request(op, None, "x", [])["state"]
+        self.assertEqual(state["places"], [{"role": "death", "label": "Roma"}])
+        self.assertEqual(state["candidates"]["q0"]["places"],
+                         [{"role": "death", "label": "Roma", "via": "P20"}])
+        self.assertEqual(state["candidates"]["q0"]["place_labels"], {"death_place": ["Roma"]})
+        self.assertEqual(state["candidates"]["q1"]["places"], [])
+        self.assertEqual(state["candidates"]["q1"]["place_labels"], {})
+        self.assertEqual(sj.person_request(POP, None, "x", [])["state"]["places"], [])
+
     def test_without_a_record(self):
         body = sj.person_request(POP, None, "sancti Eugéndi", [])
         self.assertNotIn("record", body["state"])
