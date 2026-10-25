@@ -9,6 +9,10 @@ An undecided old operation the rebuilt file no longer has is dropped and named i
 decided one that is missing raises ValueError (nothing is written). Operations are keyed by
 `uid`, else `id`.
 
+A person card decided "reject" (by the curator or prefilled) is reopened, taken as rebuilt and
+named in the notes, when the rebuild offers a candidate found by place that the card did not
+have: the reject said none of the old candidates was the person, not the new one.
+
 A relabel is merged as any other operation: the subject follows the decided ID at apply
 (apply_renames.py) and on the card, so neither its order nor its labels are rewritten here.
 The change-set quotes the 2004 edition: the output is refused inside a git tree.
@@ -31,6 +35,15 @@ def _decided(op):
     return op.get("decision") is not None or bool(op.get("prefilled"))
 
 
+def _new_place_candidates(op, fresh):
+    """The rebuilt card's place-route candidates a rejected person card did not offer."""
+    if op["op"] != "resolve_person" or op.get("decision") != "reject" or fresh is None:
+        return []
+    had = {c["wikidata"] for c in op.get("candidates", [])}
+    return [c["wikidata"] for c in fresh.get("candidates", [])
+            if c.get("source") == "place" and c["wikidata"] not in had]
+
+
 def merge(old, rebuilt):
     """The merged change-set and the notes on the old operations dropped."""
     fresh = {_key(op): op for op in rebuilt["operations"]}
@@ -41,7 +54,11 @@ def merge(old, rebuilt):
     ops, notes = [], []
     for op in old["operations"]:
         key = _key(op)
-        if _decided(op):
+        found = _new_place_candidates(op, fresh.get(key))
+        if found:
+            ops.append(fresh[key])
+            notes.append(f"{key}: rejected, reopened: the rebuild found {', '.join(found)} by place")
+        elif _decided(op):
             ops.append(op)
         elif key in fresh:
             ops.append(fresh[key])
@@ -73,12 +90,15 @@ def main(argv):
         sys.exit(str(e))
     write_json_atomic(out, merged)
     old_keys = {_key(op) for op in old["operations"]}
-    fresh = {_key(op) for op in rebuilt["operations"]}
-    kept = sum(_decided(op) for op in old["operations"])
+    fresh_ops = {_key(op): op for op in rebuilt["operations"]}
+    fresh = set(fresh_ops)
+    reopened = sum(bool(_new_place_candidates(op, fresh_ops.get(_key(op)))) for op in old["operations"])
+    kept = sum(_decided(op) for op in old["operations"]) - reopened
     added = sum(_key(op) not in old_keys for op in rebuilt["operations"])
     dropped = sum(not _decided(op) and _key(op) not in fresh for op in old["operations"])
-    rebuilt_n = len(old["operations"]) - kept - dropped
-    print(f"{out}: kept {kept}, rebuilt {rebuilt_n}, added {added}, dropped {dropped}")
+    rebuilt_n = len(old["operations"]) - kept - reopened - dropped
+    print(f"{out}: kept {kept}, rebuilt {rebuilt_n}, added {added}, dropped {dropped}, "
+          f"reopened {reopened}")
     for n in notes:
         print(n)
 

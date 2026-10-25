@@ -53,6 +53,38 @@ class MergeTest(unittest.TestCase):
         out, _ = sm.merge(old, new)
         self.assertEqual([o["id"] for o in out["operations"]], ["m2", "m1", "m3", "m4"])
 
+    def test_a_reject_reopened_when_the_rebuild_finds_a_place_candidate(self):
+        old_c = [{"wikidata": "Q1", "source": "search"}]
+        place = {"wikidata": "Q2", "source": "place"}
+        curator = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c, "decision": "reject"}
+        prefilled = {"op": "resolve_person", "id": "m2|Bo", "candidates": old_c,
+                     "decision": "reject", "prefilled": "jev", "jev": {"decision": "reject"}}
+        fresh1 = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c + [place]}
+        fresh2 = {"op": "resolve_person", "id": "m2|Bo", "candidates": old_c + [place]}
+        out, notes = sm.merge(doc(curator, prefilled), doc(fresh1, fresh2))
+        self.assertEqual(out["operations"], [fresh1, fresh2])
+        self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by place",
+                                 "m2|Bo: rejected, reopened: the rebuild found Q2 by place"])
+
+    def test_a_reject_kept_without_a_new_place_candidate(self):
+        old_c = [{"wikidata": "Q1", "source": "search"}, {"wikidata": "Q2", "source": "place"}]
+        a = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c, "decision": "reject"}
+        b = {"op": "resolve_person", "id": "m2|Bo", "candidates": old_c[:1], "decision": "reject"}
+        new = doc({"op": "resolve_person", "id": "m1|Ann", "candidates": old_c},
+                  {"op": "resolve_person", "id": "m2|Bo",
+                   "candidates": old_c[:1] + [{"wikidata": "Q3", "source": "search"}]})
+        out, notes = sm.merge(doc(a, b), new)
+        self.assertEqual(out["operations"], [a, b])
+        self.assertEqual(notes, [])
+
+    def test_an_accept_kept_despite_a_new_place_candidate(self):
+        a = {"op": "resolve_person", "id": "m1|Ann", "candidates": [{"wikidata": "Q1"}],
+             "decision": "edit", "edited": {"wikidata": "Q1"}}
+        new = doc({"op": "resolve_person", "id": "m1|Ann",
+                   "candidates": [{"wikidata": "Q1"}, {"wikidata": "Q2", "source": "place"}]})
+        out, _ = sm.merge(doc(a), new)
+        self.assertEqual(out["operations"], [a])
+
     def test_missing_ids(self):
         old = doc(rename("m1"), rename("m2", decision="edit"), rename("m3", prefilled="jev"),
                   rename("m4"))
