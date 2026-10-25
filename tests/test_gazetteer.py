@@ -592,6 +592,8 @@ class SplitTest(unittest.TestCase):
         self.assertEqual((added, refused, failed), (2, [], []))
         self.assertEqual(sorted(op["id"] for op in review["operations"]), ["X@mr:0101-a", "X@mr:0102-b"])
         self.assertTrue(all(op["la"] == "X" and op["decision"] is None for op in review["operations"]))
+        # The per-eulogy keys are places of the index: the queue they make is valid.
+        self.assertEqual(bg.validate({}, self.INDEX, review["operations"]), [])
 
     def test_decided_phrase_refused_unless_forced(self):
         gazetteer = {"X": {"wikidata": "Q1", "label": "X", "country": "IT", "status": "reviewed"}}
