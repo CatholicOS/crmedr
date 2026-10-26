@@ -531,6 +531,12 @@ def _expansion(op, record, items, client, ops=None, places=(), vernacular=()):
         named = _named(op)
         found += [c for c in client.saints_by_death_day(month, day, _given_names(op), record.get("death_year"), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
+    # The day the eulogy commemorates is often the item's feast (P841) when its death is dated to
+    # the year only, or not at all.
+    month, day = (int(x) for x in op["day"].split("-"))
+    named = _named(op)
+    found += [c for c in client.saints_by_feast_day(month, day, _given_names(op), named)
+              if named(c.get("names", []) + [c.get("label", "")])]
     qids = list(dict.fromkeys(p["qid"] for p in places if p["role"] in PLACE_ROUTE_ROLES and p.get("qid")))
     if qids:
         named = _named(op)

@@ -11,7 +11,7 @@ decided one that is missing raises ValueError (nothing is written). Operations a
 
 A person card decided "reject" (by the curator or prefilled) is reopened, taken as rebuilt and
 named in the notes, when the rebuild offers a candidate found by place, or a saint found by name
-alone (the rare-name route), that the card did not have: the reject said none of the old
+alone (the rare-name route) or by its feast day, that the card did not have: the reject said none of the old
 candidates was the person, not the new one.
 
 A relabel is merged as any other operation: the subject follows the decided ID at apply
@@ -37,11 +37,11 @@ def _decided(op):
 
 
 # The routes whose new candidates reopen a rejected person card.
-REOPENING_SOURCES = ("place", "name")
+REOPENING_SOURCES = ("place", "name", "feast")
 
 
 def _new_place_candidates(op, fresh):
-    """The rebuilt card's place-route and name-route candidates a rejected person card did not
+    """The rebuilt card's candidates from REOPENING_SOURCES that a rejected person card did not
     offer, each as "QID by route"."""
     if op["op"] != "resolve_person" or op.get("decision") != "reject" or fresh is None:
         return []

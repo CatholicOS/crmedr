@@ -72,10 +72,11 @@ class MergeTest(unittest.TestCase):
                      "decision": "reject", "prefilled": "jev", "jev": {"decision": "reject"}}
         fresh = {"op": "resolve_person", "id": "m1|Ann",
                  "candidates": old_c + [{"wikidata": "Q2", "source": "name"},
-                                        {"wikidata": "Q3", "source": "place"}]}
+                                        {"wikidata": "Q3", "source": "place"},
+                                        {"wikidata": "Q4", "source": "feast"}]}
         out, notes = sm.merge(doc(prefilled), doc(fresh))
         self.assertEqual(out["operations"], [fresh])
-        self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by name, Q3 by place"])
+        self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by name, Q3 by place, Q4 by feast"])
 
     def test_a_reject_kept_without_a_new_place_candidate(self):
         old_c = [{"wikidata": "Q1", "source": "search"}, {"wikidata": "Q2", "source": "place"}]

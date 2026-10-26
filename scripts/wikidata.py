@@ -66,6 +66,10 @@ STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
+# The months' items, which the day items (P841's values: "January 8", Q2234) are part of (P361).
+MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August",
+               "September", "October", "November", "December")
+MONTHS = ("Q108", "Q109", "Q110", "Q118", "Q119", "Q120", "Q121", "Q122", "Q123", "Q124", "Q125", "Q126")
 # A place with more saints than this is too common to tell them apart by place: no candidates.
 MAX_PLACE_SAINTS = 200
 GREGORIAN, JULIAN = "Q1985727", "Q1985786"  # the calendar models of a Wikidata date
@@ -252,17 +256,25 @@ def _date(claims, prop):
     return None
 
 
+def _other_names(raw):
+    """A bare item's names (_with_other_names): its labels in any language, then its sitelinks'
+    titles."""
+    return list(dict.fromkeys([v["value"] for v in raw.get("labels", {}).values()]
+                              + [v["title"] for v in raw.get("sitelinks", {}).values()]))
+
+
 def summarize_person(raw):
     claims = raw.get("claims", {})
     labels = raw.get("labels", {})
     descs = raw.get("descriptions", {})
     ids = lambda prop: list(dict.fromkeys(_value(c)["id"] for c in claims.get(prop, [])  # noqa: E731
                                           if isinstance(_value(c), dict) and "id" in _value(c)))
+    other = [] if any(lang in labels for lang in LABEL_LANGS) else _other_names(raw)
     return {
         "wikidata": raw["id"],
-        "label": next((labels[lang]["value"] for lang in LABEL_LANGS if lang in labels), raw["id"]),
+        "label": next((labels[lang]["value"] for lang in LABEL_LANGS if lang in labels), other[0] if other else raw["id"]),
         "description": next((descs[lang]["value"] for lang in ("en", "it") if lang in descs), ""),
-        "names": sorted({n for lang in ("la", "it", "en") for n in _names(raw, lang)}),
+        "names": sorted({n for lang in ("la", "it", "en") for n in _names(raw, lang)} | set(other)),
         "human": "Q5" in ids("P31"),
         "statuses": ids("P411"),
         "born": _date(claims, "P569"),
@@ -345,6 +357,18 @@ class Wikidata:
             for qid, raw in data.get("entities", {}).items():
                 if "missing" not in raw:
                     out[qid] = raw
+        return out
+
+    def _person_entities(self, qids):
+        """_entities, and for an item with no label in LABEL_LANGS (a Swahili Wikipedia stub) its
+        labels in every language and its sitelinks, so that it has a name to show and match."""
+        out = self._entities(qids)
+        bare = [q for q, raw in out.items() if not any(lang in raw.get("labels", {}) for lang in LABEL_LANGS)]
+        for i in range(0, len(bare), 50):
+            data = self._api(action="wbgetentities", ids="|".join(bare[i:i + 50]), props="labels|sitelinks")
+            for qid, raw in data.get("entities", {}).items():
+                if qid in out and "missing" not in raw:
+                    out[qid] = {**out[qid], "labels": raw.get("labels", {}), "sitelinks": raw.get("sitelinks", {})}
         return out
 
     def _place_types(self, classes):
@@ -443,7 +467,7 @@ class Wikidata:
 
     def person_candidates(self, name, languages=("la", "it", "en")):
         qids = list(dict.fromkeys(q for lang in languages for q in self._search(name, language=lang)))
-        raws = self._entities(qids)
+        raws = self._person_entities(qids)
         return [summarize_person(raws[q]) for q in qids if q in raws]
 
     def _sparql(self, query):
@@ -452,7 +476,7 @@ class Wikidata:
 
     def _tagged(self, sources):
         """Person summaries of {qid: source}, in that order, each with its "source"."""
-        raws = self._entities(list(sources))
+        raws = self._person_entities(list(sources))
         return [{**summarize_person(raws[q]), "source": s} for q, s in sources.items() if q in raws]
 
     def relatives(self, qid):
@@ -497,6 +521,19 @@ class Wikidata:
             kept.append(b)
         best = _best_named(kept, given, matches)
         return self._tagged({q: "sparql" for q in best[:MAX_SPARQL]})
+
+    def saints_by_feast_day(self, month, day, given, matches=None):
+        """Humans whose feast day (P841) is that day, whose label or alias has a word starting with
+        one of the `given` names, folded: John of Réôme's death is dated to the year only. At most
+        MAX_SPARQL, the best first, as saints_by_death_day orders them."""
+        langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
+        label = f"{MONTH_NAMES[month - 1]} {day}"
+        rows = self._sparql(
+            f'SELECT DISTINCT ?p ?l ?s WHERE {{ ?f wdt:P361 wd:{MONTHS[month - 1]}; rdfs:label "{label}"@en . '
+            f"?p wdt:P31 wd:Q5; wdt:P841 ?f . BIND(?f AS ?s) "
+            f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
+        best = _best_named(rows, given, matches)
+        return self._tagged({q: "feast" for q in best[:MAX_SPARQL]})
 
     def saints_by_place(self, qids, given, matches=None):
         """Saints and blessed who died or are buried (P20, P119) in one of these places, whose
@@ -556,12 +593,12 @@ class Wikidata:
                 for q in dict.fromkeys(qids) if q in raws}
 
     def person(self, qid):
-        raw = self._entities([qid]).get(qid)
+        raw = self._person_entities([qid]).get(qid)
         return summarize_person(raw) if raw else None
 
     def people(self, qids):
         """Person summaries of these items, by QID, fetched 50 at a time; a missing one is left out."""
-        raws = self._entities(list(dict.fromkeys(qids)))
+        raws = self._person_entities(list(dict.fromkeys(qids)))
         return {q: summarize_person(raws[q]) for q in dict.fromkeys(qids) if q in raws}
 
     def details_entities(self, qids):
