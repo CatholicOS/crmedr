@@ -51,6 +51,8 @@ SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
 # A companion's kin: sibling, relative, spouse, child, mother, father.
 RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
+# The P31 values of a person: human, and human biblical figure (Anna the Prophetess, Q1774668).
+HUMAN_TYPES = ("Q5", "Q20643955")
 # Statements a saint's or a blessed's item carries, for the full-text search: canonization
 # status, feast day, and the Santi e Beati, Ökumenisches Heiligenlexikon, Nominis and GCatholic
 # person IDs and the Heiligen.net ID (many saints' items have one of these without a P411: Lucian
@@ -275,7 +277,7 @@ def summarize_person(raw):
         "label": next((labels[lang]["value"] for lang in LABEL_LANGS if lang in labels), other[0] if other else raw["id"]),
         "description": next((descs[lang]["value"] for lang in ("en", "it") if lang in descs), ""),
         "names": sorted({n for lang in ("la", "it", "en") for n in _names(raw, lang)} | set(other)),
-        "human": "Q5" in ids("P31"),
+        "human": any(t in ids("P31") for t in HUMAN_TYPES),
         "statuses": ids("P411"),
         "born": _date(claims, "P569"),
         "died": _date(claims, "P570"),

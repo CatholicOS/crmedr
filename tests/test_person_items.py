@@ -42,6 +42,11 @@ class SummarizePersonTest(unittest.TestCase):
         self.assertEqual(s["feast"], ["Q2915"])
         self.assertEqual(sorted(s["names"]), ["Paolo Miki", "Paul Miki", "Paulus Miki"])
 
+    def test_a_human_biblical_figure_is_human(self):
+        # Anna the Prophetess (Q1774668) is typed "human biblical figure", not human.
+        raw = {"id": "Q1774668", "labels": {"en": {"value": "Anna"}}, "claims": {"P31": [item("x", "Q20643955")]}}
+        self.assertTrue(wd.summarize_person(raw)["human"])
+
     def test_places_current_only(self):
         ended = item("x", "Q1")
         ended["qualifiers"] = {"P582": [{}]}
