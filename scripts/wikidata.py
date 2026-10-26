@@ -57,6 +57,8 @@ NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 # of Lentini, Theogenes of Parium). GCatholic lists every bishop, saint or not; the name and the
 # place still bound the search.
 SAINT_SIGNALS = ("P411", "P841", "P6126", "P8080", "P4286", "P8366", "P10799")
+# At most this many saints may bear a name searched alone (saints_by_name).
+RARE_NAME_HITS = 3
 # The signals that count as a saint's status besides P411 (summarize_person `signals`): not the
 # GCatholic person ID, which bounds the search but lists bishops who are no saints.
 STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
@@ -528,6 +530,18 @@ class Wikidata:
             for hit in data.get("query", {}).get("search", []):
                 found.setdefault(hit["title"], "place")
         return self._tagged(found) if found else []
+
+    def saints_by_name(self, name):
+        """The saints and blessed the full-text search finds for the name alone, when no more than
+        RARE_NAME_HITS bear it (Nathalan, whose item has no place): a common name finds too many to
+        offer. The name is sought in labels and aliases only (inlabel), not in descriptions that
+        merely mention it. Humans with one of the SAINT_SIGNALS only, tagged "name"."""
+        data = self._api(action="query", list="search", srnamespace="0", srlimit=str(RARE_NAME_HITS + 1),
+                         srsearch=f"inlabel:{name} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
+        hits = [hit["title"] for hit in data.get("query", {}).get("search", [])]
+        if not hits or len(hits) > RARE_NAME_HITS:
+            return []
+        return self._tagged(dict.fromkeys(hits, "name"))
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""

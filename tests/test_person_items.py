@@ -603,6 +603,11 @@ class ExpandTest(unittest.TestCase):
             self.kin, self.day, self.titles, self.calls = {}, [], [], []
             self.place, self.place_calls = [], []
             self.name_place, self.name_place_calls = [], []
+            self.rare, self.rare_calls = [], []
+
+        def saints_by_name(self, name):
+            self.rare_calls.append(name)
+            return [dict(c, source="name") for c in self.rare]
 
         def relatives(self, qid):
             if qid in self.fail:
@@ -762,6 +767,60 @@ class ExpandTest(unittest.TestCase):
         places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Romae", "qid": "Q91", "label": "Rome"}]}
         _, op = self.run_expand(self.op(companions=[], candidates=[]), client, places=places)
         self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q6"])
+
+    def test_name_and_place_route_searches_the_eulogy_vernacular_names(self):
+        # Gudila is Gudula on Wikidata, as in the English eulogy: its spellings are her own names.
+        client = self.Client()
+        gudula = cand("Q267660", ["Gudula"])
+
+        def name_place(name, labels):
+            client.name_place_calls.append((name, list(labels)))
+            return [dict(gudula, source="place")] if name == "Gudula" else []
+
+        client.saints_by_name_and_place = name_place
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Morsellae", "qid": "Q836859", "label": "Moorsel"}]}
+        op = self.op(name="Gudila", companions=[], candidates=[])
+        bp.expand(bp.new_changeset([op]), {}, {op["eulogy"]: [{"id": op["eulogy"], "name": "Gudila", "kind": "person"}]},
+                  client, places, vernacular={op["eulogy"]: ["Gudula", "Gudila"]})
+        called = [n for n, _ in client.name_place_calls]
+        self.assertEqual(called[:2], ["Gudila", "Gudula"])
+        self.assertEqual(len(called), len(set(called)))
+        self.assertIn("Q267660", [c["wikidata"] for c in op["candidates"]])
+
+    def test_vernacular_names_are_not_a_companion_s(self):
+        # "Saint Gudula" names the eulogy's subject, not each of the persons it lists.
+        client = self.Client()
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Lutetiae", "qid": "Q90", "label": "Paris"}]}
+        op = self.op(candidates=[])
+        bp.expand(bp.new_changeset([op]), {}, {op["eulogy"]: [{"id": op["eulogy"], "name": "Ioannes", "kind": "person"}]},
+                  client, places, vernacular={op["eulogy"]: ["Gudula"]})
+        self.assertNotIn("Gudula", [n for n, _ in client.name_place_calls])
+
+    def test_subject_name_drops_the_title(self):
+        self.assertEqual(bp.subject_name("Saint Gudula"), "Gudula")
+        self.assertEqual(bp.subject_name("Santa Gudila"), "Gudila")
+        self.assertEqual(bp.subject_name("Sant’Angela da Foligno"), "Angela da Foligno")
+        self.assertEqual(bp.subject_name("Blessed Maria Domenica Mantovani"), "Maria Domenica Mantovani")
+        self.assertEqual(bp.subject_name("Beato Ludovico"), "Ludovico")
+        self.assertIsNone(bp.subject_name("Saints Paul Miki and companions"))
+        self.assertIsNone(bp.subject_name("Santi Lucio e Pietro"))
+        self.assertIsNone(bp.subject_name(""))
+
+    def test_rare_name_route_when_no_saint_was_found(self):
+        # Nathalan has no place on Wikidata: a name only a few saints bear is searched alone.
+        client = self.Client()
+        client.rare = [cand("Q2448164", ["Nathalan"])]
+        op = self.op(name="Nathalanus", companions=[], candidates=[dict(cand("Q1", ["Nathalanus"], statuses=()), evidence=["human"])])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Nathalanus", "kind": "person"})
+        self.assertIn("Nathalan", client.rare_calls)
+        self.assertIn(("Q2448164", "name"), [(c["wikidata"], c["source"]) for c in got["candidates"]])
+
+    def test_no_rare_name_route_once_a_saint_was_found(self):
+        client = self.Client()
+        client.rare = [cand("Q2448164", ["Nathalan"])]
+        _, got = self.run_expand(self.op(companions=[]), client)  # Q9 is a saint
+        self.assertEqual(client.rare_calls, [])
+        self.assertNotIn("Q2448164", [c["wikidata"] for c in got["candidates"]])
 
     def test_no_place_route_without_places(self):
         client = self.Client()

@@ -428,6 +428,20 @@ PLACE_ROUTE_ROLES = ("death", "burial", "translation")
 FULLTEXT_SKIP_ROLES = ("mention", "journey", "education")
 
 
+# The titles a vernacular subject opens with ("Saint Gudula", "Sant’Angela da Foligno").
+SUBJECT_TITLES = re.compile(r"^(?:(?:Saint|Blessed|San|Santa|Santo|Beato|Beata)\s+|Sant[’']\s*)", re.I)
+# A subject naming several persons ("Saints Paul Miki and companions", "Santi Lucio e Pietro").
+SEVERAL = re.compile(r"^(?:Saints|Santi|Sante|Blessed\s+\w+\s+and|Beati|Beate)\b|\s(?:and|e|ed)\s|,", re.I)
+
+
+def subject_name(subject):
+    """A vernacular subject's name without its title (Saint Gudula: Gudula), or None for one that
+    names several persons or none."""
+    if not subject or SEVERAL.search(subject):
+        return None
+    return SUBJECT_TITLES.sub("", subject.strip(), count=1) or None
+
+
 def fulltext_names(op):
     """The names the full-text search tries: each of the person's names with its vernacular
     equivalents (search_terms), then the first name's vernacular forms from its Latin ending
@@ -493,8 +507,10 @@ def _companion_items(op, items, ops=None):
     return found
 
 
-def _expansion(op, record, items, client, ops=None, places=()):
-    """New candidates for one op from the extra routes, in the order they are tried."""
+def _expansion(op, record, items, client, ops=None, places=(), vernacular=()):
+    """New candidates for one op from the extra routes, in the order they are tried. `vernacular`:
+    the eulogy's English and Italian subject names (subject_name), searched as the person's own
+    names when the eulogy names no companion."""
     if record["kind"] == "celebration":
         found = client.title_candidates(op["subject"])
         qid = CURATED_TITLES.get(op["eulogy"])
@@ -521,19 +537,31 @@ def _expansion(op, record, items, client, ops=None, places=()):
         found += [c for c in client.saints_by_place(qids, _given_names(op), named)
                   if named(c.get("names", []) + [c.get("label", "")])]
     labels = list(dict.fromkeys(p["label"] for p in places if p["role"] not in FULLTEXT_SKIP_ROLES and p.get("label")))
+    # A search for one of the person's own names matched it in every language (Kyros of
+    # Constantinople, Thillo of Solignac), which the loaded labels cannot show: no name check after
+    # it. A first-name form of a longer name ("Maria" for Maria Dominica Mantovani) finds every
+    # Maria of the place: its hits must fit the name.
+    own_vernacular = [] if op.get("companions") else [v for v in vernacular if v]
+    own = {t for nm in [op["name"], *op.get("also", []), *own_vernacular] for t in search_terms(nm)}
+    one_word = len(op["name"].split()) == 1
+    named, seen = _named(op), {c["wikidata"] for c in found}
+    fulltext = fulltext_names(op)
+    names = list(dict.fromkeys([*fulltext[:1], *own_vernacular, *fulltext[1:]]))
+
+    def fits(name, c):
+        return one_word or name in own or named(c.get("names", []) + [c.get("label", "")])
+
     if labels:
-        # A search for one of the person's own names matched it with the place in every language
-        # (Kyros of Constantinople, Thillo of Solignac), which the loaded labels cannot show: no
-        # name check after it. A first-name form of a longer name ("Maria" for Maria Dominica
-        # Mantovani) finds every Maria of the place: its hits must fit the name.
-        own = {t for nm in [op["name"], *op.get("also", [])] for t in search_terms(nm)}
-        one_word = len(op["name"].split()) == 1
-        named, seen = _named(op), {c["wikidata"] for c in found}
-        for name in fulltext_names(op):
+        for name in names:
             for c in client.saints_by_name_and_place(name, labels):
-                if c["wikidata"] in seen:
-                    continue
-                if one_word or name in own or named(c.get("names", []) + [c.get("label", "")]):
+                if c["wikidata"] not in seen and fits(name, c):
+                    seen.add(c["wikidata"])
+                    found.append(c)
+    if not any(_is_saint(c) for c in [*op["candidates"], *found]):
+        # No saint yet (Nathalan's item has no place): a name few saints bear, searched alone.
+        for name in names:
+            for c in client.saints_by_name(name):
+                if c["wikidata"] not in seen and fits(name, c):
                     seen.add(c["wikidata"])
                     found.append(c)
     return found
@@ -560,7 +588,7 @@ def _drop_unfit_group_members(op):
                         or _fits_group_member(op, c)]
 
 
-def expand(review, items, records, client, places=None):
+def expand(review, items, records, client, places=None, vernacular=None):
     """Add candidates from the companions' kin, the saints of the death day and the titles to each
     op with a record (subject_records.person_record: its own, else the kind of its eulogy's only
     record); `records`: the identity records by eulogy id. Decisions are not touched. Returns
@@ -579,7 +607,8 @@ def expand(review, items, records, client, places=None):
             not_processed.append((op["id"], "skipped: Wikidata unavailable"))
             continue
         try:
-            found = _expansion(op, record, items, client, by_id, (places or {}).get(op["eulogy"], ()))
+            found = _expansion(op, record, items, client, by_id, (places or {}).get(op["eulogy"], ()),
+                               (vernacular or {}).get(op["eulogy"], ()))
         except WikidataError as e:
             not_processed.append((op["id"], str(e)))
             failures += 1
@@ -880,7 +909,13 @@ def main(argv):
         if errors:
             sys.exit("\n".join(errors))
     elif cmd == "expand":
-        not_processed = expand(review, items, exported, client, places)
+        vernacular = {}
+        for lang in ("en", "it"):
+            for mrid, subject in _read(repo_root / "i18n" / f"{lang}.json", {}).items():
+                name = subject_name(subject)
+                if name and name not in vernacular.get(mrid, []):
+                    vernacular.setdefault(mrid, []).append(name)
+        not_processed = expand(review, items, exported, client, places, vernacular)
     elif cmd == "apply":
         print(f"applied {apply_decisions(items, review, exported, index, client)} decisions")
     if cmd in ("propose", "verify-suggestions", "expand"):
