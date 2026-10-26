@@ -318,7 +318,7 @@ EDITION_NOTES = {
         EDITION_EN: (
             "Translation error: \"of Saint Lutgardis\" where the Latin has sanctæ Iuttæ and the "
             "Italian (CEI) santa Ivetta: she is Yvette (Jutta) of Huy; Lutgardis is commemorated on "
-            "16 June. The English text and subject follow the Latin."
+            "16 June. The English subject follows the Latin."
         ),
     },
     "mr:0117-rosselina": {
