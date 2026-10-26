@@ -55,8 +55,11 @@ NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 # status, feast day, and the Santi e Beati, Ökumenisches Heiligenlexikon, Nominis and GCatholic
 # person IDs and the Heiligen.net ID (many saints' items have one of these without a P411: Lucian
 # of Lentini, Theogenes of Parium). GCatholic lists every bishop, saint or not; the name and the
-# place still bound the search. Besides P411, they count as a saint's status (summarize_person).
+# place still bound the search.
 SAINT_SIGNALS = ("P411", "P841", "P6126", "P8080", "P4286", "P8366", "P10799")
+# The signals that count as a saint's status besides P411 (summarize_person `signals`): not the
+# GCatholic person ID, which bounds the search but lists bishops who are no saints.
+STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
 # A label's languages, in order: "mul" last, the one name Wikidata now keeps for every language
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
@@ -263,7 +266,8 @@ def summarize_person(raw):
         "born": _date(claims, "P569"),
         "died": _date(claims, "P570"),
         "feast": ids("P841"),
-        "signals": [p for p in SAINT_SIGNALS[1:] if claims.get(p)],
+        "signals": [p for p in STATUS_SIGNALS
+                    if any(c.get("rank") != "deprecated" for c in claims.get(p, []))],
         "birth_place": current_qids(claims, "P19"),
         "death_place": current_qids(claims, "P20"),
         "burial_place": current_qids(claims, "P119"),

@@ -57,6 +57,19 @@ class SummarizePersonTest(unittest.TestCase):
         self.assertEqual(s["work_places"], ["Q3", "Q4"])
 
 
+    def test_signals(self):
+        old = item("x", "Q1")
+        old["rank"] = "deprecated"
+        ext = lambda v: {"mainsnak": {"datavalue": {"value": v}}}  # noqa: E731
+        stale = ext("1")
+        stale["rank"] = "deprecated"
+        raw = {"id": "Q9", "claims": {"P841": [old], "P6126": [stale], "P8080": [ext("V/x.htm")],
+                                      "P8366": [ext("123")]}}
+        # A deprecated statement is no signal; a GCatholic ID lists bishops, saints or not.
+        self.assertEqual(wd.summarize_person(raw)["signals"], ["P8080"])
+        self.assertEqual(wd.summarize_person({"id": "Q9", "claims": {"P8366": [ext("123")]}})["signals"], [])
+
+
 class PersonSearchTest(unittest.TestCase):
     def test_searches_each_language_and_summarizes(self):
         calls = []
