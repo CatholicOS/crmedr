@@ -57,6 +57,19 @@ class SummarizePersonTest(unittest.TestCase):
         self.assertEqual(s["work_places"], ["Q3", "Q4"])
 
 
+    def test_signals(self):
+        old = item("x", "Q1")
+        old["rank"] = "deprecated"
+        ext = lambda v: {"mainsnak": {"datavalue": {"value": v}}}  # noqa: E731
+        stale = ext("1")
+        stale["rank"] = "deprecated"
+        raw = {"id": "Q9", "claims": {"P841": [old], "P6126": [stale], "P8080": [ext("V/x.htm")],
+                                      "P8366": [ext("123")]}}
+        # A deprecated statement is no signal; a GCatholic ID lists bishops, saints or not.
+        self.assertEqual(wd.summarize_person(raw)["signals"], ["P8080"])
+        self.assertEqual(wd.summarize_person({"id": "Q9", "claims": {"P8366": [ext("123")]}})["signals"], [])
+
+
 class PersonSearchTest(unittest.TestCase):
     def test_searches_each_language_and_summarizes(self):
         calls = []
@@ -589,6 +602,7 @@ class ExpandTest(unittest.TestCase):
             super().__init__(**kw)
             self.kin, self.day, self.titles, self.calls = {}, [], [], []
             self.place, self.place_calls = [], []
+            self.name_place, self.name_place_calls = [], []
 
         def relatives(self, qid):
             if qid in self.fail:
@@ -603,6 +617,10 @@ class ExpandTest(unittest.TestCase):
         def saints_by_place(self, qids, given, matches=None):
             self.place_calls.append((list(qids), given))
             return [dict(c, source="place") for c in self.place]
+
+        def saints_by_name_and_place(self, name, labels):
+            self.name_place_calls.append((name, list(labels)))
+            return [dict(c, source="place") for c in self.name_place]
 
         def title_candidates(self, text):
             return [dict(c, source="title") for c in self.titles]
@@ -631,6 +649,49 @@ class ExpandTest(unittest.TestCase):
         self.assertIn(("Q52161488", "companion:P3373"), {(c["wikidata"], c["source"]) for c in op["candidates"]})
         self.assertEqual(next(c for c in op["candidates"] if c["wikidata"] == "Q9")["source"], "search")
         self.assertIn("status", next(c for c in op["candidates"] if c["wikidata"] == "Q52161488")["evidence"])
+
+    def test_group_members_must_fit_the_name_kin_need_not(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q52161488", ["Jean Légo"]), source="companion:P361"),
+                                   dict(cand("Q118445257", ["Marie-Anne Vaillot"]), source="companion:P361"),
+                                   dict(cand("Q7", ["Pierre Lego"]), source="companion:P3373")]}
+        _, op = self.run_expand(self.op(candidates=[]), client)
+        self.assertEqual({c["wikidata"] for c in op["candidates"]}, {"Q52161488", "Q7"})
+
+    def test_expand_drops_earlier_group_members_that_do_not_fit(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        member = lambda q, n: dict(cand(q, [n]), source="companion:P361", evidence=["human"])
+        op = self.op(candidates=[member("Q1", "Odile Baumgarten"), dict(cand("Q9", ["John"]), evidence=["human"]),
+                                 member("Q2", "Marie-Anne Vaillot"), member("Q3", "Jean Légo"),
+                                 member("Q4", "Natalis Pinot")],
+                     decision="edit", edited={"wikidata": "Q4"})
+        _, got = self.run_expand(op, client)
+        # the first stays (an accept means candidates[0]), and so does the decided pick
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
+
+    def test_a_group_member_sharing_the_surname_fits(self):
+        # Aloysius is Louis: the given names differ in the loaded labels, the surname does not.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q536708", ["Louis Lego"]), source="companion:P361"),
+                                   dict(cand("Q4075367", ["Bai Xiaoman"]), source="companion:P361")]}
+        op = self.op(name="Aloysius Lego", candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Aloysius Lego", "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q536708"])
+
+    def test_first_name_forms_must_fit_a_longer_name(self):
+        # "Mary Verona" finds every Mary of Verona: only the person's own names are trusted as matched.
+        class Client(self.Client):
+            def saints_by_name_and_place(self, name, labels):
+                self.name_place_calls.append((name, list(labels)))
+                if name == "Maria Dominica Lego":
+                    return [dict(cand("Q1", ["Mariae Dominicae"]), source="place")]
+                return [dict(cand("Q2", ["Vincenza Maria Poloni"]), source="place")]
+        client = Client()
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Veronae", "qid": "Q2028", "label": "Verona"}]}
+        op = self.op(name="Maria Dominica Lego", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria Dominica Lego", "kind": "person"},
+                                 places=places)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1"])
 
     def test_unresolved_companion_adds_nothing(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
@@ -662,11 +723,52 @@ class ExpandTest(unittest.TestCase):
                          {("Q5", "sparql"), ("Q6", "place")})
         self.assertIn("human", next(c for c in op["candidates"] if c["wikidata"] == "Q6")["evidence"])
 
+    def test_name_and_place_route(self):
+        # The search matched the name with the place in every language: no name check after it.
+        client = self.Client()
+        client.name_place = [cand("Q7", ["Kyros of Constantinople"])]
+        places = {"mr:0101-ioannes-et-renatus-lego": [
+            {"role": "death", "la": "Lutetiae", "qid": "Q90", "label": "Paris"},
+            {"role": "cult", "la": "Nanneti", "qid": "Q92", "label": "Nantes"},
+            {"role": "mention", "la": "Romae", "qid": "Q220", "label": "Rome"},
+            {"role": "burial", "la": "?", "qid": None, "label": None}]}
+        _, op = self.run_expand(self.op(companions=[], candidates=[]), client, places=places)
+        self.assertEqual(client.name_place_calls[0], ("Ioannes", ["Paris", "Nantes"]))
+        self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q7", "place")])
+
+    def test_name_and_place_route_searches_the_vernacular_forms(self):
+        self.assertEqual(bp.fulltext_names({"name": "Rogerius", "also": []}),
+                         ["Rogerius", "Roger", "Rogere", "Rogerio"])
+        self.assertEqual(bp.fulltext_names({"name": "Aemiliana", "also": []}),
+                         ["Aemiliana", "Aemilian", "Aemiliane", "Emilian", "Emiliana", "Emiliane"])
+        names = bp.fulltext_names({"name": "Paulus Miki", "also": ["Paulus"]})
+        self.assertEqual(names[:5], ["Paulus Miki", "Paulus", "Paul", "Paule", "Paulo"])
+        self.assertEqual(len(names), len(set(names)))
+
+    def test_name_and_place_route_searches_the_full_name_and_its_other_names(self):
+        client = self.Client()
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Lutetiae", "qid": "Q90", "label": "Paris"}]}
+        op = self.op(name="Ioannes Lego", also=["Ioannes Baptista Lego", "Ioannes Lego"], companions=[], candidates=[])
+        self.run_expand(op, client, record={"id": op["eulogy"], "name": "Ioannes Lego", "kind": "person"}, places=places)
+        called = [n for n, _ in client.name_place_calls]
+        self.assertEqual(called[0], "Ioannes Lego")
+        self.assertIn("Ioannes Baptista Lego", called)
+        self.assertEqual(len(called), len(set(called)))
+
+    def test_name_and_place_route_does_not_repeat_a_place_candidate(self):
+        client = self.Client()
+        client.place = [cand("Q6", ["Ioannes"])]
+        client.name_place = [cand("Q6", ["Ioannes"])]
+        places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Romae", "qid": "Q91", "label": "Rome"}]}
+        _, op = self.run_expand(self.op(companions=[], candidates=[]), client, places=places)
+        self.assertEqual([c["wikidata"] for c in op["candidates"]], ["Q6"])
+
     def test_no_place_route_without_places(self):
         client = self.Client()
         client.place = [cand("Q6", ["Ioannes"])]
         self.run_expand(self.op(companions=[]), client)
         self.assertEqual(client.place_calls, [])
+        self.assertEqual(client.name_place_calls, [])
 
     def test_death_day_uses_name_equivalents_and_year(self):
         client = self.Client()
@@ -982,7 +1084,32 @@ def admin(places=PLACES):
 
 def placed(qid, names, statuses=("Q43115",), **props):
     return dict(cand(qid, names, statuses=statuses), **{k: props.get(k, []) for k in
-                                     ("birth_place", "death_place", "burial_place", "work_places")})
+                                     ("birth_place", "death_place", "burial_place", "work_places", "signals")})
+
+
+class SaintSignalsTest(unittest.TestCase):
+    def test_a_saint_signal_counts_as_status(self):
+        op = dict(PERSON, also=[])
+        c = dict(cand("Q1", ["Paul Miki"], statuses=()), signals=["P8080"])
+        self.assertIn("status", bp.evidence(op, c))
+        self.assertTrue(bp._appliable(c))
+        self.assertNotIn("status", bp.evidence(op, dict(c, signals=[])))
+        self.assertFalse(bp._appliable(dict(c, signals=[])))
+        self.assertFalse(bp._appliable(dict(c, human=False)))
+
+    def test_annotate_fetches_the_signals_of_an_older_candidate(self):
+        old = dict(placed("Q1", ["Paul Miki"], statuses=()))
+        old.pop("signals")
+        result = bp.evaluate(PERSON, [old])
+        op = bp.make_op("mr:0206-paulus-miki-et-socii|Paulus Miki", PERSON, result, None)
+        op["candidates"][0].pop("signals", None)
+        client = FakeClient(by_qid={"Q1": dict(placed("Q1", ["Paul Miki"], statuses=()), signals=["P6126"])},
+                            places=PLACES)
+        bp.annotate_places([op], {PERSON["eulogy"]: []}, client)
+        c = op["candidates"][0]
+        self.assertEqual(client.people_calls, [["Q1"]])
+        self.assertEqual(c["signals"], ["P6126"])
+        self.assertEqual(c["evidence"][:2], ["human", "status"])
 
 
 class PlaceAgreementTest(unittest.TestCase):

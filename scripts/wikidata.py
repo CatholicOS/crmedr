@@ -51,6 +51,15 @@ SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
 # A companion's kin: sibling, relative, spouse, child, mother, father.
 RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
+# Statements a saint's or a blessed's item carries, for the full-text search: canonization
+# status, feast day, and the Santi e Beati, Ökumenisches Heiligenlexikon, Nominis and GCatholic
+# person IDs and the Heiligen.net ID (many saints' items have one of these without a P411: Lucian
+# of Lentini, Theogenes of Parium). GCatholic lists every bishop, saint or not; the name and the
+# place still bound the search.
+SAINT_SIGNALS = ("P411", "P841", "P6126", "P8080", "P4286", "P8366", "P10799")
+# The signals that count as a saint's status besides P411 (summarize_person `signals`): not the
+# GCatholic person ID, which bounds the search but lists bishops who are no saints.
+STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
 # A label's languages, in order: "mul" last, the one name Wikidata now keeps for every language
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
@@ -257,6 +266,8 @@ def summarize_person(raw):
         "born": _date(claims, "P569"),
         "died": _date(claims, "P570"),
         "feast": ids("P841"),
+        "signals": [p for p in STATUS_SIGNALS
+                    if any(c.get("rank") != "deprecated" for c in claims.get(p, []))],
         "birth_place": current_qids(claims, "P19"),
         "death_place": current_qids(claims, "P20"),
         "burial_place": current_qids(claims, "P119"),
@@ -504,6 +515,19 @@ class Wikidata:
             return []
         best = _best_named(rows, given, matches)
         return self._tagged({q: "place" for q in best[:MAX_SPARQL]})
+
+    def saints_by_name_and_place(self, name, labels):
+        """Saints and blessed that Wikidata's full-text search finds for the name with one of these
+        place labels ("Florentius Vienne"): it reads labels, aliases and descriptions in every
+        language, so it finds an item whose place statements are missing or unknown. Humans with
+        one of the SAINT_SIGNALS only; at most 5 per place, in the search's order, tagged "place"."""
+        found = {}
+        for label in dict.fromkeys(labels):
+            data = self._api(action="query", list="search", srnamespace="0", srlimit="5",
+                             srsearch=f"{name} {label} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
+            for hit in data.get("query", {}).get("search", []):
+                found.setdefault(hit["title"], "place")
+        return self._tagged(found) if found else []
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""

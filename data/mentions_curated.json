@@ -5697,6 +5697,52 @@
           ]
         }
       ],
+      "mr:0109-eustratius-thaumaturgus": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 49,
+          "check": "1dccf5aa",
+          "qid": "Q925688",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 65,
+          "check": "c4c64456",
+          "name": "Eustratius Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 86,
+          "check": "91b1ff2d",
+          "name": "Eustratius Thaumaturgus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 98,
+          "end": 116,
+          "check": "20682dac",
+          "qid": null,
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        }
+      ],
       "mr:0116-marcellus-i": [
         {
           "kind": "place",
