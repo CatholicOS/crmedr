@@ -534,9 +534,10 @@ class Wikidata:
     def saints_by_name(self, name):
         """The saints and blessed the full-text search finds for the name alone, when no more than
         RARE_NAME_HITS bear it (Nathalan, whose item has no place): a common name finds too many to
-        offer. Humans with one of the SAINT_SIGNALS only, tagged "name"."""
+        offer. The name is sought in labels and aliases only (inlabel), not in descriptions that
+        merely mention it. Humans with one of the SAINT_SIGNALS only, tagged "name"."""
         data = self._api(action="query", list="search", srnamespace="0", srlimit=str(RARE_NAME_HITS + 1),
-                         srsearch=f"{name} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
+                         srsearch=f"inlabel:{name} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
         hits = [hit["title"] for hit in data.get("query", {}).get("search", [])]
         if not hits or len(hits) > RARE_NAME_HITS:
             return []

@@ -771,6 +771,13 @@ class ExpandTest(unittest.TestCase):
     def test_name_and_place_route_searches_the_eulogy_vernacular_names(self):
         # Gudila is Gudula on Wikidata, as in the English eulogy: its spellings are her own names.
         client = self.Client()
+        gudula = cand("Q267660", ["Gudula"])
+
+        def name_place(name, labels):
+            client.name_place_calls.append((name, list(labels)))
+            return [dict(gudula, source="place")] if name == "Gudula" else []
+
+        client.saints_by_name_and_place = name_place
         places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Morsellae", "qid": "Q836859", "label": "Moorsel"}]}
         op = self.op(name="Gudila", companions=[], candidates=[])
         bp.expand(bp.new_changeset([op]), {}, {op["eulogy"]: [{"id": op["eulogy"], "name": "Gudila", "kind": "person"}]},
@@ -778,6 +785,7 @@ class ExpandTest(unittest.TestCase):
         called = [n for n, _ in client.name_place_calls]
         self.assertEqual(called[:2], ["Gudila", "Gudula"])
         self.assertEqual(len(called), len(set(called)))
+        self.assertIn("Q267660", [c["wikidata"] for c in op["candidates"]])
 
     def test_vernacular_names_are_not_a_companion_s(self):
         # "Saint Gudula" names the eulogy's subject, not each of the persons it lists.
