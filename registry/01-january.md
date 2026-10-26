@@ -178,7 +178,7 @@
 | 13 | 11 | `mr:0113-dominicus-pham-trong-kham-et-lucas-thin` |  | VN | dies_natalis |  |  |
 | 13 | 12 | `mr:0113-aemilius-szramek` | * | DE | dies_natalis |  |  |
 | 14 | 1 | `mr:0114-potitus` |  | BG | commemoratio | same as `mr:0113-potitus` |  |
-| 14 | 2 | `mr:0114-glycerius` |  | TR | dies_natalis |  |  |
+| 14 | 2 | `mr:0114-glycerius` |  | TR | dies_natalis | same as `mr:0107-clerus` |  |
 | 14 | 3 | `mr:0114-felix` |  | IT | dies_natalis |  |  |
 | 14 | 4 | `mr:0114-monachi-raithi` |  | EG | commemoratio |  |  |
 | 14 | 5 | `mr:0114-nino` |  | GE | dies_natalis |  |  |

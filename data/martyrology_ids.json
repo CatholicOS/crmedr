@@ -4905,6 +4905,9 @@
           "label": "Antioch",
           "country": "TR"
         }
+      ],
+      "same_eulogy": [
+        "mr:0107-clerus"
       ]
     },
     {
@@ -133967,7 +133970,11 @@
       "entry": 3,
       "deprecated": true,
       "attested_in": "martyrologium_romanum_1749",
-      "country": "TR"
+      "country": "TR",
+      "same_eulogy": [
+        "mr:0114-glycerius"
+      ],
+      "note": "The 2004 edition commemorates a deacon and martyr of Antioch on 14 January as Glycerius (mr:0114-glycerius) and does not print Clerus, who is probably the same martyr under a corrupted name: the Bibliotheca Sanctorum takes Baronius's “Clerus” for a second entry of Glycerius; the Hieronymian Martyrology gives the name of the Antioch deacon in several forms (one manuscript has a deacon Lucerus at Antioch on 7 January) on 7, 13 and 15 January; and the other names recorded for Clerus (Licerius, Lycerius, Lucerius, Bilicerius) are forms of Glycerius. Not settled: no source states the identification outright or explains the 2004 date, 14 January, which is the day the Syriac Martyrology gives a deacon Glycerius of Nicomedia; and some calendars have Glycerius of Antioch drowned, as the Syriac Martyrology says of another Glycerius at Antioch (8 June), where the historical editions have Clerus beheaded."
     },
     {
       "id": "mr:0107-felix-et-ianuarius",
