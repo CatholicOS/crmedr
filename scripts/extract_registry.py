@@ -48,6 +48,11 @@ ENTRY_NOTES = {
         "Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of "
         "the same commemoration."
     ),
+    "mr:0115-maurus": (
+        "The 1749 and 1914 editions identify this abbot with Maurus, the disciple of Saint "
+        "Benedict, whom Benedict sent into Gaul; the 2004 edition commemorates the abbot of "
+        "Glanfeuil without that identification."
+    ),
     "mr:1105-theotimus-et-socii": (
         "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition "
         "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
