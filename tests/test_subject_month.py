@@ -66,6 +66,17 @@ class MergeTest(unittest.TestCase):
         self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by place",
                                  "m2|Bo: rejected, reopened: the rebuild found Q2 by place"])
 
+    def test_a_reject_reopened_when_the_rebuild_finds_a_saint_by_name(self):
+        old_c = [{"wikidata": "Q1", "source": "search"}]
+        prefilled = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c,
+                     "decision": "reject", "prefilled": "jev", "jev": {"decision": "reject"}}
+        fresh = {"op": "resolve_person", "id": "m1|Ann",
+                 "candidates": old_c + [{"wikidata": "Q2", "source": "name"},
+                                        {"wikidata": "Q3", "source": "place"}]}
+        out, notes = sm.merge(doc(prefilled), doc(fresh))
+        self.assertEqual(out["operations"], [fresh])
+        self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by name, Q3 by place"])
+
     def test_a_reject_kept_without_a_new_place_candidate(self):
         old_c = [{"wikidata": "Q1", "source": "search"}, {"wikidata": "Q2", "source": "place"}]
         a = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c, "decision": "reject"}
