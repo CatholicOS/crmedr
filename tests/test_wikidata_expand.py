@@ -167,6 +167,15 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
         self.assertEqual(query["maxlag"], ["5"])
 
+    def test_saints_by_name_only_when_few_bear_it(self):
+        fake = Fake(fulltext={"Nathalan": ["Q300"], "Ioannes": ["Q1", "Q2", "Q3", "Q4"]})
+        wd = self.wd(fake)
+        self.assertEqual([(c["wikidata"], c["source"]) for c in wd.saints_by_name("Nathalan")], [("Q300", "name")])
+        self.assertEqual(wd.saints_by_name("Ioannes"), [])  # more than RARE_NAME_HITS saints bear it
+        query = urllib.parse.parse_qs(urllib.parse.urlparse([u for u in fake.urls if "list=search" in u][0]).query)
+        self.assertEqual(query["srsearch"], ["Nathalan haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
+        self.assertEqual(query["srlimit"], ["4"])
+
     def test_saints_by_name_and_place_without_places_asks_nothing(self):
         fake = Fake()
         self.assertEqual(self.wd(fake).saints_by_name_and_place("Ioannes", []), [])
