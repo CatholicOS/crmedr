@@ -10,8 +10,9 @@ decided one that is missing raises ValueError (nothing is written). Operations a
 `uid`, else `id`.
 
 A person card decided "reject" (by the curator or prefilled) is reopened, taken as rebuilt and
-named in the notes, when the rebuild offers a candidate found by place that the card did not
-have: the reject said none of the old candidates was the person, not the new one.
+named in the notes, when the rebuild offers a candidate found by place, or a saint found by name
+alone (the rare-name route), that the card did not have: the reject said none of the old
+candidates was the person, not the new one.
 
 A relabel is merged as any other operation: the subject follows the decided ID at apply
 (apply_renames.py) and on the card, so neither its order nor its labels are rewritten here.
@@ -35,13 +36,18 @@ def _decided(op):
     return op.get("decision") is not None or bool(op.get("prefilled"))
 
 
+# The routes whose new candidates reopen a rejected person card.
+REOPENING_SOURCES = ("place", "name")
+
+
 def _new_place_candidates(op, fresh):
-    """The rebuilt card's place-route candidates a rejected person card did not offer."""
+    """The rebuilt card's place-route and name-route candidates a rejected person card did not
+    offer, each as "QID by route"."""
     if op["op"] != "resolve_person" or op.get("decision") != "reject" or fresh is None:
         return []
     had = {c["wikidata"] for c in op.get("candidates", [])}
-    return [c["wikidata"] for c in fresh.get("candidates", [])
-            if c.get("source") == "place" and c["wikidata"] not in had]
+    return [f"{c['wikidata']} by {c['source']}" for c in fresh.get("candidates", [])
+            if c.get("source") in REOPENING_SOURCES and c["wikidata"] not in had]
 
 
 def merge(old, rebuilt):
@@ -57,7 +63,7 @@ def merge(old, rebuilt):
         found = _new_place_candidates(op, fresh.get(key))
         if found:
             ops.append(fresh[key])
-            notes.append(f"{key}: rejected, reopened: the rebuild found {', '.join(found)} by place")
+            notes.append(f"{key}: rejected, reopened: the rebuild found {', '.join(found)}")
         elif _decided(op):
             ops.append(op)
         elif key in fresh:
