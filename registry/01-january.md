@@ -193,7 +193,7 @@
 | 15 | 2 | `mr:0115-ioannes-calybita` |  | TR | dies_natalis |  |  |
 | 15 | 3 | `mr:0115-ita` | * | IE | dies_natalis |  |  |
 | 15 | 4 | `mr:0115-probus` |  | IT | commemoratio |  |  |
-| 15 | 5 | `mr:0115-maurus` |  | FR | dies_natalis |  |  |
+| 15 | 5 | `mr:0115-maurus` |  | FR | dies_natalis |  | The 1749 and 1914 editions identify this abbot with Maurus, the disciple of Saint Benedict, whom Benedict sent into Gaul; the 2004 edition commemorates the abbot of Glanfeuil without that identification. |
 | 15 | 6 | `mr:0115-tarsicia` | * | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0115-ablebertus` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Olanda" for "Haméti in Brabántia", which lies in present-day Belgium. |
 | 15 | 8 | `mr:0115-malardus` | * | FR | dies_natalis |  |  |
