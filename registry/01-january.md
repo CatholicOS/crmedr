@@ -173,7 +173,7 @@
 | 13 | 6 | `mr:0113-petrus` |  | JO | dies_natalis |  |  |
 | 13 | 7 | `mr:0113-gumesindus-et-servusdei` |  | ES | dies_natalis |  |  |
 | 13 | 8 | `mr:0113-godefridus` | * | DE | dies_natalis |  |  |
-| 13 | 9 | `mr:0113-iutta` | * | BE | dies_natalis |  | 2004 English: Translation error: "of Saint Lutgardis" where the Latin has sanctæ Iuttæ and the Italian (CEI) santa Ivetta: she is Yvette (Jutta) of Huy; Lutgardis is commemorated on 16 June. The English text and subject follow the Latin. |
+| 13 | 9 | `mr:0113-iutta` | * | BE | dies_natalis |  | 2004 English: Translation error: "of Saint Lutgardis" where the Latin has sanctæ Iuttæ and the Italian (CEI) santa Ivetta: she is Yvette (Jutta) of Huy; Lutgardis is commemorated on 16 June. The English subject follows the Latin. |
 | 13 | 10 | `mr:0113-veronica-de-binasco` | * | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:0113-dominicus-pham-trong-kham-et-lucas-thin` |  | VN | dies_natalis |  |  |
 | 13 | 12 | `mr:0113-aemilius-szramek` | * | DE | dies_natalis |  |  |
