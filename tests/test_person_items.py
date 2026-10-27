@@ -699,6 +699,15 @@ class ExpandTest(unittest.TestCase):
         # the first stays (an accept means candidates[0]), and so does the decided pick
         self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
 
+    def test_expand_drops_an_open_cards_first_group_member_that_does_not_fit(self):
+        # Andreas Duliou, in the footnote of Turpin du Cormier and companions, was offered only
+        # Turpin du Cormier's item: on an open card the first candidate has no accept to keep.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        member = lambda q, n: dict(cand(q, [n]), source="companion:P361", evidence=["human"])
+        op = self.op(candidates=[member("Q1", "Odile Baumgarten"), member("Q3", "Jean Légo")])
+        _, got = self.run_expand(op, client)
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q3"])
+
     def test_a_second_given_name_is_not_a_surname(self):
         # Maria Anna Vaillot does not fit Anna Francisca de Villeneuve, a martyr of the same group.
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})

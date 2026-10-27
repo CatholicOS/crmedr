@@ -615,13 +615,18 @@ def _fits_group_member(op, c):
     return bool(surnames & {t for nm in names for t in _tokens(nm)})
 
 
+def _decided_op(op):
+    return op.get("decision") is not None or bool(op.get("prefilled"))
+
+
 def _drop_unfit_group_members(op):
     """Drop the companions' group members (companion:P361) whose names do not fit the person, as
-    an earlier expand added them; the first candidate (an accept without a suggestion means it)
-    and the decided pick stay."""
+    an earlier expand added them; on a decided or prefilled card the first candidate (an accept
+    without a suggestion means it) and the decided pick stay."""
     pick = (op.get("edited") or {}).get("wikidata")
+    first = _decided_op(op)
     op["candidates"] = [c for i, c in enumerate(op["candidates"])
-                        if i == 0 or c["wikidata"] == pick or c.get("source") != "companion:P361"
+                        if (first and i == 0) or c["wikidata"] == pick or c.get("source") != "companion:P361"
                         or _fits_group_member(op, c)]
 
 
