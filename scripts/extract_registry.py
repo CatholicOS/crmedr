@@ -53,6 +53,13 @@ ENTRY_NOTES = {
         "Benedict, whom Benedict sent into Gaul; the 2004 edition commemorates the abbot of "
         "Glanfeuil without that identification."
     ),
+    "mr:0118-prisca": (
+        "The 1749 and 1914 editions commemorate the passion of Prisca, virgin and martyr under "
+        "Claudius; the 2004 edition commemorates only the saint whose name the basilica on the "
+        "Aventine bears. Tradition holds the titulus Priscae to be the house church of Aquila and "
+        "Prisca, Paul's collaborators (Romans 16:3-5), whom the 2004 edition commemorates on "
+        "8 July (mr:0708-aquila-et-prisca); the Martyrology itself does not identify the two."
+    ),
     "mr:1105-theotimus-et-socii": (
         "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition "
         "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
