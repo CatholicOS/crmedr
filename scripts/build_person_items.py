@@ -603,13 +603,15 @@ def _surnames(op):
 
 def _fits_group_member(op, c):
     """A companion's group member (P361) fits the person: one of its names fits one of the
-    person's (_named), or it shares the person's surname (the last word, of four letters or more:
-    Aloysius Versiglia is Louis Versiglia in the labels loaded; Anna in Maria Anna Vaillot is a
-    given name)."""
+    person's (_named), or it shares one of the person's surnames (a later word of four letters or
+    more: Aloysius Versiglia is Louis Versiglia in the labels loaded) that is no given name of the
+    eulogy (Anna, in Maria Anna Vaillot, is Anna Hamard's)."""
     names = c.get("names", []) + [c.get("label", "")]
     if _named(op)(names):
         return True
-    surnames = {t for nm in [op["name"], *op.get("also", [])] for t in _tokens(nm)[1:][-1:] if len(t) >= 4}
+    given = {t[0] for nm in op.get("companions", []) if (t := _tokens(nm))}
+    surnames = {t for nm in [op["name"], *op.get("also", [])] for t in _tokens(nm)[1:]
+                if len(t) >= 4 and t not in given}
     return bool(surnames & {t for nm in names for t in _tokens(nm)})
 
 

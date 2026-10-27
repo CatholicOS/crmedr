@@ -36182,6 +36182,181 @@
               "Nam Định"
             ]
           }
+        },
+        {
+          "wikidata": "Q11694779",
+          "label": "Dominik Hà Trọng Mậu",
+          "description": "",
+          "names": [
+            "Dominik Hà Trọng Mậu"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1794",
+          "died": "1858-11-05",
+          "feast": [
+            "Q2993",
+            "Q3022"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q36485"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hưng Yên"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q11731134",
+          "label": "Joseph Phạm Trọng Tả",
+          "description": "",
+          "names": [
+            "Joseph Pham Trong Ta",
+            "Joseph Phạm Trọng Tả"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1750",
+          "died": "1859-03-11",
+          "feast": [
+            "Q3022"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q33682"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q33682",
+              "label": "Nam Định",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Nam Định"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q11814327",
+          "label": "Paulo Khoan Khan Pham",
+          "description": "",
+          "names": [
+            "Paulo Khoan Khan Pham"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1771",
+          "died": "1840-04-28",
+          "feast": [
+            "Q2534"
+          ],
+          "signals": [
+            "P841",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q881"
+          ],
+          "death_place": [
+            "Q33929"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Ninh Bình City"
+            ],
+            "birth_place": [
+              "Vietnam"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q9153817",
+          "label": "Andrew Trần Văn Trông",
+          "description": "",
+          "names": [
+            "Andrew Tran Van Trong",
+            "Andrew Trần Văn Trông"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1808",
+          "died": "1835-11-28",
+          "feast": [
+            "Q3022"
+          ],
+          "signals": [
+            "P841",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q36167"
+          ],
+          "death_place": [
+            "Q36160"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hội An"
+            ],
+            "birth_place": [
+              "Huế"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -61351,6 +61526,55 @@
               "Laval"
             ]
           }
+        },
+        {
+          "wikidata": "Q29635385",
+          "label": "Francois Migoret-Lamberdiere",
+          "description": "",
+          "names": [
+            "Franciscus Migoret",
+            "Franciscus Migoret-Lamberdière",
+            "Francois Migoret-Lamberdiere"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1727-08-28",
+          "died": "1794-01-21",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q1225535"
+          ],
+          "death_place": [
+            "Q184154"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q184154",
+              "label": "Laval",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Laval"
+            ],
+            "birth_place": [
+              "Lassay-les-Châteaux"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -77639,6 +77863,526 @@
             ],
             "birth_place": [
               "Guiyang"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103195",
+          "label": "Anna Wang",
+          "description": "Catholic Saint (1886–1900)",
+          "names": [
+            "Anna Wang"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1886",
+          "died": "1900-07-22",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103212",
+          "label": "Lucia Wang Wang",
+          "description": "",
+          "names": [
+            "Lucia Wang Wang"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1869",
+          "died": "1900-07-22",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103216",
+          "label": "John Wang Kuixin",
+          "description": "",
+          "names": [
+            "John Wang Kuixin"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1875",
+          "died": "1900-07-14",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103218",
+          "label": "Joseph Wang Kuiju",
+          "description": "",
+          "names": [
+            "Joseph Wang Kuiju"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1863",
+          "died": "1900-07-13",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103222",
+          "label": "John Wang Rui",
+          "description": "",
+          "names": [
+            "John Wang Rui"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1885-02-25",
+          "died": "1900-07-09",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q46913"
+          ],
+          "death_place": [
+            "Q72778"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Taiyuan"
+            ],
+            "birth_place": [
+              "Shanxi"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103227",
+          "label": "Martha Wang Luoshi",
+          "description": "Chinese laywoman, martyred, saint (1812–1861)",
+          "names": [
+            "Martha Wang Luoshi"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": "1812",
+          "died": "1861-07-29",
+          "feast": [
+            "Q2717",
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q47097"
+          ],
+          "death_place": [
+            "Q8733"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Qing dynasty"
+            ],
+            "birth_place": [
+              "Guizhou"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103237",
+          "label": "Andrzej Wang Tianqing",
+          "description": "",
+          "names": [
+            "Andrzej Wang Tianqing"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1891",
+          "died": "1900-07-22",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103241",
+          "label": "Peter Wang Zuolung",
+          "description": "",
+          "names": [
+            "Peter Wang Zuolung"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1842",
+          "died": "1900-07-06",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103246",
+          "label": "Lucy Wang Cheng",
+          "description": "",
+          "names": [
+            "Lucy Wang Cheng"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1882",
+          "died": "1900-07-28",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103247",
+          "label": "Piotr Wang Erman",
+          "description": "",
+          "names": [
+            "Piotr Wang Erman"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1864",
+          "died": "1900-07-09",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q46913"
+          ],
+          "death_place": [
+            "Q72778"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Taiyuan"
+            ],
+            "birth_place": [
+              "Shanxi"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4103248",
+          "label": "Joseph Wang Yumei",
+          "description": "",
+          "names": [
+            "Joseph Wang Yumei"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1823",
+          "died": "1900-07-21",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4260676",
+          "label": "Mary Wang",
+          "description": "",
+          "names": [
+            "Mary Li",
+            "Mary Wang",
+            "Mary Wang Li"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1851",
+          "died": "1900-07-22",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
             ]
           }
         }
