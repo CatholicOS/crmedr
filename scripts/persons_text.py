@@ -5,8 +5,10 @@ helpers read a subject, a footnote or a eulogy and return names.
 See docs/superpowers/specs/2026-10-08-persons-design.md.
 """
 
+import json
 import re
 import unicodedata
+from pathlib import Path
 
 from gazetteer_text import fold
 
@@ -82,6 +84,29 @@ def person_key(p):
     name, n = p.get("name"), p.get("n")
     n = 1 if n is None else n  # "n": null is the first too
     return name if n == 1 else f"{name}#{n}"
+
+
+DISCRIMINATORS = "data/subject_discriminators.json"
+
+
+def name_subjects(repo_root, lang):
+    """The eulogy subjects of i18n/<lang>.json as persons are named from them: without the words a
+    rename's discriminator added (data/subject_discriminators.json: "Sanctus Almachius Romae" names
+    Almachius, as "Sant’Almachio di Roma" names Almachio)."""
+    root = Path(repo_root)
+    source = root / "i18n" / f"{lang}.json"
+    subjects = json.loads(source.read_text(encoding="utf-8")) if source.exists() else {}
+    path = root / DISCRIMINATORS
+    added = json.loads(path.read_text(encoding="utf-8"))["discriminators"] if path.exists() else {}
+    out = {}
+    for mrid, subject in subjects.items():
+        words = (added.get(mrid) or {}).get(lang)
+        for sep in (", ", " "):  # "San Milziade, papa"
+            if isinstance(subject, str) and words and subject.endswith(sep + words):
+                subject = subject[:-len(sep + words)]
+                break
+        out[mrid] = subject
+    return out
 
 
 def subject_names(mrid, subject):

@@ -453,8 +453,42 @@ def _targets(repo_root):
     return targets
 
 
+DISCRIMINATORS = "data/subject_discriminators.json"
+DISCRIMINATORS_COMMENT = ("The words a rename's discriminator added to each eulogy's subject, by language "
+                          "(\"Romae\" in \"Sanctus Almachius Romae\", \"di Roma\" in \"Sant’Almachio di "
+                          "Roma\"): no part of a person's name; persons_text.name_subjects drops them. Written "
+                          "by scripts/apply_renames.py when a relabel extends a subject.")
+
+
+def _record_discriminators(rs, repo_root, files):
+    """Record, under the new ID and by language, the words each relabel adds after the current
+    subject (the subject follows the ID); a subject rewritten otherwise, or kept, records nothing."""
+    repo_root = Path(repo_root)
+    subjects = {lang: json.loads((repo_root / "i18n" / name).read_text(encoding="utf-8"))
+                for lang, name in LABEL_FILES.items()}
+    path = repo_root / DISCRIMINATORS
+    doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {
+        "$comment": DISCRIMINATORS_COMMENT, "discriminators": {}}
+    found = doc["discriminators"]
+    n = 0
+    for r in rs:
+        for lang in LABEL_FILES:
+            old, new = subjects[lang].get(r.new), r.labels.get(lang)
+            sep = next((s for s in (", ", " ") if isinstance(old, str) and new and new.startswith(old + s)), None)
+            if sep:  # "San Milziade" -> "San Milziade, papa"
+                entry = found.setdefault(r.new, {})
+                entry[lang] = " ".join(filter(None, [entry.get(lang), new[len(old + sep):]]))
+                n += 1
+    if n:
+        doc["discriminators"] = dict(sorted(found.items()))
+        path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        files[str(path)] = files.get(str(path), 0) + n
+
+
 def _write_labels(rs, repo_root, dry, files, errors):
     """Labels go to i18n/{la,en,it}.json; before the re-key (dry) an ID is still the old one."""
+    if not dry:
+        _record_discriminators(rs, repo_root, files)
     for lang, name in LABEL_FILES.items():
         labels = {(r.old if dry else r.new): r.labels[lang] for r in rs if r.labels.get(lang)}
         if not labels:

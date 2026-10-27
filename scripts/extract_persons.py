@@ -25,7 +25,7 @@ from extract_typology import latin_texts, load_texts
 from gazetteer_text import fold
 from mentions_text import find_person
 from persons_text import (WORD, _genitive_ending, footnote_names, full_variant, name_key, nominative, person_key,
-                          subject_names, text_companions, without_parentheses)
+                          subject_names, text_companions, without_parentheses, name_subjects)
 
 EDITION = "martyrologium_romanum_2004"
 COMMENT = ("The saints and blessed each eulogy commemorates, by edition: the Latin nominative name "
@@ -355,7 +355,7 @@ def main():
     entries = json.loads((repo_root / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))["entries"]
     current = [e for e in entries if not e.get("deprecated")]
     current.sort(key=lambda e: (e["month"], e["day"], e.get("entry") or 0))
-    subjects = json.loads((repo_root / "i18n" / "la.json").read_text(encoding="utf-8"))
+    subjects = name_subjects(repo_root, "la")
     curated_path = repo_root / "data" / "persons_curated.json"
     curated = {k: v for k, v in json.loads(curated_path.read_text(encoding="utf-8")).items()
                if not k.startswith("$")} if curated_path.exists() else {}

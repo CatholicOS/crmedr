@@ -375,6 +375,23 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual(read("la")["mr:0101-a"], "Sanctus A")
         self.assertEqual([c[1] for c in fake.calls], ["scripts/extract_registry.py", "-m"])
 
+    def test_a_relabel_that_extends_the_subject_records_the_added_words(self):
+        # The person keeps the name: extract_persons drops the words the ID's discriminator added.
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B"'))
+        doc = cs(op("mr:0101-b", "mr:0101-b-z", "edit", {"new_id": "mr:0101-b-y"},
+                    cands=self.cs["operations"][1]["candidates"]),
+                 relabel("mr:0101-b", "edit", {"labels": {"la": "Sanctus B Novus", "en": "en mr:0101-b-y the New",
+                                                        "it": "it mr:0101-b-y, abate"}}))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        path = self.root / "data" / "subject_discriminators.json"
+        # per language, after a space or a comma
+        self.assertEqual(json.loads(path.read_text())["discriminators"],
+                         {"mr:0101-b-y": {"la": "Novus", "en": "the New", "it": "abate"}})
+        before = path.read_bytes()
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)  # applied again: kept
+        self.assertEqual(path.read_bytes(), before)
+
     def test_relabel_decided_after_its_rename_was_applied(self):
         ids = self.root / "data" / "martyrology_ids.json"
         doc = cs(self.cs["operations"][0], relabel("mr:0101-a", decision=None))

@@ -23,6 +23,7 @@ from pathlib import Path
 
 import mentions_jev as mj
 from mentions_italian import ItalianNames
+from persons_text import name_subjects
 
 # Set from the evaluation of 2026-10-15 (jev-1.14.0; the spec's "Evaluation result"): the lowest
 # threshold at which the curator's own decisions agree at least 95% with a third or more suggested.
@@ -40,8 +41,7 @@ def load_data(repo_root):
     return {"persons": _read(data / "persons.json")["editions"]["martyrologium_romanum_2004"],
             "latin": mentions["martyrologium_romanum_2004"],
             "italian": mentions[mj.ITALIAN],
-            "names": ItalianNames(_read(Path(repo_root) / "i18n" / "la.json", {}),
-                                  _read(Path(repo_root) / "i18n" / "it.json", {}))}
+            "names": ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"))}
 
 
 def ask_card(op, data, client):
