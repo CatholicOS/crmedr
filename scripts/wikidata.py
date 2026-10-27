@@ -53,6 +53,9 @@ RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
 # The P31 values of a person: human, and human biblical figure (Anna the Prophetess, Q1774668).
 HUMAN_TYPES = ("Q5", "Q20643955")
+# The saint queries bind ?h to one of them; the full-text searches ask for one of them.
+HUMANS = "VALUES ?h { " + " ".join("wd:" + t for t in HUMAN_TYPES) + " } "
+HUMAN_SEARCH = "haswbstatement:" + "|".join("P31=" + t for t in HUMAN_TYPES)
 # Statements a saint's or a blessed's item carries, for the full-text search: canonization
 # status, feast day, and the Santi e Beati, Ökumenisches Heiligenlexikon, Nominis and GCatholic
 # person IDs and the Heiligen.net ID (many saints' items have one of these without a P411: Lucian
@@ -510,8 +513,8 @@ class Wikidata:
         langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
         years = f" FILTER(YEAR(?d) >= {int(year) - 1} && YEAR(?d) <= {int(year) + 1})" if year else ""
         rows = self._sparql(
-            f"SELECT DISTINCT ?p ?l ?s ?d ?prec ?cal WHERE {{ VALUES ?s {{ {statuses} }} "
-            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; p:P570/psv:P570 [wikibase:timeValue ?d; "
+            f"SELECT DISTINCT ?p ?l ?s ?d ?prec ?cal WHERE {{ VALUES ?s {{ {statuses} }} {HUMANS}"
+            f"?p wdt:P31 ?h; wdt:P411 ?s; p:P570/psv:P570 [wikibase:timeValue ?d; "
             f"wikibase:timePrecision ?prec; wikibase:timeCalendarModel ?cal] . "
             f"FILTER(?prec >= 11 && ({_stored_days(int(month), int(day))})){years} "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
@@ -532,7 +535,7 @@ class Wikidata:
         label = f"{MONTH_NAMES[month - 1]} {day}"
         rows = self._sparql(
             f'SELECT DISTINCT ?p ?l ?s WHERE {{ ?f wdt:P361 wd:{MONTHS[month - 1]}; rdfs:label "{label}"@en . '
-            f"?p wdt:P31 wd:Q5; wdt:P841 ?f . BIND(?f AS ?s) "
+            f"{HUMANS}?p wdt:P31 ?h; wdt:P841 ?f . BIND(?f AS ?s) "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
         best = _best_named(rows, given, matches)
         return self._tagged({q: "feast" for q in best[:MAX_SPARQL]})
@@ -549,8 +552,8 @@ class Wikidata:
         places = " ".join("wd:" + q for q in qids)
         langs = ", ".join(f'"{lang}"' for lang in NAME_LANGS)
         rows = self._sparql(
-            f"SELECT DISTINCT ?p ?l ?s WHERE {{ VALUES ?s {{ {statuses} }} VALUES ?place {{ {places} }} "
-            f"?p wdt:P31 wd:Q5; wdt:P411 ?s; (wdt:P20|wdt:P119) ?place . "
+            f"SELECT DISTINCT ?p ?l ?s WHERE {{ VALUES ?s {{ {statuses} }} VALUES ?place {{ {places} }} {HUMANS}"
+            f"?p wdt:P31 ?h; wdt:P411 ?s; (wdt:P20|wdt:P119) ?place . "
             f"?p rdfs:label|skos:altLabel ?l . FILTER(LANG(?l) IN ({langs})) }} ORDER BY ?p")
         if len({b["p"]["value"] for b in rows}) > MAX_PLACE_SAINTS:
             return []
@@ -565,7 +568,7 @@ class Wikidata:
         found = {}
         for label in dict.fromkeys(labels):
             data = self._api(action="query", list="search", srnamespace="0", srlimit="5",
-                             srsearch=f"{name} {label} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
+                             srsearch=f"{name} {label} {HUMAN_SEARCH} haswbstatement:{'|'.join(SAINT_SIGNALS)}")
             for hit in data.get("query", {}).get("search", []):
                 found.setdefault(hit["title"], "place")
         return self._tagged(found) if found else []
@@ -576,7 +579,7 @@ class Wikidata:
         offer. The name is sought in labels and aliases only (inlabel), not in descriptions that
         merely mention it. Humans with one of the SAINT_SIGNALS only, tagged "name"."""
         data = self._api(action="query", list="search", srnamespace="0", srlimit=str(RARE_NAME_HITS + 1),
-                         srsearch=f"inlabel:{name} haswbstatement:P31=Q5 haswbstatement:{'|'.join(SAINT_SIGNALS)}")
+                         srsearch=f"inlabel:{name} {HUMAN_SEARCH} haswbstatement:{'|'.join(SAINT_SIGNALS)}")
         hits = [hit["title"] for hit in data.get("query", {}).get("search", [])]
         if not hits or len(hits) > RARE_NAME_HITS:
             return []

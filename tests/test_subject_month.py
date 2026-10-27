@@ -78,6 +78,19 @@ class MergeTest(unittest.TestCase):
         self.assertEqual(out["operations"], [fresh])
         self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by name, Q3 by place, Q4 by feast"])
 
+    def test_a_reject_reopened_by_the_death_day_or_a_group_member(self):
+        # Maria a Iesu's item came by her death day, Otho's as a member of his companions' group.
+        old_c = [{"wikidata": "Q1", "source": "search"}]
+        prefilled = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c,
+                     "decision": "reject", "prefilled": "jev", "jev": {"decision": "reject"}}
+        fresh = {"op": "resolve_person", "id": "m1|Ann",
+                 "candidates": old_c + [{"wikidata": "Q2", "source": "sparql"},
+                                        {"wikidata": "Q3", "source": "companion:P361"},
+                                        {"wikidata": "Q4", "source": "companion:P3373"}]}
+        out, notes = sm.merge(doc(prefilled), doc(fresh))
+        self.assertEqual(out["operations"], [fresh])
+        self.assertEqual(notes, ["m1|Ann: rejected, reopened: the rebuild found Q2 by sparql, Q3 by companion:P361"])
+
     def test_a_reject_kept_without_a_new_place_candidate(self):
         old_c = [{"wikidata": "Q1", "source": "search"}, {"wikidata": "Q2", "source": "place"}]
         a = {"op": "resolve_person", "id": "m1|Ann", "candidates": old_c, "decision": "reject"}
