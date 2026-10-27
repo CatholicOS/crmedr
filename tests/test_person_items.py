@@ -947,6 +947,17 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
         self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "curated")])
 
+    def test_a_curated_title_displaces_the_last_search_candidate_at_the_cap(self):
+        client = self.Client(by_qid={"Q208542": cand("Q208542", ["Theotokos"], human=False)})
+        searched = [dict(cand(f"Q{100 + i}", ["Maria"]), source="search", evidence=[]) for i in range(bp.MAX_EXPANDED)]
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     companions=[], candidates=searched)
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        qids = [c["wikidata"] for c in got["candidates"]]
+        self.assertEqual(len(qids), bp.MAX_EXPANDED)
+        self.assertEqual(qids[0], "Q100")
+        self.assertIn("Q208542", qids)
+
     def test_cap_keeps_existing_candidates(self):
         client = self.Client()
         client.day = [cand(f"Q{100 + i}", ["John"]) for i in range(20)]
