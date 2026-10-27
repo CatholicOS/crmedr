@@ -57,7 +57,7 @@ class Fake:
             return self.sparql
         if "list=search" in url:
             text = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)["srsearch"][0]
-            text = text.replace(" haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799", "")
+            text = text.replace(" haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799", "")
             return {"query": {"search": [{"title": q} for q in self.fulltext.get(text, [])]}}
         if "wbsearchentities" in url:
             return {"search": [{"id": q} for q in self.search]}
@@ -164,8 +164,19 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q300", "feast")])
         query = self.query(fake)
         self.assertIn('?f wdt:P361 wd:Q108; rdfs:label "January 8"@en', query)
-        self.assertIn("?p wdt:P31 wd:Q5; wdt:P841 ?f", query)
+        self.assertIn("?p wdt:P31 ?h; wdt:P841 ?f", query)
         self.assertIn('?f wdt:P361 wd:Q109; rdfs:label "February 29"@en', self._feast_query(2, 29))
+
+    def test_the_saint_queries_take_every_human_type(self):
+        # Anna the Prophetess is a human biblical figure (Q20643955), not Q5: her feast was missed.
+        for ask in (lambda w: w.saints_by_death_day(2, 3, ["Anna"]), lambda w: w.saints_by_feast_day(2, 3, ["Anna"]),
+                    lambda w: w.saints_by_place(["Q90"], ["Anna"])):
+            fake = Fake(bindings([]))
+            ask(self.wd(fake))
+            query = self.query(fake)
+            self.assertIn("VALUES ?h { wd:Q5 wd:Q20643955 }", query)
+            self.assertIn("?p wdt:P31 ?h;", query)
+            self.assertNotIn("wd:Q5;", query)
 
     def _feast_query(self, month, day):
         fake = Fake(bindings([]))
@@ -192,7 +203,7 @@ class ExpandTest(unittest.TestCase):
         searches = [u for u in fake.urls if "list=search" in u]
         self.assertEqual(len(searches), 2)  # one per distinct place
         query = urllib.parse.parse_qs(urllib.parse.urlparse(searches[0]).query)
-        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
+        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
         self.assertEqual(query["maxlag"], ["5"])
 
     def test_saints_by_name_only_when_few_bear_it(self):
@@ -201,7 +212,7 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([(c["wikidata"], c["source"]) for c in wd.saints_by_name("Nathalan")], [("Q300", "name")])
         self.assertEqual(wd.saints_by_name("Ioannes"), [])  # more than RARE_NAME_HITS saints bear it
         query = urllib.parse.parse_qs(urllib.parse.urlparse([u for u in fake.urls if "list=search" in u][0]).query)
-        self.assertEqual(query["srsearch"], ["inlabel:Nathalan haswbstatement:P31=Q5 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
+        self.assertEqual(query["srsearch"], ["inlabel:Nathalan haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
         self.assertEqual(query["srlimit"], ["4"])
 
     def test_saints_by_name_and_place_without_places_asks_nothing(self):

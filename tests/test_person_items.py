@@ -898,6 +898,12 @@ class ExpandTest(unittest.TestCase):
         self.assertTrue(fits("Gaspar de Bono", "Gaspar Bono"))
         self.assertTrue(fits("Gaspar Bono", "Gaspar de Bono"))
 
+    def test_a_latin_title_is_not_a_name_word(self):
+        fits = bp._name_fits
+        self.assertTrue(fits("Anna Prophetissa", "Anna"))
+        self.assertTrue(fits("Paulus Apostolus", "Paul"))
+        self.assertFalse(fits("Anna Prophetissa", "Maria"))
+
     def companion_op(self, evidence):
         return self.op(id="mr:0101-ioannes-et-renatus-lego|Renatus Lego", name="Renatus Lego", companions=[],
                        candidates=[dict(cand("Q2652595", ["Renatus Lego"]), evidence=evidence)])
@@ -941,12 +947,48 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
         self.assertEqual([(c["wikidata"], c["source"]) for c in got["candidates"]], [("Q208542", "curated")])
 
+    def test_a_curated_title_displaces_the_last_search_candidate_at_the_cap(self):
+        client = self.Client(by_qid={"Q208542": cand("Q208542", ["Theotokos"], human=False)})
+        searched = [dict(cand(f"Q{100 + i}", ["Maria"]), source="search", evidence=[]) for i in range(bp.MAX_EXPANDED)]
+        op = self.op(id="mr:0101-maria-dei-genetrix|Maria", eulogy="mr:0101-maria-dei-genetrix", name="Maria",
+                     companions=[], candidates=searched)
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": "Maria", "kind": "celebration"})
+        qids = [c["wikidata"] for c in got["candidates"]]
+        self.assertEqual(len(qids), bp.MAX_EXPANDED)
+        self.assertEqual(qids[0], "Q100")
+        self.assertIn("Q208542", qids)
+
     def test_cap_keeps_existing_candidates(self):
         client = self.Client()
         client.day = [cand(f"Q{100 + i}", ["John"]) for i in range(20)]
         _, op = self.run_expand(self.op(companions=[]), client)
         self.assertEqual(len(op["candidates"]), bp.MAX_EXPANDED)
         self.assertIn("Q9", {c["wikidata"] for c in op["candidates"]})
+
+    def test_a_saint_route_displaces_the_last_search_candidates_at_the_cap(self):
+        # Emeritus of Abitinae: found by his feast behind 15 namesakes from the search.
+        client = self.Client()
+        client.feast = [cand("Q500", ["Ioannes"])]
+        searched = [dict(cand(f"Q{100 + i}", ["John"]), source="search", evidence=[]) for i in range(14)]
+        op = self.op(companions=[], candidates=self.op()["candidates"] + searched,
+                     decision="reject", edited={"wikidata": "Q113"})
+        _, got = self.run_expand(op, client)
+        qids = [c["wikidata"] for c in got["candidates"]]
+        self.assertEqual(len(qids), bp.MAX_EXPANDED)
+        self.assertEqual(qids[0], "Q9")  # an accept without a suggestion means candidates[0]
+        self.assertIn("Q500", qids)
+        self.assertIn("Q113", qids)  # the decided pick stays
+        self.assertNotIn("Q112", qids)  # the last search candidate but the pick makes room
+
+    def test_a_kin_candidate_does_not_displace_at_the_cap(self):
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q600", ["Ioannes Lego"]), source="companion:P3373")]}
+        searched = [dict(cand(f"Q{100 + i}", ["John"]), source="search", evidence=[]) for i in range(14)]
+        _, got = self.run_expand(self.op(candidates=self.op()["candidates"] + searched), client)
+        self.assertNotIn("Q600", [c["wikidata"] for c in got["candidates"]])
+
+    def test_paul_is_a_curated_title(self):
+        self.assertEqual(bp.CURATED_TITLES["mr:0125-conversio-pauli-apostoli"], "Q9200")
 
     def test_decision_untouched_and_failure_continues(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})

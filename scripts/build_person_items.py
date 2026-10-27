@@ -48,11 +48,18 @@ QID = re.compile(r"^Q[1-9]\d*$")
 CONFIDENCES = {"high", "medium", "low"}
 MAX_CANDIDATES = 10
 MAX_EXPANDED = 15  # an expanded op also holds the candidates of the three extra routes
+# The routes that find a saint by the eulogy's own facts: at the cap, their candidates take the
+# places of the last plain-search ones.
+SAINT_ROUTES = ("sparql", "feast", "place", "name", "companion:P361")
+# The routes whose candidates make room at the cap: the saint routes and a curator's title.
+ROOM_ROUTES = SAINT_ROUTES + ("curated",)
 # Celebrations whose title item a curator confirmed (eulogy -> QID); nothing is added here unconfirmed.
-CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542"}
+CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
-               "blessed", "the", "of", "sanctus", "sancta", "beatus"}
+               "blessed", "the", "of", "sanctus", "sancta", "beatus",
+               # Latin titles a card's name carries (Anna Prophetissa, Paulus Apostolus)
+               "propheta", "prophetissa", "apostolus"}
 # Latin first names whose vernacular forms share no prefix with them.
 NAME_EQUIVALENTS = {
     "renatus": {"rene", "renato"},
@@ -628,11 +635,24 @@ def expand(review, items, records, client, places=None, vernacular=None):
                 added.append(dict(c, evidence=evidence(op, c)))
             elif c.get("source") in TITLE_SOURCES:
                 have[c["wikidata"]]["source"] = c["source"]  # a title item the search found too
-        added.sort(key=lambda c: (-len(c["evidence"]), c["wikidata"]))
+        added.sort(key=lambda c: (c.get("source") not in ROOM_ROUTES, -len(c["evidence"]), c["wikidata"]))
+        _make_room(op, sum(c.get("source") in ROOM_ROUTES for c in added))
         # Existing candidates keep their places: an accept without a suggestion means candidates[0].
         op["candidates"] += added[:max(0, MAX_EXPANDED - len(op["candidates"]))]
     review["generated_at"] = datetime.date.today().isoformat()
     return not_processed
+
+
+def _make_room(op, wanted):
+    """Drop the last plain-search candidates (never the first, nor the decided pick) so that
+    `wanted` candidates from ROOM_ROUTES fit under MAX_EXPANDED: Emeritus of Abitinae, found by his
+    feast behind 15 namesakes from the search."""
+    short = wanted - (MAX_EXPANDED - len(op["candidates"]))
+    pick = (op.get("edited") or {}).get("wikidata")
+    weak = [i for i, c in enumerate(op["candidates"])
+            if i > 0 and c.get("source") == "search" and c["wikidata"] != pick]
+    drop = set(weak[len(weak) - short:]) if short > 0 else set()
+    op["candidates"] = [c for i, c in enumerate(op["candidates"]) if i not in drop]
 
 
 def _is_saint(c):
