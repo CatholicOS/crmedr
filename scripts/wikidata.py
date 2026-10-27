@@ -51,9 +51,10 @@ SAINT_STATUSES = {"Q43115", "Q3464126", "Q123110154", "Q2369287",
 # A companion's kin: sibling, relative, spouse, child, mother, father.
 RELATIVE_PROPS = ("P3373", "P1038", "P26", "P40", "P25", "P22")
 NAME_LANGS = ("la", "it", "en", "fr", "es", "de")
-# The P31 values of a person: human, human biblical figure (Anna the Prophetess, Q1774668), and
-# human whose existence is disputed (the legendary saints: Prisca, Q426200).
-HUMAN_TYPES = ("Q5", "Q20643955", "Q21070568")
+# The P31 values of a person: human, human biblical figure (Anna the Prophetess, Q1774668),
+# human whose existence is disputed (the legendary saints: Prisca, Q426200) and its subclass
+# legendary saint (Martina, Q272101).
+HUMAN_TYPES = ("Q5", "Q20643955", "Q21070568", "Q113371917")
 # The saint queries bind ?h to one of them; the full-text searches ask for one of them.
 HUMANS = "VALUES ?h { " + " ".join("wd:" + t for t in HUMAN_TYPES) + " } "
 HUMAN_SEARCH = "haswbstatement:" + "|".join("P31=" + t for t in HUMAN_TYPES)

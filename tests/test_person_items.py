@@ -52,6 +52,11 @@ class SummarizePersonTest(unittest.TestCase):
         raw = {"id": "Q426200", "labels": {"en": {"value": "Saint Prisca"}}, "claims": {"P31": [item("x", "Q21070568")]}}
         self.assertTrue(wd.summarize_person(raw)["human"])
 
+    def test_a_legendary_saint_is_human(self):
+        # Saint Martina (Q272101) is typed only legendary saint (Q113371917), a subclass of Q21070568.
+        raw = {"id": "Q272101", "labels": {"en": {"value": "Martina of Rome"}}, "claims": {"P31": [item("x", "Q113371917")]}}
+        self.assertTrue(wd.summarize_person(raw)["human"])
+
     def test_places_current_only(self):
         ended = item("x", "Q1")
         ended["qualifiers"] = {"P582": [{}]}
