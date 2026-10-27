@@ -27,6 +27,8 @@ import tempfile
 from pathlib import Path
 from typing import NamedTuple
 
+from persons_text import DISCRIMINATORS, strip_discriminator
+
 EDITIONS = ("martyrologium_romanum_2004", "martyrologium_romanum_2004_it_IT",
             "martyrologium_romanum_2004_en_unofficial")
 LABEL_FILES = {"la": "la.json", "en": "en.json", "it": "it.json"}
@@ -42,6 +44,8 @@ class Rename(NamedTuple):
     old: str
     new: str
     labels: dict  # la/en/it -> subject or None (None: leave unchanged)
+    category: str | None = None  # the decided candidate's ("place-genitive", "surname", …; "typed": an
+    # ID not among them); None: a relabel alone
 
 
 def changeset_errors(changeset):
@@ -159,17 +163,18 @@ def renames(changeset):
         new = _new_id(op)
         if new is None:
             continue
-        labels = dict.fromkeys(LANGS)
+        labels, category = dict.fromkeys(LANGS), "typed"
         for cand in op.get("candidates") or []:
             if cand.get("new_id") == new:
                 cl = cand.get("labels") or {}
                 labels = {lang: cl.get(lang) or None for lang in LANGS}
+                category = cand.get("category") or category
                 break
         if decision == "edit" and edited.get("subject_la"):
             labels["la"] = edited["subject_la"]
         if op["id"] in decided:
             labels = dict(decided[op["id"]])
-        out.append(Rename(op["id"], new, labels))
+        out.append(Rename(op["id"], new, labels, category))
     return out
 
 
@@ -433,7 +438,7 @@ def _plan(changeset, repo_root):
     decided = relabels(changeset)
     current = {op["id"]: {lang: (op.get("current") or {}).get(lang) or None for lang in LANGS}
                for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
-    applied = [Rename(r.new, r.new, current.get(r.old, r.labels)) for r in done if r.old in decided]
+    applied = [Rename(r.new, r.new, current.get(r.old, r.labels), r.category) for r in done if r.old in decided]
     only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
     errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
     if not errors:
@@ -453,7 +458,8 @@ def _targets(repo_root):
     return targets
 
 
-DISCRIMINATORS = "data/subject_discriminators.json"
+# Discriminators that are part of a person's name ("Sanctus Iosephus Kalinowski" names Iosephus Kalinowski).
+NAME_PARTS = ("surname",)
 DISCRIMINATORS_COMMENT = ("The words a rename's discriminator added to each eulogy's subject, by language "
                           "(\"Romae\" in \"Sanctus Almachius Romae\", \"di Roma\" in \"Sant’Almachio di "
                           "Roma\"): no part of a person's name; persons_text.name_subjects drops them. Written "
@@ -462,7 +468,9 @@ DISCRIMINATORS_COMMENT = ("The words a rename's discriminator added to each eulo
 
 def _record_discriminators(rs, repo_root, files):
     """Record, under the new ID and by language, the words each relabel adds after the current
-    subject (the subject follows the ID); a subject rewritten otherwise, or kept, records nothing."""
+    subject without its recorded discriminator (the subject follows the ID): a reworded discriminator
+    replaces the record, a subject rewritten otherwise drops it. A surname is part of the name and
+    records nothing; a relabel alone only rewords a discriminator already recorded."""
     repo_root = Path(repo_root)
     subjects = {lang: json.loads((repo_root / "i18n" / name).read_text(encoding="utf-8"))
                 for lang, name in LABEL_FILES.items()}
@@ -474,11 +482,24 @@ def _record_discriminators(rs, repo_root, files):
     for r in rs:
         for lang in LABEL_FILES:
             old, new = subjects[lang].get(r.new), r.labels.get(lang)
-            sep = next((s for s in (", ", " ") if isinstance(old, str) and new and new.startswith(old + s)), None)
-            if sep:  # "San Milziade" -> "San Milziade, papa"
-                entry = found.setdefault(r.new, {})
-                entry[lang] = " ".join(filter(None, [entry.get(lang), new[len(old + sep):]]))
-                n += 1
+            if not isinstance(old, str) or not new:
+                continue  # the subject is left unchanged
+            entry = found.get(r.new, {})
+            recorded = entry.get(lang)
+            base = strip_discriminator(old, recorded)
+            sep = next((s for s in (", ", " ") if new.startswith(base + s)), None)
+            discriminates = r.category not in (None, *NAME_PARTS) or (r.category is None and recorded)
+            words = new[len(base + sep):] if sep and discriminates else None  # "San Milziade, papa"
+            if words == recorded:
+                continue
+            if words:
+                entry[lang] = words
+                found[r.new] = entry
+            else:
+                del entry[lang]
+                if not entry:
+                    del found[r.new]
+            n += 1
     if n:
         doc["discriminators"] = dict(sorted(found.items()))
         path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

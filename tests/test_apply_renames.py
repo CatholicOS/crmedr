@@ -27,7 +27,9 @@ def cs(*ops):
 
 
 def R(old, new, **labels):
-    return ar.Rename(old, new, {"la": None, "en": None, "it": None} | labels)
+    """The rename of a CANDS candidate (its category), else of a typed ID."""
+    category = next((c["category"] for c in CANDS if c["new_id"] == new), "typed")
+    return ar.Rename(old, new, {"la": None, "en": None, "it": None} | labels, category)
 
 
 class RenamesTest(unittest.TestCase):
@@ -136,7 +138,7 @@ class RelabelsTest(unittest.TestCase):
         edit = relabel(decision="edit", edited={"labels": LABELS})
         self.assertEqual(ar.relabel_only(cs(op(decision="reject"), edit, relabel("mr:0101-b", "reject"),
                                             op("mr:0101-c", "mr:0101-c-x"), relabel("mr:0101-c"))),
-                         [R("mr:0101-a", "mr:0101-a", **LABELS)])
+                         [R("mr:0101-a", "mr:0101-a", **LABELS)._replace(category=None)])  # a relabel alone
 
 
 class CheckTest(unittest.TestCase):
@@ -391,6 +393,28 @@ class SubcommandsTest(unittest.TestCase):
         before = path.read_bytes()
         self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)  # applied again: kept
         self.assertEqual(path.read_bytes(), before)
+
+    def test_a_surname_completes_the_name_and_records_nothing(self):
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B"'))
+        cands = [dict(self.cs["operations"][1]["candidates"][1], category="surname")]
+        doc = cs(op("mr:0101-b", "mr:0101-b-y", cands=cands),
+                 relabel("mr:0101-b", "edit", {"labels": {"la": "Sanctus B Kalinowski", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        self.assertFalse((self.root / "data" / "subject_discriminators.json").exists())
+
+    def test_a_reworded_discriminator_replaces_the_record(self):
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-a"', '"Sanctus A Romae"'))
+        path = self.root / "data" / "subject_discriminators.json"
+        path.write_text(json.dumps({"discriminators": {"mr:0101-a": {"la": "Romae", "it": "di Roma"}}}))
+        read = lambda: json.loads(path.read_text())["discriminators"]  # noqa: E731
+        reword = cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus A Mediolanensis", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(reword, self.root, False, run=Fake()).ok)
+        self.assertEqual(read(), {"mr:0101-a": {"la": "Mediolanensis", "it": "di Roma"}})
+        rewrite = cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus Alter", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(rewrite, self.root, False, run=Fake()).ok)
+        self.assertEqual(read(), {"mr:0101-a": {"it": "di Roma"}})
 
     def test_relabel_decided_after_its_rename_was_applied(self):
         ids = self.root / "data" / "martyrology_ids.json"

@@ -98,15 +98,17 @@ def name_subjects(repo_root, lang):
     subjects = json.loads(source.read_text(encoding="utf-8")) if source.exists() else {}
     path = root / DISCRIMINATORS
     added = json.loads(path.read_text(encoding="utf-8"))["discriminators"] if path.exists() else {}
-    out = {}
-    for mrid, subject in subjects.items():
-        words = (added.get(mrid) or {}).get(lang)
-        for sep in (", ", " "):  # "San Milziade, papa"
-            if isinstance(subject, str) and words and subject.endswith(sep + words):
-                subject = subject[:-len(sep + words)]
-                break
-        out[mrid] = subject
-    return out
+    return {mrid: strip_discriminator(subject, (added.get(mrid) or {}).get(lang))
+            for mrid, subject in subjects.items()}
+
+
+def strip_discriminator(subject, words):
+    """The subject without the discriminator words it ends with, after a comma or a space ("San
+    Milziade, papa" -> "San Milziade"); unchanged when it does not end with them."""
+    for sep in (", ", " "):
+        if isinstance(subject, str) and words and subject.endswith(sep + words):
+            return subject[:-len(sep + words)]
+    return subject
 
 
 def subject_names(mrid, subject):
