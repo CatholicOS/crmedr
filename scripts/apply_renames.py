@@ -495,9 +495,10 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
         _pass(todo + only, mapping, targets, repo_root, True, files, [])
         return _report(todo, done, files, errors, "crmedr", leftovers, only)
     _pass(todo + only, mapping, targets, repo_root, False, files, errors)
-    # typology and places must come out of the regeneration as the re-key left them
-    kept = {p: p.read_bytes() for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json")
-            if p.exists()}
+    # typology and places must come out of the regeneration as the re-key left them; their key
+    # order may differ, since a rename can move an ID in sort order
+    kept = {p: json.loads(p.read_text(encoding="utf-8"))
+            for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json") if p.exists()}
     commands = [["python3", "scripts/extract_registry.py"]]
     scratch = tempfile.TemporaryDirectory() if regenerate else None
     if regenerate:
@@ -515,7 +516,8 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
                 errors.append("failed: " + " ".join(cmd))
                 break
             if cmd[1] == "scripts/extract_places.py":
-                changed = [str(p.relative_to(repo_root)) for p, before in kept.items() if p.read_bytes() != before]
+                changed = [str(p.relative_to(repo_root)) for p, before in kept.items()
+                           if json.loads(p.read_text(encoding="utf-8")) != before]
                 if changed:
                     errors.append(f"{', '.join(changed)} changed after regeneration")
                     break

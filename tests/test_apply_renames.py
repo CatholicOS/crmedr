@@ -522,6 +522,22 @@ class SubcommandsTest(unittest.TestCase):
         self.assertIn("data/typology.json changed after regeneration", rep.errors[0])
         self.assertNotIn("scripts/extract_persons.py", [c[1] for c in fake.calls])
 
+    def test_regenerated_typology_in_another_key_order_passes(self):
+        # A rename can move an ID in sort order; the regenerated file then orders it anew.
+        typology = self.root / "data" / "typology.json"
+
+        def reverse(o):
+            return {k: reverse(o[k]) for k in reversed(list(o))} if isinstance(o, dict) else o
+
+        class Reordering(Fake):
+            def __call__(self, cmd, **kw):
+                if cmd[1] == "scripts/extract_typology.py":
+                    typology.write_text(json.dumps(reverse(json.loads(typology.read_text())), indent=2) + "\n")
+                return super().__call__(cmd, **kw)
+
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Reordering(), regenerate="/the/texts")
+        self.assertEqual(rep.errors, [])
+
     def test_regeneration_compares_with_the_rekeyed_file(self):
         fake = Fake()  # leaves the re-keyed typology as it is: no difference
         rep = ar.apply_crmedr(self.cs, self.root, False, run=fake, regenerate="/the/texts")
