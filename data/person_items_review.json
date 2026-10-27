@@ -128546,18 +128546,270 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0211-soter|Soter",
+      "id": "mr:0211-soter|Soteris",
       "eulogy": "mr:0211-soter",
       "day": "02-11",
       "typology": "dies_natalis",
-      "subject": "Sancta Soter",
-      "name": "Soter",
+      "subject": "Sancta Soteris",
+      "name": "Soteris",
       "where": "text",
       "companions": [],
       "failed": [
-        "death: the best candidate (Q101280) fails it"
+        "death: the best candidate (Q3949254) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q3949254",
+          "label": "Soteris",
+          "description": "Roman saint",
+          "names": [
+            "Santa Sotere",
+            "Sotere",
+            "Soteris"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0201",
+          "died": "0304",
+          "feast": [
+            "Q2335"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [
+            "Q220"
+          ],
+          "death_place": [
+            "Q220"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q220",
+              "label": "Rome",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Rome"
+            ],
+            "birth_place": [
+              "Rome"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q57418976",
+          "label": "Soteris Kalogirou",
+          "description": "researcher",
+          "names": [
+            "Soteris Kalogirou"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1959",
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q56206"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Nicosia"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q2007065",
+          "label": "Soteriscus fructuosi",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus fructuosi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q2182294",
+          "label": "Soteriscus disimilis",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus disimilis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q2362163",
+          "label": "Soteriscus brumdocantoi",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus brumdocantoi"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q2388974",
+          "label": "Soteriscus gaditanus",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus gaditanus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q2613193",
+          "label": "Soteriscus trilineatus",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus trilineatus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q27625407",
+          "label": "Soteriscus stricticauda",
+          "description": "species of Malacostraca",
+          "names": [
+            "Soteriscus stricticauda"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q3856072",
+          "label": "Soteriscus",
+          "description": "genus of crustaceans",
+          "names": [
+            "Soteriscus"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q3862550",
+          "label": "Soteriscus wollastoni",
+          "description": "species of crustacean",
+          "names": [
+            "Soteriscus wollastoni"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q101280",
           "label": "Soter",
@@ -128580,6 +128832,12 @@
           "feast": [
             "Q2526"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286",
+            "P10799"
+          ],
           "birth_place": [
             "Q128084"
           ],
@@ -128592,6 +128850,7 @@
           "work_places": [
             "Q220"
           ],
+          "source": "place",
           "evidence": [
             "human",
             "status",
@@ -128605,13 +128864,6 @@
               "label": "Rome",
               "via": "P20"
             }
-          ],
-          "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P4286",
-            "P10799"
           ],
           "place_labels": {
             "death_place": [
@@ -128627,259 +128879,6 @@
               "Rome"
             ]
           }
-        },
-        {
-          "wikidata": "Q84693726",
-          "label": "Salvatore Attal",
-          "description": "storico, ebreo convertito al cattolicesimo (1877-1967)",
-          "names": [
-            "Attal, Francesco Salvatore",
-            "Francesco Salvatore Attal",
-            "Salvatore Attal",
-            "Soter"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1877-02-08",
-          "died": "1967-10-10",
-          "feast": [],
-          "birth_place": [
-            "Q6761"
-          ],
-          "death_place": [
-            "Q6761"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Livorno"
-            ],
-            "birth_place": [
-              "Livorno"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q94856923",
-          "label": "Johann Heyl",
-          "description": "",
-          "names": [
-            "Johann Heyl",
-            "Soter"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "1543",
-          "feast": [],
-          "birth_place": [
-            "Q14872"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "birth_place": [
-              "Bensheim"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q135080755",
-          "label": "Soter",
-          "description": "2021 video game developed by Jethro Tull",
-          "names": [
-            "Soter"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q136108703",
-          "label": "Sőtér",
-          "description": "family name",
-          "names": [
-            "Sőtér"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q1395666",
-          "label": "Sotiria Bellou",
-          "description": "Greek singer (1921–1997)",
-          "names": [
-            "Soteria Bellou",
-            "Sotiria Bellou",
-            "Sotiria Mpellou"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1921-08-22",
-          "died": "1997-08-27",
-          "feast": [],
-          "birth_place": [
-            "Q200133"
-          ],
-          "death_place": [
-            "Q30280472"
-          ],
-          "burial_place": [
-            "Q1362125"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Metaxa Hospital"
-            ],
-            "burial_place": [
-              "First Cemetery of Athens"
-            ],
-            "birth_place": [
-              "Chalkída"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q14511597",
-          "label": "Soter",
-          "description": "genus of insects",
-          "names": [
-            "Soter"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q2303797",
-          "label": "Soter",
-          "description": "Greek epithet, savior, given to Zeus and other gods and kings",
-          "names": [
-            "Servator",
-            "Soteira",
-            "Soter"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q37518471",
-          "label": "Soter",
-          "description": "family name",
-          "names": [
-            "Soter"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q797063",
-          "label": "Soter",
-          "description": "Greek daimon of safety",
-          "names": [
-            "Soter"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
         }
       ],
       "decision": null,
