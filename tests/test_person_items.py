@@ -610,6 +610,7 @@ class ExpandTest(unittest.TestCase):
             self.name_place, self.name_place_calls = [], []
             self.rare, self.rare_calls = [], []
             self.feast, self.feast_calls = [], []
+            self.surname, self.surname_calls = {}, []
 
         def saints_by_feast_day(self, month, day, given, matches=None):
             self.feast_calls.append((month, day, given))
@@ -618,6 +619,10 @@ class ExpandTest(unittest.TestCase):
         def saints_by_name(self, name):
             self.rare_calls.append(name)
             return [dict(c, source="name") for c in self.rare]
+
+        def saints_by_surname(self, surname):
+            self.surname_calls.append(surname)
+            return [dict(c, source="surname") for c in self.surname.get(surname, [])]
 
         def relatives(self, qid):
             if qid in self.fail:
@@ -831,6 +836,35 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(self.op(companions=[]), client)  # Q9 is a saint
         self.assertEqual(client.rare_calls, [])
         self.assertNotIn("Q2448164", [c["wikidata"] for c in got["candidates"]])
+
+    def test_surname_route_when_no_saint_was_found(self):
+        # Eduardus Stransham is Edward Stransham on Wikidata: the first names differ, the surname not.
+        client = self.Client()
+        client.surname = {"Stransham": [cand("Q59625", ["Edward Stransham"]), cand("Q8", ["Edward Smith"])]}
+        op = self.op(name="Eduardus Stransham", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertIn("Stransham", client.surname_calls)
+        sources = [(c["wikidata"], c["source"]) for c in got["candidates"]]
+        self.assertIn(("Q59625", "surname"), sources)
+        self.assertNotIn("Q8", [q for q, _ in sources])  # a hit must bear the surname
+
+    def test_surname_route_searches_the_whole_surname_too(self):
+        client = self.Client()
+        client.surname = {"Vilar David": [cand("Q6161375", ["Vicente Vilar David"])]}
+        op = self.op(name="Vincentius Vilar David", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertEqual(client.surname_calls, ["David", "Vilar David"])
+        self.assertIn("Q6161375", [c["wikidata"] for c in got["candidates"]])
+
+    def test_no_surname_route_for_a_single_name_or_once_a_saint_was_found(self):
+        client = self.Client()
+        self.run_expand(self.op(name="Tarsicia", companions=[], candidates=[]), client,
+                        record={"id": "mr:0101-ioannes-et-renatus-lego", "name": "Tarsicia", "kind": "person"})
+        self.run_expand(self.op(name="Renatus Lego", companions=[]), client)  # Q9 is a saint
+        self.assertEqual(client.surname_calls, [])
+
+    def test_surname_is_a_saint_route(self):
+        self.assertIn("surname", bp.SAINT_ROUTES)
 
     def test_feast_day_route(self):
         # John of Réôme's death is dated to the year only; his feast (P841) is the eulogy's day.

@@ -50,7 +50,7 @@ MAX_CANDIDATES = 10
 MAX_EXPANDED = 15  # an expanded op also holds the candidates of the three extra routes
 # The routes that find a saint by the eulogy's own facts: at the cap, their candidates take the
 # places of the last plain-search ones.
-SAINT_ROUTES = ("sparql", "feast", "place", "name", "companion:P361")
+SAINT_ROUTES = ("sparql", "feast", "place", "name", "surname", "companion:P361")
 # The routes whose candidates make room at the cap: the saint routes and a curator's title.
 ROOM_ROUTES = SAINT_ROUTES + ("curated",)
 # Celebrations whose title item a curator confirmed (eulogy -> QID); nothing is added here unconfirmed.
@@ -577,7 +577,30 @@ def _expansion(op, record, items, client, ops=None, places=(), vernacular=()):
                 if c["wikidata"] not in seen and fits(name, c):
                     seen.add(c["wikidata"])
                     found.append(c)
+        # Nor by the first name, which the Latin translates (Eduardus Stransham: Edward Stransham):
+        # the surname, printed as on Wikidata.
+        for term in _surnames(op):
+            words = set(_tokens(term)) - ITEM_PARTICLES
+            for c in client.saints_by_surname(term):
+                if c["wikidata"] not in seen and words <= {t for nm in c.get("names", []) + [c.get("label", "")]
+                                                           for t in _tokens(nm)}:
+                    seen.add(c["wikidata"])
+                    found.append(c)
     return found
+
+
+def _surnames(op):
+    """The surname terms of the person's names: the last word (four letters or more, no particle)
+    and all the words after the first name ("Vilar David", "Le Van Loc"); none for one word."""
+    terms = []
+    for nm in [op["name"], *op.get("also", [])]:
+        words = nm.split()
+        if len(words) < 2:
+            continue
+        if len(words[-1]) >= 4 and words[-1].lower() not in LATIN_PARTICLES:
+            terms.append(words[-1])
+        terms.append(" ".join(words[1:]))
+    return list(dict.fromkeys(terms))
 
 
 def _fits_group_member(op, c):
