@@ -130,6 +130,11 @@ def _death_day(value, calendar):
     return ymd if calendar == GREGORIAN else _julian(*ymd)
 
 
+def _name_words(name):
+    """A name's words, folded, a hyphen or an apostrophe read as a space ("Pierre-François")."""
+    return fold(name).replace("-", " ").replace("'", " ").split()
+
+
 def _best_named(rows, given, matches=None):
     """QIDs of the persons in SPARQL rows (?p ?l ?s) having a label or alias with a word starting
     with one of the `given` names, folded; the best first: those whose names pass `matches` (a
@@ -591,13 +596,19 @@ class Wikidata:
         """The saints and blessed whose label or alias has this surname (a phrase: "Vilar David"),
         when no more than SURNAME_HITS bear it: the surname is printed as on Wikidata while the
         Latin first name is not (Eduardus Stransham: Edward Stransham). Humans with one of the
-        SAINT_SIGNALS only, tagged "surname"."""
+        SAINT_SIGNALS only, whose label or alias in some language has every word of the surname
+        (the search matches any language; the summaries load a few), tagged "surname"."""
         data = self._api(action="query", list="search", srnamespace="0", srlimit=str(SURNAME_HITS + 1),
                          srsearch=f'inlabel:"{surname}" {HUMAN_SEARCH} haswbstatement:{"|".join(SAINT_SIGNALS)}')
         hits = [hit["title"] for hit in data.get("query", {}).get("search", [])]
         if not hits or len(hits) > SURNAME_HITS:
             return []
-        return self._tagged(dict.fromkeys(hits, "surname"))
+        words = set(_name_words(surname))
+        names = self._api(action="wbgetentities", ids="|".join(hits), props="labels|aliases").get("entities", {})
+        bearing = [q for q in hits if any(words <= set(_name_words(n["value"]))
+                                          for n in [*names.get(q, {}).get("labels", {}).values(),
+                                                    *(a for al in names.get(q, {}).get("aliases", {}).values() for a in al)])]
+        return self._tagged(dict.fromkeys(bearing, "surname"))
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""

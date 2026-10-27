@@ -207,15 +207,22 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(query["maxlag"], ["5"])
 
     def test_saints_by_surname_only_when_few_bear_it(self):
-        fake = Fake(fulltext={'inlabel:"Stransham"': ["Q300"],
-                              'inlabel:"Martin"': [f"Q{i}" for i in range(1, 11)]})
+        fake = Fake(fulltext={'inlabel:"Martin"': ["Q300"],
+                              'inlabel:"Smith"': [f"Q{i}" for i in range(1, 11)]})
         wd = self.wd(fake)
-        self.assertEqual([(c["wikidata"], c["source"]) for c in wd.saints_by_surname("Stransham")],
+        self.assertEqual([(c["wikidata"], c["source"]) for c in wd.saints_by_surname("Martin")],
                          [("Q300", "surname")])
-        self.assertEqual(wd.saints_by_surname("Martin"), [])  # more than SURNAME_HITS saints bear it
+        self.assertEqual(wd.saints_by_surname("Smith"), [])  # more than SURNAME_HITS saints bear it
         query = urllib.parse.parse_qs(urllib.parse.urlparse([u for u in fake.urls if "list=search" in u][0]).query)
-        self.assertEqual(query["srsearch"], ['inlabel:"Stransham" haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799'])
+        self.assertEqual(query["srsearch"], ['inlabel:"Martin" haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799'])
         self.assertEqual(query["srlimit"], ["9"])
+
+    def test_a_surname_hit_must_bear_the_surname_in_some_language(self):
+        # Wikidata's search matches an alias in any language; the summary loads only a few.
+        alias = dict(item("Q301", "Edward"), aliases={"pl": [{"value": "Edward Stransham"}]})
+        fake = Fake(entities={"Q301": alias, "Q302": item("Q302", "Edward Smith", {"P31": [claim("Q5")]})},
+                    fulltext={'inlabel:"Stransham"': ["Q301", "Q302"]})
+        self.assertEqual([c["wikidata"] for c in self.wd(fake).saints_by_surname("Stransham")], ["Q301"])
 
     def test_saints_by_name_only_when_few_bear_it(self):
         fake = Fake(fulltext={"inlabel:Nathalan": ["Q300"], "inlabel:Ioannes": ["Q1", "Q2", "Q3", "Q4"]})
