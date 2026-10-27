@@ -157,6 +157,34 @@ class ExpandTest(unittest.TestCase):
         self.assertIn("(wdt:P20|wdt:P119) ?place", query)
         self.assertIn("wd:Q2369287", query)
 
+    def test_saints_by_feast_day(self):
+        rows = [placed("Q300", "Jean Martin"), placed("Q300", "Ioannes"), placed("Q77", "Émile")]
+        fake = Fake(bindings(rows))
+        out = self.wd(fake).saints_by_feast_day(1, 8, ["Jean", "Ioannes"])
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q300", "feast")])
+        query = self.query(fake)
+        self.assertIn('?f wdt:P361 wd:Q108; rdfs:label "January 8"@en', query)
+        self.assertIn("?p wdt:P31 wd:Q5; wdt:P841 ?f", query)
+        self.assertIn('?f wdt:P361 wd:Q109; rdfs:label "February 29"@en', self._feast_query(2, 29))
+
+    def _feast_query(self, month, day):
+        fake = Fake(bindings([]))
+        self.wd(fake).saints_by_feast_day(month, day, ["Ioannes"])
+        return self.query(fake)
+
+    def test_a_bare_item_is_named_by_any_label_or_its_sitelink(self):
+        # Swahili Wikipedia's stubs of the Abitinae martyrs have no label in it, la or en.
+        entities = {"Q400": {"id": "Q400", "labels": {"sw": {"value": "Saturninus wa Abitina"}}, "claims": {}},
+                    "Q401": {"id": "Q401", "labels": {}, "sitelinks": {"swwiki": {"title": "Besas"}}, "claims": {}}}
+        fake = Fake(entities=entities)
+        out = self.wd(fake).people(["Q400", "Q401", "Q300"])
+        self.assertEqual({q: s["label"] for q, s in out.items()},
+                         {"Q400": "Saturninus wa Abitina", "Q401": "Besas", "Q300": "Jean Martin"})
+        self.assertIn("Saturninus wa Abitina", out["Q400"]["names"])
+        fallback = [u for u in fake.urls if "sitelinks" in u]
+        self.assertEqual(len(fallback), 1)
+        self.assertIn("ids=Q400%7CQ401&", fallback[0])
+
     def test_saints_by_name_and_place(self):
         fake = Fake(fulltext={"Ioannes Paris": ["Q300", "Q77"], "Ioannes Rome": ["Q300"]})
         out = self.wd(fake).saints_by_name_and_place("Ioannes", ["Paris", "Rome", "Paris"])

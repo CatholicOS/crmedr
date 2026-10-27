@@ -42,6 +42,11 @@ class SummarizePersonTest(unittest.TestCase):
         self.assertEqual(s["feast"], ["Q2915"])
         self.assertEqual(sorted(s["names"]), ["Paolo Miki", "Paul Miki", "Paulus Miki"])
 
+    def test_a_human_biblical_figure_is_human(self):
+        # Anna the Prophetess (Q1774668) is typed "human biblical figure", not human.
+        raw = {"id": "Q1774668", "labels": {"en": {"value": "Anna"}}, "claims": {"P31": [item("x", "Q20643955")]}}
+        self.assertTrue(wd.summarize_person(raw)["human"])
+
     def test_places_current_only(self):
         ended = item("x", "Q1")
         ended["qualifiers"] = {"P582": [{}]}
@@ -604,6 +609,11 @@ class ExpandTest(unittest.TestCase):
             self.place, self.place_calls = [], []
             self.name_place, self.name_place_calls = [], []
             self.rare, self.rare_calls = [], []
+            self.feast, self.feast_calls = [], []
+
+        def saints_by_feast_day(self, month, day, given, matches=None):
+            self.feast_calls.append((month, day, given))
+            return [dict(c, source="feast") for c in self.feast]
 
         def saints_by_name(self, name):
             self.rare_calls.append(name)
@@ -821,6 +831,19 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(self.op(companions=[]), client)  # Q9 is a saint
         self.assertEqual(client.rare_calls, [])
         self.assertNotIn("Q2448164", [c["wikidata"] for c in got["candidates"]])
+
+    def test_feast_day_route(self):
+        # John of Réôme's death is dated to the year only; his feast (P841) is the eulogy's day.
+        client = self.Client()
+        client.feast = [cand("Q107863881", ["Iohannes", "John of Reome"]), cand("Q8", ["Petrus"])]
+        op = self.op(companions=[], typology="translatio")
+        _, got = self.run_expand(op, client)
+        month, day, given = client.feast_calls[0]
+        self.assertEqual((month, day), (1, 1))
+        self.assertIn("Ioannes", given)
+        sources = [(c["wikidata"], c["source"]) for c in got["candidates"]]
+        self.assertIn(("Q107863881", "feast"), sources)
+        self.assertNotIn("Q8", [q for q, _ in sources])
 
     def test_no_place_route_without_places(self):
         client = self.Client()
