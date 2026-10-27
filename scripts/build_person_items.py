@@ -55,7 +55,9 @@ SAINT_ROUTES = ("sparql", "feast", "place", "name", "companion:P361")
 CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
-               "blessed", "the", "of", "sanctus", "sancta", "beatus"}
+               "blessed", "the", "of", "sanctus", "sancta", "beatus",
+               # Latin titles a card's name carries (Anna Prophetissa, Paulus Apostolus)
+               "propheta", "prophetissa", "apostolus"}
 # Latin first names whose vernacular forms share no prefix with them.
 NAME_EQUIVALENTS = {
     "renatus": {"rene", "renato"},

@@ -898,6 +898,12 @@ class ExpandTest(unittest.TestCase):
         self.assertTrue(fits("Gaspar de Bono", "Gaspar Bono"))
         self.assertTrue(fits("Gaspar Bono", "Gaspar de Bono"))
 
+    def test_a_latin_title_is_not_a_name_word(self):
+        fits = bp._name_fits
+        self.assertTrue(fits("Anna Prophetissa", "Anna"))
+        self.assertTrue(fits("Paulus Apostolus", "Paul"))
+        self.assertFalse(fits("Anna Prophetissa", "Maria"))
+
     def companion_op(self, evidence):
         return self.op(id="mr:0101-ioannes-et-renatus-lego|Renatus Lego", name="Renatus Lego", companions=[],
                        candidates=[dict(cand("Q2652595", ["Renatus Lego"]), evidence=evidence)])
