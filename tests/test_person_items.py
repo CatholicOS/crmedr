@@ -694,9 +694,17 @@ class ExpandTest(unittest.TestCase):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
         client.kin = {"Q2652595": [dict(cand("Q141886840", ["Anna Francisca de Villeneuve"]), source="companion:P361"),
                                    dict(cand("Q118445257", ["Marie-Anne Vaillot"]), source="companion:P361")]}
-        op = self.op(name="Maria Anna Vaillot", candidates=[])
+        op = self.op(name="Maria Anna Vaillot", companions=["Renatus Lego", "Anna Francisca de Villeneuve"], candidates=[])
         _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
         self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q118445257"])
+
+    def test_a_group_member_sharing_an_earlier_surname_fits(self):
+        # Migoret-Lamberdiere on Wikidata, Migoret Lambardière in the 2004 list: the last word differs.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q29635385", ["Francois Migoret-Lamberdiere"]), source="companion:P361")]}
+        op = self.op(name="Franciscus Migoret Lambardière", candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q29635385"])
 
     def test_a_group_member_sharing_the_surname_fits(self):
         # Aloysius is Louis: the given names differ in the loaded labels, the surname does not.
