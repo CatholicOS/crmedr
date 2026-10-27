@@ -51424,7 +51424,7 @@
             "Saint Prisca",
             "Santa Prisca"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -51442,6 +51442,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -67622,7 +67623,7 @@
             "Clement",
             "Clement, historian of Rome"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -67632,6 +67633,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -115982,7 +115984,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -116000,6 +116002,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -125753,7 +125756,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -125771,6 +125774,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -175158,7 +175162,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -175176,6 +175180,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -191970,7 +191975,7 @@
             "Kynan",
             "Meriadoc"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": "0305",
           "died": "0395",
@@ -191982,6 +191987,7 @@
           ],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -200442,7 +200448,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -200460,6 +200466,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -226616,7 +226623,7 @@
           "names": [
             "Timolaus of Palmyra"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": "0250",
           "died": null,
@@ -226627,7 +226634,9 @@
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "evidence": [],
+          "evidence": [
+            "human"
+          ],
           "places": [],
           "signals": [],
           "place_labels": {
@@ -244177,7 +244186,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -244195,6 +244204,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -266614,7 +266624,7 @@
             "Caradoc",
             "Caradocus"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": "0305",
@@ -266624,6 +266634,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -295608,7 +295619,7 @@
             "Wiho I",
             "Wizo"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -295624,6 +295635,7 @@
             "Q164092"
           ],
           "evidence": [
+            "human",
             "status"
           ],
           "places": [],
@@ -322115,7 +322127,7 @@
             "Eventius and Theodulus",
             "Evenzio, Alessandro e Teodulo"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": "0200",
@@ -322127,6 +322139,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "place"
           ],
           "places": [
@@ -325116,7 +325129,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -325134,6 +325147,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -334454,7 +334468,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -334472,6 +334486,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -346536,7 +346551,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -346554,6 +346569,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -355237,7 +355253,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -355255,6 +355271,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -393106,7 +393123,7 @@
             "Silvius",
             "Silvius Postumius"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -393116,6 +393133,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -397585,7 +397603,7 @@
             "St. Elmo",
             "St. Erasmus of Formia"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -397604,6 +397622,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -411345,7 +411364,7 @@
             "Silvius",
             "Silvius Postumius"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -411355,6 +411374,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -416706,7 +416726,7 @@
             "San Genesio",
             "San Genesio di Roma"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3464126"
           ],
@@ -416724,6 +416744,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -436249,7 +436270,7 @@
             "St Eustathius of Rome",
             "sant'Eustachio"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3332786",
             "Q43115"
@@ -436268,6 +436289,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -437059,7 +437081,7 @@
             "Aventinus Silvius",
             "Aventinus of Alba Longa"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -437071,6 +437093,7 @@
           ],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -439118,7 +439141,7 @@
             "Kynan",
             "Meriadoc"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": "0305",
           "died": "0395",
@@ -439130,6 +439153,7 @@
           ],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -487906,7 +487930,7 @@
             "Saint Prisca",
             "Santa Prisca"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -487924,6 +487948,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -511152,7 +511177,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -511170,6 +511195,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -519215,7 +519241,7 @@
             "St Eustathius of Rome",
             "sant'Eustachio"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3332786",
             "Q43115"
@@ -519234,6 +519260,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -526042,7 +526069,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -526060,6 +526087,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -549392,7 +549420,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -549410,6 +549438,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -564345,7 +564374,7 @@
             "Clement",
             "Clement, historian of Rome"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -564355,6 +564384,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -630623,7 +630653,7 @@
             "San Genesio",
             "San Genesio di Roma"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3464126"
           ],
@@ -630641,6 +630671,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -634288,7 +634319,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -634306,6 +634337,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -644876,7 +644908,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -644894,6 +644926,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -723344,7 +723377,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -723362,6 +723395,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -737542,7 +737576,7 @@
             "St Eustathius of Rome",
             "sant'Eustachio"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3332786",
             "Q43115"
@@ -737561,6 +737595,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -744252,7 +744287,7 @@
             "St Silas",
             "St. Silas"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -744270,6 +744305,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -765864,7 +765900,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -765882,6 +765918,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -779566,7 +779603,7 @@
             "St Eustathius of Rome",
             "sant'Eustachio"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3332786",
             "Q43115"
@@ -779585,6 +779622,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -792894,7 +792932,7 @@
             "Victor and Corona",
             "Vittore e Corona"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -792912,6 +792950,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -796890,7 +796929,7 @@
             "Anthousa",
             "Domnina"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -796900,6 +796939,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -835981,7 +836021,7 @@
             "San Genesio",
             "San Genesio di Roma"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3464126"
           ],
@@ -835999,6 +836039,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
@@ -871368,7 +871409,7 @@
           "names": [
             "Ursinus"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -871378,6 +871419,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -882250,7 +882292,7 @@
             "Maximus Dalmatius",
             "Maximus Delmatius"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -882260,6 +882302,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -907702,7 +907745,7 @@
             "Clement",
             "Clement, historian of Rome"
           ],
-          "human": false,
+          "human": true,
           "statuses": [],
           "born": null,
           "died": null,
@@ -907712,6 +907755,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "name"
           ],
           "places": [],
@@ -959006,7 +959050,7 @@
             "Drosis",
             "Drosis of Antioch"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q43115"
           ],
@@ -959020,6 +959064,7 @@
           "burial_place": [],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],

@@ -57,7 +57,7 @@ class Fake:
             return self.sparql
         if "list=search" in url:
             text = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)["srsearch"][0]
-            text = text.replace(" haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799", "")
+            text = text.replace(" haswbstatement:P31=Q5|P31=Q20643955|P31=Q21070568 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799", "")
             return {"query": {"search": [{"title": q} for q in self.fulltext.get(text, [])]}}
         if "wbsearchentities" in url:
             return {"search": [{"id": q} for q in self.search]}
@@ -174,7 +174,7 @@ class ExpandTest(unittest.TestCase):
             fake = Fake(bindings([]))
             ask(self.wd(fake))
             query = self.query(fake)
-            self.assertIn("VALUES ?h { wd:Q5 wd:Q20643955 }", query)
+            self.assertIn("VALUES ?h { wd:Q5 wd:Q20643955 wd:Q21070568 }", query)
             self.assertIn("?p wdt:P31 ?h;", query)
             self.assertNotIn("wd:Q5;", query)
 
@@ -203,7 +203,7 @@ class ExpandTest(unittest.TestCase):
         searches = [u for u in fake.urls if "list=search" in u]
         self.assertEqual(len(searches), 2)  # one per distinct place
         query = urllib.parse.parse_qs(urllib.parse.urlparse(searches[0]).query)
-        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
+        self.assertEqual(query["srsearch"], ["Ioannes Paris haswbstatement:P31=Q5|P31=Q20643955|P31=Q21070568 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
         self.assertEqual(query["maxlag"], ["5"])
 
     def test_saints_by_surname_only_when_few_bear_it(self):
@@ -214,7 +214,7 @@ class ExpandTest(unittest.TestCase):
                          [("Q300", "surname")])
         self.assertEqual(wd.saints_by_surname("Smith"), [])  # more than SURNAME_HITS saints bear it
         query = urllib.parse.parse_qs(urllib.parse.urlparse([u for u in fake.urls if "list=search" in u][0]).query)
-        self.assertEqual(query["srsearch"], ['inlabel:"Martin" haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799'])
+        self.assertEqual(query["srsearch"], ['inlabel:"Martin" haswbstatement:P31=Q5|P31=Q20643955|P31=Q21070568 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799'])
         self.assertEqual(query["srlimit"], ["9"])
 
     def test_a_surname_hit_must_bear_the_surname_in_some_language(self):
@@ -230,7 +230,7 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([(c["wikidata"], c["source"]) for c in wd.saints_by_name("Nathalan")], [("Q300", "name")])
         self.assertEqual(wd.saints_by_name("Ioannes"), [])  # more than RARE_NAME_HITS saints bear it
         query = urllib.parse.parse_qs(urllib.parse.urlparse([u for u in fake.urls if "list=search" in u][0]).query)
-        self.assertEqual(query["srsearch"], ["inlabel:Nathalan haswbstatement:P31=Q5|P31=Q20643955 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
+        self.assertEqual(query["srsearch"], ["inlabel:Nathalan haswbstatement:P31=Q5|P31=Q20643955|P31=Q21070568 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799"])
         self.assertEqual(query["srlimit"], ["4"])
 
     def test_saints_by_name_and_place_without_places_asks_nothing(self):
