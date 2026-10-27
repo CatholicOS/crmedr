@@ -50,11 +50,12 @@ MAX_CANDIDATES = 10
 MAX_EXPANDED = 15  # an expanded op also holds the candidates of the three extra routes
 # The routes that find a saint by the eulogy's own facts: at the cap, their candidates take the
 # places of the last plain-search ones.
-SAINT_ROUTES = ("sparql", "feast", "place", "name", "companion:P361")
+SAINT_ROUTES = ("sparql", "feast", "place", "name", "surname", "companion:P361")
 # The routes whose candidates make room at the cap: the saint routes and a curator's title.
 ROOM_ROUTES = SAINT_ROUTES + ("curated",)
 # Celebrations whose title item a curator confirmed (eulogy -> QID); nothing is added here unconfirmed.
-CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200"}
+CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200",
+                  "mr:0211-maria-de-lourdes": "Q21532387"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
                "blessed", "the", "of", "sanctus", "sancta", "beatus",
@@ -577,17 +578,38 @@ def _expansion(op, record, items, client, ops=None, places=(), vernacular=()):
                 if c["wikidata"] not in seen and fits(name, c):
                     seen.add(c["wikidata"])
                     found.append(c)
+        # Nor by the first name, which the Latin translates (Eduardus Stransham: Edward Stransham):
+        # the surname, printed as on Wikidata.
+        for term in _surnames(op):
+            for c in client.saints_by_surname(term):
+                if c["wikidata"] not in seen:
+                    seen.add(c["wikidata"])
+                    found.append(c)
     return found
+
+
+def _surnames(op):
+    """The surname terms of the person's names: the words that end it, after the first name, the
+    shortest first ("David", "Vilar David", "Maria Vilar David"); a one-word term of four letters
+    or more and no particle; none for one word."""
+    terms = []
+    for nm in [op["name"], *op.get("also", [])]:
+        words = nm.split()
+        for i in range(len(words) - 1, 0, -1):
+            if i < len(words) - 1 or (len(words[i]) >= 4 and words[i].lower() not in LATIN_PARTICLES):
+                terms.append(" ".join(words[i:]))
+    return list(dict.fromkeys(terms))
 
 
 def _fits_group_member(op, c):
     """A companion's group member (P361) fits the person: one of its names fits one of the
-    person's (_named), or it shares the person's surname (a later word of four letters or more:
-    Aloysius Versiglia is Louis Versiglia in the labels loaded)."""
+    person's (_named), or it shares the person's surname (the last word, of four letters or more:
+    Aloysius Versiglia is Louis Versiglia in the labels loaded; Anna in Maria Anna Vaillot is a
+    given name)."""
     names = c.get("names", []) + [c.get("label", "")]
     if _named(op)(names):
         return True
-    surnames = {t for nm in [op["name"], *op.get("also", [])] for t in _tokens(nm)[1:] if len(t) >= 4}
+    surnames = {t for nm in [op["name"], *op.get("also", [])] for t in _tokens(nm)[1:][-1:] if len(t) >= 4}
     return bool(surnames & {t for nm in names for t in _tokens(nm)})
 
 

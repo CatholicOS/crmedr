@@ -610,6 +610,7 @@ class ExpandTest(unittest.TestCase):
             self.name_place, self.name_place_calls = [], []
             self.rare, self.rare_calls = [], []
             self.feast, self.feast_calls = [], []
+            self.surname, self.surname_calls = {}, []
 
         def saints_by_feast_day(self, month, day, given, matches=None):
             self.feast_calls.append((month, day, given))
@@ -618,6 +619,10 @@ class ExpandTest(unittest.TestCase):
         def saints_by_name(self, name):
             self.rare_calls.append(name)
             return [dict(c, source="name") for c in self.rare]
+
+        def saints_by_surname(self, surname):
+            self.surname_calls.append(surname)
+            return [dict(c, source="surname") for c in self.surname.get(surname, [])]
 
         def relatives(self, qid):
             if qid in self.fail:
@@ -683,6 +688,15 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(op, client)
         # the first stays (an accept means candidates[0]), and so does the decided pick
         self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
+
+    def test_a_second_given_name_is_not_a_surname(self):
+        # Maria Anna Vaillot does not fit Anna Francisca de Villeneuve, a martyr of the same group.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q141886840", ["Anna Francisca de Villeneuve"]), source="companion:P361"),
+                                   dict(cand("Q118445257", ["Marie-Anne Vaillot"]), source="companion:P361")]}
+        op = self.op(name="Maria Anna Vaillot", candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q118445257"])
 
     def test_a_group_member_sharing_the_surname_fits(self):
         # Aloysius is Louis: the given names differ in the loaded labels, the surname does not.
@@ -831,6 +845,41 @@ class ExpandTest(unittest.TestCase):
         _, got = self.run_expand(self.op(companions=[]), client)  # Q9 is a saint
         self.assertEqual(client.rare_calls, [])
         self.assertNotIn("Q2448164", [c["wikidata"] for c in got["candidates"]])
+
+    def test_surname_route_when_no_saint_was_found(self):
+        # Eduardus Stransham is Edward Stransham on Wikidata: the first names differ, the surname not.
+        client = self.Client()
+        client.surname = {"Stransham": [cand("Q59625", ["Edward Stransham"])]}
+        op = self.op(name="Eduardus Stransham", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertIn("Stransham", client.surname_calls)
+        sources = [(c["wikidata"], c["source"]) for c in got["candidates"]]
+        self.assertIn(("Q59625", "surname"), sources)
+
+    def test_surname_route_searches_the_whole_surname_too(self):
+        client = self.Client()
+        client.surname = {"Vilar David": [cand("Q6161375", ["Vicente Vilar David"])]}
+        op = self.op(name="Vincentius Vilar David", companions=[], candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertEqual(client.surname_calls, ["David", "Vilar David"])
+        self.assertIn("Q6161375", [c["wikidata"] for c in got["candidates"]])
+
+    def test_surnames_are_the_names_last_words(self):
+        # A compound surname stays searchable after two given names.
+        self.assertEqual(bp._surnames({"name": "Vincentius Maria Vilar David"}),
+                         ["David", "Vilar David", "Maria Vilar David"])
+        self.assertEqual(bp._surnames({"name": "Paulus Le Van Loc"}), ["Van Loc", "Le Van Loc"])
+        self.assertEqual(bp._surnames({"name": "Tarsicia"}), [])
+
+    def test_no_surname_route_for_a_single_name_or_once_a_saint_was_found(self):
+        client = self.Client()
+        self.run_expand(self.op(name="Tarsicia", companions=[], candidates=[]), client,
+                        record={"id": "mr:0101-ioannes-et-renatus-lego", "name": "Tarsicia", "kind": "person"})
+        self.run_expand(self.op(name="Renatus Lego", companions=[]), client)  # Q9 is a saint
+        self.assertEqual(client.surname_calls, [])
+
+    def test_surname_is_a_saint_route(self):
+        self.assertIn("surname", bp.SAINT_ROUTES)
 
     def test_feast_day_route(self):
         # John of Réôme's death is dated to the year only; his feast (P841) is the eulogy's day.
@@ -989,6 +1038,9 @@ class ExpandTest(unittest.TestCase):
 
     def test_paul_is_a_curated_title(self):
         self.assertEqual(bp.CURATED_TITLES["mr:0125-conversio-pauli-apostoli"], "Q9200")
+
+    def test_our_lady_of_lourdes_is_a_curated_title(self):
+        self.assertEqual(bp.CURATED_TITLES["mr:0211-maria-de-lourdes"], "Q21532387")
 
     def test_decision_untouched_and_failure_continues(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})

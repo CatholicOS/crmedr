@@ -38,7 +38,7 @@ def _decided(op):
 
 # The routes whose new candidates reopen a rejected person card: saints found by place, rare name,
 # feast or death day, and members of the companions' group whose names fit (not other kin).
-REOPENING_SOURCES = ("place", "name", "feast", "sparql", "companion:P361")
+REOPENING_SOURCES = ("place", "name", "surname", "feast", "sparql", "companion:P361")
 
 
 def _new_place_candidates(op, fresh):

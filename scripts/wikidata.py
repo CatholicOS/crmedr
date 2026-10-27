@@ -64,6 +64,8 @@ HUMAN_SEARCH = "haswbstatement:" + "|".join("P31=" + t for t in HUMAN_TYPES)
 SAINT_SIGNALS = ("P411", "P841", "P6126", "P8080", "P4286", "P8366", "P10799")
 # At most this many saints may bear a name searched alone (saints_by_name).
 RARE_NAME_HITS = 3
+# A surname more saints bear than this is too common to offer on the surname alone.
+SURNAME_HITS = 8
 # The signals that count as a saint's status besides P411 (summarize_person `signals`): not the
 # GCatholic person ID, which bounds the search but lists bishops who are no saints.
 STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
@@ -126,6 +128,11 @@ def _death_day(value, calendar):
         return None
     ymd = tuple(int(x) for x in m.groups())
     return ymd if calendar == GREGORIAN else _julian(*ymd)
+
+
+def _name_words(name):
+    """A name's words, folded, a hyphen or an apostrophe read as a space ("Pierre-François")."""
+    return fold(name).replace("-", " ").replace("'", " ").split()
 
 
 def _best_named(rows, given, matches=None):
@@ -584,6 +591,24 @@ class Wikidata:
         if not hits or len(hits) > RARE_NAME_HITS:
             return []
         return self._tagged(dict.fromkeys(hits, "name"))
+
+    def saints_by_surname(self, surname):
+        """The saints and blessed whose label or alias has this surname (a phrase: "Vilar David"),
+        when no more than SURNAME_HITS bear it: the surname is printed as on Wikidata while the
+        Latin first name is not (Eduardus Stransham: Edward Stransham). Humans with one of the
+        SAINT_SIGNALS only, whose label or alias in some language has every word of the surname
+        (the search matches any language; the summaries load a few), tagged "surname"."""
+        data = self._api(action="query", list="search", srnamespace="0", srlimit=str(SURNAME_HITS + 1),
+                         srsearch=f'inlabel:"{surname}" {HUMAN_SEARCH} haswbstatement:{"|".join(SAINT_SIGNALS)}')
+        hits = [hit["title"] for hit in data.get("query", {}).get("search", [])]
+        if not hits or len(hits) > SURNAME_HITS:
+            return []
+        words = set(_name_words(surname))
+        names = self._api(action="wbgetentities", ids="|".join(hits), props="labels|aliases").get("entities", {})
+        bearing = [q for q in hits if any(words <= set(_name_words(n["value"]))
+                                          for n in [*names.get(q, {}).get("labels", {}).values(),
+                                                    *(a for al in names.get(q, {}).get("aliases", {}).values() for a in al)])]
+        return self._tagged(dict.fromkeys(bearing, "surname"))
 
     def title_candidates(self, text, languages=("la", "it", "en")):
         """Items of any kind (a feast, a title: Theotokos), without the human filter."""
