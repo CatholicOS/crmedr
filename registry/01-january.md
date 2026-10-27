@@ -231,7 +231,7 @@
 | 18 | 1 | `mr:0118-successus-et-socii` |  | TN | dies_natalis |  |  |
 | 18 | 2 | `mr:0118-cosconius-et-socii` |  | TR | dies_natalis |  |  |
 | 18 | 3 | `mr:0118-volusianus` |  | FR | dies_natalis |  |  |
-| 18 | 4 | `mr:0118-prisca` |  | IT | commemoratio |  |  |
+| 18 | 4 | `mr:0118-prisca` |  | IT | commemoratio |  | The 1749 and 1914 editions commemorate the passion of Prisca, virgin and martyr under Claudius; the 2004 edition commemorates only the saint whose name the basilica on the Aventine bears. Tradition holds the titulus Priscae to be the house church of Aquila and Prisca, Paul's collaborators (Romans 16:3-5), whom the 2004 edition commemorates on 8 July (mr:0708-aquila-et-prisca); the Martyrology itself does not identify the two. |
 | 18 | 5 | `mr:0118-deicolus` |  | FR | dies_natalis |  | 1914 English: Translation error: the Latin 'In monasterio Lutrensi, in Burgundia' is Lure, in Burgundy, not Brittany. |
 | 18 | 6 | `mr:0118-beatrix-estensis` | * | IT | dies_natalis |  |  |
 | 18 | 7 | `mr:0118-margarita` |  | HU | dies_natalis |  |  |
