@@ -1024,6 +1024,9 @@ class ExpandTest(unittest.TestCase):
     def test_paul_is_a_curated_title(self):
         self.assertEqual(bp.CURATED_TITLES["mr:0125-conversio-pauli-apostoli"], "Q9200")
 
+    def test_our_lady_of_lourdes_is_a_curated_title(self):
+        self.assertEqual(bp.CURATED_TITLES["mr:0211-maria-de-lourdes"], "Q21532387")
+
     def test_decision_untouched_and_failure_continues(self):
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])}, fail={"Q2652595"})
         op = self.op(decision="edit", edited={"wikidata": "Q1"})

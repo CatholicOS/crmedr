@@ -54,7 +54,8 @@ SAINT_ROUTES = ("sparql", "feast", "place", "name", "surname", "companion:P361")
 # The routes whose candidates make room at the cap: the saint routes and a curator's title.
 ROOM_ROUTES = SAINT_ROUTES + ("curated",)
 # Celebrations whose title item a curator confirmed (eulogy -> QID); nothing is added here unconfirmed.
-CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200"}
+CURATED_TITLES = {"mr:0101-maria-dei-genetrix": "Q208542", "mr:0125-conversio-pauli-apostoli": "Q9200",
+                  "mr:0211-maria-de-lourdes": "Q21532387"}
 # Words of a label that are not part of the name ("Saint Basil", "San Basilio").
 TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant", "beato", "beata", "beati",
                "blessed", "the", "of", "sanctus", "sancta", "beatus",
