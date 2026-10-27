@@ -394,6 +394,13 @@ class SubcommandsTest(unittest.TestCase):
         self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)  # applied again: kept
         self.assertEqual(path.read_bytes(), before)
 
+    def test_a_subject_that_is_not_a_string_is_an_error_before_any_write(self):
+        before = self.snapshot()
+        doc = cs(self.cs["operations"][0], relabel("mr:0101-a", "edit", {"labels": {"la": ["Sanctus A X"]}}))
+        rep = ar.apply_crmedr(doc, self.root, False, run=Fake())
+        self.assertEqual(rep.errors, ["mr:0101-a: the la subject is not a string"])
+        self.assertEqual(self.snapshot(), before)
+
     def test_a_surname_completes_the_name_and_records_nothing(self):
         la = self.root / "i18n" / "la.json"
         la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B"'))

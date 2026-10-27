@@ -425,6 +425,12 @@ def check_relabels(only, ids, deprecated=frozenset()):
     return errors
 
 
+def subject_type_errors(rs):
+    """Error strings for the subjects set to something other than a string."""
+    return [f"{r.old}: the {lang} subject is not a string"
+            for r in rs for lang, value in r.labels.items() if value and not isinstance(value, str)]
+
+
 def _plan(changeset, repo_root):
     """(to apply, already applied, relabels of IDs not renamed, check errors) for crmedr, judged
     against its registry. A decided relabel whose rename is already applied is written under the
@@ -440,7 +446,8 @@ def _plan(changeset, repo_root):
                for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
     applied = [Rename(r.new, r.new, current.get(r.old, r.labels), r.category) for r in done if r.old in decided]
     only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
-    errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
+    errors = (check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
+              + subject_type_errors(todo + only))
     if not errors:
         errors = _person_errors(changeset, todo, repo_root)
     return todo, done, only, errors
