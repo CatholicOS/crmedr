@@ -40,7 +40,7 @@ from mentions_italian import ItalianNames, by_position, runs, surname_span
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
                            partial_span, utf16)
-from persons_text import name_key, person_key
+from persons_text import name_key, name_subjects, person_key
 
 
 # The other name printed right after a person: "Kingae seu Cunegundis", "Dativus, qui et Sanator".
@@ -756,7 +756,7 @@ def extract(texts_repo, repo_root, review_path):
     curated = _read(data / "mentions_curated.json", {"editions": {}})["editions"]
     entries = _read(data / "martyrology_ids.json", {"entries": []})["entries"]
     sources, by_edition, review, counts = {}, {}, {}, {}
-    names = ItalianNames(_read(repo_root / "i18n" / "la.json", {}), _read(repo_root / "i18n" / "it.json", {}))
+    names = ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"))
     latin_twins = {}
     for edition, lang in EDITIONS.items():  # the Latin first: its marks order the Italian footnote lists
         sources[edition] = load_edition(texts_repo, edition)

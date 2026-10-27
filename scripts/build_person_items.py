@@ -82,7 +82,7 @@ _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVAL
 FORCE_REVIEW = {
     # The only "Valentinus" candidate passing is the Valentine of 14 February; the 7 January
     # eulogy is another (a commemoratio, so no death date could tell them apart).
-    "mr:0107-valentinus|Valentinus": "the item is the Valentine of 14 February, not this eulogy's",
+    "mr:0107-valentinus-raetiae|Valentinus": "the item is the Valentine of 14 February, not this eulogy's",
     # One-word names of undated eulogies that matched a famous namesake (CatholicOS/crmedr#79 review);
     # Simon Peter's alias "Simeon" matched both Simeons.
     "mr:0203-simeon-et-anna-prophetissa|Simeon": "the eulogy's Simeon is the prophet of the Presentation, not Saint Peter",

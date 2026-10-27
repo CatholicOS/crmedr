@@ -38,7 +38,7 @@
       ]
     },
     {
-      "id": "mr:0101-basilius",
+      "id": "mr:0101-basilius-magnus",
       "month": 1,
       "day": 1,
       "entry": 2,
@@ -57,15 +57,13 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
+        "year": 379,
         "basis": "deposition",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0101-iustinus",
+      "id": "mr:0101-iustinus-episcopus",
       "month": 1,
       "day": 1,
       "entry": 3,
@@ -86,7 +84,7 @@
       }
     },
     {
-      "id": "mr:0101-almachius",
+      "id": "mr:0101-almachius-romae",
       "month": 1,
       "day": 1,
       "entry": 4,
@@ -111,7 +109,7 @@
       }
     },
     {
-      "id": "mr:0101-eugendus",
+      "id": "mr:0101-eugendus-condatiscensis",
       "month": 1,
       "day": 1,
       "entry": 5,
@@ -144,7 +142,7 @@
       }
     },
     {
-      "id": "mr:0101-fulgentius",
+      "id": "mr:0101-fulgentius-rusparum",
       "month": 1,
       "day": 1,
       "entry": 6,
@@ -188,7 +186,7 @@
       }
     },
     {
-      "id": "mr:0101-clarus",
+      "id": "mr:0101-clarus-viennae",
       "month": 1,
       "day": 1,
       "entry": 7,
@@ -217,7 +215,7 @@
       ]
     },
     {
-      "id": "mr:0101-frodobertus",
+      "id": "mr:0101-frodobertus-cellensis",
       "month": 1,
       "day": 1,
       "entry": 8,
@@ -246,7 +244,7 @@
       ]
     },
     {
-      "id": "mr:0101-gulielmus",
+      "id": "mr:0101-gulielmus-divionensis",
       "month": 1,
       "day": 1,
       "entry": 9,
@@ -275,7 +273,7 @@
       ]
     },
     {
-      "id": "mr:0101-odilo",
+      "id": "mr:0101-odilo-cluniacensis",
       "month": 1,
       "day": 1,
       "entry": 10,
@@ -314,7 +312,7 @@
       }
     },
     {
-      "id": "mr:0101-zdislava",
+      "id": "mr:0101-zdislava-gablonae",
       "month": 1,
       "day": 1,
       "entry": 11,
@@ -341,7 +339,7 @@
       }
     },
     {
-      "id": "mr:0101-hugolinus",
+      "id": "mr:0101-hugolinus-gualdi-captaneorum",
       "month": 1,
       "day": 1,
       "entry": 12,
@@ -593,7 +591,7 @@
       ]
     },
     {
-      "id": "mr:0102-telesphorus",
+      "id": "mr:0102-telesphorus-papa",
       "month": 1,
       "day": 2,
       "entry": 2,
@@ -650,7 +648,7 @@
       }
     },
     {
-      "id": "mr:0102-theodorus",
+      "id": "mr:0102-theodorus-massiliae",
       "month": 1,
       "day": 2,
       "entry": 4,
@@ -680,7 +678,7 @@
       }
     },
     {
-      "id": "mr:0102-bladulphus",
+      "id": "mr:0102-bladulphus-bobiensis",
       "month": 1,
       "day": 2,
       "entry": 5,
@@ -737,7 +735,7 @@
       ]
     },
     {
-      "id": "mr:0102-vincentianus",
+      "id": "mr:0102-vincentianus-tutelensis",
       "month": 1,
       "day": 2,
       "entry": 7,
@@ -757,7 +755,7 @@
       ]
     },
     {
-      "id": "mr:0102-mainchinus",
+      "id": "mr:0102-mainchinus-limerici",
       "month": 1,
       "day": 2,
       "entry": 8,
@@ -777,7 +775,7 @@
       ]
     },
     {
-      "id": "mr:0102-adalhardus",
+      "id": "mr:0102-adalhardus-corbeiensis",
       "month": 1,
       "day": 2,
       "entry": 9,
@@ -797,7 +795,7 @@
       ]
     },
     {
-      "id": "mr:0102-airaldus",
+      "id": "mr:0102-airaldus-maurianensis",
       "month": 1,
       "day": 2,
       "entry": 10,
@@ -831,7 +829,7 @@
       }
     },
     {
-      "id": "mr:0102-silvester",
+      "id": "mr:0102-silvester-troynae",
       "month": 1,
       "day": 2,
       "entry": 11,
@@ -946,7 +944,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0103-antherus",
+      "id": "mr:0103-antherus-papa",
       "month": 1,
       "day": 3,
       "entry": 2,
@@ -998,7 +996,7 @@
       }
     },
     {
-      "id": "mr:0103-gordius",
+      "id": "mr:0103-gordius-caesareae",
       "month": 1,
       "day": 3,
       "entry": 4,
@@ -1023,7 +1021,7 @@
       }
     },
     {
-      "id": "mr:0103-daniel",
+      "id": "mr:0103-daniel-patavii",
       "month": 1,
       "day": 3,
       "entry": 5,
@@ -1047,7 +1045,7 @@
       }
     },
     {
-      "id": "mr:0103-theogenes",
+      "id": "mr:0103-theogenes-parii",
       "month": 1,
       "day": 3,
       "entry": 6,
@@ -1077,7 +1075,7 @@
       ]
     },
     {
-      "id": "mr:0103-florentius",
+      "id": "mr:0103-florentius-viennae",
       "month": 1,
       "day": 3,
       "entry": 7,
@@ -1111,7 +1109,7 @@
       }
     },
     {
-      "id": "mr:0103-genovefa",
+      "id": "mr:0103-genovefa-parisiorum",
       "month": 1,
       "day": 3,
       "entry": 8,
@@ -1154,7 +1152,7 @@
       }
     },
     {
-      "id": "mr:0103-lucianus",
+      "id": "mr:0103-lucianus-leontii",
       "month": 1,
       "day": 3,
       "entry": 9,
@@ -1247,7 +1245,7 @@
       }
     },
     {
-      "id": "mr:0104-abrunculus",
+      "id": "mr:0104-abrunculus-lingonensis",
       "month": 1,
       "day": 4,
       "entry": 2,
@@ -1272,6 +1270,11 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 491,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004": "The same bishop is commemorated on 14 May as Aprunculus (mr:0514-aprunculus); the Italian (CEI) edition prints only that eulogy, where it names him Abrúncolo.",
         "martyrologium_romanum_2004_en_unofficial": "The same bishop is commemorated on 14 May as Aprunculus (mr:0514-aprunculus); the Italian (CEI) edition prints only that eulogy, where it names him Abrúncolo. Translation error: \"In Auvergne\" where the Latin \"Arvérnæ\" names the city of Clermont."
@@ -1283,7 +1286,7 @@
       }
     },
     {
-      "id": "mr:0104-gregorius",
+      "id": "mr:0104-gregorius-lingonensis",
       "month": 1,
       "day": 4,
       "entry": 3,
@@ -1331,7 +1334,7 @@
       }
     },
     {
-      "id": "mr:0104-ferreolus",
+      "id": "mr:0104-ferreolus-ucetiae",
       "month": 1,
       "day": 4,
       "entry": 4,
@@ -1361,7 +1364,7 @@
       }
     },
     {
-      "id": "mr:0104-rigomerus",
+      "id": "mr:0104-rigomerus-meldorum",
       "month": 1,
       "day": 4,
       "entry": 5,
@@ -1391,7 +1394,7 @@
       }
     },
     {
-      "id": "mr:0104-rigobertus",
+      "id": "mr:0104-rigobertus-remorum",
       "month": 1,
       "day": 4,
       "entry": 6,
@@ -1421,7 +1424,7 @@
       }
     },
     {
-      "id": "mr:0104-pharaildis",
+      "id": "mr:0104-pharaildis-bruaci",
       "month": 1,
       "day": 4,
       "entry": 7,
@@ -1451,7 +1454,7 @@
       }
     },
     {
-      "id": "mr:0104-angela",
+      "id": "mr:0104-angela-fulginii",
       "month": 1,
       "day": 4,
       "entry": 8,
@@ -1610,7 +1613,7 @@
       }
     },
     {
-      "id": "mr:0105-syncletica",
+      "id": "mr:0105-syncletica-alexandriae",
       "month": 1,
       "day": 5,
       "entry": 1,
@@ -1635,7 +1638,7 @@
       }
     },
     {
-      "id": "mr:0105-deogratias",
+      "id": "mr:0105-deogratias-carthaginis",
       "month": 1,
       "day": 5,
       "entry": 2,
@@ -1672,7 +1675,7 @@
       ]
     },
     {
-      "id": "mr:0105-aemiliana",
+      "id": "mr:0105-aemiliana-romae",
       "month": 1,
       "day": 5,
       "entry": 3,
@@ -1698,7 +1701,7 @@
       }
     },
     {
-      "id": "mr:0105-convoio",
+      "id": "mr:0105-convoio-abbas",
       "month": 1,
       "day": 5,
       "entry": 4,
@@ -1782,7 +1785,7 @@
       ]
     },
     {
-      "id": "mr:0105-gerlacus",
+      "id": "mr:0105-gerlacus-eremita",
       "month": 1,
       "day": 5,
       "entry": 6,
@@ -1802,7 +1805,7 @@
       ]
     },
     {
-      "id": "mr:0105-rogerius",
+      "id": "mr:0105-rogerius-tudertis",
       "month": 1,
       "day": 5,
       "entry": 7,
@@ -2042,7 +2045,7 @@
       ]
     },
     {
-      "id": "mr:0106-felix",
+      "id": "mr:0106-felix-nannetum",
       "month": 1,
       "day": 6,
       "entry": 3,
@@ -2065,7 +2068,7 @@
       }
     },
     {
-      "id": "mr:0106-macarius",
+      "id": "mr:0106-macarius-herbipolis",
       "month": 1,
       "day": 6,
       "entry": 4,
@@ -2327,7 +2330,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0107-polyeuctus",
+      "id": "mr:0107-polyeuctus-melitenae",
       "month": 1,
       "day": 7,
       "entry": 2,
@@ -2354,7 +2357,7 @@
       }
     },
     {
-      "id": "mr:0107-lucianus",
+      "id": "mr:0107-lucianus-nicomediae",
       "month": 1,
       "day": 7,
       "entry": 3,
@@ -2388,7 +2391,7 @@
       }
     },
     {
-      "id": "mr:0107-valentinus",
+      "id": "mr:0107-valentinus-raetiae",
       "month": 1,
       "day": 7,
       "entry": 4,
@@ -2423,7 +2426,7 @@
       ]
     },
     {
-      "id": "mr:0107-crispinus",
+      "id": "mr:0107-crispinus-papiae",
       "month": 1,
       "day": 7,
       "entry": 5,
@@ -2448,7 +2451,7 @@
       }
     },
     {
-      "id": "mr:0107-valentinianus",
+      "id": "mr:0107-valentinianus-curiae",
       "month": 1,
       "day": 7,
       "entry": 6,
@@ -2468,7 +2471,7 @@
       ]
     },
     {
-      "id": "mr:0107-tillo",
+      "id": "mr:0107-tillo-solemniaci",
       "month": 1,
       "day": 7,
       "entry": 7,
@@ -2491,7 +2494,7 @@
       }
     },
     {
-      "id": "mr:0107-cyrus",
+      "id": "mr:0107-cyrus-constantinopolis",
       "month": 1,
       "day": 7,
       "entry": 8,
@@ -2520,7 +2523,7 @@
       ]
     },
     {
-      "id": "mr:0107-aldericus",
+      "id": "mr:0107-aldericus-cenomani",
       "month": 1,
       "day": 7,
       "entry": 9,
@@ -2691,7 +2694,7 @@
       }
     },
     {
-      "id": "mr:0108-apollinaris",
+      "id": "mr:0108-apollinaris-hierapolis",
       "month": 1,
       "day": 8,
       "entry": 1,
@@ -2768,7 +2771,7 @@
       }
     },
     {
-      "id": "mr:0108-patiens",
+      "id": "mr:0108-patiens-episcopus",
       "month": 1,
       "day": 8,
       "entry": 4,
@@ -2793,7 +2796,7 @@
       }
     },
     {
-      "id": "mr:0108-severinus",
+      "id": "mr:0108-severinus-norici",
       "month": 1,
       "day": 8,
       "entry": 5,
@@ -2821,7 +2824,7 @@
       }
     },
     {
-      "id": "mr:0108-maximus",
+      "id": "mr:0108-maximus-papiae",
       "month": 1,
       "day": 8,
       "entry": 6,
@@ -2846,7 +2849,7 @@
       }
     },
     {
-      "id": "mr:0108-georgius",
+      "id": "mr:0108-georgius-chozibae",
       "month": 1,
       "day": 8,
       "entry": 7,
@@ -2866,7 +2869,7 @@
       ]
     },
     {
-      "id": "mr:0108-nathalanus",
+      "id": "mr:0108-nathalanus-aberdonensis",
       "month": 1,
       "day": 8,
       "entry": 8,
@@ -2886,7 +2889,7 @@
       ]
     },
     {
-      "id": "mr:0108-erhardus",
+      "id": "mr:0108-erhardus-ratisbonae",
       "month": 1,
       "day": 8,
       "entry": 9,
@@ -2909,7 +2912,7 @@
       }
     },
     {
-      "id": "mr:0108-gudila",
+      "id": "mr:0108-gudila-morsellae",
       "month": 1,
       "day": 8,
       "entry": 10,
@@ -2929,7 +2932,7 @@
       ]
     },
     {
-      "id": "mr:0108-albertus",
+      "id": "mr:0108-albertus-cassiliae",
       "month": 1,
       "day": 8,
       "entry": 11,
@@ -3019,7 +3022,7 @@
       }
     },
     {
-      "id": "mr:0109-marcellinus",
+      "id": "mr:0109-marcellinus-anconae",
       "month": 1,
       "day": 9,
       "entry": 1,
@@ -3044,7 +3047,7 @@
       }
     },
     {
-      "id": "mr:0109-hadrianus",
+      "id": "mr:0109-hadrianus-cantuariae",
       "month": 1,
       "day": 9,
       "entry": 2,
@@ -3092,7 +3095,7 @@
       ]
     },
     {
-      "id": "mr:0109-felanus",
+      "id": "mr:0109-felanus-scotiae",
       "month": 1,
       "day": 9,
       "entry": 3,
@@ -3299,7 +3302,7 @@
       }
     },
     {
-      "id": "mr:0110-miltiades",
+      "id": "mr:0110-miltiades-papa",
       "month": 1,
       "day": 10,
       "entry": 1,
@@ -3338,7 +3341,7 @@
       ]
     },
     {
-      "id": "mr:0110-paulus",
+      "id": "mr:0110-paulus-thebaidis",
       "month": 1,
       "day": 10,
       "entry": 2,
@@ -3393,7 +3396,7 @@
       ]
     },
     {
-      "id": "mr:0110-ioannes",
+      "id": "mr:0110-ioannes-hierosolymorum",
       "month": 1,
       "day": 10,
       "entry": 4,
@@ -3417,7 +3420,7 @@
       ]
     },
     {
-      "id": "mr:0110-petronius",
+      "id": "mr:0110-petronius-deae-vocontiorum",
       "month": 1,
       "day": 10,
       "entry": 5,
@@ -3446,7 +3449,7 @@
       ]
     },
     {
-      "id": "mr:0110-marcianus",
+      "id": "mr:0110-marcianus-constantinopoli",
       "month": 1,
       "day": 10,
       "entry": 6,
@@ -3471,7 +3474,7 @@
       }
     },
     {
-      "id": "mr:0110-valerius",
+      "id": "mr:0110-valerius-lemovicum",
       "month": 1,
       "day": 10,
       "entry": 7,
@@ -3491,7 +3494,7 @@
       ]
     },
     {
-      "id": "mr:0110-domitianus",
+      "id": "mr:0110-domitianus-melitenae",
       "month": 1,
       "day": 10,
       "entry": 8,
@@ -3511,7 +3514,7 @@
       ]
     },
     {
-      "id": "mr:0110-agathon",
+      "id": "mr:0110-agathon-papa",
       "month": 1,
       "day": 10,
       "entry": 9,
@@ -3537,7 +3540,7 @@
       }
     },
     {
-      "id": "mr:0110-arcontius",
+      "id": "mr:0110-arcontius-vivariensis",
       "month": 1,
       "day": 10,
       "entry": 10,
@@ -3591,7 +3594,7 @@
       }
     },
     {
-      "id": "mr:0110-benincasa",
+      "id": "mr:0110-benincasa-cavensis",
       "month": 1,
       "day": 10,
       "entry": 12,
@@ -3625,7 +3628,7 @@
       }
     },
     {
-      "id": "mr:0110-gulielmus",
+      "id": "mr:0110-gulielmus-biturigum",
       "month": 1,
       "day": 10,
       "entry": 13,
@@ -3670,7 +3673,7 @@
       }
     },
     {
-      "id": "mr:0110-gundisalvus",
+      "id": "mr:0110-gundisalvus-amarantii",
       "month": 1,
       "day": 10,
       "entry": 14,
@@ -3863,7 +3866,7 @@
       ]
     },
     {
-      "id": "mr:0111-hyginus",
+      "id": "mr:0111-hyginus-papa",
       "month": 1,
       "day": 11,
       "entry": 1,
@@ -3890,7 +3893,7 @@
       }
     },
     {
-      "id": "mr:0111-salvius",
+      "id": "mr:0111-salvius-carthaginensis",
       "month": 1,
       "day": 11,
       "entry": 2,
@@ -3924,7 +3927,7 @@
       }
     },
     {
-      "id": "mr:0111-typasius",
+      "id": "mr:0111-typasius-tigavae",
       "month": 1,
       "day": 11,
       "entry": 3,
@@ -3969,7 +3972,7 @@
       }
     },
     {
-      "id": "mr:0111-leucius",
+      "id": "mr:0111-leucius-brundisii",
       "month": 1,
       "day": 11,
       "entry": 5,
@@ -3994,7 +3997,7 @@
       }
     },
     {
-      "id": "mr:0111-honorata",
+      "id": "mr:0111-honorata-papiae",
       "month": 1,
       "day": 11,
       "entry": 6,
@@ -4019,7 +4022,7 @@
       }
     },
     {
-      "id": "mr:0111-theodosius",
+      "id": "mr:0111-theodosius-coenobiarcha",
       "month": 1,
       "day": 11,
       "entry": 7,
@@ -4048,7 +4051,7 @@
       }
     },
     {
-      "id": "mr:0111-paulinus",
+      "id": "mr:0111-paulinus-aquileiensis",
       "month": 1,
       "day": 11,
       "entry": 8,
@@ -4181,7 +4184,7 @@
       }
     },
     {
-      "id": "mr:0112-arcadius",
+      "id": "mr:0112-arcadius-caesareae",
       "month": 1,
       "day": 12,
       "entry": 1,
@@ -4234,7 +4237,7 @@
       }
     },
     {
-      "id": "mr:0112-caesaria",
+      "id": "mr:0112-caesaria-abbatissa",
       "month": 1,
       "day": 12,
       "entry": 3,
@@ -4264,7 +4267,7 @@
       }
     },
     {
-      "id": "mr:0112-ferreolus",
+      "id": "mr:0112-ferreolus-gratianopoli",
       "month": 1,
       "day": 12,
       "entry": 4,
@@ -4318,7 +4321,7 @@
       }
     },
     {
-      "id": "mr:0112-aelredus",
+      "id": "mr:0112-aelredus-rievallensis",
       "month": 1,
       "day": 12,
       "entry": 6,
@@ -4509,7 +4512,7 @@
       }
     },
     {
-      "id": "mr:0113-hilarius",
+      "id": "mr:0113-hilarius-pictaviensis",
       "month": 1,
       "day": 13,
       "entry": 1,
@@ -4596,7 +4599,7 @@
       }
     },
     {
-      "id": "mr:0113-agricius",
+      "id": "mr:0113-agricius-trevirorum",
       "month": 1,
       "day": 13,
       "entry": 3,
@@ -4621,7 +4624,7 @@
       }
     },
     {
-      "id": "mr:0113-remigius",
+      "id": "mr:0113-remigius-remorum",
       "month": 1,
       "day": 13,
       "entry": 4,
@@ -4649,7 +4652,7 @@
       ]
     },
     {
-      "id": "mr:0113-kentigernus",
+      "id": "mr:0113-kentigernus-glasguae",
       "month": 1,
       "day": 13,
       "entry": 5,
@@ -4674,7 +4677,7 @@
       }
     },
     {
-      "id": "mr:0113-petrus",
+      "id": "mr:0113-petrus-capitoliadis",
       "month": 1,
       "day": 13,
       "entry": 6,
@@ -4721,7 +4724,7 @@
       }
     },
     {
-      "id": "mr:0113-godefridus",
+      "id": "mr:0113-godefridus-ilbenstadensis",
       "month": 1,
       "day": 13,
       "entry": 8,
@@ -4750,7 +4753,7 @@
       ]
     },
     {
-      "id": "mr:0113-iutta",
+      "id": "mr:0113-iutta-hoii",
       "month": 1,
       "day": 13,
       "entry": 9,
@@ -4861,7 +4864,7 @@
       }
     },
     {
-      "id": "mr:0114-potitus",
+      "id": "mr:0114-potitus-sardicae",
       "month": 1,
       "day": 14,
       "entry": 1,
@@ -4888,7 +4891,7 @@
       ]
     },
     {
-      "id": "mr:0114-glycerius",
+      "id": "mr:0114-glycerius-antiochiae",
       "month": 1,
       "day": 14,
       "entry": 2,
@@ -4911,7 +4914,7 @@
       ]
     },
     {
-      "id": "mr:0114-felix",
+      "id": "mr:0114-felix-nolae",
       "month": 1,
       "day": 14,
       "entry": 3,
@@ -4969,7 +4972,7 @@
       }
     },
     {
-      "id": "mr:0114-nino",
+      "id": "mr:0114-nino-hiberorum",
       "month": 1,
       "day": 14,
       "entry": 5,
@@ -4996,7 +4999,7 @@
       }
     },
     {
-      "id": "mr:0114-firminus",
+      "id": "mr:0114-firminus-gabalorum",
       "month": 1,
       "day": 14,
       "entry": 6,
@@ -5019,7 +5022,7 @@
       }
     },
     {
-      "id": "mr:0114-euphrasius",
+      "id": "mr:0114-euphrasius-arvernae",
       "month": 1,
       "day": 14,
       "entry": 7,
@@ -5056,7 +5059,7 @@
       ]
     },
     {
-      "id": "mr:0114-datius",
+      "id": "mr:0114-datius-mediolani",
       "month": 1,
       "day": 14,
       "entry": 8,
@@ -5101,7 +5104,7 @@
       }
     },
     {
-      "id": "mr:0114-fulgentius",
+      "id": "mr:0114-fulgentius-astigi",
       "month": 1,
       "day": 14,
       "entry": 9,
@@ -5240,7 +5243,7 @@
       }
     },
     {
-      "id": "mr:0115-secundina",
+      "id": "mr:0115-secundina-anagniae",
       "month": 1,
       "day": 15,
       "entry": 1,
@@ -5290,7 +5293,7 @@
       }
     },
     {
-      "id": "mr:0115-ita",
+      "id": "mr:0115-ita-virgo",
       "month": 1,
       "day": 15,
       "entry": 3,
@@ -5315,7 +5318,7 @@
       }
     },
     {
-      "id": "mr:0115-probus",
+      "id": "mr:0115-probus-reate",
       "month": 1,
       "day": 15,
       "entry": 4,
@@ -5335,7 +5338,7 @@
       ]
     },
     {
-      "id": "mr:0115-maurus",
+      "id": "mr:0115-maurus-glannafolii",
       "month": 1,
       "day": 15,
       "entry": 5,
@@ -5363,7 +5366,7 @@
       "note": "The 1749 and 1914 editions identify this abbot with Maurus, the disciple of Saint Benedict, whom Benedict sent into Gaul; the 2004 edition commemorates the abbot of Glanfeuil without that identification."
     },
     {
-      "id": "mr:0115-tarsicia",
+      "id": "mr:0115-tarsicia-ruthenensis",
       "month": 1,
       "day": 15,
       "entry": 6,
@@ -5383,7 +5386,7 @@
       ]
     },
     {
-      "id": "mr:0115-ablebertus",
+      "id": "mr:0115-ablebertus-cameracensis",
       "month": 1,
       "day": 15,
       "entry": 7,
@@ -5421,7 +5424,7 @@
       }
     },
     {
-      "id": "mr:0115-malardus",
+      "id": "mr:0115-malardus-carnuti",
       "month": 1,
       "day": 15,
       "entry": 8,
@@ -5441,7 +5444,7 @@
       ]
     },
     {
-      "id": "mr:0115-romedius",
+      "id": "mr:0115-romedius-anauniensis",
       "month": 1,
       "day": 15,
       "entry": 9,
@@ -5461,7 +5464,7 @@
       ]
     },
     {
-      "id": "mr:0115-bonitus",
+      "id": "mr:0115-bonitus-arvernorum",
       "month": 1,
       "day": 15,
       "entry": 10,
@@ -5522,7 +5525,7 @@
       }
     },
     {
-      "id": "mr:0115-arsenius",
+      "id": "mr:0115-arsenius-armi",
       "month": 1,
       "day": 15,
       "entry": 11,
@@ -5598,7 +5601,7 @@
       ]
     },
     {
-      "id": "mr:0115-angelus",
+      "id": "mr:0115-angelus-gualdensis",
       "month": 1,
       "day": 15,
       "entry": 14,
@@ -5731,7 +5734,7 @@
       }
     },
     {
-      "id": "mr:0116-danax",
+      "id": "mr:0116-danax-aulonis",
       "month": 1,
       "day": 16,
       "entry": 2,
@@ -5751,7 +5754,7 @@
       ]
     },
     {
-      "id": "mr:0116-mela",
+      "id": "mr:0116-mela-rhinocorurae",
       "month": 1,
       "day": 16,
       "entry": 3,
@@ -5778,7 +5781,7 @@
       }
     },
     {
-      "id": "mr:0116-honoratus",
+      "id": "mr:0116-honoratus-arelatis",
       "month": 1,
       "day": 16,
       "entry": 4,
@@ -5815,7 +5818,7 @@
       }
     },
     {
-      "id": "mr:0116-iacobus",
+      "id": "mr:0116-iacobus-tarantasiae",
       "month": 1,
       "day": 16,
       "entry": 5,
@@ -5849,7 +5852,7 @@
       }
     },
     {
-      "id": "mr:0116-titianus",
+      "id": "mr:0116-titianus-opitergii",
       "month": 1,
       "day": 16,
       "entry": 6,
@@ -5874,7 +5877,7 @@
       }
     },
     {
-      "id": "mr:0116-leobatius",
+      "id": "mr:0116-leobatius-senapariae",
       "month": 1,
       "day": 16,
       "entry": 7,
@@ -5903,7 +5906,7 @@
       ]
     },
     {
-      "id": "mr:0116-trivierus",
+      "id": "mr:0116-trivierus-dumbensis",
       "month": 1,
       "day": 16,
       "entry": 8,
@@ -5923,7 +5926,7 @@
       ]
     },
     {
-      "id": "mr:0116-furseus",
+      "id": "mr:0116-furseus-latiniacensis",
       "month": 1,
       "day": 16,
       "entry": 9,
@@ -5975,7 +5978,7 @@
       }
     },
     {
-      "id": "mr:0116-ioanna",
+      "id": "mr:0116-ioanna-balnei",
       "month": 1,
       "day": 16,
       "entry": 10,
@@ -6115,7 +6118,7 @@
       }
     },
     {
-      "id": "mr:0117-antonius",
+      "id": "mr:0117-antonius-thebaidis",
       "month": 1,
       "day": 17,
       "entry": 1,
@@ -6168,7 +6171,7 @@
       }
     },
     {
-      "id": "mr:0117-iulianus",
+      "id": "mr:0117-iulianus-saba",
       "month": 1,
       "day": 17,
       "entry": 3,
@@ -6207,7 +6210,7 @@
       ]
     },
     {
-      "id": "mr:0117-marcellus",
+      "id": "mr:0117-marcellus-deae-vocontiorum",
       "month": 1,
       "day": 17,
       "entry": 4,
@@ -6262,7 +6265,7 @@
       }
     },
     {
-      "id": "mr:0117-gamelbertus",
+      "id": "mr:0117-gamelbertus-bavariae",
       "month": 1,
       "day": 17,
       "entry": 6,
@@ -6291,7 +6294,7 @@
       ]
     },
     {
-      "id": "mr:0117-rosselina",
+      "id": "mr:0117-rosselina-cellae-robaudi",
       "month": 1,
       "day": 17,
       "entry": 7,
@@ -6390,7 +6393,7 @@
       ]
     },
     {
-      "id": "mr:0118-volusianus",
+      "id": "mr:0118-volusianus-turonensis",
       "month": 1,
       "day": 18,
       "entry": 3,
@@ -6424,7 +6427,7 @@
       }
     },
     {
-      "id": "mr:0118-prisca",
+      "id": "mr:0118-prisca-romae",
       "month": 1,
       "day": 18,
       "entry": 4,
@@ -6458,7 +6461,7 @@
       "note": "The 1749 and 1914 editions commemorate the passion of Prisca, virgin and martyr under Claudius; the 2004 edition commemorates only the saint whose name the basilica on the Aventine bears. Tradition holds the titulus Priscae to be the house church of Aquila and Prisca, Paul's collaborators (Romans 16:3-5), whom the 2004 edition commemorates on 8 July (mr:0708-aquila-et-prisca); the Martyrology itself does not identify the two."
     },
     {
-      "id": "mr:0118-deicolus",
+      "id": "mr:0118-deicolus-lutrensis",
       "month": 1,
       "day": 18,
       "entry": 5,
@@ -6515,7 +6518,7 @@
       ]
     },
     {
-      "id": "mr:0118-margarita",
+      "id": "mr:0118-margarita-budae",
       "month": 1,
       "day": 18,
       "entry": 7,
@@ -6542,7 +6545,7 @@
       }
     },
     {
-      "id": "mr:0118-facius",
+      "id": "mr:0118-facius-cremonae",
       "month": 1,
       "day": 18,
       "entry": 8,
@@ -6688,7 +6691,7 @@
       ]
     },
     {
-      "id": "mr:0119-germanicus",
+      "id": "mr:0119-germanicus-smyrnae",
       "month": 1,
       "day": 19,
       "entry": 1,
@@ -6724,7 +6727,7 @@
       }
     },
     {
-      "id": "mr:0119-pontianus",
+      "id": "mr:0119-pontianus-spoleti",
       "month": 1,
       "day": 19,
       "entry": 2,
@@ -6827,7 +6830,7 @@
       ]
     },
     {
-      "id": "mr:0119-bassianus",
+      "id": "mr:0119-bassianus-laudis-pompeiae",
       "month": 1,
       "day": 19,
       "entry": 6,
@@ -6902,7 +6905,7 @@
       ]
     },
     {
-      "id": "mr:0119-launomarus",
+      "id": "mr:0119-launomarus-corbionensis",
       "month": 1,
       "day": 19,
       "entry": 8,
@@ -6943,7 +6946,7 @@
       }
     },
     {
-      "id": "mr:0119-ioannes",
+      "id": "mr:0119-ioannes-ravennae",
       "month": 1,
       "day": 19,
       "entry": 9,
@@ -6982,7 +6985,7 @@
       ]
     },
     {
-      "id": "mr:0119-remigius",
+      "id": "mr:0119-remigius-rothomagi",
       "month": 1,
       "day": 19,
       "entry": 10,
@@ -7002,7 +7005,7 @@
       ]
     },
     {
-      "id": "mr:0119-arsenius",
+      "id": "mr:0119-arsenius-corcyrae",
       "month": 1,
       "day": 19,
       "entry": 11,
@@ -7042,7 +7045,7 @@
       ]
     },
     {
-      "id": "mr:0120-fabianus",
+      "id": "mr:0120-fabianus-papa",
       "month": 1,
       "day": 20,
       "entry": 1,
@@ -7068,7 +7071,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0120-sebastianus",
+      "id": "mr:0120-sebastianus-romae",
       "month": 1,
       "day": 20,
       "entry": 2,
@@ -7113,7 +7116,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0120-ascla",
+      "id": "mr:0120-ascla-antinoes",
       "month": 1,
       "day": 20,
       "entry": 3,
@@ -7141,7 +7144,7 @@
       ]
     },
     {
-      "id": "mr:0120-neophytus",
+      "id": "mr:0120-neophytus-nicaeae",
       "month": 1,
       "day": 20,
       "entry": 4,
@@ -7166,7 +7169,7 @@
       }
     },
     {
-      "id": "mr:0120-euthymius",
+      "id": "mr:0120-euthymius-palaestinae",
       "month": 1,
       "day": 20,
       "entry": 5,
@@ -7213,7 +7216,7 @@
       }
     },
     {
-      "id": "mr:0120-wulfstanus",
+      "id": "mr:0120-wulfstanus-vigorniae",
       "month": 1,
       "day": 20,
       "entry": 6,
@@ -7269,7 +7272,7 @@
       }
     },
     {
-      "id": "mr:0120-henricus",
+      "id": "mr:0120-henricus-upsaliensis",
       "month": 1,
       "day": 20,
       "entry": 8,
@@ -7417,7 +7420,7 @@
       }
     },
     {
-      "id": "mr:0121-agnes",
+      "id": "mr:0121-agnes-romae",
       "month": 1,
       "day": 21,
       "entry": 1,
@@ -7446,7 +7449,7 @@
       ]
     },
     {
-      "id": "mr:0121-publius",
+      "id": "mr:0121-publius-athenarum",
       "month": 1,
       "day": 21,
       "entry": 2,
@@ -7495,7 +7498,7 @@
       }
     },
     {
-      "id": "mr:0121-patroclus",
+      "id": "mr:0121-patroclus-trecarum",
       "month": 1,
       "day": 21,
       "entry": 4,
@@ -7520,7 +7523,7 @@
       }
     },
     {
-      "id": "mr:0121-epiphanius",
+      "id": "mr:0121-epiphanius-papiae",
       "month": 1,
       "day": 21,
       "entry": 5,
@@ -7545,7 +7548,7 @@
       }
     },
     {
-      "id": "mr:0121-meginradus",
+      "id": "mr:0121-meginradus-turicensis",
       "month": 1,
       "day": 21,
       "entry": 6,
@@ -7570,7 +7573,7 @@
       }
     },
     {
-      "id": "mr:0121-zacharias",
+      "id": "mr:0121-zacharias-angelicus",
       "month": 1,
       "day": 21,
       "entry": 7,
@@ -7735,7 +7738,7 @@
       }
     },
     {
-      "id": "mr:0122-vincentius",
+      "id": "mr:0122-vincentius-caesaraugustanus",
       "month": 1,
       "day": 22,
       "entry": 1,
@@ -7772,7 +7775,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0122-valerius",
+      "id": "mr:0122-valerius-caesaraugustanus",
       "month": 1,
       "day": 22,
       "entry": 2,
@@ -7814,7 +7817,7 @@
       }
     },
     {
-      "id": "mr:0122-gaudentius",
+      "id": "mr:0122-gaudentius-novariae",
       "month": 1,
       "day": 22,
       "entry": 3,
@@ -7839,7 +7842,7 @@
       }
     },
     {
-      "id": "mr:0122-anastasius",
+      "id": "mr:0122-anastasius-sergiopolis",
       "month": 1,
       "day": 22,
       "entry": 4,
@@ -7873,7 +7876,7 @@
       }
     },
     {
-      "id": "mr:0122-barnardus",
+      "id": "mr:0122-barnardus-viennensis",
       "month": 1,
       "day": 22,
       "entry": 5,
@@ -7916,7 +7919,7 @@
       }
     },
     {
-      "id": "mr:0122-dominicus",
+      "id": "mr:0122-dominicus-sorae",
       "month": 1,
       "day": 22,
       "entry": 6,
@@ -8221,7 +8224,7 @@
       }
     },
     {
-      "id": "mr:0123-emerentiana",
+      "id": "mr:0123-emerentiana-romae",
       "month": 1,
       "day": 23,
       "entry": 2,
@@ -8271,7 +8274,7 @@
       }
     },
     {
-      "id": "mr:0123-amasius",
+      "id": "mr:0123-amasius-teani",
       "month": 1,
       "day": 23,
       "entry": 4,
@@ -8291,7 +8294,7 @@
       ]
     },
     {
-      "id": "mr:0123-hildephonsus",
+      "id": "mr:0123-hildephonsus-toleti",
       "month": 1,
       "day": 23,
       "entry": 5,
@@ -8318,7 +8321,7 @@
       }
     },
     {
-      "id": "mr:0123-maimbodus",
+      "id": "mr:0123-maimbodus-domnipetrae",
       "month": 1,
       "day": 23,
       "entry": 6,
@@ -8421,7 +8424,7 @@
       ]
     },
     {
-      "id": "mr:0124-felicianus",
+      "id": "mr:0124-felicianus-fulginii",
       "month": 1,
       "day": 24,
       "entry": 2,
@@ -8452,7 +8455,7 @@
       ]
     },
     {
-      "id": "mr:0124-sabinianus",
+      "id": "mr:0124-sabinianus-trecensis",
       "month": 1,
       "day": 24,
       "entry": 3,
@@ -8475,7 +8478,7 @@
       }
     },
     {
-      "id": "mr:0124-babyla",
+      "id": "mr:0124-babyla-antiochiae",
       "month": 1,
       "day": 24,
       "entry": 4,
@@ -8502,7 +8505,7 @@
       }
     },
     {
-      "id": "mr:0124-exsuperantius",
+      "id": "mr:0124-exsuperantius-cinguli",
       "month": 1,
       "day": 24,
       "entry": 5,
@@ -8693,7 +8696,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0125-ananias",
+      "id": "mr:0125-ananias-damasci",
       "month": 1,
       "day": 25,
       "entry": 2,
@@ -8718,7 +8721,7 @@
       }
     },
     {
-      "id": "mr:0125-arthemas",
+      "id": "mr:0125-arthemas-puteolorum",
       "month": 1,
       "day": 25,
       "entry": 3,
@@ -8738,7 +8741,7 @@
       ]
     },
     {
-      "id": "mr:0125-agileus",
+      "id": "mr:0125-agileus-carthaginis",
       "month": 1,
       "day": 25,
       "entry": 4,
@@ -8758,7 +8761,7 @@
       ]
     },
     {
-      "id": "mr:0125-gregorius",
+      "id": "mr:0125-gregorius-nazianzenus",
       "month": 1,
       "day": 25,
       "entry": 5,
@@ -8777,15 +8780,13 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
+        "year": 389,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0125-bretannion",
+      "id": "mr:0125-bretannion-tomitanus",
       "month": 1,
       "day": 25,
       "entry": 6,
@@ -8811,7 +8812,7 @@
       }
     },
     {
-      "id": "mr:0125-palaemon",
+      "id": "mr:0125-palaemon-tabennesi",
       "month": 1,
       "day": 25,
       "entry": 7,
@@ -8869,7 +8870,7 @@
       }
     },
     {
-      "id": "mr:0125-poppo",
+      "id": "mr:0125-poppo-stabulensis",
       "month": 1,
       "day": 25,
       "entry": 9,
@@ -9135,7 +9136,7 @@
       ]
     },
     {
-      "id": "mr:0126-theogenes",
+      "id": "mr:0126-theogenes-hipponis",
       "month": 1,
       "day": 26,
       "entry": 2,
@@ -9160,7 +9161,7 @@
       }
     },
     {
-      "id": "mr:0126-paula",
+      "id": "mr:0126-paula-bethlehem",
       "month": 1,
       "day": 26,
       "entry": 3,
@@ -9209,7 +9210,7 @@
       ]
     },
     {
-      "id": "mr:0126-albericus",
+      "id": "mr:0126-albericus-cistercii",
       "month": 1,
       "day": 26,
       "entry": 5,
@@ -9417,7 +9418,7 @@
       }
     },
     {
-      "id": "mr:0127-devota",
+      "id": "mr:0127-devota-marianae",
       "month": 1,
       "day": 27,
       "entry": 4,
@@ -9441,7 +9442,7 @@
       }
     },
     {
-      "id": "mr:0127-marius",
+      "id": "mr:0127-marius-bodacensis",
       "month": 1,
       "day": 27,
       "entry": 5,
@@ -9466,7 +9467,7 @@
       }
     },
     {
-      "id": "mr:0127-vitalianus",
+      "id": "mr:0127-vitalianus-papa",
       "month": 1,
       "day": 27,
       "entry": 6,
@@ -9491,7 +9492,7 @@
       }
     },
     {
-      "id": "mr:0127-theodoricus",
+      "id": "mr:0127-theodoricus-aurelianensis",
       "month": 1,
       "day": 27,
       "entry": 7,
@@ -9536,7 +9537,7 @@
       }
     },
     {
-      "id": "mr:0127-gilduinus",
+      "id": "mr:0127-gilduinus-carnutum",
       "month": 1,
       "day": 27,
       "entry": 8,
@@ -9582,7 +9583,7 @@
       }
     },
     {
-      "id": "mr:0127-ioannes",
+      "id": "mr:0127-ioannes-morinensis",
       "month": 1,
       "day": 27,
       "entry": 9,
@@ -9811,7 +9812,7 @@
       }
     },
     {
-      "id": "mr:0128-ioannes",
+      "id": "mr:0128-ioannes-reomaensis",
       "month": 1,
       "day": 28,
       "entry": 2,
@@ -9836,7 +9837,7 @@
       }
     },
     {
-      "id": "mr:0128-iacobus",
+      "id": "mr:0128-iacobus-palaestinae",
       "month": 1,
       "day": 28,
       "entry": 3,
@@ -9864,7 +9865,7 @@
       }
     },
     {
-      "id": "mr:0128-iulianus",
+      "id": "mr:0128-iulianus-conchae",
       "month": 1,
       "day": 28,
       "entry": 4,
@@ -10083,7 +10084,7 @@
       }
     },
     {
-      "id": "mr:0129-constantius",
+      "id": "mr:0129-constantius-perusiae",
       "month": 1,
       "day": 29,
       "entry": 3,
@@ -10138,7 +10139,7 @@
       ]
     },
     {
-      "id": "mr:0129-valerius",
+      "id": "mr:0129-valerius-trevirorum",
       "month": 1,
       "day": 29,
       "entry": 5,
@@ -10163,7 +10164,7 @@
       }
     },
     {
-      "id": "mr:0129-aphraates",
+      "id": "mr:0129-aphraates-antiochiae",
       "month": 1,
       "day": 29,
       "entry": 6,
@@ -10376,7 +10377,7 @@
       }
     },
     {
-      "id": "mr:0130-matthias",
+      "id": "mr:0130-matthias-hierosolymorum",
       "month": 1,
       "day": 30,
       "entry": 1,
@@ -10407,7 +10408,7 @@
       }
     },
     {
-      "id": "mr:0130-barsimaeus",
+      "id": "mr:0130-barsimaeus-edessae",
       "month": 1,
       "day": 30,
       "entry": 2,
@@ -10434,7 +10435,7 @@
       }
     },
     {
-      "id": "mr:0130-martina",
+      "id": "mr:0130-martina-romae",
       "month": 1,
       "day": 30,
       "entry": 3,
@@ -10467,7 +10468,7 @@
       }
     },
     {
-      "id": "mr:0130-bathildis",
+      "id": "mr:0130-bathildis-calae",
       "month": 1,
       "day": 30,
       "entry": 4,
@@ -10504,7 +10505,7 @@
       ]
     },
     {
-      "id": "mr:0130-aldegundis",
+      "id": "mr:0130-aldegundis-malbodii",
       "month": 1,
       "day": 30,
       "entry": 5,
@@ -10529,7 +10530,7 @@
       }
     },
     {
-      "id": "mr:0130-armentarius",
+      "id": "mr:0130-armentarius-papiae",
       "month": 1,
       "day": 30,
       "entry": 6,
@@ -10586,7 +10587,7 @@
       }
     },
     {
-      "id": "mr:0130-adelelmus",
+      "id": "mr:0130-adelelmus-burgorum",
       "month": 1,
       "day": 30,
       "entry": 8,
@@ -10938,7 +10939,7 @@
       }
     },
     {
-      "id": "mr:0131-metranus",
+      "id": "mr:0131-metranus-alexandriae",
       "month": 1,
       "day": 31,
       "entry": 3,
@@ -10988,7 +10989,7 @@
       }
     },
     {
-      "id": "mr:0131-geminianus",
+      "id": "mr:0131-geminianus-mutinae",
       "month": 1,
       "day": 31,
       "entry": 5,
@@ -11013,7 +11014,7 @@
       }
     },
     {
-      "id": "mr:0131-abraham",
+      "id": "mr:0131-abraham-arbelensis",
       "month": 1,
       "day": 31,
       "entry": 6,
@@ -11042,7 +11043,7 @@
       ]
     },
     {
-      "id": "mr:0131-iulius",
+      "id": "mr:0131-iulius-novariae",
       "month": 1,
       "day": 31,
       "entry": 7,
@@ -11067,7 +11068,7 @@
       }
     },
     {
-      "id": "mr:0131-marcella",
+      "id": "mr:0131-marcella-romae",
       "month": 1,
       "day": 31,
       "entry": 8,
@@ -11096,7 +11097,7 @@
       }
     },
     {
-      "id": "mr:0131-maedhoc",
+      "id": "mr:0131-maedhoc-fernae",
       "month": 1,
       "day": 31,
       "entry": 9,
@@ -11119,7 +11120,7 @@
       }
     },
     {
-      "id": "mr:0131-waldus",
+      "id": "mr:0131-waldus-ebroicensis",
       "month": 1,
       "day": 31,
       "entry": 10,
@@ -11151,7 +11152,7 @@
       }
     },
     {
-      "id": "mr:0131-eusebius",
+      "id": "mr:0131-eusebius-rangvilae",
       "month": 1,
       "day": 31,
       "entry": 11,
@@ -133799,7 +133800,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:0103-theogenes"
+        "mr:0103-theogenes-parii"
       ],
       "note": "The 2004 edition reduces the eulogy to the sole Theogenes"
     },
@@ -133893,7 +133894,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0102-telesphorus"
+        "mr:0102-telesphorus-papa"
       ]
     },
     {
@@ -133974,9 +133975,9 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:0114-glycerius"
+        "mr:0114-glycerius-antiochiae"
       ],
-      "note": "The 2004 edition commemorates a deacon and martyr of Antioch on 14 January as Glycerius (mr:0114-glycerius) and does not print Clerus, who is probably the same martyr under a corrupted name: the Bibliotheca Sanctorum takes Baronius's “Clerus” for a second entry of Glycerius; the Hieronymian Martyrology gives the name of the Antioch deacon in several forms (one manuscript has a deacon Lucerus at Antioch on 7 January) on 7, 13 and 15 January; and the other names recorded for Clerus (Licerius, Lycerius, Lucerius, Bilicerius) are forms of Glycerius. Not settled: no source states the identification outright or explains the 2004 date, 14 January, which is the day the Syriac Martyrology gives a deacon Glycerius of Nicomedia; and some calendars have Glycerius of Antioch drowned, as the Syriac Martyrology says of another Glycerius at Antioch (8 June), where the historical editions have Clerus beheaded."
+      "note": "The 2004 edition commemorates a deacon and martyr of Antioch on 14 January as Glycerius (mr:0114-glycerius-antiochiae) and does not print Clerus, who is probably the same martyr under a corrupted name: the Bibliotheca Sanctorum takes Baronius's “Clerus” for a second entry of Glycerius; the Hieronymian Martyrology gives the name of the Antioch deacon in several forms (one manuscript has a deacon Lucerus at Antioch on 7 January) on 7, 13 and 15 January; and the other names recorded for Clerus (Licerius, Lycerius, Lucerius, Bilicerius) are forms of Glycerius. Not settled: no source states the identification outright or explains the 2004 date, 14 January, which is the day the Syriac Martyrology gives a deacon Glycerius of Nicomedia; and some calendars have Glycerius of Antioch drowned, as the Syriac Martyrology says of another Glycerius at Antioch (8 June), where the historical editions have Clerus beheaded."
     },
     {
       "id": "mr:0107-felix-et-ianuarius",
@@ -134155,7 +134156,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG",
       "same_eulogy": [
-        "mr:0125-palaemon"
+        "mr:0125-palaemon-tabennesi"
       ]
     },
     {
@@ -134221,7 +134222,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0119-ioannes"
+        "mr:0119-ioannes-ravennae"
       ]
     },
     {
@@ -134278,7 +134279,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "BG",
       "same_eulogy": [
-        "mr:0114-potitus"
+        "mr:0114-potitus-sardicae"
       ]
     },
     {
@@ -134318,7 +134319,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "TR",
       "same_eulogy": [
-        "mr:0117-iulianus"
+        "mr:0117-iulianus-saba"
       ]
     },
     {
@@ -134330,9 +134331,9 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": null,
       "same_eulogy": [
-        "mr:0114-euphrasius"
+        "mr:0114-euphrasius-arvernae"
       ],
-      "note": "The historical editions commemorate a bishop Euphrasius in Africa on this day; in the same eulogy the 2004 edition commemorates Euphrasius, bishop of Clermont (mr:0114-euphrasius)."
+      "note": "The historical editions commemorate a bishop Euphrasius in Africa on this day; in the same eulogy the 2004 edition commemorates Euphrasius, bishop of Clermont (mr:0114-euphrasius-arvernae)."
     },
     {
       "id": "mr:0114-macrina",
@@ -134517,7 +134518,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "GB",
       "same_eulogy": [
-        "mr:0120-wulfstanus"
+        "mr:0120-wulfstanus-vigorniae"
       ]
     },
     {
@@ -134581,7 +134582,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG",
       "same_eulogy": [
-        "mr:0120-ascla"
+        "mr:0120-ascla-antinoes"
       ]
     },
     {
@@ -134698,7 +134699,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "FR",
       "same_eulogy": [
-        "mr:0130-bathildis"
+        "mr:0130-bathildis-calae"
       ]
     },
     {
@@ -134761,7 +134762,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0121-agnes"
+        "mr:0121-agnes-romae"
       ]
     },
     {
@@ -136908,7 +136909,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TN",
       "same_eulogy": [
-        "mr:0105-deogratias"
+        "mr:0105-deogratias-carthaginis"
       ]
     },
     {
@@ -137604,7 +137605,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "SY",
       "same_eulogy": [
-        "mr:0129-aphraates"
+        "mr:0129-aphraates-antiochiae"
       ]
     },
     {
@@ -137712,7 +137713,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:0117-marcellus"
+        "mr:0117-marcellus-deae-vocontiorum"
       ]
     },
     {
@@ -145404,7 +145405,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:0113-remigius"
+        "mr:0113-remigius-remorum"
       ]
     },
     {
@@ -146217,7 +146218,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:0117-iulianus"
+        "mr:0117-iulianus-saba"
       ]
     },
     {
@@ -146310,7 +146311,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "DE",
       "same_eulogy": [
-        "mr:0124-felicianus"
+        "mr:0124-felicianus-fulginii"
       ],
       "edition_notes": {
         "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin is a translation of relics (Translatio), not a birthday."
@@ -148543,7 +148544,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0110-miltiades"
+        "mr:0110-miltiades-papa"
       ]
     },
     {

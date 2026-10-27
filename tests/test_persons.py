@@ -1,4 +1,6 @@
+import json
 import sys
+import tempfile
 import unittest
 from pathlib import Path
 
@@ -17,6 +19,27 @@ class NameKeyTest(unittest.TestCase):
         # The subject "Ioannes Pak Hu Jae" is the printed "Ioánnis Pak Hu-jae" (#84).
         self.assertEqual(pt.name_key("Ioannes Pak Hu-jae"), pt.name_key("Ioannes Pak Hu Jae"))
         self.assertEqual(pt.name_key("Augustinus Yi Kwang-hŏn"), "augustinus yi kwang hon")
+
+
+class NameSubjectsTest(unittest.TestCase):
+    def test_the_words_a_discriminator_added_are_no_part_of_the_name(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            (root / "i18n").mkdir()
+            (root / "data").mkdir()
+            (root / "i18n" / "la.json").write_text(json.dumps({"mr:0101-almachius-romae": "Sanctus Almachius Romae",
+                                                               "mr:0730-petrus-chrysologus": "Sanctus Petrus Chrysologus"}))
+            (root / "i18n" / "it.json").write_text(json.dumps({"mr:0101-almachius-romae": "Sant’Almachio di Roma",
+                                                               "mr:0110-miltiades-papa": "San Milziade, papa"}))
+            (root / "data" / "subject_discriminators.json").write_text(json.dumps(
+                {"discriminators": {"mr:0101-almachius-romae": {"la": "Romae", "it": "di Roma"},
+                                    "mr:0110-miltiades-papa": {"it": "papa"}}}))
+            self.assertEqual(pt.name_subjects(root, "la"), {"mr:0101-almachius-romae": "Sanctus Almachius",
+                                                            "mr:0730-petrus-chrysologus": "Sanctus Petrus Chrysologus"})
+            self.assertEqual(pt.name_subjects(root, "it"), {"mr:0101-almachius-romae": "Sant’Almachio",
+                                                            "mr:0110-miltiades-papa": "San Milziade"})
+            (root / "data" / "subject_discriminators.json").unlink()
+            self.assertEqual(pt.name_subjects(root, "la")["mr:0101-almachius-romae"], "Sanctus Almachius Romae")
 
 
 class SubjectNamesTest(unittest.TestCase):

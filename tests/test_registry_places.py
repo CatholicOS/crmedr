@@ -178,7 +178,7 @@ class CheckTest(unittest.TestCase):
                 shutil.copy(ROOT / rel, root / rel)
             shutil.copytree(ROOT / "registry", root / "registry")
             reg = json.loads((root / "data/martyrology_ids.json").read_text(encoding="utf-8"))
-            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius")
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius-magnus")
             e["country"] = "GR"
             (root / "data/martyrology_ids.json").write_text(
                 json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
@@ -196,14 +196,14 @@ class CheckTest(unittest.TestCase):
                 shutil.copy(ROOT / rel, root / rel)
             shutil.copytree(ROOT / "registry", root / "registry")
             places = json.loads((root / "data/places.json").read_text(encoding="utf-8"))
-            places["places"]["mr:0101-basilius"].append({"role": "birth", "la": "Cæsaréæ", "source": "curated"})
+            places["places"]["mr:0101-basilius-magnus"].append({"role": "birth", "la": "Cæsaréæ", "source": "curated"})
             (root / "data/places.json").write_text(json.dumps(places, ensure_ascii=False, indent=2) + "\n",
                                                    encoding="utf-8")
             self.assertEqual(rp.main(["--check", str(root)]), 1)
             with contextlib.redirect_stdout(io.StringIO()):
                 self.assertEqual(rp.main([str(root)]), 0)
             reg = json.loads((root / "data/martyrology_ids.json").read_text(encoding="utf-8"))
-            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius")
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0101-basilius-magnus")
             self.assertEqual(e["places"][-1]["la"], "Cæsaréæ")
 
 

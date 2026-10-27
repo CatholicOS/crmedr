@@ -109,7 +109,7 @@ TYPOLOGY_OVERRIDES = {
     "mr:1019-ioannes-de-brebeuf-et-socii": "celebratio",  # group memorial; deaths on other days
     "mr:1116-gertrudis-magna": "celebratio",  # natalis at 1117 ("memoria pridie")
     # The text states, after the lead, that the burial is kept on this day.
-    "mr:0121-agnes": "depositio",
+    "mr:0121-agnes-romae": "depositio",
     "mr:1014-callistus-i": "depositio",
     "mr:1123-clemens-i": "depositio",
     "mr:0512-pancratius": "depositio",

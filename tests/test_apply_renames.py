@@ -27,7 +27,9 @@ def cs(*ops):
 
 
 def R(old, new, **labels):
-    return ar.Rename(old, new, {"la": None, "en": None, "it": None} | labels)
+    """The rename of a CANDS candidate (its category), else of a typed ID."""
+    category = next((c["category"] for c in CANDS if c["new_id"] == new), "typed")
+    return ar.Rename(old, new, {"la": None, "en": None, "it": None} | labels, category)
 
 
 class RenamesTest(unittest.TestCase):
@@ -136,7 +138,7 @@ class RelabelsTest(unittest.TestCase):
         edit = relabel(decision="edit", edited={"labels": LABELS})
         self.assertEqual(ar.relabel_only(cs(op(decision="reject"), edit, relabel("mr:0101-b", "reject"),
                                             op("mr:0101-c", "mr:0101-c-x"), relabel("mr:0101-c"))),
-                         [R("mr:0101-a", "mr:0101-a", **LABELS)])
+                         [R("mr:0101-a", "mr:0101-a", **LABELS)._replace(category=None)])  # a relabel alone
 
 
 class CheckTest(unittest.TestCase):
@@ -375,6 +377,52 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual(read("la")["mr:0101-a"], "Sanctus A")
         self.assertEqual([c[1] for c in fake.calls], ["scripts/extract_registry.py", "-m"])
 
+    def test_a_relabel_that_extends_the_subject_records_the_added_words(self):
+        # The person keeps the name: extract_persons drops the words the ID's discriminator added.
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B"'))
+        doc = cs(op("mr:0101-b", "mr:0101-b-z", "edit", {"new_id": "mr:0101-b-y"},
+                    cands=self.cs["operations"][1]["candidates"]),
+                 relabel("mr:0101-b", "edit", {"labels": {"la": "Sanctus B Novus", "en": "en mr:0101-b-y the New",
+                                                        "it": "it mr:0101-b-y, abate"}}))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        path = self.root / "data" / "subject_discriminators.json"
+        # per language, after a space or a comma
+        self.assertEqual(json.loads(path.read_text())["discriminators"],
+                         {"mr:0101-b-y": {"la": "Novus", "en": "the New", "it": "abate"}})
+        before = path.read_bytes()
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)  # applied again: kept
+        self.assertEqual(path.read_bytes(), before)
+
+    def test_a_subject_that_is_not_a_string_is_an_error_before_any_write(self):
+        before = self.snapshot()
+        doc = cs(self.cs["operations"][0], relabel("mr:0101-a", "edit", {"labels": {"la": ["Sanctus A X"]}}))
+        rep = ar.apply_crmedr(doc, self.root, False, run=Fake())
+        self.assertEqual(rep.errors, ["mr:0101-a: the la subject is not a string"])
+        self.assertEqual(self.snapshot(), before)
+
+    def test_a_surname_completes_the_name_and_records_nothing(self):
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B"'))
+        cands = [dict(self.cs["operations"][1]["candidates"][1], category="surname")]
+        doc = cs(op("mr:0101-b", "mr:0101-b-y", cands=cands),
+                 relabel("mr:0101-b", "edit", {"labels": {"la": "Sanctus B Kalinowski", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        self.assertFalse((self.root / "data" / "subject_discriminators.json").exists())
+
+    def test_a_reworded_discriminator_replaces_the_record(self):
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-a"', '"Sanctus A Romae"'))
+        path = self.root / "data" / "subject_discriminators.json"
+        path.write_text(json.dumps({"discriminators": {"mr:0101-a": {"la": "Romae", "it": "di Roma"}}}))
+        read = lambda: json.loads(path.read_text())["discriminators"]  # noqa: E731
+        reword = cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus A Mediolanensis", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(reword, self.root, False, run=Fake()).ok)
+        self.assertEqual(read(), {"mr:0101-a": {"la": "Mediolanensis", "it": "di Roma"}})
+        rewrite = cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus Alter", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(rewrite, self.root, False, run=Fake()).ok)
+        self.assertEqual(read(), {"mr:0101-a": {"it": "di Roma"}})
+
     def test_relabel_decided_after_its_rename_was_applied(self):
         ids = self.root / "data" / "martyrology_ids.json"
         doc = cs(self.cs["operations"][0], relabel("mr:0101-a", decision=None))
@@ -521,6 +569,22 @@ class SubcommandsTest(unittest.TestCase):
         self.assertFalse(rep.ok)
         self.assertIn("data/typology.json changed after regeneration", rep.errors[0])
         self.assertNotIn("scripts/extract_persons.py", [c[1] for c in fake.calls])
+
+    def test_regenerated_typology_in_another_key_order_passes(self):
+        # A rename can move an ID in sort order; the regenerated file then orders it anew.
+        typology = self.root / "data" / "typology.json"
+
+        def reverse(o):
+            return {k: reverse(o[k]) for k in reversed(list(o))} if isinstance(o, dict) else o
+
+        class Reordering(Fake):
+            def __call__(self, cmd, **kw):
+                if cmd[1] == "scripts/extract_typology.py":
+                    typology.write_text(json.dumps(reverse(json.loads(typology.read_text())), indent=2) + "\n")
+                return super().__call__(cmd, **kw)
+
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Reordering(), regenerate="/the/texts")
+        self.assertEqual(rep.errors, [])
 
     def test_regeneration_compares_with_the_rekeyed_file(self):
         fake = Fake()  # leaves the re-keyed typology as it is: no difference

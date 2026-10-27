@@ -52,7 +52,7 @@ class PipelineTest(unittest.TestCase):
         # The draft's None languages were filled from the current labels (relabel_op).
         followed = {"la": "Sanctus Eugendus Condatisci", "en": "Saint Eugendus", "it": "Sant’Eugendo"}
         self.assertEqual(ar.renames(changeset),
-                         [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", followed)])
+                         [ar.Rename("mr:0101-eugendus", "mr:0101-eugendus-condatisci", followed, "place-genitive")])
 
     def test_a_person_card(self):
         person = {"eulogy": "mr:0101-eugendus", "name": "Eugendus", "where": "text", "day": "01-01",

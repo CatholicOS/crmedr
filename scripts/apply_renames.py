@@ -27,6 +27,8 @@ import tempfile
 from pathlib import Path
 from typing import NamedTuple
 
+from persons_text import DISCRIMINATORS, strip_discriminator
+
 EDITIONS = ("martyrologium_romanum_2004", "martyrologium_romanum_2004_it_IT",
             "martyrologium_romanum_2004_en_unofficial")
 LABEL_FILES = {"la": "la.json", "en": "en.json", "it": "it.json"}
@@ -42,6 +44,8 @@ class Rename(NamedTuple):
     old: str
     new: str
     labels: dict  # la/en/it -> subject or None (None: leave unchanged)
+    category: str | None = None  # the decided candidate's ("place-genitive", "surname", …; "typed": an
+    # ID not among them); None: a relabel alone
 
 
 def changeset_errors(changeset):
@@ -159,17 +163,18 @@ def renames(changeset):
         new = _new_id(op)
         if new is None:
             continue
-        labels = dict.fromkeys(LANGS)
+        labels, category = dict.fromkeys(LANGS), "typed"
         for cand in op.get("candidates") or []:
             if cand.get("new_id") == new:
                 cl = cand.get("labels") or {}
                 labels = {lang: cl.get(lang) or None for lang in LANGS}
+                category = cand.get("category") or category
                 break
         if decision == "edit" and edited.get("subject_la"):
             labels["la"] = edited["subject_la"]
         if op["id"] in decided:
             labels = dict(decided[op["id"]])
-        out.append(Rename(op["id"], new, labels))
+        out.append(Rename(op["id"], new, labels, category))
     return out
 
 
@@ -420,6 +425,12 @@ def check_relabels(only, ids, deprecated=frozenset()):
     return errors
 
 
+def subject_type_errors(rs):
+    """Error strings for the subjects set to something other than a string."""
+    return [f"{r.old}: the {lang} subject is not a string"
+            for r in rs for lang, value in r.labels.items() if value and not isinstance(value, str)]
+
+
 def _plan(changeset, repo_root):
     """(to apply, already applied, relabels of IDs not renamed, check errors) for crmedr, judged
     against its registry. A decided relabel whose rename is already applied is written under the
@@ -433,9 +444,10 @@ def _plan(changeset, repo_root):
     decided = relabels(changeset)
     current = {op["id"]: {lang: (op.get("current") or {}).get(lang) or None for lang in LANGS}
                for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
-    applied = [Rename(r.new, r.new, current.get(r.old, r.labels)) for r in done if r.old in decided]
+    applied = [Rename(r.new, r.new, current.get(r.old, r.labels), r.category) for r in done if r.old in decided]
     only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
-    errors = check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
+    errors = (check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
+              + subject_type_errors(todo + only))
     if not errors:
         errors = _person_errors(changeset, todo, repo_root)
     return todo, done, only, errors
@@ -453,8 +465,58 @@ def _targets(repo_root):
     return targets
 
 
+# Discriminators that are part of a person's name ("Sanctus Iosephus Kalinowski" names Iosephus Kalinowski).
+NAME_PARTS = ("surname",)
+DISCRIMINATORS_COMMENT = ("The words a rename's discriminator added to each eulogy's subject, by language "
+                          "(\"Romae\" in \"Sanctus Almachius Romae\", \"di Roma\" in \"Sant’Almachio di "
+                          "Roma\"): no part of a person's name; persons_text.name_subjects drops them. Written "
+                          "by scripts/apply_renames.py when a relabel extends a subject.")
+
+
+def _record_discriminators(rs, repo_root, files):
+    """Record, under the new ID and by language, the words each relabel adds after the current
+    subject without its recorded discriminator (the subject follows the ID): a reworded discriminator
+    replaces the record, a subject rewritten otherwise drops it. A surname is part of the name and
+    records nothing; a relabel alone only rewords a discriminator already recorded."""
+    repo_root = Path(repo_root)
+    subjects = {lang: json.loads((repo_root / "i18n" / name).read_text(encoding="utf-8"))
+                for lang, name in LABEL_FILES.items()}
+    path = repo_root / DISCRIMINATORS
+    doc = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {
+        "$comment": DISCRIMINATORS_COMMENT, "discriminators": {}}
+    found = doc["discriminators"]
+    n = 0
+    for r in rs:
+        for lang in LABEL_FILES:
+            old, new = subjects[lang].get(r.new), r.labels.get(lang)
+            if not isinstance(old, str) or not new:
+                continue  # the subject is left unchanged
+            entry = found.get(r.new, {})
+            recorded = entry.get(lang)
+            base = strip_discriminator(old, recorded)
+            sep = next((s for s in (", ", " ") if new.startswith(base + s)), None)
+            discriminates = r.category not in (None, *NAME_PARTS) or (r.category is None and recorded)
+            words = new[len(base + sep):] if sep and discriminates else None  # "San Milziade, papa"
+            if words == recorded:
+                continue
+            if words:
+                entry[lang] = words
+                found[r.new] = entry
+            else:
+                del entry[lang]
+                if not entry:
+                    del found[r.new]
+            n += 1
+    if n:
+        doc["discriminators"] = dict(sorted(found.items()))
+        path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        files[str(path)] = files.get(str(path), 0) + n
+
+
 def _write_labels(rs, repo_root, dry, files, errors):
     """Labels go to i18n/{la,en,it}.json; before the re-key (dry) an ID is still the old one."""
+    if not dry:
+        _record_discriminators(rs, repo_root, files)
     for lang, name in LABEL_FILES.items():
         labels = {(r.old if dry else r.new): r.labels[lang] for r in rs if r.labels.get(lang)}
         if not labels:
@@ -495,9 +557,10 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
         _pass(todo + only, mapping, targets, repo_root, True, files, [])
         return _report(todo, done, files, errors, "crmedr", leftovers, only)
     _pass(todo + only, mapping, targets, repo_root, False, files, errors)
-    # typology and places must come out of the regeneration as the re-key left them
-    kept = {p: p.read_bytes() for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json")
-            if p.exists()}
+    # typology and places must come out of the regeneration as the re-key left them; their key
+    # order may differ, since a rename can move an ID in sort order
+    kept = {p: json.loads(p.read_text(encoding="utf-8"))
+            for p in (repo_root / "data" / "typology.json", repo_root / "data" / "places.json") if p.exists()}
     commands = [["python3", "scripts/extract_registry.py"]]
     scratch = tempfile.TemporaryDirectory() if regenerate else None
     if regenerate:
@@ -515,7 +578,8 @@ def apply_crmedr(changeset, repo_root, dry, run=subprocess.run, regenerate=None)
                 errors.append("failed: " + " ".join(cmd))
                 break
             if cmd[1] == "scripts/extract_places.py":
-                changed = [str(p.relative_to(repo_root)) for p, before in kept.items() if p.read_bytes() != before]
+                changed = [str(p.relative_to(repo_root)) for p, before in kept.items()
+                           if json.loads(p.read_text(encoding="utf-8")) != before]
                 if changed:
                     errors.append(f"{', '.join(changed)} changed after regeneration")
                     break
