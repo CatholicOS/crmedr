@@ -79045,11 +79045,44 @@
         "Maximinus"
       ],
       "failed": [
-        "status: the best candidate (Q6318991) fails it",
-        "name: the best candidate (Q6318991) fails it",
-        "death: the best candidate (Q6318991) fails it"
+        "death: the best candidate (Q54576647) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q54576647",
+          "label": "Juventinus",
+          "description": "member of the imperial guard of Emperor Julian",
+          "names": [
+            "Giuventino",
+            "Iuventinus",
+            "Juventinus",
+            "Juventius"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0363",
+          "feast": [
+            "Q2279",
+            "Q2286"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q6318991",
           "label": "Juventinus Albius Ovidius",
