@@ -1,39 +1,39 @@
 {
   "$comment": "The modern country (ISO 3166-1 alpha-2, or null) of each current eulogy whose opening place the gazetteer does not resolve to a single country: no opening place, one still awaiting review, or one in no single country or in several (such as Jerusalem, IL and PS). A value is a code, null or {country, note}. Hand-curated; an entry leaves this file once its opening place resolves to a single country (scripts/registry_places.py says so). Every other current eulogy takes the country of its opening place from data/gazetteer.json. A Holy Land place takes IL or PS by where it lies today (no IL → PS convention since 2026-10-21). See docs/canonicalization-report.md (Countries from opening places).",
   "countries": {
-    "mr:0101-iustinus": "IT",
+    "mr:0101-iustinus-episcopus": "IT",
     "mr:0101-maria-dei-genetrix": null,
     "mr:0102-basilius-magnus-et-gregorius-nazianzenus": "TR",
     "mr:0103-nomen-iesu": null,
     "mr:0106-epiphania-domini": "PS",
     "mr:0107-raymundus-de-penyafort": "ES",
-    "mr:0110-ioannes": {
+    "mr:0110-ioannes-hierosolymorum": {
       "country": "PS",
       "note": "opens at Jerusalem (IL and PS); kept PS"
     },
-    "mr:0111-theodosius": {
+    "mr:0111-theodosius-coenobiarcha": {
       "country": "PS",
       "note": "opens at Judaean Desert (IL and PS); kept PS"
     },
-    "mr:0113-hilarius": "FR",
+    "mr:0113-hilarius-pictaviensis": "FR",
     "mr:0114-monachi-raithi": "EG",
-    "mr:0114-potitus": "BG",
-    "mr:0117-antonius": "EG",
+    "mr:0114-potitus-sardicae": "BG",
+    "mr:0117-antonius-thebaidis": "EG",
     "mr:0119-macarius-alexandrinus": "EG",
     "mr:0119-macarius-magnus": "EG",
-    "mr:0120-euthymius": {
+    "mr:0120-euthymius-palaestinae": {
       "country": "PS",
       "note": "opens at Palestine (IL and PS); kept PS"
     },
-    "mr:0120-fabianus": "IT",
-    "mr:0120-sebastianus": "IT",
-    "mr:0121-agnes": "IT",
-    "mr:0121-publius": "GR",
-    "mr:0122-valerius": "ES",
-    "mr:0122-vincentius": "ES",
+    "mr:0120-fabianus-papa": "IT",
+    "mr:0120-sebastianus-romae": "IT",
+    "mr:0121-agnes-romae": "IT",
+    "mr:0121-publius-athenarum": "GR",
+    "mr:0122-valerius-caesaraugustanus": "ES",
+    "mr:0122-vincentius-caesaraugustanus": "ES",
     "mr:0124-franciscus-de-sales": "CH",
-    "mr:0125-ananias": "SY",
-    "mr:0125-bretannion": "RO",
+    "mr:0125-ananias-damasci": "SY",
+    "mr:0125-bretannion-tomitanus": "RO",
     "mr:0125-conversio-pauli-apostoli": "SY",
     "mr:0126-timotheus-et-titus": "TR",
     "mr:0126-xenophon-et-maria": {
@@ -41,15 +41,15 @@
       "note": "opens at Jerusalem (IL and PS); kept PS"
     },
     "mr:0127-angela-merici": "IT",
-    "mr:0128-iacobus": "PS",
+    "mr:0128-iacobus-palaestinae": "PS",
     "mr:0128-thomas-de-aquino": "IT",
-    "mr:0130-matthias": {
+    "mr:0130-matthias-hierosolymorum": {
       "country": "PS",
       "note": "opens at Jerusalem (IL and PS); kept PS"
     },
     "mr:0130-theophilus-iuvenis": "CY",
     "mr:0131-ioannes-bosco": "IT",
-    "mr:0131-metranus": "EG",
+    "mr:0131-metranus-alexandriae": "EG",
     "mr:0202-praesentatio-domini": "PS",
     "mr:0203-ansgarius": "DE",
     "mr:0203-blasius": "TR",

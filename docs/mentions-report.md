@@ -26,4 +26,4 @@ Review operations: none.
 
 Eulogies whose text the edition files under their `same_eulogy` twin; their mentions are recorded under the twin's ID: `mr:0610-marcus-antonius-durando` (as `mr:1210-marcus-antonius-durando`).
 
-Eulogies with persons or places but no text of their own in this edition: `mr:0104-abrunculus`, `mr:0610-marcus-antonius-durando`.
+Eulogies with persons or places but no text of their own in this edition: `mr:0104-abrunculus-lingonensis`, `mr:0610-marcus-antonius-durando`.

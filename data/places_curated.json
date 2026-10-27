@@ -1,26 +1,26 @@
 {
-  "mr:0101-clarus": [
+  "mr:0101-clarus-viennae": [
     {
       "role": "religious_life",
       "la": "monastérii Sancti Marcélli",
       "it": "monastero di San Marcello"
     }
   ],
-  "mr:0101-eugendus": [
+  "mr:0101-eugendus-condatiscensis": [
     {
       "role": "religious_life",
       "la": "Condatiscénsis",
       "it": "Condat"
     }
   ],
-  "mr:0101-frodobertus": [
+  "mr:0101-frodobertus-cellensis": [
     {
       "role": "foundation",
       "la": "monastérii Cellénsis",
       "it": "monastero di Moutier-la-Celle"
     }
   ],
-  "mr:0101-fulgentius": [
+  "mr:0101-fulgentius-rusparum": [
     {
       "role": "exile",
       "la": "Sardíniam",
@@ -31,7 +31,7 @@
       "la": "Byzacénæ"
     }
   ],
-  "mr:0101-gulielmus": [
+  "mr:0101-gulielmus-divionensis": [
     {
       "role": "religious_life",
       "la": "Sancti Benígni Divionénsis",
@@ -45,7 +45,7 @@
       "it": "Efeso"
     }
   ],
-  "mr:0101-odilo": [
+  "mr:0101-odilo-cluniacensis": [
     {
       "role": "religious_life",
       "la": "Cluniacénsis",
@@ -64,7 +64,7 @@
       "it": "Tolentino"
     }
   ],
-  "mr:0102-airaldus": [
+  "mr:0102-airaldus-maurianensis": [
     {
       "role": "religious_life",
       "la": "Portárum solitúdine",
@@ -104,14 +104,14 @@
       "it": "Genova"
     }
   ],
-  "mr:0103-florentius": [
+  "mr:0103-florentius-viennae": [
     {
       "role": "mention",
       "la": "Iúliæ Valéntiæ",
       "it": "Valence"
     }
   ],
-  "mr:0103-genovefa": [
+  "mr:0103-genovefa-parisiorum": [
     {
       "role": "mention",
       "la": "Autissiodorénsi",
@@ -123,13 +123,13 @@
       "it": "Nanterre"
     }
   ],
-  "mr:0104-abrunculus": [
+  "mr:0104-abrunculus-lingonensis": [
     {
       "role": "ministry",
       "la": "Ecclésiæ Lingonénsi"
     }
   ],
-  "mr:0104-gregorius": [
+  "mr:0104-gregorius-lingonensis": [
     {
       "role": "ministry",
       "la": "Lingonénsis",
@@ -155,7 +155,7 @@
       "person": "Hermes"
     }
   ],
-  "mr:0105-convoio": [
+  "mr:0105-convoio-abbas": [
     {
       "role": "death",
       "la": "Plebelánum",
@@ -172,7 +172,7 @@
       "it": "Redon"
     }
   ],
-  "mr:0105-deogratias": [
+  "mr:0105-deogratias-carthaginis": [
     {
       "role": "mention",
       "la": "Roma",
@@ -203,7 +203,7 @@
       "it": "Giordano"
     }
   ],
-  "mr:0106-macarius": [
+  "mr:0106-macarius-herbipolis": [
     {
       "role": "religious_life",
       "la": "monastério Scottórum",
@@ -236,14 +236,14 @@
       "it": "Schleswig"
     }
   ],
-  "mr:0107-cyrus": [
+  "mr:0107-cyrus-constantinopolis": [
     {
       "role": "religious_life",
       "la": "Paphlagónia",
       "it": "Paflagonia"
     }
   ],
-  "mr:0107-lucianus": [
+  "mr:0107-lucianus-nicomediae": [
     {
       "role": "ministry",
       "la": "Antiochénæ Ecclésiæ",
@@ -264,7 +264,7 @@
       "it": "Barcellona in Spagna"
     }
   ],
-  "mr:0107-valentinus": [
+  "mr:0107-valentinus-raetiae": [
     {
       "role": "ministry",
       "la": "Rǽtiæ",
@@ -286,14 +286,14 @@
       "it": "monastero di Abgar"
     }
   ],
-  "mr:0109-felanus": [
+  "mr:0109-felanus-scotiae": [
     {
       "role": "religious_life",
       "la": "monastérii Sancti Andréæ",
       "it": "monastero di Sant’Andrea"
     }
   ],
-  "mr:0109-hadrianus": [
+  "mr:0109-hadrianus-cantuariae": [
     {
       "role": "birth",
       "la": "Africa",
@@ -318,7 +318,7 @@
       "it": "Polonia"
     }
   ],
-  "mr:0110-benincasa": [
+  "mr:0110-benincasa-cavensis": [
     {
       "role": "mention",
       "la": "Montis Regális cœnóbium",
@@ -342,7 +342,7 @@
       "it": "Terra Santa"
     }
   ],
-  "mr:0110-gulielmus": [
+  "mr:0110-gulielmus-biturigum": [
     {
       "role": "religious_life",
       "la": "Cadulíaci",
@@ -354,7 +354,7 @@
       "it": "Pontigny"
     }
   ],
-  "mr:0110-gundisalvus": [
+  "mr:0110-gundisalvus-amarantii": [
     {
       "role": "journey",
       "la": "Terram Sanctam",
@@ -366,14 +366,14 @@
       "it": "Braga"
     }
   ],
-  "mr:0110-miltiades": [
+  "mr:0110-miltiades-papa": [
     {
       "role": "birth",
       "la": "Africa",
       "it": "Africa"
     }
   ],
-  "mr:0110-petronius": [
+  "mr:0110-petronius-deae-vocontiorum": [
     {
       "role": "religious_life",
       "la": "ínsula Lirinénsi",
@@ -394,21 +394,21 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0111-paulinus": [
+  "mr:0111-paulinus-aquileiensis": [
     {
       "role": "ministry",
       "la": "Aquileiénsis",
       "it": "Aquileia"
     }
   ],
-  "mr:0111-salvius": [
+  "mr:0111-salvius-carthaginensis": [
     {
       "role": "mention",
       "la": "Carthaginénsem",
       "it": "Cartagine"
     }
   ],
-  "mr:0112-aelredus": [
+  "mr:0112-aelredus-rievallensis": [
     {
       "role": "education",
       "la": "Scótiæ",
@@ -422,7 +422,7 @@
       "it": "Roma"
     }
   ],
-  "mr:0113-godefridus": [
+  "mr:0113-godefridus-ilbenstadensis": [
     {
       "role": "foundation",
       "la": "Capenbergénsis",
@@ -436,7 +436,7 @@
       "it": "Danubio"
     }
   ],
-  "mr:0113-hilarius": [
+  "mr:0113-hilarius-pictaviensis": [
     {
       "role": "exile",
       "la": "Phrýgiam",
@@ -455,7 +455,7 @@
       "it": "monastero di Santa Marta"
     }
   ],
-  "mr:0114-datius": [
+  "mr:0114-datius-mediolani": [
     {
       "role": "death",
       "la": "Constantinópolim",
@@ -467,7 +467,7 @@
       "it": "Costantinopoli"
     }
   ],
-  "mr:0114-euphrasius": [
+  "mr:0114-euphrasius-arvernae": [
     {
       "role": "mention",
       "la": "Turonénsis",
@@ -508,21 +508,21 @@
       "it": "Cinesi"
     }
   ],
-  "mr:0114-potitus": [
+  "mr:0114-potitus-sardicae": [
     {
       "role": "death",
       "la": "Sárdicæ in Dácia",
       "it": "Sardica in Dacia"
     }
   ],
-  "mr:0115-ablebertus": [
+  "mr:0115-ablebertus-cameracensis": [
     {
       "role": "ministry",
       "la": "Cameracénsis",
       "it": "Cambrai"
     }
   ],
-  "mr:0115-bonitus": [
+  "mr:0115-bonitus-arvernorum": [
     {
       "role": "journey",
       "la": "Roma",
@@ -565,7 +565,7 @@
       "it": "Siviglia"
     }
   ],
-  "mr:0116-furseus": [
+  "mr:0116-furseus-latiniacensis": [
     {
       "role": "foundation",
       "la": "monastérium Latiniacénse",
@@ -582,105 +582,105 @@
       "it": "Irlanda"
     }
   ],
-  "mr:0116-honoratus": [
+  "mr:0116-honoratus-arelatis": [
     {
       "role": "foundation",
       "la": "ínsula Lirinénsi",
       "it": "isola di Lérins"
     }
   ],
-  "mr:0116-iacobus": [
+  "mr:0116-iacobus-tarantasiae": [
     {
       "role": "mention",
       "la": "Lirinénsis",
       "it": "Lérins"
     }
   ],
-  "mr:0116-leobatius": [
+  "mr:0116-leobatius-senapariae": [
     {
       "role": "religious_life",
       "la": "cœnóbio Senapáriæ",
       "it": "monastero di Sénevière"
     }
   ],
-  "mr:0117-antonius": [
+  "mr:0117-antonius-thebaidis": [
     {
       "role": "religious_life",
       "la": "Thebáidem in Ægýpto",
       "it": "Tebaide in Egitto"
     }
   ],
-  "mr:0117-gamelbertus": [
+  "mr:0117-gamelbertus-bavariae": [
     {
       "role": "foundation",
       "la": "monastérium Metheménse",
       "it": "monastero di Metten"
     }
   ],
-  "mr:0117-iulianus": [
+  "mr:0117-iulianus-saba": [
     {
       "role": "journey",
       "la": "Antiochíæ",
       "it": "Antiochia"
     }
   ],
-  "mr:0117-rosselina": [
+  "mr:0117-rosselina-cellae-robaudi": [
     {
       "role": "religious_life",
       "la": "Cellæ Robáudi",
       "it": "Celle-Roubaud"
     }
   ],
-  "mr:0118-deicolus": [
+  "mr:0118-deicolus-lutrensis": [
     {
       "role": "birth",
       "la": "hibérnus",
       "it": "irlandese"
     }
   ],
-  "mr:0118-facius": [
+  "mr:0118-facius-cremonae": [
     {
       "role": "birth",
       "la": "Veronénsi",
       "it": "Verona"
     }
   ],
-  "mr:0118-prisca": [
+  "mr:0118-prisca-romae": [
     {
       "role": "dedication",
       "la": "colle Aventíno",
       "it": "Aventino"
     }
   ],
-  "mr:0118-volusianus": [
+  "mr:0118-volusianus-turonensis": [
     {
       "role": "ministry",
       "la": "Turonénsis",
       "it": "Tours"
     }
   ],
-  "mr:0119-bassianus": [
+  "mr:0119-bassianus-laudis-pompeiae": [
     {
       "role": "mention",
       "la": "Mediolanénsi",
       "it": "Milano"
     }
   ],
-  "mr:0119-germanicus": [
+  "mr:0119-germanicus-smyrnae": [
     {
       "role": "birth",
       "la": "Philadelphíæ",
       "it": "Filadelfia"
     }
   ],
-  "mr:0119-ioannes": [
+  "mr:0119-ioannes-ravennae": [
     {
       "role": "mention",
       "la": "Itália",
       "it": "Italia"
     }
   ],
-  "mr:0119-launomarus": [
+  "mr:0119-launomarus-corbionensis": [
     {
       "role": "religious_life",
       "la": "monastérii Corbionénsis",
@@ -713,7 +713,7 @@
       "it": "monastero di Scete in Egitto"
     }
   ],
-  "mr:0120-euthymius": [
+  "mr:0120-euthymius-palaestinae": [
     {
       "role": "journey",
       "la": "Hierosólymam",
@@ -725,14 +725,14 @@
       "it": "armena"
     }
   ],
-  "mr:0120-fabianus": [
+  "mr:0120-fabianus-papa": [
     {
       "role": "burial",
       "la": "Romæ via Appia in cœmetério Callísti",
       "it": "Roma sulla via Appia nel cimitero di Callisto"
     }
   ],
-  "mr:0120-henricus": [
+  "mr:0120-henricus-upsaliensis": [
     {
       "role": "birth",
       "la": "Anglia",
@@ -751,7 +751,7 @@
       "it": "regione di Onitsha in Nigeria"
     }
   ],
-  "mr:0120-sebastianus": [
+  "mr:0120-sebastianus-romae": [
     {
       "role": "birth",
       "la": "Medioláno",
@@ -769,7 +769,7 @@
       "occurrence_it": 1
     }
   ],
-  "mr:0121-agnes": [
+  "mr:0121-agnes-romae": [
     {
       "role": "death",
       "la": "Romæ",
@@ -790,21 +790,21 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0121-publius": [
+  "mr:0121-publius-athenarum": [
     {
       "role": "ministry",
       "la": "Athenárum",
       "it": "Atene"
     }
   ],
-  "mr:0122-anastasius": [
+  "mr:0122-anastasius-sergiopolis": [
     {
       "role": "exile",
       "la": "Cæsaréa Palæstínæ",
       "it": "Cesarea di Palestina"
     }
   ],
-  "mr:0122-barnardus": [
+  "mr:0122-barnardus-viennensis": [
     {
       "role": "foundation",
       "la": "Ambroniacénse",
@@ -816,7 +816,7 @@
       "it": "Vienne"
     }
   ],
-  "mr:0122-dominicus": [
+  "mr:0122-dominicus-sorae": [
     {
       "role": "foundation",
       "la": "Itáliæ",
@@ -844,7 +844,7 @@
       "it": "monastero di San Domenico"
     }
   ],
-  "mr:0122-valerius": [
+  "mr:0122-valerius-caesaraugustanus": [
     {
       "role": "mention",
       "la": "Illiberitáno",
@@ -861,7 +861,7 @@
       "it": "Valencia"
     }
   ],
-  "mr:0122-vincentius": [
+  "mr:0122-vincentius-caesaraugustanus": [
     {
       "role": "death",
       "la": "Valéntiæ in Hispánia Carthaginénsi",
@@ -873,7 +873,7 @@
       "it": "Saragozza"
     }
   ],
-  "mr:0123-maimbodus": [
+  "mr:0123-maimbodus-domnipetrae": [
     {
       "role": "birth",
       "la": "hibérnus",
@@ -904,14 +904,14 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0125-ananias": [
+  "mr:0125-ananias-damasci": [
     {
       "role": "ministry",
       "la": "Damásci",
       "it": "Damasco"
     }
   ],
-  "mr:0125-bretannion": [
+  "mr:0125-bretannion-tomitanus": [
     {
       "role": "ministry",
       "la": "Tomitáni in Scýthia",
@@ -937,7 +937,7 @@
       "it": "cenobio di Mantova"
     }
   ],
-  "mr:0125-poppo": [
+  "mr:0125-poppo-stabulensis": [
     {
       "role": "religious_life",
       "la": "Malmundariénsis",
@@ -954,7 +954,7 @@
       "it": "Lotaringia"
     }
   ],
-  "mr:0126-albericus": [
+  "mr:0126-albericus-cistercii": [
     {
       "role": "religious_life",
       "la": "Molisménses",
@@ -1008,7 +1008,7 @@
       "occurrence_it": 2
     }
   ],
-  "mr:0127-gilduinus": [
+  "mr:0127-gilduinus-carnutum": [
     {
       "role": "journey",
       "la": "Roma",
@@ -1020,7 +1020,7 @@
       "it": "Dôle in Bretagna"
     }
   ],
-  "mr:0127-ioannes": [
+  "mr:0127-ioannes-morinensis": [
     {
       "role": "ministry",
       "la": "Morinénsem",
@@ -1034,7 +1034,7 @@
       "it": "monastero del Calvario"
     }
   ],
-  "mr:0127-theodoricus": [
+  "mr:0127-theodoricus-aurelianensis": [
     {
       "role": "ministry",
       "la": "Aurelianénsis",
@@ -1046,7 +1046,7 @@
       "it": "basiliche degli Apostoli"
     }
   ],
-  "mr:0128-iacobus": [
+  "mr:0128-iacobus-palaestinae": [
     {
       "role": "religious_life",
       "la": "Palæstína",
@@ -1070,7 +1070,7 @@
       "it": "Tolosa"
     }
   ],
-  "mr:0129-aphraates": [
+  "mr:0129-aphraates-antiochiae": [
     {
       "role": "birth",
       "la": "Persas",
@@ -1118,21 +1118,21 @@
       "it": "Gallie"
     }
   ],
-  "mr:0130-adelelmus": [
+  "mr:0130-adelelmus-burgorum": [
     {
       "role": "foundation",
       "la": "sacéllum Sancti Ioánnis",
       "it": "cappella e l’ospizio di San Giovanni"
     }
   ],
-  "mr:0130-armentarius": [
+  "mr:0130-armentarius-papiae": [
     {
       "role": "mention",
       "la": "basílica Sancti Petri in Cælo Aureo",
       "it": "basilica di San Pietro in Ciel d’Oro"
     }
   ],
-  "mr:0130-bathildis": [
+  "mr:0130-bathildis-calae": [
     {
       "role": "mention",
       "la": "Luxoviénsi",
@@ -1146,7 +1146,7 @@
       "it": "Irlanda"
     }
   ],
-  "mr:0130-martina": [
+  "mr:0130-martina-romae": [
     {
       "role": "dedication",
       "la": "foro románo",
@@ -1160,14 +1160,14 @@
       "it": "Cipro"
     }
   ],
-  "mr:0131-abraham": [
+  "mr:0131-abraham-arbelensis": [
     {
       "role": "ministry",
       "la": "Arbelénsis",
       "it": "Arbela"
     }
   ],
-  "mr:0131-eusebius": [
+  "mr:0131-eusebius-rangvilae": [
     {
       "role": "birth",
       "la": "Hibérnia",
@@ -1186,14 +1186,14 @@
       "it": "Torino"
     }
   ],
-  "mr:0131-metranus": [
+  "mr:0131-metranus-alexandriae": [
     {
       "role": "death",
       "la": "Alexandríæ in Ægýpto",
       "it": "Alessandria d’Egitto"
     }
   ],
-  "mr:0131-waldus": [
+  "mr:0131-waldus-ebroicensis": [
     {
       "role": "ministry",
       "la": "Ebroicénsis",

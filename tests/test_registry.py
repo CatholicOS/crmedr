@@ -197,14 +197,14 @@ class RegistrySourceTest(unittest.TestCase):
             copy_registry(d)
             path = d / "data" / "martyrology_ids.json"
             reg = json.loads(path.read_text(encoding="utf-8"))
-            e = next(x for x in reg["entries"] if x["id"] == "mr:0104-gregorius")
+            e = next(x for x in reg["entries"] if x["id"] == "mr:0104-gregorius-lingonensis")
             e["editions"][r.EDITION_IT]["asterisk"] = True  # the CEI now asterisks it
             path.write_text(json.dumps(reg, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
             self.assertEqual(r.main(["--check", str(d)]), 1)
             self.assertEqual(r.main([str(d)]), 0)
             self.assertEqual(r.main(["--check", str(d)]), 0)
             rebuilt = {x["id"]: x for x in json.loads(path.read_text(encoding="utf-8"))["entries"]}
-        notes = rebuilt["mr:0104-gregorius"]["edition_notes"]
+        notes = rebuilt["mr:0104-gregorius-lingonensis"]["edition_notes"]
         self.assertIn("Printed here without an asterisk (entry 3.)", notes[r.EDITION_LA])
         self.assertIn("Asterisked here", notes[r.EDITION_IT])
 
@@ -409,7 +409,8 @@ class DeprecatedSameEulogy49Test(unittest.TestCase):
         mapping = re.findall(r"^\| (mr:\S+) \| (mr:\S+) \|$", table, re.M)
         self.assertEqual(len(mapping), 42)
         for gone, current in mapping:
-            self.assertNotIn(gone, entries)
+            if gone != current:  # a later rename may give the eulogy the removed ID (mr:0114-datius-mediolani)
+                self.assertNotIn(gone, entries)
             self.assertFalse(entries[current].get("deprecated"), current)
 
 
@@ -497,9 +498,9 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         cls.e = {e["id"]: e for e in json.load(open(root / "data" / "martyrology_ids.json"))["entries"]}
 
     def test_january_4(self):
-        self.assertEqual((self.e["mr:0104-abrunculus"]["entry"], self.e["mr:0104-abrunculus"]["editions"]),
+        self.assertEqual((self.e["mr:0104-abrunculus-lingonensis"]["entry"], self.e["mr:0104-abrunculus-lingonensis"]["editions"]),
                          (2, {r.EDITION_IT: {"absent": True}}))
-        self.assertEqual((self.e["mr:0104-gregorius"]["entry"], self.e["mr:0104-gregorius"]["editions"]),
+        self.assertEqual((self.e["mr:0104-gregorius-lingonensis"]["entry"], self.e["mr:0104-gregorius-lingonensis"]["editions"]),
                          (3, {r.EDITION_IT: {"entry": 2}}))
         self.assertEqual(self.e["mr:0104-emmanuel-gonzalez-garcia"]["entry"], 12)
 
@@ -511,7 +512,7 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         self.assertEqual(self.e["mr:1210-gundisalvus-vines-masip"]["editions"], {r.EDITION_IT: {"entry": 10}})
 
     def test_latin_numbering_where_the_cei_differs(self):
-        for mr_id, entry, cei in (("mr:0104-gregorius", 3, 2), ("mr:0104-elisabeth-anna-seton", 11, 10),
+        for mr_id, entry, cei in (("mr:0104-gregorius-lingonensis", 3, 2), ("mr:0104-elisabeth-anna-seton", 11, 10),
                                   ("mr:0610-eduardus-poppe", 10, 9), ("mr:0825-genesius", 3, 4),
                                   ("mr:0825-aloysius-urbano-lanaspa", 13, 14),
                                   ("mr:1210-gundisalvus-vines-masip", 9, 10)):
@@ -526,7 +527,7 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         for mr_id in cei_only:
             self.assertEqual(self.e[mr_id]["editions"], absent, mr_id)
         latin_only = sorted(i for i, x in self.e.items() if x.get("editions", {}).get(r.EDITION_IT) == {"absent": True})
-        self.assertEqual(latin_only, ["mr:0104-abrunculus", "mr:0610-marcus-antonius-durando"])
+        self.assertEqual(latin_only, ["mr:0104-abrunculus-lingonensis", "mr:0610-marcus-antonius-durando"])
         self.assertEqual(self.e["mr:0104-emmanuel-gonzalez-garcia"]["editions"], {r.EDITION_IT: {"entry": 11}})
 
     def test_august_25(self):
@@ -535,7 +536,7 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
                          {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
 
     def test_asterisk_discrepancies_are_cei_overrides(self):
-        self.assertEqual(self.e["mr:0104-ferreolus"]["editions"], {r.EDITION_IT: {"entry": 3, "asterisk": False}})
+        self.assertEqual(self.e["mr:0104-ferreolus-ucetiae"]["editions"], {r.EDITION_IT: {"entry": 3, "asterisk": False}})
         with_asterisk_override = [i for i, x in self.e.items() if "asterisk" in x.get("editions", {}).get(r.EDITION_IT, {})]
         # One CEI asterisk override per verified discrepancy (29 per the report), each with a note
         # on both editions.

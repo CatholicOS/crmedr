@@ -170,7 +170,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0103-theogenes"
+   "mr:0103-theogenes-parii"
   ],
   "note": "The 2004 edition reduces the eulogy to the sole Theogenes"
  },
@@ -264,7 +264,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0102-telesphorus"
+   "mr:0102-telesphorus-papa"
   ]
  },
  {
@@ -345,9 +345,9 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0114-glycerius"
+   "mr:0114-glycerius-antiochiae"
   ],
-  "note": "The 2004 edition commemorates a deacon and martyr of Antioch on 14 January as Glycerius (mr:0114-glycerius) and does not print Clerus, who is probably the same martyr under a corrupted name: the Bibliotheca Sanctorum takes Baronius's “Clerus” for a second entry of Glycerius; the Hieronymian Martyrology gives the name of the Antioch deacon in several forms (one manuscript has a deacon Lucerus at Antioch on 7 January) on 7, 13 and 15 January; and the other names recorded for Clerus (Licerius, Lycerius, Lucerius, Bilicerius) are forms of Glycerius. Not settled: no source states the identification outright or explains the 2004 date, 14 January, which is the day the Syriac Martyrology gives a deacon Glycerius of Nicomedia; and some calendars have Glycerius of Antioch drowned, as the Syriac Martyrology says of another Glycerius at Antioch (8 June), where the historical editions have Clerus beheaded."
+  "note": "The 2004 edition commemorates a deacon and martyr of Antioch on 14 January as Glycerius (mr:0114-glycerius-antiochiae) and does not print Clerus, who is probably the same martyr under a corrupted name: the Bibliotheca Sanctorum takes Baronius's “Clerus” for a second entry of Glycerius; the Hieronymian Martyrology gives the name of the Antioch deacon in several forms (one manuscript has a deacon Lucerus at Antioch on 7 January) on 7, 13 and 15 January; and the other names recorded for Clerus (Licerius, Lycerius, Lucerius, Bilicerius) are forms of Glycerius. Not settled: no source states the identification outright or explains the 2004 date, 14 January, which is the day the Syriac Martyrology gives a deacon Glycerius of Nicomedia; and some calendars have Glycerius of Antioch drowned, as the Syriac Martyrology says of another Glycerius at Antioch (8 June), where the historical editions have Clerus beheaded."
  },
  {
   "id": "mr:0107-felix-et-ianuarius",
@@ -526,7 +526,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "EG",
   "same_eulogy": [
-   "mr:0125-palaemon"
+   "mr:0125-palaemon-tabennesi"
   ]
  },
  {
@@ -592,7 +592,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0119-ioannes"
+   "mr:0119-ioannes-ravennae"
   ]
  },
  {
@@ -649,7 +649,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "BG",
   "same_eulogy": [
-   "mr:0114-potitus"
+   "mr:0114-potitus-sardicae"
   ]
  },
  {
@@ -689,7 +689,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "TR",
   "same_eulogy": [
-   "mr:0117-iulianus"
+   "mr:0117-iulianus-saba"
   ]
  },
  {
@@ -701,9 +701,9 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": null,
   "same_eulogy": [
-   "mr:0114-euphrasius"
+   "mr:0114-euphrasius-arvernae"
   ],
-  "note": "The historical editions commemorate a bishop Euphrasius in Africa on this day; in the same eulogy the 2004 edition commemorates Euphrasius, bishop of Clermont (mr:0114-euphrasius)."
+  "note": "The historical editions commemorate a bishop Euphrasius in Africa on this day; in the same eulogy the 2004 edition commemorates Euphrasius, bishop of Clermont (mr:0114-euphrasius-arvernae)."
  },
  {
   "id": "mr:0114-macrina",
@@ -888,7 +888,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "GB",
   "same_eulogy": [
-   "mr:0120-wulfstanus"
+   "mr:0120-wulfstanus-vigorniae"
   ]
  },
  {
@@ -952,7 +952,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "EG",
   "same_eulogy": [
-   "mr:0120-ascla"
+   "mr:0120-ascla-antinoes"
   ]
  },
  {
@@ -1069,7 +1069,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "FR",
   "same_eulogy": [
-   "mr:0130-bathildis"
+   "mr:0130-bathildis-calae"
   ]
  },
  {
@@ -1132,7 +1132,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0121-agnes"
+   "mr:0121-agnes-romae"
   ]
  },
  {
@@ -3279,7 +3279,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TN",
   "same_eulogy": [
-   "mr:0105-deogratias"
+   "mr:0105-deogratias-carthaginis"
   ]
  },
  {
@@ -3975,7 +3975,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "SY",
   "same_eulogy": [
-   "mr:0129-aphraates"
+   "mr:0129-aphraates-antiochiae"
   ]
  },
  {
@@ -4083,7 +4083,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:0117-marcellus"
+   "mr:0117-marcellus-deae-vocontiorum"
   ]
  },
  {
@@ -11766,7 +11766,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:0113-remigius"
+   "mr:0113-remigius-remorum"
   ]
  },
  {
@@ -12579,7 +12579,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0117-iulianus"
+   "mr:0117-iulianus-saba"
   ]
  },
  {
@@ -12672,7 +12672,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "DE",
   "same_eulogy": [
-   "mr:0124-felicianus"
+   "mr:0124-felicianus-fulginii"
   ],
   "edition_notes": {
    "martyrologium_romanum_1914_en_unofficial": "Translation error: the Latin is a translation of relics (Translatio), not a birthday."
@@ -14905,7 +14905,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0110-miltiades"
+   "mr:0110-miltiades-papa"
   ]
  },
  {

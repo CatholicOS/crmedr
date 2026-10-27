@@ -49,7 +49,7 @@ Check that the part after each comma is still a place designation.
 
 ## Latin places without an Italian phrase
 
-`mr:0104-abrunculus`, `mr:0302-lucas-casali-de-nicosia`, `mr:1207-benedicta-rossello`, `mr:1223-paulus-melendez-gonzalo`
+`mr:0104-abrunculus-lingonensis`, `mr:0302-lucas-casali-de-nicosia`, `mr:1207-benedicta-rossello`, `mr:1223-paulus-melendez-gonzalo`
 
 ## Italian places without a Latin place
 
@@ -67,46 +67,46 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0101-marianus-konopinski` | death (occubuit) |  |
 | `mr:0102-basilius-magnus-et-gregorius-nazianzenus` | death (obiit); ministry (episcopus cæsariensis, episcopus sasimensis) | yes |
 | `mr:0102-ioannes-bonus` | ministry (sedem) | yes |
-| `mr:0103-genovefa` | birth (nata) | yes |
-| `mr:0104-abrunculus` | ministry (sedem) | yes |
-| `mr:0104-gregorius` | ministry (episcopus lingonensis) | yes |
-| `mr:0105-convoio` | death (obiit) | yes |
+| `mr:0103-genovefa-parisiorum` | birth (nata) | yes |
+| `mr:0104-abrunculus-lingonensis` | ministry (sedem) | yes |
+| `mr:0104-gregorius-lingonensis` | ministry (episcopus lingonensis) | yes |
+| `mr:0105-convoio-abbas` | death (obiit) | yes |
 | `mr:0107-raymundus-de-penyafort` | death (obdormivit) | yes |
-| `mr:0107-cyrus` | death (obiit); ministry (sedem) | yes |
+| `mr:0107-cyrus-constantinopolis` | death (obiit); ministry (sedem) | yes |
 | `mr:0107-ambrosius-fernandez` | death (obiit) | yes |
-| `mr:0109-hadrianus` | birth (natus) | yes |
-| `mr:0110-miltiades` | birth (oriundus) | yes |
+| `mr:0109-hadrianus-cantuariae` | birth (natus) | yes |
+| `mr:0110-miltiades-papa` | birth (oriundus) | yes |
 | `mr:0110-gregorius-x` | ministry (sedem) | yes |
-| `mr:0111-paulinus` | ministry (episcopi aquileiensis) | yes |
+| `mr:0111-paulinus-aquileiensis` | ministry (episcopi aquileiensis) | yes |
 | `mr:0112-nicolaus-bunkerd-kitbamrung` | death (occubuit) |  |
-| `mr:0113-hilarius` | ministry (sedem) | yes |
-| `mr:0113-kentigernus` | ministry (sedem) |  |
+| `mr:0113-hilarius-pictaviensis` | ministry (sedem) | yes |
+| `mr:0113-kentigernus-glasguae` | ministry (sedem) |  |
 | `mr:0113-aemilius-szramek` | death (occubuit) |  |
-| `mr:0115-ablebertus` | ministry (episcopi cameracensis) | yes |
-| `mr:0115-bonitus` | death (obiit) | yes |
+| `mr:0115-ablebertus-cameracensis` | ministry (episcopi cameracensis) | yes |
+| `mr:0115-bonitus-arvernorum` | death (obiit) | yes |
 | `mr:0115-petrus-de-castronovo` | death (occubuit) | yes |
 | `mr:0116-marcellus-i` | death (obiit) |  |
-| `mr:0118-volusianus` | ministry (episcopi turonensis) | yes |
-| `mr:0120-sebastianus` | birth (oriundus) | yes |
-| `mr:0120-euthymius` | death (obiit) | yes |
-| `mr:0120-wulfstanus` | ministry (sedem) |  |
-| `mr:0120-henricus` | birth (natus) | yes |
+| `mr:0118-volusianus-turonensis` | ministry (episcopi turonensis) | yes |
+| `mr:0120-sebastianus-romae` | birth (oriundus) | yes |
+| `mr:0120-euthymius-palaestinae` | death (obiit) | yes |
+| `mr:0120-wulfstanus-vigorniae` | ministry (sedem) |  |
+| `mr:0120-henricus-upsaliensis` | birth (natus) | yes |
 | `mr:0120-michael-iwene-tansi` | birth (natus) | yes |
-| `mr:0122-barnardus` | ministry (episcopi viennensis) | yes |
+| `mr:0122-barnardus-viennensis` | ministry (episcopi viennensis) | yes |
 | `mr:0122-laura-vicuna` | birth (nata) | yes |
 | `mr:0124-franciscus-de-sales` | ministry (episcopi genevensis) | yes |
-| `mr:0127-theodoricus` | ministry (episcopi aurelianensis) | yes |
-| `mr:0127-ioannes` | ministry (sedem) | yes |
+| `mr:0127-theodoricus-aurelianensis` | ministry (episcopi aurelianensis) | yes |
+| `mr:0127-ioannes-morinensis` | ministry (sedem) | yes |
 | `mr:0127-ioannes-maria` | death (occubuit) |  |
 | `mr:0127-georgius-matulaitis` | ministry (episcopi vilnensis) | yes |
 | `mr:0128-thomas-de-aquino` | death (obiit) | yes |
-| `mr:0129-valerius` | ministry (sedem) |  |
-| `mr:0129-aphraates` | birth (natus) | yes |
+| `mr:0129-valerius-trevirorum` | ministry (sedem) |  |
+| `mr:0129-aphraates-antiochiae` | birth (natus) | yes |
 | `mr:0130-paulus-ho-hyob` | death (occubuit) |  |
 | `mr:0130-columba-marmion` | birth (natus) | yes |
-| `mr:0131-abraham` | ministry (episcopi arbelensis) | yes |
-| `mr:0131-waldus` | ministry (episcopi ebroicensis) | yes |
-| `mr:0131-eusebius` | birth (natus) | yes |
+| `mr:0131-abraham-arbelensis` | ministry (episcopi arbelensis) | yes |
+| `mr:0131-waldus-ebroicensis` | ministry (episcopi ebroicensis) | yes |
+| `mr:0131-eusebius-rangvilae` | birth (natus) | yes |
 | `mr:0201-ioannes` | ministry (sedem) | yes |
 | `mr:0201-conorus-o-devany-et-patricius-o-lougham` | ministry (episcopi dunensis) | yes |
 | `mr:0202-burchardus` | birth (oriundus) | yes |
@@ -617,44 +617,44 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 
 - `mr:0101-marianus-konopinski`: polónus
 - `mr:0101-sigismundus-gorazdowski`: polónus
-- `mr:0104-abrunculus`: Arvérnos
-- `mr:0105-deogratias`: urbe Roma
+- `mr:0104-abrunculus-lingonensis`: Arvérnos
+- `mr:0105-deogratias-carthaginis`: urbe Roma
 - `mr:0105-eduardus-confessor`: Anglórum
-- `mr:0106-felix`: ecclésiam cathedrálem
+- `mr:0106-felix-nannetum`: ecclésiam cathedrálem
 - `mr:0106-petrus-thomas`: Románi
-- `mr:0107-cyrus`: Constantinopolitána
-- `mr:0108-albertus`: angli
-- `mr:0108-erhardus`: scotus
-- `mr:0108-maximus`: Máximi
+- `mr:0107-cyrus-constantinopolis`: Constantinopolitána
+- `mr:0108-albertus-cassiliae`: angli
+- `mr:0108-erhardus-ratisbonae`: scotus
+- `mr:0108-maximus-papiae`: Máximi
 - `mr:0109-antonius-fatati`: Románi
-- `mr:0110-benincasa`: Sicília
-- `mr:0110-domitianus`: Persárum
-- `mr:0110-gulielmus`: Bituricénsi
+- `mr:0110-benincasa-cavensis`: Sicília
+- `mr:0110-domitianus-melitenae`: Persárum
+- `mr:0110-gulielmus-biturigum`: Bituricénsi
 - `mr:0111-franciscus-rogaczewski`: Polóniæ
-- `mr:0112-aelredus`: Cisterciénse
+- `mr:0112-aelredus-rievallensis`: Cisterciénse
 - `mr:0113-aemilius-szramek`: polónus
 - `mr:0113-gumesindus-et-servusdei`: Mauros
-- `mr:0113-hilarius`: nicǽnam
+- `mr:0113-hilarius-pictaviensis`: nicǽnam
 - `mr:0114-monachi-raithi`: in monte Sina
 - `mr:0114-odoricus-de-portu-naonis`: Sinárum
-- `mr:0115-bonitus`: Lugdúni
+- `mr:0115-bonitus-arvernorum`: Lugdúni
 - `mr:0115-franciscus-fernandez-de-capillas`: Tartarórum
 - `mr:0115-petrus-de-castronovo`: Cisterciénse
-- `mr:0116-furseus`: Gállia
-- `mr:0116-honoratus`: Arelaténsis
+- `mr:0116-furseus-latiniacensis`: Gállia
+- `mr:0116-honoratus-arelatis`: Arelaténsis
 - `mr:0116-iosephus-vaz`: Oratórii
 - `mr:0119-macarius-alexandrinus`: Alexandríni
 - `mr:0120-benedictus-ricasoli`: Vallis Umbrósæ
-- `mr:0120-sebastianus`: Urbe
-- `mr:0122-anastasius`: Persárum
-- `mr:0122-barnardus`: Roma
-- `mr:0124-babyla`: polónus
+- `mr:0120-sebastianus-romae`: Urbe
+- `mr:0122-anastasius-sergiopolis`: Persárum
+- `mr:0122-barnardus-viennensis`: Roma
+- `mr:0124-babyla-antiochiae`: polónus
 - `mr:0126-xenophon-et-maria`: Civitáte Sancta
-- `mr:0127-vitalianus`: Anglórum
+- `mr:0127-vitalianus-papa`: Anglórum
 - `mr:0128-olga-bida`: Olýmpi
 - `mr:0129-sulpicius-severus`: Turonénsi, Turonénsis
 - `mr:0130-sebastianus-valfre`: Oratórii
-- `mr:0131-abraham`: Persárum
+- `mr:0131-abraham-arbelensis`: Persárum
 - `mr:0201-reginaldus-aurelianensis`: Aurelianénsis
 - `mr:0202-ioannes-theophanes-venard`: Parisiénsi
 - `mr:0202-praesentatio-domini`: Israel
@@ -756,7 +756,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0509-herma`: Romános
 - `mr:0509-isaias-propheta`: Iudæ
 - `mr:0510-gulielmus`: anglus
-- `mr:0512-nereus-et-achilleus`: Romæ, Romæ in cœmetério, Romæ in cœmetério Domitíllæ via Ardeatína
+- `mr:0512-nereus-et-achilleus`: Romæ, Romæ in cœmetério Domitíllæ via Ardeatína
 - `mr:0514-aprunculus`: Arvérnos
 - `mr:0514-matthias-apostolus`: Iudæ
 - `mr:0514-maximus`: Máximi

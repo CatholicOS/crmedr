@@ -420,7 +420,7 @@ the slugs.
 | mr:0413-carpus-et-thyatirensis | mr:0413-carpus-et-socii |
 | mr:0724-bor-et-gleb | mr:0724-boris-et-gleb |
 | mr:0110-petrus-urseoli | mr:0110-petrus-urseolus |
-| mr:0125-arthematis | mr:0125-arthemas |
+| mr:0125-arthematis | mr:0125-arthemas-puteolorum |
 | mr:0129-gilda-sapientis | mr:0129-gilda-sapiens |
 | mr:0226-pietatis-a-cruce-ortiz-real | mr:0226-thomasina-ortiz-real |
 | mr:0307-paulus-simplicis | mr:0307-paulus-simplex |
@@ -854,9 +854,9 @@ the following eulogies of their day, run in by the OCR.
 
 | Removed deprecated ID | Current ID |
 | --- | --- |
-| mr:0110-paulus-thebaide | mr:0110-paulus |
-| mr:0114-datius-mediolani | mr:0114-datius |
-| mr:0115-maurus-in | mr:0115-maurus |
+| mr:0110-paulus-thebaide | mr:0110-paulus-thebaidis |
+| mr:0114-datius-mediolani | mr:0114-datius-mediolani |
+| mr:0115-maurus-in | mr:0115-maurus-glannafolii |
 | mr:0116-marcellus-primus-romae | mr:0116-marcellus-i |
 | mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
 | mr:0312-petrus-ibidem | mr:0312-petrus |
