@@ -22951,10 +22951,41 @@
         "Iulianus"
       ],
       "failed": [
-        "status: the best candidate (Q108452147) fails it",
-        "death: the best candidate (Q108452147) fails it"
+        "death: the best candidate (Q85972404) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q85972404",
+          "label": "Maximianus of Abitinae",
+          "description": "",
+          "names": [
+            "Maximianus",
+            "Maximianus of Abitinae"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q108452147",
           "label": "Maximianus",
@@ -22967,6 +22998,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -22975,9 +23007,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q131765788",
@@ -22991,6 +23022,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -22999,9 +23031,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q172168",
@@ -23038,6 +23069,7 @@
           "born": "0258",
           "died": "0311-05-05",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q971609"
           ],
@@ -23052,9 +23084,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Serdica"
@@ -23086,6 +23117,7 @@
           "born": "0335",
           "died": "0388-08-27",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q186513"
           ],
@@ -23098,9 +23130,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Aquileia"
@@ -23130,6 +23161,7 @@
           "born": "0240",
           "died": "0310-07",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q833060"
           ],
@@ -23142,9 +23174,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Marseille"
@@ -23169,6 +23200,7 @@
           "born": "0500",
           "died": "0600",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -23177,9 +23209,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q86741740",
@@ -23195,6 +23226,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -23203,9 +23235,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q10578716",
@@ -23219,6 +23250,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -23226,9 +23258,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q113026796",
@@ -23243,6 +23274,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -23250,32 +23282,41 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
-          "wikidata": "Q45188364",
-          "label": "Maximianus",
-          "description": "dictionary entry",
+          "wikidata": "Q141894349",
+          "label": "Maximian of Beauvais",
+          "description": "martyr of Beauvais, companion of Lucian and Julian",
           "names": [
+            "Massimiano di Beauvais",
+            "Maximian of Beauvais",
             "Maximianus"
           ],
-          "human": false,
-          "statuses": [],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2234"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
+          "source": "place",
           "evidence": [
+            "human",
+            "status",
             "name"
           ],
-          "places": [],
-          "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q141882966",
@@ -24128,6 +24169,11 @@
           "feast": [
             "Q2555"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286"
+          ],
           "birth_place": [],
           "death_place": [
             "Q167600"
@@ -24139,18 +24185,45 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P4286"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Auxerre"
             ]
           }
+        },
+        {
+          "wikidata": "Q55861176",
+          "label": "Helladius",
+          "description": "Christian martyr",
+          "names": [
+            "Elladio",
+            "Helladius"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2234"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         },
         {
           "wikidata": "Q108452534",
@@ -24164,6 +24237,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -24172,9 +24246,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q11925382",
@@ -24195,6 +24268,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q87"
           ],
@@ -24205,9 +24279,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Alexandria"
@@ -24237,6 +24310,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -24245,9 +24319,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q3721107",
@@ -24269,6 +24342,12 @@
           "feast": [
             "Q2343"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286"
+          ],
           "birth_place": [
             "Q29"
           ],
@@ -24281,14 +24360,8 @@
             "human",
             "status"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Toledo"
@@ -24297,31 +24370,6 @@
               "Spain"
             ]
           }
-        },
-        {
-          "wikidata": "Q55861176",
-          "label": "Helladius",
-          "description": "Christian martyr",
-          "names": [
-            "Elladio",
-            "Helladius"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
         },
         {
           "wikidata": "Q97577475",
@@ -24338,6 +24386,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -24346,9 +24395,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q14627668",
@@ -24364,6 +24412,7 @@
           "born": "1949-03-17",
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q2933"
           ],
@@ -24373,9 +24422,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Asunción"
@@ -24394,6 +24442,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -24401,9 +24450,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q3129831",
@@ -24420,6 +24468,7 @@
           "born": null,
           "died": "0450",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -24427,9 +24476,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -98698,6 +98746,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -98706,9 +98755,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q64840854",
@@ -98727,6 +98775,10 @@
           "feast": [
             "Q2315"
           ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
           "birth_place": [],
           "death_place": [
             "Q175081"
@@ -98737,6 +98789,7 @@
             "status",
             "place"
           ],
+          "source": "search",
           "places": [
             {
               "role": "death",
@@ -98745,16 +98798,45 @@
               "via": "P20"
             }
           ],
-          "source": "search",
-          "signals": [
-            "P841",
-            "P6126"
-          ],
           "place_labels": {
             "death_place": [
               "Gap"
             ]
           }
+        },
+        {
+          "wikidata": "Q141894352",
+          "label": "Teridius of Gap",
+          "description": "bishop of Gap",
+          "names": [
+            "Teridio di Gap",
+            "Teridius",
+            "Teridius of Gap",
+            "Tigridius"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2315"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": []
         }
       ],
       "decision": null,
@@ -118682,9 +118764,42 @@
         "Chalarampus"
       ],
       "failed": [
-        "death: the best candidate (Q4373476) fails it"
+        "death: the best candidate (Q141894354) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q141894354",
+          "label": "Porphyrius of Magnesia",
+          "description": "martyr at Magnesia with Charalampius under Septimius Severus",
+          "names": [
+            "Porfirio di Magnesia",
+            "Porphyrius",
+            "Porphyrius of Magnesia"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2325"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q4373476",
           "label": "Porphyrius",
@@ -118700,6 +118815,7 @@
           "born": null,
           "died": "0361",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -118709,9 +118825,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q116026046",
@@ -118727,6 +118842,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -118735,9 +118851,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q1283669",
@@ -118758,6 +118873,13 @@
           "feast": [
             "Q2359"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
           "birth_place": [
             "Q17151"
           ],
@@ -118770,15 +118892,8 @@
             "human",
             "status"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Gaza City"
@@ -118808,6 +118923,7 @@
           "born": "0233",
           "died": "0301",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q82070"
           ],
@@ -118823,9 +118939,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Rome"
@@ -118853,6 +118968,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -118861,9 +118977,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q4210522",
@@ -118879,6 +118994,7 @@
           "born": "0480",
           "died": "0501",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q7362066"
           ],
@@ -118891,9 +119007,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Constantinople"
@@ -118918,6 +119033,7 @@
           "born": "1804-09-08",
           "died": "1885-04-19",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q2592"
           ],
@@ -118932,9 +119048,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Moscow"
@@ -118959,6 +119074,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -118966,9 +119082,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q128240289",
@@ -118982,6 +119097,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -118989,55 +119105,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q150688",
-          "label": "Porfirio Díaz",
-          "description": "President of Mexico (1830–1915)",
-          "names": [
-            "José de la Cruz Porfirio Diaz Mori",
-            "Porfirio Diaz",
-            "Porfirio Díaz",
-            "Porphirius Díaz",
-            "Porphyrius Díaz"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1830-09-15",
-          "died": "1915-07-02",
-          "feast": [],
-          "birth_place": [
-            "Q34110",
-            "Q131429"
-          ],
-          "death_place": [
-            "Q90"
-          ],
-          "burial_place": [
-            "Q272208"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Paris"
-            ],
-            "burial_place": [
-              "Montparnasse Cemetery"
-            ],
-            "birth_place": [
-              "Oaxaca",
-              "Oaxaca de Juárez"
-            ]
-          }
+          "places": []
         }
       ],
       "decision": null,
