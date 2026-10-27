@@ -84080,7 +84080,7 @@
             "Saint Martina",
             "Santa Martina"
           ],
-          "human": false,
+          "human": true,
           "statuses": [
             "Q3464126"
           ],
@@ -84099,6 +84099,7 @@
           ],
           "work_places": [],
           "evidence": [
+            "human",
             "status",
             "name"
           ],
