@@ -37181,9 +37181,41 @@
         "Hermylius"
       ],
       "failed": [
-        "death: the best candidate (Q124150645) fails it"
+        "death: the best candidate (Q120531725) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q120531725",
+          "label": "Stratonicus",
+          "description": "martyr at Singidunum under Licinius",
+          "names": [
+            "Stratonico",
+            "Stratonicus"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": "0310",
+          "feast": [
+            "Q2255"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q124150645",
           "label": "Stratonicus",
@@ -37200,6 +37232,10 @@
           "feast": [
             "Q2151"
           ],
+          "signals": [
+            "P841",
+            "P8080"
+          ],
           "birth_place": [
             "Q80561"
           ],
@@ -37213,12 +37249,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P8080"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Antakya"
@@ -37227,31 +37259,6 @@
               "Antakya"
             ]
           }
-        },
-        {
-          "wikidata": "Q120531725",
-          "label": "Stratonicus",
-          "description": "",
-          "names": [
-            "Stratonico",
-            "Stratonicus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "0310",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
         },
         {
           "wikidata": "Q11921054",
@@ -37269,6 +37276,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q615449"
           ],
@@ -37278,9 +37286,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Cyzicus"
@@ -37300,6 +37307,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -37307,9 +37315,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q1300271",
@@ -37326,6 +37333,7 @@
           "born": "-041",
           "died": "-036",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -37335,9 +37343,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "work_places": [
               "Classical Athens"
@@ -37354,6 +37361,7 @@
           "born": "1684",
           "died": "1744",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q980"
           ],
@@ -37363,9 +37371,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Bavaria"
@@ -37384,6 +37391,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -37391,9 +37399,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -54201,6 +54208,10 @@
             "Q2555",
             "Q2885"
           ],
+          "signals": [
+            "P841",
+            "P10799"
+          ],
           "birth_place": [
             "Q83241",
             "Q1003997"
@@ -54215,12 +54226,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Ephesus"
@@ -54228,6 +54235,135 @@
             "birth_place": [
               "Galilee",
               "Judaea"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q372668",
+          "label": "John the Merciful",
+          "description": "Patriarch of Alexandria",
+          "names": [
+            "Giovanni V di Alessandria",
+            "Giovanni l'Elemosiniere",
+            "Ioannes",
+            "Iohannes Eleemosynarius",
+            "Joannes Eleemosynarius",
+            "Johannes Eleemon",
+            "Johannes Eleemosynarios",
+            "John the Merciful",
+            "Saint John the Almoner",
+            "San Giovanni Elemosiniere",
+            "San Giovanni elemosinario",
+            "San Giovanni l'Elemosiniere",
+            "San Giovanni l'elemosinario"
+          ],
+          "human": true,
+          "statuses": [
+            "Q4411339"
+          ],
+          "born": "0550",
+          "died": "0619",
+          "feast": [
+            "Q2986",
+            "Q2276",
+            "Q2312"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q2343313"
+          ],
+          "death_place": [
+            "Q2343313"
+          ],
+          "burial_place": [
+            "Q239560"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Amathus"
+            ],
+            "burial_place": [
+              "St. Martin's Cathedral, Bratislava"
+            ],
+            "birth_place": [
+              "Amathus"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q44015",
+          "label": "John the Apostle",
+          "description": "apostle of Jesus; son of Zebedee and Salome, brother of James; traditionally identified with John the Evangelist, John of Patmos, and the Beloved Disciple",
+          "names": [
+            "Giovanni",
+            "Giovanni apostolo",
+            "Giovanni evangelista",
+            "Ioannes (apostolus)",
+            "Johannes",
+            "John",
+            "John the Apostle",
+            "Saint John the Apostle",
+            "San Giovanni",
+            "San Giovanni apostolo",
+            "San Giovanni apostolo ed evangelista",
+            "San Giovanni evangelista",
+            "St John the Apostle",
+            "St. John",
+            "St. John the Apostle"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0011",
+          "died": "0099",
+          "feast": [
+            "Q2800",
+            "Q2761"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [
+            "Q501773"
+          ],
+          "death_place": [
+            "Q47611"
+          ],
+          "burial_place": [
+            "Q43"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Ephesus"
+            ],
+            "burial_place": [
+              "Turkey"
+            ],
+            "birth_place": [
+              "Bethsaida"
             ]
           }
         },
@@ -54245,6 +54381,7 @@
           "born": "1978-03-04",
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q494529"
           ],
@@ -54255,9 +54392,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Hechingen"
@@ -54276,6 +54412,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -54284,9 +54421,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q108554520",
@@ -54300,6 +54436,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -54308,9 +54445,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q108573379",
@@ -54324,6 +54460,7 @@
           "born": null,
           "died": "1348",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -54332,9 +54469,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q108585557",
@@ -54348,6 +54484,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -54356,9 +54493,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q108588382",
@@ -54372,6 +54508,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -54380,9 +54517,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q108588533",
@@ -54396,70 +54532,67 @@
           "born": null,
           "died": null,
           "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q108589655",
-          "label": "Giovanni",
-          "description": "catholic bishop (ch-id: giovanoe)",
-          "names": [
-            "Giovanni"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q109786795",
-          "label": "Joao",
-          "description": "person identified in the Museu da Pessoa collection",
-          "names": [
-            "Joao"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1976-11-30",
-          "died": null,
-          "feast": [],
-          "birth_place": [
-            "Q580366"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
           "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q138716976",
+          "label": "John II the Roman",
+          "description": "archbishop of Ravenna to whom Gregory the Great sent the Pastoral Rule (died 595)",
+          "names": [
+            "Ioannes",
+            "John II the Roman"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": "0595",
+          "feast": [
+            "Q2266"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q220"
+          ],
+          "death_place": [
+            "Q13364"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "feast",
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q13364",
+              "label": "Ravenna",
+              "via": "P20"
+            }
+          ],
           "place_labels": {
+            "death_place": [
+              "Ravenna"
+            ],
             "birth_place": [
-              "Araras"
+              "Rome"
             ]
           }
         },
@@ -54487,6 +54620,11 @@
           "feast": [
             "Q2576"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P10799"
+          ],
           "birth_place": [
             "Q2751"
           ],
@@ -54511,11 +54649,6 @@
               "label": "Ravenna",
               "via": "P20"
             }
-          ],
-          "signals": [
-            "P841",
-            "P6126",
-            "P10799"
           ],
           "place_labels": {
             "death_place": [
@@ -54622,58 +54755,6 @@
             ],
             "birth_place": [
               "Ravenna"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q138716976",
-          "label": "John II the Roman",
-          "description": "",
-          "names": [
-            "Ioannes",
-            "John II the Roman"
-          ],
-          "human": true,
-          "statuses": [
-            "Q18344276"
-          ],
-          "born": null,
-          "died": "0595",
-          "feast": [
-            "Q2266"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q220"
-          ],
-          "death_place": [
-            "Q13364"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "feast",
-          "evidence": [
-            "human",
-            "status",
-            "name",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q13364",
-              "label": "Ravenna",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Ravenna"
-            ],
-            "birth_place": [
-              "Rome"
             ]
           }
         }
@@ -74162,9 +74243,95 @@
         "Xenophon"
       ],
       "failed": [
-        "death: the best candidate (Q345) fails it"
+        "death: the best candidate (Q1938388) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q1938388",
+          "label": "Miriam",
+          "description": "sister of Moses and Aaron",
+          "names": [
+            "Maria",
+            "Maria (Moysis soror)",
+            "Miriam"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "-140",
+          "died": "-127",
+          "feast": [],
+          "signals": [
+            "P8080"
+          ],
+          "birth_place": [
+            "Q11768"
+          ],
+          "death_place": [
+            "Q954599"
+          ],
+          "burial_place": [],
+          "work_places": [
+            "Q23792"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Kadesh"
+            ],
+            "birth_place": [
+              "Ancient Egypt"
+            ],
+            "work_places": [
+              "Palestine"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q235377",
+          "label": "Mary of Clopas",
+          "description": "one of the women present at the crucifixion of Jesus",
+          "names": [
+            "Maria",
+            "Maria Cleofe",
+            "Maria di Cleofa",
+            "Maria di Cleopa",
+            "Maria di Giacobbe",
+            "Maria di Giacomo",
+            "Mary of Clopas",
+            "Santa Maria di Cleofa"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "-000",
+          "died": "0033",
+          "feast": [
+            "Q2529",
+            "Q2583"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q345",
           "label": "Mary",
@@ -74222,6 +74389,12 @@
           "feast": [
             "Q2774"
           ],
+          "signals": [
+            "P841",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
           "birth_place": [
             "Q16000109",
             "Q1132798",
@@ -74237,14 +74410,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "burial_place": [
               "Tomb of the Virgin Mary"
@@ -74272,6 +74439,7 @@
           "born": "1882-07-02",
           "died": "1962-09-21",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q189153"
           ],
@@ -74286,9 +74454,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Gassin"
@@ -74313,6 +74480,7 @@
           "born": "0385",
           "died": "0407-02",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [
             "Q13364"
@@ -74325,9 +74493,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Ravenna"
@@ -74353,6 +74520,7 @@
           "born": "1457-02-13",
           "died": "1482-03-27",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q1131821"
           ],
@@ -74367,9 +74535,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Bruges"
@@ -74381,45 +74548,6 @@
               "Palace of Coudenberg"
             ]
           }
-        },
-        {
-          "wikidata": "Q235377",
-          "label": "Mary of Clopas",
-          "description": "one of the women present at the crucifixion of Jesus",
-          "names": [
-            "Maria",
-            "Maria Cleofe",
-            "Maria di Cleofa",
-            "Maria di Cleopa",
-            "Maria di Giacobbe",
-            "Maria di Giacomo",
-            "Mary of Clopas",
-            "Santa Maria di Cleofa"
-          ],
-          "human": false,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "-000",
-          "died": "0033",
-          "feast": [
-            "Q2529",
-            "Q2583"
-          ],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "status",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [
-            "P841",
-            "P6126"
-          ]
         },
         {
           "wikidata": "Q236293",
@@ -74439,6 +74567,7 @@
           "born": "1145",
           "died": "1198-03-11",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q70972"
           ],
@@ -74455,9 +74584,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Meaux"
@@ -74500,6 +74628,7 @@
           "born": "1875-10-29",
           "died": "1938-07-18",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q2540442"
           ],
@@ -74514,9 +74643,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Peleș Castle"
@@ -74528,30 +74656,6 @@
               "Eastwell Park"
             ]
           }
-        },
-        {
-          "wikidata": "Q1579913",
-          "label": "Maria",
-          "description": "municipality in Gaspésie, Quebec, Canada",
-          "names": [
-            "Maria",
-            "Maria, Quebec"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
         },
         {
           "wikidata": "Q112269186",
@@ -74567,25 +74671,25 @@
           "born": "1723-05-18",
           "died": "1794-01-26",
           "feast": [],
+          "signals": [
+            "P8080",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q932918"
+          ],
+          "death_place": [
+            "Q38380"
+          ],
+          "burial_place": [],
+          "work_places": [],
           "source": "sparql",
           "evidence": [
             "human",
             "status",
             "death"
           ],
-          "death_place": [
-            "Q38380"
-          ],
-          "burial_place": [],
-          "birth_place": [
-            "Q932918"
-          ],
-          "work_places": [],
           "places": [],
-          "signals": [
-            "P8080",
-            "P4286"
-          ],
           "place_labels": {
             "death_place": [
               "Angers"
@@ -74594,6 +74698,37 @@
               "Saint-Crespin-sur-Moine"
             ]
           }
+        },
+        {
+          "wikidata": "Q116026019",
+          "label": "Maria",
+          "description": "wife of Saint Xenophon, monastic in Jerusalem",
+          "names": [
+            "Maria"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2282"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "feast",
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": []
         },
         {
           "wikidata": "Q128073",
@@ -74616,27 +74751,27 @@
           "feast": [
             "Q2282"
           ],
-          "source": "sparql",
-          "evidence": [
-            "human",
-            "status",
-            "death"
-          ],
-          "death_place": [
-            "Q8646"
-          ],
-          "burial_place": [],
-          "birth_place": [
-            "Q478828"
-          ],
-          "work_places": [],
-          "places": [],
           "signals": [
             "P841",
             "P6126",
             "P8080",
             "P4286"
           ],
+          "birth_place": [
+            "Q478828"
+          ],
+          "death_place": [
+            "Q8646"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "sparql",
+          "evidence": [
+            "human",
+            "status",
+            "death"
+          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Hong Kong"
@@ -74647,99 +74782,44 @@
           }
         },
         {
-          "wikidata": "Q237583",
-          "label": "Mary of Egypt",
-          "description": "Egyptian hermit and female Christian saint",
+          "wikidata": "Q16327428",
+          "label": "Xenophon",
+          "description": "Byzantine senator who became a monk in Jerusalem with his wife Maria",
           "names": [
-            "Maria Aegyptiaca",
-            "Maria Egiziaca",
-            "Mary of Egypt",
-            "Santa Maria Egiziaca",
-            "St. Mary of Egypt"
+            "Xenophon"
           ],
           "human": true,
           "statuses": [
-            "Q12774503",
-            "Q3464126"
+            "Q18344276"
           ],
-          "born": "0344",
-          "died": "0421",
+          "born": null,
+          "died": "0510",
           "feast": [
-            "Q2510"
+            "Q2282"
+          ],
+          "signals": [
+            "P841"
           ],
           "birth_place": [
-            "Q87"
+            "Q16869"
           ],
           "death_place": [
-            "Q23792"
+            "Q1059946"
           ],
           "burial_place": [],
-          "work_places": [
-            "Q23792"
-          ],
+          "work_places": [],
           "source": "place",
           "evidence": [
             "human",
             "status"
           ],
           "places": [],
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
           "place_labels": {
             "death_place": [
-              "Palestine"
+              "Holy Lavra of Saint Sabbas"
             ],
             "birth_place": [
-              "Alexandria"
-            ],
-            "work_places": [
-              "Palestine"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q1271931",
-          "label": "Filippo Camassei",
-          "description": "Catholic cardinal (1848-1921)",
-          "names": [
-            "Filippo Camassei",
-            "Filippo Maria Camassei"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1848-09-14",
-          "died": "1921-01-18",
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q220"
-          ],
-          "death_place": [
-            "Q220"
-          ],
-          "burial_place": [
-            "Q27426"
-          ],
-          "work_places": [],
-          "source": "place",
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Rome"
-            ],
-            "burial_place": [
-              "Campo Verano"
-            ],
-            "birth_place": [
-              "Rome"
+              "Constantinople"
             ]
           }
         },
@@ -74809,35 +74889,60 @@
           }
         },
         {
-          "wikidata": "Q116026019",
-          "label": "Maria",
-          "description": "",
+          "wikidata": "Q237583",
+          "label": "Mary of Egypt",
+          "description": "Egyptian hermit and female Christian saint",
           "names": [
-            "Maria"
+            "Maria Aegyptiaca",
+            "Maria Egiziaca",
+            "Mary of Egypt",
+            "Santa Maria Egiziaca",
+            "St. Mary of Egypt"
           ],
           "human": true,
           "statuses": [
-            "Q18344276"
+            "Q12774503",
+            "Q3464126"
           ],
-          "born": null,
-          "died": null,
+          "born": "0344",
+          "died": "0421",
           "feast": [
-            "Q2282"
+            "Q2510"
           ],
           "signals": [
-            "P841"
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
           ],
-          "birth_place": [],
-          "death_place": [],
+          "birth_place": [
+            "Q87"
+          ],
+          "death_place": [
+            "Q23792"
+          ],
           "burial_place": [],
-          "work_places": [],
-          "source": "feast",
+          "work_places": [
+            "Q23792"
+          ],
+          "source": "place",
           "evidence": [
             "human",
-            "status",
-            "name"
+            "status"
           ],
-          "places": []
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Palestine"
+            ],
+            "birth_place": [
+              "Alexandria"
+            ],
+            "work_places": [
+              "Palestine"
+            ]
+          }
         },
         {
           "wikidata": "Q239058",
@@ -74917,10 +75022,52 @@
         "Maria"
       ],
       "failed": [
-        "status: the best candidate (Q115437423) fails it",
-        "death: the best candidate (Q115437423) fails it"
+        "death: the best candidate (Q16327428) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q16327428",
+          "label": "Xenophon",
+          "description": "Byzantine senator who became a monk in Jerusalem with his wife Maria",
+          "names": [
+            "Xenophon"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": "0510",
+          "feast": [
+            "Q2282"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q16869"
+          ],
+          "death_place": [
+            "Q1059946"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Holy Lavra of Saint Sabbas"
+            ],
+            "birth_place": [
+              "Constantinople"
+            ]
+          }
+        },
         {
           "wikidata": "Q115437423",
           "label": "Xenophon",
@@ -74935,6 +75082,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -74943,9 +75091,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q125847157",
@@ -74959,6 +75106,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -74967,9 +75115,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q129772",
@@ -74988,6 +75135,7 @@
           "born": "-043",
           "died": "-035",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q13502175"
           ],
@@ -75002,9 +75150,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Corinth"
@@ -75030,6 +75177,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -75038,42 +75186,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q20102262",
-          "label": "Xenophon of Cos",
-          "description": "ancient Greek physician (4th century BC)",
-          "names": [
-            "Senofonte di Coo",
-            "Xenophon",
-            "Xenophon of Cos"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [
-            "Q187027"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "birth_place": [
-              "Kos"
-            ]
-          }
+          "places": []
         },
         {
           "wikidata": "Q735159",
@@ -75088,6 +75202,7 @@
           "born": "-045",
           "died": "-042",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q1524"
           ],
@@ -75100,9 +75215,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Spartolos"
@@ -75125,6 +75239,7 @@
           "born": "-040",
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q13427357"
           ],
@@ -75137,9 +75252,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Perithoidai"
@@ -75162,6 +75276,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -75169,9 +75284,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q1081652",
@@ -75186,6 +75300,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -75193,9 +75308,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q1564899",
@@ -75212,6 +75326,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -75219,72 +75334,36 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
-          "wikidata": "Q16327428",
-          "label": "Jenofonte el Santo",
-          "description": "",
+          "wikidata": "Q116026019",
+          "label": "Maria",
+          "description": "wife of Saint Xenophon, monastic in Jerusalem",
           "names": [
-            "Jenofonte el Santo"
+            "Maria"
           ],
           "human": true,
-          "statuses": [],
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
-          "died": "0510",
+          "died": null,
           "feast": [
             "Q2282"
           ],
           "signals": [
             "P841"
           ],
-          "birth_place": [
-            "Q16869"
-          ],
-          "death_place": [
-            "Q1059946"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "name",
-          "evidence": [
-            "human",
-            "status"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Holy Lavra of Saint Sabbas"
-            ],
-            "birth_place": [
-              "Constantinople"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q8043659",
-          "label": "Xenophon of Robika",
-          "description": "Russian saint",
-          "names": [
-            "Xenophon of Robika"
-          ],
-          "human": true,
-          "statuses": [
-            "Q12774503"
-          ],
-          "born": null,
-          "died": "1262-06-28",
-          "feast": [],
-          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "source": "name",
+          "source": "place",
           "evidence": [
-            "human"
+            "human",
+            "status"
           ],
           "places": []
         }
@@ -82006,33 +82085,40 @@
         "Sarbelius"
       ],
       "failed": [
-        "status: the best candidate (Q37945581) fails it",
-        "name: the best candidate (Q37945581) fails it",
         "death: the best candidate (Q37945581) fails it"
       ],
       "candidates": [
         {
           "wikidata": "Q37945581",
           "label": "Barbe",
-          "description": "",
+          "description": "martyr of Edessa, sister of Saint Sarbelius",
           "names": [
-            "Barbe"
+            "Barbe",
+            "Bebaia"
           ],
           "human": true,
-          "statuses": [],
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2286"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
           "evidence": [
-            "human"
+            "human",
+            "status",
+            "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q21288344",
@@ -82046,14 +82132,14 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
           "evidence": [],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -94259,221 +94345,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Maria Ioanna Chauvigné",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Maria Ioanna Chauvigné",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q112264188",
-          "label": "Odile Baumgarten",
-          "description": "",
-          "names": [
-            "Odile Baumgarten",
-            "Odilia Baumgarten"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287"
-          ],
-          "born": "1750-11-15",
-          "died": "1794-02-01",
-          "feast": [
-            "Q2312"
-          ],
-          "birth_place": [
-            "Q21687"
-          ],
-          "death_place": [
-            "Q791403"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "death",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q791403",
-              "label": "Avrillé",
-              "via": "P20"
-            }
-          ],
-          "signals": [
-            "P841",
-            "P8080"
-          ],
-          "place_labels": {
-            "death_place": [
-              "Avrillé"
-            ],
-            "birth_place": [
-              "Gondrexange"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q141883157",
-          "label": "Marie-Jeanne Chauvigné",
-          "description": "lay martyr of Angers, wife of Rorteau",
-          "names": [
-            "Maria Giovanna Chauvigné",
-            "Maria Ioanna Chauvigné",
-            "Marie-Jeanne Chauvigné"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287"
-          ],
-          "born": "1755-02-21",
-          "died": "1794-02-01",
-          "feast": [
-            "Q2312"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [],
-          "death_place": [
-            "Q791403"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "sparql",
-          "evidence": [
-            "human",
-            "status",
-            "name",
-            "death",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q791403",
-              "label": "Avrillé",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Avrillé"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q141883319",
-          "label": "Simone Chauvigné",
-          "description": "lay martyr of Angers, widow Charbonneau",
-          "names": [
-            "Simona Chauvigné",
-            "Simone Chauvigné"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287"
-          ],
-          "born": "1728-03-12",
-          "died": "1794-02-01",
-          "feast": [
-            "Q2312"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [],
-          "death_place": [
-            "Q791403"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "death",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q791403",
-              "label": "Avrillé",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Avrillé"
-            ]
-          }
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0201-maria-anna-vaillot-et-socii|Maria Lenée",
       "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
       "day": "02-01",
@@ -95623,125 +95494,6 @@
         "Maria Leroy Brevet",
         "Maria Rouault",
         "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q112264188",
-          "label": "Odile Baumgarten",
-          "description": "",
-          "names": [
-            "Odile Baumgarten",
-            "Odilia Baumgarten"
-          ],
-          "human": true,
-          "statuses": [
-            "Q2369287"
-          ],
-          "born": "1750-11-15",
-          "died": "1794-02-01",
-          "feast": [
-            "Q2312"
-          ],
-          "birth_place": [
-            "Q21687"
-          ],
-          "death_place": [
-            "Q791403"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "death",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q791403",
-              "label": "Avrillé",
-              "via": "P20"
-            }
-          ],
-          "signals": [
-            "P841",
-            "P8080"
-          ],
-          "place_labels": {
-            "death_place": [
-              "Avrillé"
-            ],
-            "birth_place": [
-              "Gondrexange"
-            ]
-          }
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Renata Cailleau",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Renata Cailleau",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
         "Renata Martin",
         "Victoria Bauduceau",
         "Anna Francisca de Villeneuve",
@@ -101390,10 +101142,43 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q6526644) fails it",
-        "death: the best candidate (Q6526644) fails it"
+        "death: the best candidate (Q85853844) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q85853844",
+          "label": "Lienne de Luçon",
+          "description": "priest of Poitiers, disciple of Saint Hilary",
+          "names": [
+            "Leonius",
+            "Leonius of Poitiers",
+            "Lienne de Luçon"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2315"
+          ],
+          "signals": [
+            "P841",
+            "P10799"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q6526644",
           "label": "Leonius",
@@ -101406,6 +101191,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -101414,40 +101200,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q85853844",
-          "label": "Lienne de Luçon",
-          "description": "",
-          "names": [
-            "Lienne de Luçon"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": null,
-          "died": null,
-          "feast": [
-            "Q2315"
-          ],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "status"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [
-            "P841",
-            "P10799"
-          ]
+          "places": []
         },
         {
           "wikidata": "Q12328155",
@@ -101463,6 +101217,7 @@
           "born": "1798-09-06",
           "died": "1870-01-25",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q1748"
           ],
@@ -101476,9 +101231,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Copenhagen"
@@ -101503,6 +101257,7 @@
           "born": "1150",
           "died": "1163",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q506707"
           ],
@@ -101512,9 +101267,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Veurne"
@@ -101536,6 +101290,7 @@
           "born": "1135",
           "died": "1201",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -101543,9 +101298,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q6526643",
@@ -101559,6 +101313,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -101566,9 +101321,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q110063321",
@@ -101582,14 +101336,14 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
           "evidence": [],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -111596,261 +111350,6 @@
             ],
             "birth_place": [
               "La Parrilla"
-            ]
-          }
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Nagasaki",
-          "qid": "Q38234"
-        },
-        {
-          "role": "birth",
-          "label": "Europe",
-          "qid": "Q46"
-        },
-        {
-          "role": "birth",
-          "label": "Japan",
-          "qid": "Q17"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0206-paulus-miki-et-socii|Franciscus de Meako",
-      "eulogy": "mr:0206-paulus-miki-et-socii",
-      "day": "02-06",
-      "typology": "celebratio",
-      "subject": "Sancti Paulus Miki et socii",
-      "name": "Franciscus de Meako",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Paulus Miki",
-        "Ioannes de Goto Soan",
-        "Iacobus Kisai",
-        "Petrus Baptista Blázquez",
-        "Martinus ab Ascensione Aguirre",
-        "Franciscus Blanco",
-        "Philippus a Iesu de Las Casas",
-        "Gundisalvus García",
-        "Franciscus a Sancto Michaele de la Parilla",
-        "Leo Karasuma",
-        "Petrus Sukejiro",
-        "Cosmas Takeya",
-        "Paulus Ibaraki",
-        "Thomas Dangi",
-        "Paulus Suzuki",
-        "Ludovicus Ibaraki",
-        "Antonius",
-        "Michael Kozaki",
-        "Thomas",
-        "Bonaventura",
-        "Gabriel",
-        "Ioannes Kinuya",
-        "Matthias",
-        "Ioachim Sakakibara",
-        "Franciscus Adauctus"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q12900859",
-          "label": "Luis Ibaraki",
-          "description": "one of 26 Martyrs of Japan",
-          "names": [
-            "Louis Ibarchi",
-            "Ludovico Ibaraki",
-            "Ludovicus Ibaraki",
-            "Luis Ibaraki"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "1586",
-          "died": "1597-02-05",
-          "feast": [
-            "Q2930"
-          ],
-          "birth_place": [
-            "Q17"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "birth",
-              "qid": "Q17",
-              "label": "Japan",
-              "via": "P19"
-            }
-          ],
-          "signals": [
-            "P841",
-            "P4286"
-          ],
-          "place_labels": {
-            "birth_place": [
-              "Japan"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q20604423",
-          "label": "Bonaventura of Meako",
-          "description": "",
-          "names": [
-            "Bonaventura of Meako"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "1600",
-          "died": "1597-02-05",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [
-            "Q38234"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q38234",
-              "label": "Nagasaki",
-              "via": "P20"
-            }
-          ],
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Nagasaki"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q20605010",
-          "label": "Matthias of Miyako",
-          "description": "martyr",
-          "names": [
-            "Matthias of Meako",
-            "Matthias of Miyako"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": null,
-          "died": "1597-02-05",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status"
-          ],
-          "places": [],
-          "signals": []
-        },
-        {
-          "wikidata": "Q20604618",
-          "label": "Francis of Nagasaki",
-          "description": "",
-          "names": [
-            "Francis of Nagasaki"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": "1548",
-          "died": "1597-02-05",
-          "feast": [
-            "Q2320"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "source": "place",
-          "evidence": [
-            "human",
-            "status"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q20606086",
-          "label": "Saint Thomas Kozaki",
-          "description": "",
-          "names": [
-            "Saint Thomas Kozaki"
-          ],
-          "human": true,
-          "statuses": [
-            "Q123110154"
-          ],
-          "born": null,
-          "died": "1597-02-05",
-          "feast": [
-            "Q2320"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [],
-          "death_place": [
-            "Q38234"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P40",
-          "evidence": [
-            "human",
-            "status",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q38234",
-              "label": "Nagasaki",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Nagasaki"
             ]
           }
         }
@@ -127081,125 +126580,15 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "human: the best candidate (Q2941511) fails it",
-        "status: the best candidate (Q2941511) fails it",
-        "death: the best candidate (Q2941511) fails it"
+        "death: the best candidate (Q3663117) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q2941511",
-          "label": "Castrensis",
-          "description": "Wikimedia disambiguation page",
-          "names": [
-            "Castrensis"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q64751853",
-          "label": "Castrensis Scaja",
-          "description": "Roman Catholic bishop (1698-1755)",
-          "names": [
-            "Castrensis Scaja"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1698-10-06",
-          "died": "1755-10-12",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q19994449",
-          "label": "Castrensis modius (Pauly-Wissowa)",
-          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [
-            "Castrensis modius (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q34615169",
-          "label": "Castrensis (Pauly-Wissowa)",
-          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [
-            "Castrensis (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q34624680",
-          "label": "Castrensis militia (Pauly-Wissowa)",
-          "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
-          "names": [
-            "Castrensis militia (Pauly-Wissowa)"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
           "wikidata": "Q3663117",
           "label": "Castrese di Sessa",
-          "description": "Christian saint",
+          "description": "African bishop venerated at Castel Volturno and Sessa Aurunca",
           "names": [
+            "Castrensis",
             "Castrese di Sessa",
             "San Castrense di Sessa",
             "San Castrese"
@@ -127225,11 +126614,12 @@
           ],
           "burial_place": [],
           "work_places": [],
-          "source": "name",
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ],
+          "source": "search",
           "places": [],
           "place_labels": {
             "death_place": [
@@ -127239,6 +126629,115 @@
               "North Africa"
             ]
           }
+        },
+        {
+          "wikidata": "Q2941511",
+          "label": "Castrensis",
+          "description": "Wikimedia disambiguation page",
+          "names": [
+            "Castrensis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q64751853",
+          "label": "Castrensis Scaja",
+          "description": "Roman Catholic bishop (1698-1755)",
+          "names": [
+            "Castrensis Scaja"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1698-10-06",
+          "died": "1755-10-12",
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q19994449",
+          "label": "Castrensis modius (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Castrensis modius (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q34615169",
+          "label": "Castrensis (Pauly-Wissowa)",
+          "description": "encyclopedic article in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Castrensis (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q34624680",
+          "label": "Castrensis militia (Pauly-Wissowa)",
+          "description": "cross-reference in Paulys Realencyclopädie der classischen Altertumswissenschaft (RE)",
+          "names": [
+            "Castrensis militia (Pauly-Wissowa)"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "source": "search",
+          "places": []
         }
       ],
       "decision": null,
@@ -129109,29 +128608,40 @@
         "Victoria"
       ],
       "failed": [
-        "human: the best candidate (Q85973478) fails it",
-        "status: the best candidate (Q85973478) fails it",
-        "name: the best candidate (Q85973478) fails it"
+        "a one-word name in a footnote list: the one candidate (Q85973478) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
           "wikidata": "Q85973478",
-          "label": "Q85973478",
-          "description": "",
-          "names": [],
-          "human": false,
-          "statuses": [],
+          "label": "Berectina of Abitinae",
+          "description": "one of the Martyrs of Abitinae",
+          "names": [
+            "Berectina",
+            "Berectina of Abitinae"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "evidence": [],
-          "places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -129692,29 +129202,40 @@
         "Berectina"
       ],
       "failed": [
-        "human: the best candidate (Q85973067) fails it",
-        "status: the best candidate (Q85973067) fails it",
-        "name: the best candidate (Q85973067) fails it"
+        "a one-word name in a footnote list: the one candidate (Q85973067) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
           "wikidata": "Q85973067",
-          "label": "Q85973067",
-          "description": "",
-          "names": [],
-          "human": false,
-          "statuses": [],
+          "label": "Clautus of Abitinae",
+          "description": "one of the Martyrs of Abitinae",
+          "names": [
+            "Clautus",
+            "Clautus of Abitinae"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "evidence": [],
-          "places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -134479,29 +134000,40 @@
         "Berectina"
       ],
       "failed": [
-        "human: the best candidate (Q85973027) fails it",
-        "status: the best candidate (Q85973027) fails it",
-        "name: the best candidate (Q85973027) fails it"
+        "a one-word name in a footnote list: the one candidate (Q85973027) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
           "wikidata": "Q85973027",
-          "label": "Q85973027",
-          "description": "",
-          "names": [],
-          "human": false,
-          "statuses": [],
+          "label": "Givalius of Abitinae",
+          "description": "one of the Martyrs of Abitinae",
+          "names": [
+            "Givalius",
+            "Givalius of Abitinae"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "evidence": [],
-          "places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -139795,118 +139327,40 @@
         "Berectina"
       ],
       "failed": [
-        "human: the best candidate (Q85973431) fails it",
-        "status: the best candidate (Q85973431) fails it",
-        "name: the best candidate (Q85973431) fails it"
+        "a one-word name in a footnote list: the one candidate (Q85973431) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
           "wikidata": "Q85973431",
-          "label": "Q85973431",
-          "description": "",
-          "names": [],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q5383027",
-          "label": "Epimachus of Pelusium",
-          "description": "Egyptian martyr",
+          "label": "Pelusius of Abitinae",
+          "description": "one of the Martyrs of Abitinae",
           "names": [
-            "Epimachius Pelusiota",
-            "Epimachus of Alexandria",
-            "Epimachus of Pelusium"
+            "Pelusius",
+            "Pelusius of Abitinae"
           ],
           "human": true,
-          "statuses": [],
-          "born": "0201",
-          "died": "0251",
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
           "feast": [
-            "Q7141996",
-            "Q2949"
+            "Q2336"
           ],
           "signals": [
             "P841"
           ],
-          "birth_place": [
-            "Q1145715"
-          ],
+          "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "source": "name",
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ],
-          "places": [],
-          "place_labels": {
-            "birth_place": [
-              "Pelusium"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q713530",
-          "label": "Isidore of Pelusium",
-          "description": "monk",
-          "names": [
-            "Isidore",
-            "Isidore of Pelusium",
-            "Isidoro di Pelusio",
-            "Isidorus Pelusiota"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "0370",
-          "died": "0440",
-          "feast": [
-            "Q2318"
-          ],
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
-          "birth_place": [
-            "Q87"
-          ],
-          "death_place": [
-            "Q79",
-            "Q1145715"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "name",
-          "evidence": [
-            "human",
-            "status"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Egypt",
-              "Pelusium"
-            ],
-            "birth_place": [
-              "Alexandria"
-            ]
-          }
+          "source": "search",
+          "places": []
         }
       ],
       "decision": null,
@@ -141219,29 +140673,40 @@
         "Berectina"
       ],
       "failed": [
-        "human: the best candidate (Q85973267) fails it",
-        "status: the best candidate (Q85973267) fails it",
-        "name: the best candidate (Q85973267) fails it"
+        "a one-word name in a footnote list: the one candidate (Q85973267) did not die on this eulogy's day, so it may be a namesake"
       ],
       "candidates": [
         {
           "wikidata": "Q85973267",
-          "label": "Q85973267",
-          "description": "",
-          "names": [],
-          "human": false,
-          "statuses": [],
+          "label": "Regiola of Abitinae",
+          "description": "one of the Martyrs of Abitinae",
+          "names": [
+            "Regiola",
+            "Regiola of Abitinae"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
           "born": null,
           "died": null,
-          "feast": [],
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "evidence": [],
-          "places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
           "source": "search",
-          "signals": []
+          "places": []
         }
       ],
       "decision": null,
@@ -158217,9 +157682,42 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "death: the best candidate (Q236699) fails it"
+        "death: the best candidate (Q137910212) fails it"
       ],
       "candidates": [
+        {
+          "wikidata": "Q137910212",
+          "label": "Juliana of Florence",
+          "description": "",
+          "names": [
+            "Iuliana",
+            "Juliana of Florence",
+            "Santa Giuliana"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2322"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
         {
           "wikidata": "Q236699",
           "label": "Julian of Norwich",
@@ -158242,6 +157740,13 @@
           "feast": [
             "Q2555"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
           "birth_place": [
             "Q130191"
           ],
@@ -158257,15 +157762,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Norwich"
@@ -158275,291 +157773,6 @@
             ],
             "work_places": [
               "Norwich"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q269577",
-          "label": "Juliana of Liège",
-          "description": "Premonstratensian canoness, saint and mystic",
-          "names": [
-            "Giuliana di Cornillon",
-            "Iuliana",
-            "Juliana of Liege",
-            "Juliana of Liège",
-            "Santa Giuliana di Cornillon"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "1193-11-13",
-          "died": "1258-04-05",
-          "feast": [
-            "Q2507"
-          ],
-          "birth_place": [
-            "Q658621"
-          ],
-          "death_place": [
-            "Q720478"
-          ],
-          "burial_place": [
-            "Q1493708"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
-          "place_labels": {
-            "death_place": [
-              "Fosses-la-Ville"
-            ],
-            "burial_place": [
-              "Villers Abbey"
-            ],
-            "birth_place": [
-              "Retinne"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q154946",
-          "label": "Juliana of the Netherlands",
-          "description": "Queen of the Netherlands from 1948 to 1980 (1909-2004)",
-          "names": [
-            "Giuliana d'Olanda",
-            "Giuliana dei Paesi Bassi",
-            "Iuliana",
-            "Iuliana Nederlandiae Regina",
-            "Juliana I of the Netherlands",
-            "Juliana Louise Emma Marie Wilhelmina",
-            "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-            "Juliana der Nederlanden",
-            "Juliana of the Netherlands",
-            "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-            "Princess Juliana of the Netherlands",
-            "Queen Juliana",
-            "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
-            "Queen Juliana of the Netherlands"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1909-04-30",
-          "died": "2004-03-20",
-          "feast": [],
-          "birth_place": [
-            "Q36600"
-          ],
-          "death_place": [
-            "Q10027",
-            "Q234048"
-          ],
-          "burial_place": [
-            "Q678611"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Baarn",
-              "Soestdijk Palace"
-            ],
-            "burial_place": [
-              "Nieuwe Kerk Delft"
-            ],
-            "birth_place": [
-              "The Hague"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q102185997",
-          "label": "Iuliana Ianus",
-          "description": "Ph.D. Carnegie Mellon University 2002",
-          "names": [
-            "Iuliana Ianus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q102223183",
-          "label": "Iuliana Oprea",
-          "description": "Ph.D. Université de Nice-Sophia Antipolis 1994",
-          "names": [
-            "Iuliana Oprea"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q104502500",
-          "label": "Iuliana Ivana",
-          "description": "Romanian politician from Gălăteni, Teleorman County",
-          "names": [
-            "Iuliana Ivana"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q108124049",
-          "label": "Iuliana Urzică",
-          "description": "researcher",
-          "names": [
-            "Iuliana Urzica",
-            "Iuliana Urzică"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q108559135",
-          "label": "Iuliana Dumitrescu",
-          "description": "researcher",
-          "names": [
-            "Iuliana Dumitrescu"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q122313065",
-          "label": "Juliana",
-          "description": "ancient Roman cognomen",
-          "names": [
-            "Iuliana",
-            "Ivliana",
-            "Juliana"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q1640629",
-          "label": "Iuliana Roxana Nucu",
-          "description": "volleyball player",
-          "names": [
-            "Iuliana Nucu",
-            "Iuliana Roxana Nucu",
-            "Juliana Nucu"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1980-10-04",
-          "died": null,
-          "feast": [],
-          "birth_place": [
-            "Q79808"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "birth_place": [
-              "Constanța"
             ]
           }
         },
@@ -158598,12 +157811,12 @@
           ],
           "burial_place": [],
           "work_places": [],
-          "source": "feast",
           "evidence": [
             "human",
             "status",
             "name"
           ],
+          "source": "search",
           "places": [],
           "place_labels": {
             "death_place": [
@@ -158613,6 +157826,234 @@
               "Nicomedia"
             ]
           }
+        },
+        {
+          "wikidata": "Q269577",
+          "label": "Juliana of Liège",
+          "description": "Premonstratensian canoness, saint and mystic",
+          "names": [
+            "Giuliana di Cornillon",
+            "Iuliana",
+            "Juliana of Liege",
+            "Juliana of Liège",
+            "Santa Giuliana di Cornillon"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "1193-11-13",
+          "died": "1258-04-05",
+          "feast": [
+            "Q2507"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q658621"
+          ],
+          "death_place": [
+            "Q720478"
+          ],
+          "burial_place": [
+            "Q1493708"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Fosses-la-Ville"
+            ],
+            "burial_place": [
+              "Villers Abbey"
+            ],
+            "birth_place": [
+              "Retinne"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q154946",
+          "label": "Juliana of the Netherlands",
+          "description": "Queen of the Netherlands from 1948 to 1980 (1909-2004)",
+          "names": [
+            "Giuliana d'Olanda",
+            "Giuliana dei Paesi Bassi",
+            "Iuliana",
+            "Iuliana Nederlandiae Regina",
+            "Juliana I of the Netherlands",
+            "Juliana Louise Emma Marie Wilhelmina",
+            "Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+            "Juliana der Nederlanden",
+            "Juliana of the Netherlands",
+            "Princess Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+            "Princess Juliana of the Netherlands",
+            "Queen Juliana",
+            "Queen Juliana Louise Emma Marie Wilhelmina of the Netherlands",
+            "Queen Juliana of the Netherlands"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1909-04-30",
+          "died": "2004-03-20",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q36600"
+          ],
+          "death_place": [
+            "Q10027",
+            "Q234048"
+          ],
+          "burial_place": [
+            "Q678611"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Baarn",
+              "Soestdijk Palace"
+            ],
+            "burial_place": [
+              "Nieuwe Kerk Delft"
+            ],
+            "birth_place": [
+              "The Hague"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q102185997",
+          "label": "Iuliana Ianus",
+          "description": "Ph.D. Carnegie Mellon University 2002",
+          "names": [
+            "Iuliana Ianus"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q102223183",
+          "label": "Iuliana Oprea",
+          "description": "Ph.D. Université de Nice-Sophia Antipolis 1994",
+          "names": [
+            "Iuliana Oprea"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q104502500",
+          "label": "Iuliana Ivana",
+          "description": "Romanian politician from Gălăteni, Teleorman County",
+          "names": [
+            "Iuliana Ivana"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q108124049",
+          "label": "Iuliana Urzică",
+          "description": "researcher",
+          "names": [
+            "Iuliana Urzica",
+            "Iuliana Urzică"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q108559135",
+          "label": "Iuliana Dumitrescu",
+          "description": "researcher",
+          "names": [
+            "Iuliana Dumitrescu"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "source": "search",
+          "places": []
         }
       ],
       "decision": null,
@@ -163419,6 +162860,11 @@
             "Q2387117",
             "Q2995"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P10799"
+          ],
           "birth_place": [
             "Q48338"
           ],
@@ -163435,13 +162881,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Nicomedia",
@@ -163471,6 +162912,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -163479,9 +162921,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q170396",
@@ -163498,6 +162939,7 @@
           "born": "1869-06-24",
           "died": "1957-11-25",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q121378"
           ],
@@ -163512,9 +162954,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Saint-Cloud"
@@ -163542,6 +162983,7 @@
           "born": "1763-12-09",
           "died": "1828-02-07",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q6938"
           ],
@@ -163554,9 +162996,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Bayreuth"
@@ -163587,6 +163028,7 @@
           "born": "1281",
           "died": "1325-11-21",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [
             "Q477152"
@@ -163599,9 +163041,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Sarai"
@@ -163624,6 +163065,7 @@
           "born": "1891-06-03",
           "died": "1970-01-08",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q760624"
           ],
@@ -163638,9 +163080,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "14th arrondissement of Paris"
@@ -163670,6 +163111,7 @@
           "born": "1255",
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q45301"
           ],
@@ -163680,9 +163122,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Trabzon"
@@ -163701,6 +163142,7 @@
           "born": "1751",
           "died": "1782-11-18",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -163708,9 +163150,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q12900074",
@@ -163727,6 +163168,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -163734,9 +163176,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q1388840",
@@ -163771,6 +163212,7 @@
           "born": "1542",
           "died": "1600-09-09",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q12892"
           ],
@@ -163783,9 +163225,8 @@
           "evidence": [
             "human"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Vienna",
@@ -163798,11 +163239,11 @@
         },
         {
           "wikidata": "Q56318382",
-          "label": "Joji wa Lodeve",
-          "description": "",
+          "label": "George of Lodève",
+          "description": "monk of Vabres and bishop of Lodève",
           "names": [
-            "Georgius",
-            "Joji wa Lodeve"
+            "George of Lodève",
+            "Georgius"
           ],
           "human": true,
           "statuses": [
@@ -175446,6 +174887,12 @@
           "feast": [
             "Q2532"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286"
+          ],
           "birth_place": [
             "Q170532"
           ],
@@ -175460,14 +174907,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Nicomedia",
@@ -175507,6 +174948,13 @@
             "Q2151",
             "Q2612"
           ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
           "birth_place": [
             "Q48338"
           ],
@@ -175522,15 +174970,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Kayseri"
@@ -175562,6 +175003,10 @@
           "feast": [
             "Q2785"
           ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
           "birth_place": [
             "Q649"
           ],
@@ -175575,12 +175020,8 @@
             "status",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [
-            "P841",
-            "P6126"
-          ],
+          "places": [],
           "place_labels": {
             "death_place": [
               "Moscow"
@@ -175589,6 +175030,41 @@
               "Moscow"
             ]
           }
+        },
+        {
+          "wikidata": "Q4867289",
+          "label": "Basil the Confessor",
+          "description": "monk of Constantinople, defender of icons with Procopius of Decapolis",
+          "names": [
+            "Basil of Decapolis",
+            "Basil the Confessor",
+            "Basilius",
+            "Saint Basil the Confessor"
+          ],
+          "human": true,
+          "statuses": [
+            "Q12774503"
+          ],
+          "born": null,
+          "died": "0750",
+          "feast": [
+            "Q2362",
+            "Q2361"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         },
         {
           "wikidata": "Q108572767",
@@ -175602,6 +175078,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -175610,9 +175087,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q111838266",
@@ -175626,6 +175102,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -175634,9 +175111,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q16739376",
@@ -175651,6 +175127,7 @@
           "born": "0400",
           "died": "0454",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -175659,9 +175136,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q19826202",
@@ -175677,6 +175153,7 @@
           "born": "1010",
           "died": "1074",
           "feast": [],
+          "signals": [],
           "birth_place": [
             "Q41"
           ],
@@ -175687,9 +175164,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": [],
+          "places": [],
           "place_labels": {
             "birth_place": [
               "Greece"
@@ -175712,6 +175188,7 @@
           "born": "1315",
           "died": "1340-04-06",
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -175720,9 +175197,8 @@
             "human",
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q103946775",
@@ -175736,6 +175212,7 @@
           "born": null,
           "died": null,
           "feast": [],
+          "signals": [],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
@@ -175743,32 +175220,8 @@
           "evidence": [
             "name"
           ],
-          "places": [],
           "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q105529185",
-          "label": "Basilius",
-          "description": "family name",
-          "names": [
-            "Basilius"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
+          "places": []
         },
         {
           "wikidata": "Q2886867",
@@ -175787,6 +175240,11 @@
           "died": "0952",
           "feast": [
             "Q2456"
+          ],
+          "signals": [
+            "P841",
+            "P8080",
+            "P4286"
           ],
           "birth_place": [
             "Q16869"
@@ -175810,11 +175268,6 @@
               "via": "P20"
             }
           ],
-          "signals": [
-            "P841",
-            "P8080",
-            "P4286"
-          ],
           "place_labels": {
             "death_place": [
               "Constantinople"
@@ -175823,40 +175276,6 @@
               "Constantinople"
             ]
           }
-        },
-        {
-          "wikidata": "Q4867289",
-          "label": "Basil the Confessor",
-          "description": "Eastern Orthodox monk and saint",
-          "names": [
-            "Basil the Confessor",
-            "Basilius",
-            "Saint Basil the Confessor"
-          ],
-          "human": true,
-          "statuses": [
-            "Q12774503"
-          ],
-          "born": null,
-          "died": "0750",
-          "feast": [
-            "Q2362",
-            "Q2361"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "source": "feast",
-          "evidence": [
-            "human",
-            "status",
-            "name"
-          ],
-          "places": []
         }
       ],
       "decision": null,
@@ -175938,274 +175357,13 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q30887661) fails it",
-        "death: the best candidate (Q30887661) fails it"
+        "death: the best candidate (Q85975311) fails it"
       ],
       "candidates": [
         {
-          "wikidata": "Q30887661",
-          "label": "Besa, Abbot of Athripe",
-          "description": "archimandrite, disciple of Shenoute (5th century)",
-          "names": [
-            "Awsa",
-            "Besa",
-            "Besa Athribensis",
-            "Besa di Atripe",
-            "Besa, Abbot of Athripe",
-            "Bēsa",
-            "Bēsa Athribensis",
-            "Saint Wissa",
-            "San Besa"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0450",
-          "died": "0474",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [
-            "Q11768"
-          ],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "work_places": [
-              "Ancient Egypt"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q829401",
-          "label": "Besa",
-          "description": "Albanian pop singer",
-          "names": [
-            "Besa",
-            "Besa Kokedhima",
-            "Besa Kokëdhima"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1986-05-29",
-          "died": null,
-          "feast": [],
-          "birth_place": [
-            "Q190897"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "birth_place": [
-              "Fier"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q1291026",
-          "label": "Besa",
-          "description": "Albanian concept of faith, honor, and keeping one's word",
-          "names": [
-            "Besa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q13422929",
-          "label": "Besa",
-          "description": "ancient Athenian deme",
-          "names": [
-            "Besa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q1480044",
-          "label": "paisa",
-          "description": "fractional monetary unit, used to represent one hundredth of a basic monetary unit in some countries",
-          "names": [
-            "Besa",
-            "Pice",
-            "paisa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q16532267",
-          "label": "besa",
-          "description": "valuta della Somalia italiana (1909-1925)",
-          "names": [
-            "besa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q16532270",
-          "label": "Besa",
-          "description": "male given name",
-          "names": [
-            "Besa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q16537497",
-          "label": "Besa",
-          "description": "ancient city of Locris",
-          "names": [
-            "Besa",
-            "Bessa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q188931",
-          "label": "Bes",
-          "description": "Egyptian deity",
-          "names": [
-            "Bes",
-            "Besa"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q251603",
-          "label": "Beša",
-          "description": "municipality of Slovakia in Michalovce district",
-          "names": [
-            "Beša"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
           "wikidata": "Q85975311",
           "label": "Besas",
-          "description": "",
+          "description": "soldier martyred at Alexandria",
           "names": [
             "Besa",
             "Besas"
@@ -176226,12 +175384,248 @@
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "source": "feast",
           "evidence": [
             "human",
             "status",
             "name"
           ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q30887661",
+          "label": "Besa, Abbot of Athripe",
+          "description": "archimandrite, disciple of Shenoute (5th century)",
+          "names": [
+            "Awsa",
+            "Besa",
+            "Besa Athribensis",
+            "Besa di Atripe",
+            "Besa, Abbot of Athripe",
+            "Bēsa",
+            "Bēsa Athribensis",
+            "Saint Wissa",
+            "San Besa"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0450",
+          "died": "0474",
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [
+            "Q11768"
+          ],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "work_places": [
+              "Ancient Egypt"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q829401",
+          "label": "Besa",
+          "description": "Albanian pop singer",
+          "names": [
+            "Besa",
+            "Besa Kokedhima",
+            "Besa Kokëdhima"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1986-05-29",
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q190897"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Fier"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q1291026",
+          "label": "Besa",
+          "description": "Albanian concept of faith, honor, and keeping one's word",
+          "names": [
+            "Besa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q13422929",
+          "label": "Besa",
+          "description": "ancient Athenian deme",
+          "names": [
+            "Besa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q1480044",
+          "label": "paisa",
+          "description": "fractional monetary unit, used to represent one hundredth of a basic monetary unit in some countries",
+          "names": [
+            "Besa",
+            "Pice",
+            "paisa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q16532267",
+          "label": "besa",
+          "description": "valuta della Somalia italiana (1909-1925)",
+          "names": [
+            "besa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q16532270",
+          "label": "Besa",
+          "description": "male given name",
+          "names": [
+            "Besa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q188931",
+          "label": "Bes",
+          "description": "Egyptian deity",
+          "names": [
+            "Bes",
+            "Besa"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        },
+        {
+          "wikidata": "Q251603",
+          "label": "Beša",
+          "description": "municipality of Slovakia in Michalovce district",
+          "names": [
+            "Beša"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "name"
+          ],
+          "source": "search",
           "places": []
         }
       ],
