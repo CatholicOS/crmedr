@@ -628,6 +628,10 @@ def _drop_unfit_group_members(op):
     op["candidates"] = [c for i, c in enumerate(op["candidates"])
                         if (first and i == 0) or c["wikidata"] == pick or c.get("source") != "companion:P361"
                         or _fits_group_member(op, c)]
+    # An accept applies the suggestion first: one naming a dropped candidate goes, with its reasons.
+    if (op.get("suggested") or {}).get("wikidata") not in {c["wikidata"] for c in op["candidates"]}:
+        for k in ("suggested", "reasoning", "confidence"):
+            op.pop(k, None)
 
 
 def expand(review, items, records, client, places=None, vernacular=None):
