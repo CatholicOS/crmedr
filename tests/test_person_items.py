@@ -47,6 +47,11 @@ class SummarizePersonTest(unittest.TestCase):
         raw = {"id": "Q1774668", "labels": {"en": {"value": "Anna"}}, "claims": {"P31": [item("x", "Q20643955")]}}
         self.assertTrue(wd.summarize_person(raw)["human"])
 
+    def test_a_human_whose_existence_is_disputed_is_human(self):
+        # Saint Prisca (Q426200), the titular of the Aventine basilica, is typed so: legendary saints are.
+        raw = {"id": "Q426200", "labels": {"en": {"value": "Saint Prisca"}}, "claims": {"P31": [item("x", "Q21070568")]}}
+        self.assertTrue(wd.summarize_person(raw)["human"])
+
     def test_places_current_only(self):
         ended = item("x", "Q1")
         ended["qualifiers"] = {"P582": [{}]}
