@@ -54785,40 +54785,16 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "status: the best candidate (Q113721844) fails it",
-        "death: the best candidate (Q113721844) fails it"
+        "death: the best candidate (Q25207550) fails it"
       ],
       "candidates": [
-        {
-          "wikidata": "Q113721844",
-          "label": "Launomarus",
-          "description": "",
-          "names": [
-            "Launomarus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
         {
           "wikidata": "Q25207550",
           "label": "Lomer",
           "description": "Frankish catholic saint",
           "names": [
             "Laumer",
+            "Launomarus",
             "Lomer"
           ],
           "human": true,
@@ -54827,19 +54803,23 @@
           ],
           "born": "0430",
           "died": "0539",
-          "feast": [],
+          "feast": [
+            "Q2266"
+          ],
           "signals": [
+            "P841",
             "P8080"
           ],
           "birth_place": [],
           "death_place": [],
           "burial_place": [],
           "work_places": [],
-          "source": "name",
           "evidence": [
             "human",
-            "status"
+            "status",
+            "name"
           ],
+          "source": "search",
           "places": []
         }
       ],
