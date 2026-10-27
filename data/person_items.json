@@ -118,6 +118,12 @@
         "status": "auto"
       }
     },
+    "mr:0109-iosephus-pawlowski-et-casimirus-grelewskus": {
+      "Casimirus Grelewskus": {
+        "wikidata": "Q2126095",
+        "status": "auto"
+      }
+    },
     "mr:0110-agathon": {
       "Agathon": {
         "wikidata": "Q12748064",
@@ -139,6 +145,18 @@
     "mr:0110-leonia-aviat": {
       "Leonia Aviat": {
         "wikidata": "Q437723",
+        "status": "auto"
+      }
+    },
+    "mr:0110-maria-a-doloribus-rodriguez-sopena": {
+      "Maria a Doloribus Rodriguez Sopena": {
+        "wikidata": "Q2012285",
+        "status": "auto"
+      }
+    },
+    "mr:0111-franciscus-rogaczewski": {
+      "Franciscus Rogaczewski": {
+        "wikidata": "Q445645",
         "status": "auto"
       }
     },
@@ -169,6 +187,18 @@
     "mr:0112-margarita-bourgeoys": {
       "Margarita Bourgeoys": {
         "wikidata": "Q263327",
+        "status": "auto"
+      }
+    },
+    "mr:0112-martinus-de-sancta-cruce": {
+      "Martinus de Sancta Cruce": {
+        "wikidata": "Q3389798",
+        "status": "auto"
+      }
+    },
+    "mr:0112-petrus-franciscus-jamet": {
+      "Petrus Franciscus Jamet": {
+        "wikidata": "Q2014623",
         "status": "auto"
       }
     },
@@ -226,6 +256,12 @@
         "status": "auto"
       }
     },
+    "mr:0116-leobatius": {
+      "Leobatius": {
+        "wikidata": "Q141886871",
+        "status": "auto"
+      }
+    },
     "mr:0116-marcellus-i": {
       "Marcellus I": {
         "wikidata": "Q102131",
@@ -241,6 +277,20 @@
     "mr:0118-facius": {
       "Facius": {
         "wikidata": "Q9177337",
+        "status": "auto"
+      }
+    },
+    "mr:0118-felicitas-pricet-et-socii": {
+      "Carola Lucas": {
+        "wikidata": "Q141886839",
+        "status": "auto"
+      },
+      "Felicitas Pricet": {
+        "wikidata": "Q2195719",
+        "status": "auto"
+      },
+      "Monica Pichery": {
+        "wikidata": "Q115450922",
         "status": "auto"
       }
     },
@@ -274,6 +324,12 @@
         "status": "auto"
       }
     },
+    "mr:0121-eduardus-stransham-et-nicolaus-wheeler": {
+      "Nicolaus Wheeler": {
+        "wikidata": "Q7026431",
+        "status": "auto"
+      }
+    },
     "mr:0121-fructuosus-et-socii": {
       "Fructuosus": {
         "wikidata": "Q707744",
@@ -301,6 +357,12 @@
     "mr:0122-barnardus": {
       "Barnardus": {
         "wikidata": "Q1284483",
+        "status": "auto"
+      }
+    },
+    "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana": {
+      "Franciscus Gil de Federich": {
+        "wikidata": "Q9262404",
         "status": "auto"
       }
     },
@@ -371,6 +433,34 @@
     "mr:0124-vincentius-lewoniuk-et-socii": {
       "Vincentius Lewoniuk": {
         "wikidata": "Q2104158",
+        "status": "auto"
+      },
+      "Constantinus Bojko": {
+        "wikidata": "Q141886858",
+        "status": "auto"
+      },
+      "Constantinus Łubaszuk": {
+        "wikidata": "Q141886859",
+        "status": "auto"
+      },
+      "Daniel Karmasz": {
+        "wikidata": "Q141886860",
+        "status": "auto"
+      },
+      "Lucas Bojko": {
+        "wikidata": "Q2105116",
+        "status": "auto"
+      },
+      "Michael Nicephorus Hryciuk": {
+        "wikidata": "Q141886863",
+        "status": "auto"
+      },
+      "Onuphrius Wasiluk": {
+        "wikidata": "Q141886865",
+        "status": "auto"
+      },
+      "Philippus Kiryluk": {
+        "wikidata": "Q141886866",
         "status": "auto"
       }
     },
@@ -494,6 +584,12 @@
         "status": "auto"
       }
     },
+    "mr:0130-sigismundus-pisarski": {
+      "Sigismundus Pisarski": {
+        "wikidata": "Q2264391",
+        "status": "auto"
+      }
+    },
     "mr:0131-augustinus-pak-chong-won-et-socii": {
       "Agatha Kwŏn Chin-i": {
         "wikidata": "Q9141916",
@@ -530,15 +626,81 @@
         "status": "auto"
       }
     },
+    "mr:0201-andreas-de-comitibus-signiae": {
+      "Andreas de Comitibus Signiae": {
+        "wikidata": "Q2848882",
+        "status": "auto"
+      }
+    },
     "mr:0201-anna-michelotti": {
       "Anna Michelotti": {
         "wikidata": "Q438530",
         "status": "auto"
       }
     },
+    "mr:0201-conorus-o-devany-et-patricius-o-lougham": {
+      "Patricius O Lougham": {
+        "wikidata": "Q7147399",
+        "status": "auto"
+      }
+    },
     "mr:0201-henricus-morse": {
       "Henricus Morse": {
         "wikidata": "Q8776192",
+        "status": "auto"
+      }
+    },
+    "mr:0201-maria-anna-vaillot-et-socii": {
+      "Anna Francisca de Villeneuve": {
+        "wikidata": "Q141886840",
+        "status": "auto"
+      },
+      "Anna Hamard": {
+        "wikidata": "Q141886841",
+        "status": "auto"
+      },
+      "Francisca Bellanger": {
+        "wikidata": "Q141886842",
+        "status": "auto"
+      },
+      "Francisca Bonneau": {
+        "wikidata": "Q141886843",
+        "status": "auto"
+      },
+      "Francisca Michau": {
+        "wikidata": "Q141886844",
+        "status": "auto"
+      },
+      "Iacobina Monnier": {
+        "wikidata": "Q141886845",
+        "status": "auto"
+      },
+      "Ioanna Bourigault": {
+        "wikidata": "Q141886846",
+        "status": "auto"
+      },
+      "Ioanna Fouchard": {
+        "wikidata": "Q141886847",
+        "status": "auto"
+      },
+      "Ioanna Gruget": {
+        "wikidata": "Q141886848",
+        "status": "auto"
+      },
+      "Ludovica Amata Déan de Luigné": {
+        "wikidata": "Q141886849",
+        "status": "auto"
+      },
+      "Ludovica Rallier de la Tertinière": {
+        "wikidata": "Q141886850",
+        "status": "auto"
+      },
+      "Magdalena Blond": {
+        "wikidata": "Q141886852",
+        "status": "auto"
+      },
+      "Magdalena Perrotin": {
+        "wikidata": "Q141886853",
         "status": "auto"
       }
     },
@@ -651,6 +813,12 @@
     "mr:0205-albuinus": {
       "Albuinus": {
         "wikidata": "Q45474",
+        "status": "auto"
+      }
+    },
+    "mr:0205-francisca-meziere": {
+      "Francisca Meziere": {
+        "wikidata": "Q22248887",
         "status": "auto"
       }
     },
@@ -794,6 +962,20 @@
         "status": "auto"
       }
     },
+    "mr:0210-petrus-fremond-et-socii": {
+      "Ludovica Bessay de la Voüte": {
+        "wikidata": "Q141886854",
+        "status": "auto"
+      },
+      "Ludovica Poirier": {
+        "wikidata": "Q141886855",
+        "status": "auto"
+      },
+      "Maria Anna Hacher du Bois": {
+        "wikidata": "Q141886857",
+        "status": "auto"
+      }
+    },
     "mr:0210-scholastica": {
       "Scholastica": {
         "wikidata": "Q231300",
@@ -824,6 +1006,12 @@
         "status": "auto"
       }
     },
+    "mr:0212-thomas-hemmerford-et-socii": {
+      "Thomas Hemmerford": {
+        "wikidata": "Q112604173",
+        "status": "auto"
+      }
+    },
     "mr:0213-fulcranus": {
       "Fulcranus": {
         "wikidata": "Q331411",
@@ -833,6 +1021,18 @@
     "mr:0213-iordanus-de-saxonia": {
       "Iordanus de Saxonia": {
         "wikidata": "Q60790",
+        "status": "auto"
+      }
+    },
+    "mr:0213-paulus-le-van-loc": {
+      "Paulus Le Van Loc": {
+        "wikidata": "Q11814229",
+        "status": "auto"
+      }
+    },
+    "mr:0213-stephanus-reate": {
+      "Stephanus Reate": {
+        "wikidata": "Q141886876",
         "status": "auto"
       }
     },
@@ -857,6 +1057,18 @@
     "mr:0214-valentinus": {
       "Valentinus": {
         "wikidata": "Q192151",
+        "status": "auto"
+      }
+    },
+    "mr:0214-vincentius-vilar-david": {
+      "Vincentius Vilar David": {
+        "wikidata": "Q6161375",
+        "status": "auto"
+      }
+    },
+    "mr:0215-decorosus": {
+      "Decorosus": {
+        "wikidata": "Q141886877",
         "status": "auto"
       }
     },
@@ -896,9 +1108,21 @@
         "status": "auto"
       }
     },
+    "mr:0218-georgius-kaszyra": {
+      "Georgius Kaszyra": {
+        "wikidata": "Q2986690",
+        "status": "auto"
+      }
+    },
     "mr:0219-barbatus": {
       "Barbatus": {
         "wikidata": "Q740907",
+        "status": "auto"
+      }
+    },
+    "mr:0219-iosephus-zaplata": {
+      "Iosephus Zaplata": {
+        "wikidata": "Q4186712",
         "status": "auto"
       }
     },
@@ -998,6 +1222,12 @@
         "status": "auto"
       }
     },
+    "mr:0226-thomasina-ortiz-real": {
+      "Thomasina Ortiz Real": {
+        "wikidata": "Q2056038",
+        "status": "auto"
+      }
+    },
     "mr:0227-anna-line": {
       "Anna Line": {
         "wikidata": "Q2069003",
@@ -1007,6 +1237,18 @@
     "mr:0227-baldomerus": {
       "Baldomerus": {
         "wikidata": "Q2696798",
+        "status": "auto"
+      }
+    },
+    "mr:0227-carolina-brader": {
+      "Carolina Brader": {
+        "wikidata": "Q3847340",
+        "status": "auto"
+      }
+    },
+    "mr:0227-francisca-anna-a-virgine-perdolenti": {
+      "Francisca Anna a Virgine Perdolenti": {
+        "wikidata": "Q135159",
         "status": "auto"
       }
     },
@@ -1023,6 +1265,12 @@
       },
       "Marana": {
         "wikidata": "Q54592083",
+        "status": "auto"
+      }
+    },
+    "mr:0228-timotheus-trojanowski": {
+      "Timotheus Trojanowski": {
+        "wikidata": "Q4464088",
         "status": "auto"
       }
     },

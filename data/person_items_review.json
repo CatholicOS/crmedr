@@ -13327,9 +13327,63 @@
         "Petrus Tessier"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q63275471) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q63275471",
+          "label": "François Peltier",
+          "description": "",
+          "names": [
+            "Franciscus Peltier",
+            "François Peltier"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1728-04-26",
+          "died": "1794-01-02",
+          "feast": [
+            "Q2202"
+          ],
+          "signals": [
+            "P841",
+            "P8080"
+          ],
+          "birth_place": [
+            "Q387232"
+          ],
+          "death_place": [
+            "Q38380"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q38380",
+              "label": "Angers",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Angers"
+            ],
+            "birth_place": [
+              "Savennières"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -25391,9 +25445,53 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q85859993) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q85859993",
+          "label": "Eustratios Taumaturgos",
+          "description": "Christian saint",
+          "names": [
+            "Eustratios Taumaturgos",
+            "Eustratius Thaumaturgus",
+            "Eustrazio",
+            "Saint Eustratios the Wonderworker",
+            "Sant'Eustrazio"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2238"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [
+            "Q373189"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Bithynia"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -25970,9 +26068,63 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q3140268) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q3140268",
+          "label": "Honoré de Buzançais",
+          "description": "",
+          "names": [
+            "Honoratus de Busentiaco",
+            "Honoré de Buzançais"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "1250",
+          "feast": [
+            "Q2238"
+          ],
+          "signals": [
+            "P841",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q454445"
+          ],
+          "death_place": [
+            "Q1344052"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q1344052",
+              "label": "Thénezay",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Thénezay"
+            ],
+            "birth_place": [
+              "Buzançais"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -25980,37 +26132,6 @@
           "role": "death",
           "label": "Thénezay",
           "qid": "Q1344052"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0109-iosephus-pawlowski-et-casimirus-grelewskus|Casimirus Grelewskus",
-      "eulogy": "mr:0109-iosephus-pawlowski-et-casimirus-grelewskus",
-      "day": "01-09",
-      "typology": "dies_natalis",
-      "subject": "Beati Iosephus Pawlowski et Casimirus Grelewskus",
-      "name": "Casimirus Grelewskus",
-      "where": "text",
-      "companions": [
-        "Iosephus Pawlowski"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Dachau concentration camp",
-          "qid": "Q151198"
-        },
-        {
-          "role": "exile",
-          "label": "Poland",
-          "qid": "Q36"
         }
       ]
     },
@@ -26082,6 +26203,59 @@
             ],
             "birth_place": [
               "Proszowice"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q2208870",
+          "label": "Stefan Grelewski",
+          "description": "Polish presbyter (1898-1941)",
+          "names": [
+            "Stefan Grelewski"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1898-07-03",
+          "died": "1941-05-09",
+          "feast": [
+            "Q2619"
+          ],
+          "signals": [
+            "P841",
+            "P8080"
+          ],
+          "birth_place": [
+            "Q2500949"
+          ],
+          "death_place": [
+            "Q7077",
+            "Q151198"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P3373",
+          "evidence": [
+            "human",
+            "status",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q151198",
+              "label": "Dachau concentration camp",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Dachau",
+              "Dachau concentration camp"
+            ],
+            "birth_place": [
+              "Dwikozy"
             ]
           }
         }
@@ -29244,30 +29418,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0110-maria-a-doloribus-rodriguez-sopena|Maria a Doloribus Rodriguez Sopena",
-      "eulogy": "mr:0110-maria-a-doloribus-rodriguez-sopena",
-      "day": "01-10",
-      "typology": "dies_natalis",
-      "subject": "Beata Maria a Doloribus Rodriguez Sopena",
-      "name": "Maria a Doloribus Rodriguez Sopena",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Madrid",
-          "qid": "Q2807"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0110-miltiades|Miltiades",
       "eulogy": "mr:0110-miltiades",
       "day": "01-10",
@@ -31379,30 +31529,6 @@
           "role": "death",
           "label": "Bellegra",
           "qid": "Q241780"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0111-franciscus-rogaczewski|Franciscus Rogaczewski",
-      "eulogy": "mr:0111-franciscus-rogaczewski",
-      "day": "01-11",
-      "typology": "dies_natalis",
-      "subject": "Beatus Franciscus Rogaczewski",
-      "name": "Franciscus Rogaczewski",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Gdańsk",
-          "qid": "Q1792"
         }
       ]
     },
@@ -35203,30 +35329,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0112-martinus-de-sancta-cruce|Martinus de Sancta Cruce",
-      "eulogy": "mr:0112-martinus-de-sancta-cruce",
-      "day": "01-12",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Martinus de Sancta Cruce",
-      "name": "Martinus de Sancta Cruce",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "León",
-          "qid": "Q15699"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0112-nicolaus-bunkerd-kitbamrung|Nicolaus Bunkerd Kitbamrung",
       "eulogy": "mr:0112-nicolaus-bunkerd-kitbamrung",
       "day": "01-12",
@@ -35294,30 +35396,6 @@
           "role": "death",
           "label": "Sam Phran",
           "qid": "Q476603"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0112-petrus-franciscus-jamet|Petrus Franciscus Jamet",
-      "eulogy": "mr:0112-petrus-franciscus-jamet",
-      "day": "01-12",
-      "typology": "dies_natalis",
-      "subject": "Beatus Petrus Franciscus Jamet",
-      "name": "Petrus Franciscus Jamet",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Caen",
-          "qid": "Q41185"
         }
       ]
     },
@@ -44642,9 +44720,43 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886869) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q141886869",
+          "label": "Tarsicia of Rodez",
+          "description": "virgin and martyr of the Rouergue",
+          "names": [
+            "Tarsicia",
+            "Tarsicia di Rodez",
+            "Tarsicia of Rodez"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2260"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -46496,35 +46608,6 @@
           "role": "death",
           "label": "Bagno di Romagna",
           "qid": "Q99933"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0116-leobatius|Leobatius",
-      "eulogy": "mr:0116-leobatius",
-      "day": "01-16",
-      "typology": "commemoratio",
-      "subject": "Sanctus Leobatius",
-      "name": "Leobatius",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "cult",
-          "label": "Tours",
-          "qid": "Q288"
-        },
-        {
-          "role": "religious_life",
-          "label": "Sennevières",
-          "qid": "Q1136323"
         }
       ]
     },
@@ -50631,87 +50714,6 @@
           "role": "death",
           "label": "İznik",
           "qid": "Q217125"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0118-felicitas-pricet-et-socii|Carola Lucas",
-      "eulogy": "mr:0118-felicitas-pricet-et-socii",
-      "day": "01-18",
-      "typology": "dies_natalis",
-      "subject": "Beatae Felicitas Pricet et socii",
-      "name": "Carola Lucas",
-      "where": "text",
-      "companions": [
-        "Felicitas Pricet",
-        "Monica Pichery"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0118-felicitas-pricet-et-socii|Felicitas Pricet",
-      "eulogy": "mr:0118-felicitas-pricet-et-socii",
-      "day": "01-18",
-      "typology": "dies_natalis",
-      "subject": "Beatae Felicitas Pricet et socii",
-      "name": "Felicitas Pricet",
-      "where": "text",
-      "companions": [
-        "Monica Pichery",
-        "Carola Lucas"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0118-felicitas-pricet-et-socii|Monica Pichery",
-      "eulogy": "mr:0118-felicitas-pricet-et-socii",
-      "day": "01-18",
-      "typology": "dies_natalis",
-      "subject": "Beatae Felicitas Pricet et socii",
-      "name": "Monica Pichery",
-      "where": "text",
-      "companions": [
-        "Felicitas Pricet",
-        "Carola Lucas"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
         }
       ]
     },
@@ -60248,40 +60250,64 @@
         "Nicolaus Wheeler"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q59625) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "London",
-          "qid": "Q84"
-        },
-        {
-          "role": "death",
-          "label": "Tyburn",
-          "qid": "Q1362341"
+          "wikidata": "Q59625",
+          "label": "Edward Stransham",
+          "description": "English beatified person",
+          "names": [
+            "Eduardus Stransham",
+            "Edward Stransham"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1554",
+          "died": "1586",
+          "feast": [
+            "Q2273"
+          ],
+          "signals": [
+            "P841",
+            "P8080",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q34217"
+          ],
+          "death_place": [
+            "Q1362341"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q1362341",
+              "label": "Tyburn",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Tyburn"
+            ],
+            "birth_place": [
+              "Oxford"
+            ]
+          }
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0121-eduardus-stransham-et-nicolaus-wheeler|Nicolaus Wheeler",
-      "eulogy": "mr:0121-eduardus-stransham-et-nicolaus-wheeler",
-      "day": "01-21",
-      "typology": "dies_natalis",
-      "subject": "Beati Eduardus Stransham et Nicolaus Wheeler",
-      "name": "Nicolaus Wheeler",
-      "where": "text",
-      "companions": [
-        "Eduardus Stransham"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -64833,203 +64859,6 @@
           }
         },
         {
-          "wikidata": "Q116151792",
-          "label": "Dominicus",
-          "description": "",
-          "names": [
-            "Dominicus",
-            "a Nativitate Beatae Mariae Virginis Dominicus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q1237697",
-          "label": "Dominicus",
-          "description": "",
-          "names": [
-            "Dominicus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0900",
-          "died": "0900",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q131091404",
-          "label": "Dominicus",
-          "description": "plantation owner",
-          "names": [
-            "Dominicus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q3712952",
-          "label": "Domenico Cavalca",
-          "description": "Italian writer and translator",
-          "names": [
-            "Domenico",
-            "Domenico Cavalca",
-            "Domenico Cavalcha",
-            "Domenico Chalvacha",
-            "Domenico Chavalcha",
-            "Domenico da Pisa",
-            "Dominico",
-            "Dominicus",
-            "Dominicus Cavalca",
-            "Dominique Cavalca"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1270",
-          "died": "1342",
-          "feast": [],
-          "birth_place": [
-            "Q103297"
-          ],
-          "death_place": [
-            "Q13375"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "death_place": [
-              "Pisa"
-            ],
-            "birth_place": [
-              "Vicopisano"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q41569235",
-          "label": "Dominicus",
-          "description": "author (13th century)",
-          "names": [
-            "Dominicus"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1201",
-          "died": "1300",
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
-          "wikidata": "Q908435",
-          "label": "Domonkos I, Archbishop of Esztergom",
-          "description": "archbishop of the Roman Catholic Church",
-          "names": [
-            "Dominicus",
-            "Domonkos I, Archbishop of Esztergom"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "0955",
-          "died": "1002",
-          "feast": [],
-          "birth_place": [
-            "Q838931"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": [],
-          "place_labels": {
-            "birth_place": [
-              "Kingdom of Italy"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q105139591",
-          "label": "Dominicus",
-          "description": "family name",
-          "names": [
-            "Dominicus"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "name"
-          ],
-          "places": [],
-          "source": "search",
-          "signals": []
-        },
-        {
           "wikidata": "Q1238073",
           "label": "Dominic of Sora",
           "description": "Italian preacher (0951-1031)",
@@ -65406,6 +65235,317 @@
               "Buti"
             ]
           }
+        },
+        {
+          "wikidata": "Q740904",
+          "label": "Dominic Barberi",
+          "description": "Italian theologian (1792–1849)",
+          "names": [
+            "Domenico Barberi",
+            "Domenico della Madre di Dio",
+            "Domingo de la Madre de Dios",
+            "Dominic Barberi"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1792-06-22",
+          "died": "1849-08-27",
+          "feast": [
+            "Q2822"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q13395"
+          ],
+          "death_place": [
+            "Q161491"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Reading"
+            ],
+            "birth_place": [
+              "Viterbo"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q809485",
+          "label": "Bartolo Longo",
+          "description": "beatified Italian Catholic (1841-1926)",
+          "names": [
+            "Bartholomaeus Longo",
+            "Bartolo Longo"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287",
+            "Q3464126"
+          ],
+          "born": "1841-02-10",
+          "died": "1926-10-05",
+          "feast": [
+            "Q2930"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q51867"
+          ],
+          "death_place": [
+            "Q36471"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Pompei"
+            ],
+            "birth_place": [
+              "Latiano"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q9438",
+          "label": "Thomas Aquinas",
+          "description": "Italian Dominican friar, philosopher, Catholic priest, and Doctor of the Church (1225–1274)",
+          "names": [
+            "Angelic Doctor",
+            "Aquinas",
+            "Doctor Angelicus",
+            "Dumb Ox",
+            "Saint Thomas",
+            "Saint Thomas Aquinas",
+            "San Tommaso d'Aquino",
+            "St Thomas Aquinas",
+            "St. Thomas Aquinas",
+            "Thomas Aquinas",
+            "Thomas ab Aquino",
+            "Thomas de Aquino",
+            "Thomas of Aquino",
+            "Tommaso D'Aquino",
+            "Tommaso d'Aquino",
+            "Tommaso di Aquino"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": "1225",
+          "died": "1274-03-07",
+          "feast": [
+            "Q2285",
+            "Q2394"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q106766784"
+          ],
+          "death_place": [
+            "Q1775258"
+          ],
+          "burial_place": [
+            "Q96743264"
+          ],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Fossanova Abbey"
+            ],
+            "burial_place": [
+              "Church of the Jacobins"
+            ],
+            "birth_place": [
+              "castle of the counts of Aquino"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q1237172",
+          "label": "Domenico Ginnasi",
+          "description": "Italian cardinal",
+          "names": [
+            "Cardinal Domenico Ginnasi",
+            "Domenico Ginnasi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1550-06-19",
+          "died": "1639-03-12",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q52970"
+          ],
+          "death_place": [
+            "Q220"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Rome"
+            ],
+            "birth_place": [
+              "Castel Bolognese"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q2579845",
+          "label": "Domenico Consolini",
+          "description": "Italian Catholic bishop and cardinal (1806–1884)",
+          "names": [
+            "Domenico Antonio Luigi Pacifico Nicola Baldassare Consolini",
+            "Domenico Consolini"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1806-06-07",
+          "died": "1884-12-20",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q124925"
+          ],
+          "death_place": [
+            "Q220"
+          ],
+          "burial_place": [
+            "Q27426"
+          ],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Rome"
+            ],
+            "burial_place": [
+              "Campo Verano"
+            ],
+            "birth_place": [
+              "Senigallia"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q5290625",
+          "label": "Dominic Pozzoni",
+          "description": "Italian bishop (1861–1924)",
+          "names": [
+            "Domenico Pozzoni",
+            "Dominic Pozzoni"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1861-12-22",
+          "died": "1924-02-20",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q38",
+            "Q42749"
+          ],
+          "death_place": [
+            "Q1054923"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "British Hong Kong"
+            ],
+            "birth_place": [
+              "Italy",
+              "Paderno d'Adda"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q653145",
+          "label": "Domenico Lucciardi",
+          "description": "Italian cardinal (1796–1864)",
+          "names": [
+            "Domenico Cardinal Lucciardi",
+            "Domenico Lucciardi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1796-12-09",
+          "died": "1864-03-13",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q160628"
+          ],
+          "death_place": [
+            "Q124925"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "place",
+          "evidence": [
+            "human"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Senigallia"
+            ],
+            "birth_place": [
+              "Sarzana"
+            ]
+          }
         }
       ],
       "decision": null,
@@ -65425,32 +65565,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana|Franciscus Gil de Federich",
-      "eulogy": "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana",
-      "day": "01-22",
-      "typology": "dies_natalis",
-      "subject": "Sancti Franciscus Gil de Federich et Matthaeus Alonso de Leziniana",
-      "name": "Franciscus Gil de Federich",
-      "where": "text",
-      "companions": [
-        "Matthaeus Alonso de Leziniana"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Tonkin",
-          "qid": "Q622778"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana|Matthaeus Alonso de Leziniana",
       "eulogy": "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana",
       "day": "01-22",
@@ -65462,9 +65576,58 @@
         "Franciscus Gil de Federich"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q11771379) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q11771379",
+          "label": "Mateusz Alonso de Leciniana",
+          "description": "",
+          "names": [
+            "Mateusz Alonso de Leciniana",
+            "Matthaeus Alonso de Leziniana"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1702-11-26",
+          "died": "1745",
+          "feast": [
+            "Q3022",
+            "Q2275"
+          ],
+          "signals": [
+            "P841",
+            "P8080",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q1640915"
+          ],
+          "death_place": [
+            "Q1858"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hanoi"
+            ],
+            "birth_place": [
+              "Nava del Rey"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -69889,126 +70052,49 @@
         "Michael Wawrzyszuk"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q1835805) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
+          "wikidata": "Q1835805",
+          "label": "Bartolomeüs Osypiuk",
+          "description": "",
+          "names": [
+            "Bartholomæus Osypiuk",
+            "Bartolomeüs Osypiuk"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1844",
+          "died": null,
+          "feast": [
+            "Q2278"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q2347637"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Bohukały"
+            ]
+          }
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Constantinus Bojko",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Constantinus Bojko",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Philippus Kiryluk",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Constantinus Łubaszuk",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Constantinus Łubaszuk",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Philippus Kiryluk",
-        "Constantinus Bojko",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Daniel Karmasz",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Daniel Karmasz",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Philippus Kiryluk",
-        "Constantinus Bojko",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -70045,9 +70131,42 @@
         "Michael Wawrzyszuk"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q12073898) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q12073898",
+          "label": "Ignacy Frańczuk",
+          "description": "",
+          "names": [
+            "Ignacy Frańczuk",
+            "Ignatius Franczuk"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1824",
+          "died": null,
+          "feast": [
+            "Q2278"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -70084,48 +70203,44 @@
         "Michael Wawrzyszuk"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886861) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
+          "wikidata": "Q141886861",
+          "label": "Jan Andrzejuk",
+          "description": "one of the Pratulin martyrs, beatified in 1996",
+          "names": [
+            "Giovanni Andrzejuk",
+            "Ioannes Andrzejuk",
+            "Jan Andrzejuk",
+            "John Andrzejuk"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": "1874",
+          "feast": [
+            "Q2278"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Lucas Bojko",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Lucas Bojko",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Philippus Kiryluk",
-        "Constantinus Bojko",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -70162,48 +70277,43 @@
         "Michael Wawrzyszuk"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886862) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
+          "wikidata": "Q141886862",
+          "label": "Maksym Hawryluk",
+          "description": "one of the Pratulin martyrs, beatified in 1996",
+          "names": [
+            "Maksym Hawryluk",
+            "Massimo Hawryluk",
+            "Maximus Hawryluk"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": "1874",
+          "feast": [
+            "Q2278"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Michael Nicephorus Hryciuk",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Michael Nicephorus Hryciuk",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Philippus Kiryluk",
-        "Constantinus Bojko",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -70240,87 +70350,43 @@
         "Maximus Hawryluk"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886864) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
+          "wikidata": "Q141886864",
+          "label": "Michał Wawrzyszuk",
+          "description": "one of the Pratulin martyrs, beatified in 1996",
+          "names": [
+            "Michael Wawrzyszuk",
+            "Michał Wawrzyszuk",
+            "Michele Wawrzyszuk"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": "1874-01-25",
+          "feast": [
+            "Q2278"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Onuphrius Wasiluk",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Onuphrius Wasiluk",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Philippus Kiryluk",
-        "Constantinus Bojko",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Pratulin",
-          "qid": "Q3270886"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0124-vincentius-lewoniuk-et-socii|Philippus Kiryluk",
-      "eulogy": "mr:0124-vincentius-lewoniuk-et-socii",
-      "day": "01-24",
-      "typology": "dies_natalis",
-      "subject": "Beati Vincentius Lewoniuk et socii",
-      "name": "Philippus Kiryluk",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Vincentius Lewoniuk",
-        "Daniel Karmasz",
-        "Lucas Bojko",
-        "Bartholomæus Osypiuk",
-        "Onuphrius Wasiluk",
-        "Constantinus Bojko",
-        "Michael Nicephorus Hryciuk",
-        "Ignatius Franczuk",
-        "Ioannes Andrzejuk",
-        "Constantinus Łubaszuk",
-        "Maximus Hawryluk",
-        "Michael Wawrzyszuk"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -84983,30 +85049,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0130-sigismundus-pisarski|Sigismundus Pisarski",
-      "eulogy": "mr:0130-sigismundus-pisarski",
-      "day": "01-30",
-      "typology": "dies_natalis",
-      "subject": "Beatus Sigismundus Pisarski",
-      "name": "Sigismundus Pisarski",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Gdeszyn",
-          "qid": "Q5529390"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0130-theophilus-iuvenis|Theophilus Iuvenis",
       "eulogy": "mr:0130-theophilus-iuvenis",
       "day": "01-30",
@@ -85016,9 +85058,44 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886872) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q141886872",
+          "label": "Theophilus the Younger",
+          "description": "Byzantine fleet commander and martyr beheaded under Harun",
+          "names": [
+            "Teofilo il Giovane",
+            "Theophilus Iuvenis",
+            "Theophilus cognomento Iuvenis",
+            "Theophilus the Younger"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2287"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -91806,30 +91883,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0201-andreas-de-comitibus-signiae|Andreas de Comitibus Signiae",
-      "eulogy": "mr:0201-andreas-de-comitibus-signiae",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatus Andreas de Comitibus Signiae",
-      "name": "Andreas de Comitibus Signiae",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Piglio",
-          "qid": "Q117128"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0201-brigida|Brigida",
       "eulogy": "mr:0201-brigida",
       "day": "02-01",
@@ -92367,42 +92420,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0201-conorus-o-devany-et-patricius-o-lougham|Patricius O Lougham",
-      "eulogy": "mr:0201-conorus-o-devany-et-patricius-o-lougham",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beati Conorus O Devany et Patricius O Lougham",
-      "name": "Patricius O Lougham",
-      "where": "text",
-      "companions": [
-        "Conorus O Devany"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Dublin",
-          "qid": "Q1761"
-        },
-        {
-          "role": "ministry",
-          "label": "Connor",
-          "qid": "Q3687078"
-        },
-        {
-          "role": "ministry",
-          "label": "County Down",
-          "qid": "Q190684"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0201-ioannes|Ioannes",
       "eulogy": "mr:0201-ioannes",
       "day": "02-01",
@@ -92894,136 +92911,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Anna Francisca de Villeneuve",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Anna Francisca de Villeneuve",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Anna Hamard",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Anna Hamard",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0201-maria-anna-vaillot-et-socii|Carola Davy",
       "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
       "day": "02-01",
@@ -93074,9 +92961,42 @@
         "Rosa Quenion"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q63092723) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q63092723",
+          "label": "Charlotte Davy",
+          "description": "one of the Martyrs of Anjou during the French Revolution",
+          "names": [
+            "Carola Davy",
+            "Charlotte Davy"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1760",
+          "died": null,
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -93206,201 +93126,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Francisca Bellanger",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Francisca Bellanger",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Francisca Bonneau",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Francisca Bonneau",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Francisca Michau",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Francisca Michau",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0201-maria-anna-vaillot-et-socii|Francisca Pagis",
       "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
       "day": "02-01",
@@ -93479,526 +93204,6 @@
           "places": []
         }
       ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Iacobina Monnier",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Iacobina Monnier",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Ioanna Bourigault",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Ioanna Bourigault",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Ioanna Fouchard",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Ioanna Fouchard",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Ioanna Gruget",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Ioanna Gruget",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Ludovica Amata Déan de Luigné",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Ludovica Amata Déan de Luigné",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Ludovica Rallier de la Tertinière",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Ludovica Rallier de la Tertinière",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Magdalena Blond",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Magdalena Blond",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Magdalena Perrotin",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0201-maria-anna-vaillot-et-socii|Magdalena Perrotin",
-      "eulogy": "mr:0201-maria-anna-vaillot-et-socii",
-      "day": "02-01",
-      "typology": "dies_natalis",
-      "subject": "Beatae Maria Anna Vaillot et socii",
-      "name": "Magdalena Perrotin",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Maria Anna Vaillot",
-        "Othilia Baumgarten",
-        "Ioanna Gruget",
-        "Ludovica Rallier de la Tertinière",
-        "Maria Anna Pichery",
-        "Simona Chauvigné",
-        "Francisca Pagis",
-        "Ioanna Fouchard",
-        "Margarita Rivière",
-        "Maria Cassin",
-        "Maria Fausseuse",
-        "Maria Galard",
-        "Maria Gasnier",
-        "Maria Ioanna Chauvigné",
-        "Maria Lenée",
-        "Maria Leroy Brevet",
-        "Maria Rouault",
-        "Petrina Phélippeaux",
-        "Renata Cailleau",
-        "Renata Martin",
-        "Victoria Bauduceau",
-        "Anna Francisca de Villeneuve",
-        "Anna Hamard",
-        "Carola Davy",
-        "Catharina Cottanceau",
-        "Francisca Bellanger",
-        "Francisca Bonneau",
-        "Francisca Michau",
-        "Iacobina Monnier",
-        "Ioanna Bourigault",
-        "Ludovica Amata Déan de Luigné",
-        "Magdalena Blond",
-        "Maria Leroy",
-        "Petrina Besson",
-        "Petrina Ledoyen",
-        "Petrina Grille",
-        "Renata Valin",
-        "Rosa Quenion"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -94240,9 +93445,254 @@
         "Rosa Quenion"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q115451001) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q115451001",
+          "label": "Marie Anne Pichery",
+          "description": "",
+          "names": [
+            "Maria Anna Pichery",
+            "Marie Anne Pichery"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1754-07-30",
+          "died": "1794-01-24",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q264416"
+          ],
+          "death_place": [
+            "Q38380"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Angers"
+            ],
+            "birth_place": [
+              "Chalonnes-sur-Loire"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886840",
+          "label": "Anne-Françoise de Villeneuve",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Anna Francesca de Villeneuve",
+            "Anna Francisca de Villeneuve",
+            "Anne-Françoise de Villeneuve"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1741-09-11",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q767553"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Seiches-sur-le-Loir"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886841",
+          "label": "Anne Hamard",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Anna Hamard",
+            "Anne Hamard"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1742",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q935444"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Saint-Clément-de-la-Place"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q115450922",
+          "label": "Monique Pichery",
+          "description": "",
+          "names": [
+            "Monica Pichery",
+            "Monique Pichery"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1762-04-04",
+          "died": "1794-01-18",
+          "feast": [
+            "Q2265"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q264416"
+          ],
+          "death_place": [
+            "Q38380"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Angers"
+            ],
+            "birth_place": [
+              "Chalonnes-sur-Loire"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886857",
+          "label": "Marie-Anne Hacher du Bois",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Maria Anna Hacher du Bois",
+            "Marianna Hacher du Bois",
+            "Marie-Anne Hacher du Bois"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1765-04-03",
+          "died": "1794-02-10",
+          "feast": [
+            "Q2325"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q1388597"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Jallais"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -94355,6 +93805,206 @@
             ],
             "birth_place": [
               "Fontainebleau"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886840",
+          "label": "Anne-Françoise de Villeneuve",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Anna Francesca de Villeneuve",
+            "Anna Francisca de Villeneuve",
+            "Anne-Françoise de Villeneuve"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1741-09-11",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q767553"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Seiches-sur-le-Loir"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886841",
+          "label": "Anne Hamard",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Anna Hamard",
+            "Anne Hamard"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1742",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q935444"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Saint-Clément-de-la-Place"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q115451001",
+          "label": "Marie Anne Pichery",
+          "description": "",
+          "names": [
+            "Maria Anna Pichery",
+            "Marie Anne Pichery"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1754-07-30",
+          "died": "1794-01-24",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q264416"
+          ],
+          "death_place": [
+            "Q38380"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Angers"
+            ],
+            "birth_place": [
+              "Chalonnes-sur-Loire"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886857",
+          "label": "Marie-Anne Hacher du Bois",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Maria Anna Hacher du Bois",
+            "Marianna Hacher du Bois",
+            "Marie-Anne Hacher du Bois"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1765-04-03",
+          "died": "1794-02-10",
+          "feast": [
+            "Q2325"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q1388597"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Jallais"
             ]
           }
         }
@@ -95188,6 +94838,212 @@
           "place_labels": {
             "death_place": [
               "Avrillé"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141883319",
+          "label": "Simone Chauvigné",
+          "description": "lay martyr of Angers, widow Charbonneau",
+          "names": [
+            "Simona Chauvigné",
+            "Simone Chauvigné"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1728-03-12",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886846",
+          "label": "Jeanne Bourigault",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Giovanna Bourigault",
+            "Ioanna Bourigault",
+            "Jeanne Bourigault"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1757-10-24",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q1103074"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Chaudefonds-sur-Layon"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886847",
+          "label": "Jeanne Fouchard",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Giovanna Fouchard",
+            "Ioanna Fouchard",
+            "Jeanne Fouchard"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1747-09-10",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q264416"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Chalonnes-sur-Loire"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141886848",
+          "label": "Jeanne Gruget",
+          "description": "French lay martyr of Angers, shot at Avrillé in 1794",
+          "names": [
+            "Giovanna Gruget",
+            "Ioanna Gruget",
+            "Jeanne Gruget"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1745",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q669021"
+          ],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ],
+            "birth_place": [
+              "Mauléon"
             ]
           }
         }
@@ -97396,6 +97252,54 @@
             "human",
             "status",
             "name",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q791403",
+              "label": "Avrillé",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Avrillé"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141883157",
+          "label": "Marie-Jeanne Chauvigné",
+          "description": "lay martyr of Angers, wife of Rorteau",
+          "names": [
+            "Maria Giovanna Chauvigné",
+            "Maria Ioanna Chauvigné",
+            "Marie-Jeanne Chauvigné"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1755-02-21",
+          "died": "1794-02-01",
+          "feast": [
+            "Q2312"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q791403"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
             "death",
             "place"
           ],
@@ -103892,9 +103796,62 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q61732205) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q61732205",
+          "label": "Aventinus of Chartres",
+          "description": "French bishop",
+          "names": [
+            "Aventino",
+            "Aventino di Chartres",
+            "Aventinus Castelloduni",
+            "Aventinus of Chartres"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": "0533",
+          "feast": [
+            "Q2318"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q181886"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q181886",
+              "label": "Châteaudun",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Châteaudun"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -107347,30 +107304,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0205-francisca-meziere|Francisca Meziere",
-      "eulogy": "mr:0205-francisca-meziere",
-      "day": "02-05",
-      "typology": "dies_natalis",
-      "subject": "Beata Francisca Meziere",
-      "name": "Francisca Meziere",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Laval",
-          "qid": "Q184154"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0205-iesu-mendez|Iesu Mendez",
       "eulogy": "mr:0205-iesu-mendez",
       "day": "02-05",
@@ -108804,9 +108737,42 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q137577031) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q137577031",
+          "label": "Antolianus",
+          "description": "",
+          "names": [
+            "Antoliano",
+            "Antolianus"
+          ],
+          "human": true,
+          "statuses": [
+            "Q18344276"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2320"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -118353,9 +118319,77 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q2497353) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q2497353",
+          "label": "Luke Thaumaturgus",
+          "description": "10th-century Byzantine saint",
+          "names": [
+            "Hosios Loukas",
+            "Loukas of Steiris",
+            "Luca di Steiris",
+            "Lucas Iunior",
+            "Luke Thaumaturgus",
+            "Luke of Hellas",
+            "Luke of Steiris",
+            "Luke the Wonder-worker",
+            "Luke the Younger"
+          ],
+          "human": true,
+          "statuses": [
+            "Q12774503",
+            "Q1349880"
+          ],
+          "born": "0890",
+          "died": "0951",
+          "feast": [
+            "Q2322"
+          ],
+          "signals": [
+            "P841",
+            "P8080",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q206954"
+          ],
+          "death_place": [
+            "Q844841"
+          ],
+          "burial_place": [
+            "Q844841"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name",
+            "place"
+          ],
+          "source": "search",
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q844841",
+              "label": "Hosios Loukas",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Hosios Loukas"
+            ],
+            "burial_place": [
+              "Hosios Loukas"
+            ],
+            "birth_place": [
+              "Kastoria"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -124414,9 +124448,67 @@
         "Porphyrius"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q276148) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q276148",
+          "label": "Charalambos",
+          "description": "Christian bishop and martyr (died 202)",
+          "names": [
+            "Caralampo",
+            "Chalarampus",
+            "Charalambos",
+            "Charalampias of Magnesia",
+            "Charalampos",
+            "Charalampus",
+            "Haralabos",
+            "Haralambos",
+            "Haralampos",
+            "Haralampus",
+            "Saint Charalambos",
+            "san Caralampo"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0087",
+          "died": "0202",
+          "feast": [
+            "Q5439723",
+            "Q2325"
+          ],
+          "signals": [
+            "P841",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q1432674"
+          ],
+          "death_place": [
+            "Q579468"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Antioch of Pisidia"
+            ],
+            "birth_place": [
+              "Magnesia on the Maeander"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -125918,96 +126010,6 @@
           "role": "mention",
           "label": "Magdeburg",
           "qid": "Q1733"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0210-petrus-fremond-et-socii|Ludovica Bessay de la Voüte",
-      "eulogy": "mr:0210-petrus-fremond-et-socii",
-      "day": "02-10",
-      "typology": "dies_natalis",
-      "subject": "Beati Petrus Fremond et socii",
-      "name": "Ludovica Bessay de la Voüte",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Petrus Fremond",
-        "Maria Anna Hacher du Bois",
-        "Ludovica Poirier"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0210-petrus-fremond-et-socii|Ludovica Poirier",
-      "eulogy": "mr:0210-petrus-fremond-et-socii",
-      "day": "02-10",
-      "typology": "dies_natalis",
-      "subject": "Beati Petrus Fremond et socii",
-      "name": "Ludovica Poirier",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Petrus Fremond",
-        "Ludovica Bessay de la Voüte",
-        "Maria Anna Hacher du Bois"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0210-petrus-fremond-et-socii|Maria Anna Hacher du Bois",
-      "eulogy": "mr:0210-petrus-fremond-et-socii",
-      "day": "02-10",
-      "typology": "dies_natalis",
-      "subject": "Beati Petrus Fremond et socii",
-      "name": "Maria Anna Hacher du Bois",
-      "where": {
-        "footnote": 1
-      },
-      "companions": [
-        "Petrus Fremond",
-        "Ludovica Bessay de la Voüte",
-        "Ludovica Poirier"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Avrillé",
-          "qid": "Q791403"
         }
       ]
     },
@@ -127847,9 +127849,45 @@
       "where": "text",
       "companions": [],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q141886874) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q141886874",
+          "label": "Tobias Borrás Romeu",
+          "description": "Spanish Hospitaller brother of Saint John of God, martyr",
+          "names": [
+            "Francisco Borrás Romeu",
+            "Franciscus Borras Romeu",
+            "Tobia Borras Romeu",
+            "Tobias Borras Romeu",
+            "Tobias Borrás Romeu"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2335"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -127873,7 +127911,42 @@
       "failed": [
         "no candidate found"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q21532387",
+          "label": "Our Lady of Lourdes",
+          "description": "Title of Mary, mother of Jesus, related to her alleged apparitions in Lourdes",
+          "names": [
+            "B.M.V. a Lapurda",
+            "Madonna di Lourdes",
+            "Nostra Signora di Lourdes",
+            "Our Lady of Lourdes",
+            "Our Lady of the Immaculate Conception"
+          ],
+          "human": false,
+          "statuses": [
+            "Q1509831"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2335"
+          ],
+          "signals": [
+            "P841",
+            "P10799"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "curated",
+          "evidence": [
+            "status"
+          ],
+          "places": []
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -148184,40 +148257,42 @@
         "Thomas Hemmerford"
       ],
       "failed": [
-        "no candidate found"
+        "death: the best candidate (Q131751017) fails it"
       ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
+      "candidates": [
         {
-          "role": "death",
-          "label": "London",
-          "qid": "Q84"
-        },
-        {
-          "role": "death",
-          "label": "Tyburn",
-          "qid": "Q1362341"
+          "wikidata": "Q131751017",
+          "label": "John Nutter",
+          "description": "",
+          "names": [
+            "Ioannes Nutter",
+            "John Nutter"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2336"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "source": "search",
+          "places": []
         }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0212-thomas-hemmerford-et-socii|Thomas Hemmerford",
-      "eulogy": "mr:0212-thomas-hemmerford-et-socii",
-      "day": "02-12",
-      "typology": "dies_natalis",
-      "subject": "Beati Thomas Hemmerford et socii",
-      "name": "Thomas Hemmerford",
-      "where": "text",
-      "companions": [
-        "Ioannes Nutter"
       ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
       "decision": null,
       "edited": null,
       "places": [
@@ -150368,30 +150443,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0213-paulus-le-van-loc|Paulus Le Van Loc",
-      "eulogy": "mr:0213-paulus-le-van-loc",
-      "day": "02-13",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Paulus Le Van Loc",
-      "name": "Paulus Le Van Loc",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Ho Chi Minh City",
-          "qid": "Q1854"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0213-paulus-liu-hanzuo|Paulus Liu Hanzuo",
       "eulogy": "mr:0213-paulus-liu-hanzuo",
       "day": "02-13",
@@ -150535,30 +150586,6 @@
           "role": "death",
           "label": "Lyon",
           "qid": "Q456"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0213-stephanus-reate|Stephanus Reate",
-      "eulogy": "mr:0213-stephanus-reate",
-      "day": "02-13",
-      "typology": "commemoratio",
-      "subject": "Sanctus Stephanus Reate",
-      "name": "Stephanus Reate",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "cult",
-          "label": "Rieti",
-          "qid": "Q13396"
         }
       ]
     },
@@ -152624,30 +152651,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0214-vincentius-vilar-david|Vincentius Vilar David",
-      "eulogy": "mr:0214-vincentius-vilar-david",
-      "day": "02-14",
-      "typology": "dies_natalis",
-      "subject": "Beatus Vincentius Vilar David",
-      "name": "Vincentius Vilar David",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Valencia",
-          "qid": "Q8818"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0214-vitalis|Vitalis",
       "eulogy": "mr:0214-vitalis",
       "day": "02-14",
@@ -153588,30 +153591,6 @@
           "role": "death",
           "label": "Paray-le-Monial",
           "qid": "Q654255"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0215-decorosus|Decorosus",
-      "eulogy": "mr:0215-decorosus",
-      "day": "02-15",
-      "typology": "dies_natalis",
-      "subject": "Sanctus Decorosus",
-      "name": "Decorosus",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "ancient Capua",
-          "qid": "Q3136685"
         }
       ]
     },
@@ -161710,30 +161689,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0218-georgius-kaszyra|Georgius Kaszyra",
-      "eulogy": "mr:0218-georgius-kaszyra",
-      "day": "02-18",
-      "typology": "dies_natalis",
-      "subject": "Beatus Georgius Kaszyra",
-      "name": "Georgius Kaszyra",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Rosica",
-          "qid": "Q3442846"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0218-gulielmus-harrington|Gulielmus Harrington",
       "eulogy": "mr:0218-gulielmus-harrington",
       "day": "02-18",
@@ -164469,35 +164424,6 @@
           "role": "death",
           "label": "Vabres-l'Abbaye",
           "qid": "Q733117"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0219-iosephus-zaplata|Iosephus Zaplata",
-      "eulogy": "mr:0219-iosephus-zaplata",
-      "day": "02-19",
-      "typology": "dies_natalis",
-      "subject": "Beatus Iosephus Zaplata",
-      "name": "Iosephus Zaplata",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Dachau concentration camp",
-          "qid": "Q151198"
-        },
-        {
-          "role": "birth",
-          "label": "Poland",
-          "qid": "Q36"
         }
       ]
     },
@@ -175665,33 +175591,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0226-thomasina-ortiz-real|Thomasina Ortiz Real",
-      "eulogy": "mr:0226-thomasina-ortiz-real",
-      "day": "02-26",
-      "typology": "dies_natalis",
-      "subject": "Beata Thomasina Ortiz Real",
-      "name": "Thomasina Ortiz Real",
-      "also": [
-        "Pietas a Cruce Ortiz Real"
-      ],
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Alcantarilla",
-          "qid": "Q954542"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0226-victor|Victor",
       "eulogy": "mr:0226-victor",
       "day": "02-26",
@@ -176926,57 +176825,6 @@
           "role": "death",
           "label": "Alexandria",
           "qid": "Q87"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0227-carolina-brader|Carolina Brader",
-      "eulogy": "mr:0227-carolina-brader",
-      "day": "02-27",
-      "typology": "dies_natalis",
-      "subject": "Beata Carolina Brader",
-      "name": "Carolina Brader",
-      "also": [
-        "Maria a Caritate Spiritus Sancti Brader"
-      ],
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Pasto",
-          "qid": "Q320015"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0227-francisca-anna-a-virgine-perdolenti|Francisca Anna a Virgine Perdolenti",
-      "eulogy": "mr:0227-francisca-anna-a-virgine-perdolenti",
-      "day": "02-27",
-      "typology": "dies_natalis",
-      "subject": "Beata Francisca Anna a Virgine Perdolenti",
-      "name": "Francisca Anna a Virgine Perdolenti",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Sencelles",
-          "qid": "Q987394"
         }
       ]
     },
@@ -179887,30 +179735,6 @@
           "role": "burial",
           "label": "Jura Mountains",
           "qid": "Q178611"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0228-timotheus-trojanowski|Timotheus Trojanowski",
-      "eulogy": "mr:0228-timotheus-trojanowski",
-      "day": "02-28",
-      "typology": "dies_natalis",
-      "subject": "Beatus Timotheus Trojanowski",
-      "name": "Timotheus Trojanowski",
-      "where": "text",
-      "companions": [],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Auschwitz",
-          "qid": "Q7341"
         }
       ]
     },
@@ -223299,7 +223123,7 @@
           ],
           "place_labels": {
             "death_place": [
-              "Cornovaglia"
+              "Cornwall"
             ],
             "birth_place": [
               "Ireland"

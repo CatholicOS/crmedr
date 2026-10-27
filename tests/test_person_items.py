@@ -689,6 +689,15 @@ class ExpandTest(unittest.TestCase):
         # the first stays (an accept means candidates[0]), and so does the decided pick
         self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q1", "Q9", "Q3", "Q4"])
 
+    def test_a_second_given_name_is_not_a_surname(self):
+        # Maria Anna Vaillot does not fit Anna Francisca de Villeneuve, a martyr of the same group.
+        client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
+        client.kin = {"Q2652595": [dict(cand("Q141886840", ["Anna Francisca de Villeneuve"]), source="companion:P361"),
+                                   dict(cand("Q118445257", ["Marie-Anne Vaillot"]), source="companion:P361")]}
+        op = self.op(name="Maria Anna Vaillot", candidates=[])
+        _, got = self.run_expand(op, client, record={"id": op["eulogy"], "name": op["name"], "kind": "person"})
+        self.assertEqual([c["wikidata"] for c in got["candidates"]], ["Q118445257"])
+
     def test_a_group_member_sharing_the_surname_fits(self):
         # Aloysius is Louis: the given names differ in the loaded labels, the surname does not.
         client = self.Client(by_qid={"Q2652595": cand("Q2652595", ["Renatus Lego"])})
