@@ -172,6 +172,52 @@ class RepeatedNamesTest(unittest.TestCase):
         self.assertEqual([(r["op"], r["where"], r["start"], r["name"], r.get("n")) for r in review],
                          [("add_mention", "text", text.rindex("Felícis"), "Felix", None)])
 
+    def test_a_person_named_again_by_the_first_name_alone_is_proposed_as_them(self):
+        # 1201: "Cum eo … sancti Radúlphus et Alexánder" are Sherwin and Briant once more.
+        text = "Londínii, sanctórum Edmúndi Campion et Radúlphi Sherwin. Cum eo passus est sanctus Radúlphus."
+        persons = [{"name": "Edmundus Campion", "where": "text"}, {"name": "Radulphus Sherwin", "where": "text"}]
+        ms, review, _ = mentions_of(text, persons=persons)
+        self.assertEqual([m["form"] for m in ms], ["Edmúndi Campion", "Radúlphi Sherwin"])
+        self.assertEqual([(r["op"], r["start"], r["form"], r["name"]) for r in review],
+                         [("add_mention", text.rindex("Radúlphus"), "Radúlphus", "Radulphus Sherwin")])
+        self.assertIn("matched again", review[0]["reasoning"])
+
+    def test_the_first_name_alone_opening_a_sentence_is_proposed(self):
+        text = "Commemorátio sanctórum Basilíi Magni et Gregórii Nazianzéni. Basilíus, epíscopus Cæsariénsis, óbiit."
+        persons = [{"name": "Basilius Magnus", "where": "text"}, {"name": "Gregorius Nazianzenus", "where": "text"}]
+        _, review, _ = mentions_of(text, persons=persons)
+        self.assertEqual([(r["form"], r["name"]) for r in review], [("Basilíus", "Basilius Magnus")])
+
+    def test_the_first_name_alone_in_a_name_not_the_persons_is_not_proposed(self):
+        # The Virgin in an institute's name; the founder in an order's or a rule's; a religious name.
+        for text in ("Romæ, beátæ Maríæ Dominicæ Mazzarello, quæ Institútum Filiárum Maríæ Auxiliatrícis fundávit.",
+                     "Romæ, beátæ Maríæ Dominicæ Mazzarello, quæ beátæ Maríæ Vírginis præséntiam expérta est.",
+                     "Romæ, beáti Ioánnis Grande, religiósi ex Ordine Sancti Ioánnis a Deo.",
+                     "Romæ, sancti Benedícti Biscop, qui sub Régula sancti Benedícti vixit.",
+                     "Romæ, beátæ Terésiæ Maríæ a Cruce, e Carmelítis a Sancta Terésia.",
+                     # another John by his own surname (1019)
+                     "Romæ, sancti Ioánnis de Brébeuf; qua die sanctus Ioánnes de la Lande occísus est."):
+            name = {"Mar": "Maria Dominica Mazzarello", "Ioá": "Ioannes Grande", "Ben": "Benedictus Biscop",
+                    "Ter": "Teresia Maria a Cruce"}[text.split(", ")[1].split()[1][:3]]
+            if "Brébeuf" in text:
+                name = "Ioannes de Brebeuf"
+            with self.subTest(text=text):
+                _, review, _ = mentions_of(text, persons=[{"name": name, "where": "text"}])
+                self.assertEqual(review, [])
+
+    def test_a_first_name_two_persons_share_is_not_proposed_alone(self):
+        text = "Londínii, sanctórum Ioánnis Speed et Ioánnis Larke. Ioánnes vero laicus erat."
+        persons = [{"name": "Ioannes Speed", "where": "text"}, {"name": "Ioannes Larke", "where": "text"}]
+        _, review, _ = mentions_of(text, persons=persons)
+        self.assertEqual(review, [])
+
+    def test_in_italian_the_first_word_of_the_form_it_was_found_under(self):
+        text = "A Londra, santi Edmondo Campion e Rodolfo Sherwin. Con lui patì san Rodolfo."
+        persons = [{"name": "Edmundus Campion", "where": "text", "forms": ["Edmondo Campion"]},
+                   {"name": "Radulphus Sherwin", "where": "text", "forms": ["Rodolfo Sherwin"]}]
+        _, review, _ = mentions_of(text, persons=persons, lang="it")
+        self.assertEqual([(r["form"], r["name"]) for r in review], [("Rodolfo", "Radulphus Sherwin")])
+
     def test_a_further_match_found_at_another_step_is_proposed_too(self):
         # The first match is verbatim, the second only by stem: still a further match of the name.
         text = "Romæ, sanctus Felix, mártyr; ídem Felícis memória."

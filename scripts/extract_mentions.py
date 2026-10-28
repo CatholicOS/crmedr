@@ -35,7 +35,7 @@ from collections import Counter
 from pathlib import Path
 
 from extract_typology import load_texts
-from gazetteer_text import lookup
+from gazetteer_text import fold, lookup
 from mentions_italian import ItalianNames, by_position, curated_forms, runs, surname_span
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
@@ -134,6 +134,40 @@ def role_of(item):
     return out
 
 
+# A saint's title before a name (Latin and Italian, folded), the particles that make a title part of a
+# religious name ("a Sancta Terésia"), the words that open an institution's name, whose saint is its
+# patron ("Ordine Sancti Ioánnis a Deo", "Régula sancti Benedícti", "Filiárum Maríæ"), and the words
+# after "Maria" that make her the Virgin ("Maríæ Vírginis", "Maria Ausiliatrice").
+SAINT_TITLES = {"sanctus", "sancta", "sancti", "sanctae", "sancto", "sanctum", "sanctam", "beatus", "beata",
+                "beati", "beatae", "beato", "beatum", "beatam", "san", "santo", "santa", "sant", "sant'"}
+NAME_PARTICLES = {"a", "ab", "de", "di", "da", "del", "della"}
+INSTITUTION_STEMS = ("ordin", "regul", "regol", "institut", "istitut", "congregat", "societ", "soror", "suor",
+                     "fili", "famil", "serv", "ancill", "ancell", "oblat", "carmel", "eremit", "religios", "missionar")
+VIRGIN_STEMS = ("virg", "verg", "immacul", "auxili", "ausili", "dolor", "addolor", "mercede", "merced")
+WORD = re.compile(r"[^\W\d_]+['’]?")
+FIRST_NAME_ALONE_REACH = 4  # the words before a first name alone looked at for an institution's
+
+
+def named_alone(src, span):
+    """A first name alone at `span` names the saint the eulogy is about: it opens a sentence or the
+    text, or follows a saint's title (not as part of a religious name: "a Sancta Terésia"), and is no
+    institution's patron, not the Virgin, and not another person's full name."""
+    before = [fold(w).replace("’", "'") for w in WORD.findall(src[:span[0]].split(".")[-1].split(";")[-1])]
+    after = WORD.findall(src[span[1]:])[:4]
+    if after and fold(after[0]).startswith(VIRGIN_STEMS):
+        return False
+    # Another person's own name: the first name, then a surname after particles ("Ioánnes de la Lande").
+    particles = NAME_PARTICLES | {"la", "le", "du"}
+    rest = after[next((i for i, w in enumerate(after) if fold(w) not in particles), len(after)):]
+    if after and fold(after[0]) in particles and rest and rest[0][:1].isupper():
+        return False
+    if any(w.startswith(INSTITUTION_STEMS) for w in before[-FIRST_NAME_ALONE_REACH:]):
+        return False
+    if before and before[-1] in SAINT_TITLES:
+        return not (len(before) > 1 and before[-2] in NAME_PARTICLES)
+    return not src[:span[0]].strip() or src[:span[0]].rstrip()[-1] in ".;:"
+
+
 def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid):
     """One eulogy's mentions in one edition (code-point offsets), what to review,
     and how each mention was found.
@@ -202,13 +236,24 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         last[group(p)] = max(last.get(group(p), 1), p.get("n", 1))
     # A name is decided when any of its persons is: its persons keep their n order among themselves.
     decided = {name_key(p["name"]) for p in persons if person_qid(person_key(p))}
-    def again(p, names):
+    def again(p, names, alone=()):
         """Further free matches of the person's `names` after the last person of the name in a place:
-        the same person named twice, or a stem match on another word. The curator decides."""
+        the same person named twice, or a stem match on another word; and of `alone` (the first name
+        alone) where it names a saint (named_alone). The curator decides."""
         name, where, src = p["name"], p["where"], source(p["where"])
         nth = {"n": p["n"]} if "n" in p else {}
-        while found := next((f for f in (find_person(src, nm, spans("place", where) + spans("person", where))
-                                         for nm in names) if f), None):
+        passed = []  # first names alone that name someone else here
+
+        def further():
+            taken_ = spans("place", where) + spans("person", where) + passed
+            return next(((f, by_itself) for by_itself, nms in ((False, names), (True, alone)) for nm in nms
+                         if (f := find_person(src, nm, taken_))), (None, None))
+
+        while (found := further())[0]:
+            found, by_itself = found
+            if by_itself and not named_alone(src, found[0]):
+                passed.append(found[0])
+                continue
             spans("person", where).append(found[0])  # later names are not proposed over it
             ask("add_mention", "person", where, found[0],
                 f"{name} matched again: mark it if it names this person once more", name=name, **nth)
@@ -303,6 +348,19 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
                             joined=bool(re.search(r"\set\s", p["name"])))
         return ((span, "surname", False), None) if span else (None, None)
 
+    # The first words of the names and forms of the eulogy's persons, how many persons each opens.
+    first_words = Counter(w for p in persons for w in {name_key(nm.split()[0]) for nm in [p["name"], *p.get("forms", [])]
+                                                       if nm.split()})
+
+    def first_name_alone(p, under):
+        """A text person of several words named again by the first word of the name they were found
+        under ("Radúlphi Sherwin", then "sanctus Radúlphus"), when no other person of the eulogy's
+        names opens with it and it has three letters or more."""
+        words = under.split()
+        if p["where"] != "text" or len(words) < 2 or len(words[0]) < 3 or first_words[name_key(words[0])] > 1:
+            return []
+        return [words[0]]
+
     placed, later, unplaced, second = [], [], [], []
     for p in order:
         found, under = look(p)
@@ -319,7 +377,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         placed.append(p)
         # In a list a name printed again is another person (left to the list's order), never this one.
         if p.get("n", 1) == last[group(p)] and under and (p["name"], p.get("n")) not in rank_of:
-            again(p, [under])
+            again(p, [under], first_name_alone(p, under))
     for p in second:
         found, under = look(p, fallback=True)
         if not found:
