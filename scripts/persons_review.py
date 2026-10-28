@@ -109,8 +109,12 @@ def draft_op(mrid, subject, text, text_it, lexicon, freq):
     if not issues["uncertain"]:
         return None
     readings, alternatives, drafted = {}, {}, persons
+    read_now = {p["name"] for p in _text_names(persons)}
     for _ in range(ROUNDS):
-        drafted, iss = eulogy_persons(mrid, subject, text, [], lexicon, {}, readings)
+        attempt, iss = eulogy_persons(mrid, subject, text, [], lexicon, {}, readings)
+        if not read_now <= {p["name"] for p in _text_names(attempt)}:
+            break  # a reading broke the list off: keep the last draft that loses no name read now
+        drafted = attempt
         new = [u for u in iss["uncertain"] if " " not in u and u not in readings]
         if not new:
             break

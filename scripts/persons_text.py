@@ -372,7 +372,9 @@ NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "mon
                     "religiosi", "laici", "catechistae", "abbatis", "eremitae", "monialis", "fratris",
                     "sororis", "matris", "patris", "filii", "filiae", "uxoris", "viri", "coniugis",
                     # kin before the next names ("atque filiarum eius Mariae...")
-                    "filiorum", "filiarum", "eius", "eorum", "earum"}
+                    "filiorum", "filiarum", "eius", "eorum", "earum",
+                    # a grandparent or grandchild of the names before ("et eorum aviae Leonillae")
+                    "avi", "aviae", "nepotis", "neptis", "nepotum"}
 
 
 def nominative(word, lexicon):
@@ -545,7 +547,10 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None, read
                     marked.append(len(names) - 1)
                 skipping = True
                 continue
-            if f in NAME_DESCRIPTORS and not current:
+            if f in NAME_DESCRIPTORS:
+                if current:  # "Iosíppi diáconi Románi": the descriptor ends the name and describes it
+                    close()
+                    skipping = True
                 continue
             if f == "ex" and not current:
                 skipping = True  # "virginum ex Ordine N" describes the names before it
@@ -560,6 +565,10 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None, read
                 continue
             current.append(token)
             after_particle = True
+            continue
+        if name_key(token).endswith("ensis"):  # "Thyatirénsis epíscopi": a place adjective, never a name
+            close()
+            skipping = True
             continue
         if after_particle and (_declined(name_key(token), lexicon) or
                                (_genitive_ending(name_key(token)) and name_key(token) not in lexicon)):

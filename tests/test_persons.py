@@ -150,6 +150,22 @@ class TextCompanionsTest(unittest.TestCase):
                                               readings={"Fictiánis": "Fictianus"})
         self.assertEqual((names, uncertain), (["Paulus", "Fictianus", "Leo"], []))
 
+    def test_a_descriptor_right_after_a_name_ends_it(self):
+        # "Pauli diáconi Románi, Leónis": no comma before the descriptor, which describes Paulus.
+        names, uncertain = pt.text_companions("Sanctórum Ioánnis, Pauli diáconi Románi, Felícis et Leónis.", LEXICON)
+        self.assertEqual((names, uncertain), (["Ioannes", "Paulus", "Felix", "Leo"], []))
+
+    def test_a_place_adjective_in_ensis_is_no_name(self):
+        # "Carpi, Thyatirénsis epíscopi": the bishop of Thyatira, not a person named Thyatirensis.
+        # A subject puts the adjective in the lexicon ("Sancta Lydia Thyatirensis").
+        lexicon = LEXICON | {pt.name_key("Romanensis"): "Romanensis"}
+        names, _ = pt.text_companions("Sanctórum Pauli, Romanénsis epíscopi, Leónis, diáconi.", lexicon)
+        self.assertEqual(names, ["Paulus", "Leo"])
+
+    def test_a_grandmother_after_the_brothers_is_read(self):
+        names, _ = pt.text_companions("Sanctórum Pauli, Leónis, fratrum, et eórum áviæ Agathæ, mártyrum.", LEXICON)
+        self.assertEqual(names, ["Paulus", "Leo", "Agatha"])
+
     def test_no_plural_honorific_reads_nothing(self):
         self.assertEqual(pt.text_companions("Romæ, sancti Pauli, mártyris.", LEXICON), ([], []))
 
