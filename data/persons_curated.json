@@ -1097,7 +1097,7 @@
       "where": "text"
     },
     {
-      "name": "Ingenis",
+      "name": "Ingenes",
       "where": "text",
       "it": "Ingene"
     },
@@ -1127,8 +1127,9 @@
       "where": "text"
     },
     {
-      "name": "Pœo",
-      "where": "text"
+      "name": "Pœon",
+      "where": "text",
+      "it": "Peone"
     },
     {
       "name": "Liberianus",
@@ -6429,14 +6430,6 @@
     },
     {
       "name": "Alexander Briant",
-      "where": "text"
-    },
-    {
-      "name": "Radulphus",
-      "where": "text"
-    },
-    {
-      "name": "Alexander",
       "where": "text"
     }
   ],

@@ -57886,7 +57886,7 @@
           "start": 69,
           "end": 76,
           "check": "9e7f19c9",
-          "name": "Ingenis",
+          "name": "Ingenes",
           "qid": null
         },
         {
@@ -57957,7 +57957,7 @@
           "start": 63,
           "end": 69,
           "check": "dee34cd2",
-          "name": "Pœo",
+          "name": "Pœon",
           "qid": null
         },
         {
@@ -147896,24 +147896,6 @@
               "role": "death"
             }
           ]
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 476,
-          "end": 485,
-          "check": "4e88ba9e",
-          "name": "Radulphus",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 489,
-          "end": 498,
-          "check": "dd35a61d",
-          "name": "Alexander",
-          "qid": null
         }
       ],
       "mr:1201-eligius": [
@@ -215563,7 +215545,7 @@
           "start": 64,
           "end": 70,
           "check": "b27fb3ab",
-          "name": "Ingenis",
+          "name": "Ingenes",
           "qid": null
         },
         {
@@ -215626,6 +215608,15 @@
           "end": 54,
           "check": "84fb19eb",
           "name": "Evelpistus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 65,
+          "end": 70,
+          "check": "d8528a94",
+          "name": "Pœon",
           "qid": null
         },
         {
@@ -306026,24 +306017,6 @@
               "role": "death"
             }
           ]
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 540,
-          "end": 547,
-          "check": "b851fcbd",
-          "name": "Radulphus",
-          "qid": null
-        },
-        {
-          "kind": "person",
-          "where": "text",
-          "start": 550,
-          "end": 560,
-          "check": "d2356fff",
-          "name": "Alexander",
-          "qid": null
         }
       ],
       "mr:1201-eligius": [
