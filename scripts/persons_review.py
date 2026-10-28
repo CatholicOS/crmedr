@@ -151,6 +151,7 @@ def apply_decisions(changeset, curated, persons):
         names = [(p.get("name") or "").strip() for p in decided]
         if not any(names):
             raise ValueError(f"{op['id']}: the decided list has no persons")
+        drafted = {p["name"]: p for p in op.get("persons") or []}  # an edit keeps a drafted person's other names
         seen, entries = Counter(), []
         for p, name in zip(decided, names, strict=True):
             if not name:
@@ -159,8 +160,9 @@ def apply_decisions(changeset, curated, persons):
             e = {"name": name}
             if seen[name_key(name)] > 1:
                 e["n"] = seen[name_key(name)]
-            if p.get("also"):
-                e["also"] = p["also"]
+            also = p.get("also") or (drafted.get(name) or {}).get("also")
+            if also:
+                e["also"] = also
             e["where"] = "text"
             if (p.get("it") or "").strip():
                 e["it"] = p["it"].strip()

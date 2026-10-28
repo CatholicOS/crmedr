@@ -102,6 +102,13 @@ class ApplyTest(unittest.TestCase):
                          [{"name": "Serenus", "where": "text"}, {"name": "Serenus", "n": 2, "where": "text"},
                           {"name": "Accursius", "where": "text"}])
 
+    def test_an_edit_keeps_the_other_names_of_a_drafted_person(self):
+        op = dict(self.OP, persons=[{"name": "Marina", "also": ["Margarita"]}], decision="edit",
+                  edited={"persons": [{"name": "Marina"}, {"name": "Petrus"}]})
+        curated, _ = pr.apply_decisions({"schema": "crmedr-changeset/v1", "operations": [op]}, {}, {})
+        self.assertEqual(curated["mr:0116-b-et-socii"],
+                         [{"name": "Marina", "also": ["Margarita"], "where": "text"}, {"name": "Petrus", "where": "text"}])
+
     def test_a_rejected_or_undecided_card_changes_nothing(self):
         cs = {"schema": "crmedr-changeset/v1",
               "operations": [dict(self.OP, decision="reject"), dict(self.OP, decision=None, uid="x")]}
