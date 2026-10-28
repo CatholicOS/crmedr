@@ -27,7 +27,7 @@ from pathlib import Path
 from extract_typology import RECOVERY, latin_texts, load_texts
 
 ROLES = ["death", "burial", "translation", "dedication", "cult", "birth", "education", "religious_life",
-         "ministry", "foundation", "exile", "journey", "mention"]
+         "ministry", "foundation", "exile", "captivity", "journey", "mention"]
 ROLE_OF_TYPOLOGY = {
     "dies_natalis": "death",
     "depositio": "burial",

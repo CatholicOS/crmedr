@@ -50,7 +50,8 @@ become:
 | `religious_life` | a monastery or house entered, professed or lived in |
 | `ministry` | a see, parish, office or mission field |
 | `foundation` | something founded there |
-| `exile` | exile, deportation, imprisonment |
+| `exile` | exile, deportation |
+| `captivity` | arrest, imprisonment, chains, captivity (a prison where the saint died is `death`) |
 | `journey` | pilgrimage, travel, passing through |
 | `mention` | a place named for another reason: an event, a council, another person's see or title (*a sancto Eusébio Vercellénsi*) |
 
