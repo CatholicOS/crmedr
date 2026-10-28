@@ -55,10 +55,18 @@ def fold(s):
     return fold_map(s)[0]
 
 
+def curated_forms(curated):
+    """{mrid: {latin name: italian name}} of the persons data/persons_curated.json gives an Italian
+    form ("it"): a name no subject pairs, as Accursius (Accorsio) among Berardus's companions."""
+    return {mrid: forms for mrid, persons in curated.items() if not mrid.startswith("$")
+            if (forms := {p["name"]: p["it"] for p in persons if p.get("it")})}
+
+
 class ItalianNames:
     """The Italian forms to look for, for each person of a eulogy."""
 
-    def __init__(self, la_subjects, it_subjects):
+    def __init__(self, la_subjects, it_subjects, curated=None):
+        """curated: {mrid: {latin name: italian name}} (curated_forms), before any subject's."""
         self.pairs = collections.defaultdict(dict)  # mrid -> {name_key(latin name): italian name}
         counts = collections.defaultdict(collections.Counter)
         for mrid, la in la_subjects.items():
@@ -71,6 +79,8 @@ class ItalianNames:
                 if len(xs) == len(ys):
                     for u, v in zip(xs, ys, strict=True):
                         counts[fold(u)][v] += 1
+        for mrid, forms in (curated or {}).items():
+            self.pairs[mrid].update({name_key(x): y for x, y in forms.items()})
         # The commonest translation; of two as common, the first in sort order (a stable run).
         self.lexicon = {u: sorted(c.items(), key=lambda kv: (-kv[1], kv[0]))[0][0] for u, c in counts.items()}
 

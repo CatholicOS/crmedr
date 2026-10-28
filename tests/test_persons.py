@@ -144,6 +144,12 @@ class TextCompanionsTest(unittest.TestCase):
         self.assertEqual(names, ["Paulus"])
         self.assertEqual(uncertain, ["Fictiánis"])
 
+    def test_a_reading_given_for_an_uncertain_form_is_read(self):
+        # persons_review.py drafts readings so that the list reads on past an unknown name.
+        names, uncertain = pt.text_companions("Sanctórum Pauli, Fictiánis et Leónis, mártyrum.", LEXICON,
+                                              readings={"Fictiánis": "Fictianus"})
+        self.assertEqual((names, uncertain), (["Paulus", "Fictianus", "Leo"], []))
+
     def test_no_plural_honorific_reads_nothing(self):
         self.assertEqual(pt.text_companions("Romæ, sancti Pauli, mártyris.", LEXICON), ([], []))
 
@@ -224,6 +230,12 @@ class EulogyPersonsTest(unittest.TestCase):
         persons, _ = ep.eulogy_persons("mr:1003-duo-ewaldi", "Duo Ewaldi", "…", [], {},
                                        {"mr:1003-duo-ewaldi": [{"name": "Ewaldus", "where": "text"}]})
         self.assertEqual(persons, [{"name": "Ewaldus", "where": "text"}])
+
+    def test_a_curated_persons_italian_form_stays_out_of_the_persons(self):
+        # The Italian form is for the Italian matcher (data/persons_curated.json), not data/persons.json.
+        persons, _ = ep.eulogy_persons("mr:0116-x-et-socii", "Sancti X et socii", "…", [], {},
+                                       {"mr:0116-x-et-socii": [{"name": "Accursius", "where": "text", "it": "Accorsio"}]})
+        self.assertEqual(persons, [{"name": "Accursius", "where": "text"}])
 
     def test_et_socii_with_no_names_found_is_flagged(self):
         _, issues = ep.eulogy_persons("mr:0101-x-et-socii", "Sancti X et socii", "Romæ, sancti X et sociórum.",

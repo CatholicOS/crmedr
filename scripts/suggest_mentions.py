@@ -22,7 +22,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import mentions_jev as mj
-from mentions_italian import ItalianNames
+from mentions_italian import ItalianNames, curated_forms
 from persons_text import name_subjects
 
 # Set from the evaluation of 2026-10-15 (jev-1.14.0; the spec's "Evaluation result"): the lowest
@@ -41,7 +41,8 @@ def load_data(repo_root):
     return {"persons": _read(data / "persons.json")["editions"]["martyrologium_romanum_2004"],
             "latin": mentions["martyrologium_romanum_2004"],
             "italian": mentions[mj.ITALIAN],
-            "names": ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"))}
+            "names": ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"),
+                                  curated_forms(_read(data / "persons_curated.json") if (data / "persons_curated.json").exists() else {}))}
 
 
 def ask_card(op, data, client):

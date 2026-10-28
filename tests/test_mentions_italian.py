@@ -44,6 +44,17 @@ class ItalianNamesTest(unittest.TestCase):
         self.assertEqual(self.names.forms("mr:0101-x", "Iosephus Ioannes Bosco"),
                          ["Giuseppe Giovanni Bosco", "Giuseppe Ioannes Bosco", "Iosephus Ioannes Bosco"])
 
+    def test_a_curated_italian_form_comes_first(self):
+        # Accursius is no subject: the Italian Accorsio comes from data/persons_curated.json.
+        names = mi.ItalianNames(LA, IT, {"mr:0116-b-et-socii": {"Accursius": "Accorsio"}})
+        self.assertEqual(names.forms("mr:0116-b-et-socii", "Accursius")[0], "Accorsio")
+        self.assertEqual(names.forms("mr:0116-b-et-socii", "Adiutus"), ["Adiutus"])
+
+    def test_the_curated_italian_forms_of_the_persons(self):
+        curated = {"$comment": "x", "mr:0116-b-et-socii": [{"name": "Berardus", "where": "text"},
+                                                            {"name": "Accursius", "where": "text", "it": "Accorsio"}]}
+        self.assertEqual(mi.curated_forms(curated), {"mr:0116-b-et-socii": {"Accursius": "Accorsio"}})
+
     def test_the_untranslated_ends_a_surname_search_anchors_on(self):
         self.assertEqual(self.names.surname("Iosephus Maria Gomez"), ["Maria Gomez", "Gomez"])
         self.assertEqual(self.names.surname("Ioannes"), [])
