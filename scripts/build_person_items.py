@@ -61,20 +61,38 @@ TITLE_WORDS = {"saint", "st", "san", "santo", "santa", "santi", "sante", "sant",
                "blessed", "the", "of", "sanctus", "sancta", "beatus",
                # Latin titles a card's name carries (Anna Prophetissa, Paulus Apostolus)
                "propheta", "prophetissa", "apostolus"}
-# Latin first names whose vernacular forms share no prefix with them.
+# Latin first names' vernacular forms, the English first: searched for in this order, and
+# matched as the same name when they share no stem with the Latin (Ioannes, John).
 NAME_EQUIVALENTS = {
-    "renatus": {"rene", "renato"},
-    "antonius": {"anthony", "antoine"},
-    "ioannes": {"john", "giovanni", "juan", "jean", "joao", "johannes", "jan"},
-    "ioanna": {"jeanne", "giovanna", "juana", "joan", "joanna", "johanna", "jane"},
-    "iacobus": {"james", "giacomo", "jacques", "jaime", "diego", "jacob", "jakob"},
-    "gulielmus": {"william", "guglielmo", "guillaume", "guillermo", "wilhelm"},
-    "ludovicus": {"louis", "luigi", "luis", "ludwig", "lewis"},
-    "henricus": {"henry", "enrico", "henri", "enrique", "heinrich"},
-    "carolus": {"charles", "carlo", "carlos", "karl"},
-    "aegidius": {"giles", "egidio", "gilles"},
-    "iosephus": {"joseph", "giuseppe", "jose", "josef"},
-    "petrus": {"peter", "pietro", "pierre", "pedro", "pieter", "piotr"},
+    "renatus": ("rene", "renato"),
+    "antonius": ("anthony", "antoine"),
+    "ioannes": ("john", "giovanni", "juan", "jean", "joao", "johannes", "jan"),
+    "ioanna": ("joan", "giovanna", "juana", "jeanne", "joanna", "johanna", "jane"),
+    "iacobus": ("james", "giacomo", "jacques", "jaime", "diego", "jacob", "jakob"),
+    "gulielmus": ("william", "guglielmo", "guillaume", "guillermo", "wilhelm"),
+    "ludovicus": ("louis", "luigi", "luis", "ludwig", "lewis"),
+    "henricus": ("henry", "enrico", "henri", "enrique", "heinrich"),
+    "carolus": ("charles", "carlo", "carlos", "karl"),
+    "aegidius": ("giles", "egidio", "gilles"),
+    "iosephus": ("joseph", "giuseppe", "jose", "josef"),
+    "petrus": ("peter", "pietro", "pedro", "pierre", "pieter", "piotr"),
+    "andreas": ("andrew", "andrea", "andres", "andre", "andrzej"),
+    "eduardus": ("edward", "edoardo", "eduardo", "edouard"),
+    "radulphus": ("ralph", "rodolfo", "raoul"),
+    "humphredus": ("humphrey",),
+    "nicolaus": ("nicholas", "nicola", "nicolas", "mikolaj"),
+    "georgius": ("george", "giorgio", "jorge", "georges"),
+    "stephanus": ("stephen", "stefano", "esteban", "etienne"),
+    "hieronymus": ("jerome", "girolamo", "jeronimo"),
+    "matthaeus": ("matthew", "matteo", "mateo", "matthieu"),
+    "christophorus": ("christopher", "cristoforo", "cristobal", "christophe"),
+    "ladislaus": ("wladyslaw", "ladislao"),
+    "miecislaus": ("mieczyslaw",),
+    "ceslaus": ("czeslaw",),
+    "eligius": ("eloy", "eligio", "eloi"),
+    "consolata": ("consuelo",),
+    "elisabeth": ("elizabeth", "elisabetta", "isabel"),
+    "iarognievus": ("jarogniew",),
 }
 # The same table in name_key form ("John" -> "iohn", "Giovanni" -> "giouanni"), for comparing.
 _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVALENTS.items()}
@@ -216,13 +234,17 @@ def evaluate(person, candidates):
 
 
 def search_terms(name):
-    """The name, and for a first name with vernacular equivalents, its English and Italian forms."""
+    """The name, and for a first name with vernacular equivalents its first four (the English
+    first), or for one in -us its stem."""
     words = name.split()
     terms = [name]
     first = name_key(words[0]) if words else ""
     equivalents = next((vs for k, vs in NAME_EQUIVALENTS.items() if name_key(k) == first), ())
-    for vern in sorted(equivalents)[:4]:
+    for vern in equivalents[:4]:
         terms.append(" ".join([vern.capitalize()] + words[1:]))
+    # Richardus Whiting as Richard Whiting: a first name in -us, its stem the vernacular.
+    if not equivalents and len(words) > 1 and words[0].endswith("us") and len(words[0]) > 5:
+        terms.append(" ".join([words[0][:-2]] + words[1:]))
     return terms
 
 

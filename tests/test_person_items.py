@@ -130,6 +130,24 @@ PERSON = {"eulogy": "mr:0206-paulus-miki-et-socii", "name": "Paulus Miki", "day"
           "companions": ["Ioannes de Goto Soan"]}
 
 
+class SearchTermsTest(unittest.TestCase):
+    def test_the_english_form_first(self):
+        self.assertEqual(bp.search_terms("Ioannes Talbot")[:2], ["Ioannes Talbot", "John Talbot"])
+        self.assertIn("Peter Higgins", bp.search_terms("Petrus Higgins"))
+
+    def test_names_whose_vernacular_shares_their_stem_are_sought_in_it(self):
+        self.assertIn("Richard Whiting", bp.search_terms("Richardus Whiting"))
+        self.assertIn("Robert Johnson", bp.search_terms("Robertus Johnson"))
+
+    def test_names_with_another_vernacular_stem(self):
+        self.assertIn("Andrew Kim Tae Gon", bp.search_terms("Andreas Kim Tae Gon"))
+        self.assertIn("Edward Powell", bp.search_terms("Eduardus Powell"))
+        self.assertIn("Ralph Sherwin", bp.search_terms("Radulphus Sherwin"))
+
+    def test_a_one_word_name_is_sought_as_printed(self):
+        self.assertEqual(bp.search_terms("Agathonica")[0], "Agathonica")
+
+
 class NameMatchTest(unittest.TestCase):
     def test_latin_and_vernacular_forms(self):
         self.assertTrue(bp.name_matches("Paulus Miki", ["Paul Miki"]))
@@ -808,7 +826,7 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(bp.fulltext_names({"name": "Aemiliana", "also": []}),
                          ["Aemiliana", "Aemilian", "Aemiliane", "Emilian", "Emiliana", "Emiliane"])
         names = bp.fulltext_names({"name": "Paulus Miki", "also": ["Paulus"]})
-        self.assertEqual(names[:5], ["Paulus Miki", "Paulus", "Paul", "Paule", "Paulo"])
+        self.assertEqual(names[:5], ["Paulus Miki", "Paul Miki", "Paulus", "Paul", "Paule"])
         self.assertEqual(len(names), len(set(names)))
 
     def test_name_and_place_route_searches_the_full_name_and_its_other_names(self):

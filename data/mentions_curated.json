@@ -11744,10 +11744,28 @@
           "kind": "person",
           "where": "text",
           "start": 48,
-          "end": 69,
-          "check": "f9fb9175",
-          "name": "Ioannes Maria Du Lau",
+          "end": 80,
+          "check": "164b3d72",
+          "name": "Ioannes Maria Du Lau d'Allemans",
           "qid": "Q2274370"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 100,
+          "check": "bd727d55",
+          "name": "Franciscus Iosephus de la Rochefoucauld",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 103,
+          "end": 138,
+          "check": "d7b66ac1",
+          "name": "Petrus Ludovicus de la Rochefoucauld",
+          "qid": null
         },
         {
           "kind": "place",
