@@ -136,7 +136,8 @@ def _with_also(p, variants):
 
 def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     if mrid in curated:
-        return [dict(p) for p in curated[mrid]], {"uncertain": [], "skipped": [], "printed_twice": [],
+        # A curated Italian form ("it") is for the Italian matcher (mentions_italian.curated_forms).
+        return [{k: v for k, v in p.items() if k != "it"} for p in curated[mrid]], {"uncertain": [], "skipped": [], "printed_twice": [],
                                                   "variants_unread": [], "socii_without_names": False}
     persons = []
     first = {}  # name_key -> where the name was first listed

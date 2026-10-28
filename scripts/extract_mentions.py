@@ -36,7 +36,7 @@ from pathlib import Path
 
 from extract_typology import load_texts
 from gazetteer_text import lookup
-from mentions_italian import ItalianNames, by_position, runs, surname_span
+from mentions_italian import ItalianNames, by_position, curated_forms, runs, surname_span
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
                            partial_span, utf16)
@@ -756,7 +756,8 @@ def extract(texts_repo, repo_root, review_path):
     curated = _read(data / "mentions_curated.json", {"editions": {}})["editions"]
     entries = _read(data / "martyrology_ids.json", {"entries": []})["entries"]
     sources, by_edition, review, counts = {}, {}, {}, {}
-    names = ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"))
+    names = ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"),
+                         curated_forms(_read(data / "persons_curated.json", {})))
     latin_twins = {}
     for edition, lang in EDITIONS.items():  # the Latin first: its marks order the Italian footnote lists
         sources[edition] = load_edition(texts_repo, edition)
