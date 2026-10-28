@@ -1,5 +1,27 @@
 {
   "$comment": "Hand-entered persons for eulogies extract_persons.py cannot read, by current ID: [{name, where}], where is \"text\" or {\"footnote\": n}. Replaces the eulogy's extraction; checked like it.",
+  "mr:0116-berardus-et-socii": [
+    {
+      "name": "Berardus",
+      "where": "text"
+    },
+    {
+      "name": "Otho",
+      "where": "text"
+    },
+    {
+      "name": "Petrus",
+      "where": "text"
+    },
+    {
+      "name": "Accursius",
+      "where": "text"
+    },
+    {
+      "name": "Adiutus",
+      "where": "text"
+    }
+  ],
   "mr:0901-petrus-rivera-et-socii": [
     {
       "name": "Petrus Rivera",

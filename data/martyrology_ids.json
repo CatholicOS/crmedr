@@ -6308,13 +6308,24 @@
           "country": "MA"
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Híspali",
           "it": "Siviglia",
           "source": "curated",
           "wikidata": "Q8717",
           "label": "Seville",
           "country": "ES"
+        },
+        {
+          "role": "death",
+          "la": "Maróchium",
+          "it": "Marrakesch",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q101625",
+          "label": "Marrakech",
+          "country": "MA"
         }
       ],
       "date": {
@@ -10983,7 +10994,7 @@
       "typology": "dies_natalis",
       "places": [
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Cyprum",
           "it": "Cipro",
           "source": "curated",
@@ -22990,7 +23001,7 @@
           ]
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Amórii Phrýgiæ",
           "it": "Amorio in Frigia",
           "source": "curated",
@@ -46972,7 +46983,7 @@
           "country": "FR"
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Arvérnos",
           "it": "regione dell’Auvergne",
           "source": "curated",
@@ -76001,7 +76012,7 @@
           "country": "GB"
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Turre civitátis",
           "it": "Torre della città",
           "source": "curated",
@@ -88848,7 +88859,7 @@
       "typology": "dies_natalis",
       "places": [
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "arce Macheróntis",
           "it": "fortezza di Macheronte",
           "source": "curated",
@@ -89876,8 +89887,7 @@
       "date": {
         "from": 1,
         "to": 100,
-        "circa": true,
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0317-ioseph"
@@ -99174,7 +99184,7 @@
           "country": "TN"
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Syracúsis",
           "it": "Siracusa",
           "source": "curated",
@@ -110280,7 +110290,7 @@
         }
       ],
       "date": {
-        "year": 1164,
+        "year": 372,
         "basis": "death",
         "source": "wikidata"
       }
@@ -115970,7 +115980,7 @@
           "country": "DE"
         },
         {
-          "role": "exile",
+          "role": "captivity",
           "la": "Dacháni",
           "it": "Dachau",
           "source": "curated",

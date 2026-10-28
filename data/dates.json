@@ -12571,8 +12571,7 @@
   "mr:0831-ioseph-de-arimathaea-et-nicodemus": {
    "from": 1,
    "to": 100,
-   "circa": true,
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:0831-isidorus-primo-rodriguez-et-socii": {
    "from": 1901,
@@ -15382,7 +15381,7 @@
    "source": "edition"
   },
   "mr:1021-hilarion": {
-   "year": 1164,
+   "year": 372,
    "basis": "death",
    "source": "wikidata"
   },

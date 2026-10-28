@@ -560,9 +560,16 @@
   ],
   "mr:0116-berardus-et-socii": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Híspali",
       "it": "Siviglia"
+    },
+    {
+      "role": "death",
+      "la": "Maróchium",
+      "it": "Marrakesch",
+      "occurrence": 2,
+      "occurrence_it": 2
     }
   ],
   "mr:0116-furseus-latiniacensis": [
@@ -1155,7 +1162,7 @@
   ],
   "mr:0130-theophilus-iuvenis": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Cyprum",
       "it": "Cipro"
     }
@@ -2569,7 +2576,7 @@
       "it": "fiume Eufrate"
     },
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Amórii Phrýgiæ",
       "it": "Amorio in Frigia"
     }
@@ -5107,7 +5114,7 @@
   ],
   "mr:0516-fidolus": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Arvérnos",
       "it": "regione dell’Auvergne"
     }
@@ -8484,7 +8491,7 @@
       "it": "Smithfield"
     },
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Turre civitátis",
       "it": "Torre della città"
     }
@@ -9809,7 +9816,7 @@
   ],
   "mr:0829-ioannes-baptista": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "arce Macheróntis",
       "it": "fortezza di Macheronte"
     }
@@ -10832,7 +10839,7 @@
   ],
   "mr:0923-andreas-et-socii": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Syracúsis",
       "it": "Siracusa"
     }
@@ -12656,7 +12663,7 @@
   ],
   "mr:1105-bernardus-lichtenberg": [
     {
-      "role": "exile",
+      "role": "captivity",
       "la": "Dacháni",
       "it": "Dachau"
     }

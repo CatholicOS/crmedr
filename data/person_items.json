@@ -1282,11 +1282,19 @@
         "status": "reviewed"
       },
       "Otho": {
-        "wikidata": "Q141882978",
+        "wikidata": "Q11801042",
         "status": "reviewed"
       },
       "Petrus": {
         "wikidata": "Q11818324",
+        "status": "reviewed"
+      },
+      "Accursius": {
+        "wikidata": "Q9143750",
+        "status": "reviewed"
+      },
+      "Adiutus": {
+        "wikidata": "Q9140888",
         "status": "reviewed"
       }
     },
@@ -6412,8 +6420,8 @@
     },
     "mr:0831-ioseph-de-arimathaea-et-nicodemus": {
       "Nicodemus": {
-        "wikidata": "Q4320058",
-        "status": "auto"
+        "wikidata": "Q295084",
+        "status": "reviewed"
       }
     },
     "mr:0901-lupus": {
@@ -7490,8 +7498,8 @@
     },
     "mr:1021-hilarion": {
       "Hilarion": {
-        "wikidata": "Q1231356",
-        "status": "auto"
+        "wikidata": "Q468685",
+        "status": "reviewed"
       }
     },
     "mr:1021-petrus-capucci": {

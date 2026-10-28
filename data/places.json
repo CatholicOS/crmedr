@@ -12,6 +12,7 @@
     "ministry",
     "foundation",
     "exile",
+    "captivity",
     "journey",
     "mention"
   ],
@@ -2117,10 +2118,18 @@
         "source": "lead"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Híspali",
         "it": "Siviglia",
         "source": "curated"
+      },
+      {
+        "role": "death",
+        "la": "Maróchium",
+        "it": "Marrakesch",
+        "source": "curated",
+        "occurrence": 2,
+        "occurrence_it": 2
       }
     ],
     "mr:0116-danax-aulonis": [
@@ -3976,7 +3985,7 @@
     ],
     "mr:0130-theophilus-iuvenis": [
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Cyprum",
         "it": "Cipro",
         "source": "curated"
@@ -8330,7 +8339,7 @@
         "source": "curated"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Amórii Phrýgiæ",
         "it": "Amorio in Frigia",
         "source": "curated"
@@ -17051,7 +17060,7 @@
         "source": "lead"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Arvérnos",
         "it": "regione dell’Auvergne",
         "source": "curated"
@@ -27755,7 +27764,7 @@
         "source": "curated"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Turre civitátis",
         "it": "Torre della città",
         "source": "curated"
@@ -32465,7 +32474,7 @@
     ],
     "mr:0829-ioannes-baptista": [
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "arce Macheróntis",
         "it": "fortezza di Macheronte",
         "source": "curated"
@@ -36094,7 +36103,7 @@
         "source": "lead"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Syracúsis",
         "it": "Siracusa",
         "source": "curated"
@@ -42128,7 +42137,7 @@
         "source": "lead"
       },
       {
-        "role": "exile",
+        "role": "captivity",
         "la": "Dacháni",
         "it": "Dachau",
         "source": "curated"

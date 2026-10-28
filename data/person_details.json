@@ -8662,6 +8662,36 @@
       "pt": "Lídia de Tiatira"
     }
   },
+  "Q295084": {
+    "description": {
+      "en": "Pharisee, biblical figure appearing in the Gospel of John",
+      "it": "discepolo di Gesù, dottore della Legge, fariseo e membro del Sinedrio",
+      "fr": "personnage du Nouveau Testament",
+      "de": "Person aus dem Johannesevangelium, Heiliger",
+      "es": "fariseo judío",
+      "pt": "personagem do Novo Testamento"
+    },
+    "born": null,
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Brooklyn Museum - Nicodemus (Nicodème) - James Tissot - overall.jpg",
+      "author": "James Tissot",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Nicodemus",
+      "it": "Nicodemo (discepolo di Gesù)",
+      "fr": "Nicodème",
+      "de": "Nikodemus",
+      "es": "Nicodemo",
+      "pt": "Nicodemos"
+    }
+  },
   "Q298265": {
     "description": {
       "en": "Roman Catholic mystic and blessed",
@@ -13145,6 +13175,38 @@
       "de": "Firmin der Ältere von Amiens",
       "es": "Fermín de Amiens",
       "pt": "Firmino de Amiens"
+    }
+  },
+  "Q468685": {
+    "description": {
+      "en": "anchorite and saint who spent most of his life in the desert",
+      "it": "monaco",
+      "fr": "ascète et thaumaturge chrétien",
+      "de": "Asket, Einsiedler und Heiliger",
+      "es": "anacoreta de la región de Palestina que pasó la mayor parte de su vida en el desierto"
+    },
+    "born": {
+      "year": 291,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 372,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Hilarion the Great (Menologion of Basil II) (cropped).jpg",
+      "author": "Authors of Menologion of Basil II (circa 985 AC, Constantinople), Byzantine manuscript illuminators[1]: Pantoleon with Georgios, Michael the Younger, Michael of Blachernae, Symeon, Symeon of Blachernae, Menas, and Nestor (Online on Vatican site)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Hilarion",
+      "it": "Ilarione di Gaza",
+      "fr": "Hilarion de Gaza",
+      "de": "Hilarion von Gaza",
+      "es": "Hilarión"
     }
   },
   "Q468802": {
@@ -19587,26 +19649,6 @@
       "de": "Dieter von Vestervig",
       "es": "Teodorico de Vestervig"
     }
-  },
-  "Q1231356": {
-    "description": {},
-    "born": {
-      "year": 1200,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 1164,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Ilarion Meglenski.jpg",
-      "author": "Unknown authorUnknown author",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {}
   },
   "Q1235967": {
     "description": {
@@ -29359,28 +29401,6 @@
       "fr": "Marie Claire Nanetti"
     }
   },
-  "Q4320058": {
-    "description": {
-      "en": "bishop (1871–1919)"
-    },
-    "born": {
-      "year": 1871,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 1919,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Никодим (Кононов).jpg",
-      "author": "\"ДЗдовчовъ\" (signatere in the lower left corner of the photo; apparently, this is a signature of host of photo studio where photo was taken)",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {}
-  },
   "Q4327651": {
     "description": {
       "en": "Bishop of Naples",
@@ -31339,6 +31359,29 @@
       "es": "Victoria Díez Bustos de Molina"
     }
   },
+  "Q9140888": {
+    "description": {
+      "en": "Franciscan friar and protomartyr killed at Marrakesh in 1220",
+      "it": "frate francescano e protomartire, ucciso a Marrakech nel 1220"
+    },
+    "born": {
+      "year": 1150,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 1220,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "LicinioMartiri.JPG",
+      "author": "Bernardino Licinio",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
+  },
   "Q9141897": {
     "description": {
       "en": "Korean martyr, catholic saint (1790–1839)",
@@ -31439,6 +31482,29 @@
     "wikipedia": {
       "fr": "Agnès Kim Hyo-ju"
     }
+  },
+  "Q9143750": {
+    "description": {
+      "en": "Franciscan friar and protomartyr killed at Marrakesh in 1220",
+      "it": "frate francescano e protomartire, ucciso a Marrakech nel 1220"
+    },
+    "born": {
+      "year": 1150,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 1220,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "FranciscoHenriques1.jpg",
+      "author": "Francisco Henriques",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
   },
   "Q9146987": {
     "description": {
@@ -33047,6 +33113,29 @@
       "circa": false
     },
     "image": null,
+    "wikipedia": {}
+  },
+  "Q11801042": {
+    "description": {
+      "en": "Franciscan priest and protomartyr killed at Marrakesh in 1220",
+      "it": "sacerdote francescano e protomartire, ucciso a Marrakech nel 1220"
+    },
+    "born": {
+      "year": 1150,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 1220,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "FranciscoHenriques1.jpg",
+      "author": "Francisco Henriques",
+      "license": "Public domain",
+      "license_url": null
+    },
     "wikipedia": {}
   },
   "Q11814094": {
@@ -35407,7 +35496,10 @@
     }
   },
   "Q47545004": {
-    "description": {},
+    "description": {
+      "en": "Spanish Claretian, one of the martyrs of Barbastro (died 1936)",
+      "it": "clarettiano spagnolo, uno dei martiri di Barbastro (morto nel 1936)"
+    },
     "born": {
       "year": 1913,
       "precision": "year",
@@ -35960,7 +36052,10 @@
     "wikipedia": {}
   },
   "Q63275471": {
-    "description": {},
+    "description": {
+      "en": "French priest, martyr at Angers during the French Revolution (died 1794)",
+      "it": "sacerdote francese, martire ad Angers durante la Rivoluzione francese (morto nel 1794)"
+    },
     "born": {
       "year": 1728,
       "precision": "year",
@@ -36241,7 +36336,10 @@
     }
   },
   "Q97253316": {
-    "description": {},
+    "description": {
+      "en": "bishop of Edessa, confessor under Decius",
+      "it": "vescovo di Edessa, confessore sotto Decio"
+    },
     "born": null,
     "died": null,
     "image": {
@@ -36255,7 +36353,10 @@
     }
   },
   "Q97256905": {
-    "description": {},
+    "description": {
+      "en": "bishop of Rieti, praised by Pope Gregory the Great (died 571)",
+      "it": "vescovo di Rieti, lodato da papa Gregorio Magno (morto nel 571)"
+    },
     "born": null,
     "died": {
       "year": 571,
@@ -36266,7 +36367,10 @@
     "wikipedia": {}
   },
   "Q97256921": {
-    "description": {},
+    "description": {
+      "en": "bishop of Meaux",
+      "it": "vescovo di Meaux"
+    },
     "born": null,
     "died": null,
     "image": null,
@@ -36408,7 +36512,10 @@
     "wikipedia": {}
   },
   "Q106645946": {
-    "description": {},
+    "description": {
+      "en": "French cleric, martyr at the Carmes in Paris (died 1792)",
+      "it": "chierico francese, martire ai Carmelitani di Parigi (morto nel 1792)"
+    },
     "born": null,
     "died": {
       "year": 1792,
@@ -36558,7 +36665,10 @@
     }
   },
   "Q112611160": {
-    "description": {},
+    "description": {
+      "en": "Franciscan brother and recluse at Laurenzana (died 1518)",
+      "it": "religioso francescano e recluso a Laurenzana (morto nel 1518)"
+    },
     "born": null,
     "died": {
       "year": 1518,
@@ -36569,7 +36679,10 @@
     "wikipedia": {}
   },
   "Q112612929": {
-    "description": {},
+    "description": {
+      "en": "French De La Salle Brother, martyr on the prison hulks of Rochefort (died 1794)",
+      "it": "fratello delle Scuole Cristiane francese, martire sui pontoni di Rochefort (morto nel 1794)"
+    },
     "born": {
       "year": 1724,
       "precision": "year",
@@ -36586,7 +36699,10 @@
     }
   },
   "Q113356997": {
-    "description": {},
+    "description": {
+      "en": "priest of Córdoba, martyr under the Moors (died 852)",
+      "it": "sacerdote di Cordova, martire sotto i Mori (morto nell'852)"
+    },
     "born": null,
     "died": {
       "year": 852,
@@ -36597,14 +36713,20 @@
     "wikipedia": {}
   },
   "Q113738280": {
-    "description": {},
+    "description": {
+      "en": "martyr at Antinoe in the Thebaid, thrown into the Nile",
+      "it": "martire ad Antinoe nella Tebaide, gettato nel Nilo"
+    },
     "born": null,
     "died": null,
     "image": null,
     "wikipedia": {}
   },
   "Q115450922": {
-    "description": {},
+    "description": {
+      "en": "French laywoman, martyr at Avrillé near Angers (died 1794)",
+      "it": "laica francese, martire ad Avrillé presso Angers (morta nel 1794)"
+    },
     "born": {
       "year": 1762,
       "precision": "year",
@@ -36657,7 +36779,10 @@
     "wikipedia": {}
   },
   "Q116457750": {
-    "description": {},
+    "description": {
+      "en": "French laywoman, martyr at Avrillé near Angers (died 1794)",
+      "it": "laica francese, martire ad Avrillé presso Angers (morta nel 1794)"
+    },
     "born": {
       "year": 1745,
       "precision": "year",
@@ -36713,7 +36838,10 @@
     "wikipedia": {}
   },
   "Q124412940": {
-    "description": {},
+    "description": {
+      "en": "bishop of Chartres",
+      "it": "vescovo di Chartres"
+    },
     "born": null,
     "died": null,
     "image": null,
@@ -36756,7 +36884,10 @@
     }
   },
   "Q131844211": {
-    "description": {},
+    "description": {
+      "en": "English layman, servant of the Jesuit William Ireland, martyr at Tyburn (died 1679)",
+      "it": "laico inglese, servitore del gesuita William Ireland, martire a Tyburn (morto nel 1679)"
+    },
     "born": null,
     "died": {
       "year": 1679,
@@ -36942,20 +37073,6 @@
     },
     "born": null,
     "died": null,
-    "image": null,
-    "wikipedia": {}
-  },
-  "Q141882978": {
-    "description": {
-      "en": "Franciscan priest and protomartyr killed at Marrakesh in 1220",
-      "it": "sacerdote francescano e protomartire, ucciso a Marrakech nel 1220"
-    },
-    "born": null,
-    "died": {
-      "year": 1220,
-      "precision": "year",
-      "circa": false
-    },
     "image": null,
     "wikipedia": {}
   },

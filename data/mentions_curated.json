@@ -2607,7 +2607,7 @@
           "end": 244,
           "check": "fe4aa9d6",
           "name": "Nicodemus",
-          "qid": "Q4320058"
+          "qid": "Q295084"
         }
       ],
       "mr:0904-caletricus": [
@@ -5739,6 +5739,92 @@
           "roles": [
             {
               "role": "religious_life"
+            }
+          ]
+        }
+      ],
+      "mr:0116-berardus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 50,
+          "check": "f510fa84",
+          "qid": "Q101625",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 86,
+          "check": "7d0f2c1f",
+          "name": "Berardus",
+          "qid": "Q818683"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 88,
+          "end": 94,
+          "check": "f89ea204",
+          "name": "Otho",
+          "qid": "Q11801042"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 102,
+          "check": "c8725a19",
+          "name": "Petrus",
+          "qid": "Q11818324"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 115,
+          "end": 123,
+          "check": "d7d88d43",
+          "name": "Accursius",
+          "qid": "Q9143750"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 126,
+          "end": 132,
+          "check": "022bcb2c",
+          "name": "Adiutus",
+          "qid": "Q9140888"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 255,
+          "end": 263,
+          "check": "57095415",
+          "qid": "Q8717",
+          "roles": [
+            {
+              "role": "captivity"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 277,
+          "end": 287,
+          "check": "056c36d9",
+          "qid": "Q101625",
+          "roles": [
+            {
+              "role": "death"
             }
           ]
         }
@@ -11714,7 +11800,7 @@
           "end": 70,
           "check": "22cd48b5",
           "name": "Nicodemus",
-          "qid": "Q4320058"
+          "qid": "Q295084"
         },
         {
           "kind": "person",
