@@ -113,7 +113,7 @@
 | 8 | (2) | `mr:0208-iosephina-bakhita` |  | SD | dies_natalis |  | 2004 English: Translation error: "last freed" for "demum liberáta" (at last set free). |
 | 8 | 3 | `mr:0208-cointha` |  | EG | commemoratio |  |  |
 | 8 | 4 | `mr:0208-iuventius` |  | IT | dies_natalis | same as `mr:0912-iuventius` |  |
-| 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR | commemoratio |  | 2004 Italian: Translation error: "monastero di Dio" (monastery of God) where the Latin has "monastérii Dii" (the monastery of Dius, named after its founder). |
+| 8 | 5 | `mr:0208-martyres-monachi-dii-constantinopolitani` |  | TR | commemoratio |  | 2004 Italian: "Dio" here is not God but the Italian form of the name Dius ("san Dio", 19 July): "monastérii Dii" is the monastery named after its founder, Saint Dius. |
 | 8 | 6 | `mr:0208-iacutus` | * | FR | dies_natalis |  |  |
 | 8 | 7 | `mr:0208-honoratus` |  | IT | depositio |  |  |
 | 8 | 8 | `mr:0208-nicetius` | * | FR | dies_natalis |  |  |
