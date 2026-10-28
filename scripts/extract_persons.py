@@ -134,7 +134,7 @@ def _with_also(p, variants):
     return out
 
 
-def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
+def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated, readings=None):
     if mrid in curated:
         # A curated Italian form ("it") is for the Italian matcher (mentions_italian.curated_forms).
         return [{k: v for k, v in p.items() if k != "it"} for p in curated[mrid]], {"uncertain": [], "skipped": [], "printed_twice": [],
@@ -186,7 +186,8 @@ def eulogy_persons(mrid, subject, text, footnotes, lexicon, curated):
     socii = mrid.endswith("-et-socii")
     if socii:
         marks, tvars = [], {}
-        names, uncertain = text_companions(text or "", lexicon, marked=marks, variants=tvars, unread=unread_text)
+        names, uncertain = text_companions(text or "", lexicon, marked=marks, variants=tvars, unread=unread_text,
+                                           readings=readings)
         for i, n in enumerate(names):
             add(n, "text", marked=i in marks, also=[full_variant(n, v) for v in tvars.get(i, [])])
     # A name the text prints again as another person's, outside its list too ("cum sóciis Agápio et

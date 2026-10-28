@@ -473,13 +473,14 @@ def _paren_names(tail, lexicon):
     return PAREN_NAME.sub(repl, tail), ready
 
 
-def text_companions(text, lexicon, marked=None, variants=None, unread=None):
+def text_companions(text, lexicon, marked=None, variants=None, unread=None, readings=None):
     """The names after a plural honorific at the head of a eulogy ("sanctorum
     martyrum A, B et C"), as nominatives; forms not surely converted are
     returned apart, as printed. The positions (in the names) of those marked as
     another person of a name ("Theodori alterius") are appended to `marked` when given. A name's
     other names (after seu, vel or sive) go in `variants`, {position in names: [names]}, and the
-    names whose other name could not be read in `unread`, when given."""
+    names whose other name could not be read in `unread`, when given. A printed form `readings` gives
+    ({"Accúrsii": "Accursius"}) is read as that nominative, never guessed here."""
     if not PLURAL_HONORIFIC.search(fold(text)):
         return [], []
     words = WORD.findall(text)
@@ -573,7 +574,7 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None):
             # the print's stress accents, else as printed.
             current.append(lexicon.get(name_key(token), token))
             continue
-        nom = nominative(token, lexicon)
+        nom = (readings or {}).get(token) or nominative(token, lexicon)
         if nom is None and variant_of is not None and not _genitive_ending(name_key(token)):
             nom = token  # an undeclined other name ("Sordi seu Cacciafronte"), as printed
         if nom is None:

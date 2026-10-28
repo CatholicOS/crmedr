@@ -144,6 +144,12 @@ class TextCompanionsTest(unittest.TestCase):
         self.assertEqual(names, ["Paulus"])
         self.assertEqual(uncertain, ["Fictiánis"])
 
+    def test_a_reading_given_for_an_uncertain_form_is_read(self):
+        # persons_review.py drafts readings so that the list reads on past an unknown name.
+        names, uncertain = pt.text_companions("Sanctórum Pauli, Fictiánis et Leónis, mártyrum.", LEXICON,
+                                              readings={"Fictiánis": "Fictianus"})
+        self.assertEqual((names, uncertain), (["Paulus", "Fictianus", "Leo"], []))
+
     def test_no_plural_honorific_reads_nothing(self):
         self.assertEqual(pt.text_companions("Romæ, sancti Pauli, mártyris.", LEXICON), ([], []))
 
