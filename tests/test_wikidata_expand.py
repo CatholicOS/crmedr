@@ -96,6 +96,14 @@ class ExpandTest(unittest.TestCase):
         self.assertTrue(out[0]["human"])
         self.assertTrue(any("wd%3AQ99" in u for u in fake.urls))
 
+    def test_relatives_include_the_members_the_group_lists(self):
+        # Victorianus' group (Q4111032) lists him and the two Frumentii (P527); none points back.
+        group = item("Q99", "Victorianus and companions", {"P527": [claim("Q77"), claim("Q300"), claim("Q2652595")]})
+        fake = Fake(bindings([]), entities={"Q99": group})
+        out = self.wd(fake).relatives("Q2652595")
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out],
+                         [("Q52161488", "companion:P3373"), ("Q77", "companion:P361"), ("Q300", "companion:P361")])
+
     def query(self, fake):
         return urllib.parse.unquote_plus(next(u for u in fake.urls if "query.wikidata.org" in u))
 

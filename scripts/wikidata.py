@@ -495,7 +495,8 @@ class Wikidata:
 
     def relatives(self, qid):
         """The companion's kin (sibling, relative, spouse, child, mother, father) and
-        the other members of its groups (P361), as person candidates."""
+        the other members of its groups (P361, and those the group lists: P527), as person
+        candidates."""
         raw = self._entities([qid]).get(qid)
         sources = {}
         for prop in RELATIVE_PROPS:
@@ -503,11 +504,16 @@ class Wikidata:
                 v = _value(c)
                 if isinstance(v, dict) and "id" in v:
                     sources.setdefault(v["id"], "companion:" + prop)
-        for c in (raw or {}).get("claims", {}).get("P361", []):
-            v = _value(c)
-            if isinstance(v, dict) and "id" in v:
-                for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m wdt:P361 wd:{v['id']} }}"):
-                    sources.setdefault(b["m"]["value"].rsplit("/", 1)[1], "companion:P361")
+        groups = [v["id"] for c in (raw or {}).get("claims", {}).get("P361", [])
+                  if isinstance(v := _value(c), dict) and "id" in v]
+        listed = self._entities(groups) if groups else {}
+        for group in groups:
+            for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m wdt:P361 wd:{group} }}"):
+                sources.setdefault(b["m"]["value"].rsplit("/", 1)[1], "companion:P361")
+            for c in (listed.get(group) or {}).get("claims", {}).get("P527", []):
+                v = _value(c)
+                if isinstance(v, dict) and "id" in v:
+                    sources.setdefault(v["id"], "companion:P361")
         sources.pop(qid, None)
         return self._tagged(sources)
 
