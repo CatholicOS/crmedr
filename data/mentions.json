@@ -64009,6 +64009,15 @@
           "check": "2555c4df",
           "name": "Aureus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 62,
+          "check": "fd2e7b3f",
+          "name": "Iustina",
+          "qid": null
         }
       ],
       "mr:0616-benno": [
@@ -108956,6 +108965,15 @@
           "end": 76,
           "check": "2221ff4d",
           "name": "Franciscus Takeya",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 80,
+          "end": 96,
+          "check": "6dc27dce",
+          "name": "Petrus Shichiemon",
           "qid": null
         }
       ],
@@ -219785,6 +219803,15 @@
           "check": "63eb8c64",
           "name": "Aureus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 79,
+          "check": "9ebaec73",
+          "name": "Iustina",
+          "qid": null
         }
       ],
       "mr:0616-benno": [
@@ -265055,6 +265082,15 @@
           "end": 94,
           "check": "5ea1b74f",
           "name": "Franciscus Takeya",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 97,
+          "end": 114,
+          "check": "ed68d86b",
+          "name": "Petrus Shichiemon",
           "qid": null
         }
       ],

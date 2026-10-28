@@ -73,6 +73,13 @@ class DraftTest(unittest.TestCase):
         self.assertEqual(op["context"], {"la": LA, "it": IT})
         self.assertIsNone(op["decision"])
 
+    def test_a_draft_never_loses_a_name_read_now(self):
+        # Were a reading to break the list off, the names read without it are kept.
+        text = "Romæ, sanctórum Berárdi, Accúrsii diáconi Románi, Petri et Othónis, mártyrum."
+        op = pr.draft_op("mr:0101-x-et-socii", "Sancti Berardus et socii", text, "", LEXICON, Counter())
+        names = [p["name"] for p in op["persons"]]
+        self.assertTrue(set(op["current"]) <= set(names), names)
+
     def test_a_eulogy_read_in_full_has_no_card(self):
         self.assertIsNone(pr.draft_op("mr:0101-x-et-socii", "Sancti Berardus et socii",
                                       "Romæ, sanctórum Berárdi et Petri, mártyrum.", "", LEXICON, Counter()))
