@@ -10631,9 +10631,11 @@
         }
       ],
       "date": {
-        "year": 346,
+        "from": 301,
+        "to": 400,
+        "circa": true,
         "basis": "death",
-        "source": "wikidata"
+        "source": "estimate"
       },
       "same_eulogy": [
         "mr:0407-aphraates"

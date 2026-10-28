@@ -1694,9 +1694,11 @@
    "source": "wikidata"
   },
   "mr:0129-aphraates-antiochiae": {
-   "year": 346,
+   "from": 301,
+   "to": 400,
+   "circa": true,
    "basis": "death",
-   "source": "wikidata"
+   "source": "estimate"
   },
   "mr:0129-boleslava-maria-lament": {
    "year": 1946,

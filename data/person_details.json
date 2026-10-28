@@ -11564,39 +11564,6 @@
       "pt": "João Calábria"
     }
   },
-  "Q434222": {
-    "description": {
-      "en": "4th century Syriac-Christian theologian and author",
-      "it": "scrittore, teologo e santo siriaco",
-      "fr": "théologien de langue syriaque",
-      "de": "syrischer Kirchenvater",
-      "es": "escritor"
-    },
-    "born": {
-      "year": 270,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 346,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Les Vies des Pères des déserts d'Orient - leur doctrine spirituelle et leur discipline monastique (1886) (14590545527).jpg",
-      "author": "Internet Archive Book Images",
-      "license": "No restrictions",
-      "license_url": "https://www.flickr.com/commons/usage/"
-    },
-    "wikipedia": {
-      "en": "Aphrahat",
-      "it": "Afraate",
-      "fr": "Aphraate le Sage persan",
-      "de": "Aphrahat",
-      "es": "Afraates",
-      "pt": "Afraates (escritor)"
-    }
-  },
   "Q434579": {
     "description": {
       "en": "Catholic saint and nun from France (1798-1856)",
@@ -15817,7 +15784,10 @@
     }
   },
   "Q644988": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1851,
       "precision": "year",
@@ -22185,7 +22155,10 @@
     }
   },
   "Q1835805": {
-    "description": {},
+    "description": {
+      "en": "Greek Catholic layman of Pratulin, Poland, martyr (died 1874)",
+      "it": "laico greco-cattolico di Pratulin in Polonia, martire (morto nel 1874)"
+    },
     "born": {
       "year": 1844,
       "precision": "year",
@@ -22895,7 +22868,10 @@
     }
   },
   "Q2082240": {
-    "description": {},
+    "description": {
+      "en": "priest and monk of Córdoba, martyr under Muhammad I (died 853)",
+      "it": "sacerdote e monaco di Cordova, martire sotto Maometto I (morto nell'853)"
+    },
     "born": {
       "year": 815,
       "precision": "year",
@@ -23020,7 +22996,10 @@
     "wikipedia": {}
   },
   "Q2105116": {
-    "description": {},
+    "description": {
+      "en": "Greek Catholic layman of Pratulin, Poland, martyr (died 1874)",
+      "it": "laico greco-cattolico di Pratulin in Polonia, martire (morto nel 1874)"
+    },
     "born": {
       "year": 1852,
       "precision": "year",
@@ -23106,7 +23085,10 @@
     }
   },
   "Q2136721": {
-    "description": {},
+    "description": {
+      "en": "virgin venerated at Alem",
+      "it": "vergine venerata ad Alem"
+    },
     "born": null,
     "died": {
       "year": 1100,
@@ -24290,7 +24272,10 @@
     }
   },
   "Q2480213": {
-    "description": {},
+    "description": {
+      "en": "deacon of Tarragona, martyred with Bishop Fructuosus (died 259)",
+      "it": "diacono di Tarragona, martire con il vescovo Fruttuoso (morto nel 259)"
+    },
     "born": null,
     "died": {
       "year": 259,
@@ -27102,7 +27087,10 @@
     }
   },
   "Q3539750": {
-    "description": {},
+    "description": {
+      "en": "priest, monk and hermit in the Dombes, France",
+      "it": "sacerdote, monaco ed eremita nella Dombes, in Francia"
+    },
     "born": {
       "year": 450,
       "precision": "century",
@@ -27115,7 +27103,10 @@
     }
   },
   "Q3556935": {
-    "description": {},
+    "description": {
+      "en": "hermit near Tulle in Aquitaine (died 672)",
+      "it": "eremita presso Tulle in Aquitania (morto nel 672)"
+    },
     "born": {
       "year": 623,
       "precision": "year",
@@ -28939,7 +28930,10 @@
     }
   },
   "Q4103208": {
-    "description": {},
+    "description": {
+      "en": "Chinese catechist, martyr at Maokou in Guizhou (died 1858)",
+      "it": "catechista cinese, martire a Maokou nel Guizhou (morto nel 1858)"
+    },
     "born": {
       "year": 1802,
       "precision": "year",
@@ -28954,7 +28948,10 @@
     "wikipedia": {}
   },
   "Q4103222": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1885,
       "precision": "year",
@@ -28969,7 +28966,10 @@
     "wikipedia": {}
   },
   "Q4103247": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1864,
       "precision": "year",
@@ -28984,7 +28984,10 @@
     "wikipedia": {}
   },
   "Q4103248": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr in Hebei during the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese nell'Hebei durante la rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1823,
       "precision": "year",
@@ -29038,7 +29041,10 @@
     "wikipedia": {}
   },
   "Q4169024": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr with her mother Mary Du Tianshi (died 1900)",
+      "it": "martire cattolica cinese con la madre Maria Du Tianshi (morta nel 1900)"
+    },
     "born": {
       "year": 1881,
       "precision": "year",
@@ -29053,7 +29059,10 @@
     "wikipedia": {}
   },
   "Q4186712": {
-    "description": {},
+    "description": {
+      "en": "Polish religious brother of the Sacred Heart, martyr at Dachau (died 1945)",
+      "it": "religioso polacco dei Fratelli del Sacro Cuore, martire a Dachau (morto nel 1945)"
+    },
     "born": {
       "year": 1904,
       "precision": "year",
@@ -29246,7 +29255,10 @@
     }
   },
   "Q4260736": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr with his brother Raymond Li Quanzhen (died 1900)",
+      "it": "martire cattolico cinese con il fratello Raimondo Li Quanzhen (morto nel 1900)"
+    },
     "born": {
       "year": 1837,
       "precision": "year",
@@ -29283,7 +29295,10 @@
     }
   },
   "Q4267686": {
-    "description": {},
+    "description": {
+      "en": "Chinese catechist, martyr at Maokou in Guizhou (died 1858)",
+      "it": "catechista cinese, martire a Maokou nel Guizhou (morto nel 1858)"
+    },
     "born": {
       "year": 1811,
       "precision": "year",
@@ -29514,7 +29529,10 @@
     }
   },
   "Q4464088": {
-    "description": {},
+    "description": {
+      "en": "Polish Conventual Franciscan priest, martyr at Auschwitz (died 1942)",
+      "it": "sacerdote polacco francescano conventuale, martire ad Auschwitz (morto nel 1942)"
+    },
     "born": {
       "year": 1908,
       "precision": "year",
@@ -29560,7 +29578,10 @@
     }
   },
   "Q4481157": {
-    "description": {},
+    "description": {
+      "en": "Chinese orphan girl, martyr in Hebei during the Boxer Uprising (died 1900)",
+      "it": "orfana cinese, martire nell'Hebei durante la rivolta dei Boxer (morta nel 1900)"
+    },
     "born": {
       "year": 1884,
       "precision": "year",
@@ -29607,7 +29628,10 @@
     }
   },
   "Q4493263": {
-    "description": {},
+    "description": {
+      "en": "Chinese schoolteacher, martyr in Hebei during the Boxer Uprising (died 1900)",
+      "it": "maestra cinese, martire nell'Hebei durante la rivolta dei Boxer (morta nel 1900)"
+    },
     "born": {
       "year": 1863,
       "precision": "year",
@@ -29718,7 +29742,10 @@
     "wikipedia": {}
   },
   "Q4515435": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1850,
       "precision": "year",
@@ -29733,7 +29760,10 @@
     "wikipedia": {}
   },
   "Q4515438": {
-    "description": {},
+    "description": {
+      "en": "Chinese seminarian, martyr at Qingyan in Guizhou (died 1861)",
+      "it": "seminarista cinese, martire a Qingyan nel Guizhou (morto nel 1861)"
+    },
     "born": {
       "year": 1831,
       "precision": "year",
@@ -29768,7 +29798,10 @@
     }
   },
   "Q4515453": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1882,
       "precision": "year",
@@ -29783,7 +29816,10 @@
     "wikipedia": {}
   },
   "Q4515456": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1878,
       "precision": "year",
@@ -29798,7 +29834,10 @@
     "wikipedia": {}
   },
   "Q4515471": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr with his brother John Baptist Zhao Mingxi (died 1900)",
+      "it": "martire cattolico cinese con il fratello Giovanni Battista Zhao Mingxi (morto nel 1900)"
+    },
     "born": {
       "year": 1839,
       "precision": "year",
@@ -29851,7 +29890,10 @@
     }
   },
   "Q4516988": {
-    "description": {},
+    "description": {
+      "en": "Korean Catholic martyr (died 1866)",
+      "it": "martire cattolico coreano (morto nel 1866)"
+    },
     "born": {
       "year": 1815,
       "precision": "year",
@@ -29904,7 +29946,10 @@
     "wikipedia": {}
   },
   "Q4533485": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1853,
       "precision": "year",
@@ -30933,7 +30978,10 @@
     }
   },
   "Q7848469": {
-    "description": {},
+    "description": {
+      "en": "Thai religious sister of the Lovers of the Holy Cross, martyr at Song Khon (died 1940)",
+      "it": "religiosa thailandese delle Amanti della Croce, martire a Song Khon (morta nel 1940)"
+    },
     "born": {
       "year": 1909,
       "precision": "year",
@@ -31444,7 +31492,10 @@
     "wikipedia": {}
   },
   "Q9157169": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr at Đồng Hới (died 1840)",
+      "it": "catechista vietnamita, martire a Đồng Hới (morto nel 1840)"
+    },
     "born": {
       "year": 1768,
       "precision": "year",
@@ -31459,7 +31510,10 @@
     "wikipedia": {}
   },
   "Q9157170": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Catholic martyr (died 1838)",
+      "it": "martire cattolico vietnamita (morto nel 1838)"
+    },
     "born": {
       "year": 1769,
       "precision": "year",
@@ -31501,7 +31555,10 @@
     }
   },
   "Q9162179": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Catholic martyr (died 1839)",
+      "it": "martire cattolico vietnamita (morto nel 1839)"
+    },
     "born": {
       "year": 1806,
       "precision": "year",
@@ -31600,7 +31657,10 @@
     }
   },
   "Q9209812": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Dominican tertiary, martyr at Nam Định (died 1859)",
+      "it": "terziario domenicano vietnamita, martire a Nam Định (morto nel 1859)"
+    },
     "born": {
       "year": 1780,
       "precision": "year",
@@ -31637,7 +31697,10 @@
     }
   },
   "Q9258795": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr near Valencia (died 1936)",
+      "it": "sacerdote spagnolo, martire presso Valencia (morto nel 1936)"
+    },
     "born": {
       "year": 1887,
       "precision": "year",
@@ -31726,7 +31789,10 @@
     }
   },
   "Q9288514": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr at Xeraco (died 1936)",
+      "it": "sacerdote spagnolo, martire a Xeraco (morto nel 1936)"
+    },
     "born": {
       "year": 1908,
       "precision": "year",
@@ -31847,7 +31913,10 @@
     "wikipedia": {}
   },
   "Q9359561": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Dominican tertiary, martyr (died 1839)",
+      "it": "terziario domenicano vietnamita, martire (morto nel 1839)"
+    },
     "born": {
       "year": 1811,
       "precision": "year",
@@ -31862,7 +31931,10 @@
     "wikipedia": {}
   },
   "Q9359768": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr in prison at Nam Định (died 1840)",
+      "it": "catechista vietnamita, martire in carcere a Nam Định (morto nel 1840)"
+    },
     "born": {
       "year": 1764,
       "precision": "year",
@@ -31894,7 +31966,10 @@
     "wikipedia": {}
   },
   "Q9359832": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Catholic martyr (died 1839)",
+      "it": "martire cattolico vietnamita (morto nel 1839)"
+    },
     "born": {
       "year": 1783,
       "precision": "year",
@@ -31909,7 +31984,10 @@
     "wikipedia": {}
   },
   "Q9390838": {
-    "description": {},
+    "description": {
+      "en": "Chinese Catholic martyr of the Boxer Uprising (died 1900)",
+      "it": "martire cattolico cinese della rivolta dei Boxer (morto nel 1900)"
+    },
     "born": {
       "year": 1843,
       "precision": "year",
@@ -31964,7 +32042,10 @@
     }
   },
   "Q9394696": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Dominican tertiary, martyr at Nam Định with his father (died 1859)",
+      "it": "terziario domenicano vietnamita, martire a Nam Định con il padre (morto nel 1859)"
+    },
     "born": {
       "year": 1819,
       "precision": "year",
@@ -31979,7 +32060,10 @@
     "wikipedia": {}
   },
   "Q10327070": {
-    "description": {},
+    "description": {
+      "en": "Spanish laywoman of Catholic Action, martyr at Xàtiva (died 1936)",
+      "it": "laica spagnola dell'Azione Cattolica, martire a Xàtiva (morta nel 1936)"
+    },
     "born": {
       "year": 1887,
       "precision": "year",
@@ -32206,7 +32290,10 @@
     }
   },
   "Q11710058": {
-    "description": {},
+    "description": {
+      "en": "consecrated virgin of Pavia, sister of Bishop Epiphanius",
+      "it": "vergine consacrata di Pavia, sorella del vescovo Epifanio"
+    },
     "born": {
       "year": 450,
       "precision": "century",
@@ -32255,7 +32342,10 @@
     }
   },
   "Q11717561": {
-    "description": {},
+    "description": {
+      "en": "Spanish layman of Catholic Action, martyr at Simat de la Valldigna (died 1936)",
+      "it": "laico spagnolo dell'Azione Cattolica, martire a Simat de la Valldigna (morto nel 1936)"
+    },
     "born": {
       "year": 1912,
       "precision": "year",
@@ -32314,7 +32404,10 @@
     "wikipedia": {}
   },
   "Q11719335": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr at Castillo de Villamalefa (died 1936)",
+      "it": "sacerdote spagnolo, martire a Castillo de Villamalefa (morto nel 1936)"
+    },
     "born": {
       "year": 1875,
       "precision": "year",
@@ -32329,7 +32422,10 @@
     "wikipedia": {}
   },
   "Q11719619": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese priest, martyr at Đồng Hới (died 1861)",
+      "it": "sacerdote vietnamita, martire a Đồng Hới (morto nel 1861)"
+    },
     "born": {
       "year": 1798,
       "precision": "year",
@@ -32344,7 +32440,10 @@
     "wikipedia": {}
   },
   "Q11730022": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr near Gandia (died 1936)",
+      "it": "sacerdote spagnolo, martire presso Gandia (morto nel 1936)"
+    },
     "born": {
       "year": 1903,
       "precision": "year",
@@ -32413,7 +32512,10 @@
     "wikipedia": {}
   },
   "Q11730259": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr at Riba-roja de Túria (died 1936)",
+      "it": "sacerdote spagnolo, martire a Riba-roja de Túria (morto nel 1936)"
+    },
     "born": {
       "year": 1874,
       "precision": "year",
@@ -32462,7 +32564,10 @@
     "wikipedia": {}
   },
   "Q11730900": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr at Rotglà i Corberà (died 1936)",
+      "it": "sacerdote spagnolo, martire a Rotglà i Corberà (morto nel 1936)"
+    },
     "born": {
       "year": 1879,
       "precision": "year",
@@ -32477,7 +32582,10 @@
     "wikipedia": {}
   },
   "Q11730902": {
-    "description": {},
+    "description": {
+      "en": "Spanish layman and father of a family, martyr at Paterna (died 1936)",
+      "it": "laico spagnolo e padre di famiglia, martire a Paterna (morto nel 1936)"
+    },
     "born": {
       "year": 1898,
       "precision": "year",
@@ -32534,7 +32642,10 @@
     }
   },
   "Q11731130": {
-    "description": {},
+    "description": {
+      "en": "Spanish lawyer and journalist, martyr at Paterna (died 1936)",
+      "it": "avvocato e giornalista spagnolo, martire a Paterna (morto nel 1936)"
+    },
     "born": {
       "year": 1911,
       "precision": "year",
@@ -32549,7 +32660,10 @@
     "wikipedia": {}
   },
   "Q11731134": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Dominican tertiary, martyr at Nam Định (died 1859)",
+      "it": "terziario domenicano vietnamita, martire a Nam Định (morto nel 1859)"
+    },
     "born": {
       "year": 1750,
       "precision": "century",
@@ -32600,7 +32714,10 @@
     "wikipedia": {}
   },
   "Q11731542": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese farmer and father of a family, martyr (died 1862)",
+      "it": "contadino vietnamita e padre di famiglia, martire (morto nel 1862)"
+    },
     "born": {
       "year": 1824,
       "precision": "year",
@@ -32615,7 +32732,10 @@
     "wikipedia": {}
   },
   "Q11731555": {
-    "description": {},
+    "description": {
+      "en": "young Vietnamese farmer, martyr at Hưng Yên (died 1862)",
+      "it": "giovane contadino vietnamita, martire a Hưng Yên (morto nel 1862)"
+    },
     "born": {
       "year": 1843,
       "precision": "year",
@@ -32630,7 +32750,10 @@
     "wikipedia": {}
   },
   "Q11736175": {
-    "description": {},
+    "description": {
+      "en": "Spanish layman of Catholic Action, martyr near Gandia (died 1936)",
+      "it": "laico spagnolo dell'Azione Cattolica, martire presso Gandia (morto nel 1936)"
+    },
     "born": {
       "year": 1894,
       "precision": "year",
@@ -32861,7 +32984,10 @@
     }
   },
   "Q11771379": {
-    "description": {},
+    "description": {
+      "en": "Spanish Dominican priest, martyr in Tonkin (died 1745)",
+      "it": "sacerdote domenicano spagnolo, martire nel Tonchino (morto nel 1745)"
+    },
     "born": {
       "year": 1702,
       "precision": "year",
@@ -32906,7 +33032,10 @@
     }
   },
   "Q11779053": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese Catholic martyr (died 1838)",
+      "it": "martire cattolico vietnamita (morto nel 1838)"
+    },
     "born": {
       "year": 1804,
       "precision": "year",
@@ -32941,7 +33070,10 @@
     }
   },
   "Q11814229": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese priest, martyr at Thị Nghè near Saigon (died 1859)",
+      "it": "sacerdote vietnamita, martire a Thị Nghè presso Saigon (morto nel 1859)"
+    },
     "born": {
       "year": 1830,
       "precision": "year",
@@ -32956,7 +33088,10 @@
     "wikipedia": {}
   },
   "Q11814286": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr (died 1838)",
+      "it": "catechista vietnamita, martire (morto nel 1838)"
+    },
     "born": {
       "year": 1798,
       "precision": "year",
@@ -33046,7 +33181,10 @@
     "wikipedia": {}
   },
   "Q11817765": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese priest, martyr at Hanoi (died 1833)",
+      "it": "sacerdote vietnamita, martire ad Hanoi (morto nel 1833)"
+    },
     "born": {
       "year": 1773,
       "precision": "year",
@@ -33080,7 +33218,10 @@
     "wikipedia": {}
   },
   "Q11817878": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr at Đồng Hới (died 1840)",
+      "it": "catechista vietnamita, martire a Đồng Hới (morto nel 1840)"
+    },
     "born": {
       "year": 1808,
       "precision": "year",
@@ -33095,7 +33236,10 @@
     "wikipedia": {}
   },
   "Q11817879": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr at Ninh Bình (died 1840)",
+      "it": "catechista vietnamita, martire a Ninh Bình (morto nel 1840)"
+    },
     "born": {
       "year": 1783,
       "precision": "year",
@@ -33151,7 +33295,10 @@
     "wikipedia": {}
   },
   "Q11818184": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr (died 1838)",
+      "it": "catechista vietnamita, martire (morto nel 1838)"
+    },
     "born": {
       "year": 1808,
       "precision": "year",
@@ -33166,7 +33313,10 @@
     "wikipedia": {}
   },
   "Q11818202": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese catechist, martyr (died 1838)",
+      "it": "catechista vietnamita, martire (morto nel 1838)"
+    },
     "born": {
       "year": 1816,
       "precision": "year",
@@ -33236,7 +33386,10 @@
     }
   },
   "Q11818324": {
-    "description": {},
+    "description": {
+      "en": "Franciscan priest and protomartyr killed at Marrakesh in 1220",
+      "it": "sacerdote francescano e protomartire, ucciso a Marrakech nel 1220"
+    },
     "born": {
       "year": 1150,
       "precision": "century",
@@ -33273,7 +33426,10 @@
     "wikipedia": {}
   },
   "Q11905296": {
-    "description": {},
+    "description": {
+      "en": "Portuguese Jesuit brother, martyr in prison at Suzuta, Japan (died 1620)",
+      "it": "fratello gesuita portoghese, martire in carcere a Suzuta in Giappone (morto nel 1620)"
+    },
     "born": {
       "year": 1551,
       "precision": "year",
@@ -33307,7 +33463,10 @@
     }
   },
   "Q12073898": {
-    "description": {},
+    "description": {
+      "en": "Greek Catholic layman of Pratulin, Poland, martyr (died 1874)",
+      "it": "laico greco-cattolico di Pratulin in Polonia, martire (morto nel 1874)"
+    },
     "born": {
       "year": 1824,
       "precision": "year",
@@ -33344,7 +33503,10 @@
     "wikipedia": {}
   },
   "Q12729956": {
-    "description": {},
+    "description": {
+      "en": "martyr at Bononia (Vidin) in Moesia",
+      "it": "martire a Bononia (Vidin) nella Mesia"
+    },
     "born": {
       "year": 300,
       "precision": "century",
@@ -33492,7 +33654,10 @@
     }
   },
   "Q14918019": {
-    "description": {},
+    "description": {
+      "en": "Spanish Capuchin priest, martyr near Castellón (died 1936)",
+      "it": "sacerdote cappuccino spagnolo, martire presso Castellón (morto nel 1936)"
+    },
     "born": {
       "year": 1879,
       "precision": "year",
@@ -33507,7 +33672,10 @@
     "wikipedia": {}
   },
   "Q14918043": {
-    "description": {},
+    "description": {
+      "en": "Spanish Capuchin deacon, martyr at Benicàssim (died 1936)",
+      "it": "diacono cappuccino spagnolo, martire a Benicàssim (morto nel 1936)"
+    },
     "born": {
       "year": 1913,
       "precision": "year",
@@ -33529,7 +33697,10 @@
     }
   },
   "Q14918045": {
-    "description": {},
+    "description": {
+      "en": "Spanish Capuchin priest, martyr at Carcaixent (died 1936)",
+      "it": "sacerdote cappuccino spagnolo, martire a Carcaixent (morto nel 1936)"
+    },
     "born": {
       "year": 1895,
       "precision": "year",
@@ -33679,7 +33850,10 @@
     }
   },
   "Q15964314": {
-    "description": {},
+    "description": {
+      "en": "Franciscan tertiary and hermit near Camerino (died 1373)",
+      "it": "terziario francescano ed eremita presso Camerino (morto nel 1373)"
+    },
     "born": {
       "year": 1320,
       "precision": "year",
@@ -33949,7 +34123,10 @@
     }
   },
   "Q16564360": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest, martyr near Valencia (died 1936)",
+      "it": "sacerdote spagnolo, martire presso Valencia (morto nel 1936)"
+    },
     "born": {
       "year": 1909,
       "precision": "year",
@@ -34189,7 +34366,10 @@
     }
   },
   "Q17362323": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest of the Diocesan Worker Priests, martyr near Toledo (died 1936)",
+      "it": "sacerdote spagnolo dei Sacerdoti operai diocesani, martire presso Toledo (morto nel 1936)"
+    },
     "born": {
       "year": 1908,
       "precision": "year",
@@ -34204,7 +34384,10 @@
     "wikipedia": {}
   },
   "Q17362375": {
-    "description": {},
+    "description": {
+      "en": "Spanish priest of the Diocesan Worker Priests, martyr near Toledo (died 1936)",
+      "it": "sacerdote spagnolo dei Sacerdoti operai diocesani, martire presso Toledo (morto nel 1936)"
+    },
     "born": {
       "year": 1888,
       "precision": "year",
@@ -34411,7 +34594,10 @@
     }
   },
   "Q20604815": {
-    "description": {},
+    "description": {
+      "en": "Japanese layman, one of the Twenty-six Martyrs of Japan (died 1597)",
+      "it": "laico giapponese, uno dei ventisei martiri del Giappone (morto nel 1597)"
+    },
     "born": null,
     "died": {
       "year": 1597,
@@ -34652,7 +34838,10 @@
     }
   },
   "Q23942989": {
-    "description": {},
+    "description": {
+      "en": "Spanish Dominican priest, martyr at Castelserás (died 1936)",
+      "it": "sacerdote domenicano spagnolo, martire a Castelserás (morto nel 1936)"
+    },
     "born": {
       "year": 1905,
       "precision": "year",
@@ -34784,6 +34973,23 @@
       "it": "Luigi Masferrer Vila"
     }
   },
+  "Q25445124": {
+    "description": {
+      "en": "hermit of Persian origin",
+      "it": "eremita di origine persiana presso Antiochia (IV secolo)"
+    },
+    "born": {
+      "year": 400,
+      "precision": "century",
+      "circa": false
+    },
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "en": "Aphrahat (hermit)",
+      "pt": "Afraates (ermitão)"
+    }
+  },
   "Q25906551": {
     "description": {
       "en": "Bishop of Évreux",
@@ -34823,7 +35029,10 @@
     }
   },
   "Q26246968": {
-    "description": {},
+    "description": {
+      "en": "Franciscan tertiary and merchant of Urbino (died 1304)",
+      "it": "terziario francescano e mercante di Urbino (morto nel 1304)"
+    },
     "born": {
       "year": 1240,
       "precision": "year",
