@@ -1416,6 +1416,18 @@
       "Speusippus": {
         "wikidata": "Q140717835",
         "status": "reviewed"
+      },
+      "Leonilla": {
+        "wikidata": "Q140718192",
+        "status": "auto"
+      },
+      "Elasippus": {
+        "wikidata": "Q140718015",
+        "status": "auto"
+      },
+      "Melasippus": {
+        "wikidata": "Q140718029",
+        "status": "auto"
       }
     },
     "mr:0117-sulpicius-pius": {
@@ -2676,6 +2688,12 @@
         "status": "reviewed"
       }
     },
+    "mr:0201-aloysius-variara": {
+      "Aloysius Variara": {
+        "wikidata": "Q721779",
+        "status": "auto"
+      }
+    },
     "mr:0201-andreas-de-comitibus-signiae": {
       "Andreas de Comitibus Signiae": {
         "wikidata": "Q2848882",
@@ -2819,6 +2837,22 @@
       },
       "Petrina Besson": {
         "wikidata": "Q141894162",
+        "status": "auto"
+      },
+      "Carola Davy": {
+        "wikidata": "Q63092723",
+        "status": "auto"
+      },
+      "Catharina Cottanceau": {
+        "wikidata": "Q4174285",
+        "status": "auto"
+      },
+      "Maria Anna Pichery": {
+        "wikidata": "Q115451001",
+        "status": "auto"
+      },
+      "Maria Anna Vaillot": {
+        "wikidata": "Q118445257",
         "status": "auto"
       }
     },
@@ -2970,9 +3004,27 @@
         "status": "auto"
       }
     },
+    "mr:0206-alphonsus-maria-fusco": {
+      "Alphonsus Maria Fusco": {
+        "wikidata": "Q1440029",
+        "status": "auto"
+      }
+    },
     "mr:0206-angelus-de-furcio": {
       "Angelus de Furcio": {
         "wikidata": "Q3617288",
+        "status": "auto"
+      }
+    },
+    "mr:0206-brinolfus-algotsson": {
+      "Brinolfus Algotsson": {
+        "wikidata": "Q332860",
+        "status": "auto"
+      }
+    },
+    "mr:0206-franciscus-spinelli": {
+      "Franciscus Spinelli": {
+        "wikidata": "Q3750691",
         "status": "auto"
       }
     },
@@ -3036,6 +3088,14 @@
       "Ioannes Kinuya": {
         "wikidata": "Q41962891",
         "status": "auto"
+      },
+      "Franciscus Adauctus": {
+        "wikidata": "Q18011455",
+        "status": "auto"
+      },
+      "Ioachim Sakakibara": {
+        "wikidata": "Q20606182",
+        "status": "auto"
       }
     },
     "mr:0207-adalbertus-nierychlewski": {
@@ -3063,6 +3123,12 @@
       },
       "Iacobus Sales": {
         "wikidata": "Q19841237",
+        "status": "auto"
+      }
+    },
+    "mr:0207-ioanna-maria-rendu": {
+      "Ioanna Maria Rendu": {
+        "wikidata": "Q3442221",
         "status": "auto"
       }
     },
@@ -3205,6 +3271,70 @@
       },
       "Saturninus iunior": {
         "wikidata": "Q85973623",
+        "status": "auto"
+      },
+      "Berectina": {
+        "wikidata": "Q85973478",
+        "status": "auto"
+      },
+      "Clautus": {
+        "wikidata": "Q85973067",
+        "status": "auto"
+      },
+      "Cæcilianus": {
+        "wikidata": "Q85972811",
+        "status": "auto"
+      },
+      "Dacianus": {
+        "wikidata": "Q85973451",
+        "status": "auto"
+      },
+      "Dativus": {
+        "wikidata": "Q85971792",
+        "status": "auto"
+      },
+      "Emeritus": {
+        "wikidata": "Q85972389",
+        "status": "auto"
+      },
+      "Givalius": {
+        "wikidata": "Q85973027",
+        "status": "auto"
+      },
+      "Honorata": {
+        "wikidata": "Q85973262",
+        "status": "auto"
+      },
+      "Maior": {
+        "wikidata": "Q85973253",
+        "status": "auto"
+      },
+      "Pelusius": {
+        "wikidata": "Q85973431",
+        "status": "auto"
+      },
+      "Pomponia": {
+        "wikidata": "Q85973038",
+        "status": "auto"
+      },
+      "Prima": {
+        "wikidata": "Q85972812",
+        "status": "auto"
+      },
+      "Regiola": {
+        "wikidata": "Q85973267",
+        "status": "auto"
+      },
+      "Telica": {
+        "wikidata": "Q85972590",
+        "status": "auto"
+      },
+      "Victoria": {
+        "wikidata": "Q85972007",
+        "status": "auto"
+      },
+      "Victorianus": {
+        "wikidata": "Q85972614",
         "status": "auto"
       }
     },
@@ -3388,6 +3518,12 @@
         "status": "auto"
       }
     },
+    "mr:0220-leo": {
+      "Leo": {
+        "wikidata": "Q2535424",
+        "status": "auto"
+      }
+    },
     "mr:0221-natalis-pinot": {
       "Natalis Pinot": {
         "wikidata": "Q321617",
@@ -3406,9 +3542,21 @@
         "status": "auto"
       }
     },
+    "mr:0222-aemilia-d-oultremont": {
+      "Aemilia d'Oultremont": {
+        "wikidata": "Q1154440",
+        "status": "auto"
+      }
+    },
     "mr:0222-cathedra-petri-apostoli": {
       "Petrus Apostolus": {
         "wikidata": "Q33923",
+        "status": "auto"
+      }
+    },
+    "mr:0222-didacus-carvalho": {
+      "Didacus Carvalho": {
+        "wikidata": "Q1226831",
         "status": "auto"
       }
     },
@@ -3460,9 +3608,31 @@
         "status": "auto"
       }
     },
+    "mr:0224-thomas-maria-fusco": {
+      "Thomas Maria Fusco": {
+        "wikidata": "Q3992800",
+        "status": "auto"
+      }
+    },
     "mr:0225-aloysius-versiglia-et-callistus-caravario": {
       "Callistus Caravario": {
         "wikidata": "Q1722511",
+        "status": "auto"
+      },
+      "Aloysius Versiglia": {
+        "wikidata": "Q536708",
+        "status": "auto"
+      }
+    },
+    "mr:0225-dominicus-lentini": {
+      "Dominicus Lentini": {
+        "wikidata": "Q3035298",
+        "status": "auto"
+      }
+    },
+    "mr:0225-laurentius-bai-xiaoman": {
+      "Laurentius Bai Xiaoman": {
+        "wikidata": "Q4075367",
         "status": "auto"
       }
     },
@@ -3548,6 +3718,12 @@
         "status": "auto"
       }
     },
+    "mr:0301-agnes-cao-kuiying": {
+      "Agnes Cao Kuiying": {
+        "wikidata": "Q4503086",
+        "status": "auto"
+      }
+    },
     "mr:0301-albinus": {
       "Albinus": {
         "wikidata": "Q2722964",
@@ -3587,6 +3763,12 @@
     "mr:0302-ceadda": {
       "Ceadda": {
         "wikidata": "Q742311",
+        "status": "auto"
+      }
+    },
+    "mr:0303-catharina-drexel": {
+      "Catharina Drexel": {
+        "wikidata": "Q254227",
         "status": "auto"
       }
     },
@@ -3704,6 +3886,12 @@
         "status": "auto"
       }
     },
+    "mr:0307-teresia-margarita-redi": {
+      "Teresia Margarita Redi": {
+        "wikidata": "Q168304",
+        "status": "auto"
+      }
+    },
     "mr:0307-thomas-de-aquino": {
       "Thomas de Aquino": {
         "wikidata": "Q9438",
@@ -3719,6 +3907,12 @@
     "mr:0308-stephanus": {
       "Stephanus": {
         "wikidata": "Q3065847",
+        "status": "auto"
+      }
+    },
+    "mr:0308-vincentius-kadlubek": {
+      "Vincentius Kadlubek": {
+        "wikidata": "Q369562",
         "status": "auto"
       }
     },
@@ -3749,6 +3943,10 @@
     "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong": {
       "Alexius U Se Yong": {
         "wikidata": "Q9146987",
+        "status": "auto"
+      },
+      "Marcus Chong Ui Bae": {
+        "wikidata": "Q11768071",
         "status": "auto"
       }
     },
@@ -3848,6 +4046,12 @@
         "status": "auto"
       }
     },
+    "mr:0315-artemidis-zatti": {
+      "Artemidis Zatti": {
+        "wikidata": "Q706591",
+        "status": "auto"
+      }
+    },
     "mr:0315-clemens-maria-hofbauer": {
       "Clemens Maria Hofbauer": {
         "wikidata": "Q508588",
@@ -3920,6 +4124,12 @@
         "status": "auto"
       }
     },
+    "mr:0318-salvator-de-horta": {
+      "Salvator de Horta": {
+        "wikidata": "Q1347691",
+        "status": "auto"
+      }
+    },
     "mr:0319-andreas-gallerani": {
       "Andreas Gallerani": {
         "wikidata": "Q9152033",
@@ -3935,6 +4145,12 @@
     "mr:0319-isnardus-de-chiampo": {
       "Isnardus de Chiampo": {
         "wikidata": "Q20029145",
+        "status": "auto"
+      }
+    },
+    "mr:0319-marcellus-callo": {
+      "Marcellus Callo": {
+        "wikidata": "Q568827",
         "status": "auto"
       }
     },
@@ -4054,9 +4270,21 @@
         "status": "reviewed"
       }
     },
+    "mr:0325-aemilianus-kovc": {
+      "Aemilianus Kovc": {
+        "wikidata": "Q557861",
+        "status": "auto"
+      }
+    },
     "mr:0325-lucia-filippini": {
       "Lucia Filippini": {
         "wikidata": "Q450999",
+        "status": "auto"
+      }
+    },
+    "mr:0325-margarita-clitherow": {
+      "Margarita Clitherow": {
+        "wikidata": "Q587909",
         "status": "auto"
       }
     },
@@ -4110,6 +4338,10 @@
       "Petrus Aumaître": {
         "wikidata": "Q8570542",
         "status": "auto"
+      },
+      "Lucas Hwang Sŏk-tu": {
+        "wikidata": "Q9394618",
+        "status": "auto"
       }
     },
     "mr:0330-helena-kafka": {
@@ -4148,6 +4380,12 @@
         "status": "auto"
       }
     },
+    "mr:0402-dominicus-tuoc": {
+      "Dominicus Tuoc": {
+        "wikidata": "Q16550430",
+        "status": "auto"
+      }
+    },
     "mr:0402-elisabeth-vendramini": {
       "Elisabeth Vendramini": {
         "wikidata": "Q3723268",
@@ -4163,6 +4401,12 @@
     "mr:0402-leopoldus-de-gaiche": {
       "Leopoldus de Gaiche": {
         "wikidata": "Q3830726",
+        "status": "auto"
+      }
+    },
+    "mr:0403-aloysius-scrosoppi": {
+      "Aloysius Scrosoppi": {
+        "wikidata": "Q114492",
         "status": "auto"
       }
     },
@@ -4184,6 +4428,12 @@
         "status": "auto"
       }
     },
+    "mr:0404-caietanus-catanoso": {
+      "Caietanus Catanoso": {
+        "wikidata": "Q967112",
+        "status": "auto"
+      }
+    },
     "mr:0404-franciscus-marto": {
       "Franciscus Marto": {
         "wikidata": "Q1442116",
@@ -4199,6 +4449,12 @@
     "mr:0405-anna-hoss": {
       "Anna Hoss": {
         "wikidata": "Q70504",
+        "status": "auto"
+      }
+    },
+    "mr:0405-catharina-tomas": {
+      "Catharina Tomas": {
+        "wikidata": "Q437427",
         "status": "auto"
       }
     },
@@ -4235,6 +4491,12 @@
     "mr:0406-petrus-veronensis": {
       "Petrus Veronensis": {
         "wikidata": "Q238744",
+        "status": "auto"
+      }
+    },
+    "mr:0406-zephyrinus-agostini": {
+      "Zephyrinus Agostini": {
+        "wikidata": "Q4024081",
         "status": "auto"
       }
     },
@@ -4278,6 +4540,18 @@
         "status": "auto"
       }
     },
+    "mr:0408-iulia-billiart": {
+      "Iulia Billiart": {
+        "wikidata": "Q259718",
+        "status": "auto"
+      }
+    },
+    "mr:0409-caelestina-faron": {
+      "Caelestina Faron": {
+        "wikidata": "Q2471413",
+        "status": "auto"
+      }
+    },
     "mr:0409-thomas-de-tolentino": {
       "Thomas de Tolentino": {
         "wikidata": "Q17609694",
@@ -4287,6 +4561,12 @@
     "mr:0410-antonius-neyrot": {
       "Antonius Neyrot": {
         "wikidata": "Q247270",
+        "status": "auto"
+      }
+    },
+    "mr:0410-bonifatius-zukowski": {
+      "Bonifatius Zukowski": {
+        "wikidata": "Q2910109",
         "status": "auto"
       }
     },
@@ -4386,6 +4666,12 @@
         "status": "auto"
       }
     },
+    "mr:0415-caesar-de-bus": {
+      "Caesar de Bus": {
+        "wikidata": "Q1150806",
+        "status": "auto"
+      }
+    },
     "mr:0415-damianus-de-veuster": {
       "Damianus de Veuster": {
         "wikidata": "Q232785",
@@ -4407,6 +4693,18 @@
     "mr:0416-engratia": {
       "Engratia": {
         "wikidata": "Q32313",
+        "status": "auto"
+      }
+    },
+    "mr:0416-maria-bernarda-soubirous": {
+      "Maria Bernarda Soubirous": {
+        "wikidata": "Q55398",
+        "status": "auto"
+      }
+    },
+    "mr:0417-catharina-tekakwitha": {
+      "Catharina Tekakwitha": {
+        "wikidata": "Q609",
         "status": "auto"
       }
     },
@@ -4494,6 +4792,12 @@
         "status": "auto"
       }
     },
+    "mr:0420-franciscus-page-et-robertus-watkinson": {
+      "Franciscus Page": {
+        "wikidata": "Q124029737",
+        "status": "auto"
+      }
+    },
     "mr:0420-iacobus-bell-et-ioannes-finch": {
       "Ioannes Finch": {
         "wikidata": "Q1700061",
@@ -4503,6 +4807,12 @@
     "mr:0421-anselmus": {
       "Anselmus": {
         "wikidata": "Q43939",
+        "status": "auto"
+      }
+    },
+    "mr:0421-bartholomaeus-cerveri": {
+      "Bartholomaeus Cerveri": {
+        "wikidata": "Q26258696",
         "status": "auto"
       }
     },
@@ -4698,6 +5008,12 @@
         "status": "auto"
       }
     },
+    "mr:0429-hugo": {
+      "Hugo": {
+        "wikidata": "Q540099",
+        "status": "auto"
+      }
+    },
     "mr:0429-torpes": {
       "Torpes": {
         "wikidata": "Q1303653",
@@ -4800,6 +5116,12 @@
         "status": "auto"
       }
     },
+    "mr:0503-aemilia-bicchieri": {
+      "Aemilia Bicchieri": {
+        "wikidata": "Q113347",
+        "status": "auto"
+      }
+    },
     "mr:0503-ansfridus": {
       "Ansfridus": {
         "wikidata": "Q569687",
@@ -4846,9 +5168,21 @@
         "status": "auto"
       }
     },
+    "mr:0505-catharina-cittadini": {
+      "Catharina Cittadini": {
+        "wikidata": "Q582335",
+        "status": "auto"
+      }
+    },
     "mr:0506-anna-rosa-gattorno": {
       "Anna Rosa Gattorno": {
         "wikidata": "Q3617816",
+        "status": "auto"
+      }
+    },
+    "mr:0506-bartholomaeus-pucci-franceschi": {
+      "Bartholomaeus Pucci Franceschi": {
+        "wikidata": "Q64031811",
         "status": "auto"
       }
     },
@@ -4876,6 +5210,12 @@
         "status": "auto"
       }
     },
+    "mr:0508-aloysius-rabata": {
+      "Aloysius Rabata": {
+        "wikidata": "Q9607681",
+        "status": "auto"
+      }
+    },
     "mr:0508-amatus-ronconi": {
       "Amatus Ronconi": {
         "wikidata": "Q17279025",
@@ -4885,6 +5225,12 @@
     "mr:0508-benedictus-ii": {
       "Benedictus II": {
         "wikidata": "Q163787",
+        "status": "auto"
+      }
+    },
+    "mr:0508-bonifatius-iv": {
+      "Bonifatius IV": {
+        "wikidata": "Q170505",
         "status": "auto"
       }
     },
@@ -4921,6 +5267,18 @@
     "mr:0510-ivanus-merz": {
       "Ivanus Merz": {
         "wikidata": "Q2378574",
+        "status": "auto"
+      }
+    },
+    "mr:0511-franciscus-de-geronimo": {
+      "Franciscus de Geronimo": {
+        "wikidata": "Q705056",
+        "status": "auto"
+      }
+    },
+    "mr:0511-gregorius-celli": {
+      "Gregorius Celli": {
+        "wikidata": "Q26763935",
         "status": "auto"
       }
     },
@@ -5027,6 +5385,12 @@
     "mr:0517-antonia-mesina": {
       "Antonia Mesina": {
         "wikidata": "Q2608376",
+        "status": "auto"
+      }
+    },
+    "mr:0517-iulia-salzano": {
+      "Iulia Salzano": {
+        "wikidata": "Q456574",
         "status": "auto"
       }
     },
@@ -5166,6 +5530,10 @@
       "Damianus Nam Myŏng-hyŏg": {
         "wikidata": "Q11692706",
         "status": "auto"
+      },
+      "Augustinus Yi Kwang Hon": {
+        "wikidata": "Q4260678",
+        "status": "auto"
       }
     },
     "mr:0524-ioannes-de-prado": {
@@ -5198,6 +5566,12 @@
         "status": "auto"
       }
     },
+    "mr:0525-dionysius-ssebuggwawo": {
+      "Dionysius Ssebuggwawo": {
+        "wikidata": "Q5257537",
+        "status": "auto"
+      }
+    },
     "mr:0525-gerardus-mecatti": {
       "Gerardus Mecatti": {
         "wikidata": "Q3761630",
@@ -5207,6 +5581,12 @@
     "mr:0525-gregorius-vii": {
       "Gregorius VII": {
         "wikidata": "Q133063",
+        "status": "auto"
+      }
+    },
+    "mr:0525-maria-magdalena-de-pazzi": {
+      "Maria Magdalena de Pazzi": {
+        "wikidata": "Q242040",
         "status": "auto"
       }
     },
@@ -5342,6 +5722,12 @@
         "status": "auto"
       }
     },
+    "mr:0530-lucas-kirby": {
+      "Lucas Kirby": {
+        "wikidata": "Q3046840",
+        "status": "auto"
+      }
+    },
     "mr:0531-nicolaus-barre": {
       "Nicolaus Barre": {
         "wikidata": "Q7029512",
@@ -5351,6 +5737,12 @@
     "mr:0531-noe-mawaggali": {
       "Noe Mawaggali": {
         "wikidata": "Q13124540",
+        "status": "auto"
+      }
+    },
+    "mr:0601-alphonsus-navarrete-et-socii": {
+      "Alphonsus Navarrete": {
+        "wikidata": "Q3611215",
         "status": "auto"
       }
     },
@@ -5422,6 +5814,18 @@
         "status": "auto"
       }
     },
+    "mr:0604-pacificus-ramati": {
+      "Pacificus Ramati": {
+        "wikidata": "Q7122828",
+        "status": "auto"
+      }
+    },
+    "mr:0604-philippus-smaldone": {
+      "Philippus Smaldone": {
+        "wikidata": "Q1414001",
+        "status": "auto"
+      }
+    },
     "mr:0604-quirinus": {
       "Quirinus": {
         "wikidata": "Q776193",
@@ -5452,6 +5856,12 @@
         "status": "auto"
       }
     },
+    "mr:0606-innocentius-guz": {
+      "Innocentius Guz": {
+        "wikidata": "Q4151688",
+        "status": "auto"
+      }
+    },
     "mr:0606-marcellinus-champagnat": {
       "Marcellinus Champagnat": {
         "wikidata": "Q559806",
@@ -5461,6 +5871,12 @@
     "mr:0606-norbertus": {
       "Norbertus": {
         "wikidata": "Q160374",
+        "status": "auto"
+      }
+    },
+    "mr:0606-raphael-guizar-valencia": {
+      "Raphael Guizar Valencia": {
+        "wikidata": "Q1339715",
         "status": "auto"
       }
     },
@@ -5602,6 +6018,12 @@
         "status": "auto"
       }
     },
+    "mr:0615-aloysius-maria-palazzolo": {
+      "Aloysius Maria Palazzolo": {
+        "wikidata": "Q2650537",
+        "status": "auto"
+      }
+    },
     "mr:0615-germana": {
       "Germana": {
         "wikidata": "Q2487594",
@@ -5650,6 +6072,12 @@
         "status": "auto"
       }
     },
+    "mr:0617-paulus-burali": {
+      "Paulus Burali": {
+        "wikidata": "Q2517901",
+        "status": "auto"
+      }
+    },
     "mr:0617-petrus-gambacorta": {
       "Petrus Gambacorta": {
         "wikidata": "Q3823036",
@@ -5693,6 +6121,22 @@
       },
       "Sebastianus Newdigate": {
         "wikidata": "Q7442488",
+        "status": "auto"
+      }
+    },
+    "mr:0620-franciscus-pacheco-et-socii": {
+      "Franciscus Pacheco": {
+        "wikidata": "Q11969873",
+        "status": "auto"
+      },
+      "Vincentius Kaun": {
+        "wikidata": "Q12599521",
+        "status": "auto"
+      }
+    },
+    "mr:0620-margarita-ball": {
+      "Margarita Ball": {
+        "wikidata": "Q540836",
         "status": "auto"
       }
     },
@@ -5774,15 +6218,33 @@
         "status": "auto"
       }
     },
+    "mr:0625-maria-lhuillier": {
+      "Maria Lhuillier": {
+        "wikidata": "Q22248752",
+        "status": "auto"
+      }
+    },
     "mr:0625-prosperus-aquitanus": {
       "Prosperus Aquitanus": {
         "wikidata": "Q454652",
         "status": "auto"
       }
     },
+    "mr:0626-raymundus-petiniaud-de-jourgnac": {
+      "Raymundus Petiniaud de Jourgnac": {
+        "wikidata": "Q112612563",
+        "status": "auto"
+      }
+    },
     "mr:0627-arialdus": {
       "Arialdus": {
         "wikidata": "Q654678",
+        "status": "auto"
+      }
+    },
+    "mr:0627-margarita-bays": {
+      "Margarita Bays": {
+        "wikidata": "Q3290670",
         "status": "auto"
       }
     },
@@ -5812,6 +6274,14 @@
       "Maria Zheng Xu": {
         "wikidata": "Q4515533",
         "status": "auto"
+      },
+      "Lucia Wang Cheng": {
+        "wikidata": "Q4103246",
+        "status": "auto"
+      },
+      "Maria Qi Yu": {
+        "wikidata": "Q4505486",
+        "status": "auto"
       }
     },
     "mr:0628-paulus-i": {
@@ -5832,15 +6302,43 @@
         "status": "auto"
       }
     },
+    "mr:0630-basilius-velyckovskyj": {
+      "Basilius Velyckovskyj": {
+        "wikidata": "Q48682",
+        "status": "auto"
+      }
+    },
+    "mr:0630-ianuarius-maria-sarnelli": {
+      "Ianuarius Maria Sarnelli": {
+        "wikidata": "Q3759821",
+        "status": "auto"
+      }
+    },
+    "mr:0630-philippus-powell": {
+      "Philippus Powell": {
+        "wikidata": "Q7184229",
+        "status": "auto"
+      }
+    },
     "mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui": {
       "Petrus Li Quanhui": {
         "wikidata": "Q4260736",
+        "status": "auto"
+      },
+      "Raymundus Li Quanzhen": {
+        "wikidata": "Q4260737",
         "status": "auto"
       }
     },
     "mr:0630-theobaldus": {
       "Theobaldus": {
         "wikidata": "Q2210029",
+        "status": "auto"
+      }
+    },
+    "mr:0701-ignatius-falzon": {
+      "Ignatius Falzon": {
+        "wikidata": "Q1225497",
         "status": "auto"
       }
     },
@@ -5907,6 +6405,12 @@
     "mr:0704-caesidius-giacomantonio": {
       "Caesidius Giacomantonio": {
         "wikidata": "Q1090021",
+        "status": "auto"
+      }
+    },
+    "mr:0704-catharina-jarrige": {
+      "Catharina Jarrige": {
+        "wikidata": "Q2500582",
         "status": "auto"
       }
     },
@@ -5996,6 +6500,12 @@
         "status": "auto"
       }
     },
+    "mr:0707-marcus-ji-tianxiang": {
+      "Marcus Ji Tianxiang": {
+        "wikidata": "Q4505419",
+        "status": "auto"
+      }
+    },
     "mr:0707-maria-romero-meneses": {
       "Maria Romero Meneses": {
         "wikidata": "Q299848",
@@ -6080,6 +6590,238 @@
       "Theodoricus Balat": {
         "wikidata": "Q74250662",
         "status": "auto"
+      },
+      "Agatha Lin Zhao": {
+        "wikidata": "Q2826467",
+        "status": "auto"
+      },
+      "Agnes Cao Kuiying": {
+        "wikidata": "Q4503086",
+        "status": "auto"
+      },
+      "Albericus Crescitelli": {
+        "wikidata": "Q2664681",
+        "status": "auto"
+      },
+      "Aloysius Versiglia": {
+        "wikidata": "Q536708",
+        "status": "auto"
+      },
+      "Andreas Wang Tianqing": {
+        "wikidata": "Q4103237",
+        "status": "auto"
+      },
+      "Anna Wang": {
+        "wikidata": "Q4103195",
+        "status": "auto"
+      },
+      "Antoninus Fantosati": {
+        "wikidata": "Q2437591",
+        "status": "auto"
+      },
+      "Augustinus Zhao Rong": {
+        "wikidata": "Q552659",
+        "status": "auto"
+      },
+      "Augustus Chapdelaine": {
+        "wikidata": "Q2585215",
+        "status": "auto"
+      },
+      "Callistus Caravario": {
+        "wikidata": "Q1722511",
+        "status": "auto"
+      },
+      "Cæsidius Giacomantonio": {
+        "wikidata": "Q1090021",
+        "status": "auto"
+      },
+      "Franciscus Fernández de Capillas": {
+        "wikidata": "Q1063022",
+        "status": "auto"
+      },
+      "Franciscus Fogolla": {
+        "wikidata": "Q2293099",
+        "status": "auto"
+      },
+      "Franciscus Maria Lantrua": {
+        "wikidata": "Q1868144",
+        "status": "auto"
+      },
+      "Franciscus Serrano": {
+        "wikidata": "Q4417821",
+        "status": "auto"
+      },
+      "Franciscus Zhang Rong": {
+        "wikidata": "Q4515444",
+        "status": "auto"
+      },
+      "Gabriel Taurinus Dufresse": {
+        "wikidata": "Q2559842",
+        "status": "auto"
+      },
+      "Hieronymus Lu Tingmei": {
+        "wikidata": "Q4267686",
+        "status": "auto"
+      },
+      "Ioannes Alcober": {
+        "wikidata": "Q4063485",
+        "status": "auto"
+      },
+      "Ioannes Baptista Wu Mantang": {
+        "wikidata": "Q11717214",
+        "status": "auto"
+      },
+      "Ioannes Baptista Zhao Mingxi": {
+        "wikidata": "Q11717216",
+        "status": "auto"
+      },
+      "Ioannes Chen Xianheng": {
+        "wikidata": "Q4518501",
+        "status": "auto"
+      },
+      "Ioannes Petrus Néel": {
+        "wikidata": "Q3169615",
+        "status": "auto"
+      },
+      "Ioannes Zhang Tianshen": {
+        "wikidata": "Q4515452",
+        "status": "auto"
+      },
+      "Iosephus Ma Taishun": {
+        "wikidata": "Q4274687",
+        "status": "auto"
+      },
+      "Iosephus Maria Gambaro": {
+        "wikidata": "Q4132991",
+        "status": "auto"
+      },
+      "Iosephus Wang Yumei": {
+        "wikidata": "Q4103248",
+        "status": "auto"
+      },
+      "Iosephus Yuan Zaide": {
+        "wikidata": "Q4533488",
+        "status": "auto"
+      },
+      "Iosephus Zhang Dapeng": {
+        "wikidata": "Q4515442",
+        "status": "auto"
+      },
+      "Iosephus Zhang Wenlan": {
+        "wikidata": "Q4515438",
+        "status": "auto"
+      },
+      "Laurentius Bai Xiaoman": {
+        "wikidata": "Q4075367",
+        "status": "auto"
+      },
+      "Lucia Wang Cheng": {
+        "wikidata": "Q4103246",
+        "status": "auto"
+      },
+      "Lucia Yi Zhenmei": {
+        "wikidata": "Q4195074",
+        "status": "auto"
+      },
+      "Magdalena Du Fengju": {
+        "wikidata": "Q4169024",
+        "status": "auto"
+      },
+      "Marcus Ji Tianxiang": {
+        "wikidata": "Q4505419",
+        "status": "auto"
+      },
+      "Maria Fan Kun": {
+        "wikidata": "Q4481157",
+        "status": "auto"
+      },
+      "Maria Fu Guilin": {
+        "wikidata": "Q4493263",
+        "status": "auto"
+      },
+      "Maria Guo Lizhi": {
+        "wikidata": "Q4140823",
+        "status": "auto"
+      },
+      "Maria Qi Yu": {
+        "wikidata": "Q4505486",
+        "status": "auto"
+      },
+      "Maria Zheng Xu": {
+        "wikidata": "Q4515533",
+        "status": "auto"
+      },
+      "Martinus Wu Xuesheng": {
+        "wikidata": "Q4468229",
+        "status": "auto"
+      },
+      "Modestus Andlauer": {
+        "wikidata": "Q2565740",
+        "status": "auto"
+      },
+      "Paulus Chen Changpin": {
+        "wikidata": "Q4518508",
+        "status": "auto"
+      },
+      "Paulus Denn": {
+        "wikidata": "Q603239",
+        "status": "auto"
+      },
+      "Paulus Lang Fu": {
+        "wikidata": "Q4253695",
+        "status": "auto"
+      },
+      "Paulus Liu Hanzuo": {
+        "wikidata": "Q4271317",
+        "status": "auto"
+      },
+      "Paulus Liu Jinde": {
+        "wikidata": "Q4271318",
+        "status": "auto"
+      },
+      "Paulus Wu Wanshu": {
+        "wikidata": "Q646792",
+        "status": "auto"
+      },
+      "Petrus Li Quanhui": {
+        "wikidata": "Q4260736",
+        "status": "auto"
+      },
+      "Petrus Sans i Jorda": {
+        "wikidata": "Q864852",
+        "status": "auto"
+      },
+      "Petrus Wu Guosheng": {
+        "wikidata": "Q4468216",
+        "status": "auto"
+      },
+      "Petrus Zhao Mingzhen": {
+        "wikidata": "Q4515471",
+        "status": "auto"
+      },
+      "Philippus Zhang Zhihe": {
+        "wikidata": "Q4515460",
+        "status": "auto"
+      },
+      "Raymundus Li Quanzhen": {
+        "wikidata": "Q4260737",
+        "status": "auto"
+      },
+      "Rosa Fan Hui": {
+        "wikidata": "Q4481160",
+        "status": "auto"
+      },
+      "Rosa Zhao": {
+        "wikidata": "Q9325793",
+        "status": "auto"
+      },
+      "Simon Qin Chunfu": {
+        "wikidata": "Q4505791",
+        "status": "auto"
+      },
+      "Thaddæus Liu Ruiting": {
+        "wikidata": "Q4271306",
+        "status": "auto"
       }
     },
     "mr:0709-gregorius-grassus-et-socii": {
@@ -6130,6 +6872,24 @@
       "Theodoricus Balat": {
         "wikidata": "Q74250662",
         "status": "auto"
+      },
+      "Franciscus Fogolla": {
+        "wikidata": "Q2293099",
+        "status": "auto"
+      },
+      "Franciscus Zhang Rong": {
+        "wikidata": "Q4515444",
+        "status": "auto"
+      },
+      "Philippus Zhang Zhihe": {
+        "wikidata": "Q4515460",
+        "status": "auto"
+      }
+    },
+    "mr:0709-hadrianus-fortescue": {
+      "Hadrianus Fortescue": {
+        "wikidata": "Q372929",
+        "status": "auto"
       }
     },
     "mr:0709-ioanna-scopelli": {
@@ -6145,6 +6905,14 @@
       },
       "Andreas Wouters": {
         "wikidata": "Q107076198",
+        "status": "auto"
+      },
+      "Iacobus Lacops": {
+        "wikidata": "Q20028600",
+        "status": "auto"
+      },
+      "Ioannes Coloniensis": {
+        "wikidata": "Q2296290",
         "status": "auto"
       }
     },
@@ -6163,6 +6931,10 @@
     "mr:0710-anatolia-et-victoria": {
       "Anatolia": {
         "wikidata": "Q3615108",
+        "status": "auto"
+      },
+      "Victoria": {
+        "wikidata": "Q107444476",
         "status": "auto"
       }
     },
@@ -6214,6 +6986,12 @@
         "status": "auto"
       }
     },
+    "mr:0712-nabor-et-felix": {
+      "Felix": {
+        "wikidata": "Q2182480",
+        "status": "auto"
+      }
+    },
     "mr:0712-viventiolus": {
       "Viventiolus": {
         "wikidata": "Q3030296",
@@ -6229,6 +7007,12 @@
     "mr:0713-esdra": {
       "Esdra": {
         "wikidata": "Q191787",
+        "status": "auto"
+      }
+    },
+    "mr:0713-ferdinandus-maria-baccilieri": {
+      "Ferdinandus Maria Baccilieri": {
+        "wikidata": "Q3742628",
         "status": "auto"
       }
     },
@@ -6259,6 +7043,12 @@
     "mr:0714-camillus-de-lellis": {
       "Camillus de Lellis": {
         "wikidata": "Q332656",
+        "status": "auto"
+      }
+    },
+    "mr:0714-franciscus-solano": {
+      "Franciscus Solano": {
+        "wikidata": "Q2352076",
         "status": "auto"
       }
     },
@@ -6298,6 +7088,12 @@
         "status": "auto"
       }
     },
+    "mr:0715-ignatius-de-azevedo-et-socii": {
+      "Ignatius de Azevedo": {
+        "wikidata": "Q1671878",
+        "status": "auto"
+      }
+    },
     "mr:0715-pompilius-maria-pirrotti": {
       "Pompilius Maria Pirrotti": {
         "wikidata": "Q954021",
@@ -6334,9 +7130,21 @@
         "status": "auto"
       }
     },
+    "mr:0716-maria-magdalena-postel": {
+      "Maria Magdalena Postel": {
+        "wikidata": "Q456249",
+        "status": "auto"
+      }
+    },
     "mr:0716-monulphus-et-gondulphus": {
       "Monulphus": {
         "wikidata": "Q2319824",
+        "status": "auto"
+      }
+    },
+    "mr:0716-nicolaus-savouret-et-claudius-beguignot": {
+      "Claudius Beguignot": {
+        "wikidata": "Q134347932",
         "status": "auto"
       }
     },
@@ -6440,6 +7248,14 @@
       "Maria Won Kwi-im": {
         "wikidata": "Q11769242",
         "status": "auto"
+      },
+      "Ioannes Baptista Yi Kwang-nyol": {
+        "wikidata": "Q6220606",
+        "status": "auto"
+      },
+      "Lucia Kim": {
+        "wikidata": "Q9394486",
+        "status": "auto"
       }
     },
     "mr:0720-maria-fu-guilin": {
@@ -6502,6 +7318,10 @@
       "Ioannes Lloyd": {
         "wikidata": "Q14918258",
         "status": "auto"
+      },
+      "Philippus Evans": {
+        "wikidata": "Q2884061",
+        "status": "auto"
       }
     },
     "mr:0722-wandregisilus": {
@@ -6560,6 +7380,12 @@
         "status": "auto"
       }
     },
+    "mr:0724-sarbelius-makhluf": {
+      "Sarbelius Makhluf": {
+        "wikidata": "Q331876",
+        "status": "auto"
+      }
+    },
     "mr:0725-carolus-rubio-alvarez-et-socii": {
       "Carolus Rubio Alvarez": {
         "wikidata": "Q24451647",
@@ -6569,6 +7395,14 @@
     "mr:0725-deogratias-palacios-et-socii": {
       "Iosephus Rada": {
         "wikidata": "Q4387089",
+        "status": "auto"
+      },
+      "Iulianus Moreno": {
+        "wikidata": "Q4302652",
+        "status": "auto"
+      },
+      "Leo Inchausti": {
+        "wikidata": "Q4202322",
         "status": "auto"
       }
     },
@@ -6581,6 +7415,12 @@
     "mr:0725-olympias": {
       "Olympias": {
         "wikidata": "Q1609579",
+        "status": "auto"
+      }
+    },
+    "mr:0725-radulphus-aquaviva-et-socii": {
+      "Franciscus Aranha": {
+        "wikidata": "Q19858478",
         "status": "auto"
       }
     },
@@ -6696,11 +7536,21 @@
       "Iosephus Zhang Wenlan": {
         "wikidata": "Q4515438",
         "status": "auto"
+      },
+      "Paulus Chen Changpin": {
+        "wikidata": "Q4518508",
+        "status": "auto"
       }
     },
     "mr:0729-lazarus-et-maria": {
       "Lazarus": {
         "wikidata": "Q539890",
+        "status": "auto"
+      }
+    },
+    "mr:0729-lucius-martinez-mancebo-et-socii": {
+      "Lucius Martinez Mancebo": {
+        "wikidata": "Q10322268",
         "status": "auto"
       }
     },
@@ -6724,6 +7574,10 @@
       "Iosephus Maria Muro Sanmiguel": {
         "wikidata": "Q23942989",
         "status": "auto"
+      },
+      "Zosimus Izquierdo Gil": {
+        "wikidata": "Q9392041",
+        "status": "auto"
       }
     },
     "mr:0730-iosephus-yuan-gengyin": {
@@ -6741,6 +7595,18 @@
     "mr:0730-petrus-chrysologus": {
       "Petrus Chrysologus": {
         "wikidata": "Q328742",
+        "status": "auto"
+      }
+    },
+    "mr:0730-sergius-cid-pazo": {
+      "Sergius Cid Pazo": {
+        "wikidata": "Q9335470",
+        "status": "auto"
+      }
+    },
+    "mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa": {
+      "Franciscus Remon Jativa": {
+        "wikidata": "Q16546053",
         "status": "auto"
       }
     },
@@ -6798,6 +7664,12 @@
         "status": "auto"
       }
     },
+    "mr:0802-franciscus-tomas-serer": {
+      "Franciscus Tomas Serer": {
+        "wikidata": "Q132773714",
+        "status": "auto"
+      }
+    },
     "mr:0802-petrus-iulianus-eymard": {
       "Petrus Iulianus Eymard": {
         "wikidata": "Q560994",
@@ -6810,15 +7682,45 @@
         "status": "auto"
       }
     },
+    "mr:0802-zephyrinus-gimenez-malla": {
+      "Zephyrinus Gimenez Malla": {
+        "wikidata": "Q1010534",
+        "status": "auto"
+      }
+    },
+    "mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador": {
+      "Alphonsus Lopez Lopez": {
+        "wikidata": "Q16159379",
+        "status": "auto"
+      }
+    },
     "mr:0803-augustinus-kazotic": {
       "Augustinus Kazotic": {
         "wikidata": "Q2714860",
         "status": "auto"
       }
     },
+    "mr:0803-franciscus-bandres-sanchez": {
+      "Franciscus Bandres Sanchez": {
+        "wikidata": "Q110216958",
+        "status": "auto"
+      }
+    },
+    "mr:0803-salvator-ferrandis-segui": {
+      "Salvator Ferrandis Segui": {
+        "wikidata": "Q3474387",
+        "status": "auto"
+      }
+    },
     "mr:0804-euphronius": {
       "Euphronius": {
         "wikidata": "Q741024",
+        "status": "auto"
+      }
+    },
+    "mr:0804-fridericus-janssoone": {
+      "Fridericus Janssoone": {
+        "wikidata": "Q1816380",
         "status": "auto"
       }
     },
@@ -6904,6 +7806,12 @@
         "status": "auto"
       }
     },
+    "mr:0808-antonius-silvestre-moya": {
+      "Antonius Silvestre Moya": {
+        "wikidata": "Q9157374",
+        "status": "auto"
+      }
+    },
     "mr:0808-famianus": {
       "Famianus": {
         "wikidata": "Q23307590",
@@ -6925,6 +7833,12 @@
     "mr:0809-editha-stein": {
       "Editha Stein": {
         "wikidata": "Q76749",
+        "status": "auto"
+      }
+    },
+    "mr:0809-faustinus-oteiza-et-florentinus-felipe": {
+      "Faustinus Oteiza": {
+        "wikidata": "Q23943018",
         "status": "auto"
       }
     },
@@ -7052,6 +7966,18 @@
       "Sebastianus Calvo Martinez": {
         "wikidata": "Q28839309",
         "status": "auto"
+      },
+      "Gregorius Chirivás Lacambra": {
+        "wikidata": "Q28668849",
+        "status": "auto"
+      },
+      "Nicasius Sierra Ucar": {
+        "wikidata": "Q28779255",
+        "status": "auto"
+      },
+      "Venceslaus Clarís Vilaregut": {
+        "wikidata": "Q44451930",
+        "status": "auto"
       }
     },
     "mr:0812-victoria-diez-y-bustos-de-molina": {
@@ -7118,6 +8044,44 @@
       "Stephanus Casadevall Puig": {
         "wikidata": "Q47544976",
         "status": "auto"
+      },
+      "Alphonsus Miquel Garriga": {
+        "wikidata": "Q30001868",
+        "status": "auto"
+      },
+      "Antoninus Calvo Calvo": {
+        "wikidata": "Q30076334",
+        "status": "auto"
+      },
+      "Emmanuel Buil Lalueza": {
+        "wikidata": "Q30127671",
+        "status": "auto"
+      },
+      "Emmanuel Torras Sais": {
+        "wikidata": "Q30332124",
+        "status": "auto"
+      },
+      "Hilarius Maria Llorente Martín": {
+        "wikidata": "Q47544997",
+        "status": "auto"
+      },
+      "Raymundus Novich Rabionet": {
+        "wikidata": "Q47545000",
+        "status": "auto"
+      },
+      "Salvator Pigem Serra": {
+        "wikidata": "Q47545008",
+        "status": "auto"
+      },
+      "Thomas Capdevila Miró": {
+        "wikidata": "Q47240156",
+        "status": "auto"
+      }
+    },
+    "mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon": {
+      "Franciscus Shoyemon": {
+        "wikidata": "Q27093651",
+        "status": "auto"
       }
     },
     "mr:0814-elisabeth-renzi": {
@@ -7148,6 +8112,18 @@
       "Alypius": {
         "wikidata": "Q2840668",
         "status": "reviewed"
+      }
+    },
+    "mr:0815-augustinus-hurtado-soler": {
+      "Augustinus Hurtado Soler": {
+        "wikidata": "Q23942976",
+        "status": "auto"
+      }
+    },
+    "mr:0815-carmelus-sastre-sastre": {
+      "Carmelus Sastre Sastre": {
+        "wikidata": "Q11735904",
+        "status": "auto"
       }
     },
     "mr:0815-iacobus-bonet-nadal": {
@@ -7212,6 +8188,38 @@
       "Eduardus Ripoll Diego": {
         "wikidata": "Q30127666",
         "status": "auto"
+      },
+      "Alphonsus Sorribes Teixidó": {
+        "wikidata": "Q30063299",
+        "status": "auto"
+      },
+      "Emmanuel Martínez Jarauta": {
+        "wikidata": "Q30230509",
+        "status": "auto"
+      },
+      "Faustinus Pérez García": {
+        "wikidata": "Q30034697",
+        "status": "auto"
+      },
+      "Franciscus Castán Messeguer": {
+        "wikidata": "Q47545041",
+        "status": "auto"
+      },
+      "Franciscus Maria Roura Farró": {
+        "wikidata": "Q47545072",
+        "status": "auto"
+      },
+      "Michael Masip González": {
+        "wikidata": "Q47545058",
+        "status": "auto"
+      },
+      "Raphael Briega Morales": {
+        "wikidata": "Q47545040",
+        "status": "auto"
+      },
+      "Raymundus Illa Salvía": {
+        "wikidata": "Q47545053",
+        "status": "auto"
       }
     },
     "mr:0815-richardus-granzotto": {
@@ -7250,6 +8258,12 @@
         "status": "auto"
       }
     },
+    "mr:0816-rosa-fan-hui": {
+      "Rosa Fan Hui": {
+        "wikidata": "Q4481160",
+        "status": "auto"
+      }
+    },
     "mr:0817-iacobus-kyuhei-gorobioye-tomonaga-et-michael-kurobioye": {
       "Iacobus Kyuhei Gorobioye Tomonaga": {
         "wikidata": "Q3595066",
@@ -7280,6 +8294,12 @@
         "status": "auto"
       }
     },
+    "mr:0818-franciscus-arias-martin": {
+      "Franciscus Arias Martin": {
+        "wikidata": "Q62738299",
+        "status": "auto"
+      }
+    },
     "mr:0818-helena": {
       "Helena": {
         "wikidata": "Q170164",
@@ -7301,6 +8321,12 @@
     "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii": {
       "Elvira Torrentalle Paraire": {
         "wikidata": "Q14918543",
+        "status": "auto"
+      }
+    },
+    "mr:0819-franciscus-ibanez-ibanez": {
+      "Franciscus Ibanez Ibanez": {
+        "wikidata": "Q9262461",
         "status": "auto"
       }
     },
@@ -7382,6 +8408,12 @@
         "status": "auto"
       }
     },
+    "mr:0822-dominicus-peroni": {
+      "Dominicus Peroni": {
+        "wikidata": "Q950854",
+        "status": "auto"
+      }
+    },
     "mr:0822-iacobus-bianconi": {
       "Iacobus Bianconi": {
         "wikidata": "Q26259937",
@@ -7416,11 +8448,27 @@
       "Petrus Gelabert Amer": {
         "wikidata": "Q16588083",
         "status": "auto"
+      },
+      "Constantinus Carbonell Sempere": {
+        "wikidata": "Q16567686",
+        "status": "auto"
+      }
+    },
+    "mr:0823-florentinus-perez-romero-et-urbanus-gil-saez": {
+      "Urbanus Gil Saez": {
+        "wikidata": "Q9366994",
+        "status": "auto"
       }
     },
     "mr:0823-protasius-bourdon": {
       "Protasius Bourdon": {
         "wikidata": "Q140797628",
+        "status": "auto"
+      }
+    },
+    "mr:0824-aemilia-de-vialar": {
+      "Aemilia de Vialar": {
+        "wikidata": "Q440056",
         "status": "auto"
       }
     },
@@ -7464,9 +8512,27 @@
         "status": "auto"
       }
     },
+    "mr:0825-thomas-cantelupe": {
+      "Thomas Cantelupe": {
+        "wikidata": "Q7795462",
+        "status": "auto"
+      }
+    },
     "mr:0826-iacobus-retouret": {
       "Iacobus Retouret": {
         "wikidata": "Q3159864",
+        "status": "auto"
+      }
+    },
+    "mr:0826-teresia-jornet-ibars": {
+      "Teresia Jornet Ibars": {
+        "wikidata": "Q467186",
+        "status": "auto"
+      }
+    },
+    "mr:0827-angelus-conti": {
+      "Angelus Conti": {
+        "wikidata": "Q26838309",
         "status": "auto"
       }
     },
@@ -7485,6 +8551,12 @@
     "mr:0827-gebhardus": {
       "Gebhardus": {
         "wikidata": "Q106643",
+        "status": "auto"
+      }
+    },
+    "mr:0827-rogerius-cadwallador": {
+      "Rogerius Cadwallador": {
+        "wikidata": "Q7357942",
         "status": "auto"
       }
     },
@@ -7558,6 +8630,12 @@
         "status": "auto"
       }
     },
+    "mr:0830-margarita-ward": {
+      "Margarita Ward": {
+        "wikidata": "Q1141647",
+        "status": "auto"
+      }
+    },
     "mr:0830-maria-rafols": {
       "Maria Rafols": {
         "wikidata": "Q3825669",
@@ -7576,6 +8654,12 @@
         "status": "reviewed"
       }
     },
+    "mr:0831-raymundus-nonnatus": {
+      "Raymundus Nonnatus": {
+        "wikidata": "Q704364",
+        "status": "auto"
+      }
+    },
     "mr:0901-iosue": {
       "Iosue": {
         "wikidata": "Q7734",
@@ -7585,6 +8669,12 @@
     "mr:0901-lupus": {
       "Lupus": {
         "wikidata": "Q1495753",
+        "status": "auto"
+      }
+    },
+    "mr:0902-ingridis-elofsdotter": {
+      "Ingridis Elofsdotter": {
+        "wikidata": "Q444475",
         "status": "auto"
       }
     },
@@ -7639,6 +8729,18 @@
       },
       "Robertus le Bis": {
         "wikidata": "Q16596659",
+        "status": "auto"
+      },
+      "Franciscus Iosephus de la Rochefoucauld": {
+        "wikidata": "Q1133720",
+        "status": "auto"
+      },
+      "Petrus Ludovicus de la Rochefoucauld": {
+        "wikidata": "Q3383307",
+        "status": "auto"
+      },
+      "Vincentius Abraham": {
+        "wikidata": "Q9374957",
         "status": "auto"
       }
     },
@@ -7702,9 +8804,27 @@
         "status": "auto"
       }
     },
+    "mr:0904-bonifatius-i": {
+      "Bonifatius I": {
+        "wikidata": "Q160907",
+        "status": "auto"
+      }
+    },
+    "mr:0904-catharina-mattei": {
+      "Catharina Mattei": {
+        "wikidata": "Q466543",
+        "status": "auto"
+      }
+    },
     "mr:0904-dina-belanger": {
       "Dina Belanger": {
         "wikidata": "Q3028232",
+        "status": "auto"
+      }
+    },
+    "mr:0904-franciscus-sendra-ivars": {
+      "Franciscus Sendra Ivars": {
+        "wikidata": "Q11698721",
         "status": "auto"
       }
     },
@@ -7718,6 +8838,10 @@
       "Iosephus Hoang Luong Canh": {
         "wikidata": "Q11730368",
         "status": "auto"
+      },
+      "Petrus Nguyen Van Tu": {
+        "wikidata": "Q10805746",
+        "status": "auto"
       }
     },
     "mr:0905-teresia-calcuttae": {
@@ -7729,6 +8853,12 @@
     "mr:0906-bertrandus-de-garrigues": {
       "Bertrandus de Garrigues": {
         "wikidata": "Q2899732",
+        "status": "auto"
+      }
+    },
+    "mr:0906-didacus-llorca-llopis": {
+      "Didacus Llorca Llopis": {
+        "wikidata": "Q9213511",
         "status": "auto"
       }
     },
@@ -7832,6 +8962,12 @@
         "status": "auto"
       }
     },
+    "mr:0909-franciscus-garate-aranguren": {
+      "Franciscus Garate Aranguren": {
+        "wikidata": "Q5865944",
+        "status": "auto"
+      }
+    },
     "mr:0909-petrus-bonhomme": {
       "Petrus Bonhomme": {
         "wikidata": "Q3384073",
@@ -7886,6 +9022,12 @@
         "status": "auto"
       }
     },
+    "mr:0913-benvenutus-villalon-acebron": {
+      "Benvenutus Villalon Acebron": {
+        "wikidata": "Q128192107",
+        "status": "auto"
+      }
+    },
     "mr:0913-marcellinus": {
       "Marcellinus": {
         "wikidata": "Q1291016",
@@ -7907,6 +9049,18 @@
     "mr:0914-ioannes-chrysostomus": {
       "Ioannes Chrysostomus": {
         "wikidata": "Q43706",
+        "status": "auto"
+      }
+    },
+    "mr:0915-antonius-maria-schwartz": {
+      "Antonius Maria Schwartz": {
+        "wikidata": "Q86031",
+        "status": "auto"
+      }
+    },
+    "mr:0915-paulus-manna": {
+      "Paulus Manna": {
+        "wikidata": "Q245758",
         "status": "auto"
       }
     },
@@ -7949,6 +9103,12 @@
     "mr:0916-vitalis": {
       "Vitalis": {
         "wikidata": "Q1117753",
+        "status": "auto"
+      }
+    },
+    "mr:0917-franciscus-maria-de-camporosso": {
+      "Franciscus Maria de Camporosso": {
+        "wikidata": "Q934434",
         "status": "auto"
       }
     },
@@ -8009,6 +9169,12 @@
     "mr:0918-iosephus-de-cupertino": {
       "Iosephus de Cupertino": {
         "wikidata": "Q313807",
+        "status": "auto"
+      }
+    },
+    "mr:0919-alphonsus-de-orozco": {
+      "Alphonsus de Orozco": {
+        "wikidata": "Q2056008",
         "status": "auto"
       }
     },
@@ -8288,6 +9454,62 @@
       "Augustinus Yu Chin-gil": {
         "wikidata": "Q4533464",
         "status": "auto"
+      },
+      "Bartholomæus Chŏng Mun-ho": {
+        "wikidata": "Q9166256",
+        "status": "auto"
+      },
+      "Catharina Chŏng Ch’ŏr-yŏm": {
+        "wikidata": "Q11736935",
+        "status": "auto"
+      },
+      "Catharina Yi": {
+        "wikidata": "Q4260689",
+        "status": "auto"
+      },
+      "Cæcilia Yu So-sa": {
+        "wikidata": "Q4533462",
+        "status": "auto"
+      },
+      "Franciscus Ch’oe Kyŏng-hwan": {
+        "wikidata": "Q9262301",
+        "status": "auto"
+      },
+      "Ioannes Baptista Chŏn Chang-un": {
+        "wikidata": "Q11717203",
+        "status": "auto"
+      },
+      "Ioannes Baptista Nam Chong-sam": {
+        "wikidata": "Q10856080",
+        "status": "auto"
+      },
+      "Ioannes Baptista Yi Kwang-nyol": {
+        "wikidata": "Q6220606",
+        "status": "auto"
+      },
+      "Laurentius Han I-hyŏng": {
+        "wikidata": "Q9371614",
+        "status": "auto"
+      },
+      "Lucas Hwang Sŏk-tu": {
+        "wikidata": "Q9394618",
+        "status": "auto"
+      },
+      "Marcus Chŏng Ui-bae": {
+        "wikidata": "Q11768071",
+        "status": "auto"
+      },
+      "Petrus Henricus Dorie": {
+        "wikidata": "Q2061588",
+        "status": "auto"
+      },
+      "Augustinus Yi Kwang-hŏn": {
+        "wikidata": "Q4260678",
+        "status": "auto"
+      },
+      "Laurentius Imbert": {
+        "wikidata": "Q1151286",
+        "status": "auto"
       }
     },
     "mr:0920-eustachius": {
@@ -8314,6 +9536,14 @@
       "Susanna U Sur-im": {
         "wikidata": "Q9392173",
         "status": "auto"
+      },
+      "Catharina Chŏng Ch’ŏr-yŏm": {
+        "wikidata": "Q11736935",
+        "status": "auto"
+      },
+      "Laurentius Han I Hyong": {
+        "wikidata": "Q9371614",
+        "status": "auto"
       }
     },
     "mr:0921-franciscus-jaccard-et-thomas-tran-van-thien": {
@@ -8329,6 +9559,10 @@
       },
       "Petrus Maubant": {
         "wikidata": "Q844097",
+        "status": "auto"
+      },
+      "Laurentius Imbert": {
+        "wikidata": "Q1151286",
         "status": "auto"
       }
     },
@@ -8362,6 +9596,12 @@
         "status": "auto"
       }
     },
+    "mr:0923-helena-duglioli-dall-olio": {
+      "Helena Duglioli Dall Olio": {
+        "wikidata": "Q18288245",
+        "status": "auto"
+      }
+    },
     "mr:0923-linus": {
       "Linus": {
         "wikidata": "Q47144",
@@ -8377,6 +9617,12 @@
     "mr:0923-zacharias-et-elisabeth": {
       "Elisabeth": {
         "wikidata": "Q75141",
+        "status": "auto"
+      }
+    },
+    "mr:0924-antonius-gonzalez": {
+      "Antonius Gonzalez": {
+        "wikidata": "Q4776669",
         "status": "auto"
       }
     },
@@ -8416,15 +9662,33 @@
         "status": "auto"
       }
     },
+    "mr:0925-marcus-criado": {
+      "Marcus Criado": {
+        "wikidata": "Q127303",
+        "status": "auto"
+      }
+    },
     "mr:0925-sergius-de-radonez": {
       "Sergius de Radonez": {
         "wikidata": "Q312899",
         "status": "auto"
       }
     },
+    "mr:0926-aloysius-tezza": {
+      "Aloysius Tezza": {
+        "wikidata": "Q1386508",
+        "status": "auto"
+      }
+    },
     "mr:0926-maria-jorda-botella": {
       "Maria Jorda Botella": {
         "wikidata": "Q10327081",
+        "status": "auto"
+      }
+    },
+    "mr:0926-maria-victoria-couderc": {
+      "Maria Victoria Couderc": {
+        "wikidata": "Q461915",
         "status": "auto"
       }
     },
@@ -8449,6 +9713,14 @@
       },
       "Sebastianus Nam I Gwan": {
         "wikidata": "Q9334767",
+        "status": "auto"
+      },
+      "Agatha Chŏn Kyŏng-hyŏb": {
+        "wikidata": "Q9141897",
+        "status": "auto"
+      },
+      "Magdalena Hŏ Kye-im": {
+        "wikidata": "Q11766038",
         "status": "auto"
       }
     },
@@ -8476,6 +9748,18 @@
         "status": "auto"
       }
     },
+    "mr:0927-vincentius-de-paul": {
+      "Vincentius de Paul": {
+        "wikidata": "Q244413",
+        "status": "auto"
+      }
+    },
+    "mr:0928-bernardinus-de-feltria": {
+      "Bernardinus de Feltria": {
+        "wikidata": "Q320878",
+        "status": "auto"
+      }
+    },
     "mr:0928-eustochius": {
       "Eustochius": {
         "wikidata": "Q5414355",
@@ -8485,6 +9769,12 @@
     "mr:0928-venceslaus": {
       "Venceslaus": {
         "wikidata": "Q196527",
+        "status": "auto"
+      }
+    },
+    "mr:0929-darius-hernandez-morato": {
+      "Darius Hernandez Morato": {
+        "wikidata": "Q17362144",
         "status": "auto"
       }
     },
@@ -8498,6 +9788,10 @@
       "Michael de Aozaraza": {
         "wikidata": "Q12263546",
         "status": "auto"
+      },
+      "Gulielmus Courtet": {
+        "wikidata": "Q3119773",
+        "status": "auto"
       }
     },
     "mr:0929-renatus-goupil": {
@@ -8509,6 +9803,12 @@
     "mr:0930-felicia-meda": {
       "Felicia Meda": {
         "wikidata": "Q9258482",
+        "status": "auto"
+      }
+    },
+    "mr:0930-franciscus-de-borja": {
+      "Franciscus de Borja": {
+        "wikidata": "Q380092",
         "status": "auto"
       }
     },
@@ -8536,6 +9836,12 @@
         "status": "auto"
       }
     },
+    "mr:1001-aloysius-maria-monti": {
+      "Aloysius Maria Monti": {
+        "wikidata": "Q1876210",
+        "status": "auto"
+      }
+    },
     "mr:1001-bavo": {
       "Bavo": {
         "wikidata": "Q457903",
@@ -8545,6 +9851,12 @@
     "mr:1001-teresia-a-iesu-infante": {
       "Teresia a Iesu Infante": {
         "wikidata": "Q181715",
+        "status": "auto"
+      }
+    },
+    "mr:1002-franciscus-carceller-et-isidorus-bover-oliver": {
+      "Isidorus Bover Oliver": {
+        "wikidata": "Q17362056",
         "status": "auto"
       }
     },
@@ -8594,6 +9906,12 @@
       "Maximianus": {
         "wikidata": "Q113950779",
         "status": "reviewed"
+      }
+    },
+    "mr:1004-alaphridus-pellicer-munoz": {
+      "Alaphridus Pellicer Munoz": {
+        "wikidata": "Q16159403",
+        "status": "auto"
       }
     },
     "mr:1004-henricus-morant-pellicer": {
@@ -8653,6 +9971,12 @@
     "mr:1006-adalbero": {
       "Adalbero": {
         "wikidata": "Q347213",
+        "status": "auto"
+      }
+    },
+    "mr:1006-franciscus-tran-van-trung": {
+      "Franciscus Tran Van Trung": {
+        "wikidata": "Q9263033",
         "status": "auto"
       }
     },
@@ -8812,6 +10136,12 @@
         "status": "auto"
       }
     },
+    "mr:1016-gerardus-maiella": {
+      "Gerardus Maiella": {
+        "wikidata": "Q562233",
+        "status": "auto"
+      }
+    },
     "mr:1016-lullus": {
       "Lullus": {
         "wikidata": "Q694263",
@@ -8821,6 +10151,12 @@
     "mr:1016-margarita-maria-alacoque": {
       "Margarita Maria Alacoque": {
         "wikidata": "Q235853",
+        "status": "auto"
+      }
+    },
+    "mr:1017-contardus-ferrini": {
+      "Contardus Ferrini": {
+        "wikidata": "Q2278847",
         "status": "auto"
       }
     },
@@ -8868,11 +10204,41 @@
       "Isaac Jogues": {
         "wikidata": "Q588832",
         "status": "auto"
+      },
+      "Antonius Daniel": {
+        "wikidata": "Q1886600",
+        "status": "auto"
+      },
+      "Carolus Garnier": {
+        "wikidata": "Q669600",
+        "status": "auto"
+      },
+      "Gabriel Lalemant": {
+        "wikidata": "Q957622",
+        "status": "auto"
+      },
+      "Ioannes de la Lande": {
+        "wikidata": "Q2626830",
+        "status": "auto"
+      },
+      "Natalis Chabanel": {
+        "wikidata": "Q1848680",
+        "status": "auto"
+      },
+      "Renatus Goupil": {
+        "wikidata": "Q1524650",
+        "status": "auto"
       }
     },
     "mr:1019-paulus-a-cruce": {
       "Paulus a Cruce": {
         "wikidata": "Q370261",
+        "status": "auto"
+      }
+    },
+    "mr:1019-philippus-howard": {
+      "Philippus Howard": {
+        "wikidata": "Q336320",
         "status": "auto"
       }
     },
@@ -8934,6 +10300,18 @@
         "status": "auto"
       }
     },
+    "mr:1023-clotildis-iosepha-paillot-et-socii": {
+      "Anna Iosepha Leroux": {
+        "wikidata": "Q11731825",
+        "status": "auto"
+      }
+    },
+    "mr:1023-iulianus-nicolaus-reche": {
+      "Iulianus Nicolaus Reche": {
+        "wikidata": "Q3089384",
+        "status": "auto"
+      }
+    },
     "mr:1023-leonardus-olivera-buera": {
       "Leonardus Olivera Buera": {
         "wikidata": "Q11754490",
@@ -8952,6 +10330,12 @@
         "status": "auto"
       }
     },
+    "mr:1024-aloysius-guanella": {
+      "Aloysius Guanella": {
+        "wikidata": "Q1876202",
+        "status": "auto"
+      }
+    },
     "mr:1024-antonius-maria-claret": {
       "Antonius Maria Claret": {
         "wikidata": "Q162973",
@@ -8967,6 +10351,12 @@
     "mr:1024-martinus": {
       "Martinus": {
         "wikidata": "Q3295693",
+        "status": "auto"
+      }
+    },
+    "mr:1025-recaredus-centelles-abad": {
+      "Recaredus Centelles Abad": {
+        "wikidata": "Q17362063",
         "status": "auto"
       }
     },
@@ -9004,11 +10394,21 @@
       "Ioannes Alcober": {
         "wikidata": "Q4063485",
         "status": "auto"
+      },
+      "Franciscus Serrano": {
+        "wikidata": "Q4417821",
+        "status": "auto"
       }
     },
     "mr:1028-iosephus-ruiz-bruixola": {
       "Iosephus Ruiz Bruixola": {
         "wikidata": "Q11731279",
+        "status": "auto"
+      }
+    },
+    "mr:1029-caietanus-errico": {
+      "Caietanus Errico": {
+        "wikidata": "Q1366718",
         "status": "auto"
       }
     },
@@ -9048,6 +10448,12 @@
         "status": "auto"
       }
     },
+    "mr:1031-antoninus": {
+      "Antoninus": {
+        "wikidata": "Q2857147",
+        "status": "auto"
+      }
+    },
     "mr:1031-dominicus-collins": {
       "Dominicus Collins": {
         "wikidata": "Q3034845",
@@ -9057,6 +10463,12 @@
     "mr:1031-foillanus": {
       "Foillanus": {
         "wikidata": "Q1374816",
+        "status": "auto"
+      }
+    },
+    "mr:1031-leo-nowakowski": {
+      "Leo Nowakowski": {
+        "wikidata": "Q4321872",
         "status": "auto"
       }
     },
@@ -9130,6 +10542,12 @@
         "status": "auto"
       }
     },
+    "mr:1103-simon-balacchi": {
+      "Simon Balacchi": {
+        "wikidata": "Q20030845",
+        "status": "auto"
+      }
+    },
     "mr:1104-carolus-borromeo": {
       "Carolus Borromeo": {
         "wikidata": "Q216946",
@@ -9196,6 +10614,12 @@
         "status": "auto"
       }
     },
+    "mr:1107-vincentius-grossi": {
+      "Vincentius Grossi": {
+        "wikidata": "Q4013314",
+        "status": "auto"
+      }
+    },
     "mr:1107-willibrordus": {
       "Willibrordus": {
         "wikidata": "Q160714",
@@ -9223,6 +10647,14 @@
     "mr:1108-iosephus-nguyen-dinh-nghi-et-socii": {
       "Martinus Thọ": {
         "wikidata": "Q11767836",
+        "status": "auto"
+      },
+      "Ioannes Baptista Cơn": {
+        "wikidata": "Q11717202",
+        "status": "auto"
+      },
+      "Paulus Nguyen Ngân": {
+        "wikidata": "Q11814287",
         "status": "auto"
       }
     },
@@ -9259,6 +10691,12 @@
     "mr:1112-cunibertus": {
       "Cunibertus": {
         "wikidata": "Q78718",
+        "status": "auto"
+      }
+    },
+    "mr:1112-iosaphat-kuncewicz": {
+      "Iosaphat Kuncewicz": {
+        "wikidata": "Q355884",
         "status": "auto"
       }
     },
@@ -9438,9 +10876,27 @@
         "status": "auto"
       }
     },
+    "mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi": {
+      "Iordanus Ansalone": {
+        "wikidata": "Q2486334",
+        "status": "auto"
+      }
+    },
+    "mr:1117-iosaphat-kocylovskyj": {
+      "Iosaphat Kocylovskyj": {
+        "wikidata": "Q392334",
+        "status": "auto"
+      }
+    },
     "mr:1118-carolina-kozka": {
       "Carolina Kozka": {
         "wikidata": "Q2537197",
+        "status": "auto"
+      }
+    },
+    "mr:1118-ferdinandus-santamaria": {
+      "Ferdinandus Santamaria": {
+        "wikidata": "Q3776811",
         "status": "auto"
       }
     },
@@ -9500,6 +10956,12 @@
         "status": "auto"
       }
     },
+    "mr:1122-salvator-lilli-et-socii": {
+      "Salvator Lilli": {
+        "wikidata": "Q9333040",
+        "status": "auto"
+      }
+    },
     "mr:1122-thomas-reggio": {
       "Thomas Reggio": {
         "wikidata": "Q1222812",
@@ -9515,6 +10977,12 @@
     "mr:1123-columbanus": {
       "Columbanus": {
         "wikidata": "Q319653",
+        "status": "auto"
+      }
+    },
+    "mr:1123-michael-augustinus-pro": {
+      "Michael Augustinus Pro": {
+        "wikidata": "Q458633",
         "status": "auto"
       }
     },
@@ -9710,6 +11178,42 @@
       "Andreas Dung Lac": {
         "wikidata": "Q496924",
         "status": "auto"
+      },
+      "Dominicus Tước": {
+        "wikidata": "Q16550430",
+        "status": "auto"
+      },
+      "Franciscus Trần Văn Trung": {
+        "wikidata": "Q9263033",
+        "status": "auto"
+      },
+      "Ioannes Baptista Cơn": {
+        "wikidata": "Q11717202",
+        "status": "auto"
+      },
+      "Ioannes Carolus Cornay": {
+        "wikidata": "Q2235174",
+        "status": "auto"
+      },
+      "Ioannes Ludovicus Bonnard": {
+        "wikidata": "Q2043452",
+        "status": "auto"
+      },
+      "Matthæus Alonso de Leziniana": {
+        "wikidata": "Q11771379",
+        "status": "auto"
+      },
+      "Paulus Nguyễn Ngân": {
+        "wikidata": "Q11814287",
+        "status": "auto"
+      },
+      "Petrus Nguyễn Văn Tự": {
+        "wikidata": "Q10805746",
+        "status": "auto"
+      },
+      "Vincentius Tường": {
+        "wikidata": "Q9375123",
+        "status": "auto"
       }
     },
     "mr:1124-chrysogonus": {
@@ -9745,6 +11249,12 @@
     "mr:1126-leonardus-a-portu-mauritio": {
       "Leonardus a Portu Mauritio": {
         "wikidata": "Q119289",
+        "status": "auto"
+      }
+    },
+    "mr:1126-silvester-gozzolini": {
+      "Silvester Gozzolini": {
+        "wikidata": "Q771520",
         "status": "auto"
       }
     },
@@ -9784,6 +11294,12 @@
         "status": "auto"
       }
     },
+    "mr:1129-alaphridus-simon-colomina": {
+      "Alaphridus Simon Colomina": {
+        "wikidata": "Q9147837",
+        "status": "auto"
+      }
+    },
     "mr:1129-franciscus-antonius-fasani": {
       "Franciscus Antonius Fasani": {
         "wikidata": "Q603217",
@@ -9820,9 +11336,21 @@
         "status": "auto"
       }
     },
+    "mr:1130-galganus-guidotti": {
+      "Galganus Guidotti": {
+        "wikidata": "Q2706288",
+        "status": "auto"
+      }
+    },
     "mr:1130-iosephus-marchand": {
       "Iosephus Marchand": {
         "wikidata": "Q2481272",
+        "status": "auto"
+      }
+    },
+    "mr:1130-thaddaeus-liu-ruiting": {
+      "Thaddaeus Liu Ruiting": {
+        "wikidata": "Q4271306",
         "status": "auto"
       }
     },
@@ -9934,6 +11462,10 @@
       "Hieronymus de Angelis": {
         "wikidata": "Q525326",
         "status": "auto"
+      },
+      "Franciscus Galvez": {
+        "wikidata": "Q24953450",
+        "status": "auto"
       }
     },
     "mr:1204-ioannes-calabria": {
@@ -9945,6 +11477,12 @@
     "mr:1204-ioannes-damascenus": {
       "Ioannes Damascenus": {
         "wikidata": "Q51884",
+        "status": "auto"
+      }
+    },
+    "mr:1205-bartholomaeus-fanti": {
+      "Bartholomaeus Fanti": {
+        "wikidata": "Q17993242",
         "status": "auto"
       }
     },
@@ -9975,6 +11513,12 @@
     "mr:1206-petrus-pascual": {
       "Petrus Pascual": {
         "wikidata": "Q744531",
+        "status": "auto"
+      }
+    },
+    "mr:1207-benedicta-rossello": {
+      "Benedicta Rossello": {
+        "wikidata": "Q1896008",
         "status": "auto"
       }
     },
@@ -10050,6 +11594,12 @@
         "status": "auto"
       }
     },
+    "mr:1210-polydorus-plasden-et-eustatius-white": {
+      "Polydorus Plasden": {
+        "wikidata": "Q2068996",
+        "status": "auto"
+      }
+    },
     "mr:1211-arthurus-bell": {
       "Arthurus Bell": {
         "wikidata": "Q2312723",
@@ -10065,6 +11615,12 @@
     "mr:1211-daniel-stylita": {
       "Daniel Stylita": {
         "wikidata": "Q768229",
+        "status": "auto"
+      }
+    },
+    "mr:1211-francus-lippi": {
+      "Francus Lippi": {
+        "wikidata": "Q21570305",
         "status": "auto"
       }
     },
@@ -10132,6 +11688,10 @@
       "Petrus Cho Hwa So": {
         "wikidata": "Q4516988",
         "status": "auto"
+      },
+      "Bartholomæus Chŏng Mun-ho": {
+        "wikidata": "Q9166256",
+        "status": "auto"
       }
     },
     "mr:1214-agnellus": {
@@ -10143,6 +11703,12 @@
     "mr:1214-antonius-cubells-minguell": {
       "Antonius Cubells Minguell": {
         "wikidata": "Q112901334",
+        "status": "auto"
+      }
+    },
+    "mr:1214-francisca-schervier": {
+      "Francisca Schervier": {
+        "wikidata": "Q72226",
         "status": "auto"
       }
     },
@@ -10188,9 +11754,21 @@
         "status": "auto"
       }
     },
+    "mr:1216-clemens-marchisio": {
+      "Clemens Marchisio": {
+        "wikidata": "Q782920",
+        "status": "auto"
+      }
+    },
     "mr:1216-marianna-fontanella": {
       "Marianna Fontanella": {
         "wikidata": "Q45579",
+        "status": "auto"
+      }
+    },
+    "mr:1216-philippus-siphong-onphitak": {
+      "Philippus Siphong Onphitak": {
+        "wikidata": "Q7848447",
         "status": "auto"
       }
     },
@@ -10254,6 +11832,12 @@
         "status": "auto"
       }
     },
+    "mr:1220-vincentius-romano": {
+      "Vincentius Romano": {
+        "wikidata": "Q4013502",
+        "status": "auto"
+      }
+    },
     "mr:1220-zephyrinus": {
       "Zephyrinus": {
         "wikidata": "Q101306",
@@ -10267,6 +11851,12 @@
       },
       "Petrus Truong Van Thi": {
         "wikidata": "Q3904309",
+        "status": "auto"
+      }
+    },
+    "mr:1221-dominicus-spadafora": {
+      "Dominicus Spadafora": {
+        "wikidata": "Q3713252",
         "status": "auto"
       }
     },
@@ -10330,6 +11920,24 @@
         "status": "auto"
       }
     },
+    "mr:1224-bartholomaeus-maria-dal-monte": {
+      "Bartholomaeus Maria Dal Monte": {
+        "wikidata": "Q9166298",
+        "status": "auto"
+      }
+    },
+    "mr:1224-constantia-cerioli": {
+      "Constantia Cerioli": {
+        "wikidata": "Q447198",
+        "status": "auto"
+      }
+    },
+    "mr:1224-sarbelius-makhluf": {
+      "Sarbelius Makhluf": {
+        "wikidata": "Q331876",
+        "status": "auto"
+      }
+    },
     "mr:1224-tarsilla": {
       "Tarsilla": {
         "wikidata": "Q1416927",
@@ -10379,6 +11987,12 @@
     "mr:1227-iosephus-maria-corbin-ferrer": {
       "Iosephus Maria Corbin Ferrer": {
         "wikidata": "Q11730899",
+        "status": "auto"
+      }
+    },
+    "mr:1228-catharina-volpicelli": {
+      "Catharina Volpicelli": {
+        "wikidata": "Q298254",
         "status": "auto"
       }
     },
@@ -10432,6 +12046,10 @@
       "Iosephus Perpina Nacher": {
         "wikidata": "Q11731130",
         "status": "auto"
+      },
+      "Henricus Ioannes Requena": {
+        "wikidata": "Q9288264",
+        "status": "auto"
       }
     },
     "mr:1229-iosephus-aparicio-sanz": {
@@ -10470,6 +12088,12 @@
         "status": "auto"
       }
     },
+    "mr:1230-margarita-colonna": {
+      "Margarita Colonna": {
+        "wikidata": "Q606835",
+        "status": "auto"
+      }
+    },
     "mr:1230-rogerius": {
       "Rogerius": {
         "wikidata": "Q1141472",
@@ -10479,6 +12103,12 @@
     "mr:1231-alanus-de-solminihac": {
       "Alanus de Solminihac": {
         "wikidata": "Q2084669",
+        "status": "auto"
+      }
+    },
+    "mr:1231-catharina-laboure": {
+      "Catharina Laboure": {
+        "wikidata": "Q242044",
         "status": "auto"
       }
     },
