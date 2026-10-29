@@ -500,11 +500,13 @@ def curated_mention(m, items, lang, place_qid, person_qid, source):
     return out
 
 
-def curated_place_roles(ms, items, text, lang):
+def curated_place_roles(ms, items, text, lang, place_qid=lambda la: None):
     """Set the roles of a curated eulogy's place mentions in its text, by printing:
     an item marks the mention on the printing it points at (an opening place, the
     first free printing of its phrase, else a mention printed as it). A body place
-    with no mention on its printing is returned as an add_mention review item."""
+    with no mention on its printing is marked there when no other mark covers it (the
+    gazetteer decided it); one inside another mark, or not printed, is returned as an
+    add_mention review item."""
     review = []
     marks = [m for m in ms if m["kind"] == "place" and m["where"] == "text"]
     for m in marks:
@@ -523,9 +525,21 @@ def curated_place_roles(ms, items, text, lang):
         if m is not None:
             m.setdefault("roles", []).append(role_of(item))
         elif item["source"] != "lead":
-            review.append({"op": "add_mention", "kind": "place", "where": "text", "start": None, "end": None,
-                           "form": None, "qid": None,
-                           "reasoning": f"the curated mentions have no mark for the place {form}"})
+            covering = span and next(
+                (m for m in ms if m["where"] == "text" and not free(span, [(m["start"], m["end"])])), None)
+            if span and not covering:
+                m = {"kind": "place", "where": "text", "start": span[0], "end": span[1], "form": text[span[0]:span[1]],
+                     "qid": place_qid(item["la"]), "roles": [role_of(item)]}
+                ms.append(m)
+                marks.append(m)
+            elif span:
+                review.append({"op": "add_mention", "kind": "place", "where": "text", "start": span[0], "end": span[1],
+                               "form": text[span[0]:span[1]], "qid": place_qid(item["la"]),
+                               "reasoning": f"the place {form} is printed inside the mark of {covering['form']}"})
+            else:
+                review.append({"op": "add_mention", "kind": "place", "where": "text", "start": None, "end": None,
+                               "form": None, "qid": None,
+                               "reasoning": f"the curated mentions have no mark for the place {form}"})
     if len(items) == 1:
         for m in marks:
             if "roles" not in m:
@@ -559,7 +573,7 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
                                   lambda w: source_text((texts, notes), mrid, w)) for m in curated[mrid]]
             for m in ms:
                 counts["found"][(m["kind"], m["where"] == "text", "curated")] += 1
-            rv = curated_place_roles(ms, items, texts[mrid], lang)
+            rv = curated_place_roles(ms, items, texts[mrid], lang, place_qid)
             if rv:
                 review[mrid] = rv
                 counts["review"].update(r["op"] for r in rv)

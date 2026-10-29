@@ -925,14 +925,36 @@ class PlaceRolesTest(unittest.TestCase):
         self.assertEqual(em.curated_place_roles(ms, items, text, "la"), [])
         self.assertEqual([m["roles"] for m in ms], [[{"role": "death"}], [{"role": "birth"}]])
 
-    def test_a_curated_eulogy_missing_a_body_place_is_proposed(self):
-        text = "Romæ, sancti Ficti, qui Parisiis natus est."
+    def test_a_curated_eulogy_missing_a_body_place_not_printed_is_proposed(self):
+        text = "Romæ, sancti Ficti, qui Lutetiæ natus est."
         ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None}]
         items = [{"role": "death", "la": "Romæ", "source": "lead"},
                  {"role": "birth", "la": "Parisiis", "source": "curated"}]
         review = em.curated_place_roles(ms, items, text, "la")
         self.assertEqual([(r["op"], r["kind"]) for r in review], [("add_mention", "place")])
         self.assertEqual(ms[0]["roles"], [{"role": "death"}])
+
+    def test_a_curated_eulogy_marks_a_decided_body_place_printed_free(self):
+        text = "Romæ, sancti Ficti, qui Parisiis natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Parisiis", "source": "curated"}]
+        qids = {"Parisiis": "Q90"}
+        self.assertEqual(em.curated_place_roles(ms, items, text, "la", qids.get), [])
+        self.assertEqual(ms[1], {"kind": "place", "where": "text", "start": 24, "end": 32, "form": "Parisiis",
+                                 "qid": "Q90", "roles": [{"role": "birth"}]})
+
+    def test_a_decided_body_place_inside_another_mark_is_proposed_at_its_printing(self):
+        text = "Romæ, sancti Conradi de Placentia, qui natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None},
+              {"kind": "person", "where": "text", "start": 13, "end": 33, "form": "Conradi de Placentia",
+               "name": "Conradus", "qid": None}]
+        items = [{"role": "death", "la": "Romæ", "source": "lead"},
+                 {"role": "birth", "la": "Placentia", "source": "curated"}]
+        review = em.curated_place_roles(ms, items, text, "la", {"Placentia": "Q13362"}.get)
+        self.assertEqual([(r["start"], r["end"], r["form"], r["qid"]) for r in review], [(24, 33, "Placentia", "Q13362")])
+        self.assertIn("inside the mark of Conradi de Placentia", review[0]["reasoning"])
+        self.assertEqual(len(ms), 2)
 
     def test_file_round_trip_keeps_roles(self):
         m = {"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": "Q220",
