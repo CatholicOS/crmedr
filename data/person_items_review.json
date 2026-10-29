@@ -295309,7 +295309,7 @@
       "companions": [
         "Zeno",
         "Ptolomaeus",
-        "Ingenis",
+        "Ingenes",
         "Theophilus"
       ],
       "failed": [
@@ -295589,12 +295589,12 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0601-ammon-et-socii|Ingenis",
+      "id": "mr:0601-ammon-et-socii|Ingenes",
       "eulogy": "mr:0601-ammon-et-socii",
       "day": "06-01",
       "typology": "dies_natalis",
       "subject": "Sancti Ammon et socii",
-      "name": "Ingenis",
+      "name": "Ingenes",
       "where": "text",
       "companions": [
         "Ammon",
@@ -295603,9 +295603,41 @@
         "Theophilus"
       ],
       "failed": [
-        "no candidate found"
+        "status: the best candidate (Q6032015) fails it",
+        "name: the best candidate (Q6032015) fails it",
+        "death: the best candidate (Q6032015) fails it"
       ],
-      "candidates": [],
+      "candidates": [
+        {
+          "wikidata": "Q6032015",
+          "label": "Inge Zaamwani-Kamwi",
+          "description": "Namibian businesswoman and presidential advisor",
+          "names": [
+            "Inge Zaamwani-Kamwi"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1958-11-11",
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q986336"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human"
+          ],
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Grootfontein"
+            ]
+          }
+        }
+      ],
       "decision": null,
       "edited": null,
       "places": [
@@ -295628,7 +295660,7 @@
       "companions": [
         "Ammon",
         "Zeno",
-        "Ingenis",
+        "Ingenes",
         "Theophilus"
       ],
       "failed": [
@@ -295723,7 +295755,7 @@
         "Ammon",
         "Zeno",
         "Ptolomaeus",
-        "Ingenis"
+        "Ingenes"
       ],
       "failed": [
         "death: the best candidate (Q365941) fails it"
@@ -296077,7 +296109,7 @@
       "companions": [
         "Ammon",
         "Ptolomaeus",
-        "Ingenis",
+        "Ingenes",
         "Theophilus"
       ],
       "failed": [
@@ -296672,7 +296704,7 @@
         "Charitus",
         "Evelpistus",
         "Ierax",
-        "Pœo",
+        "Pœon",
         "Liberianus"
       ],
       "failed": [
@@ -296964,7 +296996,7 @@
         "Chariton",
         "Evelpistus",
         "Ierax",
-        "Pœo",
+        "Pœon",
         "Liberianus"
       ],
       "failed": [
@@ -296988,7 +297020,7 @@
         "Chariton",
         "Charitus",
         "Ierax",
-        "Pœo",
+        "Pœon",
         "Liberianus"
       ],
       "failed": [
@@ -297037,7 +297069,7 @@
         "Chariton",
         "Charitus",
         "Evelpistus",
-        "Pœo",
+        "Pœon",
         "Liberianus"
       ],
       "failed": [
@@ -297153,7 +297185,7 @@
         "Charitus",
         "Evelpistus",
         "Ierax",
-        "Pœo"
+        "Pœon"
       ],
       "failed": [
         "no candidate found"
@@ -297165,12 +297197,12 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0601-chariton-et-socii|Pœo",
+      "id": "mr:0601-chariton-et-socii|Pœon",
       "eulogy": "mr:0601-chariton-et-socii",
       "day": "06-01",
       "typology": "dies_natalis",
       "subject": "Sancti Chariton et socii",
-      "name": "Pœo",
+      "name": "Pœon",
       "where": "text",
       "companions": [
         "Chariton",
@@ -297227,6 +297259,46 @@
           "places": []
         },
         {
+          "wikidata": "Q13513350",
+          "label": "Poeonoma nigribasis",
+          "description": "species of insect",
+          "names": [
+            "Poeonoma nigribasis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "places": []
+        },
+        {
+          "wikidata": "Q13513351",
+          "label": "Poeonoma inermis",
+          "description": "species of insect",
+          "names": [
+            "Poeonoma inermis"
+          ],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "places": []
+        },
+        {
           "wikidata": "Q13513352",
           "label": "Poeonoma acantha",
           "description": "species of insect",
@@ -297247,11 +297319,30 @@
           "places": []
         },
         {
-          "wikidata": "Q18172393",
-          "label": "Poeobius",
-          "description": "genus of annelids",
+          "wikidata": "Q23867331",
+          "label": "Poeonius",
+          "description": "article in Otto's encyclopedia",
+          "names": [],
+          "human": false,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [],
+          "places": []
+        },
+        {
+          "wikidata": "Q27586993",
+          "label": "Poeonius, Martinus",
+          "description": "entry in the Allgemeine Deutsche Biographie",
           "names": [
-            "Poeobius"
+            "Poeonius, Martinus",
+            "Poeonius, Martinus (ADB)"
           ],
           "human": false,
           "statuses": [],
@@ -297267,114 +297358,11 @@
           "places": []
         },
         {
-          "wikidata": "Q18172398",
-          "label": "Poeobiidae",
-          "description": "family of annelids",
+          "wikidata": "Q7207396",
+          "label": "Poeonoma",
+          "description": "genus of insects",
           "names": [
-            "Poeobiidae"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": []
-        },
-        {
-          "wikidata": "Q2183096",
-          "label": "Poeoptera",
-          "description": "genus of birds",
-          "names": [
-            "Poeoptera"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": []
-        },
-        {
-          "wikidata": "Q27075613",
-          "label": "Poeoptera sharpii",
-          "description": "species of bird",
-          "names": [
-            "Poeoptera sharpii"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": []
-        },
-        {
-          "wikidata": "Q27075615",
-          "label": "Poeoptera femoralis",
-          "description": "species of bird",
-          "names": [
-            "Poeoptera femoralis",
-            "Storno di Abbott"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": []
-        },
-        {
-          "wikidata": "Q2731916",
-          "label": "Poeobius meseres",
-          "description": "species of annelid",
-          "names": [
-            "Poeobius meseres"
-          ],
-          "human": false,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [],
-          "places": []
-        },
-        {
-          "wikidata": "Q3315578",
-          "label": "Stuhlmann's Starling",
-          "description": "species of bird",
-          "names": [
-            "Poeoptera stuhlmanni",
-            "Storno di Stuhlmann",
-            "Stuhlmann's Starling"
+            "Poeonoma"
           ],
           "human": false,
           "statuses": [],
@@ -864371,673 +864359,6 @@
           "role": "death",
           "label": "Isiro",
           "qid": "Q899873"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1201-edmundus-campion-et-socii|Alexander",
-      "eulogy": "mr:1201-edmundus-campion-et-socii",
-      "day": "12-01",
-      "typology": "dies_natalis",
-      "subject": "Sancti Edmundus Campion et socii",
-      "name": "Alexander",
-      "where": "text",
-      "companions": [
-        "Edmundus Campion",
-        "Radulphus Sherwin",
-        "Alexander Briant",
-        "Radulphus"
-      ],
-      "failed": [
-        "name: the best candidate (Q961817) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q961817",
-          "label": "Alexander Briant",
-          "description": "Jesuit martyr",
-          "names": [
-            "Alexander Briant"
-          ],
-          "human": true,
-          "statuses": [
-            "Q43115"
-          ],
-          "born": "1556-08-17",
-          "died": "1581-12-01",
-          "feast": [
-            "Q2297",
-            "Q2954"
-          ],
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080"
-          ],
-          "birth_place": [
-            "Q23157"
-          ],
-          "death_place": [
-            "Q1362341"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "death",
-            "group",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q1362341",
-              "label": "Tyburn",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Tyburn"
-            ],
-            "birth_place": [
-              "Somerset"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q108452478",
-          "label": "Alessandro",
-          "description": "bishop of the Roman Catholic Church",
-          "names": [
-            "Alessandro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108452507",
-          "label": "Alessandro",
-          "description": "bishop of Teano",
-          "names": [
-            "Alessandro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q109781317",
-          "label": "Alessandro",
-          "description": "Person identified in the Museu da Pessoa collection (26502)",
-          "names": [
-            "Alessandro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1984-08-04",
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q208669"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "place_labels": {
-            "birth_place": [
-              "Maringá"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q109785814",
-          "label": "Alessandro",
-          "description": "Person identified in the Museu da Pessoa collection (112997)",
-          "names": [
-            "Alessandro"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1991-05-28",
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q1615298"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "place_labels": {
-            "birth_place": [
-              "Abaetetuba"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q110476362",
-          "label": "Alexander",
-          "description": "engraver, floruit 1875",
-          "names": [
-            "Alexander"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q1280167",
-          "label": "Alexander",
-          "description": "satrap and brother of Molon",
-          "names": [
-            "Alessandro",
-            "Alexander"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-025",
-          "died": "-022",
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q1292719",
-          "label": "Edward Johnston Alexander",
-          "description": "botanist (1901-1985)",
-          "names": [
-            "Alexander",
-            "Eduardus Johnston Alexander",
-            "Edward Alexander",
-            "Edward Johnston Alexander"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1901-07-31",
-          "died": "1985-08-18",
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q648501"
-          ],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "place_labels": {
-            "birth_place": [
-              "Asheville"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q151742",
-          "label": "Alexander of Greece",
-          "description": "King of Greece (1917–1920)",
-          "names": [
-            "Alessandro I di Grecia",
-            "Alessandro di Grecia",
-            "Alexander",
-            "Alexander I of Greece",
-            "Alexander of Greece",
-            "King Alexander I of Greece",
-            "King Alexander of Greece"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1893-08-01",
-          "died": "1920-10-25",
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q257617"
-          ],
-          "death_place": [
-            "Q1524"
-          ],
-          "burial_place": [
-            "Q59137110"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Athens"
-            ],
-            "burial_place": [
-              "Tatoi Royal Cemetery"
-            ],
-            "birth_place": [
-              "Tatoi Palace"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q2066272",
-          "label": "Alexander",
-          "description": "1st century AD Prince of Judea",
-          "names": [
-            "Alessandro",
-            "Alexander",
-            "Gaius Julius Alexander"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "-001",
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "London",
-          "qid": "Q84"
-        },
-        {
-          "role": "death",
-          "label": "Tyburn",
-          "qid": "Q1362341"
-        },
-        {
-          "role": "religious_life",
-          "label": "Rome",
-          "qid": "Q220"
-        },
-        {
-          "role": "ministry",
-          "label": "Prague",
-          "qid": "Q1085"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:1201-edmundus-campion-et-socii|Radulphus",
-      "eulogy": "mr:1201-edmundus-campion-et-socii",
-      "day": "12-01",
-      "typology": "dies_natalis",
-      "subject": "Sancti Edmundus Campion et socii",
-      "name": "Radulphus",
-      "where": "text",
-      "companions": [
-        "Edmundus Campion",
-        "Radulphus Sherwin",
-        "Alexander Briant",
-        "Alexander"
-      ],
-      "failed": [
-        "name: the best candidate (Q4523041) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q4523041",
-          "label": "Ralph Sherwin",
-          "description": "English Roman Catholic martyr and saint (1550-1581)",
-          "names": [
-            "Ralph Sherwin",
-            "Rodolfo Sherwin"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126"
-          ],
-          "born": "1550-10-19",
-          "died": "1581-12-01",
-          "feast": [
-            "Q2297"
-          ],
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080"
-          ],
-          "birth_place": [
-            "Q2433647"
-          ],
-          "death_place": [
-            "Q1362341"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "death",
-            "group",
-            "place"
-          ],
-          "places": [
-            {
-              "role": "death",
-              "qid": "Q1362341",
-              "label": "Tyburn",
-              "via": "P20"
-            }
-          ],
-          "place_labels": {
-            "death_place": [
-              "Tyburn"
-            ],
-            "birth_place": [
-              "Rodsley"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q106101910",
-          "label": "Ralph",
-          "description": "Japanese rapper",
-          "names": [
-            "Ralph",
-            "ralph"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108225249",
-          "label": "Rodolfo",
-          "description": "patriarca di Gerusalemme dei Latini",
-          "names": [
-            "Randolph",
-            "Raoul II",
-            "Rodolfo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1200",
-          "died": "1192",
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108446990",
-          "label": "Rodolfo",
-          "description": "Roman Catholic patriarch",
-          "names": [
-            "Rodolfo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108446991",
-          "label": "Rodolfo",
-          "description": "bishop of the Roman Catholic Church",
-          "names": [
-            "Rodolfo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108446992",
-          "label": "Rodolfo",
-          "description": "archbishop of the Roman Catholic Church",
-          "names": [
-            "Rodolfo"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "1307-11-06",
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108450391",
-          "label": "Raoul",
-          "description": "catholic bishop",
-          "names": [
-            "Raoul"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": "1110",
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108450518",
-          "label": "Ralph",
-          "description": "Roman Catholic bishop",
-          "names": [
-            "Ralph"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108481580",
-          "label": "Ralph",
-          "description": "bishop of the Roman Catholic Church",
-          "names": [
-            "Ralph"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        },
-        {
-          "wikidata": "Q108570578",
-          "label": "Ralph",
-          "description": "bishop of Down",
-          "names": [
-            "Ralph"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": null,
-          "died": null,
-          "feast": [],
-          "signals": [],
-          "birth_place": [],
-          "death_place": [],
-          "burial_place": [],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": []
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "London",
-          "qid": "Q84"
-        },
-        {
-          "role": "death",
-          "label": "Tyburn",
-          "qid": "Q1362341"
-        },
-        {
-          "role": "religious_life",
-          "label": "Rome",
-          "qid": "Q220"
-        },
-        {
-          "role": "ministry",
-          "label": "Prague",
-          "qid": "Q1085"
         }
       ]
     },
