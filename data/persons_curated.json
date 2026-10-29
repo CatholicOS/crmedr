@@ -1,5 +1,20 @@
 {
   "$comment": "Hand-entered persons for eulogies extract_persons.py cannot read, by current ID: [{name, where}], where is \"text\" or {\"footnote\": n}. Replaces the eulogy's extraction; checked like it.",
+  "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": [
+    {
+      "name": "Dominicus Pham Trong Kham",
+      "where": "text"
+    },
+    {
+      "name": "Lucas Thin",
+      "where": "text"
+    },
+    {
+      "name": "Iosephus Pham Trong Ta",
+      "where": "text",
+      "it": "Giuseppe Phạm Trọng (Cai) Tả"
+    }
+  ],
   "mr:0116-berardus-et-socii": [
     {
       "name": "Berardus",
@@ -77,6 +92,17 @@
       "where": "text"
     }
   ],
+  "mr:0119-germanicus-smyrnae": [
+    {
+      "name": "Germanicus",
+      "where": "text"
+    },
+    {
+      "name": "Polycarpus",
+      "where": "text",
+      "it": "Policarpo"
+    }
+  ],
   "mr:0119-marius-et-socii": [
     {
       "name": "Marius",
@@ -97,6 +123,17 @@
       "it": "Abaco"
     }
   ],
+  "mr:0121-albanus-roe": [
+    {
+      "name": "Albanus Roe",
+      "where": "text"
+    },
+    {
+      "name": "Thomas Green",
+      "where": "text",
+      "it": "Tommaso Green"
+    }
+  ],
   "mr:0121-fructuosus-et-socii": [
     {
       "name": "Fructuosus",
@@ -110,6 +147,58 @@
     {
       "name": "Eulogius",
       "where": "text"
+    }
+  ],
+  "mr:0122-valerius-caesaraugustanus": [
+    {
+      "name": "Valerius",
+      "where": "text"
+    },
+    {
+      "name": "Vincentius",
+      "where": "text",
+      "it": "Vincenzo"
+    }
+  ],
+  "mr:0124-babyla-antiochiae": [
+    {
+      "name": "Babyla",
+      "where": "text"
+    },
+    {
+      "name": "Urbanus",
+      "where": "text",
+      "it": "Urbano"
+    },
+    {
+      "name": "Prilidanus",
+      "where": "text",
+      "it": "Prilidano"
+    },
+    {
+      "name": "Epolonus",
+      "where": "text",
+      "it": "Epolono"
+    }
+  ],
+  "mr:0126-xenophon-et-maria": [
+    {
+      "name": "Xenophon",
+      "where": "text"
+    },
+    {
+      "name": "Maria",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "it": "Giovanni"
+    },
+    {
+      "name": "Arcadius",
+      "where": "text",
+      "it": "Arcadio"
     }
   ],
   "mr:0131-victorinus-et-socii": [
@@ -141,6 +230,58 @@
     {
       "name": "Papias",
       "where": "text"
+    }
+  ],
+  "mr:0201-paulus-hong-yong-ju-et-socii": [
+    {
+      "name": "Paulus Hong Yong Ju",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Yi Mun-u",
+      "where": "text"
+    },
+    {
+      "name": "Barbara Ch’oe Yong I",
+      "where": "text",
+      "it": "Barbara Ch’oe Yŏng-i"
+    }
+  ],
+  "mr:0203-celerinus": [
+    {
+      "name": "Celerinus",
+      "where": "text"
+    },
+    {
+      "name": "Celerina",
+      "where": "text",
+      "it": "Celerina"
+    },
+    {
+      "name": "Laurentius",
+      "where": "text",
+      "it": "Lorenzo"
+    },
+    {
+      "name": "Ignatius",
+      "where": "text",
+      "it": "Ignazio"
+    }
+  ],
+  "mr:0206-silvanus": [
+    {
+      "name": "Silvanus",
+      "where": "text"
+    },
+    {
+      "name": "Lucas",
+      "where": "text",
+      "it": "Luca"
+    },
+    {
+      "name": "Mocius",
+      "where": "text",
+      "it": "Mozio"
     }
   ],
   "mr:0210-chalarampus-et-socii": [
@@ -197,6 +338,31 @@
     {
       "name": "Lucius",
       "where": "text"
+    },
+    {
+      "name": "Cyrio",
+      "where": "text",
+      "it": "Cirione"
+    },
+    {
+      "name": "Agatho",
+      "where": "text",
+      "it": "Agatone"
+    },
+    {
+      "name": "Moyses",
+      "where": "text",
+      "it": "Mosè"
+    },
+    {
+      "name": "Dionysius",
+      "where": "text",
+      "it": "Dionigi"
+    },
+    {
+      "name": "Ammonius",
+      "where": "text",
+      "it": "Ammonio"
     }
   ],
   "mr:0215-isicus-et-socii": [
@@ -220,6 +386,122 @@
     {
       "name": "Agapis",
       "where": "text"
+    }
+  ],
+  "mr:0216-elias-et-socii": [
+    {
+      "name": "Elias",
+      "where": "text"
+    },
+    {
+      "name": "Ieremias",
+      "where": "text"
+    },
+    {
+      "name": "Isaias",
+      "where": "text"
+    },
+    {
+      "name": "Samuel",
+      "where": "text"
+    },
+    {
+      "name": "Daniel",
+      "where": "text"
+    },
+    {
+      "name": "Pamphilus",
+      "where": "text",
+      "it": "Panfilo"
+    },
+    {
+      "name": "Valens",
+      "where": "text",
+      "it": "Valente"
+    },
+    {
+      "name": "Paulus",
+      "where": "text",
+      "it": "Paolo"
+    },
+    {
+      "name": "Porphyrius",
+      "where": "text",
+      "it": "Porfirio"
+    },
+    {
+      "name": "Seleucus",
+      "where": "text",
+      "it": "Seleuco"
+    },
+    {
+      "name": "Theodulus",
+      "where": "text",
+      "it": "Teodúlo"
+    },
+    {
+      "name": "Iulianus",
+      "where": "text",
+      "it": "Giuliano"
+    }
+  ],
+  "mr:0218-ioannes-petrus-neel": [
+    {
+      "name": "Ioannes Petrus Neel",
+      "where": "text"
+    },
+    {
+      "name": "Martinus Wu Xuesheng",
+      "where": "text",
+      "it": "Martino Wu Xuesheng"
+    },
+    {
+      "name": "Ioannes Zhang Tianshen",
+      "where": "text",
+      "it": "Giovanni Zhang Tianshen"
+    },
+    {
+      "name": "Ioannes Chen Xianheng",
+      "where": "text",
+      "it": "Giovanni Chen Xianheng"
+    }
+  ],
+  "mr:0220-tyrannion": [
+    {
+      "name": "Tyrannion",
+      "where": "text"
+    },
+    {
+      "name": "Zenobius",
+      "where": "text",
+      "it": "Zenobio"
+    }
+  ],
+  "mr:0221-germanus": [
+    {
+      "name": "Germanus",
+      "where": "text"
+    },
+    {
+      "name": "Randoaldus",
+      "where": "text",
+      "it": "Randoaldo"
+    }
+  ],
+  "mr:0227-anna-line": [
+    {
+      "name": "Anna Line",
+      "where": "text"
+    },
+    {
+      "name": "Marcus Barkworth",
+      "where": "text",
+      "it": "Marco Barkworth"
+    },
+    {
+      "name": "Rogerius Filcock",
+      "where": "text",
+      "it": "Ruggero Filcock"
     }
   ],
   "mr:0303-liberatus-weiss-et-socii": [
@@ -296,6 +578,32 @@
       "where": "text"
     }
   ],
+  "mr:0307-eubulius": [
+    {
+      "name": "Eubulius",
+      "where": "text"
+    },
+    {
+      "name": "Hadrianus",
+      "where": "text",
+      "it": "Adriano"
+    }
+  ],
+  "mr:0307-ioannes-larke-et-ioannes-ireland": [
+    {
+      "name": "Ioannes Larke",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Ireland",
+      "where": "text"
+    },
+    {
+      "name": "Germanus Gardiner",
+      "where": "text",
+      "it": "Germano Gardiner"
+    }
+  ],
   "mr:0307-satyrus-et-socii": [
     {
       "name": "Satyrus",
@@ -346,6 +654,22 @@
       "where": "text"
     }
   ],
+  "mr:0312-petrus": [
+    {
+      "name": "Petrus",
+      "where": "text"
+    },
+    {
+      "name": "Dorotheus",
+      "where": "text",
+      "it": "Doroteo"
+    },
+    {
+      "name": "Gorgonius",
+      "where": "text",
+      "it": "Gorgonio"
+    }
+  ],
   "mr:0313-macedonius-et-socii": [
     {
       "name": "Macedonius",
@@ -359,6 +683,28 @@
     {
       "name": "Modesta",
       "where": "text"
+    }
+  ],
+  "mr:0315-leocritia": [
+    {
+      "name": "Leocritia",
+      "where": "text"
+    },
+    {
+      "name": "Eulogius",
+      "where": "text",
+      "it": "Eulogio"
+    }
+  ],
+  "mr:0321-thomas-pilchard": [
+    {
+      "name": "Thomas Pilchard",
+      "where": "text"
+    },
+    {
+      "name": "Gulielmus Pike",
+      "where": "text",
+      "it": "Guglielmo Pike"
     }
   ],
   "mr:0323-victorianus-et-socii": [
@@ -492,6 +838,79 @@
       "where": "text"
     }
   ],
+  "mr:0331-christophorus-robinson": [
+    {
+      "name": "Christophorus Robinson",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Boste",
+      "where": "text",
+      "it": "Giovanni Boste"
+    }
+  ],
+  "mr:0401-venantius-et-socii": [
+    {
+      "name": "Venantius",
+      "where": "text"
+    },
+    {
+      "name": "Anastasius",
+      "where": "text",
+      "it": "Anastasio"
+    },
+    {
+      "name": "Maurus",
+      "where": "text",
+      "it": "Mauro"
+    },
+    {
+      "name": "Paulinianus",
+      "where": "text",
+      "it": "Paoliniano"
+    },
+    {
+      "name": "Telius",
+      "where": "text",
+      "it": "Telio"
+    },
+    {
+      "name": "Asterius",
+      "where": "text",
+      "it": "Asterio"
+    },
+    {
+      "name": "Septimius",
+      "where": "text",
+      "it": "Settimio"
+    },
+    {
+      "name": "Antiochianus",
+      "where": "text",
+      "it": "Antiochiano"
+    },
+    {
+      "name": "Gaianus",
+      "where": "text",
+      "it": "Gaiano"
+    }
+  ],
+  "mr:0405-irenes": [
+    {
+      "name": "Irenes",
+      "where": "text"
+    },
+    {
+      "name": "Agapis",
+      "where": "text",
+      "it": "Agape"
+    },
+    {
+      "name": "Chionia",
+      "where": "text",
+      "it": "Chiona"
+    }
+  ],
   "mr:0408-herodion-et-socii": [
     {
       "name": "Herodion",
@@ -506,6 +925,17 @@
       "name": "Phlego",
       "where": "text",
       "it": "Flégone"
+    }
+  ],
+  "mr:0409-maximus": [
+    {
+      "name": "Maximus",
+      "where": "text"
+    },
+    {
+      "name": "Dionysius",
+      "where": "text",
+      "it": "Dionigi"
     }
   ],
   "mr:0410-terentius-et-socii": [
@@ -550,6 +980,21 @@
       "name": "Agathonica",
       "where": "text",
       "it": "Agatoníca"
+    }
+  ],
+  "mr:0414-bernica-et-prosdoca": [
+    {
+      "name": "Bernica",
+      "where": "text"
+    },
+    {
+      "name": "Prosdoca",
+      "where": "text"
+    },
+    {
+      "name": "Domnina",
+      "where": "text",
+      "it": "Domnina"
     }
   ],
   "mr:0416-leonides-et-socii": [
@@ -755,6 +1200,185 @@
       }
     }
   ],
+  "mr:0417-elias-et-socii": [
+    {
+      "name": "Elias",
+      "where": "text"
+    },
+    {
+      "name": "Paulus",
+      "where": "text",
+      "it": "Paolo"
+    },
+    {
+      "name": "Isidorus",
+      "where": "text",
+      "it": "Isidoro"
+    }
+  ],
+  "mr:0417-symeon": [
+    {
+      "name": "Symeon",
+      "where": "text"
+    },
+    {
+      "name": "Usthazades",
+      "where": "text",
+      "it": "Ustazhad"
+    }
+  ],
+  "mr:0418-eusebius": [
+    {
+      "name": "Eusebius",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes I",
+      "where": "text",
+      "it": "Giovanni I"
+    }
+  ],
+  "mr:0418-pusicius": [
+    {
+      "name": "Pusicius",
+      "where": "text"
+    },
+    {
+      "name": "Symeon",
+      "where": "text",
+      "it": "Simeone"
+    }
+  ],
+  "mr:0419-mappalicus": [
+    {
+      "name": "Mappalicus",
+      "where": "text"
+    },
+    {
+      "name": "Bassus",
+      "where": "text",
+      "it": "Basso"
+    },
+    {
+      "name": "Fortunius",
+      "where": "text",
+      "it": "Fortunio"
+    },
+    {
+      "name": "Paulus",
+      "where": "text",
+      "it": "Paolo"
+    },
+    {
+      "name": "Fortunata",
+      "where": "text",
+      "it": "Fortunata"
+    },
+    {
+      "name": "Victorinus",
+      "where": "text",
+      "it": "Vittorino"
+    },
+    {
+      "name": "Victor",
+      "where": "text",
+      "it": "Vittore"
+    },
+    {
+      "name": "Heremius",
+      "where": "text",
+      "it": "Eremio"
+    },
+    {
+      "name": "Credula",
+      "where": "text",
+      "it": "Crédula"
+    },
+    {
+      "name": "Hereda",
+      "where": "text",
+      "it": "Eréda"
+    },
+    {
+      "name": "Donatus",
+      "where": "text",
+      "it": "Donato"
+    },
+    {
+      "name": "Firmus",
+      "where": "text",
+      "it": "Firmo"
+    },
+    {
+      "name": "Venustus",
+      "where": "text",
+      "it": "Venusto"
+    },
+    {
+      "name": "Fructus",
+      "where": "text",
+      "it": "Frutto"
+    },
+    {
+      "name": "Iulia",
+      "where": "text",
+      "it": "Giulia"
+    },
+    {
+      "name": "Martialis",
+      "where": "text",
+      "it": "Marziale"
+    },
+    {
+      "name": "Ariston",
+      "where": "text",
+      "it": "Aristone"
+    }
+  ],
+  "mr:0419-martha": [
+    {
+      "name": "Martha",
+      "where": "text"
+    },
+    {
+      "name": "Pusicius",
+      "where": "text",
+      "it": "Pusicio"
+    }
+  ],
+  "mr:0422-epipodius": [
+    {
+      "name": "Epipodius",
+      "where": "text"
+    },
+    {
+      "name": "Alexander",
+      "where": "text",
+      "it": "Alessandro"
+    }
+  ],
+  "mr:0424-alexander": [
+    {
+      "name": "Alexander",
+      "where": "text"
+    },
+    {
+      "name": "Epipodius",
+      "where": "text",
+      "it": "Epipodio"
+    }
+  ],
+  "mr:0426-stanislaus-kubista": [
+    {
+      "name": "Stanislaus Kubista",
+      "where": "text"
+    },
+    {
+      "name": "Ladislaus Goral",
+      "where": "text",
+      "it": "Ladislao Goral"
+    }
+  ],
   "mr:0428-eusebius-et-socii": [
     {
       "name": "Eusebius",
@@ -793,6 +1417,32 @@
     {
       "name": "Petrus Nguyen Van Hiếu",
       "where": "text"
+    }
+  ],
+  "mr:0428-vitalis": [
+    {
+      "name": "Vitalis",
+      "where": "text"
+    },
+    {
+      "name": "Valeria",
+      "where": "text",
+      "it": "Valeria"
+    },
+    {
+      "name": "Gervasius",
+      "where": "text",
+      "it": "Gervasio"
+    },
+    {
+      "name": "Protasius",
+      "where": "text",
+      "it": "Protasio"
+    },
+    {
+      "name": "Ursicinus",
+      "where": "text",
+      "it": "Ursicino"
     }
   ],
   "mr:0430-amator-et-socii": [
@@ -846,6 +1496,26 @@
       "it": "Eufrasio di Andujar del Vejo"
     }
   ],
+  "mr:0502-hesperus-et-zoes": [
+    {
+      "name": "Hesperus",
+      "where": "text"
+    },
+    {
+      "name": "Zoes",
+      "where": "text"
+    },
+    {
+      "name": "Cyriacus",
+      "where": "text",
+      "it": "Ciriaco"
+    },
+    {
+      "name": "Theodulus",
+      "where": "text",
+      "it": "Teodúlo"
+    }
+  ],
   "mr:0503-eventius-et-socii": [
     {
       "name": "Eventius",
@@ -859,6 +1529,31 @@
     {
       "name": "Theodulus",
       "where": "text"
+    }
+  ],
+  "mr:0504-agapius-et-secundinus": [
+    {
+      "name": "Agapius",
+      "where": "text"
+    },
+    {
+      "name": "Secundinus",
+      "where": "text"
+    },
+    {
+      "name": "Aemilianus",
+      "where": "text",
+      "it": "Emiliano"
+    },
+    {
+      "name": "Tertulla",
+      "where": "text",
+      "it": "Tertulla"
+    },
+    {
+      "name": "Antonia",
+      "where": "text",
+      "it": "Antonia"
     }
   ],
   "mr:0504-ioannes-houghton-et-socii": [
@@ -889,6 +1584,22 @@
     {
       "name": "Silvanus",
       "where": "text"
+    }
+  ],
+  "mr:0508-wiro": [
+    {
+      "name": "Wiro",
+      "where": "text"
+    },
+    {
+      "name": "Plechelmus",
+      "where": "text",
+      "it": "Plechelmo"
+    },
+    {
+      "name": "Otgerus",
+      "where": "text",
+      "it": "Odgero"
     }
   ],
   "mr:0510-alphius-et-socii": [
@@ -942,6 +1653,57 @@
       "where": "text"
     }
   ],
+  "mr:0518-theodotus-et-thecusa": [
+    {
+      "name": "Theodotus",
+      "where": "text"
+    },
+    {
+      "name": "Thecusa",
+      "where": "text"
+    },
+    {
+      "name": "Alexandra",
+      "where": "text",
+      "it": "Alessandra"
+    },
+    {
+      "name": "Claudia",
+      "where": "text",
+      "it": "Claudia"
+    },
+    {
+      "name": "Phaina",
+      "where": "text",
+      "it": "Faina"
+    },
+    {
+      "name": "Euphrasia",
+      "where": "text",
+      "it": "Eufrasia"
+    },
+    {
+      "name": "Matrona",
+      "where": "text",
+      "it": "Matrona"
+    },
+    {
+      "name": "Iulitta",
+      "where": "text",
+      "it": "Giulitta"
+    }
+  ],
+  "mr:0519-urbanus-i": [
+    {
+      "name": "Urbanus I",
+      "where": "text"
+    },
+    {
+      "name": "Callistus",
+      "where": "text",
+      "it": "Callisto"
+    }
+  ],
   "mr:0523-lucius-et-socii": [
     {
       "name": "Lucius",
@@ -967,6 +1729,59 @@
     {
       "name": "Donatianus",
       "where": "text"
+    }
+  ],
+  "mr:0524-augustinus-yi-kwang-hon-et-socii": [
+    {
+      "name": "Augustinus Yi Kwang Hon",
+      "where": "text"
+    },
+    {
+      "name": "Agatha Kim A Gi",
+      "where": "text",
+      "it": "Agata Kim A-gi"
+    },
+    {
+      "name": "Damianus Nam Myŏng-hyŏg",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Magdalena Kim Ŏ-bi",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Barbara Han A-gi",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Anna Pak A-gi",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Agatha Yi So-sa",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Lucia Pak Hŭi-sun",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus Kwon Tŭ-gin",
+      "where": {
+        "footnote": 1
+      }
     }
   ],
   "mr:0527-edmundus-duke-et-socii": [
@@ -1067,6 +1882,42 @@
       }
     }
   ],
+  "mr:0529-sisinnius-et-socii": [
+    {
+      "name": "Sisinnius",
+      "where": "text"
+    },
+    {
+      "name": "Martyrius",
+      "where": "text"
+    },
+    {
+      "name": "Alexander",
+      "where": "text",
+      "it": "Alessandro"
+    }
+  ],
+  "mr:0530-lucas-kirby": [
+    {
+      "name": "Lucas Kirby",
+      "where": "text"
+    },
+    {
+      "name": "Guilielmus Filby",
+      "where": "text",
+      "it": "Guglielmo Filby"
+    },
+    {
+      "name": "Laurentius Johnson",
+      "where": "text",
+      "it": "Lorenzo Johnson"
+    },
+    {
+      "name": "Thomas Cottam",
+      "where": "text",
+      "it": "Tommaso Cottam"
+    }
+  ],
   "mr:0531-cantius-et-socii": [
     {
       "name": "Cantius",
@@ -1135,6 +1986,11 @@
       "name": "Liberianus",
       "where": "text",
       "it": "Liberiano"
+    },
+    {
+      "name": "Iustinus",
+      "where": "text",
+      "it": "Giustino"
     }
   ],
   "mr:0602-pothinus-et-socii": [
@@ -1431,6 +2287,11 @@
       "it": "Adelario"
     },
     {
+      "name": "Bonifatius",
+      "where": "text",
+      "it": "Bonifacio"
+    },
+    {
       "name": "Vintrungus",
       "where": {
         "footnote": 1
@@ -1485,6 +2346,21 @@
       }
     }
   ],
+  "mr:0606-petrus-dung-et-petrus-thuan": [
+    {
+      "name": "Petrus Dung",
+      "where": "text"
+    },
+    {
+      "name": "Petrus Thuan",
+      "where": "text"
+    },
+    {
+      "name": "Vincentius Duong",
+      "where": "text",
+      "it": "Vincenzo Đương"
+    }
+  ],
   "mr:0607-petrus-et-socii": [
     {
       "name": "Petrus",
@@ -1527,6 +2403,43 @@
       "it": "Digna"
     }
   ],
+  "mr:0615-hesychius": [
+    {
+      "name": "Hesychius",
+      "where": "text"
+    },
+    {
+      "name": "Iulius",
+      "where": "text",
+      "it": "Giulio"
+    }
+  ],
+  "mr:0616-dominicus-nguyen-et-socii": [
+    {
+      "name": "Dominicus Nguyen",
+      "where": "text"
+    },
+    {
+      "name": "Dominicus Nhi",
+      "where": "text",
+      "it": "Domenico Nhi"
+    },
+    {
+      "name": "Dominicus Mao",
+      "where": "text",
+      "it": "Domenico Mạo"
+    },
+    {
+      "name": "Vincentius",
+      "where": "text",
+      "it": "Vincenzo"
+    },
+    {
+      "name": "Andreas Tuong",
+      "where": "text",
+      "it": "Andrea Tường"
+    }
+  ],
   "mr:0619-sebastianus-newdigate-et-socii": [
     {
       "name": "Sebastianus Newdigate",
@@ -1565,6 +2478,21 @@
       "name": "Antonius Turner",
       "where": "text",
       "it": "Antonio Turner"
+    }
+  ],
+  "mr:0622-iulius-et-aaron": [
+    {
+      "name": "Iulius",
+      "where": "text"
+    },
+    {
+      "name": "Aaron",
+      "where": "text"
+    },
+    {
+      "name": "Albanus",
+      "where": "text",
+      "it": "Albano"
     }
   ],
   "mr:0626-magdalena-fontaine-et-socii": [
@@ -1640,6 +2568,66 @@
       "it": "Paolo Wu Wanshu"
     }
   ],
+  "mr:0630-basilides": [
+    {
+      "name": "Basilides",
+      "where": "text"
+    },
+    {
+      "name": "Potamioena",
+      "where": "text",
+      "it": "Potamiena"
+    },
+    {
+      "name": "Potamiaena",
+      "where": "text",
+      "it": "Potamiena"
+    }
+  ],
+  "mr:0702-liberatus-et-socii": [
+    {
+      "name": "Liberatus",
+      "where": "text"
+    },
+    {
+      "name": "Bonifatius",
+      "where": "text"
+    },
+    {
+      "name": "Servius",
+      "where": "text"
+    },
+    {
+      "name": "Rusticus",
+      "where": "text"
+    },
+    {
+      "name": "Rogatus",
+      "where": "text",
+      "it": "Rogato"
+    },
+    {
+      "name": "Septimus",
+      "where": "text",
+      "it": "Settimo"
+    },
+    {
+      "name": "Maximus",
+      "where": "text",
+      "it": "Massimo"
+    }
+  ],
+  "mr:0703-memnon": [
+    {
+      "name": "Memnon",
+      "where": "text"
+    },
+    {
+      "name": "Severus",
+      "where": "text",
+      "it": "Severo"
+    }
+  ],
   "mr:0704-gulielmus-andleby-et-socii": [
     {
       "name": "Gulielmus Andleby",
@@ -1658,6 +2646,47 @@
       "where": "text"
     }
   ],
+  "mr:0704-ioannes-cornelius-et-socii": [
+    {
+      "name": "Ioannes Cornelius",
+      "where": "text"
+    },
+    {
+      "name": "Thomas Bosgrave",
+      "where": "text",
+      "it": "Tommaso Bosgrave"
+    },
+    {
+      "name": "Ioannes Carey",
+      "where": "text",
+      "it": "Giovanni Carey"
+    },
+    {
+      "name": "Patricius Salmon",
+      "where": "text",
+      "it": "Patrizio Salmon"
+    }
+  ],
+  "mr:0705-georgius-nichols-et-richardus-yaxley": [
+    {
+      "name": "Georgius Nichols",
+      "where": "text"
+    },
+    {
+      "name": "Richardus Yaxley",
+      "where": "text"
+    },
+    {
+      "name": "Thomas Belson",
+      "where": "text",
+      "it": "Tommaso Belson"
+    },
+    {
+      "name": "Humphredus Pritchard",
+      "where": "text",
+      "it": "Unfredo Pritchard"
+    }
+  ],
   "mr:0705-matthaeus-lambert-et-socii": [
     {
       "name": "Matthaeus Lambert",
@@ -1674,6 +2703,32 @@
     {
       "name": "Patricius Cavanagh",
       "where": "text"
+    }
+  ],
+  "mr:0706-thomas-more": [
+    {
+      "name": "Thomas More",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Fisher",
+      "where": "text",
+      "it": "Giovanni Fisher"
+    }
+  ],
+  "mr:0707-rogerius-dickinson-et-radulphus-milner": [
+    {
+      "name": "Rogerius Dickinson",
+      "where": "text"
+    },
+    {
+      "name": "Radulphus Milner",
+      "where": "text"
+    },
+    {
+      "name": "Laurentius Humphrey",
+      "where": "text",
+      "it": "Lorenzo Humphrey"
     }
   ],
   "mr:0709-augustinus-zhao-rong-et-socii": [
@@ -2419,6 +3474,41 @@
       }
     }
   ],
+  "mr:0710-felix-et-philippus": [
+    {
+      "name": "Felix",
+      "where": "text"
+    },
+    {
+      "name": "Philippus",
+      "where": "text"
+    },
+    {
+      "name": "Vitalis",
+      "where": "text",
+      "it": "Vitale"
+    },
+    {
+      "name": "Martialis",
+      "where": "text",
+      "it": "Marziale"
+    },
+    {
+      "name": "Alexander",
+      "where": "text",
+      "it": "Alessandro"
+    },
+    {
+      "name": "Silanus",
+      "where": "text",
+      "it": "Silano"
+    },
+    {
+      "name": "Ianuarius",
+      "where": "text",
+      "it": "Gennaro"
+    }
+  ],
   "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
     {
       "name": "Rosalia Clotildis a Sancta Pelagia Bès",
@@ -2476,6 +3566,78 @@
       "where": "text"
     }
   ],
+  "mr:0718-symphorosa-et-socii": [
+    {
+      "name": "Symphorosa",
+      "where": "text"
+    },
+    {
+      "name": "Crescens",
+      "where": "text",
+      "it": "Crescente"
+    },
+    {
+      "name": "Iulianus",
+      "where": "text",
+      "it": "Giuliano"
+    },
+    {
+      "name": "Nemesius",
+      "where": "text",
+      "it": "Nemesio"
+    },
+    {
+      "name": "Primitivus",
+      "where": "text",
+      "it": "Primitivo"
+    },
+    {
+      "name": "Iustinus",
+      "where": "text",
+      "it": "Giustino"
+    },
+    {
+      "name": "Stacteus",
+      "where": "text",
+      "it": "Stacteo"
+    },
+    {
+      "name": "Eugenius",
+      "where": "text",
+      "it": "Eugenio"
+    }
+  ],
+  "mr:0719-aurea": [
+    {
+      "name": "Aurea",
+      "where": "text"
+    },
+    {
+      "name": "Adolphus",
+      "where": "text",
+      "it": "Adolfo"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "it": "Giovanni"
+    }
+  ],
+  "mr:0720-leo-ignatius-mangin-et-paulus-denn": [
+    {
+      "name": "Leo Ignatius Mangin",
+      "where": "text"
+    },
+    {
+      "name": "Paulus Denn",
+      "where": "text"
+    },
+    {
+      "name": "Maria Zhou Wuzhi",
+      "where": "text",
+      "it": "Maria Zhou Wuzhi"
+    }
+  ],
   "mr:0720-maria-zhao-guozhi-et-socii": [
     {
       "name": "Maria Zhao Guozhi",
@@ -2490,6 +3652,28 @@
       "where": "text"
     }
   ],
+  "mr:0721-simeon-salus": [
+    {
+      "name": "Simeon Salus",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "it": "Giovanni"
+    }
+  ],
+  "mr:0722-anastasius": [
+    {
+      "name": "Anastasius",
+      "where": "text"
+    },
+    {
+      "name": "Maximus Confessor",
+      "where": "text",
+      "it": "Massimo il Confessore"
+    }
+  ],
   "mr:0722-anna-wang-et-socii": [
     {
       "name": "Anna Wang",
@@ -2502,6 +3686,17 @@
     {
       "name": "Andreas Wang Tianqing",
       "where": "text"
+    }
+  ],
+  "mr:0723-severus": [
+    {
+      "name": "Severus",
+      "where": "text"
+    },
+    {
+      "name": "Memnon",
+      "where": "text",
+      "it": "Memnóne"
     }
   ],
   "mr:0724-nicolaus-garlick-et-socii": [
@@ -2617,6 +3812,69 @@
       "where": "text"
     }
   ],
+  "mr:0727-clemens": [
+    {
+      "name": "Clemens",
+      "where": "text"
+    },
+    {
+      "name": "Gorazdus",
+      "where": "text",
+      "it": "Gorazdo"
+    },
+    {
+      "name": "Nahum",
+      "where": "text",
+      "it": "Nahum"
+    },
+    {
+      "name": "Sabas",
+      "where": "text",
+      "it": "Saba"
+    },
+    {
+      "name": "Angelarius",
+      "where": "text",
+      "it": "Angelario"
+    }
+  ],
+  "mr:0727-ecclesius": [
+    {
+      "name": "Ecclesius",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes I",
+      "where": "text",
+      "it": "Giovanni I"
+    }
+  ],
+  "mr:0727-georgius-et-socii": [
+    {
+      "name": "Georgius",
+      "where": "text"
+    },
+    {
+      "name": "Aurelius",
+      "where": "text",
+      "it": "Aurelio"
+    },
+    {
+      "name": "Sabigotho",
+      "where": "text",
+      "it": "Sabigoto"
+    },
+    {
+      "name": "Felix",
+      "where": "text",
+      "it": "Felice"
+    },
+    {
+      "name": "Liliosa",
+      "where": "text",
+      "it": "Liliosa"
+    }
+  ],
   "mr:0727-philippus-hernandez-martinez-et-socii": [
     {
       "name": "Philippus Hernandez Martinez",
@@ -2655,6 +3913,26 @@
       "name": "Nicolaus",
       "where": "text",
       "it": "Nicola"
+    }
+  ],
+  "mr:0729-iosephus-zhang-wenlan-et-paulus-chen-changpin": [
+    {
+      "name": "Iosephus Zhang Wenlan",
+      "where": "text"
+    },
+    {
+      "name": "Paulus Chen Changpin",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Baptista Lou Tingyin",
+      "where": "text",
+      "it": "Giovanni Battista Lou Tingyin"
+    },
+    {
+      "name": "Martha Wang Louzhi",
+      "where": "text",
+      "it": "Marta Wang Louzhi"
     }
   ],
   "mr:0729-simplicius-et-socii": [
@@ -2809,6 +4087,17 @@
       "where": "text"
     }
   ],
+  "mr:0808-ioannes-fingley": [
+    {
+      "name": "Ioannes Fingley",
+      "where": "text"
+    },
+    {
+      "name": "Robertus Bickendike",
+      "where": "text",
+      "it": "Roberto Bickendike"
+    }
+  ],
   "mr:0808-secundus-et-socii": [
     {
       "name": "Secundus",
@@ -2842,6 +4131,39 @@
       "where": "text"
     }
   ],
+  "mr:0810-ioannes-martorell-soria": [
+    {
+      "name": "Ioannes Martorell Soria",
+      "where": "text"
+    },
+    {
+      "name": "Petrus Mesonero Rodriguez",
+      "where": "text",
+      "it": "Pietro Mesonero Rodríguez"
+    }
+  ],
+  "mr:0810-laurentius": [
+    {
+      "name": "Laurentius",
+      "where": "text"
+    },
+    {
+      "name": "Xystus II",
+      "where": "text",
+      "it": "Sisto"
+    }
+  ],
+  "mr:0811-raphael-alonso-gutierrez": [
+    {
+      "name": "Raphael Alonso Gutierrez",
+      "where": "text"
+    },
+    {
+      "name": "Carolus Diaz Gandia",
+      "where": "text",
+      "it": "Carlo Díaz Gandía"
+    }
+  ],
   "mr:0812-iacobus-do-mai-nam-et-socii": [
     {
       "name": "Iacobus Do Mai Nam",
@@ -2854,6 +4176,43 @@
     {
       "name": "Michael Nguyen Huy My",
       "where": "text"
+    }
+  ],
+  "mr:0813-maximus-confessor": [
+    {
+      "name": "Maximus Confessor",
+      "where": "text"
+    },
+    {
+      "name": "Anastasius",
+      "where": "text",
+      "it": "Anastasio"
+    },
+    {
+      "name": "Anastasius",
+      "n": 2,
+      "where": "text",
+      "it": "Anastasio"
+    }
+  ],
+  "mr:0815-aloysius-batis-sainz-et-socii": [
+    {
+      "name": "Aloysius Batis Sainz",
+      "where": "text"
+    },
+    {
+      "name": "Emmanuel Morales",
+      "where": "text"
+    },
+    {
+      "name": "Salvator Lara Puente",
+      "where": "text",
+      "it": "Salvatore Lara Puente"
+    },
+    {
+      "name": "David Roldan Lara",
+      "where": "text",
+      "it": "Davide Roldán Lara"
     }
   ],
   "mr:0815-straton-et-socii": [
@@ -2965,6 +4324,22 @@
       "it": "Pistio"
     }
   ],
+  "mr:0821-bernardus-et-socii": [
+    {
+      "name": "Bernardus",
+      "where": "text"
+    },
+    {
+      "name": "Maria",
+      "where": "text",
+      "it": "Maria"
+    },
+    {
+      "name": "Gratia",
+      "where": "text",
+      "it": "Grazia"
+    }
+  ],
   "mr:0823-claudius-et-socii": [
     {
       "name": "Claudius",
@@ -3035,6 +4410,63 @@
     {
       "name": "Ludovicus Baba",
       "where": "text"
+    }
+  ],
+  "mr:0827-marcellinus-et-socii": [
+    {
+      "name": "Marcellinus",
+      "where": "text"
+    },
+    {
+      "name": "Mannea",
+      "where": "text",
+      "it": "Mannea"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "it": "Giovanni"
+    },
+    {
+      "name": "Serapion",
+      "where": "text",
+      "it": "Serapione"
+    },
+    {
+      "name": "Petrus",
+      "where": "text",
+      "it": "Pietro"
+    }
+  ],
+  "mr:0830-margarita-ward": [
+    {
+      "name": "Margarita Ward",
+      "where": "text"
+    },
+    {
+      "name": "Richardus Leigh",
+      "where": "text",
+      "it": "Riccardo Leigh"
+    },
+    {
+      "name": "Eduardus Shelley",
+      "where": "text",
+      "it": "Edoardo Shelley"
+    },
+    {
+      "name": "Richardus Martin",
+      "where": "text",
+      "it": "Riccardo Martin"
+    },
+    {
+      "name": "Ioannes Roche",
+      "where": "text",
+      "it": "Giovanni Roche"
+    },
+    {
+      "name": "Richardus Lloyd",
+      "where": "text",
+      "it": "Riccardo Lloyd"
     }
   ],
   "mr:0901-petrus-rivera-et-socii": [
@@ -3630,6 +5062,38 @@
       "where": {
         "footnote": 1
       }
+    }
+  ],
+  "mr:0902-iustus": [
+    {
+      "name": "Iustus",
+      "where": "text"
+    },
+    {
+      "name": "Viator",
+      "where": "text",
+      "it": "Viatore"
+    }
+  ],
+  "mr:0902-theodota": [
+    {
+      "name": "Theodota",
+      "where": "text"
+    },
+    {
+      "name": "Evodius",
+      "where": "text",
+      "it": "Evódio"
+    },
+    {
+      "name": "Hermogenes",
+      "where": "text",
+      "it": "Ermógene"
+    },
+    {
+      "name": "Callistus",
+      "where": "text",
+      "it": "Callisto"
     }
   ],
   "mr:0903-andreas-abel-alricy-et-socii": [
@@ -4325,6 +5789,47 @@
       "where": "text"
     }
   ],
+  "mr:0910-nemesianus-et-socii": [
+    {
+      "name": "Nemesianus",
+      "where": "text"
+    },
+    {
+      "name": "Felix",
+      "where": "text",
+      "it": "Felice"
+    },
+    {
+      "name": "Lucius",
+      "where": "text",
+      "it": "Lucio"
+    },
+    {
+      "name": "Litteus",
+      "where": "text",
+      "it": "Littéo"
+    },
+    {
+      "name": "Polianus",
+      "where": "text",
+      "it": "Poliano"
+    },
+    {
+      "name": "Victor",
+      "where": "text",
+      "it": "Vittore"
+    },
+    {
+      "name": "Iader",
+      "where": "text",
+      "it": "Iader"
+    },
+    {
+      "name": "Dativus",
+      "where": "text",
+      "it": "Dativo"
+    }
+  ],
   "mr:0911-gaspar-koteda-et-socii": [
     {
       "name": "Gaspar Koteda",
@@ -4395,6 +5900,21 @@
       "where": "text"
     }
   ],
+  "mr:0916-dominicus-shobioye-et-michael-timonoya": [
+    {
+      "name": "Dominicus Shobioye",
+      "where": "text"
+    },
+    {
+      "name": "Michael Timonoya",
+      "where": "text"
+    },
+    {
+      "name": "Paulus",
+      "where": "text",
+      "it": "Paolo"
+    }
+  ],
   "mr:0916-victor-et-socii": [
     {
       "name": "Victor",
@@ -4430,6 +5950,37 @@
       "name": "Consolata Aguiar-Mella y Diaz",
       "where": "text",
       "it": "Consolata Aguiar-Mella y Díaz"
+    }
+  ],
+  "mr:0919-peleus-et-nilus": [
+    {
+      "name": "Peleus",
+      "where": "text"
+    },
+    {
+      "name": "Nilus",
+      "where": "text"
+    },
+    {
+      "name": "Elias",
+      "where": "text",
+      "it": "Elia"
+    },
+    {
+      "name": "Patermuthius",
+      "where": "text",
+      "it": "Patermuzio"
+    }
+  ],
+  "mr:0919-pomposa": [
+    {
+      "name": "Pomposa",
+      "where": "text"
+    },
+    {
+      "name": "Columba",
+      "where": "text",
+      "it": "Colomba"
     }
   ],
   "mr:0920-andreas-kim-tae-gon-et-socii": [
@@ -5049,6 +6600,21 @@
       }
     }
   ],
+  "mr:0920-hypatius-et-asianus": [
+    {
+      "name": "Hypatius",
+      "where": "text"
+    },
+    {
+      "name": "Asianus",
+      "where": "text"
+    },
+    {
+      "name": "Andreas",
+      "where": "text",
+      "it": "Andrea"
+    }
+  ],
   "mr:0921-eusebius-et-socii": [
     {
       "name": "Eusebius",
@@ -5128,6 +6694,127 @@
       "where": "text"
     }
   ],
+  "mr:0925-paulus-et-tatta": [
+    {
+      "name": "Paulus",
+      "where": "text"
+    },
+    {
+      "name": "Tatta",
+      "where": "text"
+    },
+    {
+      "name": "Sabinianus",
+      "where": "text",
+      "it": "Sabiniano"
+    },
+    {
+      "name": "Maximus",
+      "where": "text",
+      "it": "Massimo"
+    },
+    {
+      "name": "Rufus",
+      "where": "text",
+      "it": "Rufo"
+    },
+    {
+      "name": "Eugenius",
+      "where": "text",
+      "it": "Eugenio"
+    }
+  ],
+  "mr:0926-raphael-pardo-molina": [
+    {
+      "name": "Raphael Pardo Molina",
+      "where": "text"
+    },
+    {
+      "name": "Iosephus Maria Vidal Segu",
+      "where": "text",
+      "it": "Giuseppe Maria Vidal Segú"
+    }
+  ],
+  "mr:0926-sebastianus-nam-i-gwan-et-socii": [
+    {
+      "name": "Sebastianus Nam I Gwan",
+      "where": "text"
+    },
+    {
+      "name": "Lucia Kim",
+      "where": "text",
+      "it": "Lucia Kim"
+    },
+    {
+      "name": "Catharina Yi",
+      "where": "text",
+      "it": "Caterina Yi"
+    },
+    {
+      "name": "Magdalena Cho",
+      "where": "text",
+      "it": "Maddalena Cho"
+    },
+    {
+      "name": "Ignatius Kim Che-jun",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Carolus Cho Shin-ch’ŏl",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Columba Kim Hyo-im",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Magdalena Pak Pong-sŏn",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Perpetua Hong Kŭm-ju",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Iulitta Kim",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Agatha Chŏn Kyŏng-hyŏb",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Magdalena Hŏ Kye-im",
+      "where": {
+        "footnote": 1
+      }
+    }
+  ],
+  "mr:0927-florentinus": [
+    {
+      "name": "Florentinus",
+      "where": "text"
+    },
+    {
+      "name": "Hilarius",
+      "where": "text",
+      "it": "Ilario"
+    }
+  ],
   "mr:0928-alphaeus-et-socii": [
     {
       "name": "Alphaeus",
@@ -5202,6 +6889,108 @@
       "it": "Gaiana"
     }
   ],
+  "mr:1001-geraldus-edwards": [
+    {
+      "name": "Geraldus Edwards",
+      "where": "text"
+    },
+    {
+      "name": "Robertus Wilcox",
+      "where": "text",
+      "it": "Roberto Wilcox"
+    },
+    {
+      "name": "Christophorus Buxton",
+      "where": "text",
+      "it": "Cristoforo Buxton"
+    },
+    {
+      "name": "Robertus Widmerpool",
+      "where": "text",
+      "it": "Roberto Widmerpool"
+    }
+  ],
+  "mr:1002-leodegarius": [
+    {
+      "name": "Leodegarius",
+      "where": "text"
+    },
+    {
+      "name": "Gerinus",
+      "where": "text",
+      "it": "Gerino"
+    }
+  ],
+  "mr:1002-ludovicus-yakichi-et-lucia": [
+    {
+      "name": "Ludovicus Yakichi",
+      "where": "text"
+    },
+    {
+      "name": "Lucia",
+      "where": "text"
+    },
+    {
+      "name": "Andreas",
+      "where": "text",
+      "it": "Andrea"
+    },
+    {
+      "name": "Franciscus",
+      "where": "text",
+      "it": "Francesco"
+    }
+  ],
+  "mr:1003-faustus-et-socii": [
+    {
+      "name": "Faustus",
+      "where": "text"
+    },
+    {
+      "name": "Caius",
+      "where": "text"
+    },
+    {
+      "name": "Petrus",
+      "where": "text"
+    },
+    {
+      "name": "Paulus",
+      "where": "text"
+    },
+    {
+      "name": "Eusebius",
+      "where": "text"
+    },
+    {
+      "name": "Chaeremon",
+      "where": "text"
+    },
+    {
+      "name": "Lucius",
+      "where": "text"
+    },
+    {
+      "name": "Dionysius",
+      "where": "text",
+      "it": "Dionigi"
+    }
+  ],
+  "mr:1005-gulielmus-hartley-et-ioannes-hewett": [
+    {
+      "name": "Gulielmus Hartley",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes Hewett",
+      "where": "text"
+    },
+    {
+      "name": "Robertus Sutton",
+      "where": "text",
+      "it": "Roberto Sutton"
+    }
+  ],
   "mr:1008-ioannes-adams-et-socii": [
     {
       "name": "Ioannes Adams",
@@ -5229,6 +7018,83 @@
       "name": "Didymus",
       "where": "text",
       "it": "Didimo"
+    }
+  ],
+  "mr:1009-dionysius-et-socii": [
+    {
+      "name": "Dionysius",
+      "where": "text"
+    },
+    {
+      "name": "Rusticus",
+      "where": "text",
+      "it": "Rustico"
+    },
+    {
+      "name": "Eleutherius",
+      "where": "text",
+      "it": "Eleuterio"
+    }
+  ],
+  "mr:1010-daniel-et-socii": [
+    {
+      "name": "Daniel",
+      "where": "text"
+    },
+    {
+      "name": "Samuel",
+      "where": "text",
+      "it": "Samuele"
+    },
+    {
+      "name": "Angelus",
+      "where": "text",
+      "it": "Angelo"
+    },
+    {
+      "name": "Leo",
+      "where": "text",
+      "it": "Leone"
+    },
+    {
+      "name": "Nicolaus",
+      "where": "text",
+      "it": "Nicola"
+    },
+    {
+      "name": "Hugolinus",
+      "where": "text",
+      "it": "Ugolino"
+    },
+    {
+      "name": "Domnus",
+      "where": "text",
+      "it": "Domno"
+    }
+  ],
+  "mr:1011-anastasius": [
+    {
+      "name": "Anastasius",
+      "where": "text"
+    },
+    {
+      "name": "Maximus Confessor",
+      "where": "text",
+      "it": "Massimo il Confessore"
+    }
+  ],
+  "mr:1011-gaudentius": [
+    {
+      "name": "Gaudentius",
+      "also": [
+        "Radzim"
+      ],
+      "where": "text"
+    },
+    {
+      "name": "Adalbertus",
+      "where": "text",
+      "it": "Adalberto"
     }
   ],
   "mr:1011-nicasius-et-socii": [
@@ -5262,6 +7128,36 @@
       "name": "Andronicus",
       "where": "text",
       "it": "Androníco"
+    }
+  ],
+  "mr:1016-martinianus-et-saturianus": [
+    {
+      "name": "Martinianus",
+      "where": "text"
+    },
+    {
+      "name": "Saturianus",
+      "where": "text"
+    },
+    {
+      "name": "Maxima",
+      "where": "text",
+      "it": "Massima"
+    }
+  ],
+  "mr:1017-rufus-et-zosimus": [
+    {
+      "name": "Rufus",
+      "where": "text"
+    },
+    {
+      "name": "Zosimus",
+      "where": "text"
+    },
+    {
+      "name": "Ignatius",
+      "where": "text",
+      "it": "Ignazio"
     }
   ],
   "mr:1018-proculus-et-socii": [
@@ -5320,6 +7216,47 @@
       "it": "Natale Chabanel"
     }
   ],
+  "mr:1021-viator": [
+    {
+      "name": "Viator",
+      "where": "text"
+    },
+    {
+      "name": "Iustus",
+      "where": "text",
+      "it": "Giusto"
+    }
+  ],
+  "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta": [
+    {
+      "name": "Hildephonsus Garcia",
+      "where": "text"
+    },
+    {
+      "name": "Iustinianus Cuesta",
+      "where": "text"
+    },
+    {
+      "name": "Euphrasius de Celis",
+      "where": "text",
+      "it": "Eufrasio de Celis"
+    },
+    {
+      "name": "Honorinus Carracedo",
+      "where": "text",
+      "it": "Onorino Carracedo"
+    },
+    {
+      "name": "Thomas Cuartero",
+      "where": "text",
+      "it": "Tommaso Cuartero"
+    },
+    {
+      "name": "Iosephus Maria Cuartero",
+      "where": "text",
+      "it": "Giuseppe Maria Cuartero"
+    }
+  ],
   "mr:1025-maria-teresia-ferragud-roig-et-socii": [
     {
       "name": "Maria Teresia Ferragud Roig",
@@ -5351,6 +7288,17 @@
       "where": "text"
     }
   ],
+  "mr:1026-rogatianus": [
+    {
+      "name": "Rogatianus",
+      "where": "text"
+    },
+    {
+      "name": "Felicissimus",
+      "where": "text",
+      "it": "Felicissimo"
+    }
+  ],
   "mr:1028-vincentius-et-socii": [
     {
       "name": "Vincentius",
@@ -5364,6 +7312,17 @@
       "name": "Christeta",
       "where": "text",
       "it": "Cristeta"
+    }
+  ],
+  "mr:1029-honoratus": [
+    {
+      "name": "Honoratus",
+      "where": "text"
+    },
+    {
+      "name": "Eusebius",
+      "where": "text",
+      "it": "Eusebio"
     }
   ],
   "mr:1030-claudius-et-socii": [
@@ -5463,6 +7422,11 @@
     {
       "name": "Timotheus",
       "where": "text"
+    },
+    {
+      "name": "Auxentius",
+      "where": "text",
+      "it": "Aussenzio"
     }
   ],
   "mr:1108-iosephus-nguyen-dinh-nghi-et-socii": [
@@ -5533,6 +7497,32 @@
       "name": "Manatha",
       "where": "text",
       "it": "Mánatas"
+    }
+  ],
+  "mr:1113-arcadius-et-socii": [
+    {
+      "name": "Arcadius",
+      "where": "text"
+    },
+    {
+      "name": "Paschasius",
+      "where": "text",
+      "it": "Pascasio"
+    },
+    {
+      "name": "Probus",
+      "where": "text",
+      "it": "Probo"
+    },
+    {
+      "name": "Eutychianus",
+      "where": "text",
+      "it": "Eutichiano"
+    },
+    {
+      "name": "Paulillus",
+      "where": "text",
+      "it": "Paolillo"
     }
   ],
   "mr:1114-nicolaus-tavelic-et-socii": [
@@ -5620,6 +7610,17 @@
       "name": "Adventor",
       "where": "text",
       "it": "Avventore"
+    }
+  ],
+  "mr:1122-philemon-colossensis": [
+    {
+      "name": "Philemon Colossensis",
+      "where": "text"
+    },
+    {
+      "name": "Apphia",
+      "where": "text",
+      "it": "Affia"
     }
   ],
   "mr:1122-salvator-lilli-et-socii": [
@@ -6365,6 +8366,21 @@
       }
     }
   ],
+  "mr:1124-flora-et-maria": [
+    {
+      "name": "Flora",
+      "where": "text"
+    },
+    {
+      "name": "Maria",
+      "where": "text"
+    },
+    {
+      "name": "Eulogius",
+      "where": "text",
+      "it": "Eulogio"
+    }
+  ],
   "mr:1124-petrus-dumoulin-borie-et-socii": [
     {
       "name": "Petrus Dumoulin Borie",
@@ -6377,6 +8393,60 @@
     {
       "name": "Vincentius Nguyen The Ðiểm",
       "where": "text"
+    }
+  ],
+  "mr:1125-hyacinthus-serrano-lopez": [
+    {
+      "name": "Hyacinthus Serrano Lopez",
+      "where": "text"
+    },
+    {
+      "name": "Iacobus Meseguer Burillo",
+      "where": "text",
+      "it": "Giacomo Meseguer Burillo"
+    }
+  ],
+  "mr:1125-moyses": [
+    {
+      "name": "Moyses",
+      "where": "text"
+    },
+    {
+      "name": "Fabianus",
+      "where": "text",
+      "it": "Fabiano"
+    }
+  ],
+  "mr:1125-petrus": [
+    {
+      "name": "Petrus",
+      "where": "text"
+    },
+    {
+      "name": "Hesychius",
+      "where": "text",
+      "it": "Esichio"
+    },
+    {
+      "name": "Pachomius",
+      "where": "text",
+      "it": "Pacomio"
+    },
+    {
+      "name": "Theodorus",
+      "where": "text",
+      "it": "Teodoro"
+    }
+  ],
+  "mr:1125-petrus-yi-ho-yong": [
+    {
+      "name": "Petrus Yi Ho Yong",
+      "where": "text"
+    },
+    {
+      "name": "Agatha Yi So Sa",
+      "where": "text",
+      "it": "Agata Yi So-sa"
     }
   ],
   "mr:1127-thomas-koteda-kiuni-et-socii": [
@@ -6445,6 +8515,61 @@
       }
     }
   ],
+  "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": [
+    {
+      "name": "Papinianus Vitensis",
+      "where": "text"
+    },
+    {
+      "name": "Mansuetus Urusitanus",
+      "where": "text"
+    },
+    {
+      "name": "Urbanus Girbitanus",
+      "where": "text",
+      "it": "Urbano di Djerba"
+    },
+    {
+      "name": "Crescens Byzaciensis",
+      "where": "text",
+      "it": "Crescente di Bizacio"
+    },
+    {
+      "name": "Habetdeus Teudalensis",
+      "where": "text",
+      "it": "Habetdéus di Teudala"
+    },
+    {
+      "name": "Eustratius Sufetanus",
+      "where": "text",
+      "it": "Eustrazio di Sufes"
+    },
+    {
+      "name": "Cresconius Oeensis",
+      "where": "text",
+      "it": "Cresconio di Tripoli"
+    },
+    {
+      "name": "Vicis Sabratensis",
+      "where": "text",
+      "it": "Vice di Sabrata"
+    },
+    {
+      "name": "Felix Hadrumetanus",
+      "where": "text",
+      "it": "Felice di Sousse"
+    },
+    {
+      "name": "Hortulanus Bennefensis",
+      "where": "text",
+      "it": "Ortolano di Bennefa"
+    },
+    {
+      "name": "Florentianus Midilensis",
+      "where": "text",
+      "it": "Florenziano di Mdila"
+    }
+  ],
   "mr:1129-georgius-errington-et-socii": [
     {
       "name": "Georgius Errington",
@@ -6457,6 +8582,17 @@
     {
       "name": "Gulielmus Knight",
       "where": "text"
+    }
+  ],
+  "mr:1129-iacobus": [
+    {
+      "name": "Iacobus",
+      "where": "text"
+    },
+    {
+      "name": "Ephraem",
+      "where": "text",
+      "it": "Efrem"
     }
   ],
   "mr:1201-edmundus-campion-et-socii": [
@@ -6485,6 +8621,132 @@
     {
       "name": "Simon Yempo",
       "where": "text"
+    }
+  ],
+  "mr:1206-iosephus-nguyen-duy-khang": [
+    {
+      "name": "Iosephus Nguyen Duy Khang",
+      "where": "text"
+    },
+    {
+      "name": "Hieronymus Hermosilla",
+      "where": "text",
+      "it": "Girolamo Hermosilla"
+    }
+  ],
+  "mr:1206-martyres-africae": [
+    {
+      "name": "Dionysia",
+      "where": "text",
+      "it": "Dionisia"
+    },
+    {
+      "name": "Maioricus",
+      "where": "text",
+      "it": "Maioríco"
+    },
+    {
+      "name": "Æmilius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Dativa",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Leontia",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Tertius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Bonifatius Sibidensis",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Servius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Victrix",
+      "where": {
+        "footnote": 1
+      }
+    }
+  ],
+  "mr:1210-ioannes-roberts": [
+    {
+      "name": "Ioannes Roberts",
+      "where": "text"
+    },
+    {
+      "name": "Thomas Somers",
+      "where": "text",
+      "it": "Tommaso Somers"
+    }
+  ],
+  "mr:1210-polydorus-plasden-et-eustatius-white": [
+    {
+      "name": "Polydorus Plasden",
+      "where": "text"
+    },
+    {
+      "name": "Eustatius White",
+      "where": "text"
+    },
+    {
+      "name": "Brianus Lacy",
+      "where": "text",
+      "it": "Brian Lacy"
+    },
+    {
+      "name": "Ioannes Mason",
+      "where": "text",
+      "it": "Giovanni Mason"
+    },
+    {
+      "name": "Sydneius Hodgson",
+      "where": "text",
+      "it": "Sidney Hodgson"
+    }
+  ],
+  "mr:1212-epimachus-et-alexander": [
+    {
+      "name": "Epimachus",
+      "where": "text"
+    },
+    {
+      "name": "Alexander",
+      "where": "text"
+    },
+    {
+      "name": "Ammonarion",
+      "where": "text",
+      "it": "Ammonarion"
+    },
+    {
+      "name": "Mercuria",
+      "where": "text",
+      "it": "Mercuria"
+    },
+    {
+      "name": "Dionysia",
+      "where": "text",
+      "it": "Dionisia"
     }
   ],
   "mr:1213-eustratius-et-socii": [
@@ -6545,6 +8807,27 @@
       "it": "Dioscoro"
     }
   ],
+  "mr:1214-nicasius": [
+    {
+      "name": "Nicasius",
+      "where": "text"
+    },
+    {
+      "name": "Eutropia",
+      "where": "text",
+      "it": "Eutropia"
+    },
+    {
+      "name": "Florentius",
+      "where": "text",
+      "it": "Fiorenzo"
+    },
+    {
+      "name": "Iucundus",
+      "where": "text",
+      "it": "Giocondo"
+    }
+  ],
   "mr:1218-namphamo-et-socii": [
     {
       "name": "Namphamo",
@@ -6566,10 +8849,164 @@
       "it": "Lucítas"
     }
   ],
+  "mr:1218-paulus-nguyen-van-my-et-petrus-truong-van": [
+    {
+      "name": "Paulus Nguyen Van My",
+      "where": "text"
+    },
+    {
+      "name": "Petrus Truong Van",
+      "where": "text"
+    },
+    {
+      "name": "Petrus Vu Van Truat",
+      "where": "text",
+      "it": "Pietro Vũ Văn Truật"
+    }
+  ],
+  "mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy": [
+    {
+      "name": "Franciscus Xaverius Ha Trong Mau",
+      "where": "text"
+    },
+    {
+      "name": "Dominicus Bui Van Uy",
+      "where": "text"
+    },
+    {
+      "name": "Thomas Nguyen Van De",
+      "where": "text",
+      "it": "Tommaso Nguyễn Văn Đệ"
+    },
+    {
+      "name": "Augustinus Nguyen Van Moi",
+      "where": "text",
+      "it": "Agostino Nguyễn Văn Mới"
+    },
+    {
+      "name": "Stephanus Nguyen Van Vinh",
+      "where": "text",
+      "it": "Stefano Nguyễn Văn Vinh"
+    }
+  ],
   "mr:1222-chaeremon-et-socii": [
     {
       "name": "Chaeremon",
       "where": "text"
+    }
+  ],
+  "mr:1223-theodulus-et-socii": [
+    {
+      "name": "Theodulus",
+      "where": "text"
+    },
+    {
+      "name": "Saturninus",
+      "where": "text",
+      "it": "Saturnino"
+    },
+    {
+      "name": "Euporus",
+      "where": "text",
+      "it": "Eupóro"
+    },
+    {
+      "name": "Gelasius",
+      "where": "text",
+      "it": "Gelasio"
+    },
+    {
+      "name": "Eunicianus",
+      "where": "text",
+      "it": "Euniciano"
+    },
+    {
+      "name": "Zoticus",
+      "where": "text",
+      "it": "Zótico"
+    },
+    {
+      "name": "Pontius",
+      "where": "text",
+      "it": "Ponzio"
+    },
+    {
+      "name": "Agathopus",
+      "where": "text",
+      "it": "Agatópo"
+    },
+    {
+      "name": "Basilides",
+      "where": "text",
+      "it": "Basílide"
+    },
+    {
+      "name": "Evaristus",
+      "where": "text",
+      "it": "Evaristo"
+    }
+  ],
+  "mr:1226-agnes-phila-et-lucia-khambang": [
+    {
+      "name": "Agnes Phila",
+      "where": "text"
+    },
+    {
+      "name": "Lucia Khambang",
+      "where": "text"
+    },
+    {
+      "name": "Agatha Phutta",
+      "where": "text",
+      "it": "Agata Phutta"
+    },
+    {
+      "name": "Caecilia Butsi",
+      "where": "text",
+      "it": "Cecilia Butsi"
+    },
+    {
+      "name": "Bibiana Hampai",
+      "where": "text",
+      "it": "Viviana Hampai"
+    },
+    {
+      "name": "Maria Phon",
+      "where": "text",
+      "it": "Maria Phon"
+    }
+  ],
+  "mr:1226-zeno": [
+    {
+      "name": "Zeno",
+      "where": "text"
+    },
+    {
+      "name": "Eusebius",
+      "where": "text",
+      "it": "Eusebio"
+    },
+    {
+      "name": "Nestabius",
+      "where": "text",
+      "it": "Nestabio"
+    },
+    {
+      "name": "Zeno",
+      "n": 2,
+      "where": "text",
+      "it": "Zenone"
+    }
+  ],
+  "mr:1227-theodorus": [
+    {
+      "name": "Theodorus",
+      "where": "text"
+    },
+    {
+      "name": "Theophanes",
+      "where": "text",
+      "it": "Teofane"
     }
   ],
   "mr:1231-donata-et-socii": [
@@ -6604,6 +9041,17 @@
       "name": "Hilaria",
       "where": "text",
       "it": "Ilaria"
+    }
+  ],
+  "mr:1231-melania": [
+    {
+      "name": "Melania",
+      "where": "text"
+    },
+    {
+      "name": "Pinianus",
+      "where": "text",
+      "it": "Piniano"
     }
   ]
 }

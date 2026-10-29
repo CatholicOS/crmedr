@@ -7396,9 +7396,9 @@
         }
       ],
       "date": {
-        "year": 250,
+        "to": 1630,
         "basis": "death",
-        "source": "wikidata"
+        "source": "edition"
       },
       "unnumbered": true
     },
@@ -14000,10 +14000,9 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
-        "source": "estimate"
+        "from": 84,
+        "to": 288,
+        "source": "wikidata"
       }
     },
     {
@@ -17018,8 +17017,9 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "from": -1273,
+        "to": 400,
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
@@ -18407,11 +18407,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1862,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -30693,10 +30691,8 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
-        "source": "estimate"
+        "year": 1594,
+        "source": "wikidata"
       }
     },
     {
@@ -30781,8 +30777,9 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "from": 301,
+        "to": 400,
+        "source": "wikidata"
       }
     },
     {
@@ -39867,11 +39864,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1945,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -40346,8 +40341,8 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "year": 536,
+        "source": "wikidata"
       }
     },
     {
@@ -54746,9 +54741,9 @@
         }
       ],
       "date": {
-        "year": 754,
+        "to": 1630,
         "basis": "death",
-        "source": "wikidata"
+        "source": "edition"
       },
       "unnumbered": true
     },
@@ -55498,11 +55493,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1862,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Vincent Dung\" where the Latin has \"Vincéntii Ðương\" (Vincent Dương)."
@@ -70713,7 +70706,8 @@
         }
       ],
       "date": {
-        "year": 135,
+        "from": 1,
+        "to": 135,
         "source": "wikidata"
       },
       "edition_notes": {
@@ -81261,11 +81255,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -83071,11 +83063,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1926,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -90935,9 +90925,9 @@
         }
       ],
       "date": {
-        "year": 287,
+        "to": 1630,
         "basis": "deposition",
-        "source": "wikidata"
+        "source": "edition"
       }
     },
     {
@@ -100658,6 +100648,7 @@
       ],
       "date": {
         "year": 1839,
+        "circa": true,
         "basis": "death",
         "source": "wikidata"
       },
@@ -103089,11 +103080,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1588,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -116017,8 +116006,8 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "year": 473,
+        "source": "wikidata"
       },
       "note": "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions."
     },
@@ -127954,9 +127943,9 @@
         }
       ],
       "date": {
-        "year": 283,
+        "to": 1630,
         "basis": "deposition",
-        "source": "wikidata"
+        "source": "edition"
       },
       "same_eulogy": [
         "mr:1207-eutychianus"

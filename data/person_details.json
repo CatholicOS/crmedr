@@ -100,6 +100,40 @@
       "pt": "Josué"
     }
   },
+  "Q9077": {
+    "description": {
+      "en": "Abrahamic prophet said to have led the Israelites out of Egypt",
+      "it": "principale profeta nell'ebraismo, profeta anche per cristianesimo e islam",
+      "fr": "premier prophète du judaïsme",
+      "de": "Zentralfigur der ersten fünf Bücher der Bibel",
+      "es": "personaje de la Biblia, profeta en el judaísmo, cristianismo e Islam; protagonista del libro del Éxodo",
+      "pt": "profeta no judaismo e islamismo, lider religioso e juiz de Israel"
+    },
+    "born": {
+      "year": -1393,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": -1273,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Seleznikha church - prophet Moses (18 c.).jpg",
+      "author": "18 century icon painter",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Moses",
+      "it": "Mosè",
+      "fr": "Moïse",
+      "de": "Mose",
+      "es": "Moisés",
+      "pt": "Moisés"
+    }
+  },
   "Q9181": {
     "description": {
       "en": "foundational legendary figure among adherents of the eponymous Abrahamic religions",
@@ -4048,6 +4082,36 @@
       "pt": "Papa Vítor I"
     }
   },
+  "Q128538": {
+    "description": {
+      "en": "one of the four evangelists",
+      "it": "uno dei quattro evangelisti",
+      "fr": "évangéliste du Nouveau Testament",
+      "de": "einer der vier Evangelisten, Verfasser des Lukasevangeliums",
+      "es": "evangelista y apóstol",
+      "pt": "um dos quatro evangelistas"
+    },
+    "born": null,
+    "died": {
+      "year": 84,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Grandes Heures Anne de Bretagne Saint Luc.jpg",
+      "author": "Jean Bourdichon",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Luke the Evangelist",
+      "it": "Luca (evangelista)",
+      "fr": "Luc (évangéliste)",
+      "de": "Lukas (Evangelist)",
+      "es": "Lucas el Evangelista",
+      "pt": "Lucas, o Evangelista"
+    }
+  },
   "Q129546": {
     "description": {
       "en": "Christian mystic",
@@ -4170,40 +4234,6 @@
       "de": "Damasus I.",
       "es": "Dámaso I",
       "pt": "Papa Dâmaso I"
-    }
-  },
-  "Q131159": {
-    "description": {
-      "en": "pope and bishop of Rome from 236 to 250",
-      "it": "20° vescovo di Roma e papa della Chiesa cattolica dal 236 al 250",
-      "fr": "20e pape de l'Église catholique, de 236 à 250",
-      "de": "Papst und Märtyrer",
-      "es": "20.º papa de la Iglesia Católica",
-      "pt": "20° Papa da Igreja Católica"
-    },
-    "born": {
-      "year": 200,
-      "precision": "decade",
-      "circa": true
-    },
-    "died": {
-      "year": 250,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Saint Fabian1.jpg",
-      "author": "Giovanni di Paolo",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Pope Fabian",
-      "it": "Papa Fabiano",
-      "fr": "Fabien (pape)",
-      "de": "Fabianus",
-      "es": "Fabián (papa)",
-      "pt": "Papa Fabiano"
     }
   },
   "Q131162": {
@@ -5002,39 +5032,6 @@
       "pt": "Rábano Mauro"
     }
   },
-  "Q160445": {
-    "description": {
-      "en": "8th‑century Anglo‑Saxon bishop and missionary, Catholic saint and martyr, known as the ‘Apostle to the Germans’",
-      "it": "vescovo e monaco anglosassone",
-      "fr": "saint catholique",
-      "de": "angelsächsischer Mönch, Missionar, „Apostel der Deutschen“",
-      "es": "obispo, santo y mártir de la Iglesia católica"
-    },
-    "born": {
-      "year": 675,
-      "precision": "year",
-      "circa": true
-    },
-    "died": {
-      "year": 754,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Cornelis Bloemaert - S. Bonifacius.jpg",
-      "author": "Cornelis Bloemaert",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Saint Boniface",
-      "it": "Bonifacio (arcivescovo di Magonza)",
-      "fr": "Boniface de Mayence",
-      "de": "Bonifatius",
-      "es": "Bonifacio de Maguncia",
-      "pt": "Bonifácio de Mogúncia"
-    }
-  },
   "Q160686": {
     "description": {
       "en": "West Saxon saint",
@@ -5298,40 +5295,6 @@
       "de": "Miltiades (Bischof von Rom)",
       "es": "Melquíades",
       "pt": "Papa Melquíades"
-    }
-  },
-  "Q162972": {
-    "description": {
-      "en": "Pope and Bishop of Rome from 275 to 283",
-      "it": "27° vescovo di Roma e papa della Chiesa cattolica dal 275 al 283",
-      "fr": "27e pape de l'Église catholique, de 275 à 283",
-      "de": "Papst",
-      "es": "27.º papa de la Iglesia Católica",
-      "pt": "27º Papa da Igreja Católica"
-    },
-    "born": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 283,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Pope Eutychian.jpg",
-      "author": "Artaud de Montor (1772–1849)",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Pope Eutychian",
-      "it": "Papa Eutichiano",
-      "fr": "Eutychien",
-      "de": "Eutychianus",
-      "es": "Eutiquiano",
-      "pt": "Papa Eutiquiano"
     }
   },
   "Q162973": {
@@ -18915,6 +18878,37 @@
       "es": "Heriberto de Colonia"
     }
   },
+  "Q662713": {
+    "description": {
+      "en": "Catholic saint and Bishop of Ravenna",
+      "it": "vescovo italiano",
+      "fr": "saint de l'église catholique",
+      "de": "Erzbischof der katholischen Kirche",
+      "es": "santo obispo"
+    },
+    "born": {
+      "year": 500,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 536,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Ursicinus of Ravenna mosaic (crop) - Sant'Apollinare in Classe - Ravenna 2016.jpg",
+      "author": "José Luiz",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Ursicinus (bishop of Ravenna)",
+      "it": "Ursicino di Ravenna (vescovo)",
+      "fr": "Ursicin de Ravenne",
+      "de": "Ursicinus von Ravenna (Bischof)"
+    }
+  },
   "Q668528": {
     "description": {
       "en": "Roman Catholic martyr and lay carmelite (1887–1909)",
@@ -22479,6 +22473,31 @@
       "de": "Michael Garicoits",
       "es": "Miguel Garicoits",
       "pt": "Michel Garicoïts"
+    }
+  },
+  "Q981729": {
+    "description": {
+      "en": "figure in New Testament; missionary in Galatia who became a companion of Paul",
+      "fr": "disciple de saint Paul, saint catholique, évêque légendaire",
+      "de": "einer der Siebzig Jünger Jesu"
+    },
+    "born": null,
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Silvanus-Crescens-Silas.jpg",
+      "author": null,
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Crescens",
+      "fr": "Crescent (saint)",
+      "de": "Crescens (Heiliger)",
+      "pt": "Crescêncio"
     }
   },
   "Q983066": {
@@ -26298,34 +26317,6 @@
       "pt": "Julião de Le Mans"
     }
   },
-  "Q1714476": {
-    "description": {
-      "en": "Gallo-Roman saint",
-      "de": "katholischer Märtyrer"
-    },
-    "born": {
-      "year": 277,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 287,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "AD 2024 - Reliekhouder Sint-Justus - Antwerpen.jpg",
-      "author": "Carolus",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {
-      "en": "Justus of Beauvais",
-      "fr": "Juste de Beauvais",
-      "de": "Justus von Beauvais",
-      "pt": "Justus de Beauvais"
-    }
-  },
   "Q1722511": {
     "description": {
       "en": "Italian Roman Catholic missionary and saint (1903–1930)",
@@ -27694,6 +27685,30 @@
     },
     "wikipedia": {
       "it": "Macario di Antiochia"
+    }
+  },
+  "Q2070679": {
+    "description": {
+      "en": "Egyptian monk",
+      "it": "monaco egiziano",
+      "fr": "moine antique",
+      "es": "monje egipcio del siglo IV"
+    },
+    "born": {
+      "year": 301,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 399,
+      "precision": "century",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "it": "Ammonio di Nitria",
+      "fr": "Ammonios le Moine",
+      "es": "Ammonio el monje"
     }
   },
   "Q2071311": {
@@ -29573,6 +29588,33 @@
       "es": "Lesmes de Burgos"
     }
   },
+  "Q2423087": {
+    "description": {
+      "en": "English Catholic priest and martyr",
+      "de": "englischer Jesuit und Märtyrer"
+    },
+    "born": {
+      "year": 1549,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1582,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Melchior küsel-tomás cottam.jpg",
+      "author": "Melchior Küsel (grabado)-Karel Škréta (dibujo)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Thomas Cottam",
+      "fr": "Thomas Cottam",
+      "de": "Thomas Cottam"
+    }
+  },
   "Q2424430": {
     "description": {
       "en": "Bishop of Arbela"
@@ -30493,6 +30535,36 @@
       "es": "Euplo de Catania"
     }
   },
+  "Q2604923": {
+    "description": {
+      "en": "Polish educationist (1898-1945), Roman Catholic bishop and blessed",
+      "it": "vescovo e beato cattolico polacco",
+      "fr": "évêque et bienheuruex catholique polonais",
+      "de": "polnischer katholischer Priester und Pädagoge",
+      "es": "pedagogo polaco"
+    },
+    "born": {
+      "year": 1898,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1945,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Władysław Goral.png",
+      "author": "Zakład fotograficzny: \"Sztuka\" z Lublina",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "it": "Władysław Goral",
+      "fr": "Władysław Goral",
+      "de": "Władysław Goral"
+    }
+  },
   "Q2608376": {
     "description": {
       "en": "Italian martyr and Blessed (1919–1935)",
@@ -30619,6 +30691,35 @@
       "de": "Jean de Lalande",
       "es": "Juan de Lalande",
       "pt": "Jean de Lalande"
+    }
+  },
+  "Q2630223": {
+    "description": {
+      "en": "hermit",
+      "it": "santo bizantino",
+      "fr": "ermite et saint chrétien",
+      "de": "nach militärischer Laufbahn unter Theodosios Il. (Offizier der Palastgarde) Eremit am Oxeia-Berg; Heiliger (Fest 14. Februar)"
+    },
+    "born": {
+      "year": 400,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 473,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Auxentius, monk of Bithynia (Menologion of Basil II).jpeg",
+      "author": "Authors of Menologion of Basil II (circa 985 AC, Constantinople), Byzantine manuscript illuminators[1]: Pantoleon with Georgios, Michael the Younger, Michael of Blachernae, Symeon, Symeon of Blachernae, Menas, and Nestor (Online on Vatican site)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Auxentius of Bithynia",
+      "it": "Aussenzio di Bitinia",
+      "es": "Auxencio de Bitinia"
     }
   },
   "Q2635887": {
@@ -34355,6 +34456,23 @@
       "it": "Benincasa di Cava"
     }
   },
+  "Q3652965": {
+    "description": {
+      "en": "Eastern Orthodox martyr",
+      "it": "Santo del terzo secolo"
+    },
+    "born": null,
+    "died": {
+      "year": 288,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Mocius",
+      "it": "Mocio di Anfipoli"
+    }
+  },
   "Q3667471": {
     "description": {
       "en": "Italian Roman Catholic nun (1858-1887)",
@@ -36568,6 +36686,29 @@
     "image": null,
     "wikipedia": {
       "en": "John Alcober"
+    }
+  },
+  "Q4068319": {
+    "description": {
+      "en": "early Christian saint and martyr",
+      "de": "frühchristliche Märtyrerin"
+    },
+    "born": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "died": null,
+    "image": {
+      "file": "Philemon and Apphia.jpg",
+      "author": "учащихся Иконописной школы",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Saint Appia",
+      "de": "Apphia",
+      "es": "Apia de Colosas"
     }
   },
   "Q4075367": {
@@ -39002,6 +39143,22 @@
       "fr": "George Errington (martyr)"
     }
   },
+  "Q5551107": {
+    "description": {
+      "en": "Roman Catholic saint"
+    },
+    "born": null,
+    "died": {
+      "year": 1544,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "German Gardiner",
+      "fr": "German Gardiner"
+    }
+  },
   "Q5661279": {
     "description": {
       "en": "blessed, roman catholic bishop",
@@ -40073,6 +40230,32 @@
       "fr": "Roger Cadwallador"
     }
   },
+  "Q7358184": {
+    "description": {
+      "en": "English Jesuit priest",
+      "fr": "prêtre anglais"
+    },
+    "born": {
+      "year": 1570,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1601,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Melchior küsel-rogelio filcock.jpg",
+      "author": "Melchior Küsel (grabado)-Karel Škréta (dibujo)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Roger Filcock",
+      "fr": "Roger Filcock"
+    }
+  },
   "Q7442488": {
     "description": {
       "en": "Carthusian monk and martyr"
@@ -40192,6 +40375,27 @@
     },
     "wikipedia": {
       "en": "Theopemptus of Nicomedia"
+    }
+  },
+  "Q7787562": {
+    "description": {
+      "en": "English martyr"
+    },
+    "born": {
+      "year": 1563,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1589,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Thomas Belson",
+      "fr": "Thomas Belson",
+      "pt": "Thomas Belson"
     }
   },
   "Q7788018": {
@@ -40735,6 +40939,21 @@
       "fr": "Pierre Aumaître"
     }
   },
+  "Q8761806": {
+    "description": {},
+    "born": {
+      "year": 1924,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1940,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q8776192": {
     "description": {
       "en": "Catholic martyr from England",
@@ -40791,6 +41010,21 @@
       "fr": "Henri Walpole",
       "es": "Enrique Walpole"
     }
+  },
+  "Q8949650": {
+    "description": {},
+    "born": {
+      "year": 1926,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1940,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
   },
   "Q8962871": {
     "description": {
@@ -40964,6 +41198,23 @@
       "en": "Agatha Kwon Chin-i",
       "fr": "Agathe Kwon Chin-i"
     }
+  },
+  "Q9141938": {
+    "description": {
+      "en": "Thai martyr (1881–1940)"
+    },
+    "born": {
+      "year": 1881,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1940,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
   },
   "Q9141961": {
     "description": {
@@ -42058,6 +42309,21 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q9374990": {
+    "description": {},
+    "born": {
+      "year": 1821,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1862,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q9375123": {
     "description": {},
     "born": {
@@ -42294,7 +42560,8 @@
   },
   "Q10329903": {
     "description": {
-      "en": "17th-century Portuguese Catholic missionary and martyr"
+      "en": "17th-century Portuguese Catholic missionary and martyr",
+      "de": "Missionar und katholischer Priester (–1624)"
     },
     "born": {
       "year": 1579,
@@ -43234,6 +43501,23 @@
     },
     "image": null,
     "wikipedia": {}
+  },
+  "Q11736010": {
+    "description": {},
+    "born": {
+      "year": 1907,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "pt": "Carlos Díaz Gandía"
+    }
   },
   "Q11736175": {
     "description": {
@@ -44475,6 +44759,28 @@
       "es": "Torcuato del Tricastin"
     }
   },
+  "Q13522446": {
+    "description": {
+      "en": "English Roman Catholic priest",
+      "fr": "oblat bénédictin et prêtre catholique anglais"
+    },
+    "born": {
+      "year": 1570,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1601,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Mark Barkworth",
+      "fr": "Mark Barkworth",
+      "es": "Marcos Barkworth"
+    }
+  },
   "Q14918019": {
     "description": {
       "en": "Spanish Capuchin priest, martyr near Castellón (died 1936)",
@@ -45518,6 +45824,34 @@
     "image": null,
     "wikipedia": {
       "es": "Recaredo Centelles Abad"
+    }
+  },
+  "Q17362081": {
+    "description": {
+      "en": "Mexican Catholic layman and activist",
+      "it": "santo della Chiesa Cattolica",
+      "es": "activista católico mexicano"
+    },
+    "born": {
+      "year": 1902,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1926,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Dawid Roldán Lara.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "David Roldán Lara",
+      "it": "David Roldán Lara",
+      "es": "David Roldán Lara"
     }
   },
   "Q17362144": {
@@ -47710,21 +48044,6 @@
       "it": "Maimbodo"
     }
   },
-  "Q37945430": {
-    "description": {
-      "de": "hl. Felicissimus von Rom, christlicher Märtyrer, 3. Jh. n. Chr."
-    },
-    "born": null,
-    "died": {
-      "year": 258,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "de": "Felicissimus (Heiliger)"
-    }
-  },
   "Q37945581": {
     "description": {
       "en": "martyr of Edessa, sister of Saint Sarbelius",
@@ -48688,6 +49007,20 @@
       "de": "Joseph Pellé"
     }
   },
+  "Q59133739": {
+    "description": {
+      "en": "Egyptian martyr (ca. 300 CE)",
+      "it": "santo martire cristiano",
+      "de": "ägyptischer Märtyrer (3. Jahrhundert)"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "it": "Nemesio d'Alessandria",
+      "de": "Nemesius von Alexandria"
+    }
+  },
   "Q61413636": {
     "description": {
       "it": "beato",
@@ -48906,6 +49239,25 @@
       "fr": "Euphraise de Clermont"
     }
   },
+  "Q64410398": {
+    "description": {
+      "en": "one of the Oaten Hill Martyrs"
+    },
+    "born": {
+      "year": 1558,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1588,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "fr": "Robert Wilcox"
+    }
+  },
   "Q65014188": {
     "description": {
       "fr": "prêtre catholique français"
@@ -49007,13 +49359,6 @@
     "wikipedia": {
       "es": "Eustracio Taumaturgo"
     }
-  },
-  "Q85971792": {
-    "description": {},
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {}
   },
   "Q85972007": {
     "description": {},
@@ -49403,7 +49748,8 @@
   "Q100272960": {
     "description": {
       "en": "Spanish martyr (1888-1937)",
-      "fr": "religieuse martyre pendant la guerre civile espagnole"
+      "fr": "religieuse martyre pendant la guerre civile espagnole",
+      "de": "Ordensangehörige (1888–1937)"
     },
     "born": {
       "year": 1888,
@@ -49446,6 +49792,33 @@
       "es": "Lorenzo Bâtard"
     }
   },
+  "Q100741656": {
+    "description": {
+      "en": "English Reformation Catholic priest and martyr (born Thomas Green, alias Richard Reynolds)",
+      "fr": "martyr catholique",
+      "es": "sacerdote católico inglés, mártir de la reforma inglesa (conocido también como Tomás Green o Richard Reynolds)"
+    },
+    "born": {
+      "year": 1562,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1642,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Thomas Reynolds (Thomas Green).jpg",
+      "author": "ManofMadrid",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Thomas Reynolds (priest)",
+      "fr": "Thomas Reynolds (martyr)"
+    }
+  },
   "Q104903969": {
     "description": {
       "en": "6th century Abbess",
@@ -49471,6 +49844,20 @@
   "Q105688251": {
     "description": {
       "it": "protomartire cristiano trentino"
+    },
+    "born": null,
+    "died": {
+      "year": 397,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q105688612": {
+    "description": {
+      "it": "protomartire cristiano trentino",
+      "de": "Heiliger (gest. 397)"
     },
     "born": null,
     "died": {
@@ -49582,6 +49969,28 @@
       "pt": "André Wouters"
     }
   },
+  "Q107303904": {
+    "description": {
+      "en": "Christian saint"
+    },
+    "born": {
+      "year": 300,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 400,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Vatican Museums 2020 P02 Saint Antiochianus mosaic.jpg",
+      "author": "Fallaner",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {}
+  },
   "Q107444476": {
     "description": {
       "en": "religious martyr",
@@ -49610,7 +50019,8 @@
   "Q107863881": {
     "description": {
       "en": "French Christian abbot",
-      "fr": "saint et abbé français"
+      "fr": "saint et abbé français",
+      "de": "Mönch (450–539)"
     },
     "born": {
       "year": 450,
