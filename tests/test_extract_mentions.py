@@ -205,6 +205,17 @@ class RepeatedNamesTest(unittest.TestCase):
                 _, review, _ = mentions_of(text, persons=[{"name": name, "where": "text"}])
                 self.assertEqual(review, [])
 
+    def test_the_first_name_alone_before_another_surname_is_not_proposed(self):
+        text = "Londínii, sancti Radúlphi Sherwin. Eódem die sanctus Radúlphus Smith passus est."
+        _, review, _ = mentions_of(text, persons=[{"name": "Radulphus Sherwin", "where": "text"}])
+        self.assertEqual(review, [])
+
+    def test_the_first_name_alone_before_a_capitalized_title_is_proposed(self):
+        # 0807: "Xystus Póntifex" is Xystus II again; a title is no surname.
+        text = "Romæ, sancti Xysti papæ Secúndi. Xystus Póntifex, dum sacra peragébat, captus est."
+        _, review, _ = mentions_of(text, persons=[{"name": "Xystus II", "where": "text"}])
+        self.assertEqual([r["form"] for r in review], ["Xystus"])
+
     def test_a_first_name_two_persons_share_is_not_proposed_alone(self):
         text = "Londínii, sanctórum Ioánnis Speed et Ioánnis Larke. Ioánnes vero laicus erat."
         persons = [{"name": "Ioannes Speed", "where": "text"}, {"name": "Ioannes Larke", "where": "text"}]

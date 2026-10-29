@@ -398,12 +398,31 @@ def _holders(items, extra=()):
     return out
 
 
+# At most this many passes of propose: each looks up again the persons of the eulogies the last
+# one matched someone in, whose group route (gather) those matches open.
+MAX_PASSES = 5
+
+
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     # A queued op whose person is no longer in persons.json (a corrected list) is dropped: it was undecided.
     ops = {op["id"]: op for op in review["operations"] if op["id"] in index}
     not_processed = []
-    failures = 0
+    state = {"failures": 0}
+    keys = sorted(index)
+    for _ in range(MAX_PASSES):
+        matched = _propose_pass(items, ops, index, client, force_review, keys, not_processed, state)
+        keys = sorted(k for k in index if index[k]["eulogy"] in matched and not _decided(items, index[k]))
+        if not keys:
+            break
+    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
+    review["generated_at"] = datetime.date.today().isoformat()
+    return not_processed
+
+
+def _propose_pass(items, ops, index, client, force_review, keys, not_processed, state):
+    """One pass of propose over the persons `keys`: returns the eulogies it matched someone in."""
     pending = {}  # automatic results, written once it is known which items are shared
+    matched = set()
 
     def keep(key, person):
         """A queued op not looked up this time takes the person's details (other names, companions)
@@ -412,12 +431,12 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             old = ops[key]
             ops[key] = make_op(key, person, {"failed": old["failed"], "candidates": old["candidates"]}, old)
 
-    for key in sorted(index):
+    for key in keys:
         person = index[key]
         if _decided(items, person):
             ops.pop(key, None)
             continue
-        if failures >= MAX_CONSECUTIVE_FAILURES:
+        if state["failures"] >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((key, "skipped: Wikidata unavailable"))
             keep(key, person)
             continue
@@ -425,10 +444,10 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             result = evaluate(person, gather(person, client, items))
         except WikidataError as e:
             not_processed.append((key, str(e)))
-            failures += 1
+            state["failures"] += 1
             keep(key, person)
             continue
-        failures = 0
+        state["failures"] = 0
         if key in force_review:
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[key])
@@ -487,9 +506,8 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         else:
             items.setdefault(person["eulogy"], {})[person_key(person)] = {"wikidata": qid, "status": "auto"}
             ops.pop(key, None)
-    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
-    review["generated_at"] = datetime.date.today().isoformat()
-    return not_processed
+            matched.add(person["eulogy"])
+    return matched
 
 
 # The roles of a eulogy's places whose saints are looked up.

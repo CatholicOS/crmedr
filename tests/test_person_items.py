@@ -282,6 +282,18 @@ class GroupRouteTest(unittest.TestCase):
         self.assertNotIn("Thomas Kozaki", items["mr:0206-paulus-miki-et-socii"])
         self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], ["Q23"])
 
+    def test_a_companion_matched_in_the_same_run_opens_the_group_route(self):
+        # Paulus Miki is matched by the search; his group then finds Thomas Kozaki, in one run.
+        index = {"mr:0206-paulus-miki-et-socii|Paulus Miki": dict(PERSON, companions=["Thomas Kozaki"]),
+                 self.KOZAKI: dict(PERSON, name="Thomas Kozaki", companions=["Paulus Miki"])}
+        client = FakeClient({"Paulus Miki": [cand("Q10", ["Paul Miki"])]}, kin={"Q10": [member("Q20", ["Thomas Kozaki"])]})
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, index, client)
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"],
+                         {"Paulus Miki": {"wikidata": "Q10", "status": "auto"},
+                          "Thomas Kozaki": {"wikidata": "Q20", "status": "auto"}})
+        self.assertEqual(review["operations"], [])
+
     def test_no_matched_companion_no_group_lookup(self):
         _, _, client = self.run_propose([member("Q20", ["Thomas Kozaki"])], items={})
         self.assertEqual(client.relatives_calls, [])

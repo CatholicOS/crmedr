@@ -146,6 +146,11 @@ INSTITUTION_STEMS = ("ordin", "regul", "regol", "institut", "istitut", "congrega
 VIRGIN_STEMS = ("virg", "verg", "immacul", "auxili", "ausili", "dolor", "addolor", "mercede", "merced")
 WORD = re.compile(r"[^\W\d_]+['’]?")
 FIRST_NAME_ALONE_REACH = 4  # the words before a first name alone looked at for an institution's
+# A capitalized word right after a name, past its particles: a surname, unless it is a title or a sacred
+# name the edition capitalizes ("Xystus Póntifex", "Petrus Christum confessus").
+NOT_SURNAME_STEMS = ("pontif", "papa", "christ", "domin", "iesu", "spirit", "eccles")
+NOT_SURNAMES = {"deus", "dei", "deo", "deum"}
+NEXT_SURNAME = re.compile(r"(?:\s+(?:" + "|".join(sorted(NAME_PARTICLES | {"la", "le", "du"})) + r")\b)*\s+([^\W\d_])")
 
 
 def named_alone(src, span):
@@ -156,10 +161,11 @@ def named_alone(src, span):
     after = WORD.findall(src[span[1]:])[:4]
     if after and fold(after[0]).startswith(VIRGIN_STEMS):
         return False
-    # Another person's own name: the first name, then a surname after particles ("Ioánnes de la Lande").
-    particles = NAME_PARTICLES | {"la", "le", "du"}
-    rest = after[next((i for i, w in enumerate(after) if fold(w) not in particles), len(after)):]
-    if after and fold(after[0]) in particles and rest and rest[0][:1].isupper():
+    # Another person's own name: the first name, then a surname, after particles or not ("Ioánnes de la
+    # Lande", "Radúlphus Smith").
+    if ((m := NEXT_SURNAME.match(src, span[1])) and m.group(1).isupper()
+            and not ((w := fold(WORD.match(src, m.start(1)).group(0))).startswith(NOT_SURNAME_STEMS)
+                     or w in NOT_SURNAMES)):
         return False
     if any(w.startswith(INSTITUTION_STEMS) for w in before[-FIRST_NAME_ALONE_REACH:]):
         return False

@@ -380719,33 +380719,6 @@
     },
     {
       "op": "resolve_person",
-      "id": "mr:0629-paulus-wu-juan-et-socii|Ioannes Baptista Wu Mantang",
-      "eulogy": "mr:0629-paulus-wu-juan-et-socii",
-      "day": "06-29",
-      "typology": "dies_natalis",
-      "subject": "Sancti Paulus Wu Juan et socii",
-      "name": "Ioannes Baptista Wu Mantang",
-      "where": "text",
-      "companions": [
-        "Paulus Wu Juan",
-        "Paulus Wu Wanshu"
-      ],
-      "failed": [
-        "no candidate found"
-      ],
-      "candidates": [],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Shenzhou City",
-          "qid": "Q1362440"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
       "id": "mr:0629-paulus-wu-juan-et-socii|Paulus Wu Juan",
       "eulogy": "mr:0629-paulus-wu-juan-et-socii",
       "day": "06-29",
@@ -389129,361 +389102,6 @@
           "role": "death",
           "label": "Vize",
           "qid": "Q364021"
-        }
-      ]
-    },
-    {
-      "op": "resolve_person",
-      "id": "mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi|Ioannes Baptista Zhao Mingxi",
-      "eulogy": "mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi",
-      "day": "07-03",
-      "typology": "dies_natalis",
-      "subject": "Sancti Petrus Zhao Mingzhen et Ioannes Baptista Zhao Mingxi",
-      "name": "Ioannes Baptista Zhao Mingxi",
-      "where": "text",
-      "companions": [
-        "Petrus Zhao Mingzhen"
-      ],
-      "failed": [
-        "name: the best candidate (Q2826467) fails it",
-        "death: the best candidate (Q2826467) fails it"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q2826467",
-          "label": "Agathe Lin Zhao",
-          "description": "Chinese laywoman, teacher, saint (1817-1858)",
-          "names": [
-            "Agatha Lin",
-            "Agatha Lin Zhao",
-            "Agathe Lin Zhao",
-            "Agathe Lin-tchao",
-            "St. Agatha Lin"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126"
-          ],
-          "born": "1817",
-          "died": "1858-01-28",
-          "feast": [
-            "Q2285"
-          ],
-          "signals": [
-            "P841",
-            "P8080",
-            "P4286"
-          ],
-          "birth_place": [
-            "Q14162482"
-          ],
-          "death_place": [
-            "Q47097"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Guizhou"
-            ],
-            "birth_place": [
-              "Machang"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q4169026",
-          "label": "Mary Du",
-          "description": "",
-          "names": [
-            "Mary Du",
-            "Mary Du Zhao",
-            "Mary Zhao"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1849",
-          "died": "1900-06-26",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q21208"
-          ],
-          "death_place": [
-            "Q21208"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Hebei"
-            ],
-            "birth_place": [
-              "Hebei"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q4515469",
-          "label": "Mary Zhao",
-          "description": "Chinese Christian laywoman, martyr (1883–1900)",
-          "names": [
-            "Maria Zhao",
-            "Mary Zhao"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1883",
-          "died": "1900-07-28",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q21208"
-          ],
-          "death_place": [
-            "Q21208"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Hebei"
-            ],
-            "birth_place": [
-              "Hebei"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q4515472",
-          "label": "Mary Zhao Guo",
-          "description": "Christian laywoman, martyr (1840–1900)",
-          "names": [
-            "Mary Zhao Guo"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126"
-          ],
-          "born": "1840",
-          "died": "1900-07-28",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q21208"
-          ],
-          "death_place": [
-            "Q21208"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Hebei"
-            ],
-            "birth_place": [
-              "Hebei"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q4515477",
-          "label": "James Zhao Quanxin",
-          "description": "",
-          "names": [
-            "James Zhao Quanxin"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1856",
-          "died": "1900-07-09",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q46913"
-          ],
-          "death_place": [
-            "Q72778"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Taiyuan"
-            ],
-            "birth_place": [
-              "Shanxi"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q552659",
-          "label": "Augustinus Zhao Rong",
-          "description": "Chinese presbyter",
-          "names": [
-            "Agostino Zhao Rong",
-            "Augustine Tchao",
-            "Augustinus Zhao Rong",
-            "Saint Augustine Tchao",
-            "Saint Augustine Zhao Rong",
-            "Sant'Agostino Zhao Rong",
-            "St Augustine Tchao",
-            "St. Augustine Tchao"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q2369287"
-          ],
-          "born": "1746",
-          "died": "1815-01-21",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841",
-            "P6126",
-            "P8080",
-            "P4286",
-            "P10799"
-          ],
-          "birth_place": [
-            "Q1200434"
-          ],
-          "death_place": [
-            "Q30002"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Chengdu"
-            ],
-            "birth_place": [
-              "Wuchuan Gelao and Miao Autonomous County"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q9325793",
-          "label": "Rosa Zhao",
-          "description": "Christian laywoman, martyr, saint",
-          "names": [
-            "Rosa Zhao"
-          ],
-          "human": true,
-          "statuses": [
-            "Q3464126",
-            "Q43115",
-            "Q2369287"
-          ],
-          "born": "1878",
-          "died": "1900-07-28",
-          "feast": [
-            "Q2690"
-          ],
-          "signals": [
-            "P841"
-          ],
-          "birth_place": [
-            "Q21208"
-          ],
-          "death_place": [
-            "Q21208"
-          ],
-          "burial_place": [],
-          "work_places": [],
-          "source": "companion:P361",
-          "evidence": [
-            "human",
-            "status",
-            "group"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Hebei"
-            ],
-            "birth_place": [
-              "Hebei"
-            ]
-          }
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "places": [
-        {
-          "role": "death",
-          "label": "Shenzhou City",
-          "qid": "Q1362440"
         }
       ]
     },
@@ -452922,6 +452540,51 @@
           }
         },
         {
+          "wikidata": "Q4515469",
+          "label": "Mary Zhao",
+          "description": "Chinese Christian laywoman, martyr (1883–1900)",
+          "names": [
+            "Maria Zhao",
+            "Mary Zhao"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126",
+            "Q2369287"
+          ],
+          "born": "1883",
+          "died": "1900-07-28",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
           "wikidata": "Q4515471",
           "label": "Peter Zhao Mingzhen",
           "description": "Chinese Catholic martyr with his brother John Baptist Zhao Mingxi (died 1900)",
@@ -452935,6 +452598,49 @@
           ],
           "born": "1839",
           "died": "1900-07-03",
+          "feast": [
+            "Q2690"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [
+            "Q21208"
+          ],
+          "death_place": [
+            "Q21208"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Hebei"
+            ],
+            "birth_place": [
+              "Hebei"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q4515472",
+          "label": "Mary Zhao Guo",
+          "description": "Christian laywoman, martyr (1840–1900)",
+          "names": [
+            "Mary Zhao Guo"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": "1840",
+          "died": "1900-07-28",
           "feast": [
             "Q2690"
           ],
@@ -453065,17 +452771,19 @@
           }
         },
         {
-          "wikidata": "Q4515472",
-          "label": "Mary Zhao Guo",
-          "description": "Christian laywoman, martyr (1840–1900)",
+          "wikidata": "Q9325793",
+          "label": "Rosa Zhao",
+          "description": "Christian laywoman, martyr, saint",
           "names": [
-            "Mary Zhao Guo"
+            "Rosa Zhao"
           ],
           "human": true,
           "statuses": [
-            "Q3464126"
+            "Q3464126",
+            "Q43115",
+            "Q2369287"
           ],
-          "born": "1840",
+          "born": "1878",
           "died": "1900-07-28",
           "feast": [
             "Q2690"
@@ -453091,9 +452799,11 @@
           ],
           "burial_place": [],
           "work_places": [],
+          "source": "companion:P361",
           "evidence": [
             "human",
-            "status"
+            "status",
+            "group"
           ],
           "places": [],
           "place_labels": {
@@ -477541,6 +477251,61 @@
           "places": []
         },
         {
+          "wikidata": "Q239058",
+          "label": "Mary of Bethany",
+          "description": "figure described in the Gospel of John; sister of Lazarus and Martha, living in the village of Bethany near Jerusalem",
+          "names": [
+            "Maria Betanica",
+            "Maria di Betania",
+            "Mary of Bethany",
+            "Mary, of Bethany, Saint",
+            "Santa Maria di Betania"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0100",
+          "feast": [
+            "Q2717",
+            "Q2627"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P4286"
+          ],
+          "birth_place": [
+            "Q2181579"
+          ],
+          "death_place": [
+            "Q831190"
+          ],
+          "burial_place": [],
+          "work_places": [
+            "Q23792"
+          ],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Bethany"
+            ],
+            "birth_place": [
+              "al-Eizariya"
+            ],
+            "work_places": [
+              "Palestine"
+            ]
+          }
+        },
+        {
           "wikidata": "Q345",
           "label": "Mary",
           "description": "mother of Jesus Christ",
@@ -477845,50 +477610,6 @@
             ],
             "birth_place": [
               "Linlithgow Palace"
-            ]
-          }
-        },
-        {
-          "wikidata": "Q157073",
-          "label": "Mary of Burgundy",
-          "description": "duchess of Burgundy and wife of emperor Maximilian I (1457-1482)",
-          "names": [
-            "Maria",
-            "Maria di Borgogna",
-            "Maria van Bourgondië",
-            "Mary I the Rich",
-            "Mary of Burgundy"
-          ],
-          "human": true,
-          "statuses": [],
-          "born": "1457-02-13",
-          "died": "1482-03-27",
-          "feast": [],
-          "signals": [],
-          "birth_place": [
-            "Q1131821"
-          ],
-          "death_place": [
-            "Q12994"
-          ],
-          "burial_place": [
-            "Q917183"
-          ],
-          "work_places": [],
-          "evidence": [
-            "human",
-            "name"
-          ],
-          "places": [],
-          "place_labels": {
-            "death_place": [
-              "Bruges"
-            ],
-            "burial_place": [
-              "Church of Our Lady"
-            ],
-            "birth_place": [
-              "Palace of Coudenberg"
             ]
           }
         }
