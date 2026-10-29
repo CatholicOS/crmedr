@@ -39938,6 +39938,24 @@
           "check": "04908eeb",
           "name": "Elias",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 87,
+          "end": 92,
+          "check": "f3a47691",
+          "name": "Paulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 103,
+          "check": "577183d1",
+          "name": "Isidorus",
+          "qid": null
         }
       ],
       "mr:0417-henricus-heath": [
@@ -85106,6 +85124,24 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 95,
+          "end": 102,
+          "check": "29aeaa74",
+          "name": "Aurelius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 136,
+          "end": 143,
+          "check": "e158bf6a",
+          "name": "Felix",
+          "qid": null
         }
       ],
       "mr:0727-gulielmus-davies": [
@@ -197452,6 +197488,24 @@
           "check": "34908e09",
           "name": "Elias",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
+          "end": 80,
+          "check": "f7f929a4",
+          "name": "Paulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 83,
+          "end": 90,
+          "check": "6344175a",
+          "name": "Isidorus",
+          "qid": null
         }
       ],
       "mr:0417-henricus-heath": [
@@ -243119,6 +243173,24 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 89,
+          "check": "c256f404",
+          "name": "Aurelius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 123,
+          "end": 129,
+          "check": "2e279f06",
+          "name": "Felix",
+          "qid": null
         }
       ],
       "mr:0727-gulielmus-davies": [

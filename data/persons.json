@@ -9445,6 +9445,14 @@
         {
           "name": "Elias",
           "where": "text"
+        },
+        {
+          "name": "Paulus",
+          "where": "text"
+        },
+        {
+          "name": "Isidorus",
+          "where": "text"
         }
       ],
       "mr:0417-robertus-casae": [
@@ -20793,6 +20801,14 @@
       "mr:0727-georgius-et-socii": [
         {
           "name": "Georgius",
+          "where": "text"
+        },
+        {
+          "name": "Aurelius",
+          "where": "text"
+        },
+        {
+          "name": "Felix",
           "where": "text"
         }
       ],
