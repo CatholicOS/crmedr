@@ -1409,6 +1409,18 @@
         {
           "name": "Speusippus",
           "where": "text"
+        },
+        {
+          "name": "Elasippus",
+          "where": "text"
+        },
+        {
+          "name": "Melasippus",
+          "where": "text"
+        },
+        {
+          "name": "Leonilla",
+          "where": "text"
         }
       ],
       "mr:0117-iulianus-saba": [
@@ -1468,6 +1480,10 @@
         },
         {
           "name": "Zeno",
+          "where": "text"
+        },
+        {
+          "name": "Melanippus",
           "where": "text"
         }
       ],
@@ -1540,6 +1556,10 @@
         {
           "name": "Carola Lucas",
           "where": "text"
+        },
+        {
+          "name": "Victoria Gusteau",
+          "where": "text"
         }
       ],
       "mr:0118-maria-ioanna-fasce": [
@@ -1570,6 +1590,14 @@
         },
         {
           "name": "Martha",
+          "where": "text"
+        },
+        {
+          "name": "Audifax",
+          "where": "text"
+        },
+        {
+          "name": "Abacus",
           "where": "text"
         }
       ],
@@ -1724,6 +1752,10 @@
       "mr:0121-fructuosus-et-socii": [
         {
           "name": "Fructuosus",
+          "where": "text"
+        },
+        {
+          "name": "Augurius",
           "where": "text"
         },
         {
@@ -2659,6 +2691,10 @@
       "mr:0131-victorinus-et-socii": [
         {
           "name": "Victorinus",
+          "where": "text"
+        },
+        {
+          "name": "Victor",
           "where": "text"
         },
         {
@@ -3983,6 +4019,10 @@
         {
           "name": "Porphyrius",
           "where": "text"
+        },
+        {
+          "name": "Dauctus",
+          "where": "text"
         }
       ],
       "mr:0210-zoticus-et-amantius": [
@@ -4485,7 +4525,19 @@
           "where": "text"
         },
         {
+          "name": "Iacobus Fenn",
+          "where": "text"
+        },
+        {
           "name": "Ioannes Nutter",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Munden",
+          "where": "text"
+        },
+        {
+          "name": "Georgius Haydock",
           "where": "text"
         }
       ],
@@ -4613,6 +4665,10 @@
           "where": "text"
         },
         {
+          "name": "Tonionus",
+          "where": "text"
+        },
+        {
           "name": "Protus",
           "where": "text"
         },
@@ -4679,7 +4735,15 @@
           "where": "text"
         },
         {
+          "name": "Iosippus",
+          "where": "text"
+        },
+        {
           "name": "Zosimus",
+          "where": "text"
+        },
+        {
+          "name": "Baralus",
           "where": "text"
         },
         {
@@ -5719,6 +5783,14 @@
         {
           "name": "Liberatus Weiss",
           "where": "text"
+        },
+        {
+          "name": "Samuel Marzoratus",
+          "where": "text"
+        },
+        {
+          "name": "Michael Pio Fasolus da Zerbo",
+          "where": "text"
         }
       ],
       "mr:0303-petrus-renatus-rogue": [
@@ -5799,6 +5871,14 @@
         {
           "name": "Christophorus Bales",
           "where": "text"
+        },
+        {
+          "name": "Alexander Blake",
+          "where": "text"
+        },
+        {
+          "name": "Nicolaus Horner",
+          "where": "text"
         }
       ],
       "mr:0304-eulalia-viel": [
@@ -5819,6 +5899,14 @@
       "mr:0304-miecislaus-bohatkiewicz-et-socii": [
         {
           "name": "Miecislaus Bohatkiewicz",
+          "where": "text"
+        },
+        {
+          "name": "Ladislaus Maćkowiak",
+          "where": "text"
+        },
+        {
+          "name": "Stanislaus Pyrtek",
           "where": "text"
         }
       ],
@@ -5974,6 +6062,10 @@
           "where": "text"
         },
         {
+          "name": "Revocatus",
+          "where": "text"
+        },
+        {
           "name": "Secundinus",
           "where": "text"
         }
@@ -5994,11 +6086,19 @@
           "where": "text"
         },
         {
+          "name": "Agathodorus",
+          "where": "text"
+        },
+        {
           "name": "Elpidius",
           "where": "text"
         },
         {
           "name": "Aetherius",
+          "where": "text"
+        },
+        {
+          "name": "Capito",
           "where": "text"
         },
         {
@@ -6387,6 +6487,10 @@
           "where": "text"
         },
         {
+          "name": "Mardonius",
+          "where": "text"
+        },
+        {
           "name": "Smaragdus",
           "where": "text"
         },
@@ -6470,6 +6574,10 @@
       "mr:0313-macedonius-et-socii": [
         {
           "name": "Macedonius",
+          "where": "text"
+        },
+        {
+          "name": "Patricia",
           "where": "text"
         },
         {
@@ -7103,6 +7211,15 @@
         {
           "name": "Victorianus",
           "where": "text"
+        },
+        {
+          "name": "Frumentius",
+          "where": "text"
+        },
+        {
+          "name": "Frumentius",
+          "n": 2,
+          "where": "text"
         }
       ],
       "mr:0323-gualterius": [
@@ -7169,7 +7286,24 @@
           "where": "text"
         },
         {
+          "name": "Pausis",
+          "where": "text"
+        },
+        {
           "name": "Romulus",
+          "where": "text"
+        },
+        {
+          "name": "Alexander",
+          "where": "text"
+        },
+        {
+          "name": "Alexander",
+          "n": 2,
+          "where": "text"
+        },
+        {
+          "name": "Agapius",
           "where": "text"
         },
         {
@@ -7344,6 +7478,10 @@
           "where": "text"
         },
         {
+          "name": "Codratus",
+          "where": "text"
+        },
+        {
           "name": "Theodosius",
           "where": "text"
         }
@@ -7436,6 +7574,10 @@
         {
           "name": "Malchus",
           "where": "text"
+        },
+        {
+          "name": "Alexander",
+          "where": "text"
         }
       ],
       "mr:0328-cyrillus": [
@@ -7519,6 +7661,10 @@
       "mr:0329-armogastus-et-socii": [
         {
           "name": "Armogastus",
+          "where": "text"
+        },
+        {
+          "name": "Archinimus",
           "where": "text"
         },
         {
@@ -7619,6 +7765,10 @@
         },
         {
           "name": "Iosephus Chang Chu-gi",
+          "where": "text"
+        },
+        {
+          "name": "Thomas Son Cha-sŏn",
           "where": "text"
         },
         {
@@ -8254,6 +8404,14 @@
         {
           "name": "Herodion",
           "where": "text"
+        },
+        {
+          "name": "Asyncritus",
+          "where": "text"
+        },
+        {
+          "name": "Phlego",
+          "where": "text"
         }
       ],
       "mr:0408-dionysius-corinthi": [
@@ -8412,11 +8570,19 @@
           "where": "text"
         },
         {
+          "name": "Africanus",
+          "where": "text"
+        },
+        {
           "name": "Maximus",
           "where": "text"
         },
         {
           "name": "Pompeius",
+          "where": "text"
+        },
+        {
+          "name": "Alexander",
           "where": "text"
         },
         {
@@ -8655,6 +8821,14 @@
       "mr:0413-carpus-et-socii": [
         {
           "name": "Carpus",
+          "where": "text"
+        },
+        {
+          "name": "Papylus",
+          "where": "text"
+        },
+        {
+          "name": "Agathonica",
           "where": "text"
         }
       ],
@@ -9064,6 +9238,10 @@
       "mr:0416-petrus-delepine-et-socii": [
         {
           "name": "Petrus Delepine",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Ménard",
           "where": "text"
         },
         {
@@ -10140,6 +10318,10 @@
         {
           "name": "Eusebius",
           "where": "text"
+        },
+        {
+          "name": "Charalampus",
+          "where": "text"
         }
       ],
       "mr:0428-vitalis": [
@@ -10151,6 +10333,10 @@
       "mr:0428-maximus-et-socii": [
         {
           "name": "Maximus",
+          "where": "text"
+        },
+        {
+          "name": "Dada",
           "where": "text"
         },
         {
@@ -10185,6 +10371,10 @@
       "mr:0428-paulus-pham-khac-khoan-et-socii": [
         {
           "name": "Paulus Pham Khac Khoan",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Baptista Ðinh Van Thanh",
           "where": "text"
         },
         {
@@ -10405,6 +10595,30 @@
       "mr:0501-torquatus-et-socii": [
         {
           "name": "Torquatus",
+          "where": "text"
+        },
+        {
+          "name": "Ctesiphon Vergii",
+          "where": "text"
+        },
+        {
+          "name": "Secundus Abulae",
+          "where": "text"
+        },
+        {
+          "name": "Indaletius Urci",
+          "where": "text"
+        },
+        {
+          "name": "Caecilius Illiberi",
+          "where": "text"
+        },
+        {
+          "name": "Hesychius Carteiae",
+          "where": "text"
+        },
+        {
+          "name": "Euphrasius Illiturgi",
           "where": "text"
         }
       ],
@@ -10631,6 +10845,10 @@
           "where": "text"
         },
         {
+          "name": "Alexander",
+          "where": "text"
+        },
+        {
           "name": "Theodulus",
           "where": "text"
         }
@@ -10732,7 +10950,19 @@
           "where": "text"
         },
         {
+          "name": "Robertus Lawrence",
+          "where": "text"
+        },
+        {
           "name": "Augustinus Webster",
+          "where": "text"
+        },
+        {
+          "name": "Richardus Reynolds",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Haile",
           "where": "text"
         }
       ],
@@ -11181,6 +11411,14 @@
         {
           "name": "Alphius",
           "where": "text"
+        },
+        {
+          "name": "Philadelphius",
+          "where": "text"
+        },
+        {
+          "name": "Cyrinius",
+          "where": "text"
         }
       ],
       "mr:0510-gordianus": [
@@ -11546,7 +11784,15 @@
           "where": "text"
         },
         {
+          "name": "Andreas",
+          "where": "text"
+        },
+        {
           "name": "Paulus",
+          "where": "text"
+        },
+        {
+          "name": "Dionysia",
           "where": "text"
         }
       ],
@@ -11810,6 +12056,10 @@
       "mr:0518-potamon-et-socii": [
         {
           "name": "Potamon",
+          "where": "text"
+        },
+        {
+          "name": "Ortasius",
           "where": "text"
         },
         {
@@ -12398,6 +12648,10 @@
           "where": "text"
         },
         {
+          "name": "Victor",
+          "where": "text"
+        },
+        {
           "name": "Donatianus",
           "where": "text"
         }
@@ -12833,6 +13087,18 @@
         {
           "name": "Edmundus Duke",
           "where": "text"
+        },
+        {
+          "name": "Richardus Hill",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Hogg",
+          "where": "text"
+        },
+        {
+          "name": "Richardus Holiday",
+          "where": "text"
         }
       ],
       "mr:0527-barbara-kim-et-barbara-yi": [
@@ -12920,6 +13186,10 @@
       "mr:0528-thomas-ford-et-socii": [
         {
           "name": "Thomas Ford",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Shert",
           "where": "text"
         },
         {
@@ -13189,6 +13459,14 @@
         {
           "name": "Cantius",
           "where": "text"
+        },
+        {
+          "name": "Cantianus",
+          "where": "text"
+        },
+        {
+          "name": "Cantianilla",
+          "where": "text"
         }
       ],
       "mr:0531-silvius": [
@@ -13262,6 +13540,26 @@
         {
           "name": "Chariton",
           "where": "text"
+        },
+        {
+          "name": "Charitus",
+          "where": "text"
+        },
+        {
+          "name": "Evelpistus",
+          "where": "text"
+        },
+        {
+          "name": "Ierax",
+          "where": "text"
+        },
+        {
+          "name": "Pœon",
+          "where": "text"
+        },
+        {
+          "name": "Liberianus",
+          "where": "text"
         }
       ],
       "mr:0601-ammon-et-socii": [
@@ -13275,6 +13573,14 @@
         },
         {
           "name": "Ptolomaeus",
+          "where": "text"
+        },
+        {
+          "name": "Ingenes",
+          "where": "text"
+        },
+        {
+          "name": "Theophilus",
           "where": "text"
         }
       ],
@@ -13401,6 +13707,10 @@
       "mr:0602-pothinus-et-socii": [
         {
           "name": "Pothinus",
+          "where": "text"
+        },
+        {
+          "name": "Blandina",
           "where": "text"
         },
         {
@@ -14020,6 +14330,10 @@
           "where": "text"
         },
         {
+          "name": "Adelarius",
+          "where": "text"
+        },
+        {
           "name": "Vintrungus",
           "where": {
             "footnote": 1
@@ -14242,7 +14556,19 @@
           "where": "text"
         },
         {
+          "name": "Wallabonsus",
+          "where": "text"
+        },
+        {
           "name": "Sabinianus",
+          "where": "text"
+        },
+        {
+          "name": "Wistremundus",
+          "where": "text"
+        },
+        {
+          "name": "Habentius",
           "where": "text"
         },
         {
@@ -14769,6 +15095,10 @@
         {
           "name": "Felix",
           "where": "text"
+        },
+        {
+          "name": "Digna",
+          "where": "text"
         }
       ],
       "mr:0615-amos-propheta": [
@@ -15170,6 +15500,14 @@
         {
           "name": "Sebastianus Newdigate",
           "where": "text"
+        },
+        {
+          "name": "Humphredus Middlemore",
+          "where": "text"
+        },
+        {
+          "name": "Gulielmus Exmew",
+          "where": "text"
         }
       ],
       "mr:0619-thomas-woodhouse": [
@@ -15281,6 +15619,22 @@
       "mr:0620-thomas-whitbread-et-socii": [
         {
           "name": "Thomas Whitbread",
+          "where": "text"
+        },
+        {
+          "name": "Gulielmus Harcourt",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Fenwich",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Gavan",
+          "where": "text"
+        },
+        {
+          "name": "Antonius Turner",
           "where": "text"
         }
       ],
@@ -15674,6 +16028,14 @@
           "where": "text"
         },
         {
+          "name": "Francisca Lanel",
+          "where": "text"
+        },
+        {
+          "name": "Teresia Fantou",
+          "where": "text"
+        },
+        {
           "name": "Ioanna Gerard",
           "where": "text"
         }
@@ -15794,8 +16156,28 @@
           "where": "text"
         },
         {
+          "name": "Heraclides",
+          "where": "text"
+        },
+        {
+          "name": "Herones",
+          "where": "text"
+        },
+        {
           "name": "Serenus",
           "n": 2,
+          "where": "text"
+        },
+        {
+          "name": "Heraides",
+          "where": "text"
+        },
+        {
+          "name": "Potamioenia",
+          "where": "text"
+        },
+        {
+          "name": "Marcella",
           "where": "text"
         }
       ],
@@ -15900,6 +16282,14 @@
       "mr:0629-paulus-wu-juan-et-socii": [
         {
           "name": "Paulus Wu Juan",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Baptista Wu Mantang",
+          "where": "text"
+        },
+        {
+          "name": "Paulus Wu Wanshu",
           "where": "text"
         }
       ],
@@ -16327,6 +16717,18 @@
         {
           "name": "Gulielmus Andleby",
           "where": "text"
+        },
+        {
+          "name": "Henricus Abbot",
+          "where": "text"
+        },
+        {
+          "name": "Thomas Warcop",
+          "where": "text"
+        },
+        {
+          "name": "Eduardus Fulthorp",
+          "where": "text"
         }
       ],
       "mr:0704-antonius-daniel": [
@@ -16410,6 +16812,18 @@
       "mr:0705-matthaeus-lambert-et-socii": [
         {
           "name": "Matthaeus Lambert",
+          "where": "text"
+        },
+        {
+          "name": "Robertus Meyler",
+          "where": "text"
+        },
+        {
+          "name": "Eduardus Cheevers",
+          "where": "text"
+        },
+        {
+          "name": "Patricius Cavanagh",
           "where": "text"
         }
       ],
@@ -16715,6 +17129,10 @@
       "mr:0709-augustinus-zhao-rong-et-socii": [
         {
           "name": "Augustinus Zhao Rong",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Sans i Jorda",
           "where": "text"
         },
         {
@@ -18047,7 +18465,7 @@
       ],
       "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
         {
-          "name": "Rosalia Clotildis a Sancta Pelagia",
+          "name": "Rosalia Clotildis a Sancta Pelagia Bès",
           "where": "text"
         },
         {
@@ -18056,6 +18474,10 @@
         },
         {
           "name": "Maria Clara a Sancto Martíno Blanc",
+          "where": "text"
+        },
+        {
+          "name": "Maria Margarita a Sancta Sophia de Bargegie d'Albarede",
           "where": "text"
         }
       ],
@@ -18438,6 +18860,14 @@
       "mr:0715-eutropius-et-socii": [
         {
           "name": "Eutropius",
+          "where": "text"
+        },
+        {
+          "name": "Zosima",
+          "where": "text"
+        },
+        {
+          "name": "Bonosa",
           "where": "text"
         }
       ],
@@ -18833,6 +19263,10 @@
       "mr:0716-reinildis-et-socii": [
         {
           "name": "Reinildis",
+          "where": "text"
+        },
+        {
+          "name": "Grimoaldus",
           "where": "text"
         },
         {
@@ -19471,6 +19905,14 @@
         {
           "name": "Maria Zhao Guozhi",
           "where": "text"
+        },
+        {
+          "name": "Rosa Zhao",
+          "where": "text"
+        },
+        {
+          "name": "Maria Zhao",
+          "where": "text"
         }
       ],
       "mr:0720-xi-guizi": [
@@ -19620,6 +20062,10 @@
         },
         {
           "name": "Lucia Wang Wangzhi",
+          "where": "text"
+        },
+        {
+          "name": "Andreas Wang Tianqing",
           "where": "text"
         }
       ],
@@ -19887,6 +20333,14 @@
         {
           "name": "Nicolaus Garlick",
           "where": "text"
+        },
+        {
+          "name": "Robertus Ludlam",
+          "where": "text"
+        },
+        {
+          "name": "Richardus Simpson",
+          "where": "text"
         }
       ],
       "mr:0724-iosephus-lambton": [
@@ -19975,6 +20429,10 @@
           "where": "text"
         },
         {
+          "name": "Thea",
+          "where": "text"
+        },
+        {
           "name": "Paulus",
           "where": "text"
         }
@@ -20035,7 +20493,15 @@
           "where": "text"
         },
         {
+          "name": "Petrus Berna",
+          "where": "text"
+        },
+        {
           "name": "Antonius Francisco",
+          "where": "text"
+        },
+        {
+          "name": "Franciscus Aranha",
           "where": "text"
         }
       ],
@@ -20059,7 +20525,11 @@
       ],
       "mr:0725-petrus-a-corde-et-socii": [
         {
-          "name": "Petrus a Corde",
+          "name": "Petrus a Corde Redondo",
+          "where": "text"
+        },
+        {
+          "name": "Felix a Quinque Vulneribus Ugalde Irurzun",
           "where": "text"
         },
         {
@@ -20080,6 +20550,10 @@
           "where": "text"
         },
         {
+          "name": "Hieronymus Ochoa Urdangarín",
+          "where": "text"
+        },
+        {
           "name": "Eligius Delgado Pastor",
           "also": [
             "Ioannes a Cruce Delgado Pastor"
@@ -20096,6 +20570,14 @@
       "mr:0725-deogratias-palacios-et-socii": [
         {
           "name": "Deogratias Palacios",
+          "where": "text"
+        },
+        {
+          "name": "Leo Inchausti",
+          "where": "text"
+        },
+        {
+          "name": "Iosephus Rada",
           "where": "text"
         },
         {
@@ -20394,6 +20876,14 @@
         {
           "name": "Philippus Hernandez Martinez",
           "where": "text"
+        },
+        {
+          "name": "Zacharias Abadía Buesa",
+          "where": "text"
+        },
+        {
+          "name": "Iacobus Ortiz Alzueta",
+          "where": "text"
         }
       ],
       "mr:0727-maria-clemens-a-iesu-crucifixo": [
@@ -20405,6 +20895,22 @@
       "mr:0728-prochorius-et-socii": [
         {
           "name": "Prochorius",
+          "where": "text"
+        },
+        {
+          "name": "Nicanor",
+          "where": "text"
+        },
+        {
+          "name": "Timo",
+          "where": "text"
+        },
+        {
+          "name": "Parmena",
+          "where": "text"
+        },
+        {
+          "name": "Nicolaus",
           "where": "text"
         }
       ],
@@ -20533,6 +21039,10 @@
         },
         {
           "name": "Faustinus",
+          "where": "text"
+        },
+        {
+          "name": "Viatrix",
           "where": "text"
         },
         {
@@ -20688,6 +21198,10 @@
           "where": "text"
         },
         {
+          "name": "Donatilla",
+          "where": "text"
+        },
+        {
           "name": "Secunda",
           "where": "text"
         }
@@ -20713,6 +21227,14 @@
       "mr:0730-eduardus-powell-et-socii": [
         {
           "name": "Eduardus Powell",
+          "where": "text"
+        },
+        {
+          "name": "Richardus Featherstone",
+          "where": "text"
+        },
+        {
+          "name": "Thomas Abel",
           "where": "text"
         }
       ],
@@ -20830,6 +21352,10 @@
       "mr:0730-iosephus-maria-muro-sanmiguel-et-socii": [
         {
           "name": "Iosephus Maria Muro Sanmiguel",
+          "where": "text"
+        },
+        {
+          "name": "Ioachim Prats Baltueña",
           "where": "text"
         },
         {
@@ -21269,6 +21795,10 @@
           "where": "text"
         },
         {
+          "name": "Ioannes Diaz Nostus",
+          "where": "text"
+        },
+        {
           "name": "Leontius Perez Ramos",
           "where": "text"
         }
@@ -21423,6 +21953,14 @@
         {
           "name": "Iosephus Batalla Parramon",
           "where": "text"
+        },
+        {
+          "name": "Iosephus Rabasa Bentanachs",
+          "where": "text"
+        },
+        {
+          "name": "Aegidius Gil Rodicio",
+          "where": "text"
         }
       ],
       "mr:0804-henricus-krzysztofik": [
@@ -21562,6 +22100,14 @@
         {
           "name": "Xystus II",
           "where": "text"
+        },
+        {
+          "name": "Agapitus",
+          "where": "text"
+        },
+        {
+          "name": "Felicissimus",
+          "where": "text"
         }
       ],
       "mr:0807-caietanus-thienaeus": [
@@ -21647,6 +22193,14 @@
             "Martinus a Sancto Felíce Woodcock"
           ],
           "where": "text"
+        },
+        {
+          "name": "Eduardus Bamber",
+          "where": "text"
+        },
+        {
+          "name": "Thomas Whitaker",
+          "where": "text"
         }
       ],
       "mr:0807-nicolaus-postgate": [
@@ -21679,6 +22233,10 @@
           "where": "text"
         },
         {
+          "name": "Carpophorus",
+          "where": "text"
+        },
+        {
           "name": "Victorinus",
           "where": "text"
         },
@@ -21690,6 +22248,18 @@
       "mr:0808-cyriacus-et-socii": [
         {
           "name": "Cyriacus",
+          "where": "text"
+        },
+        {
+          "name": "Largus",
+          "where": "text"
+        },
+        {
+          "name": "Crescentianus",
+          "where": "text"
+        },
+        {
+          "name": "Memmia",
           "where": "text"
         },
         {
@@ -22025,6 +22595,10 @@
         {
           "name": "Franciscus François",
           "where": "text"
+        },
+        {
+          "name": "Lazarus Tiersot",
+          "where": "text"
         }
       ],
       "mr:0810-iosephus-toledo-pellicer": [
@@ -22219,6 +22793,14 @@
       "mr:0812-iacobus-do-mai-nam-et-socii": [
         {
           "name": "Iacobus Do Mai Nam",
+          "where": "text"
+        },
+        {
+          "name": "Antonius Nguyen Dich",
+          "where": "text"
+        },
+        {
+          "name": "Michael Nguyen Huy My",
           "where": "text"
         }
       ],
@@ -22624,6 +23206,10 @@
         {
           "name": "Philippus",
           "where": "text"
+        },
+        {
+          "name": "Euthychianus",
+          "where": "text"
         }
       ],
       "mr:0815-simplicianus": [
@@ -22931,7 +23517,15 @@
           "where": "text"
         },
         {
+          "name": "Thomas Gengoro",
+          "where": "text"
+        },
+        {
           "name": "Maria",
+          "where": "text"
+        },
+        {
+          "name": "Iacobus",
           "where": "text"
         }
       ],
@@ -23360,7 +23954,7 @@
       ],
       "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii": [
         {
-          "name": "Elvira a Nativitate Dominae Nostrae",
+          "name": "Elvira Torrentalle Paraire",
           "where": "text"
         },
         {
@@ -23529,6 +24123,18 @@
       "mr:0821-bassa-et-socii": [
         {
           "name": "Bassa",
+          "where": "text"
+        },
+        {
+          "name": "Theognius",
+          "where": "text"
+        },
+        {
+          "name": "Agapius",
+          "where": "text"
+        },
+        {
+          "name": "Pistius",
           "where": "text"
         }
       ],
@@ -23711,6 +24317,10 @@
         {
           "name": "Asterius",
           "where": "text"
+        },
+        {
+          "name": "Neon",
+          "where": "text"
         }
       ],
       "mr:0823-flavianus": [
@@ -23743,6 +24353,14 @@
       "mr:0823-constantinus-carbonell-sempere-et-socii": [
         {
           "name": "Constantinus Carbonell Sempere",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Gelabert Amer",
+          "where": "text"
+        },
+        {
+          "name": "Raymundus Grimaltós Monllor",
           "where": "text"
         }
       ],
@@ -23860,6 +24478,22 @@
         {
           "name": "Ceslaus Jozwiak",
           "where": "text"
+        },
+        {
+          "name": "Eduardus Kazmierskus",
+          "where": "text"
+        },
+        {
+          "name": "Franciscus Kęsy",
+          "where": "text"
+        },
+        {
+          "name": "Eduardus Klinik",
+          "where": "text"
+        },
+        {
+          "name": "Iarognievus Wojciechowskus",
+          "where": "text"
         }
       ],
       "mr:0825-ludovicus-nonus": [
@@ -23925,6 +24559,22 @@
       "mr:0825-michael-carvalho-et-socii": [
         {
           "name": "Michael Carvalho",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Vázquez",
+          "where": "text"
+        },
+        {
+          "name": "Ludovicus Sotelo",
+          "where": "text"
+        },
+        {
+          "name": "Ludovicus Sasanda",
+          "where": "text"
+        },
+        {
+          "name": "Ludovicus Baba",
           "where": "text"
         }
       ],
@@ -24976,7 +25626,15 @@
       ],
       "mr:0902-ioannes-maria-du-lau-et-socii": [
         {
-          "name": "Ioannes Maria Du Lau",
+          "name": "Ioannes Maria Du Lau d'Allemans",
+          "where": "text"
+        },
+        {
+          "name": "Franciscus Iosephus de la Rochefoucauld",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Ludovicus de la Rochefoucauld",
           "where": "text"
         },
         {
@@ -26389,6 +27047,10 @@
           "where": "text"
         },
         {
+          "name": "Nonnus",
+          "where": "text"
+        },
+        {
           "name": "Herculanus",
           "where": "text"
         },
@@ -26410,6 +27072,10 @@
         },
         {
           "name": "Theodorus",
+          "where": "text"
+        },
+        {
+          "name": "Menedemus",
           "where": "text"
         }
       ],
@@ -26482,11 +27148,23 @@
           "where": "text"
         },
         {
+          "name": "Præsidius",
+          "where": "text"
+        },
+        {
           "name": "Mansuetus",
           "where": "text"
         },
         {
           "name": "Germanus",
+          "where": "text"
+        },
+        {
+          "name": "Fusculus",
+          "where": "text"
+        },
+        {
+          "name": "Laetus",
           "where": "text"
         }
       ],
@@ -26630,6 +27308,14 @@
         {
           "name": "Marcus Crisini",
           "where": "text"
+        },
+        {
+          "name": "Stephanus Pongracz",
+          "where": "text"
+        },
+        {
+          "name": "Melchior Grodziecki",
+          "where": "text"
         }
       ],
       "mr:0907-thomas-tsuji-et-socii": [
@@ -26638,7 +27324,11 @@
           "where": "text"
         },
         {
-          "name": "Ioannes",
+          "name": "Ludovicus Maki",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Maki",
           "where": "text"
         }
       ],
@@ -26700,6 +27390,14 @@
         {
           "name": "Dius",
           "where": "text"
+        },
+        {
+          "name": "Ammonius",
+          "where": "text"
+        },
+        {
+          "name": "Petrus",
+          "where": "text"
         }
       ],
       "mr:0908-isaac": [
@@ -26742,6 +27440,14 @@
         {
           "name": "Thomas Palaser",
           "where": "text"
+        },
+        {
+          "name": "Ioannes Norton",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Talbot",
+          "where": "text"
         }
       ],
       "mr:0908-petrus-claver": [
@@ -26753,6 +27459,10 @@
       "mr:0908-antonius-a-sancto-bonaventura-et-socii": [
         {
           "name": "Antonius a Sancto Bonaventura",
+          "where": "text"
+        },
+        {
+          "name": "Dominicus Castellet",
           "where": "text"
         },
         {
@@ -27526,6 +28236,10 @@
           "where": "text"
         },
         {
+          "name": "Thomas Zumárraga",
+          "where": "text"
+        },
+        {
           "name": "Franciscus a Sancto Bonaventura",
           "where": {
             "footnote": 1
@@ -27719,6 +28433,10 @@
           "where": "text"
         },
         {
+          "name": "Macrobius",
+          "where": "text"
+        },
+        {
           "name": "Gordianus",
           "where": "text"
         }
@@ -27838,6 +28556,10 @@
         },
         {
           "name": "Felix",
+          "where": "text"
+        },
+        {
+          "name": "Alexander",
           "where": "text"
         },
         {
@@ -28290,13 +29012,25 @@
       ],
       "mr:0919-maria-a-iesu-et-socii": [
         {
-          "name": "Maria a Iesu",
+          "name": "Maria a Iesu de la Yglesia y de Varo",
+          "where": "text"
+        },
+        {
+          "name": "Maria a Doloribus Aguiar-Mella y Diaz",
+          "where": "text"
+        },
+        {
+          "name": "Consolata Aguiar-Mella y Diaz",
           "where": "text"
         }
       ],
       "mr:0920-andreas-kim-tae-gon-et-socii": [
         {
           "name": "Andreas Kim Tae Gon",
+          "where": "text"
+        },
+        {
+          "name": "Paulus Chong Ha-sang",
           "where": "text"
         },
         {
@@ -29040,7 +29774,15 @@
           "where": "text"
         },
         {
+          "name": "Nestabus",
+          "where": "text"
+        },
+        {
           "name": "Zeno",
+          "where": "text"
+        },
+        {
+          "name": "Nestor",
           "where": "text"
         }
       ],
@@ -29127,6 +29869,14 @@
         },
         {
           "name": "Exsuperius",
+          "where": "text"
+        },
+        {
+          "name": "Candidus",
+          "where": "text"
+        },
+        {
+          "name": "Victor",
           "where": "text"
         }
       ],
@@ -29540,6 +30290,10 @@
             "Paulus Maria Leoz y Portillo"
           ],
           "where": "text"
+        },
+        {
+          "name": "Iesus Hita Miranda",
+          "where": "text"
         }
       ],
       "mr:0926-cosmas-et-damianus": [
@@ -29913,6 +30667,10 @@
           "where": "text"
         },
         {
+          "name": "Alexander",
+          "where": "text"
+        },
+        {
           "name": "Zosimus",
           "where": "text"
         }
@@ -29994,6 +30752,26 @@
         {
           "name": "Ioannes Shozaburo",
           "where": "text"
+        },
+        {
+          "name": "Mancius Ichizayemon",
+          "where": "text"
+        },
+        {
+          "name": "Michael Taiemon Kinoshi",
+          "where": "text"
+        },
+        {
+          "name": "Laurentius Hachizo",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Terai Kuhioye",
+          "where": "text"
+        },
+        {
+          "name": "Thomas Terai Kahioye",
+          "where": "text"
         }
       ],
       "mr:0928-franciscus-xaverius-ponsa-casallarch": [
@@ -30043,6 +30821,10 @@
       "mr:0929-ripsime-et-socii": [
         {
           "name": "Ripsime",
+          "where": "text"
+        },
+        {
+          "name": "Gaiana",
           "where": "text"
         }
       ],
@@ -31007,6 +31789,14 @@
         {
           "name": "Ioannes Adams",
           "where": "text"
+        },
+        {
+          "name": "Robertus Dibdale",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Lowe",
+          "where": "text"
         }
       ],
       "mr:1009-dionysius-et-socii": [
@@ -31034,6 +31824,10 @@
         },
         {
           "name": "Diomedes",
+          "where": "text"
+        },
+        {
+          "name": "Didymus",
           "where": "text"
         }
       ],
@@ -31297,6 +32091,10 @@
         {
           "name": "Probus",
           "where": "text"
+        },
+        {
+          "name": "Andronicus",
+          "where": "text"
         }
       ],
       "mr:1011-nicasius-et-socii": [
@@ -31306,6 +32104,14 @@
         },
         {
           "name": "Quirinus",
+          "where": "text"
+        },
+        {
+          "name": "Scubiculus",
+          "where": "text"
+        },
+        {
+          "name": "Pientia",
           "where": "text"
         }
       ],
@@ -31967,6 +32773,14 @@
       "mr:1018-proculus-et-socii": [
         {
           "name": "Proculus",
+          "where": "text"
+        },
+        {
+          "name": "Euticius",
+          "where": "text"
+        },
+        {
+          "name": "Acutius",
           "where": "text"
         }
       ],
@@ -32880,6 +33694,10 @@
         {
           "name": "Sabina",
           "where": "text"
+        },
+        {
+          "name": "Christeta",
+          "where": "text"
         }
       ],
       "mr:1028-genesius": [
@@ -33029,6 +33847,10 @@
       "mr:1030-claudius-et-socii": [
         {
           "name": "Claudius",
+          "where": "text"
+        },
+        {
+          "name": "Lupercius",
           "where": "text"
         },
         {
@@ -33232,6 +34054,18 @@
         {
           "name": "Petrus Paulus Navarro",
           "where": "text"
+        },
+        {
+          "name": "Dionysius Fujishima",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Onizuka Sandayu",
+          "where": "text"
+        },
+        {
+          "name": "Clemens Kyuemon",
+          "where": "text"
         }
       ],
       "mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa": [
@@ -33274,6 +34108,18 @@
           "where": "text"
         },
         {
+          "name": "Styriacus",
+          "where": "text"
+        },
+        {
+          "name": "Tobia",
+          "where": "text"
+        },
+        {
+          "name": "Eudoxius",
+          "where": "text"
+        },
+        {
           "name": "Agapius",
           "where": "text"
         }
@@ -33281,6 +34127,22 @@
       "mr:1102-acindynus-et-socii": [
         {
           "name": "Acindynus",
+          "where": "text"
+        },
+        {
+          "name": "Pegasius",
+          "where": "text"
+        },
+        {
+          "name": "Aphthonius",
+          "where": "text"
+        },
+        {
+          "name": "Elpidiphorus",
+          "where": "text"
+        },
+        {
+          "name": "Anempodistus",
           "where": "text"
         }
       ],
@@ -33538,6 +34400,10 @@
       "mr:1105-theotimus-et-socii": [
         {
           "name": "Theotimus",
+          "where": "text"
+        },
+        {
+          "name": "Philotheus",
           "where": "text"
         },
         {
@@ -33827,6 +34693,14 @@
           "where": "text"
         },
         {
+          "name": "Nicostratus",
+          "where": "text"
+        },
+        {
+          "name": "Castorius",
+          "where": "text"
+        },
+        {
           "name": "Simplicius",
           "where": "text"
         }
@@ -33877,6 +34751,10 @@
         },
         {
           "name": "Paulus Nguyen Ngân",
+          "where": "text"
+        },
+        {
+          "name": "Martinus Tạ Ðức Thịnh",
           "where": "text"
         },
         {
@@ -34191,7 +35069,15 @@
           "where": "text"
         },
         {
+          "name": "Zebina",
+          "where": "text"
+        },
+        {
           "name": "Germanus",
+          "where": "text"
+        },
+        {
+          "name": "Manatha",
           "where": "text"
         }
       ],
@@ -34384,6 +35270,10 @@
           "where": "text"
         },
         {
+          "name": "Deodatus Aribert",
+          "where": "text"
+        },
+        {
           "name": "Stephanus de Cúneo",
           "where": "text"
         },
@@ -34473,6 +35363,14 @@
             "Hugo Cook"
           ],
           "where": "text"
+        },
+        {
+          "name": "Ioannes Eynon",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Rugg",
+          "where": "text"
         }
       ],
       "mr:1115-richardus-whiting-et-socii": [
@@ -34482,6 +35380,10 @@
         },
         {
           "name": "Rogerius James",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Thorne",
           "where": "text"
         }
       ],
@@ -34763,7 +35665,19 @@
           "where": "text"
         },
         {
+          "name": "Andreas Murayama Tokuan",
+          "where": "text"
+        },
+        {
           "name": "Cosmas Takeya",
+          "where": "text"
+        },
+        {
+          "name": "Ioannes Yoshida Shoun",
+          "where": "text"
+        },
+        {
+          "name": "Dominicus Jorge",
           "where": "text"
         }
       ],
@@ -34926,6 +35840,14 @@
       "mr:1120-octavius-et-socii": [
         {
           "name": "Octavius",
+          "where": "text"
+        },
+        {
+          "name": "Solutor",
+          "where": "text"
+        },
+        {
+          "name": "Adventor",
           "where": "text"
         }
       ],
@@ -36125,6 +37047,14 @@
         {
           "name": "Petrus Dumoulin Borie",
           "where": "text"
+        },
+        {
+          "name": "Petrus Võ Ðăng Khoa",
+          "where": "text"
+        },
+        {
+          "name": "Vincentius Nguyen The Ðiểm",
+          "where": "text"
         }
       ],
       "mr:1124-maria-anna-sala": [
@@ -36714,6 +37644,14 @@
         {
           "name": "Georgius Errington",
           "where": "text"
+        },
+        {
+          "name": "Gulielmus Gibson",
+          "where": "text"
+        },
+        {
+          "name": "Gulielmus Knight",
+          "where": "text"
         }
       ],
       "mr:1129-petrus-berthelot-et-thomas-rodriguez": [
@@ -36921,6 +37859,14 @@
       "mr:1201-edmundus-campion-et-socii": [
         {
           "name": "Edmundus Campion",
+          "where": "text"
+        },
+        {
+          "name": "Radulphus Sherwin",
+          "where": "text"
+        },
+        {
+          "name": "Alexander Briant",
           "where": "text"
         }
       ],
@@ -37141,6 +38087,10 @@
         },
         {
           "name": "Hieronymus de Angelis",
+          "where": "text"
+        },
+        {
+          "name": "Simon Yempo",
           "where": "text"
         }
       ],
@@ -37744,6 +38694,10 @@
           "where": "text"
         },
         {
+          "name": "Mardarius",
+          "where": "text"
+        },
+        {
           "name": "Orestes",
           "where": "text"
         }
@@ -37835,7 +38789,15 @@
           "where": "text"
         },
         {
+          "name": "Ateus",
+          "where": "text"
+        },
+        {
           "name": "Isidorus",
+          "where": "text"
+        },
+        {
+          "name": "Dioscorus",
           "where": "text"
         }
       ],
@@ -37862,6 +38824,10 @@
       "mr:1214-ares-et-socii": [
         {
           "name": "Ares",
+          "where": "text"
+        },
+        {
+          "name": "Promus",
           "where": "text"
         },
         {
@@ -38417,6 +39383,18 @@
       "mr:1218-namphamo-et-socii": [
         {
           "name": "Namphamo",
+          "where": "text"
+        },
+        {
+          "name": "Miggo",
+          "where": "text"
+        },
+        {
+          "name": "Sanamis",
+          "where": "text"
+        },
+        {
+          "name": "Lucita",
           "where": "text"
         }
       ],
@@ -39139,7 +40117,23 @@
           "where": "text"
         },
         {
+          "name": "Rogata",
+          "where": "text"
+        },
+        {
+          "name": "Dominanda",
+          "where": "text"
+        },
+        {
+          "name": "Serotina",
+          "where": "text"
+        },
+        {
           "name": "Saturnina",
+          "where": "text"
+        },
+        {
+          "name": "Hilaria",
           "where": "text"
         }
       ],
