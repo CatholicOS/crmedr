@@ -16742,10 +16742,9 @@
         },
         {
           "name": "Potamioena",
-          "where": "text"
-        },
-        {
-          "name": "Potamiaena",
+          "also": [
+            "Potamiaena"
+          ],
           "where": "text"
         }
       ],

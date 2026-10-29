@@ -1457,8 +1457,8 @@ EDITION_NOTES = {
     },
     "mr:0208-martyres-monachi-dii-constantinopolitani": {
         EDITION_IT: (
-            "Translation error: \"monastero di Dio\" (monastery of God) where the Latin has "
-            "\"monastérii Dii\" (the monastery of Dius, named after its founder)."
+            "\"Dio\" here is not God but the Italian form of the name Dius (\"san Dio\", 19 July): "
+            "\"monastérii Dii\" is the monastery named after its founder, Saint Dius."
         ),
     },
     "mr:0212-meletius": {

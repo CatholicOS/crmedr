@@ -1648,6 +1648,12 @@
         "status": "reviewed"
       }
     },
+    "mr:0120-fabianus-papa": {
+      "Fabianus": {
+        "wikidata": "Q131159",
+        "status": "auto"
+      }
+    },
     "mr:0120-henricus-upsaliensis": {
       "Henricus": {
         "wikidata": "Q445357",
@@ -3100,16 +3106,6 @@
         "status": "auto"
       }
     },
-    "mr:0206-silvanus": {
-      "Lucas": {
-        "wikidata": "Q128538",
-        "status": "auto"
-      },
-      "Mocius": {
-        "wikidata": "Q3652965",
-        "status": "auto"
-      }
-    },
     "mr:0207-adalbertus-nierychlewski": {
       "Adalbertus Nierychlewski": {
         "wikidata": "Q2071311",
@@ -3344,6 +3340,10 @@
       "Victorianus": {
         "wikidata": "Q85972614",
         "status": "auto"
+      },
+      "Dativus": {
+        "wikidata": "Q85971792",
+        "status": "auto"
       }
     },
     "mr:0212-thomas-hemmerford-et-socii": {
@@ -3385,16 +3385,6 @@
     "mr:0214-antoninus": {
       "Antoninus": {
         "wikidata": "Q363002",
-        "status": "auto"
-      }
-    },
-    "mr:0214-bassianus-et-socii": {
-      "Ammonius": {
-        "wikidata": "Q2070679",
-        "status": "auto"
-      },
-      "Moyses": {
-        "wikidata": "Q9077",
         "status": "auto"
       }
     },
@@ -4422,12 +4412,6 @@
         "status": "auto"
       }
     },
-    "mr:0401-venantius-et-socii": {
-      "Antiochianus": {
-        "wikidata": "Q107303904",
-        "status": "auto"
-      }
-    },
     "mr:0402-apphianus": {
       "Apphianus": {
         "wikidata": "Q4779600",
@@ -4591,12 +4575,6 @@
     "mr:0407-ioannes-baptista-de-la-salle": {
       "Ioannes Baptista de La Salle": {
         "wikidata": "Q312758",
-        "status": "auto"
-      }
-    },
-    "mr:0408-herodion-et-socii": {
-      "Asyncritus": {
-        "wikidata": "Q752778",
         "status": "auto"
       }
     },
@@ -5059,12 +5037,6 @@
     "mr:0428-petrus-chanel": {
       "Petrus Chanel": {
         "wikidata": "Q380651",
-        "status": "auto"
-      }
-    },
-    "mr:0428-vitalis": {
-      "Ursicinus": {
-        "wikidata": "Q662713",
         "status": "auto"
       }
     },
@@ -6392,6 +6364,10 @@
       "Paulus Wu Wanshu": {
         "wikidata": "Q646792",
         "status": "auto"
+      },
+      "Ioannes Baptista Wu Mantang": {
+        "wikidata": "Q11717214",
+        "status": "auto"
       }
     },
     "mr:0630-basilius-velyckovskyj": {
@@ -6467,6 +6443,10 @@
     "mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi": {
       "Petrus Zhao Mingzhen": {
         "wikidata": "Q4515471",
+        "status": "auto"
+      },
+      "Ioannes Baptista Zhao Mingxi": {
+        "wikidata": "Q11717216",
         "status": "auto"
       }
     },
@@ -7283,14 +7263,6 @@
     "mr:0718-symphorosa-et-socii": {
       "Symphorosa": {
         "wikidata": "Q453710",
-        "status": "auto"
-      },
-      "Crescens": {
-        "wikidata": "Q981729",
-        "status": "auto"
-      },
-      "Nemesius": {
-        "wikidata": "Q59133739",
         "status": "auto"
       }
     },
@@ -8853,6 +8825,12 @@
       },
       "Vincentius Abraham": {
         "wikidata": "Q9374957",
+        "status": "auto"
+      }
+    },
+    "mr:0902-iustus": {
+      "Iustus": {
+        "wikidata": "Q1714476",
         "status": "auto"
       }
     },
@@ -10712,10 +10690,6 @@
       "Theotimus": {
         "wikidata": "Q10381056",
         "status": "auto"
-      },
-      "Auxentius": {
-        "wikidata": "Q2630223",
-        "status": "auto"
       }
     },
     "mr:1106-christina-stumbelensis": {
@@ -11081,12 +11055,6 @@
     "mr:1122-petrus-esqueda-ramirez": {
       "Petrus Esqueda Ramirez": {
         "wikidata": "Q16588065",
-        "status": "auto"
-      }
-    },
-    "mr:1122-philemon-colossensis": {
-      "Apphia": {
-        "wikidata": "Q4068319",
         "status": "auto"
       }
     },
@@ -11665,6 +11633,12 @@
     "mr:1208-aloysius-liguda": {
       "Aloysius Liguda": {
         "wikidata": "Q4261242",
+        "status": "auto"
+      }
+    },
+    "mr:1208-eutychianus": {
+      "Eutychianus": {
+        "wikidata": "Q162972",
         "status": "auto"
       }
     },

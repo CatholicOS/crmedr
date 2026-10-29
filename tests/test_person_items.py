@@ -282,6 +282,18 @@ class GroupRouteTest(unittest.TestCase):
         self.assertNotIn("Thomas Kozaki", items["mr:0206-paulus-miki-et-socii"])
         self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], ["Q23"])
 
+    def test_a_companion_matched_in_the_same_run_opens_the_group_route(self):
+        # Paulus Miki is matched by the search; his group then finds Thomas Kozaki, in one run.
+        index = {"mr:0206-paulus-miki-et-socii|Paulus Miki": dict(PERSON, companions=["Thomas Kozaki"]),
+                 self.KOZAKI: dict(PERSON, name="Thomas Kozaki", companions=["Paulus Miki"])}
+        client = FakeClient({"Paulus Miki": [cand("Q10", ["Paul Miki"])]}, kin={"Q10": [member("Q20", ["Thomas Kozaki"])]})
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, index, client)
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"],
+                         {"Paulus Miki": {"wikidata": "Q10", "status": "auto"},
+                          "Thomas Kozaki": {"wikidata": "Q20", "status": "auto"}})
+        self.assertEqual(review["operations"], [])
+
     def test_no_matched_companion_no_group_lookup(self):
         _, _, client = self.run_propose([member("Q20", ["Thomas Kozaki"])], items={})
         self.assertEqual(client.relatives_calls, [])
@@ -573,6 +585,35 @@ class OneWordListNameTest(unittest.TestCase):
         bp.propose(items, review, {"mr:0602-pothinus-et-socii|Cornelius": self.LISTED},
                    FakeClient({"Cornelius": [cand("Q54798", ["Cornelius"], died="0253-06")]}))
         self.assertEqual(items["mr:0602-pothinus-et-socii"]["Cornelius"]["status"], "reviewed")
+
+
+class OneWordCompanionTest(unittest.TestCase):
+    """A one-word companion of the text that the subject does not name, in a eulogy with no death-day
+    rule, is automatic only when the item died on the eulogy's very day: Lucas with Silvanus
+    (6 February) matched Luke the Evangelist, Moyses with Bassianus (14 February) Moses."""
+
+    LUCAS = dict(PERSON, eulogy="mr:0206-silvanus", name="Lucas", day="02-06", typology="commemoratio",
+                 subject="Sanctus Silvanus")
+
+    def test_a_namesake_without_the_very_day_is_queued(self):
+        r = bp.evaluate(self.LUCAS, [cand("Q128538", ["Lucas"], died=None)])
+        self.assertIsNone(r["auto"])
+        self.assertIn("one-word companion", r["failed"][-1])
+
+    def test_the_very_day_is_enough(self):
+        self.assertEqual(bp.evaluate(self.LUCAS, [cand("Q1", ["Lucas"], died="0312-02-06")])["auto"]["wikidata"], "Q1")
+
+    def test_a_saint_the_subject_names_is_not_a_companion(self):
+        silvanus = dict(self.LUCAS, name="Silvanus")
+        self.assertEqual(bp.evaluate(silvanus, [cand("Q1", ["Silvanus"], died=None)])["auto"]["wikidata"], "Q1")
+
+    def test_propose_withdraws_an_existing_automatic_match_that_fails_it(self):
+        items = {"mr:0206-silvanus": {"Lucas": {"wikidata": "Q128538", "status": "auto"}}}
+        review = bp.new_changeset([])
+        bp.propose(items, review, {"mr:0206-silvanus|Lucas": self.LUCAS},
+                   FakeClient({"Lucas": [cand("Q128538", ["Lucas"], died=None)]}))
+        self.assertNotIn("mr:0206-silvanus", items)
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0206-silvanus|Lucas"])
 
 
 class RepeatedNamesTest(unittest.TestCase):

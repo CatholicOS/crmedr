@@ -7396,9 +7396,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 250,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "unnumbered": true
     },
@@ -14000,9 +14000,10 @@
         }
       ],
       "date": {
-        "from": 84,
-        "to": 288,
-        "source": "wikidata"
+        "from": 201,
+        "to": 300,
+        "circa": true,
+        "source": "estimate"
       }
     },
     {
@@ -14989,7 +14990,7 @@
         "source": "edition"
       },
       "edition_notes": {
-        "martyrologium_romanum_2004_it_IT": "Translation error: \"monastero di Dio\" (monastery of God) where the Latin has \"monastérii Dii\" (the monastery of Dius, named after its founder)."
+        "martyrologium_romanum_2004_it_IT": "\"Dio\" here is not God but the Italian form of the name Dius (\"san Dio\", 19 July): \"monastérii Dii\" is the monastery named after its founder, Saint Dius."
       }
     },
     {
@@ -17017,9 +17018,8 @@
         }
       ],
       "date": {
-        "from": -1273,
-        "to": 400,
-        "source": "wikidata"
+        "to": 1630,
+        "source": "edition"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
@@ -30777,9 +30777,8 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "source": "wikidata"
+        "to": 1630,
+        "source": "edition"
       }
     },
     {
@@ -33181,9 +33180,8 @@
       "country": "PS",
       "typology": "commemoratio",
       "date": {
-        "from": 1,
-        "to": 100,
-        "source": "wikidata"
+        "to": 1630,
+        "source": "edition"
       }
     },
     {
@@ -40341,8 +40339,8 @@
         }
       ],
       "date": {
-        "year": 536,
-        "source": "wikidata"
+        "to": 1630,
+        "source": "edition"
       }
     },
     {
@@ -70706,8 +70704,7 @@
         }
       ],
       "date": {
-        "from": 1,
-        "to": 135,
+        "year": 135,
         "source": "wikidata"
       },
       "edition_notes": {
@@ -90925,9 +90922,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 287,
         "basis": "deposition",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -116006,8 +116003,8 @@
         }
       ],
       "date": {
-        "year": 473,
-        "source": "wikidata"
+        "to": 1630,
+        "source": "edition"
       },
       "note": "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and companions."
     },
@@ -127943,9 +127940,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 283,
         "basis": "deposition",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:1207-eutychianus"

@@ -100,40 +100,6 @@
       "pt": "Josué"
     }
   },
-  "Q9077": {
-    "description": {
-      "en": "Abrahamic prophet said to have led the Israelites out of Egypt",
-      "it": "principale profeta nell'ebraismo, profeta anche per cristianesimo e islam",
-      "fr": "premier prophète du judaïsme",
-      "de": "Zentralfigur der ersten fünf Bücher der Bibel",
-      "es": "personaje de la Biblia, profeta en el judaísmo, cristianismo e Islam; protagonista del libro del Éxodo",
-      "pt": "profeta no judaismo e islamismo, lider religioso e juiz de Israel"
-    },
-    "born": {
-      "year": -1393,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": -1273,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Seleznikha church - prophet Moses (18 c.).jpg",
-      "author": "18 century icon painter",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Moses",
-      "it": "Mosè",
-      "fr": "Moïse",
-      "de": "Mose",
-      "es": "Moisés",
-      "pt": "Moisés"
-    }
-  },
   "Q9181": {
     "description": {
       "en": "foundational legendary figure among adherents of the eponymous Abrahamic religions",
@@ -4082,36 +4048,6 @@
       "pt": "Papa Vítor I"
     }
   },
-  "Q128538": {
-    "description": {
-      "en": "one of the four evangelists",
-      "it": "uno dei quattro evangelisti",
-      "fr": "évangéliste du Nouveau Testament",
-      "de": "einer der vier Evangelisten, Verfasser des Lukasevangeliums",
-      "es": "evangelista y apóstol",
-      "pt": "um dos quatro evangelistas"
-    },
-    "born": null,
-    "died": {
-      "year": 84,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Grandes Heures Anne de Bretagne Saint Luc.jpg",
-      "author": "Jean Bourdichon",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Luke the Evangelist",
-      "it": "Luca (evangelista)",
-      "fr": "Luc (évangéliste)",
-      "de": "Lukas (Evangelist)",
-      "es": "Lucas el Evangelista",
-      "pt": "Lucas, o Evangelista"
-    }
-  },
   "Q129546": {
     "description": {
       "en": "Christian mystic",
@@ -4234,6 +4170,40 @@
       "de": "Damasus I.",
       "es": "Dámaso I",
       "pt": "Papa Dâmaso I"
+    }
+  },
+  "Q131159": {
+    "description": {
+      "en": "pope and bishop of Rome from 236 to 250",
+      "it": "20° vescovo di Roma e papa della Chiesa cattolica dal 236 al 250",
+      "fr": "20e pape de l'Église catholique, de 236 à 250",
+      "de": "Papst und Märtyrer",
+      "es": "20.º papa de la Iglesia Católica",
+      "pt": "20° Papa da Igreja Católica"
+    },
+    "born": {
+      "year": 200,
+      "precision": "decade",
+      "circa": true
+    },
+    "died": {
+      "year": 250,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Fabian1.jpg",
+      "author": "Giovanni di Paolo",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Fabian",
+      "it": "Papa Fabiano",
+      "fr": "Fabien (pape)",
+      "de": "Fabianus",
+      "es": "Fabián (papa)",
+      "pt": "Papa Fabiano"
     }
   },
   "Q131162": {
@@ -5295,6 +5265,40 @@
       "de": "Miltiades (Bischof von Rom)",
       "es": "Melquíades",
       "pt": "Papa Melquíades"
+    }
+  },
+  "Q162972": {
+    "description": {
+      "en": "Pope and Bishop of Rome from 275 to 283",
+      "it": "27° vescovo di Roma e papa della Chiesa cattolica dal 275 al 283",
+      "fr": "27e pape de l'Église catholique, de 275 à 283",
+      "de": "Papst",
+      "es": "27.º papa de la Iglesia Católica",
+      "pt": "27º Papa da Igreja Católica"
+    },
+    "born": {
+      "year": 300,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 283,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Pope Eutychian.jpg",
+      "author": "Artaud de Montor (1772–1849)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Eutychian",
+      "it": "Papa Eutichiano",
+      "fr": "Eutychien",
+      "de": "Eutychianus",
+      "es": "Eutiquiano",
+      "pt": "Papa Eutiquiano"
     }
   },
   "Q162973": {
@@ -18878,37 +18882,6 @@
       "es": "Heriberto de Colonia"
     }
   },
-  "Q662713": {
-    "description": {
-      "en": "Catholic saint and Bishop of Ravenna",
-      "it": "vescovo italiano",
-      "fr": "saint de l'église catholique",
-      "de": "Erzbischof der katholischen Kirche",
-      "es": "santo obispo"
-    },
-    "born": {
-      "year": 500,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 536,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Saint Ursicinus of Ravenna mosaic (crop) - Sant'Apollinare in Classe - Ravenna 2016.jpg",
-      "author": "José Luiz",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {
-      "en": "Ursicinus (bishop of Ravenna)",
-      "it": "Ursicino di Ravenna (vescovo)",
-      "fr": "Ursicin de Ravenne",
-      "de": "Ursicinus von Ravenna (Bischof)"
-    }
-  },
   "Q668528": {
     "description": {
       "en": "Roman Catholic martyr and lay carmelite (1887–1909)",
@@ -20640,32 +20613,6 @@
       "it": "Pietro Pascasio",
       "fr": "Pierre Pascal (bienheureux)",
       "es": "Pedro Pascual"
-    }
-  },
-  "Q752778": {
-    "description": {
-      "en": "human biblical figure",
-      "it": "vescovo orientale",
-      "fr": "personnage humain de la Bible",
-      "de": "Jünger Jesu"
-    },
-    "born": null,
-    "died": {
-      "year": 100,
-      "precision": "century",
-      "circa": false
-    },
-    "image": {
-      "file": "Asyncritus of Hyrcania.jpg",
-      "author": "Unknown authorUnknown author",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Asyncritus of Hyrcania",
-      "it": "Asincrito di Ircania",
-      "de": "Asyncritus",
-      "pt": "Asíncrito de Hircânia"
     }
   },
   "Q767708": {
@@ -22473,31 +22420,6 @@
       "de": "Michael Garicoits",
       "es": "Miguel Garicoits",
       "pt": "Michel Garicoïts"
-    }
-  },
-  "Q981729": {
-    "description": {
-      "en": "figure in New Testament; missionary in Galatia who became a companion of Paul",
-      "fr": "disciple de saint Paul, saint catholique, évêque légendaire",
-      "de": "einer der Siebzig Jünger Jesu"
-    },
-    "born": null,
-    "died": {
-      "year": 100,
-      "precision": "century",
-      "circa": false
-    },
-    "image": {
-      "file": "Silvanus-Crescens-Silas.jpg",
-      "author": null,
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Crescens",
-      "fr": "Crescent (saint)",
-      "de": "Crescens (Heiliger)",
-      "pt": "Crescêncio"
     }
   },
   "Q983066": {
@@ -26317,6 +26239,34 @@
       "pt": "Julião de Le Mans"
     }
   },
+  "Q1714476": {
+    "description": {
+      "en": "Gallo-Roman saint",
+      "de": "katholischer Märtyrer"
+    },
+    "born": {
+      "year": 277,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 287,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "AD 2024 - Reliekhouder Sint-Justus - Antwerpen.jpg",
+      "author": "Carolus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Justus of Beauvais",
+      "fr": "Juste de Beauvais",
+      "de": "Justus von Beauvais",
+      "pt": "Justus de Beauvais"
+    }
+  },
   "Q1722511": {
     "description": {
       "en": "Italian Roman Catholic missionary and saint (1903–1930)",
@@ -27685,30 +27635,6 @@
     },
     "wikipedia": {
       "it": "Macario di Antiochia"
-    }
-  },
-  "Q2070679": {
-    "description": {
-      "en": "Egyptian monk",
-      "it": "monaco egiziano",
-      "fr": "moine antique",
-      "es": "monje egipcio del siglo IV"
-    },
-    "born": {
-      "year": 301,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 399,
-      "precision": "century",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "it": "Ammonio di Nitria",
-      "fr": "Ammonios le Moine",
-      "es": "Ammonio el monje"
     }
   },
   "Q2071311": {
@@ -30691,35 +30617,6 @@
       "de": "Jean de Lalande",
       "es": "Juan de Lalande",
       "pt": "Jean de Lalande"
-    }
-  },
-  "Q2630223": {
-    "description": {
-      "en": "hermit",
-      "it": "santo bizantino",
-      "fr": "ermite et saint chrétien",
-      "de": "nach militärischer Laufbahn unter Theodosios Il. (Offizier der Palastgarde) Eremit am Oxeia-Berg; Heiliger (Fest 14. Februar)"
-    },
-    "born": {
-      "year": 400,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 473,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Auxentius, monk of Bithynia (Menologion of Basil II).jpeg",
-      "author": "Authors of Menologion of Basil II (circa 985 AC, Constantinople), Byzantine manuscript illuminators[1]: Pantoleon with Georgios, Michael the Younger, Michael of Blachernae, Symeon, Symeon of Blachernae, Menas, and Nestor (Online on Vatican site)",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Auxentius of Bithynia",
-      "it": "Aussenzio di Bitinia",
-      "es": "Auxencio de Bitinia"
     }
   },
   "Q2635887": {
@@ -34456,23 +34353,6 @@
       "it": "Benincasa di Cava"
     }
   },
-  "Q3652965": {
-    "description": {
-      "en": "Eastern Orthodox martyr",
-      "it": "Santo del terzo secolo"
-    },
-    "born": null,
-    "died": {
-      "year": 288,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Mocius",
-      "it": "Mocio di Anfipoli"
-    }
-  },
   "Q3667471": {
     "description": {
       "en": "Italian Roman Catholic nun (1858-1887)",
@@ -36686,29 +36566,6 @@
     "image": null,
     "wikipedia": {
       "en": "John Alcober"
-    }
-  },
-  "Q4068319": {
-    "description": {
-      "en": "early Christian saint and martyr",
-      "de": "frühchristliche Märtyrerin"
-    },
-    "born": {
-      "year": 100,
-      "precision": "century",
-      "circa": false
-    },
-    "died": null,
-    "image": {
-      "file": "Philemon and Apphia.jpg",
-      "author": "учащихся Иконописной школы",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Saint Appia",
-      "de": "Apphia",
-      "es": "Apia de Colosas"
     }
   },
   "Q4075367": {
@@ -49007,20 +48864,6 @@
       "de": "Joseph Pellé"
     }
   },
-  "Q59133739": {
-    "description": {
-      "en": "Egyptian martyr (ca. 300 CE)",
-      "it": "santo martire cristiano",
-      "de": "ägyptischer Märtyrer (3. Jahrhundert)"
-    },
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {
-      "it": "Nemesio d'Alessandria",
-      "de": "Nemesius von Alexandria"
-    }
-  },
   "Q61413636": {
     "description": {
       "it": "beato",
@@ -49359,6 +49202,13 @@
     "wikipedia": {
       "es": "Eustracio Taumaturgo"
     }
+  },
+  "Q85971792": {
+    "description": {},
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
   },
   "Q85972007": {
     "description": {},
@@ -49968,28 +49818,6 @@
       "es": "Andrés Wouters (santo)",
       "pt": "André Wouters"
     }
-  },
-  "Q107303904": {
-    "description": {
-      "en": "Christian saint"
-    },
-    "born": {
-      "year": 300,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 400,
-      "precision": "century",
-      "circa": false
-    },
-    "image": {
-      "file": "Vatican Museums 2020 P02 Saint Antiochianus mosaic.jpg",
-      "author": "Fallaner",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {}
   },
   "Q107444476": {
     "description": {

@@ -7793,7 +7793,7 @@
           "end": 14,
           "check": "3516a722",
           "name": "Fabianus",
-          "qid": null
+          "qid": "Q131159"
         },
         {
           "kind": "place",
@@ -15776,7 +15776,7 @@
           "end": 154,
           "check": "91ce7d8f",
           "name": "Lucas",
-          "qid": "Q128538"
+          "qid": null
         },
         {
           "kind": "person",
@@ -15785,7 +15785,7 @@
           "end": 171,
           "check": "2394ca4d",
           "name": "Mocius",
-          "qid": "Q3652965"
+          "qid": null
         }
       ],
       "mr:0206-vedastus": [
@@ -18099,7 +18099,7 @@
           "end": 150,
           "check": "48eaef84",
           "name": "Dativus",
-          "qid": null
+          "qid": "Q85971792"
         },
         {
           "kind": "person",
@@ -18110,7 +18110,7 @@
           "end": 166,
           "check": "883a67f1",
           "name": "Dativus",
-          "qid": null
+          "qid": "Q85971792"
         },
         {
           "kind": "person",
@@ -19227,7 +19227,7 @@
           "end": 159,
           "check": "e790daef",
           "name": "Moyses",
-          "qid": "Q9077"
+          "qid": null
         },
         {
           "kind": "person",
@@ -19245,7 +19245,7 @@
           "end": 204,
           "check": "205bbcf9",
           "name": "Ammonius",
-          "qid": "Q2070679"
+          "qid": null
         }
       ],
       "mr:0214-cyrillus-et-methodius": [
@@ -34310,7 +34310,7 @@
           "end": 170,
           "check": "640e5102",
           "name": "Antiochianus",
-          "qid": "Q107303904"
+          "qid": null
         },
         {
           "kind": "person",
@@ -36641,7 +36641,7 @@
           "end": 49,
           "check": "79d123a9",
           "name": "Asyncritus",
-          "qid": "Q752778"
+          "qid": null
         },
         {
           "kind": "person",
@@ -44966,7 +44966,7 @@
           "end": 216,
           "check": "299e16a0",
           "name": "Ursicinus",
-          "qid": "Q662713"
+          "qid": null
         }
       ],
       "mr:0429-achardus": [
@@ -70137,7 +70137,7 @@
           "end": 133,
           "check": "33cc8ac3",
           "name": "Ioannes Baptista Wu Mantang",
-          "qid": null
+          "qid": "Q11717214"
         },
         {
           "kind": "person",
@@ -71788,7 +71788,7 @@
           "end": 137,
           "check": "4d8c04ef",
           "name": "Ioannes Baptista Zhao Mingxi",
-          "qid": null
+          "qid": "Q11717216"
         }
       ],
       "mr:0703-philippus-phan-van-minh": [
@@ -81830,7 +81830,7 @@
           "end": 105,
           "check": "f45b7eb0",
           "name": "Crescens",
-          "qid": "Q981729"
+          "qid": null
         },
         {
           "kind": "person",
@@ -81848,7 +81848,7 @@
           "end": 123,
           "check": "ed4a89d4",
           "name": "Nemesius",
-          "qid": "Q59133739"
+          "qid": null
         },
         {
           "kind": "person",
@@ -105961,7 +105961,7 @@
           "end": 41,
           "check": "e56f45fe",
           "name": "Iustus",
-          "qid": null
+          "qid": "Q1714476"
         },
         {
           "kind": "place",
@@ -137514,7 +137514,7 @@
           "end": 167,
           "check": "600229a4",
           "name": "Auxentius",
-          "qid": "Q2630223"
+          "qid": null
         }
       ],
       "mr:1106-callinicus-et-socii": [
@@ -144576,7 +144576,7 @@
           "end": 141,
           "check": "e44c4e9f",
           "name": "Apphia",
-          "qid": "Q4068319"
+          "qid": null
         }
       ],
       "mr:1122-pragmatius": [
@@ -152196,7 +152196,7 @@
           "end": 65,
           "check": "dbeaa5ee",
           "name": "Eutychianus",
-          "qid": null
+          "qid": "Q162972"
         }
       ],
       "mr:1208-iosephus-maria-zabal-blasco": [
@@ -167540,7 +167540,7 @@
           "end": 11,
           "check": "c301c540",
           "name": "Fabianus",
-          "qid": null
+          "qid": "Q131159"
         },
         {
           "kind": "place",
@@ -175544,7 +175544,7 @@
           "end": 195,
           "check": "91ce7d8f",
           "name": "Lucas",
-          "qid": "Q128538"
+          "qid": null
         },
         {
           "kind": "person",
@@ -175553,7 +175553,7 @@
           "end": 214,
           "check": "05fc1d08",
           "name": "Mocius",
-          "qid": "Q3652965"
+          "qid": null
         }
       ],
       "mr:0206-vedastus": [
@@ -177823,7 +177823,7 @@
           "end": 153,
           "check": "0226d7e8",
           "name": "Dativus",
-          "qid": null
+          "qid": "Q85971792"
         },
         {
           "kind": "person",
@@ -178918,7 +178918,7 @@
           "end": 163,
           "check": "1e64db36",
           "name": "Moyses",
-          "qid": "Q9077"
+          "qid": null
         },
         {
           "kind": "person",
@@ -178936,7 +178936,7 @@
           "end": 208,
           "check": "3333c4c6",
           "name": "Ammonius",
-          "qid": "Q2070679"
+          "qid": null
         }
       ],
       "mr:0214-cyrillus-et-methodius": [
@@ -194183,7 +194183,7 @@
           "end": 172,
           "check": "0dd258e6",
           "name": "Antiochianus",
-          "qid": "Q107303904"
+          "qid": null
         },
         {
           "kind": "person",
@@ -196531,7 +196531,7 @@
           "end": 44,
           "check": "c21e5046",
           "name": "Asyncritus",
-          "qid": "Q752778"
+          "qid": null
         },
         {
           "kind": "person",
@@ -204925,7 +204925,7 @@
           "end": 218,
           "check": "804d1fec",
           "name": "Ursicinus",
-          "qid": "Q662713"
+          "qid": null
         }
       ],
       "mr:0429-achardus": [
@@ -230382,7 +230382,7 @@
           "end": 136,
           "check": "5b5bd279",
           "name": "Ioannes Baptista Wu Mantang",
-          "qid": null
+          "qid": "Q11717214"
         },
         {
           "kind": "person",
@@ -232108,7 +232108,7 @@
           "end": 179,
           "check": "59cf26a7",
           "name": "Ioannes Baptista Zhao Mingxi",
-          "qid": null
+          "qid": "Q11717216"
         }
       ],
       "mr:0703-philippus-phan-van-minh": [
@@ -242158,7 +242158,7 @@
           "end": 105,
           "check": "67a398b3",
           "name": "Crescens",
-          "qid": "Q981729"
+          "qid": null
         },
         {
           "kind": "person",
@@ -242176,7 +242176,7 @@
           "end": 124,
           "check": "3a507427",
           "name": "Nemesius",
-          "qid": "Q59133739"
+          "qid": null
         },
         {
           "kind": "person",
@@ -266465,7 +266465,7 @@
           "end": 45,
           "check": "da1a0a70",
           "name": "Iustus",
-          "qid": null
+          "qid": "Q1714476"
         },
         {
           "kind": "place",
@@ -298062,7 +298062,7 @@
           "end": 187,
           "check": "c116fdde",
           "name": "Auxentius",
-          "qid": "Q2630223"
+          "qid": null
         }
       ],
       "mr:1106-callinicus-et-socii": [
@@ -305110,7 +305110,7 @@
           "end": 151,
           "check": "005d76ba",
           "name": "Apphia",
-          "qid": "Q4068319"
+          "qid": null
         }
       ],
       "mr:1122-pragmatius": [
@@ -312761,7 +312761,7 @@
           "end": 79,
           "check": "3dc6a047",
           "name": "Eutychianus",
-          "qid": null
+          "qid": "Q162972"
         }
       ],
       "mr:1208-iosephus-maria-zabal-blasco": [

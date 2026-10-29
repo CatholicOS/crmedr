@@ -507,13 +507,14 @@ class Wikidata:
         groups = [v["id"] for c in (raw or {}).get("claims", {}).get("P361", [])
                   if isinstance(v := _value(c), dict) and "id" in v]
         listed = self._entities(groups) if groups else {}
+        # A member who is kin too is a member: the group stands for the death day (build_person_items).
         for group in groups:
             for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m wdt:P361 wd:{group} }}"):
-                sources.setdefault(b["m"]["value"].rsplit("/", 1)[1], "companion:P361")
+                sources[b["m"]["value"].rsplit("/", 1)[1]] = "companion:P361"
             for c in (listed.get(group) or {}).get("claims", {}).get("P527", []):
                 v = _value(c)
                 if isinstance(v, dict) and "id" in v:
-                    sources.setdefault(v["id"], "companion:P361")
+                    sources[v["id"]] = "companion:P361"
         sources.pop(qid, None)
         return self._tagged(sources)
 

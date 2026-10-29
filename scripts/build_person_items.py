@@ -257,6 +257,11 @@ def evaluate(person, candidates):
         # (Pope Cornelius for Cornelius of the martyrs of Lyons), unless it died on this very day.
         failed = [LISTED_ONE_WORD.format(qid=passing[0]["wikidata"])]
         passing = []
+    elif _companion_one_word(person) and not _died_on(passing[0], person["day"]) and "group" not in passing[0]["evidence"]:
+        # The same for a companion of the text with no death-day rule to tell them apart (Luke the
+        # Evangelist for Lucas with Silvanus, Moses for Moyses with Bassianus).
+        failed = [COMPANION_ONE_WORD.format(qid=passing[0]["wikidata"])]
+        passing = []
     return {"auto": passing[0] if len(passing) == 1 else None, "failed": failed,
             "candidates": scored[:MAX_CANDIDATES]}
 
@@ -361,6 +366,18 @@ def _listed_one_word(person):
     return _one_word(person["name"]) and person.get("where", "text") != "text"
 
 
+COMPANION_ONE_WORD = ("a one-word companion the subject does not name: the one candidate ({qid}) did not die on "
+                      "this eulogy's day, so it may be a namesake")
+
+
+def _companion_one_word(person):
+    """A one-word name of the text that the eulogy's subject does not name, in a eulogy whose
+    typology has no death-day rule (commemoratio, celebratio)."""
+    return (_one_word(person["name"]) and person.get("where", "text") == "text"
+            and "death" not in _required(person)
+            and name_key(person["name"]) not in {name_key(w) for w in re.findall(r"\w+", person.get("subject") or "")})
+
+
 def _died_on(candidate, day):
     died = candidate.get("died") or ""
     return len(died) == 10 and died[5:] == day
@@ -398,12 +415,31 @@ def _holders(items, extra=()):
     return out
 
 
+# At most this many passes of propose: each looks up again the persons of the eulogies the last
+# one matched someone in, whose group route (gather) those matches open.
+MAX_PASSES = 5
+
+
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     # A queued op whose person is no longer in persons.json (a corrected list) is dropped: it was undecided.
     ops = {op["id"]: op for op in review["operations"] if op["id"] in index}
     not_processed = []
-    failures = 0
+    state = {"failures": 0}
+    keys = sorted(index)
+    for _ in range(MAX_PASSES):
+        matched = _propose_pass(items, ops, index, client, force_review, keys, not_processed, state)
+        keys = sorted(k for k in index if index[k]["eulogy"] in matched and not _decided(items, index[k]))
+        if not keys:
+            break
+    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
+    review["generated_at"] = datetime.date.today().isoformat()
+    return not_processed
+
+
+def _propose_pass(items, ops, index, client, force_review, keys, not_processed, state):
+    """One pass of propose over the persons `keys`: returns the eulogies it matched someone in."""
     pending = {}  # automatic results, written once it is known which items are shared
+    matched = set()
 
     def keep(key, person):
         """A queued op not looked up this time takes the person's details (other names, companions)
@@ -412,12 +448,12 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             old = ops[key]
             ops[key] = make_op(key, person, {"failed": old["failed"], "candidates": old["candidates"]}, old)
 
-    for key in sorted(index):
+    for key in keys:
         person = index[key]
         if _decided(items, person):
             ops.pop(key, None)
             continue
-        if failures >= MAX_CONSECUTIVE_FAILURES:
+        if state["failures"] >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((key, "skipped: Wikidata unavailable"))
             keep(key, person)
             continue
@@ -425,10 +461,10 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             result = evaluate(person, gather(person, client, items))
         except WikidataError as e:
             not_processed.append((key, str(e)))
-            failures += 1
+            state["failures"] += 1
             keep(key, person)
             continue
-        failures = 0
+        state["failures"] = 0
         if key in force_review:
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[key])
@@ -454,11 +490,12 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             del items[person["eulogy"]]
         ops[key] = make_op(key, person, result, ops.get(key))
     # Its own automatic one-word matches in a footnote list that the date rule no longer passes
-    # (LISTED_ONE_WORD) are withdrawn too; a curator's decision never. A match whose item the
+    # (LISTED_ONE_WORD, COMPANION_ONE_WORD) are withdrawn too; a curator's decision never. A match whose item the
     # search did not return stays: its date was never checked.
     for key, person in index.items():
         e = items.get(person["eulogy"], {}).get(person_key(person))
-        if not (e and e["status"] == "auto" and _listed_one_word(person)):
+        if not (e and e["status"] == "auto"
+                and (_listed_one_word(person) or _companion_one_word(person))):
             continue
         try:
             candidates = gather(person, client, items)
@@ -487,9 +524,8 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         else:
             items.setdefault(person["eulogy"], {})[person_key(person)] = {"wikidata": qid, "status": "auto"}
             ops.pop(key, None)
-    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
-    review["generated_at"] = datetime.date.today().isoformat()
-    return not_processed
+            matched.add(person["eulogy"])
+    return matched
 
 
 # The roles of a eulogy's places whose saints are looked up.

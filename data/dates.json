@@ -1213,9 +1213,9 @@
    "source": "wikidata"
   },
   "mr:0120-fabianus-papa": {
-   "to": 1630,
+   "year": 250,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:0120-henricus-upsaliensis": {
    "year": 1156,
@@ -2251,9 +2251,10 @@
    "source": "wikidata"
   },
   "mr:0206-silvanus": {
-   "from": 84,
-   "to": 288,
-   "source": "wikidata"
+   "from": 201,
+   "to": 300,
+   "circa": true,
+   "source": "estimate"
   },
   "mr:0206-vedastus": {
    "to": 1630,
@@ -2582,9 +2583,8 @@
    "source": "edition"
   },
   "mr:0214-bassianus-et-socii": {
-   "from": -1273,
-   "to": 400,
-   "source": "wikidata"
+   "to": 1630,
+   "source": "edition"
   },
   "mr:0214-cyrillus-et-methodius": {
    "year": 869,
@@ -4566,9 +4566,8 @@
    "source": "edition"
   },
   "mr:0401-venantius-et-socii": {
-   "from": 301,
-   "to": 400,
-   "source": "wikidata"
+   "to": 1630,
+   "source": "edition"
   },
   "mr:0402-abundius": {
    "from": 401,
@@ -4898,9 +4897,8 @@
    "source": "estimate"
   },
   "mr:0408-herodion-et-socii": {
-   "from": 1,
-   "to": 100,
-   "source": "wikidata"
+   "to": 1630,
+   "source": "edition"
   },
   "mr:0408-iulia-billiart": {
    "year": 1816,
@@ -5903,8 +5901,8 @@
    "source": "edition"
   },
   "mr:0428-vitalis": {
-   "year": 536,
-   "source": "wikidata"
+   "to": 1630,
+   "source": "edition"
   },
   "mr:0429-antonius-kim-song-u": {
    "year": 1841,
@@ -10007,8 +10005,7 @@
    "source": "wikidata"
   },
   "mr:0718-symphorosa-et-socii": {
-   "from": 1,
-   "to": 135,
+   "year": 135,
    "source": "wikidata"
   },
   "mr:0718-theodosia": {
@@ -12924,9 +12921,9 @@
    "source": "wikidata"
   },
   "mr:0902-iustus": {
-   "to": 1630,
+   "year": 287,
    "basis": "deposition",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:0902-nonnosus": {
    "to": 1630,
@@ -16446,8 +16443,8 @@
    "source": "wikidata"
   },
   "mr:1105-theotimus-et-socii": {
-   "year": 473,
-   "source": "wikidata"
+   "to": 1630,
+   "source": "edition"
   },
   "mr:1106-callinicus-et-socii": {
    "from": 601,
@@ -18020,9 +18017,9 @@
    "source": "edition"
   },
   "mr:1208-eutychianus": {
-   "to": 1630,
+   "year": 283,
    "basis": "deposition",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1208-iosephus-maria-zabal-blasco": {
    "year": 1936,
