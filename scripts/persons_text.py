@@ -375,6 +375,10 @@ NAME_DESCRIPTORS = {"martyrum", "virginum", "presbyterorum", "episcoporum", "mon
                     "filiorum", "filiarum", "eius", "eorum", "earum",
                     # a grandparent or grandchild of the names before ("et eorum aviae Leonillae")
                     "avi", "aviae", "nepotis", "neptis", "nepotum"}
+# A role in the singular describes the name before it; the words after it up to the next comma are
+# its see or its order, never a name ("Sadoth, episcopi Seleuciae Persidis"). A kin word names one.
+ROLE_SINGULAR = {"presbyteri", "episcopi", "diaconi", "monachi", "sacerdotis", "abbatis", "eremitae",
+                 "monialis", "religiosi", "laici", "catechistae"}
 
 
 def nominative(word, lexicon):
@@ -551,6 +555,8 @@ def text_companions(text, lexicon, marked=None, variants=None, unread=None, read
                 if current:  # "Iosíppi diáconi Románi": the descriptor ends the name and describes it
                     close()
                     skipping = True
+                elif f in ROLE_SINGULAR and (names or uncertain):
+                    skipping = True  # "Sadoth, epíscopi Seleucíæ": the see of the name before
                 continue
             if f == "ex" and not current:
                 skipping = True  # "virginum ex Ordine N" describes the names before it
