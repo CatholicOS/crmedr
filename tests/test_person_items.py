@@ -5,6 +5,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
 
@@ -148,6 +149,36 @@ class SearchTermsTest(unittest.TestCase):
         self.assertEqual(bp.search_terms("Agathonica")[0], "Agathonica")
 
 
+FORMS = {"aegidius": {"en": [["Giles", 1]], "it": [["Egidio", 1]]},
+         "ioanna": {"en": [["Jeanne", 4]], "it": [["Giovanna", 5], ["Colomba", 1]]},
+         "ioannes": {"en": [["John", 70]], "it": [["Giovanni", 70]]}}
+
+
+class NameFormsTest(unittest.TestCase):
+    """data/name_forms.json: the forms the 2004 English and Italian subjects give a Latin first name."""
+
+    def test_its_forms_are_searched_after_the_equivalents(self):
+        with mock.patch.object(bp, "NAME_FORMS", FORMS):
+            self.assertIn("Giles Ruiz", bp.search_terms("Aegidius Ruiz"))
+            self.assertEqual(bp.search_terms("Ioannes Talbot")[:2], ["Ioannes Talbot", "John Talbot"])
+        with mock.patch.object(bp, "NAME_FORMS", {"cuthbertus": {"en": [["Cuthbert", 1]], "it": [["Cutberto", 1]]}}):
+            self.assertEqual(bp.search_terms("Cuthbertus Mayne"), ["Cuthbertus Mayne", "Cuthbert Mayne", "Cutberto Mayne"])
+
+    def test_a_form_seen_twice_is_the_same_name_one_seen_once_is_not(self):
+        with mock.patch.object(bp, "NAME_FORMS", FORMS):
+            self.assertTrue(bp.name_matches("Ioanna Lopez", ["Giovanna Lopez"]))
+            self.assertFalse(bp.name_matches("Ioanna Lopez", ["Colomba Lopez"]))
+
+    def test_the_committed_table_is_current(self):
+        import name_forms
+        repo = Path(__file__).resolve().parent.parent
+        persons = json.loads((repo / "data" / "persons.json").read_text(encoding="utf-8"))["editions"][name_forms.EDITION]
+        subjects = {lang: json.loads((repo / "i18n" / f"{lang}.json").read_text(encoding="utf-8"))
+                    for lang in name_forms.LANGUAGES}
+        committed = json.loads((repo / "data" / "name_forms.json").read_text(encoding="utf-8"))["forms"]
+        self.assertEqual(committed, name_forms.harvest(persons, subjects), "run scripts/name_forms.py")
+
+
 class NameMatchTest(unittest.TestCase):
     def test_latin_and_vernacular_forms(self):
         self.assertTrue(bp.name_matches("Paulus Miki", ["Paul Miki"]))
@@ -181,9 +212,10 @@ class EvaluateTest(unittest.TestCase):
 
 
 class FakeClient:
-    def __init__(self, by_name=None, by_qid=None, fail=(), places=None):
+    def __init__(self, by_name=None, by_qid=None, fail=(), places=None, kin=None):
         self.by_name, self.by_qid, self.fail = by_name or {}, by_qid or {}, set(fail)
         self.places, self.items_calls, self.people_calls = places or {}, [], []
+        self.kin, self.relatives_calls = kin or {}, []
 
     def person_candidates(self, name, languages=("la", "it", "en")):
         if name in self.fail:
@@ -204,6 +236,67 @@ class FakeClient:
         if "items" in self.fail:
             raise bp.WikidataError("boom")
         return {q: self.places[q] for q in qids if q in self.places}
+
+    def relatives(self, qid):
+        self.relatives_calls.append(qid)
+        return [dict(c) for c in self.kin.get(qid, [])]
+
+
+def member(qid, names, died="1597-03-01", source="companion:P361"):
+    return dict(cand(qid, names, died=died), source=source)
+
+
+class GroupRouteTest(unittest.TestCase):
+    """The members of a matched companion's group (P361, P527): the group stands for the death day
+    (the user's ruling, 2026-10-28: the 117 Vietnamese martyrs share 24 November, each died on his
+    own day)."""
+    KOZAKI = "mr:0206-paulus-miki-et-socii|Thomas Kozaki"
+
+    def run_propose(self, kin, items=None):
+        items = items if items is not None else {
+            "mr:0206-paulus-miki-et-socii": {"Ioannes de Goto Soan": {"wikidata": "Q10", "status": "auto"}}}
+        index = {self.KOZAKI: dict(PERSON, name="Thomas Kozaki", companions=["Ioannes de Goto Soan"])}
+        client = FakeClient({"Thomas Kozaki": [], "Thomas": []}, kin={"Q10": kin})
+        review = bp.new_changeset([])
+        bp.propose(items, review, index, client)
+        return items, review, client
+
+    def test_a_group_member_of_the_full_name_is_matched_though_it_died_on_another_day(self):
+        items, review, _ = self.run_propose([member("Q20", ["Thomas Kozaki"]), member("Q21", ["Petrus Sukejiro"])])
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"]["Thomas Kozaki"], {"wikidata": "Q20", "status": "auto"})
+        self.assertEqual(review["operations"], [])
+
+    def test_kin_do_not_stand_for_the_death_day(self):
+        items, review, _ = self.run_propose([member("Q22", ["Thomas Kozaki"], source="companion:P3373")])
+        self.assertNotIn("Thomas Kozaki", items["mr:0206-paulus-miki-et-socii"])
+        self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], [])
+
+    def test_a_member_whose_name_does_not_fit_is_left_out(self):
+        items, review, _ = self.run_propose([member("Q21", ["Petrus Sukejiro"])])
+        self.assertNotIn("Thomas Kozaki", items["mr:0206-paulus-miki-et-socii"])
+        self.assertEqual(review["operations"][0]["candidates"], [])
+
+    def test_a_member_of_another_given_name_is_a_candidate_not_a_match(self):
+        # Kozaki fits by the surname (_fits_group_member), but "Paulus Kozaki" is not his name.
+        items, review, _ = self.run_propose([member("Q23", ["Paul Kozaki"])])
+        self.assertNotIn("Thomas Kozaki", items["mr:0206-paulus-miki-et-socii"])
+        self.assertEqual([c["wikidata"] for c in review["operations"][0]["candidates"]], ["Q23"])
+
+    def test_a_companion_matched_in_the_same_run_opens_the_group_route(self):
+        # Paulus Miki is matched by the search; his group then finds Thomas Kozaki, in one run.
+        index = {"mr:0206-paulus-miki-et-socii|Paulus Miki": dict(PERSON, companions=["Thomas Kozaki"]),
+                 self.KOZAKI: dict(PERSON, name="Thomas Kozaki", companions=["Paulus Miki"])}
+        client = FakeClient({"Paulus Miki": [cand("Q10", ["Paul Miki"])]}, kin={"Q10": [member("Q20", ["Thomas Kozaki"])]})
+        items, review = {}, bp.new_changeset([])
+        bp.propose(items, review, index, client)
+        self.assertEqual(items["mr:0206-paulus-miki-et-socii"],
+                         {"Paulus Miki": {"wikidata": "Q10", "status": "auto"},
+                          "Thomas Kozaki": {"wikidata": "Q20", "status": "auto"}})
+        self.assertEqual(review["operations"], [])
+
+    def test_no_matched_companion_no_group_lookup(self):
+        _, _, client = self.run_propose([member("Q20", ["Thomas Kozaki"])], items={})
+        self.assertEqual(client.relatives_calls, [])
 
 
 INDEX = {"mr:0206-paulus-miki-et-socii|Paulus Miki": PERSON,
@@ -769,7 +862,9 @@ class ExpandTest(unittest.TestCase):
                 self.name_place_calls.append((name, list(labels)))
                 if name == "Maria Dominica Lego":
                     return [dict(cand("Q1", ["Mariae Dominicae"]), source="place")]
-                return [dict(cand("Q2", ["Vincenza Maria Poloni"]), source="place")]
+                if len(name.split()) == 1:  # a first-name form alone: every Mary of the place
+                    return [dict(cand("Q2", ["Vincenza Maria Poloni"]), source="place")]
+                return []
         client = Client()
         places = {"mr:0101-ioannes-et-renatus-lego": [{"role": "death", "la": "Veronae", "qid": "Q2028", "label": "Verona"}]}
         op = self.op(name="Maria Dominica Lego", companions=[], candidates=[])
@@ -820,6 +915,7 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual(client.name_place_calls[0], ("Ioannes", ["Paris", "Nantes"]))
         self.assertEqual([(c["wikidata"], c["source"]) for c in op["candidates"]], [("Q7", "place")])
 
+    @mock.patch.object(bp, "NAME_FORMS", {})  # the Latin endings' forms alone
     def test_name_and_place_route_searches_the_vernacular_forms(self):
         self.assertEqual(bp.fulltext_names({"name": "Rogerius", "also": []}),
                          ["Rogerius", "Roger", "Rogere", "Rogerio"])

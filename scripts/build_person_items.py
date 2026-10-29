@@ -96,6 +96,29 @@ NAME_EQUIVALENTS = {
 }
 # The same table in name_key form ("John" -> "iohn", "Giovanni" -> "giouanni"), for comparing.
 _EQUIVALENTS = {name_key(k): {name_key(v) for v in vs} for k, vs in NAME_EQUIVALENTS.items()}
+# The forms the 2004 English and Italian subjects give a Latin first name, with the times seen
+# (scripts/name_forms.py), by the Latin name's key.
+NAME_FORMS = json.loads((Path(__file__).resolve().parent.parent / "data" / "name_forms.json")
+                        .read_text(encoding="utf-8"))["forms"]
+
+
+def vernacular_forms(first):
+    """A Latin first name's (name_key) vernacular forms: NAME_EQUIVALENTS's, the English first,
+    then the English and the Italian of NAME_FORMS, the commonest first."""
+    forms = list(next((vs for k, vs in NAME_EQUIVALENTS.items() if name_key(k) == first), ()))
+    for lang in ("en", "it"):
+        forms += [form for form, _ in NAME_FORMS.get(first, {}).get(lang, [])]
+    out = {}
+    for form in forms:
+        out.setdefault(name_key(form), form)
+    return list(out.values())
+
+
+def _equivalent(latin, other):
+    """`other` (name_key) is a vernacular form of the Latin name (name_key): NAME_EQUIVALENTS's, or
+    one NAME_FORMS saw twice or more (a form seen once may be a religious name)."""
+    return other in _EQUIVALENTS.get(latin, ()) or any(
+        n >= 2 and name_key(form) == other for lang in ("en", "it") for form, n in NAME_FORMS.get(latin, {}).get(lang, []))
 # Persons that pass the evidence bar but are known to be wrong: always reviewed.
 FORCE_REVIEW = {
     # The only "Valentinus" candidate passing is the Valentine of 14 February; the 7 January
@@ -143,7 +166,7 @@ def latin_stem(name):
 
 def _same(latin, other):
     """The same name: equal, equivalents, or one stem with a Latin and a vernacular ending."""
-    if other in _EQUIVALENTS.get(latin, ()):
+    if _equivalent(latin, other):
         return True
     latin, other = latin.replace("ae", "e").replace("oe", "e"), other.replace("ae", "e").replace("oe", "e")
     if latin == other:
@@ -191,6 +214,8 @@ def evidence(person, c):
         ev.append("name")  # under any of the person's names
     if person["typology"] == "dies_natalis" and _death_agrees(c.get("died") or "", person["day"]):
         ev.append("death")
+    if c.get("source") == GROUP_SOURCE:
+        ev.append("group")  # a member of a matched companion's group (gather)
     return ev
 
 
@@ -215,7 +240,10 @@ def evaluate(person, candidates):
         c = dict(c, evidence=evidence(person, c))
         scored.append(c)
     need = _required(person)
-    passing = [c for c in scored if all(r in c["evidence"] for r in need)]
+    # A matched companion's group stands for the death day (the user's ruling, 2026-10-28: the
+    # Vietnamese martyrs share 24 November, each died on his own day).
+    passing = [c for c in scored if all(r in c["evidence"] or (r == "death" and "group" in c["evidence"])
+                                        for r in need)]
     scored.sort(key=lambda c: (-len(c["evidence"]), c["wikidata"]))
     failed = []
     if not passing:
@@ -224,7 +252,7 @@ def evaluate(person, candidates):
                   if best else ["no candidate found"])
     elif len(passing) > 1:
         failed = [f"{len(passing)} candidates pass every rule: " + ", ".join(c["wikidata"] for c in passing)]
-    elif _listed_one_word(person) and not _died_on(passing[0], person["day"]):
+    elif _listed_one_word(person) and not _died_on(passing[0], person["day"]) and "group" not in passing[0]["evidence"]:
         # An obscure companion named by one word: the one candidate is usually a famous namesake
         # (Pope Cornelius for Cornelius of the martyrs of Lyons), unless it died on this very day.
         failed = [LISTED_ONE_WORD.format(qid=passing[0]["wikidata"])]
@@ -234,27 +262,39 @@ def evaluate(person, candidates):
 
 
 def search_terms(name):
-    """The name, and for a first name with vernacular equivalents its first four (the English
-    first), or for one in -us its stem."""
+    """The name, and for a first name with vernacular forms (vernacular_forms) its first four (the
+    English first), or for one in -us its stem."""
     words = name.split()
     terms = [name]
     first = name_key(words[0]) if words else ""
-    equivalents = next((vs for k, vs in NAME_EQUIVALENTS.items() if name_key(k) == first), ())
+    equivalents = vernacular_forms(first)
     for vern in equivalents[:4]:
-        terms.append(" ".join([vern.capitalize()] + words[1:]))
+        terms.append(" ".join([vern[:1].upper() + vern[1:]] + words[1:]))
     # Richardus Whiting as Richard Whiting: a first name in -us, its stem the vernacular.
     if not equivalents and len(words) > 1 and words[0].endswith("us") and len(words[0]) > 5:
         terms.append(" ".join([words[0][:-2]] + words[1:]))
     return terms
 
 
-def gather(person, client):
+GROUP_SOURCE = "companion:P361"
+
+
+def gather(person, client, items=None):
+    """The search's candidates for each of the person's names, then the members of the groups of
+    the eulogy's matched companions (`items`: the decisions) whose names fit the person: a member
+    found by the search too is marked as one."""
     seen = {}
     # Each of the person's names: Kinga is also sought as Cunegundis.
     terms = dict.fromkeys(t for nm in [person["name"], *person.get("also", [])] for t in search_terms(nm))
     for term in terms:
         for c in client.person_candidates(term, SEARCH_LANGUAGES):
             seen.setdefault(c["wikidata"], c)
+    decided = (items or {}).get(person["eulogy"], {})
+    companions = [e["wikidata"] for e in decided.values() if e.get("wikidata") and e["status"] in ("auto", "reviewed")]
+    for qid in dict.fromkeys(companions):
+        for c in client.relatives(qid):
+            if c.get("source") == GROUP_SOURCE and _fits_group_member(person, c):
+                seen[c["wikidata"]] = dict(seen.get(c["wikidata"], c), source=GROUP_SOURCE)
     return list(seen.values())
 
 
@@ -358,12 +398,31 @@ def _holders(items, extra=()):
     return out
 
 
+# At most this many passes of propose: each looks up again the persons of the eulogies the last
+# one matched someone in, whose group route (gather) those matches open.
+MAX_PASSES = 5
+
+
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     # A queued op whose person is no longer in persons.json (a corrected list) is dropped: it was undecided.
     ops = {op["id"]: op for op in review["operations"] if op["id"] in index}
     not_processed = []
-    failures = 0
+    state = {"failures": 0}
+    keys = sorted(index)
+    for _ in range(MAX_PASSES):
+        matched = _propose_pass(items, ops, index, client, force_review, keys, not_processed, state)
+        keys = sorted(k for k in index if index[k]["eulogy"] in matched and not _decided(items, index[k]))
+        if not keys:
+            break
+    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
+    review["generated_at"] = datetime.date.today().isoformat()
+    return not_processed
+
+
+def _propose_pass(items, ops, index, client, force_review, keys, not_processed, state):
+    """One pass of propose over the persons `keys`: returns the eulogies it matched someone in."""
     pending = {}  # automatic results, written once it is known which items are shared
+    matched = set()
 
     def keep(key, person):
         """A queued op not looked up this time takes the person's details (other names, companions)
@@ -372,23 +431,23 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
             old = ops[key]
             ops[key] = make_op(key, person, {"failed": old["failed"], "candidates": old["candidates"]}, old)
 
-    for key in sorted(index):
+    for key in keys:
         person = index[key]
         if _decided(items, person):
             ops.pop(key, None)
             continue
-        if failures >= MAX_CONSECUTIVE_FAILURES:
+        if state["failures"] >= MAX_CONSECUTIVE_FAILURES:
             not_processed.append((key, "skipped: Wikidata unavailable"))
             keep(key, person)
             continue
         try:
-            result = evaluate(person, gather(person, client))
+            result = evaluate(person, gather(person, client, items))
         except WikidataError as e:
             not_processed.append((key, str(e)))
-            failures += 1
+            state["failures"] += 1
             keep(key, person)
             continue
-        failures = 0
+        state["failures"] = 0
         if key in force_review:
             result["auto"] = None
             result["failed"].append("forced review: " + force_review[key])
@@ -404,7 +463,7 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         if not (e and e["status"] == "auto" and _one_word(person["name"]) and e["wikidata"] in shared):
             continue
         try:
-            result = evaluate(person, gather(person, client))
+            result = evaluate(person, gather(person, client, items))
         except WikidataError as err:
             not_processed.append((key, str(err)))
             continue
@@ -421,7 +480,7 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         if not (e and e["status"] == "auto" and _listed_one_word(person)):
             continue
         try:
-            candidates = gather(person, client)
+            candidates = gather(person, client, items)
         except WikidataError as err:
             not_processed.append((key, str(err)))
             continue
@@ -447,9 +506,8 @@ def propose(items, review, index, client, force_review=FORCE_REVIEW):
         else:
             items.setdefault(person["eulogy"], {})[person_key(person)] = {"wikidata": qid, "status": "auto"}
             ops.pop(key, None)
-    review["operations"] = sorted(ops.values(), key=lambda op: op["id"])
-    review["generated_at"] = datetime.date.today().isoformat()
-    return not_processed
+            matched.add(person["eulogy"])
+    return matched
 
 
 # The roles of a eulogy's places whose saints are looked up.
@@ -498,7 +556,7 @@ def _given_names(op):
                 stem = latin_stem(form)
                 if stem:
                     given[stem[0]] = None
-            given.update(dict.fromkeys(NAME_EQUIVALENTS.get(name_key(first), ())))
+            given.update(dict.fromkeys(vernacular_forms(name_key(first))))
     return list(given)
 
 

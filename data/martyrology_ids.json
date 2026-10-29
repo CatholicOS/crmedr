@@ -12267,11 +12267,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1923,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Sisters of the Sacred Heart of Jesus and Mary\" where the Latin has \"Soróres Fílias Sacrórum Córdium Iesu et Maríæ\" (Sisters Daughters of the Sacred Hearts)."
@@ -14188,7 +14186,12 @@
           "label": "Skara",
           "country": "SE"
         }
-      ]
+      ],
+      "date": {
+        "year": 1317,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0206-alphonsus-maria-fusco",
@@ -14209,6 +14212,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1910,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Alfonso Maria Fusco, blessed in the 2004 editions, was canonized on 16 October 2016."
     },
     {
@@ -14255,6 +14263,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1913,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Francesco Spinelli, blessed in the 2004 editions, was canonized on 14 October 2018."
     },
     {
@@ -14640,11 +14653,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1856,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -18930,9 +18941,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 789,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -19449,11 +19460,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1624,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -19484,6 +19493,11 @@
           "country": "BE"
         }
       ],
+      "date": {
+        "year": 1878,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: the clause \"terrénam peregrinatiónem iter ad pátriam fáciens pie conclúsit\" (she piously ended her earthly pilgrimage while journeying home) is omitted."
       }
@@ -19938,11 +19952,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1891,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -20186,7 +20198,12 @@
           "label": "Lauria",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1828,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0225-maria-teresia-pisani",
@@ -20240,7 +20257,12 @@
           "label": "Xilin County",
           "country": "CN"
         }
-      ]
+      ],
+      "date": {
+        "year": 1856,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0225-turibius-romo",
@@ -21579,11 +21601,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1856,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -22237,11 +22257,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1955,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -23434,7 +23452,12 @@
           "label": "Florence",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1770,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0307-ioannes-baptista-nam-chong-sam",
@@ -23885,7 +23908,12 @@
           "label": "Kraków",
           "country": "PL"
         }
-      ]
+      ],
+      "date": {
+        "year": 1223,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0308-faustinus-miguez",
@@ -25893,11 +25921,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1951,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "note": "Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022."
     },
@@ -26723,6 +26749,11 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1567,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"from Girona\" where the Latin has the surname \"Grionesos\"."
       }
@@ -27032,11 +27063,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1945,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -28923,11 +28952,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1586,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the judges\" where the Latin has \"consiliariórum iúdicis\" (the judge's counsellors, the jurors)."
@@ -29048,11 +29075,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1944,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -31378,11 +31403,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1839,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -31812,11 +31835,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1884,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -32125,6 +32146,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1963,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005."
     },
     {
@@ -32362,7 +32388,12 @@
           "label": "Palma",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1574,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0405-anna-hoss",
@@ -32733,7 +32764,12 @@
           "label": "Verona",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1896,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0406-michael-rua",
@@ -33323,11 +33359,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1816,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -33808,11 +33842,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1944,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -34106,11 +34138,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1942,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -35782,6 +35812,11 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1607,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "César de Bus, blessed in the 2004 editions, was canonized on 15 May 2022."
     },
     {
@@ -36194,11 +36229,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1879,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -36634,11 +36667,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1680,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "note": "Kateri Tekakwitha, blessed in the 2004 editions, was canonized on 21 October 2012."
     },
@@ -37859,11 +37890,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1602,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -38117,7 +38146,12 @@
           "label": "Cervere",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1466,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0421-conradus-de-parzham",
@@ -40655,9 +40689,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1109,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -42631,11 +42665,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1314,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -43426,7 +43458,12 @@
           "label": "Somasca",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1857,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0505-gregorius-frackowiak",
@@ -43656,7 +43693,12 @@
           "label": "Montepulciano",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1330,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0506-eduardus-jones-et-antonius-middleton",
@@ -44378,9 +44420,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 615,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0525-bonifatius-iv"
@@ -44524,7 +44566,12 @@
           "label": "Randazzo",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1490,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0508-catharina-symon-de-longprey",
@@ -45595,7 +45642,12 @@
           "label": "Santuario di Fonte Colombo",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1343,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0511-ioannes-rochester-et-iacobus-walworth",
@@ -45653,9 +45705,9 @@
         }
       ],
       "date": {
-        "to": 1914,
+        "year": 1716,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -47594,6 +47646,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1929,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Giulia Salzano, blessed in the 2004 editions, was canonized on 17 October 2010."
     },
     {
@@ -50214,9 +50271,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1607,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -50560,11 +50617,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1886,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -52522,11 +52577,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1582,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -53385,11 +53438,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1617,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -54540,6 +54591,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1482,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Sàcceri\" where the Latin \"Sáccere\" is Sassari."
       }
@@ -54588,6 +54644,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1923,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Filippo Smaldone, blessed in the 2004 editions, was canonized on 15 October 2006.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"deaf and mute\" where the Latin has \"surdórum ac cæcórum\" (the deaf and the blind)."
@@ -55476,11 +55537,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1938,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "note": "Rafael Guízar Valencia, blessed in the 2004 editions, was canonized on 15 October 2006."
     },
@@ -55520,11 +55579,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1940,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"followers of contrary opinions and religions ... was detained by the guards\" where the Latin has \"opiniónum hóminum et religiónis adversárum\" (ideologies hostile to man and religion) and \"a vigílibus ... trucidátus est\" (murdered by the guards)."
@@ -58568,6 +58625,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1886,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Little Sisters of the Poor\" where the Latin has \"Sorórum Pauperculárum\" (the Poor Sisters, Poverelle)."
@@ -59275,7 +59337,12 @@
           "label": "Piacenza",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1578,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0617-philippus-papon",
@@ -60071,10 +60138,8 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
-        "source": "estimate"
+        "year": 1584,
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: the Latin says she died \"in carcere\" (in prison) after \"varia genera molestiarum\" (various hardships); the text omits the prison and speaks of \"varie torture\"."
@@ -60098,7 +60163,12 @@
           "label": "Nagasaki",
           "country": "JP"
         }
-      ]
+      ],
+      "date": {
+        "year": 1626,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0620-thomas-whitbread-et-socii",
@@ -61559,11 +61629,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1794,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -61879,7 +61947,12 @@
           "label": "Limoges",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1794,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0626-magdalena-fontaine-et-socii",
@@ -62303,6 +62376,11 @@
           "country": "CH"
         }
       ],
+      "date": {
+        "year": 1879,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Marguerite Bays, blessed in the 2004 editions, was canonized on 13 October 2019."
     },
     {
@@ -63172,11 +63250,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1646,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -63197,7 +63273,12 @@
           "label": "Naples",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1744,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0630-vincentius-do-yen",
@@ -63309,11 +63390,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1973,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -63654,6 +63733,11 @@
           "country": "MT"
         }
       ],
+      "date": {
+        "year": 1865,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"sacerdote\" (priest) where the Latin has \"cléricus\" (a cleric); Blessed Ignatius Falzon was never ordained a priest."
       }
@@ -64709,7 +64793,12 @@
           "label": "Mauriac",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1836,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0704-caesidius-giacomantonio",
@@ -65960,11 +66049,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1900,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Jixian\" where the Latin has \"Ueihœivénsem\" (Weixian)."
@@ -66446,7 +66533,8 @@
         }
       ],
       "date": {
-        "year": 1900,
+        "from": 1648,
+        "to": 1930,
         "basis": "death",
         "source": "wikidata"
       },
@@ -66497,11 +66585,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1539,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -66832,7 +66918,8 @@
         }
       ],
       "date": {
-        "year": 251,
+        "from": 251,
+        "to": 253,
         "basis": "death",
         "source": "wikidata"
       },
@@ -67686,9 +67773,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 303,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"a Lodi\" where the Latin has \"Laude Pompéia\" (Laus Pompeia, today Lodi Vecchio)."
@@ -68486,7 +68573,12 @@
           "label": "Galeazza",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1893,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0713-paulus-liu-jinde",
@@ -68857,6 +68949,11 @@
           "country": null
         }
       ],
+      "date": {
+        "year": 1610,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"la testimonianza\" (witness) where the Latin has \"signis\" (signs, that is, miracles)."
       }
@@ -69470,11 +69567,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1570,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -69958,11 +70053,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1794,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -70007,6 +70100,11 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1846,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"in extréma inópia\" (in extreme poverty) is omitted."
       }
@@ -71650,6 +71748,7 @@
       ],
       "date": {
         "year": 1839,
+        "circa": true,
         "basis": "death",
         "source": "wikidata"
       },
@@ -72863,10 +72962,8 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
-        "source": "estimate"
+        "year": 1898,
+        "source": "wikidata"
       },
       "unnumbered": true
     },
@@ -73750,7 +73847,12 @@
           "label": "Salcete taluk",
           "country": "IN"
         }
-      ]
+      ],
+      "date": {
+        "year": 1583,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0725-antonius-lucci",
@@ -75882,6 +75984,11 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"thirteen martyrs\" is added; the Latin \"et sociórum\" gives no number."
       }
@@ -76241,11 +76348,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -76742,11 +76847,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -77753,11 +77856,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -77805,7 +77906,12 @@
           "label": "Madrid",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0803-asprenas",
@@ -77987,7 +78093,12 @@
           "label": "Alicante",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador",
@@ -78009,11 +78120,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -78036,11 +78145,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -78370,6 +78477,11 @@
           ]
         }
       ],
+      "date": {
+        "year": 1916,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Mariannhill\" where the Latin has \"Marianópoli\" (Montreal)."
       }
@@ -80051,7 +80163,12 @@
           "label": "El Saler",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0808-maria-a-iesu-infante-et-socii",
@@ -80479,7 +80596,12 @@
           "label": "Azanuy",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0809-gulielmus-plaza-hernandez",
@@ -82511,11 +82633,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1633,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -83058,11 +83178,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -83105,11 +83223,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -83498,7 +83614,12 @@
           "label": "Wuqiao County",
           "country": "CN"
         }
-      ]
+      ],
+      "date": {
+        "year": 1900,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0816-anna-iosepha-perez-florido",
@@ -84261,11 +84382,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -84920,11 +85039,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -86154,7 +86271,12 @@
           "label": "Offida",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1694,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0822-elias-leymarie-de-laroche",
@@ -86496,11 +86618,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -86866,11 +86986,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1856,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -87321,11 +87439,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1282,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Tuscany\" where the Latin has \"Túscia\" (Tuscia, now in Lazio)."
@@ -87742,11 +87858,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1897,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -88267,7 +88381,12 @@
           "label": "Foligno",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1312,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0827-rogerius-cadwallador",
@@ -88298,11 +88417,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1610,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -89795,11 +89912,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1588,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -90161,11 +90276,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1240,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0826-raymundus-nonnatus"
@@ -91024,7 +91137,12 @@
             "IL"
           ]
         }
-      ]
+      ],
+      "date": {
+        "year": 1282,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0902-ioannes-maria-du-lau-et-socii",
@@ -91703,7 +91821,12 @@
           "label": "Catacombs of Santa Felicita",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 422,
+        "basis": "deposition",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0904-caletricus",
@@ -91850,6 +91973,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1574,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Carmagnola\" where the Latin has \"Caramániæ\" (Caramagna)."
       }
@@ -91958,11 +92086,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -92537,11 +92663,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -93998,6 +94122,11 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1929,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004": "Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk.",
         "martyrologium_romanum_2004_it_IT": "Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). Translation error: \"nella Guascogna\" (Gascony) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
@@ -95353,11 +95482,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -96066,7 +96193,12 @@
           "label": "Vienna",
           "country": "AT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1929,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0915-paschalis-penades-jornet",
@@ -96169,11 +96301,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1952,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -97022,7 +97152,12 @@
           "label": "Genoa",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1866,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0917-sigismundus-felix-felinski",
@@ -97883,7 +98018,12 @@
           "label": "Madrid",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1591,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0919-carolus-hyon-song-mun",
@@ -98263,7 +98403,8 @@
         }
       ],
       "date": {
-        "year": 1846,
+        "from": 1839,
+        "to": 1846,
         "basis": "death",
         "source": "wikidata"
       }
@@ -99363,7 +99504,12 @@
           "label": "Bologna",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1520,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0923-christophorus-et-socii",
@@ -99833,11 +99979,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1637,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -100274,7 +100418,12 @@
           "label": "Alpujarras",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1569,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0925-iosephus-bengoa-aranguren-et-socii",
@@ -100545,11 +100694,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1885,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -100597,7 +100744,12 @@
           "label": "Lima",
           "country": "PE"
         }
-      ]
+      ],
+      "date": {
+        "year": 1923,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana",
@@ -100791,11 +100943,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1660,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -101535,11 +101685,9 @@
         }
       ],
       "date": {
-        "from": 1401,
-        "to": 1500,
-        "circa": true,
+        "year": 1494,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -102203,11 +102351,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -102610,11 +102756,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1572,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -103049,7 +103193,12 @@
           "label": "Saronno",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1900,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1001-florentia-caerols-martinez",
@@ -103469,11 +103618,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Castalla\" where the Latin \"Castáliam\" means Castellón de la Plana."
@@ -104149,7 +104296,12 @@
           "label": "Bellreguard",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1936,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1005-martyres-trevirorum",
@@ -105165,11 +105317,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1858,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -108814,11 +108964,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1755,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004": "Source error: \"Muri in Lucánia\" (Muro Lucano, his birthplace); he died at Materdomini near Caposele in Campania."
@@ -109253,7 +109401,12 @@
           "label": "Suna",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1902,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1017-fidel-fuidio-rodriguez",
@@ -109605,7 +109758,7 @@
         }
       ],
       "date": {
-        "from": 1646,
+        "from": 1642,
         "to": 1649,
         "source": "wikidata"
       },
@@ -109954,11 +110107,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1595,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"dagli stenti e dalle torture\" (by privations and tortures) where the Latin has \"egestáte ærumnísque\" (by want and hardships); no torture is mentioned."
@@ -111454,11 +111605,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1794,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -111504,7 +111653,12 @@
           "label": "Reims",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1890,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta",
@@ -111949,6 +112103,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1915,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Luigi Guanella, blessed in the 2004 editions, was canonized on 23 October 2011."
     },
     {
@@ -112300,11 +112459,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Riccardo\" where the Latin has \"Recarédi\" (Recaredo)."
@@ -113448,6 +113605,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1860,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Gaetano Errico, blessed in the 2004 editions, was canonized on 12 October 2008.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: the place \"Secundiliáni\" (Secondigliano) is omitted; only \"Near Naples\" is given."
@@ -113939,9 +114101,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 671,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -114120,11 +114282,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1939,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -115415,6 +115575,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1319,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"chose a life\" where the Latin has \"vitam degit\" (led his life)."
       }
@@ -116961,6 +117126,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1917,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Vincenzo Grossi, blessed in the 2004 editions, was canonized on 18 October 2015."
     },
     {
@@ -118333,11 +118503,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1623,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -120958,7 +121126,12 @@
           "label": "Philippines",
           "country": "PH"
         }
-      ]
+      ],
+      "date": {
+        "year": 1634,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1117-lupus-sebastianus-hunot",
@@ -121020,6 +121193,11 @@
           "country": "PL"
         }
       ],
+      "date": {
+        "year": 1947,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Kapayivka\" where the Latin has \"Čapaivca\" (Chapaivka)."
       }
@@ -121318,6 +121496,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1902,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Ferentino\" where the Latin has \"Fabratériæ\" (Ceccano)."
       }
@@ -122365,7 +122548,12 @@
           "label": "Kahramanmaraş",
           "country": "TR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1895,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1122-thomas-reggio",
@@ -122890,11 +123078,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1927,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -123788,9 +123974,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1267,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -125089,11 +125275,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1936,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -125244,11 +125428,9 @@
         }
       ],
       "date": {
-        "from": 1101,
-        "to": 1200,
-        "circa": true,
+        "year": 1181,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -125387,7 +125569,12 @@
           "label": "Qu County",
           "country": "CN"
         }
-      ]
+      ],
+      "date": {
+        "year": 1823,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1130-iosephus-marchand",
@@ -127112,7 +127299,12 @@
           "label": "Mantua",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1495,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1205-ioannes-almond",
@@ -127691,7 +127883,12 @@
           "label": "Savona",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1880,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1208-conceptio-immaculata-beatae-mariae-virginis",
@@ -128480,11 +128677,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1591,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -128755,6 +128950,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1291,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Francis\" where the Latin has \"Franci\" (Franco)."
       }
@@ -129929,11 +130129,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1876,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -130409,6 +130607,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1903,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Riva presso Chieri\" where the Latin has \"Ripæ Albæ\" (Rivalba)."
       }
@@ -130473,6 +130676,11 @@
           "country": "TH"
         }
       ],
+      "date": {
+        "year": 1940,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"was taken\" omits the Latin \"dolóse\" (by deceit)."
       }
@@ -131315,6 +131523,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1831,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Vincenzo Romano, blessed in the 2004 editions, was canonized on 14 October 2018."
     },
     {
@@ -131497,7 +131710,12 @@
           "label": "Monte Cerignone",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1521,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1221-andreas-dung-lac-et-petrus-truong-van-thi",
@@ -132251,7 +132469,12 @@
           "label": "Italy",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1778,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1224-constantia-cerioli",
@@ -132271,7 +132494,12 @@
           "label": "Seriate",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1865,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1224-sarbelius-makhluf",
@@ -132293,11 +132521,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1898,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -133126,11 +133352,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1894,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "note": "Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009."
     },
@@ -133906,7 +134130,12 @@
           "label": "Palestrina",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1280,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:1230-eugenia-ravasco",
@@ -134251,11 +134480,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1876,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
