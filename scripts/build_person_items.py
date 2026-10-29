@@ -257,6 +257,11 @@ def evaluate(person, candidates):
         # (Pope Cornelius for Cornelius of the martyrs of Lyons), unless it died on this very day.
         failed = [LISTED_ONE_WORD.format(qid=passing[0]["wikidata"])]
         passing = []
+    elif _companion_one_word(person) and not _died_on(passing[0], person["day"]) and "group" not in passing[0]["evidence"]:
+        # The same for a companion of the text with no death-day rule to tell them apart (Luke the
+        # Evangelist for Lucas with Silvanus, Moses for Moyses with Bassianus).
+        failed = [COMPANION_ONE_WORD.format(qid=passing[0]["wikidata"])]
+        passing = []
     return {"auto": passing[0] if len(passing) == 1 else None, "failed": failed,
             "candidates": scored[:MAX_CANDIDATES]}
 
@@ -359,6 +364,18 @@ LISTED_ONE_WORD = ("a one-word name in a footnote list: the one candidate ({qid}
 
 def _listed_one_word(person):
     return _one_word(person["name"]) and person.get("where", "text") != "text"
+
+
+COMPANION_ONE_WORD = ("a one-word companion the subject does not name: the one candidate ({qid}) did not die on "
+                      "this eulogy's day, so it may be a namesake")
+
+
+def _companion_one_word(person):
+    """A one-word name of the text that the eulogy's subject does not name, in a eulogy whose
+    typology has no death-day rule (commemoratio, celebratio)."""
+    return (_one_word(person["name"]) and person.get("where", "text") == "text"
+            and "death" not in _required(person)
+            and name_key(person["name"]) not in {name_key(w) for w in re.findall(r"\w+", person.get("subject") or "")})
 
 
 def _died_on(candidate, day):
@@ -473,11 +490,12 @@ def _propose_pass(items, ops, index, client, force_review, keys, not_processed, 
             del items[person["eulogy"]]
         ops[key] = make_op(key, person, result, ops.get(key))
     # Its own automatic one-word matches in a footnote list that the date rule no longer passes
-    # (LISTED_ONE_WORD) are withdrawn too; a curator's decision never. A match whose item the
+    # (LISTED_ONE_WORD, COMPANION_ONE_WORD) are withdrawn too; a curator's decision never. A match whose item the
     # search did not return stays: its date was never checked.
     for key, person in index.items():
         e = items.get(person["eulogy"], {}).get(person_key(person))
-        if not (e and e["status"] == "auto" and _listed_one_word(person)):
+        if not (e and e["status"] == "auto"
+                and (_listed_one_word(person) or _companion_one_word(person))):
             continue
         try:
             candidates = gather(person, client, items)
