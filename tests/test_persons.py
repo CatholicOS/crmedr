@@ -155,6 +155,14 @@ class TextCompanionsTest(unittest.TestCase):
         names, uncertain = pt.text_companions("Sanctórum Ioánnis, Pauli diáconi Románi, Felícis et Leónis.", LEXICON)
         self.assertEqual((names, uncertain), (["Ioannes", "Paulus", "Felix", "Leo"], []))
 
+    def test_the_see_after_a_role_is_no_name(self):
+        # "Sadoth, epíscopi Seleucíæ Pérsidis": his see, not a companion; a kin word names one ("fílii eius Petri").
+        lexicon = LEXICON | {pt.name_key("Seleucia"): "Seleucia"}
+        names, _ = pt.text_companions("Sanctórum Pauli, epíscopi Seleucíæ, et Leónis, mártyrum.", lexicon)
+        self.assertEqual(names, ["Paulus", "Leo"])
+        names, _ = pt.text_companions("Sanctórum Pauli et fílii eius Petri, mártyrum.", LEXICON)
+        self.assertEqual(names, ["Paulus", "Petrus"])
+
     def test_a_place_adjective_in_ensis_is_no_name(self):
         # "Carpi, Thyatirénsis epíscopi": the bishop of Thyatira, not a person named Thyatirensis.
         # A subject puts the adjective in the lexicon ("Sancta Lydia Thyatirensis").
