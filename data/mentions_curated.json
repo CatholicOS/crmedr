@@ -750,6 +750,106 @@
           ]
         }
       ],
+      "mr:0217-septem-fundatores-servorum-mariae": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 61,
+          "end": 69,
+          "check": "ac51152e",
+          "name": "Bonfilius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 82,
+          "check": "6ba51a5b",
+          "name": "Bartholomaeus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 91,
+          "check": "5aa55de9",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 93,
+          "end": 102,
+          "check": "3e567f6d",
+          "name": "Benedictus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 113,
+          "check": "372fd08b",
+          "name": "Gerardinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 115,
+          "end": 123,
+          "check": "3923a5cd",
+          "name": "Ricoverus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 127,
+          "end": 133,
+          "check": "ea2deb5d",
+          "name": "Alexius",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 140,
+          "end": 149,
+          "check": "10f47528",
+          "qid": "Q2044",
+          "roles": [
+            {
+              "role": "mention"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 175,
+          "end": 190,
+          "check": "ca9512dc",
+          "qid": "Q31613524",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 332,
+          "end": 339,
+          "check": "68d0eaf1",
+          "name": "Alexius",
+          "qid": null
+        }
+      ],
       "mr:0219-conradus-confalonieri": [
         {
           "kind": "place",
@@ -1111,10 +1211,47 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 60,
+          "end": 68,
+          "check": "b1558b13",
+          "name": "Pausis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 70,
           "end": 76,
           "check": "d50360c3",
           "name": "Romulus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 78,
+          "end": 87,
+          "check": "08f6e486",
+          "name": "Alexander",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 109,
+          "check": "08f6e486",
+          "name": "Alexander",
+          "n": 2,
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 272,
+          "end": 278,
+          "check": "83c453a1",
+          "name": "Agapius",
           "qid": null
         },
         {
@@ -1376,6 +1513,201 @@
           "check": "001866e3",
           "name": "Ida Boloniensis",
           "qid": null
+        }
+      ],
+      "mr:0416-optatus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 37,
+          "check": "4264cdb6",
+          "qid": "Q10305",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 68,
+          "check": "392e7d24",
+          "name": "Optatus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 22,
+          "end": 30,
+          "check": "2f4547b9",
+          "name": "Lupercus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 32,
+          "end": 41,
+          "check": "2df51950",
+          "name": "Successus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 43,
+          "end": 52,
+          "check": "5ac0f788",
+          "name": "Martialis",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 54,
+          "end": 61,
+          "check": "cf3e63c3",
+          "name": "Urbanus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 63,
+          "end": 68,
+          "check": "c1d10bba",
+          "name": "Iulia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 70,
+          "end": 82,
+          "check": "f6d5d5da",
+          "name": "Quintilianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 84,
+          "end": 91,
+          "check": "1bb31d3f",
+          "name": "Publius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 93,
+          "end": 99,
+          "check": "01a6ed79",
+          "name": "Fronto",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 101,
+          "end": 106,
+          "check": "f6b6aad7",
+          "name": "Felix",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 108,
+          "end": 118,
+          "check": "45af47c8",
+          "name": "Cæcilianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 120,
+          "end": 127,
+          "check": "7d1d5712",
+          "name": "Evodius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 129,
+          "end": 139,
+          "check": "384785c3",
+          "name": "Primitivus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 141,
+          "end": 150,
+          "check": "dd0ea0ef",
+          "name": "Apodemius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 173,
+          "end": 182,
+          "check": "ac76cf69",
+          "name": "Saturninus",
+          "qid": null,
+          "others": [
+            {
+              "name": "Saturninus",
+              "n": 2,
+              "qid": null
+            },
+            {
+              "name": "Saturninus",
+              "n": 3,
+              "qid": null
+            },
+            {
+              "name": "Saturninus",
+              "n": 4,
+              "qid": null
+            }
+          ]
         }
       ],
       "mr:0417-robertus-casae": [
@@ -2725,6 +3057,142 @@
           "end": 251,
           "check": "c3afd929",
           "name": "Rufina",
+          "qid": null
+        }
+      ],
+      "mr:0717-martyres-scillitani": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 10,
+          "check": "942c5a22",
+          "qid": "Q6343",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 39,
+          "end": 52,
+          "check": "0a3cd0d5",
+          "qid": "Q2065025",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 61,
+          "end": 68,
+          "check": "d8dfa5d6",
+          "name": "Speratus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 79,
+          "check": "a81df3df",
+          "name": "Nartzalus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 81,
+          "end": 88,
+          "check": "b85ae134",
+          "name": "Cittinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 97,
+          "check": "c4c0a6eb",
+          "name": "Veturius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 106,
+          "check": "e158bf6a",
+          "name": "Felix",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 108,
+          "end": 116,
+          "check": "275e6ea2",
+          "name": "Aquilinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 118,
+          "end": 126,
+          "check": "8872ee03",
+          "name": "Laetantius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 128,
+          "end": 136,
+          "check": "20313895",
+          "name": "Ianuaria",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 138,
+          "end": 146,
+          "check": "5feeae53",
+          "name": "Generosa",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 148,
+          "end": 154,
+          "check": "55fa84ca",
+          "name": "Vestia",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 156,
+          "end": 162,
+          "check": "fb95b223",
+          "name": "Donata",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 166,
+          "end": 173,
+          "check": "399447a2",
+          "name": "Secunda",
           "qid": null
         }
       ],
@@ -6341,6 +6809,76 @@
           "qid": null
         }
       ],
+      "mr:1003-duo-ewaldi": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 12,
+          "check": "3569a2b1",
+          "qid": "Q3057629",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 40,
+          "end": 49,
+          "check": "158d4d4e",
+          "name": "Ewaldus Niger",
+          "qid": null,
+          "others": [
+            {
+              "name": "Ewaldus Albus",
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 76,
+          "check": "5eb617e9",
+          "name": "Ewaldus Niger",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 87,
+          "end": 91,
+          "check": "3ea94348",
+          "name": "Ewaldus Albus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 117,
+          "end": 122,
+          "check": "18c7850c",
+          "qid": "Q42406",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 131,
+          "end": 142,
+          "check": "12dc8615",
+          "name": "Willibrordus",
+          "qid": null
+        }
+      ],
       "mr:1003-faustus-et-socii": [
         {
           "kind": "place",
@@ -8623,10 +9161,29 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 83,
+          "end": 90,
+          "check": "9a9e5aec",
+          "name": "Eusebius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 100,
+          "check": "984f5f68",
+          "name": "Nestabius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 104,
           "end": 110,
           "check": "6f07e654",
           "name": "Zeno",
+          "n": 2,
           "qid": null
         }
       ]
@@ -10168,6 +10725,106 @@
           ]
         }
       ],
+      "mr:0217-septem-fundatores-servorum-mariae": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 62,
+          "check": "df565749",
+          "name": "Bonfilius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
+          "end": 74,
+          "check": "21ac5bc3",
+          "name": "Bartholomaeus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 84,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 86,
+          "end": 95,
+          "check": "94abb266",
+          "name": "Benedictus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 97,
+          "end": 106,
+          "check": "1ef81e39",
+          "name": "Gerardinus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 108,
+          "end": 116,
+          "check": "ce51c97e",
+          "name": "Ricoverus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 126,
+          "check": "5c35ca23",
+          "name": "Alexius",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 145,
+          "end": 152,
+          "check": "5c1a4924",
+          "qid": "Q2044",
+          "roles": [
+            {
+              "role": "mention"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 177,
+          "end": 190,
+          "check": "31265110",
+          "qid": "Q31613524",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 354,
+          "end": 361,
+          "check": "5c35ca23",
+          "name": "Alexius",
+          "qid": null
+        }
+      ],
       "mr:0227-iulianus-et-eunus": [
         {
           "kind": "place",
@@ -10806,6 +11463,34 @@
           "check": "0d4d97ff",
           "name": "Apodemius",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 197,
+          "end": 206,
+          "check": "ab46b5cf",
+          "name": "Saturninus",
+          "qid": null,
+          "others": [
+            {
+              "name": "Saturninus",
+              "n": 2,
+              "qid": null
+            },
+            {
+              "name": "Saturninus",
+              "n": 3,
+              "qid": null
+            },
+            {
+              "name": "Saturninus",
+              "n": 4,
+              "qid": null
+            }
+          ]
         }
       ],
       "mr:0501-torquatus-et-socii": [
@@ -20661,6 +21346,76 @@
           "qid": null
         }
       ],
+      "mr:1003-duo-ewaldi": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 34,
+          "check": "6e4ad7ec",
+          "qid": "Q3057629",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 68,
+          "check": "21bdd29d",
+          "name": "Ewaldus Niger",
+          "qid": null,
+          "others": [
+            {
+              "name": "Ewaldus Albus",
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 85,
+          "end": 89,
+          "check": "28478dc6",
+          "name": "Ewaldus Niger",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 105,
+          "check": "ff4e6aec",
+          "name": "Ewaldus Albus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 128,
+          "end": 135,
+          "check": "bb595fd3",
+          "qid": "Q42406",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 165,
+          "end": 176,
+          "check": "463caee2",
+          "name": "Willibrordus",
+          "qid": null
+        }
+      ],
       "mr:1003-faustus-et-socii": [
         {
           "kind": "place",
@@ -23124,6 +23879,40 @@
           "where": {
             "footnote": 1
           },
+          "start": 54,
+          "end": 62,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "n": 2,
+          "qid": null,
+          "others": [
+            {
+              "name": "Ioannes",
+              "n": 3,
+              "qid": null
+            },
+            {
+              "name": "Ioannes",
+              "n": 4,
+              "qid": null
+            },
+            {
+              "name": "Ioannes",
+              "n": 5,
+              "qid": null
+            },
+            {
+              "name": "Ioannes",
+              "n": 6,
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 73,
           "end": 78,
           "check": "f7f929a4",
@@ -23230,6 +24019,35 @@
           "check": "6bdc2115",
           "name": "Theopemptus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 213,
+          "end": 220,
+          "check": "19619bd7",
+          "name": "Georgius",
+          "n": 2,
+          "qid": null,
+          "others": [
+            {
+              "name": "Georgius",
+              "n": 3,
+              "qid": null
+            },
+            {
+              "name": "Georgius",
+              "n": 4,
+              "qid": null
+            },
+            {
+              "name": "Georgius",
+              "n": 5,
+              "qid": null
+            }
+          ]
         },
         {
           "kind": "person",
@@ -23421,6 +24239,30 @@
           "where": {
             "footnote": 1
           },
+          "start": 432,
+          "end": 440,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "n": 8,
+          "qid": null,
+          "others": [
+            {
+              "name": "Ioannes",
+              "n": 9,
+              "qid": null
+            },
+            {
+              "name": "Ioannes",
+              "n": 10,
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 451,
           "end": 458,
           "check": "19619bd7",
@@ -23506,6 +24348,34 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 107,
+          "end": 114,
+          "check": "0c270ce5",
+          "name": "Eusebius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 116,
+          "end": 124,
+          "check": "ba18346c",
+          "name": "Nestabius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 127,
+          "end": 133,
+          "check": "707a72a2",
+          "name": "Zeno",
+          "n": 2,
+          "qid": null
         }
       ]
     }

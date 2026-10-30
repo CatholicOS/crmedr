@@ -29,6 +29,12 @@ class DeathDateTest(unittest.TestCase):
     def test_year_precision(self):
         self.assertEqual(self.date(died(304)), {"year": 304})
 
+    def test_a_person_the_eulogy_only_mentions_does_not_date_it(self):
+        # The two Ewalds (c. 695) name Willibrord (d. 739), whom another eulogy commemorates.
+        persons = [{"name": "Ewaldus", "where": "text"}, {"name": "Willibrordus", "where": "text", "role": "mentioned"}]
+        items = {"Ewaldus": {"wikidata": "Q1", "status": "auto"}, "Willibrordus": {"wikidata": "Q2", "status": "auto"}}
+        self.assertEqual(d.death_date(persons, items, {"Q1": died(695), "Q2": died(739)}), {"year": 695})
+
     def test_decade(self):
         self.assertEqual(self.date(died(1930, "decade")), {"from": 1930, "to": 1939})
 

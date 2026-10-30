@@ -445,6 +445,43 @@
       "it": "Giuliano"
     }
   ],
+  "mr:0217-septem-fundatores-servorum-mariae": [
+    {
+      "name": "Bonfilius",
+      "where": "text",
+      "it": "Bonfilio"
+    },
+    {
+      "name": "Bartholomaeus",
+      "where": "text",
+      "it": "Bartolomeo"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "it": "Giovanni"
+    },
+    {
+      "name": "Benedictus",
+      "where": "text",
+      "it": "Benedetto"
+    },
+    {
+      "name": "Gerardinus",
+      "where": "text",
+      "it": "Gerardino"
+    },
+    {
+      "name": "Ricoverus",
+      "where": "text",
+      "it": "Ricovero"
+    },
+    {
+      "name": "Alexius",
+      "where": "text",
+      "it": "Alessio"
+    }
+  ],
   "mr:0218-ioannes-petrus-neel": [
     {
       "name": "Ioannes Petrus Neel",
@@ -1044,6 +1081,121 @@
       "where": {
         "footnote": 1
       }
+    }
+  ],
+  "mr:0416-optatus-et-socii": [
+    {
+      "name": "Optatus",
+      "where": "text"
+    },
+    {
+      "name": "Lupercus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Successus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Martialis",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Urbanus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Iulia",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Quintilianus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Publius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Fronto",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Felix",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Cæcilianus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Evodius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Primitivus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Apodemius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Saturninus",
+      "where": {
+        "footnote": 1
+      },
+      "it": "Saturnino"
+    },
+    {
+      "name": "Saturninus",
+      "n": 2,
+      "where": {
+        "footnote": 1
+      },
+      "it": "Saturnino"
+    },
+    {
+      "name": "Saturninus",
+      "n": 3,
+      "where": {
+        "footnote": 1
+      },
+      "it": "Saturnino"
+    },
+    {
+      "name": "Saturninus",
+      "n": 4,
+      "where": {
+        "footnote": 1
+      },
+      "it": "Saturnino"
     }
   ],
   "mr:0416-petrus-delepine-et-socii": [
@@ -3561,6 +3713,68 @@
       "where": "text"
     }
   ],
+  "mr:0717-martyres-scillitani": [
+    {
+      "name": "Speratus",
+      "where": "text",
+      "it": "Sperato"
+    },
+    {
+      "name": "Nartzalus",
+      "where": "text",
+      "it": "Nartzale"
+    },
+    {
+      "name": "Cittinus",
+      "where": "text",
+      "it": "Cittino"
+    },
+    {
+      "name": "Veturius",
+      "where": "text",
+      "it": "Veturio"
+    },
+    {
+      "name": "Felix",
+      "where": "text",
+      "it": "Felice"
+    },
+    {
+      "name": "Aquilinus",
+      "where": "text",
+      "it": "Aquilino"
+    },
+    {
+      "name": "Laetantius",
+      "where": "text",
+      "it": "Letanzio"
+    },
+    {
+      "name": "Ianuaria",
+      "where": "text",
+      "it": "Gennara"
+    },
+    {
+      "name": "Generosa",
+      "where": "text",
+      "it": "Generosa"
+    },
+    {
+      "name": "Vestia",
+      "where": "text",
+      "it": "Vestia"
+    },
+    {
+      "name": "Donata",
+      "where": "text",
+      "it": "Donata"
+    },
+    {
+      "name": "Secunda",
+      "where": "text",
+      "it": "Seconda"
+    }
+  ],
   "mr:0718-symphorosa-et-socii": [
     {
       "name": "Symphorosa",
@@ -3990,6 +4204,13 @@
     {
       "name": "Secunda",
       "where": "text"
+    }
+  ],
+  "mr:0801-septem-fratres-martyres-antiochiae": [
+    {
+      "name": "Eleazarus",
+      "where": "text",
+      "it": "Eleázaro"
     }
   ],
   "mr:0802-philippus-a-iesu-munarriz-azcona-et-socii": [
@@ -6942,6 +7163,22 @@
       "it": "Francesco"
     }
   ],
+  "mr:1003-duo-ewaldi": [
+    {
+      "name": "Ewaldus Niger",
+      "where": "text"
+    },
+    {
+      "name": "Ewaldus Albus",
+      "where": "text"
+    },
+    {
+      "name": "Willibrordus",
+      "where": "text",
+      "it": "Villibrordo",
+      "role": "mentioned"
+    }
+  ],
   "mr:1003-faustus-et-socii": [
     {
       "name": "Faustus",
@@ -7226,6 +7463,13 @@
       "name": "Iustus",
       "where": "text",
       "it": "Giusto"
+    }
+  ],
+  "mr:1021-virgines-coloniae-agrippinae": [
+    {
+      "name": "Ursula",
+      "where": "text",
+      "it": "Orsola"
     }
   ],
   "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta": [
@@ -7573,6 +7817,23 @@
     {
       "name": "Ioannes Thorne",
       "where": "text"
+    }
+  ],
+  "mr:1115-viginti-martyres-hipponis-regii": [
+    {
+      "name": "Fidentianus",
+      "where": "text",
+      "it": "Fidenziano"
+    },
+    {
+      "name": "Valeriana",
+      "where": "text",
+      "it": "Valeriana"
+    },
+    {
+      "name": "Victoria",
+      "where": "text",
+      "it": "Vittoria"
     }
   ],
   "mr:1118-leonardus-kimura-et-socii": [
@@ -8985,18 +9246,21 @@
     {
       "name": "Eusebius",
       "where": "text",
-      "it": "Eusebio"
+      "it": "Eusebio",
+      "role": "mentioned"
     },
     {
       "name": "Nestabius",
       "where": "text",
-      "it": "Nestabio"
+      "it": "Nestabio",
+      "role": "mentioned"
     },
     {
       "name": "Zeno",
       "n": 2,
       "where": "text",
-      "it": "Zenone"
+      "it": "Zenone",
+      "role": "mentioned"
     }
   ],
   "mr:1227-theodorus": [
