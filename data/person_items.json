@@ -5306,7 +5306,7 @@
         "status": "auto"
       }
     },
-    "mr:0301-albinus": {
+    "mr:0301-albinus-andegavi": {
       "Albinus": {
         "wikidata": "Q2722964",
         "status": "auto"
@@ -5318,16 +5318,58 @@
         "status": "auto"
       }
     },
+    "mr:0301-david-meneviae": {
+      "David": {
+        "wikidata": "Q331697",
+        "status": "reviewed"
+      }
+    },
     "mr:0301-felix-iii": {
       "Felix III": {
         "wikidata": "Q174029",
         "status": "auto"
       }
     },
-    "mr:0301-rudesindus": {
+    "mr:0301-ioanna-maria-bonomo": {
+      "Ioanna Maria Bonomo": {
+        "wikidata": "Q1696978",
+        "status": "reviewed"
+      }
+    },
+    "mr:0301-leo-vasconiae": {
+      "Leo": {
+        "wikidata": "Q2761571",
+        "status": "reviewed"
+      }
+    },
+    "mr:0301-leo-lucas": {
+      "Leo Lucas": {
+        "wikidata": "Q1132902",
+        "status": "reviewed"
+      }
+    },
+    "mr:0301-rudesindus-dumiensis": {
       "Rudesindus": {
         "wikidata": "Q2659457",
         "status": "auto"
+      }
+    },
+    "mr:0301-siviardus-anninsulensis": {
+      "Siviardus": {
+        "wikidata": "Q3485545",
+        "status": "reviewed"
+      }
+    },
+    "mr:0301-suitbertus-werdae": {
+      "Suitbertus": {
+        "wikidata": "Q560531",
+        "status": "reviewed"
+      }
+    },
+    "mr:0302-agnes-pragae": {
+      "Agnes": {
+        "wikidata": "Q394727",
+        "status": "reviewed"
       }
     },
     "mr:0302-angela-a-cruce": {
@@ -5342,10 +5384,34 @@
         "status": "auto"
       }
     },
-    "mr:0302-ceadda": {
+    "mr:0302-ceadda-lichfeldiae": {
       "Ceadda": {
         "wikidata": "Q742311",
         "status": "auto"
+      }
+    },
+    "mr:0302-lucas-casali-de-nicosia": {
+      "Lucas Casali de Nicosia": {
+        "wikidata": "Q3838072",
+        "status": "reviewed"
+      }
+    },
+    "mr:0302-troadius-neocaesareae": {
+      "Troadius": {
+        "wikidata": "Q2394074",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-anselmus-nonantulae": {
+      "Anselmus": {
+        "wikidata": "Q569615",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-arthellaidis-beneventi": {
+      "Arthellaidis": {
+        "wikidata": "Q4070172",
+        "status": "reviewed"
       }
     },
     "mr:0303-catharina-drexel": {
@@ -5354,10 +5420,42 @@
         "status": "auto"
       }
     },
-    "mr:0303-cunegundis": {
+    "mr:0303-cleonicus-et-eutropius": {
+      "Cleonicus": {
+        "wikidata": "Q3650618",
+        "status": "reviewed"
+      },
+      "Eutropius": {
+        "wikidata": "Q9256456",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-cunegundis-confugiae": {
       "Cunegundis": {
         "wikidata": "Q61620",
         "status": "auto"
+      }
+    },
+    "mr:0303-emetherius-et-cheledonius": {
+      "Cheledonius": {
+        "wikidata": "Q17143181",
+        "status": "reviewed"
+      },
+      "Emetherius": {
+        "wikidata": "Q11681449",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-fridericus-frisiae": {
+      "Fridericus": {
+        "wikidata": "Q2341775",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-iacobinus-de-canepacci": {
+      "Iacobinus de Canepacci": {
+        "wikidata": "Q23770637",
+        "status": "reviewed"
       }
     },
     "mr:0303-ignatia-verzeri": {
@@ -5376,6 +5474,24 @@
       "Liberatus Weiss": {
         "wikidata": "Q1822920",
         "status": "auto"
+      },
+      "Michael Pio Fasolus da Zerbo": {
+        "wikidata": "Q11779117",
+        "status": "reviewed"
+      },
+      "Samuel Marzoratus": {
+        "wikidata": "Q9333413",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-marinus-et-asterius": {
+      "Asterius": {
+        "wikidata": "Q4810689",
+        "status": "reviewed"
+      },
+      "Marinus": {
+        "wikidata": "Q1083918",
+        "status": "reviewed"
       }
     },
     "mr:0303-petrus-geremia": {
@@ -5384,13 +5500,37 @@
         "status": "auto"
       }
     },
-    "mr:0304-basinus": {
+    "mr:0303-petrus-renatus-rogue": {
+      "Petrus Renatus Rogue": {
+        "wikidata": "Q3383495",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-titianus-brixiae": {
+      "Titianus": {
+        "wikidata": "Q7809992",
+        "status": "reviewed"
+      }
+    },
+    "mr:0303-winwaloeus-landevenecensis": {
+      "Winwaloeus": {
+        "wikidata": "Q2361972",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-appianus-papiensis": {
+      "Appianus": {
+        "wikidata": "Q141236353",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-basinus-trevirorum": {
       "Basinus": {
         "wikidata": "Q2025456",
         "status": "auto"
       }
     },
-    "mr:0304-casimirus": {
+    "mr:0304-casimirus-grodnae": {
       "Casimirus": {
         "wikidata": "Q312057",
         "status": "auto"
@@ -5416,28 +5556,234 @@
         "status": "auto"
       }
     },
+    "mr:0304-humbertus-camberii": {
+      "Humbertus": {
+        "wikidata": "Q664561",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-ioannes-antonius-farina": {
+      "Ioannes Antonius Farina": {
+        "wikidata": "Q1525741",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-miecislaus-bohatkiewicz-et-socii": {
+      "Ladislaus Maćkowiak": {
+        "wikidata": "Q4286035",
+        "status": "reviewed"
+      },
+      "Miecislaus Bohatkiewicz": {
+        "wikidata": "Q4089037",
+        "status": "reviewed"
+      },
+      "Stanislaus Pyrtek": {
+        "wikidata": "Q4385335",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-petrus-policastrensis": {
+      "Petrus": {
+        "wikidata": "Q2628665",
+        "status": "reviewed"
+      }
+    },
+    "mr:0304-photius-et-socii": {
+      "Archelaus": {
+        "wikidata": "Q141937674",
+        "status": "reviewed"
+      },
+      "Photius": {
+        "wikidata": "Q136616290",
+        "status": "reviewed"
+      },
+      "Quirinus": {
+        "wikidata": "Q141937675",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-carolus-caietanus-calosirto": {
+      "Carolus Caietanus Calosirto": {
+        "wikidata": "Q1093725",
+        "status": "reviewed"
+      }
+    },
     "mr:0305-christophorus-macassoli": {
       "Christophorus Macassoli": {
         "wikidata": "Q64031817",
         "status": "auto"
       }
     },
-    "mr:0306-chrodegangus": {
+    "mr:0305-conon-pamphyliae": {
+      "Conon": {
+        "wikidata": "Q2180834",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-gerasimus-iordanis": {
+      "Gerasimus": {
+        "wikidata": "Q1358575",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-hadrianus-caesareae": {
+      "Hadrianus": {
+        "wikidata": "Q2825287",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-ioannes-kostistik": {
+      "Ioannes Kostistik": {
+        "wikidata": "Q6181021",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-kieranus-sagiriae": {
+      "Kieranus": {
+        "wikidata": "Q2280421",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-lucius-i": {
+      "Lucius": {
+        "wikidata": "Q132793",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-phoca-sinopes": {
+      "Phoca": {
+        "wikidata": "Q943937",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-theophilus-caesariensis": {
+      "Theophilus": {
+        "wikidata": "Q2092277",
+        "status": "reviewed"
+      }
+    },
+    "mr:0305-virgilius-arelatis": {
+      "Virgilius": {
+        "wikidata": "Q2463401",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-chrodegangus-metarum": {
       "Chrodegangus": {
         "wikidata": "Q861511",
         "status": "auto"
       }
     },
-    "mr:0306-ollegarius": {
+    "mr:0306-coleta-boylet": {
+      "Coleta Boylet": {
+        "wikidata": "Q768098",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-evagrius-constantinopolitanus": {
+      "Evagrius": {
+        "wikidata": "Q1293334",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-fridolinus-saconii": {
+      "Fridolinus": {
+        "wikidata": "Q736229",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-iulianus-toleti": {
+      "Iulianus": {
+        "wikidata": "Q722563",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-marcianus-derthonae": {
+      "Marcianus": {
+        "wikidata": "Q303640",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-ollegarius-tarraconensis": {
       "Ollegarius": {
         "wikidata": "Q1633681",
         "status": "auto"
+      }
+    },
+    "mr:0306-quiriacus-trevirorum": {
+      "Quiriacus": {
+        "wikidata": "Q111697808",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-rosa-viterbii": {
+      "Rosa": {
+        "wikidata": "Q268141",
+        "status": "reviewed"
+      }
+    },
+    "mr:0306-victorinus-nicomediae": {
+      "Victorinus": {
+        "wikidata": "Q141937676",
+        "status": "reviewed"
       }
     },
     "mr:0307-ardo-smaragdus": {
       "Ardo Smaragdus": {
         "wikidata": "Q1238544",
         "status": "auto"
+      }
+    },
+    "mr:0307-basilius-et-socii": {
+      "Aetherius": {
+        "wikidata": "Q20960005",
+        "status": "reviewed"
+      },
+      "Agathodorus": {
+        "wikidata": "Q20960007",
+        "status": "reviewed"
+      },
+      "Basilius": {
+        "wikidata": "Q107205598",
+        "status": "reviewed"
+      },
+      "Capito": {
+        "wikidata": "Q11912230",
+        "status": "reviewed"
+      },
+      "Elpidius": {
+        "wikidata": "Q20922603",
+        "status": "reviewed"
+      },
+      "Ephraem": {
+        "wikidata": "Q5382380",
+        "status": "reviewed"
+      },
+      "Eugenius": {
+        "wikidata": "Q20923129",
+        "status": "reviewed"
+      }
+    },
+    "mr:0307-eubulius-caesareae": {
+      "Eubulius": {
+        "wikidata": "Q1958309",
+        "status": "reviewed"
+      },
+      "Hadrianus": {
+        "wikidata": "Q2825287",
+        "status": "reviewed"
+      }
+    },
+    "mr:0307-gaudiosus-brixiae": {
+      "Gaudiosus": {
+        "wikidata": "Q65147130",
+        "status": "reviewed"
+      }
+    },
+    "mr:0307-ioannes-baptista-nam-chong-sam": {
+      "Ioannes Baptista Nam Chong Sam": {
+        "wikidata": "Q10856080",
+        "status": "reviewed"
       }
     },
     "mr:0307-ioannes-larke-et-ioannes-ireland": {
@@ -5448,12 +5794,28 @@
       "Germanus Gardiner": {
         "wikidata": "Q5551107",
         "status": "auto"
+      },
+      "Ioannes Ireland": {
+        "wikidata": "Q141937677",
+        "status": "reviewed"
       }
     },
     "mr:0307-leonida-fedorov": {
       "Leonida Fedorov": {
         "wikidata": "Q1390781",
         "status": "auto"
+      }
+    },
+    "mr:0307-paulus-prusae": {
+      "Paulus": {
+        "wikidata": "Q141937678",
+        "status": "reviewed"
+      }
+    },
+    "mr:0307-paulus-simplex": {
+      "Paulus Simplex": {
+        "wikidata": "Q3773019",
+        "status": "reviewed"
       }
     },
     "mr:0307-perpetua-et-felicitas": {
@@ -5466,10 +5828,40 @@
         "status": "auto"
       }
     },
+    "mr:0307-satyrus-et-socii": {
+      "Revocatus": {
+        "wikidata": "Q13124758",
+        "status": "reviewed"
+      },
+      "Saturninus": {
+        "wikidata": "Q13124846",
+        "status": "reviewed"
+      },
+      "Satyrus": {
+        "wikidata": "Q20605880",
+        "status": "reviewed"
+      },
+      "Secundinus": {
+        "wikidata": "Q141937679",
+        "status": "reviewed"
+      }
+    },
     "mr:0307-simeon-berneux-et-socii": {
       "Ludovicus Beaulieu": {
         "wikidata": "Q3261204",
         "status": "auto"
+      },
+      "Iustus Ranfer de Bretenières": {
+        "wikidata": "Q3190300",
+        "status": "reviewed"
+      },
+      "Petrus Henricus Dorie": {
+        "wikidata": "Q2061588",
+        "status": "reviewed"
+      },
+      "Simeon Berneux": {
+        "wikidata": "Q1071801",
+        "status": "reviewed"
       }
     },
     "mr:0307-teresia-margarita-redi": {
@@ -5484,16 +5876,86 @@
         "status": "auto"
       }
     },
-    "mr:0308-felix": {
+    "mr:0308-apollonius-et-philemon": {
+      "Apollonius": {
+        "wikidata": "Q116026020",
+        "status": "reviewed"
+      },
+      "Philemon": {
+        "wikidata": "Q7183028",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-duthacus-rossensis": {
+      "Duthacus": {
+        "wikidata": "Q7401187",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-faustinus-miguez": {
+      "Faustinus Miguez": {
+        "wikidata": "Q3740324",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-felix-dumnoci": {
       "Felix": {
         "wikidata": "Q1357293",
         "status": "auto"
       }
     },
-    "mr:0308-stephanus": {
+    "mr:0308-humfridus-taruannensis": {
+      "Humfridus": {
+        "wikidata": "Q4152128",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-ioannes-de-deo": {
+      "Ioannes de Deo": {
+        "wikidata": "Q320171",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-litiphridus-papiae": {
+      "Litiphridus": {
+        "wikidata": "Q30234180",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-pontius-carthaginensis": {
+      "Pontius": {
+        "wikidata": "Q713373",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-provinus-comi": {
+      "Provinus": {
+        "wikidata": "Q3922294",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-senanus-cathensis": {
+      "Senanus": {
+        "wikidata": "Q2480928",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-stephanus-obazinae": {
       "Stephanus": {
         "wikidata": "Q3065847",
         "status": "auto"
+      }
+    },
+    "mr:0308-theophilactus-nicomediae": {
+      "Theophilactus": {
+        "wikidata": "Q961838",
+        "status": "reviewed"
+      }
+    },
+    "mr:0308-veremundus-hyrachensis": {
+      "Veremundus": {
+        "wikidata": "Q9093014",
+        "status": "reviewed"
       }
     },
     "mr:0308-vincentius-kadlubek": {
@@ -5502,10 +5964,72 @@
         "status": "auto"
       }
     },
+    "mr:0309-bruno-querfurtensis": {
+      "Bruno": {
+        "wikidata": "Q319108",
+        "status": "reviewed"
+      }
+    },
+    "mr:0309-catharina-bononiae": {
+      "Catharina": {
+        "wikidata": "Q455252",
+        "status": "reviewed"
+      }
+    },
     "mr:0309-dominicus-savio": {
       "Dominicus Savio": {
         "wikidata": "Q318502",
         "status": "auto"
+      }
+    },
+    "mr:0309-francisca-romae": {
+      "Francisca": {
+        "wikidata": "Q239129",
+        "status": "reviewed"
+      }
+    },
+    "mr:0309-pacianus-barcinonis": {
+      "Pacianus": {
+        "wikidata": "Q920309",
+        "status": "reviewed"
+      }
+    },
+    "mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un": {
+      "Ioannes Baptista Chon Chang Un": {
+        "wikidata": "Q11717203",
+        "status": "reviewed"
+      },
+      "Petrus Choe Hyong": {
+        "wikidata": "Q11817363",
+        "status": "reviewed"
+      }
+    },
+    "mr:0309-vitalis-de-castronovo": {
+      "Vitalis de Castronovo": {
+        "wikidata": "Q4014939",
+        "status": "reviewed"
+      }
+    },
+    "mr:0310-attala-bobiensis": {
+      "Attala": {
+        "wikidata": "Q593475",
+        "status": "reviewed"
+      }
+    },
+    "mr:0310-caius-et-alexander": {
+      "Alexander": {
+        "wikidata": "Q141937680",
+        "status": "reviewed"
+      },
+      "Caius": {
+        "wikidata": "Q141937681",
+        "status": "reviewed"
+      }
+    },
+    "mr:0310-droctoveus-parisiorum": {
+      "Droctoveus": {
+        "wikidata": "Q3715474",
+        "status": "reviewed"
       }
     },
     "mr:0310-ioannes-ogilvie": {
@@ -5514,16 +6038,70 @@
         "status": "auto"
       }
     },
+    "mr:0310-macarius-hierosolymitanus": {
+      "Macarius": {
+        "wikidata": "Q929275",
+        "status": "reviewed"
+      }
+    },
     "mr:0310-maria-eugenia-milleret-de-brou": {
       "Maria Eugenia Milleret de Brou": {
         "wikidata": "Q269780",
         "status": "auto"
       }
     },
-    "mr:0310-simplicius": {
+    "mr:0310-matthaeus-elias-nieves-del-castillo": {
+      "Matthaeus Elias Nieves del Castillo": {
+        "wikidata": "Q3051935",
+        "status": "reviewed"
+      }
+    },
+    "mr:0310-simplicius-papa": {
       "Simplicius": {
         "wikidata": "Q168741",
         "status": "auto"
+      }
+    },
+    "mr:0310-victor-africae": {
+      "Victor": {
+        "wikidata": "Q141937682",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-benedictus-mediolani": {
+      "Benedictus": {
+        "wikidata": "Q1153993",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-constantinus-scotiae": {
+      "Constantinus": {
+        "wikidata": "Q3695454",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-dominicus-cam": {
+      "Dominicus Cam": {
+        "wikidata": "Q9209752",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-eulogius-cordubae": {
+      "Eulogius": {
+        "wikidata": "Q246000",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-ioannes-baptista-de-fabriano": {
+      "Ioannes Baptista de Fabriano": {
+        "wikidata": "Q320332",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-ioannes-kearney": {
+      "Ioannes Kearney": {
+        "wikidata": "Q141937684",
+        "status": "reviewed"
       }
     },
     "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong": {
@@ -5536,13 +6114,41 @@
         "status": "auto"
       }
     },
+    "mr:0311-oengus-culdeus": {
+      "Oengus Culdeus": {
+        "wikidata": "Q4531809",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-pionius-smyrnae": {
+      "Pionius": {
+        "wikidata": "Q1890921",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-sophronius-hierosolymorum": {
+      "Sophronius": {
+        "wikidata": "Q317773",
+        "status": "reviewed"
+      }
+    },
     "mr:0311-thomas-atkinson": {
       "Thomas Atkinson": {
         "wikidata": "Q16151199",
         "status": "auto"
       }
     },
-    "mr:0311-vindicianus": {
+    "mr:0311-trophimus-et-thalus": {
+      "Thalus": {
+        "wikidata": "Q141937685",
+        "status": "reviewed"
+      },
+      "Trophimus": {
+        "wikidata": "Q141937686",
+        "status": "reviewed"
+      }
+    },
+    "mr:0311-vindicianus-cameracensis": {
       "Vindicianus": {
         "wikidata": "Q3559991",
         "status": "auto"
@@ -5558,6 +6164,24 @@
       "Angela Salawa": {
         "wikidata": "Q4762545",
         "status": "auto"
+      }
+    },
+    "mr:0312-elphegus-vintoniae": {
+      "Elphegus": {
+        "wikidata": "Q271361",
+        "status": "reviewed"
+      }
+    },
+    "mr:0312-fina-sancti-geminiani": {
+      "Fina": {
+        "wikidata": "Q467197",
+        "status": "reviewed"
+      }
+    },
+    "mr:0312-gregorius-i-magnus": {
+      "Gregorius I Magnus": {
+        "wikidata": "Q42827",
+        "status": "reviewed"
       }
     },
     "mr:0312-hieronymus-gherarducci": {
@@ -5578,7 +6202,13 @@
         "status": "auto"
       }
     },
-    "mr:0312-maximilianus": {
+    "mr:0312-iustina-francucci-bezzoli": {
+      "Iustina Francucci Bezzoli": {
+        "wikidata": "Q3190521",
+        "status": "reviewed"
+      }
+    },
+    "mr:0312-maximilianus-thevestis": {
       "Maximilianus": {
         "wikidata": "Q1737567",
         "status": "auto"
@@ -5614,10 +6244,120 @@
         "status": "reviewed"
       }
     },
+    "mr:0312-paulus-aurelianus": {
+      "Paulus Aurelianus": {
+        "wikidata": "Q634405",
+        "status": "reviewed"
+      }
+    },
+    "mr:0312-petrus-nicomediae": {
+      "Dorotheus": {
+        "wikidata": "Q131543206",
+        "status": "reviewed"
+      },
+      "Gorgonius": {
+        "wikidata": "Q131543166",
+        "status": "reviewed"
+      },
+      "Petrus": {
+        "wikidata": "Q131543176",
+        "status": "reviewed"
+      }
+    },
+    "mr:0312-theophanes-chronographus": {
+      "Theophanes Chronographus": {
+        "wikidata": "Q297584",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-agnellus-de-pisis": {
+      "Agnellus de Pisis": {
+        "wikidata": "Q394406",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-ansovinus-camerini": {
+      "Ansovinus": {
+        "wikidata": "Q570458",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-christina-persidis": {
+      "Christina": {
+        "wikidata": "Q7401109",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-eldradus-novaliciensis": {
+      "Eldradus": {
+        "wikidata": "Q2182041",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-francisca-trehet": {
+      "Francisca Trehet": {
+        "wikidata": "Q23939690",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-leander-hispali": {
+      "Leander": {
+        "wikidata": "Q577125",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-macedonius-et-socii": {
+      "Macedonius": {
+        "wikidata": "Q141937687",
+        "status": "reviewed"
+      },
+      "Modesta": {
+        "wikidata": "Q141937688",
+        "status": "reviewed"
+      },
+      "Patricia": {
+        "wikidata": "Q11813585",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-petrus-secundus": {
+      "Petrus Secundus": {
+        "wikidata": "Q3903964",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-pientius-pictavorum": {
+      "Pientius": {
+        "wikidata": "Q67214673",
+        "status": "reviewed"
+      }
+    },
     "mr:0313-rudericus-et-salomon": {
       "Rudericus": {
         "wikidata": "Q2635887",
         "status": "auto"
+      },
+      "Salomon": {
+        "wikidata": "Q141937689",
+        "status": "reviewed"
+      }
+    },
+    "mr:0313-sabinus-hermopoli": {
+      "Sabinus": {
+        "wikidata": "Q7396202",
+        "status": "reviewed"
+      }
+    },
+    "mr:0314-alexander-pidnae": {
+      "Alexander": {
+        "wikidata": "Q59685636",
+        "status": "reviewed"
+      }
+    },
+    "mr:0314-eva-montis-cornelius": {
+      "Eva Montis Cornelius": {
+        "wikidata": "Q3577312",
+        "status": "reviewed"
       }
     },
     "mr:0314-iacobus-cusmano": {
@@ -5626,10 +6366,28 @@
         "status": "auto"
       }
     },
-    "mr:0314-leobinus": {
+    "mr:0314-lazarus-mediolani": {
+      "Lazarus": {
+        "wikidata": "Q3828269",
+        "status": "reviewed"
+      }
+    },
+    "mr:0314-leobinus-carnuti": {
       "Leobinus": {
         "wikidata": "Q782770",
         "status": "auto"
+      }
+    },
+    "mr:0314-mathildis-quedlinburgi": {
+      "Mathildis": {
+        "wikidata": "Q234246",
+        "status": "reviewed"
+      }
+    },
+    "mr:0314-paulina-fuldensis": {
+      "Paulina": {
+        "wikidata": "Q95008691",
+        "status": "reviewed"
       }
     },
     "mr:0315-artemidis-zatti": {
@@ -5644,10 +6402,26 @@
         "status": "auto"
       }
     },
-    "mr:0315-leocritia": {
+    "mr:0315-gulielmus-hart": {
+      "Gulielmus Hart": {
+        "wikidata": "Q3568685",
+        "status": "reviewed"
+      }
+    },
+    "mr:0315-ioannes-adalbertus-balicki": {
+      "Ioannes Adalbertus Balicki": {
+        "wikidata": "Q4076630",
+        "status": "reviewed"
+      }
+    },
+    "mr:0315-leocritia-cordubae": {
       "Leocritia": {
         "wikidata": "Q30243354",
         "status": "auto"
+      },
+      "Eulogius": {
+        "wikidata": "Q246000",
+        "status": "reviewed"
       }
     },
     "mr:0315-ludovica-de-marillac": {
@@ -5656,16 +6430,54 @@
         "status": "auto"
       }
     },
-    "mr:0315-zacharias": {
+    "mr:0315-menignus-parii": {
+      "Menignus": {
+        "wikidata": "Q134711353",
+        "status": "reviewed"
+      }
+    },
+    "mr:0315-sisebutus-caradignensis": {
+      "Sisebutus": {
+        "wikidata": "Q5678123",
+        "status": "reviewed"
+      }
+    },
+    "mr:0315-zacharias-papa": {
       "Zacharias": {
         "wikidata": "Q139467",
         "status": "auto"
       }
     },
-    "mr:0316-heribertus": {
+    "mr:0316-eusebia-hammaticensis": {
+      "Eusebia": {
+        "wikidata": "Q959947",
+        "status": "reviewed"
+      }
+    },
+    "mr:0316-heribertus-coloniae-agrippinae": {
       "Heribertus": {
         "wikidata": "Q660370",
         "status": "auto"
+      }
+    },
+    "mr:0316-hilarius-et-tatianus": {
+      "Hilarius": {
+        "wikidata": "Q183254",
+        "status": "reviewed"
+      },
+      "Tatianus": {
+        "wikidata": "Q3981688",
+        "status": "reviewed"
+      }
+    },
+    "mr:0316-ioannes-amias-et-robertus-dalby": {
+      "Ioannes Amias": {
+        "wikidata": "Q6218904",
+        "status": "reviewed"
+      },
+      "Robertus Dalby": {
+        "wikidata": "Q7343359",
+        "status": "reviewed"
       }
     },
     "mr:0316-ioannes-de-brebeuf": {
@@ -5680,16 +6492,46 @@
         "status": "auto"
       }
     },
+    "mr:0316-iulianus-anazarbi": {
+      "Iulianus": {
+        "wikidata": "Q724454",
+        "status": "reviewed"
+      }
+    },
+    "mr:0316-papa-seleuciae": {
+      "Papa": {
+        "wikidata": "Q141937690",
+        "status": "reviewed"
+      }
+    },
+    "mr:0317-agricola-cabilloni": {
+      "Agricola": {
+        "wikidata": "Q2827145",
+        "status": "reviewed"
+      }
+    },
+    "mr:0317-conradus-medunei": {
+      "Conradus": {
+        "wikidata": "Q788806",
+        "status": "reviewed"
+      }
+    },
     "mr:0317-gabriel-lalemant": {
       "Gabriel Lalemant": {
         "wikidata": "Q957622",
         "status": "auto"
       }
     },
-    "mr:0317-gertrudis": {
+    "mr:0317-gertrudis-nivellae": {
       "Gertrudis": {
         "wikidata": "Q235619",
         "status": "auto"
+      }
+    },
+    "mr:0317-ioannes-nepomucenus-zegri-y-moreno": {
+      "Ioannes Nepomucenus Zegri y Moreno": {
+        "wikidata": "Q3810892",
+        "status": "reviewed"
       }
     },
     "mr:0317-ioannes-sarkander": {
@@ -5698,16 +6540,74 @@
         "status": "auto"
       }
     },
-    "mr:0317-patricius": {
+    "mr:0317-patricius-episcopus": {
       "Patricius": {
         "wikidata": "Q165479",
         "status": "auto"
       }
     },
-    "mr:0318-eduardus": {
+    "mr:0317-paulus-cypri": {
+      "Paulus": {
+        "wikidata": "Q141937691",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-alexander-hierosolymorum": {
+      "Alexander": {
+        "wikidata": "Q724702",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-amata-le-bouteiller": {
+      "Amata Le Bouteiller": {
+        "wikidata": "Q3295200",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-anselmus-lucensis": {
+      "Anselmus": {
+        "wikidata": "Q1040234",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-braulio-caesaraugustae": {
+      "Braulio": {
+        "wikidata": "Q849117",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-cyrillus-hierosolymitanus": {
+      "Cyrillus": {
+        "wikidata": "Q298654",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-eduardus-warehami": {
       "Eduardus": {
         "wikidata": "Q192920",
         "status": "auto"
+      }
+    },
+    "mr:0318-frigdianus-lucae": {
+      "Frigdianus": {
+        "wikidata": "Q1347495",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-ioannes-thules-et-rogerius-wrenno": {
+      "Ioannes Thules": {
+        "wikidata": "Q6260783",
+        "status": "reviewed"
+      },
+      "Rogerius Wrenno": {
+        "wikidata": "Q114606824",
+        "status": "reviewed"
+      }
+    },
+    "mr:0318-leobardus-turonum": {
+      "Leobardus": {
+        "wikidata": "Q22205330",
+        "status": "reviewed"
       }
     },
     "mr:0318-salvator-de-horta": {
@@ -5722,10 +6622,22 @@
         "status": "auto"
       }
     },
+    "mr:0319-ioannes-parranensis": {
+      "Ioannes": {
+        "wikidata": "Q141937692",
+        "status": "reviewed"
+      }
+    },
     "mr:0319-ioannes-de-parma": {
       "Ioannes de Parma": {
         "wikidata": "Q1698771",
         "status": "auto"
+      }
+    },
+    "mr:0319-ioseph-sponsus-mariae": {
+      "Ioseph": {
+        "wikidata": "Q128267",
+        "status": "reviewed"
       }
     },
     "mr:0319-isnardus-de-chiampo": {
@@ -5746,16 +6658,52 @@
         "status": "auto"
       }
     },
-    "mr:0320-archippus": {
+    "mr:0319-narcissus-turchan": {
+      "Narcissus Turchan": {
+        "wikidata": "Q4466456",
+        "status": "reviewed"
+      }
+    },
+    "mr:0319-sibyllina-biscossi": {
+      "Sibyllina Biscossi": {
+        "wikidata": "Q768577",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-ambrosius-sansedoni": {
+      "Ambrosius Sansedoni": {
+        "wikidata": "Q4741879",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-archippus-commilito": {
       "Archippus": {
         "wikidata": "Q276575",
         "status": "auto"
       }
     },
-    "mr:0320-cuthbertus": {
+    "mr:0320-baptista-spagnoli": {
+      "Baptista Spagnoli": {
+        "wikidata": "Q810973",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-cuthbertus-lindisfarnensis": {
       "Cuthbertus": {
         "wikidata": "Q504518",
         "status": "auto"
+      }
+    },
+    "mr:0320-franciscus-a-iesu-maria-ioseph": {
+      "Franciscus a Iesu Maria Ioseph": {
+        "wikidata": "Q921193",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-hippolytus-galantini": {
+      "Hippolytus Galantini": {
+        "wikidata": "Q2097085",
+        "status": "reviewed"
       }
     },
     "mr:0320-ioanna-veron": {
@@ -5776,7 +6724,41 @@
         "status": "auto"
       }
     },
-    "mr:0320-vulframnus": {
+    "mr:0320-maria-iosepha-a-corde-iesu": {
+      "Maria Iosepha a Corde Iesu": {
+        "wikidata": "Q1896004",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-martinus-bracarensis": {
+      "Martinus": {
+        "wikidata": "Q450361",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-nicetas-apolloniae": {
+      "Nicetas": {
+        "wikidata": "Q133188325",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-paulus-et-cyrillus": {
+      "Cyrillus": {
+        "wikidata": "Q141937693",
+        "status": "reviewed"
+      },
+      "Paulus": {
+        "wikidata": "Q141937694",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-urbicius-metarum": {
+      "Urbicius": {
+        "wikidata": "Q1822046",
+        "status": "reviewed"
+      }
+    },
+    "mr:0320-vulframnus-senonensis": {
       "Vulframnus": {
         "wikidata": "Q743830",
         "status": "auto"
@@ -5788,10 +6770,74 @@
         "status": "auto"
       }
     },
+    "mr:0321-benedicta-cambiagio-frassinello": {
+      "Benedicta Cambiagio Frassinello": {
+        "wikidata": "Q441046",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-benedictus-casini": {
+      "Benedictus": {
+        "wikidata": "Q44265",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-endeus-araniensis": {
+      "Endeus": {
+        "wikidata": "Q3053971",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-iacobus-confessor": {
+      "Iacobus Confessor": {
+        "wikidata": "Q126334352",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-ioannes-valentiae": {
+      "Ioannes": {
+        "wikidata": "Q52420372",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-lupicinus-iurensis": {
+      "Lupicinus": {
+        "wikidata": "Q1877602",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-matthaeus-flathers": {
+      "Matthaeus Flathers": {
+        "wikidata": "Q6787013",
+        "status": "reviewed"
+      }
+    },
     "mr:0321-nicolaus-de-flue": {
       "Nicolaus de Flue": {
         "wikidata": "Q115550",
         "status": "auto"
+      }
+    },
+    "mr:0321-serapion-aegypti": {
+      "Serapion": {
+        "wikidata": "Q3955787",
+        "status": "reviewed"
+      }
+    },
+    "mr:0321-thomas-pilchard": {
+      "Gulielmus Pike": {
+        "wikidata": "Q8016900",
+        "status": "reviewed"
+      },
+      "Thomas Pilchard": {
+        "wikidata": "Q7793170",
+        "status": "reviewed"
+      }
+    },
+    "mr:0322-basilius-ancyrae": {
+      "Basilius": {
+        "wikidata": "Q14110381",
+        "status": "reviewed"
       }
     },
     "mr:0322-benvenutus-scotivoli": {
@@ -5800,22 +6846,78 @@
         "status": "auto"
       }
     },
-    "mr:0322-epaphroditus": {
+    "mr:0322-callinicus-et-basilissa": {
+      "Basilissa": {
+        "wikidata": "Q116026234",
+        "status": "reviewed"
+      },
+      "Callinicus": {
+        "wikidata": "Q116026233",
+        "status": "reviewed"
+      }
+    },
+    "mr:0322-epaphroditus-discipulus": {
       "Epaphroditus": {
         "wikidata": "Q724476",
         "status": "auto"
+      }
+    },
+    "mr:0322-franciscus-chartier": {
+      "Franciscus Chartier": {
+        "wikidata": "Q141937695",
+        "status": "reviewed"
+      }
+    },
+    "mr:0322-lea-romae": {
+      "Lea": {
+        "wikidata": "Q273987",
+        "status": "reviewed"
       }
     },
     "mr:0322-marianus-gorecki-et-bronislaus-komorowski": {
       "Marianus Gorecki": {
         "wikidata": "Q819870",
         "status": "auto"
+      },
+      "Bronislaus Komorowski": {
+        "wikidata": "Q481432",
+        "status": "reviewed"
+      }
+    },
+    "mr:0322-nicolaus-owen": {
+      "Nicolaus Owen": {
+        "wikidata": "Q1985197",
+        "status": "reviewed"
+      }
+    },
+    "mr:0322-paulus-narbonis": {
+      "Paulus": {
+        "wikidata": "Q1379816",
+        "status": "reviewed"
+      }
+    },
+    "mr:0323-annuntiata-cocchetti": {
+      "Annuntiata Cocchetti": {
+        "wikidata": "Q3618169",
+        "status": "reviewed"
       }
     },
     "mr:0323-edmundus-sykes": {
       "Edmundus Sykes": {
         "wikidata": "Q5339847",
         "status": "auto"
+      }
+    },
+    "mr:0323-fingar-cornubiae": {
+      "Fingar": {
+        "wikidata": "Q2045593",
+        "status": "reviewed"
+      }
+    },
+    "mr:0323-gualterius-pontisarae": {
+      "Gualterius": {
+        "wikidata": "Q520413",
+        "status": "reviewed"
       }
     },
     "mr:0323-iosephus-oriol": {
@@ -5830,10 +6932,28 @@
         "status": "auto"
       }
     },
+    "mr:0323-otho-ariani": {
+      "Otho": {
+        "wikidata": "Q3887342",
+        "status": "reviewed"
+      }
+    },
+    "mr:0323-petrus-eugubii": {
+      "Petrus": {
+        "wikidata": "Q78228338",
+        "status": "reviewed"
+      }
+    },
     "mr:0323-petrus-higgins": {
       "Petrus Higgins": {
         "wikidata": "Q21879800",
         "status": "auto"
+      }
+    },
+    "mr:0323-rebecca-de-himlaya": {
+      "Rebecca de Himlaya": {
+        "wikidata": "Q268204",
+        "status": "reviewed"
       }
     },
     "mr:0323-turibius-de-mogrovejo": {
@@ -5856,10 +6976,122 @@
         "status": "reviewed"
       }
     },
+    "mr:0324-catharina-suecica": {
+      "Catharina": {
+        "wikidata": "Q237871",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-franciscus-iosephus-lopez-caamano": {
+      "Franciscus Iosephus Lopez-Caamano": {
+        "wikidata": "Q2698619",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-ioannes-a-baculo": {
+      "Ioannes a Baculo": {
+        "wikidata": "Q6265460",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-maccarthemus-clocerie": {
+      "Maccarthemus": {
+        "wikidata": "Q6722215",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-maria-karlowska": {
+      "Maria Karlowska": {
+        "wikidata": "Q3847345",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-secundulus-mauretaniae": {
+      "Secundulus": {
+        "wikidata": "Q141937696",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-severus-catanae": {
+      "Severus": {
+        "wikidata": "Q141937697",
+        "status": "reviewed"
+      }
+    },
+    "mr:0324-timolaus-et-socii": {
+      "Agapius": {
+        "wikidata": "Q1763046",
+        "status": "reviewed"
+      },
+      "Alexander": {
+        "wikidata": "Q141937698",
+        "status": "reviewed"
+      },
+      "Alexander#2": {
+        "wikidata": "Q141937699",
+        "status": "reviewed"
+      },
+      "Dionysius": {
+        "wikidata": "Q141937700",
+        "status": "reviewed"
+      },
+      "Dionysius#2": {
+        "wikidata": "Q141937701",
+        "status": "reviewed"
+      },
+      "Pausis": {
+        "wikidata": "Q141937702",
+        "status": "reviewed"
+      },
+      "Romulus": {
+        "wikidata": "Q141937703",
+        "status": "reviewed"
+      },
+      "Timolaus": {
+        "wikidata": "Q141937715",
+        "status": "reviewed"
+      }
+    },
     "mr:0325-aemilianus-kovc": {
       "Aemilianus Kovc": {
         "wikidata": "Q557861",
         "status": "auto"
+      }
+    },
+    "mr:0325-bonus-latro": {
+      "Bonus Latro": {
+        "wikidata": "Q355121",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-dula-nicomediae": {
+      "Dula": {
+        "wikidata": "Q136679787",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-everardus-probatopolis": {
+      "Everardus": {
+        "wikidata": "Q1279462",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-hermelandus-fontanellensis": {
+      "Hermelandus": {
+        "wikidata": "Q3134198",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-hilarius-januszewski": {
+      "Hilarius Januszewski": {
+        "wikidata": "Q2235456",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-iacobus-bird": {
+      "Iacobus Bird": {
+        "wikidata": "Q131716933",
+        "status": "reviewed"
       }
     },
     "mr:0325-lucia-filippini": {
@@ -5874,22 +7106,156 @@
         "status": "auto"
       }
     },
-    "mr:0325-procopius": {
+    "mr:0325-matrona-thessalonicensis": {
+      "Matrona": {
+        "wikidata": "Q3822117",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-michaelina-hordashevska": {
+      "Michaelina Hordashevska": {
+        "wikidata": "Q2467982",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-mona-mediolani": {
+      "Mona": {
+        "wikidata": "Q3860376",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-nicodemus-mammulae": {
+      "Nicodemus": {
+        "wikidata": "Q1403934",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-placidus-riccardi": {
+      "Placidus Riccardi": {
+        "wikidata": "Q2097903",
+        "status": "reviewed"
+      }
+    },
+    "mr:0325-procopius-sazavae": {
       "Procopius": {
         "wikidata": "Q670456",
         "status": "auto"
       }
     },
-    "mr:0326-liudgerus": {
+    "mr:0325-thomas-costacciarii": {
+      "Thomas": {
+        "wikidata": "Q116688175",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-barontius-et-desiderius": {
+      "Barontius": {
+        "wikidata": "Q120920674",
+        "status": "reviewed"
+      },
+      "Desiderius": {
+        "wikidata": "Q131755923",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-bercharius-dervensis": {
+      "Bercharius": {
+        "wikidata": "Q2896937",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-castulus-romae": {
+      "Castulus": {
+        "wikidata": "Q167902",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-emmanuel-et-socii": {
+      "Codratus": {
+        "wikidata": "Q21625844",
+        "status": "reviewed"
+      },
+      "Emmanuel": {
+        "wikidata": "Q3724017",
+        "status": "reviewed"
+      },
+      "Sabinus": {
+        "wikidata": "Q141937704",
+        "status": "reviewed"
+      },
+      "Theodosius": {
+        "wikidata": "Q141937705",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-eutychius-alexandrinus": {
+      "Eutychius": {
+        "wikidata": "Q134601908",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-liudgerus-monasteriensis": {
       "Liudgerus": {
         "wikidata": "Q719683",
         "status": "auto"
       }
     },
-    "mr:0327-rupertus": {
+    "mr:0326-magdalena-catharina-morano": {
+      "Magdalena Catharina Morano": {
+        "wikidata": "Q274234",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-montanus-et-maxima": {
+      "Maxima": {
+        "wikidata": "Q141937706",
+        "status": "reviewed"
+      },
+      "Montanus": {
+        "wikidata": "Q135517733",
+        "status": "reviewed"
+      }
+    },
+    "mr:0326-petrus-sebastes": {
+      "Petrus": {
+        "wikidata": "Q1246057",
+        "status": "reviewed"
+      }
+    },
+    "mr:0327-franciscus-faa": {
+      "Franciscus Faa": {
+        "wikidata": "Q604679",
+        "status": "reviewed"
+      }
+    },
+    "mr:0327-panacea-de-muzzi": {
+      "Panacea de Muzzi": {
+        "wikidata": "Q3892940",
+        "status": "reviewed"
+      }
+    },
+    "mr:0327-peregrinus-de-phalerone": {
+      "Peregrinus de Phalerone": {
+        "wikidata": "Q16587749",
+        "status": "reviewed"
+      }
+    },
+    "mr:0327-rupertus-salisburgi": {
       "Rupertus": {
         "wikidata": "Q44947",
         "status": "auto"
+      }
+    },
+    "mr:0328-antonius-patrizus": {
+      "Antonius Patrizus": {
+        "wikidata": "Q19984448",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-castor-tarsi": {
+      "Castor": {
+        "wikidata": "Q138754366",
+        "status": "reviewed"
       }
     },
     "mr:0328-christophorus-wharton": {
@@ -5898,10 +7264,66 @@
         "status": "auto"
       }
     },
+    "mr:0328-conus-nasi": {
+      "Conus": {
+        "wikidata": "Q3687093",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-cyrillus-heliopoli": {
+      "Cyrillus": {
+        "wikidata": "Q141937707",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-gunthramnus-cabilloni": {
+      "Gunthramnus": {
+        "wikidata": "Q295086",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-hilarion-pelecetensis": {
+      "Hilarion": {
+        "wikidata": "Q16082593",
+        "status": "reviewed"
+      }
+    },
     "mr:0328-ioanna-maria-de-maille": {
       "Ioanna Maria de Maille": {
         "wikidata": "Q1696980",
         "status": "auto"
+      }
+    },
+    "mr:0328-iosephus-sebastianus-pelczar": {
+      "Iosephus Sebastianus Pelczar": {
+        "wikidata": "Q680178",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-priscus-et-socii": {
+      "Alexander": {
+        "wikidata": "Q141937708",
+        "status": "reviewed"
+      },
+      "Malchus": {
+        "wikidata": "Q141937709",
+        "status": "reviewed"
+      },
+      "Priscus": {
+        "wikidata": "Q141937710",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-proterius-alexandriae": {
+      "Proterius": {
+        "wikidata": "Q367341",
+        "status": "reviewed"
+      }
+    },
+    "mr:0328-renata-maria-feillatreau": {
+      "Renata Maria Feillatreau": {
+        "wikidata": "Q141937711",
+        "status": "reviewed"
       }
     },
     "mr:0328-stephanus-harding": {
@@ -5910,10 +7332,60 @@
         "status": "auto"
       }
     },
+    "mr:0329-armogastus-et-socii": {
+      "Archinimus": {
+        "wikidata": "Q141937712",
+        "status": "reviewed"
+      },
+      "Armogastus": {
+        "wikidata": "Q107720413",
+        "status": "reviewed"
+      },
+      "Saturninus": {
+        "wikidata": "Q141937713",
+        "status": "reviewed"
+      }
+    },
+    "mr:0329-bertholdus-carmelo": {
+      "Bertholdus": {
+        "wikidata": "Q828129",
+        "status": "reviewed"
+      }
+    },
+    "mr:0329-eustasius-neapoli": {
+      "Eustasius": {
+        "wikidata": "Q52593619",
+        "status": "reviewed"
+      }
+    },
     "mr:0329-gulielmus-tempier": {
       "Gulielmus Tempier": {
         "wikidata": "Q3779027",
         "status": "auto"
+      }
+    },
+    "mr:0329-ioannes-hambley": {
+      "Ioannes Hambley": {
+        "wikidata": "Q6237408",
+        "status": "reviewed"
+      }
+    },
+    "mr:0329-ludolphus-raceburgensis": {
+      "Ludolphus": {
+        "wikidata": "Q6698944",
+        "status": "reviewed"
+      }
+    },
+    "mr:0329-marcus-arethusae": {
+      "Marcus": {
+        "wikidata": "Q594713",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-amadeus-vercellarum": {
+      "Amadeus": {
+        "wikidata": "Q373236",
+        "status": "reviewed"
       }
     },
     "mr:0330-antonius-daveluy-et-socii": {
@@ -5928,6 +7400,30 @@
       "Lucas Hwang Sŏk-tu": {
         "wikidata": "Q9394618",
         "status": "auto"
+      },
+      "Antonius Daveluy": {
+        "wikidata": "Q1044901",
+        "status": "reviewed"
+      },
+      "Martinus Lucas Huin": {
+        "wikidata": "Q3295528",
+        "status": "reviewed"
+      },
+      "Thomas Son Cha-sŏn": {
+        "wikidata": "Q7794090",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-clinius-aquini": {
+      "Clinius": {
+        "wikidata": "Q141937714",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-domninus-thessalonicensis": {
+      "Domninus": {
+        "wikidata": "Q47525174",
+        "status": "reviewed"
       }
     },
     "mr:0330-helena-kafka": {
@@ -5936,10 +7432,34 @@
         "status": "auto"
       }
     },
+    "mr:0330-ioannes-climacus": {
+      "Ioannes": {
+        "wikidata": "Q317072",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-iulius-alvarez": {
+      "Iulius Alvarez": {
+        "wikidata": "Q16563912",
+        "status": "reviewed"
+      }
+    },
     "mr:0330-leonardus-murialdo": {
       "Leonardus Murialdo": {
         "wikidata": "Q952648",
         "status": "auto"
+      }
+    },
+    "mr:0330-ludovicus-de-casaurea": {
+      "Ludovicus de Casaurea": {
+        "wikidata": "Q2675665",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-osburga-conventriae": {
+      "Osburga": {
+        "wikidata": "Q7105827",
+        "status": "reviewed"
       }
     },
     "mr:0330-petrus-regalado": {
@@ -5948,16 +7468,74 @@
         "status": "auto"
       }
     },
-    "mr:0331-balbina": {
+    "mr:0330-regulus-augustomagi": {
+      "Regulus": {
+        "wikidata": "Q3431871",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-secundus-astae-pompeiae": {
+      "Secundus": {
+        "wikidata": "Q263355",
+        "status": "reviewed"
+      }
+    },
+    "mr:0330-zosimus-syracusis": {
+      "Zosimus": {
+        "wikidata": "Q13197657",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-agilolphus-coloniae-agrippinae": {
+      "Agilolphus": {
+        "wikidata": "Q152426",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-balbina-romae": {
       "Balbina": {
         "wikidata": "Q508782",
         "status": "auto"
+      }
+    },
+    "mr:0331-beniamin-argol": {
+      "Beniamin": {
+        "wikidata": "Q540436",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-bonaventura-de-foro-livii": {
+      "Bonaventura de Foro Livii": {
+        "wikidata": "Q26997825",
+        "status": "reviewed"
       }
     },
     "mr:0331-christophorus-robinson": {
       "Ioannes Boste": {
         "wikidata": "Q532773",
         "status": "auto"
+      },
+      "Christophorus Robinson": {
+        "wikidata": "Q5113155",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-guido-pomposae": {
+      "Guido": {
+        "wikidata": "Q882948",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-ioanna-tolosae": {
+      "Ioanna": {
+        "wikidata": "Q4178121",
+        "status": "reviewed"
+      }
+    },
+    "mr:0331-natalia-tulasiewicz": {
+      "Natalia Tulasiewicz": {
+        "wikidata": "Q2069012",
+        "status": "reviewed"
       }
     },
     "mr:0402-apphianus": {

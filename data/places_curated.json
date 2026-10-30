@@ -2339,14 +2339,14 @@
       "it": "York"
     }
   ],
-  "mr:0301-albinus": [
+  "mr:0301-albinus-andegavi": [
     {
       "role": "mention",
       "la": "Aurelianénse",
       "it": "Orléans"
     }
   ],
-  "mr:0301-david": [
+  "mr:0301-david-meneviae": [
     {
       "role": "mention",
       "la": "Armóricam",
@@ -2376,7 +2376,7 @@
       "it": "Monte Mula"
     }
   ],
-  "mr:0301-rudesindus": [
+  "mr:0301-rudesindus-dumiensis": [
     {
       "role": "ministry",
       "la": "Dumiénsis",
@@ -2388,14 +2388,14 @@
       "it": "monastero di Cellanova"
     }
   ],
-  "mr:0301-siviardus": [
+  "mr:0301-siviardus-anninsulensis": [
     {
       "role": "religious_life",
       "la": "Anninsulénsis",
       "it": "Saint-Calais"
     }
   ],
-  "mr:0301-suitbertus": [
+  "mr:0301-suitbertus-werdae": [
     {
       "role": "religious_life",
       "la": "Northúmbria",
@@ -2421,7 +2421,7 @@
       "it": "Danimarca"
     }
   ],
-  "mr:0302-ceadda": [
+  "mr:0302-ceadda-lichfeldiae": [
     {
       "role": "ministry",
       "la": "Lindíssi",
@@ -2438,7 +2438,7 @@
       "it": "Mercia"
     }
   ],
-  "mr:0303-cunegundis": [
+  "mr:0303-cunegundis-confugiae": [
     {
       "role": "burial",
       "la": "Bambérgæ",
@@ -2452,7 +2452,7 @@
       "it": "León in Galizia"
     }
   ],
-  "mr:0303-fridericus": [
+  "mr:0303-fridericus-frisiae": [
     {
       "role": "ministry",
       "la": "óppido Hallum",
@@ -2464,7 +2464,7 @@
       "it": "Mariengaarde"
     }
   ],
-  "mr:0303-winwaloeus": [
+  "mr:0303-winwaloeus-landevenecensis": [
     {
       "role": "religious_life",
       "la": "Landevenecénsis",
@@ -2476,14 +2476,14 @@
       "it": "isola di Lavret"
     }
   ],
-  "mr:0304-appianus": [
+  "mr:0304-appianus-papiensis": [
     {
       "role": "religious_life",
       "la": "monastério Papiénsi",
       "it": "monastero di Pavia"
     }
   ],
-  "mr:0304-basinus": [
+  "mr:0304-basinus-trevirorum": [
     {
       "role": "mention",
       "la": "Epternáci",
@@ -2495,7 +2495,7 @@
       "it": "San Massimino di Treviri"
     }
   ],
-  "mr:0304-casimirus": [
+  "mr:0304-casimirus-grodnae": [
     {
       "role": "death",
       "la": "óppido Grodna apud Vilnam in Lithuánia",
@@ -2507,7 +2507,7 @@
       "it": "Polonia"
     }
   ],
-  "mr:0304-humbertus": [
+  "mr:0304-humbertus-camberii": [
     {
       "role": "ministry",
       "la": "Sabáudiæ",
@@ -2515,7 +2515,7 @@
       "occurrence_it": 2
     }
   ],
-  "mr:0304-petrus": [
+  "mr:0304-petrus-policastrensis": [
     {
       "role": "ministry",
       "la": "Policastrénsis",
@@ -2529,28 +2529,28 @@
       "it": "provincia napoletana"
     }
   ],
-  "mr:0305-theophilus": [
+  "mr:0305-theophilus-caesariensis": [
     {
       "role": "ministry",
       "la": "Cæsariénsis in Palæstína",
       "it": "Cesarea in Palestina"
     }
   ],
-  "mr:0305-virgilius": [
+  "mr:0305-virgilius-arelatis": [
     {
       "role": "mention",
       "la": "Anglos",
       "it": "Inghilterra"
     }
   ],
-  "mr:0306-evagrius": [
+  "mr:0306-evagrius-constantinopolitanus": [
     {
       "role": "ministry",
       "la": "Constantinopolitáni",
       "it": "Costantinopoli"
     }
   ],
-  "mr:0306-fridolinus": [
+  "mr:0306-fridolinus-saconii": [
     {
       "role": "birth",
       "la": "Hibérnia",
@@ -2562,7 +2562,7 @@
       "it": "Francia"
     }
   ],
-  "mr:0306-ollegarius": [
+  "mr:0306-ollegarius-tarraconensis": [
     {
       "role": "ministry",
       "la": "Tarraconénsem",
@@ -2595,14 +2595,14 @@
       "it": "Cartagine"
     }
   ],
-  "mr:0308-duthacus": [
+  "mr:0308-duthacus-rossensis": [
     {
       "role": "ministry",
       "la": "Rossénsis",
       "it": "Ross"
     }
   ],
-  "mr:0308-felix": [
+  "mr:0308-felix-dumnoci": [
     {
       "role": "birth",
       "la": "Burgúndia",
@@ -2614,7 +2614,7 @@
       "it": "Angli orientali"
     }
   ],
-  "mr:0308-humfridus": [
+  "mr:0308-humfridus-taruannensis": [
     {
       "role": "ministry",
       "la": "Taruannénsis"
@@ -2632,21 +2632,21 @@
       "it": "portoghese"
     }
   ],
-  "mr:0308-pontius": [
+  "mr:0308-pontius-carthaginensis": [
     {
       "role": "ministry",
       "la": "Carthágine",
       "it": "Cartagine"
     }
   ],
-  "mr:0308-theophilactus": [
+  "mr:0308-theophilactus-nicomediae": [
     {
       "role": "death",
       "la": "Stróbili in Cária",
       "it": "Stróbilon nella Caria"
     }
   ],
-  "mr:0308-veremundus": [
+  "mr:0308-veremundus-hyrachensis": [
     {
       "role": "religious_life",
       "la": "Hyrachénsis",
@@ -2660,7 +2660,7 @@
       "it": "Cracovia"
     }
   ],
-  "mr:0309-bruno": [
+  "mr:0309-bruno-querfurtensis": [
     {
       "role": "ministry",
       "la": "Querfurténsis",
@@ -2677,7 +2677,7 @@
       "it": "Italia"
     }
   ],
-  "mr:0309-francisca": [
+  "mr:0309-francisca-romae": [
     {
       "role": "religious_life",
       "la": "Romæ",
@@ -2691,7 +2691,7 @@
       "it": "Cappadocia"
     }
   ],
-  "mr:0310-attala": [
+  "mr:0310-attala-bobiensis": [
     {
       "role": "religious_life",
       "la": "Lirinénse monastérium",
@@ -2703,7 +2703,7 @@
       "it": "Luxeuil"
     }
   ],
-  "mr:0310-droctoveus": [
+  "mr:0310-droctoveus-parisiorum": [
     {
       "role": "mention",
       "la": "Augustodunénsi",
@@ -2717,14 +2717,14 @@
       "it": "regni di Europa"
     }
   ],
-  "mr:0310-macarius": [
+  "mr:0310-macarius-hierosolymitanus": [
     {
       "role": "ministry",
       "la": "Hierosolymitáni",
       "it": "Gerusalemme"
     }
   ],
-  "mr:0310-simplicius": [
+  "mr:0310-simplicius-papa": [
     {
       "role": "mention",
       "la": "Itáliam",
@@ -2738,7 +2738,7 @@
       "it": "Inghilterra"
     }
   ],
-  "mr:0311-vindicianus": [
+  "mr:0311-vindicianus-cameracensis": [
     {
       "role": "ministry",
       "la": "Atrebaténsis",
@@ -2785,14 +2785,14 @@
       "it": "Collegio Inglese di Roma"
     }
   ],
-  "mr:0315-sisebutus": [
+  "mr:0315-sisebutus-caradignensis": [
     {
       "role": "religious_life",
       "la": "Caradignénsis",
       "it": "Caradeña"
     }
   ],
-  "mr:0316-eusebia": [
+  "mr:0316-eusebia-hammaticensis": [
     {
       "role": "religious_life",
       "la": "Hammaticénsis",
@@ -2818,14 +2818,14 @@
       "it": "Mantova"
     }
   ],
-  "mr:0316-papa": [
+  "mr:0316-papa-seleuciae": [
     {
       "role": "birth",
       "la": "Lycaónia",
       "it": "Licaonia"
     }
   ],
-  "mr:0317-conradus": [
+  "mr:0317-conradus-medunei": [
     {
       "role": "religious_life",
       "la": "Palæstína",
@@ -2839,7 +2839,7 @@
       "it": "Holešov"
     }
   ],
-  "mr:0317-patricius": [
+  "mr:0317-patricius-episcopus": [
     {
       "role": "death",
       "la": "civitátem Dunum in Hibérnia",
@@ -2870,7 +2870,7 @@
       "it": "ad Alessandria d’Egitto"
     }
   ],
-  "mr:0318-alexander": [
+  "mr:0318-alexander-hierosolymorum": [
     {
       "role": "death",
       "la": "Cæsaréam",
@@ -2887,7 +2887,7 @@
       "it": "Cappadocia"
     }
   ],
-  "mr:0318-anselmus": [
+  "mr:0318-anselmus-lucensis": [
     {
       "role": "ministry",
       "la": "Lucénsis",
@@ -2899,21 +2899,21 @@
       "it": "Lombardia"
     }
   ],
-  "mr:0318-braulio": [
+  "mr:0318-braulio-caesaraugustae": [
     {
       "role": "ministry",
       "la": "tota Hispánia",
       "it": "tutta la Spagna"
     }
   ],
-  "mr:0318-cyrillus": [
+  "mr:0318-cyrillus-hierosolymitanus": [
     {
       "role": "ministry",
       "la": "Hierosolymitáni",
       "it": "Gerusalemme"
     }
   ],
-  "mr:0318-frigdianus": [
+  "mr:0318-frigdianus-lucae": [
     {
       "role": "birth",
       "la": "Hibérnia",
@@ -2925,7 +2925,7 @@
       "it": "fiume Serchio"
     }
   ],
-  "mr:0318-leobardus": [
+  "mr:0318-leobardus-turonum": [
     {
       "role": "religious_life",
       "la": "Maióre",
@@ -2939,7 +2939,7 @@
       "it": "Horta"
     }
   ],
-  "mr:0319-ioannes": [
+  "mr:0319-ioannes-parranensis": [
     {
       "role": "religious_life",
       "la": "Parranénsis",
@@ -2972,14 +2972,14 @@
       "it": "Polonia"
     }
   ],
-  "mr:0320-archippus": [
+  "mr:0320-archippus-commilito": [
     {
       "role": "mention",
       "la": "Colossénses",
       "it": "Colossesi"
     }
   ],
-  "mr:0320-cuthbertus": [
+  "mr:0320-cuthbertus-lindisfarnensis": [
     {
       "role": "ministry",
       "la": "Lindisfarnénsis",
@@ -3000,7 +3000,7 @@
       "it": "fiume Moldava"
     }
   ],
-  "mr:0320-martinus": [
+  "mr:0320-martinus-bracarensis": [
     {
       "role": "birth",
       "la": "Pannónia",
@@ -3012,14 +3012,14 @@
       "it": "Dume"
     }
   ],
-  "mr:0320-nicetas": [
+  "mr:0320-nicetas-apolloniae": [
     {
       "role": "ministry",
       "la": "Apollóniæ in Macedónia",
       "it": "Pojani in Macedonia"
     }
   ],
-  "mr:0320-vulframnus": [
+  "mr:0320-vulframnus-senonensis": [
     {
       "role": "ministry",
       "la": "Senonénsis",
@@ -3031,21 +3031,21 @@
       "it": "popolo frisio"
     }
   ],
-  "mr:0321-endeus": [
+  "mr:0321-endeus-araniensis": [
     {
       "role": "foundation",
       "la": "Araniénsi ínsula",
       "it": "isola di Aran"
     }
   ],
-  "mr:0321-ioannes": [
+  "mr:0321-ioannes-valentiae": [
     {
       "role": "religious_life",
       "la": "Bonæ Vallis",
       "it": "Bonnevaux"
     }
   ],
-  "mr:0321-lupicinus": [
+  "mr:0321-lupicinus-iurensis": [
     {
       "role": "religious_life",
       "la": "saltu Iurénsi",
@@ -3066,7 +3066,7 @@
       "it": "Collegio Inglese di Douai"
     }
   ],
-  "mr:0322-lea": [
+  "mr:0322-lea-romae": [
     {
       "role": "mention",
       "la": "románæ",
@@ -3122,7 +3122,7 @@
       "it": "Henchir-Baboucha"
     }
   ],
-  "mr:0324-catharina": [
+  "mr:0324-catharina-suecica": [
     {
       "role": "journey",
       "la": "Romæ",
@@ -3154,7 +3154,7 @@
       "it": "città di Nazareth"
     }
   ],
-  "mr:0325-everardus": [
+  "mr:0325-everardus-probatopolis": [
     {
       "role": "foundation",
       "la": "cœnóbio Omnium Sanctórum",
@@ -3171,7 +3171,7 @@
       "it": "cenobio di Tutti i Santi"
     }
   ],
-  "mr:0325-hermelandus": [
+  "mr:0325-hermelandus-fontanellensis": [
     {
       "role": "religious_life",
       "la": "Fontanellénsis",
@@ -3185,21 +3185,21 @@
       "it": "Polonia"
     }
   ],
-  "mr:0326-bercharius": [
+  "mr:0326-bercharius-dervensis": [
     {
       "role": "religious_life",
       "la": "Altivillariénsis",
       "it": "Hautvillers"
     }
   ],
-  "mr:0326-eutychius": [
+  "mr:0326-eutychius-alexandrinus": [
     {
       "role": "ministry",
       "la": "alexandríni",
       "it": "Alessandria"
     }
   ],
-  "mr:0326-liudgerus": [
+  "mr:0326-liudgerus-monasteriensis": [
     {
       "role": "foundation",
       "la": "Monasteriénsem",
@@ -3240,7 +3240,7 @@
       "it": "Falerone"
     }
   ],
-  "mr:0327-rupertus": [
+  "mr:0327-rupertus-salisburgi": [
     {
       "role": "ministry",
       "la": "Baváriam",
@@ -3253,14 +3253,14 @@
       "it": "Worms"
     }
   ],
-  "mr:0328-conus": [
+  "mr:0328-conus-nasi": [
     {
       "role": "journey",
       "la": "loca sancta",
       "it": "luoghi santi"
     }
   ],
-  "mr:0328-hilarion": [
+  "mr:0328-hilarion-pelecetensis": [
     {
       "role": "religious_life",
       "la": "Peleceténsis",
@@ -3288,28 +3288,28 @@
       "it": "Africa"
     }
   ],
-  "mr:0329-ludolphus": [
+  "mr:0329-ludolphus-raceburgensis": [
     {
       "role": "ministry",
       "la": "Raceburgénsis",
       "it": "Ratzeburg"
     }
   ],
-  "mr:0329-marcus": [
+  "mr:0329-marcus-arethusae": [
     {
       "role": "ministry",
       "la": "Arethúsæ in Sýria",
       "it": "Aretusa in Siria"
     }
   ],
-  "mr:0330-amadeus": [
+  "mr:0330-amadeus-vercellarum": [
     {
       "role": "ministry",
       "la": "Sabáudiæ",
       "it": "Savoia"
     }
   ],
-  "mr:0330-clinius": [
+  "mr:0330-clinius-aquini": [
     {
       "role": "religious_life",
       "la": "monastérii Sancti Petri de Silva",
@@ -3344,7 +3344,7 @@
       "it": "Costantinopoli"
     }
   ],
-  "mr:0331-balbina": [
+  "mr:0331-balbina-romae": [
     {
       "role": "dedication",
       "la": "Aventíno",
@@ -3363,7 +3363,7 @@
       "it": "diverse regioni d’Italia"
     }
   ],
-  "mr:0331-guido": [
+  "mr:0331-guido-pomposae": [
     {
       "role": "religious_life",
       "la": "Pompósæ",
