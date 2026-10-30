@@ -657944,6 +657944,425 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0910-nemesianus-et-socii|Felix#2",
+      "eulogy": "mr:0910-nemesianus-et-socii",
+      "day": "09-10",
+      "typology": "commemoratio",
+      "subject": "Sancti Nemesianus et socii",
+      "name": "Felix",
+      "where": "text",
+      "companions": [
+        "Nemesianus",
+        "Lucius",
+        "Litteus",
+        "Polianus",
+        "Victor",
+        "Iader",
+        "Dativus"
+      ],
+      "failed": [
+        "6 candidates pass every rule: Q1357293, Q16555604, Q1403961, Q134687, Q134149669, Q2182480"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q134149669",
+          "label": "Felix of Rome",
+          "description": "santo martire cristiano",
+          "names": [
+            "Felice",
+            "Felice di Roma",
+            "Felix",
+            "Felix of Rome"
+          ],
+          "human": true,
+          "statuses": [
+            "Q123110154"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": []
+        },
+        {
+          "wikidata": "Q134687",
+          "label": "Felix I",
+          "description": "Pope and bishop of Rome from 269 to 274",
+          "names": [
+            "Felix",
+            "Felix I",
+            "Pope Felix I",
+            "Sanctus Felix PP. I",
+            "St. Felix I",
+            "papa Felice I"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": "0300",
+          "died": "0274-12-30",
+          "feast": [
+            "Q2901"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P4286",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q220"
+          ],
+          "death_place": [
+            "Q220"
+          ],
+          "burial_place": [
+            "Q1027069"
+          ],
+          "work_places": [
+            "Q220"
+          ],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Rome"
+            ],
+            "burial_place": [
+              "Catacomb of Callixtus"
+            ],
+            "birth_place": [
+              "Rome"
+            ],
+            "work_places": [
+              "Rome"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q1357293",
+          "label": "Felix of Burgundy",
+          "description": "7th-century Bishop of Dunwich and saint",
+          "names": [
+            "Felice di Borgogna",
+            "Felice di Burgundia",
+            "Felice di Dunwich",
+            "Felix",
+            "Felix of Burgundy",
+            "Felix of Dunwich",
+            "Phelix",
+            "Saint Felix",
+            "San Felice di Dunwich",
+            "St Felix",
+            "St. Felix"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115",
+            "Q3464126"
+          ],
+          "born": "0550",
+          "died": "0647-03-08",
+          "feast": [
+            "Q2395"
+          ],
+          "signals": [
+            "P841",
+            "P6126",
+            "P8080",
+            "P10799"
+          ],
+          "birth_place": [
+            "Q91329095"
+          ],
+          "death_place": [
+            "Q188020"
+          ],
+          "burial_place": [
+            "Q23112"
+          ],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Dunwich"
+            ],
+            "burial_place": [
+              "Cambridgeshire"
+            ],
+            "birth_place": [
+              "Kingdom of Burgundy"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q1403961",
+          "label": "Felix of Trier",
+          "description": "",
+          "names": [
+            "Felix",
+            "Felix of Trier"
+          ],
+          "human": true,
+          "statuses": [
+            "Q3464126"
+          ],
+          "born": "0400",
+          "died": null,
+          "feast": [],
+          "signals": [
+            "P8080",
+            "P10799"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": []
+        },
+        {
+          "wikidata": "Q16555604",
+          "label": "Felix of Massa Martana",
+          "description": "vescovo romano",
+          "names": [
+            "Felice di Massa Martana",
+            "Felix",
+            "Felix of Massa Martana"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2950"
+          ],
+          "signals": [
+            "P841",
+            "P6126"
+          ],
+          "birth_place": [
+            "Q20472"
+          ],
+          "death_place": [
+            "Q20472"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Massa Martana"
+            ],
+            "birth_place": [
+              "Massa Martana"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q2182480",
+          "label": "Felice",
+          "description": "martyr",
+          "names": [
+            "Felice",
+            "Saint Felice",
+            "San Felice"
+          ],
+          "human": true,
+          "statuses": [
+            "Q43115"
+          ],
+          "born": null,
+          "died": "0303-07-12",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q15141123"
+          ],
+          "death_place": [
+            "Q3974290"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "status",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "history of Lodi"
+            ],
+            "birth_place": [
+              "Mauretania (provincia romana)"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q105802251",
+          "label": "Felice",
+          "description": "woman",
+          "names": [
+            "Felice"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "places": []
+        },
+        {
+          "wikidata": "Q115512441",
+          "label": "Felix",
+          "description": "bishop of the roman-catholic church",
+          "names": [
+            "Felix"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": null,
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "places": []
+        },
+        {
+          "wikidata": "Q1403927",
+          "label": "Saint Felix",
+          "description": "martyr",
+          "names": [
+            "Felice",
+            "Felix",
+            "Saint Felix",
+            "San Felice"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "0300",
+          "died": "0304-06-12",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q734505"
+          ],
+          "death_place": [
+            "Q6244",
+            "Q42296"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "death_place": [
+              "Lodi",
+              "Lodi Vecchio"
+            ],
+            "birth_place": [
+              "Mauretania Caesariensis"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q2066061",
+          "label": "Felix",
+          "description": "British DJ and producer",
+          "names": [
+            "DJ Felix",
+            "Felix",
+            "Francis Reuben Wright",
+            "Francis Wright"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1973-02-15",
+          "died": null,
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q210985"
+          ],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "evidence": [
+            "human",
+            "name"
+          ],
+          "places": [],
+          "place_labels": {
+            "birth_place": [
+              "Chelmsford"
+            ]
+          }
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "mention",
+          "label": "Africa",
+          "qid": "Q15"
+        }
+      ],
+      "n": 2
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0910-nemesianus-et-socii|Iader",
       "eulogy": "mr:0910-nemesianus-et-socii",
       "day": "09-10",
