@@ -23767,9 +23767,10 @@
       "status": "jev"
     },
     "monastérium Græcórum": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: Generic Greek monastery in Calabria founded by Bartholomew of Simeri; no specific item"
+      "wikidata": "Q3603276",
+      "label": "Abbazia del Patire",
+      "country": "IT",
+      "status": "reviewed"
     },
     "monastérium Latiniacénse": {
       "wikidata": "Q333978",
