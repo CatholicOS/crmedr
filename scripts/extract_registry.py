@@ -278,7 +278,21 @@ ENTRY_NOTES = {
         "pp. 78-79; Institute of Art History, Zagreb, conservation study of Saint Mary on Mljet, 2022)."
     ),
     "mr:0705-dometius-medicus": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified.",
-    "mr:0930-gregorius-illuminator": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown.",
+    "mr:0930-gregorius-illuminator": (
+        "The cave is the Caves of Manē (Manēay ayrk‘) on Mount Sepuh, in the district of Daranali (Daranaghik‘) "
+        "near Kemah in the valley of the Western Euphrates (Karasu), Erzincan, Turkey; it lies far upstream of "
+        "the confluence of the Karasu and the Murat, so the Martyrology's \"confluence\" is loose. Agathangelos "
+        "(History 4.13) has Gregory found \"on the mountain called the Caves of Mane, in the province of "
+        "Daranalik\". Movses Khorenatsi (History of the Armenians II.91, tr. R. Bedrosian) names the mountain "
+        "after Mani, a companion of Hripsime who lived there \"in some caves of the rocks\", and says \"It was "
+        "in this cave that the blessed Gregory also resided\"; shepherds buried him there unrecognized, and his "
+        "remains were later found by the ascetic Garnik, \"who brought them to the village of T'ordan\" (Tortan, "
+        "Kemah, the monastery of Surp Pırgiç on the mountain's western slope, a separate site). A. Manoukian "
+        "(Fundamental Armenology 1 (9), 2019, pp. 170-171) identifies the hermitage with the Avag Monastery, "
+        "\"also known among Armenians as 'Hankist Lousavorch‘i Vank‘' or 'Maneay Cave'\", and Armenian "
+        "Wikipedia places the cave Manēay ayr beside the spring of the Great Illuminator Monastery on the "
+        "western slope of Mount Sepuh. The cave's exact position is not mapped."
+    ),
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
