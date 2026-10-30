@@ -10,7 +10,7 @@
 | 1 | 4 | `mr:0301-siviardus` |  | FR | dies_natalis |  |  |
 | 1 | 5 | `mr:0301-suitbertus` |  | DE | dies_natalis |  |  |
 | 1 | 6 | `mr:0301-leo` |  | FR | dies_natalis |  |  |
-| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified. 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
+| 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | The monastery of Mula took its name from Monte La Mula (1,935 m) in the Orsomarso mountains of northern Calabria: Italian Wikipedia's life of Leoluca says he lived "nel monastero presso il monte Mula" (in the monastery by Mount Mula) under the hegumen Christopher before they moved to the Mercurion. The monastery's own site is lost; the place is mapped at the mountain. 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
 | 1 | 8 | `mr:0301-rudesindus` | * | ES | dies_natalis |  |  |
 | 1 | 9 | `mr:0301-christophorus-de-mediolano` | * | IT | commemoratio |  |  |
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |
@@ -40,7 +40,7 @@
 | 4 | (1) | `mr:0304-casimirus` |  | BY | dies_natalis |  |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR | dies_natalis |  |  |
 | 4 | 3 | `mr:0304-basinus` | * | DE | dies_natalis |  |  |
-| 4 | 4 | `mr:0304-appianus` | * | IT | dies_natalis |  | Which monastery of Pavia sent Appian to Comacchio is not known. |
+| 4 | 4 | `mr:0304-appianus` | * | IT | dies_natalis |  | The monastery of Pavia was San Pietro in Ciel d'Oro. A. M. Zimmermann's life of Appian (Bibliotheca Sanctorum, on santiebeati.it) says he "fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to Comacchio to oversee the monastery's supply of salt. |
 | 4 | 5 | `mr:0304-petrus` | * | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:0304-humbertus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "terzo conte di Savoia" (the third count of Savoy) where the Latin has "cómitis Sabáudiæ Tértii" (Humbert III, Count of Savoy). |
 | 4 | 7 | `mr:0304-christophorus-bales-et-socii` | * | GB | dies_natalis |  |  |
@@ -319,7 +319,7 @@
 | 30 | 5 | `mr:0330-ioannes` |  | EG | dies_natalis |  |  |
 | 30 | 6 | `mr:0330-zosimus` |  | IT | dies_natalis |  |  |
 | 30 | 7 | `mr:0330-osburga` | * | GB | dies_natalis |  |  |
-| 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  | The site of the monastery of Saint Peter of the Wood (San Pietro della Foresta) near Aquino, of which Clinius was abbot, is not identified; a local tradition places it between Pontecorvo and Esperia. |
+| 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  | The monastery of Saint Peter of the Wood (San Pietro della Foresta) stood in the Liri valley between Pontecorvo and Esperia; it is not the village of San Pietro in Curolis. The archaeological census of the Geoportale Nazionale per l'Archeologia (record 5597, after J. W. Hayes and I. P. Martini, Archaeological Survey in the Lower Liri Valley, 1994, p. 236 no. 576) records the site "S. Pietro in Foresta = La Torre" in the comune of Esperia, near Crocella di Sant'Oliva: "area estesa per 50 m attorno alle rovine di una chiesa" (an area of 50 m around the ruins of a church), with common, African red-slip and medieval pottery. |
 | 30 | 9 | `mr:0330-petrus-regalado` |  | ES | dies_natalis |  | 2004 English: Translation error: "Aguilar" where the Latin has "Aquilériæ" (La Aguilera). |
 | 30 | 10 | `mr:0330-amadeus` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0330-antonius-daveluy-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "catechists" where the Latin has "catechístæ" in the singular, of Luke Hwang alone. |

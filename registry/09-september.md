@@ -388,7 +388,7 @@
 | 27 | 3 | `mr:0927-florentinus` |  | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0927-hiltrudis` |  | FR | dies_natalis |  |  |
 | 27 | 5 | `mr:0927-adolphus-et-ioannes` |  | ES | dies_natalis |  |  |
-| 27 | 6 | `mr:0927-bonfilius` | * | IT | dies_natalis |  | The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified. |
+| 27 | 6 | `mr:0927-bonfilius` | * | IT | dies_natalis |  | The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco near Filottrano (Ancona). U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that Bonfilius, born at Osimo about 1040, "giovanissimo entrò a S. Maria di Storaco in quel di Filottrano (Ancona), cenobio del quale più tardi sarebbe diventato abate" (entered it very young and later became its abbot). The Comune di Filottrano's history of the site says the abbey was built in the 11th century on a hill north-west of the town, was destroyed with the castle of Storaco around 1200, and was replaced by a shrine of the Virgin; the present church of Santa Maria di Storaco, rebuilt from 1351 around the older apse, stands on the site. |
 | 27 | 7 | `mr:0927-elzearus-de-sabran` |  | FR | dies_natalis |  |  |
 | 27 | 8 | `mr:0927-laurentius-de-ripafracta` | * | IT | dies_natalis |  |  |
 | 27 | 9 | `mr:0927-ioannes-baptista-laborier-du-vivier` | * | FR | dies_natalis |  |  |

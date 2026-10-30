@@ -221,16 +221,49 @@ ENTRY_NOTES = {
     "mr:1021-malchus": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia.",
     "mr:0722-martyres-massilitani": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
     "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
-    "mr:0301-leo-lucas": "The site of the monastery of Mula, of which Leo-Luke was abbot, is not securely identified.",
+    "mr:0301-leo-lucas": (
+        "The monastery of Mula took its name from Monte La Mula (1,935 m) in the Orsomarso mountains of northern "
+        "Calabria: Italian Wikipedia's life of Leoluca says he lived \"nel monastero presso il monte Mula\" (in "
+        "the monastery by Mount Mula) under the hegumen Christopher before they moved to the Mercurion. The "
+        "monastery's own site is lost; the place is mapped at the mountain."
+    ),
     "mr:1022-lupentius": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
     "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
     "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
     "mr:0721-simeon-salus": "Leontius's Life places Simeon and John's hermitage by the Dead Sea near the Arnon (Wadi Mujib, Jordan); the exact site is unknown.",
-    "mr:1204-adrehildis": "The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified.",
-    "mr:0304-appianus": "Which monastery of Pavia sent Appian to Comacchio is not known.",
+    "mr:1204-adrehildis": (
+        "The monastery is most likely the nuns' abbey of Saint-Julien-du-Pré at Le Mans, whose church is "
+        "Notre-Dame-du-Pré. The Benedictine tradition (English Wikipedia, Saint Ada) has Bishop Aiglibert of Le "
+        "Mans transfer her from Soissons \"to the monastery of Pré (St. Julian de Prato) at Le Mans\" as "
+        "abbess, and French Wikipedia says the church \"était église abbatiale de l'abbaye Saint-Julien-du-Pré, "
+        "qui recevait des religieuses bénédictines\" (was the abbey church of Saint-Julien-du-Pré, a house of "
+        "Benedictine nuns). No source found says outright that the Martyrology's monastery of Saint Mary is "
+        "this house."
+    ),
+    "mr:0304-appianus": (
+        "The monastery of Pavia was San Pietro in Ciel d'Oro. A. M. Zimmermann's life of Appian (Bibliotheca "
+        "Sanctorum, on santiebeati.it) says he \"fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro\" "
+        "(was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to "
+        "Comacchio to oversee the monastery's supply of salt."
+    ),
     "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
-    "mr:0927-bonfilius": "The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified.",
-    "mr:0819-bartholomaeus-de-simero": "The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown.",
+    "mr:0927-bonfilius": (
+        "The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco near Filottrano (Ancona). "
+        "U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that Bonfilius, born at Osimo about "
+        "1040, \"giovanissimo entrò a S. Maria di Storaco in quel di Filottrano (Ancona), cenobio del quale più "
+        "tardi sarebbe diventato abate\" (entered it very young and later became its abbot). The Comune di "
+        "Filottrano's history of the site says the abbey was built in the 11th century on a hill north-west of "
+        "the town, was destroyed with the castle of Storaco around 1200, and was replaced by a shrine of the "
+        "Virgin; the present church of Santa Maria di Storaco, rebuilt from 1351 around the older apse, stands "
+        "on the site."
+    ),
+    "mr:0819-bartholomaeus-de-simero": (
+        "The monastery of Greeks is Santa Maria del Patire near Rossano (Corigliano-Rossano, Calabria), first "
+        "dedicated to Santa Maria Nuova Odigitria. The FAI's description of the site says the church and "
+        "monastery \"fu edificata tra il 1100 e il 1105, dal monaco e sacerdote basiliano San Bartolomeo da "
+        "Simeri\" (were built between 1100 and 1105 by the Basilian monk and priest Saint Bartholomew of "
+        "Simeri), and that it took the name Patir, the monastery of the Father, after him."
+    ),
     "mr:0905-ioannes-bonus-de-siponto": (
         "The monastery of Saint Michael was on the island of Mljet (Meleda), as the Italian edition says; the Latin "
         "names only the Dalmatian coast facing the Gargano. The Pulsano martyrology (Acta Sanctorum, June IV, p. 41) "
@@ -249,7 +282,15 @@ ENTRY_NOTES = {
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
-    "mr:0330-clinius": "The site of the monastery of Saint Peter of the Wood (San Pietro della Foresta) near Aquino, of which Clinius was abbot, is not identified; a local tradition places it between Pontecorvo and Esperia.",
+    "mr:0330-clinius": (
+        "The monastery of Saint Peter of the Wood (San Pietro della Foresta) stood in the Liri valley between "
+        "Pontecorvo and Esperia; it is not the village of San Pietro in Curolis. The archaeological census of "
+        "the Geoportale Nazionale per l'Archeologia (record 5597, after J. W. Hayes and I. P. Martini, "
+        "Archaeological Survey in the Lower Liri Valley, 1994, p. 236 no. 576) records the site \"S. Pietro in "
+        "Foresta = La Torre\" in the comune of Esperia, near Crocella di Sant'Oliva: \"area estesa per 50 m "
+        "attorno alle rovine di una chiesa\" (an area of 50 m around the ruins of a church), with common, "
+        "African red-slip and medieval pottery."
+    ),
     "mr:1223-theodulus-et-socii": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified.",
     "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
