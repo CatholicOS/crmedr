@@ -281,6 +281,16 @@ class ValidateTest(unittest.TestCase):
             FOOT, {"mr:0206-paulus-miki-et-socii"}))
 
 
+class RoleTest(unittest.TestCase):
+    def test_a_person_the_eulogy_only_mentions_carries_the_role_and_any_other_role_is_an_error(self):
+        mentioned = {"mr:0206-paulus-miki-et-socii": [{"name": "Ioannes de Goto Soan", "where": {"footnote": 1},
+                                                      "role": "mentioned"}]}
+        self.assertEqual(ep.validate(mentioned, FOOT, {"mr:0206-paulus-miki-et-socii"}), [])
+        other = {"mr:0206-paulus-miki-et-socii": [{"name": "Ioannes de Goto Soan", "where": {"footnote": 1},
+                                                  "role": "teacher"}]}
+        self.assertIn("role", ep.validate(other, FOOT, {"mr:0206-paulus-miki-et-socii"})[0])
+
+
 class ValidateParenthesesTest(unittest.TestCase):
     def test_a_name_read_across_a_parenthesis_is_printed(self):
         foot = {"mr:1124-x-et-socii": [{"mark": "1", "after": "x", "text": "Quorum nomina: Dominicus Nguyen Van (Doan) Xuyen."}]}

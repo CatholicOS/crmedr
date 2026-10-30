@@ -63,9 +63,12 @@ def life_range(died):
 
 
 def death_date(persons, items, details):
-    """The date of a eulogy from the death dates of its persons with a decided item, or None."""
+    """The date of a eulogy from the death dates of its persons with a decided item, or None: those it
+    commemorates, not those it only mentions (the Ewalds' Willibrord died forty years after them)."""
     ranges = []
     for p in persons:
+        if p.get("role") == "mentioned":
+            continue
         qid = (items.get(person_key(p)) or {}).get("wikidata")
         died = (details.get(qid) or {}).get("died") if qid else None
         if died:
