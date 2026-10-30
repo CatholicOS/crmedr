@@ -686,6 +686,15 @@
           "qid": "Q44011"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 98,
+          "check": "192d154e",
+          "name": "Basilius Magnus",
+          "qid": "Q44258"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 110,
@@ -698,6 +707,15 @@
               "name": "Basilius Magnus"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 435,
+          "end": 444,
+          "check": "674dfa5c",
+          "name": "Gregorius Nazianzenus",
+          "qid": "Q44011"
         },
         {
           "kind": "place",
@@ -7597,6 +7615,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 99,
+          "end": 108,
+          "check": "5cb6379d",
+          "name": "Audifax",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 112,
           "end": 117,
           "check": "01202360",
@@ -14077,6 +14104,15 @@
           "check": "09d6ee91",
           "name": "Laurentius",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 208,
+          "end": 218,
+          "check": "913e1361",
+          "name": "Ignatius",
+          "qid": null
         }
       ],
       "mr:0203-claudina-thevenet": [
@@ -20097,6 +20133,15 @@
           "end": 495,
           "check": "74ceb7a5",
           "name": "Porphyrius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 497,
+          "end": 505,
+          "check": "782fb8bc",
+          "name": "Pamphilus",
           "qid": null
         },
         {
@@ -31767,6 +31812,15 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 104,
+          "check": "bf20edae",
+          "name": "Franciscus Iosephus Lopez-Caamano",
+          "qid": null
         }
       ],
       "mr:0324-ioannes-a-baculo": [
@@ -38713,6 +38767,15 @@
           "end": 93,
           "check": "5845a6cd",
           "name": "Agathonica",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 103,
+          "end": 109,
+          "check": "e940e089",
+          "name": "Papylus",
           "qid": null
         }
       ],
@@ -58707,6 +58770,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 231,
+          "end": 246,
+          "check": "3e4f264e",
+          "name": "Guilielmus Filby",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 248,
           "end": 266,
           "check": "12e2a65f",
@@ -58870,6 +58942,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 46,
+          "check": "7a15b4e0",
+          "name": "Dominicus Di Nicolantonio",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 50,
@@ -58881,6 +58962,24 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
+          "end": 71,
+          "check": "6ea61582",
+          "name": "Dominicus Di Nicolantonio",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 73,
+          "end": 88,
+          "check": "3a69187d",
+          "name": "Dominicus Di Nicolantonio",
+          "qid": null
         }
       ],
       "mr:0531-hermia": [
@@ -59260,6 +59359,15 @@
           "end": 50,
           "check": "0b4db1af",
           "name": "Evelpistus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 54,
+          "end": 61,
+          "check": "c3575178",
+          "name": "Ierax",
           "qid": null
         },
         {
@@ -78104,6 +78212,15 @@
           "check": "dccef36a",
           "name": "Maria Clara a Sancto Martíno Blanc",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 165,
+          "end": 219,
+          "check": "2d8e307c",
+          "name": "Maria Margarita a Sancta Sophia de Bargegie d'Albarede",
+          "qid": null
         }
       ],
       "mr:0711-thomas-benstead-et-thomas-sprott": [
@@ -83282,6 +83399,15 @@
           "check": "81906972",
           "name": "Maria Zhou Wuzhi",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 354,
+          "end": 360,
+          "check": "097a7e82",
+          "name": "Leo Ignatius Mangin",
+          "qid": null
         }
       ],
       "mr:0720-magdalena-yi-yong-hui-et-socii": [
@@ -83834,6 +83960,15 @@
           "end": 180,
           "check": "5aa55de9",
           "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 234,
+          "end": 242,
+          "check": "4839c55f",
+          "name": "Simeon Salus",
           "qid": null
         },
         {
@@ -92447,6 +92582,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
+          "end": 48,
+          "check": "c4337513",
+          "name": "Franciscus Nourry",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 52,
@@ -92461,6 +92605,33 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
+          "end": 72,
+          "check": "17895ccb",
+          "name": "Franciscus Nourry",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 74,
+          "end": 80,
+          "check": "e95ab6fb",
+          "name": "Franciscus Nourry",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 92,
+          "check": "8e16a09a",
+          "name": "Gundisalvus Vaz Lopez-Netto",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 96,
@@ -92473,6 +92644,24 @@
               "name": "Gundisalvus Vaz Lopez-Netto"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 108,
+          "end": 118,
+          "check": "884f03cf",
+          "name": "Gundisalvus Vaz Lopez-Netto",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 120,
+          "end": 135,
+          "check": "65b7f845",
+          "name": "Gundisalvus Vaz Lopez-Netto",
+          "qid": null
         },
         {
           "kind": "place",
@@ -92704,6 +92893,15 @@
           "start": 10,
           "end": 28,
           "check": "9c5ce9f8",
+          "name": "Xystus II",
+          "qid": "Q127385"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 67,
+          "check": "eca8092a",
           "name": "Xystus II",
           "qid": "Q127385"
         },
@@ -94168,6 +94366,15 @@
           "check": "09d6ee91",
           "name": "Laurentius",
           "qid": "Q17590"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 61,
+          "check": "d72fbcb1",
+          "name": "Xystus II",
+          "qid": null
         },
         {
           "kind": "place",
@@ -98638,6 +98845,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
+          "end": 113,
+          "check": "8d5b617b",
+          "name": "Elvira Torrentalle Paraire",
+          "qid": "Q14918543"
         },
         {
           "kind": "person",
@@ -105810,6 +106026,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 78,
+          "end": 95,
+          "check": "49f3eb76",
+          "name": "Franciscus Iosephus de la Rochefoucauld",
+          "qid": "Q1133720"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 99,
           "end": 133,
           "check": "2d8a8aaf",
@@ -106921,6 +107146,15 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 263,
+          "end": 271,
+          "check": "7655be3e",
+          "name": "Viator",
+          "qid": null
         },
         {
           "kind": "place",
@@ -110587,6 +110821,15 @@
           "check": "d17ae7be",
           "name": "Ludovicus Maki",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 110,
+          "end": 117,
+          "check": "5aa55de9",
+          "name": "Ioannes Maki",
+          "qid": null
         }
       ],
       "mr:0908-adamus-bargielski": [
@@ -111894,6 +112137,16 @@
           "end": 59,
           "check": "a1e702ad",
           "name": "Lucius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 77,
+          "check": "e158bf6a",
+          "name": "Felix",
+          "n": 2,
           "qid": null
         },
         {
@@ -116496,6 +116749,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 73,
+          "end": 90,
+          "check": "f22da0ce",
+          "name": "Maria a Doloribus Aguiar-Mella y Diaz",
+          "qid": "Q23943183"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 94,
           "end": 123,
           "check": "8559b02b",
@@ -120365,6 +120627,15 @@
           "end": 183,
           "check": "8ba8a8a4",
           "name": "Petrus Leoz y Portillo",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 228,
+          "end": 245,
+          "check": "e593b106",
+          "name": "Iesus Hita Miranda",
           "qid": null
         }
       ],
@@ -130491,6 +130762,15 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 462,
+          "end": 468,
+          "check": "6c14c547",
+          "name": "Maxima",
+          "qid": null
         }
       ],
       "mr:1016-mummolinus": [
@@ -141525,6 +141805,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 350,
+          "end": 359,
+          "check": "3a0a00c3",
+          "name": "Paschasius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 363,
           "end": 373,
           "check": "dbeaa5ee",
@@ -151106,6 +151395,15 @@
           "qid": "Q961817"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 186,
+          "end": 194,
+          "check": "5bbbd773",
+          "name": "Edmundus Campion",
+          "qid": "Q547042"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 260,
@@ -151143,6 +151441,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 476,
+          "end": 485,
+          "check": "4e88ba9e",
+          "name": "Radulphus Sherwin",
+          "qid": "Q4523041"
         }
       ],
       "mr:1201-eligius": [
@@ -155612,6 +155919,15 @@
           "start": 84,
           "end": 92,
           "check": "41b2603a",
+          "name": "Dioscorus",
+          "qid": "Q141901693"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 268,
+          "end": 277,
+          "check": "41f14e4a",
           "name": "Dioscorus",
           "qid": "Q141901693"
         }
@@ -161730,6 +162046,15 @@
           "qid": "Q44011"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 87,
+          "end": 94,
+          "check": "d11a4de0",
+          "name": "Basilius Magnus",
+          "qid": "Q44258"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 107,
@@ -161742,6 +162067,15 @@
               "name": "Basilius Magnus"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 451,
+          "end": 459,
+          "check": "34076c22",
+          "name": "Gregorius Nazianzenus",
+          "qid": "Q44011"
         },
         {
           "kind": "place",
@@ -180606,6 +180940,15 @@
           "qid": null
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 56,
+          "end": 64,
+          "check": "64b3fab3",
+          "name": "Iosippus",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 77,
@@ -180898,6 +181241,15 @@
           "end": 551,
           "check": "8a6128fa",
           "name": "Porphyrius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 566,
+          "end": 573,
+          "check": "b52d8296",
+          "name": "Pamphilus",
           "qid": null
         },
         {
@@ -199547,6 +199899,15 @@
           "check": "2db68bd4",
           "name": "Agathonica",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 123,
+          "end": 129,
+          "check": "3072dccc",
+          "name": "Papylus",
+          "qid": null
         }
       ],
       "mr:0413-franciscus-dickenson-et-milo-gerard": [
@@ -207632,6 +207993,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 141,
+          "end": 148,
+          "check": "b6a34091",
+          "name": "Secundus Abulae",
+          "qid": null
         },
         {
           "kind": "place",
@@ -220135,6 +220505,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 57,
+          "end": 63,
+          "check": "fddc5048",
+          "name": "Ierax",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 65,
           "end": 70,
           "check": "d8528a94",
@@ -223753,10 +224132,28 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 69,
+          "end": 78,
+          "check": "f4b4dfb8",
+          "name": "Wallabonsus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 89,
           "end": 98,
           "check": "9469d384",
           "name": "Sabinianus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 111,
+          "check": "2b2d79fb",
+          "name": "Wistremundus",
           "qid": null
         },
         {
@@ -231409,6 +231806,15 @@
           "check": "a1375a96",
           "name": "Marcella",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 376,
+          "end": 385,
+          "check": "a357b88e",
+          "name": "Potamioenia",
+          "qid": null
         }
       ],
       "mr:0628-severianus-baranyk-et-ioachim-senkivskyj": [
@@ -233733,6 +234139,24 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 51,
+          "check": "244696cb",
+          "name": "Ioannes Cornelius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 67,
+          "check": "f8b78eb7",
+          "name": "Ioannes Cornelius",
+          "qid": null
         },
         {
           "kind": "person",
@@ -238915,6 +239339,15 @@
           "end": 144,
           "check": "dd247d68",
           "name": "Maria Clara a Sancto Martíno Blanc",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 147,
+          "end": 201,
+          "check": "e870e32d",
+          "name": "Maria Margarita a Sancta Sophia de Bargegie d'Albarede",
           "qid": null
         }
       ],
@@ -244114,6 +244547,15 @@
           "check": "da378df8",
           "name": "Maria Zhou Wuzhi",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 440,
+          "end": 445,
+          "check": "fb02c8c1",
+          "name": "Leo Ignatius Mangin",
+          "qid": null
         }
       ],
       "mr:0720-magdalena-yi-yong-hui-et-socii": [
@@ -247877,10 +248319,19 @@
         {
           "kind": "person",
           "where": "text",
-          "start": 63,
-          "end": 71,
-          "check": "244696cb",
+          "start": 16,
+          "end": 24,
+          "check": "d066e014",
           "name": "Ecclesius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 73,
+          "check": "89f3b4eb",
+          "name": "Ioannes I",
           "qid": null
         }
       ],
@@ -267713,6 +268164,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 283,
+          "end": 290,
+          "check": "e2d1583a",
+          "name": "Viator",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 309,
@@ -270517,6 +270977,15 @@
           "qid": null
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 66,
+          "end": 73,
+          "check": "ae9a5d0c",
+          "name": "Fusculus",
+          "qid": null
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 86,
@@ -272673,6 +273142,16 @@
           "end": 60,
           "check": "1ed1b286",
           "name": "Lucius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 77,
+          "check": "2e279f06",
+          "name": "Felix",
+          "n": 2,
           "qid": null
         },
         {
@@ -277233,6 +277712,15 @@
           "check": "9a7d4e8c",
           "name": "Maria a Iesu de la Yglesia y de Varo",
           "qid": "Q141902104"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 88,
+          "check": "126c8765",
+          "name": "Maria a Doloribus Aguiar-Mella y Diaz",
+          "qid": "Q23943183"
         },
         {
           "kind": "person",
@@ -289140,6 +289628,24 @@
           "check": "2ce47a6f",
           "name": "Quirinus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 109,
+          "end": 117,
+          "check": "e310b785",
+          "name": "Scubiculus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 120,
+          "end": 126,
+          "check": "93853d19",
+          "name": "Pientia",
+          "qid": null
         }
       ],
       "mr:1011-petrus-le-tuy": [
@@ -291160,6 +291666,15 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 538,
+          "end": 545,
+          "check": "a07b5d85",
+          "name": "Maxima",
+          "qid": null
         }
       ],
       "mr:1016-mummolinus": [
@@ -302208,6 +302723,24 @@
           "check": "30b51b1b",
           "name": "Paulillus",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 416,
+          "end": 424,
+          "check": "efd006cf",
+          "name": "Paschasius",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 428,
+          "end": 438,
+          "check": "3dc6a047",
+          "name": "Eutychianus",
+          "qid": null
         }
       ],
       "mr:1113-brictius": [
@@ -311789,6 +312322,15 @@
           "qid": "Q961817"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 190,
+          "end": 197,
+          "check": "26ffbc97",
+          "name": "Edmundus Campion",
+          "qid": "Q547042"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 271,
@@ -316257,6 +316799,15 @@
           "start": 96,
           "end": 104,
           "check": "41b2603a",
+          "name": "Dioscorus",
+          "qid": "Q141901693"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 313,
+          "end": 321,
+          "check": "df928efa",
           "name": "Dioscorus",
           "qid": "Q141901693"
         }
