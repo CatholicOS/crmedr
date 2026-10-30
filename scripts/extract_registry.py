@@ -222,60 +222,61 @@ ENTRY_NOTES = {
     "mr:0722-martyres-massilitani": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
     "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
     "mr:0301-leo-lucas": (
-        "The monastery of Mula took its name from Monte La Mula (1,935 m) in the Orsomarso mountains of northern "
-        "Calabria: Italian Wikipedia's life of Leoluca says he lived \"nel monastero presso il monte Mula\" (in "
-        "the monastery by Mount Mula) under the hegumen Christopher before they moved to the Mercurion. The "
-        "monastery's own site is lost; the place is mapped at the mountain."
+        "The monastery of Mula took its name from Monte La Mula (Q31610309, 1,935 m) in the Orsomarso mountains "
+        "(Q1114894) of northern Calabria: Italian Wikipedia's life of Leoluca says he lived \"nel monastero "
+        "presso il monte Mula\" (in the monastery by Mount Mula) under the hegumen Christopher before they moved "
+        "to the Mercurion (Q3855082). The monastery's own site is lost; the place is mapped at the mountain."
     ),
     "mr:1022-lupentius": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
     "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
     "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
     "mr:0721-simeon-salus": "Leontius's Life places Simeon and John's hermitage by the Dead Sea near the Arnon (Wadi Mujib, Jordan); the exact site is unknown.",
     "mr:1204-adrehildis": (
-        "The monastery is most likely the nuns' abbey of Saint-Julien-du-Pré at Le Mans, whose church is "
-        "Notre-Dame-du-Pré. The Benedictine tradition (English Wikipedia, Saint Ada) has Bishop Aiglibert of Le "
-        "Mans transfer her from Soissons \"to the monastery of Pré (St. Julian de Prato) at Le Mans\" as "
-        "abbess, and French Wikipedia says the church \"était église abbatiale de l'abbaye Saint-Julien-du-Pré, "
-        "qui recevait des religieuses bénédictines\" (was the abbey church of Saint-Julien-du-Pré, a house of "
-        "Benedictine nuns). No source found says outright that the Martyrology's monastery of Saint Mary is "
-        "this house."
+        "The monastery is most likely the nuns' abbey of Saint-Julien-du-Pré at Le Mans (Q1476), whose church is "
+        "Notre-Dame-du-Pré (Q3580415). The Benedictine tradition (English Wikipedia, Saint Ada) has Bishop "
+        "Aiglibert of Le Mans transfer her from Soissons (Q167152) \"to the monastery of Pré (St. Julian de "
+        "Prato) at Le Mans\" as abbess, and French Wikipedia says the church \"était église abbatiale de l'abbaye "
+        "Saint-Julien-du-Pré, qui recevait des religieuses bénédictines\" (was the abbey church of "
+        "Saint-Julien-du-Pré, a house of Benedictine nuns). No source found says outright that the Martyrology's "
+        "monastery of Saint Mary is this house."
     ),
     "mr:0304-appianus": (
-        "The monastery of Pavia was San Pietro in Ciel d'Oro. A. M. Zimmermann's life of Appian (Bibliotheca "
-        "Sanctorum, on santiebeati.it) says he \"fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro\" "
-        "(was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to "
-        "Comacchio to oversee the monastery's supply of salt."
+        "The monastery of Pavia (Q6259) was San Pietro in Ciel d'Oro (Q3860504). A. M. Zimmermann's life of "
+        "Appian (Bibliotheca Sanctorum, on santiebeati.it) says he \"fu monaco a Pavia nel monastero di San "
+        "Pietro in Ciel d'Oro\" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his "
+        "abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt."
     ),
     "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
     "mr:0927-bonfilius": (
-        "The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco near Filottrano (Ancona). "
-        "U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that Bonfilius, born at Osimo about "
-        "1040, \"giovanissimo entrò a S. Maria di Storaco in quel di Filottrano (Ancona), cenobio del quale più "
-        "tardi sarebbe diventato abate\" (entered it very young and later became its abbot). The Comune di "
-        "Filottrano's history of the site says the abbey was built in the 11th century on a hill north-west of "
-        "the town, was destroyed with the castle of Storaco around 1200, and was replaced by a shrine of the "
-        "Virgin; the present church of Santa Maria di Storaco, rebuilt from 1351 around the older apse, stands "
-        "on the site."
+        "The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco (Q141922767) near "
+        "Filottrano (Q124029, Ancona). U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that "
+        "Bonfilius, born at Osimo (Q124554) about 1040, \"giovanissimo entrò a S. Maria di Storaco in quel di "
+        "Filottrano (Ancona), cenobio del quale più tardi sarebbe diventato abate\" (entered it very young and "
+        "later became its abbot). The Comune di Filottrano's history of the site says the abbey was built in the "
+        "11th century on a hill north-west of the town, was destroyed with the castle of Storaco around 1200, and "
+        "was replaced by a shrine of the Virgin; the present church of Santa Maria di Storaco (Q119193681), "
+        "rebuilt from 1351 around the older apse, stands on the site."
     ),
     "mr:0819-bartholomaeus-de-simero": (
-        "The monastery of Greeks is Santa Maria del Patire near Rossano (Corigliano-Rossano, Calabria), first "
-        "dedicated to Santa Maria Nuova Odigitria. The FAI's description of the site says the church and "
-        "monastery \"fu edificata tra il 1100 e il 1105, dal monaco e sacerdote basiliano San Bartolomeo da "
-        "Simeri\" (were built between 1100 and 1105 by the Basilian monk and priest Saint Bartholomew of "
-        "Simeri), and that it took the name Patir, the monastery of the Father, after him."
+        "The monastery of Greeks is Santa Maria del Patire (Q3603276) near Rossano (Q53952, Corigliano-Rossano, "
+        "Calabria), first dedicated to Santa Maria Nuova Odigitria. The FAI's description of the site says the "
+        "church and monastery \"fu edificata tra il 1100 e il 1105, dal monaco e sacerdote basiliano San "
+        "Bartolomeo da Simeri\" (were built between 1100 and 1105 by the Basilian monk and priest Saint "
+        "Bartholomew of Simeri), and that it took the name Patir, the monastery of the Father, after him."
     ),
     "mr:0905-ioannes-bonus-de-siponto": (
-        "The monastery of Saint Michael was on the island of Mljet (Meleda), as the Italian edition says; the Latin "
-        "names only the Dalmatian coast facing the Gargano. The Pulsano martyrology (Acta Sanctorum, June IV, p. 41) "
-        "says John of Matera sent John as abbot to the island of \"Melita\", and a bull of Alexander III of "
-        "9 February 1177 lists \"ecclesiam sancti Michaelis in Meleta\" among the possessions of Pulsano "
-        "(A. Cavallini, Santa Maria di Pulsano, 2002, p. 178). L. Mattei-Cerasoli (La Congregazione benedettina "
-        "degli eremiti pulsanesi, 1938, pp. 12, 15) places it opposite the Gargano and rejects Malta, whose "
-        "\"island of Saint Michael\" took that name only in 1555; he has John sent to govern the monastery, "
-        "where the Martyrology says he built it. Which church on Mljet it was is disputed: the church of Saint "
-        "Michael near Babino Polje (Sutmiho), the late-antique basilica at Polače, or an earlier shrine on the "
-        "islet of Saint Mary in the Great Lake (I. Tomas, Prilozi povijesti umjetnosti u Dalmaciji 43, 2016, "
-        "pp. 78-79; Institute of Art History, Zagreb, conservation study of Saint Mary on Mljet, 2022)."
+        "The monastery of Saint Michael was on the island of Mljet (Meleda, Q211306), as the Italian edition "
+        "says; the Latin names only the Dalmatian coast facing the Gargano (Q763332). The Pulsano martyrology "
+        "(Acta Sanctorum, June IV, p. 41) says John of Matera sent John as abbot to the island of \"Melita\", and "
+        "a bull of Alexander III of 9 February 1177 lists \"ecclesiam sancti Michaelis in Meleta\" among the "
+        "possessions of Pulsano (Q3603280; A. Cavallini, Santa Maria di Pulsano, 2002, p. 178). L. "
+        "Mattei-Cerasoli (La Congregazione benedettina degli eremiti pulsanesi, 1938, pp. 12, 15) places it "
+        "opposite the Gargano and rejects Malta (Q233), whose \"island of Saint Michael\" took that name only in "
+        "1555; he has John sent to govern the monastery, where the Martyrology says he built it. Which church on "
+        "Mljet it was is disputed: the church of Saint Michael near Babino Polje (Q3442639, Sutmiho), the "
+        "late-antique basilica at Polače (Q3443490), or an earlier shrine on the islet of Saint Mary (Q1454858) "
+        "in the Great Lake (I. Tomas, Prilozi povijesti umjetnosti u Dalmaciji 43, 2016, pp. 78-79; Institute of "
+        "Art History, Zagreb, conservation study of Saint Mary on Mljet, 2022)."
     ),
     "mr:0705-dometius-medicus": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified.",
     "mr:0930-gregorius-illuminator": (
@@ -299,13 +300,13 @@ ENTRY_NOTES = {
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
     "mr:0330-clinius": (
-        "The monastery of Saint Peter of the Wood (San Pietro della Foresta) stood in the Liri valley between "
-        "Pontecorvo and Esperia; it is not the village of San Pietro in Curolis. The archaeological census of "
-        "the Geoportale Nazionale per l'Archeologia (record 5597, after J. W. Hayes and I. P. Martini, "
-        "Archaeological Survey in the Lower Liri Valley, 1994, p. 236 no. 576) records the site \"S. Pietro in "
-        "Foresta = La Torre\" in the comune of Esperia, near Crocella di Sant'Oliva: \"area estesa per 50 m "
-        "attorno alle rovine di una chiesa\" (an area of 50 m around the ruins of a church), with common, "
-        "African red-slip and medieval pottery."
+        "The monastery of Saint Peter of the Wood (San Pietro della Foresta, Q141922221) stood in the Liri "
+        "(Q71562) valley between Pontecorvo (Q117186) and Esperia (Q116819); it is not the village of San Pietro "
+        "in Curolis (Q3947819). The archaeological census of the Geoportale Nazionale per l'Archeologia (record "
+        "5597, after J. W. Hayes and I. P. Martini, Archaeological Survey in the Lower Liri Valley, 1994, p. 236 "
+        "no. 576) records the site \"S. Pietro in Foresta = La Torre\" in the comune of Esperia, near Crocella di "
+        "Sant'Oliva (Q18453456): \"area estesa per 50 m attorno alle rovine di una chiesa\" (an area of 50 m "
+        "around the ruins of a church), with common, African red-slip and medieval pottery."
     ),
     "mr:1223-theodulus-et-socii": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified.",
     "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
