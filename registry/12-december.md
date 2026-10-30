@@ -41,7 +41,7 @@
 | 4 | 5 | `mr:1204-felix` |  | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:1204-aprus` | * | FR | dies_natalis |  |  |
 | 4 | 7 | `mr:1204-sigiramnus` | * | FR | dies_natalis |  |  |
-| 4 | 8 | `mr:1204-adrehildis` | * | FR | dies_natalis |  | The monastery of Saint Mary at Le Mans of which Adrehild was abbess is not identified. |
+| 4 | 8 | `mr:1204-adrehildis` | * | FR | dies_natalis |  | The monastery is most likely the nuns' abbey of Saint-Julien-du-Pré at Le Mans (Q1476), whose church is Notre-Dame-du-Pré (Q3580415). The Benedictine tradition (English Wikipedia, Saint Ada) has Bishop Aiglibert of Le Mans transfer her from Soissons (Q167152) "to the monastery of Pré (St. Julian de Prato) at Le Mans" as abbess, and French Wikipedia says the church "était église abbatiale de l'abbaye Saint-Julien-du-Pré, qui recevait des religieuses bénédictines" (was the abbey church of Saint-Julien-du-Pré, a house of Benedictine nuns). No source found says outright that the Martyrology's monastery of Saint Mary is this house. |
 | 4 | 9 | `mr:1204-sola` | * | DE | dies_natalis |  |  |
 | 4 | 10 | `mr:1204-ioannes-thaumaturgus` |  | TR | dies_natalis | same as `mr:1205-ioannes-thaumaturgus` |  |
 | 4 | 11 | `mr:1204-anno` |  | DE | dies_natalis |  |  |
