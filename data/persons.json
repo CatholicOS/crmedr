@@ -41037,16 +41037,19 @@
         },
         {
           "name": "Eusebius",
-          "where": "text"
+          "where": "text",
+          "role": "mentioned"
         },
         {
           "name": "Nestabius",
-          "where": "text"
+          "where": "text",
+          "role": "mentioned"
         },
         {
           "name": "Zeno",
           "n": 2,
-          "where": "text"
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:1226-zosimus": [

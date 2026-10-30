@@ -9246,18 +9246,21 @@
     {
       "name": "Eusebius",
       "where": "text",
-      "it": "Eusebio"
+      "it": "Eusebio",
+      "role": "mentioned"
     },
     {
       "name": "Nestabius",
       "where": "text",
-      "it": "Nestabio"
+      "it": "Nestabio",
+      "role": "mentioned"
     },
     {
       "name": "Zeno",
       "n": 2,
       "where": "text",
-      "it": "Zenone"
+      "it": "Zenone",
+      "role": "mentioned"
     }
   ],
   "mr:1227-theodorus": [
