@@ -164,6 +164,11 @@ class BuildTest(unittest.TestCase):
                                             {"kind": "place", "qid": "Q220"}, {"kind": "person", "qid": "Q9"}]}}}
         self.assertEqual(pd.person_qids(doc), ["Q9", "Q19546"])
 
+    def test_person_qids_include_the_other_persons_a_mark_names(self):
+        doc = {"editions": {"ed": {"mr:x": [{"kind": "person", "qid": "Q1",
+                                             "others": [{"name": "Nemo", "n": 2, "qid": "Q2"}, {"name": "X", "qid": None}]}]}}}
+        self.assertEqual(pd.person_qids(doc), ["Q1", "Q2"])
+
     def test_build_skips_missing_items_and_asks_commons_once(self):
         class Client:
             files = None

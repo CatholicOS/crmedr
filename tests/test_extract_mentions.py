@@ -368,6 +368,19 @@ class BuildEditionTest(unittest.TestCase):
                                      curated)
         self.assertEqual([(m["n"], m["qid"]) for m in out["mr:0101-felix"]], [(2, "Q2")])
 
+    def test_a_curated_mark_naming_two_persons_takes_each_ones_qid(self):
+        text = "Romæ, duóbus discípulis, quibus nomen Felix."
+        s = text.rindex("Felix")
+        curated = {"mr:0101-felix": [{"kind": "person", "where": "text", "start": s, "end": s + 5,
+                                      "check": em.check("Felix"), "name": "Felix", "qid": None,
+                                      "others": [{"name": "Felix", "n": 2, "qid": None}]}]}
+        out, _, _ = em.build_edition("la", {"mr:0101-felix": text}, {}, {}, {}, {},
+                                     {"mr:0101-felix": {"Felix": {"wikidata": "Q1", "status": "auto"},
+                                                        "Felix#2": {"wikidata": "Q2", "status": "auto"}}},
+                                     curated)
+        m = out["mr:0101-felix"][0]
+        self.assertEqual((m["qid"], m["others"]), ("Q1", [{"name": "Felix", "n": 2, "qid": "Q2"}]))
+
     def test_a_curated_span_whose_check_fails_is_an_error(self):
         s = BASIL_TEXT.index("Basilíi")
         curated = {"mr:0101-basilius": [{"kind": "person", "where": "text", "start": s, "end": s + 7,
@@ -399,6 +412,19 @@ class ValidateTest(unittest.TestCase):
     def test_a_person_needs_a_name_and_a_place_has_none(self):
         nameless = dict(person(13, 20, "Nemínis"), name=None)
         self.assertIn("a person needs a name", self.errors([nameless])[0])
+
+    def test_a_mark_may_name_other_persons(self):
+        shared = dict(person(13, 20, "Nemínis"), others=[{"name": "Nemo", "n": 2, "qid": None}])
+        self.assertEqual(self.errors([shared]), [])
+
+    def test_the_other_persons_of_a_mark_are_named_distinct_persons(self):
+        same = dict(person(13, 20, "Nemínis"), others=[{"name": "Nemo", "qid": None}])
+        twice = dict(person(13, 20, "Nemínis"), others=[{"name": "Nemo", "n": 2, "qid": None}] * 2)
+        nameless = dict(person(13, 20, "Nemínis"), others=[{"name": None, "qid": None}])
+        place = {"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None,
+                 "others": [{"name": "Nemo", "qid": None}]}
+        for mention in (same, twice, nameless, place):
+            self.assertIn("other persons", self.errors([mention])[0])
 
     def test_a_missing_footnote_is_an_error(self):
         m = dict(person(0, 4, "Nemo"), where={"footnote": 3})
@@ -438,6 +464,14 @@ class RenderTest(unittest.TestCase):
         m = {"kind": "person", "where": "text", "start": s, "end": s + 7, "form": "Felícis", "name": "Felix", "n": 2,
              "qid": None}
         self.assertEqual(list(em.to_file(m, text)), ["kind", "where", "start", "end", "check", "name", "n", "qid"])
+        self.assertEqual(em.from_file(em.to_file(m, text), text), m)
+
+    def test_a_mark_naming_several_persons_keeps_them_in_the_file(self):
+        text = "Romæ, duóbus discípulis, quibus nomen Felix."
+        s = text.rindex("Felix")
+        m = {"kind": "person", "where": "text", "start": s, "end": s + 5, "form": "Felix", "name": "Felix",
+             "qid": "Q1", "others": [{"name": "Felix", "n": 2, "qid": "Q2"}]}
+        self.assertEqual(list(em.to_file(m, text)), ["kind", "where", "start", "end", "check", "name", "qid", "others"])
         self.assertEqual(em.from_file(em.to_file(m, text), text), m)
 
     def test_report(self):
@@ -791,6 +825,14 @@ class ApplyDecisionsTest(unittest.TestCase):
         em.apply_decisions(curated, mentions, exported)
         added = curated[ED]["mr:x"][1]
         self.assertEqual((added["name"], added["n"]), ("Nemo", 2))
+
+    def test_an_added_mark_keeps_the_other_persons_it_names(self):
+        exported = {"operations": [self.op("add_mention", kind="person", name="Nemo", start=13, end=20,
+                                           form="Nemínis", others=[{"name": "Nemo", "n": 2}])]}
+        mentions = {ED: {"mr:x": [stored("place", 0, 4, "Romæ", qid="Q220")]}}
+        curated = {}
+        em.apply_decisions(curated, mentions, exported)
+        self.assertEqual(curated[ED]["mr:x"][1]["others"], [{"name": "Nemo", "n": 2, "qid": None}])
 
     def test_set_span_with_an_edit(self):
         exported = {"operations": [self.op("set_span", "edit", kind="place", **{"from": {"start": 0, "end": 4},

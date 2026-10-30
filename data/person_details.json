@@ -20615,6 +20615,20 @@
       "es": "Pedro Pascual"
     }
   },
+  "Q754124": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 666,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "es": "Anastasio el apocrisiario",
+      "pt": "Anastásio, o Apocrisiário"
+    }
+  },
   "Q767708": {
     "description": {
       "en": "Spanish priest, writer and educator (1840–1896)",
@@ -29421,9 +29435,9 @@
     "description": {
       "en": "patroness of First Holy Communicants",
       "it": "religiosa italiana",
-      "fr": "jeune fille italienne, morte à 11 ans, lors d'une extase pendant sa Première communion et béatifiée en 1826",
+      "fr": "jeune fille italienne béatifiée",
       "de": "Selige des 14. Jahrhunderts, Patronin der Erstkommunikanten",
-      "es": "religiosa italiana, fallecida a los 11 años de edad, en un profundo éxtasis durante su primera comunión"
+      "es": "religiosa italiana"
     },
     "born": {
       "year": 1322,
@@ -43347,7 +43361,8 @@
   "Q11731825": {
     "description": {
       "en": "Clarisse nun",
-      "fr": "sœur ursuline"
+      "fr": "sœur ursuline",
+      "de": "französische Klarissin"
     },
     "born": {
       "year": 1747,
@@ -49515,6 +49530,21 @@
     "wikipedia": {
       "it": "Antonio dell'Aquila"
     }
+  },
+  "Q95277872": {
+    "description": {
+      "en": "disciple of Maximus the Confessor",
+      "it": "discepolo di Massimo il Confessore",
+      "fr": "disciple de Maxime le Confesseur"
+    },
+    "born": null,
+    "died": {
+      "year": 662,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
   },
   "Q97253316": {
     "description": {
