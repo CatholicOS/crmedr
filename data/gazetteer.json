@@ -23700,9 +23700,10 @@
       "status": "jev"
     },
     "monastério Storacénsi": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: Monastery of Storaco near Fano/Marche region; not identified, no item found"
+      "wikidata": "Q141922767",
+      "label": "Abbey of Santa Maria di Storaco",
+      "country": "IT",
+      "status": "reviewed"
     },
     "monastério Vallis Castri in Picéno Itáliæ": {
       "wikidata": "Q141830988",
