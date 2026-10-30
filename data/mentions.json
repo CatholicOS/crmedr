@@ -95730,7 +95730,14 @@
           "end": 336,
           "check": "5dde6f0c",
           "name": "Anastasius",
-          "qid": null
+          "qid": null,
+          "others": [
+            {
+              "name": "Anastasius",
+              "n": 2,
+              "qid": "Q754124"
+            }
+          ]
         },
         {
           "kind": "place",
@@ -192783,7 +192790,14 @@
           "end": 195,
           "check": "a9258224",
           "name": "Frumentius",
-          "qid": "Q141901624"
+          "qid": "Q141901624",
+          "others": [
+            {
+              "name": "Frumentius",
+              "n": 2,
+              "qid": "Q141901625"
+            }
+          ]
         }
       ],
       "mr:0324-catharina": [
@@ -256775,7 +256789,14 @@
           "end": 420,
           "check": "741b26af",
           "name": "Anastasius",
-          "qid": null
+          "qid": null,
+          "others": [
+            {
+              "name": "Anastasius",
+              "n": 2,
+              "qid": "Q754124"
+            }
+          ]
         },
         {
           "kind": "place",

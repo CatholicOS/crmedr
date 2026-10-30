@@ -3510,6 +3510,72 @@
           ]
         }
       ],
+      "mr:0813-maximus-confessor": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 50,
+          "check": "894c71f6",
+          "qid": "Q140314",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 87,
+          "check": "86d6c95c",
+          "name": "Maximus Confessor",
+          "qid": "Q206842"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 97,
+          "end": 134,
+          "check": "b320bf78",
+          "qid": "Q3515347",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 326,
+          "end": 336,
+          "check": "5dde6f0c",
+          "name": "Anastasius",
+          "qid": null,
+          "others": [
+            {
+              "name": "Anastasius",
+              "n": 2,
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 387,
+          "end": 403,
+          "check": "276ad834",
+          "qid": "Q136884",
+          "roles": [
+            {
+              "role": "exile"
+            }
+          ]
+        }
+      ],
       "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii": [
         {
           "kind": "place",
@@ -10345,6 +10411,59 @@
           "qid": null
         }
       ],
+      "mr:0323-victorianus-et-socii": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 43,
+          "check": "ddfc3892",
+          "name": "Victorianus",
+          "qid": "Q141901622"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 59,
+          "end": 68,
+          "check": "0caef79e",
+          "qid": "Q28151514",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 134,
+          "end": 150,
+          "check": "4d51d13a",
+          "qid": "Q622989",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 186,
+          "end": 195,
+          "check": "a9258224",
+          "name": "Frumentius",
+          "qid": "Q141901624",
+          "others": [
+            {
+              "name": "Frumentius",
+              "n": 2,
+              "qid": null
+            }
+          ]
+        }
+      ],
       "mr:0325-bonus-latro": [
         {
           "kind": "person",
@@ -15299,6 +15418,72 @@
           "check": "32534366",
           "name": "Dionysius",
           "qid": null
+        }
+      ],
+      "mr:0813-maximus-confessor": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 95,
+          "check": "31a56dad",
+          "qid": "Q140314",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 113,
+          "end": 134,
+          "check": "966a04aa",
+          "name": "Maximus Confessor",
+          "qid": "Q206842"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 145,
+          "end": 178,
+          "check": "358cf03b",
+          "qid": "Q3515347",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 411,
+          "end": 420,
+          "check": "741b26af",
+          "name": "Anastasius",
+          "qid": null,
+          "others": [
+            {
+              "name": "Anastasius",
+              "n": 2,
+              "qid": null
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 486,
+          "end": 507,
+          "check": "23b20c05",
+          "qid": "Q136884",
+          "roles": [
+            {
+              "role": "exile"
+            }
+          ]
         }
       ],
       "mr:0815-ludovicus-masferrer-vila-et-socii": [

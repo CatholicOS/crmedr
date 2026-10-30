@@ -467,6 +467,13 @@ def check(words):
     return hashlib.sha256(words.encode("utf-8")).hexdigest()[:8]
 
 
+def other_persons(others, qid=lambda o: o.get("qid")):
+    """The other persons a person mark names (one word for several: "quibus nomen Anastasius"),
+    as the data files hold them: name, n when not the first, QID."""
+    return [{"name": o.get("name"), **({"n": o["n"]} if o.get("n") not in (None, 1) else {}), "qid": qid(o)}
+            for o in others]
+
+
 def from_file(m, src):
     """A mention as the data files hold it (UTF-16 offsets, check) as an internal
     one (code points, the printed words in `form`). `form` is None when the words
@@ -481,6 +488,8 @@ def from_file(m, src):
         if "n" in m:
             out["n"] = m["n"]
     out["qid"] = m.get("qid")
+    if m["kind"] == "person" and m.get("others"):
+        out["others"] = other_persons(m["others"])
     if m.get("roles"):
         out["roles"] = m["roles"]
     return out
@@ -493,6 +502,8 @@ def curated_mention(m, items, lang, place_qid, person_qid, source):
     out = from_file(m, source(m["where"]))
     if m["kind"] == "person":
         out["qid"] = person_qid(person_key(out))
+        if out.get("others"):
+            out["others"] = other_persons(out["others"], lambda o: person_qid(person_key(o)))
     else:
         item = next((it for it in items if out["form"] is not None and it.get(lang) == out["form"]),
                     items[0] if len(items) == 1 else None)
@@ -613,6 +624,12 @@ def validate(by_edition, source):
                     errors.append(f"{tag}: more than {MAX_FORM_WORDS} words")
                 if (m["kind"] == "person") != bool(m.get("name")):
                     errors.append(f"{tag}: a person needs a name, and a place has none")
+                if "others" in m:
+                    keys = [person_key(m), *(person_key(o) for o in m["others"] or [])]
+                    if (m["kind"] != "person" or not m["others"] or not all(o.get("name") for o in m["others"])
+                            or len(set(keys)) != len(keys)):
+                        errors.append(f"{tag}: the other persons of a mark are named persons, each once, "
+                                      "and only a person mark has them")
                 for r in m.get("roles", []):
                     if m["kind"] != "place" or r.get("role") not in ROLES:
                         errors.append(f"{tag}: role {r.get('role')!r} is not a place role")
@@ -634,6 +651,8 @@ def to_file(m, src):
         if "n" in m:
             out["n"] = m["n"]
     out["qid"] = m["qid"]
+    if m["kind"] == "person" and m.get("others"):
+        out["others"] = other_persons(m["others"])
     if m.get("roles"):
         out["roles"] = m["roles"]
     return out
@@ -903,6 +922,9 @@ def apply_decisions(curated_editions, mentions_editions, exported):
                 if op.get("n"):
                     m["n"] = op["n"]
             m["qid"] = None  # copied from the decisions at extraction
+            others = edited.get("others", op.get("others"))
+            if op["kind"] == "person" and others:
+                m["others"] = other_persons(others, lambda o: None)
             current.append(m)
         else:
             old = op["from"] if op["op"] == "set_span" else op

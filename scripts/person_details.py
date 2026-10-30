@@ -81,9 +81,10 @@ def _qid_number(qid):
 
 
 def person_qids(mentions_doc):
-    """The QIDs that person mentions link to, by number."""
-    return sorted({m["qid"] for by_id in mentions_doc["editions"].values() for ms in by_id.values() for m in ms
-                   if m["kind"] == "person" and m.get("qid")}, key=_qid_number)
+    """The QIDs that person mentions link to (with the other persons a mark names), by number."""
+    persons = [p for by_id in mentions_doc["editions"].values() for ms in by_id.values() for m in ms
+               if m["kind"] == "person" for p in (m, *m.get("others", []))]
+    return sorted({p["qid"] for p in persons if p.get("qid")}, key=_qid_number)
 
 
 def build(client, qids):
