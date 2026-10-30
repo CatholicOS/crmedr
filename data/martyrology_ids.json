@@ -92288,7 +92288,10 @@
           "role": "foundation",
           "la": "monastérium Sancti Michaélis",
           "it": "monastero di San Michele",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q211306",
+          "label": "Mljet",
+          "country": "HR"
         },
         {
           "role": "mention",
@@ -92300,7 +92303,7 @@
           "country": "IT"
         }
       ],
-      "note": "The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested.",
+      "note": "The monastery of Saint Michael was on the island of Mljet (Meleda), as the Italian edition says; the Latin names only the Dalmatian coast facing the Gargano. The Pulsano martyrology (Acta Sanctorum, June IV, p. 41) says John of Matera sent John as abbot to the island of \"Melita\", and a bull of Alexander III of 9 February 1177 lists \"ecclesiam sancti Michaelis in Meleta\" among the possessions of Pulsano (A. Cavallini, Santa Maria di Pulsano, 2002, p. 178). L. Mattei-Cerasoli (La Congregazione benedettina degli eremiti pulsanesi, 1938, pp. 12, 15) places it opposite the Gargano and rejects Malta, whose \"island of Saint Michael\" took that name only in 1555; he has John sent to govern the monastery, where the Martyrology says he built it. Which church on Mljet it was is disputed: the church of Saint Michael near Babino Polje (Sutmiho), the late-antique basilica at Polače, or an earlier shrine on the islet of Saint Mary in the Great Lake (I. Tomas, Prilozi povijesti umjetnosti u Dalmaciji 43, 2016, pp. 78-79; Institute of Art History, Zagreb, conservation study of Saint Mary on Mljet, 2022).",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
       }

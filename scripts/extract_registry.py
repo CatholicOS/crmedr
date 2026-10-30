@@ -231,7 +231,19 @@ ENTRY_NOTES = {
     "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
     "mr:0927-bonfilius": "The site of the monastery of Storace (Storaco), where Bonfilius was abbot and monk, is not identified.",
     "mr:0819-bartholomaeus-de-simero": "The monastery of Greeks that Bartholomew of Simeri founded in Calabria is not named, and its site is unknown.",
-    "mr:0905-ioannes-bonus-de-siponto": "The site of the monastery of Saint Michael on the Dalmatian coast that John Bonus rebuilt is not identified; the island of Palagruža has been suggested.",
+    "mr:0905-ioannes-bonus-de-siponto": (
+        "The monastery of Saint Michael was on the island of Mljet (Meleda), as the Italian edition says; the Latin "
+        "names only the Dalmatian coast facing the Gargano. The Pulsano martyrology (Acta Sanctorum, June IV, p. 41) "
+        "says John of Matera sent John as abbot to the island of \"Melita\", and a bull of Alexander III of "
+        "9 February 1177 lists \"ecclesiam sancti Michaelis in Meleta\" among the possessions of Pulsano "
+        "(A. Cavallini, Santa Maria di Pulsano, 2002, p. 178). L. Mattei-Cerasoli (La Congregazione benedettina "
+        "degli eremiti pulsanesi, 1938, pp. 12, 15) places it opposite the Gargano and rejects Malta, whose "
+        "\"island of Saint Michael\" took that name only in 1555; he has John sent to govern the monastery, "
+        "where the Martyrology says he built it. Which church on Mljet it was is disputed: the church of Saint "
+        "Michael near Babino Polje (Sutmiho), the late-antique basilica at Polače, or an earlier shrine on the "
+        "islet of Saint Mary in the Great Lake (I. Tomas, Prilozi povijesti umjetnosti u Dalmaciji 43, 2016, "
+        "pp. 78-79; Institute of Art History, Zagreb, conservation study of Saint Mary on Mljet, 2022)."
+    ),
     "mr:0705-dometius-medicus": "Mount Quros in Armenia, where Dometius lived as a hermit, is not identified.",
     "mr:0930-gregorius-illuminator": "The cave near the confluence of the branches of the Euphrates where Gregory died is unnamed, and its site is unknown.",
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
