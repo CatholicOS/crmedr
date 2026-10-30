@@ -49531,6 +49531,21 @@
       "it": "Antonio dell'Aquila"
     }
   },
+  "Q95277872": {
+    "description": {
+      "en": "disciple of Maximus the Confessor",
+      "it": "discepolo di Massimo il Confessore",
+      "fr": "disciple de Maxime le Confesseur"
+    },
+    "born": null,
+    "died": {
+      "year": 662,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q97253316": {
     "description": {
       "en": "bishop of Edessa, confessor under Decius",
