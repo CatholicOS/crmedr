@@ -309,7 +309,18 @@ ENTRY_NOTES = {
         "around the ruins of a church), with common, African red-slip and medieval pottery."
     ),
     "mr:1223-theodulus-et-socii": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified.",
-    "mr:0821-bassa-et-socii": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
+    "mr:0821-bassa-et-socii": (
+        "The island of Halona is ancient Halone (Pleiades 511263), today Paşalimanı Island (Q3083368) in the Sea "
+        "of Marmara (Q35367), off Cyzicus (Q615449). The Orthodox Church in America's life has Bassa come \"by "
+        "ship to the governor of the island of Alona, not far from Cyzicus, in the Propontis or Sea of "
+        "Marmora\", where she was beheaded. J. Pargoire (Échos d'Orient 6, 1903, pp. 315-317) says her Acts "
+        "place her death \"dans l'île d'Haloné, près de Cyzique\" (on the island of Halone, near Cyzicus), and "
+        "that the island still had a spring called the hagiasma of Saint Bassa \"au fond de son golfe "
+        "occidental, entre les bourgs d'Haloni et de Pacha-Liman\" (at the head of its western bay, between "
+        "the villages of Haloni and Pacha-Liman), where a proper office was sung on her feast, 21 August. The "
+        "site of her martyrium is not known. Her sons are placed at Edessa in Macedonia (Q209978) or, in "
+        "another account, at Larissa in Thessaly (Q178405) (OCA)."
+    ),
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
     # possible sites) or a site the archaeology places differently.
     "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",

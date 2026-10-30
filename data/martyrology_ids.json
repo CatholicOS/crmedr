@@ -85718,7 +85718,10 @@
           "la": "ínsula Halóna",
           "it": "isola di Alone",
           "source": "curated",
-          "person": "Bassa"
+          "person": "Bassa",
+          "wikidata": "Q3083368",
+          "label": "Paşalimanı Island",
+          "country": "TR"
         }
       ],
       "date": {
@@ -85726,7 +85729,7 @@
         "to": 309,
         "source": "wikidata"
       },
-      "note": "The island of Halona near Cyzicus, where Bassa is said to have been martyred, is not identified; it may be one of the Marmara islands.",
+      "note": "The island of Halona is ancient Halone (Pleiades 511263), today Paşalimanı Island (Q3083368) in the Sea of Marmara (Q35367), off Cyzicus (Q615449). The Orthodox Church in America's life has Bassa come \"by ship to the governor of the island of Alona, not far from Cyzicus, in the Propontis or Sea of Marmora\", where she was beheaded. J. Pargoire (Échos d'Orient 6, 1903, pp. 315-317) says her Acts place her death \"dans l'île d'Haloné, près de Cyzique\" (on the island of Halone, near Cyzicus), and that the island still had a spring called the hagiasma of Saint Bassa \"au fond de son golfe occidental, entre les bourgs d'Haloni et de Pacha-Liman\" (at the head of its western bay, between the villages of Haloni and Pacha-Liman), where a proper office was sung on her feast, 21 August. The site of her martyrium is not known. Her sons are placed at Edessa in Macedonia (Q209978) or, in another account, at Larissa in Thessaly (Q178405) (OCA).",
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"a Edessa nell’antica Siria\" where the Latin has \"Edessae in Hellade\" (Edessa in Greece, in Macedonia)."
       }

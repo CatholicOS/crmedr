@@ -6,53 +6,5 @@
     "edition": "martyrologium_romanum_2004",
     "registry": "data/places.json"
   },
-  "operations": [
-    {
-      "op": "resolve_place",
-      "id": "ínsula Halóna",
-      "la": "ínsula Halóna",
-      "it": [
-        "isola di Alone"
-      ],
-      "occurrences": [
-        "mr:0821-bassa-et-socii"
-      ],
-      "claims": [],
-      "failed": [
-        "redecide: left without an item (unresolved); research found one"
-      ],
-      "candidates": [
-        {
-          "wikidata": "Q3083368",
-          "label": "Paşalimanı Island",
-          "description": "isola in Turchia",
-          "country": "TR",
-          "countries": [
-            "TR"
-          ],
-          "la": [
-            "Halone"
-          ],
-          "p9314": false,
-          "coords": [
-            40.476111111111,
-            27.618611111111
-          ],
-          "types": [
-            "Q23442"
-          ],
-          "evidence": []
-        }
-      ],
-      "decision": null,
-      "edited": null,
-      "redecide": true,
-      "suggested": {
-        "wikidata": "Q3083368",
-        "country": "TR"
-      },
-      "confidence": "high",
-      "reasoning": "Research (2026-10-30, unlocated places): The ancient island Halone (Alone) in the Propontis near Cyzicus is Pleiades 511263, 'Halone (island)'. Q3083368 carries that Pleiades ID, the Latin label 'Halone' and the Greek label 'Αλώνη', at 40.476 N, 27.619 E in the Marmara islands off Erdek, opposite Cyzicus. The synaxarion tradition places Bassa's martyrdom on the island of Halone/Alone in the Propontis. Previous note: no item, unlocated: Island of Alone near Cyzicus (Propontis), possibly a Marmara island; no item identified"
-    }
-  ]
+  "operations": []
 }

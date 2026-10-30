@@ -24716,9 +24716,10 @@
       "status": "jev"
     },
     "ínsula Halóna": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: Island of Alone near Cyzicus (Propontis), possibly a Marmara island; no item identified"
+      "wikidata": "Q3083368",
+      "label": "Paşalimanı Island",
+      "country": "TR",
+      "status": "reviewed"
     },
     "ínsula Horáta": {
       "wikidata": "Q13837005",
