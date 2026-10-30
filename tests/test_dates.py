@@ -88,14 +88,14 @@ class EditionBoundsTest(unittest.TestCase):
         self.assertEqual(d.edition_bounds([{"id": "mr:0131-ioannes-bosco"}], keys), {})
 
     def test_bound_through_a_chain_of_links(self):
-        entries = [{"id": "mr:0205-albuinus", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]},
+        entries = [{"id": "mr:0205-albuinus-brixinae", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]},
                    {"id": "mr:0205-genuinus-et-albuinus", "deprecated": True,
-                    "same_eulogy": ["mr:0205-albuinus", "mr:0205-ingenuinus"]},
-                   {"id": "mr:0205-ingenuinus", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]}]
-        keys = {"martyrologium_romanum_1630": {"mr:0205-ingenuinus"},
+                    "same_eulogy": ["mr:0205-albuinus-brixinae", "mr:0205-ingenuinus-sebanae"]},
+                   {"id": "mr:0205-ingenuinus-sebanae", "same_eulogy": ["mr:0205-genuinus-et-albuinus"]}]
+        keys = {"martyrologium_romanum_1630": {"mr:0205-ingenuinus-sebanae"},
                 "martyrologium_romanum_1914_en_unofficial": {"mr:0205-genuinus-et-albuinus"}}
         self.assertEqual(d.edition_bounds(entries, keys),
-                         {"mr:0205-albuinus": 1630, "mr:0205-ingenuinus": 1630})
+                         {"mr:0205-albuinus-brixinae": 1630, "mr:0205-ingenuinus-sebanae": 1630})
 
     def test_absent_everywhere(self):
         self.assertEqual(d.edition_bounds([{"id": "mr:0101-c"}], self.KEYS), {})

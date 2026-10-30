@@ -362,7 +362,8 @@ class DeprecatedSameEulogy45Test(unittest.TestCase):
         mapping = re.findall(r"^\| (mr:\S+) \| (mr:\S+) \|$", table, re.M)
         self.assertEqual(len(mapping), 21)
         for gone, current in mapping:
-            self.assertNotIn(gone, entries)
+            if gone != current:  # a later rename may give the eulogy the removed ID (mr:0220-eucherius-aurelianensis)
+                self.assertNotIn(gone, entries)
             self.assertFalse(entries[current].get("deprecated"), current)
         for mr_id in self.KEPT:
             self.assertTrue(entries[mr_id]["deprecated"], mr_id)

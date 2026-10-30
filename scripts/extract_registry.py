@@ -479,7 +479,7 @@ EDITION_NOTES = {
             "Translation error: \"Constance\" where the Latin has \"Constantiénsi\" (Coutances)."
         ),
     },
-    "mr:0201-agrippanus": {
+    "mr:0201-agrippanus-anicii": {
         EDITION_EN: (
             "Translation error: \"returning to Rome from the borders of Velacum\" where the Latin "
             "has \"Roma ad fines Velacórum revértens\" (returning from Rome to the Velay)."
@@ -499,7 +499,7 @@ EDITION_NOTES = {
             "alone."
         ),
     },
-    "mr:0201-ioannes": {
+    "mr:0201-ioannes-alethensis": {
         EDITION_EN: (
             "Translation error: \"a man of justice and mercy\" where the Latin has \"miræ "
             "austeritátis et iustítiæ\" (of wonderful austerity and justice). Translation error: "
@@ -513,7 +513,7 @@ EDITION_NOTES = {
             "Andégavum\" (at Avrillé near Angers)."
         ),
     },
-    "mr:0201-ursus": {
+    "mr:0201-ursus-augustae-praetoriae": {
         EDITION_EN: (
             "Translation error: \"In the Alps of Greece\" where the Latin has \"Augústæ Prætóriæ in "
             "Alpibus Graiis\" (at Aosta in the Graian Alps)."
@@ -531,7 +531,7 @@ EDITION_NOTES = {
             "Translation error: \"Papirius\" where the Latin has \"Pápiæ\" (Papias)."
         ),
     },
-    "mr:0205-lucas": {
+    "mr:0205-lucas-carbonensis": {
         EDITION_EN: (
             "Translation error: \"Lucretius\" where the Latin has \"Lucæ\" (Luke)."
         ),
@@ -564,7 +564,7 @@ EDITION_NOTES = {
             "Translation error: \"Savona\" where the Latin has \"Saviliáni\" (Savigliano)."
         ),
     },
-    "mr:0212-ludanus": {
+    "mr:0212-ludanus-northeimi": {
         EDITION_EN: (
             "Translation error: \"Lucian\" where the Latin has \"Lúdani\" (Ludan)."
         ),
@@ -581,12 +581,12 @@ EDITION_NOTES = {
             "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
         ),
     },
-    "mr:0215-quinidius": {
+    "mr:0215-quinidius-vasionis": {
         EDITION_EN: (
             "Translation error: \"Quininus\" where the Latin has \"Quinídii\" (Quinidius)."
         ),
     },
-    "mr:0217-flavianus": {
+    "mr:0217-flavianus-constantinopolitanus": {
         EDITION_EN: (
             "Translation error: \"from the violence of the assault\" is added; the Latin says only "
             "\"brevi póstea vitam finívit\" (he died shortly afterward)."
@@ -1542,25 +1542,25 @@ EDITION_NOTES = {
             "\"monastérii Dii\" is the monastery named after its founder, Saint Dius."
         ),
     },
-    "mr:0212-meletius": {
+    "mr:0212-meletius-antiochenus": {
         EDITION_IT: (
             "Translation error: \"mandato dall’esilio\" (sent from exile) where the Latin has "
             "\"exsílio afféctus est\" (was sent into exile)."
         ),
     },
-    "mr:0217-evermodus": {
+    "mr:0217-evermodus-raceburgi": {
         EDITION_IT: (
             "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" "
             "(Holstein)."
         ),
     },
-    "mr:0219-bonifatius": {
+    "mr:0219-bonifatius-lausannensis": {
         EDITION_IT: (
             "Translation error: \"tra i monaci cistercensi\" (among Cistercian monks) where the "
             "Latin has \"apud moniáles Cisterciénses\" (among Cistercian nuns)."
         ),
     },
-    "mr:0220-eucherius": {
+    "mr:0220-eucherius-aurelianensis": {
         EDITION_IT: (
             "Translation error: \"dal re Carlo Martello\" (by King Charles Martel) where the Latin "
             "has \"duce\" (duke); Charles Martel was never king."
@@ -2071,7 +2071,7 @@ EDITION_NOTES = {
             "Translation error: the Latin Brixia is Brescia, not Brixen."
         ),
     },
-    "mr:0214-antoninus": {
+    "mr:0214-antoninus-surrenti": {
         EDITION_1914: (
             "Translation error: the Latin is Antoninus, not Antonius (Anthony)."
         ),
@@ -2444,7 +2444,7 @@ REVIEW_EDITION_NOTES = {
             "he was hanged)."
         ),
     },
-    "mr:0201-ioannes": {
+    "mr:0201-ioannes-alethensis": {
         EDITION_EN: (
             "Translation error: \"commended by Saint Bernard for being a poor bishop\" where the "
             "Latin has \"commendátus est, ut epíscopum páuperem se præbéret\" (was urged to show "
@@ -2457,7 +2457,7 @@ REVIEW_EDITION_NOTES = {
             "(Maria Anna, i.e. Marie-Anne Vaillot)."
         ),
     },
-    "mr:0201-paulus": {
+    "mr:0201-paulus-augustae-tricastinorum": {
         EDITION_EN: (
             "Translation error: \"France-Vienna\" where the Latin has \"in pago Gálliæ "
             "Viennénsi\" (the territory of Vienne in Gaul)."
@@ -2469,24 +2469,24 @@ REVIEW_EDITION_NOTES = {
             "Aurelianénsis\" (of Orléans)."
         ),
     },
-    "mr:0201-sigisbertus": {
+    "mr:0201-sigisbertus-metarum": {
         EDITION_EN: (
             "Translation error: \"Sigisbert, King of the Franks\" where the Latin has "
             "\"Sigisbérti regis Tértii\" (King Sigebert III)."
         ),
     },
-    "mr:0201-tryphon": {
+    "mr:0201-tryphon-phrygiae": {
         EDITION_EN: (
             "Translation error: \"Tryphonius\" where the Latin has \"Tryphónis\" (Tryphon)."
         ),
     },
-    "mr:0201-viridiana": {
+    "mr:0201-viridiana-castri-florentini": {
         EDITION_EN: (
             "Translation error: \"Castle Florence\" where the Latin has \"Castrum Florentínum\" "
             "(Castelfiorentino)."
         ),
     },
-    "mr:0202-flosculus": {
+    "mr:0202-flosculus-aureliani": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in the province of Lugdunensis)."
@@ -2516,7 +2516,7 @@ REVIEW_EDITION_NOTES = {
             "town of Longobardi."
         ),
     },
-    "mr:0203-celerinus": {
+    "mr:0203-celerinus-carthaginis": {
         EDITION_IT: (
             "Translation error: \"spada\" (sword) where the Latin has \"ferro\" (irons, i.e. "
             "chains, alongside the stocks)."
@@ -2533,7 +2533,7 @@ REVIEW_EDITION_NOTES = {
             "Hearts\")."
         ),
     },
-    "mr:0203-leonius": {
+    "mr:0203-leonius-pictavii": {
         EDITION_EN: (
             "Translation error: \"Leonianus\" where the Latin has \"Leónii\" (Leonius)."
         ),
@@ -2550,7 +2550,7 @@ REVIEW_EDITION_NOTES = {
             "(in the province of Lugdunensis)."
         ),
     },
-    "mr:0204-eutychius": {
+    "mr:0204-eutychius-romae": {
         EDITION_EN: (
             "Translation error: \"Eutychii\" where the Latin genitive \"Eutýchii\" means "
             "Eutychius."
@@ -2568,14 +2568,14 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Philere\" where the Latin has \"Philéæ\" (Phileas)."
         ),
     },
-    "mr:0205-albuinus": {
+    "mr:0205-albuinus-brixinae": {
         EDITION_EN: (
             "Translation error: \"Albinus\" where the Latin has \"Albuíni\" (Albuin). "
             "Translation error: \"from Sabina\" where the Latin has \"e Sebána\" (from Säben, "
             "Sabiona)."
         ),
     },
-    "mr:0205-avitus": {
+    "mr:0205-avitus-viennae": {
         EDITION_EN: (
             "Translation error: \"in France Lyon\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in the province of Lugdunensis)."
@@ -2593,12 +2593,12 @@ REVIEW_EDITION_NOTES = {
             "Laval."
         ),
     },
-    "mr:0205-ingenuinus": {
+    "mr:0205-ingenuinus-sebanae": {
         EDITION_EN: (
             "Translation error: \"Sabina\" where the Latin has \"Sebánæ\" (Säben, Sabiona)."
         ),
     },
-    "mr:0205-lucas": {
+    "mr:0205-lucas-carbonensis": {
         EDITION_EN: (
             "Translation error: \"Elire\" where the Latin has \"Elíæ\" (Elias)."
         ),
@@ -2608,13 +2608,13 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"last freed\" for \"demum liberáta\" (at last set free)."
         ),
     },
-    "mr:0209-ansbertus": {
+    "mr:0209-ansbertus-rothomagensis": {
         EDITION_IT: (
             "Translation error: \"dal re Pipino\" (by King Pepin) where the Latin has \"a "
             "Pippíno príncipe\" (Pepin of Herstal, mayor of the palace, not a king)."
         ),
     },
-    "mr:0210-hugo": {
+    "mr:0210-hugo-praemonstratensis": {
         EDITION_IT: (
             "Translation error: \"la rifondazione dell’Ordine\" (the refounding of the Order) "
             "where the Latin has \"novi Ordinis institutiónem\" (the establishment of the new "
@@ -2627,7 +2627,7 @@ REVIEW_EDITION_NOTES = {
             "(martyrs)."
         ),
     },
-    "mr:0210-scholastica": {
+    "mr:0210-scholastica-montis-casini": {
         EDITION_EN: (
             "Translation error: \"Commemoration\" where the Latin has \"Memória\" (Memorial)."
         ),
@@ -2638,7 +2638,7 @@ REVIEW_EDITION_NOTES = {
             "Latin \"in ódium fídei\" means out of hatred for the faith."
         ),
     },
-    "mr:0211-soter": {
+    "mr:0211-soteris-romae": {
         EDITION_EN: (
             "Translation error: \"set aside ... the honors of faith\" where the Latin says she "
             "put noble birth and honours second to the faith (\"fídei posthábitis\"). "
@@ -2646,7 +2646,7 @@ REVIEW_EDITION_NOTES = {
             "\"servílibus cæsa contuméliis\" (struck with blows fit for a slave)."
         ),
     },
-    "mr:0212-ludanus": {
+    "mr:0212-ludanus-northeimi": {
         EDITION_EN: (
             "Translation error: \"in Alsace\" omits \"ad ripam Illæ\" (on the bank of the Ill)."
         ),
@@ -2668,13 +2668,13 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"(Augusta)\" where the Latin has \"(Augustínæ)\" (Augustina)."
         ),
     },
-    "mr:0213-gosbertus": {
+    "mr:0213-gosbertus-osnabrugi": {
         EDITION_LA: (
             "Source error: \"Suebórum\" (the Suebi, Swabians) where Gosbert was bishop of the "
             "Swedes (Sueones)."
         ),
     },
-    "mr:0213-guimera": {
+    "mr:0213-guimera-carcasonis": {
         EDITION_EN: (
             "Translation error: \"Guimene\" where the Latin has \"Guiméræ\" (Guimera)."
         ),
@@ -2690,19 +2690,19 @@ REVIEW_EDITION_NOTES = {
             "Sirmium is Sremska Mitrovica, in present-day Serbia."
         ),
     },
-    "mr:0215-georgia": {
+    "mr:0215-georgia-arvernae": {
         EDITION_EN: (
             "Translation error: \"Auvergne\" where the Latin has \"Arvérnæ\" (the city of "
             "Clermont)."
         ),
     },
-    "mr:0215-quinidius": {
+    "mr:0215-quinidius-vasionis": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0217-silvinus": {
+    "mr:0217-silvinus-alciaci": {
         EDITION_IT: (
             "Translation error: \"Auxy-aux-Moines\" for the Latin \"Alcíaci\", which is "
             "Auchy-les-Moines (Auchy-lès-Hesdin)."
@@ -2711,7 +2711,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"apud Mórinos\" (among the Morini) is left untranslated."
         ),
     },
-    "mr:0218-helladius": {
+    "mr:0218-helladius-toletanus": {
         EDITION_EN: (
             "Translation error: \"a courtier of the king\" where the Latin has \"aulæ régiæ "
             "rector\" (governor of the royal court)."
@@ -2723,19 +2723,19 @@ REVIEW_EDITION_NOTES = {
             "exenterátus\" (and disembowelled with the blade)."
         ),
     },
-    "mr:0219-bonifatius": {
+    "mr:0219-bonifatius-lausannensis": {
         EDITION_IT: (
             "Translation error: \"La Chambre\" for the Latin \"Cámeræ\", which is the abbey of "
             "La Cambre near Brussels."
         ),
     },
-    "mr:0221-eustatius": {
+    "mr:0221-eustatius-antiochenus": {
         EDITION_IT: (
             "Translation error: \"a Tuzla\" for the Latin \"Traianópolim\" (Traianopolis, near "
             "present-day Alexandroupoli)."
         ),
     },
-    "mr:0221-germanus": {
+    "mr:0221-germanus-grandivallensis": {
         EDITION_IT: (
             "Translation error: \"Grandfelt\" for the Latin \"Grandivallénsi\" "
             "(Moutier-Grandval, in German Grandfelden)."
@@ -2751,13 +2751,13 @@ REVIEW_EDITION_NOTES = {
             "means the monument over his tomb in the Vatican."
         ),
     },
-    "mr:0222-isabella": {
+    "mr:0222-isabella-longi-campi": {
         EDITION_EN: (
             "Translation error: \"Poor Clare Sisters\" where the Latin has \"Sorórum Minórum\" "
             "(Sisters Minor)."
         ),
     },
-    "mr:0222-paschasius": {
+    "mr:0222-paschasius-viennae": {
         EDITION_EN: (
             "Translation error: \"in France of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (in Lugdunensian Gaul)."
@@ -2775,13 +2775,13 @@ REVIEW_EDITION_NOTES = {
             "assidéndo\" (attending the sick)."
         ),
     },
-    "mr:0226-alexander": {
+    "mr:0226-alexander-alexandrinus": {
         EDITION_EN: (
             "Translation error: \"weakened in divine truth\" where the Latin has \"divína "
             "veritáte infirmátum\" (refuted by divine truth)."
         ),
     },
-    "mr:0226-victor": {
+    "mr:0226-victor-archiaci": {
         EDITION_EN: (
             "Translation error: \"Arcy\" where the Latin has \"Archíaci\" (Arcis-sur-Aube)."
         ),

@@ -592,7 +592,7 @@ class OneWordCompanionTest(unittest.TestCase):
     rule, is automatic only when the item died on the eulogy's very day: Lucas with Silvanus
     (6 February) matched Luke the Evangelist, Moyses with Bassianus (14 February) Moses."""
 
-    LUCAS = dict(PERSON, eulogy="mr:0206-silvanus", name="Lucas", day="02-06", typology="commemoratio",
+    LUCAS = dict(PERSON, eulogy="mr:0206-silvanus-emesae", name="Lucas", day="02-06", typology="commemoratio",
                  subject="Sanctus Silvanus")
 
     def test_a_namesake_without_the_very_day_is_queued(self):
@@ -608,12 +608,12 @@ class OneWordCompanionTest(unittest.TestCase):
         self.assertEqual(bp.evaluate(silvanus, [cand("Q1", ["Silvanus"], died=None)])["auto"]["wikidata"], "Q1")
 
     def test_propose_withdraws_an_existing_automatic_match_that_fails_it(self):
-        items = {"mr:0206-silvanus": {"Lucas": {"wikidata": "Q128538", "status": "auto"}}}
+        items = {"mr:0206-silvanus-emesae": {"Lucas": {"wikidata": "Q128538", "status": "auto"}}}
         review = bp.new_changeset([])
-        bp.propose(items, review, {"mr:0206-silvanus|Lucas": self.LUCAS},
+        bp.propose(items, review, {"mr:0206-silvanus-emesae|Lucas": self.LUCAS},
                    FakeClient({"Lucas": [cand("Q128538", ["Lucas"], died=None)]}))
-        self.assertNotIn("mr:0206-silvanus", items)
-        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0206-silvanus|Lucas"])
+        self.assertNotIn("mr:0206-silvanus-emesae", items)
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0206-silvanus-emesae|Lucas"])
 
 
 class RepeatedNamesTest(unittest.TestCase):
