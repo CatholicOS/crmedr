@@ -148,7 +148,7 @@ class RenamesAppliedTest(unittest.TestCase):
         "mr:1115-guria": "mr:1115-guria-et-samona",                         # #40
         "mr:0821-iosephus": "mr:0821-iosephus-dang-dinh-vien",
         "mr:0320-sabas": "mr:0320-viginti-monachi-palaestinae",
-        "mr:0905-v": "mr:0905-quintus",                                     # #52
+        "mr:0905-v": "mr:0905-quintus-capuae",                                     # #52
         "mr:0809-laurentius": "mr:0809-romanus-romae",
         "mr:1017-osea": "mr:1017-osee-propheta",
         "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus-apostoli",  # #56

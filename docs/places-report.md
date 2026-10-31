@@ -45,7 +45,7 @@ Check that the part after each comma is still a place designation.
 - `mr:0223-nicolaus-tabouillot`: Ad Gálliæ litus ante Rupifórtium, in navi servitútis
 - `mr:0512-dominicus-calceatensis`: In Castélla Hispániæ, in loco póstea eius nómine insigníto
 - `mr:0812-lelia-hiberniae`: in Hibérnia, in cella eius nómine vocáta
-- `mr:0906-bega`: Ad litus Cúmbriæ Angliæ regióne, in óppido póstea eius nómine vocáto
+- `mr:0906-bega-cumbriae`: Ad litus Cúmbriæ Angliæ regióne, in óppido póstea eius nómine vocáto
 - `mr:1210-ioannes-roberts`: Ibídem, Tybúrni
 
 ## Latin places without an Italian phrase
@@ -441,39 +441,39 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0830-alaphridus-hildephonsus-schuster` | ministry (sedem) | yes |
 | `mr:0831-aidanus-lindisfarnae` | ministry (sedem) | yes |
 | `mr:0903-gregorius-magnus` | death (obiit); ministry (sedem) | yes |
-| `mr:0903-guala` | ministry (episcopi brixiensis) | yes |
+| `mr:0903-guala-brixiensis` | ministry (episcopi brixiensis) | yes |
 | `mr:0904-moyses-propheta` | death (obiit) | yes |
 | `mr:0904-scipio-hieronymus-brigeat-de-lambert` | death (occubuit) | yes |
 | `mr:0905-teresia-calcuttae` | birth (nata) | yes |
 | `mr:0906-donatianus-et-socii` | ministry (episcopus neptensis) | yes |
-| `mr:0907-clodoaldus` | birth (ortus) |  |
+| `mr:0907-clodoaldus-novigenti` | birth (ortus) |  |
 | `mr:0908-nativitas-beatae-mariae-virginis` | birth (natus) |  |
-| `mr:0908-isaac` | death (obiit) | yes |
-| `mr:0910-salvius` | ministry (sedem) |  |
-| `mr:0910-theodardus` | ministry (episcopi tungrensis) | yes |
-| `mr:0911-sacerdos` | death (obiit); ministry (episcopi lugdunensis) | yes |
-| `mr:0912-guido` | death (occubuit) | yes |
+| `mr:0908-isaac-armeniae` | death (obiit) | yes |
+| `mr:0910-salvius-albiae` | ministry (sedem) |  |
+| `mr:0910-theodardus-tungrensis` | ministry (episcopi tungrensis) | yes |
+| `mr:0911-sacerdos-lugdunensis` | death (obiit); ministry (episcopi lugdunensis) | yes |
+| `mr:0912-guido-anderlaci` | death (occubuit) | yes |
 | `mr:0912-petrus-sulpitius-christophorus-faverge` | death (occubuit) |  |
-| `mr:0913-ioannes` | ministry (sedem) | yes |
-| `mr:0913-maurilius` | birth (natus) | yes |
+| `mr:0913-ioannes-chrysostomus` | ministry (sedem) | yes |
+| `mr:0913-maurilius-andegavi` | birth (natus) | yes |
 | `mr:0913-amatus-broili` | death (obiit); ministry (episcopi sedunensis) | yes |
 | `mr:0913-claudius-dumonet` | death (occubuit) |  |
-| `mr:0914-petrus` | ministry (sedem) | yes |
-| `mr:0916-ninianus` | ministry (sedem) | yes |
+| `mr:0914-petrus-tarantasiae` | ministry (sedem) | yes |
+| `mr:0916-ninianus-candidae-casae` | ministry (sedem) | yes |
 | `mr:0916-ludovicus-aleman` | ministry (episcopi arelatensis) | yes |
-| `mr:0917-satyrus` | burial (sepultus) |  |
-| `mr:0917-lambertus` | ministry (episcopi traiectensis) | yes |
+| `mr:0917-satyrus-mediolani` | burial (sepultus) |  |
+| `mr:0917-lambertus-traiectensis` | ministry (episcopi traiectensis) | yes |
 | `mr:0917-sigismundus-felix-felinski` | ministry (episcopi varsaviensis) | yes |
-| `mr:0920-adelpretus` | death (occubuit) |  |
-| `mr:0922-otho` | death (obiit); ministry (episcopi frisingensis) | yes |
+| `mr:0920-adelpretus-tridentinus` | death (occubuit) |  |
+| `mr:0922-otho-frisingensis` | death (obiit); ministry (episcopi frisingensis) | yes |
 | `mr:0924-gerardus-sagredo` | death (occubuit) | yes |
 | `mr:0926-raphael-pardo-molina` | death (occubuit) | yes |
-| `mr:0927-bonfilius` | death (obiit) | yes |
+| `mr:0927-bonfilius-fulginatensis` | death (obiit) | yes |
 | `mr:0927-elzearus-de-sabran` | death (defunctus) | yes |
 | `mr:0927-ioannes-baptista-laborier-du-vivier` | death (occubuit) |  |
-| `mr:0929-liudwinus` | death (obiit); ministry (episcopi trevirensis) | yes |
-| `mr:0930-hieronymus` | birth (natus) | yes |
-| `mr:0930-simon` | burial (sepultus); death (obiit) | yes |
+| `mr:0929-liudwinus-trevirensis` | death (obiit); ministry (episcopi trevirensis) | yes |
+| `mr:0930-hieronymus-dalmatiae` | birth (natus) | yes |
+| `mr:0930-simon-romae` | burial (sepultus); death (obiit) | yes |
 | `mr:0930-ioannes-nicolaus-cordier` | death (occubuit) | yes |
 | `mr:1001-teresia-a-iesu-infante` | death (obiit) | yes |
 | `mr:1001-ioannes-robinson` | death (defuncta) |  |
@@ -849,18 +849,18 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0827-guarinus-sedunensis`: Cisterciénse
 - `mr:0829-ioannes-de-perusia-et-petrus-de-saxoferrato`: Mauros
 - `mr:0831-ioseph-de-arimathaea-et-nicodemus`: Iudæ
-- `mr:0901-iosue`: Israel
+- `mr:0901-iosue-filius-nun`: Israel
 - `mr:0901-petrus-rivera-et-socii`: Monte Carmélo
-- `mr:0903-phoebes`: Romános
+- `mr:0903-phoebes-cenchrearum`: Romános
 - `mr:0904-moyses-propheta`: in monte Sina
 - `mr:0905-ioannes-bonus-de-siponto`: Dalmátiæ
 - `mr:0907-ioannes-baptista-mazzucconi`: Mediolanénsi
 - `mr:0907-stephanus-de-castellione`: Portárum solitúdine
 - `mr:0911-michael-gran`: Barcinóne
-- `mr:0912-guido`: terram
+- `mr:0912-guido-anderlaci`: terram
 - `mr:0913-amatus-vosegos`: Roma
 - `mr:0918-iosephus-kut`: polónus
-- `mr:0919-pomposa`: Pompósæ
+- `mr:0919-pomposa-cordubae`: Pompósæ
 - `mr:0920-andreas-kim-tae-gon-et-socii`: Coréa
 - `mr:0920-ioannes-carolus-cornay`: Parisiénsi
 - `mr:0921-franciscus-jaccard-et-thomas-tran-van-thien`: Parisiénsi
@@ -869,8 +869,8 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0924-ioanna-gabriel`: Roma, Romam
 - `mr:0925-paulus-et-tatta`: Máximi
 - `mr:0926-gedeon-iudex`: Israel
-- `mr:0927-florentinus`: Florentíni
-- `mr:0930-simon`: Urbe
+- `mr:0927-florentinus-seduni`: Florentíni
+- `mr:0930-simon-romae`: Urbe
 - `mr:1001-antonius-rewera`: castra detentiónis Dacháni
 - `mr:1001-florentia-caerols-martinez`: Floréntiæ
 - `mr:1001-romanus`: Románi

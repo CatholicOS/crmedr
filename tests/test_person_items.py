@@ -490,7 +490,7 @@ class SharedItemTest(unittest.TestCase):
     def _index(self):
         und = dict(PERSON, typology="commemoratio")
         return {"mr:0802-eusebius-vercellensis|Eusebius": dict(und, eulogy="mr:0802-eusebius-vercellensis", name="Eusebius"),
-                "mr:0926-eusebius|Eusebius": dict(und, eulogy="mr:0926-eusebius", name="Eusebius"),
+                "mr:0926-eusebius-bononiae|Eusebius": dict(und, eulogy="mr:0926-eusebius-bononiae", name="Eusebius"),
                 "mr:0101-x|Eusebius Fictus": dict(und, eulogy="mr:0101-x", name="Eusebius Fictus"),
                 "mr:0103-y|Gordius": dict(und, eulogy="mr:0103-y", name="Gordius")}
 
@@ -501,7 +501,7 @@ class SharedItemTest(unittest.TestCase):
         bp.propose(items, review, self._index(), client)
         queued = {op["id"]: op for op in review["operations"]}
         self.assertIn("mr:0802-eusebius-vercellensis|Eusebius", queued)
-        self.assertIn("mr:0926-eusebius|Eusebius", queued)
+        self.assertIn("mr:0926-eusebius-bononiae|Eusebius", queued)
         self.assertIn("matched in another eulogy", queued["mr:0802-eusebius-vercellensis|Eusebius"]["failed"][-1])
         self.assertEqual(items["mr:0101-x"]["Eusebius Fictus"]["wikidata"], "Q1")  # a full name stays automatic
         self.assertEqual(items["mr:0103-y"]["Gordius"]["wikidata"], "Q2")          # matched once: automatic
@@ -509,11 +509,11 @@ class SharedItemTest(unittest.TestCase):
     def test_an_existing_automatic_match_counts_too(self):
         items = {"mr:0802-eusebius-vercellensis": {"Eusebius": {"wikidata": "Q1", "status": "auto"}}}
         review = bp.new_changeset([])
-        index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius|Eusebius"}
+        index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius-bononiae|Eusebius"}
         index["mr:0802-eusebius-vercellensis|Eusebius"] = self._index()["mr:0802-eusebius-vercellensis|Eusebius"]
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
         queued = {op["id"] for op in review["operations"]}
-        self.assertIn("mr:0926-eusebius|Eusebius", queued)
+        self.assertIn("mr:0926-eusebius-bononiae|Eusebius", queued)
         # The existing automatic match is withdrawn too (#79 review): none of them is automatic.
         self.assertIn("mr:0802-eusebius-vercellensis|Eusebius", queued)
         self.assertNotIn("mr:0802-eusebius-vercellensis", items)
@@ -532,7 +532,7 @@ class SharedItemTest(unittest.TestCase):
         items = {"mr:0802-eusebius-vercellensis": {"Eusebius": {"wikidata": "Q1", "status": "reviewed"}}}
         review = bp.new_changeset([])
         index = {"mr:0802-eusebius-vercellensis|Eusebius": self._index()["mr:0802-eusebius-vercellensis|Eusebius"],
-                 "mr:0926-eusebius|Eusebius": self._index()["mr:0926-eusebius|Eusebius"]}
+                 "mr:0926-eusebius-bononiae|Eusebius": self._index()["mr:0926-eusebius-bononiae|Eusebius"]}
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
         self.assertEqual(items["mr:0802-eusebius-vercellensis"]["Eusebius"]["status"], "reviewed")
 
