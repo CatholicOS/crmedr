@@ -39,8 +39,8 @@ Rules applied, in order:
 
 **Feb 28/29**: the four leap-day elogia printed twice in both IT and LA editions carry
 ONE identity each, anchored at 0229; the Feb 28 rows bear the same ID:
-- mr:0229-hilarius (also at Feb 28, voce 4)
-- mr:0229-oswaldus (also at Feb 28, voce 5)
+- mr:0229-hilarius-papa (also at Feb 28, voce 4)
+- mr:0229-oswaldus-vigorniae (also at Feb 28, voce 5)
 - mr:0229-antonia-de-florentia (also at Feb 28, voce 6)
 - mr:0229-augustus-chapdelaine (also at Feb 28, voce 7)
 
@@ -770,7 +770,7 @@ mr:0917-franciscus).
 | mr:0312-theophanes | mr:0312-theophanes-chronographus |
 | mr:0107-canutus | mr:0107-canutus-lavard |
 | mr:1126-silvester | mr:1126-silvester-gozzolini |
-| mr:0220-eucherius-aurelianensis | mr:0220-eucherius |
+| mr:0220-eucherius-aurelianensis | mr:0220-eucherius-aurelianensis |
 | mr:0228-presbyteri-diaconi | mr:0228-presbyteri-diaconi-plurimi-alexandriae |
 | mr:0615-vitus-et-socii | mr:0615-vitus |
 | mr:0917-petrus-de-arbues-caesaraugustae | mr:0917-petrus-de-arbues |
@@ -783,7 +783,7 @@ eulogies of the day under the wrong ID.
   mr:0220-eleutherius-tornaci (in `ID_CORRECTIONS`), told apart by his see from the
   other Eleutherii of the day. In the 1749 edition his eulogy (*Tornaci, in Galliis,
   sancti Eleutherii, Episcopi et Confessoris*) had been run into the end of the
-  mr:0220-eucherius text by the OCR; it is split out and keyed to him, as is the 1914
+  mr:0220-eucherius-aurelianensis text by the OCR; it is split out and keyed to him, as is the 1914
   text.
 - *Constantinopoli sancti Eleutherii, Episcopi et Martyris* (1749, 1914), which the
   alignment had keyed to the Tournai eulogy, is a different saint with no 2004
@@ -796,7 +796,7 @@ eulogies of the day under the wrong ID.
   which names Sadoth, has it.
 - The 1749 and 1914 eulogy keyed mr:0220-tyrannion commemorates the countless martyrs
   of Tyre under Veturius, naming Tyrannio among the bishops who encouraged them: it is
-  re-keyed to mr:0220-quinque-martyres-tyri. mr:0220-tyrannion (Antioch) keeps its
+  re-keyed to mr:0220-quinque-martyres-tyri. mr:0220-tyrannion-tyri (Antioch) keeps its
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy
   (mr:1029-zenobius).
 
@@ -990,7 +990,7 @@ Sancta Marina, Sanctus Ioannes Therestus).
 **The Italian 2004 against the Latin 2004 (October 2026)**: every eulogy of the Italian (CEI)
 edition was read against the Latin print. The discrepancies of substance found with high
 confidence are curator notes on the edition that errs, published for review: on the Italian
-(Holsatia rendered Alsazia at mr:0217-evermodus, Vasconia rendered Guascogna at
+(Holsatia rendered Alsazia at mr:0217-evermodus-raceburgi, Vasconia rendered Guascogna at
 mr:0223-raphaela-de-villalonga-ybarra, Christ "seduto" for "stantem" at mr:1226-stephanus) or,
 twice, on the Latin (sub Iacobo rege Primo at mr:0829-richardus-herst; the misprint dístulit for
 diffúdit at mr:0612-laurentius-maria-a-sancto-francisco-xaverio, in `data/misprints.json`). The
@@ -1349,7 +1349,7 @@ from `PS` to `IL`.
 | `mr:0217-petrus-yu-chong-nyul` | Pyongyang (Q18808) | KR | KP |
 | `mr:0217-antonius-leszczewicz` | Rosica (Q3442846) | PL | BY |
 | `mr:0218-georgius-kaszyra` | Rosica (Q3442846) | PL | BY |
-| `mr:0227-gregorius` | Narekavank (Q3336090) | AM | TR |
+| `mr:0227-gregorius-narecensis` | Narekavank (Q3336090) | AM | TR |
 | `mr:0303-winwaloeus` | Cornouaille (Q1134273) | GB | FR |
 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | Bierazviečča (Q776469) | PL | BY |
 | `mr:0306-fridolinus` | Bad Säckingen (Q522362) | CH | DE |

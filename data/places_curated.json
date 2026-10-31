@@ -1207,7 +1207,7 @@
       "it": "Évreux"
     }
   ],
-  "mr:0201-agrippanus": [
+  "mr:0201-agrippanus-anicii": [
     {
       "role": "journey",
       "la": "Roma",
@@ -1241,14 +1241,14 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0201-ioannes": [
+  "mr:0201-ioannes-alethensis": [
     {
       "role": "ministry",
       "la": "Alethénsem",
       "it": "Aleth"
     }
   ],
-  "mr:0201-raymundus": [
+  "mr:0201-raymundus-fiteriensis": [
     {
       "role": "religious_life",
       "la": "Fiteriénsis",
@@ -1267,7 +1267,7 @@
       "it": "Roma"
     }
   ],
-  "mr:0201-sigisbertus": [
+  "mr:0201-sigisbertus-metarum": [
     {
       "role": "foundation",
       "la": "Malmundariénse",
@@ -1279,7 +1279,7 @@
       "it": "Stavelot"
     }
   ],
-  "mr:0202-burchardus": [
+  "mr:0202-burchardus-herbipoli": [
     {
       "role": "birth",
       "la": "Anglia",
@@ -1293,7 +1293,7 @@
       "it": "Tempio"
     }
   ],
-  "mr:0203-ansgarius": [
+  "mr:0203-ansgarius-hamburgensis": [
     {
       "role": "death",
       "la": "Bremæ",
@@ -1331,7 +1331,7 @@
       "it": "Settentrione"
     }
   ],
-  "mr:0203-blasius": [
+  "mr:0203-blasius-sebastes": [
     {
       "role": "death",
       "la": "Sebáste in Arménia",
@@ -1352,7 +1352,7 @@
       "it": "tempio"
     }
   ],
-  "mr:0203-wereburga": [
+  "mr:0203-wereburga-eliensis": [
     {
       "role": "religious_life",
       "la": "Eliénsis",
@@ -1395,7 +1395,7 @@
       "it": "Fulda"
     }
   ],
-  "mr:0205-adalheidis": [
+  "mr:0205-adalheidis-vilicensis": [
     {
       "role": "religious_life",
       "la": "monastérii Sanctæ Maríæ Coloniénsis",
@@ -1407,28 +1407,28 @@
       "it": "monastero di Vilich"
     }
   ],
-  "mr:0205-agatha": [
+  "mr:0205-agatha-catanae": [
     {
       "role": "death",
       "la": "Cátanæ in Sicília",
       "it": "Catania"
     }
   ],
-  "mr:0205-albuinus": [
+  "mr:0205-albuinus-brixinae": [
     {
       "role": "ministry",
       "la": "Sebána",
       "it": "Sabiona"
     }
   ],
-  "mr:0205-avitus": [
+  "mr:0205-avitus-viennae": [
     {
       "role": "mention",
       "la": "Gálliæ",
       "it": "Gallie"
     }
   ],
-  "mr:0205-lucas": [
+  "mr:0205-lucas-carbonensis": [
     {
       "role": "birth",
       "la": "Sicília",
@@ -1462,7 +1462,7 @@
       "it": "Lucania"
     }
   ],
-  "mr:0206-amandus": [
+  "mr:0206-amandus-traiectensis": [
     {
       "role": "ministry",
       "la": "Traiecténsis ad Mosam",
@@ -1487,14 +1487,14 @@
       "occurrence_it": 2
     }
   ],
-  "mr:0206-renula": [
+  "mr:0206-renula-eikensis": [
     {
       "role": "religious_life",
       "la": "monastérii Eikénsis",
       "it": "monastero di Aldeneyk"
     }
   ],
-  "mr:0206-vedastus": [
+  "mr:0206-vedastus-atrebati": [
     {
       "role": "mention",
       "la": "Reménsi",
@@ -1528,7 +1528,7 @@
       "it": "Concilio Ecumenico Vaticano I"
     }
   ],
-  "mr:0207-richardus": [
+  "mr:0207-richardus-lucae": [
     {
       "role": "journey",
       "la": "Anglia",
@@ -1558,7 +1558,7 @@
       "la": "Somáscha"
     }
   ],
-  "mr:0208-honoratus": [
+  "mr:0208-honoratus-mediolani": [
     {
       "role": "exile",
       "la": "Génuam",
@@ -1601,20 +1601,20 @@
       "it": "Vallombrosa"
     }
   ],
-  "mr:0208-stephanus": [
+  "mr:0208-stephanus-mureti": [
     {
       "role": "foundation",
       "la": "Grandimonténsis",
       "it": "Grandmont"
     }
   ],
-  "mr:0209-alto": [
+  "mr:0209-alto-bavariae": [
     {
       "role": "birth",
       "la": "Hibérnia"
     }
   ],
-  "mr:0209-ansbertus": [
+  "mr:0209-ansbertus-rothomagensis": [
     {
       "role": "ministry",
       "la": "Rothomagénsis",
@@ -1640,14 +1640,14 @@
       "occurrence_it": 2
     }
   ],
-  "mr:0209-rainaldus": [
+  "mr:0209-rainaldus-nuceriae": [
     {
       "role": "religious_life",
       "la": "Fontis Avellánæ",
       "it": "Fonte Avellana"
     }
   ],
-  "mr:0209-sabinus": [
+  "mr:0209-sabinus-canusii": [
     {
       "role": "journey",
       "la": "Constantinópolim",
@@ -1659,7 +1659,7 @@
       "it": "sede Romana"
     }
   ],
-  "mr:0209-teliavus": [
+  "mr:0209-teliavus-landaviensis": [
     {
       "role": "cult",
       "la": "Armórica",
@@ -1685,35 +1685,35 @@
       "occurrence_it": 2
     }
   ],
-  "mr:0210-austreberta": [
+  "mr:0210-austreberta-pauliacensis": [
     {
       "role": "religious_life",
       "la": "monastério Pauliacénsi",
       "it": "monastero di Pavilly"
     }
   ],
-  "mr:0210-gulielmus": [
+  "mr:0210-gulielmus-malavallensis": [
     {
       "role": "religious_life",
       "la": "Malavallénsis",
       "it": "Malavalle"
     }
   ],
-  "mr:0210-hugo": [
+  "mr:0210-hugo-praemonstratensis": [
     {
       "role": "mention",
       "la": "Magdeburgénsis",
       "it": "Magdeburgo"
     }
   ],
-  "mr:0210-scholastica": [
+  "mr:0210-scholastica-montis-casini": [
     {
       "role": "journey",
       "la": "Montem Casínum in Campánia",
       "it": "Montecassino nel Lazio"
     }
   ],
-  "mr:0211-ardanus": [
+  "mr:0211-ardanus-trenorchiensis": [
     {
       "role": "religious_life",
       "la": "Trenorchiénsis",
@@ -1746,7 +1746,7 @@
       "it": "Numidia"
     }
   ],
-  "mr:0211-severinus": [
+  "mr:0211-severinus-agaunensis": [
     {
       "role": "religious_life",
       "la": "Agaunénsis",
@@ -1760,14 +1760,14 @@
       "it": "Aniane"
     }
   ],
-  "mr:0212-humbelina": [
+  "mr:0212-humbelina-iuliacensis": [
     {
       "role": "mention",
       "la": "Claravallénsi",
       "it": "Chiaravalle"
     }
   ],
-  "mr:0212-ludanus": [
+  "mr:0212-ludanus-northeimi": [
     {
       "role": "birth",
       "la": "Scótia"
@@ -1785,7 +1785,7 @@
       "it": "Abitene"
     }
   ],
-  "mr:0212-meletius": [
+  "mr:0212-meletius-antiochenus": [
     {
       "role": "death",
       "la": "Constantinopolitáno",
@@ -1814,14 +1814,14 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0213-gosbertus": [
+  "mr:0213-gosbertus-osnabrugi": [
     {
       "role": "ministry",
       "la": "Suebórum",
       "it": "Svevi"
     }
   ],
-  "mr:0213-martinianus": [
+  "mr:0213-martinianus-athenarum": [
     {
       "role": "religious_life",
       "la": "Cæsaréam Palæstínæ",
@@ -1877,7 +1877,7 @@
       "person": "Methodius"
     }
   ],
-  "mr:0214-nostrianus": [
+  "mr:0214-nostrianus-neapolitanus": [
     {
       "role": "ministry",
       "la": "Neapolitáni",
@@ -1891,7 +1891,7 @@
       "it": "Roma"
     }
   ],
-  "mr:0215-sigfridus": [
+  "mr:0215-sigfridus-vexsiae": [
     {
       "role": "birth",
       "la": "Anglia"
@@ -1933,7 +1933,7 @@
       "it": "Gerusalemme"
     }
   ],
-  "mr:0216-marutha": [
+  "mr:0216-marutha-persicus": [
     {
       "role": "mention",
       "la": "Seleuciénsi",
@@ -1950,7 +1950,7 @@
       "it": "Martiropoli"
     }
   ],
-  "mr:0217-bonosus": [
+  "mr:0217-bonosus-trevirorum": [
     {
       "role": "mention",
       "la": "Pictaviénsi",
@@ -1962,7 +1962,7 @@
       "it": "Gallie"
     }
   ],
-  "mr:0217-flavianus": [
+  "mr:0217-flavianus-constantinopolitanus": [
     {
       "role": "mention",
       "la": "Ephesi",
@@ -2005,7 +2005,7 @@
       "it": "Tyburn"
     }
   ],
-  "mr:0218-helladius": [
+  "mr:0218-helladius-toletanus": [
     {
       "role": "religious_life",
       "la": "Agaliénsis",
@@ -2033,21 +2033,21 @@
       "it": "Seleucia"
     }
   ],
-  "mr:0218-tarasius": [
+  "mr:0218-tarasius-constantinopoli": [
     {
       "role": "mention",
       "la": "Nicǽnum",
       "it": "Niceno"
     }
   ],
-  "mr:0218-theotonius": [
+  "mr:0218-theotonius-conimbriae": [
     {
       "role": "journey",
       "la": "Hierosólymam",
       "it": "Gerusalemme"
     }
   ],
-  "mr:0219-bonifatius": [
+  "mr:0219-bonifatius-lausannensis": [
     {
       "role": "ministry",
       "la": "Lausannénsis",
@@ -2075,14 +2075,14 @@
       "it": "Palestina"
     }
   ],
-  "mr:0219-quodvultdeus": [
+  "mr:0219-quodvultdeus-carthaginensis": [
     {
       "role": "ministry",
       "la": "Carthaginénsis",
       "it": "Cartagine"
     }
   ],
-  "mr:0220-eucherius": [
+  "mr:0220-eucherius-aurelianensis": [
     {
       "role": "ministry",
       "la": "Aurelianénsis",
@@ -2096,14 +2096,14 @@
       "it": "Tiro in Fenicia"
     }
   ],
-  "mr:0220-tyrannion": [
+  "mr:0220-tyrannion-tyri": [
     {
       "role": "ministry",
       "la": "Tyri",
       "it": "Tiro"
     }
   ],
-  "mr:0221-eustatius": [
+  "mr:0221-eustatius-antiochenus": [
     {
       "role": "death",
       "la": "Traianópolim Thráciæ",
@@ -2164,14 +2164,14 @@
       "it": "colle Vaticano"
     }
   ],
-  "mr:0223-milburga": [
+  "mr:0223-milburga-wenlochii": [
     {
       "role": "birth",
       "la": "Merciórum",
       "it": "Mercia"
     }
   ],
-  "mr:0223-polycarpus": [
+  "mr:0223-polycarpus-smyrnae": [
     {
       "role": "death",
       "la": "Smyrnæ in Asia",
@@ -2185,7 +2185,7 @@
       "it": "Fabriano"
     }
   ],
-  "mr:0224-ethelbertus": [
+  "mr:0224-ethelbertus-cantuariae": [
     {
       "role": "mention",
       "la": "Cantiórum",
@@ -2199,7 +2199,7 @@
       "it": "monastero di San Pietro"
     }
   ],
-  "mr:0225-nestor": [
+  "mr:0225-nestor-magydensis": [
     {
       "role": "ministry",
       "la": "Magydénsis",
@@ -2220,14 +2220,14 @@
       "it": "Spagna"
     }
   ],
-  "mr:0225-waldburgis": [
+  "mr:0225-waldburgis-heidenheimensis": [
     {
       "role": "birth",
       "la": "Anglia",
       "it": "Inghilterra"
     }
   ],
-  "mr:0226-alexander": [
+  "mr:0226-alexander-alexandrinus": [
     {
       "role": "mention",
       "la": "Nicǽno",
@@ -2239,7 +2239,7 @@
       "it": "Alessandria"
     }
   ],
-  "mr:0226-porphyrius": [
+  "mr:0226-porphyrius-gazensis": [
     {
       "role": "birth",
       "la": "Thessalonícæ",
@@ -2282,7 +2282,7 @@
       "it": "Siviglia in Spagna"
     }
   ],
-  "mr:0227-lucas": [
+  "mr:0227-lucas-messanae": [
     {
       "role": "religious_life",
       "la": "monastérii Sanctíssimi Salvatóris",
@@ -2315,7 +2315,7 @@
       "it": "monastero del Corpo di Cristo"
     }
   ],
-  "mr:0229-hilarius": [
+  "mr:0229-hilarius-papa": [
     {
       "role": "mention",
       "la": "Chalcedonénse",
@@ -2332,7 +2332,7 @@
       "it": "Nicea"
     }
   ],
-  "mr:0229-oswaldus": [
+  "mr:0229-oswaldus-vigorniae": [
     {
       "role": "ministry",
       "la": "Eboracénsi",

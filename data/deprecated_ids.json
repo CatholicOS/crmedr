@@ -1057,7 +1057,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0223-polycarpus"
+   "mr:0223-polycarpus-smyrnae"
   ]
  },
  {
@@ -1471,10 +1471,10 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:0205-ingenuinus",
-   "mr:0205-albuinus"
+   "mr:0205-ingenuinus-sebanae",
+   "mr:0205-albuinus-brixinae"
   ],
-  "note": "The 1914 English fuses the eulogies of Ingenuinus and Albuinus of Brixen, which the 1749 edition and the 2004 edition print separately (mr:0205-ingenuinus, mr:0205-albuinus)."
+  "note": "The 1914 English fuses the eulogies of Ingenuinus and Albuinus of Brixen, which the 1749 edition and the 2004 edition print separately (mr:0205-ingenuinus-sebanae, mr:0205-albuinus-brixinae)."
  },
  {
   "id": "mr:0206-titus",
@@ -1915,7 +1915,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0215-onesimus"
+   "mr:0215-onesimus-discipulus"
   ]
  },
  {
@@ -2041,7 +2041,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0217-flavianus"
+   "mr:0217-flavianus-constantinopolitanus"
   ]
  },
  {
@@ -2178,7 +2178,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:0222-maximianus"
+   "mr:0222-maximianus-ravennae"
   ]
  },
  {
@@ -2370,7 +2370,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0223-ioannes"
+   "mr:0223-ioannes-theristes"
   ]
  },
  {
@@ -2400,7 +2400,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0218-tarasius"
+   "mr:0218-tarasius-constantinopoli"
   ]
  },
  {
@@ -2424,7 +2424,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0225-nestor"
+   "mr:0225-nestor-magydensis"
   ]
  },
  {
@@ -2493,7 +2493,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0229-hilarius"
+   "mr:0229-hilarius-papa"
   ]
  },
  {
@@ -10895,7 +10895,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0208-iuventius"
+   "mr:0208-iuventius-papiae"
   ]
  },
  {
@@ -12366,7 +12366,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "DE",
   "same_eulogy": [
-   "mr:0202-burchardus"
+   "mr:0202-burchardus-herbipoli"
   ]
  },
  {
@@ -12867,7 +12867,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:0219-quodvultdeus"
+   "mr:0219-quodvultdeus-carthaginensis"
   ]
  },
  {
@@ -14674,7 +14674,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": null,
   "same_eulogy": [
-   "mr:0216-marutha"
+   "mr:0216-marutha-persicus"
   ]
  },
  {
