@@ -246,8 +246,8 @@ ENTRY_NOTES = {
         "Pietro in Ciel d'Oro\" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his "
         "abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt."
     ),
-    "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
-    "mr:0927-bonfilius": (
+    "mr:0919-pomposa-cordubae": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
+    "mr:0927-bonfilius-fulginatensis": (
         "The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco (Q141922767) near "
         "Filottrano (Q124029, Ancona). U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that "
         "Bonfilius, born at Osimo (Q124554) about 1040, \"giovanissimo entrò a S. Maria di Storaco in quel di "
@@ -324,7 +324,7 @@ ENTRY_NOTES = {
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
     # possible sites) or a site the archaeology places differently.
     "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",
-    "mr:0925-cleopha": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
+    "mr:0925-cleopha-discipulus": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
     "mr:0929-michael-gabriel-et-raphael-archangeli": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
 }
 
@@ -1120,19 +1120,19 @@ EDITION_NOTES = {
             "arms and honours of the world)."
         ),
     },
-    "mr:0902-antoninus": {
+    "mr:0902-antoninus-apameae": {
         EDITION_EN: (
             "Translation error: \"the twentieth year of the reign\" where the Latin has \"vicésimo "
             "ætátis anno\" (in the twentieth year of his age)."
         ),
     },
-    "mr:0902-brochardus": {
+    "mr:0902-brochardus-montis-carmeli": {
         EDITION_EN: (
             "Translation error: \"spring of Elisha\" where the Latin has \"fontem Elíæ\" (the spring "
             "of Elijah)."
         ),
     },
-    "mr:0902-theodota": {
+    "mr:0902-theodota-niceae": {
         EDITION_EN: (
             "Translation error: \"Nicomedia\" where the Latin has \"Nicǽæ\" (Nicaea)."
         ),
@@ -1143,7 +1143,7 @@ EDITION_NOTES = {
             "Latin has \"post pridiánam cædem\" (after the previous day's massacre)."
         ),
     },
-    "mr:0903-guala": {
+    "mr:0903-guala-brixiensis": {
         EDITION_EN: (
             "Translation error: \"Gualterus\" where the Latin has \"Guálæ\" (Guala)."
         ),
@@ -1189,7 +1189,7 @@ EDITION_NOTES = {
             "ponti\" (on the waters of the sea)."
         ),
     },
-    "mr:0913-aemilianus": {
+    "mr:0913-aemilianus-iuliae-valentiae": {
         EDITION_EN: (
             "Translation error: \"Yzeures-sur-Creuse (ancient Juliacum)\" where the Latin has "
             "\"Iúliæ Valéntiæ\" (Valence)."
@@ -1201,13 +1201,13 @@ EDITION_NOTES = {
             "(built)."
         ),
     },
-    "mr:0913-litorius": {
+    "mr:0913-litorius-turonum": {
         EDITION_EN: (
             "Translation error: \"the first to rebuild a church\" where the Latin has \"ecclésiam "
             "ædificávit\" (built)."
         ),
     },
-    "mr:0914-notburga": {
+    "mr:0914-notburga-eben": {
         EDITION_EN: (
             "Translation error: \"blessed Notburga\" where the Latin has \"sanctæ Notbúrgæ\" (Saint "
             "Notburga)."
@@ -1232,7 +1232,7 @@ EDITION_NOTES = {
             "número confrátrum\" (the ninth of his confreres to die)."
         ),
     },
-    "mr:0921-cadocus": {
+    "mr:0921-cadocus-lancarvanensis": {
         EDITION_EN: (
             "Translation error: \"Llantwit Major\" where the Latin has \"Lancarvanénsi\" "
             "(Llancarfan)."
@@ -1243,7 +1243,7 @@ EDITION_NOTES = {
             "Translation error: \"Marieville\" where the Latin has \"Marianópoli\" (Montreal)."
         ),
     },
-    "mr:0929-adelricus": {
+    "mr:0929-adelricus-augiae": {
         EDITION_EN: (
             "Translation error: \"Reichenau\" where the Latin has \"ínsula Augia lacus Turicénsis\" "
             "(Ufnau in Lake Zurich)."
@@ -1829,13 +1829,13 @@ EDITION_NOTES = {
             "Guadix)."
         ),
     },
-    "mr:0903-rimagilus": {
+    "mr:0903-rimagilus-stabulensis": {
         EDITION_IT: (
             "Translation error: \"Solesmes\" where the Latin has \"Sollemniacénse\" (Solignac, where "
             "Remaclus was abbot before founding Stavelot and Malmedy)."
         ),
     },
-    "mr:0905-bertinus": {
+    "mr:0905-bertinus-taruannensis": {
         EDITION_IT: (
             "Translation error: \"fu deposto insieme a san Mummolino\" (buried together with Saint "
             "Mummolinus) where the Latin says the monastery was founded together with Saint "
@@ -1866,13 +1866,13 @@ EDITION_NOTES = {
             "(Master of Arts)."
         ),
     },
-    "mr:0914-petrus": {
+    "mr:0914-petrus-tarantasiae": {
         EDITION_IT: (
             "Translation error: \"Beauvale\" where the Latin has \"Bellævallénsi\" (Bellevaux, near "
             "Besançon)."
         ),
     },
-    "mr:0928-venceslaus": {
+    "mr:0928-venceslaus-boleslaviae": {
         EDITION_IT: (
             "Translation error: \"dalla zia paterna Ludmilla\" (his paternal aunt) where the Latin "
             "has \"ab ávia sancta Ludmílla\" (his grandmother, Saint Ludmila)."
@@ -4300,13 +4300,13 @@ REVIEW_EDITION_NOTES = {
             "there."
         ),
     },
-    "mr:0901-aegidius": {
+    "mr:0901-aegidius-nemausensis": {
         EDITION_EN: (
             "Translation error: \"grew into Saint-Gilles-du-Gard\" where the Latin has \"in "
             "Camária excrévit\" (grew up in the Camargue)."
         ),
     },
-    "mr:0901-victorius": {
+    "mr:0901-victorius-cenomanorum": {
         EDITION_EN: (
             "Translation error: \"Victor\" where the Latin has \"Victórii\" (Victorius)."
         ),
@@ -4318,7 +4318,7 @@ REVIEW_EDITION_NOTES = {
             "mártyrum\" (blessed martyrs)."
         ),
     },
-    "mr:0903-guala": {
+    "mr:0903-guala-brixiensis": {
         EDITION_EN: (
             "Translation error: \"region of Asti\" where the Latin has \"pago Astinénsi\" (the "
             "district of Astino)."
@@ -4329,7 +4329,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
         ),
     },
-    "mr:0906-bega": {
+    "mr:0906-bega-cumbriae": {
         EDITION_EN: (
             "Translation error: \"virgin and nun\" where the Latin has only \"moniális\" (nun)."
         ),
@@ -4367,31 +4367,31 @@ REVIEW_EDITION_NOTES = {
             "religiósi\" (priests, religious), without a number."
         ),
     },
-    "mr:0911-paphnutius": {
+    "mr:0911-paphnutius-aegypti": {
         EDITION_IT: (
             "Translation error: \"il tendine del piede sinistro\" (the tendon of the left foot) "
             "where the Latin has \"sinístro póplite\" (the left hamstring)."
         ),
     },
-    "mr:0912-guido": {
+    "mr:0912-guido-anderlaci": {
         EDITION_IT: (
             "Translation error: \"Mariensee\" where the Latin has \"Maríæ Laci\" (Our Lady of "
             "Laeken, near Brussels)."
         ),
     },
-    "mr:0914-cornelius": {
+    "mr:0914-cornelius-papa": {
         EDITION_IT: (
             "Translation error: \"molti dissidenti\" (many dissidents) where the Latin has "
             "\"plures de lapsis\" (many of the lapsed, who had denied the faith in persecution)."
         ),
     },
-    "mr:0914-cyprianus": {
+    "mr:0914-cyprianus-carthaginensis": {
         EDITION_IT: (
             "Translation error: \"trafitto con la spada\" (pierced with the sword) where the "
             "Latin has \"gládio animadvérti\" (executed by the sword, i.e. beheaded)."
         ),
     },
-    "mr:0915-alpinus": {
+    "mr:0915-alpinus-lugduni": {
         EDITION_IT: (
             "Translation error: \"sant’Albino\" where the Latin has \"sancti Alpíni\" (Alpinus)."
         ),
@@ -4417,25 +4417,25 @@ REVIEW_EDITION_NOTES = {
             "cruribúsque\" (hands and legs)."
         ),
     },
-    "mr:0916-vitalis": {
+    "mr:0916-vitalis-saviniaci": {
         EDITION_EN: (
             "Translation error: \"the monasteries he founded\" where the Latin has \"cœnóbium ab "
             "ipso cónditum\" (the monastery he founded)."
         ),
     },
-    "mr:0919-arnulphus": {
+    "mr:0919-arnulphus-vapinci": {
         EDITION_IT: (
             "Translation error: \"si adoperò molto\" (he worked hard) where the Latin has "
             "\"multa sustínuit\" (he endured much)."
         ),
     },
-    "mr:0919-eustochius": {
+    "mr:0919-eustochius-turonum": {
         EDITION_EN: (
             "Translation error: \"the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensian Gaul)."
         ),
     },
-    "mr:0919-sequanus": {
+    "mr:0919-sequanus-sistariensis": {
         EDITION_IT: (
             "Translation error: \"Sisteron\" (a town in Provence) for the monastery the Latin "
             "places \"apud Língones\" (near Langres); this is Segestre, now Saint-Seine-l'Abbaye."
@@ -4457,12 +4457,12 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Torre\" where the Latin has \"Torró\"."
         ),
     },
-    "mr:0922-basilla": {
+    "mr:0922-basilla-romae": {
         EDITION_EN: (
             "Translation error: \"Basilia\" where the Latin has \"Basíllæ\" (Basilla)."
         ),
     },
-    "mr:0922-silvanus": {
+    "mr:0922-silvanus-librosi": {
         EDITION_EN: (
             "Translation error: \"Lurais\" where the Latin has \"Libróso\" (Levroux)."
         ),
@@ -4484,7 +4484,7 @@ REVIEW_EDITION_NOTES = {
             "Rússiæ regióne\" (in the Moscow region); the monastery is not in the city."
         ),
     },
-    "mr:0925-solemnis": {
+    "mr:0925-solemnis-carnuti": {
         EDITION_EN: (
             "Translation error: \"the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensian Gaul)."

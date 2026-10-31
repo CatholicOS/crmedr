@@ -1024,7 +1024,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0928-zama"
+   "mr:0928-zama-bononiae"
   ]
  },
  {
@@ -2649,7 +2649,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0908-hadrianus"
+   "mr:0908-hadrianus-nicomediae"
   ]
  },
  {
@@ -8167,7 +8167,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:0904-rosalia"
+   "mr:0904-rosalia-panormi"
   ]
  },
  {
@@ -9594,7 +9594,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:0919-marianus"
+   "mr:0919-marianus-bituricensis"
   ]
  },
  {
@@ -10156,7 +10156,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:0902-syagrius"
+   "mr:0902-syagrius-augustoduni"
   ]
  },
  {
@@ -10558,7 +10558,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0903-marinus"
+   "mr:0903-marinus-montis-titani"
   ]
  },
  {
@@ -10618,9 +10618,9 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:0905-quintus"
+   "mr:0905-quintus-capuae"
   ],
-  "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-quintus)."
+  "note": "The 2004 edition reduces the eulogy to Quintus alone (mr:0905-quintus-capuae)."
  },
  {
   "id": "mr:0906-faustus-et-socii",
@@ -10907,7 +10907,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:0911-sacerdos"
+   "mr:0911-sacerdos-lugdunensis"
   ]
  },
  {
@@ -11180,7 +11180,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0918-ariadna"
+   "mr:0918-ariadna-prymnessi"
   ]
  },
  {
@@ -11534,7 +11534,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "FR",
   "same_eulogy": [
-   "mr:0924-lupus"
+   "mr:0924-lupus-lugduni"
   ]
  },
  {
@@ -13807,7 +13807,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:0902-habib"
+   "mr:0902-habib-edessae"
   ]
  },
  {
