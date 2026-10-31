@@ -1,7 +1,7 @@
 {
  "$comment": "Printed phrases that name different places in different eulogies: resolved per eulogy, keyed '<phrase>@<eulogy ID>' (scripts/build_gazetteer.py split). The reason says which places.",
  "ecclésiam Sancti Petri": "St Peter's in Rome (mr:0406-galla-romae) and San Pietro in Perugia (mr:0710-petrus-vincioli)",
- "monastérium Sanctæ Crucis": "Holy Cross at Poitiers (mr:0513-agnes-pictavii) and La Croix-Saint-Leufroy (mr:0621-leutfridus)",
+ "monastérium Sanctæ Crucis": "Holy Cross at Poitiers (mr:0513-agnes-pictavii) and La Croix-Saint-Leufroy (mr:0621-leutfridus-ebroicensis)",
  "monastérium Sancti Martíni": "Disentis (mr:0711-placidus-et-sigisbertus) and Utrecht (mr:0825-gregorius)",
  "Bonóniæ": "Bononia in Moesia, Vidin (mr:0104-hermes-et-caius), and Bologna (mr:0808-dominicus)",
  "Británniæ": "Great Britain (Gildas, mr:0129-gilda-sapiens) and Brittany (Charles of Blois, Françoise d'Amboise)",

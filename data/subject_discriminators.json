@@ -4348,6 +4348,861 @@
       "la": "Tolosae",
       "en": "of Toulouse",
       "it": "di Tolosa"
+    },
+    "mr:0601-caprasius-lirinensis": {
+      "la": "Lirinensis",
+      "en": "of Lérins",
+      "it": "di Lerino"
+    },
+    "mr:0601-eneco-onniensis": {
+      "la": "Onniensis",
+      "it": "di Oña"
+    },
+    "mr:0601-florus-arvernae": {
+      "la": "Arvernae",
+      "en": "of Clermont",
+      "it": "di Clermont"
+    },
+    "mr:0601-fortunatus-montis-falci": {
+      "la": "Montis Falci",
+      "en": "of Montefalco",
+      "it": "di Montefalco"
+    },
+    "mr:0601-iustinus-romae": {
+      "la": "Romae",
+      "en": "of Rome",
+      "it": "di Roma"
+    },
+    "mr:0601-proculus-bononiae": {
+      "la": "Bononiae",
+      "en": "of Bologna",
+      "it": "di Bologna"
+    },
+    "mr:0601-ronanus-britanniae-minoris": {
+      "la": "Britanniae Minoris",
+      "en": "of Brittany",
+      "it": "di Bretagna"
+    },
+    "mr:0601-simeon-trevirorum": {
+      "la": "Trevirorum",
+      "it": "di Treviri"
+    },
+    "mr:0601-theobaldus-albae-pompeiae": {
+      "la": "Albae Pompeiae",
+      "it": "di Alba"
+    },
+    "mr:0601-wistanus-licestriensis": {
+      "la": "Licestriensis",
+      "en": "of Leicester",
+      "it": "di Leicester"
+    },
+    "mr:0602-erasmus-formiarum": {
+      "la": "Formiarum",
+      "en": "of Formia",
+      "it": "di Formia"
+    },
+    "mr:0602-guido-aquarum-statiellarum": {
+      "la": "Aquarum Statiellarum",
+      "en": "of Acqui",
+      "it": "di Acqui"
+    },
+    "mr:0602-nicephorus-constantinopolitanus": {
+      "la": "Constantinopolitanus",
+      "en": "of Constantinople",
+      "it": "di Costantinopoli"
+    },
+    "mr:0602-nicolaus-trani": {
+      "la": "Trani",
+      "en": "of Trani",
+      "it": "di Trani"
+    },
+    "mr:0603-caecilius-carthaginensis": {
+      "la": "Carthaginensis",
+      "en": "of Carthage",
+      "it": "di Cartagine"
+    },
+    "mr:0603-clotildis-turonum": {
+      "la": "Turonum",
+      "en": "of Tours",
+      "it": "di Tours"
+    },
+    "mr:0603-coemgenus-glendalaci": {
+      "la": "Glendalaci",
+      "en": "of Glendalough",
+      "it": "di Glendalough"
+    },
+    "mr:0603-conus-cadossae": {
+      "la": "Cadossae",
+      "en": "of Cadossa",
+      "it": "di Cadossa"
+    },
+    "mr:0603-davinus-lucae": {
+      "la": "Lucae",
+      "en": "of Lucca",
+      "it": "di Lucca"
+    },
+    "mr:0603-genesius-claromontanus": {
+      "la": "Claromontanus",
+      "en": "of Clermont",
+      "it": "di Clermont-Ferrand"
+    },
+    "mr:0603-hilarius-carcasonis": {
+      "la": "Carcasonis",
+      "en": "of Carcassonne",
+      "it": "di Carcassonne"
+    },
+    "mr:0603-isaac-tabanensis": {
+      "la": "Tabanensis",
+      "en": "of Tábanos",
+      "it": "di Tábanos"
+    },
+    "mr:0603-lifardus-magduni": {
+      "la": "Magduni",
+      "en": "of Meung-sur-Loire",
+      "it": "di Meung-sur-Loire"
+    },
+    "mr:0603-morandus-cluniacensis": {
+      "la": "Cluniacensis",
+      "en": "of Cluny",
+      "it": "di Cluny"
+    },
+    "mr:0603-oliva-anagniae": {
+      "la": "Anagniae",
+      "en": "of Anagni",
+      "it": "di Anagni"
+    },
+    "mr:0604-gualterius-serviliani": {
+      "la": "Serviliani",
+      "en": "of Servigliano",
+      "it": "di Servigliano"
+    },
+    "mr:0604-metrophanes-byzantinus": {
+      "la": "Byzantinus",
+      "en": "of Byzantium",
+      "it": "di Bisanzio"
+    },
+    "mr:0604-optatus-milevi": {
+      "la": "Milevi",
+      "en": "of Milevis",
+      "it": "di Mila"
+    },
+    "mr:0604-quirinus-sisciacensis": {
+      "la": "Sisciacensis",
+      "en": "of Sisak",
+      "it": "di Siscia"
+    },
+    "mr:0605-bonifatius-docci": {
+      "la": "Docci",
+      "en": "of Dokkum",
+      "it": "di Dokkum"
+    },
+    "mr:0605-dorotheus-tyri": {
+      "la": "Tyri",
+      "en": "of Tyre",
+      "it": "di Tiro"
+    },
+    "mr:0605-eutychius-comi": {
+      "la": "Comi",
+      "it": "di Como"
+    },
+    "mr:0605-francus-asserici": {
+      "la": "Asserici",
+      "en": "of Assergi",
+      "it": "di Assergi"
+    },
+    "mr:0605-illidius-arvernae": {
+      "la": "Arvernae",
+      "en": "of Clermont-Ferrand",
+      "it": "di Clermont-Ferrand"
+    },
+    "mr:0605-sancius-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0606-alexander-bononiensis": {
+      "la": "Bononiensis",
+      "en": "of Bologna",
+      "it": "di Bologna"
+    },
+    "mr:0606-bertrandus-aquileiensis": {
+      "la": "Aquileiensis",
+      "en": "of Aquileia",
+      "it": "di Aquileia"
+    },
+    "mr:0606-ceratius-gratianopoli": {
+      "la": "Gratianopoli",
+      "en": "of Grenoble",
+      "it": "di Grenoble"
+    },
+    "mr:0606-claudius-condatiscensis": {
+      "la": "Condatiscensis",
+      "en": "of Condat",
+      "it": "di Condat"
+    },
+    "mr:0606-colmanus-orcadum": {
+      "la": "Orcadum",
+      "en": "of Orkney",
+      "it": "delle Orcadi"
+    },
+    "mr:0606-falco-cavensis": {
+      "la": "Cavensis",
+      "en": "of Cava de' Tirreni",
+      "it": "di Cava de' Tirreni"
+    },
+    "mr:0606-gilbertus-novemfontium": {
+      "la": "Novemfontium",
+      "en": "of Neuffonts",
+      "it": "di Neuffonts"
+    },
+    "mr:0606-hilarion-constantinopoli": {
+      "la": "Constantinopoli",
+      "en": "of Constantinople",
+      "it": "di Costantinopoli"
+    },
+    "mr:0606-iarlathus-hiberniae": {
+      "la": "Hiberniae",
+      "en": "of Ireland",
+      "it": "d’Irlanda"
+    },
+    "mr:0606-norbertus-magdeburgi": {
+      "la": "Magdeburgi",
+      "en": "of Magdeburg",
+      "it": "di Magdeburgo"
+    },
+    "mr:0607-colmanus-dromorensis": {
+      "la": "Dromorensis",
+      "en": "of Dromore",
+      "it": "di Dromore"
+    },
+    "mr:0607-robertus-novi-monasterii": {
+      "la": "Novi Monasterii",
+      "en": "of Newminster",
+      "it": "di Newminster"
+    },
+    "mr:0608-clodulphus-metarum": {
+      "la": "Metarum",
+      "en": "of Metz",
+      "it": "di Metz"
+    },
+    "mr:0608-fortunatus-fani": {
+      "la": "Fani",
+      "en": "of Fano",
+      "it": "di Fano"
+    },
+    "mr:0608-gildardus-rothomagi": {
+      "la": "Rothomagi",
+      "en": "of Rouen",
+      "it": "di Rouen"
+    },
+    "mr:0608-maximinus-aquarum-sextiarum": {
+      "la": "Aquarum Sextiarum",
+      "en": "of Aix-en-Provence",
+      "it": "di Aix-en-Provence"
+    },
+    "mr:0608-medardus-veromanduorum": {
+      "la": "Veromanduorum",
+      "en": "of Vermand",
+      "it": "di Vermand"
+    },
+    "mr:0609-columba-colum-cille": {
+      "la": "Colum Cille",
+      "en": "of Iona",
+      "it": "di Iona"
+    },
+    "mr:0609-diomedes-niceae": {
+      "la": "Niceae",
+      "en": "of Nicaea",
+      "it": "di Nicea"
+    },
+    "mr:0609-ephraem-nisibi": {
+      "la": "Nisibi",
+      "en": "of Nisibis",
+      "it": "di Nisibi"
+    },
+    "mr:0609-maximianus-syracusis": {
+      "la": "Syracusis",
+      "en": "of Syracuse",
+      "it": "di Siracusa"
+    },
+    "mr:0609-richardus-andriae": {
+      "la": "Andriae",
+      "en": "of Andria",
+      "it": "di Andria"
+    },
+    "mr:0609-vincentius-agennensis": {
+      "la": "Agennensis",
+      "en": "of Agen",
+      "it": "di Agen"
+    },
+    "mr:0610-bogumilus-gnesnensis": {
+      "la": "Gnesnensis",
+      "en": "of Gniezno",
+      "it": "di Gniezno"
+    },
+    "mr:0610-censurius-autissiodori": {
+      "la": "Autissiodori",
+      "en": "of Auxerre",
+      "it": "di Auxerre"
+    },
+    "mr:0610-ithamarus-roffae": {
+      "la": "Roffae",
+      "en": "of Rochester",
+      "it": "di Rochester"
+    },
+    "mr:0610-landericus-parisiorum": {
+      "la": "Parisiorum",
+      "en": "of Paris",
+      "it": "di Parigi"
+    },
+    "mr:0611-aleydis-camerae": {
+      "la": "Camerae",
+      "en": "of La Cambre",
+      "it": "di La Cambre"
+    },
+    "mr:0611-bardo-moguntiae": {
+      "la": "Moguntiae",
+      "en": "of Mainz",
+      "it": "di Magonza"
+    },
+    "mr:0611-iolenta-gnesnae": {
+      "la": "Gnesnae",
+      "en": "of Gniezno",
+      "it": "di Gniezno"
+    },
+    "mr:0611-maximus-neapoli": {
+      "la": "Neapoli",
+      "en": "of Naples",
+      "it": "di Napoli"
+    },
+    "mr:0611-parisius-tarvisii": {
+      "la": "Tarvisii",
+      "en": "of Treviso",
+      "it": "di Treviso"
+    },
+    "mr:0611-rembertus-hamburgensis": {
+      "la": "Hamburgensis",
+      "en": "of Hamburg",
+      "it": "di Amburgo"
+    },
+    "mr:0612-basilides-lorii": {
+      "la": "Lorii",
+      "en": "of Lorium",
+      "it": "di Lorium"
+    },
+    "mr:0612-eskillus-sueciae": {
+      "la": "Sueciae",
+      "en": "of Sweden",
+      "it": "di Svezia"
+    },
+    "mr:0612-guido-cortonae": {
+      "la": "Cortonae",
+      "en": "of Cortona",
+      "it": "di Cortona"
+    },
+    "mr:0612-odulphus-ultraiecti": {
+      "la": "Ultraiecti",
+      "en": "of Utrecht",
+      "it": "di Utrecht"
+    },
+    "mr:0612-placidus-ocrae": {
+      "la": "Ocrae",
+      "en": "of Ocre",
+      "it": "di Ocre"
+    },
+    "mr:0613-achilleus-alexandriae": {
+      "la": "Alexandriae",
+      "en": "of Alexandria",
+      "it": "di Alessandria"
+    },
+    "mr:0613-antonius-patavii": {
+      "la": "Patavii",
+      "en": "of Padua",
+      "it": "di Padova"
+    },
+    "mr:0613-aventinus-arbusti": {
+      "la": "Arbusti",
+      "en": "of Larboust",
+      "it": "di Larboust"
+    },
+    "mr:0613-cetheus-peregrinus": {
+      "la": "Peregrinus",
+      "en": "Peregrinus",
+      "it": "Pellegrino"
+    },
+    "mr:0613-eulogius-alexandriae": {
+      "la": "Alexandriae",
+      "en": "of Alexandria",
+      "it": "di Alessandria"
+    },
+    "mr:0613-fandila-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0613-felicula-romae": {
+      "la": "Romae",
+      "en": "of Rome",
+      "it": "di Roma"
+    },
+    "mr:0613-gerardus-claravallensis": {
+      "la": "Claravallensis",
+      "en": "of Clairvaux",
+      "it": "di Chiaravalle"
+    },
+    "mr:0613-psalmodius-lemovicum": {
+      "la": "Lemovicum",
+      "en": "of Limoges",
+      "it": "di Limoges"
+    },
+    "mr:0613-ragnebertus-lugdunensis": {
+      "la": "Lugdunensis",
+      "en": "of Lyon",
+      "it": "di Lione"
+    },
+    "mr:0613-triphyllius-leucosiae": {
+      "la": "Leucosiae",
+      "en": "of Nicosia",
+      "it": "di Nicosia"
+    },
+    "mr:0614-aetherius-viennae": {
+      "la": "Viennae",
+      "en": "of Vienne",
+      "it": "di Vienne"
+    },
+    "mr:0614-fortunatus-neapoli": {
+      "la": "Neapoli",
+      "en": "of Naples",
+      "it": "di Napoli"
+    },
+    "mr:0614-methodius-constantinopoli": {
+      "la": "Constantinopoli",
+      "en": "of Constantinople",
+      "it": "di Costantinopoli"
+    },
+    "mr:0614-protus-aquileiensis": {
+      "la": "Aquileiensis",
+      "it": "di Aquileia"
+    },
+    "mr:0615-abraham-arvernae": {
+      "la": "Arvernae",
+      "en": "of Clermont",
+      "it": "di Clermont-Ferrand"
+    },
+    "mr:0615-benildis-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0615-germana-pibraci": {
+      "la": "Pibraci",
+      "en": "of Pibrac",
+      "it": "di Pibrac"
+    },
+    "mr:0615-hesychius-dorostori": {
+      "la": "Dorostori",
+      "en": "of Silistra",
+      "it": "di Silistra"
+    },
+    "mr:0615-isfridus-raceburgi": {
+      "la": "Raceburgi",
+      "en": "of Ratzeburg",
+      "it": "di Ratzeburg"
+    },
+    "mr:0615-landelinus-crispinii": {
+      "la": "Crispinii",
+      "en": "of Crespin",
+      "it": "di Crespin"
+    },
+    "mr:0615-lotharius-sagii": {
+      "la": "Sagii",
+      "en": "of Séez",
+      "it": "di Sées"
+    },
+    "mr:0615-vitus-lucaniae": {
+      "la": "Lucaniae",
+      "en": "of Lucania",
+      "it": "di Lucania"
+    },
+    "mr:0616-aurelianus-arelatensis": {
+      "la": "Arelatensis",
+      "en": "of Arles",
+      "it": "di Arles"
+    },
+    "mr:0616-benno-misnae": {
+      "la": "Misnae",
+      "en": "of Meissen",
+      "it": "di Meißen"
+    },
+    "mr:0616-cechardus-lunensis": {
+      "la": "Lunensis",
+      "en": "of Luni",
+      "it": "di Luni"
+    },
+    "mr:0616-lutgardis-aquiriae": {
+      "la": "Aquiriae",
+      "en": "of Aywières",
+      "it": "di Aywières"
+    },
+    "mr:0616-similianus-namnetum": {
+      "la": "Namnetum",
+      "en": "of Nantes",
+      "it": "di Nantes"
+    },
+    "mr:0616-tychon-amathuntis": {
+      "la": "Amathuntis",
+      "en": "of Amathus",
+      "it": "di Amatunte"
+    },
+    "mr:0617-antidius-vesontione": {
+      "la": "Vesontione",
+      "en": "of Besançon",
+      "it": "di Besançon"
+    },
+    "mr:0617-avitus-aureliani": {
+      "la": "Aureliani",
+      "en": "of Orléans",
+      "it": "di Orléans"
+    },
+    "mr:0617-hervaeus-britanniae-minoris": {
+      "la": "Britanniae Minoris",
+      "en": "of Brittany",
+      "it": "di Bretagna"
+    },
+    "mr:0617-teresia-lorvanii": {
+      "la": "Lorvanii",
+      "en": "of Lorvão",
+      "it": "di Lorvão"
+    },
+    "mr:0618-amandus-burdigalae": {
+      "la": "Burdigalae",
+      "en": "of Bordeaux",
+      "it": "di Bordeaux"
+    },
+    "mr:0618-calogerus-thermarum-selinuntiarum": {
+      "la": "Thermarum Selinuntiarum",
+      "en": "of Sciacca",
+      "it": "di Sciacca"
+    },
+    "mr:0618-elisabeth-schonaviae": {
+      "la": "Schonaviae",
+      "en": "of Schönau",
+      "it": "di Schönau"
+    },
+    "mr:0618-leontius-tripoli": {
+      "la": "Tripoli",
+      "en": "of Tripoli",
+      "it": "di Tripoli"
+    },
+    "mr:0619-childomarca-fiscamni": {
+      "la": "Fiscamni",
+      "en": "of Fécamp",
+      "it": "di Fécamp"
+    },
+    "mr:0619-deodatus-nivernensis": {
+      "la": "Nivernensis",
+      "en": "of Nevers",
+      "it": "di Nevers"
+    },
+    "mr:0619-lambertus-caesaraugustae": {
+      "la": "Caesaraugustae",
+      "en": "of Zaragoza",
+      "it": "di Saragozza"
+    },
+    "mr:0619-michaelina-pisauri": {
+      "la": "Pisauri",
+      "en": "of Pesaro",
+      "it": "di Pesaro"
+    },
+    "mr:0619-romualdus-ravennae": {
+      "la": "Ravennae",
+      "en": "of Ravenna",
+      "it": "di Ravenna"
+    },
+    "mr:0620-gobanus-laudunensis": {
+      "la": "Laudunensis",
+      "en": "of Laon",
+      "it": "di Laon"
+    },
+    "mr:0620-methodius-olympensis": {
+      "la": "Olympensis",
+      "en": "of Olympus",
+      "it": "di Olimpo"
+    },
+    "mr:0621-leutfridus-ebroicensis": {
+      "la": "Ebroicensis",
+      "en": "of Évreux",
+      "it": "di Évreux"
+    },
+    "mr:0621-mevennus-gaeli": {
+      "la": "Gaeli",
+      "en": "of Gaël",
+      "it": "di Gaël"
+    },
+    "mr:0621-radulphus-biturigum": {
+      "la": "Biturigum",
+      "en": "of Bourges",
+      "it": "di Bourges"
+    },
+    "mr:0621-raymundus-rotensis": {
+      "la": "Rotensis",
+      "en": "of Roda de Isábena",
+      "it": "di Roda de Isábena"
+    },
+    "mr:0621-thomas-urbeveti": {
+      "la": "Urbeveti",
+      "en": "of Orvieto",
+      "it": "di Orvieto"
+    },
+    "mr:0622-albanus-verulamii": {
+      "la": "Verulamii",
+      "en": "of Verulamium",
+      "it": "di Verulamio"
+    },
+    "mr:0622-eusebius-samosatensis": {
+      "la": "Samosatensis",
+      "en": "of Samosata",
+      "it": "di Samosata"
+    },
+    "mr:0622-nicetas-remesianae": {
+      "la": "Remesianae",
+      "en": "of Remesiana",
+      "it": "di Remesiana"
+    },
+    "mr:0622-paulinus-nolae": {
+      "la": "Nolae",
+      "en": "of Nola",
+      "it": "di Nola"
+    },
+    "mr:0623-bilius-dariorigi": {
+      "la": "Dariorigi",
+      "en": "of Vannes",
+      "it": "di Vannes"
+    },
+    "mr:0623-ediltrudis-eliensis": {
+      "la": "Eliensis",
+      "en": "of Ely",
+      "it": "di Ely"
+    },
+    "mr:0623-lanfrancus-papiae": {
+      "la": "Papiae",
+      "en": "of Pavia",
+      "it": "di Pavia"
+    },
+    "mr:0623-maria-oignaci": {
+      "la": "Oignaci",
+      "en": "of Oignies",
+      "it": "di Oignies"
+    },
+    "mr:0623-walherus-onhayae": {
+      "la": "Onhayae",
+      "en": "of Onhaye",
+      "it": "di Onhaye"
+    },
+    "mr:0624-gohardus-nannetum": {
+      "la": "Nannetum",
+      "en": "of Nantes",
+      "it": "di Nantes"
+    },
+    "mr:0624-rumoldus-mechliniae": {
+      "la": "Mechliniae",
+      "en": "of Mechelen",
+      "it": "di Malines"
+    },
+    "mr:0624-simplicius-augustoduni": {
+      "la": "Augustoduni",
+      "en": "of Autun",
+      "it": "di Autun"
+    },
+    "mr:0624-theodgarus-vestervigi": {
+      "la": "Vestervigi",
+      "en": "of Vestervig",
+      "it": "di Vestervig"
+    },
+    "mr:0624-theodulfus-laubii": {
+      "la": "Laubii",
+      "en": "of Lobbes",
+      "it": "di Lobbes"
+    },
+    "mr:0625-adalbertus-egmundae": {
+      "la": "Egmundae",
+      "en": "of Egmond",
+      "it": "di Egmond"
+    },
+    "mr:0625-eurosia-iacae": {
+      "la": "Iacae",
+      "en": "of Jaca",
+      "it": "di Jaca"
+    },
+    "mr:0625-gulielmus-guleti": {
+      "la": "Guleti",
+      "en": "of Goleto",
+      "it": "del Goleto"
+    },
+    "mr:0625-maximus-augustae-taurinorum": {
+      "la": "Augustae Taurinorum",
+      "en": "of Turin",
+      "it": "di Torino"
+    },
+    "mr:0625-molochus-rossmarkaei": {
+      "la": "Rossmarkaei",
+      "en": "of Rosemarkie",
+      "it": "di Rosemarkie"
+    },
+    "mr:0625-prosperus-regii-lepidi": {
+      "la": "Regii Lepidi",
+      "en": "of Reggio Emilia",
+      "it": "di Reggio Emilia"
+    },
+    "mr:0625-salomon-britanniae-minoris": {
+      "la": "Britanniae Minoris",
+      "en": "of Brittany",
+      "it": "di Bretagna"
+    },
+    "mr:0625-tigridis-maurianae": {
+      "la": "Maurianae",
+      "en": "of Maurienne",
+      "it": "di Moriana"
+    },
+    "mr:0626-anthelmus-bellicii": {
+      "la": "Bellicii",
+      "en": "of Belley",
+      "it": "di Belley"
+    },
+    "mr:0626-david-thessalonicensis": {
+      "la": "Thessalonicensis",
+      "en": "of Thessaloniki",
+      "it": "di Salonicco"
+    },
+    "mr:0626-deodatus-nolae": {
+      "la": "Nolae",
+      "en": "of Nola",
+      "it": "di Nola"
+    },
+    "mr:0626-maxentius-pictaviensis": {
+      "la": "Pictaviensis",
+      "en": "of Poitiers",
+      "it": "di Poitiers"
+    },
+    "mr:0626-pelagius-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0626-radulphus-eugubii": {
+      "la": "Eugubii",
+      "en": "of Gubbio",
+      "it": "di Gubbio"
+    },
+    "mr:0626-salvius-valentianae": {
+      "la": "Valentianae",
+      "en": "of Valenciennes",
+      "it": "di Valenciennes"
+    },
+    "mr:0626-vigilius-tridenti": {
+      "la": "Tridenti",
+      "en": "of Trento",
+      "it": "di Trento"
+    },
+    "mr:0627-arialdus-mediolani": {
+      "la": "Mediolani",
+      "en": "of Milan",
+      "it": "di Milano"
+    },
+    "mr:0627-cyrillus-alexandriae": {
+      "la": "Alexandriae",
+      "en": "of Alexandria",
+      "it": "di Alessandria"
+    },
+    "mr:0627-guddenes-carthaginensis": {
+      "la": "Carthaginensis",
+      "en": "of Carthage",
+      "it": "di Cartagine"
+    },
+    "mr:0627-ioannes-cainonis": {
+      "la": "Cainonis",
+      "en": "of Chinon",
+      "it": "di Chinon"
+    },
+    "mr:0627-samson-constantinopoli": {
+      "la": "Constantinopoli",
+      "en": "of Constantinople",
+      "it": "di Costantinopoli"
+    },
+    "mr:0627-zoilus-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0628-argimirus-cordubae": {
+      "la": "Cordubae",
+      "en": "of Córdoba",
+      "it": "di Cordova"
+    },
+    "mr:0628-heimeradus-hasungae": {
+      "la": "Hasungae",
+      "en": "of Burghasungen",
+      "it": "di Burghasungen"
+    },
+    "mr:0628-irenaeus-lugdunensis": {
+      "la": "Lugdunensis",
+      "en": "of Lyon",
+      "it": "di Lione"
+    },
+    "mr:0629-cassius-narniae": {
+      "la": "Narniae",
+      "en": "of Narni",
+      "it": "di Narni"
+    },
+    "mr:0629-hemma-gurci": {
+      "la": "Gurci",
+      "en": "of Gurk",
+      "it": "di Gurk"
+    },
+    "mr:0629-syrus-genuae": {
+      "la": "Genuae",
+      "en": "of Genoa",
+      "it": "di Genova"
+    },
+    "mr:0630-adolphus-altencampensis": {
+      "la": "Altencampensis",
+      "en": "of Kamp",
+      "it": "di Kamp"
+    },
+    "mr:0630-basilides-alexandriae": {
+      "la": "Alexandriae",
+      "en": "of Alexandria",
+      "it": "di Alessandria"
+    },
+    "mr:0630-bertichramnus-cenomanorum": {
+      "la": "Cenomanorum",
+      "en": "of Le Mans",
+      "it": "di Le Mans"
+    },
+    "mr:0630-erentrudis-nonneburgensis": {
+      "la": "Nonneburgensis",
+      "en": "of Nonnberg",
+      "it": "di Nonnberg"
+    },
+    "mr:0630-ladislaus-nitravae": {
+      "la": "Nitravae",
+      "en": "of Nitra",
+      "it": "di Nitra"
+    },
+    "mr:0630-martialis-lemovicum": {
+      "la": "Lemovicum",
+      "en": "of Limoges",
+      "it": "di Limoges"
+    },
+    "mr:0630-otho-bambergae": {
+      "la": "Bambergae",
+      "en": "of Bamberg",
+      "it": "di Bamberga"
+    },
+    "mr:0630-theobaldus-salanicae": {
+      "la": "Salanicae",
+      "en": "of Sajanega",
+      "it": "di Sajanega"
     }
   }
 }

@@ -71,8 +71,8 @@ editions (July 2026), independently of the digitized workbook:
 Asterisked in the Latin print, no asterisk in the CEI edition (23):
 mr:0104-ferreolus (4\*), mr:0104-rigomerus (5\*), mr:0104-pharaildis (7\*),
 mr:0122-ladislaus-batthyany-strattmann (15\*), mr:0502-boleslaus-strzelecki (12\*),
-mr:0512-imelda-lambertini (10\*), mr:0524-servulus-tergestis (4\*), mr:0611-bardo (4\*),
-mr:0624-gohardus (7\*) — note: the earlier draft called this entry "Goardo" without a date;
+mr:0512-imelda-lambertini (10\*), mr:0524-servulus-tergestis (4\*), mr:0611-bardo-moguntiae (4\*),
+mr:0624-gohardus-nannetum (7\*) — note: the earlier draft called this entry "Goardo" without a date;
 it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) nor
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
 mr:0711-leontius (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva (6\*),
@@ -366,7 +366,7 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0508-maria-della-serra | mr:0508-angelus-de-massatio | Bl. Angelo of Massaccio |
 | mr:0524-hyacinthus | mr:0524-ludovicus-zephyrinus-moreau | Bl. Louis-Zéphirin Moreau |
 | mr:0526-papulus | mr:0526-berengarius-sancti-papuli | St Berengar |
-| mr:0603-maria-de-cadossa | mr:0603-conus | St Conus |
+| mr:0603-maria-de-cadossa | mr:0603-conus-cadossae | St Conus |
 | mr:0620-iacobus-fodiensi | mr:0620-ioannes-de-mateola | St John of Matera (printed *de Matéola*) |
 | mr:0705-maria-de-terreto | mr:0705-thomas | St Thomas, abbot |
 | mr:0726-benedictus | mr:0726-simeon | St Simeon of Polirone |
@@ -455,7 +455,7 @@ renamed (not deprecated), each in `ID_CORRECTIONS`; the Latin, Italian and Engli
 subjects follow the slugs.
 - 110 eulogies of a pair (*sanctórum [mártyrum] X … et Y*) and 82 of three or more had
   kept only the first-named subject; they take `-et-<second>` or `-et-socii` (rule 5).
-  A companion named only by relation (mr:0626-salvius, "and his disciple") gives no
+  A companion named only by relation (mr:0626-salvius-valentianae, "and his disciple") gives no
   second name and is kept. mr:0823-laurentius was a place-lead slug ("in the cemetery of
   St Lawrence"); its subjects are Abundius and Irenaeus.
 - 14 single-subject slugs were cut short at a letter the fold did not decompose — the
@@ -772,7 +772,7 @@ mr:0917-franciscus).
 | mr:1126-silvester | mr:1126-silvester-gozzolini |
 | mr:0220-eucherius-aurelianensis | mr:0220-eucherius-aurelianensis |
 | mr:0228-presbyteri-diaconi | mr:0228-presbyteri-diaconi-plurimi-alexandriae |
-| mr:0615-vitus-et-socii | mr:0615-vitus |
+| mr:0615-vitus-et-socii | mr:0615-vitus-lucaniae |
 | mr:0917-petrus-de-arbues-caesaraugustae | mr:0917-petrus-de-arbues |
 | mr:1018-paulus-a-cruce-romae | mr:1018-paulus-a-cruce |
 | mr:1018-petrus-de-alcantara-arenis | mr:1018-petrus-de-alcantara |
@@ -868,7 +868,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0519-ivo-lohaneti | mr:0519-ivo-trecorii |
 | mr:0525-leo-in | mr:0525-leo-mentuniaci |
 | mr:0528-justus | mr:0528-iustus-urgelli |
-| mr:0629-syri | mr:0629-syrus |
+| mr:0629-syri | mr:0629-syrus-genuae |
 | mr:0720-paulus-cordubae | mr:0720-paulus |
 | mr:0729-olavus-norvegia | mr:0729-olavus |
 | mr:0729-lupi | mr:0729-lupus |
@@ -1000,7 +1000,7 @@ calendar, not an error. Of its 183 findings of medium and low confidence, 138 ar
 way. Errors of fact, place, name, title or number are noted; renderings that only loosen or
 compress the Latin (a double monastery as two, a godfather as the baptizer, a minor locator left
 out) are not. Two Italian cards became one Latin note: the Latin puts Nitra on the Váh
-(mr:0630-ladislaus, mr:0717-zoerardus-et-benedictus), where it lies on the Nitra.
+(mr:0630-ladislaus-nitravae, mr:0717-zoerardus-et-benedictus), where it lies on the Nitra.
 
 **The unofficial English 2004 against the Latin 2004 (October 2026)**: the same reading of the
 unofficial English, with the Italian as a second witness. Its high-confidence errors are curator
@@ -1113,7 +1113,7 @@ errors come from a homonymous place resolved to the wrong country: Guadalajara
 Nice, and Catalan Montserrat coded `MS` (the British overseas territory). Four
 corrections go against the printed text: mr:0504-florianus-lauriaci → AT (Lorch/Enns; the
 text says "nell'odierna Germania"), mr:0304-casimirus-grodnae → BY (Grodno; the text says
-"in Lituania"), mr:0603-morandus → FR (Altkirch in Alsace) and mr:0827-gebhardus →
+"in Lituania"), mr:0603-morandus-cluniacensis → FR (Altkirch in Alsace) and mr:0827-gebhardus →
 DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
 are left as they are: mr:1011-philippus stays `PS` (Caesarea Maritima), because
 the workbook uses `PS` for the whole Holy Land (90 current entries) and changing
@@ -1383,13 +1383,13 @@ from `PS` to `IL`.
 | `mr:0525-nicolaus-cehelskyj` | Yavas (Q770345) | MD | RU |
 | `mr:0529-iosephus-gerard` | Roma (Q991643) | IT | LS |
 | `mr:0605-petrus-spano` | Ciano (Q18433614) | TR | IT |
-| `mr:0611-barnabas` | no opening place | IL | PS |
+| `mr:0611-barnabas-apostolus` | no opening place | IL | PS |
 | `mr:0613-maria-anna-biernacka` | Navumavičy (Q11790218) | PL | BY |
 | `mr:0615-amos-propheta` | no opening place | IL | PS |
 | `mr:0615-bernardus-de-menthone` | Great St Bernard Pass (Q623424) | IT | CH |
 | `mr:0616-quiricus-et-iulitta` | Asia Minor (Q12824780) |  | TR |
-| `mr:0622-eusebius` | Doliche (Q1235555) | SY | TR |
-| `mr:0623-maria` | Oignies (Q3349930) | FR | BE |
+| `mr:0622-eusebius-samosatensis` | Doliche (Q1235555) | SY | TR |
+| `mr:0623-maria-oignaci` | Oignies (Q3349930) | FR | BE |
 | `mr:0626-iosephus-ma-taishun` | Hejian (Q1601618) | IT | CN |
 | `mr:0703-marcus-et-mocianus` | Moesia (Q199499) | RO | BG |
 | `mr:0705-athanasius-hierosolymitanus` | no opening place | IL | PS |
@@ -1575,7 +1575,7 @@ attested only in the 1914 English; an ID's name must be in the text): of its 2,8
 elogia, 2,770 matched an ID of the same day and 42 were settled by reviewed overrides —
 spelling variants and other names of the same subject the name check rejects (the 1630
 *Lucinius* of Angers under the 1914-attested `mr:0213-licinius`, now linked to
-`mr:1101-licinius`; *Peregrinus* under `mr:0613-cetheus`, *Dominica* under
+`mr:1101-licinius`; *Peregrinus* under `mr:0613-cetheus-peregrinus`, *Dominica* under
 `mr:0706-cyriaca`, *Margarita* under `mr:0720-marina`). **6 of these IDs are new
 deprecated IDs** (`attested_in: martyrologium_romanum_1630`): eulogies that 1630 prints
 on another day than any other edition (`mr:0105-domnio`, `mr:0714-henricus`,
@@ -1667,7 +1667,7 @@ missed the elided "sant’Eutizio" and let lowercase words pass as names ("una s
 vita"). Three detectors (the mention aligned with the Latin subject, the first mention
 after the opening place, and honorifics that contradict the text) flagged 346 IDs;
 each was read against its 2004 text, and 180 subjects were corrected (99 Italian, 81
-English, after settling a few conventions): e.g. mr:0628-irenaeus "San Girolamo" ->
+English, after settling a few conventions): e.g. mr:0628-irenaeus-lugdunensis "San Girolamo" ->
 "Sant’Ireneo", mr:0724-bor-et-gleb "Saint Sigolena" -> "Saints Boris and Gleb". Each
 language follows its own edition's honorific; names are as printed, nominative, without
 titles; groups take "e compagni/e compagne" and "and companions"; English feasts keep
