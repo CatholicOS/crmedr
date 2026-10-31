@@ -109,7 +109,7 @@ ENTRY_NOTES = {
     "mr:0426-raphael-arnaiz-baron": "Rafael Arnáiz Barón, blessed in the 2004 editions, was canonized on 11 October 2009.",
     "mr:0430-maria-ab-incarnatione": "Marie of the Incarnation Guyart, blessed in the 2004 editions, was canonized on 3 April 2014.",
     "mr:0503-maria-leonia-paradis": "Marie-Léonie Paradis, blessed in the 2004 editions, was canonized on 20 October 2024.",
-    "mr:0503-stanislaus": "Stanisław Kazimierczyk, blessed in the 2004 editions, was canonized on 17 October 2010.",
+    "mr:0503-stanislaus-kazimierczyk": "Stanisław Kazimierczyk, blessed in the 2004 editions, was canonized on 17 October 2010.",
     "mr:0505-nuntius-sulprizio": "Nunzio Sulprizio, blessed in the 2004 editions, was canonized on 14 October 2018.",
     "mr:0506-franciscus-de-montmorency-laval": "François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014.",
     "mr:0507-rosa-venerini": "Rosa Venerini, blessed in the 2004 editions, was canonized on 15 October 2006.",
@@ -766,12 +766,12 @@ EDITION_NOTES = {
             "nuncupátus\" (called son by him, that is, by Peter)."
         ),
     },
-    "mr:0501-arigius": {
+    "mr:0501-arigius-vapinci": {
         EDITION_EN: (
             "Translation error: \"Vence\" where the Latin has \"Vapínci\" (Gap)."
         ),
     },
-    "mr:0506-benedicta": {
+    "mr:0506-benedicta-romae": {
         EDITION_EN: (
             "Translation error: \"whom she especially loved above all others\" where the Latin has "
             "\"cui máxime præ céteris dilécta erat\" (by whom she was loved above all others)."
@@ -783,12 +783,12 @@ EDITION_NOTES = {
             "(hanged on gallows)."
         ),
     },
-    "mr:0510-gulielmus": {
+    "mr:0510-gulielmus-pontisarae": {
         EDITION_EN: (
             "Translation error: \"Pont-Sainte-Maxence\" where the Latin has \"Pontísaræ\" (Pontoise)."
         ),
     },
-    "mr:0516-peregrinus": {
+    "mr:0516-peregrinus-autissiodori": {
         EDITION_EN: (
             "Translation error: \"Autun\" where the Latin has \"Autissiodorénsi\" (Auxerre)."
         ),
@@ -803,7 +803,7 @@ EDITION_NOTES = {
             "(Saint)."
         ),
     },
-    "mr:0520-aurea": {
+    "mr:0520-aurea-ostiae": {
         EDITION_EN: (
             "Translation error: \"Aurore\" where the Latin has \"Aureæ\" (Aurea)."
         ),
@@ -819,7 +819,7 @@ EDITION_NOTES = {
             "furum ducébat\" (led a band of thieves)."
         ),
     },
-    "mr:0530-hubertus": {
+    "mr:0530-hubertus-tungrensis": {
         EDITION_EN: (
             "Translation error: \"Saint Robert\" where the Latin has \"sancti Hubérti\" (Saint "
             "Hubert)."
@@ -1648,13 +1648,13 @@ EDITION_NOTES = {
             "remaining in it until death)."
         ),
     },
-    "mr:0505-godehardus": {
+    "mr:0505-godehardus-altensis": {
         EDITION_IT: (
             "Translation error: \"succeduto a san Bernardo\" where the Latin has \"sancto Bernwárdo\" "
             "(Saint Bernward, his predecessor at Hildesheim)."
         ),
     },
-    "mr:0507-gisella": {
+    "mr:0507-gisella-nidroburgensis": {
         EDITION_IT: (
             "Translation error: \"spogliatasi di tutti i suoi beni\" (having stripped herself) "
             "where the Latin has \"ómnibus facultátibus spoliáta\" (despoiled of all her goods)."
@@ -1666,13 +1666,13 @@ EDITION_NOTES = {
             "(La Puye, near Poitiers)."
         ),
     },
-    "mr:0522-lupus": {
+    "mr:0522-lupus-lemovici": {
         EDITION_IT: (
             "Translation error: \"monastero di Solesme\" where the Latin has \"monastérii "
             "Solemníaci\" (the monastery of Solignac, near Limoges)."
         ),
     },
-    "mr:0522-quiteria": {
+    "mr:0522-quiteria-aturensis": {
         EDITION_IT: (
             "Translation error: \"Aire-sur-le-Lys\" where the Latin has \"pago Aturénsi\" (the "
             "district of Aire-sur-l'Adour, in Aquitaine)."
@@ -2081,7 +2081,7 @@ EDITION_NOTES = {
             "Translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
         ),
     },
-    "mr:0529-maximinus": {
+    "mr:0529-maximinus-trevirorum": {
         EDITION_1914: (
             "Translation error: the Latin has 'Maximini' (Maximinus of Trier), but the English "
             "says 'Maximus'."
@@ -2183,7 +2183,7 @@ EDITION_NOTES = {
     # commemorates the bishop twice, and the CEI keeps only the 14 May eulogy.
     "mr:0104-abrunculus-lingonensis": {
         edition: (
-            "The same bishop is commemorated on 14 May as Aprunculus (mr:0514-aprunculus); the "
+            "The same bishop is commemorated on 14 May as Aprunculus (mr:0514-aprunculus-lingonensis); the "
             "Italian (CEI) edition prints only that eulogy, where it names him Abrúncolo."
         )
         for edition in (EDITION_LA, EDITION_EN)
@@ -3247,7 +3247,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Eucea\" where the Latin has \"Eurœæ\" (Euroea)."
         ),
     },
-    "mr:0501-marculphus": {
+    "mr:0501-marculphus-nantolii": {
         EDITION_IT: (
             "Translation error: \"Sull’isola di Nanteuil\" where the Latin names Nanteuil only "
             "as his monastery (\"monastérii Nantólii\"), not as the island."
@@ -3263,7 +3263,7 @@ REVIEW_EDITION_NOTES = {
             "exítii\" (extermination camp)."
         ),
     },
-    "mr:0503-ansfridus": {
+    "mr:0503-ansfridus-ultraiectensis": {
         EDITION_EN: (
             "Translation error: \"Heverlee\" where the Latin has \"monastério Hohorsténsi\" "
             "(Hohorst)."
@@ -3281,31 +3281,31 @@ REVIEW_EDITION_NOTES = {
             "Phaeno, at Feinan), a different place."
         ),
     },
-    "mr:0505-avertinus": {
+    "mr:0505-avertinus-ventiaci": {
         EDITION_EN: (
             "Translation error: \"Vendoeuvres\" where the Latin has \"Ventíaci\" (Vençay, now "
             "Saint-Avertin)."
         ),
     },
-    "mr:0505-godehardus": {
+    "mr:0505-godehardus-altensis": {
         EDITION_IT: (
             "Translation error: \"istituì altri monasteri\" (founded) where the Latin has "
             "\"instaurávit\" (restored)."
         ),
     },
-    "mr:0505-hilarius": {
+    "mr:0505-hilarius-lirinensis": {
         EDITION_EN: (
             "Translation error: \"the basilica of the city\" where the Latin has \"basílicæ "
             "civitátis habuérunt\" (the basilicas of the city)."
         ),
     },
-    "mr:0505-iovinianus": {
+    "mr:0505-iovinianus-autissiodori": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0505-nicetius": {
+    "mr:0505-nicetius-viennae": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
@@ -3317,18 +3317,18 @@ REVIEW_EDITION_NOTES = {
             "Cánadæ província\" (at Quebec, in the province of Canada)."
         ),
     },
-    "mr:0508-helladius": {
+    "mr:0508-helladius-autissiodori": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0508-martinus": {
+    "mr:0508-martinus-salionii": {
         EDITION_EN: (
             "Translation error: \"Salonne\" where the Latin has \"Saliónii\" (Saujon)."
         ),
     },
-    "mr:0509-dionysius": {
+    "mr:0509-dionysius-viennae": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
@@ -3342,24 +3342,24 @@ REVIEW_EDITION_NOTES = {
             "society)."
         ),
     },
-    "mr:0511-gualterius": {
+    "mr:0511-gualterius-stirpensis": {
         EDITION_EN: (
             "Translation error: \"Sturpenne\" where the Latin has \"monastério Stirpénsi\" "
             "(Esterp, L'Esterps)."
         ),
     },
-    "mr:0511-maiolus": {
+    "mr:0511-maiolus-cluniacensis": {
         EDITION_IT: (
             "Translation error: \"Sauvigny\" where the Latin has \"Silviníacum\" (Souvigny)."
         ),
     },
-    "mr:0511-mamertus": {
+    "mr:0511-mamertus-viennae": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0512-cyrillus": {
+    "mr:0512-cyrillus-axiopoli": {
         EDITION_IT: (
             "Translation error: \"Galatz\" where the Latin has \"Axiópoli\" (Axiopolis, at "
             "Cernavodă)."
@@ -3377,7 +3377,7 @@ REVIEW_EDITION_NOTES = {
             "Puye, near Poitiers)."
         ),
     },
-    "mr:0513-servatius": {
+    "mr:0513-servatius-tungrensis": {
         EDITION_EN: (
             "Translation error: \"the natal day heavenly birthday\" where the Latin has "
             "\"natális\" (the heavenly birthday)."
@@ -3389,19 +3389,19 @@ REVIEW_EDITION_NOTES = {
             "\"Presbyterórum Missionariórum\" (Missionary Priests)."
         ),
     },
-    "mr:0515-rheticius": {
+    "mr:0515-rheticius-augustoduni": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0516-fidolus": {
+    "mr:0516-fidolus-trecis": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lugdunensian Gaul)."
         ),
     },
-    "mr:0517-adrio": {
+    "mr:0517-adrio-alexandriae": {
         EDITION_EN: (
             "Translation error: \"Adrian\" where the Latin has \"Adriónis\" (Adrio, not Hadrian)."
         ),
@@ -3430,7 +3430,7 @@ REVIEW_EDITION_NOTES = {
             "octogenarian)."
         ),
     },
-    "mr:0525-leo": {
+    "mr:0525-leo-mentuniaci": {
         EDITION_EN: (
             "Translation error: \"Moutier-la-Celle\" where the Latin has \"cœnóbio Mentuníaco\" "
             "(Mantenay)."
@@ -3447,7 +3447,7 @@ REVIEW_EDITION_NOTES = {
             "Source error: \"Numyanyo\" is a misspelling of Munyonyo, the place of his martyrdom."
         ),
     },
-    "mr:0526-lambertus": {
+    "mr:0526-lambertus-ventiae": {
         EDITION_IT: (
             "Translation error: \"A Vance\" where the Latin has \"Véntiæ\" (Vence, in Provence)."
         ),
@@ -3458,7 +3458,7 @@ REVIEW_EDITION_NOTES = {
             "\"satélles régius\" (a royal guard)."
         ),
     },
-    "mr:0527-gausbertus": {
+    "mr:0527-gausbertus-montis-salvii": {
         EDITION_EN: (
             "Translation error: \"near Aurillac\" where the Latin has \"apud Arvérnam\" (near "
             "Clermont)."

@@ -520,12 +520,12 @@ class SharedItemTest(unittest.TestCase):
 
     def test_a_full_name_match_elsewhere_queues_the_one_word_match(self):
         und = dict(PERSON, typology="commemoratio")
-        index = {"mr:0526-augustinus|Augustinus": dict(und, eulogy="mr:0526-augustinus", name="Augustinus"),
+        index = {"mr:0526-augustinus-cantuariae|Augustinus": dict(und, eulogy="mr:0526-augustinus-cantuariae", name="Augustinus"),
                  "mr:0828-augustinus|Aurelius Augustinus": dict(und, eulogy="mr:0828-augustinus", name="Aurelius Augustinus")}
         items, review = {}, bp.new_changeset([])
         bp.propose(items, review, index, FakeClient({"Augustinus": [cand("Q8018", ["Augustinus"])],
                                                      "Aurelius Augustinus": [cand("Q8018", ["Aurelius Augustinus"])]}))
-        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0526-augustinus|Augustinus"])
+        self.assertEqual([op["id"] for op in review["operations"]], ["mr:0526-augustinus-cantuariae|Augustinus"])
         self.assertEqual(items["mr:0828-augustinus"]["Aurelius Augustinus"]["wikidata"], "Q8018")
 
     def test_a_curators_decision_is_never_withdrawn(self):
