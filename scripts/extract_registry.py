@@ -744,7 +744,7 @@ EDITION_NOTES = {
             "Coutances)."
         ),
     },
-    "mr:0417-simeon-seleuciae": {
+    "mr:0417-simeon-bar-sabas-et-socii": {
         EDITION_EN: (
             "Translation error: \"Sapor, Second King of the Persians\" where the Latin has \"Sápore "
             "Persárum rege Secúndo\" (Sapor II, King of the Persians)."

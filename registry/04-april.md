@@ -199,7 +199,7 @@
 | 16 | 12 | `mr:0416-petrus-delepine-et-socii` | * | FR | dies_natalis |  |  |
 | 16 | 13 | `mr:0416-maria-bernarda-soubirous` |  | FR | dies_natalis |  |  |
 | 17 | 1 | `mr:0417-petrus-et-hermogenes` |  | TR | dies_natalis |  |  |
-| 17 | 2 | `mr:0417-simeon-seleuciae` |  | IR | dies_natalis | same as `mr:0421-simeon` | 2004 English: Translation error: "Sapor, Second King of the Persians" where the Latin has "Sápore Persárum rege Secúndo" (Sapor II, King of the Persians). |
+| 17 | 2 | `mr:0417-simeon-bar-sabas-et-socii` |  | IR | dies_natalis | same as `mr:0421-simeon` | 2004 English: Translation error: "Sapor, Second King of the Persians" where the Latin has "Sápore Persárum rege Secúndo" (Sapor II, King of the Persians). |
 | 17 | 3 | `mr:0417-plurimi-martyres-persidis` |  | IQ | dies_natalis | same as `mr:0422-plurimi-martyres-persidis` |  |
 | 17 | 4 | `mr:0417-innocentius-derthonae` |  | IT | dies_natalis |  |  |
 | 17 | 5 | `mr:0417-acacius-melitenae` |  | TR | dies_natalis |  |  |
