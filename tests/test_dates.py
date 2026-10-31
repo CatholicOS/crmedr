@@ -38,6 +38,11 @@ class DeathDateTest(unittest.TestCase):
     def test_decade(self):
         self.assertEqual(self.date(died(1930, "decade")), {"from": 1930, "to": 1939})
 
+    def test_a_decade_starts_at_its_boundary(self):
+        # Wikidata gives a decade as any year in it: 205 at decade precision is the 200s
+        self.assertEqual(self.date(died(205, "decade")), {"from": 200, "to": 209})
+        self.assertEqual(self.date(died(-205, "decade")), {"from": -209, "to": -200})
+
     def test_ad_century(self):
         self.assertEqual(self.date(died(400, "century")), {"from": 301, "to": 400})
         self.assertEqual(self.date(died(1401, "century")), {"from": 1401, "to": 1500})

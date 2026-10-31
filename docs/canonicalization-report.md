@@ -794,7 +794,7 @@ eulogies of the day under the wrong ID.
   so the eulogy keeps its own ID; its registry `note` records that it is probably the
   eulogy of Sadoth and 128 companions (mr:0218-sadoth-et-socii), as the 1914 edition,
   which names Sadoth, has it.
-- The 1749 and 1914 eulogy keyed mr:0220-tyrannion-tyri commemorates the countless martyrs
+- The 1749 and 1914 eulogy keyed mr:0220-tyrannion commemorates the countless martyrs
   of Tyre under Veturius, naming Tyrannio among the bishops who encouraged them: it is
   re-keyed to mr:0220-quinque-martyres-tyri. mr:0220-tyrannion-tyri (Antioch) keeps its
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy

@@ -1,6 +1,15 @@
 {
  "$comment": "Hand-made eulogy dates, by current ID: the same shape as data/dates.json without source (year, or from/to; circa; basis; note). They win over every other source; null removes a eulogy's date. Read by scripts/extract_dates.py.",
  "dates": {
-  "mr:0101-maria-dei-genetrix": {"year": 431, "basis": "event", "note": "Council of Ephesus"}
+  "mr:0101-maria-dei-genetrix": {
+   "year": 431,
+   "basis": "event",
+   "note": "Council of Ephesus"
+  },
+  "mr:0619-gerlandus-calatae-hieronis": {
+   "year": 1327,
+   "basis": "translation",
+   "note": "relics translated to San Giacomo, Caltagirone, 19 June 1327"
+  }
  }
 }
