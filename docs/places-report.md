@@ -583,33 +583,33 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:1129-iacobus-sarugensis` | ministry (episcopi sarugensis) | yes |
 | `mr:1129-radbodus-ultraiectensis` | death (obiit); ministry (episcopi ultraiectensis) | yes |
 | `mr:1130-andreas-apostolus` | birth (natus) | yes |
-| `mr:1201-eligius` | ministry (sedem) | yes |
-| `mr:1202-silverius` | death (obiit) | yes |
+| `mr:1201-eligius-noviomensis` | ministry (sedem) | yes |
+| `mr:1202-silverius-papa` | death (obiit) | yes |
 | `mr:1203-franciscus-xavier` | birth (natus); death (obiit) | yes |
-| `mr:1203-birinus` | ministry (sedem) | yes |
-| `mr:1204-heracla` | ministry (sedem) |  |
-| `mr:1205-sabas` | birth (natus) | yes |
-| `mr:1205-geraldus` | death (obiit) | yes |
+| `mr:1203-birinus-dorcestriensis` | ministry (sedem) | yes |
+| `mr:1204-heracla-alexandriae` | ministry (sedem) |  |
+| `mr:1205-sabas-hierosolymorum` | birth (natus) | yes |
+| `mr:1205-geraldus-bracarae` | death (obiit) | yes |
 | `mr:1205-nicolaus-stensen` | birth (oriundus) | yes |
 | `mr:1205-narcissus-putz` | death (occubuit) | yes |
-| `mr:1206-nicolaus` | ministry (episcopi myrensis) | yes |
+| `mr:1206-nicolaus-myrensis` | ministry (episcopi myrensis) | yes |
 | `mr:1206-petrus-pascual` | death (obiit); ministry (episcopi giennensis) | yes |
-| `mr:1207-ambrosius` | death (obdormivit); ministry (episcopi mediolanensis, sedem) | yes |
-| `mr:1207-athenodorus` | death (obdormivit) |  |
+| `mr:1207-ambrosius-mediolanensis` | death (obdormivit); ministry (episcopi mediolanensis, sedem) | yes |
+| `mr:1207-athenodorus-syriae` | death (obdormivit) |  |
 | `mr:1207-carolus-garnier` | death (obiit) |  |
-| `mr:1208-patapius` | birth (oriundus); burial (sepultus) | yes |
-| `mr:1212-vicelinus` | ministry (episcopi oldenburgensis) | yes |
-| `mr:1214-folcuinus` | ministry (episcopi taruannensis) | yes |
+| `mr:1208-patapius-constantinopolis` | birth (oriundus); burial (sepultus) | yes |
+| `mr:1212-vicelinus-oldenburgensis` | ministry (episcopi oldenburgensis) | yes |
+| `mr:1214-folcuinus-taruannensis` | ministry (episcopi taruannensis) | yes |
 | `mr:1215-carolus-steeb` | birth (natus) | yes |
-| `mr:1218-gatianus` | burial (sepultus) | yes |
+| `mr:1218-gatianus-turonum` | burial (sepultus) | yes |
 | `mr:1219-urbanus-v` | ministry (sedem) | yes |
-| `mr:1223-thorlacus` | ministry (episcopi skalholtensis) | yes |
+| `mr:1223-thorlacus-skalholtensis` | ministry (episcopi skalholtensis) | yes |
 | `mr:1224-avi-iesu-christi` | birth (natus) |  |
 | `mr:1228-franciscus-de-sales` | ministry (episcopi genevensis) | yes |
 | `mr:1229-gulielmus-howard` | death (occubuit) | yes |
-| `mr:1230-anysius` | ministry (episcopi thessalonicensis) | yes |
-| `mr:1230-rainerius` | ministry (episcopi furconensis) | yes |
-| `mr:1231-marius` | ministry (sedem) | yes |
+| `mr:1230-anysius-thessalonicensis` | ministry (episcopi thessalonicensis) | yes |
+| `mr:1230-rainerius-furconensis` | ministry (episcopi furconensis) | yes |
+| `mr:1231-marius-lausannensis` | ministry (sedem) | yes |
 | `mr:1231-alanus-de-solminihac` | ministry (episcopi cadurcensis) | yes |
 
 ## Places named but not recorded
@@ -949,24 +949,24 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1127-virgilius-salisburgensis`: ecclésiam cathedrálem
 - `mr:1129-saturninus-carthaginensis`: Carthaginénsi, Carthaginénsis, Roma, Romam
 - `mr:1130-iosephus-marchand`: Parisiénsi
-- `mr:1201-florentia`: Floréntiæ
-- `mr:1204-osmundus`: Anglia, Angliam, ecclésiam cathedrálem
-- `mr:1208-romaricus`: Roma
+- `mr:1201-florentia-pictavorum`: Floréntiæ
+- `mr:1204-osmundus-sarisberiae`: Anglia, Angliam, ecclésiam cathedrálem
+- `mr:1208-romaricus-luxoviensis`: Roma
 - `mr:1209-ioannes-didacus-cuauhtlatoatzin`: Indórum
 - `mr:1210-gregorius-iii`: Urbis
 - `mr:1211-damasus-i`: nicǽnam
-- `mr:1211-david`: Germánia, Germániam
+- `mr:1211-david-himmerodensis`: Germánia, Germániam
 - `mr:1211-mirabilia-a-iesu`: Hispánia
-- `mr:1211-sabinus`: nicǽnam
+- `mr:1211-sabinus-placentiae`: nicǽnam
 - `mr:1213-antonius-grassus`: Oratórii
 - `mr:1214-ioannes-a-cruce`: Hispániæ
-- `mr:1217-modestus`: Urbe, Urbem
+- `mr:1217-modestus-hierosolymorum`: Urbe, Urbem
 - `mr:1218-malachias-propheta`: templum
 - `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu`: Polóniæ
 - `mr:1220-vincentius-romano`: Roma
-- `mr:1220-zephyrinus`: Románam
+- `mr:1220-zephyrinus-papa`: Románam
 - `mr:1225-nativitas-domini`: Israel, terram
-- `mr:1230-anysius`: Románi
+- `mr:1230-anysius-thessalonicensis`: Románi
 - `mr:1230-felix-i`: Románam
 
 ## Proposals that failed the check
