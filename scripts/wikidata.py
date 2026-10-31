@@ -92,11 +92,12 @@ COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 COMMONS_URL_MAX = 6000  # Commons answers HTTP 414 to longer request URLs
 
 
-def _commons_url(files):
-    """The Commons imageinfo query for these file names (as P18 gives them, without "File:")."""
+def _commons_url(files, **prop):
+    """The Commons query for these file names (as P18 gives them, without "File:"): imageinfo
+    with extmetadata unless other props are given."""
     return COMMONS_API + "?" + urllib.parse.urlencode(
-        {"action": "query", "titles": "|".join("File:" + f for f in files), "prop": "imageinfo",
-         "iiprop": "extmetadata", "redirects": "1", "format": "json", "maxlag": "5"})
+        {"action": "query", "titles": "|".join("File:" + f for f in files),
+         **(prop or {"prop": "imageinfo", "iiprop": "extmetadata"}), "redirects": "1", "format": "json", "maxlag": "5"})
 # P1480 (sourcing circumstances) = circa.
 CIRCA = "Q5727902"
 
@@ -665,25 +666,36 @@ class Wikidata:
     def commons_files(self, files):
         """Commons' extmetadata (author, license) for each file name as P18 gives
         it, without "File:"; a missing file is left out."""
+        return self._commons_pages(files, {}, lambda page: page["imageinfo"][0].get("extmetadata", {})
+                                   if page.get("imageinfo") else None)
+
+    def commons_wikitext(self, files):
+        """The wikitext of each file's Commons page, by file name as P18 gives it; a missing file is left out."""
+        prop = {"prop": "revisions", "rvprop": "content", "rvslots": "main"}
+        return self._commons_pages(files, prop, lambda page: page["revisions"][0]["slots"]["main"].get("*")
+                                   if page.get("revisions") else None)
+
+    def _commons_pages(self, files, prop, pick):
+        """pick(page) for each file's Commons page, by the name as given; a page it gives None is left out."""
         out = {}
         # at most 50 titles a request, and fewer when long (non-Latin) names would make the URL too long
         batches, batch = [], []
         for f in files:
-            if batch and (len(batch) == 50 or len(_commons_url(batch + [f])) > COMMONS_URL_MAX):
+            if batch and (len(batch) == 50 or len(_commons_url(batch + [f], **prop)) > COMMONS_URL_MAX):
                 batches.append(batch)
                 batch = []
             batch.append(f)
         batches += [batch] if batch else []
         for chunk in batches:
-            data = self._get(_commons_url(chunk))
+            data = self._get(_commons_url(chunk, **prop))
             query = data.get("query", {})
             # a title the API normalized or redirected maps back to every name that led to it
             sources = {}
             for r in query.get("redirects", []) + query.get("normalized", []):
                 sources.setdefault(r["to"].removeprefix("File:"), []).append(r["from"].removeprefix("File:"))
             for page in query.get("pages", {}).values():
-                info = page.get("imageinfo")
-                if info:
+                value = pick(page)
+                if value is not None:
                     names, todo = set(), [page["title"].removeprefix("File:")]
                     while todo:
                         name = todo.pop()
@@ -691,7 +703,7 @@ class Wikidata:
                             names.add(name)
                             todo.extend(sources.get(name, []))
                     for name in names & set(chunk):
-                        out[name] = info[0].get("extmetadata", {})
+                        out[name] = value
         return out
 
     def region_coords(self, text):

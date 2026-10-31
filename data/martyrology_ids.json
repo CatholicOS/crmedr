@@ -1,5 +1,5 @@
 {
-  "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft. Each current entry's country is the modern country of its opening place (data/gazetteer.json), else data/countries_curated.json; a Holy Land place is IL or PS by where it lies today (scripts/registry_places.py). Each current entry's optional date comes from data/dates.json (scripts/extract_dates.py).",
+  "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. IDs are drafts pending committee review; see the README and docs/canonicalization-report.md. Entries with deprecated:true are attested only in historical editions (their MMDD anchors the placement in the edition named by attested_in); the deprecated status is itself a mechanical draft. Each current entry's country is the modern country of its opening place (data/gazetteer.json), else data/countries_curated.json; a Holy Land place is IL or PS by where it lies today (scripts/registry_places.py). Each current entry's optional date comes from data/dates.json (scripts/extract_dates.py). Each current entry's optional item comes from data/eulogy_items.json (scripts/build_eulogy_items.py).",
   "anchor_edition": "martyrologium_romanum_editio_altera_2004",
   "id_scheme": "mr:MMDD-slug",
   "entry_count": 6256,
@@ -661,6 +661,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q6965657",
+        "kind": "group"
       }
     },
     {
@@ -995,6 +999,10 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
+      "item": {
+        "wikidata": "Q2576064",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -1293,6 +1301,10 @@
         "to": 400,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q97253965",
+        "kind": "group"
       }
     },
     {
@@ -2124,6 +2136,10 @@
         "circa": true,
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q132001",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -2150,6 +2166,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q520982",
+        "kind": "group"
       }
     },
     {
@@ -2878,6 +2898,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q28003161",
+        "kind": "group"
       }
     },
     {
@@ -2903,6 +2927,10 @@
         "year": 290,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q79503390",
+        "kind": "group"
       }
     },
     {
@@ -4454,6 +4482,10 @@
         "year": 404,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q31094180",
+        "kind": "group"
       }
     },
     {
@@ -4966,6 +4998,10 @@
         "year": 852,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q11924990",
+        "kind": "group"
       }
     },
     {
@@ -5226,6 +5262,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q2061048",
+        "kind": "group"
       }
     },
     {
@@ -6331,6 +6371,10 @@
         "year": 1220,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q12816974",
+        "kind": "group"
       }
     },
     {
@@ -6465,6 +6509,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1505432",
+        "kind": "group"
       }
     },
     {
@@ -7091,6 +7139,10 @@
         "year": 270,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1595063",
+        "kind": "group"
       }
     },
     {
@@ -7209,6 +7261,10 @@
         "year": 580,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2796017",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the monastery of Margaret\" where the Latin has \"monastérium Sanctæ Margarítæ\" (the monastery of Saint Margaret)."
@@ -7842,6 +7898,10 @@
         "year": 259,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q101193675",
+        "kind": "group"
       }
     },
     {
@@ -8055,6 +8115,10 @@
         "year": 1794,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2807895",
+        "kind": "group"
       }
     },
     {
@@ -8586,6 +8650,10 @@
         "year": 303,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q85974778",
+        "kind": "group"
       }
     },
     {
@@ -8636,6 +8704,10 @@
         "year": 312,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q12151181",
+        "kind": "group"
       }
     },
     {
@@ -9015,6 +9087,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q115872",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: adds \"offering their lives in fidelity to the faith\", which is not in the Latin."
       }
@@ -9070,6 +9146,10 @@
         "year": 66,
         "circa": true,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1369701",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -10480,6 +10560,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1422681",
+        "kind": "group"
       }
     },
     {
@@ -10505,6 +10589,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q17638307",
+        "kind": "group"
       }
     },
     {
@@ -10555,6 +10643,10 @@
         "year": 363,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q6318993",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0125-iuventinus-et-maximus"
@@ -11355,6 +11447,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q133445535",
+        "kind": "group"
       }
     },
     {
@@ -11406,6 +11502,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q378732",
+        "kind": "group"
       }
     },
     {
@@ -12320,6 +12420,10 @@
         "circa": true,
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q18647897",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "same_eulogy": [
         "mr:0202-purificatio-beatae-mariae-virginis"
@@ -12901,6 +13005,10 @@
         "basis": "death",
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q64840854",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the Province of France\" where the Latin \"in Província Gálliæ\" means Provence."
       }
@@ -13227,6 +13335,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q108253242",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Philere\" where the Latin has \"Philéæ\" (Phileas)."
@@ -13870,6 +13982,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q578963",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"celebrated today\" where the Latin has \"cras\" (tomorrow)."
       }
@@ -13997,6 +14113,10 @@
         "year": 1597,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q578963",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"eighteen laypeople\" where the Latin has \"septem et decem\" (seventeen)."
@@ -14077,6 +14197,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q136620408",
+        "kind": "group"
       }
     },
     {
@@ -14665,6 +14789,10 @@
         "year": 1593,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3850286",
+        "kind": "group"
       }
     },
     {
@@ -15354,6 +15482,10 @@
         "year": 362,
         "circa": true,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q16591776",
+        "kind": "group"
       }
     },
     {
@@ -16362,6 +16494,10 @@
         "year": 304,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q2308132",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"forty-nine in number\" is not in the Latin, which gives no number."
       },
@@ -17190,6 +17326,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q133445533",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
       }
@@ -17381,6 +17521,10 @@
         "year": 122,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1388274",
+        "kind": "group"
       }
     },
     {
@@ -17904,6 +18048,10 @@
         "to": 1310,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1057218",
+        "kind": "group"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -19476,6 +19624,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q13409860",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"dalla sua vittoria\" (his victory) where the Latin \"tropǽo\" means the monument over his tomb in the Vatican."
@@ -20848,6 +21000,10 @@
         "year": 250,
         "circa": true,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q85975403",
+        "kind": "group"
       }
     },
     {
@@ -21261,6 +21417,10 @@
           "country": "SY"
         }
       ],
+      "item": {
+        "wikidata": "Q11767292",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: the rubric \"(To be omitted in a leap year)\" is run into the eulogy; it is not part of the Latin text."
       }
@@ -22129,6 +22289,10 @@
         "year": 262,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q56293083",
+        "kind": "group"
       }
     },
     {
@@ -22164,6 +22328,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2972035",
+        "kind": "group"
       }
     },
     {
@@ -23435,6 +23603,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3565151",
+        "kind": "group"
       }
     },
     {
@@ -23545,6 +23717,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q771956",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"altre giovani catecumene\" (other young women catechumens) where the Latin has \"áliis cum adulescéntibus catechúmenis\" (with other young catechumens), who included men. Translation error: \"sua schiava\" (her slave, i.e. Perpetua's) where the Latin has only \"serva\" (a slave)."
@@ -23591,6 +23767,10 @@
         "to": 309,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q110728452",
+        "kind": "group"
       }
     },
     {
@@ -23616,6 +23796,10 @@
         "year": 65,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q20936683",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"in Grecia\" (in Greece) for \"Chersonésum\", which is Cherson in the Crimea."
@@ -24370,6 +24554,10 @@
         "basis": "death",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q931446",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"not for blood but for faith ... suffered\" where the Latin has \"non sánguinis sed fídei ... sócii\" (companions not of blood but of faith)."
       },
@@ -24891,6 +25079,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q15700789",
+        "kind": "group"
       }
     },
     {
@@ -25284,6 +25476,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q24952997",
+        "kind": "group"
       }
     },
     {
@@ -26355,6 +26551,10 @@
         "year": 284,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q106559144",
+        "kind": "group"
       }
     },
     {
@@ -28380,6 +28580,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q23583396",
+        "kind": "group"
       }
     },
     {
@@ -28638,6 +28842,10 @@
       "date": {
         "year": 484,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q4111032",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"of Aghlab origin\" where the Latin has \"Aquæregénsium\" (of Aquae Regiae)."
@@ -28922,6 +29130,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q16206058",
+        "kind": "group"
       }
     },
     {
@@ -29168,6 +29380,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q4087807",
+        "kind": "feast"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -29845,6 +30061,10 @@
         "year": 685,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q808712",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0325-barontius-et-desiderius"
@@ -31362,6 +31582,10 @@
         "from": 257,
         "to": 400,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q136613999",
+        "kind": "group"
       }
     },
     {
@@ -32514,6 +32738,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q81097215",
+        "kind": "group"
       }
     },
     {
@@ -32827,6 +33055,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q359116",
+        "kind": "group"
       }
     },
     {
@@ -35713,6 +35945,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1734353",
+        "kind": "group"
       }
     },
     {
@@ -36071,7 +36307,11 @@
           "label": "Antioch",
           "country": "TR"
         }
-      ]
+      ],
+      "item": {
+        "wikidata": "Q5291315",
+        "kind": "group"
+      }
     },
     {
       "id": "mr:0414-fronto-nitriensis",
@@ -37083,6 +37323,10 @@
         "year": 341,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3850292",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0422-plurimi-martyres-persidis"
@@ -38209,6 +38453,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q132560343",
+        "kind": "group"
       }
     },
     {
@@ -40564,6 +40812,10 @@
         "year": 1146,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q21235349",
+        "kind": "group"
       }
     },
     {
@@ -40584,7 +40836,11 @@
           "label": "Aragon",
           "country": "ES"
         }
-      ]
+      ],
+      "item": {
+        "wikidata": "Q8561599",
+        "kind": "group"
+      }
     },
     {
       "id": "mr:0426-stephanus-permiensis",
@@ -42265,6 +42521,10 @@
         "year": 20,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q105888686",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -42407,6 +42667,10 @@
         "from": 1,
         "to": 100,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q938363",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0515-torquatus-et-socii"
@@ -43019,6 +43283,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q18921069",
+        "kind": "group"
       }
     },
     {
@@ -43392,6 +43660,10 @@
         "year": 283,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q12151185",
+        "kind": "group"
       }
     },
     {
@@ -43417,6 +43689,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q15875070",
+        "kind": "group"
       }
     },
     {
@@ -43697,6 +43973,10 @@
         "year": 259,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q20901818",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"through their illustrious priesthood\" where the Latin has \"ex illústri sacerdótio\" (from illustrious priests they became martyrs)."
       },
@@ -43902,6 +44182,10 @@
         "year": 1535,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q63064377",
+        "kind": "group"
       }
     },
     {
@@ -44489,6 +44773,10 @@
         "basis": "death",
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q17562131",
+        "kind": "group"
+      },
       "same_eulogy": [
         "mr:0430-marianus-et-iacobus"
       ]
@@ -44886,6 +45174,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q16556285",
+        "kind": "group"
       }
     },
     {
@@ -46070,6 +46362,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q2248717",
+        "kind": "group"
       }
     },
     {
@@ -47383,6 +47679,10 @@
         "year": 177,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q457948",
+        "kind": "group"
       }
     },
     {
@@ -47436,6 +47736,10 @@
         "year": 303,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3742241",
+        "kind": "group"
       }
     },
     {
@@ -48078,7 +48382,11 @@
           "label": "Osimo",
           "country": "IT"
         }
-      ]
+      ],
+      "item": {
+        "wikidata": "Q97253807",
+        "kind": "group"
+      }
     },
     {
       "id": "mr:0516-abda-et-ebediesus",
@@ -48103,6 +48411,10 @@
         "year": 376,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q4664616",
+        "kind": "group"
       }
     },
     {
@@ -48896,6 +49208,10 @@
         "year": 303,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q11951712",
+        "kind": "group"
       }
     },
     {
@@ -49147,6 +49463,10 @@
         "year": 250,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q97256860",
+        "kind": "group"
       }
     },
     {
@@ -50309,6 +50629,10 @@
         "to": 250,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q716664",
+        "kind": "group"
       }
     },
     {
@@ -50716,6 +51040,10 @@
         "year": 259,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q85976593",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0224-montanus-et-socii"
@@ -51151,6 +51479,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3036218",
+        "kind": "group"
       }
     },
     {
@@ -53154,6 +53486,10 @@
         "year": 397,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3962077",
+        "kind": "group"
       }
     },
     {
@@ -53329,6 +53665,10 @@
         "year": 1242,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q20002779",
+        "kind": "group"
       }
     },
     {
@@ -53568,6 +53908,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q133930875",
+        "kind": "group"
       }
     },
     {
@@ -53930,6 +54274,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q65679763",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "same_eulogy": [
         "mr:0702-visitatio-beatae-mariae-virginis"
@@ -54009,6 +54357,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1991316",
+        "kind": "group"
       }
     },
     {
@@ -54305,6 +54657,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3576500",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:1220-ammon-et-socii"
@@ -54852,6 +55208,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q449701",
+        "kind": "group"
+      },
       "unnumbered": true
     },
     {
@@ -55071,6 +55431,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q1856117",
+        "kind": "group"
       }
     },
     {
@@ -56965,6 +57329,10 @@
         "year": 851,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q11940894",
+        "kind": "group"
       }
     },
     {
@@ -57491,6 +57859,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2535100",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"at the Arenae\" where the Latin has \"ad Arcas\" (at the Arches)."
@@ -59461,6 +59833,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q6158992",
+        "kind": "group"
       }
     },
     {
@@ -60081,6 +60457,10 @@
         "year": 304,
         "circa": true,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q514765",
+        "kind": "group"
       }
     },
     {
@@ -60106,6 +60486,10 @@
         "year": 212,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q18921045",
+        "kind": "group"
       }
     },
     {
@@ -60471,7 +60855,11 @@
           "label": "Rome",
           "country": "IT"
         }
-      ]
+      ],
+      "item": {
+        "wikidata": "Q97253450",
+        "kind": "group"
+      }
     },
     {
       "id": "mr:0617-isaurus-et-socii",
@@ -60847,6 +61235,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q670905",
+        "kind": "group"
       }
     },
     {
@@ -60898,6 +61290,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3008948",
+        "kind": "group"
       }
     },
     {
@@ -61106,6 +61502,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1515920",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"rebuilt by him\" where the Latin has \"ab ipso ædificátam\" (built by him)."
@@ -62122,6 +62522,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q302972",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004": "Editorial error: \"in Britannia Minore\" (Brittany), but Caerleon, the City of the Legions, is in Britain (Wales)."
       },
@@ -62574,6 +62978,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3870479",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"was filled with the Holy Spirit\" (of John) where the Latin has \"matris, Spíritu Sancto replétæ\" (his mother, filled with the Holy Spirit)."
@@ -62655,6 +63063,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q2379953",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Aglibert\" where the Latin has \"Agilbérti\" (Agilbert)."
@@ -63235,6 +63647,10 @@
       "date": {
         "year": 362,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1698715",
+        "kind": "group"
       }
     },
     {
@@ -64026,6 +64442,10 @@
         "to": 209,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q108459412",
+        "kind": "group"
       }
     },
     {
@@ -64497,6 +64917,10 @@
         "basis": "death",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q640666",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the most savage emperor Nero\" where the Latin has \"sævíssime intérfici\" (to be killed most savagely)."
@@ -64529,6 +64953,10 @@
         "to": 209,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q532385",
+        "kind": "group"
       }
     },
     {
@@ -65455,6 +65883,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1544096",
+        "kind": "group"
       }
     },
     {
@@ -65479,6 +65911,10 @@
       "date": {
         "year": 483,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q85977003",
+        "kind": "group"
       }
     },
     {
@@ -66748,6 +67184,10 @@
         "to": 1581,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q7990254",
+        "kind": "group"
       }
     },
     {
@@ -67811,6 +68251,10 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q11085604",
+        "kind": "group"
       }
     },
     {
@@ -68051,6 +68495,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q4669306",
+        "kind": "group"
       }
     },
     {
@@ -68219,6 +68667,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q2668281",
+        "kind": "group"
+      },
       "unnumbered": true
     },
     {
@@ -68294,6 +68746,10 @@
         "year": 1572,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1909286",
+        "kind": "group"
       }
     },
     {
@@ -68556,6 +69012,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q133554573",
+        "kind": "group"
       }
     },
     {
@@ -68581,6 +69041,10 @@
         "year": 257,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1518118",
+        "kind": "group"
       }
     },
     {
@@ -68926,6 +69390,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3850285",
+        "kind": "group"
+      },
       "note": "Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were canonized on 20 October 2024.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"three lay brothers\" where the Latin has \"trium germanórum fidélium\" (three blood brothers, lay faithful)."
@@ -69156,6 +69624,10 @@
         "to": 800,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1421271",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the former ... founded\" where the Latin has \"alter\" (the other, Sigisbert) as founder and \"prior\" (Placidus) as the martyr."
@@ -69400,6 +69872,10 @@
         "basis": "death",
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q97256911",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered."
       },
@@ -69437,6 +69913,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q22579789",
+        "kind": "group"
       }
     },
     {
@@ -70852,6 +71332,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q97487684",
+        "kind": "group"
       }
     },
     {
@@ -71371,6 +71855,10 @@
         "to": 1570,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3134023",
+        "kind": "group"
       }
     },
     {
@@ -72013,6 +72501,10 @@
         "year": 180,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q488248",
+        "kind": "group"
       }
     },
     {
@@ -72063,6 +72555,10 @@
         "year": 287,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2366673",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0719-iusta-et-rufina"
@@ -72472,6 +72968,10 @@
         "year": 1794,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q303617",
+        "kind": "group"
       },
       "note": "Teresa of St Augustine and her fifteen companions, the martyrs of Compiègne, blessed in the 2004 editions, were canonized on 18 December 2024.",
       "edition_notes": {
@@ -73030,6 +73530,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q129634476",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0912-macedonius-et-socii"
@@ -75067,6 +75571,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q893813",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"sul fiume Don\" where the Latin has \"ad Altam flumen\" (the river Alta). Translation error: \"principi di Rostov\" where the Latin has \"principes Rutheni\" (princes of the Rus')."
       }
@@ -75436,6 +75944,10 @@
         "year": 1936,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2939663",
+        "kind": "group"
       }
     },
     {
@@ -76026,6 +76538,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q140401460",
+        "kind": "group"
+      },
       "unnumbered": true,
       "same_eulogy": [
         "mr:0320-ioachim",
@@ -76545,6 +77061,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q466973",
+        "kind": "group"
       }
     },
     {
@@ -77319,6 +77839,10 @@
         "to": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q17524141",
+        "kind": "group"
       }
     },
     {
@@ -77703,6 +78227,10 @@
         "to": 309,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q840917",
+        "kind": "group"
       }
     },
     {
@@ -78091,6 +78619,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q308330",
+        "kind": "group"
       }
     },
     {
@@ -80298,6 +80830,10 @@
           "country": "IT"
         }
       ],
+      "item": {
+        "wikidata": "Q21208893",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Crescentius\" where the Latin has \"Crescentiónis\" (Crescentio)."
       }
@@ -80675,6 +81211,10 @@
         "basis": "dedication",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q186282",
+        "kind": "dedication"
+      },
       "unnumbered": true
     },
     {
@@ -81009,6 +81549,10 @@
         "circa": true,
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q5439559",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the glorious restoration of our nature ... was to be joined to him\" where the Latin has \"servílis formæ nostræ ipsi coaptátæ\" (our servile form, fitted to himself)."
@@ -81062,6 +81606,10 @@
         "year": 305,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2671799",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"beheaded\" where the Latin has \"gládio iuguláti\" (their throats were cut with the sword)."
@@ -82727,6 +83275,10 @@
         "year": 1936,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q19265558",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"in odio alla fede\" where the Latin has \"in ódium vitæ religiósæ\" (in hatred of the religious life)."
@@ -84799,6 +85351,10 @@
         "basis": "death",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q1615843",
+        "kind": "group"
+      },
       "note": "Antonio Primaldo and his companions, the martyrs of Otranto, blessed in the 2004 editions, were canonized on 12 May 2013."
     },
     {
@@ -84914,6 +85470,10 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q65347908",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -86394,6 +86954,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q6784101",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"drawn more frequently like fish into the net\" where the Latin has \"crebrióres píscibus\" (more numerous than the fish drawn into the net)."
@@ -87887,6 +88451,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q117379295",
+        "kind": "group"
+      },
       "same_eulogy": [
         "mr:0822-agathonicus-et-socii"
       ]
@@ -88139,6 +88707,10 @@
       "date": {
         "year": 1180,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q8246899",
+        "kind": "group"
       }
     },
     {
@@ -88720,6 +89292,10 @@
         "year": 258,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q4670633",
+        "kind": "group"
       }
     },
     {
@@ -88796,6 +89372,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q4810684",
+        "kind": "group"
       }
     },
     {
@@ -91974,6 +92554,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1291005",
+        "kind": "group"
       }
     },
     {
@@ -95250,6 +95834,10 @@
         "year": 305,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q136624320",
+        "kind": "group"
       }
     },
     {
@@ -95572,6 +96160,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q530681",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"torture, or the agony of fire\" where the Latin has \"rotæ ignísque torméntis\" (the torments of the wheel and of fire)."
       }
@@ -95759,6 +96351,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q501107",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -96676,6 +97272,10 @@
         "to": 300,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q85977994",
+        "kind": "group"
       }
     },
     {
@@ -96994,6 +97594,10 @@
         "to": 1630,
         "basis": "deposition",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3394205",
+        "kind": "group"
       }
     },
     {
@@ -97427,6 +98031,10 @@
       "date": {
         "to": 1914,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1537037",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -98074,6 +98682,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q815520",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -98751,6 +99363,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q6035428",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Xagada\" where the Latin has \"Xagacía\"."
       }
@@ -98945,6 +99561,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q17979325",
+        "kind": "group"
       }
     },
     {
@@ -99061,6 +99681,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q121710741",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"mani e piedi\" (hands and feet) where the Latin has \"mánibus cruribúsque\" (hands and legs)."
@@ -100113,6 +100737,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q17628568",
+        "kind": "group"
       }
     },
     {
@@ -100773,6 +101401,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q379564",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"ten of whom are commemorated on this day\" where the Latin says that all one hundred and three martyrs are celebrated together on this day."
@@ -101171,6 +101803,10 @@
         "basis": "death",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q108037267",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"seized and killed\" where the Latin has \"discérpti atque necáti\" (torn to pieces and killed)."
       }
@@ -101500,6 +102136,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q664988",
+        "kind": "group"
       }
     },
     {
@@ -102412,6 +103052,10 @@
         "year": 177,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q124744645",
+        "kind": "group"
       }
     },
     {
@@ -103145,6 +103789,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q76486",
+        "kind": "group"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -104038,6 +104686,10 @@
         "to": 1637,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q669138",
+        "kind": "group"
       },
       "unnumbered": true
     },
@@ -105667,6 +106319,10 @@
         "to": 300,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3509870",
+        "kind": "group"
       }
     },
     {
@@ -106050,6 +106706,10 @@
       "date": {
         "to": 1914,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q5439547",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -106663,6 +107323,10 @@
         "year": 690,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q322929",
+        "kind": "group"
       }
     },
     {
@@ -106811,6 +107475,10 @@
         "year": 1645,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q10334580",
+        "kind": "group"
       },
       "note": "The martyrs of Brazil, André de Soveral, Ambrósio Francisco Ferro and their 28 companions, blessed in the 2004 editions, were canonized on 15 October 2017."
     },
@@ -108249,6 +108917,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q140013",
+        "kind": "group"
       }
     },
     {
@@ -109116,6 +109788,10 @@
         "year": 310,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3734508",
+        "kind": "group"
       }
     },
     {
@@ -109192,6 +109868,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q549910",
+        "kind": "group"
       }
     },
     {
@@ -109371,6 +110051,10 @@
         "year": 1227,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q136614618",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:1013-daniel-et-socii"
@@ -109616,6 +110300,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q4759490",
+        "kind": "group"
       }
     },
     {
@@ -109641,6 +110329,10 @@
         "from": 201,
         "to": 300,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q7024538",
+        "kind": "group"
       }
     },
     {
@@ -110477,6 +111169,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q11921619",
+        "kind": "group"
       }
     },
     {
@@ -111989,6 +112685,10 @@
         "year": 108,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q7378121",
+        "kind": "group"
+      },
       "same_eulogy": [
         "mr:1218-rufus-et-zosimus"
       ]
@@ -112492,6 +113192,10 @@
         "year": 305,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q138388825",
+        "kind": "group"
       }
     },
     {
@@ -112692,6 +113396,10 @@
         "to": 1649,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q2653872",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"oggi in Canada\" (today in Canada) where the Latin has \"tunc in território Canadénsi\" (then in Canadian territory); Ossernenon lies in present-day New York State, USA."
@@ -112763,6 +113471,10 @@
         "to": 200,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q18918005",
+        "kind": "group"
       }
     },
     {
@@ -112816,6 +113528,10 @@
         "from": 201,
         "to": 300,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q7428319",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the region around Lyon\" where the Latin has \"Gállia Lugdunénsi\" (the Roman province of Lugdunensis, not the area of Lyon)."
@@ -113464,6 +114180,10 @@
         "year": 303,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q60594638",
+        "kind": "group"
       }
     },
     {
@@ -114113,6 +114833,10 @@
         "year": 851,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q2667038",
+        "kind": "group"
       }
     },
     {
@@ -114219,6 +114943,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q7455543",
+        "kind": "group"
       }
     },
     {
@@ -114857,6 +115585,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3295958",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"also called Dhu Nuwas\" where the Latin has \"seu Dun‘an\"."
       }
@@ -115140,6 +115872,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1088478",
+        "kind": "group"
       }
     },
     {
@@ -115165,6 +115901,10 @@
         "year": 287,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1140213",
+        "kind": "group"
       }
     },
     {
@@ -115243,6 +115983,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q24009983",
+        "kind": "group"
       }
     },
     {
@@ -115521,6 +116265,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q11933561",
+        "kind": "group"
       }
     },
     {
@@ -116178,6 +116926,10 @@
         "basis": "death",
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q11954656",
+        "kind": "group"
+      },
       "same_eulogy": [
         "mr:1027-vincentius-et-socii"
       ]
@@ -116808,6 +117560,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q11914022",
+        "kind": "group"
       }
     },
     {
@@ -117362,6 +118118,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q587",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -117844,6 +118604,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q1033140",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -117923,6 +118687,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q4691256",
+        "kind": "group"
       }
     },
     {
@@ -118786,6 +119554,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q203177",
+        "kind": "group"
       }
     },
     {
@@ -118811,6 +119583,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q21328789",
+        "kind": "group"
       }
     },
     {
@@ -119678,6 +120454,10 @@
         "circa": true,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q135925988",
+        "kind": "group"
       }
     },
     {
@@ -120350,6 +121130,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q1301757",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Srijem ... nell'odierna Croazia\" where the Latin has \"Sírmium\" (the city of Sremska Mitrovica, in present-day Serbia)."
       }
@@ -120642,6 +121426,10 @@
         "circa": true,
         "basis": "dedication",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q84090",
+        "kind": "dedication"
       },
       "unnumbered": true
     },
@@ -121921,6 +122709,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q1481639",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Vistula\" where the Latin has \"Vartam flúvium\" (the Warta)."
       }
@@ -122888,6 +123680,10 @@
         "year": 1391,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3413495",
+        "kind": "group"
       }
     },
     {
@@ -123174,6 +123970,10 @@
         "year": 697,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q115940857",
+        "kind": "group"
       }
     },
     {
@@ -124838,6 +125638,10 @@
         "year": 1936,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1752755",
+        "kind": "group"
       }
     },
     {
@@ -125539,6 +126343,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1124234",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -126463,6 +127271,10 @@
         "to": 1862,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3075684",
+        "kind": "group"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004": "Misprint: footnote 1 prints \"Emmanuel Lê Văn Phụng\" twice in a row; he is one martyr, listed once in the index of names. The list also seems to leave out Bishop Stephanus Theodorus Cuénot, one of the 117 martyrs canonized together: with Andreas Dũng Lạc it names 116, and the index gives Cuénot only his own day (14 November), though martyrs with a day of their own, such as Emmanuel Lê Văn Phụng (13 July), are listed here too."
@@ -126500,6 +127312,10 @@
         "year": 303,
         "basis": "dedication",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1631638",
+        "kind": "dedication"
       }
     },
     {
@@ -126661,6 +127477,10 @@
         "to": 859,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q5460376",
+        "kind": "group"
       }
     },
     {
@@ -127584,6 +128404,10 @@
         "year": 304,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3473885",
+        "kind": "group"
       }
     },
     {
@@ -128642,6 +129466,10 @@
         "year": 1638,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q113882069",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the sword\" where the Latin has \"secúri\" (the axe)."
@@ -131008,6 +131836,10 @@
       "date": {
         "year": 484,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q4162017",
+        "kind": "group"
       }
     },
     {
@@ -131358,6 +132190,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3538509",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -133064,6 +133900,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q19999551",
+        "kind": "group"
       }
     },
     {
@@ -135359,6 +136199,10 @@
         "to": 300,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q85979195",
+        "kind": "group"
       }
     },
     {
@@ -135577,6 +136421,10 @@
         "year": 250,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3592726",
+        "kind": "group"
       },
       "note": "The temple of Fortune at Gortyn, at whose dedication the ten martyrs refused to sacrifice, is not identified."
     },
@@ -136141,6 +136989,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q19809",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -136228,6 +137080,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q110263903",
+        "kind": "group"
       },
       "same_eulogy": [
         "mr:0302-iovinus-et-basileus"
@@ -136570,6 +137426,10 @@
         "year": 1940,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3850284",
+        "kind": "group"
       }
     },
     {
@@ -136690,6 +137550,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3067955",
+        "kind": "group"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Hisarlik\" where the Latin has \"Apaméæ in Bithýnia\" (Apamea, today Mudanya)."
       }
@@ -136776,6 +137640,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q154005",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -137858,6 +138726,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q20058182",
+        "kind": "group"
       }
     },
     {

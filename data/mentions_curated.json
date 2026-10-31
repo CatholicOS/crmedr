@@ -1886,6 +1886,42 @@
           "qid": null
         }
       ],
+      "mr:0513-maria-de-fatima": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "cbc5cca0",
+          "name": "Beata Maria Virgo de Fatima"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 24,
+          "end": 43,
+          "check": "68ecb760",
+          "qid": "Q191133",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 105,
+          "end": 119,
+          "check": "7f295818",
+          "qid": "Q939511",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        }
+      ],
       "mr:0514-matthias-apostolus": [
         {
           "kind": "person",
@@ -3012,6 +3048,29 @@
           "check": "7f310b34",
           "name": "Myrope",
           "qid": null
+        }
+      ],
+      "mr:0716-maria-de-monte-carmelo": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "cbc5cca0",
+          "name": "Beata Maria Virgo de Monte Carmelo"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 24,
+          "end": 37,
+          "check": "fcb12c72",
+          "qid": "Q185318",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
         }
       ],
       "mr:0717-iusta-et-rufina": [

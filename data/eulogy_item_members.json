@@ -1,0 +1,876 @@
+{
+  "$comment": "For each eulogy with a group item (data/eulogy_items.json), the QIDs of its commemorated persons whose item is not a member of the group. Written by scripts/build_eulogy_items.py members (network).",
+  "members": {
+    "mr:0102-argeus-et-socii": {
+      "group": "Q6965657",
+      "non_members": []
+    },
+    "mr:0104-hermes-et-caius": {
+      "group": "Q97253965",
+      "non_members": []
+    },
+    "mr:0106-iulianus-et-basilissa": {
+      "group": "Q520982",
+      "non_members": []
+    },
+    "mr:0108-lucianus-et-socii": {
+      "group": "Q79503390",
+      "non_members": []
+    },
+    "mr:0108-theophilus-et-helladius": {
+      "group": "Q28003161",
+      "non_members": []
+    },
+    "mr:0112-tigrius-et-eutropius": {
+      "group": "Q31094180",
+      "non_members": []
+    },
+    "mr:0113-gumesindus-et-servusdei": {
+      "group": "Q11924990",
+      "non_members": []
+    },
+    "mr:0114-monachi-raithi": {
+      "group": "Q2061048",
+      "non_members": []
+    },
+    "mr:0116-berardus-et-socii": {
+      "group": "Q12816974",
+      "non_members": []
+    },
+    "mr:0117-speusippus-et-socii": {
+      "group": "Q1505432",
+      "non_members": []
+    },
+    "mr:0119-liberata-et-faustina": {
+      "group": "Q2796017",
+      "non_members": []
+    },
+    "mr:0119-marius-et-socii": {
+      "group": "Q1595063",
+      "non_members": [
+        "Q131765067"
+      ]
+    },
+    "mr:0121-fructuosus-et-socii": {
+      "group": "Q101193675",
+      "non_members": []
+    },
+    "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": {
+      "group": "Q2807895",
+      "non_members": []
+    },
+    "mr:0123-clemens-et-agathangelus": {
+      "group": "Q12151181",
+      "non_members": []
+    },
+    "mr:0123-severianus-et-aquila": {
+      "group": "Q85974778",
+      "non_members": []
+    },
+    "mr:0124-vincentius-lewoniuk-et-socii": {
+      "group": "Q115872",
+      "non_members": []
+    },
+    "mr:0129-iuventinus-et-maximinus": {
+      "group": "Q6318993",
+      "non_members": []
+    },
+    "mr:0129-papias-et-maurus": {
+      "group": "Q17638307",
+      "non_members": []
+    },
+    "mr:0129-sarbelius-et-bebaia": {
+      "group": "Q1422681",
+      "non_members": []
+    },
+    "mr:0131-cyrus-et-ioannes": {
+      "group": "Q378732",
+      "non_members": []
+    },
+    "mr:0131-victorinus-et-socii": {
+      "group": "Q133445535",
+      "non_members": []
+    },
+    "mr:0203-teridius-et-remedius": {
+      "group": "Q64840854",
+      "non_members": []
+    },
+    "mr:0204-philea-et-philoromus": {
+      "group": "Q108253242",
+      "non_members": []
+    },
+    "mr:0205-paulus-miki-et-socii": {
+      "group": "Q578963",
+      "non_members": []
+    },
+    "mr:0206-dorothea-et-theophilus": {
+      "group": "Q136620408",
+      "non_members": []
+    },
+    "mr:0206-paulus-miki-et-socii": {
+      "group": "Q578963",
+      "non_members": [
+        "Q20604849"
+      ]
+    },
+    "mr:0207-iacobus-sales-et-gulielmus-saultemouche": {
+      "group": "Q3850286",
+      "non_members": []
+    },
+    "mr:0209-primus-et-donatus": {
+      "group": "Q16591776",
+      "non_members": []
+    },
+    "mr:0212-martyres-abitinenses": {
+      "group": "Q2308132",
+      "non_members": []
+    },
+    "mr:0214-bassianus-et-socii": {
+      "group": "Q133445533",
+      "non_members": [
+        "Q141936767",
+        "Q141936763",
+        "Q141936766",
+        "Q141936764"
+      ]
+    },
+    "mr:0215-faustinus-et-iovita": {
+      "group": "Q1388274",
+      "non_members": []
+    },
+    "mr:0217-septem-fundatores-servorum-mariae": {
+      "group": "Q1057218",
+      "non_members": []
+    },
+    "mr:0227-iulianus-et-eunus": {
+      "group": "Q85975403",
+      "non_members": []
+    },
+    "mr:0228-marana-et-cyra": {
+      "group": "Q11767292",
+      "non_members": []
+    },
+    "mr:0303-emetherius-et-cheledonius": {
+      "group": "Q2972035",
+      "non_members": []
+    },
+    "mr:0303-marinus-et-asterius": {
+      "group": "Q56293083",
+      "non_members": []
+    },
+    "mr:0306-quadraginta-duo-martyres-syriae": {
+      "group": "Q3565151",
+      "non_members": []
+    },
+    "mr:0307-basilius-et-socii": {
+      "group": "Q20936683",
+      "non_members": [
+        "Q107205598",
+        "Q11912230",
+        "Q5382380"
+      ]
+    },
+    "mr:0307-eubulius-caesareae": {
+      "group": "Q110728452",
+      "non_members": []
+    },
+    "mr:0307-perpetua-et-felicitas": {
+      "group": "Q771956",
+      "non_members": []
+    },
+    "mr:0309-quadraginta-milites-sebastes": {
+      "group": "Q931446",
+      "non_members": []
+    },
+    "mr:0311-trophimus-et-thalus": {
+      "group": "Q15700789",
+      "non_members": []
+    },
+    "mr:0312-petrus-nicomediae": {
+      "group": "Q24952997",
+      "non_members": []
+    },
+    "mr:0316-hilarius-et-tatianus": {
+      "group": "Q106559144",
+      "non_members": []
+    },
+    "mr:0322-callinicus-et-basilissa": {
+      "group": "Q23583396",
+      "non_members": []
+    },
+    "mr:0323-victorianus-et-socii": {
+      "group": "Q4111032",
+      "non_members": []
+    },
+    "mr:0324-timolaus-et-socii": {
+      "group": "Q16206058",
+      "non_members": [
+        "Q141948493"
+      ]
+    },
+    "mr:0326-barontius-et-desiderius": {
+      "group": "Q808712",
+      "non_members": []
+    },
+    "mr:0401-venantius-et-socii": {
+      "group": "Q136613999",
+      "non_members": [
+        "Q107303904"
+      ]
+    },
+    "mr:0404-agathopodus-et-theodulus": {
+      "group": "Q81097215",
+      "non_members": []
+    },
+    "mr:0405-irenes-thessalonicensis": {
+      "group": "Q359116",
+      "non_members": [
+        "Q1074474"
+      ]
+    },
+    "mr:0413-carpus-et-socii": {
+      "group": "Q1734353",
+      "non_members": [
+        "Q1044816"
+      ]
+    },
+    "mr:0414-bernica-et-prosdoca": {
+      "group": "Q5291315",
+      "non_members": []
+    },
+    "mr:0417-plurimi-martyres-persidis": {
+      "group": "Q3850292",
+      "non_members": [
+        "Q2166439",
+        "Q9367436"
+      ]
+    },
+    "mr:0420-sulpicius-et-servitianus": {
+      "group": "Q132560343",
+      "non_members": []
+    },
+    "mr:0426-dominicus-et-gregorius": {
+      "group": "Q8561599",
+      "non_members": []
+    },
+    "mr:0426-gulielmus-et-peregrinus": {
+      "group": "Q21235349",
+      "non_members": []
+    },
+    "mr:0501-torquatus-et-socii": {
+      "group": "Q938363",
+      "non_members": []
+    },
+    "mr:0502-hesperus-et-zoes": {
+      "group": "Q18921069",
+      "non_members": [
+        "Q141938548",
+        "Q141938550"
+      ]
+    },
+    "mr:0503-eventius-et-socii": {
+      "group": "Q15875070",
+      "non_members": []
+    },
+    "mr:0503-timotheus-et-maura": {
+      "group": "Q12151185",
+      "non_members": []
+    },
+    "mr:0504-agapius-et-secundinus": {
+      "group": "Q20901818",
+      "non_members": []
+    },
+    "mr:0504-ioannes-houghton-et-socii": {
+      "group": "Q63064377",
+      "non_members": [
+        "Q654525",
+        "Q42887052"
+      ]
+    },
+    "mr:0506-marianus-et-iacobus": {
+      "group": "Q17562131",
+      "non_members": []
+    },
+    "mr:0507-flavius-et-socii": {
+      "group": "Q16556285",
+      "non_members": []
+    },
+    "mr:0510-alphius-et-socii": {
+      "group": "Q2248717",
+      "non_members": []
+    },
+    "mr:0514-felix-et-fortunatus": {
+      "group": "Q3742241",
+      "non_members": []
+    },
+    "mr:0514-victor-et-corona": {
+      "group": "Q457948",
+      "non_members": []
+    },
+    "mr:0516-abda-et-ebediesus": {
+      "group": "Q4664616",
+      "non_members": []
+    },
+    "mr:0516-florentius-et-diocletianus": {
+      "group": "Q97253807",
+      "non_members": []
+    },
+    "mr:0518-theodotus-et-thecusa": {
+      "group": "Q11951712",
+      "non_members": [
+        "Q141938613",
+        "Q141938612",
+        "Q141938611"
+      ]
+    },
+    "mr:0519-parthenius-et-calogerus": {
+      "group": "Q97256860",
+      "non_members": []
+    },
+    "mr:0522-castus-et-aemilius": {
+      "group": "Q716664",
+      "non_members": []
+    },
+    "mr:0523-lucius-et-socii": {
+      "group": "Q85976593",
+      "non_members": []
+    },
+    "mr:0524-donatianus-et-rogatianus": {
+      "group": "Q3036218",
+      "non_members": []
+    },
+    "mr:0529-gulielmus-arnaud-et-socii": {
+      "group": "Q20002779",
+      "non_members": [
+        "Q15818579"
+      ]
+    },
+    "mr:0529-sisinnius-et-socii": {
+      "group": "Q3962077",
+      "non_members": []
+    },
+    "mr:0530-basilius-et-emmelia": {
+      "group": "Q133930875",
+      "non_members": []
+    },
+    "mr:0531-cantius-et-socii": {
+      "group": "Q1991316",
+      "non_members": []
+    },
+    "mr:0601-ammon-et-socii": {
+      "group": "Q3576500",
+      "non_members": []
+    },
+    "mr:0602-marcellinus-et-petrus": {
+      "group": "Q449701",
+      "non_members": []
+    },
+    "mr:0602-sadochus-et-socii": {
+      "group": "Q1856117",
+      "non_members": []
+    },
+    "mr:0607-petrus-et-socii": {
+      "group": "Q11940894",
+      "non_members": [
+        "Q5796487"
+      ]
+    },
+    "mr:0609-primus-et-felicianus": {
+      "group": "Q2535100",
+      "non_members": []
+    },
+    "mr:0614-valerius-et-rufinus": {
+      "group": "Q6158992",
+      "non_members": []
+    },
+    "mr:0616-ferreolus-et-ferrutius": {
+      "group": "Q18921045",
+      "non_members": []
+    },
+    "mr:0616-quiricus-et-iulitta": {
+      "group": "Q514765",
+      "non_members": []
+    },
+    "mr:0617-blastus-et-diogenes": {
+      "group": "Q97253450",
+      "non_members": []
+    },
+    "mr:0618-cyriacus-et-paula": {
+      "group": "Q3008948",
+      "non_members": []
+    },
+    "mr:0618-marcus-et-marcellianus": {
+      "group": "Q670905",
+      "non_members": []
+    },
+    "mr:0619-gervasius-et-protasius": {
+      "group": "Q1515920",
+      "non_members": []
+    },
+    "mr:0622-iulius-et-aaron": {
+      "group": "Q302972",
+      "non_members": [
+        "Q312982"
+      ]
+    },
+    "mr:0624-agoardus-et-agilbertus": {
+      "group": "Q2379953",
+      "non_members": []
+    },
+    "mr:0626-ioannes-et-paulus": {
+      "group": "Q1698715",
+      "non_members": []
+    },
+    "mr:0628-plutarchus-et-socii": {
+      "group": "Q108459412",
+      "non_members": [
+        "Q6746023"
+      ]
+    },
+    "mr:0630-basilides-alexandriae": {
+      "group": "Q532385",
+      "non_members": []
+    },
+    "mr:0630-protomartyres-sanctae-romanae-ecclesiae": {
+      "group": "Q640666",
+      "non_members": []
+    },
+    "mr:0702-liberatus-et-socii": {
+      "group": "Q85977003",
+      "non_members": []
+    },
+    "mr:0702-processus-et-martinianus": {
+      "group": "Q1544096",
+      "non_members": []
+    },
+    "mr:0705-matthaeus-lambert-et-socii": {
+      "group": "Q7990254",
+      "non_members": [
+        "Q117212056",
+        "Q7146217"
+      ]
+    },
+    "mr:0708-aquila-et-prisca": {
+      "group": "Q11085604",
+      "non_members": []
+    },
+    "mr:0708-monachi-abrahamitae": {
+      "group": "Q4669306",
+      "non_members": []
+    },
+    "mr:0709-augustinus-zhao-rong-et-socii": {
+      "group": "Q2668281",
+      "non_members": [
+        "Q74250662"
+      ]
+    },
+    "mr:0709-nicolaus-pieck-et-socii": {
+      "group": "Q1909286",
+      "non_members": []
+    },
+    "mr:0710-emmanuel-ruiz-et-socii": {
+      "group": "Q3850285",
+      "non_members": [
+        "Q11818085"
+      ]
+    },
+    "mr:0710-felix-et-philippus": {
+      "group": "Q133554573",
+      "non_members": [
+        "Q141943261"
+      ]
+    },
+    "mr:0710-rufina-et-secunda": {
+      "group": "Q1518118",
+      "non_members": []
+    },
+    "mr:0711-placidus-et-sigisbertus": {
+      "group": "Q1421271",
+      "non_members": []
+    },
+    "mr:0712-fortunatus-et-hermagora": {
+      "group": "Q22579789",
+      "non_members": []
+    },
+    "mr:0712-proclus-et-hilarion": {
+      "group": "Q97256911",
+      "non_members": []
+    },
+    "mr:0715-eutropius-et-socii": {
+      "group": "Q97487684",
+      "non_members": [
+        "Q21660383"
+      ]
+    },
+    "mr:0715-ignatius-de-azevedo-et-socii": {
+      "group": "Q3134023",
+      "non_members": [
+        "Q102562239",
+        "Q8843207",
+        "Q19947023"
+      ]
+    },
+    "mr:0717-iusta-et-rufina": {
+      "group": "Q2366673",
+      "non_members": []
+    },
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
+      "group": "Q303617",
+      "non_members": []
+    },
+    "mr:0717-martyres-scillitani": {
+      "group": "Q488248",
+      "non_members": [
+        "Q123741151",
+        "Q8963753"
+      ]
+    },
+    "mr:0719-macedonius-et-socii": {
+      "group": "Q129634476",
+      "non_members": []
+    },
+    "mr:0724-boris-et-gleb": {
+      "group": "Q893813",
+      "non_members": []
+    },
+    "mr:0724-iacoba-martinez-garcia-et-socii": {
+      "group": "Q2939663",
+      "non_members": []
+    },
+    "mr:0726-ioachim-et-anna": {
+      "group": "Q140401460",
+      "non_members": []
+    },
+    "mr:0727-septem-dormientes-ephesi": {
+      "group": "Q466973",
+      "non_members": []
+    },
+    "mr:0728-nazarius-et-celsus": {
+      "group": "Q17524141",
+      "non_members": []
+    },
+    "mr:0729-simplicius-et-socii": {
+      "group": "Q840917",
+      "non_members": [
+        "Q141943229"
+      ]
+    },
+    "mr:0730-abdon-et-sennen": {
+      "group": "Q308330",
+      "non_members": []
+    },
+    "mr:0804-iustinus-et-crescention": {
+      "group": "Q21208893",
+      "non_members": []
+    },
+    "mr:0806-iustus-et-pastor": {
+      "group": "Q2671799",
+      "non_members": []
+    },
+    "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": {
+      "group": "Q19265558",
+      "non_members": []
+    },
+    "mr:0814-octingenti-martyres-hydrunti": {
+      "group": "Q1615843",
+      "non_members": []
+    },
+    "mr:0818-martyres-massae-candidae": {
+      "group": "Q6784101",
+      "non_members": []
+    },
+    "mr:0821-agathonicus-et-zoticus": {
+      "group": "Q117379295",
+      "non_members": []
+    },
+    "mr:0821-bernardus-et-socii": {
+      "group": "Q8246899",
+      "non_members": []
+    },
+    "mr:0823-abundius-et-irenaeus": {
+      "group": "Q4670633",
+      "non_members": []
+    },
+    "mr:0823-claudius-et-socii": {
+      "group": "Q4810684",
+      "non_members": []
+    },
+    "mr:0830-felix-et-adauctus": {
+      "group": "Q1291005",
+      "non_members": []
+    },
+    "mr:0907-festus-et-desiderius": {
+      "group": "Q136624320",
+      "non_members": []
+    },
+    "mr:0907-marcus-crisini-et-socii": {
+      "group": "Q530681",
+      "non_members": []
+    },
+    "mr:0910-nemesianus-et-socii": {
+      "group": "Q85977994",
+      "non_members": [
+        "Q141944582"
+      ]
+    },
+    "mr:0911-protus-et-hyacinthus": {
+      "group": "Q3394205",
+      "non_members": []
+    },
+    "mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis": {
+      "group": "Q6035428",
+      "non_members": []
+    },
+    "mr:0916-abundius-et-socii": {
+      "group": "Q17979325",
+      "non_members": []
+    },
+    "mr:0916-rogellus-et-servusdei": {
+      "group": "Q121710741",
+      "non_members": []
+    },
+    "mr:0918-david-okelo-et-gildus-irwa": {
+      "group": "Q17628568",
+      "non_members": []
+    },
+    "mr:0920-andreas-kim-tae-gon-et-socii": {
+      "group": "Q379564",
+      "non_members": []
+    },
+    "mr:0921-eusebius-et-socii": {
+      "group": "Q108037267",
+      "non_members": [
+        "Q3338430"
+      ]
+    },
+    "mr:0922-mauritius-et-socii": {
+      "group": "Q664988",
+      "non_members": []
+    },
+    "mr:0924-andochius-et-socii": {
+      "group": "Q124744645",
+      "non_members": [
+        "Q21008303"
+      ]
+    },
+    "mr:0926-cosmas-et-damianus": {
+      "group": "Q76486",
+      "non_members": []
+    },
+    "mr:0928-laurentius-ruiz-et-socii": {
+      "group": "Q669138",
+      "non_members": []
+    },
+    "mr:1001-verissimus-et-socii": {
+      "group": "Q3509870",
+      "non_members": []
+    },
+    "mr:1003-ambrosius-franciscus-ferro-et-socii": {
+      "group": "Q10334580",
+      "non_members": [
+        "Q123501812"
+      ]
+    },
+    "mr:1003-duo-ewaldi": {
+      "group": "Q322929",
+      "non_members": []
+    },
+    "mr:1007-sergius-et-bacchus": {
+      "group": "Q140013",
+      "non_members": []
+    },
+    "mr:1010-cassius-et-florentius": {
+      "group": "Q549910",
+      "non_members": []
+    },
+    "mr:1010-daniel-et-socii": {
+      "group": "Q136614618",
+      "non_members": [
+        "Q141944950",
+        "Q20605506"
+      ]
+    },
+    "mr:1010-eulampius-et-eulampia": {
+      "group": "Q3734508",
+      "non_members": []
+    },
+    "mr:1011-nicasius-et-socii": {
+      "group": "Q7024538",
+      "non_members": [
+        "Q3339549"
+      ]
+    },
+    "mr:1011-tharacus-et-socii": {
+      "group": "Q4759490",
+      "non_members": []
+    },
+    "mr:1013-faustus-et-socii": {
+      "group": "Q11921619",
+      "non_members": [
+        "Q3067458"
+      ]
+    },
+    "mr:1017-rufus-et-zosimus": {
+      "group": "Q7378121",
+      "non_members": [
+        "Q44170"
+      ]
+    },
+    "mr:1018-proculus-et-socii": {
+      "group": "Q138388825",
+      "non_members": [
+        "Q9143735"
+      ]
+    },
+    "mr:1019-ioannes-de-brebeuf-et-socii": {
+      "group": "Q2653872",
+      "non_members": []
+    },
+    "mr:1019-ptolomaeus-et-lucius": {
+      "group": "Q18918005",
+      "non_members": []
+    },
+    "mr:1019-sabinianus-et-potentianus": {
+      "group": "Q7428319",
+      "non_members": []
+    },
+    "mr:1021-dasius-et-socii": {
+      "group": "Q60594638",
+      "non_members": []
+    },
+    "mr:1022-nunilo-et-alodia": {
+      "group": "Q2667038",
+      "non_members": []
+    },
+    "mr:1023-servandus-et-germanus": {
+      "group": "Q7455543",
+      "non_members": []
+    },
+    "mr:1024-aretha-et-socii": {
+      "group": "Q3295958",
+      "non_members": []
+    },
+    "mr:1025-chrysanthus-et-daria": {
+      "group": "Q1088478",
+      "non_members": []
+    },
+    "mr:1025-crispinus-et-crispinianus": {
+      "group": "Q1140213",
+      "non_members": []
+    },
+    "mr:1025-martyrius-et-marcianus": {
+      "group": "Q24009983",
+      "non_members": []
+    },
+    "mr:1026-lucianus-et-marcianus": {
+      "group": "Q11933561",
+      "non_members": []
+    },
+    "mr:1028-vincentius-et-socii": {
+      "group": "Q11954656",
+      "non_members": []
+    },
+    "mr:1030-claudius-et-socii": {
+      "group": "Q11914022",
+      "non_members": []
+    },
+    "mr:1102-carterius-et-socii": {
+      "group": "Q4691256",
+      "non_members": []
+    },
+    "mr:1104-nicandrus-et-hermes": {
+      "group": "Q21328789",
+      "non_members": []
+    },
+    "mr:1104-vitalis-et-agricola": {
+      "group": "Q203177",
+      "non_members": []
+    },
+    "mr:1106-callinicus-et-socii": {
+      "group": "Q135925988",
+      "non_members": []
+    },
+    "mr:1108-simpronianus-et-socii": {
+      "group": "Q1301757",
+      "non_members": []
+    },
+    "mr:1112-benedictus-et-socii": {
+      "group": "Q1481639",
+      "non_members": []
+    },
+    "mr:1114-nicolaus-tavelic-et-socii": {
+      "group": "Q3413495",
+      "non_members": []
+    },
+    "mr:1115-marinus-et-anianus": {
+      "group": "Q115940857",
+      "non_members": []
+    },
+    "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": {
+      "group": "Q1752755",
+      "non_members": [
+        "Q61061386",
+        "Q131314862"
+      ]
+    },
+    "mr:1124-andreas-dung-lac-et-socii": {
+      "group": "Q3075684",
+      "non_members": [
+        "Q16550430"
+      ]
+    },
+    "mr:1124-flora-et-maria": {
+      "group": "Q5460376",
+      "non_members": [
+        "Q246000"
+      ]
+    },
+    "mr:1127-facundus-et-primitivus": {
+      "group": "Q3473885",
+      "non_members": []
+    },
+    "mr:1129-petrus-berthelot-et-thomas-rodriguez": {
+      "group": "Q113882069",
+      "non_members": []
+    },
+    "mr:1206-martyres-africae": {
+      "group": "Q4162017",
+      "non_members": [
+        "Q141945847",
+        "Q85971158",
+        "Q85971365",
+        "Q85971790"
+      ]
+    },
+    "mr:1213-eustratius-et-socii": {
+      "group": "Q19999551",
+      "non_members": []
+    },
+    "mr:1222-chaeremon-et-socii": {
+      "group": "Q85979195",
+      "non_members": []
+    },
+    "mr:1223-theodulus-et-socii": {
+      "group": "Q3592726",
+      "non_members": []
+    },
+    "mr:1225-iovinus-et-basileus": {
+      "group": "Q110263903",
+      "non_members": []
+    },
+    "mr:1226-agnes-phila-et-lucia-khambang": {
+      "group": "Q3850284",
+      "non_members": []
+    },
+    "mr:1227-theodorus-graptus": {
+      "group": "Q3067955",
+      "non_members": []
+    },
+    "mr:1231-donata-et-socii": {
+      "group": "Q20058182",
+      "non_members": [
+        "Q107444383"
+      ]
+    }
+  }
+}
