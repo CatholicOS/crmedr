@@ -77,7 +77,7 @@ it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) no
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
 mr:0711-leontius-burdigalae (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva-gistellae (6\*),
 mr:0802-betharius-carnuti (8\*), mr:0807-donatus-vesontione (7\*),
-mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus (8\*), mr:1026-eata (7\*),
+mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus-trevirorum (8\*), mr:1026-eata-axeloduni (7\*),
 mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
 mr:1119-eudo (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
 
@@ -798,7 +798,7 @@ eulogies of the day under the wrong ID.
   of Tyre under Veturius, naming Tyrannio among the bishops who encouraged them: it is
   re-keyed to mr:0220-quinque-martyres-tyri. mr:0220-tyrannion-tyri (Antioch) keeps its
   slug: its honorific is singular, and Zenobius, named with him, has his own eulogy
-  (mr:1029-zenobius).
+  (mr:1029-zenobius-sidonis).
 
 **The Ursulines of Orange, July 9 (applied, October 2026, #77)**: the Latin 2004 prints
 *beatárum Melániæ et Maríæ Annæ Magdalénæ de Guilhermier atque Maríæ Annæ Margarítæ ab
@@ -885,11 +885,11 @@ the following eulogies of their day, run in by the OCR.
 | mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
 | mr:0923-lini | mr:0923-linus-papa |
 | mr:0927-caji | mr:0927-caius-mediolani |
-| mr:1006-fideus-agenni | mr:1006-fideus |
-| mr:1007-marcus-romae | mr:1007-marcus |
-| mr:1016-lullus-moguntiae | mr:1016-lullus |
+| mr:1006-fideus-agenni | mr:1006-fideus-aginni |
+| mr:1007-marcus-romae | mr:1007-marcus-papa |
+| mr:1016-lullus-moguntiae | mr:1016-lullus-moguntinus |
 | mr:1022-donatus-scotus-tuscia | mr:1022-donatus-scotus |
-| mr:1026-fulcus-papiae | mr:1026-fulcus |
+| mr:1026-fulcus-papiae | mr:1026-fulcus-papiae |
 | mr:1102-justus | mr:1102-iustus |
 | mr:1110-justus | mr:1110-iustus |
 | mr:1209-syri | mr:1209-syrus |
@@ -984,7 +984,7 @@ that edition only, in the new `edition_notes` field (`EDITION_NOTES` for current
 errors of the unofficial 1914 English against the 1749 Latin (Brixia rendered Brixen at
 mr:0127-angela-merici, Domitian for Diocletian at mr:0824-tatio-claudiopoli, Pettau rendered Poitiers at
 mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-privatus-gabalorum). Remarks on
-the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida. Three Latin subjects are corrected (Sancta Fides,
+the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida-romae. Three Latin subjects are corrected (Sancta Fides,
 Sancta Marina, Sanctus Ioannes Therestus).
 
 **The Italian 2004 against the Latin 2004 (October 2026)**: every eulogy of the Italian (CEI)
@@ -1006,8 +1006,8 @@ out) are not. Two Italian cards became one Latin note: the Latin puts Nitra on t
 unofficial English, with the Italian as a second witness. Its high-confidence errors are curator
 notes on the English: "rebuilt" for aedificare, Gallia Lugdunensis rendered "Lyon France",
 look-alike places (Pontoise rendered Pont-Sainte-Maxence, Senlis rendered Autun), senses reversed
-(mr:1022-abercius, mr:0720-aurelius-carthaginensis), misreadings ("confessed" for confossa at
-mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius). Faults of the digitized copy
+(mr:1022-abercius-hierapoli, mr:0720-aurelius-carthaginensis), misreadings ("confessed" for confossa at
+mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius-tigerni). Faults of the digitized copy
 rather than of the translation (footnote markers left in the text, an encoding slip of "d",
 broken words, run-in eulogies) are corrected in the texts, not noted. Its 382 findings of medium
 and low confidence (373 on the English, 9 on the Latin) were accepted together, the first thirty
@@ -1021,7 +1021,7 @@ repositories (then kept on regeneration by `ID_CORRECTIONS`; since #127 the regi
   coemeterio sancti Laurentii*; the eulogy is St Romanus, so the 1914 deprecated
   mr:0809-romanus-romae, the same eulogy, merges into it); mr:0629-petrus-et-paulus-simon →
   mr:0629-petrus-et-paulus (*Simon* opens the next sentence; -apostoli since #56); mr:1028-fidel →
-  mr:1028-fidelis and mr:0424-fidel-de-sigmaringa → mr:0424-fidelis-de-sigmaringa (the
+  mr:1028-fidelis-comi and mr:0424-fidel-de-sigmaringa → mr:0424-fidelis-de-sigmaringa (the
   genitive stem for the nominative).
 - **Prophets** keep the word in the slug, `-propheta` (`-prophetae` for two or more), so that
   they are told apart at a glance, with the nominative lemma: the writing prophets
@@ -1115,7 +1115,7 @@ corrections go against the printed text: mr:0504-florianus-lauriaci → AT (Lorc
 text says "nell'odierna Germania"), mr:0304-casimirus-grodnae → BY (Grodno; the text says
 "in Lituania"), mr:0603-morandus-cluniacensis → FR (Altkirch in Alsace) and mr:0827-gebhardus-constantiensis →
 DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
-are left as they are: mr:1011-philippus stays `PS` (Caesarea Maritima), because
+are left as they are: mr:1011-philippus-caesareae stays `PS` (Caesarea Maritima), because
 the workbook uses `PS` for the whole Holy Land (90 current entries) and changing
 one entry would break that convention. mr:0814-arnulphus-suessionensis stays `BE` (Oudenburg),
 although the text says "Altenburg nelle Fiandre, ora in Germania".
@@ -1223,9 +1223,9 @@ intended:
   quoted designation of her body place (`places[].la` keeps the printed form):
   "monastériii" for *monastérii*, verified on the page image (p. 657) and in its OCR
   layer.
-- Italian (CEI) edition, October 13 (mr:1013-comganus): "desposizione" for
+- Italian (CEI) edition, October 13 (mr:1013-comganus-hiensis): "desposizione" for
   *deposizione*.
-- Italian (CEI) edition, October 14 (mr:1014-venantius): "comemorazione" for
+- Italian (CEI) edition, October 14 (mr:1014-venantius-lunae): "comemorazione" for
   *commemorazione*.
 - Italian (CEI) edition, June 2, footnote to entry 2 (mr:0602-pothinus-et-socii): "Emillia" for
   *Emilia* in the list of the martyrs of Lyons (the Latin has *Æmilia*), verified on the page
@@ -1419,13 +1419,13 @@ from `PS` to `IL`.
 | `mr:0913-dedicatio-basilicarum-hierosolymis` | Jerusalem (Q1218) | IL | PS |
 | `mr:0914-notburga-eben` | Eben am Achensee (Q691906) | IT | AT |
 | `mr:0926-gedeon-iudex` | no opening place | IL | PS |
-| `mr:1001-wasnulphus` | Condé-sur-l'Escaut (Q494533) | BE | FR |
+| `mr:1001-wasnulphus-condatis` | Condé-sur-l'Escaut (Q494533) | BE | FR |
 | `mr:1002-maria-antonina-kratochwil` | Ivano-Frankivsk (Q156726) | PL | UA |
 | `mr:1010-daniel-et-socii` | Ceuta (Q5823) | MA | ES |
-| `mr:1011-anastasius` | Tsageri (Q140314) | IT | GE |
-| `mr:1016-longinus` | Jerusalem (Q1218) | IL | PS |
-| `mr:1022-marcus` | no opening place | IL | PS |
-| `mr:1029-narcissus` | no opening place | IL | PS |
+| `mr:1011-anastasius-schemaris` | Tsageri (Q140314) | IT | GE |
+| `mr:1016-longinus-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
+| `mr:1022-marcus-hierosolymitanus` | no opening place | IL | PS |
+| `mr:1029-narcissus-hierosolymitanus` | no opening place | IL | PS |
 | `mr:1106-felix` | El Kala (Q3050005) | TN | DZ |
 | `mr:1106-callinicus-et-socii` | Jerusalem (Q1218) | IL | PS |
 | `mr:1109-henricus-hlebowicz` | Barysaw (Q19313) | PL | BY |
