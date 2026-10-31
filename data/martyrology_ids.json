@@ -21532,7 +21532,7 @@
       ]
     },
     {
-      "id": "mr:0301-albinus",
+      "id": "mr:0301-albinus-andegavi",
       "month": 3,
       "day": 1,
       "entry": 2,
@@ -21569,7 +21569,7 @@
       }
     },
     {
-      "id": "mr:0301-david",
+      "id": "mr:0301-david-meneviae",
       "month": 3,
       "day": 1,
       "entry": 3,
@@ -21629,15 +21629,13 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
-        "circa": true,
+        "year": 589,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0301-siviardus",
+      "id": "mr:0301-siviardus-anninsulensis",
       "month": 3,
       "day": 1,
       "entry": 4,
@@ -21665,13 +21663,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 687,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0301-suitbertus",
+      "id": "mr:0301-suitbertus-werdae",
       "month": 3,
       "day": 1,
       "entry": 5,
@@ -21709,13 +21707,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 713,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0301-leo",
+      "id": "mr:0301-leo-vasconiae",
       "month": 3,
       "day": 1,
       "entry": 6,
@@ -21732,7 +21730,12 @@
           "label": "Gascony",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 890,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0301-leo-lucas",
@@ -21762,13 +21765,18 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 915,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "The monastery of Mula took its name from Monte La Mula (Q31610309, 1,935 m) in the Orsomarso mountains (Q1114894) of northern Calabria: Italian Wikipedia's life of Leoluca says he lived \"nel monastero presso il monte Mula\" (in the monastery by Mount Mula) under the hegumen Christopher before they moved to the Mercurion (Q3855082). The monastery's own site is lost; the place is mapped at the mountain.",
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Leo of Lucca\" where the Latin has \"Leónis Lucæ\" (Leo Luca, known as Leoluca)."
       }
     },
     {
-      "id": "mr:0301-rudesindus",
+      "id": "mr:0301-rudesindus-dumiensis",
       "month": 3,
       "day": 1,
       "entry": 8,
@@ -21852,7 +21860,12 @@
           "label": "Bassano del Grappa",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1670,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0301-agnes-cao-kuiying",
@@ -21880,7 +21893,7 @@
       }
     },
     {
-      "id": "mr:0302-troadius",
+      "id": "mr:0302-troadius-neocaesareae",
       "month": 3,
       "day": 2,
       "entry": 1,
@@ -21899,18 +21912,16 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
+        "year": 250,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:1228-troadius"
       ]
     },
     {
-      "id": "mr:0302-ceadda",
+      "id": "mr:0302-ceadda-lichfeldiae",
       "month": 3,
       "day": 2,
       "entry": 2,
@@ -21981,10 +21992,16 @@
           "label": "Agira",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "from": 801,
+        "to": 900,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0302-agnes",
+      "id": "mr:0302-agnes-pragae",
       "month": 3,
       "day": 2,
       "entry": 4,
@@ -22003,11 +22020,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1282,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"rebuilt by herself\" where the Latin has \"ab ipsa ædificáto\" (built by her)."
@@ -22111,11 +22126,9 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
+        "year": 262,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -22147,9 +22160,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 298,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -22172,15 +22186,14 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
+        "year": 308,
         "circa": true,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0303-titianus",
+      "id": "mr:0303-titianus-brixiae",
       "month": 3,
       "day": 3,
       "entry": 4,
@@ -22205,7 +22218,7 @@
       }
     },
     {
-      "id": "mr:0303-winwaloeus",
+      "id": "mr:0303-winwaloeus-landevenecensis",
       "month": 3,
       "day": 3,
       "entry": 5,
@@ -22241,12 +22254,17 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 532,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Nella Cornovaglia in Inghilterra\" (Cornwall in England) where the Latin has \"In Cornúbia Armóricæ\" (Cornouaille in Brittany, where Landévennec lies)."
       }
     },
     {
-      "id": "mr:0303-arthellaidis",
+      "id": "mr:0303-arthellaidis-beneventi",
       "month": 3,
       "day": 3,
       "entry": 6,
@@ -22263,10 +22281,15 @@
           "label": "Benevento",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 560,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0303-anselmus",
+      "id": "mr:0303-anselmus-nonantulae",
       "month": 3,
       "day": 3,
       "entry": 7,
@@ -22283,10 +22306,15 @@
           "label": "Nonantola",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 803,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0303-cunegundis",
+      "id": "mr:0303-cunegundis-confugiae",
       "month": 3,
       "day": 3,
       "entry": 8,
@@ -22323,7 +22351,7 @@
       }
     },
     {
-      "id": "mr:0303-fridericus",
+      "id": "mr:0303-fridericus-frisiae",
       "month": 3,
       "day": 3,
       "entry": 9,
@@ -22358,7 +22386,12 @@
           "label": "Mariëngaarde",
           "country": "NL"
         }
-      ]
+      ],
+      "date": {
+        "year": 1175,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0303-petrus-geremia",
@@ -22403,7 +22436,12 @@
           "label": "Vercelli",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1508,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0303-liberatus-weiss-et-socii",
@@ -22450,11 +22488,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1796,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Daron\" where the Latin has \"Dariórigi\" (Vannes)."
@@ -22536,7 +22572,7 @@
       }
     },
     {
-      "id": "mr:0304-casimirus",
+      "id": "mr:0304-casimirus-grodnae",
       "month": 3,
       "day": 4,
       "entry": 1,
@@ -22596,7 +22632,7 @@
       }
     },
     {
-      "id": "mr:0304-basinus",
+      "id": "mr:0304-basinus-trevirorum",
       "month": 3,
       "day": 4,
       "entry": 3,
@@ -22639,7 +22675,7 @@
       }
     },
     {
-      "id": "mr:0304-appianus",
+      "id": "mr:0304-appianus-papiensis",
       "month": 3,
       "day": 4,
       "entry": 4,
@@ -22669,7 +22705,7 @@
       "note": "The monastery of Pavia (Q6259) was San Pietro in Ciel d'Oro (Q3860504). A. M. Zimmermann's life of Appian (Bibliotheca Sanctorum, on santiebeati.it) says he \"fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro\" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt."
     },
     {
-      "id": "mr:0304-petrus",
+      "id": "mr:0304-petrus-policastrensis",
       "month": 3,
       "day": 4,
       "entry": 5,
@@ -22695,10 +22731,15 @@
           "label": "Policastro Bussentino",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1123,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0304-humbertus",
+      "id": "mr:0304-humbertus-camberii",
       "month": 3,
       "day": 4,
       "entry": 6,
@@ -22726,6 +22767,11 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1189,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"terzo conte di Savoia\" (the third count of Savoy) where the Latin has \"cómitis Sabáudiæ Tértii\" (Humbert III, Count of Savoy)."
       }
@@ -22802,6 +22848,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1888,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014."
     },
     {
@@ -22824,15 +22875,13 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1942,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0305-theophilus",
+      "id": "mr:0305-theophilus-caesariensis",
       "month": 3,
       "day": 5,
       "entry": 1,
@@ -22851,12 +22900,12 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "year": 195,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0305-conon",
+      "id": "mr:0305-conon-pamphyliae",
       "month": 3,
       "day": 5,
       "entry": 2,
@@ -22875,18 +22924,17 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
+        "year": 250,
         "circa": true,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0306-conon"
       ]
     },
     {
-      "id": "mr:0305-lucius",
+      "id": "mr:0305-lucius-i",
       "month": 3,
       "day": 5,
       "entry": 3,
@@ -22905,18 +22953,16 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
+        "year": 254,
         "basis": "deposition",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0304-lucius-i"
       ]
     },
     {
-      "id": "mr:0305-phoca",
+      "id": "mr:0305-phoca-sinopes",
       "month": 3,
       "day": 5,
       "entry": 4,
@@ -22935,13 +22981,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 303,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0305-hadrianus",
+      "id": "mr:0305-hadrianus-caesareae",
       "month": 3,
       "day": 5,
       "entry": 5,
@@ -22960,13 +23007,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 309,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0305-gerasimus",
+      "id": "mr:0305-gerasimus-iordanis",
       "month": 3,
       "day": 5,
       "entry": 6,
@@ -22989,13 +23036,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 475,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0305-kieranus",
+      "id": "mr:0305-kieranus-sagiriae",
       "month": 3,
       "day": 5,
       "entry": 7,
@@ -23012,10 +23059,16 @@
           "label": "Saighir",
           "country": "IE"
         }
-      ]
+      ],
+      "date": {
+        "year": 530,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0305-virgilius",
+      "id": "mr:0305-virgilius-arelatis",
       "month": 3,
       "day": 5,
       "entry": 8,
@@ -23041,7 +23094,12 @@
           "label": "Angles",
           "country": "GB"
         }
-      ]
+      ],
+      "date": {
+        "year": 610,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0305-christophorus-macassoli",
@@ -23086,7 +23144,12 @@
           "label": "Naples",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1625,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0305-carolus-caietanus-calosirto",
@@ -23114,13 +23177,13 @@
         }
       ],
       "date": {
-        "to": 1914,
+        "year": 1734,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0306-marcianus",
+      "id": "mr:0306-marcianus-derthonae",
       "month": 3,
       "day": 6,
       "entry": 1,
@@ -23139,13 +23202,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 120,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0306-victorinus",
+      "id": "mr:0306-victorinus-nicomediae",
       "month": 3,
       "day": 6,
       "entry": 2,
@@ -23170,7 +23233,7 @@
       }
     },
     {
-      "id": "mr:0306-quiriacus",
+      "id": "mr:0306-quiriacus-trevirorum",
       "month": 3,
       "day": 6,
       "entry": 3,
@@ -23188,12 +23251,17 @@
           "country": "DE"
         }
       ],
+      "date": {
+        "year": 350,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Belgic France\" where the Latin has \"Gállia Bélgica\" (Belgic Gaul)."
       }
     },
     {
-      "id": "mr:0306-evagrius",
+      "id": "mr:0306-evagrius-constantinopolitanus",
       "month": 3,
       "day": 6,
       "entry": 4,
@@ -23212,14 +23280,12 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
-        "source": "estimate"
+        "year": 380,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0306-iulianus",
+      "id": "mr:0306-iulianus-toleti",
       "month": 3,
       "day": 6,
       "entry": 5,
@@ -23238,16 +23304,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 690,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0308-iulianus"
       ]
     },
     {
-      "id": "mr:0306-fridolinus",
+      "id": "mr:0306-fridolinus-saconii",
       "month": 3,
       "day": 6,
       "entry": 6,
@@ -23289,12 +23355,17 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 538,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"due monasteri\" (two monasteries) where the Latin has \"duplex monastérium\" (a double monastery)."
       }
     },
     {
-      "id": "mr:0306-chrodegangus",
+      "id": "mr:0306-chrodegangus-metarum",
       "month": 3,
       "day": 6,
       "entry": 7,
@@ -23367,7 +23438,7 @@
       }
     },
     {
-      "id": "mr:0306-ollegarius",
+      "id": "mr:0306-ollegarius-tarraconensis",
       "month": 3,
       "day": 6,
       "entry": 9,
@@ -23401,7 +23472,7 @@
       }
     },
     {
-      "id": "mr:0306-rosa",
+      "id": "mr:0306-rosa-viterbii",
       "month": 3,
       "day": 6,
       "entry": 10,
@@ -23418,7 +23489,12 @@
           "label": "Viterbo",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1252,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0306-coleta-boylet",
@@ -23440,9 +23516,9 @@
         }
       ],
       "date": {
-        "to": 1914,
+        "year": 1447,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -23486,15 +23562,13 @@
       "country": "TN",
       "typology": "dies_natalis",
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
+        "year": 203,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0307-eubulius",
+      "id": "mr:0307-eubulius-caesareae",
       "month": 3,
       "day": 7,
       "entry": 3,
@@ -23513,9 +23587,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 308,
+        "to": 309,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -23538,9 +23613,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 65,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"in Grecia\" (in Greece) for \"Chersonésum\", which is Cherson in the Crimea."
@@ -23569,15 +23644,13 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
+        "year": 339,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0307-gaudiosus",
+      "id": "mr:0307-gaudiosus-brixiae",
       "month": 3,
       "day": 7,
       "entry": 6,
@@ -23627,7 +23700,7 @@
       }
     },
     {
-      "id": "mr:0307-paulus",
+      "id": "mr:0307-paulus-prusae",
       "month": 3,
       "day": 7,
       "entry": 8,
@@ -23753,7 +23826,12 @@
           "label": "Seoul",
           "country": "KR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1866,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0307-simeon-berneux-et-socii",
@@ -23834,11 +23912,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1550,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -23846,7 +23922,7 @@
       }
     },
     {
-      "id": "mr:0308-pontius",
+      "id": "mr:0308-pontius-carthaginensis",
       "month": 3,
       "day": 8,
       "entry": 2,
@@ -23867,8 +23943,7 @@
       "date": {
         "from": 201,
         "to": 300,
-        "circa": true,
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -23891,13 +23966,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 305,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0308-provinus",
+      "id": "mr:0308-provinus-comi",
       "month": 3,
       "day": 8,
       "entry": 4,
@@ -23917,7 +23992,7 @@
       ]
     },
     {
-      "id": "mr:0308-senanus",
+      "id": "mr:0308-senanus-cathensis",
       "month": 3,
       "day": 8,
       "entry": 5,
@@ -23936,15 +24011,13 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
-        "circa": true,
+        "year": 560,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0308-felix",
+      "id": "mr:0308-felix-dumnoci",
       "month": 3,
       "day": 8,
       "entry": 6,
@@ -23987,7 +24060,7 @@
       }
     },
     {
-      "id": "mr:0308-theophilactus",
+      "id": "mr:0308-theophilactus-nicomediae",
       "month": 3,
       "day": 8,
       "entry": 7,
@@ -24015,16 +24088,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 845,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0307-theophilactus"
       ]
     },
     {
-      "id": "mr:0308-humfridus",
+      "id": "mr:0308-humfridus-taruannensis",
       "month": 3,
       "day": 8,
       "entry": 8,
@@ -24050,12 +24123,17 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 869,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"At Merville\" where the Latin has \"Apud Mórinos\" (among the Morini, the territory of Thérouanne)."
       }
     },
     {
-      "id": "mr:0308-litiphridus",
+      "id": "mr:0308-litiphridus-papiae",
       "month": 3,
       "day": 8,
       "entry": 9,
@@ -24075,7 +24153,7 @@
       ]
     },
     {
-      "id": "mr:0308-duthacus",
+      "id": "mr:0308-duthacus-rossensis",
       "month": 3,
       "day": 8,
       "entry": 10,
@@ -24101,10 +24179,15 @@
           "label": "Ross-shire",
           "country": "GB"
         }
-      ]
+      ],
+      "date": {
+        "year": 1050,
+        "basis": "deposition",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0308-veremundus",
+      "id": "mr:0308-veremundus-hyrachensis",
       "month": 3,
       "day": 8,
       "entry": 11,
@@ -24130,10 +24213,16 @@
           "label": "Monastery of Irache",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "from": 1001,
+        "to": 1100,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0308-stephanus",
+      "id": "mr:0308-stephanus-obazinae",
       "month": 3,
       "day": 8,
       "entry": 12,
@@ -24210,10 +24299,15 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1925,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017."
     },
     {
-      "id": "mr:0309-francisca",
+      "id": "mr:0309-francisca-romae",
       "month": 3,
       "day": 9,
       "entry": 1,
@@ -24232,9 +24326,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1440,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -24284,7 +24378,7 @@
       ]
     },
     {
-      "id": "mr:0309-pacianus",
+      "id": "mr:0309-pacianus-barcinonis",
       "month": 3,
       "day": 9,
       "entry": 3,
@@ -24303,11 +24397,10 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
+        "year": 390,
         "circa": true,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"truly Catholic by nature\" where the Latin has \"cathólicum vero cognómen\" (but Catholic his surname)."
@@ -24331,10 +24424,15 @@
           "label": "Rapolla",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 994,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0309-bruno",
+      "id": "mr:0309-bruno-querfurtensis",
       "month": 3,
       "day": 9,
       "entry": 5,
@@ -24380,16 +24478,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1009,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0619-bonifatius"
       ]
     },
     {
-      "id": "mr:0309-catharina",
+      "id": "mr:0309-catharina-bononiae",
       "month": 3,
       "day": 9,
       "entry": 6,
@@ -24408,9 +24506,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1463,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"humble devotion\" where the Latin has \"pæniténtiæ humilitatísque cursu\" (course of penance and humility)."
@@ -24461,11 +24559,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1866,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -24498,7 +24594,7 @@
       }
     },
     {
-      "id": "mr:0310-victor",
+      "id": "mr:0310-victor-africae",
       "month": 3,
       "day": 10,
       "entry": 2,
@@ -24522,7 +24618,7 @@
       }
     },
     {
-      "id": "mr:0310-macarius",
+      "id": "mr:0310-macarius-hierosolymitanus",
       "month": 3,
       "day": 10,
       "entry": 3,
@@ -24541,14 +24637,12 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
-        "source": "estimate"
+        "year": 335,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0310-simplicius",
+      "id": "mr:0310-simplicius-papa",
       "month": 3,
       "day": 10,
       "entry": 4,
@@ -24585,7 +24679,7 @@
       ]
     },
     {
-      "id": "mr:0310-droctoveus",
+      "id": "mr:0310-droctoveus-parisiorum",
       "month": 3,
       "day": 10,
       "entry": 5,
@@ -24619,7 +24713,7 @@
       }
     },
     {
-      "id": "mr:0310-attala",
+      "id": "mr:0310-attala-bobiensis",
       "month": 3,
       "day": 10,
       "entry": 6,
@@ -24656,9 +24750,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 627,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -24741,15 +24835,13 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1928,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0311-pionius",
+      "id": "mr:0311-pionius-smyrnae",
       "month": 3,
       "day": 11,
       "entry": 1,
@@ -24768,11 +24860,9 @@
         }
       ],
       "date": {
-        "from": 201,
-        "to": 300,
-        "circa": true,
+        "year": 250,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0201-pionius"
@@ -24804,7 +24894,7 @@
       }
     },
     {
-      "id": "mr:0311-constantinus",
+      "id": "mr:0311-constantinus-scotiae",
       "month": 3,
       "day": 11,
       "entry": 3,
@@ -24821,10 +24911,15 @@
           "label": "Scotland",
           "country": "GB"
         }
-      ]
+      ],
+      "date": {
+        "year": 576,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0311-sophronius",
+      "id": "mr:0311-sophronius-hierosolymorum",
       "month": 3,
       "day": 11,
       "entry": 4,
@@ -24847,15 +24942,13 @@
         }
       ],
       "date": {
-        "from": 601,
-        "to": 700,
-        "circa": true,
+        "year": 638,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0311-vindicianus",
+      "id": "mr:0311-vindicianus-cameracensis",
       "month": 3,
       "day": 11,
       "entry": 5,
@@ -24898,7 +24991,7 @@
       }
     },
     {
-      "id": "mr:0311-benedictus",
+      "id": "mr:0311-benedictus-mediolani",
       "month": 3,
       "day": 11,
       "entry": 6,
@@ -24917,9 +25010,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 732,
         "basis": "deposition",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -24941,12 +25034,17 @@
           "country": "IE"
         }
       ],
+      "date": {
+        "year": 824,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"the White Book of the Saints of Ireland\" where the Latin has \"album sanctórum Hibérniæ\" (a register of the saints of Ireland)."
       }
     },
     {
-      "id": "mr:0311-eulogius",
+      "id": "mr:0311-eulogius-cordubae",
       "month": 3,
       "day": 11,
       "entry": 8,
@@ -24965,11 +25063,9 @@
         }
       ],
       "date": {
-        "from": 801,
-        "to": 900,
-        "circa": true,
+        "year": 859,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -24990,7 +25086,12 @@
           "label": "Cupramontana",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1539,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0311-thomas-atkinson",
@@ -25046,11 +25147,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1653,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Clon\" where the Latin has \"Clonæ\" (Clonmel)."
@@ -25076,11 +25175,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1859,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Thieu Tri\" where the Latin has \"Tự Ðức\"."
@@ -25115,7 +25212,7 @@
       }
     },
     {
-      "id": "mr:0312-maximilianus",
+      "id": "mr:0312-maximilianus-thevestis",
       "month": 3,
       "day": 12,
       "entry": 1,
@@ -25164,7 +25261,7 @@
       }
     },
     {
-      "id": "mr:0312-petrus",
+      "id": "mr:0312-petrus-nicomediae",
       "month": 3,
       "day": 12,
       "entry": 3,
@@ -25235,7 +25332,12 @@
           "label": "Saint-Pol-de-Léon",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 573,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0312-gregorius-i-magnus",
@@ -25257,11 +25359,9 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
-        "circa": true,
+        "year": 604,
         "basis": "deposition",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -25293,15 +25393,13 @@
         }
       ],
       "date": {
-        "from": 801,
-        "to": 900,
-        "circa": true,
+        "year": 817,
         "basis": "deposition",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0312-elphegus",
+      "id": "mr:0312-elphegus-vintoniae",
       "month": 3,
       "day": 12,
       "entry": 8,
@@ -25320,15 +25418,13 @@
         }
       ],
       "date": {
-        "from": 1001,
-        "to": 1100,
-        "circa": true,
+        "year": 951,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0312-fina",
+      "id": "mr:0312-fina-sancti-geminiani",
       "month": 3,
       "day": 12,
       "entry": 9,
@@ -25345,7 +25441,12 @@
           "label": "San Gimignano",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1253,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0312-iustina-francucci-bezzoli",
@@ -25365,7 +25466,12 @@
           "label": "Arezzo",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1319,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0312-hieronymus-gherarducci",
@@ -25493,13 +25599,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 201,
+        "to": 300,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0313-sabinus",
+      "id": "mr:0313-sabinus-hermopoli",
       "month": 3,
       "day": 13,
       "entry": 2,
@@ -25518,13 +25625,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 287,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0313-christina",
+      "id": "mr:0313-christina-persidis",
       "month": 3,
       "day": 13,
       "entry": 3,
@@ -25543,13 +25651,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 559,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0313-pientius",
+      "id": "mr:0313-pientius-pictavorum",
       "month": 3,
       "day": 13,
       "entry": 4,
@@ -25576,7 +25684,7 @@
       }
     },
     {
-      "id": "mr:0313-leander",
+      "id": "mr:0313-leander-hispali",
       "month": 3,
       "day": 13,
       "entry": 5,
@@ -25595,16 +25703,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 600,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0227-leander"
       ]
     },
     {
-      "id": "mr:0313-eldradus",
+      "id": "mr:0313-eldradus-novaliciensis",
       "month": 3,
       "day": 13,
       "entry": 6,
@@ -25621,7 +25729,12 @@
           "label": "Novalesa Abbey",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 844,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0313-rudericus-et-salomon",
@@ -25649,7 +25762,7 @@
       }
     },
     {
-      "id": "mr:0313-ansovinus",
+      "id": "mr:0313-ansovinus-camerini",
       "month": 3,
       "day": 13,
       "entry": 8,
@@ -25668,9 +25781,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 861,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -25691,7 +25804,12 @@
           "label": "Abbey of La Trinità della Cava",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1208,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0313-agnellus-de-pisis",
@@ -25722,11 +25840,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1236,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -25749,18 +25865,16 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1794,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"trafitta con la spada\" (run through with a sword) where the Latin has only \"ferro\" (by the blade); she was guillotined."
       }
     },
     {
-      "id": "mr:0314-alexander",
+      "id": "mr:0314-alexander-pidnae",
       "month": 3,
       "day": 14,
       "entry": 1,
@@ -25777,10 +25891,16 @@
           "label": "Pydna",
           "country": "GR"
         }
-      ]
+      ],
+      "date": {
+        "year": 305,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0314-lazarus",
+      "id": "mr:0314-lazarus-mediolani",
       "month": 3,
       "day": 14,
       "entry": 2,
@@ -25799,16 +25919,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 449,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0211-lazarus"
       ]
     },
     {
-      "id": "mr:0314-leobinus",
+      "id": "mr:0314-leobinus-carnuti",
       "month": 3,
       "day": 14,
       "entry": 3,
@@ -25836,7 +25956,7 @@
       ]
     },
     {
-      "id": "mr:0314-mathildis",
+      "id": "mr:0314-mathildis-quedlinburgi",
       "month": 3,
       "day": 14,
       "entry": 4,
@@ -25855,15 +25975,13 @@
         }
       ],
       "date": {
-        "from": 901,
-        "to": 1000,
-        "circa": true,
+        "year": 968,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0314-paulina",
+      "id": "mr:0314-paulina-fuldensis",
       "month": 3,
       "day": 14,
       "entry": 5,
@@ -25880,7 +25998,12 @@
           "label": "Fulda",
           "country": "DE"
         }
-      ]
+      ],
+      "date": {
+        "year": 1107,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0314-eva-montis-cornelius",
@@ -25911,11 +26034,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1265,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"monaca di clausura nel monastero di San Martino\" (an enclosed nun in the monastery) where the Latin has \"reclúsæ prope cœnóbium Sancti Martíni\" (a recluse near the monastery of Saint Martin)."
@@ -25947,7 +26068,7 @@
       }
     },
     {
-      "id": "mr:0315-menignus",
+      "id": "mr:0315-menignus-parii",
       "month": 3,
       "day": 15,
       "entry": 1,
@@ -25977,7 +26098,7 @@
       }
     },
     {
-      "id": "mr:0315-zacharias",
+      "id": "mr:0315-zacharias-papa",
       "month": 3,
       "day": 15,
       "entry": 2,
@@ -26005,7 +26126,7 @@
       ]
     },
     {
-      "id": "mr:0315-leocritia",
+      "id": "mr:0315-leocritia-cordubae",
       "month": 3,
       "day": 15,
       "entry": 3,
@@ -26030,7 +26151,7 @@
       }
     },
     {
-      "id": "mr:0315-sisebutus",
+      "id": "mr:0315-sisebutus-caradignensis",
       "month": 3,
       "day": 15,
       "entry": 4,
@@ -26056,7 +26177,12 @@
           "label": "Monastery of San Pedro de Cardeña",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1086,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0315-gulielmus-hart",
@@ -26087,11 +26213,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1583,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -26162,7 +26286,12 @@
           "label": "Przemyśl",
           "country": "PL"
         }
-      ]
+      ],
+      "date": {
+        "year": 1948,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0315-artemidis-zatti",
@@ -26223,13 +26352,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 284,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0316-papa",
+      "id": "mr:0316-papa-seleuciae",
       "month": 3,
       "day": 16,
       "entry": 2,
@@ -26263,7 +26392,7 @@
       }
     },
     {
-      "id": "mr:0316-iulianus",
+      "id": "mr:0316-iulianus-anazarbi",
       "month": 3,
       "day": 16,
       "entry": 3,
@@ -26282,13 +26411,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 305,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0316-eusebia",
+      "id": "mr:0316-eusebia-hammaticensis",
       "month": 3,
       "day": 16,
       "entry": 4,
@@ -26314,10 +26444,15 @@
           "label": "Abbaye d'Hamage",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 660,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0316-heribertus",
+      "id": "mr:0316-heribertus-coloniae-agrippinae",
       "month": 3,
       "day": 16,
       "entry": 5,
@@ -26395,11 +26530,9 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
+        "year": 1589,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -26446,7 +26579,7 @@
       }
     },
     {
-      "id": "mr:0317-patricius",
+      "id": "mr:0317-patricius-episcopus",
       "month": 3,
       "day": 17,
       "entry": 1,
@@ -26539,7 +26672,7 @@
       }
     },
     {
-      "id": "mr:0317-agricola",
+      "id": "mr:0317-agricola-cabilloni",
       "month": 3,
       "day": 17,
       "entry": 3,
@@ -26558,13 +26691,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 580,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0317-gertrudis",
+      "id": "mr:0317-gertrudis-nivellae",
       "month": 3,
       "day": 17,
       "entry": 4,
@@ -26589,7 +26722,7 @@
       }
     },
     {
-      "id": "mr:0317-paulus",
+      "id": "mr:0317-paulus-cypri",
       "month": 3,
       "day": 17,
       "entry": 5,
@@ -26614,7 +26747,7 @@
       }
     },
     {
-      "id": "mr:0317-conradus",
+      "id": "mr:0317-conradus-medunei",
       "month": 3,
       "day": 17,
       "entry": 6,
@@ -26644,7 +26777,12 @@
             "PS"
           ]
         }
-      ]
+      ],
+      "date": {
+        "year": 1154,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0317-ioannes-sarkander",
@@ -26726,10 +26864,15 @@
           "label": "Málaga",
           "country": "ES"
         }
-      ]
+      ],
+      "date": {
+        "year": 1905,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0318-cyrillus",
+      "id": "mr:0318-cyrillus-hierosolymitanus",
       "month": 3,
       "day": 18,
       "entry": 1,
@@ -26748,11 +26891,10 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
+        "year": 386,
         "circa": true,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -26760,7 +26902,7 @@
       }
     },
     {
-      "id": "mr:0318-alexander",
+      "id": "mr:0318-alexander-hierosolymorum",
       "month": 3,
       "day": 18,
       "entry": 2,
@@ -26797,12 +26939,13 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "year": 251,
+        "circa": true,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0318-frigdianus",
+      "id": "mr:0318-frigdianus-lucae",
       "month": 3,
       "day": 18,
       "entry": 3,
@@ -26839,13 +26982,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 588,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0318-leobardus",
+      "id": "mr:0318-leobardus-turonum",
       "month": 3,
       "day": 18,
       "entry": 4,
@@ -26873,16 +27016,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 583,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0118-leobardus"
       ]
     },
     {
-      "id": "mr:0318-braulio",
+      "id": "mr:0318-braulio-caesaraugustae",
       "month": 3,
       "day": 18,
       "entry": 5,
@@ -26914,18 +27057,16 @@
         }
       ],
       "date": {
-        "from": 601,
-        "to": 700,
-        "circa": true,
+        "year": 651,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0326-braulio"
       ]
     },
     {
-      "id": "mr:0318-eduardus",
+      "id": "mr:0318-eduardus-warehami",
       "month": 3,
       "day": 18,
       "entry": 6,
@@ -26950,7 +27091,7 @@
       }
     },
     {
-      "id": "mr:0318-anselmus",
+      "id": "mr:0318-anselmus-lucensis",
       "month": 3,
       "day": 18,
       "entry": 7,
@@ -26987,11 +27128,9 @@
         }
       ],
       "date": {
-        "from": 1001,
-        "to": 1100,
-        "circa": true,
+        "year": 1086,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"where he was a vigorous helper\" where the Latin \"cui strénuus fuit adiútor\" means he was a vigorous helper to the pope."
@@ -27054,11 +27193,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1616,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Lancashire\" where the Latin \"Lancástriæ\" is the town of Lancaster."
@@ -27083,12 +27220,17 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1883,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Saint Savior at Vicoigne\" where the Latin has \"Sancti Salvatóris Vicecómitis\" (Saint-Sauveur-le-Vicomte)."
       }
     },
     {
-      "id": "mr:0319-ioseph",
+      "id": "mr:0319-ioseph-sponsus-mariae",
       "month": 3,
       "day": 19,
       "entry": 1,
@@ -27096,14 +27238,14 @@
       "country": "PS",
       "typology": "dies_natalis",
       "date": {
-        "to": 1630,
+        "year": 20,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "unnumbered": true
     },
     {
-      "id": "mr:0319-ioannes",
+      "id": "mr:0319-ioannes-parranensis",
       "month": 3,
       "day": 19,
       "entry": 2,
@@ -27238,7 +27380,12 @@
           "label": "Pavia",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1367,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0319-marcus-de-montegallo",
@@ -27303,11 +27450,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1942,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -27345,7 +27490,7 @@
       }
     },
     {
-      "id": "mr:0320-archippus",
+      "id": "mr:0320-archippus-commilito",
       "month": 3,
       "day": 20,
       "entry": 1,
@@ -27395,7 +27540,7 @@
       }
     },
     {
-      "id": "mr:0320-urbicius",
+      "id": "mr:0320-urbicius-metarum",
       "month": 3,
       "day": 20,
       "entry": 3,
@@ -27415,7 +27560,7 @@
       ]
     },
     {
-      "id": "mr:0320-martinus",
+      "id": "mr:0320-martinus-bracarensis",
       "month": 3,
       "day": 20,
       "entry": 4,
@@ -27459,10 +27604,16 @@
           "label": "Dume",
           "country": "PT"
         }
-      ]
+      ],
+      "date": {
+        "year": 580,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0320-cuthbertus",
+      "id": "mr:0320-cuthbertus-lindisfarnensis",
       "month": 3,
       "day": 20,
       "entry": 5,
@@ -27496,7 +27647,7 @@
       }
     },
     {
-      "id": "mr:0320-vulframnus",
+      "id": "mr:0320-vulframnus-senonensis",
       "month": 3,
       "day": 20,
       "entry": 6,
@@ -27543,7 +27694,7 @@
       }
     },
     {
-      "id": "mr:0320-nicetas",
+      "id": "mr:0320-nicetas-apolloniae",
       "month": 3,
       "day": 20,
       "entry": 7,
@@ -27606,9 +27757,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 1287,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -27666,7 +27817,12 @@
           "label": "Mantua",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1516,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0320-hippolytus-galantini",
@@ -27686,7 +27842,12 @@
           "label": "Florence",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1619,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0320-ioanna-veron",
@@ -27745,11 +27906,9 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1872,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"dove morì abbandonato a se stesso\" (where he died, abandoned) where the Latin says only that he was banished there, \"ab ómnibus derelíctus\" (abandoned by all); he died at Tarragona."
@@ -27774,6 +27933,11 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1912,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"nella Guascogna\" (Gascony, in France) where the Latin has \"in Vascónia Hispániæ\" (the Basque Country of Spain)."
       }
@@ -27808,7 +27972,7 @@
       }
     },
     {
-      "id": "mr:0321-serapion",
+      "id": "mr:0321-serapion-aegypti",
       "month": 3,
       "day": 21,
       "entry": 1,
@@ -27827,9 +27991,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 356,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -27859,7 +28023,7 @@
       }
     },
     {
-      "id": "mr:0321-lupicinus",
+      "id": "mr:0321-lupicinus-iurensis",
       "month": 3,
       "day": 21,
       "entry": 3,
@@ -27887,13 +28051,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 480,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0321-endeus",
+      "id": "mr:0321-endeus-araniensis",
       "month": 3,
       "day": 21,
       "entry": 4,
@@ -27919,10 +28084,16 @@
           "label": "Inis Mór",
           "country": "IE"
         }
-      ]
+      ],
+      "date": {
+        "year": 540,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0321-benedictus",
+      "id": "mr:0321-benedictus-casini",
       "month": 3,
       "day": 21,
       "entry": 5,
@@ -27941,11 +28112,9 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
-        "circa": true,
+        "year": 547,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -27966,10 +28135,16 @@
           "label": "Constantinople",
           "country": "TR"
         }
-      ]
+      ],
+      "date": {
+        "year": 824,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0321-ioannes",
+      "id": "mr:0321-ioannes-valentiae",
       "month": 3,
       "day": 21,
       "entry": 7,
@@ -27996,6 +28171,11 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1146,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Saint-Julien of Valence\" where the Latin \"Iúliæ Valéntiæ\" is simply Valence. Translation error: \"truly ruined\" where the Latin has \"ære dírutos\" (ruined by debt)."
       }
@@ -28043,7 +28223,13 @@
           "label": "Dorchester",
           "country": "GB"
         }
-      ]
+      ],
+      "date": {
+        "from": 1587,
+        "to": 1591,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0321-matthaeus-flathers",
@@ -28074,11 +28260,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1607,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -28125,15 +28309,13 @@
         }
       ],
       "date": {
-        "from": 1801,
-        "to": 1900,
-        "circa": true,
+        "year": 1858,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0322-epaphroditus",
+      "id": "mr:0322-epaphroditus-discipulus",
       "month": 3,
       "day": 22,
       "entry": 1,
@@ -28147,7 +28329,7 @@
       }
     },
     {
-      "id": "mr:0322-paulus",
+      "id": "mr:0322-paulus-narbonis",
       "month": 3,
       "day": 22,
       "entry": 2,
@@ -28166,9 +28348,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 201,
+        "to": 300,
         "basis": "deposition",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Omission: the Latin places the deposition \"extra Urbem\" (outside the city) on the Via Domitia; this is not rendered."
@@ -28200,7 +28383,7 @@
       }
     },
     {
-      "id": "mr:0322-basilius",
+      "id": "mr:0322-basilius-ancyrae",
       "month": 3,
       "day": 22,
       "entry": 4,
@@ -28219,15 +28402,13 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
+        "year": 362,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0322-lea",
+      "id": "mr:0322-lea-romae",
       "month": 3,
       "day": 22,
       "entry": 5,
@@ -28246,8 +28427,8 @@
         }
       ],
       "date": {
-        "to": 1630,
-        "source": "edition"
+        "year": 384,
+        "source": "wikidata"
       }
     },
     {
@@ -28295,11 +28476,9 @@
         }
       ],
       "date": {
-        "from": 1601,
-        "to": 1700,
-        "circa": true,
+        "year": 1606,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -28322,11 +28501,9 @@
         }
       ],
       "date": {
-        "from": 1701,
-        "to": 1800,
-        "circa": true,
+        "year": 1794,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -28411,7 +28588,7 @@
       }
     },
     {
-      "id": "mr:0323-fingar",
+      "id": "mr:0323-fingar-cornubiae",
       "month": 3,
       "day": 23,
       "entry": 2,
@@ -28467,7 +28644,7 @@
       }
     },
     {
-      "id": "mr:0323-gualterius",
+      "id": "mr:0323-gualterius-pontisarae",
       "month": 3,
       "day": 23,
       "entry": 4,
@@ -28485,12 +28662,17 @@
           "country": "FR"
         }
       ],
+      "date": {
+        "year": 1099,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Pont-Sainte-Maxence\" where the Latin has \"Pontísaræ\" (Pontoise)."
       }
     },
     {
-      "id": "mr:0323-otho",
+      "id": "mr:0323-otho-ariani",
       "month": 3,
       "day": 23,
       "entry": 5,
@@ -28507,10 +28689,15 @@
           "label": "Ariano Irpino",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1127,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0323-petrus",
+      "id": "mr:0323-petrus-eugubii",
       "month": 3,
       "day": 23,
       "entry": 6,
@@ -28527,7 +28714,12 @@
           "label": "Gubbio",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1306,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0323-edmundus-sykes",
@@ -28632,7 +28824,12 @@
           "label": "Cemmo",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1882,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0323-rebecca-de-himlaya",
@@ -28662,6 +28859,11 @@
           "country": "LB"
         }
       ],
+      "date": {
+        "year": 1914,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004": "Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one.",
         "martyrologium_romanum_2004_it_IT": "Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). Translation error: \"Congregazione delle Suore Libanesi Maronite\" where the Latin has \"Ordine Libanénsi Sancti Antónii Maronitárum\" (the Lebanese Maronite Order of Saint Anthony)."
@@ -28717,13 +28919,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 306,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0324-secundulus",
+      "id": "mr:0324-secundulus-mauretaniae",
       "month": 3,
       "day": 24,
       "entry": 2,
@@ -28752,7 +28954,7 @@
       }
     },
     {
-      "id": "mr:0324-maccarthemus",
+      "id": "mr:0324-maccarthemus-clocerie",
       "month": 3,
       "day": 24,
       "entry": 3,
@@ -28769,10 +28971,16 @@
           "label": "Clogher",
           "country": "GB"
         }
-      ]
+      ],
+      "date": {
+        "year": 505,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0324-severus",
+      "id": "mr:0324-severus-catanae",
       "month": 3,
       "day": 24,
       "entry": 4,
@@ -28809,10 +29017,15 @@
           "label": "Fabriano",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1290,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0324-catharina",
+      "id": "mr:0324-catharina-suecica",
       "month": 3,
       "day": 24,
       "entry": 6,
@@ -28863,9 +29076,9 @@
         }
       ],
       "date": {
-        "to": 1914,
+        "year": 1381,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0322-catharina-suecica"
@@ -28899,6 +29112,11 @@
           "country": "ES"
         }
       ],
+      "date": {
+        "year": 1801,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Andújar\" where the Latin has \"Arúndæ\" (Ronda)."
       }
@@ -28921,7 +29139,12 @@
           "label": "Pniewite",
           "country": "PL"
         }
-      ]
+      ],
+      "date": {
+        "year": 1935,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0325-annuntiatio-domini",
@@ -28960,14 +29183,12 @@
       "country": "PS",
       "typology": "commemoratio",
       "date": {
-        "from": 1,
-        "to": 100,
-        "circa": true,
-        "source": "estimate"
+        "year": 33,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0325-dula",
+      "id": "mr:0325-dula-nicomediae",
       "month": 3,
       "day": 25,
       "entry": 3,
@@ -28992,7 +29213,7 @@
       }
     },
     {
-      "id": "mr:0325-quirinus",
+      "id": "mr:0325-quirinus-romae",
       "month": 3,
       "day": 25,
       "entry": 4,
@@ -29017,7 +29238,7 @@
       }
     },
     {
-      "id": "mr:0325-matrona",
+      "id": "mr:0325-matrona-thessalonicensis",
       "month": 3,
       "day": 25,
       "entry": 5,
@@ -29034,10 +29255,16 @@
           "label": "Thessaloniki",
           "country": "GR"
         }
-      ]
+      ],
+      "date": {
+        "year": 300,
+        "circa": true,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0325-mona",
+      "id": "mr:0325-mona-mediolani",
       "month": 3,
       "day": 25,
       "entry": 6,
@@ -29057,7 +29284,7 @@
       ]
     },
     {
-      "id": "mr:0325-hermelandus",
+      "id": "mr:0325-hermelandus-fontanellensis",
       "month": 3,
       "day": 25,
       "entry": 7,
@@ -29085,13 +29312,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 720,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0325-nicodemus",
+      "id": "mr:0325-nicodemus-mammulae",
       "month": 3,
       "day": 25,
       "entry": 8,
@@ -29109,12 +29336,17 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 990,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Hierax\" where the Latin \"Hierácium\" is Gerace."
       }
     },
     {
-      "id": "mr:0325-procopius",
+      "id": "mr:0325-procopius-sazavae",
       "month": 3,
       "day": 25,
       "entry": 9,
@@ -29139,7 +29371,7 @@
       }
     },
     {
-      "id": "mr:0325-everardus",
+      "id": "mr:0325-everardus-probatopolis",
       "month": 3,
       "day": 25,
       "entry": 10,
@@ -29184,12 +29416,17 @@
           "country": "CH"
         }
       ],
+      "date": {
+        "year": 1078,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Petershausen\" where the Latin has \"Probatópoli\" (Schaffhausen)."
       }
     },
     {
-      "id": "mr:0325-thomas",
+      "id": "mr:0325-thomas-costacciarii",
       "month": 3,
       "day": 25,
       "entry": 11,
@@ -29206,7 +29443,12 @@
           "label": "Costacciaro",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1337,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0325-margarita-clitherow",
@@ -29309,7 +29551,12 @@
           "label": "Rome",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1915,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0325-michaelina-hordashevska",
@@ -29329,7 +29576,12 @@
           "label": "Sheptytskyi",
           "country": "UA"
         }
-      ]
+      ],
+      "date": {
+        "year": 1919,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0325-aemilianus-kovc",
@@ -29385,15 +29637,13 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1945,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0326-castulus",
+      "id": "mr:0326-castulus-romae",
       "month": 3,
       "day": 26,
       "entry": 1,
@@ -29412,9 +29662,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 286,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -29437,9 +29688,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 304,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -29468,16 +29719,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 304,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"Srijem ... nell’odierna Croazia\" where the Latin \"Sírmii\" is the city of Sirmium (Sremska Mitrovica, in Serbia)."
       }
     },
     {
-      "id": "mr:0326-eutychius",
+      "id": "mr:0326-eutychius-alexandrinus",
       "month": 3,
       "day": 26,
       "entry": 4,
@@ -29506,7 +29757,7 @@
       }
     },
     {
-      "id": "mr:0326-petrus",
+      "id": "mr:0326-petrus-sebastes",
       "month": 3,
       "day": 26,
       "entry": 5,
@@ -29525,15 +29776,14 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
+        "from": 390,
+        "to": 399,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0326-bercharius",
+      "id": "mr:0326-bercharius-dervensis",
       "month": 3,
       "day": 26,
       "entry": 6,
@@ -29561,9 +29811,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 696,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Campania\" where the Latin \"Campánia Gálliæ\" is Champagne."
@@ -29592,16 +29842,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 685,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0325-barontius-et-desiderius"
       ]
     },
     {
-      "id": "mr:0326-liudgerus",
+      "id": "mr:0326-liudgerus-monasteriensis",
       "month": 3,
       "day": 26,
       "entry": 8,
@@ -29694,10 +29944,15 @@
           "label": "Catania",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1908,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0327-rupertus",
+      "id": "mr:0327-rupertus-salisburgi",
       "month": 3,
       "day": 27,
       "entry": 1,
@@ -29785,11 +30040,9 @@
         }
       ],
       "date": {
-        "from": 1201,
-        "to": 1300,
-        "circa": true,
+        "year": 1233,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -29810,7 +30063,12 @@
           "label": "Quarona",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1383,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0327-franciscus-faa",
@@ -29830,10 +30088,15 @@
           "label": "Turin",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1888,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0328-castor",
+      "id": "mr:0328-castor-tarsi",
       "month": 3,
       "day": 28,
       "entry": 1,
@@ -29885,7 +30148,7 @@
       }
     },
     {
-      "id": "mr:0328-cyrillus",
+      "id": "mr:0328-cyrillus-heliopoli",
       "month": 3,
       "day": 28,
       "entry": 3,
@@ -29915,7 +30178,7 @@
       ]
     },
     {
-      "id": "mr:0328-proterius",
+      "id": "mr:0328-proterius-alexandriae",
       "month": 3,
       "day": 28,
       "entry": 4,
@@ -29934,15 +30197,13 @@
         }
       ],
       "date": {
-        "from": 401,
-        "to": 500,
-        "circa": true,
+        "year": 457,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0328-gunthramnus",
+      "id": "mr:0328-gunthramnus-cabilloni",
       "month": 3,
       "day": 28,
       "entry": 5,
@@ -29961,15 +30222,13 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
-        "circa": true,
+        "year": 593,
         "basis": "deposition",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0328-hilarion",
+      "id": "mr:0328-hilarion-pelecetensis",
       "month": 3,
       "day": 28,
       "entry": 6,
@@ -30044,7 +30303,7 @@
       ]
     },
     {
-      "id": "mr:0328-conus",
+      "id": "mr:0328-conus-nasi",
       "month": 3,
       "day": 28,
       "entry": 8,
@@ -30068,6 +30327,11 @@
           "source": "curated"
         }
       ],
+      "date": {
+        "year": 1236,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Conon\" where the Latin has \"Coni\" (Conus, Cono)."
       }
@@ -30090,7 +30354,12 @@
           "label": "Monticiano",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1311,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0328-ioanna-maria-de-maille",
@@ -30189,15 +30458,13 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1924,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0329-eustasius",
+      "id": "mr:0329-eustasius-neapoli",
       "month": 3,
       "day": 29,
       "entry": 1,
@@ -30217,7 +30484,7 @@
       ]
     },
     {
-      "id": "mr:0329-marcus",
+      "id": "mr:0329-marcus-arethusae",
       "month": 3,
       "day": 29,
       "entry": 2,
@@ -30236,10 +30503,8 @@
         }
       ],
       "date": {
-        "from": 301,
-        "to": 400,
-        "circa": true,
-        "source": "estimate"
+        "year": 364,
+        "source": "wikidata"
       }
     },
     {
@@ -30262,14 +30527,12 @@
         }
       ],
       "date": {
-        "from": 401,
-        "to": 500,
-        "circa": true,
-        "source": "estimate"
+        "year": 463,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0329-bertholdus",
+      "id": "mr:0329-bertholdus-carmelo",
       "month": 3,
       "day": 29,
       "entry": 4,
@@ -30286,7 +30549,12 @@
           "label": "Mount Carmel",
           "country": "IL"
         }
-      ]
+      ],
+      "date": {
+        "year": 1198,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0329-gulielmus-tempier",
@@ -30314,7 +30582,7 @@
       }
     },
     {
-      "id": "mr:0329-ludolphus",
+      "id": "mr:0329-ludolphus-raceburgensis",
       "month": 3,
       "day": 29,
       "entry": 6,
@@ -30340,7 +30608,12 @@
           "label": "Ratzeburg",
           "country": "DE"
         }
-      ]
+      ],
+      "date": {
+        "year": 1250,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0329-ioannes-hambley",
@@ -30362,14 +30635,12 @@
         }
       ],
       "date": {
-        "from": 1501,
-        "to": 1600,
-        "circa": true,
-        "source": "estimate"
+        "year": 1587,
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0330-secundus",
+      "id": "mr:0330-secundus-astae-pompeiae",
       "month": 3,
       "day": 30,
       "entry": 1,
@@ -30388,16 +30659,16 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 119,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "same_eulogy": [
         "mr:0329-secundus"
       ]
     },
     {
-      "id": "mr:0330-domninus",
+      "id": "mr:0330-domninus-thessalonicensis",
       "month": 3,
       "day": 30,
       "entry": 2,
@@ -30416,13 +30687,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 301,
+        "to": 400,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0330-regulus",
+      "id": "mr:0330-regulus-augustomagi",
       "month": 3,
       "day": 30,
       "entry": 3,
@@ -30441,9 +30713,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 260,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"Autun\" where the Latin has \"Augustómagi\" (Senlis)."
@@ -30476,7 +30748,7 @@
       }
     },
     {
-      "id": "mr:0330-ioannes",
+      "id": "mr:0330-ioannes-climacus",
       "month": 3,
       "day": 30,
       "entry": 5,
@@ -30495,13 +30767,14 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 649,
+        "circa": true,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0330-zosimus",
+      "id": "mr:0330-zosimus-syracusis",
       "month": 3,
       "day": 30,
       "entry": 6,
@@ -30520,13 +30793,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 662,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0330-osburga",
+      "id": "mr:0330-osburga-conventriae",
       "month": 3,
       "day": 30,
       "entry": 7,
@@ -30546,7 +30819,7 @@
       ]
     },
     {
-      "id": "mr:0330-clinius",
+      "id": "mr:0330-clinius-aquini",
       "month": 3,
       "day": 30,
       "entry": 8,
@@ -30618,7 +30891,7 @@
       }
     },
     {
-      "id": "mr:0330-amadeus",
+      "id": "mr:0330-amadeus-vercellarum",
       "month": 3,
       "day": 30,
       "entry": 10,
@@ -30644,7 +30917,12 @@
           "label": "Savoy",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1472,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0330-antonius-daveluy-et-socii",
@@ -30702,6 +30980,11 @@
           "country": "IT"
         }
       ],
+      "date": {
+        "year": 1885,
+        "basis": "death",
+        "source": "wikidata"
+      },
       "note": "Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014."
     },
     {
@@ -30749,11 +31032,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1927,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       }
     },
     {
@@ -30791,7 +31072,7 @@
       }
     },
     {
-      "id": "mr:0331-beniamin",
+      "id": "mr:0331-beniamin-argol",
       "month": 3,
       "day": 31,
       "entry": 1,
@@ -30807,13 +31088,13 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 424,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
-      "id": "mr:0331-balbina",
+      "id": "mr:0331-balbina-romae",
       "month": 3,
       "day": 31,
       "entry": 2,
@@ -30846,7 +31127,7 @@
       }
     },
     {
-      "id": "mr:0331-agilolphus",
+      "id": "mr:0331-agilolphus-coloniae-agrippinae",
       "month": 3,
       "day": 31,
       "entry": 3,
@@ -30863,10 +31144,15 @@
           "label": "Cologne",
           "country": "DE"
         }
-      ]
+      ],
+      "date": {
+        "year": 751,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0331-guido",
+      "id": "mr:0331-guido-pomposae",
       "month": 3,
       "day": 31,
       "entry": 4,
@@ -30892,10 +31178,15 @@
           "label": "Abbazia di Pomposa",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1046,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
-      "id": "mr:0331-ioanna",
+      "id": "mr:0331-ioanna-tolosae",
       "month": 3,
       "day": 31,
       "entry": 5,
@@ -30912,7 +31203,13 @@
           "label": "Toulouse",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "from": 1401,
+        "to": 1500,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0331-bonaventura-de-foro-livii",
@@ -30950,7 +31247,12 @@
           "label": "Italy",
           "country": "IT"
         }
-      ]
+      ],
+      "date": {
+        "year": 1491,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0331-christophorus-robinson",
@@ -30972,7 +31274,8 @@
         }
       ],
       "date": {
-        "year": 1594,
+        "from": 1594,
+        "to": 1598,
         "source": "wikidata"
       }
     },
@@ -31005,11 +31308,9 @@
         }
       ],
       "date": {
-        "from": 1901,
-        "to": 2000,
-        "circa": true,
+        "year": 1945,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"asphyxiating steam\" where the Latin \"mortíferi vapóris\" means deadly gas."
@@ -135615,7 +135916,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:0318-leobardus"
+        "mr:0318-leobardus-turonum"
       ]
     },
     {
@@ -136135,7 +136436,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:0311-pionius"
+        "mr:0311-pionius-smyrnae"
       ]
     },
     {
@@ -136467,7 +136768,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0314-lazarus"
+        "mr:0314-lazarus-mediolani"
       ]
     },
     {
@@ -137238,7 +137539,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES",
       "same_eulogy": [
-        "mr:0313-leander"
+        "mr:0313-leander-hispali"
       ]
     },
     {
@@ -137391,7 +137692,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT",
       "same_eulogy": [
-        "mr:0310-simplicius"
+        "mr:0310-simplicius-papa"
       ]
     },
     {
@@ -137412,7 +137713,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0305-lucius"
+        "mr:0305-lucius-i"
       ]
     },
     {
@@ -137496,7 +137797,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:0305-conon"
+        "mr:0305-conon-pamphyliae"
       ]
     },
     {
@@ -137508,7 +137809,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "TR",
       "same_eulogy": [
-        "mr:0308-theophilactus"
+        "mr:0308-theophilactus-nicomediae"
       ]
     },
     {
@@ -137547,7 +137848,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "ES",
       "same_eulogy": [
-        "mr:0306-iulianus"
+        "mr:0306-iulianus-toleti"
       ]
     },
     {
@@ -138030,7 +138331,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "IT",
       "same_eulogy": [
-        "mr:0315-zacharias"
+        "mr:0315-zacharias-papa"
       ]
     },
     {
@@ -138075,7 +138376,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "SE",
       "same_eulogy": [
-        "mr:0324-catharina"
+        "mr:0324-catharina-suecica"
       ]
     },
     {
@@ -138285,7 +138586,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "ES",
       "same_eulogy": [
-        "mr:0318-braulio"
+        "mr:0318-braulio-caesaraugustae"
       ]
     },
     {
@@ -138423,7 +138724,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "IT",
       "same_eulogy": [
-        "mr:0330-secundus"
+        "mr:0330-secundus-astae-pompeiae"
       ]
     },
     {
@@ -138435,7 +138736,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "LB",
       "same_eulogy": [
-        "mr:0328-cyrillus"
+        "mr:0328-cyrillus-heliopoli"
       ]
     },
     {
@@ -141789,7 +142090,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": null,
       "same_eulogy": [
-        "mr:0309-bruno"
+        "mr:0309-bruno-querfurtensis"
       ]
     },
     {
@@ -145838,7 +146139,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:0314-leobinus"
+        "mr:0314-leobinus-carnuti"
       ]
     },
     {
@@ -147225,7 +147526,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:0326-bercharius"
+        "mr:0326-bercharius-dervensis"
       ]
     },
     {
@@ -150460,7 +150761,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": "TR",
       "same_eulogy": [
-        "mr:0302-troadius"
+        "mr:0302-troadius-neocaesareae"
       ]
     },
     {

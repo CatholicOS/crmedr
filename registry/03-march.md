@@ -5,31 +5,31 @@
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | 1 | 1 | `mr:0301-felix-iii` |  | IT | dies_natalis | same as `mr:0225-felix-iii` |  |
-| 1 | 2 | `mr:0301-albinus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Gallia Lugdunensis Lugdunum" where the Latin has only "in Gállia Lugdunénsi" (in Gallia Lugdunensis). |
-| 1 | 3 | `mr:0301-david` |  | GB | dies_natalis |  |  |
-| 1 | 4 | `mr:0301-siviardus` |  | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:0301-suitbertus` |  | DE | dies_natalis |  |  |
-| 1 | 6 | `mr:0301-leo` |  | FR | dies_natalis |  |  |
+| 1 | 2 | `mr:0301-albinus-andegavi` |  | FR | dies_natalis |  | 2004 English: Translation error: "Gallia Lugdunensis Lugdunum" where the Latin has only "in Gállia Lugdunénsi" (in Gallia Lugdunensis). |
+| 1 | 3 | `mr:0301-david-meneviae` |  | GB | dies_natalis |  |  |
+| 1 | 4 | `mr:0301-siviardus-anninsulensis` |  | FR | dies_natalis |  |  |
+| 1 | 5 | `mr:0301-suitbertus-werdae` |  | DE | dies_natalis |  |  |
+| 1 | 6 | `mr:0301-leo-vasconiae` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:0301-leo-lucas` | * | IT | dies_natalis |  | The monastery of Mula took its name from Monte La Mula (Q31610309, 1,935 m) in the Orsomarso mountains (Q1114894) of northern Calabria: Italian Wikipedia's life of Leoluca says he lived "nel monastero presso il monte Mula" (in the monastery by Mount Mula) under the hegumen Christopher before they moved to the Mercurion (Q3855082). The monastery's own site is lost; the place is mapped at the mountain. 2004 English: Translation error: "Leo of Lucca" where the Latin has "Leónis Lucæ" (Leo Luca, known as Leoluca). |
-| 1 | 8 | `mr:0301-rudesindus` | * | ES | dies_natalis |  |  |
+| 1 | 8 | `mr:0301-rudesindus-dumiensis` | * | ES | dies_natalis |  |  |
 | 1 | 9 | `mr:0301-christophorus-de-mediolano` | * | IT | commemoratio |  |  |
 | 1 | 10 | `mr:0301-ioanna-maria-bonomo` | * | IT | dies_natalis |  |  |
 | 1 | 11 | `mr:0301-agnes-cao-kuiying` |  | CN | dies_natalis |  |  |
-| 2 | 1 | `mr:0302-troadius` |  | TR | dies_natalis | same as `mr:1228-troadius` |  |
-| 2 | 2 | `mr:0302-ceadda` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "dell’Anglia meridionale" (southern Anglia) where the Latin has "Mediterraneórum Anglórum" (the Middle Angles). |
+| 2 | 1 | `mr:0302-troadius-neocaesareae` |  | TR | dies_natalis | same as `mr:1228-troadius` |  |
+| 2 | 2 | `mr:0302-ceadda-lichfeldiae` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "dell’Anglia meridionale" (southern Anglia) where the Latin has "Mediterraneórum Anglórum" (the Middle Angles). |
 | 2 | 3 | `mr:0302-lucas-casali-de-nicosia` | * | IT | dies_natalis |  |  |
-| 2 | 4 | `mr:0302-agnes` |  | CZ | dies_natalis |  | 2004 English: Translation error: "rebuilt by herself" where the Latin has "ab ipsa ædificáto" (built by her). |
+| 2 | 4 | `mr:0302-agnes-pragae` |  | CZ | dies_natalis |  | 2004 English: Translation error: "rebuilt by herself" where the Latin has "ab ipsa ædificáto" (built by her). |
 | 2 | 5 | `mr:0302-carolus-bonus` | * | BE | dies_natalis |  |  |
 | 2 | 6 | `mr:0302-angela-a-cruce` |  | ES | dies_natalis |  | 2004 Italian: Translation omission: the title "vergine" (Latin "vírginis") is missing after the name. 2004 English: Translation error: the title "virgin" ("vírginis") is omitted. |
 | 3 | 1 | `mr:0303-marinus-et-asterius` |  | IL | dies_natalis |  |  |
 | 3 | 2 | `mr:0303-emetherius-et-cheledonius` |  | ES | dies_natalis |  |  |
 | 3 | 3 | `mr:0303-cleonicus-et-eutropius` |  | TR | dies_natalis |  |  |
-| 3 | 4 | `mr:0303-titianus` |  | IT | dies_natalis |  |  |
-| 3 | 5 | `mr:0303-winwaloeus` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Nella Cornovaglia in Inghilterra" (Cornwall in England) where the Latin has "In Cornúbia Armóricæ" (Cornouaille in Brittany, where Landévennec lies). |
-| 3 | 6 | `mr:0303-arthellaidis` | * | IT | dies_natalis |  |  |
-| 3 | 7 | `mr:0303-anselmus` | * | IT | dies_natalis |  |  |
-| 3 | 8 | `mr:0303-cunegundis` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "facendo di Cristo la sua eredità" (making Christ her inheritance) where the Latin has "Christum sibi herédem fáciens" (making Christ her heir). |
-| 3 | 9 | `mr:0303-fridericus` | * | NL | dies_natalis |  |  |
+| 3 | 4 | `mr:0303-titianus-brixiae` |  | IT | dies_natalis |  |  |
+| 3 | 5 | `mr:0303-winwaloeus-landevenecensis` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Nella Cornovaglia in Inghilterra" (Cornwall in England) where the Latin has "In Cornúbia Armóricæ" (Cornouaille in Brittany, where Landévennec lies). |
+| 3 | 6 | `mr:0303-arthellaidis-beneventi` | * | IT | dies_natalis |  |  |
+| 3 | 7 | `mr:0303-anselmus-nonantulae` | * | IT | dies_natalis |  |  |
+| 3 | 8 | `mr:0303-cunegundis-confugiae` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "facendo di Cristo la sua eredità" (making Christ her inheritance) where the Latin has "Christum sibi herédem fáciens" (making Christ her heir). |
+| 3 | 9 | `mr:0303-fridericus-frisiae` | * | NL | dies_natalis |  |  |
 | 3 | 10 | `mr:0303-petrus-geremia` | * | IT | dies_natalis |  |  |
 | 3 | 11 | `mr:0303-iacobinus-de-canepacci` | * | IT | dies_natalis |  |  |
 | 3 | 12 | `mr:0303-liberatus-weiss-et-socii` | * | ET | dies_natalis |  |  |
@@ -37,46 +37,46 @@
 | 3 | 14 | `mr:0303-ignatia-verzeri` |  | IT | dies_natalis |  |  |
 | 3 | 15 | `mr:0303-ioannes-scalvinoni` | * | IT | dies_natalis |  |  |
 | 3 | 16 | `mr:0303-catharina-drexel` |  | US | dies_natalis |  |  |
-| 4 | (1) | `mr:0304-casimirus` |  | BY | dies_natalis |  |  |
+| 4 | (1) | `mr:0304-casimirus-grodnae` |  | BY | dies_natalis |  |  |
 | 4 | 2 | `mr:0304-photius-et-socii` |  | TR | dies_natalis |  |  |
-| 4 | 3 | `mr:0304-basinus` | * | DE | dies_natalis |  |  |
-| 4 | 4 | `mr:0304-appianus` | * | IT | dies_natalis |  | The monastery of Pavia (Q6259) was San Pietro in Ciel d'Oro (Q3860504). A. M. Zimmermann's life of Appian (Bibliotheca Sanctorum, on santiebeati.it) says he "fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt. |
-| 4 | 5 | `mr:0304-petrus` | * | IT | dies_natalis |  |  |
-| 4 | 6 | `mr:0304-humbertus` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "terzo conte di Savoia" (the third count of Savoy) where the Latin has "cómitis Sabáudiæ Tértii" (Humbert III, Count of Savoy). |
+| 4 | 3 | `mr:0304-basinus-trevirorum` | * | DE | dies_natalis |  |  |
+| 4 | 4 | `mr:0304-appianus-papiensis` | * | IT | dies_natalis |  | The monastery of Pavia (Q6259) was San Pietro in Ciel d'Oro (Q3860504). A. M. Zimmermann's life of Appian (Bibliotheca Sanctorum, on santiebeati.it) says he "fu monaco a Pavia nel monastero di San Pietro in Ciel d'Oro" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt. |
+| 4 | 5 | `mr:0304-petrus-policastrensis` | * | IT | dies_natalis |  |  |
+| 4 | 6 | `mr:0304-humbertus-camberii` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "terzo conte di Savoia" (the third count of Savoy) where the Latin has "cómitis Sabáudiæ Tértii" (Humbert III, Count of Savoy). |
 | 4 | 7 | `mr:0304-christophorus-bales-et-socii` | * | GB | dies_natalis |  |  |
 | 4 | 8 | `mr:0304-eulalia-viel` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Savior at Vico-Comitatus" where the Latin has "Sancti Salvatóris Vicecómitis" (Saint-Sauveur-le-Vicomte). Translation error: "stood out in the Congregation" where the Latin has "in Congregatióne ... regénda" (in governing the Congregation). |
 | 4 | 9 | `mr:0304-ioannes-antonius-farina` | * | IT | dies_natalis |  | Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 4 | 10 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | * | BY | dies_natalis |  |  |
-| 5 | 1 | `mr:0305-theophilus` |  | PS | commemoratio |  |  |
-| 5 | 2 | `mr:0305-conon` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
-| 5 | 3 | `mr:0305-lucius` |  | IT | depositio | same as `mr:0304-lucius-i` |  |
-| 5 | 4 | `mr:0305-phoca` |  | TR | dies_natalis |  |  |
-| 5 | 5 | `mr:0305-hadrianus` |  | IL | dies_natalis |  |  |
-| 5 | 6 | `mr:0305-gerasimus` |  | PS | dies_natalis |  |  |
-| 5 | 7 | `mr:0305-kieranus` | * | IE | dies_natalis |  |  |
-| 5 | 8 | `mr:0305-virgilius` | * | FR | dies_natalis |  |  |
+| 5 | 1 | `mr:0305-theophilus-caesariensis` |  | PS | commemoratio |  |  |
+| 5 | 2 | `mr:0305-conon-pamphyliae` |  | TR | dies_natalis | same as `mr:0306-conon` |  |
+| 5 | 3 | `mr:0305-lucius-i` |  | IT | depositio | same as `mr:0304-lucius-i` |  |
+| 5 | 4 | `mr:0305-phoca-sinopes` |  | TR | dies_natalis |  |  |
+| 5 | 5 | `mr:0305-hadrianus-caesareae` |  | IL | dies_natalis |  |  |
+| 5 | 6 | `mr:0305-gerasimus-iordanis` |  | PS | dies_natalis |  |  |
+| 5 | 7 | `mr:0305-kieranus-sagiriae` | * | IE | dies_natalis |  |  |
+| 5 | 8 | `mr:0305-virgilius-arelatis` | * | FR | dies_natalis |  |  |
 | 5 | 9 | `mr:0305-christophorus-macassoli` | * | IT | dies_natalis |  |  |
 | 5 | 10 | `mr:0305-ioannes-kostistik` | * | IT | dies_natalis |  |  |
 | 5 | 11 | `mr:0305-carolus-caietanus-calosirto` |  | IT | dies_natalis |  |  |
-| 6 | 1 | `mr:0306-marcianus` |  | IT | dies_natalis |  |  |
-| 6 | 2 | `mr:0306-victorinus` |  | TR | dies_natalis |  |  |
-| 6 | 3 | `mr:0306-quiriacus` |  | DE | dies_natalis |  | 2004 English: Translation error: "Belgic France" where the Latin has "Gállia Bélgica" (Belgic Gaul). |
-| 6 | 4 | `mr:0306-evagrius` |  | TR | commemoratio |  |  |
-| 6 | 5 | `mr:0306-iulianus` |  | ES | dies_natalis | same as `mr:0308-iulianus` |  |
-| 6 | 6 | `mr:0306-fridolinus` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "due monasteri" (two monasteries) where the Latin has "duplex monastérium" (a double monastery). |
-| 6 | 7 | `mr:0306-chrodegangus` |  | FR | dies_natalis |  |  |
+| 6 | 1 | `mr:0306-marcianus-derthonae` |  | IT | dies_natalis |  |  |
+| 6 | 2 | `mr:0306-victorinus-nicomediae` |  | TR | dies_natalis |  |  |
+| 6 | 3 | `mr:0306-quiriacus-trevirorum` |  | DE | dies_natalis |  | 2004 English: Translation error: "Belgic France" where the Latin has "Gállia Bélgica" (Belgic Gaul). |
+| 6 | 4 | `mr:0306-evagrius-constantinopolitanus` |  | TR | commemoratio |  |  |
+| 6 | 5 | `mr:0306-iulianus-toleti` |  | ES | dies_natalis | same as `mr:0308-iulianus` |  |
+| 6 | 6 | `mr:0306-fridolinus-saconii` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "due monasteri" (two monasteries) where the Latin has "duplex monastérium" (a double monastery). |
+| 6 | 7 | `mr:0306-chrodegangus-metarum` |  | FR | dies_natalis |  |  |
 | 6 | 8 | `mr:0306-quadraginta-duo-martyres-syriae` |  | SY | dies_natalis |  |  |
-| 6 | 9 | `mr:0306-ollegarius` | * | ES | dies_natalis |  |  |
-| 6 | 10 | `mr:0306-rosa` | * | IT | dies_natalis |  |  |
+| 6 | 9 | `mr:0306-ollegarius-tarraconensis` | * | ES | dies_natalis |  |  |
+| 6 | 10 | `mr:0306-rosa-viterbii` | * | IT | dies_natalis |  |  |
 | 6 | 11 | `mr:0306-coleta-boylet` |  | BE | dies_natalis |  |  |
 | 7 | (1) | `mr:0307-perpetua-et-felicitas` |  | TN | dies_natalis | same as `mr:0306-perpetua-et-felicitas` | 2004 Italian: Translation error: "altre giovani catecumene" (other young women catechumens) where the Latin has "áliis cum adulescéntibus catechúmenis" (with other young catechumens), who included men. Translation error: "sua schiava" (her slave, i.e. Perpetua's) where the Latin has only "serva" (a slave). |
 | 7 | 2 | `mr:0307-satyrus-et-socii` |  | TN | dies_natalis |  |  |
-| 7 | 3 | `mr:0307-eubulius` |  | IL | dies_natalis |  |  |
+| 7 | 3 | `mr:0307-eubulius-caesareae` |  | IL | dies_natalis |  |  |
 | 7 | 4 | `mr:0307-basilius-et-socii` |  | UA | dies_natalis | same as `mr:0304-basilius-et-socii` | 2004 Italian: Translation error: "in Grecia" (in Greece) for "Chersonésum", which is Cherson in the Crimea. |
 | 7 | 5 | `mr:0307-paulus-simplex` |  | EG | dies_natalis |  |  |
-| 7 | 6 | `mr:0307-gaudiosus` |  | IT | dies_natalis |  |  |
+| 7 | 6 | `mr:0307-gaudiosus-brixiae` |  | IT | dies_natalis |  |  |
 | 7 | 7 | `mr:0307-ardo-smaragdus` | * | FR | dies_natalis |  |  |
-| 7 | 8 | `mr:0307-paulus` |  | TR | dies_natalis |  |  |
+| 7 | 8 | `mr:0307-paulus-prusae` |  | TR | dies_natalis |  |  |
 | 7 | 9 | `mr:0307-thomas-de-aquino` |  | IT | dies_natalis |  |  |
 | 7 | 10 | `mr:0307-ioannes-larke-et-ioannes-ireland` | * | GB | dies_natalis |  |  |
 | 7 | 11 | `mr:0307-teresia-margarita-redi` |  | IT | dies_natalis |  |  |
@@ -84,119 +84,119 @@
 | 7 | 13 | `mr:0307-simeon-berneux-et-socii` |  | KR | dies_natalis |  |  |
 | 7 | 14 | `mr:0307-leonida-fedorov` | * | RU | dies_natalis |  |  |
 | 8 | (1) | `mr:0308-ioannes-de-deo` |  | ES | dies_natalis |  | 2004 English: Translation error: "rebuilt by himself" where the Latin has "a se ædificáto" (built by him). |
-| 8 | 2 | `mr:0308-pontius` |  | TN | commemoratio |  |  |
+| 8 | 2 | `mr:0308-pontius-carthaginensis` |  | TN | commemoratio |  |  |
 | 8 | 3 | `mr:0308-apollonius-et-philemon` |  | EG | dies_natalis |  |  |
-| 8 | 4 | `mr:0308-provinus` | * | IT | dies_natalis |  |  |
-| 8 | 5 | `mr:0308-senanus` | * | IE | dies_natalis |  |  |
-| 8 | 6 | `mr:0308-felix` |  | GB | dies_natalis |  |  |
-| 8 | 7 | `mr:0308-theophilactus` |  | TR | dies_natalis | same as `mr:0307-theophilactus` |  |
-| 8 | 8 | `mr:0308-humfridus` | * | FR | dies_natalis |  | 2004 English: Translation error: "At Merville" where the Latin has "Apud Mórinos" (among the Morini, the territory of Thérouanne). |
-| 8 | 9 | `mr:0308-litiphridus` | * | IT | dies_natalis |  |  |
-| 8 | 10 | `mr:0308-duthacus` | * | GB | depositio |  |  |
-| 8 | 11 | `mr:0308-veremundus` | * | ES | dies_natalis |  |  |
-| 8 | 12 | `mr:0308-stephanus` | * | FR | dies_natalis |  |  |
+| 8 | 4 | `mr:0308-provinus-comi` | * | IT | dies_natalis |  |  |
+| 8 | 5 | `mr:0308-senanus-cathensis` | * | IE | dies_natalis |  |  |
+| 8 | 6 | `mr:0308-felix-dumnoci` |  | GB | dies_natalis |  |  |
+| 8 | 7 | `mr:0308-theophilactus-nicomediae` |  | TR | dies_natalis | same as `mr:0307-theophilactus` |  |
+| 8 | 8 | `mr:0308-humfridus-taruannensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "At Merville" where the Latin has "Apud Mórinos" (among the Morini, the territory of Thérouanne). |
+| 8 | 9 | `mr:0308-litiphridus-papiae` | * | IT | dies_natalis |  |  |
+| 8 | 10 | `mr:0308-duthacus-rossensis` | * | GB | depositio |  |  |
+| 8 | 11 | `mr:0308-veremundus-hyrachensis` | * | ES | dies_natalis |  |  |
+| 8 | 12 | `mr:0308-stephanus-obazinae` | * | FR | dies_natalis |  |  |
 | 8 | 13 | `mr:0308-vincentius-kadlubek` | * | PL | dies_natalis |  |  |
 | 8 | 14 | `mr:0308-faustinus-miguez` | * | ES | dies_natalis |  | Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017. |
-| 9 | (1) | `mr:0309-francisca` |  | IT | dies_natalis |  | 2004 English: Translation error: "among the offerings" where the Latin has "inter oblátas" (among the Oblates). |
+| 9 | (1) | `mr:0309-francisca-romae` |  | IT | dies_natalis |  | 2004 English: Translation error: "among the offerings" where the Latin has "inter oblátas" (among the Oblates). |
 | 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis | same as `mr:0310-quadraginta-milites-sebastes` | 2004 English: Translation error: "not for blood but for faith ... suffered" where the Latin has "non sánguinis sed fídei ... sócii" (companions not of blood but of faith). |
-| 9 | 3 | `mr:0309-pacianus` |  | ES | dies_natalis |  | 2004 English: Translation error: "truly Catholic by nature" where the Latin has "cathólicum vero cognómen" (but Catholic his surname). |
+| 9 | 3 | `mr:0309-pacianus-barcinonis` |  | ES | dies_natalis |  | 2004 English: Translation error: "truly Catholic by nature" where the Latin has "cathólicum vero cognómen" (but Catholic his surname). |
 | 9 | 4 | `mr:0309-vitalis-de-castronovo` | * | IT | dies_natalis |  |  |
-| 9 | 5 | `mr:0309-bruno` |  | CZ | dies_natalis | same as `mr:0619-bonifatius` |  |
-| 9 | 6 | `mr:0309-catharina` |  | IT | dies_natalis |  | 2004 English: Translation error: "humble devotion" where the Latin has "pæniténtiæ humilitatísque cursu" (course of penance and humility). |
+| 9 | 5 | `mr:0309-bruno-querfurtensis` |  | CZ | dies_natalis | same as `mr:0619-bonifatius` |  |
+| 9 | 6 | `mr:0309-catharina-bononiae` |  | IT | dies_natalis |  | 2004 English: Translation error: "humble devotion" where the Latin has "pæniténtiæ humilitatísque cursu" (course of penance and humility). |
 | 9 | 7 | `mr:0309-dominicus-savio` |  | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un` |  | KR | dies_natalis |  |  |
 | 10 | 1 | `mr:0310-caius-et-alexander` |  | TR | commemoratio |  | 2004 Italian: Translation error: "A Hisarlik" for "Apaméæ" (Apamea in Phrygia, modern Dinar); Hisarlik is the site of Troy. |
-| 10 | 2 | `mr:0310-victor` |  | TN | commemoratio |  |  |
-| 10 | 3 | `mr:0310-macarius` |  | PS | commemoratio |  |  |
-| 10 | 4 | `mr:0310-simplicius` |  | IT | dies_natalis | same as `mr:0302-simplicius` |  |
-| 10 | 5 | `mr:0310-droctoveus` |  | FR | dies_natalis |  |  |
-| 10 | 6 | `mr:0310-attala` |  | IT | dies_natalis |  |  |
+| 10 | 2 | `mr:0310-victor-africae` |  | TN | commemoratio |  |  |
+| 10 | 3 | `mr:0310-macarius-hierosolymitanus` |  | PS | commemoratio |  |  |
+| 10 | 4 | `mr:0310-simplicius-papa` |  | IT | dies_natalis | same as `mr:0302-simplicius` |  |
+| 10 | 5 | `mr:0310-droctoveus-parisiorum` |  | FR | dies_natalis |  |  |
+| 10 | 6 | `mr:0310-attala-bobiensis` |  | IT | dies_natalis |  |  |
 | 10 | 7 | `mr:0310-ioannes-ogilvie` |  | GB | dies_natalis |  |  |
 | 10 | 8 | `mr:0310-maria-eugenia-milleret-de-brou` | * | FR | dies_natalis |  | Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007. |
 | 10 | 9 | `mr:0310-matthaeus-elias-nieves-del-castillo` | * | MX | dies_natalis |  |  |
-| 11 | 1 | `mr:0311-pionius` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
+| 11 | 1 | `mr:0311-pionius-smyrnae` |  | TR | dies_natalis | same as `mr:0201-pionius` |  |
 | 11 | 2 | `mr:0311-trophimus-et-thalus` |  | SY | dies_natalis |  |  |
-| 11 | 3 | `mr:0311-constantinus` | * | GB | dies_natalis |  |  |
-| 11 | 4 | `mr:0311-sophronius` |  | PS | dies_natalis |  |  |
-| 11 | 5 | `mr:0311-vindicianus` | * | FR | dies_natalis |  |  |
-| 11 | 6 | `mr:0311-benedictus` |  | IT | depositio |  |  |
+| 11 | 3 | `mr:0311-constantinus-scotiae` | * | GB | dies_natalis |  |  |
+| 11 | 4 | `mr:0311-sophronius-hierosolymorum` |  | PS | dies_natalis |  |  |
+| 11 | 5 | `mr:0311-vindicianus-cameracensis` | * | FR | dies_natalis |  |  |
+| 11 | 6 | `mr:0311-benedictus-mediolani` |  | IT | depositio |  |  |
 | 11 | 7 | `mr:0311-oengus-culdeus` | * | IE | dies_natalis |  | 2004 English: Translation error: "the White Book of the Saints of Ireland" where the Latin has "album sanctórum Hibérniæ" (a register of the saints of Ireland). |
-| 11 | 8 | `mr:0311-eulogius` |  | ES | dies_natalis |  |  |
+| 11 | 8 | `mr:0311-eulogius-cordubae` |  | ES | dies_natalis |  |  |
 | 11 | 9 | `mr:0311-ioannes-baptista-de-fabriano` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0311-thomas-atkinson` | * | GB | dies_natalis |  |  |
 | 11 | 11 | `mr:0311-ioannes-kearney` | * | IE | dies_natalis |  | 2004 English: Translation error: "Clon" where the Latin has "Clonæ" (Clonmel). |
 | 11 | 12 | `mr:0311-dominicus-cam` |  | VN | dies_natalis |  | 2004 English: Translation error: "Thieu Tri" where the Latin has "Tự Ðức". |
 | 11 | 13 | `mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong` |  | KR | dies_natalis |  | 2004 English: Translation error: "Se-yang" where the Latin has "Se-yŏng". |
-| 12 | 1 | `mr:0312-maximilianus` |  | DZ | dies_natalis |  |  |
+| 12 | 1 | `mr:0312-maximilianus-thevestis` |  | DZ | dies_natalis |  |  |
 | 12 | 2 | `mr:0312-mygdo-et-socii` |  | TR | commemoratio |  |  |
-| 12 | 3 | `mr:0312-petrus` |  | TR | dies_natalis |  |  |
+| 12 | 3 | `mr:0312-petrus-nicomediae` |  | TR | dies_natalis |  |  |
 | 12 | 4 | `mr:0312-innocentius-i` |  | IT | depositio | same as `mr:0728-innocentius-i` |  |
 | 12 | 5 | `mr:0312-paulus-aurelianus` |  | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:0312-gregorius-i-magnus` |  | IT | depositio |  |  |
 | 12 | 7 | `mr:0312-theophanes-chronographus` |  | TR | depositio |  |  |
-| 12 | 8 | `mr:0312-elphegus` | * | GB | dies_natalis |  |  |
-| 12 | 9 | `mr:0312-fina` | * | IT | dies_natalis |  |  |
+| 12 | 8 | `mr:0312-elphegus-vintoniae` | * | GB | dies_natalis |  |  |
+| 12 | 9 | `mr:0312-fina-sancti-geminiani` | * | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0312-iustina-francucci-bezzoli` | * | IT | dies_natalis |  |  |
 | 12 | 11 | `mr:0312-hieronymus-gherarducci` | * | IT | dies_natalis |  |  |
 | 12 | 12 | `mr:0312-iosephus-zhang-dapeng` |  | CN | dies_natalis |  | 2004 English: Translation error: "the outcasts" where the Latin has "ægrótis" (the sick). |
 | 12 | 13 | `mr:0312-angela-salawa` | * | PL | dies_natalis |  |  |
 | 12 | 14 | `mr:0312-aloysius-orione` |  | IT | dies_natalis |  | 2004 English: Translation error: "Tortona" where the Latin has "Matútæ" (Sanremo). |
 | 13 | 1 | `mr:0313-macedonius-et-socii` |  | TR | dies_natalis |  |  |
-| 13 | 2 | `mr:0313-sabinus` |  | EG | dies_natalis |  |  |
-| 13 | 3 | `mr:0313-christina` |  | IR | dies_natalis |  |  |
-| 13 | 4 | `mr:0313-pientius` | * | FR | dies_natalis |  |  |
-| 13 | 5 | `mr:0313-leander` |  | ES | dies_natalis | same as `mr:0227-leander` |  |
-| 13 | 6 | `mr:0313-eldradus` | * | IT | dies_natalis |  |  |
+| 13 | 2 | `mr:0313-sabinus-hermopoli` |  | EG | dies_natalis |  |  |
+| 13 | 3 | `mr:0313-christina-persidis` |  | IR | dies_natalis |  |  |
+| 13 | 4 | `mr:0313-pientius-pictavorum` | * | FR | dies_natalis |  |  |
+| 13 | 5 | `mr:0313-leander-hispali` |  | ES | dies_natalis | same as `mr:0227-leander` |  |
+| 13 | 6 | `mr:0313-eldradus-novaliciensis` | * | IT | dies_natalis |  |  |
 | 13 | 7 | `mr:0313-rudericus-et-salomon` |  | ES | dies_natalis |  |  |
-| 13 | 8 | `mr:0313-ansovinus` |  | IT | dies_natalis |  |  |
+| 13 | 8 | `mr:0313-ansovinus-camerini` |  | IT | dies_natalis |  |  |
 | 13 | 9 | `mr:0313-petrus-secundus` | * | IT | dies_natalis |  |  |
 | 13 | 10 | `mr:0313-agnellus-de-pisis` | * | GB | dies_natalis |  |  |
 | 13 | 11 | `mr:0313-francisca-trehet` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "trafitta con la spada" (run through with a sword) where the Latin has only "ferro" (by the blade); she was guillotined. |
-| 14 | 1 | `mr:0314-alexander` |  | GR | dies_natalis |  |  |
-| 14 | 2 | `mr:0314-lazarus` |  | IT | dies_natalis | same as `mr:0211-lazarus` |  |
-| 14 | 3 | `mr:0314-leobinus` |  | FR | dies_natalis | same as `mr:0915-leobinus` |  |
-| 14 | 4 | `mr:0314-mathildis` |  | DE | dies_natalis |  |  |
-| 14 | 5 | `mr:0314-paulina` | * | DE | dies_natalis |  |  |
+| 14 | 1 | `mr:0314-alexander-pidnae` |  | GR | dies_natalis |  |  |
+| 14 | 2 | `mr:0314-lazarus-mediolani` |  | IT | dies_natalis | same as `mr:0211-lazarus` |  |
+| 14 | 3 | `mr:0314-leobinus-carnuti` |  | FR | dies_natalis | same as `mr:0915-leobinus` |  |
+| 14 | 4 | `mr:0314-mathildis-quedlinburgi` |  | DE | dies_natalis |  |  |
+| 14 | 5 | `mr:0314-paulina-fuldensis` | * | DE | dies_natalis |  |  |
 | 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "monaca di clausura nel monastero di San Martino" (an enclosed nun in the monastery) where the Latin has "reclúsæ prope cœnóbium Sancti Martíni" (a recluse near the monastery of Saint Martin). |
 | 14 | 7 | `mr:0314-iacobus-cusmano` | * | IT | dies_natalis |  |  |
-| 15 | 1 | `mr:0315-menignus` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "tintore" (dyer) where the Latin has "fullónis" (fuller). |
-| 15 | 2 | `mr:0315-zacharias` |  | IT | dies_natalis | same as `mr:0322-zacharias` |  |
-| 15 | 3 | `mr:0315-leocritia` |  | ES | dies_natalis |  |  |
-| 15 | 4 | `mr:0315-sisebutus` | * | ES | dies_natalis |  |  |
+| 15 | 1 | `mr:0315-menignus-parii` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "tintore" (dyer) where the Latin has "fullónis" (fuller). |
+| 15 | 2 | `mr:0315-zacharias-papa` |  | IT | dies_natalis | same as `mr:0322-zacharias` |  |
+| 15 | 3 | `mr:0315-leocritia-cordubae` |  | ES | dies_natalis |  |  |
+| 15 | 4 | `mr:0315-sisebutus-caradignensis` | * | ES | dies_natalis |  |  |
 | 15 | 5 | `mr:0315-gulielmus-hart` |  | GB | dies_natalis |  |  |
 | 15 | 6 | `mr:0315-ludovica-de-marillac` |  | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0315-clemens-maria-hofbauer` |  | AT | dies_natalis |  |  |
 | 15 | 8 | `mr:0315-ioannes-adalbertus-balicki` | * | PL | dies_natalis |  |  |
 | 15 | 9 | `mr:0315-artemidis-zatti` | * | AR | dies_natalis |  | Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022. |
 | 16 | 1 | `mr:0316-hilarius-et-tatianus` |  | IT | dies_natalis |  |  |
-| 16 | 2 | `mr:0316-papa` |  | IQ | dies_natalis |  |  |
-| 16 | 3 | `mr:0316-iulianus` |  | TR | dies_natalis |  |  |
-| 16 | 4 | `mr:0316-eusebia` | * | FR | dies_natalis |  |  |
-| 16 | 5 | `mr:0316-heribertus` |  | DE | dies_natalis |  |  |
+| 16 | 2 | `mr:0316-papa-seleuciae` |  | IQ | dies_natalis |  |  |
+| 16 | 3 | `mr:0316-iulianus-anazarbi` |  | TR | dies_natalis |  |  |
+| 16 | 4 | `mr:0316-eusebia-hammaticensis` | * | FR | dies_natalis |  |  |
+| 16 | 5 | `mr:0316-heribertus-coloniae-agrippinae` |  | DE | dies_natalis |  |  |
 | 16 | 6 | `mr:0316-ioannes-sordi` | * | IT | dies_natalis |  |  |
 | 16 | 7 | `mr:0316-ioannes-amias-et-robertus-dalby` | * | GB | dies_natalis |  |  |
 | 16 | 8 | `mr:0316-ioannes-de-brebeuf` |  | CA | dies_natalis |  |  |
-| 17 | (1) | `mr:0317-patricius` |  | GB | dies_natalis |  |  |
+| 17 | (1) | `mr:0317-patricius-episcopus` |  | GB | dies_natalis |  |  |
 | 17 | 2 | `mr:0317-plurimi-martyres-alexandriae` |  | EG | commemoratio |  | 2004 English: Translation error: "were most cruelly scourged" where the Latin has "sævíssime cæsi" (most cruelly slain). |
-| 17 | 3 | `mr:0317-agricola` |  | FR | dies_natalis |  |  |
-| 17 | 4 | `mr:0317-gertrudis` |  | BE | dies_natalis |  |  |
-| 17 | 5 | `mr:0317-paulus` |  | CY | dies_natalis |  |  |
-| 17 | 6 | `mr:0317-conradus` | * | IT | dies_natalis |  |  |
+| 17 | 3 | `mr:0317-agricola-cabilloni` |  | FR | dies_natalis |  |  |
+| 17 | 4 | `mr:0317-gertrudis-nivellae` |  | BE | dies_natalis |  |  |
+| 17 | 5 | `mr:0317-paulus-cypri` |  | CY | dies_natalis |  |  |
+| 17 | 6 | `mr:0317-conradus-medunei` | * | IT | dies_natalis |  |  |
 | 17 | 7 | `mr:0317-ioannes-sarkander` |  | CZ | dies_natalis |  | 2004 English: Translation error: "the torture of the rack" where the Latin has "rotæ supplício" (the torture of the wheel). |
 | 17 | 8 | `mr:0317-gabriel-lalemant` |  | CA | dies_natalis |  |  |
 | 17 | 9 | `mr:0317-ioannes-nepomucenus-zegri-y-moreno` | * | ES | dies_natalis |  |  |
-| 18 | (1) | `mr:0318-cyrillus` |  | PS | dies_natalis |  | 2004 English: Translation error: "prayers" where the Latin has "oratiónibus" (discourses, homilies). |
-| 18 | 2 | `mr:0318-alexander` |  | PS | commemoratio |  |  |
-| 18 | 3 | `mr:0318-frigdianus` |  | IT | dies_natalis |  |  |
-| 18 | 4 | `mr:0318-leobardus` |  | FR | dies_natalis | same as `mr:0118-leobardus` |  |
-| 18 | 5 | `mr:0318-braulio` |  | ES | dies_natalis | same as `mr:0326-braulio` |  |
-| 18 | 6 | `mr:0318-eduardus` |  | GB | dies_natalis |  |  |
-| 18 | 7 | `mr:0318-anselmus` |  | IT | dies_natalis |  | 2004 English: Translation error: "where he was a vigorous helper" where the Latin "cui strénuus fuit adiútor" means he was a vigorous helper to the pope. |
+| 18 | (1) | `mr:0318-cyrillus-hierosolymitanus` |  | PS | dies_natalis |  | 2004 English: Translation error: "prayers" where the Latin has "oratiónibus" (discourses, homilies). |
+| 18 | 2 | `mr:0318-alexander-hierosolymorum` |  | PS | commemoratio |  |  |
+| 18 | 3 | `mr:0318-frigdianus-lucae` |  | IT | dies_natalis |  |  |
+| 18 | 4 | `mr:0318-leobardus-turonum` |  | FR | dies_natalis | same as `mr:0118-leobardus` |  |
+| 18 | 5 | `mr:0318-braulio-caesaraugustae` |  | ES | dies_natalis | same as `mr:0326-braulio` |  |
+| 18 | 6 | `mr:0318-eduardus-warehami` |  | GB | dies_natalis |  |  |
+| 18 | 7 | `mr:0318-anselmus-lucensis` |  | IT | dies_natalis |  | 2004 English: Translation error: "where he was a vigorous helper" where the Latin "cui strénuus fuit adiútor" means he was a vigorous helper to the pope. |
 | 18 | 8 | `mr:0318-salvator-de-horta` |  | IT | dies_natalis |  | 2004 English: Translation error: "from Girona" where the Latin has the surname "Grionesos". |
 | 18 | 9 | `mr:0318-ioannes-thules-et-rogerius-wrenno` | * | GB | dies_natalis |  | 2004 English: Translation error: "Lancashire" where the Latin "Lancástriæ" is the town of Lancaster. |
 | 18 | 10 | `mr:0318-amata-le-bouteiller` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Savior at Vicoigne" where the Latin has "Sancti Salvatóris Vicecómitis" (Saint-Sauveur-le-Vicomte). |
-| 19 | (1) | `mr:0319-ioseph` |  | PS | dies_natalis |  |  |
-| 19 | 2 | `mr:0319-ioannes` |  | IT | dies_natalis |  |  |
+| 19 | (1) | `mr:0319-ioseph-sponsus-mariae` |  | PS | dies_natalis |  |  |
+| 19 | 2 | `mr:0319-ioannes-parranensis` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0319-isnardus-de-chiampo` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:0319-andreas-gallerani` | * | IT | dies_natalis |  |  |
 | 19 | 5 | `mr:0319-ioannes-de-parma` | * | IT | dies_natalis |  |  |
@@ -204,13 +204,13 @@
 | 19 | 7 | `mr:0319-marcus-de-montegallo` | * | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:0319-narcissus-turchan` | * | DE | dies_natalis |  |  |
 | 19 | 9 | `mr:0319-marcellus-callo` | * | AT | dies_natalis |  |  |
-| 20 | 1 | `mr:0320-archippus` |  |  | commemoratio |  |  |
+| 20 | 1 | `mr:0320-archippus-commilito` |  |  | commemoratio |  |  |
 | 20 | 2 | `mr:0320-paulus-et-cyrillus` |  | TR | dies_natalis |  |  |
-| 20 | 3 | `mr:0320-urbicius` | * | FR | dies_natalis |  |  |
-| 20 | 4 | `mr:0320-martinus` | * | PT | dies_natalis |  |  |
-| 20 | 5 | `mr:0320-cuthbertus` |  | GB | dies_natalis |  |  |
-| 20 | 6 | `mr:0320-vulframnus` |  | FR | depositio |  |  |
-| 20 | 7 | `mr:0320-nicetas` |  | AL | commemoratio |  |  |
+| 20 | 3 | `mr:0320-urbicius-metarum` | * | FR | dies_natalis |  |  |
+| 20 | 4 | `mr:0320-martinus-bracarensis` | * | PT | dies_natalis |  |  |
+| 20 | 5 | `mr:0320-cuthbertus-lindisfarnensis` |  | GB | dies_natalis |  |  |
+| 20 | 6 | `mr:0320-vulframnus-senonensis` |  | FR | depositio |  |  |
+| 20 | 7 | `mr:0320-nicetas-apolloniae` |  | AL | commemoratio |  |  |
 | 20 | 8 | `mr:0320-viginti-monachi-palaestinae` |  | PS | dies_natalis |  |  |
 | 20 | 9 | `mr:0320-ambrosius-sansedoni` | * | IT | dies_natalis |  |  |
 | 20 | 10 | `mr:0320-ioannes-nepomucenus` |  | CZ | dies_natalis | same as `mr:0516-ioannes-nepomucenus` |  |
@@ -220,33 +220,33 @@
 | 20 | 14 | `mr:0320-franciscus-a-iesu-maria-ioseph` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "dove morì abbandonato a se stesso" (where he died, abandoned) where the Latin says only that he was banished there, "ab ómnibus derelíctus" (abandoned by all); he died at Tarragona. |
 | 20 | 15 | `mr:0320-maria-iosepha-a-corde-iesu` |  | ES | dies_natalis |  | 2004 Italian: Translation error: "nella Guascogna" (Gascony, in France) where the Latin has "in Vascónia Hispániæ" (the Basque Country of Spain). |
 | 20 | 16 | `mr:0320-iosephus-bilczewski` | * | UA | dies_natalis |  | Józef Bilczewski, blessed in the 2004 editions, was canonized on 23 October 2005. 2004 Italian: Misprint: "Bilezewski" for the surname Bilczewski. |
-| 21 | 1 | `mr:0321-serapion` |  | EG | dies_natalis |  |  |
+| 21 | 1 | `mr:0321-serapion-aegypti` |  | EG | dies_natalis |  |  |
 | 21 | 2 | `mr:0321-martyres-alexandrini` |  | EG | commemoratio |  |  |
-| 21 | 3 | `mr:0321-lupicinus` |  | FR | dies_natalis |  |  |
-| 21 | 4 | `mr:0321-endeus` | * | IE | dies_natalis |  |  |
-| 21 | 5 | `mr:0321-benedictus` |  | IT | dies_natalis |  |  |
+| 21 | 3 | `mr:0321-lupicinus-iurensis` |  | FR | dies_natalis |  |  |
+| 21 | 4 | `mr:0321-endeus-araniensis` | * | IE | dies_natalis |  |  |
+| 21 | 5 | `mr:0321-benedictus-casini` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0321-iacobus-confessor` |  | TR | dies_natalis |  |  |
-| 21 | 7 | `mr:0321-ioannes` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint-Julien of Valence" where the Latin "Iúliæ Valéntiæ" is simply Valence. Translation error: "truly ruined" where the Latin has "ære dírutos" (ruined by debt). |
+| 21 | 7 | `mr:0321-ioannes-valentiae` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint-Julien of Valence" where the Latin "Iúliæ Valéntiæ" is simply Valence. Translation error: "truly ruined" where the Latin has "ære dírutos" (ruined by debt). |
 | 21 | 8 | `mr:0321-nicolaus-de-flue` |  | CH | dies_natalis |  |  |
 | 21 | 9 | `mr:0321-thomas-pilchard` | * | GB | dies_natalis |  |  |
 | 21 | 10 | `mr:0321-matthaeus-flathers` | * | GB | dies_natalis |  |  |
 | 21 | 11 | `mr:0321-augustinus-zhao-rong` |  | CN | commemoratio |  |  |
 | 21 | 12 | `mr:0321-benedicta-cambiagio-frassinello` |  | IT | dies_natalis |  |  |
-| 22 | 1 | `mr:0322-epaphroditus` |  |  | commemoratio |  |  |
-| 22 | 2 | `mr:0322-paulus` |  | FR | depositio |  | 2004 Italian: Omission: the Latin places the deposition "extra Urbem" (outside the city) on the Via Domitia; this is not rendered. |
+| 22 | 1 | `mr:0322-epaphroditus-discipulus` |  |  | commemoratio |  |  |
+| 22 | 2 | `mr:0322-paulus-narbonis` |  | FR | depositio |  | 2004 Italian: Omission: the Latin places the deposition "extra Urbem" (outside the city) on the Via Domitia; this is not rendered. |
 | 22 | 3 | `mr:0322-callinicus-et-basilissa` |  | TR | dies_natalis |  |  |
-| 22 | 4 | `mr:0322-basilius` |  | TR | dies_natalis |  |  |
-| 22 | 5 | `mr:0322-lea` |  | IT | commemoratio |  |  |
+| 22 | 4 | `mr:0322-basilius-ancyrae` |  | TR | dies_natalis |  |  |
+| 22 | 5 | `mr:0322-lea-romae` |  | IT | commemoratio |  |  |
 | 22 | 6 | `mr:0322-benvenutus-scotivoli` |  | IT | dies_natalis |  |  |
 | 22 | 7 | `mr:0322-nicolaus-owen` |  | GB | dies_natalis |  |  |
 | 22 | 8 | `mr:0322-franciscus-chartier` | * | FR | dies_natalis |  |  |
 | 22 | 9 | `mr:0322-marianus-gorecki-et-bronislaus-komorowski` | * | PL | dies_natalis |  |  |
 | 23 | (1) | `mr:0323-turibius-de-mogrovejo` |  | PE | dies_natalis |  | 2004 Italian: Omission: the Latin clause "Ecclésiam strénue deféndit" (he vigorously defended the Church) is not rendered. |
-| 23 | 2 | `mr:0323-fingar` | * | GB | dies_natalis |  |  |
+| 23 | 2 | `mr:0323-fingar-cornubiae` | * | GB | dies_natalis |  |  |
 | 23 | 3 | `mr:0323-victorianus-et-socii` |  | TN | commemoratio |  | 2004 English: Translation error: "of Aghlab origin" where the Latin has "Aquæregénsium" (of Aquae Regiae). |
-| 23 | 4 | `mr:0323-gualterius` | * | FR | dies_natalis |  | 2004 English: Translation error: "Pont-Sainte-Maxence" where the Latin has "Pontísaræ" (Pontoise). |
-| 23 | 5 | `mr:0323-otho` | * | IT | dies_natalis |  |  |
-| 23 | 6 | `mr:0323-petrus` | * | IT | dies_natalis |  |  |
+| 23 | 4 | `mr:0323-gualterius-pontisarae` | * | FR | dies_natalis |  | 2004 English: Translation error: "Pont-Sainte-Maxence" where the Latin has "Pontísaræ" (Pontoise). |
+| 23 | 5 | `mr:0323-otho-ariani` | * | IT | dies_natalis |  |  |
+| 23 | 6 | `mr:0323-petrus-eugubii` | * | IT | dies_natalis |  |  |
 | 23 | 7 | `mr:0323-edmundus-sykes` | * | GB | dies_natalis |  |  |
 | 23 | 8 | `mr:0323-petrus-higgins` | * | IE | dies_natalis |  |  |
 | 23 | 9 | `mr:0323-iosephus-oriol` |  | ES | dies_natalis |  |  |
@@ -254,24 +254,24 @@
 | 23 | 11 | `mr:0323-rebecca-de-himlaya` |  | LB | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). Translation error: "Congregazione delle Suore Libanesi Maronite" where the Latin has "Ordine Libanénsi Sancti Antónii Maronitárum" (the Lebanese Maronite Order of Saint Anthony). |
 | 23 | 12 | `mr:0323-methodius-dominicus-trcka` | * | SK | dies_natalis |  |  |
 | 24 | 1 | `mr:0324-timolaus-et-socii` |  | IL | dies_natalis |  |  |
-| 24 | 2 | `mr:0324-secundulus` |  | DZ | dies_natalis |  |  |
-| 24 | 3 | `mr:0324-maccarthemus` | * | GB | dies_natalis |  |  |
-| 24 | 4 | `mr:0324-severus` | * | IT | dies_natalis |  |  |
+| 24 | 2 | `mr:0324-secundulus-mauretaniae` |  | DZ | dies_natalis |  |  |
+| 24 | 3 | `mr:0324-maccarthemus-clocerie` | * | GB | dies_natalis |  |  |
+| 24 | 4 | `mr:0324-severus-catanae` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0324-ioannes-a-baculo` | * | IT | dies_natalis |  |  |
-| 24 | 6 | `mr:0324-catharina` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
+| 24 | 6 | `mr:0324-catharina-suecica` |  | SE | dies_natalis | same as `mr:0322-catharina-suecica` |  |
 | 24 | 7 | `mr:0324-franciscus-iosephus-lopez-caamano` | * | ES | dies_natalis |  | 2004 English: Translation error: "Andújar" where the Latin has "Arúndæ" (Ronda). |
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
 | 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio | same as `mr:0325-annuntiatio-beatissimae-virginis-genitricis` |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS | commemoratio |  |  |
-| 25 | 3 | `mr:0325-dula` |  | TR | dies_natalis |  |  |
-| 25 | 4 | `mr:0325-quirinus` |  | IT | dies_natalis |  |  |
-| 25 | 5 | `mr:0325-matrona` |  | GR | dies_natalis |  |  |
-| 25 | 6 | `mr:0325-mona` |  | IT | dies_natalis |  |  |
-| 25 | 7 | `mr:0325-hermelandus` |  | FR | dies_natalis |  |  |
-| 25 | 8 | `mr:0325-nicodemus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Hierax" where the Latin "Hierácium" is Gerace. |
-| 25 | 9 | `mr:0325-procopius` |  | CZ | dies_natalis |  |  |
-| 25 | 10 | `mr:0325-everardus` | * | CH | dies_natalis |  | 2004 English: Translation error: "Petershausen" where the Latin has "Probatópoli" (Schaffhausen). |
-| 25 | 11 | `mr:0325-thomas` | * | IT | dies_natalis |  |  |
+| 25 | 3 | `mr:0325-dula-nicomediae` |  | TR | dies_natalis |  |  |
+| 25 | 4 | `mr:0325-quirinus-romae` |  | IT | dies_natalis |  |  |
+| 25 | 5 | `mr:0325-matrona-thessalonicensis` |  | GR | dies_natalis |  |  |
+| 25 | 6 | `mr:0325-mona-mediolani` |  | IT | dies_natalis |  |  |
+| 25 | 7 | `mr:0325-hermelandus-fontanellensis` |  | FR | dies_natalis |  |  |
+| 25 | 8 | `mr:0325-nicodemus-mammulae` | * | IT | dies_natalis |  | 2004 English: Translation error: "Hierax" where the Latin "Hierácium" is Gerace. |
+| 25 | 9 | `mr:0325-procopius-sazavae` |  | CZ | dies_natalis |  |  |
+| 25 | 10 | `mr:0325-everardus-probatopolis` | * | CH | dies_natalis |  | 2004 English: Translation error: "Petershausen" where the Latin has "Probatópoli" (Schaffhausen). |
+| 25 | 11 | `mr:0325-thomas-costacciarii` | * | IT | dies_natalis |  |  |
 | 25 | 12 | `mr:0325-margarita-clitherow` |  | GB | dies_natalis |  | 2004 English: Translation error: "the judges" where the Latin has "consiliariórum iúdicis" (the judge's counsellors, the jurors). |
 | 25 | 13 | `mr:0325-iacobus-bird` | * | GB | dies_natalis |  |  |
 | 25 | 14 | `mr:0325-lucia-filippini` |  | IT | dies_natalis |  | 2004 English: Translation error: "Tuscany" where the Latin "Túscia" is the Tuscia of northern Lazio. |
@@ -279,59 +279,59 @@
 | 25 | 16 | `mr:0325-michaelina-hordashevska` | * | UA | dies_natalis |  |  |
 | 25 | 17 | `mr:0325-aemilianus-kovc` | * | PL | dies_natalis |  |  |
 | 25 | 18 | `mr:0325-hilarius-januszewski` | * | DE | dies_natalis |  |  |
-| 26 | 1 | `mr:0326-castulus` |  | IT | dies_natalis |  |  |
+| 26 | 1 | `mr:0326-castulus-romae` |  | IT | dies_natalis |  |  |
 | 26 | 2 | `mr:0326-emmanuel-et-socii` |  | TR | dies_natalis |  |  |
 | 26 | 3 | `mr:0326-montanus-et-maxima` |  | RS | dies_natalis |  | 2004 Italian: Translation error: "Srijem ... nell’odierna Croazia" where the Latin "Sírmii" is the city of Sirmium (Sremska Mitrovica, in Serbia). |
-| 26 | 4 | `mr:0326-eutychius` |  | EG | commemoratio |  | 2004 English: Translation error: "was beaten" where the Latin "cæsus est" means he was slain. |
-| 26 | 5 | `mr:0326-petrus` |  | TR | dies_natalis |  |  |
-| 26 | 6 | `mr:0326-bercharius` |  | FR | dies_natalis | same as `mr:1016-bercharius` | 2004 English: Translation error: "Campania" where the Latin "Campánia Gálliæ" is Champagne. |
+| 26 | 4 | `mr:0326-eutychius-alexandrinus` |  | EG | commemoratio |  | 2004 English: Translation error: "was beaten" where the Latin "cæsus est" means he was slain. |
+| 26 | 5 | `mr:0326-petrus-sebastes` |  | TR | dies_natalis |  |  |
+| 26 | 6 | `mr:0326-bercharius-dervensis` |  | FR | dies_natalis | same as `mr:1016-bercharius` | 2004 English: Translation error: "Campania" where the Latin "Campánia Gálliæ" is Champagne. |
 | 26 | 7 | `mr:0326-barontius-et-desiderius` |  | IT | dies_natalis | same as `mr:0325-barontius-et-desiderius` |  |
-| 26 | 8 | `mr:0326-liudgerus` |  | DE | dies_natalis |  |  |
+| 26 | 8 | `mr:0326-liudgerus-monasteriensis` |  | DE | dies_natalis |  |  |
 | 26 | 9 | `mr:0326-magdalena-catharina-morano` | * | IT | dies_natalis |  |  |
-| 27 | 1 | `mr:0327-rupertus` |  | AT | dies_natalis |  | 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
+| 27 | 1 | `mr:0327-rupertus-salisburgi` |  | AT | dies_natalis |  | 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
 | 27 | 2 | `mr:0327-peregrinus-de-phalerone` | * | IT | dies_natalis |  |  |
 | 27 | 3 | `mr:0327-panacea-de-muzzi` | * | IT | dies_natalis |  |  |
 | 27 | 4 | `mr:0327-franciscus-faa` | * | IT | dies_natalis |  |  |
-| 28 | 1 | `mr:0328-castor` |  | TR | dies_natalis |  |  |
+| 28 | 1 | `mr:0328-castor-tarsi` |  | TR | dies_natalis |  |  |
 | 28 | 2 | `mr:0328-priscus-et-socii` |  | IL | commemoratio |  | 2004 English: Translation error: "continuously devoured" where the Latin "contínuo ... trádidit" means he immediately handed them over. |
-| 28 | 3 | `mr:0328-cyrillus` |  | LB | dies_natalis | same as `mr:0329-cyrillus` |  |
-| 28 | 4 | `mr:0328-proterius` |  | EG | dies_natalis |  |  |
-| 28 | 5 | `mr:0328-gunthramnus` |  | FR | depositio |  |  |
-| 28 | 6 | `mr:0328-hilarion` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Grecia" for the Bithynian Mount Olympus, which is in Asia Minor (modern Turkey). |
+| 28 | 3 | `mr:0328-cyrillus-heliopoli` |  | LB | dies_natalis | same as `mr:0329-cyrillus` |  |
+| 28 | 4 | `mr:0328-proterius-alexandriae` |  | EG | dies_natalis |  |  |
+| 28 | 5 | `mr:0328-gunthramnus-cabilloni` |  | FR | depositio |  |  |
+| 28 | 6 | `mr:0328-hilarion-pelecetensis` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Grecia" for the Bithynian Mount Olympus, which is in Asia Minor (modern Turkey). |
 | 28 | 7 | `mr:0328-stephanus-harding` |  | FR | dies_natalis | same as `mr:0417-stephanus-harding` |  |
-| 28 | 8 | `mr:0328-conus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Conon" where the Latin has "Coni" (Conus, Cono). |
+| 28 | 8 | `mr:0328-conus-nasi` | * | IT | dies_natalis |  | 2004 English: Translation error: "Conon" where the Latin has "Coni" (Conus, Cono). |
 | 28 | 9 | `mr:0328-antonius-patrizus` | * | IT | dies_natalis |  |  |
 | 28 | 10 | `mr:0328-ioanna-maria-de-maille` | * | FR | dies_natalis |  |  |
 | 28 | 11 | `mr:0328-christophorus-wharton` | * | GB | dies_natalis |  |  |
 | 28 | 12 | `mr:0328-renata-maria-feillatreau` | * | FR | dies_natalis |  |  |
 | 28 | 13 | `mr:0328-iosephus-sebastianus-pelczar` |  | PL | dies_natalis |  |  |
-| 29 | 1 | `mr:0329-eustasius` | * | IT | commemoratio |  |  |
-| 29 | 2 | `mr:0329-marcus` |  | SY | commemoratio |  |  |
+| 29 | 1 | `mr:0329-eustasius-neapoli` | * | IT | commemoratio |  |  |
+| 29 | 2 | `mr:0329-marcus-arethusae` |  | SY | commemoratio |  |  |
 | 29 | 3 | `mr:0329-armogastus-et-socii` |  | TN | commemoratio |  |  |
-| 29 | 4 | `mr:0329-bertholdus` | * | IL | dies_natalis |  |  |
+| 29 | 4 | `mr:0329-bertholdus-carmelo` | * | IL | dies_natalis |  |  |
 | 29 | 5 | `mr:0329-gulielmus-tempier` | * | FR | dies_natalis |  |  |
-| 29 | 6 | `mr:0329-ludolphus` | * | DE | dies_natalis |  |  |
+| 29 | 6 | `mr:0329-ludolphus-raceburgensis` | * | DE | dies_natalis |  |  |
 | 29 | 7 | `mr:0329-ioannes-hambley` | * | GB | commemoratio |  |  |
-| 30 | 1 | `mr:0330-secundus` |  | IT | dies_natalis | same as `mr:0329-secundus` |  |
-| 30 | 2 | `mr:0330-domninus` |  | GR | dies_natalis |  |  |
-| 30 | 3 | `mr:0330-regulus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Autun" where the Latin has "Augustómagi" (Senlis). |
+| 30 | 1 | `mr:0330-secundus-astae-pompeiae` |  | IT | dies_natalis | same as `mr:0329-secundus` |  |
+| 30 | 2 | `mr:0330-domninus-thessalonicensis` |  | GR | dies_natalis |  |  |
+| 30 | 3 | `mr:0330-regulus-augustomagi` |  | FR | dies_natalis |  | 2004 English: Translation error: "Autun" where the Latin has "Augustómagi" (Senlis). |
 | 30 | 4 | `mr:0330-plurimi-martyres-constantinopolis` |  | TR | commemoratio |  |  |
-| 30 | 5 | `mr:0330-ioannes` |  | EG | dies_natalis |  |  |
-| 30 | 6 | `mr:0330-zosimus` |  | IT | dies_natalis |  |  |
-| 30 | 7 | `mr:0330-osburga` | * | GB | dies_natalis |  |  |
-| 30 | 8 | `mr:0330-clinius` |  | IT | dies_natalis |  | The monastery of Saint Peter of the Wood (San Pietro della Foresta, Q141922221) stood in the Liri (Q71562) valley between Pontecorvo (Q117186) and Esperia (Q116819); it is not the village of San Pietro in Curolis (Q3947819). The archaeological census of the Geoportale Nazionale per l'Archeologia (record 5597, after J. W. Hayes and I. P. Martini, Archaeological Survey in the Lower Liri Valley, 1994, p. 236 no. 576) records the site "S. Pietro in Foresta = La Torre" in the comune of Esperia, near Crocella di Sant'Oliva (Q18453456): "area estesa per 50 m attorno alle rovine di una chiesa" (an area of 50 m around the ruins of a church), with common, African red-slip and medieval pottery. |
+| 30 | 5 | `mr:0330-ioannes-climacus` |  | EG | dies_natalis |  |  |
+| 30 | 6 | `mr:0330-zosimus-syracusis` |  | IT | dies_natalis |  |  |
+| 30 | 7 | `mr:0330-osburga-conventriae` | * | GB | dies_natalis |  |  |
+| 30 | 8 | `mr:0330-clinius-aquini` |  | IT | dies_natalis |  | The monastery of Saint Peter of the Wood (San Pietro della Foresta, Q141922221) stood in the Liri (Q71562) valley between Pontecorvo (Q117186) and Esperia (Q116819); it is not the village of San Pietro in Curolis (Q3947819). The archaeological census of the Geoportale Nazionale per l'Archeologia (record 5597, after J. W. Hayes and I. P. Martini, Archaeological Survey in the Lower Liri Valley, 1994, p. 236 no. 576) records the site "S. Pietro in Foresta = La Torre" in the comune of Esperia, near Crocella di Sant'Oliva (Q18453456): "area estesa per 50 m attorno alle rovine di una chiesa" (an area of 50 m around the ruins of a church), with common, African red-slip and medieval pottery. |
 | 30 | 9 | `mr:0330-petrus-regalado` |  | ES | dies_natalis |  | 2004 English: Translation error: "Aguilar" where the Latin has "Aquilériæ" (La Aguilera). |
-| 30 | 10 | `mr:0330-amadeus` | * | IT | dies_natalis |  |  |
+| 30 | 10 | `mr:0330-amadeus-vercellarum` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0330-antonius-daveluy-et-socii` |  | KR | dies_natalis |  | 2004 English: Translation error: "catechists" where the Latin has "catechístæ" in the singular, of Luke Hwang alone. |
 | 30 | 12 | `mr:0330-ludovicus-de-casaurea` | * | IT | dies_natalis |  | Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014. |
 | 30 | 13 | `mr:0330-leonardus-murialdo` |  | IT | dies_natalis |  |  |
 | 30 | 14 | `mr:0330-iulius-alvarez` |  | MX | dies_natalis |  |  |
 | 30 | 15 | `mr:0330-helena-kafka` | * | AT | dies_natalis |  |  |
-| 31 | 1 | `mr:0331-beniamin` |  | IR | dies_natalis |  |  |
-| 31 | 2 | `mr:0331-balbina` |  | IT | commemoratio |  |  |
-| 31 | 3 | `mr:0331-agilolphus` | * | DE | dies_natalis |  |  |
-| 31 | 4 | `mr:0331-guido` | * | IT | dies_natalis |  |  |
-| 31 | 5 | `mr:0331-ioanna` | * | FR | dies_natalis |  |  |
+| 31 | 1 | `mr:0331-beniamin-argol` |  | IR | dies_natalis |  |  |
+| 31 | 2 | `mr:0331-balbina-romae` |  | IT | commemoratio |  |  |
+| 31 | 3 | `mr:0331-agilolphus-coloniae-agrippinae` | * | DE | dies_natalis |  |  |
+| 31 | 4 | `mr:0331-guido-pomposae` | * | IT | dies_natalis |  |  |
+| 31 | 5 | `mr:0331-ioanna-tolosae` | * | FR | dies_natalis |  |  |
 | 31 | 6 | `mr:0331-bonaventura-de-foro-livii` | * | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:0331-christophorus-robinson` | * | GB | commemoratio |  |  |
 | 31 | 8 | `mr:0331-natalia-tulasiewicz` | * | DE | dies_natalis |  | 2004 English: Translation error: "asphyxiating steam" where the Latin "mortíferi vapóris" means deadly gas. |

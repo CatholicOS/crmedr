@@ -240,7 +240,7 @@ ENTRY_NOTES = {
         "Saint-Julien-du-Pré, a house of Benedictine nuns). No source found says outright that the Martyrology's "
         "monastery of Saint Mary is this house."
     ),
-    "mr:0304-appianus": (
+    "mr:0304-appianus-papiensis": (
         "The monastery of Pavia (Q6259) was San Pietro in Ciel d'Oro (Q3860504). A. M. Zimmermann's life of "
         "Appian (Bibliotheca Sanctorum, on santiebeati.it) says he \"fu monaco a Pavia nel monastero di San "
         "Pietro in Ciel d'Oro\" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his "
@@ -299,7 +299,7 @@ ENTRY_NOTES = {
     "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
     "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
-    "mr:0330-clinius": (
+    "mr:0330-clinius-aquini": (
         "The monastery of Saint Peter of the Wood (San Pietro della Foresta, Q141922221) stood in the Liri "
         "(Q71562) valley between Pontecorvo (Q117186) and Esperia (Q116819); it is not the village of San Pietro "
         "in Curolis (Q3947819). The archaeological census of the Geoportale Nazionale per l'Archeologia (record "
@@ -616,7 +616,7 @@ EDITION_NOTES = {
             "Aprútio\" (at Isola del Gran Sasso, in the Abruzzi)."
         ),
     },
-    "mr:0301-albinus": {
+    "mr:0301-albinus-andegavi": {
         EDITION_EN: (
             "Translation error: \"Gallia Lugdunensis Lugdunum\" where the Latin has only \"in Gállia "
             "Lugdunénsi\" (in Gallia Lugdunensis)."
@@ -641,7 +641,7 @@ EDITION_NOTES = {
             "Translation error: \"Daron\" where the Latin has \"Dariórigi\" (Vannes)."
         ),
     },
-    "mr:0309-francisca": {
+    "mr:0309-francisca-romae": {
         EDITION_EN: (
             "Translation error: \"among the offerings\" where the Latin has \"inter oblátas\" (among "
             "the Oblates)."
@@ -674,14 +674,14 @@ EDITION_NOTES = {
             "pago Meduáno\" (Ernée, in Mayenne)."
         ),
     },
-    "mr:0321-ioannes": {
+    "mr:0321-ioannes-valentiae": {
         EDITION_EN: (
             "Translation error: \"Saint-Julien of Valence\" where the Latin \"Iúliæ Valéntiæ\" is "
             "simply Valence. Translation error: \"truly ruined\" where the Latin has \"ære dírutos\" "
             "(ruined by debt)."
         ),
     },
-    "mr:0323-gualterius": {
+    "mr:0323-gualterius-pontisarae": {
         EDITION_EN: (
             "Translation error: \"Pont-Sainte-Maxence\" where the Latin has \"Pontísaræ\" (Pontoise)."
         ),
@@ -697,12 +697,12 @@ EDITION_NOTES = {
             "Translation error: \"Andújar\" where the Latin has \"Arúndæ\" (Ronda)."
         ),
     },
-    "mr:0325-everardus": {
+    "mr:0325-everardus-probatopolis": {
         EDITION_EN: (
             "Translation error: \"Petershausen\" where the Latin has \"Probatópoli\" (Schaffhausen)."
         ),
     },
-    "mr:0330-regulus": {
+    "mr:0330-regulus-augustomagi": {
         EDITION_EN: (
             "Translation error: \"Autun\" where the Latin has \"Augustómagi\" (Senlis)."
         ),
@@ -1578,20 +1578,20 @@ EDITION_NOTES = {
             "Augusto)."
         ),
     },
-    "mr:0302-ceadda": {
+    "mr:0302-ceadda-lichfeldiae": {
         EDITION_IT: (
             "Translation error: \"dell’Anglia meridionale\" (southern Anglia) where the Latin has "
             "\"Mediterraneórum Anglórum\" (the Middle Angles)."
         ),
     },
-    "mr:0303-winwaloeus": {
+    "mr:0303-winwaloeus-landevenecensis": {
         EDITION_IT: (
             "Translation error: \"Nella Cornovaglia in Inghilterra\" (Cornwall in England) where "
             "the Latin has \"In Cornúbia Armóricæ\" (Cornouaille in Brittany, where Landévennec "
             "lies)."
         ),
     },
-    "mr:0306-fridolinus": {
+    "mr:0306-fridolinus-saconii": {
         EDITION_IT: (
             "Translation error: \"due monasteri\" (two monasteries) where the Latin has \"duplex "
             "monastérium\" (a double monastery)."
@@ -1623,7 +1623,7 @@ EDITION_NOTES = {
             "Vascónia Hispániæ\" (the Basque Country of Spain)."
         ),
     },
-    "mr:0328-hilarion": {
+    "mr:0328-hilarion-pelecetensis": {
         EDITION_IT: (
             "Translation error: \"nell’odierna Grecia\" for the Bithynian Mount Olympus, which is "
             "in Asia Minor (modern Turkey)."
@@ -2792,13 +2792,13 @@ REVIEW_EDITION_NOTES = {
             "eulogy; it is not part of the Latin text."
         ),
     },
-    "mr:0302-agnes": {
+    "mr:0302-agnes-pragae": {
         EDITION_EN: (
             "Translation error: \"rebuilt by herself\" where the Latin has \"ab ipsa ædificáto\" "
             "(built by her)."
         ),
     },
-    "mr:0303-cunegundis": {
+    "mr:0303-cunegundis-confugiae": {
         EDITION_IT: (
             "Translation error: \"facendo di Cristo la sua eredità\" (making Christ her "
             "inheritance) where the Latin has \"Christum sibi herédem fáciens\" (making Christ "
@@ -2813,13 +2813,13 @@ REVIEW_EDITION_NOTES = {
             "governing the Congregation)."
         ),
     },
-    "mr:0304-humbertus": {
+    "mr:0304-humbertus-camberii": {
         EDITION_IT: (
             "Translation error: \"terzo conte di Savoia\" (the third count of Savoy) where the "
             "Latin has \"cómitis Sabáudiæ Tértii\" (Humbert III, Count of Savoy)."
         ),
     },
-    "mr:0306-quiriacus": {
+    "mr:0306-quiriacus-trevirorum": {
         EDITION_EN: (
             "Translation error: \"Belgic France\" where the Latin has \"Gállia Bélgica\" (Belgic "
             "Gaul)."
@@ -2833,7 +2833,7 @@ REVIEW_EDITION_NOTES = {
             "Perpetua's) where the Latin has only \"serva\" (a slave)."
         ),
     },
-    "mr:0308-humfridus": {
+    "mr:0308-humfridus-taruannensis": {
         EDITION_EN: (
             "Translation error: \"At Merville\" where the Latin has \"Apud Mórinos\" (among the "
             "Morini, the territory of Thérouanne)."
@@ -2845,13 +2845,13 @@ REVIEW_EDITION_NOTES = {
             "(built by him)."
         ),
     },
-    "mr:0309-catharina": {
+    "mr:0309-catharina-bononiae": {
         EDITION_EN: (
             "Translation error: \"humble devotion\" where the Latin has \"pæniténtiæ "
             "humilitatísque cursu\" (course of penance and humility)."
         ),
     },
-    "mr:0309-pacianus": {
+    "mr:0309-pacianus-barcinonis": {
         EDITION_EN: (
             "Translation error: \"truly Catholic by nature\" where the Latin has \"cathólicum "
             "vero cognómen\" (but Catholic his surname)."
@@ -2891,7 +2891,7 @@ REVIEW_EDITION_NOTES = {
             "Latin has only \"ferro\" (by the blade); she was guillotined."
         ),
     },
-    "mr:0315-menignus": {
+    "mr:0315-menignus-parii": {
         EDITION_IT: (
             "Translation error: \"tintore\" (dyer) where the Latin has \"fullónis\" (fuller)."
         ),
@@ -2908,13 +2908,13 @@ REVIEW_EDITION_NOTES = {
             "cæsi\" (most cruelly slain)."
         ),
     },
-    "mr:0318-anselmus": {
+    "mr:0318-anselmus-lucensis": {
         EDITION_EN: (
             "Translation error: \"where he was a vigorous helper\" where the Latin \"cui "
             "strénuus fuit adiútor\" means he was a vigorous helper to the pope."
         ),
     },
-    "mr:0318-cyrillus": {
+    "mr:0318-cyrillus-hierosolymitanus": {
         EDITION_EN: (
             "Translation error: \"prayers\" where the Latin has \"oratiónibus\" (discourses, "
             "homilies)."
@@ -2936,7 +2936,7 @@ REVIEW_EDITION_NOTES = {
             "Misprint: \"Bilezewski\" for the surname Bilczewski."
         ),
     },
-    "mr:0322-paulus": {
+    "mr:0322-paulus-narbonis": {
         EDITION_IT: (
             "Omission: the Latin places the deposition \"extra Urbem\" (outside the city) on the "
             "Via Domitia; this is not rendered."
@@ -2967,17 +2967,17 @@ REVIEW_EDITION_NOTES = {
             "(the judge's counsellors, the jurors)."
         ),
     },
-    "mr:0325-nicodemus": {
+    "mr:0325-nicodemus-mammulae": {
         EDITION_EN: (
             "Translation error: \"Hierax\" where the Latin \"Hierácium\" is Gerace."
         ),
     },
-    "mr:0326-bercharius": {
+    "mr:0326-bercharius-dervensis": {
         EDITION_EN: (
             "Translation error: \"Campania\" where the Latin \"Campánia Gálliæ\" is Champagne."
         ),
     },
-    "mr:0326-eutychius": {
+    "mr:0326-eutychius-alexandrinus": {
         EDITION_EN: (
             "Translation error: \"was beaten\" where the Latin \"cæsus est\" means he was slain."
         ),
@@ -2988,12 +2988,12 @@ REVIEW_EDITION_NOTES = {
             "is the city of Sirmium (Sremska Mitrovica, in Serbia)."
         ),
     },
-    "mr:0327-rupertus": {
+    "mr:0327-rupertus-salisburgi": {
         EDITION_EN: (
             "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
         ),
     },
-    "mr:0328-conus": {
+    "mr:0328-conus-nasi": {
         EDITION_EN: (
             "Translation error: \"Conon\" where the Latin has \"Coni\" (Conus, Cono)."
         ),

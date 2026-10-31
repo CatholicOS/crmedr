@@ -10,14 +10,14 @@ import mentions_italian as mi  # noqa: E402
 LA = {
     "mr:0102-argeus-et-socii": "Sancti Argeus, Narcissus et Marcellinus",
     "mr:0131-ioannes-bosco": "Sanctus Ioannes Bosco",
-    "mr:0319-ioseph": "Sanctus Ioseph",
+    "mr:0319-ioseph-sponsus-mariae": "Sanctus Ioseph",
     "mr:0601-iosephus-gomez": "Beatus Iosephus Gomez",
     "mr:0514-iusta-et-heredina": "Sanctae Iusta et Heredina",
 }
 IT = {
     "mr:0102-argeus-et-socii": "Santi Argeo, Narciso e Marcellino",
     "mr:0131-ioannes-bosco": "San Giovanni Bosco",
-    "mr:0319-ioseph": "San Giuseppe",
+    "mr:0319-ioseph-sponsus-mariae": "San Giuseppe",
     "mr:0601-iosephus-gomez": "Beato Giuseppe Gomez",
     "mr:0514-iusta-et-heredina": "Sante Giusta ed Eredina",
 }

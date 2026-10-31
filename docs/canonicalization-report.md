@@ -126,7 +126,7 @@ mr:0623-plurimi-martyres-nicomediae, as mr:0209-plurimi-martyres-alexandriae. Th
 city is their place of death (curated, since it does not open the text).
 
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
-restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus.
+restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
 
 ## Manual feast overrides (34)
 
@@ -137,7 +137,7 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
 - mr:0202-praesentatio-domini  (2/2 voce 1)
 - mr:0217-septem-fundatores-servorum-mariae  (2/17 voce 1)
 - mr:0222-cathedra-petri-apostoli  (2/22 voce 1)
-- mr:0320-archippus  (3/20 voce 1)
+- mr:0320-archippus-commilito  (3/20 voce 1)
 - mr:0325-annuntiatio-domini  (3/25 voce 1)
 - mr:0325-bonus-latro  (3/25 voce 2)
 - mr:0531-visitatio-beatae-mariae-virginis  (5/31 voce 1)
@@ -330,7 +330,7 @@ twice with independent numbering in both editions (Feb 28 entries 4–7 = Feb 29
 1–4), as already reflected in the registry.
 
 **Slug correction (applied)**: the workbook ID mr:0331-domninus (3/31 voce 4) is
-corrected on extraction to mr:0331-guido — the elogium's first-named subject is San
+corrected on extraction to mr:0331-guido-pomposae — the elogium's first-named subject is San
 Guido, abbot; "Domninus" comes from the place name (Burgi Sancti Domníni, Borgo San
 Donnino, today Fidenza). No collision on the day.
 
@@ -340,7 +340,7 @@ The slug had been coined from the place, "Sancti Stephani Fanum" (Launceston), n
 the first-named subject, St Cuthbert Mayne; surnames are not latinized. The `la` and
 `en` subjects, which had been derived from the bad slug, are corrected too. As with the
 earlier slug fixes (#5) this is a rename, not a deprecation. No collision on the day;
-the only other Cuthbert is mr:0320-cuthbertus.
+the only other Cuthbert is mr:0320-cuthbertus-lindisfarnensis.
 
 **Slug corrections (applied, October 2026, #25)**: 24 more workbook IDs had been
 coined from the saint named in the opening place (a monastery, convent, town or
@@ -859,7 +859,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0115-maurus-in | mr:0115-maurus-glannafolii |
 | mr:0116-marcellus-primus-romae | mr:0116-marcellus-i |
 | mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
-| mr:0312-petrus-ibidem | mr:0312-petrus |
+| mr:0312-petrus-ibidem | mr:0312-petrus-nicomediae |
 | mr:0413-ursi | mr:0413-ursus |
 | mr:0422-caji | mr:0422-caius |
 | mr:0425-marcus-evangelista-hic | mr:0425-marcus-evangelista |
@@ -917,7 +917,7 @@ applies two classes:
   re-keyed: 28 placements to the current ID of the eulogy, the rest to a deprecated ID of
   the day, 77 of them new. A 2004 eulogy whose historical text had been keyed elsewhere
   gets its own text back (mr:1101-caesarius, mr:1205-crispina-thagorensis,
-  mr:1210-eulalia). One 1749 key holding two eulogies is split (mr:0311-constantinus), and
+  mr:1210-eulalia). One 1749 key holding two eulogies is split (mr:0311-constantinus-scotiae), and
   mr:0224-cyprianus is re-minted mr:0224-montanus-et-socii.
 - **Same eulogy, subject changed by 2004.** Where the 2004 edition kept a historical eulogy
   but changed its subject (it reduced a group: Cyrinus, Primus and Theogenes to Theogenes;
@@ -1112,7 +1112,7 @@ errors come from a homonymous place resolved to the wrong country: Guadalajara
 (Jalisco vs. Castile), Eger (Cheb in Bohemia vs. Hungary), Nizza Monferrato vs.
 Nice, and Catalan Montserrat coded `MS` (the British overseas territory). Four
 corrections go against the printed text: mr:0504-florianus → AT (Lorch/Enns; the
-text says "nell'odierna Germania"), mr:0304-casimirus → BY (Grodno; the text says
+text says "nell'odierna Germania"), mr:0304-casimirus-grodnae → BY (Grodno; the text says
 "in Lituania"), mr:0603-morandus → FR (Altkirch in Alsace) and mr:0827-gebhardus →
 DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
 are left as they are: mr:1011-philippus stays `PS` (Caesarea Maritima), because
@@ -1154,7 +1154,7 @@ that produced it.
 Counts: dies_natalis 4,163, commemoratio 323, depositio 80, celebratio 60,
 dedicatio 6, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
 typology yet. Memorials whose text doesn't say what their date marks keep
-`dies_natalis` (e.g. mr:0319-ioseph, mr:0703-thomas-apostolus, mr:0726-ioachim-et-anna,
+`dies_natalis` (e.g. mr:0319-ioseph-sponsus-mariae, mr:0703-thomas-apostolus, mr:0726-ioachim-et-anna,
 mr:0827-monica), pending committee review.
 
 ## Places (September 2026)
@@ -1232,7 +1232,7 @@ intended:
   image (p. 443) and in its OCR layer.
 - Italian (CEI) edition, also inside quoted place designations (`places[].it` keeps
   the printed form):
-  - March 5 (mr:0305-phoca): "nell’odiena" for *nell’odierna*;
+  - March 5 (mr:0305-phoca-sinopes): "nell’odiena" for *nell’odierna*;
   - July 4 (mr:0704-ioannes-cornelius-et-socii): "un Inghilterra" for *in Inghilterra*;
   - August 7, entry 13\* (mr:0807-ioannes-woodcock-et-socii): "Inghiltera" for
     *Inghilterra*;
@@ -1350,19 +1350,19 @@ from `PS` to `IL`.
 | `mr:0217-antonius-leszczewicz` | Rosica (Q3442846) | PL | BY |
 | `mr:0218-georgius-kaszyra` | Rosica (Q3442846) | PL | BY |
 | `mr:0227-gregorius-narecensis` | Narekavank (Q3336090) | AM | TR |
-| `mr:0303-winwaloeus` | Cornouaille (Q1134273) | GB | FR |
+| `mr:0303-winwaloeus-landevenecensis` | Cornouaille (Q1134273) | GB | FR |
 | `mr:0304-miecislaus-bohatkiewicz-et-socii` | Bierazviečča (Q776469) | PL | BY |
-| `mr:0306-fridolinus` | Bad Säckingen (Q522362) | CH | DE |
+| `mr:0306-fridolinus-saconii` | Bad Säckingen (Q522362) | CH | DE |
 | `mr:0307-basilius-et-socii` | Chersonesus (Q638445) | GR | UA |
-| `mr:0310-macarius` | no opening place | IL | PS |
-| `mr:0311-sophronius` | Jerusalem (Q1218) | IL | PS |
-| `mr:0316-papa` | Seleucia (Q1136681) | TR | IQ |
-| `mr:0318-cyrillus` | no opening place | IL | PS |
-| `mr:0318-alexander` | no opening place | IL | PS |
-| `mr:0324-maccarthemus` | Clogher (Q2283248) | IE | GB |
-| `mr:0325-everardus` | Schaffhausen (Q9009) | DE | CH |
+| `mr:0310-macarius-hierosolymitanus` | no opening place | IL | PS |
+| `mr:0311-sophronius-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
+| `mr:0316-papa-seleuciae` | Seleucia (Q1136681) | TR | IQ |
+| `mr:0318-cyrillus-hierosolymitanus` | no opening place | IL | PS |
+| `mr:0318-alexander-hierosolymorum` | no opening place | IL | PS |
+| `mr:0324-maccarthemus-clocerie` | Clogher (Q2283248) | IE | GB |
+| `mr:0325-everardus-probatopolis` | Schaffhausen (Q9009) | DE | CH |
 | `mr:0326-montanus-et-maxima` | Sirmium (Q833060) | HR | RS |
-| `mr:0328-hilarion` | Uludağ (Q925688) | GR | TR |
+| `mr:0328-hilarion-pelecetensis` | Uludağ (Q925688) | GR | TR |
 | `mr:0402-theodora` | Caesarea Maritima (Q319242) | LB | PS |
 | `mr:0405-pherbutha` | Seleucia (Q1136681) | IR | IQ |
 | `mr:0406-irenaeus` | Sirmium (Q833060) | HR | RS |
@@ -1655,7 +1655,7 @@ mark on the names it Italianizes (Argéo, Teógene, Sant’Ágabo): it is not th
 final accents (Gesù, Natività) and the accents of names left untranslated (García, Brébeuf, Nguyễn), which the Latin
 text prints the same way, are kept. Also corrected: 16 pair labels that had lost their second name ("Santi Cornelio
 e Cipriano"), 16 Vietnamese names garbled in an earlier copy of the CEI text ("Nguyñên" -> "Nguyễn"), and 9 labels
-taken from the wrong words (mr:0302-agnes "Santa Chiara nel monastero da lei" -> "Sant’Agnese"). `extract_subjects.py`
+taken from the wrong words (mr:0302-agnes-pragae "Santa Chiara nel monastero da lei" -> "Sant’Agnese"). `extract_subjects.py`
 now runs a name on through surname particles, skips a bracketed baptismal name and a leading descriptor, and
 normalizes each Italian label with `it_label`.
 
