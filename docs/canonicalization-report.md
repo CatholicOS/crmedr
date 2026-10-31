@@ -130,6 +130,13 @@ city is their place of death (curated, since it does not open the text).
 19 March: mr:0501-ioseph-sponsus-mariae → mr:0501-ioseph-opifex. The ID follows its subject, Sanctus
 Ioseph Opifex; the person mentioned is Joseph (Q128267), as on 19 March.
 
+**Faith of Agen** (#251): *sanctæ Fídei, mártyris* is feminine, Saint Faith (Santa Fede), so
+mr:1006-fideus-aginni → mr:1006-fides-aginni, after her subject Sancta Fides Aginni.
+
+**Joseph, Spouse of the Blessed Virgin Mary** (#251): the subject of mr:0319-ioseph-sponsus-mariae
+carries the full title, Sanctus Ioseph Sponsus Beatae Mariae Virginis. The ID keeps its short form; the
+title is a discriminator, so the person stays Ioseph (Q128267).
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
 
