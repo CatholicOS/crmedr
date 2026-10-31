@@ -3714,8 +3714,8 @@
         }
       ],
       "date": {
-        "from": 435,
-        "to": 444,
+        "from": 430,
+        "to": 439,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -9517,7 +9517,7 @@
       ],
       "date": {
         "from": 97,
-        "to": 116,
+        "to": 109,
         "basis": "death",
         "source": "wikidata"
       },
@@ -32157,8 +32157,8 @@
         }
       ],
       "date": {
-        "from": 126,
-        "to": 135,
+        "from": 120,
+        "to": 129,
         "basis": "death",
         "source": "wikidata"
       },
@@ -40107,8 +40107,8 @@
         }
       ],
       "date": {
-        "from": 85,
-        "to": 94,
+        "from": 80,
+        "to": 89,
         "source": "wikidata"
       }
     },
@@ -52005,8 +52005,8 @@
         }
       ],
       "date": {
-        "from": 605,
-        "to": 614,
+        "from": 600,
+        "to": 609,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -52348,8 +52348,8 @@
         }
       ],
       "date": {
-        "from": 605,
-        "to": 614,
+        "from": 600,
+        "to": 609,
         "source": "wikidata"
       },
       "unnumbered": true,
@@ -60238,7 +60238,7 @@
         }
       ],
       "date": {
-        "year": 251,
+        "year": 551,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -61221,9 +61221,10 @@
         }
       ],
       "date": {
-        "year": 1271,
+        "year": 1327,
         "basis": "translation",
-        "source": "wikidata"
+        "source": "curated",
+        "note": "relics translated to San Giacomo, Caltagirone, 19 June 1327"
       }
     },
     {
@@ -64023,8 +64024,8 @@
         }
       ],
       "date": {
-        "from": 205,
-        "to": 214,
+        "from": 200,
+        "to": 209,
         "basis": "death",
         "source": "wikidata"
       }
@@ -64526,8 +64527,8 @@
         }
       ],
       "date": {
-        "from": 205,
-        "to": 214,
+        "from": 200,
+        "to": 209,
         "basis": "death",
         "source": "wikidata"
       }

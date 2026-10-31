@@ -562,8 +562,8 @@
    "source": "wikidata"
   },
   "mr:0110-agathon-papa": {
-   "from": 435,
-   "to": 444,
+   "from": 430,
+   "to": 439,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -1567,7 +1567,7 @@
   },
   "mr:0126-timotheus-et-titus": {
    "from": 97,
-   "to": 116,
+   "to": 109,
    "basis": "death",
    "source": "wikidata"
   },
@@ -5274,8 +5274,8 @@
    "source": "wikidata"
   },
   "mr:0403-xystus-i": {
-   "from": 126,
-   "to": 135,
+   "from": 120,
+   "to": 129,
    "basis": "death",
    "source": "wikidata"
   },
@@ -6534,8 +6534,8 @@
    "source": "wikidata"
   },
   "mr:0425-anianus-alexandriae": {
-   "from": 85,
-   "to": 94,
+   "from": 80,
+   "to": 89,
    "source": "wikidata"
   },
   "mr:0425-bonifatius-valperga": {
@@ -8497,8 +8497,8 @@
    "source": "wikidata"
   },
   "mr:0526-augustinus-cantuariae": {
-   "from": 605,
-   "to": 614,
+   "from": 600,
+   "to": 609,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -8579,8 +8579,8 @@
    "source": "wikidata"
   },
   "mr:0527-augustinus-cantuariensis": {
-   "from": 605,
-   "to": 614,
+   "from": 600,
+   "to": 609,
    "source": "wikidata"
   },
   "mr:0527-barbara-kim-et-barbara-yi": {
@@ -9802,7 +9802,7 @@
    "source": "wikidata"
   },
   "mr:0616-aurelianus-arelatensis": {
-   "year": 251,
+   "year": 551,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -9968,9 +9968,10 @@
    "source": "wikidata"
   },
   "mr:0619-gerlandus-calatae-hieronis": {
-   "year": 1271,
+   "year": 1327,
    "basis": "translation",
-   "source": "wikidata"
+   "source": "curated",
+   "note": "relics translated to San Giacomo, Caltagirone, 19 June 1327"
   },
   "mr:0619-gervasius-et-protasius": {
    "to": 1630,
@@ -10459,8 +10460,8 @@
    "source": "wikidata"
   },
   "mr:0628-plutarchus-et-socii": {
-   "from": 205,
-   "to": 214,
+   "from": 200,
+   "to": 209,
    "basis": "death",
    "source": "wikidata"
   },
@@ -10518,8 +10519,8 @@
    "source": "wikidata"
   },
   "mr:0630-basilides-alexandriae": {
-   "from": 205,
-   "to": 214,
+   "from": 200,
+   "to": 209,
    "basis": "death",
    "source": "wikidata"
   },

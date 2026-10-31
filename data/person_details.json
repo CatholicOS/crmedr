@@ -43930,26 +43930,6 @@
       "es": "Antusa de Constantinopla"
     }
   },
-  "Q2177432": {
-    "description": {
-      "en": "saint and martyr",
-      "it": "santo venerato dalla Chiesa cattolica"
-    },
-    "born": {
-      "year": 200,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 251,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "it": "Aureliano (martire)"
-    }
-  },
   "Q2180834": {
     "description": {
       "en": "Christian martyr (†250)",
@@ -44644,6 +44624,30 @@
       "fr": "Lucien de Beauvais",
       "de": "Lucianus von Beauvais",
       "es": "Luciano de Beauvais"
+    }
+  },
+  "Q2263241": {
+    "description": {
+      "en": "French saint and archbishop",
+      "it": "vescovo franco"
+    },
+    "born": {
+      "year": 523,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 551,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Aurelianus of Arles",
+      "it": "Aureliano di Arles",
+      "fr": "Aurélien d'Arles",
+      "es": "Aureliano de Arlés",
+      "pt": "Aureliano de Arles"
     }
   },
   "Q2264391": {
