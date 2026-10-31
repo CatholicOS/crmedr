@@ -4302,6 +4302,29 @@
           "qid": null
         }
       ],
+      "mr:0830-fantinus-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "f526a1bc",
+          "qid": "Q17151",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "97a4325f",
+          "name": "Fantinus Iunior"
+        }
+      ],
       "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
         {
           "kind": "place",

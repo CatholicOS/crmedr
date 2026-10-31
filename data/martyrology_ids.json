@@ -79524,7 +79524,7 @@
       "entry": 1,
       "asterisk": false,
       "country": "IT",
-      "typology": "dies_natalis",
+      "typology": "celebratio",
       "places": [
         {
           "role": "exile",
@@ -79583,7 +79583,6 @@
       ],
       "date": {
         "year": 371,
-        "basis": "death",
         "source": "wikidata"
       },
       "unnumbered": true
