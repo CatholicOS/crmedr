@@ -51,5 +51,37 @@ class CheckTest(unittest.TestCase):
         self.assertEqual(b.main(["check", str(ROOT)]), 0)
 
 
+def ent(*parts, members=()):  # a raw Wikidata entity with P361 values, and P527 when given
+    claims = {"P361": [{"mainsnak": {"datavalue": {"value": {"id": q}}}} for q in parts]}
+    if members:
+        claims["P527"] = [{"mainsnak": {"datavalue": {"value": {"id": q}}}} for q in members]
+    return {"claims": claims}
+
+
+class GroupTest(unittest.TestCase):
+    def test_suggest_group(self):
+        E = {"Q1": ent("G"), "Q2": ent("G"), "Q3": ent()}
+        self.assertEqual(b.suggest_group(["Q1", "Q2", "Q3"], E), "G")
+        self.assertIsNone(b.suggest_group(["Q1"], E))                          # one is not a group
+        E2 = {"Q1": ent("G"), "Q2": ent("H"), "Q3": ent("G"), "Q4": ent("H")}
+        self.assertIsNone(b.suggest_group(["Q1", "Q2", "Q3", "Q4"], E2))       # a tie suggests nothing
+        E3 = {**E, "Q4": ent(), "Q5": ent()}
+        self.assertIsNone(b.suggest_group(["Q1", "Q2", "Q3", "Q4", "Q5"], E3))  # 2 of 5
+
+    def test_member_of_counts_like_part_of(self):
+        E = {"Q1": {"claims": {"P463": [{"mainsnak": {"datavalue": {"value": {"id": "G"}}}}]}}, "Q2": ent("G")}
+        self.assertEqual(b.suggest_group(["Q1", "Q2"], E), "G")
+
+    def test_non_members(self):
+        E = {"G": ent(members=["Q2"]), "Q1": ent("G"), "Q2": ent(), "Q3": ent()}
+        self.assertEqual(b.non_members("G", ["Q1", "Q2", "Q3"], E), ["Q3"])  # Q2 counts through P527
+
+    def test_persons_without_an_item_are_ignored(self):
+        self.assertEqual(b.non_members("G", [], {"G": ent()}), [])
+
+    def test_committed_report_is_current(self):
+        self.assertEqual(b.main(["report", "--check", str(ROOT)]), 0)
+
+
 if __name__ == "__main__":
     unittest.main()
