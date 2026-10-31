@@ -76,7 +76,7 @@ FEAST_IDS = {
     "mr:0211-maria-de-lourdes",
     "mr:0222-cathedra-petri-apostoli",
     "mr:0325-annuntiatio-domini",
-    "mr:0501-ioseph-sponsus-mariae",  # Joseph the Worker: a title feast, not an event
+    "mr:0501-ioseph-opifex",  # Joseph the Worker: a title feast, not an event
     "mr:0513-maria-de-fatima",
     "mr:0531-visitatio-beatae-mariae-virginis",
     "mr:0716-maria-de-monte-carmelo",
