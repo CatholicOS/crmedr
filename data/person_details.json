@@ -71058,7 +71058,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "es": "Pedro Yi Hoyong"
+    }
   },
   "Q11818270": {
     "description": {
@@ -80205,7 +80207,7 @@
     "born": {
       "year": 1760,
       "precision": "year",
-      "circa": true
+      "circa": false
     },
     "died": {
       "year": 1834,
@@ -81058,8 +81060,16 @@
     "description": {
       "fr": "prêtre vietnamien du XVIIIe siècle"
     },
-    "born": null,
-    "died": null,
+    "born": {
+      "year": 1756,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1798,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {
       "fr": "Emmanuel Nguyen Van Trieu"
@@ -87826,6 +87836,16 @@
       "precision": "year",
       "circa": false
     },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141946750": {
+    "description": {
+      "en": "lector and martyr of Emesa, companion of Saint Silvanus",
+      "it": "lettore e martire a Emesa, compagno di san Silvano"
+    },
+    "born": null,
+    "died": null,
     "image": null,
     "wikipedia": {}
   }
