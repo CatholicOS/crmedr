@@ -52,8 +52,9 @@ DATE_KEYS = ("year", "from", "to", "circa", "basis", "source", "note")
 def life_range(died):
     """(first, last, circa) of a person_details life date; there is no year 0."""
     year, precision = died["year"], died.get("precision", "year")
-    if precision == "decade":
-        first, last = year, year + 9
+    if precision == "decade":  # any year of the decade stands for it: 205 is the 200s
+        start = abs(year) // 10 * 10
+        first, last = (start, start + 9) if year > 0 else (-start - 9, -start)
     elif precision == "century":
         n = math.ceil(abs(year) / 100)
         first, last = (100 * (n - 1) + 1, 100 * n) if year > 0 else (-100 * n, -100 * (n - 1) - 1)

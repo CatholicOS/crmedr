@@ -13264,6 +13264,40 @@
       "pt": "Ricarda da Suábia"
     }
   },
+  "Q235849": {
+    "description": {
+      "en": "mother of John the Baptist and the wife of Zacharias/Zachary, according to the Gospel of Luke",
+      "it": "madre di Giovanni il Battista",
+      "fr": "personnage de l'Évangile et du Coran",
+      "de": "Mutter Johannes des Täufers",
+      "es": "madre de Juan el bautista",
+      "pt": "mãe de São João Baptista e prima da Virgem Maria, mãe de Jesus, de acordo com o Evangelho de São Lucas"
+    },
+    "born": {
+      "year": -100,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Scuola provenzale, visitazione, 1490 ca, sant'elisabetta (cropped).jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "wikipedia": {
+      "en": "Elizabeth, mother of John the Baptist",
+      "it": "Elisabetta (madre del Battista)",
+      "fr": "Élisabeth (mère de Jean le Baptiste)",
+      "de": "Elisabet",
+      "es": "Isabel (madre de Juan el Bautista)",
+      "pt": "Isabel (Bíblia)"
+    }
+  },
   "Q235853": {
     "description": {
       "en": "Catholic Saint and Mystic (1647-1690)",
@@ -37693,11 +37727,11 @@
   },
   "Q705858": {
     "description": {
-      "en": "Italian Catholic bishop and blessed (1200 - 1270)",
-      "it": "vescovo e beato cattolico italiano (1200 - 1270)",
-      "fr": "évêque catholique italien et bienheureux (1200 - 1270)",
+      "en": "Italian Catholic bishop and blessed (1200-1270)",
+      "it": "vescovo e beato cattolico italiano (1200-1270)",
+      "fr": "évêque catholique italien et bienheureux (1200-1270)",
       "de": "Bischof von Vicenza und Gründer des Ordens der Frati gaudenti",
-      "es": "obispo y beato católico italiano (1200 - 1270)"
+      "es": "obispo y beato católico italiano (1200-1270)"
     },
     "born": {
       "year": 1200,
@@ -59758,26 +59792,6 @@
       "es": "Antusa de Constantinopla"
     }
   },
-  "Q2177432": {
-    "description": {
-      "en": "saint and martyr",
-      "it": "santo venerato dalla Chiesa cattolica"
-    },
-    "born": {
-      "year": 200,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 251,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "it": "Aureliano (martire)"
-    }
-  },
   "Q2180834": {
     "description": {
       "en": "Christian martyr (†250)",
@@ -60652,6 +60666,30 @@
       "fr": "Lucien de Beauvais",
       "de": "Lucianus von Beauvais",
       "es": "Luciano de Beauvais"
+    }
+  },
+  "Q2263241": {
+    "description": {
+      "en": "French saint and archbishop",
+      "it": "vescovo franco"
+    },
+    "born": {
+      "year": 523,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 551,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Aurelianus of Arles",
+      "it": "Aureliano di Arles",
+      "fr": "Aurélien d'Arles",
+      "es": "Aureliano de Arlés",
+      "pt": "Aureliano de Arles"
     }
   },
   "Q2264391": {
@@ -62408,6 +62446,7 @@
   },
   "Q2381772": {
     "description": {
+      "en": "Scottish saint (died c. 650)",
       "es": "monje del siglo VII de origen irlandés o escocés"
     },
     "born": {
@@ -62422,6 +62461,7 @@
     },
     "image": null,
     "wikipedia": {
+      "en": "Wasnulf",
       "fr": "Wasnon de Condé",
       "es": "Wasnulfo"
     }
@@ -66398,6 +66438,7 @@
     "description": {
       "en": "Frankish bishop of Tongeren-Maastricht",
       "it": "vescovo e santo franco",
+      "fr": "vice-roi d'Austrasie",
       "de": "Fränkischer Bischof von Tongeren-Maastricht"
     },
     "born": {
@@ -72994,7 +73035,9 @@
     }
   },
   "Q3301647": {
-    "description": {},
+    "description": {
+      "de": "Heiliger"
+    },
     "born": {
       "year": 500,
       "precision": "century",
@@ -73007,7 +73050,8 @@
     },
     "image": null,
     "wikipedia": {
-      "fr": "Maurin d'Agen"
+      "fr": "Maurin d'Agen",
+      "de": "Maurinus von Agen"
     }
   },
   "Q3302416": {
@@ -78179,8 +78223,9 @@
   },
   "Q3733656": {
     "description": {
-      "en": "Anglo-Saxon princess, abbess and saint",
-      "it": "monaca inglese"
+      "en": "Anglo-Saxon princess, abbess, and saint",
+      "it": "monaca inglese",
+      "fr": "princesse, abbesse, et sainte anglo-saxonne"
     },
     "born": null,
     "died": {
@@ -91404,7 +91449,7 @@
   },
   "Q6080918": {
     "description": {
-      "en": "Spanish philosopher",
+      "en": "Spanish Catholic martyr, killed in 1936",
       "it": "filosofo spagnolo",
       "fr": "philosophe espagnol",
       "es": "filósofo español",
@@ -97311,7 +97356,11 @@
   "Q9166504": {
     "description": {},
     "born": null,
-    "died": null,
+    "died": {
+      "year": 304,
+      "precision": "year",
+      "circa": false
+    },
     "image": {
       "file": "Menologion of Basil 058.jpg",
       "author": "Authors of Menologion of Basil II (circa 985 AC, Constantinople), Byzantine manuscript illuminators[1]: Pantoleon with Georgios, Michael the Younger, Michael of Blachernae, Symeon, Symeon of Blachernae, Menas, and Nestor (Online on Vatican site)",
@@ -97699,7 +97748,9 @@
     }
   },
   "Q9253356": {
-    "description": {},
+    "description": {
+      "fr": "prêtre vietnamien du XVIIIe siècle"
+    },
     "born": {
       "year": 1756,
       "precision": "year",
@@ -97711,7 +97762,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "fr": "Emmanuel Nguyen Van Trieu"
+    }
   },
   "Q9253823": {
     "description": {
@@ -100572,7 +100625,9 @@
     }
   },
   "Q11698657": {
-    "description": {},
+    "description": {
+      "en": "Vietnamese martyr"
+    },
     "born": {
       "year": 1790,
       "precision": "year",
@@ -104027,7 +104082,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "es": "Pedro Yi Hoyong"
+    }
   },
   "Q11818270": {
     "description": {
@@ -109487,7 +109544,12 @@
       "precision": "year",
       "circa": false
     },
-    "image": null,
+    "image": {
+      "file": "Domènec Castellet a l'església d'Esparraguera - 1905.jpg",
+      "author": "C. Almirall",
+      "license": "Public domain",
+      "license_url": null
+    },
     "wikipedia": {}
   },
   "Q20028700": {
@@ -111409,6 +111471,7 @@
   },
   "Q23829677": {
     "description": {
+      "en": "saint",
       "it": "vescovo romano"
     },
     "born": {
@@ -119645,7 +119708,11 @@
     "description": {
       "en": "16th-century Augustinian and martyr"
     },
-    "born": null,
+    "born": {
+      "year": 1580,
+      "precision": "year",
+      "circa": false
+    },
     "died": {
       "year": 1632,
       "precision": "year",
@@ -122317,8 +122384,16 @@
     "description": {
       "fr": "prêtre vietnamien du XVIIIe siècle"
     },
-    "born": null,
-    "died": null,
+    "born": {
+      "year": 1756,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1798,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {
       "fr": "Emmanuel Nguyen Van Trieu"
@@ -125874,7 +125949,8 @@
     "description": {
       "en": "French priest, one of the Fourteen Martyrs of Laval",
       "it": "sacerdote francese, uno dei quattordici martiri di Laval",
-      "fr": "prêtre français, un des quatorze martyrs de Laval"
+      "fr": "prêtre français, un des quatorze martyrs de Laval",
+      "de": "französischer Priester"
     },
     "born": {
       "year": 1736,
@@ -125887,7 +125963,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "de": "François Duschesne"
+    }
   },
   "Q141894162": {
     "description": {
@@ -137816,6 +137894,16 @@
       "precision": "year",
       "circa": true
     },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141946750": {
+    "description": {
+      "en": "lector and martyr of Emesa, companion of Saint Silvanus",
+      "it": "lettore e martire a Emesa, compagno di san Silvano"
+    },
+    "born": null,
+    "died": null,
     "image": null,
     "wikipedia": {}
   }

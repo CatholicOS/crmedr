@@ -3714,8 +3714,8 @@
         }
       ],
       "date": {
-        "from": 435,
-        "to": 444,
+        "from": 430,
+        "to": 439,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -9517,7 +9517,7 @@
       ],
       "date": {
         "from": 97,
-        "to": 116,
+        "to": 109,
         "basis": "death",
         "source": "wikidata"
       },
@@ -14047,8 +14047,10 @@
         }
       ],
       "date": {
-        "year": 288,
-        "source": "wikidata"
+        "from": 201,
+        "to": 300,
+        "circa": true,
+        "source": "estimate"
       }
     },
     {
@@ -32155,8 +32157,8 @@
         }
       ],
       "date": {
-        "from": 126,
-        "to": 135,
+        "from": 120,
+        "to": 129,
         "basis": "death",
         "source": "wikidata"
       },
@@ -40105,8 +40107,8 @@
         }
       ],
       "date": {
-        "from": 85,
-        "to": 94,
+        "from": 80,
+        "to": 89,
         "source": "wikidata"
       }
     },
@@ -52003,8 +52005,8 @@
         }
       ],
       "date": {
-        "from": 605,
-        "to": 614,
+        "from": 600,
+        "to": 609,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -52324,7 +52326,7 @@
       "entry": 1,
       "asterisk": false,
       "country": "GB",
-      "typology": "dies_natalis",
+      "typology": "celebratio",
       "places": [
         {
           "role": "ministry",
@@ -52346,9 +52348,8 @@
         }
       ],
       "date": {
-        "from": 605,
-        "to": 614,
-        "basis": "death",
+        "from": 600,
+        "to": 609,
         "source": "wikidata"
       },
       "unnumbered": true,
@@ -60237,7 +60238,7 @@
         }
       ],
       "date": {
-        "year": 251,
+        "year": 551,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -61220,9 +61221,10 @@
         }
       ],
       "date": {
-        "year": 1271,
+        "year": 1327,
         "basis": "translation",
-        "source": "wikidata"
+        "source": "curated",
+        "note": "relics translated to San Giacomo, Caltagirone, 19 June 1327"
       }
     },
     {
@@ -64022,8 +64024,8 @@
         }
       ],
       "date": {
-        "from": 205,
-        "to": 214,
+        "from": 200,
+        "to": 209,
         "basis": "death",
         "source": "wikidata"
       }
@@ -64525,8 +64527,8 @@
         }
       ],
       "date": {
-        "from": 205,
-        "to": 214,
+        "from": 200,
+        "to": 209,
         "basis": "death",
         "source": "wikidata"
       }
@@ -77701,8 +77703,8 @@
         }
       ],
       "date": {
-        "from": 302,
-        "to": 311,
+        "from": 300,
+        "to": 309,
         "basis": "death",
         "source": "wikidata"
       }
@@ -79521,7 +79523,7 @@
       "entry": 1,
       "asterisk": false,
       "country": "IT",
-      "typology": "dies_natalis",
+      "typology": "celebratio",
       "places": [
         {
           "role": "exile",
@@ -79580,7 +79582,6 @@
       ],
       "date": {
         "year": 371,
-        "basis": "death",
         "source": "wikidata"
       },
       "unnumbered": true
@@ -101095,8 +101096,8 @@
         }
       ],
       "date": {
-        "from": 129,
-        "to": 138,
+        "from": 120,
+        "to": 129,
         "source": "wikidata"
       }
     },
@@ -101949,7 +101950,7 @@
       "typology": "commemoratio",
       "date": {
         "from": 1,
-        "to": 1420,
+        "to": 100,
         "source": "wikidata"
       },
       "same_eulogy": [
@@ -124932,9 +124933,9 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "year": 304,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {

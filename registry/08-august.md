@@ -23,7 +23,7 @@
 | 1 | 17 | `mr:0801-iosephus-de-miguel-arahal` | * | ES | dies_natalis |  |  |
 | 1 | 18 | `mr:0801-alexius-sobaszek` | * | DE | dies_natalis |  |  |
 | 1 | 19 | `mr:0801-adelheidis-mardosewicz-et-socii` | * | BY | dies_natalis |  |  |
-| 2 | (1) | `mr:0802-eusebius-vercellensis` |  | IT | dies_natalis |  |  |
+| 2 | (1) | `mr:0802-eusebius-vercellensis` |  | IT | celebratio |  |  |
 | 2 | (2) | `mr:0802-petrus-iulianus-eymard` |  | FR | celebratio |  |  |
 | 2 | 3 | `mr:0802-rutilius-africae` |  | TN | commemoratio |  |  |
 | 2 | 4 | `mr:0802-stephanus-i` |  | IT | dies_natalis |  |  |

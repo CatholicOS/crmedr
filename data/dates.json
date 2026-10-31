@@ -562,8 +562,8 @@
    "source": "wikidata"
   },
   "mr:0110-agathon-papa": {
-   "from": 435,
-   "to": 444,
+   "from": 430,
+   "to": 439,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -1567,7 +1567,7 @@
   },
   "mr:0126-timotheus-et-titus": {
    "from": 97,
-   "to": 116,
+   "to": 109,
    "basis": "death",
    "source": "wikidata"
   },
@@ -2313,8 +2313,10 @@
    "source": "wikidata"
   },
   "mr:0206-silvanus-emesae": {
-   "year": 288,
-   "source": "wikidata"
+   "from": 201,
+   "to": 300,
+   "circa": true,
+   "source": "estimate"
   },
   "mr:0206-vedastus-atrebati": {
    "year": 540,
@@ -5272,8 +5274,8 @@
    "source": "wikidata"
   },
   "mr:0403-xystus-i": {
-   "from": 126,
-   "to": 135,
+   "from": 120,
+   "to": 129,
    "basis": "death",
    "source": "wikidata"
   },
@@ -6532,8 +6534,8 @@
    "source": "wikidata"
   },
   "mr:0425-anianus-alexandriae": {
-   "from": 85,
-   "to": 94,
+   "from": 80,
+   "to": 89,
    "source": "wikidata"
   },
   "mr:0425-bonifatius-valperga": {
@@ -8495,8 +8497,8 @@
    "source": "wikidata"
   },
   "mr:0526-augustinus-cantuariae": {
-   "from": 605,
-   "to": 614,
+   "from": 600,
+   "to": 609,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -8577,9 +8579,8 @@
    "source": "wikidata"
   },
   "mr:0527-augustinus-cantuariensis": {
-   "from": 605,
-   "to": 614,
-   "basis": "death",
+   "from": 600,
+   "to": 609,
    "source": "wikidata"
   },
   "mr:0527-barbara-kim-et-barbara-yi": {
@@ -9801,7 +9802,7 @@
    "source": "wikidata"
   },
   "mr:0616-aurelianus-arelatensis": {
-   "year": 251,
+   "year": 551,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -9967,9 +9968,10 @@
    "source": "wikidata"
   },
   "mr:0619-gerlandus-calatae-hieronis": {
-   "year": 1271,
+   "year": 1327,
    "basis": "translation",
-   "source": "wikidata"
+   "source": "curated",
+   "note": "relics translated to San Giacomo, Caltagirone, 19 June 1327"
   },
   "mr:0619-gervasius-et-protasius": {
    "to": 1630,
@@ -10458,8 +10460,8 @@
    "source": "wikidata"
   },
   "mr:0628-plutarchus-et-socii": {
-   "from": 205,
-   "to": 214,
+   "from": 200,
+   "to": 209,
    "basis": "death",
    "source": "wikidata"
   },
@@ -10517,8 +10519,8 @@
    "source": "wikidata"
   },
   "mr:0630-basilides-alexandriae": {
-   "from": 205,
-   "to": 214,
+   "from": 200,
+   "to": 209,
    "basis": "death",
    "source": "wikidata"
   },
@@ -12722,8 +12724,8 @@
    "source": "wikidata"
   },
   "mr:0729-simplicius-et-socii": {
-   "from": 302,
-   "to": 311,
+   "from": 300,
+   "to": 309,
    "basis": "death",
    "source": "wikidata"
   },
@@ -13002,7 +13004,6 @@
   },
   "mr:0802-eusebius-vercellensis": {
    "year": 371,
-   "basis": "death",
    "source": "wikidata"
   },
   "mr:0802-franciscus-calvo-burillo": {
@@ -16618,8 +16619,8 @@
    "source": "edition"
   },
   "mr:0921-quadratus-athenarum": {
-   "from": 129,
-   "to": 138,
+   "from": 120,
+   "to": 129,
    "source": "wikidata"
   },
   "mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia": {
@@ -16791,7 +16792,7 @@
   },
   "mr:0923-zacharias-et-elisabeth": {
    "from": 1,
-   "to": 1420,
+   "to": 100,
    "source": "wikidata"
   },
   "mr:0924-anatolius-mediolani": {
@@ -20410,9 +20411,9 @@
    "source": "wikidata"
   },
   "mr:1119-barlaam-antiochiae": {
-   "to": 1630,
+   "year": 304,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1119-elisaeus-garcia-et-alexander-planas-sauri": {
    "year": 1936,
