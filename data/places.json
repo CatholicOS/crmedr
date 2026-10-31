@@ -7644,7 +7644,7 @@
         "source": "lead"
       }
     ],
-    "mr:0301-albinus": [
+    "mr:0301-albinus-andegavi": [
       {
         "role": "death",
         "la": "Andégavi in Gállia Lugdunénsi",
@@ -7666,7 +7666,7 @@
         "source": "lead"
       }
     ],
-    "mr:0301-david": [
+    "mr:0301-david-meneviae": [
       {
         "role": "death",
         "la": "Menéviæ in Cámbria",
@@ -7715,14 +7715,6 @@
         "source": "lead"
       }
     ],
-    "mr:0301-leo": [
-      {
-        "role": "death",
-        "la": "In Vascónia",
-        "it": "Nella Guascogna, in Francia",
-        "source": "lead"
-      }
-    ],
     "mr:0301-leo-lucas": [
       {
         "role": "death",
@@ -7737,7 +7729,15 @@
         "source": "curated"
       }
     ],
-    "mr:0301-rudesindus": [
+    "mr:0301-leo-vasconiae": [
+      {
+        "role": "death",
+        "la": "In Vascónia",
+        "it": "Nella Guascogna, in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0301-rudesindus-dumiensis": [
       {
         "role": "death",
         "la": "Cellæ Novæ in Gallǽcia Hispániæ",
@@ -7757,7 +7757,7 @@
         "source": "curated"
       }
     ],
-    "mr:0301-siviardus": [
+    "mr:0301-siviardus-anninsulensis": [
       {
         "role": "death",
         "la": "Apud Cenómanum in Néustria",
@@ -7771,7 +7771,7 @@
         "source": "curated"
       }
     ],
-    "mr:0301-suitbertus": [
+    "mr:0301-suitbertus-werdae": [
       {
         "role": "death",
         "la": "In Werda Rheni ínsula in Saxónia",
@@ -7792,7 +7792,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0302-agnes": [
+    "mr:0302-agnes-pragae": [
       {
         "role": "death",
         "la": "Pragæ in Bohémia",
@@ -7829,7 +7829,7 @@
         "source": "curated"
       }
     ],
-    "mr:0302-ceadda": [
+    "mr:0302-ceadda-lichfeldiae": [
       {
         "role": "death",
         "la": "Lichféldiæ in Anglia",
@@ -7862,7 +7862,7 @@
         "source": "lead"
       }
     ],
-    "mr:0302-troadius": [
+    "mr:0302-troadius-neocaesareae": [
       {
         "role": "death",
         "la": "Neocæsaréæ in Ponto",
@@ -7870,7 +7870,7 @@
         "source": "lead"
       }
     ],
-    "mr:0303-anselmus": [
+    "mr:0303-anselmus-nonantulae": [
       {
         "role": "death",
         "la": "Nonántulæ in Æmília",
@@ -7878,7 +7878,7 @@
         "source": "lead"
       }
     ],
-    "mr:0303-arthellaidis": [
+    "mr:0303-arthellaidis-beneventi": [
       {
         "role": "death",
         "la": "Benevénti in Campánia",
@@ -7902,7 +7902,7 @@
         "source": "lead"
       }
     ],
-    "mr:0303-cunegundis": [
+    "mr:0303-cunegundis-confugiae": [
       {
         "role": "death",
         "la": "Confúgiæ in Hássia",
@@ -7930,7 +7930,7 @@
         "source": "curated"
       }
     ],
-    "mr:0303-fridericus": [
+    "mr:0303-fridericus-frisiae": [
       {
         "role": "death",
         "la": "In Frísia",
@@ -8006,7 +8006,7 @@
         "source": "lead"
       }
     ],
-    "mr:0303-titianus": [
+    "mr:0303-titianus-brixiae": [
       {
         "role": "death",
         "la": "Bríxiæ in Venétia",
@@ -8014,7 +8014,7 @@
         "source": "lead"
       }
     ],
-    "mr:0303-winwaloeus": [
+    "mr:0303-winwaloeus-landevenecensis": [
       {
         "role": "death",
         "la": "In Cornúbia Armóricæ",
@@ -8034,7 +8034,7 @@
         "source": "curated"
       }
     ],
-    "mr:0304-appianus": [
+    "mr:0304-appianus-papiensis": [
       {
         "role": "death",
         "la": "Comácli in Flamínia",
@@ -8048,7 +8048,7 @@
         "source": "curated"
       }
     ],
-    "mr:0304-basinus": [
+    "mr:0304-basinus-trevirorum": [
       {
         "role": "death",
         "la": "Tréviris in Rhenánia Austrásiæ",
@@ -8068,7 +8068,7 @@
         "source": "curated"
       }
     ],
-    "mr:0304-casimirus": [
+    "mr:0304-casimirus-grodnae": [
       {
         "role": "death",
         "la": "óppido Grodna apud Vilnam in Lithuánia",
@@ -8098,7 +8098,7 @@
         "source": "lead"
       }
     ],
-    "mr:0304-humbertus": [
+    "mr:0304-humbertus-camberii": [
       {
         "role": "death",
         "la": "Cambérii in Sabáudia",
@@ -8129,7 +8129,7 @@
         "source": "lead"
       }
     ],
-    "mr:0304-petrus": [
+    "mr:0304-petrus-policastrensis": [
       {
         "role": "death",
         "la": "In monastério Cavénsi in Campánia",
@@ -8173,7 +8173,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-conon": [
+    "mr:0305-conon-pamphyliae": [
       {
         "role": "death",
         "la": "In Pamphýlia",
@@ -8181,7 +8181,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-gerasimus": [
+    "mr:0305-gerasimus-iordanis": [
       {
         "role": "death",
         "la": "In Palæstína ad ripam Iordánis",
@@ -8189,7 +8189,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-hadrianus": [
+    "mr:0305-hadrianus-caesareae": [
       {
         "role": "death",
         "la": "Cæsaréæ in Palæstína",
@@ -8205,7 +8205,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-kieranus": [
+    "mr:0305-kieranus-sagiriae": [
       {
         "role": "death",
         "la": "Sagíriæ in Ossória Hibérniæ regióne",
@@ -8213,7 +8213,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-lucius": [
+    "mr:0305-lucius-i": [
       {
         "role": "burial",
         "la": "Romæ via Appia in cœmetério Callísti",
@@ -8221,7 +8221,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-phoca": [
+    "mr:0305-phoca-sinopes": [
       {
         "role": "death",
         "la": "Sinópe in Ponto",
@@ -8229,7 +8229,7 @@
         "source": "lead"
       }
     ],
-    "mr:0305-theophilus": [
+    "mr:0305-theophilus-caesariensis": [
       {
         "role": "ministry",
         "la": "Cæsariénsis in Palæstína",
@@ -8237,7 +8237,7 @@
         "source": "curated"
       }
     ],
-    "mr:0305-virgilius": [
+    "mr:0305-virgilius-arelatis": [
       {
         "role": "death",
         "la": "Areláte in Província",
@@ -8251,7 +8251,7 @@
         "source": "curated"
       }
     ],
-    "mr:0306-chrodegangus": [
+    "mr:0306-chrodegangus-metarum": [
       {
         "role": "death",
         "la": "Metis in Austrásia",
@@ -8267,7 +8267,7 @@
         "source": "lead"
       }
     ],
-    "mr:0306-evagrius": [
+    "mr:0306-evagrius-constantinopolitanus": [
       {
         "role": "ministry",
         "la": "Constantinopolitáni",
@@ -8275,7 +8275,7 @@
         "source": "curated"
       }
     ],
-    "mr:0306-fridolinus": [
+    "mr:0306-fridolinus-saconii": [
       {
         "role": "death",
         "la": "Sacónii apud Helvétios",
@@ -8295,7 +8295,7 @@
         "source": "curated"
       }
     ],
-    "mr:0306-iulianus": [
+    "mr:0306-iulianus-toleti": [
       {
         "role": "death",
         "la": "Toléti in Hispánia",
@@ -8303,7 +8303,7 @@
         "source": "lead"
       }
     ],
-    "mr:0306-marcianus": [
+    "mr:0306-marcianus-derthonae": [
       {
         "role": "death",
         "la": "Derthónæ in Ligúria",
@@ -8311,7 +8311,7 @@
         "source": "lead"
       }
     ],
-    "mr:0306-ollegarius": [
+    "mr:0306-ollegarius-tarraconensis": [
       {
         "role": "death",
         "la": "Barcinóne in Cataláunia Hispániæ",
@@ -8345,7 +8345,7 @@
         "source": "curated"
       }
     ],
-    "mr:0306-quiriacus": [
+    "mr:0306-quiriacus-trevirorum": [
       {
         "role": "death",
         "la": "Tréviris in Gállia Bélgica",
@@ -8353,7 +8353,7 @@
         "source": "lead"
       }
     ],
-    "mr:0306-rosa": [
+    "mr:0306-rosa-viterbii": [
       {
         "role": "death",
         "la": "Vitérbii in Túscia",
@@ -8361,7 +8361,7 @@
         "source": "lead"
       }
     ],
-    "mr:0306-victorinus": [
+    "mr:0306-victorinus-nicomediae": [
       {
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
@@ -8385,7 +8385,7 @@
         "source": "lead"
       }
     ],
-    "mr:0307-eubulius": [
+    "mr:0307-eubulius-caesareae": [
       {
         "role": "death",
         "la": "Cæsaréæ in Palæstína",
@@ -8393,7 +8393,7 @@
         "source": "lead"
       }
     ],
-    "mr:0307-gaudiosus": [
+    "mr:0307-gaudiosus-brixiae": [
       {
         "role": "death",
         "la": "Bríxiæ in Venétia",
@@ -8431,7 +8431,7 @@
         "source": "lead"
       }
     ],
-    "mr:0307-paulus": [
+    "mr:0307-paulus-prusae": [
       {
         "role": "death",
         "la": "Prusæ in Bithýnia",
@@ -8487,7 +8487,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-duthacus": [
+    "mr:0308-duthacus-rossensis": [
       {
         "role": "burial",
         "la": "In óppido Tayne in Scótia",
@@ -8509,7 +8509,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-felix": [
+    "mr:0308-felix-dumnoci": [
       {
         "role": "death",
         "la": "Dumnóci in Anglia",
@@ -8529,7 +8529,7 @@
         "source": "curated"
       }
     ],
-    "mr:0308-humfridus": [
+    "mr:0308-humfridus-taruannensis": [
       {
         "role": "death",
         "la": "Apud Mórinos in Gállia",
@@ -8556,7 +8556,7 @@
         "source": "curated"
       }
     ],
-    "mr:0308-litiphridus": [
+    "mr:0308-litiphridus-papiae": [
       {
         "role": "death",
         "la": "Pápiæ in Langobárdia",
@@ -8564,7 +8564,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-pontius": [
+    "mr:0308-pontius-carthaginensis": [
       {
         "role": "ministry",
         "la": "Carthágine",
@@ -8572,7 +8572,7 @@
         "source": "curated"
       }
     ],
-    "mr:0308-provinus": [
+    "mr:0308-provinus-comi": [
       {
         "role": "death",
         "la": "Comi in Ligúria",
@@ -8580,7 +8580,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-senanus": [
+    "mr:0308-senanus-cathensis": [
       {
         "role": "death",
         "la": "In ínsula Cathénsi in Hibérnia",
@@ -8588,7 +8588,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-stephanus": [
+    "mr:0308-stephanus-obazinae": [
       {
         "role": "death",
         "la": "Obazínæ apud Lemóvicum in Aquitánia",
@@ -8596,7 +8596,7 @@
         "source": "lead"
       }
     ],
-    "mr:0308-theophilactus": [
+    "mr:0308-theophilactus-nicomediae": [
       {
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
@@ -8610,7 +8610,7 @@
         "source": "curated"
       }
     ],
-    "mr:0308-veremundus": [
+    "mr:0308-veremundus-hyrachensis": [
       {
         "role": "death",
         "la": "Apud Stellam in Navárra",
@@ -8638,7 +8638,7 @@
         "source": "curated"
       }
     ],
-    "mr:0309-bruno": [
+    "mr:0309-bruno-querfurtensis": [
       {
         "role": "death",
         "la": "In Morávia orientáli",
@@ -8664,7 +8664,7 @@
         "source": "curated"
       }
     ],
-    "mr:0309-catharina": [
+    "mr:0309-catharina-bononiae": [
       {
         "role": "death",
         "la": "Bonóniæ in Æmília",
@@ -8680,7 +8680,7 @@
         "source": "lead"
       }
     ],
-    "mr:0309-francisca": [
+    "mr:0309-francisca-romae": [
       {
         "role": "religious_life",
         "la": "Romæ",
@@ -8688,7 +8688,7 @@
         "source": "curated"
       }
     ],
-    "mr:0309-pacianus": [
+    "mr:0309-pacianus-barcinonis": [
       {
         "role": "death",
         "la": "Barcinóne in Hispánia Tarraconénsi",
@@ -8726,7 +8726,7 @@
         "source": "lead"
       }
     ],
-    "mr:0310-attala": [
+    "mr:0310-attala-bobiensis": [
       {
         "role": "death",
         "la": "In monastério Bobiénsi in Ligúria",
@@ -8754,7 +8754,7 @@
         "source": "lead"
       }
     ],
-    "mr:0310-droctoveus": [
+    "mr:0310-droctoveus-parisiorum": [
       {
         "role": "death",
         "la": "Parísiis in Gállia",
@@ -8782,7 +8782,7 @@
         "source": "curated"
       }
     ],
-    "mr:0310-macarius": [
+    "mr:0310-macarius-hierosolymitanus": [
       {
         "role": "ministry",
         "la": "Hierosolymitáni",
@@ -8806,7 +8806,7 @@
         "source": "lead"
       }
     ],
-    "mr:0310-simplicius": [
+    "mr:0310-simplicius-papa": [
       {
         "role": "death",
         "la": "Romæ apud sanctum Petrum",
@@ -8820,7 +8820,7 @@
         "source": "curated"
       }
     ],
-    "mr:0310-victor": [
+    "mr:0310-victor-africae": [
       {
         "role": "cult",
         "la": "In Africa",
@@ -8828,7 +8828,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-benedictus": [
+    "mr:0311-benedictus-mediolani": [
       {
         "role": "burial",
         "la": "Medioláni",
@@ -8836,7 +8836,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-constantinus": [
+    "mr:0311-constantinus-scotiae": [
       {
         "role": "death",
         "la": "In Scótia",
@@ -8852,7 +8852,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-eulogius": [
+    "mr:0311-eulogius-cordubae": [
       {
         "role": "death",
         "la": "Córdubæ in Vandalícia Hispániæ regióne",
@@ -8898,7 +8898,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-pionius": [
+    "mr:0311-pionius-smyrnae": [
       {
         "role": "death",
         "la": "Smyrnæ in Asia",
@@ -8906,7 +8906,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-sophronius": [
+    "mr:0311-sophronius-hierosolymorum": [
       {
         "role": "death",
         "la": "Hierosólymæ",
@@ -8930,7 +8930,7 @@
         "source": "lead"
       }
     ],
-    "mr:0311-vindicianus": [
+    "mr:0311-vindicianus-cameracensis": [
       {
         "role": "death",
         "la": "In Hannónia Néustriæ",
@@ -8966,7 +8966,7 @@
         "source": "lead"
       }
     ],
-    "mr:0312-elphegus": [
+    "mr:0312-elphegus-vintoniae": [
       {
         "role": "death",
         "la": "Vintóniæ in Anglia",
@@ -8974,7 +8974,7 @@
         "source": "lead"
       }
     ],
-    "mr:0312-fina": [
+    "mr:0312-fina-sancti-geminiani": [
       {
         "role": "death",
         "la": "In civitáte Sancti Geminiáni in Etrúria",
@@ -9022,7 +9022,7 @@
         "source": "lead"
       }
     ],
-    "mr:0312-maximilianus": [
+    "mr:0312-maximilianus-thevestis": [
       {
         "role": "death",
         "la": "Thevéste in Numídia",
@@ -9046,7 +9046,7 @@
         "source": "lead"
       }
     ],
-    "mr:0312-petrus": [
+    "mr:0312-petrus-nicomediae": [
       {
         "role": "death",
         "la": "Nicomedíæ in Bithýnia",
@@ -9083,7 +9083,7 @@
         "source": "curated"
       }
     ],
-    "mr:0313-ansovinus": [
+    "mr:0313-ansovinus-camerini": [
       {
         "role": "death",
         "la": "Apud Camerínum in Picéno Itáliæ",
@@ -9091,7 +9091,7 @@
         "source": "lead"
       }
     ],
-    "mr:0313-christina": [
+    "mr:0313-christina-persidis": [
       {
         "role": "death",
         "la": "In Pérside",
@@ -9099,7 +9099,7 @@
         "source": "lead"
       }
     ],
-    "mr:0313-eldradus": [
+    "mr:0313-eldradus-novaliciensis": [
       {
         "role": "death",
         "la": "In monastério Novaliciénsi ad pedes montis Cinísii in valle Segusína",
@@ -9115,7 +9115,7 @@
         "source": "lead"
       }
     ],
-    "mr:0313-leander": [
+    "mr:0313-leander-hispali": [
       {
         "role": "death",
         "la": "Híspali in Hispánia",
@@ -9139,7 +9139,7 @@
         "source": "lead"
       }
     ],
-    "mr:0313-pientius": [
+    "mr:0313-pientius-pictavorum": [
       {
         "role": "death",
         "la": "Pictávii in Aquitánia",
@@ -9155,7 +9155,7 @@
         "source": "lead"
       }
     ],
-    "mr:0313-sabinus": [
+    "mr:0313-sabinus-hermopoli": [
       {
         "role": "death",
         "la": "Hermópoli in Ægýpto",
@@ -9163,7 +9163,7 @@
         "source": "lead"
       }
     ],
-    "mr:0314-alexander": [
+    "mr:0314-alexander-pidnae": [
       {
         "role": "death",
         "la": "Pidnæ in Macedónia",
@@ -9193,7 +9193,7 @@
         "source": "lead"
       }
     ],
-    "mr:0314-lazarus": [
+    "mr:0314-lazarus-mediolani": [
       {
         "role": "death",
         "la": "Medioláni in Ligúria",
@@ -9201,7 +9201,7 @@
         "source": "lead"
       }
     ],
-    "mr:0314-leobinus": [
+    "mr:0314-leobinus-carnuti": [
       {
         "role": "death",
         "la": "Carnúti in Gállia",
@@ -9209,7 +9209,7 @@
         "source": "lead"
       }
     ],
-    "mr:0314-mathildis": [
+    "mr:0314-mathildis-quedlinburgi": [
       {
         "role": "death",
         "la": "Quedlinbúrgi in Saxónia",
@@ -9217,7 +9217,7 @@
         "source": "lead"
       }
     ],
-    "mr:0314-paulina": [
+    "mr:0314-paulina-fuldensis": [
       {
         "role": "death",
         "la": "In pago Fuldénsi in Germánia",
@@ -9269,7 +9269,7 @@
         "source": "lead"
       }
     ],
-    "mr:0315-leocritia": [
+    "mr:0315-leocritia-cordubae": [
       {
         "role": "death",
         "la": "Córdubæ in Vandalícia Hispániæ regióne",
@@ -9285,7 +9285,7 @@
         "source": "lead"
       }
     ],
-    "mr:0315-menignus": [
+    "mr:0315-menignus-parii": [
       {
         "role": "death",
         "la": "Párii in Hellespónto",
@@ -9293,7 +9293,7 @@
         "source": "lead"
       }
     ],
-    "mr:0315-sisebutus": [
+    "mr:0315-sisebutus-caradignensis": [
       {
         "role": "death",
         "la": "Apud Burgum in Castélla Hispániæ regióne",
@@ -9307,7 +9307,7 @@
         "source": "curated"
       }
     ],
-    "mr:0315-zacharias": [
+    "mr:0315-zacharias-papa": [
       {
         "role": "death",
         "la": "Romæ",
@@ -9315,7 +9315,7 @@
         "source": "lead"
       }
     ],
-    "mr:0316-eusebia": [
+    "mr:0316-eusebia-hammaticensis": [
       {
         "role": "death",
         "la": "In Artésia Néustriæ",
@@ -9329,7 +9329,7 @@
         "source": "curated"
       }
     ],
-    "mr:0316-heribertus": [
+    "mr:0316-heribertus-coloniae-agrippinae": [
       {
         "role": "death",
         "la": "Colóniæ Agrippínæ in Germánia",
@@ -9387,7 +9387,7 @@
         "source": "curated"
       }
     ],
-    "mr:0316-iulianus": [
+    "mr:0316-iulianus-anazarbi": [
       {
         "role": "death",
         "la": "Anazárbi in Cilícia",
@@ -9395,7 +9395,7 @@
         "source": "lead"
       }
     ],
-    "mr:0316-papa": [
+    "mr:0316-papa-seleuciae": [
       {
         "role": "death",
         "la": "Seleucíæ in Pérside",
@@ -9409,7 +9409,7 @@
         "source": "curated"
       }
     ],
-    "mr:0317-agricola": [
+    "mr:0317-agricola-cabilloni": [
       {
         "role": "death",
         "la": "Cabillóni in Burgúndia Gálliæ",
@@ -9417,7 +9417,7 @@
         "source": "lead"
       }
     ],
-    "mr:0317-conradus": [
+    "mr:0317-conradus-medunei": [
       {
         "role": "death",
         "la": "Medúnei prope Bárium in Apúlia",
@@ -9439,7 +9439,7 @@
         "source": "lead"
       }
     ],
-    "mr:0317-gertrudis": [
+    "mr:0317-gertrudis-nivellae": [
       {
         "role": "death",
         "la": "Nivéllæ in Brabántia",
@@ -9469,7 +9469,7 @@
         "source": "curated"
       }
     ],
-    "mr:0317-patricius": [
+    "mr:0317-patricius-episcopus": [
       {
         "role": "death",
         "la": "civitátem Dunum in Hibérnia",
@@ -9497,7 +9497,7 @@
         "occurrence_it": 1
       }
     ],
-    "mr:0317-paulus": [
+    "mr:0317-paulus-cypri": [
       {
         "role": "death",
         "la": "In ínsula Cypro",
@@ -9513,7 +9513,7 @@
         "source": "curated"
       }
     ],
-    "mr:0318-alexander": [
+    "mr:0318-alexander-hierosolymorum": [
       {
         "role": "death",
         "la": "Cæsaréam",
@@ -9541,7 +9541,7 @@
         "source": "lead"
       }
     ],
-    "mr:0318-anselmus": [
+    "mr:0318-anselmus-lucensis": [
       {
         "role": "death",
         "la": "Mántuæ in Langobárdia",
@@ -9561,7 +9561,7 @@
         "source": "curated"
       }
     ],
-    "mr:0318-braulio": [
+    "mr:0318-braulio-caesaraugustae": [
       {
         "role": "death",
         "la": "Cæsaraugústæ in Hispánia Tarraconénsi",
@@ -9575,7 +9575,7 @@
         "source": "curated"
       }
     ],
-    "mr:0318-cyrillus": [
+    "mr:0318-cyrillus-hierosolymitanus": [
       {
         "role": "ministry",
         "la": "Hierosolymitáni",
@@ -9583,7 +9583,7 @@
         "source": "curated"
       }
     ],
-    "mr:0318-eduardus": [
+    "mr:0318-eduardus-warehami": [
       {
         "role": "death",
         "la": "Apud óppidum Wareham in Anglia",
@@ -9591,7 +9591,7 @@
         "source": "lead"
       }
     ],
-    "mr:0318-frigdianus": [
+    "mr:0318-frigdianus-lucae": [
       {
         "role": "death",
         "la": "Lucæ in Etrúria",
@@ -9619,7 +9619,7 @@
         "source": "lead"
       }
     ],
-    "mr:0318-leobardus": [
+    "mr:0318-leobardus-turonum": [
       {
         "role": "death",
         "la": "Turónis in Néustria",
@@ -9655,20 +9655,6 @@
         "source": "lead"
       }
     ],
-    "mr:0319-ioannes": [
-      {
-        "role": "death",
-        "la": "Apud Spolétum in Umbria",
-        "it": "Presso Spoleto in Umbria",
-        "source": "lead"
-      },
-      {
-        "role": "religious_life",
-        "la": "Parranénsis",
-        "it": "Parrano",
-        "source": "curated"
-      }
-    ],
     "mr:0319-ioannes-de-parma": [
       {
         "role": "death",
@@ -9680,6 +9666,20 @@
         "role": "birth",
         "la": "Parma",
         "it": "Parma",
+        "source": "curated"
+      }
+    ],
+    "mr:0319-ioannes-parranensis": [
+      {
+        "role": "death",
+        "la": "Apud Spolétum in Umbria",
+        "it": "Presso Spoleto in Umbria",
+        "source": "lead"
+      },
+      {
+        "role": "religious_life",
+        "la": "Parranénsis",
+        "it": "Parrano",
         "source": "curated"
       }
     ],
@@ -9749,7 +9749,7 @@
         "source": "lead"
       }
     ],
-    "mr:0320-archippus": [
+    "mr:0320-archippus-commilito": [
       {
         "role": "mention",
         "la": "Colossénses",
@@ -9765,7 +9765,7 @@
         "source": "lead"
       }
     ],
-    "mr:0320-cuthbertus": [
+    "mr:0320-cuthbertus-lindisfarnensis": [
       {
         "role": "death",
         "la": "In ínsula Farna in Northúmbria",
@@ -9839,7 +9839,7 @@
         "source": "lead"
       }
     ],
-    "mr:0320-martinus": [
+    "mr:0320-martinus-bracarensis": [
       {
         "role": "death",
         "la": "Brácaræ in Lusitánia",
@@ -9859,7 +9859,7 @@
         "source": "curated"
       }
     ],
-    "mr:0320-nicetas": [
+    "mr:0320-nicetas-apolloniae": [
       {
         "role": "ministry",
         "la": "Apollóniæ in Macedónia",
@@ -9875,7 +9875,7 @@
         "source": "lead"
       }
     ],
-    "mr:0320-urbicius": [
+    "mr:0320-urbicius-metarum": [
       {
         "role": "death",
         "la": "Metis in Gállia Bélgica",
@@ -9891,7 +9891,7 @@
         "source": "lead"
       }
     ],
-    "mr:0320-vulframnus": [
+    "mr:0320-vulframnus-senonensis": [
       {
         "role": "burial",
         "la": "In monastério Fontanéllæ in Néustria",
@@ -9927,7 +9927,7 @@
         "source": "lead"
       }
     ],
-    "mr:0321-benedictus": [
+    "mr:0321-benedictus-casini": [
       {
         "role": "death",
         "la": "In Monte Casíno",
@@ -9935,7 +9935,7 @@
         "source": "lead"
       }
     ],
-    "mr:0321-endeus": [
+    "mr:0321-endeus-araniensis": [
       {
         "role": "death",
         "la": "In Hibérnia",
@@ -9957,7 +9957,7 @@
         "source": "lead"
       }
     ],
-    "mr:0321-ioannes": [
+    "mr:0321-ioannes-valentiae": [
       {
         "role": "death",
         "la": "Iúliæ Valéntiæ in pago Viennénsi Gálliæ",
@@ -9971,7 +9971,7 @@
         "source": "curated"
       }
     ],
-    "mr:0321-lupicinus": [
+    "mr:0321-lupicinus-iurensis": [
       {
         "role": "death",
         "la": "Laucónæ in pago Lugdunénsi",
@@ -10015,7 +10015,7 @@
         "source": "lead"
       }
     ],
-    "mr:0321-serapion": [
+    "mr:0321-serapion-aegypti": [
       {
         "role": "death",
         "la": "In Ægýpto",
@@ -10031,7 +10031,7 @@
         "source": "lead"
       }
     ],
-    "mr:0322-basilius": [
+    "mr:0322-basilius-ancyrae": [
       {
         "role": "death",
         "la": "Ancýræ item in Galátia",
@@ -10063,7 +10063,7 @@
         "source": "lead"
       }
     ],
-    "mr:0322-lea": [
+    "mr:0322-lea-romae": [
       {
         "role": "mention",
         "la": "románæ",
@@ -10087,7 +10087,7 @@
         "source": "lead"
       }
     ],
-    "mr:0322-paulus": [
+    "mr:0322-paulus-narbonis": [
       {
         "role": "burial",
         "la": "Narbóne ad oram Gálliæ via Domítia extra Urbem",
@@ -10118,7 +10118,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0323-fingar": [
+    "mr:0323-fingar-cornubiae": [
       {
         "role": "death",
         "la": "In Cornúbia",
@@ -10126,7 +10126,7 @@
         "source": "lead"
       }
     ],
-    "mr:0323-gualterius": [
+    "mr:0323-gualterius-pontisarae": [
       {
         "role": "death",
         "la": "Pontísaræ apud Parísios in Gállia",
@@ -10150,7 +10150,7 @@
         "source": "lead"
       }
     ],
-    "mr:0323-otho": [
+    "mr:0323-otho-ariani": [
       {
         "role": "death",
         "la": "Ariáni in Hirpínia",
@@ -10158,7 +10158,7 @@
         "source": "lead"
       }
     ],
-    "mr:0323-petrus": [
+    "mr:0323-petrus-eugubii": [
       {
         "role": "death",
         "la": "Eugúbii in Umbria",
@@ -10228,7 +10228,7 @@
         "source": "curated"
       }
     ],
-    "mr:0324-catharina": [
+    "mr:0324-catharina-suecica": [
       {
         "role": "death",
         "la": "Vásteni in Suécia",
@@ -10277,7 +10277,7 @@
         "source": "lead"
       }
     ],
-    "mr:0324-maccarthemus": [
+    "mr:0324-maccarthemus-clocerie": [
       {
         "role": "death",
         "la": "Clocériæ in Hibérnia",
@@ -10293,7 +10293,7 @@
         "source": "lead"
       }
     ],
-    "mr:0324-secundulus": [
+    "mr:0324-secundulus-mauretaniae": [
       {
         "role": "death",
         "la": "In Mauretánia",
@@ -10301,7 +10301,7 @@
         "source": "lead"
       }
     ],
-    "mr:0324-severus": [
+    "mr:0324-severus-catanae": [
       {
         "role": "death",
         "la": "Cátanæ in Sicília",
@@ -10333,7 +10333,7 @@
         "source": "curated"
       }
     ],
-    "mr:0325-dula": [
+    "mr:0325-dula-nicomediae": [
       {
         "role": "death",
         "la": "Nicomedíæ",
@@ -10341,7 +10341,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-everardus": [
+    "mr:0325-everardus-probatopolis": [
       {
         "role": "death",
         "la": "Probatópoli in Suévia",
@@ -10367,7 +10367,7 @@
         "source": "curated"
       }
     ],
-    "mr:0325-hermelandus": [
+    "mr:0325-hermelandus-fontanellensis": [
       {
         "role": "death",
         "la": "In ínsula Antro prope Nannétes in Gállia",
@@ -10419,7 +10419,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-matrona": [
+    "mr:0325-matrona-thessalonicensis": [
       {
         "role": "death",
         "la": "Thessalonícæ in Macedónia",
@@ -10435,7 +10435,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-mona": [
+    "mr:0325-mona-mediolani": [
       {
         "role": "death",
         "la": "Medioláni in Transpadána",
@@ -10443,7 +10443,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-nicodemus": [
+    "mr:0325-nicodemus-mammulae": [
       {
         "role": "death",
         "la": "Mámmulæ prope Hierácium in Calábria",
@@ -10459,7 +10459,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-procopius": [
+    "mr:0325-procopius-sazavae": [
       {
         "role": "death",
         "la": "Sázavæ in Bohémia",
@@ -10467,7 +10467,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-quirinus": [
+    "mr:0325-quirinus-romae": [
       {
         "role": "death",
         "la": "Romæ in cœmetério Pontiáni via Portuénsi",
@@ -10475,7 +10475,7 @@
         "source": "lead"
       }
     ],
-    "mr:0325-thomas": [
+    "mr:0325-thomas-costacciarii": [
       {
         "role": "death",
         "la": "Apud Costacciárium in Umbria",
@@ -10491,7 +10491,7 @@
         "source": "lead"
       }
     ],
-    "mr:0326-bercharius": [
+    "mr:0326-bercharius-dervensis": [
       {
         "role": "death",
         "la": "In monastério Dervénsi in Campánia Gálliæ regióne",
@@ -10505,7 +10505,7 @@
         "source": "curated"
       }
     ],
-    "mr:0326-castulus": [
+    "mr:0326-castulus-romae": [
       {
         "role": "death",
         "la": "Romæ via Labicána",
@@ -10521,7 +10521,7 @@
         "source": "lead"
       }
     ],
-    "mr:0326-eutychius": [
+    "mr:0326-eutychius-alexandrinus": [
       {
         "role": "ministry",
         "la": "alexandríni",
@@ -10529,7 +10529,7 @@
         "source": "curated"
       }
     ],
-    "mr:0326-liudgerus": [
+    "mr:0326-liudgerus-monasteriensis": [
       {
         "role": "death",
         "la": "In monastério Werthinénsi in Saxónia",
@@ -10585,7 +10585,7 @@
         "source": "lead"
       }
     ],
-    "mr:0326-petrus": [
+    "mr:0326-petrus-sebastes": [
       {
         "role": "death",
         "la": "Sebáste in Arménia",
@@ -10629,7 +10629,7 @@
         "source": "curated"
       }
     ],
-    "mr:0327-rupertus": [
+    "mr:0327-rupertus-salisburgi": [
       {
         "role": "death",
         "la": "Salisbúrgi in Bavária",
@@ -10658,7 +10658,7 @@
         "source": "lead"
       }
     ],
-    "mr:0328-castor": [
+    "mr:0328-castor-tarsi": [
       {
         "role": "death",
         "la": "Tarsi in Cilícia",
@@ -10674,7 +10674,7 @@
         "source": "lead"
       }
     ],
-    "mr:0328-conus": [
+    "mr:0328-conus-nasi": [
       {
         "role": "death",
         "la": "Nasi apud Messánam in Sicília",
@@ -10688,7 +10688,7 @@
         "source": "curated"
       }
     ],
-    "mr:0328-cyrillus": [
+    "mr:0328-cyrillus-heliopoli": [
       {
         "role": "death",
         "la": "Heliópoli in Phœnícia",
@@ -10696,7 +10696,7 @@
         "source": "lead"
       }
     ],
-    "mr:0328-gunthramnus": [
+    "mr:0328-gunthramnus-cabilloni": [
       {
         "role": "burial",
         "la": "Cabillóni in Burgúndia Gálliæ",
@@ -10704,7 +10704,7 @@
         "source": "lead"
       }
     ],
-    "mr:0328-hilarion": [
+    "mr:0328-hilarion-pelecetensis": [
       {
         "role": "death",
         "la": "Apud montem Olýmpum in Bithýnia",
@@ -10742,7 +10742,7 @@
         "source": "curated"
       }
     ],
-    "mr:0328-proterius": [
+    "mr:0328-proterius-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -10780,7 +10780,7 @@
         "source": "curated"
       }
     ],
-    "mr:0329-bertholdus": [
+    "mr:0329-bertholdus-carmelo": [
       {
         "role": "death",
         "la": "In monte Carmélo in Palæstína",
@@ -10788,7 +10788,7 @@
         "source": "lead"
       }
     ],
-    "mr:0329-eustasius": [
+    "mr:0329-eustasius-neapoli": [
       {
         "role": "cult",
         "la": "Neápoli in Campánia",
@@ -10812,7 +10812,7 @@
         "source": "lead"
       }
     ],
-    "mr:0329-ludolphus": [
+    "mr:0329-ludolphus-raceburgensis": [
       {
         "role": "death",
         "la": "Wismáriæ in Holsátia Germániæ",
@@ -10826,7 +10826,7 @@
         "source": "curated"
       }
     ],
-    "mr:0329-marcus": [
+    "mr:0329-marcus-arethusae": [
       {
         "role": "ministry",
         "la": "Arethúsæ in Sýria",
@@ -10834,7 +10834,7 @@
         "source": "curated"
       }
     ],
-    "mr:0330-amadeus": [
+    "mr:0330-amadeus-vercellarum": [
       {
         "role": "death",
         "la": "Vercéllis in Subalpínis",
@@ -10856,7 +10856,7 @@
         "source": "lead"
       }
     ],
-    "mr:0330-clinius": [
+    "mr:0330-clinius-aquini": [
       {
         "role": "death",
         "la": "Apud Aquínum in Látio",
@@ -10870,7 +10870,7 @@
         "source": "curated"
       }
     ],
-    "mr:0330-domninus": [
+    "mr:0330-domninus-thessalonicensis": [
       {
         "role": "death",
         "la": "Thessalonícæ in Macedónia",
@@ -10892,7 +10892,7 @@
         "source": "curated"
       }
     ],
-    "mr:0330-ioannes": [
+    "mr:0330-ioannes-climacus": [
       {
         "role": "death",
         "la": "In monte Sina",
@@ -10930,7 +10930,7 @@
         "source": "curated"
       }
     ],
-    "mr:0330-osburga": [
+    "mr:0330-osburga-conventriae": [
       {
         "role": "death",
         "la": "Convéntriæ in Anglia",
@@ -10960,7 +10960,7 @@
         "source": "curated"
       }
     ],
-    "mr:0330-regulus": [
+    "mr:0330-regulus-augustomagi": [
       {
         "role": "death",
         "la": "Augustómagi in Gállia Lugdunénsi",
@@ -10968,7 +10968,7 @@
         "source": "lead"
       }
     ],
-    "mr:0330-secundus": [
+    "mr:0330-secundus-astae-pompeiae": [
       {
         "role": "death",
         "la": "Astæ Pompéiæ in Transpadána",
@@ -10976,7 +10976,7 @@
         "source": "lead"
       }
     ],
-    "mr:0330-zosimus": [
+    "mr:0330-zosimus-syracusis": [
       {
         "role": "death",
         "la": "Syracúsis in Sicília",
@@ -10984,7 +10984,7 @@
         "source": "lead"
       }
     ],
-    "mr:0331-agilolphus": [
+    "mr:0331-agilolphus-coloniae-agrippinae": [
       {
         "role": "death",
         "la": "Colóniæ Agrippínæ in Austrásia",
@@ -10992,7 +10992,7 @@
         "source": "lead"
       }
     ],
-    "mr:0331-balbina": [
+    "mr:0331-balbina-romae": [
       {
         "role": "cult",
         "la": "Romæ",
@@ -11006,7 +11006,7 @@
         "source": "curated"
       }
     ],
-    "mr:0331-beniamin": [
+    "mr:0331-beniamin-argol": [
       {
         "role": "death",
         "la": "In loco Argol in Pérside",
@@ -11042,7 +11042,7 @@
         "source": "lead"
       }
     ],
-    "mr:0331-guido": [
+    "mr:0331-guido-pomposae": [
       {
         "role": "death",
         "la": "Burgi Sancti Domníni in agro Parménsi",
@@ -11056,7 +11056,7 @@
         "source": "curated"
       }
     ],
-    "mr:0331-ioanna": [
+    "mr:0331-ioanna-tolosae": [
       {
         "role": "death",
         "la": "Tolósæ in Gállia",
@@ -11086,7 +11086,7 @@
         "source": "lead"
       }
     ],
-    "mr:0401-celsus": [
+    "mr:0401-celsus-armachanus": [
       {
         "role": "death",
         "la": "In loco Ardpatrick in Momónia Hibérniæ província",
@@ -11100,7 +11100,7 @@
         "source": "curated"
       }
     ],
-    "mr:0401-gilbertus": [
+    "mr:0401-gilbertus-cathani": [
       {
         "role": "death",
         "la": "Catháni in Scótia",
@@ -11178,7 +11178,7 @@
         "source": "curated"
       }
     ],
-    "mr:0401-valericus": [
+    "mr:0401-valericus-lauconae": [
       {
         "role": "death",
         "la": "Laucónæ prope Ambiánum in Gállia",
@@ -11206,7 +11206,7 @@
         "source": "curated"
       }
     ],
-    "mr:0402-abundius": [
+    "mr:0402-abundius-comi": [
       {
         "role": "death",
         "la": "Comi in Ligúria",
@@ -11220,7 +11220,7 @@
         "source": "curated"
       }
     ],
-    "mr:0402-apphianus": [
+    "mr:0402-apphianus-caesareae": [
       {
         "role": "death",
         "la": "Cæsaréæ in Palæstína",
@@ -11252,7 +11252,7 @@
         "source": "lead"
       }
     ],
-    "mr:0402-eustasius": [
+    "mr:0402-eustasius-luxovii": [
       {
         "role": "death",
         "la": "In monastério Luxoviénsi in Burgúndia",
@@ -11326,7 +11326,7 @@
         "source": "curated"
       }
     ],
-    "mr:0402-nicetius": [
+    "mr:0402-nicetius-lugduni": [
       {
         "role": "death",
         "la": "Lugdúni in Gállia",
@@ -11354,13 +11354,13 @@
         "source": "curated"
       }
     ],
-    "mr:0402-theodora": [
+    "mr:0402-theodora-caesareae": [
       {
         "role": "death",
         "la": "Cæsaréæ in Palæstína",
         "it": "A Cesarea in Palestina",
         "source": "lead",
-        "via": "mr:0402-apphianus"
+        "via": "mr:0402-apphianus-caesareae"
       },
       {
         "role": "birth",
@@ -11369,7 +11369,7 @@
         "source": "curated"
       }
     ],
-    "mr:0402-victor": [
+    "mr:0402-victor-capuae": [
       {
         "role": "death",
         "la": "Cápuæ in Campánia",
@@ -11443,7 +11443,7 @@
         "source": "curated"
       }
     ],
-    "mr:0403-nicetas": [
+    "mr:0403-nicetas-medicii": [
       {
         "role": "death",
         "la": "In monastério Medícii in Bithýnia",
@@ -11459,7 +11459,7 @@
         "source": "lead"
       }
     ],
-    "mr:0403-richardus": [
+    "mr:0403-richardus-cicestriae": [
       {
         "role": "death",
         "la": "Cicéstriæ in Anglia",
@@ -11475,7 +11475,7 @@
         "source": "lead"
       }
     ],
-    "mr:0403-ulpianus": [
+    "mr:0403-ulpianus-tyri": [
       {
         "role": "death",
         "la": "Tyri in Phœnícia",
@@ -11499,7 +11499,7 @@
         "source": "lead"
       }
     ],
-    "mr:0404-ambrosius": [
+    "mr:0404-ambrosius-mediolani": [
       {
         "role": "burial",
         "la": "Medioláni in Ligúria",
@@ -11547,7 +11547,7 @@
         "source": "lead"
       }
     ],
-    "mr:0404-isidorus": [
+    "mr:0404-isidorus-hispalensis": [
       {
         "role": "ministry",
         "la": "Hispalénsi in Hispánia Bǽtica",
@@ -11555,7 +11555,7 @@
         "source": "curated"
       }
     ],
-    "mr:0404-petrus": [
+    "mr:0404-petrus-pictavii": [
       {
         "role": "death",
         "la": "Pictávii in Aquitánia",
@@ -11581,7 +11581,7 @@
         "source": "curated"
       }
     ],
-    "mr:0404-platon": [
+    "mr:0404-platon-constantinopoli": [
       {
         "role": "death",
         "la": "Constantinópoli",
@@ -11595,7 +11595,7 @@
         "source": "curated"
       }
     ],
-    "mr:0405-albertus": [
+    "mr:0405-albertus-montis-corbini": [
       {
         "role": "death",
         "la": "Monte Corbíno in Apúlia",
@@ -11619,7 +11619,7 @@
         "source": "lead"
       }
     ],
-    "mr:0405-geraldus": [
+    "mr:0405-geraldus-silvae-maioris": [
       {
         "role": "death",
         "la": "In monastério Silvæ Maióris in Aquitánia",
@@ -11639,7 +11639,7 @@
         "source": "curated"
       }
     ],
-    "mr:0405-irenes": [
+    "mr:0405-irenes-thessalonicensis": [
       {
         "role": "death",
         "la": "Thessalonícæ in Macedónia",
@@ -11647,7 +11647,7 @@
         "source": "lead"
       }
     ],
-    "mr:0405-iuliana": [
+    "mr:0405-iuliana-fossarum": [
       {
         "role": "death",
         "la": "Apud Fossas in Brabántia",
@@ -11669,7 +11669,7 @@
         "source": "lead"
       }
     ],
-    "mr:0405-pherbutha": [
+    "mr:0405-pherbutha-seleuciae": [
       {
         "role": "death",
         "la": "Seleucíæ in Pérside",
@@ -11705,7 +11705,7 @@
         "source": "lead"
       }
     ],
-    "mr:0406-eutychius": [
+    "mr:0406-eutychius-constantinopoli": [
       {
         "role": "death",
         "la": "Constantinópoli",
@@ -11713,7 +11713,7 @@
         "source": "lead"
       }
     ],
-    "mr:0406-galla": [
+    "mr:0406-galla-romae": [
       {
         "role": "death",
         "la": "Romæ",
@@ -11727,7 +11727,7 @@
         "source": "curated"
       }
     ],
-    "mr:0406-gulielmus": [
+    "mr:0406-gulielmus-parisiensis": [
       {
         "role": "death",
         "la": "In ínsula Eschíloe prope Roschíldiam in Dánia",
@@ -11741,7 +11741,7 @@
         "source": "curated"
       }
     ],
-    "mr:0406-irenaeus": [
+    "mr:0406-irenaeus-sirmii": [
       {
         "role": "death",
         "la": "Sírmii in Pannónia",
@@ -11749,7 +11749,7 @@
         "source": "lead"
       }
     ],
-    "mr:0406-methodius": [
+    "mr:0406-methodius-veleradii": [
       {
         "role": "death",
         "la": "Velerádii in Morávia",
@@ -11803,7 +11803,7 @@
         "source": "curated"
       }
     ],
-    "mr:0406-philaretus": [
+    "mr:0406-philaretus-palmae": [
       {
         "role": "death",
         "la": "In monastério Sancti Elíæ de Aulínis apud Palmam in Calábria",
@@ -11811,16 +11811,16 @@
         "source": "lead"
       }
     ],
-    "mr:0406-prudentius": [
+    "mr:0406-prudentius-trecarum": [
       {
         "role": "death",
         "la": "Trecis in Néustria",
         "it": "A Troyes nel territorio della Neustria, in Francia",
         "source": "lead",
-        "via": "mr:0406-winebaldus"
+        "via": "mr:0406-winebaldus-trecarum"
       }
     ],
-    "mr:0406-winebaldus": [
+    "mr:0406-winebaldus-trecarum": [
       {
         "role": "death",
         "la": "Trecis in Néustria",
@@ -11842,7 +11842,7 @@
         "source": "lead"
       }
     ],
-    "mr:0407-aibertus": [
+    "mr:0407-aibertus-crispiniensis": [
       {
         "role": "death",
         "la": "Apud monastérium Crispiniénse in Hannónia",
@@ -11850,7 +11850,7 @@
         "source": "lead"
       }
     ],
-    "mr:0407-calliopius": [
+    "mr:0407-calliopius-pompeiopoli": [
       {
         "role": "death",
         "la": "Pompeiópoli in Cilícia",
@@ -11874,7 +11874,7 @@
         "source": "lead"
       }
     ],
-    "mr:0407-georgius": [
+    "mr:0407-georgius-mytilenarum": [
       {
         "role": "death",
         "la": "Mytilénis in ínsula Lesbo",
@@ -11882,7 +11882,7 @@
         "source": "lead"
       }
     ],
-    "mr:0407-hegesippus": [
+    "mr:0407-hegesippus-romae": [
       {
         "role": "mention",
         "la": "Romæ",
@@ -11928,7 +11928,7 @@
         "source": "lead"
       }
     ],
-    "mr:0407-pelusius": [
+    "mr:0407-pelusius-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -11952,7 +11952,7 @@
         "source": "lead"
       }
     ],
-    "mr:0408-amantius": [
+    "mr:0408-amantius-comi": [
       {
         "role": "death",
         "la": "Comi in Ligúria",
@@ -12024,7 +12024,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-acacius": [
+    "mr:0409-acacius-amidae": [
       {
         "role": "death",
         "la": "Amídæ in Mesopotámia",
@@ -12032,13 +12032,13 @@
         "source": "lead"
       }
     ],
-    "mr:0409-aedesius": [
+    "mr:0409-aedesius-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
         "it": "Ad Alessandria d’Egitto",
         "source": "lead",
-        "via": "mr:0409-maximus"
+        "via": "mr:0409-maximus-alexandriae"
       }
     ],
     "mr:0409-antonius-pavonus": [
@@ -12057,7 +12057,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-casilda": [
+    "mr:0409-casilda-birovescae": [
       {
         "role": "death",
         "la": "In loco Sancto Vincéntio prope Birovéscam in Castélla Hispániæ",
@@ -12065,7 +12065,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-demetrius": [
+    "mr:0409-demetrius-thessalonicensis": [
       {
         "role": "death",
         "la": "Apud Sírmium in Pannónia",
@@ -12085,7 +12085,7 @@
         "source": "curated"
       }
     ],
-    "mr:0409-eupsychius": [
+    "mr:0409-eupsychius-caesareae": [
       {
         "role": "death",
         "la": "Cæsaréæ in Cappadócia",
@@ -12093,7 +12093,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-gaucherius": [
+    "mr:0409-gaucherius-aurelii": [
       {
         "role": "death",
         "la": "Aurélii in pago Lemovicénsi Gálliæ",
@@ -12101,7 +12101,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-hugo": [
+    "mr:0409-hugo-rothomagensis": [
       {
         "role": "death",
         "la": "Gemmétici item in Néustria",
@@ -12133,7 +12133,7 @@
         "source": "curated"
       }
     ],
-    "mr:0409-liborius": [
+    "mr:0409-liborius-cenomanorum": [
       {
         "role": "death",
         "la": "Cenómani in Gállia Lugdunénsi",
@@ -12141,7 +12141,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-maximus": [
+    "mr:0409-maximus-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -12184,7 +12184,7 @@
         "source": "lead"
       }
     ],
-    "mr:0409-valdetrudis": [
+    "mr:0409-valdetrudis-castriloci": [
       {
         "role": "death",
         "la": "Castríloci in Hannónia Néustriæ",
@@ -12207,7 +12207,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0410-apollonius": [
+    "mr:0410-apollonius-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -12215,7 +12215,7 @@
         "source": "lead"
       }
     ],
-    "mr:0410-beda": [
+    "mr:0410-beda-gavelli": [
       {
         "role": "death",
         "la": "Gavélli in Venétia",
@@ -12231,7 +12231,7 @@
         "source": "lead"
       }
     ],
-    "mr:0410-fulbertus": [
+    "mr:0410-fulbertus-carnuti": [
       {
         "role": "death",
         "la": "Carnúti in Gállia",
@@ -12239,7 +12239,7 @@
         "source": "lead"
       }
     ],
-    "mr:0410-macarius": [
+    "mr:0410-macarius-gandavi": [
       {
         "role": "death",
         "la": "Gandávi in Flándria",
@@ -12277,7 +12277,7 @@
         "source": "lead"
       }
     ],
-    "mr:0410-palladius": [
+    "mr:0410-palladius-autissiodori": [
       {
         "role": "death",
         "la": "Autissiodóri in Néustria",
@@ -12299,7 +12299,7 @@
         "source": "lead"
       }
     ],
-    "mr:0411-antipa": [
+    "mr:0411-antipa-pergami": [
       {
         "role": "cult",
         "la": "Pérgami in Asia",
@@ -12315,7 +12315,7 @@
         "source": "lead"
       }
     ],
-    "mr:0411-barsanuphius": [
+    "mr:0411-barsanuphius-gazae": [
       {
         "role": "death",
         "la": "Apud Gazam in Palæstína",
@@ -12329,7 +12329,7 @@
         "source": "curated"
       }
     ],
-    "mr:0411-domnio": [
+    "mr:0411-domnio-salonae": [
       {
         "role": "death",
         "la": "Salónæ in Dalmátia",
@@ -12368,7 +12368,7 @@
         "via": "mr:0411-gemma-galganus"
       }
     ],
-    "mr:0411-isaac": [
+    "mr:0411-isaac-spoleti": [
       {
         "role": "death",
         "la": "Spoléti in Umbria",
@@ -12388,7 +12388,7 @@
         "source": "curated"
       }
     ],
-    "mr:0411-lanuinus": [
+    "mr:0411-lanuinus-calabriae": [
       {
         "role": "death",
         "la": "In Calábria",
@@ -12396,7 +12396,7 @@
         "source": "lead"
       }
     ],
-    "mr:0411-philippus": [
+    "mr:0411-philippus-gortynae": [
       {
         "role": "ministry",
         "la": "Gortýnæ in ínsula Creta",
@@ -12404,7 +12404,7 @@
         "source": "curated"
       }
     ],
-    "mr:0411-sancia": [
+    "mr:0411-sancia-conimbriae": [
       {
         "role": "death",
         "la": "Apud Conímbriam in Lusitánia",
@@ -12424,7 +12424,7 @@
         "source": "curated"
       }
     ],
-    "mr:0411-stanislaus": [
+    "mr:0411-stanislaus-cracoviensis": [
       {
         "role": "ministry",
         "la": "Cracoviénsem",
@@ -12446,7 +12446,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-alferius": [
+    "mr:0412-alferius-cavensis": [
       {
         "role": "death",
         "la": "In monastério Cavénsi in Campánia",
@@ -12466,7 +12466,7 @@
         "source": "curated"
       }
     ],
-    "mr:0412-basilius": [
+    "mr:0412-basilius-parii": [
       {
         "role": "death",
         "la": "Párii in Hellespónto",
@@ -12474,7 +12474,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-constantinus": [
+    "mr:0412-constantinus-vapinci": [
       {
         "role": "death",
         "la": "Apud Vapíncum in Província Gálliæ",
@@ -12482,7 +12482,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-damianus": [
+    "mr:0412-damianus-papiae": [
       {
         "role": "death",
         "la": "Pápiæ in Langobárdia",
@@ -12504,7 +12504,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-erkembodo": [
+    "mr:0412-erkembodo-taruannensis": [
       {
         "role": "death",
         "la": "In pago Pontívo Gálliæ",
@@ -12554,7 +12554,7 @@
         "source": "curated"
       }
     ],
-    "mr:0412-laurentius": [
+    "mr:0412-laurentius-belemensis": [
       {
         "role": "death",
         "la": "In monastério Beleménsi prope Ulyssipónem in Lusitánia",
@@ -12570,7 +12570,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-vissia": [
+    "mr:0412-vissia-firmi": [
       {
         "role": "death",
         "la": "Firmi in Picéno Itáliæ",
@@ -12578,7 +12578,7 @@
         "source": "lead"
       }
     ],
-    "mr:0412-zeno": [
+    "mr:0412-zeno-veronae": [
       {
         "role": "death",
         "la": "Verónæ in Venétia",
@@ -12586,7 +12586,7 @@
         "source": "lead"
       }
     ],
-    "mr:0413-albertinus": [
+    "mr:0413-albertinus-fontis-avellanae": [
       {
         "role": "death",
         "la": "In monastério Fontis Avellánæ in Umbria",
@@ -12594,7 +12594,7 @@
         "source": "lead"
       }
     ],
-    "mr:0413-caradocus": [
+    "mr:0413-caradocus-meneviae": [
       {
         "role": "death",
         "la": "Menéviæ in Cámbria",
@@ -12631,19 +12631,11 @@
         "source": "curated"
       }
     ],
-    "mr:0413-hermenegildus": [
+    "mr:0413-hermenegildus-tarraconis": [
       {
         "role": "death",
         "la": "Tarracóne in Hispánia",
         "it": "A Tarragona in Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0413-ida": [
-      {
-        "role": "death",
-        "la": "In monastério Cisterciénsi Vallis Rosárum in Brabántia",
-        "it": "Nel monastero cistercense di Roosendaal nel Brabante, nell’odierna Olanda",
         "source": "lead"
       }
     ],
@@ -12652,6 +12644,14 @@
         "role": "death",
         "la": "In monastério Sanctæ Maríæ de Capélla prope Vastum in pago Gálliæ Boloniénsi",
         "it": "Nel monastero di Santa Maria presso Wast nella regione di Boulogne in Francia",
+        "source": "lead"
+      }
+    ],
+    "mr:0413-ida-vallis-rosarum": [
+      {
+        "role": "death",
+        "la": "In monastério Cisterciénsi Vallis Rosárum in Brabántia",
+        "it": "Nel monastero cistercense di Roosendaal nel Brabante, nell’odierna Olanda",
         "source": "lead"
       }
     ],
@@ -12671,7 +12671,7 @@
         "source": "lead"
       }
     ],
-    "mr:0413-margarita": [
+    "mr:0413-margarita-tiferni-tiberini": [
       {
         "role": "death",
         "la": "Tiférni Tiberíni in Umbria",
@@ -12720,7 +12720,7 @@
         "source": "lead"
       }
     ],
-    "mr:0413-ursus": [
+    "mr:0413-ursus-ravennae": [
       {
         "role": "death",
         "la": "Ravénnæ in Flamínia",
@@ -12734,7 +12734,7 @@
         "source": "curated"
       }
     ],
-    "mr:0414-asicus": [
+    "mr:0414-asicus-elphini": [
       {
         "role": "death",
         "la": "Elphíni in Hibérnia",
@@ -12742,7 +12742,7 @@
         "source": "lead"
       }
     ],
-    "mr:0414-benedictus": [
+    "mr:0414-benedictus-avenionis": [
       {
         "role": "death",
         "la": "Avenióne in Província",
@@ -12756,7 +12756,7 @@
         "source": "curated"
       }
     ],
-    "mr:0414-bernardus": [
+    "mr:0414-bernardus-tironiensis": [
       {
         "role": "death",
         "la": "In monastério Tironiénsi apud Carnútum in Gállia",
@@ -12778,7 +12778,7 @@
         "source": "lead"
       }
     ],
-    "mr:0414-fronto": [
+    "mr:0414-fronto-nitriensis": [
       {
         "role": "death",
         "la": "In erémo Nitriénsi in Ægýpto",
@@ -12786,7 +12786,7 @@
         "source": "lead"
       }
     ],
-    "mr:0414-ioannes": [
+    "mr:0414-ioannes-montis-marani": [
       {
         "role": "death",
         "la": "Monte Maráno in Campánia",
@@ -12802,7 +12802,7 @@
         "source": "lead"
       }
     ],
-    "mr:0414-lambertus": [
+    "mr:0414-lambertus-lugduni": [
       {
         "role": "death",
         "la": "Lugdúni in Gállia",
@@ -12816,7 +12816,7 @@
         "source": "curated"
       }
     ],
-    "mr:0414-liduina": [
+    "mr:0414-liduina-schiedami": [
       {
         "role": "death",
         "la": "Schiedámi in Géldria",
@@ -12832,7 +12832,7 @@
         "source": "lead"
       }
     ],
-    "mr:0414-thomais": [
+    "mr:0414-thomais-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -12848,7 +12848,7 @@
         "source": "lead"
       }
     ],
-    "mr:0415-abundius": [
+    "mr:0415-abundius-romae": [
       {
         "role": "cult",
         "la": "Romæ apud sanctum Petrum",
@@ -12864,7 +12864,7 @@
         "source": "lead"
       }
     ],
-    "mr:0415-crescens": [
+    "mr:0415-crescens-myrae": [
       {
         "role": "death",
         "la": "Myræ in Lýcia",
@@ -12880,7 +12880,7 @@
         "source": "lead"
       }
     ],
-    "mr:0415-maro": [
+    "mr:0415-maro-montis-aurei": [
       {
         "role": "death",
         "la": "In monte Aureo in Picéno Itáliæ",
@@ -12888,7 +12888,7 @@
         "source": "lead"
       }
     ],
-    "mr:0415-ortarius": [
+    "mr:0415-ortarius-andeleiensis": [
       {
         "role": "death",
         "la": "In monastério Andeleiénsi in pago Baiocénsi in Normánnia",
@@ -12896,7 +12896,7 @@
         "source": "lead"
       }
     ],
-    "mr:0415-paternus": [
+    "mr:0415-paternus-abrincensis": [
       {
         "role": "burial",
         "la": "Sescíaci in pago Constantiénsi Gálliæ",
@@ -12935,7 +12935,7 @@
         "via": "mr:0416-optatus-et-socii"
       }
     ],
-    "mr:0416-contardus": [
+    "mr:0416-contardus-bronae": [
       {
         "role": "cult",
         "la": "Bronæ prope Pápiam in Langobárdia",
@@ -12949,7 +12949,7 @@
         "source": "curated"
       }
     ],
-    "mr:0416-drogo": [
+    "mr:0416-drogo-seburgi": [
       {
         "role": "death",
         "la": "Sebúrgi in Hannónia",
@@ -12957,7 +12957,7 @@
         "source": "lead"
       }
     ],
-    "mr:0416-engratia": [
+    "mr:0416-engratia-caesaraugustae": [
       {
         "role": "cult",
         "la": "Cæsaraugústæ in Hispánia Tarraconénsi",
@@ -12966,7 +12966,7 @@
         "via": "mr:0416-optatus-et-socii"
       }
     ],
-    "mr:0416-fructuosus": [
+    "mr:0416-fructuosus-dumiensis": [
       {
         "role": "death",
         "la": "Brácaræ in Lusitánia",
@@ -12986,7 +12986,7 @@
         "source": "curated"
       }
     ],
-    "mr:0416-ioachimus": [
+    "mr:0416-ioachimus-senensis": [
       {
         "role": "death",
         "la": "Senis in Etrúria",
@@ -13002,7 +13002,7 @@
         "source": "lead"
       }
     ],
-    "mr:0416-magnus": [
+    "mr:0416-magnus-orcadum": [
       {
         "role": "death",
         "la": "In Scótia",
@@ -13052,7 +13052,7 @@
         "source": "lead"
       }
     ],
-    "mr:0416-turibius": [
+    "mr:0416-turibius-asturicae": [
       {
         "role": "death",
         "la": "Astúricæ Augústæ in regno Suevórum item in Hispánia",
@@ -13068,7 +13068,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0417-acacius": [
+    "mr:0417-acacius-melitenae": [
       {
         "role": "death",
         "la": "Meliténe in Arménia",
@@ -13136,7 +13136,7 @@
         "source": "lead"
       }
     ],
-    "mr:0417-innocentius": [
+    "mr:0417-innocentius-derthonae": [
       {
         "role": "death",
         "la": "Derthónæ in Ligúria",
@@ -13152,7 +13152,7 @@
         "source": "lead"
       }
     ],
-    "mr:0417-pantagathus": [
+    "mr:0417-pantagathus-viennae": [
       {
         "role": "death",
         "la": "Viénnæ in Burgúndia",
@@ -13166,6 +13166,20 @@
         "la": "Meliténe in Arménia",
         "it": "A Melitene nell’antica Armenia",
         "source": "lead"
+      }
+    ],
+    "mr:0417-plurimi-martyres-persidis": [
+      {
+        "role": "death",
+        "la": "Adiabéna província",
+        "it": "provincia dell’Adiabene",
+        "source": "curated"
+      },
+      {
+        "role": "death",
+        "la": "Pérsidis",
+        "it": "Persia",
+        "source": "curated"
       }
     ],
     "mr:0417-robertus-casae": [
@@ -13190,7 +13204,7 @@
         "source": "curated"
       }
     ],
-    "mr:0417-simeon": [
+    "mr:0417-simeon-seleuciae": [
       {
         "role": "death",
         "la": "In Pérside",
@@ -13210,21 +13224,15 @@
         "source": "curated"
       }
     ],
-    "mr:0417-symeon": [
+    "mr:0418-andreas-hibernon": [
       {
         "role": "death",
-        "la": "Adiabéna província",
-        "it": "provincia dell’Adiabene",
-        "source": "curated"
-      },
-      {
-        "role": "death",
-        "la": "Pérsidis",
-        "it": "Persia",
-        "source": "curated"
+        "la": "In civitáte Gandía in pago Valentíno ad oram Hispániæ",
+        "it": "Nella città di Gandía nel territorio di Valencia sulla costa della Spagna",
+        "source": "lead"
       }
     ],
-    "mr:0418-andreas": [
+    "mr:0418-andreas-montis-regalis": [
       {
         "role": "death",
         "la": "In Monte Regáli in Aprútio",
@@ -13244,15 +13252,7 @@
         "source": "curated"
       }
     ],
-    "mr:0418-andreas-hibernon": [
-      {
-        "role": "death",
-        "la": "In civitáte Gandía in pago Valentíno ad oram Hispániæ",
-        "it": "Nella città di Gandía nel territorio di Valencia sulla costa della Spagna",
-        "source": "lead"
-      }
-    ],
-    "mr:0418-anthusa": [
+    "mr:0418-anthusa-constantinopoli": [
       {
         "role": "death",
         "la": "Constantinópoli",
@@ -13260,7 +13260,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-athanasia": [
+    "mr:0418-athanasia-aeginae": [
       {
         "role": "death",
         "la": "In Ægína ínsula",
@@ -13283,7 +13283,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0418-eusebius": [
+    "mr:0418-eusebius-fani": [
       {
         "role": "death",
         "la": "Fani in Picéno Itáliæ",
@@ -13297,7 +13297,7 @@
         "source": "curated"
       }
     ],
-    "mr:0418-galdinus": [
+    "mr:0418-galdinus-mediolani": [
       {
         "role": "death",
         "la": "Medioláni in Langobárdia",
@@ -13313,7 +13313,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-idesbaldus": [
+    "mr:0418-idesbaldus-dunensis": [
       {
         "role": "death",
         "la": "Brugis in Flándria",
@@ -13333,7 +13333,7 @@
         "la": "In Ægína ínsula",
         "it": "Nell’isola di Égina",
         "source": "lead",
-        "via": "mr:0418-athanasia"
+        "via": "mr:0418-athanasia-aeginae"
       }
     ],
     "mr:0418-iosephus-moreau": [
@@ -13344,7 +13344,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-lasreanus": [
+    "mr:0418-lasreanus-leiglinii": [
       {
         "role": "death",
         "la": "Leiglínii in Hibérnia",
@@ -13352,7 +13352,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-perfectus": [
+    "mr:0418-perfectus-cordubae": [
       {
         "role": "death",
         "la": "Córdubæ in Vandalícia Hispániæ regióne",
@@ -13360,7 +13360,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-pusicius": [
+    "mr:0418-pusicius-persidis": [
       {
         "role": "death",
         "la": "In Pérside",
@@ -13384,7 +13384,7 @@
         "source": "lead"
       }
     ],
-    "mr:0418-ursmarus": [
+    "mr:0418-ursmarus-laubiensis": [
       {
         "role": "death",
         "la": "In cœnóbio Laubiénsi in Hannónia",
@@ -13392,7 +13392,7 @@
         "source": "lead"
       }
     ],
-    "mr:0419-aelphegus": [
+    "mr:0419-aelphegus-cantuariensis": [
       {
         "role": "death",
         "la": "In lítore Támesis apud Grenovícum in Anglia",
@@ -13414,7 +13414,7 @@
         "source": "lead"
       }
     ],
-    "mr:0419-georgius": [
+    "mr:0419-georgius-antiochiae": [
       {
         "role": "death",
         "la": "Antiochíæ Pisídiæ",
@@ -13422,7 +13422,7 @@
         "source": "lead"
       }
     ],
-    "mr:0419-geroldus": [
+    "mr:0419-geroldus-frisae": [
       {
         "role": "death",
         "la": "Frisæ in Alpibus Baváriæ",
@@ -13464,7 +13464,7 @@
         "source": "curated"
       }
     ],
-    "mr:0419-mappalicus": [
+    "mr:0419-mappalicus-africae": [
       {
         "role": "death",
         "la": "In Africa",
@@ -13472,7 +13472,7 @@
         "source": "lead"
       }
     ],
-    "mr:0419-martha": [
+    "mr:0419-martha-persidis": [
       {
         "role": "death",
         "la": "In Pérside",
@@ -13480,7 +13480,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-agnes": [
+    "mr:0420-agnes-montis-politiani": [
       {
         "role": "death",
         "la": "Monte Politiáno item in Etrúria",
@@ -13494,7 +13494,7 @@
         "source": "curated"
       }
     ],
-    "mr:0420-anastasius": [
+    "mr:0420-anastasius-antiochiae": [
       {
         "role": "death",
         "la": "Antiochíæ in Sýria",
@@ -13510,7 +13510,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-anicetus": [
+    "mr:0420-anicetus-papa": [
       {
         "role": "death",
         "la": "Romæ",
@@ -13564,7 +13564,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-heliena": [
+    "mr:0420-heliena-laurinensis": [
       {
         "role": "death",
         "la": "In pago Laurinénsi prope Pæstum in Campánia",
@@ -13580,7 +13580,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-marcellinus": [
+    "mr:0420-marcellinus-ebroduni": [
       {
         "role": "death",
         "la": "Ebrodúni in Gállia",
@@ -13606,7 +13606,7 @@
         "source": "curated"
       }
     ],
-    "mr:0420-marcianus": [
+    "mr:0420-marcianus-autissiodori": [
       {
         "role": "death",
         "la": "Autissiodóri in Gállia Lugdunénsi",
@@ -13643,7 +13643,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0420-secundinus": [
+    "mr:0420-secundinus-cordubae": [
       {
         "role": "death",
         "la": "Córdubæ in Hispánia Bǽtica",
@@ -13665,10 +13665,10 @@
         "la": "Romæ",
         "it": "A Roma",
         "source": "lead",
-        "via": "mr:0420-anicetus"
+        "via": "mr:0420-anicetus-papa"
       }
     ],
-    "mr:0420-theodorus": [
+    "mr:0420-theodorus-trichinas": [
       {
         "role": "death",
         "la": "Apud Constantinópolim",
@@ -13676,7 +13676,7 @@
         "source": "lead"
       }
     ],
-    "mr:0420-viho": [
+    "mr:0420-viho-osnabrugensis": [
       {
         "role": "death",
         "la": "Osnabrúgi in Saxónia",
@@ -13690,7 +13690,7 @@
         "source": "curated"
       }
     ],
-    "mr:0421-anastasius": [
+    "mr:0421-anastasius-montis-sina": [
       {
         "role": "death",
         "la": "In monte Sina",
@@ -13698,7 +13698,7 @@
         "source": "lead"
       }
     ],
-    "mr:0421-anselmus": [
+    "mr:0421-anselmus-cantuariensis": [
       {
         "role": "birth",
         "la": "Augústa Prætória",
@@ -13718,7 +13718,7 @@
         "source": "curated"
       }
     ],
-    "mr:0421-apollonius": [
+    "mr:0421-apollonius-romae": [
       {
         "role": "cult",
         "la": "Romæ",
@@ -13726,7 +13726,7 @@
         "source": "lead"
       }
     ],
-    "mr:0421-aristus": [
+    "mr:0421-aristus-alexandriae": [
       {
         "role": "death",
         "la": "Alexandríæ in Ægýpto",
@@ -13758,7 +13758,7 @@
         "source": "lead"
       }
     ],
-    "mr:0421-maelrubius": [
+    "mr:0421-maelrubius-applecross": [
       {
         "role": "death",
         "la": "In monastério in loco Applecross in Scótia",
@@ -13800,7 +13800,7 @@
         "source": "curated"
       }
     ],
-    "mr:0422-caius": [
+    "mr:0422-caius-papa": [
       {
         "role": "burial",
         "la": "Romæ in cœmetério Callísti via Appia",
@@ -13808,7 +13808,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-epipodius": [
+    "mr:0422-epipodius-lugduni": [
       {
         "role": "death",
         "la": "Lugdúni in Gállia",
@@ -13824,7 +13824,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-leo": [
+    "mr:0422-leo-senonum": [
       {
         "role": "death",
         "la": "Apud Sénones in Néustria",
@@ -13832,7 +13832,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-leonida": [
+    "mr:0422-leonida-alexandriae": [
       {
         "role": "cult",
         "la": "Alexandríæ in Ægýpto",
@@ -13840,7 +13840,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-maryahb": [
+    "mr:0422-maryahb-persidis": [
       {
         "role": "death",
         "la": "Pérside",
@@ -13848,7 +13848,7 @@
         "source": "curated"
       }
     ],
-    "mr:0422-opportuna": [
+    "mr:0422-opportuna-sagiensis": [
       {
         "role": "death",
         "la": "In pago Sagiénsi in Néustria",
@@ -13856,7 +13856,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-senorina": [
+    "mr:0422-senorina-basti": [
       {
         "role": "death",
         "la": "Basti in Lusitánia",
@@ -13864,7 +13864,7 @@
         "source": "lead"
       }
     ],
-    "mr:0422-soter": [
+    "mr:0422-soter-papa": [
       {
         "role": "death",
         "la": "Romæ",
@@ -13878,7 +13878,7 @@
         "source": "curated"
       }
     ],
-    "mr:0422-theodorus": [
+    "mr:0422-theodorus-anastasiopolitanus": [
       {
         "role": "death",
         "la": "In vico Syceóne in Galátia",
@@ -13898,7 +13898,7 @@
         "source": "curated"
       }
     ],
-    "mr:0423-adalbertus": [
+    "mr:0423-adalbertus-pragensis": [
       {
         "role": "death",
         "la": "vico Tenkitten ad sinum Venédicum",
@@ -13932,7 +13932,7 @@
         "source": "lead"
       }
     ],
-    "mr:0423-eulogius": [
+    "mr:0423-eulogius-edessae": [
       {
         "role": "death",
         "la": "Edéssæ in Sýria",
@@ -13940,7 +13940,7 @@
         "source": "lead"
       }
     ],
-    "mr:0423-georgius": [
+    "mr:0423-georgius-diospoli": [
       {
         "role": "cult",
         "la": "Dióspoli seu Lyddæ in Palæstína",
@@ -13956,7 +13956,7 @@
         "source": "lead"
       }
     ],
-    "mr:0423-gerardus": [
+    "mr:0423-gerardus-tulli": [
       {
         "role": "death",
         "la": "Tulli in Lotharíngia",
@@ -13980,7 +13980,7 @@
         "source": "lead"
       }
     ],
-    "mr:0423-marolus": [
+    "mr:0423-marolus-mediolani": [
       {
         "role": "death",
         "la": "Medioláni in Ligúria",
@@ -13996,7 +13996,7 @@
         "source": "lead"
       }
     ],
-    "mr:0424-alexander": [
+    "mr:0424-alexander-lugduni": [
       {
         "role": "death",
         "la": "Lugdúni in Gállia",
@@ -14020,7 +14020,7 @@
         "source": "lead"
       }
     ],
-    "mr:0424-deodatus": [
+    "mr:0424-deodatus-blesensis": [
       {
         "role": "death",
         "la": "In pago Blesénsi in Gállia Lugdunénsi",
@@ -14028,7 +14028,7 @@
         "source": "lead"
       }
     ],
-    "mr:0424-egbertus": [
+    "mr:0424-egbertus-hiensis": [
       {
         "role": "death",
         "la": "In Hiénsi ínsula Scótiæ",
@@ -14056,7 +14056,7 @@
         "source": "curated"
       }
     ],
-    "mr:0424-gregorius": [
+    "mr:0424-gregorius-illiberi": [
       {
         "role": "death",
         "la": "Illíberi in Hispánia Bǽtica",
@@ -14106,7 +14106,7 @@
         "source": "curated"
       }
     ],
-    "mr:0424-mellitus": [
+    "mr:0424-mellitus-cantuariensis": [
       {
         "role": "death",
         "la": "Cantuáriæ in Anglia",
@@ -14135,7 +14135,7 @@
         "source": "lead"
       }
     ],
-    "mr:0424-wilfridus": [
+    "mr:0424-wilfridus-eboraci": [
       {
         "role": "death",
         "la": "Eboráci in Northúmbria",
@@ -14149,7 +14149,7 @@
         "source": "curated"
       }
     ],
-    "mr:0425-anianus": [
+    "mr:0425-anianus-alexandriae": [
       {
         "role": "ministry",
         "la": "Alexandríæ in Ægýpto",
@@ -14165,7 +14165,7 @@
         "source": "lead"
       }
     ],
-    "mr:0425-clarentius": [
+    "mr:0425-clarentius-viennae": [
       {
         "role": "death",
         "la": "Viénnæ in Burgúndia",
@@ -14173,7 +14173,7 @@
         "source": "lead"
       }
     ],
-    "mr:0425-erminus": [
+    "mr:0425-erminus-laubii": [
       {
         "role": "death",
         "la": "Láubii in Brabántia Austrásiæ",
@@ -14181,7 +14181,7 @@
         "source": "lead"
       }
     ],
-    "mr:0425-franca": [
+    "mr:0425-franca-placentina": [
       {
         "role": "death",
         "la": "In pago Placentíno in Æmília",
@@ -14240,7 +14240,7 @@
         "source": "lead"
       }
     ],
-    "mr:0425-phoebadius": [
+    "mr:0425-phoebadius-aginni": [
       {
         "role": "death",
         "la": "Agínni in Aquitánia",
@@ -14263,7 +14263,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0425-stephanus": [
+    "mr:0425-stephanus-antiochiae": [
       {
         "role": "death",
         "la": "Antiochíæ in Sýria",
@@ -14283,7 +14283,7 @@
         "source": "curated"
       }
     ],
-    "mr:0426-basileus": [
+    "mr:0426-basileus-amaseae": [
       {
         "role": "death",
         "la": "Amaséæ in Ponto",
@@ -14291,7 +14291,7 @@
         "source": "lead"
       }
     ],
-    "mr:0426-cletus": [
+    "mr:0426-cletus-papa": [
       {
         "role": "cult",
         "la": "Romæ",
@@ -14331,7 +14331,7 @@
         "source": "lead"
       }
     ],
-    "mr:0426-primitivus": [
+    "mr:0426-primitivus-gabiensis": [
       {
         "role": "death",
         "la": "In pago Gabiénsi via Prænestína miliário tricésimo ab Urbe",
@@ -14347,7 +14347,7 @@
         "source": "lead"
       }
     ],
-    "mr:0426-richarius": [
+    "mr:0426-richarius-ambianensis": [
       {
         "role": "death",
         "la": "In erémo silvæ Crescíacæ in pago Néustriæ Ambianénsi",
@@ -14375,7 +14375,7 @@
         "source": "curated"
       }
     ],
-    "mr:0426-stephanus": [
+    "mr:0426-stephanus-permiensis": [
       {
         "role": "burial",
         "la": "In monastério Transfiguratiónis Móscuæ in Rússia",
@@ -14389,7 +14389,7 @@
         "source": "curated"
       }
     ],
-    "mr:0427-catharina": [
+    "mr:0427-catharina-cathari": [
       {
         "role": "death",
         "la": "Cáthari in Nigromóntio",
@@ -14405,7 +14405,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-ioannes": [
+    "mr:0427-ioannes-aphusiae": [
       {
         "role": "death",
         "la": "In ínsula Afúsia in Propóntide",
@@ -14421,7 +14421,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-liberalis": [
+    "mr:0427-liberalis-altini": [
       {
         "role": "death",
         "la": "Altíni in Venétia",
@@ -14437,7 +14437,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-mauganus": [
+    "mr:0427-mauganus-monae": [
       {
         "role": "death",
         "la": "In ínsula Mona oram Cámbriæ septemtrionális prospiciénte",
@@ -14467,7 +14467,7 @@
         "source": "curated"
       }
     ],
-    "mr:0427-pollio": [
+    "mr:0427-pollio-cibalarum": [
       {
         "role": "death",
         "la": "Cíbalis in Pannónia",
@@ -14475,7 +14475,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-simeon": [
+    "mr:0427-simeon-hierosolymorum": [
       {
         "role": "cult",
         "la": "Hierosólymæ",
@@ -14483,7 +14483,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-theodorus": [
+    "mr:0427-theodorus-tabennesis": [
       {
         "role": "death",
         "la": "Tabennési in Thebáide Ægýpti",
@@ -14491,7 +14491,7 @@
         "source": "lead"
       }
     ],
-    "mr:0427-zita": [
+    "mr:0427-zita-lucae": [
       {
         "role": "death",
         "la": "Lucæ in Etrúria",
@@ -14499,7 +14499,7 @@
         "source": "lead"
       }
     ],
-    "mr:0428-aphrodisius": [
+    "mr:0428-aphrodisius-biterrarum": [
       {
         "role": "death",
         "la": "Bitérris in Gállia Narbonénsi",
@@ -14537,7 +14537,7 @@
         "source": "curated"
       }
     ],
-    "mr:0428-luchesius": [
+    "mr:0428-luchesius-podii-bonitii": [
       {
         "role": "death",
         "la": "Apud Pódium Bonítii in Etrúria",
@@ -14575,7 +14575,7 @@
         "source": "lead"
       }
     ],
-    "mr:0428-pamphilus": [
+    "mr:0428-pamphilus-corfiniensis": [
       {
         "role": "burial",
         "la": "Sulmóne in Aprútio",
@@ -14611,7 +14611,7 @@
         "source": "curated"
       }
     ],
-    "mr:0428-prudentius": [
+    "mr:0428-prudentius-turiasonis": [
       {
         "role": "death",
         "la": "Turiasóne in Hispánia Tarraconénsi",
@@ -14619,7 +14619,7 @@
         "source": "lead"
       }
     ],
-    "mr:0428-vitalis": [
+    "mr:0428-vitalis-ravennae": [
       {
         "role": "cult",
         "la": "Ravénnæ in Flamínia",
@@ -14627,7 +14627,7 @@
         "source": "lead"
       }
     ],
-    "mr:0429-achardus": [
+    "mr:0429-achardus-abrincensis": [
       {
         "role": "death",
         "la": "Lucérnæ in Normánnia",
@@ -14663,7 +14663,7 @@
         "source": "curated"
       }
     ],
-    "mr:0429-hugo": [
+    "mr:0429-hugo-cluniaci": [
       {
         "role": "death",
         "la": "Cluníaci in Burgúndia",
@@ -14671,7 +14671,7 @@
         "source": "lead"
       }
     ],
-    "mr:0429-severus": [
+    "mr:0429-severus-neapoli": [
       {
         "role": "death",
         "la": "Neápoli in Campánia",
@@ -14679,7 +14679,7 @@
         "source": "lead"
       }
     ],
-    "mr:0429-torpes": [
+    "mr:0429-torpes-pisarum": [
       {
         "role": "death",
         "la": "Pisis in Etrúria",
@@ -14687,7 +14687,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-adiutor": [
+    "mr:0430-adiutor-vernonis": [
       {
         "role": "death",
         "la": "Vernóne ad Séquanam in Gállia",
@@ -14703,7 +14703,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-augulus": [
+    "mr:0430-augulus-vivarii": [
       {
         "role": "death",
         "la": "Vivárii ad Rhódanum in Néustria",
@@ -14727,7 +14727,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-donatus": [
+    "mr:0430-donatus-eureae": [
       {
         "role": "death",
         "la": "Eurœæ in Epíro",
@@ -14735,7 +14735,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-earconwaldus": [
+    "mr:0430-earconwaldus-barkingae": [
       {
         "role": "death",
         "la": "Barkíngæ in Anglia",
@@ -14743,7 +14743,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-eutropius": [
+    "mr:0430-eutropius-santonum": [
       {
         "role": "death",
         "la": "Apud Sántonas in Aquitánia",
@@ -14758,7 +14758,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0430-gualfardus": [
+    "mr:0430-gualfardus-veronae": [
       {
         "role": "death",
         "la": "Verónæ in Venétia",
@@ -14821,7 +14821,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-laurentius": [
+    "mr:0430-laurentius-novariae": [
       {
         "role": "death",
         "la": "Nováriæ in Ligúria",
@@ -14844,7 +14844,7 @@
         "occurrence_it": 2
       }
     ],
-    "mr:0430-mercurialis": [
+    "mr:0430-mercurialis-livii": [
       {
         "role": "death",
         "la": "Fori Lívii in Æmília",
@@ -14888,7 +14888,7 @@
         "source": "curated"
       }
     ],
-    "mr:0430-pomponius": [
+    "mr:0430-pomponius-neapoli": [
       {
         "role": "death",
         "la": "Neápoli in Campánia",
@@ -14896,7 +14896,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-quirinus": [
+    "mr:0430-quirinus-romae": [
       {
         "role": "death",
         "la": "Romæ in cœmetério Prætextáti via Appia",
@@ -14904,7 +14904,7 @@
         "source": "lead"
       }
     ],
-    "mr:0430-sophia": [
+    "mr:0430-sophia-firmi": [
       {
         "role": "death",
         "la": "Firmi in Picéno Itáliæ",

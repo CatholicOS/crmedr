@@ -149,89 +149,89 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0225-sebastianus-aparicio` | death (obiit) | yes |
 | `mr:0226-porphyrius-gazensis` | birth (natus); ministry (episcopus gazensis) | yes |
 | `mr:0229-augustus-chapdelaine` | death (occubuit) |  |
-| `mr:0301-rudesindus` | ministry (episcopi dumiensis) | yes |
-| `mr:0303-cunegundis` | death (obiit) | yes |
-| `mr:0304-basinus` | birth (ortus); ministry (sedem) | yes |
-| `mr:0305-theophilus` | ministry (episcopi cæsariensis) | yes |
-| `mr:0306-fridolinus` | birth (oriundus) | yes |
+| `mr:0301-rudesindus-dumiensis` | ministry (episcopi dumiensis) | yes |
+| `mr:0303-cunegundis-confugiae` | death (obiit) | yes |
+| `mr:0304-basinus-trevirorum` | birth (ortus); ministry (sedem) | yes |
+| `mr:0305-theophilus-caesariensis` | ministry (episcopi cæsariensis) | yes |
+| `mr:0306-fridolinus-saconii` | birth (oriundus) | yes |
 | `mr:0307-satyrus-et-socii` | death (obiit) |  |
-| `mr:0308-felix` | birth (oriundus) | yes |
-| `mr:0308-theophilactus` | death (defunctus) | yes |
-| `mr:0308-humfridus` | ministry (episcopi taruannensis) | yes |
-| `mr:0308-duthacus` | ministry (episcopi rossensis) | yes |
+| `mr:0308-felix-dumnoci` | birth (oriundus) | yes |
+| `mr:0308-theophilactus-nicomediae` | death (defunctus) | yes |
+| `mr:0308-humfridus-taruannensis` | ministry (episcopi taruannensis) | yes |
+| `mr:0308-duthacus-rossensis` | ministry (episcopi rossensis) | yes |
 | `mr:0308-vincentius-kadlubek` | ministry (episcopi cracoviensis) | yes |
-| `mr:0309-bruno` | ministry (episcopi querfurtensis) | yes |
-| `mr:0311-vindicianus` | ministry (episcopi cameracensis) | yes |
-| `mr:0313-sabinus` | death (occubuit) |  |
-| `mr:0315-leocritia` | birth (orta) |  |
-| `mr:0316-papa` | birth (oriundus); death (obiit) | yes |
-| `mr:0316-heribertus` | ministry (sedem) |  |
+| `mr:0309-bruno-querfurtensis` | ministry (episcopi querfurtensis) | yes |
+| `mr:0311-vindicianus-cameracensis` | ministry (episcopi cameracensis) | yes |
+| `mr:0313-sabinus-hermopoli` | death (occubuit) |  |
+| `mr:0315-leocritia-cordubae` | birth (orta) |  |
+| `mr:0316-papa-seleuciae` | birth (oriundus); death (obiit) | yes |
+| `mr:0316-heribertus-coloniae-agrippinae` | ministry (sedem) |  |
 | `mr:0316-ioannes-sordi` | death (occubuit); ministry (sedem) | yes |
 | `mr:0316-ioannes-de-brebeuf` | death (occubuit) | yes |
-| `mr:0317-patricius` | death (obdormivit) | yes |
-| `mr:0317-gertrudis` | birth (orta) |  |
+| `mr:0317-patricius-episcopus` | death (obdormivit) | yes |
+| `mr:0317-gertrudis-nivellae` | birth (orta) |  |
 | `mr:0317-ioannes-sarkander` | death (obiit) | yes |
-| `mr:0318-frigdianus` | birth (oriundus) | yes |
-| `mr:0318-anselmus` | ministry (episcopi lucensis) | yes |
-| `mr:0319-ioseph` | birth (ortus) |  |
+| `mr:0318-frigdianus-lucae` | birth (oriundus) | yes |
+| `mr:0318-anselmus-lucensis` | ministry (episcopi lucensis) | yes |
+| `mr:0319-ioseph-sponsus-mariae` | birth (ortus) |  |
 | `mr:0319-narcissus-turchan` | death (occubuit) | yes |
 | `mr:0319-marcellus-callo` | birth (oriundus) | yes |
-| `mr:0320-martinus` | birth (oriundus); ministry (sedem) | yes |
-| `mr:0320-cuthbertus` | ministry (episcopi lindisfarnensis) | yes |
-| `mr:0320-vulframnus` | ministry (episcopus senonensis) | yes |
+| `mr:0320-martinus-bracarensis` | birth (oriundus); ministry (sedem) | yes |
+| `mr:0320-cuthbertus-lindisfarnensis` | ministry (episcopi lindisfarnensis) | yes |
+| `mr:0320-vulframnus-senonensis` | ministry (episcopus senonensis) | yes |
 | `mr:0322-benvenutus-scotivoli` | ministry (sedem) |  |
 | `mr:0322-nicolaus-owen` | death (occubuit) |  |
 | `mr:0322-franciscus-chartier` | death (occubuit) |  |
 | `mr:0323-turibius-de-mogrovejo` | birth (oriundus); ministry (sedem) | yes |
 | `mr:0325-iacobus-bird` | birth (natus) |  |
 | `mr:0325-hilarius-januszewski` | death (occubuit) | yes |
-| `mr:0326-liudgerus` | ministry (sedem) | yes |
-| `mr:0329-ludolphus` | ministry (episcopi raceburgensis) | yes |
+| `mr:0326-liudgerus-monasteriensis` | ministry (sedem) | yes |
+| `mr:0329-ludolphus-raceburgensis` | ministry (episcopi raceburgensis) | yes |
 | `mr:0331-bonaventura-de-foro-livii` | death (obiit) | yes |
 | `mr:0401-ioannes-bretton` | death (occubuit) |  |
 | `mr:0403-ioannes-neapoli` | death (obiit) |  |
-| `mr:0404-petrus` | death (obiit) | yes |
+| `mr:0404-petrus-pictavii` | death (obiit) | yes |
 | `mr:0406-petrus-veronensis` | birth (natus) | yes |
 | `mr:0406-petrina-morosini` | birth (nata); death (occubuit) |  |
 | `mr:0407-petrus-nguyen-van-luu` | death (obiit) |  |
-| `mr:0409-hugo` | ministry (episcopi rothomagensis) | yes |
-| `mr:0409-casilda` | birth (nata) |  |
+| `mr:0409-hugo-rothomagensis` | ministry (episcopi rothomagensis) | yes |
+| `mr:0409-casilda-birovescae` | birth (nata) |  |
 | `mr:0411-gemma-galganus` | birth (nata) |  |
-| `mr:0412-erkembodo` | ministry (episcopi taruannensis) | yes |
+| `mr:0412-erkembodo-taruannensis` | ministry (episcopi taruannensis) | yes |
 | `mr:0412-ioanna-fernandez-solar` | death (obiit) |  |
-| `mr:0413-ursus` | ministry (sedem) | yes |
-| `mr:0413-hermenegildus` | death (occubuit) |  |
-| `mr:0413-margarita` | birth (nata) |  |
+| `mr:0413-ursus-ravennae` | ministry (sedem) | yes |
+| `mr:0413-hermenegildus-tarraconis` | death (occubuit) |  |
+| `mr:0413-margarita-tiferni-tiberini` | birth (nata) |  |
 | `mr:0413-ioannes-lockwood-et-eduardus-catherick` | birth (natus) |  |
 | `mr:0413-sabas-reyes` | death (occubuit) |  |
 | `mr:0414-isabella-calduch-rovira` | death (occubuit) |  |
-| `mr:0415-paternus` | ministry (episcopi abrincensis, sedem) | yes |
-| `mr:0416-fructuosus` | ministry (episcopus bracarensis, episcopus dumiensis) | yes |
-| `mr:0416-contardus` | death (obiit) | yes |
+| `mr:0415-paternus-abrincensis` | ministry (episcopi abrincensis, sedem) | yes |
+| `mr:0416-fructuosus-dumiensis` | ministry (episcopus bracarensis, episcopus dumiensis) | yes |
+| `mr:0416-contardus-bronae` | death (obiit) | yes |
 | `mr:0416-maria-bernarda-soubirous` | birth (orta) | yes |
 | `mr:0417-catharina-tekakwitha` | birth (orta) |  |
-| `mr:0418-pusicius` | death (occubuit) |  |
-| `mr:0419-georgius` | death (occubuit) |  |
+| `mr:0418-pusicius-persidis` | death (occubuit) |  |
+| `mr:0419-georgius-antiochiae` | death (occubuit) |  |
 | `mr:0419-leo-ix` | ministry (sedem) | yes |
-| `mr:0420-marcellinus` | ministry (sedem) | yes |
-| `mr:0420-viho` | birth (natus) | yes |
-| `mr:0421-anselmus` | birth (oriundus); ministry (sedem) | yes |
-| `mr:0421-maelrubius` | birth (ortus) | yes |
-| `mr:0423-adalbertus` | ministry (episcopi pragensis) | yes |
+| `mr:0420-marcellinus-ebroduni` | ministry (sedem) | yes |
+| `mr:0420-viho-osnabrugensis` | birth (natus) | yes |
+| `mr:0421-anselmus-cantuariensis` | birth (oriundus); ministry (sedem) | yes |
+| `mr:0421-maelrubius-applecross` | birth (ortus) | yes |
+| `mr:0423-adalbertus-pragensis` | ministry (episcopi pragensis) | yes |
 | `mr:0423-maria-gabriela-sagheddu` | birth (nata) |  |
-| `mr:0424-mellitus` | ministry (sedem) | yes |
-| `mr:0424-wilfridus` | ministry (sedem) | yes |
+| `mr:0424-mellitus-cantuariensis` | ministry (sedem) | yes |
+| `mr:0424-wilfridus-eboraci` | ministry (sedem) | yes |
 | `mr:0424-maria-elisabeth-hesselblad` | birth (oriunda) | yes |
-| `mr:0425-stephanus` | death (occubuit) | yes |
-| `mr:0426-stephanus` | ministry (episcopi permiensis) | yes |
+| `mr:0425-stephanus-antiochiae` | death (occubuit) | yes |
+| `mr:0426-stephanus-permiensis` | ministry (episcopi permiensis) | yes |
 | `mr:0426-stanislaus-kubista` | death (obiit) | yes |
-| `mr:0427-zita` | birth (nata) |  |
-| `mr:0428-pamphilus` | ministry (episcopi corfiniensis) | yes |
+| `mr:0427-zita-lucae` | birth (nata) |  |
+| `mr:0428-pamphilus-corfiniensis` | ministry (episcopi corfiniensis) | yes |
 | `mr:0428-ioanna-beretta-molla` | death (occubuit) |  |
-| `mr:0429-achardus` | burial (sepultus); death (obiit); ministry (episcopi abrincensis) | yes |
+| `mr:0429-achardus-abrincensis` | burial (sepultus); death (obiit); ministry (episcopi abrincensis) | yes |
 | `mr:0430-pius-v` | death (obdormivit) | yes |
-| `mr:0430-mercurialis` | ministry (sedem) |  |
-| `mr:0430-gualfardus` | birth (oriundus) | yes |
+| `mr:0430-mercurialis-livii` | ministry (sedem) |  |
+| `mr:0430-gualfardus-veronae` | birth (oriundus) | yes |
 | `mr:0501-briocus` | birth (ortus) | yes |
 | `mr:0501-sigismundus` | death (occubuit) | yes |
 | `mr:0501-theodardus` | ministry (episcopi narbonensis) | yes |
@@ -691,56 +691,56 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0229-hilarius-papa`: Románæ sedis
 - `mr:0229-oswaldus-vigorniae`: Vigorniénsi
 - `mr:0301-christophorus-de-mediolano`: Medioláno
-- `mr:0301-suitbertus`: Frísios
+- `mr:0301-suitbertus-werdae`: Frísios
 - `mr:0303-catharina-drexel`: Indos
-- `mr:0304-basinus`: Austrásiæ
+- `mr:0304-basinus-trevirorum`: Austrásiæ
 - `mr:0307-ardo-smaragdus`: Anianénsi
 - `mr:0307-simeon-berneux-et-socii`: Coréa, Coréam, Parisiénsi
-- `mr:0310-simplicius`: Urbe, Urbem
+- `mr:0310-simplicius-papa`: Urbe, Urbem
 - `mr:0311-ioannes-baptista-de-fabriano`: Fabriáno
 - `mr:0312-mygdo-et-socii`: Máximi
 - `mr:0313-agnellus-de-pisis`: Anglia, Angliam
-- `mr:0313-christina`: Persárum
-- `mr:0315-zacharias`: Germánis
-- `mr:0318-eduardus`: Anglórum
-- `mr:0320-vulframnus`: Fontanéllæ
+- `mr:0313-christina-persidis`: Persárum
+- `mr:0315-zacharias-papa`: Germánis
+- `mr:0318-eduardus-warehami`: Anglórum
+- `mr:0320-vulframnus-senonensis`: Fontanéllæ
 - `mr:0322-benvenutus-scotivoli`: terram
 - `mr:0325-hilarius-januszewski`: Monte Carmélo
-- `mr:0328-hilarion`: monastérii Peleceténsis
-- `mr:0401-gilbertus`: ecclésiam cathedrálem
+- `mr:0328-hilarion-pelecetensis`: monastérii Peleceténsis
+- `mr:0401-gilbertus-cathani`: ecclésiam cathedrálem
 - `mr:0401-ioannes-bretton`: Románæ Ecclésiæ
 - `mr:0403-aloysius-scrosoppi`: Oratórii
 - `mr:0403-xystus-i`: Románam
-- `mr:0406-eutychius`: Constantinopolitáno
-- `mr:0406-gulielmus`: Dánia
+- `mr:0406-eutychius-constantinopoli`: Constantinopolitáno
+- `mr:0406-gulielmus-parisiensis`: Dánia
 - `mr:0406-petrus-veronensis`: Veronénsi
 - `mr:0408-herodion-et-socii`: Romános
 - `mr:0408-timotheus-et-socii`: Máximi
-- `mr:0409-acacius`: Románi
+- `mr:0409-acacius-amidae`: Románi
 - `mr:0409-caelestina-faron`: Polónia
-- `mr:0409-maximus`: Máximi
-- `mr:0410-fulbertus`: ecclésiam cathedrálem
+- `mr:0409-maximus-alexandriae`: Máximi
+- `mr:0410-fulbertus-carnuti`: ecclésiam cathedrálem
 - `mr:0410-terentius-et-socii`: Africáni, Máximi
 - `mr:0411-georgius-gervase`: Anglórum, Collégii Anglórum Duacénsis
 - `mr:0412-iulius-i`: nicǽnam
 - `mr:0413-franciscus-dickenson-et-milo-gerard`: Anglórum, Collégio Anglórum Reménsi
-- `mr:0413-ursus`: ecclésiam cathedrálem
+- `mr:0413-ursus-ravennae`: ecclésiam cathedrálem
 - `mr:0414-tiburtius-et-socii`: Máximi
 - `mr:0416-benedictus-iosephus-labre`: Roma, Romam
-- `mr:0416-fructuosus`: Bracarénsis
-- `mr:0417-simeon`: Persárum
+- `mr:0416-fructuosus-dumiensis`: Bracarénsis
+- `mr:0417-simeon-seleuciae`: Persárum
 - `mr:0418-romanus-archutowski`: Románi
 - `mr:0419-leo-ix`: Románam, sedem Románam
 - `mr:0421-romanus-adame`: Románi
 - `mr:0422-agapitus-i`: Constantinópoli, Constantinópolim, Románus
-- `mr:0423-georgius`: Occidénte, Oriénte
-- `mr:0423-gerardus`: ecclésiam cathedrálem
+- `mr:0423-georgius-diospoli`: Occidénte, Oriénte
+- `mr:0423-gerardus-tulli`: ecclésiam cathedrálem
 - `mr:0424-maria-cleopha-et-salome`: sepúlcrum Dómini
-- `mr:0424-mellitus`: Cantuariénsem
-- `mr:0425-franca`: Cisterciénse
+- `mr:0424-mellitus-cantuariensis`: Cantuariénsem
+- `mr:0425-franca-placentina`: Cisterciénse
 - `mr:0425-petrus-de-betancur`: Béthlehem
-- `mr:0426-cletus`: Románam
-- `mr:0427-simeon`: Hierosólymæ
+- `mr:0426-cletus-papa`: Románam
+- `mr:0427-simeon-hierosolymorum`: Hierosólymæ
 - `mr:0428-maximus-et-socii`: Máximi
 - `mr:0429-catharina-senensis`: Senénsis
 - `mr:0430-petrus-levita`: Románæ Ecclésiæ
@@ -977,4 +977,4 @@ None.
 
 ## Entries with no place
 
-`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph`, `mr:0322-epaphroditus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus`, `mr:0509-isaias-propheta`, `mr:0509-herma`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila`, `mr:0716-simon-da-costa`, `mr:0720-ioseph`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`
+`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph-sponsus-mariae`, `mr:0322-epaphroditus-discipulus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus-discipulus`, `mr:0509-isaias-propheta`, `mr:0509-herma`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila`, `mr:0716-simon-da-costa`, `mr:0720-ioseph`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`

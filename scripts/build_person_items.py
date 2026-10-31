@@ -127,7 +127,7 @@ FORCE_REVIEW = {
     # One-word names of undated eulogies that matched a famous namesake (CatholicOS/crmedr#79 review);
     # Simon Peter's alias "Simeon" matched both Simeons.
     "mr:0203-simeon-et-anna-prophetissa|Simeon": "the eulogy's Simeon is the prophet of the Presentation, not Saint Peter",
-    "mr:0427-simeon|Simeon": "the eulogy's Simeon is the bishop of Jerusalem, not Saint Peter",
+    "mr:0427-simeon-hierosolymorum|Simeon": "the eulogy's Simeon is the bishop of Jerusalem, not Saint Peter",
     "mr:0206-paulus-miki-et-socii|Thomas": "a Japanese martyr, not Thomas the Apostle",
     "mr:0206-paulus-miki-et-socii|Bonaventura": "a Japanese martyr, not Saint Bonaventure",
     "mr:0212-martyres-abitinenses|Maria": "an Abitinian martyr, not the Blessed Virgin",
