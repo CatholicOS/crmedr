@@ -19725,6 +19725,29 @@
           "qid": null
         }
       ],
+      "mr:0915-alpinus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "7186f116",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 31,
+          "check": "3ce64935",
+          "name": "Alpinus"
+        }
+      ],
       "mr:0915-maria-perdolens": [
         {
           "kind": "person",

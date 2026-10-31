@@ -31,7 +31,6 @@ A subject died after an edition that already prints the eulogy: the person link 
 
 | Eulogy | From | To |
 |---|---|---|
-| mr:0923-zacharias-et-elisabeth | 1 | 1420 |
 
 ## Estimates for eulogies that are not current (0)
 

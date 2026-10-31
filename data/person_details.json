@@ -3444,36 +3444,6 @@
       "pt": "Carlos Steeb"
     }
   },
-  "Q75141": {
-    "description": {
-      "en": "German Franciscan mystic and saint",
-      "it": "religiosa e mistica tedesca",
-      "fr": "mystique et bienheureuse catholique allemande",
-      "de": "deutsche katholische Ordensschwester"
-    },
-    "born": {
-      "year": 1386,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 1420,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Gute Beth von Reute.jpg",
-      "author": "Unidentified painter",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Elizabeth of Reute",
-      "it": "Elisabetta Achler",
-      "fr": "Élisabeth Achler",
-      "de": "Elisabeth Achler"
-    }
-  },
   "Q76749": {
     "description": {
       "en": "Jewish-German Catholic nun, theologian and philosopher (1891–1942)",
@@ -12182,6 +12152,40 @@
       "de": "Richardis",
       "es": "Ricarda de Andlau",
       "pt": "Ricarda da Suábia"
+    }
+  },
+  "Q235849": {
+    "description": {
+      "en": "mother of John the Baptist and the wife of Zacharias/Zachary, according to the Gospel of Luke",
+      "it": "madre di Giovanni il Battista",
+      "fr": "personnage de l'Évangile et du Coran",
+      "de": "Mutter Johannes des Täufers",
+      "es": "madre de Juan el bautista",
+      "pt": "mãe de São João Baptista e prima da Virgem Maria, mãe de Jesus, de acordo com o Evangelho de São Lucas"
+    },
+    "born": {
+      "year": -100,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Scuola provenzale, visitazione, 1490 ca, sant'elisabetta (cropped).jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "wikipedia": {
+      "en": "Elizabeth, mother of John the Baptist",
+      "it": "Elisabetta (madre del Battista)",
+      "fr": "Élisabeth (mère de Jean le Baptiste)",
+      "de": "Elisabet",
+      "es": "Isabel (madre de Juan el Bautista)",
+      "pt": "Isabel (Bíblia)"
     }
   },
   "Q235853": {
