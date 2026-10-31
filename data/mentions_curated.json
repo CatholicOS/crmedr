@@ -3666,6 +3666,29 @@
           "qid": null
         }
       ],
+      "mr:0802-ioanna-de-aza": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "4ede2f56",
+          "qid": "Q848172",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
+          "end": 52,
+          "check": "50ddf619",
+          "name": "Ioanna de Aza"
+        }
+      ],
       "mr:0804-ia-persidis": [
         {
           "kind": "place",
