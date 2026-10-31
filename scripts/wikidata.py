@@ -89,6 +89,14 @@ JULIAN_SHIFT = range(-2, 14)
 # The interface languages of martyrology-frontend, for the reader's person popups.
 DETAIL_LANGS = ("en", "it", "fr", "de", "es", "pt")
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+COMMONS_URL_MAX = 6000  # Commons answers HTTP 414 to longer request URLs
+
+
+def _commons_url(files):
+    """The Commons imageinfo query for these file names (as P18 gives them, without "File:")."""
+    return COMMONS_API + "?" + urllib.parse.urlencode(
+        {"action": "query", "titles": "|".join("File:" + f for f in files), "prop": "imageinfo",
+         "iiprop": "extmetadata", "redirects": "1", "format": "json", "maxlag": "5"})
 # P1480 (sourcing circumstances) = circa.
 CIRCA = "Q5727902"
 
@@ -658,11 +666,16 @@ class Wikidata:
         """Commons' extmetadata (author, license) for each file name as P18 gives
         it, without "File:"; a missing file is left out."""
         out = {}
-        for i in range(0, len(files), 50):
-            titles = "|".join("File:" + f for f in files[i:i + 50])
-            data = self._get(COMMONS_API + "?" + urllib.parse.urlencode(
-                {"action": "query", "titles": titles, "prop": "imageinfo", "iiprop": "extmetadata",
-                 "redirects": "1", "format": "json", "maxlag": "5"}))
+        # at most 50 titles a request, and fewer when long (non-Latin) names would make the URL too long
+        batches, batch = [], []
+        for f in files:
+            if batch and (len(batch) == 50 or len(_commons_url(batch + [f])) > COMMONS_URL_MAX):
+                batches.append(batch)
+                batch = []
+            batch.append(f)
+        batches += [batch] if batch else []
+        for chunk in batches:
+            data = self._get(_commons_url(chunk))
             query = data.get("query", {})
             # a title the API normalized or redirected maps back to every name that led to it
             sources = {}
@@ -677,7 +690,7 @@ class Wikidata:
                         if name not in names:
                             names.add(name)
                             todo.extend(sources.get(name, []))
-                    for name in names & set(files[i:i + 50]):
+                    for name in names & set(chunk):
                         out[name] = info[0].get("extmetadata", {})
         return out
 

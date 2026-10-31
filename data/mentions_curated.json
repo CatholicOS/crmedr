@@ -4302,6 +4302,29 @@
           "qid": null
         }
       ],
+      "mr:0830-fantinus-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "f526a1bc",
+          "qid": "Q17151",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "97a4325f",
+          "name": "Fantinus Iunior"
+        }
+      ],
       "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
         {
           "kind": "place",
@@ -19700,6 +19723,29 @@
           "check": "f8273d58",
           "name": "Sanctissimum Nomen beatae Virginis Mariae",
           "qid": null
+        }
+      ],
+      "mr:0915-alpinus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "7186f116",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 31,
+          "check": "3ce64935",
+          "name": "Alpinus"
         }
       ],
       "mr:0915-maria-perdolens": [
