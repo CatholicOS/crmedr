@@ -1,4 +1,895 @@
 {
   "$comment": "The optional Wikidata item of each current eulogy that does not commemorate a single person (a group, a feast, a dedicated church, a translation), by eulogy ID: wikidata, kind (group, feast, dedication, translation), status (auto, reviewed, unresolved) and an optional note. Curated; scripts/build_eulogy_items.py validates it and extract_registry.py copies it onto the registry as `item`.",
-  "items": {}
+  "items": {
+    "mr:0102-argeus-et-socii": {
+      "wikidata": "Q6965657",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0104-hermes-et-caius": {
+      "wikidata": "Q97253965",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0106-iulianus-et-basilissa": {
+      "wikidata": "Q520982",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0108-lucianus-et-socii": {
+      "wikidata": "Q79503390",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0108-theophilus-et-helladius": {
+      "wikidata": "Q28003161",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0112-tigrius-et-eutropius": {
+      "wikidata": "Q31094180",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0113-gumesindus-et-servusdei": {
+      "wikidata": "Q11924990",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0116-berardus-et-socii": {
+      "wikidata": "Q12816974",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0117-speusippus-et-socii": {
+      "wikidata": "Q1505432",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0119-liberata-et-faustina": {
+      "wikidata": "Q2796017",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0121-fructuosus-et-socii": {
+      "wikidata": "Q101193675",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": {
+      "wikidata": "Q2807895",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0123-clemens-et-agathangelus": {
+      "wikidata": "Q12151181",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0123-severianus-et-aquila": {
+      "wikidata": "Q85974778",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0124-vincentius-lewoniuk-et-socii": {
+      "wikidata": "Q115872",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0129-iuventinus-et-maximinus": {
+      "wikidata": "Q6318993",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0129-papias-et-maurus": {
+      "wikidata": "Q17638307",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0129-sarbelius-et-bebaia": {
+      "wikidata": "Q1422681",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0131-cyrus-et-ioannes": {
+      "wikidata": "Q378732",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0131-victorinus-et-socii": {
+      "wikidata": "Q133445535",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0203-teridius-et-remedius": {
+      "wikidata": "Q64840854",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0204-philea-et-philoromus": {
+      "wikidata": "Q108253242",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0206-dorothea-et-theophilus": {
+      "wikidata": "Q136620408",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0206-paulus-miki-et-socii": {
+      "wikidata": "Q578963",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0207-iacobus-sales-et-gulielmus-saultemouche": {
+      "wikidata": "Q3850286",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0209-primus-et-donatus": {
+      "wikidata": "Q16591776",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0212-martyres-abitinenses": {
+      "wikidata": "Q2308132",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0214-bassianus-et-socii": {
+      "wikidata": "Q133445533",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0215-faustinus-et-iovita": {
+      "wikidata": "Q1388274",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0217-septem-fundatores-servorum-mariae": {
+      "wikidata": "Q1057218",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0227-iulianus-et-eunus": {
+      "wikidata": "Q85975403",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0228-marana-et-cyra": {
+      "wikidata": "Q11767292",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0303-emetherius-et-cheledonius": {
+      "wikidata": "Q2972035",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0303-marinus-et-asterius": {
+      "wikidata": "Q56293083",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-basilius-et-socii": {
+      "wikidata": "Q20936683",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-eubulius-caesareae": {
+      "wikidata": "Q110728452",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-perpetua-et-felicitas": {
+      "wikidata": "Q771956",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0311-trophimus-et-thalus": {
+      "wikidata": "Q15700789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0312-petrus-nicomediae": {
+      "wikidata": "Q24952997",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0316-hilarius-et-tatianus": {
+      "wikidata": "Q106559144",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0322-callinicus-et-basilissa": {
+      "wikidata": "Q23583396",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0323-victorianus-et-socii": {
+      "wikidata": "Q4111032",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0324-timolaus-et-socii": {
+      "wikidata": "Q16206058",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0326-barontius-et-desiderius": {
+      "wikidata": "Q808712",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0401-venantius-et-socii": {
+      "wikidata": "Q136613999",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0404-agathopodus-et-theodulus": {
+      "wikidata": "Q81097215",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0405-irenes-thessalonicensis": {
+      "wikidata": "Q359116",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0413-carpus-et-socii": {
+      "wikidata": "Q1734353",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0414-bernica-et-prosdoca": {
+      "wikidata": "Q5291315",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0420-sulpicius-et-servitianus": {
+      "wikidata": "Q132560343",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0426-dominicus-et-gregorius": {
+      "wikidata": "Q8561599",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0426-gulielmus-et-peregrinus": {
+      "wikidata": "Q21235349",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0501-torquatus-et-socii": {
+      "wikidata": "Q938363",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0502-hesperus-et-zoes": {
+      "wikidata": "Q18921069",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0503-eventius-et-socii": {
+      "wikidata": "Q15875070",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0503-timotheus-et-maura": {
+      "wikidata": "Q12151185",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0504-agapius-et-secundinus": {
+      "wikidata": "Q20901818",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0504-ioannes-houghton-et-socii": {
+      "wikidata": "Q63064377",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0506-marianus-et-iacobus": {
+      "wikidata": "Q17562131",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0510-alphius-et-socii": {
+      "wikidata": "Q2248717",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0514-felix-et-fortunatus": {
+      "wikidata": "Q3742241",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0514-victor-et-corona": {
+      "wikidata": "Q457948",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0516-abda-et-ebediesus": {
+      "wikidata": "Q4664616",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0516-florentius-et-diocletianus": {
+      "wikidata": "Q97253807",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0518-theodotus-et-thecusa": {
+      "wikidata": "Q11951712",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0519-parthenius-et-calogerus": {
+      "wikidata": "Q97256860",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0522-castus-et-aemilius": {
+      "wikidata": "Q716664",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0523-lucius-et-socii": {
+      "wikidata": "Q85976593",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0524-donatianus-et-rogatianus": {
+      "wikidata": "Q3036218",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0529-gulielmus-arnaud-et-socii": {
+      "wikidata": "Q20002779",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0529-sisinnius-et-socii": {
+      "wikidata": "Q3962077",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0530-basilius-et-emmelia": {
+      "wikidata": "Q133930875",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0531-cantius-et-socii": {
+      "wikidata": "Q1991316",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0601-ammon-et-socii": {
+      "wikidata": "Q3576500",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0602-marcellinus-et-petrus": {
+      "wikidata": "Q449701",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0607-petrus-et-socii": {
+      "wikidata": "Q11940894",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0609-primus-et-felicianus": {
+      "wikidata": "Q2535100",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0614-valerius-et-rufinus": {
+      "wikidata": "Q6158992",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0616-ferreolus-et-ferrutius": {
+      "wikidata": "Q18921045",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0616-quiricus-et-iulitta": {
+      "wikidata": "Q514765",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0617-blastus-et-diogenes": {
+      "wikidata": "Q97253450",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0618-cyriacus-et-paula": {
+      "wikidata": "Q3008948",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0618-marcus-et-marcellianus": {
+      "wikidata": "Q670905",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0619-gervasius-et-protasius": {
+      "wikidata": "Q1515920",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0622-iulius-et-aaron": {
+      "wikidata": "Q302972",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0624-agoardus-et-agilbertus": {
+      "wikidata": "Q2379953",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0626-ioannes-et-paulus": {
+      "wikidata": "Q1698715",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0628-plutarchus-et-socii": {
+      "wikidata": "Q108459412",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0630-basilides-alexandriae": {
+      "wikidata": "Q532385",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0702-liberatus-et-socii": {
+      "wikidata": "Q85977003",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0702-processus-et-martinianus": {
+      "wikidata": "Q1544096",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0705-matthaeus-lambert-et-socii": {
+      "wikidata": "Q7990254",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0708-aquila-et-prisca": {
+      "wikidata": "Q11085604",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0709-augustinus-zhao-rong-et-socii": {
+      "wikidata": "Q2668281",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0709-nicolaus-pieck-et-socii": {
+      "wikidata": "Q1909286",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-emmanuel-ruiz-et-socii": {
+      "wikidata": "Q3850285",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-felix-et-philippus": {
+      "wikidata": "Q133554573",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-rufina-et-secunda": {
+      "wikidata": "Q1518118",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0711-placidus-et-sigisbertus": {
+      "wikidata": "Q1421271",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0712-fortunatus-et-hermagora": {
+      "wikidata": "Q22579789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0712-proclus-et-hilarion": {
+      "wikidata": "Q97256911",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0715-eutropius-et-socii": {
+      "wikidata": "Q97487684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0715-ignatius-de-azevedo-et-socii": {
+      "wikidata": "Q3134023",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0717-iusta-et-rufina": {
+      "wikidata": "Q2366673",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
+      "wikidata": "Q303617",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0717-martyres-scillitani": {
+      "wikidata": "Q488248",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0719-macedonius-et-socii": {
+      "wikidata": "Q129634476",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0724-boris-et-gleb": {
+      "wikidata": "Q893813",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0724-iacoba-martinez-garcia-et-socii": {
+      "wikidata": "Q2939663",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0726-ioachim-et-anna": {
+      "wikidata": "Q140401460",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0728-nazarius-et-celsus": {
+      "wikidata": "Q17524141",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0729-simplicius-et-socii": {
+      "wikidata": "Q840917",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0730-abdon-et-sennen": {
+      "wikidata": "Q308330",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0804-iustinus-et-crescention": {
+      "wikidata": "Q21208893",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0806-iustus-et-pastor": {
+      "wikidata": "Q2671799",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": {
+      "wikidata": "Q19265558",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0821-agathonicus-et-zoticus": {
+      "wikidata": "Q117379295",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0821-bernardus-et-socii": {
+      "wikidata": "Q8246899",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0823-abundius-et-irenaeus": {
+      "wikidata": "Q4670633",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0823-claudius-et-socii": {
+      "wikidata": "Q4810684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0830-felix-et-adauctus": {
+      "wikidata": "Q1291005",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0907-festus-et-desiderius": {
+      "wikidata": "Q136624320",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0907-marcus-crisini-et-socii": {
+      "wikidata": "Q530681",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0910-nemesianus-et-socii": {
+      "wikidata": "Q85977994",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0911-protus-et-hyacinthus": {
+      "wikidata": "Q3394205",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis": {
+      "wikidata": "Q6035428",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0916-rogellus-et-servusdei": {
+      "wikidata": "Q121710741",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0918-david-okelo-et-gildus-irwa": {
+      "wikidata": "Q17628568",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0920-andreas-kim-tae-gon-et-socii": {
+      "wikidata": "Q379564",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0921-eusebius-et-socii": {
+      "wikidata": "Q108037267",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0922-mauritius-et-socii": {
+      "wikidata": "Q664988",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0924-andochius-et-socii": {
+      "wikidata": "Q124744645",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0926-cosmas-et-damianus": {
+      "wikidata": "Q76486",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0928-laurentius-ruiz-et-socii": {
+      "wikidata": "Q669138",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1001-verissimus-et-socii": {
+      "wikidata": "Q3509870",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1003-ambrosius-franciscus-ferro-et-socii": {
+      "wikidata": "Q10334580",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1003-duo-ewaldi": {
+      "wikidata": "Q322929",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1007-sergius-et-bacchus": {
+      "wikidata": "Q140013",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-cassius-et-florentius": {
+      "wikidata": "Q549910",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-daniel-et-socii": {
+      "wikidata": "Q136614618",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-eulampius-et-eulampia": {
+      "wikidata": "Q3734508",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1011-nicasius-et-socii": {
+      "wikidata": "Q7024538",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1011-tharacus-et-socii": {
+      "wikidata": "Q4759490",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1013-faustus-et-socii": {
+      "wikidata": "Q11921619",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1017-rufus-et-zosimus": {
+      "wikidata": "Q7378121",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1018-proculus-et-socii": {
+      "wikidata": "Q138388825",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-ioannes-de-brebeuf-et-socii": {
+      "wikidata": "Q2653872",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-ptolomaeus-et-lucius": {
+      "wikidata": "Q18918005",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-sabinianus-et-potentianus": {
+      "wikidata": "Q7428319",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1021-dasius-et-socii": {
+      "wikidata": "Q60594638",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1022-nunilo-et-alodia": {
+      "wikidata": "Q2667038",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1023-servandus-et-germanus": {
+      "wikidata": "Q7455543",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-chrysanthus-et-daria": {
+      "wikidata": "Q1088478",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-crispinus-et-crispinianus": {
+      "wikidata": "Q1140213",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-martyrius-et-marcianus": {
+      "wikidata": "Q24009983",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1026-lucianus-et-marcianus": {
+      "wikidata": "Q11933561",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1028-vincentius-et-socii": {
+      "wikidata": "Q11954656",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1030-claudius-et-socii": {
+      "wikidata": "Q11914022",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1102-carterius-et-socii": {
+      "wikidata": "Q4691256",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1104-nicandrus-et-hermes": {
+      "wikidata": "Q21328789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1104-vitalis-et-agricola": {
+      "wikidata": "Q203177",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1106-callinicus-et-socii": {
+      "wikidata": "Q135925988",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1108-simpronianus-et-socii": {
+      "wikidata": "Q1301757",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1112-benedictus-et-socii": {
+      "wikidata": "Q1481639",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1114-nicolaus-tavelic-et-socii": {
+      "wikidata": "Q3413495",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1115-marinus-et-anianus": {
+      "wikidata": "Q115940857",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": {
+      "wikidata": "Q1752755",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1124-andreas-dung-lac-et-socii": {
+      "wikidata": "Q3075684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1124-flora-et-maria": {
+      "wikidata": "Q5460376",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1127-facundus-et-primitivus": {
+      "wikidata": "Q3473885",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1129-petrus-berthelot-et-thomas-rodriguez": {
+      "wikidata": "Q113882069",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1206-martyres-africae": {
+      "wikidata": "Q4162017",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1213-eustratius-et-socii": {
+      "wikidata": "Q19999551",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1223-theodulus-et-socii": {
+      "wikidata": "Q3592726",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1225-iovinus-et-basileus": {
+      "wikidata": "Q110263903",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1226-agnes-phila-et-lucia-khambang": {
+      "wikidata": "Q3850284",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1227-theodorus-graptus": {
+      "wikidata": "Q3067955",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1231-donata-et-socii": {
+      "wikidata": "Q20058182",
+      "kind": "group",
+      "status": "reviewed"
+    }
+  }
 }
