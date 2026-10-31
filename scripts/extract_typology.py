@@ -114,7 +114,7 @@ TYPOLOGY_OVERRIDES = {
     "mr:1123-clemens-i": "depositio",
     "mr:0512-pancratius-romae": "depositio",
     # Died in April; the text says he is honoured on the day he took up his see.
-    "mr:1207-ambrosius": "ordinatio",
+    "mr:1207-ambrosius-mediolanensis": "ordinatio",
     # A solemnity of his nativity: the date marks the birth, not the death.
     "mr:0624-ioannes-baptista": "celebratio",
 }
