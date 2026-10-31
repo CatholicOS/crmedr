@@ -78,8 +78,8 @@ Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked
 mr:0711-leontius-burdigalae (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva-gistellae (6\*),
 mr:0802-betharius-carnuti (8\*), mr:0807-donatus-vesontione (7\*),
 mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus-trevirorum (8\*), mr:1026-eata-axeloduni (7\*),
-mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
-mr:1119-eudo (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
+mr:1103-libertinus-agrigenti (3\*), mr:1103-odrada-alemi (10\*), mr:1118-theofredus-vellavorum (6\*),
+mr:1119-eudo-vellavorum (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
 
 Plain in the Latin print, asterisked in the CEI edition (6):
 mr:0323-rebecca-de-himlaya (11.), mr:0812-iacobus-do-mai-nam-et-socii (11., Nam Định martyrs),
@@ -371,7 +371,7 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0705-maria-de-terreto | mr:0705-thomas-terreti | St Thomas, abbot |
 | mr:0726-benedictus | mr:0726-simeon-mantuae | St Simeon of Polirone |
 | mr:0823-philippus | mr:0823-antonius-de-hieracio | St Anthony of Gerace |
-| mr:1114-maria | mr:1114-siardus | St Siard |
+| mr:1114-maria | mr:1114-siardus-horti-sanctae-mariae | St Siard |
 | mr:1114-maria-de-gualdo-mazocca | mr:1114-ioannes-de-tupharia | Bl. John of Tufara |
 | mr:1205-petrus-de-aquara | mr:1205-lucidus | St Lucidus |
 | mr:1210-nicolaus-de-viotorito | mr:1210-lucas-de-insula | St Luke, bishop of Isola |
@@ -890,8 +890,8 @@ the following eulogies of their day, run in by the OCR.
 | mr:1016-lullus-moguntiae | mr:1016-lullus-moguntinus |
 | mr:1022-donatus-scotus-tuscia | mr:1022-donatus-scotus |
 | mr:1026-fulcus-papiae | mr:1026-fulcus-papiae |
-| mr:1102-justus | mr:1102-iustus |
-| mr:1110-justus | mr:1110-iustus |
+| mr:1102-justus | mr:1102-iustus-tergestis |
+| mr:1110-justus | mr:1110-iustus-cantuariae |
 | mr:1209-syri | mr:1209-syrus |
 | mr:1209-petrus-fourier-graji | mr:1209-petrus-fourier |
 | mr:1216-ado-viennae | mr:1216-ado |
@@ -904,7 +904,7 @@ applies two classes:
 - **Rubrics.** Five keys held a rubric, an instruction to the reader, not a eulogy (the
   1749 *Quod sequitur, legitur in tono Lectionis consueto* of Christmas, the leap-year
   notes of 23 February in both editions, the 1749 note on All Souls falling on a Sunday,
-  which had been keyed mr:1102-domninus). They move to the day's `rubricae` in the edition
+  which had been keyed mr:1102-domninus-viennae). They move to the day's `rubricae` in the edition
   files, each placed after the eulogy it follows (or at the head of the day); a key that
   held only a rubric is dropped (mr:1225-quodsequitur-legitur-in and
   mr:0223-matthia-apostolus are removed). The 1914 Milburga keeps its eulogy; only the
@@ -916,7 +916,7 @@ applies two classes:
   namesake of another see (Marcellus of Trier on the 2004 Marcellus of Chalon). Each is
   re-keyed: 28 placements to the current ID of the eulogy, the rest to a deprecated ID of
   the day, 77 of them new. A 2004 eulogy whose historical text had been keyed elsewhere
-  gets its own text back (mr:1101-caesarius, mr:1205-crispina-thagorensis,
+  gets its own text back (mr:1101-caesarius-tarracinae, mr:1205-crispina-thagorensis,
   mr:1210-eulalia). One 1749 key holding two eulogies is split (mr:0311-constantinus-scotiae), and
   mr:0224-cyprianus is re-minted mr:0224-montanus-et-socii.
 - **Same eulogy, subject changed by 2004.** Where the 2004 edition kept a historical eulogy
@@ -983,7 +983,7 @@ records the errors of the sources as curator notes. An error of one edition's te
 that edition only, in the new `edition_notes` field (`EDITION_NOTES` for current IDs): most are
 errors of the unofficial 1914 English against the 1749 Latin (Brixia rendered Brixen at
 mr:0127-angela-merici, Domitian for Diocletian at mr:0824-tatio-claudiopoli, Pettau rendered Poitiers at
-mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-privatus-gabalorum). Remarks on
+mr:1102-victorinus-poetovionis), two concern the 1749 print (a dropped line at mr:0821-privatus-gabalorum). Remarks on
 the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida-romae. Three Latin subjects are corrected (Sancta Fides,
 Sancta Marina, Sanctus Ioannes Therestus).
 
@@ -1426,15 +1426,15 @@ from `PS` to `IL`.
 | `mr:1016-longinus-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
 | `mr:1022-marcus-hierosolymitanus` | no opening place | IL | PS |
 | `mr:1029-narcissus-hierosolymitanus` | no opening place | IL | PS |
-| `mr:1106-felix` | El Kala (Q3050005) | TN | DZ |
+| `mr:1106-felix-thinissae` | El Kala (Q3050005) | TN | DZ |
 | `mr:1106-callinicus-et-socii` | Jerusalem (Q1218) | IL | PS |
 | `mr:1109-henricus-hlebowicz` | Barysaw (Q19313) | PL | BY |
-| `mr:1114-serapion` | Algiers (Q3561) | TN | DZ |
+| `mr:1114-serapion-icosii` | Algiers (Q3561) | TN | DZ |
 | `mr:1114-nicolaus-tavelic-et-socii` | Jerusalem (Q1218) | IL | PS |
 | `mr:1115-rochus-gonzalez-et-alphonsus-rodriguez` | Caibaté (Q742521) | PY | BR |
 | `mr:1119-abdias-propheta` | no opening place | IL | PS |
 | `mr:1121-praesentatio-beatae-mariae-virginis` | no opening place | IL | PS |
-| `mr:1122-ananias` | Arbela (Q56324805) | IR | IQ |
+| `mr:1122-ananias-arbelorum` | Arbela (Q56324805) | IR | IQ |
 | `mr:1201-clementina-nengapeta-anuarite` | Isiro (Q899873) | CG | CD |
 | `mr:1204-ioannes-damascenus` | no opening place | IL | PS |
 | `mr:1205-sabas` | Holy Lavra of Saint Sabbas (Q1059946) | IL | PS |
@@ -1575,7 +1575,7 @@ attested only in the 1914 English; an ID's name must be in the text): of its 2,8
 elogia, 2,770 matched an ID of the same day and 42 were settled by reviewed overrides —
 spelling variants and other names of the same subject the name check rejects (the 1630
 *Lucinius* of Angers under the 1914-attested `mr:0213-licinius`, now linked to
-`mr:1101-licinius`; *Peregrinus* under `mr:0613-cetheus-peregrinus`, *Dominica* under
+`mr:1101-licinius-andegavi`; *Peregrinus* under `mr:0613-cetheus-peregrinus`, *Dominica* under
 `mr:0706-cyriaca-nicomediae`, *Margarita* under `mr:0720-marina-antiochiae`). **6 of these IDs are new
 deprecated IDs** (`attested_in: martyrologium_romanum_1630`): eulogies that 1630 prints
 on another day than any other edition (`mr:0105-domnio`, `mr:0714-henricus`,
