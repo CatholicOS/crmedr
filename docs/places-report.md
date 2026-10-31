@@ -519,47 +519,47 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:1029-honoratus-vercellarum` | ministry (sedem) |  |
 | `mr:1031-wolfgangus-ratisbonae` | death (obiit); ministry (sedem) | yes |
 | `mr:1031-christophorus-de-romaniola` | death (obiit) |  |
-| `mr:1102-victorinus` | ministry (episcopi pœtaviensis) | yes |
-| `mr:1102-marcianus` | birth (natus) | yes |
-| `mr:1102-malachia` | ministry (episcopi dunensis) | yes |
+| `mr:1102-victorinus-poetovionis` | ministry (episcopi pœtaviensis) | yes |
+| `mr:1102-marcianus-cyrrhi` | birth (natus) | yes |
+| `mr:1102-malachia-dunensis` | ministry (episcopi dunensis) | yes |
 | `mr:1102-ioannes-bodey` | death (occubuit) |  |
 | `mr:1103-martinus-de-porres` | birth (natus) | yes |
-| `mr:1103-ermengaudius` | death (obiit) |  |
+| `mr:1103-ermengaudius-urgelli` | death (obiit) |  |
 | `mr:1104-carolus-borromeo` | ministry (episcopus mediolanensis) | yes |
-| `mr:1105-marcus` | ministry (episcopi æcanensis) | yes |
+| `mr:1105-marcus-aecarum` | ministry (episcopi æcanensis) | yes |
 | `mr:1105-gomida-keumurgian` | birth (natus); death (occubuit) | yes |
 | `mr:1105-bernardus-lichtenberg` | death (obiit) | yes |
 | `mr:1105-gregorius-lakota` | ministry (episcopi premisliensis) | yes |
-| `mr:1106-protasius` | ministry (episcopus lausannensis) | yes |
-| `mr:1107-willibrordus` | death (obdormivit); ministry (episcopus ultraiectensis) | yes |
-| `mr:1107-engelbertus` | death (occubuit) |  |
-| `mr:1108-willehadus` | birth (natus); ministry (sedem) | yes |
-| `mr:1108-godefridus` | ministry (episcopi ambianensis) | yes |
+| `mr:1106-protasius-lausannensis` | ministry (episcopus lausannensis) | yes |
+| `mr:1107-willibrordus-ultraiectensis` | death (obdormivit); ministry (episcopus ultraiectensis) | yes |
+| `mr:1107-engelbertus-coloniae-agrippinae` | death (occubuit) |  |
+| `mr:1108-willehadus-bremae` | birth (natus); ministry (sedem) | yes |
+| `mr:1108-godefridus-ambianensis` | ministry (episcopi ambianensis) | yes |
 | `mr:1108-ioannes-duns-scotus` | birth (oriundus) | yes |
 | `mr:1110-leo-i` | birth (natus) | yes |
-| `mr:1111-martinus` | birth (natus); ministry (episcopus turonensis) | yes |
-| `mr:1111-veranus` | ministry (episcopi lugdunensis) | yes |
-| `mr:1111-bartholomaeus` | birth (natus) | yes |
+| `mr:1111-martinus-turonensis` | birth (natus); ministry (episcopus turonensis) | yes |
+| `mr:1111-veranus-lirinensis` | ministry (episcopi lugdunensis) | yes |
+| `mr:1111-bartholomaeus-cryptae-ferratae` | birth (natus) | yes |
 | `mr:1112-iosaphat-kuncewicz` | death (occubuit); ministry (episcopi polocensis) | yes |
-| `mr:1113-quinctianus` | ministry (sedem) | yes |
-| `mr:1113-maxellendis` | death (occubuit) |  |
-| `mr:1113-abbo` | death (occubuit) | yes |
+| `mr:1113-quinctianus-arvernae` | ministry (sedem) | yes |
+| `mr:1113-maxellendis-cameracensis` | death (occubuit) |  |
+| `mr:1113-abbo-floriacensis` | death (occubuit) | yes |
 | `mr:1113-livia-pietrantoni` | death (occubuit) | yes |
-| `mr:1114-hypatius` | death (occubuit) |  |
+| `mr:1114-hypatius-gangrae` | death (occubuit) |  |
 | `mr:1114-laurentius-o-toole` | ministry (episcopi dublinensis) | yes |
 | `mr:1114-ioannes-liccio` | birth (natus) |  |
 | `mr:1114-stephanus-theodorus-cuenot` | death (occubuit) |  |
 | `mr:1115-albertus-magnus` | death (obdormivit); ministry (sedem) | yes |
-| `mr:1115-maclovius` | birth (natus); ministry (episcopi alethensis) | yes |
-| `mr:1115-sidonius` | birth (oriundus) | yes |
-| `mr:1115-fintanus` | birth (oriundus) | yes |
+| `mr:1115-maclovius-alethensis` | birth (natus); ministry (episcopi alethensis) | yes |
+| `mr:1115-sidonius-rothomagi` | birth (oriundus) | yes |
+| `mr:1115-fintanus-rhenaugiae` | birth (oriundus) | yes |
 | `mr:1115-iosephus-mkasa-balikuddembe` | birth (natus) |  |
-| `mr:1116-margarita` | birth (nata) | yes |
-| `mr:1116-eucherius` | ministry (episcopus lugdunensis) | yes |
-| `mr:1116-othmarus` | death (obiit) | yes |
+| `mr:1116-margarita-scotiae` | birth (nata) | yes |
+| `mr:1116-eucherius-lugdunensis` | ministry (episcopus lugdunensis) | yes |
+| `mr:1116-othmarus-sancti-galli` | death (obiit) | yes |
 | `mr:1116-edmundus-rich` | death (obiit); ministry (episcopi cantuariensis) | yes |
-| `mr:1117-namatius` | ministry (sedem) |  |
-| `mr:1117-lazarus` | birth (natus) | yes |
+| `mr:1117-namatius-viennae` | ministry (sedem) |  |
+| `mr:1117-lazarus-constantinopoli` | birth (natus) | yes |
 | `mr:1117-hugo-lincolniae` | ministry (sedem) |  |
 | `mr:1117-ioannes-del-castillo` | death (occubuit) | yes |
 | `mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi` | death (occubuit) | yes |
@@ -569,19 +569,19 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:1118-carolina-kozka` | death (occubuit) |  |
 | `mr:1121-gelasius-i` | death (obiit) |  |
 | `mr:1122-thomas-reggio` | ministry (episcopi ianuensis) | yes |
-| `mr:1123-columbanus` | death (obiit) | yes |
-| `mr:1124-colmanus` | ministry (episcopi cloynensis) |  |
-| `mr:1124-portianus` | death (obiit) |  |
+| `mr:1123-columbanus-luxoviensis` | death (obiit) | yes |
+| `mr:1124-colmanus-cloynensis` | ministry (episcopi cloynensis) |  |
+| `mr:1124-portianus-arvernorum` | death (obiit) |  |
 | `mr:1124-albertus-lovaniensis` | ministry (episcopi leodiensis) | yes |
-| `mr:1125-marculus` | death (occubuit) |  |
+| `mr:1125-marculus-numidiae` | death (occubuit) |  |
 | `mr:1125-beatrix-de-ornacieux` | death (obiit) | yes |
 | `mr:1125-petrus-yi-ho-yong` | death (obiit) |  |
-| `mr:1126-alypius` | death (obiit) |  |
-| `mr:1126-nicon` | death (obiit) | yes |
-| `mr:1126-bellinus` | death (occubuit) | yes |
-| `mr:1127-bilhildis` | death (obiit) |  |
-| `mr:1129-iacobus` | ministry (episcopi sarugensis) | yes |
-| `mr:1129-radbodus` | death (obiit); ministry (episcopi ultraiectensis) | yes |
+| `mr:1126-alypius-hadrianopoli` | death (obiit) |  |
+| `mr:1126-nicon-spartanus` | death (obiit) | yes |
+| `mr:1126-bellinus-patavinus` | death (occubuit) | yes |
+| `mr:1127-bilhildis-moguntiae` | death (obiit) |  |
+| `mr:1129-iacobus-sarugensis` | ministry (episcopi sarugensis) | yes |
+| `mr:1129-radbodus-ultraiectensis` | death (obiit); ministry (episcopi ultraiectensis) | yes |
 | `mr:1130-andreas-apostolus` | birth (natus) | yes |
 | `mr:1201-eligius` | ministry (sedem) | yes |
 | `mr:1202-silverius` | death (obiit) | yes |
@@ -909,44 +909,44 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:1031-foillanus-fossarum`: hibérnus
 - `mr:1031-leo-nowakowski`: Polóniæ
 - `mr:1031-thomas-de-florentia`: Floréntia
-- `mr:1102-ambrosius`: Lugdúnum
-- `mr:1102-malachia`: Claraválle
+- `mr:1102-ambrosius-agaunensis`: Lugdúnum
+- `mr:1102-malachia-dunensis`: Claraválle
 - `mr:1103-petrus-franciscus-neron`: Parisiénsi
 - `mr:1104-francisca-de-ambosia`: Gállia
-- `mr:1104-pierius`: Alexandrínam
+- `mr:1104-pierius-romae`: Alexandrínam
 - `mr:1105-gomida-keumurgian`: Armenórum
 - `mr:1105-maria-a-monte-carmelo-viel-ferrando`: Monte Carmélo
-- `mr:1106-paulus`: nicǽnam
-- `mr:1106-stephanus`: ecclésiam cathedrálem
+- `mr:1106-paulus-constantinopolitanus`: nicǽnam
+- `mr:1106-stephanus-aptae-iuliae`: ecclésiam cathedrálem
 - `mr:1109-dedicatio-basilicae-lateranensis`: Roma
-- `mr:1109-ursinus`: Galliárum
+- `mr:1109-ursinus-biturigum`: Galliárum
 - `mr:1113-nicolaus-i`: Románi
-- `mr:1113-quinctianus`: Arvernórum
-- `mr:1113-varmundus`: ecclésiam cathedrálem
+- `mr:1113-quinctianus-arvernae`: Arvernórum
+- `mr:1113-varmundus-eporediae`: ecclésiam cathedrálem
 - `mr:1114-stephanus-theodorus-cuenot`: Parisiénsi
-- `mr:1115-desiderius`: templum
+- `mr:1115-desiderius-cadurci`: templum
 - `mr:1116-edmundus-rich`: Cisterciénse
-- `mr:1116-eucherius`: Lugdunénsis
+- `mr:1116-eucherius-lugdunensis`: Lugdunénsis
 - `mr:1117-elisabeth-hungaria`: Hungáriæ
 - `mr:1117-hugo-nucariae`: Cisterciénse, Claravallénsi
-- `mr:1117-salomea`: Haliciénsis
-- `mr:1118-odo`: Anianénsi, Anianénsis
-- `mr:1118-romacharius`: Roma
-- `mr:1118-romanus`: Románi
+- `mr:1117-salomea-haliciensis`: Haliciénsis
+- `mr:1118-odo-cluniacensis`: Anianénsi, Anianénsis
+- `mr:1118-romacharius-constantiae`: Roma
+- `mr:1118-romanus-caesariensis`: Románi
 - `mr:1119-abdias-propheta`: Israel
-- `mr:1119-maximus`: Máximi
+- `mr:1119-maximus-caesareae`: Máximi
 - `mr:1120-gregorius-decapolitanus`: Constantinópoli
 - `mr:1121-francisca-de-siedliska`: Nazarethánæ
-- `mr:1121-rufus`: Romános
+- `mr:1121-rufus-discipulus`: Romános
 - `mr:1124-petrus-dumoulin-borie-et-socii`: Parisiénsi
-- `mr:1124-romanus`: Románi
-- `mr:1125-moyses`: Carthaginénsi, Carthaginénsis
-- `mr:1125-petrus`: Alexandríæ, ægýptii
+- `mr:1124-romanus-burdigalensis`: Románi
+- `mr:1125-moyses-romae`: Carthaginénsi, Carthaginénsis
+- `mr:1125-petrus-alexandriae`: Alexandríæ, ægýptii
 - `mr:1126-leonardus-a-portu-mauritio`: Urbe
 - `mr:1126-silvester-gozzolini`: desérto
-- `mr:1127-acharius`: Novioménsem
-- `mr:1127-maximus`: Máximi, Reiénsis
-- `mr:1127-virgilius`: ecclésiam cathedrálem
+- `mr:1127-acharius-noviomensis`: Novioménsem
+- `mr:1127-maximus-reiensis`: Máximi, Reiénsis
+- `mr:1127-virgilius-salisburgensis`: ecclésiam cathedrálem
 - `mr:1129-saturninus-carthaginensis`: Carthaginénsi, Carthaginénsis, Roma, Romam
 - `mr:1130-iosephus-marchand`: Parisiénsi
 - `mr:1201-florentia`: Floréntiæ
@@ -977,4 +977,4 @@ None.
 
 ## Entries with no place
 
-`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph-sponsus-mariae`, `mr:0322-epaphroditus-discipulus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus-discipulus`, `mr:0509-isaias-propheta`, `mr:0509-herma-discipulus`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna-discipula`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila-discipulus`, `mr:0716-simon-da-costa`, `mr:0720-ioseph-iustus`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus-monachus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata-virgo`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`
+`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph-sponsus-mariae`, `mr:0322-epaphroditus-discipulus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus-discipulus`, `mr:0509-isaias-propheta`, `mr:0509-herma-discipulus`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna-discipula`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila-discipulus`, `mr:0716-simon-da-costa`, `mr:0720-ioseph-iustus`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus-monachus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata-virgo`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus-discipulus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`
