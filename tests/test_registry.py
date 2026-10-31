@@ -586,8 +586,8 @@ class EditionNotes51Test(unittest.TestCase):
         self.assertIn("Brescia", angela["edition_notes"][r.EDITION_1914])
         self.assertNotIn("Brescia", angela.get("note", ""))
         self.assertIn(r.EDITION_1749, entries["mr:0821-privatus"]["edition_notes"])
-        self.assertIn("Peter the Younger", entries["mr:0410-beda"]["edition_notes"][r.EDITION_EN])
-        self.assertNotIn("mr:0410-beda", r.ENTRY_NOTES)
+        self.assertIn("Peter the Younger", entries["mr:0410-beda-gavelli"]["edition_notes"][r.EDITION_EN])
+        self.assertNotIn("mr:0410-beda-gavelli", r.ENTRY_NOTES)
         self.assertIn(r.EDITION_IT, entries["mr:0712-proclus-et-hilarion"]["edition_notes"])
         # current IDs keep theirs in EDITION_NOTES (or the asterisk notes), so a rebuild keeps them
         for mr_id, e in entries.items():

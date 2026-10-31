@@ -100,7 +100,7 @@ ENTRY_NOTES = {
     "mr:0404-caietanus-catanoso": "Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005.",
     "mr:0404-franciscus-marto": "Francisco Marto, blessed in the 2004 editions, was canonized on 13 May 2017.",
     "mr:0411-helena-guerra": "Elena Guerra, blessed in the 2004 editions, was canonized on 20 October 2024.",
-    "mr:0413-margarita": "Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021.",
+    "mr:0413-margarita-tiferni-tiberini": "Margaret of Città di Castello, blessed in the 2004 editions, was canonized on 24 April 2021.",
     "mr:0415-caesar-de-bus": "César de Bus, blessed in the 2004 editions, was canonized on 15 May 2022.",
     "mr:0415-damianus-de-veuster": "Damien de Veuster, blessed in the 2004 editions, was canonized on 11 October 2009.",
     "mr:0417-catharina-tekakwitha": "Kateri Tekakwitha, blessed in the 2004 editions, was canonized on 21 October 2012.",
@@ -707,7 +707,7 @@ EDITION_NOTES = {
             "Translation error: \"Autun\" where the Latin has \"Augustómagi\" (Senlis)."
         ),
     },
-    "mr:0409-acacius": {
+    "mr:0409-acacius-amidae": {
         EDITION_EN: (
             "Translation error: \"to ransom Persian captives, and the clergy from dreadful "
             "tortures, even melted them down\" where the Latin has \"pro rediméndis Persis captívis "
@@ -715,36 +715,36 @@ EDITION_NOTES = {
             "tortured, he gathered the clergy)."
         ),
     },
-    "mr:0409-aedesius": {
+    "mr:0409-aedesius-alexandriae": {
         EDITION_EN: (
             "Translation error: \"virgins consecrated to a goddess\" where the Latin has \"vírgines "
             "Deo dicátas\" (virgins consecrated to God)."
         ),
     },
-    "mr:0409-liborius": {
+    "mr:0409-liborius-cenomanorum": {
         EDITION_EN: (
             "Translation error: \"Saint Liberius\" where the Latin has \"sancti Libórii\" (Saint "
             "Liborius)."
         ),
     },
-    "mr:0413-margarita": {
+    "mr:0413-margarita-tiferni-tiberini": {
         EDITION_EN: (
             "Translation error: \"born Greek\" where the Latin has \"cæca nata\" (born blind)."
         ),
     },
-    "mr:0415-ortarius": {
+    "mr:0415-ortarius-andeleiensis": {
         EDITION_EN: (
             "Translation error: \"Saint Ouen (Ortarius)\" where the Latin has \"sancti Ortárii\" "
             "(Saint Ortarius); Ouen is a different saint."
         ),
     },
-    "mr:0415-paternus": {
+    "mr:0415-paternus-abrincensis": {
         EDITION_EN: (
             "Translation error: \"Séez\" where the Latin has \"Sescíaci\" (Scissy, in the district of "
             "Coutances)."
         ),
     },
-    "mr:0417-simeon": {
+    "mr:0417-simeon-seleuciae": {
         EDITION_EN: (
             "Translation error: \"Sapor, Second King of the Persians\" where the Latin has \"Sápore "
             "Persárum rege Secúndo\" (Sapor II, King of the Persians)."
@@ -755,7 +755,7 @@ EDITION_NOTES = {
             "Translation error: \"Hohenwart\" where the Latin has \"Hodíngis\" (Altötting)."
         ),
     },
-    "mr:0422-senorina": {
+    "mr:0422-senorina-basti": {
         EDITION_EN: (
             "Translation error: \"Badajoz\" where the Latin has \"Basti\" (Basto, in Portugal)."
         ),
@@ -1629,19 +1629,19 @@ EDITION_NOTES = {
             "in Asia Minor (modern Turkey)."
         ),
     },
-    "mr:0418-idesbaldus": {
+    "mr:0418-idesbaldus-dunensis": {
         EDITION_IT: (
             "Translation error: \"nel monastero di Down\" where the Latin has \"Dunénse monastérium\" "
             "(the Abbey of the Dunes, Ten Duinen, in Flanders)."
         ),
     },
-    "mr:0427-ioannes": {
+    "mr:0427-ioannes-aphusiae": {
         EDITION_IT: (
             "Translation error: \"nel mare Egeo\" (in the Aegean Sea) where the Latin has \"in "
             "Propóntide\" (the Propontis, i.e. the Sea of Marmara)."
         ),
     },
-    "mr:0427-zita": {
+    "mr:0427-zita-lucae": {
         EDITION_IT: (
             "Translation error: \"fu per dodici anni domestica\" (a domestic for twelve years) "
             "where the Latin has \"duodénnis\" (at twelve years of age she entered service, "
@@ -2053,7 +2053,7 @@ EDITION_NOTES = {
             "Wise."
         ),
     },
-    "mr:0410-beda": {
+    "mr:0410-beda-gavelli": {
         EDITION_EN: (
             "Translation error: \"Saint Peter the Younger\" for the subject; the Latin print has "
             "sancti Bedæ iunióris and the Italian (CEI) san Beda il Giovane. The English subject "
@@ -2076,7 +2076,7 @@ EDITION_NOTES = {
             "Translation error: the Latin is Antoninus, not Antonius (Anthony)."
         ),
     },
-    "mr:0428-prudentius": {
+    "mr:0428-prudentius-turiasonis": {
         EDITION_1914: (
             "Translation error: the Latin has 'Episcopi et Confessoris', not a martyr."
         ),
@@ -3026,7 +3026,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Scillium\" where the Latin has \"Sicli\" (Scicli)."
         ),
     },
-    "mr:0406-irenaeus": {
+    "mr:0406-irenaeus-sirmii": {
         EDITION_IT: (
             "Translation error: \"nell’odierna Croazia\" where the Latin \"Sírmii\" (Sirmium) is "
             "the present Sremska Mitrovica, in Serbia. Translation error: \"fu dapprima "
@@ -3034,7 +3034,7 @@ REVIEW_EDITION_NOTES = {
             "est\" (was first tormented with tortures)."
         ),
     },
-    "mr:0407-aibertus": {
+    "mr:0407-aibertus-crispiniensis": {
         EDITION_EN: (
             "Translation error: \"Saint Albert\" where the Latin has \"sancti Aibérti\" (Saint "
             "Aybert)."
@@ -3057,19 +3057,19 @@ REVIEW_EDITION_NOTES = {
             "Belomontáno\" (the convent of Belmonte)."
         ),
     },
-    "mr:0409-demetrius": {
+    "mr:0409-demetrius-thessalonicensis": {
         EDITION_IT: (
             "Translation error: \"nell’odierna Croazia\" where the Latin \"Sírmium\" (Sirmium) "
             "is the present Sremska Mitrovica, in Serbia."
         ),
     },
-    "mr:0409-liborius": {
+    "mr:0409-liborius-cenomanorum": {
         EDITION_EN: (
             "Translation error: \"in Lyon France\" where the Latin has \"in Gállia Lugdunénsi\" "
             "(in Lyonnese Gaul, the Roman province)."
         ),
     },
-    "mr:0411-domnio": {
+    "mr:0411-domnio-salonae": {
         EDITION_IT: (
             "Translation error: \"A Spalato\" (Split) where the Latin has \"Salónæ\" (Salona, "
             "the present Solin)."
@@ -3092,7 +3092,7 @@ REVIEW_EDITION_NOTES = {
             "Primi\" (Saint Julius the First, pope)."
         ),
     },
-    "mr:0413-ida": {
+    "mr:0413-ida-vallis-rosarum": {
         EDITION_IT: (
             "Translation error: \"Roosendaal nel Brabante, nell’odierna Olanda\" where the Latin "
             "\"Vallis Rosárum\" is the abbey of Roosendael near Mechelen, in present Belgium."
@@ -3110,18 +3110,18 @@ REVIEW_EDITION_NOTES = {
             "Guadalajara where Saint Sabas Reyes was martyred."
         ),
     },
-    "mr:0414-benedictus": {
+    "mr:0414-benedictus-avenionis": {
         EDITION_EN: (
             "Translation error: \"rebuilt\" where the Latin has \"ædificátus est\" (was built)."
         ),
     },
-    "mr:0415-crescens": {
+    "mr:0415-crescens-myrae": {
         EDITION_EN: (
             "Translation error: \"Saint Crescentius\" where the Latin has \"sancti Crescéntis\" "
             "(Saint Crescens)."
         ),
     },
-    "mr:0415-ortarius": {
+    "mr:0415-ortarius-andeleiensis": {
         EDITION_EN: (
             "Translation error: \"Andely\" where the Latin has \"monastério Andeleiénsi in pago "
             "Baiocénsi\" (Landelles, in the district of Bayeux)."
@@ -3140,24 +3140,24 @@ REVIEW_EDITION_NOTES = {
             "monastery of Cîteaux)."
         ),
     },
-    "mr:0418-anthusa": {
+    "mr:0418-anthusa-constantinopoli": {
         EDITION_EN: (
             "Translation error: \"rebuilding monasteries\" where the Latin has \"monasteriáque "
             "ædificánda\" (building monasteries)."
         ),
     },
-    "mr:0419-aelphegus": {
+    "mr:0419-aelphegus-cantuariensis": {
         EDITION_EN: (
             "Translation error: \"Saint Aelphegi\" keeps the Latin genitive of \"Ælphégi\"; the "
             "name is Alphege (Aelphegus)."
         ),
     },
-    "mr:0419-geroldus": {
+    "mr:0419-geroldus-frisae": {
         EDITION_EN: (
             "Translation error: \"Frastanz\" where the Latin has \"Frisæ\" (Frisen)."
         ),
     },
-    "mr:0419-mappalicus": {
+    "mr:0419-mappalicus-africae": {
         EDITION_IT: (
             "Translation error: \"fossero lasciate in pace e per questo\" (that they be left in "
             "peace, and for this reason) where the Latin has \"pacem dari mandávit, sed\" (he "
@@ -3169,20 +3169,20 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Clon\" where the Latin \"Clonæ\" is Clonmel."
         ),
     },
-    "mr:0420-viho": {
+    "mr:0420-viho-osnabrugensis": {
         EDITION_IT: (
             "Translation error: \"come primo abate di questo luogo\" (as first abbot of this "
             "place) where the Latin has \"primum abbas ... missus\" (first sent as an abbot, "
             "then made bishop)."
         ),
     },
-    "mr:0423-adalbertus": {
+    "mr:0423-adalbertus-pragensis": {
         EDITION_EN: (
             "Translation error: \"near the Vistula\" where the Latin has \"ad sinum Venédicum\" "
             "(on the Venedic Gulf, the Baltic gulf of Gdańsk)."
         ),
     },
-    "mr:0423-gerardus": {
+    "mr:0423-gerardus-tulli": {
         EDITION_EN: (
             "Translation error: \"Gerald\" where the Latin has \"Gerárdi\" (Gerard)."
         ),
@@ -3200,7 +3200,7 @@ REVIEW_EDITION_NOTES = {
             "is the town of Grottaferrata."
         ),
     },
-    "mr:0424-deodatus": {
+    "mr:0424-deodatus-blesensis": {
         EDITION_EN: (
             "Translation error: \"the village of Blesensis in Lyon France\" where the Latin \"in "
             "pago Blesénsi in Gállia Lugdunénsi\" means the district of Blois in Lugdunensian "
@@ -3213,7 +3213,7 @@ REVIEW_EDITION_NOTES = {
             "baptismal name, Rose Virginia)."
         ),
     },
-    "mr:0425-franca": {
+    "mr:0425-franca-placentina": {
         EDITION_EN: (
             "Translation error: \"Frances\" where the Latin has \"Francæ\" (Franca)."
         ),
@@ -3236,13 +3236,13 @@ REVIEW_EDITION_NOTES = {
             "et Valentiónis\" (Pasicrates and Valentio)."
         ),
     },
-    "mr:0426-richarius": {
+    "mr:0426-richarius-ambianensis": {
         EDITION_IT: (
             "Translation error: \"monaci scozzesi\" (Scottish monks) where the Latin has "
             "\"monachórum scotórum\" (Irish monks)."
         ),
     },
-    "mr:0430-donatus": {
+    "mr:0430-donatus-eureae": {
         EDITION_EN: (
             "Translation error: \"Eucea\" where the Latin has \"Eurœæ\" (Euroea)."
         ),
