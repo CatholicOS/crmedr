@@ -331,56 +331,56 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui` | death (occubuit) |  |
 | `mr:0630-basilius-velyckovskyj` | death (occubuit) | yes |
 | `mr:0702-petrus-de-luxemburgo` | ministry (episcopi metensis) | yes |
-| `mr:0703-heliodorus` | ministry (sedem) | yes |
+| `mr:0703-heliodorus-altini` | ministry (sedem) | yes |
 | `mr:0703-iosephus-nguyen-dinh-uyen` | death (obiit) |  |
 | `mr:0704-andreas-cretensis` | ministry (episcopi gortyniensis) | yes |
-| `mr:0704-udalricus` | death (obiit) |  |
-| `mr:0704-bonifatius` | ministry (sedem) | yes |
+| `mr:0704-udalricus-augustae-vindelicorum` | death (obiit) |  |
+| `mr:0704-bonifatius-altae-cumbae` | ministry (sedem) | yes |
 | `mr:0704-caesidius-giacomantonio` | death (occubuit) |  |
 | `mr:0704-petrus-georgius-frassati` | death (occubuit) |  |
-| `mr:0706-palladius` | death (obiit) | yes |
+| `mr:0706-palladius-scotiae` | death (obiit) | yes |
 | `mr:0706-elias-desgardin` | death (obiit) | yes |
 | `mr:0706-nazaria-a-sancta-teresia` | birth (nata) | yes |
-| `mr:0707-hedda` | ministry (sedem) | yes |
+| `mr:0707-hedda-vintoniae` | ministry (sedem) | yes |
 | `mr:0707-rogerius-dickinson-et-radulphus-milner` | death (occubuit) |  |
-| `mr:0708-kilianus` | birth (oriundus) | yes |
+| `mr:0708-kilianus-herbipoli` | birth (oriundus) | yes |
 | `mr:0708-hadrianus-iii` | death (obiit) | yes |
 | `mr:0708-eugenius-iii` | ministry (sedem) | yes |
 | `mr:0708-mancius-arakus` | death (obiit) |  |
-| `mr:0711-benedictus` | birth (natus) | yes |
+| `mr:0711-benedictus-nursiae` | birth (natus) | yes |
 | `mr:0712-clemens-ignatius-delgado-cebrian` | death (obiit) |  |
 | `mr:0712-agnes-le-thi-thanh` | death (occubuit) |  |
-| `mr:0713-eugenius` | ministry (episcopi carthaginensis) | yes |
+| `mr:0713-eugenius-carthaginensis` | ministry (episcopi carthaginensis) | yes |
 | `mr:0714-camillus-de-lellis` | birth (natus) | yes |
 | `mr:0714-ghebre-michael` | death (obiit) |  |
-| `mr:0715-bonaventura` | ministry (episcopi albanensis) | yes |
-| `mr:0715-felix` | ministry (episcopi thibiucensis) | yes |
-| `mr:0715-plechelmus` | birth (ortus) | yes |
-| `mr:0715-iosephus` | ministry (episcopi thessalonicensis) | yes |
+| `mr:0715-bonaventura-albanensis` | ministry (episcopi albanensis) | yes |
+| `mr:0715-felix-thibiucensis` | ministry (episcopi thibiucensis) | yes |
+| `mr:0715-plechelmus-ruraemundae` | birth (ortus) | yes |
+| `mr:0715-iosephus-thessalonicensis` | ministry (episcopi thessalonicensis) | yes |
 | `mr:0715-michael-bernardus-marchand` | death (obiit) | yes |
 | `mr:0715-petrus-nguyen-ba-tuan` | death (obiit) |  |
 | `mr:0715-antonius-beszta-borowski` | death (occubuit) |  |
 | `mr:0716-bartholomaeus-a-martyribus` | ministry (episcopi bracarensis) | yes |
-| `mr:0717-hedwigis` | birth (nata) | yes |
+| `mr:0717-hedwigis-cracoviae` | birth (nata) | yes |
 | `mr:0718-ioannes-baptista-de-bruxelles` | death (occubuit) | yes |
 | `mr:0718-dominicus-nicolaus-dinh-dat` | death (occubuit) |  |
-| `mr:0719-stilla` | burial (sepulta) |  |
-| `mr:0720-aurelius` | ministry (sedem) |  |
+| `mr:0719-stilla-mariaeburgi` | burial (sepulta) |  |
+| `mr:0720-aurelius-carthaginensis` | ministry (sedem) |  |
 | `mr:0720-leo-ignatius-mangin-et-paulus-denn` | death (obiit) |  |
 | `mr:0721-laurentius-de-brundusio` | death (obiit) | yes |
-| `mr:0724-euphrasia` | birth (orta) |  |
+| `mr:0724-euphrasia-thebaidis` | birth (orta) |  |
 | `mr:0724-iosephus-lambton` | birth (natus) |  |
 | `mr:0724-dominicus-mazzarello` | death (obiit) |  |
 | `mr:0725-maria-teresia-kowalska` | death (obiit) |  |
 | `mr:0726-ioannes-ingram` | death (occubuit) | yes |
 | `mr:0726-bartholomaea-capitanio` | death (obiit) |  |
-| `mr:0727-clemens` | ministry (episcopi velicensis) | yes |
+| `mr:0727-clemens-velicensis` | ministry (episcopi velicensis) | yes |
 | `mr:0727-maria-clemens-a-iesu-crucifixo` | death (occubuit) |  |
-| `mr:0729-olavus` | death (occubuit) | yes |
+| `mr:0729-olavus-nidarosiae` | death (occubuit) | yes |
 | `mr:0730-petrus-chrysologus` | ministry (episcopi ravennatensis) | yes |
 | `mr:0730-sergius-cid-pazo` | death (occubuit) |  |
 | `mr:0731-ignatius-de-loyola` | birth (natus) | yes |
-| `mr:0731-germanus` | ministry (episcopi autissiodorensis) | yes |
+| `mr:0731-germanus-autissiodorensis` | ministry (episcopi autissiodorensis) | yes |
 | `mr:0731-petrus-chrysologus` | ministry (episcopi ravennatensis) | yes |
 | `mr:0731-ioannes-franciscus-jarrige-de-la-morelie-du-breuil` | death (obiit) |  |
 | `mr:0731-iacobus-buch-canals` | death (occubuit) |  |
@@ -802,32 +802,32 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0707-pantaenus-alexandrinus`: Alexandríni
 - `mr:0708-eugenius-iii`: Urbis
 - `mr:0708-hadrianus-iii`: Románæ Ecclésiæ
-- `mr:0708-procopius`: Cæsaréam
-- `mr:0711-benedictus`: Occidénte
-- `mr:0711-bertrandus`: Cisterciénse
+- `mr:0708-procopius-caesareae`: Cæsaréam
+- `mr:0711-benedictus-nursiae`: Occidénte
+- `mr:0711-bertrandus-grandis-silvae`: Cisterciénse
 - `mr:0712-david-gunston`: Hierosolymitáni
-- `mr:0713-henricus`: Roma
-- `mr:0714-tuscana`: Hierosolymitáni
+- `mr:0713-henricus-gronae`: Roma
+- `mr:0714-tuscana-veronae`: Hierosolymitáni
 - `mr:0716-maria-de-monte-carmelo`: Israel
-- `mr:0717-colmanus`: Hierosólymam
+- `mr:0717-colmanus-vindobonensis`: Hierosólymam
 - `mr:0717-leo-iv`: Urbis
 - `mr:0719-achilles-puchala-et-hermannus-stepien`: Polónia
-- `mr:0719-macrina`: Nysséni, Sebasténsis
+- `mr:0719-macrina-annisae`: Nysséni, Sebasténsis
 - `mr:0719-petrus-crisci`: ecclésiæ cathedrális
-- `mr:0720-ioseph`: Iudæ
-- `mr:0722-anastasius`: Máximi
+- `mr:0720-ioseph-iustus`: Iudæ
+- `mr:0722-anastasius-suaniae`: Máximi
 - `mr:0722-augustinus-de-bugella`: Venétiis
 - `mr:0723-ezechiel-propheta`: Israel
-- `mr:0724-euphrasia`: desérto
+- `mr:0724-euphrasia-thebaidis`: desérto
 - `mr:0725-maria-a-monte-carmelo-salles-y-barangueras`: Monte Carmélo
 - `mr:0725-maria-teresia-kowalska`: Polóniæ
 - `mr:0725-valentina-et-socii`: Valentínæ
-- `mr:0726-austindus`: ecclésia cathedráli
+- `mr:0726-austindus-augustae-auscorum`: ecclésia cathedráli
 - `mr:0726-ioannes-ingram`: Angliæ
 - `mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere`: Roma
 - `mr:0729-gulielmus-pinchon`: ecclésiæ cathedrális
 - `mr:0729-urbanus-ii`: sepúlcrum Dómini
-- `mr:0731-germanus`: Ravénna
+- `mr:0731-germanus-autissiodorensis`: Ravénna
 - `mr:0731-ignatius-de-loyola`: hispánus
 - `mr:0801-petrus-favre`: Urbe
 - `mr:0802-maximus`: Máximi
@@ -977,4 +977,4 @@ None.
 
 ## Entries with no place
 
-`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph-sponsus-mariae`, `mr:0322-epaphroditus-discipulus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus-discipulus`, `mr:0509-isaias-propheta`, `mr:0509-herma-discipulus`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna-discipula`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila`, `mr:0716-simon-da-costa`, `mr:0720-ioseph`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`
+`mr:0103-nomen-iesu`, `mr:0215-onesimus-discipulus`, `mr:0307-satyrus-et-socii`, `mr:0319-ioseph-sponsus-mariae`, `mr:0322-epaphroditus-discipulus`, `mr:0325-bonus-latro`, `mr:0405-centum-undecim-viri-novem-mulieres-martyres`, `mr:0408-agabus-propheta`, `mr:0408-herodion-et-socii`, `mr:0429-tychicus-discipulus`, `mr:0509-isaias-propheta`, `mr:0509-herma-discipulus`, `mr:0514-matthias-apostolus`, `mr:0524-ioanna-discipula`, `mr:0531-visitatio-beatae-mariae-virginis`, `mr:0601-chariton-et-socii`, `mr:0624-ioannes-baptista`, `mr:0708-aquila-et-prisca`, `mr:0713-sila-discipulus`, `mr:0716-simon-da-costa`, `mr:0720-ioseph-iustus`, `mr:0725-iacobus-apostolus`, `mr:0726-ioachim-et-anna`, `mr:0729-lazarus-et-maria`, `mr:0806-transfiguratio-domini`, `mr:0815-assumptio-beatae-mariae-virginis`, `mr:0822-maria-regina`, `mr:0908-nativitas-beatae-mariae-virginis`, `mr:0912-nomen-mariae`, `mr:0915-maria-perdolens`, `mr:0916-cornelius-et-cyprianus`, `mr:0921-matthaeus-apostolus-et-evangelista`, `mr:0921-ionas-propheta`, `mr:0923-zacharias-et-elisabeth`, `mr:1002-angeli-custodes`, `mr:1005-placidus`, `mr:1007-maria-de-rosario`, `mr:1008-reparata`, `mr:1017-osee-propheta`, `mr:1019-ioel-propheta`, `mr:1028-simon-et-iudas-apostoli`, `mr:1101-omnes-sancti`, `mr:1102-omnium-fidelium-defunctorum`, `mr:1119-abdias-propheta`, `mr:1121-rufus`, `mr:1122-philemon-colossensis`, `mr:1201-nahum-propheta`, `mr:1202-habacuc-propheta`, `mr:1208-conceptio-immaculata-beatae-mariae-virginis`, `mr:1211-damasus-i`, `mr:1224-avi-iesu-christi`, `mr:1227-ioannes-apostolus-et-evangelista`

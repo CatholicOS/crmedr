@@ -714,17 +714,17 @@ class RepeatedNamesTest(unittest.TestCase):
 
 
 class VariantsTest(unittest.TestCase):
-    DOC = {"editions": {"martyrologium_romanum_2004": {"mr:0724-kinga": [
+    DOC = {"editions": {"martyrologium_romanum_2004": {"mr:0724-kinga-sandeciae": [
         {"name": "Kinga", "also": ["Cunegundis"], "where": "text"}]}}}
-    ENTRIES = [{"id": "mr:0724-kinga", "month": 7, "day": 24}]
+    ENTRIES = [{"id": "mr:0724-kinga-sandeciae", "month": 7, "day": 24}]
 
     def index(self):
-        return bp.person_index(self.DOC, self.ENTRIES, {"mr:0724-kinga": "dies_natalis"}, {"mr:0724-kinga": "Sancta Kinga"})
+        return bp.person_index(self.DOC, self.ENTRIES, {"mr:0724-kinga-sandeciae": "dies_natalis"}, {"mr:0724-kinga-sandeciae": "Sancta Kinga"})
 
     def test_the_index_and_the_op_carry_also(self):
-        person = self.index()["mr:0724-kinga|Kinga"]
+        person = self.index()["mr:0724-kinga-sandeciae|Kinga"]
         self.assertEqual(person["also"], ["Cunegundis"])
-        op = bp.make_op("mr:0724-kinga|Kinga", person, {"failed": [], "candidates": []}, None)
+        op = bp.make_op("mr:0724-kinga-sandeciae|Kinga", person, {"failed": [], "candidates": []}, None)
         self.assertEqual(list(op)[5:8], ["subject", "name", "also"])
 
     def test_the_search_tries_each_name_and_a_variant_satisfies_the_name_rule(self):
@@ -735,7 +735,7 @@ class VariantsTest(unittest.TestCase):
                 searched.append(name)
                 return [cand("Q1", ["Cunegundis"], died="1292-07-24")] if name == "Cunegundis" else []
 
-        person = self.index()["mr:0724-kinga|Kinga"]
+        person = self.index()["mr:0724-kinga-sandeciae|Kinga"]
         cands = bp.gather(person, Client())
         self.assertIn("Cunegundis", searched)
         self.assertEqual(bp.evaluate(person, cands)["auto"]["wikidata"], "Q1")

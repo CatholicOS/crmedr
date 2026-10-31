@@ -75,7 +75,7 @@ mr:0512-imelda-lambertini (10\*), mr:0524-servulus-tergestis (4\*), mr:0611-bard
 mr:0624-gohardus-nannetum (7\*) — note: the earlier draft called this entry "Goardo" without a date;
 it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) nor
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
-mr:0711-leontius (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva (6\*),
+mr:0711-leontius-burdigalae (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva-gistellae (6\*),
 mr:0802-betharius (8\*), mr:0807-donatus-vesontione (7\*),
 mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus (8\*), mr:1026-eata (7\*),
 mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
@@ -141,7 +141,7 @@ restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus
 - mr:0325-annuntiatio-domini  (3/25 voce 1)
 - mr:0325-bonus-latro  (3/25 voce 2)
 - mr:0531-visitatio-beatae-mariae-virginis  (5/31 voce 1)
-- mr:0717-alexius  (7/17 voce 5)
+- mr:0717-alexius-romae  (7/17 voce 5)
 - mr:0724-translatio-trium-magorum  (7/24 voce 13)
 - mr:0728-martyres-thebaidis  (7/28 voce 3)
 - mr:0805-dedicatio-basilicae-sanctae-mariae  (8/5 voce 1)
@@ -368,8 +368,8 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0526-papulus | mr:0526-berengarius-sancti-papuli | St Berengar |
 | mr:0603-maria-de-cadossa | mr:0603-conus-cadossae | St Conus |
 | mr:0620-iacobus-fodiensi | mr:0620-ioannes-de-mateola | St John of Matera (printed *de Matéola*) |
-| mr:0705-maria-de-terreto | mr:0705-thomas | St Thomas, abbot |
-| mr:0726-benedictus | mr:0726-simeon | St Simeon of Polirone |
+| mr:0705-maria-de-terreto | mr:0705-thomas-terreti | St Thomas, abbot |
+| mr:0726-benedictus | mr:0726-simeon-mantuae | St Simeon of Polirone |
 | mr:0823-philippus | mr:0823-antonius-de-hieracio | St Anthony of Gerace |
 | mr:1114-maria | mr:1114-siardus | St Siard |
 | mr:1114-maria-de-gualdo-mazocca | mr:1114-ioannes-de-tupharia | Bl. John of Tufara |
@@ -432,7 +432,7 @@ the slugs.
 | mr:0603-ioannes-vigesimi-iii | mr:0603-ioannes-xxiii |
 | mr:0705-athanasius-hierosolymitani | mr:0705-athanasius-hierosolymitanus |
 | mr:0712-ioannes-gualberti | mr:0712-ioannes-gualbertus |
-| mr:0713-myropis | mr:0713-myrope |
+| mr:0713-myropis | mr:0713-myrope-chii |
 | mr:0713-ludovicus-armandi-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
 | mr:0828-carolus-arnaldi-hanus | mr:0828-carolus-arnaldus-hanus |
 | mr:0831-raymundus-nonnati | mr:0831-raymundus-nonnatus |
@@ -869,11 +869,11 @@ the following eulogies of their day, run in by the OCR.
 | mr:0525-leo-in | mr:0525-leo-mentuniaci |
 | mr:0528-justus | mr:0528-iustus-urgelli |
 | mr:0629-syri | mr:0629-syrus-genuae |
-| mr:0720-paulus-cordubae | mr:0720-paulus |
-| mr:0729-olavus-norvegia | mr:0729-olavus |
-| mr:0729-lupi | mr:0729-lupus |
-| mr:0730-ursi | mr:0730-ursus |
-| mr:0731-fabius-caesareae | mr:0731-fabius |
+| mr:0720-paulus-cordubae | mr:0720-paulus-cordubae |
+| mr:0729-olavus-norvegia | mr:0729-olavus-nidarosiae |
+| mr:0729-lupi | mr:0729-lupus-trecis |
+| mr:0730-ursi | mr:0730-ursus-autissiodori |
+| mr:0731-fabius-caesareae | mr:0731-fabius-caesareae |
 | mr:0816-rochus-montem | mr:0816-rochus |
 | mr:0819-magnus-anagniae | mr:0819-magnus |
 | mr:0823-luppus-item | mr:0823-luppus |
@@ -1006,7 +1006,7 @@ out) are not. Two Italian cards became one Latin note: the Latin puts Nitra on t
 unofficial English, with the Italian as a second witness. Its high-confidence errors are curator
 notes on the English: "rebuilt" for aedificare, Gallia Lugdunensis rendered "Lyon France",
 look-alike places (Pontoise rendered Pont-Sainte-Maxence, Senlis rendered Autun), senses reversed
-(mr:1022-abercius, mr:0720-aurelius), misreadings ("confessed" for confossa at
+(mr:1022-abercius, mr:0720-aurelius-carthaginensis), misreadings ("confessed" for confossa at
 mr:0706-maria-goretti, "twice" from albis at mr:1028-genesius). Faults of the digitized copy
 rather than of the translation (footnote markers left in the text, an encoding slip of "d",
 broken words, run-in eulogies) are corrected in the texts, not noted. Its 382 findings of medium
@@ -1393,14 +1393,14 @@ from `PS` to `IL`.
 | `mr:0626-iosephus-ma-taishun` | Hejian (Q1601618) | IT | CN |
 | `mr:0703-marcus-et-mocianus` | Moesia (Q199499) | RO | BG |
 | `mr:0705-athanasius-hierosolymitanus` | no opening place | IL | PS |
-| `mr:0705-martha` | Samandağ district (Q2782103) | SY | TR |
-| `mr:0706-monenna` | County Armagh (Q192761) | IE | GB |
+| `mr:0705-martha-montis-mirabilis` | Samandağ district (Q2782103) | SY | TR |
+| `mr:0706-monenna-armachana` | County Armagh (Q192761) | IE | GB |
 | `mr:0712-nabor-et-felix` | Milan (Q490) | DZ | IT |
 | `mr:0716-maria-de-monte-carmelo` | no opening place | IL | PS |
 | `mr:0719-achilles-puchala-et-hermannus-stepien` | Baravikoŭščyna (Q21632023) | PL | BY |
 | `mr:0720-elias-thesbita-propheta` | no opening place | IL | PS |
 | `mr:0723-ezechiel-propheta` | no opening place | IL | PS |
-| `mr:0729-martha` | no opening place | IL | PS |
+| `mr:0729-martha-bethaniae` | no opening place | IL | PS |
 | `mr:0801-adelheidis-mardosewicz-et-socii` | Navahrudak (Q278743) | PL | BY |
 | `mr:0808-vladimirus-laskowski` | Gusen concentration camp (Q681748) | DE | AT |
 | `mr:0813-maximus-confessor` | Tsageri (Q140314) | TR | GE |
@@ -1576,7 +1576,7 @@ elogia, 2,770 matched an ID of the same day and 42 were settled by reviewed over
 spelling variants and other names of the same subject the name check rejects (the 1630
 *Lucinius* of Angers under the 1914-attested `mr:0213-licinius`, now linked to
 `mr:1101-licinius`; *Peregrinus* under `mr:0613-cetheus-peregrinus`, *Dominica* under
-`mr:0706-cyriaca`, *Margarita* under `mr:0720-marina`). **6 of these IDs are new
+`mr:0706-cyriaca-nicomediae`, *Margarita* under `mr:0720-marina-antiochiae`). **6 of these IDs are new
 deprecated IDs** (`attested_in: martyrologium_romanum_1630`): eulogies that 1630 prints
 on another day than any other edition (`mr:0105-domnio`, `mr:0714-henricus`,
 `mr:0816-hyacinthus`, `mr:0820-stephanus`, `mr:0824-vigilia-bartholomaei-apostoli`,
