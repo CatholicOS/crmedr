@@ -273,61 +273,61 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0530-hubertus-tungrensis` | ministry (episcopi tungrensis) | yes |
 | `mr:0530-iosephus-marello` | ministry (episcopi aquensis) | yes |
 | `mr:0531-noe-mawaggali` | birth (orta) |  |
-| `mr:0601-simeon` | birth (natus); death (obiit) | yes |
+| `mr:0601-simeon-trevirorum` | birth (natus); death (obiit) | yes |
 | `mr:0601-ioannes-baptista-vernoy-de-montjournal` | death (obiit) | yes |
-| `mr:0602-nicolaus` | birth (ortus) | yes |
-| `mr:0603-morandus` | birth (ortus) | yes |
+| `mr:0602-nicolaus-trani` | birth (ortus) | yes |
+| `mr:0603-morandus-cluniacensis` | birth (ortus) | yes |
 | `mr:0603-ioannes-grande` | death (obiit) |  |
 | `mr:0603-carolus-renatus-collas-du-bignon` | death (occubuit) | yes |
-| `mr:0604-quirinus` | ministry (episcopi sisciacensis) | yes |
-| `mr:0605-bonifatius` | ministry (sedem) | yes |
-| `mr:0606-bertrandus` | death (obiit); ministry (episcopi aquileiensis) | yes |
+| `mr:0604-quirinus-sisciacensis` | ministry (episcopi sisciacensis) | yes |
+| `mr:0605-bonifatius-docci` | ministry (sedem) | yes |
+| `mr:0606-bertrandus-aquileiensis` | death (obiit); ministry (episcopi aquileiensis) | yes |
 | `mr:0607-antonius-maria-gianelli` | ministry (episcopi bobiensis) | yes |
 | `mr:0608-gulielmus-fitzherbert` | ministry (sedem) | yes |
 | `mr:0608-ioannes-davy` | death (obiit) | yes |
-| `mr:0609-columba` | birth (natus) | yes |
+| `mr:0609-columba-colum-cille` | birth (natus) | yes |
 | `mr:0609-robertus-salt` | death (occubuit) | yes |
 | `mr:0609-iosephus-anchieta` | birth (natus) | yes |
 | `mr:0609-iosephus-imbert` | death (obiit) | yes |
-| `mr:0610-bogumilus` | ministry (episcopi gnesnensis) | yes |
+| `mr:0610-bogumilus-gnesnensis` | ministry (episcopi gnesnensis) | yes |
 | `mr:0610-ioannes-dominicus` | death (obiit) | yes |
-| `mr:0611-maximus` | death (occubuit) | yes |
-| `mr:0611-rembertus` | ministry (episcopi hamburgensis) | yes |
-| `mr:0611-aleydis` | birth (nata) |  |
-| `mr:0611-parisius` | death (obiit) |  |
+| `mr:0611-maximus-neapoli` | death (occubuit) | yes |
+| `mr:0611-rembertus-hamburgensis` | ministry (episcopi hamburgensis) | yes |
+| `mr:0611-aleydis-camerae` | birth (nata) |  |
+| `mr:0611-parisius-tarvisii` | death (obiit) |  |
 | `mr:0611-ignatius-maloyan` | ministry (episcopi mardinensis) | yes |
-| `mr:0613-ragnebertus` | birth (ortus) |  |
-| `mr:0615-abraham` | birth (ortus); death (obiit) | yes |
-| `mr:0615-benildis` | death (occubuit) |  |
-| `mr:0615-germana` | birth (orta) |  |
+| `mr:0613-ragnebertus-lugdunensis` | birth (ortus) |  |
+| `mr:0615-abraham-arvernae` | birth (ortus); death (obiit) | yes |
+| `mr:0615-benildis-cordubae` | death (occubuit) |  |
+| `mr:0615-germana-pibraci` | birth (orta) |  |
 | `mr:0615-barbara-cui-lianzhi` | death (occubuit) |  |
-| `mr:0616-aurelianus` | ministry (episcopi arelatensis) | yes |
-| `mr:0616-cechardus` | ministry (episcopi lunensis) | yes |
+| `mr:0616-aurelianus-arelatensis` | ministry (episcopi arelatensis) | yes |
+| `mr:0616-cechardus-lunensis` | ministry (episcopi lunensis) | yes |
 | `mr:0616-thomas-reding` | death (obiit) | yes |
 | `mr:0617-philippus-papon` | death (occubuit) | yes |
 | `mr:0617-petrus-da` | death (occubuit) |  |
-| `mr:0619-romualdus` | birth (oriundus) | yes |
-| `mr:0619-deodatus` | ministry (episcopi nivernensis) | yes |
-| `mr:0620-methodius` | ministry (episcopi olympensis) | yes |
-| `mr:0620-gobanus` | birth (natus) | yes |
+| `mr:0619-romualdus-ravennae` | birth (oriundus) | yes |
+| `mr:0619-deodatus-nivernensis` | ministry (episcopi nivernensis) | yes |
+| `mr:0620-methodius-olympensis` | ministry (episcopi olympensis) | yes |
+| `mr:0620-gobanus-laudunensis` | birth (natus) | yes |
 | `mr:0620-dermitius-o-hurley` | ministry (episcopus cassiliensis) | yes |
 | `mr:0620-margarita-ball` | death (obiit) |  |
 | `mr:0621-aloysius-gonzaga` | birth (natus) | yes |
-| `mr:0621-mevennus` | birth (ortus) | yes |
-| `mr:0621-raymundus` | ministry (episcopus rotensis) | yes |
+| `mr:0621-mevennus-gaeli` | birth (ortus) | yes |
+| `mr:0621-raymundus-rotensis` | ministry (episcopus rotensis) | yes |
 | `mr:0621-iacobus-morelle-dupas` | death (obiit) | yes |
 | `mr:0622-ioannes-fisher-et-thomas-more` | ministry (episcopus roffensis) | yes |
-| `mr:0622-eusebius` | death (occubuit) | yes |
+| `mr:0622-eusebius-samosatensis` | death (occubuit) | yes |
 | `mr:0622-innocentius-v` | ministry (sedem) | yes |
-| `mr:0624-gohardus` | death (occubuit) |  |
+| `mr:0624-gohardus-nannetum` | death (occubuit) |  |
 | `mr:0625-maria-lhuillier` | death (occubuit) |  |
-| `mr:0626-pelagius` | birth (natus) |  |
-| `mr:0626-anthelmus` | ministry (sedem) | yes |
+| `mr:0626-pelagius-cordubae` | birth (natus) |  |
+| `mr:0626-anthelmus-bellicii` | ministry (sedem) | yes |
 | `mr:0626-iosephus-maria-robles` | death (occubuit) |  |
-| `mr:0627-cyrillus` | ministry (sedem) | yes |
+| `mr:0627-cyrillus-alexandriae` | ministry (sedem) | yes |
 | `mr:0627-thomas-toan` | death (obiit) | yes |
 | `mr:0629-petrus-et-paulus-apostoli` | burial (sepultus) | yes |
-| `mr:0630-ladislaus` | death (obiit); ministry (sedem) | yes |
+| `mr:0630-ladislaus-nitravae` | death (obiit); ministry (sedem) | yes |
 | `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui` | death (occubuit) |  |
 | `mr:0630-basilius-velyckovskyj` | death (occubuit) | yes |
 | `mr:0702-petrus-de-luxemburgo` | ministry (episcopi metensis) | yes |
@@ -778,22 +778,22 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0528-lanfrancus-cantuariae`: Cantuariénsem
 - `mr:0531-iacobus-salomoni`: Cisterciénse
 - `mr:0602-pothinus-et-socii`: Lugdunénsis
-- `mr:0604-metrophanes`: Roma, Romam
+- `mr:0604-metrophanes-byzantinus`: Roma, Romam
 - `mr:0609-robertus-salt`: cárcere Neopórtus
 - `mr:0610-ioannes-dominicus`: Hungária, Hungáriam
 - `mr:0611-ignatius-maloyan`: Armenórum
-- `mr:0611-maximus`: Máximi
+- `mr:0611-maximus-neapoli`: Máximi
 - `mr:0614-anastasius-et-socii`: Mauros
-- `mr:0615-abraham`: Arvérnos, Gállia, Gálliam
-- `mr:0619-gerlandus`: Hierosolymitáni
+- `mr:0615-abraham-arvernae`: Arvérnos, Gállia, Gálliam
+- `mr:0619-gerlandus-calatae-hieronis`: Hierosolymitáni
 - `mr:0621-ioannes-rigby`: Londínii
 - `mr:0622-ioannes-fisher-et-thomas-more`: Románi
 - `mr:0623-petrus-iacobus-de-pisauro`: Pisáuro
-- `mr:0624-gohardus`: ecclésia cathedráli
+- `mr:0624-gohardus-nannetum`: ecclésia cathedráli
 - `mr:0625-dorothea-montaviensis`: ecclésiam cathedrálem
-- `mr:0625-maximus`: Máximi
+- `mr:0625-maximus-augustae-taurinorum`: Máximi
 - `mr:0628-paulus-i`: Urbe, Urbem
-- `mr:0630-adolphus`: Cisterciénse
+- `mr:0630-adolphus-altencampensis`: Cisterciénse
 - `mr:0630-protomartyres-sanctae-romanae-ecclesiae`: Románæ Ecclésiæ
 - `mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui`: templum
 - `mr:0702-liberatus-et-socii`: Máximi
