@@ -42,7 +42,7 @@ STATUSES = ("auto", "reviewed", "unresolved")
 QID = re.compile(r"^Q[1-9]\d*$")
 MEMBERS = Path("data/eulogy_item_members.json")
 REPORT = Path("docs/eulogy-items-report.md")
-JEV_MIN = 0.5  # Jev's probability for an auto group suggestion
+JEV_MIN = 0.4  # Jev's probability for an auto group suggestion: below the lowest known-true case (Liberatus, 0.42)
 QUESTION = ("Is the Wikidata item `group` the group of saints that `clause`, from a eulogy of the Roman "
             "Martyrology, commemorates? Weigh the group's label, description and members against the "
             "persons, places and events the clause names. A larger or different group that only shares "
