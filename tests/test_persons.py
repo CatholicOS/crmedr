@@ -498,7 +498,7 @@ class VariantsTest(unittest.TestCase):
         persons, _ = ep.eulogy_persons("mr:0316-ioannes-sordi", "Sanctus Ioannes Sordi",
                                        "Mántuæ, sancti Ioánnis Sordi seu Cacciafronte, epíscopi.", [], lex, {})
         self.assertEqual(persons, [{"name": "Ioannes Sordi", "also": ["Ioannes Cacciafronte"], "where": "text"}])
-        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, _ = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                        "In Polónia, sanctæ Kingæ seu Cunegúndis, vírginis.", [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
 
@@ -582,21 +582,21 @@ class VariantsTest(unittest.TestCase):
         names, _ = pt.footnote_names("Quorum nomina: Telica vel Tazelita seu Tazelitus, Felix.", variants=variants)
         self.assertEqual((names, variants), (["Telica", "Felix"], {0: ["Tazelita", "Tazelitus"]}))
         lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis", "Cunegunda"]}
-        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, _ = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                        "In Polónia, sanctæ Kingæ seu Cunegúndis sive Cunegúndæ, vírginis.", [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis", "Cunegunda"], "where": "text"}])
 
     def test_an_unread_variant_stays_reported_until_curated_for_that_person(self):
         import extract_persons as ep
         lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis"]}
-        persons, issues = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, issues = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                             "In Polónia, sanctæ Kingæ seu Cunegúndis sive Ficténtis, vírginis.",
                                             [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
         self.assertEqual(issues["variants_unread"], ["Kinga"])  # Cunegundis read, Ficténtis not
-        by_id, all_issues = {"mr:0724-kinga": persons}, {"mr:0724-kinga": issues}
-        self.assertEqual(ep.resolve_unread(by_id, all_issues, {}), {"mr:0724-kinga": issues})
-        self.assertEqual(ep.resolve_unread(by_id, all_issues, {"mr:0724-kinga": {"Kinga": ["Fictens"]}}), {})
+        by_id, all_issues = {"mr:0724-kinga-sandeciae": persons}, {"mr:0724-kinga-sandeciae": issues}
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {}), {"mr:0724-kinga-sandeciae": issues})
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {"mr:0724-kinga-sandeciae": {"Kinga": ["Fictens"]}}), {})
 
 
 class SamePersonTest(unittest.TestCase):
