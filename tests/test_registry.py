@@ -72,6 +72,10 @@ class RegistryItemsTest(unittest.TestCase):
         self.assertEqual(keys[keys.index("date") + 1], "item")
         self.assertNotIn("item", out[1])
 
+    def test_an_auto_suggestion_is_not_copied(self):
+        auto = {"mr:0101-fictitius": {"wikidata": "Q1", "kind": "group", "status": "auto"}}
+        self.assertNotIn("item", r.add_items([dict(ENTRY)], auto)[0])
+
     def test_items_for_unknown_ids_fail(self):
         with tempfile.TemporaryDirectory() as d:
             (Path(d) / "data").mkdir()

@@ -47,6 +47,16 @@ class CheckTest(unittest.TestCase):
                                "note": "the mention links the title"}}
         self.assertEqual(b.check(title, self.IDS, self.CLASSES), [])
 
+    def test_the_marian_feasts_are_feasts(self):
+        # The design names the Visitation and the Presentation of Mary as feasts, not titles.
+        items = b.load(ROOT)
+        for mrid in ("mr:0531-visitatio-beatae-mariae-virginis", "mr:1121-praesentatio-beatae-mariae-virginis",
+                     "mr:0815-assumptio-beatae-mariae-virginis", "mr:0908-nativitas-beatae-mariae-virginis",
+                     "mr:0912-nomen-mariae", "mr:1208-conceptio-immaculata-beatae-mariae-virginis"):
+            with self.subTest(mrid=mrid):
+                self.assertEqual(items[mrid]["kind"], "feast")
+                self.assertTrue(items[mrid]["wikidata"])
+
     def test_committed_items_are_valid(self):
         self.assertEqual(b.main(["check", str(ROOT)]), 0)
 

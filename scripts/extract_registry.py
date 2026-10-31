@@ -5434,11 +5434,11 @@ def load_items(repo_root, current_ids):
 
 
 def add_items(entries, items):
-    """Insert "item" ({wikidata, kind}) after "date" for the entries with an item; an entry without
-    one (unresolved, or the Marian title decision) gets none."""
+    """Insert "item" ({wikidata, kind}) after "date" for the entries with a reviewed item; an entry
+    without one (unresolved, the Marian title decision, an `auto` suggestion not yet reviewed) gets none."""
     def item(mrid):
         x = items.get(mrid) or {}
-        return {"wikidata": x["wikidata"], "kind": x["kind"]} if x.get("wikidata") and x.get("status") != "unresolved" else None
+        return {"wikidata": x["wikidata"], "kind": x["kind"]} if x.get("wikidata") and x.get("status") == "reviewed" else None
     return [with_key(e, "item", item(e["id"])) if item(e["id"])
             else {k: v for k, v in e.items() if k != "item"} for e in entries]
 
