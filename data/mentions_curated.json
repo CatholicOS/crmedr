@@ -21710,6 +21710,29 @@
           "qid": null
         }
       ],
+      "mr:1023-severinus-coloniae-agrippinae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "1f593c36",
+          "qid": "Q365",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "9904f3b7",
+          "name": "Severinus"
+        }
+      ],
       "mr:1026-witta-buriburgensis": [
         {
           "kind": "place",
