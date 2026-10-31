@@ -109066,8 +109066,9 @@
   },
   "Q12729956": {
     "description": {
-      "en": "martyr at Bononia (Vidin) in Moesia",
-      "it": "martire a Bononia (Vidin) nella Mesia"
+      "en": "Christian martyr in Moesia, at Bononia (Vidin) or Ratiaria",
+      "it": "martire cristiano nella Mesia, a Bononia (Vidin) o a Ratiaria",
+      "fr": "martyr et saint chrétien"
     },
     "born": {
       "year": 300,
@@ -127744,20 +127745,6 @@
     "image": null,
     "wikipedia": {}
   },
-  "Q127692187": {
-    "description": {
-      "en": "Christian martyr",
-      "fr": "martyr et saint chrétien"
-    },
-    "born": null,
-    "died": {
-      "year": 400,
-      "precision": "century",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {}
-  },
   "Q127692188": {
     "description": {
       "en": "Christian martyr",
@@ -130649,8 +130636,7 @@
     "description": {
       "en": "French priest, one of the Fourteen Martyrs of Laval",
       "it": "sacerdote francese, uno dei quattordici martiri di Laval",
-      "fr": "prêtre français, un des quatorze martyrs de Laval",
-      "de": "französischer Priester"
+      "fr": "prêtre français, un des quatorze martyrs de Laval"
     },
     "born": {
       "year": 1736,
@@ -130663,9 +130649,7 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {
-      "de": "François Duschesne"
-    }
+    "wikipedia": {}
   },
   "Q141894162": {
     "description": {
