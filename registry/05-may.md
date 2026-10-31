@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0501-ioseph-sponsus-mariae` |  |  | celebratio |  |  |
+| 1 | (1) | `mr:0501-ioseph-opifex` |  |  | celebratio |  |  |
 | 1 | 2 | `mr:0501-ieremias-propheta` |  | PS | commemoratio |  |  |
 | 1 | 3 | `mr:0501-andeolus-vivariensis` |  | FR | dies_natalis |  |  |
 | 1 | 4 | `mr:0501-torquatus-et-socii` |  | ES | commemoratio | same as `mr:0515-torquatus-et-socii` |  |
