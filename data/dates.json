@@ -2313,8 +2313,10 @@
    "source": "wikidata"
   },
   "mr:0206-silvanus-emesae": {
-   "year": 288,
-   "source": "wikidata"
+   "from": 201,
+   "to": 300,
+   "circa": true,
+   "source": "estimate"
   },
   "mr:0206-vedastus-atrebati": {
    "year": 540,
@@ -2583,6 +2585,11 @@
   "mr:0210-zoticus-et-amantius": {
    "year": 304,
    "circa": true,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:0211-ardanus-trenorchiensis": {
+   "year": 1066,
    "basis": "death",
    "source": "wikidata"
   },

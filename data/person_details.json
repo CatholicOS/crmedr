@@ -37733,23 +37733,6 @@
       "it": "Benincasa di Cava"
     }
   },
-  "Q3652965": {
-    "description": {
-      "en": "Eastern Orthodox martyr",
-      "it": "Santo del terzo secolo"
-    },
-    "born": null,
-    "died": {
-      "year": 288,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Mocius",
-      "it": "Mocio di Anfipoli"
-    }
-  },
   "Q3663117": {
     "description": {
       "en": "African bishop venerated at Castel Volturno and Sessa Aurunca",
@@ -48632,7 +48615,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "es": "Pedro Yi Hoyong"
+    }
   },
   "Q11818270": {
     "description": {
@@ -53716,12 +53701,20 @@
     "wikipedia": {}
   },
   "Q56309758": {
-    "description": {},
+    "description": {
+      "en": "French abate of the 11th Century",
+      "es": "abad francés del siglo XI"
+    },
     "born": null,
-    "died": null,
+    "died": {
+      "year": 1066,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {
-      "fr": "Ardain de Tournus"
+      "fr": "Ardain de Tournus",
+      "es": "Ardano"
     }
   },
   "Q56318382": {
@@ -54992,7 +54985,7 @@
     "born": {
       "year": 1760,
       "precision": "year",
-      "circa": true
+      "circa": false
     },
     "died": {
       "year": 1834,
@@ -55499,8 +55492,16 @@
     "description": {
       "fr": "prêtre vietnamien du XVIIIe siècle"
     },
-    "born": null,
-    "died": null,
+    "born": {
+      "year": 1756,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1798,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {
       "fr": "Emmanuel Nguyen Van Trieu"
@@ -58058,6 +58059,16 @@
     "description": {
       "en": "lay martyr of Angers, shot at Avrillé in 1794",
       "it": "laica e martire francese, fucilata ad Avrillé nel 1794"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141946750": {
+    "description": {
+      "en": "lector and martyr of Emesa, companion of Saint Silvanus",
+      "it": "lettore e martire a Emesa, compagno di san Silvano"
     },
     "born": null,
     "died": null,

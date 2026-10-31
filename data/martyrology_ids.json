@@ -14047,8 +14047,10 @@
         }
       ],
       "date": {
-        "year": 288,
-        "source": "wikidata"
+        "from": 201,
+        "to": 300,
+        "circa": true,
+        "source": "estimate"
       }
     },
     {
@@ -16266,7 +16268,12 @@
           "label": "Tournus",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 1066,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0211-petrus-maldonado",
