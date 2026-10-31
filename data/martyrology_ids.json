@@ -14047,8 +14047,10 @@
         }
       ],
       "date": {
-        "year": 288,
-        "source": "wikidata"
+        "from": 201,
+        "to": 300,
+        "circa": true,
+        "source": "estimate"
       }
     },
     {
