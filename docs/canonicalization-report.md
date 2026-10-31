@@ -79,11 +79,11 @@ mr:0711-leontius-burdigalae (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva-
 mr:0802-betharius-carnuti (8\*), mr:0807-donatus-vesontione (7\*),
 mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus-trevirorum (8\*), mr:1026-eata-axeloduni (7\*),
 mr:1103-libertinus-agrigenti (3\*), mr:1103-odrada-alemi (10\*), mr:1118-theofredus-vellavorum (6\*),
-mr:1119-eudo-vellavorum (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
+mr:1119-eudo-vellavorum (6\*), mr:1215-marinus-cavensis (3\*), mr:1230-egwinus-eveshamii (7\*).
 
 Plain in the Latin print, asterisked in the CEI edition (6):
 mr:0323-rebecca-de-himlaya (11.), mr:0812-iacobus-do-mai-nam-et-socii (11., Nam Định martyrs),
-mr:0821-iosephus-dang-dinh-vien (11., Hưng Yên), mr:1201-domnolus (5.), mr:1203-lucius (5., Chur),
+mr:0821-iosephus-dang-dinh-vien (11., Hưng Yên), mr:1201-domnolus-parisiensis (5.), mr:1203-lucius-curiae (5., Chur),
 mr:1212-simon-phan-dac-hoa (11., Phan Đắc Hòa).
 
 **Slug correction**: the workbook ID mr:0206-paulus-mikus-et-socii is corrected on
@@ -373,7 +373,7 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0823-philippus | mr:0823-antonius-de-hieracio | St Anthony of Gerace |
 | mr:1114-maria | mr:1114-siardus-horti-sanctae-mariae | St Siard |
 | mr:1114-maria-de-gualdo-mazocca | mr:1114-ioannes-de-tupharia | Bl. John of Tufara |
-| mr:1205-petrus-de-aquara | mr:1205-lucidus | St Lucidus |
+| mr:1205-petrus-de-aquara | mr:1205-lucidus-aquarae | St Lucidus |
 | mr:1210-nicolaus-de-viotorito | mr:1210-lucas-de-insula | St Luke, bishop of Isola |
 
 mr:1126-bonaventura (from "in convéntu Sancti Bonaventúræ") is St Leonard of Port
@@ -892,9 +892,9 @@ the following eulogies of their day, run in by the OCR.
 | mr:1026-fulcus-papiae | mr:1026-fulcus-papiae |
 | mr:1102-justus | mr:1102-iustus-tergestis |
 | mr:1110-justus | mr:1110-iustus-cantuariae |
-| mr:1209-syri | mr:1209-syrus |
+| mr:1209-syri | mr:1209-syrus-papiae |
 | mr:1209-petrus-fourier-graji | mr:1209-petrus-fourier |
-| mr:1216-ado-viennae | mr:1216-ado |
+| mr:1216-ado-viennae | mr:1216-ado-viennae |
 | mr:1221-petrus-canisius-friburgi | mr:1221-petrus-canisius |
 
 **Historical keys read against their texts: rubrics and misaligned keys (applied, October
@@ -917,7 +917,7 @@ applies two classes:
   re-keyed: 28 placements to the current ID of the eulogy, the rest to a deprecated ID of
   the day, 77 of them new. A 2004 eulogy whose historical text had been keyed elsewhere
   gets its own text back (mr:1101-caesarius-tarracinae, mr:1205-crispina-thagorensis,
-  mr:1210-eulalia). One 1749 key holding two eulogies is split (mr:0311-constantinus-scotiae), and
+  mr:1210-eulalia-emeritae). One 1749 key holding two eulogies is split (mr:0311-constantinus-scotiae), and
   mr:0224-cyprianus is re-minted mr:0224-montanus-et-socii.
 - **Same eulogy, subject changed by 2004.** Where the 2004 edition kept a historical eulogy
   but changed its subject (it reduced a group: Cyrinus, Primus and Theogenes to Theogenes;
@@ -991,7 +991,7 @@ Sancta Marina, Sanctus Ioannes Therestus).
 edition was read against the Latin print. The discrepancies of substance found with high
 confidence are curator notes on the edition that errs, published for review: on the Italian
 (Holsatia rendered Alsazia at mr:0217-evermodus-raceburgi, Vasconia rendered Guascogna at
-mr:0223-raphaela-de-villalonga-ybarra, Christ "seduto" for "stantem" at mr:1226-stephanus) or,
+mr:0223-raphaela-de-villalonga-ybarra, Christ "seduto" for "stantem" at mr:1226-stephanus-hierosolymorum) or,
 twice, on the Latin (sub Iacobo rege Primo at mr:0829-richardus-herst; the misprint dístulit for
 diffúdit at mr:0612-laurentius-maria-a-sancto-francisco-xaverio, in `data/misprints.json`). The
 Italian's rank of a feast for the patrons of Italy and of Europe (Festa for Memoria) is its own
@@ -1219,7 +1219,7 @@ intended:
   *Bellreguart* in the Latin (the Spanish name) and for *Bellreguard* in the Italian
   (the Valencian, official name, as in the English translation); the CEI edition
   copied the Latin typo.
-- Latin editio altera, December 4, entry 8\* (mr:1204-adrehildis), also inside the
+- Latin editio altera, December 4, entry 8\* (mr:1204-adrehildis-cenomanorum), also inside the
   quoted designation of her body place (`places[].la` keeps the printed form):
   "monastériii" for *monastérii*, verified on the page image (p. 657) and in its OCR
   layer.
@@ -1437,11 +1437,11 @@ from `PS` to `IL`.
 | `mr:1122-ananias-arbelorum` | Arbela (Q56324805) | IR | IQ |
 | `mr:1201-clementina-nengapeta-anuarite` | Isiro (Q899873) | CG | CD |
 | `mr:1204-ioannes-damascenus` | no opening place | IL | PS |
-| `mr:1205-sabas` | Holy Lavra of Saint Sabbas (Q1059946) | IL | PS |
-| `mr:1217-modestus` | Jerusalem (Q1218) | IL | PS |
+| `mr:1205-sabas-hierosolymorum` | Holy Lavra of Saint Sabbas (Q1059946) | IL | PS |
+| `mr:1217-modestus-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
 | `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu` | Slonim (Q863576) | PL | BY |
 | `mr:1225-nativitas-domini` | no opening place | IL | PS |
-| `mr:1226-stephanus` | no opening place | IL | PS |
+| `mr:1226-stephanus-hierosolymorum` | no opening place | IL | PS |
 | `mr:1229-david-rex-et-propheta` | no opening place | IL | PS |
 
 ### Every place named, with its role (October 2026)
