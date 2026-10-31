@@ -4,8 +4,11 @@
 For each QID in data/mentions.json: the Wikidata description and the Wikipedia
 article title in each interface language, the dates of birth and death with
 their precision and whether they are circa, and the portrait (P18) with the
-author and license Commons gives it. A portrait whose license Commons does not
-state is left out, never shown without its credit. Labels are not gathered:
+author and license Commons gives it. When Commons gives a public domain license,
+the file page is read: a photograph of an artwork ({{Art Photo}}) may carry a
+license of its own, which replaces the artwork's. A portrait whose license
+Commons does not state, or this script does not know, is left out, never shown
+without its credit. Labels are not gathered:
 martyrology-frontend's persons snapshot has them. Needs network access
 (cached in .cache/wikidata/).
 
@@ -54,24 +57,59 @@ def license_url_from_code(code):
     return m and "https://creativecommons.org/licenses/" + "/".join(p for p in m.groups() if p)
 
 
-def image_credit(file, meta):
-    """The portrait with its author and license; None when Commons states no license."""
-    license_name = plain(meta.get("LicenseShortName", {}).get("value"))
-    if not license_name:
+# An {{Art Photo}} page licenses the artwork and the photograph apart; Commons' extmetadata
+# gives the artwork's license (often public domain), so the photograph's own is read here.
+PHOTO_LICENSE = re.compile(r"^\s*\|\s*photo license\s*=(.*?)(?=^\s*\|\s*[\w ]+=|^\}\}|\Z)", re.M | re.S)
+CC_TEMPLATE = re.compile(r"\{\{\s*(?:self\s*\|\s*)?(cc-zero|cc-by(?:-nc)?(?:-sa|-nd)?-\d\.\d(?:-[a-z]{2,3})?)\s*[|}]", re.I)
+OTHER_LICENSES = {"licence ouverte": ("Licence Ouverte 1.0", "https://www.etalab.gouv.fr/licence-ouverte-open-licence")}
+PUBLIC_DOMAIN = re.compile(r"\{\{\s*(?:self\s*\|\s*)?PD|^\s*(?:public domain|PD)\s*$", re.I)
+
+
+def license_name_from_code(code):
+    """'CC BY-SA 4.0' for 'cc-by-sa-4.0', 'CC BY-SA 3.0 de' for 'cc-by-sa-3.0-de', 'CC0' for 'cc-zero'."""
+    if code == "cc-zero":
+        return "CC0"
+    kind, version, place = CC_CODE.fullmatch(code).groups()
+    return " ".join(p for p in ("CC " + kind.upper(), version, place) if p)
+
+
+def photo_license(wikitext):
+    """The photograph's own license on an {{Art Photo}} page, as (name, url); (None, None) when it
+    is one this script does not know; None when the page gives the photograph none, or a public domain one."""
+    m = PHOTO_LICENSE.search(wikitext or "")
+    text = m and m.group(1).strip()
+    cc = text and CC_TEMPLATE.search(text)
+    if cc:
+        code = cc.group(1).lower()
+        return license_name_from_code(code), license_url_from_code(code)
+    if not text or PUBLIC_DOMAIN.search(text):
         return None
+    return next((v for k, v in OTHER_LICENSES.items() if re.search(r"\{\{\s*" + k + r"\s*[|}]", text, re.I)),
+                (None, None))
+
+
+def image_credit(file, meta, photo=None):
+    """The portrait with its author and license; None when Commons states no license. photo is
+    the photograph's own license, from photo_license, which replaces the artwork's."""
+    license_name = plain(meta.get("LicenseShortName", {}).get("value"))
+    if not license_name or photo == (None, None):
+        return None
+    if photo:
+        return {"file": file, "author": plain(meta.get("Artist", {}).get("value")),
+                "license": photo[0], "license_url": photo[1]}
     return {"file": file, "author": plain(meta.get("Artist", {}).get("value")), "license": license_name,
             "license_url": meta.get("LicenseUrl", {}).get("value")
             or license_url_from_code(meta.get("License", {}).get("value"))}
 
 
-def summarize_details(raw, images):
+def summarize_details(raw, images, photos=None):
     claims, descs, links = raw.get("claims", {}), raw.get("descriptions", {}), raw.get("sitelinks", {})
     file = portrait(raw)
     return {
         "description": {lang: descs[lang]["value"] for lang in DETAIL_LANGS if lang in descs},
         "born": life_date(claims, "P569"),
         "died": life_date(claims, "P570"),
-        "image": image_credit(file, images[file]) if file in images else None,
+        "image": image_credit(file, images[file], (photos or {}).get(file)) if file in images else None,
         "wikipedia": {lang: links[f"{lang}wiki"]["title"] for lang in DETAIL_LANGS if f"{lang}wiki" in links},
     }
 
@@ -91,7 +129,11 @@ def build(client, qids):
     raws = client.details_entities(qids)
     files = sorted({f for f in (portrait(raw) for raw in raws.values()) if f})
     images = client.commons_files(files) if files else {}
-    return {q: summarize_details(raws[q], images) for q in qids if q in raws}
+    public = [f for f in files if f in images
+              and (plain(images[f].get("LicenseShortName", {}).get("value")) or "").lower() == "public domain"]
+    texts = client.commons_wikitext(public) if public else {}
+    photos = {f: p for f, t in texts.items() if (p := photo_license(t))}
+    return {q: summarize_details(raws[q], images, photos) for q in qids if q in raws}
 
 
 def render_json(details):
