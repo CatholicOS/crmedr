@@ -1,9 +1,20 @@
 {
   "$comment": "The optional Wikidata item of each current eulogy that does not commemorate a single person (a group, a feast, a dedicated church, a translation), by eulogy ID: wikidata, kind (group, feast, dedication, translation), status (auto, reviewed, unresolved) and an optional note. Curated; scripts/build_eulogy_items.py validates it and extract_registry.py copies it onto the registry as `item`.",
   "items": {
+    "mr:0101-maria-dei-genetrix": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
     "mr:0102-argeus-et-socii": {
       "wikidata": "Q6965657",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0103-nomen-iesu": {
+      "wikidata": "Q2576064",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:0104-hermes-et-caius": {
@@ -11,10 +22,21 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0106-epiphania-domini": {
+      "wikidata": "Q132001",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:0106-iulianus-et-basilissa": {
       "wikidata": "Q520982",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0107-raymundus-de-penyafort": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
     },
     "mr:0108-lucianus-et-socii": {
       "wikidata": "Q79503390",
@@ -26,6 +48,12 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0111-honorata-papiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0112-tigrius-et-eutropius": {
       "wikidata": "Q31094180",
       "kind": "group",
@@ -33,6 +61,11 @@
     },
     "mr:0113-gumesindus-et-servusdei": {
       "wikidata": "Q11924990",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0114-monachi-raithi": {
+      "wikidata": "Q2061048",
       "kind": "group",
       "status": "reviewed"
     },
@@ -76,6 +109,17 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0125-conversio-pauli-apostoli": {
+      "wikidata": "Q901397",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0128-thomas-de-aquino": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0129-iuventinus-et-maximinus": {
       "wikidata": "Q6318993",
       "kind": "group",
@@ -101,6 +145,11 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0202-praesentatio-domini": {
+      "wikidata": "Q18647897",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:0203-teridius-et-remedius": {
       "wikidata": "Q64840854",
       "kind": "group",
@@ -110,6 +159,12 @@
       "wikidata": "Q108253242",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0205-plurimi-martyres-ponti": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0206-dorothea-et-theophilus": {
       "wikidata": "Q136620408",
@@ -126,10 +181,34 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0208-martyres-monachi-dii-constantinopolitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0209-plurimi-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0209-primus-et-donatus": {
       "wikidata": "Q16591776",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0211-maria-de-lourdes": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0211-plurimi-martyres-numidiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0212-martyres-abitinenses": {
       "wikidata": "Q2308132",
@@ -151,6 +230,29 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0219-monachi-martyres-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0220-quinque-martyres-tyri": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0221-petrus-damianus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0222-cathedra-petri-apostoli": {
+      "wikidata": "Q13409860",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:0227-iulianus-et-eunus": {
       "wikidata": "Q85975403",
       "kind": "group",
@@ -161,6 +263,12 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0228-presbyteri-diaconi-plurimi-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0303-emetherius-et-cheledonius": {
       "wikidata": "Q2972035",
       "kind": "group",
@@ -168,6 +276,11 @@
     },
     "mr:0303-marinus-et-asterius": {
       "wikidata": "Q56293083",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0306-quadraginta-duo-martyres-syriae": {
+      "wikidata": "Q3565151",
       "kind": "group",
       "status": "reviewed"
     },
@@ -186,6 +299,11 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0309-quadraginta-milites-sebastes": {
+      "wikidata": "Q931446",
+      "kind": "group",
+      "status": "reviewed"
+    },
     "mr:0311-trophimus-et-thalus": {
       "wikidata": "Q15700789",
       "kind": "group",
@@ -200,6 +318,24 @@
       "wikidata": "Q106559144",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0317-plurimi-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0320-viginti-monachi-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0321-martyres-alexandrini": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0322-callinicus-et-basilissa": {
       "wikidata": "Q23583396",
@@ -216,10 +352,21 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0325-annuntiatio-domini": {
+      "wikidata": "Q4087807",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:0326-barontius-et-desiderius": {
       "wikidata": "Q808712",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0330-plurimi-martyres-constantinopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0401-venantius-et-socii": {
       "wikidata": "Q136613999",
@@ -231,10 +378,28 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0405-centum-undecim-viri-novem-mulieres-martyres": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0405-irenes-thessalonicensis": {
       "wikidata": "Q359116",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0405-martyres-regiarum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0407-ducenti-milites-martyres-sinopes": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0413-carpus-et-socii": {
       "wikidata": "Q1734353",
@@ -259,6 +424,17 @@
     "mr:0426-gulielmus-et-peregrinus": {
       "wikidata": "Q21235349",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0430-pius-v": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0501-ioseph-opifex": {
+      "wikidata": "Q105888686",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:0501-torquatus-et-socii": {
@@ -296,10 +472,22 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0509-trecenti-decem-martyres-persidis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0510-alphius-et-socii": {
       "wikidata": "Q2248717",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0513-maria-de-fatima": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
     },
     "mr:0514-felix-et-fortunatus": {
       "wikidata": "Q3742241",
@@ -321,6 +509,18 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0516-quadraginta-quattuor-monachi-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0517-aemilianus-vercellarum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0518-theodotus-et-thecusa": {
       "wikidata": "Q11951712",
       "kind": "group",
@@ -330,6 +530,12 @@
       "wikidata": "Q97256860",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0521-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0522-castus-et-aemilius": {
       "wikidata": "Q716664",
@@ -341,10 +547,34 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0523-martyres-cappadociae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0523-martyres-mesopotamiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0524-donatianus-et-rogatianus": {
       "wikidata": "Q3036218",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0524-triginta-octo-martyres-philippopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0527-augustinus-cantuariensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
     },
     "mr:0529-gulielmus-arnaud-et-socii": {
       "wikidata": "Q20002779",
@@ -365,6 +595,12 @@
       "wikidata": "Q1991316",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0531-visitatio-beatae-mariae-virginis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
     },
     "mr:0601-ammon-et-socii": {
       "wikidata": "Q3576500",
@@ -416,6 +652,12 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0619-gerlandus-calatae-hieronis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0619-gervasius-et-protasius": {
       "wikidata": "Q1515920",
       "kind": "group",
@@ -426,9 +668,20 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0623-plurimi-martyres-nicomediae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0624-agoardus-et-agilbertus": {
       "wikidata": "Q2379953",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0624-ioannes-baptista": {
+      "wikidata": "Q3870479",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:0626-ioannes-et-paulus": {
@@ -443,6 +696,11 @@
     },
     "mr:0630-basilides-alexandriae": {
       "wikidata": "Q532385",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0630-protomartyres-sanctae-romanae-ecclesiae": {
+      "wikidata": "Q640666",
       "kind": "group",
       "status": "reviewed"
     },
@@ -463,6 +721,11 @@
     },
     "mr:0708-aquila-et-prisca": {
       "wikidata": "Q11085604",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0708-monachi-abrahamitae": {
+      "wikidata": "Q4669306",
       "kind": "group",
       "status": "reviewed"
     },
@@ -491,6 +754,12 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0711-benedictus-nursiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0711-placidus-et-sigisbertus": {
       "wikidata": "Q1421271",
       "kind": "group",
@@ -516,6 +785,12 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0716-maria-de-monte-carmelo": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
     "mr:0717-iusta-et-rufina": {
       "wikidata": "Q2366673",
       "kind": "group",
@@ -536,6 +811,24 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0720-apollinaris-ravennae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0721-laurentius-de-brundusio": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0722-martyres-massilitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0724-boris-et-gleb": {
       "wikidata": "Q893813",
       "kind": "group",
@@ -546,10 +839,33 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0724-sarbelius-makhluf": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0724-translatio-trium-magorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this translation: Searched translation/relics of the Magi, Shrine of the Three Kings (Q662314 is the reliquary, not the event), Sant'Eustorgio; no translation event item."
+    },
     "mr:0726-ioachim-et-anna": {
       "wikidata": "Q140401460",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0727-septem-dormientes-ephesi": {
+      "wikidata": "Q466973",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0728-martyres-thebaidis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0728-nazarius-et-celsus": {
       "wikidata": "Q17524141",
@@ -566,9 +882,32 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0730-petrus-chrysologus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0802-eusebius-vercellensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0802-petrus-iulianus-eymard": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0804-iustinus-et-crescention": {
       "wikidata": "Q21208893",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0805-dedicatio-basilicae-sanctae-mariae": {
+      "wikidata": "Q186282",
+      "kind": "dedication",
       "status": "reviewed"
     },
     "mr:0806-iustus-et-pastor": {
@@ -576,8 +915,59 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0806-transfiguratio-domini": {
+      "wikidata": "Q5439559",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0808-dominicus-bononiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0809-martyres-constantinopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": {
       "wikidata": "Q19265558",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0810-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0812-ioanna-francisca-fremiot-de-chantal": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0814-octingenti-martyres-hydrunti": {
+      "wikidata": "Q1615843",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0815-assumptio-beatae-mariae-virginis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0816-stephanus-albae-regalis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0818-martyres-massae-candidae": {
+      "wikidata": "Q6784101",
       "kind": "group",
       "status": "reviewed"
     },
@@ -591,6 +981,18 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0821-pius-x": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0822-maria-regina": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
     "mr:0823-abundius-et-irenaeus": {
       "wikidata": "Q4670633",
       "kind": "group",
@@ -601,10 +1003,22 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0823-rosa-limae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0830-felix-et-adauctus": {
       "wikidata": "Q1291005",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0830-sexaginta-martyres-coloniae-sufetanae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:0907-festus-et-desiderius": {
       "wikidata": "Q136624320",
@@ -616,6 +1030,18 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0908-nativitas-beatae-mariae-virginis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0909-petrus-claver": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:0910-nemesianus-et-socii": {
       "wikidata": "Q85977994",
       "kind": "group",
@@ -626,10 +1052,39 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0912-nomen-mariae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0913-dedicatio-basilicarum-hierosolymis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this dedication: Searched Basilicas of Constantine/Holy Sepulchre dedication, Encaenia Jerusalem; no joint feast item."
+    },
+    "mr:0913-ioannes-chrysostomus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0914-exaltatio-sanctae-crucis": {
+      "wikidata": "Q815520",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis": {
       "wikidata": "Q6035428",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0915-maria-perdolens": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
     },
     "mr:0916-rogellus-et-servusdei": {
       "wikidata": "Q121710741",
@@ -671,9 +1126,20 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1001-teresia-a-iesu-infante": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:1001-verissimus-et-socii": {
       "wikidata": "Q3509870",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1002-angeli-custodes": {
+      "wikidata": "Q5439547",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:1003-ambrosius-franciscus-ferro-et-socii": {
@@ -685,6 +1151,18 @@
       "wikidata": "Q322929",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:1005-martyres-trevirorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1007-maria-de-rosario": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
     },
     "mr:1007-sergius-et-bacchus": {
       "wikidata": "Q140013",
@@ -716,10 +1194,34 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1012-martyres-et-confessores-africae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
     "mr:1013-faustus-et-socii": {
       "wikidata": "Q11921619",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:1016-hedwigis-trebnicensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1016-margarita-maria-alacoque": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1017-martyres-volitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
     },
     "mr:1017-rufus-et-zosimus": {
       "wikidata": "Q7378121",
@@ -735,6 +1237,12 @@
       "wikidata": "Q2653872",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:1019-paulus-a-cruce": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
     },
     "mr:1019-ptolomaeus-et-lucius": {
       "wikidata": "Q18918005",
@@ -791,10 +1299,26 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1101-omnes-sancti": {
+      "wikidata": "Q587",
+      "kind": "feast",
+      "status": "reviewed"
+    },
     "mr:1102-carterius-et-socii": {
       "wikidata": "Q4691256",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:1102-omnium-fidelium-defunctorum": {
+      "wikidata": "Q1033140",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1104-carolus-borromeo": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
     },
     "mr:1104-nicandrus-et-hermes": {
       "wikidata": "Q21328789",
@@ -816,6 +1340,11 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1109-dedicatio-basilicae-lateranensis": {
+      "wikidata": "Q84090",
+      "kind": "dedication",
+      "status": "reviewed"
+    },
     "mr:1112-benedictus-et-socii": {
       "wikidata": "Q1481639",
       "kind": "group",
@@ -831,14 +1360,43 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1116-gertrudis-magna": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this dedication: No joint feast item found (searched in en/it); separate churches are St. Peter's Q12512 and St Paul Outside the Walls (not found by search)."
+    },
     "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": {
       "wikidata": "Q1752755",
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1119-quadraginta-martyres-heracleae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1121-praesentatio-beatae-mariae-virginis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
     "mr:1124-andreas-dung-lac-et-socii": {
       "wikidata": "Q3075684",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1124-chrysogonus-aquileiensis": {
+      "wikidata": "Q1631638",
+      "kind": "dedication",
       "status": "reviewed"
     },
     "mr:1124-flora-et-maria": {
@@ -856,24 +1414,77 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1129-radbodus-ultraiectensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:1206-martyres-africae": {
       "wikidata": "Q4162017",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:1208-conceptio-immaculata-beatae-mariae-virginis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:1212-maria-de-guadalupe": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
     },
     "mr:1213-eustratius-et-socii": {
       "wikidata": "Q19999551",
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1216-plurimae-virgines-africa": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1222-quadraginta-tres-monachi-raithi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1222-triginta-martyres-romae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1223-ioannes-de-kety": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
     "mr:1223-theodulus-et-socii": {
       "wikidata": "Q3592726",
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:1224-avi-iesu-christi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this feast: Searched Ancestors of Christ/Jesus, Genealogy of Jesus (Q51630 is the genealogy, not a celebration), Sunday of the Forefathers (Q87473870, Orthodox); none fit."
+    },
     "mr:1225-iovinus-et-basileus": {
       "wikidata": "Q110263903",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1225-nativitas-domini": {
+      "wikidata": "Q19809",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:1226-agnes-phila-et-lucia-khambang": {
@@ -884,6 +1495,11 @@
     "mr:1227-theodorus-graptus": {
       "wikidata": "Q3067955",
       "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1228-innocentes": {
+      "wikidata": "Q154005",
+      "kind": "feast",
       "status": "reviewed"
     },
     "mr:1231-donata-et-socii": {

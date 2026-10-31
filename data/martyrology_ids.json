@@ -999,6 +999,10 @@
       "asterisk": false,
       "country": null,
       "typology": "celebratio",
+      "item": {
+        "wikidata": "Q2576064",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -2131,6 +2135,10 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q132001",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -5254,6 +5262,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q2061048",
+        "kind": "group"
       }
     },
     {
@@ -9131,6 +9143,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q901397",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -12399,6 +12415,10 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q18647897",
+        "kind": "feast"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -19596,6 +19616,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q13409860",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"dalla sua vittoria\" (his victory) where the Latin \"tropǽo\" means the monument over his tomb in the Vatican."
@@ -23571,6 +23595,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q3565151",
+        "kind": "group"
       }
     },
     {
@@ -24517,6 +24545,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q931446",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"not for blood but for faith ... suffered\" where the Latin has \"non sánguinis sed fídei ... sócii\" (companions not of blood but of faith)."
@@ -29340,6 +29372,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q4087807",
+        "kind": "feast"
       },
       "unnumbered": true,
       "same_eulogy": [
@@ -42472,6 +42508,10 @@
       "date": {
         "year": 20,
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q105888686",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -62914,6 +62954,10 @@
         "circa": true,
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3870479",
+        "kind": "feast"
+      },
       "unnumbered": true,
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"was filled with the Holy Spirit\" (of John) where the Latin has \"matris, Spíritu Sancto replétæ\" (his mother, filled with the Holy Spirit)."
@@ -64848,6 +64892,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q640666",
+        "kind": "group"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -68423,6 +68471,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q4669306",
+        "kind": "group"
       }
     },
     {
@@ -76985,6 +77037,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q466973",
+        "kind": "group"
       }
     },
     {
@@ -81131,6 +81187,10 @@
         "basis": "dedication",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q186282",
+        "kind": "dedication"
+      },
       "unnumbered": true
     },
     {
@@ -81464,6 +81524,10 @@
         "to": 100,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q5439559",
+        "kind": "feast"
       },
       "unnumbered": true,
       "edition_notes": {
@@ -85263,6 +85327,10 @@
         "basis": "death",
         "source": "estimate"
       },
+      "item": {
+        "wikidata": "Q1615843",
+        "kind": "group"
+      },
       "note": "Antonio Primaldo and his companions, the martyrs of Otranto, blessed in the 2004 editions, were canonized on 12 May 2013."
     },
     {
@@ -86858,6 +86926,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q6784101",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"drawn more frequently like fish into the net\" where the Latin has \"crebrióres píscibus\" (more numerous than the fish drawn into the net)."
@@ -98575,6 +98647,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q815520",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -106590,6 +106666,10 @@
       "date": {
         "to": 1914,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q5439547",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -117994,6 +118074,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q587",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -118475,6 +118559,10 @@
       "date": {
         "to": 1630,
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q1033140",
+        "kind": "feast"
       },
       "unnumbered": true
     },
@@ -121294,6 +121382,10 @@
         "circa": true,
         "basis": "dedication",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q84090",
+        "kind": "dedication"
       },
       "unnumbered": true
     },
@@ -127172,6 +127264,10 @@
         "year": 303,
         "basis": "dedication",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1631638",
+        "kind": "dedication"
       }
     },
     {
@@ -136837,6 +136933,10 @@
         "to": 1630,
         "source": "edition"
       },
+      "item": {
+        "wikidata": "Q19809",
+        "kind": "feast"
+      },
       "unnumbered": true
     },
     {
@@ -137484,6 +137584,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q154005",
+        "kind": "feast"
       },
       "unnumbered": true
     },
