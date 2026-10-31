@@ -885,7 +885,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
 | mr:0923-lini | mr:0923-linus-papa |
 | mr:0927-caji | mr:0927-caius-mediolani |
-| mr:1006-fideus-agenni | mr:1006-fideus-aginni |
+| mr:1006-fideus-agenni | mr:1006-fides-aginni |
 | mr:1007-marcus-romae | mr:1007-marcus-papa |
 | mr:1016-lullus-moguntiae | mr:1016-lullus-moguntinus |
 | mr:1022-donatus-scotus-tuscia | mr:1022-donatus-scotus |
