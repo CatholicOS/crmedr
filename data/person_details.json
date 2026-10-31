@@ -128326,22 +128326,6 @@
       "it": "Aristo di Alessandria"
     }
   },
-  "Q135925988": {
-    "description": {
-      "it": "martiri",
-      "fr": "martyrs chrétiens à Jérusalem"
-    },
-    "born": null,
-    "died": {
-      "year": 638,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "fr": "Callinique et ses 9 compagnons"
-    }
-  },
   "Q136113161": {
     "description": {},
     "born": null,
@@ -128363,21 +128347,6 @@
     },
     "image": null,
     "wikipedia": {}
-  },
-  "Q136324435": {
-    "description": {
-      "fr": "martyrs du IIe siècle à Vienne"
-    },
-    "born": null,
-    "died": {
-      "year": 170,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "fr": "Exupère, Félicien et Séverin (martyrs)"
-    }
   },
   "Q136363472": {
     "description": {},
@@ -143315,6 +143284,26 @@
       "precision": "year",
       "circa": false
     },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141946391": {
+    "description": {
+      "en": "soldier and martyr, leader of the companions commemorated on 6 November",
+      "it": "soldato e martire, capo dei compagni commemorati il 6 novembre"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141946393": {
+    "description": {
+      "en": "martyr of Vienne in Gaul with Severinus and Exsuperius",
+      "it": "martire di Vienne in Gallia con Severino ed Esuperio"
+    },
+    "born": null,
+    "died": null,
     "image": null,
     "wikipedia": {}
   }
