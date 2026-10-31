@@ -1289,9 +1289,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 301,
+        "to": 400,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {

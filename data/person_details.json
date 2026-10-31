@@ -127744,6 +127744,20 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q127692187": {
+    "description": {
+      "en": "Christian martyr",
+      "fr": "martyr et saint chrétien"
+    },
+    "born": null,
+    "died": {
+      "year": 400,
+      "precision": "century",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q127692188": {
     "description": {
       "en": "Christian martyr",
@@ -130635,7 +130649,8 @@
     "description": {
       "en": "French priest, one of the Fourteen Martyrs of Laval",
       "it": "sacerdote francese, uno dei quattordici martiri di Laval",
-      "fr": "prêtre français, un des quatorze martyrs de Laval"
+      "fr": "prêtre français, un des quatorze martyrs de Laval",
+      "de": "französischer Priester"
     },
     "born": {
       "year": 1736,
@@ -130648,7 +130663,9 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {}
+    "wikipedia": {
+      "de": "François Duschesne"
+    }
   },
   "Q141894162": {
     "description": {
@@ -143546,16 +143563,6 @@
     "description": {
       "en": "youth martyr of Caesarea in Palestine",
       "it": "giovane martire a Cesarea di Palestina"
-    },
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {}
-  },
-  "Q141948490": {
-    "description": {
-      "en": "martyr at Ratiaria in Moesia",
-      "it": "martire a Ratiaria nella Mesia"
     },
     "born": null,
     "died": null,
