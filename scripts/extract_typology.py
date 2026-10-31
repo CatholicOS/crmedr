@@ -270,7 +270,9 @@ def find_offday_targets(entries):
         candidates = [c for c in by_date.get(when, []) if c != mrid]
         same = [c for c in candidates if _slug(c) == _slug(mrid)]
         headed = [c for c in candidates if has_feast_head(entries[c][2])]
-        pick = same if len(same) == 1 else headed if len(headed) == 1 else []
+        # the same saint whose two days got different discriminators (augustinus-cantuariae, -cantuariensis)
+        named = [c for c in candidates if _slug(c).split("-")[0] == _slug(mrid).split("-")[0]]
+        pick = same if len(same) == 1 else headed if len(headed) == 1 else named if len(named) == 1 else []
         if not pick:
             unresolved.append((mrid, f"{when[0]:02d}/{when[1]:02d}: {len(same)} same-slug, "
                                      f"{len(headed)} memoria/festum/sollemnitas candidates"))

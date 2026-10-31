@@ -4302,6 +4302,29 @@
           "qid": null
         }
       ],
+      "mr:0830-fantinus-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "f526a1bc",
+          "qid": "Q17151",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "97a4325f",
+          "name": "Fantinus Iunior"
+        }
+      ],
       "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
         {
           "kind": "place",
@@ -19702,6 +19725,29 @@
           "qid": null
         }
       ],
+      "mr:0915-alpinus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "7186f116",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 31,
+          "check": "3ce64935",
+          "name": "Alpinus"
+        }
+      ],
       "mr:0915-maria-perdolens": [
         {
           "kind": "person",
@@ -21662,6 +21708,29 @@
           "check": "a07b5d85",
           "name": "Maxima",
           "qid": null
+        }
+      ],
+      "mr:1023-severinus-coloniae-agrippinae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "1f593c36",
+          "qid": "Q365",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "9904f3b7",
+          "name": "Severinus"
         }
       ],
       "mr:1026-witta-buriburgensis": [
