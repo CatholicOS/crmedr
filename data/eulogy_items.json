@@ -1,0 +1,4 @@
+{
+  "$comment": "The optional Wikidata item of each current eulogy that does not commemorate a single person (a group, a feast, a dedicated church, a translation), by eulogy ID: wikidata, kind (group, feast, dedication, translation), status (auto, reviewed, unresolved) and an optional note. Curated; scripts/build_eulogy_items.py validates it and extract_registry.py copies it onto the registry as `item`.",
+  "items": {}
+}
