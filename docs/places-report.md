@@ -44,7 +44,7 @@ Check that the part after each comma is still a place designation.
 
 - `mr:0223-nicolaus-tabouillot`: Ad Gálliæ litus ante Rupifórtium, in navi servitútis
 - `mr:0512-dominicus-calceatensis`: In Castélla Hispániæ, in loco póstea eius nómine insigníto
-- `mr:0812-lelia`: in Hibérnia, in cella eius nómine vocáta
+- `mr:0812-lelia-hiberniae`: in Hibérnia, in cella eius nómine vocáta
 - `mr:0906-bega`: Ad litus Cúmbriæ Angliæ regióne, in óppido póstea eius nómine vocáto
 - `mr:1210-ioannes-roberts`: Ibídem, Tybúrni
 
@@ -387,59 +387,59 @@ Entries whose text holds a role cue outside the opening place. Add the places th
 | `mr:0801-petrus-favre` | death (obiit) | yes |
 | `mr:0801-thomas-welbourne` | death (occubuit) |  |
 | `mr:0801-alexius-sobaszek` | death (occubuit) | yes |
-| `mr:0802-eusebius` | ministry (episcopi vercellensis, sedem) | yes |
+| `mr:0802-eusebius-vercellensis` | ministry (episcopi vercellensis, sedem) | yes |
 | `mr:0802-petrus-iulianus-eymard` | birth (natus) | yes |
-| `mr:0802-petrus` | ministry (episcopi oxomensis, sedem) | yes |
+| `mr:0802-petrus-oxomensis` | ministry (episcopi oxomensis, sedem) | yes |
 | `mr:0803-augustinus-kazotic` | ministry (sedem) | yes |
-| `mr:0804-rainerius` | death (occubuit) | yes |
-| `mr:0805-paridis` | ministry (sedem) |  |
+| `mr:0804-rainerius-calliensis` | death (occubuit) | yes |
+| `mr:0805-paridis-theani` | ministry (sedem) |  |
 | `mr:0807-iordanus-forzate` | death (obdormivit) | yes |
-| `mr:0808-altmannus` | death (obiit); ministry (episcopi passaviensis) | yes |
-| `mr:0808-famianus` | birth (natus); death (obiit) | yes |
+| `mr:0808-altmannus-passaviensis` | death (obiit); ministry (episcopi passaviensis) | yes |
+| `mr:0808-famianus-gallesii` | birth (natus); death (obiit) | yes |
 | `mr:0809-editha-stein` | birth (nata) | yes |
 | `mr:0809-claudius-richard` | death (obiit) | yes |
 | `mr:0811-alexander-carbonarius` | ministry (sedem) |  |
-| `mr:0811-gaugericus` | ministry (sedem) | yes |
+| `mr:0811-gaugericus-cameracensis` | ministry (sedem) | yes |
 | `mr:0811-iacobus-rhem` | death (occubuit) |  |
 | `mr:0812-atilanus-argueso-gonzalez` | death (occubuit) |  |
 | `mr:0812-carolus-leisner` | death (occubuit) | yes |
 | `mr:0813-patricius-o-healy-et-connus-o-rourke` | ministry (episcopi mayensis) | yes |
 | `mr:0813-ioannes-berchmans` | death (obiit) |  |
-| `mr:0814-arnulphus` | death (obiit); ministry (episcopi suessionensis) | yes |
-| `mr:0815-alypius` | ministry (episcopi thagastensis) | yes |
+| `mr:0814-arnulphus-suessionensis` | death (obiit); ministry (episcopi suessionensis) | yes |
+| `mr:0815-alypius-thagastensis` | ministry (episcopi thagastensis) | yes |
 | `mr:0815-stanislaus-kostka` | death (obiit) | yes |
-| `mr:0816-rochus` | birth (ortus) | yes |
+| `mr:0816-rochus-langobardiae` | birth (ortus) | yes |
 | `mr:0817-natalis-hilarius-le-conte` | death (occubuit) | yes |
 | `mr:0819-ioannes-eudes` | death (obdormivit) | yes |
-| `mr:0819-ludovicus` | death (obdormivit); ministry (sedem) | yes |
-| `mr:0820-maximus` | death (obiit) | yes |
+| `mr:0819-ludovicus-tolosae` | death (obdormivit); ministry (sedem) | yes |
+| `mr:0820-maximus-cainonis` | death (obiit) | yes |
 | `mr:0820-bernardus-tolomei` | death (obiit) | yes |
-| `mr:0821-privatus` | death (occubuit) | yes |
+| `mr:0821-privatus-gabalorum` | death (occubuit) | yes |
 | `mr:0821-bruno-zembol` | death (occubuit) | yes |
 | `mr:0822-ioannes-wall` | death (occubuit) |  |
-| `mr:0823-eugenius` | ministry (episcopi ardstratensis) | yes |
+| `mr:0823-eugenius-ardstratensis` | ministry (episcopi ardstratensis) | yes |
 | `mr:0823-franciscus-dachtera` | death (occubuit) | yes |
 | `mr:0824-bartholomaeus-apostolus` | birth (ortus) | yes |
-| `mr:0824-audoenus` | ministry (episcopi rothomagensis) | yes |
+| `mr:0824-audoenus-rothomagensis` | ministry (episcopi rothomagensis) | yes |
 | `mr:0824-ioanna-antida-thouret` | death (obiit) | yes |
 | `mr:0824-maximianus-binkiewicz` | death (obiit) | yes |
 | `mr:0825-ludovicus-nonus` | death (obiit) | yes |
 | `mr:0825-thomas-cantelupe` | ministry (episcopi herefordiensis) | yes |
 | `mr:0825-paulus-ioannes-charles` | death (occubuit) | yes |
 | `mr:0826-iacobus-retouret` | death (obiit) | yes |
-| `mr:0827-gebhardus` | ministry (episcopi constantiensis) | yes |
-| `mr:0827-guarinus` | ministry (episcopi sedunensis) | yes |
+| `mr:0827-gebhardus-constantiensis` | ministry (episcopi constantiensis) | yes |
+| `mr:0827-guarinus-sedunensis` | ministry (episcopi sedunensis) | yes |
 | `mr:0827-rogerius-cadwallador` | death (occubuit) | yes |
-| `mr:0828-augustinus` | ministry (episcopus hipponensis) | yes |
+| `mr:0828-augustinus-hipponensis` | ministry (episcopus hipponensis) | yes |
 | `mr:0828-edmundus-arrowsmith` | death (occubuit) |  |
 | `mr:0828-ioachima-de-vedruna` | death (obiit) |  |
 | `mr:0829-ludovicus-vulfilacius-huppy` | death (obiit) |  |
 | `mr:0829-dominicus-jedrzejewski` | death (occubuit) | yes |
 | `mr:0829-teresia-bracco` | death (occubuit) |  |
-| `mr:0830-fiacrius` | birth (oriundus) | yes |
+| `mr:0830-fiacrius-meldensis` | birth (oriundus) | yes |
 | `mr:0830-didacus-ventaja-milan-et-emmanuel-medina-olmos` | ministry (episcopi almeriensis) | yes |
 | `mr:0830-alaphridus-hildephonsus-schuster` | ministry (sedem) | yes |
-| `mr:0831-aidanus` | ministry (sedem) | yes |
+| `mr:0831-aidanus-lindisfarnae` | ministry (sedem) | yes |
 | `mr:0903-gregorius-magnus` | death (obiit); ministry (sedem) | yes |
 | `mr:0903-guala` | ministry (episcopi brixiensis) | yes |
 | `mr:0904-moyses-propheta` | death (obiit) | yes |
@@ -830,23 +830,23 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0731-germanus-autissiodorensis`: Ravénna
 - `mr:0731-ignatius-de-loyola`: hispánus
 - `mr:0801-petrus-favre`: Urbe
-- `mr:0802-maximus`: Máximi
-- `mr:0803-petrus`: ecclésiæ cathedrális
+- `mr:0802-maximus-patavii`: Máximi
+- `mr:0803-petrus-anagniae`: ecclésiæ cathedrális
 - `mr:0807-xystus-ii-et-socii`: Romæ
-- `mr:0808-eusebius`: ecclésiam cathedrálem
+- `mr:0808-eusebius-mediolani`: ecclésiam cathedrálem
 - `mr:0809-faustinus-oteiza-et-florentinus-felipe`: Florentíni
 - `mr:0809-florentinus-asensio-barroso`: Florentíni
-- `mr:0809-romanus`: Románi
+- `mr:0809-romanus-romae`: Románi
 - `mr:0813-maximus-confessor`: Máximi
 - `mr:0813-petrus-romancon`: Roma
-- `mr:0813-radegundis`: Arelaténsis
-- `mr:0815-altfridus`: ecclésiam cathedrálem
+- `mr:0813-radegundis-pictaviensis`: Arelaténsis
+- `mr:0815-altfridus-hildesiae`: ecclésiam cathedrálem
 - `mr:0815-stanislaus-kostka`: Roma, Romam
 - `mr:0819-xystus-iii`: Exquíliis, Urbe
-- `mr:0820-maximus`: Máximi
+- `mr:0820-maximus-cainonis`: Máximi
 - `mr:0823-florentinus-perez-romero-et-urbanus-gil-saez`: Florentíni
 - `mr:0825-ludovicus-nonus`: sepúlcrum Dómini
-- `mr:0827-guarinus`: Cisterciénse
+- `mr:0827-guarinus-sedunensis`: Cisterciénse
 - `mr:0829-ioannes-de-perusia-et-petrus-de-saxoferrato`: Mauros
 - `mr:0831-ioseph-de-arimathaea-et-nicodemus`: Iudæ
 - `mr:0901-iosue`: Israel

@@ -513,15 +513,15 @@ class VariantsTest(unittest.TestCase):
 
     def test_curated_variants_are_added_and_checked(self):
         import extract_persons as ep
-        by_id = {"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}
-        self.assertEqual(ep.apply_curated_variants(by_id, {"$comment": "x", "mr:0817-mamas": {"Mamas": ["Mames"]}}), [])
-        self.assertEqual(by_id["mr:0817-mamas"], [{"name": "Mamas", "also": ["Mames"], "where": "text"}])
-        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0817-mamas": {"Mamas": ["Mames"]}}), [])  # no repeat
-        self.assertEqual(by_id["mr:0817-mamas"][0]["also"], ["Mames"])
-        for bad in ({"mr:0817-mamas": {"Nemo": ["X"]}}, {"mr:9999-x": {"Mamas": ["X"]}},
-                    {"mr:0817-mamas": {"Mamas": ["Mamas"]}}, {"mr:0817-mamas": {"Mamas": ["Mam#es"]}},
-                    {"mr:0817-mamas": {"Mamas": [""]}}, {"mr:0817-mamas": {"Mamas": "Mames"}}):
-            self.assertTrue(ep.apply_curated_variants({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}, bad), bad)
+        by_id = {"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]}
+        self.assertEqual(ep.apply_curated_variants(by_id, {"$comment": "x", "mr:0817-mamas-caesareae": {"Mamas": ["Mames"]}}), [])
+        self.assertEqual(by_id["mr:0817-mamas-caesareae"], [{"name": "Mamas", "also": ["Mames"], "where": "text"}])
+        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0817-mamas-caesareae": {"Mamas": ["Mames"]}}), [])  # no repeat
+        self.assertEqual(by_id["mr:0817-mamas-caesareae"][0]["also"], ["Mames"])
+        for bad in ({"mr:0817-mamas-caesareae": {"Nemo": ["X"]}}, {"mr:9999-x": {"Mamas": ["X"]}},
+                    {"mr:0817-mamas-caesareae": {"Mamas": ["Mamas"]}}, {"mr:0817-mamas-caesareae": {"Mamas": ["Mam#es"]}},
+                    {"mr:0817-mamas-caesareae": {"Mamas": [""]}}, {"mr:0817-mamas-caesareae": {"Mamas": "Mames"}}):
+            self.assertTrue(ep.apply_curated_variants({"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]}, bad), bad)
 
     def test_validate_checks_also(self):
         import extract_persons as ep
@@ -534,10 +534,10 @@ class VariantsTest(unittest.TestCase):
 
     def test_the_report_lists_unread_variants_without_the_printed_form(self):
         import extract_persons as ep
-        report = ep.render_report({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]},
-                                  {"mr:0817-mamas": {"uncertain": [], "skipped": [], "printed_twice": [],
+        report = ep.render_report({"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]},
+                                  {"mr:0817-mamas-caesareae": {"uncertain": [], "skipped": [], "printed_twice": [],
                                                      "variants_unread": ["Mamas"], "socii_without_names": False}})
-        self.assertIn("- mr:0817-mamas: Mamas", report)
+        self.assertIn("- mr:0817-mamas-caesareae: Mamas", report)
         self.assertNotIn("Mamétis", report)
 
     def test_a_curated_variant_corrects_an_extracted_spelling(self):
