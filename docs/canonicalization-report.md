@@ -436,8 +436,8 @@ the slugs.
 | mr:0713-ludovicus-armandi-iosephus-adam | mr:0713-ludovicus-armandus-iosephus-adam-et-bartholomaeus-jarrige-de-la-morelie-de-biars |
 | mr:0828-carolus-arnaldi-hanus | mr:0828-carolus-arnaldus-hanus |
 | mr:0831-raymundus-nonnati | mr:0831-raymundus-nonnatus |
-| mr:0904-caletricis | mr:0904-caletricus |
-| mr:0911-sacerdotis | mr:0911-sacerdos |
+| mr:0904-caletricis | mr:0904-caletricus-carnuti |
+| mr:0911-sacerdotis | mr:0911-sacerdos-lugdunensis |
 | mr:0914-ioannes-chrysostomi | mr:0914-ioannes-chrysostomus |
 | mr:0916-martinus-sacerdotis | mr:0916-martinus-sacerdos |
 | mr:1115-caius-coreani | mr:1115-caius-coreanus |
@@ -880,11 +880,11 @@ the following eulogies of their day, run in by the OCR.
 | mr:0825-ludovicus-noni | mr:0825-ludovicus-nonus |
 | mr:0827-rufi | mr:0827-rufus-capuae |
 | mr:0829-sebbus-anglia | mr:0829-sebbus-londinii |
-| mr:0901-lupi | mr:0901-lupus |
+| mr:0901-lupi | mr:0901-lupus-senonum |
 | mr:0903-gregorius-magnus-item | mr:0903-gregorius-magnus |
 | mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
-| mr:0923-lini | mr:0923-linus |
-| mr:0927-caji | mr:0927-caius |
+| mr:0923-lini | mr:0923-linus-papa |
+| mr:0927-caji | mr:0927-caius-mediolani |
 | mr:1006-fideus-agenni | mr:1006-fideus |
 | mr:1007-marcus-romae | mr:1007-marcus |
 | mr:1016-lullus-moguntiae | mr:1016-lullus |
@@ -1016,7 +1016,7 @@ can be withdrawn on its own.
 
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (then kept on regeneration by `ID_CORRECTIONS`; since #127 the registry holds them):
-- Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);
+- Five misnamed their eulogy: mr:0905-v → mr:0905-quintus-capuae (truncated);
   mr:0809-laurentius → mr:0809-romanus-romae (the slug had taken the cemetery's name, *in
   coemeterio sancti Laurentii*; the eulogy is St Romanus, so the 1914 deprecated
   mr:0809-romanus-romae, the same eulogy, merges into it); mr:0629-petrus-et-paulus-simon →
@@ -1411,13 +1411,13 @@ from `PS` to `IL`.
 | `mr:0828-pelagius-constantiae` | Constance (Q3834) | CH | DE |
 | `mr:0829-basilla-sirmii` | Sirmium (Q833060) | HR | RS |
 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` | Jerusalem (Q1218) | IL | PS |
-| `mr:0901-iosue` | no opening place | IL | PS |
-| `mr:0903-marinus` | Monte Titano (Q158526) | IT | SM |
+| `mr:0901-iosue-filius-nun` | no opening place | IL | PS |
+| `mr:0903-marinus-montis-titani` | Monte Titano (Q158526) | IT | SM |
 | `mr:0906-zacharias-propheta` | no opening place | IL | PS |
-| `mr:0908-hadrianus` | Rome (Q220) | TR | IT |
+| `mr:0908-hadrianus-nicomediae` | Rome (Q220) | TR | IT |
 | `mr:0908-ladislaus-bladzinski` | Gross-Rosen concentration camp (Q160268) | DE | PL |
 | `mr:0913-dedicatio-basilicarum-hierosolymis` | Jerusalem (Q1218) | IL | PS |
-| `mr:0914-notburga` | Eben am Achensee (Q691906) | IT | AT |
+| `mr:0914-notburga-eben` | Eben am Achensee (Q691906) | IT | AT |
 | `mr:0926-gedeon-iudex` | no opening place | IL | PS |
 | `mr:1001-wasnulphus` | Condé-sur-l'Escaut (Q494533) | BE | FR |
 | `mr:1002-maria-antonina-kratochwil` | Ivano-Frankivsk (Q156726) | PL | UA |

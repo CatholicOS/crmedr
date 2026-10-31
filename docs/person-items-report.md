@@ -145,17 +145,17 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0821-pius-x|Pius X: Q43739
 - mr:0827-gebhardus-constantiensis|Gebhardus: Q106643
 - mr:0830-pammachius-romae|Pammachius: Q940860
-- mr:0901-iosue|Iosue: Q7734
-- mr:0902-iustus|Iustus: Q1714476
+- mr:0901-iosue-filius-nun|Iosue: Q7734
+- mr:0902-iustus-lugduni|Iustus: Q1714476
 - mr:0903-gregorius-magnus|Gregorius Magnus: Q42827
 - mr:0904-bonifatius-i|Bonifatius I: Q160907
 - mr:0906-bertrandus-de-garrigues|Bertrandus de Garrigues: Q2899732
-- mr:0906-onesiphorus|Onesiphorus: Q164212
-- mr:0908-hadrianus|Hadrianus: Q374822
+- mr:0906-onesiphorus-discipulus|Onesiphorus: Q164212
+- mr:0908-hadrianus-nicomediae|Hadrianus: Q374822
 - mr:0908-sergius-i|Sergius I: Q173086
 - mr:0909-petrus-claver|Petrus Claver: Q167458
-- mr:0916-ninianus|Ninianus: Q1269112
-- mr:0917-satyrus|Satyrus: Q2245450
+- mr:0916-ninianus-candidae-casae|Ninianus: Q1269112
+- mr:0917-satyrus-mediolani|Satyrus: Q2245450
 - mr:0920-andreas-kim-tae-gon-et-socii|Agatha Chŏn Kyŏng-hyŏb: Q9141897
 - mr:0920-andreas-kim-tae-gon-et-socii|Agatha Kim A-gi: Q4220641
 - mr:0920-andreas-kim-tae-gon-et-socii|Agatha Kwŏn Chin-i: Q9141916
@@ -231,11 +231,11 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0920-andreas-kim-tae-gon-et-socii|Sebastianus Nam I-gwan: Q9334767
 - mr:0920-andreas-kim-tae-gon-et-socii|Stephanus Min Kŭk-ka: Q7610000
 - mr:0920-andreas-kim-tae-gon-et-socii|Susanna U Sur-im: Q9392173
-- mr:0920-eustachius|Eustachius: Q218921
-- mr:0922-emerita|Emerita: Q54573704
-- mr:0923-linus|Linus: Q47144
+- mr:0920-eustachius-romae|Eustachius: Q218921
+- mr:0922-emerita-romae|Emerita: Q54573704
+- mr:0923-linus-papa|Linus: Q47144
 - mr:0923-zacharias-et-elisabeth|Elisabeth: Q75141
-- mr:0928-eustochius|Eustochius: Q5414355
+- mr:0928-eustochius-bethlehem|Eustochius: Q5414355
 - mr:1001-teresia-a-iesu-infante|Teresia a Iesu Infante: Q181715
 - mr:1003-dionysius-areopagita|Dionysius Areopagita: Q310686
 - mr:1003-hesychius|Hesychius: Q11925553

@@ -5451,7 +5451,7 @@
           "qid": null
         }
       ],
-      "mr:0902-iustus": [
+      "mr:0902-iustus-lugduni": [
         {
           "kind": "place",
           "where": "text",
@@ -5532,7 +5532,7 @@
           ]
         }
       ],
-      "mr:0904-caletricus": [
+      "mr:0904-caletricus-carnuti": [
         {
           "kind": "place",
           "where": "text",
@@ -5592,7 +5592,7 @@
           "qid": null
         }
       ],
-      "mr:0907-sozon": [
+      "mr:0907-sozon-pompeiopoli": [
         {
           "kind": "place",
           "where": "text",
@@ -6374,7 +6374,7 @@
           "qid": null
         }
       ],
-      "mr:0911-sacerdos": [
+      "mr:0911-sacerdos-lugdunensis": [
         {
           "kind": "place",
           "where": "text",
@@ -6645,7 +6645,7 @@
           "qid": "Q23943175"
         }
       ],
-      "mr:0920-dorymedon": [
+      "mr:0920-dorymedon-synnadorum": [
         {
           "kind": "place",
           "where": "text",
@@ -17616,7 +17616,7 @@
           "qid": null
         }
       ],
-      "mr:0902-iustus": [
+      "mr:0902-iustus-lugduni": [
         {
           "kind": "place",
           "where": "text",
@@ -19723,6 +19723,29 @@
           "check": "f8273d58",
           "name": "Sanctissimum Nomen beatae Virginis Mariae",
           "qid": null
+        }
+      ],
+      "mr:0915-alpinus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "7186f116",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 31,
+          "check": "3ce64935",
+          "name": "Alpinus"
         }
       ],
       "mr:0915-maria-perdolens": [
