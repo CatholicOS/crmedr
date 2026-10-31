@@ -76,7 +76,7 @@ mr:0624-gohardus-nannetum (7\*) — note: the earlier draft called this entry "G
 it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) nor
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
 mr:0711-leontius-burdigalae (5\*), mr:0718-olga-mackiv (13\*), mr:0730-godeleva-gistellae (6\*),
-mr:0802-betharius (8\*), mr:0807-donatus-vesontione (7\*),
+mr:0802-betharius-carnuti (8\*), mr:0807-donatus-vesontione (7\*),
 mr:0909-franciscus-garate-aranguren (10\*), mr:1021-wendelinus (8\*), mr:1026-eata (7\*),
 mr:1103-libertinus (3\*), mr:1103-odrada (10\*), mr:1118-theofredus (6\*),
 mr:1119-eudo (6\*), mr:1215-marinus (3\*), mr:1230-egwinus (7\*).
@@ -874,12 +874,12 @@ the following eulogies of their day, run in by the OCR.
 | mr:0729-lupi | mr:0729-lupus-trecis |
 | mr:0730-ursi | mr:0730-ursus-autissiodori |
 | mr:0731-fabius-caesareae | mr:0731-fabius-caesareae |
-| mr:0816-rochus-montem | mr:0816-rochus |
-| mr:0819-magnus-anagniae | mr:0819-magnus |
-| mr:0823-luppus-item | mr:0823-luppus |
+| mr:0816-rochus-montem | mr:0816-rochus-langobardiae |
+| mr:0819-magnus-anagniae | mr:0819-magnus-fabrateriae |
+| mr:0823-luppus-item | mr:0823-luppus-novarum |
 | mr:0825-ludovicus-noni | mr:0825-ludovicus-nonus |
-| mr:0827-rufi | mr:0827-rufus |
-| mr:0829-sebbus-anglia | mr:0829-sebbus |
+| mr:0827-rufi | mr:0827-rufus-capuae |
+| mr:0829-sebbus-anglia | mr:0829-sebbus-londinii |
 | mr:0901-lupi | mr:0901-lupus |
 | mr:0903-gregorius-magnus-item | mr:0903-gregorius-magnus |
 | mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
@@ -912,7 +912,7 @@ applies two classes:
 - **Misaligned keys.** 172 placements carried the key of another eulogy, usually a saint
   named in the text but not its subject (Septiminus, Januarius and Felix keyed by their
   parents mr:0828-bonifatius-et-thecla; Macrina keyed by her teacher
-  mr:0114-gregorius-thaumaturgus; the Transfiguration keyed mr:0806-dominicus), or a
+  mr:0114-gregorius-thaumaturgus; the Transfiguration keyed mr:0806-dominicus-bononiae), or a
   namesake of another see (Marcellus of Trier on the 2004 Marcellus of Chalon). Each is
   re-keyed: 28 placements to the current ID of the eulogy, the rest to a deprecated ID of
   the day, 77 of them new. A 2004 eulogy whose historical text had been keyed elsewhere
@@ -969,7 +969,7 @@ eulogy, mr:0922-irais-et-socii, remains). The Latin subjects follow the new slug
 **Same-eulogy IDs merged and linked (applied, October 2026, #51 part 4)**: 51 deprecated IDs
 key a eulogy that already has an ID of the same day, under another spelling or a garbled
 slug, and merge into it (mr:0110-willhelmus into mr:0110-gulielmus, mr:0806-dominicus-bononiae
-into mr:0806-dominicus, mr:1101-festivitas-omnium-sanctorum-quam into mr:1101-omnes-sancti);
+into mr:0806-dominicus-bononiae, mr:1101-festivitas-omnium-sanctorum-quam into mr:1101-omnes-sancti);
 the IDs merged into keep their subjects. 46 `same_eulogy` links are added, among them the
 renamed celebrations of the same day (mr:0101-circumcisio-domini to mr:0101-maria-dei-genetrix)
 and eulogies whose subject the editio altera changed (mr:0510-quartus-et-quinctus to
@@ -982,8 +982,8 @@ historical eulogies to the eulogy they continue on another day or under another 
 records the errors of the sources as curator notes. An error of one edition's text is a note on
 that edition only, in the new `edition_notes` field (`EDITION_NOTES` for current IDs): most are
 errors of the unofficial 1914 English against the 1749 Latin (Brixia rendered Brixen at
-mr:0127-angela-merici, Domitian for Diocletian at mr:0824-tatio, Pettau rendered Poitiers at
-mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-privatus). Remarks on
+mr:0127-angela-merici, Domitian for Diocletian at mr:0824-tatio-claudiopoli, Pettau rendered Poitiers at
+mr:1102-victorinus), two concern the 1749 print (a dropped line at mr:0821-privatus-gabalorum). Remarks on
 the eulogy itself stay in `note` (`ENTRY_NOTES`): Candidus and Candida at mr:1003-candida. Three Latin subjects are corrected (Sancta Fides,
 Sancta Marina, Sanctus Ioannes Therestus).
 
@@ -1017,9 +1017,9 @@ can be withdrawn on its own.
 **Current IDs renamed (applied, October 2026, #52)**: 27 current slugs, in all four
 repositories (then kept on regeneration by `ID_CORRECTIONS`; since #127 the registry holds them):
 - Five misnamed their eulogy: mr:0905-v → mr:0905-quintus (truncated);
-  mr:0809-laurentius → mr:0809-romanus (the slug had taken the cemetery's name, *in
+  mr:0809-laurentius → mr:0809-romanus-romae (the slug had taken the cemetery's name, *in
   coemeterio sancti Laurentii*; the eulogy is St Romanus, so the 1914 deprecated
-  mr:0809-romanus, the same eulogy, merges into it); mr:0629-petrus-et-paulus-simon →
+  mr:0809-romanus-romae, the same eulogy, merges into it); mr:0629-petrus-et-paulus-simon →
   mr:0629-petrus-et-paulus (*Simon* opens the next sentence; -apostoli since #56); mr:1028-fidel →
   mr:1028-fidelis and mr:0424-fidel-de-sigmaringa → mr:0424-fidelis-de-sigmaringa (the
   genitive stem for the nominative).
@@ -1113,11 +1113,11 @@ errors come from a homonymous place resolved to the wrong country: Guadalajara
 Nice, and Catalan Montserrat coded `MS` (the British overseas territory). Four
 corrections go against the printed text: mr:0504-florianus-lauriaci → AT (Lorch/Enns; the
 text says "nell'odierna Germania"), mr:0304-casimirus-grodnae → BY (Grodno; the text says
-"in Lituania"), mr:0603-morandus-cluniacensis → FR (Altkirch in Alsace) and mr:0827-gebhardus →
+"in Lituania"), mr:0603-morandus-cluniacensis → FR (Altkirch in Alsace) and mr:0827-gebhardus-constantiensis →
 DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
 are left as they are: mr:1011-philippus stays `PS` (Caesarea Maritima), because
 the workbook uses `PS` for the whole Holy Land (90 current entries) and changing
-one entry would break that convention. mr:0814-arnulphus stays `BE` (Oudenburg),
+one entry would break that convention. mr:0814-arnulphus-suessionensis stays `BE` (Oudenburg),
 although the text says "Altenburg nelle Fiandre, ora in Germania".
 
 `COUNTRY_CORRECTIONS` was retired in October 2026: these codes now come from the
@@ -1155,7 +1155,7 @@ Counts: dies_natalis 4,163, commemoratio 323, depositio 80, celebratio 60,
 dedicatio 6, translatio 5, ordinatio 2, inventio 0. Deprecated entries carry no
 typology yet. Memorials whose text doesn't say what their date marks keep
 `dies_natalis` (e.g. mr:0319-ioseph-sponsus-mariae, mr:0703-thomas-apostolus, mr:0726-ioachim-et-anna,
-mr:0827-monica), pending committee review.
+mr:0827-monica-ostiae), pending committee review.
 
 ## Places (September 2026)
 
@@ -1405,11 +1405,11 @@ from `PS` to `IL`.
 | `mr:0808-vladimirus-laskowski` | Gusen concentration camp (Q681748) | DE | AT |
 | `mr:0813-maximus-confessor` | Tsageri (Q140314) | TR | GE |
 | `mr:0820-samuel-propheta` | no opening place | IL | PS |
-| `mr:0823-zachaeus` | no opening place | IL | PS |
-| `mr:0823-eugenius` | Derry (Q163584) | IE | GB |
+| `mr:0823-zachaeus-hierosolymorum` | no opening place | IL | PS |
+| `mr:0823-eugenius-ardstratensis` | Derry (Q163584) | IE | GB |
 | `mr:0824-bartholomaeus-apostolus` | no opening place | IL | PS |
-| `mr:0828-pelagius` | Constance (Q3834) | CH | DE |
-| `mr:0829-basilla` | Sirmium (Q833060) | HR | RS |
+| `mr:0828-pelagius-constantiae` | Constance (Q3834) | CH | DE |
+| `mr:0829-basilla-sirmii` | Sirmium (Q833060) | HR | RS |
 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` | Jerusalem (Q1218) | IL | PS |
 | `mr:0901-iosue` | no opening place | IL | PS |
 | `mr:0903-marinus` | Monte Titano (Q158526) | IT | SM |

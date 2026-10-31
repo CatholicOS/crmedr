@@ -149,7 +149,7 @@ class RenamesAppliedTest(unittest.TestCase):
         "mr:0821-iosephus": "mr:0821-iosephus-dang-dinh-vien",
         "mr:0320-sabas": "mr:0320-viginti-monachi-palaestinae",
         "mr:0905-v": "mr:0905-quintus",                                     # #52
-        "mr:0809-laurentius": "mr:0809-romanus",
+        "mr:0809-laurentius": "mr:0809-romanus-romae",
         "mr:1017-osea": "mr:1017-osee-propheta",
         "mr:0629-petrus-et-paulus-simon": "mr:0629-petrus-et-paulus-apostoli",  # #56
         "mr:1126-bonaventura": "mr:1126-leonardus-a-portu-mauritio",        # #25
@@ -290,7 +290,7 @@ class CurrentIdFixes52Test(unittest.TestCase):
             self.assertIn(cid, entries)
             self.assertRegex(la[cid], r"Prophet(a|issa)$")
         # the 1914 deprecated twin of St Romanus merged into the renamed current ID
-        self.assertFalse(entries["mr:0809-romanus"].get("deprecated"))
+        self.assertFalse(entries["mr:0809-romanus-romae"].get("deprecated"))
 
 
 class Apostles56Test(unittest.TestCase):
@@ -514,7 +514,7 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
 
     def test_latin_numbering_where_the_cei_differs(self):
         for mr_id, entry, cei in (("mr:0104-gregorius-lingonensis", 3, 2), ("mr:0104-elisabeth-anna-seton", 11, 10),
-                                  ("mr:0610-eduardus-poppe", 10, 9), ("mr:0825-genesius", 3, 4),
+                                  ("mr:0610-eduardus-poppe", 10, 9), ("mr:0825-genesius-arelatis", 3, 4),
                                   ("mr:0825-aloysius-urbano-lanaspa", 13, 14),
                                   ("mr:1210-gundisalvus-vines-masip", 9, 10)):
             self.assertEqual((self.e[mr_id]["entry"], self.e[mr_id]["editions"][r.EDITION_IT]["entry"]),
@@ -532,7 +532,7 @@ class PerEditionPlacementsDataTest(unittest.TestCase):
         self.assertEqual(self.e["mr:0104-emmanuel-gonzalez-garcia"]["editions"], {r.EDITION_IT: {"entry": 11}})
 
     def test_august_25(self):
-        self.assertEqual(self.e["mr:0825-genesius"]["entry"], 3)
+        self.assertEqual(self.e["mr:0825-genesius-arelatis"]["entry"], 3)
         self.assertEqual(self.e["mr:0825-eusebius-et-socii"]["editions"],
                          {r.EDITION_LA: {"absent": True}, r.EDITION_EN: {"absent": True}})
 
@@ -585,7 +585,7 @@ class EditionNotes51Test(unittest.TestCase):
         angela = entries["mr:0127-angela-merici"]
         self.assertIn("Brescia", angela["edition_notes"][r.EDITION_1914])
         self.assertNotIn("Brescia", angela.get("note", ""))
-        self.assertIn(r.EDITION_1749, entries["mr:0821-privatus"]["edition_notes"])
+        self.assertIn(r.EDITION_1749, entries["mr:0821-privatus-gabalorum"]["edition_notes"])
         self.assertIn("Peter the Younger", entries["mr:0410-beda-gavelli"]["edition_notes"][r.EDITION_EN])
         self.assertNotIn("mr:0410-beda-gavelli", r.ENTRY_NOTES)
         self.assertIn(r.EDITION_IT, entries["mr:0712-proclus-et-hilarion"]["edition_notes"])

@@ -3666,7 +3666,7 @@
           "qid": null
         }
       ],
-      "mr:0804-ia": [
+      "mr:0804-ia-persidis": [
         {
           "kind": "place",
           "where": "text",
@@ -3945,7 +3945,7 @@
           ]
         }
       ],
-      "mr:0810-laurentius": [
+      "mr:0810-laurentius-romae": [
         {
           "kind": "person",
           "where": "text",
@@ -4145,7 +4145,7 @@
           "qid": null
         }
       ],
-      "mr:0819-ludovicus": [
+      "mr:0819-ludovicus-tolosae": [
         {
           "kind": "place",
           "where": "text",
@@ -4206,7 +4206,7 @@
           "qid": null
         }
       ],
-      "mr:0822-symphorianus": [
+      "mr:0822-symphorianus-augustoduni": [
         {
           "kind": "place",
           "where": "text",
@@ -4300,6 +4300,29 @@
           "check": "10318270",
           "name": "Ioanna Jugan",
           "qid": null
+        }
+      ],
+      "mr:0830-fantinus-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "f526a1bc",
+          "qid": "Q17151",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "97a4325f",
+          "name": "Fantinus Iunior"
         }
       ],
       "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
@@ -16451,7 +16474,7 @@
           ]
         }
       ],
-      "mr:0822-symphorianus": [
+      "mr:0822-symphorianus-augustoduni": [
         {
           "kind": "place",
           "where": "text",
