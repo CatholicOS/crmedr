@@ -514,7 +514,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:1028-salvius"
+   "mr:1028-salvius-ambiani"
   ]
  },
  {
@@ -1261,7 +1261,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1015-barsen"
+   "mr:1015-barsen-edessae"
   ]
  },
  {
@@ -1402,7 +1402,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "PS",
   "same_eulogy": [
-   "mr:1020-cornelius"
+   "mr:1020-cornelius-centurio"
   ]
  },
  {
@@ -3051,7 +3051,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IL",
   "same_eulogy": [
-   "mr:1016-longinus"
+   "mr:1016-longinus-hierosolymorum"
   ]
  },
  {
@@ -3102,7 +3102,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1029-abraham"
+   "mr:1029-abraham-edessae"
   ]
  },
  {
@@ -3582,7 +3582,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "EG",
   "same_eulogy": [
-   "mr:1017-ioannes"
+   "mr:1017-ioannes-lycopoli"
   ]
  },
  {
@@ -6555,7 +6555,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IL",
   "same_eulogy": [
-   "mr:1011-philippus"
+   "mr:1011-philippus-caesareae"
   ]
  },
  {
@@ -6660,7 +6660,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1008-pelagia"
+   "mr:1008-pelagia-antiochiae"
   ]
  },
  {
@@ -6876,7 +6876,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:1030-marcianus"
+   "mr:1030-marcianus-syracusis"
   ]
  },
  {
@@ -8121,7 +8121,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:1008-felix"
+   "mr:1008-felix-comi"
   ]
  },
  {
@@ -11399,7 +11399,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "FR",
   "same_eulogy": [
-   "mr:1011-sanctinus"
+   "mr:1011-sanctinus-viroduni"
   ]
  },
  {
@@ -11862,7 +11862,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "ES",
   "same_eulogy": [
-   "mr:1005-froilanus"
+   "mr:1005-froilanus-legionis"
   ]
  },
  {
@@ -11958,7 +11958,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1027-thrasea"
+   "mr:1027-thrasea-eumeniae"
   ]
  },
  {
@@ -11970,7 +11970,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:1007-marcellus"
+   "mr:1007-marcellus-capuae"
   ]
  },
  {
@@ -12528,7 +12528,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "PL",
   "same_eulogy": [
-   "mr:1016-hedwigis"
+   "mr:1016-hedwigis-trebnicensis"
   ]
  },
  {
@@ -12549,7 +12549,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "TR",
   "same_eulogy": [
-   "mr:1020-andreas"
+   "mr:1020-andreas-constantinopoli"
   ]
  },
  {
@@ -12708,7 +12708,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:1019-asterius"
+   "mr:1019-asterius-ostiae"
   ]
  },
  {
@@ -12891,7 +12891,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:1027-evaristus"
+   "mr:1027-evaristus-papa"
   ]
  },
  {
@@ -12990,7 +12990,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:1027-gaudiosus"
+   "mr:1027-gaudiosus-neapoli"
   ]
  },
  {
@@ -13002,7 +13002,7 @@
   "attested_in": "martyrologium_romanum_1914_en_unofficial",
   "country": "IT",
   "same_eulogy": [
-   "mr:1029-honoratus"
+   "mr:1029-honoratus-vercellarum"
   ]
  },
  {
@@ -13137,9 +13137,9 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1030-maximus"
+   "mr:1030-maximus-cumarum"
   ],
-  "note": "The historical editions place Maximus at Apamea; the 2004 edition places him at Cumae (mr:1030-maximus)."
+  "note": "The historical editions place Maximus at Apamea; the 2004 edition places him at Cumae (mr:1030-maximus-cumarum)."
  },
  {
   "id": "mr:1031-vigilia-omnium-sanctorum",
@@ -15220,7 +15220,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "TR",
   "same_eulogy": [
-   "mr:1017-ignatius"
+   "mr:1017-ignatius-antiochiae"
   ]
  },
  {
@@ -15361,7 +15361,7 @@
   "attested_in": "martyrologium_romanum_1749",
   "country": "IT",
   "same_eulogy": [
-   "mr:1017-ignatius"
+   "mr:1017-ignatius-antiochiae"
   ]
  },
  {
