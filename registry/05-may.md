@@ -351,7 +351,7 @@
 | 26 | 15 | `mr:0526-ioannes-doan-trinh-hoan-et-matthaeus-nguyen-van-phuong` |  | VN | dies_natalis |  |  |
 | 26 | 16 | `mr:0526-andreas-kaggwa` |  | UG | dies_natalis |  | 2004 Latin: Source error: "Numyanyo" is a misspelling of Munyonyo, the place of his martyrdom. |
 | 26 | 17 | `mr:0526-pontianus-ngondwe` |  | UG | dies_natalis |  | 2004 Italian: Translation error: "ministro del re" (minister of the king) where the Latin has "satélles régius" (a royal guard). |
-| 27 | (1) | `mr:0527-augustinus-cantuariensis` |  | GB | dies_natalis | same as `mr:0528-augustinus` |  |
+| 27 | (1) | `mr:0527-augustinus-cantuariensis` |  | GB | celebratio | same as `mr:0528-augustinus` |  |
 | 27 | 2 | `mr:0527-iulius-dorostori` |  | BG | dies_natalis |  |  |
 | 27 | 3 | `mr:0527-restitutus-romae` |  | IT | dies_natalis |  |  |
 | 27 | 4 | `mr:0527-eutropius-arausionis` |  | FR | dies_natalis |  |  |
