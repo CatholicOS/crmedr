@@ -145,6 +145,17 @@ class XrefTest(unittest.TestCase):
         })
         self.assertEqual([u[0] for u in unresolved], ["mr:0501-ambiguus", "mr:0720-elias"])
 
+    def test_a_discriminated_slug_still_finds_the_same_saint(self):
+        # renames gave the two days different discriminators; no feast heading on either day
+        e = {
+            "mr:0526-augustinus-cantuariae": (5, 26, fold("Cantuariae, depositio sancti Augustini, cuius memoria cras agitur.")),
+            "mr:0527-augustinus-cantuariensis": (5, 27, fold("Sancti Augustini, episcopi Cantuariensis.")),
+            "mr:0527-alter": (5, 27, fold("Romae, sancti Alteri.")),
+        }
+        targets, unresolved = t.find_offday_targets(e)
+        self.assertEqual(targets, {"mr:0527-augustinus-cantuariensis": ("celebratio", "mr:0526-augustinus-cantuariae")})
+        self.assertEqual(unresolved, [])
+
     def test_hodie_never_targets_the_source(self):
         e = {
             "mr:0920-source": (9, 20, fold("Fictopoli, sanctorum martyrum, quorum memoria hodie colitur.")),

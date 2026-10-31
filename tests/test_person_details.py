@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -108,6 +109,21 @@ class DetailsClientTest(unittest.TestCase):
             client = wd.Wikidata(Path(d), fetch=fetch)
             self.assertEqual(client.commons_files(["Old.jpg", "New.jpg", "Some_file.jpg"]),
                              {"Old.jpg": meta, "New.jpg": meta, "Some_file.jpg": meta})
+
+    def test_long_file_names_are_split_so_no_url_is_too_long(self):
+        urls = []
+        files = [f"Жития Святых (1903-1911) - икона {n:05d} Апеллий и Лука.png" for n in range(50)]
+
+        def fetch(url):
+            urls.append(url)
+            return {"query": {"pages": {}}}
+
+        with tempfile.TemporaryDirectory() as d:
+            wd.Wikidata(Path(d), fetch=fetch).commons_files(files)
+        self.assertGreater(len(urls), 1)
+        self.assertTrue(all(len(u) <= wd.COMMONS_URL_MAX for u in urls))
+        asked = [t for u in urls for t in urllib.parse.parse_qs(urllib.parse.urlsplit(u).query)["titles"][0].split("|")]
+        self.assertEqual(asked, ["File:" + f for f in files])
 
 
 RAW = {
