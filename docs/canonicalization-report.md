@@ -130,6 +130,13 @@ city is their place of death (curated, since it does not open the text).
 19 March: mr:0501-ioseph-sponsus-mariae → mr:0501-ioseph-opifex. The ID follows its subject, Sanctus
 Ioseph Opifex; the person mentioned is Joseph (Q128267), as on 19 March.
 
+**Simeon bar Sabas and his companions** (#250): the first eulogy of 17 April commemorates Simeon
+bar Sabas, bishop of Seleucia and Ctesiphon, with a *turba centum ámplius sociórum*, bishops,
+priests and clerics put to the sword before him: mr:0417-simeon-seleuciae →
+mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person is Simeon bar Sabas
+(Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
+martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
 
