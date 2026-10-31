@@ -7139,6 +7139,10 @@
         "year": 270,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q1595063",
+        "kind": "group"
       }
     },
     {
@@ -13977,6 +13981,10 @@
         "year": 1597,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q578963",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"celebrated today\" where the Latin has \"cras\" (tomorrow)."
@@ -37316,6 +37324,10 @@
         "basis": "death",
         "source": "wikidata"
       },
+      "item": {
+        "wikidata": "Q3850292",
+        "kind": "group"
+      },
       "same_eulogy": [
         "mr:0422-plurimi-martyres-persidis"
       ]
@@ -45162,6 +45174,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q16556285",
+        "kind": "group"
       }
     },
     {
@@ -55415,6 +55431,10 @@
         "circa": true,
         "basis": "death",
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q1856117",
+        "kind": "group"
       }
     },
     {
@@ -99541,6 +99561,10 @@
         "to": 1630,
         "basis": "death",
         "source": "edition"
+      },
+      "item": {
+        "wikidata": "Q17979325",
+        "kind": "group"
       }
     },
     {
@@ -115560,6 +115584,10 @@
         "year": 523,
         "basis": "death",
         "source": "wikidata"
+      },
+      "item": {
+        "wikidata": "Q3295958",
+        "kind": "group"
       },
       "edition_notes": {
         "martyrologium_romanum_2004_en_unofficial": "Translation error: \"also called Dhu Nuwas\" where the Latin has \"seu Dun‘an\"."
@@ -136171,6 +136199,10 @@
         "to": 300,
         "circa": true,
         "source": "estimate"
+      },
+      "item": {
+        "wikidata": "Q85979195",
+        "kind": "group"
       }
     },
     {

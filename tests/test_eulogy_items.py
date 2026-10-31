@@ -20,6 +20,14 @@ class ClassTest(unittest.TestCase):
         self.assertEqual(b.eulogy_class([], "dedicatio"), "hand")
         self.assertEqual(b.eulogy_class([P("Felix"), P("Felix", n=2)], "dies_natalis"), "several")
 
+    def test_an_id_marked_as_a_group_is_a_group(self):
+        # curator, 2026-10-31: -et-socii, plurimi-martyres-, martyres- make a group, one name or none
+        self.assertEqual(b.eulogy_class([P("Paulus Miki")], "dies_natalis", "mr:0205-paulus-miki-et-socii"), "several")
+        self.assertEqual(b.eulogy_class([], "commemoratio", "mr:0205-plurimi-martyres-ponti"), "several")
+        self.assertEqual(b.eulogy_class([P("Usthazades")], "dies_natalis", "mr:0417-plurimi-martyres-persidis"), "several")
+        self.assertEqual(b.eulogy_class([], "dies_natalis", "mr:0630-protomartyres-sanctae-romanae-ecclesiae"), "hand")
+        self.assertEqual(b.eulogy_class([P("Felix")], "dies_natalis", "mr:0101-felix-sociensis"), "single")
+
 
 class CheckTest(unittest.TestCase):
     IDS = {"mr:0101-a", "mr:0101-b", "mr:0101-c"}
@@ -77,6 +85,10 @@ class GroupTest(unittest.TestCase):
         self.assertIsNone(b.suggest_group(["Q1", "Q2", "Q3", "Q4"], E2))       # a tie suggests nothing
         E3 = {**E, "Q4": ent(), "Q5": ent()}
         self.assertIsNone(b.suggest_group(["Q1", "Q2", "Q3", "Q4", "Q5"], E3))  # 2 of 5
+
+    def test_one_named_person_of_a_group_can_suggest_it(self):
+        self.assertIsNone(b.suggest_group(["Q1"], {"Q1": ent("G")}))
+        self.assertEqual(b.suggest_group(["Q1"], {"Q1": ent("G")}, min_persons=1), "G")
 
     def test_member_of_counts_like_part_of(self):
         E = {"Q1": {"claims": {"P463": [{"mainsnak": {"datavalue": {"value": {"id": "G"}}}}]}}, "Q2": ent("G")}

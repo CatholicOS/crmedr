@@ -6,8 +6,8 @@ A person is commemorated unless data/persons.json (the Latin 2004 edition) gives
 `mentioned`. A eulogy commemorating exactly one person is single-person, unless its typology is
 celebratio, dedicatio or translatio: it gets no item, since its person item already says what it
 commemorates (curator, 2026-10-31), and an item there needs a curator `note`. A eulogy commemorating
-none, or one under those typologies, is decided by hand ("hand"); one commemorating several may
-get a group item ("several"). A Marian title whose mention links the title item is recorded as
+none, or one under those typologies, is decided by hand ("hand"); one commemorating several, or
+whose ID says it is a group (et-socii, martyres: curator, 2026-10-31), may get a group item ("several"). A Marian title whose mention links the title item is recorded as
 {"wikidata": null, "kind": null, "status": "reviewed", "note": "the mention links the title"}.
 extract_registry.py copies each item onto its registry entry as `item`.
 Design: docs/superpowers/specs/2026-10-31-eulogy-items-design.md.
@@ -59,10 +59,18 @@ def commemorated(persons):
     return [p for p in persons if p.get("role") != "mentioned"]
 
 
-def eulogy_class(persons, typology):
-    """"single", "hand" or "several" (see the module docstring)."""
+def group_id(mrid):
+    """Whether the eulogy ID itself says it commemorates a group (curator, 2026-10-31): its slug has
+    `et-socii`, or the word `martyres` (plurimi-martyres-*, martyres-*, quadraginta-...-martyres-*)."""
+    words = (mrid or "")[8:].split("-")
+    return "martyres" in words or any(words[i:i + 2] == ["et", "socii"] for i in range(len(words)))
+
+
+def eulogy_class(persons, typology, mrid=""):
+    """"single", "hand" or "several" (see the module docstring); an ID marked as a group is
+    "several" however many of its persons are named."""
     n = len(commemorated(persons))
-    if n >= 2:
+    if n >= 2 or group_id(mrid):
         return "several"
     if n == 0 or typology in HAND_TYPOLOGIES:
         return "hand"
@@ -107,14 +115,15 @@ def group_links(raw):
     return set(_ids(raw, "P361")) | set(_ids(raw, "P463"))
 
 
-def suggest_group(person_qids, entities):
-    """The item that two or more of the persons, and at least half, point at by P361 or P463; None
-    when there is no such item or two tie."""
+def suggest_group(person_qids, entities, min_persons=2):
+    """The item that min_persons or more of the persons, and at least half, point at by P361 or P463;
+    None when there is no such item or two tie. min_persons=1 for an ID marked as a group, whose
+    eulogy may name a single member."""
     counts = Counter(g for q in person_qids for g in group_links(entities.get(q)))
     if not counts:
         return None
     (best, n), *rest = counts.most_common()
-    if n < 2 or 2 * n < len(person_qids) or (rest and rest[0][1] == n):
+    if n < min_persons or 2 * n < len(person_qids) or (rest and rest[0][1] == n):
         return None
     return best
 
@@ -137,7 +146,7 @@ def classes(repo_root):
     persons = json.loads((repo_root / "data" / "persons.json").read_text(encoding="utf-8"))["editions"][EDITION]
     typology = json.loads((repo_root / "data" / "typology.json").read_text(encoding="utf-8"))["typology"]
     registry = json.loads((repo_root / "data" / "martyrology_ids.json").read_text(encoding="utf-8"))
-    return {e["id"]: eulogy_class(persons.get(e["id"], []), typology.get(e["id"]))
+    return {e["id"]: eulogy_class(persons.get(e["id"], []), typology.get(e["id"]), e["id"])
             for e in registry["entries"] if not e.get("deprecated")}
 
 
@@ -226,7 +235,7 @@ def propose(repo_root, texts_root, only=None, wd=None, client=None):
     texts = _texts(texts_root)
     todo = [m for m, c in cls.items() if c == "several" and m not in items and (only is None or m in only)]
     ents = wd._entities(sorted({q for m in todo for q in pq.get(m, [])}))
-    groups = {m: suggest_group(pq.get(m, []), ents) for m in todo}
+    groups = {m: suggest_group(pq.get(m, []), ents, min_persons=1 if group_id(m) else 2) for m in todo}
     gents = wd._entities(sorted({g for g in groups.values() if g}))
     member_ents = wd._entities(sorted({q for g in gents.values() for q in _ids(g, "P527")}))
     written, doubted = [], []

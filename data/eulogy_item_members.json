@@ -45,6 +45,12 @@
       "group": "Q2796017",
       "non_members": []
     },
+    "mr:0119-marius-et-socii": {
+      "group": "Q1595063",
+      "non_members": [
+        "Q131765067"
+      ]
+    },
     "mr:0121-fructuosus-et-socii": {
       "group": "Q101193675",
       "non_members": []
@@ -91,6 +97,10 @@
     },
     "mr:0204-philea-et-philoromus": {
       "group": "Q108253242",
+      "non_members": []
+    },
+    "mr:0205-paulus-miki-et-socii": {
+      "group": "Q578963",
       "non_members": []
     },
     "mr:0206-dorothea-et-theophilus": {
@@ -228,6 +238,13 @@
       "group": "Q5291315",
       "non_members": []
     },
+    "mr:0417-plurimi-martyres-persidis": {
+      "group": "Q3850292",
+      "non_members": [
+        "Q2166439",
+        "Q9367436"
+      ]
+    },
     "mr:0420-sulpicius-et-servitianus": {
       "group": "Q132560343",
       "non_members": []
@@ -272,6 +289,10 @@
     },
     "mr:0506-marianus-et-iacobus": {
       "group": "Q17562131",
+      "non_members": []
+    },
+    "mr:0507-flavius-et-socii": {
+      "group": "Q16556285",
       "non_members": []
     },
     "mr:0510-alphius-et-socii": {
@@ -342,6 +363,10 @@
     },
     "mr:0602-marcellinus-et-petrus": {
       "group": "Q449701",
+      "non_members": []
+    },
+    "mr:0602-sadochus-et-socii": {
+      "group": "Q1856117",
       "non_members": []
     },
     "mr:0607-petrus-et-socii": {
@@ -596,6 +621,10 @@
       "group": "Q6035428",
       "non_members": []
     },
+    "mr:0916-abundius-et-socii": {
+      "group": "Q17979325",
+      "non_members": []
+    },
     "mr:0916-rogellus-et-servusdei": {
       "group": "Q121710741",
       "non_members": []
@@ -717,6 +746,10 @@
       "group": "Q7455543",
       "non_members": []
     },
+    "mr:1024-aretha-et-socii": {
+      "group": "Q3295958",
+      "non_members": []
+    },
     "mr:1025-chrysanthus-et-daria": {
       "group": "Q1088478",
       "non_members": []
@@ -811,6 +844,10 @@
     },
     "mr:1213-eustratius-et-socii": {
       "group": "Q19999551",
+      "non_members": []
+    },
+    "mr:1222-chaeremon-et-socii": {
+      "group": "Q85979195",
       "non_members": []
     },
     "mr:1223-theodulus-et-socii": {

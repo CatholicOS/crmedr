@@ -120,6 +120,11 @@
       "kind": "group",
       "status": "reviewed"
     },
+    "mr:0119-marius-et-socii": {
+      "wikidata": "Q1595063",
+      "kind": "group",
+      "status": "reviewed"
+    },
     "mr:0121-fructuosus-et-socii": {
       "wikidata": "Q101193675",
       "kind": "group",
@@ -223,6 +228,11 @@
     },
     "mr:0204-philea-et-philoromus": {
       "wikidata": "Q108253242",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0205-paulus-miki-et-socii": {
+      "wikidata": "Q578963",
       "kind": "group",
       "status": "reviewed"
     },
@@ -525,6 +535,11 @@
       "status": "reviewed",
       "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
     },
+    "mr:0417-plurimi-martyres-persidis": {
+      "wikidata": "Q3850292",
+      "kind": "group",
+      "status": "reviewed"
+    },
     "mr:0420-sulpicius-et-servitianus": {
       "wikidata": "Q132560343",
       "kind": "group",
@@ -613,6 +628,11 @@
     },
     "mr:0506-marianus-et-iacobus": {
       "wikidata": "Q17562131",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0507-flavius-et-socii": {
+      "wikidata": "Q16556285",
       "kind": "group",
       "status": "reviewed"
     },
@@ -776,6 +796,11 @@
     },
     "mr:0602-marcellinus-et-petrus": {
       "wikidata": "Q449701",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0602-sadochus-et-socii": {
+      "wikidata": "Q1856117",
       "kind": "group",
       "status": "reviewed"
     },
@@ -1079,6 +1104,12 @@
       "wikidata": "Q97256911",
       "kind": "group",
       "status": "reviewed"
+    },
+    "mr:0713-elisabeth-verchiere-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
     },
     "mr:0715-eutropius-et-socii": {
       "wikidata": "Q97487684",
@@ -1712,6 +1743,11 @@
       "status": "reviewed",
       "note": "the mention links the title"
     },
+    "mr:0916-abundius-et-socii": {
+      "wikidata": "Q17979325",
+      "kind": "group",
+      "status": "reviewed"
+    },
     "mr:0916-rogellus-et-servusdei": {
       "wikidata": "Q121710741",
       "kind": "group",
@@ -1988,6 +2024,11 @@
     },
     "mr:1023-servandus-et-germanus": {
       "wikidata": "Q7455543",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1024-aretha-et-socii": {
+      "wikidata": "Q3295958",
       "kind": "group",
       "status": "reviewed"
     },
@@ -2311,6 +2352,11 @@
       "kind": null,
       "status": "reviewed",
       "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1222-chaeremon-et-socii": {
+      "wikidata": "Q85979195",
+      "kind": "group",
+      "status": "reviewed"
     },
     "mr:1222-quadraginta-tres-monachi-raithi": {
       "wikidata": null,
