@@ -125,6 +125,11 @@ after it: mr:0317-alexandria → mr:0317-plurimi-martyres-alexandriae and mr:062
 mr:0623-plurimi-martyres-nicomediae, as mr:0209-plurimi-martyres-alexandriae. They name no person; the
 city is their place of death (curated, since it does not open the text).
 
+**Joseph the Worker** (#248): the eulogy of 1 May is the memorial of Saint Joseph the Worker
+(*Sancti Ioseph opíficis*), not of Joseph as Spouse of the Blessed Virgin Mary, whose solemnity is
+19 March: mr:0501-ioseph-sponsus-mariae → mr:0501-ioseph-opifex. The ID follows its subject, Sanctus
+Ioseph Opifex; the person mentioned is Joseph (Q128267), as on 19 March.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
 
