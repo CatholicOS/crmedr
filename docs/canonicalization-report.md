@@ -359,7 +359,7 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0330-iulianus | mr:0330-iulius-alvarez | St Julius Álvarez |
 | mr:0406-maria | mr:0406-catharina-de-pallantia | Bl. Catherine of Pallanza |
 | mr:0412-ioseph | mr:0412-david-uribe | St David Uribe |
-| mr:0413-maria-de-capella | mr:0413-ida-boloniensis | Bl. Ida of Boulogne (another Ida is mr:0413-ida) |
+| mr:0413-maria-de-capella | mr:0413-ida-boloniensis | Bl. Ida of Boulogne (another Ida is mr:0413-ida-vallis-rosarum) |
 | mr:0419-bertinus | mr:0419-bernardus-paenitens | Bl. Bernard the Penitent |
 | mr:0426-isidorus-de-duenas | mr:0426-raphael-arnaiz-baron | Bl. Raphael Arnáiz Barón |
 | mr:0502-gallus | mr:0502-wiborada | St Wiborada |
@@ -826,7 +826,7 @@ printed on:
   Regis, John of Lycopolis, the martyrs of Ceuta, ...): a new deprecated ID with the
   saint's own slug, linked to that eulogy.
 - 54 are another saint, a namesake the aligner had matched (Liberata of Como had been
-  keyed to mr:0427-liberalis), with no 2004 eulogy: a new deprecated ID, no link.
+  keyed to mr:0427-liberalis-altini), with no 2004 eulogy: a new deprecated ID, no link.
 - 9 are an ID of the same day (Anselm of Lucca, Hilary of Arles, Landelin, Nilus, Albert
   of Trapani, Hesperus and Zoe, Pope Eutychian, Philip Benizi's 1749 ID, and the 1914
   Christmas proclamation, which the OCR had split in two): re-keyed, no new ID.
@@ -846,7 +846,7 @@ counterpart and validates every link (another day, both ways). The full table is
 **More deprecated IDs merged into current IDs (applied, October 2026, #49)**: 42 more
 1749 eulogies had a coined deprecated ID although they are the same eulogy as a current ID
 on the same day, whose slug the deprecated one extends or declines (mr:0413-ursi for
-mr:0413-ursus, Ursus of Ravenna; mr:0525-leo-in for mr:0525-leo). They are the merges the
+mr:0413-ursus-ravennae, Ursus of Ravenna; mr:0525-leo-in for mr:0525-leo). They are the merges the
 deprecated-ID sweep's audit had accepted, each read again against the 2004 text. As in #45,
 each deprecated entry is removed and the 1749 text (and the 1914 one, where printed) is
 re-keyed to the current ID. The 1749 texts of mr:0518-ericus and mr:0528-iustus still carry
@@ -860,8 +860,8 @@ the following eulogies of their day, run in by the OCR.
 | mr:0116-marcellus-primus-romae | mr:0116-marcellus-i |
 | mr:0222-petrus-damianus-cardinalis | mr:0222-petrus-damianus |
 | mr:0312-petrus-ibidem | mr:0312-petrus-nicomediae |
-| mr:0413-ursi | mr:0413-ursus |
-| mr:0422-caji | mr:0422-caius |
+| mr:0413-ursi | mr:0413-ursus-ravennae |
+| mr:0422-caji | mr:0422-caius-papa |
 | mr:0425-marcus-evangelista-hic | mr:0425-marcus-evangelista |
 | mr:0510-job-propheta | mr:0510-iob |
 | mr:0518-ericus-upsali | mr:0518-ericus |
@@ -1363,17 +1363,17 @@ from `PS` to `IL`.
 | `mr:0325-everardus-probatopolis` | Schaffhausen (Q9009) | DE | CH |
 | `mr:0326-montanus-et-maxima` | Sirmium (Q833060) | HR | RS |
 | `mr:0328-hilarion-pelecetensis` | Uludağ (Q925688) | GR | TR |
-| `mr:0402-theodora` | Caesarea Maritima (Q319242) | LB | PS |
-| `mr:0405-pherbutha` | Seleucia (Q1136681) | IR | IQ |
-| `mr:0406-irenaeus` | Sirmium (Q833060) | HR | RS |
-| `mr:0409-demetrius` | Sirmium (Q833060) | HR | RS |
-| `mr:0413-ida` | Roosendael Abbey (Q23129797) | NL | BE |
+| `mr:0402-theodora-caesareae` | Caesarea Maritima (Q319242) | LB | PS |
+| `mr:0405-pherbutha-seleuciae` | Seleucia (Q1136681) | IR | IQ |
+| `mr:0406-irenaeus-sirmii` | Sirmium (Q833060) | HR | RS |
+| `mr:0409-demetrius-thessalonicensis` | Sirmium (Q833060) | HR | RS |
+| `mr:0413-ida-vallis-rosarum` | Roosendael Abbey (Q23129797) | NL | BE |
 | `mr:0413-ioannes-bernardus-rousseau` | Réunion (Q17070) | FR | RE |
 | `mr:0420-anastasius-pankiewicz` | Hartheim Euthanasia Centre (Q2464181) | DE | AT |
-| `mr:0423-georgius` | no opening place | IL | PS |
+| `mr:0423-georgius-diospoli` | no opening place | IL | PS |
 | `mr:0424-maria-cleopha-et-salome` | Jerusalem (Q1218) | IL | PS |
 | `mr:0425-marcus-evangelista` | no opening place | IL | PS |
-| `mr:0427-simeon` | Jerusalem (Q1218) | IL | PS |
+| `mr:0427-simeon-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
 | `mr:0501-ieremias-propheta` | no opening place | IL | PS |
 | `mr:0503-ansfridus` | Heiligenberg (Leusden) (Q18768221) | BE | NL |
 | `mr:0504-silvanus-et-socii` | Punon (Q2907858) | PS | JO |

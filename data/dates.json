@@ -4790,7 +4790,7 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0401-celsus": {
+  "mr:0401-celsus-armachanus": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -4826,7 +4826,7 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0401-valericus": {
+  "mr:0401-valericus-lauconae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -4835,14 +4835,14 @@
    "to": 1630,
    "source": "edition"
   },
-  "mr:0402-abundius": {
+  "mr:0402-abundius-comi": {
    "from": 401,
    "to": 500,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0402-apphianus": {
+  "mr:0402-apphianus-caesareae": {
    "year": 306,
    "basis": "death",
    "source": "wikidata"
@@ -4862,7 +4862,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0402-eustasius": {
+  "mr:0402-eustasius-luxovii": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -4891,12 +4891,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0402-nicetius": {
+  "mr:0402-nicetius-lugduni": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0402-theodora": {
+  "mr:0402-theodora-caesareae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -4918,7 +4918,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0403-nicetas": {
+  "mr:0403-nicetas-medicii": {
    "year": 824,
    "basis": "death",
    "source": "wikidata"
@@ -4930,7 +4930,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0403-richardus": {
+  "mr:0403-richardus-cicestriae": {
    "from": 1201,
    "to": 1300,
    "circa": true,
@@ -4942,7 +4942,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0403-ulpianus": {
+  "mr:0403-ulpianus-tyri": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -4961,7 +4961,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0404-ambrosius": {
+  "mr:0404-ambrosius-mediolani": {
    "from": 301,
    "to": 400,
    "circa": true,
@@ -4985,12 +4985,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0404-isidorus": {
+  "mr:0404-isidorus-hispalensis": {
    "year": 636,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0404-platon": {
+  "mr:0404-platon-constantinopoli": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5005,12 +5005,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0405-irenes": {
+  "mr:0405-irenes-thessalonicensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0405-iuliana": {
+  "mr:0405-iuliana-fossarum": {
    "year": 1258,
    "basis": "death",
    "source": "wikidata"
@@ -5027,24 +5027,22 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0406-gulielmus": {
+  "mr:0406-gulielmus-parisiensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0406-irenaeus": {
+  "mr:0406-irenaeus-sirmii": {
    "from": 201,
    "to": 300,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0406-methodius": {
-   "from": 801,
-   "to": 900,
-   "circa": true,
+  "mr:0406-methodius-veleradii": {
+   "year": 885,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:0406-michael-rua": {
    "year": 1910,
@@ -5078,7 +5076,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0407-calliopius": {
+  "mr:0407-calliopius-pompeiopoli": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5093,7 +5091,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0407-hegesippus": {
+  "mr:0407-hegesippus-romae": {
    "year": 180,
    "source": "wikidata"
   },
@@ -5119,7 +5117,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0407-pelusius": {
+  "mr:0407-pelusius-alexandriae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5136,7 +5134,7 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0408-amantius": {
+  "mr:0408-amantius-comi": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5176,12 +5174,12 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0409-acacius": {
+  "mr:0409-acacius-amidae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0409-aedesius": {
+  "mr:0409-aedesius-alexandriae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5191,19 +5189,19 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0409-eupsychius": {
+  "mr:0409-eupsychius-caesareae": {
    "from": 301,
    "to": 400,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0409-hugo": {
+  "mr:0409-hugo-rothomagensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0409-liborius": {
+  "mr:0409-liborius-cenomanorum": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5213,7 +5211,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0409-valdetrudis": {
+  "mr:0409-valdetrudis-castriloci": {
    "to": 1914,
    "basis": "death",
    "source": "edition"
@@ -5223,7 +5221,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0410-apollonius": {
+  "mr:0410-apollonius-alexandriae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5233,12 +5231,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0410-fulbertus": {
+  "mr:0410-fulbertus-carnuti": {
    "year": 1028,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0410-macarius": {
+  "mr:0410-macarius-gandavi": {
    "year": 1012,
    "basis": "death",
    "source": "wikidata"
@@ -5260,7 +5258,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0411-antipa": {
+  "mr:0411-antipa-pergami": {
    "to": 1630,
    "source": "edition"
   },
@@ -5269,14 +5267,14 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0411-barsanuphius": {
+  "mr:0411-barsanuphius-gazae": {
    "from": 501,
    "to": 600,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0411-domnio": {
+  "mr:0411-domnio-salonae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5298,23 +5296,23 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0411-isaac": {
+  "mr:0411-isaac-spoleti": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0411-lanuinus": {
+  "mr:0411-lanuinus-calabriae": {
    "year": 1116,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0411-philippus": {
+  "mr:0411-philippus-gortynae": {
    "from": 101,
    "to": 200,
    "circa": true,
    "source": "estimate"
   },
-  "mr:0411-stanislaus": {
+  "mr:0411-stanislaus-cracoviensis": {
    "year": 1079,
    "basis": "death",
    "source": "wikidata"
@@ -5326,17 +5324,17 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0412-alferius": {
+  "mr:0412-alferius-cavensis": {
    "year": 1050,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0412-constantinus": {
+  "mr:0412-constantinus-vapinci": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0412-damianus": {
+  "mr:0412-damianus-papiae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5348,7 +5346,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0412-erkembodo": {
+  "mr:0412-erkembodo-taruannensis": {
    "year": 742,
    "basis": "death",
    "source": "wikidata"
@@ -5370,12 +5368,12 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0412-vissia": {
+  "mr:0412-vissia-firmi": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0412-zeno": {
+  "mr:0412-zeno-veronae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5392,7 +5390,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0413-hermenegildus": {
+  "mr:0413-hermenegildus-tarraconis": {
    "from": 501,
    "to": 600,
    "circa": true,
@@ -5416,12 +5414,12 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0413-ursus": {
+  "mr:0413-ursus-ravennae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0414-fronto": {
+  "mr:0414-fronto-nitriensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5433,12 +5431,12 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0414-lambertus": {
+  "mr:0414-lambertus-lugduni": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0414-liduina": {
+  "mr:0414-liduina-schiedami": {
    "year": 1433,
    "basis": "death",
    "source": "wikidata"
@@ -5450,7 +5448,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0414-thomais": {
+  "mr:0414-thomais-alexandriae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5460,7 +5458,7 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0415-abundius": {
+  "mr:0415-abundius-romae": {
    "to": 1630,
    "source": "edition"
   },
@@ -5469,7 +5467,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0415-crescens": {
+  "mr:0415-crescens-myrae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5479,12 +5477,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0415-maro": {
+  "mr:0415-maro-montis-aurei": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0415-paternus": {
+  "mr:0415-paternus-abrincensis": {
    "to": 1630,
    "basis": "deposition",
    "source": "edition"
@@ -5505,22 +5503,22 @@
    "to": 1630,
    "source": "edition"
   },
-  "mr:0416-drogo": {
+  "mr:0416-drogo-seburgi": {
    "year": 1186,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0416-engratia": {
+  "mr:0416-engratia-caesaraugustae": {
    "year": 303,
    "circa": true,
    "source": "wikidata"
   },
-  "mr:0416-fructuosus": {
+  "mr:0416-fructuosus-dumiensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0416-ioachimus": {
+  "mr:0416-ioachimus-senensis": {
    "to": 1914,
    "basis": "death",
    "source": "edition"
@@ -5548,14 +5546,14 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0416-turibius": {
+  "mr:0416-turibius-asturicae": {
    "from": 401,
    "to": 500,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0417-acacius": {
+  "mr:0417-acacius-melitenae": {
    "from": 401,
    "to": 500,
    "circa": true,
@@ -5589,17 +5587,22 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0417-innocentius": {
+  "mr:0417-innocentius-derthonae": {
    "year": 353,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0417-pantagathus": {
+  "mr:0417-pantagathus-viennae": {
    "year": 541,
    "basis": "death",
    "source": "wikidata"
   },
   "mr:0417-petrus-et-hermogenes": {
+   "to": 1630,
+   "basis": "death",
+   "source": "edition"
+  },
+  "mr:0417-plurimi-martyres-persidis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5614,17 +5617,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0417-simeon": {
+  "mr:0417-simeon-seleuciae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0417-symeon": {
-   "to": 1630,
-   "basis": "death",
-   "source": "edition"
-  },
-  "mr:0418-athanasia": {
+  "mr:0418-athanasia-aeginae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5636,14 +5634,14 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0418-eusebius": {
+  "mr:0418-eusebius-fani": {
    "from": 501,
    "to": 600,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0418-galdinus": {
+  "mr:0418-galdinus-mediolani": {
    "year": 1176,
    "basis": "death",
    "source": "wikidata"
@@ -5660,7 +5658,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0418-perfectus": {
+  "mr:0418-perfectus-cordubae": {
    "year": 850,
    "basis": "death",
    "source": "wikidata"
@@ -5675,17 +5673,17 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0418-ursmarus": {
+  "mr:0418-ursmarus-laubiensis": {
    "year": 713,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0419-aelphegus": {
+  "mr:0419-aelphegus-cantuariensis": {
    "year": 1012,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0419-georgius": {
+  "mr:0419-georgius-antiochiae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5702,19 +5700,19 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0419-mappalicus": {
+  "mr:0419-mappalicus-africae": {
    "from": 201,
    "to": 300,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0420-agnes": {
+  "mr:0420-agnes-montis-politiani": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0420-anastasius": {
+  "mr:0420-anastasius-antiochiae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5726,7 +5724,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0420-anicetus": {
+  "mr:0420-anicetus-papa": {
    "from": 101,
    "to": 200,
    "circa": true,
@@ -5760,12 +5758,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0420-marcellinus": {
+  "mr:0420-marcellinus-ebroduni": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0420-marcianus": {
+  "mr:0420-marcianus-autissiodori": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5777,7 +5775,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0420-secundinus": {
+  "mr:0420-secundinus-cordubae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5786,22 +5784,22 @@
    "to": 1630,
    "source": "edition"
   },
-  "mr:0420-theodorus": {
+  "mr:0420-theodorus-trichinas": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0421-anastasius": {
+  "mr:0421-anastasius-montis-sina": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0421-anselmus": {
+  "mr:0421-anselmus-cantuariensis": {
    "year": 1109,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0421-apollonius": {
+  "mr:0421-apollonius-romae": {
    "from": 101,
    "to": 200,
    "circa": true,
@@ -5834,12 +5832,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0422-caius": {
+  "mr:0422-caius-papa": {
    "to": 1630,
    "basis": "deposition",
    "source": "edition"
   },
-  "mr:0422-epipodius": {
+  "mr:0422-epipodius-lugduni": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5849,39 +5847,39 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0422-leo": {
+  "mr:0422-leo-senonum": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0422-leonida": {
+  "mr:0422-leonida-alexandriae": {
    "year": 202,
    "source": "wikidata"
   },
-  "mr:0422-maryahb": {
+  "mr:0422-maryahb-persidis": {
    "from": 301,
    "to": 400,
    "circa": true,
    "source": "estimate"
   },
-  "mr:0422-opportuna": {
+  "mr:0422-opportuna-sagiensis": {
    "year": 770,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0422-soter": {
+  "mr:0422-soter-papa": {
    "from": 101,
    "to": 200,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0422-theodorus": {
+  "mr:0422-theodorus-anastasiopolitanus": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0423-adalbertus": {
+  "mr:0423-adalbertus-pragensis": {
    "year": 997,
    "basis": "death",
    "source": "wikidata"
@@ -5893,13 +5891,13 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0423-georgius": {
+  "mr:0423-georgius-diospoli": {
    "year": 303,
    "circa": true,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0423-gerardus": {
+  "mr:0423-gerardus-tulli": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5909,12 +5907,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0423-marolus": {
+  "mr:0423-marolus-mediolani": {
    "year": 423,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0424-alexander": {
+  "mr:0424-alexander-lugduni": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5929,7 +5927,7 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0424-egbertus": {
+  "mr:0424-egbertus-hiensis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5939,7 +5937,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0424-gregorius": {
+  "mr:0424-gregorius-illiberi": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -5954,7 +5952,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0424-mellitus": {
+  "mr:0424-mellitus-cantuariensis": {
    "year": 624,
    "basis": "death",
    "source": "wikidata"
@@ -5966,25 +5964,25 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0424-wilfridus": {
+  "mr:0424-wilfridus-eboraci": {
    "from": 601,
    "to": 700,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0425-anianus": {
+  "mr:0425-anianus-alexandriae": {
    "from": 1,
    "to": 100,
    "circa": true,
    "source": "estimate"
   },
-  "mr:0425-clarentius": {
+  "mr:0425-clarentius-viennae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0425-erminus": {
+  "mr:0425-erminus-laubii": {
    "year": 737,
    "basis": "death",
    "source": "wikidata"
@@ -6009,7 +6007,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0425-phoebadius": {
+  "mr:0425-phoebadius-aginni": {
    "from": 301,
    "to": 400,
    "circa": true,
@@ -6021,19 +6019,19 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0425-stephanus": {
+  "mr:0425-stephanus-antiochiae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0426-basileus": {
+  "mr:0426-basileus-amaseae": {
    "from": 301,
    "to": 400,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0426-cletus": {
+  "mr:0426-cletus-papa": {
    "from": 90,
    "to": 99,
    "source": "wikidata"
@@ -6057,7 +6055,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0426-richarius": {
+  "mr:0426-richarius-ambianensis": {
    "year": 645,
    "basis": "death",
    "source": "wikidata"
@@ -6067,7 +6065,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0427-ioannes": {
+  "mr:0427-ioannes-aphusiae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -6094,25 +6092,25 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0427-pollio": {
+  "mr:0427-pollio-cibalarum": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0427-simeon": {
+  "mr:0427-simeon-hierosolymorum": {
    "from": 101,
    "to": 200,
    "circa": true,
    "source": "estimate"
   },
-  "mr:0427-theodorus": {
+  "mr:0427-theodorus-tabennesis": {
    "from": 301,
    "to": 400,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0427-zita": {
+  "mr:0427-zita-lucae": {
    "from": 1201,
    "to": 1300,
    "circa": true,
@@ -6136,7 +6134,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0428-luchesius": {
+  "mr:0428-luchesius-podii-bonitii": {
    "year": 1260,
    "basis": "death",
    "source": "wikidata"
@@ -6146,7 +6144,7 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0428-pamphilus": {
+  "mr:0428-pamphilus-corfiniensis": {
    "to": 1630,
    "basis": "deposition",
    "source": "edition"
@@ -6161,12 +6159,12 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0428-prudentius": {
+  "mr:0428-prudentius-turiasonis": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0428-vitalis": {
+  "mr:0428-vitalis-ravennae": {
    "to": 1630,
    "source": "edition"
   },
@@ -6180,27 +6178,27 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0429-hugo": {
+  "mr:0429-hugo-cluniaci": {
    "year": 1109,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0429-severus": {
+  "mr:0429-severus-neapoli": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0429-torpes": {
+  "mr:0429-torpes-pisarum": {
    "year": 68,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:0429-tychicus": {
+  "mr:0429-tychicus-discipulus": {
    "from": 1,
    "to": 100,
    "source": "wikidata"
   },
-  "mr:0430-adiutor": {
+  "mr:0430-adiutor-vernonis": {
    "year": 1131,
    "basis": "death",
    "source": "wikidata"
@@ -6210,19 +6208,19 @@
    "basis": "death",
    "source": "edition"
   },
-  "mr:0430-donatus": {
+  "mr:0430-donatus-eureae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0430-earconwaldus": {
+  "mr:0430-earconwaldus-barkingae": {
    "from": 601,
    "to": 700,
    "circa": true,
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0430-eutropius": {
+  "mr:0430-eutropius-santonum": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -6246,7 +6244,7 @@
    "basis": "death",
    "source": "estimate"
   },
-  "mr:0430-laurentius": {
+  "mr:0430-laurentius-novariae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
@@ -6271,17 +6269,15 @@
    "source": "estimate"
   },
   "mr:0430-pius-v": {
-   "from": 1501,
-   "to": 1600,
-   "circa": true,
-   "source": "estimate"
+   "year": 1572,
+   "source": "wikidata"
   },
-  "mr:0430-pomponius": {
+  "mr:0430-pomponius-neapoli": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
-  "mr:0430-sophia": {
+  "mr:0430-sophia-firmi": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
