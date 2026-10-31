@@ -5769,6 +5769,40 @@
       "pt": "Henrique II do Sacro Império Romano-Germânico"
     }
   },
+  "Q104467": {
+    "description": {
+      "en": "pope",
+      "it": "79° vescovo di Roma e papa della Chiesa cattolica dal 678 al 681",
+      "fr": "79e pape de l'Église catholique, de 678 à 681",
+      "de": "Papst",
+      "es": "79.º papa de la Iglesia Católica",
+      "pt": "79º Papa da Igreja Católica"
+    },
+    "born": {
+      "year": 574,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 681,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Agatho.png",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Agatho",
+      "it": "Papa Agatone",
+      "fr": "Agathon (pape)",
+      "de": "Agatho (Papst)",
+      "es": "Agatón (papa)",
+      "pt": "Papa Agatão"
+    }
+  },
   "Q104804": {
     "description": {
       "en": "Armenian theologian and linguist (362–440)",
@@ -5795,36 +5829,6 @@
       "de": "Mesrop Maschtoz",
       "es": "Mesrob Mashtots",
       "pt": "Mesrobes Mastósio"
-    }
-  },
-  "Q106643": {
-    "description": {
-      "en": "Catholic archbishop of Salzburg",
-      "it": "arcivescovo cattolico tedesco",
-      "fr": "archevêque catholique",
-      "de": "Erzbischof von Salzburg, Seliger",
-      "es": "arzobispo católico"
-    },
-    "born": {
-      "year": 1010,
-      "precision": "year",
-      "circa": true
-    },
-    "died": {
-      "year": 1088,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Hs. Rastatt 27, Blatt 1r.jpg",
-      "author": "Manegold von Lautenbach",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Gebhard of Salzburg",
-      "it": "Gebeardo di Salisburgo",
-      "de": "Gebhard (Salzburg)"
     }
   },
   "Q108332": {
@@ -17560,30 +17564,6 @@
       "es": "Caralampio"
     }
   },
-  "Q276575": {
-    "description": {
-      "en": "Late 5th-century BC Athenian poet of Old Comedy",
-      "it": "commediografo ateniese della Commedia antica",
-      "fr": "poète athénien de la Comédie ancienne"
-    },
-    "born": {
-      "year": -1,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": -401,
-      "precision": "century",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Archippus (poet)",
-      "it": "Archippo (comico)",
-      "es": "Arquipo",
-      "pt": "Arquipo (poeta)"
-    }
-  },
   "Q276608": {
     "description": {
       "en": "19th‑century French nun and foundress of the Sisters of the Good Shepherd (1796–1868)",
@@ -17710,6 +17690,39 @@
       "de": "Sturmius",
       "es": "Esturmio de Fulda",
       "pt": "Estúrmio"
+    }
+  },
+  "Q280869": {
+    "description": {
+      "en": "cousin once removed of emperors Titus and Domitian",
+      "it": "politico e santo martire romano",
+      "fr": "homme politique romain ayant vécu au Ier siècle",
+      "de": "römischer Konsul 95",
+      "es": "político romano del siglo I perteneciente a la dinastía Flavia"
+    },
+    "born": {
+      "year": 50,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 95,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Mithraeum San Clemente Rom.JPG",
+      "author": "Ice Boy Tell",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Titus Flavius Clemens (consul)",
+      "it": "Tito Flavio Clemente (console 95)",
+      "fr": "Titus Flavius Clemens",
+      "de": "Titus Flavius Clemens",
+      "es": "Tito Flavio Clemente",
+      "pt": "Tito Flávio Clemente"
     }
   },
   "Q281427": {
@@ -20014,6 +20027,37 @@
       "pt": "Francisco de Paula"
     }
   },
+  "Q315693": {
+    "description": {
+      "en": "Bishop of Constance",
+      "it": "vescovo tedesco",
+      "fr": "évêque catholique",
+      "de": "Bischof von Konstanz, Heiliger",
+      "es": "religioso suabo (949-995), obispo de Constanza y santo católico"
+    },
+    "born": {
+      "year": 949,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 995,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Gebhard von Konstanz.jpg",
+      "author": "No machine-readable author provided. JJFox~commonswiki assumed (based on copyright claims).",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Gebhard of Constance",
+      "it": "Gebardo di Costanza",
+      "de": "Gebhard von Konstanz",
+      "es": "Gebardo de Constanza"
+    }
+  },
   "Q316295": {
     "description": {
       "en": "Italian Franciscan and saint (1380–1444)",
@@ -21787,6 +21831,40 @@
       "de": "Philip Howard, 20. Earl of Arundel",
       "es": "Felipe Howard",
       "pt": "Philip Howard, conde de Arundel"
+    }
+  },
+  "Q336731": {
+    "description": {
+      "en": "Roman Catholic saint",
+      "it": "martire e santo cristiano",
+      "fr": "saint de l'église catholique romaine",
+      "de": "frühchristlicher Märtyrer und Heiliger (Eisheiliger)",
+      "es": "santo y mártir romano",
+      "pt": "mártir e santo católico"
+    },
+    "born": {
+      "year": 289,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 304,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Barcelona Cathedral Interior - Statue of Saint Pancrace of Rome.jpg",
+      "author": "Didier Descouens",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Pancras of Rome",
+      "it": "San Pancrazio",
+      "fr": "Pancrace de Rome",
+      "de": "Pankratius",
+      "es": "Pancracio de Roma",
+      "pt": "Pancrácio de Roma"
     }
   },
   "Q337189": {
@@ -26903,6 +26981,39 @@
       "de": "Monon (Heiliger)"
     }
   },
+  "Q442396": {
+    "description": {
+      "en": "early Christian saint",
+      "it": "figlia di santa Paola romana, discepola di san Girolamo",
+      "fr": "sainte catholique",
+      "de": "Gründerin mehrerer Klöster und eines Hospizes in Bethlehem, geweihte Jungfrau der frühen Kirche und Heilige",
+      "es": "santa cristiana"
+    },
+    "born": {
+      "year": 368,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 420,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Francisco de Zurbarán 043.jpg",
+      "author": "Francisco de Zurbarán and workshop",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Eustochium",
+      "it": "Giulia Eustochio",
+      "fr": "Eustochium",
+      "de": "Eustochium",
+      "es": "Eustoquia",
+      "pt": "Eustóquia"
+    }
+  },
   "Q442516": {
     "description": {
       "en": "5th century Bishop of Auxerre and saint",
@@ -29050,30 +29161,6 @@
       "pt": "Bavão de Gand"
     }
   },
-  "Q457948": {
-    "description": {
-      "en": "pair of Christian martyrs",
-      "it": "coppia di santi martiri",
-      "fr": "martyrs chrétiens",
-      "de": "zwei Märtyrer"
-    },
-    "born": null,
-    "died": null,
-    "image": {
-      "file": "SaintsVictor and Corona.JPG",
-      "author": "Anonymous, French artist",
-      "license": "Public domain",
-      "license_url": null
-    },
-    "wikipedia": {
-      "en": "Victor and Corona",
-      "it": "Vittore e Corona",
-      "fr": "Victor et Couronne",
-      "de": "Victor und Corona",
-      "es": "Víctor y Corona",
-      "pt": "Vítor e Corona"
-    }
-  },
   "Q458315": {
     "description": {
       "en": "Belgian Religious Sister and foundress, beatified",
@@ -30227,6 +30314,38 @@
       "de": "Petrus Nolascus",
       "es": "Pedro Nolasco",
       "pt": "Pedro Nolasco"
+    }
+  },
+  "Q468856": {
+    "description": {
+      "en": "Ancient Roman saint in Colossians 4:17 and Philemon 1:2",
+      "fr": "personnage du Nouveau testament",
+      "de": "Jünger Jesu, Bischof von Kolossae",
+      "es": "Aur"
+    },
+    "born": {
+      "year": 50,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Archippus and Philemon (Menologion of Basil II).jpg",
+      "author": "Authors of Menologion of Basil II (circa 985 AC, Constantinople), Byzantine manuscript illuminators[1]: Pantoleon with Georgios, Michael the Younger, Michael of Blachernae, Symeon, Symeon of Blachernae, Menas, and Nestor (Online on Vatican site)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Archippus",
+      "it": "Archippo di Colossi",
+      "fr": "Archippe (Bible)",
+      "de": "Archippus",
+      "es": "Arquipo de Colosas",
+      "pt": "Arquipo"
     }
   },
   "Q468859": {
@@ -32696,6 +32815,38 @@
       "en": "Jerome de Angelis",
       "it": "Girolamo De Angelis",
       "fr": "Jérôme de Angelis"
+    }
+  },
+  "Q526245": {
+    "description": {
+      "en": "4th and 5th-century abbot of Lérins and Archbishop of Arles",
+      "it": "vescovo e monaco",
+      "fr": "évêque d'Arles",
+      "de": "Bischof der Stadt Arles, Heiliger",
+      "es": "arzobispo de Arlés, canonizado santo"
+    },
+    "born": {
+      "year": 365,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 430,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Saint Honorat d'Arles.jpg",
+      "author": "AnonymousUnknown author",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Honoratus",
+      "it": "Onorato di Arles",
+      "fr": "Honorat d'Arles",
+      "de": "Honoratus von Arles",
+      "es": "Honorato de Arlés"
     }
   },
   "Q526436": {
@@ -39115,34 +39266,6 @@
       "es": "Bernardo de Hildesheim"
     }
   },
-  "Q704093": {
-    "description": {
-      "en": "Italian Roman Catholic saint",
-      "it": "santo della Chiesa cattolica",
-      "fr": "saint",
-      "de": "Bischof von Mailand"
-    },
-    "born": {
-      "year": 500,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 401,
-      "precision": "century",
-      "circa": false
-    },
-    "image": {
-      "file": "Saint Arsatius.JPG",
-      "author": "Daranios",
-      "license": "CC BY 3.0",
-      "license_url": "https://creativecommons.org/licenses/by/3.0"
-    },
-    "wikipedia": {
-      "en": "Arsatius",
-      "de": "Arsacius"
-    }
-  },
   "Q704364": {
     "description": {
       "en": "saint from Catalonia in Spain",
@@ -44104,6 +44227,35 @@
     "wikipedia": {
       "it": "Guido di Pomposa",
       "de": "Guido von Pomposa"
+    }
+  },
+  "Q887137": {
+    "description": {
+      "en": "Italian priest",
+      "it": "vescovo e santo italiano",
+      "de": "italienischer Bischof und Kirchengründer"
+    },
+    "born": {
+      "year": 580,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 670,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "San Magno, Incredulità di san Tommaso di Giambattista Cima da Conegliano.JPG",
+      "author": "Mongolo1984",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Magnus of Oderzo",
+      "it": "Magno di Oderzo",
+      "de": "Magnus von Oderzo",
+      "es": "Magno de Oderzo"
     }
   },
   "Q888546": {
@@ -50315,6 +50467,27 @@
       "es": "Ubaldo de Gubbio"
     }
   },
+  "Q1262408": {
+    "description": {
+      "en": "Christian saint"
+    },
+    "born": {
+      "year": 377,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 457,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Valerian of Abbenza",
+      "es": "Valeriano de Abbensa",
+      "pt": "Valeriano de Abbenza"
+    }
+  },
   "Q1262465": {
     "description": {
       "en": "Archbishop of Canterbury and saint (c.953-1012)",
@@ -55762,6 +55935,26 @@
       "pt": "Guido de Anderlecht"
     }
   },
+  "Q1554395": {
+    "description": {
+      "en": "abbot of Würzburg, Germany (8. century)",
+      "de": "Bischof von Würzburg (8. Jahrhundert)"
+    },
+    "born": {
+      "year": 800,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 795,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "de": "Gumbert (Würzburg)"
+    }
+  },
   "Q1559049": {
     "description": {
       "en": "Abbot of Brogne (885-959)",
@@ -56875,34 +57068,6 @@
       "it": "Giulio di Durostoro",
       "de": "Julius von Durostorum",
       "es": "Julio el Veterano"
-    }
-  },
-  "Q1714476": {
-    "description": {
-      "en": "Gallo-Roman saint",
-      "de": "katholischer Märtyrer"
-    },
-    "born": {
-      "year": 277,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 287,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "AD 2024 - Reliekhouder Sint-Justus - Antwerpen.jpg",
-      "author": "Carolus",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {
-      "en": "Justus of Beauvais",
-      "fr": "Juste de Beauvais",
-      "de": "Justus von Beauvais",
-      "pt": "Justus de Beauvais"
     }
   },
   "Q1722511": {
@@ -66688,6 +66853,33 @@
       "pt": "Paolo Burali d'Arezzo"
     }
   },
+  "Q2522667": {
+    "description": {
+      "en": "ancient Christian martyr",
+      "it": "santo",
+      "fr": "martyr et saint chrétien",
+      "de": "christlicher Märtyrer und Heiliger"
+    },
+    "born": {
+      "year": 150,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 177,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bernardo Zenale - Saint Victor.jpg",
+      "author": "Bernardo Zenale",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "de": "Victor von Damaskus"
+    }
+  },
   "Q2523976": {
     "description": {
       "en": "English catholic priest and martyr",
@@ -72728,30 +72920,6 @@
       "es": "Donato de Besançon"
     }
   },
-  "Q3045204": {
-    "description": {
-      "en": "bishop of Verdun",
-      "fr": "évêque de Verdun",
-      "es": "obispo de Verdún"
-    },
-    "born": {
-      "year": 480,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 554,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Desideratus of Verdun",
-      "it": "Desiderato di Verdun",
-      "fr": "Désiré de Verdun",
-      "es": "Desiderato de Verdún"
-    }
-  },
   "Q3046005": {
     "description": {
       "en": "Bishop of Bourges",
@@ -74047,23 +74215,6 @@
       "en": "Gohard",
       "fr": "Gohard de Nantes",
       "de": "Gohard von Nantes"
-    }
-  },
-  "Q3110453": {
-    "description": {
-      "en": "saint, abbot",
-      "fr": "saint, abbé"
-    },
-    "born": null,
-    "died": {
-      "year": 676,
-      "precision": "year",
-      "circa": true
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Gondelbert",
-      "fr": "Gondelbert"
     }
   },
   "Q3111660": {
@@ -83917,6 +84068,38 @@
       "fr": "Ilère de Mende"
     }
   },
+  "Q3824340": {
+    "description": {
+      "en": "Spanish saint",
+      "fr": "évêque d'Acci et saint chrétien",
+      "de": "spanischer Bischof",
+      "es": "santo mártir venerado por las iglesias ortodoxa y católica",
+      "pt": "santo espanhol de Acci"
+    },
+    "born": {
+      "year": 50,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "image": {
+      "file": "Museu Alberto Sampaio-São Torcato.jpg",
+      "author": "anonymous",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Torquatus of Acci",
+      "fr": "Torquat d'Acci",
+      "de": "Torquatus von Acci",
+      "es": "Torcuato (varón apostólico)",
+      "pt": "Torcato de Acci"
+    }
+  },
   "Q3824785": {
     "description": {
       "en": "Spanish saint",
@@ -85461,23 +85644,6 @@
       "de": "Honoratus von Mailand",
       "es": "Honorato de Milán",
       "pt": "Honorato de Milão"
-    }
-  },
-  "Q3882764": {
-    "description": {
-      "en": "6th-century abbot",
-      "it": "abate",
-      "fr": "abbé de San Magno"
-    },
-    "born": null,
-    "died": {
-      "year": 530,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "it": "Onorato di Fondi"
     }
   },
   "Q3887270": {
@@ -90458,22 +90624,6 @@
       "es": "Polión"
     }
   },
-  "Q4383206": {
-    "description": {
-      "en": "4th century abbot",
-      "fr": "abbé et saint chrétien"
-    },
-    "born": null,
-    "died": {
-      "year": 380,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "es": "Publio de Zeugma"
-    }
-  },
   "Q4384403": {
     "description": {
       "en": "Catholic priest from Poland (1877-1942)",
@@ -93711,6 +93861,30 @@
       "fr": "Dermot O'Hurley"
     }
   },
+  "Q5264220": {
+    "description": {
+      "en": "Bishop of Bourges",
+      "fr": "chancelier mérovingien et évêque de Bourges au VIe siècle",
+      "es": "obispo de Bourges"
+    },
+    "born": {
+      "year": 512,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 550,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Desideratus",
+      "it": "Desiderato di Bourges",
+      "fr": "Désiré de Bourges",
+      "es": "Desiderato de Bourges"
+    }
+  },
   "Q5291316": {
     "description": {
       "en": "Christian martyr",
@@ -94540,6 +94714,23 @@
     },
     "wikipedia": {
       "es": "Sisebuto de Cardeña"
+    }
+  },
+  "Q5706385": {
+    "description": {
+      "en": "Saint from Roman Anatolia",
+      "fr": "martyr et saint chrétien"
+    },
+    "born": null,
+    "died": {
+      "year": 358,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Arsacius of Nicomedia",
+      "es": "Arsacio de Nicomedia"
     }
   },
   "Q5712045": {
@@ -97835,6 +98026,26 @@
       "pt": "Sabino de Hermópolis"
     }
   },
+  "Q7400875": {
+    "description": {
+      "en": "Christian Saint martyred in 259",
+      "fr": "martyr et saint chrétien"
+    },
+    "born": {
+      "year": 150,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 259,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Agapius of Spain"
+    }
+  },
   "Q7401077": {
     "description": {
       "en": "Welsh hermit and harpist"
@@ -98146,33 +98357,6 @@
       "en": "Sebastian Newdigate",
       "fr": "Sebastian Newdigate",
       "es": "Sebastián Newdigate"
-    }
-  },
-  "Q7444813": {
-    "description": {
-      "en": "son of the Lombard Restitutus and Dareca, a sister of St. Patrick, and bishop of Domnach",
-      "it": "santo irlandese",
-      "fr": "évêque d'Armagh"
-    },
-    "born": {
-      "year": 372,
-      "precision": "year",
-      "circa": false
-    },
-    "died": {
-      "year": 447,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Seachnall's church.JPG",
-      "author": "Captain Fearnought at en.wikipedia",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
-    },
-    "wikipedia": {
-      "en": "Secundinus",
-      "es": "Secundino"
     }
   },
   "Q7450891": {
@@ -103706,21 +103890,6 @@
       "pt": "Teresa de Santo Agostinho"
     }
   },
-  "Q10381056": {
-    "description": {
-      "en": "Christian writer",
-      "it": "vescovo e santo",
-      "fr": "évêque de Tomis"
-    },
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {
-      "en": "Theotimos (bishop of Tomi)",
-      "es": "Teótimo",
-      "pt": "Teótimo de Tômis"
-    }
-  },
   "Q10390308": {
     "description": {
       "en": "Portuguese monk",
@@ -108170,6 +108339,17 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q11830848": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 200,
+      "precision": "century",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q11833563": {
     "description": {
       "es": "Laico de Acción Católica, padre de familia, mártir y beato."
@@ -108904,34 +109084,6 @@
       "es": "Hermetes de Bononia"
     }
   },
-  "Q12748064": {
-    "description": {
-      "en": "Egyptian monk",
-      "it": "monaco ed eremita egiziano",
-      "fr": "moine chrétien antique"
-    },
-    "born": {
-      "year": 350,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 435,
-      "precision": "decade",
-      "circa": false
-    },
-    "image": {
-      "file": "Heilige Agathon de Zwijgzame Kluizenaars Thebaanse heiligen (serietitel) Agathon Scithiota (titel op object), RP-P-BI-1598.jpg",
-      "author": "Rijksmuseum",
-      "license": "CC0",
-      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
-    },
-    "wikipedia": {
-      "en": "Agathon of Scetis",
-      "it": "Agatone d'Egitto",
-      "fr": "Agathon de Scété"
-    }
-  },
   "Q12803754": {
     "description": {
       "it": "martire cristiano venerato il 24 maggio"
@@ -109397,19 +109549,6 @@
     },
     "wikipedia": {
       "es": "Luis Batis Sáinz"
-    }
-  },
-  "Q13379941": {
-    "description": {
-      "en": "5th bishop of Saint-Paul-Trois-Châteaux",
-      "fr": "évêque de Saint-Paul-Trois-Châteaux"
-    },
-    "born": null,
-    "died": null,
-    "image": null,
-    "wikipedia": {
-      "fr": "Torquat du Tricastin",
-      "es": "Torcuato del Tricastin"
     }
   },
   "Q13522446": {
@@ -114633,6 +114772,16 @@
     "wikipedia": {
       "en": "Solutor"
     }
+  },
+  "Q20901846": {
+    "description": {
+      "en": "Roman man martyred under Velerian in 259",
+      "fr": "martyr et saint chrétien"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
   },
   "Q20901879": {
     "description": {
@@ -120773,22 +120922,6 @@
       "fr": "Edward Thwing"
     }
   },
-  "Q48808820": {
-    "description": {
-      "en": "3rd century Italian Christian martyr"
-    },
-    "born": null,
-    "died": {
-      "year": 269,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Liberato",
-      "it": "Liberale di Roma"
-    }
-  },
   "Q50210729": {
     "description": {
       "en": "8th century saint",
@@ -123194,6 +123327,15 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q85971790": {
+    "description": {
+      "en": "martyr of Tuburbium in Africa under Huneric (484)"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
   "Q85971792": {
     "description": {},
     "born": null,
@@ -123658,6 +123800,15 @@
     "wikipedia": {
       "fr": "Victor de Césarée de Maurétanie"
     }
+  },
+  "Q85978573": {
+    "description": {
+      "fr": "martyr et saint chrétien"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
   },
   "Q85978655": {
     "description": {
@@ -127302,6 +127453,17 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q123705406": {
+    "description": {
+      "en": "martyr in Sardinia with siblings Justina and Henedina",
+      "it": "martire a Cartagine in data imprecisata con i santi Catulino, Fiorenza, Giulia e Gennaro, celebrata il 15 luglio",
+      "fr": "martyr et saint chrétienne"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
   "Q123741151": {
     "description": {
       "it": "martire di Scillum decapitato in Africa nel 180, venerato come santo, le cui reliquie nel VI secolo sarebbero state portate nell'antica Civitas Valeria affinché non venissero profanate dai Vandali"
@@ -130473,8 +130635,7 @@
     "description": {
       "en": "French priest, one of the Fourteen Martyrs of Laval",
       "it": "sacerdote francese, uno dei quattordici martiri di Laval",
-      "fr": "prêtre français, un des quatorze martyrs de Laval",
-      "de": "französischer Priester"
+      "fr": "prêtre français, un des quatorze martyrs de Laval"
     },
     "born": {
       "year": 1736,
@@ -130487,9 +130648,7 @@
       "circa": false
     },
     "image": null,
-    "wikipedia": {
-      "de": "François Duschesne"
-    }
+    "wikipedia": {}
   },
   "Q141894162": {
     "description": {
@@ -143370,6 +143529,60 @@
     },
     "born": null,
     "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141948488": {
+    "description": {
+      "en": "abbot and martyr of Carthage",
+      "it": "abate e martire a Cartagine"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141948489": {
+    "description": {
+      "en": "youth martyr of Caesarea in Palestine",
+      "it": "giovane martire a Cesarea di Palestina"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141948490": {
+    "description": {
+      "en": "martyr at Ratiaria in Moesia",
+      "it": "martire a Ratiaria nella Mesia"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141948492": {
+    "description": {
+      "en": "martyr at Nicomedia with his uncle Anicetus",
+      "it": "martire a Nicomedia con lo zio Aniceto"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141948493": {
+    "description": {
+      "en": "martyr beheaded at Caesarea in Palestine in 304 with Timolaus",
+      "it": "martire decapitato a Cesarea di Palestina nel 304 con Timolao"
+    },
+    "born": null,
+    "died": {
+      "year": 304,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {}
   }
