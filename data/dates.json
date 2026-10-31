@@ -21103,9 +21103,9 @@
    "source": "wikidata"
   },
   "mr:1201-agericus-viroduni": {
-   "to": 1630,
+   "year": 588,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1201-antonius-bonfadini": {
    "year": 1482,
@@ -21113,23 +21113,20 @@
    "source": "wikidata"
   },
   "mr:1201-casimirus-sykulski": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1941,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1201-castritianus-mediolani": {
-   "to": 1630,
+   "from": 201,
+   "to": 300,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1201-clementina-nengapeta-anuarite": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1964,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1201-domnolus-parisiensis": {
    "year": 581,
@@ -21147,21 +21144,30 @@
    "source": "wikidata"
   },
   "mr:1201-florentia-pictavorum": {
-   "from": 301,
-   "to": 400,
-   "circa": true,
+   "year": 367,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1201-helisa-angela-meneguzzi": {
+   "year": 1941,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1201-ioannes-beche": {
    "year": 1539,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1201-nahum-propheta": {
-   "to": -1,
+  "mr:1201-leontius-fori-iulii": {
+   "year": 432,
    "circa": true,
-   "source": "estimate"
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1201-nahum-propheta": {
+   "from": -700,
+   "to": -601,
+   "source": "wikidata"
   },
   "mr:1201-richardus-langley": {
    "year": 1586,
@@ -21169,19 +21175,19 @@
    "source": "wikidata"
   },
   "mr:1202-bibiana-romae": {
-   "to": 1630,
+   "year": 363,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1202-chromatius-aquileiensis": {
-   "to": 1630,
+   "year": 407,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1202-habacuc-propheta": {
-   "to": -1,
-   "circa": true,
-   "source": "estimate"
+   "from": -600,
+   "to": -501,
+   "source": "wikidata"
   },
   "mr:1202-ioannes-ruysbroeck": {
    "year": 1381,
@@ -21198,12 +21204,20 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1202-silverius-papa": {
-   "from": 501,
-   "to": 600,
-   "circa": true,
+  "mr:1202-melchior-chylinski": {
+   "year": 1741,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1202-pimenius-romae": {
+   "year": 362,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1202-silverius-papa": {
+   "year": 537,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1203-birinus-dorcestriensis": {
    "year": 650,
@@ -21226,11 +21240,9 @@
    "source": "wikidata"
   },
   "mr:1203-ioannes-nepomucenus-de-tschiderer": {
-   "from": 1801,
-   "to": 1900,
-   "circa": true,
+   "year": 1860,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1203-lucius-curiae": {
    "to": 1630,
@@ -21238,21 +21250,25 @@
    "source": "edition"
   },
   "mr:1203-sophonias-propheta": {
-   "to": -1,
+   "year": -609,
    "circa": true,
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1204-adolphus-kolping": {
    "year": 1865,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1204-anno-coloniae": {
-   "from": 1001,
-   "to": 1100,
-   "circa": true,
+  "mr:1204-adrehildis-cenomanorum": {
+   "from": 601,
+   "to": 700,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1204-anno-coloniae": {
+   "year": 1075,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1204-barbara-nicomediae": {
    "year": 306,
@@ -21264,9 +21280,9 @@
    "source": "wikidata"
   },
   "mr:1204-felix-bononiae": {
-   "to": 1630,
+   "year": 420,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1204-franciscus-galvez-et-socii": {
    "year": 1623,
@@ -21274,11 +21290,9 @@
    "source": "wikidata"
   },
   "mr:1204-heracla-alexandriae": {
-   "from": 201,
-   "to": 300,
-   "circa": true,
+   "year": 248,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1204-ioannes-calabria": {
    "year": 1954,
@@ -21303,9 +21317,24 @@
    "source": "estimate"
   },
   "mr:1204-osmundus-sarisberiae": {
-   "to": 1630,
+   "year": 1099,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1204-petrus-pectinarius": {
+   "year": 1289,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1204-sigiramnus-longoretensis": {
+   "year": 655,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1204-sola-ellwangensis": {
+   "year": 794,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1205-bartholomaeus-fanti": {
    "year": 1495,
@@ -21313,28 +21342,33 @@
    "source": "wikidata"
   },
   "mr:1205-crispina-thagorensis": {
-   "to": 1630,
+   "year": 304,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1205-geraldus-bracarae": {
+   "year": 1108,
+   "source": "wikidata"
   },
   "mr:1205-ioannes-almond": {
    "year": 1612,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1205-narcissus-putz": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+  "mr:1205-lucidus-aquarae": {
+   "year": 1038,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1205-narcissus-putz": {
+   "year": 1942,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1205-nicolaus-stensen": {
-   "from": 1601,
-   "to": 1700,
-   "circa": true,
+   "year": 1686,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1205-philippus-rinaldi": {
    "year": 1931,
@@ -21342,9 +21376,14 @@
    "source": "wikidata"
   },
   "mr:1205-sabas-hierosolymorum": {
-   "to": 1630,
+   "year": 532,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1206-aloysia-maria-frias-canizares": {
+   "year": 1936,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1206-asella-romae": {
    "year": 405,
@@ -21356,17 +21395,14 @@
    "source": "wikidata"
   },
   "mr:1206-martyres-africae": {
-   "from": 401,
-   "to": 500,
-   "circa": true,
-   "source": "estimate"
+   "year": 484,
+   "source": "wikidata"
   },
   "mr:1206-nicolaus-myrensis": {
    "from": 301,
    "to": 400,
-   "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1206-obitius-brixiae": {
    "year": 1204,
@@ -21393,14 +21429,19 @@
    "source": "wikidata"
   },
   "mr:1207-fara-eboriaci": {
-   "to": 1630,
+   "year": 656,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1207-ioannes-silentiarius": {
-   "to": 1630,
+   "year": 558,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1207-sabinus-spoleti": {
+   "year": 303,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1207-urbanus-theani": {
    "to": 1630,
@@ -21417,9 +21458,10 @@
    "source": "edition"
   },
   "mr:1208-eucharius-trevirorum": {
-   "to": 1630,
+   "from": 201,
+   "to": 300,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1208-eutychianus-papa": {
    "year": 283,
@@ -21437,6 +21479,11 @@
    "circa": true,
    "source": "estimate"
   },
+  "mr:1208-narcissa-a-iesu-martillo-moran": {
+   "year": 1869,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1208-natalis-chabanel": {
    "year": 1649,
    "basis": "death",
@@ -21447,28 +21494,34 @@
    "source": "edition"
   },
   "mr:1208-romaricus-luxoviensis": {
-   "to": 1630,
+   "year": 653,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1208-theobaldus-de-marliaco": {
+   "year": 1247,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1209-caesar-silvestrelli": {
+   "year": 1911,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1209-cyprianus-genoliacensis": {
-   "to": 1630,
+   "year": 586,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1209-gorgonia-nazianzi": {
-   "from": 301,
-   "to": 400,
-   "circa": true,
+   "year": 372,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1209-ioannes-didacus-cuauhtlatoatzin": {
-   "from": 1501,
-   "to": 1600,
-   "circa": true,
+   "year": 1548,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1209-iosephus-ferrer-esteve": {
    "year": 1936,
@@ -21491,23 +21544,20 @@
    "source": "wikidata"
   },
   "mr:1209-richardus-de-los-rios-fabregat-et-socii": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1936,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1209-syrus-papiae": {
-   "to": 1630,
+   "from": 301,
+   "to": 400,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1936,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1210-edmundus-gennings-et-swithinus-wells": {
    "year": 1591,
@@ -21515,31 +21565,32 @@
    "source": "wikidata"
   },
   "mr:1210-eulalia-emeritae": {
-   "to": 1630,
+   "year": 304,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1210-gemellus-ancyrae": {
-   "to": 1630,
+   "year": 362,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1210-gregorius-iii": {
-   "from": 701,
-   "to": 800,
-   "circa": true,
+   "year": 741,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1210-gundisalvus-vines-masip": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1936,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1210-ioannes-roberts": {
    "year": 1610,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1210-lucas-de-insula": {
+   "year": 1114,
    "basis": "death",
    "source": "wikidata"
   },
@@ -21569,14 +21620,17 @@
    "source": "wikidata"
   },
   "mr:1211-david-himmerodensis": {
-   "from": 1101,
-   "to": 1200,
-   "circa": true,
+   "year": 1179,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1211-francus-lippi": {
    "year": 1291,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1211-hieronymus-tiferni": {
+   "year": 1466,
    "basis": "death",
    "source": "wikidata"
   },
@@ -21585,27 +21639,62 @@
    "basis": "death",
    "source": "wikidata"
   },
+  "mr:1211-maria-a-columna-villalonga-villalba": {
+   "year": 1936,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1211-martinus-lumbreras-peralta-et-melchior-sanchez-perez": {
    "year": 1632,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1211-sabinus-placentiae": {
-   "to": 1630,
+  "mr:1211-mirabilia-a-iesu": {
+   "year": 1974,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1211-sabinus-placentiae": {
+   "year": 420,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1211-victoricus-et-fuscianus": {
-   "to": 1630,
+   "year": 303,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1212-bartholus-buonpedoni": {
+   "year": 1300,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1212-conradus-de-ophyda": {
+   "year": 1306,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1212-corentinus-coriosopiti": {
+   "year": 460,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1212-epimachus-et-alexander": {
    "year": 251,
    "source": "wikidata"
   },
+  "mr:1212-finnianus-clonardiae": {
+   "year": 549,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1212-iacobus-capocci": {
    "year": 1308,
+   "source": "wikidata"
+  },
+  "mr:1212-israel-dorati": {
+   "year": 1014,
+   "basis": "death",
    "source": "wikidata"
   },
   "mr:1212-maria-de-guadalupe": {
@@ -21615,11 +21704,9 @@
    "source": "estimate"
   },
   "mr:1212-pius-bartosik": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1941,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1212-simon-phan-dac-hoa": {
    "year": 1840,
@@ -21627,11 +21714,9 @@
    "source": "wikidata"
   },
   "mr:1212-spyridon-cypri": {
-   "from": 301,
-   "to": 400,
-   "circa": true,
+   "year": 348,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1212-vicelinus-oldenburgensis": {
    "year": 1154,
@@ -21639,14 +21724,19 @@
    "source": "wikidata"
   },
   "mr:1213-antiochus-sulcorum": {
-   "to": 1630,
+   "year": 127,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1213-antonius-grassus": {
+   "year": 1671,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1213-autbertus-cameracensis": {
-   "to": 1630,
+   "year": 669,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1213-eustratius-et-socii": {
    "to": 1630,
@@ -21664,23 +21754,20 @@
    "source": "wikidata"
   },
   "mr:1213-iudocus-neustriae": {
-   "to": 1630,
+   "year": 668,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1213-lucia-syracusis": {
-   "from": 201,
-   "to": 300,
-   "circa": true,
+   "year": 304,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1213-othilia-altitonensis": {
-   "from": 601,
-   "to": 700,
+   "year": 720,
    "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1213-petrus-cho-hwa-so-et-socii": {
    "year": 1866,
@@ -21698,11 +21785,15 @@
    "source": "wikidata"
   },
   "mr:1214-bonaventura-de-pistorio": {
-   "from": 1201,
-   "to": 1300,
+   "year": 1315,
    "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1214-folcuinus-taruannensis": {
+   "year": 855,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1214-francisca-schervier": {
    "year": 1876,
@@ -21720,38 +21811,54 @@
    "source": "wikidata"
   },
   "mr:1214-nicasius-remorum": {
-   "to": 1630,
+   "year": 407,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1214-nimatullacius-al-hardini": {
+   "year": 1858,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1214-pompeius-papiae": {
-   "to": 1630,
+   "year": 290,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1214-thyrsus-et-socii": {
-   "from": 201,
-   "to": 300,
-   "circa": true,
+   "year": 251,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1214-venantius-fortunatus": {
-   "from": 501,
-   "to": 600,
-   "circa": true,
+   "year": 609,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1215-carolus-steeb": {
    "year": 1856,
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1215-maximinus-miciacensis": {
-   "to": 1630,
+  "mr:1215-maria-crucifixa-de-rosa": {
+   "year": 1855,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1215-maria-victoria-fornari": {
+   "year": 1617,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1215-marinus-cavensis": {
+   "year": 1170,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1215-maximinus-miciacensis": {
+   "year": 520,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1215-valerianus-avensanus": {
    "from": 401,
@@ -21764,12 +21871,15 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1216-ado-viennae": {
-   "from": 801,
-   "to": 900,
-   "circa": true,
+  "mr:1216-adalheidis-elizatii": {
+   "year": 999,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1216-ado-viennae": {
+   "year": 875,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1216-beanus-hiberniae": {
    "to": 1630,
@@ -21778,6 +21888,21 @@
   },
   "mr:1216-clemens-marchisio": {
    "year": 1903,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1216-everardus-cisonii": {
+   "year": 866,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1216-florentius-kazminsky": {
+   "year": 1916,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1216-macarius-de-collesano": {
+   "year": 1005,
    "basis": "death",
    "source": "wikidata"
   },
@@ -21797,8 +21922,17 @@
    "circa": true,
    "source": "estimate"
   },
+  "mr:1216-salvaticus-de-madiis": {
+   "year": 1496,
+   "source": "wikidata"
+  },
   "mr:1217-begga-andennarum": {
    "year": 693,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1217-henricus-cormier": {
+   "year": 1916,
    "basis": "death",
    "source": "wikidata"
   },
@@ -21812,12 +21946,20 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1217-mathildis-a-sacro-corde": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+  "mr:1217-iudicael-britanniae-minoris": {
+   "year": 658,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1217-mathildis-a-sacro-corde": {
+   "year": 1902,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1217-modestus-hierosolymorum": {
+   "year": 634,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1217-quinquaginta-milites-eleutheropolis": {
    "from": 601,
@@ -21832,9 +21974,9 @@
    "source": "wikidata"
   },
   "mr:1217-wiwina-bigardorum": {
-   "to": 1630,
+   "year": 1168,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1218-gatianus-turonum": {
    "year": 301,
@@ -21852,11 +21994,9 @@
    "source": "wikidata"
   },
   "mr:1218-winebaldus-heidenheimensis": {
-   "from": 701,
-   "to": 800,
-   "circa": true,
+   "year": 761,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1219-anastasius-i": {
    "year": 401,
@@ -21869,16 +22009,19 @@
    "source": "wikidata"
   },
   "mr:1219-gregorius-autissiodori": {
-   "to": 1630,
+   "year": 528,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1219-gulielmus-de-fenolis": {
+   "year": 1120,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1942,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1219-urbanus-v": {
    "year": 1370,
@@ -21886,23 +22029,25 @@
    "source": "wikidata"
   },
   "mr:1220-dominicus-exiliensis": {
-   "to": 1914,
+   "year": 1073,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1220-michael-piaszczynski": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1940,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1220-philogonius-antiochiae": {
-   "from": 301,
-   "to": 400,
+   "year": 324,
    "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1220-ursicinus-iurae": {
+   "year": 625,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1220-vincentius-romano": {
    "year": 1831,
@@ -21924,6 +22069,10 @@
    "basis": "death",
    "source": "wikidata"
   },
+  "mr:1221-michaeas-propheta": {
+   "year": -670,
+   "source": "wikidata"
+  },
   "mr:1221-petrus-canisius": {
    "year": 1597,
    "basis": "death",
@@ -21935,11 +22084,9 @@
    "source": "wikidata"
   },
   "mr:1221-themistocles-lyciae": {
-   "from": 201,
-   "to": 300,
-   "circa": true,
+   "year": 251,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1222-chaeremon-et-socii": {
    "from": 201,
@@ -21948,11 +22095,9 @@
    "source": "estimate"
   },
   "mr:1222-francisca-xaveria-cabrini": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1917,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1222-hungerus-ultraiecti": {
    "year": 866,
@@ -21964,20 +22109,27 @@
    "source": "wikidata"
   },
   "mr:1222-thomas-holland": {
-   "from": 1601,
-   "to": 1700,
-   "circa": true,
+   "year": 1642,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1222-triginta-martyres-romae": {
    "to": 1630,
    "basis": "death",
    "source": "edition"
   },
+  "mr:1223-antonius-galvao-de-franca": {
+   "year": 1822,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1223-hartmannus-brixinae": {
    "year": 1164,
    "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1223-ioannes-de-kety": {
+   "year": 1473,
    "source": "wikidata"
   },
   "mr:1223-ioannes-stone": {
@@ -21989,12 +22141,16 @@
    "basis": "death",
    "source": "wikidata"
   },
-  "mr:1223-maria-margarita": {
-   "from": 1701,
-   "to": 1800,
+  "mr:1223-ivo-carnuti": {
+   "year": 1116,
    "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1223-maria-margarita": {
+   "year": 1771,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1223-nicolaus-factor": {
    "year": 1583,
@@ -22002,22 +22158,18 @@
    "source": "wikidata"
   },
   "mr:1223-paulus-melendez-gonzalo": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1936,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1223-servulus-romae": {
    "year": 590,
    "source": "wikidata"
   },
   "mr:1223-theodulus-et-socii": {
-   "from": 201,
-   "to": 300,
-   "circa": true,
+   "year": 250,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1223-thorlacus-skalholtensis": {
    "year": 1193,
@@ -22040,19 +22192,20 @@
    "source": "wikidata"
   },
   "mr:1224-delphinus-burdigalae": {
-   "to": 1630,
+   "year": 404,
+   "circa": true,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1224-ioannes-de-kety": {
-   "to": 1914,
+   "year": 1473,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1224-irmina-horreensis": {
-   "to": 1630,
+   "year": 716,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1224-sarbelius-makhluf": {
    "year": 1898,
@@ -22073,10 +22226,16 @@
    "year": 304,
    "source": "wikidata"
   },
-  "mr:1225-eugenia-romae": {
-   "to": 1630,
+  "mr:1225-bentivolius-de-bonis": {
+   "year": 1232,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1225-eugenia-romae": {
+   "year": 262,
+   "circa": true,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1225-iovinus-et-basileus": {
    "to": 1630,
@@ -22084,11 +22243,14 @@
    "source": "edition"
   },
   "mr:1225-maria-teresia-von-wullenweber": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1907,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1225-michael-nakashima": {
+   "year": 1628,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1225-nativitas-domini": {
    "to": 1630,
@@ -22111,43 +22273,49 @@
    "source": "wikidata"
   },
   "mr:1226-euthymius-sardium": {
-   "from": 801,
-   "to": 900,
-   "circa": true,
+   "year": 831,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1226-secundus-pollo": {
-   "from": 1901,
-   "to": 2000,
-   "circa": true,
+   "year": 1941,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:1226-stephanus-hierosolymorum": {
-   "from": 1,
-   "to": 100,
+   "year": 36,
    "circa": true,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1226-vincentia-maria-lopez-vicuna": {
+   "year": 1890,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1226-zeno-maiumae": {
    "to": 1630,
    "source": "edition"
   },
   "mr:1226-zosimus-papa": {
-   "to": 1630,
+   "year": 418,
    "basis": "deposition",
-   "source": "edition"
+   "source": "wikidata"
+  },
+  "mr:1227-alaphridus-parte": {
+   "year": 1936,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1227-fabiola-romae": {
    "year": 399,
    "source": "wikidata"
   },
   "mr:1227-ioannes-apostolus-et-evangelista": {
-   "to": 1630,
+   "year": 99,
+   "circa": true,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1227-iosephus-maria-corbin-ferrer": {
    "year": 1936,
@@ -22155,13 +22323,16 @@
    "source": "wikidata"
   },
   "mr:1227-theodorus-graptus": {
-   "to": 1630,
+   "from": 844,
+   "to": 845,
+   "circa": true,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1228-antonius-lirini": {
-   "to": 1630,
-   "source": "edition"
+   "from": 520,
+   "to": 529,
+   "source": "wikidata"
   },
   "mr:1228-catharina-volpicelli": {
    "year": 1894,
@@ -22178,12 +22349,27 @@
    "basis": "death",
    "source": "wikidata"
   },
+  "mr:1228-gregorius-khomysyn": {
+   "year": 1947,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1228-innocentes": {
    "from": 1,
    "to": 100,
    "circa": true,
    "basis": "death",
    "source": "estimate"
+  },
+  "mr:1228-matthias-de-nazareis": {
+   "year": 1319,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1228-theona-alexandriae": {
+   "year": 300,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1229-benedicta-hyon-kyong-nyon-et-socii": {
    "from": 1839,
@@ -22192,14 +22378,13 @@
    "source": "wikidata"
   },
   "mr:1229-david-rex-et-propheta": {
-   "to": -1,
-   "circa": true,
-   "source": "estimate"
+   "year": -969,
+   "source": "wikidata"
   },
   "mr:1229-ebrulfus-uticensis": {
-   "to": 1630,
+   "year": 706,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1229-gerardus-cagnoli": {
    "year": 1342,
@@ -22216,20 +22401,25 @@
    "basis": "death",
    "source": "wikidata"
   },
+  "mr:1229-ioannes-baptista-ferreres-boluda": {
+   "year": 1936,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1229-iosephus-aparicio-sanz": {
    "year": 1936,
    "basis": "death",
    "source": "wikidata"
   },
   "mr:1229-marcellus-constantinopoli": {
-   "to": 1630,
+   "year": 485,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1229-martinianus-mediolani": {
-   "to": 1630,
+   "year": 435,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1229-thomas-becket": {
    "year": 1170,
@@ -22237,15 +22427,14 @@
    "source": "wikidata"
   },
   "mr:1229-trophimus-arelatis": {
-   "to": 1630,
+   "from": 201,
+   "to": 300,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1230-anysius-thessalonicensis": {
-   "from": 301,
-   "to": 400,
-   "circa": true,
-   "source": "estimate"
+   "year": 407,
+   "source": "wikidata"
   },
   "mr:1230-egwinus-eveshamii": {
    "year": 717,
@@ -22263,9 +22452,9 @@
    "source": "wikidata"
   },
   "mr:1230-geremarus-flaviae": {
-   "to": 1630,
+   "year": 658,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1230-hermes-bononiae": {
    "from": 301,
@@ -22278,20 +22467,30 @@
    "basis": "death",
    "source": "wikidata"
   },
+  "mr:1230-iucundus-augustae-praetoriae": {
+   "year": 523,
+   "basis": "death",
+   "source": "wikidata"
+  },
+  "mr:1230-laurentius-fraxanonis": {
+   "year": 1162,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:1230-margarita-colonna": {
    "year": 1280,
    "basis": "death",
    "source": "wikidata"
   },
   "mr:1230-perpetuus-turonum": {
-   "to": 1630,
+   "year": 490,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1230-rainerius-furconensis": {
-   "to": 1630,
+   "year": 1077,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1230-rogerius-cannarum": {
    "year": 1129,
@@ -22304,9 +22503,10 @@
    "source": "wikidata"
   },
   "mr:1231-barbatianus-ravennae": {
-   "to": 1630,
+   "from": 401,
+   "to": 500,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1231-catharina-laboure": {
    "year": 1876,
@@ -22314,9 +22514,9 @@
    "source": "wikidata"
   },
   "mr:1231-columba-senonum": {
-   "to": 1630,
+   "year": 273,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1231-donata-et-socii": {
    "to": 1630,
@@ -22324,16 +22524,20 @@
    "source": "edition"
   },
   "mr:1231-ioannes-franciscus-regis": {
-   "from": 1601,
-   "to": 1700,
-   "circa": true,
+   "year": 1640,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
+  },
+  "mr:1231-marius-lausannensis": {
+   "year": 596,
+   "basis": "death",
+   "source": "wikidata"
   },
   "mr:1231-melania-hierosolymorum": {
-   "to": 1630,
+   "from": 420,
+   "to": 439,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:1231-silvester-i": {
    "year": 335,
@@ -22341,9 +22545,9 @@
    "source": "wikidata"
   },
   "mr:1231-zoticus-constantinopoli": {
-   "to": 1630,
+   "year": 350,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   }
  }
 }
