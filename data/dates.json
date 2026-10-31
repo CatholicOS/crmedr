@@ -562,8 +562,7 @@
    "source": "wikidata"
   },
   "mr:0110-agathon-papa": {
-   "from": 430,
-   "to": 439,
+   "year": 681,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -988,7 +987,7 @@
    "source": "wikidata"
   },
   "mr:0116-honoratus-arelatis": {
-   "year": 530,
+   "year": 430,
    "basis": "death",
    "source": "wikidata"
   },
@@ -1299,7 +1298,8 @@
    "source": "wikidata"
   },
   "mr:0121-publius-athenarum": {
-   "year": 380,
+   "from": 101,
+   "to": 200,
    "source": "wikidata"
   },
   "mr:0122-anastasius-sergiopolis": {
@@ -4472,8 +4472,8 @@
    "source": "wikidata"
   },
   "mr:0320-archippus-commilito": {
-   "from": -500,
-   "to": -401,
+   "from": 1,
+   "to": 100,
    "source": "wikidata"
   },
   "mr:0320-baptista-spagnoli": {
@@ -4731,7 +4731,7 @@
    "source": "edition"
   },
   "mr:0324-timolaus-et-socii": {
-   "year": 306,
+   "year": 304,
    "basis": "death",
    "source": "wikidata"
   },
@@ -7139,8 +7139,7 @@
    "source": "wikidata"
   },
   "mr:0504-agapius-et-secundinus": {
-   "from": 306,
-   "to": 447,
+   "year": 259,
    "source": "wikidata"
   },
   "mr:0504-antonina-niceae": {
@@ -7401,7 +7400,7 @@
    "source": "wikidata"
   },
   "mr:0508-desideratus-biturigum": {
-   "year": 554,
+   "year": 550,
    "basis": "death",
    "source": "wikidata"
   },
@@ -7665,7 +7664,7 @@
    "source": "wikidata"
   },
   "mr:0512-pancratius-romae": {
-   "year": 40,
+   "year": 304,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -7747,8 +7746,7 @@
    "source": "wikidata"
   },
   "mr:0514-iusta-et-heredina": {
-   "from": 130,
-   "to": 287,
+   "year": 130,
    "source": "wikidata"
   },
   "mr:0514-maria-dominica-mazzarello": {
@@ -10107,7 +10105,7 @@
    "source": "wikidata"
   },
   "mr:0622-flavius-clemens": {
-   "year": 99,
+   "year": 95,
    "source": "wikidata"
   },
   "mr:0622-innocentius-v": {
@@ -10677,8 +10675,7 @@
    "source": "wikidata"
   },
   "mr:0702-liberatus-et-socii": {
-   "from": 269,
-   "to": 483,
+   "year": 483,
    "source": "wikidata"
   },
   "mr:0702-lidanus-setiae": {
@@ -11582,8 +11579,7 @@
    "source": "wikidata"
   },
   "mr:0715-gumbertus-anspachii": {
-   "year": 676,
-   "circa": true,
+   "year": 795,
    "basis": "death",
    "source": "wikidata"
   },
@@ -13999,8 +13995,7 @@
    "source": "wikidata"
   },
   "mr:0816-arsacius-nicomediae": {
-   "from": 401,
-   "to": 500,
+   "year": 358,
    "source": "wikidata"
   },
   "mr:0816-frambaldus-cenomanensis": {
@@ -14814,7 +14809,7 @@
    "source": "wikidata"
   },
   "mr:0827-gebhardus-constantiensis": {
-   "year": 1088,
+   "year": 995,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -15290,8 +15285,7 @@
    "source": "wikidata"
   },
   "mr:0902-iustus-lugduni": {
-   "from": 287,
-   "to": 390,
+   "year": 390,
    "basis": "deposition",
    "source": "wikidata"
   },
@@ -17093,7 +17087,7 @@
    "source": "wikidata"
   },
   "mr:0928-eustochius-bethlehem": {
-   "year": 461,
+   "year": 420,
    "source": "wikidata"
   },
   "mr:0928-exsuperius-tolosae": {
@@ -17696,7 +17690,7 @@
    "source": "wikidata"
   },
   "mr:1006-magnus-opitergii": {
-   "year": 756,
+   "year": 670,
    "source": "wikidata"
   },
   "mr:1006-maria-rosa-durocher": {
@@ -21862,10 +21856,8 @@
    "source": "wikidata"
   },
   "mr:1215-valerianus-avensanus": {
-   "from": 401,
-   "to": 500,
-   "circa": true,
-   "source": "estimate"
+   "year": 457,
+   "source": "wikidata"
   },
   "mr:1215-virginia-centurione-bracelli": {
    "year": 1651,

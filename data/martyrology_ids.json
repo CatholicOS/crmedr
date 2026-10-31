@@ -3714,8 +3714,7 @@
         }
       ],
       "date": {
-        "from": 430,
-        "to": 439,
+        "year": 681,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -6096,7 +6095,7 @@
         }
       ],
       "date": {
-        "year": 530,
+        "year": 430,
         "basis": "death",
         "source": "wikidata"
       },
@@ -7815,7 +7814,8 @@
         }
       ],
       "date": {
-        "year": 380,
+        "from": 101,
+        "to": 200,
         "source": "wikidata"
       }
     },
@@ -27509,8 +27509,8 @@
         }
       ],
       "date": {
-        "from": -500,
-        "to": -401,
+        "from": 1,
+        "to": 100,
         "source": "wikidata"
       }
     },
@@ -28919,7 +28919,7 @@
         }
       ],
       "date": {
-        "year": 306,
+        "year": 304,
         "basis": "death",
         "source": "wikidata"
       }
@@ -43694,8 +43694,7 @@
         }
       ],
       "date": {
-        "from": 306,
-        "to": 447,
+        "year": 259,
         "source": "wikidata"
       },
       "edition_notes": {
@@ -45338,7 +45337,7 @@
         }
       ],
       "date": {
-        "year": 554,
+        "year": 550,
         "basis": "death",
         "source": "wikidata"
       }
@@ -46834,7 +46833,7 @@
         }
       ],
       "date": {
-        "year": 40,
+        "year": 304,
         "basis": "deposition",
         "source": "wikidata"
       },
@@ -47459,8 +47458,7 @@
         }
       ],
       "date": {
-        "from": 130,
-        "to": 287,
+        "year": 130,
         "source": "wikidata"
       }
     },
@@ -62070,7 +62068,7 @@
         }
       ],
       "date": {
-        "year": 99,
+        "year": 95,
         "source": "wikidata"
       }
     },
@@ -65479,8 +65477,7 @@
         }
       ],
       "date": {
-        "from": 269,
-        "to": 483,
+        "year": 483,
         "source": "wikidata"
       }
     },
@@ -71055,8 +71052,7 @@
         }
       ],
       "date": {
-        "year": 676,
-        "circa": true,
+        "year": 795,
         "basis": "death",
         "source": "wikidata"
       }
@@ -85546,8 +85542,7 @@
         }
       ],
       "date": {
-        "from": 401,
-        "to": 500,
+        "year": 358,
         "source": "wikidata"
       }
     },
@@ -90594,7 +90589,7 @@
         }
       ],
       "date": {
-        "year": 1088,
+        "year": 995,
         "basis": "deposition",
         "source": "wikidata"
       },
@@ -93297,8 +93292,7 @@
         }
       ],
       "date": {
-        "from": 287,
-        "to": 390,
+        "year": 390,
         "basis": "deposition",
         "source": "wikidata"
       }
@@ -104203,7 +104197,7 @@
         }
       ],
       "date": {
-        "year": 461,
+        "year": 420,
         "source": "wikidata"
       }
     },
@@ -107866,7 +107860,7 @@
         }
       ],
       "date": {
-        "year": 756,
+        "year": 670,
         "source": "wikidata"
       },
       "edition_notes": {
@@ -133691,10 +133685,8 @@
         }
       ],
       "date": {
-        "from": 401,
-        "to": 500,
-        "circa": true,
-        "source": "estimate"
+        "year": 457,
+        "source": "wikidata"
       }
     },
     {
