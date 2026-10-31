@@ -5277,7 +5277,7 @@ def validate_editions(entries):
 # `id`, the placement (`month`, `day`, `entry`, `asterisk`, `unnumbered`,
 # `also_on`, `editions`) and the links between current IDs (`same_eulogy`);
 # the rest is derived on every run.
-KEY_ORDER = ("id", "month", "day", "entry", "asterisk", "country", "typology", "places", "date", "note",
+KEY_ORDER = ("id", "month", "day", "entry", "asterisk", "country", "typology", "places", "date", "item", "note",
              "unnumbered", "also_on", "edition_notes", "editions", "same_eulogy")
 SOURCE_KEYS = ("id", "month", "day", "entry", "asterisk", "country", "unnumbered", "also_on",
                "editions", "same_eulogy")
@@ -5420,6 +5420,29 @@ def add_dates(entries, dates):
             else {k: v for k, v in e.items() if k != "date"} for e in entries]
 
 
+def load_items(repo_root, current_ids):
+    """The optional Wikidata item of each current eulogy that does not commemorate a single
+    person (data/eulogy_items.json, curated; scripts/build_eulogy_items.py). Missing file: none."""
+    path = repo_root / "data" / "eulogy_items.json"
+    if not path.exists():
+        return {}
+    items = json.load(open(path, encoding="utf-8"))["items"]
+    assert set(items) <= set(current_ids), (
+        "data/eulogy_items.json has IDs that are not current: run python3 scripts/build_eulogy_items.py check. "
+        + RECOVERY)
+    return items
+
+
+def add_items(entries, items):
+    """Insert "item" ({wikidata, kind}) after "date" for the entries with a reviewed item; an entry
+    without one (unresolved, the Marian title decision, an `auto` suggestion not yet reviewed) gets none."""
+    def item(mrid):
+        x = items.get(mrid) or {}
+        return {"wikidata": x["wikidata"], "kind": x["kind"]} if x.get("wikidata") and x.get("status") == "reviewed" else None
+    return [with_key(e, "item", item(e["id"])) if item(e["id"])
+            else {k: v for k, v in e.items() if k != "item"} for e in entries]
+
+
 def write_json(entries, deprecated, repo_root):
     out = {
         "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. "
@@ -5431,7 +5454,8 @@ def write_json(entries, deprecated, repo_root):
                     "country is the modern country of its opening place (data/gazetteer.json), "
                     "else data/countries_curated.json; a Holy Land place is IL or PS by where it lies today "
                     "(scripts/registry_places.py). Each current entry's optional date "
-                    "comes from data/dates.json (scripts/extract_dates.py).",
+                    "comes from data/dates.json (scripts/extract_dates.py). Each current entry's optional item "
+                    "comes from data/eulogy_items.json (scripts/build_eulogy_items.py).",
         "anchor_edition": "martyrologium_romanum_editio_altera_2004",
         "id_scheme": "mr:MMDD-slug",
         "entry_count": len(entries) + len(deprecated),
@@ -5517,6 +5541,7 @@ def build(repo_root):
         check_place_roles(places, typology)
     entries = add_dates(add_places(add_typology(entries, typology), places),
                         load_dates(repo_root, current_ids))
+    entries = add_items(entries, load_items(repo_root, current_ids))
     import registry_places  # the countries (#12)
     gazetteer_path = repo_root / "data" / "gazetteer.json"
     gazetteer = json.load(open(gazetteer_path, encoding="utf-8"))["places"] if gazetteer_path.exists() else {}

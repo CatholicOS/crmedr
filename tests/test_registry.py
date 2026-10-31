@@ -59,6 +59,32 @@ class RegistryDatesTest(unittest.TestCase):
             self.assertEqual(r.load_dates(Path(d), {"mr:0101-fictitius"}), {})
 
 
+class RegistryItemsTest(unittest.TestCase):
+    ITEMS = {"mr:0101-fictitius": {"wikidata": "Q1", "kind": "group", "status": "reviewed"},
+             "mr:0101-alter": {"wikidata": None, "status": "unresolved", "note": "n"}}
+
+    def test_item_copied_after_date(self):
+        e = r.with_key(dict(ENTRY), "date", {"year": 304})
+        other = dict(ENTRY, id="mr:0101-alter")
+        out = r.add_items([e, other], self.ITEMS)
+        self.assertEqual(out[0]["item"], {"wikidata": "Q1", "kind": "group"})
+        keys = list(out[0])
+        self.assertEqual(keys[keys.index("date") + 1], "item")
+        self.assertNotIn("item", out[1])
+
+    def test_an_auto_suggestion_is_not_copied(self):
+        auto = {"mr:0101-fictitius": {"wikidata": "Q1", "kind": "group", "status": "auto"}}
+        self.assertNotIn("item", r.add_items([dict(ENTRY)], auto)[0])
+
+    def test_items_for_unknown_ids_fail(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "data").mkdir()
+            (Path(d) / "data" / "eulogy_items.json").write_text(
+                json.dumps({"items": {"mr:0101-other": self.ITEMS["mr:0101-fictitius"]}}), encoding="utf-8")
+            with self.assertRaisesRegex(AssertionError, "build_eulogy_items"):
+                r.load_items(Path(d), {"mr:0101-fictitius"})
+
+
 class RegistryTypologyTest(unittest.TestCase):
     def test_add_typology_inserts_after_country(self):
         out = r.add_typology([dict(ENTRY)], {"mr:0101-fictitius": "depositio"})
