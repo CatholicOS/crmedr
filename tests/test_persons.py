@@ -542,11 +542,11 @@ class VariantsTest(unittest.TestCase):
 
     def test_a_curated_variant_corrects_an_extracted_spelling(self):
         import extract_persons as ep
-        by_id = {"mr:0515-caleb": [{"name": "Caleb", "also": ["Elésbaan"], "where": "text"}]}
-        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0515-caleb": {"Caleb": ["Elesbaan"]}}), [])
-        self.assertEqual(by_id["mr:0515-caleb"][0]["also"], ["Elesbaan"])
-        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb": {"Caleb": ["Abba", "Abba"]}}))
-        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb": ["Abba"]}))
+        by_id = {"mr:0515-caleb-aethiopiae": [{"name": "Caleb", "also": ["Elésbaan"], "where": "text"}]}
+        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0515-caleb-aethiopiae": {"Caleb": ["Elesbaan"]}}), [])
+        self.assertEqual(by_id["mr:0515-caleb-aethiopiae"][0]["also"], ["Elesbaan"])
+        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb-aethiopiae": {"Caleb": ["Abba", "Abba"]}}))
+        self.assertTrue(ep.apply_curated_variants(by_id, {"mr:0515-caleb-aethiopiae": ["Abba"]}))
 
     def test_an_unread_footnote_variant_is_reported(self):
         import extract_persons as ep

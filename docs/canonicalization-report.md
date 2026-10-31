@@ -71,7 +71,7 @@ editions (July 2026), independently of the digitized workbook:
 Asterisked in the Latin print, no asterisk in the CEI edition (23):
 mr:0104-ferreolus (4\*), mr:0104-rigomerus (5\*), mr:0104-pharaildis (7\*),
 mr:0122-ladislaus-batthyany-strattmann (15\*), mr:0502-boleslaus-strzelecki (12\*),
-mr:0512-imelda-lambertini (10\*), mr:0524-servulus (4\*), mr:0611-bardo (4\*),
+mr:0512-imelda-lambertini (10\*), mr:0524-servulus-tergestis (4\*), mr:0611-bardo (4\*),
 mr:0624-gohardus (7\*) — note: the earlier draft called this entry "Goardo" without a date;
 it is Gohardus of Nantes at June 24, not Goar of the Rhine (July 6, plain 7.) nor
 Agoardus (June 24, plain 4.), both of which were visually confirmed unasterisked —
@@ -362,10 +362,10 @@ subject after any place named after a saint. Renamed (not deprecated), each in
 | mr:0413-maria-de-capella | mr:0413-ida-boloniensis | Bl. Ida of Boulogne (another Ida is mr:0413-ida-vallis-rosarum) |
 | mr:0419-bertinus | mr:0419-bernardus-paenitens | Bl. Bernard the Penitent |
 | mr:0426-isidorus-de-duenas | mr:0426-raphael-arnaiz-baron | Bl. Raphael Arnáiz Barón |
-| mr:0502-gallus | mr:0502-wiborada | St Wiborada |
+| mr:0502-gallus | mr:0502-wiborada-sancti-galli | St Wiborada |
 | mr:0508-maria-della-serra | mr:0508-angelus-de-massatio | Bl. Angelo of Massaccio |
 | mr:0524-hyacinthus | mr:0524-ludovicus-zephyrinus-moreau | Bl. Louis-Zéphirin Moreau |
-| mr:0526-papulus | mr:0526-berengarius | St Berengar |
+| mr:0526-papulus | mr:0526-berengarius-sancti-papuli | St Berengar |
 | mr:0603-maria-de-cadossa | mr:0603-conus | St Conus |
 | mr:0620-iacobus-fodiensi | mr:0620-ioannes-de-mateola | St John of Matera (printed *de Matéola*) |
 | mr:0705-maria-de-terreto | mr:0705-thomas | St Thomas, abbot |
@@ -427,8 +427,8 @@ the slugs.
 | mr:0424-gulielmus-firmati | mr:0424-gulielmus-firmatus |
 | mr:0425-pasicratis-et-valentio | mr:0425-pasicrates-et-valentio |
 | mr:0426-paschasius-radberti | mr:0426-paschasius-radbertus |
-| mr:0505-sacerdotis | mr:0505-sacerdos |
-| mr:0522-humilitatis | mr:0522-humilitas |
+| mr:0505-sacerdotis | mr:0505-sacerdos-lemovicum |
+| mr:0522-humilitatis | mr:0522-humilitas-florentiae |
 | mr:0603-ioannes-vigesimi-iii | mr:0603-ioannes-xxiii |
 | mr:0705-athanasius-hierosolymitani | mr:0705-athanasius-hierosolymitanus |
 | mr:0712-ioannes-gualberti | mr:0712-ioannes-gualbertus |
@@ -846,10 +846,10 @@ counterpart and validates every link (another day, both ways). The full table is
 **More deprecated IDs merged into current IDs (applied, October 2026, #49)**: 42 more
 1749 eulogies had a coined deprecated ID although they are the same eulogy as a current ID
 on the same day, whose slug the deprecated one extends or declines (mr:0413-ursi for
-mr:0413-ursus-ravennae, Ursus of Ravenna; mr:0525-leo-in for mr:0525-leo). They are the merges the
+mr:0413-ursus-ravennae, Ursus of Ravenna; mr:0525-leo-in for mr:0525-leo-mentuniaci). They are the merges the
 deprecated-ID sweep's audit had accepted, each read again against the 2004 text. As in #45,
 each deprecated entry is removed and the 1749 text (and the 1914 one, where printed) is
-re-keyed to the current ID. The 1749 texts of mr:0518-ericus and mr:0528-iustus still carry
+re-keyed to the current ID. The 1749 texts of mr:0518-ericus-upsalae and mr:0528-iustus-urgelli still carry
 the following eulogies of their day, run in by the OCR.
 
 | Removed deprecated ID | Current ID |
@@ -863,11 +863,11 @@ the following eulogies of their day, run in by the OCR.
 | mr:0413-ursi | mr:0413-ursus-ravennae |
 | mr:0422-caji | mr:0422-caius-papa |
 | mr:0425-marcus-evangelista-hic | mr:0425-marcus-evangelista |
-| mr:0510-job-propheta | mr:0510-iob |
-| mr:0518-ericus-upsali | mr:0518-ericus |
-| mr:0519-ivo-lohaneti | mr:0519-ivo |
-| mr:0525-leo-in | mr:0525-leo |
-| mr:0528-justus | mr:0528-iustus |
+| mr:0510-job-propheta | mr:0510-iob-patiens |
+| mr:0518-ericus-upsali | mr:0518-ericus-upsalae |
+| mr:0519-ivo-lohaneti | mr:0519-ivo-trecorii |
+| mr:0525-leo-in | mr:0525-leo-mentuniaci |
+| mr:0528-justus | mr:0528-iustus-urgelli |
 | mr:0629-syri | mr:0629-syrus |
 | mr:0720-paulus-cordubae | mr:0720-paulus |
 | mr:0729-olavus-norvegia | mr:0729-olavus |
@@ -973,7 +973,7 @@ into mr:0806-dominicus, mr:1101-festivitas-omnium-sanctorum-quam into mr:1101-om
 the IDs merged into keep their subjects. 46 `same_eulogy` links are added, among them the
 renamed celebrations of the same day (mr:0101-circumcisio-domini to mr:0101-maria-dei-genetrix)
 and eulogies whose subject the editio altera changed (mr:0510-quartus-et-quinctus to
-mr:0510-iv-et-v). mr:0220-sadoth-et-socii (1914) keeps its ID, as mr:0220-eleutherius-et-socii
+mr:0510-quartus-et-quintus). mr:0220-sadoth-et-socii (1914) keeps its ID, as mr:0220-eleutherius-et-socii
 (1749) keeps the name it prints (#47), and the two are linked. Four deprecated IDs whose
 counterpart is uncertain carry a note instead (mr:0123-agathangelus).
 
@@ -1111,7 +1111,7 @@ on extraction via `COUNTRY_CORRECTIONS` in `scripts/extract_registry.py`. Most
 errors come from a homonymous place resolved to the wrong country: Guadalajara
 (Jalisco vs. Castile), Eger (Cheb in Bohemia vs. Hungary), Nizza Monferrato vs.
 Nice, and Catalan Montserrat coded `MS` (the British overseas territory). Four
-corrections go against the printed text: mr:0504-florianus → AT (Lorch/Enns; the
+corrections go against the printed text: mr:0504-florianus-lauriaci → AT (Lorch/Enns; the
 text says "nell'odierna Germania"), mr:0304-casimirus-grodnae → BY (Grodno; the text says
 "in Lituania"), mr:0603-morandus → FR (Altkirch in Alsace) and mr:0827-gebhardus →
 DE (Petershausen, Konstanz); the last two texts say "odierna Svizzera". Two entries
@@ -1375,9 +1375,9 @@ from `PS` to `IL`.
 | `mr:0425-marcus-evangelista` | no opening place | IL | PS |
 | `mr:0427-simeon-hierosolymorum` | Jerusalem (Q1218) | IL | PS |
 | `mr:0501-ieremias-propheta` | no opening place | IL | PS |
-| `mr:0503-ansfridus` | Heiligenberg (Leusden) (Q18768221) | BE | NL |
+| `mr:0503-ansfridus-ultraiectensis` | Heiligenberg (Leusden) (Q18768221) | BE | NL |
 | `mr:0504-silvanus-et-socii` | Punon (Q2907858) | PS | JO |
-| `mr:0505-maximus` | no opening place | IL | PS |
+| `mr:0505-maximus-hierosolymitanus` | no opening place | IL | PS |
 | `mr:0516-andreas-bobola` | Ivanava (Q956207) | PL | BY |
 | `mr:0524-simeon-stylita` | Samandağ district (Q2782103) | SY | TR |
 | `mr:0525-nicolaus-cehelskyj` | Yavas (Q770345) | MD | RU |

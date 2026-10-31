@@ -76,7 +76,7 @@ FEAST_IDS = {
     "mr:0211-maria-de-lourdes",
     "mr:0222-cathedra-petri-apostoli",
     "mr:0325-annuntiatio-domini",
-    "mr:0501-ioseph",  # Joseph the Worker: a title feast, not an event
+    "mr:0501-ioseph-sponsus-mariae",  # Joseph the Worker: a title feast, not an event
     "mr:0513-maria-de-fatima",
     "mr:0531-visitatio-beatae-mariae-virginis",
     "mr:0716-maria-de-monte-carmelo",
@@ -112,7 +112,7 @@ TYPOLOGY_OVERRIDES = {
     "mr:0121-agnes-romae": "depositio",
     "mr:1014-callistus-i": "depositio",
     "mr:1123-clemens-i": "depositio",
-    "mr:0512-pancratius": "depositio",
+    "mr:0512-pancratius-romae": "depositio",
     # Died in April; the text says he is honoured on the day he took up his see.
     "mr:1207-ambrosius": "ordinatio",
     # A solemnity of his nativity: the date marks the birth, not the death.
