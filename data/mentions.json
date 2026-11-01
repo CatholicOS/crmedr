@@ -21073,6 +21073,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 12,
+          "end": 28,
+          "check": "8614c2d7",
+          "name": "Ioannes Faesulani Angelicus",
+          "qid": "Q5664"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 20,
@@ -21084,6 +21093,15 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 41,
+          "end": 49,
+          "check": "58727db8",
+          "name": "Ioannes Faesulani Angelicus",
+          "qid": "Q5664"
         }
       ],
       "mr:0218-ioannes-petrus-neel": [
@@ -21392,6 +21410,19 @@
           "check": "9fe79e5e",
           "name": "Conradus Confalonieri",
           "qid": "Q2541815"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 34,
+          "end": 43,
+          "check": "402a99fc",
+          "qid": "Q13329",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
         }
       ],
       "mr:0219-elisabeth-picenardi": [
@@ -22561,6 +22592,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 53,
+          "check": "40b637eb",
+          "name": "Constantius de Fabriano",
+          "qid": "Q20029401"
         },
         {
           "kind": "place",
@@ -23951,6 +23991,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 45,
+          "check": "84568b50",
+          "name": "Antonia de Florentia",
+          "qid": "Q9157769"
         },
         {
           "kind": "place",
@@ -30199,6 +30248,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 46,
+          "check": "477bd1f8",
+          "name": "Salvator de Horta",
+          "qid": "Q1347691"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 41,
@@ -30249,6 +30307,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 33,
+          "end": 49,
+          "check": "199893d8",
+          "name": "Ioannes de Parma",
+          "qid": "Q1698771"
         },
         {
           "kind": "place",
@@ -31769,6 +31836,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 31,
+          "end": 49,
+          "check": "87e643aa",
+          "name": "Rebecca de Himlaya",
+          "qid": "Q268204"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 42,
@@ -33067,6 +33143,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 35,
+          "end": 57,
+          "check": "5bcc7fe0",
+          "name": "Peregrinus de Phalerone",
+          "qid": "Q16587749"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 48,
@@ -34002,6 +34087,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 45,
+          "check": "b824f2d5",
+          "name": "Ludovicus de Casaurea",
+          "qid": "Q2675665"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 37,
@@ -34061,6 +34155,19 @@
           "check": "fa4b24e7",
           "name": "Petrus Regalado",
           "qid": "Q59071"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 56,
+          "end": 67,
+          "check": "8cfb9493",
+          "qid": "Q8356",
+          "roles": [
+            {
+              "role": "birth"
+            }
+          ]
         }
       ],
       "mr:0330-plurimi-martyres-constantinopolis": [
@@ -34248,6 +34355,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 24,
+          "end": 49,
+          "check": "1c3f142b",
+          "name": "Bonaventura de Foro Livii",
+          "qid": "Q26997825"
         },
         {
           "kind": "place",
@@ -47107,6 +47223,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 152,
+          "end": 168,
+          "check": "c7fddc9f",
+          "name": "Ctesiphon Vergii",
+          "qid": "Q1142755"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 162,
@@ -47118,6 +47243,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 170,
+          "end": 184,
+          "check": "1adf89ba",
+          "name": "Secundus Abulae",
+          "qid": "Q1392884"
         },
         {
           "kind": "place",
@@ -47133,6 +47267,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 186,
+          "end": 201,
+          "check": "7bc4fd98",
+          "name": "Indaletius Urci",
+          "qid": "Q965979"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 197,
@@ -47144,6 +47287,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 203,
+          "end": 220,
+          "check": "275e1e68",
+          "name": "Caecilius Illiberi",
+          "qid": "Q437183"
         },
         {
           "kind": "place",
@@ -47159,6 +47311,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 222,
+          "end": 239,
+          "check": "fac062c2",
+          "name": "Hesychius Carteiae",
+          "qid": "Q938387"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 232,
@@ -47170,6 +47331,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 243,
+          "end": 263,
+          "check": "ddc28546",
+          "name": "Euphrasius Illiturgi",
+          "qid": "Q436299"
         },
         {
           "kind": "place",
@@ -54316,6 +54486,15 @@
       ],
       "mr:0520-bernardinus-senensis": [
         {
+          "kind": "person",
+          "where": "text",
+          "start": 7,
+          "end": 26,
+          "check": "dc3c7da5",
+          "name": "Bernardinus Senensis",
+          "qid": "Q316295"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 18,
@@ -54452,6 +54631,15 @@
         }
       ],
       "mr:0520-lydia-thyatirensis": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 38,
+          "check": "26358ea8",
+          "name": "Lydia Thyatirensis",
+          "qid": "Q292282"
+        },
         {
           "kind": "place",
           "where": "text",
@@ -57712,6 +57900,15 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 53,
+          "end": 73,
+          "check": "e861911c",
+          "name": "Herculanus de Plegali",
+          "qid": "Q5736391"
         },
         {
           "kind": "place",
@@ -91808,6 +92005,15 @@
       ],
       "mr:0804-aristarchus-thessalonicensis": [
         {
+          "kind": "person",
+          "where": "text",
+          "start": 20,
+          "end": 47,
+          "check": "fcd4a7a2",
+          "name": "Aristarchus Thessalonicensis",
+          "qid": "Q468859"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 31,
@@ -123605,6 +123811,19 @@
           "qid": null
         },
         {
+          "kind": "place",
+          "where": "text",
+          "start": 87,
+          "end": 158,
+          "check": "ce7d600b",
+          "qid": "Q141832016",
+          "roles": [
+            {
+              "role": "dedication"
+            }
+          ]
+        },
+        {
           "kind": "person",
           "where": "text",
           "start": 114,
@@ -150737,6 +150956,15 @@
           "qid": "Q22580272"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 324,
+          "end": 342,
+          "check": "dc158a8f",
+          "name": "Urbanus Girbitanus",
+          "qid": "Q85978800"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 332,
@@ -150748,6 +150976,15 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 344,
+          "end": 364,
+          "check": "72a05c7f",
+          "name": "Crescens Byzaciensis",
+          "qid": "Q85978829"
         },
         {
           "kind": "place",
@@ -150763,6 +151000,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 366,
+          "end": 387,
+          "check": "0f9a594f",
+          "name": "Habetdeus Teudalensis",
+          "qid": "Q85978847"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 376,
@@ -150774,6 +151020,15 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 389,
+          "end": 409,
+          "check": "e381a9ca",
+          "name": "Eustratius Sufetanus",
+          "qid": "Q85978866"
         },
         {
           "kind": "place",
@@ -150789,6 +151044,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 411,
+          "end": 429,
+          "check": "ed79e75d",
+          "name": "Cresconius Oeensis",
+          "qid": "Q85978891"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 422,
@@ -150800,6 +151064,15 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 431,
+          "end": 448,
+          "check": "1561ce48",
+          "name": "Vicis Sabratensis",
+          "qid": "Q85978893"
         },
         {
           "kind": "place",
@@ -150815,6 +151088,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 450,
+          "end": 468,
+          "check": "ea758afd",
+          "name": "Felix Hadrumetanus",
+          "qid": "Q13633589"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 456,
@@ -150828,6 +151110,15 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 513,
+          "end": 535,
+          "check": "e253c77d",
+          "name": "Hortulanus Bennefensis",
+          "qid": "Q85986580"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 524,
@@ -150839,6 +151130,15 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 539,
+          "end": 562,
+          "check": "0133d47e",
+          "name": "Florentianus Midilensis",
+          "qid": "Q85978935"
         },
         {
           "kind": "place",
