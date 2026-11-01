@@ -745,6 +745,35 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual(json.loads((self.api / "data" / "editions" / "martyrologium_romanum_1749" / "01.json")
                                     .read_text()), {"mr:0101-a": "t", "mr:0101-old-x": "o"})
 
+    def test_texts_still_skips_a_deprecated_rename_after_crmedr_applied_it(self):
+        doc = cs(op("mr:0101-old", "mr:0101-old-x", cands=[]))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        ids = self.root / "data" / "martyrology_ids.json"
+        ids.write_text(ids.read_text().replace('"mr:0101-old"', '"mr:0101-old-x"'))  # as the rebuild writes it
+        again = ar.apply_texts(doc, self.texts, self.root, False)
+        self.assertTrue(again.ok, again.errors)
+        self.assertEqual((again.applied, again.files), ([], {}))
+
+    def test_api_refuses_a_repository_without_older_editions(self):
+        rep = ar.apply_api(self.cs, self.texts, True)  # a git work tree, but not martyrology-api
+        self.assertFalse(rep.ok)
+        self.assertIn("no tracked JSON under data/editions", rep.errors[0])
+
+    def test_api_finishes_a_run_that_stopped_part_way(self):
+        # One file re-keyed, the other not yet: the new ID elsewhere is no collision.
+        ed = self.api / "data" / "editions" / "martyrologium_romanum_1749"
+        (ed / "01.json").write_text((ed / "01.json").read_text().replace('"mr:0101-a"', '"mr:0101-a-x"'))
+        rep = ar.apply_api(self.cs, self.api, False)
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertIn("mr:0101-a-x", json.loads((ed / "alignment.json").read_text())["ids"])
+
+    def test_api_refuses_a_file_naming_both_the_old_and_the_new_id(self):
+        ed = self.api / "data" / "editions" / "martyrologium_romanum_1749"
+        dump(ed / "01.json", {"mr:0101-a": "t", "mr:0101-a-x": "u"})
+        rep = ar.apply_api(self.cs, self.api, False)
+        self.assertFalse(rep.ok)
+        self.assertIn("01.json", rep.errors[0])
+
     def test_api_rekeys_the_older_editions_and_their_alignment_data(self):
         rep = ar.apply_api(self.cs, self.api, False)
         self.assertTrue(rep.ok, rep.errors)

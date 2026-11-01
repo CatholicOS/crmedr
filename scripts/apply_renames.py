@@ -371,7 +371,9 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
         deprecated = _registry(repo_root)[1]
     except (OSError, ValueError, KeyError):
         deprecated = set()
-    todo, done = split_applied([r for r in renames(changeset) if r.old not in deprecated], keys)
+    # Either ID: after crmedr's step the registry knows the deprecated rename by its new ID.
+    todo, done = split_applied([r for r in renames(changeset) if r.old not in deprecated and r.new not in deprecated],
+                               keys)
     errors = check(todo) + relabel_errors(changeset)
     for r in todo:
         if r.old not in keys:
@@ -397,6 +399,7 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
 
 
 API_FOLDERS = ("data/editions", "scripts/data")  # the API's older editions and their alignment inputs
+API_EDITIONS = ("martyrologium_romanum_1630", "martyrologium_romanum_1749", "martyrologium_romanum_1914_en_unofficial")
 MRID = re.compile(r'"(mr:\d{4}-[a-z]+(?:-[a-z]+)*)"')
 
 
@@ -415,14 +418,19 @@ def apply_api(changeset, api_repo, dry):
     except (OSError, subprocess.CalledProcessError):
         return _report([], [], {}, [f"{api_repo}: not a git work tree"])
     found = [p for p in tracked if p.suffix == ".json"]
-    named = set()
-    for p in found:
-        named.update(MRID.findall(p.read_text(encoding="utf-8")))
+    if not any(p.is_relative_to(api_repo / "data" / "editions" / ed) for p in found for ed in API_EDITIONS):
+        return _report([], [], {}, [f"{api_repo}: no tracked JSON under data/editions for the "
+                                    f"{', '.join(API_EDITIONS)} editions (not martyrology-api?)"])
+    by_file = {p: set(MRID.findall(p.read_text(encoding="utf-8"))) for p in found}
+    named = set().union(*by_file.values())
     rs = renames(changeset)
     errors = check(rs) + relabel_errors(changeset)
     todo = [r for r in rs if r.old in named]
     done = [r for r in rs if r.old not in named and r.new in named]
-    errors += [f"{r.old} → {r.new}: {r.new} is already named by the older editions" for r in todo if r.new in named]
+    # A file may be re-keyed while another still waits (a run that stopped part way); one naming both IDs
+    # would merge two eulogies.
+    errors += [f"{r.old} → {r.new}: {p.relative_to(api_repo)} names both" for r in todo
+               for p, ids in by_file.items() if r.old in ids and r.new in ids]
     if errors or not todo:
         return _report([] if errors else todo, done, {}, errors, "")
     mapping = {r.old: r.new for r in todo}
