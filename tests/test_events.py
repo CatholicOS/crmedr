@@ -1,3 +1,4 @@
+import hashlib
 import json
 import unittest
 from pathlib import Path
@@ -27,8 +28,14 @@ class EventsTest(unittest.TestCase):
         mentions = read("mentions.json")["editions"]
         for edition, lang in (("martyrologium_romanum_2004", "la"), ("martyrologium_romanum_2004_it_IT", "it")):
             for mrid, items in self.events.items():
-                marked = sorted(m["qid"] for m in mentions[edition].get(mrid, []) if m["kind"] == "event")
-                self.assertEqual(marked, sorted(e["qid"] for e in items if e.get(lang)), f"{edition} {mrid}")
+                phrases = {e["qid"]: e[lang] for e in items if e.get(lang)}
+                marks = [m for m in mentions[edition].get(mrid, []) if m["kind"] == "event"]
+                self.assertEqual(sorted(m["qid"] for m in marks), sorted(e["qid"] for e in items if e.get(lang)),
+                                 f"{edition} {mrid}")
+                for m in marks:  # the span holds the curated phrase: its check, and its length in UTF-16 units
+                    phrase, tag = phrases[m["qid"]], f"{edition} {mrid} {m['qid']}"
+                    self.assertEqual(m["check"], hashlib.sha256(phrase.encode("utf-8")).hexdigest()[:8], tag)
+                    self.assertEqual(m["end"] - m["start"], len(phrase.encode("utf-16-le")) // 2, tag)
 
     def test_each_event_is_curated_with_both_phrases_and_an_item(self):
         for mrid, items in self.events.items():
