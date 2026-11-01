@@ -339,7 +339,7 @@
 | 26 | 3 | `mr:0526-simetrius-romae` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0526-felicissima-tuderti` |  | IT | dies_natalis |  |  |
 | 26 | 5 | `mr:0526-priscus-autissiodorensis` |  | FR | dies_natalis |  |  |
-| 26 | 6 | `mr:0526-augustinus-cantuariae` |  | GB | depositio |  |  |
+| 26 | 6 | `mr:0526-augustinus-cantuariensis` |  | GB | depositio |  |  |
 | 26 | 7 | `mr:0526-desiderius-viennensis` |  | FR | dies_natalis | same as `mr:0523-desiderius-viennensis` |  |
 | 26 | 8 | `mr:0526-berengarius-sancti-papuli` | * | FR | dies_natalis |  |  |
 | 26 | 9 | `mr:0526-lambertus-ventiae` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "A Vance" where the Latin has "Véntiæ" (Vence, in Provence). |
