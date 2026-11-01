@@ -135061,6 +135061,19 @@
           "check": "7c9ab11d",
           "name": "Gaudentius",
           "qid": "Q279427"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 210,
+          "end": 229,
+          "check": "28a75658",
+          "qid": "Q141966194",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
         }
       ],
       "mr:1025-hilarius-mimatensis": [
@@ -296380,6 +296393,19 @@
           "check": "8bfb5422",
           "name": "Gaudentius",
           "qid": "Q279427"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 210,
+          "end": 228,
+          "check": "4e68b6c5",
+          "qid": "Q141966194",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
         }
       ],
       "mr:1025-hilarius-mimatensis": [

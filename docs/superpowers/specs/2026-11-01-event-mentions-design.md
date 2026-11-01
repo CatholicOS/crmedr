@@ -35,7 +35,9 @@ A phrase that names one council or synod, by its place adjective or genitive, it
 Not events:
 - the verb *conciliare* and its forms (*conciliávit*, *concílians*);
 - councils named by no place or number (*plúribus concíliis*, *concíliis hispánis*, *in sýnodis*);
-- *Concílium Sanctórum* (25 October), a name for a church, not a council.
+- *Concílium Sanctórum* (25 October), a name for a church, not a council: the basilica Gaudentius founded in
+  Brescia, marked as a place (role foundation) and linked to Q141966194, created for it (2026-11-01), whose
+  coordinates are presumably those of San Giovanni Evangelista (Q3670511).
 
 A council named only by its city's demonstrative (*qui Concílio in hac civitáte*, *tria concília hac in civitáte*) is
 an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case: *Concílio in hac civitáte*
