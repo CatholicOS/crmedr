@@ -872,5 +872,34 @@
     },
     "place": "Q6343",
     "wikipedia": {}
+  },
+  "Q141966070": {
+    "label": {
+      "la": "Synodus Palmaris",
+      "en": "Palmary Synod",
+      "it": "Concilio di Roma (501)",
+      "fr": "Synode palmaire",
+      "de": "Palmarsynode",
+      "es": "Sínodo Palmar"
+    },
+    "description": {
+      "en": "synod held in Rome in 501–502 that cleared Pope Symmachus",
+      "it": "sinodo tenuto a Roma nel 501–502 che prosciolse papa Simmaco",
+      "fr": "synode tenu à Rome en 501–502, qui disculpa le pape Symmaque",
+      "de": "Synode in Rom 501–502, die Papst Symmachus freisprach",
+      "es": "sínodo celebrado en Roma en 501–502 que absolvió al papa Símaco"
+    },
+    "start": {
+      "year": 501,
+      "precision": "year",
+      "circa": false
+    },
+    "end": {
+      "year": 502,
+      "precision": "year",
+      "circa": false
+    },
+    "place": "Q220",
+    "wikipedia": {}
   }
 }

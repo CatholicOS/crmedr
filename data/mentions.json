@@ -50276,17 +50276,12 @@
           ]
         },
         {
-          "kind": "place",
+          "kind": "event",
           "where": "text",
-          "start": 102,
-          "end": 106,
-          "check": "313de200",
-          "qid": "Q220",
-          "roles": [
-            {
-              "role": "journey"
-            }
-          ]
+          "start": 95,
+          "end": 116,
+          "check": "75f48979",
+          "qid": "Q141966070"
         }
       ],
       "mr:0509-herma-discipulus": [
@@ -211944,17 +211939,12 @@
           ]
         },
         {
-          "kind": "place",
+          "kind": "event",
           "where": "text",
-          "start": 183,
+          "start": 164,
           "end": 187,
-          "check": "7e325f21",
-          "qid": "Q220",
-          "roles": [
-            {
-              "role": "journey"
-            }
-          ]
+          "check": "36821572",
+          "qid": "Q141966070"
         }
       ],
       "mr:0509-herma-discipulus": [

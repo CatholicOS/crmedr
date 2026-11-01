@@ -39,8 +39,10 @@ Not events:
 
 A council named only by its city's demonstrative (*qui Concílio in hac civitáte*, *tria concília hac in civitáte*) is
 an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case: *Concílio in hac civitáte*
-(Successus and companions, 18 January, at Carthage) is the Council of Carthage of 256 (Q141808067). A synod no item
-names (*Sýnodo Romæ celebráta*, 9 May) is not marked.
+(Successus and companions, 18 January, at Carthage) is the Council of Carthage of 256 (Q141808067). *Sýnodo Romæ celebráta* (Geruntius, 9 May), from which he is said (*tráditur*) to have been returning when
+he was killed, is identified by its date: most historians put his death in 501, the year the Palmary Synod
+(Synodus Palmaris, 501–502) met in Rome over Pope Symmachus. Wikidata had no item for it; Q141966070 was created
+(2026-11-01, sourced to Cathopedia's *Concilio di Roma (501)*).
 
 ## Data (crmedr)
 
@@ -86,7 +88,7 @@ names (*Sýnodo Romæ celebráta*, 9 May) is not marked.
 
 - Events other than councils and synods.
 - The 1914 English and 1749/1630 editions.
-- Creating Wikidata items: every council named has an item; a missing one is reported to the curator first.
+- Creating Wikidata items, except with the curator's leave: a missing one is reported first (the Palmary Synod, Q141966070, was created so).
 
 ## Order
 
