@@ -151,6 +151,13 @@ source-error note.
 **Faith of Agen** (#251): *sanctæ Fídei, mártyris* is feminine, Saint Faith (Santa Fede), so
 mr:1006-fideus-aginni → mr:1006-fides-aginni, after her subject Sancta Fides Aginni.
 
+**Hermosilla and his companions** (#254): the eulogy of 1 November commemorates three Dominican
+martyrs of Tonkin, the bishops Hierónymus Hermosilla and Valentínus Berrio Ochoa *atque Petri Almató
+Ribeira, presbýteri*: mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa →
+mr:1101-hieronymus-hermosilla-et-socii (Sancti Hieronymus Hermosilla et socii), the *et socii* form of
+eulogies of three or more persons. Peter Almató is the same person (Q3826988) as among the martyrs
+of Vietnam of 24 November.
+
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
 
