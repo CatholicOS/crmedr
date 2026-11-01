@@ -82,27 +82,52 @@ class EulogyMentionsTest(unittest.TestCase):
         self.assertEqual([(m["name"], m["form"]) for m in ms], [("Nemardus a Fictura Nema", "Nemárdi a Fictúra Néma")])
         self.assertEqual([(r["op"], r["name"]) for r in review], [("add_mention", "Nema")])
 
-    def test_a_person_inside_a_place_phrase_is_reviewed_and_the_place_kept(self):
+    def test_a_person_inside_a_place_phrase_is_reviewed_as_a_mark_inside_the_place(self):
+        # "In civitáte Sancti Ioánnis" may name a city, not the saint: the curator decides; the place stays.
         text = "In civitáte Sancti Ioánnis, commemorátio sanctórum mártyrum."
         ms, review, _ = mentions_of(text, [{"role": "cult", "la": "In civitáte Sancti Ioánnis", "source": "lead"}],
                                     [{"name": "Ioannes", "where": "text"}])
         self.assertEqual([m["kind"] for m in ms], ["place"])
-        self.assertEqual([(r["op"], r["kind"], r["form"]) for r in review], [
-            ("add_mention", "person", "Ioánnis"), ("remove_mention", "place", "In civitáte Sancti Ioánnis")])
+        self.assertEqual([(r["op"], r["kind"], r["form"]) for r in review], [("add_mention", "person", "Ioánnis")])
+        self.assertIn("inside the place", review[0]["reasoning"])
 
-    def test_two_persons_inside_one_place_phrase_remove_the_place_once(self):
+    def test_two_persons_inside_one_place_phrase_are_each_reviewed_and_nothing_is_removed(self):
         text = "In civitáte Sancti Ioánnis Páuli, commemorátio sanctórum."
         ms, review, _ = mentions_of(text, [{"role": "cult", "la": "In civitáte Sancti Ioánnis Páuli",
                                             "source": "lead"}],
                                     [{"name": "Ioannes", "where": "text"}, {"name": "Paulus", "where": "text"}])
         self.assertEqual([m["kind"] for m in ms], ["place"])
-        removes = [r for r in review if r["op"] == "remove_mention"]
-        self.assertEqual(len(removes), 1)
-        self.assertIn("Ioannes", removes[0]["reasoning"])
-        self.assertIn("Paulus", removes[0]["reasoning"])
-        adds = sorted((r["start"], r["end"]) for r in review if r["op"] == "add_mention")
-        self.assertEqual(len(adds), 2)
+        self.assertEqual([r["op"] for r in review], ["add_mention", "add_mention"])
+        adds = sorted((r["start"], r["end"]) for r in review)
         self.assertLessEqual(adds[0][1], adds[1][0])
+
+    def test_an_italian_list_person_is_never_marked_outside_their_place_in_the_list(self):
+        # Bo is listed between Annalisa and Carlotta (longer names, placed first): "Bo" before Annalisa is not
+        # theirs to mark.
+        note = "Bo, Annalisa, Carlotta."
+        persons = [{"name": n, "where": {"footnote": 1}, "rank": i, "forms": [n]}
+                   for i, n in enumerate(["Annalisa", "Bo", "Carlotta"])]
+        ms, review, _ = mentions_of("Romæ, sanctórum.", persons=persons, notes=[note], lang="it")
+        self.assertEqual(sorted(m["name"] for m in ms), ["Annalisa", "Carlotta"])
+        self.assertEqual([r["name"] for r in review], ["Bo"])
+
+    def test_a_place_inside_a_persons_italian_name_keeps_both_marks(self):
+        text = "Ad Ascoli Piceno, beato Costanzo Sérvoli da Fabriano, sacerdote."
+        ms, review, _ = mentions_of(text, [{"role": "birth", "la": "Fabriáno", "it": "Fabriano", "source": "record"}],
+                                    [{"name": "Constantius de Fabriano Servoli", "where": "text",
+                                      "forms": ["Costanzo Sérvoli da Fabriano"]}], lang="it")
+        self.assertEqual(review, [])
+        self.assertEqual(sorted((m["kind"], m["form"]) for m in ms),
+                         [("person", "Costanzo Sérvoli da Fabriano"), ("place", "Fabriano")])
+
+    def test_a_place_inside_a_persons_name_keeps_both_marks(self):
+        text = "Romæ, beáti Ioánnis Fæsuláni, cognoménto Angélici, presbýteri."
+        ms, review, _ = mentions_of(text, [{"role": "birth", "la": "Fæsuláni", "source": "record"}],
+                                    [{"name": "Ioannes Faesulani Angelicus", "where": "text"}])
+        self.assertEqual(review, [])
+        # The name is cut at its joiner, as ever ("cognoménto" left out); the place lies inside the first piece.
+        self.assertEqual(sorted((m["kind"], m["form"]) for m in ms),
+                         [("person", "Angélici"), ("person", "Ioánnis Fæsuláni"), ("place", "Fæsuláni")])
 
     def test_an_unfound_person_is_reviewed_with_its_best_partial_match(self):
         text = "Romæ, beáti Nemárdi a Fictúra, presbýteri."
@@ -408,6 +433,22 @@ class ValidateTest(unittest.TestCase):
 
     def test_overlaps_are_errors(self):
         self.assertIn("overlaps", self.errors([person(13, 20, "Nemínis"), person(13, 17, "Nemí")])[0])
+
+    def test_a_place_inside_a_person_is_one_level_of_nesting(self):
+        text = "Romæ, beáti Conrádi de Placéntia Confalonieri, eremítæ."
+        p = person(12, 45, "Conrádi de Placéntia Confalonieri")
+        inner = {"kind": "place", "where": "text", "start": 23, "end": 32, "form": "Placéntia", "qid": None}
+        self.assertEqual(self.errors([p, inner], text), [])
+
+    def test_partial_overlaps_same_kind_nesting_and_two_levels_are_errors(self):
+        text = "Romæ, beáti Conrádi de Placéntia Confalonieri, eremítæ."
+        p = person(12, 45, "Conrádi de Placéntia Confalonieri")
+        def place(s, e):
+            return {"kind": "place", "where": "text", "start": s, "end": e, "form": text[s:e], "qid": None}
+        self.assertIn("overlaps", self.errors([p, place(6, 19)], text)[0])  # "beáti Conrádi": across its start
+        self.assertIn("overlaps", self.errors([p, person(23, 32, "Placéntia")], text)[0])
+        outer = place(6, 45)
+        self.assertIn("overlaps", self.errors([outer, p, place(23, 32)], text)[0])
 
     def test_a_person_needs_a_name_and_a_place_has_none(self):
         nameless = dict(person(13, 20, "Nemínis"), name=None)
@@ -986,7 +1027,7 @@ class PlaceRolesTest(unittest.TestCase):
         self.assertEqual(ms[1], {"kind": "place", "where": "text", "start": 24, "end": 32, "form": "Parisiis",
                                  "qid": "Q90", "roles": [{"role": "birth"}]})
 
-    def test_a_decided_body_place_inside_another_mark_is_proposed_at_its_printing(self):
+    def test_a_decided_body_place_inside_a_persons_mark_is_marked_inside_it(self):
         text = "Romæ, sancti Conradi de Placentia, qui natus est."
         ms = [{"kind": "place", "where": "text", "start": 0, "end": 4, "form": "Romæ", "qid": None},
               {"kind": "person", "where": "text", "start": 13, "end": 33, "form": "Conradi de Placentia",
@@ -994,8 +1035,29 @@ class PlaceRolesTest(unittest.TestCase):
         items = [{"role": "death", "la": "Romæ", "source": "lead"},
                  {"role": "birth", "la": "Placentia", "source": "curated"}]
         review = em.curated_place_roles(ms, items, text, "la", {"Placentia": "Q13362"}.get)
-        self.assertEqual([(r["start"], r["end"], r["form"], r["qid"]) for r in review], [(24, 33, "Placentia", "Q13362")])
-        self.assertIn("inside the mark of Conradi de Placentia", review[0]["reasoning"])
+        self.assertEqual(review, [])
+        self.assertEqual([(m["kind"], m["start"], m["end"], m.get("qid")) for m in ms[2:]],
+                         [("place", 24, 33, "Q13362")])
+
+    def test_a_decided_place_phrase_holding_a_persons_mark_is_marked_around_it(self):
+        text = "Dedicatio basilicae Sancti Michaelis via Salaria, ubi colitur."
+        ms = [{"kind": "person", "where": "text", "start": 27, "end": 36, "form": "Michaelis",
+               "name": "Michael", "qid": None}]
+        items = [{"role": "cult", "la": "basilicae Sancti Michaelis via Salaria", "source": "curated"}]
+        review = em.curated_place_roles(ms, items, text, "la", {"basilicae Sancti Michaelis via Salaria": "Q1"}.get)
+        self.assertEqual(review, [])
+        self.assertEqual([(m["kind"], m["form"]) for m in ms[1:]], [("place", "basilicae Sancti Michaelis via Salaria")])
+
+    def test_a_decided_body_place_inside_another_place_is_proposed_at_its_printing(self):
+        text = "In civitate Placentiae, sancti Conradi, qui natus est."
+        ms = [{"kind": "place", "where": "text", "start": 0, "end": 22, "form": "In civitate Placentiae", "qid": None},
+              {"kind": "person", "where": "text", "start": 31, "end": 38, "form": "Conradi",
+               "name": "Conradus", "qid": None}]
+        items = [{"role": "death", "la": "In civitate Placentiae", "source": "lead"},
+                 {"role": "birth", "la": "Placentiae", "source": "curated"}]
+        review = em.curated_place_roles(ms, items, text, "la", {"Placentiae": "Q13362"}.get)
+        self.assertEqual([(r["start"], r["end"], r["form"], r["qid"]) for r in review], [(12, 22, "Placentiae", "Q13362")])
+        self.assertIn("inside the mark of In civitate Placentiae", review[0]["reasoning"])
         self.assertEqual(len(ms), 2)
 
     def test_file_round_trip_keeps_roles(self):
