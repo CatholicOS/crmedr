@@ -129401,6 +129401,27 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q141433651": {
+    "description": {
+      "en": "Ursuline nun and martyr of Orange",
+      "it": "religiosa orsolina e martire a Orange",
+      "de": "französische Ordensfrau aus dem Orden der Ursulinen"
+    },
+    "born": {
+      "year": 1740,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "de": "Andrée Minutte"
+    }
+  },
   "Q141491626": {
     "description": {},
     "born": null,
@@ -143869,6 +143890,82 @@
     "born": null,
     "died": {
       "year": 304,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141959972": {
+    "description": {
+      "en": "Sacramentine nun and martyr of Orange",
+      "it": "religiosa sacramentina e martire a Orange",
+      "fr": "religieuse sacramentine, martyre d'Orange"
+    },
+    "born": {
+      "year": 1770,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141959973": {
+    "description": {
+      "en": "Ursuline nun and martyr of Orange",
+      "it": "religiosa orsolina e martire a Orange",
+      "fr": "religieuse ursuline, martyre d'Orange"
+    },
+    "born": {
+      "year": 1742,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141959974": {
+    "description": {
+      "en": "Ursuline nun of Carpentras and martyr of Orange",
+      "it": "religiosa orsolina di Carpentras e martire a Orange",
+      "fr": "religieuse ursuline de Carpentras, martyre d'Orange"
+    },
+    "born": {
+      "year": 1756,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141959975": {
+    "description": {
+      "en": "Ursuline superior and martyr of Orange",
+      "it": "superiora orsolina e martire a Orange",
+      "fr": "supérieure ursuline, martyre d'Orange"
+    },
+    "born": {
+      "year": 1749,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
       "precision": "year",
       "circa": false
     },
