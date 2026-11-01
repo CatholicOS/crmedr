@@ -7227,6 +7227,1156 @@
     },
     {
       "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Anna Andrea a Sancto Alexio Minutte",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Anna Andrea a Sancto Alexio Minutte",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Elisabeth Verchiere",
+        "Teresia Henrica ab Annuntiatione Faurie",
+        "Maria Anna a Sancto Francisco Lambert",
+        "Maria Anna a Sancta Francisca Depeyre",
+        "Maria Anastasia a Sancto Gervasio de Roquard"
+      ],
+      "failed": [
+        "name: the best candidate (Q141943035) fails it",
+        "death: the best candidate (Q141943035) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q141943035",
+          "label": "Mary Clare of Saint Martin Blanc",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Chiara di San Martino Blanc",
+            "Maria Clara Blanc",
+            "Maria Clara a Sancto Martino Blanc",
+            "Maria Clara a Sancto Martíno Blanc",
+            "Mary Clare of Saint Martin Blanc"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1742",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943036",
+          "label": "Mary Elizabeth of Saint Theoctistus Pelissier",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Elisabeth Pelissier",
+            "Maria Elisabeth a Sancto Theoctisto Pelissier",
+            "Maria Elisabeth a Sancto Theoctísto Pélissier",
+            "Maria Elisabetta di San Teoctisto Pelissier",
+            "Mary Elizabeth of Saint Theoctistus Pelissier"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1741",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943039",
+          "label": "Joan Mary de Romillon of Orange",
+          "description": "virgin and martyr of Orange (1794)",
+          "names": [
+            "Giovanna Maria di San Bernardo di Romillon",
+            "Ioanna Maria a Sancto Bernardo de Romillon",
+            "Ioanna Maria a Sancto Bernárdo de Romillon",
+            "Joan Mary de Romillon of Orange"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1753",
+          "died": "1794-07-12",
+          "feast": [
+            "Q2688"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943156",
+          "label": "Marie-Anne Béguin-Royal",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Ioachim Beguin-Royal",
+            "Maria Anna a Sancto Ioachim Béguin-Royal",
+            "Maria Anna di San Gioacchino Béguin-Royal",
+            "Marie-Anne Béguin-Royal"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1736",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943157",
+          "label": "Marie-Anne Doux",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Michaele Doux",
+            "Maria Anna di San Michele Doux",
+            "Marie-Anne Doux"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1739-04-08",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943158",
+          "label": "Marie-Rose Laye",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Rosa a Sancto Andrea Laye",
+            "Maria Rosa di Sant'Andrea Laye",
+            "Marie-Rose Laye"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1728-09-26",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943217",
+          "label": "Mary Margaret of Saint Augustine Bonnet",
+          "description": "one of the martyrs of Orange, Ursuline nun",
+          "names": [
+            "Maria Margarita a Sancto Augustino",
+            "Maria Margarita a Sancto Augustino Bonnet",
+            "Maria Margherita di Sant'Agostino Bonnet",
+            "Mary Margaret of Saint Augustine Bonnet"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2723"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": []
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "death",
+          "label": "Orange",
+          "qid": "Q187796"
+        }
+      ]
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Maria Anastasia a Sancto Gervasio de Roquard",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Maria Anastasia a Sancto Gervasio de Roquard",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Elisabeth Verchiere",
+        "Teresia Henrica ab Annuntiatione Faurie",
+        "Anna Andrea a Sancto Alexio Minutte",
+        "Maria Anna a Sancto Francisco Lambert",
+        "Maria Anna a Sancta Francisca Depeyre"
+      ],
+      "failed": [
+        "name: the best candidate (Q141943035) fails it",
+        "death: the best candidate (Q141943035) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q141943035",
+          "label": "Mary Clare of Saint Martin Blanc",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Chiara di San Martino Blanc",
+            "Maria Clara Blanc",
+            "Maria Clara a Sancto Martino Blanc",
+            "Maria Clara a Sancto Martíno Blanc",
+            "Mary Clare of Saint Martin Blanc"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1742",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943036",
+          "label": "Mary Elizabeth of Saint Theoctistus Pelissier",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Elisabeth Pelissier",
+            "Maria Elisabeth a Sancto Theoctisto Pelissier",
+            "Maria Elisabeth a Sancto Theoctísto Pélissier",
+            "Maria Elisabetta di San Teoctisto Pelissier",
+            "Mary Elizabeth of Saint Theoctistus Pelissier"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1741",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943039",
+          "label": "Joan Mary de Romillon of Orange",
+          "description": "virgin and martyr of Orange (1794)",
+          "names": [
+            "Giovanna Maria di San Bernardo di Romillon",
+            "Ioanna Maria a Sancto Bernardo de Romillon",
+            "Ioanna Maria a Sancto Bernárdo de Romillon",
+            "Joan Mary de Romillon of Orange"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1753",
+          "died": "1794-07-12",
+          "feast": [
+            "Q2688"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943156",
+          "label": "Marie-Anne Béguin-Royal",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Ioachim Beguin-Royal",
+            "Maria Anna a Sancto Ioachim Béguin-Royal",
+            "Maria Anna di San Gioacchino Béguin-Royal",
+            "Marie-Anne Béguin-Royal"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1736",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943157",
+          "label": "Marie-Anne Doux",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Michaele Doux",
+            "Maria Anna di San Michele Doux",
+            "Marie-Anne Doux"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1739-04-08",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943158",
+          "label": "Marie-Rose Laye",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Rosa a Sancto Andrea Laye",
+            "Maria Rosa di Sant'Andrea Laye",
+            "Marie-Rose Laye"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1728-09-26",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943217",
+          "label": "Mary Margaret of Saint Augustine Bonnet",
+          "description": "one of the martyrs of Orange, Ursuline nun",
+          "names": [
+            "Maria Margarita a Sancto Augustino",
+            "Maria Margarita a Sancto Augustino Bonnet",
+            "Maria Margherita di Sant'Agostino Bonnet",
+            "Mary Margaret of Saint Augustine Bonnet"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2723"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": []
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "death",
+          "label": "Orange",
+          "qid": "Q187796"
+        }
+      ]
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Maria Anna a Sancta Francisca Depeyre",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Maria Anna a Sancta Francisca Depeyre",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Elisabeth Verchiere",
+        "Teresia Henrica ab Annuntiatione Faurie",
+        "Anna Andrea a Sancto Alexio Minutte",
+        "Maria Anna a Sancto Francisco Lambert",
+        "Maria Anastasia a Sancto Gervasio de Roquard"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "death",
+          "label": "Orange",
+          "qid": "Q187796"
+        }
+      ]
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Maria Anna a Sancto Francisco Lambert",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Maria Anna a Sancto Francisco Lambert",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Elisabeth Verchiere",
+        "Teresia Henrica ab Annuntiatione Faurie",
+        "Anna Andrea a Sancto Alexio Minutte",
+        "Maria Anna a Sancta Francisca Depeyre",
+        "Maria Anastasia a Sancto Gervasio de Roquard"
+      ],
+      "failed": [
+        "name: the best candidate (Q141943035) fails it",
+        "death: the best candidate (Q141943035) fails it"
+      ],
+      "candidates": [
+        {
+          "wikidata": "Q141943035",
+          "label": "Mary Clare of Saint Martin Blanc",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Chiara di San Martino Blanc",
+            "Maria Clara Blanc",
+            "Maria Clara a Sancto Martino Blanc",
+            "Maria Clara a Sancto Martíno Blanc",
+            "Mary Clare of Saint Martin Blanc"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1742",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943036",
+          "label": "Mary Elizabeth of Saint Theoctistus Pelissier",
+          "description": "Sacramentine nun and martyr of Orange",
+          "names": [
+            "Maria Elisabeth Pelissier",
+            "Maria Elisabeth a Sancto Theoctisto Pelissier",
+            "Maria Elisabeth a Sancto Theoctísto Pélissier",
+            "Maria Elisabetta di San Teoctisto Pelissier",
+            "Mary Elizabeth of Saint Theoctistus Pelissier"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1741",
+          "died": "1794-07-11",
+          "feast": [
+            "Q2701"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943039",
+          "label": "Joan Mary de Romillon of Orange",
+          "description": "virgin and martyr of Orange (1794)",
+          "names": [
+            "Giovanna Maria di San Bernardo di Romillon",
+            "Ioanna Maria a Sancto Bernardo de Romillon",
+            "Ioanna Maria a Sancto Bernárdo de Romillon",
+            "Joan Mary de Romillon of Orange"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1753",
+          "died": "1794-07-12",
+          "feast": [
+            "Q2688"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943156",
+          "label": "Marie-Anne Béguin-Royal",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Ioachim Beguin-Royal",
+            "Maria Anna a Sancto Ioachim Béguin-Royal",
+            "Maria Anna di San Gioacchino Béguin-Royal",
+            "Marie-Anne Béguin-Royal"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1736",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943157",
+          "label": "Marie-Anne Doux",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Anna a Sancto Michaele Doux",
+            "Maria Anna di San Michele Doux",
+            "Marie-Anne Doux"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1739-04-08",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943158",
+          "label": "Marie-Rose Laye",
+          "description": "one of the martyrs of Orange, guillotined 1794",
+          "names": [
+            "Maria Rosa a Sancto Andrea Laye",
+            "Maria Rosa di Sant'Andrea Laye",
+            "Marie-Rose Laye"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": "1728-09-26",
+          "died": "1794-07-16",
+          "feast": [
+            "Q2731"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
+        {
+          "wikidata": "Q141943217",
+          "label": "Mary Margaret of Saint Augustine Bonnet",
+          "description": "one of the martyrs of Orange, Ursuline nun",
+          "names": [
+            "Maria Margarita a Sancto Augustino",
+            "Maria Margarita a Sancto Augustino Bonnet",
+            "Maria Margherita di Sant'Agostino Bonnet",
+            "Mary Margaret of Saint Augustine Bonnet"
+          ],
+          "human": true,
+          "statuses": [
+            "Q2369287"
+          ],
+          "born": null,
+          "died": null,
+          "feast": [
+            "Q2723"
+          ],
+          "signals": [
+            "P841"
+          ],
+          "birth_place": [],
+          "death_place": [],
+          "burial_place": [],
+          "work_places": [],
+          "source": "companion:P361",
+          "evidence": [
+            "human",
+            "status",
+            "group"
+          ],
+          "places": []
+        }
+      ],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "death",
+          "label": "Orange",
+          "qid": "Q187796"
+        }
+      ]
+    },
+    {
+      "op": "resolve_person",
+      "id": "mr:0713-elisabeth-verchiere-et-socii|Teresia Henrica ab Annuntiatione Faurie",
+      "eulogy": "mr:0713-elisabeth-verchiere-et-socii",
+      "day": "07-13",
+      "typology": "dies_natalis",
+      "subject": "Beatae Elisabeth Verchiere et socii",
+      "name": "Teresia Henrica ab Annuntiatione Faurie",
+      "where": {
+        "footnote": 1
+      },
+      "companions": [
+        "Elisabeth Verchiere",
+        "Anna Andrea a Sancto Alexio Minutte",
+        "Maria Anna a Sancto Francisco Lambert",
+        "Maria Anna a Sancta Francisca Depeyre",
+        "Maria Anastasia a Sancto Gervasio de Roquard"
+      ],
+      "failed": [
+        "no candidate found"
+      ],
+      "candidates": [],
+      "decision": null,
+      "edited": null,
+      "places": [
+        {
+          "role": "death",
+          "label": "Orange",
+          "qid": "Q187796"
+        }
+      ]
+    },
+    {
+      "op": "resolve_person",
       "id": "mr:0716-maria-de-monte-carmelo|Beata Maria Virgo de Monte Carmelo",
       "eulogy": "mr:0716-maria-de-monte-carmelo",
       "day": "07-16",
