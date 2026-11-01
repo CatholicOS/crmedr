@@ -4,7 +4,7 @@
 
 | Day | Entry | ID | * | Country | Typology | Editions | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| 1 | (1) | `mr:0601-iustinus-romae` |  | IT | dies_natalis | same as `mr:0413-iustinus`; same as `mr:0414-iustinus` |  |
+| 1 | (1) | `mr:0601-iustinus-romae` |  | IT | dies_natalis | same as `mr:0413-iustinus-romae`; same as `mr:0414-iustinus-romae` |  |
 | 1 | 2 | `mr:0601-chariton-et-socii` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:0601-ammon-et-socii` |  | EG | dies_natalis | same as `mr:1220-ammon-et-socii` |  |
 | 1 | 4 | `mr:0601-ischyrion-et-socii` |  | EG | dies_natalis |  |  |
@@ -28,7 +28,7 @@
 | 2 | 2 | `mr:0602-pothinus-et-socii` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0602-erasmus-formiarum` |  | IT | dies_natalis |  |  |
 | 2 | 4 | `mr:0602-eugenius-i` |  | IT | dies_natalis |  | 2004 English: Translation error: "Saint Eugene, Pope" omits the ordinal of "Eugénii papæ Primi" (Eugene the First). |
-| 2 | 5 | `mr:0602-nicephorus-constantinopolitanus` |  | TR | dies_natalis | same as `mr:0313-nicephorus` |  |
+| 2 | 5 | `mr:0602-nicephorus-constantinopolitanus` |  | TR | dies_natalis | same as `mr:0313-nicephorus-constantinopolitanus` |  |
 | 2 | 6 | `mr:0602-guido-aquarum-statiellarum` | * | IT | dies_natalis |  |  |
 | 2 | 7 | `mr:0602-nicolaus-trani` |  | IT | dies_natalis |  |  |
 | 2 | 8 | `mr:0602-sadochus-et-socii` | * | PL | dies_natalis |  |  |
@@ -75,7 +75,7 @@
 | 5 | 11 | `mr:0605-dominicus-toai-et-dominicus-huyen` |  | VN | dies_natalis |  |  |
 | 6 | (1) | `mr:0606-norbertus-magdeburgi` |  | FR | dies_natalis |  |  |
 | 6 | 2 | `mr:0606-artemius-et-paulina` |  | IT | dies_natalis |  |  |
-| 6 | 3 | `mr:0606-bessarion-scetis` |  | EG | dies_natalis | same as `mr:0617-bessarion` |  |
+| 6 | 3 | `mr:0606-bessarion-scetis` |  | EG | dies_natalis | same as `mr:0617-bessarion-scetis` |  |
 | 6 | 4 | `mr:0606-ceratius-gratianopoli` | * | FR | dies_natalis |  |  |
 | 6 | 5 | `mr:0606-eustorgius-secundus` |  | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0606-iarlathus-hiberniae` | * | IE | dies_natalis |  |  |
@@ -109,9 +109,9 @@
 | 8 | 9 | `mr:0608-maria-a-divino-corde-iesu` | * | PT | dies_natalis |  |  |
 | 8 | 10 | `mr:0608-maria-teresia-chiramel-mankidiyan` | * | IN | dies_natalis |  | Mariam Thresia Chiramel Mankidiyan, blessed in the 2004 editions, was canonized on 13 October 2019. |
 | 8 | 11 | `mr:0608-ioannes-medda` | * | IT | dies_natalis |  |  |
-| 9 | (1) | `mr:0609-ephraem-nisibi` |  | TR | dies_natalis | same as `mr:0618-ephraem` |  |
+| 9 | (1) | `mr:0609-ephraem-nisibi` |  | TR | dies_natalis | same as `mr:0618-ephraem-nisibi` |  |
 | 9 | 2 | `mr:0609-primus-et-felicianus` |  | IT | dies_natalis |  | 2004 English: Translation error: "at the Arenae" where the Latin has "ad Arcas" (at the Arches). |
-| 9 | 3 | `mr:0609-diomedes-niceae` |  | TR | dies_natalis | same as `mr:0816-diomedes` |  |
+| 9 | 3 | `mr:0609-diomedes-niceae` |  | TR | dies_natalis | same as `mr:0816-diomedes-niceae` |  |
 | 9 | 4 | `mr:0609-vincentius-agennensis` |  | FR | dies_natalis |  |  |
 | 9 | 5 | `mr:0609-maximianus-syracusis` |  | IT | dies_natalis |  |  |
 | 9 | 6 | `mr:0609-columba-colum-cille` |  | GB | dies_natalis |  |  |
@@ -131,7 +131,7 @@
 | 10 | 9 | `mr:0610-marcus-antonius-durando` | * | IT | dies_natalis | CEI: absent; same as `mr:1210-marcus-antonius-durando` | 2004 Latin: The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando). 2004 English: The Italian (CEI) edition prints this eulogy at 10 December (mr:1210-marcus-antonius-durando). |
 | 10 | 10 | `mr:0610-eduardus-poppe` | * | BE | dies_natalis | CEI: entry 9 |  |
 | 11 | (1) | `mr:0611-barnabas-apostolus` |  | PS | dies_natalis |  |  |
-| 11 | 2 | `mr:0611-maximus-neapoli` |  | IT | dies_natalis | same as `mr:0610-maximus` |  |
+| 11 | 2 | `mr:0611-maximus-neapoli` |  | IT | dies_natalis | same as `mr:0610-maximus-neapoli` |  |
 | 11 | 3 | `mr:0611-rembertus-hamburgensis` |  | DE | dies_natalis |  |  |
 | 11 | 4 | `mr:0611-bardo-moguntiae` | * | DE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 4*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (4*). |
 | 11 | 5 | `mr:0611-aleydis-camerae` | * | BE | dies_natalis |  |  |
@@ -157,10 +157,10 @@
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia` | * | IT | dies_natalis |  |  |
 | 13 | (1) | `mr:0613-antonius-patavii` |  | PT | dies_natalis |  |  |
 | 13 | 2 | `mr:0613-felicula-romae` |  | IT | dies_natalis |  |  |
-| 13 | 3 | `mr:0613-achilleus-alexandriae` |  | EG | dies_natalis | same as `mr:1107-achilleus` |  |
+| 13 | 3 | `mr:0613-achilleus-alexandriae` |  | EG | dies_natalis | same as `mr:1107-achilleus-alexandriae` |  |
 | 13 | 4 | `mr:0613-triphyllius-leucosiae` |  | CY | dies_natalis |  |  |
 | 13 | 5 | `mr:0613-cetheus-peregrinus` |  | IT | dies_natalis |  |  |
-| 13 | 6 | `mr:0613-eulogius-alexandriae` |  | EG | dies_natalis | same as `mr:0913-eulogius` |  |
+| 13 | 6 | `mr:0613-eulogius-alexandriae` |  | EG | dies_natalis | same as `mr:0913-eulogius-alexandriae` |  |
 | 13 | 7 | `mr:0613-psalmodius-lemovicum` | * | FR | dies_natalis |  |  |
 | 13 | 8 | `mr:0613-ragnebertus-lugdunensis` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "imprigionato" (imprisoned) where the Latin has "relegatióne" (banishment). |
 | 13 | 9 | `mr:0613-aventinus-arbusti` | * | FR | dies_natalis |  | 2004 English: Translation error: "valley of Arbas" where the Latin "valle Arbústo" is the Larboust valley. |
@@ -205,7 +205,7 @@
 | 17 | 1 | `mr:0617-blastus-et-diogenes` |  | IT | dies_natalis |  |  |
 | 17 | 2 | `mr:0617-isaurus-et-socii` |  | AL | dies_natalis |  |  |
 | 17 | 3 | `mr:0617-nicandrus-et-marcianus` |  | BG | dies_natalis |  |  |
-| 17 | 4 | `mr:0617-antidius-vesontione` |  | FR | dies_natalis | same as `mr:0625-antidius` |  |
+| 17 | 4 | `mr:0617-antidius-vesontione` |  | FR | dies_natalis | same as `mr:0625-antidius-vesontione` |  |
 | 17 | 5 | `mr:0617-hypatius-rufinianarum` |  | TR | dies_natalis |  |  |
 | 17 | 6 | `mr:0617-hervaeus-britanniae-minoris` | * | FR | dies_natalis |  |  |
 | 17 | 7 | `mr:0617-avitus-aureliani` |  | FR | dies_natalis |  |  |
@@ -227,14 +227,14 @@
 | 19 | 2 | `mr:0619-gervasius-et-protasius` |  | IT | commemoratio |  | 2004 English: Translation error: "rebuilt by him" where the Latin has "ab ipso ædificátam" (built by him). |
 | 19 | 3 | `mr:0619-deodatus-nivernensis` | * | FR | dies_natalis |  |  |
 | 19 | 4 | `mr:0619-childomarca-fiscamni` | * | FR | dies_natalis |  |  |
-| 19 | 5 | `mr:0619-lambertus-caesaraugustae` |  | ES | dies_natalis | same as `mr:0416-lambertus` |  |
+| 19 | 5 | `mr:0619-lambertus-caesaraugustae` |  | ES | dies_natalis | same as `mr:0416-lambertus-caesaraugustae` |  |
 | 19 | 6 | `mr:0619-gerlandus-calatae-hieronis` | * | IT | translatio |  |  |
 | 19 | 7 | `mr:0619-iuliana-falconieri` |  | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:0619-michaelina-pisauri` | * | IT | dies_natalis |  |  |
 | 19 | 9 | `mr:0619-sebastianus-newdigate-et-socii` | * | GB | dies_natalis |  |  |
 | 19 | 10 | `mr:0619-thomas-woodhouse` | * | GB | dies_natalis |  |  |
 | 19 | 11 | `mr:0619-remigius-isore-et-modestus-andlauer` |  | CN | dies_natalis |  | 2004 English: Translation error: "Science City" where the Latin has "civitátem Scienscienénsem" (the city of Xianxian). |
-| 20 | 1 | `mr:0620-methodius-olympensis` |  | GR | commemoratio | same as `mr:0918-methodius` |  |
+| 20 | 1 | `mr:0620-methodius-olympensis` |  | GR | commemoratio | same as `mr:0918-methodius-olympensis` |  |
 | 20 | 2 | `mr:0620-gobanus-laudunensis` | * | FR | dies_natalis |  | 2004 English: Translation note: "Saint Fursa" where the Latin has "sancti Fusci" (Saint Fuscus). |
 | 20 | 3 | `mr:0620-ioannes-de-mateola` | * | IT | dies_natalis |  |  |
 | 20 | 4 | `mr:0620-margarita-ebner` | * | DE | dies_natalis |  |  |
@@ -256,7 +256,7 @@
 | 22 | 3 | `mr:0622-flavius-clemens` |  | IT | commemoratio |  |  |
 | 22 | 4 | `mr:0622-albanus-verulamii` |  | GB | dies_natalis |  |  |
 | 22 | 5 | `mr:0622-iulius-et-aaron` |  | GB | dies_natalis | same as `mr:0701-iulius-et-aaron` | 2004 Latin: Editorial error: "in Britannia Minore" (Brittany), but Caerleon, the City of the Legions, is in Britain (Wales). |
-| 22 | 6 | `mr:0622-eusebius-samosatensis` |  | TR | dies_natalis | same as `mr:0621-eusebius` |  |
+| 22 | 6 | `mr:0622-eusebius-samosatensis` |  | TR | dies_natalis | same as `mr:0621-eusebius-samosatensis` |  |
 | 22 | 7 | `mr:0622-nicetas-remesianae` |  | RS | commemoratio |  |  |
 | 22 | 8 | `mr:0622-innocentius-v` | * | IT | dies_natalis |  |  |
 | 23 | 1 | `mr:0623-plurimi-martyres-nicomediae` |  | TR | commemoratio |  |  |
@@ -270,10 +270,10 @@
 | 23 | 9 | `mr:0623-iosephus-cafasso` |  | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0623-sanctina-cimatti` | * | IT | dies_natalis |  |  |
 | 24 | (1) | `mr:0624-ioannes-baptista` |  | PS | celebratio |  | 2004 English: Translation error: "was filled with the Holy Spirit" (of John) where the Latin has "matris, Spíritu Sancto replétæ" (his mother, filled with the Holy Spirit). |
-| 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis | same as `mr:0623-ioannes` |  |
+| 24 | 2 | `mr:0624-ioannes-et-festus` |  | IT | dies_natalis | same as `mr:0623-ioannes-romae` |  |
 | 24 | 3 | `mr:0624-simplicius-augustoduni` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0624-agoardus-et-agilbertus` |  | FR | dies_natalis |  | 2004 English: Translation error: "Aglibert" where the Latin has "Agilbérti" (Agilbert). |
-| 24 | 5 | `mr:0624-rumoldus-mechliniae` |  | BE | dies_natalis | same as `mr:0701-rumoldus` |  |
+| 24 | 5 | `mr:0624-rumoldus-mechliniae` |  | BE | dies_natalis | same as `mr:0701-rumoldus-mechliniae` |  |
 | 24 | 6 | `mr:0624-theodulfus-laubii` |  | BE | dies_natalis |  |  |
 | 24 | 7 | `mr:0624-gohardus-nannetum` | * | FR | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). 2004 English: Translation error: "Gobard" where the Latin has "Gohárdi" (Gohard). |
 | 24 | 8 | `mr:0624-theodgarus-vestervigi` | * | DK | dies_natalis |  |  |
@@ -309,7 +309,7 @@
 | 26 | 15 | `mr:0626-nicolaus-konrad-et-vladimirus-pryjma` | * | UA | dies_natalis |  |  |
 | 26 | 16 | `mr:0626-andreas-iscak` | * | UA | dies_natalis |  |  |
 | 26 | 17 | `mr:0626-iosephus-maria-escriva-de-balaguer` |  | IT | dies_natalis |  |  |
-| 27 | (1) | `mr:0627-cyrillus-alexandriae` |  | EG | dies_natalis | same as `mr:0128-cyrillus` |  |
+| 27 | (1) | `mr:0627-cyrillus-alexandriae` |  | EG | dies_natalis | same as `mr:0128-cyrillus-alexandriae` |  |
 | 27 | 2 | `mr:0627-guddenes-carthaginensis` |  | TN | dies_natalis |  |  |
 | 27 | 3 | `mr:0627-zoilus-cordubae` |  | ES | dies_natalis |  |  |
 | 27 | 4 | `mr:0627-samson-constantinopoli` |  | TR | dies_natalis |  |  |
@@ -341,9 +341,9 @@
 | 30 | 3 | `mr:0630-martialis-lemovicum` |  | FR | dies_natalis |  |  |
 | 30 | 4 | `mr:0630-bertichramnus-cenomanorum` | * | FR | dies_natalis |  |  |
 | 30 | 5 | `mr:0630-erentrudis-nonneburgensis` | * | AT | dies_natalis |  |  |
-| 30 | 6 | `mr:0630-theobaldus-salanicae` |  | IT | dies_natalis | same as `mr:0701-theobaldus` |  |
-| 30 | 7 | `mr:0630-ladislaus-nitravae` |  | SK | dies_natalis | same as `mr:0627-ladislaus` | 2004 Latin: Source error: "ad Vagum flumen" (on the river Váh), but Nitra lies on the river Nitra. |
-| 30 | 8 | `mr:0630-otho-bambergae` |  | DE | dies_natalis | same as `mr:0702-otho` |  |
+| 30 | 6 | `mr:0630-theobaldus-salanicae` |  | IT | dies_natalis | same as `mr:0701-theobaldus-salanicae` |  |
+| 30 | 7 | `mr:0630-ladislaus-nitravae` |  | SK | dies_natalis | same as `mr:0627-ladislaus-nitravae` | 2004 Latin: Source error: "ad Vagum flumen" (on the river Váh), but Nitra lies on the river Nitra. |
+| 30 | 8 | `mr:0630-otho-bambergae` |  | DE | dies_natalis | same as `mr:0702-otho-bambergae` |  |
 | 30 | 9 | `mr:0630-adolphus-altencampensis` | * | DE | dies_natalis |  |  |
 | 30 | 10 | `mr:0630-philippus-powell` | * | GB | dies_natalis |  |  |
 | 30 | 11 | `mr:0630-ianuarius-maria-sarnelli` | * | IT | dies_natalis |  |  |

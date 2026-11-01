@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:1201-castritianus-mediolani` |  | IT | dies_natalis |  |  |
 | 1 | 3 | `mr:1201-florentia-pictavorum` | * | FR | dies_natalis |  | 2004 English: Translation error: "Florentina" where the Latin has "Floréntiæ" (Florentia). Translation error: the phrase "a sancto Hilário ... convérsa" (converted by Saint Hilary) is rendered as a time clause, losing that Hilary converted her. |
 | 1 | 4 | `mr:1201-leontius-fori-iulii` | * | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:1201-domnolus-parisiensis` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus` | 2004 Latin: Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (5.). |
+| 1 | 5 | `mr:1201-domnolus-parisiensis` |  | FR | dies_natalis | CEI: asterisk True; same as `mr:0516-domnolus-parisiensis` | 2004 Latin: Printed here without an asterisk (entry 5.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (5.). |
 | 1 | 6 | `mr:1201-agericus-viroduni` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:1201-eligius-noviomensis` |  | FR | dies_natalis |  | 2004 English: Translation error: "rebuilt many monasteries" where the Latin has "plúrima ædificavísset monastéria" (built many monasteries). |
 | 1 | 8 | `mr:1201-antonius-bonfadini` | * | IT | dies_natalis |  |  |
@@ -22,7 +22,7 @@
 | 2 | 2 | `mr:1202-bibiana-romae` |  | IT | dies_natalis |  |  |
 | 2 | 3 | `mr:1202-pimenius-romae` |  | IT | dies_natalis |  | 2004 English: Translation error: "Pimen" where the Latin has "Piménii" (Pimenius). |
 | 2 | 4 | `mr:1202-chromatius-aquileiensis` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "chiostri d’Italia" (the cloisters of Italy) where the Latin has "Itáliæ claustris" (the defensive barriers of Italy breached by Alaric). |
-| 2 | 5 | `mr:1202-silverius-papa` |  | IT | dies_natalis | same as `mr:0620-silverius` | 2004 Italian: Translation error: "Palmarola in Liguria" where the Latin "ínsula Palmária" is Palmarola in the Pontine Islands, off Lazio, not in Liguria. |
+| 2 | 5 | `mr:1202-silverius-papa` |  | IT | dies_natalis | same as `mr:0620-silverius-papa` | 2004 Italian: Translation error: "Palmarola in Liguria" where the Latin "ínsula Palmária" is Palmarola in the Pontine Islands, off Lazio, not in Liguria. |
 | 2 | 6 | `mr:1202-ioannes-ruysbroeck` | * | BE | dies_natalis |  |  |
 | 2 | 7 | `mr:1202-maria-angela-astorch` | * | ES | dies_natalis |  |  |
 | 2 | 8 | `mr:1202-melchior-chylinski` | * | PL | dies_natalis |  | 2004 Latin: Name error: "Logiewniki" for Łagiewniki, now a district of Łódź, where Raphael Chyliński died in the Franciscan friary. 2004 Italian: Name error: "Logiewniki" for Łagiewniki, now a district of Łódź, where Raphael Chyliński died in the Franciscan friary. |
@@ -36,7 +36,7 @@
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
 | 4 | (1) | `mr:1204-ioannes-damascenus` |  | PS | dies_natalis | same as `mr:0327-ioannes-damascenus`; same as `mr:0506-ioannes-damascenus` |  |
 | 4 | 2 | `mr:1204-barbara-nicomediae` |  | TR | commemoratio |  |  |
-| 4 | 3 | `mr:1204-heracla-alexandriae` |  | EG | dies_natalis | same as `mr:0714-heracla` |  |
+| 4 | 3 | `mr:1204-heracla-alexandriae` |  | EG | dies_natalis | same as `mr:0714-heracla-alexandriae` |  |
 | 4 | 4 | `mr:1204-meletius-sebastopoli` |  | TR | dies_natalis |  |  |
 | 4 | 5 | `mr:1204-felix-bononiae` |  | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:1204-aprus-viennae` | * | FR | dies_natalis |  |  |
@@ -72,12 +72,12 @@
 | 7 | 3 | `mr:1207-athenodorus-syriae` |  | SY | dies_natalis |  |  |
 | 7 | 4 | `mr:1207-urbanus-theani` |  | IT | dies_natalis |  |  |
 | 7 | 5 | `mr:1207-ioannes-silentiarius` |  | PS | dies_natalis | same as `mr:0513-ioannes-silentiarius` |  |
-| 7 | 6 | `mr:1207-fara-eboriaci` |  | FR | dies_natalis | same as `mr:0403-burgundofara` | 2004 English: Translation error: "Évry" where the Latin has "Eboríaci" (Faremoutiers). |
+| 7 | 6 | `mr:1207-fara-eboriaci` |  | FR | dies_natalis | same as `mr:0403-burgundofara-eboriaci` | 2004 English: Translation error: "Évry" where the Latin has "Eboríaci" (Faremoutiers). |
 | 7 | 7 | `mr:1207-carolus-garnier` |  | CA | dies_natalis |  |  |
 | 7 | 8 | `mr:1207-benedicta-rossello` |  | IT | dies_natalis |  |  |
 | 8 | (1) | `mr:1208-conceptio-immaculata-beatae-mariae-virginis` |  |  | celebratio |  |  |
 | 8 | 2 | `mr:1208-macarius-alexandriae` |  | EG | commemoratio |  | 2004 Italian: Translation error: "per suo stesso ordine" (by his own order) where the Latin has "ad últimum ... iussus est" (at last he was ordered, by the judge, to be burned alive). 2004 English: Translation error: "burned alive to the end" where the Latin "ad últimum exúri iussus est" means he was at last ordered to be burned alive. |
-| 8 | 3 | `mr:1208-eutychianus-papa` |  | IT | depositio | same as `mr:1207-eutychianus` |  |
+| 8 | 3 | `mr:1208-eutychianus-papa` |  | IT | depositio | same as `mr:1207-eutychianus-papa` |  |
 | 8 | 4 | `mr:1208-eucharius-trevirorum` |  | DE | dies_natalis |  |  |
 | 8 | 5 | `mr:1208-patapius-constantinopolis` |  | EG | commemoratio |  | 2004 English: Translation error: "an Egyptian monastery" where the Latin has "in Ægyptiórum monastério" (the monastery of the Egyptians, at Constantinople). |
 | 8 | 6 | `mr:1208-romaricus-luxoviensis` |  | FR | dies_natalis |  |  |
@@ -121,7 +121,7 @@
 | 11 | 12 | `mr:1211-mirabilia-a-iesu` |  | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:1212-maria-de-guadalupe` |  | MX | celebratio |  | 2004 English: Translation error: the natives and the poor are joined to "evangelizing of families"; the Latin hails her as "indigenárum pauperúmque præsídium" (protector of the natives and the poor). |
 | 12 | 2 | `mr:1212-epimachus-et-alexander` |  | EG | commemoratio |  | 2004 English: Translation error: "without hearing them" and "their constancy also be conquered" where the Latin means the judge feared that, even after unheard-of tortures, he would be conquered by their constancy. Translation error: "the holy virgins Ammonarion, Mercuria, Dionysia" where the Latin calls only Ammonarion "virgo". |
-| 12 | 3 | `mr:1212-spyridon-cypri` |  | CY | dies_natalis | same as `mr:1214-spiridion` |  |
+| 12 | 3 | `mr:1212-spyridon-cypri` |  | CY | dies_natalis | same as `mr:1214-spiridion-cypri` |  |
 | 12 | 4 | `mr:1212-finnianus-clonardiae` | * | IE | dies_natalis |  |  |
 | 12 | 5 | `mr:1212-corentinus-coriosopiti` | * | FR | dies_natalis |  |  |
 | 12 | 6 | `mr:1212-israel-dorati` | * | FR | dies_natalis |  |  |
@@ -193,13 +193,13 @@
 | 18 | 5 | `mr:1218-winebaldus-heidenheimensis` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "Hildesheim" where the Latin has "Heidenheiménsi" (Heidenheim), the monastery Saint Winebald founded. |
 | 18 | 6 | `mr:1218-paulus-nguyen-van-my-et-petrus-truong-van` |  | VN | dies_natalis |  |  |
 | 18 | 7 | `mr:1218-iulia-valle` | * | IT | dies_natalis |  |  |
-| 19 | 1 | `mr:1219-anastasius-i` |  | IT | depositio | same as `mr:0427-anastasius` |  |
+| 19 | 1 | `mr:1219-anastasius-i` |  | IT | depositio | same as `mr:0427-anastasius-i` |  |
 | 19 | 2 | `mr:1219-gregorius-autissiodori` |  | FR | dies_natalis |  |  |
 | 19 | 3 | `mr:1219-gulielmus-de-fenolis` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:1219-urbanus-v` | * | FR | dies_natalis |  |  |
 | 19 | 5 | `mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy` |  | VN | dies_natalis |  |  |
 | 19 | 6 | `mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu` | * | BY | dies_natalis |  | 2004 Latin: Spelling error: "Wołowsk" for the surname Wołowska. |
-| 20 | 1 | `mr:1220-zephyrinus-papa` |  | IT | depositio | same as `mr:0826-zephyrinus` |  |
+| 20 | 1 | `mr:1220-zephyrinus-papa` |  | IT | depositio | same as `mr:0826-zephyrinus-papa` |  |
 | 20 | 2 | `mr:1220-liberalis-romae` |  | IT | dies_natalis |  |  |
 | 20 | 3 | `mr:1220-philogonius-antiochiae` |  | TR | dies_natalis |  |  |
 | 20 | 4 | `mr:1220-ursicinus-iurae` | * | CH | dies_natalis |  |  |
@@ -252,7 +252,7 @@
 | 26 | 2 | `mr:1226-dionysius-papa` |  | IT | dies_natalis |  |  |
 | 26 | 3 | `mr:1226-zeno-maiumae` |  | PS | commemoratio |  | 2004 English: Translation error: "rebuilt a basilica with his kinsmen" where the Latin says he built a basilica for his cousins the martyrs. |
 | 26 | 4 | `mr:1226-zosimus-papa` |  | IT | depositio |  |  |
-| 26 | 5 | `mr:1226-euthymius-sardium` |  | TR | dies_natalis | same as `mr:0311-euthymius` |  |
+| 26 | 5 | `mr:1226-euthymius-sardium` |  | TR | dies_natalis | same as `mr:0311-euthymius-sardium` |  |
 | 26 | 6 | `mr:1226-vincentia-maria-lopez-vicuna` |  | ES | dies_natalis |  |  |
 | 26 | 7 | `mr:1226-agnes-phila-et-lucia-khambang` | * | TH | dies_natalis |  |  |
 | 26 | 8 | `mr:1226-secundus-pollo` | * | ME | dies_natalis |  |  |
@@ -273,7 +273,7 @@
 | 29 | 2 | `mr:1229-david-rex-et-propheta` |  | PS | commemoratio |  |  |
 | 29 | 3 | `mr:1229-trophimus-arelatis` |  | FR | dies_natalis |  |  |
 | 29 | 4 | `mr:1229-libosus-vagensis` |  | TN | dies_natalis |  | 2004 English: Translation error: "Liberius" where the Latin has "Libósi" (Libosus). |
-| 29 | 5 | `mr:1229-martinianus-mediolani` |  | IT | dies_natalis | same as `mr:0102-martinianus` |  |
+| 29 | 5 | `mr:1229-martinianus-mediolani` |  | IT | dies_natalis | same as `mr:0102-martinianus-mediolani` |  |
 | 29 | 6 | `mr:1229-marcellus-constantinopoli` |  | TR | dies_natalis |  |  |
 | 29 | 7 | `mr:1229-ebrulfus-uticensis` |  | FR | dies_natalis |  | 2004 English: Translation error: "Ouche" where the Latin has "Oximi" (Exmes). |
 | 29 | 8 | `mr:1229-gerardus-cagnoli` | * | IT | dies_natalis |  |  |
@@ -283,11 +283,11 @@
 | 29 | 12 | `mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher` | * | ES | dies_natalis |  |  |
 | 29 | 13 | `mr:1229-ioannes-baptista-ferreres-boluda` | * | ES | dies_natalis |  |  |
 | 30 | 1 | `mr:1230-felix-i` |  | IT | depositio | same as `mr:0530-felix-i` |  |
-| 30 | 2 | `mr:1230-hermes-bononiae` |  | BG | dies_natalis | same as `mr:1231-hermes` |  |
+| 30 | 2 | `mr:1230-hermes-bononiae` |  | BG | dies_natalis | same as `mr:1231-hermes-bononiae` |  |
 | 30 | 3 | `mr:1230-anysius-thessalonicensis` |  | GR | commemoratio |  |  |
-| 30 | 4 | `mr:1230-perpetuus-turonum` |  | FR | dies_natalis | same as `mr:0408-perpetuus` | 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
+| 30 | 4 | `mr:1230-perpetuus-turonum` |  | FR | dies_natalis | same as `mr:0408-perpetuus-turonum` | 2004 English: Translation error: "rebuilt" where the Latin has "ædificávit" (built). |
 | 30 | 5 | `mr:1230-iucundus-augustae-praetoriae` | * | IT | dies_natalis |  |  |
-| 30 | 6 | `mr:1230-geremarus-flaviae` |  | FR | dies_natalis | same as `mr:0924-geremarus` | 2004 English: Translation error: "Flavigny" where the Latin has "Fláviæ" (Fly). |
+| 30 | 6 | `mr:1230-geremarus-flaviae` |  | FR | dies_natalis | same as `mr:0924-geremarus-flaviae` | 2004 English: Translation error: "Flavigny" where the Latin has "Fláviæ" (Fly). |
 | 30 | 7 | `mr:1230-egwinus-eveshamii` | * | GB | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 7*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (7*). |
 | 30 | 8 | `mr:1230-rainerius-furconensis` |  | IT | dies_natalis |  |  |
 | 30 | 9 | `mr:1230-rogerius-cannarum` | * | IT | dies_natalis |  |  |
