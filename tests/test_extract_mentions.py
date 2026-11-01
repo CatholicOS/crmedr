@@ -101,6 +101,16 @@ class EulogyMentionsTest(unittest.TestCase):
         adds = sorted((r["start"], r["end"]) for r in review)
         self.assertLessEqual(adds[0][1], adds[1][0])
 
+    def test_an_italian_list_person_is_never_marked_outside_their_place_in_the_list(self):
+        # Bo is listed between Annalisa and Carlotta (longer names, placed first): "Bo" before Annalisa is not
+        # theirs to mark.
+        note = "Bo, Annalisa, Carlotta."
+        persons = [{"name": n, "where": {"footnote": 1}, "rank": i, "forms": [n]}
+                   for i, n in enumerate(["Annalisa", "Bo", "Carlotta"])]
+        ms, review, _ = mentions_of("Romæ, sanctórum.", persons=persons, notes=[note], lang="it")
+        self.assertEqual(sorted(m["name"] for m in ms), ["Annalisa", "Carlotta"])
+        self.assertEqual([r["name"] for r in review], ["Bo"])
+
     def test_a_place_inside_a_persons_italian_name_keeps_both_marks(self):
         text = "Ad Ascoli Piceno, beato Costanzo Sérvoli da Fabriano, sacerdote."
         ms, review, _ = mentions_of(text, [{"role": "birth", "la": "Fabriáno", "it": "Fabriano", "source": "record"}],

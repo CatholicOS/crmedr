@@ -283,8 +283,8 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         """The person's match under the names printed here (the Italian forms, else the stored name), the
         places left free to it, and the places it crosses."""
         src, where = source(p["where"]), p["where"]
-        found = next((f for nm in p.get("forms") or [p["name"]] if (f := find_person(src, nm, spans("person", where)))),
-                     None)
+        taken_ = spans("person", where) + window(p)  # a list person only between their neighbours
+        found = next((f for nm in p.get("forms") or [p["name"]] if (f := find_person(src, nm, taken_))), None)
         crossed = [] if not found else [(x["start"], x["end"]) for x in mentions if x["kind"] == "place"
                                         and x["where"] == where and not free(found[0], [(x["start"], x["end"])])]
         return found, crossed
