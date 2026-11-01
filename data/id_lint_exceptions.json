@@ -1,0 +1,140 @@
+{
+  "$comment": "Errors of scripts/lint_ids.py that are known and awaiting a curator decision or a follow-up fix; each note says which. Remove an entry when it is fixed: the linter then keeps it fixed.",
+  "exceptions": [
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0801-eusebius-vercellarum",
+        "mr:0802-eusebius-vercellensis"
+      ],
+      "note": "one saint, two printed forms: choose one (vercellensis?)"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0414-tiburtius-et-socii",
+        "mr:0811-tiburtius-romae"
+      ],
+      "note": "probably a wrong person item: two different Tiburtii"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0526-augustinus-cantuariae",
+        "mr:0527-augustinus-cantuariensis"
+      ],
+      "note": "one saint, two printed forms: choose one (cantuariensis?)"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0312-gregorius-i-magnus",
+        "mr:0903-gregorius-magnus"
+      ],
+      "note": "one saint: gregorius-magnus on both days?"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0404-ambrosius-mediolani",
+        "mr:1207-ambrosius-mediolanensis"
+      ],
+      "note": "one saint, two printed forms: choose one"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0321-benedictus-casini",
+        "mr:0711-benedictus-nursiae"
+      ],
+      "note": "one saint (Benedict of Nursia): choose one discriminator"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0219-georgius-vabrensis",
+        "mr:1109-georgius-ludevae"
+      ],
+      "note": "one saint (abbot of Vabres, bishop of Lodève): choose one discriminator"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0104-abrunculus-lingonensis",
+        "mr:0514-aprunculus-lingonensis"
+      ],
+      "note": "one saint, two printed spellings (Abrunculus/Aprunculus)"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:1022-benedictus-nannetensis",
+        "mr:1023-benedictus-pictavorum"
+      ],
+      "note": "probably a wrong person item: two different Benedicti"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0601-ischyrion-et-socii",
+        "mr:1222-ischyrion-aegypti"
+      ],
+      "note": "probably a wrong person item: two different Ischyrions"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0722-anastasius-suaniae",
+        "mr:1011-anastasius-schemaris"
+      ],
+      "note": "probably a wrong person item: two Anastasii exiled with Maximus"
+    },
+    {
+      "check": "ae",
+      "ids": [
+        "mr:0324-maccarthemus-clocerie"
+      ],
+      "note": "e-for-ae: the text prints Cloceriae; rename to -cloceriae"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0321-benedictus-casini",
+        "mr:0711-benedictus-nursiae"
+      ],
+      "note": "one saint (Benedict of Nursia): choose one discriminator"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0312-gregorius-i-magnus",
+        "mr:0903-gregorius-magnus"
+      ],
+      "note": "one saint: gregorius-magnus on both days?"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0319-ioseph-sponsus-mariae",
+        "mr:0501-ioseph-opifex"
+      ],
+      "note": "decided (eulogy items spec, #247): 1 May takes its feast title, Opifex, as maria-regina does; Wikidata has no item for the title, so both name Joseph (Q128267)"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0526-augustinus-cantuariae",
+        "mr:0527-augustinus-cantuariensis"
+      ],
+      "note": "the same decision as its same-subject exception: choose one (cantuariensis?)"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0801-eusebius-vercellarum",
+        "mr:0802-eusebius-vercellensis"
+      ],
+      "note": "the same decision as its same-subject exception: choose one (vercellensis?)"
+    }
+  ]
+}
