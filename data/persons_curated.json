@@ -541,6 +541,18 @@
       "it": "Ruggero Filcock"
     }
   ],
+  "mr:0303-cunegundis-confugiae": [
+    {
+      "name": "Cunegundis",
+      "where": "text"
+    },
+    {
+      "name": "Henricus",
+      "where": "text",
+      "it": "Enrico",
+      "role": "mentioned"
+    }
+  ],
   "mr:0303-liberatus-weiss-et-socii": [
     {
       "name": "Liberatus Weiss",
@@ -3722,6 +3734,18 @@
         "footnote": 1
       },
       "it": "Maria Anastasia di San Gervasio de Roquard"
+    }
+  ],
+  "mr:0713-henricus-imperator": [
+    {
+      "name": "Henricus",
+      "where": "text"
+    },
+    {
+      "name": "Cunegundis",
+      "where": "text",
+      "it": "Cunegonda",
+      "role": "mentioned"
     }
   ],
   "mr:0715-eutropius-et-socii": [

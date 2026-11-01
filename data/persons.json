@@ -5925,6 +5925,11 @@
         {
           "name": "Cunegundis",
           "where": "text"
+        },
+        {
+          "name": "Henricus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0303-fridericus-frisiae": [
@@ -19219,14 +19224,15 @@
           "where": "text"
         }
       ],
-      "mr:0713-henricus-et-cunegundis": [
+      "mr:0713-henricus-imperator": [
         {
           "name": "Henricus",
           "where": "text"
         },
         {
           "name": "Cunegundis",
-          "where": "text"
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0713-esdra-scriba": [
