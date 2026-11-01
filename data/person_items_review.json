@@ -7245,9 +7245,51 @@
       ],
       "failed": [
         "name: the best candidate (Q141943035) fails it",
-        "death: the best candidate (Q141943035) fails it"
+        "death: the best candidate (Q141943035) fails it",
+        "status: Q141433651 (died at Orange, 13 July 1794) has no saint or blessed status on Wikidata"
       ],
       "candidates": [
+        {
+          "wikidata": "Q141433651",
+          "label": "Andrée Minutte",
+          "description": "französische Ordensfrau aus dem Orden der Ursulinen",
+          "names": [
+            "Andrée Minutte"
+          ],
+          "human": true,
+          "statuses": [],
+          "born": "1740-02-04",
+          "died": "1794-07-13",
+          "feast": [],
+          "signals": [],
+          "birth_place": [
+            "Q1092163"
+          ],
+          "death_place": [
+            "Q187796"
+          ],
+          "burial_place": [],
+          "work_places": [],
+          "source": "curator",
+          "evidence": [
+            "human",
+            "death",
+            "place"
+          ],
+          "places": [
+            {
+              "role": "death",
+              "qid": "Q187796",
+              "label": "Orange",
+              "via": "P20"
+            }
+          ],
+          "place_labels": {
+            "death_place": [
+              "Orange"
+            ]
+          }
+        },
         {
           "wikidata": "Q141943035",
           "label": "Mary Clare of Saint Martin Blanc",
