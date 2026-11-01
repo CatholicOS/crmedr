@@ -12,12 +12,17 @@ the same file, else under the current ID. The subject follows the ID (curator,
 candidate's labels), and is an error when the rename is not decided or its ID is
 not a candidate; an edit writes the edited labels; a reject keeps the current subjects.
 
+A deprecated ID (an older edition's eulogy, never a key of the 2004 texts) is renamed in crmedr and
+the API; texts skips it. The API step re-keys the 1630, 1749 and 1914 editions, which print an eulogy
+under its 2004 ID or a deprecated one, for every rename.
+
 Order: build_person_items.py apply <decided.json>, then texts, then crmedr, then
-martyrology-texts' tests/test_registry_keys.py.
+martyrology-texts' tests/test_registry_keys.py, then api.
 
 Usage:
   apply_renames.py texts <decided.json> /path/to/martyrology-texts [--dry-run] [repo_root]
   apply_renames.py crmedr <decided.json> [--dry-run] [--regenerate /path/to/martyrology-texts] [repo_root]
+  apply_renames.py api <decided.json> /path/to/martyrology-api [--dry-run]
 """
 import json
 import re
@@ -186,11 +191,11 @@ def split_applied(rs, ids):
     return todo, done
 
 
-def check(rs, ids=None, deprecated=frozenset()):
+def check(rs, ids=None):
     """Error strings for the renames (empty: all pass).
 
-    ids = every registry ID and deprecated = the deprecated ones; ids None skips the
-    registry checks (texts judges by its own keys)."""
+    ids = every registry ID, current and deprecated (a deprecated ID, an older edition's, is renamed
+    in crmedr and the API); ids None skips the registry checks (texts and the API judge by their own keys)."""
     errors = []
     olds = {r.old for r in rs}
     seen = {}
@@ -198,8 +203,6 @@ def check(rs, ids=None, deprecated=frozenset()):
         head = f"{r.old} → {r.new}"
         if ids is not None and r.old not in ids:
             errors.append(f"{head}: no such ID")
-        elif r.old in deprecated:
-            errors.append(f"{head}: deprecated IDs are not renamed")
         numeric = any(t.isdigit() for t in r.new.split("-")[1:])
         if numeric:
             errors.append(f"{head}: a numeric token")
@@ -362,7 +365,12 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
         keys = _edition_keys(editions)
     except (OSError, ValueError) as e:
         return _report([], [], {}, [f"the 2004 edition files do not parse: {e}"])
-    todo, done = split_applied(renames(changeset), keys)
+    # A deprecated ID names an eulogy of an older edition (the API's): never a key of the 2004 texts.
+    try:
+        deprecated = _registry(repo_root)[1]
+    except (OSError, ValueError, KeyError):
+        deprecated = set()
+    todo, done = split_applied([r for r in renames(changeset) if r.old not in deprecated], keys)
     errors = check(todo) + relabel_errors(changeset)
     for r in todo:
         if r.old not in keys:
@@ -385,6 +393,48 @@ def apply_texts(changeset, texts_repo, repo_root, dry):
         files = {}
         _rekey_all(targets, mapping, False, files, errors)
     return _report([] if errors else todo, done, files, errors, "texts", leftovers)
+
+
+API_FOLDERS = ("data/editions", "scripts/data")  # the API's older editions and their alignment inputs
+MRID = re.compile(r'"(mr:\d{4}-[a-z]+(?:-[a-z]+)*)"')
+
+
+def apply_api(changeset, api_repo, dry):
+    """Step 3: re-key martyrology-api's tracked JSON under data/editions/ (the 1630, 1749 and 1914 editions,
+    their alignment, footnotes, marginalia and errata) and scripts/data/ (alignment overrides), for every
+    rename, current or deprecated: an older edition prints an eulogy under its 2004 ID, or under a deprecated
+    one. Judged by the IDs those files name: an old ID named is applied; an old ID gone with its new ID named is
+    already applied; neither is an eulogy no older edition prints, left alone."""
+    api_repo = Path(api_repo)
+    errors = changeset_errors(changeset)
+    if errors:
+        return _report([], [], {}, errors)
+    try:
+        tracked = _git_files(api_repo, *API_FOLDERS)
+    except (OSError, subprocess.CalledProcessError):
+        return _report([], [], {}, [f"{api_repo}: not a git work tree"])
+    found = [p for p in tracked if p.suffix == ".json"]
+    named = set()
+    for p in found:
+        named.update(MRID.findall(p.read_text(encoding="utf-8")))
+    rs = renames(changeset)
+    errors = check(rs) + relabel_errors(changeset)
+    todo = [r for r in rs if r.old in named]
+    done = [r for r in rs if r.old not in named and r.new in named]
+    errors += [f"{r.old} → {r.new}: {r.new} is already named by the older editions" for r in todo if r.new in named]
+    if errors or not todo:
+        return _report([] if errors else todo, done, {}, errors, "")
+    mapping = {r.old: r.new for r in todo}
+    targets = [(p, "json", False) for p in found]
+    files = {}
+    _rekey_all(targets, mapping, True, files, errors)  # every file parses first
+    if errors:
+        return _report([], done, {}, errors)
+    leftovers = scan(api_repo, mapping, targets)
+    if not dry:
+        files = {}
+        _rekey_all(targets, mapping, False, files, errors)
+    return _report([] if errors else todo, done, files, errors, "api", leftovers)
 
 
 def _registry(repo_root):
@@ -446,7 +496,7 @@ def _plan(changeset, repo_root):
                for op in changeset["operations"] if op.get("op") == "relabel" and op.get("decision") == "reject"}
     applied = [Rename(r.new, r.new, current.get(r.old, r.labels), r.category) for r in done if r.old in decided]
     only = relabel_only(changeset) + [r for r in applied if any(r.labels.values())]
-    errors = (check(todo, ids, deprecated) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
+    errors = (check(todo, ids) + check_relabels(only, ids, deprecated) + relabel_errors(changeset)
               + subject_type_errors(todo + only))
     if not errors:
         errors = _person_errors(changeset, todo, repo_root)
@@ -617,14 +667,15 @@ def render(report, repo_root=None):
                   " persons and mentions; build_gazetteer.py and build_person_items.py write the gazetteer and"
                   " person-items reports",
                   "  3. merge martyrology-texts, then crmedr",
-                  "  4. AGENTS.md step 3, martyrology-api: re-align if needed; pin vendor/crmedr, vendor/texts and"
+                  "  4. AGENTS.md step 3, martyrology-api: python3 scripts/apply_renames.py api <decided.json>"
+                  " /path/to/martyrology-api (the 1630, 1749 and 1914 editions); pin vendor/crmedr, vendor/texts and"
                   " the Dockerfile's CRMEDR_REF to the merge commits; publish a release",
                   "  5. AGENTS.md step 4, martyrology-frontend: npm run snapshot-registry, then deploy"]
     return "\n".join(lines)
 
 
 def main(argv):
-    if len(argv) < 2 or argv[0] not in ("texts", "crmedr"):
+    if len(argv) < 2 or argv[0] not in ("texts", "crmedr", "api"):
         sys.exit(__doc__)
     cmd, rest = argv[0], list(argv[1:])
     dry = "--dry-run" in rest
@@ -636,10 +687,16 @@ def main(argv):
             sys.exit(__doc__)
         regenerate = rest[i + 1]
         rest = rest[:i] + rest[i + 2:]
-    if len(rest) < (2 if cmd == "texts" else 1):
+    if len(rest) < (2 if cmd in ("texts", "api") else 1):
         sys.exit(__doc__)
     changeset = json.loads(Path(rest[0]).read_text(encoding="utf-8"))
     rest = rest[1:]
+    if cmd == "api":
+        report = apply_api(changeset, Path(rest[0]), dry)
+        print(render(report))
+        if not report.ok:
+            sys.exit(1)
+        return
     if cmd == "texts":
         texts_repo, rest = Path(rest[0]), rest[1:]
     repo_root = Path(rest[0]) if rest else Path(__file__).resolve().parent.parent
