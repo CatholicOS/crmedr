@@ -279,16 +279,43 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             add("person", where, piece, how if i == 0 else None, name=name, **({"n": p["n"]} if "n" in p else {}),
                 qid=person_qid(person_key(p)))
 
+    def across_places(p):
+        """The person's match under the names printed here (the Italian forms, else the stored name), the
+        places left free to it, and the places it crosses."""
+        src, where = source(p["where"]), p["where"]
+        taken_ = spans("person", where) + window(p)  # a list person only between their neighbours
+        found = next((f for nm in p.get("forms") or [p["name"]] if (f := find_person(src, nm, taken_))), None)
+        crossed = [] if not found else [(x["start"], x["end"]) for x in mentions if x["kind"] == "place"
+                                        and x["where"] == where and not free(found[0], [(x["start"], x["end"])])]
+        return found, crossed
+
+    def nested(p):
+        """The person's match when every place it crosses lies inside the name ("Conrádi de Placéntia
+        Confalonieri", "Costanzo Sérvoli da Fabriano"): both are marked; else None."""
+        found, crossed = across_places(p)
+        return found if found and crossed and all(inside(c, found[0]) for c in crossed) else None
+
     def not_found(p):
         name, where, src = p["name"], p["where"], source(p["where"])
         nth = {"n": p["n"]} if "n" in p else {}
         both = spans("place", where) + spans("person", where)
-        inside = find_person(src, name, spans("person", where))
-        if inside:
-            spans("person", where).append(inside[0])  # later names are not proposed over it
+        inside_, crossed = across_places(p)
+        if inside_:
+            span = inside_[0]
+            if all(inside(c, span) for c in crossed):
+                place(p, inside_, name)
+                return
+            spans("person", where).append(span)  # later names are not proposed over it
+            if len(crossed) == 1 and inside(span, crossed[0]):
+                # Inside a place phrase, which may name a city and not the saint ("In civitáte Sancti
+                # Ioánnis"): the curator decides; the place stays.
+                ask("add_mention", "person", where, span,
+                    f"{name} is named inside the place phrase: mark it inside the place if it names this person",
+                    name=name, **nth)
+                return
             place_ = next(x for x in mentions if x["kind"] == "place" and x["where"] == where
-                          and not free(inside[0], [(x["start"], x["end"])]))
-            ask("add_mention", "person", where, inside[0], f"{name} is named inside a place phrase, which was kept",
+                          and not free(span, [(x["start"], x["end"])]))
+            ask("add_mention", "person", where, span, f"{name} is named inside a place phrase, which was kept",
                 name=name, **nth)
             key = (where_key(where), place_["start"])
             if key in removals:  # one remove_mention per place, naming every person in it
@@ -385,6 +412,10 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         if p.get("n", 1) == last[group(p)] and under and (p["name"], p.get("n")) not in rank_of:
             again(p, [under], first_name_alone(p, under))
     for p in second:
+        if (found := nested(p)) is not None:  # the whole name, before a given name alone
+            place(p, found, p["name"])
+            placed.append(p)
+            continue
         found, under = look(p, fallback=True)
         if not found:
             unplaced.append(p)
@@ -538,7 +569,10 @@ def curated_place_roles(ms, items, text, lang, place_qid=lambda la: None):
         elif item["source"] != "lead":
             covering = span and next(
                 (m for m in ms if m["where"] == "text" and not free(span, [(m["start"], m["end"])])), None)
-            if span and not covering:
+            # A place printed inside a person's name ("Conrádi de Placéntia Confalonieri"), or holding one ("basílicæ
+            # sub título Sancti Michaélis"), is marked one level from it; a place across another place is proposed.
+            if span and (not covering or nests((*span, "place"), [(m["start"], m["end"], m["kind"]) for m in ms
+                                                                   if m["where"] == "text"])):
                 m = {"kind": "place", "where": "text", "start": span[0], "end": span[1], "form": text[span[0]:span[1]],
                      "qid": place_qid(item["la"]), "roles": [role_of(item)]}
                 ms.append(m)
@@ -633,11 +667,31 @@ def validate(by_edition, source):
                 for r in m.get("roles", []):
                     if m["kind"] != "place" or r.get("role") not in ROLES:
                         errors.append(f"{tag}: role {r.get('role')!r} is not a place role")
-                span = (m["start"], m["end"])
-                if not free(span, seen.get(where_key(m["where"]), [])):
+                span = (m["start"], m["end"], m["kind"])
+                if not nests(span, seen.get(where_key(m["where"]), [])):
                     errors.append(f"{tag}: overlaps another mention")
                 seen.setdefault(where_key(m["where"]), []).append(span)
     return errors
+
+
+def inside(a, b):
+    """Whether span `a` lies within span `b` and is not `b` itself."""
+    return b[0] <= a[0] and a[1] <= b[1] and (a[0], a[1]) != (b[0], b[1])
+
+
+def nests(span, others):
+    """Whether a mark (start, end, kind) may stand beside the marks already placed in its text: each one
+    it overlaps holds it or is held by it, of the other kind, one level deep (a place inside a person's
+    name, "Conrádi de Placéntia Confalonieri"; a person inside a place phrase)."""
+    for o in others:
+        if free(span[:2], [o[:2]]):
+            continue
+        outer, inner = (o, span) if inside(span, o) else (span, o) if inside(o, span) else (None, None)
+        if outer is None or outer[2] == inner[2]:
+            return False
+        if any(inside(outer, x) or (x is not inner and inside(x, inner)) for x in others + [span]):
+            return False
+    return True
 
 
 def to_file(m, src):
