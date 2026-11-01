@@ -141,6 +141,13 @@ mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person
 (Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
 martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
 
+**Henry and Cunegunda** (#253): the eulogy of 13 July commemorates the emperor Henry with his wife,
+*cum uxóre sua sancta Cunegúnde*, so both are its persons: mr:0713-henricus-gronae →
+mr:0713-henricus-et-cunegundis (Sancti Henricus et Cunegundis), Cunegundis in the Latin nominative of
+her own eulogy, mr:0303-cunegundis-confugiae, and the same person (Q61620). The place of his death no
+longer discriminates the ID; the edition's *in Francónia* for Grona near Göttingen, in Saxony, stays a
+source-error note.
+
 **Faith of Agen** (#251): *sanctæ Fídei, mártyris* is feminine, Saint Faith (Santa Fede), so
 mr:1006-fideus-aginni → mr:1006-fides-aginni, after her subject Sancta Fides Aginni.
 
