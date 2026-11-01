@@ -35,6 +35,13 @@ class SameSubjectTest(unittest.TestCase):
                                                "mr:0807-xystus-ii-et-socii": "Q127385",
                                                "mr:0916-cornelius-et-xystus-ii": "Q127385"}), [])
 
+    def test_the_sole_person_record_stands_for_a_subject_printed_otherwise(self):
+        subjects = {"mr:0312-gregorius-magnus": "Sanctus Gregorius Magnus"}
+        person_items = {"mr:0312-gregorius-magnus": {"Gregorius I Magnus": {"wikidata": "Q42827"}}}
+        self.assertEqual(l.single_subjects(subjects, person_items), {"mr:0312-gregorius-magnus": "Q42827"})
+        person_items["mr:0312-gregorius-magnus"]["Petrus"] = {"wikidata": "Q1"}
+        self.assertEqual(l.single_subjects(subjects, person_items), {})
+
     def test_a_deprecated_twin_with_another_slug_is_a_warning(self):
         entries = [{"id": "mr:0528-augustinus", "deprecated": True, "same_eulogy": ["mr:0527-augustinus-cantuariensis"]}]
         found = l.check_twins(entries, {"mr:0527-augustinus-cantuariensis": (5, 27)})
