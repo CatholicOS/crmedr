@@ -166,7 +166,7 @@
 | 12 | 12 | `mr:0712-clemens-ignatius-delgado-cebrian` |  | VN | dies_natalis |  |  |
 | 12 | 13 | `mr:0712-agnes-le-thi-thanh` |  | VN | dies_natalis |  |  |
 | 12 | 14 | `mr:0712-petrus-khanh` |  | VN | dies_natalis |  |  |
-| 13 | (1) | `mr:0713-henricus-et-cunegundis` |  | DE | dies_natalis | same as `mr:0714-henricus`; same as `mr:0715-henricus` | 2004 Latin: Source error: "in Francónia" (in Franconia), but Grona near Göttingen lies in Saxony. |
+| 13 | (1) | `mr:0713-henricus-imperator` |  | DE | dies_natalis | same as `mr:0714-henricus`; same as `mr:0715-henricus` | 2004 Latin: Source error: "in Francónia" (in Franconia), but Grona near Göttingen lies in Saxony. |
 | 13 | 2 | `mr:0713-esdra-scriba` |  | IQ | commemoratio |  |  |
 | 13 | 3 | `mr:0713-sila-discipulus` |  |  | commemoratio |  |  |
 | 13 | 4 | `mr:0713-serapion-alexandriae` |  | EG | dies_natalis |  |  |

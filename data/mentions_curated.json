@@ -926,6 +926,61 @@
           "qid": null
         }
       ],
+      "mr:0303-cunegundis-confugiae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "a43a1ebe",
+          "qid": "Q2009957",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 37,
+          "check": "f6377d46",
+          "name": "Cunegundis",
+          "qid": "Q61620"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 102,
+          "end": 109,
+          "check": "91252c86",
+          "name": "Henricus",
+          "qid": "Q103556"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 257,
+          "end": 264,
+          "check": "2e529ff2",
+          "name": "Henricus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 270,
+          "end": 278,
+          "check": "28dbf211",
+          "qid": "Q3936",
+          "roles": [
+            {
+              "role": "burial"
+            }
+          ]
+        }
+      ],
       "mr:0303-iacobinus-de-canepacci": [
         {
           "kind": "place",
@@ -11319,6 +11374,61 @@
           "check": "4adffd4b",
           "name": "Eunus",
           "qid": null
+        }
+      ],
+      "mr:0303-cunegundis-confugiae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 39,
+          "check": "38dbeed3",
+          "qid": "Q2009957",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 47,
+          "end": 56,
+          "check": "b9a46c52",
+          "name": "Cunegundis",
+          "qid": "Q61620"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 115,
+          "end": 121,
+          "check": "7a4a2186",
+          "name": "Henricus",
+          "qid": "Q103556"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 347,
+          "end": 353,
+          "check": "7a4a2186",
+          "name": "Henricus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 356,
+          "end": 364,
+          "check": "2382ad46",
+          "qid": "Q3936",
+          "roles": [
+            {
+              "role": "burial"
+            }
+          ]
         }
       ],
       "mr:0303-marinus-et-asterius": [
