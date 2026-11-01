@@ -137164,7 +137164,7 @@
           "qid": "Q129603"
         }
       ],
-      "mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa": [
+      "mr:1101-hieronymus-hermosilla-et-socii": [
         {
           "kind": "place",
           "where": "text",
@@ -137195,6 +137195,15 @@
           "check": "c0fec2aa",
           "name": "Valentinus Berrio Ochoa",
           "qid": "Q9299178"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 117,
+          "end": 137,
+          "check": "114d9ab0",
+          "name": "Petrus Almato Ribeira",
+          "qid": "Q3826988"
         }
       ],
       "mr:1101-licinius-andegavi": [
@@ -298451,7 +298460,7 @@
           "qid": "Q129603"
         }
       ],
-      "mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa": [
+      "mr:1101-hieronymus-hermosilla-et-socii": [
         {
           "kind": "place",
           "where": "text",
@@ -298482,6 +298491,15 @@
           "check": "5d12eea0",
           "name": "Valentinus Berrio Ochoa",
           "qid": "Q9299178"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 124,
+          "end": 145,
+          "check": "30887c30",
+          "name": "Petrus Almato Ribeira",
+          "qid": "Q3826988"
         }
       ],
       "mr:1101-licinius-andegavi": [

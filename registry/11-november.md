@@ -19,7 +19,7 @@
 | 1 | 13 | `mr:1101-rainerius-aretinus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Città della Pieve" where the Latin has "Burgi Sancti Sepúlcri" (Sansepolcro). |
 | 1 | 14 | `mr:1101-nonius-alvarez-pereira` | * | PT | dies_natalis |  | Nuno de Santa Maria Álvares Pereira, blessed in the 2004 editions, was canonized on 26 April 2009. 2004 English: Translation error: "lay brothers" where the Latin has "fratres oblátos" (oblate brothers). |
 | 1 | 15 | `mr:1101-petrus-paulus-navarro-et-socii` | * | JP | dies_natalis |  |  |
-| 1 | 16 | `mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa` |  | VN | dies_natalis |  |  |
+| 1 | 16 | `mr:1101-hieronymus-hermosilla-et-socii` |  | VN | dies_natalis |  |  |
 | 1 | 17 | `mr:1101-rupertus-mayer` | * | DE | dies_natalis |  |  |
 | 1 | 18 | `mr:1101-theodorus-georgius-romzsa` | * | UA | dies_natalis |  |  |
 | 2 | (1) | `mr:1102-omnium-fidelium-defunctorum` |  |  | commemoratio |  |  |
