@@ -82,7 +82,7 @@ mr:1103-libertinus-agrigenti (3\*), mr:1103-odrada-alemi (10\*), mr:1118-theofre
 mr:1119-eudo-vellavorum (6\*), mr:1215-marinus-cavensis (3\*), mr:1230-egwinus-eveshamii (7\*).
 
 Plain in the Latin print, asterisked in the CEI edition (6):
-mr:0323-rebecca-de-himlaya (11.), mr:0812-iacobus-do-mai-nam-et-socii (11., Nam Định martyrs),
+mr:0323-rebecca-ar-rayyas (11.), mr:0812-iacobus-do-mai-nam-et-socii (11., Nam Định martyrs),
 mr:0821-iosephus-dang-dinh-vien (11., Hưng Yên), mr:1201-domnolus-parisiensis (5.), mr:1203-lucius-curiae (5., Chur),
 mr:1212-simon-phan-dac-hoa (11., Phan Đắc Hòa).
 
@@ -140,6 +140,20 @@ priests and clerics put to the sword before him: mr:0417-simeon-seleuciae →
 mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person is Simeon bar Sabas
 (Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
 martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
+
+**Surname over place** (curator, 2026-11-01, from the overlaps review): where the print gives a surname or a
+cognomen after the place, the ID takes it and the place is a mark inside the name. *Ioánnis Fæsuláni, cognoménto
+Angélici*: mr:0218-ioannes-faesulani-angelicus → mr:0218-ioannes-angelicus (Beatus Ioannes Angelicus; a printed
+cognomen outranks the place, as in mr:0102-basilius-magnus). *Constántii de Fabriáno Servoli*:
+mr:0224-constantius-de-fabriano → mr:0224-constantius-servoli. *Salvatóris de Horta Grionesos*:
+mr:0318-salvator-de-horta → mr:0318-salvator-grionesos. *Ioánnis de Parma Buralli*: mr:0319-ioannes-de-parma →
+mr:0319-ioannes-buralli. *Rebéccæ de Himláya ar-Rayyās*: mr:0323-rebecca-de-himlaya → mr:0323-rebecca-ar-rayyas.
+Each person keeps the whole printed name ("Constantius de Fabriano Servoli", `data/persons_curated.json`), so the
+mark covers it with the place inside. A name with no surname keeps its place: mr:0229-antonia-de-florentia,
+mr:0327-peregrinus-de-phalerone, mr:0331-bonaventura-de-foro-livii, mr:0528-herculanus-de-plegali.
+mr:0330-ludovicus-de-casaurea (*Ludovíci de Casáurea (Archángeli) Palmentieri*) keeps his religious name as the
+ID, an exception for a famous religious name like Pius de Pietrelcina's; his secular name, Archangelus
+Palmentieri, is his other name.
 
 **Henry, emperor**: the eulogy of 13 July commemorates Henry alone, *Sancti Henríci*; his wife
 appears only in a clause about him, *cum uxóre sua sancta Cunegúnde*, and is commemorated in her own

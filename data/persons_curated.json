@@ -772,6 +772,13 @@
       "it": "Alessio"
     }
   ],
+  "mr:0218-ioannes-angelicus": [
+    {
+      "name": "Ioannes Faesulanus Angelicus",
+      "where": "text",
+      "it": "Giovanni da Fiesole, detto Angelico"
+    }
+  ],
   "mr:0218-ioannes-petrus-neel": [
     {
       "name": "Ioannes Petrus Neel",
@@ -813,6 +820,13 @@
       "name": "Randoaldus",
       "where": "text",
       "it": "Randoaldo"
+    }
+  ],
+  "mr:0224-constantius-servoli": [
+    {
+      "name": "Constantius de Fabriano Servoli",
+      "where": "text",
+      "it": "Costanzo Sérvoli da Fabriano"
     }
   ],
   "mr:0227-anna-line": [
@@ -1035,6 +1049,20 @@
       "it": "Eulogio"
     }
   ],
+  "mr:0318-salvator-grionesos": [
+    {
+      "name": "Salvator de Horta Grionesos",
+      "where": "text",
+      "it": "Salvatore Grionesos da Horta"
+    }
+  ],
+  "mr:0319-ioannes-buralli": [
+    {
+      "name": "Ioannes de Parma Buralli",
+      "where": "text",
+      "it": "Giovanni Buralli da Parma"
+    }
+  ],
   "mr:0321-thomas-pilchard": [
     {
       "name": "Thomas Pilchard",
@@ -1044,6 +1072,13 @@
       "name": "Gulielmus Pike",
       "where": "text",
       "it": "Guglielmo Pike"
+    }
+  ],
+  "mr:0323-rebecca-ar-rayyas": [
+    {
+      "name": "Rebecca de Himlaya ar-Rayyas",
+      "where": "text",
+      "it": "Rebecca ar-Rayyās da Himláya"
     }
   ],
   "mr:0323-victorianus-et-socii": [
