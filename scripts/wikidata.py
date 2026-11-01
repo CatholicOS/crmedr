@@ -663,6 +663,19 @@ class Wikidata:
                     out[qid] = raw
         return out
 
+    def event_entities(self, qids):
+        """For the reader's event popups: labels (Latin too), descriptions, claims and Wikipedia
+        sitelinks in the interface languages, by QID."""
+        out = {}
+        for i in range(0, len(qids), 50):
+            data = self._api(action="wbgetentities", ids="|".join(qids[i:i + 50]),
+                             props="labels|descriptions|claims|sitelinks", languages="|".join(("la", *DETAIL_LANGS)),
+                             sitefilter="|".join(f"{lang}wiki" for lang in DETAIL_LANGS))
+            for qid, raw in data.get("entities", {}).items():
+                if "missing" not in raw:
+                    out[qid] = raw
+        return out
+
     def commons_files(self, files):
         """Commons' extmetadata (author, license) for each file name as P18 gives
         it, without "File:"; a missing file is left out."""

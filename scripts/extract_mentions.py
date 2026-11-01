@@ -464,7 +464,7 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
 EDITIONS = {"martyrologium_romanum_2004": "la", "martyrologium_romanum_2004_it_IT": "it"}
 ITALIAN_EDITION = "martyrologium_romanum_2004_it_IT"
 PERSONS_EDITION = "martyrologium_romanum_2004"
-KINDS = ("person", "place")
+KINDS = ("person", "place", "event")
 # A span covers one name or one place designation, never more: a guard against runaway matches.
 MAX_FORM_WORDS = 20
 COMMENT = ("Where each eulogy of the 2004 editions names its persons and places (Latin and "
@@ -481,7 +481,7 @@ CURATED_COMMENT = ("Curators' corrections to data/mentions.json: for each eulogy
                    "extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a "
                    "reviewed change-set (docs/mentions-changeset.md), or by hand.")
 LABELS = [(("place", True), "Places in the text"), (("person", True), "Persons in the text"),
-          (("person", False), "Persons in footnotes")]
+          (("person", False), "Persons in footnotes"), (("event", True), "Events in the text")]
 
 
 def source_text(edition_sources, mrid, where):
@@ -592,7 +592,35 @@ def curated_place_roles(ms, items, text, lang, place_qid=lambda la: None):
     return review
 
 
-def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated):
+def with_events(ms, events, source, lang):
+    """The eulogy's marks with its events (data/events_curated.json: a council or synod by its printed
+    phrase in each language and its item): the whole phrase is one event mark, and a place mark inside it
+    goes (the eulogy keeps the place through data/gazetteer.json, where the phrase resolves to the city).
+    `source(where)` is the text the item is printed in; its `occurrence` (from 1) picks a phrase printed
+    more than once. Returns (marks, errors): a phrase not printed is an error."""
+    ms, errors = list(ms), []
+    for item in events:
+        phrase, where = item.get(lang), item.get("where", "text")
+        if not phrase:
+            continue
+        src = source(where) or ""
+        at, n = -1, item.get("occurrence", 1)
+        for _ in range(n):
+            at = src.find(phrase, at + 1)
+            if at < 0:
+                break
+        if at < 0:
+            errors.append(f"the event {phrase!r} is not printed in the {where_key(where)}")
+            continue
+        span = (at, at + len(phrase))
+        ms = [m for m in ms if not (m["kind"] == "place" and m["where"] == where
+                                    and not free(span, [(m["start"], m["end"])]))]
+        ms.append({"kind": "event", "where": where, "start": span[0], "end": span[1], "form": phrase,
+                   "qid": item["qid"]})
+    return sorted(ms, key=mention_order), errors
+
+
+def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated, events=None):
     """One edition's mentions by eulogy (code points), its review items by eulogy, and its counts."""
     out, review = {}, {}
     counts = {"expected": Counter(), "found": Counter(), "review": Counter(), "no_text": []}
@@ -629,6 +657,11 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
                 review[mrid] = rv
             counts["found"].update(hows)
             counts["review"].update(r["op"] for r in rv)
+        if (events or {}).get(mrid):
+            counts["expected"][("event", True)] += sum(1 for e in events[mrid] if e.get(lang))
+            ms, errs = with_events(ms, events[mrid], lambda w: source_text((texts, notes), mrid, w), lang)
+            counts["found"][("event", True, "curated")] += sum(1 for m in ms if m["kind"] == "event")
+            counts.setdefault("event_errors", []).extend(f"{mrid}: {e}" for e in errs)
         if ms:
             out[mrid] = sorted(ms, key=mention_order)
     return out, review, counts
@@ -906,6 +939,7 @@ def extract(texts_repo, repo_root, review_path):
     person_items = _read(data / "person_items.json", {"persons": {}})["persons"]
     curated = _read(data / "mentions_curated.json", {"editions": {}})["editions"]
     entries = _read(data / "martyrology_ids.json", {"entries": []})["entries"]
+    events = {k: v for k, v in _read(data / "events_curated.json", {}).items() if not k.startswith("$")}
     sources, by_edition, review, counts = {}, {}, {}, {}
     names = ItalianNames(name_subjects(repo_root, "la"), name_subjects(repo_root, "it"),
                          curated_forms(_read(data / "persons_curated.json", {})))
@@ -921,13 +955,14 @@ def extract(texts_repo, repo_root, review_path):
         by_edition[edition], review[edition], counts[edition] = build_edition(
             lang, *sources[edition], ed_places, ed_persons, gazetteer,
             {person_twins.get(k, k): v for k, v in person_items.items()},  # the decisions follow their persons
-            curated.get(edition, {}))
+            curated.get(edition, {}), events)
         counts[edition]["twin"] = twins
 
     def source(edition, mrid, where):
         return source_text(sources[edition], mrid, where)
 
-    errors = validate(by_edition, source)
+    errors = validate(by_edition, source) + [f"{edition} {e}" for edition in EDITIONS
+                                              for e in counts[edition].get("event_errors", [])]
     if errors:
         sys.exit("invalid mentions:\n" + "\n".join(errors))
     (data / "mentions.json").write_text(render_json(by_edition, source, texts_commit(texts_repo)), encoding="utf-8")

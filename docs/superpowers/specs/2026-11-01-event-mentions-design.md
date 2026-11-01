@@ -1,6 +1,6 @@
 # Event mentions: councils and synods
 
-Status: draft for curator review (2026-11-01).
+Status: approved by the curator (2026-11-01); crmedr implemented on this branch.
 
 ## Why
 
@@ -38,7 +38,8 @@ Not events:
 - *Concílium Sanctórum* (25 October), a name for a church, not a council.
 
 A council named only by its city's demonstrative (*qui Concílio in hac civitáte*, *tria concília hac in civitáte*) is
-an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case.
+an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case; the first
+version marks none (Successus and companions, 18 January), nor a synod no item names (*Sýnodo Romæ celebráta*, 9 May).
 
 ## Data (crmedr)
 
@@ -50,14 +51,20 @@ an event when the eulogy makes the council certain; otherwise no mark. The curat
 - `scripts/extract_mentions.py`: `KINDS` gains `event`. An event mark carries `kind`, `where`, `start`, `end`,
   `check` and `qid`, no `name` and no `roles`. A place or person mark inside an event's span is dropped. A curated
   phrase not found in the text is an error, as for persons.
-- `data/event_details.json`, written from Wikidata (network, cached like `person_details.json`): for each event QID
-  its labels (la, it, en, fr, de, es, pt), date (P585, or P580/P582), location (P276) and the Wikipedia links.
-- The gazetteer's 15 council keys move to `events_curated.json`, their QIDs reviewed there (the eight at Jev's
-  suggestion included; *Concílio Carthaginénsi* is one key for two councils, Carthage 256 (Q141808067) and 484
-  (Q141810272), and is decided per eulogy). The gazetteer no longer resolves a council phrase.
-- Eulogy places: an event's P276 joins the eulogy's places with role "mention" in place of the council item; a test
-  pins that the 1 January eulogy lists Ephesus (Q47611) and no council among its places. An event with no P276
-  (Vatican I and II, Agde, Seleucia-Ctesiphon, Aquileia) adds no place unless the curator gives one.
+- `data/event_details.json`, written by `scripts/event_details.py` from Wikidata (network, cached like
+  `person_details.json`): for each event QID its labels (la and the interface languages en, it, fr, de, es, pt),
+  descriptions, `start` and `end` (P580/P582, else the point in time P585, as year, precision and circa), the
+  place it was held (P276, a QID; the venue where Wikidata gives one, as Lyon Cathedral for Lyon II) and the
+  Wikipedia titles.
+- The gazetteer resolves each council phrase (26 keys, *Ephesíno*, *Concílio Nicǽno*, *Sýnodum
+  Chalcedonénsem*…) to the city where the council met, no longer to the council: Ephesus (Q47611), Nicaea
+  (Q739037), Chalcedon (Q337381), Lyon (Q456), Trento (Q3376), Vatican City (Q237) for Vatican I and II, Albon
+  (Q389248) for Epaone, and so on. The council's item is in `events_curated.json`, reviewed there: the eight
+  keys Jev had suggested included, and Carthage decided per eulogy (256, Q141808067, for Libosus on 29 December;
+  484, Q141810272, for Vindemialis and Longinus on 2 May).
+- Eulogy places: the curated body place behind the old mark (role "mention") stays and now resolves to the
+  city; `tests/test_events.py` pins that no eulogy lists a council among its places and that 1 January lists
+  Ephesus (Q47611).
 - Reports: `docs/mentions-report.md` counts event marks; the persons and places reports are unchanged.
 
 ## API (martyrology-api)
