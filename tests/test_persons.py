@@ -311,6 +311,13 @@ class ValidateSharedSurnameTest(unittest.TestCase):
                      "Petrina Sailland"):
             self.assertEqual(self.check(name), [], name)
 
+    def test_a_shared_surname_may_hold_a_particle(self):
+        foot = {"mr:0201-x-et-socii": [{"mark": "1", "after": "x", "text":
+                "Quarum nomina: Ioanna, Magdalena et Petrina Sailland d’Espinatz, sorores."}]}
+        for name in ("Ioanna Sailland d’Espinatz", "Magdalena Sailland d’Espinatz"):
+            self.assertEqual(ep.validate({"mr:0201-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                                         foot, {"mr:0201-x-et-socii"}), [], name)
+
     def test_the_surname_is_shared_only_across_first_names_of_one_list_item(self):
         # Elisabeth's own surname stands between her and Soiron; Vérolot is no shared surname either.
         for name in ("Elisabeth Soiron", "Catharina Sailland", "Petrina Vérolot"):

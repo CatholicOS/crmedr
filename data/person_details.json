@@ -113373,7 +113373,9 @@
   },
   "Q18710440": {
     "description": {
-      "fr": "sœur tourrière, membre des Carmélite de Compiègne, guillotinée en 1794",
+      "en": "extern sister of the Carmel of Compiègne, martyr in Paris in 1794",
+      "it": "sorella esterna del Carmelo di Compiègne, martire a Parigi nel 1794",
+      "fr": "sœur tourière du Carmel de Compiègne, martyre à Paris en 1794",
       "es": "santa y mártir"
     },
     "born": {
@@ -113391,7 +113393,10 @@
   },
   "Q18710441": {
     "description": {
-      "fr": "sœur tourrière, membre des carmélites de compiègne, guillotinée en 1794"
+      "en": "extern sister of the Carmel of Compiègne, martyr in Paris in 1794",
+      "it": "sorella esterna del Carmelo di Compiègne, martire a Parigi nel 1794",
+      "fr": "sœur tourière du Carmel de Compiègne, martyre à Paris en 1794",
+      "es": "hermana externa del Carmelo de Compiègne, mártir en París en 1794"
     },
     "born": {
       "year": 1742,
@@ -122293,6 +122298,26 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q63092713": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1757,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q63092723": {
     "description": {
       "en": "one of the Martyrs of Anjou during the French Revolution"
@@ -122303,6 +122328,26 @@
       "circa": false
     },
     "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q63092734": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1755,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {}
   },
@@ -128940,7 +128985,12 @@
     "wikipedia": {}
   },
   "Q136505458": {
-    "description": {},
+    "description": {
+      "en": "Maronite layman, martyr in Damascus in 1860",
+      "it": "laico maronita, martire a Damasco nel 1860",
+      "fr": "laïc maronite, martyr à Damas en 1860",
+      "es": "laico maronita, mártir en Damasco en 1860"
+    },
     "born": null,
     "died": {
       "year": 1860,
@@ -128951,7 +129001,12 @@
     "wikipedia": {}
   },
   "Q136505791": {
-    "description": {},
+    "description": {
+      "en": "Maronite layman, martyr in Damascus in 1860",
+      "it": "laico maronita, martire a Damasco nel 1860",
+      "fr": "laïc maronite, martyr à Damas en 1860",
+      "es": "laico maronita, mártir en Damasco en 1860"
+    },
     "born": null,
     "died": {
       "year": 1860,
@@ -128962,7 +129017,12 @@
     "wikipedia": {}
   },
   "Q136505804": {
-    "description": {},
+    "description": {
+      "en": "Maronite layman, martyr in Damascus in 1860",
+      "it": "laico maronita, martire a Damasco nel 1860",
+      "fr": "laïc maronite, martyr à Damas en 1860",
+      "es": "laico maronita, mártir en Damasco en 1860"
+    },
     "born": null,
     "died": {
       "year": 1860,
@@ -144029,6 +144089,126 @@
     },
     "born": {
       "year": 1749,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963174": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1769,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963175": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1770,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963176": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1768,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963178": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1760,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963179": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1753,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141963180": {
+    "description": {
+      "en": "French lay martyr of Angers, shot at Avrillé in 1794",
+      "it": "laica e martire francese, fucilata ad Avrillé nel 1794",
+      "fr": "martyre d'Angers, fusillée à Avrillé en 1794",
+      "es": "laica y mártir francesa, fusilada en Avrillé en 1794"
+    },
+    "born": {
+      "year": 1766,
       "precision": "year",
       "circa": false
     },

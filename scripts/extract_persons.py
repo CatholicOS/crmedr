@@ -235,7 +235,8 @@ def _shared_surname_names(printed):
     names = set()
     for j, item in enumerate(items):
         m = SHARED_SURNAME.fullmatch(item)
-        if not m or not all(w[:1].isupper() for w in [m[1], m[2], *m[3].split()]):
+        # The surname opens with a capital; a particle may follow ("Sailland d’Espinatz").
+        if not m or not all(w[:1].isupper() for w in [m[1], m[2], m[3]]):
             continue
         given = [m[1], m[2]]
         i = j - 1
