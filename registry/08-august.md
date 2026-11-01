@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:0801-septem-fratres-martyres-antiochiae` |  | TR | commemoratio |  |  |
 | 1 | 3 | `mr:0801-secundinus-romae` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "al tredicesimo miglio" (the thirteenth mile of the Via Prenestina) where the Latin has "miliário tricésimo" (the thirtieth). |
 | 1 | 4 | `mr:0801-felix-gerundae` |  | ES | dies_natalis |  |  |
-| 1 | 5 | `mr:0801-eusebius-vercellarum` |  | IT | dies_natalis | same as `mr:1216-eusebius` |  |
+| 1 | 5 | `mr:0801-eusebius-vercellensis` |  | IT | dies_natalis | same as `mr:1216-eusebius` |  |
 | 1 | 6 | `mr:0801-exsuperius-baiocarum` | * | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:0801-severus-aquitaniae` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0801-friardus-et-secundellus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Friard and Secundellus, deacons" where the Latin has "Friárdi et Secundélli diáconi" (only Secundellus was a deacon). |

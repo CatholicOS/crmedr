@@ -4,14 +4,6 @@
     {
       "check": "same-subject",
       "ids": [
-        "mr:0801-eusebius-vercellarum",
-        "mr:0802-eusebius-vercellensis"
-      ],
-      "note": "one saint, two printed forms: choose one (vercellensis?)"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
         "mr:0414-tiburtius-et-socii",
         "mr:0811-tiburtius-romae"
       ],
@@ -20,34 +12,10 @@
     {
       "check": "same-subject",
       "ids": [
-        "mr:0526-augustinus-cantuariae",
-        "mr:0527-augustinus-cantuariensis"
-      ],
-      "note": "one saint, two printed forms: choose one (cantuariensis?)"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
-        "mr:0312-gregorius-i-magnus",
-        "mr:0903-gregorius-magnus"
-      ],
-      "note": "one saint: gregorius-magnus on both days?"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
         "mr:0404-ambrosius-mediolani",
         "mr:1207-ambrosius-mediolanensis"
       ],
       "note": "one saint, two printed forms: choose one"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
-        "mr:0321-benedictus-casini",
-        "mr:0711-benedictus-nursiae"
-      ],
-      "note": "one saint (Benedict of Nursia): choose one discriminator"
     },
     {
       "check": "same-subject",
@@ -97,44 +65,12 @@
       "note": "e-for-ae: the text prints Cloceriae; rename to -cloceriae"
     },
     {
-      "check": "cross-day",
-      "ids": [
-        "mr:0321-benedictus-casini",
-        "mr:0711-benedictus-nursiae"
-      ],
-      "note": "one saint (Benedict of Nursia): choose one discriminator"
-    },
-    {
-      "check": "cross-day",
-      "ids": [
-        "mr:0312-gregorius-i-magnus",
-        "mr:0903-gregorius-magnus"
-      ],
-      "note": "one saint: gregorius-magnus on both days?"
-    },
-    {
       "check": "same-subject",
       "ids": [
         "mr:0319-ioseph-sponsus-mariae",
         "mr:0501-ioseph-opifex"
       ],
       "note": "decided (eulogy items spec, #247): 1 May takes its feast title, Opifex, as maria-regina does; Wikidata has no item for the title, so both name Joseph (Q128267)"
-    },
-    {
-      "check": "cross-day",
-      "ids": [
-        "mr:0526-augustinus-cantuariae",
-        "mr:0527-augustinus-cantuariensis"
-      ],
-      "note": "the same decision as its same-subject exception: choose one (cantuariensis?)"
-    },
-    {
-      "check": "cross-day",
-      "ids": [
-        "mr:0801-eusebius-vercellarum",
-        "mr:0802-eusebius-vercellensis"
-      ],
-      "note": "the same decision as its same-subject exception: choose one (vercellensis?)"
     }
   ]
 }

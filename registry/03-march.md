@@ -132,7 +132,7 @@
 | 12 | 3 | `mr:0312-petrus-nicomediae` |  | TR | dies_natalis |  |  |
 | 12 | 4 | `mr:0312-innocentius-i` |  | IT | depositio | same as `mr:0728-innocentius-i` |  |
 | 12 | 5 | `mr:0312-paulus-aurelianus` |  | FR | dies_natalis |  |  |
-| 12 | 6 | `mr:0312-gregorius-i-magnus` |  | IT | depositio |  |  |
+| 12 | 6 | `mr:0312-gregorius-magnus` |  | IT | depositio |  |  |
 | 12 | 7 | `mr:0312-theophanes-chronographus` |  | TR | depositio |  |  |
 | 12 | 8 | `mr:0312-elphegus-vintoniae` | * | GB | dies_natalis |  |  |
 | 12 | 9 | `mr:0312-fina-sancti-geminiani` | * | IT | dies_natalis |  |  |
@@ -224,7 +224,7 @@
 | 21 | 2 | `mr:0321-martyres-alexandrini` |  | EG | commemoratio |  |  |
 | 21 | 3 | `mr:0321-lupicinus-iurensis` |  | FR | dies_natalis |  |  |
 | 21 | 4 | `mr:0321-endeus-araniensis` | * | IE | dies_natalis |  |  |
-| 21 | 5 | `mr:0321-benedictus-casini` |  | IT | dies_natalis |  |  |
+| 21 | 5 | `mr:0321-benedictus-nursiae` |  | IT | dies_natalis |  |  |
 | 21 | 6 | `mr:0321-iacobus-confessor` |  | TR | dies_natalis |  |  |
 | 21 | 7 | `mr:0321-ioannes-valentiae` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint-Julien of Valence" where the Latin "Iúliæ Valéntiæ" is simply Valence. Translation error: "truly ruined" where the Latin has "ære dírutos" (ruined by debt). |
 | 21 | 8 | `mr:0321-nicolaus-de-flue` |  | CH | dies_natalis |  |  |

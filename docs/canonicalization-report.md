@@ -141,6 +141,15 @@ mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person
 (Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
 martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
 
+**Day of death and feast** (curator, 2026-11-01, #262): a saint whose day of death and feast are two
+eulogies takes one slug on both days, the form he is known by, though each eulogy prints its place in its own
+form. mr:0526-augustinus-cantuariae → mr:0526-augustinus-cantuariensis and mr:0801-eusebius-vercellarum →
+mr:0801-eusebius-vercellensis, after their feasts (*epíscopi Cantuariénsis*, *primi epíscopi Vercellénsis*);
+mr:0321-benedictus-casini → mr:0321-benedictus-nursiae, Benedict of Norcia, not of Monte Cassino; and
+mr:0312-gregorius-i-magnus → mr:0312-gregorius-magnus, Gregory the Great, as on 3 September. Each subject
+follows its ID; Gregory keeps his printed name, *Gregórii papæ Primi, cognoménto Magni*, as his person
+("Gregorius I Magnus", `data/persons_curated.json`). Their lint exceptions are removed.
+
 **Surname over place** (curator, 2026-11-01, from the overlaps review): where the print gives a surname or a
 cognomen after the place, the ID takes it and the place is a mark inside the name. *Ioánnis Fæsuláni, cognoménto
 Angélici*: mr:0218-ioannes-faesulani-angelicus → mr:0218-ioannes-angelicus (Beatus Ioannes Angelicus; a printed
