@@ -42,6 +42,7 @@ LANGS = ("la", "en", "it")
 SCHEMA = "crmedr-changeset/v1"
 # Files whose text also names an ID outside quotes (notes): an old ID standing alone is re-keyed there.
 PROSE_SCRIPTS = ("scripts/extract_registry.py",)
+NOT_REKEYED = ("data/id_lint_exceptions.json",)  # reviewed by hand after a rename (scripts/lint_ids.py)
 TEXTS_TESTS = "tests/test_registry_keys.py"  # its EN_UNTRANSLATED list is keyed by ID
 
 
@@ -507,7 +508,9 @@ def _targets(repo_root):
     """(path, kind, prose) of what crmedr re-keys: tracked data/ and i18n/ JSON (prose too) and
     tracked scripts/*.py (quoted IDs; prose in PROSE_SCRIPTS), never apply_renames.py itself."""
     repo_root = Path(repo_root)
-    targets = [(p, "json", True) for p in _git_files(repo_root, "data", "i18n") if p.suffix == ".json"]
+    # The lint exceptions note two IDs as they were: a rename lists them for review, never carries them.
+    targets = [(p, "json", True) for p in _git_files(repo_root, "data", "i18n")
+               if p.suffix == ".json" and p.relative_to(repo_root).as_posix() not in NOT_REKEYED]
     for p in _git_files(repo_root, "scripts"):
         rel = p.relative_to(repo_root).as_posix()
         if p.parent == repo_root / "scripts" and p.suffix == ".py" and rel != "scripts/apply_renames.py":

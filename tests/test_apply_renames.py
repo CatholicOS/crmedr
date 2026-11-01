@@ -361,6 +361,19 @@ class SubcommandsTest(unittest.TestCase):
         self.assertEqual(rep.files[str(self.root / "data" / "typology.json")], 2)
         self.assertEqual([c[1] for c in fake.calls], ["scripts/extract_registry.py", "-m"])
 
+    def test_crmedr_leaves_the_lint_exceptions_for_review(self):
+        # An exception is a curator's note about two IDs as they were: a rename lists it, never carries it.
+        exc = self.root / "data" / "id_lint_exceptions.json"
+        dump(exc, {"exceptions": [{"check": "same-subject", "ids": ["mr:0101-a", "mr:0101-b"], "note": "n"}]})
+        subprocess.run(["git", "add", "."], cwd=self.root, check=True)
+        subprocess.run(["git", "-c", "user.name=t", "-c", "user.email=t@t", "commit", "-qm", "x"], cwd=self.root,
+                       check=True)
+        before = exc.read_bytes()
+        rep = ar.apply_crmedr(self.cs, self.root, False, run=Fake())
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertEqual(exc.read_bytes(), before)
+        self.assertTrue(any(w.startswith("data/id_lint_exceptions.json:") for w in rep.leftovers), rep.leftovers)
+
     def test_relabel_without_rename(self):
         b = {"la": "Sanctus B Novus", "en": None, "it": "San B"}
         doc = cs(op("mr:0101-a", "mr:0101-a-x", decision=None),
