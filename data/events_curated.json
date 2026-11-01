@@ -1,0 +1,356 @@
+{
+  "$comment": "The councils and synods each eulogy of the 2004 editions names, as event mentions: the phrase as printed in the Latin (la) and the Italian (it), and the event's Wikidata item. The whole phrase is one mark; a place mark inside it goes, and the phrase's place resolves to the city where the council met (data/gazetteer.json). where (default the text) and occurrence (from 1) place a phrase printed elsewhere or more than once. Read by scripts/extract_mentions.py; see docs/superpowers/specs/2026-11-01-event-mentions-design.md.",
+  "mr:0101-maria-dei-genetrix": [
+    {
+      "la": "Concílio Ephesíno",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0103-florentius-viennae": [
+    {
+      "la": "Concílio Iúliæ Valéntiæ",
+      "it": "Concilio di Valence",
+      "qid": "Q2992033"
+    }
+  ],
+  "mr:0110-gregorius-x": [
+    {
+      "la": "Concílium Œcuménicum Lugdunénse Secúndum",
+      "it": "secondo Concilio Ecumenico di Lione",
+      "qid": "Q10951"
+    }
+  ],
+  "mr:0118-successus-et-socii": [
+    {
+      "la": "Concílio in hac civitáte",
+      "it": "Concilio tenutosi in questa città",
+      "qid": "Q141808067"
+    }
+  ],
+  "mr:0122-valerius-caesaraugustanus": [
+    {
+      "la": "Concílio Illiberitáno Primo",
+      "it": "primo Concilio di Elvira",
+      "qid": "Q1262455"
+    }
+  ],
+  "mr:0128-thomas-de-aquino": [
+    {
+      "la": "Concílium Œcuménicum Lugdunénse Secúndum",
+      "it": "secondo Concilio Ecumenico di Lione",
+      "qid": "Q10951"
+    }
+  ],
+  "mr:0207-pius-ix": [
+    {
+      "la": "Concílium Œcuménicum Vaticánum Primum",
+      "it": "Concilio Ecumenico Vaticano I",
+      "qid": "Q190857"
+    }
+  ],
+  "mr:0212-meletius-antiochenus": [
+    {
+      "la": "Concílio Œcuménico Constantinopolitáno Primo",
+      "it": "Concilio Ecumenico Costantinopolitano I",
+      "qid": "Q179826"
+    }
+  ],
+  "mr:0216-marutha-persicus": [
+    {
+      "la": "Concílio Seleuciénsi",
+      "it": "Concilio di Seleucia",
+      "qid": "Q1258842"
+    }
+  ],
+  "mr:0218-tarasius-constantinopoli": [
+    {
+      "la": "Concílium Nicǽnum Secúndum",
+      "it": "Concilio Niceno II",
+      "qid": "Q187201"
+    }
+  ],
+  "mr:0226-alexander-alexandrinus": [
+    {
+      "la": "Concílio Nicǽno Primo",
+      "it": "Concilio di Nicea I",
+      "qid": "Q133331"
+    }
+  ],
+  "mr:0229-hilarius-papa": [
+    {
+      "la": "Concília Nicǽnum",
+      "it": "Concili di Nicea",
+      "qid": "Q133331"
+    },
+    {
+      "la": "Ephesínum",
+      "it": "Efeso",
+      "qid": "Q184332"
+    },
+    {
+      "la": "Chalcedonénse",
+      "it": "Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:0301-albinus-andegavi": [
+    {
+      "la": "Concílium Aurelianénse Tértium",
+      "it": "III Concilio di Orléans",
+      "qid": "Q60791830"
+    }
+  ],
+  "mr:0406-eutychius-constantinopoli": [
+    {
+      "la": "Concílio Œcuménico Constantinopolitáno Secúndo",
+      "it": "Concilio Ecumenico Costantinopolitano II",
+      "qid": "Q205227"
+    }
+  ],
+  "mr:0412-damianus-papiae": [
+    {
+      "la": "Sýnodo Constantinopolitána Tértia",
+      "it": "Concilio Costantinopolitano III",
+      "qid": "Q208037"
+    }
+  ],
+  "mr:0412-iulius-i": [
+    {
+      "la": "Sardicénse Concílium",
+      "it": "Concilio di Sardica",
+      "qid": "Q1277136"
+    }
+  ],
+  "mr:0413-martinus-i": [
+    {
+      "la": "Sýnodo Lateranénsi",
+      "it": "Sinodo Lateranense",
+      "qid": "Q2642234"
+    }
+  ],
+  "mr:0416-fructuosus-dumiensis": [
+    {
+      "la": "Concílii Toletáni Décimi",
+      "it": "decimo Concilio di Toledo",
+      "qid": "Q671230"
+    }
+  ],
+  "mr:0417-acacius-melitenae": [
+    {
+      "la": "Concílio Ephesíno",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0425-stephanus-antiochiae": [
+    {
+      "la": "Concílium Chalcedonénse",
+      "it": "Concilio di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:0430-pius-v": [
+    {
+      "la": "Concílii Tridentíni",
+      "it": "Concilio di Trento",
+      "qid": "Q172991"
+    }
+  ],
+  "mr:0502-vindemialis-et-longinus": [
+    {
+      "la": "Concílio Carthaginénsi",
+      "it": "Concilio di Cartagine",
+      "qid": "Q141810272"
+    }
+  ],
+  "mr:0509-geruntius-phicoclensis": [
+    {
+      "la": "Sýnodo Romæ celebráta",
+      "it": "Sinodo celebrato a Roma",
+      "qid": "Q141966070"
+    }
+  ],
+  "mr:0515-achilleus-thaumaturgus": [
+    {
+      "la": "Concílio Œcuménico Nicǽno Primo",
+      "it": "primo Concilio Ecumenico di Nicea",
+      "qid": "Q133331"
+    }
+  ],
+  "mr:0603-ioannes-xxiii": [
+    {
+      "la": "Concílium Œcuménicum Vaticánum Secúndum",
+      "it": "Concilio Ecumenico Vaticano II",
+      "qid": "Q169789"
+    }
+  ],
+  "mr:0611-barnabas-apostolus": [
+    {
+      "la": "Concílio Hierosolymitáno",
+      "it": "Concilio di Gerusalemme",
+      "qid": "Q619950"
+    }
+  ],
+  "mr:0622-innocentius-v": [
+    {
+      "la": "Concílium Œcuménicum",
+      "it": "Concilio Ecumenico",
+      "qid": "Q10951"
+    }
+  ],
+  "mr:0627-cyrillus-alexandriae": [
+    {
+      "la": "Concílio Ephesíno",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0703-anatolius-constantinopoli": [
+    {
+      "la": "Concílio Chalcedonénsi",
+      "it": "Concilio di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:0703-leo-ii": [
+    {
+      "la": "tértium Concílium Constantinopolitánum",
+      "it": "III Concilio di Costantinopoli",
+      "qid": "Q208037"
+    }
+  ],
+  "mr:0705-athanasius-hierosolymitanus": [
+    {
+      "la": "Sýnodum Chalcedonénsem",
+      "it": "Concilio di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:0712-viventiolus-lugduni": [
+    {
+      "la": "Concílio Epaonénsi",
+      "it": "Concilio di Epaone",
+      "qid": "Q1282605"
+    }
+  ],
+  "mr:0715-bonaventura-albanensis": [
+    {
+      "la": "Concílii Œcuménici Lugdunénsis Secúndi",
+      "it": "II Concilio Ecumenico di Lione",
+      "qid": "Q10951"
+    }
+  ],
+  "mr:0715-iacobus-nisibi": [
+    {
+      "la": "Concílio Nicǽno",
+      "it": "Concilio di Nicea",
+      "qid": "Q133331"
+    }
+  ],
+  "mr:0727-caelestinus-i": [
+    {
+      "la": "Concílium Ephesínum",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0729-urbanus-ii": [
+    {
+      "la": "Concílio Claromontáno",
+      "it": "Concilio di Clermont-Ferrand",
+      "qid": "Q49964"
+    }
+  ],
+  "mr:0801-petrus-favre": [
+    {
+      "la": "Concílium Œcuménicum Tridentínum",
+      "it": "Concilio di Trento",
+      "qid": "Q172991"
+    }
+  ],
+  "mr:0805-dedicatio-basilicae-sanctae-mariae": [
+    {
+      "la": "Concílii Ephesíni",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0831-paulinus-trevirorum": [
+    {
+      "la": "Sýnodo Arelaténsi",
+      "it": "Sinodo di Arles",
+      "qid": "Q3988873"
+    }
+  ],
+  "mr:0902-iustus-lugduni": [
+    {
+      "la": "Aquileiénse Concílium",
+      "it": "Concilio di Aquileia",
+      "qid": "Q683075"
+    }
+  ],
+  "mr:0908-isaac-armeniae": [
+    {
+      "la": "Sýnodo Ephesína",
+      "it": "Concilio di Efeso",
+      "qid": "Q184332"
+    }
+  ],
+  "mr:0911-paphnutius-aegypti": [
+    {
+      "la": "Concílii Nicǽni",
+      "it": "Concilio di Nicea",
+      "qid": "Q133331"
+    }
+  ],
+  "mr:1019-gratus-iluronis": [
+    {
+      "la": "Concílio Agathénsi",
+      "it": "Concilio di Agde",
+      "qid": "Q1290650"
+    }
+  ],
+  "mr:1024-proclus-magnus": [
+    {
+      "la": "Concílio Œcuménico Chalcedonénsi",
+      "it": "Concilio Ecumenico di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:1105-gomida-keumurgian": [
+    {
+      "la": "Chalcedonénsi Sýnodo",
+      "it": "Concilio di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:1110-leo-i": [
+    {
+      "la": "Chalcedonénsi Œcuménico Concílio",
+      "it": "Concilio Ecumenico di Calcedonia",
+      "qid": "Q170531"
+    }
+  ],
+  "mr:1124-protasius-mediolani": [
+    {
+      "la": "Concílio Sardicénsi",
+      "it": "Concilio di Sardica",
+      "qid": "Q1277136"
+    }
+  ],
+  "mr:1229-libosus-vagensis": [
+    {
+      "la": "Concílio Carthaginénsi",
+      "it": "Concilio di Cartagine",
+      "qid": "Q141808067"
+    }
+  ],
+  "mr:1231-silvester-i": [
+    {
+      "la": "Nicǽna Sýnodus",
+      "it": "Concilio di Nicea",
+      "qid": "Q133331"
+    }
+  ]
+}

@@ -1074,5 +1074,44 @@ class PlaceRolesTest(unittest.TestCase):
         self.assertTrue(any("role" in e for e in errors), errors)
 
 
+
+class EventTest(unittest.TestCase):
+    TEXT = "Sollemnitas, quam Patres in Concílio Ephesíno Theotókon acclamavérunt."
+    PLACE = {"kind": "place", "where": "text", "start": 37, "end": 45, "form": "Ephesíno", "qid": "Q47611",
+             "roles": [{"role": "mention"}]}
+
+    def test_an_event_marks_its_whole_phrase_and_the_place_inside_it_goes(self):
+        ms, errors = em.with_events([dict(self.PLACE)], [{"la": "Concílio Ephesíno", "it": "Concilio di Efeso",
+                                                          "qid": "Q184332"}], lambda w: self.TEXT, "la")
+        self.assertEqual(errors, [])
+        self.assertEqual(ms, [{"kind": "event", "where": "text", "start": 28, "end": 45, "form": "Concílio Ephesíno",
+                               "qid": "Q184332"}])
+
+    def test_an_event_phrase_not_printed_is_an_error(self):
+        _, errors = em.with_events([], [{"la": "Concílio Nicǽno", "it": "Concilio di Nicea", "qid": "Q133331"}],
+                                   lambda w: self.TEXT, "la")
+        self.assertEqual(len(errors), 1)
+        self.assertIn("Concílio Nicǽno", errors[0])
+
+    def test_an_event_has_no_name_and_no_roles(self):
+        ev = {"kind": "event", "where": "text", "start": 28, "end": 45, "form": "Concílio Ephesíno", "qid": "Q184332"}
+        check = lambda m: em.validate({"ed": {"mr:x": [m]}}, lambda e, i, w: self.TEXT)
+        self.assertEqual(check(ev), [])
+        self.assertTrue(check(dict(ev, name="Ephesus")))
+        self.assertTrue(check(dict(ev, roles=[{"role": "mention"}])))
+
+    def test_the_report_counts_the_events(self):
+        from collections import Counter
+        counts = {"expected": Counter({("event", True): 2}), "found": Counter({("event", True, "curated"): 2}),
+                  "review": Counter(), "no_text": []}
+        self.assertIn("| Events in the text | 2 | 2 | 100.0% | curated 2 |", em.render_report({"ed": counts}))
+
+    def test_an_event_round_trips_through_the_file_without_name_or_roles(self):
+        ev = {"kind": "event", "where": "text", "start": 28, "end": 45, "form": "Concílio Ephesíno", "qid": "Q184332"}
+        out = em.to_file(ev, self.TEXT)
+        self.assertEqual(list(out), ["kind", "where", "start", "end", "check", "qid"])
+        self.assertEqual(em.from_file(out, self.TEXT), ev)
+
+
 if __name__ == "__main__":
     unittest.main()
