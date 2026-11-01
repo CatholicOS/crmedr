@@ -728,7 +728,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0414-tiburtius-et-socii`: Máximi
 - `mr:0416-benedictus-iosephus-labre`: Roma, Romam
 - `mr:0416-fructuosus-dumiensis`: Bracarénsis
-- `mr:0417-simeon-seleuciae`: Persárum
+- `mr:0417-simeon-bar-sabas-et-socii`: Persárum
 - `mr:0418-romanus-archutowski`: Románi
 - `mr:0419-leo-ix`: Románam, sedem Románam
 - `mr:0421-romanus-adame`: Románi

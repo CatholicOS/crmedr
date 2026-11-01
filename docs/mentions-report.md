@@ -19,10 +19,10 @@ Eulogies with persons or places but no text of their own in this edition: `mr:07
 | Mentions | Expected | Marked | Share | How |
 | --- | --- | --- | --- | --- |
 | Places in the text | 6566 | 6508 | 99.1% | as printed 6311, back-reference 36, curated 161 |
-| Persons in the text | 5749 | 5781 | 100.6% | curated 276, gap 152, given name 150, stem 10, surname 11, titled 7, untitled 32, verbatim 5143 |
+| Persons in the text | 5749 | 5780 | 100.5% | curated 276, gap 152, given name 150, stem 10, surname 11, titled 7, untitled 32, verbatim 5142 |
 | Persons in footnotes | 1364 | 1352 | 99.1% | curated 938, gap 3, stem 4, surname 122, verbatim 285 |
 
-Review operations: none.
+Review operations: add_mention 1.
 
 Eulogies whose text the edition files under their `same_eulogy` twin; their mentions are recorded under the twin's ID: `mr:0610-marcus-antonius-durando` (as `mr:1210-marcus-antonius-durando`).
 

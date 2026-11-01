@@ -1371,7 +1371,8 @@
   "mr:0417-plurimi-martyres-persidis": [
     {
       "name": "Symeon",
-      "where": "text"
+      "where": "text",
+      "role": "mentioned"
     },
     {
       "name": "Usthazades",
