@@ -224,6 +224,31 @@ def _words(s):
     return [fold(w) for w in WORD.findall(s)]
 
 
+SHARED_SURNAME = re.compile(r"([^\W\d_]+)\s+et\s+([^\W\d_]+)\s+(.+)")
+
+
+def _shared_surname_names(printed):
+    """The folded names a list of first names before one surname gives ("Ioanna, Magdalena et Petrina
+    Sailland": Ioanna Sailland, Magdalena Sailland, Petrina Sailland): the item "A et B Surname" and the
+    one-word items just before it in its group (a semicolon, colon or period closes a group), each first
+    name with the surname."""
+    names = set()
+    for group in re.split(r"[;:.]", printed):
+        items = [s.strip() for s in group.split(",")]
+        for j, item in enumerate(items):
+            m = SHARED_SURNAME.fullmatch(item)
+            # The surname opens with a capital; a particle may follow ("Sailland d’Espinatz").
+            if not m or not all(w[:1].isupper() for w in [m[1], m[2], m[3]]):
+                continue
+            given = [m[1], m[2]]
+            i = j - 1
+            while i >= 0 and len(items[i].split()) == 1 and items[i][:1].isupper():
+                given.insert(0, items[i])
+                i -= 1
+            names |= {fold(f"{g} {m[3]}") for g in given}
+    return names
+
+
 def validate(persons_by_id, footnotes_by_id, current_ids):
     errors = []
     for mrid, persons in persons_by_id.items():
@@ -269,7 +294,8 @@ def validate(persons_by_id, footnotes_by_id, current_ids):
             name = _words(p["name"])
             # As printed, or declined after "cum" ("Saturnino iuniore" for Saturninus iunior).
             if not any(words[i:i + len(name)] == name for words in (_words(printed), _words(unwrapped))
-                       for i in range(len(words))) and not find_person(printed, p["name"]):
+                       for i in range(len(words))) and not find_person(printed, p["name"]) \
+                    and fold(p["name"]) not in _shared_surname_names(printed):
                 errors.append(f"{mrid}: {p['name']!r} is not printed in footnote {n}")
     return errors
 
