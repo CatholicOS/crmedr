@@ -35142,13 +35142,17 @@
           "where": "text"
         }
       ],
-      "mr:1101-hieronymus-hermosilla-et-valentinus-berrio-ochoa": [
+      "mr:1101-hieronymus-hermosilla-et-socii": [
         {
           "name": "Hieronymus Hermosilla",
           "where": "text"
         },
         {
           "name": "Valentinus Berrio Ochoa",
+          "where": "text"
+        },
+        {
+          "name": "Petrus Almato Ribeira",
           "where": "text"
         }
       ],
