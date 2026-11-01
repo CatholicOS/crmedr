@@ -1893,7 +1893,8 @@
           "start": 0,
           "end": 20,
           "check": "cbc5cca0",
-          "name": "Beata Maria Virgo de Fatima"
+          "name": "Beata Maria Virgo de Fatima",
+          "qid": null
         },
         {
           "kind": "place",
@@ -2980,6 +2981,140 @@
           "qid": null
         }
       ],
+      "mr:0710-emmanuel-ruiz-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 16,
+          "check": "e80a1d63",
+          "qid": "Q3766",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 58,
+          "check": "55f2bd1e",
+          "name": "Emmanuel Ruiz",
+          "qid": "Q3052860"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 35,
+          "check": "73b27aab",
+          "name": "Carmelus Volta",
+          "qid": "Q11735906"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 37,
+          "end": 49,
+          "check": "ff263a6c",
+          "name": "Petrus Soler",
+          "qid": "Q11818085"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 51,
+          "end": 67,
+          "check": "7523a45d",
+          "name": "Nicolaus Alberca",
+          "qid": "Q11780832"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 69,
+          "end": 88,
+          "check": "8352ff06",
+          "name": "Engelbertus Kolland",
+          "qid": "Q1341927"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 90,
+          "end": 106,
+          "check": "04fdee39",
+          "name": "Ascanius Nicanor",
+          "qid": "Q9161182"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 126,
+          "end": 143,
+          "check": "88d82bf4",
+          "name": "Franciscus Pinazo",
+          "qid": "Q9262820"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 147,
+          "end": 172,
+          "check": "91092b91",
+          "name": "Ioannes Iacobus Fernández",
+          "qid": "Q6300057"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 212,
+          "end": 222,
+          "check": "d722f8ba",
+          "name": "Franciscus Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 224,
+          "end": 231,
+          "check": "05d611c9",
+          "name": "Mootius Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 235,
+          "end": 251,
+          "check": "ffc2455b",
+          "name": "Raphael Massabki",
+          "qid": null
+        }
+      ],
       "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
         {
           "kind": "place",
@@ -3057,7 +3192,8 @@
           "start": 0,
           "end": 20,
           "check": "cbc5cca0",
-          "name": "Beata Maria Virgo de Monte Carmelo"
+          "name": "Beata Maria Virgo de Monte Carmelo",
+          "qid": null
         },
         {
           "kind": "place",
@@ -3116,6 +3252,208 @@
           "end": 251,
           "check": "c3afd929",
           "name": "Rufina",
+          "qid": null
+        }
+      ],
+      "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "17800f17",
+          "qid": "Q90",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 90,
+          "check": "7079b536",
+          "name": "Maria Magdalena Claudina Lidoine",
+          "qid": "Q10380545"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 125,
+          "end": 142,
+          "check": "d0c2c36b",
+          "qid": "Q109325093",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 67,
+          "check": "db9bd8a4",
+          "name": "Maria Anna Francisca a Sancto Ludovico Brideau",
+          "qid": "Q18710444"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 69,
+          "end": 106,
+          "check": "432d454a",
+          "name": "Maria Anna a Iesu Crucifixo Piedcourt",
+          "qid": "Q18710412"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 108,
+          "end": 163,
+          "check": "2b61e30d",
+          "name": "Anna Maria Magdalena Thouret",
+          "qid": "Q1067362"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 165,
+          "end": 231,
+          "check": "088ab045",
+          "name": "Maria Claudia Cypriana Brard",
+          "qid": "Q18710419"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 233,
+          "end": 275,
+          "check": "8e7005fb",
+          "name": "Maria Gabriela de Croissy",
+          "qid": "Q18710407"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 277,
+          "end": 320,
+          "check": "c594e007",
+          "name": "Maria Anna Hanisset",
+          "qid": "Q18710438"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 322,
+          "end": 372,
+          "check": "73ed3805",
+          "name": "Maria Gabriela Trézelle",
+          "qid": "Q18710432"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 374,
+          "end": 424,
+          "check": "bd5c90bf",
+          "name": "Rosa Chrétien de Neufville",
+          "qid": "Q7367608"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 426,
+          "end": 467,
+          "check": "257bf8df",
+          "name": "Anna Pelras",
+          "qid": "Q18710434"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 469,
+          "end": 504,
+          "check": "cf3b9b52",
+          "name": "Maria Genovefa Meunier",
+          "qid": "Q2994822"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 506,
+          "end": 547,
+          "check": "b36a86fd",
+          "name": "Angelica Roussel",
+          "qid": "Q18710436"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 549,
+          "end": 577,
+          "check": "9a9269ef",
+          "name": "Maria a Sancta Martha Dufour",
+          "qid": "Q18710425"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 579,
+          "end": 621,
+          "check": "c8fbd218",
+          "name": "Elisabeth Iulia a Sancto Francisco Vérolot",
+          "qid": "Q18710406"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 623,
+          "end": 632,
+          "check": "a72aefec",
+          "name": "Catharina Soiron",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 636,
+          "end": 650,
+          "check": "ad8a92b4",
+          "name": "Teresia Soiron",
           "qid": null
         }
       ],
@@ -3745,7 +4083,8 @@
           "start": 46,
           "end": 52,
           "check": "50ddf619",
-          "name": "Ioanna de Aza"
+          "name": "Ioanna de Aza",
+          "qid": null
         }
       ],
       "mr:0804-ia-persidis": [
@@ -4404,7 +4743,8 @@
           "start": 34,
           "end": 41,
           "check": "97a4325f",
-          "name": "Fantinus Iunior"
+          "name": "Fantinus Iunior",
+          "qid": null
         }
       ],
       "mr:0831-ioseph-de-arimathaea-et-nicodemus": [
@@ -15705,6 +16045,39 @@
           "check": "79ca798f",
           "name": "Ioannes Iacobus Fernández",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 207,
+          "end": 216,
+          "check": "f00ecd22",
+          "name": "Franciscus Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 218,
+          "end": 225,
+          "check": "05d611c9",
+          "name": "Mootius Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 228,
+          "end": 245,
+          "check": "f733081b",
+          "name": "Raphael Massabki",
+          "qid": null
         }
       ],
       "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
@@ -15896,6 +16269,208 @@
           "end": 231,
           "check": "e7791d3f",
           "name": "Rufina",
+          "qid": null
+        }
+      ],
+      "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "44b19b44",
+          "qid": "Q90",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 85,
+          "check": "e7563098",
+          "name": "Maria Magdalena Claudina Lidoine",
+          "qid": "Q10380545"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 119,
+          "end": 139,
+          "check": "555c11dc",
+          "qid": "Q109325093",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 24,
+          "end": 66,
+          "check": "144d1747",
+          "name": "Maria Anna Francisca a Sancto Ludovico Brideau",
+          "qid": "Q18710444"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 68,
+          "end": 105,
+          "check": "2cecaef7",
+          "name": "Maria Anna a Iesu Crucifixo Piedcourt",
+          "qid": "Q18710412"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 107,
+          "end": 165,
+          "check": "190c72d0",
+          "name": "Anna Maria Magdalena Thouret",
+          "qid": "Q1067362"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 167,
+          "end": 233,
+          "check": "5ed1e66d",
+          "name": "Maria Claudia Cypriana Brard",
+          "qid": "Q18710419"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 235,
+          "end": 278,
+          "check": "94f97209",
+          "name": "Maria Gabriela de Croissy",
+          "qid": "Q18710407"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 280,
+          "end": 325,
+          "check": "f0750712",
+          "name": "Maria Anna Hanisset",
+          "qid": "Q18710438"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 327,
+          "end": 376,
+          "check": "0a21cfb6",
+          "name": "Maria Gabriela Trézelle",
+          "qid": "Q18710432"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 378,
+          "end": 427,
+          "check": "02ad139d",
+          "name": "Rosa Chrétien de Neufville",
+          "qid": "Q7367608"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 429,
+          "end": 473,
+          "check": "34d0ba85",
+          "name": "Anna Pelras",
+          "qid": "Q18710434"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 475,
+          "end": 509,
+          "check": "86212e76",
+          "name": "Maria Genovefa Meunier",
+          "qid": "Q2994822"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 511,
+          "end": 555,
+          "check": "e441be91",
+          "name": "Angelica Roussel",
+          "qid": "Q18710436"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 557,
+          "end": 584,
+          "check": "0c3bac1d",
+          "name": "Maria a Sancta Martha Dufour",
+          "qid": "Q18710425"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 586,
+          "end": 628,
+          "check": "144c7b09",
+          "name": "Elisabeth Iulia a Sancto Francisco Vérolot",
+          "qid": "Q18710406"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 630,
+          "end": 638,
+          "check": "54be11d7",
+          "name": "Catharina Soiron",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 641,
+          "end": 654,
+          "check": "ced9e5fb",
+          "name": "Teresia Soiron",
           "qid": null
         }
       ],
@@ -19827,7 +20402,8 @@
           "start": 25,
           "end": 31,
           "check": "3ce64935",
-          "name": "Alpinus"
+          "name": "Alpinus",
+          "qid": null
         }
       ],
       "mr:0915-maria-perdolens": [
@@ -21812,7 +22388,8 @@
           "start": 45,
           "end": 51,
           "check": "9904f3b7",
-          "name": "Severinus"
+          "name": "Severinus",
+          "qid": null
         }
       ],
       "mr:1026-witta-buriburgensis": [
