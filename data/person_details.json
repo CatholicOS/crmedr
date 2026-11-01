@@ -113371,6 +113371,41 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q18710440": {
+    "description": {
+      "fr": "sœur tourrière, membre des Carmélite de Compiègne, guillotinée en 1794",
+      "es": "santa y mártir"
+    },
+    "born": {
+      "year": 1748,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q18710441": {
+    "description": {
+      "fr": "sœur tourrière, membre des carmélites de compiègne, guillotinée en 1794"
+    },
+    "born": {
+      "year": 1742,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q18710444": {
     "description": {
       "it": "carmelitana di Compiègne, martire della Rivoluzione francese nel 1794",
@@ -128901,6 +128936,39 @@
     "description": {},
     "born": null,
     "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q136505458": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 1860,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q136505791": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 1860,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q136505804": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 1860,
+      "precision": "year",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {}
   },
