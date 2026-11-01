@@ -38,8 +38,9 @@ Not events:
 - *Concílium Sanctórum* (25 October), a name for a church, not a council.
 
 A council named only by its city's demonstrative (*qui Concílio in hac civitáte*, *tria concília hac in civitáte*) is
-an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case; the first
-version marks none (Successus and companions, 18 January), nor a synod no item names (*Sýnodo Romæ celebráta*, 9 May).
+an event when the eulogy makes the council certain; otherwise no mark. The curator decides each such case: *Concílio in hac civitáte*
+(Successus and companions, 18 January, at Carthage) is the Council of Carthage of 256 (Q141808067). A synod no item
+names (*Sýnodo Romæ celebráta*, 9 May) is not marked.
 
 ## Data (crmedr)
 

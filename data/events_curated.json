@@ -21,6 +21,13 @@
       "qid": "Q10951"
     }
   ],
+  "mr:0118-successus-et-socii": [
+    {
+      "la": "Concílio in hac civitáte",
+      "it": "Concilio tenutosi in questa città",
+      "qid": "Q141808067"
+    }
+  ],
   "mr:0122-valerius-caesaraugustanus": [
     {
       "la": "Concílio Illiberitáno Primo",
@@ -101,18 +108,18 @@
       "qid": "Q205227"
     }
   ],
-  "mr:0412-iulius-i": [
-    {
-      "la": "Sardicénse Concílium",
-      "it": "Concilio di Sardica",
-      "qid": "Q1277136"
-    }
-  ],
   "mr:0412-damianus-papiae": [
     {
       "la": "Sýnodo Constantinopolitána Tértia",
       "it": "Concilio Costantinopolitano III",
       "qid": "Q208037"
+    }
+  ],
+  "mr:0412-iulius-i": [
+    {
+      "la": "Sardicénse Concílium",
+      "it": "Concilio di Sardica",
+      "qid": "Q1277136"
     }
   ],
   "mr:0413-martinus-i": [
