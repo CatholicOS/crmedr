@@ -70333,7 +70333,7 @@
       }
     },
     {
-      "id": "mr:0713-henricus-gronae",
+      "id": "mr:0713-henricus-et-cunegundis",
       "month": 7,
       "day": 13,
       "entry": 1,
@@ -70361,7 +70361,8 @@
         }
       ],
       "date": {
-        "year": 1024,
+        "from": 1024,
+        "to": 1039,
         "basis": "death",
         "source": "wikidata"
       },
@@ -147109,7 +147110,7 @@
       "attested_in": "martyrologium_romanum_1630",
       "country": "DE",
       "same_eulogy": [
-        "mr:0713-henricus-gronae",
+        "mr:0713-henricus-et-cunegundis",
         "mr:0715-henricus"
       ]
     },
@@ -147122,7 +147123,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "DE",
       "same_eulogy": [
-        "mr:0713-henricus-gronae",
+        "mr:0713-henricus-et-cunegundis",
         "mr:0714-henricus"
       ]
     },

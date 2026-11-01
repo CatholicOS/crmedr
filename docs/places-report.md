@@ -806,7 +806,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0711-benedictus-nursiae`: Occidénte
 - `mr:0711-bertrandus-grandis-silvae`: Cisterciénse
 - `mr:0712-david-gunston`: Hierosolymitáni
-- `mr:0713-henricus-gronae`: Roma
+- `mr:0713-henricus-et-cunegundis`: Roma
 - `mr:0714-tuscana-veronae`: Hierosolymitáni
 - `mr:0716-maria-de-monte-carmelo`: Israel
 - `mr:0717-colmanus-vindobonensis`: Hierosólymam

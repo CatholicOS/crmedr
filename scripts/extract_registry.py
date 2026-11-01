@@ -3821,7 +3821,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Budrio\" where the Latin has \"Búdriæ\" (Budrie)."
         ),
     },
-    "mr:0713-henricus-gronae": {
+    "mr:0713-henricus-et-cunegundis": {
         EDITION_LA: (
             "Source error: \"in Francónia\" (in Franconia), but Grona near Göttingen lies in "
             "Saxony."

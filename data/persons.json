@@ -19219,9 +19219,13 @@
           "where": "text"
         }
       ],
-      "mr:0713-henricus-gronae": [
+      "mr:0713-henricus-et-cunegundis": [
         {
           "name": "Henricus",
+          "where": "text"
+        },
+        {
+          "name": "Cunegundis",
           "where": "text"
         }
       ],
