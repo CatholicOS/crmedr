@@ -101,6 +101,15 @@ class EulogyMentionsTest(unittest.TestCase):
         adds = sorted((r["start"], r["end"]) for r in review)
         self.assertLessEqual(adds[0][1], adds[1][0])
 
+    def test_a_place_inside_a_persons_italian_name_keeps_both_marks(self):
+        text = "Ad Ascoli Piceno, beato Costanzo Sérvoli da Fabriano, sacerdote."
+        ms, review, _ = mentions_of(text, [{"role": "birth", "la": "Fabriáno", "it": "Fabriano", "source": "record"}],
+                                    [{"name": "Constantius de Fabriano Servoli", "where": "text",
+                                      "forms": ["Costanzo Sérvoli da Fabriano"]}], lang="it")
+        self.assertEqual(review, [])
+        self.assertEqual(sorted((m["kind"], m["form"]) for m in ms),
+                         [("person", "Costanzo Sérvoli da Fabriano"), ("place", "Fabriano")])
+
     def test_a_place_inside_a_persons_name_keeps_both_marks(self):
         text = "Romæ, beáti Ioánnis Fæsuláni, cognoménto Angélici, presbýteri."
         ms, review, _ = mentions_of(text, [{"role": "birth", "la": "Fæsuláni", "source": "record"}],

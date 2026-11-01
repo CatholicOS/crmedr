@@ -279,17 +279,30 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
             add("person", where, piece, how if i == 0 else None, name=name, **({"n": p["n"]} if "n" in p else {}),
                 qid=person_qid(person_key(p)))
 
+    def across_places(p):
+        """The person's match under the names printed here (the Italian forms, else the stored name), the
+        places left free to it, and the places it crosses."""
+        src, where = source(p["where"]), p["where"]
+        found = next((f for nm in p.get("forms") or [p["name"]] if (f := find_person(src, nm, spans("person", where)))),
+                     None)
+        crossed = [] if not found else [(x["start"], x["end"]) for x in mentions if x["kind"] == "place"
+                                        and x["where"] == where and not free(found[0], [(x["start"], x["end"])])]
+        return found, crossed
+
+    def nested(p):
+        """The person's match when every place it crosses lies inside the name ("Conrádi de Placéntia
+        Confalonieri", "Costanzo Sérvoli da Fabriano"): both are marked; else None."""
+        found, crossed = across_places(p)
+        return found if found and crossed and all(inside(c, found[0]) for c in crossed) else None
+
     def not_found(p):
         name, where, src = p["name"], p["where"], source(p["where"])
         nth = {"n": p["n"]} if "n" in p else {}
         both = spans("place", where) + spans("person", where)
-        inside_ = find_person(src, name, spans("person", where))
+        inside_, crossed = across_places(p)
         if inside_:
             span = inside_[0]
-            crossed = [(x["start"], x["end"]) for x in mentions if x["kind"] == "place" and x["where"] == where
-                       and not free(span, [(x["start"], x["end"])])]
             if all(inside(c, span) for c in crossed):
-                # The places lie inside the person's name ("Conrádi de Placéntia Confalonieri"): both are marked.
                 place(p, inside_, name)
                 return
             spans("person", where).append(span)  # later names are not proposed over it
@@ -399,6 +412,10 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         if p.get("n", 1) == last[group(p)] and under and (p["name"], p.get("n")) not in rank_of:
             again(p, [under], first_name_alone(p, under))
     for p in second:
+        if (found := nested(p)) is not None:  # the whole name, before a given name alone
+            place(p, found, p["name"])
+            placed.append(p)
+            continue
         found, under = look(p, fallback=True)
         if not found:
             unplaced.append(p)
