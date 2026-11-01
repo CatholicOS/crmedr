@@ -2926,7 +2926,7 @@ REVIEW_EDITION_NOTES = {
             "Lancaster."
         ),
     },
-    "mr:0318-salvator-de-horta": {
+    "mr:0318-salvator-grionesos": {
         EDITION_EN: (
             "Translation error: \"from Girona\" where the Latin has the surname \"Grionesos\"."
         ),
@@ -2942,7 +2942,7 @@ REVIEW_EDITION_NOTES = {
             "Via Domitia; this is not rendered."
         ),
     },
-    "mr:0323-rebecca-de-himlaya": {
+    "mr:0323-rebecca-ar-rayyas": {
         EDITION_IT: (
             "Translation error: \"Congregazione delle Suore Libanesi Maronite\" where the Latin "
             "has \"Ordine Libanénsi Sancti Antónii Maronitárum\" (the Lebanese Maronite Order of "

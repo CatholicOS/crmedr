@@ -222,7 +222,7 @@
 | 18 | 3 | `mr:0218-tarasius-constantinopoli` |  | TR | dies_natalis | same as `mr:0225-tarasius` |  |
 | 18 | 4 | `mr:0218-angilbertus-centulae` | * | FR | dies_natalis |  |  |
 | 18 | 5 | `mr:0218-theotonius-conimbriae` | * | PT | dies_natalis |  |  |
-| 18 | 6 | `mr:0218-ioannes-faesulani-angelicus` | * | IT | dies_natalis |  |  |
+| 18 | 6 | `mr:0218-ioannes-angelicus` | * | IT | dies_natalis |  |  |
 | 18 | 7 | `mr:0218-gulielmus-harrington` | * | GB | dies_natalis |  |  |
 | 18 | 8 | `mr:0218-ioannes-pibush` | * | GB | dies_natalis |  | 2004 English: Translation error: "while yet alive" is added; the Latin has only "ferróque exenterátus" (and disembowelled with the blade). |
 | 18 | 9 | `mr:0218-franciscus-regis-clet` |  | CN | dies_natalis |  |  |
@@ -278,7 +278,7 @@
 | 24 | 1 | `mr:0224-evetius-nicomediae` |  | TR | dies_natalis |  |  |
 | 24 | 2 | `mr:0224-modestus-trevirorum` |  | DE | dies_natalis |  |  |
 | 24 | 3 | `mr:0224-ethelbertus-cantuariae` |  | GB | dies_natalis |  |  |
-| 24 | 4 | `mr:0224-constantius-de-fabriano` | * | IT | dies_natalis |  |  |
+| 24 | 4 | `mr:0224-constantius-servoli` | * | IT | dies_natalis |  |  |
 | 24 | 5 | `mr:0224-marcus-de-marconi` | * | IT | dies_natalis |  |  |
 | 24 | 6 | `mr:0224-iosepha-naval-girbes` | * | ES | dies_natalis |  |  |
 | 24 | 7 | `mr:0224-thomas-maria-fusco` | * | IT | dies_natalis |  |  |

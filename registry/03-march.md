@@ -192,14 +192,14 @@
 | 18 | 5 | `mr:0318-braulio-caesaraugustae` |  | ES | dies_natalis | same as `mr:0326-braulio` |  |
 | 18 | 6 | `mr:0318-eduardus-warehami` |  | GB | dies_natalis |  |  |
 | 18 | 7 | `mr:0318-anselmus-lucensis` |  | IT | dies_natalis |  | 2004 English: Translation error: "where he was a vigorous helper" where the Latin "cui strénuus fuit adiútor" means he was a vigorous helper to the pope. |
-| 18 | 8 | `mr:0318-salvator-de-horta` |  | IT | dies_natalis |  | 2004 English: Translation error: "from Girona" where the Latin has the surname "Grionesos". |
+| 18 | 8 | `mr:0318-salvator-grionesos` |  | IT | dies_natalis |  | 2004 English: Translation error: "from Girona" where the Latin has the surname "Grionesos". |
 | 18 | 9 | `mr:0318-ioannes-thules-et-rogerius-wrenno` | * | GB | dies_natalis |  | 2004 English: Translation error: "Lancashire" where the Latin "Lancástriæ" is the town of Lancaster. |
 | 18 | 10 | `mr:0318-amata-le-bouteiller` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Savior at Vicoigne" where the Latin has "Sancti Salvatóris Vicecómitis" (Saint-Sauveur-le-Vicomte). |
 | 19 | (1) | `mr:0319-ioseph-sponsus-mariae` |  | PS | dies_natalis |  |  |
 | 19 | 2 | `mr:0319-ioannes-parranensis` |  | IT | dies_natalis |  |  |
 | 19 | 3 | `mr:0319-isnardus-de-chiampo` | * | IT | dies_natalis |  |  |
 | 19 | 4 | `mr:0319-andreas-gallerani` | * | IT | dies_natalis |  |  |
-| 19 | 5 | `mr:0319-ioannes-de-parma` | * | IT | dies_natalis |  |  |
+| 19 | 5 | `mr:0319-ioannes-buralli` | * | IT | dies_natalis |  |  |
 | 19 | 6 | `mr:0319-sibyllina-biscossi` | * | IT | dies_natalis |  |  |
 | 19 | 7 | `mr:0319-marcus-de-montegallo` | * | IT | dies_natalis |  |  |
 | 19 | 8 | `mr:0319-narcissus-turchan` | * | DE | dies_natalis |  |  |
@@ -251,7 +251,7 @@
 | 23 | 8 | `mr:0323-petrus-higgins` | * | IE | dies_natalis |  |  |
 | 23 | 9 | `mr:0323-iosephus-oriol` |  | ES | dies_natalis |  |  |
 | 23 | 10 | `mr:0323-annuntiata-cocchetti` | * | IT | dies_natalis |  |  |
-| 23 | 11 | `mr:0323-rebecca-de-himlaya` |  | LB | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). Translation error: "Congregazione delle Suore Libanesi Maronite" where the Latin has "Ordine Libanénsi Sancti Antónii Maronitárum" (the Lebanese Maronite Order of Saint Anthony). |
+| 23 | 11 | `mr:0323-rebecca-ar-rayyas` |  | LB | dies_natalis | CEI: asterisk True | 2004 Latin: Printed here without an asterisk (entry 11.); the Italian (CEI) edition marks the entry with one. 2004 Italian: Asterisked here; the Latin editio altera prints the entry without an asterisk (11.). Translation error: "Congregazione delle Suore Libanesi Maronite" where the Latin has "Ordine Libanénsi Sancti Antónii Maronitárum" (the Lebanese Maronite Order of Saint Anthony). |
 | 23 | 12 | `mr:0323-methodius-dominicus-trcka` | * | SK | dies_natalis |  |  |
 | 24 | 1 | `mr:0324-timolaus-et-socii` |  | IL | dies_natalis |  |  |
 | 24 | 2 | `mr:0324-secundulus-mauretaniae` |  | DZ | dies_natalis |  |  |
