@@ -167,9 +167,8 @@ class CheckTest(unittest.TestCase):
         self.assertEqual(self.errs(R("mr:0101-a", "mr:0101-y"), R("mr:0101-b", "mr:0101-y")),
                          ["mr:0101-b → mr:0101-y: two renames give mr:0101-y"])
 
-    def test_deprecated_old_id(self):
-        self.assertEqual(ar.check([R("mr:0101-c", "mr:0101-c-x")], self.IDS, {"mr:0101-c"}),
-                         ["mr:0101-c → mr:0101-c-x: deprecated IDs are not renamed"])
+    def test_a_deprecated_old_id_may_be_renamed(self):
+        self.assertEqual(ar.check([R("mr:0101-c", "mr:0101-c-x")], self.IDS), [])
 
     def test_no_registry_skips_registry_checks(self):
         self.assertEqual(ar.check([R("mr:0101-zz", "mr:0101-taken")]), [])
@@ -329,6 +328,16 @@ class SubcommandsTest(unittest.TestCase):
         commit(t)
         self.texts_wip = t / "data" / "editions" / ar.EDITIONS[0] / "02.json"
         dump(self.texts_wip, {"mr:0101-a": "wip"})
+        self.api = Path(self.root.parent) / "api"
+        a = self.api
+        dump(a / "data" / "editions" / "martyrologium_romanum_1749" / "01.json", {"mr:0101-a": "t", "mr:0101-old": "o"})
+        dump(a / "data" / "editions" / "martyrologium_romanum_1749" / "alignment.json",
+             {"ids": {"mr:0101-a": {"method": "same-day"}, "mr:0101-old": {"method": "coined-deprecated"}}})
+        dump(a / "scripts" / "data" / "align_1749_overrides.json", {"x": "mr:0101-a"})
+        (a / "README.md").write_text("Example: mr:0101-a.\n")
+        commit(a)
+        self.api_wip = a / "data" / "editions" / "martyrologium_romanum_1749" / "02.json"
+        dump(self.api_wip, {"mr:0101-a": "wip"})
         cands = [{"new_id": "mr:0101-a-x", "labels": {"la": "Sanctus A X", "en": None, "it": "Sant'A X"}},
                  {"new_id": "mr:0101-b-y", "labels": {"la": "Sanctus B Y", "en": "Saint B Y", "it": None}}]
         self.cs = cs(op("mr:0101-a", "mr:0101-a-x", cands=cands),
@@ -722,9 +731,88 @@ class SubcommandsTest(unittest.TestCase):
                          ["the change-set has no operations list"])
         self.assertEqual(ar.apply_crmedr(bad[1], self.root, True).errors, ["not a crmedr-changeset/v1 document"])
 
-    def test_deprecated_old_id_is_an_error(self):
-        rep = ar.apply_crmedr(cs(op("mr:0101-old", "mr:0101-old-x", cands=[])), self.root, True, run=Fake())
-        self.assertEqual(rep.errors, ["mr:0101-old → mr:0101-old-x: deprecated IDs are not renamed"])
+    def test_a_deprecated_id_is_renamed_in_crmedr_and_the_api_and_skipped_by_texts(self):
+        # A deprecated ID names an eulogy of an older edition (the API's): the 2004 texts never hold it.
+        doc = cs(op("mr:0101-old", "mr:0101-old-x", cands=[]))
+        texts = ar.apply_texts(doc, self.texts, self.root, False)
+        self.assertTrue(texts.ok, texts.errors)
+        self.assertEqual((texts.applied, texts.files), ([], {}))
+        crmedr = ar.apply_crmedr(doc, self.root, False, run=Fake())
+        self.assertTrue(crmedr.ok, crmedr.errors)
+        self.assertIn("mr:0101-old-x", json.loads((self.root / "i18n" / "la.json").read_text()))
+        api = ar.apply_api(doc, self.api, False)
+        self.assertTrue(api.ok, api.errors)
+        self.assertEqual(json.loads((self.api / "data" / "editions" / "martyrologium_romanum_1749" / "01.json")
+                                    .read_text()), {"mr:0101-a": "t", "mr:0101-old-x": "o"})
+
+    def test_texts_still_skips_a_deprecated_rename_after_crmedr_applied_it(self):
+        doc = cs(op("mr:0101-old", "mr:0101-old-x", cands=[]))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        ids = self.root / "data" / "martyrology_ids.json"
+        ids.write_text(ids.read_text().replace('"mr:0101-old"', '"mr:0101-old-x"'))  # as the rebuild writes it
+        again = ar.apply_texts(doc, self.texts, self.root, False)
+        self.assertTrue(again.ok, again.errors)
+        self.assertEqual((again.applied, again.files), ([], {}))
+
+    def test_api_refuses_a_repository_without_older_editions(self):
+        rep = ar.apply_api(self.cs, self.texts, True)  # a git work tree, but not martyrology-api
+        self.assertFalse(rep.ok)
+        self.assertIn("no tracked JSON under data/editions", rep.errors[0])
+
+    def test_api_finishes_a_run_that_stopped_part_way(self):
+        # One file re-keyed, the other not yet: the new ID elsewhere is no collision.
+        ed = self.api / "data" / "editions" / "martyrologium_romanum_1749"
+        (ed / "01.json").write_text((ed / "01.json").read_text().replace('"mr:0101-a"', '"mr:0101-a-x"'))
+        rep = ar.apply_api(self.cs, self.api, False)
+        self.assertTrue(rep.ok, rep.errors)
+        self.assertIn("mr:0101-a-x", json.loads((ed / "alignment.json").read_text())["ids"])
+
+    def test_api_refuses_a_file_naming_both_the_old_and_the_new_id(self):
+        ed = self.api / "data" / "editions" / "martyrologium_romanum_1749"
+        dump(ed / "01.json", {"mr:0101-a": "t", "mr:0101-a-x": "u"})
+        rep = ar.apply_api(self.cs, self.api, False)
+        self.assertFalse(rep.ok)
+        self.assertIn("01.json", rep.errors[0])
+
+    def test_api_rekeys_the_older_editions_and_their_alignment_data(self):
+        rep = ar.apply_api(self.cs, self.api, False)
+        self.assertTrue(rep.ok, rep.errors)
+        ed = self.api / "data" / "editions" / "martyrologium_romanum_1749"
+        self.assertEqual(json.loads((ed / "01.json").read_text()), {"mr:0101-a-x": "t", "mr:0101-old": "o"})
+        self.assertIn("mr:0101-a-x", json.loads((ed / "alignment.json").read_text())["ids"])
+        self.assertEqual(json.loads((self.api / "scripts" / "data" / "align_1749_overrides.json").read_text()),
+                         {"x": "mr:0101-a-x"})
+        self.assertEqual(json.loads(self.api_wip.read_text()), {"mr:0101-a": "wip"})  # untracked
+        self.assertEqual(rep.leftovers, ("README.md:1",))
+        # mr:0101-b is in no older edition: nothing to do there, and no error
+        self.assertEqual([r.old for r in rep.applied], ["mr:0101-a"])
+
+    def test_api_judges_by_its_own_ids_and_a_rerun_is_safe(self):
+        self.assertTrue(ar.apply_api(self.cs, self.api, False).ok)
+        again = ar.apply_api(self.cs, self.api, False)
+        self.assertTrue(again.ok, again.errors)
+        self.assertEqual((again.applied, [r.old for r in again.skipped], again.files), ([], ["mr:0101-a"], {}))
+
+    def test_api_dry_run_and_failed_check_write_nothing(self):
+        f = self.api / "data" / "editions" / "martyrologium_romanum_1749" / "01.json"
+        before = f.read_bytes()
+        self.assertTrue(ar.apply_api(self.cs, self.api, True).ok)
+        self.assertFalse(ar.apply_api(cs(op("mr:0101-a", "mr:0102-a-x", cands=[])), self.api, False).ok)
+        self.assertEqual(f.read_bytes(), before)
+
+    def test_main_runs_the_api_step_and_crmedr_names_it_next(self):
+        decided = self.root.parent / "decided.json"
+        decided.write_text(json.dumps(self.cs), encoding="utf-8")
+        with contextlib.redirect_stdout(io.StringIO()) as out:
+            ar.main(["api", str(decided), str(self.api)])
+        self.assertIn("mr:0101-a → mr:0101-a-x", out.getvalue())
+        self.assertIn("mr:0101-a-x", json.loads((self.api / "data" / "editions" / "martyrologium_romanum_1749" /
+                                                 "01.json").read_text()))
+        self.assertIn("apply_renames.py api", ar.render(ar.apply_crmedr(self.cs, self.root, False, run=Fake()), self.root))
+
+    def test_api_outside_a_git_work_tree_is_an_error(self):
+        rep = ar.apply_api(self.cs, self.root.parent / "nowhere", True)
+        self.assertIn("not a git work tree", rep.errors[0])
 
     def test_texts_outside_a_git_work_tree_is_an_error(self):
         rep = ar.apply_texts(self.cs, self.root.parent / "nowhere", self.root, True)
