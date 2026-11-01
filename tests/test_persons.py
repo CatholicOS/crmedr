@@ -323,6 +323,15 @@ class ValidateSharedSurnameTest(unittest.TestCase):
         for name in ("Elisabeth Soiron", "Catharina Sailland", "Petrina Vérolot"):
             self.assertTrue(self.check(name), name)
 
+    def test_the_scan_back_stops_at_a_group_separator(self):
+        # "Elisabeth; Catharina et Teresia Soiron": Elisabeth is in a group of her own.
+        foot = {"mr:0717-x-et-socii": [{"mark": "1", "after": "x", "text":
+                "Quarum nomina: Elisabeth; Maria, Catharina et Teresia Soiron."}]}
+        check = lambda name: ep.validate({"mr:0717-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                                         foot, {"mr:0717-x-et-socii"})
+        self.assertEqual(check("Maria Soiron"), [])
+        self.assertTrue(check("Elisabeth Soiron"))
+
 
 class RenderTest(unittest.TestCase):
     def test_json_shape(self):
