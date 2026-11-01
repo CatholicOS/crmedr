@@ -76,7 +76,7 @@
 | 5 | 20 | `mr:1005-marianus-skrzypczak` | * | PL | dies_natalis |  | 2004 Italian: Misprint: "Skrzypezak" where the Latin has "Skrzypczak". |
 | 6 | (1) | `mr:1006-bruno-turris` |  | DE | dies_natalis |  | 2004 Italian: Translation error: "valle di Chartroux" where the Latin has "valle Cartúsiæ in Alpibus" (the valley of the Chartreuse in the Alps). |
 | 6 | 2 | `mr:1006-sagaris-laodiceae` |  | TR | dies_natalis |  |  |
-| 6 | 3 | `mr:1006-fideus-aginni` |  | FR | dies_natalis |  |  |
+| 6 | 3 | `mr:1006-fides-aginni` |  | FR | dies_natalis |  |  |
 | 6 | 4 | `mr:1006-renatus-surrenti` |  | IT | dies_natalis |  |  |
 | 6 | 5 | `mr:1006-romanus-autissiodori` |  | FR | dies_natalis |  |  |
 | 6 | 6 | `mr:1006-magnus-opitergii` | * | IT | commemoratio |  | 2004 English: Translation error: "in the Venetian region" where the Latin "Venétiis" means at Venice. |
