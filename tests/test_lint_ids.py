@@ -14,6 +14,11 @@ class GrammarTest(unittest.TestCase):
         found = l.check_grammar(["mr:0101-felix", "mr:0230-felix", "mr:0101-Felix", "mr:0101-felix--x", "mr:101-x"])
         self.assertEqual([f[1][0] for f in found], ["mr:0230-felix", "mr:0101-Felix", "mr:0101-felix--x", "mr:101-x"])
 
+    def test_only_ascii_digits_and_the_whole_id(self):
+        # "١" is an Arabic-Indic digit, which \d accepts; "$" also matches before a trailing newline.
+        found = l.check_grammar(["mr:0\u066101-felix", "mr:0101-felix\n"])
+        self.assertEqual([f[1][0] for f in found], ["mr:0\u066101-felix", "mr:0101-felix\n"])
+
     def test_an_id_is_never_used_twice(self):
         entries = [{"id": "mr:0901-priscus-capuae"}, {"id": "mr:0901-priscus-capuae", "deprecated": True}]
         self.assertEqual(l.check_unique(entries), [("unique", ["mr:0901-priscus-capuae"], "used 2 times")])
@@ -58,6 +63,21 @@ class TextTest(unittest.TestCase):
                  "mr:0920-andreas-et-socii": "Memoria sanctorum Andreae et sociorum."}
         found = l.check_cross_day(current, texts, {})
         self.assertEqual([f[0] for f in found], ["cross-day-other"])
+
+
+class StaleExceptionTest(unittest.TestCase):
+    def test_an_exception_no_error_matches_is_an_error_of_its_own(self):
+        excepted = [{"check": "same-subject", "ids": ["mr:0101-a-x", "mr:0201-a-y"], "note": "n"},
+                    {"check": "same-subject", "ids": ["mr:0101-b-x", "mr:0201-b-y"], "note": "n"}]
+        found = [("same-subject", ["mr:0201-b-y", "mr:0101-b-x"], "why")]
+        self.assertEqual(l.stale_exceptions(excepted, found, {"same-subject"}),
+                         [("stale-exception", ["mr:0101-a-x", "mr:0201-a-y"],
+                           "same-subject: no longer an error: remove the exception")])
+        self.assertIn("stale-exception", l.ERRORS)
+
+    def test_an_exception_of_a_check_that_did_not_run_is_not_stale(self):
+        excepted = [{"check": "cross-day", "ids": ["mr:0101-a", "mr:0102-a-x"], "note": "n"}]
+        self.assertEqual(l.stale_exceptions(excepted, [], {"same-subject"}), [])
 
 
 class RegistryTest(unittest.TestCase):

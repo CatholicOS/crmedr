@@ -15,7 +15,8 @@ still deciding):
 - ae            a place in the slug keeps the printed æ/œ: cordubae, not cordube (needs the texts);
 - cross-day     a "cuius memoria cras/heri agitur" reference and the eulogy it points to name their
                 saint alike (needs the texts); a reference to another subject's feast is a warning;
-- bare          a single-person eulogy whose slug is a bare name (warning; drafts under review).
+- bare          a single-person eulogy whose slug is a bare name (warning; drafts under review);
+- stale-exception  an exception that no error of a check run matches: remove it.
 
 The URI scheme (CatholicOS/cdcf-uri-scheme) owns the grammar; this script owns the checks only the
 registry's data can decide.
@@ -31,7 +32,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 
-ID = re.compile(r"^mr:(\d{2})(\d{2})-([a-z0-9]+(?:-[a-z0-9]+)*)$")
+ID = re.compile(r"mr:([0-9]{2})([0-9]{2})-([a-z0-9]+(?:-[a-z0-9]+)*)")  # whole IDs (fullmatch), ASCII digits
 EXCEPTIONS = "data/id_lint_exceptions.json"
 
 
@@ -60,7 +61,7 @@ def fold(text):
 def check_grammar(ids):
     out = []
     for mrid in ids:
-        m = ID.match(mrid)
+        m = ID.fullmatch(mrid)
         if not m:
             out.append(("grammar", [mrid], "not mr:MMDD-slug in lowercase ASCII words"))
             continue
@@ -151,7 +152,16 @@ def check_bare(subjects):
     return out
 
 
-ERRORS = {"grammar", "unique", "same-subject", "ae", "cross-day"}
+ERRORS = {"grammar", "unique", "same-subject", "ae", "cross-day", "stale-exception"}
+TEXT_CHECKS = {"ae", "cross-day"}  # run only with the texts
+
+
+def stale_exceptions(excepted, found, ran):
+    """An exception of a check that ran which no finding matches: the error it noted is gone (fixed, or
+    its IDs renamed), so the exception must go too, or it would hide that error if it came back."""
+    keys = {(f[0], tuple(sorted(f[1]))) for f in found}
+    return [("stale-exception", sorted(x["ids"]), f"{x['check']}: no longer an error: remove the exception")
+            for x in excepted if x["check"] in ran and (x["check"], tuple(sorted(x["ids"]))) not in keys]
 
 
 def lint(root=ROOT, texts_repo=None):
@@ -171,7 +181,9 @@ def lint(root=ROOT, texts_repo=None):
     path = root / EXCEPTIONS
     excepted = json.loads(path.read_text(encoding="utf-8"))["exceptions"] if path.exists() else []
     known = {(x["check"], tuple(sorted(x["ids"]))) for x in excepted}
+    ran = ERRORS - ({"stale-exception"} | (set() if texts_repo else TEXT_CHECKS))
     errors = [f for f in found if f[0] in ERRORS and (f[0], tuple(sorted(f[1]))) not in known]
+    errors += stale_exceptions(excepted, found, ran)
     warnings = [f for f in found if f not in errors]
     return errors, warnings
 

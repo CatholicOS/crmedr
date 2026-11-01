@@ -28,26 +28,10 @@
     {
       "check": "same-subject",
       "ids": [
-        "mr:1127-valerianus-aquileiensis",
-        "mr:1215-valerianus-avensanus"
-      ],
-      "note": "probably a wrong person item: two different Valeriani"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
         "mr:0312-gregorius-i-magnus",
         "mr:0903-gregorius-magnus"
       ],
       "note": "one saint: gregorius-magnus on both days?"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
-        "mr:0622-flavius-clemens",
-        "mr:1123-clemens-i"
-      ],
-      "note": "wrong person item: Flavius Clemens linked to Pope Clement I (Q42887)"
     },
     {
       "check": "same-subject",
@@ -68,26 +52,10 @@
     {
       "check": "same-subject",
       "ids": [
-        "mr:0919-eustochius-turonum",
-        "mr:0928-eustochius-bethlehem"
-      ],
-      "note": "wrong person item: Eustochius of Tours vs Eustochium of Bethlehem"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
         "mr:0219-georgius-vabrensis",
         "mr:1109-georgius-ludevae"
       ],
       "note": "one saint (abbot of Vabres, bishop of Lodève): choose one discriminator"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
-        "mr:0906-magnus-faucensis",
-        "mr:1006-magnus-opitergii"
-      ],
-      "note": "probably a wrong person item: Magnus of Füssen vs Magnus of Oderzo"
     },
     {
       "check": "same-subject",
@@ -104,14 +72,6 @@
         "mr:1023-benedictus-pictavorum"
       ],
       "note": "probably a wrong person item: two different Benedicti"
-    },
-    {
-      "check": "same-subject",
-      "ids": [
-        "mr:0512-pancratius-romae",
-        "mr:0708-pancratius-tauromenii"
-      ],
-      "note": "wrong person item: Pancras of Rome vs Pancras of Taormina"
     },
     {
       "check": "same-subject",
@@ -151,6 +111,30 @@
         "mr:0903-gregorius-magnus"
       ],
       "note": "one saint: gregorius-magnus on both days?"
+    },
+    {
+      "check": "same-subject",
+      "ids": [
+        "mr:0319-ioseph-sponsus-mariae",
+        "mr:0501-ioseph-opifex"
+      ],
+      "note": "decided (eulogy items spec, #247): 1 May takes its feast title, Opifex, as maria-regina does; Wikidata has no item for the title, so both name Joseph (Q128267)"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0526-augustinus-cantuariae",
+        "mr:0527-augustinus-cantuariensis"
+      ],
+      "note": "the same decision as its same-subject exception: choose one (cantuariensis?)"
+    },
+    {
+      "check": "cross-day",
+      "ids": [
+        "mr:0801-eusebius-vercellarum",
+        "mr:0802-eusebius-vercellensis"
+      ],
+      "note": "the same decision as its same-subject exception: choose one (vercellensis?)"
     }
   ]
 }
