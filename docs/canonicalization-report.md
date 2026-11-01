@@ -148,8 +148,8 @@ Henríco imperatóre*. So #253's mr:0713-henricus-gronae → mr:0713-henricus-et
 the ID takes the printed *Romanórum imperátor*: mr:0713-henricus-imperator (Sanctus Henricus,
 imperator). Like -papa, imperator is a unique title and outranks the place of death; the 1630 and 1749
 twins, mr:0714-henricus and mr:0715-henricus, are drafted to the same -imperator. Each saint is a person
-mentioned in the other's eulogy: Cunegundis (Q61620) on 13 July, Henricus (Q103556) on 3 March, both
-times he is named there. mr:0303-cunegundis-confugiae keeps its printed place: Kaufungen, where she
+mentioned in the other's eulogy: Cunegundis (Q61620) on 13 July, once; Henricus (Q103556) on 3 March,
+twice, *cum cóniuge sancto Henríco* and *sancti Henríci ossa*. mr:0303-cunegundis-confugiae keeps its printed place: Kaufungen, where she
 died; Luxembourg, her family's, is not printed. The edition's *in Francónia* for Grona near Göttingen,
 in Saxony, stays a source-error note.
 
