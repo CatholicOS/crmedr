@@ -130,12 +130,19 @@ city is their place of death (curated, since it does not open the text).
 19 March: mr:0501-ioseph-sponsus-mariae → mr:0501-ioseph-opifex. The ID follows its subject, Sanctus
 Ioseph Opifex; the person mentioned is Joseph (Q128267), as on 19 March.
 
+**Joseph, Spouse of the Blessed Virgin Mary** (#251): the subject of mr:0319-ioseph-sponsus-mariae
+carries the full title, Sanctus Ioseph Sponsus Beatae Mariae Virginis. The ID keeps its short form; the
+title is a discriminator, so the person stays Ioseph (Q128267).
+
 **Simeon bar Sabas and his companions** (#250): the first eulogy of 17 April commemorates Simeon
 bar Sabas, bishop of Seleucia and Ctesiphon, with a *turba centum ámplius sociórum*, bishops,
 priests and clerics put to the sword before him: mr:0417-simeon-seleuciae →
 mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person is Simeon bar Sabas
 (Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
 martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
+
+**Faith of Agen** (#251): *sanctæ Fídei, mártyris* is feminine, Saint Faith (Santa Fede), so
+mr:1006-fideus-aginni → mr:1006-fides-aginni, after her subject Sancta Fides Aginni.
 
 **Repaired source text**: the Word transcription's 3-20 v1 was truncated; the la cell was
 restored from the print (Commemoratio sancti Archippi...). ID: mr:0320-archippus-commilito.
@@ -897,7 +904,7 @@ the following eulogies of their day, run in by the OCR.
 | mr:0908-petrus-claver-carthagine | mr:0908-petrus-claver |
 | mr:0923-lini | mr:0923-linus-papa |
 | mr:0927-caji | mr:0927-caius-mediolani |
-| mr:1006-fideus-agenni | mr:1006-fideus-aginni |
+| mr:1006-fideus-agenni | mr:1006-fides-aginni |
 | mr:1007-marcus-romae | mr:1007-marcus-papa |
 | mr:1016-lullus-moguntiae | mr:1016-lullus-moguntinus |
 | mr:1022-donatus-scotus-tuscia | mr:1022-donatus-scotus |
