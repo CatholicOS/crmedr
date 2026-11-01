@@ -43,7 +43,7 @@ ENTRY_NOTES = {
     "mr:0104-emmanuel-gonzalez-garcia": "Manuel González García, blessed in the 2004 editions, "
                                         "was canonized on 16 October 2016.",
     # 1749/1914 source errors and identity remarks found in the #51 audit (set 6, reviewed).
-    "mr:1003-candida": (
+    "mr:1003-candida-romae": (
         "The 1749 and 1914 editions commemorate a male martyr, Candidus; the 2004 edition has "
         "Candida, a woman, in the cemetery of Pontianus. It is probably the 2004 correction of "
         "the same commemoration."
@@ -62,7 +62,7 @@ ENTRY_NOTES = {
     ),
     "mr:1105-theotimus-et-socii": (
         "In the 1749 and 1914 editions this eulogy opens with Domninus, whom the 2004 edition "
-        "commemorates separately (mr:1105-domninus); the rest of the group is Theotimus and "
+        "commemorates separately (mr:1105-domninus-caesareae); the rest of the group is Theotimus and "
         "companions."
     ),
     # Acts after the 2004 edition (martyrology-texts#153, sections B and C): canonizations of
@@ -134,7 +134,7 @@ ENTRY_NOTES = {
     "mr:0615-aloysius-maria-palazzolo": "Luigi Maria Palazzolo, blessed in the 2004 editions, was canonized on 15 May 2022.",
     "mr:0624-anastasia-garcia-zavala": "María Guadalupe García Zavala, blessed in the 2004 editions, was canonized on 12 May 2013.",
     "mr:0627-margarita-bays": "Marguerite Bays, blessed in the 2004 editions, was canonized on 13 October 2019.",
-    "mr:0628-irenaeus": "Irenaeus was declared a Doctor of the Church on 21 January 2022.",
+    "mr:0628-irenaeus-lugdunensis": "Irenaeus was declared a Doctor of the Church on 21 January 2022.",
     "mr:0704-petrus-georgius-frassati": "Pier Giorgio Frassati, blessed in the 2004 editions, was canonized on 7 September 2025.",
     "mr:0706-nazaria-a-sancta-teresia": (
         "Nazaria Ignacia of St Teresa of Jesus March Mesa, blessed in the 2004 editions, was canonized on 14 "
@@ -207,7 +207,7 @@ ENTRY_NOTES = {
     ),
     "mr:1024-aloysius-guanella": "Luigi Guanella, blessed in the 2004 editions, was canonized on 23 October 2011.",
     "mr:1029-caietanus-errico": "Gaetano Errico, blessed in the 2004 editions, was canonized on 12 October 2008.",
-    "mr:1030-angelus": "Angelo of Acri, blessed in the 2004 editions, was canonized on 15 October 2017.",
+    "mr:1030-angelus-acrii": "Angelo of Acri, blessed in the 2004 editions, was canonized on 15 October 2017.",
     "mr:1101-nonius-alvarez-pereira": "Nuno de Santa Maria Álvares Pereira, blessed in the 2004 editions, was canonized on 26 April 2009.",
     "mr:1105-guido-maria-conforti": "Guido Maria Conforti, blessed in the 2004 editions, was canonized on 23 October 2011.",
     "mr:1107-vincentius-grossi": "Vincenzo Grossi, blessed in the 2004 editions, was canonized on 18 October 2015.",
@@ -218,7 +218,7 @@ ENTRY_NOTES = {
     "mr:1228-catharina-volpicelli": "Caterina Volpicelli, blessed in the 2004 editions, was canonized on 26 April 2009.",
     # Places with no known site (gazetteer status unresolved, crmedr #178): the eulogy names a
     # place whose location is unidentified or unknown.
-    "mr:1021-malchus": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia.",
+    "mr:1021-malchus-maroneae": "The site of Maronia near Antioch, where Malchus lived as a monk, is not identified; it is not the Thracian Maroneia.",
     "mr:0722-martyres-massilitani": "The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille.",
     "mr:1128-papinianus-vitensis-et-mansuetus-urusitanus": "The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified.",
     "mr:0301-leo-lucas": (
@@ -227,11 +227,11 @@ ENTRY_NOTES = {
         "presso il monte Mula\" (in the monastery by Mount Mula) under the hegumen Christopher before they moved "
         "to the Mercurion (Q3855082). The monastery's own site is lost; the place is mapped at the mountain."
     ),
-    "mr:1022-lupentius": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
+    "mr:1022-lupentius-catalaunensis": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
     "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
     "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
     "mr:0721-simeon-salus": "Leontius's Life places Simeon and John's hermitage by the Dead Sea near the Arnon (Wadi Mujib, Jordan); the exact site is unknown.",
-    "mr:1204-adrehildis": (
+    "mr:1204-adrehildis-cenomanorum": (
         "The monastery is most likely the nuns' abbey of Saint-Julien-du-Pré at Le Mans (Q1476), whose church is "
         "Notre-Dame-du-Pré (Q3580415). The Benedictine tradition (English Wikipedia, Saint Ada) has Bishop "
         "Aiglibert of Le Mans transfer her from Soissons (Q167152) \"to the monastery of Pré (St. Julian de "
@@ -246,8 +246,8 @@ ENTRY_NOTES = {
         "Pietro in Ciel d'Oro\" (was a monk at Pavia in the monastery of San Pietro in Ciel d'Oro), and that his "
         "abbot sent him to Comacchio (Q95097) to oversee the monastery's supply of salt."
     ),
-    "mr:0919-pomposa": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
-    "mr:0927-bonfilius": (
+    "mr:0919-pomposa-cordubae": "The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain.",
+    "mr:0927-bonfilius-fulginatensis": (
         "The monastery of Storace was the Benedictine abbey of Santa Maria di Storaco (Q141922767) near "
         "Filottrano (Q124029, Ancona). U. Nicolini (Dizionario Biografico degli Italiani 12, 1971) writes that "
         "Bonfilius, born at Osimo (Q124554) about 1040, \"giovanissimo entrò a S. Maria di Storaco in quel di "
@@ -296,8 +296,8 @@ ENTRY_NOTES = {
         "Wikipedia places the cave Manēay ayr beside the spring of the Great Illuminator Monastery (Q107324554) on the "
         "western slope of Mount Sepuh. The cave's exact position is not mapped."
     ),
-    "mr:1218-gatianus": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
-    "mr:0724-balduinus": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
+    "mr:1218-gatianus-turonum": "The site of the Christian cemetery at Tours where Gatian was buried is not identified.",
+    "mr:0724-balduinus-claravallensis": "The original abbey of San Matteo, on the hill of Monticchio in the plain of Rieti, is not identified; the map shows San Pastore near Contigliano, where its community moved in 1234, after Baldwin's time.",
     "mr:0109-eustratius-thaumaturgus": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified.",
     "mr:0330-clinius-aquini": (
         "The monastery of Saint Peter of the Wood (San Pietro della Foresta, Q141922221) stood in the Liri "
@@ -324,7 +324,7 @@ ENTRY_NOTES = {
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
     # possible sites) or a site the archaeology places differently.
     "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",
-    "mr:0925-cleopha": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
+    "mr:0925-cleopha-discipulus": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
     "mr:0929-michael-gabriel-et-raphael-archangeli": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
 }
 
@@ -371,7 +371,7 @@ EDITION_NOTES = {
             "with a day of their own, such as Emmanuel Lê Văn Phụng (13 July), are listed here too."
         ),
     },
-    "mr:1124-balsamus": {
+    "mr:1124-balsamus-cavensis": {
         EDITION_EN: (
             "Omission: the text breaks off after \"amid troubles and conflicts\"; the Latin "
             "continues \"ætátis suæ cum sapiéntia et prudéntia múnere suo functus est\" (of his "
@@ -744,7 +744,7 @@ EDITION_NOTES = {
             "Coutances)."
         ),
     },
-    "mr:0417-simeon-seleuciae": {
+    "mr:0417-simeon-bar-sabas-et-socii": {
         EDITION_EN: (
             "Translation error: \"Sapor, Second King of the Persians\" where the Latin has \"Sápore "
             "Persárum rege Secúndo\" (Sapor II, King of the Persians)."
@@ -850,7 +850,7 @@ EDITION_NOTES = {
             "Neopórtus\" (Newgate Prison, London)."
         ),
     },
-    "mr:0612-basilides": {
+    "mr:0612-basilides-lorii": {
         EDITION_EN: (
             "Translation error: \"Loreto\" where the Latin has \"Lórii\" (Lorium, on the Via "
             "Aurelia)."
@@ -862,7 +862,7 @@ EDITION_NOTES = {
             "(the city of Xianxian)."
         ),
     },
-    "mr:0623-walherus": {
+    "mr:0623-walherus-onhayae": {
         EDITION_EN: (
             "Translation error: \"while still bearing the tonsure of Remigius\" where the Latin has "
             "\"remígii tonsa mactátus\" (killed with an oar)."
@@ -874,12 +874,12 @@ EDITION_NOTES = {
             "\"matris, Spíritu Sancto replétæ\" (his mother, filled with the Holy Spirit)."
         ),
     },
-    "mr:0625-salomon": {
+    "mr:0625-salomon-britanniae-minoris": {
         EDITION_EN: (
             "Translation error: \"attacked\" where the Latin has \"obcæcátus\" (blinded)."
         ),
     },
-    "mr:0626-salvius": {
+    "mr:0626-salvius-valentianae": {
         EDITION_EN: (
             "Translation error: \"Valence\" where the Latin has \"Valentiánam\" (Valenciennes)."
         ),
@@ -890,7 +890,7 @@ EDITION_NOTES = {
             "\"via Ostiénsi confóssus\" (pierced on the Ostian Way)."
         ),
     },
-    "mr:0702-lidanus": {
+    "mr:0702-lidanus-setiae": {
         EDITION_EN: (
             "Translation error: \"Settimo\" where the Latin has \"Sétiæ\" (Sezze)."
         ),
@@ -925,7 +925,7 @@ EDITION_NOTES = {
             "(Vallombrosa)."
         ),
     },
-    "mr:0715-bernardus": {
+    "mr:0715-bernardus-montis-calerii": {
         EDITION_EN: (
             "Translation error: \"Mont Cenis\" where the Latin has \"Monte Calério\" (Moncalieri)."
         ),
@@ -936,7 +936,7 @@ EDITION_NOTES = {
             "of Jesus)."
         ),
     },
-    "mr:0717-fredegandus": {
+    "mr:0717-fredegandus-turnini": {
         EDITION_EN: (
             "Translation error: \"Tournai\" where the Latin has \"Turníni\" (Deurne), and \"southern "
             "Brabant\" where it has \"Brabántia Austrásiæ\"."
@@ -953,7 +953,7 @@ EDITION_NOTES = {
             "companions)."
         ),
     },
-    "mr:0720-aurelius": {
+    "mr:0720-aurelius-carthaginensis": {
         EDITION_EN: (
             "Translation error: \"moved the episcopal seat from the place of the idol\" where the "
             "Latin \"simulácri deæ Cæléstis loco collocávit\" means he set it in the place of the "
@@ -978,7 +978,7 @@ EDITION_NOTES = {
             "afterwards shot in the street) is omitted."
         ),
     },
-    "mr:0720-vulmarus": {
+    "mr:0720-vulmarus-bononiensis": {
         EDITION_EN: (
             "Translation error: \"Bologna\" where the Latin \"in pago Bononiénsi Gálliæ\" is the "
             "district of Boulogne."
@@ -989,13 +989,13 @@ EDITION_NOTES = {
             "Translation error: \"Lugduni\" where the Latin has \"beáti\" (blessed)."
         ),
     },
-    "mr:0723-severus": {
+    "mr:0723-severus-bizyae": {
         EDITION_EN: (
             "Translation error: \"Bizerte in Tunisia\" where the Latin has \"Bízyæ in Thrácia\" (Vize "
             "in Thrace)."
         ),
     },
-    "mr:0727-desideratus": {
+    "mr:0727-desideratus-bisuntinus": {
         EDITION_EN: (
             "Translation error: \"Salins-les-Bains\" where the Latin \"Ledóne Salinário\" is "
             "Lons-le-Saunier."
@@ -1007,7 +1007,7 @@ EDITION_NOTES = {
             "Secundélli diáconi\" (only Secundellus was a deacon)."
         ),
     },
-    "mr:0804-eleutherius": {
+    "mr:0804-eleutherius-tarsiae": {
         EDITION_EN: (
             "Translation error: \"Tarsus\" where the Latin has \"Társiæ\" (Tarsia, in Bithynia; "
             "Tarsus is in Cilicia)."
@@ -1018,12 +1018,12 @@ EDITION_NOTES = {
             "Translation error: \"Mariannhill\" where the Latin has \"Marianópoli\" (Montreal)."
         ),
     },
-    "mr:0804-ia": {
+    "mr:0804-ia-persidis": {
         EDITION_EN: (
             "Translation error: \"Saint Ira\" where the Latin has \"sanctæ Iæ\" (Saint Ia)."
         ),
     },
-    "mr:0805-cassianus": {
+    "mr:0805-cassianus-augustoduni": {
         EDITION_EN: (
             "Translation error: \"At Lyon\" where the Latin has \"Augustodúni\" (Autun)."
         ),
@@ -1044,7 +1044,7 @@ EDITION_NOTES = {
             "Translation error: \"Gibraltar\" where the Latin has \"in Gálliam\" (France)."
         ),
     },
-    "mr:0816-stephanus": {
+    "mr:0816-stephanus-albae-regalis": {
         EDITION_EN: (
             "Translation error: \"being Alba Regalis just and peaceful ... at in Hungary\" where "
             "the Latin has \"iustus et pacíficus ... donec Albæ Regáli in Hungária\" (just and "
@@ -1052,7 +1052,7 @@ EDITION_NOTES = {
             "has \"ópibus\" (wealth)."
         ),
     },
-    "mr:0817-iero": {
+    "mr:0817-iero-frisiae": {
         EDITION_EN: (
             "Translation error: \"Jerome\" where the Latin has \"Ierónis\" (Iero, Jeron), a different "
             "name."
@@ -1077,18 +1077,18 @@ EDITION_NOTES = {
             "before the persecutors of human and Christian dignity)."
         ),
     },
-    "mr:0823-zachaeus": {
+    "mr:0823-zachaeus-hierosolymorum": {
         EDITION_EN: (
             "Translation error: \"Zacharias\" where the Latin has \"Zachǽi\" (Zacchaeus)."
         ),
     },
-    "mr:0826-victor": {
+    "mr:0826-victor-caesareae": {
         EDITION_EN: (
             "Translation error: \"sentenced to death by beheading\" where the Latin has \"cápite "
             "damnátus\" (condemned to death)."
         ),
     },
-    "mr:0827-guarinus": {
+    "mr:0827-guarinus-sedunensis": {
         EDITION_IT: (
             "Translation error: \"in Borgogna\" where the Latin has \"Sabaudiae\" (in Savoy)."
         ),
@@ -1096,12 +1096,12 @@ EDITION_NOTES = {
             "Translation error: \"Hautecombe\" where the Latin has \"monastério Alpénsi\" (Aulps)."
         ),
     },
-    "mr:0827-poemen": {
+    "mr:0827-poemen-thebaidis": {
         EDITION_EN: (
             "Translation error: \"Phermeus\" where the Latin has \"Pœmenis\" (Poemen)."
         ),
     },
-    "mr:0830-pammachius": {
+    "mr:0830-pammachius-romae": {
         EDITION_EN: (
             "Translation error: \"Titulus Crescentianus\" where the Latin has \"títulus "
             "Cælimontánus\" (the title on the Caelian Hill)."
@@ -1120,19 +1120,19 @@ EDITION_NOTES = {
             "arms and honours of the world)."
         ),
     },
-    "mr:0902-antoninus": {
+    "mr:0902-antoninus-apameae": {
         EDITION_EN: (
             "Translation error: \"the twentieth year of the reign\" where the Latin has \"vicésimo "
             "ætátis anno\" (in the twentieth year of his age)."
         ),
     },
-    "mr:0902-brochardus": {
+    "mr:0902-brochardus-montis-carmeli": {
         EDITION_EN: (
             "Translation error: \"spring of Elisha\" where the Latin has \"fontem Elíæ\" (the spring "
             "of Elijah)."
         ),
     },
-    "mr:0902-theodota": {
+    "mr:0902-theodota-niceae": {
         EDITION_EN: (
             "Translation error: \"Nicomedia\" where the Latin has \"Nicǽæ\" (Nicaea)."
         ),
@@ -1143,7 +1143,7 @@ EDITION_NOTES = {
             "Latin has \"post pridiánam cædem\" (after the previous day's massacre)."
         ),
     },
-    "mr:0903-guala": {
+    "mr:0903-guala-brixiensis": {
         EDITION_EN: (
             "Translation error: \"Gualterus\" where the Latin has \"Guálæ\" (Guala)."
         ),
@@ -1189,7 +1189,7 @@ EDITION_NOTES = {
             "ponti\" (on the waters of the sea)."
         ),
     },
-    "mr:0913-aemilianus": {
+    "mr:0913-aemilianus-iuliae-valentiae": {
         EDITION_EN: (
             "Translation error: \"Yzeures-sur-Creuse (ancient Juliacum)\" where the Latin has "
             "\"Iúliæ Valéntiæ\" (Valence)."
@@ -1201,13 +1201,13 @@ EDITION_NOTES = {
             "(built)."
         ),
     },
-    "mr:0913-litorius": {
+    "mr:0913-litorius-turonum": {
         EDITION_EN: (
             "Translation error: \"the first to rebuild a church\" where the Latin has \"ecclésiam "
             "ædificávit\" (built)."
         ),
     },
-    "mr:0914-notburga": {
+    "mr:0914-notburga-eben": {
         EDITION_EN: (
             "Translation error: \"blessed Notburga\" where the Latin has \"sanctæ Notbúrgæ\" (Saint "
             "Notburga)."
@@ -1232,7 +1232,7 @@ EDITION_NOTES = {
             "número confrátrum\" (the ninth of his confreres to die)."
         ),
     },
-    "mr:0921-cadocus": {
+    "mr:0921-cadocus-lancarvanensis": {
         EDITION_EN: (
             "Translation error: \"Llantwit Major\" where the Latin has \"Lancarvanénsi\" "
             "(Llancarfan)."
@@ -1243,18 +1243,18 @@ EDITION_NOTES = {
             "Translation error: \"Marieville\" where the Latin has \"Marianópoli\" (Montreal)."
         ),
     },
-    "mr:0929-adelricus": {
+    "mr:0929-adelricus-augiae": {
         EDITION_EN: (
             "Translation error: \"Reichenau\" where the Latin has \"ínsula Augia lacus Turicénsis\" "
             "(Ufnau in Lake Zurich)."
         ),
     },
-    "mr:1001-piato": {
+    "mr:1001-piato-sacilinii": {
         EDITION_EN: (
             "Translation error: \"Saint-Piat\" where the Latin has \"Sacilínii\" (Seclin)."
         ),
     },
-    "mr:1002-leodegarius": {
+    "mr:1002-leodegarius-augustodunensis": {
         EDITION_EN: (
             "Translation error: \"mutilated\" where the Latin has \"excæcátum\" (blinded)."
         ),
@@ -1265,7 +1265,7 @@ EDITION_NOTES = {
             "North America (Louisiana is in the south)."
         ),
     },
-    "mr:1005-apollinaris": {
+    "mr:1005-apollinaris-valentiae": {
         EDITION_EN: (
             "Translation error: \"Saint-Julien-en-Vienne\" where the Latin has \"Iúliæ Valéntiæ\" "
             "(Valence)."
@@ -1277,17 +1277,17 @@ EDITION_NOTES = {
             "Imola)."
         ),
     },
-    "mr:1005-sanctus": {
+    "mr:1005-sanctus-corae": {
         EDITION_EN: (
             "Translation error: \"Corneto\" where the Latin has \"Coræ\" (Cori)."
         ),
     },
-    "mr:1009-guntherus": {
+    "mr:1009-guntherus-brennoviae": {
         EDITION_EN: (
             "Translation error: \"Braunau\" where the Latin has \"Brennóviæ\" (Břevnov)."
         ),
     },
-    "mr:1014-fortunatus": {
+    "mr:1014-fortunatus-tuderti": {
         EDITION_EN: (
             "Translation error: \"prisoners\" where the Latin has \"ægrótis\" (the sick)."
         ),
@@ -1303,13 +1303,13 @@ EDITION_NOTES = {
             "Translation error: \"Valence\" where the Latin has \"Valentiánæ\" (Valenciennes)."
         ),
     },
-    "mr:1022-abercius": {
+    "mr:1022-abercius-hierapoli": {
         EDITION_EN: (
             "Translation error: \"led the faith ... and to have nourished it\" where the Latin has "
             "\"fidem ... conduxísse et ... enutrivísse\" (that faith led him and nourished him)."
         ),
     },
-    "mr:1026-witta": {
+    "mr:1026-witta-buriburgensis": {
         EDITION_EN: (
             "Translation error: \"Wigbert\" where the Latin has \"Wittæ\" (Witta)."
         ),
@@ -1320,7 +1320,7 @@ EDITION_NOTES = {
             "Vicenza)."
         ),
     },
-    "mr:1028-genesius": {
+    "mr:1028-genesius-tigerni": {
         EDITION_EN: (
             "Translation error: \"twice clothed in white\" where the Latin has \"albis indútus\" "
             "(clothed in white)."
@@ -1343,19 +1343,19 @@ EDITION_NOTES = {
             "(Sansepolcro)."
         ),
     },
-    "mr:1105-domninus": {
+    "mr:1105-domninus-caesareae": {
         EDITION_EN: (
             "Translation error: \"banished to Phoenicia\" where the Latin has \"ad metálla "
             "Phænénsia\" (to the mines of Phaeno)."
         ),
     },
-    "mr:1106-paulus": {
+    "mr:1106-paulus-constantinopolitanus": {
         EDITION_EN: (
             "Translation error: \"and martyr\" is added; the Latin has only \"epíscopi "
             "Constantinopolitáni\"."
         ),
     },
-    "mr:1108-godefridus": {
+    "mr:1108-godefridus-ambianensis": {
         EDITION_IT: (
             "Translation error: \"per un quinquennio\" (for five years) where the Latin has \"a "
             "quinquénnio\" (from the age of five)."
@@ -1418,19 +1418,19 @@ EDITION_NOTES = {
             "Translation error: \"Sées\" where the Latin has \"Sisiénsi\" (Sixt)."
         ),
     },
-    "mr:1127-eusicius": {
+    "mr:1127-eusicius-blesensis": {
         EDITION_EN: (
             "Translation error: \"at the foot of Mount Cari\" where the Latin has \"ad Cari "
             "crepídinem\" (on the bank of the Cher)."
         ),
     },
-    "mr:1127-gulstanus": {
+    "mr:1127-gulstanus-rhuvigiensis": {
         EDITION_EN: (
             "Translation error: \"Belle-Île\" where the Latin has \"in loco Bello Visu\" "
             "(Beauvoir-sur-Mer)."
         ),
     },
-    "mr:1201-florentia": {
+    "mr:1201-florentia-pictavorum": {
         EDITION_EN: (
             "Translation error: \"Florentina\" where the Latin has \"Floréntiæ\" (Florentia)."
         ),
@@ -1441,7 +1441,7 @@ EDITION_NOTES = {
             "Angela)."
         ),
     },
-    "mr:1207-fara": {
+    "mr:1207-fara-eboriaci": {
         EDITION_EN: (
             "Translation error: \"Évry\" where the Latin has \"Eboríaci\" (Faremoutiers)."
         ),
@@ -1469,13 +1469,13 @@ EDITION_NOTES = {
             "Translation error: \"Riva presso Chieri\" where the Latin has \"Ripæ Albæ\" (Rivalba)."
         ),
     },
-    "mr:1217-sturmius": {
+    "mr:1217-sturmius-fuldensis": {
         EDITION_EN: (
             "Translation error: \"rebuilt\" where the Latin has \"ædificándum curávit\" (had it "
             "built)."
         ),
     },
-    "mr:1226-zeno": {
+    "mr:1226-zeno-maiumae": {
         EDITION_EN: (
             "Translation error: \"rebuilt a basilica with his kinsmen\" where the Latin says he "
             "built a basilica for his cousins the martyrs."
@@ -1487,22 +1487,22 @@ EDITION_NOTES = {
             "depositiónis\" (the day of his burial)."
         ),
     },
-    "mr:1229-ebrulfus": {
+    "mr:1229-ebrulfus-uticensis": {
         EDITION_EN: (
             "Translation error: \"Ouche\" where the Latin has \"Oximi\" (Exmes)."
         ),
     },
-    "mr:1229-libosus": {
+    "mr:1229-libosus-vagensis": {
         EDITION_EN: (
             "Translation error: \"Liberius\" where the Latin has \"Libósi\" (Libosus)."
         ),
     },
-    "mr:1230-geremarus": {
+    "mr:1230-geremarus-flaviae": {
         EDITION_EN: (
             "Translation error: \"Flavigny\" where the Latin has \"Fláviæ\" (Fly)."
         ),
     },
-    "mr:1231-barbatianus": {
+    "mr:1231-barbatianus-ravennae": {
         EDITION_EN: (
             "Translation error: \"Barbatus\" where the Latin has \"Barbatiáni\" (Barbatian)."
         ),
@@ -1678,19 +1678,19 @@ EDITION_NOTES = {
             "district of Aire-sur-l'Adour, in Aquitaine)."
         ),
     },
-    "mr:0615-isfridus": {
+    "mr:0615-isfridus-raceburgi": {
         EDITION_IT: (
             "Translation error: \"nell’Alsazia\" (Alsace) where the Latin has \"in Holsátia\" "
             "(Holstein), the region of Ratzeburg."
         ),
     },
-    "mr:0617-teresia": {
+    "mr:0617-teresia-lorvanii": {
         EDITION_IT: (
             "Translation error: \"A Ourem\" where the Latin has \"Lorvanii\" (Lorvão, the monastery "
             "she founded)."
         ),
     },
-    "mr:0623-lanfrancus": {
+    "mr:0623-lanfrancus-papiae": {
         EDITION_IT: (
             "Translation error: \"san Lanfranco\" where the Latin has \"beati Lanfranci\" (Blessed)."
         ),
@@ -1707,36 +1707,36 @@ EDITION_NOTES = {
             "Blessed Ignatius Falzon was never ordained a priest."
         ),
     },
-    "mr:0704-bonifatius": {
+    "mr:0704-bonifatius-altae-cumbae": {
         EDITION_IT: (
             "Translation error: \"in Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" (in "
             "Savoy); Hautecombe and Lake Bourget are in Savoy."
         ),
     },
-    "mr:0706-palladius": {
+    "mr:0706-palladius-scotiae": {
         EDITION_IT: (
             "Translation error: \"morì in Inghilterra\" (died in England) where the Latin has "
             "\"ibídem óbiit\" (died there, in Scotland)."
         ),
     },
-    "mr:0708-auspicius": {
+    "mr:0708-auspicius-tulli": {
         EDITION_IT: (
             "Translation error: \"Tulle\" where the Latin has \"Tulli\" (Toul, in Gallia Belgica)."
         ),
     },
-    "mr:0711-hidulphus": {
+    "mr:0711-hidulphus-medianus": {
         EDITION_IT: (
             "Translation error: \"vescovo di Treviri\" (bishop of Trier) where the Latin has "
             "\"chorepíscopus Tréviris\" (chorbishop at Trier)."
         ),
     },
-    "mr:0715-ansuerus": {
+    "mr:0715-ansuerus-raceburgi": {
         EDITION_IT: (
             "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in "
             "Holstein)."
         ),
     },
-    "mr:0716-helerius": {
+    "mr:0716-helerius-caesareae-insulae": {
         EDITION_IT: (
             "Translation error: \"nel Mare del Nord\" (in the North Sea) where the Latin has \"in "
             "mari Británnico\" (in the British Sea, the English Channel)."
@@ -1772,7 +1772,7 @@ EDITION_NOTES = {
             "the abbey of Moyenmoutier."
         ),
     },
-    "mr:0811-tiburtius": {
+    "mr:0811-tiburtius-romae": {
         EDITION_IT: (
             "Translation error: \"san Tiburzio\" omits the title \"martire\" given in the Latin "
             "(\"sancti Tibúrtii, mártyris\")."
@@ -1784,7 +1784,7 @@ EDITION_NOTES = {
             "regiónem\" (Lazica, in western Georgia)."
         ),
     },
-    "mr:0814-arnulphus": {
+    "mr:0814-arnulphus-suessionensis": {
         EDITION_IT: (
             "Translation error: \"Altenburg nelle Fiandre, ora in Germania\" where the Latin "
             "\"Aldenbúrgi in Flándria\" is Oudenburg in Flanders, in present-day Belgium."
@@ -1802,13 +1802,13 @@ EDITION_NOTES = {
             "Puye, near Poitiers)."
         ),
     },
-    "mr:0827-gebhardus": {
+    "mr:0827-gebhardus-constantiensis": {
         EDITION_IT: (
             "Translation error: \"nel territorio dell’odierna Svizzera\" where the Latin has \"in "
             "Suevia\" (Swabia); Petershausen at Constance is in Germany."
         ),
     },
-    "mr:0828-pelagius": {
+    "mr:0828-pelagius-constantiae": {
         'martyrologium_romanum_1914_en_unofficial': (
             "Translation error: the Latin 'Constantiae, in Germania' is Konstanz, not Coutances."
         ),
@@ -1829,13 +1829,13 @@ EDITION_NOTES = {
             "Guadix)."
         ),
     },
-    "mr:0903-rimagilus": {
+    "mr:0903-rimagilus-stabulensis": {
         EDITION_IT: (
             "Translation error: \"Solesmes\" where the Latin has \"Sollemniacénse\" (Solignac, where "
             "Remaclus was abbot before founding Stavelot and Malmedy)."
         ),
     },
-    "mr:0905-bertinus": {
+    "mr:0905-bertinus-taruannensis": {
         EDITION_IT: (
             "Translation error: \"fu deposto insieme a san Mummolino\" (buried together with Saint "
             "Mummolinus) where the Latin says the monastery was founded together with Saint "
@@ -1866,19 +1866,19 @@ EDITION_NOTES = {
             "(Master of Arts)."
         ),
     },
-    "mr:0914-petrus": {
+    "mr:0914-petrus-tarantasiae": {
         EDITION_IT: (
             "Translation error: \"Beauvale\" where the Latin has \"Bellævallénsi\" (Bellevaux, near "
             "Besançon)."
         ),
     },
-    "mr:0928-venceslaus": {
+    "mr:0928-venceslaus-boleslaviae": {
         EDITION_IT: (
             "Translation error: \"dalla zia paterna Ludmilla\" (his paternal aunt) where the Latin "
             "has \"ab ávia sancta Ludmílla\" (his grandmother, Saint Ludmila)."
         ),
     },
-    "mr:1014-dominicus": {
+    "mr:1014-dominicus-loricatus": {
         EDITION_IT: (
             "Translation error: \"discepolo di san Damiano\" where the Latin has \"sancti Petri "
             "Damiáni discípulus\" (a disciple of Saint Peter Damian)."
@@ -1891,24 +1891,24 @@ EDITION_NOTES = {
             "New York State, USA."
         ),
     },
-    "mr:1023-ethelfleda": {
+    "mr:1023-ethelfleda-rumeseiae": {
         EDITION_IT: (
             "Translation error: \"A Ramsey\" where the Latin has \"Rumeséiæ\" (Romsey)."
         ),
     },
-    "mr:1023-ignatius": {
+    "mr:1023-ignatius-constantinopoli": {
         EDITION_IT: (
             "Translation error: \"imperatore Barda\" (the emperor Bardas) where the Latin has "
             "\"Bardam Cǽsarem\" (Bardas the Caesar)."
         ),
     },
-    "mr:1023-severinus": {
+    "mr:1023-severinus-coloniae-agrippinae": {
         EDITION_IT: (
             "Translation error: \"san Severo\" where the Latin has \"sancti Severíni\" (Saint "
             "Severinus)."
         ),
     },
-    "mr:1023-theodoretus": {
+    "mr:1023-theodoretus-antiochiae": {
         EDITION_IT: (
             "Translation error: \"imperatore d’Oriente\" (emperor of the East) where the Latin has "
             "\"cómite Oriéntis\" (Count of the East)."
@@ -1919,43 +1919,43 @@ EDITION_NOTES = {
             "Translation error: \"Riccardo\" where the Latin has \"Recarédi\" (Recaredo)."
         ),
     },
-    "mr:1028-germanus": {
+    "mr:1028-germanus-annecii": {
         EDITION_IT: (
             "Translation error: \"nella Borgogna\" (in Burgundy) where the Latin has \"in Sabáudia\" "
             "(in Savoy)."
         ),
     },
-    "mr:1030-marcellus": {
+    "mr:1030-marcellus-tingi": {
         EDITION_IT: (
             "Translation error: \"la vita stessa\" (his very life) where the Latin has \"ipsam "
             "vitem\" (his vine staff, the centurion's badge)."
         ),
     },
-    "mr:1105-bertilla": {
+    "mr:1105-bertilla-calensis": {
         EDITION_IT: (
             "Translation error: \"monastero di Calais\" where the Latin has \"cœnóbio Calénsi\" (the "
             "monastery of Chelles, near Meaux)."
         ),
     },
-    "mr:1114-siardus": {
+    "mr:1114-siardus-horti-sanctae-mariae": {
         EDITION_IT: (
             "Translation error: \"Malgarten\" where the Latin has \"Horto Sanctæ Maríæ\" "
             "(Mariëngaarde, in Friesland)."
         ),
     },
-    "mr:1202-chromatius": {
+    "mr:1202-chromatius-aquileiensis": {
         EDITION_IT: (
             "Translation error: \"chiostri d’Italia\" (the cloisters of Italy) where the Latin has "
             "\"Itáliæ claustris\" (the defensive barriers of Italy breached by Alaric)."
         ),
     },
-    "mr:1202-silverius": {
+    "mr:1202-silverius-papa": {
         EDITION_IT: (
             "Translation error: \"Palmarola in Liguria\" where the Latin \"ínsula Palmária\" is "
             "Palmarola in the Pontine Islands, off Lazio, not in Liguria."
         ),
     },
-    "mr:1212-vicelinus": {
+    "mr:1212-vicelinus-oldenburgensis": {
         EDITION_IT: (
             "Translation error: \"nell’Alsazia\" (in Alsace) where the Latin has \"in Holsátia\" (in "
             "Holstein)."
@@ -1973,7 +1973,7 @@ EDITION_NOTES = {
             "(leader of Judah); Zerubbabel was governor, not king."
         ),
     },
-    "mr:1218-winebaldus": {
+    "mr:1218-winebaldus-heidenheimensis": {
         EDITION_IT: (
             "Translation error: \"Hildesheim\" where the Latin has \"Heidenheiménsi\" (Heidenheim), "
             "the monastery Saint Winebald founded."
@@ -1991,7 +1991,7 @@ EDITION_NOTES = {
             "has \"fílii Abraham, fílii Adam\"."
         ),
     },
-    "mr:1226-stephanus": {
+    "mr:1226-stephanus-hierosolymorum": {
         EDITION_IT: (
             "Translation error: \"seduto\" (seated) where the Latin has \"stantem\" (standing), as in "
             "Acts 7:55-56."
@@ -2003,7 +2003,7 @@ EDITION_NOTES = {
             "Ferrer\"; the Latin has \"mártyris\"."
         ),
     },
-    "mr:0801-secundinus": {
+    "mr:0801-secundinus-romae": {
         EDITION_IT: (
             "Translation error: \"al tredicesimo miglio\" (the thirteenth mile of the Via "
             "Prenestina) where the Latin has \"miliário tricésimo\" (the thirtieth)."
@@ -2087,7 +2087,7 @@ EDITION_NOTES = {
             "says 'Maximus'."
         ),
     },
-    "mr:0625-prosperus": {
+    "mr:0625-prosperus-regii-lepidi": {
         EDITION_1914: (
             "Translation error: the Latin 'Apud Rhegium' (Reggio) is rendered 'Riez'."
         ),
@@ -2106,41 +2106,41 @@ EDITION_NOTES = {
             "Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III."
         ),
     },
-    "mr:0719-macrina": {
+    "mr:0719-macrina-annisae": {
         EDITION_1914: (
             "Misprint: 'Marcina' for Macrina."
         ),
     },
-    "mr:0821-privatus": {
+    "mr:0821-privatus-gabalorum": {
         EDITION_1749: (
             "This text joins the opening of Privatus's eulogy to the body of the eulogy of "
             "Paternus of Fondi (mr:0821-paternus): a line has evidently dropped. The 1914 English "
             "prints both eulogies."
         ),
     },
-    "mr:0824-tatio": {
+    "mr:0824-tatio-claudiopoli": {
         EDITION_1914: (
             "Translation error: 'Domitian' where the Latin has 'persecutione Diocletiani' "
             "(Diocletian)."
         ),
     },
-    "mr:0829-basilla": {
+    "mr:0829-basilla-sirmii": {
         EDITION_1914: (
             "Translation error: the Latin 'Apud Sirmium' is Sirmium, not Smyrna."
         ),
     },
-    "mr:1017-florentius": {
+    "mr:1017-florentius-arausionis": {
         EDITION_1914: (
             "Translation error: the Latin (and the 2004 entry) name Florentius, not Florentinus."
         ),
     },
-    "mr:1102-victorinus": {
+    "mr:1102-victorinus-poetovionis": {
         EDITION_1914: (
             "Translation error: the Latin 'Poetovione, in Pannonia' is Pettau (Ptuj), not "
             "Poitiers."
         ),
     },
-    "mr:1218-gatianus": {
+    "mr:1218-gatianus-turonum": {
         EDITION_1914: (
             "Misprints: 'Gratian' for Gatianus and 'Fabrian' for Fabianus."
         ),
@@ -2161,7 +2161,7 @@ EDITION_NOTES = {
         ),
     },
     # Bl. Falco of Palena: all three 2004 editions set Palena in Calabria.
-    "mr:0809-falcus": {
+    "mr:0809-falcus-palenae": {
         edition: (
             f"Error: \"{printed}\": Palena is in Abruzzo (province of Chieti), not in Calabria. "
             "Falco, a Basilian monk, came from Taverna in Calabria and lived as a hermit in "
@@ -3471,13 +3471,13 @@ REVIEW_EDITION_NOTES = {
             "of Saint Charles."
         ),
     },
-    "mr:0601-proculus": {
+    "mr:0601-proculus-bononiae": {
         EDITION_EN: (
             "Translation error: \"nails from wooden beams\" where the Latin has \"trabálibus "
             "clavis\" (beam-nails, great spikes)."
         ),
     },
-    "mr:0601-wistanus": {
+    "mr:0601-wistanus-licestriensis": {
         EDITION_IT: (
             "Translation error: \"Lichester\" where the Latin has \"Licestriénsi\" (Leicester)."
         ),
@@ -3493,7 +3493,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Callas du Bignon\" where the Latin has \"Collas du Bignon\"."
         ),
     },
-    "mr:0603-clotildis": {
+    "mr:0603-clotildis-turonum": {
         EDITION_EN: (
             "Translation error: \"Lyon France\" where the Latin has \"Gállia Lugdunénsi\" "
             "(Lyonnese Gaul, the province)."
@@ -3504,7 +3504,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Sàcceri\" where the Latin \"Sáccere\" is Sassari."
         ),
     },
-    "mr:0605-eutychius": {
+    "mr:0605-eutychius-comi": {
         EDITION_EN: (
             "Translation error: \"Eucychius\" where the Latin has \"Eutýchii\" (Eutychius)."
         ),
@@ -3532,13 +3532,13 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"of Balsano\" where the Latin \"de Bauzáno\" is Bolzano."
         ),
     },
-    "mr:0610-ithamarus": {
+    "mr:0610-ithamarus-roffae": {
         EDITION_IT: (
             "Translation error: \"la gente di Canterbury\" where the Latin has \"gente "
             "Cantuariórum\" (the people of Kent)."
         ),
     },
-    "mr:0610-landericus": {
+    "mr:0610-landericus-parisiorum": {
         EDITION_EN: (
             "Translation error: \"rebuilt a hospital\" where the Latin has \"nosocomíum "
             "ædificásse\" (built a hospital)."
@@ -3561,25 +3561,25 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Huu\" where the Latin \"Huéum\" is Huế."
         ),
     },
-    "mr:0613-aventinus": {
+    "mr:0613-aventinus-arbusti": {
         EDITION_EN: (
             "Translation error: \"valley of Arbas\" where the Latin \"valle Arbústo\" is the "
             "Larboust valley."
         ),
     },
-    "mr:0613-fandila": {
+    "mr:0613-fandila-cordubae": {
         EDITION_EN: (
             "Translation addition: \"[and martyr]\" is not in the Latin, which has \"presbýteri "
             "et mónachi\"."
         ),
     },
-    "mr:0613-ragnebertus": {
+    "mr:0613-ragnebertus-lugdunensis": {
         EDITION_IT: (
             "Translation error: \"imprigionato\" (imprisoned) where the Latin has "
             "\"relegatióne\" (banishment)."
         ),
     },
-    "mr:0614-protus": {
+    "mr:0614-protus-aquileiensis": {
         EDITION_EN: (
             "Translation error: \"Pratus\" where the Latin has \"Proti\" (Protus)."
         ),
@@ -3604,13 +3604,13 @@ REVIEW_EDITION_NOTES = {
             "gallows."
         ),
     },
-    "mr:0616-similianus": {
+    "mr:0616-similianus-namnetum": {
         EDITION_EN: (
             "Translation error: \"in Lyon\" where the Latin has \"in Lugdunénsi\" (in the "
             "province of Gallia Lugdunensis, not the city of Lyon)."
         ),
     },
-    "mr:0618-calogerus": {
+    "mr:0618-calogerus-thermarum-selinuntiarum": {
         EDITION_IT: (
             "Translation error: \"monte Gemmariaro\" where the Latin has \"monte Chronio\" "
             "(Monte Kronio, above Sciacca)."
@@ -3622,13 +3622,13 @@ REVIEW_EDITION_NOTES = {
             "(built by him)."
         ),
     },
-    "mr:0619-romualdus": {
+    "mr:0619-romualdus-ravennae": {
         EDITION_EN: (
             "Translation error: \"rebuilding small monasteries\" where the Latin has \"párvula "
             "monastéria ædíficans\" (building)."
         ),
     },
-    "mr:0620-gobanus": {
+    "mr:0620-gobanus-laudunensis": {
         EDITION_EN: (
             "Translation note: \"Saint Fursa\" where the Latin has \"sancti Fusci\" (Saint "
             "Fuscus)."
@@ -3641,7 +3641,7 @@ REVIEW_EDITION_NOTES = {
             "\"varie torture\"."
         ),
     },
-    "mr:0621-mevennus": {
+    "mr:0621-mevennus-gaeli": {
         EDITION_IT: (
             "Translation error: \"A Ghé\" where the Latin has \"Gaeli\" (Gaël)."
         ),
@@ -3649,7 +3649,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Grel\" where the Latin has \"Gæli\" (Gaël)."
         ),
     },
-    "mr:0621-radulphus": {
+    "mr:0621-radulphus-biturigum": {
         EDITION_EN: (
             "Translation error: \"to gather with the priests ..., {reading} chapters\" where the "
             "Latin has \"cum presbýteris ... capítula ... collígere curávit\" (took care, with "
@@ -3662,7 +3662,7 @@ REVIEW_EDITION_NOTES = {
             "Legions, is in Britain (Wales)."
         ),
     },
-    "mr:0623-ediltrudis": {
+    "mr:0623-ediltrudis-eliensis": {
         EDITION_IT: (
             "Translation error: \"rifiutate per due volte le nozze\" (twice refused marriage) "
             "where the Latin has \"bis nuptiis posthabitis\" (having twice set her marriages "
@@ -3674,17 +3674,17 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Aglibert\" where the Latin has \"Agilbérti\" (Agilbert)."
         ),
     },
-    "mr:0624-gohardus": {
+    "mr:0624-gohardus-nannetum": {
         EDITION_EN: (
             "Translation error: \"Gobard\" where the Latin has \"Gohárdi\" (Gohard)."
         ),
     },
-    "mr:0625-molochus": {
+    "mr:0625-molochus-rossmarkaei": {
         EDITION_EN: (
             "Translation error: \"Rossmarkre\" where the Latin has \"Rossmárkæi\" (Rosemarkie)."
         ),
     },
-    "mr:0626-anthelmus": {
+    "mr:0626-anthelmus-bellicii": {
         EDITION_IT: (
             "Translation error: \"in Borgogna\" (Burgundy) where the Latin has \"in Sabaudia\" "
             "(Savoy)."
@@ -3697,7 +3697,7 @@ REVIEW_EDITION_NOTES = {
             "Rosary)."
         ),
     },
-    "mr:0626-vigilius": {
+    "mr:0626-vigilius-tridenti": {
         EDITION_EN: (
             "Translation error: \"distinguished instruction\" where the Latin has "
             "\"institutiónis insígnibus\" (the insignia of his office)."
@@ -3708,7 +3708,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Qi Yu\" where the Latin has \"Maríæ Qi Yu\" (Maria Qi Yu)."
         ),
     },
-    "mr:0630-ladislaus": {
+    "mr:0630-ladislaus-nitravae": {
         EDITION_LA: (
             "Source error: \"ad Vagum flumen\" (on the river Váh), but Nitra lies on the river "
             "Nitra."
@@ -3797,7 +3797,7 @@ REVIEW_EDITION_NOTES = {
             "fidélium\" (three blood brothers, lay faithful)."
         ),
     },
-    "mr:0711-abundius": {
+    "mr:0711-abundius-cordubae": {
         EDITION_EN: (
             "Translation error: \"was killed, seized by sudden indignation\" where the Latin has "
             "\"céleri indignatióne mota, perémptus est\" (sudden indignation being roused, he "
@@ -3821,7 +3821,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Budrio\" where the Latin has \"Búdriæ\" (Budrie)."
         ),
     },
-    "mr:0713-henricus": {
+    "mr:0713-henricus-imperator": {
         EDITION_LA: (
             "Source error: \"in Francónia\" (in Franconia), but Grona near Göttingen lies in "
             "Saxony."
@@ -3878,7 +3878,7 @@ REVIEW_EDITION_NOTES = {
             "apostásiæ réddito\" means he returned the reward given him for apostatizing."
         ),
     },
-    "mr:0718-maternus": {
+    "mr:0718-maternus-mediolani": {
         EDITION_EN: (
             "Translation error: \"Laud Pompey\" where the Latin has \"Laude Pompéia\" (Lodi "
             "Vecchio)."
@@ -3901,7 +3901,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Dii\" (a Latin genitive) where the name is Dius."
         ),
     },
-    "mr:0719-stilla": {
+    "mr:0719-stilla-mariaeburgi": {
         EDITION_EN: (
             "Translation error: \"Marienberg\" where the Latin has \"Mariæbúrgi\" (Marienburg)."
         ),
@@ -3918,7 +3918,7 @@ REVIEW_EDITION_NOTES = {
             "Yongnian."
         ),
     },
-    "mr:0721-victor": {
+    "mr:0721-victor-massiliae": {
         EDITION_EN: (
             "Translation error: \"the province of France\" where the Latin \"in Província "
             "Gálliæ\" means Provence."
@@ -3930,13 +3930,13 @@ REVIEW_EDITION_NOTES = {
             "denotes the African Massylitan martyrs."
         ),
     },
-    "mr:0723-birgitta": {
+    "mr:0723-birgitta-romae": {
         EDITION_EN: (
             "Translation error: \"the Mystical Church\" where the Latin \"mýstice reformándis\" "
             "speaks of reforming the Church mystically."
         ),
     },
-    "mr:0723-severus": {
+    "mr:0723-severus-bizyae": {
         EDITION_EN: (
             "Translation error: \"having won the palm of martyrdom\" where the Latin has "
             "\"mártyrum palmas æmulátus\" (emulating the martyrs' palms)."
@@ -3966,7 +3966,7 @@ REVIEW_EDITION_NOTES = {
             "Actis)."
         ),
     },
-    "mr:0727-ecclesius": {
+    "mr:0727-ecclesius-ravennae": {
         EDITION_EN: (
             "Translation error: \"stood firm\" where the Latin \"solus in superándis\" says he "
             "alone survived them."
@@ -4002,13 +4002,13 @@ REVIEW_EDITION_NOTES = {
             "no number."
         ),
     },
-    "mr:0729-lupus": {
+    "mr:0729-lupus-trecis": {
         EDITION_LA: (
             "Edition error: \"Británniam Minórem\" (Brittany) where the mission of Germanus and "
             "Lupus against the Pelagians was to Britain."
         ),
     },
-    "mr:0731-fabius": {
+    "mr:0731-fabius-caesareae": {
         EDITION_EN: (
             "Translation error: \"imperial standards\" where the Latin has \"vexílla "
             "præsidália\" (the governor's standards)."
@@ -4020,19 +4020,19 @@ REVIEW_EDITION_NOTES = {
             "Vasconia\" means the Basque country, where Loyola lies."
         ),
     },
-    "mr:0801-ethelwoldus": {
+    "mr:0801-ethelwoldus-vintoniae": {
         EDITION_IT: (
             "Translation error: \"tradusse\" (translated) the \"Concordia dei monaci\" where the "
             "Latin has \"exarávit\" (composed)."
         ),
     },
-    "mr:0803-euphronius": {
+    "mr:0803-euphronius-augustoduni": {
         EDITION_EN: (
             "Translation error: \"rebuilt the basilica\" where the Latin has \"ædificávit\" "
             "(built)."
         ),
     },
-    "mr:0803-petrus": {
+    "mr:0803-petrus-anagniae": {
         EDITION_EN: (
             "Translation error: \"completed the rebuilding\" where the Latin has \"ædificatiónem "
             "perfécit\" (completed the building)."
@@ -4044,7 +4044,7 @@ REVIEW_EDITION_NOTES = {
             "(Crescentio)."
         ),
     },
-    "mr:0804-onuphrius": {
+    "mr:0804-onuphrius-panaiae": {
         EDITION_EN: (
             "Translation error: \"Panaria\" where the Latin has \"Panáiæ\" (Panaia)."
         ),
@@ -4055,19 +4055,19 @@ REVIEW_EDITION_NOTES = {
             "ædificáverat\" (which he had built)."
         ),
     },
-    "mr:0805-oswaldus": {
+    "mr:0805-oswaldus-salopiensis": {
         EDITION_IT: (
             "Translation error: \"nello Shrewsbury\" where the Latin \"in agro Salopiénsi\" is "
             "the county of Shropshire."
         ),
     },
-    "mr:0805-viator": {
+    "mr:0805-viator-tremulii": {
         EDITION_EN: (
             "Translation error: \"the region of Saintes\" where the Latin has \"Secaláunia\" "
             "(the Sologne)."
         ),
     },
-    "mr:0806-dominicus": {
+    "mr:0806-dominicus-bononiae": {
         EDITION_EN: (
             "Translation error: \"the nativity\" where the Latin \"natális\" means the birth "
             "into heaven (his death)."
@@ -4104,7 +4104,7 @@ REVIEW_EDITION_NOTES = {
             "monastério\" (Moyenmoutier)."
         ),
     },
-    "mr:0809-nathaeus": {
+    "mr:0809-nathaeus-achadensis": {
         EDITION_EN: (
             "Translation error: \"Aghagower\" where the Latin has \"Achadénsi\" (Achonry)."
         ),
@@ -4115,20 +4115,20 @@ REVIEW_EDITION_NOTES = {
             "religiósæ\" (in hatred of the religious life)."
         ),
     },
-    "mr:0810-laurentius": {
+    "mr:0810-laurentius-romae": {
         EDITION_IT: (
             "Translation error: \"nutrito e sfamato con dei beni elemosinati\" where the Latin "
             "has \"in quorum victum atque vestiméntum facultátes cumuláverat\" (on whose food "
             "and clothing he had spent the Church's goods)."
         ),
     },
-    "mr:0811-clara": {
+    "mr:0811-clara-assisii": {
         EDITION_EN: (
             "Translation error: \"she was never allowed to be separated\" where the Latin has "
             "\"numquam divélli concéssit\" (she never allowed herself to be parted from it)."
         ),
     },
-    "mr:0811-equitius": {
+    "mr:0811-equitius-valeriae": {
         EDITION_IT: (
             "Translation error: \"nel territorio dell'odierna Umbria\" where the Latin has \"in "
             "província Valériæ\", a province lying chiefly in present-day Abruzzo."
@@ -4139,7 +4139,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"layman\" where the Latin has \"manuleárii\" (a tailor)."
         ),
     },
-    "mr:0813-gertrudis": {
+    "mr:0813-gertrudis-aldenburgensis": {
         EDITION_EN: (
             "Translation error: \"the region of Oldenburg\" where the Latin has \"in terra "
             "Vocatórum\" (near Wetzlar)."
@@ -4175,14 +4175,14 @@ REVIEW_EDITION_NOTES = {
             "Yetsundo\" (the prefect Yetsundo)."
         ),
     },
-    "mr:0819-guerricus": {
+    "mr:0819-guerricus-igniensis": {
         EDITION_EN: (
             "Translation error: \"spiritual words, humility, and frequent charity\" where the "
             "Latin has \"sermónibus humilitáte et caritáte crebris\" (sermons full of humility "
             "and charity)."
         ),
     },
-    "mr:0819-ludovicus": {
+    "mr:0819-ludovicus-tolosae": {
         EDITION_EN: (
             "Translation error: \"the Province of France\" where the Latin has \"Província\" "
             "(Provence). Translation error: \"perpetually\" where the Latin has \"pérpeti\" (to "
@@ -4195,7 +4195,7 @@ REVIEW_EDITION_NOTES = {
             "(Niên) Viên\"."
         ),
     },
-    "mr:0822-timotheus": {
+    "mr:0822-timotheus-romae": {
         EDITION_EN: (
             "Translation error: \"the cemetery of the same name\" where the Latin has \"in "
             "cœmetério eiúsdem\" (in his own cemetery)."
@@ -4207,7 +4207,7 @@ REVIEW_EDITION_NOTES = {
             "(Maksymilian)."
         ),
     },
-    "mr:0824-tatio": {
+    "mr:0824-tatio-claudiopoli": {
         EDITION_IT: (
             "Translation error: \"Eskihisar\" where the Latin has \"Claudiopoli in Honoriade\" "
             "(Claudiopolis, the modern Bolu)."
@@ -4244,7 +4244,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Afiñón\" where the Latin has \"Añón\"."
         ),
     },
-    "mr:0828-florentina": {
+    "mr:0828-florentina-hispali": {
         EDITION_EN: (
             "Translation error: \"was entrusted ... with treatises\" where the Latin has "
             "\"tractátus ... despondérunt\" (dedicated treatises to her)."
@@ -4256,7 +4256,7 @@ REVIEW_EDITION_NOTES = {
             "(Monterey)."
         ),
     },
-    "mr:0829-basilla": {
+    "mr:0829-basilla-sirmii": {
         EDITION_IT: (
             "Translation error: \"Srijem nell’odierna Croazia\" where the Latin has \"Sirmium\" "
             "(the city, now Sremska Mitrovica in Serbia)."
@@ -4271,19 +4271,19 @@ REVIEW_EDITION_NOTES = {
             "óbiit\" (died sick)."
         ),
     },
-    "mr:0829-sebbus": {
+    "mr:0829-sebbus-londinii": {
         EDITION_IT: (
             "Translation error: \"re della Sassonia orientale\" where the Latin has \"rex "
             "Saxonum orientalium\" (king of the East Saxons, Essex)."
         ),
     },
-    "mr:0829-victor": {
+    "mr:0829-victor-nannetensis": {
         EDITION_IT: (
             "Translation error: \"La Chambon\" where the Latin has \"Campum Bonum\" (Campbon, "
             "near Nantes)."
         ),
     },
-    "mr:0830-agilus": {
+    "mr:0830-agilus-resbacensis": {
         EDITION_EN: (
             "Translation error: \"Aegilius\" where the Latin has \"Agíli\" (Agilus)."
         ),
@@ -4293,20 +4293,20 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Santander\" where the Latin has \"Flaviobrígæ\"."
         ),
     },
-    "mr:0831-aidanus": {
+    "mr:0831-aidanus-lindisfarnae": {
         EDITION_IT: (
             "Translation error: \"chiamato ... a questa sede episcopale, dove fondò un "
             "monastero\" where the Latin says he established both the see and the monastery "
             "there."
         ),
     },
-    "mr:0901-aegidius": {
+    "mr:0901-aegidius-nemausensis": {
         EDITION_EN: (
             "Translation error: \"grew into Saint-Gilles-du-Gard\" where the Latin has \"in "
             "Camária excrévit\" (grew up in the Camargue)."
         ),
     },
-    "mr:0901-victorius": {
+    "mr:0901-victorius-cenomanorum": {
         EDITION_EN: (
             "Translation error: \"Victor\" where the Latin has \"Victórii\" (Victorius)."
         ),
@@ -4318,7 +4318,7 @@ REVIEW_EDITION_NOTES = {
             "mártyrum\" (blessed martyrs)."
         ),
     },
-    "mr:0903-guala": {
+    "mr:0903-guala-brixiensis": {
         EDITION_EN: (
             "Translation error: \"region of Asti\" where the Latin has \"pago Astinénsi\" (the "
             "district of Astino)."
@@ -4329,7 +4329,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
         ),
     },
-    "mr:0906-bega": {
+    "mr:0906-bega-cumbriae": {
         EDITION_EN: (
             "Translation error: \"virgin and nun\" where the Latin has only \"moniális\" (nun)."
         ),
@@ -4367,31 +4367,31 @@ REVIEW_EDITION_NOTES = {
             "religiósi\" (priests, religious), without a number."
         ),
     },
-    "mr:0911-paphnutius": {
+    "mr:0911-paphnutius-aegypti": {
         EDITION_IT: (
             "Translation error: \"il tendine del piede sinistro\" (the tendon of the left foot) "
             "where the Latin has \"sinístro póplite\" (the left hamstring)."
         ),
     },
-    "mr:0912-guido": {
+    "mr:0912-guido-anderlaci": {
         EDITION_IT: (
             "Translation error: \"Mariensee\" where the Latin has \"Maríæ Laci\" (Our Lady of "
             "Laeken, near Brussels)."
         ),
     },
-    "mr:0914-cornelius": {
+    "mr:0914-cornelius-papa": {
         EDITION_IT: (
             "Translation error: \"molti dissidenti\" (many dissidents) where the Latin has "
             "\"plures de lapsis\" (many of the lapsed, who had denied the faith in persecution)."
         ),
     },
-    "mr:0914-cyprianus": {
+    "mr:0914-cyprianus-carthaginensis": {
         EDITION_IT: (
             "Translation error: \"trafitto con la spada\" (pierced with the sword) where the "
             "Latin has \"gládio animadvérti\" (executed by the sword, i.e. beheaded)."
         ),
     },
-    "mr:0915-alpinus": {
+    "mr:0915-alpinus-lugduni": {
         EDITION_IT: (
             "Translation error: \"sant’Albino\" where the Latin has \"sancti Alpíni\" (Alpinus)."
         ),
@@ -4417,25 +4417,25 @@ REVIEW_EDITION_NOTES = {
             "cruribúsque\" (hands and legs)."
         ),
     },
-    "mr:0916-vitalis": {
+    "mr:0916-vitalis-saviniaci": {
         EDITION_EN: (
             "Translation error: \"the monasteries he founded\" where the Latin has \"cœnóbium ab "
             "ipso cónditum\" (the monastery he founded)."
         ),
     },
-    "mr:0919-arnulphus": {
+    "mr:0919-arnulphus-vapinci": {
         EDITION_IT: (
             "Translation error: \"si adoperò molto\" (he worked hard) where the Latin has "
             "\"multa sustínuit\" (he endured much)."
         ),
     },
-    "mr:0919-eustochius": {
+    "mr:0919-eustochius-turonum": {
         EDITION_EN: (
             "Translation error: \"the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensian Gaul)."
         ),
     },
-    "mr:0919-sequanus": {
+    "mr:0919-sequanus-sistariensis": {
         EDITION_IT: (
             "Translation error: \"Sisteron\" (a town in Provence) for the monastery the Latin "
             "places \"apud Língones\" (near Langres); this is Segestre, now Saint-Seine-l'Abbaye."
@@ -4457,12 +4457,12 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Torre\" where the Latin has \"Torró\"."
         ),
     },
-    "mr:0922-basilla": {
+    "mr:0922-basilla-romae": {
         EDITION_EN: (
             "Translation error: \"Basilia\" where the Latin has \"Basíllæ\" (Basilla)."
         ),
     },
-    "mr:0922-silvanus": {
+    "mr:0922-silvanus-librosi": {
         EDITION_EN: (
             "Translation error: \"Lurais\" where the Latin has \"Libróso\" (Levroux)."
         ),
@@ -4484,7 +4484,7 @@ REVIEW_EDITION_NOTES = {
             "Rússiæ regióne\" (in the Moscow region); the monastery is not in the city."
         ),
     },
-    "mr:0925-solemnis": {
+    "mr:0925-solemnis-carnuti": {
         EDITION_EN: (
             "Translation error: \"the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensian Gaul)."
@@ -4525,7 +4525,7 @@ REVIEW_EDITION_NOTES = {
             "Plana."
         ),
     },
-    "mr:1003-cyprianus": {
+    "mr:1003-cyprianus-telonii": {
         EDITION_IT: (
             "Translation error: \"se non prima invocato dalla grazia preveniente\" where the "
             "Latin has \"nisi prímitus Dei grátia præveniénte vocátum\" (unless first called by "
@@ -4536,7 +4536,7 @@ REVIEW_EDITION_NOTES = {
             "means Provence."
         ),
     },
-    "mr:1004-franciscus": {
+    "mr:1004-franciscus-assisii": {
         EDITION_EN: (
             "Translation error: \"naked\" is added; the Latin has only \"super nudam terram\" "
             "(on the bare ground)."
@@ -4547,14 +4547,14 @@ REVIEW_EDITION_NOTES = {
             "Misprint: \"Skrzypezak\" where the Latin has \"Skrzypczak\"."
         ),
     },
-    "mr:1006-artaldus": {
+    "mr:1006-artaldus-bellicensis": {
         EDITION_IT: (
             "Translation error: \"fino all’età di centosei anni\" (to the age of one hundred and "
             "six) where the Latin has \"usque ad centésimum sextum annum\" (to his "
             "hundred-and-sixth year)."
         ),
     },
-    "mr:1006-bruno": {
+    "mr:1006-bruno-turris": {
         EDITION_IT: (
             "Translation error: \"valle di Chartroux\" where the Latin has \"valle Cartúsiæ in "
             "Alpibus\" (the valley of the Chartreuse in the Alps)."
@@ -4565,7 +4565,7 @@ REVIEW_EDITION_NOTES = {
             "Misprint: \"Nazogírea\" where the Latin has \"Azogýreæ\" (Azogyrea)."
         ),
     },
-    "mr:1006-magnus": {
+    "mr:1006-magnus-opitergii": {
         EDITION_EN: (
             "Translation error: \"in the Venetian region\" where the Latin \"Venétiis\" means at "
             "Venice."
@@ -4576,31 +4576,31 @@ REVIEW_EDITION_NOTES = {
             "Misprint: \"Durochet\" where the Latin has \"Durocher\"."
         ),
     },
-    "mr:1008-evodius": {
+    "mr:1008-evodius-rothomagi": {
         EDITION_EN: (
             "Translation error: \"in the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensis)."
         ),
     },
-    "mr:1008-ragenfredis": {
+    "mr:1008-ragenfredis-denonii": {
         EDITION_EN: (
             "Translation error: \"monasteries\" where the Latin has \"cœnóbium\" (a monastery)."
         ),
     },
-    "mr:1012-domnina": {
+    "mr:1012-domnina-anazarbi": {
         EDITION_EN: (
             "Translation error: \"Lycianus\" where the Latin has \"Lýcia prǽside\" (the governor "
             "Lycias)."
         ),
     },
-    "mr:1013-geraldus": {
+    "mr:1013-geraldus-cezerniaci": {
         EDITION_IT: (
             "Translation error: \"con grande profitto per i suoi possedimenti\" (with great "
             "profit for his possessions) where the Latin has \"pro provinciárum suárum salúte\" "
             "(for the welfare of his provinces)."
         ),
     },
-    "mr:1013-venantius": {
+    "mr:1013-venantius-turonum": {
         EDITION_EN: (
             "Translation error: \"in the region of Lyon\" where the Latin has \"in Gállia "
             "Lugdunénsi\" (the province of Lugdunensis)."
@@ -4618,7 +4618,7 @@ REVIEW_EDITION_NOTES = {
             "Materdomini near Caposele in Campania."
         ),
     },
-    "mr:1019-gratus": {
+    "mr:1019-gratus-iluronis": {
         EDITION_IT: (
             "Translation error: \"Oléron\" (the Atlantic island) where the Latin has "
             "\"Illuróne\" (Oloron, at the foot of the Pyrenees)."
@@ -4637,35 +4637,35 @@ REVIEW_EDITION_NOTES = {
             "Lugdunénsi\" (the Roman province of Lugdunensis, not the area of Lyon)."
         ),
     },
-    "mr:1020-adelina": {
+    "mr:1020-adelina-moretonensis": {
         EDITION_EN: (
             "Translation error: \"Sévigny\" where the Latin has \"Saviníaci\" (Savigny)."
         ),
     },
-    "mr:1020-sindulphus": {
+    "mr:1020-sindulphus-alsontiae": {
         EDITION_EN: (
             "Translation error: \"Aulnay\" where the Latin has \"Alsóntiæ\" (Aussonce)."
         ),
     },
-    "mr:1022-benedictus": {
+    "mr:1022-benedictus-nannetensis": {
         EDITION_IT: (
             "Translation error: \"a Mézières\" where the Latin has \"Maceráci\" (Massérac, near "
             "Nantes)."
         ),
     },
-    "mr:1022-mallonus": {
+    "mr:1022-mallonus-rothomagi": {
         EDITION_EN: (
             "Translation error: \"the region around Lyon\" where the Latin has \"Gállia "
             "Lugdunénsi\" (the Roman province of Lugdunensis, not the area of Lyon)."
         ),
     },
-    "mr:1022-marcus": {
+    "mr:1022-marcus-hierosolymitanus": {
         EDITION_EN: (
             "Translation error: \"is said to have gathered together again\" where the Latin has "
             "\"congregáre cœpit\" (began to gather), with no \"is said\"."
         ),
     },
-    "mr:1023-allucius": {
+    "mr:1023-allucius-campuliani": {
         EDITION_EN: (
             "Translation error: \"Campoli\" where the Latin has \"Campuliáni\" (Campugliano)."
         ),
@@ -4689,24 +4689,24 @@ REVIEW_EDITION_NOTES = {
             "(three Capuchin Poor Clares, one Discalced Augustinian)."
         ),
     },
-    "mr:1028-ferrutius": {
+    "mr:1028-ferrutius-moguntiae": {
         EDITION_EN: (
             "Translation error: \"Belgic France\" where the Latin has \"Gállia Bélgica\" (the "
             "Roman province)."
         ),
     },
-    "mr:1028-genesius": {
+    "mr:1028-genesius-tigerni": {
         EDITION_EN: (
             "Translation error: \"Tizac\" where the Latin has \"Tigérni\" (Thiers)."
         ),
     },
-    "mr:1029-colmanus": {
+    "mr:1029-colmanus-duacae": {
         EDITION_EN: (
             "Translation error: \"Doagh\" where the Latin has \"Duácæ Gállicæ\" (Kilmacduagh, in "
             "Galway)."
         ),
     },
-    "mr:1029-dodo": {
+    "mr:1029-dodo-monasterii": {
         EDITION_EN: (
             "Translation error: \"the monastery of Fanay\" where the Latin has \"Monastérii in "
             "Fánia\" (Moustier-en-Fagne)."
@@ -4718,7 +4718,7 @@ REVIEW_EDITION_NOTES = {
             "brothers)."
         ),
     },
-    "mr:1102-marcianus": {
+    "mr:1102-marcianus-cyrrhi": {
         EDITION_LA: (
             "Probable error: \"Chalcedonénsem\" (of Chalcedon) where the desert in which Marcian "
             "lived was that of Chalcis in Syria (\"Chalcidénsem\")."
@@ -4734,7 +4734,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"rebuilt\" where the Latin has \"ædificáverat\" (had built)."
         ),
     },
-    "mr:1103-ermengaudius": {
+    "mr:1103-ermengaudius-urgelli": {
         EDITION_EN: (
             "Translation error: \"rebuilding\" where the Latin has \"ædificándo\" (building)."
         ),
@@ -4756,7 +4756,7 @@ REVIEW_EDITION_NOTES = {
             "women in France)."
         ),
     },
-    "mr:1104-modesta": {
+    "mr:1104-modesta-horreensis": {
         EDITION_EN: (
             "Translation error: \"presided worthily\" where the Latin has \"prima prǽfuit\" (was "
             "the first to preside)."
@@ -4769,7 +4769,7 @@ REVIEW_EDITION_NOTES = {
             "the rosary as he was led to execution, exhorting the Christians)."
         ),
     },
-    "mr:1105-domninus": {
+    "mr:1105-domninus-caesareae": {
         EDITION_IT: (
             "Translation error: \"Mismiyā\" where the Latin has \"metálla Phænénsia\" (the mines "
             "of Phaeno, at Feinan south of the Dead Sea)."
@@ -4780,20 +4780,20 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Abé\" where the Latin has \"Abez\"."
         ),
     },
-    "mr:1106-felix": {
+    "mr:1106-felix-thinissae": {
         EDITION_IT: (
             "Translation error: \"nell'odierna Tunisia\": Thinisa in Numidia is La Calle "
             "(El Kala), in Algeria; Ras el-Djebel in Tunisia is the homonymous Thinisa of "
             "Proconsular Africa."
         ),
     },
-    "mr:1107-athenodorus": {
+    "mr:1107-athenodorus-neocaesareae": {
         EDITION_EN: (
             "Translation error: \"divine eloquence\" where the Latin has \"divínis elóquiis\" "
             "(the divine Scriptures)."
         ),
     },
-    "mr:1107-willibrordus": {
+    "mr:1107-willibrordus-ultraiectensis": {
         EDITION_EN: (
             "Translation error: \"Saint Sergius, pope\" omits the ordinal of \"Sérgio papa "
             "Primo\" (Sergius I)."
@@ -4811,14 +4811,14 @@ REVIEW_EDITION_NOTES = {
             "\"Sírmium\" (the city of Sremska Mitrovica, in present-day Serbia)."
         ),
     },
-    "mr:1109-agrippinus": {
+    "mr:1109-agrippinus-neapoli": {
         EDITION_IT: (
             "Translation error: \"fu tra i primi che antichi documenti dichiarano difensore "
             "della città\" where the Latin has \"epíscopi inter primos\" (one of the first "
             "bishops of the city), whom ancient monuments call its defender."
         ),
     },
-    "mr:1112-macarius": {
+    "mr:1112-macarius-malei": {
         EDITION_EN: (
             "Translation error: \"Lismore\" where the Latin has \"Máleo ínsula\" (the island of "
             "Mull)."
@@ -4829,7 +4829,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Eutychius\" where the Latin has \"Eutychiáni\" (Eutychian)."
         ),
     },
-    "mr:1113-himerius": {
+    "mr:1113-himerius-susingensis": {
         EDITION_EN: (
             "Translation error: \"valley of Susa\" where the Latin has \"Valle Susingénsi\" (the "
             "valley of the Suze)."
@@ -4859,7 +4859,7 @@ REVIEW_EDITION_NOTES = {
             "he had come to England as a priest)."
         ),
     },
-    "mr:1116-eucherius": {
+    "mr:1116-eucherius-lugdunensis": {
         EDITION_IT: (
             "Translation error: \"nella vicina isola di Lérins\" (on the nearby island of "
             "Lérins) where the Latin has \"in ínsula próxima Lirinénsem\" (on the island next to "
@@ -4895,7 +4895,7 @@ REVIEW_EDITION_NOTES = {
             "Christiánæ\" (Christian Doctrine)."
         ),
     },
-    "mr:1121-agapius": {
+    "mr:1121-agapius-caesareae": {
         EDITION_EN: (
             "Translation error: \"always deferring to greater contests\" where the Latin has "
             "\"semper ad maióra certámina dilátus\" (always reserved for greater contests)."
@@ -4912,7 +4912,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Teocaltiche\" where the Latin has \"Teocaltitlán\"."
         ),
     },
-    "mr:1123-trudo": {
+    "mr:1123-trudo-sarchinii": {
         EDITION_EN: (
             "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
         ),
@@ -4923,7 +4923,7 @@ REVIEW_EDITION_NOTES = {
             "(the district of Valence in Gaul)."
         ),
     },
-    "mr:1125-moyses": {
+    "mr:1125-moyses-romae": {
         EDITION_EN: (
             "Translation error: \"the lapsed, the weak, and those at the point of death\" where "
             "the Latin has \"lapsis infírmis et in éxitu constitútis\" (the lapsed who were sick "
@@ -4951,7 +4951,7 @@ REVIEW_EDITION_NOTES = {
             "Spelling error: \"Kostowski\" for Kostkowski."
         ),
     },
-    "mr:1127-gulstanus": {
+    "mr:1127-gulstanus-rhuvigiensis": {
         EDITION_EN: (
             "Translation error: \"then a hermit in the monastery of Rhuys\" where the Latin "
             "places Gulstan, not Felix, \"in monastério Rhuvigiénsi\"."
@@ -4962,7 +4962,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Sufetula\" where the Latin has \"Sufetánus\" (of Sufes)."
         ),
     },
-    "mr:1129-iacobus": {
+    "mr:1129-iacobus-sarugensis": {
         EDITION_EN: (
             "Translation error: \"verses\" where the Latin has \"versiónibus\" (translations)."
         ),
@@ -4978,24 +4978,24 @@ REVIEW_EDITION_NOTES = {
             "Stéphani Fani\" (St Stephen's, by Launceston)."
         ),
     },
-    "mr:1201-eligius": {
+    "mr:1201-eligius-noviomensis": {
         EDITION_EN: (
             "Translation error: \"rebuilt many monasteries\" where the Latin has \"plúrima "
             "ædificavísset monastéria\" (built many monasteries)."
         ),
     },
-    "mr:1201-florentia": {
+    "mr:1201-florentia-pictavorum": {
         EDITION_EN: (
             "Translation error: the phrase \"a sancto Hilário ... convérsa\" (converted by Saint "
             "Hilary) is rendered as a time clause, losing that Hilary converted her."
         ),
     },
-    "mr:1202-pimenius": {
+    "mr:1202-pimenius-romae": {
         EDITION_EN: (
             "Translation error: \"Pimen\" where the Latin has \"Piménii\" (Pimenius)."
         ),
     },
-    "mr:1203-birinus": {
+    "mr:1203-birinus-dorcestriensis": {
         EDITION_EN: (
             "Translation error: \"who had not yet believed\" is added; the Latin has only "
             "\"Sáxonum occidentálium genti\" (the people of the West Saxons)."
@@ -5007,7 +5007,7 @@ REVIEW_EDITION_NOTES = {
             "First\"; the Latin reads that under King James the First he met the noose at Tyburn."
         ),
     },
-    "mr:1208-macarius": {
+    "mr:1208-macarius-alexandriae": {
         EDITION_IT: (
             "Translation error: \"per suo stesso ordine\" (by his own order) where the Latin has "
             "\"ad últimum ... iussus est\" (at last he was ordered, by the judge, to be burned "
@@ -5018,7 +5018,7 @@ REVIEW_EDITION_NOTES = {
             "iussus est\" means he was at last ordered to be burned alive."
         ),
     },
-    "mr:1208-patapius": {
+    "mr:1208-patapius-constantinopolis": {
         EDITION_EN: (
             "Translation error: \"an Egyptian monastery\" where the Latin has \"in Ægyptiórum "
             "monastério\" (the monastery of the Egyptians, at Constantinople)."
@@ -5092,7 +5092,7 @@ REVIEW_EDITION_NOTES = {
             "Spelling error: \"Wołowsk\" for the surname Wołowska."
         ),
     },
-    "mr:1220-dominicus": {
+    "mr:1220-dominicus-exiliensis": {
         EDITION_EN: (
             "Translation error: \"monastery of Exilensis\" where the Latin \"monastério "
             "Exiliénsi\" means the monastery of Silos."
@@ -5104,12 +5104,12 @@ REVIEW_EDITION_NOTES = {
             "chosen people, whereas it refers to the leader born in Bethlehem."
         ),
     },
-    "mr:1221-themistocles": {
+    "mr:1221-themistocles-lyciae": {
         EDITION_EN: (
             "Translation error: \"scourged\" where the Latin has \"raptátus\" (dragged)."
         ),
     },
-    "mr:1225-anastasia": {
+    "mr:1225-anastasia-sirmii": {
         EDITION_IT: (
             "Translation error: \"a Srijem ... nell’odierna Croazia\" where the Latin has "
             "\"Sírmii\" (Sirmium, today Sremska Mitrovica in Serbia)."
@@ -5125,7 +5125,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Liendo\" where the Latin \"Bléndium\" denotes Santander."
         ),
     },
-    "mr:1227-theodorus": {
+    "mr:1227-theodorus-graptus": {
         EDITION_IT: (
             "Translation error: \"Hisarlik\" where the Latin has \"Apaméæ in Bithýnia\" (Apamea, "
             "today Mudanya)."
@@ -5136,17 +5136,17 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Benedict\" where the Latin has \"Benedíctæ\" (Benedicta)."
         ),
     },
-    "mr:1230-laurentius": {
+    "mr:1230-laurentius-fraxanonis": {
         EDITION_EN: (
             "Translation error: \"Fragalà\" where the Latin has \"Fraxanónem\" (Frazzanò)."
         ),
     },
-    "mr:1230-perpetuus": {
+    "mr:1230-perpetuus-turonum": {
         EDITION_EN: (
             "Translation error: \"rebuilt\" where the Latin has \"ædificávit\" (built)."
         ),
     },
-    "mr:1231-marius": {
+    "mr:1231-marius-lausannensis": {
         EDITION_EN: (
             "Translation error: \"rebuilt many churches\" where the Latin has \"ædificávit\" "
             "(built)."
@@ -5277,7 +5277,7 @@ def validate_editions(entries):
 # `id`, the placement (`month`, `day`, `entry`, `asterisk`, `unnumbered`,
 # `also_on`, `editions`) and the links between current IDs (`same_eulogy`);
 # the rest is derived on every run.
-KEY_ORDER = ("id", "month", "day", "entry", "asterisk", "country", "typology", "places", "date", "note",
+KEY_ORDER = ("id", "month", "day", "entry", "asterisk", "country", "typology", "places", "date", "item", "note",
              "unnumbered", "also_on", "edition_notes", "editions", "same_eulogy")
 SOURCE_KEYS = ("id", "month", "day", "entry", "asterisk", "country", "unnumbered", "also_on",
                "editions", "same_eulogy")
@@ -5420,6 +5420,29 @@ def add_dates(entries, dates):
             else {k: v for k, v in e.items() if k != "date"} for e in entries]
 
 
+def load_items(repo_root, current_ids):
+    """The optional Wikidata item of each current eulogy that does not commemorate a single
+    person (data/eulogy_items.json, curated; scripts/build_eulogy_items.py). Missing file: none."""
+    path = repo_root / "data" / "eulogy_items.json"
+    if not path.exists():
+        return {}
+    items = json.load(open(path, encoding="utf-8"))["items"]
+    assert set(items) <= set(current_ids), (
+        "data/eulogy_items.json has IDs that are not current: run python3 scripts/build_eulogy_items.py check. "
+        + RECOVERY)
+    return items
+
+
+def add_items(entries, items):
+    """Insert "item" ({wikidata, kind}) after "date" for the entries with a reviewed item; an entry
+    without one (unresolved, the Marian title decision, an `auto` suggestion not yet reviewed) gets none."""
+    def item(mrid):
+        x = items.get(mrid) or {}
+        return {"wikidata": x["wikidata"], "kind": x["kind"]} if x.get("wikidata") and x.get("status") == "reviewed" else None
+    return [with_key(e, "item", item(e["id"])) if item(e["id"])
+            else {k: v for k, v in e.items() if k != "item"} for e in entries]
+
+
 def write_json(entries, deprecated, repo_root):
     out = {
         "$comment": "Canonical ID registry for the eulogies of the Roman Martyrology. "
@@ -5431,7 +5454,8 @@ def write_json(entries, deprecated, repo_root):
                     "country is the modern country of its opening place (data/gazetteer.json), "
                     "else data/countries_curated.json; a Holy Land place is IL or PS by where it lies today "
                     "(scripts/registry_places.py). Each current entry's optional date "
-                    "comes from data/dates.json (scripts/extract_dates.py).",
+                    "comes from data/dates.json (scripts/extract_dates.py). Each current entry's optional item "
+                    "comes from data/eulogy_items.json (scripts/build_eulogy_items.py).",
         "anchor_edition": "martyrologium_romanum_editio_altera_2004",
         "id_scheme": "mr:MMDD-slug",
         "entry_count": len(entries) + len(deprecated),
@@ -5517,6 +5541,7 @@ def build(repo_root):
         check_place_roles(places, typology)
     entries = add_dates(add_places(add_typology(entries, typology), places),
                         load_dates(repo_root, current_ids))
+    entries = add_items(entries, load_items(repo_root, current_ids))
     import registry_places  # the countries (#12)
     gazetteer_path = repo_root / "data" / "gazetteer.json"
     gazetteer = json.load(open(gazetteer_path, encoding="utf-8"))["places"] if gazetteer_path.exists() else {}

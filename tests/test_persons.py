@@ -298,6 +298,41 @@ class ValidateParenthesesTest(unittest.TestCase):
                                      foot, {"mr:1124-x-et-socii"}), [])
 
 
+class ValidateSharedSurnameTest(unittest.TestCase):
+    FOOT = {"mr:0717-x-et-socii": [{"mark": "1", "after": "x", "text":
+            "Quarum nomina: Ioanna, Magdalena et Petrina Sailland, Elisabeth Vérolot, Catharina et Teresia Soiron."}]}
+
+    def check(self, name):
+        return ep.validate({"mr:0717-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                           self.FOOT, {"mr:0717-x-et-socii"})
+
+    def test_first_names_printed_before_a_shared_surname_take_it(self):
+        for name in ("Catharina Soiron", "Teresia Soiron", "Ioanna Sailland", "Magdalena Sailland",
+                     "Petrina Sailland"):
+            self.assertEqual(self.check(name), [], name)
+
+    def test_a_shared_surname_may_hold_a_particle(self):
+        foot = {"mr:0201-x-et-socii": [{"mark": "1", "after": "x", "text":
+                "Quarum nomina: Ioanna, Magdalena et Petrina Sailland d’Espinatz, sorores."}]}
+        for name in ("Ioanna Sailland d’Espinatz", "Magdalena Sailland d’Espinatz"):
+            self.assertEqual(ep.validate({"mr:0201-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                                         foot, {"mr:0201-x-et-socii"}), [], name)
+
+    def test_the_surname_is_shared_only_across_first_names_of_one_list_item(self):
+        # Elisabeth's own surname stands between her and Soiron; Vérolot is no shared surname either.
+        for name in ("Elisabeth Soiron", "Catharina Sailland", "Petrina Vérolot"):
+            self.assertTrue(self.check(name), name)
+
+    def test_the_scan_back_stops_at_a_group_separator(self):
+        # "Elisabeth; Catharina et Teresia Soiron": Elisabeth is in a group of her own.
+        foot = {"mr:0717-x-et-socii": [{"mark": "1", "after": "x", "text":
+                "Quarum nomina: Elisabeth; Maria, Catharina et Teresia Soiron."}]}
+        check = lambda name: ep.validate({"mr:0717-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                                         foot, {"mr:0717-x-et-socii"})
+        self.assertEqual(check("Maria Soiron"), [])
+        self.assertTrue(check("Elisabeth Soiron"))
+
+
 class RenderTest(unittest.TestCase):
     def test_json_shape(self):
         import json
@@ -498,7 +533,7 @@ class VariantsTest(unittest.TestCase):
         persons, _ = ep.eulogy_persons("mr:0316-ioannes-sordi", "Sanctus Ioannes Sordi",
                                        "Mántuæ, sancti Ioánnis Sordi seu Cacciafronte, epíscopi.", [], lex, {})
         self.assertEqual(persons, [{"name": "Ioannes Sordi", "also": ["Ioannes Cacciafronte"], "where": "text"}])
-        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, _ = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                        "In Polónia, sanctæ Kingæ seu Cunegúndis, vírginis.", [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
 
@@ -513,15 +548,15 @@ class VariantsTest(unittest.TestCase):
 
     def test_curated_variants_are_added_and_checked(self):
         import extract_persons as ep
-        by_id = {"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}
-        self.assertEqual(ep.apply_curated_variants(by_id, {"$comment": "x", "mr:0817-mamas": {"Mamas": ["Mames"]}}), [])
-        self.assertEqual(by_id["mr:0817-mamas"], [{"name": "Mamas", "also": ["Mames"], "where": "text"}])
-        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0817-mamas": {"Mamas": ["Mames"]}}), [])  # no repeat
-        self.assertEqual(by_id["mr:0817-mamas"][0]["also"], ["Mames"])
-        for bad in ({"mr:0817-mamas": {"Nemo": ["X"]}}, {"mr:9999-x": {"Mamas": ["X"]}},
-                    {"mr:0817-mamas": {"Mamas": ["Mamas"]}}, {"mr:0817-mamas": {"Mamas": ["Mam#es"]}},
-                    {"mr:0817-mamas": {"Mamas": [""]}}, {"mr:0817-mamas": {"Mamas": "Mames"}}):
-            self.assertTrue(ep.apply_curated_variants({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]}, bad), bad)
+        by_id = {"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]}
+        self.assertEqual(ep.apply_curated_variants(by_id, {"$comment": "x", "mr:0817-mamas-caesareae": {"Mamas": ["Mames"]}}), [])
+        self.assertEqual(by_id["mr:0817-mamas-caesareae"], [{"name": "Mamas", "also": ["Mames"], "where": "text"}])
+        self.assertEqual(ep.apply_curated_variants(by_id, {"mr:0817-mamas-caesareae": {"Mamas": ["Mames"]}}), [])  # no repeat
+        self.assertEqual(by_id["mr:0817-mamas-caesareae"][0]["also"], ["Mames"])
+        for bad in ({"mr:0817-mamas-caesareae": {"Nemo": ["X"]}}, {"mr:9999-x": {"Mamas": ["X"]}},
+                    {"mr:0817-mamas-caesareae": {"Mamas": ["Mamas"]}}, {"mr:0817-mamas-caesareae": {"Mamas": ["Mam#es"]}},
+                    {"mr:0817-mamas-caesareae": {"Mamas": [""]}}, {"mr:0817-mamas-caesareae": {"Mamas": "Mames"}}):
+            self.assertTrue(ep.apply_curated_variants({"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]}, bad), bad)
 
     def test_validate_checks_also(self):
         import extract_persons as ep
@@ -534,10 +569,10 @@ class VariantsTest(unittest.TestCase):
 
     def test_the_report_lists_unread_variants_without_the_printed_form(self):
         import extract_persons as ep
-        report = ep.render_report({"mr:0817-mamas": [{"name": "Mamas", "where": "text"}]},
-                                  {"mr:0817-mamas": {"uncertain": [], "skipped": [], "printed_twice": [],
+        report = ep.render_report({"mr:0817-mamas-caesareae": [{"name": "Mamas", "where": "text"}]},
+                                  {"mr:0817-mamas-caesareae": {"uncertain": [], "skipped": [], "printed_twice": [],
                                                      "variants_unread": ["Mamas"], "socii_without_names": False}})
-        self.assertIn("- mr:0817-mamas: Mamas", report)
+        self.assertIn("- mr:0817-mamas-caesareae: Mamas", report)
         self.assertNotIn("Mamétis", report)
 
     def test_a_curated_variant_corrects_an_extracted_spelling(self):
@@ -582,21 +617,21 @@ class VariantsTest(unittest.TestCase):
         names, _ = pt.footnote_names("Quorum nomina: Telica vel Tazelita seu Tazelitus, Felix.", variants=variants)
         self.assertEqual((names, variants), (["Telica", "Felix"], {0: ["Tazelita", "Tazelitus"]}))
         lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis", "Cunegunda"]}
-        persons, _ = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, _ = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                        "In Polónia, sanctæ Kingæ seu Cunegúndis sive Cunegúndæ, vírginis.", [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis", "Cunegunda"], "where": "text"}])
 
     def test_an_unread_variant_stays_reported_until_curated_for_that_person(self):
         import extract_persons as ep
         lex = {pt.name_key(w): w for w in ["Kinga", "Cunegundis"]}
-        persons, issues = ep.eulogy_persons("mr:0724-kinga", "Sancta Kinga",
+        persons, issues = ep.eulogy_persons("mr:0724-kinga-sandeciae", "Sancta Kinga",
                                             "In Polónia, sanctæ Kingæ seu Cunegúndis sive Ficténtis, vírginis.",
                                             [], lex, {})
         self.assertEqual(persons, [{"name": "Kinga", "also": ["Cunegundis"], "where": "text"}])
         self.assertEqual(issues["variants_unread"], ["Kinga"])  # Cunegundis read, Ficténtis not
-        by_id, all_issues = {"mr:0724-kinga": persons}, {"mr:0724-kinga": issues}
-        self.assertEqual(ep.resolve_unread(by_id, all_issues, {}), {"mr:0724-kinga": issues})
-        self.assertEqual(ep.resolve_unread(by_id, all_issues, {"mr:0724-kinga": {"Kinga": ["Fictens"]}}), {})
+        by_id, all_issues = {"mr:0724-kinga-sandeciae": persons}, {"mr:0724-kinga-sandeciae": issues}
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {}), {"mr:0724-kinga-sandeciae": issues})
+        self.assertEqual(ep.resolve_unread(by_id, all_issues, {"mr:0724-kinga-sandeciae": {"Kinga": ["Fictens"]}}), {})
 
 
 class SamePersonTest(unittest.TestCase):

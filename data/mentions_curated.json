@@ -290,6 +290,536 @@
           "qid": null
         }
       ],
+      "mr:0201-maria-anna-vaillot-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 34,
+          "check": "ad1081bb",
+          "qid": "Q791403",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 70,
+          "check": "ff64af28",
+          "name": "Maria Anna Vaillot",
+          "qid": "Q118445257"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 39,
+          "check": "6e864f72",
+          "name": "Othilia Baumgarten",
+          "qid": "Q112264188"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 52,
+          "end": 65,
+          "check": "04a2f2d5",
+          "name": "Ioanna Gruget",
+          "qid": "Q141886848"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 67,
+          "end": 100,
+          "check": "b20264b4",
+          "name": "Ludovica Rallier de la Tertinière",
+          "qid": "Q141886850"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 102,
+          "end": 120,
+          "check": "684cd8da",
+          "name": "Magdalena Perrotin",
+          "qid": "Q141886853"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 122,
+          "end": 140,
+          "check": "1df37d85",
+          "name": "Maria Anna Pichery",
+          "qid": "Q115451001"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 144,
+          "end": 160,
+          "check": "2e548959",
+          "name": "Simona Chauvigné",
+          "qid": "Q141883319"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 169,
+          "end": 184,
+          "check": "c05069c8",
+          "name": "Francisca Pagis",
+          "qid": "Q63093062"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 186,
+          "end": 201,
+          "check": "84884800",
+          "name": "Ioanna Fouchard",
+          "qid": "Q141886847"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 203,
+          "end": 220,
+          "check": "5f9a533d",
+          "name": "Margarita Rivière",
+          "qid": "Q141883151"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 222,
+          "end": 234,
+          "check": "de135957",
+          "name": "Maria Cassin",
+          "qid": "Q141883152"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 236,
+          "end": 251,
+          "check": "aefb9c13",
+          "name": "Maria Fausseuse",
+          "qid": "Q98923583"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 253,
+          "end": 265,
+          "check": "c999c7ae",
+          "name": "Maria Galard",
+          "qid": "Q141883154"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 267,
+          "end": 280,
+          "check": "7de77889",
+          "name": "Maria Gasnier",
+          "qid": "Q141883155"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 282,
+          "end": 304,
+          "check": "6ddc9f01",
+          "name": "Maria Ioanna Chauvigné",
+          "qid": "Q141883157"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 306,
+          "end": 317,
+          "check": "68f2f840",
+          "name": "Maria Lenée",
+          "qid": "Q141883158"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 319,
+          "end": 337,
+          "check": "bedef7c0",
+          "name": "Maria Leroy Brevet",
+          "qid": "Q141883159"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 339,
+          "end": 352,
+          "check": "5f57cccc",
+          "name": "Maria Rouault",
+          "qid": "Q141883160"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 354,
+          "end": 373,
+          "check": "afba796c",
+          "name": "Petrina Phélippeaux",
+          "qid": "Q141894164"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 375,
+          "end": 390,
+          "check": "a3556344",
+          "name": "Renata Cailleau",
+          "qid": "Q141892621"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 392,
+          "end": 405,
+          "check": "04aa21ce",
+          "name": "Renata Martin",
+          "qid": "Q141883316"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 409,
+          "end": 427,
+          "check": "1dcb5209",
+          "name": "Victoria Bauduceau",
+          "qid": "Q116457750"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 437,
+          "end": 443,
+          "check": "7cbc0295",
+          "name": "Ioanna Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 445,
+          "end": 454,
+          "check": "691fb402",
+          "name": "Magdalena Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 458,
+          "end": 485,
+          "check": "d792ab7e",
+          "name": "Petrina Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 496,
+          "end": 504,
+          "check": "be51b0c3",
+          "name": "Gabriela Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 506,
+          "end": 513,
+          "check": "7fe66dd6",
+          "name": "Petrina Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 517,
+          "end": 533,
+          "check": "b720fce7",
+          "name": "Susanna Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 544,
+          "end": 549,
+          "check": "9ff18ebe",
+          "name": "Maria Grillard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 553,
+          "end": 568,
+          "check": "463bfaf5",
+          "name": "Renata Grillard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 579,
+          "end": 607,
+          "check": "6367f96b",
+          "name": "Anna Francisca de Villeneuve",
+          "qid": "Q141886840"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 609,
+          "end": 620,
+          "check": "15de1516",
+          "name": "Anna Hamard",
+          "qid": "Q141886841"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 622,
+          "end": 633,
+          "check": "382900a0",
+          "name": "Carola Davy",
+          "qid": "Q63092723"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 635,
+          "end": 655,
+          "check": "60a4b1ea",
+          "name": "Catharina Cottanceau",
+          "qid": "Q4174285"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 657,
+          "end": 676,
+          "check": "9f72eb5d",
+          "name": "Francisca Bellanger",
+          "qid": "Q141886842"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 678,
+          "end": 695,
+          "check": "4310964d",
+          "name": "Francisca Bonneau",
+          "qid": "Q141886843"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 697,
+          "end": 713,
+          "check": "ea46764d",
+          "name": "Francisca Michau",
+          "qid": "Q141886844"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 715,
+          "end": 731,
+          "check": "52c89006",
+          "name": "Iacobina Monnier",
+          "qid": "Q141886845"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 733,
+          "end": 750,
+          "check": "6a28a761",
+          "name": "Ioanna Bourigault",
+          "qid": "Q141886846"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 752,
+          "end": 781,
+          "check": "07b0deed",
+          "name": "Ludovica Amata Déan de Luigné",
+          "qid": "Q141886849"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 783,
+          "end": 798,
+          "check": "15c0e578",
+          "name": "Magdalena Blond",
+          "qid": "Q141886852"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 800,
+          "end": 811,
+          "check": "95549d9b",
+          "name": "Maria Leroy",
+          "qid": "Q141936975"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 813,
+          "end": 827,
+          "check": "f3b4a599",
+          "name": "Petrina Besson",
+          "qid": "Q141894162"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 829,
+          "end": 844,
+          "check": "20aecd3c",
+          "name": "Petrina Ledoyen",
+          "qid": "Q141936755"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 846,
+          "end": 860,
+          "check": "b481e7ce",
+          "name": "Petrina Grille",
+          "qid": "Q141936781"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 862,
+          "end": 874,
+          "check": "5b60d859",
+          "name": "Renata Valin",
+          "qid": "Q141883317"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 878,
+          "end": 890,
+          "check": "75868edf",
+          "name": "Rosa Quenion",
+          "qid": "Q141883318"
+        }
+      ],
       "mr:0202-catharina-de-ricci": [
         {
           "kind": "place",
@@ -924,6 +1454,61 @@
           "check": "785fdf27",
           "name": "Eunus",
           "qid": null
+        }
+      ],
+      "mr:0303-cunegundis-confugiae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "a43a1ebe",
+          "qid": "Q2009957",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 37,
+          "check": "f6377d46",
+          "name": "Cunegundis",
+          "qid": "Q61620"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 102,
+          "end": 109,
+          "check": "91252c86",
+          "name": "Henricus",
+          "qid": "Q103556"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 257,
+          "end": 264,
+          "check": "2e529ff2",
+          "name": "Henricus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 270,
+          "end": 278,
+          "check": "28dbf211",
+          "qid": "Q3936",
+          "roles": [
+            {
+              "role": "burial"
+            }
+          ]
         }
       ],
       "mr:0303-iacobinus-de-canepacci": [
@@ -1748,7 +2333,7 @@
           "qid": null
         }
       ],
-      "mr:0417-simeon-seleuciae": [
+      "mr:0417-simeon-bar-sabas-et-socii": [
         {
           "kind": "place",
           "where": "text",
@@ -1763,7 +2348,7 @@
           "start": 26,
           "end": 34,
           "check": "4839c55f",
-          "name": "Simeon",
+          "name": "Simeon bar Sabas",
           "qid": null
         },
         {
@@ -1772,7 +2357,7 @@
           "start": 456,
           "end": 464,
           "check": "4839c55f",
-          "name": "Simeon",
+          "name": "Simeon bar Sabas",
           "qid": null
         }
       ],
@@ -1884,6 +2469,43 @@
           "check": "e1934836",
           "name": "Isaias Propheta",
           "qid": null
+        }
+      ],
+      "mr:0513-maria-de-fatima": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "cbc5cca0",
+          "name": "Beata Maria Virgo de Fatima",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 24,
+          "end": 43,
+          "check": "68ecb760",
+          "qid": "Q191133",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 105,
+          "end": 119,
+          "check": "7f295818",
+          "qid": "Q939511",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
         }
       ],
       "mr:0514-matthias-apostolus": [
@@ -2683,7 +3305,7 @@
           "qid": null
         }
       ],
-      "mr:0605-bonifatius": [
+      "mr:0605-bonifatius-docci": [
         {
           "kind": "person",
           "where": "text",
@@ -2944,6 +3566,140 @@
           "qid": null
         }
       ],
+      "mr:0710-emmanuel-ruiz-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 16,
+          "check": "e80a1d63",
+          "qid": "Q3766",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 43,
+          "end": 58,
+          "check": "55f2bd1e",
+          "name": "Emmanuel Ruiz",
+          "qid": "Q3052860"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 35,
+          "check": "73b27aab",
+          "name": "Carmelus Volta",
+          "qid": "Q11735906"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 37,
+          "end": 49,
+          "check": "ff263a6c",
+          "name": "Petrus Soler",
+          "qid": "Q11818085"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 51,
+          "end": 67,
+          "check": "7523a45d",
+          "name": "Nicolaus Alberca",
+          "qid": "Q11780832"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 69,
+          "end": 88,
+          "check": "8352ff06",
+          "name": "Engelbertus Kolland",
+          "qid": "Q1341927"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 90,
+          "end": 106,
+          "check": "04fdee39",
+          "name": "Ascanius Nicanor",
+          "qid": "Q9161182"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 126,
+          "end": 143,
+          "check": "88d82bf4",
+          "name": "Franciscus Pinazo",
+          "qid": "Q9262820"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 147,
+          "end": 172,
+          "check": "91092b91",
+          "name": "Ioannes Iacobus Fernández",
+          "qid": "Q6300057"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 212,
+          "end": 222,
+          "check": "d722f8ba",
+          "name": "Franciscus Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 224,
+          "end": 231,
+          "check": "05d611c9",
+          "name": "Mootius Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 235,
+          "end": 251,
+          "check": "ffc2455b",
+          "name": "Raphael Massabki",
+          "qid": null
+        }
+      ],
       "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
         {
           "kind": "place",
@@ -2995,7 +3751,7 @@
           "qid": null
         }
       ],
-      "mr:0713-myrope": [
+      "mr:0713-myrope-chii": [
         {
           "kind": "place",
           "where": "text",
@@ -3012,6 +3768,30 @@
           "check": "7f310b34",
           "name": "Myrope",
           "qid": null
+        }
+      ],
+      "mr:0716-maria-de-monte-carmelo": [
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 0,
+          "end": 20,
+          "check": "cbc5cca0",
+          "name": "Beata Maria Virgo de Monte Carmelo",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 24,
+          "end": 37,
+          "check": "fcb12c72",
+          "qid": "Q185318",
+          "roles": [
+            {
+              "role": "foundation"
+            }
+          ]
         }
       ],
       "mr:0717-iusta-et-rufina": [
@@ -3057,6 +3837,208 @@
           "end": 251,
           "check": "c3afd929",
           "name": "Rufina",
+          "qid": null
+        }
+      ],
+      "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "17800f17",
+          "qid": "Q90",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 29,
+          "end": 90,
+          "check": "7079b536",
+          "name": "Maria Magdalena Claudina Lidoine",
+          "qid": "Q10380545"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 125,
+          "end": 142,
+          "check": "d0c2c36b",
+          "qid": "Q109325093",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 67,
+          "check": "db9bd8a4",
+          "name": "Maria Anna Francisca a Sancto Ludovico Brideau",
+          "qid": "Q18710444"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 69,
+          "end": 106,
+          "check": "432d454a",
+          "name": "Maria Anna a Iesu Crucifixo Piedcourt",
+          "qid": "Q18710412"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 108,
+          "end": 163,
+          "check": "2b61e30d",
+          "name": "Anna Maria Magdalena Thouret",
+          "qid": "Q1067362"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 165,
+          "end": 231,
+          "check": "088ab045",
+          "name": "Maria Claudia Cypriana Brard",
+          "qid": "Q18710419"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 233,
+          "end": 275,
+          "check": "8e7005fb",
+          "name": "Maria Gabriela de Croissy",
+          "qid": "Q18710407"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 277,
+          "end": 320,
+          "check": "c594e007",
+          "name": "Maria Anna Hanisset",
+          "qid": "Q18710438"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 322,
+          "end": 372,
+          "check": "73ed3805",
+          "name": "Maria Gabriela Trézelle",
+          "qid": "Q18710432"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 374,
+          "end": 424,
+          "check": "bd5c90bf",
+          "name": "Rosa Chrétien de Neufville",
+          "qid": "Q7367608"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 426,
+          "end": 467,
+          "check": "257bf8df",
+          "name": "Anna Pelras",
+          "qid": "Q18710434"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 469,
+          "end": 504,
+          "check": "cf3b9b52",
+          "name": "Maria Genovefa Meunier",
+          "qid": "Q2994822"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 506,
+          "end": 547,
+          "check": "b36a86fd",
+          "name": "Angelica Roussel",
+          "qid": "Q18710436"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 549,
+          "end": 577,
+          "check": "9a9269ef",
+          "name": "Maria a Sancta Martha Dufour",
+          "qid": "Q18710425"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 579,
+          "end": 621,
+          "check": "c8fbd218",
+          "name": "Elisabeth Iulia a Sancto Francisco Vérolot",
+          "qid": "Q18710406"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 623,
+          "end": 632,
+          "check": "a72aefec",
+          "name": "Catharina Soiron",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 636,
+          "end": 650,
+          "check": "ad8a92b4",
+          "name": "Teresia Soiron",
           "qid": null
         }
       ],
@@ -3506,7 +4488,7 @@
           "qid": null
         }
       ],
-      "mr:0725-olympias": [
+      "mr:0725-olympias-nicomediae": [
         {
           "kind": "place",
           "where": "text",
@@ -3666,7 +4648,31 @@
           "qid": null
         }
       ],
-      "mr:0804-ia": [
+      "mr:0802-ioanna-de-aza": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "4ede2f56",
+          "qid": "Q848172",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
+          "end": 52,
+          "check": "50ddf619",
+          "name": "Ioanna de Aza",
+          "qid": null
+        }
+      ],
+      "mr:0804-ia-persidis": [
         {
           "kind": "place",
           "where": "text",
@@ -3945,7 +4951,7 @@
           ]
         }
       ],
-      "mr:0810-laurentius": [
+      "mr:0810-laurentius-romae": [
         {
           "kind": "person",
           "where": "text",
@@ -4145,7 +5151,7 @@
           "qid": null
         }
       ],
-      "mr:0819-ludovicus": [
+      "mr:0819-ludovicus-tolosae": [
         {
           "kind": "place",
           "where": "text",
@@ -4206,7 +5212,7 @@
           "qid": null
         }
       ],
-      "mr:0822-symphorianus": [
+      "mr:0822-symphorianus-augustoduni": [
         {
           "kind": "place",
           "where": "text",
@@ -4299,6 +5305,30 @@
           "end": 59,
           "check": "10318270",
           "name": "Ioanna Jugan",
+          "qid": null
+        }
+      ],
+      "mr:0830-fantinus-iunior": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 25,
+          "check": "f526a1bc",
+          "qid": "Q17151",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 34,
+          "end": 41,
+          "check": "97a4325f",
+          "name": "Fantinus Iunior",
           "qid": null
         }
       ],
@@ -5428,7 +6458,7 @@
           "qid": null
         }
       ],
-      "mr:0902-iustus": [
+      "mr:0902-iustus-lugduni": [
         {
           "kind": "place",
           "where": "text",
@@ -5509,7 +6539,7 @@
           ]
         }
       ],
-      "mr:0904-caletricus": [
+      "mr:0904-caletricus-carnuti": [
         {
           "kind": "place",
           "where": "text",
@@ -5569,7 +6599,7 @@
           "qid": null
         }
       ],
-      "mr:0907-sozon": [
+      "mr:0907-sozon-pompeiopoli": [
         {
           "kind": "place",
           "where": "text",
@@ -6351,7 +7381,7 @@
           "qid": null
         }
       ],
-      "mr:0911-sacerdos": [
+      "mr:0911-sacerdos-lugdunensis": [
         {
           "kind": "place",
           "where": "text",
@@ -6622,7 +7652,7 @@
           "qid": "Q23943175"
         }
       ],
-      "mr:0920-dorymedon": [
+      "mr:0920-dorymedon-synnadorum": [
         {
           "kind": "place",
           "where": "text",
@@ -6961,7 +7991,7 @@
           "qid": null
         }
       ],
-      "mr:1005-sanctus": [
+      "mr:1005-sanctus-corae": [
         {
           "kind": "place",
           "where": "text",
@@ -6980,7 +8010,7 @@
           "qid": null
         }
       ],
-      "mr:1006-fideus": [
+      "mr:1006-fides-aginni": [
         {
           "kind": "place",
           "where": "text",
@@ -9148,7 +10178,7 @@
           "qid": null
         }
       ],
-      "mr:1226-zeno": [
+      "mr:1226-zeno-maiumae": [
         {
           "kind": "person",
           "where": "text",
@@ -9417,6 +10447,536 @@
           "check": "62817ee4",
           "name": "Carola Lucas",
           "qid": null
+        }
+      ],
+      "mr:0201-maria-anna-vaillot-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 35,
+          "check": "f550966a",
+          "qid": "Q791403",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 58,
+          "end": 71,
+          "check": "1716048d",
+          "name": "Maria Anna Vaillot",
+          "qid": "Q118445257"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 24,
+          "end": 41,
+          "check": "89f8c491",
+          "name": "Othilia Baumgarten",
+          "qid": "Q112264188"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 54,
+          "end": 69,
+          "check": "e92399ea",
+          "name": "Ioanna Gruget",
+          "qid": "Q141886848"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 71,
+          "end": 101,
+          "check": "4201b4fc",
+          "name": "Ludovica Rallier de la Tertinière",
+          "qid": "Q141886850"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 103,
+          "end": 121,
+          "check": "5b8578ea",
+          "name": "Magdalena Perrotin",
+          "qid": "Q141886853"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 123,
+          "end": 139,
+          "check": "5d7ba336",
+          "name": "Maria Anna Pichery",
+          "qid": "Q115451001"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 142,
+          "end": 158,
+          "check": "2e548959",
+          "name": "Simona Chauvigné",
+          "qid": "Q141883319"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 168,
+          "end": 183,
+          "check": "6176cdb3",
+          "name": "Francisca Pagis",
+          "qid": "Q63093062"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 185,
+          "end": 202,
+          "check": "44ce49e9",
+          "name": "Ioanna Fouchard",
+          "qid": "Q141886847"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 204,
+          "end": 222,
+          "check": "b9f9690f",
+          "name": "Margarita Rivière",
+          "qid": "Q141883151"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 224,
+          "end": 236,
+          "check": "de135957",
+          "name": "Maria Cassin",
+          "qid": "Q141883152"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 238,
+          "end": 253,
+          "check": "aefb9c13",
+          "name": "Maria Fausseuse",
+          "qid": "Q98923583"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 255,
+          "end": 267,
+          "check": "c999c7ae",
+          "name": "Maria Galard",
+          "qid": "Q141883154"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 269,
+          "end": 282,
+          "check": "7de77889",
+          "name": "Maria Gasnier",
+          "qid": "Q141883155"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 284,
+          "end": 308,
+          "check": "15551e68",
+          "name": "Maria Ioanna Chauvigné",
+          "qid": "Q141883157"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 310,
+          "end": 321,
+          "check": "68f2f840",
+          "name": "Maria Lenée",
+          "qid": "Q141883158"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 323,
+          "end": 341,
+          "check": "bedef7c0",
+          "name": "Maria Leroy Brevet",
+          "qid": "Q141883159"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 343,
+          "end": 356,
+          "check": "5f57cccc",
+          "name": "Maria Rouault",
+          "qid": "Q141883160"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 358,
+          "end": 377,
+          "check": "b2f3da84",
+          "name": "Petrina Phélippeaux",
+          "qid": "Q141894164"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 379,
+          "end": 394,
+          "check": "a3556344",
+          "name": "Renata Cailleau",
+          "qid": "Q141892621"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 396,
+          "end": 409,
+          "check": "04aa21ce",
+          "name": "Renata Martin",
+          "qid": "Q141883316"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 412,
+          "end": 430,
+          "check": "7e023dc8",
+          "name": "Victoria Bauduceau",
+          "qid": "Q116457750"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 439,
+          "end": 447,
+          "check": "37d2ebf8",
+          "name": "Ioanna Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 449,
+          "end": 458,
+          "check": "553d97e7",
+          "name": "Magdalena Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 461,
+          "end": 488,
+          "check": "2a8e67c3",
+          "name": "Petrina Sailland d’Espinatz",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 499,
+          "end": 508,
+          "check": "1625b63e",
+          "name": "Gabriela Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 510,
+          "end": 517,
+          "check": "6fb68148",
+          "name": "Petrina Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 520,
+          "end": 536,
+          "check": "b720fce7",
+          "name": "Susanna Androuin",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 547,
+          "end": 552,
+          "check": "9ff18ebe",
+          "name": "Maria Grillard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 555,
+          "end": 570,
+          "check": "463bfaf5",
+          "name": "Renata Grillard",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 581,
+          "end": 609,
+          "check": "72c6a7d7",
+          "name": "Anna Francisca de Villeneuve",
+          "qid": "Q141886840"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 611,
+          "end": 622,
+          "check": "15de1516",
+          "name": "Anna Hamard",
+          "qid": "Q141886841"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 624,
+          "end": 637,
+          "check": "f733ada2",
+          "name": "Carola Davy",
+          "qid": "Q63092723"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 639,
+          "end": 658,
+          "check": "83fcd1d7",
+          "name": "Catharina Cottanceau",
+          "qid": "Q4174285"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 660,
+          "end": 679,
+          "check": "1af319a3",
+          "name": "Francisca Bellanger",
+          "qid": "Q141886842"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 681,
+          "end": 698,
+          "check": "f1bfdeab",
+          "name": "Francisca Bonneau",
+          "qid": "Q141886843"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 700,
+          "end": 716,
+          "check": "14d55d0b",
+          "name": "Francisca Michau",
+          "qid": "Q141886844"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 718,
+          "end": 735,
+          "check": "7de26cfd",
+          "name": "Iacobina Monnier",
+          "qid": "Q141886845"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 737,
+          "end": 756,
+          "check": "9af0b755",
+          "name": "Ioanna Bourigault",
+          "qid": "Q141886846"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 758,
+          "end": 784,
+          "check": "9b627ce5",
+          "name": "Ludovica Amata Déan de Luigné",
+          "qid": "Q141886849"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 786,
+          "end": 801,
+          "check": "51da479f",
+          "name": "Magdalena Blond",
+          "qid": "Q141886852"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 803,
+          "end": 814,
+          "check": "95549d9b",
+          "name": "Maria Leroy",
+          "qid": "Q141936975"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 816,
+          "end": 830,
+          "check": "87c98808",
+          "name": "Petrina Besson",
+          "qid": "Q141894162"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 832,
+          "end": 847,
+          "check": "443e6820",
+          "name": "Petrina Ledoyen",
+          "qid": "Q141936755"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 849,
+          "end": 863,
+          "check": "df630f18",
+          "name": "Petrina Grille",
+          "qid": "Q141936781"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 865,
+          "end": 877,
+          "check": "5b60d859",
+          "name": "Renata Valin",
+          "qid": "Q141883317"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 880,
+          "end": 892,
+          "check": "75868edf",
+          "name": "Rosa Quenion",
+          "qid": "Q141883318"
         }
       ],
       "mr:0206-paulus-miki-et-socii": [
@@ -10874,6 +12434,61 @@
           "check": "4adffd4b",
           "name": "Eunus",
           "qid": null
+        }
+      ],
+      "mr:0303-cunegundis-confugiae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 39,
+          "check": "38dbeed3",
+          "qid": "Q2009957",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 47,
+          "end": 56,
+          "check": "b9a46c52",
+          "name": "Cunegundis",
+          "qid": "Q61620"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 115,
+          "end": 121,
+          "check": "7a4a2186",
+          "name": "Henricus",
+          "qid": "Q103556"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 347,
+          "end": 353,
+          "check": "7a4a2186",
+          "name": "Henricus",
+          "qid": null
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 356,
+          "end": 364,
+          "check": "2382ad46",
+          "qid": "Q3936",
+          "roles": [
+            {
+              "role": "burial"
+            }
+          ]
         }
       ],
       "mr:0303-marinus-et-asterius": [
@@ -12886,7 +14501,7 @@
           "qid": null
         }
       ],
-      "mr:0605-bonifatius": [
+      "mr:0605-bonifatius-docci": [
         {
           "kind": "person",
           "where": "text",
@@ -15600,6 +17215,39 @@
           "check": "79ca798f",
           "name": "Ioannes Iacobus Fernández",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 207,
+          "end": 216,
+          "check": "f00ecd22",
+          "name": "Franciscus Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 218,
+          "end": 225,
+          "check": "05d611c9",
+          "name": "Mootius Massabki",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 228,
+          "end": 245,
+          "check": "f733081b",
+          "name": "Raphael Massabki",
+          "qid": null
         }
       ],
       "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
@@ -15791,6 +17439,208 @@
           "end": 231,
           "check": "e7791d3f",
           "name": "Rufina",
+          "qid": null
+        }
+      ],
+      "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 19,
+          "check": "44b19b44",
+          "qid": "Q90",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 27,
+          "end": 85,
+          "check": "e7563098",
+          "name": "Maria Magdalena Claudina Lidoine",
+          "qid": "Q10380545"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 119,
+          "end": 139,
+          "check": "555c11dc",
+          "qid": "Q109325093",
+          "roles": [
+            {
+              "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 24,
+          "end": 66,
+          "check": "144d1747",
+          "name": "Maria Anna Francisca a Sancto Ludovico Brideau",
+          "qid": "Q18710444"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 68,
+          "end": 105,
+          "check": "2cecaef7",
+          "name": "Maria Anna a Iesu Crucifixo Piedcourt",
+          "qid": "Q18710412"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 107,
+          "end": 165,
+          "check": "190c72d0",
+          "name": "Anna Maria Magdalena Thouret",
+          "qid": "Q1067362"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 167,
+          "end": 233,
+          "check": "5ed1e66d",
+          "name": "Maria Claudia Cypriana Brard",
+          "qid": "Q18710419"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 235,
+          "end": 278,
+          "check": "94f97209",
+          "name": "Maria Gabriela de Croissy",
+          "qid": "Q18710407"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 280,
+          "end": 325,
+          "check": "f0750712",
+          "name": "Maria Anna Hanisset",
+          "qid": "Q18710438"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 327,
+          "end": 376,
+          "check": "0a21cfb6",
+          "name": "Maria Gabriela Trézelle",
+          "qid": "Q18710432"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 378,
+          "end": 427,
+          "check": "02ad139d",
+          "name": "Rosa Chrétien de Neufville",
+          "qid": "Q7367608"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 429,
+          "end": 473,
+          "check": "34d0ba85",
+          "name": "Anna Pelras",
+          "qid": "Q18710434"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 475,
+          "end": 509,
+          "check": "86212e76",
+          "name": "Maria Genovefa Meunier",
+          "qid": "Q2994822"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 511,
+          "end": 555,
+          "check": "e441be91",
+          "name": "Angelica Roussel",
+          "qid": "Q18710436"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 557,
+          "end": 584,
+          "check": "0c3bac1d",
+          "name": "Maria a Sancta Martha Dufour",
+          "qid": "Q18710425"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 586,
+          "end": 628,
+          "check": "144c7b09",
+          "name": "Elisabeth Iulia a Sancto Francisco Vérolot",
+          "qid": "Q18710406"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 630,
+          "end": 638,
+          "check": "54be11d7",
+          "name": "Catharina Soiron",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 641,
+          "end": 654,
+          "check": "ced9e5fb",
+          "name": "Teresia Soiron",
           "qid": null
         }
       ],
@@ -15988,7 +17838,7 @@
           "qid": null
         }
       ],
-      "mr:0727-ecclesius": [
+      "mr:0727-ecclesius-ravennae": [
         {
           "kind": "place",
           "where": "text",
@@ -16451,7 +18301,7 @@
           ]
         }
       ],
-      "mr:0822-symphorianus": [
+      "mr:0822-symphorianus-augustoduni": [
         {
           "kind": "place",
           "where": "text",
@@ -17593,7 +19443,7 @@
           "qid": null
         }
       ],
-      "mr:0902-iustus": [
+      "mr:0902-iustus-lugduni": [
         {
           "kind": "place",
           "where": "text",
@@ -19702,6 +21552,30 @@
           "qid": null
         }
       ],
+      "mr:0915-alpinus-lugduni": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 18,
+          "check": "7186f116",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 25,
+          "end": 31,
+          "check": "3ce64935",
+          "name": "Alpinus",
+          "qid": null
+        }
+      ],
       "mr:0915-maria-perdolens": [
         {
           "kind": "person",
@@ -21664,7 +23538,31 @@
           "qid": null
         }
       ],
-      "mr:1026-witta": [
+      "mr:1023-severinus-coloniae-agrippinae": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 21,
+          "check": "1f593c36",
+          "qid": "Q365",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "9904f3b7",
+          "name": "Severinus",
+          "qid": null
+        }
+      ],
+      "mr:1026-witta-buriburgensis": [
         {
           "kind": "place",
           "where": "text",
@@ -24326,7 +26224,7 @@
           "qid": null
         }
       ],
-      "mr:1226-zeno": [
+      "mr:1226-zeno-maiumae": [
         {
           "kind": "person",
           "where": "text",

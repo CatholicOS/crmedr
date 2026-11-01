@@ -2,6 +2,7 @@ import json
 import sys
 import tempfile
 import unittest
+import urllib.parse
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "scripts"))
@@ -109,6 +110,36 @@ class DetailsClientTest(unittest.TestCase):
             self.assertEqual(client.commons_files(["Old.jpg", "New.jpg", "Some_file.jpg"]),
                              {"Old.jpg": meta, "New.jpg": meta, "Some_file.jpg": meta})
 
+    def test_long_file_names_are_split_so_no_url_is_too_long(self):
+        urls = []
+        files = [f"Жития Святых (1903-1911) - икона {n:05d} Апеллий и Лука.png" for n in range(50)]
+
+        def fetch(url):
+            urls.append(url)
+            return {"query": {"pages": {}}}
+
+        with tempfile.TemporaryDirectory() as d:
+            wd.Wikidata(Path(d), fetch=fetch).commons_files(files)
+        self.assertGreater(len(urls), 1)
+        self.assertTrue(all(len(u) <= wd.COMMONS_URL_MAX for u in urls))
+        asked = [t for u in urls for t in urllib.parse.parse_qs(urllib.parse.urlsplit(u).query)["titles"][0].split("|")]
+        self.assertEqual(asked, ["File:" + f for f in files])
+
+    def test_wikitext_of_files_mapped_back_to_the_names_as_given(self):
+        urls = []
+
+        def fetch(url):
+            urls.append(url)
+            return {"query": {"normalized": [{"from": "File:Some_file.jpg", "to": "File:Some file.jpg"}],
+                              "pages": {"7": {"title": "File:Some file.jpg", "revisions": [
+                                  {"slots": {"main": {"*": "{{Art Photo}}"}}}]},
+                                        "-1": {"title": "File:Gone.jpg", "missing": ""}}}}
+
+        with tempfile.TemporaryDirectory() as d:
+            client = wd.Wikidata(Path(d), fetch=fetch)
+            self.assertEqual(client.commons_wikitext(["Some_file.jpg", "Gone.jpg"]), {"Some_file.jpg": "{{Art Photo}}"})
+            self.assertIn("rvprop=content", urls[0])
+
 
 RAW = {
     "id": "Q19546",
@@ -158,6 +189,58 @@ class SummarizeTest(unittest.TestCase):
                          {"description": {}, "born": None, "died": None, "image": None, "wikipedia": {}})
 
 
+ART_PHOTO = """=={{int:filedesc}}==
+{{Art Photo
+ |artwork license  = {{PD-because|old}}{{PD-author|x}}
+ |photographer     = [[User:Bingar1234|Bingar1234]]
+ |source           = {{own}}
+ |photo license    = %s
+ |other_versions   =
+}}
+"""
+
+
+class PhotoLicenseTest(unittest.TestCase):
+    def test_the_photographs_own_creative_commons_license(self):
+        self.assertEqual(pd.photo_license(ART_PHOTO % "{{self|cc-by-sa-4.0|attribution=Bingar1234}}"),
+                         ("CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0"))
+        self.assertEqual(pd.photo_license(ART_PHOTO % "{{cc-by-sa-3.0-de|x}}"),
+                         ("CC BY-SA 3.0 de", "https://creativecommons.org/licenses/by-sa/3.0/de"))
+        self.assertEqual(pd.photo_license(ART_PHOTO % "{{self|cc-zero}}"),
+                         ("CC0", "https://creativecommons.org/publicdomain/zero/1.0"))
+
+    def test_after_a_notice_template(self):
+        notice = "{{NoImageNotes|1=[[File:No Facebook.svg|80px]]\nThis file is copyrighted. }}{{self|cc-by-sa-4.0}}"
+        self.assertEqual(pd.photo_license(ART_PHOTO % notice)[0], "CC BY-SA 4.0")
+
+    def test_inside_a_template_over_several_lines(self):
+        nested = "{{Licensed-PD\n  |{{PD-Art |PD-old-auto |deathyear = 1640 }}\n  |{{self |cc-by-3.0 |attribution=x }}\n  }}"
+        self.assertEqual(pd.photo_license(ART_PHOTO % nested), ("CC BY 3.0", "https://creativecommons.org/licenses/by/3.0"))
+
+    def test_licence_ouverte(self):
+        self.assertEqual(pd.photo_license(ART_PHOTO % "{{Licence ouverte}}"),
+                         ("Licence Ouverte 1.0", "https://www.etalab.gouv.fr/licence-ouverte-open-licence"))
+
+    def test_none_when_the_photograph_has_no_license_of_its_own(self):
+        self.assertIsNone(pd.photo_license("{{Information|description=x}}\n{{PD-old-100}}"))
+        self.assertIsNone(pd.photo_license(ART_PHOTO % ""))
+        self.assertIsNone(pd.photo_license(ART_PHOTO % "{{PD-self}}"))
+        self.assertIsNone(pd.photo_license(ART_PHOTO % "Public domain"))
+        self.assertIsNone(pd.photo_license(ART_PHOTO % "PD"))
+
+    def test_an_unknown_license_has_no_name(self):
+        self.assertEqual(pd.photo_license(ART_PHOTO % "{{GFDL}}"), (None, None))
+
+    def test_the_photographs_license_replaces_the_artworks(self):
+        photo = ("CC BY-SA 4.0", "https://creativecommons.org/licenses/by-sa/4.0")
+        image = pd.summarize_details(RAW, {"Basil.jpg": CREDIT}, {"Basil.jpg": photo})["image"]
+        self.assertEqual((image["license"], image["license_url"]), photo)
+        self.assertEqual(image["author"], "Unknown painter")
+
+    def test_no_image_when_the_photographs_license_is_unknown(self):
+        self.assertIsNone(pd.summarize_details(RAW, {"Basil.jpg": CREDIT}, {"Basil.jpg": (None, None)})["image"])
+
+
 class BuildTest(unittest.TestCase):
     def test_person_qids(self):
         doc = {"editions": {"ed": {"mr:x": [{"kind": "person", "qid": "Q19546"}, {"kind": "person", "qid": None},
@@ -180,11 +263,34 @@ class BuildTest(unittest.TestCase):
                 self.files = files
                 return {"Basil.jpg": CREDIT}
 
+            def commons_wikitext(self, files):
+                self.texts = files
+                return {"Basil.jpg": ART_PHOTO % "{{self|cc-by-sa-4.0}}"}
+
         client = Client()
         out = pd.build(client, ["Q19546", "Q404"])
         self.assertEqual(list(out), ["Q19546"])
         self.assertEqual(client.files, ["Basil.jpg"])
-        self.assertEqual(out["Q19546"]["image"]["license"], "Public domain")
+        self.assertEqual(client.texts, ["Basil.jpg"])
+        self.assertEqual(out["Q19546"]["image"]["license"], "CC BY-SA 4.0")
+
+    def test_build_reads_only_the_pages_of_public_domain_files(self):
+        class Client:
+            texts = None
+
+            def details_entities(self, qids):
+                return {"Q19546": RAW}
+
+            def commons_files(self, files):
+                return {"Basil.jpg": {"LicenseShortName": {"value": "CC BY 4.0"}}}
+
+            def commons_wikitext(self, files):
+                self.texts = files
+                return {}
+
+        client = Client()
+        self.assertEqual(pd.build(client, ["Q19546"])["Q19546"]["image"]["license"], "CC BY 4.0")
+        self.assertIsNone(client.texts)
 
     def test_render_json(self):
         doc = json.loads(pd.render_json({"Q20": {}, "Q3": {}}))

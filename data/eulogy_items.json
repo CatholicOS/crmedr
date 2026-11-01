@@ -1,0 +1,2439 @@
+{
+  "$comment": "The optional Wikidata item of each current eulogy that does not commemorate a single person (a group, a feast, a dedicated church, a translation), by eulogy ID: wikidata, kind (group, feast, dedication, translation), status (auto, reviewed, unresolved) and an optional note. Curated; scripts/build_eulogy_items.py validates it and extract_registry.py copies it onto the registry as `item`.",
+  "items": {
+    "mr:0101-maria-dei-genetrix": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0102-argeus-et-socii": {
+      "wikidata": "Q6965657",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0103-nomen-iesu": {
+      "wikidata": "Q2576064",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0104-hermes-et-caius": {
+      "wikidata": "Q97253965",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0105-franciscus-peltier-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0106-epiphania-domini": {
+      "wikidata": "Q132001",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0106-iulianus-et-basilissa": {
+      "wikidata": "Q520982",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0107-raymundus-de-penyafort": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0108-lucianus-et-socii": {
+      "wikidata": "Q79503390",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0108-theophilus-et-helladius": {
+      "wikidata": "Q28003161",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0109-agatha-yi-et-teresia-kim": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0111-honorata-papiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0112-tigrius-et-eutropius": {
+      "wikidata": "Q31094180",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0113-gumesindus-et-servusdei": {
+      "wikidata": "Q11924990",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0114-monachi-raithi": {
+      "wikidata": "Q2061048",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0116-berardus-et-socii": {
+      "wikidata": "Q12816974",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0117-speusippus-et-socii": {
+      "wikidata": "Q1505432",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0118-cosconius-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q97254902: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0118-felicitas-pricet-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0118-successus-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q85974775: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0119-liberata-et-faustina": {
+      "wikidata": "Q2796017",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0119-marius-et-socii": {
+      "wikidata": "Q1595063",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0121-fructuosus-et-socii": {
+      "wikidata": "Q101193675",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": {
+      "wikidata": "Q2807895",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0123-clemens-et-agathangelus": {
+      "wikidata": "Q12151181",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0123-severianus-et-aquila": {
+      "wikidata": "Q85974778",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0124-vincentius-lewoniuk-et-socii": {
+      "wikidata": "Q115872",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0125-conversio-pauli-apostoli": {
+      "wikidata": "Q1369701",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0128-agatha-lin-zhao-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0128-thomas-de-aquino": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0129-iuventinus-et-maximinus": {
+      "wikidata": "Q6318993",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0129-papias-et-maurus": {
+      "wikidata": "Q17638307",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0129-sarbelius-et-bebaia": {
+      "wikidata": "Q1422681",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0131-augustinus-pak-chong-won-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0131-cyrus-et-ioannes": {
+      "wikidata": "Q378732",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0131-victorinus-et-socii": {
+      "wikidata": "Q133445535",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0201-maria-anna-vaillot-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0201-paulus-hong-yong-ju-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0202-praesentatio-domini": {
+      "wikidata": "Q18647897",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0203-teridius-et-remedius": {
+      "wikidata": "Q64840854",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0204-philea-et-philoromus": {
+      "wikidata": "Q108253242",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0205-paulus-miki-et-socii": {
+      "wikidata": "Q578963",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0205-plurimi-martyres-ponti": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0206-dorothea-et-theophilus": {
+      "wikidata": "Q136620408",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0206-paulus-miki-et-socii": {
+      "wikidata": "Q578963",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0207-iacobus-sales-et-gulielmus-saultemouche": {
+      "wikidata": "Q3850286",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0208-martyres-monachi-dii-constantinopolitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0209-plurimi-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0209-primus-et-donatus": {
+      "wikidata": "Q16591776",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0210-petrus-fremond-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0211-maria-de-lourdes": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0211-plurimi-martyres-numidiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0212-martyres-abitinenses": {
+      "wikidata": "Q2308132",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0214-bassianus-et-socii": {
+      "wikidata": "Q133445533",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0215-faustinus-et-iovita": {
+      "wikidata": "Q1388274",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0217-septem-fundatores-servorum-mariae": {
+      "wikidata": "Q1057218",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0218-ioannes-petrus-neel": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0219-monachi-martyres-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0220-quinque-martyres-tyri": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0221-petrus-damianus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0222-cathedra-petri-apostoli": {
+      "wikidata": "Q13409860",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0227-iulianus-et-eunus": {
+      "wikidata": "Q85975403",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0228-marana-et-cyra": {
+      "wikidata": "Q11767292",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0228-presbyteri-diaconi-plurimi-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0303-cleonicus-et-eutropius": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q12151179: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0303-emetherius-et-cheledonius": {
+      "wikidata": "Q2972035",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0303-marinus-et-asterius": {
+      "wikidata": "Q56293083",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0306-quadraginta-duo-martyres-syriae": {
+      "wikidata": "Q3565151",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-basilius-et-socii": {
+      "wikidata": "Q20936683",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-eubulius-caesareae": {
+      "wikidata": "Q110728452",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0307-perpetua-et-felicitas": {
+      "wikidata": "Q771956",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0309-quadraginta-milites-sebastes": {
+      "wikidata": "Q931446",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0311-marcus-chong-ui-bae-et-alexius-u-se-yong": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0311-trophimus-et-thalus": {
+      "wikidata": "Q15700789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0312-petrus-nicomediae": {
+      "wikidata": "Q24952997",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0313-rudericus-et-salomon": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1582818: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0316-hilarius-et-tatianus": {
+      "wikidata": "Q106559144",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0317-plurimi-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0320-viginti-monachi-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0321-martyres-alexandrini": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0322-callinicus-et-basilissa": {
+      "wikidata": "Q23583396",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0323-victorianus-et-socii": {
+      "wikidata": "Q4111032",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0324-timolaus-et-socii": {
+      "wikidata": "Q16206058",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0325-annuntiatio-domini": {
+      "wikidata": "Q4087807",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0326-barontius-et-desiderius": {
+      "wikidata": "Q808712",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0330-antonius-daveluy-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0330-plurimi-martyres-constantinopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0401-venantius-et-socii": {
+      "wikidata": "Q136613999",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0404-agathopodus-et-theodulus": {
+      "wikidata": "Q81097215",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0405-centum-undecim-viri-novem-mulieres-martyres": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0405-irenes-thessalonicensis": {
+      "wikidata": "Q359116",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0405-martyres-regiarum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0407-ducenti-milites-martyres-sinopes": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0413-carpus-et-socii": {
+      "wikidata": "Q1734353",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0414-bernica-et-prosdoca": {
+      "wikidata": "Q5291315",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0416-petrus-delepine-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850280: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0417-plurimi-martyres-persidis": {
+      "wikidata": "Q3850292",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0417-simeon-bar-sabas-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for Simeon bar Sabas with his companions (Q2166439 is Simeon himself): searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0420-sulpicius-et-servitianus": {
+      "wikidata": "Q132560343",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0422-epipodius-lugduni": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q934123: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0424-alexander-lugduni": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q934123: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0424-maria-cleopha-et-salome": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3254109: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0426-dominicus-et-gregorius": {
+      "wikidata": "Q8561599",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0426-gulielmus-et-peregrinus": {
+      "wikidata": "Q21235349",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0428-paulus-pham-khac-khoan-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0430-pius-v": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0501-ioseph-opifex": {
+      "wikidata": "Q105888686",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0501-torquatus-et-socii": {
+      "wikidata": "Q938363",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0502-hesperus-et-zoes": {
+      "wikidata": "Q18921069",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0502-vindemialis-et-longinus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4009483: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0503-eventius-et-socii": {
+      "wikidata": "Q15875070",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0503-timotheus-et-maura": {
+      "wikidata": "Q12151185",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0504-agapius-et-secundinus": {
+      "wikidata": "Q20901818",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0504-ioannes-houghton-et-socii": {
+      "wikidata": "Q63064377",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0506-marianus-et-iacobus": {
+      "wikidata": "Q17562131",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0507-flavius-et-socii": {
+      "wikidata": "Q16556285",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0509-trecenti-decem-martyres-persidis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0510-alphius-et-socii": {
+      "wikidata": "Q2248717",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0513-maria-de-fatima": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0514-felix-et-fortunatus": {
+      "wikidata": "Q3742241",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0514-victor-et-corona": {
+      "wikidata": "Q457948",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0516-abda-et-ebediesus": {
+      "wikidata": "Q4664616",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0516-florentius-et-diocletianus": {
+      "wikidata": "Q97253807",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0516-quadraginta-quattuor-monachi-palaestinae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0517-aemilianus-vercellarum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0518-theodotus-et-thecusa": {
+      "wikidata": "Q11951712",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0519-parthenius-et-calogerus": {
+      "wikidata": "Q97256860",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0521-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0522-castus-et-aemilius": {
+      "wikidata": "Q716664",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0523-lucius-et-socii": {
+      "wikidata": "Q85976593",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0523-martyres-cappadociae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0523-martyres-mesopotamiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0524-augustinus-yi-kwang-hon-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0524-donatianus-et-rogatianus": {
+      "wikidata": "Q3036218",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0524-triginta-octo-martyres-philippopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0526-ioannes-doan-trinh-hoan-et-matthaeus-nguyen-van-phuong": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0527-augustinus-cantuariensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0527-barbara-kim-et-barbara-yi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0527-edmundus-duke-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3413450: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0529-gulielmus-arnaud-et-socii": {
+      "wikidata": "Q20002779",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0529-sisinnius-et-socii": {
+      "wikidata": "Q3962077",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0530-basilius-et-emmelia": {
+      "wikidata": "Q133930875",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0531-cantius-et-socii": {
+      "wikidata": "Q1991316",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0531-visitatio-beatae-mariae-virginis": {
+      "wikidata": "Q65679763",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0601-ammon-et-socii": {
+      "wikidata": "Q3576500",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0602-marcellinus-et-petrus": {
+      "wikidata": "Q449701",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0602-sadochus-et-socii": {
+      "wikidata": "Q1856117",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0605-dominicus-toai-et-dominicus-huyen": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0606-artemius-et-paulina": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q16171193: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0606-petrus-dung-et-petrus-thuan": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0607-petrus-et-socii": {
+      "wikidata": "Q11940894",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0609-primus-et-felicianus": {
+      "wikidata": "Q2535100",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0613-augustinus-phan-viet-huy-et-nicolaus-bui-viet-the": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0614-anastasius-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1582818: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0614-valerius-et-rufinus": {
+      "wikidata": "Q6158992",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0616-dominicus-nguyen-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0616-ferreolus-et-ferrutius": {
+      "wikidata": "Q18921045",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0616-quiricus-et-iulitta": {
+      "wikidata": "Q514765",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0617-blastus-et-diogenes": {
+      "wikidata": "Q97253450",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0618-cyriacus-et-paula": {
+      "wikidata": "Q3008948",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0618-marcus-et-marcellianus": {
+      "wikidata": "Q670905",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0619-gerlandus-calatae-hieronis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0619-gervasius-et-protasius": {
+      "wikidata": "Q1515920",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0619-remigius-isore-et-modestus-andlauer": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0622-iulius-et-aaron": {
+      "wikidata": "Q302972",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0623-plurimi-martyres-nicomediae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0624-agoardus-et-agilbertus": {
+      "wikidata": "Q2379953",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0624-ioannes-baptista": {
+      "wikidata": "Q3870479",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0625-dominicus-henares-et-franciscus-do-minh-chieu": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0626-ioannes-et-paulus": {
+      "wikidata": "Q1698715",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0628-lucia-wang-cheng-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0628-plutarchus-et-socii": {
+      "wikidata": "Q108459412",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0629-maria-du-tianshi-et-magdalena-du-fengju": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0629-paulus-wu-juan-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0630-basilides-alexandriae": {
+      "wikidata": "Q532385",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0630-protomartyres-sanctae-romanae-ecclesiae": {
+      "wikidata": "Q640666",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0702-liberatus-et-socii": {
+      "wikidata": "Q85977003",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0702-processus-et-martinianus": {
+      "wikidata": "Q1544096",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0705-matthaeus-lambert-et-socii": {
+      "wikidata": "Q7990254",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0705-teresia-chen-jinxie-et-rosa-chen-aixie": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0708-aquila-et-prisca": {
+      "wikidata": "Q11085604",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0708-monachi-abrahamitae": {
+      "wikidata": "Q4669306",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0709-augustinus-zhao-rong-et-socii": {
+      "wikidata": "Q2668281",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0709-gregorius-grassus-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0709-melania-et-maria-anna-margarita-ab-angelis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0709-nicolaus-pieck-et-socii": {
+      "wikidata": "Q1909286",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-anatolia-et-victoria": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q447384: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0710-emmanuel-ruiz-et-socii": {
+      "wikidata": "Q3850285",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-felix-et-philippus": {
+      "wikidata": "Q133554573",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0710-rufina-et-secunda": {
+      "wikidata": "Q1518118",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0711-anna-an-xinzhi-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0711-benedictus-nursiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0711-placidus-et-sigisbertus": {
+      "wikidata": "Q1421271",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0712-fortunatus-et-hermagora": {
+      "wikidata": "Q22579789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0712-magdalena-teresia-tallien-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0712-proclus-et-hilarion": {
+      "wikidata": "Q97256911",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0713-elisabeth-verchiere-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0715-eutropius-et-socii": {
+      "wikidata": "Q97487684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0715-ignatius-de-azevedo-et-socii": {
+      "wikidata": "Q3134023",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0716-andreas-de-soveral-et-dominicus-carvalho": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q10334580: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0716-lang-yangzhi-et-paulus-lang-fu": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0716-maria-de-monte-carmelo": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0716-maria-rosa-de-gordon-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0717-iusta-et-rufina": {
+      "wikidata": "Q2366673",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0717-maria-magdalena-claudina-lidoine-et-socii": {
+      "wikidata": "Q303617",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0717-martyres-scillitani": {
+      "wikidata": "Q488248",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0719-aurea-cordubae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1582818: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0719-elisabeth-qin-bianzhi-et-simon-qin-chunfu": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0719-macedonius-et-socii": {
+      "wikidata": "Q129634476",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0720-apollinaris-ravennae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0720-leo-ignatius-mangin-et-paulus-denn": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0720-magdalena-yi-yong-hui-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0720-maria-zhao-guozhi-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0721-laurentius-de-brundusio": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0722-anna-wang-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0722-martyres-massilitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0723-petrus-ruiz-de-los-panos-et-iosephus-sala-pico": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3752451: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0723-vincentius-diez-tejerina-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q6777749: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0724-boris-et-gleb": {
+      "wikidata": "Q893813",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0724-iacoba-martinez-garcia-et-socii": {
+      "wikidata": "Q2939663",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0724-sarbelius-makhluf": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0724-translatio-trium-magorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this translation: Searched translation/relics of the Magi, Shrine of the Three Kings (Q662314 is the reliquary, not the event), Sant'Eustorgio; no translation event item."
+    },
+    "mr:0725-carolus-rubio-alvarez-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q63304905: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0725-petrus-a-corde-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q6777749: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0726-ioachim-et-anna": {
+      "wikidata": "Q140401460",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0726-maria-margarita-a-sancto-augustino-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3850290: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0726-vincentius-pinilla-et-emmanuel-martin-sierra": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4304927: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0727-clemens-velicensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3625012: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0727-georgius-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1582818: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0727-septem-dormientes-ephesi": {
+      "wikidata": "Q466973",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0728-martyres-thebaidis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0728-nazarius-et-celsus": {
+      "wikidata": "Q17524141",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0728-prochorius-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1491135: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0729-iosephus-zhang-wenlan-et-paulus-chen-changpin": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0729-lazarus-et-maria": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q106805838: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0729-simplicius-et-socii": {
+      "wikidata": "Q840917",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0730-abdon-et-sennen": {
+      "wikidata": "Q308330",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0730-iosephus-maria-muro-sanmiguel-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0730-petrus-chrysologus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0731-petrus-doan-cong-quy-et-emmanuel-phung": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0802-eusebius-vercellensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0802-petrus-iulianus-eymard": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0802-philippus-a-iesu-munarriz-azcona-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q47037506: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0804-iustinus-et-crescention": {
+      "wikidata": "Q21208893",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0805-dedicatio-basilicae-sanctae-mariae": {
+      "wikidata": "Q186282",
+      "kind": "dedication",
+      "status": "reviewed"
+    },
+    "mr:0806-iustus-et-pastor": {
+      "wikidata": "Q2671799",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0806-transfiguratio-domini": {
+      "wikidata": "Q5439559",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0807-xystus-ii-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1403056: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0808-dominicus-bononiae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0808-maria-a-iesu-infante-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0809-martyres-constantinopolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": {
+      "wikidata": "Q19265558",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3397770: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0810-martyres-alexandriae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0811-raphael-alonso-gutierrez": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0812-iacobus-do-mai-nam-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0812-ioanna-francisca-fremiot-de-chantal": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0812-sebastianus-calvo-martinez-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q47037506: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0813-secundinus-maria-ortega-garcia-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q47037506: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0814-dominicus-ibanez-de-erquicia-et-franciscus-shoyemon": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q669138: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0814-octingenti-martyres-hydrunti": {
+      "wikidata": "Q1615843",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0815-assumptio-beatae-mariae-virginis": {
+      "wikidata": "Q65347908",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0815-ludovicus-masferrer-vila-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q47037506: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0816-simon-bokusai-kyota-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0816-stephanus-albae-regalis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0817-iacobus-kyuhei-gorobioye-tomonaga-et-michael-kurobioye": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q669138: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0818-iacobus-falgarona-vilanova-et-athanasius-vidaurreta-labra": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q47037506: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0818-martyres-massae-candidae": {
+      "wikidata": "Q6784101",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0819-elvira-a-nativitate-dominae-nostrae-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0821-agathonicus-et-zoticus": {
+      "wikidata": "Q117379295",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0821-bernardus-et-socii": {
+      "wikidata": "Q8246899",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0821-pius-x": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0822-maria-regina": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0823-abundius-et-irenaeus": {
+      "wikidata": "Q4670633",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0823-claudius-et-socii": {
+      "wikidata": "Q4810684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0823-constantinus-carbonell-sempere-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0823-florentinus-perez-romero-et-urbanus-gil-saez": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0823-rosa-limae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0827-franciscus-a-sancta-maria-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0830-felix-et-adauctus": {
+      "wikidata": "Q1291005",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0830-sexaginta-martyres-coloniae-sufetanae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:0901-petrus-rivera-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0902-petrus-iacobus-maria-vitalis-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q11787906: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0903-andreas-abel-alricy-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q11787906: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0903-ioannes-pak-hu-jae-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0905-acontus-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q85877592: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0905-petrus-nguyen-van-tu-et-iosephus-hoang-luong-canh": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0907-claudius-barnabas-laurent-de-mascloux-et-franciscus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3397770: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0907-festus-et-desiderius": {
+      "wikidata": "Q136624320",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0907-marcus-crisini-et-socii": {
+      "wikidata": "Q530681",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0907-thomas-tsuji-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0908-nativitas-beatae-mariae-virginis": {
+      "wikidata": "Q501107",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0909-petrus-claver": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0910-nemesianus-et-socii": {
+      "wikidata": "Q85977994",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0911-gaspar-koteda-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0911-protus-et-hyacinthus": {
+      "wikidata": "Q3394205",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0912-apollinaris-franco-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0912-nomen-mariae": {
+      "wikidata": "Q1537037",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0913-dedicatio-basilicarum-hierosolymis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this dedication: Searched Basilicas of Constantine/Holy Sepulchre dedication, Encaenia Jerusalem; no joint feast item."
+    },
+    "mr:0913-ioannes-chrysostomus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:0914-exaltatio-sanctae-crucis": {
+      "wikidata": "Q815520",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis": {
+      "wikidata": "Q6035428",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0915-maria-perdolens": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:0916-abundius-et-socii": {
+      "wikidata": "Q17979325",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0916-rogellus-et-servusdei": {
+      "wikidata": "Q121710741",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0918-david-okelo-et-gildus-irwa": {
+      "wikidata": "Q17628568",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0918-ferdinandus-garcia-sendra-et-iosephus-garcia-mas": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0918-salvator-chulia-ferrandis-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0919-maria-a-iesu-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0920-andreas-kim-tae-gon-et-socii": {
+      "wikidata": "Q379564",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0920-laurentius-han-i-hyong-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0921-eusebius-et-socii": {
+      "wikidata": "Q108037267",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0921-franciscus-jaccard-et-thomas-tran-van-thien": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0921-vincentius-galbis-girones-et-emmanuel-torro-garcia": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0922-mauritius-et-socii": {
+      "wikidata": "Q664988",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0922-paulus-chong-ha-sang-et-augustinus-yu-chin-gil": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0924-andochius-et-socii": {
+      "wikidata": "Q124744645",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0926-cosmas-et-damianus": {
+      "wikidata": "Q76486",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0926-sebastianus-nam-i-gwan-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0928-ioannes-shozaburo-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:0928-laurentius-ruiz-et-socii": {
+      "wikidata": "Q669138",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:0929-michael-de-aozaraza-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q669138: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1001-teresia-a-iesu-infante": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1001-verissimus-et-socii": {
+      "wikidata": "Q3509870",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1002-angeli-custodes": {
+      "wikidata": "Q5439547",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1002-elias-et-ioannes-baptista-carbonell-molla": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1002-ludovicus-yakichi-et-lucia": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q9130765: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1003-ambrosius-franciscus-ferro-et-socii": {
+      "wikidata": "Q10334580",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1003-duo-ewaldi": {
+      "wikidata": "Q322929",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1005-martyres-trevirorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1007-maria-de-rosario": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:1007-sergius-et-bacchus": {
+      "wikidata": "Q140013",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-cassius-et-florentius": {
+      "wikidata": "Q549910",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-daniel-et-socii": {
+      "wikidata": "Q136614618",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1010-eulampius-et-eulampia": {
+      "wikidata": "Q3734508",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1011-nicasius-et-socii": {
+      "wikidata": "Q7024538",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1011-tharacus-et-socii": {
+      "wikidata": "Q4759490",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1012-martyres-et-confessores-africae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1013-faustus-et-socii": {
+      "wikidata": "Q11921619",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1016-hedwigis-trebnicensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1016-margarita-maria-alacoque": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1017-martyres-volitani": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1017-rufus-et-zosimus": {
+      "wikidata": "Q7378121",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1018-proculus-et-socii": {
+      "wikidata": "Q138388825",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-ioannes-de-brebeuf-et-socii": {
+      "wikidata": "Q2653872",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-lucas-alphonsus-gorda-et-matthaeus-kohioye": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q669138: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1019-paulus-a-cruce": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1019-ptolomaeus-et-lucius": {
+      "wikidata": "Q18918005",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1019-sabinianus-et-potentianus": {
+      "wikidata": "Q7428319",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1021-dasius-et-socii": {
+      "wikidata": "Q60594638",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1022-nunilo-et-alodia": {
+      "wikidata": "Q2667038",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q6777749: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1023-petrus-lorente-vicente-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1023-servandus-et-germanus": {
+      "wikidata": "Q7455543",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1024-aretha-et-socii": {
+      "wikidata": "Q3295958",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-chrysanthus-et-daria": {
+      "wikidata": "Q1088478",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-crispinus-et-crispinianus": {
+      "wikidata": "Q1140213",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1025-maria-teresia-ferragud-roig-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1025-martyrius-et-marcianus": {
+      "wikidata": "Q24009983",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1026-lucianus-et-marcianus": {
+      "wikidata": "Q11933561",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1028-franciscus-serrano-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q2668281: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1028-vincentius-et-socii": {
+      "wikidata": "Q11954656",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1030-claudius-et-socii": {
+      "wikidata": "Q11914022",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1101-hieronymus-hermosilla-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1101-omnes-sancti": {
+      "wikidata": "Q587",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1102-carterius-et-socii": {
+      "wikidata": "Q4691256",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1102-omnium-fidelium-defunctorum": {
+      "wikidata": "Q1033140",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1104-carolus-borromeo": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1104-nicandrus-et-hermes": {
+      "wikidata": "Q21328789",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1104-vitalis-et-agricola": {
+      "wikidata": "Q203177",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1106-callinicus-et-socii": {
+      "wikidata": "Q135925988",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1107-hyacinthus-castaneda-et-vincentius-le-quang-liem": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1108-iosephus-nguyen-dinh-nghi-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1108-simpronianus-et-socii": {
+      "wikidata": "Q1301757",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1109-dedicatio-basilicae-lateranensis": {
+      "wikidata": "Q84090",
+      "kind": "dedication",
+      "status": "reviewed"
+    },
+    "mr:1109-eustolia-et-sopatra": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q24957034: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1112-benedictus-et-socii": {
+      "wikidata": "Q1481639",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1114-nicolaus-tavelic-et-socii": {
+      "wikidata": "Q3413495",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1115-guria-et-samona": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q59550534: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1115-marinus-et-anianus": {
+      "wikidata": "Q115940857",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1115-rochus-gonzalez-et-alphonsus-rodriguez": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q17427266: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1116-gertrudis-magna": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q669138: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1118-dedicatio-basilicarum-petri-et-pauli-apostolorum": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this dedication: No joint feast item found (searched in en/it); separate churches are St. Peter's Q12512 and St Paul Outside the Walls (not found by search)."
+    },
+    "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": {
+      "wikidata": "Q1752755",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1119-elisaeus-garcia-et-alexander-planas-sauri": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1119-quadraginta-martyres-heracleae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1121-praesentatio-beatae-mariae-virginis": {
+      "wikidata": "Q1124234",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1124-andreas-dung-lac-et-socii": {
+      "wikidata": "Q3075684",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1124-chrysogonus-aquileiensis": {
+      "wikidata": "Q1631638",
+      "kind": "dedication",
+      "status": "reviewed"
+    },
+    "mr:1124-flora-et-maria": {
+      "wikidata": "Q5460376",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1124-nicetha-a-sancta-prudentia-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1124-petrus-dumoulin-borie-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1125-hyacinthus-serrano-lopez": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1125-petrus-yi-ho-yong": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1126-thomas-dinh-viet-du-et-dominicus-nguyen-van-xuyen": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1127-facundus-et-primitivus": {
+      "wikidata": "Q3473885",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1129-petrus-berthelot-et-thomas-rodriguez": {
+      "wikidata": "Q113882069",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1129-radbodus-ultraiectensis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1130-michael-ruedas-megias-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q63062554: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1201-edmundus-campion-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1542263: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1206-iosephus-nguyen-duy-khang": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1206-martyres-africae": {
+      "wikidata": "Q4162017",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1208-conceptio-immaculata-beatae-mariae-virginis": {
+      "wikidata": "Q3538509",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1209-richardus-de-los-rios-fabregat-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1211-victoricus-et-fuscianus": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q1293291: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1212-maria-de-guadalupe": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "the mention links the title"
+    },
+    "mr:1213-eustratius-et-socii": {
+      "wikidata": "Q19999551",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1213-petrus-cho-hwa-so-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1216-plurimae-virgines-africa": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1217-quinquaginta-milites-eleutheropolis": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q138480186: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1218-paulus-nguyen-van-my-et-petrus-truong-van": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1219-franciscus-xaverius-ha-trong-mau-et-dominicus-bui-van-uy": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q3075684: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1222-chaeremon-et-socii": {
+      "wikidata": "Q85979195",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1222-quadraginta-tres-monachi-raithi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1222-triginta-martyres-romae": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this group: searched by name, place and day (label and full-text search), 2026-10-31"
+    },
+    "mr:1223-ioannes-de-kety": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "one saint (a memorial, translation or dedication of a single saint): the person's item says what the eulogy commemorates"
+    },
+    "mr:1223-theodulus-et-socii": {
+      "wikidata": "Q3592726",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1224-avi-iesu-christi": {
+      "wikidata": null,
+      "kind": null,
+      "status": "unresolved",
+      "note": "no Wikidata item for this feast: Searched Ancestors of Christ/Jesus, Genealogy of Jesus (Q51630 is the genealogy, not a celebration), Sunday of the Forefathers (Q87473870, Orthodox); none fit."
+    },
+    "mr:1225-iovinus-et-basileus": {
+      "wikidata": "Q110263903",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1225-nativitas-domini": {
+      "wikidata": "Q19809",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1226-agnes-phila-et-lucia-khambang": {
+      "wikidata": "Q3850284",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1227-theodorus-graptus": {
+      "wikidata": "Q3067955",
+      "kind": "group",
+      "status": "reviewed"
+    },
+    "mr:1228-innocentes": {
+      "wikidata": "Q154005",
+      "kind": "feast",
+      "status": "reviewed"
+    },
+    "mr:1229-benedicta-hyon-kyong-nyon-et-socii": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q379564: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1229-henricus-ioannes-requena-et-iosephus-perpina-nacher": {
+      "wikidata": null,
+      "kind": null,
+      "status": "reviewed",
+      "note": "rejected Q4631492: a larger or different group than this eulogy commemorates (review 2026-10-31)"
+    },
+    "mr:1231-donata-et-socii": {
+      "wikidata": "Q20058182",
+      "kind": "group",
+      "status": "reviewed"
+    }
+  }
+}

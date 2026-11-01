@@ -489,8 +489,8 @@ class SharedItemTest(unittest.TestCase):
 
     def _index(self):
         und = dict(PERSON, typology="commemoratio")
-        return {"mr:0802-eusebius|Eusebius": dict(und, eulogy="mr:0802-eusebius", name="Eusebius"),
-                "mr:0926-eusebius|Eusebius": dict(und, eulogy="mr:0926-eusebius", name="Eusebius"),
+        return {"mr:0802-eusebius-vercellensis|Eusebius": dict(und, eulogy="mr:0802-eusebius-vercellensis", name="Eusebius"),
+                "mr:0926-eusebius-bononiae|Eusebius": dict(und, eulogy="mr:0926-eusebius-bononiae", name="Eusebius"),
                 "mr:0101-x|Eusebius Fictus": dict(und, eulogy="mr:0101-x", name="Eusebius Fictus"),
                 "mr:0103-y|Gordius": dict(und, eulogy="mr:0103-y", name="Gordius")}
 
@@ -500,41 +500,41 @@ class SharedItemTest(unittest.TestCase):
                              "Gordius": [cand("Q2", ["Gordius"])]})
         bp.propose(items, review, self._index(), client)
         queued = {op["id"]: op for op in review["operations"]}
-        self.assertIn("mr:0802-eusebius|Eusebius", queued)
-        self.assertIn("mr:0926-eusebius|Eusebius", queued)
-        self.assertIn("matched in another eulogy", queued["mr:0802-eusebius|Eusebius"]["failed"][-1])
+        self.assertIn("mr:0802-eusebius-vercellensis|Eusebius", queued)
+        self.assertIn("mr:0926-eusebius-bononiae|Eusebius", queued)
+        self.assertIn("matched in another eulogy", queued["mr:0802-eusebius-vercellensis|Eusebius"]["failed"][-1])
         self.assertEqual(items["mr:0101-x"]["Eusebius Fictus"]["wikidata"], "Q1")  # a full name stays automatic
         self.assertEqual(items["mr:0103-y"]["Gordius"]["wikidata"], "Q2")          # matched once: automatic
 
     def test_an_existing_automatic_match_counts_too(self):
-        items = {"mr:0802-eusebius": {"Eusebius": {"wikidata": "Q1", "status": "auto"}}}
+        items = {"mr:0802-eusebius-vercellensis": {"Eusebius": {"wikidata": "Q1", "status": "auto"}}}
         review = bp.new_changeset([])
-        index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius|Eusebius"}
-        index["mr:0802-eusebius|Eusebius"] = self._index()["mr:0802-eusebius|Eusebius"]
+        index = {k: v for k, v in self._index().items() if k == "mr:0926-eusebius-bononiae|Eusebius"}
+        index["mr:0802-eusebius-vercellensis|Eusebius"] = self._index()["mr:0802-eusebius-vercellensis|Eusebius"]
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
         queued = {op["id"] for op in review["operations"]}
-        self.assertIn("mr:0926-eusebius|Eusebius", queued)
+        self.assertIn("mr:0926-eusebius-bononiae|Eusebius", queued)
         # The existing automatic match is withdrawn too (#79 review): none of them is automatic.
-        self.assertIn("mr:0802-eusebius|Eusebius", queued)
-        self.assertNotIn("mr:0802-eusebius", items)
+        self.assertIn("mr:0802-eusebius-vercellensis|Eusebius", queued)
+        self.assertNotIn("mr:0802-eusebius-vercellensis", items)
 
     def test_a_full_name_match_elsewhere_queues_the_one_word_match(self):
         und = dict(PERSON, typology="commemoratio")
         index = {"mr:0526-augustinus-cantuariae|Augustinus": dict(und, eulogy="mr:0526-augustinus-cantuariae", name="Augustinus"),
-                 "mr:0828-augustinus|Aurelius Augustinus": dict(und, eulogy="mr:0828-augustinus", name="Aurelius Augustinus")}
+                 "mr:0828-augustinus-hipponensis|Aurelius Augustinus": dict(und, eulogy="mr:0828-augustinus-hipponensis", name="Aurelius Augustinus")}
         items, review = {}, bp.new_changeset([])
         bp.propose(items, review, index, FakeClient({"Augustinus": [cand("Q8018", ["Augustinus"])],
                                                      "Aurelius Augustinus": [cand("Q8018", ["Aurelius Augustinus"])]}))
         self.assertEqual([op["id"] for op in review["operations"]], ["mr:0526-augustinus-cantuariae|Augustinus"])
-        self.assertEqual(items["mr:0828-augustinus"]["Aurelius Augustinus"]["wikidata"], "Q8018")
+        self.assertEqual(items["mr:0828-augustinus-hipponensis"]["Aurelius Augustinus"]["wikidata"], "Q8018")
 
     def test_a_curators_decision_is_never_withdrawn(self):
-        items = {"mr:0802-eusebius": {"Eusebius": {"wikidata": "Q1", "status": "reviewed"}}}
+        items = {"mr:0802-eusebius-vercellensis": {"Eusebius": {"wikidata": "Q1", "status": "reviewed"}}}
         review = bp.new_changeset([])
-        index = {"mr:0802-eusebius|Eusebius": self._index()["mr:0802-eusebius|Eusebius"],
-                 "mr:0926-eusebius|Eusebius": self._index()["mr:0926-eusebius|Eusebius"]}
+        index = {"mr:0802-eusebius-vercellensis|Eusebius": self._index()["mr:0802-eusebius-vercellensis|Eusebius"],
+                 "mr:0926-eusebius-bononiae|Eusebius": self._index()["mr:0926-eusebius-bononiae|Eusebius"]}
         bp.propose(items, review, index, FakeClient({"Eusebius": [cand("Q1", ["Eusebius"])]}))
-        self.assertEqual(items["mr:0802-eusebius"]["Eusebius"]["status"], "reviewed")
+        self.assertEqual(items["mr:0802-eusebius-vercellensis"]["Eusebius"]["status"], "reviewed")
 
 
 class OneWordListNameTest(unittest.TestCase):
@@ -714,17 +714,17 @@ class RepeatedNamesTest(unittest.TestCase):
 
 
 class VariantsTest(unittest.TestCase):
-    DOC = {"editions": {"martyrologium_romanum_2004": {"mr:0724-kinga": [
+    DOC = {"editions": {"martyrologium_romanum_2004": {"mr:0724-kinga-sandeciae": [
         {"name": "Kinga", "also": ["Cunegundis"], "where": "text"}]}}}
-    ENTRIES = [{"id": "mr:0724-kinga", "month": 7, "day": 24}]
+    ENTRIES = [{"id": "mr:0724-kinga-sandeciae", "month": 7, "day": 24}]
 
     def index(self):
-        return bp.person_index(self.DOC, self.ENTRIES, {"mr:0724-kinga": "dies_natalis"}, {"mr:0724-kinga": "Sancta Kinga"})
+        return bp.person_index(self.DOC, self.ENTRIES, {"mr:0724-kinga-sandeciae": "dies_natalis"}, {"mr:0724-kinga-sandeciae": "Sancta Kinga"})
 
     def test_the_index_and_the_op_carry_also(self):
-        person = self.index()["mr:0724-kinga|Kinga"]
+        person = self.index()["mr:0724-kinga-sandeciae|Kinga"]
         self.assertEqual(person["also"], ["Cunegundis"])
-        op = bp.make_op("mr:0724-kinga|Kinga", person, {"failed": [], "candidates": []}, None)
+        op = bp.make_op("mr:0724-kinga-sandeciae|Kinga", person, {"failed": [], "candidates": []}, None)
         self.assertEqual(list(op)[5:8], ["subject", "name", "also"])
 
     def test_the_search_tries_each_name_and_a_variant_satisfies_the_name_rule(self):
@@ -735,7 +735,7 @@ class VariantsTest(unittest.TestCase):
                 searched.append(name)
                 return [cand("Q1", ["Cunegundis"], died="1292-07-24")] if name == "Cunegundis" else []
 
-        person = self.index()["mr:0724-kinga|Kinga"]
+        person = self.index()["mr:0724-kinga-sandeciae|Kinga"]
         cands = bp.gather(person, Client())
         self.assertIn("Cunegundis", searched)
         self.assertEqual(bp.evaluate(person, cands)["auto"]["wikidata"], "Q1")
