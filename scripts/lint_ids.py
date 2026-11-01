@@ -86,7 +86,11 @@ def single_subjects(subjects, person_items):
         names = subject_names(mrid, subject) if subject else []
         if len(names) != 1:
             continue
-        qid = ((person_items.get(mrid) or {}).get(names[0]) or {}).get("wikidata")
+        records = person_items.get(mrid) or {}
+        record = records.get(names[0])
+        if record is None and len(records) == 1:  # the subject printed in another form
+            record = next(iter(records.values()))
+        qid = (record or {}).get("wikidata")
         if qid:
             out[mrid] = qid
     return out
