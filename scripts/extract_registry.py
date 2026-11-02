@@ -4067,7 +4067,7 @@ REVIEW_EDITION_NOTES = {
             "(the Sologne)."
         ),
     },
-    "mr:0806-dominicus-bononiae": {
+    "mr:0806-dominicus-de-guzman": {
         EDITION_EN: (
             "Translation error: \"the nativity\" where the Latin \"natális\" means the birth "
             "into heaven (his death)."

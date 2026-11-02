@@ -77,7 +77,7 @@
 | 6 | 4 | `mr:0806-hormisda-papa` |  | IT | depositio |  |  |
 | 6 | 5 | `mr:0806-octavianus-savonis` | * | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0806-schecelinus-luxemburgensis` | * | LU | dies_natalis |  |  |
-| 6 | 7 | `mr:0806-dominicus-bononiae` |  | IT | dies_natalis |  | 2004 English: Translation error: "the nativity" where the Latin "natális" means the birth into heaven (his death). |
+| 6 | 7 | `mr:0806-dominicus-de-guzman` |  | IT | dies_natalis |  | 2004 English: Translation error: "the nativity" where the Latin "natális" means the birth into heaven (his death). |
 | 6 | 8 | `mr:0806-anna-maria-rubatto` | * | UY | dies_natalis |  | Maria Francesca of Jesus Rubatto, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 6 | 9 | `mr:0806-carolus-lopez-vidal` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0806-thaddaeus-dulny` | * | DE | dies_natalis |  |  |
@@ -97,7 +97,7 @@
 | 7 | 14 | `mr:0807-nicolaus-postgate` | * | GB | dies_natalis |  |  |
 | 7 | 15 | `mr:0807-edmundus-bojanowski` | * | PL | dies_natalis |  |  |
 | 7 | 16 | `mr:0807-michael-de-la-mora` |  | MX | dies_natalis |  |  |
-| 8 | (1) | `mr:0808-dominicus-bononiae` |  | ES | celebratio | same as `mr:0804-dominicus-bononiae` |  |
+| 8 | (1) | `mr:0808-dominicus-de-guzman` |  | ES | celebratio | same as `mr:0804-dominicus-de-guzman` |  |
 | 8 | 2 | `mr:0808-secundus-et-socii` |  | IT | dies_natalis |  | 2004 English: Translation error: the place "Albáni" (at Albano) is omitted. |
 | 8 | 3 | `mr:0808-cyriacus-et-socii` |  | IT | dies_natalis | same as `mr:0316-cyriacus-romae` |  |
 | 8 | 4 | `mr:0808-marinus-tarsi` |  | TR | dies_natalis |  |  |

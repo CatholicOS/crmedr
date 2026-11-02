@@ -176,6 +176,11 @@ mr:0327-peregrinus-de-phalerone, mr:0331-bonaventura-de-foro-livii, mr:0528-herc
 mr:0330-ludovicus-de-casaurea (*Ludovíci de Casáurea (Archángeli) Palmentieri*) keeps his religious name as the
 ID, an exception for a famous religious name like Pius de Pietrelcina's; his secular name, Archangelus
 Palmentieri, is his other name.
+A surname the print leaves out may still name a saint the world knows by it (curator, 2026-11-02): Dominic, the
+founder of the Friars Preachers, whose eulogies print no surname, is known as Dominic de Guzmán, not by Bologna,
+where he died. mr:0806-dominicus-bononiae, mr:0808-dominicus-bononiae and the 1630 twin
+mr:0804-dominicus-bononiae → mr:0806-dominicus-de-guzman, mr:0808-dominicus-de-guzman,
+mr:0804-dominicus-de-guzman (Sanctus Dominicus de Guzman, Saint Dominic de Guzmán, San Domenico di Guzmán).
 
 **Henry, emperor**: the eulogy of 13 July commemorates Henry alone, *Sancti Henríci*; his wife
 appears only in a clause about him, *cum uxóre sua sancta Cunegúnde*, and is commemorated in her own
@@ -986,7 +991,7 @@ applies two classes:
 - **Misaligned keys.** 172 placements carried the key of another eulogy, usually a saint
   named in the text but not its subject (Septiminus, Januarius and Felix keyed by their
   parents mr:0828-bonifatius-et-thecla; Macrina keyed by her teacher
-  mr:0114-gregorius-thaumaturgus; the Transfiguration keyed mr:0806-dominicus-bononiae), or a
+  mr:0114-gregorius-thaumaturgus; the Transfiguration keyed mr:0806-dominicus-de-guzman), or a
   namesake of another see (Marcellus of Trier on the 2004 Marcellus of Chalon). Each is
   re-keyed: 28 placements to the current ID of the eulogy, the rest to a deprecated ID of
   the day, 77 of them new. A 2004 eulogy whose historical text had been keyed elsewhere
@@ -1042,8 +1047,8 @@ eulogy, mr:0922-irais-et-socii, remains). The Latin subjects follow the new slug
 
 **Same-eulogy IDs merged and linked (applied, October 2026, #51 part 4)**: 51 deprecated IDs
 key a eulogy that already has an ID of the same day, under another spelling or a garbled
-slug, and merge into it (mr:0110-willhelmus into mr:0110-gulielmus, mr:0806-dominicus-bononiae
-into mr:0806-dominicus-bononiae, mr:1101-festivitas-omnium-sanctorum-quam into mr:1101-omnes-sancti);
+slug, and merge into it (mr:0110-willhelmus into mr:0110-gulielmus, mr:0806-dominicus-de-guzman
+into mr:0806-dominicus-de-guzman, mr:1101-festivitas-omnium-sanctorum-quam into mr:1101-omnes-sancti);
 the IDs merged into keep their subjects. 46 `same_eulogy` links are added, among them the
 renamed celebrations of the same day (mr:0101-circumcisio-domini to mr:0101-maria-dei-genetrix)
 and eulogies whose subject the editio altera changed (mr:0510-quartus-et-quinctus to
