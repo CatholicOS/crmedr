@@ -7,7 +7,7 @@ op `resolve_person`) for martyrology-frontend and comes back through `apply`
 as `reviewed` or `unresolved`. Decisions are per eulogy and name.
 See docs/superpowers/specs/2026-10-08-persons-design.md.
 
-  data/person_items.json          {persons: {id: {name: {wikidata, status, note?}}}}
+  data/person_items.json          {persons: {id: {name: {wikidata, status, note?, decided?}}}}
   data/person_items_review.json   the review change-set
   docs/person-items-report.md     progress
 
@@ -25,6 +25,11 @@ suggest_subjects.py; like every change-set Jev's suggestions go on, outside any 
 propose, verify-suggestions and expand also mark, on each open card, the eulogy's places
 (scripts/eulogy_places.py) and the candidates whose P19/P20/P119/P937 agree with them: shown
 to the curator and to Jev, never counted in the evidence bar or the candidate order.
+
+A person a eulogy only mentions (role "mentioned" in data/persons.json) is not decided here:
+propose neither looks it up, nor queues it, nor changes its entry, and check does not ask for one. Its item
+comes from the mentioned-persons pipeline as `reviewed` with `decided`: "jev", "research" or "created"
+(`decided` is valid only with `reviewed`); the report counts the mentioned persons by it.
 
 Standard library only. Reads no private sources.
 """
@@ -45,6 +50,7 @@ EDITION = "martyrologium_romanum_2004"
 SCHEMA = "crmedr-changeset/v1"
 STATUSES = ["auto", "reviewed", "unresolved"]
 QID = re.compile(r"^Q[1-9]\d*$")
+DECIDED_BY = ["jev", "research", "created"]  # who decided a mentioned person's item
 CONFIDENCES = {"high", "medium", "low"}
 MAX_CANDIDATES = 10
 MAX_EXPANDED = 15  # an expanded op also holds the candidates of the three extra routes
@@ -311,7 +317,8 @@ def person_index(persons_doc, entries, typology, subjects):
         for p in persons:
             out[f"{mrid}|{person_key(p)}"] = {
                 "eulogy": mrid, "name": p["name"], **({"n": p["n"]} if "n" in p else {}),
-                **({"also": p["also"]} if "also" in p else {}), "where": p["where"],
+                **({"also": p["also"]} if "also" in p else {}), **({"role": p["role"]} if "role" in p else {}),
+                "where": p["where"],
                 "day": f"{e['month']:02d}-{e['day']:02d}", "typology": typology.get(mrid),
                 "subject": subjects.get(mrid, ""),
                 # Each other name once: a repeated name is one companion to search with.
@@ -352,6 +359,10 @@ def make_op(key, person, result, old):
 
 def _decided(items, person):
     return person_key(person) in items.get(person["eulogy"], {})
+
+
+def _mentioned(person):
+    return person.get("role") == "mentioned"
 
 
 def _one_word(name):
@@ -422,6 +433,8 @@ MAX_PASSES = 5
 
 def propose(items, review, index, client, force_review=FORCE_REVIEW):
     # A queued op whose person is no longer in persons.json (a corrected list) is dropped: it was undecided.
+    # Mentioned persons are the mentioned-persons pipeline's: never looked up, queued or changed here.
+    index = {k: p for k, p in index.items() if not _mentioned(p)}
     ops = {op["id"]: op for op in review["operations"] if op["id"] in index}
     not_processed = []
     state = {"failures": 0}
@@ -960,6 +973,9 @@ def validate(items, index, ops=()):
                 errors.append(f"{where}: not a person of data/persons.json")
             if e.get("status") not in STATUSES:
                 errors.append(f"{where}: status {e.get('status')!r}")
+            elif "decided" in e and (e["status"] != "reviewed" or e["decided"] not in DECIDED_BY):
+                errors.append(f"{where}: decided {e['decided']!r} is valid only as one of {DECIDED_BY} "
+                              f"on a reviewed item (status {e['status']!r})")
             elif e["status"] == "unresolved":
                 if e.get("wikidata") is not None or not (e.get("note") or "").strip():
                     errors.append(f"{where}: unresolved needs wikidata null and a note")
@@ -978,7 +994,7 @@ def unaccounted(items, index, ops, skipped=()):
     """The persons with neither a status nor a queued review, except those whose lookup failed."""
     queued = {op["id"] for op in ops} | set(skipped)
     return [f"{key}: neither a status nor a queued review" for key, p in sorted(index.items())
-            if key not in queued and not _decided(items, p)]
+            if key not in queued and not _mentioned(p) and not _decided(items, p)]
 
 
 def render_json(items):
@@ -990,11 +1006,29 @@ def render_json(items):
     return json.dumps(doc, ensure_ascii=False, indent=2) + "\n"
 
 
+def mentioned_lines(items, index):
+    """The report lines counting the mentioned persons by who decided their item."""
+    by = {d: 0 for d in DECIDED_BY}
+    open_ = 0
+    for p in index.values():
+        if not _mentioned(p):
+            continue
+        e = items.get(p["eulogy"], {}).get(person_key(p))
+        if e and e.get("decided") in by:
+            by[e["decided"]] += 1
+        else:
+            open_ += 1
+    total = open_ + sum(by.values())
+    return [f"- Mentioned persons: {total}", *(f"- mentioned decided by {d}: {n}" for d, n in by.items()),
+            f"- mentioned not yet decided: {open_}"]
+
+
 def render_report(items, index, ops, not_processed=()):
     counts = {s: sum(1 for v in items.values() for e in v.values() if e["status"] == s) for s in STATUSES}
     lines = ["# Person items report", "", "Generated by `scripts/build_person_items.py`.", "",
              f"- Persons: {len(index)}",
              *(f"- {s}: {counts[s]}" for s in STATUSES),
+             *mentioned_lines(items, index),
              f"- Queued for review: {len(ops)}", f"- Not processed (lookup failed): {len(not_processed)}", ""]
     # The user's ruling (2026-10-09): automatic matches of eulogies that do not mark a death
     # stay automatic, listed here for a curator to scan; a wrong one goes into FORCE_REVIEW.

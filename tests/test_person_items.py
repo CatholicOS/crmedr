@@ -383,6 +383,53 @@ class ValidateTest(unittest.TestCase):
         self.assertEqual(bp.unaccounted(good, INDEX, [], skipped=["mr:0206-paulus-miki-et-socii|Thomas Kozaki"]), [])
 
 
+MENTIONED = dict(PERSON, name="Willibrordus", role="mentioned", where="text")
+M_KEY = "mr:0206-paulus-miki-et-socii|Willibrordus"
+M_MRID = "mr:0206-paulus-miki-et-socii"
+
+
+class MentionedPersonsTest(unittest.TestCase):
+    def test_decided_is_valid_only_on_reviewed(self):
+        index = dict(INDEX, **{M_KEY: MENTIONED})
+        bad = {M_MRID: {"Willibrordus": {"wikidata": "Q1", "status": "auto", "decided": "jev"}}}
+        errors = bp.validate(bad, index)
+        self.assertEqual(len(errors), 1)
+        self.assertIn(f"{M_MRID}|Willibrordus", errors[0])
+        for decided in ("jev", "research", "created"):
+            ok = {M_MRID: {"Willibrordus": {"wikidata": "Q1", "status": "reviewed", "decided": decided}}}
+            self.assertEqual(bp.validate(ok, index), [])
+        other = {M_MRID: {"Willibrordus": {"wikidata": "Q1", "status": "reviewed", "decided": "guess"}}}
+        self.assertEqual(len(bp.validate(other, index)), 1)
+
+    def test_propose_skips_mentioned_persons(self):
+        index = dict(INDEX, **{M_KEY: MENTIONED})
+        items = {M_MRID: {"Paulus Miki": {"wikidata": "Q9", "status": "reviewed"}}}
+        review = bp.new_changeset([])
+        client = FakeClient({"Willibrordus": [cand("Q5", ["Willibrordus"])], "Thomas Kozaki": []})
+        bp.propose(items, review, index, client)
+        self.assertNotIn("Willibrordus", items[M_MRID])
+        self.assertEqual([op["id"] for op in review["operations"]], [M_MRID + "|Thomas Kozaki"])
+        # A mentioned person's entry stays as it is, and without an entry it is not unaccounted.
+        items[M_MRID]["Willibrordus"] = {"wikidata": "Q7", "status": "auto"}
+        bp.propose(items, review, index, client)
+        self.assertEqual(items[M_MRID]["Willibrordus"], {"wikidata": "Q7", "status": "auto"})
+        self.assertEqual(bp.unaccounted({}, {M_KEY: MENTIONED}, []), [])
+
+    def test_report_counts_mentioned_by_decided(self):
+        index = {M_KEY: MENTIONED, M_MRID + "|Symeon": dict(MENTIONED, name="Symeon"),
+                 M_MRID + "|Eusebius": dict(MENTIONED, name="Eusebius"),
+                 M_MRID + "|Nestabius": dict(MENTIONED, name="Nestabius"), **INDEX}
+        items = {M_MRID: {"Willibrordus": {"wikidata": "Q1", "status": "reviewed", "decided": "jev"},
+                          "Symeon": {"wikidata": "Q2", "status": "reviewed", "decided": "research"},
+                          "Eusebius": {"wikidata": "Q3", "status": "reviewed", "decided": "created"}}}
+        report = bp.render_report(items, index, [])
+        self.assertIn("- Mentioned persons: 4", report)
+        self.assertIn("- mentioned decided by jev: 1", report)
+        self.assertIn("- mentioned decided by research: 1", report)
+        self.assertIn("- mentioned decided by created: 1", report)
+        self.assertIn("- mentioned not yet decided: 1", report)
+
+
 class NameMatchReviewTest(unittest.TestCase):
     """Final review: a 4-letter prefix matched different names."""
 
