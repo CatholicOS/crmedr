@@ -29,7 +29,8 @@ to the curator and to Jev, never counted in the evidence bar or the candidate or
 A person a eulogy only mentions (role "mentioned" in data/persons.json) is not decided here:
 propose neither looks it up, nor queues it, nor changes its entry, and check does not ask for one. Its item
 comes from the mentioned-persons pipeline as `reviewed` with `decided`: "jev", "research" or "created"
-(`decided` is valid only with `reviewed`); the report counts the mentioned persons by it.
+(`decided` is valid only with `reviewed`), or as `unresolved` with a note; the report counts the mentioned
+persons by who decided them, the unresolved ones apart.
 
 Standard library only. Reads no private sources.
 """
@@ -1009,20 +1010,23 @@ def render_json(items):
 
 
 def mentioned_lines(items, index):
-    """The report lines counting the mentioned persons by who decided their item."""
+    """The report lines counting the mentioned persons by who decided their item, those left unresolved, and
+    those not yet decided."""
     by = {d: 0 for d in DECIDED_BY}
-    open_ = 0
+    unresolved = open_ = 0
     for p in index.values():
         if not _mentioned(p):
             continue
         e = items.get(p["eulogy"], {}).get(person_key(p))
         if e and e.get("decided") in by:
             by[e["decided"]] += 1
+        elif e and e.get("status") == "unresolved":
+            unresolved += 1
         else:
             open_ += 1
-    total = open_ + sum(by.values())
+    total = open_ + unresolved + sum(by.values())
     return [f"- Mentioned persons: {total}", *(f"- mentioned decided by {d}: {n}" for d, n in by.items()),
-            f"- mentioned not yet decided: {open_}"]
+            f"- mentioned unresolved: {unresolved}", f"- mentioned not yet decided: {open_}"]
 
 
 def render_report(items, index, ops, not_processed=()):

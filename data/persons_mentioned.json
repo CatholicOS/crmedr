@@ -1,5 +1,5 @@
 {
-  "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, la, it}. la and it are the person's printed phrases in the Latin and Italian 2004 texts, one per mark in text order (a phrase repeated is its next occurrence; [] when the edition does not name the person, a missing list is an error in extract_mentions.py); they are not copied to persons.json.",
+  "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, la, it}. la and it are the person's printed phrases in the Latin and Italian 2004 texts, one per mark in text order (a phrase repeated is its next occurrence, a printing over a commemorated namesake's mark is passed over; [] when the edition does not name the person, a missing list is an error in extract_mentions.py); they are not copied to persons.json. where is the person's first printing; a phrase is a string, printed there, or {\"phrase\", \"where\"} printed elsewhere (a person named in the text and in a footnote).",
   "mr:0303-cunegundis-confugiae": [
     {
       "name": "Henricus",

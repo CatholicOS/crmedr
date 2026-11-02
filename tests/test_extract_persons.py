@@ -32,6 +32,25 @@ class WithMentionedTest(unittest.TestCase):
         errs = with_mentioned({}, {"mr:x": [{"name": "Ambrosius", "where": "text", "la": []}]})
         self.assertEqual(errs, ["mr:x: 'Ambrosius' has no printed phrase (la)"])
 
+    def test_a_text_and_a_footnote_phrase_are_one_person(self):
+        # Final review 2: a phrase object names its own where; the person's where stays the first printing.
+        persons = {}
+        mentioned = {"mr:x": [{"name": "Ambrosius", "where": "text",
+                               "la": ["Ambrósio", {"phrase": "Ambrósium", "where": {"footnote": 1}}], "it": []}]}
+        self.assertEqual(with_mentioned(persons, mentioned), [])
+        self.assertEqual(persons, {"mr:x": [{"name": "Ambrosius", "where": "text", "role": "mentioned"}]})
+
+    def test_malformed_wheres_and_phrases_are_errors(self):
+        for bad, message in (
+                ({"where": "body"}, "mr:x: 'Ambrosius' has a malformed where 'body'"),
+                ({"la": [3]}, "mr:x: 'Ambrosius' has a malformed la phrase 3"),
+                ({"it": [{"phrase": "Ambrogio", "where": {"footnote": 0}}]},
+                 "mr:x: 'Ambrosius' has a malformed it phrase {'phrase': 'Ambrogio', 'where': {'footnote': 0}}")):
+            persons = {}
+            entry = {"name": "Ambrosius", "where": "text", "la": ["Ambrósio"], "it": []} | bad
+            self.assertEqual(with_mentioned(persons, {"mr:x": [entry]}), [message], bad)
+            self.assertEqual(persons, {}, bad)
+
 
 if __name__ == "__main__":
     unittest.main()

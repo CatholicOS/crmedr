@@ -86,6 +86,45 @@ def person_key(p):
     return name if n == 1 else f"{name}#{n}"
 
 
+def valid_where(where):
+    """A mention's `where`: "text", or {"footnote": n} with n an integer from 1."""
+    if where == "text":
+        return True
+    n = where.get("footnote") if isinstance(where, dict) and set(where) == {"footnote"} else None
+    return isinstance(n, int) and not isinstance(n, bool) and n >= 1
+
+
+def phrase_where(person, entry):
+    """A mentioned person's phrase entry (data/persons_mentioned.json `la`/`it`) as (phrase, where): a string
+    is printed in the person's `where`; an object {"phrase", "where"} names its own (a person printed in the
+    text and in a footnote)."""
+    if isinstance(entry, dict):
+        return entry.get("phrase"), entry.get("where")
+    return entry, person.get("where")
+
+
+def valid_phrase(entry):
+    """A phrase entry: a non-empty string, or {"phrase": non-empty string, "where": a valid where}."""
+    if isinstance(entry, str):
+        return bool(entry)
+    return (isinstance(entry, dict) and set(entry) == {"phrase", "where"} and isinstance(entry["phrase"], str)
+            and bool(entry["phrase"]) and valid_where(entry["where"]))
+
+
+def mentioned_shape_errors(person):
+    """The malformed parts of a mentioned person (its `where`, a phrase of `la` or `it` that is listed), one
+    message each, without the eulogy."""
+    name = person.get("name")
+    errors = [] if valid_where(person.get("where")) else [f"{name!r} has a malformed where {person.get('where')!r}"]
+    for lang in ("la", "it"):
+        phrases = person.get(lang)
+        if phrases is not None and not isinstance(phrases, list):
+            errors.append(f"{name!r} has a malformed {lang} list {phrases!r}")
+            continue
+        errors += [f"{name!r} has a malformed {lang} phrase {e!r}" for e in phrases or [] if not valid_phrase(e)]
+    return errors
+
+
 DISCRIMINATORS = "data/subject_discriminators.json"
 
 

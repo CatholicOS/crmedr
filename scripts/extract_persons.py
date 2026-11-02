@@ -25,8 +25,8 @@ from pathlib import Path
 from extract_typology import latin_texts, load_texts
 from gazetteer_text import fold
 from mentions_text import find_person
-from persons_text import (WORD, _genitive_ending, footnote_names, full_variant, name_key, nominative, person_key,
-                          subject_names, text_companions, without_parentheses, name_subjects)
+from persons_text import (WORD, _genitive_ending, footnote_names, full_variant, mentioned_shape_errors, name_key,
+                          nominative, person_key, subject_names, text_companions, without_parentheses, name_subjects)
 
 EDITION = "martyrologium_romanum_2004"
 COMMENT = ("The saints and blessed each eulogy commemorates, by edition: the Latin nominative name "
@@ -346,12 +346,17 @@ def resolve_unread(persons_by_id, issues, curated):
 
 def with_mentioned(persons_by_id, mentioned):
     """Append each eulogy's mentioned persons (data/persons_mentioned.json) after its own, as
-    {name, n?, where, role: "mentioned"}; the printed phrases (la, it) stay in that file. Returns the errors."""
+    {name, n?, where, role: "mentioned"}; the printed phrases (la, it) stay in that file. A phrase is a string,
+    printed in the person's `where` (their first printing), or {"phrase", "where"} printed elsewhere (a person
+    named in the text and in a footnote is one person). Returns the errors."""
     errors = []
     for mrid, entries in mentioned.items():
         for m in entries:
             taken = {(name_key(p["name"]), p.get("n", 1)) for p in persons_by_id.get(mrid, [])}
-            if not m.get("la"):
+            shape = mentioned_shape_errors(m)
+            if shape:
+                errors += [f"{mrid}: {e}" for e in shape]
+            elif not m.get("la"):
                 errors.append(f"{mrid}: {m['name']!r} has no printed phrase (la)")
             elif (name_key(m["name"]), m.get("n", 1)) in taken:
                 errors.append(f"{mrid}: {m['name']!r} is already a person of the eulogy; give the mentioned one n")

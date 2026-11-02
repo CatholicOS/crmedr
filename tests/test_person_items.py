@@ -438,6 +438,17 @@ class MentionedPersonsTest(unittest.TestCase):
         self.assertIn("- mentioned decided by created: 1", report)
         self.assertIn("- mentioned not yet decided: 1", report)
 
+    def test_report_counts_unresolved_mentioned_on_their_own_line(self):
+        # Final review 7: an unresolved mentioned person is decided, not "not yet decided".
+        index = {M_KEY: MENTIONED, M_MRID + "|Symeon": dict(MENTIONED, name="Symeon"),
+                 M_MRID + "|Eusebius": dict(MENTIONED, name="Eusebius"), **INDEX}
+        items = {M_MRID: {"Willibrordus": {"wikidata": "Q1", "status": "reviewed", "decided": "jev"},
+                          "Symeon": {"wikidata": None, "status": "unresolved", "note": "not found"}}}
+        report = bp.render_report(items, index, [])
+        self.assertIn("- Mentioned persons: 3", report)
+        self.assertIn("- mentioned unresolved: 1", report)
+        self.assertIn("- mentioned not yet decided: 1", report)
+
 
 class NameMatchReviewTest(unittest.TestCase):
     """Final review: a 4-letter prefix matched different names."""

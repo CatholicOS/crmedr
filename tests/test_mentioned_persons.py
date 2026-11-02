@@ -71,9 +71,53 @@ class CheckTest(unittest.TestCase):
                                 "end": LA[A].index("Mediolanénsis") + 13, "qid": "Q490"}]}, "it": {}}
         self.assertEqual(run({A: [prop()]}, mentions), [])
 
-    def test_a_mentioned_mark_does_not_block(self):
-        mentions = {"la": {A: [mark(LA[A], "Ambrósius", role="mentioned")]}, "it": {}}
-        self.assertEqual(run({A: [prop()]}, mentions), [])
+    def test_a_proposal_overlapping_a_mentioned_mark(self):
+        # Final review 5: a mentioned person's mark is not skipped, but a proposal over it is a problem.
+        mentions = {"la": {A: [mark(LA[A], "Ambrósius", name="Alius", role="mentioned")]}, "it": {}}
+        out = run({A: [prop()]}, mentions)
+        self.assertEqual(len(out), 1)
+        self.assertIn("overlaps the mark of the mentioned person Alius", out[0])
+
+    def test_a_namesake_phrase_skips_the_commemorated_mark(self):
+        # Final review 1: the Italian "Zenone" of Zeno#2 is its next printing, not the commemorated Zeno's.
+        z = "mr:1226-z"
+        sources = {"la": ({z: "Sancti Zenónis, quem Zeno álius baptizávit."}, {}),
+                   "it": ({z: "San Zenone, battezzato da Zenone."}, {})}
+        la, it = sources["la"][0][z], sources["it"][0][z]
+        mentions = {"la": {z: [mark(la, "Zenónis", name="Zeno")]}, "it": {z: [mark(it, "Zenone", name="Zeno")]}}
+        p = prop(name="Zeno", n=2, la=["Zeno álius"], it=["Zenone"], who="another Zeno")
+        persons = {z: [{"name": "Zeno", "where": "text"}]}
+        self.assertEqual(mp.check_proposals({z: [p]}, sources, persons, mentions), [])
+        it_only = {"la": ({z: la}, {}), "it": ({z: "San Zenone."}, {})}
+        out = mp.check_proposals({z: [p]}, it_only, persons, {"la": {}, "it": {z: [mark("San Zenone.", "Zenone",
+                                                                                         name="Zeno")]}})
+        self.assertEqual(len(out), 1)
+        self.assertIn("overlaps the mark of Zeno", out[0])
+
+    def test_a_footnote_phrase_object_of_a_text_person(self):
+        # Final review 2: a phrase object names its own where.
+        fn = {"phrase": "Ambrósium", "where": {"footnote": 1}}
+        self.assertEqual(run({A: [prop(la=["Ambrósius, epíscopus Mediolanénsis", fn])]}), [])
+        out = run({A: [prop(la=["Ambrósius, epíscopus Mediolanénsis", dict(fn, where="text")])]})
+        self.assertEqual(len(out), 1)
+        self.assertIn("'Ambrósium' is not printed in the text", out[0])
+
+    def test_proposals_overlapping_each_other_or_repeated(self):
+        # Final review 5.
+        out = run({A: [prop(), prop(name="Augustinus", la=["epíscopus Mediolanénsis"], it=[])]})
+        self.assertEqual(len(out), 1)
+        self.assertIn("Augustinus", out[0])
+        self.assertIn("overlaps the phrase of Ambrosius", out[0])
+        out = run({A: [prop(), prop(la=["Ambrósius"], it=[])]})
+        self.assertTrue(any("proposed twice" in o for o in out), out)
+
+    def test_malformed_where_or_phrase_is_a_problem(self):
+        # Final review 5: listed, no traceback.
+        for kw in ({"where": "body"}, {"where": {"footnote": "1"}}, {"la": [3]},
+                   {"it": [{"phrase": "Ambrogio", "where": {"footnote": 0}}]}, {"la": [{"where": "text"}]}):
+            out = run({A: [prop(**kw)]})
+            self.assertEqual(len(out), 1, (kw, out))
+            self.assertIn("malformed", out[0])
 
     def test_excluded_names(self):
         for name in ("Christus", "Iesus", "Dominus", "Deus", "Spiritus Sanctus", "Trinitas", "Maria Virgo"):
@@ -273,8 +317,8 @@ class ApplyTest(unittest.TestCase):
         self.curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano"},
                             {"role": "birth", "la": "Romæ", "it": "Roma"}]}
 
-    def apply(self, decisions):
-        return mp.apply_decisions(decisions, self.mentioned, self.items, self.curated, LA)
+    def apply(self, decisions, marks=None):
+        return mp.apply_decisions(decisions, self.mentioned, self.items, self.curated, (LA, NOTES), marks or {})
 
     def test_apply_writes_mentioned_and_items(self):
         removed, problems = self.apply({KEY: decision(note="n")})
@@ -333,8 +377,63 @@ class ApplyTest(unittest.TestCase):
     def test_a_place_elsewhere_in_the_text_is_kept(self):
         text = "Mediolanénsis. Ambrósius, epíscopus Mediolanénsis."
         curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano", "occurrence": 1}]}
-        removed, _ = mp.apply_decisions({KEY: decision()}, {}, {}, curated, {A: text})
+        removed, _ = mp.apply_decisions({KEY: decision()}, {}, {}, curated, ({A: text}, {}), {})
         self.assertEqual((removed, len(curated[A])), ([], 1))
+
+    def test_a_namesake_phrase_removes_the_place_of_its_own_printing(self):
+        # Final review 1: the phrase skips the commemorated Zeno's mark, so the place inside its next printing goes.
+        z = "mr:1226-z"
+        text = "Zeno Veronénsis, cum Zeno Veronénsis álius"
+        curated = {z: [{"role": "mention", "la": "Veronénsis", "occurrence": 1},
+                       {"role": "mention", "la": "Veronénsis", "occurrence": 2}]}
+        d = decision(proposal=prop(name="Zeno", n=2, la=["Zeno Veronénsis"], it=[]))
+        removed, problems = mp.apply_decisions({f"{z}|Zeno#2": d}, {}, {}, curated, ({z: text}, {}),
+                                               {z: [mark(text, "Zeno", name="Zeno")]})
+        self.assertEqual(problems, [])
+        self.assertEqual(len(removed), 1)
+        self.assertEqual([it["occurrence"] for it in curated[z]], [1])
+
+    def test_a_footnote_phrase_removes_no_text_place(self):
+        # Final review 2: only the text phrases remove a body place.
+        notes = {A: ["Vide Mediolanénsis."]}
+        p = prop(la=["Ambrósius", {"phrase": "Mediolanénsis", "where": {"footnote": 1}}], it=[])
+        removed, problems = mp.apply_decisions({KEY: decision(proposal=p)}, self.mentioned, self.items,
+                                               self.curated, (LA, notes), {})
+        self.assertEqual((removed, problems), ([], []))
+        self.assertEqual(len(self.curated[A]), 2)
+        self.assertEqual(self.mentioned[A][0]["la"], p["la"])
+
+    def test_a_rerun_after_a_partial_apply_writes_the_missing_item(self):
+        # Final review 4: persons_mentioned.json written, person_items.json not.
+        self.mentioned[A] = [mp.mentioned_of(prop())]
+        removed, problems = self.apply({KEY: decision()})
+        self.assertEqual(problems, [])
+        self.assertEqual(self.items[A]["Ambrosius"], {"wikidata": "Q1", "status": "reviewed", "decided": "jev"})
+        self.assertEqual(len(self.mentioned[A]), 1)
+
+    def test_apply_cli_reminds_to_rebuild_the_places(self):
+        # Final review 3 (and 4: atomic writes, no temp file left).
+        with tempfile.TemporaryDirectory() as d, tempfile.TemporaryDirectory() as t:
+            root, texts = Path(d), Path(t)
+            (root / "data").mkdir()
+            folder = texts / "data" / "editions" / mp.EDITIONS["la"]
+            folder.mkdir(parents=True)
+            for month in range(1, 13):
+                (folder / f"{month:02d}.json").write_text(json.dumps(LA if month == 1 else {}), encoding="utf-8")
+            (folder / "footnotes.json").write_text(json.dumps({A: [{"text": NOTES[A][0]}]}), encoding="utf-8")
+            for name, doc in (("persons_mentioned.json", {}), ("person_items.json", {"persons": {}}),
+                              ("places_curated.json", self.curated), ("mentions.json", {"editions": {}})):
+                (root / "data" / name).write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
+            (root / "dec.json").write_text(json.dumps({KEY: decision()}), encoding="utf-8")
+            r = subprocess.run([sys.executable, str(Path(mp.__file__)), "apply", str(root / "dec.json"), t, d],
+                               capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertIn("run python3 scripts/extract_places.py", r.stdout)
+            self.assertEqual(json.loads((root / "data" / "person_items.json").read_text())["persons"][A]["Ambrosius"]
+                             ["decided"], "jev")
+            self.assertEqual(len(json.loads((root / "data" / "places_curated.json").read_text())[A]), 1)
+            self.assertEqual(sorted(p.name for p in (root / "data").iterdir()),
+                             ["mentions.json", "person_items.json", "persons_mentioned.json", "places_curated.json"])
 
     def test_render_matches_build_person_items(self):
         self.apply({KEY: decision()})
@@ -356,6 +455,8 @@ class CardsTest(unittest.TestCase):
                          ("resolve_person", f"{A}|Ambrosius#2", A, "Ambrosius", 2, "two bishops fit"))
         self.assertEqual(op["candidates"], [{"wikidata": "Q5"}, {"wikidata": "Q6", "label": "X"}])
         self.assertEqual((op["decision"], op["edited"]), (None, None))
+        # Final review 9: the phrases travel with the card, so a decided doubt can be applied.
+        self.assertEqual((op["la"], op["it"], op["who"]), (prop()["la"], prop()["it"], "Bishop of Milan"))
 
     def test_cards_cli_refuses_a_git_work_tree(self):
         with tempfile.TemporaryDirectory() as d:
@@ -374,6 +475,65 @@ class CardsTest(unittest.TestCase):
                                 str(Path(o) / "out.json"), d], capture_output=True, text=True)
             self.assertEqual(r.returncode, 0, r.stderr)
             self.assertEqual(len(json.loads((Path(o) / "out.json").read_text())["operations"]), 1)
+
+
+
+class DecisionsTest(unittest.TestCase):
+    """Final review 8: proposals, Jev's choices and the research joined into a decisions file."""
+    PROPOSALS = {A: [prop() | {"candidates": [{"wikidata": "Q1"}]}, prop(n=2), prop(name="Augustinus")]}
+    JEV = {A: {"Ambrosius": {"choice": "Q1", "p": 0.95, "accepted": True},
+               "Ambrosius#2": {"choice": "Q2", "p": 0.5, "accepted": False}}}
+    RESEARCH = {f"{A}|Ambrosius#2": {"wikidata": "Q7", "decided": "research", "status": "reviewed", "note": "n"},
+                f"{A}|Augustinus": {"wikidata": None, "decided": None, "status": "doubt", "note": "two fit",
+                                    "candidates": ["Q8", "Q9"]}}
+
+    def test_join(self):
+        out, problems = mp.build_decisions(self.PROPOSALS, self.JEV, self.RESEARCH)
+        self.assertEqual(problems, [])
+        self.assertEqual(out[KEY], {"wikidata": "Q1", "decided": "jev", "status": "reviewed", "proposal": prop()})
+        self.assertEqual(out[f"{A}|Ambrosius#2"], self.RESEARCH[f"{A}|Ambrosius#2"] | {"proposal": prop(n=2)})
+        self.assertEqual(out[f"{A}|Augustinus"]["candidates"], ["Q8", "Q9"])
+        self.assertEqual(mp.decision_problems(out), [])
+
+    def test_research_overrides_jev(self):
+        research = {KEY: {"wikidata": None, "decided": None, "status": "unresolved", "note": "not him"}}
+        out, problems = mp.build_decisions({A: [prop()]}, self.JEV, research)
+        self.assertEqual((problems, out[KEY]["status"]), ([], "unresolved"))
+
+    def test_problems(self):
+        _, problems = mp.build_decisions(self.PROPOSALS, self.JEV, {})
+        self.assertEqual(problems, [f"{A}|Ambrosius#2: neither an accepted Jev choice nor a research entry",
+                                    f"{A}|Augustinus: neither an accepted Jev choice nor a research entry"])
+        _, problems = mp.build_decisions({A: [prop()]}, {}, {KEY: {"wikidata": None, "decided": None,
+                                                                   "status": "unresolved", "note": ""}})
+        self.assertEqual(len(problems), 1)
+        self.assertIn("note", problems[0])
+        _, problems = mp.build_decisions({A: [prop()]}, self.JEV, {f"{B}|Alius": {"status": "doubt"}})
+        self.assertEqual(problems, [f"{B}|Alius: a research entry for no proposed person"])
+
+    def test_cli(self):
+        with tempfile.TemporaryDirectory() as d, tempfile.TemporaryDirectory() as o:
+            paths = {n: Path(d) / f"{n}.json" for n in ("proposals", "jev", "research")}
+            for n, doc in (("proposals", self.PROPOSALS), ("jev", self.JEV), ("research", self.RESEARCH)):
+                paths[n].write_text(json.dumps(doc), encoding="utf-8")
+            script = str(Path(mp.__file__))
+            r = subprocess.run([sys.executable, script, "decisions", str(paths["proposals"]), str(paths["jev"]),
+                                str(paths["research"]), str(Path(o) / "dec.json")], capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertEqual(len(json.loads((Path(o) / "dec.json").read_text())), 3)
+            r = subprocess.run([sys.executable, script, "decisions", str(paths["proposals"]), str(paths["jev"]),
+                                str(Path(o) / "dec2.json")], capture_output=True, text=True)
+            self.assertNotEqual(r.returncode, 0)
+            self.assertIn("neither an accepted Jev choice", r.stderr)
+            self.assertFalse((Path(o) / "dec2.json").exists())
+        with tempfile.TemporaryDirectory() as d:
+            subprocess.run(["git", "init", "-q", d], check=True)
+            (Path(d) / "p.json").write_text(json.dumps({A: [prop()]}), encoding="utf-8")
+            (Path(d) / "j.json").write_text(json.dumps(self.JEV), encoding="utf-8")
+            r = subprocess.run([sys.executable, script, "decisions", str(Path(d) / "p.json"), str(Path(d) / "j.json"),
+                                str(Path(d) / "dec.json")], capture_output=True, text=True, cwd=d)
+            self.assertNotEqual(r.returncode, 0)
+            self.assertFalse((Path(d) / "dec.json").exists())
 
 
 if __name__ == "__main__":
