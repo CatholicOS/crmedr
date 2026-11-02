@@ -479,7 +479,9 @@ CURATED_COMMENT = ("Curators' corrections to data/mentions.json: for each eulogy
                    "mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), "
                    "replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at "
                    "extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a "
-                   "reviewed change-set (docs/mentions-changeset.md), or by hand.")
+                   "reviewed change-set (docs/mentions-changeset.md), or by hand. `unmarked`: by edition and eulogy, the "
+                   "persons the curators left unmarked (a mark removed or a proposal rejected); a person the list "
+                   "lacks and this does not name is matched beside the list's marks.")
 LABELS = [(("place", True), "Places in the text"), (("person", True), "Persons in the text"),
           (("person", False), "Persons in footnotes"), (("event", True), "Events in the text")]
 
@@ -620,8 +622,30 @@ def with_events(ms, events, source, lang):
     return sorted(ms, key=mention_order), errors
 
 
-def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated, events=None):
-    """One edition's mentions by eulogy (code points), its review items by eulogy, and its counts."""
+def with_unlisted_persons(ms, rv, counts, text, notes, items, names, lang, place_qid, person_qid, unmarked):
+    """A curated eulogy's marks with the persons its list lacks and the curators did not leave unmarked (a
+    person added to data/persons.json after the list was written): matched as in any other eulogy, where no
+    curated mark lies; a person the matcher is unsure of is proposed."""
+    listed = {person_key(p) for m in ms if m["kind"] == "person" for p in [m, *(m.get("others") or [])]}
+    missing = {person_key(p) for p in names} - listed - unmarked
+    if not missing:
+        return ms, rv
+    found, asked, _ = eulogy_mentions(text, notes, items, names, lang=lang, place_qid=place_qid,
+                                      person_qid=person_qid)
+    def clear(m):
+        return m["start"] is None or not any(c["where"] == m["where"] and c["start"] < m["end"]
+                                             and m["start"] < c["end"] for c in ms)
+
+    free = [m for m in found if m["kind"] == "person" and person_key(m) in missing and clear(m)]
+    for m in free:
+        counts["found"][("person", m["where"] == "text", "unlisted")] += 1
+    return ms + free, rv + [r for r in asked if r["kind"] == "person" and r.get("name")
+                            and person_key(r) in missing and clear(r)]
+
+
+def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated, events=None, unmarked=None):
+    """One edition's mentions by eulogy (code points), its review items by eulogy, and its counts. `unmarked`:
+    by eulogy, the persons the curators left unmarked (data/mentions_curated.json), as {"name", "n"?}."""
     out, review = {}, {}
     counts = {"expected": Counter(), "found": Counter(), "review": Counter(), "no_text": []}
 
@@ -647,6 +671,9 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
             for m in ms:
                 counts["found"][(m["kind"], m["where"] == "text", "curated")] += 1
             rv = curated_place_roles(ms, items, texts[mrid], lang, place_qid)
+            ms, rv = with_unlisted_persons(ms, rv, counts, texts[mrid], notes.get(mrid, []), items, names, lang,
+                                           place_qid, person_qid,
+                                           {person_key(p) for p in (unmarked or {}).get(mrid, ())})
             if rv:
                 review[mrid] = rv
                 counts["review"].update(r["op"] for r in rv)
@@ -937,7 +964,8 @@ def extract(texts_repo, repo_root, review_path):
     persons = _read(data / "persons.json")["editions"][PERSONS_EDITION]
     gazetteer = _read(data / "gazetteer.json", {"places": {}})["places"]
     person_items = _read(data / "person_items.json", {"persons": {}})["persons"]
-    curated = _read(data / "mentions_curated.json", {"editions": {}})["editions"]
+    curated_doc = _read(data / "mentions_curated.json", {"editions": {}})
+    curated, unmarked = curated_doc["editions"], curated_doc.get("unmarked", {})
     entries = _read(data / "martyrology_ids.json", {"entries": []})["entries"]
     events = {k: v for k, v in _read(data / "events_curated.json", {}).items() if not k.startswith("$")}
     sources, by_edition, review, counts = {}, {}, {}, {}
@@ -955,7 +983,7 @@ def extract(texts_repo, repo_root, review_path):
         by_edition[edition], review[edition], counts[edition] = build_edition(
             lang, *sources[edition], ed_places, ed_persons, gazetteer,
             {person_twins.get(k, k): v for k, v in person_items.items()},  # the decisions follow their persons
-            curated.get(edition, {}), events)
+            curated.get(edition, {}), events, unmarked.get(edition, {}))
         counts[edition]["twin"] = twins
 
     def source(edition, mrid, where):
@@ -980,14 +1008,34 @@ def _same(m, where, start, end):
     return m["where"] == where and m["start"] == start and m["end"] == end
 
 
-def apply_decisions(curated_editions, mentions_editions, exported):
+def as_person(key):
+    """A person key ("name", or "name#n") as crmedr writes a person: {"name"} or {"name", "n"}."""
+    name, _, n = key.rpartition("#") if "#" in key else (key, "", "")
+    return {"name": name, "n": int(n)} if n else {"name": name}
+
+
+def apply_decisions(curated_editions, mentions_editions, exported, unmarked=None):
     """Apply the accepted (or edited) mention operations of `exported`, in UTF-16
     offsets; a rejected one curates its eulogy as it stands, so it is not proposed again. Each eulogy an operation touches starts from its curated entry, else
     from data/mentions.json, and is written back into `curated_editions`. A mention
     an operation adds or moves carries the operation's `form` and no `check` until
     `apply` checks it against the texts. Returns how many operations were applied,
-    and the errors."""
+    and the errors. `unmarked` (edition -> eulogy -> [{"name", "n"?}]) records the persons the curators leave
+    unmarked: whose last mark they remove, or whose proposed mark they reject; a mark they add clears it."""
     applied, errors = 0, []
+    unmarked = {} if unmarked is None else unmarked
+
+    def leave(edition, mrid, keys, unmark):
+        by_id = unmarked.setdefault(edition, {})
+        held = {person_key(p) for p in by_id.get(mrid, ())}
+        now = (held | keys) if unmark else (held - keys)
+        if now:
+            by_id[mrid] = [as_person(k) for k in sorted(now)]
+        else:
+            by_id.pop(mrid, None)
+        if not by_id:
+            unmarked.pop(edition)
+
     for op in exported.get("operations", []):
         if op.get("op") not in MENTION_OPS or op.get("decision") not in ("accept", "edit", "reject"):
             continue
@@ -999,6 +1047,8 @@ def apply_decisions(curated_editions, mentions_editions, exported):
         if op["decision"] == "reject":
             # The eulogy is curated as it stands, so the rejected proposal is not made again.
             by_id.setdefault(mrid, sorted(current, key=mention_order))
+            if op["op"] == "add_mention" and op["kind"] == "person":
+                leave(edition, mrid, {person_key(op)}, True)
             continue
         if op["op"] == "add_mention":
             span = {k: edited.get(k, op.get(k)) for k in ("start", "end", "form")}
@@ -1015,6 +1065,8 @@ def apply_decisions(curated_editions, mentions_editions, exported):
             if op["kind"] == "person" and others:
                 m["others"] = other_persons(others, lambda o: None)
             current.append(m)
+            if op["kind"] == "person":
+                leave(edition, mrid, {person_key(p) for p in [m, *(m.get("others") or [])]}, False)
         else:
             old = op["from"] if op["op"] == "set_span" else op
             hit = [m for m in current if _same(m, where, old["start"], old["end"])]
@@ -1023,6 +1075,12 @@ def apply_decisions(curated_editions, mentions_editions, exported):
                 continue
             if op["op"] == "remove_mention":
                 current = [m for m in current if m not in hit]
+                still = {person_key(p) for m in current if m["kind"] == "person"
+                         for p in [m, *(m.get("others") or [])]}
+                gone = {person_key(p) for m in hit if m["kind"] == "person"
+                        for p in [m, *(m.get("others") or [])]} - still
+                if gone:
+                    leave(edition, mrid, gone, True)
             else:
                 to = {**op["to"], **edited}
                 for m in hit:
@@ -1052,7 +1110,9 @@ def apply(exported, texts_repo, repo_root):
     data = repo_root / "data"
     mentions = _read(data / "mentions.json", {"editions": {}})["editions"]
     doc = _read(data / "mentions_curated.json", {"$comment": CURATED_COMMENT, "editions": {}})
-    applied, errors = apply_decisions(doc["editions"], mentions, exported)
+    applied, errors = apply_decisions(doc["editions"], mentions, exported, doc.setdefault("unmarked", {}))
+    if not doc["unmarked"]:
+        del doc["unmarked"]
     errors += [f"{edition}: not an edition with mentions" for edition in doc["editions"] if edition not in EDITIONS]
     # Texts are read as extraction reads them: filed under a twin's ID, the eulogy's operations name that ID.
     sources = {edition: load_edition(texts_repo, edition) for edition in doc["editions"] if edition in EDITIONS}

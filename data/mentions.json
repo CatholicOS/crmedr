@@ -10389,6 +10389,24 @@
           "check": "ace1b9f6",
           "name": "Maria",
           "qid": "Q116026019"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 61,
+          "end": 68,
+          "check": "5aa55de9",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
+          "end": 82,
+          "check": "d42596e4",
+          "name": "Arcadius",
+          "qid": null
         }
       ],
       "mr:0127-angela-merici": [
@@ -60504,6 +60522,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 566,
+          "end": 574,
+          "check": "46c091d2",
+          "name": "Blandina",
+          "qid": "Q455195"
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -65806,6 +65833,15 @@
               "name": "Felix"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 352,
+          "end": 357,
+          "check": "416e9d2e",
+          "name": "Digna",
+          "qid": "Q141941380"
         }
       ],
       "mr:0614-elisaeus-propheta": [
@@ -71018,12 +71054,48 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 92,
+          "end": 102,
+          "check": "6995140e",
+          "name": "Heraclides",
+          "qid": "Q141941130"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 116,
+          "end": 123,
+          "check": "2e4482cf",
+          "name": "Herones",
+          "qid": "Q141941132"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 145,
           "end": 151,
           "check": "fb8915b1",
           "name": "Serenus",
           "n": 2,
           "qid": "Q141941141"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 153,
+          "end": 161,
+          "check": "94dae34c",
+          "name": "Heraides",
+          "qid": "Q141941131"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 188,
+          "end": 196,
+          "check": "9e4ffcc7",
+          "name": "Marcella",
+          "qid": "Q141941133"
         }
       ],
       "mr:0628-severianus-baranyk-et-ioachim-senkivskyj": [
@@ -85166,8 +85238,8 @@
           "start": 116,
           "end": 148,
           "check": "3972ae33",
-          "name": "Maria Emmanuel Perez Gimenez",
-          "qid": null
+          "name": "Emmanuel Perez Gimenez",
+          "qid": "Q141943197"
         },
         {
           "kind": "person",
@@ -86716,8 +86788,17 @@
           "start": 55,
           "end": 68,
           "check": "b176bea2",
-          "name": "Petrus a Corde",
-          "qid": null
+          "name": "Petrus a Corde Redondo",
+          "qid": "Q141943209"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 133,
+          "check": "d0e2b5cd",
+          "name": "Felix a Quinque Vulneribus Ugalde Irurzun",
+          "qid": "Q5872451"
         },
         {
           "kind": "person",
@@ -86890,6 +86971,15 @@
           "check": "d8154a54",
           "name": "Valentina",
           "qid": null
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 221,
+          "end": 225,
+          "check": "7db8c261",
+          "name": "Thea",
+          "qid": "Q141943211"
         },
         {
           "kind": "person",
@@ -89609,6 +89699,15 @@
           "check": "10dd4b92",
           "name": "Maxima",
           "qid": "Q141943232"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 60,
+          "check": "d8c64f35",
+          "name": "Donatilla",
+          "qid": "Q141943231"
         },
         {
           "kind": "person",
@@ -93264,6 +93363,24 @@
           "check": "7d7664fc",
           "name": "Ioannes Woodcock",
           "qid": "Q6264803"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 102,
+          "end": 116,
+          "check": "d1972cac",
+          "name": "Eduardus Bamber",
+          "qid": "Q5341741"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 120,
+          "end": 134,
+          "check": "8342f989",
+          "name": "Thomas Whitaker",
+          "qid": "Q7795082"
         }
       ],
       "mr:0807-iordanus-forzate": [
@@ -100574,6 +100691,33 @@
           "check": "1b3271eb",
           "name": "Bassa",
           "qid": "Q131290952"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 61,
+          "end": 69,
+          "check": "a66c3878",
+          "name": "Theognius",
+          "qid": "Q141901690"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 77,
+          "check": "dc3dc895",
+          "name": "Agapius",
+          "qid": "Q141901686"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 81,
+          "end": 87,
+          "check": "56706b8e",
+          "name": "Pistius",
+          "qid": "Q141901688"
         },
         {
           "kind": "person",
@@ -111675,8 +111819,17 @@
           "start": 104,
           "end": 145,
           "check": "358c3bac",
-          "name": "Theodemirus Ioachim Hadrianus Sainz Sainz",
-          "qid": null
+          "name": "Hadrianus Sainz Sainz",
+          "qid": "Q141944577"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 149,
+          "end": 192,
+          "check": "8e589ad7",
+          "name": "Eusebius Alphonsus Urjurra",
+          "qid": "Q141944576"
         }
       ],
       "mr:0908-corbinianus-frisingae": [
@@ -115984,8 +116137,8 @@
           "start": 119,
           "end": 154,
           "check": "def54448",
-          "name": "Benedictus Emmanuel Ferrer Jorda",
-          "qid": null
+          "name": "Emmanuel Ferrer Jordá",
+          "qid": "Q141944633"
         },
         {
           "kind": "person",
@@ -115993,8 +116146,8 @@
           "start": 158,
           "end": 192,
           "check": "1d285454",
-          "name": "Bernardinus Paulus Martinez Robles",
-          "qid": null
+          "name": "Paulus Martínez Robles",
+          "qid": "Q141944635"
         }
       ],
       "mr:0916-victor-et-socii": [
@@ -123802,6 +123955,15 @@
           "check": "10a3b82c",
           "name": "Ripsime",
           "qid": "Q465993"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 51,
+          "check": "40be0b40",
+          "name": "Gaiana",
+          "qid": "Q3099647"
         }
       ],
       "mr:0930-amatus-nusci": [
@@ -125790,6 +125952,15 @@
           "check": "a1e702ad",
           "name": "Lucius",
           "qid": "Q141944930"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 208,
+          "end": 216,
+          "check": "3e7ffa29",
+          "name": "Dionysius",
+          "qid": "Q328736"
         },
         {
           "kind": "person",
@@ -146629,6 +146800,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 112,
+          "end": 119,
+          "check": "5aa55de9",
+          "name": "Ioannes",
+          "qid": "Q141945720"
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -156386,6 +156566,15 @@
           "check": "a121acfe",
           "name": "Ares",
           "qid": "Q141945877"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 39,
+          "end": 44,
+          "check": "256eb7dd",
+          "name": "Promus",
+          "qid": "Q141945880"
         },
         {
           "kind": "person",
@@ -168994,6 +169183,15 @@
           "check": "62817ee4",
           "name": "Carola Lucas",
           "qid": "Q141886839"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 93,
+          "end": 109,
+          "check": "ab31830a",
+          "name": "Victoria Gusteau",
+          "qid": null
         }
       ],
       "mr:0118-margarita-budae": [
@@ -222068,6 +222266,15 @@
           "qid": "Q984169"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 59,
+          "check": "b7939595",
+          "name": "Blandina",
+          "qid": "Q455195"
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 236,
@@ -223828,6 +224035,24 @@
           "check": "f010f67b",
           "name": "Eobanus",
           "qid": "Q559396"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 76,
+          "check": "1037384d",
+          "name": "Adelarius",
+          "qid": "Q347117"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 143,
+          "end": 152,
+          "check": "3059df28",
+          "name": "Bonifatius",
+          "qid": "Q160445"
         },
         {
           "kind": "person",
@@ -227300,6 +227525,15 @@
           "check": "2e279f06",
           "name": "Felix",
           "qid": "Q21483126"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 95,
+          "check": "416e9d2e",
+          "name": "Digna",
+          "qid": "Q141941380"
         },
         {
           "kind": "person",
@@ -236954,6 +237188,15 @@
           "check": "66c471b6",
           "name": "Augustinus Zhao Rong",
           "qid": "Q552659"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 37,
+          "end": 56,
+          "check": "aaf22e39",
+          "name": "Petrus Sans i Jorda",
+          "qid": "Q864852"
         },
         {
           "kind": "place",
@@ -251144,6 +251387,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 47,
+          "end": 56,
+          "check": "4702801c",
+          "name": "Donatilla",
+          "qid": "Q141943231"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 59,
           "end": 66,
           "check": "844161c9",
@@ -262046,6 +262298,33 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 58,
+          "end": 65,
+          "check": "62385256",
+          "name": "Theognius",
+          "qid": "Q141901690"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 73,
+          "check": "0c0b00bd",
+          "name": "Agapius",
+          "qid": "Q141901686"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 82,
+          "check": "1e9134f8",
+          "name": "Pistius",
+          "qid": "Q141901688"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 104,
           "end": 109,
           "check": "39ff0d28",
@@ -272863,6 +273142,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 88,
+          "end": 106,
+          "check": "601029cb",
+          "name": "Dominicus Castellet",
+          "qid": "Q20028699"
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -279012,6 +279300,15 @@
           "check": "52acd3cc",
           "name": "Andreas Kim Tae Gon",
           "qid": "Q343569"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 49,
+          "end": 68,
+          "check": "9a33f16d",
+          "name": "Paulus Chong Ha-sang",
+          "qid": "Q179935"
         },
         {
           "kind": "place",
@@ -287175,6 +287472,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 256,
+          "end": 263,
+          "check": "32534366",
+          "name": "Dionysius",
+          "qid": "Q328736"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 301,
           "end": 307,
           "check": "394b7a54",
@@ -289290,6 +289596,24 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 227,
+          "end": 234,
+          "check": "7324d0db",
+          "name": "Rusticus",
+          "qid": "Q379144"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 248,
+          "end": 257,
+          "check": "b72c5e88",
+          "name": "Eleutherius",
+          "qid": "Q3587650"
         }
       ],
       "mr:1009-domninus-iuliam": [
@@ -307952,6 +308276,15 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 166,
+          "end": 174,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "qid": "Q141945720"
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -315096,6 +315429,24 @@
         },
         {
           "kind": "person",
+          "where": "text",
+          "start": 251,
+          "end": 259,
+          "check": "44e3164d",
+          "name": "Dionysia",
+          "qid": "Q141945847"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 262,
+          "end": 270,
+          "check": "aa708ac0",
+          "name": "Maioricus",
+          "qid": "Q141945855"
+        },
+        {
+          "kind": "person",
           "where": {
             "footnote": 1
           },
@@ -317626,6 +317977,15 @@
           "check": "a121acfe",
           "name": "Ares",
           "qid": "Q141945877"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 38,
+          "end": 43,
+          "check": "1305821e",
+          "name": "Promus",
+          "qid": "Q141945880"
         },
         {
           "kind": "person",
