@@ -321,8 +321,10 @@ def person_index(persons_doc, entries, typology, subjects):
                 "where": p["where"],
                 "day": f"{e['month']:02d}-{e['day']:02d}", "typology": typology.get(mrid),
                 "subject": subjects.get(mrid, ""),
-                # Each other name once: a repeated name is one companion to search with.
-                "companions": list(dict.fromkeys(q["name"] for q in persons if q["name"] != p["name"])),
+                # Each other name once: a repeated name is one companion to search with; a merely mentioned
+                # person is no companion.
+                "companions": list(dict.fromkeys(q["name"] for q in persons
+                                                 if q["name"] != p["name"] and q.get("role") != "mentioned")),
             }
     return out
 

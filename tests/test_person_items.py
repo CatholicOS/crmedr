@@ -415,6 +415,15 @@ class MentionedPersonsTest(unittest.TestCase):
         self.assertEqual(items[M_MRID]["Willibrordus"], {"wikidata": "Q7", "status": "auto"})
         self.assertEqual(bp.unaccounted({}, {M_KEY: MENTIONED}, []), [])
 
+    def test_a_mentioned_person_is_no_companion(self):
+        doc = {"editions": {bp.EDITION: {"mr:0101-x": [{"name": "Bassianus", "where": "text"},
+                                                        {"name": "Ambrosius", "where": "text", "role": "mentioned"},
+                                                        {"name": "Alius", "where": "text"}]}}}
+        entries = [{"id": "mr:0101-x", "month": 1, "day": 1}]
+        index = bp.person_index(doc, entries, {}, {})
+        self.assertEqual(index["mr:0101-x|Bassianus"]["companions"], ["Alius"])
+        self.assertEqual(index["mr:0101-x|Ambrosius"]["companions"], ["Bassianus", "Alius"])
+
     def test_report_counts_mentioned_by_decided(self):
         index = {M_KEY: MENTIONED, M_MRID + "|Symeon": dict(MENTIONED, name="Symeon"),
                  M_MRID + "|Eusebius": dict(MENTIONED, name="Eusebius"),
