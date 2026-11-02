@@ -287,7 +287,7 @@
 | 22 | 3 | `mr:1022-philippus-et-hermes` |  | TR | dies_natalis |  |  |
 | 22 | 4 | `mr:1022-mallonus-rothomagi` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region around Lyon" where the Latin has "Gállia Lugdunénsi" (the Roman province of Lugdunensis, not the area of Lyon). |
 | 22 | 5 | `mr:1022-valerius-lingonensis` | * | FR | dies_natalis |  |  |
-| 22 | 6 | `mr:1022-lupentius-catalaunensis` | * | FR | dies_natalis |  | The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols). |
+| 22 | 6 | `mr:1022-lupentius-catalaunensis` | * | FR | dies_natalis |  | The basilica of Saint Privatus of the Gabali, of which Lupentius was abbot (Gregory of Tours, Historia Francorum VI.37), is linked to Javols, the civitas of the Gabali, as the Cult of Saints in Late Antiquity database (E02189) and the Italian edition place it; its site has not been found there, and Mende, where Privatus died and his tomb is venerated, remains possible. |
 | 22 | 7 | `mr:1022-leotadius-augustae-auscorum` | * | FR | dies_natalis |  |  |
 | 22 | 8 | `mr:1022-moderanus-rhedonensis` | * | IT | dies_natalis |  |  |
 | 22 | 9 | `mr:1022-benedictus-nannetensis` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "a Mézières" where the Latin has "Maceráci" (Massérac, near Nantes). |

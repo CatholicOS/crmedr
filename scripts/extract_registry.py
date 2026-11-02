@@ -227,7 +227,12 @@ ENTRY_NOTES = {
         "presso il monte Mula\" (in the monastery by Mount Mula) under the hegumen Christopher before they moved "
         "to the Mercurion (Q3855082). The monastery's own site is lost; the place is mapped at the mountain."
     ),
-    "mr:1022-lupentius-catalaunensis": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols).",
+    "mr:1022-lupentius-catalaunensis": (
+        "The basilica of Saint Privatus of the Gabali, of which Lupentius was abbot (Gregory of Tours, Historia "
+        "Francorum VI.37), is linked to Javols, the civitas of the Gabali, as the Cult of Saints in Late Antiquity "
+        "database (E02189) and the Italian edition place it; its site has not been found there, and Mende, where "
+        "Privatus died and his tomb is venerated, remains possible."
+    ),
     "mr:0501-augustinus-schoeffler": "The exact site of the “Five Acres” field near Sơn Tây, where Augustine Schoeffler was beheaded, is unknown.",
     "mr:0125-eleonora-girlani": "The Carmelite convent of Parma of which Archangela Girlani was prioress is not named, and its site is unknown.",
     "mr:0721-simeon-salus": "Leontius's Life places Simeon and John's hermitage by the Dead Sea near the Arnon (Wadi Mujib, Jordan); the exact site is unknown.",

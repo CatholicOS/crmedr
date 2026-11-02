@@ -3341,7 +3341,10 @@
           "role": "religious_life",
           "la": "monastérii Abgári",
           "it": "monastero di Abgar",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141970448",
+          "label": "Agauroi Monastery",
+          "country": "TR"
         }
       ],
       "note": "The site of the monastery of Abgar (Agauros) on the Mysian Olympus near Prusa (Bursa), of which Eustratius was abbot, is not identified."
@@ -101169,7 +101172,10 @@
           "role": "religious_life",
           "la": "monastério Pinnæ Melláriæ",
           "it": "monastero di Peñamelaria",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q141970449",
+          "label": "Monastery of Peñamelaria",
+          "country": "ES"
         }
       ],
       "date": {
@@ -104759,7 +104765,10 @@
           "role": "death",
           "la": "Calydóne Pisídiæ",
           "it": "A Chiliadu in Pisidia, nell’odierna Turchia",
-          "source": "lead"
+          "source": "lead",
+          "wikidata": "Q141970450",
+          "label": "Kalytos",
+          "country": "TR"
         }
       ],
       "date": {
@@ -114753,7 +114762,10 @@
           "role": "religious_life",
           "la": "basílicæ Sancti Priváti Gabalórum",
           "it": "basilica di Saint-Privat-de-Javols",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q478932",
+          "label": "Javols",
+          "country": "FR"
         }
       ],
       "date": {
@@ -114761,7 +114773,7 @@
         "basis": "death",
         "source": "wikidata"
       },
-      "note": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols)."
+      "note": "The basilica of Saint Privatus of the Gabali, of which Lupentius was abbot (Gregory of Tours, Historia Francorum VI.37), is linked to Javols, the civitas of the Gabali, as the Cult of Saints in Late Antiquity database (E02189) and the Italian edition place it; its site has not been found there, and Mende, where Privatus died and his tomb is venerated, remains possible."
     },
     {
       "id": "mr:1022-leotadius-augustae-auscorum",
