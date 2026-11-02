@@ -695,6 +695,45 @@ class UnrecordedTest(unittest.TestCase):
         places = {"mr:0101-a": [{"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}]}
         self.assertEqual(p.unrecorded(texts, places, ["Fictia"]), {})
 
+    @staticmethod
+    def mentioned_mark(text, phrase, where="text", nth=0):
+        """A mentioned person's mark of data/persons_mentioned.json (UTF-16 offsets; these texts are BMP)."""
+        s = -1
+        for _ in range(nth + 1):
+            s = text.index(phrase, s + 1)
+        return {"where": where, "start": s, "end": s + len(phrase), "check": "00000000"}
+
+    def test_a_known_place_inside_a_mentioned_persons_name_is_not_listed(self):
+        name_only = {"mr:0119-a": "Laude, sancti Bassiáni, qui ab Ambrósio Mediolanénsi ordinátus est."}
+        mark = self.mentioned_mark(name_only["mr:0119-a"], "Ambrósio Mediolanénsi")
+        mentioned = {"mr:0119-a": [{"name": "Ambrosius", "where": "text", "marks": {"la": [mark], "it": []}}]}
+        self.assertEqual(p.unrecorded(name_only, {}, ["Mediolanénsi"], mentioned), {})
+        texts = {"mr:0119-a": "Laude, sancti Bassiáni, qui ab Ambrósio Mediolanénsi ordinátus est Mediolanénsi."}
+        # A printing of the place outside the name is still listed.
+        self.assertEqual(p.unrecorded(texts, {}, ["Mediolanénsi"], mentioned), {"mr:0119-a": ["Mediolanénsi"]})
+
+    def test_only_a_mentioned_persons_text_marks_cover_the_text(self):
+        # CodeRabbit #271: a person's footnote mark covers nothing in the text, even at offsets that fall on
+        # a printing of the place there.
+        text = "Laude, ab Ambrósio Mediolanénsi ordinátus, Mediolanénsi."
+        text_mark = self.mentioned_mark(text, "Ambrósio Mediolanénsi")
+        offsets_on_the_place = self.mentioned_mark(text, "Mediolanénsi", nth=1)
+
+        def mentioned(second_where):
+            return {"mr:0119-a": [{"name": "Ambrosius", "where": "text", "marks": {
+                "la": [text_mark, dict(offsets_on_the_place, where=second_where)], "it": []}}]}
+
+        self.assertEqual(p.unrecorded({"mr:0119-a": text}, {}, ["Mediolanénsi"], mentioned({"footnote": 1})),
+                         {"mr:0119-a": ["Mediolanénsi"]})
+        self.assertEqual(p.unrecorded({"mr:0119-a": text}, {}, ["Mediolanénsi"], mentioned("text")), {})
+
+    def test_mentioned_offsets_are_utf16(self):
+        text = "\U0001d504 ab Ambrósio Mediolanénsi."
+        s = text.index("Ambrósio")
+        mark = {"where": "text", "start": s + 1, "end": s + 1 + len("Ambrósio Mediolanénsi"), "check": "00000000"}
+        mentioned = {"mr:0119-a": [{"name": "Ambrosius", "where": "text", "marks": {"la": [mark], "it": []}}]}
+        self.assertEqual(p.unrecorded({"mr:0119-a": text}, {}, ["Mediolanénsi"], mentioned), {})
+
     def test_report_section(self):
         r = p.build(BuildTest.ORDER, BuildTest.TX, BuildTest.TY, {}, not_a_place={})
         r["unrecorded"] = {"mr:0101-a": ["in Fictonia"]}

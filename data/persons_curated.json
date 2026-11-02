@@ -845,18 +845,6 @@
       "it": "Ruggero Filcock"
     }
   ],
-  "mr:0303-cunegundis-confugiae": [
-    {
-      "name": "Cunegundis",
-      "where": "text"
-    },
-    {
-      "name": "Henricus",
-      "where": "text",
-      "it": "Enrico",
-      "role": "mentioned"
-    }
-  ],
   "mr:0303-liberatus-weiss-et-socii": [
     {
       "name": "Liberatus Weiss",
@@ -1712,11 +1700,6 @@
     }
   ],
   "mr:0417-plurimi-martyres-persidis": [
-    {
-      "name": "Symeon",
-      "where": "text",
-      "role": "mentioned"
-    },
     {
       "name": "Usthazades",
       "where": "text",
@@ -4140,12 +4123,6 @@
     {
       "name": "Henricus",
       "where": "text"
-    },
-    {
-      "name": "Cunegundis",
-      "where": "text",
-      "it": "Cunegonda",
-      "role": "mentioned"
     }
   ],
   "mr:0715-eutropius-et-socii": [
@@ -7765,12 +7742,6 @@
     {
       "name": "Ewaldus Albus",
       "where": "text"
-    },
-    {
-      "name": "Willibrordus",
-      "where": "text",
-      "it": "Villibrordo",
-      "role": "mentioned"
     }
   ],
   "mr:1003-faustus-et-socii": [
@@ -9830,31 +9801,6 @@
       "name": "Maria Phon",
       "where": "text",
       "it": "Maria Phon"
-    }
-  ],
-  "mr:1226-zeno-maiumae": [
-    {
-      "name": "Zeno",
-      "where": "text"
-    },
-    {
-      "name": "Eusebius",
-      "where": "text",
-      "it": "Eusebio",
-      "role": "mentioned"
-    },
-    {
-      "name": "Nestabius",
-      "where": "text",
-      "it": "Nestabio",
-      "role": "mentioned"
-    },
-    {
-      "name": "Zeno",
-      "n": 2,
-      "where": "text",
-      "it": "Zenone",
-      "role": "mentioned"
     }
   ],
   "mr:1227-theodorus-graptus": [

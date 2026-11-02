@@ -261,17 +261,22 @@ def _in_a_repository(path, repo_root):
     return path.is_relative_to(repo_root.resolve()) or any((d / ".git").exists() for d in path.parents)
 
 
-def write_json_atomic(path, doc):
-    """Write `doc` as JSON through a temp file in the same directory, then os.replace: a failed
+def write_text_atomic(path, text):
+    """Write `text` through a temp file in the same directory, then os.replace: a failed
     write leaves the old file intact and no temp file behind."""
     path = Path(path)
     tmp = path.with_name(f".{path.name}.{os.getpid()}.tmp")
     try:
-        tmp.write_text(json.dumps(doc, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+        tmp.write_text(text, encoding="utf-8")
         os.replace(tmp, path)
     except BaseException:
         tmp.unlink(missing_ok=True)
         raise
+
+
+def write_json_atomic(path, doc):
+    """Write `doc` as JSON (indent 1) atomically (write_text_atomic)."""
+    write_text_atomic(path, json.dumps(doc, ensure_ascii=False, indent=1) + "\n")
 
 
 def main(argv):

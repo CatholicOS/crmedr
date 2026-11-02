@@ -86,6 +86,87 @@ def person_key(p):
     return name if n == 1 else f"{name}#{n}"
 
 
+def valid_where(where):
+    """A mention's `where`: "text", or {"footnote": n} with n an integer from 1."""
+    if where == "text":
+        return True
+    n = where.get("footnote") if isinstance(where, dict) and set(where) == {"footnote"} else None
+    return isinstance(n, int) and not isinstance(n, bool) and n >= 1
+
+
+def phrase_where(person, entry):
+    """A mentioned person's phrase entry (data/persons_mentioned.json `la`/`it`) as (phrase, where): a string
+    is printed in the person's `where`; an object {"phrase", "where"} names its own (a person printed in the
+    text and in a footnote)."""
+    if isinstance(entry, dict):
+        return entry.get("phrase"), entry.get("where")
+    return entry, person.get("where")
+
+
+def valid_phrase(entry):
+    """A phrase entry: a non-empty string, or {"phrase": non-empty string, "where": a valid where}."""
+    if isinstance(entry, str):
+        return bool(entry)
+    return (isinstance(entry, dict) and set(entry) == {"phrase", "where"} and isinstance(entry["phrase"], str)
+            and bool(entry["phrase"]) and valid_where(entry["where"]))
+
+
+def proposal_shape_errors(person):
+    """The malformed parts of a proposed mentioned person (its `where`, a phrase of `la` or `it` that is
+    listed), one message each, without the eulogy."""
+    name = person.get("name")
+    errors = [] if valid_where(person.get("where")) else [f"{name!r} has a malformed where {person.get('where')!r}"]
+    for lang in ("la", "it"):
+        phrases = person.get(lang)
+        if phrases is not None and not isinstance(phrases, list):
+            errors.append(f"{name!r} has a malformed {lang} list {phrases!r}")
+            continue
+        errors += [f"{name!r} has a malformed {lang} phrase {e!r}" for e in phrases or [] if not valid_phrase(e)]
+    return errors
+
+
+MENTIONED_KEYS = ("name", "n", "where", "marks")  # a person of data/persons_mentioned.json
+CHECK = re.compile(r"[0-9a-f]{8}")
+
+
+def valid_mark(mark):
+    """A mentioned person's mark: {where, start, end, check}, offsets in UTF-16 code units (start < end) and
+    the check of the printed words (8 lowercase hex digits), never the words."""
+    return (isinstance(mark, dict) and set(mark) == {"where", "start", "end", "check"} and valid_where(mark["where"])
+            and all(isinstance(mark[k], int) and not isinstance(mark[k], bool) for k in ("start", "end"))
+            and 0 <= mark["start"] < mark["end"] and isinstance(mark["check"], str)
+            and CHECK.fullmatch(mark["check"]) is not None)
+
+
+def mentioned_shape_errors(person):
+    """The malformed parts of a person of data/persons_mentioned.json ({name, n?, where, marks: {la, it}}),
+    one message each, without the eulogy: a key the file does not hold (its printed words are never
+    stored), its `where`, its marks (marks.la not empty; marks.it listed, [] if the Italian does not name
+    the person)."""
+    name = person.get("name")
+    errors = [f"{name!r} has a key {k!r} the file does not hold (marks hold offsets and a check, never the "
+              f"printed words)" for k in person if k not in MENTIONED_KEYS]
+    if not valid_where(person.get("where")):
+        errors.append(f"{name!r} has a malformed where {person.get('where')!r}")
+    marks = person.get("marks")
+    if not isinstance(marks, dict):
+        return errors + [f"{name!r} has malformed marks {marks!r}"]
+    errors += [f"{name!r} has marks of {k!r}, not of la or it" for k in marks if k not in ("la", "it")]
+    for lang in ("la", "it"):
+        if lang not in marks:
+            if lang == "it":
+                errors.append(f"{name!r} has no marks.it; list its Italian marks, or [] if the Italian does not "
+                              "name them")
+            continue
+        if not isinstance(marks[lang], list):
+            errors.append(f"{name!r} has a malformed {lang} mark list {marks[lang]!r}")
+            continue
+        errors += [f"{name!r} has a malformed {lang} mark {m!r}" for m in marks[lang] if not valid_mark(m)]
+    if not marks.get("la") and isinstance(marks.get("la", []), list):
+        errors.append(f"{name!r} has no Latin mark (marks.la)")
+    return errors
+
+
 DISCRIMINATORS = "data/subject_discriminators.json"
 
 
