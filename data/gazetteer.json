@@ -2710,9 +2710,11 @@
       "note": "The Roman province of Asia (Pothinus: the churches of Asia and Phrygia; Sagaris: the proconsul of Asia), the curator's correction (2026-10-22)."
     },
     "Assumptióne in Paraquária": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not the city of Asunción in Paraguay (Q2933, the earlier automatic link) but the reduction of Asunción del Ijuí, Rio Grande do Sul, where Juan del Castillo was killed in 1628; Wikidata has no item for it yet (curator, 2026-11-02)"
+      "wikidata": "Q141968077",
+      "label": "Asunción del Ijuí",
+      "country": "BR",
+      "status": "reviewed",
+      "note": "the reduction of Asunción del Ijuí (Roque Gonzales, Rio Grande do Sul), where Juan del Castillo was killed in 1628, not the city of Asunción in Paraguay (Q2933, the earlier automatic link); item created 2026-11-02 (curator)"
     },
     "Astæ Pompéiæ in Transpadána": {
       "wikidata": "Q6122",
@@ -23177,9 +23179,11 @@
       "status": "jev"
     },
     "in vico «reductióne» nuncupáto": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place: Unnamed Jesuit reduction in Paraguay, described generically"
+      "wikidata": "Q141968077",
+      "label": "Asunción del Ijuí",
+      "country": "BR",
+      "status": "reviewed",
+      "note": "the reduction the eulogy names, Asunción del Ijuí (curator, 2026-11-02)"
     },
     "inter Baváriam et Bohémiam": {
       "wikidata": "Q157290",
