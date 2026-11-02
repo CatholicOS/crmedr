@@ -223,9 +223,10 @@ def italian_phrase(text, stop_words=STOP_WORDS_IT):
     return kept or None
 
 
-# Openings that look like a place but are not.
+# Openings not taken as one place: not a place at all, or several places recorded in data/places_curated.json.
 NOT_A_PLACE = {
     "mr:0101-maria-dei-genetrix": "a time phrase (the octave of Christmas), not a place",
+    "mr:0101-iustinus-episcopus": "two regions, Campania and Abruzzo, each its own place (curator, 2026-11-02)",
 }
 
 

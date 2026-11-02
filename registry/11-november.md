@@ -233,7 +233,7 @@
 | 17 | 12 | `mr:1117-hugo-lincolniae` |  | GB | dies_natalis |  |  |
 | 17 | 13 | `mr:1117-salomea-haliciensis` | * | PL | dies_natalis |  |  |
 | 17 | 14 | `mr:1117-gertrudis-magna` |  | DE | dies_natalis |  |  |
-| 17 | 15 | `mr:1117-ioannes-del-castillo` |  | PY | dies_natalis |  |  |
+| 17 | 15 | `mr:1117-ioannes-del-castillo` |  | BR | dies_natalis |  | "Assumptio in Paraquaria" is not the city of Asunción in Paraguay, as the Italian edition reads it, but the reduction of Asunción del Ijuí in the Jesuit province of Paraguay, which Roque González founded on 15 August 1628 and left in Juan del Castillo's care; he was killed there on 17 November 1628. Its site, on the right bank of the Ijuí in Rio Grande do Sul, Brazil, has not been found (Real Academia de la Historia, Diccionario Biográfico español, "San Juan del Castillo"). |
 | 17 | 16 | `mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi` |  | JP | dies_natalis |  |  |
 | 17 | 17 | `mr:1117-lupus-sebastianus-hunot` | * | FR | dies_natalis |  | 2004 English: Translation error: "on the reefs of the bridge" where the Latin has "in æquóribus ponti ad litus" (in the waters of the sea off the shore). |
 | 17 | 18 | `mr:1117-iosaphat-kocylovskyj` | * | UA | dies_natalis |  | 2004 English: Translation error: "Kapayivka" where the Latin has "Čapaivca" (Chapaivka). |

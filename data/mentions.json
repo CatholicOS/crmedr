@@ -336,10 +336,23 @@
         {
           "kind": "place",
           "where": "text",
-          "start": 0,
+          "start": 3,
+          "end": 11,
+          "check": "41e23154",
+          "qid": "Q1438",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 15,
           "end": 22,
-          "check": "11d0abaf",
-          "qid": null,
+          "check": "c77547fc",
+          "qid": "Q1284",
           "roles": [
             {
               "role": "cult"
@@ -13430,7 +13443,7 @@
           "start": 105,
           "end": 114,
           "check": "e20d36b5",
-          "qid": null,
+          "qid": "Q371063",
           "roles": [
             {
               "role": "foundation"
@@ -33264,7 +33277,7 @@
           "start": 105,
           "end": 116,
           "check": "8237e8e9",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -61393,7 +61406,7 @@
           "start": 115,
           "end": 126,
           "check": "8237e8e9",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -74949,7 +74962,7 @@
           "start": 78,
           "end": 89,
           "check": "8237e8e9",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -83383,7 +83396,7 @@
           "start": 195,
           "end": 207,
           "check": "101006fb",
-          "qid": null,
+          "qid": "Q220301",
           "roles": [
             {
               "role": "mention"
@@ -93699,7 +93712,7 @@
           "start": 97,
           "end": 136,
           "check": "93673a7d",
-          "qid": null,
+          "qid": "Q206221",
           "roles": [
             {
               "role": "ministry"
@@ -113767,7 +113780,7 @@
           "start": 143,
           "end": 160,
           "check": "43bf1a3d",
-          "qid": null,
+          "qid": "Q1282",
           "roles": [
             {
               "role": "foundation"
@@ -114193,7 +114206,7 @@
           "start": 145,
           "end": 155,
           "check": "d2c42df8",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -144655,7 +144668,7 @@
           "start": 0,
           "end": 25,
           "check": "bb723f42",
-          "qid": "Q2933",
+          "qid": "Q141968077",
           "roles": [
             {
               "role": "death"
@@ -144677,7 +144690,7 @@
           "start": 101,
           "end": 131,
           "check": "caac0a15",
-          "qid": null,
+          "qid": "Q141968077",
           "roles": [
             {
               "role": "death"
@@ -160277,7 +160290,7 @@
           "start": 233,
           "end": 247,
           "check": "733c1a77",
-          "qid": null,
+          "qid": "Q108317077",
           "roles": [
             {
               "role": "death"
@@ -162400,10 +162413,23 @@
         {
           "kind": "place",
           "where": "text",
-          "start": 0,
+          "start": 3,
+          "end": 11,
+          "check": "fec2f9cb",
+          "qid": "Q1438",
+          "roles": [
+            {
+              "role": "cult"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 17,
           "end": 24,
-          "check": "e91c36a5",
-          "qid": null,
+          "check": "b9587e23",
+          "qid": "Q1284",
           "roles": [
             {
               "role": "cult"
@@ -175376,7 +175402,7 @@
           "start": 113,
           "end": 122,
           "check": "e20d36b5",
-          "qid": null,
+          "qid": "Q371063",
           "roles": [
             {
               "role": "foundation"
@@ -194962,7 +194988,7 @@
           "start": 119,
           "end": 131,
           "check": "44ba0c2d",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -222993,7 +223019,7 @@
           "start": 166,
           "end": 178,
           "check": "44ba0c2d",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -236534,7 +236560,7 @@
           "start": 111,
           "end": 123,
           "check": "44ba0c2d",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -244990,7 +245016,7 @@
           "start": 210,
           "end": 221,
           "check": "55eb7874",
-          "qid": null,
+          "qid": "Q220301",
           "roles": [
             {
               "role": "mention"
@@ -255194,7 +255220,7 @@
           "start": 99,
           "end": 137,
           "check": "572b8879",
-          "qid": null,
+          "qid": "Q206221",
           "roles": [
             {
               "role": "ministry"
@@ -275193,7 +275219,7 @@
           "start": 169,
           "end": 186,
           "check": "b543fa22",
-          "qid": null,
+          "qid": "Q1282",
           "roles": [
             {
               "role": "foundation"
@@ -275619,7 +275645,7 @@
           "start": 190,
           "end": 202,
           "check": "44ba0c2d",
-          "qid": null,
+          "qid": "Q48175",
           "roles": [
             {
               "role": "journey"
@@ -305978,7 +306004,7 @@
           "start": 0,
           "end": 23,
           "check": "33471330",
-          "qid": "Q2933",
+          "qid": "Q141968077",
           "roles": [
             {
               "role": "death"
@@ -306000,7 +306026,7 @@
           "start": 101,
           "end": 125,
           "check": "973354bf",
-          "qid": null,
+          "qid": "Q141968077",
           "roles": [
             {
               "role": "death"
@@ -321425,7 +321451,7 @@
           "start": 200,
           "end": 215,
           "check": "90ba31bd",
-          "qid": null,
+          "qid": "Q108317077",
           "roles": [
             {
               "role": "death"
