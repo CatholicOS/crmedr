@@ -1,0 +1,83 @@
+{
+  "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, la, it?}. la and it are the person's printed phrases in the Latin and Italian 2004 texts, one per mark in text order (a phrase repeated is its next occurrence); they are not copied to persons.json.",
+  "mr:0303-cunegundis-confugiae": [
+    {
+      "name": "Henricus",
+      "where": "text",
+      "la": [
+        "Henríco",
+        "Henríci"
+      ],
+      "it": [
+        "Enrico",
+        "Enrico"
+      ]
+    }
+  ],
+  "mr:0417-plurimi-martyres-persidis": [
+    {
+      "name": "Symeon",
+      "where": "text",
+      "la": [
+        "Symeónis"
+      ]
+    }
+  ],
+  "mr:0713-henricus-imperator": [
+    {
+      "name": "Cunegundis",
+      "where": "text",
+      "la": [
+        "Cunegúnde"
+      ],
+      "it": [
+        "Cunegonda"
+      ]
+    }
+  ],
+  "mr:1003-duo-ewaldi": [
+    {
+      "name": "Willibrordus",
+      "where": "text",
+      "la": [
+        "Willibrórdi"
+      ],
+      "it": [
+        "Villibrordo"
+      ]
+    }
+  ],
+  "mr:1226-zeno-maiumae": [
+    {
+      "name": "Eusebius",
+      "where": "text",
+      "la": [
+        "Eusébio"
+      ],
+      "it": [
+        "Eusebio"
+      ]
+    },
+    {
+      "name": "Nestabius",
+      "where": "text",
+      "la": [
+        "Nestábio"
+      ],
+      "it": [
+        "Nestabio"
+      ]
+    },
+    {
+      "name": "Zeno",
+      "n": 2,
+      "where": "text",
+      "la": [
+        "Zenóni"
+      ],
+      "it": [
+        "Zenone"
+      ]
+    }
+  ]
+}
