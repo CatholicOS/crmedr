@@ -40,7 +40,7 @@
 | 3 | 10 | `mr:0703-philippus-phan-van-minh` |  | VN | dies_natalis |  |  |
 | 3 | 11 | `mr:0703-maria-anna-mogas-fontcuberta` | * | ES | dies_natalis |  |  |
 | 3 | 12 | `mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi` |  | CN | dies_natalis |  |  |
-| 4 | (1) | `mr:0704-elisabeth-stremontii` |  | PT | dies_natalis | same as `mr:0708-elisabeth` |  |
+| 4 | (1) | `mr:0704-elisabeth-stremontii` |  | PT | dies_natalis | same as `mr:0708-elisabeth-stremontii` |  |
 | 4 | 2 | `mr:0704-iucundianus-africae` |  | TN | dies_natalis |  |  |
 | 4 | 3 | `mr:0704-laurianus-vistini` |  | FR | dies_natalis |  |  |
 | 4 | 4 | `mr:0704-florentius-cadurci` | * | FR | dies_natalis |  |  |
@@ -100,9 +100,9 @@
 | 7 | 15 | `mr:0707-petrus-to-rot` | * | PG | dies_natalis |  | Peter To Rot, blessed in the 2004 editions, was canonized on 19 October 2025. |
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI | dies_natalis |  |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
-| 8 | 2 | `mr:0708-glyceria-heracleae` |  | TR | dies_natalis | same as `mr:0513-glyceria` |  |
+| 8 | 2 | `mr:0708-glyceria-heracleae` |  | TR | dies_natalis | same as `mr:0513-glyceria-heracleae` |  |
 | 8 | 3 | `mr:0708-procopius-caesareae` |  | IL | dies_natalis |  |  |
-| 8 | 4 | `mr:0708-pancratius-tauromenii` |  | IT | dies_natalis | same as `mr:0403-pancratius` |  |
+| 8 | 4 | `mr:0708-pancratius-tauromenii` |  | IT | dies_natalis | same as `mr:0403-pancratius-tauromenii` |  |
 | 8 | 5 | `mr:0708-auspicius-tulli` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Tulle" where the Latin has "Tulli" (Toul, in Gallia Belgica). |
 | 8 | 6 | `mr:0708-disibodus-rhenaniae` | * | DE | dies_natalis |  |  |
 | 8 | 7 | `mr:0708-landrada-belisiae` | * | BE | dies_natalis |  |  |
@@ -125,7 +125,7 @@
 | 9 | 11 | `mr:0709-maria-a-iesu-crucifixo` | * | IT | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 9 ends at entry 10*. Bl. Marija Petković was beatified on 6 June 2003. |
 | 10 | 1 | `mr:0710-felix-et-philippus` |  | IT | dies_natalis |  |  |
 | 10 | 2 | `mr:0710-rufina-et-secunda` |  | IT | dies_natalis |  |  |
-| 10 | 3 | `mr:0710-anatolia-et-victoria` |  | IT | dies_natalis | same as `mr:1223-victoria` |  |
+| 10 | 3 | `mr:0710-anatolia-et-victoria` |  | IT | dies_natalis | same as `mr:1223-victoria-romae` |  |
 | 10 | 4 | `mr:0710-ianuarius-et-marinus` |  | TN | dies_natalis |  |  |
 | 10 | 5 | `mr:0710-apollonius-sardensis` |  | TR | dies_natalis |  |  |
 | 10 | 6 | `mr:0710-leontius-et-socii` |  | TR | dies_natalis |  |  |
@@ -133,7 +133,7 @@
 | 10 | 8 | `mr:0710-pascharius-nannetum` | * | FR | dies_natalis |  |  |
 | 10 | 9 | `mr:0710-amalberga-tamisiae` |  | BE | dies_natalis |  |  |
 | 10 | 10 | `mr:0710-petrus-vincioli` | * | IT | dies_natalis |  |  |
-| 10 | 11 | `mr:0710-canutus-ottoniae` |  | DK | dies_natalis | same as `mr:0119-canutus` |  |
+| 10 | 11 | `mr:0710-canutus-ottoniae` |  | DK | dies_natalis | same as `mr:0119-canutus-ottoniae` |  |
 | 10 | 12 | `mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon` | * | FR | dies_natalis |  |  |
 | 10 | 13 | `mr:0710-antonius-nguyen-huu-quynh-et-petrus-nguyen-khac-tu` |  | VN | dies_natalis |  | 2004 Italian: Translation error: "Nguyễn (Nam) Quỳnh" omits "Hữu", which the Latin gives as "Nguyễn Hữu (Nam) Quỳnh". |
 | 10 | 14 | `mr:0710-emmanuel-ruiz-et-socii` | * | SY | dies_natalis |  | Manuel Ruiz and his ten companions, the martyrs of Damascus, blessed in the 2004 editions, were canonized on 20 October 2024. 2004 English: Translation error: "three lay brothers" where the Latin has "trium germanórum fidélium" (three blood brothers, lay faithful). |
@@ -166,7 +166,7 @@
 | 12 | 12 | `mr:0712-clemens-ignatius-delgado-cebrian` |  | VN | dies_natalis |  |  |
 | 12 | 13 | `mr:0712-agnes-le-thi-thanh` |  | VN | dies_natalis |  |  |
 | 12 | 14 | `mr:0712-petrus-khanh` |  | VN | dies_natalis |  |  |
-| 13 | (1) | `mr:0713-henricus-imperator` |  | DE | dies_natalis | same as `mr:0714-henricus`; same as `mr:0715-henricus` | 2004 Latin: Source error: "in Francónia" (in Franconia), but Grona near Göttingen lies in Saxony. |
+| 13 | (1) | `mr:0713-henricus-imperator` |  | DE | dies_natalis | same as `mr:0714-henricus-imperator`; same as `mr:0715-henricus-imperator` | 2004 Latin: Source error: "in Francónia" (in Franconia), but Grona near Göttingen lies in Saxony. |
 | 13 | 2 | `mr:0713-esdra-scriba` |  | IQ | commemoratio |  |  |
 | 13 | 3 | `mr:0713-sila-discipulus` |  |  | commemoratio |  |  |
 | 13 | 4 | `mr:0713-serapion-alexandriae` |  | EG | dies_natalis |  |  |
@@ -197,7 +197,7 @@
 | 14 | 10 | `mr:0714-richardus-langhorne` | * | GB | dies_natalis |  |  |
 | 14 | 11 | `mr:0714-ghebre-michael` | * | ET | dies_natalis |  |  |
 | 14 | 12 | `mr:0714-ioannes-wang-guixin` |  | CN | dies_natalis |  |  |
-| 15 | (1) | `mr:0715-bonaventura-albanensis` |  | IT | depositio | same as `mr:0714-bonaventura` |  |
+| 15 | (1) | `mr:0715-bonaventura-albanensis` |  | IT | depositio | same as `mr:0714-bonaventura-albanensis` |  |
 | 15 | 2 | `mr:0715-eutropius-et-socii` |  | IT | dies_natalis |  |  |
 | 15 | 3 | `mr:0715-felix-thibiucensis` |  | TN | depositio |  |  |
 | 15 | 4 | `mr:0715-catulinus-et-socii` |  | TN | commemoratio |  |  |
@@ -283,7 +283,7 @@
 | 20 | 2 | `mr:0720-elias-thesbita-propheta` |  | PS | commemoratio |  |  |
 | 20 | 3 | `mr:0720-ioseph-iustus` |  | PS | commemoratio |  |  |
 | 20 | 4 | `mr:0720-marina-antiochiae` |  | TR | dies_natalis |  |  |
-| 20 | 5 | `mr:0720-frumentius-aethiopiae` |  | ET | dies_natalis | same as `mr:1027-frumentius` |  |
+| 20 | 5 | `mr:0720-frumentius-aethiopiae` |  | ET | dies_natalis | same as `mr:1027-frumentius-aethiopiae` |  |
 | 20 | 6 | `mr:0720-aurelius-carthaginensis` |  | TN | dies_natalis |  | 2004 English: Translation error: "moved the episcopal seat from the place of the idol" where the Latin "simulácri deæ Cæléstis loco collocávit" means he set it in the place of the idol. |
 | 20 | 7 | `mr:0720-vulmarus-bononiensis` |  | FR | dies_natalis |  | 2004 English: Translation error: "Bologna" where the Latin "in pago Bononiénsi Gálliæ" is the district of Boulogne. |
 | 20 | 8 | `mr:0720-paulus-cordubae` |  | ES | dies_natalis |  |  |
@@ -319,7 +319,7 @@
 | 22 | 13 | `mr:0722-iacobus-lombardie` | * | FR | dies_natalis |  |  |
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
 | 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
-| 23 | (1) | `mr:0723-birgitta-romae` |  | SE | dies_natalis | same as `mr:1008-birgitta` | 2004 English: Translation error: "the Mystical Church" where the Latin "mýstice reformándis" speaks of reforming the Church mystically. |
+| 23 | (1) | `mr:0723-birgitta-romae` |  | SE | dies_natalis | same as `mr:1008-birgitta-romae` | 2004 English: Translation error: "the Mystical Church" where the Latin "mýstice reformándis" speaks of reforming the Church mystically. |
 | 23 | 2 | `mr:0723-ezechiel-propheta` |  | PS | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris-ravennae` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0723-severus-bizyae` |  | TR | dies_natalis |  | 2004 English: Translation error: "Bizerte in Tunisia" where the Latin has "Bízyæ in Thrácia" (Vize in Thrace). Translation error: "having won the palm of martyrdom" where the Latin has "mártyrum palmas æmulátus" (emulating the martyrs' palms). |
@@ -358,7 +358,7 @@
 | 25 | 2 | `mr:0725-christophorus-lyciae` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0725-cucuphas-barcinonis` |  | ES | dies_natalis |  |  |
 | 25 | 4 | `mr:0725-valentina-et-socii` |  | IL | dies_natalis |  |  |
-| 25 | 5 | `mr:0725-olympias-nicomediae` |  | TR | dies_natalis | same as `mr:1217-olympias` |  |
+| 25 | 5 | `mr:0725-olympias-nicomediae` |  | TR | dies_natalis | same as `mr:1217-olympias-nicomediae` |  |
 | 25 | 6 | `mr:0725-magnericus-trevirorum` |  | DE | dies_natalis |  |  |
 | 25 | 7 | `mr:0725-beatus-et-bantus` | * | DE | dies_natalis |  |  |
 | 25 | 8 | `mr:0725-glodesindis-metarum` | * | FR | dies_natalis |  |  |
@@ -374,7 +374,7 @@
 | 25 | 18 | `mr:0725-dionysius-pamplona` | * | ES | dies_natalis |  |  |
 | 25 | 19 | `mr:0725-deogratias-palacios-et-socii` | * | ES | dies_natalis |  |  |
 | 25 | 20 | `mr:0725-maria-teresia-kowalska` | * | PL | dies_natalis |  |  |
-| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis | same as `mr:0320-ioachim`; same as `mr:0726-anna`; same as `mr:0816-ioachim` |  |
+| 26 | (1) | `mr:0726-ioachim-et-anna` |  | PS | dies_natalis | same as `mr:0320-ioachim-pater-mariae`; same as `mr:0726-anna-mater-mariae`; same as `mr:0816-ioachim-pater-mariae` |  |
 | 26 | 2 | `mr:0726-erastus-corinthi` |  | GR | commemoratio |  |  |
 | 26 | 3 | `mr:0726-simeon-mantuae` |  | IT | dies_natalis |  |  |
 | 26 | 4 | `mr:0726-austindus-augustae-auscorum` | * | FR | dies_natalis |  |  |
@@ -396,7 +396,7 @@
 | 27 | 2 | `mr:0727-pantaleon-nicomediae` |  | TR | dies_natalis |  |  |
 | 27 | 3 | `mr:0727-desideratus-bisuntinus` | * | FR | dies_natalis |  | 2004 English: Translation error: "Salins-les-Bains" where the Latin "Ledóne Salinário" is Lons-le-Saunier. |
 | 27 | 4 | `mr:0727-caelestinus-i` |  | IT | dies_natalis | same as `mr:0406-caelestinus-i` |  |
-| 27 | 5 | `mr:0727-simeon-stylitae` |  | TR | dies_natalis | same as `mr:0105-simeon` |  |
+| 27 | 5 | `mr:0727-simeon-stylitae` |  | TR | dies_natalis | same as `mr:0105-simeon-stylitae` |  |
 | 27 | 6 | `mr:0727-ursus-loccarum` | * | FR | dies_natalis |  |  |
 | 27 | 7 | `mr:0727-ecclesius-ravennae` | * | IT | dies_natalis |  | 2004 English: Translation error: "stood firm" where the Latin "solus in superándis" says he alone survived them. |
 | 27 | 8 | `mr:0727-galactorius-lascurrensis` | * | FR | dies_natalis |  |  |
@@ -429,7 +429,7 @@
 | 28 | 13 | `mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps` | * | ES | dies_natalis |  |  |
 | 28 | 14 | `mr:0728-anna-muttathupadathu` | * | IN | dies_natalis |  | Alphonsa of the Immaculate Conception, blessed in the 2004 editions, was canonized on 12 October 2008. |
 | 29 | (1) | `mr:0729-martha-bethaniae` |  | PS | dies_natalis |  |  |
-| 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio | same as `mr:1217-lazarus` |  |
+| 29 | 2 | `mr:0729-lazarus-et-maria` |  | PS | commemoratio | same as `mr:1217-lazarus-massiliae` |  |
 | 29 | 3 | `mr:0729-callinicus-gangrae` |  | TR | dies_natalis |  |  |
 | 29 | 4 | `mr:0729-felix-romae` |  | IT | dies_natalis |  |  |
 | 29 | 5 | `mr:0729-simplicius-et-socii` |  | IT | dies_natalis |  |  |
@@ -463,7 +463,7 @@
 | 31 | 2 | `mr:0731-calimerus-mediolani` |  | IT | dies_natalis |  |  |
 | 31 | 3 | `mr:0731-democritus-et-socii` |  | TR | dies_natalis |  |  |
 | 31 | 4 | `mr:0731-fabius-caesareae` |  | DZ | dies_natalis |  | 2004 English: Translation error: "imperial standards" where the Latin has "vexílla præsidália" (the governor's standards). |
-| 31 | 5 | `mr:0731-tertullinus-romae` |  | IT | dies_natalis | same as `mr:0804-tertullinus` |  |
+| 31 | 5 | `mr:0731-tertullinus-romae` |  | IT | dies_natalis | same as `mr:0804-tertullinus-romae` |  |
 | 31 | 6 | `mr:0731-germanus-autissiodorensis` |  | IT | dies_natalis |  |  |
 | 31 | 7 | `mr:0731-petrus-chrysologus` |  | IT | dies_natalis | same as `mr:1202-petrus-chrysologus` |  |
 | 31 | 8 | `mr:0731-helena-schedviae` |  | SE | dies_natalis |  |  |

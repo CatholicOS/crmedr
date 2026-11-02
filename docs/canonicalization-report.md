@@ -141,6 +141,19 @@ mr:0417-simeon-bar-sabas-et-socii (Sancti Simeon bar Sabas et socii). Its person
 (Q2166439). The next eulogy, mr:0417-plurimi-martyres-persidis, keeps its ID: it commemorates the many
 martyrs *post óbitum sancti Symeónis*, so Symeon there is a person mentioned, not its subject.
 
+**Deprecated twins** (curator, 2026-11-01, from the bare-names drafts of #74): a deprecated ID that is a bare
+name takes the discriminator of its current `same_eulogy` twin, 207 of them (mr:0714-henricus →
+mr:0714-henricus-imperator, mr:0105-simeon → mr:0105-simeon-stylitae). Where the twin is a group but the old
+eulogy names one person, the old eulogy keeps the no-bare-name rules on its own print, 17 of them
+(mr:0124-timotheus → mr:0124-timotheus-ephesi, mr:0421-simeon → mr:0421-simeon-seleuciae: the 1749 prints
+*Episcopi Seleuciae*, not Bar Sabas; mr:0317-ioseph → mr:0317-ioseph-ab-arimathaea, as 1749 prints it). A group
+in the old eulogy as well would take the twin's slug: there is none, since mr:0118-liberata, whose subject
+read *Sanctae Liberata et Faustina*, names Liberata alone in 1749 and in the 1914 English (*Novocomi sanctae
+Liberatae Virginis*): mr:0118-liberata → mr:0118-liberata-comi, Sancta Liberata. Joachim's day of death,
+mr:0320-ioachim (*festum agitur* on 16 August), takes his feast's form, mr:0320-ioachim-pater-mariae (#262).
+The deprecated IDs whose slug differs from the twin's because the old edition names the eulogy otherwise
+(*Circumcisio Domini*, *Vincentius a Paulo*) keep it.
+
 **Day of death and feast** (curator, 2026-11-01, #262): a saint whose day of death and feast are two
 eulogies takes one slug on both days, the form he is known by, though each eulogy prints its place in its own
 form. mr:0526-augustinus-cantuariae → mr:0526-augustinus-cantuariensis and mr:0801-eusebius-vercellarum →

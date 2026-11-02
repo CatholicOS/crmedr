@@ -21,12 +21,12 @@
 | 1 | 15 | `mr:0901-petrus-rivera-et-socii` | * | ES | dies_natalis |  |  |
 | 2 | 1 | `mr:0902-zeno-nicomediae` |  | TR | dies_natalis |  |  |
 | 2 | 2 | `mr:0902-theodota-niceae` |  | TR | dies_natalis |  | 2004 English: Translation error: "Nicomedia" where the Latin has "Nicǽæ" (Nicaea). |
-| 2 | 3 | `mr:0902-habib-edessae` |  | TR | dies_natalis | same as `mr:1115-habib` |  |
+| 2 | 3 | `mr:0902-habib-edessae` |  | TR | dies_natalis | same as `mr:1115-habib-edessae` |  |
 | 2 | 4 | `mr:0902-antoninus-apameae` |  | SY | dies_natalis |  | 2004 English: Translation error: "the twentieth year of the reign" where the Latin has "vicésimo ætátis anno" (in the twentieth year of his age). |
 | 2 | 5 | `mr:0902-prosperus-tarraconis` | * | ES | dies_natalis |  |  |
 | 2 | 6 | `mr:0902-iustus-lugduni` |  | FR | depositio |  |  |
 | 2 | 7 | `mr:0902-nonnosus-soractis` |  | IT | dies_natalis |  |  |
-| 2 | 8 | `mr:0902-syagrius-augustoduni` |  | FR | dies_natalis | same as `mr:0827-syagrius` |  |
+| 2 | 8 | `mr:0902-syagrius-augustoduni` |  | FR | dies_natalis | same as `mr:0827-syagrius-augustoduni` |  |
 | 2 | 9 | `mr:0902-agricola-lirinensis` | * | FR | dies_natalis |  |  |
 | 2 | 10 | `mr:0902-elpidius-piceni` |  | IT | dies_natalis |  |  |
 | 2 | 11 | `mr:0902-albertus-et-vitus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Ponte" where the Latin has "Pontídæ" (Pontida). Translation error: "forsook the military service of Christ" where the Latin has "milítiam Christi armis honoribúsque sǽculi præpósuit" (preferred the service of Christ to the arms and honours of the world). |
@@ -39,7 +39,7 @@
 | 3 | 3 | `mr:0903-basilissa-nicomediae` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0903-sandalius-cordubae` |  | ES | dies_natalis |  |  |
 | 3 | 5 | `mr:0903-mansuetus-tulli` |  | FR | dies_natalis |  |  |
-| 3 | 6 | `mr:0903-marinus-montis-titani` |  | SM | dies_natalis | same as `mr:0904-marinus` |  |
+| 3 | 6 | `mr:0903-marinus-montis-titani` |  | SM | dies_natalis | same as `mr:0904-marinus-montis-titani` |  |
 | 3 | 7 | `mr:0903-macanisius-hiberniae` | * | IE | dies_natalis |  |  |
 | 3 | 8 | `mr:0903-auxanus-mediolani` |  | IT | dies_natalis |  |  |
 | 3 | 9 | `mr:0903-vitalianus-caudii` | * | IT | dies_natalis |  |  |
@@ -154,7 +154,7 @@
 | 11 | 2 | `mr:0911-felix-et-regula` | * | CH | dies_natalis |  |  |
 | 11 | 3 | `mr:0911-paphnutius-aegypti` |  | EG | commemoratio |  | 2004 Italian: Translation error: "il tendine del piede sinistro" (the tendon of the left foot) where the Latin has "sinístro póplite" (the left hamstring). |
 | 11 | 4 | `mr:0911-patiens-lugduni` |  | FR | dies_natalis |  |  |
-| 11 | 5 | `mr:0911-sacerdos-lugdunensis` |  | FR | dies_natalis | same as `mr:0912-sacerdos` |  |
+| 11 | 5 | `mr:0911-sacerdos-lugdunensis` |  | FR | dies_natalis | same as `mr:0912-sacerdos-lugdunensis` |  |
 | 11 | 6 | `mr:0911-daniel-bancorensis` | * | GB | dies_natalis |  |  |
 | 11 | 7 | `mr:0911-adelphius-romaricensis` | * | FR | dies_natalis |  |  |
 | 11 | 8 | `mr:0911-leudinus-tulli` | * | FR | dies_natalis |  |  |
@@ -206,7 +206,7 @@
 | 15 | 8 | `mr:0915-aichadrus-gemmeticensis` |  | FR | dies_natalis |  |  |
 | 15 | 9 | `mr:0915-emila-et-ieremias` |  | ES | dies_natalis |  |  |
 | 15 | 10 | `mr:0915-rolandus-de-medicis` | * | IT | dies_natalis |  |  |
-| 15 | 11 | `mr:0915-catharina-fieschi` |  | IT | dies_natalis | same as `mr:0322-catharina` |  |
+| 15 | 11 | `mr:0915-catharina-fieschi` |  | IT | dies_natalis | same as `mr:0322-catharina-fieschi` |  |
 | 15 | 12 | `mr:0915-camillus-costanzo` | * | JP | dies_natalis |  |  |
 | 15 | 13 | `mr:0915-ioannes-baptista-et-hyacinthus-ab-angelis` | * | MX | dies_natalis |  | 2004 English: Translation error: "Xagada" where the Latin has "Xagacía". |
 | 15 | 14 | `mr:0915-antonius-maria-schwartz` | * | AT | dies_natalis |  |  |
@@ -247,7 +247,7 @@
 | 17 | 14 | `mr:0917-timotheus-valero-perez` | * | ES | dies_natalis |  |  |
 | 17 | 15 | `mr:0917-sigismundus-sajna` | * | PL | dies_natalis |  |  |
 | 18 | 1 | `mr:0918-oceanus-nicomediae` |  | TR | dies_natalis |  |  |
-| 18 | 2 | `mr:0918-ariadna-prymnessi` |  | TR | dies_natalis | same as `mr:0917-ariadna` |  |
+| 18 | 2 | `mr:0918-ariadna-prymnessi` |  | TR | dies_natalis | same as `mr:0917-ariadna-prymnessi` |  |
 | 18 | 3 | `mr:0918-ferreolus-viennensis` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:0918-eustorgius-mediolani` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0918-senarius-abrincarum` | * | FR | dies_natalis |  |  |
@@ -266,7 +266,7 @@
 | 19 | 3 | `mr:0919-peleus-et-nilus` |  | PS | dies_natalis |  |  |
 | 19 | 4 | `mr:0919-eustochius-turonum` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region of Lyon" where the Latin has "in Gállia Lugdunénsi" (the province of Lugdunensian Gaul). |
 | 19 | 5 | `mr:0919-sequanus-sistariensis` |  | FR | dies_natalis |  | 2004 Italian: Translation error: "Sisteron" (a town in Provence) for the monastery the Latin places "apud Língones" (near Langres); this is Segestre, now Saint-Seine-l'Abbaye. |
-| 19 | 6 | `mr:0919-marianus-bituricensis` |  | FR | dies_natalis | same as `mr:0819-marianus` |  |
+| 19 | 6 | `mr:0919-marianus-bituricensis` |  | FR | dies_natalis | same as `mr:0819-marianus-bituricensis` |  |
 | 19 | 7 | `mr:0919-goericus-metarum` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0919-theodorus-cantuariae` |  | GB | dies_natalis |  |  |
 | 19 | 9 | `mr:0919-pomposa-cordubae` |  | ES | dies_natalis |  | The site of the monastery of Peñamelaria near Córdoba, which Pomposa left for her martyrdom, is uncertain. |
@@ -323,7 +323,7 @@
 | 22 | 16 | `mr:0922-vincentius-sicluna-hernandez` | * | ES | dies_natalis |  |  |
 | 22 | 17 | `mr:0922-maria-a-purificatione-vidal-pastor` | * | ES | dies_natalis |  |  |
 | 23 | (1) | `mr:0923-pius-de-pietrelcina` |  | IT | dies_natalis |  | 2004 English: Translation error: the rank "Memorial" is missing where the Latin begins "Memória sancti Pii". |
-| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-elisabeth`; same as `mr:1105-zacharias` |  |
+| 23 | 2 | `mr:0923-zacharias-et-elisabeth` |  | PS | commemoratio | same as `mr:1105-elisabeth-mater-baptistae`; same as `mr:1105-zacharias-pater-baptistae` |  |
 | 23 | 3 | `mr:0923-linus-papa` |  | IT | commemoratio |  |  |
 | 23 | 4 | `mr:0923-sossius-miseni` |  | IT | dies_natalis |  |  |
 | 23 | 5 | `mr:0923-constantius-anconae` |  | IT | commemoratio |  |  |
@@ -341,7 +341,7 @@
 | 24 | 1 | `mr:0924-anatolius-mediolani` |  | IT | dies_natalis |  |  |
 | 24 | 2 | `mr:0924-andochius-et-socii` |  | FR | dies_natalis |  |  |
 | 24 | 3 | `mr:0924-rusticus-arvernae` |  | FR | dies_natalis |  |  |
-| 24 | 4 | `mr:0924-lupus-lugduni` |  | FR | dies_natalis | same as `mr:0925-lupus` |  |
+| 24 | 4 | `mr:0924-lupus-lugduni` |  | FR | dies_natalis | same as `mr:0925-lupus-lugduni` |  |
 | 24 | 5 | `mr:0924-isarnus-massiliae` | * | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:0924-gerardus-sagredo` |  | HU | dies_natalis |  |  |
 | 24 | 7 | `mr:0924-dalmatius-moner` | * | ES | dies_natalis |  |  |
@@ -398,7 +398,7 @@
 | 28 | (2) | `mr:0928-laurentius-ruiz-et-socii` |  | PH | dies_natalis |  |  |
 | 28 | 3 | `mr:0928-alphaeus-et-socii` |  | TR | dies_natalis | same as `mr:0928-marcus-et-socii` |  |
 | 28 | 4 | `mr:0928-chariton-veteris-laurae` |  | PS | dies_natalis |  |  |
-| 28 | 5 | `mr:0928-zama-bononiae` |  | IT | dies_natalis | same as `mr:0124-zama` |  |
+| 28 | 5 | `mr:0928-zama-bononiae` |  | IT | dies_natalis | same as `mr:0124-zama-bononiae` |  |
 | 28 | 6 | `mr:0928-exsuperius-tolosae` |  | FR | dies_natalis |  |  |
 | 28 | 7 | `mr:0928-eustochius-bethlehem` |  | PS | commemoratio |  |  |
 | 28 | 8 | `mr:0928-salonius-genevae` |  | CH | dies_natalis |  |  |

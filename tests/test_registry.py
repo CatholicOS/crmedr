@@ -375,7 +375,7 @@ class DeprecatedSameEulogy45Test(unittest.TestCase):
 
     # Kept deprecated: a separate eulogy, and same-day homonyms (see the report).
     # #51 re-minted two garbled slugs: mr:0513-maria, mr:0917-franciscus.
-    KEPT = {"mr:0827-rufus-et-carpophorus", "mr:0124-timotheus",
+    KEPT = {"mr:0827-rufus-et-carpophorus", "mr:0124-timotheus-ephesi",
             "mr:0513-dedicatio-sanctae-mariae-ad-martyres", "mr:0629-maria",
             "mr:0917-impressio-stigmatum-francisci"}
 

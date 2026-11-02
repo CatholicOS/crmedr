@@ -8,7 +8,7 @@
 | 1 | 2 | `mr:0401-agapis-et-chionia` |  | GR | dies_natalis | same as `mr:0403-agapis-et-chionia` |  |
 | 1 | 3 | `mr:0401-maria-aegyptiaca` |  | PS | dies_natalis | same as `mr:0402-maria-aegyptiaca` |  |
 | 1 | 4 | `mr:0401-valericus-lauconae` |  | FR | dies_natalis |  |  |
-| 1 | 5 | `mr:0401-celsus-armachanus` |  | IE | dies_natalis | same as `mr:0406-celsus` |  |
+| 1 | 5 | `mr:0401-celsus-armachanus` |  | IE | dies_natalis | same as `mr:0406-celsus-armachanus` |  |
 | 1 | 6 | `mr:0401-hugo-gratianopoli` |  | FR | dies_natalis |  |  |
 | 1 | 7 | `mr:0401-hugo-bonaevallensis` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0401-gilbertus-cathani` | * | GB | dies_natalis |  |  |
@@ -48,7 +48,7 @@
 | 4 | 4 | `mr:0404-platon-constantinopoli` |  | TR | dies_natalis |  |  |
 | 4 | 5 | `mr:0404-petrus-pictavii` | * | FR | dies_natalis |  |  |
 | 4 | 6 | `mr:0404-gulielmus-cuffitelli` | * | IT | dies_natalis |  | 2004 English: Translation error: "Scillium" where the Latin has "Sicli" (Scicli). |
-| 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis | same as `mr:0403-benedictus` |  |
+| 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis | same as `mr:0403-benedictus-massarari` |  |
 | 4 | 8 | `mr:0404-iosephus-benedictus-dusmet` | * | IT | dies_natalis |  |  |
 | 4 | 9 | `mr:0404-franciscus-marto` | * | PT | dies_natalis |  | Francisco Marto, blessed in the 2004 editions, was canonized on 13 May 2017. |
 | 4 | 10 | `mr:0404-caietanus-catanoso` | * | IT | dies_natalis |  | Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005. |
@@ -62,7 +62,7 @@
 | 5 | 8 | `mr:0405-iuliana-fossarum` | * | BE | dies_natalis |  |  |
 | 5 | 9 | `mr:0405-catharina-tomas` |  | ES | dies_natalis |  |  |
 | 5 | 10 | `mr:0405-anna-hoss` |  | DE | dies_natalis |  |  |
-| 6 | 1 | `mr:0406-irenaeus-sirmii` |  | RS | dies_natalis | same as `mr:0325-irenaeus` | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmii" (Sirmium) is the present Sremska Mitrovica, in Serbia. Translation error: "fu dapprima frustato" (was first scourged) where the Latin has "primum torméntis vexátus est" (was first tormented with tortures). |
+| 6 | 1 | `mr:0406-irenaeus-sirmii` |  | RS | dies_natalis | same as `mr:0325-irenaeus-sirmii` | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmii" (Sirmium) is the present Sremska Mitrovica, in Serbia. Translation error: "fu dapprima frustato" (was first scourged) where the Latin has "primum torméntis vexátus est" (was first tormented with tortures). |
 | 6 | 2 | `mr:0406-eutychius-constantinopoli` |  | TR | dies_natalis |  |  |
 | 6 | 3 | `mr:0406-galla-romae` |  | IT | dies_natalis |  |  |
 | 6 | 4 | `mr:0406-winebaldus-trecarum` | * | FR | dies_natalis |  |  |
@@ -71,7 +71,7 @@
 | 6 | 7 | `mr:0406-notkerus-balbulus` | * | CH | dies_natalis |  |  |
 | 6 | 8 | `mr:0406-philaretus-palmae` | * | IT | dies_natalis |  |  |
 | 6 | 9 | `mr:0406-gulielmus-parisiensis` |  | DK | dies_natalis |  |  |
-| 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis | same as `mr:0429-petrus` |  |
+| 6 | 10 | `mr:0406-petrus-veronensis` |  | IT | dies_natalis | same as `mr:0429-petrus-veronensis` |  |
 | 6 | 11 | `mr:0406-catharina-de-pallantia` | * | IT | dies_natalis |  |  |
 | 6 | 12 | `mr:0406-paulus-le-bao-tinh` |  | VN | dies_natalis |  |  |
 | 6 | 13 | `mr:0406-zephyrinus-agostini` | * | IT | dies_natalis |  |  |
@@ -94,7 +94,7 @@
 | 8 | 2 | `mr:0408-herodion-et-socii` |  | PS | commemoratio |  |  |
 | 8 | 3 | `mr:0408-dionysius-corinthi` |  | GR | dies_natalis |  |  |
 | 8 | 4 | `mr:0408-timotheus-et-socii` |  | TR | dies_natalis | same as `mr:0406-timotheus-et-diogenes` |  |
-| 8 | 5 | `mr:0408-dionysius-alexandriae` |  | EG | dies_natalis | same as `mr:1117-dionysius` |  |
+| 8 | 5 | `mr:0408-dionysius-alexandriae` |  | EG | dies_natalis | same as `mr:1117-dionysius-alexandriae` |  |
 | 8 | 6 | `mr:0408-amantius-comi` |  | IT | dies_natalis |  |  |
 | 8 | 7 | `mr:0408-clemens-de-auximo` | * | IT | dies_natalis |  |  |
 | 8 | 8 | `mr:0408-iulianus-a-sancto-augustino` | * | ES | dies_natalis |  |  |
@@ -102,10 +102,10 @@
 | 8 | 10 | `mr:0408-augustus-czartoryskus` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  | 2004 English: Translation error: "El Buen Monte" where the Latin has "in convéntu Belomontáno" (the convent of Belmonte). |
 | 9 | 1 | `mr:0409-maximus-alexandriae` |  | EG | dies_natalis |  |  |
-| 9 | 2 | `mr:0409-aedesius-alexandriae` |  | EG | dies_natalis | same as `mr:0408-aedesius` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
+| 9 | 2 | `mr:0409-aedesius-alexandriae` |  | EG | dies_natalis | same as `mr:0408-aedesius-alexandriae` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
 | 9 | 3 | `mr:0409-demetrius-thessalonicensis` |  | RS | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Croazia" where the Latin "Sírmium" (Sirmium) is the present Sremska Mitrovica, in Serbia. |
 | 9 | 4 | `mr:0409-eupsychius-caesareae` |  | TR | dies_natalis |  |  |
-| 9 | 5 | `mr:0409-liborius-cenomanorum` |  | FR | dies_natalis | same as `mr:0723-liborius` | 2004 English: Translation error: "Saint Liberius" where the Latin has "sancti Libórii" (Saint Liborius). Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lyonnese Gaul, the Roman province). |
+| 9 | 5 | `mr:0409-liborius-cenomanorum` |  | FR | dies_natalis | same as `mr:0723-liborius-cenomanorum` | 2004 English: Translation error: "Saint Liberius" where the Latin has "sancti Libórii" (Saint Liborius). Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lyonnese Gaul, the Roman province). |
 | 9 | 6 | `mr:0409-acacius-amidae` |  | TR | dies_natalis |  | 2004 English: Translation error: "to ransom Persian captives, and the clergy from dreadful tortures, even melted them down" where the Latin has "pro rediméndis Persis captívis ac diris tortis supplíciis clerum conflávit" (to ransom Persian captives cruelly tortured, he gathered the clergy). |
 | 9 | 7 | `mr:0409-valdetrudis-castriloci` |  | BE | dies_natalis |  |  |
 | 9 | 8 | `mr:0409-hugo-rothomagensis` |  | FR | dies_natalis |  |  |
@@ -126,7 +126,7 @@
 | 10 | 9 | `mr:0410-michael-de-sanctis` |  | ES | dies_natalis | same as `mr:0705-michael-a-sanctis` |  |
 | 10 | 10 | `mr:0410-magdalena-de-canossa` |  | IT | dies_natalis |  |  |
 | 10 | 11 | `mr:0410-bonifatius-zukowski` | * | DE | dies_natalis |  |  |
-| 11 | (1) | `mr:0411-stanislaus-cracoviensis` |  | PL | dies_natalis | same as `mr:0507-stanislaus`; same as `mr:0508-stanislaus` |  |
+| 11 | (1) | `mr:0411-stanislaus-cracoviensis` |  | PL | dies_natalis | same as `mr:0507-stanislaus-cracoviensis`; same as `mr:0508-stanislaus-cracoviensis` |  |
 | 11 | 2 | `mr:0411-antipa-pergami` |  | TR | commemoratio |  |  |
 | 11 | 3 | `mr:0411-philippus-gortynae` |  | GR | commemoratio |  |  |
 | 11 | 4 | `mr:0411-domnio-salonae` |  | HR | dies_natalis |  | 2004 Italian: Translation error: "A Spalato" (Split) where the Latin has "Salónæ" (Salona, the present Solin). |
@@ -180,8 +180,8 @@
 | 15 | 1 | `mr:0415-theodorus-et-pausilypus` |  | TR | dies_natalis |  |  |
 | 15 | 2 | `mr:0415-crescens-myrae` |  | TR | dies_natalis |  | 2004 English: Translation error: "Saint Crescentius" where the Latin has "sancti Crescéntis" (Saint Crescens). |
 | 15 | 3 | `mr:0415-maro-montis-aurei` |  | IT | dies_natalis |  |  |
-| 15 | 4 | `mr:0415-abundius-romae` |  | IT | commemoratio | same as `mr:0414-abundius` |  |
-| 15 | 5 | `mr:0415-paternus-abrincensis` |  | FR | depositio | same as `mr:0416-paternus`; same as `mr:0923-paternus` | 2004 English: Translation error: "Séez" where the Latin has "Sescíaci" (Scissy, in the district of Coutances). |
+| 15 | 4 | `mr:0415-abundius-romae` |  | IT | commemoratio | same as `mr:0414-abundius-romae` |  |
+| 15 | 5 | `mr:0415-paternus-abrincensis` |  | FR | depositio | same as `mr:0416-paternus-abrincensis`; same as `mr:0923-paternus-abrincensis` | 2004 English: Translation error: "Séez" where the Latin has "Sescíaci" (Scissy, in the district of Coutances). |
 | 15 | 6 | `mr:0415-ortarius-andeleiensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "Saint Ouen (Ortarius)" where the Latin has "sancti Ortárii" (Saint Ortarius); Ouen is a different saint. Translation error: "Andely" where the Latin has "monastério Andeleiénsi in pago Baiocénsi" (Landelles, in the district of Bayeux). |
 | 15 | 7 | `mr:0415-caesar-de-bus` | * | FR | dies_natalis |  | César de Bus, blessed in the 2004 editions, was canonized on 15 May 2022. |
 | 15 | 8 | `mr:0415-damianus-de-veuster` | * | US | dies_natalis |  | Damien de Veuster, blessed in the 2004 editions, was canonized on 11 October 2009. |
@@ -199,7 +199,7 @@
 | 16 | 12 | `mr:0416-petrus-delepine-et-socii` | * | FR | dies_natalis |  |  |
 | 16 | 13 | `mr:0416-maria-bernarda-soubirous` |  | FR | dies_natalis |  |  |
 | 17 | 1 | `mr:0417-petrus-et-hermogenes` |  | TR | dies_natalis |  |  |
-| 17 | 2 | `mr:0417-simeon-bar-sabas-et-socii` |  | IR | dies_natalis | same as `mr:0421-simeon` | 2004 English: Translation error: "Sapor, Second King of the Persians" where the Latin has "Sápore Persárum rege Secúndo" (Sapor II, King of the Persians). |
+| 17 | 2 | `mr:0417-simeon-bar-sabas-et-socii` |  | IR | dies_natalis | same as `mr:0421-simeon-seleuciae` | 2004 English: Translation error: "Sapor, Second King of the Persians" where the Latin has "Sápore Persárum rege Secúndo" (Sapor II, King of the Persians). |
 | 17 | 3 | `mr:0417-plurimi-martyres-persidis` |  | IQ | dies_natalis | same as `mr:0422-plurimi-martyres-persidis` |  |
 | 17 | 4 | `mr:0417-innocentius-derthonae` |  | IT | dies_natalis |  |  |
 | 17 | 5 | `mr:0417-acacius-melitenae` |  | TR | dies_natalis |  |  |
@@ -217,9 +217,9 @@
 | 18 | 2 | `mr:0418-pusicius-persidis` |  | IR | dies_natalis |  |  |
 | 18 | 3 | `mr:0418-eusebius-fani` | * | IT | dies_natalis |  |  |
 | 18 | 4 | `mr:0418-lasreanus-leiglinii` | * | IE | dies_natalis |  |  |
-| 18 | 5 | `mr:0418-ursmarus-laubiensis` |  | BE | dies_natalis | same as `mr:0419-ursmarus` |  |
+| 18 | 5 | `mr:0418-ursmarus-laubiensis` |  | BE | dies_natalis | same as `mr:0419-ursmarus-laubiensis` |  |
 | 18 | 6 | `mr:0418-anthusa-constantinopoli` |  | TR | dies_natalis |  | 2004 English: Translation error: "rebuilding monasteries" where the Latin has "monasteriáque ædificánda" (building monasteries). |
-| 18 | 7 | `mr:0418-athanasia-aeginae` |  | GR | dies_natalis | same as `mr:0814-athanasia` |  |
+| 18 | 7 | `mr:0418-athanasia-aeginae` |  | GR | dies_natalis | same as `mr:0814-athanasia-aeginae` |  |
 | 18 | 8 | `mr:0418-ioannes-isaurus` |  | GR | dies_natalis |  |  |
 | 18 | 9 | `mr:0418-perfectus-cordubae` |  | ES | dies_natalis |  |  |
 | 18 | 10 | `mr:0418-idesbaldus-dunensis` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "nel monastero di Down" where the Latin has "Dunénse monastérium" (the Abbey of the Dunes, Ten Duinen, in Flanders). |
@@ -230,7 +230,7 @@
 | 18 | 15 | `mr:0418-iosephus-moreau` | * | FR | dies_natalis |  |  |
 | 18 | 16 | `mr:0418-sabina-petrilli` | * | IT | dies_natalis |  |  |
 | 18 | 17 | `mr:0418-romanus-archutowski` | * | PL | dies_natalis |  |  |
-| 19 | 1 | `mr:0419-mappalicus-africae` |  | TN | dies_natalis | same as `mr:0417-mappalicus` | 2004 Italian: Translation error: "fossero lasciate in pace e per questo" (that they be left in peace, and for this reason) where the Latin has "pacem dari mandávit, sed" (he asked that the peace of the Church be granted to them, but he himself). |
+| 19 | 1 | `mr:0419-mappalicus-africae` |  | TN | dies_natalis | same as `mr:0417-mappalicus-africae` | 2004 Italian: Translation error: "fossero lasciate in pace e per questo" (that they be left in peace, and for this reason) where the Latin has "pacem dari mandávit, sed" (he asked that the peace of the Church be granted to them, but he himself). |
 | 19 | 2 | `mr:0419-martha-persidis` |  | IR | dies_natalis |  |  |
 | 19 | 3 | `mr:0419-georgius-antiochiae` |  | TR | dies_natalis |  |  |
 | 19 | 4 | `mr:0419-geroldus-frisae` | * | AT | dies_natalis |  | 2004 English: Translation error: "Frastanz" where the Latin has "Frisæ" (Frisen). |
@@ -238,13 +238,13 @@
 | 19 | 6 | `mr:0419-leo-ix` |  | IT | dies_natalis |  |  |
 | 19 | 7 | `mr:0419-bernardus-paenitens` | * | FR | dies_natalis |  |  |
 | 19 | 8 | `mr:0419-iacobus-duckett` | * | GB | dies_natalis |  |  |
-| 20 | 1 | `mr:0420-anicetus-papa` |  | IT | dies_natalis | same as `mr:0417-anicetus` |  |
+| 20 | 1 | `mr:0420-anicetus-papa` |  | IT | dies_natalis | same as `mr:0417-anicetus-papa` |  |
 | 20 | 2 | `mr:0420-sulpicius-et-servitianus` |  | IT | commemoratio |  |  |
-| 20 | 3 | `mr:0420-secundinus-cordubae` |  | ES | dies_natalis | same as `mr:0521-secundinus` |  |
+| 20 | 3 | `mr:0420-secundinus-cordubae` |  | ES | dies_natalis | same as `mr:0521-secundinus-cordubae` |  |
 | 20 | 4 | `mr:0420-marcellinus-ebroduni` |  | FR | dies_natalis |  |  |
 | 20 | 5 | `mr:0420-marcianus-autissiodori` |  | FR | dies_natalis |  |  |
 | 20 | 6 | `mr:0420-theodorus-trichinas` |  | TR | dies_natalis |  |  |
-| 20 | 7 | `mr:0420-anastasius-antiochiae` |  | TR | dies_natalis | same as `mr:1221-anastasius` |  |
+| 20 | 7 | `mr:0420-anastasius-antiochiae` |  | TR | dies_natalis | same as `mr:1221-anastasius-antiochiae` |  |
 | 20 | 8 | `mr:0420-heliena-laurinensis` | * | IT | dies_natalis |  |  |
 | 20 | 9 | `mr:0420-viho-osnabrugensis` | * | DE | dies_natalis |  | 2004 Italian: Translation error: "come primo abate di questo luogo" (as first abbot of this place) where the Latin has "primum abbas ... missus" (first sent as an abbot, then made bishop). |
 | 20 | 10 | `mr:0420-geraldus-de-salis` | * | FR | dies_natalis |  |  |
@@ -259,7 +259,7 @@
 | 20 | 19 | `mr:0420-dina-bosatta` | * | IT | dies_natalis |  |  |
 | 20 | 20 | `mr:0420-anastasius-pankiewicz` | * | AT | dies_natalis |  |  |
 | 21 | (1) | `mr:0421-anselmus-cantuariensis` |  | IT | dies_natalis |  |  |
-| 21 | 2 | `mr:0421-apollonius-romae` |  | IT | commemoratio | same as `mr:0418-apollonius` |  |
+| 21 | 2 | `mr:0421-apollonius-romae` |  | IT | commemoratio | same as `mr:0418-apollonius-romae` |  |
 | 21 | 3 | `mr:0421-aristus-alexandriae` |  | EG | dies_natalis |  |  |
 | 21 | 4 | `mr:0421-anastasius-montis-sina` |  | EG | dies_natalis |  |  |
 | 21 | 5 | `mr:0421-maelrubius-applecross` | * | GB | dies_natalis |  |  |
@@ -291,11 +291,11 @@
 | 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
 | 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander-lugduni` |  | FR | dies_natalis |  |  |
-| 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus` |  |
+| 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus-nicomediae` |  |
 | 24 | 5 | `mr:0424-gregorius-illiberi` |  | ES | dies_natalis |  |  |
 | 24 | 6 | `mr:0424-deodatus-blesensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "the village of Blesensis in Lyon France" where the Latin "in pago Blesénsi in Gállia Lugdunénsi" means the district of Blois in Lugdunensian Gaul. |
 | 24 | 7 | `mr:0424-mellitus-cantuariensis` |  | GB | dies_natalis |  |  |
-| 24 | 8 | `mr:0424-wilfridus-eboraci` |  | GB | dies_natalis | same as `mr:1012-walfridus` |  |
+| 24 | 8 | `mr:0424-wilfridus-eboraci` |  | GB | dies_natalis | same as `mr:1012-walfridus-eboraci` |  |
 | 24 | 9 | `mr:0424-egbertus-hiensis` |  | GB | dies_natalis |  |  |
 | 24 | 10 | `mr:0424-gulielmus-firmatus` | * | FR | dies_natalis |  |  |
 | 24 | 11 | `mr:0424-rosa-virginia-pelletier` |  | FR | dies_natalis |  | 2004 English: Translation error: "Rose of Virginia" where the Latin has "Rosæ Virgíniæ" (her baptismal name, Rose Virginia). |
@@ -306,7 +306,7 @@
 | 25 | 3 | `mr:0425-pasicrates-et-valentio` |  | BG | dies_natalis | same as `mr:0525-pasicrates-et-valentio` | 2004 English: Translation error: "Paschyratus and Valentian" where the Latin has "Pasícratis et Valentiónis" (Pasicrates and Valentio). |
 | 25 | 4 | `mr:0425-phoebadius-aginni` |  | FR | dies_natalis |  |  |
 | 25 | 5 | `mr:0425-stephanus-antiochiae` |  | TR | dies_natalis |  |  |
-| 25 | 6 | `mr:0425-clarentius-viennae` |  | FR | dies_natalis | same as `mr:0426-clarentius` |  |
+| 25 | 6 | `mr:0425-clarentius-viennae` |  | FR | dies_natalis | same as `mr:0426-clarentius-viennae` |  |
 | 25 | 7 | `mr:0425-erminus-laubii` |  | BE | dies_natalis |  |  |
 | 25 | 8 | `mr:0425-franca-placentina` | * | IT | dies_natalis |  | 2004 English: Translation error: "Frances" where the Latin has "Francæ" (Franca). |
 | 25 | 9 | `mr:0425-bonifatius-valperga` | * | IT | dies_natalis |  |  |
@@ -324,8 +324,8 @@
 | 26 | 9 | `mr:0426-raphael-arnaiz-baron` | * | ES | dies_natalis |  | Rafael Arnáiz Barón, blessed in the 2004 editions, was canonized on 11 October 2009. |
 | 26 | 10 | `mr:0426-iulius-junyer-padern` | * | ES | dies_natalis |  |  |
 | 26 | 11 | `mr:0426-stanislaus-kubista` | * | DE | dies_natalis |  |  |
-| 27 | 1 | `mr:0427-simeon-hierosolymorum` |  | PS | commemoratio | same as `mr:0218-simeon` |  |
-| 27 | 2 | `mr:0427-pollio-cibalarum` |  | HR | dies_natalis | same as `mr:0428-pollio` |  |
+| 27 | 1 | `mr:0427-simeon-hierosolymorum` |  | PS | commemoratio | same as `mr:0218-simeon-hierosolymorum` |  |
+| 27 | 2 | `mr:0427-pollio-cibalarum` |  | HR | dies_natalis | same as `mr:0428-pollio-cibalarum` |  |
 | 27 | 3 | `mr:0427-theodorus-tabennesis` |  | EG | dies_natalis |  |  |
 | 27 | 4 | `mr:0427-liberalis-altini` | * | IT | dies_natalis |  |  |
 | 27 | 5 | `mr:0427-mauganus-monae` | * | GB | dies_natalis |  |  |
@@ -352,8 +352,8 @@
 | 28 | 13 | `mr:0428-ioanna-beretta-molla` |  | IT | dies_natalis |  |  |
 | 29 | (1) | `mr:0429-catharina-senensis` |  | IT | dies_natalis | same as `mr:0430-catharina-senensis` |  |
 | 29 | 2 | `mr:0429-tychicus-discipulus` | * |  | commemoratio |  |  |
-| 29 | 3 | `mr:0429-torpes-pisarum` |  | IT | dies_natalis | same as `mr:0517-torpes` |  |
-| 29 | 4 | `mr:0429-severus-neapoli` |  | IT | dies_natalis | same as `mr:0430-severus` |  |
+| 29 | 3 | `mr:0429-torpes-pisarum` |  | IT | dies_natalis | same as `mr:0517-torpes-pisarum` |  |
+| 29 | 4 | `mr:0429-severus-neapoli` |  | IT | dies_natalis | same as `mr:0430-severus-neapoli` |  |
 | 29 | 5 | `mr:0429-hugo-cluniaci` |  | FR | dies_natalis |  |  |
 | 29 | 6 | `mr:0429-achardus-abrincensis` | * | FR | dies_natalis |  |  |
 | 29 | 7 | `mr:0429-antonius-kim-song-u` |  | KR | dies_natalis |  |  |
@@ -365,7 +365,7 @@
 | 30 | 6 | `mr:0430-donatus-eureae` |  | GR | dies_natalis |  | 2004 English: Translation error: "Eucea" where the Latin has "Eurœæ" (Euroea). |
 | 30 | 7 | `mr:0430-laurentius-novariae` |  | IT | dies_natalis |  |  |
 | 30 | 8 | `mr:0430-mercurialis-livii` |  | IT | dies_natalis |  |  |
-| 30 | 9 | `mr:0430-pomponius-neapoli` |  | IT | dies_natalis | same as `mr:0514-pomponius` |  |
+| 30 | 9 | `mr:0430-pomponius-neapoli` |  | IT | dies_natalis | same as `mr:0514-pomponius-neapoli` |  |
 | 30 | 10 | `mr:0430-petrus-levita` | * | IT | dies_natalis |  |  |
 | 30 | 11 | `mr:0430-augulus-vivarii` | * | FR | dies_natalis |  |  |
 | 30 | 12 | `mr:0430-earconwaldus-barkingae` |  | GB | dies_natalis |  |  |
