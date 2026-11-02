@@ -73,9 +73,21 @@
       "places": [
         {
           "role": "cult",
-          "la": "In Campánia et Aprútio",
-          "it": "In Campania e in Abruzzo",
-          "source": "lead"
+          "la": "Campánia",
+          "it": "Campania",
+          "source": "curated",
+          "wikidata": "Q1438",
+          "label": "Campania",
+          "country": "IT"
+        },
+        {
+          "role": "cult",
+          "la": "Aprútio",
+          "it": "Abruzzo",
+          "source": "curated",
+          "wikidata": "Q1284",
+          "label": "Abruzzo",
+          "country": "IT"
         }
       ],
       "date": {
@@ -12061,7 +12073,10 @@
           "role": "foundation",
           "la": "Calatráva",
           "it": "Calatráva",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q371063",
+          "label": "Calatrava la Vieja",
+          "country": "ES"
         }
       ],
       "date": {
@@ -30544,7 +30559,14 @@
           "role": "journey",
           "la": "loca sancta",
           "it": "luoghi santi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ],
       "date": {
@@ -55762,7 +55784,14 @@
           "role": "journey",
           "la": "loca sancta",
           "it": "luoghi santi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "journey",
@@ -67900,7 +67929,14 @@
           "role": "journey",
           "la": "loca sancta",
           "it": "luoghi santi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         },
         {
           "role": "ministry",
@@ -73672,7 +73708,10 @@
           "role": "mention",
           "la": "Cluniacénces",
           "it": "cluniacensi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q220301",
+          "label": "Cluny Abbey",
+          "country": "FR"
         }
       ],
       "date": {
@@ -82394,7 +82433,10 @@
           "role": "ministry",
           "la": "regiónibus hǽresi Albigénsi perturbátis",
           "it": "regioni sconvolte dall’eresia albigese",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q206221",
+          "label": "Languedoc",
+          "country": "FR"
         }
       ],
       "date": {
@@ -97906,7 +97948,10 @@
           "role": "foundation",
           "la": "territórii románi",
           "it": "territorio romano",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q1282",
+          "label": "Lazio",
+          "country": "IT"
         }
       ],
       "date": {
@@ -98144,7 +98189,14 @@
           "role": "journey",
           "la": "loca sacra",
           "it": "luoghi santi",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q48175",
+          "label": "Holy Land",
+          "country": null,
+          "countries": [
+            "PS",
+            "IL"
+          ]
         }
       ],
       "date": {
@@ -125120,17 +125172,14 @@
       "day": 17,
       "entry": 15,
       "asterisk": false,
-      "country": "PY",
+      "country": "BR",
       "typology": "dies_natalis",
       "places": [
         {
           "role": "death",
           "la": "Assumptióne in Paraquária",
           "it": "Ad Asunción in Paraguay",
-          "source": "lead",
-          "wikidata": "Q2933",
-          "label": "Asunción",
-          "country": "PY"
+          "source": "lead"
         },
         {
           "role": "death",
@@ -125149,7 +125198,8 @@
         "year": 1628,
         "basis": "death",
         "source": "wikidata"
-      }
+      },
+      "note": "\"Assumptio in Paraquaria\" is not the city of Asunción in Paraguay, as the Italian edition reads it, but the reduction of Asunción del Ijuí in the Jesuit province of Paraguay, which Roque González founded on 15 August 1628 and left in Juan del Castillo's care; he was killed there on 17 November 1628. Its site, on the right bank of the Ijuí in Rio Grande do Sul, Brazil, has not been found (Real Academia de la Historia, Diccionario Biográfico español, \"San Juan del Castillo\")."
     },
     {
       "id": "mr:1117-iordanus-ansalone-et-thomas-hioji-rokuzayemon-nishi",
@@ -137428,7 +137478,10 @@
           "role": "death",
           "la": "pagi cœmetério",
           "it": "cimitero locale",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q108317077",
+          "label": "Our Lady of the Martyrs of Thailand Shrine",
+          "country": "TH"
         }
       ],
       "date": {

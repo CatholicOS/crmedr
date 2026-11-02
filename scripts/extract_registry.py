@@ -326,6 +326,13 @@ ENTRY_NOTES = {
     "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",
     "mr:0925-cleopha-discipulus": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
     "mr:0929-michael-gabriel-et-raphael-archangeli": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
+    "mr:1117-ioannes-del-castillo": (
+        "\"Assumptio in Paraquaria\" is not the city of Asunción in Paraguay, as the Italian edition reads it, but "
+        "the reduction of Asunción del Ijuí in the Jesuit province of Paraguay, which Roque González founded on "
+        "15 August 1628 and left in Juan del Castillo's care; he was killed there on 17 November 1628. Its site, "
+        "on the right bank of the Ijuí in Rio Grande do Sul, Brazil, has not been found (Real Academia de la "
+        "Historia, Diccionario Biográfico español, \"San Juan del Castillo\")."
+    ),
 }
 
 # The 2004-family editions. The registry's main placement is the Latin print;

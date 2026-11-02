@@ -2710,10 +2710,9 @@
       "note": "The Roman province of Asia (Pothinus: the churches of Asia and Phrygia; Sagaris: the proconsul of Asia), the curator's correction (2026-10-22)."
     },
     "Assumptióne in Paraquária": {
-      "wikidata": "Q2933",
-      "label": "Asunción",
-      "country": "PY",
-      "status": "auto"
+      "wikidata": null,
+      "status": "unresolved",
+      "note": "not the city of Asunción in Paraguay (Q2933, the earlier automatic link) but the reduction of Asunción del Ijuí, Rio Grande do Sul, where Juan del Castillo was killed in 1628; Wikidata has no item for it yet (curator, 2026-11-02)"
     },
     "Astæ Pompéiæ in Transpadána": {
       "wikidata": "Q6122",
@@ -4108,9 +4107,11 @@
       "status": "jev"
     },
     "Calatráva": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "the phrase is really a religious order not a place"
+      "wikidata": "Q371063",
+      "label": "Calatrava la Vieja",
+      "country": "ES",
+      "status": "reviewed",
+      "note": "the castle of Calatrava, where Raymond of Fitero founded the Order of Calatrava (curator, 2026-11-02)"
     },
     "Calcúttæ in India": {
       "wikidata": "Q1348",
@@ -4229,6 +4230,12 @@
       "wikidata": "Q664650",
       "label": "Campbon",
       "country": "FR",
+      "status": "reviewed"
+    },
+    "Campánia": {
+      "wikidata": "Q1438",
+      "label": "Campania",
+      "country": "IT",
       "status": "reviewed"
     },
     "Campániæ gállicæ": {
@@ -4976,9 +4983,11 @@
       "status": "jev"
     },
     "Cluniacénces": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place, the reference is to the customs of the cluny monks, not to the monastery itself"
+      "wikidata": "Q220301",
+      "label": "Cluny Abbey",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "the monks of Cluny: Cluny Abbey (curator, 2026-11-02)"
     },
     "Cluniacénsis": {
       "wikidata": "Q220301",
@@ -8417,11 +8426,6 @@
       "label": "Campania",
       "country": "IT",
       "status": "auto"
-    },
-    "In Campánia et Aprútio": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "The phrase names two regions, Campania and Abruzzo."
     },
     "In Cappadócia": {
       "wikidata": "Q217265",
@@ -23218,14 +23222,24 @@
       "status": "jev"
     },
     "loca sacra": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place: Generic phrase 'holy places' of pilgrimage, not one identifiable place"
+      "wikidata": "Q48175",
+      "label": "Holy Land",
+      "country": null,
+      "countries": [
+        "PS",
+        "IL"
+      ],
+      "status": "reviewed"
     },
     "loca sancta": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "generic phrase for the Holy Places, not one identifiable place"
+      "wikidata": "Q48175",
+      "label": "Holy Land",
+      "country": null,
+      "countries": [
+        "PS",
+        "IL"
+      ],
+      "status": "reviewed"
     },
     "loco Aljustrel": {
       "wikidata": "Q939511",
@@ -24020,9 +24034,11 @@
       "status": "jev"
     },
     "pagi cœmetério": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place: Unnamed village cemetery at Song-Khon, not a specific place"
+      "wikidata": "Q108317077",
+      "label": "Our Lady of the Martyrs of Thailand Shrine",
+      "country": "TH",
+      "status": "reviewed",
+      "note": "the village cemetery of Song-Khon, now the shrine of the Martyrs of Thailand (curator, 2026-11-02)"
     },
     "pago Lemovicénsi": {
       "wikidata": "Q45656",
@@ -24169,9 +24185,11 @@
       "status": "reviewed"
     },
     "regiónibus hǽresi Albigénsi perturbátis": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place: Diffuse area troubled by Albigensian heresy, not a single place"
+      "wikidata": "Q206221",
+      "label": "Languedoc",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "the regions troubled by the Albigensian heresy, where Dominic preached: Languedoc (curator, 2026-11-02)"
     },
     "regiónis Matriténsis": {
       "wikidata": "Q2807",
@@ -24412,9 +24430,11 @@
       "status": "reviewed"
     },
     "territórii románi": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "not a place: Vague phrase for the Roman area; no single place"
+      "wikidata": "Q1282",
+      "label": "Lazio",
+      "country": "IT",
+      "status": "reviewed",
+      "note": "the Roman territory: Lazio (curator, 2026-11-02)"
     },
     "território Gálliæ Lingonénsi": {
       "wikidata": "Q203293",
