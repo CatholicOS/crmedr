@@ -18,6 +18,17 @@ A proposal file is {"<mrid>": [{"name": Latin nominative, "n"?: int, "where": "t
 "who": one line, "kind": "saint" | "other"}]}. Every named human person is marked except Christ, the
 Persons of the Trinity and the Virgin Mary; a phrase covers the name with its epithets and attached office
 and must not overlap a commemorated person's mark. A place mark inside a phrase is allowed (apply removes it).
+  apply   writes the decided persons of a decisions file into data/persons_mentioned.json and
+          data/person_items.json, and removes from data/places_curated.json the body places printed inside
+          an applied person's Latin phrase.
+  cards   the decisions research could not settle ("doubt") as a crmedr-changeset/v1 change-set of
+          resolve_person ops, for the curator.
+
+A decisions file is {"<mrid>|<name>[#n]": {"wikidata": qid | null, "decided": "jev" | "research" | "created" |
+null, "status": "reviewed" | "unresolved" | "doubt", "note"?, "candidates"?: [qid | {wikidata, label?, ...}],
+"proposal": {name, n?, where, la, it, who, kind}}}. A reviewed entry needs a QID and who decided it; an
+unresolved one a note; a doubt is skipped by apply. apply never overwrites an entry that differs (exit 1,
+nothing written).
 
 Usage:
   python3 mentioned_persons.py brief MM /path/to/martyrology-texts /outside/the/repo/brief-MM.json [repo_root]
@@ -27,6 +38,8 @@ Usage:
   python3 mentioned_persons.py jev candidates.json /path/to/martyrology-texts /outside/the/repo/jev.json
     (Wikidata and TypeSafe answers are cached in .cache/ beside the out file; jev exits 1 after writing
     when an answer named no option offered or a request failed)
+  python3 mentioned_persons.py apply decisions.json /path/to/martyrology-texts [repo_root]
+  python3 mentioned_persons.py cards decisions.json /outside/the/repo/cards.json [repo_root]
 
 The brief, the candidates (the proposals' phrases) and Jev's answers quote the 2004 texts: they are
 written only outside any git work tree.
@@ -38,10 +51,12 @@ import re
 import sys
 from pathlib import Path
 
+import build_person_items as bpi
 import mentions_jev as mj
 from body_places import _in_a_repository, write_json_atomic
-from extract_mentions import load_edition, source_text, where_key, with_mentioned_marks
+from extract_mentions import SCHEMA, load_edition, source_text, where_key, with_mentioned_marks
 from mentions_text import from_utf16, utf16
+from extract_places import occurrences
 from persons_text import name_key, person_key
 from subject_jev import _choice, _sentences, _window
 from wikidata import MONTH_NAMES, Wikidata, WikidataError
@@ -310,9 +325,184 @@ def outside_git(out, repo_root):
     return out
 
 
-def main(argv):
-    if len(argv) < 3 or argv[0] not in ("brief", "check", "candidates", "jev"):
+# Apply and cards
+
+DECISION_STATUSES = ("reviewed", "unresolved", "doubt")
+MENTIONED_KEYS = ("name", "n", "where", "la", "it")
+
+
+def decision_problems(decisions):
+    """Problems in the decisions, one message each."""
+    problems = []
+    for key, d in decisions.items():
+        mrid, _, pkey = key.partition("|")
+        prop = d.get("proposal") or {}
+        if not pkey or not mrid.startswith("mr:"):
+            problems.append(f"{key}: the key must be <mrid>|<name>[#n]")
+        elif not isinstance(prop.get("name"), str) or person_key(prop) != pkey:
+            problems.append(f"{key}: the proposal ({prop.get('name')!r}, n {prop.get('n')!r}) is not the key's person")
+        status = d.get("status")
+        if status not in DECISION_STATUSES:
+            problems.append(f"{key}: status {status!r} is not one of {DECISION_STATUSES}")
+        elif status == "reviewed":
+            if not isinstance(d.get("wikidata"), str) or not bpi.QID.match(d["wikidata"]):
+                problems.append(f"{key}: reviewed needs a QID, not {d.get('wikidata')!r}")
+            if d.get("decided") not in bpi.DECIDED_BY:
+                problems.append(f"{key}: decided {d.get('decided')!r} is not one of {bpi.DECIDED_BY}")
+        elif status == "unresolved":
+            if d.get("wikidata") is not None or not (d.get("note") or "").strip():
+                problems.append(f"{key}: unresolved needs wikidata null and a note")
+            if d.get("decided") is not None:
+                problems.append(f"{key}: unresolved has no decided")
+    return problems
+
+
+def item_of(d):
+    """The person_items.json entry of a non-doubt decision."""
+    if d["status"] == "reviewed":
+        out = {"wikidata": d["wikidata"], "status": "reviewed", "decided": d["decided"]}
+    else:
+        out = {"wikidata": None, "status": "unresolved"}
+    if d.get("note"):
+        out["note"] = d["note"]
+    return out
+
+
+def mentioned_of(proposal):
+    return {k: proposal[k] for k in MENTIONED_KEYS if k in proposal}
+
+
+def phrase_spans(text, phrases):
+    """(start, end) of each phrase as a whole word, left to right (a repeated phrase is its next printing)."""
+    spans, at = [], 0
+    for phrase in phrases:
+        hit = re.compile(rf"(?<!\w){re.escape(phrase)}(?!\w)").search(text, at)
+        if hit:
+            spans.append(hit.span())
+            at = hit.end()
+    return spans
+
+
+def places_inside(entries, text, spans):
+    """The curated place entries printed (their `occurrence`th printing) inside one of `spans` of `text`."""
+    out = []
+    for it in entries:
+        found = occurrences(text, it["la"])
+        n = it.get("occurrence") or 1
+        if 1 <= n <= len(found):
+            s = found[n - 1]
+            if any(a <= s and s + len(it["la"]) <= b for a, b in spans):
+                out.append(it)
+    return out
+
+
+def apply_decisions(decisions, mentioned, items, curated, la_texts):
+    """Add the non-doubt decisions to `mentioned` (persons_mentioned.json's document) and `items`
+    (person_items.json's persons), and drop from `curated` the places inside an applied person's Latin
+    phrase. Returns (removed place lines, problems); with problems nothing is changed."""
+    problems = decision_problems(decisions)
+    if problems:
+        return [], problems
+    todo = {k: d for k, d in decisions.items() if d.get("status") != "doubt"}
+    for key, d in todo.items():
+        mrid, _, pkey = key.partition("|")
+        old = (items.get(mrid) or {}).get(pkey)
+        if old and old != item_of(d):
+            problems.append(f"{key}: person_items.json already has {old}; it is not overwritten")
+        olds = [q for q in mentioned.get(mrid, []) if person_key(q) == pkey]
+        if olds and olds[0] != mentioned_of(d["proposal"]):
+            problems.append(f"{key}: persons_mentioned.json already lists this person differently")
+    if problems:
+        return [], problems
+    removed = []
+    for key, d in todo.items():
+        mrid, _, pkey = key.partition("|")
+        if key in {f"{mrid}|{person_key(q)}" for q in mentioned.get(mrid, [])}:
+            continue
+        p = mentioned_of(d["proposal"])
+        mentioned.setdefault(mrid, []).append(p)
+        items.setdefault(mrid, {})[pkey] = item_of(d)
+        if p["where"] == "text" and mrid in curated:
+            text = la_texts.get(mrid, "")
+            for it in places_inside(curated[mrid], text, phrase_spans(text, p["la"])):
+                curated[mrid].remove(it)
+                removed.append(f"{mrid}: removed the place {it['la']!r} inside {pkey}'s name")
+    return removed, []
+
+
+def render_mentioned(doc):
+    keys = sorted(k for k in doc if k != "$comment")
+    out = {"$comment": doc["$comment"]} if "$comment" in doc else {}
+    return json.dumps(out | {k: doc[k] for k in keys}, ensure_ascii=False, indent=2) + "\n"
+
+
+def card_candidate(c):
+    return c if isinstance(c, dict) else {"wikidata": c}
+
+
+def build_cards(decisions):
+    """The doubts as a change-set of resolve_person ops (`reasoning`: the research note)."""
+    ops = []
+    for key, d in decisions.items():
+        if d.get("status") != "doubt":
+            continue
+        mrid, _, _ = key.partition("|")
+        prop = d["proposal"]
+        op = {"op": "resolve_person", "id": key, "eulogy": mrid, "day": f"{mrid[3:5]}-{mrid[5:7]}",
+              "name": prop["name"], **({"n": prop["n"]} if "n" in prop else {}), "where": prop["where"],
+              "role": "mentioned", "who": prop.get("who"),
+              "candidates": [card_candidate(c) for c in d.get("candidates") or []],
+              "reasoning": d.get("note") or "", "decision": None, "edited": None}
+        ops.append(op)
+    cs = bpi.new_changeset(ops)
+    cs["generated_by"] = "scripts/mentioned_persons.py"
+    cs["schema"] = SCHEMA
+    return cs
+
+
+def apply_main(argv):
+    if len(argv) < 2:
         sys.exit(__doc__)
+    repo_root = Path(argv[2]) if len(argv) > 2 else Path(__file__).resolve().parent.parent
+    d = repo_root / "data"
+    mentioned = read_json(d / "persons_mentioned.json", {})
+    items_doc = read_json(d / "person_items.json")
+    curated = read_json(d / "places_curated.json", {})
+    la_texts = load_edition(Path(argv[1]), EDITIONS["la"])[0]
+    decisions = read_json(argv[0])
+    removed, problems = apply_decisions(decisions, mentioned, items_doc["persons"], curated, la_texts)
+    if problems:
+        sys.exit("\n".join(problems))
+    (d / "persons_mentioned.json").write_text(render_mentioned(mentioned), encoding="utf-8")
+    (d / "person_items.json").write_text(bpi.render_json(items_doc["persons"]), encoding="utf-8")
+    if removed:
+        (d / "places_curated.json").write_text(json.dumps(curated, ensure_ascii=False, indent=2) + "\n",
+                                               encoding="utf-8")
+    for line in removed:
+        print(line)
+    print(f"applied {sum(x.get('status') != 'doubt' for x in decisions.values())} persons, "
+          f"skipped {sum(x.get('status') == 'doubt' for x in decisions.values())} doubts")
+
+
+def cards_main(argv):
+    if len(argv) < 2:
+        sys.exit(__doc__)
+    repo_root = Path(argv[2]) if len(argv) > 2 else Path(__file__).resolve().parent.parent
+    out = outside_git(Path(argv[1]), repo_root)
+    decisions = read_json(argv[0])
+    problems = decision_problems(decisions)
+    if problems:
+        sys.exit("\n".join(problems))
+    cs = build_cards(decisions)
+    write_json_atomic(out, cs)
+    print(f"{len(cs['operations'])} person cards in {out}")
+
+
+def main(argv):
+    if len(argv) < 3 or argv[0] not in ("brief", "check", "candidates", "jev", "apply", "cards"):
+        sys.exit(__doc__)
+    if argv[0] in ("apply", "cards"):
+        return (apply_main if argv[0] == "apply" else cards_main)(argv[1:])
     default_root = Path(__file__).resolve().parent.parent
     if argv[0] == "candidates":
         repo_root = Path(argv[3]) if len(argv) > 3 else default_root

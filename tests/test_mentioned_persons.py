@@ -259,5 +259,122 @@ class JevTest(unittest.TestCase):
         self.assertEqual((state["latin_sentence"], state["italian_phrase"]), ("Vide Ambrósium.", None))
 
 
+def decision(**kw):
+    return {"wikidata": "Q1", "decided": "jev", "status": "reviewed", "proposal": prop()} | kw
+
+
+KEY = f"{A}|Ambrosius"
+
+
+class ApplyTest(unittest.TestCase):
+    def setUp(self):
+        self.mentioned = {"$comment": "c", B: [{"name": "Alius", "where": "text", "la": ["x"], "it": []}]}
+        self.items = {B: {"Alius": {"wikidata": "Q9", "status": "reviewed", "decided": "research"}}}
+        self.curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano"},
+                            {"role": "birth", "la": "Romæ", "it": "Roma"}]}
+
+    def apply(self, decisions):
+        return mp.apply_decisions(decisions, self.mentioned, self.items, self.curated, LA)
+
+    def test_apply_writes_mentioned_and_items(self):
+        removed, problems = self.apply({KEY: decision(note="n")})
+        self.assertEqual(problems, [])
+        self.assertEqual(self.mentioned[A], [{"name": "Ambrosius", "where": "text",
+                                              "la": ["Ambrósius, epíscopus Mediolanénsis"],
+                                              "it": ["Ambrogio, vescovo di Milano"]}])
+        self.assertEqual(self.items[A]["Ambrosius"], {"wikidata": "Q1", "status": "reviewed", "decided": "jev",
+                                                       "note": "n"})
+
+    def test_unresolved_and_numbered(self):
+        d = decision(wikidata=None, decided=None, status="unresolved", note="not found", proposal=prop(n=2))
+        self.assertEqual(self.apply({f"{A}|Ambrosius#2": d})[1], [])
+        self.assertEqual(self.items[A]["Ambrosius#2"], {"wikidata": None, "status": "unresolved", "note": "not found"})
+        self.assertEqual(self.mentioned[A][0]["n"], 2)
+
+    def test_place_inside_the_name_is_removed(self):
+        removed, _ = self.apply({KEY: decision()})
+        self.assertEqual(len(removed), 1)
+        self.assertIn("Mediolanénsis", removed[0])
+        self.assertEqual([it["la"] for it in self.curated[A]], ["Romæ"])
+
+    def test_apply_skips_doubts(self):
+        removed, problems = self.apply({KEY: decision(wikidata=None, decided=None, status="doubt")})
+        self.assertEqual((removed, problems), ([], []))
+        self.assertNotIn(A, self.mentioned)
+        self.assertNotIn(A, self.items)
+        self.assertEqual(len(self.curated[A]), 2)
+
+    def test_apply_refuses_a_conflicting_qid(self):
+        self.items[A] = {"Ambrosius": {"wikidata": "Q2", "status": "reviewed", "decided": "jev"}}
+        before = json.dumps([self.mentioned, self.items, self.curated])
+        removed, problems = self.apply({KEY: decision()})
+        self.assertEqual(len(problems), 1)
+        self.assertIn("Q2", problems[0])
+        self.assertEqual(json.dumps([self.mentioned, self.items, self.curated]), before)
+
+    def test_the_same_decision_twice_is_a_no_op(self):
+        self.apply({KEY: decision()})
+        before = json.dumps([self.mentioned, self.items])
+        self.assertEqual(self.apply({KEY: decision()}), ([], []))
+        self.assertEqual(json.dumps([self.mentioned, self.items]), before)
+
+    def test_a_key_disagreeing_with_its_proposal(self):
+        _, problems = self.apply({f"{A}|Augustinus": decision()})
+        self.assertEqual(len(problems), 1)
+        _, problems = self.apply({f"{A}|Ambrosius#2": decision()})
+        self.assertEqual(len(problems), 1)
+        self.assertNotIn(A, self.items)
+
+    def test_invalid_decisions(self):
+        for kw in ({"decided": "guess"}, {"wikidata": "x"}, {"status": "auto"},
+                   {"status": "unresolved", "wikidata": None, "decided": None}):
+            self.assertTrue(self.apply({KEY: decision(**kw)})[1], kw)
+
+    def test_a_place_elsewhere_in_the_text_is_kept(self):
+        text = "Mediolanénsis. Ambrósius, epíscopus Mediolanénsis."
+        curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano", "occurrence": 1}]}
+        removed, _ = mp.apply_decisions({KEY: decision()}, {}, {}, curated, {A: text})
+        self.assertEqual((removed, len(curated[A])), ([], 1))
+
+    def test_render_matches_build_person_items(self):
+        self.apply({KEY: decision()})
+        import build_person_items as bpi
+        self.assertEqual(json.loads(bpi.render_json(self.items))["persons"][A]["Ambrosius"]["decided"], "jev")
+        out = json.loads(mp.render_mentioned(self.mentioned))
+        self.assertEqual(list(out), ["$comment", A, B])
+
+
+class CardsTest(unittest.TestCase):
+    def test_cards_hold_only_doubts(self):
+        doubt = decision(wikidata=None, decided=None, status="doubt", note="two bishops fit",
+                         candidates=["Q5", {"wikidata": "Q6", "label": "X"}])
+        cs = mp.build_cards({KEY: decision(), f"{A}|Ambrosius#2": doubt | {"proposal": prop(n=2)}})
+        self.assertEqual(cs["schema"], "crmedr-changeset/v1")
+        self.assertEqual(len(cs["operations"]), 1)
+        op = cs["operations"][0]
+        self.assertEqual((op["op"], op["id"], op["eulogy"], op["name"], op["n"], op["reasoning"]),
+                         ("resolve_person", f"{A}|Ambrosius#2", A, "Ambrosius", 2, "two bishops fit"))
+        self.assertEqual(op["candidates"], [{"wikidata": "Q5"}, {"wikidata": "Q6", "label": "X"}])
+        self.assertEqual((op["decision"], op["edited"]), (None, None))
+
+    def test_cards_cli_refuses_a_git_work_tree(self):
+        with tempfile.TemporaryDirectory() as d:
+            root = Path(d)
+            subprocess.run(["git", "init", "-q", str(root)], check=True)
+            (root / "dec.json").write_text(json.dumps({KEY: decision(status="doubt")}))
+            r = subprocess.run([sys.executable, str(Path(mp.__file__)), "cards", str(root / "dec.json"),
+                                str(root / "out.json"), str(root)], capture_output=True, text=True)
+            self.assertNotEqual(r.returncode, 0)
+            self.assertFalse((root / "out.json").exists())
+
+    def test_cards_cli_writes_outside(self):
+        with tempfile.TemporaryDirectory() as d, tempfile.TemporaryDirectory() as o:
+            (Path(d) / "dec.json").write_text(json.dumps({KEY: decision(status="doubt")}))
+            r = subprocess.run([sys.executable, str(Path(mp.__file__)), "cards", str(Path(d) / "dec.json"),
+                                str(Path(o) / "out.json"), d], capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, r.stderr)
+            self.assertEqual(len(json.loads((Path(o) / "out.json").read_text())["operations"]), 1)
+
+
 if __name__ == "__main__":
     unittest.main()
