@@ -125,11 +125,6 @@
   ],
   "mr:0103-genovefa-parisiorum": [
     {
-      "role": "mention",
-      "la": "Autissiodorénsi",
-      "it": "Auxerre"
-    },
-    {
       "role": "birth",
       "la": "Nemptodurénsis",
       "it": "Nanterre"
@@ -479,13 +474,7 @@
       "it": "Costantinopoli"
     }
   ],
-  "mr:0114-euphrasius-arvernae": [
-    {
-      "role": "mention",
-      "la": "Turonénsis",
-      "it": "Tours"
-    }
-  ],
+  "mr:0114-euphrasius-arvernae": [],
   "mr:0114-monachi-raithi": [
     {
       "role": "death",
@@ -608,13 +597,7 @@
       "it": "isola di Lérins"
     }
   ],
-  "mr:0116-iacobus-tarantasiae": [
-    {
-      "role": "mention",
-      "la": "Lirinénsis",
-      "it": "Lérins"
-    }
-  ],
+  "mr:0116-iacobus-tarantasiae": [],
   "mr:0116-leobatius-senapariae": [
     {
       "role": "religious_life",

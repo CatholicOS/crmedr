@@ -67,6 +67,209 @@
       "pt": "Kateri Tekakwitha"
     }
   },
+  "Q1429": {
+    "description": {
+      "en": "15th Roman Emperor (138–161)",
+      "it": "quindicesimo imperatore romano (r. 138-161)",
+      "fr": "empereur romain de 138 à 161",
+      "de": "römischer Kaiser",
+      "es": "Emperador romano (138-161)",
+      "pt": "imperador romano de 138 a 161"
+    },
+    "born": {
+      "year": 86,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 161,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Antoninus Pius Glyptothek Munich 337 cropped.jpg",
+      "author": "Unknown artistUnknown artist",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Antoninus Pius",
+      "it": "Antonino Pio",
+      "fr": "Antonin le Pieux",
+      "de": "Antoninus Pius",
+      "es": "Antonino Pío",
+      "pt": "Antonino Pio"
+    }
+  },
+  "Q1430": {
+    "description": {
+      "en": "16th Roman Emperor from 161 to 180 and Stoic philosopher",
+      "it": "sedicesimo imperatore romano (r. 161-180), filosofo e scrittore",
+      "fr": "empereur romain de 161 à 180 et philosophe stoïcien",
+      "de": "römischer Kaiser und Philosoph (121-180)",
+      "es": "Emperador romano (161-180)",
+      "pt": "imperador romano (161-180)"
+    },
+    "born": {
+      "year": 121,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 180,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Marcus Aurelius Louvre MR561 n02.jpg",
+      "author": "Marie-Lan Nguyen (2011)",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    "wikipedia": {
+      "en": "Marcus Aurelius",
+      "it": "Marco Aurelio",
+      "fr": "Marc Aurèle",
+      "de": "Mark Aurel",
+      "es": "Marco Aurelio",
+      "pt": "Marco Aurélio"
+    }
+  },
+  "Q1433": {
+    "description": {
+      "en": "joint Roman Emperor with Marcus Aurelius (161–169)",
+      "it": "co-imperatore romano (r. 161-169)",
+      "fr": "empereur romain de 161 à 169",
+      "de": "römischer Kaiser",
+      "es": "Coemperador romano (161-169)",
+      "pt": "co-imperador Romano (161-169)"
+    },
+    "born": {
+      "year": 130,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 169,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Lucius Verus - MET - L.2007.26.jpg",
+      "author": "PierreSelim",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "wikipedia": {
+      "en": "Lucius Verus",
+      "it": "Lucio Vero",
+      "fr": "Lucius Aurelius Verus",
+      "de": "Lucius Verus",
+      "es": "Lucio Vero",
+      "pt": "Lúcio Vero"
+    }
+  },
+  "Q1830": {
+    "description": {
+      "en": "Roman Emperor (201-251)",
+      "it": "imperatore romano (r. 249-251)",
+      "fr": "empereur romain de 249 à 251",
+      "de": "römischer Kaiser von 249 bis 251",
+      "es": "Emperador romano (249-251)"
+    },
+    "born": {
+      "year": 201,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 251,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Emperor Traianus Decius (Mary Harrsch).jpg",
+      "author": "Mary Harrsch",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "wikipedia": {
+      "en": "Decius",
+      "it": "Decio",
+      "fr": "Dèce",
+      "de": "Decius (Kaiser)",
+      "es": "Decio",
+      "pt": "Décio"
+    }
+  },
+  "Q3044": {
+    "description": {
+      "en": "king of Franks, regarded as the first Holy Roman Emperor (747–814) (742-814)",
+      "it": "re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)",
+      "fr": "empereur d'Occident et roi des Francs",
+      "de": "König des Fränkischen Reiches und römischer Kaiser",
+      "es": "rey de los francos desde 768 y emperador de Occidente desde 800 hasta su muerte",
+      "pt": "Imperador dos Romanos (800–814), Rei dos Lombardos (774–814), Rei dos Francos (768–814)"
+    },
+    "born": {
+      "year": 748,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 814,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Charlemagne denier Mayence 812 814.jpg",
+      "author": "Charlemagne. Autorité émettrice de monnaie indéterminé. Atelier monétaire. Émetteur",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Charlemagne",
+      "it": "Carlo Magno",
+      "fr": "Charlemagne",
+      "de": "Karl der Große",
+      "es": "Carlomagno",
+      "pt": "Carlos Magno"
+    }
+  },
+  "Q3301": {
+    "description": {
+      "en": "Frankish military and political leader (c. 688–741)",
+      "it": "maestro di palazzo franco dal 714 al 741",
+      "fr": "duc d'Austrasie, maire du palais de 717 à 741 et souverain de facto du royaume des Francs",
+      "de": "fränkischer Hausmeier aus dem Geschlecht der Arnulfinger",
+      "es": "duque de los francos y mayordomo de palacio del reino de Austrasia",
+      "pt": "líder político e militar franco"
+    },
+    "born": {
+      "year": 688,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 741,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Charles Martel 01.jpg",
+      "author": "Arnaud 25",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Charles Martel",
+      "it": "Carlo Martello",
+      "fr": "Charles Martel",
+      "de": "Karl Martell",
+      "es": "Carlos Martel",
+      "pt": "Carlos Martel"
+    }
+  },
   "Q5652": {
     "description": {
       "en": "medieval poet, chronicler, and ecclesiastical writer (1160-1229)",
@@ -131,6 +334,40 @@
       "de": "Fra Angelico",
       "es": "Fra Angelico",
       "pt": "Fra Angelico"
+    }
+  },
+  "Q7207": {
+    "description": {
+      "en": "Queen of England and Ireland from 1558 to 1603 (1533-1603)",
+      "it": "regina d'Inghilterra e d'Irlanda (r. 1558-1603)",
+      "fr": "reine d’Angleterre et d'Irlande de 1558 à 1603",
+      "de": "Königin von England (1558-1603)",
+      "es": "reina de Inglaterra e Irlanda (1533-1603)",
+      "pt": "rainha da Inglaterra e Irlanda de 1558 a 1603"
+    },
+    "born": {
+      "year": 1533,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1603,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Darnley stage 3.jpg",
+      "author": "Unidentified painter",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Elizabeth I",
+      "it": "Elisabetta I d'Inghilterra",
+      "fr": "Élisabeth Ire (reine d'Angleterre)",
+      "de": "Elisabeth I.",
+      "es": "Isabel I de Inglaterra",
+      "pt": "Isabel I de Inglaterra"
     }
   },
   "Q7226": {
@@ -233,6 +470,40 @@
       "de": "Augustinus von Hippo",
       "es": "Agustín de Hipona",
       "pt": "Agostinho de Hipona"
+    }
+  },
+  "Q8413": {
+    "description": {
+      "en": "Roman emperor from 306 to 337 and first to convert to Christianity (272–337)",
+      "it": "imperatore romano (r. 306-337)",
+      "fr": "empereur romain de 310 à 337",
+      "de": "römischer Kaiser",
+      "es": "Emperador romano (306-337)",
+      "pt": "imperador romano (306–337) e primeiro a se converter ao cristianismo"
+    },
+    "born": {
+      "year": 272,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 337,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Rome-Capitole-StatueConstantin.jpg",
+      "author": "Jean-Christophe BENOIST",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5"
+    },
+    "wikipedia": {
+      "en": "Constantine the Great",
+      "it": "Costantino I",
+      "fr": "Constantin Ier (empereur romain)",
+      "de": "Konstantin der Große",
+      "es": "Constantino I",
+      "pt": "Constantino"
     }
   },
   "Q9077": {
@@ -955,6 +1226,74 @@
       "pt": "Pedro (apóstolo)"
     }
   },
+  "Q33941": {
+    "description": {
+      "en": "last Pagan Roman emperor, reigned 361 to 363",
+      "it": "imperatore romano (r. 361-363), filosofo e scrittore",
+      "fr": "empereur romain de 361 à 363",
+      "de": "römischer Kaiser (360–363)",
+      "es": "Emperador romano (361-363)",
+      "pt": "Imperador romano de 361 a 363"
+    },
+    "born": {
+      "year": 331,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 363,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Gold Solidus of Julian the Apostate, Sirmium.jpg",
+      "author": "ANS",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Julian (emperor)",
+      "it": "Flavio Claudio Giuliano",
+      "fr": "Julien (empereur romain)",
+      "de": "Julian (Kaiser)",
+      "es": "Juliano el Apóstata",
+      "pt": "Juliano (imperador)"
+    }
+  },
+  "Q36724": {
+    "description": {
+      "en": "5th-century ruler of the Hunnic Empire",
+      "it": "re degli Unni",
+      "fr": "roi des Huns de 434 à 453",
+      "de": "König der Hunnen",
+      "es": "rey de los hunos (434-453 d. C.)",
+      "pt": "Rei dos hunos"
+    },
+    "born": {
+      "year": 395,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 453,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Attila Hunnorum Rex Flagellum Dei Aquilejae Eversor Utini Instaurator.jpg",
+      "author": "Julio Strozza",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Attila",
+      "it": "Attila",
+      "fr": "Attila",
+      "de": "Attila",
+      "es": "Atila",
+      "pt": "Átila"
+    }
+  },
   "Q37599": {
     "description": {
       "en": "Anatolian saint",
@@ -1184,6 +1523,40 @@
       "de": "Clemens von Rom",
       "es": "Clemente de Roma",
       "pt": "Papa Clemente I"
+    }
+  },
+  "Q43107": {
+    "description": {
+      "en": "Augustus of the Eastern Roman Empire (244-311)",
+      "it": "imperatore romano (r. 284-305)",
+      "fr": "empereur romain de 284 à 305",
+      "de": "römischer Kaiser (284-305)",
+      "es": "emperador romano (284-305)",
+      "pt": "Imperador romano de 284 a 305"
+    },
+    "born": {
+      "year": 240,
+      "precision": "decade",
+      "circa": false
+    },
+    "died": {
+      "year": 316,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Istanbul - Museo archeol. - Diocleziano (284-305 d.C.) - Foto G. Dall'Orto 28-5-2006.jpg",
+      "author": "G.dallorto",
+      "license": "Attribution",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Diocletian",
+      "it": "Diocleziano",
+      "fr": "Dioclétien",
+      "de": "Diokletian",
+      "es": "Diocleciano",
+      "pt": "Diocleciano"
     }
   },
   "Q43399": {
@@ -2084,12 +2457,12 @@
   },
   "Q44281": {
     "description": {
-      "en": "Spanish Catholic priest and theologian (1491–1556)",
-      "it": "gesuita e santo spagnolo",
-      "fr": "saint catholique, fondateur au XVIe s. de la Compagnie de Jésus",
-      "de": "Gründer der später auch als Jesuitenorden bezeichneten Gesellschaft Jesu",
-      "es": "sacerdote español, fundador de la orden jesuita (1491-1556)",
-      "pt": "Padre e teólogo católico basco espanhol (1491–1556)"
+      "en": "Spanish Basque Catholic priest, theologian and saint (1491–1556), co-founder and first superior general of the Society of Jesus (1541–1556) and author of the Spiritual Exercises",
+      "it": "presbitero, teologo e santo cattolico spagnolo di origine basca (1491–1556), cofondatore e primo preposito generale della Compagnia di Gesù (1541–1556) e autore degli Esercizi spirituali",
+      "fr": "prêtre, théologien et saint catholique basque espagnol (1491–1556), cofondateur et premier supérieur général de la Compagnie de Jésus (1541–1556), auteur des Exercices spirituels",
+      "de": "spanischer katholischer Priester, Theologe und Heiliger baskischer Herkunft (1491–1556), Mitgründer und erster Generaloberer der Gesellschaft Jesu (Jesuitenorden) sowie Verfasser der Geistlichen Übungen",
+      "es": "sacerdote, teólogo y santo católico español de origen vasco (1491–1556), cofundador y primer superior general de la Compañía de Jesús (1541–1556) y autor de los Ejercicios espirituales",
+      "pt": "sacerdote, teólogo e santo católico espanhol de origem basca (1491–1556), cofundador e primeiro superior geral da Companhia de Jesus (1541–1556) e autor dos Exercícios Espirituais"
     },
     "born": {
       "year": 1491,
@@ -2489,6 +2862,73 @@
       "en": "Marianna Fontanella",
       "it": "Maria degli Angeli Fontanella",
       "fr": "Marie des Anges"
+    }
+  },
+  "Q46418": {
+    "description": {
+      "en": "Roman emperor (317-361)",
+      "it": "imperatore romano (r. 337-361)",
+      "fr": "empereur romain de 337 à 361",
+      "de": "römischer Kaiser (337-361)",
+      "es": "Emperador romano (337-361)",
+      "pt": "ex-Imperador romano"
+    },
+    "born": {
+      "year": 317,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 361,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bust of Constantius II (Mary Harrsch).jpg",
+      "author": "Mary Harrsch",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+    },
+    "wikipedia": {
+      "en": "Constantius II",
+      "it": "Costanzo II",
+      "fr": "Constance II",
+      "de": "Constantius II.",
+      "es": "Constancio II",
+      "pt": "Constâncio II"
+    }
+  },
+  "Q46750": {
+    "description": {
+      "en": "Roman emperor",
+      "it": "imperatore romano (r. 253-260)",
+      "fr": "empereur romain de 253 à 260",
+      "de": "römischer Kaiser",
+      "es": "Emperador romano (253-260)"
+    },
+    "born": {
+      "year": 200,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 260,
+      "precision": "decade",
+      "circa": false
+    },
+    "image": {
+      "file": "Aureus Valerian-RIC 0034-transparent.png",
+      "author": "Classical Numismatic Group, Inc. http://www.cngcoins.com",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "wikipedia": {
+      "en": "Valerian (emperor)",
+      "it": "Valeriano",
+      "fr": "Valérien",
+      "de": "Valerian",
+      "es": "Valeriano",
+      "pt": "Valeriano"
     }
   },
   "Q47144": {
@@ -4209,7 +4649,7 @@
     },
     "wikipedia": {
       "en": "Edith Stein",
-      "it": "Edith Stein",
+      "it": "Teresa Benedetta della Croce",
       "fr": "Edith Stein",
       "de": "Edith Stein",
       "es": "Edith Stein",
@@ -4501,6 +4941,40 @@
       "es": "Notburga"
     }
   },
+  "Q79972": {
+    "description": {
+      "en": "King of Scotland from 1567 to 1625, King of England and Ireland from 1603 to 1625 (1566-1625)",
+      "it": "re di Scozia (r. 1567-1625), d'Inghilterra e d'Irlanda (r. 1603-1625)",
+      "fr": "roi d'Écosse de 1567 à 1625, roi d'Angleterre et d'Irlande de 1603 à 1625",
+      "de": "König von Schottland, England und Irland",
+      "es": "rey de Escocia (1567-1625) e Inglaterra (1603-1625)",
+      "pt": "Rei da Escócia (1567–1625) e Rei da Inglaterra e Irlanda (1603–25)"
+    },
+    "born": {
+      "year": 1566,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1625,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "John de Critz - James VI and I, 1566 - 1625. King of Scotland 1567 - 1625. King of England and Ireland 1603 - 1625 - PG 561 - National Galleries of Scotland.jpg",
+      "author": "John de Critz",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "James VI and I",
+      "it": "Giacomo I d'Inghilterra",
+      "fr": "Jacques VI et Ier",
+      "de": "Jakob I. (England)",
+      "es": "Jacobo I de Inglaterra y VI de Escocia",
+      "pt": "Jaime VI da Escócia e I de Inglaterra"
+    }
+  },
   "Q80450": {
     "description": {
       "en": "3rd pope and bishop of Rome from c. 79 to c. 92 AD",
@@ -4632,6 +5106,74 @@
       "pt": "Brígida da Irlanda"
     }
   },
+  "Q81212": {
+    "description": {
+      "en": "King of the Franks from 751 to 768",
+      "it": "maestro di palazzo franco dal 741 al 751, poi re dei Franchi (r. 751-768)",
+      "fr": "roi des Francs",
+      "de": "König der Franken",
+      "es": "primer rey carolingio",
+      "pt": "rei franco carolíngio"
+    },
+    "born": {
+      "year": 715,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 768,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Amiel - Pepin the Short.jpg",
+      "author": "Louis-Félix Amiel",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pepin the Short",
+      "it": "Pipino il Breve",
+      "fr": "Pépin le Bref",
+      "de": "Pippin der Jüngere",
+      "es": "Pipino el Breve",
+      "pt": "Pepino, o Breve"
+    }
+  },
+  "Q81506": {
+    "description": {
+      "en": "King of England, Scotland, and Ireland from 1625 to 1649 (1600-1649)",
+      "it": "re d'Inghilterra, Scozia e Irlanda (r. 1625-1649)",
+      "fr": "roi d'Angleterre, d'Écosse et d'Irlande de 1625 à 1649",
+      "de": "König von England, Schottland und Irland (1600–1649)",
+      "es": "rey de Inglaterra, Escocia e Irlanda desde 1625 hasta 1649",
+      "pt": "rei da Inglaterra, Escócia e Irlanda (1625–1649)"
+    },
+    "born": {
+      "year": 1600,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1649,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Anthony van Dyck (1599-1641) - Charles I (1600-1649) - RCIN 404398 - Royal Collection.jpg",
+      "author": "Anthony van Dyck",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Charles I of England",
+      "it": "Carlo I d'Inghilterra",
+      "fr": "Charles Ier (roi d'Angleterre)",
+      "de": "Karl I. (England)",
+      "es": "Carlos I de Inglaterra",
+      "pt": "Carlos I de Inglaterra"
+    }
+  },
   "Q81634": {
     "description": {
       "en": "7th Pope of the Catholic Church",
@@ -4694,6 +5236,40 @@
       "de": "Telesphorus",
       "es": "Telesforo (papa)",
       "pt": "Papa Telésforo"
+    }
+  },
+  "Q82339": {
+    "description": {
+      "en": "first king of the Franks (c. 466-511)",
+      "it": "re dei franchi (r. 481-511)",
+      "fr": "roi des Francs de 481 à 511",
+      "de": "fränkischer König, Merowinger, Begründer des Frankenreiches",
+      "es": "primer rey de los francos",
+      "pt": "primeiro rei dos francos (c 466-511)"
+    },
+    "born": {
+      "year": 466,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 511,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Jean de Tillet - Clovis Ier roy crestien - Recueil des rois de France.jpg",
+      "author": "Jean Du Tillet http://mandragore.bnf.fr/",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Clovis I",
+      "it": "Clodoveo I",
+      "fr": "Clovis Ier",
+      "de": "Chlodwig I.",
+      "es": "Clodoveo I",
+      "pt": "Clóvis"
     }
   },
   "Q83198": {
@@ -5787,6 +6363,36 @@
       "pt": "Papa Paulo I"
     }
   },
+  "Q103545": {
+    "description": {
+      "en": "7th century pope",
+      "it": "78° vescovo di Roma e papa della Chiesa cattolica dal 676 al 678",
+      "fr": "78e pape de l'Église catholique, de 676 à 678",
+      "de": "Papst",
+      "es": "78.º papa de la Iglesia Católica",
+      "pt": "78º Papa da Igreja Católica"
+    },
+    "born": null,
+    "died": {
+      "year": 678,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Dono I.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Donus",
+      "it": "Papa Dono",
+      "fr": "Donus",
+      "de": "Donus",
+      "es": "Dono",
+      "pt": "Papa Dono"
+    }
+  },
   "Q103556": {
     "description": {
       "en": "Holy Roman Emperor from 1014 to 1024",
@@ -5853,6 +6459,39 @@
       "de": "Agatho (Papst)",
       "es": "Agatón (papa)",
       "pt": "Papa Agatão"
+    }
+  },
+  "Q104475": {
+    "description": {
+      "en": "Roman emperor (218-268)",
+      "it": "imperatore romano (r. 253-268)",
+      "fr": "empereur romain de 253 à 268",
+      "de": "römischer Kaiser",
+      "es": "Emperador romano (253-268)"
+    },
+    "born": {
+      "year": 218,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 268,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Ritratto di gallieno dalla casa delle vestali.jpg",
+      "author": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0"
+    },
+    "wikipedia": {
+      "en": "Gallienus",
+      "it": "Gallieno",
+      "fr": "Gallien",
+      "de": "Gallienus",
+      "es": "Galieno",
+      "pt": "Galiano"
     }
   },
   "Q104804": {
@@ -5943,6 +6582,39 @@
       "fr": "Gaspard Stanggassinger",
       "de": "Kaspar Stangassinger",
       "es": "Gaspar Stangassingger"
+    }
+  },
+  "Q109860": {
+    "description": {
+      "en": "Frankish king",
+      "it": "re franco della dinastia merovingia",
+      "fr": "roi des Francs de la dynastie mérovingienne",
+      "de": "merowingischer König des Frankenreichs (629–639)",
+      "es": "rey de los francos"
+    },
+    "born": {
+      "year": 611,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 639,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Portrait Roi de france Dagobert Ier.jpg",
+      "author": "The original uploader was Flups at German Wikipedia.",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "wikipedia": {
+      "en": "Dagobert I",
+      "it": "Dagoberto I",
+      "fr": "Dagobert Ier",
+      "de": "Dagobert I.",
+      "es": "Dagoberto I",
+      "pt": "Dagoberto I"
     }
   },
   "Q110299": {
@@ -6605,6 +7277,40 @@
       "pt": "Papa Calisto I"
     }
   },
+  "Q122553": {
+    "description": {
+      "en": "King of England, Scotland, and Ireland (1630-1685)",
+      "it": "re d'Inghilterra, Scozia e Irlanda (r. 1660-1685)",
+      "fr": "roi d'Angleterre, d'Écosse et d'Irlande de 1660 à 1685",
+      "de": "König von Schottland, England und Irland (1630-1685)",
+      "es": "rey de Inglaterra, Escocia e Irlanda entre 1660 y 1685",
+      "pt": "Rei da Inglaterra, Escócia e Irlanda (1660–1685)"
+    },
+    "born": {
+      "year": 1630,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1685,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Sir Peter Lely (1618-80) - Charles II (1630-1685) - RCIN 405672 - Royal Collection.jpg",
+      "author": "Peter Lely",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Charles II of England",
+      "it": "Carlo II d'Inghilterra",
+      "fr": "Charles II (roi d'Angleterre)",
+      "de": "Karl II. (England)",
+      "es": "Carlos II de Inglaterra",
+      "pt": "Carlos II de Inglaterra"
+    }
+  },
   "Q124775": {
     "description": {
       "en": "French abbot and bishop of Chartres (c.1040–1116)",
@@ -6810,6 +7516,40 @@
       "de": "Viktor I.",
       "es": "Víctor I",
       "pt": "Papa Vítor I"
+    }
+  },
+  "Q128076": {
+    "description": {
+      "en": "Head of the Catholic Church from 1198 to 1216",
+      "it": "176° vescovo di Roma e papa della Chiesa cattolica dal 1198 al 1216",
+      "fr": "pape de l’Église catholique de 1198 à 1216",
+      "de": "Papst",
+      "es": "176.º papa de la Iglesia Católica",
+      "pt": "176° papa da igreja católica"
+    },
+    "born": {
+      "year": 1160,
+      "precision": "decade",
+      "circa": false
+    },
+    "died": {
+      "year": 1216,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Pope Innocent III (Monastery of Subiaco).jpg",
+      "author": "Carlo Raso",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Innocent III",
+      "it": "Papa Innocenzo III",
+      "fr": "Innocent III",
+      "de": "Innozenz III.",
+      "es": "Inocencio III",
+      "pt": "Papa Inocêncio III"
     }
   },
   "Q128267": {
@@ -7062,6 +7802,39 @@
       "de": "Damasus I.",
       "es": "Dámaso I",
       "pt": "Papa Dâmaso I"
+    }
+  },
+  "Q131002": {
+    "description": {
+      "en": "5th Abbasid caliph (r. 786–809)",
+      "it": "califfo arabo",
+      "fr": "cinquième calife abbasside",
+      "de": "766–809, 5. Kalif der Abbasiden, reg. 786–809",
+      "es": "Quinto califa de la dinastía abasí"
+    },
+    "born": {
+      "year": 766,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 809,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Harun Al-Rashid and the World of the Thousand and One Nights.jpg",
+      "author": "Unknown artistUnknown artist",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Harun al-Rashid",
+      "it": "Hārūn al-Rashīd",
+      "fr": "Hâroun ar-Rachîd",
+      "de": "Hārūn ar-Raschīd",
+      "es": "Harún al-Rashid",
+      "pt": "Harune Arraxide"
     }
   },
   "Q131159": {
@@ -8144,6 +8917,39 @@
       "pt": "Brás de Sebaste"
     }
   },
+  "Q152370": {
+    "description": {
+      "en": "King of Hungary (1206-1270)",
+      "it": "re d'Ungheria (r. 1235-1270)",
+      "fr": "roi de Hongrie",
+      "de": "König von Ungarn, König von Kroatien",
+      "es": "Vigésimo Rey del Reino de Hungría y Rey del Reino de Croacia"
+    },
+    "born": {
+      "year": 1206,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1270,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Béla IV (Chronica Hungarorum).jpg",
+      "author": "Johannes de Thurocz",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Béla IV of Hungary",
+      "it": "Béla IV d'Ungheria",
+      "fr": "Béla IV",
+      "de": "Béla IV. (Ungarn)",
+      "es": "Bela IV de Hungría",
+      "pt": "Bela IV da Hungria"
+    }
+  },
   "Q152426": {
     "description": {
       "en": "Abbot and martyr",
@@ -8472,6 +9278,40 @@
       "de": "Zdislava",
       "es": "Zdislava",
       "pt": "Zdislava de Lemberk"
+    }
+  },
+  "Q159369": {
+    "description": {
+      "en": "Roman Emperor from 395–408 (377–408)",
+      "it": "imperatore romano d'Oriente (r. 395-408)",
+      "fr": "empereur romain d'Orient de 395 à 408",
+      "de": "Oströmischer Kaiser von 395-408",
+      "es": "emperador romano de oriente (395-408)",
+      "pt": "imperador romano do Oriente de 395 até sua morte"
+    },
+    "born": {
+      "year": 377,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 408,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Arcadius Istanbul Museum.PNG",
+      "author": "Gryffindor",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Arcadius",
+      "it": "Arcadio",
+      "fr": "Arcadius (empereur romain)",
+      "de": "Arcadius",
+      "es": "Arcadio",
+      "pt": "Arcádio"
     }
   },
   "Q159834": {
@@ -9753,6 +10593,36 @@
       "pt": "Teresa Margarida Redi"
     }
   },
+  "Q168734": {
+    "description": {
+      "en": "pope",
+      "it": "59° vescovo di Roma e papa della Chiesa cattolica dal 537 al 555",
+      "fr": "59e pape de l’Église catholique, de 537 à 555",
+      "de": "Papst",
+      "es": "59.º papa de la Iglesia Católica",
+      "pt": "59º Papa da Igreja Católica"
+    },
+    "born": null,
+    "died": {
+      "year": 555,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Vigilius.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Pope Vigilius",
+      "it": "Papa Vigilio",
+      "fr": "Vigile (pape)",
+      "de": "Vigilius",
+      "es": "Vigilio",
+      "pt": "Papa Vigílio"
+    }
+  },
   "Q168741": {
     "description": {
       "en": "pope",
@@ -10214,6 +11084,39 @@
       "de": "Hadrian III.",
       "es": "Adriano III",
       "pt": "Papa Adriano III"
+    }
+  },
+  "Q172471": {
+    "description": {
+      "en": "Roman emperor from 364 to 378",
+      "it": "imperatore romano (r. 364-378)",
+      "fr": "empereur romain de 364 à 378",
+      "de": "römischer Kaiser im Osten von 364-378",
+      "es": "emperador romano de oriente (364-378)"
+    },
+    "born": {
+      "year": 328,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 378,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Valens Honorius Musei Capitolini MC494.jpg",
+      "author": "Unknown artistUnknown artist",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Valens",
+      "it": "Valente (imperatore)",
+      "fr": "Valens",
+      "de": "Valens",
+      "es": "Valente",
+      "pt": "Valente (imperador)"
     }
   },
   "Q172480": {
@@ -11064,6 +11967,40 @@
       "pt": "Sebastião de Narbona"
     }
   },
+  "Q184549": {
+    "description": {
+      "en": "Roman emperor from 308 to 324",
+      "it": "imperatore romano (r. 308-324)",
+      "fr": "empereur romain de 308 à 324",
+      "de": "römischer Kaiser",
+      "es": "Emperador romano de occidente (308-313) y oriente (313-324)",
+      "pt": "co-imperador romano"
+    },
+    "born": {
+      "year": 263,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 325,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bronze bust of Licinius.jpg",
+      "author": "https://www.flickr.com/photos/annedavid2012/",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Licinius",
+      "it": "Licinio",
+      "fr": "Licinius",
+      "de": "Licinius",
+      "es": "Licinio",
+      "pt": "Licínio"
+    }
+  },
   "Q185117": {
     "description": {
       "en": "2nd century CE Christian apologist and martyr",
@@ -11154,7 +12091,7 @@
       "fr": "Barnabé",
       "de": "Barnabas (Apostel)",
       "es": "Bernabé apóstol",
-      "pt": "Barnabé (Bíblia)"
+      "pt": "Barnabé (apóstolo)"
     }
   },
   "Q185924": {
@@ -11321,6 +12258,40 @@
       "de": "Jesaja",
       "es": "Isaías (profeta)",
       "pt": "Isaías"
+    }
+  },
+  "Q189095": {
+    "description": {
+      "en": "Roman emperor from 310 to 313",
+      "it": "imperatore romano (r. 305-313)",
+      "fr": "empereur romain de 310 à 313",
+      "de": "römischer Kaiser (305–313)",
+      "es": "Emperador romano de oriente (310-313)",
+      "pt": "ex-imperador romano"
+    },
+    "born": {
+      "year": 270,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 313,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bronze bust of Maximinus Daia.jpg",
+      "author": "https://www.flickr.com/photos/annedavid2012/",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Maximinus Daza",
+      "it": "Massimino Daia",
+      "fr": "Maximin II Daïa",
+      "de": "Maximinus Daia",
+      "es": "Maximino Daya",
+      "pt": "Maximino Daia"
     }
   },
   "Q189700": {
@@ -12738,6 +13709,39 @@
       "pt": "Timóteo de Éfeso"
     }
   },
+  "Q212732": {
+    "description": {
+      "en": "The 24th Sassanid emperor (590–628)",
+      "it": "imperatore sasanide (r. 590-628)",
+      "fr": "empereur Sassanide",
+      "de": "Großkönig des Sassanidenreichs von 590 bis 628",
+      "es": "Vigésimo séptimo Rey del Imperio de los Iranios"
+    },
+    "born": {
+      "year": 570,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 628,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "KhosrauIIGoldCoinCroppedHistoryofIran.jpg",
+      "author": "Classical Numismatic Group; [1]",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+    },
+    "wikipedia": {
+      "en": "Khosrow II",
+      "it": "Cosroe II",
+      "fr": "Khosro II",
+      "de": "Chosrau II.",
+      "es": "Cosroes II",
+      "pt": "Cosroes II"
+    }
+  },
   "Q212850": {
     "description": {
       "en": "3rd or 4th-century Sicilian saint",
@@ -12836,6 +13840,39 @@
       "de": "Karl Borromäus",
       "es": "Carlos Borromeo",
       "pt": "Carlos Borromeu"
+    }
+  },
+  "Q217620": {
+    "description": {
+      "en": "Visigothic king",
+      "it": "sovrano visigoto",
+      "fr": "roi des Wisigoths de 466 à 484",
+      "de": "König der Westgoten",
+      "es": "rey de los visigodos"
+    },
+    "born": {
+      "year": 420,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 484,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Eurico, rey de los Visigodos (Museo del Prado).jpg",
+      "author": "Manuel Rodríguez de Guzmán",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Euric",
+      "it": "Eurico",
+      "fr": "Euric",
+      "de": "Eurich",
+      "es": "Eurico",
+      "pt": "Eurico"
     }
   },
   "Q217791": {
@@ -13802,6 +14839,39 @@
       "de": "Maria Goretti",
       "es": "María Goretti",
       "pt": "Maria Goretti"
+    }
+  },
+  "Q234860": {
+    "description": {
+      "en": "Sasanian emperor",
+      "it": "imperatore sasanide (r. 309-379)",
+      "fr": "roi sassanide",
+      "de": "persischer Sassanidenkönig",
+      "es": "décimo Rey del Imperio de los Iranios"
+    },
+    "born": {
+      "year": 309,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 379,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Bust of Shapur II the Great in the Metropolitan Museum of Art.jpg",
+      "author": null,
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
+    "wikipedia": {
+      "en": "Shapur II",
+      "it": "Sapore II",
+      "fr": "Chapour II",
+      "de": "Schapur II.",
+      "es": "Sapor II",
+      "pt": "Sapor II"
     }
   },
   "Q235377": {
@@ -15535,6 +16605,39 @@
       "pt": "Julian Maunoir"
     }
   },
+  "Q251836": {
+    "description": {
+      "en": "Lombard king",
+      "it": "re dei Longobardi in Italia (r. 712-744)",
+      "fr": "roi des Lombards",
+      "de": "König der Langobarden",
+      "es": "rey de los lombardos"
+    },
+    "born": {
+      "year": 680,
+      "precision": "decade",
+      "circa": true
+    },
+    "died": {
+      "year": 744,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Tremisse di liutprando duca, benevento 742-751, 02.jpg",
+      "author": "Sailko",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
+    "wikipedia": {
+      "en": "Liutprand, King of the Lombards",
+      "it": "Liutprando",
+      "fr": "Liutprand",
+      "de": "Liutprand (König)",
+      "es": "Liutprando",
+      "pt": "Liuprando (rei)"
+    }
+  },
   "Q252055": {
     "description": {
       "en": "Spanish saint",
@@ -16560,7 +17663,7 @@
     "died": null,
     "image": {
       "file": "Getijdenboek Van Reynegom (verluchting), KBS-FRB 49.jpg",
-      "author": null,
+      "author": "King Baudouin Foundation, photo: Philippe de Formanoir",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -17335,7 +18438,7 @@
     },
     "image": {
       "file": "Liguori.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "www.introibo.fr",
       "license": "CC BY-SA 3.0",
       "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
     },
@@ -17883,6 +18986,38 @@
       "de": "Lambert von Lüttich",
       "es": "Lamberto de Maastricht",
       "pt": "Lamberto de Maastricht"
+    }
+  },
+  "Q284003": {
+    "description": {
+      "en": "Umayyad caliph",
+      "it": "califfo della dinastia omayyade",
+      "de": "Kalif der Umayyaden",
+      "es": "califa omeya"
+    },
+    "born": {
+      "year": 668,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 715,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Gold dinar of al-Walid 707-708 CE.jpg",
+      "author": "Not credited",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Al-Walid I",
+      "it": "Al-Walid ibn Abd al-Malik",
+      "fr": "Al-Walīd Ier",
+      "de": "Al-Walid I.",
+      "es": "Walid I",
+      "pt": "Alualide I"
     }
   },
   "Q284255": {
@@ -18510,7 +19645,7 @@
     },
     "image": {
       "file": "Saint Paul confiant la lettre à Phébée (cropped).jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Gallica",
       "license": "CC BY 4.0",
       "license_url": "https://creativecommons.org/licenses/by/4.0"
     },
@@ -19250,6 +20385,38 @@
       "pt": "Abão de Fleury"
     }
   },
+  "Q309919": {
+    "description": {
+      "en": "King of Neustria and Burgundy",
+      "it": "re franco della dinastia merovingia",
+      "fr": "roi de Neustrie et de Bourgogne",
+      "de": "merowingischer König im Frankenreich"
+    },
+    "born": {
+      "year": 635,
+      "precision": "year",
+      "circa": true
+    },
+    "died": {
+      "year": 657,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Tiers de sous d'or de Clovis II.png",
+      "author": "Tiers_de_sous_d'or_de_Clovis_II.jpg: Eligius derivative work: Leovilok (talk)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Clovis II",
+      "it": "Clodoveo II",
+      "fr": "Clovis II",
+      "de": "Chlodwig II.",
+      "es": "Clodoveo II",
+      "pt": "Clóvis II"
+    }
+  },
   "Q309953": {
     "description": {
       "en": "patron saint of the Armenian Apostolic Church (c.257–c.331)",
@@ -19513,6 +20680,39 @@
       "pt": "Simeão Estilita, o Antigo"
     }
   },
+  "Q311888": {
+    "description": {
+      "en": "King of the Vandals",
+      "it": "re dei Vandali",
+      "fr": "roi des Vandales et des Alains de 496 à 523",
+      "de": "Herrscher der Vandalen und Alanen",
+      "es": "rey de los vándalos"
+    },
+    "born": {
+      "year": 450,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 523,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Denarius of Thrasamund.jpg",
+      "author": "Classical Numismatic Group, Inc. http://www.cngcoins.com",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+    },
+    "wikipedia": {
+      "en": "Thrasamund",
+      "it": "Trasamondo",
+      "fr": "Thrasamund",
+      "de": "Thrasamund",
+      "es": "Trasamundo",
+      "pt": "Trasamundo"
+    }
+  },
   "Q312057": {
     "description": {
       "en": "Polish and Lithuanian prince (1458–1484)",
@@ -19612,6 +20812,39 @@
       "de": "Silas (Bibel)",
       "es": "Silas",
       "pt": "Silas (Bíblia)"
+    }
+  },
+  "Q312606": {
+    "description": {
+      "en": "King of Austrasia",
+      "it": "re franco della dinastia merovingia",
+      "fr": "roi d’Austrasie de 575 à 596, et, à partir de 592, roi de la Bourgogne et de l’Orléanais",
+      "de": "merowingischer Frankenkönig",
+      "es": "rey franco de Austrasia, en el noreste de Francia"
+    },
+    "born": {
+      "year": 570,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 596,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Gontran devant Childebert II.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Childebert II",
+      "it": "Childeberto II",
+      "fr": "Childebert II",
+      "de": "Childebert II.",
+      "es": "Childeberto II",
+      "pt": "Quildeberto II"
     }
   },
   "Q312758": {
@@ -21766,6 +22999,39 @@
       "pt": "Ceslau"
     }
   },
+  "Q334452": {
+    "description": {
+      "en": "The ninth emperor (and the seventh after defeating Ming) of the Qing Dynasty (1831-1861)",
+      "it": "imperatore cinese",
+      "fr": "empereur chinois",
+      "de": "Chinesischer Kaiser",
+      "es": "Emperador de la Dinastía Qing del Imperio chino"
+    },
+    "born": {
+      "year": 1831,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1861,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "《咸丰皇帝朝服像》.jpg",
+      "author": "Qing Dynasty Court Painter",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Xianfeng Emperor",
+      "it": "Xianfeng",
+      "fr": "Xianfeng",
+      "de": "Xianfeng",
+      "es": "Xianfeng",
+      "pt": "Xianfeng"
+    }
+  },
   "Q335127": {
     "description": {
       "en": "prophet",
@@ -22889,9 +24155,9 @@
   },
   "Q356455": {
     "description": {
-      "en": "Irish archbishop (1094-1148)",
-      "it": "abate e arcivescovo cattolico irlandese",
-      "fr": "archevêque catholique",
+      "en": "Irish Roman Catholic abbot, archbishop and saint (1094-1148)",
+      "it": "abate, arcivescovo e santo cattolico irlandese (1094-1148)",
+      "fr": "abbé, archevêque et saint catholique irlandais (1094-1148)",
       "de": "christlicher Heiliger",
       "es": "arzobispo irlandés"
     },
@@ -30121,6 +31387,36 @@
       "es": "Teresa María Manetti"
     }
   },
+  "Q466976": {
+    "description": {
+      "en": "Vietnamese emperor (1829–1883)",
+      "it": "quarto imperatore del Vietnam (1829-1883)",
+      "fr": "empereur vietnamien",
+      "de": "vietnamesischer Kaiser, vierter Kaiser der Nguyễn-Dynastie (1847–1883)"
+    },
+    "born": {
+      "year": 1829,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1883,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Vua Tu Duc.jpg",
+      "author": "The original uploader was Docteur Rieux at Vietnamese Wikipedia.",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Tự Đức",
+      "it": "Tự Đức",
+      "fr": "Tự Đức",
+      "de": "Tự Đức"
+    }
+  },
   "Q466996": {
     "description": {
       "en": "Congolese martyr (1939–1964)",
@@ -31133,7 +32429,7 @@
       "license_url": null
     },
     "wikipedia": {
-      "en": "Pierre de Luxembourg",
+      "en": "Peter of Luxembourg (bishop)",
       "it": "Pietro di Lussemburgo",
       "fr": "Pierre de Luxembourg",
       "de": "Peter von Luxemburg",
@@ -35709,7 +37005,7 @@
     },
     "image": {
       "file": "Getijdenboek Van Reynegom (verluchting), KBS-FRB 39.jpg",
-      "author": null,
+      "author": "King Baudouin Foundation, photo: Philippe de Formanoir",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -38463,7 +39759,7 @@
     },
     "image": {
       "file": "Eustaci b.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Il·lustració dels Goigs de sant Eustaci https://algunsgoigs.blogspot.com/2022/11/goigs-labat-sant-eustaci-de-luxeuil.html",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -39482,6 +40778,32 @@
       "pt": "Raimundo Nonato"
     }
   },
+  "Q704455": {
+    "description": {
+      "en": "7th Trịnh Lord",
+      "de": "Siebter Trịnh-Fürst"
+    },
+    "born": {
+      "year": 1720,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1767,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Trịnh Doanh.png",
+      "author": "Trịnh Như Tấu",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Trịnh Doanh",
+      "fr": "Trịnh Doanh"
+    }
+  },
   "Q704817": {
     "description": {
       "en": "Christian martyr",
@@ -39789,7 +41111,7 @@
     },
     "image": {
       "file": "Pavol Godjic.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Erzeparchie Prestov - www.grkatpo.sk/historia_biskupi",
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
     },
@@ -39956,6 +41278,39 @@
       "de": "Fructuosus von Tarragona",
       "es": "Fructuoso de Tarragona",
       "pt": "Frutuoso de Tarragona"
+    }
+  },
+  "Q707775": {
+    "description": {
+      "en": "Kabaka of Uganda",
+      "it": "kabaka del Buganda",
+      "fr": "kabaka du Bouganda (1884-1888 et 1889-1897)",
+      "de": "Kabaka (König) von Buganda",
+      "es": "rey de Buganda"
+    },
+    "born": {
+      "year": 1868,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1903,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "King Mwanga II Buganda.jpg",
+      "author": "Deutsche Kolonialgesellschaft (DKG)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Mwanga II of Buganda",
+      "it": "Mwanga II di Buganda",
+      "fr": "Mwanga II",
+      "de": "Mwanga II.",
+      "es": "Mwanga II",
+      "pt": "Muanga II"
     }
   },
   "Q709209": {
@@ -50893,6 +52248,38 @@
       "de": "Wera von Utrecht"
     }
   },
+  "Q1268674": {
+    "description": {
+      "en": "founder of Donatism",
+      "it": "vescovo cattolico",
+      "fr": "évêque de Casae Nigrae en Numidie",
+      "de": "karthagischer Geistlicher"
+    },
+    "born": {
+      "year": 250,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 355,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Donatus from Nuremberg Chronicle.jpg",
+      "author": "Unknown authorUnknown author",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "en": "Donatus Magnus",
+      "it": "Donato di Case Nere",
+      "fr": "Donatus Magnus",
+      "de": "Donatus von Karthago",
+      "es": "Donato Magno",
+      "pt": "Donato Magno"
+    }
+  },
   "Q1268935": {
     "description": {
       "en": "French bishop and saint",
@@ -56339,7 +57726,7 @@
     },
     "image": {
       "file": "Géraud d'Aurillac.jpg",
-      "author": null,
+      "author": "Icône sd anonyme evêché Saint-Flour",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -59073,7 +60460,7 @@
     },
     "image": {
       "file": "Blessed Edward Gryzmala.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Wloclawek Diocese",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -64175,6 +65562,7 @@
       "en": "Marie Louise Trichet",
       "it": "Marie-Louise Trichet",
       "fr": "Marie-Louise Trichet",
+      "de": "Marie-Louise Trichet",
       "es": "Marie Louise Trichet",
       "pt": "Marie Louise Trichet"
     }
@@ -65481,7 +66869,7 @@
     },
     "image": {
       "file": "British Museum Emerentiana stoned.jpg",
-      "author": null,
+      "author": "Johnbod (Own work)",
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
     },
@@ -80659,7 +82047,7 @@
     },
     "image": {
       "file": "San Augusto de Bourges.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Goigs de sant August (en castellà) https://algunsgoigs.blogspot.com/2022/11/goigs-sant-august-abat-en-castella.html",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -81036,6 +82424,22 @@
     "wikipedia": {
       "en": "Mocius",
       "it": "Mocio di Anfipoli"
+    }
+  },
+  "Q3655677": {
+    "description": {
+      "en": "urban prefect of Rome in 391",
+      "it": "politico romano",
+      "fr": "préfet de Rome en 391",
+      "pt": "político"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "en": "Faltonius Probus Alypius",
+      "it": "Faltonio Probo Alypio",
+      "pt": "Faltônio Probo Alípio"
     }
   },
   "Q3663117": {
@@ -81928,7 +83332,7 @@
     "died": null,
     "image": {
       "file": "Sant'Eumenio.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "www.tuttocollezioni.it",
       "license": "FAL",
       "license_url": "http://artlibre.org/licence/lal/en"
     },
@@ -94721,7 +96125,7 @@
     },
     "image": {
       "file": "Sanxo (sanç) b.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Il·lustració dels Goigs de sant Sanxo (Sanç) 1874",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -96978,9 +98382,9 @@
   },
   "Q6801709": {
     "description": {
-      "en": "Spanish catholic bishop",
-      "it": "vescovo cattolico spagnolo",
-      "fr": "évêque missionnaire espagnol",
+      "en": "Spanish Roman Catholic bishop (1800-1861)",
+      "it": "vescovo cattolico spagnolo (1800-1861)",
+      "fr": "évêque missionnaire espagnol (1800-1861)",
       "de": "spanischer Geistlicher, Bischof von Miletopolis",
       "es": "Obispo santo y mártir dominico"
     },
@@ -102597,7 +104001,7 @@
     },
     "image": {
       "file": "Valentino-Vinh.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Tiếng Việt: vinhanonline (Vui lòng ghi rõ nguồn vinhanonline.com khi phát hành lại thông tin từ website này.) Englisch: Please specify source when vinhanonline.com redistribute information from this website.",
       "license": "CC BY-SA 3.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
     },
@@ -111177,7 +112581,7 @@
     },
     "image": {
       "file": "Sant Cir d'Alexandria.jpg",
-      "author": "Unknown authorUnknown author",
+      "author": "Il·lustració dels Goigs de sant Cir",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
@@ -113080,6 +114484,17 @@
     },
     "wikipedia": {
       "pt": "Lêucio de Apolônia"
+    }
+  },
+  "Q18279107": {
+    "description": {
+      "en": "late Roman senator"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "pt": "Optato (prefeito urbano)"
     }
   },
   "Q18288245": {
@@ -124483,6 +125898,16 @@
       "en": "Paulina of Thuringia"
     }
   },
+  "Q95066394": {
+    "description": {
+      "en": "governor of the province of Hispania citerior in the 3rd century AD",
+      "es": "s. III - s. III, gobernador de la provincia de Hispania citerior"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
   "Q95277872": {
     "description": {
       "en": "disciple of Maximus the Confessor",
@@ -128174,6 +129599,19 @@
     },
     "image": null,
     "wikipedia": {}
+  },
+  "Q129167724": {
+    "description": {
+      "en": "bishop of Clermont and saint",
+      "fr": "prêtre catholique"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "en": "Avitus II of Clermont",
+      "fr": "Avit II de Clermont"
+    }
   },
   "Q130225658": {
     "description": {},

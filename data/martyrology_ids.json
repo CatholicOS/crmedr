@@ -1199,15 +1199,6 @@
           "country": "FR"
         },
         {
-          "role": "mention",
-          "la": "Autissiodorénsi",
-          "it": "Auxerre",
-          "source": "curated",
-          "wikidata": "Q167600",
-          "label": "Auxerre",
-          "country": "FR"
-        },
-        {
           "role": "birth",
           "la": "Nemptodurénsis",
           "it": "Nanterre",
@@ -5354,15 +5345,6 @@
           "wikidata": "Q42168",
           "label": "Clermont-Ferrand",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -6174,15 +6156,6 @@
           "source": "lead",
           "wikidata": "Q818032",
           "label": "Moûtiers",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Lirinénsis",
-          "it": "Lérins",
-          "source": "curated",
-          "wikidata": "Q334008",
-          "label": "Abbaye Saint-Honorat de Lérins",
           "country": "FR"
         }
       ],

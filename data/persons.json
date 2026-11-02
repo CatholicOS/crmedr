@@ -24,6 +24,11 @@
         {
           "name": "Almachius",
           "where": "text"
+        },
+        {
+          "name": "Alypius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0101-eugendus-condatiscensis": [
@@ -36,6 +41,11 @@
         {
           "name": "Fulgentius",
           "where": "text"
+        },
+        {
+          "name": "Thrasamundus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0101-clarus-viennae": [
@@ -128,6 +138,11 @@
         {
           "name": "Telesphorus",
           "where": "text"
+        },
+        {
+          "name": "Irenaeus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0102-argeus-et-socii": [
@@ -148,12 +163,27 @@
         {
           "name": "Theodorus",
           "where": "text"
+        },
+        {
+          "name": "Childebertus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Guntramnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0102-bladulphus-bobiensis": [
         {
           "name": "Bladulphus",
           "where": "text"
+        },
+        {
+          "name": "Columbanus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0102-ioannes-bonus": [
@@ -227,6 +257,11 @@
         {
           "name": "Antherus",
           "where": "text"
+        },
+        {
+          "name": "Pontianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0103-theopemptus-et-theona": [
@@ -237,12 +272,27 @@
         {
           "name": "Theona",
           "where": "text"
+        },
+        {
+          "name": "Diocletianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0103-gordius-caesareae": [
         {
           "name": "Gordius",
           "where": "text"
+        },
+        {
+          "name": "Basilius",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Diocletianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0103-daniel-patavii": [
@@ -255,6 +305,11 @@
         {
           "name": "Theogenes",
           "where": "text"
+        },
+        {
+          "name": "Licinius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0103-florentius-viennae": [
@@ -267,6 +322,11 @@
         {
           "name": "Genovefa",
           "where": "text"
+        },
+        {
+          "name": "Germanus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0103-lucianus-leontii": [
@@ -295,6 +355,11 @@
         {
           "name": "Abrunculus",
           "where": "text"
+        },
+        {
+          "name": "Sidonius Apollinaris",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0104-gregorius-lingonensis": [
@@ -319,6 +384,11 @@
         {
           "name": "Rigobertus",
           "where": "text"
+        },
+        {
+          "name": "Carolus Martellus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0104-pharaildis-bruaci": [
@@ -331,6 +401,11 @@
         {
           "name": "Angela",
           "where": "text"
+        },
+        {
+          "name": "Franciscus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0104-oringa-menabuoi": [
@@ -346,6 +421,11 @@
         {
           "name": "Thomas Plumtree",
           "where": "text"
+        },
+        {
+          "name": "Elisabeth",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0104-elisabeth-anna-seton": [
@@ -376,6 +456,16 @@
         {
           "name": "Aemiliana",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Magnus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Tharsilla",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0105-convoio-abbas": [
@@ -400,6 +490,11 @@
         {
           "name": "Rogerius",
           "where": "text"
+        },
+        {
+          "name": "Franciscus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0105-franciscus-peltier-et-socii": [
@@ -532,6 +627,11 @@
         {
           "name": "Polyeuctus",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0107-lucianus-nicomediae": [
@@ -562,6 +662,11 @@
         {
           "name": "Tillo",
           "where": "text"
+        },
+        {
+          "name": "Eligius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0107-cyrus-constantinopolis": [
@@ -598,6 +703,11 @@
         {
           "name": "Iosephus Tuan",
           "where": "text"
+        },
+        {
+          "name": "Tu Duc",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0107-ioanna-haze": [
@@ -613,6 +723,11 @@
         {
           "name": "Apollinaris",
           "where": "text"
+        },
+        {
+          "name": "Marcus Aurelius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0108-theophilus-et-helladius": [
@@ -649,6 +764,11 @@
         {
           "name": "Severinus",
           "where": "text"
+        },
+        {
+          "name": "Attila",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0108-maximus-papiae": [
@@ -697,12 +817,22 @@
         {
           "name": "Eduardus Waterson",
           "where": "text"
+        },
+        {
+          "name": "Elisabeth",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0109-marcellinus-anconae": [
         {
           "name": "Marcellinus",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Magnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0109-hadrianus-cantuariae": [
@@ -748,6 +878,11 @@
             "Maria Teresia a Iesu Le Clerc"
           ],
           "where": "text"
+        },
+        {
+          "name": "Petrus Fourier",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0109-agatha-yi-et-teresia-kim": [
@@ -774,6 +909,16 @@
         {
           "name": "Miltiades",
           "where": "text"
+        },
+        {
+          "name": "Constantinus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Donatus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0110-paulus-thebaidis": [
@@ -786,6 +931,16 @@
         {
           "name": "Gregorius Nyssenus",
           "where": "text"
+        },
+        {
+          "name": "Basilius Magnus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Valens",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0110-ioannes-hierosolymorum": [
@@ -897,6 +1052,11 @@
         {
           "name": "Salvius",
           "where": "text"
+        },
+        {
+          "name": "Augustinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-typasius-tigavae": [
@@ -912,6 +1072,11 @@
             "Petrus Balsamus"
           ],
           "where": "text"
+        },
+        {
+          "name": "Maximinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-leucius-brundisii": [
@@ -924,18 +1089,33 @@
         {
           "name": "Honorata",
           "where": "text"
+        },
+        {
+          "name": "Epiphanius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-theodosius-coenobiarcha": [
         {
           "name": "Theodosius",
           "where": "text"
+        },
+        {
+          "name": "Sabas",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-paulinus-aquileiensis": [
         {
           "name": "Paulinus",
           "where": "text"
+        },
+        {
+          "name": "Carolus Magnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-bernardus-scammacca": [
@@ -948,6 +1128,11 @@
         {
           "name": "Gulielmus Carter",
           "where": "text"
+        },
+        {
+          "name": "Elisabeth",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0111-franciscus-antonius-placidi": [
@@ -979,12 +1164,32 @@
         {
           "name": "Eutropius",
           "where": "text"
+        },
+        {
+          "name": "Arcadius",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Ioannes Chrysostomus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Optatus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0112-caesaria-abbatissa": [
         {
           "name": "Caesaria",
           "where": "text"
+        },
+        {
+          "name": "Caesarius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0112-ferreolus-gratianopoli": [
@@ -1051,6 +1256,16 @@
         {
           "name": "Hilarius",
           "where": "text"
+        },
+        {
+          "name": "Constantius",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Matthaeus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-hermylius-et-stratonicus": [
@@ -1061,18 +1276,33 @@
         {
           "name": "Stratonicus",
           "where": "text"
+        },
+        {
+          "name": "Licinius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-agricius-trevirorum": [
         {
           "name": "Agricius",
           "where": "text"
+        },
+        {
+          "name": "Helena",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-remigius-remorum": [
         {
           "name": "Remigius",
           "where": "text"
+        },
+        {
+          "name": "Clodoveus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-kentigernus-glasguae": [
@@ -1085,6 +1315,11 @@
         {
           "name": "Petrus",
           "where": "text"
+        },
+        {
+          "name": "Walid",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-gumesindus-et-servusdei": [
@@ -1127,6 +1362,11 @@
         {
           "name": "Iosephus Pham Trong Ta",
           "where": "text"
+        },
+        {
+          "name": "Tu Duc",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0113-aemilius-szramek": [
@@ -1151,6 +1391,11 @@
         {
           "name": "Felix",
           "where": "text"
+        },
+        {
+          "name": "Paulinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0114-nino-hiberorum": [
@@ -1169,18 +1414,43 @@
         {
           "name": "Euphrasius",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Turonensis",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0114-datius-mediolani": [
         {
           "name": "Datius",
           "where": "text"
+        },
+        {
+          "name": "Vigilius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0114-fulgentius-astigi": [
         {
           "name": "Fulgentius",
           "where": "text"
+        },
+        {
+          "name": "Leander",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Isidorus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Florentina",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0114-odo-novariensis": [
@@ -1223,6 +1493,11 @@
         {
           "name": "Probus",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Magnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0115-maurus-glannafolii": [
@@ -1259,6 +1534,11 @@
         {
           "name": "Bonitus",
           "where": "text"
+        },
+        {
+          "name": "Avitus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0115-arsenius-armi": [
@@ -1271,6 +1551,11 @@
         {
           "name": "Petrus de Castronovo",
           "where": "text"
+        },
+        {
+          "name": "Innocentius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0115-iacobus-eleemosynarius": [
@@ -1307,6 +1592,11 @@
         {
           "name": "Marcellus I",
           "where": "text"
+        },
+        {
+          "name": "Damasus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0116-danax-aulonis": [
@@ -1319,6 +1609,11 @@
         {
           "name": "Mela",
           "where": "text"
+        },
+        {
+          "name": "Valens",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0116-honoratus-arelatis": [
@@ -1331,6 +1626,11 @@
         {
           "name": "Iacobus",
           "where": "text"
+        },
+        {
+          "name": "Honoratus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0116-titianus-opitergii": [
@@ -1343,6 +1643,11 @@
         {
           "name": "Leobatius",
           "where": "text"
+        },
+        {
+          "name": "Ursus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0116-trivierus-dumbensis": [
@@ -1383,6 +1688,11 @@
         {
           "name": "Adiutus",
           "where": "text"
+        },
+        {
+          "name": "Franciscus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0116-iosephus-vaz": [
@@ -1407,6 +1717,16 @@
         {
           "name": "Antonius",
           "where": "text"
+        },
+        {
+          "name": "Diocletianus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Athanasius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0117-speusippus-et-socii": [
@@ -1437,6 +1757,11 @@
         {
           "name": "Marcellus",
           "where": "text"
+        },
+        {
+          "name": "Euricus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0117-sulpicius-pius": [
@@ -1449,6 +1774,11 @@
         {
           "name": "Gamelbertus",
           "where": "text"
+        },
+        {
+          "name": "Utto",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0117-rosselina-cellae-robaudi": [
@@ -1475,6 +1805,11 @@
         {
           "name": "Lucius",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0118-cosconius-et-socii": [
@@ -1507,6 +1842,11 @@
         {
           "name": "Deicolus",
           "where": "text"
+        },
+        {
+          "name": "Columbanus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0118-beatrix-estensis": [
@@ -1519,6 +1859,11 @@
         {
           "name": "Margarita",
           "where": "text"
+        },
+        {
+          "name": "Bela IV",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0118-facius-cremonae": [
@@ -1583,12 +1928,27 @@
         {
           "name": "Polycarpus",
           "where": "text"
+        },
+        {
+          "name": "Marcus Antoninus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Lucius Aurelius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0119-pontianus-spoleti": [
         {
           "name": "Pontianus",
           "where": "text"
+        },
+        {
+          "name": "Antoninus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0119-marius-et-socii": [
@@ -1625,6 +1985,11 @@
         {
           "name": "Bassianus",
           "where": "text"
+        },
+        {
+          "name": "Ambrosius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0119-liberata-et-faustina": [
@@ -1647,12 +2012,22 @@
         {
           "name": "Ioannes",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Magnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0119-remigius-rothomagi": [
         {
           "name": "Remigius",
           "where": "text"
+        },
+        {
+          "name": "Pippinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0119-arsenius-corcyrae": [
@@ -1671,12 +2046,27 @@
         {
           "name": "Fabianus",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Cyprianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0120-sebastianus-romae": [
         {
           "name": "Sebastianus",
           "where": "text"
+        },
+        {
+          "name": "Ambrosius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0120-ascla-antinoes": [
@@ -1719,6 +2109,11 @@
         {
           "name": "Eustochius Calafato",
           "where": "text"
+        },
+        {
+          "name": "Franciscus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0120-stephanus-min-kuk-ka": [
@@ -1769,6 +2164,21 @@
         {
           "name": "Eulogius",
           "where": "text"
+        },
+        {
+          "name": "Valerianus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Gallienus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Aemilianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0121-patroclus-trecarum": [
@@ -1803,6 +2213,11 @@
         {
           "name": "Nicolaus Wheeler",
           "where": "text"
+        },
+        {
+          "name": "Elisabeth I",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0121-albanus-roe": [
@@ -1813,6 +2228,11 @@
         {
           "name": "Thomas Green",
           "where": "text"
+        },
+        {
+          "name": "Carolus I",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0121-iosepha-maria-a-sancta-agnete": [
@@ -1915,6 +2335,11 @@
         {
           "name": "Vincentius",
           "where": "text"
+        },
+        {
+          "name": "Diocletianus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-valerius-caesaraugustanus": [
@@ -1937,12 +2362,22 @@
         {
           "name": "Anastasius",
           "where": "text"
+        },
+        {
+          "name": "Chosroes",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-barnardus-viennensis": [
         {
           "name": "Barnardus",
           "where": "text"
+        },
+        {
+          "name": "Carolus Magnus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-dominicus-sorae": [
@@ -1955,6 +2390,11 @@
         {
           "name": "Maria Mancini",
           "where": "text"
+        },
+        {
+          "name": "Catharina Senensis",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-antonius-della-chiesa": [
@@ -1967,6 +2407,11 @@
         {
           "name": "Gulielmus Patenson",
           "where": "text"
+        },
+        {
+          "name": "Elisabeth I",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana": [
@@ -1977,6 +2422,11 @@
         {
           "name": "Matthaeus Alonso de Leziniana",
           "where": "text"
+        },
+        {
+          "name": "Trinh Doanh",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0122-vincentius-pallotti": [
@@ -2057,12 +2507,22 @@
         {
           "name": "Andreas Chong Hwa Gyong",
           "where": "text"
+        },
+        {
+          "name": "Laurentius Imbert",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0124-franciscus-de-sales": [
         {
           "name": "Franciscus de Sales",
           "where": "text"
+        },
+        {
+          "name": "Ioanna de Chantal",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0124-felicianus-fulginii": [
@@ -2093,6 +2553,11 @@
         {
           "name": "Epolonus",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0124-exsuperantius-cinguli": [
@@ -2115,6 +2580,11 @@
         {
           "name": "Ioannes Grove",
           "where": "text"
+        },
+        {
+          "name": "Carolus II",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0124-maria-poussepin": [
@@ -2220,6 +2690,11 @@
         {
           "name": "Ananias",
           "where": "text"
+        },
+        {
+          "name": "Paulus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0125-arthemas-puteolorum": [
@@ -2232,6 +2707,11 @@
         {
           "name": "Agileus",
           "where": "text"
+        },
+        {
+          "name": "Augustinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0125-gregorius-nazianzenus": [
@@ -2244,12 +2724,22 @@
         {
           "name": "Bretannion",
           "where": "text"
+        },
+        {
+          "name": "Valens",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0125-palaemon-tabennesi": [
         {
           "name": "Palaemon",
           "where": "text"
+        },
+        {
+          "name": "Pachomius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0125-praeiectus-et-amarinus": [
@@ -2318,18 +2808,33 @@
         {
           "name": "Titus",
           "where": "text"
+        },
+        {
+          "name": "Paulus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0126-theogenes-hipponis": [
         {
           "name": "Theogenes",
           "where": "text"
+        },
+        {
+          "name": "Augustinus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0126-paula-bethlehem": [
         {
           "name": "Paula",
           "where": "text"
+        },
+        {
+          "name": "Eustochium",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0126-xenophon-et-maria": [
@@ -2387,6 +2892,11 @@
         {
           "name": "Iulianus Sorae",
           "where": "text"
+        },
+        {
+          "name": "Antoninus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0127-iulianus-cenomanum": [
@@ -2423,6 +2933,11 @@
         {
           "name": "Gilduinus",
           "where": "text"
+        },
+        {
+          "name": "Gregorius VII",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0127-ioannes-morinensis": [
@@ -2447,6 +2962,11 @@
         {
           "name": "Ioannes Maria",
           "where": "text"
+        },
+        {
+          "name": "Mwenga",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0127-henricus-de-osso-y-cervello": [
@@ -2465,6 +2985,11 @@
         {
           "name": "Thomas de Aquino",
           "where": "text"
+        },
+        {
+          "name": "Gregorius X",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0128-ioannes-reomaensis": [
@@ -2509,6 +3034,11 @@
         {
           "name": "Laurentius Wang Bing",
           "where": "text"
+        },
+        {
+          "name": "Wenzongxian",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0128-iosephus-freinademetz": [
@@ -2540,6 +3070,11 @@
         {
           "name": "Bebaia",
           "where": "text"
+        },
+        {
+          "name": "Barsimaeus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0129-papias-et-maurus": [
@@ -2566,6 +3101,11 @@
         {
           "name": "Maximinus",
           "where": "text"
+        },
+        {
+          "name": "Iulianus Apostata",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0129-valerius-trevirorum": [
@@ -2590,6 +3130,11 @@
         {
           "name": "Sulpicius Severus",
           "where": "text"
+        },
+        {
+          "name": "Gregorius Turonensis",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0129-villana-de-bottis": [
@@ -2620,30 +3165,60 @@
         {
           "name": "Martina",
           "where": "text"
+        },
+        {
+          "name": "Donus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-bathildis-calae": [
         {
           "name": "Bathildis",
           "where": "text"
+        },
+        {
+          "name": "Clodoveus II",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-aldegundis-malbodii": [
         {
           "name": "Aldegundis",
           "where": "text"
+        },
+        {
+          "name": "Dagobertus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-armentarius-papiae": [
         {
           "name": "Armentarius",
           "where": "text"
+        },
+        {
+          "name": "Augustinus",
+          "where": "text",
+          "role": "mentioned"
+        },
+        {
+          "name": "Liutprandus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-theophilus-iuvenis": [
         {
           "name": "Theophilus Iuvenis",
           "where": "text"
+        },
+        {
+          "name": "Arun",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-adelelmus-burgorum": [
@@ -2656,6 +3231,11 @@
         {
           "name": "Franciscus Taylor",
           "where": "text"
+        },
+        {
+          "name": "Iacobus I",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-hyacintha-mariscotti": [
@@ -2680,6 +3260,11 @@
         {
           "name": "Thomas Khuong",
           "where": "text"
+        },
+        {
+          "name": "Tu Duc",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0130-david-galvan": [
@@ -2722,6 +3307,11 @@
         {
           "name": "Ioannes Bosco",
           "where": "text"
+        },
+        {
+          "name": "Maria Dominica Mazzarello",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0131-victorinus-et-socii": [
@@ -2752,12 +3342,22 @@
         {
           "name": "Papias",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0131-metranus-alexandriae": [
         {
           "name": "Metranus",
           "where": "text"
+        },
+        {
+          "name": "Decius",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0131-cyrus-et-ioannes": [
@@ -2780,6 +3380,11 @@
         {
           "name": "Abraham",
           "where": "text"
+        },
+        {
+          "name": "Sapor",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0131-iulius-novariae": [
@@ -2792,6 +3397,11 @@
         {
           "name": "Marcella",
           "where": "text"
+        },
+        {
+          "name": "Hieronymus",
+          "where": "text",
+          "role": "mentioned"
         }
       ],
       "mr:0131-maedhoc-fernae": [
@@ -41595,6 +42205,13 @@
         {
           "name": "Catharina Laboure",
           "where": "text"
+        }
+      ],
+      "mr:0106-epiphania-domini": [
+        {
+          "name": "Ioannes",
+          "where": "text",
+          "role": "mentioned"
         }
       ]
     }

@@ -10,6 +10,12 @@
       "Almachius": {
         "wikidata": "Q1115667",
         "status": "auto"
+      },
+      "Alypius": {
+        "wikidata": "Q3655677",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Faltonius Probus Alypius is the only Alypius attested as praefectus urbi of Rome (PUR 391, PLRE I p. 49), so he is the prefect of Ado's Almachius tradition, though Theodoret places the games' end under Honorius."
       }
     },
     "mr:0101-basilius-magnus": {
@@ -40,6 +46,12 @@
       "Fulgentius": {
         "wikidata": "Q380089",
         "status": "reviewed"
+      },
+      "Thrasamundus": {
+        "wikidata": "Q311888",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Thrasamund, king of the Vandals 496-523, exiled Fulgentius of Ruspe to Sardinia (Vita Fulgentii; Wikipedia)."
       }
     },
     "mr:0101-gulielmus-divionensis": {
@@ -158,6 +170,11 @@
       "Bladulphus": {
         "wikidata": "Q2905657",
         "status": "reviewed"
+      },
+      "Columbanus": {
+        "wikidata": "Q319653",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0102-gulielmus-repin-et-laurentius-batard": {
@@ -210,12 +227,27 @@
       "Telesphorus": {
         "wikidata": "Q81647",
         "status": "auto"
+      },
+      "Irenaeus": {
+        "wikidata": "Q182123",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0102-theodorus-massiliae": {
       "Theodorus": {
         "wikidata": "Q3526531",
         "status": "reviewed"
+      },
+      "Childebertus": {
+        "wikidata": "Q312606",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Guntramnus": {
+        "wikidata": "Q295086",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0102-vincentianus-tutelensis": {
@@ -228,6 +260,11 @@
       "Antherus": {
         "wikidata": "Q132100",
         "status": "reviewed"
+      },
+      "Pontianus": {
+        "wikidata": "Q132113",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0103-cyriacus-elias-chavara": {
@@ -252,12 +289,27 @@
       "Genovefa": {
         "wikidata": "Q235863",
         "status": "auto"
+      },
+      "Germanus": {
+        "wikidata": "Q442516",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0103-gordius-caesareae": {
       "Gordius": {
         "wikidata": "Q2701896",
         "status": "reviewed"
+      },
+      "Basilius": {
+        "wikidata": "Q44258",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Diocletianus": {
+        "wikidata": "Q43107",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0103-lucianus-leontii": {
@@ -270,6 +322,11 @@
       "Theogenes": {
         "wikidata": "Q97257127",
         "status": "reviewed"
+      },
+      "Licinius": {
+        "wikidata": "Q184549",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0103-theopemptus-et-theona": {
@@ -280,18 +337,34 @@
       "Theopemptus": {
         "wikidata": "Q7782258",
         "status": "reviewed"
+      },
+      "Diocletianus": {
+        "wikidata": "Q43107",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0104-abrunculus-lingonensis": {
       "Abrunculus": {
         "wikidata": "Q622146",
         "status": "reviewed"
+      },
+      "Sidonius Apollinaris": {
+        "wikidata": "Q302936",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0104-angela-fulginii": {
       "Angela": {
         "wikidata": "Q240297",
         "status": "reviewed"
+      },
+      "Franciscus": {
+        "wikidata": "Q676555",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Angela of Foligno was a Franciscan tertiary; the Francis meant is Francis of Assisi (Wikipedia, Angela of Foligno)."
       }
     },
     "mr:0104-elisabeth-anna-seton": {
@@ -344,6 +417,11 @@
       "Rigobertus": {
         "wikidata": "Q686561",
         "status": "reviewed"
+      },
+      "Carolus Martellus": {
+        "wikidata": "Q3301",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0104-rigomerus-meldorum": {
@@ -356,12 +434,29 @@
       "Thomas Plumtree": {
         "wikidata": "Q2523976",
         "status": "reviewed"
+      },
+      "Elisabeth": {
+        "wikidata": "Q7207",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Elizabeth I of England (r. 1558-1603), under whom Thomas Plumtree was executed in 1570 (Wikipedia)."
       }
     },
     "mr:0105-aemiliana-romae": {
       "Aemiliana": {
         "wikidata": "Q3588903",
         "status": "reviewed"
+      },
+      "Gregorius Magnus": {
+        "wikidata": "Q42827",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Tharsilla": {
+        "wikidata": "Q1416927",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Tarsilla, aunt of Gregory the Great and sister of Aemiliana (Gregory, Dialogues IV.17; item described as aunt of Gregory)."
       }
     },
     "mr:0105-convoio-abbas": {
@@ -442,6 +537,12 @@
       "Rogerius": {
         "wikidata": "Q16596944",
         "status": "reviewed"
+      },
+      "Franciscus": {
+        "wikidata": "Q676555",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Roger of Todi was received into the order by Francis of Assisi himself (Wikipedia, Roger of Todi)."
       }
     },
     "mr:0105-syncletica-alexandriae": {
@@ -466,6 +567,13 @@
       "Carolus de Setia": {
         "wikidata": "Q1733698",
         "status": "reviewed"
+      }
+    },
+    "mr:0106-epiphania-domini": {
+      "Ioannes": {
+        "wikidata": "Q40662",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0106-felix-nannetum": {
@@ -554,6 +662,11 @@
       "Iosephus Tuan": {
         "wikidata": "Q11731542",
         "status": "reviewed"
+      },
+      "Tu Duc": {
+        "wikidata": "Q466976",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0107-lucianus-nicomediae": {
@@ -572,6 +685,11 @@
       "Polyeuctus": {
         "wikidata": "Q942861",
         "status": "reviewed"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0107-raymundus-de-penyafort": {
@@ -584,6 +702,11 @@
       "Tillo": {
         "wikidata": "Q18818564",
         "status": "reviewed"
+      },
+      "Eligius": {
+        "wikidata": "Q360798",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0107-valentinianus-curiae": {
@@ -608,12 +731,23 @@
       "Apollinaris": {
         "wikidata": "Q1098296",
         "status": "reviewed"
+      },
+      "Marcus Aurelius": {
+        "wikidata": "Q1430",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0108-eduardus-waterson": {
       "Eduardus Waterson": {
         "wikidata": "Q5345818",
         "status": "reviewed"
+      },
+      "Elisabeth": {
+        "wikidata": "Q7207",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Elizabeth I of England, under whom Edward Waterson was executed in 1594 (Wikipedia)."
       }
     },
     "mr:0108-erhardus-ratisbonae": {
@@ -676,6 +810,11 @@
       "Severinus": {
         "wikidata": "Q458643",
         "status": "auto"
+      },
+      "Attila": {
+        "wikidata": "Q36724",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0108-theophilus-et-helladius": {
@@ -702,6 +841,11 @@
       "Alexia Le Clerc": {
         "wikidata": "Q456845",
         "status": "reviewed"
+      },
+      "Petrus Fourier": {
+        "wikidata": "Q635048",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0109-antonius-fatati": {
@@ -754,6 +898,11 @@
       "Marcellinus": {
         "wikidata": "Q3845515",
         "status": "reviewed"
+      },
+      "Gregorius Magnus": {
+        "wikidata": "Q42827",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0110-aegidius-di-bello": {
@@ -796,6 +945,16 @@
       "Gregorius Nyssenus": {
         "wikidata": "Q191734",
         "status": "reviewed"
+      },
+      "Basilius Magnus": {
+        "wikidata": "Q44258",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Valens": {
+        "wikidata": "Q172471",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0110-gregorius-x": {
@@ -844,6 +1003,16 @@
       "Miltiades": {
         "wikidata": "Q162090",
         "status": "reviewed"
+      },
+      "Constantinus": {
+        "wikidata": "Q8413",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Donatus": {
+        "wikidata": "Q1268674",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0110-paulus-thebaidis": {
@@ -892,12 +1061,23 @@
       "Gulielmus Carter": {
         "wikidata": "Q357410",
         "status": "auto"
+      },
+      "Elisabeth": {
+        "wikidata": "Q7207",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Elizabeth I of England, under whom William Carter was executed in 1584 (Wikipedia)."
       }
     },
     "mr:0111-honorata-papiae": {
       "Honorata": {
         "wikidata": "Q11710058",
         "status": "reviewed"
+      },
+      "Epiphanius": {
+        "wikidata": "Q655381",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0111-hyginus-papa": {
@@ -916,24 +1096,44 @@
       "Paulinus": {
         "wikidata": "Q738554",
         "status": "reviewed"
+      },
+      "Carolus Magnus": {
+        "wikidata": "Q3044",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0111-petrus-apselamus": {
       "Petrus Apselamus": {
         "wikidata": "Q2577177",
         "status": "auto"
+      },
+      "Maximinus": {
+        "wikidata": "Q189095",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0111-salvius-carthaginensis": {
       "Salvius": {
         "wikidata": "Q85973889",
         "status": "reviewed"
+      },
+      "Augustinus": {
+        "wikidata": "Q8018",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0111-theodosius-coenobiarcha": {
       "Theodosius": {
         "wikidata": "Q1885832",
         "status": "reviewed"
+      },
+      "Sabas": {
+        "wikidata": "Q316440",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0111-typasius-tigavae": {
@@ -982,6 +1182,11 @@
       "Caesaria": {
         "wikidata": "Q104903969",
         "status": "reviewed"
+      },
+      "Caesarius": {
+        "wikidata": "Q304832",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0112-ferreolus-gratianopoli": {
@@ -1022,6 +1227,22 @@
       "Tigrius": {
         "wikidata": "Q98826977",
         "status": "reviewed"
+      },
+      "Arcadius": {
+        "wikidata": "Q159369",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Ioannes Chrysostomus": {
+        "wikidata": "Q43706",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Optatus": {
+        "wikidata": "Q18279107",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Optatus, pagan urban prefect of Constantinople 404-405 who persecuted John Chrysostom's supporters (PLRE I Optatus 1; ptwiki Optato (prefeito urbano))."
       }
     },
     "mr:0113-aemilius-szramek": {
@@ -1034,6 +1255,11 @@
       "Agricius": {
         "wikidata": "Q397206",
         "status": "reviewed"
+      },
+      "Helena": {
+        "wikidata": "Q170164",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": {
@@ -1048,6 +1274,11 @@
       "Iosephus Pham Trong Ta": {
         "wikidata": "Q11731134",
         "status": "auto"
+      },
+      "Tu Duc": {
+        "wikidata": "Q466976",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0113-godefridus-ilbenstadensis": {
@@ -1074,12 +1305,28 @@
       "Stratonicus": {
         "wikidata": "Q120531725",
         "status": "reviewed"
+      },
+      "Licinius": {
+        "wikidata": "Q184549",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0113-hilarius-pictaviensis": {
       "Hilarius": {
         "wikidata": "Q44344",
         "status": "reviewed"
+      },
+      "Constantius": {
+        "wikidata": "Q46418",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Matthaeus": {
+        "wikidata": "Q43600",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Hilary wrote a commentary on the Gospel of Matthew; the Matthew meant is the apostle and evangelist (Wikipedia, Hilary of Poitiers)."
       }
     },
     "mr:0113-iutta-hoii": {
@@ -1098,12 +1345,24 @@
       "Petrus": {
         "wikidata": "Q7177914",
         "status": "reviewed"
+      },
+      "Walid": {
+        "wikidata": "Q284003",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Peter of Capitolias was executed in 715 under the Umayyad caliph al-Walid I (Wikipedia, Peter of Capitolias)."
       }
     },
     "mr:0113-remigius-remorum": {
       "Remigius": {
         "wikidata": "Q367208",
         "status": "reviewed"
+      },
+      "Clodoveus": {
+        "wikidata": "Q82339",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Remigius of Reims baptised Clovis I, king of the Franks (Gregory of Tours, Hist. II.31)."
       }
     },
     "mr:0113-veronica-de-binasco": {
@@ -1116,18 +1375,33 @@
       "Datius": {
         "wikidata": "Q1153230",
         "status": "reviewed"
+      },
+      "Vigilius": {
+        "wikidata": "Q168734",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0114-euphrasius-arvernae": {
       "Euphrasius": {
         "wikidata": "Q64398254",
         "status": "reviewed"
+      },
+      "Gregorius Turonensis": {
+        "wikidata": "Q67841",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0114-felix-nolae": {
       "Felix": {
         "wikidata": "Q3742239",
         "status": "reviewed"
+      },
+      "Paulinus": {
+        "wikidata": "Q132473",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0114-firminus-gabalorum": {
@@ -1140,6 +1414,23 @@
       "Fulgentius": {
         "wikidata": "Q2616176",
         "status": "reviewed"
+      },
+      "Leander": {
+        "wikidata": "Q577125",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Isidorus": {
+        "wikidata": "Q166876",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Isidore of Seville, brother of Fulgentius of Ecija, dedicated De ecclesiasticis officiis to him (Wikipedia)."
+      },
+      "Florentina": {
+        "wikidata": "Q2626436",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Florentina of Cartagena, abbess, sister of Leander, Isidore and Fulgentius (item has sibling Isidore of Seville; eswiki Florentina de Cartagena)."
       }
     },
     "mr:0114-glycerius-antiochiae": {
@@ -1206,6 +1497,12 @@
       "Bonitus": {
         "wikidata": "Q2910280",
         "status": "reviewed"
+      },
+      "Avitus": {
+        "wikidata": "Q129167724",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Avitus II, bishop of Clermont 676-689, brother and predecessor of Bonitus (enwiki Avitus II of Clermont); not Q2874413 Avitus I (d. 594)."
       }
     },
     "mr:0115-franciscus-fernandez-de-capillas": {
@@ -1254,12 +1551,22 @@
       "Petrus de Castronovo": {
         "wikidata": "Q542518",
         "status": "reviewed"
+      },
+      "Innocentius": {
+        "wikidata": "Q128076",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0115-probus-reate": {
       "Probus": {
         "wikidata": "Q97256905",
         "status": "reviewed"
+      },
+      "Gregorius Magnus": {
+        "wikidata": "Q42827",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0115-romedius-anauniensis": {
@@ -1300,6 +1607,11 @@
       "Adiutus": {
         "wikidata": "Q9140888",
         "status": "reviewed"
+      },
+      "Franciscus": {
+        "wikidata": "Q676555",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0116-danax-aulonis": {
@@ -1324,6 +1636,11 @@
       "Iacobus": {
         "wikidata": "Q3160349",
         "status": "auto"
+      },
+      "Honoratus": {
+        "wikidata": "Q526245",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0116-ioanna-balnei": {
@@ -1354,18 +1671,33 @@
       "Leobatius": {
         "wikidata": "Q141886871",
         "status": "auto"
+      },
+      "Ursus": {
+        "wikidata": "Q141943220",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0116-marcellus-i": {
       "Marcellus I": {
         "wikidata": "Q102131",
         "status": "auto"
+      },
+      "Damasus": {
+        "wikidata": "Q130997",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0116-mela-rhinocorurae": {
       "Mela": {
         "wikidata": "Q85973850",
         "status": "reviewed"
+      },
+      "Valens": {
+        "wikidata": "Q172471",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0116-titianus-opitergii": {
@@ -1384,12 +1716,27 @@
       "Antonius": {
         "wikidata": "Q170547",
         "status": "reviewed"
+      },
+      "Diocletianus": {
+        "wikidata": "Q43107",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Athanasius": {
+        "wikidata": "Q44024",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0117-gamelbertus-bavariae": {
       "Gamelbertus": {
         "wikidata": "Q315627",
         "status": "reviewed"
+      },
+      "Utto": {
+        "wikidata": "Q368032",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0117-ianuarius-sanchez-delgadillo": {
@@ -1408,6 +1755,11 @@
       "Marcellus": {
         "wikidata": "Q16027413",
         "status": "reviewed"
+      },
+      "Euricus": {
+        "wikidata": "Q217620",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0117-rosselina-cellae-robaudi": {
@@ -1466,6 +1818,11 @@
       "Deicolus": {
         "wikidata": "Q3021418",
         "status": "auto"
+      },
+      "Columbanus": {
+        "wikidata": "Q319653",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0118-facius-cremonae": {
@@ -1492,6 +1849,11 @@
       "Margarita": {
         "wikidata": "Q232031",
         "status": "reviewed"
+      },
+      "Bela IV": {
+        "wikidata": "Q152370",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0118-maria-ioanna-fasce": {
@@ -1530,6 +1892,11 @@
       "Successus": {
         "wikidata": "Q85974611",
         "status": "reviewed"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0118-volusianus-turonensis": {
@@ -1548,18 +1915,39 @@
       "Bassianus": {
         "wikidata": "Q1289858",
         "status": "reviewed"
+      },
+      "Ambrosius": {
+        "wikidata": "Q43689",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0119-germanicus-smyrnae": {
       "Germanicus": {
         "wikidata": "Q1514158",
         "status": "reviewed"
+      },
+      "Marcus Antoninus": {
+        "wikidata": "Q1430",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "'Marcus Antoninus and Lucius Aurelius' follows Eusebius HE IV.14-15, who dates Polycarp's martyrdom under Marcus Aurelius (with Lucius Verus)."
+      },
+      "Lucius Aurelius": {
+        "wikidata": "Q1433",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0119-ioannes-ravennae": {
       "Ioannes": {
         "wikidata": "Q138716976",
         "status": "reviewed"
+      },
+      "Gregorius Magnus": {
+        "wikidata": "Q42827",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0119-launomarus-corbionensis": {
@@ -1618,12 +2006,24 @@
       "Pontianus": {
         "wikidata": "Q436439",
         "status": "reviewed"
+      },
+      "Antoninus": {
+        "wikidata": "Q1430",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Pontianus of Spoleto's tradition places his martyrdom c. 175 under Marcus Aurelius (Spoleto tradition; 1850th anniversary kept 2025, Vatican State news)."
       }
     },
     "mr:0119-remigius-rothomagi": {
       "Remigius": {
         "wikidata": "Q975560",
         "status": "reviewed"
+      },
+      "Pippinus": {
+        "wikidata": "Q81212",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Remigius of Rouen was a son of Charles Martel and half-brother of Pepin the Short (both items list each other as siblings; Wikipedia, Remigius of Rouen)."
       }
     },
     "mr:0120-adalheidis-brando": {
@@ -1648,6 +2048,11 @@
       "Eustochius Calafato": {
         "wikidata": "Q276019",
         "status": "reviewed"
+      },
+      "Franciscus": {
+        "wikidata": "Q676555",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0120-euthymius-palaestinae": {
@@ -1660,6 +2065,16 @@
       "Fabianus": {
         "wikidata": "Q131159",
         "status": "auto"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Cyprianus": {
+        "wikidata": "Q190240",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0120-henricus-upsaliensis": {
@@ -1684,6 +2099,11 @@
       "Sebastianus": {
         "wikidata": "Q183332",
         "status": "auto"
+      },
+      "Ambrosius": {
+        "wikidata": "Q43689",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0120-stephanus-min-kuk-ka": {
@@ -1712,6 +2132,11 @@
       "Thomas Green": {
         "wikidata": "Q100741656",
         "status": "auto"
+      },
+      "Carolus I": {
+        "wikidata": "Q81506",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0121-eduardus-stransham-et-nicolaus-wheeler": {
@@ -1722,6 +2147,11 @@
       "Eduardus Stransham": {
         "wikidata": "Q59625",
         "status": "reviewed"
+      },
+      "Elisabeth I": {
+        "wikidata": "Q7207",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0121-epiphanius-papiae": {
@@ -1742,6 +2172,21 @@
       "Augurius": {
         "wikidata": "Q1925216",
         "status": "auto"
+      },
+      "Valerianus": {
+        "wikidata": "Q46750",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Gallienus": {
+        "wikidata": "Q104475",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Aemilianus": {
+        "wikidata": "Q95066394",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": {
@@ -1842,6 +2287,11 @@
       "Anastasius": {
         "wikidata": "Q254896",
         "status": "reviewed"
+      },
+      "Chosroes": {
+        "wikidata": "Q212732",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-antonius-della-chiesa": {
@@ -1854,6 +2304,11 @@
       "Barnardus": {
         "wikidata": "Q1284483",
         "status": "auto"
+      },
+      "Carolus Magnus": {
+        "wikidata": "Q3044",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-dominicus-sorae": {
@@ -1870,6 +2325,11 @@
       "Matthaeus Alonso de Leziniana": {
         "wikidata": "Q11771379",
         "status": "reviewed"
+      },
+      "Trinh Doanh": {
+        "wikidata": "Q704455",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-gaudentius-novariae": {
@@ -1888,6 +2348,11 @@
       "Gulielmus Patenson": {
         "wikidata": "Q8016623",
         "status": "auto"
+      },
+      "Elisabeth I": {
+        "wikidata": "Q7207",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-iosephus-nascimbeni": {
@@ -1912,6 +2377,11 @@
       "Maria Mancini": {
         "wikidata": "Q3847415",
         "status": "auto"
+      },
+      "Catharina Senensis": {
+        "wikidata": "Q229190",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-valerius-caesaraugustanus": {
@@ -1924,6 +2394,11 @@
       "Vincentius": {
         "wikidata": "Q318974",
         "status": "reviewed"
+      },
+      "Diocletianus": {
+        "wikidata": "Q43107",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0122-vincentius-pallotti": {
@@ -1942,6 +2417,11 @@
       "Andreas Chong Hwa Gyong": {
         "wikidata": "Q9151792",
         "status": "reviewed"
+      },
+      "Laurentius Imbert": {
+        "wikidata": "Q1151286",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0123-clemens-et-agathangelus": {
@@ -1986,6 +2466,11 @@
       "Babyla": {
         "wikidata": "Q797915",
         "status": "reviewed"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0124-exsuperantius-cinguli": {
@@ -2004,6 +2489,12 @@
       "Franciscus de Sales": {
         "wikidata": "Q231256",
         "status": "auto"
+      },
+      "Ioanna de Chantal": {
+        "wikidata": "Q234521",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Jane Frances de Chantal (1572-1641), with whom Francis de Sales founded the Visitation (Wikipedia)."
       }
     },
     "mr:0124-gulielmus-ireland-et-ioannes-grove": {
@@ -2014,6 +2505,11 @@
       "Ioannes Grove": {
         "wikidata": "Q131844211",
         "status": "auto"
+      },
+      "Carolus II": {
+        "wikidata": "Q122553",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0124-iosephus-giaccardo": {
@@ -2098,12 +2594,22 @@
       "Agileus": {
         "wikidata": "Q85973878",
         "status": "reviewed"
+      },
+      "Augustinus": {
+        "wikidata": "Q8018",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0125-ananias-damasci": {
       "Ananias": {
         "wikidata": "Q382898",
         "status": "auto"
+      },
+      "Paulus": {
+        "wikidata": "Q9200",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0125-antonius-migliorati": {
@@ -2128,6 +2634,11 @@
       "Bretannion": {
         "wikidata": "Q4961976",
         "status": "reviewed"
+      },
+      "Valens": {
+        "wikidata": "Q172471",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0125-conversio-pauli-apostoli": {
@@ -2164,6 +2675,11 @@
       "Palaemon": {
         "wikidata": "Q6058822",
         "status": "reviewed"
+      },
+      "Pachomius": {
+        "wikidata": "Q298698",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0125-poppo-stabulensis": {
@@ -2216,12 +2732,22 @@
       "Paula": {
         "wikidata": "Q237824",
         "status": "auto"
+      },
+      "Eustochium": {
+        "wikidata": "Q442396",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0126-theogenes-hipponis": {
       "Theogenes": {
         "wikidata": "Q85974256",
         "status": "reviewed"
+      },
+      "Augustinus": {
+        "wikidata": "Q8018",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0126-timotheus-et-titus": {
@@ -2232,6 +2758,11 @@
       "Titus": {
         "wikidata": "Q320136",
         "status": "reviewed"
+      },
+      "Paulus": {
+        "wikidata": "Q9200",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0126-xenophon-et-maria": {
@@ -2266,6 +2797,11 @@
       "Gilduinus": {
         "wikidata": "Q3463807",
         "status": "auto"
+      },
+      "Gregorius VII": {
+        "wikidata": "Q133063",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0127-henricus-de-osso-y-cervello": {
@@ -2278,6 +2814,12 @@
       "Ioannes Maria": {
         "wikidata": "Q13125269",
         "status": "reviewed"
+      },
+      "Mwenga": {
+        "wikidata": "Q707775",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Mwanga II, Kabaka of Buganda, ordered the killings of the Uganda Martyrs (1885-1887); Jean-Marie Muzeyi was killed on his order on 27 January 1887 (Wikipedia)."
       }
     },
     "mr:0127-ioannes-morinensis": {
@@ -2296,6 +2838,12 @@
       "Iulianus Sorae": {
         "wikidata": "Q1712147",
         "status": "reviewed"
+      },
+      "Antoninus": {
+        "wikidata": "Q1429",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Julian of Sora's tradition places his martyrdom under Antoninus Pius (c. 150-160) (Wikipedia, Julian of Sora; santiebeati via catholic.net)."
       }
     },
     "mr:0127-manfredus-settala": {
@@ -2340,6 +2888,12 @@
       "Laurentius Wang Bing": {
         "wikidata": "Q4103208",
         "status": "reviewed"
+      },
+      "Wenzongxian": {
+        "wikidata": "Q334452",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Wenzong Xian (temple name Wenzong, posthumous Xian) is the Xianfeng Emperor (r. 1850-1861), under whom Agatha Lin was executed in 1858 (Wikipedia)."
       }
     },
     "mr:0128-bartholomaeus-aiutamicristo": {
@@ -2394,6 +2948,11 @@
       "Thomas de Aquino": {
         "wikidata": "Q9438",
         "status": "auto"
+      },
+      "Gregorius X": {
+        "wikidata": "Q161740",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0129-aphraates-antiochiae": {
@@ -2428,6 +2987,11 @@
       "Maximinus": {
         "wikidata": "Q54576665",
         "status": "reviewed"
+      },
+      "Iulianus Apostata": {
+        "wikidata": "Q33941",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0129-papias-et-maurus": {
@@ -2448,12 +3012,22 @@
       "Sarbelius": {
         "wikidata": "Q16599874",
         "status": "reviewed"
+      },
+      "Barsimaeus": {
+        "wikidata": "Q97253316",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0129-sulpicius-severus": {
       "Sulpicius Severus": {
         "wikidata": "Q783668",
         "status": "reviewed"
+      },
+      "Gregorius Turonensis": {
+        "wikidata": "Q67841",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0129-valerius-trevirorum": {
@@ -2478,6 +3052,11 @@
       "Aldegundis": {
         "wikidata": "Q271330",
         "status": "auto"
+      },
+      "Dagobertus": {
+        "wikidata": "Q109860",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0130-aloysius-wiaux": {
@@ -2490,6 +3069,16 @@
       "Armentarius": {
         "wikidata": "Q2654130",
         "status": "reviewed"
+      },
+      "Augustinus": {
+        "wikidata": "Q8018",
+        "status": "reviewed",
+        "decided": "jev"
+      },
+      "Liutprandus": {
+        "wikidata": "Q251836",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0130-barsimaeus-edessae": {
@@ -2502,6 +3091,12 @@
       "Bathildis": {
         "wikidata": "Q237750",
         "status": "auto"
+      },
+      "Clodoveus II": {
+        "wikidata": "Q309919",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Clovis II, king of Neustria and Burgundy, husband of Bathild (Vita Bathildis; Wikipedia)."
       }
     },
     "mr:0130-carmela-garcia-moyon": {
@@ -2526,6 +3121,11 @@
       "Franciscus Taylor": {
         "wikidata": "Q1441753",
         "status": "reviewed"
+      },
+      "Iacobus I": {
+        "wikidata": "Q79972",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0130-hyacintha-mariscotti": {
@@ -2538,6 +3138,11 @@
       "Martina": {
         "wikidata": "Q272101",
         "status": "reviewed"
+      },
+      "Donus": {
+        "wikidata": "Q103545",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0130-matthias-hierosolymorum": {
@@ -2568,18 +3173,34 @@
       "Theophilus Iuvenis": {
         "wikidata": "Q141886872",
         "status": "reviewed"
+      },
+      "Arun": {
+        "wikidata": "Q131002",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Harun al-Rashid, Abbasid caliph 786-809, in whose time Theophilus the Younger was martyred (Synaxarion of Constantinople; Wikipedia)."
       }
     },
     "mr:0130-thomas-khuong": {
       "Thomas Khuong": {
         "wikidata": "Q9359407",
         "status": "reviewed"
+      },
+      "Tu Duc": {
+        "wikidata": "Q466976",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-abraham-arbelensis": {
       "Abraham": {
         "wikidata": "Q2424430",
         "status": "reviewed"
+      },
+      "Sapor": {
+        "wikidata": "Q234860",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-augustinus-pak-chong-won-et-socii": {
@@ -2640,6 +3261,11 @@
       "Ioannes Bosco": {
         "wikidata": "Q146183",
         "status": "auto"
+      },
+      "Maria Dominica Mazzarello": {
+        "wikidata": "Q466565",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-iulius-novariae": {
@@ -2664,12 +3290,22 @@
       "Marcella": {
         "wikidata": "Q267211",
         "status": "reviewed"
+      },
+      "Hieronymus": {
+        "wikidata": "Q44248",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-metranus-alexandriae": {
       "Metranus": {
         "wikidata": "Q3855701",
         "status": "auto"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-victorinus-et-socii": {
@@ -2696,6 +3332,11 @@
       "Victorinus": {
         "wikidata": "Q141883150",
         "status": "reviewed"
+      },
+      "Decius": {
+        "wikidata": "Q1830",
+        "status": "reviewed",
+        "decided": "jev"
       }
     },
     "mr:0131-waldus-ebroicensis": {

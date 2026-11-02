@@ -1,5 +1,2923 @@
 {
   "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, marks: {la, it}}. where is the person's first printing. marks.la and marks.it are the person's printings in the Latin and Italian 2004 texts, in printed order, each {where, start, end, check}: \"text\" or {\"footnote\": n} (n from 1), offsets in UTF-16 code units into that text, and the check (the first 8 hex digits of the SHA-256 of the printed words, which are never stored), as in data/mentions.json. marks.la is never empty; marks.it is [] when the Italian does not name the person (a missing list is an error). extract_mentions.py marks the person there and verifies each check. Written by scripts/mentioned_persons.py apply.",
+  "mr:0101-almachius-romae": [
+    {
+      "name": "Alypius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 57,
+            "end": 77,
+            "check": "c2bdd131"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 83,
+            "end": 106,
+            "check": "0192015c"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0101-fulgentius-rusparum": [
+    {
+      "name": "Thrasamundus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 217,
+            "end": 233,
+            "check": "77981641"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 285,
+            "end": 298,
+            "check": "62955ed6"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0102-bladulphus-bobiensis": [
+    {
+      "name": "Columbanus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 82,
+            "end": 91,
+            "check": "5e9c2ea6"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 86,
+            "end": 95,
+            "check": "ec94aa3f"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0102-telesphorus-papa": [
+    {
+      "name": "Irenaeus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 59,
+            "end": 65,
+            "check": "f0a55ef2"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 67,
+            "end": 73,
+            "check": "6bfcc136"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0102-theodorus-massiliae": [
+    {
+      "name": "Childebertus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 121,
+            "end": 132,
+            "check": "22da883c"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 145,
+            "end": 159,
+            "check": "23309d76"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Guntramnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 136,
+            "end": 153,
+            "check": "d77e2457"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 162,
+            "end": 171,
+            "check": "e65c221b"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0103-antherus-papa": [
+    {
+      "name": "Pontianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 80,
+            "end": 98,
+            "check": "a36b0e3f"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 112,
+            "check": "2c6c5206"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0103-genovefa-parisiorum": [
+    {
+      "name": "Germanus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 105,
+            "end": 137,
+            "check": "39d92fd8"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 113,
+            "end": 139,
+            "check": "31b21777"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0103-gordius-caesareae": [
+    {
+      "name": "Basilius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 73,
+            "end": 81,
+            "check": "192d154e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 90,
+            "end": 97,
+            "check": "d11a4de0"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diocletianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 142,
+            "end": 165,
+            "check": "c40c418e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 191,
+            "end": 202,
+            "check": "9262e244"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0103-theogenes-parii": [
+    {
+      "name": "Licinius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 59,
+            "end": 77,
+            "check": "605f6580"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 85,
+            "end": 92,
+            "check": "25fb3f41"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0103-theopemptus-et-theona": [
+    {
+      "name": "Diocletianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 81,
+            "end": 104,
+            "check": "c40c418e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 134,
+            "end": 156,
+            "check": "b877b9ad"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0104-abrunculus-lingonensis": [
+    {
+      "name": "Sidonius Apollinaris",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 168,
+            "end": 187,
+            "check": "e42e310a"
+          }
+        ],
+        "it": []
+      }
+    }
+  ],
+  "mr:0104-angela-fulginii": [
+    {
+      "name": "Franciscus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 78,
+            "end": 87,
+            "check": "17895ccb"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 100,
+            "check": "f00ecd22"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0104-rigobertus-remorum": [
+    {
+      "name": "Carolus Martellus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 74,
+            "end": 105,
+            "check": "8ac8391f"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 132,
+            "end": 163,
+            "check": "b6ebc4ae"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0104-thomas-plumtree": [
+    {
+      "name": "Elisabeth",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 74,
+            "end": 96,
+            "check": "5bbfd5ea"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 99,
+            "end": 118,
+            "check": "0dd6ad44"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0105-aemiliana-romae": [
+    {
+      "name": "Gregorius Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 59,
+            "end": 78,
+            "check": "8bc58e87"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 68,
+            "end": 82,
+            "check": "468dea00"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tharsilla",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 114,
+            "check": "f7c4c0db"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 103,
+            "end": 119,
+            "check": "4d2880d4"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0105-rogerius-tudertis": [
+    {
+      "name": "Franciscus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 87,
+            "end": 96,
+            "check": "17895ccb"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 84,
+            "end": 93,
+            "check": "f00ecd22"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0106-epiphania-domini": [
+    {
+      "name": "Ioannes",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 171,
+            "end": 177,
+            "check": "5ac9eaac"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 205,
+            "end": 213,
+            "check": "244696cb"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0107-iosephus-tuan": [
+    {
+      "name": "Tu Duc",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 172,
+            "end": 189,
+            "check": "e17ba958"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 133,
+            "end": 150,
+            "check": "3fa4d99a"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0107-polyeuctus-melitenae": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 67,
+            "end": 84,
+            "check": "56954666"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 107,
+            "check": "a72a8e48"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0107-tillo-solemniaci": [
+    {
+      "name": "Eligius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 80,
+            "end": 86,
+            "check": "c7202200"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 104,
+            "end": 110,
+            "check": "c6b8d975"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0108-apollinaris-hierapolis": [
+    {
+      "name": "Marcus Aurelius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 60,
+            "end": 84,
+            "check": "33f01225"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 90,
+            "end": 114,
+            "check": "90c973d8"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0108-eduardus-waterson": [
+    {
+      "name": "Elisabeth",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 118,
+            "check": "5bbfd5ea"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 114,
+            "end": 133,
+            "check": "0dd6ad44"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0108-severinus-norici": [
+    {
+      "name": "Attila",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 69,
+            "end": 75,
+            "check": "fd3c9361"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 130,
+            "end": 153,
+            "check": "d8d51f7a"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0109-alexia-le-clerc": [
+    {
+      "name": "Petrus Fourier",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 90,
+            "end": 103,
+            "check": "0f450fd0"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 99,
+            "end": 113,
+            "check": "dc14f5ce"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0109-marcellinus-anconae": [
+    {
+      "name": "Gregorius Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 82,
+            "end": 103,
+            "check": "6e293ec0"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 65,
+            "end": 79,
+            "check": "468dea00"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0110-gregorius-nyssenus": [
+    {
+      "name": "Basilius Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 55,
+            "end": 68,
+            "check": "50ed8854"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 84,
+            "end": 97,
+            "check": "dd810643"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Valens",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 143,
+            "end": 168,
+            "check": "42483797"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 211,
+            "end": 236,
+            "check": "ebfc3f58"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0110-miltiades-papa": [
+    {
+      "name": "Constantinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 104,
+            "end": 126,
+            "check": "af6b1976"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 134,
+            "end": 155,
+            "check": "525e3418"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Donatus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 169,
+            "end": 175,
+            "check": "2d0f0ce6"
+          }
+        ],
+        "it": []
+      }
+    }
+  ],
+  "mr:0111-gulielmus-carter": [
+    {
+      "name": "Elisabeth",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 74,
+            "end": 96,
+            "check": "5bbfd5ea"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 183,
+            "end": 202,
+            "check": "0dd6ad44"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0111-honorata-papiae": [
+    {
+      "name": "Epiphanius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 82,
+            "end": 100,
+            "check": "0516abf4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 83,
+            "end": 99,
+            "check": "913032e2"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0111-paulinus-aquileiensis": [
+    {
+      "name": "Carolus Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 122,
+            "end": 142,
+            "check": "e74bfafb"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 133,
+            "end": 147,
+            "check": "2083691d"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0111-petrus-apselamus": [
+    {
+      "name": "Maximinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 88,
+            "end": 107,
+            "check": "0ebf54cd"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 79,
+            "end": 99,
+            "check": "b7595cbc"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0111-salvius-carthaginensis": [
+    {
+      "name": "Augustinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 60,
+            "end": 70,
+            "check": "ac6e9fed"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 67,
+            "end": 75,
+            "check": "1a8a5564"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0111-theodosius-coenobiarcha": [
+    {
+      "name": "Sabas",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 59,
+            "end": 63,
+            "check": "9fda72ab"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 65,
+            "end": 69,
+            "check": "5d7f956d"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0112-caesaria-abbatissa": [
+    {
+      "name": "Caesarius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 71,
+            "end": 87,
+            "check": "4cc34bd2"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 79,
+            "end": 94,
+            "check": "0a5b0751"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0112-tigrius-et-eutropius": [
+    {
+      "name": "Arcadius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 92,
+            "end": 111,
+            "check": "d1de9974"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 108,
+            "end": 126,
+            "check": "5ce1c8f9"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ioannes Chrysostomus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 221,
+            "end": 240,
+            "check": "feec257d"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 259,
+            "end": 278,
+            "check": "1d3ab5df"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Optatus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 298,
+            "end": 318,
+            "check": "a5ac872e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 314,
+            "end": 329,
+            "check": "67afb5f4"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-agricius-trevirorum": [
+    {
+      "name": "Helena",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 76,
+            "end": 82,
+            "check": "9ed6dddb"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 127,
+            "end": 132,
+            "check": "63704e58"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": [
+    {
+      "name": "Tu Duc",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 152,
+            "end": 169,
+            "check": "e17ba958"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 165,
+            "end": 182,
+            "check": "3fa4d99a"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-hermylius-et-stratonicus": [
+    {
+      "name": "Licinius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 109,
+            "check": "605f6580"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 109,
+            "check": "8f216d86"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-hilarius-pictaviensis": [
+    {
+      "name": "Constantius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 100,
+            "end": 121,
+            "check": "22918bdd"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 109,
+            "end": 128,
+            "check": "451a5176"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Matthaeus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 329,
+            "end": 336,
+            "check": "8a9659e4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 365,
+            "end": 371,
+            "check": "ca287dab"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-petrus-capitoliadis": [
+    {
+      "name": "Walid",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 73,
+            "end": 99,
+            "check": "cfca4e3d"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 92,
+            "end": 115,
+            "check": "9037a0ab"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0113-remigius-remorum": [
+    {
+      "name": "Clodoveus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 69,
+            "end": 84,
+            "check": "7e8549f5"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 102,
+            "end": 113,
+            "check": "ea3a850c"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0114-datius-mediolani": [
+    {
+      "name": "Vigilius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 108,
+            "check": "fef3b0ff"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 109,
+            "end": 121,
+            "check": "1a53f96b"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0114-euphrasius-arvernae": [
+    {
+      "name": "Gregorius Turonensis",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 64,
+            "end": 84,
+            "check": "bf369df9"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 119,
+            "end": 136,
+            "check": "803c06bd"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0114-felix-nolae": [
+    {
+      "name": "Paulinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 62,
+            "end": 70,
+            "check": "a14cd23b"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 67,
+            "end": 74,
+            "check": "256b8e9f"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0114-fulgentius-astigi": [
+    {
+      "name": "Leander",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 68,
+            "end": 75,
+            "check": "32e109c6"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 77,
+            "end": 84,
+            "check": "6b4ed1f4"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Isidorus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 77,
+            "end": 84,
+            "check": "577183d1"
+          },
+          {
+            "where": "text",
+            "start": 100,
+            "end": 108,
+            "check": "ec727323"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 86,
+            "end": 93,
+            "check": "6344175a"
+          },
+          {
+            "where": "text",
+            "start": 114,
+            "end": 121,
+            "check": "6344175a"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Florentina",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 88,
+            "end": 98,
+            "check": "05575841"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 106,
+            "check": "d800ac07"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0115-bonitus-arvernorum": [
+    {
+      "name": "Avitus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 120,
+            "end": 137,
+            "check": "90275c51"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 152,
+            "end": 157,
+            "check": "a1d29463"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0115-petrus-de-castronovo": [
+    {
+      "name": "Innocentius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 152,
+            "end": 174,
+            "check": "e8682dfd"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 175,
+            "end": 193,
+            "check": "1673a737"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0115-probus-reate": [
+    {
+      "name": "Gregorius Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 76,
+            "end": 97,
+            "check": "6e293ec0"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 66,
+            "end": 80,
+            "check": "468dea00"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0116-berardus-et-socii": [
+    {
+      "name": "Franciscus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 168,
+            "end": 177,
+            "check": "e94076d3"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 184,
+            "end": 193,
+            "check": "f00ecd22"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0116-iacobus-tarantasiae": [
+    {
+      "name": "Honoratus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 74,
+            "end": 93,
+            "check": "d759b0c6"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 84,
+            "end": 101,
+            "check": "727a5a7b"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0116-leobatius-senapariae": [
+    {
+      "name": "Ursus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 104,
+            "end": 108,
+            "check": "9c62bdc4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 140,
+            "end": 144,
+            "check": "4562f32e"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0116-marcellus-i": [
+    {
+      "name": "Damasus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 101,
+            "end": 108,
+            "check": "6b9b7678"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 119,
+            "end": 125,
+            "check": "8e1c4426"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0116-mela-rhinocorurae": [
+    {
+      "name": "Valens",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 55,
+            "end": 80,
+            "check": "42483797"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 101,
+            "end": 126,
+            "check": "ebfc3f58"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0117-antonius-thebaidis": [
+    {
+      "name": "Diocletianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 276,
+            "end": 299,
+            "check": "c40c418e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 316,
+            "end": 338,
+            "check": "b877b9ad"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Athanasius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 322,
+            "end": 332,
+            "check": "d7d43c31"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 356,
+            "end": 364,
+            "check": "f5e4f9c8"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0117-gamelbertus-bavariae": [
+    {
+      "name": "Utto",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 55,
+            "end": 61,
+            "check": "70c9a9b4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 110,
+            "end": 114,
+            "check": "7c188847"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0117-marcellus-deae-vocontiorum": [
+    {
+      "name": "Euricus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 122,
+            "end": 140,
+            "check": "d8f36668"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 129,
+            "end": 145,
+            "check": "8b4e97ea"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0118-deicolus-lutrensis": [
+    {
+      "name": "Columbanus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 94,
+            "end": 103,
+            "check": "5e9c2ea6"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 118,
+            "end": 127,
+            "check": "ec94aa3f"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0118-margarita-budae": [
+    {
+      "name": "Bela IV",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 63,
+            "end": 80,
+            "check": "464795f7"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 63,
+            "end": 73,
+            "check": "392e5600"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0118-successus-et-socii": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 126,
+            "end": 142,
+            "check": "ae916dee"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 169,
+            "end": 185,
+            "check": "a72a8e48"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0119-bassianus-laudis-pompeiae": [
+    {
+      "name": "Ambrosius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 154,
+            "end": 175,
+            "check": "4ff2f996"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 162,
+            "end": 180,
+            "check": "9ebf4173"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0119-germanicus-smyrnae": [
+    {
+      "name": "Marcus Antoninus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 77,
+            "end": 91,
+            "check": "794ba81d"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 101,
+            "end": 126,
+            "check": "7f44abe7"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lucius Aurelius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 95,
+            "end": 120,
+            "check": "dc748133"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 129,
+            "end": 142,
+            "check": "b35e3518"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0119-ioannes-ravennae": [
+    {
+      "name": "Gregorius Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 147,
+            "end": 166,
+            "check": "beeb7ad4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 182,
+            "end": 196,
+            "check": "468dea00"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0119-pontianus-spoleti": [
+    {
+      "name": "Antoninus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 65,
+            "end": 85,
+            "check": "0ff9f3b5"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 134,
+            "end": 153,
+            "check": "42f043ad"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0119-remigius-rothomagi": [
+    {
+      "name": "Pippinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 49,
+            "end": 62,
+            "check": "3474828f"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 68,
+            "end": 77,
+            "check": "9d8dd663"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0120-eustochius-calafato": [
+    {
+      "name": "Franciscus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 177,
+            "end": 186,
+            "check": "17895ccb"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 226,
+            "end": 235,
+            "check": "f00ecd22"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0120-fabianus-papa": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 149,
+            "end": 166,
+            "check": "56954666"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 185,
+            "end": 201,
+            "check": "a72a8e48"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cyprianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 215,
+            "end": 224,
+            "check": "d73322a5"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 207,
+            "end": 215,
+            "check": "afdb6cc8"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0120-sebastianus-romae": [
+    {
+      "name": "Ambrosius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 75,
+            "end": 84,
+            "check": "33dd4e4f"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 86,
+            "end": 94,
+            "check": "e5b65758"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0121-albanus-roe": [
+    {
+      "name": "Carolus I",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 125,
+            "end": 142,
+            "check": "060e42df"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 125,
+            "end": 135,
+            "check": "37d752d7"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0121-eduardus-stransham-et-nicolaus-wheeler": [
+    {
+      "name": "Elisabeth I",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 103,
+            "end": 125,
+            "check": "5bbfd5ea"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 121,
+            "end": 140,
+            "check": "0dd6ad44"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0121-fructuosus-et-socii": [
+    {
+      "name": "Valerianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 126,
+            "end": 135,
+            "check": "a20776c7"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 127,
+            "end": 147,
+            "check": "a732926b"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Gallienus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 139,
+            "end": 161,
+            "check": "80f53d0c"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 150,
+            "end": 158,
+            "check": "8be948ed"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aemilianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 193,
+            "end": 213,
+            "check": "f938fd39"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 210,
+            "end": 230,
+            "check": "4c9f8d6b"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-anastasius-sergiopolis": [
+    {
+      "name": "Chosroes",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 139,
+            "end": 160,
+            "check": "afea20bc"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 147,
+            "end": 169,
+            "check": "0428331d"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-barnardus-viennensis": [
+    {
+      "name": "Carolus Magnus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 112,
+            "end": 136,
+            "check": "6a1d868f"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 133,
+            "end": 155,
+            "check": "6c216e8d"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-franciscus-gil-de-federich-et-matthaeus-alonso-de-leziniana": [
+    {
+      "name": "Trinh Doanh",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 145,
+            "end": 156,
+            "check": "e29b491b"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 157,
+            "end": 167,
+            "check": "f036903a"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-gulielmus-patenson": [
+    {
+      "name": "Elisabeth I",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 78,
+            "end": 100,
+            "check": "5bbfd5ea"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 99,
+            "end": 118,
+            "check": "0dd6ad44"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-maria-mancini": [
+    {
+      "name": "Catharina Senensis",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 96,
+            "end": 113,
+            "check": "eaa86791"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 116,
+            "end": 133,
+            "check": "6add574f"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0122-vincentius-caesaraugustanus": [
+    {
+      "name": "Diocletianus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 74,
+            "end": 97,
+            "check": "c40c418e"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 113,
+            "check": "b877b9ad"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0123-andreas-chong-hwa-gyong": [
+    {
+      "name": "Laurentius Imbert",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 91,
+            "end": 116,
+            "check": "64100b66"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 107,
+            "end": 129,
+            "check": "593fece0"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0124-babyla-antiochiae": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 73,
+            "end": 90,
+            "check": "56954666"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 106,
+            "end": 122,
+            "check": "a72a8e48"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0124-franciscus-de-sales": [
+    {
+      "name": "Ioanna de Chantal",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 265,
+            "end": 282,
+            "check": "ec856bef"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 272,
+            "end": 291,
+            "check": "322f3f84"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0124-gulielmus-ireland-et-ioannes-grove": [
+    {
+      "name": "Carolus II",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 125,
+            "end": 144,
+            "check": "fe166c78"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 140,
+            "end": 151,
+            "check": "dd7463ed"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0125-agileus-carthaginis": [
+    {
+      "name": "Augustinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 84,
+            "end": 94,
+            "check": "ac6e9fed"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 92,
+            "end": 100,
+            "check": "1a8a5564"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0125-ananias-damasci": [
+    {
+      "name": "Paulus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 60,
+            "end": 66,
+            "check": "6310d2ee"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 67,
+            "end": 72,
+            "check": "f7f929a4"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0125-bretannion-tomitanus": [
+    {
+      "name": "Valens",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 72,
+            "end": 97,
+            "check": "42483797"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 101,
+            "end": 126,
+            "check": "ebfc3f58"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0125-palaemon-tabennesi": [
+    {
+      "name": "Pachomius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 131,
+            "end": 139,
+            "check": "4d9e7156"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 125,
+            "end": 132,
+            "check": "e1656cb1"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0126-paula-bethlehem": [
+    {
+      "name": "Eustochium",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 160,
+            "end": 180,
+            "check": "eb6b0c66"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 165,
+            "end": 186,
+            "check": "cbbdf0a3"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0126-theogenes-hipponis": [
+    {
+      "name": "Augustinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 69,
+            "end": 79,
+            "check": "ac6e9fed"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 79,
+            "end": 87,
+            "check": "1a8a5564"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0126-timotheus-et-titus": [
+    {
+      "name": "Paulus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 71,
+            "end": 85,
+            "check": "cbfb84da"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 65,
+            "end": 79,
+            "check": "ff1aa314"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0127-gilduinus-carnutum": [
+    {
+      "name": "Gregorius VII",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 159,
+            "end": 180,
+            "check": "633d8389"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 148,
+            "end": 160,
+            "check": "5ad14f81"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0127-ioannes-maria": [
+    {
+      "name": "Mwenga",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 201,
+            "end": 213,
+            "check": "22fb1d03"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 249,
+            "end": 258,
+            "check": "b5b070de"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0127-iulianus-sorae": [
+    {
+      "name": "Antoninus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 66,
+            "end": 86,
+            "check": "0ff9f3b5"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 114,
+            "end": 133,
+            "check": "42f043ad"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0128-agatha-lin-zhao-et-socii": [
+    {
+      "name": "Wenzongxian",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 156,
+            "end": 178,
+            "check": "5d68eac5"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 192,
+            "end": 214,
+            "check": "b25fddd1"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0128-thomas-de-aquino": [
+    {
+      "name": "Gregorius X",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 250,
+            "end": 270,
+            "check": "fa66c153"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 234,
+            "end": 249,
+            "check": "b1e79fa4"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0129-iuventinus-et-maximinus": [
+    {
+      "name": "Iulianus Apostata",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 71,
+            "end": 98,
+            "check": "7bfe55fe"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 108,
+            "end": 138,
+            "check": "91f75073"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0129-sarbelius-et-bebaia": [
+    {
+      "name": "Barsimaeus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 99,
+            "end": 116,
+            "check": "17f226b2"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 163,
+            "end": 171,
+            "check": "24366b82"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0129-sulpicius-severus": [
+    {
+      "name": "Gregorius Turonensis",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 165,
+            "end": 185,
+            "check": "bf369df9"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 105,
+            "end": 122,
+            "check": "803c06bd"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-aldegundis-malbodii": [
+    {
+      "name": "Dagobertus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 60,
+            "end": 75,
+            "check": "c4ccd525"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 84,
+            "end": 96,
+            "check": "0d758c87"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-armentarius-papiae": [
+    {
+      "name": "Augustinus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 69,
+            "end": 78,
+            "check": "0bb18033"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 119,
+            "end": 127,
+            "check": "1a8a5564"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Liutprandus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 82,
+            "end": 97,
+            "check": "afa1a4ff"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 146,
+            "end": 159,
+            "check": "1c824d92"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-bathildis-calae": [
+    {
+      "name": "Clodoveus II",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 154,
+            "end": 170,
+            "check": "611744b4"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 163,
+            "end": 174,
+            "check": "ed2e0454"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-franciscus-taylor": [
+    {
+      "name": "Iacobus I",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 185,
+            "end": 202,
+            "check": "667d94f6"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 235,
+            "end": 244,
+            "check": "44dd175c"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-martina-romae": [
+    {
+      "name": "Donus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 52,
+            "end": 62,
+            "check": "ed0f2ae2"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 64,
+            "end": 73,
+            "check": "29ba41bc"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-theophilus-iuvenis": [
+    {
+      "name": "Arun",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 129,
+            "end": 165,
+            "check": "7bc54539"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 148,
+            "end": 179,
+            "check": "47330193"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0130-thomas-khuong": [
+    {
+      "name": "Tu Duc",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 79,
+            "end": 97,
+            "check": "3906145d"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 103,
+            "end": 120,
+            "check": "3fa4d99a"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0131-abraham-arbelensis": [
+    {
+      "name": "Sapor",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 63,
+            "end": 83,
+            "check": "04318708"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 68,
+            "end": 89,
+            "check": "a020c1ba"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0131-ioannes-bosco": [
+    {
+      "name": "Maria Dominica Mazzarello",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 184,
+            "end": 209,
+            "check": "3a4bf448"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 214,
+            "end": 239,
+            "check": "501cdb39"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0131-marcella-romae": [
+    {
+      "name": "Hieronymus",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 59,
+            "end": 69,
+            "check": "05bd5b25"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 72,
+            "end": 80,
+            "check": "66a9264b"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0131-metranus-alexandriae": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 79,
+            "end": 95,
+            "check": "ae916dee"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 86,
+            "end": 91,
+            "check": "613191b6"
+          }
+        ]
+      }
+    }
+  ],
+  "mr:0131-victorinus-et-socii": [
+    {
+      "name": "Decius",
+      "where": "text",
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 118,
+            "end": 134,
+            "check": "ae916dee"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 181,
+            "end": 197,
+            "check": "a72a8e48"
+          }
+        ]
+      }
+    }
+  ],
   "mr:0303-cunegundis-confugiae": [
     {
       "name": "Henricus",
