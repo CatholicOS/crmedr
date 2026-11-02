@@ -488,8 +488,8 @@ class Wikidata:
         raw = self._entities([qid]).get(qid)
         return self._enrich([summarize(raw)])[0] if raw else None
 
-    def person_candidates(self, name, languages=("la", "it", "en")):
-        qids = list(dict.fromkeys(q for lang in languages for q in self._search(name, language=lang)))
+    def person_candidates(self, name, languages=("la", "it", "en"), limit=10):
+        qids = list(dict.fromkeys(q for lang in languages for q in self._search(name, limit, language=lang)))
         raws = self._person_entities(qids)
         return [summarize_person(raws[q]) for q in qids if q in raws]
 
