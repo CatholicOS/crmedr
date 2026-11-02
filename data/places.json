@@ -420,12 +420,6 @@
         "source": "lead"
       },
       {
-        "role": "mention",
-        "la": "Autissiodorénsi",
-        "it": "Auxerre",
-        "source": "curated"
-      },
-      {
         "role": "birth",
         "la": "Nemptodurénsis",
         "it": "Nanterre",
@@ -1820,12 +1814,6 @@
         "la": "Arvérnæ in Aquitánia",
         "it": "A Clermont-Ferrand nella regione dell’Aquitania, in Francia",
         "source": "lead"
-      },
-      {
-        "role": "mention",
-        "la": "Turonénsis",
-        "it": "Tours",
-        "source": "curated"
       }
     ],
     "mr:0114-felix-nolae": [
@@ -2192,12 +2180,6 @@
         "la": "Tarantásiæ in Gállia Viennénsi",
         "it": "A Moûtiers in Gallia, nell’odierna Francia",
         "source": "lead"
-      },
-      {
-        "role": "mention",
-        "la": "Lirinénsis",
-        "it": "Lérins",
-        "source": "curated"
       }
     ],
     "mr:0116-ioanna-balnei": [

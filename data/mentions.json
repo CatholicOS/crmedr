@@ -27,6 +27,17 @@
           "check": "349d9df3",
           "name": "Almachius",
           "qid": "Q1115667"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 57,
+          "end": 77,
+          "check": "c2bdd131",
+          "name": "Alypius",
+          "qid": "Q3655677",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0101-basilius-magnus": [
@@ -212,6 +223,17 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 217,
+          "end": 233,
+          "check": "77981641",
+          "name": "Thrasamundus",
+          "qid": "Q311888",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0101-gulielmus-divionensis": [
@@ -790,6 +812,19 @@
           "check": "cbe86afa",
           "name": "Bladulphus",
           "qid": "Q2905657"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 91,
+          "check": "5e9c2ea6",
+          "name": "Columbanus",
+          "qid": "Q319653",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1123-columbanus-luxoviensis"
+          ]
         }
       ],
       "mr:0102-gulielmus-repin-et-laurentius-batard": [
@@ -1004,6 +1039,19 @@
           "check": "0acc16d7",
           "name": "Telesphorus",
           "qid": "Q81647"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 65,
+          "check": "f0a55ef2",
+          "name": "Irenaeus",
+          "qid": "Q182123",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0628-irenaeus-lugdunensis"
+          ]
         }
       ],
       "mr:0102-theodorus-massiliae": [
@@ -1028,6 +1076,30 @@
           "check": "ae047d07",
           "name": "Theodorus",
           "qid": "Q3526531"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 121,
+          "end": 132,
+          "check": "22da883c",
+          "name": "Childebertus",
+          "qid": "Q312606",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 136,
+          "end": 153,
+          "check": "d77e2457",
+          "name": "Guntramnus",
+          "qid": "Q295086",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0328-gunthramnus-cabilloni"
+          ]
         }
       ],
       "mr:0102-vincentianus-tutelensis": [
@@ -1076,6 +1148,19 @@
           "check": "0e2ccc42",
           "name": "Antherus",
           "qid": "Q132100"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 80,
+          "end": 98,
+          "check": "a36b0e3f",
+          "name": "Pontianus",
+          "qid": "Q132113",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0813-pontianus-et-hippolytus"
+          ]
         }
       ],
       "mr:0103-cyriacus-elias-chavara": [
@@ -1195,16 +1280,16 @@
           ]
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 113,
-          "end": 128,
-          "check": "fcf122ad",
-          "qid": "Q167600",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "start": 105,
+          "end": 137,
+          "check": "39d92fd8",
+          "name": "Germanus",
+          "qid": "Q442516",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0731-germanus-autissiodorensis"
           ]
         }
       ],
@@ -1230,6 +1315,31 @@
           "check": "c99adc5e",
           "name": "Gordius",
           "qid": "Q2701896"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 73,
+          "end": 81,
+          "check": "192d154e",
+          "name": "Basilius",
+          "qid": "Q44258",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0101-basilius-magnus",
+            "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 142,
+          "end": 165,
+          "check": "c40c418e",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0103-lucianus-leontii": [
@@ -1278,6 +1388,17 @@
           "check": "689f0b9c",
           "name": "Theogenes",
           "qid": "Q97257127"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 77,
+          "check": "605f6580",
+          "name": "Licinius",
+          "qid": "Q184549",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0103-theopemptus-et-theona": [
@@ -1311,6 +1432,17 @@
           "check": "2e2b6a34",
           "name": "Theona",
           "qid": "Q141882958"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 81,
+          "end": 104,
+          "check": "c40c418e",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0104-abrunculus-lingonensis": [
@@ -1348,6 +1480,19 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 168,
+          "end": 187,
+          "check": "e42e310a",
+          "name": "Sidonius Apollinaris",
+          "qid": "Q302936",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0821-sidonius-apollinaris"
+          ]
         }
       ],
       "mr:0104-angela-fulginii": [
@@ -1372,6 +1517,19 @@
           "check": "62f45e8b",
           "name": "Angela",
           "qid": "Q240297"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 78,
+          "end": 87,
+          "check": "17895ccb",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0104-elisabeth-anna-seton": [
@@ -1627,6 +1785,17 @@
           "check": "9c965bf2",
           "name": "Rigobertus",
           "qid": "Q686561"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 74,
+          "end": 105,
+          "check": "8ac8391f",
+          "name": "Carolus Martellus",
+          "qid": "Q3301",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0104-rigomerus-meldorum": [
@@ -1675,6 +1844,17 @@
           "check": "f8f93bf1",
           "name": "Thomas Plumtree",
           "qid": "Q2523976"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 74,
+          "end": 96,
+          "check": "5bbfd5ea",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0105-aemiliana-romae": [
@@ -1699,6 +1879,33 @@
           "check": "1e6d8dfc",
           "name": "Aemiliana",
           "qid": "Q3588903"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 78,
+          "check": "8bc58e87",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 114,
+          "check": "f7c4c0db",
+          "name": "Tharsilla",
+          "qid": "Q1416927",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1224-tarsilla-romae"
+          ]
         }
       ],
       "mr:0105-convoio-abbas": [
@@ -2069,6 +2276,19 @@
           "check": "04024230",
           "name": "Rogerius",
           "qid": "Q16596944"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 87,
+          "end": 96,
+          "check": "17895ccb",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0105-syncletica-alexandriae": [
@@ -2192,6 +2412,20 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 171,
+          "end": 177,
+          "check": "5ac9eaac",
+          "name": "Ioannes",
+          "qid": "Q40662",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0624-ioannes-baptista",
+            "mr:0829-ioannes-baptista"
           ]
         },
         {
@@ -2638,6 +2872,17 @@
           "check": "15ecc567",
           "name": "Iosephus Tuan",
           "qid": "Q11731542"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 172,
+          "end": 189,
+          "check": "e17ba958",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0107-lucianus-nicomediae": [
@@ -2736,6 +2981,17 @@
           "check": "fdaac6c1",
           "name": "Polyeuctus",
           "qid": "Q942861"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 84,
+          "check": "56954666",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0107-raymundus-de-penyafort": [
@@ -2784,6 +3040,19 @@
           "check": "9839a593",
           "name": "Tillo",
           "qid": "Q18818564"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 80,
+          "end": 86,
+          "check": "c7202200",
+          "name": "Eligius",
+          "qid": "Q360798",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1201-eligius-noviomensis"
+          ]
         }
       ],
       "mr:0107-valentinianus-curiae": [
@@ -2893,6 +3162,17 @@
           "check": "317f11fd",
           "name": "Apollinaris",
           "qid": "Q1098296"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
+          "end": 84,
+          "check": "33f01225",
+          "name": "Marcus Aurelius",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0108-eduardus-waterson": [
@@ -2917,6 +3197,17 @@
           "check": "c6b18518",
           "name": "Eduardus Waterson",
           "qid": "Q5345818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 118,
+          "check": "5bbfd5ea",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -3164,6 +3455,17 @@
           "check": "65e126f7",
           "name": "Severinus",
           "qid": "Q458643"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 75,
+          "check": "fd3c9361",
+          "name": "Attila",
+          "qid": "Q36724",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0108-theophilus-et-helladius": [
@@ -3254,6 +3556,19 @@
           "check": "c99d8682",
           "name": "Alexia Le Clerc",
           "qid": "Q456845"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 103,
+          "check": "0f450fd0",
+          "name": "Petrus Fourier",
+          "qid": "Q635048",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1209-petrus-fourier"
+          ]
         }
       ],
       "mr:0109-antonius-fatati": [
@@ -3542,6 +3857,20 @@
           "check": "1aab9a2e",
           "name": "Marcellinus",
           "qid": "Q3845515"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 103,
+          "check": "6e293ec0",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
         }
       ],
       "mr:0110-aegidius-di-bello": [
@@ -3723,6 +4052,31 @@
           "check": "d308b470",
           "name": "Gregorius Nyssenus",
           "qid": "Q191734"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 68,
+          "check": "50ed8854",
+          "name": "Basilius Magnus",
+          "qid": "Q44258",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0101-basilius-magnus",
+            "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 143,
+          "end": 168,
+          "check": "42483797",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0110-gregorius-x": [
@@ -4014,6 +4368,28 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 126,
+          "check": "af6b1976",
+          "name": "Constantinus",
+          "qid": "Q8413",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 169,
+          "end": 175,
+          "check": "2d0f0ce6",
+          "name": "Donatus",
+          "qid": "Q1268674",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0110-paulus-thebaidis": [
@@ -4234,6 +4610,17 @@
           "qid": "Q357410"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 74,
+          "end": 96,
+          "check": "5bbfd5ea",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 136,
@@ -4269,6 +4656,19 @@
           "check": "7acdff57",
           "name": "Honorata",
           "qid": "Q11710058"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 100,
+          "check": "0516abf4",
+          "name": "Epiphanius",
+          "qid": "Q655381",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0121-epiphanius-papiae"
+          ]
         }
       ],
       "mr:0111-hyginus-papa": [
@@ -4354,6 +4754,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 122,
+          "end": 142,
+          "check": "e74bfafb",
+          "name": "Carolus Magnus",
+          "qid": "Q3044",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0111-petrus-apselamus": [
@@ -4396,6 +4807,17 @@
           "check": "feb8fb5f",
           "name": "Petrus Apselamus",
           "qid": "Q2577177"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 88,
+          "end": 107,
+          "check": "0ebf54cd",
+          "name": "Maximinus",
+          "qid": "Q189095",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0111-salvius-carthaginensis": [
@@ -4420,6 +4842,19 @@
           "check": "ea8247ac",
           "name": "Salvius",
           "qid": "Q85973889"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
+          "end": 70,
+          "check": "ac6e9fed",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         },
         {
           "kind": "place",
@@ -4457,6 +4892,19 @@
           "check": "39683e17",
           "name": "Theodosius",
           "qid": "Q1885832"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 63,
+          "check": "9fda72ab",
+          "name": "Sabas",
+          "qid": "Q316440",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1205-sabas-hierosolymorum"
+          ]
         }
       ],
       "mr:0111-typasius-tigavae": [
@@ -4675,6 +5123,19 @@
           "check": "8e1b39ed",
           "name": "Caesaria",
           "qid": "Q104903969"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 87,
+          "check": "4cc34bd2",
+          "name": "Caesarius",
+          "qid": "Q304832",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0827-caesarius-arelatis"
+          ]
         }
       ],
       "mr:0112-ferreolus-gratianopoli": [
@@ -4828,6 +5289,42 @@
           "check": "eb69c84a",
           "name": "Eutropius",
           "qid": "Q98826983"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 111,
+          "check": "d1de9974",
+          "name": "Arcadius",
+          "qid": "Q159369",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 221,
+          "end": 240,
+          "check": "feec257d",
+          "name": "Ioannes Chrysostomus",
+          "qid": "Q43706",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0913-ioannes-chrysostomus",
+            "mr:0914-ioannes-chrysostomus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 298,
+          "end": 318,
+          "check": "a5ac872e",
+          "name": "Optatus",
+          "qid": "Q18279107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-aemilius-szramek": [
@@ -4876,6 +5373,19 @@
           "check": "d6a01d59",
           "name": "Agricius",
           "qid": "Q397206"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 82,
+          "check": "9ed6dddb",
+          "name": "Helena",
+          "qid": "Q170164",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0818-helena-romae"
+          ]
         }
       ],
       "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": [
@@ -4918,6 +5428,17 @@
           "check": "d1b82351",
           "name": "Iosephus Pham Trong Ta",
           "qid": "Q11731134"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 152,
+          "end": 169,
+          "check": "e17ba958",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-godefridus-ilbenstadensis": [
@@ -5023,6 +5544,17 @@
           "qid": "Q120531725"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 109,
+          "check": "605f6580",
+          "name": "Licinius",
+          "qid": "Q184549",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 113,
@@ -5060,6 +5592,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 121,
+          "check": "22918bdd",
+          "name": "Constantius",
+          "qid": "Q46418",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 253,
@@ -5070,6 +5613,19 @@
             {
               "role": "exile"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 329,
+          "end": 336,
+          "check": "8a9659e4",
+          "name": "Matthaeus",
+          "qid": "Q43600",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0921-matthaeus-apostolus-et-evangelista"
           ]
         }
       ],
@@ -5143,6 +5699,17 @@
           "check": "17dcbf66",
           "name": "Petrus",
           "qid": "Q7177914"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 73,
+          "end": 99,
+          "check": "cfca4e3d",
+          "name": "Walid",
+          "qid": "Q284003",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-remigius-remorum": [
@@ -5167,6 +5734,17 @@
           "check": "3224bc20",
           "name": "Remigius",
           "qid": "Q367208"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 84,
+          "check": "7e8549f5",
+          "name": "Clodoveus",
+          "qid": "Q82339",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-veronica-de-binasco": [
@@ -5230,6 +5808,17 @@
           "qid": "Q1153230"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 108,
+          "check": "fef3b0ff",
+          "name": "Vigilius",
+          "qid": "Q168734",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 135,
@@ -5270,16 +5859,16 @@
           "qid": "Q64398254"
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 74,
+          "start": 64,
           "end": 84,
-          "check": "e97aa487",
-          "qid": "Q288",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "check": "bf369df9",
+          "name": "Gregorius Turonensis",
+          "qid": "Q67841",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1117-gregorius-turonis"
           ]
         }
       ],
@@ -5305,6 +5894,19 @@
           "check": "e158bf6a",
           "name": "Felix",
           "qid": "Q3742239"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 70,
+          "check": "a14cd23b",
+          "name": "Paulinus",
+          "qid": "Q132473",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0622-paulinus-nolae"
+          ]
         }
       ],
       "mr:0114-firminus-gabalorum": [
@@ -5353,6 +5955,58 @@
           "check": "e1d967ad",
           "name": "Fulgentius",
           "qid": "Q2616176"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 75,
+          "check": "32e109c6",
+          "name": "Leander",
+          "qid": "Q577125",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0313-leander-hispali"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 77,
+          "end": 84,
+          "check": "577183d1",
+          "name": "Isidorus",
+          "qid": "Q166876",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-isidorus-hispalensis"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 88,
+          "end": 98,
+          "check": "05575841",
+          "name": "Florentina",
+          "qid": "Q2626436",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-florentina-hispali"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 100,
+          "end": 108,
+          "check": "ec727323",
+          "name": "Isidorus",
+          "qid": "Q166876",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-isidorus-hispalensis"
+          ]
         }
       ],
       "mr:0114-glycerius-antiochiae": [
@@ -5738,6 +6392,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 120,
+          "end": 137,
+          "check": "90275c51",
+          "name": "Avitus",
+          "qid": "Q129167724",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 184,
@@ -5989,6 +6654,17 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 152,
+          "end": 174,
+          "check": "e8682dfd",
+          "name": "Innocentius",
+          "qid": "Q128076",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0115-probus-reate": [
@@ -6013,6 +6689,20 @@
           "check": "3e139957",
           "name": "Probus",
           "qid": "Q97256905"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 76,
+          "end": 97,
+          "check": "6e293ec0",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
         }
       ],
       "mr:0115-romedius-anauniensis": [
@@ -6145,6 +6835,19 @@
           "check": "84df378e",
           "name": "Adiutus",
           "qid": "Q9140888"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 168,
+          "end": 177,
+          "check": "e94076d3",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         },
         {
           "kind": "place",
@@ -6321,16 +7024,16 @@
           "qid": "Q3160349"
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 83,
+          "start": 74,
           "end": 93,
-          "check": "7885a202",
-          "qid": "Q334008",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "check": "d759b0c6",
+          "name": "Honoratus",
+          "qid": "Q526245",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0116-honoratus-arelatis"
           ]
         }
       ],
@@ -6454,6 +7157,19 @@
           "qid": "Q141886871"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 108,
+          "check": "9c62bdc4",
+          "name": "Ursus",
+          "qid": "Q141943220",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0727-ursus-loccarum"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 109,
@@ -6489,6 +7205,19 @@
           "check": "86ba3d50",
           "name": "Marcellus I",
           "qid": "Q102131"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 101,
+          "end": 108,
+          "check": "6b9b7678",
+          "name": "Damasus",
+          "qid": "Q130997",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1211-damasus-i"
+          ]
         }
       ],
       "mr:0116-mela-rhinocorurae": [
@@ -6513,6 +7242,17 @@
           "check": "1b46104a",
           "name": "Mela",
           "qid": "Q85973850"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 80,
+          "check": "42483797",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0116-titianus-opitergii": [
@@ -6585,6 +7325,30 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 276,
+          "end": 299,
+          "check": "c40c418e",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 322,
+          "end": 332,
+          "check": "d7d43c31",
+          "name": "Athanasius",
+          "qid": "Q44024",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0502-athanasius-alexandriae"
+          ]
         }
       ],
       "mr:0117-gamelbertus-bavariae": [
@@ -6609,6 +7373,19 @@
           "check": "49864680",
           "name": "Gamelbertus",
           "qid": "Q315627"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 55,
+          "end": 61,
+          "check": "70c9a9b4",
+          "name": "Utto",
+          "qid": "Q368032",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1003-utho-methemensis"
+          ]
         },
         {
           "kind": "place",
@@ -6707,6 +7484,17 @@
           "check": "3d4a60fa",
           "name": "Marcellus",
           "qid": "Q16027413"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 122,
+          "end": 140,
+          "check": "d8f36668",
+          "name": "Euricus",
+          "qid": "Q217620",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0117-rosselina-cellae-robaudi": [
@@ -6955,6 +7743,19 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 94,
+          "end": 103,
+          "check": "5e9c2ea6",
+          "name": "Columbanus",
+          "qid": "Q319653",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1123-columbanus-luxoviensis"
+          ]
         }
       ],
       "mr:0118-facius-cremonae": [
@@ -7067,6 +7868,17 @@
           "check": "5ce2210e",
           "name": "Margarita",
           "qid": "Q232031"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
+          "end": 80,
+          "check": "464795f7",
+          "name": "Bela IV",
+          "qid": "Q152370",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0118-maria-ioanna-fasce": [
@@ -7226,6 +8038,17 @@
           "end": 98,
           "check": "981d6793",
           "qid": "Q141808067"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 126,
+          "end": 142,
+          "check": "ae916dee",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0118-volusianus-turonensis": [
@@ -7311,6 +8134,20 @@
           "check": "a93a7720",
           "name": "Bassianus",
           "qid": "Q1289858"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 154,
+          "end": 175,
+          "check": "4ff2f996",
+          "name": "Ambrosius",
+          "qid": "Q43689",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-ambrosius-mediolani",
+            "mr:1207-ambrosius-mediolanensis"
+          ]
         }
       ],
       "mr:0119-germanicus-smyrnae": [
@@ -7348,6 +8185,28 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 77,
+          "end": 91,
+          "check": "794ba81d",
+          "name": "Marcus Antoninus",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 95,
+          "end": 120,
+          "check": "dc748133",
+          "name": "Lucius Aurelius",
+          "qid": "Q1433",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "person",
@@ -7393,6 +8252,20 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 147,
+          "end": 166,
+          "check": "beeb7ad4",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
           ]
         }
       ],
@@ -7646,6 +8519,17 @@
           "check": "47fe12c1",
           "name": "Pontianus",
           "qid": "Q436439"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 65,
+          "end": 85,
+          "check": "0ff9f3b5",
+          "name": "Antoninus",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0119-remigius-rothomagi": [
@@ -7670,6 +8554,17 @@
           "check": "3224bc20",
           "name": "Remigius",
           "qid": "Q975560"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 49,
+          "end": 62,
+          "check": "3474828f",
+          "name": "Pippinus",
+          "qid": "Q81212",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0120-adalheidis-brando": [
@@ -7766,6 +8661,19 @@
           "check": "ca668440",
           "name": "Eustochius Calafato",
           "qid": "Q276019"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 177,
+          "end": 186,
+          "check": "17895ccb",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0120-euthymius-palaestinae": [
@@ -7827,6 +8735,31 @@
           "check": "3516a722",
           "name": "Fabianus",
           "qid": "Q131159"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 149,
+          "end": 166,
+          "check": "56954666",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 215,
+          "end": 224,
+          "check": "d73322a5",
+          "name": "Cyprianus",
+          "qid": "Q190240",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0914-cyprianus-carthaginensis",
+            "mr:0916-cornelius-et-cyprianus"
+          ]
         },
         {
           "kind": "place",
@@ -7977,6 +8910,20 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 75,
+          "end": 84,
+          "check": "33dd4e4f",
+          "name": "Ambrosius",
+          "qid": "Q43689",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-ambrosius-mediolani",
+            "mr:1207-ambrosius-mediolanensis"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 86,
@@ -8108,6 +9055,17 @@
           "qid": "Q100741656"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 125,
+          "end": 142,
+          "check": "060e42df",
+          "name": "Carolus I",
+          "qid": "Q81506",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 265,
@@ -8152,6 +9110,17 @@
           "check": "8d523681",
           "name": "Nicolaus Wheeler",
           "qid": "Q7026431"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 103,
+          "end": 125,
+          "check": "5bbfd5ea",
+          "name": "Elisabeth I",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -8231,6 +9200,39 @@
           "check": "10094fdb",
           "name": "Eulogius",
           "qid": "Q2480213"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 126,
+          "end": 135,
+          "check": "a20776c7",
+          "name": "Valerianus",
+          "qid": "Q46750",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 139,
+          "end": 161,
+          "check": "80f53d0c",
+          "name": "Gallienus",
+          "qid": "Q104475",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 193,
+          "end": 213,
+          "check": "f938fd39",
+          "name": "Aemilianus",
+          "qid": "Q95066394",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": [
@@ -8579,6 +9581,17 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 139,
+          "end": 160,
+          "check": "afea20bc",
+          "name": "Chosroes",
+          "qid": "Q212732",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0122-antonius-della-chiesa": [
@@ -8640,6 +9653,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 112,
+          "end": 136,
+          "check": "6a1d868f",
+          "name": "Carolus Magnus",
+          "qid": "Q3044",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -8723,6 +9747,17 @@
           "check": "f9b50b86",
           "name": "Matthaeus Alonso de Leziniana",
           "qid": "Q11771379"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 145,
+          "end": 156,
+          "check": "e29b491b",
+          "name": "Trinh Doanh",
+          "qid": "Q704455",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0122-gaudentius-novariae": [
@@ -8795,6 +9830,17 @@
           "check": "fcd3bcfd",
           "name": "Gulielmus Patenson",
           "qid": "Q8016623"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 78,
+          "end": 100,
+          "check": "5bbfd5ea",
+          "name": "Elisabeth I",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -8919,6 +9965,19 @@
           "qid": "Q3847415"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 113,
+          "check": "eaa86791",
+          "name": "Catharina Senensis",
+          "qid": "Q229190",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0429-catharina-senensis"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 133,
@@ -9010,6 +10069,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 74,
+          "end": 97,
+          "check": "c40c418e",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 155,
@@ -9093,6 +10163,20 @@
           "check": "994c106a",
           "name": "Andreas Chong Hwa Gyong",
           "qid": "Q9151792"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 116,
+          "check": "64100b66",
+          "name": "Laurentius Imbert",
+          "qid": "Q1151286",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0920-andreas-kim-tae-gon-et-socii",
+            "mr:0921-laurentius-imbert-et-socii"
+          ]
         }
       ],
       "mr:0123-clemens-et-agathangelus": [
@@ -9272,6 +10356,17 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 73,
+          "end": 90,
+          "check": "56954666",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 315,
           "end": 322,
           "check": "93115f87",
@@ -9369,6 +10464,20 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 265,
+          "end": 282,
+          "check": "ec856bef",
+          "name": "Ioanna de Chantal",
+          "qid": "Q234521",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0812-ioanna-francisca-fremiot-de-chantal",
+            "mr:1213-ioanna-francisca-fremiot-de-chantal"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 294,
@@ -9426,6 +10535,17 @@
           "check": "8777c37e",
           "name": "Ioannes Grove",
           "qid": "Q131844211"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 125,
+          "end": 144,
+          "check": "fe166c78",
+          "name": "Carolus II",
+          "qid": "Q122553",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -9715,6 +10835,19 @@
           "check": "cbfa5f2d",
           "name": "Agileus",
           "qid": "Q85973878"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 94,
+          "check": "ac6e9fed",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         }
       ],
       "mr:0125-ananias-damasci": [
@@ -9738,6 +10871,20 @@
             {
               "role": "ministry"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
+          "end": 66,
+          "check": "6310d2ee",
+          "name": "Paulus",
+          "qid": "Q9200",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0125-conversio-pauli-apostoli",
+            "mr:0629-petrus-et-paulus-apostoli"
           ]
         }
       ],
@@ -9835,6 +10982,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 97,
+          "check": "42483797",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0125-conversio-pauli-apostoli": [
@@ -10005,6 +11163,19 @@
           "check": "47ada1f5",
           "name": "Palaemon",
           "qid": "Q6058822"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 131,
+          "end": 139,
+          "check": "4d9e7156",
+          "name": "Pachomius",
+          "qid": "Q298698",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0509-pachomius-thebaidis"
+          ]
         }
       ],
       "mr:0125-poppo-stabulensis": [
@@ -10284,6 +11455,19 @@
           "check": "d460153f",
           "name": "Paula",
           "qid": "Q237824"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 160,
+          "end": 180,
+          "check": "eb6b0c66",
+          "name": "Eustochium",
+          "qid": "Q442396",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0928-eustochius-bethlehem"
+          ]
         }
       ],
       "mr:0126-theogenes-hipponis": [
@@ -10308,6 +11492,19 @@
           "check": "689f0b9c",
           "name": "Theogenes",
           "qid": "Q85974256"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 79,
+          "check": "ac6e9fed",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         }
       ],
       "mr:0126-timotheus-et-titus": [
@@ -10328,6 +11525,20 @@
           "check": "0d951f64",
           "name": "Titus",
           "qid": "Q320136"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 85,
+          "check": "cbfb84da",
+          "name": "Paulus",
+          "qid": "Q9200",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0125-conversio-pauli-apostoli",
+            "mr:0629-petrus-et-paulus-apostoli"
+          ]
         },
         {
           "kind": "place",
@@ -10544,6 +11755,19 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 159,
+          "end": 180,
+          "check": "633d8389",
+          "name": "Gregorius VII",
+          "qid": "Q133063",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0525-gregorius-vii"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 209,
@@ -10603,6 +11827,17 @@
           "check": "1f06c03a",
           "name": "Ioannes Maria",
           "qid": "Q13125269"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 201,
+          "end": 213,
+          "check": "22fb1d03",
+          "name": "Mwenga",
+          "qid": "Q707775",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0127-ioannes-morinensis": [
@@ -10688,6 +11923,17 @@
           "check": "b6d7829f",
           "name": "Iulianus Sorae",
           "qid": "Q1712147"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 66,
+          "end": 86,
+          "check": "0ff9f3b5",
+          "name": "Antoninus",
+          "qid": "Q1429",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0127-manfredus-settala": [
@@ -10889,6 +12135,17 @@
           "check": "ad22d3f0",
           "name": "Laurentius Wang Bing",
           "qid": "Q4103208"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 156,
+          "end": 178,
+          "check": "5d68eac5",
+          "name": "Wenzongxian",
+          "qid": "Q334452",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0128-bartholomaeus-aiutamicristo": [
@@ -11100,6 +12357,19 @@
           "end": 235,
           "check": "57cc9901",
           "qid": "Q10951"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 250,
+          "end": 270,
+          "check": "fa66c153",
+          "name": "Gregorius X",
+          "qid": "Q161740",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0110-gregorius-x"
+          ]
         },
         {
           "kind": "place",
@@ -11355,6 +12625,17 @@
           "check": "3380e314",
           "name": "Maximinus",
           "qid": "Q54576665"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 71,
+          "end": 98,
+          "check": "7bfe55fe",
+          "name": "Iulianus Apostata",
+          "qid": "Q33941",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0129-papias-et-maurus": [
@@ -11421,6 +12702,19 @@
           "check": "fd52d849",
           "name": "Bebaia",
           "qid": "Q37945581"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 116,
+          "check": "17f226b2",
+          "name": "Barsimaeus",
+          "qid": "Q97253316",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0130-barsimaeus-edessae"
+          ]
         }
       ],
       "mr:0129-sulpicius-severus": [
@@ -11457,6 +12751,19 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 165,
+          "end": 185,
+          "check": "bf369df9",
+          "name": "Gregorius Turonensis",
+          "qid": "Q67841",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1117-gregorius-turonis"
           ]
         }
       ],
@@ -11567,6 +12874,17 @@
           "check": "4018aeb2",
           "name": "Aldegundis",
           "qid": "Q271330"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 60,
+          "end": 75,
+          "check": "c4ccd525",
+          "name": "Dagobertus",
+          "qid": "Q109860",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-aloysius-wiaux": [
@@ -11615,6 +12933,30 @@
           "check": "f90f79ba",
           "name": "Armentarius",
           "qid": "Q2654130"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 69,
+          "end": 78,
+          "check": "0bb18033",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 82,
+          "end": 97,
+          "check": "afa1a4ff",
+          "name": "Liutprandus",
+          "qid": "Q251836",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -11689,6 +13031,17 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 154,
+          "end": 170,
+          "check": "611744b4",
+          "name": "Clodoveus II",
+          "qid": "Q309919",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-carmela-garcia-moyon": [
@@ -11798,6 +13151,17 @@
           "check": "b7833625",
           "name": "Franciscus Taylor",
           "qid": "Q1441753"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 185,
+          "end": 202,
+          "check": "667d94f6",
+          "name": "Iacobus I",
+          "qid": "Q79972",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-hyacintha-mariscotti": [
@@ -11846,6 +13210,17 @@
           "check": "92784556",
           "name": "Martina",
           "qid": "Q272101"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 52,
+          "end": 62,
+          "check": "ed0f2ae2",
+          "name": "Donus",
+          "qid": "Q103545",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -11988,6 +13363,17 @@
               "role": "captivity"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 129,
+          "end": 165,
+          "check": "7bc54539",
+          "name": "Arun",
+          "qid": "Q131002",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-thomas-khuong": [
@@ -12012,6 +13398,17 @@
           "check": "9bb718ac",
           "name": "Thomas Khuong",
           "qid": "Q9359407"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 97,
+          "check": "3906145d",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-abraham-arbelensis": [
@@ -12049,6 +13446,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
+          "end": 83,
+          "check": "04318708",
+          "name": "Sapor",
+          "qid": "Q234860",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-augustinus-pak-chong-won-et-socii": [
@@ -12272,6 +13680,19 @@
           "qid": "Q146183"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 184,
+          "end": 209,
+          "check": "3a4bf448",
+          "name": "Maria Dominica Mazzarello",
+          "qid": "Q466565",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0514-maria-dominica-mazzarello"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 324,
@@ -12388,6 +13809,19 @@
           "check": "9e4ffcc7",
           "name": "Marcella",
           "qid": "Q267211"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 59,
+          "end": 69,
+          "check": "05bd5b25",
+          "name": "Hieronymus",
+          "qid": "Q44248",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0930-hieronymus-dalmatiae"
+          ]
         }
       ],
       "mr:0131-metranus-alexandriae": [
@@ -12412,6 +13846,17 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 95,
+          "check": "ae916dee",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-victorinus-et-socii": [
@@ -12490,6 +13935,17 @@
           "check": "a59bbe36",
           "name": "Papias",
           "qid": "Q141883148"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 118,
+          "end": 134,
+          "check": "ae916dee",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-waldus-ebroicensis": [
@@ -162326,6 +163782,17 @@
           "check": "80c266b0",
           "name": "Almachius",
           "qid": "Q1115667"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 83,
+          "end": 106,
+          "check": "0192015c",
+          "name": "Alypius",
+          "qid": "Q3655677",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0101-basilius-magnus": [
@@ -162498,6 +163965,17 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 285,
+          "end": 298,
+          "check": "62955ed6",
+          "name": "Thrasamundus",
+          "qid": "Q311888",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0101-gulielmus-divionensis": [
@@ -163076,6 +164554,19 @@
           "check": "fbe0abf1",
           "name": "Bladulphus",
           "qid": "Q2905657"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 86,
+          "end": 95,
+          "check": "ec94aa3f",
+          "name": "Columbanus",
+          "qid": "Q319653",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1123-columbanus-luxoviensis"
+          ]
         }
       ],
       "mr:0102-gulielmus-repin-et-laurentius-batard": [
@@ -163290,6 +164781,19 @@
           "check": "1c716b02",
           "name": "Telesphorus",
           "qid": "Q81647"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 73,
+          "check": "6bfcc136",
+          "name": "Irenaeus",
+          "qid": "Q182123",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0628-irenaeus-lugdunensis"
+          ]
         }
       ],
       "mr:0102-theodorus-massiliae": [
@@ -163314,6 +164818,30 @@
           "check": "1a3f374c",
           "name": "Theodorus",
           "qid": "Q3526531"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 145,
+          "end": 159,
+          "check": "23309d76",
+          "name": "Childebertus",
+          "qid": "Q312606",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 162,
+          "end": 171,
+          "check": "e65c221b",
+          "name": "Guntramnus",
+          "qid": "Q295086",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0328-gunthramnus-cabilloni"
+          ]
         }
       ],
       "mr:0102-vincentianus-tutelensis": [
@@ -163362,6 +164890,19 @@
           "check": "04bab716",
           "name": "Antherus",
           "qid": "Q132100"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 112,
+          "check": "2c6c5206",
+          "name": "Pontianus",
+          "qid": "Q132113",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0813-pontianus-et-hippolytus"
+          ]
         }
       ],
       "mr:0103-cyriacus-elias-chavara": [
@@ -163481,16 +165022,16 @@
           ]
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 132,
+          "start": 113,
           "end": 139,
-          "check": "0684e258",
-          "qid": "Q167600",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "check": "31b21777",
+          "name": "Germanus",
+          "qid": "Q442516",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0731-germanus-autissiodorensis"
           ]
         }
       ],
@@ -163516,6 +165057,31 @@
           "check": "7ac8af09",
           "name": "Gordius",
           "qid": "Q2701896"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 97,
+          "check": "d11a4de0",
+          "name": "Basilius",
+          "qid": "Q44258",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0101-basilius-magnus",
+            "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 191,
+          "end": 202,
+          "check": "9262e244",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0103-lucianus-leontii": [
@@ -163564,6 +165130,17 @@
           "check": "717bb3be",
           "name": "Theogenes",
           "qid": "Q97257127"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 85,
+          "end": 92,
+          "check": "25fb3f41",
+          "name": "Licinius",
+          "qid": "Q184549",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0103-theopemptus-et-theona": [
@@ -163597,6 +165174,17 @@
           "check": "e150a7d1",
           "name": "Theona",
           "qid": "Q141882958"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 134,
+          "end": 156,
+          "check": "b877b9ad",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0104-angela-fulginii": [
@@ -163621,6 +165209,19 @@
           "check": "7d797236",
           "name": "Angela",
           "qid": "Q240297"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 100,
+          "check": "f00ecd22",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0104-elisabeth-anna-seton": [
@@ -163876,6 +165477,17 @@
           "check": "cd91529a",
           "name": "Rigobertus",
           "qid": "Q686561"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 132,
+          "end": 163,
+          "check": "b6ebc4ae",
+          "name": "Carolus Martellus",
+          "qid": "Q3301",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0104-rigomerus-meldorum": [
@@ -163924,6 +165536,17 @@
           "check": "c22d6a46",
           "name": "Thomas Plumtree",
           "qid": "Q2523976"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 118,
+          "check": "0dd6ad44",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0105-aemiliana-romae": [
@@ -163948,6 +165571,33 @@
           "check": "3d9952f6",
           "name": "Aemiliana",
           "qid": "Q3588903"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 82,
+          "check": "468dea00",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 103,
+          "end": 119,
+          "check": "4d2880d4",
+          "name": "Tharsilla",
+          "qid": "Q1416927",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1224-tarsilla-romae"
+          ]
         }
       ],
       "mr:0105-convoio-abbas": [
@@ -164309,6 +165959,19 @@
           "check": "942956ff",
           "name": "Rogerius",
           "qid": "Q16596944"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 93,
+          "check": "f00ecd22",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0105-syncletica-alexandriae": [
@@ -164432,6 +166095,20 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 205,
+          "end": 213,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "qid": "Q40662",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0624-ioannes-baptista",
+            "mr:0829-ioannes-baptista"
           ]
         },
         {
@@ -164869,6 +166546,17 @@
           "check": "fcf9a0b6",
           "name": "Iosephus Tuan",
           "qid": "Q11731542"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 133,
+          "end": 150,
+          "check": "3fa4d99a",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0107-lucianus-nicomediae": [
@@ -164967,6 +166655,17 @@
           "check": "4f61b56e",
           "name": "Polyeuctus",
           "qid": "Q942861"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 107,
+          "check": "a72a8e48",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0107-raymundus-de-penyafort": [
@@ -165015,6 +166714,19 @@
           "check": "3d3e2c47",
           "name": "Tillo",
           "qid": "Q18818564"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 104,
+          "end": 110,
+          "check": "c6b8d975",
+          "name": "Eligius",
+          "qid": "Q360798",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1201-eligius-noviomensis"
+          ]
         }
       ],
       "mr:0107-valentinianus-curiae": [
@@ -165124,6 +166836,17 @@
           "check": "7fd4925f",
           "name": "Apollinaris",
           "qid": "Q1098296"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 90,
+          "end": 114,
+          "check": "90c973d8",
+          "name": "Marcus Aurelius",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0108-eduardus-waterson": [
@@ -165148,6 +166871,17 @@
           "check": "c1863a4a",
           "name": "Eduardus Waterson",
           "qid": "Q5345818"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 133,
+          "check": "0dd6ad44",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -165395,6 +167129,17 @@
           "check": "d66a0934",
           "name": "Severinus",
           "qid": "Q458643"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 130,
+          "end": 153,
+          "check": "d8d51f7a",
+          "name": "Attila",
+          "qid": "Q36724",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0108-theophilus-et-helladius": [
@@ -165485,6 +167230,19 @@
           "check": "782b4b3d",
           "name": "Alexia Le Clerc",
           "qid": "Q456845"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 113,
+          "check": "dc14f5ce",
+          "name": "Petrus Fourier",
+          "qid": "Q635048",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1209-petrus-fourier"
+          ]
         }
       ],
       "mr:0109-antonius-fatati": [
@@ -165773,6 +167531,20 @@
           "check": "b0b1bbb7",
           "name": "Marcellinus",
           "qid": "Q3845515"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 65,
+          "end": 79,
+          "check": "468dea00",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
         }
       ],
       "mr:0110-aegidius-di-bello": [
@@ -165954,6 +167726,31 @@
           "check": "34076c22",
           "name": "Gregorius Nyssenus",
           "qid": "Q191734"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 97,
+          "check": "dd810643",
+          "name": "Basilius Magnus",
+          "qid": "Q44258",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0101-basilius-magnus",
+            "mr:0102-basilius-magnus-et-gregorius-nazianzenus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 211,
+          "end": 236,
+          "check": "ebfc3f58",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0110-gregorius-x": [
@@ -166245,6 +168042,17 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 134,
+          "end": 155,
+          "check": "525e3418",
+          "name": "Constantinus",
+          "qid": "Q8413",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0110-paulus-thebaidis": [
@@ -166476,6 +168284,17 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 183,
+          "end": 202,
+          "check": "0dd6ad44",
+          "name": "Elisabeth",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0111-honorata-papiae": [
@@ -166500,6 +168319,19 @@
           "check": "cfa71173",
           "name": "Honorata",
           "qid": "Q11710058"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 83,
+          "end": 99,
+          "check": "913032e2",
+          "name": "Epiphanius",
+          "qid": "Q655381",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0121-epiphanius-papiae"
+          ]
         }
       ],
       "mr:0111-hyginus-papa": [
@@ -166585,6 +168417,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 133,
+          "end": 147,
+          "check": "2083691d",
+          "name": "Carolus Magnus",
+          "qid": "Q3044",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0111-petrus-apselamus": [
@@ -166609,6 +168452,17 @@
           "check": "c8725a19",
           "name": "Petrus Apselamus",
           "qid": "Q2577177"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 99,
+          "check": "b7595cbc",
+          "name": "Maximinus",
+          "qid": "Q189095",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0111-salvius-carthaginensis": [
@@ -166633,6 +168487,19 @@
           "check": "18d69324",
           "name": "Salvius",
           "qid": "Q85973889"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 75,
+          "check": "1a8a5564",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         },
         {
           "kind": "place",
@@ -166670,6 +168537,19 @@
           "check": "2fbae70c",
           "name": "Theodosius",
           "qid": "Q1885832"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 65,
+          "end": 69,
+          "check": "5d7f956d",
+          "name": "Sabas",
+          "qid": "Q316440",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1205-sabas-hierosolymorum"
+          ]
         }
       ],
       "mr:0111-typasius-tigavae": [
@@ -166888,6 +168768,19 @@
           "check": "b7329fd9",
           "name": "Caesaria",
           "qid": "Q104903969"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 94,
+          "check": "0a5b0751",
+          "name": "Caesarius",
+          "qid": "Q304832",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0827-caesarius-arelatis"
+          ]
         }
       ],
       "mr:0112-ferreolus-gratianopoli": [
@@ -167041,6 +168934,42 @@
           "check": "72aeeae4",
           "name": "Eutropius",
           "qid": "Q98826983"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 108,
+          "end": 126,
+          "check": "5ce1c8f9",
+          "name": "Arcadius",
+          "qid": "Q159369",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 259,
+          "end": 278,
+          "check": "1d3ab5df",
+          "name": "Ioannes Chrysostomus",
+          "qid": "Q43706",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0913-ioannes-chrysostomus",
+            "mr:0914-ioannes-chrysostomus"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 314,
+          "end": 329,
+          "check": "67afb5f4",
+          "name": "Optatus",
+          "qid": "Q18279107",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-aemilius-szramek": [
@@ -167089,6 +169018,19 @@
           "check": "90246b42",
           "name": "Agricius",
           "qid": "Q397206"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 127,
+          "end": 132,
+          "check": "63704e58",
+          "name": "Helena",
+          "qid": "Q170164",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0818-helena-romae"
+          ]
         }
       ],
       "mr:0113-dominicus-pham-trong-kham-et-lucas-thin": [
@@ -167131,6 +169073,17 @@
           "check": "19634fd7",
           "name": "Iosephus Pham Trong Ta",
           "qid": "Q11731134"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 165,
+          "end": 182,
+          "check": "3fa4d99a",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-godefridus-ilbenstadensis": [
@@ -167236,6 +169189,17 @@
           "qid": "Q120531725"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 109,
+          "check": "8f216d86",
+          "name": "Licinius",
+          "qid": "Q184549",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 153,
@@ -167273,6 +169237,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 109,
+          "end": 128,
+          "check": "451a5176",
+          "name": "Constantius",
+          "qid": "Q46418",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 297,
@@ -167283,6 +169258,19 @@
             {
               "role": "exile"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 365,
+          "end": 371,
+          "check": "ca287dab",
+          "name": "Matthaeus",
+          "qid": "Q43600",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0921-matthaeus-apostolus-et-evangelista"
           ]
         }
       ],
@@ -167356,6 +169344,17 @@
           "check": "c8725a19",
           "name": "Petrus",
           "qid": "Q7177914"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 115,
+          "check": "9037a0ab",
+          "name": "Walid",
+          "qid": "Q284003",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-remigius-remorum": [
@@ -167380,6 +169379,17 @@
           "check": "bbd798e8",
           "name": "Remigius",
           "qid": "Q367208"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 102,
+          "end": 113,
+          "check": "ea3a850c",
+          "name": "Clodoveus",
+          "qid": "Q82339",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0113-veronica-de-binasco": [
@@ -167443,6 +169453,17 @@
           "qid": "Q1153230"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 109,
+          "end": 121,
+          "check": "1a53f96b",
+          "name": "Vigilius",
+          "qid": "Q168734",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 144,
@@ -167483,16 +169504,16 @@
           "qid": "Q64398254"
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 131,
+          "start": 119,
           "end": 136,
-          "check": "b49f1e41",
-          "qid": "Q288",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "check": "803c06bd",
+          "name": "Gregorius Turonensis",
+          "qid": "Q67841",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1117-gregorius-turonis"
           ]
         }
       ],
@@ -167518,6 +169539,19 @@
           "check": "2e279f06",
           "name": "Felix",
           "qid": "Q3742239"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 74,
+          "check": "256b8e9f",
+          "name": "Paulinus",
+          "qid": "Q132473",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0622-paulinus-nolae"
+          ]
         }
       ],
       "mr:0114-firminus-gabalorum": [
@@ -167566,6 +169600,58 @@
           "check": "ed752b22",
           "name": "Fulgentius",
           "qid": "Q2616176"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 77,
+          "end": 84,
+          "check": "6b4ed1f4",
+          "name": "Leander",
+          "qid": "Q577125",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0313-leander-hispali"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 86,
+          "end": 93,
+          "check": "6344175a",
+          "name": "Isidorus",
+          "qid": "Q166876",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-isidorus-hispalensis"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 96,
+          "end": 106,
+          "check": "d800ac07",
+          "name": "Florentina",
+          "qid": "Q2626436",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-florentina-hispali"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 121,
+          "check": "6344175a",
+          "name": "Isidorus",
+          "qid": "Q166876",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-isidorus-hispalensis"
+          ]
         }
       ],
       "mr:0114-glycerius-antiochiae": [
@@ -167951,6 +170037,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 152,
+          "end": 157,
+          "check": "a1d29463",
+          "name": "Avitus",
+          "qid": "Q129167724",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 214,
@@ -168193,6 +170290,17 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 175,
+          "end": 193,
+          "check": "1673a737",
+          "name": "Innocentius",
+          "qid": "Q128076",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0115-probus-reate": [
@@ -168217,6 +170325,20 @@
           "check": "7ab22475",
           "name": "Probus",
           "qid": "Q97256905"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 66,
+          "end": 80,
+          "check": "468dea00",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
+          ]
         }
       ],
       "mr:0115-romedius-anauniensis": [
@@ -168349,6 +170471,19 @@
           "check": "022bcb2c",
           "name": "Adiutus",
           "qid": "Q9140888"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 184,
+          "end": 193,
+          "check": "f00ecd22",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         },
         {
           "kind": "place",
@@ -168525,16 +170660,16 @@
           "qid": "Q3160349"
         },
         {
-          "kind": "place",
+          "kind": "person",
           "where": "text",
-          "start": 95,
+          "start": 84,
           "end": 101,
-          "check": "ff7375be",
-          "qid": "Q334008",
-          "roles": [
-            {
-              "role": "mention"
-            }
+          "check": "727a5a7b",
+          "name": "Honoratus",
+          "qid": "Q526245",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0116-honoratus-arelatis"
           ]
         }
       ],
@@ -168658,6 +170793,19 @@
           "qid": "Q141886871"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 140,
+          "end": 144,
+          "check": "4562f32e",
+          "name": "Ursus",
+          "qid": "Q141943220",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0727-ursus-loccarum"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 156,
@@ -168693,6 +170841,19 @@
           "check": "21a199b4",
           "name": "Marcellus I",
           "qid": "Q102131"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 125,
+          "check": "8e1c4426",
+          "name": "Damasus",
+          "qid": "Q130997",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1211-damasus-i"
+          ]
         }
       ],
       "mr:0116-mela-rhinocorurae": [
@@ -168717,6 +170878,17 @@
           "check": "47d5b7b3",
           "name": "Mela",
           "qid": "Q85973850"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 101,
+          "end": 126,
+          "check": "ebfc3f58",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0116-titianus-opitergii": [
@@ -168789,6 +170961,30 @@
               "role": "religious_life"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 316,
+          "end": 338,
+          "check": "b877b9ad",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 356,
+          "end": 364,
+          "check": "f5e4f9c8",
+          "name": "Athanasius",
+          "qid": "Q44024",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0502-athanasius-alexandriae"
+          ]
         }
       ],
       "mr:0117-gamelbertus-bavariae": [
@@ -168825,6 +171021,19 @@
             {
               "role": "foundation"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 110,
+          "end": 114,
+          "check": "7c188847",
+          "name": "Utto",
+          "qid": "Q368032",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1003-utho-methemensis"
           ]
         }
       ],
@@ -168911,6 +171120,17 @@
           "check": "0cbb77c8",
           "name": "Marcellus",
           "qid": "Q16027413"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 129,
+          "end": 145,
+          "check": "8b4e97ea",
+          "name": "Euricus",
+          "qid": "Q217620",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0117-rosselina-cellae-robaudi": [
@@ -169150,6 +171370,19 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 118,
+          "end": 127,
+          "check": "ec94aa3f",
+          "name": "Columbanus",
+          "qid": "Q319653",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1123-columbanus-luxoviensis"
+          ]
         }
       ],
       "mr:0118-facius-cremonae": [
@@ -169262,6 +171495,17 @@
           "check": "b38c916a",
           "name": "Margarita",
           "qid": "Q232031"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 63,
+          "end": 73,
+          "check": "392e5600",
+          "name": "Bela IV",
+          "qid": "Q152370",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0118-maria-ioanna-fasce": [
@@ -169421,6 +171665,17 @@
           "end": 137,
           "check": "41131085",
           "qid": "Q141808067"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 169,
+          "end": 185,
+          "check": "a72a8e48",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0118-volusianus-turonensis": [
@@ -169506,6 +171761,20 @@
           "check": "5c9d9983",
           "name": "Bassianus",
           "qid": "Q1289858"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 162,
+          "end": 180,
+          "check": "9ebf4173",
+          "name": "Ambrosius",
+          "qid": "Q43689",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-ambrosius-mediolani",
+            "mr:1207-ambrosius-mediolanensis"
+          ]
         }
       ],
       "mr:0119-germanicus-smyrnae": [
@@ -169543,6 +171812,28 @@
               "role": "birth"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 101,
+          "end": 126,
+          "check": "7f44abe7",
+          "name": "Marcus Antoninus",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 129,
+          "end": 142,
+          "check": "b35e3518",
+          "name": "Lucius Aurelius",
+          "qid": "Q1433",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "person",
@@ -169588,6 +171879,20 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 182,
+          "end": 196,
+          "check": "468dea00",
+          "name": "Gregorius Magnus",
+          "qid": "Q42827",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0312-gregorius-magnus",
+            "mr:0903-gregorius-magnus"
           ]
         }
       ],
@@ -169832,6 +172137,17 @@
           "check": "f1e95219",
           "name": "Pontianus",
           "qid": "Q436439"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 134,
+          "end": 153,
+          "check": "42f043ad",
+          "name": "Antoninus",
+          "qid": "Q1430",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0119-remigius-rothomagi": [
@@ -169856,6 +172172,17 @@
           "check": "bbd798e8",
           "name": "Remigius",
           "qid": "Q975560"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 77,
+          "check": "9d8dd663",
+          "name": "Pippinus",
+          "qid": "Q81212",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0120-adalheidis-brando": [
@@ -169952,6 +172279,19 @@
           "check": "9c423777",
           "name": "Eustochius Calafato",
           "qid": "Q276019"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 226,
+          "end": 235,
+          "check": "f00ecd22",
+          "name": "Franciscus",
+          "qid": "Q676555",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1004-franciscus-assisii"
+          ]
         }
       ],
       "mr:0120-euthymius-palaestinae": [
@@ -170013,6 +172353,31 @@
           "check": "c301c540",
           "name": "Fabianus",
           "qid": "Q131159"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 185,
+          "end": 201,
+          "check": "a72a8e48",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 207,
+          "end": 215,
+          "check": "afdb6cc8",
+          "name": "Cyprianus",
+          "qid": "Q190240",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0914-cyprianus-carthaginensis",
+            "mr:0916-cornelius-et-cyprianus"
+          ]
         },
         {
           "kind": "place",
@@ -170176,6 +172541,20 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 86,
+          "end": 94,
+          "check": "e5b65758",
+          "name": "Ambrosius",
+          "qid": "Q43689",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0404-ambrosius-mediolani",
+            "mr:1207-ambrosius-mediolanensis"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 308,
@@ -170294,6 +172673,17 @@
           "qid": "Q100741656"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 125,
+          "end": 135,
+          "check": "37d752d7",
+          "name": "Carolus I",
+          "qid": "Q81506",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 277,
@@ -170338,6 +172728,17 @@
           "check": "5ed6f63c",
           "name": "Nicolaus Wheeler",
           "qid": "Q7026431"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 121,
+          "end": 140,
+          "check": "0dd6ad44",
+          "name": "Elisabeth I",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -170417,6 +172818,39 @@
           "check": "aa0b50be",
           "name": "Eulogius",
           "qid": "Q2480213"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 127,
+          "end": 147,
+          "check": "a732926b",
+          "name": "Valerianus",
+          "qid": "Q46750",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 150,
+          "end": 158,
+          "check": "8be948ed",
+          "name": "Gallienus",
+          "qid": "Q104475",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 210,
+          "end": 230,
+          "check": "4c9f8d6b",
+          "name": "Aemilianus",
+          "qid": "Q95066394",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": [
@@ -170765,6 +173199,17 @@
               "role": "exile"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 147,
+          "end": 169,
+          "check": "0428331d",
+          "name": "Chosroes",
+          "qid": "Q212732",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0122-antonius-della-chiesa": [
@@ -170826,6 +173271,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 133,
+          "end": 155,
+          "check": "6c216e8d",
+          "name": "Carolus Magnus",
+          "qid": "Q3044",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -170909,6 +173365,17 @@
           "check": "03d07d77",
           "name": "Matthaeus Alonso de Leziniana",
           "qid": "Q11771379"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 157,
+          "end": 167,
+          "check": "f036903a",
+          "name": "Trinh Doanh",
+          "qid": "Q704455",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0122-gaudentius-novariae": [
@@ -170981,6 +173448,17 @@
           "check": "8e754c8a",
           "name": "Gulielmus Patenson",
           "qid": "Q8016623"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 99,
+          "end": 118,
+          "check": "0dd6ad44",
+          "name": "Elisabeth I",
+          "qid": "Q7207",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -171105,6 +173583,19 @@
           "qid": "Q3847415"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 116,
+          "end": 133,
+          "check": "6add574f",
+          "name": "Catharina Senensis",
+          "qid": "Q229190",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0429-catharina-senensis"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 166,
@@ -171196,6 +173687,17 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 113,
+          "check": "b877b9ad",
+          "name": "Diocletianus",
+          "qid": "Q43107",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 176,
@@ -171279,6 +173781,20 @@
           "check": "236b48e5",
           "name": "Andreas Chong Hwa Gyong",
           "qid": "Q9151792"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 107,
+          "end": 129,
+          "check": "593fece0",
+          "name": "Laurentius Imbert",
+          "qid": "Q1151286",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0920-andreas-kim-tae-gon-et-socii",
+            "mr:0921-laurentius-imbert-et-socii"
+          ]
         }
       ],
       "mr:0123-clemens-et-agathangelus": [
@@ -171458,6 +173974,17 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 106,
+          "end": 122,
+          "check": "a72a8e48",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 380,
           "end": 386,
           "check": "e8aea3db",
@@ -171555,6 +174082,20 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 272,
+          "end": 291,
+          "check": "322f3f84",
+          "name": "Ioanna de Chantal",
+          "qid": "Q234521",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0812-ioanna-francisca-fremiot-de-chantal",
+            "mr:1213-ioanna-francisca-fremiot-de-chantal"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 335,
@@ -171612,6 +174153,17 @@
           "check": "450f03b8",
           "name": "Ioannes Grove",
           "qid": "Q131844211"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 140,
+          "end": 151,
+          "check": "dd7463ed",
+          "name": "Carolus II",
+          "qid": "Q122553",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -171901,6 +174453,19 @@
           "check": "85819846",
           "name": "Agileus",
           "qid": "Q85973878"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 92,
+          "end": 100,
+          "check": "1a8a5564",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         }
       ],
       "mr:0125-ananias-damasci": [
@@ -171912,6 +174477,20 @@
           "check": "6f058898",
           "name": "Ananias",
           "qid": "Q382898"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 67,
+          "end": 72,
+          "check": "f7f929a4",
+          "name": "Paulus",
+          "qid": "Q9200",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0125-conversio-pauli-apostoli",
+            "mr:0629-petrus-et-paulus-apostoli"
+          ]
         },
         {
           "kind": "place",
@@ -172021,6 +174600,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 101,
+          "end": 126,
+          "check": "ebfc3f58",
+          "name": "Valens",
+          "qid": "Q172471",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0125-conversio-pauli-apostoli": [
@@ -172191,6 +174781,19 @@
           "check": "15275f37",
           "name": "Palaemon",
           "qid": "Q6058822"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 125,
+          "end": 132,
+          "check": "e1656cb1",
+          "name": "Pachomius",
+          "qid": "Q298698",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0509-pachomius-thebaidis"
+          ]
         }
       ],
       "mr:0125-poppo-stabulensis": [
@@ -172470,6 +175073,19 @@
           "check": "1e03ad2e",
           "name": "Paula",
           "qid": "Q237824"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 165,
+          "end": 186,
+          "check": "cbbdf0a3",
+          "name": "Eustochium",
+          "qid": "Q442396",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0928-eustochius-bethlehem"
+          ]
         }
       ],
       "mr:0126-theogenes-hipponis": [
@@ -172494,6 +175110,19 @@
           "check": "717bb3be",
           "name": "Theogenes",
           "qid": "Q85974256"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 79,
+          "end": 87,
+          "check": "1a8a5564",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
         }
       ],
       "mr:0126-timotheus-et-titus": [
@@ -172514,6 +175143,20 @@
           "check": "0bfdddc8",
           "name": "Titus",
           "qid": "Q320136"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 65,
+          "end": 79,
+          "check": "ff1aa314",
+          "name": "Paulus",
+          "qid": "Q9200",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0125-conversio-pauli-apostoli",
+            "mr:0629-petrus-et-paulus-apostoli"
+          ]
         },
         {
           "kind": "place",
@@ -172730,6 +175373,19 @@
           ]
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 148,
+          "end": 160,
+          "check": "5ad14f81",
+          "name": "Gregorius VII",
+          "qid": "Q133063",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0525-gregorius-vii"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 226,
@@ -172789,6 +175445,17 @@
           "check": "edb1cd8f",
           "name": "Ioannes Maria",
           "qid": "Q13125269"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 249,
+          "end": 258,
+          "check": "b5b070de",
+          "name": "Mwenga",
+          "qid": "Q707775",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0127-ioannes-morinensis": [
@@ -172874,6 +175541,17 @@
           "check": "a0f9b434",
           "name": "Iulianus Sorae",
           "qid": "Q1712147"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 114,
+          "end": 133,
+          "check": "42f043ad",
+          "name": "Antoninus",
+          "qid": "Q1429",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0127-manfredus-settala": [
@@ -173075,6 +175753,17 @@
           "check": "dee77865",
           "name": "Laurentius Wang Bing",
           "qid": "Q4103208"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 192,
+          "end": 214,
+          "check": "b25fddd1",
+          "name": "Wenzongxian",
+          "qid": "Q334452",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0128-bartholomaeus-aiutamicristo": [
@@ -173278,6 +175967,19 @@
           "check": "38b756bd",
           "name": "Thomas de Aquino",
           "qid": "Q9438"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 234,
+          "end": 249,
+          "check": "b1e79fa4",
+          "name": "Gregorius X",
+          "qid": "Q161740",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0110-gregorius-x"
+          ]
         },
         {
           "kind": "event",
@@ -173532,6 +176234,17 @@
           "check": "11c64325",
           "name": "Maximinus",
           "qid": "Q54576665"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 108,
+          "end": 138,
+          "check": "91f75073",
+          "name": "Iulianus Apostata",
+          "qid": "Q33941",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0129-papias-et-maurus": [
@@ -173598,6 +176311,19 @@
           "check": "55a73b23",
           "name": "Bebaia",
           "qid": "Q37945581"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 163,
+          "end": 171,
+          "check": "24366b82",
+          "name": "Barsimaeus",
+          "qid": "Q97253316",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0130-barsimaeus-edessae"
+          ]
         }
       ],
       "mr:0129-sulpicius-severus": [
@@ -173634,6 +176360,19 @@
             {
               "role": "mention"
             }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 105,
+          "end": 122,
+          "check": "803c06bd",
+          "name": "Gregorius Turonensis",
+          "qid": "Q67841",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:1117-gregorius-turonis"
           ]
         }
       ],
@@ -173744,6 +176483,17 @@
           "check": "57c1137e",
           "name": "Aldegundis",
           "qid": "Q271330"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 84,
+          "end": 96,
+          "check": "0d758c87",
+          "name": "Dagobertus",
+          "qid": "Q109860",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-aloysius-wiaux": [
@@ -173805,6 +176555,30 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 119,
+          "end": 127,
+          "check": "1a8a5564",
+          "name": "Augustinus",
+          "qid": "Q8018",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0828-augustinus-hipponensis"
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 146,
+          "end": 159,
+          "check": "1c824d92",
+          "name": "Liutprandus",
+          "qid": "Q251836",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-barsimaeus-edessae": [
@@ -173866,6 +176640,17 @@
               "role": "mention"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 163,
+          "end": 174,
+          "check": "ed2e0454",
+          "name": "Clodoveus II",
+          "qid": "Q309919",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-carmela-garcia-moyon": [
@@ -173975,6 +176760,17 @@
           "check": "4fe9ff39",
           "name": "Franciscus Taylor",
           "qid": "Q1441753"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 235,
+          "end": 244,
+          "check": "44dd175c",
+          "name": "Iacobus I",
+          "qid": "Q79972",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-hyacintha-mariscotti": [
@@ -174023,6 +176819,17 @@
           "check": "f04bb0e6",
           "name": "Martina",
           "qid": "Q272101"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 64,
+          "end": 73,
+          "check": "29ba41bc",
+          "name": "Donus",
+          "qid": "Q103545",
+          "role": "mentioned",
+          "commemorated_in": []
         },
         {
           "kind": "place",
@@ -174156,6 +176963,17 @@
               "role": "captivity"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 148,
+          "end": 179,
+          "check": "47330193",
+          "name": "Arun",
+          "qid": "Q131002",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0130-thomas-khuong": [
@@ -174180,6 +176998,17 @@
           "check": "7e61b342",
           "name": "Thomas Khuong",
           "qid": "Q9359407"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 103,
+          "end": 120,
+          "check": "3fa4d99a",
+          "name": "Tu Duc",
+          "qid": "Q466976",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-abraham-arbelensis": [
@@ -174217,6 +177046,17 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 68,
+          "end": 89,
+          "check": "a020c1ba",
+          "name": "Sapor",
+          "qid": "Q234860",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-augustinus-pak-chong-won-et-socii": [
@@ -174440,6 +177280,19 @@
           "qid": "Q146183"
         },
         {
+          "kind": "person",
+          "where": "text",
+          "start": 214,
+          "end": 239,
+          "check": "501cdb39",
+          "name": "Maria Dominica Mazzarello",
+          "qid": "Q466565",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0514-maria-dominica-mazzarello"
+          ]
+        },
+        {
           "kind": "place",
           "where": "text",
           "start": 373,
@@ -174547,6 +177400,19 @@
           "check": "a1375a96",
           "name": "Marcella",
           "qid": "Q267211"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 80,
+          "check": "66a9264b",
+          "name": "Hieronymus",
+          "qid": "Q44248",
+          "role": "mentioned",
+          "commemorated_in": [
+            "mr:0930-hieronymus-dalmatiae"
+          ]
         }
       ],
       "mr:0131-metranus-alexandriae": [
@@ -174571,6 +177437,17 @@
               "role": "death"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 86,
+          "end": 91,
+          "check": "613191b6",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-victorinus-et-socii": [
@@ -174649,6 +177526,17 @@
           "check": "b0055fe1",
           "name": "Papias",
           "qid": "Q141883148"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 181,
+          "end": 197,
+          "check": "a72a8e48",
+          "name": "Decius",
+          "qid": "Q1830",
+          "role": "mentioned",
+          "commemorated_in": []
         }
       ],
       "mr:0131-waldus-ebroicensis": [
