@@ -310,24 +310,71 @@ def decision(**kw):
 KEY = f"{A}|Ambrosius"
 
 
+def stored(src, phrase, where="text", nth=0):
+    """A mark as data/persons_mentioned.json holds it: UTF-16 offsets and the check, never the words."""
+    from extract_mentions import check
+    from mentions_text import utf16
+    s = -1
+    for _ in range(nth + 1):
+        s = src.index(phrase, s + 1)
+    return {"where": where, "start": utf16(src, s), "end": utf16(src, s + len(phrase)), "check": check(phrase)}
+
+
+AMBROSE = {"name": "Ambrosius", "where": "text",
+           "marks": {"la": [stored(LA[A], "Ambrósius, epíscopus Mediolanénsis")],
+                     "it": [stored(IT[A], "Ambrogio, vescovo di Milano")]}}
+
+
 class ApplyTest(unittest.TestCase):
     def setUp(self):
-        self.mentioned = {"$comment": "c", B: [{"name": "Alius", "where": "text", "la": ["x"], "it": []}]}
+        self.mentioned = {"$comment": "c", B: [{"name": "Alius", "where": "text",
+                                                "marks": {"la": [stored(LA[B], "Alii")], "it": []}}]}
         self.items = {B: {"Alius": {"wikidata": "Q9", "status": "reviewed", "decided": "research"}}}
         self.curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano"},
                             {"role": "birth", "la": "Romæ", "it": "Roma"}]}
 
-    def apply(self, decisions, marks=None):
-        return mp.apply_decisions(decisions, self.mentioned, self.items, self.curated, (LA, NOTES), marks or {})
+    def apply(self, decisions, marks=None, sources=SOURCES):
+        return mp.apply_decisions(decisions, self.mentioned, self.items, self.curated, sources,
+                                  marks or {"la": {}, "it": {}})
 
     def test_apply_writes_mentioned_and_items(self):
         removed, problems = self.apply({KEY: decision(note="n")})
         self.assertEqual(problems, [])
-        self.assertEqual(self.mentioned[A], [{"name": "Ambrosius", "where": "text",
-                                              "la": ["Ambrósius, epíscopus Mediolanénsis"],
-                                              "it": ["Ambrogio, vescovo di Milano"]}])
+        self.assertEqual(self.mentioned[A], [AMBROSE])
         self.assertEqual(self.items[A]["Ambrosius"], {"wikidata": "Q1", "status": "reviewed", "decided": "jev",
                                                        "note": "n"})
+
+    def test_apply_stores_no_printed_words(self):
+        # CodeRabbit #271: the phrases of the proposal become offsets and a check.
+        self.apply({KEY: decision()})
+        written = json.dumps(self.mentioned[A], ensure_ascii=False)
+        for words in ("Ambrósius", "Mediolanénsis", "Ambrogio", "Milano"):
+            self.assertNotIn(words, written)
+        from extract_persons import with_mentioned
+        self.assertEqual(with_mentioned({}, {A: self.mentioned[A]}), [])
+
+    def test_a_repeated_phrase_is_its_next_printing(self):
+        text = "Henríci regis uxor, quæ post mortem Henríci venit."
+        sources = {"la": ({A: text}, {}), "it": ({A: "di Enrico"}, {})}
+        d = decision(proposal=prop(name="Henricus", la=["Henríci", "Henríci"], it=["Enrico"]))
+        _, problems = self.apply({f"{A}|Henricus": d}, sources=sources)
+        self.assertEqual(problems, [])
+        self.assertEqual(self.mentioned[A][0]["marks"], {"la": [stored(text, "Henríci"),
+                                                                stored(text, "Henríci", nth=1)],
+                                                         "it": [stored("di Enrico", "Enrico")]})
+
+    def test_a_phrase_inside_a_longer_word_is_not_the_name(self):
+        text = "Henrícianus, non Henríci"
+        sources = {"la": ({A: text}, {}), "it": ({A: ""}, {})}
+        d = decision(proposal=prop(name="Henricus", la=["Henríci"], it=[]))
+        self.assertEqual(self.apply({f"{A}|Henricus": d}, sources=sources)[1], [])
+        self.assertEqual(self.mentioned[A][0]["marks"]["la"], [stored(text, "Henríci", nth=1)])
+
+    def test_a_phrase_not_printed_is_a_problem_and_nothing_changes(self):
+        before = json.dumps([self.mentioned, self.items, self.curated])
+        _, problems = self.apply({KEY: decision(proposal=prop(it=["Agostino"]))})
+        self.assertEqual(problems, [f"{A}: the mentioned person Ambrosius: 'Agostino' is not printed in the text (it)"])
+        self.assertEqual(json.dumps([self.mentioned, self.items, self.curated]), before)
 
     def test_unresolved_and_numbered(self):
         d = decision(wikidata=None, decided=None, status="unresolved", note="not found", proposal=prop(n=2))
@@ -362,6 +409,11 @@ class ApplyTest(unittest.TestCase):
         self.assertEqual(self.apply({KEY: decision()}), ([], []))
         self.assertEqual(json.dumps([self.mentioned, self.items]), before)
 
+    def test_a_person_listed_with_other_marks_is_refused(self):
+        self.mentioned[A] = [dict(AMBROSE, marks={"la": AMBROSE["marks"]["la"], "it": []})]
+        _, problems = self.apply({KEY: decision()})
+        self.assertEqual(problems, [f"{KEY}: persons_mentioned.json already lists this person differently"])
+
     def test_a_key_disagreeing_with_its_proposal(self):
         _, problems = self.apply({f"{A}|Augustinus": decision()})
         self.assertEqual(len(problems), 1)
@@ -377,8 +429,9 @@ class ApplyTest(unittest.TestCase):
     def test_a_place_elsewhere_in_the_text_is_kept(self):
         text = "Mediolanénsis. Ambrósius, epíscopus Mediolanénsis."
         curated = {A: [{"role": "mention", "la": "Mediolanénsis", "it": "Milano", "occurrence": 1}]}
-        removed, _ = mp.apply_decisions({KEY: decision()}, {}, {}, curated, ({A: text}, {}), {})
-        self.assertEqual((removed, len(curated[A])), ([], 1))
+        removed, problems = mp.apply_decisions({KEY: decision(proposal=prop(it=[]))}, {}, {}, curated,
+                                               {"la": ({A: text}, {}), "it": ({}, {})}, {"la": {}, "it": {}})
+        self.assertEqual((removed, problems, len(curated[A])), ([], [], 1))
 
     def test_a_namesake_phrase_removes_the_place_of_its_own_printing(self):
         # Final review 1: the phrase skips the commemorated Zeno's mark, so the place inside its next printing goes.
@@ -386,26 +439,31 @@ class ApplyTest(unittest.TestCase):
         text = "Zeno Veronénsis, cum Zeno Veronénsis álius"
         curated = {z: [{"role": "mention", "la": "Veronénsis", "occurrence": 1},
                        {"role": "mention", "la": "Veronénsis", "occurrence": 2}]}
+        mentioned = {}
         d = decision(proposal=prop(name="Zeno", n=2, la=["Zeno Veronénsis"], it=[]))
-        removed, problems = mp.apply_decisions({f"{z}|Zeno#2": d}, {}, {}, curated, ({z: text}, {}),
-                                               {z: [mark(text, "Zeno", name="Zeno")]})
+        removed, problems = mp.apply_decisions({f"{z}|Zeno#2": d}, mentioned, {}, curated,
+                                               {"la": ({z: text}, {}), "it": ({}, {})},
+                                               {"la": {z: [mark(text, "Zeno", name="Zeno")]}, "it": {}})
         self.assertEqual(problems, [])
         self.assertEqual(len(removed), 1)
         self.assertEqual([it["occurrence"] for it in curated[z]], [1])
+        self.assertEqual(mentioned[z][0]["marks"]["la"], [stored(text, "Zeno Veronénsis", nth=1)])
 
     def test_a_footnote_phrase_removes_no_text_place(self):
-        # Final review 2: only the text phrases remove a body place.
+        # Final review 2: only the text marks remove a body place.
         notes = {A: ["Vide Mediolanénsis."]}
         p = prop(la=["Ambrósius", {"phrase": "Mediolanénsis", "where": {"footnote": 1}}], it=[])
         removed, problems = mp.apply_decisions({KEY: decision(proposal=p)}, self.mentioned, self.items,
-                                               self.curated, (LA, notes), {})
+                                               self.curated, {"la": (LA, notes), "it": SOURCES["it"]},
+                                               {"la": {}, "it": {}})
         self.assertEqual((removed, problems), ([], []))
         self.assertEqual(len(self.curated[A]), 2)
-        self.assertEqual(self.mentioned[A][0]["la"], p["la"])
+        self.assertEqual(self.mentioned[A][0]["marks"]["la"],
+                         [stored(LA[A], "Ambrósius"), stored(notes[A][0], "Mediolanénsis", {"footnote": 1})])
 
     def test_a_rerun_after_a_partial_apply_writes_the_missing_item(self):
         # Final review 4: persons_mentioned.json written, person_items.json not.
-        self.mentioned[A] = [mp.mentioned_of(prop())]
+        self.mentioned[A] = [AMBROSE]
         removed, problems = self.apply({KEY: decision()})
         self.assertEqual(problems, [])
         self.assertEqual(self.items[A]["Ambrosius"], {"wikidata": "Q1", "status": "reviewed", "decided": "jev"})
@@ -416,11 +474,14 @@ class ApplyTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d, tempfile.TemporaryDirectory() as t:
             root, texts = Path(d), Path(t)
             (root / "data").mkdir()
-            folder = texts / "data" / "editions" / mp.EDITIONS["la"]
-            folder.mkdir(parents=True)
-            for month in range(1, 13):
-                (folder / f"{month:02d}.json").write_text(json.dumps(LA if month == 1 else {}), encoding="utf-8")
-            (folder / "footnotes.json").write_text(json.dumps({A: [{"text": NOTES[A][0]}]}), encoding="utf-8")
+            for lang, (by_id, notes) in SOURCES.items():
+                folder = texts / "data" / "editions" / mp.EDITIONS[lang]
+                folder.mkdir(parents=True)
+                for month in range(1, 13):
+                    (folder / f"{month:02d}.json").write_text(json.dumps(by_id if month == 1 else {}),
+                                                              encoding="utf-8")
+                (folder / "footnotes.json").write_text(json.dumps({k: [{"text": n} for n in v]
+                                                                   for k, v in notes.items()}), encoding="utf-8")
             for name, doc in (("persons_mentioned.json", {}), ("person_items.json", {"persons": {}}),
                               ("places_curated.json", self.curated), ("mentions.json", {"editions": {}})):
                 (root / "data" / name).write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
@@ -432,6 +493,7 @@ class ApplyTest(unittest.TestCase):
             self.assertEqual(json.loads((root / "data" / "person_items.json").read_text())["persons"][A]["Ambrosius"]
                              ["decided"], "jev")
             self.assertEqual(len(json.loads((root / "data" / "places_curated.json").read_text())[A]), 1)
+            self.assertEqual(json.loads((root / "data" / "persons_mentioned.json").read_text())[A], [AMBROSE])
             self.assertEqual(sorted(p.name for p in (root / "data").iterdir()),
                              ["mentions.json", "person_items.json", "persons_mentioned.json", "places_curated.json"])
 

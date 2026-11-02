@@ -346,9 +346,10 @@ def resolve_unread(persons_by_id, issues, curated):
 
 def with_mentioned(persons_by_id, mentioned):
     """Append each eulogy's mentioned persons (data/persons_mentioned.json) after its own, as
-    {name, n?, where, role: "mentioned"}; the printed phrases (la, it) stay in that file. A phrase is a string,
-    printed in the person's `where` (their first printing), or {"phrase", "where"} printed elsewhere (a person
-    named in the text and in a footnote is one person). Returns the errors."""
+    {name, n?, where, role: "mentioned"}; their marks (marks.la, marks.it: offsets and a check, never the
+    printed words) stay in that file, where `where` is the person's first printing and each mark names its
+    own (a person named in the text and in a footnote is one person). Only the shape is checked here; each
+    mark's check is verified against the printed words by extract_mentions.py. Returns the errors."""
     errors = []
     for mrid, entries in mentioned.items():
         for m in entries:
@@ -356,8 +357,6 @@ def with_mentioned(persons_by_id, mentioned):
             shape = mentioned_shape_errors(m)
             if shape:
                 errors += [f"{mrid}: {e}" for e in shape]
-            elif not m.get("la"):
-                errors.append(f"{mrid}: {m['name']!r} has no printed phrase (la)")
             elif (name_key(m["name"]), m.get("n", 1)) in taken:
                 errors.append(f"{mrid}: {m['name']!r} is already a person of the eulogy; give the mentioned one n")
             else:

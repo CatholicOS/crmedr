@@ -13,7 +13,7 @@ held in memory only (`form`) to match and validate. data/mentions_curated.json r
 a eulogy's extracted mentions; the review change-set, which quotes the texts
 around each doubtful mention, is written only outside the repository. A person
 a eulogy only mentions (data/persons_mentioned.json, role "mentioned" in
-data/persons.json) is marked on its printed phrases, with the eulogies that
+data/persons.json) is marked on its stored spans (offsets and a check), with the eulogies that
 commemorate the same item (`commemorated_in`, also written to
 data/persons_commemorated.json).
 See martyrology-frontend's docs/superpowers/specs/2026-10-09-eulogy-markup-design.md.
@@ -45,7 +45,7 @@ from mentions_italian import ItalianNames, by_position, curated_forms, runs, sur
 from extract_places import ROLES
 from mentions_text import (back_ref_span, find_person, find_place, fold_map, free, from_utf16, nth_place,
                            partial_span, utf16)
-from persons_text import name_key, name_subjects, person_key, phrase_where
+from persons_text import name_key, name_subjects, person_key
 
 
 # The other name printed right after a person: "Kingae seu Cunegundis", "Dativus, qui et Sanator".
@@ -637,36 +637,28 @@ def with_events(ms, events, source, lang):
     return sorted(ms, key=mention_order), errors
 
 
-def with_mentioned_marks(ms, mentioned, sources, lang, person_qid, commemorated, errors=None):
-    """The eulogy's marks with the persons it only mentions (data/persons_mentioned.json: {name, n?, where, la,
-    it?}): each phrase of the edition's language (`lang`) marked where it is printed as a whole word, left to
-    right within its text, so a phrase repeated in the list is its next occurrence. A phrase is a string,
-    printed in the person's `where`, or {"phrase", "where"} printed in its own (phrase_where). A printing that
-    overlaps the mark of a person who is not mentioned (a namesake the eulogy commemorates: the Italian
-    "Zenone" of both Zenos) is passed over for the next one. A person the marks already name (a curated list)
-    keeps those marks and is not marked again. Each mark of a mentioned person gets role "mentioned" and
-    `commemorated_in`, the eulogies that commemorate its item (`commemorated`: QID -> IDs; [] without one).
-    `sources`: where_key -> the text a phrase is printed in; `person_qid(key)`: the item of a person's key. A
-    phrase not printed (or printed only over another person's mark), or no phrase list for `lang` (an empty
-    list: the edition does not name the person), is appended to `errors` (raised when there is no list)."""
+def with_mentioned_marks(ms, mentioned, source, lang, person_qid, commemorated, errors=None):
+    """The eulogy's marks with the persons it only mentions (data/persons_mentioned.json: {name, n?, where,
+    marks: {la, it}}): each stored mark of the edition's language (`lang`; {where, start, end, check}, offsets
+    in UTF-16 code units of its text or footnote) whose check matches the words printed there. A person the
+    marks already name (a curated list) keeps those marks and is not marked again. Each mark of a mentioned
+    person gets role "mentioned" and `commemorated_in`, the eulogies that commemorate its item
+    (`commemorated`: QID -> IDs; [] without one). `source(where)`: the text a mark is printed in (None
+    without one); `person_qid(key)`: the item of a person's key. A mark failing its check, or no mark list
+    for `lang` (an empty list: the edition does not name the person), is appended to `errors` (raised when
+    there is no list)."""
     ms = [dict(m) for m in ms]
-    mentioned_keys = {person_key(p) for p in mentioned}
 
     def error(message):
         if errors is None:
             raise ValueError(message)
         errors.append(message)
 
-    def commemorated_over(key, start, end):
-        """The first mark of a person not mentioned that [start, end) of the text `key` overlaps."""
-        return next((m for m in ms if m["kind"] == "person" and m.get("role") != "mentioned"
-                     and person_key(m) not in mentioned_keys and where_key(m["where"]) == key
-                     and m["start"] < end and start < m["end"]), None)
-
     for p in mentioned:
         key = person_key(p)
-        if lang not in p:
-            error(f"mentioned person {key!r} has no {lang} phrases; list them, or [] if the "
+        spans = (p.get("marks") or {}).get(lang)
+        if spans is None:
+            error(f"mentioned person {key!r} has no {lang} marks; list them, or [] if the "
                   f"{LANGUAGES.get(lang, lang)} does not name them")
             continue
         qid = person_qid(key)
@@ -676,36 +668,15 @@ def with_mentioned_marks(ms, mentioned, sources, lang, person_qid, commemorated,
             m.update(role="mentioned", commemorated_in=list(eulogies))
         if marked:
             continue
-        at = {}  # where_key -> where the next phrase printed there is looked for
-        for entry in p[lang]:
-            phrase, where = phrase_where(p, entry)
-            wkey = where_key(where)
-            src, pattern, over = sources.get(wkey) or "", re.compile(rf"(?<!\w){re.escape(phrase)}(?!\w)"), None
-            hit = pattern.search(src, at.get(wkey, 0))
-            while hit is not None and (blocking := commemorated_over(wkey, hit.start(), hit.end())):
-                over = over or blocking
-                hit = pattern.search(src, hit.start() + 1)
-            if hit is None:
-                error(f"the mentioned person {key}: {phrase!r} overlaps the mark of {over.get('name')} wherever it is "
-                      f"printed in the {wkey}" if over else
-                      f"the mentioned person {key}: {phrase!r} is not printed in the {wkey}")
+        for span in spans:
+            m = from_file({"kind": "person", **span}, source(span["where"]))
+            if m["form"] is None:
+                error(f"the mentioned person {key}: the mark at {where_key(span['where'])} {span['start']}-"
+                      f"{span['end']} does not pass its check (has the text changed?)")
                 continue
-            at[wkey] = hit.end()
-            ms.append({"kind": "person", "where": where, "start": hit.start(), "end": hit.end(), "form": phrase,
-                       "name": p["name"], **({"n": p["n"]} if p.get("n") not in (None, 1) else {}), "qid": qid,
-                       "role": "mentioned", "commemorated_in": list(eulogies)})
+            ms.append(m | {"name": p["name"], **({"n": p["n"]} if p.get("n") not in (None, 1) else {}), "qid": qid,
+                           "role": "mentioned", "commemorated_in": list(eulogies)})
     return sorted(ms, key=mention_order)
-
-
-def mentioned_wheres(person):
-    """The `where`s a mentioned person's phrases are printed in, in both languages (theirs first)."""
-    out = [person["where"]]
-    for lang in ("la", "it"):
-        for entry in person.get(lang) or []:
-            where = phrase_where(person, entry)[1]
-            if where not in out:
-                out.append(where)
-    return out
 
 
 def place_source(m, places, lang):
@@ -790,8 +761,8 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
                   mentioned=None, commemorated=None):
     """One edition's mentions by eulogy (code points), its review items by eulogy, and its counts. `unmarked`:
     by eulogy, the persons the curators left unmarked (data/mentions_curated.json), as {"name", "n"?}.
-    `mentioned`: by eulogy, the persons it only mentions with their printed phrases
-    (data/persons_mentioned.json), marked on those phrases rather than matched; `commemorated`: QID -> the
+    `mentioned`: by eulogy, the persons it only mentions with their marks
+    (data/persons_mentioned.json), marked on those spans rather than matched; `commemorated`: QID -> the
     eulogies that commemorate it (`commemorated_items`)."""
     out, review = {}, {}
     counts = {"expected": Counter(), "found": Counter(), "review": Counter(), "no_text": []}
@@ -801,7 +772,7 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
             return (lookup(gazetteer, la, mrid) or {}).get("wikidata")
 
         items, everyone = places.get(mrid, []), persons.get(mrid, [])
-        names = [p for p in everyone if p.get("role") != "mentioned"]  # the mentioned are marked by phrase
+        names = [p for p in everyone if p.get("role") != "mentioned"]  # the mentioned: by their marks
         counts["expected"][("place", True)] += sum(1 for it in items if it.get(lang))
         for p in everyone:
             counts["expected"][("person", p["where"] == "text")] += 1
@@ -839,9 +810,8 @@ def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, 
             counts.setdefault("event_errors", []).extend(f"{mrid}: {e}" for e in errs)
         if (mentioned or {}).get(mrid):
             errs, before = [], {(where_key(m["where"]), m["start"], m["end"]) for m in ms if m["kind"] == "person"}
-            printed_in = {where_key(w): source_text((texts, notes), mrid, w) for p in mentioned[mrid]
-                          for w in mentioned_wheres(p)}
-            ms = with_mentioned_marks(ms, mentioned[mrid], printed_in, lang, person_qid, commemorated or {}, errs)
+            ms = with_mentioned_marks(ms, mentioned[mrid], lambda w, mrid=mrid: source_text((texts, notes), mrid, w),
+                                      lang, person_qid, commemorated or {}, errs)
             for m in ms:
                 if m.get("role") == "mentioned" and (where_key(m["where"]), m["start"], m["end"]) not in before:
                     counts["found"][("person", m["where"] == "text", "mentioned")] += 1

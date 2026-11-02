@@ -1,86 +1,180 @@
 {
-  "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, la, it}. la and it are the person's printed phrases in the Latin and Italian 2004 texts, one per mark in text order (a phrase repeated is its next occurrence, a printing over a commemorated namesake's mark is passed over; [] when the edition does not name the person, a missing list is an error in extract_mentions.py); they are not copied to persons.json. where is the person's first printing; a phrase is a string, printed there, or {\"phrase\", \"where\"} printed elsewhere (a person named in the text and in a footnote).",
+  "$comment": "Persons a eulogy only mentions, by current ID, added by extract_persons.py to data/persons.json after the eulogy's own with role \"mentioned\": {name, n?, where, marks: {la, it}}. where is the person's first printing. marks.la and marks.it are the person's printings in the Latin and Italian 2004 texts, in printed order, each {where, start, end, check}: \"text\" or {\"footnote\": n} (n from 1), offsets in UTF-16 code units into that text, and the check (the first 8 hex digits of the SHA-256 of the printed words, which are never stored), as in data/mentions.json. marks.la is never empty; marks.it is [] when the Italian does not name the person (a missing list is an error). extract_mentions.py marks the person there and verifies each check. Written by scripts/mentioned_persons.py apply.",
   "mr:0303-cunegundis-confugiae": [
     {
       "name": "Henricus",
       "where": "text",
-      "la": [
-        "Henríco",
-        "Henríci"
-      ],
-      "it": [
-        "Enrico",
-        "Enrico"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 102,
+            "end": 109,
+            "check": "91252c86"
+          },
+          {
+            "where": "text",
+            "start": 257,
+            "end": 264,
+            "check": "2e529ff2"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 115,
+            "end": 121,
+            "check": "7a4a2186"
+          },
+          {
+            "where": "text",
+            "start": 347,
+            "end": 353,
+            "check": "7a4a2186"
+          }
+        ]
+      }
     }
   ],
   "mr:0417-plurimi-martyres-persidis": [
     {
       "name": "Symeon",
       "where": "text",
-      "la": [
-        "Symeónis"
-      ],
-      "it": [
-        "Simeone"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 60,
+            "end": 68,
+            "check": "9cdfa895"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 73,
+            "end": 80,
+            "check": "d7b205c9"
+          }
+        ]
+      }
     }
   ],
   "mr:0713-henricus-imperator": [
     {
       "name": "Cunegundis",
       "where": "text",
-      "la": [
-        "Cunegúnde"
-      ],
-      "it": [
-        "Cunegonda"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 63,
+            "end": 72,
+            "check": "82f1fe72"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 77,
+            "end": 86,
+            "check": "b9a46c52"
+          }
+        ]
+      }
     }
   ],
   "mr:1003-duo-ewaldi": [
     {
       "name": "Willibrordus",
       "where": "text",
-      "la": [
-        "Willibrórdi"
-      ],
-      "it": [
-        "Villibrordo"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 131,
+            "end": 142,
+            "check": "12dc8615"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 165,
+            "end": 176,
+            "check": "463caee2"
+          }
+        ]
+      }
     }
   ],
   "mr:1226-zeno-maiumae": [
     {
       "name": "Eusebius",
       "where": "text",
-      "la": [
-        "Eusébio"
-      ],
-      "it": [
-        "Eusebio"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 83,
+            "end": 90,
+            "check": "9a9e5aec"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 107,
+            "end": 114,
+            "check": "0c270ce5"
+          }
+        ]
+      }
     },
     {
       "name": "Nestabius",
       "where": "text",
-      "la": [
-        "Nestábio"
-      ],
-      "it": [
-        "Nestabio"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 92,
+            "end": 100,
+            "check": "984f5f68"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 116,
+            "end": 124,
+            "check": "ba18346c"
+          }
+        ]
+      }
     },
     {
       "name": "Zeno",
       "n": 2,
       "where": "text",
-      "la": [
-        "Zenóni"
-      ],
-      "it": [
-        "Zenone"
-      ]
+      "marks": {
+        "la": [
+          {
+            "where": "text",
+            "start": 104,
+            "end": 110,
+            "check": "6f07e654"
+          }
+        ],
+        "it": [
+          {
+            "where": "text",
+            "start": 127,
+            "end": 133,
+            "check": "707a72a2"
+          }
+        ]
+      }
     }
   ]
 }

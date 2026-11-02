@@ -26,10 +26,11 @@ curated body place; an opening place needs a shorter phrase).
           decisions file: an accepted Jev choice is reviewed, decided "jev"; a research entry
           {"<mrid>|<name>[#n]": {wikidata, decided, status, note?, candidates?}} overrides it. A proposed
           person with neither is a problem (exit 1, nothing written).
-  apply   writes the decided persons of a decisions file into data/persons_mentioned.json and
-          data/person_items.json, and removes from data/places_curated.json the body places printed inside
-          an applied person's Latin text phrases; then data/places.json is rebuilt by extract_places.py
-          before extract_mentions.py runs.
+  apply   writes the decided persons of a decisions file into data/persons_mentioned.json, each phrase
+          resolved to its printing and stored as a mark {where, start, end, check} (UTF-16 offsets and the
+          check of the printed words, never the words), and into data/person_items.json, and removes from
+          data/places_curated.json the body places printed inside an applied person's Latin text marks;
+          then data/places.json is rebuilt by extract_places.py before extract_mentions.py runs.
   cards   the decisions research could not settle ("doubt") as a crmedr-changeset/v1 change-set of
           resolve_person ops, for the curator, with the proposal's phrases (la, it) and who. A doubt the
           curator decides comes back as a research entry to `decisions`, then `apply`.
@@ -65,11 +66,10 @@ from pathlib import Path
 import build_person_items as bpi
 import mentions_jev as mj
 from body_places import _in_a_repository, write_json_atomic, write_text_atomic
-from extract_mentions import (SCHEMA, from_file, load_edition, mentioned_wheres, source_text, where_key,
-                              with_mentioned_marks)
-from mentions_text import from_utf16
+from extract_mentions import SCHEMA, check, from_file, load_edition, source_text, where_key
+from mentions_text import from_utf16, utf16
 from extract_places import occurrences
-from persons_text import mentioned_shape_errors, name_key, person_key, phrase_where
+from persons_text import name_key, person_key, phrase_where, proposal_shape_errors
 from subject_jev import _choice, _sentences, _window
 from wikidata import MONTH_NAMES, Wikidata, WikidataError
 
@@ -147,6 +147,53 @@ def overlapping(a, b):
     return where_key(a["where"]) == where_key(b["where"]) and a["start"] < b["end"] and b["start"] < a["end"]
 
 
+def proposal_wheres(proposal):
+    """The `where`s a proposed person's phrases are printed in, in both languages (theirs first)."""
+    out = [proposal["where"]]
+    for lang in ("la", "it"):
+        for entry in proposal.get(lang) or []:
+            where = phrase_where(proposal, entry)[1]
+            if where not in out:
+                out.append(where)
+    return out
+
+
+def phrase_spans(proposal, lang, source, marks):
+    """(problems, marks) of a proposed person's phrases in one edition (`lang`): each phrase found where it is
+    printed as a whole word, left to right within its text, so a phrase repeated in the list is its next
+    printing. A phrase is a string, printed in the person's `where`, or {"phrase", "where"} printed in its
+    own. A printing that overlaps the mark of another person not mentioned (`marks`: the eulogy's marks in
+    code points; a namesake the eulogy commemorates: the Italian "Zenone" of both Zenos) is passed over for
+    the next one. The marks are internal ones (code points, the words in `form`); `source(where)`: the text
+    a phrase is printed in. A phrase not printed, or printed only over another person's mark, is a problem."""
+    key, problems, out, at = person_key(proposal), [], [], {}
+
+    def commemorated_over(wkey, start, end):
+        """The first mark of a person not mentioned, not this one, that [start, end) of the text `wkey` overlaps."""
+        return next((m for m in marks if m["kind"] == "person" and m.get("role") != "mentioned"
+                     and person_key(m) != key and where_key(m["where"]) == wkey
+                     and m["start"] < end and start < m["end"]), None)
+
+    for entry in proposal[lang]:
+        phrase, where = phrase_where(proposal, entry)
+        wkey = where_key(where)
+        src, pattern, over = source(where) or "", re.compile(rf"(?<!\w){re.escape(phrase)}(?!\w)"), None
+        hit = pattern.search(src, at.get(wkey, 0))
+        while hit is not None and (blocking := commemorated_over(wkey, hit.start(), hit.end())):
+            over = over or blocking
+            hit = pattern.search(src, hit.start() + 1)
+        if hit is None:
+            problems.append(f"the mentioned person {key}: {phrase!r} overlaps the mark of {over.get('name')} "
+                            f"wherever it is printed in the {wkey}" if over else
+                            f"the mentioned person {key}: {phrase!r} is not printed in the {wkey}")
+            continue
+        at[wkey] = hit.end()
+        out.append({"kind": "person", "where": where, "start": hit.start(), "end": hit.end(), "form": phrase,
+                    "name": proposal["name"], **({"n": proposal["n"]} if proposal.get("n") not in (None, 1) else {}),
+                    "role": "mentioned"})
+    return problems, out
+
+
 def check_proposals(proposals, sources, persons, mentions):
     """Problems in the proposals, one message each (empty when they pass)."""
     problems = []
@@ -176,7 +223,7 @@ def check_proposals(proposals, sources, persons, mentions):
             if folded in seen:
                 problems.append(f"{label}: proposed twice in the eulogy (give the second one n)")
             seen.add(folded)
-            shape = mentioned_shape_errors(p)
+            shape = proposal_shape_errors(p)
             if shape:
                 problems += [f"{mrid}: {e}" for e in shape]
                 continue
@@ -195,18 +242,14 @@ def check_proposals(proposals, sources, persons, mentions):
 
 
 def phrase_marks(mrid, p, lang, edition_sources, marks, label):
-    """(problems, marks) of a proposal's phrases in one edition, as extract_mentions marks them among the
-    eulogy's `marks` (code points): a phrase not printed in its `where`, or printed only over the mark of a
-    person not mentioned, or a mark overlapping a mentioned person's mark, is a problem."""
-    wheres = [w for w in mentioned_wheres(p) if any(phrase_where(p, e)[1] == w for e in p[lang])]
+    """(problems, marks) of a proposal's phrases in one edition, as apply stores them, among the eulogy's
+    `marks` (code points): a phrase not printed in its `where`, or printed only over the mark of a person
+    not mentioned, or a mark overlapping a mentioned person's mark, is a problem."""
+    wheres = [w for w in proposal_wheres(p) if any(phrase_where(p, e)[1] == w for e in p[lang])]
     missing = [w for w in wheres if source_text(edition_sources, mrid, w) is None]
     if missing:
         return [f"{label}: there is no {w!r} in the {lang} edition" for w in missing], []
-    errors = []
-    sources = {where_key(w): source_text(edition_sources, mrid, w) for w in wheres}
-    others = [m for m in marks if not (m["kind"] == "person" and person_key(m) == person_key(p))]
-    out = [m for m in with_mentioned_marks(others, [p], sources, lang, lambda k: None, {}, errors)
-           if m.get("role") == "mentioned" and m["kind"] == "person" and person_key(m) == person_key(p)]
+    errors, out = phrase_spans(p, lang, lambda w: source_text(edition_sources, mrid, w), marks)
     problems = [f"{mrid}: {e} ({lang})" for e in errors]
     for m in out:
         for c in marks:
@@ -368,7 +411,6 @@ def outside_git(out, repo_root):
 # Apply and cards
 
 DECISION_STATUSES = ("reviewed", "unresolved", "doubt")
-MENTIONED_KEYS = ("name", "n", "where", "la", "it")
 
 
 def decision_problems(decisions):
@@ -408,20 +450,29 @@ def item_of(d):
     return out
 
 
-def mentioned_of(proposal):
-    return {k: proposal[k] for k in MENTIONED_KEYS if k in proposal}
+def mentioned_of(mrid, proposal, sources, marks):
+    """(problems, entry): a proposed person as data/persons_mentioned.json holds it, {name, n?, where,
+    marks: {la, it}}: each phrase resolved to its printing (phrase_spans, among the eulogy's marks of
+    data/mentions.json) and stored as {where, start, end, check}, offsets in UTF-16 code units and the
+    check of the printed words, never the words. `sources`: lang -> (texts, footnotes); `marks`: lang ->
+    the eulogies' marks of data/mentions.json."""
+    problems, out = [], {k: proposal[k] for k in ("name", "n", "where") if k in proposal} | {"marks": {}}
+    for lang in ("la", "it"):
+        def source(where, lang=lang):
+            return source_text(sources[lang], mrid, where)
+        errors, found = phrase_spans(proposal, lang, source,
+                                     internal_marks((marks.get(lang) or {}).get(mrid, []), sources[lang], mrid))
+        problems += [f"{mrid}: {e} ({lang})" for e in errors]
+        out["marks"][lang] = [{"where": m["where"], "start": utf16(source(m["where"]), m["start"]),
+                               "end": utf16(source(m["where"]), m["end"]), "check": check(m["form"])} for m in found]
+    return problems, out
 
 
-def text_spans(proposal, la_sources, marks, mrid):
-    """(start, end) of the person's Latin marks in the eulogy's text, as extract_mentions marks them among the
-    eulogy's Latin `marks` (data/mentions.json): a printing over a commemorated namesake's mark is passed over.
-    Footnote phrases are left out."""
-    sources = {where_key(w): source_text(la_sources, mrid, w) for w in mentioned_wheres(proposal)}
-    key = person_key(proposal)
-    found = with_mentioned_marks(internal_marks(marks, la_sources, mrid), [proposal], sources, "la", lambda k: None,
-                                 {}, [])
-    return [(m["start"], m["end"]) for m in found if m["kind"] == "person" and person_key(m) == key
-            and m["where"] == "text"]
+def text_spans(entry, text):
+    """The code-point spans of a mentioned person's Latin marks in the eulogy's `text` (`entry`: as
+    data/persons_mentioned.json holds it); footnote marks are left out."""
+    return [(from_utf16(text, m["start"]), from_utf16(text, m["end"])) for m in entry["marks"]["la"]
+            if m["where"] == "text"]
 
 
 def places_inside(entries, text, spans):
@@ -437,37 +488,40 @@ def places_inside(entries, text, spans):
     return out
 
 
-def apply_decisions(decisions, mentioned, items, curated, la_sources, marks):
-    """Add the non-doubt decisions to `mentioned` (persons_mentioned.json's document) and `items`
-    (person_items.json's persons), and drop from `curated` the places inside an applied person's Latin
-    text phrases. `la_sources`: the Latin (texts, footnotes); `marks`: the Latin marks by eulogy
-    (data/mentions.json). A person persons_mentioned.json already lists as decided (a rerun after a partial
-    apply) still gets a missing person_items.json entry. Returns (removed place lines, problems); with
-    problems nothing is changed."""
+def apply_decisions(decisions, mentioned, items, curated, sources, marks):
+    """Add the non-doubt decisions to `mentioned` (persons_mentioned.json's document: each proposal's phrases
+    stored as marks, mentioned_of) and `items` (person_items.json's persons), and drop from `curated` the
+    places inside an applied person's Latin text marks. `sources`: lang -> (texts, footnotes) of the Latin
+    and Italian editions; `marks`: lang -> the marks by eulogy (data/mentions.json). A person
+    persons_mentioned.json already lists as decided (a rerun after a partial apply) still gets a missing
+    person_items.json entry. Returns (removed place lines, problems); with problems nothing is changed."""
     problems = decision_problems(decisions)
     if problems:
         return [], problems
     todo = {k: d for k, d in decisions.items() if d.get("status") != "doubt"}
+    entries = {}
     for key, d in todo.items():
         mrid, _, pkey = key.partition("|")
+        errors, entries[key] = mentioned_of(mrid, d["proposal"], sources, marks)
+        problems += errors
         old = (items.get(mrid) or {}).get(pkey)
         if old and old != item_of(d):
             problems.append(f"{key}: person_items.json already has {old}; it is not overwritten")
         olds = [q for q in mentioned.get(mrid, []) if person_key(q) == pkey]
-        if olds and olds[0] != mentioned_of(d["proposal"]):
+        if olds and not errors and olds[0] != entries[key]:
             problems.append(f"{key}: persons_mentioned.json already lists this person differently")
     if problems:
         return [], problems
     removed = []
     for key, d in todo.items():
         mrid, _, pkey = key.partition("|")
-        p = mentioned_of(d["proposal"])
+        p = entries[key]
         if not any(person_key(q) == pkey for q in mentioned.get(mrid, [])):
             mentioned.setdefault(mrid, []).append(p)
         items.setdefault(mrid, {}).setdefault(pkey, item_of(d))
         if mrid in curated:
-            text = la_sources[0].get(mrid, "")
-            for it in places_inside(curated[mrid], text, text_spans(p, la_sources, marks.get(mrid, []), mrid)):
+            text = sources["la"][0].get(mrid, "")
+            for it in places_inside(curated[mrid], text, text_spans(p, text)):
                 curated[mrid].remove(it)
                 removed.append(f"{mrid}: removed the place {it['la']!r} inside {pkey}'s name")
     return removed, []
@@ -537,10 +591,11 @@ def apply_main(argv):
     mentioned = read_json(d / "persons_mentioned.json", {})
     items_doc = read_json(d / "person_items.json")
     curated = read_json(d / "places_curated.json", {})
-    marks = read_json(d / "mentions.json", {"editions": {}})["editions"].get(EDITIONS["la"], {})
-    la_sources = load_edition(Path(argv[1]), EDITIONS["la"])
+    editions = read_json(d / "mentions.json", {"editions": {}})["editions"]
+    marks = {lang: editions.get(ed, {}) for lang, ed in EDITIONS.items()}
     decisions = read_json(argv[0])
-    removed, problems = apply_decisions(decisions, mentioned, items_doc["persons"], curated, la_sources, marks)
+    removed, problems = apply_decisions(decisions, mentioned, items_doc["persons"], curated, load_sources(argv[1]),
+                                        marks)
     if problems:
         sys.exit("\n".join(problems))
     # persons_mentioned.json last: a rerun after a failed write finds its persons not yet listed.

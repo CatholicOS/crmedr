@@ -422,15 +422,22 @@ def load_mentioned(repo_root):
     return {k: v for k, v in json.loads(path.read_text(encoding="utf-8")).items() if not k.startswith("$")}
 
 
+def mentioned_text_spans(text, persons):
+    """The code-point spans of the Latin text marks of the persons a eulogy only mentions (`persons`: its
+    entries in data/persons_mentioned.json, marks in UTF-16 code units); a footnote mark covers nothing in
+    the text."""
+    from mentions_text import from_utf16  # mentions_text imports this module
+    return [(from_utf16(text, m["start"]), from_utf16(text, m["end"])) for person in persons
+            for m in (person.get("marks") or {}).get("la") or [] if m.get("where") == "text"]
+
+
 def unrecorded(texts, places, known, mentioned=None):
     """{id: [la]}: known place designations printed in a eulogy at a printing no item covers. A place
-    printed inside the Latin phrase of a person the eulogy only mentions (`mentioned`: data/persons_mentioned.json)
-    is part of that name, not a place of the eulogy, and is not listed."""
+    printed inside a Latin text mark of a person the eulogy only mentions (`mentioned`:
+    data/persons_mentioned.json) is part of that name, not a place of the eulogy, and is not listed."""
     out = {}
     for mrid, text in texts.items():
-        spans = _covered(text, places.get(mrid, []))
-        spans += [(s, s + len(phrase)) for person in (mentioned or {}).get(mrid, []) if person.get("where") == "text"
-                  for phrase in person.get("la") or [] for s in occurrences(text, phrase)]
+        spans = _covered(text, places.get(mrid, [])) + mentioned_text_spans(text, (mentioned or {}).get(mrid, []))
         missing = sorted({la for la in known for s in occurrences(text, la)
                           if not any(a <= s and s + len(la) <= b for a, b in spans)})
         if missing:

@@ -60,7 +60,7 @@ heresies) and 3 (religious congregations) get plans of their own after this one 
 - Test: `tests/test_extract_persons.py`
 
 **Interfaces:**
-- Produces: `data/persons_mentioned.json` = `{"$comment": str, "<mrid>": [{"name": str, "n"?: int, "where": "text"|{"footnote": int}, "la": [str, ...], "it"?: [str, ...]}]}` — `la`/`it` are the printed phrases of each mark of that person, in text order (a phrase repeated in the list = its next occurrence).
+- Produces: `data/persons_mentioned.json` = `{"$comment": str, "<mrid>": [{"name": str, "n"?: int, "where": "text"|{"footnote": int}, "la": [str, ...], "it"?: [str, ...]}]}` — `la`/`it` are the printed phrases of each mark of that person, in text order (a phrase repeated in the list = its next occurrence). **Superseded (CodeRabbit #271):** the file stores no printed words; each person is `{name, n?, where, marks: {la: [mark, ...], it: [mark, ...]}}`, a mark `{where, start, end, check}` (UTF-16 offsets and the check, as in `data/mentions.json`), `marks.it` `[]` when the Italian does not name the person. Proposals, decisions and cards keep the phrases; `apply` resolves them to marks.
 - Produces: `with_mentioned(persons_by_id: dict, mentioned: dict) -> list[str]` (errors), appending `{"name", "n"?, "where", "role": "mentioned"}` (no `la`/`it`) after a eulogy's own persons.
 
 - [ ] **Step 1: Write the failing tests** in `tests/test_extract_persons.py`:
@@ -196,9 +196,9 @@ No new code; each month is a commit on a branch `persons/mentioned-MM`, batched 
 - [ ] **Step 3: Candidates + Jev.** `candidates` then `jev <candidates.json> ../martyrology-texts <out.json>` per month.
 - [ ] **Step 4: Research** every person Jev did not accept: a subagent per batch of ~40 researches each (eulogy, hagiography, standard references, Wikidata) and returns `research-MM.json`: chosen QID, or `create` with sourced statements, or `unresolved` (no fact beyond the eulogy), or `doubt` (two candidates or a disputed identity the literature cannot settle) with the reason.
 - [ ] **Step 5: Wikidata.** For chosen items missing signals, add them sourced (`wb add-claim`/`add-reference`, maxlag 5, retry). For `create`, `wb create-entity` with P31 Q5, labels la/en/it, description, P1343 Q125252554, and the sourced facts. Record QIDs in `research-MM.json`, then `decisions proposals-MM.json jev-MM.json research-MM.json decisions-MM.json` joins them (an unresolved person needs a note).
-- [ ] **Step 6: Apply** `python3 scripts/mentioned_persons.py apply decisions-MM.json ../martyrology-texts`; regenerate (`extract_persons.py`, `extract_places.py`, `registry_places.py`, `extract_registry.py`, `extract_mentions.py`, `person_details.py`); run all tests; commit with explicit paths.
+- [ ] **Step 6: Apply** `python3 scripts/mentioned_persons.py apply decisions-MM.json ../martyrology-texts` (it resolves each proposal's phrases to marks, offsets and a check, in `data/persons_mentioned.json`; the phrases stay in the private files); regenerate (`extract_persons.py`, `extract_places.py`, `registry_places.py`, `extract_registry.py`, `extract_mentions.py`, `person_details.py`); run all tests; commit with explicit paths.
 - [ ] **Step 7: Cards.** After all months, `cards` over the doubts into `~/private-changesets/mentioned-persons/crmedr-mentioned-persons-doubts.json`; upload it to `CHANGESETS_DIR` (the curator approved uploading doubts in the spec).
-- [ ] **Step 8:** PRs, CodeRabbit rounds, merge. Audit `mr:0727-ecclesius` (John I) in the January–July pass: a commemorated entry that is only mentioned moves to `persons_mentioned.json`.
+- [ ] **Step 8:** PRs, CodeRabbit rounds, merge. Audit `mr:0727-ecclesius` (John I) in the January–July pass: a commemorated entry that is only mentioned moves to `persons_mentioned.json` (as marks: through a proposal and `apply`, or its current `mentions.json` marks' offsets and checks).
 
 ## martyrology-api
 
