@@ -77,7 +77,7 @@ and writes the result where the API and the frontend read it (below), so the thr
 - **Movements and heresies mentioned** and **Religious congregations mentioned**: two new indexes, one entry per
   item, with the eulogies that name it.
 
-### Process: automated, no cards for the curator
+### Process: automated; the curator sees only what research cannot settle
 
 The established pipeline, run end to end without uploading review cards:
 
@@ -96,12 +96,17 @@ The established pipeline, run end to end without uploading review cards:
    person); otherwise the person is marked with no item, `unresolved`, and listed by name in the non-commemorated
    index (curator, 2026-11-02). The curator gives leave for these edits and creations in this pass. maxlag 5 with
    retry, as always.
-6. **Apply**: `persons_curated.json` (`role: "mentioned"`), `mentions_curated.json`, and the new curated files for
+6. **Apply**: `persons_mentioned.json` (`role: "mentioned"`), `mentions_curated.json`, and the new curated files for
    movements and congregations; regenerate; tests.
+7. **Human review, only for what research cannot settle** (curator, 2026-11-02): a case still in serious doubt
+   after scholarly research (two candidates the literature cannot tell apart, an identity the sources dispute, a
+   name that may or may not be a person) becomes a review card, and only those cards are uploaded to the server
+   (`CHANGESETS_DIR`) for a final human pass. Until the curator decides, its mark is left out. Everything else is
+   applied without review.
 
-The cards and every decision (Jev's score, the research note, the item created or edited) are kept as an audit
-trail in `~/private-changesets/` (they quote the 2004 texts), never uploaded for review and never in git. The
-curator can spot-check them; the reports in `docs/` count what was decided and how (Jev, research, created).
+The decided cards and every decision (Jev's score, the research note, the item created or edited) are kept as an
+audit trail in `~/private-changesets/` (they quote the 2004 texts), not uploaded and never in git. The curator can
+spot-check them; the reports in `docs/` count what was decided and how (Jev, research, created, left for review).
 
 ## Data (crmedr), outline
 
