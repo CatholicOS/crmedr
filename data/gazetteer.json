@@ -4146,9 +4146,11 @@
       "status": "jev"
     },
     "Calydóne Pisídiæ": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "Kalytos in Pisidia (Pleiades 614684) has no known location."
+      "wikidata": "Q141970450",
+      "label": "Kalytos",
+      "country": "TR",
+      "status": "reviewed",
+      "note": "Kalytos in Pisidia (Pleiades 614684, Barrington Atlas 62 unlocated), the brothers' village in the Synaxarium of Constantinople (Κάλυτος), not Calydon in Aetolia (Q750313); the Italian prints «Chiliadu»; item created 2026-11-02 (curator)"
     },
     "Calábria": {
       "wikidata": "Q1458",
@@ -23322,9 +23324,11 @@
       "status": "jev"
     },
     "monastérii Abgári": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: the monastery of Abgar (Agauros) on the Mysian Olympus (Uludağ) near Prusa, where Eustratius was abbot; its site is not identified"
+      "wikidata": "Q141970448",
+      "label": "Agauroi Monastery",
+      "country": "TR",
+      "status": "reviewed",
+      "note": "the monastery of the Agauroi (Agauros, Abgar) on the Bithynian Olympus (Uludağ) near Prusa, where Eustratius was abbot; coordinates hypothetical, after Belke, TIB 13 (2020) 376–377; item created 2026-11-02 (curator)"
     },
     "monastérii Acemetárum ad Bósphorum": {
       "wikidata": "Q141830968",
@@ -23659,9 +23663,11 @@
       "status": "jev"
     },
     "monastério Pinnæ Melláriæ": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: Monastery of Penamelaria near Cordoba (Pomposa): no item found, site uncertain"
+      "wikidata": "Q141970449",
+      "label": "Monastery of Peñamelaria",
+      "country": "ES",
+      "status": "reviewed",
+      "note": "the Mozarabic monastery of San Salvador de Peñamelaria in the hills north of Córdoba, founded by Pomposa's parents (Eulogius, Memoriale sanctorum III.10–11); site unidentified; item created 2026-11-02 (curator)"
     },
     "monastério Rhuvigiénsi": {
       "wikidata": "Q1775894",
