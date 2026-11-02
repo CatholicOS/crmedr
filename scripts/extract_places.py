@@ -414,11 +414,23 @@ def _covered(text, items):
     return spans
 
 
-def unrecorded(texts, places, known):
-    """{id: [la]}: known place designations printed in a eulogy at a printing no item covers."""
+def load_mentioned(repo_root):
+    """The persons each eulogy only mentions (data/persons_mentioned.json, by eulogy); missing file: none."""
+    path = repo_root / "data" / "persons_mentioned.json"
+    if not path.exists():
+        return {}
+    return {k: v for k, v in json.loads(path.read_text(encoding="utf-8")).items() if not k.startswith("$")}
+
+
+def unrecorded(texts, places, known, mentioned=None):
+    """{id: [la]}: known place designations printed in a eulogy at a printing no item covers. A place
+    printed inside the Latin phrase of a person the eulogy only mentions (`mentioned`: data/persons_mentioned.json)
+    is part of that name, not a place of the eulogy, and is not listed."""
     out = {}
     for mrid, text in texts.items():
         spans = _covered(text, places.get(mrid, []))
+        spans += [(s, s + len(phrase)) for person in (mentioned or {}).get(mrid, []) if person.get("where") == "text"
+                  for phrase in person.get("la") or [] for s in occurrences(text, phrase)]
         missing = sorted({la for la in known for s in occurrences(text, la)
                           if not any(a <= s and s + len(la) <= b for a, b in spans)})
         if missing:
@@ -790,7 +802,8 @@ def main():
     gazetteer_path = repo_root / "data" / "gazetteer.json"
     known = json.loads(gazetteer_path.read_text(encoding="utf-8"))["places"] if gazetteer_path.exists() else {}
     known = [la for la, g in known.items() if g.get("wikidata") and len(la) > 3]
-    result["unrecorded"] = unrecorded({m: texts[m] for m, _, _ in latin_order}, result["places"], known)
+    result["unrecorded"] = unrecorded({m: texts[m] for m, _, _ in latin_order}, result["places"], known,
+                                      load_mentioned(repo_root))
     review_path = repo_root / "data" / "places_review.json"
     if review_path.exists():
         result["unqueued"] = json.loads(review_path.read_text(encoding="utf-8")).get("unqueued", [])

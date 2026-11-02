@@ -1232,13 +1232,31 @@ class MentionedPersonsTest(unittest.TestCase):
                                      {"text": text}, "la", person_qid=lambda p: None, commemorated={})
         self.assertEqual([m["start"] for m in ms], [text.rindex("Henríci")])
 
-    def test_the_italian_uses_its_own_phrases_and_none_without_them(self):
+    def test_the_italian_uses_its_own_phrases_and_an_empty_list_marks_none(self):
         person = {"name": "Symeon", "where": "text", "la": ["Symeónis"]}
-        self.assertEqual(em.with_mentioned_marks([], [person], {"text": "di Simeone"}, "it",
+        self.assertEqual(em.with_mentioned_marks([], [dict(person, it=[])], {"text": "di Simeone"}, "it",
                                                  person_qid=lambda p: None, commemorated={}), [])
         ms = em.with_mentioned_marks([], [dict(person, it=["Simeone"])], {"text": "di Simeone"}, "it",
                                      person_qid=lambda p: None, commemorated={})
         self.assertEqual([(m["form"], m["commemorated_in"]) for m in ms], [("Simeone", [])])
+
+    def test_a_mentioned_person_without_phrases_for_the_language_is_an_error(self):
+        errors = []
+        ms = em.with_mentioned_marks([], [{"name": "Symeon", "where": "text", "la": ["Symeónis"]}],
+                                     {"text": "di Simeone"}, "it", person_qid=lambda p: None, commemorated={},
+                                     errors=errors)
+        self.assertEqual(ms, [])
+        self.assertEqual(errors, ["mentioned person 'Symeon' has no it phrases; list them, or [] if the Italian "
+                                  "does not name them"])
+
+    def test_build_edition_names_the_eulogy_of_a_person_without_phrases(self):
+        mrid = "mr:0417-x"
+        _, _, counts = em.build_edition("it", {mrid: "di Simeone"}, {}, {}, {mrid: [
+            {"name": "Symeon", "where": "text", "role": "mentioned"}]}, {}, {}, {},
+            mentioned={mrid: [{"name": "Symeon", "where": "text", "la": ["Symeónis"]}]}, commemorated={})
+        self.assertEqual(counts["mentioned_errors"], [
+            "mr:0417-x: mentioned person 'Symeon' has no it phrases; list them, or [] if the Italian does not name "
+            "them"])
 
     def test_a_curated_mark_of_a_mentioned_person_is_kept_not_doubled(self):
         text = "Ewaldi, presbyteri, qui cum sancto Willibrórdi sociis venérunt."

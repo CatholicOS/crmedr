@@ -20,7 +20,7 @@ Eulogies with persons or places but no text of their own in this edition: `mr:07
 | Mentions | Expected | Marked | Share | How |
 | --- | --- | --- | --- | --- |
 | Places in the text | 6567 | 6509 | 99.1% | as printed 6307, back-reference 36, curated 166 |
-| Persons in the text | 5752 | 5803 | 100.9% | curated 281, gap 153, given name 127, mentioned 1, stem 10, surname 11, titled 7, unlisted 19, untitled 32, verbatim 5162 |
+| Persons in the text | 5752 | 5804 | 100.9% | curated 281, gap 153, given name 127, mentioned 2, stem 10, surname 11, titled 7, unlisted 19, untitled 32, verbatim 5162 |
 | Persons in footnotes | 1382 | 1370 | 99.1% | curated 1002, gap 3, stem 4, surname 105, verbatim 256 |
 | Events in the text | 51 | 51 | 100.0% | curated 51 |
 

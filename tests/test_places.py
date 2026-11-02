@@ -695,6 +695,17 @@ class UnrecordedTest(unittest.TestCase):
         places = {"mr:0101-a": [{"role": "death", "la": "Fictopoli in Fictia", "source": "lead"}]}
         self.assertEqual(p.unrecorded(texts, places, ["Fictia"]), {})
 
+    def test_a_known_place_inside_a_mentioned_persons_name_is_not_listed(self):
+        mentioned = {"mr:0119-a": [{"name": "Ambrosius", "where": "text", "la": ["Ambrósio Mediolanénsi"]}]}
+        name_only = {"mr:0119-a": "Laude, sancti Bassiáni, qui ab Ambrósio Mediolanénsi ordinátus est."}
+        self.assertEqual(p.unrecorded(name_only, {}, ["Mediolanénsi"], mentioned), {})
+        texts = {"mr:0119-a": "Laude, sancti Bassiáni, qui ab Ambrósio Mediolanénsi ordinátus est Mediolanénsi."}
+        # A printing of the place outside the name is still listed.
+        self.assertEqual(p.unrecorded(texts, {}, ["Mediolanénsi"], mentioned), {"mr:0119-a": ["Mediolanénsi"]})
+        # A footnote person's phrase does not cover the text.
+        footnote = {"mr:0119-a": [dict(mentioned["mr:0119-a"][0], where={"footnote": 1})]}
+        self.assertEqual(p.unrecorded(texts, {}, ["Mediolanénsi"], footnote), {"mr:0119-a": ["Mediolanénsi"]})
+
     def test_report_section(self):
         r = p.build(BuildTest.ORDER, BuildTest.TX, BuildTest.TY, {}, not_a_place={})
         r["unrecorded"] = {"mr:0101-a": ["in Fictonia"]}
