@@ -426,6 +426,17 @@ class BuildEditionTest(unittest.TestCase):
                                      {"mr:0602-pothinus": []}, unmarked={"mr:0602-pothinus": [{"name": "Blandina"}]})
         self.assertEqual([m["name"] for m in out["mr:0602-pothinus"]], ["Pothinus"])
 
+    def test_a_person_a_curated_list_lacks_may_nest_inside_a_curated_place(self):
+        # A person inside a place phrase is marked inside it, one level deep, as elsewhere.
+        text = "Romæ, in basílica Blandínæ."
+        s = text.index("basílica")
+        curated = {"mr:0602-y": [{"kind": "place", "where": "text", "start": s, "end": s + 17,
+                                  "check": em.check("basílica Blandínæ"), "qid": None}]}
+        persons = {"mr:0602-y": [{"name": "Blandina", "where": "text"}]}
+        out, _, _ = em.build_edition("la", {"mr:0602-y": text}, {}, {}, persons, {}, {}, curated)
+        self.assertEqual([(m["kind"], m["form"]) for m in out["mr:0602-y"]],
+                         [("place", "basílica Blandínæ"), ("person", "Blandínæ")])
+
     def test_a_person_a_curated_list_lacks_is_not_marked_over_a_curated_mark(self):
         text = "Lugdúni, sanctórum Blandínæ."
         b = text.index("Blandínæ")

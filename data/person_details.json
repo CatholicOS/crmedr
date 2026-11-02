@@ -119828,6 +119828,22 @@
       "it": "Elena di Laurino"
     }
   },
+  "Q30879544": {
+    "description": {
+      "en": "Italian Roman Catholic saint",
+      "fr": "ermite chrétien"
+    },
+    "born": null,
+    "died": {
+      "year": 583,
+      "precision": "year",
+      "circa": true
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Menas of Samnium"
+    }
+  },
   "Q30880183": {
     "description": {
       "es": "peregrino y eremita irlandés (c. s. VIII)."
@@ -125211,22 +125227,6 @@
     "wikipedia": {
       "it": "Zenone di Nicomedia",
       "es": "Zenón de Nicomedia"
-    }
-  },
-  "Q101864573": {
-    "description": {
-      "en": "Italian Roman Catholic saint",
-      "fr": "ermite chrétien"
-    },
-    "born": null,
-    "died": {
-      "year": 583,
-      "precision": "year",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Menas of Samnium"
     }
   },
   "Q102562239": {

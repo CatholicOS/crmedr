@@ -479,9 +479,9 @@ CURATED_COMMENT = ("Curators' corrections to data/mentions.json: for each eulogy
                    "mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), "
                    "replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at "
                    "extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a "
-                   "reviewed change-set (docs/mentions-changeset.md), or by hand. `unmarked`: by edition and eulogy, the "
-                   "persons the curators left unmarked (a mark removed or a proposal rejected); a person the list "
-                   "lacks and this does not name is matched beside the list's marks.")
+                   "reviewed change-set (docs/mentions-changeset.md), or by hand. `unmarked`: by edition and "
+                   "eulogy, the persons the curators left unmarked (a mark removed or a proposal rejected); a person "
+                   "the list lacks and this does not name is matched beside the list's marks.")
 LABELS = [(("place", True), "Places in the text"), (("person", True), "Persons in the text"),
           (("person", False), "Persons in footnotes"), (("event", True), "Events in the text")]
 
@@ -624,8 +624,8 @@ def with_events(ms, events, source, lang):
 
 def with_unlisted_persons(ms, rv, counts, text, notes, items, names, lang, place_qid, person_qid, unmarked):
     """A curated eulogy's marks with the persons its list lacks and the curators did not leave unmarked (a
-    person added to data/persons.json after the list was written): matched as in any other eulogy, where no
-    curated mark lies; a person the matcher is unsure of is proposed."""
+    person added to data/persons.json after the list was written): matched as in any other eulogy, where it
+    crosses no curated mark or nests in one (`nests`); a person the matcher is unsure of is proposed."""
     listed = {person_key(p) for m in ms if m["kind"] == "person" for p in [m, *(m.get("others") or [])]}
     missing = {person_key(p) for p in names} - listed - unmarked
     if not missing:
@@ -633,14 +633,14 @@ def with_unlisted_persons(ms, rv, counts, text, notes, items, names, lang, place
     found, asked, _ = eulogy_mentions(text, notes, items, names, lang=lang, place_qid=place_qid,
                                       person_qid=person_qid)
     def clear(m):
-        return m["start"] is None or not any(c["where"] == m["where"] and c["start"] < m["end"]
-                                             and m["start"] < c["end"] for c in ms)
+        return m["start"] is None or nests((m["start"], m["end"], m["kind"]),
+                                           [(c["start"], c["end"], c["kind"]) for c in ms if c["where"] == m["where"]])
 
-    free = [m for m in found if m["kind"] == "person" and person_key(m) in missing and clear(m)]
-    for m in free:
+    added = [m for m in found if m["kind"] == "person" and person_key(m) in missing and clear(m)]
+    for m in added:
         counts["found"][("person", m["where"] == "text", "unlisted")] += 1
-    return ms + free, rv + [r for r in asked if r["kind"] == "person" and r.get("name")
-                            and person_key(r) in missing and clear(r)]
+    return ms + added, rv + [r for r in asked if r["kind"] == "person" and r.get("name")
+                             and person_key(r) in missing and clear(r)]
 
 
 def build_edition(lang, texts, notes, places, persons, gazetteer, person_items, curated, events=None, unmarked=None):
