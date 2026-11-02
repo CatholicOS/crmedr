@@ -7148,7 +7148,8 @@
         }
       ],
       "date": {
-        "year": 270,
+        "from": 201,
+        "to": 300,
         "basis": "death",
         "source": "wikidata"
       },
@@ -122299,8 +122300,8 @@
         }
       ],
       "date": {
-        "from": 501,
-        "to": 600,
+        "year": 583,
+        "circa": true,
         "source": "wikidata"
       }
     },

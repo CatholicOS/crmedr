@@ -406,6 +406,46 @@ class BuildEditionTest(unittest.TestCase):
         m = out["mr:0101-felix"][0]
         self.assertEqual((m["qid"], m["others"]), ("Q1", [{"name": "Felix", "n": 2, "qid": "Q2"}]))
 
+    def test_a_curated_eulogy_still_marks_a_person_its_list_lacks(self):
+        # A curated list written before a person joined data/persons.json (Blandina, 2 June) keeps its marks;
+        # the person it lacks is matched as in any other eulogy, beside them.
+        text = "Lugdúni, sanctórum Pothíni et Blandínæ."
+        s = text.index("Pothíni")
+        curated = {"mr:0602-pothinus": [{"kind": "person", "where": "text", "start": s, "end": s + 7,
+                                         "check": em.check("Pothíni"), "name": "Pothinus", "qid": None}]}
+        persons = {"mr:0602-pothinus": [{"name": "Pothinus", "where": "text"}, {"name": "Blandina", "where": "text"}]}
+        out, _, counts = em.build_edition("la", {"mr:0602-pothinus": text}, {}, {}, persons, {}, {}, curated)
+        self.assertEqual([(m["name"], m["form"]) for m in out["mr:0602-pothinus"]],
+                         [("Pothinus", "Pothíni"), ("Blandina", "Blandínæ")])
+        self.assertEqual(counts["found"][("person", True, "curated")], 1)
+
+    def test_a_person_the_curators_left_unmarked_stays_unmarked(self):
+        text = "Lugdúni, sanctórum Pothíni et Blandínæ."
+        persons = {"mr:0602-pothinus": [{"name": "Pothinus", "where": "text"}, {"name": "Blandina", "where": "text"}]}
+        out, _, _ = em.build_edition("la", {"mr:0602-pothinus": text}, {}, {}, persons, {}, {},
+                                     {"mr:0602-pothinus": []}, unmarked={"mr:0602-pothinus": [{"name": "Blandina"}]})
+        self.assertEqual([m["name"] for m in out["mr:0602-pothinus"]], ["Pothinus"])
+
+    def test_a_person_a_curated_list_lacks_may_nest_inside_a_curated_place(self):
+        # A person inside a place phrase is marked inside it, one level deep, as elsewhere.
+        text = "Romæ, in basílica Blandínæ."
+        s = text.index("basílica")
+        curated = {"mr:0602-y": [{"kind": "place", "where": "text", "start": s, "end": s + 17,
+                                  "check": em.check("basílica Blandínæ"), "qid": None}]}
+        persons = {"mr:0602-y": [{"name": "Blandina", "where": "text"}]}
+        out, _, _ = em.build_edition("la", {"mr:0602-y": text}, {}, {}, persons, {}, {}, curated)
+        self.assertEqual([(m["kind"], m["form"]) for m in out["mr:0602-y"]],
+                         [("place", "basílica Blandínæ"), ("person", "Blandínæ")])
+
+    def test_a_person_a_curated_list_lacks_is_not_marked_over_a_curated_mark(self):
+        text = "Lugdúni, sanctórum Blandínæ."
+        b = text.index("Blandínæ")
+        curated = {"mr:0602-x": [{"kind": "person", "where": "text", "start": b, "end": b + 8,
+                                  "check": em.check("Blandínæ"), "name": "Blandina", "qid": None}]}
+        persons = {"mr:0602-x": [{"name": "Blandina", "where": "text"}, {"name": "Blandina", "n": 2, "where": "text"}]}
+        out, _, _ = em.build_edition("la", {"mr:0602-x": text}, {}, {}, persons, {}, {}, curated)
+        self.assertEqual([(m.get("name"), m.get("n")) for m in out["mr:0602-x"]], [("Blandina", None)])
+
     def test_a_curated_span_whose_check_fails_is_an_error(self):
         s = BASIL_TEXT.index("Basilíi")
         curated = {"mr:0101-basilius": [{"kind": "person", "where": "text", "start": s, "end": s + 7,
@@ -525,6 +565,17 @@ class RenderTest(unittest.TestCase):
     def test_texts_commit_outside_git_is_none(self):
         with tempfile.TemporaryDirectory() as d:
             self.assertIsNone(em.texts_commit(Path(d)))
+
+    def test_every_curated_person_mark_names_a_person_of_its_eulogy(self):
+        # A person renamed in data/persons.json is renamed in the curated lists too (the secular names of #116).
+        root = Path(__file__).resolve().parent.parent / "data"
+        curated = json.loads((root / "mentions_curated.json").read_text(encoding="utf-8"))
+        persons = json.loads((root / "persons.json").read_text(encoding="utf-8"))["editions"][em.PERSONS_EDITION]
+        stale = [f"{ed} {mrid}: {em.person_key(p)}"
+                 for ed, by_id in curated["editions"].items() for mrid, ms in by_id.items()
+                 for m in ms if m["kind"] == "person" for p in [m, *(m.get("others") or [])]
+                 if em.person_key(p) not in {em.person_key(q) for q in persons.get(mrid, [])}]
+        self.assertEqual(stale, [])
 
     def test_the_curated_file_carries_the_one_comment(self):
         curated = json.loads((Path(__file__).resolve().parent.parent / "data" / "mentions_curated.json")
@@ -896,6 +947,21 @@ class ApplyDecisionsTest(unittest.TestCase):
         applied, errors = em.apply_decisions({}, self.MENTIONS, exported)
         self.assertEqual(applied, 0)
         self.assertIn("no such mention", errors[0])
+
+    def test_removing_a_persons_last_mark_records_them_as_unmarked(self):
+        unmarked = {}
+        em.apply_decisions({}, self.MENTIONS, {"operations": [
+            self.op("remove_mention", kind="person", start=13, end=20, form="Nemínis")]}, unmarked)
+        self.assertEqual(unmarked, {ED: {"mr:x": [{"name": "Nemo"}]}})
+
+    def test_a_rejected_mark_records_its_person_as_unmarked_and_an_accepted_one_clears_it(self):
+        unmarked = {}
+        reject = self.op("add_mention", "reject", kind="person", name="Felix", n=2, start=30, end=35, form="Felix")
+        em.apply_decisions({}, self.MENTIONS, {"operations": [reject]}, unmarked)
+        self.assertEqual(unmarked, {ED: {"mr:x": [{"name": "Felix", "n": 2}]}})
+        accept = self.op("add_mention", kind="person", name="Felix", n=2, start=30, end=35, form="Felix")
+        em.apply_decisions({}, self.MENTIONS, {"operations": [accept]}, unmarked)
+        self.assertEqual(unmarked, {})
 
     def test_a_curated_eulogy_is_edited_where_it_stands(self):
         curated = {ED: {"mr:x": [stored("place", 0, 4, "Romæ")]}}

@@ -1,5 +1,5 @@
 {
-  "$comment": "Curators' corrections to data/mentions.json: for each eulogy listed, its complete list of mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a reviewed change-set (docs/mentions-changeset.md), or by hand.",
+  "$comment": "Curators' corrections to data/mentions.json: for each eulogy listed, its complete list of mentions in the shape of data/mentions.json (UTF-16 offsets and a check, never the words), replacing the extraction. QIDs are copied from person_items.json and gazetteer.json at extraction, whatever is written here. Written by `scripts/extract_mentions.py apply` from a reviewed change-set (docs/mentions-changeset.md), or by hand. `unmarked`: by edition and eulogy, the persons the curators left unmarked (a mark removed or a proposal rejected); a person the list lacks and this does not name is matched beside the list's marks.",
   "editions": {
     "martyrologium_romanum_2004": {
       "mr:0101-maria-dei-genetrix": [
@@ -4328,7 +4328,7 @@
           "start": 116,
           "end": 148,
           "check": "3972ae33",
-          "name": "Maria Emmanuel Perez Gimenez",
+          "name": "Emmanuel Perez Gimenez",
           "qid": null
         },
         {
@@ -4522,7 +4522,7 @@
           "start": 55,
           "end": 68,
           "check": "b176bea2",
-          "name": "Petrus a Corde",
+          "name": "Petrus a Corde Redondo",
           "qid": null
         },
         {
@@ -6684,7 +6684,7 @@
           "start": 104,
           "end": 145,
           "check": "358c3bac",
-          "name": "Theodemirus Ioachim Hadrianus Sainz Sainz",
+          "name": "Hadrianus Sainz Sainz",
           "qid": null
         }
       ],
@@ -7559,7 +7559,7 @@
           "start": 119,
           "end": 154,
           "check": "def54448",
-          "name": "Benedictus Emmanuel Ferrer Jorda",
+          "name": "Emmanuel Ferrer Jordá",
           "qid": null
         },
         {
@@ -7568,7 +7568,7 @@
           "start": 158,
           "end": 192,
           "check": "1d285454",
-          "name": "Bernardinus Paulus Martinez Robles",
+          "name": "Paulus Martínez Robles",
           "qid": null
         }
       ],

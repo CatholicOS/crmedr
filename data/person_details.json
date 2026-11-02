@@ -28626,6 +28626,38 @@
       "pt": "Maria Francisca das Cinco Chagas"
     }
   },
+  "Q455195": {
+    "description": {
+      "en": "2nd century Gallic Christian martyr",
+      "it": "martire cristiana",
+      "fr": "sainte et martyre lyonnaise chrétienne du IIe siècle",
+      "de": "frühchristliche Märtyrin und Heilige"
+    },
+    "born": {
+      "year": 101,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 177,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Blandine.jpg",
+      "author": "Massalim",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+    },
+    "wikipedia": {
+      "en": "Blandina",
+      "it": "Blandina di Lione",
+      "fr": "Blandine de Lyon",
+      "de": "Blandina von Lyon",
+      "es": "Blandina",
+      "pt": "Blandina de Lyon"
+    }
+  },
   "Q455206": {
     "description": {
       "en": "Italian Roman Catholic religious and saint (1847–1870)",
@@ -67019,7 +67051,7 @@
       "it": "vescovo franco",
       "fr": "évêque d'Uzès au VIe siècle",
       "de": "Bischof von Uzès",
-      "es": "santo católico y ortodoxo"
+      "es": "obispo francés, considerado santo por la Iglesia católica y la Iglesia ortodoxa"
     },
     "born": null,
     "died": {
@@ -95493,11 +95525,11 @@
   },
   "Q6015453": {
     "description": {
-      "en": "Roman Catholic bishop",
+      "en": "Roman Catholic priest",
       "it": "vescovo cattolico",
       "fr": "évêque catholique",
       "de": "mexikanischer katholischer Priester",
-      "es": "obispo católico"
+      "es": "sacerdote católico"
     },
     "born": {
       "year": 1874,
@@ -95509,12 +95541,7 @@
       "precision": "year",
       "circa": false
     },
-    "image": {
-      "file": "5to Obispo.jpg",
-      "author": "Christian Fabián",
-      "license": "Public domain",
-      "license_url": null
-    },
+    "image": null,
     "wikipedia": {
       "es": "Miguel de la Mora"
     }
@@ -104153,7 +104180,7 @@
     "wikipedia": {
       "en": "Miguel de Carvalho",
       "fr": "Miguel de Carvalho",
-      "pt": "Miguel de Carvalho"
+      "pt": "Miguel de Carvalho (beato)"
     }
   },
   "Q10380545": {
@@ -119801,6 +119828,22 @@
       "it": "Elena di Laurino"
     }
   },
+  "Q30879544": {
+    "description": {
+      "en": "Italian Roman Catholic saint",
+      "fr": "ermite chrétien"
+    },
+    "born": null,
+    "died": {
+      "year": 583,
+      "precision": "year",
+      "circa": true
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Menas of Samnium"
+    }
+  },
   "Q30880183": {
     "description": {
       "es": "peregrino y eremita irlandés (c. s. VIII)."
@@ -125186,22 +125229,6 @@
       "es": "Zenón de Nicomedia"
     }
   },
-  "Q101864573": {
-    "description": {
-      "en": "Italian Roman Catholic saint",
-      "fr": "ermite chrétien"
-    },
-    "born": null,
-    "died": {
-      "year": 583,
-      "precision": "century",
-      "circa": false
-    },
-    "image": null,
-    "wikipedia": {
-      "en": "Menas of Samnium"
-    }
-  },
   "Q102562239": {
     "description": {
       "en": "Jesuit scholastic"
@@ -128231,6 +128258,25 @@
     "image": null,
     "wikipedia": {
       "fr": "William Brown (martyr)"
+    }
+  },
+  "Q130552682": {
+    "description": {
+      "en": "Persian Christian martyr in Rome, son of Saints Marius and Martha",
+      "it": "martire cristiano persiano a Roma, figlio dei santi Mario e Marta",
+      "fr": "martyr chrétien perse à Rome, fils des saints Marius et Marthe",
+      "de": "persischer Arzt und christlicher Märtyrer",
+      "es": "mártir cristiano persa en Roma, hijo de los santos Mario y Marta"
+    },
+    "born": null,
+    "died": {
+      "year": 300,
+      "precision": "century",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "de": "Audifax"
     }
   },
   "Q130552784": {
@@ -131292,6 +131338,36 @@
     "description": {
       "en": "martyr of Uzalis in Africa, commemorated with Felix",
       "it": "martire di Uzalis in Africa, commemorato con Felice"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141901686": {
+    "description": {
+      "en": "martyr at Edessa, a son of Saint Bassa",
+      "it": "martire a Edessa, figlio di santa Bassa"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141901688": {
+    "description": {
+      "en": "martyr at Edessa, a son of Saint Bassa",
+      "it": "martire a Edessa, figlio di santa Bassa"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141901690": {
+    "description": {
+      "en": "martyr at Edessa, a son of Saint Bassa",
+      "it": "martire a Edessa, figlio di santa Bassa"
     },
     "born": null,
     "died": null,
@@ -135329,6 +135405,20 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q141941380": {
+    "description": {
+      "en": "virgin and martyr of Córdoba, died 853",
+      "it": "vergine e martire a Cordova"
+    },
+    "born": null,
+    "died": {
+      "year": 853,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q141943016": {
     "description": {
       "en": "Augustinian priest, blessed, of Fabriano (John)",
@@ -136861,6 +136951,16 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q141943211": {
+    "description": {
+      "en": "virgin and martyr of Caesarea Maritima under Maximian",
+      "it": "vergine e martire a Cesarea di Palestina"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
   "Q141943212": {
     "description": {
       "en": "blessed priest of Verona",
@@ -137073,6 +137173,16 @@
     "description": {
       "en": "Spanish Dominican religious and martyr of Castelserás",
       "it": "religioso domenicano, martire a Castelserás"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141943231": {
+    "description": {
+      "en": "virgin and martyr of Thuburbo Lucernaria",
+      "it": "vergine e martire a Tuburbo Lucernaria"
     },
     "born": null,
     "died": null,
@@ -142021,6 +142131,20 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q141945720": {
+    "description": {
+      "en": "one of the Armenian companions of Salvatore Lilli, martyr at Marash",
+      "it": "uno dei compagni armeni di Salvatore Lilli, martire a Maraş"
+    },
+    "born": null,
+    "died": {
+      "year": 1895,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q141945721": {
     "description": {
       "en": "one of the Armenian companions of Salvatore Lilli, martyr at Marash",
@@ -143306,6 +143430,16 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q141945880": {
+    "description": {
+      "en": "Egyptian martyr at Ascalon under Maximinus",
+      "it": "martire ad Ascalona sotto Massimino"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {}
+  },
   "Q141945881": {
     "description": {
       "en": "deacon and martyr of Reims, companion of Nicasius",
@@ -144217,6 +144351,18 @@
       "precision": "year",
       "circa": false
     },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q141968013": {
+    "description": {
+      "en": "Persian Christian martyr in Rome, son of Saints Marius and Martha",
+      "it": "martire cristiano persiano a Roma, figlio dei santi Mario e Marta",
+      "fr": "martyr chrétien perse à Rome, fils des saints Marius et Marthe",
+      "es": "mártir cristiano persa en Roma, hijo de los santos Mario y Marta"
+    },
+    "born": null,
+    "died": null,
     "image": null,
     "wikipedia": {}
   }
