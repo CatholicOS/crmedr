@@ -164,6 +164,36 @@ class SummarizeTest(unittest.TestCase):
             "wikipedia": {"en": "Basil of Caesarea"},
         })
 
+    def test_commons_attribution_credits_the_portrait(self):
+        meta = {"Artist": {"value": "Unknown author"},
+                "Attribution": {"value": "Classical Numismatic Group, Inc. <a href='http://x'>http://x</a>"},
+                "AttributionRequired": {"value": "true"},
+                "Credit": {"value": "<a href='http://x'>CNG Coins</a>"},
+                "LicenseShortName": {"value": "CC BY-SA 2.5"}}
+        image = pd.summarize_details(RAW, {"Basil.jpg": meta})["image"]
+        self.assertEqual(image["author"], "Classical Numismatic Group, Inc. http://x")
+
+    def test_credit_when_commons_names_no_artist(self):
+        meta = {"Credit": {"value": "<a href='//commons.wikimedia.org/wiki/User:J'>Marie-Lan Nguyen</a> (2011)"},
+                "AttributionRequired": {"value": "true"}, "LicenseShortName": {"value": "CC BY 2.5"}}
+        image = pd.summarize_details(RAW, {"Basil.jpg": meta})["image"]
+        self.assertEqual(image["author"], "Marie-Lan Nguyen (2011)")
+
+    def test_credit_is_not_an_author_when_no_attribution_is_required(self):
+        meta = {"Credit": {"value": "Own work"}, "LicenseShortName": {"value": "Public domain"}}
+        self.assertIsNone(pd.summarize_details(RAW, {"Basil.jpg": meta})["image"]["author"])
+
+    def test_the_artist_comes_before_the_attribution(self):
+        meta = {"Artist": {"value": "Louis Desprez"}, "Attribution": {"value": "© Marie-Lan Nguyen"},
+                "AttributionRequired": {"value": "true"}, "LicenseShortName": {"value": "CC BY 2.5"}}
+        self.assertEqual(pd.summarize_details(RAW, {"Basil.jpg": meta})["image"]["author"], "Louis Desprez")
+
+    def test_own_work_or_a_bare_link_is_not_a_credit(self):
+        meta = {"AttributionRequired": {"value": "true"}, "LicenseShortName": {"value": "CC BY-SA 3.0"}}
+        for credit in ("Own work", "<a href='https://x/y.jpg'>https://x/y.jpg</a> Gallery: https://x"):
+            meta["Credit"] = {"value": credit}
+            self.assertIsNone(pd.summarize_details(RAW, {"Basil.jpg": meta})["image"]["author"], credit)
+
     def test_no_license_no_image(self):
         self.assertIsNone(pd.summarize_details(RAW, {"Basil.jpg": {"Artist": {"value": "X"}}})["image"])
         self.assertIsNone(pd.summarize_details(RAW, {})["image"])
