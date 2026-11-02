@@ -22466,9 +22466,11 @@
       "status": "jev"
     },
     "basílicæ Sancti Priváti Gabalórum": {
-      "wikidata": null,
-      "status": "unresolved",
-      "note": "no item, unlocated: Basilica of Saint Privatus of the Gabali (Mende or Javols); no item for the basilica; location uncertain"
+      "wikidata": "Q478932",
+      "label": "Javols",
+      "country": "FR",
+      "status": "reviewed",
+      "note": "the basilica of St Privatus of the Gabali (Gregory of Tours, Hist. VI.37), linked to Javols, the civitas, after CSLA E02189 and the Italian edition; its site is not identified, and Mende (Q2942278, Privatus's tomb) remains possible; no item for the basilica (curator, 2026-11-02; issue #269)"
     },
     "basílicæ Sancti Saturníni": {
       "wikidata": "Q1010268",

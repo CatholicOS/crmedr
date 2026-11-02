@@ -114762,7 +114762,10 @@
           "role": "religious_life",
           "la": "basílicæ Sancti Priváti Gabalórum",
           "it": "basilica di Saint-Privat-de-Javols",
-          "source": "curated"
+          "source": "curated",
+          "wikidata": "Q478932",
+          "label": "Javols",
+          "country": "FR"
         }
       ],
       "date": {
@@ -114770,7 +114773,7 @@
         "basis": "death",
         "source": "wikidata"
       },
-      "note": "The site of the basilica of Saint Privatus of the Gabali, of which Lupentius was abbot, is uncertain (Mende or Javols)."
+      "note": "The basilica of Saint Privatus of the Gabali, of which Lupentius was abbot (Gregory of Tours, Historia Francorum VI.37), is linked to Javols, the civitas of the Gabali, as the Cult of Saints in Late Antiquity database (E02189) and the Italian edition place it; its site has not been found there, and Mende, where Privatus died and his tomb is venerated, remains possible."
     },
     {
       "id": "mr:1022-leotadius-augustae-auscorum",
