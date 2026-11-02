@@ -135,9 +135,15 @@
     "mr:0101-iustinus-episcopus": [
       {
         "role": "cult",
-        "la": "In Campánia et Aprútio",
-        "it": "In Campania e in Abruzzo",
-        "source": "lead"
+        "la": "Campánia",
+        "it": "Campania",
+        "source": "curated"
+      },
+      {
+        "role": "cult",
+        "la": "Aprútio",
+        "it": "Abruzzo",
+        "source": "curated"
       }
     ],
     "mr:0101-maria-dei-genetrix": [
