@@ -1179,5 +1179,159 @@ class EventTest(unittest.TestCase):
         self.assertEqual(em.from_file(out, self.TEXT), ev)
 
 
+class MentionedPersonsTest(unittest.TestCase):
+    """Persons a eulogy only mentions (data/persons_mentioned.json, #230): marked on their printed phrases,
+    with role "mentioned" and the eulogies that commemorate the same item."""
+    TEXT = "Laude Pompéia, sancti Bassiáni, qui ab Ambrósio Mediolanénsi ordinátus est."
+    HENRY = "Henríci regis uxor, quæ post mortem Henríci Confúgiam venit."
+
+    def test_a_mentioned_person_is_marked_on_its_phrase(self):
+        text = self.TEXT
+        ms = em.with_mentioned_marks([], [{"name": "Ambrosius", "where": "text", "la": ["Ambrósio Mediolanénsi"]}],
+                                     {"text": text}, "la", person_qid=lambda p: "Q43746",
+                                     commemorated={"Q43746": ["mr:1207-ambrosius"]})
+        self.assertEqual([(text[m["start"]:m["end"]], m["role"], m["commemorated_in"]) for m in ms],
+                         [("Ambrósio Mediolanénsi", "mentioned", ["mr:1207-ambrosius"])])
+
+    def test_a_place_inside_a_mentioned_span_is_an_error(self):
+        errs = em.validate_mentioned_spans([{"kind": "person", "role": "mentioned", "where": "text", "start": 40,
+                                             "end": 61},
+                                            {"kind": "place", "where": "text", "start": 49, "end": 61, "qid": "Q490"}],
+                                           "mr:x")
+        self.assertEqual(errs, ["mr:x: a place mark (Q490) lies inside a mentioned person's name; "
+                                "remove it from data/places_curated.json"])
+
+    def test_a_place_beside_a_mentioned_span_or_inside_a_commemorated_one_is_no_error(self):
+        ms = [{"kind": "person", "role": "mentioned", "where": "text", "start": 40, "end": 61},
+              {"kind": "place", "where": "text", "start": 0, "end": 12, "qid": "Q1"},
+              {"kind": "place", "where": {"footnote": 1}, "start": 49, "end": 61, "qid": "Q2"},
+              {"kind": "person", "where": "text", "start": 70, "end": 90},
+              {"kind": "place", "where": "text", "start": 80, "end": 90, "qid": "Q3"}]
+        self.assertEqual(em.validate_mentioned_spans(ms, "mr:x"), [])
+
+    def test_repeated_phrases_take_the_next_occurrence(self):
+        ms = em.with_mentioned_marks([], [{"name": "Henricus", "where": "text", "la": ["Henríci", "Henríci"]}],
+                                     {"text": self.HENRY}, "la", person_qid=lambda p: "Q103556",
+                                     commemorated={"Q103556": ["mr:0713-henricus-imperator"]})
+        self.assertEqual([m["form"] for m in ms], ["Henríci", "Henríci"])
+        self.assertEqual(ms[0]["start"], 0)
+        self.assertEqual(ms[1]["start"], self.HENRY.index("Henríci", 1))
+        self.assertTrue(all(m["name"] == "Henricus" and m["qid"] == "Q103556" for m in ms))
+
+    def test_a_phrase_not_printed_is_an_error(self):
+        errors = []
+        ms = em.with_mentioned_marks([], [{"name": "Henricus", "where": "text", "la": ["Henríci", "Henríco"]}],
+                                     {"text": self.HENRY}, "la", person_qid=lambda p: None, commemorated={},
+                                     errors=errors)
+        self.assertEqual(len(ms), 1)
+        self.assertEqual(errors, ["the mentioned person Henricus: 'Henríco' is not printed in the text"])
+
+    def test_a_phrase_inside_a_longer_word_is_not_the_name(self):
+        text = "Henricíanus, non Henríci"
+        ms = em.with_mentioned_marks([], [{"name": "Henricus", "where": "text", "la": ["Henríci"]}],
+                                     {"text": text}, "la", person_qid=lambda p: None, commemorated={})
+        self.assertEqual([m["start"] for m in ms], [text.rindex("Henríci")])
+
+    def test_the_italian_uses_its_own_phrases_and_none_without_them(self):
+        person = {"name": "Symeon", "where": "text", "la": ["Symeónis"]}
+        self.assertEqual(em.with_mentioned_marks([], [person], {"text": "di Simeone"}, "it",
+                                                 person_qid=lambda p: None, commemorated={}), [])
+        ms = em.with_mentioned_marks([], [dict(person, it=["Simeone"])], {"text": "di Simeone"}, "it",
+                                     person_qid=lambda p: None, commemorated={})
+        self.assertEqual([(m["form"], m["commemorated_in"]) for m in ms], [("Simeone", [])])
+
+    def test_a_curated_mark_of_a_mentioned_person_is_kept_not_doubled(self):
+        text = "Ewaldi, presbyteri, qui cum sancto Willibrórdi sociis venérunt."
+        s = text.index("Willibrórdi")
+        curated = {"kind": "person", "where": "text", "start": s, "end": s + 11, "form": "Willibrórdi",
+                   "name": "Willibrordus", "qid": "Q160714"}
+        ms = em.with_mentioned_marks([curated], [{"name": "Willibrordus", "where": "text", "la": ["Willibrórdi"]}],
+                                     {"text": text}, "la", person_qid=lambda p: "Q160714",
+                                     commemorated={"Q160714": ["mr:1107-willibrordus"]})
+        self.assertEqual(ms, [dict(curated, role="mentioned", commemorated_in=["mr:1107-willibrordus"])])
+
+    def test_a_mentioned_person_shares_a_name_with_a_commemorated_one_by_n(self):
+        text = "Zeno, cum Zenóni"
+        zeno = {"kind": "person", "where": "text", "start": 0, "end": 4, "form": "Zeno", "name": "Zeno", "qid": "Q1"}
+        ms = em.with_mentioned_marks([zeno], [{"name": "Zeno", "n": 2, "where": "text", "la": ["Zenóni"]}],
+                                     {"text": text}, "la", person_qid={"Zeno": "Q1", "Zeno#2": "Q2"}.get,
+                                     commemorated={})
+        self.assertEqual([(m["form"], m.get("n"), m["qid"], m.get("role")) for m in ms],
+                         [("Zeno", None, "Q1", None), ("Zenóni", 2, "Q2", "mentioned")])
+
+    def test_commemorated_items_ignore_mentioned_and_the_same_eulogy(self):
+        items = {"mr:1003-duo-ewaldi": {"Willibrordus": {"wikidata": "Q160714", "status": "reviewed"},
+                                        "Ewaldus Niger": {"wikidata": "Q28648434", "status": "reviewed"},
+                                        "Ewaldus Albus": {"wikidata": "Q28648431", "status": "proposed"}},
+                 "mr:1107-willibrordus": {"Willibrordus": {"wikidata": "Q160714", "status": "auto"}}}
+        persons = {
+            "la": {"mr:1003-duo-ewaldi": [{"name": "Ewaldus Niger", "where": "text"},
+                                          {"name": "Ewaldus Albus", "where": "text"},
+                                          {"name": "Willibrordus", "where": "text", "role": "mentioned"}],
+                   "mr:1107-willibrordus": [{"name": "Willibrordus", "where": "text"}]},
+            # The Italian edition's curated marks name him without the role: still mentioned there.
+            "it": {"mr:1003-duo-ewaldi": [{"name": "Willibrordus", "where": "text"}],
+                   "mr:1107-willibrordus": [{"name": "Willibrordus", "where": "text"}]}}
+        self.assertEqual(em.commemorated_items(persons, items),
+                         {"Q160714": ["mr:1107-willibrordus"], "Q28648434": ["mr:1003-duo-ewaldi"]})
+
+    def test_commemorated_items_count_the_others_of_a_mark(self):
+        items = {"mr:x": {"Anastasius#2": {"wikidata": "Q2", "status": "reviewed"}}}
+        persons = {"it": {"mr:x": [{"name": "Anastasius", "others": [{"name": "Anastasius", "n": 2}]}]}}
+        self.assertEqual(em.commemorated_items(persons, items), {"Q2": ["mr:x"]})
+
+    def test_a_mentioned_mark_writes_its_role_and_eulogies_and_reads_back_without_them(self):
+        m = {"kind": "person", "where": "text", "start": 39, "end": 60, "form": "Ambrósio Mediolanénsi",
+             "name": "Ambrosius", "qid": "Q43746", "role": "mentioned", "commemorated_in": ["mr:1207-ambrosius"]}
+        out = em.to_file(m, self.TEXT)
+        self.assertEqual(list(out), ["kind", "where", "start", "end", "check", "name", "qid", "role",
+                                     "commemorated_in"])
+        self.assertEqual(out["commemorated_in"], ["mr:1207-ambrosius"])
+        # Derived at each extraction: a curated list written from the file does not keep them.
+        back = em.from_file(out, self.TEXT)
+        self.assertNotIn("role", back)
+        self.assertNotIn("commemorated_in", back)
+
+    def test_validate_accepts_only_a_person_mentioned_with_its_eulogies(self):
+        m = {"kind": "person", "where": "text", "start": 39, "end": 60, "form": "Ambrósio Mediolanénsi",
+             "name": "Ambrosius", "qid": "Q43746", "role": "mentioned", "commemorated_in": []}
+        check = lambda m: em.validate({"ed": {"mr:x": [m]}}, lambda e, i, w: self.TEXT)
+        self.assertEqual(check(m), [])
+        self.assertTrue(check(dict(m, role="commemorated")))
+        self.assertTrue(check({k: v for k, v in m.items() if k != "commemorated_in"}))
+        self.assertTrue(check({k: v for k, v in m.items() if k != "role"}))
+
+    def build_bassianus(self, places=None):
+        mrid = "mr:0119-bassianus"
+        persons = {mrid: [{"name": "Bassianus", "where": "text"},
+                          {"name": "Ambrosius", "where": "text", "role": "mentioned"}]}
+        items = {mrid: {"Bassianus": {"wikidata": "Q1289858", "status": "reviewed"},
+                        "Ambrosius": {"wikidata": "Q43746", "status": "reviewed"}}}
+        mentioned = {mrid: [{"name": "Ambrosius", "where": "text", "la": ["Ambrósio Mediolanénsi"]}]}
+        gazetteer = {"Mediolanénsi": {"wikidata": "Q490", "status": "auto"}}
+        return em.build_edition("la", {mrid: self.TEXT}, {}, places or {}, persons, gazetteer, items, {},
+                                mentioned=mentioned, commemorated={"Q43746": ["mr:1207-ambrosius"]})
+
+    def test_build_edition_marks_the_mentioned_by_phrase_not_by_matching(self):
+        out, review, counts = self.build_bassianus()
+        self.assertEqual([(m["form"], m.get("role"), m.get("commemorated_in")) for m in out["mr:0119-bassianus"]],
+                         [("Bassiáni", None, None), ("Ambrósio Mediolanénsi", "mentioned", ["mr:1207-ambrosius"])])
+        self.assertEqual(review, {})
+        self.assertEqual(counts["found"][("person", True, "mentioned")], 1)
+        self.assertEqual(counts.get("mentioned_errors"), [])
+
+    def test_build_edition_reports_a_place_inside_a_mentioned_name(self):
+        _, _, counts = self.build_bassianus(
+            {"mr:0119-bassianus": [{"role": "mention", "la": "Mediolanénsi", "it": "Milano", "source": "curated"}]})
+        self.assertEqual(counts["mentioned_errors"], [
+            "mr:0119-bassianus: a place mark (Q490) lies inside a mentioned person's name; "
+            "remove it from data/places_curated.json"])
+
+    def test_bassianus_lists_no_milan(self):
+        root = Path(__file__).resolve().parent.parent
+        places = json.loads((root / "data" / "places.json").read_text(encoding="utf-8"))["places"]
+        self.assertNotIn("Mediolanénsi", [p["la"] for p in places["mr:0119-bassianus-laudis-pompeiae"]])
+
+
 if __name__ == "__main__":
     unittest.main()
