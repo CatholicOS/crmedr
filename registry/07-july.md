@@ -305,7 +305,7 @@
 | 21 | 7 | `mr:0721-albericus-crescitelli` |  | CN | dies_natalis |  |  |
 | 21 | 8 | `mr:0721-iosephus-wang-yumei` |  | CN | dies_natalis |  | 2004 English: Translation error: "Yomenienina" where the Latin "Iomnienínam" is the city of Yongnian. |
 | 22 | (1) | `mr:0722-maria-magdalena` |  | PS | dies_natalis |  | By decree of 3 June 2016 the celebration of Mary Magdalene in the General Roman Calendar was raised from an obligatory memorial to a feast. |
-| 22 | 2 | `mr:0722-platon-ancyrae` |  | TR | dies_natalis |  |  |
+| 22 | 2 | `mr:0722-plato-ancyrae` |  | TR | dies_natalis |  |  |
 | 22 | 3 | `mr:0722-martyres-massilitani` |  | TN | dies_natalis |  | The African home of the Massylitan martyrs (Massilitani), on whom Augustine preached, is unknown; it is not Marseille. 2004 English: Translation error: "of Massilia" (Marseilles) where the Latin "Massilitanórum" denotes the African Massylitan martyrs. |
 | 22 | 4 | `mr:0722-cyrillus-antiochiae` |  | TR | dies_natalis |  |  |
 | 22 | 5 | `mr:0722-anastasius-suaniae` |  | GE | dies_natalis |  |  |
