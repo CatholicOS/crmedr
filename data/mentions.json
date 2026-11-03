@@ -6436,6 +6436,19 @@
               "role": "journey"
             }
           ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 240,
+          "end": 247,
+          "check": "031d9e05",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
         }
       ],
       "mr:0115-franciscus-fernandez-de-capillas": [
@@ -187365,6 +187378,19 @@
           "roles": [
             {
               "role": "religious_life"
+            }
+          ]
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 242,
+          "end": 247,
+          "check": "4a3defbe",
+          "qid": "Q456",
+          "roles": [
+            {
+              "role": "death"
             }
           ]
         },

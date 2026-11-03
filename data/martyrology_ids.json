@@ -5830,6 +5830,17 @@
           "wikidata": "Q749031",
           "label": "Manglieu",
           "country": "FR"
+        },
+        {
+          "role": "death",
+          "la": "Lugdúni",
+          "it": "Lione",
+          "source": "curated",
+          "occurrence": 2,
+          "occurrence_it": 2,
+          "wikidata": "Q456",
+          "label": "Lyon",
+          "country": "FR"
         }
       ],
       "date": {
