@@ -138,7 +138,9 @@ class ItalianEulogyTest(unittest.TestCase):
         ms, _, hows = em.eulogy_mentions("Presso Ringsted, san Canuto, detto Lavard: duca.", [], [],
                                          ps["mr:0107-canutus-lavard"], lang="it", place_qid=lambda la: None,
                                          person_qid=lambda key: None)
-        self.assertEqual([m["form"] for m in ms], ["Canuto"])
+        # Found by the given name; "Lavard", the rest of his name (Canute Lavard) after "detto", is its
+        # second piece, as the Latin marks "Canúti … Lavard".
+        self.assertEqual([m["form"] for m in ms], ["Canuto", "Lavard"])
         self.assertIn(("person", True, "given name"), hows)
 
     def test_a_list_name_not_found_is_proposed_by_its_place_in_the_list(self):
