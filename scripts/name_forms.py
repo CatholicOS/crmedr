@@ -72,6 +72,8 @@ def harvest(persons, subjects):
     each eulogy (`persons`: {eulogy: [person]}) and its subject in each language (`subjects`:
     {language: {eulogy: subject}})."""
     counts = {lang: defaultdict(Counter) for lang in LANGUAGES}
+    # The persons a eulogy only mentions are neither its subject nor names the Martyrology gives.
+    persons = {mrid: [p for p in ps if p.get("role") != "mentioned"] for mrid, ps in persons.items()}
     # Every person's first name, in a footnote list too: a form like one of them is that name.
     latin_names = {name_key(p["name"].split()[0]) for ps in persons.values() for p in ps if p["name"].split()}
     for mrid, ps in persons.items():

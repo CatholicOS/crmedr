@@ -78,15 +78,18 @@ def check_unique(entries):
     return [("unique", [mrid], f"used {n} times") for mrid, n in sorted(seen.items()) if n > 1]
 
 
-def single_subjects(subjects, person_items):
-    """mrid -> Wikidata item of the eulogy's one subject, when the subject names one linked person."""
-    from persons_text import subject_names
+def single_subjects(subjects, person_items, mentioned=None):
+    """mrid -> Wikidata item of the eulogy's one subject, when the subject names one linked person.
+    mentioned (data/persons_mentioned.json by eulogy): the records of persons a eulogy only mentions
+    never stand for its subject."""
+    from persons_text import person_key, subject_names
     out = {}
     for mrid, subject in subjects.items():
         names = subject_names(mrid, subject) if subject else []
         if len(names) != 1:
             continue
-        records = person_items.get(mrid) or {}
+        others = {person_key(p) for p in (mentioned or {}).get(mrid, [])}
+        records = {k: v for k, v in (person_items.get(mrid) or {}).items() if k not in others}
         record = records.get(names[0])
         if record is None and len(records) == 1:  # the subject printed in another form
             record = next(iter(records.values()))
@@ -175,7 +178,8 @@ def lint(root=ROOT, texts_repo=None):
     subjects = {k: v for k, v in name_subjects(root, "la").items() if k in current}
     person_items = json.loads((root / "data/person_items.json").read_text(encoding="utf-8"))["persons"]
     found = check_grammar([e["id"] for e in entries]) + check_unique(entries)
-    subject_qids = single_subjects(subjects, person_items)
+    mentioned = json.loads((root / "data/persons_mentioned.json").read_text(encoding="utf-8"))
+    subject_qids = single_subjects(subjects, person_items, mentioned)
     found += check_same_subject(subject_qids) + check_twins(entries, current)
     found += check_bare(subjects)
     if texts_repo:

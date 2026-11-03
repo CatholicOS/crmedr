@@ -42,6 +42,20 @@ class SameSubjectTest(unittest.TestCase):
         person_items["mr:0312-gregorius-magnus"]["Petrus"] = {"wikidata": "Q1"}
         self.assertEqual(l.single_subjects(subjects, person_items), {})
 
+    def test_a_mentioned_persons_record_never_stands_for_the_subject(self):
+        subjects = {"mr:0609-maximianus-syracusis": "Sanctus Maximianus"}
+        person_items = {"mr:0609-maximianus-syracusis": {"Gregorius Magnus": {"wikidata": "Q42827"}}}
+        mentioned = {"mr:0609-maximianus-syracusis": [{"name": "Gregorius Magnus", "where": "text"}]}
+        self.assertEqual(l.single_subjects(subjects, person_items, mentioned), {})
+
+    def test_a_mentioned_namesake_leaves_the_subjects_record(self):
+        subjects = {"mr:0819-ludovicus-tolosae": "Sanctus Ludovicus"}
+        person_items = {"mr:0819-ludovicus-tolosae": {"Ludovicus": {"wikidata": "Q196157"},
+                                                      "Ludovicus#2": {"wikidata": "Q7742"}}}
+        mentioned = {"mr:0819-ludovicus-tolosae": [{"name": "Ludovicus", "n": 2, "where": "text"}]}
+        self.assertEqual(l.single_subjects(subjects, person_items, mentioned),
+                         {"mr:0819-ludovicus-tolosae": "Q196157"})
+
     def test_a_deprecated_twin_with_another_slug_is_a_warning(self):
         entries = [{"id": "mr:0528-augustinus", "deprecated": True, "same_eulogy": ["mr:0527-augustinus-cantuariensis"]}]
         found = l.check_twins(entries, {"mr:0527-augustinus-cantuariensis": (5, 27)})

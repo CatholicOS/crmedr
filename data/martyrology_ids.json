@@ -14228,15 +14228,6 @@
           "wikidata": "Q131329",
           "label": "Arras",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Reménsi",
-          "it": "Reims",
-          "source": "curated",
-          "wikidata": "Q41876",
-          "label": "Reims",
-          "country": "FR"
         }
       ],
       "date": {
@@ -15984,15 +15975,6 @@
           "wikidata": "Q720478",
           "label": "Fosses-la-Ville",
           "country": "BE"
-        },
-        {
-          "role": "mention",
-          "la": "Magdeburgénsis",
-          "it": "Magdeburgo",
-          "source": "curated",
-          "wikidata": "Q1733",
-          "label": "Magdeburg",
-          "country": "DE"
         }
       ],
       "date": {
@@ -16516,15 +16498,6 @@
           "country": "TR"
         },
         {
-          "role": "mention",
-          "la": "Nyssénus",
-          "it": "Nissa",
-          "source": "curated",
-          "wikidata": "Q3563362",
-          "label": "Nyssa",
-          "country": "TR"
-        },
-        {
           "role": "ministry",
           "la": "Antiochéni",
           "it": "Antiochia",
@@ -16620,15 +16593,6 @@
           "source": "lead",
           "wikidata": "Q128100",
           "label": "Jully",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Claravallénsi",
-          "it": "Chiaravalle",
-          "source": "curated",
-          "wikidata": "Q647070",
-          "label": "Clairvaux Abbey",
           "country": "FR"
         }
       ],
@@ -17150,15 +17114,6 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Constantinopolitáno",
-          "it": "Costantinopoli",
-          "source": "curated",
-          "wikidata": "Q406",
-          "label": "Istanbul",
-          "country": "TR"
         },
         {
           "role": "ministry",
@@ -18061,15 +18016,6 @@
           "wikidata": "Q170532",
           "label": "Amasya",
           "country": "TR"
-        },
-        {
-          "role": "mention",
-          "la": "Nyssénus",
-          "it": "Nissa",
-          "source": "curated",
-          "wikidata": "Q3563362",
-          "label": "Nyssa",
-          "country": "TR"
         }
       ],
       "date": {
@@ -18095,15 +18041,6 @@
           "wikidata": "Q3138",
           "label": "Trier",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Pictaviénsi",
-          "it": "Poitiers",
-          "source": "curated",
-          "wikidata": "Q6616",
-          "label": "Poitiers",
-          "country": "FR"
         },
         {
           "role": "ministry",
@@ -24865,15 +24802,6 @@
           "source": "lead",
           "wikidata": "Q90",
           "label": "Paris",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Augustodunénsi",
-          "it": "Autun",
-          "source": "curated",
-          "wikidata": "Q190827",
-          "label": "Autun",
           "country": "FR"
         }
       ],
@@ -35073,15 +35001,6 @@
           "wikidata": "Q31487",
           "label": "Kraków",
           "country": "PL"
-        },
-        {
-          "role": "mention",
-          "la": "Polóniæ",
-          "it": "Polonia",
-          "source": "curated",
-          "wikidata": "Q36",
-          "label": "Poland",
-          "country": "PL"
         }
       ],
       "date": {
@@ -35710,15 +35629,6 @@
           "source": "lead",
           "wikidata": "Q55673962",
           "label": "Abbey of La Trinità della Cava",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Salernitáni",
-          "it": "Salerno",
-          "source": "curated",
-          "wikidata": "Q1083",
-          "label": "Salerno",
           "country": "IT"
         },
         {
@@ -38516,15 +38426,6 @@
           "wikidata": "Q15",
           "label": "Africa",
           "country": null
-        },
-        {
-          "role": "mention",
-          "la": "Vercellénsi",
-          "it": "Vercelli",
-          "source": "curated",
-          "wikidata": "Q5990",
-          "label": "Vercelli",
-          "country": "IT"
         }
       ],
       "date": {
@@ -39267,15 +39168,6 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Corínthius",
-          "it": "Corinto",
-          "source": "curated",
-          "wikidata": "Q103011",
-          "label": "Corinth",
-          "country": "GR"
         }
       ],
       "date": {
@@ -44316,24 +44208,6 @@
           "wikidata": "Q3138",
           "label": "Trier",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Mediolanénsi",
-          "it": "Milano",
-          "source": "curated",
-          "wikidata": "Q490",
-          "label": "Milan",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsi",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -44880,15 +44754,6 @@
           "wikidata": "Q1492",
           "label": "Barcelona",
           "country": "ES"
-        },
-        {
-          "role": "mention",
-          "la": "Aragóniæ",
-          "it": "Aragona",
-          "source": "curated",
-          "wikidata": "Q199442",
-          "label": "Kingdom of Aragon",
-          "country": "ES"
         }
       ],
       "date": {
@@ -45187,25 +45052,6 @@
           "wikidata": "Q1476",
           "label": "Le Mans",
           "country": "FR"
-        },
-        {
-          "role": "journey",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
-        },
-        {
-          "role": "journey",
-          "la": "Cenomanénsis",
-          "it": "Le Mans",
-          "source": "curated",
-          "occurrence_it": 2,
-          "wikidata": "Q1476",
-          "label": "Le Mans",
-          "country": "FR"
         }
       ],
       "date": {
@@ -45274,15 +45120,6 @@
           "wikidata": "Q1775718",
           "label": "Kloster Niedernburg",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Hungáriæ",
-          "it": "Ungheria",
-          "source": "curated",
-          "wikidata": "Q28",
-          "label": "Hungary",
-          "country": "HU"
         }
       ],
       "date": {
@@ -47472,15 +47309,6 @@
           "country": "FR"
         },
         {
-          "role": "mention",
-          "la": "Parisiénsis",
-          "it": "Parigi",
-          "source": "curated",
-          "wikidata": "Q90",
-          "label": "Paris",
-          "country": "FR"
-        },
-        {
           "role": "religious_life",
           "la": "monastérium Sanctæ Crucis",
           "it": "monastero della Santa Croce",
@@ -47807,15 +47635,6 @@
           "via": "mr:0514-aprunculus-lingonensis",
           "wikidata": "Q42168",
           "label": "Clermont-Ferrand",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
           "country": "FR"
         }
       ],
@@ -50399,15 +50218,6 @@
           "wikidata": "Q6593",
           "label": "Vannes",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsi",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -50782,15 +50592,6 @@
           "wikidata": "Q2683",
           "label": "Parma",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Cluniacénsis",
-          "it": "Cluny",
-          "source": "curated",
-          "wikidata": "Q220301",
-          "label": "Cluny Abbey",
-          "country": "FR"
         }
       ]
     },
@@ -52656,15 +52457,6 @@
           "wikidata": "Q29303",
           "label": "Canterbury",
           "country": "GB"
-        },
-        {
-          "role": "mention",
-          "la": "Cántiæ",
-          "it": "Kent",
-          "source": "curated",
-          "wikidata": "Q23298",
-          "label": "Kent",
-          "country": "GB"
         }
       ],
       "date": {
@@ -53042,15 +52834,6 @@
           "wikidata": "Q981723",
           "label": "Saint-Guilhem-le-Désert Abbey",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Anianénsi",
-          "it": "Aniane",
-          "source": "curated",
-          "wikidata": "Q1215739",
-          "label": "Royal abbey of Aniane",
-          "country": "FR"
         }
       ],
       "date": {
@@ -53424,15 +53207,6 @@
           "wikidata": "Q6616",
           "label": "Poitiers",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Alexandrínum",
-          "it": "Alessandria",
-          "source": "curated",
-          "wikidata": "Q87",
-          "label": "Alexandria",
-          "country": "EG"
         },
         {
           "role": "birth",
@@ -53871,24 +53645,6 @@
           "source": "curated",
           "wikidata": "Q621672",
           "label": "Pontus",
-          "country": "TR"
-        },
-        {
-          "role": "mention",
-          "la": "Nysséni",
-          "it": "Nissa",
-          "source": "curated",
-          "wikidata": "Q3563362",
-          "label": "Nyssa",
-          "country": "TR"
-        },
-        {
-          "role": "mention",
-          "la": "Sebasténsis",
-          "it": "Sivas",
-          "source": "curated",
-          "wikidata": "Q107401",
-          "label": "Sivas",
           "country": "TR"
         }
       ],
@@ -58601,15 +58357,6 @@
             "IL",
             "PS"
           ]
-        },
-        {
-          "role": "mention",
-          "la": "Tarsénsem",
-          "it": "Tarso",
-          "source": "curated",
-          "wikidata": "Q134287",
-          "label": "Tarsus",
-          "country": "TR"
         }
       ],
       "date": {
@@ -60506,15 +60253,6 @@
           "wikidata": "Q12191",
           "label": "Nantes",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -61310,15 +61048,6 @@
           "wikidata": "Q1479",
           "label": "Bordeaux",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Nolánum",
-          "it": "Nola",
-          "source": "curated",
-          "wikidata": "Q72288",
-          "label": "Nola",
-          "country": "IT"
         }
       ],
       "date": {
@@ -62598,15 +62327,6 @@
           "wikidata": "Q1135157",
           "label": "Remesiana",
           "country": "RS"
-        },
-        {
-          "role": "mention",
-          "la": "Nolánus",
-          "it": "Nola",
-          "source": "curated",
-          "wikidata": "Q72288",
-          "label": "Nola",
-          "country": "IT"
         }
       ],
       "date": {
@@ -63493,15 +63213,6 @@
           "wikidata": "Q207989",
           "label": "Southern Italy",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Materanénsi",
-          "it": "Matera",
-          "source": "curated",
-          "wikidata": "Q13616",
-          "label": "Matera",
-          "country": "IT"
         }
       ],
       "date": {
@@ -63666,15 +63377,6 @@
           "source": "lead",
           "wikidata": "Q3376",
           "label": "Trento",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Mediolanénsi",
-          "it": "Milano",
-          "source": "curated",
-          "wikidata": "Q490",
-          "label": "Milan",
           "country": "IT"
         }
       ],
@@ -64395,15 +64097,6 @@
           "wikidata": "Q456",
           "label": "Lyon",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Smyrnénsis",
-          "it": "Smirne",
-          "source": "curated",
-          "wikidata": "Q35997",
-          "label": "İzmir",
-          "country": "TR"
         }
       ],
       "date": {
@@ -65548,15 +65241,6 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
-        },
-        {
-          "role": "ministry",
-          "la": "Leonénsi",
-          "it": "Léon",
-          "source": "curated",
-          "wikidata": "Q12178",
-          "label": "Pays de Léon",
-          "country": "FR"
         }
       ],
       "date": {
@@ -66216,15 +65900,6 @@
           "wikidata": "Q441542",
           "label": "Altinum",
           "country": "IT"
-        },
-        {
-          "role": "education",
-          "la": "Aquileiénsis",
-          "it": "Aquileia",
-          "source": "curated",
-          "wikidata": "Q53216",
-          "label": "Aquileia",
-          "country": "IT"
         }
       ],
       "date": {
@@ -66565,15 +66240,6 @@
           "wikidata": "Q23047",
           "label": "Cahors",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Nolánus",
-          "it": "Nola",
-          "source": "curated",
-          "wikidata": "Q72288",
-          "label": "Nola",
-          "country": "IT"
         }
       ]
     },
@@ -67414,15 +67080,6 @@
           "wikidata": "Q220",
           "label": "Rome",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Autissiodorénsis",
-          "it": "Auxerre",
-          "source": "curated",
-          "wikidata": "Q167600",
-          "label": "Auxerre",
-          "country": "FR"
         }
       ],
       "date": {
@@ -70410,15 +70067,6 @@
           "country": "IQ"
         },
         {
-          "role": "mention",
-          "la": "Persárum",
-          "it": "persiano",
-          "source": "curated",
-          "wikidata": "Q389688",
-          "label": "Achaemenid Empire",
-          "country": "IR"
-        },
-        {
           "role": "ministry",
           "la": "Israel",
           "it": "Israele",
@@ -70518,15 +70166,6 @@
           "source": "lead",
           "wikidata": "Q169974",
           "label": "Akşehir",
-          "country": "TR"
-        },
-        {
-          "role": "mention",
-          "la": "Antiochíæ Pisídiæ",
-          "it": "Antiochia di Pisidia",
-          "source": "curated",
-          "wikidata": "Q579468",
-          "label": "Antioch of Pisidia",
           "country": "TR"
         }
       ]
@@ -70962,15 +70601,6 @@
           "source": "lead",
           "wikidata": "Q6221",
           "label": "Brescia",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Mediolanénsi",
-          "it": "Milano",
-          "source": "curated",
-          "wikidata": "Q490",
-          "label": "Milan",
           "country": "IT"
         }
       ],
@@ -72916,15 +72546,6 @@
         },
         {
           "role": "mention",
-          "la": "Lithuániæ",
-          "it": "lituano",
-          "source": "curated",
-          "wikidata": "Q49683",
-          "label": "Grand Duchy of Lithuania",
-          "country": "LT"
-        },
-        {
-          "role": "mention",
           "la": "Polóniæ",
           "it": "Polonia",
           "source": "curated",
@@ -73212,23 +72833,6 @@
           "wikidata": "Q187843",
           "label": "Vosges Mountains",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Austrásiæ",
-          "it": "Austrasia",
-          "source": "curated",
-          "occurrence_it": 2,
-          "wikidata": "Q105098",
-          "label": "Austrasia",
-          "country": null,
-          "countries": [
-            "FR",
-            "DE",
-            "BE",
-            "LU",
-            "NL"
-          ]
         }
       ],
       "date": {
@@ -73905,19 +73509,6 @@
           "wikidata": "Q185318",
           "label": "Mount Carmel",
           "country": "IL"
-        },
-        {
-          "role": "mention",
-          "la": "Israel",
-          "it": "Israele",
-          "source": "curated",
-          "wikidata": "Q155321",
-          "label": "Land of Israel",
-          "country": null,
-          "countries": [
-            "IL",
-            "PS"
-          ]
         }
       ],
       "date": {
@@ -74716,15 +74307,6 @@
           "source": "curated",
           "wikidata": "Q334243",
           "label": "Royal Abbey of Saint Wandrille",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Rothomagénsi",
-          "it": "Rouen",
-          "source": "curated",
-          "wikidata": "Q30974",
-          "label": "Rouen",
           "country": "FR"
         }
       ],
@@ -78266,15 +77848,6 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Autissiodorénsi",
-          "it": "Auxerre",
-          "source": "curated",
-          "wikidata": "Q167600",
-          "label": "Auxerre",
-          "country": "FR"
         }
       ],
       "date": {
@@ -80565,15 +80138,6 @@
           "source": "curated",
           "wikidata": "Q14627585",
           "label": "Abbey of St. Symphorian, Autun",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
           "country": "FR"
         }
       ],
@@ -83882,15 +83446,6 @@
           "wikidata": "Q181285",
           "label": "Cambrai",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Trevirénsi",
-          "it": "Treviri",
-          "source": "curated",
-          "wikidata": "Q3138",
-          "label": "Trier",
-          "country": "DE"
         }
       ],
       "date": {
@@ -84804,15 +84359,6 @@
           "wikidata": "Q1236115",
           "label": "Altenberg Abbey, Solms",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Hungáriæ",
-          "it": "Ungheria",
-          "source": "curated",
-          "wikidata": "Q28",
-          "label": "Hungary",
-          "country": "HU"
         }
       ],
       "date": {
@@ -91067,15 +90613,6 @@
           "country": "FR"
         },
         {
-          "role": "mention",
-          "la": "Reiénsis",
-          "it": "Riez",
-          "source": "curated",
-          "wikidata": "Q457002",
-          "label": "Riez",
-          "country": "FR"
-        },
-        {
           "role": "birth",
           "la": "hispánus",
           "it": "spagnola",
@@ -91667,15 +91204,6 @@
           "source": "lead",
           "wikidata": "Q16869",
           "label": "Constantinople",
-          "country": "TR"
-        },
-        {
-          "role": "mention",
-          "la": "Nazianzénus",
-          "it": "Nazianzo",
-          "source": "curated",
-          "wikidata": "Q1336978",
-          "label": "Nazianzus",
           "country": "TR"
         }
       ],
@@ -93460,15 +92988,6 @@
           "wikidata": "Q1476",
           "label": "Le Mans",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -94051,19 +93570,6 @@
           "wikidata": "Q185318",
           "label": "Mount Carmel",
           "country": "IL"
-        },
-        {
-          "role": "mention",
-          "la": "Hierosolymitánus",
-          "it": "Gerusalemme",
-          "source": "curated",
-          "wikidata": "Q1218",
-          "label": "Jerusalem",
-          "country": null,
-          "countries": [
-            "IL",
-            "PS"
-          ]
         }
       ],
       "date": {
@@ -95944,15 +95450,6 @@
           "source": "lead",
           "wikidata": "Q47135",
           "label": "Châlons-en-Champagne",
-          "country": "FR"
-        },
-        {
-          "role": "education",
-          "la": "Trecénsis",
-          "it": "Troyes",
-          "source": "curated",
-          "wikidata": "Q5489",
-          "label": "Troyes",
           "country": "FR"
         }
       ],
@@ -98488,15 +97985,6 @@
           "wikidata": "Q264416",
           "label": "Chalonnes-sur-Loire",
           "country": "FR"
-        },
-        {
-          "role": "journey",
-          "la": "Turonénsem",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -99623,15 +99111,6 @@
           "source": "lead",
           "wikidata": "Q470839",
           "label": "Nuceria",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Nolánus",
-          "it": "Nola",
-          "source": "curated",
-          "wikidata": "Q72288",
-          "label": "Nola",
           "country": "IT"
         }
       ]
@@ -102142,15 +101621,6 @@
           "wikidata": "Q69545",
           "label": "Saint-Maurice",
           "country": "CH"
-        },
-        {
-          "role": "mention",
-          "la": "Lugdunénsis",
-          "it": "Lione",
-          "source": "curated",
-          "wikidata": "Q456",
-          "label": "Lyon",
-          "country": "FR"
         }
       ],
       "date": {
@@ -106393,15 +105863,6 @@
           "wikidata": "Q3138",
           "label": "Trier",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsi",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ],
       "date": {
@@ -107296,15 +106757,6 @@
           "wikidata": "Q44160",
           "label": "Toulon",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Arelaténsis",
-          "it": "Arles",
-          "source": "curated",
-          "wikidata": "Q48292",
-          "label": "Arles",
-          "country": "FR"
         }
       ],
       "date": {
@@ -107868,16 +107320,6 @@
           "wikidata": "Q8848",
           "label": "Valence",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Viennénsis",
-          "it": "Vienne",
-          "source": "curated",
-          "occurrence_it": 2,
-          "wikidata": "Q26849",
-          "label": "Vienne",
-          "country": "FR"
         }
       ],
       "date": {
@@ -108115,15 +107557,6 @@
           "wikidata": "Q2090",
           "label": "Nuremberg",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Senénsis",
-          "it": "Siena",
-          "source": "curated",
-          "wikidata": "Q2751",
-          "label": "Siena",
-          "country": "IT"
         }
       ],
       "date": {
@@ -108578,15 +108011,6 @@
           "wikidata": "Q327",
           "label": "Brittany",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Lindisfarnénsis",
-          "it": "Lindisfarne",
-          "source": "curated",
-          "wikidata": "Q213804",
-          "label": "Lindisfarne",
-          "country": "GB"
         }
       ],
       "date": {
@@ -109185,15 +108609,6 @@
           "source": "lead",
           "wikidata": "Q1308",
           "label": "Como",
-          "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Mediolanénsi",
-          "it": "Milano",
-          "source": "curated",
-          "wikidata": "Q490",
-          "label": "Milan",
           "country": "IT"
         }
       ],
@@ -110011,15 +109426,6 @@
           "wikidata": "Q42462",
           "label": "York",
           "country": "GB"
-        },
-        {
-          "role": "ministry",
-          "la": "Northúmbriæ",
-          "it": "Northumbria",
-          "source": "curated",
-          "wikidata": "Q107299",
-          "label": "Kingdom of Northumbria",
-          "country": "GB"
         }
       ],
       "date": {
@@ -110429,15 +109835,6 @@
           "source": "lead",
           "wikidata": "Q216966",
           "label": "Uzès",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Arelaténsis",
-          "it": "Arles",
-          "source": "curated",
-          "wikidata": "Q48292",
-          "label": "Arles",
           "country": "FR"
         }
       ],
@@ -111973,24 +111370,6 @@
           "wikidata": "Q3240725",
           "label": "Britannia",
           "country": "GB"
-        },
-        {
-          "role": "mention",
-          "la": "Autissiodorénsi",
-          "it": "Auxerre",
-          "source": "curated",
-          "wikidata": "Q167600",
-          "label": "Auxerre",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Trecénsis",
-          "it": "Troyes",
-          "source": "curated",
-          "wikidata": "Q5489",
-          "label": "Troyes",
-          "country": "FR"
         },
         {
           "role": "ministry",
@@ -114339,24 +113718,6 @@
           "wikidata": "Q167141",
           "label": "Laon",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Reménsis",
-          "it": "Reims",
-          "source": "curated",
-          "wikidata": "Q41876",
-          "label": "Reims",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Suessionénsis",
-          "it": "Soissons",
-          "source": "curated",
-          "wikidata": "Q167152",
-          "label": "Soissons",
-          "country": "FR"
         }
       ],
       "date": {
@@ -114846,15 +114207,6 @@
           "source": "lead",
           "wikidata": "Q11967",
           "label": "Huesca",
-          "country": "ES"
-        },
-        {
-          "role": "mention",
-          "la": "Cordubénsis",
-          "it": "Córdova",
-          "source": "curated",
-          "wikidata": "Q5818",
-          "label": "Córdoba",
           "country": "ES"
         }
       ],
@@ -115664,15 +115016,6 @@
           "wikidata": "Q328077",
           "label": "Vertou",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Nanneténsis",
-          "it": "Nantes",
-          "source": "curated",
-          "wikidata": "Q12191",
-          "label": "Nantes",
-          "country": "FR"
         }
       ],
       "date": {
@@ -115741,15 +115084,6 @@
           "source": "lead",
           "wikidata": "Q327",
           "label": "Brittany",
-          "country": "FR"
-        },
-        {
-          "role": "ministry",
-          "la": "Dolénsi",
-          "it": "Dol",
-          "source": "curated",
-          "wikidata": "Q318432",
-          "label": "Dol-de-Bretagne",
           "country": "FR"
         },
         {
@@ -117357,15 +116691,6 @@
           "wikidata": "Q26849",
           "label": "Vienne",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Arelaténsis",
-          "it": "Arles",
-          "source": "curated",
-          "wikidata": "Q48292",
-          "label": "Arles",
-          "country": "FR"
         }
       ],
       "date": {
@@ -118451,15 +117776,6 @@
           "occurrence_it": 2,
           "wikidata": "Q250584",
           "label": "Morini",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Luxoviénsis",
-          "it": "Luxeuil",
-          "source": "curated",
-          "wikidata": "Q1232116",
-          "label": "Luxeuil Abbey",
           "country": "FR"
         }
       ],
@@ -119738,15 +119054,6 @@
           "wikidata": "Q21294262",
           "label": "St. Irmine Abbey",
           "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Nivellénsi",
-          "it": "Nivelles",
-          "source": "curated",
-          "wikidata": "Q120586",
-          "label": "Nivelles Abbey",
-          "country": "BE"
         }
       ],
       "date": {
@@ -119774,16 +119081,6 @@
           "source": "lead",
           "wikidata": "Q130212",
           "label": "Székesfehérvár",
-          "country": "HU"
-        },
-        {
-          "role": "mention",
-          "la": "Hungarórum",
-          "it": "Ungheria",
-          "source": "curated",
-          "occurrence_it": 2,
-          "wikidata": "Q133032",
-          "label": "Hungarians",
           "country": "HU"
         }
       ],
@@ -122171,15 +121468,6 @@
           "wikidata": "Q142",
           "label": "France",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Pictaviénsi",
-          "it": "Poitiers",
-          "source": "curated",
-          "wikidata": "Q6616",
-          "label": "Poitiers",
-          "country": "FR"
         }
       ],
       "date": {
@@ -122239,15 +121527,6 @@
           "source": "curated",
           "wikidata": "Q334008",
           "label": "Abbaye Saint-Honorat de Lérins",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Lugdunénsis",
-          "it": "Lione",
-          "source": "curated",
-          "wikidata": "Q456",
-          "label": "Lyon",
           "country": "FR"
         }
       ],
@@ -122610,15 +121889,6 @@
           "source": "lead",
           "wikidata": "Q26849",
           "label": "Vienne",
-          "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Valentinénsis",
-          "it": "Valence",
-          "source": "curated",
-          "wikidata": "Q8848",
-          "label": "Valence",
           "country": "FR"
         }
       ],
@@ -123120,15 +122390,6 @@
           "wikidata": "Q188780",
           "label": "Rodez",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Turonénsis",
-          "it": "Tours",
-          "source": "curated",
-          "wikidata": "Q288",
-          "label": "Tours",
-          "country": "FR"
         }
       ]
     },
@@ -123596,15 +122857,6 @@
           "wikidata": "Q1761",
           "label": "Dublin",
           "country": "IE"
-        },
-        {
-          "role": "mention",
-          "la": "Angliæ",
-          "it": "Inghilterra",
-          "source": "curated",
-          "wikidata": "Q179876",
-          "label": "Kingdom of England",
-          "country": "GB"
         }
       ],
       "date": {
@@ -124379,15 +123631,6 @@
           "wikidata": "Q28",
           "label": "Hungary",
           "country": "HU"
-        },
-        {
-          "role": "mention",
-          "la": "Scótiæ",
-          "it": "Scozia",
-          "source": "curated",
-          "wikidata": "Q22",
-          "label": "Scotland",
-          "country": "GB"
         }
       ],
       "date": {
@@ -124766,15 +124009,6 @@
           "source": "curated",
           "wikidata": "Q3869",
           "label": "Marburg",
-          "country": "DE"
-        },
-        {
-          "role": "mention",
-          "la": "Thuríngiæ",
-          "it": "Turingia",
-          "source": "curated",
-          "wikidata": "Q1205",
-          "label": "Thuringia",
           "country": "DE"
         }
       ],
@@ -130577,15 +129811,6 @@
           "wikidata": "Q1466491",
           "label": "Palmarola",
           "country": "IT"
-        },
-        {
-          "role": "mention",
-          "la": "Constantinopolitánum",
-          "it": "Costantinopoli",
-          "source": "curated",
-          "wikidata": "Q406",
-          "label": "Istanbul",
-          "country": "TR"
         }
       ],
       "date": {
@@ -130786,21 +130011,6 @@
       "asterisk": false,
       "country": "PS",
       "typology": "commemoratio",
-      "places": [
-        {
-          "role": "mention",
-          "la": "Iudæ",
-          "it": "Giuda",
-          "source": "curated",
-          "wikidata": "Q48685",
-          "label": "Kingdom of Judah",
-          "country": null,
-          "countries": [
-            "IL",
-            "PS"
-          ]
-        }
-      ],
       "date": {
         "year": -609,
         "circa": true,
@@ -133968,15 +133178,6 @@
           "wikidata": "Q106577",
           "label": "Neustria",
           "country": "FR"
-        },
-        {
-          "role": "birth",
-          "la": "Armóricæ",
-          "it": "Bretagna",
-          "source": "curated",
-          "wikidata": "Q327",
-          "label": "Brittany",
-          "country": "FR"
         }
       ],
       "date": {
@@ -134763,21 +133964,6 @@
       "asterisk": false,
       "country": "PS",
       "typology": "commemoratio",
-      "places": [
-        {
-          "role": "mention",
-          "la": "Iudæ",
-          "it": "Giuda",
-          "source": "curated",
-          "wikidata": "Q48685",
-          "label": "Kingdom of Judah",
-          "country": null,
-          "countries": [
-            "IL",
-            "PS"
-          ]
-        }
-      ],
       "edition_notes": {
         "martyrologium_romanum_2004_it_IT": "Translation error: \"re di Giuda\" (king of Judah) where the Latin has \"ducis Iudæ\" (leader of Judah); Zerubbabel was governor, not king."
       }
@@ -135484,15 +134670,6 @@
           "wikidata": "Q181238",
           "label": "Africa",
           "country": "TN"
-        },
-        {
-          "role": "mention",
-          "la": "Madaurénsi",
-          "it": "Madaura",
-          "source": "curated",
-          "wikidata": "Q54205",
-          "label": "M'Daourouch",
-          "country": "DZ"
         }
       ]
     },
@@ -136078,21 +135255,6 @@
           "source": "curated",
           "wikidata": "Q155321",
           "label": "Land of Israel",
-          "country": null,
-          "countries": [
-            "IL",
-            "PS"
-          ]
-        },
-        {
-          "role": "mention",
-          "la": "Iudæ",
-          "it": "Giuda",
-          "source": "curated",
-          "occurrence": 1,
-          "occurrence_it": 1,
-          "wikidata": "Q48685",
-          "label": "Kingdom of Judah",
           "country": null,
           "countries": [
             "IL",
@@ -136786,15 +135948,6 @@
           "wikidata": "Q1479",
           "label": "Bordeaux",
           "country": "FR"
-        },
-        {
-          "role": "mention",
-          "la": "Noláno",
-          "it": "Nola",
-          "source": "curated",
-          "wikidata": "Q72288",
-          "label": "Nola",
-          "country": "IT"
         }
       ],
       "date": {
@@ -137966,15 +137119,6 @@
             "IL",
             "PS"
           ]
-        },
-        {
-          "role": "birth",
-          "la": "Bethlehemítæ",
-          "it": "Betlemita",
-          "source": "curated",
-          "wikidata": "Q5776",
-          "label": "Bethlehem",
-          "country": "PS"
         },
         {
           "role": "mention",
