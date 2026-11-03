@@ -94,11 +94,11 @@ def with_surname_after(src, span, ends, taken):
     return span
 
 
-def name_pieces(src, span):
+def name_pieces(src, span, joiner=JOINER):
     """A person's span as the spans of its name words, cut where a joiner stands between two names of
     the person, the joiner and the comma before it left out."""
     pieces, at = [], span[0]
-    for m in JOINER.finditer(src, span[0], span[1]):
+    for m in joiner.finditer(src, span[0], span[1]):
         pieces.append((at, m.start()))
         at = m.end()
     pieces.append((at, span[1]))
@@ -112,6 +112,34 @@ def with_name_before(src, span, taken):
     if not m or not m.group(1)[0].isupper() or not free((m.start(), span[0]), taken):
         return span
     return (m.start(), span[1])
+
+
+# The Italian's joiners of two names of one person: another name after "o" (the Latin's seu), a byname
+# after "detto"/"detta" (the Latin's cognomento), with the byname's article: "Goeríco o Abbone",
+# "Pietro, detto Crisologo", "Sulpicio, detto il Pio", "Giuseppe, detto l’Innografo".
+IT_OTHER_NAME = re.compile(r"\s+o\s+(?:(?:il|lo|la)\s+|l[’'])?")
+IT_BYNAME = re.compile(r"\s*,\s*dett[oa]\s+(?:(?:il|lo|la)\s+|l[’'])?")
+IT_JOINER = re.compile(r"\s*,\s*dett[oa]\s+(?:(?:il|lo|la)\s+|l[’'])?|\s+o\s+(?:(?:il|lo|la)\s+|l[’'])?")
+
+
+def with_italian_bynames(src, span, taken, other_names, byname):
+    """An Italian person's span widened over the byname printed after it ("detto", when the Latin name has
+    one: `byname`) and over the other names after "o" (when the Latin gives the person another name:
+    `other_names`), each a run of capitalized words, unless those words are taken by another mention."""
+    while True:
+        m = (byname and IT_BYNAME.match(src, span[1])) or (other_names and IT_OTHER_NAME.match(src, span[1]))
+        if not m:
+            return span
+        end, pos = None, m.end()
+        while (w := NAME_WORD.match(src, pos)) and w.group(0)[0].isupper():
+            end = w.end()
+            gap = SPACES.match(src, end)
+            if not gap:
+                break
+            pos = gap.end()
+        if end is None or not free((span[1], end), taken):
+            return span
+        span = (span[0], end)
 
 
 def where_key(where):
@@ -275,12 +303,13 @@ def eulogy_mentions(text, notes, places, persons, *, lang, place_qid, person_qid
         span, how, _ = found
         if lang == "it":
             span = with_surname_after(src, span, p.get("ends", []), both)
+            span = with_italian_bynames(src, span, both, p.get("other_names"), len(name.split()) > 1)
         if p.get("also"):
             span = with_variant(src, span, both)  # "Kingae seu Cunegundis": one mention
             if under != name:
                 span = with_name_before(src, span, both)  # found as "Mametis": from "Mamantis seu"
         # Two names of the person printed together are marked as pieces, the joiner left out.
-        for i, piece in enumerate(name_pieces(src, span)):
+        for i, piece in enumerate(name_pieces(src, span, IT_JOINER if lang == "it" else JOINER)):
             add("person", where, piece, how if i == 0 else None, name=name, **({"n": p["n"]} if "n" in p else {}),
                 qid=person_qid(person_key(p)))
 
@@ -1085,6 +1114,8 @@ def italian_persons(persons, names, latin, person_twins, misprints=()):
         out[mrid] = []
         for p in ps:
             q = {k: v for k, v in p.items() if k != "also"}
+            if p.get("also"):
+                q["other_names"] = True  # the Italian's "o": another name of the person, not "or"
             q["forms"], q["ends"] = names.forms(mrid, p["name"]), names.surname(p["name"])
             for intended, printed in misprinted.get((mrid, where_key(p["where"])), []):
                 word = re.compile(rf"(?<!\w){re.escape(intended)}(?!\w)")

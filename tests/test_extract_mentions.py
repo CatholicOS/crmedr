@@ -286,6 +286,42 @@ class RepeatedNamesTest(unittest.TestCase):
             self.assertEqual(review, [])
 
 
+class ItalianBynamesTest(unittest.TestCase):
+    """The Italian prints a person's other name after "o" (the Latin's seu) and a byname after
+    "detto" (the Latin's cognomento): two pieces of one person, the joiner and its article unmarked."""
+
+    def test_another_name_after_o_is_a_second_piece(self):
+        text = "A Metz in Austrasia, san Goeríco o Abbone, vescovo, che succedette a sant’Arnolfo."
+        ms, review, _ = mentions_of(text, persons=[{"name": "Goericus", "forms": ["Goerico"], "other_names": True,
+                                                    "where": "text"}], lang="it")
+        self.assertEqual([(m["form"], m["name"]) for m in ms], [("Goeríco", "Goericus"), ("Abbone", "Goericus")])
+        self.assertEqual(review, [])
+
+    def test_o_without_another_name_in_the_latin_joins_nothing(self):
+        text = "A Roma, san Giovanni o Paolo, martire."
+        ms, _, _ = mentions_of(text, persons=[{"name": "Ioannes", "forms": ["Giovanni"], "where": "text"}], lang="it")
+        self.assertEqual([m["form"] for m in ms], ["Giovanni"])
+
+    def test_a_byname_after_detto_is_a_second_piece_without_its_article(self):
+        for text, forms, name, pieces in (
+                ("A Ravenna, san Pietro, detto Crisologo, vescovo.", ["Pietro Crisologo"], "Petrus Chrysologus",
+                 ["Pietro", "Crisologo"]),
+                ("A Bourges, san Sulpicio, detto il Pio, vescovo.", ["Sulpicio il Pio"], "Sulpicius Pius",
+                 ["Sulpicio", "Pio"]),
+                ("Ad Alessandria, san Giuseppe, detto l’Innografo, sacerdote.", ["Giuseppe l’Innografo"],
+                 "Iosephus Hymnographus", ["Giuseppe", "Innografo"])):
+            ms, review, _ = mentions_of(text, persons=[{"name": name, "forms": forms, "where": "text"}], lang="it")
+            self.assertEqual([m["form"] for m in ms], pieces, text)
+            self.assertEqual({m["name"] for m in ms}, {name})
+            self.assertEqual(review, [])
+
+    def test_a_byname_with_its_own_other_name_is_three_pieces(self):
+        text = "Nell’Uganda, san Mattia Kalemba, detto Mulumba o il Forte, martire."
+        ms, _, _ = mentions_of(text, persons=[{"name": "Matthias Kalemba Mulumba", "forms": ["Mattia Kalemba"],
+                                               "other_names": True, "where": "text"}], lang="it")
+        self.assertEqual([m["form"] for m in ms], ["Mattia Kalemba", "Mulumba", "Forte"])
+
+
 class VariantsTest(unittest.TestCase):
     def test_a_name_and_its_variant_are_two_pieces_of_one_person(self):
         # A mark covers name words only: "seu" is left unmarked, both pieces are Kinga.

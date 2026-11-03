@@ -1515,6 +1515,9 @@
       "mr:0115-ablebertus-cameracensis": [
         {
           "name": "Ablebertus",
+          "also": [
+            "Emebertus"
+          ],
           "where": "text"
         }
       ],
@@ -6458,6 +6461,9 @@
       "mr:0223-sirenus-sirmii": [
         {
           "name": "Sirenus",
+          "also": [
+            "Sinerus"
+          ],
           "where": "text"
         }
       ],
@@ -9042,6 +9048,9 @@
       "mr:0323-fingar-cornubiae": [
         {
           "name": "Fingar",
+          "also": [
+            "Guignerus"
+          ],
           "where": "text"
         }
       ],
@@ -12032,6 +12041,9 @@
       "mr:0418-lasreanus-leiglinii": [
         {
           "name": "Lasreanus",
+          "also": [
+            "Molassius"
+          ],
           "where": "text"
         }
       ],
@@ -13075,6 +13087,9 @@
       "mr:0427-mauganus-monae": [
         {
           "name": "Mauganus",
+          "also": [
+            "Magaldus"
+          ],
           "where": "text"
         }
       ],
@@ -20131,6 +20146,9 @@
       "mr:0625-molochus-rossmarkaei": [
         {
           "name": "Molochus",
+          "also": [
+            "Luanus"
+          ],
           "where": "text"
         }
       ],
@@ -21646,6 +21664,9 @@
         },
         {
           "name": "Prisca",
+          "also": [
+            "Priscilla"
+          ],
           "where": "text"
         },
         {
@@ -23606,6 +23627,9 @@
       "mr:0714-vincentius-madelgarius": [
         {
           "name": "Vincentius",
+          "also": [
+            "Madelgarius"
+          ],
           "where": "text"
         },
         {
@@ -24422,6 +24446,9 @@
       "mr:0717-zoerardus-et-benedictus": [
         {
           "name": "Zoerardus",
+          "also": [
+            "Andreas"
+          ],
           "where": "text"
         },
         {
@@ -24810,6 +24837,9 @@
       "mr:0719-bernoldus-ultraiecti": [
         {
           "name": "Bernoldus",
+          "also": [
+            "Bernulphus"
+          ],
           "where": "text"
         }
       ],
@@ -26039,6 +26069,9 @@
       "mr:0727-pantaleon-nicomediae": [
         {
           "name": "Pantaleon",
+          "also": [
+            "Pantalaimon"
+          ],
           "where": "text"
         }
       ],
@@ -34595,6 +34628,9 @@
       "mr:0911-leudinus-tulli": [
         {
           "name": "Leudinus",
+          "also": [
+            "Bodo"
+          ],
           "where": "text"
         },
         {
@@ -36618,6 +36654,9 @@
       "mr:0922-lauto-constantiensis": [
         {
           "name": "Lauto",
+          "also": [
+            "Laudus"
+          ],
           "where": "text"
         }
       ],
@@ -43490,6 +43529,9 @@
       "mr:1115-maclovius-alethensis": [
         {
           "name": "Maclovius",
+          "also": [
+            "Machutus"
+          ],
           "where": "text"
         }
       ],
@@ -46772,6 +46814,9 @@
       "mr:1204-adrehildis-cenomanorum": [
         {
           "name": "Adrehildis",
+          "also": [
+            "Ada"
+          ],
           "where": "text"
         }
       ],
@@ -47070,6 +47115,9 @@
       "mr:1207-ioannes-silentiarius": [
         {
           "name": "Ioannes Silentiarius",
+          "also": [
+            "Ioannes Hesychastes"
+          ],
           "where": "text"
         }
       ],
