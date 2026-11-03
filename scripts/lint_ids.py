@@ -82,14 +82,14 @@ def single_subjects(subjects, person_items, mentioned=None):
     """mrid -> Wikidata item of the eulogy's one subject, when the subject names one linked person.
     mentioned (data/persons_mentioned.json by eulogy): the records of persons a eulogy only mentions
     never stand for its subject."""
-    from persons_text import subject_names
+    from persons_text import person_key, subject_names
     out = {}
     for mrid, subject in subjects.items():
         names = subject_names(mrid, subject) if subject else []
         if len(names) != 1:
             continue
-        others = {p["name"] for p in (mentioned or {}).get(mrid, [])}
-        records = {k: v for k, v in (person_items.get(mrid) or {}).items() if k.split("#")[0] not in others}
+        others = {person_key(p) for p in (mentioned or {}).get(mrid, [])}
+        records = {k: v for k, v in (person_items.get(mrid) or {}).items() if k not in others}
         record = records.get(names[0])
         if record is None and len(records) == 1:  # the subject printed in another form
             record = next(iter(records.values()))
