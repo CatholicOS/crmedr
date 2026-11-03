@@ -344,7 +344,7 @@ ENTRY_NOTES = {
         "earlier. Bruno received the pallium from Sylvester II (999–1003) and was consecrated in 1004, when "
         "the pope was John XVIII."
     ),
-    "mr:0404-platon-constantinopoli": (
+    "mr:0404-plato-constantinopoli": (
         "Plato's nephew who reformed the Studion with him, called Theodosius in both editions, is "
         "Theodore the Studite; no nephew Theodosius is known."
     ),

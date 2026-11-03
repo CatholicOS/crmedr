@@ -537,7 +537,8 @@ DISCRIMINATORS_COMMENT = ("The words a rename's discriminator added to each eulo
 def _record_discriminators(rs, repo_root, files):
     """Record, under the new ID and by language, the words each relabel adds after the current
     subject without its recorded discriminator (the subject follows the ID): a reworded discriminator
-    replaces the record, a subject rewritten otherwise drops it. A surname is part of the name and
+    replaces the record, a new name before the recorded words keeps it, a subject rewritten otherwise
+    drops it. A surname is part of the name and
     records nothing; a relabel alone only rewords a discriminator already recorded."""
     repo_root = Path(repo_root)
     subjects = {lang: json.loads((repo_root / "i18n" / name).read_text(encoding="utf-8"))
@@ -558,6 +559,8 @@ def _record_discriminators(rs, repo_root, files):
             sep = next((s for s in (", ", " ") if new.startswith(base + s)), None)
             discriminates = r.category not in (None, *NAME_PARTS) or (r.category is None and recorded)
             words = new[len(base + sep):] if sep and discriminates else None  # "San Milziade, papa"
+            if not sep and recorded and strip_discriminator(new, recorded) != new:
+                words = recorded  # a new name form ("Plato" for "Platon") before the same words
             if words == recorded:
                 continue
             if words:
