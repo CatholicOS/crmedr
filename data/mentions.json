@@ -91454,7 +91454,9 @@
           "name": "Plato",
           "qid": "Q6078249",
           "role": "mentioned",
-          "commemorated_in": []
+          "commemorated_in": [
+            "mr:0722-plato-ancyrae"
+          ]
         }
       ],
       "mr:0716-athenogenes-sebastes": [
@@ -95378,7 +95380,7 @@
           "end": 34,
           "check": "6ba6db1b",
           "name": "Plato",
-          "qid": null
+          "qid": "Q6078249"
         }
       ],
       "mr:0722-wandregisilus-fontanellensis": [
@@ -272231,7 +272233,9 @@
           "name": "Plato",
           "qid": "Q6078249",
           "role": "mentioned",
-          "commemorated_in": []
+          "commemorated_in": [
+            "mr:0722-plato-ancyrae"
+          ]
         }
       ],
       "mr:0716-athenogenes-sebastes": [
@@ -276146,7 +276150,7 @@
           "end": 55,
           "check": "6f4c58e7",
           "name": "Plato",
-          "qid": null
+          "qid": "Q6078249"
         }
       ],
       "mr:0722-wandregisilus-fontanellensis": [

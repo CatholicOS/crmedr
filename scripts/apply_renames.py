@@ -559,7 +559,8 @@ def _record_discriminators(rs, repo_root, files):
             sep = next((s for s in (", ", " ") if new.startswith(base + s)), None)
             discriminates = r.category not in (None, *NAME_PARTS) or (r.category is None and recorded)
             words = new[len(base + sep):] if sep and discriminates else None  # "San Milziade, papa"
-            if not sep and recorded and strip_discriminator(new, recorded) != new:
+            if (not sep and recorded and r.category not in NAME_PARTS
+                    and strip_discriminator(new, recorded) != new):
                 words = recorded  # a new name form ("Plato" for "Platon") before the same words
             if words == recorded:
                 continue
