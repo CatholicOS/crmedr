@@ -357,7 +357,7 @@
 | 25 | (1) | `mr:0725-iacobus-apostolus` |  | PS | dies_natalis |  |  |
 | 25 | 2 | `mr:0725-christophorus-lyciae` |  | TR | dies_natalis |  |  |
 | 25 | 3 | `mr:0725-cucuphas-barcinonis` |  | ES | dies_natalis |  |  |
-| 25 | 4 | `mr:0725-valentina-et-socii` |  | IL | dies_natalis |  |  |
+| 25 | 4 | `mr:0725-valentina-et-socii` |  | IL | dies_natalis |  | Both editions place these martyrs in the persecution of the emperor Maximian. Eusebius (Martyrs of Palestine 8) dates them to 308 under the governor Firmilian, when Palestine was ruled by Maximinus Daia; Maximian had abdicated in 305. |
 | 25 | 5 | `mr:0725-olympias-nicomediae` |  | TR | dies_natalis | same as `mr:1217-olympias-nicomediae` |  |
 | 25 | 6 | `mr:0725-magnericus-trevirorum` |  | DE | dies_natalis |  |  |
 | 25 | 7 | `mr:0725-beatus-et-bantus` | * | DE | dies_natalis |  |  |

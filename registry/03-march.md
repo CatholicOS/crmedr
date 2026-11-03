@@ -101,7 +101,7 @@
 | 9 | 2 | `mr:0309-quadraginta-milites-sebastes` |  | TR | dies_natalis | same as `mr:0310-quadraginta-milites-sebastes` | 2004 English: Translation error: "not for blood but for faith ... suffered" where the Latin has "non sánguinis sed fídei ... sócii" (companions not of blood but of faith). |
 | 9 | 3 | `mr:0309-pacianus-barcinonis` |  | ES | dies_natalis |  | 2004 English: Translation error: "truly Catholic by nature" where the Latin has "cathólicum vero cognómen" (but Catholic his surname). |
 | 9 | 4 | `mr:0309-vitalis-de-castronovo` | * | IT | dies_natalis |  |  |
-| 9 | 5 | `mr:0309-bruno-querfurtensis` |  | CZ | dies_natalis | same as `mr:0619-bonifatius-querfurtensis` |  |
+| 9 | 5 | `mr:0309-bruno-querfurtensis` |  | CZ | dies_natalis | same as `mr:0619-bonifatius-querfurtensis` | Both editions say Bruno was made bishop by Pope John X, who reigned 914–928, almost a century earlier. Bruno received the pallium from Sylvester II (999–1003) and was consecrated in 1004, when the pope was John XVIII. |
 | 9 | 6 | `mr:0309-catharina-bononiae` |  | IT | dies_natalis |  | 2004 English: Translation error: "humble devotion" where the Latin has "pæniténtiæ humilitatísque cursu" (course of penance and humility). |
 | 9 | 7 | `mr:0309-dominicus-savio` |  | IT | dies_natalis |  |  |
 | 9 | 8 | `mr:0309-petrus-choe-hyong-et-ioannes-baptista-chon-chang-un` |  | KR | dies_natalis |  |  |

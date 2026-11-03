@@ -322,7 +322,7 @@
 | 28 | (1) | `mr:0628-irenaeus-lugdunensis` |  | TR | dies_natalis |  | Irenaeus was declared a Doctor of the Church on 21 January 2022. |
 | 28 | 2 | `mr:0628-plutarchus-et-socii` |  | EG | dies_natalis |  |  |
 | 28 | 3 | `mr:0628-paulus-i` |  | IT | dies_natalis |  |  |
-| 28 | 4 | `mr:0628-argimirus-cordubae` |  | ES | dies_natalis |  |  |
+| 28 | 4 | `mr:0628-argimirus-cordubae` |  | ES | dies_natalis |  | Both editions date Argimirus under "Mohammed II"; he died in 856, under the emir Muhammad I of Córdoba (852–886). |
 | 28 | 5 | `mr:0628-heimeradus-hasungae` | * | DE | dies_natalis |  |  |
 | 28 | 6 | `mr:0628-ioannes-southworth` |  | GB | dies_natalis |  |  |
 | 28 | 7 | `mr:0628-vincentia-gerosa` |  | IT | dies_natalis |  |  |
