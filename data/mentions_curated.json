@@ -11914,19 +11914,6 @@
         {
           "kind": "place",
           "where": "text",
-          "start": 121,
-          "end": 135,
-          "check": "4e03cb53",
-          "qid": null,
-          "roles": [
-            {
-              "role": "mention"
-            }
-          ]
-        },
-        {
-          "kind": "place",
-          "where": "text",
           "start": 262,
           "end": 266,
           "check": "7e325f21",
@@ -13838,32 +13825,6 @@
           "check": "a47d81d4",
           "name": "Emmelia",
           "qid": null
-        },
-        {
-          "kind": "place",
-          "where": "text",
-          "start": 139,
-          "end": 144,
-          "check": "d6f9556f",
-          "qid": null,
-          "roles": [
-            {
-              "role": "mention"
-            }
-          ]
-        },
-        {
-          "kind": "place",
-          "where": "text",
-          "start": 157,
-          "end": 162,
-          "check": "b4c7f6e2",
-          "qid": null,
-          "roles": [
-            {
-              "role": "mention"
-            }
-          ]
         },
         {
           "kind": "place",

@@ -964,12 +964,6 @@
       "country": "GB",
       "status": "reviewed"
     },
-    "Angliæ": {
-      "wikidata": "Q179876",
-      "label": "Kingdom of England",
-      "country": "GB",
-      "status": "reviewed"
-    },
     "Angliæ Cantuariénsem": {
       "wikidata": "Q29303",
       "label": "Canterbury",
@@ -1005,12 +999,6 @@
       "label": "Angri",
       "country": "IT",
       "status": "reviewed"
-    },
-    "Anianénsi": {
-      "wikidata": "Q1215739",
-      "label": "Royal abbey of Aniane",
-      "country": "FR",
-      "status": "jev"
     },
     "Anianénsis": {
       "wikidata": "Q1215739",
@@ -2372,12 +2360,6 @@
       "country": "IT",
       "status": "jev"
     },
-    "Aragóniæ": {
-      "wikidata": "Q199442",
-      "label": "Kingdom of Aragon",
-      "country": "ES",
-      "status": "jev"
-    },
     "Aragóniæ regno": {
       "wikidata": "Q199442",
       "label": "Kingdom of Aragon",
@@ -2580,12 +2562,6 @@
       "label": "Brittany",
       "country": "FR",
       "status": "jev"
-    },
-    "Armóricæ": {
-      "wikidata": "Q327",
-      "label": "Brittany",
-      "country": "FR",
-      "status": "reviewed"
     },
     "Armóricæ regiónis": {
       "wikidata": "Q641203",
@@ -2818,12 +2794,6 @@
       "country": "DE",
       "status": "jev"
     },
-    "Augustodunénsi": {
-      "wikidata": "Q190827",
-      "label": "Autun",
-      "country": "FR",
-      "status": "jev"
-    },
     "Augustodunénsis": {
       "wikidata": "Q190827",
       "label": "Autun",
@@ -2989,25 +2959,6 @@
     "Aurélii in pago Lemovicénsi Gálliæ": {
       "wikidata": "Q1020000",
       "label": "Aureil",
-      "country": "FR",
-      "status": "reviewed"
-    },
-    "Austrásiæ": {
-      "wikidata": "Q105098",
-      "label": "Austrasia",
-      "country": null,
-      "countries": [
-        "FR",
-        "DE",
-        "BE",
-        "LU",
-        "NL"
-      ],
-      "status": "reviewed"
-    },
-    "Autissiodorénsi": {
-      "wikidata": "Q167600",
-      "label": "Auxerre",
       "country": "FR",
       "status": "reviewed"
     },
@@ -3360,12 +3311,6 @@
       "wikidata": "Q41183",
       "label": "Aleppo",
       "country": "SY",
-      "status": "jev"
-    },
-    "Bethlehemítæ": {
-      "wikidata": "Q5776",
-      "label": "Bethlehem",
-      "country": "PS",
       "status": "jev"
     },
     "Bethsáidæ": {
@@ -4714,12 +4659,6 @@
       "country": "GR",
       "status": "jev"
     },
-    "Cenomanénsis": {
-      "wikidata": "Q1476",
-      "label": "Le Mans",
-      "country": "FR",
-      "status": "jev"
-    },
     "Centumcéllas": {
       "wikidata": "Q242533",
       "label": "Civitavecchia",
@@ -4895,12 +4834,6 @@
       "label": "Ciano",
       "country": "IT",
       "status": "reviewed"
-    },
-    "Claravallénsi": {
-      "wikidata": "Q647070",
-      "label": "Clairvaux Abbey",
-      "country": "FR",
-      "status": "jev"
     },
     "Claravallénsis": {
       "wikidata": "Q647070",
@@ -5384,12 +5317,6 @@
       "country": "TR",
       "status": "jev"
     },
-    "Constantinopolitánum@mr:1202-silverius-papa": {
-      "wikidata": "Q406",
-      "label": "Istanbul",
-      "country": "TR",
-      "status": "reviewed"
-    },
     "Constantinopolitánus": {
       "wikidata": "Q406",
       "label": "Istanbul",
@@ -5492,12 +5419,6 @@
       "country": "GR",
       "status": "reviewed"
     },
-    "Cordubénsis": {
-      "wikidata": "Q5818",
-      "label": "Córdoba",
-      "country": "ES",
-      "status": "jev"
-    },
     "Corfiniénsis": {
       "wikidata": "Q50090",
       "label": "Corfinio",
@@ -5581,12 +5502,6 @@
       "label": "Ancient Corinth",
       "country": "GR",
       "status": "reviewed"
-    },
-    "Corínthius": {
-      "wikidata": "Q103011",
-      "label": "Corinth",
-      "country": "GR",
-      "status": "jev"
     },
     "Corýci in Cilícia": {
       "wikidata": "Q2167586",
@@ -5802,12 +5717,6 @@
       "wikidata": "Q203197",
       "label": "Kandy",
       "country": "LK",
-      "status": "reviewed"
-    },
-    "Cántiæ": {
-      "wikidata": "Q23298",
-      "label": "Kent",
-      "country": "GB",
       "status": "reviewed"
     },
     "Cápuæ in Campánia": {
@@ -6242,12 +6151,6 @@
       "label": "Déols",
       "country": "FR",
       "status": "reviewed"
-    },
-    "Dolénsi": {
-      "wikidata": "Q318432",
-      "label": "Dol-de-Bretagne",
-      "country": "FR",
-      "status": "jev"
     },
     "Dolénsis in Británnia Minóre": {
       "wikidata": "Q318432",
@@ -13888,16 +13791,6 @@
       "country": "IT",
       "status": "reviewed"
     },
-    "Iudæ": {
-      "wikidata": "Q48685",
-      "label": "Kingdom of Judah",
-      "country": null,
-      "countries": [
-        "IL",
-        "PS"
-      ],
-      "status": "jev"
-    },
     "Iudǽam": {
       "wikidata": "Q104028",
       "label": "Judea",
@@ -14340,12 +14233,6 @@
       "country": "GB",
       "status": "reviewed"
     },
-    "Leonénsi": {
-      "wikidata": "Q12178",
-      "label": "Pays de Léon",
-      "country": "FR",
-      "status": "jev"
-    },
     "Leopoldópoli in Slováchia": {
       "wikidata": "Q690807",
       "label": "Leopoldov",
@@ -14501,12 +14388,6 @@
       "label": "Lithuania",
       "country": "LT",
       "status": "jev"
-    },
-    "Lithuániæ": {
-      "wikidata": "Q49683",
-      "label": "Grand Duchy of Lithuania",
-      "country": "LT",
-      "status": "reviewed"
     },
     "Livóniæ": {
       "wikidata": "Q183464",
@@ -14778,12 +14659,6 @@
       "country": "FR",
       "status": "jev"
     },
-    "Luxoviénsis": {
-      "wikidata": "Q1232116",
-      "label": "Luxeuil Abbey",
-      "country": "FR",
-      "status": "jev"
-    },
     "Luxóvii in Burgúndia": {
       "wikidata": "Q634124",
       "label": "Luxeuil-les-Bains",
@@ -14891,18 +14766,6 @@
       "label": "Kilmallock",
       "country": "IE",
       "status": "reviewed"
-    },
-    "Madaurénsi": {
-      "wikidata": "Q54205",
-      "label": "M'Daourouch",
-      "country": "DZ",
-      "status": "reviewed"
-    },
-    "Magdeburgénsis": {
-      "wikidata": "Q1733",
-      "label": "Magdeburg",
-      "country": "DE",
-      "status": "jev"
     },
     "Magdebúrgi in Saxónia": {
       "wikidata": "Q1733",
@@ -15154,12 +15017,6 @@
       "country": "FR",
       "status": "auto"
     },
-    "Materanénsi": {
-      "wikidata": "Q13616",
-      "label": "Matera",
-      "country": "IT",
-      "status": "jev"
-    },
     "Matilícæ in Picéno Itáliæ": {
       "wikidata": "Q83056",
       "label": "Matelica",
@@ -15263,12 +15120,6 @@
       "label": "Milan",
       "country": "IT",
       "status": "jev"
-    },
-    "Mediolanénsi": {
-      "wikidata": "Q490",
-      "label": "Milan",
-      "country": "IT",
-      "status": "reviewed"
     },
     "Mediolanénsis": {
       "wikidata": "Q490",
@@ -15977,12 +15828,6 @@
       "country": "FR",
       "status": "auto"
     },
-    "Nanneténsis": {
-      "wikidata": "Q12191",
-      "label": "Nantes",
-      "country": "FR",
-      "status": "jev"
-    },
     "Nannétibus": {
       "wikidata": "Q12191",
       "label": "Nantes",
@@ -16262,12 +16107,6 @@
       "country": "RO",
       "status": "reviewed"
     },
-    "Nivellénsi": {
-      "wikidata": "Q120586",
-      "label": "Nivelles Abbey",
-      "country": "BE",
-      "status": "reviewed"
-    },
     "Nivernénsis": {
       "wikidata": "Q166997",
       "label": "Nevers",
@@ -16309,24 +16148,6 @@
       "label": "Nola",
       "country": "IT",
       "status": "jev"
-    },
-    "Noláno": {
-      "wikidata": "Q72288",
-      "label": "Nola",
-      "country": "IT",
-      "status": "jev"
-    },
-    "Nolánum": {
-      "wikidata": "Q72288",
-      "label": "Nola",
-      "country": "IT",
-      "status": "jev"
-    },
-    "Nolánus": {
-      "wikidata": "Q72288",
-      "label": "Nola",
-      "country": "IT",
-      "status": "reviewed"
     },
     "Nolæ in Campánia": {
       "wikidata": "Q72288",
@@ -16384,12 +16205,6 @@
     "Northúmbriæ@mr:0822-thomas-percy": {
       "wikidata": "Q23079",
       "label": "Northumberland",
-      "country": "GB",
-      "status": "reviewed"
-    },
-    "Northúmbriæ@mr:1010-paulinus-eboracensis": {
-      "wikidata": "Q107299",
-      "label": "Kingdom of Northumbria",
       "country": "GB",
       "status": "reviewed"
     },
@@ -16514,18 +16329,6 @@
       "status": "reviewed"
     },
     "Nyssæ in Cappadócia": {
-      "wikidata": "Q3563362",
-      "label": "Nyssa",
-      "country": "TR",
-      "status": "reviewed"
-    },
-    "Nysséni": {
-      "wikidata": "Q3563362",
-      "label": "Nyssa",
-      "country": "TR",
-      "status": "reviewed"
-    },
-    "Nyssénus": {
       "wikidata": "Q3563362",
       "label": "Nyssa",
       "country": "TR",
@@ -16944,12 +16747,6 @@
       "country": "FR",
       "status": "reviewed"
     },
-    "Parisiénsis": {
-      "wikidata": "Q90",
-      "label": "Paris",
-      "country": "FR",
-      "status": "jev"
-    },
     "Parisiórum": {
       "wikidata": "Q90",
       "label": "Paris",
@@ -17158,12 +16955,6 @@
       "country": "IR",
       "status": "jev"
     },
-    "Persárum": {
-      "wikidata": "Q389688",
-      "label": "Achaemenid Empire",
-      "country": "IR",
-      "status": "jev"
-    },
     "Perínthi seu Heracléæ in Thrácia": {
       "wikidata": "Q11815679",
       "label": "Perinthus",
@@ -17268,12 +17059,6 @@
       "status": "reviewed"
     },
     "Pictaviénsem in Aquitánia": {
-      "wikidata": "Q6616",
-      "label": "Poitiers",
-      "country": "FR",
-      "status": "jev"
-    },
-    "Pictaviénsi": {
       "wikidata": "Q6616",
       "label": "Poitiers",
       "country": "FR",
@@ -18137,12 +17922,6 @@
       "country": "BR",
       "status": "reviewed"
     },
-    "Reiénsis": {
-      "wikidata": "Q457002",
-      "label": "Riez",
-      "country": "FR",
-      "status": "jev"
-    },
     "Remesiánæ in Dácia": {
       "wikidata": "Q1135157",
       "label": "Remesiana",
@@ -18815,12 +18594,6 @@
       "country": "BY",
       "status": "reviewed"
     },
-    "Rothomagénsi": {
-      "wikidata": "Q30974",
-      "label": "Rouen",
-      "country": "FR",
-      "status": "jev"
-    },
     "Rothomagénsis": {
       "wikidata": "Q30974",
       "label": "Rouen",
@@ -19068,12 +18841,6 @@
       ],
       "status": "reviewed",
       "note": "the site of Salem is disputed: traditionally Jerusalem, or Salim near Nablus"
-    },
-    "Salernitáni": {
-      "wikidata": "Q1083",
-      "label": "Salerno",
-      "country": "IT",
-      "status": "reviewed"
     },
     "Sali in Província Gálliæ": {
       "wikidata": "Q232567",
@@ -19501,12 +19268,6 @@
       "country": "ES",
       "status": "reviewed"
     },
-    "Sebasténsis": {
-      "wikidata": "Q107401",
-      "label": "Sivas",
-      "country": "TR",
-      "status": "reviewed"
-    },
     "Sebastópoli in Ponto": {
       "wikidata": "Q20191364",
       "label": "Sebastopolis",
@@ -19875,12 +19636,6 @@
       "label": "İzmir",
       "country": "TR",
       "status": "auto"
-    },
-    "Smyrnénsis": {
-      "wikidata": "Q35997",
-      "label": "İzmir",
-      "country": "TR",
-      "status": "jev"
     },
     "Solemníaci": {
       "wikidata": "Q334417",
@@ -20422,12 +20177,6 @@
       "country": "TR",
       "status": "auto"
     },
-    "Tarsénsem": {
-      "wikidata": "Q134287",
-      "label": "Tarsus",
-      "country": "TR",
-      "status": "jev"
-    },
     "Tarsénsis": {
       "wikidata": "Q134287",
       "label": "Tarsus",
@@ -20915,12 +20664,6 @@
       "country": "FR",
       "status": "auto"
     },
-    "Trecénsis": {
-      "wikidata": "Q5489",
-      "label": "Troyes",
-      "country": "FR",
-      "status": "jev"
-    },
     "Tremúlii in Secaláunia Gálliæ regióne": {
       "wikidata": "Q1169940",
       "label": "Saint-Viâtre",
@@ -21142,18 +20885,6 @@
       "label": "Deurne",
       "country": "BE",
       "status": "reviewed"
-    },
-    "Turonénsem": {
-      "wikidata": "Q288",
-      "label": "Tours",
-      "country": "FR",
-      "status": "jev"
-    },
-    "Turonénsi": {
-      "wikidata": "Q288",
-      "label": "Tours",
-      "country": "FR",
-      "status": "jev"
     },
     "Turonénsis": {
       "wikidata": "Q288",
@@ -21452,12 +21183,6 @@
       "wikidata": "Q814982",
       "label": "Béja",
       "country": "TN",
-      "status": "jev"
-    },
-    "Valentinénsis": {
-      "wikidata": "Q8848",
-      "label": "Valence",
-      "country": "FR",
       "status": "jev"
     },
     "Valentiánæ in Gállia": {

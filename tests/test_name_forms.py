@@ -67,6 +67,16 @@ class HarvestTest(unittest.TestCase):
                             "it": {"mr:3": "Beata Marta Cerretelli"}})
         self.assertEqual(forms, {})
 
+    def test_a_mentioned_person_neither_pairs_nor_counts_as_a_latin_name(self):
+        # A eulogy of Maximianus that mentions Gregorius first: Gregorius gives no pair, and a Gregory
+        # seen once for another eulogy's Latin name stays a form.
+        mentioned = {"name": "Gregorius Magnus", "where": "text", "role": "mentioned"}
+        forms = nf.harvest({"mr:1": [mentioned] + persons("Maximianus Syracusanus"),
+                            "mr:2": persons("Georgius Smith")},
+                           {"en": {"mr:1": "Saint Maximian Syracusanus", "mr:2": "Blessed Gregory Smith"},
+                            "it": {}})
+        self.assertEqual(forms, {"maximianus": {"en": [["Maximian", 1]]}, "georgius": {"en": [["Gregory", 1]]}})
+
     def test_a_form_like_the_latin_itself_is_left_out(self):
         forms = nf.harvest({"mr:1": persons("Maria Wang")}, {"en": {"mr:1": "Saint Maria Wang"}, "it": {}})
         self.assertNotIn("maria", forms)
