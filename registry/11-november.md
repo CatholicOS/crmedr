@@ -356,7 +356,7 @@
 | 27 | 11 | `mr:1127-virgilius-salisburgensis` |  | AT | dies_natalis |  |  |
 | 27 | 12 | `mr:1127-gulstanus-rhuvigiensis` | * | FR | dies_natalis |  | 2004 English: Translation error: "Belle-Île" where the Latin has "in loco Bello Visu" (Beauvoir-sur-Mer). Translation error: "then a hermit in the monastery of Rhuys" where the Latin places Gulstan, not Felix, "in monastério Rhuvigiénsi". |
 | 27 | 13 | `mr:1127-ioannes-amici` | * | IT | dies_natalis |  |  |
-| 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  |  |
+| 27 | 14 | `mr:1127-thomas-koteda-kiuni-et-socii` | * | JP | dies_natalis |  | The governor "Gonzuku" of both editions is Hasegawa Gonroku, bugyō (governor) of Nagasaki from 1615 to 1626. |
 | 27 | 15 | `mr:1127-bronislaus-kostowski` | * | DE | dies_natalis |  | 2004 Latin: Spelling error: "Kostowski" for Kostkowski. |
 | 28 | 1 | `mr:1128-irenarchus-sebastes` |  | TR | dies_natalis | same as `mr:1127-irenarchus-et-socii` |  |
 | 28 | 2 | `mr:1128-papinianus-vitensis-et-mansuetus-urusitanus` |  | TN | commemoratio |  | The sites of Midila and Teudala, the African sees of two of the bishops commemorated here, are not identified. 2004 English: Translation error: "Sufetula" where the Latin has "Sufetánus" (of Sufes). |

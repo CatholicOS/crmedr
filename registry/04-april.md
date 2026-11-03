@@ -45,7 +45,7 @@
 | 4 | (1) | `mr:0404-isidorus-hispalensis` |  | ES | dies_natalis |  |  |
 | 4 | 2 | `mr:0404-agathopodus-et-theodulus` |  | GR | dies_natalis |  |  |
 | 4 | 3 | `mr:0404-ambrosius-mediolani` |  | IT | depositio |  |  |
-| 4 | 4 | `mr:0404-platon-constantinopoli` |  | TR | dies_natalis |  |  |
+| 4 | 4 | `mr:0404-platon-constantinopoli` |  | TR | dies_natalis |  | Plato's nephew who reformed the Studion with him, called Theodosius in both editions, is Theodore the Studite; no nephew Theodosius is known. |
 | 4 | 5 | `mr:0404-petrus-pictavii` | * | FR | dies_natalis |  |  |
 | 4 | 6 | `mr:0404-gulielmus-cuffitelli` | * | IT | dies_natalis |  | 2004 English: Translation error: "Scillium" where the Latin has "Sicli" (Scicli). |
 | 4 | 7 | `mr:0404-benedictus-massarari` |  | IT | dies_natalis | same as `mr:0403-benedictus-massarari` |  |

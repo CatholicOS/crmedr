@@ -338,6 +338,43 @@ ENTRY_NOTES = {
         "on the right bank of the Ijuí in Rio Grande do Sul, Brazil, has not been found (Real Academia de la "
         "Historia, Diccionario Biográfico español, \"San Juan del Castillo\")."
     ),
+    # Persons the eulogies name, where the name or the reign printed is doubtful or wrong.
+    "mr:0309-bruno-querfurtensis": (
+        "Both editions say Bruno was made bishop by Pope John X, who reigned 914–928, almost a century "
+        "earlier. Bruno received the pallium from Sylvester II (999–1003) and was consecrated in 1004, when "
+        "the pope was John XVIII."
+    ),
+    "mr:0404-platon-constantinopoli": (
+        "Plato's nephew who reformed the Studion with him, called Theodosius in both editions, is "
+        "Theodore the Studite; no nephew Theodosius is known."
+    ),
+    "mr:0628-argimirus-cordubae": (
+        "Both editions date Argimirus under \"Mohammed II\"; he died in 856, under the emir Muhammad I of "
+        "Córdoba (852–886)."
+    ),
+    "mr:0725-valentina-et-socii": (
+        "Both editions place these martyrs in the persecution of the emperor Maximian. Eusebius (Martyrs "
+        "of Palestine 8) dates them to 308 under the governor Firmilian, when Palestine was ruled by "
+        "Maximinus Daia; Maximian had abdicated in 305."
+    ),
+    "mr:0815-hyacinthus-cracoviae": (
+        "\"Henry the German\", Hyacinth's companion in both editions, is not otherwise known: the sources "
+        "name Henry of Moravia and Herman the German among the companions Dominic received with Hyacinth "
+        "and Ceslaus, and the printed name seems to join the two."
+    ),
+    "mr:0910-nemesius-alexandriae": (
+        "Dionysius of Alexandria (in Eusebius, Church History VI.41) does not name the judge who tried "
+        "Nemesion under Decius. Aemilianus, named in both editions, governed Egypt under Valerian "
+        "(257–261) and tried Dionysius himself."
+    ),
+    "mr:0918-ferreolus-lemovici": (
+        "Gregory of Tours (Histories V.28) makes Mark the referendary of King Chilperic I, collecting his "
+        "taxes at Limoges in 579; both editions call him King Childebert's referendary."
+    ),
+    "mr:1127-thomas-koteda-kiuni-et-socii": (
+        "The governor \"Gonzuku\" of both editions is Hasegawa Gonroku, bugyō (governor) of Nagasaki from "
+        "1615 to 1626."
+    ),
 }
 
 # The 2004-family editions. The registry's main placement is the Latin print;

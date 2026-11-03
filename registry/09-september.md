@@ -138,7 +138,7 @@
 | 9 | 8 | `mr:0909-petrus-bonhomme` | * | FR | dies_natalis |  |  |
 | 9 | 9 | `mr:0909-iacobus-desideratus-laval` | * | MU | dies_natalis |  |  |
 | 9 | 10 | `mr:0909-franciscus-garate-aranguren` | * | ES | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 10*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (10*). Translation error: "nella Guascogna" (Gascony) where the Latin has "in Vascónia Hispániæ" (the Basque Country of Spain). |
-| 10 | 1 | `mr:0910-nemesius-alexandriae` |  | EG | dies_natalis |  |  |
+| 10 | 1 | `mr:0910-nemesius-alexandriae` |  | EG | dies_natalis |  | Dionysius of Alexandria (in Eusebius, Church History VI.41) does not name the judge who tried Nemesion under Decius. Aemilianus, named in both editions, governed Egypt under Valerian (257–261) and tried Dionysius himself. |
 | 10 | 2 | `mr:0910-nemesianus-et-socii` |  | TN | commemoratio |  |  |
 | 10 | 3 | `mr:0910-pulcheria-constantinopoli` |  | TR | dies_natalis |  |  |
 | 10 | 4 | `mr:0910-agabius-novariae` |  | IT | dies_natalis |  |  |
@@ -251,7 +251,7 @@
 | 18 | 3 | `mr:0918-ferreolus-viennensis` |  | FR | dies_natalis |  |  |
 | 18 | 4 | `mr:0918-eustorgius-mediolani` |  | IT | dies_natalis |  |  |
 | 18 | 5 | `mr:0918-senarius-abrincarum` | * | FR | dies_natalis |  |  |
-| 18 | 6 | `mr:0918-ferreolus-lemovici` | * | FR | dies_natalis |  |  |
+| 18 | 6 | `mr:0918-ferreolus-lemovici` | * | FR | dies_natalis |  | Gregory of Tours (Histories V.28) makes Mark the referendary of King Chilperic I, collecting his taxes at Limoges in 579; both editions call him King Childebert's referendary. |
 | 18 | 7 | `mr:0918-eumenius-gortynae` |  | GR | dies_natalis |  |  |
 | 18 | 8 | `mr:0918-richardis-andlaviae` | * | FR | dies_natalis |  |  |
 | 18 | 9 | `mr:0918-iosephus-de-cupertino` |  | IT | dies_natalis |  |  |

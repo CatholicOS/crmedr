@@ -211,7 +211,7 @@
 | 15 | 5 | `mr:0815-alypius-thagastensis` |  | DZ | commemoratio |  |  |
 | 15 | 6 | `mr:0815-altfridus-hildesiae` | * | DE | dies_natalis |  |  |
 | 15 | 7 | `mr:0815-stephanus-albae-regalis` | * | HU | dies_natalis |  |  |
-| 15 | 8 | `mr:0815-hyacinthus-cracoviae` |  | PL | dies_natalis | same as `mr:0816-hyacinthus-cracoviae`; same as `mr:0817-hyacinthus-cracoviae` |  |
+| 15 | 8 | `mr:0815-hyacinthus-cracoviae` |  | PL | dies_natalis | same as `mr:0816-hyacinthus-cracoviae`; same as `mr:0817-hyacinthus-cracoviae` | "Henry the German", Hyacinth's companion in both editions, is not otherwise known: the sources name Henry of Moravia and Herman the German among the companions Dominic received with Hyacinth and Ceslaus, and the printed name seems to join the two. |
 | 15 | 9 | `mr:0815-haymo-taparelli` | * | IT | dies_natalis |  |  |
 | 15 | 10 | `mr:0815-iuliana-de-busto-arsitio` | * | IT | dies_natalis |  |  |
 | 15 | 11 | `mr:0815-stanislaus-kostka` |  | IT | dies_natalis |  |  |
