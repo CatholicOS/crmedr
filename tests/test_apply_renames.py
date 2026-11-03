@@ -445,6 +445,29 @@ class SubcommandsTest(unittest.TestCase):
         self.assertTrue(ar.apply_crmedr(rewrite, self.root, False, run=Fake()).ok)
         self.assertEqual(read(), {"mr:0101-a": {"it": "di Roma"}})
 
+    def test_a_new_name_form_keeps_the_discriminator_it_still_ends_with(self):
+        # "Sanctus Platon Constantinopoli" -> "Sanctus Plato Constantinopoli": the person is Plato.
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-a"', '"Sanctus Platon Constantinopoli"'))
+        path = self.root / "data" / "subject_discriminators.json"
+        path.write_text(json.dumps({"discriminators": {"mr:0101-a": {"la": "Constantinopoli"}}}))
+        rename = cs(relabel("mr:0101-a", "edit", {"labels": {"la": "Sanctus Plato Constantinopoli",
+                                                             "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(rename, self.root, False, run=Fake()).ok)
+        self.assertEqual(json.loads(path.read_text())["discriminators"], {"mr:0101-a": {"la": "Constantinopoli"}})
+
+    def test_a_surname_ending_with_the_recorded_words_drops_the_record(self):
+        # The words are now the person's surname, which name_subjects must keep.
+        la = self.root / "i18n" / "la.json"
+        la.write_text(la.read_text().replace('"la mr:0101-b"', '"Sanctus B Romae"'))
+        path = self.root / "data" / "subject_discriminators.json"
+        path.write_text(json.dumps({"discriminators": {"mr:0101-b-y": {"la": "Romae"}}}))
+        cands = [dict(self.cs["operations"][1]["candidates"][1], category="surname")]
+        doc = cs(op("mr:0101-b", "mr:0101-b-y", cands=cands),
+                 relabel("mr:0101-b", "edit", {"labels": {"la": "Sanctus Bo Romae", "en": None, "it": None}}))
+        self.assertTrue(ar.apply_crmedr(doc, self.root, False, run=Fake()).ok)
+        self.assertEqual(json.loads(path.read_text())["discriminators"], {})
+
     def test_relabel_decided_after_its_rename_was_applied(self):
         ids = self.root / "data" / "martyrology_ids.json"
         doc = cs(self.cs["operations"][0], relabel("mr:0101-a", decision=None))
