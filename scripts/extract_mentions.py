@@ -114,18 +114,20 @@ def with_name_before(src, span, taken):
     return (m.start(), span[1])
 
 
-# The Italian's joiners of two names of one person: another name after "o" (the Latin's seu), a byname
-# after "detto"/"detta" (the Latin's cognomento), with the byname's article: "Goeríco o Abbone",
-# "Pietro, detto Crisologo", "Sulpicio, detto il Pio", "Giuseppe, detto l’Innografo".
+# The Italian's joiners inside one person's name: another name after "o" (the Latin's seu), and the
+# rest of the name after "detto"/"detta" (the Latin's cognomento: a surname-like name or an epithet),
+# with its article: "Goeríco o Abbone", "Canuto, detto Lavard", "Sulpicio, detto il Pio",
+# "Giuseppe, detto l’Innografo".
 IT_OTHER_NAME = re.compile(r"\s+o\s+(?:(?:il|lo|la)\s+|l[’'])?")
 IT_BYNAME = re.compile(r"\s*,\s*dett[oa]\s+(?:(?:il|lo|la)\s+|l[’'])?")
 IT_JOINER = re.compile(r"\s*,\s*dett[oa]\s+(?:(?:il|lo|la)\s+|l[’'])?|\s+o\s+(?:(?:il|lo|la)\s+|l[’'])?")
 
 
 def with_italian_bynames(src, span, taken, other_names, byname):
-    """An Italian person's span widened over the byname printed after it ("detto", when the Latin name has
-    one: `byname`) and over the other names after "o" (when the Latin gives the person another name:
-    `other_names`), each a run of capitalized words, unless those words are taken by another mention."""
+    """An Italian person's span widened over the rest of the name printed after "detto" (when the Latin
+    name has more words than the given name: `byname`) and over the other names after "o" (when the
+    Latin gives the person another name: `other_names`), each a run of capitalized words, unless those
+    words are taken by another mention."""
     while True:
         m = (byname and IT_BYNAME.match(src, span[1])) or (other_names and IT_OTHER_NAME.match(src, span[1]))
         if not m:
