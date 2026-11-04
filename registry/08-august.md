@@ -15,7 +15,7 @@
 | 1 | 9 | `mr:0801-ionatus-marcianae` | * | FR | dies_natalis |  |  |
 | 1 | 10 | `mr:0801-ethelwoldus-vintoniae` |  | GB | depositio |  | 2004 Italian: Translation error: "tradusse" (translated) the "Concordia dei monaci" where the Latin has "exarávit" (composed). |
 | 1 | 11 | `mr:0801-emericus-de-quart` | * | IT | dies_natalis |  |  |
-| 1 | 12 | `mr:0801-ioannes-bufalarus` | * | IT | dies_natalis |  |  |
+| 1 | 12 | `mr:0801-ioannes-bufalari` | * | IT | dies_natalis |  |  |
 | 1 | 13 | `mr:0801-petrus-favre` | * | IT | dies_natalis |  | Peter Faber, blessed in the 2004 editions, was canonized on 17 December 2013. |
 | 1 | 14 | `mr:0801-thomas-welbourne` | * | GB | dies_natalis |  |  |
 | 1 | 15 | `mr:0801-dominicus-nguyen-van-hanh-et-bernardus-vu-van-due` | * | VN | dies_natalis |  |  |
@@ -61,7 +61,7 @@
 | 4 | 14 | `mr:0804-henricus-krzysztofik` | * | DE | dies_natalis |  |  |
 | 5 | (1) | `mr:0805-dedicatio-basilicae-sanctae-mariae` |  | IT | dedicatio |  |  |
 | 5 | 2 | `mr:0805-memmius-catalauni` |  | FR | dies_natalis |  |  |
-| 5 | 3 | `mr:0805-paridis-theani` |  | IT | dies_natalis |  |  |
+| 5 | 3 | `mr:0805-paris-theani` |  | IT | dies_natalis |  |  |
 | 5 | 4 | `mr:0805-cassianus-augustoduni` |  | FR | dies_natalis |  | 2004 English: Translation error: "At Lyon" where the Latin has "Augustodúni" (Autun). |
 | 5 | 5 | `mr:0805-nonna-nazianzi` |  | TR | dies_natalis |  |  |
 | 5 | 6 | `mr:0805-emigdius-asculi` |  | IT | dies_natalis |  |  |
@@ -74,7 +74,7 @@
 | 6 | (1) | `mr:0806-transfiguratio-domini` |  | PS | celebratio |  | 2004 English: Translation error: "the glorious restoration of our nature ... was to be joined to him" where the Latin has "servílis formæ nostræ ipsi coaptátæ" (our servile form, fitted to himself). |
 | 6 | 2 | `mr:0806-xystus-ii` |  | IT | dies_natalis |  |  |
 | 6 | 3 | `mr:0806-iustus-et-pastor` |  | ES | dies_natalis |  | 2004 English: Translation error: "beheaded" where the Latin has "gládio iuguláti" (their throats were cut with the sword). |
-| 6 | 4 | `mr:0806-hormisda-papa` |  | IT | depositio |  |  |
+| 6 | 4 | `mr:0806-hormisdas-papa` |  | IT | depositio |  |  |
 | 6 | 5 | `mr:0806-octavianus-savonis` | * | IT | dies_natalis |  |  |
 | 6 | 6 | `mr:0806-schecelinus-luxemburgensis` | * | LU | dies_natalis |  |  |
 | 6 | 7 | `mr:0806-dominicus-de-guzman` |  | IT | dies_natalis |  | 2004 English: Translation error: "the nativity" where the Latin "natális" means the birth into heaven (his death). |
@@ -189,7 +189,7 @@
 | 13 | 13 | `mr:0813-petrus-romancon` |  | FR | dies_natalis |  |  |
 | 13 | 14 | `mr:0813-secundinus-maria-ortega-garcia-et-socii` | * | ES | dies_natalis |  | 2004 Italian: Translation error: "in odio alla fede" where the Latin has "in ódium vitæ religiósæ" (in hatred of the religious life). |
 | 13 | 15 | `mr:0813-ioannes-agramunt` | * | ES | dies_natalis |  |  |
-| 13 | 16 | `mr:0813-modestus-garcia-martus` | * | ES | dies_natalis |  |  |
+| 13 | 16 | `mr:0813-modestus-garcia-marti` | * | ES | dies_natalis |  |  |
 | 13 | 17 | `mr:0813-iosephus-bonet-nadal` | * | ES | dies_natalis |  |  |
 | 13 | 18 | `mr:0813-iacobus-gapp` | * | DE | dies_natalis |  | 2004 English: Translation error: "Gibraltar" where the Latin has "in Gálliam" (France). |
 | 14 | (1) | `mr:0814-maximilianus-maria-kolbe` |  | PL | dies_natalis |  |  |
@@ -365,7 +365,7 @@
 | 25 | 3 | `mr:0825-genesius-arelatis` |  | FR | dies_natalis | CEI: entry 4 |  |
 | 25 | 4 | `mr:0825-geruntius-italicae` |  | ES | dies_natalis | CEI: entry 5 |  |
 | 25 | 5 | `mr:0825-severus-agathae` | * | FR | dies_natalis | CEI: entry 6 |  |
-| 25 | 6 | `mr:0825-mena-constantinopoli` |  | TR | dies_natalis | CEI: entry 7 |  |
+| 25 | 6 | `mr:0825-menas-constantinopoli` |  | TR | dies_natalis | CEI: entry 7 |  |
 | 25 | 7 | `mr:0825-aredius-attani` | * | FR | dies_natalis | CEI: entry 8 |  |
 | 25 | 8 | `mr:0825-gregorius-ultraiecti` |  | NL | dies_natalis | CEI: entry 9 |  |
 | 25 | 9 | `mr:0825-thomas-cantelupe` |  | IT | dies_natalis | CEI: entry 10 | 2004 English: Translation error: "Tuscany" where the Latin has "Túscia" (Tuscia, now in Lazio). |
@@ -387,7 +387,7 @@
 | 26 | 12 | `mr:0826-alexander-max-ginestar` | * | ES | dies_natalis |  | 2004 English: Translation error: "Benisa" where the Latin has "Hemeroscópii" (Dénia). |
 | 26 | 13 | `mr:0826-felix-vivet-trabal` | * | ES | dies_natalis |  |  |
 | 26 | 14 | `mr:0826-leucadia-harasymiv` | * | RU | dies_natalis |  |  |
-| 26 | 15 | `mr:0826-maria-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
+| 26 | 15 | `mr:0826-maria-beltrame-quattrocchi` | * | IT | dies_natalis |  |  |
 | 27 | (1) | `mr:0827-monica-ostiae` |  | IT | dies_natalis | same as `mr:0504-monica-ostiae` |  |
 | 27 | 2 | `mr:0827-rufus-capuae` |  | IT | dies_natalis |  |  |
 | 27 | 3 | `mr:0827-marcellinus-et-socii` |  | RO | dies_natalis |  |  |
@@ -406,7 +406,7 @@
 | 27 | 16 | `mr:0827-ioannes-baptista-de-souzy-et-udalricus-guillaume` | * | FR | dies_natalis |  |  |
 | 27 | 17 | `mr:0827-dominicus-barberi` | * | GB | dies_natalis |  |  |
 | 27 | 18 | `mr:0827-ferdinandus-gonzalez-anon` | * | ES | dies_natalis |  | 2004 English: Translation error: "Afiñón" where the Latin has "Añón". |
-| 27 | 19 | `mr:0827-raymundus-martus-soriano` | * | ES | dies_natalis |  |  |
+| 27 | 19 | `mr:0827-raymundus-marti-soriano` | * | ES | dies_natalis |  |  |
 | 27 | 20 | `mr:0827-maria-a-columna-izquierdo-albero` | * | ES | dies_natalis |  |  |
 | 28 | (1) | `mr:0828-augustinus-hipponensis` |  | DZ | dies_natalis |  |  |
 | 28 | 2 | `mr:0828-hermes-romae` |  | IT | dies_natalis |  |  |
@@ -460,7 +460,7 @@
 | 30 | 14 | `mr:0830-vincentius-cabanes-badenas` | * | ES | dies_natalis |  | 2004 English: Translation error: "Santander" where the Latin has "Flaviobrígæ". |
 | 30 | 15 | `mr:0830-alaphridus-hildephonsus-schuster` | * | IT | dies_natalis |  |  |
 | 31 | 1 | `mr:0831-ioseph-de-arimathaea-et-nicodemus` |  | PS | commemoratio | same as `mr:0317-ioseph-ab-arimathaea` |  |
-| 31 | 2 | `mr:0831-aristidis-athenarum` |  | GR | dies_natalis |  |  |
+| 31 | 2 | `mr:0831-aristides-athenarum` |  | GR | dies_natalis |  |  |
 | 31 | 3 | `mr:0831-paulinus-trevirorum` |  | DE | dies_natalis |  |  |
 | 31 | 4 | `mr:0831-aidanus-lindisfarnae` |  | GB | dies_natalis |  | 2004 Italian: Translation error: "chiamato ... a questa sede episcopale, dove fondò un monastero" where the Latin says he established both the see and the monastery there. |
 | 31 | 5 | `mr:0831-raymundus-nonnatus` |  | ES | dies_natalis | same as `mr:0826-raymundus-nonnatus` |  |

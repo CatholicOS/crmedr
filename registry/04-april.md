@@ -13,7 +13,7 @@
 | 1 | 7 | `mr:0401-hugo-bonaevallensis` | * | FR | dies_natalis |  |  |
 | 1 | 8 | `mr:0401-gilbertus-cathani` | * | GB | dies_natalis |  |  |
 | 1 | 9 | `mr:0401-ioannes-bretton` | * | GB | dies_natalis |  |  |
-| 1 | 10 | `mr:0401-ludovicus-pavonus` | * | IT | dies_natalis |  | Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016. |
+| 1 | 10 | `mr:0401-ludovicus-pavoni` | * | IT | dies_natalis |  | Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 2 | (1) | `mr:0402-franciscus-de-paula` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0402-apphianus-caesareae` |  | IL | dies_natalis |  |  |
 | 2 | 3 | `mr:0402-theodora-caesareae` |  | IL | dies_natalis |  |  |
@@ -99,7 +99,7 @@
 | 8 | 7 | `mr:0408-clemens-de-auximo` | * | IT | dies_natalis |  |  |
 | 8 | 8 | `mr:0408-iulianus-a-sancto-augustino` | * | ES | dies_natalis |  |  |
 | 8 | 9 | `mr:0408-iulia-billiart` |  | BE | dies_natalis |  |  |
-| 8 | 10 | `mr:0408-augustus-czartoryskus` | * | IT | dies_natalis |  |  |
+| 8 | 10 | `mr:0408-augustus-czartoryski` | * | IT | dies_natalis |  |  |
 | 8 | 11 | `mr:0408-dominicus-a-sanctissimo-sacramento` | * | ES | dies_natalis |  | 2004 English: Translation error: "El Buen Monte" where the Latin has "in convéntu Belomontáno" (the convent of Belmonte). |
 | 9 | 1 | `mr:0409-maximus-alexandriae` |  | EG | dies_natalis |  |  |
 | 9 | 2 | `mr:0409-aedesius-alexandriae` |  | EG | dies_natalis | same as `mr:0408-aedesius-alexandriae` | 2004 English: Translation error: "virgins consecrated to a goddess" where the Latin has "vírgines Deo dicátas" (virgins consecrated to God). |
@@ -113,7 +113,7 @@
 | 9 | 10 | `mr:0409-gaucherius-aurelii` | * | FR | dies_natalis |  |  |
 | 9 | 11 | `mr:0409-ubaldus-de-burgo-sancti-sepulcri` | * | IT | dies_natalis |  |  |
 | 9 | 12 | `mr:0409-thomas-de-tolentino` | * | IN | dies_natalis |  |  |
-| 9 | 13 | `mr:0409-antonius-pavonus` | * | IT | dies_natalis |  |  |
+| 9 | 13 | `mr:0409-antonius-pavoni` | * | IT | dies_natalis |  |  |
 | 9 | 14 | `mr:0409-caelestina-faron` | * | PL | dies_natalis |  |  |
 | 10 | 1 | `mr:0410-terentius-et-socii` |  | TN | dies_natalis |  |  |
 | 10 | 2 | `mr:0410-apollonius-alexandriae` |  | EG | dies_natalis |  |  |
@@ -127,7 +127,7 @@
 | 10 | 10 | `mr:0410-magdalena-de-canossa` |  | IT | dies_natalis |  |  |
 | 10 | 11 | `mr:0410-bonifatius-zukowski` | * | DE | dies_natalis |  |  |
 | 11 | (1) | `mr:0411-stanislaus-cracoviensis` |  | PL | dies_natalis | same as `mr:0507-stanislaus-cracoviensis`; same as `mr:0508-stanislaus-cracoviensis` |  |
-| 11 | 2 | `mr:0411-antipa-pergami` |  | TR | commemoratio |  |  |
+| 11 | 2 | `mr:0411-antipas-pergami` |  | TR | commemoratio |  |  |
 | 11 | 3 | `mr:0411-philippus-gortynae` |  | GR | commemoratio |  |  |
 | 11 | 4 | `mr:0411-domnio-salonae` |  | HR | dies_natalis |  | 2004 Italian: Translation error: "A Spalato" (Split) where the Latin has "Salónæ" (Salona, the present Solin). |
 | 11 | 5 | `mr:0411-barsanuphius-gazae` |  | PS | dies_natalis |  |  |
@@ -136,7 +136,7 @@
 | 11 | 8 | `mr:0411-sancia-conimbriae` | * | PT | dies_natalis |  |  |
 | 11 | 9 | `mr:0411-antonius-carletti` | * | IT | dies_natalis |  |  |
 | 11 | 10 | `mr:0411-georgius-gervase` | * | GB | dies_natalis |  |  |
-| 11 | 11 | `mr:0411-gemma-galganus` |  | IT | dies_natalis |  |  |
+| 11 | 11 | `mr:0411-gemma-galgani` |  | IT | dies_natalis |  |  |
 | 11 | 12 | `mr:0411-helena-guerra` | * | IT | dies_natalis |  | Elena Guerra, blessed in the 2004 editions, was canonized on 20 October 2024. |
 | 11 | 13 | `mr:0411-sympronianus-ducki` | * | PL | dies_natalis |  | 2004 English: Translation error: "Symphorian" where the Latin has "Symproniáni" (Sympronian). |
 | 12 | 1 | `mr:0412-vissia-firmi` |  | IT | dies_natalis |  |  |
@@ -269,7 +269,7 @@
 | 21 | 9 | `mr:0421-romanus-adame` |  | MX | dies_natalis |  |  |
 | 22 | 1 | `mr:0422-soter-papa` |  | IT | dies_natalis |  |  |
 | 22 | 2 | `mr:0422-epipodius-lugduni` |  | FR | dies_natalis |  |  |
-| 22 | 3 | `mr:0422-leonida-alexandriae` |  | EG | commemoratio |  |  |
+| 22 | 3 | `mr:0422-leonidas-alexandriae` |  | EG | commemoratio |  |  |
 | 22 | 4 | `mr:0422-caius-papa` |  | IT | depositio |  |  |
 | 22 | 5 | `mr:0422-maryahb-persidis` |  | IR | commemoratio |  |  |
 | 22 | 6 | `mr:0422-agapitus-i` |  | TR | dies_natalis | same as `mr:0920-agapitus-i` |  |
@@ -285,11 +285,11 @@
 | 23 | 5 | `mr:0423-gerardus-tulli` |  | FR | dies_natalis |  | 2004 English: Translation error: "Gerald" where the Latin has "Gerárdi" (Gerard). |
 | 23 | 6 | `mr:0423-georgius-suellis` | * | IT | commemoratio |  |  |
 | 23 | 7 | `mr:0423-aegidius-asisiensis` | * | IT | dies_natalis |  |  |
-| 23 | 8 | `mr:0423-helena-valentinus` | * | IT | dies_natalis |  | 2004 English: Translation error: "Udine in Venice" where the Latin has "in Venétia" (the region of Venetia). Translation error: "Helena of Valentini" where the Latin "Hélenæ Valentíni" gives her surname (Helena Valentini). |
+| 23 | 8 | `mr:0423-helena-valentini` | * | IT | dies_natalis |  | 2004 English: Translation error: "Udine in Venice" where the Latin has "in Venétia" (the region of Venetia). Translation error: "Helena of Valentini" where the Latin "Hélenæ Valentíni" gives her surname (Helena Valentini). |
 | 23 | 9 | `mr:0423-teresia-maria-a-cruce` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0423-maria-gabriela-sagheddu` | * | IT | dies_natalis |  | 2004 English: Translation error: "the Crypt of the Ferrata" where the Latin "Cryptæ Ferrátæ" is the town of Grottaferrata. |
 | 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
-| 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | PS | commemoratio |  |  |
+| 24 | 2 | `mr:0424-maria-cleophae-et-salome` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander-lugduni` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus-nicomediae` |  |
 | 24 | 5 | `mr:0424-gregorius-illiberi` |  | ES | dies_natalis |  |  |

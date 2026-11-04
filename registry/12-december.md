@@ -36,7 +36,7 @@
 | 3 | 7 | `mr:1203-ioannes-nepomucenus-de-tschiderer` | * | IT | dies_natalis |  |  |
 | 4 | (1) | `mr:1204-ioannes-damascenus` |  | PS | dies_natalis | same as `mr:0327-ioannes-damascenus`; same as `mr:0506-ioannes-damascenus` |  |
 | 4 | 2 | `mr:1204-barbara-nicomediae` |  | TR | commemoratio |  |  |
-| 4 | 3 | `mr:1204-heracla-alexandriae` |  | EG | dies_natalis | same as `mr:0714-heracla-alexandriae` |  |
+| 4 | 3 | `mr:1204-heraclas-alexandriae` |  | EG | dies_natalis | same as `mr:0714-heracla-alexandriae` |  |
 | 4 | 4 | `mr:1204-meletius-sebastopoli` |  | TR | dies_natalis |  |  |
 | 4 | 5 | `mr:1204-felix-bononiae` |  | IT | dies_natalis |  |  |
 | 4 | 6 | `mr:1204-aprus-viennae` | * | FR | dies_natalis |  |  |
@@ -140,7 +140,7 @@
 | 13 | 7 | `mr:1213-othilia-altitonensis` |  | FR | dies_natalis |  |  |
 | 13 | 8 | `mr:1213-franciscus-marinoni` | * | IT | dies_natalis |  |  |
 | 13 | 9 | `mr:1213-ioanna-francisca-fremiot-de-chantal` |  | FR | dies_natalis |  |  |
-| 13 | 10 | `mr:1213-antonius-grassus` | * | IT | dies_natalis |  |  |
+| 13 | 10 | `mr:1213-antonius-grassi` | * | IT | dies_natalis |  |  |
 | 13 | 11 | `mr:1213-petrus-cho-hwa-so-et-socii` |  | KR | dies_natalis |  |  |
 | 14 | (1) | `mr:1214-ioannes-a-cruce` |  | ES | dies_natalis | same as `mr:1124-ioannes-a-cruce` |  |
 | 14 | 2 | `mr:1214-hero-et-socii` |  | EG | commemoratio |  | 2004 Italian: Translation error: "morì fatto a brandelli" (died torn to pieces) where the Latin has "différri præcépit" (the judge ordered him to be put off, sparing him). 2004 English: Translation error: "Ater" where the Latin has "Atéi" (Ateus). Translation error: "ordered to be dismissed" where the Latin has "différri præcépit" (ordered to be held back). |
@@ -262,7 +262,7 @@
 | 27 | 4 | `mr:1227-alaphridus-parte` | * | ES | dies_natalis |  | 2004 English: Translation error: "Liendo" where the Latin "Bléndii" denotes Santander. |
 | 27 | 5 | `mr:1227-iosephus-maria-corbin-ferrer` | * | ES | dies_natalis |  | 2004 Italian: Translation error: the title "martire" is omitted after "Giuseppe Maria Corbin Ferrer"; the Latin has "mártyris". 2004 English: Translation error: "Liendo" where the Latin "Bléndium" denotes Santander. |
 | 28 | (1) | `mr:1228-innocentes` |  | PS | dies_natalis |  |  |
-| 28 | 2 | `mr:1228-theona-alexandriae` |  | EG | dies_natalis |  |  |
+| 28 | 2 | `mr:1228-theonas-alexandriae` |  | EG | dies_natalis |  |  |
 | 28 | 3 | `mr:1228-antonius-lirini` |  | FR | commemoratio |  |  |
 | 28 | 4 | `mr:1228-matthias-de-nazareis` | * | IT | dies_natalis |  |  |
 | 28 | 5 | `mr:1228-franciscus-de-sales` |  | FR | dies_natalis |  | 2004 English: Translation error: "the day of his death at Annecy" where the Latin has "die depositiónis" (the day of his burial). |

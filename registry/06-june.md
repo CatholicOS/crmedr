@@ -22,8 +22,8 @@
 | 1 | 16 | `mr:0601-alphonsus-navarrete-et-socii` | * | JP | dies_natalis |  |  |
 | 1 | 17 | `mr:0601-ioannes-baptista-vernoy-de-montjournal` | * | FR | dies_natalis |  |  |
 | 1 | 18 | `mr:0601-iosephus-tuc` |  | VN | dies_natalis |  |  |
-| 1 | 19 | `mr:0601-ioannes-baptista-scalabrinus` | * | IT | dies_natalis |  | Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022. 2004 Latin: Error: "Pias Societátes a Sacro Corde" (of the Sacred Heart) for the congregations Scalabrini founded, which are the Missionaries and Missionary Sisters of Saint Charles. |
-| 1 | 20 | `mr:0601-hannibalis-maria-di-francia` |  | IT | dies_natalis |  |  |
+| 1 | 19 | `mr:0601-ioannes-baptista-scalabrini` | * | IT | dies_natalis |  | Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022. 2004 Latin: Error: "Pias Societátes a Sacro Corde" (of the Sacred Heart) for the congregations Scalabrini founded, which are the Missionaries and Missionary Sisters of Saint Charles. |
+| 1 | 20 | `mr:0601-hannibal-maria-di-francia` |  | IT | dies_natalis |  |  |
 | 2 | (1) | `mr:0602-marcellinus-et-petrus` |  | IT | dies_natalis |  |  |
 | 2 | 2 | `mr:0602-pothinus-et-socii` |  | FR | dies_natalis |  |  |
 | 2 | 3 | `mr:0602-erasmus-formiarum` |  | IT | dies_natalis |  |  |
@@ -151,7 +151,7 @@
 | 12 | 6 | `mr:0612-guido-cortonae` | * | IT | dies_natalis |  |  |
 | 12 | 7 | `mr:0612-placidus-ocrae` | * | IT | dies_natalis |  |  |
 | 12 | 8 | `mr:0612-lucretia-helena-cevoli` | * | IT | dies_natalis |  |  |
-| 12 | 9 | `mr:0612-gaspar-bertonus` |  | IT | dies_natalis |  |  |
+| 12 | 9 | `mr:0612-gaspar-bertoni` |  | IT | dies_natalis |  |  |
 | 12 | 10 | `mr:0612-laurentius-maria-a-sancto-francisco-xaverio` | * | IT | dies_natalis |  | 2004 Latin: Usage: "devotiónem dístulit" means "spread the devotion": differre in its sense "to spread abroad" (Lewis and Short, differo I.B.2), not "to postpone". The Italian has "diffuse". |
 | 12 | 11 | `mr:0612-mercedis-maria-a-iesu` | * | EC | dies_natalis |  | 2004 Italian: Translation error: "Rivibamba" for the city of Riobamba (Latin "Rivibámbæ"). |
 | 12 | 12 | `mr:0612-maria-candida-ab-eucharistia` | * | IT | dies_natalis |  |  |

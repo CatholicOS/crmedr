@@ -86,7 +86,7 @@
 | 6 | 8 | `mr:0906-bertrandus-de-garrigues` | * | FR | commemoratio |  | 2004 Italian: Translation error: "san Bertrando" (Saint) where the Latin has "beáti Bertrándi" (Blessed). |
 | 6 | 9 | `mr:0906-didacus-llorca-llopis` | * | ES | dies_natalis |  |  |
 | 6 | 10 | `mr:0906-paschalis-torres-lloret` | * | ES | dies_natalis |  |  |
-| 6 | 11 | `mr:0906-michael-czartoryskus` | * | PL | dies_natalis |  |  |
+| 6 | 11 | `mr:0906-michael-czartoryski` | * | PL | dies_natalis |  |  |
 | 7 | 1 | `mr:0907-regina-alesiae` |  | FR | dies_natalis |  |  |
 | 7 | 2 | `mr:0907-sozon-pompeiopoli` |  | TR | dies_natalis |  |  |
 | 7 | 3 | `mr:0907-festus-et-desiderius` |  | IT | dies_natalis |  |  |
@@ -167,7 +167,7 @@
 | 11 | 15 | `mr:0911-iosephus-maria-segura-penades` | * | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:0912-nomen-mariae` |  |  | celebratio |  |  |
 | 12 | 2 | `mr:0912-autonomus-bithyniae` |  | TR | dies_natalis |  |  |
-| 12 | 3 | `mr:0912-cronidis-et-socii` |  | EG | dies_natalis |  |  |
+| 12 | 3 | `mr:0912-cronides-et-socii` |  | EG | dies_natalis |  |  |
 | 12 | 4 | `mr:0912-albeus-emeliae` | * | IE | dies_natalis |  |  |
 | 12 | 5 | `mr:0912-guido-anderlaci` |  | BE | dies_natalis |  | 2004 Italian: Translation error: "Mariensee" where the Latin has "Maríæ Laci" (Our Lady of Laeken, near Brussels). |
 | 12 | 6 | `mr:0912-apollinaris-franco-et-socii` | * | JP | dies_natalis |  |  |
@@ -354,7 +354,7 @@
 | 24 | 14 | `mr:0924-iosephus-maria-ferrandiz-hernandez` | * | ES | dies_natalis |  |  |
 | 24 | 15 | `mr:0924-incarnatio-gil-valls` | * | ES | dies_natalis |  |  |
 | 24 | 16 | `mr:0924-iosephus-raymundus-ferragud-girbes` | * | ES | dies_natalis |  |  |
-| 25 | 1 | `mr:0925-cleopha-discipulus` |  | PS | commemoratio |  | The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed. |
+| 25 | 1 | `mr:0925-cleophas-discipulus` |  | PS | commemoratio |  | The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed. |
 | 25 | 2 | `mr:0925-firminus-ambiani` |  | FR | dies_natalis |  |  |
 | 25 | 3 | `mr:0925-paulus-et-tatta` |  | SY | dies_natalis |  | 2004 English: Translation error: "Tatia" where the Latin has "Tattæ" (Tatta). |
 | 25 | 4 | `mr:0925-solemnis-carnuti` |  | FR | dies_natalis |  | 2004 English: Translation error: "the region of Lyon" where the Latin has "in Gállia Lugdunénsi" (the province of Lugdunensian Gaul). |
@@ -400,7 +400,7 @@
 | 28 | 4 | `mr:0928-chariton-veteris-laurae` |  | PS | dies_natalis |  |  |
 | 28 | 5 | `mr:0928-zama-bononiae` |  | IT | dies_natalis | same as `mr:0124-zama-bononiae` |  |
 | 28 | 6 | `mr:0928-exsuperius-tolosae` |  | FR | dies_natalis |  |  |
-| 28 | 7 | `mr:0928-eustochius-bethlehem` |  | PS | commemoratio |  |  |
+| 28 | 7 | `mr:0928-eustochium-bethlehem` |  | PS | commemoratio |  |  |
 | 28 | 8 | `mr:0928-salonius-genevae` |  | CH | dies_natalis |  |  |
 | 28 | 9 | `mr:0928-faustus-regii` | * | FR | dies_natalis |  |  |
 | 28 | 10 | `mr:0928-annemundus-lugduni` | * | FR | dies_natalis |  |  |

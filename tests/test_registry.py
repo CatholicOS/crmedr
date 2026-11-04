@@ -171,7 +171,7 @@ class RenamesAppliedTest(unittest.TestCase):
 
     RENAMED = {
         "mr:1130-stephanus-fanus": "mr:1130-cuthbertus-mayne",
-        "mr:1115-guria": "mr:1115-guria-et-samona",                         # #40
+        "mr:1115-guria": "mr:1115-gurias-et-samonas",                       # #40, Latin nominatives
         "mr:0821-iosephus": "mr:0821-iosephus-dang-dinh-vien",
         "mr:0320-sabas": "mr:0320-viginti-monachi-palaestinae",
         "mr:0905-v": "mr:0905-quintus-capuae",                                     # #52

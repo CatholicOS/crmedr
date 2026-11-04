@@ -108,6 +108,11 @@ class FindPersonTest(unittest.TestCase):
         found = mt.find_person(text, "Martinus Sacerdos")
         self.assertEqual(span_text(text, found), "Martíni, cognoménto Sacerdótis")
 
+    def test_a_neuter_name_in_ium(self):
+        # Eustochium, Eustochii: the second declension neuter.
+        text = "Bethlehem, sanctæ Nemóchii, vírginis."
+        self.assertEqual(span_text(text, mt.find_person(text, "Nemochium")), "Nemóchii")
+
     def test_a_name_with_its_titles_after_a_comma(self):
         for text, name, words in [
             ("Commemorátio sancti Abrahæ, patriárchæ et ómnium credéntium patris.", "Abraham Patriarcha",

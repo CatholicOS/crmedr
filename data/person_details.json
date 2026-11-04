@@ -78407,31 +78407,6 @@
       "en": "Jean Charton de Millou"
     }
   },
-  "Q2738108": {
-    "description": {
-      "en": "Gallo-Roman saint",
-      "fr": "sainte catholique",
-      "de": "Märtyrin"
-    },
-    "born": {
-      "year": 250,
-      "precision": "century",
-      "circa": false
-    },
-    "died": null,
-    "image": {
-      "file": "Abbatiale Sainte-Valérie de Chambon-sur-Voueize - reliquaire.jpg",
-      "author": "Louis-Marie CAILLAUD",
-      "license": "CC BY-SA 4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
-    },
-    "wikipedia": {
-      "en": "Valerie of Limoges",
-      "fr": "Valérie de Limoges",
-      "de": "Valeria von Limoges",
-      "es": "Valeria de Limoges"
-    }
-  },
   "Q2742399": {
     "description": {
       "en": "Christian Saint",
@@ -87320,6 +87295,26 @@
     "wikipedia": {
       "en": "Valère de Langres",
       "fr": "Valère de Langres"
+    }
+  },
+  "Q3554214": {
+    "description": {
+      "es": "santo (537-620)"
+    },
+    "born": {
+      "year": 537,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 620,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "fr": "Valéric de Bernage",
+      "es": "Valerio de Limoges"
     }
   },
   "Q3554325": {

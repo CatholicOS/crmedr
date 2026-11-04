@@ -141,7 +141,7 @@
 | 11 | 2 | `mr:1011-tharacus-et-socii` |  | TR | dies_natalis |  |  |
 | 11 | 3 | `mr:1011-nicasius-et-socii` |  | FR | commemoratio |  |  |
 | 11 | 4 | `mr:1011-sanctinus-viroduni` |  | FR | dies_natalis | same as `mr:0922-sanctinus-viroduni` |  |
-| 11 | 5 | `mr:1011-sarmata-thebaidis` |  | EG | commemoratio |  |  |
+| 11 | 5 | `mr:1011-sarmatas-thebaidis` |  | EG | commemoratio |  |  |
 | 11 | 6 | `mr:1011-firminus-ucetiae` |  | FR | dies_natalis |  |  |
 | 11 | 7 | `mr:1011-canicus-ossoriae` |  | IE | dies_natalis |  |  |
 | 11 | 8 | `mr:1011-anastasius-schemaris` |  | GE | dies_natalis |  |  |
@@ -317,7 +317,7 @@
 | 24 | (1) | `mr:1024-antonius-maria-claret` |  | ES | dies_natalis |  |  |
 | 24 | 2 | `mr:1024-cyriacus-et-claudianus` |  | TR | dies_natalis |  |  |
 | 24 | 3 | `mr:1024-proclus-magnus` |  | TR | dies_natalis |  |  |
-| 24 | 4 | `mr:1024-aretha-et-socii` |  | SA | dies_natalis |  | 2004 English: Translation error: "also called Dhu Nuwas" where the Latin has "seu Dun‘an". |
+| 24 | 4 | `mr:1024-arethas-et-socii` |  | SA | dies_natalis |  | 2004 English: Translation error: "also called Dhu Nuwas" where the Latin has "seu Dun‘an". |
 | 24 | 5 | `mr:1024-senochus-turonum` | * | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:1024-martinus-vertavensis` | * | FR | dies_natalis |  |  |
 | 24 | 7 | `mr:1024-evergislus-coloniensis` |  | BE | dies_natalis |  |  |
@@ -353,7 +353,7 @@
 | 26 | 12 | `mr:1026-damianus-furcheri` | * | IT | dies_natalis |  |  |
 | 26 | 13 | `mr:1026-bonaventura-de-potentia` | * | IT | dies_natalis |  |  |
 | 27 | 1 | `mr:1027-evaristus-papa` |  | IT | dies_natalis | same as `mr:1026-evaristus-papa` |  |
-| 27 | 2 | `mr:1027-thrasea-eumeniae` |  | TR | dies_natalis | same as `mr:1005-thrasea-eumeniae` |  |
+| 27 | 2 | `mr:1027-thraseas-eumeniae` |  | TR | dies_natalis | same as `mr:1005-thrasea-eumeniae` |  |
 | 27 | 3 | `mr:1027-namatius-arvernae` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:1027-gaudiosus-neapoli` |  | IT | depositio | same as `mr:1028-gaudiosus-neapoli` |  |
 | 27 | 5 | `mr:1027-otteranus-hiensis` | * | GB | dies_natalis |  |  |

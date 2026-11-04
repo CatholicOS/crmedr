@@ -1043,7 +1043,7 @@
       }
     },
     {
-      "id": "mr:0103-theopemptus-et-theona",
+      "id": "mr:0103-theopemptus-et-theonas",
       "month": 1,
       "day": 3,
       "entry": 3,
@@ -3700,7 +3700,12 @@
           "label": "Limoges",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "year": 620,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0110-domitianus-melitenae",
@@ -6088,7 +6093,7 @@
       ]
     },
     {
-      "id": "mr:0116-mela-rhinocorurae",
+      "id": "mr:0116-melas-rhinocorurae",
       "month": 1,
       "day": 16,
       "entry": 3,
@@ -7494,7 +7499,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0120-ascla-antinoes",
+      "id": "mr:0120-asclas-antinoes",
       "month": 1,
       "day": 20,
       "entry": 3,
@@ -7697,7 +7702,7 @@
       }
     },
     {
-      "id": "mr:0120-eustochius-calafato",
+      "id": "mr:0120-eustochium-calafato",
       "month": 1,
       "day": 20,
       "entry": 9,
@@ -8911,7 +8916,7 @@
       }
     },
     {
-      "id": "mr:0124-babyla-antiochiae",
+      "id": "mr:0124-babylas-antiochiae",
       "month": 1,
       "day": 24,
       "entry": 4,
@@ -10736,7 +10741,7 @@
       ]
     },
     {
-      "id": "mr:0129-gilda-sapiens",
+      "id": "mr:0129-gildas-sapiens",
       "month": 1,
       "day": 29,
       "entry": 7,
@@ -13305,7 +13310,7 @@
       }
     },
     {
-      "id": "mr:0204-philea-et-philoromus",
+      "id": "mr:0204-phileas-et-philoromus",
       "month": 2,
       "day": 4,
       "entry": 3,
@@ -14198,7 +14203,7 @@
       }
     },
     {
-      "id": "mr:0206-melis-ardachae",
+      "id": "mr:0206-mel-ardachae",
       "month": 2,
       "day": 6,
       "entry": 5,
@@ -17835,7 +17840,7 @@
       }
     },
     {
-      "id": "mr:0216-marutha-persicus",
+      "id": "mr:0216-maruthas-persicus",
       "month": 2,
       "day": 16,
       "entry": 3,
@@ -20938,7 +20943,7 @@
       }
     },
     {
-      "id": "mr:0227-besa-alexandriae",
+      "id": "mr:0227-besas-alexandriae",
       "month": 2,
       "day": 27,
       "entry": 2,
@@ -23061,7 +23066,7 @@
       ]
     },
     {
-      "id": "mr:0305-phoca-sinopes",
+      "id": "mr:0305-phocas-sinopes",
       "month": 3,
       "day": 5,
       "entry": 4,
@@ -23974,7 +23979,7 @@
       }
     },
     {
-      "id": "mr:0307-leonida-fedorov",
+      "id": "mr:0307-leonidas-fedorov",
       "month": 3,
       "day": 7,
       "entry": 14,
@@ -26125,7 +26130,7 @@
       }
     },
     {
-      "id": "mr:0314-eva-montis-cornelius",
+      "id": "mr:0314-eva-montis-cornelii",
       "month": 3,
       "day": 14,
       "entry": 6,
@@ -26413,7 +26418,7 @@
       }
     },
     {
-      "id": "mr:0315-artemidis-zatti",
+      "id": "mr:0315-artemides-zatti",
       "month": 3,
       "day": 15,
       "entry": 9,
@@ -26481,7 +26486,7 @@
       }
     },
     {
-      "id": "mr:0316-papa-seleuciae",
+      "id": "mr:0316-papas-seleuciae",
       "month": 3,
       "day": 16,
       "entry": 2,
@@ -29327,7 +29332,7 @@
       }
     },
     {
-      "id": "mr:0325-dula-nicomediae",
+      "id": "mr:0325-dulas-nicomediae",
       "month": 3,
       "day": 25,
       "entry": 3,
@@ -29403,7 +29408,7 @@
       }
     },
     {
-      "id": "mr:0325-mona-mediolani",
+      "id": "mr:0325-monas-mediolani",
       "month": 3,
       "day": 25,
       "entry": 6,
@@ -30487,7 +30492,7 @@
       }
     },
     {
-      "id": "mr:0328-antonius-patrizus",
+      "id": "mr:0328-antonius-patrizi",
       "month": 3,
       "day": 28,
       "entry": 9,
@@ -31791,7 +31796,7 @@
       }
     },
     {
-      "id": "mr:0401-ludovicus-pavonus",
+      "id": "mr:0401-ludovicus-pavoni",
       "month": 4,
       "day": 1,
       "entry": 10,
@@ -34181,7 +34186,7 @@
       }
     },
     {
-      "id": "mr:0408-augustus-czartoryskus",
+      "id": "mr:0408-augustus-czartoryski",
       "month": 4,
       "day": 8,
       "entry": 10,
@@ -34642,7 +34647,7 @@
       }
     },
     {
-      "id": "mr:0409-antonius-pavonus",
+      "id": "mr:0409-antonius-pavoni",
       "month": 4,
       "day": 9,
       "entry": 13,
@@ -35028,7 +35033,7 @@
       ]
     },
     {
-      "id": "mr:0411-antipa-pergami",
+      "id": "mr:0411-antipas-pergami",
       "month": 4,
       "day": 11,
       "entry": 2,
@@ -35308,7 +35313,7 @@
       }
     },
     {
-      "id": "mr:0411-gemma-galganus",
+      "id": "mr:0411-gemma-galgani",
       "month": 4,
       "day": 11,
       "entry": 11,
@@ -35346,7 +35351,7 @@
           "la": "Lucæ in Itália",
           "it": "A Lucca",
           "source": "lead",
-          "via": "mr:0411-gemma-galganus",
+          "via": "mr:0411-gemma-galgani",
           "wikidata": "Q13373",
           "label": "Lucca",
           "country": "IT"
@@ -39217,7 +39222,7 @@
       }
     },
     {
-      "id": "mr:0422-leonida-alexandriae",
+      "id": "mr:0422-leonidas-alexandriae",
       "month": 4,
       "day": 22,
       "entry": 3,
@@ -39685,7 +39690,7 @@
       }
     },
     {
-      "id": "mr:0423-helena-valentinus",
+      "id": "mr:0423-helena-valentini",
       "month": 4,
       "day": 23,
       "entry": 8,
@@ -39801,7 +39806,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:0424-maria-cleopha-et-salome",
+      "id": "mr:0424-maria-cleophae-et-salome",
       "month": 4,
       "day": 24,
       "entry": 2,
@@ -44876,7 +44881,7 @@
       "note": "François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014."
     },
     {
-      "id": "mr:0506-maria-catharina-troianus",
+      "id": "mr:0506-maria-catharina-troiani",
       "month": 5,
       "day": 6,
       "entry": 10,
@@ -45787,7 +45792,7 @@
       ]
     },
     {
-      "id": "mr:0509-herma-discipulus",
+      "id": "mr:0509-hermas-discipulus",
       "month": 5,
       "day": 9,
       "entry": 2,
@@ -46096,7 +46101,7 @@
       }
     },
     {
-      "id": "mr:0509-stephanus-grelewskus",
+      "id": "mr:0509-stephanus-grelewski",
       "month": 5,
       "day": 9,
       "entry": 13,
@@ -46155,7 +46160,7 @@
       }
     },
     {
-      "id": "mr:0510-dioscoridis-myrae",
+      "id": "mr:0510-dioscorides-myrae",
       "month": 5,
       "day": 10,
       "entry": 2,
@@ -48211,7 +48216,7 @@
       }
     },
     {
-      "id": "mr:0516-abda-et-ebediesus",
+      "id": "mr:0516-abdas-et-ebediesus",
       "month": 5,
       "day": 16,
       "entry": 3,
@@ -54069,7 +54074,7 @@
       }
     },
     {
-      "id": "mr:0531-hermia-comanae",
+      "id": "mr:0531-hermias-comanae",
       "month": 5,
       "day": 31,
       "entry": 3,
@@ -54880,7 +54885,7 @@
       }
     },
     {
-      "id": "mr:0601-ioannes-baptista-scalabrinus",
+      "id": "mr:0601-ioannes-baptista-scalabrini",
       "month": 6,
       "day": 1,
       "entry": 19,
@@ -54918,7 +54923,7 @@
       }
     },
     {
-      "id": "mr:0601-hannibalis-maria-di-francia",
+      "id": "mr:0601-hannibal-maria-di-francia",
       "month": 6,
       "day": 1,
       "entry": 20,
@@ -59001,7 +59006,7 @@
       }
     },
     {
-      "id": "mr:0612-gaspar-bertonus",
+      "id": "mr:0612-gaspar-bertoni",
       "month": 6,
       "day": 12,
       "entry": 9,
@@ -67148,7 +67153,7 @@
       }
     },
     {
-      "id": "mr:0706-goaris-aquitaniae",
+      "id": "mr:0706-goar-aquitaniae",
       "month": 7,
       "day": 6,
       "entry": 7,
@@ -67829,7 +67834,7 @@
       }
     },
     {
-      "id": "mr:0707-maria-guo-lizhus",
+      "id": "mr:0707-maria-guo-lizhi",
       "month": 7,
       "day": 7,
       "entry": 14,
@@ -68270,7 +68275,7 @@
       }
     },
     {
-      "id": "mr:0708-mancius-arakus",
+      "id": "mr:0708-mancius-araki",
       "month": 7,
       "day": 8,
       "entry": 12,
@@ -69564,7 +69569,7 @@
       }
     },
     {
-      "id": "mr:0712-fortunatus-et-hermagora",
+      "id": "mr:0712-fortunatus-et-hermagoras",
       "month": 7,
       "day": 12,
       "entry": 2,
@@ -70050,7 +70055,7 @@
       ]
     },
     {
-      "id": "mr:0713-esdra-scriba",
+      "id": "mr:0713-esdras-scriba",
       "month": 7,
       "day": 13,
       "entry": 2,
@@ -70100,7 +70105,7 @@
       }
     },
     {
-      "id": "mr:0713-sila-discipulus",
+      "id": "mr:0713-silas-discipulus",
       "month": 7,
       "day": 13,
       "entry": 3,
@@ -73085,7 +73090,7 @@
       }
     },
     {
-      "id": "mr:0719-epaphra-colossarum",
+      "id": "mr:0719-epaphras-colossarum",
       "month": 7,
       "day": 19,
       "entry": 1,
@@ -74559,7 +74564,7 @@
       }
     },
     {
-      "id": "mr:0722-maria-wang-lizhus",
+      "id": "mr:0722-maria-wang-lizhi",
       "month": 7,
       "day": 22,
       "entry": 15,
@@ -77106,7 +77111,7 @@
       }
     },
     {
-      "id": "mr:0727-lucia-bufalarus",
+      "id": "mr:0727-lucia-bufalari",
       "month": 7,
       "day": 27,
       "entry": 15,
@@ -78332,7 +78337,7 @@
       }
     },
     {
-      "id": "mr:0730-mannis-guzman",
+      "id": "mr:0730-mannes-guzman",
       "month": 7,
       "day": 30,
       "entry": 7,
@@ -79405,7 +79410,7 @@
       }
     },
     {
-      "id": "mr:0801-ioannes-bufalarus",
+      "id": "mr:0801-ioannes-bufalari",
       "month": 8,
       "day": 1,
       "entry": 12,
@@ -80829,7 +80834,7 @@
       }
     },
     {
-      "id": "mr:0805-paridis-theani",
+      "id": "mr:0805-paris-theani",
       "month": 8,
       "day": 5,
       "entry": 3,
@@ -81202,7 +81207,7 @@
       }
     },
     {
-      "id": "mr:0806-hormisda-papa",
+      "id": "mr:0806-hormisdas-papa",
       "month": 8,
       "day": 6,
       "entry": 4,
@@ -84599,7 +84604,7 @@
       }
     },
     {
-      "id": "mr:0813-modestus-garcia-martus",
+      "id": "mr:0813-modestus-garcia-marti",
       "month": 8,
       "day": 13,
       "entry": 16,
@@ -89761,7 +89766,7 @@
       }
     },
     {
-      "id": "mr:0825-mena-constantinopoli",
+      "id": "mr:0825-menas-constantinopoli",
       "month": 8,
       "day": 25,
       "entry": 6,
@@ -90445,7 +90450,7 @@
       }
     },
     {
-      "id": "mr:0826-maria-beltrame-quattrocchus",
+      "id": "mr:0826-maria-beltrame-quattrocchi",
       "month": 8,
       "day": 26,
       "entry": 15,
@@ -91027,7 +91032,7 @@
       }
     },
     {
-      "id": "mr:0827-raymundus-martus-soriano",
+      "id": "mr:0827-raymundus-marti-soriano",
       "month": 8,
       "day": 27,
       "entry": 19,
@@ -92621,7 +92626,7 @@
       ]
     },
     {
-      "id": "mr:0831-aristidis-athenarum",
+      "id": "mr:0831-aristides-athenarum",
       "month": 8,
       "day": 31,
       "entry": 2,
@@ -95258,7 +95263,7 @@
       }
     },
     {
-      "id": "mr:0906-michael-czartoryskus",
+      "id": "mr:0906-michael-czartoryski",
       "month": 9,
       "day": 6,
       "entry": 11,
@@ -97591,7 +97596,7 @@
       }
     },
     {
-      "id": "mr:0912-cronidis-et-socii",
+      "id": "mr:0912-cronides-et-socii",
       "month": 9,
       "day": 12,
       "entry": 3,
@@ -102992,7 +102997,7 @@
       }
     },
     {
-      "id": "mr:0925-cleopha-discipulus",
+      "id": "mr:0925-cleophas-discipulus",
       "month": 9,
       "day": 25,
       "entry": 1,
@@ -104335,7 +104340,7 @@
       }
     },
     {
-      "id": "mr:0928-eustochius-bethlehem",
+      "id": "mr:0928-eustochium-bethlehem",
       "month": 9,
       "day": 28,
       "entry": 7,
@@ -109814,7 +109819,7 @@
       ]
     },
     {
-      "id": "mr:1011-sarmata-thebaidis",
+      "id": "mr:1011-sarmatas-thebaidis",
       "month": 10,
       "day": 11,
       "entry": 5,
@@ -114961,7 +114966,7 @@
       }
     },
     {
-      "id": "mr:1024-aretha-et-socii",
+      "id": "mr:1024-arethas-et-socii",
       "month": 10,
       "day": 24,
       "entry": 4,
@@ -116037,7 +116042,7 @@
       ]
     },
     {
-      "id": "mr:1027-thrasea-eumeniae",
+      "id": "mr:1027-thraseas-eumeniae",
       "month": 10,
       "day": 27,
       "entry": 2,
@@ -118235,7 +118240,7 @@
       }
     },
     {
-      "id": "mr:1102-malachia-dunensis",
+      "id": "mr:1102-malachias-dunensis",
       "month": 11,
       "day": 2,
       "entry": 11,
@@ -119400,7 +119405,7 @@
       }
     },
     {
-      "id": "mr:1105-gomida-keumurgian",
+      "id": "mr:1105-gomidas-keumurgian",
       "month": 11,
       "day": 5,
       "entry": 8,
@@ -121088,7 +121093,7 @@
       }
     },
     {
-      "id": "mr:1109-aloysius-beltrame-quattrocchus",
+      "id": "mr:1109-aloysius-beltrame-quattrocchi",
       "month": 11,
       "day": 9,
       "entry": 14,
@@ -121496,7 +121501,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1111-menna-mareotidem",
+      "id": "mr:1111-mennas-mareotidem",
       "month": 11,
       "day": 11,
       "entry": 2,
@@ -121554,7 +121559,7 @@
       }
     },
     {
-      "id": "mr:1111-menna-samnii",
+      "id": "mr:1111-mennas-samnii",
       "month": 11,
       "day": 11,
       "entry": 4,
@@ -122193,7 +122198,7 @@
       }
     },
     {
-      "id": "mr:1113-mitria-aquarum-sextiarum",
+      "id": "mr:1113-mitrias-aquarum-sextiarum",
       "month": 11,
       "day": 13,
       "entry": 2,
@@ -123126,7 +123131,7 @@
       }
     },
     {
-      "id": "mr:1115-guria-et-samona",
+      "id": "mr:1115-gurias-et-samonas",
       "month": 11,
       "day": 15,
       "entry": 3,
@@ -130273,7 +130278,7 @@
       }
     },
     {
-      "id": "mr:1204-heracla-alexandriae",
+      "id": "mr:1204-heraclas-alexandriae",
       "month": 12,
       "day": 4,
       "entry": 3,
@@ -133316,7 +133321,7 @@
       }
     },
     {
-      "id": "mr:1213-antonius-grassus",
+      "id": "mr:1213-antonius-grassi",
       "month": 12,
       "day": 13,
       "entry": 10,
@@ -136868,7 +136873,7 @@
       "unnumbered": true
     },
     {
-      "id": "mr:1228-theona-alexandriae",
+      "id": "mr:1228-theonas-alexandriae",
       "month": 12,
       "day": 28,
       "entry": 2,
@@ -139139,7 +139144,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG",
       "same_eulogy": [
-        "mr:0120-ascla-antinoes"
+        "mr:0120-asclas-antinoes"
       ]
     },
     {
@@ -146287,7 +146292,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "EG",
       "same_eulogy": [
-        "mr:1204-heracla-alexandriae"
+        "mr:1204-heraclas-alexandriae"
       ]
     },
     {
@@ -150154,7 +150159,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "TR",
       "same_eulogy": [
-        "mr:1027-thrasea-eumeniae"
+        "mr:1027-thraseas-eumeniae"
       ]
     },
     {
@@ -151496,7 +151501,7 @@
       "attested_in": "martyrologium_romanum_1749",
       "country": "FR",
       "same_eulogy": [
-        "mr:1102-malachia-dunensis"
+        "mr:1102-malachias-dunensis"
       ]
     },
     {
@@ -152870,7 +152875,7 @@
       "attested_in": "martyrologium_romanum_1914_en_unofficial",
       "country": null,
       "same_eulogy": [
-        "mr:0216-marutha-persicus"
+        "mr:0216-maruthas-persicus"
       ]
     },
     {
