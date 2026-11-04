@@ -729,7 +729,7 @@ Places the gazetteer knows, printed in a eulogy where no place item covers them:
 - `mr:0422-agapitus-i`: Constantinópoli, Constantinópolim, Románus
 - `mr:0423-georgius-diospoli`: Occidénte, Oriénte
 - `mr:0423-gerardus-tulli`: ecclésiam cathedrálem
-- `mr:0424-maria-cleopha-et-salome`: sepúlcrum Dómini
+- `mr:0424-maria-cleophae-et-salome`: sepúlcrum Dómini
 - `mr:0424-mellitus-cantuariensis`: Cantuariénsem
 - `mr:0425-franca-placentina`: Cisterciénse
 - `mr:0425-petrus-de-betancur`: Béthlehem

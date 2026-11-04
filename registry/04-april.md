@@ -289,7 +289,7 @@
 | 23 | 9 | `mr:0423-teresia-maria-a-cruce` | * | IT | dies_natalis |  |  |
 | 23 | 10 | `mr:0423-maria-gabriela-sagheddu` | * | IT | dies_natalis |  | 2004 English: Translation error: "the Crypt of the Ferrata" where the Latin "Cryptæ Ferrátæ" is the town of Grottaferrata. |
 | 24 | (1) | `mr:0424-fidelis-de-sigmaringa` |  | CH | dies_natalis |  |  |
-| 24 | 2 | `mr:0424-maria-cleopha-et-salome` |  | PS | commemoratio |  |  |
+| 24 | 2 | `mr:0424-maria-cleophae-et-salome` |  | PS | commemoratio |  |  |
 | 24 | 3 | `mr:0424-alexander-lugduni` |  | FR | dies_natalis |  |  |
 | 24 | 4 | `mr:0424-anthimus-et-socii` |  | TR | dies_natalis | same as `mr:0427-anthimus-nicomediae` |  |
 | 24 | 5 | `mr:0424-gregorius-illiberi` |  | ES | dies_natalis |  |  |

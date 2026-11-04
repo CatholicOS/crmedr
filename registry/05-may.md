@@ -197,7 +197,7 @@
 | 15 | 11 | `mr:0515-andreas-abellon` | * | FR | dies_natalis |  |  |
 | 16 | 1 | `mr:0516-felix-et-gennadius` |  | TN | commemoratio |  |  |
 | 16 | 2 | `mr:0516-florentius-et-diocletianus` |  | IT | dies_natalis |  |  |
-| 16 | 3 | `mr:0516-abda-et-ebediesus` |  | IR | dies_natalis |  |  |
+| 16 | 3 | `mr:0516-abdas-et-ebediesus` |  | IR | dies_natalis |  |  |
 | 16 | 4 | `mr:0516-peregrinus-autissiodori` |  | FR | dies_natalis |  | 2004 English: Translation error: "Autun" where the Latin has "Autissiodorénsi" (Auxerre). |
 | 16 | 5 | `mr:0516-possidius-calamensis` |  | DZ | commemoratio |  |  |
 | 16 | 6 | `mr:0516-fidolus-trecis` |  | FR | dies_natalis |  | 2004 English: Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lugdunensian Gaul). |

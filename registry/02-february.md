@@ -53,7 +53,7 @@
 | 3 | 15 | `mr:0203-maria-helena-stollenwerk` | * | NL | dies_natalis |  |  |
 | 4 | 1 | `mr:0204-eutychius-romae` |  | IT | dies_natalis |  | 2004 English: Translation error: "Eutychii" where the Latin genitive "Eutýchii" means Eutychius. |
 | 4 | 2 | `mr:0204-papias-et-socii` |  | TR | dies_natalis |  | 2004 English: Translation error: "In Pamphylia" omits "Perge", the city named in the Latin. Translation error: "Papirius" where the Latin has "Pápiæ" (Papias). |
-| 4 | 3 | `mr:0204-philea-et-philoromus` |  | EG | dies_natalis |  | 2004 English: Translation error: "Philere" where the Latin has "Philéæ" (Phileas). |
+| 4 | 3 | `mr:0204-phileas-et-philoromus` |  | EG | dies_natalis |  | 2004 English: Translation error: "Philere" where the Latin has "Philéæ" (Phileas). |
 | 4 | 4 | `mr:0204-isidorus-pelusii` |  | EG | dies_natalis |  |  |
 | 4 | 5 | `mr:0204-aventinus-castelloduni` | * | FR | dies_natalis |  |  |
 | 4 | 6 | `mr:0204-aventinus-trecis` |  | FR | dies_natalis |  | 2004 English: Translation error: "in France, Lyon" where the Latin has "in Gállia Lugdunénsi" (in the province of Lugdunensis). |

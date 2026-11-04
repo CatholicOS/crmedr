@@ -192,7 +192,7 @@
 | 14 | 12 | `mr:1114-stephanus-theodorus-cuenot` |  | VN | dies_natalis |  |  |
 | 15 | (1) | `mr:1115-albertus-magnus` |  | DE | dies_natalis |  |  |
 | 15 | 2 | `mr:1115-viginti-martyres-hipponis-regii` |  | DZ | dies_natalis |  | 2004 English: Translation error: "Valerian" where the Latin has "Valeriánæ" (Valeriana). |
-| 15 | 3 | `mr:1115-guria-et-samona` |  | TR | dies_natalis |  | 2004 English: Translation error: "the Mysian governor" where the Latin has "a Mysiáno præfécto" (by the prefect Mysianus). |
+| 15 | 3 | `mr:1115-gurias-et-samonas` |  | TR | dies_natalis |  | 2004 English: Translation error: "the Mysian governor" where the Latin has "a Mysiáno præfécto" (by the prefect Mysianus). |
 | 15 | 4 | `mr:1115-felix-nolae` | * | IT | dies_natalis |  |  |
 | 15 | 5 | `mr:1115-maclovius-alethensis` |  | FR | dies_natalis |  |  |
 | 15 | 6 | `mr:1115-desiderius-cadurci` | * | FR | dies_natalis |  |  |

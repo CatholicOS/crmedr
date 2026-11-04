@@ -39,7 +39,7 @@
 | 2 | 15 | `mr:0102-maria-stella-soureau-blondin` | * | CA | dies_natalis |  |  |
 | 3 | (1) | `mr:0103-nomen-iesu` |  |  | celebratio |  |  |
 | 3 | 2 | `mr:0103-antherus-papa` |  | IT | depositio |  |  |
-| 3 | 3 | `mr:0103-theopemptus-et-theona` |  | TR | dies_natalis |  |  |
+| 3 | 3 | `mr:0103-theopemptus-et-theonas` |  | TR | dies_natalis |  |  |
 | 3 | 4 | `mr:0103-gordius-caesareae` |  | TR | dies_natalis |  |  |
 | 3 | 5 | `mr:0103-daniel-patavii` |  | IT | commemoratio |  |  |
 | 3 | 6 | `mr:0103-theogenes-parii` |  | TR | dies_natalis | same as `mr:0103-cyrinus-et-socii` |  |

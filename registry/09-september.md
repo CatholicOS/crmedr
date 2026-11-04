@@ -167,7 +167,7 @@
 | 11 | 15 | `mr:0911-iosephus-maria-segura-penades` | * | ES | dies_natalis |  |  |
 | 12 | (1) | `mr:0912-nomen-mariae` |  |  | celebratio |  |  |
 | 12 | 2 | `mr:0912-autonomus-bithyniae` |  | TR | dies_natalis |  |  |
-| 12 | 3 | `mr:0912-cronidis-et-socii` |  | EG | dies_natalis |  |  |
+| 12 | 3 | `mr:0912-cronides-et-socii` |  | EG | dies_natalis |  |  |
 | 12 | 4 | `mr:0912-albeus-emeliae` | * | IE | dies_natalis |  |  |
 | 12 | 5 | `mr:0912-guido-anderlaci` |  | BE | dies_natalis |  | 2004 Italian: Translation error: "Mariensee" where the Latin has "Maríæ Laci" (Our Lady of Laeken, near Brussels). |
 | 12 | 6 | `mr:0912-apollinaris-franco-et-socii` | * | JP | dies_natalis |  |  |

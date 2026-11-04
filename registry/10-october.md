@@ -317,7 +317,7 @@
 | 24 | (1) | `mr:1024-antonius-maria-claret` |  | ES | dies_natalis |  |  |
 | 24 | 2 | `mr:1024-cyriacus-et-claudianus` |  | TR | dies_natalis |  |  |
 | 24 | 3 | `mr:1024-proclus-magnus` |  | TR | dies_natalis |  |  |
-| 24 | 4 | `mr:1024-aretha-et-socii` |  | SA | dies_natalis |  | 2004 English: Translation error: "also called Dhu Nuwas" where the Latin has "seu Dun‘an". |
+| 24 | 4 | `mr:1024-arethas-et-socii` |  | SA | dies_natalis |  | 2004 English: Translation error: "also called Dhu Nuwas" where the Latin has "seu Dun‘an". |
 | 24 | 5 | `mr:1024-senochus-turonum` | * | FR | dies_natalis |  |  |
 | 24 | 6 | `mr:1024-martinus-vertavensis` | * | FR | dies_natalis |  |  |
 | 24 | 7 | `mr:1024-evergislus-coloniensis` |  | BE | dies_natalis |  |  |

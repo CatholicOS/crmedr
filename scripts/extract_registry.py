@@ -2612,7 +2612,7 @@ REVIEW_EDITION_NOTES = {
             "terribly because he had preached)."
         ),
     },
-    "mr:0204-philea-et-philoromus": {
+    "mr:0204-phileas-et-philoromus": {
         EDITION_EN: (
             "Translation error: \"Philere\" where the Latin has \"Philéæ\" (Phileas)."
         ),
@@ -4725,7 +4725,7 @@ REVIEW_EDITION_NOTES = {
             "(having left his mother)."
         ),
     },
-    "mr:1024-aretha-et-socii": {
+    "mr:1024-arethas-et-socii": {
         EDITION_EN: (
             "Translation error: \"also called Dhu Nuwas\" where the Latin has \"seu Dun‘an\"."
         ),
@@ -4889,7 +4889,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Augustine\" where the Latin has \"Augustínæ\" (Augustina)."
         ),
     },
-    "mr:1115-guria-et-samona": {
+    "mr:1115-gurias-et-samonas": {
         EDITION_EN: (
             "Translation error: \"the Mysian governor\" where the Latin has \"a Mysiáno "
             "præfécto\" (by the prefect Mysianus)."

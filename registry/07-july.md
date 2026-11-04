@@ -153,7 +153,7 @@
 | 11 | 14 | `mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii` | * | FR | dies_natalis |  |  |
 | 11 | 15 | `mr:0711-anna-an-xinzhi-et-socii` |  | CN | dies_natalis |  | 2004 Italian: Misprint: "Maia An Guozhi" for "Maria An Guozhi". |
 | 12 | 1 | `mr:0712-proclus-et-hilarion` |  | TR | dies_natalis | Latin: absent; English: absent | 2004 Italian: Absent from the Latin editio altera 2004 print, whose July 12 numbering begins at 2 with the gap left unrenumbered. |
-| 12 | 2 | `mr:0712-fortunatus-et-hermagora` |  | IT | dies_natalis |  |  |
+| 12 | 2 | `mr:0712-fortunatus-et-hermagoras` |  | IT | dies_natalis |  |  |
 | 12 | 3 | `mr:0712-nabor-et-felix` |  | IT | dies_natalis |  | 2004 Italian: Translation error: "a Lodi" where the Latin has "Laude Pompéia" (Laus Pompeia, today Lodi Vecchio). |
 | 12 | 4 | `mr:0712-paternianus-fani` |  | IT | dies_natalis |  |  |
 | 12 | 5 | `mr:0712-viventiolus-lugduni` |  | FR | dies_natalis |  |  |

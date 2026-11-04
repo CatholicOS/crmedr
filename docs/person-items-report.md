@@ -95,7 +95,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0412-iulius-i|Iulius I: Q103101
 - mr:0416-engratia-caesaraugustae|Engratia: Q32313
 - mr:0422-leonidas-alexandriae|Leonida: Q6526588
-- mr:0424-maria-cleopha-et-salome|Salome: Q233067
+- mr:0424-maria-cleophae-et-salome|Salome: Q233067
 - mr:0426-cletus-papa|Cletus: Q80450
 - mr:0429-tychicus-discipulus|Tychicus: Q1396807
 - mr:0501-sigismundus-aurelianensis|Sigismundus: Q318347
