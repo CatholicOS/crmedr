@@ -137,6 +137,8 @@ def _declined(word):
     """The (stem, endings) pairs a folded Latin name word declines by, from its
     nominative ending (longest first). A word with no such ending declines not at
     all: a foreign surname is found only as printed."""
+    if word.endswith("ium"):  # a neuter: Eustochium, Eustochii, Eustochio
+        return [(word[:-2], ["um", "i", "o"])]
     if word.endswith("ius"):  # Gregorius, Gregorii, Gregorio, Gregorium, Gregori
         return [(word[:-2], ["us", "i", "o", "um", ""])]
     if word.endswith("us"):
