@@ -74,7 +74,7 @@
 | 6 | 4 | `mr:0706-sisoes-magnus` | * | EG | dies_natalis |  |  |
 | 6 | 5 | `mr:0706-palladius-scotiae` | * | GB | commemoratio |  | 2004 Italian: Translation error: "morì in Inghilterra" (died in England) where the Latin has "ibídem óbiit" (died there, in Scotland). |
 | 6 | 6 | `mr:0706-monenna-armachana` | * | GB | dies_natalis |  |  |
-| 6 | 7 | `mr:0706-goaris-aquitaniae` |  | DE | dies_natalis |  |  |
+| 6 | 7 | `mr:0706-goar-aquitaniae` |  | DE | dies_natalis |  |  |
 | 6 | 8 | `mr:0706-iustus-condatiscensis` | * | FR | dies_natalis |  |  |
 | 6 | 9 | `mr:0706-thomas-more` |  | GB | dies_natalis |  |  |
 | 6 | 10 | `mr:0706-thomas-alfield` | * | GB | dies_natalis |  |  |
@@ -96,7 +96,7 @@
 | 7 | 11 | `mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene` | * | FR | dies_natalis |  |  |
 | 7 | 12 | `mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro` |  | CN | dies_natalis |  |  |
 | 7 | 13 | `mr:0707-marcus-ji-tianxiang` |  | CN | dies_natalis |  | 2004 Italian: Translation error: "Jixian" where the Latin has "Ueihœivénsem" (Weixian). |
-| 7 | 14 | `mr:0707-maria-guo-lizhus` |  | CN | dies_natalis |  |  |
+| 7 | 14 | `mr:0707-maria-guo-lizhi` |  | CN | dies_natalis |  |  |
 | 7 | 15 | `mr:0707-petrus-to-rot` | * | PG | dies_natalis |  | Peter To Rot, blessed in the 2004 editions, was canonized on 19 October 2025. |
 | 7 | 16 | `mr:0707-maria-romero-meneses` | * | NI | dies_natalis |  |  |
 | 8 | 1 | `mr:0708-aquila-et-prisca` |  | IT | commemoratio |  |  |
@@ -110,7 +110,7 @@
 | 8 | 9 | `mr:0708-monachi-abrahamitae` |  | TR | dies_natalis |  |  |
 | 8 | 10 | `mr:0708-hadrianus-iii` | * | IT | dies_natalis | same as `mr:0907-hadrianus-iii` |  |
 | 8 | 11 | `mr:0708-eugenius-iii` | * | IT | dies_natalis |  | 1914 English: Translation error: the Latin 'Eugenii Papae Tertii' is Eugenius III. 2004 Italian: Translation error: "dalle insidie dell’eresia" (from the snares of heresy) where the Latin has "ab infidélium insídiis" (from the snares of unbelievers). |
-| 8 | 12 | `mr:0708-mancius-arakus` | * | JP | dies_natalis |  |  |
+| 8 | 12 | `mr:0708-mancius-araki` | * | JP | dies_natalis |  |  |
 | 8 | 13 | `mr:0708-ioannes-wu-wenyin` |  | CN | dies_natalis |  | 2004 English: Translation error: "condemned to death by beheading" where the Latin has only "cápite damnátus" (condemned to death). |
 | 9 | (1) | `mr:0709-augustinus-zhao-rong-et-socii` |  | CN | dies_natalis |  |  |
 | 9 | 2 | `mr:0709-ioanna-scopelli` | * | IT | dies_natalis |  |  |
@@ -167,8 +167,8 @@
 | 12 | 13 | `mr:0712-agnes-le-thi-thanh` |  | VN | dies_natalis |  |  |
 | 12 | 14 | `mr:0712-petrus-khanh` |  | VN | dies_natalis |  |  |
 | 13 | (1) | `mr:0713-henricus-imperator` |  | DE | dies_natalis | same as `mr:0714-henricus-imperator`; same as `mr:0715-henricus-imperator` | 2004 Latin: Source error: "in Francónia" (in Franconia), but Grona near Göttingen lies in Saxony. |
-| 13 | 2 | `mr:0713-esdra-scriba` |  | IQ | commemoratio |  |  |
-| 13 | 3 | `mr:0713-sila-discipulus` |  |  | commemoratio |  |  |
+| 13 | 2 | `mr:0713-esdras-scriba` |  | IQ | commemoratio |  |  |
+| 13 | 3 | `mr:0713-silas-discipulus` |  |  | commemoratio |  |  |
 | 13 | 4 | `mr:0713-serapion-alexandriae` |  | EG | dies_natalis |  |  |
 | 13 | 5 | `mr:0713-myrope-chii` |  | GR | dies_natalis |  |  |
 | 13 | 6 | `mr:0713-alexander-et-socii` |  | TR | dies_natalis |  |  |
@@ -266,7 +266,7 @@
 | 18 | 11 | `mr:0718-ioannes-baptista-de-bruxelles` | * | FR | dies_natalis |  |  |
 | 18 | 12 | `mr:0718-dominicus-nicolaus-dinh-dat` |  | VN | dies_natalis |  | 2004 Italian: Translation error: "per espiare la colpa dell’apostasia" where the Latin has "pretio apostasiae reddito" (having returned the reward given for his apostasy). 2004 English: Translation error: "paid the price of his apostasy" where the Latin "prétio apostásiæ réddito" means he returned the reward given him for apostatizing. |
 | 18 | 13 | `mr:0718-olga-mackiv` | * | UA | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 13*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (13*). |
-| 19 | 1 | `mr:0719-epaphra-colossarum` |  | TR | commemoratio |  |  |
+| 19 | 1 | `mr:0719-epaphras-colossarum` |  | TR | commemoratio |  |  |
 | 19 | 2 | `mr:0719-macedonius-et-socii` |  | TR | dies_natalis | same as `mr:0912-macedonius-et-socii` |  |
 | 19 | 3 | `mr:0719-macrina-annisae` |  | TR | dies_natalis |  | 1914 English: Misprint: 'Marcina' for Macrina. |
 | 19 | 4 | `mr:0719-dius-thaumaturgus` | * | TR | dies_natalis |  | 2004 English: Translation error: "Dii" (a Latin genitive) where the name is Dius. |
@@ -318,7 +318,7 @@
 | 22 | 12 | `mr:0722-philippus-evans-et-ioannes-lloyd` |  | GB | dies_natalis |  |  |
 | 22 | 13 | `mr:0722-iacobus-lombardie` | * | FR | dies_natalis |  |  |
 | 22 | 14 | `mr:0722-anna-wang-et-socii` |  | CN | dies_natalis |  |  |
-| 22 | 15 | `mr:0722-maria-wang-lizhus` |  | CN | dies_natalis |  |  |
+| 22 | 15 | `mr:0722-maria-wang-lizhi` |  | CN | dies_natalis |  |  |
 | 23 | (1) | `mr:0723-birgitta-romae` |  | SE | dies_natalis | same as `mr:1008-birgitta-romae` | 2004 English: Translation error: "the Mystical Church" where the Latin "mýstice reformándis" speaks of reforming the Church mystically. |
 | 23 | 2 | `mr:0723-ezechiel-propheta` |  | PS | commemoratio |  |  |
 | 23 | 3 | `mr:0723-apollinaris-ravennae` |  | IT | commemoratio |  |  |
@@ -406,7 +406,7 @@
 | 27 | 12 | `mr:0727-bertholdus-garstensis` | * | AT | dies_natalis |  |  |
 | 27 | 13 | `mr:0727-raymundus-palmerio` | * | IT | dies_natalis |  | 2004 Italian: Translation error: "la moglie e il figlio" (one son) where the Latin has "uxore et filiis" (wife and children). |
 | 27 | 14 | `mr:0727-nevolonus-faventiae` | * | IT | dies_natalis |  |  |
-| 27 | 15 | `mr:0727-lucia-bufalarus` | * | IT | dies_natalis |  |  |
+| 27 | 15 | `mr:0727-lucia-bufalari` | * | IT | dies_natalis |  |  |
 | 27 | 16 | `mr:0727-robertus-sutton` | * | GB | dies_natalis |  |  |
 | 27 | 17 | `mr:0727-gulielmus-davies` | * | GB | dies_natalis |  |  |
 | 27 | 18 | `mr:0727-maria-magdalena-martinengo` | * | IT | dies_natalis |  |  |
@@ -450,7 +450,7 @@
 | 30 | 4 | `mr:0730-maxima-et-socii` |  | TN | dies_natalis |  |  |
 | 30 | 5 | `mr:0730-ursus-autissiodori` |  | FR | dies_natalis |  |  |
 | 30 | 6 | `mr:0730-godeleva-gistellae` | * | BE | dies_natalis | CEI: asterisk False | 2004 Latin: Asterisked here (entry 6*); the Italian (CEI) edition prints the entry without an asterisk. 2004 Italian: Printed here without an asterisk; the Latin editio altera prints the entry with one (6*). |
-| 30 | 7 | `mr:0730-mannis-guzman` | * | ES | commemoratio |  |  |
+| 30 | 7 | `mr:0730-mannes-guzman` | * | ES | commemoratio |  |  |
 | 30 | 8 | `mr:0730-eduardus-powell-et-socii` | * | GB | dies_natalis |  |  |
 | 30 | 9 | `mr:0730-iosephus-yuan-gengyin` |  | CN | dies_natalis |  |  |
 | 30 | 10 | `mr:0730-paulus-corres-diaz-de-cerio-et-socii` | * | ES | dies_natalis |  |  |

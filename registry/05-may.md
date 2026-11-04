@@ -84,7 +84,7 @@
 | 6 | 7 | `mr:0506-bartholomaeus-pucci-franceschi` | * | IT | dies_natalis |  |  |
 | 6 | 8 | `mr:0506-eduardus-jones-et-antonius-middleton` | * | GB | dies_natalis |  | 2004 English: Translation error: "hanged on pitchforks" where the Latin has "furcis suspénsi sunt" (hanged on gallows). |
 | 6 | 9 | `mr:0506-franciscus-de-montmorency-laval` | * | CA | dies_natalis |  | François de Montmorency-Laval, blessed in the 2004 editions, was canonized on 3 April 2014. |
-| 6 | 10 | `mr:0506-maria-catharina-troianus` | * | EG | dies_natalis |  |  |
+| 6 | 10 | `mr:0506-maria-catharina-troiani` | * | EG | dies_natalis |  |  |
 | 6 | 11 | `mr:0506-anna-rosa-gattorno` | * | IT | dies_natalis |  |  |
 | 6 | 12 | `mr:0506-henricus-kaczorowski-et-casimirus-gostynski` | * | DE | dies_natalis |  |  |
 | 7 | 1 | `mr:0507-domitilla-romae` |  | IT | commemoratio |  |  |
@@ -114,7 +114,7 @@
 | 8 | 16 | `mr:0508-francisca-nisch` | * | DE | dies_natalis |  |  |
 | 8 | 17 | `mr:0508-antonius-bajewski` | * | PL | dies_natalis |  |  |
 | 9 | 1 | `mr:0509-isaias-propheta` |  | PS | commemoratio | same as `mr:0706-isaias-propheta` |  |
-| 9 | 2 | `mr:0509-herma-discipulus` |  | PS | commemoratio |  |  |
+| 9 | 2 | `mr:0509-hermas-discipulus` |  | PS | commemoratio |  |  |
 | 9 | 3 | `mr:0509-pachomius-thebaidis` |  | EG | dies_natalis | same as `mr:0514-pachomius-thebaidis` |  |
 | 9 | 4 | `mr:0509-trecenti-decem-martyres-persidis` |  | IR | dies_natalis |  |  |
 | 9 | 5 | `mr:0509-dionysius-viennae` |  | FR | dies_natalis | same as `mr:0508-dionysius-viennae` | 2004 English: Translation error: "in Lyon France" where the Latin has "in Gállia Lugdunénsi" (in Lugdunensian Gaul). |
@@ -125,9 +125,9 @@
 | 9 | 10 | `mr:0509-thomas-pickering` | * | GB | dies_natalis |  |  |
 | 9 | 11 | `mr:0509-iosephus-do-quang-hien` |  | VN | dies_natalis |  |  |
 | 9 | 12 | `mr:0509-carolina-gerhardinger` | * | DE | dies_natalis |  |  |
-| 9 | 13 | `mr:0509-stephanus-grelewskus` | * | DE | dies_natalis |  |  |
+| 9 | 13 | `mr:0509-stephanus-grelewski` | * | DE | dies_natalis |  |  |
 | 10 | 1 | `mr:0510-iob-patiens` |  | JO | commemoratio |  |  |
-| 10 | 2 | `mr:0510-dioscoridis-myrae` |  | TR | dies_natalis |  |  |
+| 10 | 2 | `mr:0510-dioscorides-myrae` |  | TR | dies_natalis |  |  |
 | 10 | 3 | `mr:0510-alphius-et-socii` |  | IT | dies_natalis |  |  |
 | 10 | 4 | `mr:0510-gordianus-romae` |  | IT | dies_natalis |  |  |
 | 10 | 5 | `mr:0510-quartus-et-quintus` |  | IT | commemoratio | same as `mr:0510-quartus-et-quinctus` |  |
@@ -401,7 +401,7 @@
 | 30 | 12 | `mr:0530-otho-neururer` | * | DE | dies_natalis |  |  |
 | 31 | (1) | `mr:0531-visitatio-beatae-mariae-virginis` |  | PS | celebratio | same as `mr:0702-visitatio-beatae-mariae-virginis` |  |
 | 31 | 2 | `mr:0531-petronilla-romae` |  | IT | dies_natalis |  |  |
-| 31 | 3 | `mr:0531-hermia-comanae` |  | TR | dies_natalis |  |  |
+| 31 | 3 | `mr:0531-hermias-comanae` |  | TR | dies_natalis |  |  |
 | 31 | 4 | `mr:0531-cantius-et-socii` |  | IT | dies_natalis |  |  |
 | 31 | 5 | `mr:0531-silvius-tolosae` | * | FR | dies_natalis |  |  |
 | 31 | 6 | `mr:0531-iacobus-salomoni` | * | IT | dies_natalis |  |  |

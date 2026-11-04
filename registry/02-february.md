@@ -80,7 +80,7 @@
 | 6 | 2 | `mr:0206-antolianus-arvernae` |  | FR | dies_natalis |  |  |
 | 6 | 3 | `mr:0206-silvanus-emesae` |  | SY | commemoratio |  |  |
 | 6 | 4 | `mr:0206-dorothea-et-theophilus` |  | TR | dies_natalis |  |  |
-| 6 | 5 | `mr:0206-melis-ardachae` | * | IE | dies_natalis |  |  |
+| 6 | 5 | `mr:0206-mel-ardachae` | * | IE | dies_natalis |  |  |
 | 6 | 6 | `mr:0206-vedastus-atrebati` |  | FR | dies_natalis |  |  |
 | 6 | 7 | `mr:0206-amandus-traiectensis` |  | FR | depositio |  |  |
 | 6 | 8 | `mr:0206-renula-eikensis` | * | BE | dies_natalis |  |  |
@@ -200,7 +200,7 @@
 | 15 | 11 | `mr:0215-claudius-la-colombiere` |  | FR | dies_natalis |  |  |
 | 16 | 1 | `mr:0216-iuliana-campaniae` |  | IT | dies_natalis |  |  |
 | 16 | 2 | `mr:0216-elias-et-socii` |  | IL | dies_natalis |  |  |
-| 16 | 3 | `mr:0216-marutha-persicus` |  | IR | dies_natalis | same as `mr:1204-maruthas-persicus` |  |
+| 16 | 3 | `mr:0216-maruthas-persicus` |  | IR | dies_natalis | same as `mr:1204-maruthas-persicus` |  |
 | 16 | 4 | `mr:0216-philippa-mareri` | * | IT | dies_natalis |  |  |
 | 16 | 5 | `mr:0216-nicolaus-paglia` | * | IT | commemoratio |  |  |
 | 16 | 6 | `mr:0216-iosephus-allamano` | * | IT | dies_natalis |  | Giuseppe Allamano, blessed in the 2004 editions, was canonized on 20 October 2024. |
@@ -305,7 +305,7 @@
 | 26 | 8 | `mr:0226-paula-a-sancto-iosepho-de-calasanz` |  | ES | dies_natalis |  |  |
 | 26 | 9 | `mr:0226-thomasina-ortiz-real` | * | ES | dies_natalis |  |  |
 | 27 | 1 | `mr:0227-iulianus-et-eunus` |  | EG | commemoratio |  |  |
-| 27 | 2 | `mr:0227-besa-alexandriae` |  | EG | dies_natalis |  |  |
+| 27 | 2 | `mr:0227-besas-alexandriae` |  | EG | dies_natalis |  |  |
 | 27 | 3 | `mr:0227-honorina-rothomagensis` | * | FR | dies_natalis |  |  |
 | 27 | 4 | `mr:0227-baldomerus-lugduni` |  | FR | dies_natalis |  |  |
 | 27 | 5 | `mr:0227-basilius-et-procopius-decapolita` |  | TR | dies_natalis |  |  |

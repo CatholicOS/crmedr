@@ -94,7 +94,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0407-hegesippus-romae|Hegesippus: Q503230
 - mr:0412-iulius-i|Iulius I: Q103101
 - mr:0416-engratia-caesaraugustae|Engratia: Q32313
-- mr:0422-leonida-alexandriae|Leonida: Q6526588
+- mr:0422-leonidas-alexandriae|Leonida: Q6526588
 - mr:0424-maria-cleopha-et-salome|Salome: Q233067
 - mr:0426-cletus-papa|Cletus: Q80450
 - mr:0429-tychicus-discipulus|Tychicus: Q1396807
@@ -112,7 +112,7 @@ Eulogies that do not mark the day of death: name, status and a single candidate 
 - mr:0706-palladius-scotiae|Palladius: Q715209
 - mr:0711-pius-i|Pius I: Q83198
 - mr:0711-thomas-benstead-et-thomas-sprott|Thomas Sprott: Q7794135
-- mr:0713-esdra-scriba|Esdra: Q191787
+- mr:0713-esdras-scriba|Esdra: Q191787
 - mr:0715-bonaventura-albanensis|Bonaventura: Q43746
 - mr:0715-catulinus-et-socii|Catulinus: Q16662692
 - mr:0718-symphorosa-et-socii|Symphorosa: Q453710

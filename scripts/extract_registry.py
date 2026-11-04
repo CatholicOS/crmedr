@@ -91,10 +91,10 @@ ENTRY_NOTES = {
     "mr:0304-ioannes-antonius-farina": "Giovanni Antonio Farina, blessed in the 2004 editions, was canonized on 23 November 2014.",
     "mr:0308-faustinus-miguez": "Faustino Míguez, blessed in the 2004 editions, was canonized on 15 October 2017.",
     "mr:0310-maria-eugenia-milleret-de-brou": "Marie-Eugénie of Jesus Milleret, blessed in the 2004 editions, was canonized on 3 June 2007.",
-    "mr:0315-artemidis-zatti": "Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022.",
+    "mr:0315-artemides-zatti": "Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022.",
     "mr:0320-iosephus-bilczewski": "Józef Bilczewski, blessed in the 2004 editions, was canonized on 23 October 2005.",
     "mr:0330-ludovicus-de-casaurea": "Ludovico of Casoria (Palmentieri), blessed in the 2004 editions, was canonized on 23 November 2014.",
-    "mr:0401-ludovicus-pavonus": "Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016.",
+    "mr:0401-ludovicus-pavoni": "Lodovico Pavoni, blessed in the 2004 editions, was canonized on 16 October 2016.",
     "mr:0402-didacus-aloysius-de-san-vitores-et-petrus-calungsod": "Pedro Calungsod, blessed in the 2004 editions, was canonized on 21 October 2012.",
     "mr:0402-franciscus-coll": "Francisco Coll y Guitart, blessed in the 2004 editions, was canonized on 11 October 2009.",
     "mr:0404-caietanus-catanoso": "Gaetano Catanoso, blessed in the 2004 editions, was canonized on 23 October 2005.",
@@ -120,7 +120,7 @@ ENTRY_NOTES = {
     "mr:0520-archangelus-tadini": "Arcangelo Tadini, blessed in the 2004 editions, was canonized on 26 April 2009.",
     "mr:0531-camilla-varano": "Camilla Battista da Varano, blessed in the 2004 editions, was canonized on 17 October 2010.",
     "mr:0531-iacobus-amoroso": "Felix of Nicosia (Felice Amoroso), blessed in the 2004 editions, was canonized on 23 October 2005.",
-    "mr:0601-ioannes-baptista-scalabrinus": "Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022.",
+    "mr:0601-ioannes-baptista-scalabrini": "Giovanni Battista Scalabrini, blessed in the 2004 editions, was canonized on 9 October 2022.",
     "mr:0603-ioannes-xxiii": (
         "Pope John XXIII, blessed in the 2004 editions, was canonized on 27 April 2014; on 29 May 2014 his "
         "optional memorial was inscribed in the General Roman Calendar on 11 October."
@@ -329,7 +329,7 @@ ENTRY_NOTES = {
     # Places with several proposed sites (Wikidata "said to be the same as", shown on the map as
     # possible sites) or a site the archaeology places differently.
     "mr:0826-melchisedech-rex-et-sacerdos": "The site of Salem is disputed: it is traditionally identified with Jerusalem, or with Salim near Nablus.",
-    "mr:0925-cleopha-discipulus": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
+    "mr:0925-cleophas-discipulus": "The site of Emmaus is disputed. Three places keep its memory with a shrine: Amwas (Nicopolis), Abu Ghosh (ancient Kiriath-Jearim) and el-Qubeibeh; Motza (Colonia, Khirbet Mizza), Horvat ʿEqed and Kiryat Anavim have also been proposed.",
     "mr:0929-michael-gabriel-et-raphael-archangeli": "The remains of the basilica of Saint Michael on the Via Salaria were found at Castel Giubileo, Rome, at the seventh mile of the road; the Martyrology says the sixth.",
     "mr:1117-ioannes-del-castillo": (
         "\"Assumptio in Paraquaria\" is not the city of Asunción in Paraguay, as the Italian edition reads it, but "
@@ -1652,7 +1652,7 @@ EDITION_NOTES = {
             "the Crimea."
         ),
     },
-    "mr:0314-eva-montis-cornelius": {
+    "mr:0314-eva-montis-cornelii": {
         EDITION_IT: (
             "Translation error: \"monaca di clausura nel monastero di San Martino\" (an enclosed "
             "nun in the monastery) where the Latin has \"reclúsæ prope cœnóbium Sancti Martíni\" (a "
@@ -2452,7 +2452,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"prayer\" where the Latin \"oratiónibus\" here means discourses."
         ),
     },
-    "mr:0129-gilda-sapiens": {
+    "mr:0129-gildas-sapiens": {
         EDITION_IT: (
             "Possible translation error: \"scrisse sullo sterminio della Bretagna\" where the Latin "
             "has \"de excídio Británniæ scripsit\". The Latin names Gildas's work De excidio "
@@ -3236,7 +3236,7 @@ REVIEW_EDITION_NOTES = {
             "Translation error: \"Gerald\" where the Latin has \"Gerárdi\" (Gerard)."
         ),
     },
-    "mr:0423-helena-valentinus": {
+    "mr:0423-helena-valentini": {
         EDITION_EN: (
             "Translation error: \"Udine in Venice\" where the Latin has \"in Venétia\" (the "
             "region of Venetia). Translation error: \"Helena of Valentini\" where the Latin "
@@ -3513,7 +3513,7 @@ REVIEW_EDITION_NOTES = {
             "Clermont)."
         ),
     },
-    "mr:0601-ioannes-baptista-scalabrinus": {
+    "mr:0601-ioannes-baptista-scalabrini": {
         EDITION_LA: (
             "Error: \"Pias Societátes a Sacro Corde\" (of the Sacred Heart) for the "
             "congregations Scalabrini founded, which are the Missionaries and Missionary Sisters "

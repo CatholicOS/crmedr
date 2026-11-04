@@ -4511,7 +4511,7 @@
           "end": 37,
           "check": "84e541f1",
           "name": "Valerius",
-          "qid": "Q2738108"
+          "qid": "Q3554214"
         }
       ],
       "mr:0111-bernardus-scammacca": [
@@ -7242,7 +7242,7 @@
           ]
         }
       ],
-      "mr:0116-mela-rhinocorurae": [
+      "mr:0116-melas-rhinocorurae": [
         {
           "kind": "place",
           "where": "text",
@@ -7262,7 +7262,7 @@
           "start": 30,
           "end": 34,
           "check": "1b46104a",
-          "name": "Mela",
+          "name": "Melas",
           "qid": "Q85973850"
         },
         {
@@ -8613,7 +8613,7 @@
           "qid": "Q3847227"
         }
       ],
-      "mr:0120-ascla-antinoes": [
+      "mr:0120-asclas-antinoes": [
         {
           "kind": "place",
           "where": "text",
@@ -8633,7 +8633,7 @@
           "start": 34,
           "end": 39,
           "check": "876fd8e8",
-          "name": "Ascla",
+          "name": "Asclas",
           "qid": "Q113738280"
         }
       ],
@@ -8661,7 +8661,7 @@
           "qid": "Q18223659"
         }
       ],
-      "mr:0120-eustochius-calafato": [
+      "mr:0120-eustochium-calafato": [
         {
           "kind": "place",
           "where": "text",
@@ -8681,7 +8681,7 @@
           "start": 27,
           "end": 45,
           "check": "ca668440",
-          "name": "Eustochius Calafato",
+          "name": "Eustochium Calafato",
           "qid": "Q276019"
         },
         {
@@ -10352,7 +10352,7 @@
           "qid": "Q116026102"
         }
       ],
-      "mr:0124-babyla-antiochiae": [
+      "mr:0124-babylas-antiochiae": [
         {
           "kind": "place",
           "where": "text",
@@ -10372,7 +10372,7 @@
           "start": 34,
           "end": 40,
           "check": "c769c1a2",
-          "name": "Babyla",
+          "name": "Babylas",
           "qid": "Q797915"
         },
         {
@@ -11488,7 +11488,7 @@
           "qid": "Q442396",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0928-eustochius-bethlehem"
+            "mr:0928-eustochium-bethlehem"
           ]
         }
       ],
@@ -12544,7 +12544,7 @@
           "qid": "Q936653"
         }
       ],
-      "mr:0129-gilda-sapiens": [
+      "mr:0129-gildas-sapiens": [
         {
           "kind": "place",
           "where": "text",
@@ -12564,7 +12564,7 @@
           "start": 28,
           "end": 33,
           "check": "6e0d7060",
-          "name": "Gilda Sapiens",
+          "name": "Gildas Sapiens",
           "qid": "Q352995"
         },
         {
@@ -12573,7 +12573,7 @@
           "start": 46,
           "end": 55,
           "check": "0e3314ca",
-          "name": "Gilda Sapiens",
+          "name": "Gildas Sapiens",
           "qid": "Q352995"
         },
         {
@@ -17325,7 +17325,7 @@
           "qid": "Q3852114"
         }
       ],
-      "mr:0206-melis-ardachae": [
+      "mr:0206-mel-ardachae": [
         {
           "kind": "place",
           "where": "text",
@@ -17345,7 +17345,7 @@
           "start": 28,
           "end": 33,
           "check": "2d912798",
-          "name": "Melis",
+          "name": "Mel",
           "qid": "Q3854232"
         }
       ],
@@ -22578,7 +22578,7 @@
           "qid": "Q241423"
         }
       ],
-      "mr:0216-marutha-persicus": [
+      "mr:0216-maruthas-persicus": [
         {
           "kind": "place",
           "where": "text",
@@ -22598,7 +22598,7 @@
           "start": 25,
           "end": 32,
           "check": "937e0c7f",
-          "name": "Marutha",
+          "name": "Maruthas",
           "qid": "Q739071"
         },
         {
@@ -26204,7 +26204,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0227-besa-alexandriae": [
+      "mr:0227-besas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -26224,7 +26224,7 @@
           "start": 13,
           "end": 17,
           "check": "3a328515",
-          "name": "Besa",
+          "name": "Besas",
           "qid": "Q85975311"
         }
       ],
@@ -28792,7 +28792,7 @@
           ]
         }
       ],
-      "mr:0305-phoca-sinopes": [
+      "mr:0305-phocas-sinopes": [
         {
           "kind": "place",
           "where": "text",
@@ -28812,7 +28812,7 @@
           "start": 24,
           "end": 29,
           "check": "cbc4c5e2",
-          "name": "Phoca",
+          "name": "Phocas",
           "qid": "Q943937"
         }
       ],
@@ -29509,7 +29509,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0307-leonida-fedorov": [
+      "mr:0307-leonidas-fedorov": [
         {
           "kind": "place",
           "where": "text",
@@ -29529,7 +29529,7 @@
           "start": 31,
           "end": 46,
           "check": "3f36cf6f",
-          "name": "Leonida Fedorov",
+          "name": "Leonidas Fedorov",
           "qid": "Q1390781"
         }
       ],
@@ -32381,7 +32381,7 @@
           "qid": "Q59685636"
         }
       ],
-      "mr:0314-eva-montis-cornelius": [
+      "mr:0314-eva-montis-cornelii": [
         {
           "kind": "place",
           "where": "text",
@@ -32401,7 +32401,7 @@
           "start": 29,
           "end": 48,
           "check": "c7d6ef44",
-          "name": "Eva Montis Cornelius",
+          "name": "Eva Montis Cornelii",
           "qid": "Q3577312"
         },
         {
@@ -32573,7 +32573,7 @@
           "qid": "Q95008691"
         }
       ],
-      "mr:0315-artemidis-zatti": [
+      "mr:0315-artemides-zatti": [
         {
           "kind": "place",
           "where": "text",
@@ -32593,7 +32593,7 @@
           "start": 27,
           "end": 42,
           "check": "d1d7ad2b",
-          "name": "Artemidis Zatti",
+          "name": "Artemides Zatti",
           "qid": "Q706591"
         },
         {
@@ -33176,7 +33176,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0316-papa-seleuciae": [
+      "mr:0316-papas-seleuciae": [
         {
           "kind": "place",
           "where": "text",
@@ -33196,7 +33196,7 @@
           "start": 28,
           "end": 32,
           "check": "74554a5d",
-          "name": "Papa",
+          "name": "Papas",
           "qid": "Q141937690"
         },
         {
@@ -36305,7 +36305,7 @@
           "qid": "Q355121"
         }
       ],
-      "mr:0325-dula-nicomediae": [
+      "mr:0325-dulas-nicomediae": [
         {
           "kind": "place",
           "where": "text",
@@ -36325,7 +36325,7 @@
           "start": 18,
           "end": 22,
           "check": "466e85c5",
-          "name": "Dula",
+          "name": "Dulas",
           "qid": "Q136679787"
         }
       ],
@@ -36587,7 +36587,7 @@
           "qid": "Q2467982"
         }
       ],
-      "mr:0325-mona-mediolani": [
+      "mr:0325-monas-mediolani": [
         {
           "kind": "place",
           "where": "text",
@@ -36607,7 +36607,7 @@
           "start": 33,
           "end": 37,
           "check": "ac530ea6",
-          "name": "Mona",
+          "name": "Monas",
           "qid": "Q3860376"
         }
       ],
@@ -37279,7 +37279,7 @@
           ]
         }
       ],
-      "mr:0328-antonius-patrizus": [
+      "mr:0328-antonius-patrizi": [
         {
           "kind": "place",
           "where": "text",
@@ -37299,7 +37299,7 @@
           "start": 40,
           "end": 55,
           "check": "315b65d7",
-          "name": "Antonius Patrizus",
+          "name": "Antonius Patrizi",
           "qid": "Q19984448"
         }
       ],
@@ -39006,7 +39006,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0401-ludovicus-pavonus": [
+      "mr:0401-ludovicus-pavoni": [
         {
           "kind": "place",
           "where": "text",
@@ -39026,7 +39026,7 @@
           "start": 36,
           "end": 51,
           "check": "6cfe0423",
-          "name": "Ludovicus Pavonus",
+          "name": "Ludovicus Pavoni",
           "qid": "Q183194"
         }
       ],
@@ -41893,7 +41893,7 @@
           "qid": "Q3613633"
         }
       ],
-      "mr:0408-augustus-czartoryskus": [
+      "mr:0408-augustus-czartoryski": [
         {
           "kind": "place",
           "where": "text",
@@ -41913,7 +41913,7 @@
           "start": 50,
           "end": 69,
           "check": "9cccd90b",
-          "name": "Augustus Czartoryskus",
+          "name": "Augustus Czartoryski",
           "qid": "Q695530"
         }
       ],
@@ -42249,7 +42249,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0409-antonius-pavonus": [
+      "mr:0409-antonius-pavoni": [
         {
           "kind": "place",
           "where": "text",
@@ -42269,7 +42269,7 @@
           "start": 49,
           "end": 63,
           "check": "d0fa1553",
-          "name": "Antonius Pavonus",
+          "name": "Antonius Pavoni",
           "qid": "Q3620020"
         }
       ],
@@ -43072,7 +43072,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0411-antipa-pergami": [
+      "mr:0411-antipas-pergami": [
         {
           "kind": "place",
           "where": "text",
@@ -43092,7 +43092,7 @@
           "start": 37,
           "end": 43,
           "check": "70f31fbc",
-          "name": "Antipa",
+          "name": "Antipas",
           "qid": "Q559936"
         },
         {
@@ -43203,7 +43203,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0411-gemma-galganus": [
+      "mr:0411-gemma-galgani": [
         {
           "kind": "place",
           "where": "text",
@@ -43223,7 +43223,7 @@
           "start": 23,
           "end": 36,
           "check": "0b54f18a",
-          "name": "Gemma Galganus",
+          "name": "Gemma Galgani",
           "qid": "Q239122"
         }
       ],
@@ -48740,7 +48740,7 @@
           "qid": "Q1269184",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0825-mena-constantinopoli"
+            "mr:0825-menas-constantinopoli"
           ]
         }
       ],
@@ -48860,7 +48860,7 @@
           "qid": "Q67214642"
         }
       ],
-      "mr:0422-leonida-alexandriae": [
+      "mr:0422-leonidas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -48880,7 +48880,7 @@
           "start": 42,
           "end": 49,
           "check": "4236d1a4",
-          "name": "Leonida",
+          "name": "Leonidas",
           "qid": "Q6526588"
         },
         {
@@ -49272,7 +49272,7 @@
           "qid": "Q1511823"
         }
       ],
-      "mr:0423-helena-valentinus": [
+      "mr:0423-helena-valentini": [
         {
           "kind": "place",
           "where": "text",
@@ -49292,7 +49292,7 @@
           "start": 24,
           "end": 40,
           "check": "7bd41f22",
-          "name": "Helena Valentinus",
+          "name": "Helena Valentini",
           "qid": "Q18202809"
         }
       ],
@@ -55582,7 +55582,7 @@
           ]
         }
       ],
-      "mr:0506-maria-catharina-troianus": [
+      "mr:0506-maria-catharina-troiani": [
         {
           "kind": "place",
           "where": "text",
@@ -55602,7 +55602,7 @@
           "start": 23,
           "end": 46,
           "check": "fb31b692",
-          "name": "Maria Catharina Troianus",
+          "name": "Maria Catharina Troiani",
           "qid": "Q1164641"
         },
         {
@@ -56842,14 +56842,14 @@
           "qid": "Q141966070"
         }
       ],
-      "mr:0509-herma-discipulus": [
+      "mr:0509-hermas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 25,
           "check": "d00b9844",
-          "name": "Herma",
+          "name": "Hermas",
           "qid": "Q1799472"
         },
         {
@@ -57018,7 +57018,7 @@
           ]
         }
       ],
-      "mr:0509-stephanus-grelewskus": [
+      "mr:0509-stephanus-grelewski": [
         {
           "kind": "place",
           "where": "text",
@@ -57038,7 +57038,7 @@
           "start": 76,
           "end": 94,
           "check": "6d3f2760",
-          "name": "Stephanus Grelewskus",
+          "name": "Stephanus Grelewski",
           "qid": "Q2208870"
         },
         {
@@ -57271,7 +57271,7 @@
           ]
         }
       ],
-      "mr:0510-dioscoridis-myrae": [
+      "mr:0510-dioscorides-myrae": [
         {
           "kind": "place",
           "where": "text",
@@ -57291,7 +57291,7 @@
           "start": 22,
           "end": 33,
           "check": "7964ce0c",
-          "name": "Dioscoridis",
+          "name": "Dioscorides",
           "qid": "Q139604239"
         }
       ],
@@ -66977,7 +66977,7 @@
           "qid": "Q601185"
         }
       ],
-      "mr:0531-hermia-comanae": [
+      "mr:0531-hermias-comanae": [
         {
           "kind": "place",
           "where": "text",
@@ -66997,7 +66997,7 @@
           "start": 30,
           "end": 36,
           "check": "97fc8889",
-          "name": "Hermia",
+          "name": "Hermias",
           "qid": "Q436049"
         }
       ],
@@ -67539,7 +67539,7 @@
           "qid": "Q5472848"
         }
       ],
-      "mr:0601-hannibalis-maria-di-francia": [
+      "mr:0601-hannibal-maria-di-francia": [
         {
           "kind": "place",
           "where": "text",
@@ -67559,11 +67559,11 @@
           "start": 34,
           "end": 61,
           "check": "4094e87c",
-          "name": "Hannibalis Maria Di Francia",
+          "name": "Hannibal Maria Di Francia",
           "qid": "Q566864"
         }
       ],
-      "mr:0601-ioannes-baptista-scalabrinus": [
+      "mr:0601-ioannes-baptista-scalabrini": [
         {
           "kind": "place",
           "where": "text",
@@ -67583,7 +67583,7 @@
           "start": 27,
           "end": 54,
           "check": "45abb56a",
-          "name": "Ioannes Baptista Scalabrinus",
+          "name": "Ioannes Baptista Scalabrini",
           "qid": "Q1394839"
         },
         {
@@ -73250,7 +73250,7 @@
           ]
         }
       ],
-      "mr:0612-gaspar-bertonus": [
+      "mr:0612-gaspar-bertoni": [
         {
           "kind": "place",
           "where": "text",
@@ -73270,7 +73270,7 @@
           "start": 26,
           "end": 42,
           "check": "d4552c9f",
-          "name": "Gaspar Bertonus",
+          "name": "Gaspar Bertoni",
           "qid": "Q634766"
         }
       ],
@@ -75565,7 +75565,7 @@
           "start": 63,
           "end": 69,
           "check": "97fc8889",
-          "name": "Hermia",
+          "name": "Hermias",
           "qid": "Q141941114"
         },
         {
@@ -83433,7 +83433,7 @@
           ]
         }
       ],
-      "mr:0706-goaris-aquitaniae": [
+      "mr:0706-goar-aquitaniae": [
         {
           "kind": "place",
           "where": "text",
@@ -83453,7 +83453,7 @@
           "start": 32,
           "end": 38,
           "check": "f7d5ba73",
-          "name": "Goaris",
+          "name": "Goar",
           "qid": "Q447663"
         },
         {
@@ -84197,7 +84197,7 @@
           "qid": "Q4505419"
         }
       ],
-      "mr:0707-maria-guo-lizhus": [
+      "mr:0707-maria-guo-lizhi": [
         {
           "kind": "place",
           "where": "text",
@@ -84217,7 +84217,7 @@
           "start": 53,
           "end": 68,
           "check": "65b87fef",
-          "name": "Maria Guo Lizhus",
+          "name": "Maria Guo Lizhi",
           "qid": "Q4140823"
         }
       ],
@@ -84821,7 +84821,7 @@
           "qid": "Q263082"
         }
       ],
-      "mr:0708-mancius-arakus": [
+      "mr:0708-mancius-araki": [
         {
           "kind": "place",
           "where": "text",
@@ -84841,7 +84841,7 @@
           "start": 28,
           "end": 40,
           "check": "49a59fed",
-          "name": "Mancius Arakus",
+          "name": "Mancius Araki",
           "qid": "Q141943256"
         },
         {
@@ -88173,7 +88173,7 @@
           "qid": "Q1799472",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0509-herma-discipulus"
+            "mr:0509-hermas-discipulus"
           ]
         }
       ],
@@ -89160,14 +89160,14 @@
           "commemorated_in": []
         }
       ],
-      "mr:0713-esdra-scriba": [
+      "mr:0713-esdras-scriba": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 25,
           "check": "21fff437",
-          "name": "Esdra",
+          "name": "Esdras",
           "qid": "Q191787"
         },
         {
@@ -89531,14 +89531,14 @@
           "commemorated_in": []
         }
       ],
-      "mr:0713-sila-discipulus": [
+      "mr:0713-silas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 24,
           "check": "b65ae62f",
-          "name": "Sila",
+          "name": "Silas",
           "qid": "Q312376"
         },
         {
@@ -93669,14 +93669,14 @@
           "qid": "Q4505791"
         }
       ],
-      "mr:0719-epaphra-colossarum": [
+      "mr:0719-epaphras-colossarum": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 27,
           "check": "d679823b",
-          "name": "Epaphra",
+          "name": "Epaphras",
           "qid": "Q953527"
         },
         {
@@ -95226,7 +95226,7 @@
           ]
         }
       ],
-      "mr:0722-maria-wang-lizhus": [
+      "mr:0722-maria-wang-lizhi": [
         {
           "kind": "place",
           "where": "text",
@@ -95246,7 +95246,7 @@
           "start": 59,
           "end": 75,
           "check": "f7b6c8f7",
-          "name": "Maria Wang Lizhus",
+          "name": "Maria Wang Lizhi",
           "qid": "Q4260676"
         }
       ],
@@ -98764,7 +98764,7 @@
           "qid": "Q11727343"
         }
       ],
-      "mr:0727-lucia-bufalarus": [
+      "mr:0727-lucia-bufalari": [
         {
           "kind": "place",
           "where": "text",
@@ -98784,7 +98784,7 @@
           "start": 24,
           "end": 38,
           "check": "51cdcffa",
-          "name": "Lucia Bufalarus",
+          "name": "Lucia Bufalari",
           "qid": "Q66372407"
         },
         {
@@ -98797,7 +98797,7 @@
           "qid": "Q66372406",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0801-ioannes-bufalarus"
+            "mr:0801-ioannes-bufalari"
           ]
         }
       ],
@@ -100509,7 +100509,7 @@
           "qid": "Q733433"
         }
       ],
-      "mr:0730-mannis-guzman": [
+      "mr:0730-mannes-guzman": [
         {
           "kind": "place",
           "where": "text",
@@ -100529,7 +100529,7 @@
           "start": 58,
           "end": 71,
           "check": "18fe1259",
-          "name": "Mannis Guzman",
+          "name": "Mannes Guzman",
           "qid": "Q532119"
         },
         {
@@ -101985,7 +101985,7 @@
           "qid": "Q115921687"
         }
       ],
-      "mr:0801-ioannes-bufalarus": [
+      "mr:0801-ioannes-bufalari": [
         {
           "kind": "place",
           "where": "text",
@@ -102005,7 +102005,7 @@
           "start": 23,
           "end": 39,
           "check": "cc8854f5",
-          "name": "Ioannes Bufalarus",
+          "name": "Ioannes Bufalari",
           "qid": "Q66372406"
         }
       ],
@@ -103835,7 +103835,7 @@
           ]
         }
       ],
-      "mr:0805-paridis-theani": [
+      "mr:0805-paris-theani": [
         {
           "kind": "place",
           "where": "text",
@@ -103855,7 +103855,7 @@
           "start": 27,
           "end": 34,
           "check": "3d887284",
-          "name": "Paridis",
+          "name": "Paris",
           "qid": "Q3895860"
         }
       ],
@@ -104042,7 +104042,7 @@
           "qid": "Q44091"
         }
       ],
-      "mr:0806-hormisda-papa": [
+      "mr:0806-hormisdas-papa": [
         {
           "kind": "place",
           "where": "text",
@@ -104062,7 +104062,7 @@
           "start": 43,
           "end": 51,
           "check": "1202d5a8",
-          "name": "Hormisda",
+          "name": "Hormisdas",
           "qid": "Q160931"
         },
         {
@@ -108100,7 +108100,7 @@
           ]
         }
       ],
-      "mr:0813-modestus-garcia-martus": [
+      "mr:0813-modestus-garcia-marti": [
         {
           "kind": "place",
           "where": "text",
@@ -108120,7 +108120,7 @@
           "start": 65,
           "end": 85,
           "check": "ffdb9c4c",
-          "name": "Modestus Garcia Martus",
+          "name": "Modestus Garcia Marti",
           "qid": "Q14918044"
         }
       ],
@@ -114912,7 +114912,7 @@
           ]
         }
       ],
-      "mr:0825-mena-constantinopoli": [
+      "mr:0825-menas-constantinopoli": [
         {
           "kind": "place",
           "where": "text",
@@ -114932,7 +114932,7 @@
           "start": 24,
           "end": 28,
           "check": "45b3f453",
-          "name": "Mena",
+          "name": "Menas",
           "qid": "Q1269184"
         },
         {
@@ -115408,7 +115408,7 @@
           "qid": "Q451590"
         }
       ],
-      "mr:0826-maria-beltrame-quattrocchus": [
+      "mr:0826-maria-beltrame-quattrocchi": [
         {
           "kind": "place",
           "where": "text",
@@ -115428,7 +115428,7 @@
           "start": 12,
           "end": 38,
           "check": "5139c27c",
-          "name": "Maria Beltrame Quattrocchus",
+          "name": "Maria Beltrame Quattrocchi",
           "qid": "Q3847211"
         }
       ],
@@ -116337,7 +116337,7 @@
           "qid": "Q1255493"
         }
       ],
-      "mr:0827-raymundus-martus-soriano": [
+      "mr:0827-raymundus-marti-soriano": [
         {
           "kind": "place",
           "where": "text",
@@ -116357,7 +116357,7 @@
           "start": 72,
           "end": 94,
           "check": "18008769",
-          "name": "Raymundus Martus Soriano",
+          "name": "Raymundus Marti Soriano",
           "qid": "Q9303568"
         }
       ],
@@ -118287,7 +118287,7 @@
           "qid": "Q2846327"
         }
       ],
-      "mr:0831-aristidis-athenarum": [
+      "mr:0831-aristides-athenarum": [
         {
           "kind": "place",
           "where": "text",
@@ -118307,7 +118307,7 @@
           "start": 16,
           "end": 25,
           "check": "12d00ecb",
-          "name": "Aristidis",
+          "name": "Aristides",
           "qid": "Q349916"
         },
         {
@@ -123564,7 +123564,7 @@
           "qid": "Q566085"
         }
       ],
-      "mr:0906-michael-czartoryskus": [
+      "mr:0906-michael-czartoryski": [
         {
           "kind": "place",
           "where": "text",
@@ -123584,7 +123584,7 @@
           "start": 27,
           "end": 48,
           "check": "741e425c",
-          "name": "Michael Czartoryskus",
+          "name": "Michael Czartoryski",
           "qid": "Q586593"
         },
         {
@@ -135025,14 +135025,14 @@
           "qid": "Q4821868"
         }
       ],
-      "mr:0925-cleopha-discipulus": [
+      "mr:0925-cleophas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 27,
           "check": "bb032a96",
-          "name": "Cleopha",
+          "name": "Cleophas",
           "qid": "Q711072"
         },
         {
@@ -136615,7 +136615,7 @@
           ]
         }
       ],
-      "mr:0928-eustochius-bethlehem": [
+      "mr:0928-eustochium-bethlehem": [
         {
           "kind": "place",
           "where": "text",
@@ -136635,7 +136635,7 @@
           "start": 39,
           "end": 48,
           "check": "08f63bb8",
-          "name": "Eustochius",
+          "name": "Eustochium",
           "qid": "Q442396"
         },
         {
@@ -144196,14 +144196,14 @@
           "qid": "Q15982413"
         }
       ],
-      "mr:1011-sarmata-thebaidis": [
+      "mr:1011-sarmatas-thebaidis": [
         {
           "kind": "person",
           "where": "text",
           "start": 20,
           "end": 27,
           "check": "db5b91ee",
-          "name": "Sarmata",
+          "name": "Sarmatas",
           "qid": "Q141944956"
         },
         {
@@ -151657,7 +151657,7 @@
           "qid": "Q16599527"
         }
       ],
-      "mr:1027-thrasea-eumeniae": [
+      "mr:1027-thraseas-eumeniae": [
         {
           "kind": "place",
           "where": "text",
@@ -151677,7 +151677,7 @@
           "start": 29,
           "end": 36,
           "check": "88692df2",
-          "name": "Thrasea",
+          "name": "Thraseas",
           "qid": "Q1252393"
         },
         {
@@ -153983,7 +153983,7 @@
           "qid": "Q1356096"
         }
       ],
-      "mr:1102-malachia-dunensis": [
+      "mr:1102-malachias-dunensis": [
         {
           "kind": "place",
           "where": "text",
@@ -154003,7 +154003,7 @@
           "start": 59,
           "end": 67,
           "check": "a33c936d",
-          "name": "Malachia",
+          "name": "Malachias",
           "qid": "Q356455"
         },
         {
@@ -155085,7 +155085,7 @@
           "qid": "Q738752",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:1228-theona-alexandriae"
+            "mr:1228-theonas-alexandriae"
           ]
         },
         {
@@ -155352,7 +155352,7 @@
           "qid": "Q3819705"
         }
       ],
-      "mr:1105-gomida-keumurgian": [
+      "mr:1105-gomidas-keumurgian": [
         {
           "kind": "place",
           "where": "text",
@@ -155372,7 +155372,7 @@
           "start": 23,
           "end": 40,
           "check": "f6851278",
-          "name": "Gomida Keumurgian",
+          "name": "Gomidas Keumurgian",
           "qid": "Q3773204"
         },
         {
@@ -157123,7 +157123,7 @@
           "qid": "Q397147"
         }
       ],
-      "mr:1109-aloysius-beltrame-quattrocchus": [
+      "mr:1109-aloysius-beltrame-quattrocchi": [
         {
           "kind": "place",
           "where": "text",
@@ -157143,7 +157143,7 @@
           "start": 12,
           "end": 40,
           "check": "9625022a",
-          "name": "Aloysius Beltrame Quattrocchus",
+          "name": "Aloysius Beltrame Quattrocchi",
           "qid": "Q13586473"
         }
       ],
@@ -158106,7 +158106,7 @@
           ]
         }
       ],
-      "mr:1111-menna-mareotidem": [
+      "mr:1111-mennas-mareotidem": [
         {
           "kind": "place",
           "where": "text",
@@ -158126,11 +158126,11 @@
           "start": 41,
           "end": 46,
           "check": "403cfcb1",
-          "name": "Menna Mareotidem",
+          "name": "Mennas Mareotidem",
           "qid": "Q163432"
         }
       ],
-      "mr:1111-menna-samnii": [
+      "mr:1111-mennas-samnii": [
         {
           "kind": "place",
           "where": "text",
@@ -158150,7 +158150,7 @@
           "start": 41,
           "end": 46,
           "check": "403cfcb1",
-          "name": "Menna Samnii",
+          "name": "Mennas Samnii",
           "qid": "Q30879544"
         },
         {
@@ -159315,7 +159315,7 @@
           "qid": "Q3302416"
         }
       ],
-      "mr:1113-mitria-aquarum-sextiarum": [
+      "mr:1113-mitrias-aquarum-sextiarum": [
         {
           "kind": "place",
           "where": "text",
@@ -159335,7 +159335,7 @@
           "start": 43,
           "end": 49,
           "check": "68052769",
-          "name": "Mitria",
+          "name": "Mitrias",
           "qid": "Q2060854"
         }
       ],
@@ -170949,7 +170949,7 @@
           "qid": "Q2038106"
         }
       ],
-      "mr:1204-heracla-alexandriae": [
+      "mr:1204-heraclas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -170969,7 +170969,7 @@
           "start": 29,
           "end": 36,
           "check": "b685f993",
-          "name": "Heracla",
+          "name": "Heraclas",
           "qid": "Q738738"
         },
         {
@@ -174102,7 +174102,7 @@
           "qid": "Q580706"
         }
       ],
-      "mr:1213-antonius-grassus": [
+      "mr:1213-antonius-grassi": [
         {
           "kind": "place",
           "where": "text",
@@ -174122,7 +174122,7 @@
           "start": 30,
           "end": 44,
           "check": "98f4413d",
-          "name": "Antonius Grassus",
+          "name": "Antonius Grassi",
           "qid": "Q2854019"
         }
       ],
@@ -179624,7 +179624,7 @@
           "qid": "Q21003757"
         }
       ],
-      "mr:1228-theona-alexandriae": [
+      "mr:1228-theonas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -179644,7 +179644,7 @@
           "start": 29,
           "end": 35,
           "check": "2e2b6a34",
-          "name": "Theona",
+          "name": "Theonas",
           "qid": "Q738752"
         },
         {
@@ -185468,7 +185468,7 @@
           "end": 63,
           "check": "dc95c068",
           "name": "Valerius",
-          "qid": "Q2738108"
+          "qid": "Q3554214"
         }
       ],
       "mr:0111-bernardus-scammacca": [
@@ -188199,7 +188199,7 @@
           ]
         }
       ],
-      "mr:0116-mela-rhinocorurae": [
+      "mr:0116-melas-rhinocorurae": [
         {
           "kind": "place",
           "where": "text",
@@ -188219,7 +188219,7 @@
           "start": 28,
           "end": 33,
           "check": "47d5b7b3",
-          "name": "Mela",
+          "name": "Melas",
           "qid": "Q85973850"
         },
         {
@@ -189570,7 +189570,7 @@
           "qid": "Q3847227"
         }
       ],
-      "mr:0120-ascla-antinoes": [
+      "mr:0120-asclas-antinoes": [
         {
           "kind": "place",
           "where": "text",
@@ -189590,7 +189590,7 @@
           "start": 42,
           "end": 47,
           "check": "e4e73114",
-          "name": "Ascla",
+          "name": "Asclas",
           "qid": "Q113738280"
         }
       ],
@@ -189618,7 +189618,7 @@
           "qid": "Q18223659"
         }
       ],
-      "mr:0120-eustochius-calafato": [
+      "mr:0120-eustochium-calafato": [
         {
           "kind": "place",
           "where": "text",
@@ -189638,7 +189638,7 @@
           "start": 17,
           "end": 35,
           "check": "9c423777",
-          "name": "Eustochius Calafato",
+          "name": "Eustochium Calafato",
           "qid": "Q276019"
         },
         {
@@ -191309,7 +191309,7 @@
           "qid": "Q116026102"
         }
       ],
-      "mr:0124-babyla-antiochiae": [
+      "mr:0124-babylas-antiochiae": [
         {
           "kind": "place",
           "where": "text",
@@ -191329,7 +191329,7 @@
           "start": 55,
           "end": 61,
           "check": "1086351e",
-          "name": "Babyla",
+          "name": "Babylas",
           "qid": "Q797915"
         },
         {
@@ -192445,7 +192445,7 @@
           "qid": "Q442396",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0928-eustochius-bethlehem"
+            "mr:0928-eustochium-bethlehem"
           ]
         }
       ],
@@ -193501,7 +193501,7 @@
           "qid": "Q936653"
         }
       ],
-      "mr:0129-gilda-sapiens": [
+      "mr:0129-gildas-sapiens": [
         {
           "kind": "place",
           "where": "text",
@@ -193521,7 +193521,7 @@
           "start": 17,
           "end": 22,
           "check": "6e565919",
-          "name": "Gilda Sapiens",
+          "name": "Gildas Sapiens",
           "qid": "Q352995"
         },
         {
@@ -193530,7 +193530,7 @@
           "start": 33,
           "end": 41,
           "check": "7bec3fdd",
-          "name": "Gilda Sapiens",
+          "name": "Gildas Sapiens",
           "qid": "Q352995"
         },
         {
@@ -198291,7 +198291,7 @@
           "qid": "Q3852114"
         }
       ],
-      "mr:0206-melis-ardachae": [
+      "mr:0206-mel-ardachae": [
         {
           "kind": "place",
           "where": "text",
@@ -198311,7 +198311,7 @@
           "start": 25,
           "end": 28,
           "check": "77cdd220",
-          "name": "Melis",
+          "name": "Mel",
           "qid": "Q3854232"
         }
       ],
@@ -203446,7 +203446,7 @@
           "qid": "Q241423"
         }
       ],
-      "mr:0216-marutha-persicus": [
+      "mr:0216-maruthas-persicus": [
         {
           "kind": "place",
           "where": "text",
@@ -203466,7 +203466,7 @@
           "start": 25,
           "end": 31,
           "check": "e148b98b",
-          "name": "Marutha",
+          "name": "Maruthas",
           "qid": "Q739071"
         },
         {
@@ -207059,7 +207059,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0227-besa-alexandriae": [
+      "mr:0227-besas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -207079,7 +207079,7 @@
           "start": 24,
           "end": 29,
           "check": "6cd71d1e",
-          "name": "Besa",
+          "name": "Besas",
           "qid": "Q85975311"
         }
       ],
@@ -209621,7 +209621,7 @@
           ]
         }
       ],
-      "mr:0305-phoca-sinopes": [
+      "mr:0305-phocas-sinopes": [
         {
           "kind": "place",
           "where": "text",
@@ -209641,7 +209641,7 @@
           "start": 45,
           "end": 49,
           "check": "f06fbfbd",
-          "name": "Phoca",
+          "name": "Phocas",
           "qid": "Q943937"
         }
       ],
@@ -210338,7 +210338,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0307-leonida-fedorov": [
+      "mr:0307-leonidas-fedorov": [
         {
           "kind": "place",
           "where": "text",
@@ -210358,7 +210358,7 @@
           "start": 38,
           "end": 53,
           "check": "f876c920",
-          "name": "Leonida Fedorov",
+          "name": "Leonidas Fedorov",
           "qid": "Q1390781"
         }
       ],
@@ -213179,7 +213179,7 @@
           "qid": "Q59685636"
         }
       ],
-      "mr:0314-eva-montis-cornelius": [
+      "mr:0314-eva-montis-cornelii": [
         {
           "kind": "place",
           "where": "text",
@@ -213199,7 +213199,7 @@
           "start": 50,
           "end": 67,
           "check": "ad2106e5",
-          "name": "Eva Montis Cornelius",
+          "name": "Eva Montis Cornelii",
           "qid": "Q3577312"
         },
         {
@@ -213371,7 +213371,7 @@
           "qid": "Q95008691"
         }
       ],
-      "mr:0315-artemidis-zatti": [
+      "mr:0315-artemides-zatti": [
         {
           "kind": "place",
           "where": "text",
@@ -213391,7 +213391,7 @@
           "start": 29,
           "end": 43,
           "check": "43ef0632",
-          "name": "Artemidis Zatti",
+          "name": "Artemides Zatti",
           "qid": "Q706591"
         },
         {
@@ -213974,7 +213974,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0316-papa-seleuciae": [
+      "mr:0316-papas-seleuciae": [
         {
           "kind": "place",
           "where": "text",
@@ -213994,7 +213994,7 @@
           "start": 26,
           "end": 30,
           "check": "4959de6e",
-          "name": "Papa",
+          "name": "Papas",
           "qid": "Q141937690"
         },
         {
@@ -217100,7 +217100,7 @@
           "qid": "Q355121"
         }
       ],
-      "mr:0325-dula-nicomediae": [
+      "mr:0325-dulas-nicomediae": [
         {
           "kind": "place",
           "where": "text",
@@ -217120,7 +217120,7 @@
           "start": 17,
           "end": 21,
           "check": "dfad4f1c",
-          "name": "Dula",
+          "name": "Dulas",
           "qid": "Q136679787"
         }
       ],
@@ -217382,7 +217382,7 @@
           "qid": "Q2467982"
         }
       ],
-      "mr:0325-mona-mediolani": [
+      "mr:0325-monas-mediolani": [
         {
           "kind": "place",
           "where": "text",
@@ -217402,7 +217402,7 @@
           "start": 14,
           "end": 18,
           "check": "afbce468",
-          "name": "Mona",
+          "name": "Monas",
           "qid": "Q3860376"
         }
       ],
@@ -218074,7 +218074,7 @@
           ]
         }
       ],
-      "mr:0328-antonius-patrizus": [
+      "mr:0328-antonius-patrizi": [
         {
           "kind": "place",
           "where": "text",
@@ -218094,7 +218094,7 @@
           "start": 33,
           "end": 48,
           "check": "f9760918",
-          "name": "Antonius Patrizus",
+          "name": "Antonius Patrizi",
           "qid": "Q19984448"
         }
       ],
@@ -219801,7 +219801,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0401-ludovicus-pavonus": [
+      "mr:0401-ludovicus-pavoni": [
         {
           "kind": "place",
           "where": "text",
@@ -219821,7 +219821,7 @@
           "start": 17,
           "end": 32,
           "check": "69631460",
-          "name": "Ludovicus Pavonus",
+          "name": "Ludovicus Pavoni",
           "qid": "Q183194"
         }
       ],
@@ -222697,7 +222697,7 @@
           "qid": "Q3613633"
         }
       ],
-      "mr:0408-augustus-czartoryskus": [
+      "mr:0408-augustus-czartoryski": [
         {
           "kind": "place",
           "where": "text",
@@ -222717,7 +222717,7 @@
           "start": 44,
           "end": 63,
           "check": "920fe585",
-          "name": "Augustus Czartoryskus",
+          "name": "Augustus Czartoryski",
           "qid": "Q695530"
         }
       ],
@@ -223053,7 +223053,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0409-antonius-pavonus": [
+      "mr:0409-antonius-pavoni": [
         {
           "kind": "place",
           "where": "text",
@@ -223073,7 +223073,7 @@
           "start": 49,
           "end": 63,
           "check": "eb42306e",
-          "name": "Antonius Pavonus",
+          "name": "Antonius Pavoni",
           "qid": "Q3620020"
         }
       ],
@@ -223876,7 +223876,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0411-antipa-pergami": [
+      "mr:0411-antipas-pergami": [
         {
           "kind": "place",
           "where": "text",
@@ -223896,7 +223896,7 @@
           "start": 66,
           "end": 72,
           "check": "54daffd5",
-          "name": "Antipa",
+          "name": "Antipas",
           "qid": "Q559936"
         },
         {
@@ -224007,7 +224007,7 @@
           "commemorated_in": []
         }
       ],
-      "mr:0411-gemma-galganus": [
+      "mr:0411-gemma-galgani": [
         {
           "kind": "place",
           "where": "text",
@@ -224027,7 +224027,7 @@
           "start": 15,
           "end": 28,
           "check": "bea4113b",
-          "name": "Gemma Galganus",
+          "name": "Gemma Galgani",
           "qid": "Q239122"
         }
       ],
@@ -229533,7 +229533,7 @@
           "qid": "Q1269184",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0825-mena-constantinopoli"
+            "mr:0825-menas-constantinopoli"
           ]
         }
       ],
@@ -229653,7 +229653,7 @@
           "qid": "Q67214642"
         }
       ],
-      "mr:0422-leonida-alexandriae": [
+      "mr:0422-leonidas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -229673,7 +229673,7 @@
           "start": 47,
           "end": 54,
           "check": "dab4c82b",
-          "name": "Leonida",
+          "name": "Leonidas",
           "qid": "Q6526588"
         },
         {
@@ -230065,7 +230065,7 @@
           "qid": "Q1511823"
         }
       ],
-      "mr:0423-helena-valentinus": [
+      "mr:0423-helena-valentini": [
         {
           "kind": "place",
           "where": "text",
@@ -230085,7 +230085,7 @@
           "start": 15,
           "end": 30,
           "check": "61be26fc",
-          "name": "Helena Valentinus",
+          "name": "Helena Valentini",
           "qid": "Q18202809"
         }
       ],
@@ -236369,7 +236369,7 @@
           ]
         }
       ],
-      "mr:0506-maria-catharina-troianus": [
+      "mr:0506-maria-catharina-troiani": [
         {
           "kind": "place",
           "where": "text",
@@ -236389,7 +236389,7 @@
           "start": 26,
           "end": 48,
           "check": "e4301321",
-          "name": "Maria Catharina Troianus",
+          "name": "Maria Catharina Troiani",
           "qid": "Q1164641"
         },
         {
@@ -237629,14 +237629,14 @@
           "qid": "Q141966070"
         }
       ],
-      "mr:0509-herma-discipulus": [
+      "mr:0509-hermas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 23,
           "end": 27,
           "check": "175e7ab6",
-          "name": "Herma",
+          "name": "Hermas",
           "qid": "Q1799472"
         },
         {
@@ -237805,7 +237805,7 @@
           ]
         }
       ],
-      "mr:0509-stephanus-grelewskus": [
+      "mr:0509-stephanus-grelewski": [
         {
           "kind": "place",
           "where": "text",
@@ -237825,7 +237825,7 @@
           "start": 67,
           "end": 84,
           "check": "53114ad9",
-          "name": "Stephanus Grelewskus",
+          "name": "Stephanus Grelewski",
           "qid": "Q2208870"
         },
         {
@@ -238058,7 +238058,7 @@
           ]
         }
       ],
-      "mr:0510-dioscoridis-myrae": [
+      "mr:0510-dioscorides-myrae": [
         {
           "kind": "place",
           "where": "text",
@@ -238078,7 +238078,7 @@
           "start": 43,
           "end": 53,
           "check": "3e08584e",
-          "name": "Dioscoridis",
+          "name": "Dioscorides",
           "qid": "Q139604239"
         }
       ],
@@ -247733,7 +247733,7 @@
           ]
         }
       ],
-      "mr:0531-hermia-comanae": [
+      "mr:0531-hermias-comanae": [
         {
           "kind": "place",
           "where": "text",
@@ -247753,7 +247753,7 @@
           "start": 48,
           "end": 53,
           "check": "fa0d79d1",
-          "name": "Hermia",
+          "name": "Hermias",
           "qid": "Q436049"
         }
       ],
@@ -248295,7 +248295,7 @@
           "qid": "Q5472848"
         }
       ],
-      "mr:0601-hannibalis-maria-di-francia": [
+      "mr:0601-hannibal-maria-di-francia": [
         {
           "kind": "place",
           "where": "text",
@@ -248315,11 +248315,11 @@
           "start": 16,
           "end": 41,
           "check": "b4b2ff26",
-          "name": "Hannibalis Maria Di Francia",
+          "name": "Hannibal Maria Di Francia",
           "qid": "Q566864"
         }
       ],
-      "mr:0601-ioannes-baptista-scalabrinus": [
+      "mr:0601-ioannes-baptista-scalabrini": [
         {
           "kind": "place",
           "where": "text",
@@ -248339,7 +248339,7 @@
           "start": 18,
           "end": 46,
           "check": "7d0a8e69",
-          "name": "Ioannes Baptista Scalabrinus",
+          "name": "Ioannes Baptista Scalabrini",
           "qid": "Q1394839"
         },
         {
@@ -253982,7 +253982,7 @@
           ]
         }
       ],
-      "mr:0612-gaspar-bertonus": [
+      "mr:0612-gaspar-bertoni": [
         {
           "kind": "place",
           "where": "text",
@@ -254002,7 +254002,7 @@
           "start": 14,
           "end": 29,
           "check": "ebbb25f2",
-          "name": "Gaspar Bertonus",
+          "name": "Gaspar Bertoni",
           "qid": "Q634766"
         }
       ],
@@ -256297,7 +256297,7 @@
           "start": 78,
           "end": 83,
           "check": "fa0d79d1",
-          "name": "Hermia",
+          "name": "Hermias",
           "qid": "Q141941114"
         },
         {
@@ -264192,7 +264192,7 @@
           ]
         }
       ],
-      "mr:0706-goaris-aquitaniae": [
+      "mr:0706-goar-aquitaniae": [
         {
           "kind": "place",
           "where": "text",
@@ -264212,7 +264212,7 @@
           "start": 31,
           "end": 35,
           "check": "11a22341",
-          "name": "Goaris",
+          "name": "Goar",
           "qid": "Q447663"
         },
         {
@@ -264945,7 +264945,7 @@
           "qid": "Q4505419"
         }
       ],
-      "mr:0707-maria-guo-lizhus": [
+      "mr:0707-maria-guo-lizhi": [
         {
           "kind": "place",
           "where": "text",
@@ -264965,7 +264965,7 @@
           "start": 68,
           "end": 83,
           "check": "6368a22a",
-          "name": "Maria Guo Lizhus",
+          "name": "Maria Guo Lizhi",
           "qid": "Q4140823"
         }
       ],
@@ -265569,7 +265569,7 @@
           "qid": "Q263082"
         }
       ],
-      "mr:0708-mancius-arakus": [
+      "mr:0708-mancius-araki": [
         {
           "kind": "place",
           "where": "text",
@@ -265589,7 +265589,7 @@
           "start": 31,
           "end": 43,
           "check": "0d2efe6f",
-          "name": "Mancius Arakus",
+          "name": "Mancius Araki",
           "qid": "Q141943256"
         },
         {
@@ -268932,7 +268932,7 @@
           "qid": "Q1799472",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0509-herma-discipulus"
+            "mr:0509-hermas-discipulus"
           ]
         }
       ],
@@ -269939,14 +269939,14 @@
           "commemorated_in": []
         }
       ],
-      "mr:0713-esdra-scriba": [
+      "mr:0713-esdras-scriba": [
         {
           "kind": "person",
           "where": "text",
           "start": 23,
           "end": 28,
           "check": "dfd29831",
-          "name": "Esdra",
+          "name": "Esdras",
           "qid": "Q191787"
         },
         {
@@ -270310,14 +270310,14 @@
           "commemorated_in": []
         }
       ],
-      "mr:0713-sila-discipulus": [
+      "mr:0713-silas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 22,
           "end": 26,
           "check": "56fec698",
-          "name": "Sila",
+          "name": "Silas",
           "qid": "Q312376"
         },
         {
@@ -274448,14 +274448,14 @@
           "qid": "Q4505791"
         }
       ],
-      "mr:0719-epaphra-colossarum": [
+      "mr:0719-epaphras-colossarum": [
         {
           "kind": "person",
           "where": "text",
           "start": 23,
           "end": 29,
           "check": "103c0d8d",
-          "name": "Epaphra",
+          "name": "Epaphras",
           "qid": "Q953527"
         },
         {
@@ -275996,7 +275996,7 @@
           ]
         }
       ],
-      "mr:0722-maria-wang-lizhus": [
+      "mr:0722-maria-wang-lizhi": [
         {
           "kind": "place",
           "where": "text",
@@ -276016,7 +276016,7 @@
           "start": 78,
           "end": 94,
           "check": "158b7b9e",
-          "name": "Maria Wang Lizhus",
+          "name": "Maria Wang Lizhi",
           "qid": "Q4260676"
         }
       ],
@@ -279498,7 +279498,7 @@
           "qid": "Q11727343"
         }
       ],
-      "mr:0727-lucia-bufalarus": [
+      "mr:0727-lucia-bufalari": [
         {
           "kind": "place",
           "where": "text",
@@ -279518,7 +279518,7 @@
           "start": 27,
           "end": 41,
           "check": "6e7a320c",
-          "name": "Lucia Bufalarus",
+          "name": "Lucia Bufalari",
           "qid": "Q66372407"
         },
         {
@@ -279531,7 +279531,7 @@
           "qid": "Q66372406",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:0801-ioannes-bufalarus"
+            "mr:0801-ioannes-bufalari"
           ]
         }
       ],
@@ -281221,7 +281221,7 @@
           "qid": "Q733433"
         }
       ],
-      "mr:0730-mannis-guzman": [
+      "mr:0730-mannes-guzman": [
         {
           "kind": "place",
           "where": "text",
@@ -281241,7 +281241,7 @@
           "start": 64,
           "end": 76,
           "check": "1d9713f3",
-          "name": "Mannis Guzman",
+          "name": "Mannes Guzman",
           "qid": "Q532119"
         },
         {
@@ -282697,7 +282697,7 @@
           "qid": "Q115921687"
         }
       ],
-      "mr:0801-ioannes-bufalarus": [
+      "mr:0801-ioannes-bufalari": [
         {
           "kind": "place",
           "where": "text",
@@ -282717,7 +282717,7 @@
           "start": 15,
           "end": 32,
           "check": "463f3d50",
-          "name": "Ioannes Bufalarus",
+          "name": "Ioannes Bufalari",
           "qid": "Q66372406"
         }
       ],
@@ -284556,7 +284556,7 @@
           ]
         }
       ],
-      "mr:0805-paridis-theani": [
+      "mr:0805-paris-theani": [
         {
           "kind": "place",
           "where": "text",
@@ -284576,7 +284576,7 @@
           "start": 25,
           "end": 31,
           "check": "0831dd7c",
-          "name": "Paridis",
+          "name": "Paris",
           "qid": "Q3895860"
         }
       ],
@@ -284763,7 +284763,7 @@
           "qid": "Q44091"
         }
       ],
-      "mr:0806-hormisda-papa": [
+      "mr:0806-hormisdas-papa": [
         {
           "kind": "place",
           "where": "text",
@@ -284783,7 +284783,7 @@
           "start": 46,
           "end": 53,
           "check": "ab6345ef",
-          "name": "Hormisda",
+          "name": "Hormisdas",
           "qid": "Q160931"
         },
         {
@@ -288776,7 +288776,7 @@
           ]
         }
       ],
-      "mr:0813-modestus-garcia-martus": [
+      "mr:0813-modestus-garcia-marti": [
         {
           "kind": "place",
           "where": "text",
@@ -288796,7 +288796,7 @@
           "start": 74,
           "end": 94,
           "check": "0454a1b1",
-          "name": "Modestus Garcia Martus",
+          "name": "Modestus Garcia Marti",
           "qid": "Q14918044"
         }
       ],
@@ -295579,7 +295579,7 @@
           ]
         }
       ],
-      "mr:0825-mena-constantinopoli": [
+      "mr:0825-menas-constantinopoli": [
         {
           "kind": "place",
           "where": "text",
@@ -295599,7 +295599,7 @@
           "start": 22,
           "end": 26,
           "check": "fbd6e7ff",
-          "name": "Mena",
+          "name": "Menas",
           "qid": "Q1269184"
         },
         {
@@ -296075,7 +296075,7 @@
           "qid": "Q451590"
         }
       ],
-      "mr:0826-maria-beltrame-quattrocchus": [
+      "mr:0826-maria-beltrame-quattrocchi": [
         {
           "kind": "place",
           "where": "text",
@@ -296095,7 +296095,7 @@
           "start": 14,
           "end": 40,
           "check": "d9b42461",
-          "name": "Maria Beltrame Quattrocchus",
+          "name": "Maria Beltrame Quattrocchi",
           "qid": "Q3847211"
         }
       ],
@@ -297004,7 +297004,7 @@
           "qid": "Q1255493"
         }
       ],
-      "mr:0827-raymundus-martus-soriano": [
+      "mr:0827-raymundus-marti-soriano": [
         {
           "kind": "place",
           "where": "text",
@@ -297024,7 +297024,7 @@
           "start": 103,
           "end": 125,
           "check": "d70eb367",
-          "name": "Raymundus Martus Soriano",
+          "name": "Raymundus Marti Soriano",
           "qid": "Q9303568"
         }
       ],
@@ -298952,7 +298952,7 @@
           "qid": "Q2846327"
         }
       ],
-      "mr:0831-aristidis-athenarum": [
+      "mr:0831-aristides-athenarum": [
         {
           "kind": "place",
           "where": "text",
@@ -298972,7 +298972,7 @@
           "start": 15,
           "end": 23,
           "check": "d6cb9a6f",
-          "name": "Aristidis",
+          "name": "Aristides",
           "qid": "Q349916"
         },
         {
@@ -304196,7 +304196,7 @@
           "qid": "Q566085"
         }
       ],
-      "mr:0906-michael-czartoryskus": [
+      "mr:0906-michael-czartoryski": [
         {
           "kind": "place",
           "where": "text",
@@ -304216,7 +304216,7 @@
           "start": 29,
           "end": 48,
           "check": "e9d9ca87",
-          "name": "Michael Czartoryskus",
+          "name": "Michael Czartoryski",
           "qid": "Q586593"
         },
         {
@@ -315619,14 +315619,14 @@
           "qid": "Q4821868"
         }
       ],
-      "mr:0925-cleopha-discipulus": [
+      "mr:0925-cleophas-discipulus": [
         {
           "kind": "person",
           "where": "text",
           "start": 22,
           "end": 28,
           "check": "15e44743",
-          "name": "Cleopha",
+          "name": "Cleophas",
           "qid": "Q711072"
         },
         {
@@ -317209,7 +317209,7 @@
           ]
         }
       ],
-      "mr:0928-eustochius-bethlehem": [
+      "mr:0928-eustochium-bethlehem": [
         {
           "kind": "place",
           "where": "text",
@@ -317229,7 +317229,7 @@
           "start": 45,
           "end": 54,
           "check": "5789feac",
-          "name": "Eustochius",
+          "name": "Eustochium",
           "qid": "Q442396"
         },
         {
@@ -324777,14 +324777,14 @@
           "qid": "Q15982413"
         }
       ],
-      "mr:1011-sarmata-thebaidis": [
+      "mr:1011-sarmatas-thebaidis": [
         {
           "kind": "person",
           "where": "text",
           "start": 22,
           "end": 29,
           "check": "567614a5",
-          "name": "Sarmata",
+          "name": "Sarmatas",
           "qid": "Q141944956"
         },
         {
@@ -332227,7 +332227,7 @@
           "qid": "Q16599527"
         }
       ],
-      "mr:1027-thrasea-eumeniae": [
+      "mr:1027-thraseas-eumeniae": [
         {
           "kind": "place",
           "where": "text",
@@ -332247,7 +332247,7 @@
           "start": 41,
           "end": 47,
           "check": "428e4bb4",
-          "name": "Thrasea",
+          "name": "Thraseas",
           "qid": "Q1252393"
         },
         {
@@ -334553,7 +334553,7 @@
           "qid": "Q1356096"
         }
       ],
-      "mr:1102-malachia-dunensis": [
+      "mr:1102-malachias-dunensis": [
         {
           "kind": "place",
           "where": "text",
@@ -334573,7 +334573,7 @@
           "start": 77,
           "end": 85,
           "check": "2deef7cd",
-          "name": "Malachia",
+          "name": "Malachias",
           "qid": "Q356455"
         },
         {
@@ -335655,7 +335655,7 @@
           "qid": "Q738752",
           "role": "mentioned",
           "commemorated_in": [
-            "mr:1228-theona-alexandriae"
+            "mr:1228-theonas-alexandriae"
           ]
         },
         {
@@ -335940,7 +335940,7 @@
           "qid": "Q3819705"
         }
       ],
-      "mr:1105-gomida-keumurgian": [
+      "mr:1105-gomidas-keumurgian": [
         {
           "kind": "place",
           "where": "text",
@@ -335960,7 +335960,7 @@
           "start": 24,
           "end": 42,
           "check": "674e6833",
-          "name": "Gomida Keumurgian",
+          "name": "Gomidas Keumurgian",
           "qid": "Q3773204"
         },
         {
@@ -337711,7 +337711,7 @@
           "qid": "Q397147"
         }
       ],
-      "mr:1109-aloysius-beltrame-quattrocchus": [
+      "mr:1109-aloysius-beltrame-quattrocchi": [
         {
           "kind": "place",
           "where": "text",
@@ -337731,7 +337731,7 @@
           "start": 14,
           "end": 40,
           "check": "3c3b45c1",
-          "name": "Aloysius Beltrame Quattrocchus",
+          "name": "Aloysius Beltrame Quattrocchi",
           "qid": "Q13586473"
         }
       ],
@@ -338694,7 +338694,7 @@
           ]
         }
       ],
-      "mr:1111-menna-mareotidem": [
+      "mr:1111-mennas-mareotidem": [
         {
           "kind": "place",
           "where": "text",
@@ -338714,11 +338714,11 @@
           "start": 39,
           "end": 44,
           "check": "b3e07cde",
-          "name": "Menna Mareotidem",
+          "name": "Mennas Mareotidem",
           "qid": "Q163432"
         }
       ],
-      "mr:1111-menna-samnii": [
+      "mr:1111-mennas-samnii": [
         {
           "kind": "place",
           "where": "text",
@@ -338738,7 +338738,7 @@
           "start": 34,
           "end": 39,
           "check": "b3e07cde",
-          "name": "Menna Samnii",
+          "name": "Mennas Samnii",
           "qid": "Q30879544"
         },
         {
@@ -339912,7 +339912,7 @@
           "qid": "Q3302416"
         }
       ],
-      "mr:1113-mitria-aquarum-sextiarum": [
+      "mr:1113-mitrias-aquarum-sextiarum": [
         {
           "kind": "place",
           "where": "text",
@@ -339932,7 +339932,7 @@
           "start": 64,
           "end": 70,
           "check": "801d03e0",
-          "name": "Mitria",
+          "name": "Mitrias",
           "qid": "Q2060854"
         }
       ],
@@ -351504,7 +351504,7 @@
           "qid": "Q2038106"
         }
       ],
-      "mr:1204-heracla-alexandriae": [
+      "mr:1204-heraclas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -351524,7 +351524,7 @@
           "start": 30,
           "end": 36,
           "check": "51c6c71d",
-          "name": "Heracla",
+          "name": "Heraclas",
           "qid": "Q738738"
         },
         {
@@ -354668,7 +354668,7 @@
           "qid": "Q580706"
         }
       ],
-      "mr:1213-antonius-grassus": [
+      "mr:1213-antonius-grassi": [
         {
           "kind": "place",
           "where": "text",
@@ -354688,7 +354688,7 @@
           "start": 28,
           "end": 42,
           "check": "458ec016",
-          "name": "Antonius Grassus",
+          "name": "Antonius Grassi",
           "qid": "Q2854019"
         }
       ],
@@ -360071,7 +360071,7 @@
           "qid": "Q21003757"
         }
       ],
-      "mr:1228-theona-alexandriae": [
+      "mr:1228-theonas-alexandriae": [
         {
           "kind": "place",
           "where": "text",
@@ -360091,7 +360091,7 @@
           "start": 29,
           "end": 34,
           "check": "7b407efa",
-          "name": "Theona",
+          "name": "Theonas",
           "qid": "Q738752"
         },
         {

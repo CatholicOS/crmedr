@@ -195,13 +195,13 @@
       "en": [
         [
           "Luigi",
-          1
+          2
         ]
       ],
       "it": [
         [
           "Luigi",
-          16
+          17
         ]
       ]
     },
@@ -323,7 +323,11 @@
       "en": [
         [
           "Anthony",
-          21
+          23
+        ],
+        [
+          "Antony",
+          2
         ],
         [
           "Antonio",
@@ -332,16 +336,12 @@
         [
           "Antoni",
           1
-        ],
-        [
-          "Antony",
-          1
         ]
       ],
       "it": [
         [
           "Antonio",
-          28
+          31
         ]
       ]
     },
@@ -369,20 +369,6 @@
       "it": [
         [
           "Arnoldo",
-          1
-        ]
-      ]
-    },
-    "artemidis": {
-      "en": [
-        [
-          "Artemides",
-          1
-        ]
-      ],
-      "it": [
-        [
-          "Artemide",
           1
         ]
       ]
@@ -1059,7 +1045,7 @@
         ]
       ]
     },
-    "eustochius": {
+    "eustochium": {
       "en": [
         [
           "Eustochia",
@@ -1327,14 +1313,6 @@
         ]
       ]
     },
-    "gomida": {
-      "en": [
-        [
-          "Gomidas",
-          1
-        ]
-      ]
-    },
     "gregorius": {
       "en": [
         [
@@ -1439,7 +1417,7 @@
       "it": [
         [
           "Elena",
-          2
+          3
         ]
       ]
     },
@@ -1681,13 +1659,13 @@
       "en": [
         [
           "John",
-          70
+          71
         ]
       ],
       "it": [
         [
           "Giovanni",
-          70
+          71
         ]
       ]
     },
@@ -1911,10 +1889,16 @@
         ]
       ]
     },
-    "leonida": {
+    "leonidas": {
       "en": [
         [
           "Leonid",
+          1
+        ]
+      ],
+      "it": [
+        [
+          "Leonida",
           1
         ]
       ]
@@ -1998,18 +1982,18 @@
           4
         ],
         [
-          "Ludwik",
-          1
+          "Ludovico",
+          2
         ],
         [
-          "Ludovico",
+          "Ludwik",
           1
         ]
       ],
       "it": [
         [
           "Ludovico",
-          6
+          7
         ],
         [
           "Luigi",
@@ -2031,6 +2015,20 @@
         ]
       ]
     },
+    "mancius": {
+      "en": [
+        [
+          "Mancio",
+          1
+        ]
+      ],
+      "it": [
+        [
+          "Mancio",
+          1
+        ]
+      ]
+    },
     "manfredus": {
       "en": [
         [
@@ -2041,20 +2039,6 @@
       "it": [
         [
           "Manfredo",
-          1
-        ]
-      ]
-    },
-    "mannis": {
-      "en": [
-        [
-          "Mannes",
-          1
-        ]
-      ],
-      "it": [
-        [
-          "Manno",
           1
         ]
       ]
@@ -2149,7 +2133,7 @@
       "en": [
         [
           "Mary",
-          13
+          15
         ],
         [
           "Marie",
@@ -2255,17 +2239,35 @@
         ]
       ]
     },
-    "modestus": {
+    "michael": {
       "en": [
         [
-          "Modest",
+          "Michał",
           1
         ]
       ],
       "it": [
         [
-          "Modesto",
+          "Michele",
+          11
+        ],
+        [
+          "Cipriano",
           1
+        ]
+      ]
+    },
+    "modestus": {
+      "en": [
+        [
+          "Modest",
+          2
+        ]
+      ],
+      "it": [
+        [
+          "Modesto",
+          2
         ]
       ]
     },
@@ -2635,13 +2637,13 @@
       "en": [
         [
           "Raymond",
-          6
+          7
         ]
       ],
       "it": [
         [
           "Raimondo",
-          5
+          6
         ]
       ]
     },
@@ -2891,13 +2893,13 @@
       "en": [
         [
           "Stephen",
-          4
+          5
         ]
       ],
       "it": [
         [
           "Stefano",
-          4
+          5
         ]
       ]
     },
@@ -3251,10 +3253,26 @@
         ]
       ]
     },
+    "artemides": {
+      "it": [
+        [
+          "Artemide",
+          1
+        ]
+      ]
+    },
     "athanasius": {
       "it": [
         [
           "Atanasio",
+          1
+        ]
+      ]
+    },
+    "augustus": {
+      "it": [
+        [
+          "Augusto",
           1
         ]
       ]
@@ -3455,7 +3473,7 @@
       "it": [
         [
           "Gaspare",
-          5
+          6
         ]
       ]
     },
@@ -3467,7 +3485,7 @@
         ]
       ]
     },
-    "hannibalis": {
+    "hannibal": {
       "it": [
         [
           "Annibale",
@@ -3587,6 +3605,14 @@
         ]
       ]
     },
+    "mannes": {
+      "it": [
+        [
+          "Manno",
+          1
+        ]
+      ]
+    },
     "marcolinus": {
       "it": [
         [
@@ -3607,18 +3633,6 @@
       "it": [
         [
           "Melchiorre",
-          1
-        ]
-      ]
-    },
-    "michael": {
-      "it": [
-        [
-          "Michele",
-          10
-        ],
-        [
-          "Cipriano",
           1
         ]
       ]

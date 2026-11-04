@@ -32,7 +32,7 @@
 | 2 | 8 | `mr:1102-ambrosius-agaunensis` |  | CH | dies_natalis |  |  |
 | 2 | 9 | `mr:1102-winefrida-holywell` |  | GB | dies_natalis | same as `mr:1103-wenefrida-holywell` |  |
 | 2 | 10 | `mr:1102-georgius-viennae` |  | FR | dies_natalis |  |  |
-| 2 | 11 | `mr:1102-malachia-dunensis` |  | FR | depositio | same as `mr:1103-malachias-dunensis` |  |
+| 2 | 11 | `mr:1102-malachias-dunensis` |  | FR | depositio | same as `mr:1103-malachias-dunensis` |  |
 | 2 | 12 | `mr:1102-margarita-de-lotharingia` | * | FR | dies_natalis |  | 2004 English: Translation error: "Mortain" where the Latin has "Moritániæ" (Mortagne). Translation error: "rebuilt" where the Latin has "ædificáverat" (had built). |
 | 2 | 13 | `mr:1102-ioannes-bodey` | * | GB | dies_natalis |  |  |
 | 2 | 14 | `mr:1102-pius-a-sancto-aloysio` | * | IT | dies_natalis |  |  |
@@ -71,7 +71,7 @@
 | 5 | 5 | `mr:1105-guethnocus-britanniae-minoris` | * | FR | dies_natalis |  |  |
 | 5 | 6 | `mr:1105-bertilla-calensis` | * | FR | dies_natalis |  | 2004 Italian: Translation error: "monastero di Calais" where the Latin has "cœnóbio Calénsi" (the monastery of Chelles, near Meaux). |
 | 5 | 7 | `mr:1105-geraldus-biterrarum` | * | FR | dies_natalis |  |  |
-| 5 | 8 | `mr:1105-gomida-keumurgian` | * | TR | dies_natalis |  |  |
+| 5 | 8 | `mr:1105-gomidas-keumurgian` | * | TR | dies_natalis |  |  |
 | 5 | 9 | `mr:1105-dominicus-mau` |  | VN | dies_natalis |  | 2004 Italian: Translation error: "con l'accusa di aver portato in pubblico la corona del Rosario" where the Latin has "Rosárii corónam públice ferens" (openly wearing the rosary as he was led to execution, exhorting the Christians). |
 | 5 | 10 | `mr:1105-guido-maria-conforti` | * | IT | dies_natalis |  | Guido Maria Conforti, blessed in the 2004 editions, was canonized on 23 October 2011. |
 | 5 | 11 | `mr:1105-ioannes-antonius-burro-mas` | * | ES | dies_natalis |  |  |
@@ -126,7 +126,7 @@
 | 9 | 11 | `mr:1109-georgius-napper` | * | GB | dies_natalis |  |  |
 | 9 | 12 | `mr:1109-elisabeth-a-sanctissima-trinitate` | * | FR | dies_natalis |  | Elizabeth of the Trinity (Catez), blessed in the 2004 editions, was canonized on 16 October 2016. |
 | 9 | 13 | `mr:1109-henricus-hlebowicz` | * | BY | dies_natalis |  |  |
-| 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchus` | * | IT | dies_natalis |  |  |
+| 9 | 14 | `mr:1109-aloysius-beltrame-quattrocchi` | * | IT | dies_natalis |  |  |
 | 10 | (1) | `mr:1110-leo-i` |  | IT | dies_natalis | same as `mr:0411-leo-i` |  |
 | 10 | 2 | `mr:1110-demetrianus-antiochenus` |  | IR | dies_natalis |  |  |
 | 10 | 3 | `mr:1110-orestes-tyanae` |  | TR | dies_natalis | same as `mr:1109-orestes-tyanae` |  |
@@ -137,9 +137,9 @@
 | 10 | 8 | `mr:1110-andreas-avellino` |  | IT | dies_natalis |  |  |
 | 10 | 9 | `mr:1110-acisclus-pina-piazuelo` | * | ES | dies_natalis |  |  |
 | 11 | (1) | `mr:1111-martinus-turonensis` |  | HU | depositio |  |  |
-| 11 | 2 | `mr:1111-menna-mareotidem` |  | EG | dies_natalis |  |  |
+| 11 | 2 | `mr:1111-mennas-mareotidem` |  | EG | dies_natalis |  |  |
 | 11 | 3 | `mr:1111-veranus-lirinensis` |  | FR | commemoratio |  |  |
-| 11 | 4 | `mr:1111-menna-samnii` |  | IT | commemoratio |  |  |
+| 11 | 4 | `mr:1111-mennas-samnii` |  | IT | commemoratio |  |  |
 | 11 | 5 | `mr:1111-ioannes-eleemosynarius` |  | CY | dies_natalis | same as `mr:0123-ioannes-eleemosynarius` |  |
 | 11 | 6 | `mr:1111-bertuinus-malonnensis` | * | BE | dies_natalis |  |  |
 | 11 | 7 | `mr:1111-theodorus-studita` |  | TR | dies_natalis | same as `mr:1112-theodorus-studita` |  |
@@ -160,7 +160,7 @@
 | 12 | 11 | `mr:1112-margaritus-flores` |  | MX | dies_natalis |  |  |
 | 12 | 12 | `mr:1112-iosephus-medes-ferris` | * | ES | dies_natalis |  |  |
 | 13 | 1 | `mr:1113-antoninus-et-socii` |  | IL | dies_natalis |  | 2004 English: Translation error: "Galerius Maximian" where the Latin has "Galério Maximíno" (Galerius Maximinus). |
-| 13 | 2 | `mr:1113-mitria-aquarum-sextiarum` |  | FR | dies_natalis |  |  |
+| 13 | 2 | `mr:1113-mitrias-aquarum-sextiarum` |  | FR | dies_natalis |  |  |
 | 13 | 3 | `mr:1113-brictius-turonum` |  | FR | dies_natalis |  |  |
 | 13 | 4 | `mr:1113-arcadius-et-socii` |  | TN | commemoratio |  | 2004 English: Translation error: "Eutychius" where the Latin has "Eutychiáni" (Eutychian). |
 | 13 | 5 | `mr:1113-leonianus-augustoduni` | * | FR | dies_natalis |  |  |

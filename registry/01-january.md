@@ -208,7 +208,7 @@
 | 15 | 17 | `mr:0115-nicolaus-gross` | * | DE | dies_natalis |  |  |
 | 16 | 1 | `mr:0116-marcellus-i` |  | IT | depositio |  |  |
 | 16 | 2 | `mr:0116-danax-aulonis` | * | AL | dies_natalis |  |  |
-| 16 | 3 | `mr:0116-mela-rhinocorurae` |  | EG | dies_natalis |  |  |
+| 16 | 3 | `mr:0116-melas-rhinocorurae` |  | EG | dies_natalis |  |  |
 | 16 | 4 | `mr:0116-honoratus-arelatis` |  | FR | dies_natalis |  | 2004 English: Translation error: "the Province of France" where the Latin has "Província Gálliæ" (Provence). |
 | 16 | 5 | `mr:0116-iacobus-tarantasiae` | * | FR | dies_natalis |  |  |
 | 16 | 6 | `mr:0116-titianus-opitergii` |  | IT | dies_natalis |  |  |
@@ -255,13 +255,13 @@
 | 19 | 12 | `mr:0119-marcellus-spinola-y-maestre` | * | ES | dies_natalis |  |  |
 | 20 | (1) | `mr:0120-fabianus-papa` |  | IT | dies_natalis |  |  |
 | 20 | (2) | `mr:0120-sebastianus-romae` |  | IT | dies_natalis |  |  |
-| 20 | 3 | `mr:0120-ascla-antinoes` |  | EG | dies_natalis | same as `mr:0123-ascla-antinoes` |  |
+| 20 | 3 | `mr:0120-asclas-antinoes` |  | EG | dies_natalis | same as `mr:0123-ascla-antinoes` |  |
 | 20 | 4 | `mr:0120-neophytus-nicaeae` |  | TR | dies_natalis |  |  |
 | 20 | 5 | `mr:0120-euthymius-palaestinae` |  | PS | dies_natalis |  |  |
 | 20 | 6 | `mr:0120-wulfstanus-vigorniae` |  | GB | dies_natalis | same as `mr:0119-wulstanus-vigorniae` | 2004 Italian: Translation error: "condannare la venalità" (condemning venality) where the Latin has "in venalícia exprobránda" (condemning the slave trade). |
 | 20 | 7 | `mr:0120-benedictus-ricasoli` | * | IT | dies_natalis |  | 2004 English: Translation error: "Coltevalenza" where the Latin has "Coltibóni" (Coltibuono). |
 | 20 | 8 | `mr:0120-henricus-upsaliensis` | * | FI | dies_natalis |  |  |
-| 20 | 9 | `mr:0120-eustochius-calafato` |  | IT | dies_natalis |  |  |
+| 20 | 9 | `mr:0120-eustochium-calafato` |  | IT | dies_natalis |  |  |
 | 20 | 10 | `mr:0120-stephanus-min-kuk-ka` |  | KR | dies_natalis |  | 2004 English: Translation error: "beheaded" where the Latin has "iugulátus" (his throat was cut). |
 | 20 | 11 | `mr:0120-adalheidis-brando` | * | IT | dies_natalis |  | Maria Cristina of the Immaculate Conception Brando, blessed in the 2004 editions, was canonized on 17 May 2015. 2004 English: Translation error: "Cesaura" where the Latin has "Casáureæ" (Casoria). |
 | 20 | 12 | `mr:0120-michael-iwene-tansi` | * | GB | dies_natalis |  |  |
@@ -302,7 +302,7 @@
 | 24 | (1) | `mr:0124-franciscus-de-sales` |  | CH | depositio | same as `mr:0129-franciscus-salesius` |  |
 | 24 | 2 | `mr:0124-felicianus-fulginii` |  | IT | dies_natalis | same as `mr:1020-felicianus-fulginii` | 2004 English: Translation error: adds "a faithful guardian of the flock entrusted to him", which is not in the Latin. |
 | 24 | 3 | `mr:0124-sabinianus-trecensis` |  | FR | dies_natalis |  | 2004 English: Translation error: adds "who bore witness to Christ through the shedding of his blood", which is not in the Latin. |
-| 24 | 4 | `mr:0124-babyla-antiochiae` |  | TR | dies_natalis |  |  |
+| 24 | 4 | `mr:0124-babylas-antiochiae` |  | TR | dies_natalis |  |  |
 | 24 | 5 | `mr:0124-exsuperantius-cinguli` |  | IT | dies_natalis |  | 2004 English: Translation error: adds "who faithfully shepherded his people and is venerated for his holiness and pastoral zeal", which is not in the Latin. |
 | 24 | 6 | `mr:0124-paula-gambara-costa` | * | IT | dies_natalis |  | 2004 English: Translation error: "the trials of a difficult marriage" where the Latin has "violéntum cóniugem" (a violent husband). |
 | 24 | 7 | `mr:0124-gulielmus-ireland-et-ioannes-grove` | * | GB | dies_natalis |  | 2004 English: Translation error: adds "steadfast in faith and courage", which is not in the Latin. |
@@ -362,7 +362,7 @@
 | 29 | 4 | `mr:0129-iuventinus-et-maximinus` |  | TR | dies_natalis | same as `mr:0125-iuventinus-et-maximus` |  |
 | 29 | 5 | `mr:0129-valerius-trevirorum` |  | DE | dies_natalis |  |  |
 | 29 | 6 | `mr:0129-aphraates-antiochiae` |  | TR | dies_natalis | same as `mr:0407-aphraates-antiochiae` |  |
-| 29 | 7 | `mr:0129-gilda-sapiens` | * | FR | dies_natalis |  | 2004 Italian: Possible translation error: "scrisse sullo sterminio della Bretagna" where the Latin has "de excídio Británniæ scripsit". The Latin names Gildas's work De excidio Britanniae, on the ruin of Britain, the island of Great Britain ("Britannia" in Italian); "Bretagna" usually means Brittany, the "Británnia Minor" where the eulogy places him. The curator's query (2026-10-22). |
+| 29 | 7 | `mr:0129-gildas-sapiens` | * | FR | dies_natalis |  | 2004 Italian: Possible translation error: "scrisse sullo sterminio della Bretagna" where the Latin has "de excídio Británniæ scripsit". The Latin names Gildas's work De excidio Britanniae, on the ruin of Britain, the island of Great Britain ("Britannia" in Italian); "Bretagna" usually means Brittany, the "Británnia Minor" where the eulogy places him. The curator's query (2026-10-22). |
 | 29 | 8 | `mr:0129-sulpicius-severus` |  | FR | dies_natalis |  | 2004 English: Translation error: "formerly a senator" where the Latin has "e senatóribus Galliárum" (of a Gallic senatorial family). |
 | 29 | 9 | `mr:0129-villana-de-bottis` | * | IT | dies_natalis |  |  |
 | 29 | 10 | `mr:0129-boleslava-maria-lament` | * | PL | dies_natalis |  |  |

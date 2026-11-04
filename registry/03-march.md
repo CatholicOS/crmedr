@@ -50,7 +50,7 @@
 | 5 | 1 | `mr:0305-theophilus-caesariensis` |  | PS | commemoratio |  |  |
 | 5 | 2 | `mr:0305-conon-pamphyliae` |  | TR | dies_natalis | same as `mr:0306-conon-pamphyliae` |  |
 | 5 | 3 | `mr:0305-lucius-i` |  | IT | depositio | same as `mr:0304-lucius-i` |  |
-| 5 | 4 | `mr:0305-phoca-sinopes` |  | TR | dies_natalis |  |  |
+| 5 | 4 | `mr:0305-phocas-sinopes` |  | TR | dies_natalis |  |  |
 | 5 | 5 | `mr:0305-hadrianus-caesareae` |  | IL | dies_natalis |  |  |
 | 5 | 6 | `mr:0305-gerasimus-iordanis` |  | PS | dies_natalis |  |  |
 | 5 | 7 | `mr:0305-kieranus-sagiriae` | * | IE | dies_natalis |  |  |
@@ -82,7 +82,7 @@
 | 7 | 11 | `mr:0307-teresia-margarita-redi` |  | IT | dies_natalis |  |  |
 | 7 | 12 | `mr:0307-ioannes-baptista-nam-chong-sam` |  | KR | dies_natalis |  |  |
 | 7 | 13 | `mr:0307-simeon-berneux-et-socii` |  | KR | dies_natalis |  |  |
-| 7 | 14 | `mr:0307-leonida-fedorov` | * | RU | dies_natalis |  |  |
+| 7 | 14 | `mr:0307-leonidas-fedorov` | * | RU | dies_natalis |  |  |
 | 8 | (1) | `mr:0308-ioannes-de-deo` |  | ES | dies_natalis |  | 2004 English: Translation error: "rebuilt by himself" where the Latin has "a se ædificáto" (built by him). |
 | 8 | 2 | `mr:0308-pontius-carthaginensis` |  | TN | commemoratio |  |  |
 | 8 | 3 | `mr:0308-apollonius-et-philemon` |  | EG | dies_natalis |  |  |
@@ -157,7 +157,7 @@
 | 14 | 3 | `mr:0314-leobinus-carnuti` |  | FR | dies_natalis | same as `mr:0915-leobinus-carnuti` |  |
 | 14 | 4 | `mr:0314-mathildis-quedlinburgi` |  | DE | dies_natalis |  |  |
 | 14 | 5 | `mr:0314-paulina-fuldensis` | * | DE | dies_natalis |  |  |
-| 14 | 6 | `mr:0314-eva-montis-cornelius` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "monaca di clausura nel monastero di San Martino" (an enclosed nun in the monastery) where the Latin has "reclúsæ prope cœnóbium Sancti Martíni" (a recluse near the monastery of Saint Martin). |
+| 14 | 6 | `mr:0314-eva-montis-cornelii` | * | BE | dies_natalis |  | 2004 Italian: Translation error: "monaca di clausura nel monastero di San Martino" (an enclosed nun in the monastery) where the Latin has "reclúsæ prope cœnóbium Sancti Martíni" (a recluse near the monastery of Saint Martin). |
 | 14 | 7 | `mr:0314-iacobus-cusmano` | * | IT | dies_natalis |  |  |
 | 15 | 1 | `mr:0315-menignus-parii` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "tintore" (dyer) where the Latin has "fullónis" (fuller). |
 | 15 | 2 | `mr:0315-zacharias-papa` |  | IT | dies_natalis | same as `mr:0322-zacharias-papa` |  |
@@ -167,9 +167,9 @@
 | 15 | 6 | `mr:0315-ludovica-de-marillac` |  | FR | dies_natalis |  |  |
 | 15 | 7 | `mr:0315-clemens-maria-hofbauer` |  | AT | dies_natalis |  |  |
 | 15 | 8 | `mr:0315-ioannes-adalbertus-balicki` | * | PL | dies_natalis |  |  |
-| 15 | 9 | `mr:0315-artemidis-zatti` | * | AR | dies_natalis |  | Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022. |
+| 15 | 9 | `mr:0315-artemides-zatti` | * | AR | dies_natalis |  | Artemide Zatti, blessed in the 2004 editions, was canonized on 9 October 2022. |
 | 16 | 1 | `mr:0316-hilarius-et-tatianus` |  | IT | dies_natalis |  |  |
-| 16 | 2 | `mr:0316-papa-seleuciae` |  | IQ | dies_natalis |  |  |
+| 16 | 2 | `mr:0316-papas-seleuciae` |  | IQ | dies_natalis |  |  |
 | 16 | 3 | `mr:0316-iulianus-anazarbi` |  | TR | dies_natalis |  |  |
 | 16 | 4 | `mr:0316-eusebia-hammaticensis` | * | FR | dies_natalis |  |  |
 | 16 | 5 | `mr:0316-heribertus-coloniae-agrippinae` |  | DE | dies_natalis |  |  |
@@ -263,10 +263,10 @@
 | 24 | 8 | `mr:0324-maria-karlowska` | * | PL | dies_natalis |  |  |
 | 25 | (1) | `mr:0325-annuntiatio-domini` |  |  | celebratio | same as `mr:0325-annuntiatio-beatissimae-virginis-genitricis` |  |
 | 25 | 2 | `mr:0325-bonus-latro` |  | PS | commemoratio |  |  |
-| 25 | 3 | `mr:0325-dula-nicomediae` |  | TR | dies_natalis |  |  |
+| 25 | 3 | `mr:0325-dulas-nicomediae` |  | TR | dies_natalis |  |  |
 | 25 | 4 | `mr:0325-quirinus-romae` |  | IT | dies_natalis |  |  |
 | 25 | 5 | `mr:0325-matrona-thessalonicensis` |  | GR | dies_natalis |  |  |
-| 25 | 6 | `mr:0325-mona-mediolani` |  | IT | dies_natalis |  |  |
+| 25 | 6 | `mr:0325-monas-mediolani` |  | IT | dies_natalis |  |  |
 | 25 | 7 | `mr:0325-hermelandus-fontanellensis` |  | FR | dies_natalis |  |  |
 | 25 | 8 | `mr:0325-nicodemus-mammulae` | * | IT | dies_natalis |  | 2004 English: Translation error: "Hierax" where the Latin "Hierácium" is Gerace. |
 | 25 | 9 | `mr:0325-procopius-sazavae` |  | CZ | dies_natalis |  |  |
@@ -300,7 +300,7 @@
 | 28 | 6 | `mr:0328-hilarion-pelecetensis` |  | TR | dies_natalis |  | 2004 Italian: Translation error: "nell’odierna Grecia" for the Bithynian Mount Olympus, which is in Asia Minor (modern Turkey). |
 | 28 | 7 | `mr:0328-stephanus-harding` |  | FR | dies_natalis | same as `mr:0417-stephanus-harding` |  |
 | 28 | 8 | `mr:0328-conus-nasi` | * | IT | dies_natalis |  | 2004 English: Translation error: "Conon" where the Latin has "Coni" (Conus, Cono). |
-| 28 | 9 | `mr:0328-antonius-patrizus` | * | IT | dies_natalis |  |  |
+| 28 | 9 | `mr:0328-antonius-patrizi` | * | IT | dies_natalis |  |  |
 | 28 | 10 | `mr:0328-ioanna-maria-de-maille` | * | FR | dies_natalis |  |  |
 | 28 | 11 | `mr:0328-christophorus-wharton` | * | GB | dies_natalis |  |  |
 | 28 | 12 | `mr:0328-renata-maria-feillatreau` | * | FR | dies_natalis |  |  |
