@@ -39513,6 +39513,21 @@
           "role": "mentioned"
         }
       ],
+      "mr:1012-martyres-et-confessores-africae": [
+        {
+          "name": "Cyprianus",
+          "where": "text"
+        },
+        {
+          "name": "Felix",
+          "where": "text"
+        },
+        {
+          "name": "Hunnericus",
+          "where": "text",
+          "role": "mentioned"
+        }
+      ],
       "mr:1012-opilio-placentiae": [
         {
           "name": "Opilio",
@@ -49813,13 +49828,6 @@
       "mr:1005-martyres-trevirorum": [
         {
           "name": "Diocletianus",
-          "where": "text",
-          "role": "mentioned"
-        }
-      ],
-      "mr:1012-martyres-et-confessores-africae": [
-        {
-          "name": "Hunnericus",
           "where": "text",
           "role": "mentioned"
         }
