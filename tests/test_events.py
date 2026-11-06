@@ -37,10 +37,14 @@ class EventsTest(unittest.TestCase):
                     self.assertEqual(m["check"], hashlib.sha256(phrase.encode("utf-8")).hexdigest()[:8], tag)
                     self.assertEqual(m["end"] - m["start"], len(phrase.encode("utf-16-le")) // 2, tag)
 
-    def test_each_event_is_curated_with_both_phrases_and_an_item(self):
+    def test_each_event_is_curated_with_a_phrase_and_an_item(self):
+        # Councils name the event in both editions; another event may be named in one only (the Latin's
+        # eádem tempestáte for the Italian's stessa persecuzione).
         for mrid, items in self.events.items():
             for e in items:
-                self.assertTrue(e.get("la") and e.get("it") and e.get("qid", "").startswith("Q"), (mrid, e))
+                self.assertTrue((e.get("la") or e.get("it")) and e.get("qid", "").startswith("Q"), (mrid, e))
+                if not e.get("keep_places"):
+                    self.assertTrue(e.get("la") and e.get("it"), (mrid, e))
 
 
 if __name__ == "__main__":

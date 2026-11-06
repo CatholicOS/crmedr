@@ -641,9 +641,10 @@ def curated_place_roles(ms, items, text, lang, place_qid=lambda la: None):
 
 
 def with_events(ms, events, source, lang):
-    """The eulogy's marks with its events (data/events_curated.json: a council or synod by its printed
-    phrase in each language and its item): the whole phrase is one event mark, and a place mark inside it
-    goes (the eulogy keeps the place through data/gazetteer.json, where the phrase resolves to the city).
+    """The eulogy's marks with its events (data/events_curated.json: an event by its printed phrase in each
+    language and its item): the whole phrase is one event mark, and a place mark inside it goes (a council's:
+    the eulogy keeps the place through data/gazetteer.json, where the phrase resolves to the city), unless
+    the item has `keep_places`, when it stays inside the event (Polonia in occupazione della Polonia).
     `source(where)` is the text the item is printed in; its `occurrence` (from 1) picks a phrase printed
     more than once. Returns (marks, errors): a phrase not printed is an error."""
     ms, errors = list(ms), []
@@ -661,8 +662,9 @@ def with_events(ms, events, source, lang):
             errors.append(f"the event {phrase!r} is not printed in the {where_key(where)}")
             continue
         span = (at, at + len(phrase))
-        ms = [m for m in ms if not (m["kind"] == "place" and m["where"] == where
-                                    and not free(span, [(m["start"], m["end"])]))]
+        if not item.get("keep_places"):
+            ms = [m for m in ms if not (m["kind"] == "place" and m["where"] == where
+                                        and not free(span, [(m["start"], m["end"])]))]
         ms.append({"kind": "event", "where": where, "start": span[0], "end": span[1], "form": phrase,
                    "qid": item["qid"]})
     return sorted(ms, key=mention_order), errors

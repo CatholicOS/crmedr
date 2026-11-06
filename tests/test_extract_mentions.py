@@ -1189,6 +1189,13 @@ class EventTest(unittest.TestCase):
         self.assertEqual(ms, [{"kind": "event", "where": "text", "start": 28, "end": 45, "form": "Concílio Ephesíno",
                                "qid": "Q184332"}])
 
+    def test_an_event_that_keeps_its_places_holds_the_place_mark_inside_it(self):
+        ms, errors = em.with_events([dict(self.PLACE)], [{"la": "Concílio Ephesíno", "qid": "Q184332",
+                                                          "keep_places": True}], lambda w: self.TEXT, "la")
+        self.assertEqual(errors, [])
+        self.assertEqual([m["kind"] for m in ms], ["event", "place"])
+        self.assertEqual(em.validate({"ed": {"mr:x": ms}}, lambda e, i, w: self.TEXT), [])
+
     def test_an_event_phrase_not_printed_is_an_error(self):
         _, errors = em.with_events([], [{"la": "Concílio Nicǽno", "it": "Concilio di Nicea", "qid": "Q133331"}],
                                    lambda w: self.TEXT, "la")
