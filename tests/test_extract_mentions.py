@@ -1194,6 +1194,7 @@ class EventTest(unittest.TestCase):
                                                           "keep_places": True}], lambda w: self.TEXT, "la")
         self.assertEqual(errors, [])
         self.assertEqual([m["kind"] for m in ms], ["event", "place"])
+        self.assertEqual(ms[1], self.PLACE)
         self.assertEqual(em.validate({"ed": {"mr:x": ms}}, lambda e, i, w: self.TEXT), [])
 
     def test_an_event_phrase_not_printed_is_an_error(self):
