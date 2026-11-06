@@ -1,10 +1,26 @@
 {
-  "$comment": "The councils and synods each eulogy of the 2004 editions names, as event mentions: the phrase as printed in the Latin (la) and the Italian (it), and the event's Wikidata item. The whole phrase is one mark; a place mark inside it goes, and the phrase's place resolves to the city where the council met (data/gazetteer.json). where (default the text) and occurrence (from 1) place a phrase printed elsewhere or more than once. Read by scripts/extract_mentions.py; see docs/superpowers/specs/2026-11-01-event-mentions-design.md.",
+  "$comment": "The events each eulogy of the 2004 editions names, as event mentions: the councils and synods, and other historical events with a Wikidata item (persecutions, wars, revolutions, invasions, sieges, schisms, epidemics). Each gives the phrase as printed in the Latin (la) and the Italian (it), either one when only that edition names the event, and the event's Wikidata item. The whole phrase is one mark; a place mark inside it goes (a council's phrase resolves to the city where it met, data/gazetteer.json), unless keep_places, when the place stays marked inside the event. where (default the text) and occurrence (from 1) place a phrase printed elsewhere or more than once. Read by scripts/extract_mentions.py; see docs/superpowers/specs/2026-11-01-event-mentions-design.md and docs/superpowers/specs/2026-11-07-historical-event-mentions-design.md.",
+  "mr:0101-ioannes-et-renatus-lego": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
   "mr:0101-maria-dei-genetrix": [
     {
       "la": "Concílio Ephesíno",
       "it": "Concilio di Efeso",
       "qid": "Q184332"
+    }
+  ],
+  "mr:0102-gulielmus-repin-et-laurentius-batard": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
     }
   ],
   "mr:0103-florentius-viennae": [
@@ -14,11 +30,99 @@
       "qid": "Q2992033"
     }
   ],
+  "mr:0103-gordius-caesareae": [
+    {
+      "la": "Diocletiáni imperatóris persecutióne",
+      "it": "persecuzione di Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0103-theopemptus-et-theonas": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0105-franciscus-peltier-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0107-polyeuctus-melitenae": [
+    {
+      "la": "edícto Décii imperatóris",
+      "it": "editto dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0109-iosephus-pawlowski-et-casimirus-grelewskus": [
+    {
+      "la": "Polónia invása",
+      "it": "Polonia invasa",
+      "qid": "Q150812",
+      "keep_places": true
+    }
+  ],
   "mr:0110-gregorius-x": [
     {
       "la": "Concílium Œcuménicum Lugdunénse Secúndum",
       "it": "secondo Concilio Ecumenico di Lione",
       "qid": "Q10951"
+    }
+  ],
+  "mr:0111-franciscus-rogaczewski": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0112-antonius-fournier": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0112-petrus-franciscus-jamet": [
+    {
+      "la": "magnæ perturbatiónis",
+      "it": "grande rivoluzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0117-antonius-thebaidis": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0117-ianuarius-sanchez-delgadillo": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0118-felicitas-pricet-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
     }
   ],
   "mr:0118-successus-et-socii": [
@@ -28,11 +132,83 @@
       "qid": "Q141808067"
     }
   ],
+  "mr:0119-ioannes-ravennae": [
+    {
+      "la": "bello langobárdico",
+      "it": "guerra con i Longobardi",
+      "qid": "Q3778771",
+      "keep_places": true
+    }
+  ],
+  "mr:0120-fabianus-papa": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0121-ioannes-baptista-turpin-du-cormier-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0121-ioannes-yi-yun-il": [
+    {
+      "la": "magnæ persecutiónis",
+      "it": "grande persecuzione",
+      "qid": "Q11245230",
+      "keep_places": true
+    }
+  ],
   "mr:0122-valerius-caesaraugustanus": [
     {
       "la": "Concílio Illiberitáno Primo",
       "it": "primo Concilio di Elvira",
       "qid": "Q1262455"
+    }
+  ],
+  "mr:0122-vincentius-caesaraugustanus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0124-babylas-antiochiae": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0126-maria-de-la-dive": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0127-rosalia-du-verdier-de-la-soriniere": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0128-maria-aloysia-montesinos-orduna": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:0128-thomas-de-aquino": [
@@ -42,6 +218,102 @@
       "qid": "Q10951"
     }
   ],
+  "mr:0130-barsimaeus-edessae": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0130-carmela-garcia-moyon": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0130-david-galvan": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q214426",
+      "keep_places": true
+    }
+  ],
+  "mr:0130-thomas-khuong": [
+    {
+      "la": "persecutióne Tự Ðức imperatóris",
+      "it": "persecuzione dell’imperatore Tự Đức",
+      "qid": "Q108123460",
+      "keep_places": true
+    }
+  ],
+  "mr:0201-maria-anna-vaillot-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0203-maria-anna-rivier": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0204-phileas-et-philoromus": [
+    {
+      "la": "persecutiónis Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0205-francisca-meziere": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0205-iesu-mendez": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0205-plurimi-martyres-ponti": [
+    {
+      "la": "persecutióne Maximiáni imperatóris",
+      "it": "persecuzione dell’imperatore Massimiano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0206-matthaeus-correa": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0206-paulus-miki-et-socii": [
+    {
+      "la": "persecutióne contra christiános",
+      "it": "persecuzione contro i cristiani",
+      "qid": "Q3376123",
+      "keep_places": true
+    }
+  ],
   "mr:0207-pius-ix": [
     {
       "la": "Concílium Œcuménicum Vaticánum Primum",
@@ -49,11 +321,59 @@
       "qid": "Q190857"
     }
   ],
+  "mr:0208-honoratus-mediolani": [
+    {
+      "la": "Langobardórum ímpetu",
+      "it": "invasione longobarda",
+      "qid": "Q3857240",
+      "keep_places": true
+    }
+  ],
+  "mr:0210-petrus-fremond-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0211-franciscus-borras-romeu": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0211-plurimi-martyres-numidiae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0212-martyres-abitinenses": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
   "mr:0212-meletius-antiochenus": [
     {
       "la": "Concílio Œcuménico Constantinopolitáno Primo",
       "it": "Concilio Ecumenico Costantinopolitano I",
       "qid": "Q179826"
+    }
+  ],
+  "mr:0214-vincentius-vilar-david": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:0216-maruthas-persicus": [
@@ -70,11 +390,59 @@
       "qid": "Q187201"
     }
   ],
+  "mr:0221-natalis-pinot": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0223-nicolaus-tabouillot": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0224-evetius-nicomediae": [
+    {
+      "la": "edícta advérsum cultóres Dei",
+      "it": "editti contro gli adoratori di Dio",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0225-nestor-magydensis": [
+    {
+      "la": "Décii imperatóris persecutiónis",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0225-turibius-romo": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
   "mr:0226-alexander-alexandrinus": [
     {
       "la": "Concílio Nicǽno Primo",
       "it": "Concilio di Nicea I",
       "qid": "Q133331"
+    }
+  ],
+  "mr:0228-presbyteri-diaconi-plurimi-alexandriae": [
+    {
+      "la": "pestis sævíssima",
+      "it": "terribile pestilenza",
+      "qid": "Q2321578",
+      "keep_places": true
     }
   ],
   "mr:0229-hilarius-papa": [
@@ -101,11 +469,187 @@
       "qid": "Q60791830"
     }
   ],
+  "mr:0302-troadius-neocaesareae": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0303-cleonicus-et-eutropius": [
+    {
+      "la": "persecutióne Maximiáni imperatóris",
+      "it": "persecuzione dell’imperatore Massimiano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0303-petrus-renatus-rogue": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0305-hadrianus-caesareae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0310-matthaeus-elias-nieves-del-castillo": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0311-trophimus-et-thalus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0313-francisca-trehet": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0318-alexander-hierosolymorum": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0320-ioanna-veron": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0322-franciscus-chartier": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0324-timolaus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0328-priscus-et-socii": [
+    {
+      "la": "persecutióne Valeriáni imperatóris",
+      "it": "persecuzione dell’imperatore Valeriano",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:0328-renata-maria-feillatreau": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0330-iulius-alvarez": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione contro la religione",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0331-natalia-tulasiewicz": [
+    {
+      "la": "Polónia militári vi subiécta",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0401-agapis-et-chionia": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0403-ulpianus-tyri": [
+    {
+      "la": "persecutióne Maximíni Dazæ Cǽsaris",
+      "it": "persecuzione dell’imperatore Massimino Daia",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0405-irenes-thessalonicensis": [
+    {
+      "la": "Diocletiáni edíctum",
+      "it": "editto di Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
   "mr:0406-eutychius-constantinopoli": [
     {
       "la": "Concílio Œcuménico Constantinopolitáno Secúndo",
       "it": "Concilio Ecumenico Costantinopolitano II",
       "qid": "Q205227"
+    }
+  ],
+  "mr:0409-caelestina-faron": [
+    {
+      "la": "Polónia more militári in bello occupáta",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0410-bonifatius-zukowski": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0411-domnio-salonae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0411-sympronianus-ducki": [
+    {
+      "la": "bello furénte",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
     }
   ],
   "mr:0412-damianus-papiae": [
@@ -115,11 +659,26 @@
       "qid": "Q208037"
     }
   ],
+  "mr:0412-david-uribe": [
+    {
+      "la": "persecutiónis contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
   "mr:0412-iulius-i": [
     {
       "la": "Sardicénse Concílium",
       "it": "Concilio di Sardica",
       "qid": "Q1277136"
+    }
+  ],
+  "mr:0412-sabas-gothus": [
+    {
+      "it": "persecuzioni scatenate contro i cristiani dal re dei Goti Atanarico",
+      "qid": "Q5587883",
+      "keep_places": true
     }
   ],
   "mr:0413-martinus-i": [
@@ -129,11 +688,43 @@
       "qid": "Q2642234"
     }
   ],
+  "mr:0413-sabas-reyes": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0414-isabella-calduch-rovira": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
   "mr:0416-fructuosus-dumiensis": [
     {
       "la": "Concílii Toletáni Décimi",
       "it": "decimo Concilio di Toledo",
       "qid": "Q671230"
+    }
+  ],
+  "mr:0416-optatus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0416-petrus-delepine-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
     }
   ],
   "mr:0417-acacius-melitenae": [
@@ -143,11 +734,99 @@
       "qid": "Q184332"
     }
   ],
+  "mr:0418-iosephus-moreau": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0419-aelphegus-cantuariensis": [
+    {
+      "la": "Danis civitátem ferro vastántibus",
+      "it": "devastazioni provocate in città dai Danesi",
+      "qid": "Q60524541",
+      "keep_places": true
+    }
+  ],
+  "mr:0419-mappalicus-africae": [
+    {
+      "la": "Décii imperatóris persecutióne",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0421-romanus-adame": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0422-caius-papa": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0424-anthimus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
   "mr:0425-stephanus-antiochiae": [
     {
       "la": "Concílium Chalcedonénse",
       "it": "Concilio di Calcedonia",
       "qid": "Q170531"
+    }
+  ],
+  "mr:0426-iulius-junyer-padern": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0426-stanislaus-kubista": [
+    {
+      "la": "Polónia fero militári regímini Dei hoste in bello súbdita",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0427-pollio-cibalarum": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0428-maximus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0430-diodorus-et-rhodopianus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
     }
   ],
   "mr:0430-pius-v": [
@@ -157,11 +836,81 @@
       "qid": "Q172991"
     }
   ],
+  "mr:0501-ieremias-propheta": [
+    {
+      "la": "Civitátis Sanctæ eversiónem",
+      "it": "distruzione della Città Santa",
+      "qid": "Q1290590",
+      "keep_places": true
+    },
+    {
+      "la": "populíque deportatiónem",
+      "it": "deportazione del popolo",
+      "qid": "Q175447",
+      "keep_places": true
+    }
+  ],
+  "mr:0502-boleslaus-strzelecki": [
+    {
+      "la": "bello furénte",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
   "mr:0502-vindemialis-et-longinus": [
     {
       "la": "Concílio Carthaginénsi",
       "it": "Concilio di Cartagine",
       "qid": "Q141810272"
+    }
+  ],
+  "mr:0504-agapius-et-secundinus": [
+    {
+      "la": "persecutióne Valeriáni imperatóris",
+      "it": "persecuzione dell’imperatore Valeriano",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:0504-ioannes-martinus-moye": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0504-silvanus-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0506-henricus-kaczorowski-et-casimirus-gostynski": [
+    {
+      "la": "Polónia more militári a persecutóribus humánæ dignitátis invása",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0506-marianus-et-iacobus": [
+    {
+      "la": "deciánæ persecutiónis",
+      "it": "persecuzione di Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0508-antonius-bajewski": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
     }
   ],
   "mr:0509-geruntius-phicoclensis": [
@@ -171,11 +920,178 @@
       "qid": "Q141966070"
     }
   ],
+  "mr:0509-stephanus-grelewski": [
+    {
+      "la": "Polónia more militári in bello occupáta",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0509-thomas-pickering": [
+    {
+      "la": "coniuratiónis in Cárolum regem Secúndum",
+      "it": "congiurato contro il re Carlo II",
+      "qid": "Q1540578",
+      "keep_places": true
+    }
+  ],
+  "mr:0512-germanus-constantinopoli": [
+    {
+      "la": "edíctum advérsus sacras Imágines",
+      "it": "editto contro le sacre immagini",
+      "qid": "Q1018769",
+      "keep_places": true
+    }
+  ],
+  "mr:0513-andreas-hubertus-fournet": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0514-maximus-asiae": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
   "mr:0515-achilleus-thaumaturgus": [
     {
       "la": "Concílio Œcuménico Nicǽno Primo",
       "it": "primo Concilio Ecumenico di Nicea",
       "qid": "Q133331"
+    }
+  ],
+  "mr:0516-michael-wozniak": [
+    {
+      "it": "Polonia occupata",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0518-felix-salonae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0518-stanislaus-kubski": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0519-ioannes-ludovicus-loir": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0519-iosephus-czempiel": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0521-ioannes-mopinot": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0523-iosephus-kurzawa-et-vincentius-matuszewski": [
+    {
+      "la": "pátria vi aliénæ subiécta potestáti",
+      "it": "occupazione della patria",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0523-martyres-cappadociae": [
+    {
+      "la": "persecutióne Maximiáni imperatóris",
+      "it": "persecuzione dell’imperatore Massimiano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0525-christophorus-magallanes-et-augustinus-caloca": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0526-andreas-franchi": [
+    {
+      "la": "pestem nigram",
+      "it": "peste nera",
+      "qid": "Q42005",
+      "keep_places": true
+    }
+  ],
+  "mr:0529-hesychius-antiochiae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0530-basilius-et-emmelia": [
+    {
+      "la": "persecutiónem",
+      "it": "persecuzione",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0601-alphonsus-navarrete-et-socii": [
+    {
+      "la": "edícto suprémi ducis Hidetada",
+      "it": "editto del comandante supremo Hidetada",
+      "qid": "Q3376123",
+      "keep_places": true
+    }
+  ],
+  "mr:0601-ioannes-baptista-vernoy-de-montjournal": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0602-marcellinus-et-petrus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0603-carolus-renatus-collas-du-bignon": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
     }
   ],
   "mr:0603-ioannes-xxiii": [
@@ -185,11 +1101,131 @@
       "qid": "Q169789"
     }
   ],
+  "mr:0604-antonius-zawistowski-et-stanislaus-starowieyski": [
+    {
+      "la": "bello furénte",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0606-innocentius-guz": [
+    {
+      "la": "pátria more militári a sectatóribus opiniónum hóminum et religiónis adversárum invása",
+      "it": "occupazione militare della patria",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0609-iosephus-imbert": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0610-ioannes-dominicus": [
+    {
+      "la": "pestem nigram",
+      "it": "Peste Nera",
+      "qid": "Q42005",
+      "keep_places": true
+    }
+  ],
   "mr:0611-barnabas-apostolus": [
     {
       "la": "Concílio Hierosolymitáno",
       "it": "Concilio di Gerusalemme",
       "qid": "Q619950"
+    }
+  ],
+  "mr:0611-ignatius-maloyan": [
+    {
+      "la": "genocídio christianórum",
+      "it": "genocidio dei cristiani",
+      "qid": "Q80034",
+      "keep_places": true
+    }
+  ],
+  "mr:0613-cetheus-peregrinus": [
+    {
+      "la": "Langobárdis regiónem pervadéntibus",
+      "it": "invasione longobarda",
+      "qid": "Q3857240",
+      "keep_places": true
+    }
+  ],
+  "mr:0613-maria-anna-biernacka": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0616-antonius-constans-auriel": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0617-nicandrus-et-marcianus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione di Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0617-philippus-papon": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0618-marcus-et-marcellianus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0619-remigius-isore-et-modestus-andlauer": [
+    {
+      "la": "persecutióne ab ásseclis factiónis «Yihetuan» gesta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0620-methodius-olympensis": [
+    {
+      "la": "persecutiónis Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0621-iacobus-morelle-dupas": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0621-iosephus-isabel-flores": [
+    {
+      "la": "magnæ persecutiónis",
+      "it": "grande persecuzione",
+      "qid": "Q279662",
+      "keep_places": true
     }
   ],
   "mr:0622-innocentius-v": [
@@ -199,11 +1235,123 @@
       "qid": "Q10951"
     }
   ],
+  "mr:0622-iulius-et-aaron": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0625-maria-lhuillier": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0626-iosephus-ma-taishun": [
+    {
+      "la": "persecutióne a fautóribus sectæ «Yihetuan» patráta",
+      "it": "persecuzione scatenata dalla setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0626-iosephus-maria-robles": [
+    {
+      "la": "perturbatiónis mexicánæ",
+      "it": "rivoluzione messicana",
+      "qid": "Q214426",
+      "keep_places": true
+    }
+  ],
+  "mr:0626-magdalena-fontaine-et-socii": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0626-raymundus-petiniaud-de-jourgnac": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
   "mr:0627-cyrillus-alexandriae": [
     {
       "la": "Concílio Ephesíno",
       "it": "Concilio di Efeso",
       "qid": "Q184332"
+    }
+  ],
+  "mr:0628-lucia-wang-cheng-et-socii": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0629-maria-du-tianshi-et-magdalena-du-fengju": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0629-paulus-wu-juan-et-socii": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0630-protomartyres-sanctae-romanae-ecclesiae": [
+    {
+      "la": "Urbis incéndio",
+      "it": "incendio della Città",
+      "qid": "Q215231",
+      "keep_places": true
+    }
+  ],
+  "mr:0630-raymundus-li-quanzhen-et-petrus-li-quanhui": [
+    {
+      "la": "persecutióne a fautóribus sectæ «Yihetuan» confécta",
+      "it": "persecuzione scatenata dai seguaci della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0701-ioannes-baptista-duverneuil-et-petrus-aredius-labrouhe-de-laborderie": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0701-iustinus-orona-et-atilanus-cruz": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0701-zhang-huailu": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione scatenata dai seguaci della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
     }
   ],
   "mr:0703-anatolius-constantinopoli": [
@@ -220,6 +1368,30 @@
       "qid": "Q208037"
     }
   ],
+  "mr:0703-petrus-zhao-mingzhen-et-ioannes-baptista-zhao-mingxi": [
+    {
+      "la": "persecutióne ab ásseclis sectæ «Yihetuan» excitáta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0704-caesidius-giacomantonio": [
+    {
+      "la": "persecutióne a fautóribus factiónis «Yihetuan» patráta",
+      "it": "persecuzione scatenata dalla setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0704-catharina-jarrige": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
   "mr:0705-athanasius-hierosolymitanus": [
     {
       "la": "Sýnodum Chalcedonénsem",
@@ -227,11 +1399,186 @@
       "qid": "Q170531"
     }
   ],
+  "mr:0705-cyprilla-cyrenes": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0705-teresia-chen-jinxie-et-rosa-chen-aixie": [
+    {
+      "la": "persecutióne a sectatóribus «Yihetuan» gesta",
+      "it": "persecuzione scatenata dai Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0706-elias-desgardin": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0706-maria-rosa-de-loye": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0706-petrus-wang-zuolong": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0707-antoninus-fantosati-et-iosephus-maria-gambaro": [
+    {
+      "la": "persecutióne ab ásseclis «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0707-francisca-maria-suzanna-de-gaillard-de-la-valdene": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0707-ioannes-iosephus-juge-de-saint-martin": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0707-maria-guo-lizhi": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0707-petrus-to-rot": [
+    {
+      "la": "totíus mundi bello",
+      "it": "seconda guerra mondiale",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0708-ioannes-wu-wenyin": [
+    {
+      "la": "persecutióne a fautóribus sectæ «Yihetuan» excitáta",
+      "it": "persecuzione scatenata dai seguaci della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0709-fidel-chijnacki": [
+    {
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0709-gregorius-grassus-et-socii": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei seguaci della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0709-melania-et-maria-anna-margarita-ab-angelis": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0710-maria-gertrudis-a-sancta-sophia-et-sylvia-de-romillon": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0711-anna-an-xinzhi-et-socii": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0711-rosalia-clotildis-a-sancta-pelagia-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0712-magdalena-teresia-tallien-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
   "mr:0712-viventiolus-lugduni": [
     {
       "la": "Concílio Epaonénsi",
       "it": "Concilio di Epaone",
       "qid": "Q1282605"
+    }
+  ],
+  "mr:0713-elisabeth-verchiere-et-socii": [
+    {
+      "la": "eádem perturbatióne",
+      "it": "stessa persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0713-iosephus-wang-guiji": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0713-paulus-liu-jinde": [
+    {
+      "la": "persecutióne a fautóribus factiónis «Yihetuan» patráta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0714-ioannes-wang-guixin": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
     }
   ],
   "mr:0715-bonaventura-albanensis": [
@@ -248,11 +1595,374 @@
       "qid": "Q133331"
     }
   ],
+  "mr:0715-michael-bernardus-marchand": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0716-lang-yangzhi-et-paulus-lang-fu": [
+    {
+      "la": "persecutióne a fautóribus factiónis «Yihetuan» patráta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0716-maria-magdalena-postel": [
+    {
+      "it": "stessa persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0716-maria-rosa-de-gordon-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0716-nicolaus-savouret-et-claudius-beguignot": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0716-teresia-zhang-hezhi": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0717-maria-magdalena-claudina-lidoine-et-socii": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0717-petrus-liu-ziyu": [
+    {
+      "la": "persecutióne ab ásseclis sectæ «Yihetuan» gesta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0718-ioannes-baptista-de-bruxelles": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0719-elisabeth-qin-bianzhi-et-simon-qin-chunfu": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-iosephus-maria-diaz-sanjurjo": [
+    {
+      "la": "persecutióne imperatóris Tự Ðức",
+      "it": "persecuzione dell’imperatore Tự Đức",
+      "qid": "Q108123460",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-leo-ignatius-mangin-et-paulus-denn": [
+    {
+      "la": "persecutióne a fautóribus sectæ «Yihetuan» patráta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-maria-fu-guilin": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-maria-zhao-guozhi-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-petrus-zhou-rixin": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0720-rita-a-virgine-perdolenti-a-corde-iesu-et-francisca-a-corde-iesu": [
+    {
+      "la": "bello civíli",
+      "it": "guerra civile",
+      "qid": "Q10859",
+      "keep_places": true
+    }
+  ],
+  "mr:0721-albericus-crescitelli": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0721-gabriel-pergaud": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0721-iosephus-wang-yumei": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0722-anna-wang-et-socii": [
+    {
+      "la": "persecutióne a fautóribus sectæ «Yihetuan» confécta",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0722-maria-wang-lizhi": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0723-christinus-gondek": [
+    {
+      "it": "occupazione dalla Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0723-emmanuel-perez-gimenez-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0723-ezechiel-propheta": [
+    {
+      "la": "exsílii in terra Chaldæórum",
+      "it": "esilio nella terra dei Caldei",
+      "qid": "Q175447",
+      "keep_places": true
+    }
+  ],
+  "mr:0723-petrus-ruiz-de-los-panos-et-iosephus-sala-pico": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0724-maria-a-mercede-prat": [
+    {
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-carolus-rubio-alvarez-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-cucuphas-barcinonis": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-deogratias-palacios-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-dionysius-pamplona": [
+    {
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-maria-teresia-kowalska": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-michael-ludovicus-brulard": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0725-valentina-et-socii": [
+    {
+      "la": "persecutióne Maximiáni imperatóris",
+      "it": "persecuzione dell’imperatore Massimiano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0726-marcellus-gaucherius-labigne-de-reignefort-et-petrus-iosephus-le-groing-de-la-romagere": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0726-maria-margarita-a-sancto-augustino-et-socii": [
+    {
+      "it": "medesima persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
   "mr:0727-caelestinus-i": [
     {
       "la": "Concílium Ephesínum",
       "it": "Concilio di Efeso",
       "qid": "Q184332"
+    }
+  ],
+  "mr:0727-ioachim-vilanova-camallonga": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0727-modestus-vegas-vegas": [
+    {
+      "la": "eádem persecutióne erga fidem",
+      "it": "stessa persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0727-philippus-hernandez-martinez-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0728-emmanuel-barbal-cosan": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0728-emmanuel-segura-et-david-carlos": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0728-iosephus-caselles-moncho-et-iosephus-castell-camps": [
+    {
+      "la": "eádem persecutióne erga fidem",
+      "it": "medesima persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0728-petrus-poveda-castroverde": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0729-carolus-nicolaus-antonius-ancel": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0729-ioannes-baptista-egozcuezabal-aldaz": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0729-iosephus-de-calasanz-marques": [
+    {
+      "la": "eádem persecutióne",
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0729-lucius-martinez-mancebo-et-socii": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:0729-urbanus-ii": [
@@ -262,11 +1972,187 @@
       "qid": "Q49964"
     }
   ],
+  "mr:0730-iosephus-maria-muro-sanmiguel-et-socii": [
+    {
+      "la": "eádem persecutióne erga fidem",
+      "it": "stessa persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0730-iosephus-yuan-gengyin": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0730-maxima-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0730-paulus-corres-diaz-de-cerio-et-socii": [
+    {
+      "la": "persecutióne erga religiósos",
+      "it": "persecuzione contro i religiosi",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0730-sergius-cid-pazo": [
+    {
+      "la": "eiúsdem persecutiónis",
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0731-dionysius-vicente-ramos-et-franciscus-remon-jativa": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0731-iacobus-buch-canals": [
+    {
+      "la": "eádem persecutióne",
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0731-ioannes-franciscus-jarrige-de-la-morelie-du-breuil": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0801-adelheidis-mardosewicz-et-socii": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0801-alexius-sobaszek": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0801-felix-gerundae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0801-iosephus-de-miguel-arahal": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
   "mr:0801-petrus-favre": [
     {
       "la": "Concílium Œcuménicum Tridentínum",
       "it": "Concilio di Trento",
       "qid": "Q172991"
+    }
+  ],
+  "mr:0802-franciscus-calvo-burillo": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0802-franciscus-tomas-serer": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0802-philippus-a-iesu-munarriz-azcona-et-socii": [
+    {
+      "la": "persecútio advérsus Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0802-zephyrinus-gimenez-malla": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0803-alphonsus-lopez-lopez-et-michael-remon-salvador": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0803-franciscus-bandres-sanchez": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0803-salvator-ferrandis-segui": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0804-gundisalvus-gonzalo": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0804-henricus-krzysztofik": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0804-iosephus-batalla-parramon-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:0805-dedicatio-basilicae-sanctae-mariae": [
@@ -276,11 +2162,762 @@
       "qid": "Q184332"
     }
   ],
+  "mr:0805-oswaldus-salopiensis": [
+    {
+      "la": "prœlio contra pagános",
+      "qid": "Q1818410",
+      "keep_places": true
+    }
+  ],
+  "mr:0805-petrus-michael-noel": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0806-carolus-lopez-vidal": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0806-hormisdas-papa": [
+    {
+      "la": "schisma acaciánum",
+      "it": "scisma di Acacio",
+      "qid": "Q415434",
+      "keep_places": true
+    }
+  ],
+  "mr:0806-thaddaeus-dulny": [
+    {
+      "la": "Polóniæ more militári occupátæ",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:0807-albertus-de-abbatibus": [
+    {
+      "la": "urbi obséssæ",
+      "it": "città assediata",
+      "qid": "Q134978563",
+      "keep_places": true
+    }
+  ],
+  "mr:0807-michael-de-la-mora": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0807-xystus-ii-et-socii": [
+    {
+      "la": "edícto Valeriáni imperatóris",
+      "it": "ordine dell’imperatore Valeriano",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:0808-antonius-silvestre-moya": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0808-maria-a-iesu-infante-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0808-paulus-ke-tingzhu": [
+    {
+      "la": "persecutióne a fautóribus factiónis «Yihetuan» gesta",
+      "it": "persecuzione scatenata dai fautori della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0808-vladimirus-laskowski": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0809-claudius-richard": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0809-faustinus-oteiza-et-florentinus-felipe": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0809-florentinus-asensio-barroso": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0809-iosephus-maria-garrigues-hernandez": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0809-ruben-a-iesu-lopez-aguilar-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0810-claudius-iosephus-jouffret-de-bonnefont-et-socii": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0810-franciscus-drzewiecki-et-eduardus-grzymala": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0810-ioannes-martorell-soria": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0810-martyres-alexandriae": [
+    {
+      "la": "persecutióne Valeriáni imperatóris",
+      "it": "persecuzione dell’imperatore Valeriano",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:0811-iacobus-rhem": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0811-michael-domingo-cendra": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0811-raphael-alonso-gutierrez": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-antonius-perulles-estivill": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-atilanus-argueso-gonzalez": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-euplus-catanae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-florianus-stepniak-et-iosephus-straszewski": [
+    {
+      "la": "invasiónis Polóniæ",
+      "it": "invasione della Polonia",
+      "qid": "Q150812",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-petrus-jarrige-de-la-morelie-de-puyredon": [
+    {
+      "la": "persecutióne in Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0812-sebastianus-calvo-martinez-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0813-ioannes-agramunt": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0813-iosephus-bonet-nadal": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0813-modestus-garcia-marti": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0813-petrus-gabilhaud": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0813-secundinus-maria-ortega-garcia-et-socii": [
+    {
+      "la": "persecutióne advérsus Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0814-octingenti-martyres-hydrunti": [
+    {
+      "la": "milítibus Othománis irrumpéntibus",
+      "it": "assalto dei soldati Ottomani",
+      "qid": "Q695198",
+      "keep_places": true
+    }
+  ],
+  "mr:0814-vincentius-rubiols-castello": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-aloysius-batis-sainz-et-socii": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-carmelus-sastre-sastre": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-elvira-moragas-cantarero": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-iosephus-maria-peris-polo": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-ludovicus-masferrer-vila-et-socii": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0815-vincentius-soler": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0816-ioannes-baptista-menestrel": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0816-rosa-fan-hui": [
+    {
+      "la": "persecutióne sectatórum «Yihetuan»",
+      "it": "persecuzione scatenata dai seguaci della setta dei Boxer",
+      "qid": "Q150229",
+      "keep_places": true
+    }
+  ],
+  "mr:0817-natalis-hilarius-le-conte": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0818-antonius-banassat": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0818-franciscus-arias-martin": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0818-iacobus-falgarona-vilanova-et-athanasius-vidaurreta-labra": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0819-franciscus-ibanez-ibanez": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0819-thomas-sitjar-fortia": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0819-timotheus-gazae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0820-bernardus-tolomei": [
+    {
+      "la": "peste per Itáliam grassánte",
+      "it": "epidemia di peste diffusasi in tutta l’Italia",
+      "qid": "Q42005",
+      "keep_places": true
+    }
+  ],
+  "mr:0820-ladislaus-maczkowski": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0820-ludovicus-franciscus-le-brun-et-gervasius-brunel": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0820-maria-climent-mateu": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0820-matthias-cardona": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0821-privatus-gabalorum": [
+    {
+      "la": "Vándalis in Gálliam irrumpéntibus",
+      "it": "invasione dei Vandali in Francia",
+      "qid": "Q684915",
+      "keep_places": true
+    }
+  ],
+  "mr:0821-raymundus-peiro-victori": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0821-salvator-estrugo-solves": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0822-elias-leymarie-de-laroche": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-constantinus-carbonell-sempere-et-socii": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-florentinus-perez-romero-et-urbanus-gil-saez": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-franciscus-dachtera": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-marianus-garcia-mendez": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-petra-maria-victoria-quintana-argos-et-emmanuela-iusta-fernandez-ibero": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0823-protasius-bourdon": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0824-andreas-fardeau": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0824-ioanna-antida-thouret": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0824-maximianus-binkiewicz": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0825-paulus-ioannes-charles": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0826-alexander-max-ginestar": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0826-aloysius-valls-matamales": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0826-felix-vivet-trabal": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0826-iacobus-retouret": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0826-ioanna-elisabeth-bichier": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0827-ferdinandus-gonzalez-anon": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0827-ioannes-baptista-de-souzy-et-udalricus-guillaume": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0827-raymundus-marti-soriano": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0828-alphonsus-maria-mazurek": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0828-carolus-arnaldus-hanus": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0828-ioannes-baptista-faubel-cano-et-arthurus-ros-montalt": [
+    {
+      "la": "persecutiónis erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-constantinus-fernandez-alvarez": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-dominicus-jedrzejewski": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-franciscus-monzon-romeo": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-ioannina-szymkowiak": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-ludovicus-vulfilacius-huppy": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0829-teresia-bracco": [
+    {
+      "la": "áltero totíus mundi bello",
+      "it": "seconda guerra mondiale",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0830-vincentius-cabanes-badenas": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0831-isidorus-primo-rodriguez-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
   "mr:0831-paulinus-trevirorum": [
     {
       "la": "Sýnodo Arelaténsi",
       "it": "Sinodo di Arles",
       "qid": "Q3988873"
+    }
+  ],
+  "mr:0901-alphonsus-sebastia-vinals": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0901-michael-roca-huguet-et-socii": [
+    {
+      "la": "bello civíli",
+      "it": "guerra civile",
+      "qid": "Q10859",
+      "keep_places": true
+    }
+  ],
+  "mr:0901-petrus-rivera-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0902-ioannes-maria-du-lau-et-socii": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
     }
   ],
   "mr:0902-iustus-lugduni": [
@@ -290,11 +2927,176 @@
       "qid": "Q683075"
     }
   ],
+  "mr:0903-andreas-abel-alricy-et-socii": [
+    {
+      "la": "pridiánam cædem",
+      "it": "prima strage",
+      "qid": "Q862586",
+      "keep_places": true
+    }
+  ],
+  "mr:0904-franciscus-sendra-ivars": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0904-iosephus-bieda-grau": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0904-iosephus-paschalis-carda-saporta": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0904-scipio-hieronymus-brigeat-de-lambert": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0905-florentius-dumontet-de-cardaillac": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0906-didacus-llorca-llopis": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0906-michael-czartoryski": [
+    {
+      "la": "Polónia a Dei hóstibus invása",
+      "it": "invasione della Polonia",
+      "qid": "Q150812",
+      "keep_places": true
+    }
+  ],
+  "mr:0907-ascensio-a-sancto-iosepho-calasanz": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0907-claudius-barnabas-laurent-de-mascloux-et-franciscus": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0908-adamus-bargielski": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0908-bonifatius-rodriguez-gonzalez-et-socii": [
+    {
+      "la": "belli civílis",
+      "it": "guerra civile",
+      "qid": "Q10859",
+      "keep_places": true
+    },
+    {
+      "la": "persecutiónem religiósam",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0908-faustus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0908-iosepha-a-sancto-ioanne-a-deo-et-maria-a-doloribus-a-sancta-eulalia": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
   "mr:0908-isaac-armeniae": [
     {
       "la": "Sýnodo Ephesína",
       "it": "Concilio di Efeso",
       "qid": "Q184332"
+    }
+  ],
+  "mr:0908-marinus-blanes-giner": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0910-iacobus-gagnot": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0910-nemesianus-et-socii": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione perpetrata in Africa sotto gli imperatori Valeriano e Gallieno",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:0910-nemesius-alexandriae": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:0911-franciscus-mayaudon": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0911-iosephus-maria-segura-penades": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:0911-paphnutius-aegypti": [
@@ -304,11 +3106,656 @@
       "qid": "Q133331"
     }
   ],
+  "mr:0911-petrus-de-alcantara": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0912-petrus-sulpitius-christophorus-faverge": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0913-claudius-dumonet": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0914-claudius-laplace": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0915-paschalis-penades-jornet": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0916-ignatius-casanovas": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0916-salvator-ferrer-cardet-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0917-ioannes-ventura-solsona": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0917-sigismundus-sajna": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0917-timotheus-valero-perez": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0918-ferdinandus-garcia-sendra-et-iosephus-garcia-mas": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0918-iosephus-kut": [
+    {
+      "la": "bello",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0918-salvator-chulia-ferrandis-et-socii": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0919-francisca-cuallado-baixauli": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0919-hyacinthus-hoyuelos-gonzalez": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0919-peleus-et-nilus": [
+    {
+      "la": "persecutiónis Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:0922-carolus-navarro": [
+    {
+      "la": "persecutióne erga religiósos",
+      "it": "persecuzione contro i religiosi",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0922-germanus-gozalvo-andreu": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0922-iosephus-marchandon": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0922-vincentius-pelufo-corts-et-iosepha-moscardo-montalva": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0922-vincentius-sicluna-hernandez": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0923-iosephus-stanek": [
+    {
+      "la": "belli",
+      "it": "guerra",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:0923-vincentius-ballester-far": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0924-gerardus-sagredo": [
+    {
+      "la": "seditióne Hungarórum paganórum",
+      "it": "rivolta di alcuni pagani del luogo",
+      "qid": "Q1187684",
+      "keep_places": true
+    }
+  ],
+  "mr:0924-iosephus-maria-ferrandiz-hernandez": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0924-iosephus-raymundus-paschalis-ferrer-botella": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0925-iosephus-bengoa-aranguren-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0926-crescentia-valls-espi": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0926-emmanuel-legua-marti": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0926-maria-ab-oblivione-noguera-albelda": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0926-raphael-pardo-molina": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0926-teresia-rosat-balasch-et-iosepha-romero-clariana": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0927-francisca-xaveria-fenollosa-alcayna-et-herminia-martinez-amigo": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0927-ioannes-baptista-laborier-du-vivier": [
+    {
+      "la": "persecutiónis Ecclésiæ",
+      "it": "persecuzione della Chiesa",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:0927-iosephus-fenollosa-alcayna-et-fidelis-climent-sanches": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0928-amalia-abad-casasempere": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0928-franciscus-xaverius-ponsa-casallarch": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0928-iosephus-tarrats-comaposada": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0929-darius-hernandez-morato": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0929-franciscus-de-paula-castello": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0929-iacobus-mestre-iborra": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:0930-ioannes-nicolaus-cordier": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    },
+    {
+      "la": "Societáte Iesu suppréssa",
+      "it": "soppressione della Compagnia di Gesù",
+      "qid": "Q477324",
+      "keep_places": true
+    }
+  ],
+  "mr:1001-alvarus-sanjuan-canet": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1001-florentia-caerols-martinez": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1002-elias-et-ioannes-baptista-carbonell-molla": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1002-franciscus-carceller-et-isidorus-bover-oliver": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1002-georgius-edmundus-rene": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1002-maria-francisca-ricart-olmos": [
+    {
+      "it": "medesima persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1003-crescentius-garcia-pobo": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1004-alaphridus-pellicer-munoz": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1004-henricus-morant-pellicer": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1005-marianus-skrzypczak": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1005-martyres-trevirorum": [
+    {
+      "la": "persecutiónis Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1005-tranquillinus-ubiarco": [
+    {
+      "la": "persecutióne in Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:1006-franciscus-hunot": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1006-magnus-opitergii": [
+    {
+      "la": "Langobárdis capta",
+      "it": "invasione longobarda",
+      "qid": "Q3857240",
+      "keep_places": true
+    }
+  ],
+  "mr:1007-ioannes-hunot": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1007-iosephus-llosa-balaguer": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1010-cerbonius-populonii": [
+    {
+      "la": "Langobárdis regiónem devastántibus",
+      "it": "invasione longobarda",
+      "qid": "Q3857240",
+      "keep_places": true
+    }
+  ],
+  "mr:1010-eulampius-et-eulampia": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1011-angelus-ramos-velazquez": [
+    {
+      "la": "persecutiónis erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1011-tharacus-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1012-iosephus-gonzalez-huguet": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1012-petrus-salcedo-puchades": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1012-romanus-sitko": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1014-anna-maria-aranda-riera": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1014-iacobus-laigneau-de-langellerie": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1014-stanislaus-mysakowski-et-franciscus-roslaniec": [
+    {
+      "la": "Polónia belli témpore occupáta",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1015-narcissus-baste-baste": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1017-fidel-fuidio-rodriguez": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1017-iacobus-burin": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1017-maria-ludovica-iosepha-vanot-et-socii": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1017-raymundus-stephanus-bou-pascual": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1017-tarsilla-cordoba-belda": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
   "mr:1019-gratus-iluronis": [
     {
       "la": "Concílio Agathénsi",
       "it": "Concilio di Agde",
       "qid": "Q1290650"
+    }
+  ],
+  "mr:1020-franciscus-alexander-kern": [
+    {
+      "la": "prióre totíus mundi bello",
+      "it": "prima guerra mondiale",
+      "qid": "Q361",
+      "keep_places": true
+    }
+  ],
+  "mr:1022-philippus-et-hermes": [
+    {
+      "la": "Diocletiáni imperatóris persecutióne",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1023-clotildis-iosepha-paillot-et-socii": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1023-hildephonsus-garcia-et-iustinianus-cuesta": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1023-leonardus-olivera-buera": [
+    {
+      "la": "persecutiónis religiósæ",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1023-petrus-lorente-vicente-et-socii": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1023-servandus-et-germanus": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
     }
   ],
   "mr:1024-proclus-magnus": [
@@ -318,11 +3765,142 @@
       "qid": "Q170531"
     }
   ],
+  "mr:1025-maria-teresia-ferragud-roig-et-socii": [
+    {
+      "it": "stessa persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1026-rogatianus-carthaginensis": [
+    {
+      "la": "persecutióne Décii imperatóris",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1027-salvator-mollar-ventura": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1028-rodericus-aguilar": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:1028-salvator-damianus-enguix-gares": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1029-zenobius-sidonis": [
+    {
+      "la": "Diocletiáni imperatóris persecutiónis",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1030-claudius-et-socii": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1030-ioannes-michael-langevin": [
+    {
+      "la": "gállica perturbatióne",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    },
+    {
+      "it": "epoca del terrore",
+      "qid": "Q193547",
+      "keep_places": true
+    }
+  ],
+  "mr:1031-epimachius-pelusiota": [
+    {
+      "la": "Décii imperatóris persecutiónis",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1031-leo-nowakowski": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1102-victorinus-poetovionis": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1105-dominicus-mau": [
+    {
+      "la": "persecutióne Tự Ðức imperatóris",
+      "it": "persecuzione perpetrata dall’imperatore Tự Đức",
+      "qid": "Q108123460",
+      "keep_places": true
+    }
+  ],
+  "mr:1105-domninus-caesareae": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
   "mr:1105-gomidas-keumurgian": [
     {
       "la": "Chalcedonénsi Sýnodo",
       "it": "Concilio di Calcedonia",
       "qid": "Q170531"
+    }
+  ],
+  "mr:1105-ioannes-antonius-burro-mas": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1105-maria-a-monte-carmelo-viel-ferrando": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1110-acisclus-pina-piazuelo": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:1110-leo-i": [
@@ -332,11 +3910,435 @@
       "qid": "Q170531"
     }
   ],
+  "mr:1111-theodorus-studita": [
+    {
+      "la": "persecutiónibus ab iconoclástis patrátis",
+      "it": "persecuzioni degli iconoclasti",
+      "qid": "Q1018769",
+      "keep_places": true
+    }
+  ],
+  "mr:1112-iosephus-medes-ferris": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1112-margaritus-flores": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:1113-ioannes-gonga-martinez": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1113-maria-a-patrocinio-a-sancto-ioanne": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1114-stephanus-theodorus-cuenot": [
+    {
+      "la": "persecutióne imperatóris Tự Ðức",
+      "it": "persecuzione contro i cristiani scatenata dall’imperatore Tự Đức",
+      "qid": "Q108123460",
+      "keep_places": true
+    }
+  ],
+  "mr:1115-iosephus-kalinowski": [
+    {
+      "la": "pópulo contra oppressórem insurgénte",
+      "it": "insurrezione popolare contro gli oppressori",
+      "qid": "Q473670",
+      "keep_places": true
+    }
+  ],
+  "mr:1117-lupus-sebastianus-hunot": [
+    {
+      "la": "gállicæ perturbatiónis",
+      "it": "rivoluzione francese",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1118-maria-gabriela-hinojosa-y-naveros-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1118-philippina-duchesne": [
+    {
+      "la": "perturbatióne",
+      "it": "rivoluzione",
+      "qid": "Q6534",
+      "keep_places": true
+    }
+  ],
+  "mr:1118-romanus-caesariensis": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1119-elisaeus-garcia-et-alexander-planas-sauri": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1120-francisca-lloret-marti-et-socii": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    },
+    {
+      "la": "bello civíli",
+      "it": "guerra civile",
+      "qid": "Q10859",
+      "keep_places": true
+    }
+  ],
+  "mr:1120-maria-a-miraculis-ortells-gimeno": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1122-iulianus-torrijo-sanchez-et-franciscus-lahoz-moliner": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1122-petrus-esqueda-ramirez": [
+    {
+      "la": "persecutióne mexicána",
+      "it": "persecuzione messicana",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:1123-maria-felicitas-cendoya-y-araquistain": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1123-michael-augustinus-pro": [
+    {
+      "la": "persecutióne contra Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q279662",
+      "keep_places": true
+    }
+  ],
+  "mr:1123-sisinnius-cyzici": [
+    {
+      "la": "persecutióne Diocletiáni imperatóris",
+      "it": "persecuzione dell’imperatore Diocleziano",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
   "mr:1124-protasius-mediolani": [
     {
       "la": "Concílio Sardicénsi",
       "it": "Concilio di Sardica",
       "qid": "Q1277136"
+    }
+  ],
+  "mr:1125-hyacinthus-serrano-lopez": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1125-moyses-romae": [
+    {
+      "it": "persecuzione",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1125-petrus-alexandriae": [
+    {
+      "la": "magnæ persecutiónis",
+      "it": "grande persecuzione",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1127-bronislaus-kostowski": [
+    {
+      "la": "Polóniæ more militári in bello occupátæ",
+      "it": "occupazione militare della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1128-aloysius-campos-gorriz": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1128-marianus-adradas-gonzalo-et-socii": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1129-alaphridus-simon-colomina": [
+    {
+      "la": "persecutióne erga Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1130-iosephus-otin-aquile": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1130-ludovicus-rochus-gientyngier": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1130-michael-ruedas-megias-et-socii": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1201-clementina-nengapeta-anuarite": [
+    {
+      "la": "bello civíli",
+      "it": "guerra civile",
+      "qid": "Q2656683",
+      "keep_places": true
+    }
+  ],
+  "mr:1205-narcissus-putz": [
+    {
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1206-aloysia-maria-frias-canizares": [
+    {
+      "la": "persecutiónis erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1206-iosephus-nguyen-duy-khang": [
+    {
+      "la": "persecutióne Tự Ðức imperatóris",
+      "it": "persecuzione dell’imperatore Tự Đức",
+      "qid": "Q108123460",
+      "keep_places": true
+    }
+  ],
+  "mr:1208-aloysius-liguda": [
+    {
+      "la": "Polónia in bello invása",
+      "it": "invasione della Polonia",
+      "qid": "Q150812",
+      "keep_places": true
+    }
+  ],
+  "mr:1208-iosephus-maria-zabal-blasco": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1209-richardus-de-los-rios-fabregat-et-socii": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1210-antonius-martin-hernandez-et-augustinus-garcia-calvo": [
+    {
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1210-gundisalvus-vines-masip": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1211-maria-a-columna-villalonga-villalba": [
+    {
+      "la": "persecutióne religiósa",
+      "it": "persecuzione religiosa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1212-pius-bartosik": [
+    {
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1214-antonius-cubells-minguell": [
+    {
+      "la": "persecútio in Ecclésiam",
+      "it": "persecuzione contro la Chiesa",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1214-ares-et-socii": [
+    {
+      "la": "persecutióne Maximíni imperatóris",
+      "it": "persecuzione dell’imperatore Massimino",
+      "qid": "Q1265674",
+      "keep_places": true
+    }
+  ],
+  "mr:1214-hero-et-socii": [
+    {
+      "la": "persecutióne deciána",
+      "it": "persecuzione di Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1217-modestus-hierosolymorum": [
+    {
+      "la": "Urbem Sanctam a Persis captam et vastátam",
+      "it": "conquista e la devastazione della Città Santa da parte dei Persiani",
+      "qid": "Q2915236",
+      "keep_places": true
+    }
+  ],
+  "mr:1219-maria-eva-de-providentia-et-maria-martha-de-iesu": [
+    {
+      "la": "occupatiónis Polóniæ",
+      "it": "occupazione della Polonia",
+      "qid": "Q127616075",
+      "keep_places": true
+    }
+  ],
+  "mr:1222-chaeremon-et-socii": [
+    {
+      "la": "Décii imperatóris persecutióne",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1223-paulus-melendez-gonzalo": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la religione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1223-theodulus-et-socii": [
+    {
+      "la": "Décii imperatóris persecutióne",
+      "it": "persecuzione dell’imperatore Decio",
+      "qid": "Q2590336",
+      "keep_places": true
+    }
+  ],
+  "mr:1226-dionysius-papa": [
+    {
+      "la": "Valeriáni imperatóris persecutiónem",
+      "it": "persecuzione dell’imperatore Valeriano",
+      "qid": "Q3376113",
+      "keep_places": true
+    }
+  ],
+  "mr:1226-secundus-pollo": [
+    {
+      "la": "totíus orbis belli secúndi",
+      "it": "seconda guerra mondiale",
+      "qid": "Q362",
+      "keep_places": true
+    }
+  ],
+  "mr:1227-alaphridus-parte": [
+    {
+      "la": "persecutiónis",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1229-ioannes-baptista-ferreres-boluda": [
+    {
+      "la": "persecutióne",
+      "it": "persecuzione",
+      "qid": "Q3120811",
+      "keep_places": true
+    }
+  ],
+  "mr:1229-iosephus-aparicio-sanz": [
+    {
+      "la": "persecutióne erga fidem",
+      "it": "persecuzione contro la fede",
+      "qid": "Q3120811",
+      "keep_places": true
     }
   ],
   "mr:1229-libosus-vagensis": [
