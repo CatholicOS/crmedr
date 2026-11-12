@@ -518,15 +518,26 @@ class Wikidata:
                 v = _value(c)
                 if isinstance(v, dict) and "id" in v:
                     sources.setdefault(v["id"], "companion:" + prop)
-        groups = list(dict.fromkeys(v["id"] for p in ("P361", "P463")
-                                    for c in (raw or {}).get("claims", {}).get(p, [])
-                                    if isinstance(v := _value(c), dict) and "id" in v))
+        def ids(prop):
+            return [v["id"] for c in (raw or {}).get("claims", {}).get(prop, [])
+                    if isinstance(v := _value(c), dict) and "id" in v]
+        part = list(dict.fromkeys(ids("P361")))
+        member = [g for g in dict.fromkeys(ids("P463")) if g not in part]
+        # Membership (P463) counts only for a group of humans, by either route: a group the person
+        # is a member of, and the members of a group the person is part of.
+        humans = set()
+        if member or part:
+            values = " ".join("wd:" + g for g in part + member)
+            humans = {b["g"]["value"].rsplit("/", 1)[1] for b in self._sparql(
+                f"SELECT DISTINCT ?g WHERE {{ VALUES ?g {{ {values} }} ?g {GROUP_OF_HUMANS} }}") if "g" in b}
+        groups = part + [g for g in member if g in humans]
         listed = self._entities(groups) if groups else {}
         # A member who is kin too is a member: the group stands for the death day (build_person_items).
         for group in groups:
-            for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ {{ ?m wdt:P361 wd:{group} }} UNION "
-                                    f"{{ ?m wdt:P463 wd:{group} . FILTER EXISTS {{ wd:{group} {GROUP_OF_HUMANS} }} }} }}"):
-                sources[b["m"]["value"].rsplit("/", 1)[1]] = "companion:P361"
+            by = "wdt:P361|wdt:P463" if group in humans else "wdt:P361"
+            for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m {by} wd:{group} }}"):
+                if "m" in b:
+                    sources[b["m"]["value"].rsplit("/", 1)[1]] = "companion:P361"
             for c in (listed.get(group) or {}).get("claims", {}).get("P527", []):
                 v = _value(c)
                 if isinstance(v, dict) and "id" in v:
