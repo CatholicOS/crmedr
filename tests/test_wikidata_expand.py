@@ -104,6 +104,17 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([(c["wikidata"], c["source"]) for c in out],
                          [("Q52161488", "companion:P3373"), ("Q77", "companion:P361"), ("Q300", "companion:P361")])
 
+    def test_relatives_include_the_group_given_by_member_of(self):
+        # A human is a member of (P463) a group of martyrs, not part of it (P361 conflicts with
+        # P31 human): the group's members are found the same way, as group members.
+        person = item("Q2652595", "René Lego", {"P463": [claim("Q99")]})
+        fake = Fake(bindings([{"m": uri("Q77")}]), entities={"Q2652595": person})
+        out = self.wd(fake).relatives("Q2652595")
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q77", "companion:P361")])
+        q = self.query(fake)
+        self.assertIn("?m wdt:P463 wd:Q99 . FILTER EXISTS { wd:Q99 wdt:P31/wdt:P279* wd:Q16334295 }", q)
+        self.assertIn("?m wdt:P361 wd:Q99", q)
+
     def test_a_group_member_who_is_kin_too_is_a_group_member(self):
         # The brother is also listed by the group: the group route (gather) must see him as a member.
         group = item("Q99", "Lego brothers", {"P527": [claim("Q52161488")]})

@@ -75,6 +75,10 @@ STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
+# A group of humans (group of martyrs, of men, of women...): the only groups whose members by P463
+# are companions, since "member of" also links persons to academies, orders and societies.
+GROUP_OF_HUMANS = "wdt:P31/wdt:P279* wd:Q16334295"
+
 # The months' items, which the day items (P841's values: "January 8", Q2234) are part of (P361).
 MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August",
                "September", "October", "November", "December")
@@ -504,8 +508,9 @@ class Wikidata:
 
     def relatives(self, qid):
         """The companion's kin (sibling, relative, spouse, child, mother, father) and
-        the other members of its groups (P361, and those the group lists: P527), as person
-        candidates."""
+        the other members of its groups (P361 or P463: a human is a member of a group, and part
+        of one on older items; and those the group lists: P527), as person candidates. Group
+        members keep the source "companion:P361", the group route of build_person_items."""
         raw = self._entities([qid]).get(qid)
         sources = {}
         for prop in RELATIVE_PROPS:
@@ -513,12 +518,14 @@ class Wikidata:
                 v = _value(c)
                 if isinstance(v, dict) and "id" in v:
                     sources.setdefault(v["id"], "companion:" + prop)
-        groups = [v["id"] for c in (raw or {}).get("claims", {}).get("P361", [])
-                  if isinstance(v := _value(c), dict) and "id" in v]
+        groups = list(dict.fromkeys(v["id"] for p in ("P361", "P463")
+                                    for c in (raw or {}).get("claims", {}).get(p, [])
+                                    if isinstance(v := _value(c), dict) and "id" in v))
         listed = self._entities(groups) if groups else {}
         # A member who is kin too is a member: the group stands for the death day (build_person_items).
         for group in groups:
-            for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ ?m wdt:P361 wd:{group} }}"):
+            for b in self._sparql(f"SELECT DISTINCT ?m WHERE {{ {{ ?m wdt:P361 wd:{group} }} UNION "
+                                    f"{{ ?m wdt:P463 wd:{group} . FILTER EXISTS {{ wd:{group} {GROUP_OF_HUMANS} }} }} }}"):
                 sources[b["m"]["value"].rsplit("/", 1)[1]] = "companion:P361"
             for c in (listed.get(group) or {}).get("claims", {}).get("P527", []):
                 v = _value(c)
