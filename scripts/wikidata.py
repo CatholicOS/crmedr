@@ -75,9 +75,32 @@ STATUS_SIGNALS = tuple(p for p in SAINT_SIGNALS if p not in ("P411", "P8366"))
 # (Cúcuta has no "en" label of its own).
 LABEL_LANGS = ("en", "it", "la", "mul")
 MAX_SPARQL = 25
-# A group of humans (group of martyrs, of men, of women...): the only groups whose members by P463
-# are companions, since "member of" also links persons to academies, orders and societies.
-GROUP_OF_HUMANS = "wdt:P31/wdt:P279* wd:Q16334295"
+# The kinds of group of humans a group of saints is an instance of (P31), the only groups whose
+# members by "member of" (P463) are companions: P463 also links persons to academies, orders and
+# societies, and the class tree cannot tell them apart (an organization is a group of humans on
+# Wikidata, and so are half our martyr groups). The direct types of the groups the eulogies link,
+# 2026-11-12, without the mistyped ones (human, legal case, patron saint) and monastic order.
+GROUP_TYPES = (
+    "Q16334295",   # group of humans
+    "Q16887380",   # group
+    "Q109288828",  # group of men
+    "Q109288863",  # group of women
+    "Q125143602",  # group of saints recognized together
+    "Q16979650",   # group of siblings
+    "Q10648343",   # duo
+    "Q109288825",  # male duo
+    "Q109289221",  # female duo
+    "Q125258836",  # brother duo
+    "Q125258812",  # sister duo
+    "Q14073567",   # sibling duo
+    "Q132776456",  # twin brother duo
+    "Q14756018",   # twins
+    "Q219160",     # couple
+    "Q3046146",    # married couple
+    "Q16145172",   # trio
+    "Q99250424",   # septet
+    "Q29441572",   # heptad
+)
 
 # The months' items, which the day items (P841's values: "January 8", Q2234) are part of (P361).
 MONTH_NAMES = ("January", "February", "March", "April", "May", "June", "July", "August",
@@ -528,8 +551,10 @@ class Wikidata:
         humans = set()
         if member or part:
             values = " ".join("wd:" + g for g in part + member)
+            types = " ".join("wd:" + t for t in GROUP_TYPES)
             humans = {b["g"]["value"].rsplit("/", 1)[1] for b in self._sparql(
-                f"SELECT DISTINCT ?g WHERE {{ VALUES ?g {{ {values} }} ?g {GROUP_OF_HUMANS} }}") if "g" in b}
+                f"SELECT DISTINCT ?g WHERE {{ VALUES ?g {{ {values} }} VALUES ?t {{ {types} }} ?g wdt:P31 ?t }}")
+                if "g" in b}
         groups = part + [g for g in member if g in humans]
         listed = self._entities(groups) if groups else {}
         # A member who is kin too is a member: the group stands for the death day (build_person_items).

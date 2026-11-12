@@ -113,6 +113,9 @@ class ExpandTest(unittest.TestCase):
         out = self.wd(fake).relatives("Q2652595")
         self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q77", "companion:P361")])
         self.assertIn("?m wdt:P361|wdt:P463 wd:Q99", self.query(fake, "?m "))
+        kind = self.query(fake, "VALUES ?g")
+        self.assertIn("wd:Q16334295", kind)  # group of humans, by its direct type:
+        self.assertNotIn("P279", kind)       # the class tree makes an academy one too
 
     def test_member_of_a_group_that_is_not_of_humans_gives_no_companions(self):
         # An academy (no group of humans) that lists a person (P527): neither its members nor
