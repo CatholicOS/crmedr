@@ -54,7 +54,7 @@ class Fake:
     def __call__(self, url):
         self.urls.append(url)
         if "query.wikidata.org" in url:
-            return self.sparql
+            return self.sparql(urllib.parse.unquote_plus(url)) if callable(self.sparql) else self.sparql
         if "list=search" in url:
             text = urllib.parse.parse_qs(urllib.parse.urlparse(url).query)["srsearch"][0]
             text = text.replace(" haswbstatement:P31=Q5|P31=Q20643955|P31=Q21070568|P31=Q113371917 haswbstatement:P411|P841|P6126|P8080|P4286|P8366|P10799", "")
@@ -104,6 +104,36 @@ class ExpandTest(unittest.TestCase):
         self.assertEqual([(c["wikidata"], c["source"]) for c in out],
                          [("Q52161488", "companion:P3373"), ("Q77", "companion:P361"), ("Q300", "companion:P361")])
 
+    def test_relatives_include_the_group_given_by_member_of(self):
+        # A human is a member of (P463) a group of martyrs, not part of it (P361 conflicts with
+        # P31 human): the group's members are found the same way, as group members.
+        person = item("Q2652595", "René Lego", {"P463": [claim("Q99")]})
+        fake = Fake(lambda q: bindings([{"g": uri("Q99")}] if "VALUES ?g" in q else [{"m": uri("Q77")}]),
+                    entities={"Q2652595": person})
+        out = self.wd(fake).relatives("Q2652595")
+        self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q77", "companion:P361")])
+        self.assertIn("?m wdt:P361|wdt:P463 wd:Q99", self.query(fake, "?m "))
+        kind = self.query(fake, "VALUES ?g")
+        self.assertIn("wd:Q16334295", kind)  # group of humans, by its direct type:
+        self.assertNotIn("P279", kind)       # the class tree makes an academy one too
+
+    def test_member_of_a_group_that_is_not_of_humans_gives_no_companions(self):
+        # An academy (no group of humans) that lists a person (P527): neither its members nor
+        # those it lists are companions.
+        person = item("Q2652595", "René Lego", {"P463": [claim("Q98")]})
+        academy = item("Q98", "Academy", {"P527": [claim("Q300")]})
+        fake = Fake(lambda q: bindings([] if "VALUES ?g" in q else [{"m": uri("Q77")}]),
+                    entities={"Q2652595": person, "Q98": academy})
+        self.assertEqual(self.wd(fake).relatives("Q2652595"), [])
+        self.assertFalse(any("?m " in urllib.parse.unquote_plus(u) for u in fake.urls))
+
+    def test_part_of_a_group_not_of_humans_keeps_its_part_of_members_only(self):
+        # A legacy P361 group is followed as before, by P361 alone when it is not a group of humans.
+        fake = Fake(lambda q: bindings([] if "VALUES ?g" in q else [{"m": uri("Q77")}]))
+        out = self.wd(fake).relatives("Q2652595")
+        self.assertIn(("Q77", "companion:P361"), [(c["wikidata"], c["source"]) for c in out])
+        self.assertIn("?m wdt:P361 wd:Q99 }", self.query(fake, "?m "))
+
     def test_a_group_member_who_is_kin_too_is_a_group_member(self):
         # The brother is also listed by the group: the group route (gather) must see him as a member.
         group = item("Q99", "Lego brothers", {"P527": [claim("Q52161488")]})
@@ -111,8 +141,9 @@ class ExpandTest(unittest.TestCase):
         out = self.wd(fake).relatives("Q2652595")
         self.assertEqual([(c["wikidata"], c["source"]) for c in out], [("Q52161488", "companion:P361")])
 
-    def query(self, fake):
-        return urllib.parse.unquote_plus(next(u for u in fake.urls if "query.wikidata.org" in u))
+    def query(self, fake, having=""):
+        return next(q for u in fake.urls if "query.wikidata.org" in u
+                    for q in [urllib.parse.unquote_plus(u)] if having in q)
 
     def test_saints_by_death_day(self):
         rows = [died("Q300", "Jean Martin"), died("Q300", "Ioannes"), died("Q77", "Émile")]
