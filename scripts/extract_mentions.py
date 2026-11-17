@@ -1227,7 +1227,9 @@ def apply_decisions(curated_editions, mentions_editions, exported, unmarked=None
         tag = op.get("id") or f"{edition} {mrid}"
         edited = (op.get("edited") or {}) if op["decision"] == "edit" else {}
         by_id = curated_editions.setdefault(edition, {})
-        current = [dict(m) for m in by_id.get(mrid, mentions_editions.get(edition, {}).get(mrid, []))]
+        # Event marks come from data/events_curated.json at every extraction, so a curated entry holds none.
+        current = [dict(m) for m in by_id.get(mrid, mentions_editions.get(edition, {}).get(mrid, []))
+                   if m["kind"] != "event"]
         if op["decision"] == "reject":
             # The eulogy is curated as it stands, so the rejected proposal is not made again.
             by_id.setdefault(mrid, sorted(current, key=mention_order))

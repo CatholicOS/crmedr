@@ -975,6 +975,85 @@
           "qid": null
         }
       ],
+      "mr:0210-petrus-fremond-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 34,
+          "check": "ad1081bb",
+          "qid": "Q791403",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 45,
+          "end": 58,
+          "check": "398a7bd5",
+          "name": "Petrus Fremond",
+          "qid": "Q141883327"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 21,
+          "end": 30,
+          "check": "a72aefec",
+          "name": "Catharina du Verdier de la Sorinière",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 34,
+          "end": 75,
+          "check": "a9be2cba",
+          "name": "Maria Ludovica du Verdier de la Sorinière",
+          "qid": "Q125744632"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 86,
+          "end": 113,
+          "check": "03513624",
+          "name": "Ludovica Bessay de la Voüte",
+          "qid": "Q141886854"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 115,
+          "end": 140,
+          "check": "17c3a002",
+          "name": "Maria Anna Hacher du Bois",
+          "qid": "Q141886857"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 142,
+          "end": 158,
+          "check": "45240da0",
+          "name": "Ludovica Poirier",
+          "qid": "Q141886855"
+        }
+      ],
       "mr:0212-benedictus-anianensis": [
         {
           "kind": "place",
@@ -7084,7 +7163,7 @@
           "start": 743,
           "end": 748,
           "check": "e61438bc",
-          "name": "Petro",
+          "name": "Petrus",
           "qid": null
         },
         {
@@ -7117,7 +7196,8 @@
           "start": 803,
           "end": 808,
           "check": "e61438bc",
-          "name": "Petro",
+          "name": "Petrus",
+          "n": 2,
           "qid": null
         },
         {
@@ -11289,6 +11369,85 @@
           "check": "01011b1d",
           "name": "Franciscus Adauctus",
           "qid": null
+        }
+      ],
+      "mr:0210-petrus-fremond-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 38,
+          "check": "4ade9bd8",
+          "qid": "Q791403",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 46,
+          "end": 60,
+          "check": "d5b24f70",
+          "name": "Petrus Fremond",
+          "qid": "Q141883327"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 24,
+          "end": 32,
+          "check": "54be11d7",
+          "name": "Catharina du Verdier de la Sorinière",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 35,
+          "end": 73,
+          "check": "af0b395d",
+          "name": "Maria Ludovica du Verdier de la Sorinière",
+          "qid": "Q125744632"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 84,
+          "end": 108,
+          "check": "8a40bbea",
+          "name": "Ludovica Bessay de la Voüte",
+          "qid": "Q141886854"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 110,
+          "end": 133,
+          "check": "eac1de1a",
+          "name": "Maria Anna Hacher du Bois",
+          "qid": "Q141886857"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 135,
+          "end": 148,
+          "check": "b67ab27b",
+          "name": "Ludovica Poirier",
+          "qid": "Q141886855"
         }
       ],
       "mr:0212-martyres-abitinenses": [
@@ -16993,6 +17152,28 @@
           "where": {
             "footnote": 1
           },
+          "start": 226,
+          "end": 241,
+          "check": "4e949e1b",
+          "name": "Petrus d’Assche van der Slagmolen",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 244,
+          "end": 261,
+          "check": "3fec4b97",
+          "name": "Cornelius de Dorestado",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 294,
           "end": 316,
           "check": "93a74c32",
@@ -21233,7 +21414,8 @@
           "start": 798,
           "end": 804,
           "check": "c8725a19",
-          "name": "Petro",
+          "name": "Petrus",
+          "n": 2,
           "qid": null
         },
         {
@@ -23630,6 +23812,79 @@
           "end": 259,
           "check": "afea036f",
           "name": "Agricola",
+          "qid": null
+        }
+      ],
+      "mr:1112-benedictus-et-socii": [
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 0,
+          "end": 43,
+          "check": "89e8ba33",
+          "qid": "Q1006039",
+          "roles": [
+            {
+              "role": "death"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 51,
+          "end": 60,
+          "check": "94abb266",
+          "name": "Benedictus",
+          "qid": "Q130271130"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 62,
+          "end": 70,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "qid": "Q141945785"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 72,
+          "end": 78,
+          "check": "ca287dab",
+          "name": "Matthaeus",
+          "qid": "Q127587384"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 81,
+          "end": 87,
+          "check": "0fab51dd",
+          "name": "Isaac",
+          "qid": "Q141945786"
+        },
+        {
+          "kind": "place",
+          "where": "text",
+          "start": 146,
+          "end": 153,
+          "check": "773006d4",
+          "qid": "Q36",
+          "roles": [
+            {
+              "role": "ministry"
+            }
+          ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 236,
+          "end": 245,
+          "check": "da1b6aaf",
+          "name": "Christianus",
           "qid": null
         }
       ],

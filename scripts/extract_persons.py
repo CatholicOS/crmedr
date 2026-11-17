@@ -232,21 +232,28 @@ def _shared_surname_names(printed):
     """The folded names a list of first names before one surname gives ("Ioanna, Magdalena et Petrina
     Sailland": Ioanna Sailland, Magdalena Sailland, Petrina Sailland): the item "A et B Surname" and the
     one-word items just before it in its group (a semicolon, colon or period closes a group), each first
-    name with the surname."""
+    name with the surname. An honorific before A is skipped ("beatæ"), and B may have a second first
+    name before a surname that opens with a particle ("Catharina et Maria Ludovica du Verdier": Catharina
+    du Verdier)."""
     names = set()
     for group in re.split(r"[;:.]", printed):
         items = [s.strip() for s in group.split(",")]
         for j, item in enumerate(items):
-            m = SHARED_SURNAME.fullmatch(item)
+            words = item.split()
+            while words and words[0][:1].islower():
+                words.pop(0)
+            m = SHARED_SURNAME.fullmatch(" ".join(words))
             # The surname opens with a capital; a particle may follow ("Sailland d’Espinatz").
             if not m or not all(w[:1].isupper() for w in [m[1], m[2], m[3]]):
                 continue
+            tail = m[3].split()
+            surnames = [m[3]] + ([" ".join(tail[1:])] if len(tail) > 2 and tail[1][:1].islower() else [])
             given = [m[1], m[2]]
             i = j - 1
             while i >= 0 and len(items[i].split()) == 1 and items[i][:1].isupper():
                 given.insert(0, items[i])
                 i -= 1
-            names |= {fold(f"{g} {m[3]}") for g in given}
+            names |= {fold(f"{g} {s}") for g in given for s in surnames}
     return names
 
 

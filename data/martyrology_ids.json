@@ -27144,7 +27144,7 @@
         }
       ],
       "date": {
-        "year": 583,
+        "year": 593,
         "basis": "death",
         "source": "wikidata"
       },
@@ -52094,9 +52094,10 @@
         }
       ],
       "date": {
-        "to": 1630,
+        "from": 1,
+        "to": 100,
         "basis": "death",
-        "source": "edition"
+        "source": "wikidata"
       }
     },
     {
@@ -83520,7 +83521,7 @@
       ],
       "date": {
         "from": 1586,
-        "to": 1587,
+        "to": 1588,
         "basis": "death",
         "source": "wikidata"
       },
@@ -84921,11 +84922,9 @@
         }
       ],
       "date": {
-        "from": 1401,
-        "to": 1500,
-        "circa": true,
+        "year": 1480,
         "basis": "death",
-        "source": "estimate"
+        "source": "wikidata"
       },
       "item": {
         "wikidata": "Q1615843",

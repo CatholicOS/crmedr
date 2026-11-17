@@ -945,6 +945,17 @@ class ApplyDecisionsTest(unittest.TestCase):
         self.assertEqual((applied, errors), (0, []))
         self.assertEqual(curated[ED]["mr:x"], self.MENTIONS[ED]["mr:x"])
 
+    def test_a_curated_eulogy_never_copies_its_event_marks(self):
+        # Events come from data/events_curated.json at every extraction; a copy in the curated entry
+        # would be marked again over itself (mr:0210-petrus-fremond-et-socii, the French Revolution).
+        mentions = {ED: {"mr:x": [stored("place", 0, 4, "Romæ", qid="Q220"), stored("event", 30, 40, "persecutio", qid="Q1"),
+                                  stored("person", 13, 20, "Nemínis", "Nemo")]}}
+        for decision in ("accept", "reject"):
+            curated = {}
+            em.apply_decisions(curated, mentions, {"operations": [
+                self.op("add_mention", decision, kind="person", name="Alius", start=50, end=55, form="Alius")]})
+            self.assertNotIn("event", [m["kind"] for m in curated[ED]["mr:x"]], decision)
+
     def test_an_added_second_person_keeps_n(self):
         exported = {"operations": [self.op("add_mention", kind="person", name="Nemo", n=2, start=13, end=20,
                                            form="Nemínis")]}

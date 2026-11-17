@@ -19860,6 +19860,28 @@
           "where": {
             "footnote": 1
           },
+          "start": 21,
+          "end": 30,
+          "check": "a72aefec",
+          "name": "Catharina du Verdier de la Sorinière",
+          "qid": "Q4217472"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 34,
+          "end": 75,
+          "check": "a9be2cba",
+          "name": "Maria Ludovica du Verdier de la Sorinière",
+          "qid": "Q125744632"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 86,
           "end": 113,
           "check": "03513624",
@@ -42158,6 +42180,15 @@
           "check": "61a0f516",
           "name": "Henricus Walpole",
           "qid": "Q8776290"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 70,
+          "end": 87,
+          "check": "e67b27a2",
+          "name": "Alexander Rawlins",
+          "qid": "Q4719921"
         },
         {
           "kind": "person",
@@ -69517,6 +69548,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 247,
+          "end": 254,
+          "check": "9811d6e8",
+          "name": "Sanctus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 265,
           "end": 272,
           "check": "9cb32462",
@@ -88122,6 +88164,28 @@
           "check": "90649ffa",
           "name": "Franciscus de Rauga",
           "qid": "Q1912652"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 248,
+          "end": 281,
+          "check": "e3d37023",
+          "name": "Petrus d’Assche van der Slagmolen",
+          "qid": "Q2204593"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 285,
+          "end": 307,
+          "check": "316a9024",
+          "name": "Cornelius de Dorestado",
+          "qid": "Q11743701"
         },
         {
           "kind": "person",
@@ -108867,6 +108931,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 85,
+          "end": 101,
+          "check": "d117f23d",
+          "name": "Gulielmus Lampley",
+          "qid": "Q27854156"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 134,
           "end": 156,
           "check": "5bbfd5ea",
@@ -110989,6 +111062,15 @@
           "end": 97,
           "check": "6df2ec67",
           "qid": "Q695198"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 132,
+          "end": 148,
+          "check": "e3dc54a9",
+          "name": "Antonius Primaldus",
+          "qid": "Q20604373"
         }
       ],
       "mr:0814-sanctus-de-urbino": [
@@ -113766,6 +113848,17 @@
           "check": "8d5b617b",
           "name": "Elvira Torrentalle Paraire",
           "qid": "Q14918543"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 15,
+          "end": 63,
+          "check": "7e33c995",
+          "name": "Rosa a Domina Nostra a Bono Consilio Pedret Rull",
+          "qid": "Q23943034"
         },
         {
           "kind": "person",
@@ -129078,10 +129171,21 @@
           "where": {
             "footnote": 1
           },
+          "start": 733,
+          "end": 739,
+          "check": "005a33a6",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 743,
           "end": 748,
           "check": "e61438bc",
-          "name": "Petro",
+          "name": "Petrus",
           "qid": "Q141944606"
         },
         {
@@ -129114,8 +129218,9 @@
           "start": 803,
           "end": 808,
           "check": "e61438bc",
-          "name": "Petro",
-          "qid": "Q141944606"
+          "name": "Petrus",
+          "n": 2,
+          "qid": null
         },
         {
           "kind": "person",
@@ -129187,6 +129292,17 @@
           "commemorated_in": [
             "mr:1118-leonardus-kimura-et-socii"
           ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 944,
+          "end": 951,
+          "check": "e6a88ae2",
+          "name": "Ignatius",
+          "qid": "Q24953789"
         },
         {
           "kind": "person",
@@ -137257,6 +137373,24 @@
           "check": "673095cf",
           "name": "Sophia Ximenez Ximenez",
           "qid": "Q9391896"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 91,
+          "end": 136,
+          "check": "12c9adce",
+          "name": "Maria a Purificatione a Sancto Ioseph Ximenez",
+          "qid": "Q23943240"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 143,
+          "end": 169,
+          "check": "5522a19e",
+          "name": "Maria Iosepha del Rio Mesa",
+          "qid": "Q23943248"
         }
       ],
       "mr:0923-sossius-miseni": [
@@ -161844,6 +161978,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 228,
+          "end": 239,
+          "check": "cfa7f66c",
+          "name": "Christianus",
+          "qid": "Q96739804"
         }
       ],
       "mr:1112-cunibertus-coloniae": [
@@ -169577,6 +169720,17 @@
           "check": "fdd3d275",
           "name": "Clara a Domina Nostra a Spe Ezcurra Urrutia",
           "qid": "Q11739626"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 490,
+          "end": 539,
+          "check": "aee3dd21",
+          "name": "Candida a Domina Nostra Angelorum Cayuso González",
+          "qid": "Q11734916"
         }
       ],
       "mr:1124-petrus-dumoulin-borie-et-socii": [
@@ -204629,6 +204783,28 @@
           "where": {
             "footnote": 1
           },
+          "start": 24,
+          "end": 32,
+          "check": "54be11d7",
+          "name": "Catharina du Verdier de la Sorinière",
+          "qid": "Q4217472"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 35,
+          "end": 73,
+          "check": "af0b395d",
+          "name": "Maria Ludovica du Verdier de la Sorinière",
+          "qid": "Q125744632"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 84,
           "end": 108,
           "check": "8a40bbea",
@@ -226804,6 +226980,15 @@
           "check": "97b22772",
           "name": "Henricus Walpole",
           "qid": "Q8776290"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 77,
+          "end": 95,
+          "check": "380a5795",
+          "name": "Alexander Rawlins",
+          "qid": "Q4719921"
         },
         {
           "kind": "person",
@@ -254131,6 +254316,17 @@
           "where": {
             "footnote": 1
           },
+          "start": 236,
+          "end": 241,
+          "check": "288b0f5d",
+          "name": "Sanctus",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 251,
           "end": 257,
           "check": "e9f894d0",
@@ -272747,6 +272943,28 @@
           "check": "031e6e24",
           "name": "Franciscus de Rauga",
           "qid": "Q1912652"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 226,
+          "end": 241,
+          "check": "4e949e1b",
+          "name": "Petrus d’Assche van der Slagmolen",
+          "qid": "Q2204593"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 244,
+          "end": 261,
+          "check": "3fec4b97",
+          "name": "Cornelius de Dorestado",
+          "qid": "Q11743701"
         },
         {
           "kind": "person",
@@ -293441,6 +293659,15 @@
         {
           "kind": "person",
           "where": "text",
+          "start": 91,
+          "end": 108,
+          "check": "2564c820",
+          "name": "Gulielmus Lampley",
+          "qid": "Q27854156"
+        },
+        {
+          "kind": "person",
+          "where": "text",
           "start": 218,
           "end": 237,
           "check": "0dd6ad44",
@@ -295563,6 +295790,15 @@
           "end": 100,
           "check": "c61fb2fe",
           "qid": "Q695198"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 148,
+          "end": 164,
+          "check": "d4a9a00e",
+          "name": "Antonius Primaldus",
+          "qid": "Q20604373"
         }
       ],
       "mr:0814-sanctus-de-urbino": [
@@ -298320,6 +298556,17 @@
           "check": "1156d64f",
           "name": "Elvira Torrentalle Paraire",
           "qid": "Q14918543"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 18,
+          "end": 71,
+          "check": "04e63041",
+          "name": "Rosa a Domina Nostra a Bono Consilio Pedret Rull",
+          "qid": "Q23943034"
         },
         {
           "kind": "person",
@@ -313616,6 +313863,28 @@
           "where": {
             "footnote": 1
           },
+          "start": 727,
+          "end": 735,
+          "check": "244696cb",
+          "name": "Ioannes",
+          "qid": null
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 738,
+          "end": 744,
+          "check": "c8725a19",
+          "name": "Petrus",
+          "qid": "Q141944606"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
           "start": 746,
           "end": 760,
           "check": "d3ca1dbc",
@@ -313641,8 +313910,9 @@
           "start": 798,
           "end": 804,
           "check": "c8725a19",
-          "name": "Petro",
-          "qid": "Q141944606"
+          "name": "Petrus",
+          "n": 2,
+          "qid": null
         },
         {
           "kind": "person",
@@ -313714,6 +313984,17 @@
           "commemorated_in": [
             "mr:1118-leonardus-kimura-et-socii"
           ]
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 940,
+          "end": 947,
+          "check": "bd237ef3",
+          "name": "Ignatius",
+          "qid": "Q24953789"
         },
         {
           "kind": "person",
@@ -321781,6 +322062,24 @@
           "check": "c57f9202",
           "name": "Sophia Ximenez Ximenez",
           "qid": "Q9391896"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 118,
+          "end": 167,
+          "check": "70c2c040",
+          "name": "Maria a Purificatione a Sancto Ioseph Ximenez",
+          "qid": "Q23943240"
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 170,
+          "end": 197,
+          "check": "92c38ef6",
+          "name": "Maria Iosepha del Rio Mesa",
+          "qid": "Q23943248"
         }
       ],
       "mr:0923-sossius-miseni": [
@@ -346434,6 +346733,15 @@
               "role": "ministry"
             }
           ]
+        },
+        {
+          "kind": "person",
+          "where": "text",
+          "start": 236,
+          "end": 245,
+          "check": "da1b6aaf",
+          "name": "Christianus",
+          "qid": "Q96739804"
         }
       ],
       "mr:1112-cunibertus-coloniae": [
@@ -354162,6 +354470,17 @@
           "check": "4ff23e9b",
           "name": "Clara a Domina Nostra a Spe Ezcurra Urrutia",
           "qid": "Q11739626"
+        },
+        {
+          "kind": "person",
+          "where": {
+            "footnote": 1
+          },
+          "start": 510,
+          "end": 564,
+          "check": "c0ea02d2",
+          "name": "Candida a Domina Nostra Angelorum Cayuso González",
+          "qid": "Q11734916"
         }
       ],
       "mr:1124-petrus-dumoulin-borie-et-socii": [
