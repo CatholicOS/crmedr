@@ -327,8 +327,17 @@ class ValidateSharedSurnameTest(unittest.TestCase):
                                          foot, {"mr:0210-x-et-socii"})
         for name in ("Catharina du Verdier de la Sorinière", "Maria Ludovica du Verdier de la Sorinière"):
             self.assertEqual(check(name), [], name)
-        for name in ("Catharina Poirier", "Catharina Maria"):
+        for name in ("Catharina Poirier", "Catharina Maria", "Catharina Ludovica du Verdier de la Sorinière"):
             self.assertTrue(check(name), name)
+
+    def test_a_capitalized_word_before_a_particle_stays_in_the_surname_unless_it_is_a_first_name(self):
+        # "Sailland" is no first name of anyone in the eulogy: "Sailland de la Tour" is the shared surname.
+        foot = {"mr:0201-x-et-socii": [{"mark": "1", "after": "x", "text":
+                "Quarum nomina: Ioanna et Petrina Sailland de la Tour, sorores."}]}
+        check = lambda name: ep.validate({"mr:0201-x-et-socii": [{"name": name, "where": {"footnote": 1}}]},
+                                         foot, {"mr:0201-x-et-socii"})
+        self.assertEqual(check("Ioanna Sailland de la Tour"), [])
+        self.assertTrue(check("Ioanna de la Tour"))
 
     def test_the_surname_is_shared_only_across_first_names_of_one_list_item(self):
         # Elisabeth's own surname stands between her and Soiron; Vérolot is no shared surname either.
