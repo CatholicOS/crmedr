@@ -230,6 +230,26 @@ ART_PHOTO = """=={{int:filedesc}}==
 """
 
 
+class PlainTest(unittest.TestCase):
+    def test_a_hidden_copy_of_the_text_is_dropped(self):
+        # {{Unknown|author}} on Commons (File:Saint Faustyna Kowalska portrait (1931).jpg)
+        raw = '<div class="fn value">\nUnknown author<span style="display: none;">Unknown author</span></div>'
+        self.assertEqual(pd.plain(raw), "Unknown author")
+
+    def test_the_hidden_fallback_of_anonymous_is_dropped(self):
+        raw = 'Anonymous<span style="display:none">Unknown author</span>, no author disclosure'
+        self.assertEqual(pd.plain(raw), "Anonymous, no author disclosure")
+
+    def test_visible_spans_keep_their_text(self):
+        self.assertEqual(pd.plain('<span style="color: red">Giotto</span> di Bondone'), "Giotto di Bondone")
+
+    def test_an_unknown_author_still_falls_back_to_the_attribution(self):
+        meta = {"LicenseShortName": {"value": "CC BY-SA 4.0"}, "AttributionRequired": {"value": "true"},
+                "Artist": {"value": 'Unknown author<span style="display: none;">Unknown author</span>'},
+                "Attribution": {"value": "Photo: A. Vescovo"}}
+        self.assertEqual(pd.image_credit("F.jpg", meta)["author"], "Photo: A. Vescovo")
+
+
 class PhotoLicenseTest(unittest.TestCase):
     def test_the_photographs_own_creative_commons_license(self):
         self.assertEqual(pd.photo_license(ART_PHOTO % "{{self|cc-by-sa-4.0|attribution=Bingar1234}}"),

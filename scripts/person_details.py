@@ -29,6 +29,9 @@ from pathlib import Path
 from wikidata import DETAIL_LANGS, Wikidata, _value, life_date
 
 TAG = re.compile(r"<[^>]+>")
+# Commons templates such as {{Unknown|author}} and {{Anonymous}} add a hidden copy or fallback
+# of their text; it is not shown on Commons, so it is dropped with its element.
+HIDDEN = re.compile(r"<(\w+)\b[^>]*\bstyle\s*=\s*[\"'][^\"']*display\s*:\s*none[^\"']*[\"'][^>]*>.*?</\1\s*>", re.I | re.S)
 COMMENT = ("What martyrology-frontend's person popups show, by Wikidata item, for each person "
            "data/mentions.json links to: description and Wikipedia title per interface language, "
            "birth and death (year, negative before Christ; precision year, decade or century; circa), and the portrait with its Commons author and "
@@ -40,8 +43,8 @@ NOT_A_CREDIT = re.compile(r"(own work|https?://)", re.I)
 
 
 def plain(s):
-    """Commons' extmetadata HTML as plain text; None when empty."""
-    return " ".join(html.unescape(TAG.sub("", s or "")).split()) or None
+    """Commons' extmetadata HTML as plain text, without hidden elements; None when empty."""
+    return " ".join(html.unescape(TAG.sub("", HIDDEN.sub("", s or ""))).split()) or None
 
 
 def portrait(raw):
