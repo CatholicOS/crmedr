@@ -240,6 +240,9 @@ class PlainTest(unittest.TestCase):
         raw = 'Anonymous<span style="display:none">Unknown author</span>, no author disclosure'
         self.assertEqual(pd.plain(raw), "Anonymous, no author disclosure")
 
+    def test_a_hidden_element_is_dropped_with_everything_nested_in_it(self):
+        self.assertEqual(pd.plain('Alice<span style="display:none">x<span>y</span>z</span> Smith'), "Alice Smith")
+
     def test_visible_spans_keep_their_text(self):
         self.assertEqual(pd.plain('<span style="color: red">Giotto</span> di Bondone'), "Giotto di Bondone")
 
