@@ -20,15 +20,45 @@ Usage:
 Standard library only.
 """
 
-import html
 import json
 import re
 import sys
+from html.parser import HTMLParser
 from pathlib import Path
 
 from wikidata import DETAIL_LANGS, Wikidata, _value, life_date
 
-TAG = re.compile(r"<[^>]+>")
+# Commons templates such as {{Unknown|author}} and {{Anonymous}} add a hidden copy or fallback
+# of their text; it is not shown on Commons, so it is dropped with everything nested in it.
+HIDDEN_STYLE = re.compile(r"display\s*:\s*none", re.I)
+VOID = {"area", "base", "br", "col", "embed", "hr", "img", "input", "link", "meta", "source", "track", "wbr"}
+
+
+class _Text(HTMLParser):
+    """The text of an HTML fragment outside any element styled display: none."""
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts, self.open, self.hidden = [], [], 0
+
+    def handle_starttag(self, tag, attrs):
+        if tag in VOID:
+            return
+        hide = self.hidden > 0 or any(k == "style" and v and HIDDEN_STYLE.search(v) for k, v in attrs)
+        self.open.append((tag, hide))
+        self.hidden += hide
+
+    def handle_endtag(self, tag):
+        # Close up to the matching tag; an unmatched end tag is ignored.
+        if any(t == tag for t, _ in self.open):
+            while self.open:
+                t, hide = self.open.pop()
+                self.hidden -= hide
+                if t == tag:
+                    break
+
+    def handle_data(self, data):
+        if not self.hidden:
+            self.parts.append(data)
 COMMENT = ("What martyrology-frontend's person popups show, by Wikidata item, for each person "
            "data/mentions.json links to: description and Wikipedia title per interface language, "
            "birth and death (year, negative before Christ; precision year, decade or century; circa), and the portrait with its Commons author and "
@@ -40,8 +70,11 @@ NOT_A_CREDIT = re.compile(r"(own work|https?://)", re.I)
 
 
 def plain(s):
-    """Commons' extmetadata HTML as plain text; None when empty."""
-    return " ".join(html.unescape(TAG.sub("", s or "")).split()) or None
+    """Commons' extmetadata HTML as plain text, without hidden elements; None when empty."""
+    parser = _Text()
+    parser.feed(s or "")
+    parser.close()
+    return " ".join("".join(parser.parts).split()) or None
 
 
 def portrait(raw):
