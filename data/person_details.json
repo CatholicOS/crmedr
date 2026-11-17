@@ -153434,5 +153434,48 @@
     "died": null,
     "image": null,
     "wikipedia": {}
+  },
+  "Q142199788": {
+    "description": {
+      "en": "child martyr of Nagasaki, son of Antonius Hamanomachi, brother of Peter",
+      "it": "bambino martire a Nagasaki, figlio di Antonio Hamanomachi, fratello di Pietro"
+    },
+    "born": null,
+    "died": {
+      "year": 1622,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q142199789": {
+    "description": {
+      "en": "child martyr of Nagasaki, son of Paul and Thecla Nagaishi",
+      "it": "bambino martire a Nagasaki, figlio di Paolo e Tecla Nagaishi"
+    },
+    "born": null,
+    "died": {
+      "year": 1622,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q142199794": {
+    "description": {
+      "en": "deacon of Vienne, one of the martyrs of Lyon (c. 177)",
+      "it": "diacono di Vienne, uno dei martiri di Lione (c. 177)",
+      "fr": "diacre de Vienne, l'un des martyrs de Lyon (vers 177)"
+    },
+    "born": null,
+    "died": {
+      "year": 177,
+      "precision": "year",
+      "circa": true
+    },
+    "image": null,
+    "wikipedia": {}
   }
 }

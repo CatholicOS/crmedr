@@ -17262,9 +17262,10 @@
         "decided": "jev"
       },
       "Sanctus": {
-        "wikidata": null,
-        "status": "unresolved",
-        "note": "Searched Wikidata (Sanctus, deacon of Vienne, martyrs of Lyon 177; labels in en, fr, it, pl, de and full text); no item for him, nor as a member of the martyrs of Lyon."
+        "wikidata": "Q142199794",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Sanctus, deacon of Vienne, martyr of Lyon 177; item created 2026-11-17 (none existed)."
       }
     },
     "mr:0602-sadochus-et-socii": {
@@ -32385,14 +32386,16 @@
         "status": "reviewed"
       },
       "Ioannes": {
-        "wikidata": null,
-        "status": "unresolved",
-        "note": "Searched Wikidata (Ioannes/Juan/Giovanni/John/Jan, son of Antonius Coreanus or Hamanomachi, Great Genna Martyrdom Q3114717, labels and full text); his brother Petrus is Q141944606, but no item for him."
+        "wikidata": "Q142199788",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "John Hamanomachi, child martyr of Nagasaki 1622, son of Antonius Coreanus (Hamanomachi) and Maria, brother of Petrus; item created 2026-11-17 (none existed)."
       },
       "Petrus#2": {
-        "wikidata": null,
-        "status": "unresolved",
-        "note": "Searched Wikidata (Petrus/Pedro/Pietro/Peter/Piotr Nagaishi, son of Paulus Nagaishi Q24036037 and Thecla Q24036058, labels and full text); no item."
+        "wikidata": "Q142199789",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Peter Nagaishi, child martyr of Nagasaki 1622, son of Paulus Nagaishi and Thecla; item created 2026-11-17 (none existed)."
       },
       "Ignatius": {
         "wikidata": "Q24953789",
