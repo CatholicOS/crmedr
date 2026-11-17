@@ -4748,6 +4748,18 @@
       "Petrus Fremond": {
         "wikidata": "Q141883327",
         "status": "auto"
+      },
+      "Catharina du Verdier de la Sorinière": {
+        "wikidata": "Q4217472",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Catherine du Verdier de La Sorinière, guillotined/shot at Avrillé 1794, sister of Marie-Louise (footnote: sorores)."
+      },
+      "Maria Ludovica du Verdier de la Sorinière": {
+        "wikidata": "Q125744632",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Marie-Louise du Verdier de La Sorinière, sister of Catherine, martyr at Avrillé 1794."
       }
     },
     "mr:0210-prothadius-vesontione": {
@@ -10271,6 +10283,12 @@
         "status": "reviewed",
         "decided": "research",
         "note": "Elizabeth I of England (r. 1558-1603), under whom the English martyrs of her reign were executed (Wikipedia)."
+      },
+      "Alexander Rawlins": {
+        "wikidata": "Q4719921",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Alexander Rawlins, priest, executed at York 7 April 1595 with Henry Walpole."
       }
     },
     "mr:0407-hermannus-iosephus": {
@@ -17242,6 +17260,11 @@
         "wikidata": "Q1430",
         "status": "reviewed",
         "decided": "jev"
+      },
+      "Sanctus": {
+        "wikidata": null,
+        "status": "unresolved",
+        "note": "Searched Wikidata (Sanctus, deacon of Vienne, martyrs of Lyon 177; labels in en, fr, it, pl, de and full text); no item for him, nor as a member of the martyrs of Lyon."
       }
     },
     "mr:0602-sadochus-et-socii": {
@@ -21840,6 +21863,18 @@
       "Willehadus de Dania": {
         "wikidata": "Q3436024",
         "status": "reviewed"
+      },
+      "Petrus d’Assche van der Slagmolen": {
+        "wikidata": "Q2204593",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Peter of Assche, Franciscan lay brother, martyr of Gorkum 1572 (part of Q1909286)."
+      },
+      "Cornelius de Dorestado": {
+        "wikidata": "Q11743701",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Cornelius of Wijk bij Duurstede (Dorestadum), Franciscan lay brother, martyr of Gorkum 1572 (part of Q1909286)."
       }
     },
     "mr:0709-paulina-a-corde-iesu-agonizante": {
@@ -27015,6 +27050,12 @@
         "status": "reviewed",
         "decided": "research",
         "note": "Elizabeth I of England (r. 1558-1603), under whom the martyr was executed (Wikipedia)."
+      },
+      "Gulielmus Lampley": {
+        "wikidata": "Q27854156",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "William Lampley, glover, executed at Gloucester 1588 for aiding priests."
       }
     },
     "mr:0811-mauritius-tornay": {
@@ -28260,6 +28301,12 @@
       "Teresia a Matre Divini Pastoris Chambó Palés": {
         "wikidata": "Q9357390",
         "status": "reviewed"
+      },
+      "Rosa a Domina Nostra a Bono Consilio Pedret Rull": {
+        "wikidata": "Q23943034",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Rosa of Our Lady of Good Counsel Pedret Rull, Carmelite Sister of Charity, martyr 19 August 1936 (part of Q4631492)."
       }
     },
     "mr:0819-ezechiel-moreno-diaz": {
@@ -32271,10 +32318,6 @@
         "wikidata": "Q24036047",
         "status": "reviewed"
       },
-      "Petro": {
-        "wikidata": "Q141944606",
-        "status": "reviewed"
-      },
       "Petrus Sampo": {
         "wikidata": "Q141944607",
         "status": "reviewed"
@@ -32336,6 +32379,26 @@
         "status": "reviewed",
         "decided": "research",
         "note": "Blessed Matthias Nakano Miota (Latin label), died at Nagasaki 27 November 1619, father of Dominicus Nakano."
+      },
+      "Petrus": {
+        "wikidata": "Q141944606",
+        "status": "reviewed"
+      },
+      "Ioannes": {
+        "wikidata": null,
+        "status": "unresolved",
+        "note": "Searched Wikidata (Ioannes/Juan/Giovanni/John/Jan, son of Antonius Coreanus or Hamanomachi, Great Genna Martyrdom Q3114717, labels and full text); his brother Petrus is Q141944606, but no item for him."
+      },
+      "Petrus#2": {
+        "wikidata": null,
+        "status": "unresolved",
+        "note": "Searched Wikidata (Petrus/Pedro/Pietro/Peter/Piotr Nagaishi, son of Paulus Nagaishi Q24036037 and Thecla Q24036058, labels and full text); no item."
+      },
+      "Ignatius": {
+        "wikidata": "Q24953789",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Ignatius Jorge Fernandes, child martyr of Nagasaki 1622, son of Isabella Fernández and Dominicus Jorge."
       }
     },
     "mr:0910-theodardus-tungrensis": {
@@ -34394,6 +34457,18 @@
       "Sophia Ximenez Ximenez": {
         "wikidata": "Q9391896",
         "status": "reviewed"
+      },
+      "Maria a Purificatione a Sancto Ioseph Ximenez": {
+        "wikidata": "Q23943240",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "María de la Purificación of St Joseph Ximénez Ximénez, Carmelite Sister of Charity, martyr 23 September 1936 (part of Q4631492)."
+      },
+      "Maria Iosepha del Rio Mesa": {
+        "wikidata": "Q23943248",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "María Josefa of St Sophia del Río Messa, Carmelite Sister of Charity, martyr 23 September 1936 (part of Q4631492)."
       }
     },
     "mr:0923-sossius-miseni": {
@@ -40429,6 +40504,12 @@
       "Matthaeus": {
         "wikidata": "Q127587384",
         "status": "reviewed"
+      },
+      "Christianus": {
+        "wikidata": "Q96739804",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Christinus (Krystyn), the brothers' servant, killed with them 1003 (part of the Five Martyred Brothers Q1481639)."
       }
     },
     "mr:1112-cunibertus-coloniae": {
@@ -42478,6 +42559,12 @@
       "Paula a Sancta Anastasia Isla Alonso": {
         "wikidata": "Q11813749",
         "status": "reviewed"
+      },
+      "Candida a Domina Nostra Angelorum Cayuso González": {
+        "wikidata": "Q11734916",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Cándida of Our Lady of the Angels Cayuso González, Carmelite Sister of Charity, martyr 24 November 1936 (part of Q4631492)."
       }
     },
     "mr:1124-petrus-dumoulin-borie-et-socii": {
@@ -46296,6 +46383,14 @@
       "Zoticus": {
         "wikidata": "Q3464125",
         "status": "reviewed"
+      }
+    },
+    "mr:0814-octingenti-martyres-hydrunti": {
+      "Antonius Primaldus": {
+        "wikidata": "Q20604373",
+        "status": "reviewed",
+        "decided": "research",
+        "note": "Antonio Primaldo, the old tailor who exhorted the martyrs of Otranto, 1480 (part of Q1615843)."
       }
     }
   }

@@ -4418,7 +4418,7 @@
    "source": "wikidata"
   },
   "mr:0318-leobardus-turonum": {
-   "year": 583,
+   "year": 593,
    "basis": "death",
    "source": "wikidata"
   },
@@ -8522,9 +8522,10 @@
    "source": "wikidata"
   },
   "mr:0526-felicissima-tuderti": {
-   "to": 1630,
+   "from": 1,
+   "to": 100,
    "basis": "death",
-   "source": "edition"
+   "source": "wikidata"
   },
   "mr:0526-franciscus-patrizi": {
    "year": 1328,
@@ -13603,7 +13604,7 @@
   },
   "mr:0811-ioannes-sandys-et-stephanus-rowsham": {
    "from": 1586,
-   "to": 1587,
+   "to": 1588,
    "basis": "death",
    "source": "wikidata"
   },
@@ -13859,11 +13860,9 @@
    "source": "wikidata"
   },
   "mr:0814-octingenti-martyres-hydrunti": {
-   "from": 1401,
-   "to": 1500,
-   "circa": true,
+   "year": 1480,
    "basis": "death",
-   "source": "estimate"
+   "source": "wikidata"
   },
   "mr:0814-sanctus-de-urbino": {
    "year": 1394,

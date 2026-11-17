@@ -232,21 +232,32 @@ def _shared_surname_names(printed):
     """The folded names a list of first names before one surname gives ("Ioanna, Magdalena et Petrina
     Sailland": Ioanna Sailland, Magdalena Sailland, Petrina Sailland): the item "A et B Surname" and the
     one-word items just before it in its group (a semicolon, colon or period closes a group), each first
-    name with the surname."""
+    name with the surname. An honorific before A is skipped ("beatæ"). B may have a second first name
+    before a surname that opens with a particle ("Catharina et Maria Ludovica du Verdier": Catharina du
+    Verdier) when that word opens another item of the list (Ludovica Poirier); else it is the surname's
+    first word ("Ioanna et Petrina Sailland de la Tour")."""
     names = set()
+    openers = {fold(w[0]) for item in re.split(r"[;:.,]", printed)
+               if (w := [x for x in item.split() if not x[:1].islower()])}
     for group in re.split(r"[;:.]", printed):
         items = [s.strip() for s in group.split(",")]
         for j, item in enumerate(items):
-            m = SHARED_SURNAME.fullmatch(item)
+            words = item.split()
+            while words and words[0][:1].islower():
+                words.pop(0)
+            m = SHARED_SURNAME.fullmatch(" ".join(words))
             # The surname opens with a capital; a particle may follow ("Sailland d’Espinatz").
             if not m or not all(w[:1].isupper() for w in [m[1], m[2], m[3]]):
                 continue
+            tail = m[3].split()
+            second_first_name = len(tail) > 2 and tail[1][:1].islower() and fold(tail[0]) in openers
+            surnames = [" ".join(tail[1:])] if second_first_name else [m[3]]
             given = [m[1], m[2]]
             i = j - 1
             while i >= 0 and len(items[i].split()) == 1 and items[i][:1].isupper():
                 given.insert(0, items[i])
                 i -= 1
-            names |= {fold(f"{g} {m[3]}") for g in given}
+            names |= {fold(f"{g} {s}") for g in given for s in surnames}
     return names
 
 

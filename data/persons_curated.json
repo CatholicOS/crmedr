@@ -589,6 +589,42 @@
       "it": "Daucto"
     }
   ],
+  "mr:0210-petrus-fremond-et-socii": [
+    {
+      "name": "Petrus Fremond",
+      "where": "text"
+    },
+    {
+      "name": "Catharina du Verdier de la Sorinière",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria Ludovica du Verdier de la Sorinière",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ludovica Bessay de la Voüte",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria Anna Hacher du Bois",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ludovica Poirier",
+      "where": {
+        "footnote": 1
+      }
+    }
+  ],
   "mr:0212-thomas-hemmerford-et-socii": [
     {
       "name": "Thomas Hemmerford",
@@ -1277,6 +1313,16 @@
       "name": "Chionia",
       "where": "text",
       "it": "Chiona"
+    }
+  ],
+  "mr:0407-henricus-walpole": [
+    {
+      "name": "Henricus Walpole",
+      "where": "text"
+    },
+    {
+      "name": "Alexander Rawlins",
+      "where": "text"
     }
   ],
   "mr:0408-herodion-et-socii": [
@@ -2620,6 +2666,12 @@
       }
     },
     {
+      "name": "Sanctus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
       "name": "Maturus",
       "where": {
         "footnote": 1
@@ -3948,6 +4000,120 @@
       }
     }
   ],
+  "mr:0709-nicolaus-pieck-et-socii": [
+    {
+      "name": "Nicolaus Pieck",
+      "where": "text"
+    },
+    {
+      "name": "Hieronymus de Weert",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Theodoricus van der Eem",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Nicasius de Heeze",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Willehadus de Dania",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Godefridus de Melveren Coart",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius de Hoornaert",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius de Werta",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Franciscus de Rauga",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus d’Assche van der Slagmolen",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Cornelius de Dorestado",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ioannes Lenaerts",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ioannes Coloniensis",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Hadrianus de Hilvarenbeek",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Iacobus Lacops",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Leonardus Vechel",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Nicolaus Poppel",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Godefridus van Duynen",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Andreas Wouters",
+      "where": {
+        "footnote": 1
+      }
+    }
+  ],
   "mr:0710-emmanuel-ruiz-et-socii": [
     {
       "name": "Emmanuel Ruiz",
@@ -4940,6 +5106,20 @@
       "it": "Sisto"
     }
   ],
+  "mr:0811-ioannes-sandys-et-stephanus-rowsham": [
+    {
+      "name": "Ioannes Sandys",
+      "where": "text"
+    },
+    {
+      "name": "Stephanus Rowsham",
+      "where": "text"
+    },
+    {
+      "name": "Gulielmus Lampley",
+      "where": "text"
+    }
+  ],
   "mr:0811-raphael-alonso-gutierrez": [
     {
       "name": "Raphael Alonso Gutierrez",
@@ -4980,6 +5160,12 @@
       "n": 2,
       "where": "text",
       "it": "Anastasio"
+    }
+  ],
+  "mr:0814-octingenti-martyres-hydrunti": [
+    {
+      "name": "Antonius Primaldus",
+      "where": "text"
     }
   ],
   "mr:0815-aloysius-batis-sainz-et-socii": [
@@ -5045,6 +5231,12 @@
       "name": "Elvira Torrentalle Paraire",
       "where": "text",
       "it": "Elvira Torrentallé Paraire"
+    },
+    {
+      "name": "Rosa a Domina Nostra a Bono Consilio Pedret Rull",
+      "where": {
+        "footnote": 1
+      }
     },
     {
       "name": "Maria a Domina Nostra Providentiæ Calaf Miracle",
@@ -6623,6 +6815,320 @@
       "it": "Dativo"
     }
   ],
+  "mr:0910-sebastianus-kimura-et-socii": [
+    {
+      "name": "Sebastianus Kimura",
+      "where": "text"
+    },
+    {
+      "name": "Franciscus Morales",
+      "where": "text"
+    },
+    {
+      "name": "Angelus Orsucci",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Alphonsus de Mena",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Iosephus a Sancto Hyacintho de Salvanés",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Hyacinthus Orfanel",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Dominicus a Rosario",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Alexius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Richardus a Sancta Anna",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus de Abula",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Vincentius a Sancto Iosepho",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Carolus Spínola",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Gundisalvus Fusai",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius Kiuni",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Thomas a Rosario",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Thomas Akahoshi",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus Sampo",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Michael Shumpo",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ludovicus Kawara",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ioannes Chugoku",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Leo de Satsuma",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Lucia de Freitas",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius Sanga",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Magdalena",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius Coreanus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ioannes",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Paulus Nagaishi",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Thecla",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Petrus",
+      "n": 2,
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Paulus Tanaka",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria",
+      "n": 2,
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Dominicus Yamada",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Clara",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Isabella Fernández",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Ignatius",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria",
+      "n": 3,
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Agnes",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria",
+      "n": 4,
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Dominica Ogata",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Maria Tanaura",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Apollonia",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Catharina",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Dominicus Nakano",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Bartholomæus Kawano Shichiemon",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Damianus Yamichi Tanda",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Michael",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Thomas Shichiro",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Rufus Ishimoto",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Clemens Vom",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonius",
+      "where": {
+        "footnote": 1
+      }
+    }
+  ],
   "mr:0911-gaspar-koteda-et-socii": [
     {
       "name": "Gaspar Koteda",
@@ -7467,6 +7973,20 @@
       "where": "text"
     }
   ],
+  "mr:0923-sophia-ximenez-ximenez-et-socii": [
+    {
+      "name": "Sophia Ximenez Ximenez",
+      "where": "text"
+    },
+    {
+      "name": "Maria a Purificatione a Sancto Ioseph Ximenez",
+      "where": "text"
+    },
+    {
+      "name": "Maria Iosepha del Rio Mesa",
+      "where": "text"
+    }
+  ],
   "mr:0925-iosephus-bengoa-aranguren-et-socii": [
     {
       "name": "Iosephus Bengoa Aranguren",
@@ -8294,6 +8814,28 @@
     },
     {
       "name": "Simplicius",
+      "where": "text"
+    }
+  ],
+  "mr:1112-benedictus-et-socii": [
+    {
+      "name": "Benedictus",
+      "where": "text"
+    },
+    {
+      "name": "Ioannes",
+      "where": "text"
+    },
+    {
+      "name": "Matthaeus",
+      "where": "text"
+    },
+    {
+      "name": "Isaac",
+      "where": "text"
+    },
+    {
+      "name": "Christianus",
       "where": "text"
     }
   ],
@@ -9218,6 +9760,78 @@
       "name": "Eulogius",
       "where": "text",
       "it": "Eulogio"
+    }
+  ],
+  "mr:1124-nicetha-a-sancta-prudentia-et-socii": [
+    {
+      "name": "Nicetha a Sancta Prudentia",
+      "where": "text"
+    },
+    {
+      "name": "Paula a Sancta Anastasia Isla Alonso",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Antonia a Sancto Timotheo Gosens Sáez de Ibarra",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Daria a Sancta Sophia Campillo Paniagua",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Erundina a Domina Nostra a Monte Carmelo Colino Vega",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Consolata a Sanctissimo Sacramento Cuñado González",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Concepta a Sancto Ignatio Odriozola Zabalía",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Feliciana a Domina Nostra a Monte Carmelo de Uribe Orbe",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Concepta a Sancta Magdalena Rodríguez Fernández",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Iusta a Maria Immaculata Maiza Goicoechea",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Clara a Domina Nostra a Spe Ezcurra Urrutia",
+      "where": {
+        "footnote": 1
+      }
+    },
+    {
+      "name": "Candida a Domina Nostra Angelorum Cayuso González",
+      "where": {
+        "footnote": 1
+      }
     }
   ],
   "mr:1124-petrus-dumoulin-borie-et-socii": [

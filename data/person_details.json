@@ -70818,6 +70818,28 @@
       "es": "Guillermo de Vercelli"
     }
   },
+  "Q2204593": {
+    "description": {
+      "en": "Catholic saint"
+    },
+    "born": {
+      "year": 1530,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1572,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "De heilige Petrus van Assche Petrus Ascanus. NL-HlmNHA 1477 53010734.JPG",
+      "author": "Matham, Jacob (1571-1631)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
+  },
   "Q2208870": {
     "description": {
       "en": "Polish presbyter (1898-1941)",
@@ -71223,6 +71245,7 @@
     "description": {
       "en": "Catholic Saint and bishop of Agrigento",
       "it": "vescovo e santo italiano",
+      "fr": "évêque, saint",
       "es": "obispo de Agrigento, venerado como santo por la Iglesia católica"
     },
     "born": {
@@ -71393,7 +71416,8 @@
   "Q2263241": {
     "description": {
       "en": "French saint and archbishop",
-      "it": "vescovo franco"
+      "it": "vescovo franco",
+      "es": "arzobispo de Arlés, santo francés"
     },
     "born": {
       "year": 523,
@@ -72035,6 +72059,7 @@
     "description": {
       "en": "French beatified nun (1684-1759)",
       "it": "religiosa e beata francese",
+      "de": "französische Ordensgründerin",
       "es": "Beata católica francesa co-fundadora de la Congregación religiosa Hijas de la Sabiduría"
     },
     "born": {
@@ -72725,7 +72750,7 @@
       "it": "abate e vescovo",
       "fr": "évêque de Riez",
       "de": "Abt von Lérins, Bischof von Riez, Theologe",
-      "es": "c. 405/410. c. 490/495"
+      "es": "obispo de Riez (c. 405/410. c. 490/495)"
     },
     "born": {
       "year": 500,
@@ -78375,7 +78400,9 @@
     }
   },
   "Q2726638": {
-    "description": {},
+    "description": {
+      "fr": "sainte"
+    },
     "born": null,
     "died": {
       "year": 734,
@@ -87299,6 +87326,7 @@
   },
   "Q3554214": {
     "description": {
+      "de": "Eremit und Heiliger",
       "es": "santo (537-620)"
     },
     "born": {
@@ -87314,6 +87342,7 @@
     "image": null,
     "wikipedia": {
       "fr": "Valéric de Bernage",
+      "de": "Valerius von Bernage",
       "es": "Valerio de Limoges"
     }
   },
@@ -87768,9 +87797,9 @@
   },
   "Q3592028": {
     "description": {
-      "en": "French catholic priest (1802-1861)",
-      "it": "vescovo cattolico francese",
-      "fr": "évêque catholique",
+      "en": "French Roman Catholic bishop and saint (1802-1861)",
+      "it": "vescovo e santo cattolico francese (1802-1861)",
+      "fr": "évêque et saint catholique français (1802-1861)",
       "de": "römisch-katholischer Bischof",
       "es": "obispo católico"
     },
@@ -88889,7 +88918,8 @@
   "Q3638125": {
     "description": {
       "en": "Italian priest and Capuchin friar (1560-1625)",
-      "it": "sacerdote cappuccino italiano (1560-1625)"
+      "it": "sacerdote cappuccino italiano (1560-1625)",
+      "fr": "prêtre capucin italien (1560-1625)"
     },
     "born": {
       "year": 1560,
@@ -90870,7 +90900,7 @@
   },
   "Q3766297": {
     "description": {
-      "en": "Italian recluse and Blessed"
+      "en": "13th-14th-century Italian recluse, Catholic blessed, associated with Signa near Florence"
     },
     "born": {
       "year": 1266,
@@ -91196,7 +91226,8 @@
     },
     "image": null,
     "wikipedia": {
-      "it": "Girolamo Gherarducci"
+      "it": "Girolamo Gherarducci",
+      "es": "Girolamo Gherarducci"
     }
   },
   "Q3769257": {
@@ -91320,6 +91351,7 @@
     "description": {
       "en": "Italian presbyter (1843–1915)",
       "it": "sacerdote italiano",
+      "fr": "prêtre italien",
       "es": "presbítero italiano (1843-1915)"
     },
     "born": {
@@ -92585,7 +92617,8 @@
   },
   "Q3826850": {
     "description": {
-      "it": "vescovo cattolico italiano"
+      "it": "vescovo cattolico italiano",
+      "fr": "saint"
     },
     "born": {
       "year": 1124,
@@ -92630,7 +92663,9 @@
     }
   },
   "Q3828050": {
-    "description": {},
+    "description": {
+      "fr": "saint"
+    },
     "born": {
       "year": 201,
       "precision": "century",
@@ -95024,9 +95059,19 @@
     }
   },
   "Q3949015": {
-    "description": {},
-    "born": null,
-    "died": null,
+    "description": {
+      "fr": "sainte"
+    },
+    "born": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 100,
+      "precision": "century",
+      "circa": false
+    },
     "image": null,
     "wikipedia": {
       "it": "Felicissima di Todi"
@@ -96099,6 +96144,7 @@
   "Q4065365": {
     "description": {
       "fr": "prêtre, saint patron de Saulieu",
+      "de": "Priester (–177)",
       "es": "Biografía de Andoquio, sacerdote y mártir"
     },
     "born": {
@@ -97797,6 +97843,28 @@
     "wikipedia": {
       "fr": "Candida de Rome",
       "es": "Cándida de Roma"
+    }
+  },
+  "Q4217472": {
+    "description": {},
+    "born": {
+      "year": 1758,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1794,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Sorinière 1.jpg",
+      "author": "Jean Clamens",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {
+      "fr": "Catherine du Verdier de La Sorinière"
     }
   },
   "Q4218756": {
@@ -100981,6 +101049,26 @@
     "image": null,
     "wikipedia": {
       "en": "Alexander (martyr)"
+    }
+  },
+  "Q4719921": {
+    "description": {
+      "en": "English saint"
+    },
+    "born": {
+      "year": 1560,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1595,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "Alexander Rawlins",
+      "fr": "Alexandre Rawlins"
     }
   },
   "Q4740402": {
@@ -104528,6 +104616,7 @@
       "en": "Roman Catholic monk, priest and blessed",
       "it": "monaco, presbitero e beato italiano",
       "fr": "moine, prêtre et bienheureux italien",
+      "de": "Presbyter (1200–1290)",
       "es": "presbítero, monje y beato católico italiano"
     },
     "born": {
@@ -104565,7 +104654,8 @@
   "Q6279177": {
     "description": {
       "en": "Bulgarian priest",
-      "it": "presbitero bulgaro"
+      "it": "presbitero bulgaro",
+      "de": "bulgarischer Presbyter (1884–1952)"
     },
     "born": {
       "year": 1884,
@@ -104631,7 +104721,8 @@
   },
   "Q6313022": {
     "description": {
-      "en": "Christian hermit"
+      "en": "Christian hermit",
+      "de": "Einsiedler"
     },
     "born": {
       "year": 486,
@@ -105459,7 +105550,8 @@
     "description": {
       "en": "Italian Franciscan preacher",
       "it": "teologo italiano",
-      "fr": "bienheureux franciscain italien"
+      "fr": "bienheureux franciscain italien",
+      "de": "Theologe und katholischer Priester (1424–1482)"
     },
     "born": {
       "year": 1424,
@@ -105602,6 +105694,7 @@
   "Q7155590": {
     "description": {
       "en": "Martyred Bulgarian theologian (1919-1952)",
+      "de": "bulgarischer Theologe und katholischer Priester (1919–1952)",
       "pt": "um teólogo búlgaro"
     },
     "born": {
@@ -105747,7 +105840,8 @@
   "Q7182911": {
     "description": {
       "en": "Roman state official under the emperors Constantine I and Constantius II",
-      "fr": "préfet d'Égypte entre 337 et 340"
+      "fr": "préfet d'Égypte entre 337 et 340",
+      "de": "Offizier (–350)"
     },
     "born": {
       "year": 295,
@@ -105791,6 +105885,7 @@
     "description": {
       "en": "Welsh martyr",
       "fr": "martyr catholique",
+      "de": "katholischer Priester und Mönch (1594–1646)",
       "es": "mártir de Gales"
     },
     "born": {
@@ -106068,7 +106163,8 @@
   },
   "Q7327329": {
     "description": {
-      "en": "English martyr"
+      "en": "English martyr",
+      "de": "Politiker (–1588)"
     },
     "born": {
       "year": 1550,
@@ -106425,7 +106521,8 @@
   "Q7358184": {
     "description": {
       "en": "English Jesuit priest",
-      "fr": "prêtre anglais"
+      "fr": "prêtre anglais",
+      "de": "katholischer Priester (1570–1601)"
     },
     "born": {
       "year": 1570,
@@ -106529,7 +106626,8 @@
   "Q7400875": {
     "description": {
       "en": "Christian Saint martyred in 259",
-      "fr": "martyr et saint chrétien"
+      "fr": "martyr et saint chrétien",
+      "de": "Bischof"
     },
     "born": {
       "year": 150,
@@ -106633,7 +106731,8 @@
     "description": {
       "en": "Christian martyr",
       "it": "vescovo romano",
-      "fr": "martyr chrétien"
+      "fr": "martyr chrétien",
+      "de": "katholischer Priester und Bischof"
     },
     "born": {
       "year": 1,
@@ -106711,7 +106810,8 @@
     "description": {
       "en": "Byzantine monk",
       "it": "monaco e santo bizantino",
-      "fr": "moine byzantin"
+      "fr": "moine byzantin",
+      "de": "Mönch (930–998)"
     },
     "born": {
       "year": 930,
@@ -106785,7 +106885,7 @@
     },
     "image": null,
     "wikipedia": {
-      "en": "Ponticus",
+      "en": "Ponticus (saint)",
       "es": "Póntico (mártir)",
       "pt": "Pôntico de Lugduno"
     }
@@ -107128,7 +107228,8 @@
   },
   "Q7788018": {
     "description": {
-      "en": "English priest"
+      "en": "English priest",
+      "fr": "prêtre franciscain récollet anglais"
     },
     "born": {
       "year": 1604,
@@ -107483,6 +107584,7 @@
   "Q7795043": {
     "description": {
       "en": "English missionary",
+      "de": "katholischer Priester (1618–1679)",
       "es": "sacerdote jesuita inglés"
     },
     "born": {
@@ -107655,7 +107757,8 @@
   "Q7926487": {
     "description": {
       "en": "Sixth-century bishop of Capua",
-      "it": "vescovo italiano"
+      "it": "vescovo italiano",
+      "de": "katholischer Priester und Schriftsteller (–554)"
     },
     "born": {
       "year": 401,
@@ -107866,7 +107969,8 @@
   "Q8010909": {
     "description": {
       "en": "English Jesuit priest and Roman Catholic martyr",
-      "fr": "prêtre catholique anglais"
+      "fr": "prêtre catholique anglais",
+      "de": "Politiker (1566–1594)"
     },
     "born": {
       "year": 1566,
@@ -108454,6 +108558,7 @@
       "en": "Catholic martyr from England",
       "it": "religioso e presbitero inglese",
       "fr": "prêtre jésuite anglais",
+      "de": "katholischer Priester (1595–1645)",
       "es": "jesuita inglés, venerado como santo por la Iglesia Católica, por haber sido martirizado"
     },
     "born": {
@@ -109519,7 +109624,8 @@
   "Q9157769": {
     "description": {
       "en": "Italian female saint",
-      "it": "religiosa e badessa italiana"
+      "it": "religiosa e badessa italiana",
+      "de": "Ordensangehörige (–1472)"
     },
     "born": {
       "year": 1401,
@@ -109806,7 +109912,8 @@
   "Q9166298": {
     "description": {
       "en": "Italian presbyter",
-      "it": "presbitero italiano"
+      "it": "presbitero italiano",
+      "de": "Presbyter (1726–1778)"
     },
     "born": {
       "year": 1726,
@@ -110452,7 +110559,8 @@
   },
   "Q9262404": {
     "description": {
-      "fr": "frère dominicain, martyr au Tonkin en 1745"
+      "fr": "frère dominicain, martyr au Tonkin en 1745",
+      "de": "Missionar und katholischer Priester (1702–1745)"
     },
     "born": {
       "year": 1702,
@@ -110666,7 +110774,8 @@
   "Q9282211": {
     "description": {
       "en": "Italian catholic bishop",
-      "it": "vescovo cattolico italiano"
+      "it": "vescovo cattolico italiano",
+      "de": "katholischer Priester und katholischer Bischof (559–630)"
     },
     "born": {
       "year": 650,
@@ -111032,7 +111141,9 @@
     }
   },
   "Q9335390": {
-    "description": {},
+    "description": {
+      "de": "spanische Nonne (1872–1936)"
+    },
     "born": {
       "year": 1872,
       "precision": "year",
@@ -111093,7 +111204,8 @@
   },
   "Q9348939": {
     "description": {
-      "it": "vescovo, santo"
+      "it": "vescovo, santo",
+      "de": "katholischer Priester und katholischer Bischof (–375)"
     },
     "born": null,
     "died": {
@@ -111471,6 +111583,7 @@
   "Q9371947": {
     "description": {
       "en": "Saint and bishop",
+      "de": "Ordensangehöriger und Bischof (–257)",
       "es": "mártir y santo cristiano, obispo de Delminium (f. 257)"
     },
     "born": {
@@ -112826,6 +112939,7 @@
       "en": "Colombian Roman Catholic priest (1845-1926)",
       "it": "sacerdote cattolico (1845-1926)",
       "fr": "prêtre colombien, bienheureux",
+      "de": "katholischer Priester (1845–1926)",
       "es": "sacerdote católico colombiano"
     },
     "born": {
@@ -113885,7 +113999,8 @@
   "Q11727172": {
     "description": {
       "en": "Christian martyr in Uganda, blessed",
-      "fr": "martyr chrétien en Ouganda, bienheureux"
+      "fr": "martyr chrétien en Ouganda, bienheureux",
+      "de": "Katechet (1906–1918)"
     },
     "born": {
       "year": 1906,
@@ -114575,6 +114690,21 @@
       "fr": "Kamen Vitchev"
     }
   },
+  "Q11734916": {
+    "description": {},
+    "born": {
+      "year": 1901,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q11735904": {
     "description": {},
     "born": {
@@ -114716,6 +114846,7 @@
       "en": "Capuchin priest, missionary and martyr",
       "it": "sacerdote e missionario cappuccino francese",
       "fr": "missionnaire français",
+      "de": "französischer Missionar (1607–1638)",
       "es": "misionero francés",
       "pt": "missionário francês"
     },
@@ -114885,6 +115016,26 @@
     "wikipedia": {
       "fr": "Colombe Kim Hyo-im"
     }
+  },
+  "Q11743701": {
+    "description": {},
+    "born": {
+      "year": 1548,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1572,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "De heilige Cornelius van Wijk bij Duurstede Cornelius Wicanus. NL-HlmNHA 1477 53010735.JPG",
+      "author": "Matham, Jacob (1571-1631)",
+      "license": "Public domain",
+      "license_url": null
+    },
+    "wikipedia": {}
   },
   "Q11754482": {
     "description": {
@@ -115430,7 +115581,8 @@
     "description": {
       "en": "Italian Roman Catholic nun",
       "it": "religiosa e beata italiana (1706-1745)",
-      "fr": "bienheureuse de l'Église catholique"
+      "fr": "bienheureuse de l'Église catholique",
+      "de": "Ordensangehörige (1706–1745)"
     },
     "born": {
       "year": 1706,
@@ -115915,7 +116067,8 @@
   "Q11779117": {
     "description": {
       "en": "Italian presbyter",
-      "it": "presbitero italiano"
+      "it": "presbitero italiano",
+      "de": "Missionar und katholischer Priester (1676–1716)"
     },
     "born": {
       "year": 1676,
@@ -116038,7 +116191,8 @@
   "Q11802381": {
     "description": {
       "en": "bishop of Auxerre",
-      "fr": "évêque d'Auxerre"
+      "fr": "évêque d'Auxerre",
+      "de": "katholischer Priester (–658)"
     },
     "born": null,
     "died": {
@@ -116747,6 +116901,7 @@
     "description": {
       "en": "saint",
       "it": "santo",
+      "de": "Presbyter (1050–1115)",
       "es": "obispo de Poitiers y santo (f. 1115)"
     },
     "born": {
@@ -116997,7 +117152,8 @@
   "Q11905296": {
     "description": {
       "en": "Portuguese Jesuit brother, martyr in prison at Suzuta, Japan (died 1620)",
-      "it": "fratello gesuita portoghese, martire in carcere a Suzuta in Giappone (morto nel 1620)"
+      "it": "fratello gesuita portoghese, martire in carcere a Suzuta in Giappone (morto nel 1620)",
+      "de": "Missionar (1551–1620)"
     },
     "born": {
       "year": 1551,
@@ -117253,7 +117409,9 @@
     }
   },
   "Q11935443": {
-    "description": {},
+    "description": {
+      "de": "spanische Nonne (1874–1936)"
+    },
     "born": {
       "year": 1874,
       "precision": "year",
@@ -117526,7 +117684,8 @@
   },
   "Q12271929": {
     "description": {
-      "en": "Bulgarian scholar and saint"
+      "en": "Bulgarian scholar and saint",
+      "de": "Diakon (–886)"
     },
     "born": {
       "year": 850,
@@ -117711,7 +117870,8 @@
   "Q12872183": {
     "description": {
       "en": "Orthodox Christian saint (852-922)",
-      "fr": "saint thaumaturge grec, commun aux Églises latine et orientales"
+      "fr": "saint thaumaturge grec, commun aux Églises latine et orientales",
+      "de": "Presbyter (852–922)"
     },
     "born": {
       "year": 852,
@@ -118821,7 +118981,8 @@
   "Q15453096": {
     "description": {
       "en": "English Jesuit priest and Catholic martyr",
-      "fr": "jésuite anglais"
+      "fr": "jésuite anglais",
+      "de": "katholischer Priester und katholischer Theologe (1600–1642)"
     },
     "born": {
       "year": 1600,
@@ -118847,7 +119008,8 @@
   "Q15635147": {
     "description": {
       "en": "Italian physician and monk",
-      "it": "religioso italiano"
+      "it": "religioso italiano",
+      "de": "Arzt (1425–1496)"
     },
     "born": {
       "year": 1425,
@@ -119043,7 +119205,8 @@
   "Q15982413": {
     "description": {
       "en": "bishop of Verdun",
-      "fr": "évêque de Verdun"
+      "fr": "évêque de Verdun",
+      "de": "katholischer Priester und Bischof (270–356)"
     },
     "born": {
       "year": 270,
@@ -119121,7 +119284,8 @@
   "Q16027443": {
     "description": {
       "en": "martyr and bishops of Sens",
-      "fr": "martyr et évêque de Sens"
+      "fr": "martyr et évêque de Sens",
+      "de": "Prälat"
     },
     "born": {
       "year": 250,
@@ -119293,6 +119457,7 @@
   },
   "Q16159379": {
     "description": {
+      "de": "spanischer Bruder (1878–1936)",
       "es": "franciscano asesinado durante la guerra civil española"
     },
     "born": {
@@ -119383,6 +119548,7 @@
     "description": {
       "en": "Japanese catholic priest",
       "fr": "prêtre catholique japonais",
+      "de": "japanischer katholischer Priester (1565–1622)",
       "es": "sacerdote católico japonés"
     },
     "born": {
@@ -119472,7 +119638,8 @@
   "Q16206143": {
     "description": {
       "en": "saint",
-      "it": "vescovo romano"
+      "it": "vescovo romano",
+      "de": "katholischer Priester und Bischof (290–370)"
     },
     "born": {
       "year": 301,
@@ -119814,7 +119981,8 @@
   "Q16552149": {
     "description": {
       "en": "Italian presbyter",
-      "it": "presbitero italiano"
+      "it": "presbitero italiano",
+      "de": "Presbyter (1860–1938)"
     },
     "born": {
       "year": 1860,
@@ -119870,6 +120038,7 @@
   "Q16561559": {
     "description": {
       "en": "Spanish Roman Catholic priest",
+      "de": "spanischer Ordenspriester und katholischer Priester (1891–1936)",
       "es": "religioso español"
     },
     "born": {
@@ -120474,6 +120643,7 @@
   "Q16726121": {
     "description": {
       "en": "Christian martyr",
+      "de": "katholischer Priester (–257)",
       "es": "San Tertulino, mártir de la Iglesia Católica del siglo III"
     },
     "born": null,
@@ -120490,7 +120660,8 @@
   "Q16761594": {
     "description": {
       "en": "Italian saint",
-      "it": "vescovo italiano"
+      "it": "vescovo italiano",
+      "de": "katholischer Priester und katholischer Bischof"
     },
     "born": {
       "year": 650,
@@ -120794,7 +120965,8 @@
     "description": {
       "en": "Italian saint",
       "it": "santo del XIII secolo",
-      "fr": "franciscain du 13e siècle (saint)"
+      "fr": "franciscain du 13e siècle (saint)",
+      "de": "Laienbruder und Bruder (1226–1292)"
     },
     "born": {
       "year": 1226,
@@ -120837,6 +121009,7 @@
   "Q17316772": {
     "description": {
       "en": "saint martyred under Maximian",
+      "fr": "jeune Nantais martyrisé en 287",
       "de": "christlicher Märtyrer, Stadtpatron von Nantes"
     },
     "born": null,
@@ -121035,7 +121208,7 @@
   },
   "Q17609694": {
     "description": {
-      "en": "Christian saint",
+      "en": "Italian Franciscan missionary and martyr",
       "it": "francescano e beato italiano",
       "fr": "saint chrétien"
     },
@@ -121159,7 +121332,8 @@
     "description": {
       "en": "Italian nun and blessed",
       "it": "religiosa e beata italiana (c. 1396-1458)",
-      "fr": "nonne et bienheureuse italienne"
+      "fr": "nonne et bienheureuse italienne",
+      "de": "Ordensangehörige (1396–1458)"
     },
     "born": {
       "year": 1396,
@@ -121180,7 +121354,8 @@
   "Q18222737": {
     "description": {
       "en": "Italian Dominican nun",
-      "it": "religiosa italiana"
+      "it": "religiosa italiana",
+      "de": "Nonne (–1290)"
     },
     "born": {
       "year": 1200,
@@ -121352,7 +121527,8 @@
   "Q18288245": {
     "description": {
       "en": "Italian Roman Catholic aristocrat",
-      "it": "mistica italiana"
+      "it": "mistica italiana",
+      "de": "Nonne (1472–1520)"
     },
     "born": {
       "year": 1472,
@@ -121438,7 +121614,8 @@
   },
   "Q18527771": {
     "description": {
-      "en": "Abbot of Cîteaux and theologian"
+      "en": "Abbot of Cîteaux and theologian",
+      "de": "Theologe und Mönch (–1167)"
     },
     "born": null,
     "died": {
@@ -122106,7 +122283,8 @@
   },
   "Q19841237": {
     "description": {
-      "en": "French catholic priest (1556-1593)"
+      "en": "French catholic priest (1556-1593)",
+      "de": "französischer katholischer Priester und katholischer Theologe (1556–1593)"
     },
     "born": {
       "year": 1556,
@@ -122644,7 +122822,8 @@
   },
   "Q20029471": {
     "description": {
-      "en": "Dominican preacher actve in northern Italy"
+      "en": "Dominican preacher actve in northern Italy",
+      "de": "italienischer katholischer Priester (1410–1484)"
     },
     "born": {
       "year": 1410,
@@ -122694,6 +122873,7 @@
   },
   "Q20030035": {
     "description": {
+      "de": "spanischer Missionar und katholischer Priester (1551–1583)",
       "es": "1551-1583"
     },
     "born": {
@@ -122978,6 +123158,21 @@
     },
     "image": null,
     "wikipedia": {}
+  },
+  "Q20604373": {
+    "description": {
+      "de": "italienischer Märtyrer"
+    },
+    "born": null,
+    "died": {
+      "year": 1480,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "de": "Antonio Primaldo"
+    }
   },
   "Q20604423": {
     "description": {
@@ -123318,7 +123513,9 @@
     "wikipedia": {}
   },
   "Q20898374": {
-    "description": {},
+    "description": {
+      "de": "spanischer Mönch (1908–1936)"
+    },
     "born": {
       "year": 1908,
       "precision": "year",
@@ -123860,7 +124057,7 @@
     },
     "born": null,
     "died": {
-      "year": 583,
+      "year": 593,
       "precision": "year",
       "circa": false
     },
@@ -124898,6 +125095,21 @@
     "image": null,
     "wikipedia": {}
   },
+  "Q23943034": {
+    "description": {},
+    "born": {
+      "year": 1864,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q23943035": {
     "description": {
       "es": "sacerdote escolapio asesinado en 1936, considerado beato por la iglesia católica"
@@ -125030,6 +125242,36 @@
     },
     "born": {
       "year": 1897,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q23943240": {
+    "description": {},
+    "born": {
+      "year": 1871,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1936,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
+  "Q23943248": {
+    "description": {},
+    "born": {
+      "year": 1895,
       "precision": "year",
       "circa": false
     },
@@ -125803,6 +126045,7 @@
       "en": "Spanish missionary",
       "it": "missionario spagnolo",
       "fr": "missionnaire espagnol",
+      "de": "spanischer Missionar (1563–1626)",
       "es": "misionero español",
       "pt": "missionário espanhol"
     },
@@ -126299,6 +126542,21 @@
     },
     "wikipedia": {}
   },
+  "Q24953789": {
+    "description": {},
+    "born": {
+      "year": 1618,
+      "precision": "year",
+      "circa": false
+    },
+    "died": {
+      "year": 1622,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q24954131": {
     "description": {},
     "born": {
@@ -126542,7 +126800,8 @@
   },
   "Q26222370": {
     "description": {
-      "en": "Italian priest"
+      "en": "Italian priest",
+      "fr": "prêtre, bienheureux"
     },
     "born": {
       "year": 1454,
@@ -126755,7 +127014,8 @@
   },
   "Q26763935": {
     "description": {
-      "en": "Italian priest"
+      "en": "Italian priest",
+      "fr": "bienheureux"
     },
     "born": {
       "year": 1225,
@@ -127040,6 +127300,22 @@
     "wikipedia": {
       "en": "George Douglas (martyr)",
       "fr": "George Douglas (martyr)"
+    }
+  },
+  "Q27854156": {
+    "description": {
+      "en": "English recusant executed 1588 in Gloucester for aiding priests"
+    },
+    "born": null,
+    "died": {
+      "year": 1588,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {
+      "en": "William Lampley (martyr)",
+      "fr": "William Lampley"
     }
   },
   "Q27972812": {
@@ -128107,7 +128383,8 @@
   },
   "Q30879491": {
     "description": {
-      "it": "Santa italiana"
+      "it": "Santa italiana",
+      "fr": "sainte"
     },
     "born": {
       "year": 509,
@@ -132928,6 +133205,17 @@
       "fr": "Ambroise (abbé d'Agaune)"
     }
   },
+  "Q96739804": {
+    "description": {},
+    "born": null,
+    "died": {
+      "year": 1003,
+      "precision": "year",
+      "circa": false
+    },
+    "image": null,
+    "wikipedia": {}
+  },
   "Q97036855": {
     "description": {},
     "born": null,
@@ -132938,7 +133226,7 @@
     },
     "image": null,
     "wikipedia": {
-      "en": "Anthusa of Mantinea"
+      "en": "Anthousa of Mantinea"
     }
   },
   "Q97156466": {
@@ -133231,7 +133519,8 @@
     "description": {
       "en": "5th c. Christian martyr",
       "it": "vescovo di Nepte",
-      "fr": "martyr chrétien d'Afrique du Ve siècle"
+      "fr": "martyr chrétien d'Afrique du Ve siècle",
+      "de": "katholischer Bischof und Presbyter (–484)"
     },
     "born": {
       "year": 500,
@@ -133279,6 +133568,7 @@
   "Q100326611": {
     "description": {
       "en": "French priest murdered in Frech Revolution (1744-1794)",
+      "de": "Priester (1744–1794)",
       "es": "Sacerdote y mártir francés durante la Revolución Francesa"
     },
     "born": {
@@ -133300,6 +133590,7 @@
     "description": {
       "en": "English Reformation Catholic priest and martyr (born Thomas Green, alias Richard Reynolds)",
       "fr": "martyr catholique",
+      "de": "katholischer Priester (1562–1642)",
       "es": "sacerdote católico inglés, mártir de la reforma inglesa (conocido también como Tomás Green o Richard Reynolds)"
     },
     "born": {
@@ -133325,6 +133616,7 @@
   },
   "Q100754047": {
     "description": {
+      "de": "spanischer Ordensangehöriger (1901–1936)",
       "es": "(Fondón, 1901 - Boadilla del Monte, 1936). Religioso beato."
     },
     "born": {
@@ -134438,7 +134730,8 @@
   },
   "Q109793874": {
     "description": {
-      "fr": "prêtre catholique"
+      "fr": "prêtre catholique",
+      "de": "französischer katholischer Priester (1760–1792)"
     },
     "born": {
       "year": 1760,
@@ -136489,6 +136782,17 @@
       "fr": "Robert Hardesty"
     }
   },
+  "Q125744632": {
+    "description": {
+      "fr": "noble française"
+    },
+    "born": null,
+    "died": null,
+    "image": null,
+    "wikipedia": {
+      "fr": "Marie-Louise du Verdier de La Sorinière"
+    }
+  },
   "Q125940152": {
     "description": {
       "en": "6th-century bishop, saint",
@@ -137185,6 +137489,7 @@
   },
   "Q133137490": {
     "description": {
+      "en": "6th-century monk and saint",
       "it": "abate",
       "fr": "moine italien du VIe siècle"
     },
@@ -143727,7 +144032,12 @@
     },
     "born": null,
     "died": null,
-    "image": null,
+    "image": {
+      "file": "Saint Marcian of Egypt on colonnade photo.jpg",
+      "author": "AlfvanBeem",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
     "wikipedia": {}
   },
   "Q141941341": {

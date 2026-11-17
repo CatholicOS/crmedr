@@ -5009,6 +5009,18 @@
           "where": "text"
         },
         {
+          "name": "Catharina du Verdier de la Sorinière",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Maria Ludovica du Verdier de la Sorinière",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Ludovica Bessay de la Voüte",
           "where": {
             "footnote": 1
@@ -10590,6 +10602,10 @@
       "mr:0407-henricus-walpole": [
         {
           "name": "Henricus Walpole",
+          "where": "text"
+        },
+        {
+          "name": "Alexander Rawlins",
           "where": "text"
         },
         {
@@ -17623,6 +17639,12 @@
           }
         },
         {
+          "name": "Sanctus",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
           "name": "Maturus",
           "where": {
             "footnote": 1
@@ -22569,6 +22591,18 @@
         },
         {
           "name": "Franciscus de Rauga",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Petrus d’Assche van der Slagmolen",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Cornelius de Dorestado",
           "where": {
             "footnote": 1
           }
@@ -28402,6 +28436,10 @@
           "where": "text"
         },
         {
+          "name": "Gulielmus Lampley",
+          "where": "text"
+        },
+        {
           "name": "Elisabeth Prima",
           "where": "text",
           "role": "mentioned"
@@ -28931,6 +28969,12 @@
       "mr:0814-sanctus-de-urbino": [
         {
           "name": "Sanctus de Urbino",
+          "where": "text"
+        }
+      ],
+      "mr:0814-octingenti-martyres-hydrunti": [
+        {
+          "name": "Antonius Primaldus",
           "where": "text"
         }
       ],
@@ -29891,6 +29935,12 @@
         {
           "name": "Elvira Torrentalle Paraire",
           "where": "text"
+        },
+        {
+          "name": "Rosa a Domina Nostra a Bono Consilio Pedret Rull",
+          "where": {
+            "footnote": 1
+          }
         },
         {
           "name": "Maria a Domina Nostra Providentiæ Calaf Miracle",
@@ -34372,7 +34422,13 @@
           }
         },
         {
-          "name": "Petro",
+          "name": "Ioannes",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Petrus",
           "where": {
             "footnote": 1
           }
@@ -34385,6 +34441,13 @@
         },
         {
           "name": "Thecla",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Petrus",
+          "n": 2,
           "where": {
             "footnote": 1
           }
@@ -34416,6 +34479,12 @@
         },
         {
           "name": "Isabella Fernández",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Ignatius",
           "where": {
             "footnote": 1
           }
@@ -36877,6 +36946,14 @@
       "mr:0923-sophia-ximenez-ximenez-et-socii": [
         {
           "name": "Sophia Ximenez Ximenez",
+          "where": "text"
+        },
+        {
+          "name": "Maria a Purificatione a Sancto Ioseph Ximenez",
+          "where": "text"
+        },
+        {
+          "name": "Maria Iosepha del Rio Mesa",
           "where": "text"
         }
       ],
@@ -43163,6 +43240,10 @@
         {
           "name": "Isaac",
           "where": "text"
+        },
+        {
+          "name": "Christianus",
+          "where": "text"
         }
       ],
       "mr:1112-ioannes-cini": [
@@ -45568,6 +45649,12 @@
         },
         {
           "name": "Clara a Domina Nostra a Spe Ezcurra Urrutia",
+          "where": {
+            "footnote": 1
+          }
+        },
+        {
+          "name": "Candida a Domina Nostra Angelorum Cayuso González",
           "where": {
             "footnote": 1
           }
