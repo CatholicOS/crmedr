@@ -48480,7 +48480,13 @@
           "label": "Toulouse",
           "country": "FR"
         }
-      ]
+      ],
+      "date": {
+        "from": 601,
+        "to": 700,
+        "basis": "death",
+        "source": "wikidata"
+      }
     },
     {
       "id": "mr:0516-ubaldus-eugubii",
@@ -52094,10 +52100,9 @@
         }
       ],
       "date": {
-        "from": 1,
-        "to": 100,
+        "to": 1630,
         "basis": "death",
-        "source": "wikidata"
+        "source": "edition"
       }
     },
     {
@@ -56273,7 +56278,7 @@
         }
       ],
       "date": {
-        "year": 385,
+        "year": 384,
         "basis": "death",
         "source": "wikidata"
       }
@@ -76150,7 +76155,7 @@
         "source": "wikidata"
       },
       "item": {
-        "wikidata": "Q140401460",
+        "wikidata": "Q91442746",
         "kind": "group"
       },
       "unnumbered": true,

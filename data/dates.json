@@ -7874,6 +7874,12 @@
    "basis": "death",
    "source": "edition"
   },
+  "mr:0516-germerius-tolosae": {
+   "from": 601,
+   "to": 700,
+   "basis": "death",
+   "source": "wikidata"
+  },
   "mr:0516-honoratus-ambiani": {
    "year": 600,
    "circa": true,
@@ -8522,10 +8528,9 @@
    "source": "wikidata"
   },
   "mr:0526-felicissima-tuderti": {
-   "from": 1,
-   "to": 100,
+   "to": 1630,
    "basis": "death",
-   "source": "wikidata"
+   "source": "edition"
   },
   "mr:0526-franciscus-patrizi": {
    "year": 1328,
@@ -9202,7 +9207,7 @@
    "source": "wikidata"
   },
   "mr:0605-illidius-arvernae": {
-   "year": 385,
+   "year": 384,
    "basis": "death",
    "source": "wikidata"
   },

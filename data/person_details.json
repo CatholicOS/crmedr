@@ -44465,6 +44465,7 @@
     "description": {
       "en": "saint",
       "it": "santa romana",
+      "fr": "sainte",
       "de": "Heiliger"
     },
     "born": {
@@ -45050,27 +45051,6 @@
       "es": "Benigno de Dijon"
     }
   },
-  "Q653804": {
-    "description": {
-      "en": "French bishop and saint"
-    },
-    "born": null,
-    "died": {
-      "year": 385,
-      "precision": "year",
-      "circa": false
-    },
-    "image": {
-      "file": "Cl-FD Saint-Eutrope Saint-Alyre.jpg",
-      "author": "Romary",
-      "license": "CC BY-SA 3.0",
-      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
-    },
-    "wikipedia": {
-      "en": "Illidius",
-      "es": "Ilidio de Clermont"
-    }
-  },
   "Q654525": {
     "description": {
       "en": "English Brigittine monk and Roman Catholic Martyr",
@@ -45230,8 +45210,16 @@
       "fr": "évêque de Toulouse",
       "es": "obispo de Toulouse"
     },
-    "born": null,
-    "died": null,
+    "born": {
+      "year": 700,
+      "precision": "century",
+      "circa": false
+    },
+    "died": {
+      "year": 700,
+      "precision": "century",
+      "circa": false
+    },
     "image": {
       "file": "Eglise Notre-Dame de la Dalbade - Saint Germier.jpg",
       "author": "Didier Descouens",
@@ -45312,7 +45300,7 @@
     "description": {
       "en": "Swedish saint and patron to what is now Västergötland, in southwest Sweden (ca. 1101 – 1160)",
       "it": "santa svedese (ca. 1101 – 1160)",
-      "fr": "saint suédois et patron de l'actuel Västergötland, dans le sud-ouest de la Suède (ca. 1101 – 1160)",
+      "fr": "sainte suédoise et patronne de l'actuel Västergötland, dans le sud-ouest de la Suède (ca. 1101 – 1160)",
       "de": "schwedischer Heiliger und Schutzpatron des heutigen Västergötlands im Südwesten Schwedens",
       "es": "santa sueca y patrona de lo que ahora es Västergötland, en el suroeste de Suecia"
     },
@@ -45464,7 +45452,7 @@
     "description": {
       "en": "Bishop of Nola and saint",
       "it": "primo vescovo di Nola",
-      "fr": "évêque de Noles"
+      "fr": "évêque de Nole"
     },
     "born": null,
     "died": {
@@ -46099,7 +46087,8 @@
       "en": "Welsh bishop and saint",
       "it": "vescovo gallese",
       "fr": "abbé, évêque et saint gallois",
-      "de": "angeblich Bischof von Llandaff; walisischer Heiliger"
+      "de": "angeblich Bischof von Llandaff; walisischer Heiliger",
+      "es": "obispo y santo galés del siglo VI"
     },
     "born": {
       "year": 600,
@@ -49074,7 +49063,7 @@
   },
   "Q738752": {
     "description": {
-      "en": "Egyptian priest (0300-0300)",
+      "en": "Patriarch of Alexandria from 282 to 300",
       "it": "vescovo e santo egiziano",
       "fr": "patriarche d'Alexandrie",
       "de": "Bischof von Alexandria"
@@ -50336,6 +50325,7 @@
     "description": {
       "en": "Bishop of Aquileia",
       "it": "vescovo di Aquileia",
+      "fr": "évêque et saint catholique",
       "de": "Bischof von Aquileia"
     },
     "born": {
@@ -50590,7 +50580,7 @@
     "description": {
       "en": "Hermit, abbot, and bishop",
       "it": "vescovo e santo franco",
-      "fr": "évêque de Chartres et saint catholique de la France du 6e siècle",
+      "fr": "évêque de Chartres et saint catholique de la France du VIe siècle",
       "de": "Abt, Bischof von Chartres, Heiliger",
       "es": "obispo de Chartres y santo católico de la Francia del siglo VI"
     },
@@ -52667,7 +52657,9 @@
     }
   },
   "Q929602": {
-    "description": {},
+    "description": {
+      "fr": "prêtre jésuite français"
+    },
     "born": {
       "year": 1726,
       "precision": "year",
@@ -53676,6 +53668,7 @@
     "description": {
       "en": "male human biblical figure in Colossians 1:7, observer of the apostle Paul",
       "it": "vescovo",
+      "fr": "compagnon de Paul de Tarse",
       "de": "Gründer der frühchristlichen Gemeinde in Kolossai, an die sich der Kolosserbrief richtet, Bischof von Kolossai",
       "es": "predicador cristiano"
     },
@@ -54070,6 +54063,7 @@
   "Q965979": {
     "description": {
       "en": "Spanish saint",
+      "fr": "saint",
       "de": "legendärer früher Bischof in Spanien",
       "es": "varón apostólico y santo español"
     },
@@ -55566,6 +55560,7 @@
   "Q1074474": {
     "description": {
       "en": "Christian martyr",
+      "it": "santa martire cristiana",
       "de": "Märtyrerin"
     },
     "born": {
@@ -56416,7 +56411,8 @@
     "description": {
       "en": "Calabrian abbot",
       "it": "abate italiano",
-      "de": "Mönch (815–915)"
+      "de": "Mönch (815–915)",
+      "es": "sacerdote y abad, uno de los fundadores del monoteísmo greco-italiano"
     },
     "born": {
       "year": 815,
@@ -57050,7 +57046,8 @@
     "description": {
       "en": "Benedictine monk",
       "it": "monaco italiano",
-      "fr": "religieux italien du Moyen-âge"
+      "fr": "religieux italien du Moyen-âge",
+      "de": "Mönch (1070–1139)"
     },
     "born": {
       "year": 1070,
@@ -57942,6 +57939,7 @@
       "en": "Bishop of Narni",
       "it": "vescovo italiano",
       "fr": "évêque de Narni",
+      "de": "katholischer Priester und katholischer Bischof (–558)",
       "es": "Obispo de la localidad de Narni entre los años 537 y 558"
     },
     "born": {
@@ -58463,7 +58461,12 @@
     },
     "born": null,
     "died": null,
-    "image": null,
+    "image": {
+      "file": "Portret van Macedonius Macedonius (titel op object) Historie der Kerken en ketteren (..) tot aan het jaar onses Heeren 1688 (serietitel), RP-P-1908-4478.jpg",
+      "author": "Rijksmuseum",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+    },
     "wikipedia": {
       "en": "Macedonius I of Constantinople",
       "it": "Macedonio I",
@@ -58643,11 +58646,11 @@
   },
   "Q1269091": {
     "description": {
-      "en": "Welsh saint who settled down in Brittany (c. C.E.485 — c. 565)",
+      "en": "Welsh saint who settled down in Brittany (c. C.E. 485 — c. 565)",
       "it": "vescovo gallese",
       "fr": "un des sept saints fondateurs de Bretagne",
       "de": "bretonischer Heiliger um 500",
-      "es": "Santa galesa que se estableció en Bretaña (c. 485 - c. 565)"
+      "es": "santo galés que se estableció en Bretaña (c. 485 - c. 565)"
     },
     "born": {
       "year": 490,
@@ -60193,7 +60196,7 @@
   },
   "Q1314431": {
     "description": {
-      "en": "Anglo-Saxon noble and patron saint of Oxford, England",
+      "en": "Mercian princess and abbess; patron saint of Oxford",
       "de": "englische Äbtissin und Heilige"
     },
     "born": {
@@ -60213,7 +60216,7 @@
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
     },
     "wikipedia": {
-      "en": "Frithuswith",
+      "en": "Fritheswith",
       "it": "Fridesvida",
       "fr": "Frithuswith",
       "de": "Frideswida",
@@ -60590,7 +60593,8 @@
     },
     "image": null,
     "wikipedia": {
-      "de": "Engelbert Kolland"
+      "de": "Engelbert Kolland",
+      "pt": "Engelbert Kolland"
     }
   },
   "Q1342625": {
@@ -60920,7 +60924,7 @@
       "en": "Spanish saint (1812–1875)",
       "it": "presbitero spagnolo",
       "de": "spanischer Ordensgründer und heiliger der römisch-katholischen Kirche",
-      "es": "24 de abril 1875"
+      "es": "sacerdote y santo español"
     },
     "born": {
       "year": 1812,
@@ -61575,6 +61579,7 @@
   "Q1372209": {
     "description": {
       "en": "Bishop of Orleans",
+      "fr": "Évêque d'Orléans du VIIIe siècle",
       "de": "Bischof von Orléans"
     },
     "born": {
@@ -63101,6 +63106,7 @@
     "description": {
       "en": "Irish monk",
       "it": "monaco irlandese",
+      "fr": "moine irlandais",
       "de": "irischer Mönch in Kloster Rheinau"
     },
     "born": {
@@ -64489,7 +64495,7 @@
     "description": {
       "en": "Bishop of Barcelona",
       "it": "vescovo di Barcellona e Tarragona, santo",
-      "fr": "évêque de Barcelone sanctifié",
+      "fr": "évêque de Barcelone, saint",
       "de": "Bischof von Barcelona und Erzbischof von Tarragona",
       "es": "obispo de Barcelona y arzobispo de Tarragona"
     },
@@ -66007,9 +66013,9 @@
   },
   "Q1848481": {
     "description": {
-      "en": "Frankish bishop (456-532)",
+      "en": "Frankish bishop and saint (456-532)",
       "it": "vescovo franco (456-532)",
-      "fr": "évêque franc (456-532)",
+      "fr": "évêque et saint franc (456-532)",
       "es": "obispo franco (456-532)"
     },
     "born": {
@@ -67956,6 +67962,7 @@
   },
   "Q2030827": {
     "description": {
+      "fr": "bienheureuse",
       "de": "Selige, Ordensgründerin"
     },
     "born": {
@@ -68330,7 +68337,8 @@
   },
   "Q2044436": {
     "description": {
-      "en": "Vietnamese mandarin official (1808–1857)"
+      "en": "Vietnamese mandarin official (1808–1857)",
+      "es": "funcionario mandarín y mártir vietnamita"
     },
     "born": {
       "year": 1808,
@@ -68350,7 +68358,8 @@
     },
     "wikipedia": {
       "en": "Michael Hồ Đình Hy",
-      "fr": "Michel Ho Dinh Hy"
+      "fr": "Michel Ho Dinh Hy",
+      "es": "Miguel Hồ Đình Hy"
     }
   },
   "Q2045593": {
@@ -68718,10 +68727,10 @@
       "circa": false
     },
     "image": {
-      "file": "Altar Beat Bonaventura - Riudoms 2.jpg",
-      "author": "Montserrat Gili",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+      "file": "Altar Beat Bonaventura - Riudoms 5.jpg",
+      "author": "Jordi Gili",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
     },
     "wikipedia": {
       "en": "Bonaventura Gran",
@@ -68819,7 +68828,8 @@
   "Q2062211": {
     "description": {
       "en": "Belgian monk and nobleman",
-      "it": "monaco belga"
+      "it": "monaco belga",
+      "fr": "ermite et moine"
     },
     "born": {
       "year": 892,
@@ -69688,7 +69698,7 @@
     "wikipedia": {
       "en": "Saint Fructus",
       "it": "San Frutto",
-      "de": "Frutos (Heiliger)",
+      "de": "Fructus (Heiliger)",
       "es": "Frutos de Segovia",
       "pt": "Frutuoso de Segóvia"
     }
@@ -71416,8 +71426,7 @@
   "Q2263241": {
     "description": {
       "en": "French saint and archbishop",
-      "it": "vescovo franco",
-      "es": "arzobispo de Arlés, santo francés"
+      "it": "vescovo franco"
     },
     "born": {
       "year": 523,
@@ -72059,7 +72068,6 @@
     "description": {
       "en": "French beatified nun (1684-1759)",
       "it": "religiosa e beata francese",
-      "de": "französische Ordensgründerin",
       "es": "Beata católica francesa co-fundadora de la Congregación religiosa Hijas de la Sabiduría"
     },
     "born": {
@@ -72750,7 +72758,7 @@
       "it": "abate e vescovo",
       "fr": "évêque de Riez",
       "de": "Abt von Lérins, Bischof von Riez, Theologe",
-      "es": "obispo de Riez (c. 405/410. c. 490/495)"
+      "es": "c. 405/410. c. 490/495"
     },
     "born": {
       "year": 500,
@@ -78400,9 +78408,7 @@
     }
   },
   "Q2726638": {
-    "description": {
-      "fr": "sainte"
-    },
+    "description": {},
     "born": null,
     "died": {
       "year": 734,
@@ -87326,7 +87332,6 @@
   },
   "Q3554214": {
     "description": {
-      "de": "Eremit und Heiliger",
       "es": "santo (537-620)"
     },
     "born": {
@@ -87342,7 +87347,6 @@
     "image": null,
     "wikipedia": {
       "fr": "Valéric de Bernage",
-      "de": "Valerius von Bernage",
       "es": "Valerio de Limoges"
     }
   },
@@ -87797,9 +87801,9 @@
   },
   "Q3592028": {
     "description": {
-      "en": "French Roman Catholic bishop and saint (1802-1861)",
-      "it": "vescovo e santo cattolico francese (1802-1861)",
-      "fr": "évêque et saint catholique français (1802-1861)",
+      "en": "French catholic priest (1802-1861)",
+      "it": "vescovo cattolico francese",
+      "fr": "évêque catholique",
       "de": "römisch-katholischer Bischof",
       "es": "obispo católico"
     },
@@ -88918,8 +88922,7 @@
   "Q3638125": {
     "description": {
       "en": "Italian priest and Capuchin friar (1560-1625)",
-      "it": "sacerdote cappuccino italiano (1560-1625)",
-      "fr": "prêtre capucin italien (1560-1625)"
+      "it": "sacerdote cappuccino italiano (1560-1625)"
     },
     "born": {
       "year": 1560,
@@ -90900,7 +90903,7 @@
   },
   "Q3766297": {
     "description": {
-      "en": "13th-14th-century Italian recluse, Catholic blessed, associated with Signa near Florence"
+      "en": "Italian recluse and Blessed"
     },
     "born": {
       "year": 1266,
@@ -91226,8 +91229,7 @@
     },
     "image": null,
     "wikipedia": {
-      "it": "Girolamo Gherarducci",
-      "es": "Girolamo Gherarducci"
+      "it": "Girolamo Gherarducci"
     }
   },
   "Q3769257": {
@@ -91351,7 +91353,6 @@
     "description": {
       "en": "Italian presbyter (1843–1915)",
       "it": "sacerdote italiano",
-      "fr": "prêtre italien",
       "es": "presbítero italiano (1843-1915)"
     },
     "born": {
@@ -92617,8 +92618,7 @@
   },
   "Q3826850": {
     "description": {
-      "it": "vescovo cattolico italiano",
-      "fr": "saint"
+      "it": "vescovo cattolico italiano"
     },
     "born": {
       "year": 1124,
@@ -92663,9 +92663,7 @@
     }
   },
   "Q3828050": {
-    "description": {
-      "fr": "saint"
-    },
+    "description": {},
     "born": {
       "year": 201,
       "precision": "century",
@@ -95059,19 +95057,9 @@
     }
   },
   "Q3949015": {
-    "description": {
-      "fr": "sainte"
-    },
-    "born": {
-      "year": 100,
-      "precision": "century",
-      "circa": false
-    },
-    "died": {
-      "year": 100,
-      "precision": "century",
-      "circa": false
-    },
+    "description": {},
+    "born": null,
+    "died": null,
     "image": null,
     "wikipedia": {
       "it": "Felicissima di Todi"
@@ -96144,7 +96132,6 @@
   "Q4065365": {
     "description": {
       "fr": "prêtre, saint patron de Saulieu",
-      "de": "Priester (–177)",
       "es": "Biografía de Andoquio, sacerdote y mártir"
     },
     "born": {
@@ -101225,7 +101212,12 @@
       "precision": "year",
       "circa": false
     },
-    "image": null,
+    "image": {
+      "file": "St. Andrew Kaggwa Monument.jpg",
+      "author": "Fiktube",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+    },
     "wikipedia": {
       "en": "Andrew Kaggwa",
       "it": "Andrea Kaggwa",
@@ -112095,7 +112087,9 @@
     }
   },
   "Q9612435": {
-    "description": {},
+    "description": {
+      "en": "Spanish Catholic martyr (1888-1936)"
+    },
     "born": {
       "year": 1888,
       "precision": "year",
@@ -121205,6 +121199,30 @@
       "license_url": null
     },
     "wikipedia": {}
+  },
+  "Q17393639": {
+    "description": {
+      "en": "French bishop and saint",
+      "fr": "évêque de Clermont, en Auvergne"
+    },
+    "born": null,
+    "died": {
+      "year": 384,
+      "precision": "year",
+      "circa": false
+    },
+    "image": {
+      "file": "Vitraux - église Saint-Joseph, CLermont-Ferrand 39.jpg",
+      "author": "François-Rémy Roqueton",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0"
+    },
+    "wikipedia": {
+      "en": "Illidius",
+      "it": "Illidio di Clermont",
+      "fr": "Alyre de Clermont",
+      "es": "Ilidio de Clermont"
+    }
   },
   "Q17609694": {
     "description": {

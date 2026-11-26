@@ -47,9 +47,7 @@
     },
     "mr:0119-marius-et-socii": {
       "group": "Q1595063",
-      "non_members": [
-        "Q131765067"
-      ]
+      "non_members": []
     },
     "mr:0121-fructuosus-et-socii": {
       "group": "Q101193675",
@@ -224,9 +222,7 @@
     },
     "mr:0405-irenes-thessalonicensis": {
       "group": "Q359116",
-      "non_members": [
-        "Q1074474"
-      ]
+      "non_members": []
     },
     "mr:0413-carpus-et-socii": {
       "group": "Q1734353",
@@ -470,7 +466,10 @@
     "mr:0710-emmanuel-ruiz-et-socii": {
       "group": "Q3850285",
       "non_members": [
-        "Q11818085"
+        "Q11818085",
+        "Q136505458",
+        "Q136505791",
+        "Q136505804"
       ]
     },
     "mr:0710-felix-et-philippus": {
@@ -537,7 +536,7 @@
       "non_members": []
     },
     "mr:0726-ioachim-et-anna": {
-      "group": "Q140401460",
+      "group": "Q91442746",
       "non_members": []
     },
     "mr:0727-septem-dormientes-ephesi": {
@@ -701,6 +700,10 @@
     },
     "mr:1011-tharacus-et-socii": {
       "group": "Q4759490",
+      "non_members": []
+    },
+    "mr:1012-martyres-et-confessores-africae": {
+      "group": "Q16711449",
       "non_members": []
     },
     "mr:1013-faustus-et-socii": {
